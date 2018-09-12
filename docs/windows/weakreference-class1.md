@@ -13,48 +13,53 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # WeakReference Class1
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-class WeakReference;  
-```  
-  
-## Remarks  
- Represents a *weak reference* that can be used with the Windows Runtime or classic COM. A weak reference represents an object that might or might not be accessible.  
-  
- A `WeakReference` object maintains a *strong reference*, which is a pointer to an object, and a *strong reference count*, which is the number of copies of the strong reference that have been distributed by the Resolve() method. While the strong reference count is nonzero, the strong reference is valid and the object is accessible. When the strong reference count becomes zero, the strong reference is invalid and the object is inaccessible.  
-  
- A WeakReference object is typically used to represent an object whose existence is controlled by an external thread or application. For example, construct a WeakReference object from a reference to a file object. While the file is open, the strong reference is valid. But if the file is closed, the strong reference becomes invalid.  
-  
- The WeakReference methods are thread safe.  
-  
-## Members  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[WeakReference::WeakReference Constructor](../windows/weakreference-weakreference-constructor.md)|Initializes a new instance of the WeakReference class.|  
-|[WeakReference::~WeakReference Destructor](../windows/weakreference-tilde-weakreference-destructor.md)|Deinitializes (destroys) the current instance of the WeakReference class.|  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[WeakReference::DecrementStrongReference Method](../windows/weakreference-decrementstrongreference-method.md)|Decrements the strong reference count of the current WeakReference object.|  
-|[WeakReference::IncrementStrongReference Method](../windows/weakreference-incrementstrongreference-method.md)|Increments the strong reference count of the current WeakReference object.|  
-|[WeakReference::Resolve Method](../windows/weakreference-resolve-method.md)|Sets the specified pointer to the current strong reference value if the strong reference count is nonzero.|  
-|[WeakReference::SetUnknown Method](../windows/weakreference-setunknown-method.md)|Sets the strong reference of the current WeakReference object to the specified interface pointer.|  
-  
-## Inheritance Hierarchy  
- `WeakReference`  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+class WeakReference;
+```
+
+## Remarks
+
+Represents a *weak reference* that can be used with the Windows Runtime or classic COM. A weak reference represents an object that might or might not be accessible.
+
+A **WeakReference** object maintains a *strong reference*, which is a pointer to an object, and a *strong reference count*, which is the number of copies of the strong reference that have been distributed by the `Resolve()` method. While the strong reference count is nonzero, the strong reference is valid and the object is accessible. When the strong reference count becomes zero, the strong reference is invalid and the object is inaccessible.
+
+A **WeakReference** object is typically used to represent an object whose existence is controlled by an external thread or application. For example, construct a **WeakReference** object from a reference to a file object. While the file is open, the strong reference is valid. But if the file is closed, the strong reference becomes invalid.
+
+The **WeakReference** methods are thread safe.
+
+## Members
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[WeakReference::WeakReference Constructor](../windows/weakreference-weakreference-constructor.md)|Initializes a new instance of the **WeakReference** class.|
+|[WeakReference::~WeakReference Destructor](../windows/weakreference-tilde-weakreference-destructor.md)|Deinitializes (destroys) the current instance of the **WeakReference** class.|
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[WeakReference::DecrementStrongReference Method](../windows/weakreference-decrementstrongreference-method.md)|Decrements the strong reference count of the current **WeakReference** object.|
+|[WeakReference::IncrementStrongReference Method](../windows/weakreference-incrementstrongreference-method.md)|Increments the strong reference count of the current **WeakReference** object.|
+|[WeakReference::Resolve Method](../windows/weakreference-resolve-method.md)|Sets the specified pointer to the current strong reference value if the strong reference count is nonzero.|
+|[WeakReference::SetUnknown Method](../windows/weakreference-setunknown-method.md)|Sets the strong reference of the current **WeakReference** object to the specified interface pointer.|
+
+## Inheritance Hierarchy
+
+`WeakReference`
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

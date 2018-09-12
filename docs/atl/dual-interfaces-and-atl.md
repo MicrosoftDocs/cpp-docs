@@ -12,25 +12,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Dual Interfaces and ATL
-A dual interface allows its methods to be accessed as dispinterface methods or as vtable methods. This section covers some of the features of dual interfaces from an ATL perspective.  
-  
-## In This Section  
- [Implementing a Dual Interface](../atl/implementing-a-dual-interface.md)  
- Discusses the classes and wizards involved in implementing a dual interface.  
-  
- [Multiple Dual Interfaces](../atl/multiple-dual-interfaces.md)  
- Discusses how to expose multiple dual interfaces on a single object.  
-  
- [The nonextensible Attribute](../atl/nonextensible-attribute.md)  
- Discusses when to use the **nonextensible** attribute on your interface definition.  
-  
- [Dual Interfaces and Events](../atl/dual-interfaces-and-events.md)  
- Discusses design reasons for not making an event interface a dual interface.  
-  
-## Related Sections  
- [ATL](../atl/active-template-library-atl-concepts.md)  
- Provides links to conceptual topics on how to program using the Active Template Library.  
-  
-## See Also  
- [Concepts](../atl/active-template-library-atl-concepts.md)
+
+A dual interface allows its methods to be accessed as dispinterface methods or as vtable methods. This section covers some of the features of dual interfaces from an ATL perspective.
+
+## In This Section
+
+[Implementing a Dual Interface](../atl/implementing-a-dual-interface.md)  
+Discusses the classes and wizards involved in implementing a dual interface.
+
+[Multiple Dual Interfaces](../atl/multiple-dual-interfaces.md)  
+Discusses how to expose multiple dual interfaces on a single object.
+
+[The nonextensible Attribute](../atl/nonextensible-attribute.md)  
+Discusses when to use the **nonextensible** attribute on your interface definition.
+
+[Dual Interfaces and Events](../atl/dual-interfaces-and-events.md)  
+Discusses design reasons for not making an event interface a dual interface.
+
+## Related Sections
+
+[ATL](../atl/active-template-library-atl-concepts.md)  
+Provides links to conceptual topics on how to program using the Active Template Library.
+
+## See Also
+
+[Concepts](../atl/active-template-library-atl-concepts.md)
 

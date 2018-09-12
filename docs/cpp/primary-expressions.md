@@ -15,7 +15,6 @@ ms.workload: ["cplusplus"]
 Primary expressions are the building blocks of more complex expressions. They are literals, names, and names qualified by the scope-resolution operator (`::`).  A primary expression may have any of the following forms:  
   
 ```  
-  
 literal  
 this
 name  
@@ -70,5 +69,5 @@ A::B   // a qualified name
 A<int> // a template id  
 ```  
   
-## See Also  
+## See also  
  [Types of Expressions](../cpp/types-of-expressions.md)

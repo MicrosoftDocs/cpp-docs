@@ -28,14 +28,14 @@ class hash_multiset
 
 ### Parameters
 
-*Key*
+*Key*<br/>
  The element data type to be stored in the hash_multiset.
 
-*Traits*
- The type which includes two function objects, one of class compare that is a binary predicate able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type `size_t`. This argument is optional, and the `hash_compare`*<Key,* **less***\<Key> >* is the default value.
+*Traits*<br/>
+ The type which includes two function objects, one of class compare that is a binary predicate able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type `size_t`. This argument is optional, and the `hash_compare<Key, less<Key> >` is the default value.
 
-*Allocator*
- The type that represents the stored allocator object that encapsulates details about the hash_multiset's allocation and deallocation of memory. This argument is optional, and the default value is **allocator***\<Key>.*
+*Allocator*<br/>
+ The type that represents the stored allocator object that encapsulates details about the hash_multiset's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<Key>`.
 
 ## Remarks
 
@@ -57,7 +57,7 @@ The choice of container type should be based in general on the type of searching
 
 The hash_multiset should be the associative container of choice when the conditions associating the values with their keys are satisfies by the application. The elements of a hash_multiset may be multiple and serve as their own sort keys, so keys are not unique. A model for this type of structure is an ordered list of, say, words in which the words may occur more than once. Had multiple occurrences of the words not been allowed, then a hash_set would have been the appropriate container structure. If unique definitions were attached as values to the list of unique keywords, then a hash_map would be an appropriate structure to contain this data. If instead the definitions were not unique, then a hash_multimap would be the container of choice.
 
-The hash_multiset orders the sequence it controls by calling a stored hash traits object of type [value_compare](#value_compare). This stored object may be accessed by calling the member function [key_comp](#key_comp). Such a function object must behave the same as an object of class `hash_compare`*<Key,* **less***\<Key> >.* Specifically, for all values *Key* of type `Key`, the call **Trait**( *Key*) yields a distribution of values of type `size_t`.
+The hash_multiset orders the sequence it controls by calling a stored hash traits object of type [value_compare](#value_compare). This stored object may be accessed by calling the member function [key_comp](#key_comp). Such a function object must behave the same as an object of class `hash_compare<Key, less<Key> >`. Specifically, for all values *Key* of type `Key`, the call `Trait(Key)` yields a distribution of values of type `size_t`.
 
 In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate *f*( *x*, *y*) is a function object that has two argument objects x and y and a return value of true or false. An ordering imposed on a hash_multiset is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects x and y are defined to be equivalent when both *f*( *x*, *y*) and *f*( *y*, *x*) are false. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.
 
@@ -463,7 +463,7 @@ size_type count(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The key of the elements to be matched from the hash_multiset.
 
 ### Return Value
@@ -930,7 +930,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key to be compared with the sort key of an element from the hash_multiset being searched.
 
 ### Return Value
@@ -1019,16 +1019,16 @@ size_type erase(const key_type& key);
 
 ### Parameters
 
-*_Where*
+*_Where*<br/>
  Position of the element to be removed from the hash_multiset.
 
-*first*
+*first*<br/>
  Position of the first element removed from the hash_multiset.
 
-*last*
+*last*<br/>
  Position just beyond the last element removed from the hash_multiset.
 
-*key*
+*key*<br/>
  The key of the elements to be removed from the hash_multiset.
 
 ### Return Value
@@ -1140,7 +1140,7 @@ const_iterator find(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key to be matched by the sort key of an element from the hash_multiset being searched.
 
 ### Return Value
@@ -1575,7 +1575,7 @@ iterator lower_bound(const Key& key);
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key to be compared with the sort key of an element from the hash_multiset being searched.
 
 ### Return Value
@@ -2058,7 +2058,7 @@ void swap(hash_multiset& right);
 
 ### Parameters
 
-*right*
+*right*<br/>
  The argument hash_multiset providing the elements to be swapped with the target hash_multiset.
 
 ### Remarks
@@ -2134,7 +2134,7 @@ iterator upper_bound(const Key& key);
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key to be compared with the sort key of an element from the hash_multiset being searched.
 
 ### Return Value

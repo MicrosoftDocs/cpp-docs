@@ -56,7 +56,7 @@ void RunTest()
     // Give each controller a pointer to all the others. 
     for (int i = 0 ; i < v.size(); ++i)
     {
-        for_each(v.begin(), v.end(), [v,i] (shared_ptr<Controller> p)
+        for_each(v.begin(), v.end(), [&v,i] (shared_ptr<Controller> p)
         {
             if(p->Num != i)
             {

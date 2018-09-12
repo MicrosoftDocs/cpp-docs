@@ -13,37 +13,36 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /ALLOWISOLATION (Manifest Lookup)
-Specifies behavior for manifest lookup.  
-  
-## Syntax  
-  
-```  
-/ALLOWISOLATION[:NO]  
-```  
-  
-## Remarks  
- **/ALLOWISOLATION:NO** indicates DLLs are loaded as if there was no manifest and causes the linker to set the `IMAGE_DLLCHARACTERISTICS_NO_ISOLATION` bit in the optional header's `DllCharacteristics` field.  
-  
- **/ALLOWISOLATION** causes the operating system to do manifest lookups and loads.  
-  
- **/ALLOWISOLATION** is the default.  
-  
- When isolation is disabled for an executable, the Windows loader will not attempt to find an application manifest for the newly created process. The new process will not have a default activation context, even if there is a manifest inside the executable or placed in the same directory as the executable with name *executable-name***.exe.manifest**.  
-  
- For more information, see [Manifest Files Reference](http://msdn.microsoft.com/library/aa375632).  
-  
-### To set this linker option in the Visual Studio development environment  
-  
-1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Expand the **Configuration Properties** node.  
-  
-3.  Expand the **Linker** node.  
-  
-4.  Select the **Manifest File** property page.  
-  
-5.  Modify the **Allow Isolation** property.  
-  
-## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+
+Specifies behavior for manifest lookup.
+
+## Syntax
+
+```
+/ALLOWISOLATION[:NO]
+```
+
+## Remarks
+
+**/ALLOWISOLATION:NO** indicates DLLs are loaded as if there was no manifest and causes the linker to set the `IMAGE_DLLCHARACTERISTICS_NO_ISOLATION` bit in the optional header's `DllCharacteristics` field.
+
+**/ALLOWISOLATION** causes the operating system to do manifest lookups and loads.
+
+**/ALLOWISOLATION** is the default.
+
+When isolation is disabled for an executable, the Windows loader will not attempt to find an application manifest for the newly created process. The new process will not have a default activation context, even if there is a manifest inside the executable or placed in the same directory as the executable with name <em>executable-name</em>**.exe.manifest**.
+
+For more information, see [Manifest Files Reference](/windows/desktop/SbsCs/manifest-files-reference).
+
+### To set this linker option in the Visual Studio development environment
+
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Select the **Configuration Properties** > **Linker** > **Manifest File** property page.
+
+1. Modify the **Allow Isolation** property.
+
+## See Also
+
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

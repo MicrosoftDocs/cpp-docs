@@ -25,20 +25,20 @@ class priority_queue
 
 ### Parameters
 
-*Type*
+*Type*<br/>
  The element data type to be stored in the priority_queue.
 
-`Container`
+*Container*<br/>
  The type of the underlying container used to implement the priority_queue.
 
-*Compare*
- The type that provides a function object that can compare two element values as sort keys to determine their relative order in the priority_queue. This argument is optional and the binary predicate **less***\<***typename** *Container***::value_type***>* is the default value.
+*Compare*<br/>
+ The type that provides a function object that can compare two element values as sort keys to determine their relative order in the priority_queue. This argument is optional and the binary predicate `less<typename Container::value_type>` is the default value.
 
 ## Remarks
 
-The elements of class **Type** stipulated in the first template parameter of a queue object are synonymous with [value_type](#value_type) and must match the type of element in the underlying container class **Container** stipulated by the second template parameter. The **Type** must be assignable, so that it is possible to copy objects of that type and to assign values to variables of that type.
+The elements of class `Type` stipulated in the first template parameter of a queue object are synonymous with [value_type](#value_type) and must match the type of element in the underlying container class `Container` stipulated by the second template parameter. The `Type` must be assignable, so that it is possible to copy objects of that type and to assign values to variables of that type.
 
-The priority_queue orders the sequence it controls by calling a stored function object of class **Traits**. In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense.
+The priority_queue orders the sequence it controls by calling a stored function object of class `Traits`. In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense.
 
 Suitable underlying container classes for priority_queue include [deque Class](../standard-library/deque-class.md) and the default [vector Class](../standard-library/vector-class.md) or any other sequence container that supports the operations of `front`, `push_back`, and `pop_back` and a random-access iterator. The underlying container class is encapsulated within the container adaptor, which exposes only the limited set of the sequence container member functions as a public interface.
 
@@ -227,26 +227,26 @@ priority_queue(InputIterator first, InputIterator last, const Traits&_comp, cons
 
 ### Parameters
 
-*_ comp*
+*_ comp*<br/>
  The comparison function of type **constTraits** used to order the elements in the priority_queue, which defaults to compare function of the base container.
 
-`_Cont`
+*_Cont*<br/>
  The base container of which the constructed priority_queue is to be a copy.
 
-`right`
+*right*<br/>
  The priority_queue of which the constructed set is to be a copy.
 
-`first`
+*first*<br/>
  The position of the first element in the range of elements to be copied.
 
-`last`
+*last*<br/>
  The position of the first element beyond the range of elements to be copied.
 
 ### Remarks
 
-Each of the first three constructors specifies an empty initial priority_queue, the second also specifying the type of comparison function ( `comp`) to be used in establishing the order of the elements and the third explicitly specifying the `container_type` ( `_Cont`) to be used. The keyword **explicit** suppresses certain kinds of automatic type conversion.
+Each of the first three constructors specifies an empty initial priority_queue, the second also specifying the type of comparison function (`comp`) to be used in establishing the order of the elements and the third explicitly specifying the `container_type` (`_Cont`) to be used. The keyword **explicit** suppresses certain kinds of automatic type conversion.
 
-The fourth constructor specifies a copy of the priority_queue `right`.
+The fourth constructor specifies a copy of the priority_queue *right*.
 
 The last three constructors copy the range [ * first,  last*) of some container and use the values to initialize a priority_queue with increasing explicitness in specifying the type of comparison function of class **Traits** and `container_type`.
 
@@ -371,7 +371,7 @@ void push(const Type& val);
 
 ### Parameters
 
-`val`
+*val*<br/>
  The element added to the top of the priority_queue.
 
 ### Remarks
@@ -477,7 +477,7 @@ const_reference top() const;
 
 ### Return Value
 
-A reference to the largest element, as determined by the **Traits** function, object of the priority_queue.
+A reference to the largest element, as determined by the `Traits` function, object of the priority_queue.
 
 ### Remarks
 

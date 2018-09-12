@@ -13,31 +13,36 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ChainInterfaces::CanCastTo Method
-Indicates whether the specified interface ID can be cast to each of the specializations defined by the non-default template parameters.  
-  
-## Syntax  
-  
-```  
-__forceinline bool CanCastTo(  
-   REFIID riid,  
-   _Deref_out_ void **ppv  
-);  
-```  
-  
-#### Parameters  
- `riid`  
- An interface ID.  
-  
- `ppv`  
- A pointer to the last interface ID that was cast successfully.  
-  
-## Return Value  
- `true` if all the cast operations succeeded; otherwise, `false`.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ChainInterfaces Structure](../windows/chaininterfaces-structure.md)
+
+Indicates whether the specified interface ID can be cast to each of the specializations defined by the non-default template parameters.
+
+## Syntax
+
+```cpp
+__forceinline bool CanCastTo(
+   REFIID riid,
+   _Deref_out_ void **ppv
+);
+```
+
+### Parameters
+
+*riid*  
+An interface ID.
+
+*ppv*  
+A pointer to the last interface ID that was cast successfully.
+
+## Return Value
+
+**true** if all the cast operations succeeded; otherwise, **false**.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ChainInterfaces Structure](../windows/chaininterfaces-structure.md)

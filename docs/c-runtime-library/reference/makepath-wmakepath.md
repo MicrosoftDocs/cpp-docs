@@ -40,26 +40,26 @@ void _wmakepath(
 
 ### Parameters
 
-*path*
+*path*<br/>
 Full path buffer.
 
-*drive*
+*drive*<br/>
 Contains a letter (A, B, and so on) corresponding to the desired drive and an optional trailing colon. **_makepath** inserts the colon automatically in the composite path if it is missing. If *drive* is **NULL** or points to an empty string, no drive letter appears in the composite *path* string.
 
-*dir*
+*dir*<br/>
 Contains the path of directories, not including the drive designator or the actual file name. The trailing slash is optional, and either a forward slash (/) or a backslash (\\) or both might be used in a single *dir* argument. If no trailing slash (/ or \\) is specified, it is inserted automatically. If *dir* is **NULL** or points to an empty string, no directory path is inserted in the composite *path* string.
 
-*fname*
+*fname*<br/>
 Contains the base file name without any file name extensions. If *fname* is **NULL** or points to an empty string, no filename is inserted in the composite *path* string.
 
-*ext*
+*ext*<br/>
 Contains the actual file name extension, with or without a leading period (.). **_makepath** inserts the period automatically if it does not appear in *ext*. If *ext* is **NULL** or points to an empty string, no extension is inserted in the composite *path* string.
 
 ## Remarks
 
 The **_makepath** function creates a composite path string from individual components, storing the result in *path*. The *path* might include a drive letter, directory path, filename, and filename extension. **_wmakepath** is a wide-character version of **_makepath**; the arguments to **_wmakepath** are wide-character strings. **_wmakepath** and **_makepath** behave identically otherwise.
 
-**Security Note** Use a null-terminated string. To avoid buffer overrun, the null-terminated string must not exceed the size of the *path* buffer. **_makepath** does not ensure that the length of the composite path string does not exceed **_MAX_PATH**. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+**Security Note** Use a null-terminated string. To avoid buffer overrun, the null-terminated string must not exceed the size of the *path* buffer. **_makepath** does not ensure that the length of the composite path string does not exceed **_MAX_PATH**. For more information, see [Avoiding Buffer Overruns](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ### Generic-Text Routine Mappings
 

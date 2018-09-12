@@ -12,39 +12,43 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HStringReference::Operator== Operator
-Indicates whether the two parameters are equal.  
-  
-## Syntax  
-  
-```cpp  
-inline bool operator==(  
-               const HStringReference& lhs,   
-               const HStringReference& rhs) throw()  
-  
-inline bool operator==(  
-               const HSTRING& lhs,   
-               const HStringReference& rhs) throw()  
-  
-inline bool operator==(  
-               const HStringReference& lhs,   
+
+Indicates whether the two parameters are equal.
+
+## Syntax
+
+```cpp
+inline bool operator==(
+               const HStringReference& lhs,
+               const HStringReference& rhs) throw()
+
+inline bool operator==(
+               const HSTRING& lhs,
+               const HStringReference& rhs) throw()
+
+inline bool operator==(
+               const HStringReference& lhs,
                const HSTRING& rhs) throw()  
-  
-```  
-  
-#### Parameters  
- `lhs`  
- The first parameter to compare. `lhs` can be an HStringReference object or an HSTRING handle.  
-  
- `rhs`  
- The second parameter to compare.  `rhs` can be an HStringReference object or an HSTRING handle.  
-  
-## Return Value  
- `true` if the `lhs` and `rhs` parameters are equal; otherwise, `false`.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HStringReference Class](../windows/hstringreference-class.md)
+```
+
+### Parameters
+
+*lhs*  
+The first parameter to compare. *lhs* can be an **HStringReference** object or an HSTRING handle.
+
+*rhs*  
+The second parameter to compare.  *rhs* can be an **HStringReference** object or an HSTRING handle.
+
+## Return Value
+
+**true** if the *lhs* and *rhs* parameters are equal; otherwise, **false**.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HStringReference Class](../windows/hstringreference-class.md)

@@ -147,7 +147,7 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [Jump Statements](../cpp/jump-statements-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [continue Statement](../cpp/continue-statement-cpp.md)

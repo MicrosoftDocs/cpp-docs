@@ -1,7 +1,7 @@
 ---
 title: "@CurSeg | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["@CurSeg"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @CurSeg
-The name of the current segment (text macro).  
-  
-## Syntax  
-  
-```  
-  
-@CurSeg  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+The name of the current segment (text macro).
+
+## Syntax
+
+> @CurSeg
+
+## See also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

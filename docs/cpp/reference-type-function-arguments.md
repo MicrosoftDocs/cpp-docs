@@ -1,7 +1,7 @@
 ---
 title: "Reference-Type Function Arguments | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/27/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
 dev_langs: ["C++"]
@@ -12,58 +12,69 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Reference-Type Function Arguments
-It is often more efficient to pass references, rather than large objects, to functions. This allows the compiler to pass the address of the object while maintaining the syntax that would have been used to access the object. Consider the following example that uses the `Date` structure:  
-  
-```cpp 
-// reference_type_function_arguments.cpp  
-struct Date  
-{  
-short DayOfWeek;  
-short Month;  
-short Day;  
-short Year;  
-};  
-  
-// Create a Julian date of the form DDDYYYY  
-// from a Gregorian date.  
-long JulianFromGregorian( Date& GDate )  
-{  
-static int cDaysInMonth[] = {  
-31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31  
-   };  
-long JDate = 0;  
-// Add in days for months already elapsed.  
-for ( int i = 0; i < GDate.Month - 1; ++i )  
-JDate += cDaysInMonth[i];  
-// Add in days for this month.  
-JDate += GDate.Day;  
-  
-// Check for leap year.  
-if ( GDate.Year % 100 != 0 && GDate.Year % 4 == 0 )  
-JDate++;  
-// Add in year.  
-JDate *= 10000;  
-JDate += GDate.Year;  
-  
-return JDate;  
-}  
-  
-int main()  
-{  
-}  
-```  
-  
- The preceding code shows that members of a structure passed by reference are accessed using the member-selection operator (**.**) instead of the pointer member-selection operator (**->**).  
-  
- Although arguments passed as reference types observe the syntax of non-pointer types, they retain one important characteristic of pointer types: they are modifiable unless declared as **const**. Because the intent of the preceding code is not to modify the object `GDate`, a more appropriate function prototype is:  
-  
-```cpp 
-long JulianFromGregorian( const Date& GDate );  
-```  
-  
- This prototype guarantees that the function `JulianFromGregorian` will not change its argument.  
-  
- Any function prototyped as taking a reference type can accept an object of the same type in its place because there is a standard conversion from *typename* to *typename***&**.  
-  
-## See Also  
- [References](../cpp/references-cpp.md)
+
+It is often more efficient to pass references, rather than large objects, to functions. This allows the compiler to pass the address of the object while maintaining the syntax that would have been used to access the object. Consider the following example that uses the `Date` structure:
+
+```cpp
+// reference_type_function_arguments.cpp
+#include <iostream>
+
+struct Date
+{
+    short Month;
+    short Day;
+    short Year;
+};
+
+// Create a date of the form DDDYYYY (day of year, year)
+// from a Date.
+long DateOfYear( Date& date )
+{
+    static int cDaysInMonth[] = {
+        31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31
+    };
+    long dateOfYear = 0;
+
+    // Add in days for months already elapsed.
+    for ( int i = 0; i < date.Month - 1; ++i )
+        dateOfYear += cDaysInMonth[i];
+
+    // Add in days for this month.
+    dateOfYear += date.Day;
+
+    // Check for leap year.
+    if ( date.Month > 2 &&
+        (( date.Year % 100 != 0 || date.Year % 400 == 0 ) &&
+        date.Year % 4 == 0 ))
+        dateOfYear++;
+
+    // Add in year.
+    dateOfYear *= 10000;
+    dateOfYear += date.Year;
+
+    return dateOfYear;
+}
+
+int main()
+{
+    Date date{ 8, 27, 2018 };
+    long dateOfYear = DateOfYear(date);
+    std::cout << dateOfYear << std::endl;
+}
+```
+
+The preceding code shows that members of a structure passed by reference are accessed using the member-selection operator (**.**) instead of the pointer member-selection operator (**->**).
+
+Although arguments passed as reference types observe the syntax of non-pointer types, they retain one important characteristic of pointer types: they are modifiable unless declared as **const**. Because the intent of the preceding code is not to modify the object `date`, a more appropriate function prototype is:
+
+```cpp
+long DateOfYear( const Date& date );
+```
+
+This prototype guarantees that the function `DateOfYear` will not change its argument.
+
+Any function prototyped as taking a reference type can accept an object of the same type in its place because there is a standard conversion from *typename* to *typename*<strong>&</strong>.
+
+## See also
+
+[References](../cpp/references-cpp.md)<br/>

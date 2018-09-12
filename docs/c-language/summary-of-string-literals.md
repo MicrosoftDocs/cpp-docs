@@ -11,18 +11,18 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Summary of String Literals
-*string-literal*:  
- **'** *s-char-sequence* opt**'**  
+
+*string-literal*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**'** *s-char-sequence*<sub>opt</sub> **'**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**L'** *s-char-sequence*sub>opt</sub> **'**  
   
- **L'** *s-char-sequence* opt**'**  
+*s-char-sequence*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*s-char*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*s-char-sequence* *s-char*  
   
- *s-char-sequence*:  
- *s-char*  
-  
- *s-char-sequence s-char*  
-  
- *s-char*:  
- any member of the source character set except the double-quotation mark ("), backslash (\\), or newline character *escape-sequence*  
-  
-## See Also  
- [Lexical Grammar](../c-language/lexical-grammar.md)
+*s-char*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;any member of the source character set except the double-quotation mark ("), backslash (\\), or newline character escape-sequence  
+
+## See Also
+
+[Lexical Grammar](../c-language/lexical-grammar.md)

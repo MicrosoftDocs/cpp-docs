@@ -4,13 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-f1_keywords: ["<cliext/utility>", "cliext::pair", "cliext::pair::pair", "cliext::pair::first", "cliext::pair::first_type", "cliext::pair::second", "cliext::pair::second_type", 
-    "cliext::pair::swap", "cliext::make_pair", "cliext::pair::operator=", "cliext::pair::operator==", "cliext::pair::operator>=", "cliext::pair::operator>", "cliext::pair::operator!=",
-    "cliext::pair::operator<=", "cliext::pair::operator<"]
+f1_keywords: ["<cliext/utility>", "cliext::pair", "cliext::pair::pair", "cliext::pair::first", "cliext::pair::first_type", "cliext::pair::second", "cliext::pair::second_type", "cliext::pair::swap", "cliext::make_pair", "cliext::pair::operator=", "cliext::pair::operator==", "cliext::pair::operator>=", "cliext::pair::operator>", "cliext::pair::operator!=","cliext::pair::operator<=", "cliext::pair::operator<"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["<utility> header [STL/CLR]", "utility header [STL/CLR]", "<cliext/utility> header [STL/CLR]", "first member [STL/CLR]", "first_type member [STL/CLR]", "second member [STL/CLR]", 
-    "second_type member [STL/CLR]", "swap member [STL/CLR]", "make_pair function [STL/CLR]", "pair class [STL/CLR]", "pair member [STL/CLR]", "operator== member [STL/CLR]", "operator= member [STL/CLR]",
-    "operator>= member [STL/CLR]", "operator> member [STL/CLR]", "operator!= member [STL/CLR]", "operator<= member [STL/CLR]", "operator< member [STL/CLR]"]
+helpviewer_keywords: ["<utility> header [STL/CLR]", "utility header [STL/CLR]", "<cliext/utility> header [STL/CLR]", "first member [STL/CLR]", "first_type member [STL/CLR]", "second member [STL/CLR]", "second_type member [STL/CLR]", "swap member [STL/CLR]", "make_pair function [STL/CLR]", "pair class [STL/CLR]", "pair member [STL/CLR]", "operator== member [STL/CLR]", "operator= member [STL/CLR]", "operator>= member [STL/CLR]", "operator> member [STL/CLR]", "operator!= member [STL/CLR]", "operator<= member [STL/CLR]", "operator< member [STL/CLR]"]
 ms.assetid: fb48cb75-d5ef-47ce-b526-bf60dc86c552
 author: "mikeblome"
 ms.author: "mblome"
@@ -21,7 +17,7 @@ Include the STL/CLR header `<cliext/utility>` to define the template class `pair
   
 ## Syntax  
   
-```  
+```cpp  
 #include <utility>  
 ```
 
@@ -56,17 +52,17 @@ The template class describes an object that wraps a pair of values.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value1,  
     typename Value2>  
     ref class pair;  
 ```  
   
 #### Parameters  
- Value1  
+ *Value1*  
  The type of first wrapped value.  
   
- Value2  
+ *Value2*  
  The type of second wrapped value.  
   
 ## Members  
@@ -99,7 +95,7 @@ The first wrapped value.
   
 ### Syntax  
   
-```  
+```cpp  
 Value1 first;  
 ```  
   
@@ -123,7 +119,6 @@ int main()
     System::Console::WriteLine("[{0}, {1}]", first_val, second_val);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -135,12 +130,12 @@ The type of the first wrapped value.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Value1 first_type;  
 ```  
   
 ### Remarks  
- The type is a synonym for the template parameter `Value1`.  
+ The type is a synonym for the template parameter *Value1*.  
   
 ### Example  
   
@@ -158,8 +153,7 @@ int main()
     cliext::pair<wchar_t, int>::second_type second_val = c1.second;   
     System::Console::WriteLine("[{0}, {1}]", first_val, second_val);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -171,16 +165,16 @@ Replaces the stored pair of values.
   
 ### Syntax  
   
-```  
+```cpp  
 pair<Value1, Value2>% operator=(pair<Value1, Value2>% right);  
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Pair to copy.  
   
 ### Remarks  
- The member operator copies `right` to the object, then returns `*this`. You use it to replace the stored pair of values with a copy of the stored pair of values in `right`.  
+ The member operator copies *right* to the object, then returns `*this`. You use it to replace the stored pair of values with a copy of the stored pair of values in *right*.  
   
 ### Example  
   
@@ -199,8 +193,7 @@ int main()
     c2 = c1;   
     System::Console::WriteLine("[{0}, {1}]", c2.first, c2.second);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -213,7 +206,7 @@ Constructs a pair object.
   
 ### Syntax  
   
-```  
+```cpp  
 pair();  
 pair(pair<Coll>% right);  
 pair(pair<Coll>^ right);  
@@ -221,13 +214,13 @@ pair(Value1 val1, Value2 val2);
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Pair to store.  
   
- val1  
+ *val1*  
  First value to store.  
   
- val2  
+ *val2*  
  Second value to store.  
   
 ### Remarks  
@@ -251,7 +244,7 @@ pair(Value1 val1, Value2 val2);
   
  `pair(Value1 val1, Value2 val2);`  
   
- initializes the stored pair with with `val1` and `val2`.  
+ initializes the stored pair with *val1* and *val2*.  
   
 ### Example  
   
@@ -280,8 +273,7 @@ int main()
     System::Console::WriteLine("[{0}, {1}]", c4.first, c4.second);   
   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -296,7 +288,7 @@ The second wrapped value.
   
 ### Syntax  
   
-```  
+```cpp  
 Value2 second;  
 ```  
   
@@ -320,7 +312,6 @@ int main()
     System::Console::WriteLine("[{0}, {1}]", first_val, second_val);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -332,12 +323,12 @@ The type of the second wrapped value.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Value2 second_type;  
 ```  
   
 ### Remarks  
- The type is a synonym for the template parameter `Value2`.  
+ The type is a synonym for the template parameter *Value2*.  
   
 ### Example  
   
@@ -355,8 +346,7 @@ int main()
     cliext::pair<wchar_t, int>::second_type second_val = c1.second;   
     System::Console::WriteLine("[{0}, {1}]", first_val, second_val);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -368,16 +358,16 @@ Swaps the contents of two pairs.
   
 ### Syntax  
   
-```  
+```cpp  
 void swap(pair<Value1, Value2>% right);  
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Pair to swap contents with.  
   
 ### Remarks  
- The member function swaps the stored pair of values between `*this` and `right`.  
+ The member function swaps the stored pair of values between `*this` and *right*.  
   
 ### Example  
   
@@ -419,8 +409,7 @@ int main()
         System::Console::Write(" {0}", elem);   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -435,23 +424,23 @@ Make a `pair` from a pair of values.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value1,  
     typename Value2>  
     pair<Value1, Value2> make_pair(Value1 first, Value2 second);  
 ```  
   
 #### Parameters  
- `Value1`  
+ *Value1*  
  The type of the first wrapped value.  
   
- `Value2`  
+ *Value2*  
  The type of the second wrapped value.  
   
- `first`  
+ *first*  
  First value to wrap.  
   
- `second`  
+ *second*  
  Second value to wrap.  
   
 ### Remarks  
@@ -473,7 +462,6 @@ int main()
     System::Console::WriteLine("[{0}, {1}]", c1.first, c1.second);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -486,7 +474,7 @@ Pair not equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value1,  
     typename Value2>  
     bool operator!=(pair<Value1, Value2>% left,  
@@ -494,14 +482,14 @@ template<typename Value1,
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left pair to compare.  
   
- right  
+ *right*  
  Right pair to compare.  
   
 ### Remarks  
- The operator function returns `!(left == right)`. You use it to test whether `left` is not ordered the same as `right` when the two pairs are compared element by element.  
+ The operator function returns `!(left == right)`. You use it to test whether *left* is not ordered the same as *right* when the two pairs are compared element by element.  
   
 ### Example  
   
@@ -522,8 +510,7 @@ int main()
     System::Console::WriteLine("[x 3] != [x 4] is {0}",   
         c1 != c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -538,7 +525,7 @@ Pair less than comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value1,  
     typename Value2>  
     bool operator<(pair<Value1, Value2>% left,  
@@ -546,14 +533,14 @@ template<typename Value1,
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left pair to compare.  
   
- right  
+ *right*  
  Right pair to compare.  
   
 ### Remarks  
- The operator function returns `left.first <` `right.first || !(right.first <` `left.first &&` `left.second <` `right.second`. You use it to test whether `left` is ordered the before `right` when the two pairs are compared element by element.  
+ The operator function returns `left.first <` `right.first || !(right.first <` `left.first &&` `left.second <` `right.second`. You use it to test whether *left* is ordered the before *right* when the two pairs are compared element by element.  
   
 ### Example  
   
@@ -574,8 +561,7 @@ int main()
     System::Console::WriteLine("[x 3] < [x 4] is {0}",   
         c1 < c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -590,7 +576,7 @@ Pair less than or equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value1,  
     typename Value2>  
     bool operator<=(pair<Value1, Value2>% left,  
@@ -598,14 +584,14 @@ template<typename Value1,
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left pair to compare.  
   
- right  
+ *right*  
  Right pair to compare.  
   
 ### Remarks  
- The operator function returns `!(right < left)`. You use it to test whether `left` is not ordered after `right` when the two pairs are compared element by element.  
+ The operator function returns `!(right < left)`. You use it to test whether *left* is not ordered after *right* when the two pairs are compared element by element.  
   
 ### Example  
   
@@ -626,8 +612,7 @@ int main()
     System::Console::WriteLine("[x 4] <= [x 3] is {0}",   
         c2 <= c1);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -642,7 +627,7 @@ Pair equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value1,  
     typename Value2>  
     bool operator==(pair<Value1, Value2>% left,  
@@ -650,14 +635,14 @@ template<typename Value1,
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left pair to compare.  
   
- right  
+ *right*  
  Right pair to compare.  
   
 ### Remarks  
- The operator function returns `left.first ==` `right.first &&` `left.second ==` `right.second`. You use it to test whether `left` is ordered the same as `right` when the two pairs are compared element by element.  
+ The operator function returns `left.first ==` `right.first &&` `left.second ==` `right.second`. You use it to test whether *left* is ordered the same as *right* when the two pairs are compared element by element.  
   
 ### Example  
   
@@ -678,8 +663,7 @@ int main()
     System::Console::WriteLine("[x 3] == [x 4] is {0}",   
         c1 == c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -694,7 +678,7 @@ Pair greater than comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value1,  
     typename Value2>  
     bool operator>(pair<Value1, Value2>% left,  
@@ -702,14 +686,14 @@ template<typename Value1,
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left pair to compare.  
   
- right  
+ *right*  
  Right pair to compare.  
   
 ### Remarks  
- The operator function returns `right` `<` `left`. You use it to test whether `left` is ordered after `right` when the two pairs are compared element by element.  
+ The operator function returns `right` `<` `left`. You use it to test whether *left* is ordered after *right* when the two pairs are compared element by element.  
   
 ### Example  
   
@@ -730,8 +714,7 @@ int main()
     System::Console::WriteLine("[x 4] > [x 3] is {0}",   
         c2 > c1);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -746,7 +729,7 @@ Pair greater than or equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value1,  
     typename Value2>  
     bool operator>=(pair<Value1, Value2>% left,  
@@ -754,14 +737,14 @@ template<typename Value1,
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left pair to compare.  
   
- right  
+ *right*  
  Right pair to compare.  
   
 ### Remarks  
- The operator function returns `!(left < right)`. You use it to test whether `left` is not ordered before `right` when the two pairs are compared element by element.  
+ The operator function returns `!(left < right)`. You use it to test whether *left* is not ordered before *right* when the two pairs are compared element by element.  
   
 ### Example  
   
@@ -782,8 +765,7 @@ int main()
     System::Console::WriteLine("[x 3] >= [x 4] is {0}",   
         c1 >= c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -791,4 +773,4 @@ int main()
 [x, 4]  
 [x 3] >= [x 3] is True  
 [x 3] >= [x 4] is False  
-```  
+``` 

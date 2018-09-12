@@ -29,7 +29,7 @@ valarray<Type> abs(const valarray<Type>& left);
 
 ### Parameters
 
-`left`
+*left*  
  The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -84,7 +84,7 @@ valarray<Type> acos(const valarray<Type>& left);
 
 ### Parameters
 
-`left`
+*left*  
  The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -157,7 +157,7 @@ valarray<Type> asin(const valarray<Type>& left);
 
 ### Parameters
 
-`left`
+*left*  
  The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -230,7 +230,7 @@ valarray<Type> atan(const valarray<Type>& left);
 
 ### Parameters
 
-`left`
+*left*  
  The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -312,10 +312,10 @@ valarray<Type> atan2(const Type& left, const valarray<Type>& right);
 
 ### Parameters
 
-`left`
+*left*  
  The constant numerical data type or input valarray whose elements provide the values for the y-coordinate of the arctangent argument.
 
-`right`
+*right*  
  The constant numerical data type or input valarray whose elements provide the values for the x-coordinate of the arctangent argument.
 
 ### Return Value
@@ -334,7 +334,7 @@ The units of the returned elements are in radians.
 
 This function preserves information about the signs of the components in the argument that is lost by the standard tangent function, and this knowledge of the quadrant enables the return value to be assigned a unique angle between +pi and -pi.
 
-If `left` and `right` have a different number of elements, the result is undefined.
+If *left* and *right* have a different number of elements, the result is undefined.
 
 ### Example
 
@@ -400,7 +400,7 @@ valarray<Type> cos(const valarray<Type>& left);
 
 ### Parameters
 
-`left`
+*left*  
  The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -477,7 +477,7 @@ valarray<Type> cosh(const valarray<Type>& left);
 
 ### Parameters
 
-`left`
+*left*  
  The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -560,7 +560,7 @@ valarray<Type> exp(const valarray<Type>& left);
 
 ### Parameters
 
-`left`
+*left*  
  The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -623,7 +623,7 @@ valarray<Type> log(const valarray<Type>& left);
 
 ### Parameters
 
-`left`
+*left*  
  The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -686,7 +686,7 @@ valarray<Type> log10(const valarray<Type>& left);
 
 ### Parameters
 
-`left`
+*left*  
  The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -766,10 +766,10 @@ pow(
 
 ### Parameters
 
-`left`
+*left*  
  The input valarray whose elements supply the base for each element to be exponentiated.
 
-`right`
+*right*  
  The input valarray whose elements supply the power for each element to be exponentiated.
 
 ### Return Value
@@ -784,7 +784,7 @@ A valarray whose elements `I` are equal to:
 
 ### Remarks
 
-If `left` and `right` have a different number of elements, the result is undefined.
+If *left* and *right* have a different number of elements, the result is undefined.
 
 ### Example
 
@@ -848,7 +848,7 @@ valarray<Type> sin(const valarray<Type>& left);
 
 ### Parameters
 
-`left`
+*left*  
  The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -925,7 +925,7 @@ valarray<Type> sinh(const valarray<Type>& left);
 
 ### Parameters
 
-`left`
+*left*  
  The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -1008,7 +1008,7 @@ valarray<Type> sqrt(const valarray<Type>& left);
 
 ### Parameters
 
-`left`
+*left*  
  The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -1066,8 +1066,8 @@ void swap(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|An object of type `valarray`.|
-|`right`|An object of type `valarray`.|
+|*left*|An object of type `valarray`.|
+|*right*|An object of type `valarray`.|
 
 ### Remarks
 
@@ -1084,7 +1084,7 @@ valarray<Type> tan(const valarray<Type>& left);
 
 ### Parameters
 
-`left`
+*left*  
  The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -1161,7 +1161,7 @@ valarray<Type> tanh(const valarray<Type>& left);
 
 ### Parameters
 
-`left`
+*left*  
  The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value

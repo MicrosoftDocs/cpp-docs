@@ -12,18 +12,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::ReleaseNotifier::Release
-Deletes the current Module::ReleaseNotifier object if the object was constructed with a parameter of `true`.  
-  
-## Syntax  
-  
-```cpp  
-void Release() throw();  
-```  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Module::ReleaseNotifier Class](../windows/module-releasenotifier-class.md)
+
+Deletes the current **Module::ReleaseNotifier** object if the object was constructed with a parameter of **true**.
+
+## Syntax
+
+```cpp
+void Release() throw();
+```
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Module::ReleaseNotifier Class](../windows/module-releasenotifier-class.md)

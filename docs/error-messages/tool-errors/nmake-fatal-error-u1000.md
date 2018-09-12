@@ -1,7 +1,7 @@
 ---
 title: "NMAKE Fatal Error U1000 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/27/2018"
 ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["U1000"]
@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # NMAKE Fatal Error U1000
-syntax error : ')' missing in macro invocation  
-  
- A left parenthesis, **(**, appeared without a matching right parenthesis, **)**, in a macro invocation. The correct form is **$(***name***)**; `$`*n* is allowed for one-character names.
+
+> syntax error : ')' missing in macro invocation
+
+A left parenthesis, **(**, appeared without a matching right parenthesis, **)**, in a macro invocation. The correct form is **$(**<em>name</em>**)**; **$**<em>n</em> is allowed for one-character names.

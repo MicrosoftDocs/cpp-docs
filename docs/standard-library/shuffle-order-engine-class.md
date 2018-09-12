@@ -25,11 +25,11 @@ class shuffle_order_engine;
 
 ### Parameters
 
-`Engine`
- The base engine type.
+*Engine*<br/>
+The base engine type.
 
-`K`
- **Table size**. Number of elements in the buffer (table). **Precondition**: `0 < K`
+*K*<br/>
+**Table size**. Number of elements in the buffer (table). **Precondition**: `0 < K`
 
 ## Members
 
@@ -42,7 +42,7 @@ For more information about engine members, see [\<random>](../standard-library/r
 
 ## Remarks
 
-This template class describes an *engine adaptor* that produces values by reordering the values returned by its base engine. Each constructor fills the internal table with `K` values returned by the base engine, and a random element is selected from the table when a value is requested.
+This template class describes an *engine adaptor* that produces values by reordering the values returned by its base engine. Each constructor fills the internal table with *K* values returned by the base engine, and a random element is selected from the table when a value is requested.
 
 ## Requirements
 

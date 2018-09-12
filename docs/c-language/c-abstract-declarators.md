@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # C Abstract Declarators
-An abstract declarator is a declarator without an identifier, consisting of one or more pointer, array, or function modifiers. The pointer modifier (**\***) always precedes the identifier in a declarator; array (**[ ]**) and function ( **( )** ) modifiers follow the identifier. Knowing this, you can determine where the identifier would appear in an abstract declarator and interpret the declarator accordingly. See [Interpreting More Complex Declarators](../c-language/interpreting-more-complex-declarators.md) for additional information and examples of complex declarators. Generally `typedef` can be used to simplify declarators. See [Typedef Declarations](../c-language/typedef-declarations.md).  
+An abstract declarator is a declarator without an identifier, consisting of one or more pointer, array, or function modifiers. The pointer modifier (<strong>\*</strong>) always precedes the identifier in a declarator; array (**[ ]**) and function ( **( )** ) modifiers follow the identifier. Knowing this, you can determine where the identifier would appear in an abstract declarator and interpret the declarator accordingly. See [Interpreting More Complex Declarators](../c-language/interpreting-more-complex-declarators.md) for additional information and examples of complex declarators. Generally `typedef` can be used to simplify declarators. See [Typedef Declarations](../c-language/typedef-declarations.md).  
   
  Abstract declarators can be complex. Parentheses in a complex abstract declarator specify a particular interpretation, just as they do for the complex declarators in declarations.  
   

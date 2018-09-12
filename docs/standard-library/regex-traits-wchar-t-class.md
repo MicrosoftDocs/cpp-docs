@@ -1,7 +1,7 @@
 ---
 title: "regex_traits&lt;wchar_t&gt; Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/10/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 f1_keywords: ["regex/std::regex_traits<wchar_t>"]
@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # regex_traits&lt;wchar_t&gt; Class
 
-Specialization of regex_traits for wchar_t.
+Specialization of `regex_traits` for **wchar_t**.
 
 ## Syntax
 
@@ -25,7 +25,7 @@ class regex_traits<wchar_t>
 
 ## Remarks
 
-The class is an explicit specialization of template class [regex_traits](../standard-library/regex-traits-class.md) for elements of type `wchar_t` (so that it can take advantage of library functions that manipulate objects of this type).
+The class is an explicit specialization of template class [regex_traits](../standard-library/regex-traits-class.md) for elements of type **wchar_t** (so that it can take advantage of library functions that manipulate objects of this type).
 
 ## Requirements
 

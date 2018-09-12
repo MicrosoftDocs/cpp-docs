@@ -52,10 +52,10 @@ int main( )
       cerr << "Type: " << typeid( e ).name( ) << endl;
    };
 }
-\* Output:
+/* Output:
 Caught: The number's a bit small, captain!
 Type: class std::underflow_error
-*\
+*/
 ```
 
 ## Requirements
@@ -66,6 +66,5 @@ Type: class std::underflow_error
 
 ## See also
 
-[\<stdexcept> Members](http://msdn.microsoft.com/en-us/7b6b0a73-916e-44aa-9a3f-f5b6b3ce98e6)<br/>
 [runtime_error Class](../standard-library/runtime-error-class.md)<br/>
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

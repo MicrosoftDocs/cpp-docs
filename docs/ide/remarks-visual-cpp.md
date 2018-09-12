@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # &lt;remarks&gt; (Visual C++)
-The \<remarks> tag is used to add information about a type, supplementing the information specified with [\<summary>](../ide/summary-visual-cpp.md). This information is displayed in the [Object Browser](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470) and in the Code Comment Web Report.  
+The \<remarks> tag is used to add information about a type, supplementing the information specified with [\<summary>](../ide/summary-visual-cpp.md). This information is displayed in the [Object Browser](/visualstudio/ide/viewing-the-structure-of-code) and in the Code Comment Web Report.  
   
 ## Syntax  
   

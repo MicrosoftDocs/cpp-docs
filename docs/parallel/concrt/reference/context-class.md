@@ -262,7 +262,7 @@ static void __cdecl YieldExecution();
 ### Remarks  
  This method will result in the process' default scheduler being created and/or attached to the calling context if there is no scheduler currently associated with the calling context.  
   
- This function is new in [!INCLUDE[vs_dev14](../../../ide/includes/vs_dev14_md.md)] and is identical to the [Yield](#yield) function but does not conflict with the Yield macro in Windows.h.  
+ This function is new in Visual Studio 2015 and is identical to the [Yield](#yield) function but does not conflict with the Yield macro in Windows.h.  
   
 ## See Also  
  [concurrency Namespace](concurrency-namespace.md)   

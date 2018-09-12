@@ -27,11 +27,11 @@ T7 get_money(Money& _Amount, bool _Intl);
 
 ### Parameters
 
-*_Amount*
- The extracted monetary value.
+*_Amount*<br/>
+The extracted monetary value.
 
-*_Intl*
- If **true**, use international format. The default value is **false**.
+*_Intl*<br/>
+If **true**, use international format. The default value is **false**.
 
 ### Remarks
 
@@ -50,11 +50,11 @@ T10 put_time(struct tm *_Tptr, const Elem *_Fmt);
 
 ### Parameters
 
-*_Tptr*
- The time in the form of a time structure.
+*_Tptr*<br/>
+The time in the form of a time structure.
 
-*_Fmt*
- The desired format to use to obtain the time value.
+*_Fmt*<br/>
+The desired format to use to obtain the time value.
 
 ### Remarks
 
@@ -71,11 +71,11 @@ T8 put_money(const Money& _Amount, bool _Intl);
 
 ### Parameters
 
-*_Amount*
- The monetary amount to insert into the stream.
+*_Amount*<br/>
+The monetary amount to insert into the stream.
 
-*_Intl*
- Set to **true** if manipulator should use international format, **false** if it should not.
+*_Intl*<br/>
+Set to **true** if manipulator should use international format, **false** if it should not.
 
 ### Return Value
 
@@ -98,11 +98,11 @@ T10 put_time(struct tm* _Tptr, const Elem* _Fmt);
 
 ### Parameters
 
-*_Tptr*
- The time value to write to the stream, provided in a time structure.
+*_Tptr*<br/>
+The time value to write to the stream, provided in a time structure.
 
-*_Fmt*
- The desired format to write the time value.
+*_Fmt*<br/>
+The desired format to write the time value.
 
 ### Remarks
 
@@ -121,14 +121,14 @@ quoted(const char* str, char delimiter, char escape) // or wide versions
 
 ### Parameters
 
-*str*
- A std::string, char*, string literal or raw string literal, or a wide version of any of these (e.g. std::wstring, wchar_t\*).
+*str*<br/>
+A std::string, char\*, string literal or raw string literal, or a wide version of any of these (e.g. std::wstring, wchar_t\*).
 
-*delimiter*
- A user-specified character, or wide character, to use as the delimiter for the beginning and end of the string.
+*delimiter*<br/>
+A user-specified character, or wide character, to use as the delimiter for the beginning and end of the string.
 
-*escape*
- A user-specified character, or wide character, to use as the escape character for escape sequences within the string.
+*escape*<br/>
+A user-specified character, or wide character, to use as the escape character for escape sequences within the string.
 
 ### Remarks
 
@@ -286,8 +286,8 @@ T1 resetiosflags(ios_base::fmtflags Mask);
 
 ### Parameters
 
-*Mask*
- The flags to clear.
+*Mask*<br/>
+The flags to clear.
 
 ### Return Value
 
@@ -307,8 +307,8 @@ T3 setbase(int _Base);
 
 ### Parameters
 
-*_Base*
- The number base.
+*_Base*<br/>
+The number base.
 
 ### Return Value
 
@@ -337,8 +337,8 @@ T4 setfill(Elem Ch);
 
 ### Parameters
 
-*Ch*
- The character that will be used to fill spaces in a right-justified display.
+*Ch*<br/>
+The character that will be used to fill spaces in a right-justified display.
 
 ### Return Value
 
@@ -358,8 +358,8 @@ T2 setiosflags(ios_base::fmtflags Mask);
 
 ### Parameters
 
-*Mask*
- The flags to set.
+*Mask*<br/>
+The flags to set.
 
 ### Return Value
 
@@ -379,8 +379,8 @@ T5 setprecision(streamsize Prec);
 
 ### Parameters
 
-*Prec*
- The precision for floating-point values.
+*Prec*<br/>
+The precision for floating-point values.
 
 ### Return Value
 
@@ -400,8 +400,8 @@ T6 setw(streamsize Wide);
 
 ### Parameters
 
-*Wide*
- The width of the display field.
+*Wide*<br/>
+The width of the display field.
 
 ### Return Value
 

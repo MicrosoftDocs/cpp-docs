@@ -26,7 +26,7 @@ C++ expressions are divided into several categories:
   
 -   [Constant expressions](../cpp/cpp-constant-expressions.md). Constant expressions are formed entirely of constant data.  
   
--   [Expressions with explicit type conversions](http://msdn.microsoft.com/en-us/060ad6b4-9592-4f3e-8509-a20ac84a85ae). Explicit type conversions, or "casts," can be used in expressions.  
+-   [Expressions with explicit type conversions](explicit-type-conversion-operator-parens.md). Explicit type conversions, or "casts," can be used in expressions.  
   
 -   [Expressions with pointer-to-member operators](../cpp/pointer-to-member-operators-dot-star-and-star.md).  
   
@@ -34,5 +34,5 @@ C++ expressions are divided into several categories:
   
 -   [Run-Time Type Information](../cpp/run-time-type-information.md). Determine the type of an object during program execution.  
   
-## See Also  
+## See also  
  [Expressions](../cpp/expressions-cpp.md)

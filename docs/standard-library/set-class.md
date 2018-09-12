@@ -27,16 +27,16 @@ class set
 
 ### Parameters
 
-`Key`
+*Key*<br/>
  The element data type to be stored in the set.
 
-`Traits`
+*Traits*<br/>
  The type that provides a function object that can compare two element values as sort keys to determine their relative order in the set. This argument is optional, and the binary predicate **less** *\<Key>* is the default value.
 
 In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
 
-`Allocator`
- The type that represents the stored allocator object that encapsulates details about the set's allocation and deallocation of memory. This argument is optional, and the default value is **allocator***\<Key>.*
+*Allocator*<br/>
+ The type that represents the stored allocator object that encapsulates details about the set's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<Key>`.
 
 ## Remarks
 
@@ -73,10 +73,10 @@ The iterator provided by the set class is a bidirectional iterator, but the clas
 |Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the set object.|
-|[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a `const` element in the set.|
-|[const_pointer](#const_pointer)|A type that provides a pointer to a `const` element in a set.|
-|[const_reference](#const_reference)|A type that provides a reference to a `const` element stored in a set for reading and performing `const` operations.|
-|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a bidirectional iterator that can read any `const` element in the set.|
+|[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a **const** element in the set.|
+|[const_pointer](#const_pointer)|A type that provides a pointer to a **const** element in a set.|
+|[const_reference](#const_reference)|A type that provides a reference to a **const** element stored in a set for reading and performing **const** operations.|
+|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a bidirectional iterator that can read any **const** element in the set.|
 |[difference_type](#difference_type)|A signed integer type that can be used to represent the number of elements of a set in a range between elements pointed to by iterators.|
 |[iterator](#iterator)|A type that provides a bidirectional iterator that can read or modify any element in a set.|
 |[key_compare](#key_compare)|A type that provides a function object that can compare two sort keys to determine the relative order of two elements in the set.|
@@ -140,7 +140,7 @@ typedef Allocator allocator_type;
 
 ### Remarks
 
-**allocator_type** is a synonym for the template parameter [Allocator](../standard-library/set-class.md).
+`allocator_type` is a synonym for the template parameter [Allocator](../standard-library/set-class.md).
 
 Returns the function object that a multiset uses to order its elements, which is the template parameter `Allocator`.
 
@@ -166,7 +166,7 @@ A bidirectional iterator addressing the first element in the set or the location
 
 ### Remarks
 
-If the return value of **begin** is assigned to a `const_iterator`, the elements in the set object cannot be modified. If the return value of **begin** is assigned to an **iterator**, the elements in the set object can be modified.
+If the return value of `begin` is assigned to a `const_iterator`, the elements in the set object cannot be modified. If the return value of `begin` is assigned to an `iterator`, the elements in the set object can be modified.
 
 ### Example
 
@@ -209,7 +209,7 @@ The first element of s1 is now 2
 
 ## <a name="cbegin"></a>  set::cbegin
 
-Returns a `const` iterator that addresses the first element in the range.
+Returns a **const** iterator that addresses the first element in the range.
 
 ```cpp
 const_iterator cbegin() const;
@@ -217,13 +217,13 @@ const_iterator cbegin() const;
 
 ### Return Value
 
-A `const` bidirectional-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
+A **const** bidirectional-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
 ### Remarks
 
 With the return value of `cbegin`, the elements in the range cannot be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -235,7 +235,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a>  set::cend
 
-Returns a `const` iterator that addresses the location just beyond the last element in a range.
+Returns a **const** iterator that addresses the location just beyond the last element in a range.
 
 ```cpp
 const_iterator cend() const;
@@ -243,13 +243,13 @@ const_iterator cend() const;
 
 ### Return Value
 
-A `const` bidirectional-access iterator that points just beyond the end of the range.
+A **const** bidirectional-access iterator that points just beyond the end of the range.
 
 ### Remarks
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -396,7 +396,7 @@ size_type count(const Key& key) const;
 
 ### Parameters
 
-`key`
+*key*<br/>
  The key of the elements to be matched from the set.
 
 ### Return Value
@@ -622,7 +622,7 @@ emplace(
 
 |Parameter|Description|
 |-|-|
-|`args`|The arguments forwarded to construct an element to be inserted into the set unless it already contains an element whose value is equivalently ordered.|
+|*args*|The arguments forwarded to construct an element to be inserted into the set unless it already contains an element whose value is equivalently ordered.|
 
 ### Return Value
 
@@ -704,8 +704,8 @@ iterator emplace_hint(
 
 |Parameter|Description|
 |-|-|
-|`args`|The arguments forwarded to construct an element to be inserted into the set unless the set already contains that element or, more generally, unless it already contains an element whose value is equivalently ordered.|
-|`where`|The place to start searching for the correct point of insertion. (If that point immediately precedes `where`, insertion can occur in amortized constant time instead of logarithmic time.)|
+|*args*|The arguments forwarded to construct an element to be inserted into the set unless the set already contains that element or, more generally, unless it already contains an element whose value is equivalently ordered.|
+|*where*|The place to start searching for the correct point of insertion. (If that point immediately precedes *where*, insertion can occur in amortized constant time instead of logarithmic time.)|
 
 ### Return Value
 
@@ -842,7 +842,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### Parameters
 
-`key`
+*key*<br/>
  The argument key to be compared with the sort key of an element from the set being searched.
 
 ### Return Value
@@ -927,16 +927,16 @@ size_type erase(
 
 ### Parameters
 
-`Where`
+*Where*<br/>
  Position of the element to be removed.
 
-`First`
+*First*<br/>
  Position of the first element to be removed.
 
-`Last`
+*Last*<br/>
  Position just beyond the last element to be removed.
 
-`Key`
+*Key*<br/>
  The key value of the elements to be removed.
 
 ### Return Value
@@ -1039,18 +1039,18 @@ const_iterator find(const Key& key) const;
 
 ### Parameters
 
-`key`
+*key*<br/>
  The key value to be matched by the sort key of an element from the set being searched.
 
 ### Return Value
 
-An iterator that refers to the location of an element with a specified key, or the location succeeding the last element in the set ( `set::end()`) if no match is found for the key.
+An iterator that refers to the location of an element with a specified key, or the location succeeding the last element in the set (`set::end()`) if no match is found for the key.
 
 ### Remarks
 
-The member function returns an iterator that refers to an element in the set whose key is equivalent to the argument `key` under a binary predicate that induces an ordering based on a less than comparability relation.
+The member function returns an iterator that refers to an element in the set whose key is equivalent to the argument *key* under a binary predicate that induces an ordering based on a less than comparability relation.
 
-If the return value of **find** is assigned to a **const_iterator**, the set object cannot be modified. If the return value of **find** is assigned to an **iterator**, the set object can be modified
+If the return value of `find` is assigned to a `const_iterator`, the set object cannot be modified. If the return value of `find` is assigned to an `iterator`, the set object can be modified
 
 ### Example
 
@@ -1235,17 +1235,17 @@ IList);
 
 |Parameter|Description|
 |-|-|
-|`Val`|The value of an element to be inserted into the set unless it already contains an element whose value is equivalently ordered.|
-|`Where`|The place to start searching for the correct point of insertion. (If that point immediately precedes `Where`, insertion can occur in amortized constant time instead of logarithmic time.)|
-|`ValTy`|Template parameter that specifies the argument type that the set can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards `Val` as an argument.|
-|`First`|The position of the first element to be copied.|
-|`Last`|The position just beyond the last element to be copied.|
-|`InputIterator`|Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.|
-|`IList`|The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.|
+|*Val*|The value of an element to be inserted into the set unless it already contains an element whose value is equivalently ordered.|
+|*Where*|The place to start searching for the correct point of insertion. (If that point immediately precedes *Where*, insertion can occur in amortized constant time instead of logarithmic time.)|
+|*ValTy*|Template parameter that specifies the argument type that the set can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.|
+|*First*|The position of the first element to be copied.|
+|*Last*|The position just beyond the last element to be copied.|
+|*InputIterator*|Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.|
+|*IList*|The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.|
 
 ### Return Value
 
-The single-element member functions, (1) and (2), return a [pair](../standard-library/pair-structure.md) whose `bool` component is true if an insertion was made, and false if the set already contained an element of equivalent value in the ordering. The iterator component of the return-value pair points to the newly inserted element if the `bool` component is true, or to the existing element if the `bool` component is false.
+The single-element member functions, (1) and (2), return a [pair](../standard-library/pair-structure.md) whose **bool** component is true if an insertion was made, and false if the set already contained an element of equivalent value in the ordering. The iterator component of the return-value pair points to the newly inserted element if the **bool** component is true, or to the existing element if the **bool** component is false.
 
 The single-element-with-hint member functions, (3) and (4), return an iterator that points to the position where the new element was inserted into the set or, if an element with an equivalent key already exists, to the existing element.
 
@@ -1255,7 +1255,7 @@ No iterators, pointers, or references are invalidated by this function.
 
 During the insertion of just one element, if an exception is thrown, the container's state is not modified. During the insertion of multiple elements, if an exception is thrown, the container is left in an unspecified but valid state.
 
-To access the iterator component of a `pair` `pr` that's returned by the single-element member functions, use `pr.first`; to dereference the iterator within the returned pair, use `*pr.first`, giving you an element. To access the `bool` component, use `pr.second`. For an example, see the sample code later in this article.
+To access the iterator component of a `pair` `pr` that's returned by the single-element member functions, use `pr.first`; to dereference the iterator within the returned pair, use `*pr.first`, giving you an element. To access the **bool** component, use `pr.second`. For an example, see the sample code later in this article.
 
 The [value_type](../standard-library/map-class.md#value_type) of a container is a typedef that belongs to the container, and, for set, `set<V>::value_type` is type `const V`.
 
@@ -1374,7 +1374,7 @@ typedef implementation-defined iterator;
 
 ### Example
 
-See the example for [begin](#begin) for an example of how to declare and use an **iterator**.
+See the example for [begin](#begin) for an example of how to declare and use an `iterator`.
 
 ## <a name="key_comp"></a>  set::key_comp
 
@@ -1398,7 +1398,7 @@ The stored object defines the member function:
 
 which returns **true** if `_xVal` precedes and is not equal to `_yVal` in the sort order.
 
-Note that both [key_compare](#key_compare) and [value_compare](#value_compare) are synonyms for the template parameter **Traits**. Both types are provided for the set and multiset classes, where they are identical, for compatibility with the map and multimap classes, where they are distinct.
+Note that both [key_compare](#key_compare) and [value_compare](#value_compare) are synonyms for the template parameter `Traits`. Both types are provided for the set and multiset classes, where they are identical, for compatibility with the map and multimap classes, where they are distinct.
 
 ### Example
 
@@ -1465,7 +1465,7 @@ typedef Traits key_compare;
 
 For more information on `Traits` see the [set Class](../standard-library/set-class.md) topic.
 
-Note that both `key_compare` and [value_compare](#value_compare) are synonyms for the template parameter **Traits**. Both types are provided for the set and multiset classes, where they are identical, for compatibility with the map and multimap classes, where they are distinct.
+Note that both `key_compare` and [value_compare](#value_compare) are synonyms for the template parameter `Traits`. Both types are provided for the set and multiset classes, where they are identical, for compatibility with the map and multimap classes, where they are distinct.
 
 ### Example
 
@@ -1485,7 +1485,7 @@ typedef Key key_type;
 
 For more information on `Key`, see the Remarks section of the [set Class](../standard-library/set-class.md) topic.
 
-Note that both `key_type` and [value_type](#value_type) are synonyms for the template parameter **Key**. Both types are provided for the set and multiset classes, where they are identical, for compatibility with the map and multimap classes, where they are distinct.
+Note that both `key_type` and [value_type](#value_type) are synonyms for the template parameter `Key`. Both types are provided for the set and multiset classes, where they are identical, for compatibility with the map and multimap classes, where they are distinct.
 
 ### Example
 
@@ -1503,7 +1503,7 @@ iterator lower_bound(const Key& key);
 
 ### Parameters
 
-`key`
+*key*<br/>
  The argument key to be compared with the sort key of an element from the set being searched.
 
 ### Return Value
@@ -1605,13 +1605,13 @@ set& operator=(set&& right);
 
 |Parameter|Description|
 |-|-|
-|`right`|The `set` providing new elements to be assigned to this `set`.|
+|*right*|The `set` providing new elements to be assigned to this `set`.|
 
 ### Remarks
 
-The first version of `operator=` uses an [lvalue reference](../cpp/lvalue-reference-declarator-amp.md) for `right`, to copy elements from `right` to this `set`.
+The first version of `operator=` uses an [lvalue reference](../cpp/lvalue-reference-declarator-amp.md) for *right*, to copy elements from *right* to this `set`.
 
-The second version uses an [rvalue reference](../cpp/rvalue-reference-declarator-amp-amp.md) for  right. It moves elements from `right` to this `set`.
+The second version uses an [rvalue reference](../cpp/rvalue-reference-declarator-amp-amp.md) for  right. It moves elements from *right* to this `set`.
 
 Any elements in this `set` before the operator function executes are discarded.
 
@@ -1921,12 +1921,12 @@ set(
 
 |Parameter|Description|
 |-|-|
-|`Al`|The storage allocator class to be used for this set object, which defaults to **Allocator**.|
-|`Comp`|The comparison function of type `const Traits` used to order the elements in the set, which defaults to `Compare`.|
-|`Rght`|The set of which the constructed set is to be a copy.|
-|`First`|The position of the first element in the range of elements to be copied.|
-|`Last`|The position of the first element beyond the range of elements to be copied.|
-|`IList`|The initializer_list from which to copy the elements.|
+|*Al*|The storage allocator class to be used for this set object, which defaults to `Allocator`.|
+|*Comp*|The comparison function of type `const Traits` used to order the elements in the set, which defaults to `Compare`.|
+|*Rght*|The set of which the constructed set is to be a copy.|
+|*First*|The position of the first element in the range of elements to be copied.|
+|*Last*|The position of the first element beyond the range of elements to be copied.|
+|*IList*|The initializer_list from which to copy the elements.|
 
 ### Remarks
 
@@ -1934,15 +1934,15 @@ All constructors store a type of allocator object that manages memory storage fo
 
 All constructors initialize their sets.
 
-All constructors store a function object of type **Traits** that is used to establish an order among the keys of the set and that can later be returned by calling [key_comp](#key_comp).
+All constructors store a function object of type `Traits` that is used to establish an order among the keys of the set and that can later be returned by calling [key_comp](#key_comp).
 
-The first three constructors specify an empty initial set, the second specifying the type of comparison function ( `comp`) to be used in establishing the order of the elements and the third explicitly specifying the allocator type ( `al`) to be used. The keyword **explicit** suppresses certain kinds of automatic type conversion.
+The first three constructors specify an empty initial set, the second specifying the type of comparison function (`comp`) to be used in establishing the order of the elements and the third explicitly specifying the allocator type (`al`) to be used. The keyword **explicit** suppresses certain kinds of automatic type conversion.
 
 The fourth constructor specifies a copy of the set `right`.
 
 The next three constructors use an initializer_list to specify the elements.
 
-The next three constructors copy the range [ `first`, `last`) of a set with increasing explicitness in specifying the type of comparison function of class **Traits** and **Allocator**.
+The next three constructors copy the range [ `first`, `last`) of a set with increasing explicitness in specifying the type of comparison function of class `Traits` and **Allocator**.
 
 The eighth constructor specifies a copy of the set by moving `right`.
 
@@ -2123,7 +2123,7 @@ void swap(
 
 ### Parameters
 
-`right`
+*right*<br/>
  The argument set providing the elements to be swapped with the target set.
 
 ### Remarks
@@ -2192,12 +2192,12 @@ iterator upper_bound(const Key& key);
 
 ### Parameters
 
-`key`
+*key*<br/>
  The argument key to be compared with the sort key of an element from the set being searched.
 
 ### Return Value
 
-An **iterator** or `const_iterator` that addresses the location of an element in a set that with a key that is greater than the argument key, or that addresses the location succeeding the last element in the set if no match is found for the key.
+An `iterator` or `const_iterator` that addresses the location of an element in a set that with a key that is greater than the argument key, or that addresses the location succeeding the last element in the set if no match is found for the key.
 
 ### Example
 
@@ -2270,7 +2270,7 @@ The stored object defines the member function:
 
 which returns **true** if `_xVal` precedes and is not equal to `_yVal` in the sort order.
 
-Note that both [value_compare](#value_compare) and [key_compare](#key_compare) are synonyms for the template parameter **Traits**. Both types are provided for the set and multiset classes, where they are identical, for compatibility with the map and multimap classes, where they are distinct.
+Note that both [value_compare](#value_compare) and [key_compare](#key_compare) are synonyms for the template parameter `Traits`. Both types are provided for the set and multiset classes, where they are identical, for compatibility with the map and multimap classes, where they are distinct.
 
 ### Example
 
@@ -2337,7 +2337,7 @@ typedef key_compare value_compare;
 
 For more information on `Traits` see the [set Class](../standard-library/set-class.md) topic.
 
-Note that both [key_compare](#key_compare) and **value_compare** are synonyms for the template parameter **Traits**. Both types are provided for the set and multiset classes, where they are identical, for compatibility with the map and multimap classes, where they are distinct.
+Note that both [key_compare](#key_compare) and `value_compare` are synonyms for the template parameter `Traits`. Both types are provided for the set and multiset classes, where they are identical, for compatibility with the map and multimap classes, where they are distinct.
 
 ### Example
 
@@ -2357,7 +2357,7 @@ typedef Key value_type;
 
 For more information on `Key`, see the Remarks section of the [set Class](../standard-library/set-class.md) topic.
 
-Note that both [key_type](#key_type) and `value_type` are synonyms for the template parameter **Key**. Both types are provided for the set and multiset classes, where they are identical, for compatibility with the map and multimap classes, where they are distinct.
+Note that both [key_type](#key_type) and `value_type` are synonyms for the template parameter `Key`. Both types are provided for the set and multiset classes, where they are identical, for compatibility with the map and multimap classes, where they are distinct.
 
 ### Example
 

@@ -1,7 +1,7 @@
 ---
 title: "MFC ActiveX Controls | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 f1_keywords: ["MFC ActiveX Controls (MFC)"]
@@ -13,7 +13,13 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls
-An ActiveX control is a reusable software component based on the Component Object Model (COM) that supports a wide variety of OLE functionality and can be customized to fit many software needs. ActiveX controls are designed for use both in ordinary ActiveX control containers and on the Internet, in World Wide Web pages. You can create ActiveX controls either with MFC, described here, or with the [Active Template Library (ATL)](../atl/active-template-library-atl-concepts.md).  
+
+An ActiveX control is a reusable software component based on the Component Object Model (COM) that supports a wide variety of OLE functionality and can be customized to fit many software needs. 
+
+>[!IMPORTANT]
+> ActiveX is a legacy technology that should not be used for new development. For more information, see [ActiveX Controls](activex-controls.md).
+
+ActiveX controls are designed for use both in ordinary ActiveX control containers and on the Internet, in World Wide Web pages. You can create ActiveX controls either with MFC, described here, or with the [Active Template Library (ATL)](../atl/active-template-library-atl-concepts.md).  
   
  An ActiveX control can draw itself in its own window, respond to events (such as mouse clicks), and be managed through an interface that includes properties and methods similar to those in Automation objects.  
   
@@ -36,7 +42,7 @@ Interaction Between an ActiveX Control Container and a Windowed ActiveX Control
   
 -   [Active Documents](../mfc/active-documents.md)  
   
--   [Understanding ActiveX Controls](http://msdn.microsoft.com/library/windows/desktop/ms693753)  
+-   [Understanding ActiveX Controls](/windows/desktop/com/activex-controls)  
   
 -   [Upgrading an Existing ActiveX Control to be Used on the Internet](../mfc/upgrading-an-existing-activex-control.md)  
   

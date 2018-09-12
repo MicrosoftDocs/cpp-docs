@@ -25,12 +25,12 @@ struct rank;
 
 ### Parameters
 
-`Ty`
- The type to query.
+*Ty*<br/>
+The type to query.
 
 ## Remarks
 
-The type query holds the value of the number of dimensions of the array type `Ty`, or 0 if `Ty` is not an array type.
+The type query holds the value of the number of dimensions of the array type *Ty*, or 0 if *Ty* is not an array type.
 
 ## Example
 

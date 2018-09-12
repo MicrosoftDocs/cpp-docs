@@ -12,19 +12,20 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Default ATL Project Configurations
-The ATL Project Wizard creates two project configurations by default:  
-  
-|Configuration|Character set|Use of ATL|  
-|-------------------|-------------------|----------------|  
-|Release|MBCS|DLL|  
-|Debug|MBCS|DLL|  
-  
- **Character set**, **Use of ATL** and can all be changed in the **Project Settings** dialog under the **General** tab. You can also add your own configurations using the Configuration Manager. For details, see [Build Configurations](/visualstudio/ide/understanding-build-configurations).  
-  
 
-## See Also  
- [Programming with ATL and C Run-Time Code](../../atl/programming-with-atl-and-c-run-time-code.md)   
- [Working with Project Properties](../../ide/working-with-project-properties.md)   
- [Configuration Manager Dialog Box](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)   
- [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio)
+The ATL Project Wizard creates two project configurations by default:
+
+|Configuration|Character set|Use of ATL|
+|-------------------|-------------------|----------------|
+|Release|MBCS|DLL|
+|Debug|MBCS|DLL|
+
+**Character set**, **Use of ATL** and can all be changed in the **Project Settings** dialog under the **General** tab. You can also add your own configurations using the Configuration Manager. For details, see [Build Configurations](/visualstudio/ide/understanding-build-configurations).
+
+## See Also
+
+[Programming with ATL and C Run-Time Code](../../atl/programming-with-atl-and-c-run-time-code.md)   
+[Working with Project Properties](../../ide/working-with-project-properties.md)   
+[Configuration Manager Dialog Box](/visualstudio/ide/understanding-build-configurations)   
+[Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio)
 

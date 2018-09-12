@@ -25,14 +25,14 @@ class ostream_iterator
 
 ### Parameters
 
-*Type*
- The type of object to be inserted into the output stream.
+*Type*<br/>
+The type of object to be inserted into the output stream.
 
-*CharType*
- The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is **char**.
+*CharType*<br/>
+The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is **char**.
 
-*Traits*
- The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is `char_traits`\< *CharType>.*
+*Traits*<br/>
+The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is `char_traits`\< *CharType>.*
 
 The ostream_iterator class must satisfy the requirements for an output iterator. Algorithms can be written directly to output streams using an `ostream_iterator`.
 
@@ -54,9 +54,9 @@ The ostream_iterator class must satisfy the requirements for an output iterator.
 
 |Operator|Description|
 |-|-|
-|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x`.|
+|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression \* `i` = `x`.|
 |[operator++](#op_add_add)|A nonfunctional increment operator that returns an `ostream_iterator` to the same object it addressed before the operation was called.|
-|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression * `i` = `x` for writing to an output stream.|
+|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression \* `i` = `x` for writing to an output stream.|
 
 ## Requirements
 
@@ -100,17 +100,17 @@ int main( )
    // elements to the output stream:
    cout << "The integers written to the output stream\n"
         << "by intOut are:" << endl;
- *intOut = 10;
- *intOut = 20;
- *intOut = 30;
+*intOut = 10;
+*intOut = 20;
+*intOut = 30;
 }
-\* Output:
+/* Output:
 The integers written to the output stream
 by intOut are:
 10
 20
 30
-*\
+*/
 ```
 
 ## <a name="op_star"></a>  ostream_iterator::operator*
@@ -149,17 +149,17 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
- *intOut = 10;
+*intOut = 10;
    intOut++;      // No effect on iterator position
- *intOut = 20;
- *intOut = 30;
+*intOut = 20;
+*intOut = 30;
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 10
 20
 30
-*\
+*/
 ```
 
 ## <a name="op_add_add"></a>  ostream_iterator::operator++
@@ -199,22 +199,22 @@ int main( )
    // standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
- *intOut = 10;
+*intOut = 10;
    intOut++;      // No effect on iterator position
- *intOut = 20;
- *intOut = 30;
+*intOut = 20;
+*intOut = 30;
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 10
 20
 30
-*\
+*/
 ```
 
 ## <a name="op_eq"></a>  ostream_iterator::operator=
 
-Assignment operator used to implement the output_iterator expression * `i` = `x` for writing to an output stream.
+Assignment operator used to implement the output_iterator expression \* `i` = `x` for writing to an output stream.
 
 ```cpp
 ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
@@ -222,8 +222,8 @@ ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
 
 ### Parameters
 
-*val*
- The value of the object of type `Type` to be inserted into the output stream.
+*val*<br/>
+The value of the object of type `Type` to be inserted into the output stream.
 
 ### Return Value
 
@@ -231,7 +231,7 @@ The operator inserts *val* into the output stream associated with the object, fo
 
 ### Remarks
 
-The requirements for an output iterator that the `ostream_iterator` must satisfy require only the expression * `ii` = `t` be valid and says nothing about the operator or the operator= on their own. This member operator returns `*this`.
+The requirements for an output iterator that the `ostream_iterator` must satisfy require only the expression \* `ii` = `t` be valid and says nothing about the operator or the operator= on their own. This member operator returns `*this`.
 
 ### Example
 
@@ -253,17 +253,17 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
- *intOut = 10;
+*intOut = 10;
    intOut++;      // No effect on iterator position
- *intOut = 20;
- *intOut = 30;
+*intOut = 20;
+*intOut = 30;
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 10
 20
 30
-*\
+*/
 ```
 
 ## <a name="ostream_iterator"></a>  ostream_iterator::ostream_iterator
@@ -281,11 +281,11 @@ ostream_iterator(
 
 ### Parameters
 
-*_Ostr*
- The output stream of type [ostream_iterator::ostream_type](#ostream_type) to be iterated over.
+*_Ostr*<br/>
+The output stream of type [ostream_iterator::ostream_type](#ostream_type) to be iterated over.
 
-*_Delimiter*
- The delimiter that is inserted into the output stream between values.
+*_Delimiter*<br/>
+The delimiter that is inserted into the output stream between values.
 
 ### Remarks
 
@@ -308,9 +308,9 @@ int main( )
 
    // ostream_iterator for stream cout
    ostream_iterator<int> intOut ( cout , "\n" );
- *intOut = 10;
+*intOut = 10;
    intOut++;
- *intOut = 20;
+*intOut = 20;
    intOut++;
 
    int i;
@@ -332,12 +332,12 @@ int main( )
           ostream_iterator<int> ( cout, " : " ) );
    cout << endl;
 }
-\* Output:
+/* Output:
 10
 20
 Elements output without delimiter: 123456
 Elements output with delimiter: 1 : 2 : 3 : 4 : 5 : 6 :
-*\
+*/
 ```
 
 ## <a name="ostream_type"></a>  ostream_iterator::ostream_type
@@ -393,17 +393,17 @@ int main( )
    // elements to the output stream:
    cout << "The integers written to output stream\n"
         << "by intOut are:" << endl;
- *intOut = 1;
- *intOut = 10;
- *intOut = 100;
+*intOut = 1;
+*intOut = 10;
+*intOut = 100;
 }
-\* Output:
+/* Output:
 The integers written to output stream
 by intOut are:
 1
 10
 100
-*\
+*/
 ```
 
 ## See also

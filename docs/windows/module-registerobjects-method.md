@@ -13,30 +13,35 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::RegisterObjects Method
-Registers COM or Windows Runtime objects so other applications can connect to them.  
-  
-## Syntax  
-  
-```  
-HRESULT RegisterObjects(  
-   ModuleBase* module,   
-   const wchar_t* serverName);  
-```  
-  
-#### Parameters  
- `module`  
- An array of COM or Windows Runtime objects.  
-  
- `serverName`  
- Name of the server that created the objects.  
-  
-## Return Value  
- S_OK if successful; otherwise, an HRESULT that indicates the reason the operation failed.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL
- 
+
+Registers COM or Windows Runtime objects so other applications can connect to them.
+
+## Syntax
+
+```cpp
+HRESULT RegisterObjects(
+   ModuleBase* module,
+   const wchar_t* serverName);
+```
+
+### Parameters
+
+*module*  
+An array of COM or Windows Runtime objects.
+
+*serverName*  
+Name of the server that created the objects.
+
+## Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the reason the operation failed.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
 ## See Also
+
 [Module Class](../windows/module-class.md)

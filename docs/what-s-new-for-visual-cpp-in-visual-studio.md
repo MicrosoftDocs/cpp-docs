@@ -8,24 +8,21 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# What's New for Visual C++ in [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]
+# What's New for Visual C++ in Visual Studio 2017
 
-[!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] brings many updates and fixes to the Visual C++ environment. We've fixed over 250 bugs and reported issues in the compiler and tools, many submitted by customers through the [Report a Problem](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) and [Provide a Suggestion](https://visualstudio.uservoice.com/) options under **Send Feedback**. Thank you for reporting bugs! For more information on what's new in all of Visual Studio, please visit [What's new in [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]](https://go.microsoft.com/fwlink/p/?linkid=834481).
+Visual Studio 2017 brings many updates and fixes to the Visual C++ environment. We've fixed over 250 bugs and reported issues in the compiler and tools, many submitted by customers through the [Report a Problem](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) and [Provide a Suggestion](https://visualstudio.uservoice.com/) options under **Send Feedback**. Thank you for reporting bugs! For more information on what's new in all of Visual Studio, please visit [What's new in Visual Studio 2017](/visualstudio/ide/whats-new-in-visual-studio).
 
-<!--The compiler and tools version number in [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] is 14.10.24629. -->
+<!--The compiler and tools version number in Visual Studio 2017 is 14.10.24629. -->
 
 ## C++ compiler
 
 ### C++ conformance improvements
 
 In this release, we've updated the C++ compiler and standard library with enhanced support for C++11 and C++14 features, as well as preliminary support for certain features expected to be in the C++17 standard. For detailed information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).
-**Visual Studio 2017 version 15.5**:  
 
-   The compiler supports about 75% of the features that are new in C++17, including structured bindings, `constexpr` lambdas, `if constexpr`, inline variables, fold expressions, and adding `noexcept` to the type system. These are available under the **/std:c++17** option. For more information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md)
+**Visual Studio 2017 version 15.5**: The compiler supports about 75% of the features that are new in C++17, including structured bindings, `constexpr` lambdas, `if constexpr`, inline variables, fold expressions, and adding `noexcept` to the type system. These are available under the **/std:c++17** option. For more information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md)
 
-**Visual Studio 2017 version 15.7**:  
-
-The MSVC compiler toolset in Visual Studio version 15.7 now conforms with the C++ Standard. For more information, see [Announcing: MSVC Conforms to the C++ Standard](https://blogs.msdn.microsoft.com/vcblog/2018/05/07/announcing-msvc-conforms-to-the-c-standard/) and [Visual C++ Language Conformance](visual-cpp-language-conformance.md).
+**Visual Studio 2017 version 15.7**: The MSVC compiler toolset in Visual Studio version 15.7 now conforms with the C++ Standard. For more information, see [Announcing: MSVC Conforms to the C++ Standard](https://blogs.msdn.microsoft.com/vcblog/2018/05/07/announcing-msvc-conforms-to-the-c-standard/) and [Visual C++ Language Conformance](visual-cpp-language-conformance.md).
 
 ### New compiler options
 
@@ -35,7 +32,7 @@ The MSVC compiler toolset in Visual Studio version 15.7 now conforms with the C+
 
 - [/debug:fastlink](build/reference/debug-generate-debug-info.md): Enable up to 30% faster incremental link times (vs. Visual Studio 2015) by not copying all debug information into the PDB file. The PDB file instead points to the debug information for the object and library files used to create the executable. See [Faster C++ build cycle in VS "15" with /Debug:fastlink](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-build-cycle-in-vs-15-with-debugfastlink/) and [Recommendations to speed C++ builds in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2016/10/26/recommendations-to-speed-c-builds-in-visual-studio/).
 
-- [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] allows using [/sdl](build/reference/sdl-enable-additional-security-checks.md) with [/await](build/reference/await-enable-coroutine-support.md). We removed the [/RTC](build/reference/rtc-run-time-error-checks.md) limitation with Coroutines.
+- Visual Studio 2017 allows using [/sdl](build/reference/sdl-enable-additional-security-checks.md) with [/await](build/reference/await-enable-coroutine-support.md). We removed the [/RTC](build/reference/rtc-run-time-error-checks.md) limitation with Coroutines.
 
    **Visual Studio 2017 version 15.3**:  
 - [/std:c++14 and /std:c++latest](build/reference/std-specify-language-standard-version.md): These compiler options enable you to opt-in to specific versions of the ISO C++ programming language in a project. Most of the new draft standard features are guarded by the **/std:c++latest** option.
@@ -399,7 +396,7 @@ As of [build 17025 of the Windows SDK Insider Preview](https://blogs.windows.com
 
 ## Clang/C2 platform toolset
 
-The Clang/C2 toolset that ships with [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] now supports the **/bigobj** switch, which is crucial for building large projects. It also includes several important bug fixes, both in the front-end and the back-end of the compiler.
+The Clang/C2 toolset that ships with Visual Studio 2017 now supports the **/bigobj** switch, which is crucial for building large projects. It also includes several important bug fixes, both in the front-end and the back-end of the compiler.
 
 ## C++ code analysis
 

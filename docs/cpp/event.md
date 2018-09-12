@@ -18,7 +18,6 @@ Declares an event.
 ## Syntax  
   
 ```  
-  
 __event method-declarator;  
 __event __interface interface-specifier;  
 __event member-declarator;  
@@ -54,7 +53,7 @@ __event HRESULT OnClick(int* b, char* s);
  See [Event Handling in Native C++](../cpp/event-handling-in-native-cpp.md) for sample code.  
   
 ## COM Events  
- COM events are interfaces. The parameters of a method in an event source interface should be `in` parameters (but this is not rigorously enforced), because an `out` parameter is not useful when multicasting. A level 1 warning will be issued if you use an `out` parameter.  
+ COM events are interfaces. The parameters of a method in an event source interface should be *in* parameters (but this is not rigorously enforced), because an *out* parameter is not useful when multicasting. A level 1 warning will be issued if you use an *out* parameter.  
   
  The return type is typically HRESULT or **void**, but can be any integral type, including **enum**. When an event uses an integral return type and an event handler returns a nonzero value, it is an error condition, in which case the event being raised aborts calls to the other delegates. Note that the compiler will automatically mark an event source interface as a [source](../windows/source-cpp.md) in the generated IDL.  
   
@@ -120,7 +119,7 @@ public:
 };  
 ```  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)   
  [Event Handling](../cpp/event-handling.md)   
  [event_source](../windows/event-source.md)   

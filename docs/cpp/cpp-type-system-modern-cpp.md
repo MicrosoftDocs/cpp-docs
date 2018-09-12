@@ -32,7 +32,6 @@ The concept of *type* is very important in C++. Every variable, function argumen
  The following example shows some simple variable declarations with some descriptions for each. The example also shows how the compiler uses type information to allow or disallow certain subsequent operations on the variable.  
   
 ```cpp  
-  
 int result = 0;              // Declare and initialize an integer.  
 double coefficient = 10.8;   // Declare and initialize a floating   
                              // point value.  
@@ -47,7 +46,6 @@ string result = "zero";      // error. Can’t redefine a variable with
                              // new type.  
 int maxValue;                // Not recommended! maxValue contains   
                              // garbage bits until it is initialized.  
-  
 ```  
   
 ## Fundamental (built-in) types  
@@ -87,10 +85,10 @@ PI = .75 //Error. Cannot modify const variable.
   
  The **const** qualifier is used extensively in function and variable declarations and "const correctness" is an important concept in C++; essentially it means to use **const** to guarantee, at compile time, that values are not modified unintentionally. For more information, see [const](../cpp/const-cpp.md).  
   
- A **const** type is distinct from its non-const version; for example, `const int` is a distinct type from **int**. You can use the C++ **const_cast** operator on those rare occasions when you must remove *const-ness* from a variable. For more information, see [Type Conversions and Type Safety](../cpp/type-conversions-and-type-safety-modern-cpp.md).  
+ A **const** type is distinct from its non-const version; for example, **const int** is a distinct type from **int**. You can use the C++ **const_cast** operator on those rare occasions when you must remove *const-ness* from a variable. For more information, see [Type Conversions and Type Safety](../cpp/type-conversions-and-type-safety-modern-cpp.md).  
   
 ## String types  
- Strictly speaking, the C++ language has no built-in string type; **char** and `wchar_t` store single characters - you must declare an array of these types to approximate a string, adding a terminating null value (for example, ASCII `'\0'`) to the array element one past the last valid character (also called a *C-style string*). C-style strings required much more code to be written or the use of external string utility library functions. But in modern C++, we have the Standard Library types `std::string` (for 8-bit **char**-type character strings) or `std::wstring` (for 16-bit `wchar_t`-type character strings). These C++ Standard Library containers can be thought of as native string types because they are part of the standard libraries that are included in any compliant C++ build environment. Simply use the `#include <string>` directive to make these types available in your program. (If you are using MFC or ATL, the CString class is also available, but is not part of the C++ standard.) The use of null-terminated character arrays (the C-style strings previously mentioned) is strongly discouraged in modern C++.  
+ Strictly speaking, the C++ language has no built-in string type; **char** and **wchar_t** store single characters - you must declare an array of these types to approximate a string, adding a terminating null value (for example, ASCII `'\0'`) to the array element one past the last valid character (also called a *C-style string*). C-style strings required much more code to be written or the use of external string utility library functions. But in modern C++, we have the Standard Library types `std::string` (for 8-bit **char**-type character strings) or `std::wstring` (for 16-bit **wchar_t**-type character strings). These C++ Standard Library containers can be thought of as native string types because they are part of the standard libraries that are included in any compliant C++ build environment. Simply use the `#include <string>` directive to make these types available in your program. (If you are using MFC or ATL, the CString class is also available, but is not part of the C++ standard.) The use of null-terminated character arrays (the C-style strings previously mentioned) is strongly discouraged in modern C++.  
   
 ## User-defined types  
  When you define a **class**, **struct**, **union**, or **enum**, that construct is used in the rest of your code as if it were a fundamental type. It has a known size in memory, and certain rules about how it can be used apply to it for compile-time checking and, at runtime, for the life of your program. The primary differences between the fundamental built-in types and user-defined types are as follows:  
@@ -107,19 +105,16 @@ PI = .75 //Error. Cannot modify const variable.
  The first thing that you should know is declaring a raw pointer variable will allocate only the memory that is required to store an address of the memory location that the pointer will be referring to when it is dereferenced. Allocation of the memory for the data value itself (also called *backing store*) is not yet allocated. In other words, by declaring a raw pointer variable, you are creating a memory address variable, not an actual data variable. Dereferencing a pointer variable before making sure that it contains a valid address to a backing store will cause undefined behavior (usually a fatal error) in your program. The following example demonstrates this kind of error:  
   
 ```cpp  
-  
 int* pNumber;       // Declare a pointer-to-int variable.  
 *pNumber = 10;      // error. Although this may compile, it is  
                     // a serious error. We are dereferencing an  
                     // uninitialized pointer variable with no  
                     // allocated memory to point to.  
-  
 ```  
   
  The example dereferences a pointer type without having any memory allocated to store the actual integer data or a valid memory address assigned to it. The following code corrects these errors:  
   
 ```cpp  
-  
     int number = 10;          // Declare and initialize a local integer  
                               // variable for data backing store.  
     int* pNumber = &number;   // Declare and initialize a local integer  
@@ -131,7 +126,6 @@ int* pNumber;       // Declare a pointer-to-int variable.
                               // pNumber, the integer variable called  
                               // "number". Note "number" was changed, not  
                               // "pNumber".  
-  
 ```  
   
  The corrected code example uses local stack memory to create the backing store that `pNumber` points to. We use a fundamental type for simplicity. In practice, the backing store for pointers are most often user-defined types that are dynamically-allocated in an area of memory called the *heap* (or *free store*) by using a **new** keyword expression (in C-style programming, the older `malloc()` C runtime library function was used). Once allocated, these variables are usually referred to as objects, especially if they are based on a class definition. Memory that is allocated with **new** must be deleted by a corresponding **delete** statement (or, if you used the `malloc()` function to allocate it, the C runtime function `free()`).  
@@ -139,14 +133,12 @@ int* pNumber;       // Declare a pointer-to-int variable.
  However, it is easy to forget to delete a dynamically-allocated object- especially in complex code, which causes a resource bug called a *memory leak*. For this reason, the use of raw pointers is strongly discouraged in modern C++. It is almost always better to wrap a raw pointer in a [smart pointer](../cpp/smart-pointers-modern-cpp.md), which will automatically release the memory when its destructor is invoked (when the code goes out of scope for the smart pointer); by using smart pointers you virtually eliminate a whole class of bugs in your C++ programs. In the following example, assume `MyClass` is a user-defined type that has a public method `DoSomeWork();`  
   
 ```cpp  
-  
 void someFunction() {  
     unique_ptr<MyClass> pMc(new MyClass);  
     pMc->DoSomeWork();  
 }  
   // No memory leak. Out-of-scope automatically calls the destructor  
   // for the unique_ptr, freeing the resource.  
-  
 ```  
   
  For more information about smart pointers, see [Smart Pointers](../cpp/smart-pointers-modern-cpp.md).  
@@ -156,7 +148,7 @@ void someFunction() {
  For more information about pointers in general, see [Pointers](../cpp/pointers-cpp.md).  
   
 ## Windows data types  
- In classic Win32 programming for C and C++, most functions use Windows-specific typedefs and #define macros (defined in `windef.h`) to specify the types of parameters and return values. These Windows data types are mostly just special names (aliases) given to C/C++ built-in types. For a complete list of these typedefs and preprocessor definitions, see [Windows Data Types](http://msdn.microsoft.com/en-us/4553cafc-450e-4493-a4d4-cb6e2f274d46). Some of these typedefs, such as HRESULT and LCID, are useful and descriptive. Others, such as INT, have no special meaning and are just aliases for fundamental C++ types. Other Windows data types have names that are retained from the days of C programming and 16-bit processors, and have no purpose or meaning on modern hardware or operating systems. There are also special data types associated with the Windows Runtime Library, listed as [Windows Runtime base data types](http://msdn.microsoft.com/en-us/b5735851-ec07-48c1-92b4-ca9f768096f6). In modern C++, the general guideline is to prefer the C++ fundamental types unless the Windows type communicates some additional meaning about how the value is to be interpreted.  
+ In classic Win32 programming for C and C++, most functions use Windows-specific typedefs and #define macros (defined in `windef.h`) to specify the types of parameters and return values. These Windows data types are mostly just special names (aliases) given to C/C++ built-in types. For a complete list of these typedefs and preprocessor definitions, see [Windows Data Types](/windows/desktop/WinProg/windows-data-types). Some of these typedefs, such as HRESULT and LCID, are useful and descriptive. Others, such as INT, have no special meaning and are just aliases for fundamental C++ types. Other Windows data types have names that are retained from the days of C programming and 16-bit processors, and have no purpose or meaning on modern hardware or operating systems. There are also special data types associated with the Windows Runtime Library, listed as [Windows Runtime base data types](/windows/desktop/WinRT/base-data-types). In modern C++, the general guideline is to prefer the C++ fundamental types unless the Windows type communicates some additional meaning about how the value is to be interpreted.  
   
 ## More Information  
  For more information about the C++ type system, see the following topics.  
@@ -166,7 +158,7 @@ void someFunction() {
 |[Value Types](../cpp/value-types-modern-cpp.md)|Describes *value types* along with issues relating to their use.|  
 |[Type Conversions and Type Safety](../cpp/type-conversions-and-type-safety-modern-cpp.md)|Describes common type conversion issues and shows how to avoid them.|  
   
-## See Also  
+## See also  
  [Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
  [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

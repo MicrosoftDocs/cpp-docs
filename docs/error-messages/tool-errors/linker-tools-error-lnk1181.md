@@ -1,7 +1,7 @@
 ---
 title: "Linker Tools Error LNK1181 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/22/2018"
 ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["LNK1181"]
@@ -23,11 +23,15 @@ cannot open input file 'filename'
   
 -   A **/LIBPATH** statement that specifies the directory containing `filename` is missing.  
   
- To resolve the above issues, ensure any files referenced on the linker line are present on the system.  Also ensure there is a **/LIBPATH** statement for each directory containing a linker-dependent file.  
+ To resolve the above issues, ensure any files referenced on the linker line are present on the system.  Also ensure there is a **/LIBPATH** statement for each directory containing a linker-dependent file. 
+
+ For more information, see [.lib Files as Linker Input](../../build/reference/dot-lib-files-as-linker-input.md).
   
  Another possible cause for LNK1181 is that a long file name with embedded spaces was not enclosed in quotation marks.  In that case, the linker will only recognize a file name up to the first space, and then assume a file extension of .obj.  The solution to this situation is to enclose the long file name (path plus file name) in quotation marks.  
+
+ Compiling with the [/P (Preprocess to a File)](../../build/reference/p-preprocess-to-a-file.md) option can result in LNK1181 because that option suppresses the creation of .obj files.
   
- For more information, see [.lib Files as Linker Input](../../build/reference/dot-lib-files-as-linker-input.md).  
+  
   
 ## See Also  
  [/LIBPATH (Additional Libpath)](../../build/reference/libpath-additional-libpath.md)

@@ -14,5 +14,5 @@ ms.workload: ["cplusplus"]
 # _bstr_t Operators
 For information about the `_bstr_t` operators, see [_bstr_t Class](../cpp/bstr-t-class.md).  
   
-## See Also  
+## See also  
  [_bstr_t Class](../cpp/bstr-t-class.md)

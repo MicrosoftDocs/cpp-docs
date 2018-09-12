@@ -66,11 +66,11 @@ public:
 
 ### Parameters
 
-*Fty*
- The function type to wrap.
+*Fty*<br/>
+The function type to wrap.
 
-*Ax*
- The allocator function.
+*Ax*<br/>
+The allocator function.
 
 ## Remarks
 
@@ -143,14 +143,14 @@ template <class Fx, class Alloc>
 
 ### Parameters
 
-*_Func*
- A callable object.
+*_Func*<br/>
+A callable object.
 
-*_Fnref*
- A reference wrapper that contains a callable object.
+*_Fnref*<br/>
+A reference wrapper that contains a callable object.
 
-*Ax*
- An allocator object.
+*Ax*<br/>
+An allocator object.
 
 ### Remarks
 
@@ -181,23 +181,23 @@ template <class Fx, class Alloc>
 
 ### Parameters
 
-*right*
- The function object to copy.
+*right*<br/>
+The function object to copy.
 
-*Fx*
- The type of the callable object.
+*Fx*<br/>
+The type of the callable object.
 
-*_Func*
- The callable object to wrap.
+*_Func*<br/>
+The callable object to wrap.
 
-*Alloc*
- The allocator type.
+*Alloc*<br/>
+The allocator type.
 
-*Ax*
- The allocator.
+*Ax*<br/>
+The allocator.
 
-*_Fnref*
- The callable object reference to wrap.
+*_Fnref*<br/>
+The callable object reference to wrap.
 
 ### Remarks
 
@@ -328,11 +328,11 @@ result_type operator()(
 
 ### Parameters
 
-*TN*
- The type of the Nth call argument.
+*TN*<br/>
+The type of the Nth call argument.
 
-*tN*
- The Nth call argument.
+*tN*<br/>
+The Nth call argument.
 
 ### Remarks
 
@@ -381,17 +381,17 @@ template <class Fty>
 
 ### Parameters
 
-*npc*
- A null pointer constant.
+*npc*<br/>
+A null pointer constant.
 
-*right*
- The function object to copy.
+*right*<br/>
+The function object to copy.
 
-*fn*
- The callable object to wrap.
+*fn*<br/>
+The callable object to wrap.
 
-*fnref*
- The callable object reference to wrap.
+*fnref*<br/>
+The callable object reference to wrap.
 
 ### Remarks
 
@@ -500,8 +500,8 @@ void swap(function& right);
 
 ### Parameters
 
-*right*
- The function object to swap with.
+*right*<br/>
+The function object to swap with.
 
 ### Remarks
 
@@ -562,8 +562,8 @@ template <class Fty2>
 
 ### Parameters
 
-*Fty2*
- The target callable object type to test.
+*Fty2*<br/>
+The target callable object type to test.
 
 ### Remarks
 

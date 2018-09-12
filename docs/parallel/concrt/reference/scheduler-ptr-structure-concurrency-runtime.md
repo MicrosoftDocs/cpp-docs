@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # scheduler_ptr Structure
-Represents a pointer to a scheduler. This class exists to allow the the specification of a shared lifetime by using shared_ptr or just a plain reference by using raw pointer.  
+Represents a pointer to a scheduler. This class exists to allow the specification of a shared lifetime by using shared_ptr or just a plain reference by using raw pointer.  
   
 ## Syntax  
   

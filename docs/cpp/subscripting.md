@@ -83,9 +83,9 @@ Element: [10] = 10
 ```  
   
 ## Comments  
- When `i` reaches 10 in the preceding program, `operator[]` detects that an out-of-bounds subscript is being used and issues an error message.  
+ When `i` reaches 10 in the preceding program, **operator[]** detects that an out-of-bounds subscript is being used and issues an error message.  
   
- Note that the function `operator[]` returns a reference type. This causes it to be an l-value, allowing you to use subscripted expressions on either side of assignment operators.  
+ Note that the function **operator[]** returns a reference type. This causes it to be an l-value, allowing you to use subscripted expressions on either side of assignment operators.  
   
-## See Also  
+## See also  
  [Operator Overloading](../cpp/operator-overloading.md)

@@ -6,8 +6,8 @@ ms.technology: ["cpp-azure"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: b63611f1-9723-44d0-ba7f-c3ebef341313
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Cloud and Web Programming in Visual C++
@@ -18,7 +18,7 @@ In C++, you have several options for connecting to the web and the cloud.
 
 - [Windows Azure Mobile Services](http://www.windowsazure.com/develop/mobile/)
 
-   Provides native APIs that you can use in Universal Windows Platform (UWP) apps or Windows desktop apps to connect to Windows Azure Mobile Services. Although most of the examples on the website are in C#, you can also use C++. For more information, see [Quickstart: Adding a mobile service using C++](http://msdn.microsoft.com/library/windows/apps/dn263181.aspx).
+   Provides native APIs that you can use in Universal Windows Platform (UWP) apps or Windows desktop apps to connect to Windows Azure Mobile Services. Although most of the examples on the website are in C#, you can also use C++. For more information, see [Quickstart: Adding a mobile service using C++](https://msdn.microsoft.com/library/windows/apps/dn263181.aspx).
 
 - [Microsoft Azure Storage Client Library for C++](https://blogs.msdn.microsoft.com/windowsazurestorage/2015/04/29/microsoft-azure-storage-client-library-for-c-v1-0-0-general-availability/)
 
@@ -45,15 +45,15 @@ In C++, you have several options for connecting to the web and the cloud.
 
    Supports Windows Desktop (7+), Windows Server (2012+), Universal Windows Platform, Linux, OSX, Android, and iOS. 
 
-- [Windows::Web::Http::HttpClient](https://msdn.microsoft.com/en-us/library/windows/apps/windows.web.http.httpclient.aspx)
+- [Windows::Web::Http::HttpClient](https://msdn.microsoft.com/library/windows/apps/windows.web.http.httpclient.aspx)
 
    A Windows Runtime HTTP client class modeled on the .NET Framework class of the same name in the System.Web namespace. `HttpClient` fully supports asynchronous upload and download over HTTP, and pipeline filters that enable the insertion of custom HTTP handlers into the pipeline. The Windows SDK includes sample filters for metered networks, OAuth authentication, and more. For apps that target only Universal Windows Platform, we recommend that you use the `Windows::Web:HttpClient` class. 
 
-- [IXMLHTTPRequest2 interface](http://msdn.microsoft.com/library/windows/apps/hh831151.aspx)
+- [IXMLHTTPRequest2 interface](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2)
 
    Provides a native COM interface that you can use in Windows Runtime apps or Windows desktop apps to connect to the Internet over HTTP and issue GET, PUT, and other HTTP commands. For more information, see [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md).
 
-- [Windows Internet (WinInet)](http://msdn.microsoft.com/library/windows/desktop/aa385331\(v=vs.85\).aspx)
+- [Windows Internet (WinInet)](/windows/desktop/WinInet/portal)
 
    Windows API that you can use in Windows desktop apps to connect to the Internet.
 

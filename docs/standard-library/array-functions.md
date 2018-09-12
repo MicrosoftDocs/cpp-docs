@@ -36,17 +36,17 @@ constexpr T&& get(array<T, N>&& arr) noexcept;
 
 ### Parameters
 
-*Index*
- The element offset.
+*Index*<br/>
+The element offset.
 
-*T*
- The type of an element.
+*T*<br/>
+The type of an element.
 
-*N*
- The number of elements in the array.
+*N*<br/>
+The number of elements in the array.
 
-*arr*
- The array to select from.
+*arr*<br/>
+The array to select from.
 
 ### Example
 
@@ -91,17 +91,17 @@ void swap(array<Ty, N>& left, array<Ty, N>& right);
 
 ### Parameters
 
-*Ty*
- The type of an element.
+*Ty*<br/>
+The type of an element.
 
-*N*
- The size of the array.
+*N*<br/>
+The size of the array.
 
-*left*
- The first array to swap.
+*left*<br/>
+The first array to swap.
 
-*right*
- The second array to swap.
+*right*<br/>
+The second array to swap.
 
 ### Remarks
 

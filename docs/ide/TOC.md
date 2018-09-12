@@ -75,7 +75,6 @@
 ## [Redistributing Visual C++ Files](redistributing-visual-cpp-files.md)
 ### [Redistributing Components By Using Merge Modules](redistributing-components-by-using-merge-modules.md)
 ### [Redistributing Visual C++ ActiveX Controls](redistributing-visual-cpp-activex-controls.md)
-### [Redistributing Database Support Files](redistributing-database-support-files.md)
 ### [Redistributing the MFC Library](redistributing-the-mfc-library.md)
 ### [Redistributing an ATL application](redistributing-an-atl-application.md)
 ## [Deployment Examples](deployment-examples.md)

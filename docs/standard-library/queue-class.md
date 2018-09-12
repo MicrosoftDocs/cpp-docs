@@ -25,19 +25,19 @@ class queue
 
 ### Parameters
 
-*Type*
- The element data type to be stored in the queue
+*Type*<br/>
+The element data type to be stored in the queue
 
-`Container`
- The type of the underlying container used to implement the queue.
+*Container*<br/>
+The type of the underlying container used to implement the queue.
 
 ## Remarks
 
-The elements of class **Type** stipulated in the first template parameter of a queue object are synonymous with [value_type](#value_type) and must match the type of element in the underlying container class **Container** stipulated by the second template parameter. The **Type** must be assignable, so that it is possible to copy objects of that type and to assign values to variables of that type.
+The elements of class `Type` stipulated in the first template parameter of a queue object are synonymous with [value_type](#value_type) and must match the type of element in the underlying container class `Container` stipulated by the second template parameter. The `Type` must be assignable, so that it is possible to copy objects of that type and to assign values to variables of that type.
 
-Suitable underlying container classes for queue include [deque](../standard-library/deque-class.md) and [list](../standard-library/list-class.md), or any other sequence container that supports the operations of `front`, **back**, `push_back`, and `pop_front`. The underlying container class is encapsulated within the container adaptor, which exposes only the limited set of the sequence container member functions as a public interface.
+Suitable underlying container classes for queue include [deque](../standard-library/deque-class.md) and [list](../standard-library/list-class.md), or any other sequence container that supports the operations of `front`, `back`, `push_back`, and `pop_front`. The underlying container class is encapsulated within the container adaptor, which exposes only the limited set of the sequence container member functions as a public interface.
 
-The queue objects are equality comparable if and only if the elements of class **Type** are equality comparable, and are less-than comparable if and only if the elements of class **Type** are less-than comparable.
+The queue objects are equality comparable if and only if the elements of class `Type` are equality comparable, and are less-than comparable if and only if the elements of class `Type` are less-than comparable.
 
 There are three types of container adaptors defined by the C++ Standard Library: stack, queue, and priority_queue. Each restricts the functionality of some underlying container class to provide a precisely controlled interface to a standard data structure.
 
@@ -94,7 +94,7 @@ The last element of the queue. If the queue is empty, the return value is undefi
 
 ### Remarks
 
-If the return value of **back** is assigned to a `const_reference`, the queue object cannot be modified. If the return value of **back** is assigned to a **reference**, the queue object can be modified.
+If the return value of `back` is assigned to a `const_reference`, the queue object cannot be modified. If the return value of `back` is assigned to a `reference`, the queue object can be modified.
 
 When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error will occur if you attempt to access an element in an empty queue.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.
 
@@ -204,9 +204,9 @@ The first element of the queue. If the queue is empty, the return value is undef
 
 ### Remarks
 
-If the return value of `front` is assigned to a `const_reference`, the queue object cannot be modified. If the return value of `front` is assigned to a **reference**, the queue object can be modified.
+If the return value of `front` is assigned to a `const_reference`, the queue object cannot be modified. If the return value of `front` is assigned to a `reference`, the queue object can be modified.
 
-The member function returns a **reference** to the first element of the controlled sequence, which must be nonempty.
+The member function returns a `reference` to the first element of the controlled sequence, which must be nonempty.
 
 When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error will occur if you attempt to access an element in an empty queue.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.
 
@@ -306,8 +306,8 @@ void push(const Type& val);
 
 ### Parameters
 
-`val`
- The element added to the back of the queue.
+*val*<br/>
+The element added to the back of the queue.
 
 ### Remarks
 
@@ -357,8 +357,8 @@ explicit queue(const container_type& right);
 
 ### Parameters
 
-`right`
- The **const** container of which the constructed queue is to be a copy.
+*right*<br/>
+The **const** container of which the constructed queue is to be a copy.
 
 ### Remarks
 

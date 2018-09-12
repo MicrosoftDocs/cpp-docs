@@ -13,27 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::AsWeak Method
-Retrieves a weak reference to the current object.  
-  
-## Syntax  
-  
-```  
-HRESULT AsWeak(  
-   _Out_ WeakRef* pWeakRef  
-);  
-```  
-  
-#### Parameters  
- `pWeakRef`  
- When this operation completes, a pointer to a weak reference object.  
-  
-## Return Value  
- S_OK if successful; otherwise, an HRESULT that indicates the error.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ComPtr Class](../windows/comptr-class.md)
+
+Retrieves a weak reference to the current object.
+
+## Syntax
+
+```cpp
+HRESULT AsWeak(
+   _Out_ WeakRef* pWeakRef
+);
+```
+
+### Parameters
+
+*pWeakRef*  
+When this operation completes, a pointer to a weak reference object.
+
+## Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ComPtr Class](../windows/comptr-class.md)

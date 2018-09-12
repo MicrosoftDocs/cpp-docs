@@ -48,7 +48,7 @@ int main()
 }  
 ```  
   
-## See Also  
+## See also  
  [Iteration Statements](../cpp/iteration-statements-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [while Statement (C++)](../cpp/while-statement-cpp.md)   

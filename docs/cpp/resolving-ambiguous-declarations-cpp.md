@@ -17,7 +17,7 @@ To perform explicit conversions from one type to another, you must use casts, sp
 char *aName( String( s ) );  
 ```  
   
- It is unclear whether it is a function declaration or an object declaration with a function-style cast as the initializer: It could declare a function returning type **char \*** that takes one argument of type `String`, or it could declare the object `aName` and initialize it with the value of `s` cast to type `String`.  
+ It is unclear whether it is a function declaration or an object declaration with a function-style cast as the initializer: It could declare a function returning type `char *` that takes one argument of type `String`, or it could declare the object `aName` and initialize it with the value of `s` cast to type `String`.  
   
  If a declaration can be considered a valid function declaration, it is treated as such. Only if it cannot possibly be a function declaration — that is, if it would be syntactically incorrect — is a statement examined to see if it is a function-style type cast. Therefore, the compiler considers the statement to be a declaration of a function and ignores the parentheses around the identifier `s`. On the other hand, the statements:  
   
@@ -31,7 +31,4 @@ char *aName( (String)s );
 char *aName = String( s );  
 ```  
   
- are clearly declarations of objects, and a user-defined conversion from type `String` to type **char \*** is invoked to perform the initialization of `aName`.  
-  
-## See Also  
- 
+ are clearly declarations of objects, and a user-defined conversion from type `String` to type `char *` is invoked to perform the initialization of `aName`.  

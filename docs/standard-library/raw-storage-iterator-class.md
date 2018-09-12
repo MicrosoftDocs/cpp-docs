@@ -25,15 +25,15 @@ class raw_storage_iterator
 
 ### Parameters
 
-`OutputIterator`
- Specifies the output iterator for the object being stored.
+*OutputIterator*<br/>
+Specifies the output iterator for the object being stored.
 
-*Type*
- The type of object for which storage is being allocated.
+*Type*<br/>
+The type of object for which storage is being allocated.
 
 ## Remarks
 
-The class describes an output iterator that constructs objects of type **Type** in the sequence it generates. An object of class `raw_storage_iterator`\< **ForwardIterator**, **Type**> accesses storage through a forward iterator object, of class **ForwardIterator**, that you specify when you construct the object. For an object first of class **ForwardIterator**, the expression **&\*first** must designate unconstructed storage for the next object (of type **Type**) in the generated sequence.
+The class describes an output iterator that constructs objects of type `Type` in the sequence it generates. An object of class `raw_storage_iterator`\< **ForwardIterator**, **Type**> accesses storage through a forward iterator object, of class `ForwardIterator`, that you specify when you construct the object. For an object first of class `ForwardIterator`, the expression **&\*first** must designate unconstructed storage for the next object (of type `Type`) in the generated sequence.
 
 This adaptor class is used when it is necessary to separate memory allocation and object construction. The `raw_storage_iterator` can be used to copy objects into uninitialized storage, such as memory allocated using the `malloc` function.
 
@@ -56,8 +56,8 @@ This adaptor class is used when it is necessary to separate memory allocation an
 
 |Operator|Description|
 |-|-|
-|[operator*](#op_star)|A dereferencing operator used to implement the output iterator expression * `ii` = `x`.|
-|[operator=](#op_eq)|An assignment operator used to implement the raw storage iterator expression * `i` = `x` for storing in memory.|
+|[operator*](#op_star)|A dereferencing operator used to implement the output iterator expression \* `ii` = `x`.|
+|[operator=](#op_eq)|An assignment operator used to implement the raw storage iterator expression \* `i` = `x` for storing in memory.|
 |[operator++](#op_add_add)|Preincrement and postincrement operators for raw storage iterators.|
 
 ## Requirements
@@ -76,7 +76,7 @@ typedef Type element_type;
 
 ### Remarks
 
-The type is a synonym for the raw_storage_iterator class template parameter **Type**.
+The type is a synonym for the raw_storage_iterator class template parameter `Type`.
 
 ## <a name="iter_type"></a>  raw_storage_iterator::iter_type
 
@@ -88,9 +88,9 @@ typedef ForwardIterator iter_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter **ForwardIterator**.
+The type is a synonym for the template parameter `ForwardIterator`.
 
-## <a name="op_star"></a>  raw_storage_iterator::operator*
+## <a name="op_star"></a>  raw_storage_iterator::operator\*
 
 A dereferencing operator used to implement the raw storage iterator expression \* *ii* = *x*.
 
@@ -104,7 +104,7 @@ A reference to the raw storage iterator
 
 ### Remarks
 
-The requirements for a **ForwardIterator** are that the raw storage iterator must satisfy require only the expression \* *ii* = *t* be valid and that it says nothing about the **operator** or the `operator=` on their own. The member operators in this implementation returns **\*this**, so that [operator=](#op_eq)( **constType**&) can perform the actual store in an expression, such as \* *ptr* = `val`.
+The requirements for a `ForwardIterator` are that the raw storage iterator must satisfy require only the expression \* *ii* = *t* be valid and that it says nothing about the **operator** or the `operator=` on their own. The member operators in this implementation returns **\*this**, so that [operator=](#op_eq)(**constType**&) can perform the actual store in an expression, such as \* *ptr* = `val`.
 
 ### Example
 
@@ -146,15 +146,15 @@ int main( void)
 {
    Int *pInt = ( Int* ) malloc( sizeof( Int ) );
    memset( pInt, 0, sizeof( Int ) ); // Set bIsConstructed to false;
- *pInt = 5;
+*pInt = 5;
    raw_storage_iterator< Int*, Int > it( pInt );
- *it = 5;
+*it = 5;
 }
-\* Output:
+/* Output:
 Not constructed.
 Copying 5
 Constructing 5
-*\
+*/
 ```
 
 ## <a name="op_eq"></a>  raw_storage_iterator::operator=
@@ -168,8 +168,8 @@ raw_storage_iterator<ForwardIterator, Type>& operator=(
 
 ### Parameters
 
-`val`
- The value of the object of type **Type** to be inserted into memory.
+*val*<br/>
+The value of the object of type `Type` to be inserted into memory.
 
 ### Return Value
 
@@ -177,7 +177,7 @@ The operator inserts `val` into memory, and then returns a reference to the raw 
 
 ### Remarks
 
-The requirements for a **ForwardIterator** state that the raw storage iterator must satisfy require only the expression \* *ii* = *t* be valid, and that it says nothing about the **operator** or the `operator=` on their own. These member operators return **\*this**.
+The requirements for a `ForwardIterator` state that the raw storage iterator must satisfy require only the expression \* *ii* = *t* be valid, and that it says nothing about the **operator** or the `operator=` on their own. These member operators return **\*this**.
 
 The assignment operator constructs the next object in the output sequence using the stored iterator value first, by evaluating the placement new expression **new** ( ( `void` \*)&\* **first**) **Type**( `val`).
 
@@ -221,13 +221,13 @@ int main( void )
 *pInt = 5;
 
    raw_storage_iterator<Int*, Int> it( pInt );
- *it = 5;
+*it = 5;
 }
-\* Output:
+/* Output:
 Not constructed.
 Copying 5
 Constructing 5
-*\
+*/
 ```
 
 ## <a name="op_add_add"></a>  raw_storage_iterator::operator++
@@ -246,13 +246,13 @@ An raw storage iterator or a reference to an raw storage iterator.
 
 ### Remarks
 
-The first operator eventually attempts to extract and store an object of type **CharType** from the associated input stream. The second operator makes a copy of the object, increments the object, and then returns the copy.
+The first operator eventually attempts to extract and store an object of type `CharType` from the associated input stream. The second operator makes a copy of the object, increments the object, and then returns the copy.
 
 The first preincrement operator increments the stored output iterator object, and then returns **\*this**.
 
 The second postincrement operator makes a copy of **\*this**, increments the stored output iterator object, and then returns the copy.
 
-The constructor stores **first** as the output iterator object.
+The constructor stores `first` as the output iterator object.
 
 ### Example
 
@@ -270,20 +270,20 @@ int main( void )
    int *pInt = new int[5];
    std::raw_storage_iterator<int*,int> it( pInt );
    for ( int i = 0; i < 5; i++, it++ ) {
- *it = 2 * i;
+*it = 2 * i;
 };
 
    for ( int i = 0; i < 5; i++ ) cout << "array " << i << " = " << pInt[i] << endl;;
 
    delete[] pInt;
 }
-\* Output:
+/* Output:
 array 0 = 0
 array 1 = 2
 array 2 = 4
 array 3 = 6
 array 4 = 8
-*\
+*/
 ```
 
 ## <a name="raw_storage_iterator"></a>  raw_storage_iterator::raw_storage_iterator
@@ -296,8 +296,8 @@ explicit raw_storage_iterator(ForwardIterator first);
 
 ### Parameters
 
-`first`
- The forward iterator that is to underlie the `raw_storage_iterator` object being constructed.
+*first*<br/>
+The forward iterator that is to underlie the `raw_storage_iterator` object being constructed.
 
 ### Example
 
@@ -355,7 +355,7 @@ int main( void )
 
    free(pInt);
 }
-\* Output:
+/* Output:
 Error! I'm not constructed!
 Copying 1
 Error! I'm not constructed!
@@ -376,7 +376,7 @@ array 0 = 1
 array 1 = 2
 array 2 = 3
 array 3 = 4
-*\
+*/
 ```
 
 ## See also

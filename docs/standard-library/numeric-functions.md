@@ -32,17 +32,17 @@ Type accumulate(
 
 ### Parameters
 
-*first*
- An input iterator addressing the first element in the range to be summed or combined according to a specified binary operation.
+*first*<br/>
+An input iterator addressing the first element in the range to be summed or combined according to a specified binary operation.
 
-*last*
- An input iterator addressing the last element in the range to be summed or combined according to a specified binary operation that is one position beyond the final element actually included in the iterated accumulation.
+*last*<br/>
+An input iterator addressing the last element in the range to be summed or combined according to a specified binary operation that is one position beyond the final element actually included in the iterated accumulation.
 
-*val*
- An initial value to which each element is in turn added or combined with according to a specified binary operation.
+*val*<br/>
+An initial value to which each element is in turn added or combined with according to a specified binary operation.
 
-*binary_op*
- The binary operation that is to be applied to the each element in the specified range and the result of its previous applications.
+*binary_op*<br/>
+The binary operation that is to be applied to the each element in the specified range and the result of its previous applications.
 
 ### Return Value
 
@@ -50,7 +50,7 @@ The sum of *val* and all the elements in the specified range for the first templ
 
 ### Remarks
 
-The initial value insures that there will be a well-defined result when the range is empty, in which case *val* is returned. The binary operation does not need to be associative or commutative. The result is initialized to the initial value *val* and then *result* = `binary_op` ( *result*, **\***`Iter`) is calculated iteratively through the range, where `Iter` is an iterator pointing to successive element in the range. The range must be valid and the complexity is linear with the size of the range. The return type of the binary operator must be convertible to **Type** to ensure closure during the iteration.
+The initial value insures that there will be a well-defined result when the range is empty, in which case *val* is returned. The binary operation does not need to be associative or commutative. The result is initialized to the initial value *val* and then *result* = `binary_op` ( *result*, <strong>\*</strong>`Iter`) is calculated iteratively through the range, where `Iter` is an iterator pointing to successive element in the range. The range must be valid and the complexity is linear with the size of the range. The return type of the binary operator must be convertible to **Type** to ensure closure during the iteration.
 
 ### Example
 
@@ -139,16 +139,16 @@ int main( )
 
 ```Output
 The original vector v1 is:
- ( 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ).
+( 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ).
 The sum of the integers from 1 to 20 is: 210.
 The vector of partial sums is:
- ( 1 3 6 10 15 21 28 36 45 55 66 78 91 105 120 136 153 171 190 210 ).
+( 1 3 6 10 15 21 28 36 45 55 66 78 91 105 120 136 153 171 190 210 ).
 
 The original vector v3 is:
- ( 1 2 3 4 5 6 7 8 9 10 ).
+( 1 2 3 4 5 6 7 8 9 10 ).
 The product of the integers from 1 to 10 is: 3628800.
 The vector of partial products is:
- ( 1 2 6 24 120 720 5040 40320 362880 3628800 ).
+( 1 2 6 24 120 720 5040 40320 362880 3628800 ).
 ```
 
 ## <a name="adjacent_difference"></a>  adjacent_difference
@@ -172,17 +172,17 @@ OutputIterator adjacent_difference(
 
 ### Parameters
 
-*first*
- An input iterator addressing the first element in the input range whose elements are to be differenced with their respective predecessors or where the pair of values is to be operated on by another specified binary operation.
+*first*<br/>
+An input iterator addressing the first element in the input range whose elements are to be differenced with their respective predecessors or where the pair of values is to be operated on by another specified binary operation.
 
-*last*
- An input iterator addressing the last element in the input range whose elements are to be differenced with their respective predecessors or where the pair of values is to be operated on by another specified binary operation.
+*last*<br/>
+An input iterator addressing the last element in the input range whose elements are to be differenced with their respective predecessors or where the pair of values is to be operated on by another specified binary operation.
 
-*result*
- An output iterator addressing the first element a destination range where the series of differences or the results of the specified operation is to be stored.
+*result*<br/>
+An output iterator addressing the first element a destination range where the series of differences or the results of the specified operation is to be stored.
 
-*binary_op*
- The binary operation that is to be applied in the generalized operation replacing the operation of subtraction in the differencing procedure.
+*binary_op*<br/>
+The binary operation that is to be applied in the generalized operation replacing the operation of subtraction in the differencing procedure.
 
 ### Return Value
 
@@ -283,23 +283,23 @@ Type inner_product(
 
 ### Parameters
 
-*first1*
- An input iterator addressing the first element in the first range whose inner product or generalized inner product with the second range is to be computed.
+*first1*<br/>
+An input iterator addressing the first element in the first range whose inner product or generalized inner product with the second range is to be computed.
 
-*last1*
- An input iterator addressing the last element in the first range whose inner product or generalized inner product with the second range is to be computed.
+*last1*<br/>
+An input iterator addressing the last element in the first range whose inner product or generalized inner product with the second range is to be computed.
 
-*first2*
- An input iterator addressing the first element in the second range whose inner product or generalized inner product with the first range is to be computed.
+*first2*<br/>
+An input iterator addressing the first element in the second range whose inner product or generalized inner product with the first range is to be computed.
 
-*val*
- An initial value to which the inner product or generalized inner product between the ranges is to be added.
+*val*<br/>
+An initial value to which the inner product or generalized inner product between the ranges is to be added.
 
-*binary_op1*
- The binary operation that replaces the inner product operation of sum applied to the element-wise products in the generalization of the inner product.
+*binary_op1*<br/>
+The binary operation that replaces the inner product operation of sum applied to the element-wise products in the generalization of the inner product.
 
-*binary_op2*
- The binary operation that replaces the inner product element-wise operation of multiply in the generalization of the inner product.
+*binary_op2*<br/>
+The binary operation that replaces the inner product element-wise operation of multiply in the generalization of the inner product.
 
 ### Return Value
 
@@ -420,14 +420,14 @@ void iota(ForwardIterator first, ForwardIterator last, Type value);
 
 ### Parameters
 
-*first*
- An input iterator that addresses the first element in the range to be filled.
+*first*<br/>
+An input iterator that addresses the first element in the range to be filled.
 
-*last*
- An input iterator that addresses the last element in the range to be filled.
+*last*<br/>
+An input iterator that addresses the last element in the range to be filled.
 
-*value*
- The starting value to store in the first element and to successively increment for subsequent elements.
+*value*<br/>
+The starting value to store in the first element and to successively increment for subsequent elements.
 
 ### Remarks
 
@@ -494,17 +494,17 @@ OutputIterator partial_sum(
 
 ### Parameters
 
-*first*
- An input iterator addressing the first element in the range to be partially summed or combined according to a specified binary operation.
+*first*<br/>
+An input iterator addressing the first element in the range to be partially summed or combined according to a specified binary operation.
 
-*last*
- An input iterator addressing the last element in the range to be partially summed or combined according to a specified binary operation that is one position beyond the final element actually included in the iterated accumulation.
+*last*<br/>
+An input iterator addressing the last element in the range to be partially summed or combined according to a specified binary operation that is one position beyond the final element actually included in the iterated accumulation.
 
-*result*
- An output iterator addressing the first element a destination range where the series of partial sums or the results of the specified operation is to be stored.
+*result*<br/>
+An output iterator addressing the first element a destination range where the series of partial sums or the results of the specified operation is to be stored.
 
-*binary_op*
- The binary operation that is to be applied in the generalized operation replacing the operation of sum in the partial sum procedure.
+*binary_op*<br/>
+The binary operation that is to be applied in the generalized operation replacing the operation of sum in the partial sum procedure.
 
 ### Return Value
 

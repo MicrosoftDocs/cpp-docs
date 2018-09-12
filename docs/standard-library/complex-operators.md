@@ -40,11 +40,11 @@ bool operator!=(
 
 ### Parameters
 
-*left*
- A complex number or object of its parameter type to be tested for inequality.
+*left*<br/>
+A complex number or object of its parameter type to be tested for inequality.
 
-*right*
- A complex number or object of its parameter type to be tested for inequality.
+*right*<br/>
+A complex number or object of its parameter type to be tested for inequality.
 
 ### Return Value
 
@@ -156,7 +156,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-## <a name="op_star"></a>  operator*
+## <a name="op_star"></a>  operator\*
 
 Multiplies two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.
 
@@ -180,11 +180,11 @@ complex<Type> operator*(
 
 ### Parameters
 
-*left*
- The first of two complex numbers or a number that is of the parameter type for a complex number that is to be multiplied by the * operation.
+*left*<br/>
+The first of two complex numbers or a number that is of the parameter type for a complex number that is to be multiplied by the \* operation.
 
-*right*
- The second of two complex numbers or a number that is of the parameter type for a complex number that is to be multiplied by the * operation.
+*right*<br/>
+The second of two complex numbers or a number that is of the parameter type for a complex number that is to be multiplied by the \* operation.
 
 ### Return Value
 
@@ -281,11 +281,11 @@ complex<Type> operator+(const complex<Type>& left);
 
 ### Parameters
 
-*left*
- The first of two complex numbers or a number that is of the parameter type for a complex number that is to be added by the + operation.
+*left*<br/>
+The first of two complex numbers or a number that is of the parameter type for a complex number that is to be added by the + operation.
 
-*right*
- The second of two complex numbers or a number that is of the parameter type for a complex number that is to be added by the + operation.
+*right*<br/>
+The second of two complex numbers or a number that is of the parameter type for a complex number that is to be added by the + operation.
 
 ### Return Value
 
@@ -390,7 +390,7 @@ The argument of cs3 is: 0.463648 radians, which is 26.5651 degrees.
 
 The right-side complex number is cr4 = (3,4)
 The result of the unary application of + to the right-side
- complex number is: cs4 = (3,4)
+complex number is: cs4 = (3,4)
 The modulus of cs4 is: 5
 The argument of cs4 is: 0.927295 radians, which is 53.1301 degrees.
 ```
@@ -421,11 +421,11 @@ complex<Type> operator-(const complex<Type>& left);
 
 ### Parameters
 
-*left*
- The first of two complex numbers or a number that is of the parameter type for a complex number that is to be subtracted by the - operation.
+*left*<br/>
+The first of two complex numbers or a number that is of the parameter type for a complex number that is to be subtracted by the - operation.
 
-*right*
- The second of two complex numbers or a number that is of the parameter type for a complex number that is to be subtracted by the - operation.
+*right*<br/>
+The second of two complex numbers or a number that is of the parameter type for a complex number that is to be subtracted by the - operation.
 
 ### Return Value
 
@@ -532,7 +532,7 @@ The argument of cs3 is: -1.10715 radians, which is -63.4349 degrees.
 
 The right-side complex number is cr4 = (3,4)
 The result of the unary application of - to the right-side
- complex number is: cs4 = (-3,-4)
+complex number is: cs4 = (-3,-4)
 The modulus of cs4 is: 5
 The argument of cs4 is: -2.2143 radians, which is -126.87 degrees.
 ```
@@ -560,11 +560,11 @@ complex<Type> operator*(
 
 ### Parameters
 
-*left*
- A complex number or a number that is of the parameter type for a complex number that is the numerator to be divided by the denominator with the / operation.
+*left*<br/>
+A complex number or a number that is of the parameter type for a complex number that is the numerator to be divided by the denominator with the / operation.
 
-*right*
- A complex number or a number that is of the parameter type for a complex number that is the denominator to be used to divide the numerator with the / operation.
+*right*<br/>
+A complex number or a number that is of the parameter type for a complex number that is the denominator to be used to divide the numerator with the / operation.
 
 ### Return Value
 
@@ -670,11 +670,11 @@ basic_ostream<Elem, Traits>& operator<<(
 
 ### Parameters
 
-*Ostr*
- The output stream into which the complex number is being entered.
+*Ostr*<br/>
+The output stream into which the complex number is being entered.
 
-*right*
- The complex number to be entered into the output stream
+*right*<br/>
+The complex number to be entered into the output stream
 
 ### Return Value
 
@@ -743,11 +743,11 @@ bool operator==(
 
 ### Parameters
 
-*left*
- A complex number or object of its parameter type to be tested for inequality.
+*left*<br/>
+A complex number or object of its parameter type to be tested for inequality.
 
-*right*
- A complex number or object of its parameter type to be tested for inequality.
+*right*<br/>
+A complex number or object of its parameter type to be tested for inequality.
 
 ### Return Value
 
@@ -873,11 +873,11 @@ basic_istream<Elem, Traits>& operator>>(
 
 ### Parameters
 
-*Istr*
- The input stream from which the complex number is being extracted.
+*Istr*<br/>
+The input stream from which the complex number is being extracted.
 
-*right*
- The complex number that is being extracted from the input stream.
+*right*<br/>
+The complex number that is being extracted from the input stream.
 
 ### Return Value
 

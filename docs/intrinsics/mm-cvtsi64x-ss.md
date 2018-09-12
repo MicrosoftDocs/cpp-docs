@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # _mm_cvtsi64x_ss
 **Microsoft Specific**  
   
- Generates the [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] extended version of the Convert 64-Bit Integer to Scalar Single-Precision Floating-Point Value (`cvtsi2ss`) instruction.  
+ Generates the x64 extended version of the Convert 64-Bit Integer to Scalar Single-Precision Floating-Point Value (`cvtsi2ss`) instruction.  
   
 ## Syntax  
   

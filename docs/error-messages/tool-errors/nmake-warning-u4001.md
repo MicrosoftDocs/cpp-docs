@@ -1,7 +1,7 @@
 ---
 title: "NMAKE Warning U4001 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/05/2018"
 ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["U4001"]
@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # NMAKE Warning U4001
-command file can be invoked only from command line  
-  
- A command file, which is invoked by the at sign (**@**) specifier, cannot contain a specification for another command file. Such nesting is not allowed. The specification was ignored.
+
+> command file can be invoked only from command line
+
+A command file, which is invoked by the at sign (**\@**) specifier, cannot contain a specification for another command file. Such nesting is not allowed. The specification was ignored.

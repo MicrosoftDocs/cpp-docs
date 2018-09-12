@@ -18,7 +18,6 @@ The **this** pointer is a pointer accessible only within the nonstatic member fu
 ## Syntax  
   
 ```  
-  
 this   
 this->member-identifier  
 ```  
@@ -186,6 +185,5 @@ int main()
 > [!NOTE]
 >  Constructors and destructors cannot be declared as **const** or **volatile**. They can, however, be invoked on **const** or **volatile** objects.  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)   
- 

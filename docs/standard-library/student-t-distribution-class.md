@@ -48,12 +48,12 @@ public:
 
 ### Parameters
 
-*RealType*
- The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).
+*RealType*<br/>
+The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
-The template class describes a distribution that produces values of a user-specified integral type, or type `double` if none is provided, distributed according to the Student's *t*-Distribution. The following table links to articles about individual members.
+The template class describes a distribution that produces values of a user-specified integral type, or type **double** if none is provided, distributed according to the Student's *t*-Distribution. The following table links to articles about individual members.
 
 ||||
 |-|-|-|
@@ -64,7 +64,7 @@ The property function `n()` returns the value for the stored distribution parame
 
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).
 
-For detailed information about the Student's *t*-distribution, see the Wolfram MathWorld article [Students t-Distribution](http://go.microsoft.com/fwlink/p/?linkid=401094).
+For detailed information about the Student's *t*-distribution, see the Wolfram MathWorld article [Students t-Distribution](http://mathworld.wolfram.com/Studentst-Distribution.html).
 
 ## Example
 
@@ -158,11 +158,11 @@ explicit student_t_distribution(const param_type& parm);
 
 ### Parameters
 
-*n*
- The `n` distribution parameter.
+*n*  
+The `n` distribution parameter.
 
-*parm*
- The parameter package used to construct the distribution.
+*parm*<br/>
+The parameter package used to construct the distribution.
 
 ### Remarks
 
@@ -189,10 +189,10 @@ struct param_type {
 
 ### Parameters
 
-*n*
+*n*  
 The `n` distribution parameter.
 
-*right*
+*right*  
 The `param_type` object to compare to this.
 
 ### Remarks

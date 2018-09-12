@@ -1,7 +1,7 @@
 ---
 title: ".MMX | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".MMX"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .MMX
-Enables assembly of MMX or single-instruction, multiple data (SIMD) instructions.  
-  
-## Syntax  
-  
-```  
-  
-.MMX  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Enables assembly of MMX or single-instruction, multiple data (SIMD) instructions.
+
+## Syntax
+
+> .MMX
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

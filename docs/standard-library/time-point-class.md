@@ -96,7 +96,7 @@ time_point& operator+=(const duration& Dur);
 
 ### Parameters
 
-`Dur`
+*Dur*  
  A `duration` object.
 
 ### Return Value
@@ -113,7 +113,7 @@ time_point& operator-=(const duration& Dur);
 
 ### Parameters
 
-`Dur`
+*Dur*  
  A `duration` object.
 
 ### Return Value
@@ -135,17 +135,17 @@ constexpr time_point(const time_point<clock, Duration2>& Tp);
 
 ### Parameters
 
-`Dur`
+*Dur*  
  A [duration](../standard-library/duration-class.md) object.
 
-`Tp`
+*Tp*  
  A `time_point` object.
 
 ### Remarks
 
 The first constructor constructs an object whose stored `duration` value is equal to [duration::zero](../standard-library/duration-class.md#zero).
 
-The second constructor constructs an object whose stored duration value is equal to `Dur`. Unless `is_convertible<Duration2, duration>`*holds true*, the second constructor does not participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
+The second constructor constructs an object whose stored duration value is equal to *Dur*. Unless `is_convertible<Duration2, duration>` holds true, the second constructor does not participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
 
 The third constructor initializes its `duration` value by using `Tp.time_since_epoch()`.
 

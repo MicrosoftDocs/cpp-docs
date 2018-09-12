@@ -13,39 +13,43 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # entry
-Specifies an exported function or constant in a module by identifying the entry point in the DLL.  
-  
-## Syntax  
-  
-```  
-  
-      [ entry(  
-   id  
-) ]  
-```  
-  
-#### Parameters  
- `id`  
- The ID of the entry point.  
-  
-## Remarks  
- The **entry** C++ attribute has the same functionality as the [entry](http://msdn.microsoft.com/library/windows/desktop/aa366815) MIDL attribute.  
-  
-## Example  
- See the example for [idl_module](../windows/idl-module.md) for an example use of **entry**.  
-  
-## Requirements  
-  
-### Attribute Context  
-  
-|||  
-|-|-|  
-|**Applies to**|`idl_module` attribute|  
-|**Repeatable**|No|  
-|**Required attributes**|None|  
-|**Invalid attributes**|None|  
-  
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).  
-  
-## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
+
+Specifies an exported function or constant in a module by identifying the entry point in the DLL.
+
+## Syntax
+
+```cpp
+[ entry(
+   id
+) ]
+```
+
+### Parameters
+
+*id*  
+The ID of the entry point.
+
+## Remarks
+
+The **entry** C++ attribute has the same functionality as the [entry](/windows/desktop/Midl/entry) MIDL attribute.
+
+## Example
+
+See the example for [idl_module](../windows/idl-module.md) for an example use of **entry**.
+
+## Requirements
+
+### Attribute Context
+
+|||
+|-|-|
+|**Applies to**|`idl_module` attribute|
+|**Repeatable**|No|
+|**Required attributes**|None|
+|**Invalid attributes**|None|
+
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+
+## See Also
+
+[IDL Attributes](../windows/idl-attributes.md)  

@@ -29,7 +29,7 @@ int _set_printf_count_output(
 
 ### Parameters
 
-*enable*
+*enable*<br/>
 A non-zero value to enable **%n** support, 0 to disable **%n** support.
 
 ## Property Value/Return Value

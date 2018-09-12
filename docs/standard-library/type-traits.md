@@ -62,7 +62,7 @@ Primary type categories
 
 |||
 |-|-|
-|[is_void](../standard-library/is-void-class.md)|Tests whether the type is `void`.|
+|[is_void](../standard-library/is-void-class.md)|Tests whether the type is **void**.|
 |[is_null_pointer](../standard-library/is-null-pointer-class.md)|Tests whether the type is `std::nullptr_t`.|
 |[is_integral](../standard-library/is-integral-class.md)|Tests whether the type is integral.|
 |[is_floating_point](../standard-library/is-floating-point-class.md)|Tests whether the type is floating-point.|
@@ -83,7 +83,7 @@ Composite type categories
 |-|-|
 |[is_reference](../standard-library/is-reference-class.md)|Tests whether the type is a reference.|
 |[is_arithmetic](../standard-library/is-arithmetic-class.md)|Tests whether the type is arithmetic.|
-|[is_fundamental](../standard-library/is-fundamental-class.md)|Tests whether the type is `void` or arithmetic.|
+|[is_fundamental](../standard-library/is-fundamental-class.md)|Tests whether the type is **void** or arithmetic.|
 |[is_object](../standard-library/is-object-class.md)|Tests whether the type is an object type.|
 |[is_scalar](../standard-library/is-scalar-class.md)|Tests whether the type is scalar.|
 |[is_compound](../standard-library/is-compound-class.md)|Tests whether the type is not scalar.|
@@ -93,8 +93,8 @@ Type properties
 
 |||
 |-|-|
-|[is_const](../standard-library/is-const-class.md)|Tests whether the type is `const`.|
-|[is_volatile](../standard-library/is-volatile-class.md)|Tests whether the type is `volatile`.|
+|[is_const](../standard-library/is-const-class.md)|Tests whether the type is **const**.|
+|[is_volatile](../standard-library/is-volatile-class.md)|Tests whether the type is **volatile**.|
 |[is_trivial](../standard-library/is-trivial-class.md)|Tests whether the type is trivial.|
 |[is_trivially_copyable](../standard-library/is-trivially-copyable-class.md)|Tests whether the type is trivially copyable.|
 |[is_standard_layout](../standard-library/is-standard-layout-class.md)|Tests if type is a standard layout type.|
@@ -130,7 +130,7 @@ Type properties
 |[is_nothrow_copy_assignable](../standard-library/is-nothrow-copy-assignable-class.md)|Tests whether the type is copy assignable and the assignment is known not to throw.|
 |[is_nothrow_move_assignable](../standard-library/type-traits-functions.md#is_nothrow_move_assignable)|Tests whether the type is move assignable and the assignment is known not to throw.|
 |[is_nothrow_destructible](../standard-library/is-nothrow-destructible-class.md)|Tests whether the type is destructible and the destructor is known not to throw.|
-|[has_virtual_destructor](http://msdn.microsoft.com/en-us/c0f85f0b-c63c-410d-a046-72eeaf44f7eb)|Tests whether the type has a virtual destructor.|
+|`has_virtual_destructor`|Tests whether the type has a virtual destructor.|
 
 Type property queries
 
@@ -152,9 +152,9 @@ Const-volatile modifications
 
 |||
 |-|-|
-|[add_const](../standard-library/add-const-class.md)|Produces a `const` type from type.|
-|[add_volatile](../standard-library/add-volatile-class.md)|Produces a `volatile` type from type.|
-|[add_cv](../standard-library/add-cv-class.md)|Produces a `const volatile` type from type.|
+|[add_const](../standard-library/add-const-class.md)|Produces a **const** type from type.|
+|[add_volatile](../standard-library/add-volatile-class.md)|Produces a **volatile** type from type.|
+|[add_cv](../standard-library/add-cv-class.md)|Produces a **const volatile** type from type.|
 |[remove_const](../standard-library/remove-const-class.md)|Produces a non-const type from type.|
 |[remove_volatile](../standard-library/remove-volatile-class.md)|Produces a non-volatile type from type.|
 |[remove_cv](../standard-library/remove-cv-class.md)|Produces a non-const non-volatile type from type.|

@@ -24,7 +24,7 @@ There are several casting operators specific to the C++ language. These operator
   
 -   [safe_cast](../windows/safe-cast-cpp-component-extensions.md) Used to produce verifiable MSIL.  
   
- Use `const_cast` and `reinterpret_cast` as a last resort, since these operators present the same dangers as old style casts. However, they are still necessary in order to completely replace old style casts.  
+ Use **const_cast** and **reinterpret_cast** as a last resort, since these operators present the same dangers as old style casts. However, they are still necessary in order to completely replace old style casts.  
   
-## See Also  
+## See also  
  [Casting](../cpp/casting.md)

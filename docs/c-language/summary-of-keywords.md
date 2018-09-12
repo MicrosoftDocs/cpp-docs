@@ -11,18 +11,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Summary of Keywords
-*keyword* : one of  
-  
-|||||  
-|-|-|-|-|  
-|**auto**|**double**|`int`|`struct`|  
-|**break**|**else**|**long**|`switch`|  
-|**case**|`enum`|**register**|`typedef`|  
-|`char`|`extern`|`return`|**union**|  
-|**const**|**float**|**short**|`unsigned`|  
-|**continue**|**for**|**signed**|`void`|  
-|**default**|`goto`|`sizeof`|`volatile`|  
-|**do**|**if**|**static**|`while`|  
-  
-## See Also  
- [Lexical Grammar](../c-language/lexical-grammar.md)
+
+*keyword* : one of<br/>
+|||||
+|-|-|-|-|
+|**auto**|**double**|**int**|**struct**|
+|**break**|**else**|**long**|**switch**|
+|**case**|**enum**|**register**|**typedef**|
+|**char**|**extern**|**return**|**union**|
+|**const**|**float**|**short**|**unsigned**|
+|**continue**|**for**|**signed**|**void**|
+|**default**|**goto**|**sizeof**|**volatile**|
+|**do**|**if**|**static**|**while**|
+
+## See Also
+
+[Lexical Grammar](../c-language/lexical-grammar.md)

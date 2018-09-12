@@ -27,7 +27,7 @@ class rts_alloc
 
 |Parameter|Description|
 |---------------|-----------------|
-|`Cache`|The type of cache instances contained in the array. This can be [cache_chunklist Class](../standard-library/cache-chunklist-class.md), [cache_freelist](../standard-library/cache-freelist-class.md), or [cache_suballoc](../standard-library/cache-suballoc-class.md).|
+|*Cache*|The type of cache instances contained in the array. This can be [cache_chunklist Class](../standard-library/cache-chunklist-class.md), [cache_freelist](../standard-library/cache-freelist-class.md), or [cache_suballoc](../standard-library/cache-suballoc-class.md).|
 
 ## Remarks
 
@@ -59,7 +59,7 @@ void *allocate(std::size_t count);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`count`|The number of elements in the array to be allocated.|
+|*count*|The number of elements in the array to be allocated.|
 
 ### Return Value
 
@@ -67,7 +67,7 @@ A pointer to the allocated object.
 
 ### Remarks
 
-The member function returns `caches[_IDX].allocate(count)`, where the index `_IDX` is determined by the requested block size `count`, or, if `count` is too large, it returns `operator new(count)`. `cache`, which represents the cache object.
+The member function returns `caches[_IDX].allocate(count)`, where the index `_IDX` is determined by the requested block size *count*, or, if *count* is too large, it returns `operator new(count)`. `cache`, which represents the cache object.
 
 ## <a name="deallocate"></a>  rts_alloc::deallocate
 
@@ -81,12 +81,12 @@ void deallocate(void* ptr, std::size_t count);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`ptr`|A pointer to the first object to be deallocated from storage.|
-|`count`|The number of objects to be deallocated from storage.|
+|*ptr*|A pointer to the first object to be deallocated from storage.|
+|*count*|The number of objects to be deallocated from storage.|
 
 ### Remarks
 
-The member function calls `caches[_IDX].deallocate(ptr, count)`, where the index `_IDX` is determined by the requested block size `count`, or, if `count` is too large, it returns `operator delete(ptr)`.
+The member function calls `caches[_IDX].deallocate(ptr, count)`, where the index `_IDX` is determined by the requested block size *count*, or, if *count* is too large, it returns `operator delete(ptr)`.
 
 ## <a name="equals"></a>  rts_alloc::equals
 
@@ -100,12 +100,12 @@ bool equals(const sync<_Cache>& _Other) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|`_Cache`|The cache object associated with the filter.|
-|`_Other`|The cache object to compare for equality.|
+|*_Cache*|The cache object associated with the filter.|
+|*_Other*|The cache object to compare for equality.|
 
 ### Remarks
 
-`true` if the result of `caches[0].equals(other.caches[0])`; otherwise, `false`. `caches` represents the array of cache objects.
+**true** if the result of `caches[0].equals(other.caches[0])`; otherwise, **false**. `caches` represents the array of cache objects.
 
 ## See also
 

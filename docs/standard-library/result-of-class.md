@@ -32,15 +32,15 @@ template<class T>
 
 ### Parameters
 
-`Fn`
- The callable type to query.
+*Fn*<br/>
+The callable type to query.
 
-`ArgTypes`
- The types of the argument list to the callable type to query.
+*ArgTypes*<br/>
+The types of the argument list to the callable type to query.
 
 ## Remarks
 
-Use this template to determine at compile time the result type of `Fn`(`ArgTypes`), where `Fn` is a callable type, reference to function, or reference to callable type, invoked using an argument list of the types in `ArgTypes`. The `type` member of the template class names the result type of `decltype(std::invoke(declval<Fn>(), declval<ArgTypes>()...))` if the unevaluated expression `std::invoke(declval<Fn>(), declval<ArgTypes>()...)` is well-formed. Otherwise, the template class has no member `type`. The type `Fn` and all types in the parameter pack `ArgTypes` must be complete types, `void`, or arrays of unknown bound.
+Use this template to determine at compile time the result type of `Fn`(`ArgTypes`), where *Fn* is a callable type, reference to function, or reference to callable type, invoked using an argument list of the types in *ArgTypes*. The `type` member of the template class names the result type of `decltype(std::invoke(declval<Fn>(), declval<ArgTypes>()...))` if the unevaluated expression `std::invoke(declval<Fn>(), declval<ArgTypes>()...)` is well-formed. Otherwise, the template class has no member `type`. The type *Fn* and all types in the parameter pack *ArgTypes* must be complete types, **void**, or arrays of unknown bound.
 
 ## Requirements
 

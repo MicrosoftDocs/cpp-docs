@@ -25,7 +25,7 @@ class ctype : public ctype_base;
 
 ### Parameters
 
-*CharType*
+*CharType*<br/>
  The type used within a program to encode characters.
 
 ## Remarks
@@ -34,17 +34,17 @@ As with any locale facet, the static object ID has an initial stored value of ze
 
 The C++ Standard Library defines two explicit specializations of this template class:
 
-- [ctype](../standard-library/ctype-char-class.md)< `char`>, an explicit specialization whose differences are described separately.
+- `ctype<char>`, an explicit specialization whose differences are described separately. For more information, see [ctype&lt;char&gt; Class](../standard-library/ctype-char-class.md).
 
-- **ctype**<`wchar_t`>, which treats elements as wide characters.
+- `ctype<wchar_t>`, which treats elements as wide characters.
 
-Other specializations of template class **ctype**\< **CharType**>:
+Other specializations of template class `ctype<CharType>`:
 
-- Convert a value ***ch*** of type `CharType` to a value of type **char** with the expression (`char`) **ch**.
+- Convert a value *ch* of type *CharType* to a value of type **char** with the expression `(char)ch`.
 
-- Convert a value ***byte*** of type **char** to a value of type `CharType` with the expression **CharType** (**byte**).
+- Convert a value *byte* of type **char** to a value of type *CharType* with the expression `CharType(byte)`.
 
-All other operations are performed on **char** values in the same way as for the explicit specialization **ctype**<`char`>.
+All other operations are performed on **char** values in the same way as for the explicit specialization `ctype<char>`.
 
 ### Constructors
 
@@ -109,7 +109,7 @@ explicit ctype(size_t _Refs = 0);
 
 ### Parameters
 
-*_Refs*
+*_Refs*<br/>
  Integer value used to specify the type of memory management for the object.
 
 ### Remarks
@@ -144,19 +144,19 @@ virtual const CharType *do_is(
 
 ### Parameters
 
-*maskVal*
+*maskVal*<br/>
  The mask value for which the character is to be tested.
 
-*ch*
+*ch*<br/>
  The character whose attributes are to be tested.
 
-*first*
+*first*<br/>
  A pointer to the first character in the range whose attributes are to be classified.
 
-*last*
+*last*<br/>
  A pointer to the character immediately following the last character in the range whose attributes are to be classified.
 
-*dest*
+*dest*<br/>
  A pointer to the beginning of the array where the mask values characterizing the attributes of each of the characters are to be stored.
 
 ### Return Value
@@ -192,19 +192,19 @@ virtual const CharType* do_narrow(
 
 ### Parameters
 
-*ch*
+*ch*<br/>
  The character of type `Chartype` used by the locale to be converted.
 
-*default*
+*default*<br/>
  The default value to be assigned by the member function to characters of type `CharType` that do not have counterpart characters of type **char**.
 
-*first*
+*first*<br/>
  A pointer to the first character in the range of characters to be converted.
 
-*last*
+*last*<br/>
  A pointer to the character immediately following the last character in the range of characters to be converted.
 
-*dest*
+*dest*<br/>
  A const pointer to the first character of type **char** in the destination range that stores the converted range of characters.
 
 ### Return Value
@@ -234,13 +234,13 @@ virtual const CharType *do_scan_is(
 
 ### Parameters
 
-*maskVal*
+*maskVal*<br/>
  The mask value to be matched by a character.
 
-*first*
+*first*<br/>
  A pointer to the first character in the range to be scanned.
 
-*last*
+*last*<br/>
  A pointer to the character immediately following the last character in the range to be scanned.
 
 ### Return Value
@@ -249,7 +249,7 @@ A pointer to the first character in a range that does match a specified mask. If
 
 ### Remarks
 
-The protected member function returns the smallest pointer `ptr` in the range [ `first`, `last`) for which [do_is](#do_is)( `maskVal`, * `ptr`) is true.
+The protected member function returns the smallest pointer `ptr` in the range [ `first`, `last`) for which [do_is](#do_is)( `maskVal`, \* `ptr`) is true.
 
 ### Example
 
@@ -268,13 +268,13 @@ virtual const CharType *do_scan_not(
 
 ### Parameters
 
-*maskVal*
+*maskVal*<br/>
  The mask value not to be matched by a character.
 
-*first*
+*first*<br/>
  A pointer to the first character in the range to be scanned.
 
-*last*
+*last*<br/>
  A pointer to the character immediately following the last character in the range to be scanned.
 
 ### Return Value
@@ -283,7 +283,7 @@ A pointer to the first character in a range that doesn't match a specified mask.
 
 ### Remarks
 
-The protected member function returns the smallest pointer `ptr` in the range [ `first`, `last`) for which [do_is](#do_is)( `maskVal`, * `ptr`) is false.
+The protected member function returns the smallest pointer `ptr` in the range [ `first`, `last`) for which [do_is](#do_is)( `maskVal`, \* `ptr`) is false.
 
 ### Example
 
@@ -304,13 +304,13 @@ virtual const CharType *do_tolower(
 
 ### Parameters
 
-*ch*
+*ch*<br/>
  The character to be converted to lower case.
 
-*first*
+*first*<br/>
  A pointer to the first character in the range of characters whose cases are to be converted.
 
-*last*
+*last*<br/>
  A pointer to the character immediately following the last character in the range of characters whose cases are to be converted.
 
 ### Return Value
@@ -340,13 +340,13 @@ virtual const CharType *do_toupper(
 
 ### Parameters
 
-*ch*
+*ch*<br/>
  The character to be converted to upper case.
 
-*first*
+*first*<br/>
  A pointer to the first character in the range of characters whose cases are to be converted.
 
-*last*
+*last*<br/>
  A pointer to character immediately following the last character in the range of characters whose cases are to be converted.
 
 ### Return Value
@@ -377,16 +377,16 @@ virtual const char *do_widen(
 
 ### Parameters
 
-*byte*
+*byte*<br/>
  The character of type **char** in the native character set to be converted.
 
-*first*
+*first*<br/>
  A pointer to the first character in the range of characters to be converted.
 
-*last*
+*last*<br/>
  A pointer to the character immediately following the last character in the range of characters to be converted.
 
-*dest*
+*dest*<br/>
  A pointer to the first character of type `CharType` in the destination range that stores the converted range of characters.
 
 ### Return Value
@@ -419,19 +419,19 @@ const CharType *is(
 
 ### Parameters
 
-*maskVal*
+*maskVal*<br/>
  The mask value for which the character is to be tested.
 
-*ch*
+*ch*<br/>
  The character whose attributes are to be tested.
 
-*first*
+*first*<br/>
  A pointer to the first character in the range whose attributes are to be classified.
 
-*last*
+*last*<br/>
  A pointer to the character immediately following the last character in the range whose attributes are to be classified.
 
-*dest*
+*dest*<br/>
  A pointer to the beginning of the array where the mask values characterizing the attributes of each of the characters are to be stored.
 
 ### Return Value
@@ -500,19 +500,19 @@ const CharType* narrow(
 
 ### Parameters
 
-*ch*
+*ch*<br/>
  The character of type `Chartype` used by the locale to be converted.
 
-*default*
+*default*<br/>
  The default value to be assigned by the member function to characters of type `CharType` that do not have counterpart characters of type **char**.
 
-*first*
+*first*<br/>
  A pointer to the first character in the range of characters to be converted.
 
-*last*
+*last*<br/>
  A pointer to the character immediately following the last character in the range of characters to be converted.
 
-*dest*
+*dest*<br/>
  A const pointer to the first character of type **char** in the destination range that stores the converted range of characters.
 
 ### Return Value
@@ -564,13 +564,13 @@ const CharType *scan_is(
 
 ### Parameters
 
-*maskVal*
+*maskVal*<br/>
  The mask value to be matched by a character.
 
-*first*
+*first*<br/>
  A pointer to the first character in the range to be scanned.
 
-*last*
+*last*<br/>
  A pointer to the character immediately following the last character in the range to be scanned.
 
 ### Return Value
@@ -620,13 +620,13 @@ const CharType *scan_not(
 
 ### Parameters
 
-*maskVal*
+*maskVal*<br/>
  The mask value not to be matched by a character.
 
-*first*
+*first*<br/>
  A pointer to the first character in the range to be scanned.
 
-*last*
+*last*<br/>
  A pointer to the character immediately following the last character in the range to be scanned.
 
 ### Return Value
@@ -676,13 +676,13 @@ const CharType *tolower(CharType* first, const CharType* last) const;
 
 ### Parameters
 
-*ch*
+*ch*<br/>
  The character to be converted to lower case.
 
-*first*
+*first*<br/>
  A pointer to the first character in the range of characters whose cases are to be converted.
 
-*last*
+*last*<br/>
  A pointer to the character immediately following the last character in the range of characters whose cases are to be converted.
 
 ### Return Value
@@ -731,13 +731,13 @@ const CharType *toupper(CharType* first, const CharType* last) const;
 
 ### Parameters
 
-*ch*
+*ch*<br/>
  The character to be converted to uppercase.
 
-*first*
+*first*<br/>
  A pointer to the first character in the range of characters whose cases are to be converted.
 
-*last*
+*last*<br/>
  A pointer to the character immediately following the last character in the range of characters whose cases are to be converted.
 
 ### Return Value
@@ -786,16 +786,16 @@ const char *widen(const char* first, const char* last, CharType* dest) const;
 
 ### Parameters
 
-*byte*
+*byte*<br/>
  The character of type char in the native character set to be converted.
 
-*first*
+*first*<br/>
  A pointer to the first character in the range of characters to be converted.
 
-*last*
+*last*<br/>
  A pointer to the character immediately following the last character in the range of characters to be converted.
 
-*dest*
+*dest*<br/>
  A pointer to the first character of type `CharType` in the destination range that stores the converted range of characters.
 
 ### Return Value

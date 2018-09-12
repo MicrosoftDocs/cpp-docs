@@ -27,11 +27,11 @@ void swap(
 
 ### Parameters
 
-*right*
- The hash_set providing the elements to be swapped, or the hash_set whose elements are to be exchanged with those of the hash_set *left*.
+*right*<br/>
+The hash_set providing the elements to be swapped, or the hash_set whose elements are to be exchanged with those of the hash_set *left*.
 
-*left*
- The hash_set whose elements are to be exchanged with those of the hash_set *right*.
+*left*<br/>
+The hash_set whose elements are to be exchanged with those of the hash_set *right*.
 
 ### Remarks
 
@@ -58,11 +58,11 @@ void swap(hash_multiset <Key, Traits, Allocator>& left, hash_multiset <Key, Trai
 
 ### Parameters
 
-*right*
- The hash_multiset providing the elements to be swapped, or the hash_multiset whose elements are to be exchanged with those of the hash_multiset *left*.
+*right*<br/>
+The hash_multiset providing the elements to be swapped, or the hash_multiset whose elements are to be exchanged with those of the hash_multiset *left*.
 
-*left*
- The hash_multiset whose elements are to be exchanged with those of the hash_multiset *right*.
+*left*<br/>
+The hash_multiset whose elements are to be exchanged with those of the hash_multiset *right*.
 
 ### Remarks
 

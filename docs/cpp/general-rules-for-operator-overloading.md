@@ -49,7 +49,7 @@ The following rules constrain how overloaded operators are implemented. However,
   
 -   Overloaded operators cannot have default arguments.  
   
--   All overloaded operators except assignment (`operator=`) are inherited by derived classes.  
+-   All overloaded operators except assignment (**operator=**) are inherited by derived classes.  
   
 -   The first argument for member-function overloaded operators is always of the class type of the object for which the operator is invoked (the class in which the operator is declared, or a class derived from that class). No conversions are supplied for the first argument.  
   
@@ -62,10 +62,10 @@ var++;
 ++var;  
 ```  
   
- This identity cannot be relied upon for class types that overload operators. Moreover, some of the requirements implicit in the use of these operators for basic types are relaxed for overloaded operators. For example, the addition/assignment operator, `+=`, requires the left operand to be an l-value when applied to basic types; there is no such requirement when the operator is overloaded.  
+ This identity cannot be relied upon for class types that overload operators. Moreover, some of the requirements implicit in the use of these operators for basic types are relaxed for overloaded operators. For example, the addition/assignment operator, **+=**, requires the left operand to be an l-value when applied to basic types; there is no such requirement when the operator is overloaded.  
   
 > [!NOTE]
 > For consistency, it is often best to follow the model of the built-in types when defining overloaded operators. If the semantics of an overloaded operator differ significantly from its meaning in other contexts, it can be more confusing than useful.  
   
-## See Also  
+## See also  
  [Operator Overloading](../cpp/operator-overloading.md)

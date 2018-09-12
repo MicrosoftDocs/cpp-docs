@@ -12,22 +12,24 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Elapsed Time: Automation Classes
-This procedure shows how to calculate the difference between two `CTime` objects and get a `CTimeSpan` result.  
-  
-#### To calculate elapsed time  
-  
-1.  Create two `COleDateTime` objects.  
-  
-2.  Set one of the `COleDateTime` objects to the current time.  
-  
-3.  Perform some time-consuming task.  
-  
-4.  Set the other `COleDateTime` object to the current time.  
-  
-5.  Take the difference between the two times.  
-  
-     [!code-cpp[NVC_ATLMFC_Utilities#178](../atl-mfc-shared/codesnippet/cpp/elapsed-time-automation-classes_1.cpp)]  
-  
-## See Also  
- [Date and Time: Automation Support](../atl-mfc-shared/date-and-time-automation-support.md)
+
+This procedure shows how to calculate the difference between two `CTime` objects and get a `CTimeSpan` result.
+
+#### To calculate elapsed time
+
+1. Create two `COleDateTime` objects.
+
+2. Set one of the `COleDateTime` objects to the current time.
+
+3. Perform some time-consuming task.
+
+4. Set the other `COleDateTime` object to the current time.
+
+5. Take the difference between the two times.
+
+   [!code-cpp[NVC_ATLMFC_Utilities#178](../atl-mfc-shared/codesnippet/cpp/elapsed-time-automation-classes_1.cpp)]
+
+## See Also
+
+[Date and Time: Automation Support](../atl-mfc-shared/date-and-time-automation-support.md)
 

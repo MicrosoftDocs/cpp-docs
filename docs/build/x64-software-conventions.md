@@ -12,7 +12,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # x64 Software Conventions
-This section describes the Visual C++ calling convention methodology for [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)], 64-bit extension to the x86 architecture.  
+This section describes the Visual C++ calling convention methodology for x64, 64-bit extension to the x86 architecture.  
   
 -   [Overview of x64 Calling Conventions](../build/overview-of-x64-calling-conventions.md)  
   
@@ -32,7 +32,7 @@ This section describes the Visual C++ calling convention methodology for [!INCLU
   
 -   [Image Format](../build/image-format.md)  
   
- The following compiler option helps you optimize your application for [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]:  
+ The following compiler option helps you optimize your application for x64:  
   
 -   [/favor (Optimize for Architecture Specifics)](../build/reference/favor-optimize-for-architecture-specifics.md)  
   

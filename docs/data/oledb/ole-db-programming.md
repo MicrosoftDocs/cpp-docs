@@ -26,11 +26,10 @@ Microsoft OLE DB is a legacy technology; for new applications it is the required
 |Using the OLE DB provider templates (conceptual topics)|[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)|  
 |OLE DB templates classes and macros|[OLE DB Templates Reference](../../data/oledb/ole-db-templates.md) (Visual C++)|  
 |OLE DB consumer attributes|[OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md)|  
-|OLE DB interfaces|[OLE DB programmer's reference](https://msdn.microsoft.com/en-us/library/ms713643.aspx) (in the Windows SDK)|  
-|OLE DB templates samples|[OLE DB Templates Samples](http://msdn.microsoft.com/en-us/08958863-0b5f-41ad-ae99-fca7440c553c)| 
+|OLE DB interfaces|[OLE DB programmer's reference](/previous-versions/windows/desktop/ms713643\(v=vs.85\)) (in the Windows SDK)|  
+|OLE DB templates samples|[OLE DB Templates Samples](https://github.com/Microsoft/VCSamples)| 
 |Data access programming overview (Visual C++)|[Data Access Programming](../../data/data-access-programming-mfc-atl.md)|  
 |ODBC conceptual topics|[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)|  
 
-  
 ## See Also  
  [Data Access](../data-access-in-cpp.md)

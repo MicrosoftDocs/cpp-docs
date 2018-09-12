@@ -13,27 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # WeakReference::DecrementStrongReference Method
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-ULONG DecrementStrongReference();  
-```  
-  
-## Remarks  
- Decrements the strong reference count of the current WeakReference object.  
-  
- When the strong reference count becomes zero, the strong reference is set to `nullptr`.  
-  
-## Return Value  
- The decremented strong reference count.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+ULONG DecrementStrongReference();
+```
+
+## Remarks
+
+Decrements the strong reference count of the current **WeakReference** object.
+
+When the strong reference count becomes zero, the strong reference is set to **nullptr**.
+
+## Return Value
+
+The decremented strong reference count.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
 [WeakReference Class](../windows/weakreference-class1.md)  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

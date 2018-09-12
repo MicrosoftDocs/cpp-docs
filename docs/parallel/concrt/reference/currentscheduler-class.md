@@ -148,7 +148,7 @@ static SchedulerPolicy __cdecl GetPolicy();
 ```  
   
 ### Return Value  
- A copy of the policy that that the current scheduler was created with.  
+ A copy of the policy that the current scheduler was created with.  
   
 ### Remarks  
  This method will result in the process' default scheduler being created and/or attached to the calling context if there is no scheduler currently associated with the calling context.  

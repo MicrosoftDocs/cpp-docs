@@ -1,7 +1,7 @@
 ---
 title: ".WHILE | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".WHILE"]
@@ -13,16 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .WHILE
-Generates code that executes the block of `statements` while `condition` remains true.  
-  
-## Syntax  
-  
-```  
-  
-   .WHILE condition  
-statements  
-.ENDW  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Generates code that executes the block of `statements` while `condition` remains true.
+
+## Syntax
+
+> .WHILE condition<br/>
+> statements<br/>
+> .ENDW
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

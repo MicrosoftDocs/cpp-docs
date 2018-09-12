@@ -34,7 +34,6 @@ When you use the MFC DLL wizard to create an MFC DLL project, you get a working 
  [Creating and Managing Visual C++ Projects](../../ide/creating-and-managing-visual-cpp-projects.md)   
  [Property Pages](../../ide/property-pages-visual-cpp.md)   
  [Working with Project Properties](../../ide/working-with-project-properties.md)   
- [Deploying Applications](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)   
  [MFC Class](../../mfc/reference/adding-an-mfc-class.md)   
  [Adding a Member Function](../../ide/adding-a-member-function-visual-cpp.md)   
  [Implementing an Interface](../../ide/implementing-an-interface-visual-cpp.md)   

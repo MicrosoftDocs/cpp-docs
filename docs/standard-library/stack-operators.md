@@ -25,11 +25,11 @@ bool operator!=(const stack <Type, Container>& left, const stack <Type, Containe
 
 ### Parameters
 
-`left`
- An object of type **stack**.
+*left*<br/>
+An object of type `stack`.
 
-`right`
- An object of type **stack**.
+*right*<br/>
+An object of type `stack`.
 
 ### Return Value
 
@@ -90,11 +90,11 @@ bool operator<(const stack <Type, Container>& left, const stack <Type, Container
 
 ### Parameters
 
-`left`
- An object of type **stack**.
+*left*<br/>
+An object of type `stack`.
 
-`right`
- An object of type **stack**.
+*right*<br/>
+An object of type `stack`.
 
 ### Return Value
 
@@ -174,11 +174,11 @@ bool operator<=(const stack <Type, Container>& left, const stack <Type, Containe
 
 ### Parameters
 
-`left`
- An object of type **stack**.
+*left*<br/>
+An object of type `stack`.
 
-`right`
- An object of type **stack**.
+*right*<br/>
+An object of type `stack`.
 
 ### Return Value
 
@@ -241,11 +241,11 @@ bool operator==(const stack <Type, Container>& left, const stack <Type, Containe
 
 ### Parameters
 
-`left`
- An object of type **stack**.
+*left*<br/>
+An object of type `stack`.
 
-`right`
- An object of type **stack**.
+*right*<br/>
+An object of type `stack`.
 
 ### Return Value
 
@@ -306,11 +306,11 @@ bool operator>(const stack <Type, Container>& left, const stack <Type, Container
 
 ### Parameters
 
-`left`
- An object of type **stack**.
+*left*<br/>
+An object of type `stack`.
 
-`right`
- An object of type **stack**.
+*right*<br/>
+An object of type `stack`.
 
 ### Return Value
 
@@ -375,11 +375,11 @@ bool operator>=(const stack <Type, Container>& left, const stack <Type, Containe
 
 ### Parameters
 
-`left`
- An object of type **stack**.
+*left*<br/>
+An object of type `stack`.
 
-`right`
- An object of type **stack**.
+*right*<br/>
+An object of type `stack`.
 
 ### Return Value
 

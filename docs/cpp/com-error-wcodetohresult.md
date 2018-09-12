@@ -19,9 +19,8 @@ ms.workload: ["cplusplus"]
   
 ## Syntax  
   
-```  
-  
-      static HRESULT WCodeToHRESULT(  
+```    
+static HRESULT WCodeToHRESULT(  
    WORD wCode   
 ) throw( );  
 ```  
@@ -38,7 +37,7 @@ ms.workload: ["cplusplus"]
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_com_error::WCode](../cpp/com-error-wcode.md)   
  [_com_error::HRESULTToWCode](../cpp/com-error-hresulttowcode.md)   
  [_com_error Class](../cpp/com-error-class.md)

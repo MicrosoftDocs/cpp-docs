@@ -43,14 +43,14 @@ struct pair
 
 ### Parameters
 
-*Val1*
- Value initializing the first element of `pair`.
+*Val1*<br/>
+Value initializing the first element of `pair`.
 
-*Val2*
- Value initializing the second element of `pair`.
+*Val2*<br/>
+Value initializing the second element of `pair`.
 
-*Right*
- A pair whose values are to be used to initialize the elements of another pair.
+*Right*<br/>
+A pair whose values are to be used to initialize the elements of another pair.
 
 ## Return Value
 
@@ -143,16 +143,16 @@ int main( )
            << " is already in m1,\n so the insertion failed." << endl;
    }
 }
-\* Output:
+/* Output:
 The pair p1 is: ( 10, 0.011 ).
 The pair p2 is: ( 10, 0.222 ).
 The pair p3 is: ( 10, 0.011 ).
 The element pairs of the map m1 are: ( 1, 10 ) ( 2, 20 ) ( 3, 30 ).
 The element (4,40) was inserted successfully in m1.
 The element with a key value of
- ( (pr2.first) -> first ) = 1 is already in m1,
- so the insertion failed.
-*\
+( (pr2.first) -> first ) = 1 is already in m1,
+so the insertion failed.
+*/
 ```
 
 ## Requirements

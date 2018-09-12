@@ -35,13 +35,13 @@ void CMySet::DoFieldExchange(CFieldExchange* pFX)
 
 The special format AFX comments allow ClassWizard to locate and edit the code within this function. Code that is not compatible with ClassWizard should be placed outside of the special format comments.
 
-In the above example, <recordset_exchange_field_type_call> is in the form:
+In the above example, \<recordset_exchange_field_type_call> is in the form:
 
 ```cpp
 pFX->SetFieldType(CFieldExchange::outputColumn);
 ```
 
-and <recordset_exchange_function_call> is in the form:
+and \<recordset_exchange_function_call> is in the form:
 
 ```cpp
 RFX_Custom(pFX, "Col2", m_Col2);

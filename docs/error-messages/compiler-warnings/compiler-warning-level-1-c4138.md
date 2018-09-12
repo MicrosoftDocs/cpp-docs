@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # Compiler Warning (level 1) C4138
 '*/' found outside of comment  
   
- The closing-comment delimiter is not preceded by an opening-comment delimiter. The compiler assumes a space between the asterisk (**\***) and the forward slash (/).  
+ The closing-comment delimiter is not preceded by an opening-comment delimiter. The compiler assumes a space between the asterisk (<strong>\*</strong>) and the forward slash (/).  
   
 ## Example  
   

@@ -33,7 +33,7 @@ typedef struct tagPAINTSTRUCT {
  Identifies the display context to be used for painting.  
   
  *fErase*  
- Specifies whether the background needs to be redrawn. It is not 0 if the application should redraw the background. The application is responsible for drawing the background if a Windows window-class is created without a background brush (see the description of the `hbrBackground` member of the [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure in the Windows SDK).  
+ Specifies whether the background needs to be redrawn. It is not 0 if the application should redraw the background. The application is responsible for drawing the background if a Windows window-class is created without a background brush (see the description of the `hbrBackground` member of the [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) structure in the Windows SDK).  
   
  *rcPaint*  
  Specifies the upper left and lower right corners of the rectangle in which the painting is requested.  

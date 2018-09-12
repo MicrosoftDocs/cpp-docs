@@ -15,7 +15,6 @@ ms.workload: ["cplusplus"]
 An array is a collection of like objects. The simplest case of an array is a vector, which may be declared by the following sequence:  
   
 ```  
-  
 decl-specifier identifier [ constant-expression ]  
 decl-specifier identifier []  
 decl-specifier identifer [][ constant-expression] . . .  
@@ -162,7 +161,4 @@ The minimum cost to Market 3 is: 17.29
 ```  
   
 ## Comments  
- The function `FindMinToMkt` is written such that adding new factories does not require any code changes, just a recompilation.  
-  
-## See Also  
- 
+ The function `FindMinToMkt` is written such that adding new factories does not require any code changes, just a recompilation. 

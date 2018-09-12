@@ -40,13 +40,13 @@ DEFINE_COMMAND(CMySProcAccessor, _T("{CALL dbo.dt_adduserobject (?,?) }")
   
  Next, declare the command class:  
   
-```  
+```cpp  
 class CMySProc : public CCommand<CAccessor<CMySProcAccessor>>  
 ```  
   
  Finally, call the stored procedure in `OpenRowset` as follows:  
   
-```  
+```cpp  
 CSession m_session;  
 
 HRESULT OpenRowset()  
@@ -57,7 +57,7 @@ HRESULT OpenRowset()
   
  Also note that you can define a stored procedure using the database attribute [db_command](../../windows/db-command.md) as follows:  
   
-```  
+```cpp  
 db_command("{ ? = CALL dbo.dt_adduserobject }")  
 ```  
   

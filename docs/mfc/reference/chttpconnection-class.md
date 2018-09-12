@@ -114,7 +114,7 @@ CHttpConnection(
 |Non- NULL String|Non- NULL String|*pstrUserName*|*pstrPassword*|  
   
  *dwFlags*  
- Any combination of the **INTERNET_ FLAG_\*** flags. See the table in the **Remarks** section of [CHttpConnection::OpenRequest](#openrequest) for a description of *dwFlags* values.  
+ Any combination of the `INTERNET_FLAG_*` flags. See the table in the **Remarks** section of [CHttpConnection::OpenRequest](#openrequest) for a description of *dwFlags* values.  
   
 ### Remarks  
  You never create a `CHttpConnection` directly. Rather, you create an object by calling [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection).  

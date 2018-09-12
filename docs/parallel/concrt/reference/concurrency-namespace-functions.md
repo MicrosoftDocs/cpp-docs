@@ -141,12 +141,12 @@ IResourceManager* __cdecl CreateResourceManager();
  An `IResourceManager` interface.  
   
 ### Remarks  
- Multiple subsequent calls to this method will return the same instance of the Resource Manager. Each call to the method increments a reference count on the Resource Manager, and must be matched with a call to the [IResourceManager::Release](http://msdn.microsoft.com/en-us/5d1356ec-fbd3-4284-a361-1e9e20bbb522) method when your scheduler is done communicating with the Resource Manager.  
+ Multiple subsequent calls to this method will return the same instance of the Resource Manager. Each call to the method increments a reference count on the Resource Manager, and must be matched with a call to the [IResourceManager::Release](iresourcemanager-structure.md) method when your scheduler is done communicating with the Resource Manager.  
   
  [unsupported_os](unsupported-os-class.md) is thrown if the operating system is not supported by the Concurrency Runtime.  
   
 ##  <a name="create_task"></a>  create_task  
- Creates a PPL [task](http://msdn.microsoft.com/en-us/5389e8a5-5038-40b6-844a-55e9b58ad35f) object. `create_task` can be used anywhere you would have used a task constructor. It is provided mainly for convenience, because it allows use of the `auto` keyword while creating tasks.  
+ Creates a PPL [task](task-class.md) object. `create_task` can be used anywhere you would have used a task constructor. It is provided mainly for convenience, because it allows use of the `auto` keyword while creating tasks.  
   
 ```
 template<typename T>
@@ -1088,7 +1088,7 @@ inline void parallel_sort(
  The mimimum size of a chunk that will be split into two for parallel execution.  
   
 ### Remarks  
- The first overload uses the the binary comparator `std::less`.  
+ The first overload uses the binary comparator `std::less`.  
   
  The second overloaded uses the supplied binary comparator that should have the signature `bool _Func(T, T)` where `T` is the type of the elements in the input range.  
   

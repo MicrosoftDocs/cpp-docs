@@ -93,14 +93,14 @@ constexpr complex(
 
 ### Parameters
 
-*_RealVal*
- The value of the real part used to initialize the complex number being constructed.
+*_RealVal*<br/>
+The value of the real part used to initialize the complex number being constructed.
 
-*_ImagVal*
- The value of the imaginary part used to initialize the complex number being constructed.
+*_ImagVal*<br/>
+The value of the imaginary part used to initialize the complex number being constructed.
 
-*complexNum*
- The complex number whose real and imaginary parts are used to initialize the complex number being constructed.
+*complexNum*<br/>
+The complex number whose real and imaginary parts are used to initialize the complex number being constructed.
 
 ### Remarks
 
@@ -175,8 +175,8 @@ T imag(const T& right);
 
 ### Parameters
 
-*right*
- A complex number whose imaginary value is to be extracted.
+*right*<br/>
+A complex number whose imaginary value is to be extracted.
 
 ### Return Value
 
@@ -232,8 +232,8 @@ complex<Type>& operator*=(const complex<Type>& right);
 
 ### Parameters
 
-*right*
- A complex number or a number that is of the same type as the parameter of the target complex number.
+*right*<br/>
+A complex number or a number that is of the same type as the parameter of the target complex number.
 
 ### Return Value
 
@@ -316,8 +316,8 @@ complex<Type>& operator+=(const complex<Type>& right);
 
 ### Parameters
 
-*right*
- A complex number or a number that is of the same type as the parameter of the target complex number.
+*right*<br/>
+A complex number or a number that is of the same type as the parameter of the target complex number.
 
 ### Return Value
 
@@ -391,7 +391,7 @@ The left-side complex number is cl1 = (3,4)
 The right-side complex number is cr1 = (2,-1)
 The sum of the two complex numbers is: cs1 = cl1 + cr1 = (5,3)
 The complex number cr1 added to the complex number cl1 is:
- cl1 += cr1 = (5,3)
+cl1 += cr1 = (5,3)
 The modulus of cl1 is: 5.83095
 The argument of cl1 is: 0.54042 radians, which is 30.9638 degrees.
 
@@ -399,7 +399,7 @@ The left-side complex number is cl2 = (-2,4)
 The right-side complex number is cr2 = 5
 The sum of the two complex numbers is: cs2 = cl2 + cr2 = (3,4)
 The complex number cr2 added to the complex number cl2 is:
- cl2 += cr2 = (3,4)
+cl2 += cr2 = (3,4)
 The modulus of cl2 is: 5
 The argument of cl2 is: 0.927295 radians, which is 53.1301 degrees.
 ```
@@ -419,11 +419,11 @@ complex<Type>& operator-=(const complex<Type>& complexNum);
 
 ### Parameters
 
-*complexNum*
- A complex number to be subtracted from the target complex number.
+*complexNum*<br/>
+A complex number to be subtracted from the target complex number.
 
-*_RealPart*
- A real number to be subtracted from the target complex number.
+*_RealPart*<br/>
+A real number to be subtracted from the target complex number.
 
 ### Return Value
 
@@ -496,18 +496,18 @@ int main( )
 The left-side complex number is cl1 = (3,4)
 The right-side complex number is cr1 = (2,-1)
 The difference between the two complex numbers is:
- cs1 = cl1 - cr1 = (1,5)
+cs1 = cl1 - cr1 = (1,5)
 Complex number cr1 subtracted from complex number cl1 is:
- cl1 -= cr1 = (1,5)
+cl1 -= cr1 = (1,5)
 The modulus of cl1 is: 5.09902
 The argument of cl1 is: 1.3734 radians, which is 78.6901 degrees.
 
 The left-side complex number is cl2 = (2,4)
 The right-side complex number is cr2 = 5
 The difference between the two complex numbers is:
- cs2 = cl2 - cr2 = (-3,4)
+cs2 = cl2 - cr2 = (-3,4)
 Complex number cr2 subtracted from complex number cl2 is:
- cl2 -= cr2 = (-3,4)
+cl2 -= cr2 = (-3,4)
 The modulus of cl2 is: 5
 The argument of cl2 is: 2.2143 radians, which is 126.87 degrees.
 ```
@@ -527,11 +527,11 @@ complex<Type>& operator/=(const complex<Type>& complexNum);
 
 ### Parameters
 
-*complexNum*
- A complex number to be subtracted from the target complex number.
+*complexNum*<br/>
+A complex number to be subtracted from the target complex number.
 
-*_RealPart*
- A real number to be subtracted from the target complex number.
+*_RealPart*<br/>
+A real number to be subtracted from the target complex number.
 
 ### Return Value
 
@@ -629,8 +629,8 @@ complex<Type>& operator=(const Type& right);
 
 ### Parameters
 
-*right*
- A complex number or a number that is of the same type as the parameter of the target complex number.
+*right*<br/>
+A complex number or a number that is of the same type as the parameter of the target complex number.
 
 ### Return Value
 
@@ -662,7 +662,7 @@ int main( )
 
    cl1  = cr1;
    cout << "The complex number cr1 assigned to the complex number cl1 is:"
-        << "\n cl1 = cr1 = " << cl1 << endl;
+        << "\ncl1 = cr1 = " << cl1 << endl;
 
    // Example of the second member function
    // type double assigned to type complex<double>
@@ -673,11 +673,11 @@ int main( )
 
    cl2 = cr2;
    cout << "The complex number cr2 assigned to the complex number cl2 is:"
-        << "\n cl2 = cr2 = " << cl2 << endl;
+        << "\ncl2 = cr2 = " << cl2 << endl;
 
    cl2 = complex<double>(3.0, 4.0);
    cout << "The complex number (3, 4) assigned to the complex number cl2 is:"
-        << "\n cl2 = " << cl2 << endl;
+        << "\ncl2 = " << cl2 << endl;
 }
 ```
 
@@ -685,13 +685,13 @@ int main( )
 The left-side complex number is cl1 = (3,4)
 The right-side complex number is cr1 = (2,-1)
 The complex number cr1 assigned to the complex number cl1 is:
- cl1 = cr1 = (2,-1)
+cl1 = cr1 = (2,-1)
 The left-side complex number is cl2 = (-2,4)
 The right-side complex number is cr2 = 5
 The complex number cr2 assigned to the complex number cl2 is:
- cl2 = cr2 = (5,0)
+cl2 = cr2 = (5,0)
 The complex number (3, 4) assigned to the complex number cl2 is:
- cl2 = (3,4)
+cl2 = (3,4)
 ```
 
 ## <a name="real"></a>  complex::real
@@ -707,8 +707,8 @@ T real(const T& right);
 
 ### Parameters
 
-*right*
- A complex number whose real value is to be extracted.
+*right*<br/>
+A complex number whose real value is to be extracted.
 
 ### Return Value
 
@@ -789,5 +789,4 @@ of type value_type: c1 = (3,4).
 
 ## See also
 
-[complex Members](http://msdn.microsoft.com/en-us/d5c4466c-43a0-4817-aca1-9a5d492dae28)<br/>
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

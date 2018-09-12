@@ -89,11 +89,11 @@ bool try_lock() noexcept;
 
 ### Return Value
 
-`true` if the method successfully obtained ownership of the `mutex` or if the calling thread already owns the `mutex`; otherwise, `false`.
+**true** if the method successfully obtained ownership of the `mutex` or if the calling thread already owns the `mutex`; otherwise, **false**.
 
 ### Remarks
 
-If the calling thread already owns the `mutex`, the function immediately returns `true`, and the previous lock remains in effect.
+If the calling thread already owns the `mutex`, the function immediately returns **true**, and the previous lock remains in effect.
 
 ## <a name="try_lock_for"></a>  try_lock_for
 
@@ -106,16 +106,16 @@ bool try_lock_for(const chrono::duration<Rep, Period>& Rel_time);
 
 ### Parameters
 
-`Rel_time`
- A [chrono::duration](../standard-library/duration-class.md) object that specifies the maximum amount of time that the method attempts to obtain ownership of the `mutex`.
+*Rel_time*<br/>
+A [chrono::duration](../standard-library/duration-class.md) object that specifies the maximum amount of time that the method attempts to obtain ownership of the `mutex`.
 
 ### Return Value
 
-`true` if the method successfully obtains ownership of the `mutex` or if the calling thread already owns the `mutex`; otherwise, `false`.
+**true** if the method successfully obtains ownership of the `mutex` or if the calling thread already owns the `mutex`; otherwise, **false**.
 
 ### Remarks
 
-If the calling thread already owns the `mutex`, the method immediately returns `true`, and the previous lock remains in effect.
+If the calling thread already owns the `mutex`, the method immediately returns **true**, and the previous lock remains in effect.
 
 ## <a name="try_lock_until"></a>  try_lock_until
 
@@ -130,16 +130,16 @@ bool try_lock_until(const xtime* Abs_time);
 
 ### Parameters
 
-`Abs_time`
- A point in time that specifies the threshold after which the method no longer attempts to obtain ownership of the `mutex`.
+*Abs_time*<br/>
+A point in time that specifies the threshold after which the method no longer attempts to obtain ownership of the `mutex`.
 
 ### Return Value
 
-`true` if the method successfully obtains ownership of the `mutex` or if the calling thread already owns the `mutex`; otherwise, `false`.
+**true** if the method successfully obtains ownership of the `mutex` or if the calling thread already owns the `mutex`; otherwise, **false**.
 
 ### Remarks
 
-If the calling thread already owns the `mutex`, the method immediately returns `true`, and the previous lock remains in effect.
+If the calling thread already owns the `mutex`, the method immediately returns **true**, and the previous lock remains in effect.
 
 ## <a name="unlock"></a>  unlock
 

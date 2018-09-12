@@ -109,7 +109,7 @@ class CMFCVisualManagerOffice2003 : public CMFCVisualManagerOfficeXP
 |[CMFCVisualManagerOffice2003::OnHighlightQuickCustomizeMenuButton](#onhighlightquickcustomizemenubutton)|The framework calls this method when it draws a highlighted quick-customize menu button. (Overrides `CMFCVisualManagerOfficeXP::OnHighlightQuickCustomizeMenuButton`.)|  
 |[CMFCVisualManagerOffice2003::OnHighlightRarelyUsedMenuItems](#onhighlightrarelyusedmenuitems)|The framework calls this method when it draws a highlighted menu command. (Overrides `CMFCVisualManagerOfficeXP::OnHighlightRarelyUsedMenuItems`.)|  
 |[CMFCVisualManagerOffice2003::OnUpdateSystemColors](#onupdatesystemcolors)|The framework calls this function when the system colors change. (Overrides `CMFCVisualManagerOfficeXP::OnUpdateSystemColors`.)|  
-|[CMFCVisualManagerOffice2003::SetDefaultWinXPColors](#setdefaultwinxpcolors)|Specifies whether the visual manager should use native Windows XP theme colors or colors obtained from [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371).|  
+|[CMFCVisualManagerOffice2003::SetDefaultWinXPColors](#setdefaultwinxpcolors)|Specifies whether the visual manager should use native Windows XP theme colors or colors obtained from [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor).|  
 |[CMFCVisualManagerOffice2003::SetStatusBarOfficeXPLook](#setstatusbarofficexplook)|Specifies that the Windows XP global theme should be used.|  
 |[CMFCVisualManagerOffice2003::SetUseGlobalTheme](#setuseglobaltheme)|Specifies whether the visual manager uses a global theme.|  
   
@@ -354,10 +354,10 @@ virtual void GetSmartDockingBaseGuideColors(
   
 ### Parameters  
  [in] *clrBaseGroupBackground*  
- Reference to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) to set to the background color.  
+ Reference to a [COLORREF](/windows/desktop/gdi/colorref) to set to the background color.  
   
  [in] *clrBaseGroupBorder*  
- Reference to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) to set to the border color.  
+ Reference to a [COLORREF](/windows/desktop/gdi/colorref) to set to the border color.  
   
 ### Remarks  
   
@@ -369,7 +369,7 @@ virtual COLORREF GetSmartDockingHighlightToneColor();
 ```  
   
 ### Return Value  
- Returns a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) that contains the highlight tone color.  
+ Returns a [COLORREF](/windows/desktop/gdi/colorref) that contains the highlight tone color.  
   
 ### Remarks  
   
@@ -394,7 +394,7 @@ virtual void GetTabFrameColors(
  A pointer to the tabbed window where the frame is drawing a tab.  
   
  [out] *clrDark*  
- A reference to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter where this method stores the color for the dark border of a tab.  
+ A reference to a [COLORREF](/windows/desktop/gdi/colorref) parameter where this method stores the color for the dark border of a tab.  
   
  [out] *clrBlack*  
  A reference to a COLORREF parameter where this method stores the color for the border of the tab window. The default color for the border is black.  
@@ -439,7 +439,7 @@ virtual COLORREF GetToolbarDisabledColor() const;
 ```  
   
 ### Return Value  
- Returns a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) that contains the disabled color.  
+ Returns a [COLORREF](/windows/desktop/gdi/colorref) that contains the disabled color.  
   
 ### Remarks  
   
@@ -623,7 +623,7 @@ virtual void OnDrawBarGripper(
  The default implementation of this method displays the standard gripper. To customize the appearance of the gripper, override this method in a custom class derived from the [CMFCVisualManagerOffice2003](../../mfc/reference/cmfcvisualmanageroffice2003-class.md) Class.  
   
 ##  <a name="ondrawbrowsebutton"></a>  CMFCVisualManagerOffice2003::OnDrawBrowseButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual BOOL OnDrawBrowseButton(
@@ -998,7 +998,7 @@ virtual COLORREF OnDrawPaneCaption(
  A rectangle that specifies the boundaries of the caption buttons.  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the text color of the caption.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the text color of the caption.  
   
 ### Remarks  
   
@@ -1111,7 +1111,7 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
  A pointer to a caption bar. The visual manager draws this [CMFCRibbonContextCaption Class](../../mfc/reference/cmfcribboncontextcaption-class.md).  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the color of the text on the caption bar.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the color of the text on the caption bar.  
   
 ### Remarks  
  Override this method in a derived class to customize the appearance of the caption bar for a ribbon category.  
@@ -2134,7 +2134,7 @@ virtual void OnUpdateSystemColors();
  The framework calls this method as a part of processing the WM_SYSCOLORCHANGE message. Override this method in a derived visual manager if you want to execute custom code when the colors change in your application.  
   
 ##  <a name="setdefaultwinxpcolors"></a>  CMFCVisualManagerOffice2003::SetDefaultWinXPColors  
- Specifies whether the visual manager should use native Windows XP theme colors or colors obtained from [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371).  
+ Specifies whether the visual manager should use native Windows XP theme colors or colors obtained from [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor).  
   
 ```  
 static void SetDefaultWinXPColors(BOOL bDefaultWinXPColors = TRUE);

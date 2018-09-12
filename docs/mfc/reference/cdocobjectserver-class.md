@@ -1,7 +1,7 @@
 ---
 title: "CDocObjectServer Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CDocObjectServer", "AFXDOCOB/CDocObjectServer", "AFXDOCOB/CDocObjectServer::CDocObjectServer", "AFXDOCOB/CDocObjectServer::ActivateDocObject", "AFXDOCOB/CDocObjectServer::OnActivateView", "AFXDOCOB/CDocObjectServer::OnApplyViewState", "AFXDOCOB/CDocObjectServer::OnSaveViewState"]
@@ -50,7 +50,7 @@ class CDocObjectServer : public CCmdTarget
   
  To customize your DocObject server, derive your own class from `CDocObjectServer` and override its view setup functions, [OnActivateView](#onactivateview), [OnApplyViewState](#onapplyviewstate), and [OnSaveViewState](#onsaveviewstate). You will need to provide a new instance of your class in response to framework calls.  
   
- For further information on DocObjects, see [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md) and [COleCmdUI](../../mfc/reference/colecmdui-class.md) in the *MFC Reference*. Also see [Internet First Steps: Active Documents](../../mfc/active-documents-on-the-internet.md) and [Active Documents](../../mfc/active-documents-on-the-internet.md).  
+ For further information on DocObjects, see [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md) and [COleCmdUI](../../mfc/reference/colecmdui-class.md) in the *MFC Reference*.  
   
  Also see the following Knowledge Base article:  
   

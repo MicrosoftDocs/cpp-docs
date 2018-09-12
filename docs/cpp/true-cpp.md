@@ -16,7 +16,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 bool-identifier = true ;  
 bool-expression logical-operator true ;  
 ```  
@@ -43,5 +42,5 @@ int main()
 0  
 ```  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)

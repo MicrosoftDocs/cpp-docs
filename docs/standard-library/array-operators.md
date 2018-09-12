@@ -29,17 +29,17 @@ bool operator!=(
 
 ### Parameters
 
-*Ty*
- The type of an element.
+*Ty*<br/>
+The type of an element.
 
-*N*
- The size of the array.
+*N*<br/>
+The size of the array.
 
-*left*
- Left container to compare.
+*left*<br/>
+Left container to compare.
 
-*right*
- Right container to compare.
+*right*<br/>
+Right container to compare.
 
 ### Remarks
 
@@ -102,17 +102,17 @@ bool operator<(
 
 ### Parameters
 
-*Ty*
- The type of an element.
+*Ty*<br/>
+The type of an element.
 
-*N*
- The size of the array.
+*N*<br/>
+The size of the array.
 
-*left*
- Left container to compare.
+*left*<br/>
+Left container to compare.
 
-*right*
- Right container to compare.
+*right*<br/>
+Right container to compare.
 
 ### Remarks
 
@@ -176,17 +176,17 @@ bool operator<=(
 
 ### Parameters
 
-*Ty*
- The type of an element.
+*Ty*<br/>
+The type of an element.
 
-*N*
- The size of the array.
+*N*<br/>
+The size of the array.
 
-*left*
- Left container to compare.
+*left*<br/>
+Left container to compare.
 
-*right*
- Right container to compare.
+*right*<br/>
+Right container to compare.
 
 ### Remarks
 
@@ -250,17 +250,17 @@ bool operator==(
 
 ### Parameters
 
-*Ty*
- The type of an element.
+*Ty*<br/>
+The type of an element.
 
-*N*
- The size of the array.
+*N*<br/>
+The size of the array.
 
-*left*
- Left container to compare.
+*left*<br/>
+Left container to compare.
 
-*right*
- Right container to compare.
+*right*<br/>
+Right container to compare.
 
 ### Remarks
 
@@ -324,17 +324,17 @@ bool operator>(
 
 ### Parameters
 
-*Ty*
- The type of an element.
+*Ty*<br/>
+The type of an element.
 
-*N*
- The size of the array.
+*N*<br/>
+The size of the array.
 
-*left*
- Left container to compare.
+*left*<br/>
+Left container to compare.
 
-*right*
- Right container to compare.
+*right*<br/>
+Right container to compare.
 
 ### Remarks
 
@@ -398,17 +398,17 @@ bool operator>=(
 
 ### Parameters
 
-*Ty*
- The type of an element.
+*Ty*<br/>
+The type of an element.
 
-*N*
- The size of the array.
+*N*<br/>
+The size of the array.
 
-*left*
- Left container to compare.
+*left*<br/>
+Left container to compare.
 
-*right*
- Right container to compare.
+*right*<br/>
+Right container to compare.
 
 ### Remarks
 

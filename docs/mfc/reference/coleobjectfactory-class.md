@@ -116,7 +116,7 @@ COleObjectFactory(
   
 - `afxRegFreeThreading` Sets the threading model in the registry to ThreadingModel=Free.  
   
-     You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](http://msdn.microsoft.com/library/windows/desktop/ms682390) in the Windows SDK for more information on threading model registration.  
+     You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](/windows/desktop/com/inprocserver32) in the Windows SDK for more information on threading model registration.  
   
  *lpszProgID*  
  Pointer to a string containing a verbal program identifier, such as "Microsoft Excel."  
@@ -124,7 +124,7 @@ COleObjectFactory(
 ### Remarks  
  To use the object, however, you must register it.  
   
- For more information, see [CLSID Key](http://msdn.microsoft.com/library/windows/desktop/ms691424) in the Windows SDK.  
+ For more information, see [CLSID Key](/windows/desktop/com/clsid-key-hklm) in the Windows SDK.  
   
 ##  <a name="getclassid"></a>  COleObjectFactory::GetClassID  
  Returns a reference to the OLE class ID this factory represents.  
@@ -137,7 +137,7 @@ REFCLSID GetClassID() const;
  Reference to the OLE class ID this factory represents.  
   
 ### Remarks  
- For more information, see [CLSID Key](http://msdn.microsoft.com/library/windows/desktop/ms691424) in the Windows SDK.  
+ For more information, see [CLSID Key](/windows/desktop/com/clsid-key-hklm) in the Windows SDK.  
   
 ##  <a name="getlicensekey"></a>  COleObjectFactory::GetLicenseKey  
  Requests a unique license key from the control's DLL and stores it in the BSTR pointed to by *pbstrKey*.  

@@ -15,18 +15,17 @@ ms.workload: ["cplusplus"]
 # ConvertStringToBSTR
 **Microsoft Specific**  
   
- Converts a **char \*** value to a `BSTR`.  
+ Converts a `char *` value to a `BSTR`.  
   
 ## Syntax  
   
 ```  
-  
 BSTR __stdcall ConvertStringToBSTR(const char* pSrc)  
 ```  
   
 #### Parameters  
  *pSrc*  
- A **char \*** variable.  
+ A `char *` variable.  
   
 ## Example  
   
@@ -61,5 +60,5 @@ BSTR text: Test
   
  **Lib:** comsuppw.lib or comsuppwd.lib (see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) for more information)  
   
-## See Also  
+## See also  
  [Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)

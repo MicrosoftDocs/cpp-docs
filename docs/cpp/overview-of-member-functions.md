@@ -69,4 +69,3 @@ int main()
 >  Although member functions can be defined either inside a class declaration or separately, no member functions can be added to a class after the class is defined.  
   
  Classes containing member functions can have many declarations, but the member functions themselves must have only one definition in a program. Multiple definitions cause an error message at link time. If a class contains inline function definitions, the function definitions must be identical to observe this "one definition" rule.  
-  

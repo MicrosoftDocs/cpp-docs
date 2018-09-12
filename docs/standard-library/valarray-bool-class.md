@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # valarray&lt;bool&gt; Class
 
-A specialized version of the template class **valarray\<Type>** to elements of type `bool`.
+A specialized version of the template class **valarray\<Type>** to elements of type **bool**.
 
 ## Syntax
 
@@ -61,12 +61,12 @@ int main( )
       cout << vaBool [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The result of the less-than comparison test is the
  valarray<bool>: ( 0 0 1 0 1 0 1 0 1 0 ).
-*\
+*/
 ```
 
 ## Requirements

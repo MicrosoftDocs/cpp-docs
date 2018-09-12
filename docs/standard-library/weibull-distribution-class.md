@@ -49,12 +49,12 @@ class weibull_distribution
 
 ### Parameters
 
-*RealType*
-The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).
+*RealType*<br/>
+The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
-The template class describes a distribution that produces values of a user-specified floating point type, or type `double` if none is provided, distributed according to the Weibull Distribution. The following table links to articles about individual members.
+The template class describes a distribution that produces values of a user-specified floating point type, or type **double** if none is provided, distributed according to the Weibull Distribution. The following table links to articles about individual members.
 
 ||||
 |-|-|-|
@@ -73,7 +73,7 @@ The `operator()` member functions return the next generated value based on the U
 
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).
 
-For detailed information about the Weibull distribution, see the Wolfram MathWorld article [Weibull Distribution](http://go.microsoft.com/fwlink/p/?linkid=401115).
+For detailed information about the Weibull distribution, see the Wolfram MathWorld article [Weibull Distribution](http://mathworld.wolfram.com/WeibullDistribution.html).
 
 ## Example
 
@@ -202,13 +202,13 @@ explicit weibull_distribution(const param_type& parm);
 
 ### Parameters
 
-*a*
+*a*  
 The `a` distribution parameter.
 
-*b*
+*b*  
 The `b` distribution parameter.
 
-*parm*
+*parm*  
 The `param_type` structure used to construct the distribution.
 
 ### Remarks
@@ -237,13 +237,13 @@ struct param_type {
 
 ### Parameters
 
-*a*
+*a*  
 The `a` distribution parameter.
 
-*b*
+*b*  
 The `b` distribution parameter.
 
-*right*
+*right*  
 The `param_type` object to compare to this.
 
 ### Remarks

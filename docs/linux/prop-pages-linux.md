@@ -1,7 +1,7 @@
 ---
-title: "Linux Project Property Pages| Microsoft Docs"
+title: "Linux C++ Project Property Pages in Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/26/2017"
+ms.date: "07/20/2018"
 ms.technology: ["cpp-linux"]
 ms.tgt_pltfrm: "Linux"
 ms.topic: "conceptual"

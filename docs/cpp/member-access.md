@@ -17,7 +17,6 @@ Class member access can be controlled by overloading the member access operator 
 ## Syntax  
   
 ```  
-  
 class-type *operator->()  
 ```  
   
@@ -28,5 +27,5 @@ class-type *operator->()
   
  The **.** member access operator cannot be overloaded.  
   
-## See Also  
+## See also  
  [Operator Overloading](../cpp/operator-overloading.md)

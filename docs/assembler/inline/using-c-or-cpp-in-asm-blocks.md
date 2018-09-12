@@ -1,7 +1,7 @@
 ---
 title: "Using C or C++ in __asm Blocks | Microsoft Docs"
 ms.custom: ""
-ms.date: "06/25/2018"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -47,4 +47,4 @@ Within an `__asm` block, you can specify integer constants with either C notatio
 
 ## See also
 
-[Inline Assembler](../../assembler/inline/inline-assembler.md)
+[Inline Assembler](../../assembler/inline/inline-assembler.md)<br/>

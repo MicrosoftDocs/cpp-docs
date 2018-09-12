@@ -53,7 +53,7 @@ This topic describes all the types of files that are associated with Visual C++ 
 |.HxC|Project|Help project file.|  
 |.ico|Resource|Icon bitmap graphic file.|  
 |.idb|Compiling|The state file, containing dependency information between source files and class definitions, which can be used by the compiler during minimal rebuild and incremental compilation. Use the [/Fd](../build/reference/fd-program-database-file-name.md) compiler option to specify the name of the .idb file. See [/Gm (Enable Minimal Rebuild)](../build/reference/gm-enable-minimal-rebuild.md) for more information.|  
-|.idl|Compiling|An interface definition language file. See [Interface Definition (IDL) File](http://msdn.microsoft.com/library/windows/desktop/aa378712) in the Windows SDK for more information.|  
+|.idl|Compiling|An interface definition language file. See [Interface Definition (IDL) File](/windows/desktop/Rpc/the-interface-definition-language-idl-file) in the Windows SDK for more information.|  
 |.ilk|Linking|Incremental link file. See [/INCREMENTAL](../build/reference/incremental-link-incrementally.md) for more information.|  
 |.map|Linking|A text file containing linker information. Use the [/Fm](../build/reference/fm-name-mapfile.md) compiler option to name the map file. See [/MAP](../build/reference/map-generate-mapfile.md) for more information.|  
 |.mfcribbon-ms|Resource|A resource file that contains the XML code that defines the buttons, controls, and attributes in the ribbon. For more information, see [Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md).|  
@@ -61,7 +61,7 @@ This topic describes all the types of files that are associated with Visual C++ 
 |.pch|Debug|Precompiled header file.|  
 |.rc, .rc2|Resource|[Resource script files](../windows/working-with-resource-files.md) to generate resources.|  
 |.sbr|Compiling|Source browser intermediate file. The input file for [BSCMAKE](../build/reference/bscmake-options.md).|  
-|.sln|Solution|The [solution](http://msdn.microsoft.com/en-us/a45c299d-69f5-4b67-879d-1383417df0a7) file.|  
+|.sln|Solution|The [solution](/visualstudio/ide/solutions-and-projects-in-visual-studio) file.|  
 |.suo|Solution|The solution options file.|  
 |.txt|Resource|A text file, usually the "readme" file.|  
 |.vap|Project|A Visual Studio Analyzer project file.|  

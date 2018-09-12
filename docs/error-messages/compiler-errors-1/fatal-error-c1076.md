@@ -19,7 +19,7 @@ compiler limit : internal heap limit reached; use /Zm to specify a higher limit
   
  To resolve this error:  
   
-1.  Use the [/Zm](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) option to set the compiler memory limit to the value specified in the [C3859](../../error-messages/compiler-errors-2/compiler-error-c3859.md) error message. For more information that includes how to set this value in [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)], see the Remarks section in [/Zm (Specify Precompiled Header Memory Allocation Limit)](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md).  
+1.  Use the [/Zm](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) option to set the compiler memory limit to the value specified in the [C3859](../../error-messages/compiler-errors-2/compiler-error-c3859.md) error message. For more information that includes how to set this value in Visual Studio, see the Remarks section in [/Zm (Specify Precompiled Header Memory Allocation Limit)](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md).  
   
 2.  If you are using the 32-bit hosted compilers on a 64-bit operating system, use the 64-bit hosted compilers instead. For more information, see [How to: Enable a 64-Bit Visual C++ Toolset on the Command Line](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md).  
   

@@ -28,12 +28,12 @@ using remove_cv_t = typename remove_cv<T>::type;
 
 ### Parameters
 
-`T`
- The type to modify.
+*T*<br/>
+The type to modify.
 
 ## Remarks
 
-An instance of `remove_cv<T>` holds a modified-type that is `T1` when `T` is of the form `const T1`, `volatile T1`, or `const volatile T1`, otherwise `T`.
+An instance of `remove_cv<T>` holds a modified-type that is `T1` when *T* is of the form `const T1`, `volatile T1`, or `const volatile T1`, otherwise *T*.
 
 ## Example
 

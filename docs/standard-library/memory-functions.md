@@ -35,8 +35,8 @@ T* addressof(T& Val);
 
 ### Parameters
 
-*Val*
- The object or function for which to obtain the true address.
+*Val*<br/>
+The object or function for which to obtain the true address.
 
 ### Return Value
 
@@ -59,17 +59,17 @@ void* align(
 
 ### Parameters
 
-*Alignment*
- The alignment bound to attempt.
+*Alignment*<br/>
+The alignment bound to attempt.
 
-*Size*
- The size in bytes for the aligned storage.
+*Size*<br/>
+The size in bytes for the aligned storage.
 
-*Ptr*
- The starting address of the available contiguous storage pool to use. This parameter is also an output parameter, and is set to contain the new starting address if the alignment is successful. If `align()` is unsuccessful, this parameter is not modified.
+*Ptr*<br/>
+The starting address of the available contiguous storage pool to use. This parameter is also an output parameter, and is set to contain the new starting address if the alignment is successful. If `align()` is unsuccessful, this parameter is not modified.
 
-*Space*
- The total space available to `align()` to use in creating the aligned storage. This parameter is also an output parameter, and contains the adjusted space left in the storage buffer after the aligned storage and any associated overhead is subtracted.
+*Space*<br/>
+The total space available to `align()` to use in creating the aligned storage. This parameter is also an output parameter, and contains the adjusted space left in the storage buffer after the aligned storage and any associated overhead is subtracted.
 
 If `align()` is unsuccessful, this parameter is not modified.
 
@@ -116,11 +116,11 @@ allocate_shared(Allocator Alloc, Types&&... Args);
 
 ### Parameters
 
-*Alloc*
- The allocator used to create objects.
+*Alloc*<br/>
+The allocator used to create objects.
 
-*Args*
- The zero or more arguments that become the objects.
+*Args*<br/>
+The zero or more arguments that become the objects.
 
 ### Remarks
 
@@ -138,14 +138,14 @@ const_pointer_cast(const shared_ptr<Other>& sp);
 
 ### Parameters
 
-*Ty*
- The type controlled by the returned shared pointer.
+*Ty*<br/>
+The type controlled by the returned shared pointer.
 
-*Other*
- The type controlled by the argument shared pointer.
+*Other*<br/>
+The type controlled by the argument shared pointer.
 
-*Other*
- The argument shared pointer.
+*Other*<br/>
+The argument shared pointer.
 
 ### Remarks
 
@@ -207,8 +207,8 @@ void declare_reachable(void* ptr);
 
 ### Parameters
 
-*ptr*
- A pointer to a reachable, allocated, valid storage area.
+*ptr*<br/>
+A pointer to a reachable, allocated, valid storage area.
 
 ### Remarks
 
@@ -229,11 +229,11 @@ struct default_delete {
 
 ### Parameters
 
-*Ptr*
- Pointer to the object to delete.
+*Ptr*<br/>
+Pointer to the object to delete.
 
 Other
- The type of elements in the array to be deleted.
+The type of elements in the array to be deleted.
 
 ### Remarks
 
@@ -251,14 +251,14 @@ dynamic_pointer_cast(const shared_ptr<Other>& sp);
 
 ### Parameters
 
-*Ty*
- The type controlled by the returned shared pointer.
+*Ty*<br/>
+The type controlled by the returned shared pointer.
 
-*Other*
- The type controlled by the argument shared pointer.
+*Other*<br/>
+The type controlled by the argument shared pointer.
 
-*sp*
- The argument shared pointer.
+*sp*<br/>
+The argument shared pointer.
 
 ### Remarks
 
@@ -311,14 +311,14 @@ D* get_deleter(const shared_ptr<Ty>& sp);
 
 ### Parameters
 
-*D*
- The type of the deleter.
+*D*<br/>
+The type of the deleter.
 
-*Ty*
- The type controlled by the shared pointer.
+*Ty*<br/>
+The type controlled by the shared pointer.
 
-*sp*
- The shared pointer.
+*sp*<br/>
+The shared pointer.
 
 ### Remarks
 
@@ -392,8 +392,8 @@ pair<Type *, ptrdiff_t> get_temporary_buffer(ptrdiff_t count);
 
 ### Parameters
 
-*count*
- The maximum number of elements requested for which memory is to be allocated.
+*count*<br/>
+The maximum number of elements requested for which memory is to be allocated.
 
 ### Return Value
 
@@ -561,20 +561,20 @@ make_unique(Types&&...) = delete;
 
 ### Parameters
 
-*T*
- The type of the object that the `unique_ptr` will point to.
+*T*<br/>
+The type of the object that the `unique_ptr` will point to.
 
-*Types*
- The types of the constructor arguments specified by *Args*.
+*Types*<br/>
+The types of the constructor arguments specified by *Args*.
 
-*Args*
- The arguments to be passed to the constructor of the object of type *T*.
+*Args*<br/>
+The arguments to be passed to the constructor of the object of type *T*.
 
-*Elem*
- An array of elements of type *T*.
+*Elem*<br/>
+An array of elements of type *T*.
 
-*Size*
- The number of elements to allocate space for in the new array.
+*Size*<br/>
+The number of elements to allocate space for in the new array.
 
 ### Remarks
 
@@ -631,11 +631,11 @@ struct owner_less<weak_ptr<Type>>
 
 ### Parameters
 
-*_left*
- A shared or weak pointer.
+*_left*<br/>
+A shared or weak pointer.
 
-*right*
- A shared or weak pointer.
+*right*<br/>
+A shared or weak pointer.
 
 ### Remarks
 
@@ -652,8 +652,8 @@ void return_temporary_buffer(Type* _Pbuf);
 
 ### Parameters
 
-*_Pbuf*
- A pointer to the memory to be deallocated.
+*_Pbuf*<br/>
+A pointer to the memory to be deallocated.
 
 ### Remarks
 
@@ -694,7 +694,7 @@ int main( )
 ```Output
 The number of integers in the array is: 7.
 The number of elements that the allocated memory
- could store is given by: resultPair.second = 7.
+could store is given by: resultPair.second = 7.
 ```
 
 ## <a name="static_pointer_cast"></a>  static_pointer_cast
@@ -709,14 +709,14 @@ static_pointer_cast(const shared_ptr<Other>& sp);
 
 ### Parameters
 
-*Ty*
- The type controlled by the returned shared pointer.
+*Ty*<br/>
+The type controlled by the returned shared pointer.
 
-*Other*
- The type controlled by the argument shared pointer.
+*Other*<br/>
+The type controlled by the argument shared pointer.
 
-*Other*
- The argument shared pointer.
+*Other*<br/>
+The argument shared pointer.
 
 ### Remarks
 
@@ -771,17 +771,17 @@ void swap(weak_ptr<Ty>& left, weak_ptr<Other>& right);
 
 ### Parameters
 
-*Ty*
- The type controlled by the left shared/weak pointer.
+*Ty*<br/>
+The type controlled by the left shared/weak pointer.
 
-*Other*
- The type controlled by the right shared/weak pointer.
+*Other*<br/>
+The type controlled by the right shared/weak pointer.
 
-*left*
- The left shared/weak pointer.
+*left*<br/>
+The left shared/weak pointer.
 
-*right*
- The right shared/weak pointer.
+*right*<br/>
+The right shared/weak pointer.
 
 ### Remarks
 
@@ -884,14 +884,14 @@ ForwardIterator uninitialized_copy(InputIterator first, InputIterator last, Forw
 
 ### Parameters
 
-*first*
- An input iterator addressing the first element in the source range.
+*first*<br/>
+An input iterator addressing the first element in the source range.
 
-*last*
- An input iterator addressing the last element in the source range.
+*last*<br/>
+An input iterator addressing the last element in the source range.
 
-*dest*
- A forward iterator addressing the first element in the destination range.
+*dest*<br/>
+A forward iterator addressing the first element in the destination range.
 
 ### Return Value
 
@@ -992,14 +992,14 @@ ForwardIterator uninitialized_copy_n(
 
 ### Parameters
 
-*first*
- An input iterator that refers to the object to copy.
+*first*<br/>
+An input iterator that refers to the object to copy.
 
-*count*
- A signed or unsigned integer type specifying the number of times to copy the object.
+*count*<br/>
+A signed or unsigned integer type specifying the number of times to copy the object.
 
-*dest*
- A forward iterator that refers to where the new copies go.
+*dest*<br/>
+A forward iterator that refers to where the new copies go.
 
 ### Return Value
 
@@ -1029,14 +1029,14 @@ void uninitialized_fill(ForwardIterator first, ForwardIterator last, const Type&
 
 ### Parameters
 
-*first*
- A forward iterator addressing the first element in the destination range that is to be initiated.
+*first*<br/>
+A forward iterator addressing the first element in the destination range that is to be initiated.
 
-*last*
- A forward iterator addressing the last element in the destination range that is to be initiated.
+*last*<br/>
+A forward iterator addressing the last element in the destination range that is to be initiated.
 
-*val*
- The value to be used to initialize the destination range.
+*val*<br/>
+The value to be used to initialize the destination range.
 
 ### Remarks
 
@@ -1101,14 +1101,14 @@ void uninitialized_fill_n(ForwardIterator first, Size count, const Type& val);
 
 ### Parameters
 
-*first*
- A forward iterator addressing the first element in the destination range to be initiated.
+*first*<br/>
+A forward iterator addressing the first element in the destination range to be initiated.
 
-*count*
- The number of elements to be initialized.
+*count*<br/>
+The number of elements to be initialized.
 
-*val*
- The value to be used to initialize the destination range.
+*val*<br/>
+The value to be used to initialize the destination range.
 
 ### Remarks
 

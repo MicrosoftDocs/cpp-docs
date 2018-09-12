@@ -35,5 +35,4 @@ For more information about alignment, see:
 - [Examples of Structure Alignment](../build/examples-of-structure-alignment.md)
 
 ## See also
-
-[Keywords](../cpp/keywords-cpp.md)
+ [Keywords](../cpp/keywords-cpp.md)

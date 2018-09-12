@@ -45,7 +45,7 @@ The template struct defines the member types
 
 - `reference`: a synonym for `Iterator::reference`.
 
-The partial specializations determine the critical types associated with an object pointer of type **Type \*** or const **Type \***.
+The partial specializations determine the critical types associated with an object pointer of type **Type** <strong>\*</strong> or **const Type** <strong>\*</strong>.
 
 In this implementation you can also use several template functions that do not make use of partial specialization:
 
@@ -106,12 +106,12 @@ int main( )
    function( vc.begin( ), vc.end( ) );
    function( li.begin( ), li.end( ) );
 }
-\* Output:
+/* Output:
 struct std::random_access_iterator_tag
 a a a a a a a a a a
 struct std::bidirectional_iterator_tag
 0 0 0 0 0 0 0 0 0 0
-*\
+*/
 ```
 
 ## Requirements

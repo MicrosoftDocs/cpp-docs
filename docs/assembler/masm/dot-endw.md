@@ -1,7 +1,7 @@
 ---
 title: ".ENDW | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".ENDW"]
@@ -13,16 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .ENDW
-## Syntax  
-  
-```  
-  
-.ENDW  
-  
-```  
-  
-## Remarks  
- See [.WHILE](../../assembler/masm/dot-while.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+## Syntax
+
+> .ENDW
+
+## Remarks
+
+See [.WHILE](../../assembler/masm/dot-while.md).
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

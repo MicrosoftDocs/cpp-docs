@@ -106,15 +106,15 @@ COleCurrency(
   
 - COleCurrency() Constructs a `COleCurrency` object initialized to 0 (zero).  
   
-- COleCurrency(`cySrc`) Constructs a `COleCurrency` object from a [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) value.  
+- COleCurrency(`cySrc`) Constructs a `COleCurrency` object from a [CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy) value.  
   
 - COleCurrency(`curSrc`) Constructs a `COleCurrency` object from an existing `COleCurrency` object. The new object has the same status as the source object.  
   
-- COleCurrency(`varSrc`) Constructs a `COleCurrency` object. Attempts to convert a [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) structure or `COleVariant` object to a currency (VT_CY) value. If this conversion is successful, the converted value is copied into the new `COleCurrency` object. If it is not, the value of the `COleCurrency` object is set to zero (0) and its status to invalid.  
+- COleCurrency(`varSrc`) Constructs a `COleCurrency` object. Attempts to convert a [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) structure or `COleVariant` object to a currency (VT_CY) value. If this conversion is successful, the converted value is copied into the new `COleCurrency` object. If it is not, the value of the `COleCurrency` object is set to zero (0) and its status to invalid.  
   
 - `COleCurrency(`nUnits`, `nFractionalUnits`) Constructs a `COleCurrency` object from the specified numerical components. If the absolute value of the fractional part is greater than 10,000, the appropriate adjustment is made to the units. Note that the units and fractional part are specified by signed long values.  
   
- For more information, see the [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) and [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) entries in the Windows SDK.  
+ For more information, see the [CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy) and [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) entries in the Windows SDK.  
   
 ### Example  
  The following examples show the effects of the zero-parameter and two-parameter constructors:  
@@ -169,11 +169,11 @@ enum CurrencyStatus {
   
  For a brief description of these status values, see the following list:  
   
-- `COleCurrency::valid` Indicates that this `COleCurrency` object is valid.  
+  - `COleCurrency::valid` Indicates that this `COleCurrency` object is valid.  
   
-- `COleCurrency::invalid` Indicates that this `COleCurrency` object is invalid; that is, its value may be incorrect.  
+  - `COleCurrency::invalid` Indicates that this `COleCurrency` object is invalid; that is, its value may be incorrect.  
   
-- `COleCurrency::null` Indicates that this `COleCurrency` object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ NULL.)  
+  - `COleCurrency::null` Indicates that this `COleCurrency` object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ NULL.)  
   
  The status of a `COleCurrency` object is invalid in the following cases:  
   
@@ -187,30 +187,30 @@ enum CurrencyStatus {
   
  For more information on operations that may set the status to invalid, see the following member functions:  
   
-- [COleCurrency](#colecurrency)  
+ - [COleCurrency](#colecurrency)  
   
-- [operator =](#operator_eq)  
+ - [operator =](#operator_eq)  
   
-- [operator + -](#operator_plus_minus)  
+ - [operator + -](#operator_plus_minus)  
   
-- [operator += and -=](#operator_plus_minus_eq)  
+ - [operator += and -=](#operator_plus_minus_eq)  
   
-- [operator * /](#operator_star)  
+ - [operator * /](#operator_star)  
   
-- [operator *= and /=](#operator_star_div_eq)  
+ - [operator *= and /=](#operator_star_div_eq)  
   
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#12](../../mfc/codesnippet/cpp/colecurrency-class_3.cpp)]  
   
 ##  <a name="m_cur"></a>  COleCurrency::m_cur  
- The underlying [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) structure for this `COleCurrency` object.  
+ The underlying [CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy) structure for this `COleCurrency` object.  
   
 ### Remarks  
   
 > [!CAUTION]
 >  Changing the value in the `CURRENCY` structure accessed by the pointer returned by this function will change the value of this `COleCurrency` object. It does not change the status of this `COleCurrency` object.  
   
- For more information, see the [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) entry in the Windows SDK.  
+ For more information, see the [CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy) entry in the Windows SDK.  
   
 ##  <a name="m_status"></a>  COleCurrency::m_status  
  The type of this data member is the enumerated type `CurrencyStatus`, which is defined within the `COleCurrency` class.  
@@ -224,40 +224,40 @@ enum CurrencyStatus{
 ```  
   
 ### Remarks  
- For a brief description of these status values, see the following list:  
+For a brief description of these status values, see the following list:  
   
-- `COleCurrency::valid` Indicates that this `COleCurrency` object is valid.  
+ - `COleCurrency::valid` Indicates that this `COleCurrency` object is valid.  
+      
+ - `COleCurrency::invalid` Indicates that this `COleCurrency` object is invalid; that is, its value may be incorrect.  
+      
+ - `COleCurrency::null` Indicates that this `COleCurrency` object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ NULL.)  
   
-- `COleCurrency::invalid` Indicates that this `COleCurrency` object is invalid; that is, its value may be incorrect.  
+The status of a `COleCurrency` object is invalid in the following cases:  
   
-- `COleCurrency::null` Indicates that this `COleCurrency` object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ NULL.)  
+ - If its value is set from a VARIANT or `COleVariant` value that could not be converted to a currency value.  
+      
+ - If this object has experienced an overflow or underflow during an arithmetic assignment operation, for example `+=` or **\*=**.  
+      
+ - If an invalid value was assigned to this object.  
+      
+ - If the status of this object was explicitly set to invalid using [SetStatus](#setstatus).  
   
- The status of a `COleCurrency` object is invalid in the following cases:  
+For more information on operations that may set the status to invalid, see the following member functions:  
   
--   If its value is set from a VARIANT or `COleVariant` value that could not be converted to a currency value.  
+ - [COleCurrency](#colecurrency)  
+      
+ - [operator =](#operator_eq)  
+      
+ - [operator +, -](#operator_plus_minus)  
+      
+ - [operator +=, -=](#operator_plus_minus_eq)  
+      
+ - [operator */](#operator_star)  
+      
+ - [operator *=, /=](#operator_star_div_eq)  
   
--   If this object has experienced an overflow or underflow during an arithmetic assignment operation, for example `+=` or **\*=**.  
-  
--   If an invalid value was assigned to this object.  
-  
--   If the status of this object was explicitly set to invalid using [SetStatus](#setstatus).  
-  
- For more information on operations that may set the status to invalid, see the following member functions:  
-  
-- [COleCurrency](#colecurrency)  
-  
-- [operator =](#operator_eq)  
-  
-- [operator +, -](#operator_plus_minus)  
-  
-- [operator +=, -=](#operator_plus_minus_eq)  
-  
-- [operator */](#operator_star)  
-  
-- [operator *=, /=](#operator_star_div_eq)  
-  
-    > [!CAUTION]
-    >  This data member is for advanced programming situations. You should use the inline member functions [GetStatus](#getstatus) and [SetStatus](#setstatus). See `SetStatus` for further cautions regarding explicitly setting this data member.  
+> [!CAUTION]
+>  This data member is for advanced programming situations. You should use the inline member functions [GetStatus](#getstatus) and [SetStatus](#setstatus). See `SetStatus` for further cautions regarding explicitly setting this data member.  
   
 ##  <a name="operator_eq"></a>  COleCurrency::operator =  
  These overloaded assignment operators copy the source currency value into this `COleCurrency` object.  
@@ -277,7 +277,7 @@ const COleCurrency& operator=(const COleCurrency& curSrc);
   
 - **operator =(** *varSrc* **)** If the conversion of the `VARIANT` value (or [COleVariant](../../mfc/reference/colevariant-class.md) object) to a currency ( `VT_CY`) is successful, the converted value is copied into this `COleCurrency` object and its status is set to valid. If the conversion is not successful, the value of the `COleCurrency` object is set to 0 and its status to invalid.  
   
- For more information, see the [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) and [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) entries in the Windows SDK.  
+ For more information, see the [CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy) and [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) entries in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#15](../../mfc/codesnippet/cpp/colecurrency-class_4.cpp)]  
@@ -323,7 +323,7 @@ const COleCurrency& operator-=(const COleCurrency& cur);
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#17](../../mfc/codesnippet/cpp/colecurrency-class_6.cpp)]  
   
-##  <a name="operator_star"></a>  COleCurrency::operator * and /  
+##  <a name="operator_star"></a>  COleCurrency::operator \* and /  
  Allow you to scale a `COleCurrency` value by an integral value.  
   
 ```  
@@ -343,7 +343,7 @@ COleCurrency operator/(long nOperand) const;
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#18](../../mfc/codesnippet/cpp/colecurrency-class_7.cpp)]  
   
-##  <a name="operator_star_div_eq"></a>  COleCurrency::operator *=, /=  
+##  <a name="operator_star_div_eq"></a>  COleCurrency::operator \*=, /=  
  Allow you to scale this `COleCurrency` value by an integral value.  
   
 ```  
@@ -423,7 +423,7 @@ throw(COleException*);
 ### Remarks  
  It uses local language specifications (locale IDs) for the meaning of nonnumeric characters in the source string.  
   
- For a discussion of locale ID values, see [Supporting Multiple Languages](http://msdn.microsoft.com/en-us/47dc5add-232c-4268-b977-43e12da81ede).  
+ For a discussion of locale ID values, see [Supporting Multiple Languages](/previous-versions/windows/desktop/automat/supporting-multiple-national-languages).  
   
  If the string was successfully converted to a currency value, the value of this `COleCurrency` object is set to that value and its status to valid.  
   
@@ -505,8 +505,8 @@ enum CurrencyStatus {
   
 - `COleCurrency::null` Indicates that this `COleCurrency` object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ NULL.)  
   
-    > [!CAUTION]
-    >  This function is for advanced programming situations. This function does not alter the data in this object. It will most often be used to set the status to null or invalid. Note that the assignment operator ( [operator =](#operator_eq)) and [SetCurrency](#setcurrency) do set the status to of the object based on the source value(s).  
+> [!CAUTION]
+>  This function is for advanced programming situations. This function does not alter the data in this object. It will most often be used to set the status to null or invalid. Note that the assignment operator ( [operator =](#operator_eq)) and [SetCurrency](#setcurrency) do set the status to of the object based on the source value(s).  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

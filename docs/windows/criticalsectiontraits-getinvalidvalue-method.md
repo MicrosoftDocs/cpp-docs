@@ -13,24 +13,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # CriticalSectionTraits::GetInvalidValue Method
-Specializes a CriticalSection template so that the template is always invalid.  
-  
-## Syntax  
-  
-```  
-inline static Type GetInvalidValue();  
-```  
-  
-## Return Value  
- Always returns a pointer to an invalid critical section.  
-  
-## Remarks  
- The *Type* modifier is defined as `typedef CRITICAL_SECTION* Type;`.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## See Also  
- [CriticalSectionTraits Structure](../windows/criticalsectiontraits-structure.md)
+
+Specializes a **CriticalSection** template so that the template is always invalid.
+
+## Syntax
+
+```cpp
+inline static Type GetInvalidValue();
+```
+
+## Return Value
+
+Always returns a pointer to an invalid critical section.
+
+## Remarks
+
+The `Type` modifier is defined as `typedef CRITICAL_SECTION* Type;`.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## See Also
+
+[CriticalSectionTraits Structure](../windows/criticalsectiontraits-structure.md)

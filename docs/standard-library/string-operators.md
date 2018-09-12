@@ -84,11 +84,11 @@ basic_string<CharType, Traits, Allocator>&& operator+(
 
 ### Parameters
 
-`left`
- A C-style string or an object of type `basic_string` to be concatenated.
+*left*<br/>
+A C-style string or an object of type `basic_string` to be concatenated.
 
-`right`
- A C-style string or an object of type `basic_string` to be concatenated.
+*right*<br/>
+A C-style string or an object of type `basic_string` to be concatenated.
 
 ### Return Value
 
@@ -173,11 +173,11 @@ bool operator!=(
 
 ### Parameters
 
-`left`
- A C-style string or an object of type `basic_string` to be compared.
+*left*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
-`right`
- A C-style string or an object of type `basic_string` to be compared.
+*right*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
 
@@ -264,11 +264,11 @@ bool operator==(
 
 ### Parameters
 
-`left`
- A C-style string or an object of type `basic_string` to be compared.
+*left*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
-`right`
- A C-style string or an object of type `basic_string` to be compared.
+*right*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
 
@@ -355,11 +355,11 @@ bool operator<(
 
 ### Parameters
 
-`left`
- A C-style string or an object of type `basic_string` to be compared.
+*left*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
-`right`
- A C-style string or an object of type `basic_string` to be compared.
+*right*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
 
@@ -451,11 +451,11 @@ bool operator<=(
 
 ### Parameters
 
-`left`
- A C-style string or an object of type `basic_string` to be compared.
+*left*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
-`right`
- A C-style string or an object of type `basic_string` to be compared.
+*right*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
 
@@ -544,15 +544,15 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### Parameters
 
-_Ostr
- The output stream being written to.
+*_Ostr*<br/>
+The output stream being written to.
 
-`str`
- The string to be entered into the output stream.
+*str*<br/>
+The string to be entered into the output stream.
 
 ### Return Value
 
-Writes the value of the specified string to the output stream `_Ostr`.
+Writes the value of the specified string to the output stream *_Ostr*.
 
 ### Remarks
 
@@ -581,11 +581,11 @@ bool operator>(
 
 ### Parameters
 
-`left`
- A C-style string or an object of type `basic_string` to be compared.
+*left*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
-`right`
- A C-style string or an object of type `basic_string` to be compared.
+*right*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
 
@@ -684,11 +684,11 @@ bool operator>=(
 
 ### Parameters
 
-`left`
- A C-style string or an object of type `basic_string` to be compared.
+*left*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
-`right`
- A C-style string or an object of type `basic_string` to be compared.
+*right*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
 
@@ -777,21 +777,21 @@ basic_istream<CharType, Traits>& operator>>(
 
 ### Parameters
 
-`_Istr`
- The input stream used to extract the sequence
+*_Istr*<br/>
+The input stream used to extract the sequence
 
-`right`
- The string that is being extracted from the input stream.
+*right*<br/>
+The string that is being extracted from the input stream.
 
 ### Return Value
 
-Reads the value of the specified string from `_Istr` and returns it into `right`.
+Reads the value of the specified string from *_Istr* and returns it into *right*.
 
 ### Remarks
 
 The operator skips the leading white spaces unless the `skipws` flag is set. It reads all the following characters until the next character is a white space or the end of the file is reached.
 
-The template function overloads **operator>>** to replace the sequence controlled by `right` with a sequence of elements extracted from the stream `_Istr`. Extraction stops:
+The template function overloads **operator>>** to replace the sequence controlled by *right* with a sequence of elements extracted from the stream *_Istr*. Extraction stops:
 
 - At end of file.
 
@@ -801,7 +801,7 @@ After the function extracts `_Istr`. [max_size](../standard-library/basic-string
 
 - After the function extracts an element *ch* for which [use_facet](../standard-library/basic-filebuf-class.md#open)< **ctype**\< **CharType**> >( `getloc`). **is**( **ctype**\< **CharType**>:: **space**, *ch*) is true, in which case the character is put back.
 
-If the function extracts no elements, it calls [setstate](../standard-library/basic-ios-class.md#setstate)( `ios_base::failbit`). In any case, it calls **istr**. **width**(0) and returns \* **this**.
+If the function extracts no elements, it calls [setstate](../standard-library/basic-ios-class.md#setstate)(`ios_base::failbit`). In any case, it calls **istr**. **width**(0) and returns \* **this**.
 
 ### Example
 

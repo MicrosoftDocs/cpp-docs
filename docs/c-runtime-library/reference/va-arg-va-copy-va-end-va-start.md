@@ -114,7 +114,7 @@ int main()
 }
 ```
 
-Notice that **testit** expects its second parameter to be either an **int** or a **char\***. The arguments being passed are 0xffffffff (an **unsigned** **int**, not an **int**) and **NULL** (actually an **int**, not a **char\***). When the program is compiled for native code, it produces this output:
+Notice that **testit** expects its second parameter to be either an **int** or a **char**<strong>\*</strong>. The arguments being passed are 0xffffffff (an **unsigned** **int**, not an **int**) and **NULL** (actually an **int**, not a **char**<strong>\*</strong>). When the program is compiled for native code, it produces this output:
 
 ```Output
 -1

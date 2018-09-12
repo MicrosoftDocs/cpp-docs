@@ -12,26 +12,31 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClassBase Structure
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-struct RuntimeClassBase;  
-```  
-  
-## Remarks  
- Used to detect RuntimeClass in the [Make](../windows/make-function.md) function.  
-  
- RuntimeClassBase is an empty structure.  
-  
-## Inheritance Hierarchy  
- `RuntimeClassBase`  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+struct RuntimeClassBase;
+```
+
+## Remarks
+
+Used to detect `RuntimeClass` in the [Make](../windows/make-function.md) function.
+
+**RuntimeClassBase** is an empty structure.
+
+## Inheritance Hierarchy
+
+`RuntimeClassBase`
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

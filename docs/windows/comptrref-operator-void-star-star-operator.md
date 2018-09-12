@@ -12,23 +12,27 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# ComPtrRef::operator void** Operator
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-operator void**() const;  
-```  
-  
-## Remarks  
- Deletes the current ComPtrRef object, casts the pointer to the interface that was represented by the ComPtrRef object as a pointer-to-pointer-to `void`, and then returns the cast pointer.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [ComPtrRef Class](../windows/comptrref-class.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+# ComPtrRef::operator void\*\* Operator
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+operator void**() const;
+```
+
+## Remarks
+
+Deletes the current **ComPtrRef** object, casts the pointer to the interface that was represented by the **ComPtrRef** object as a pointer-to-pointer-to **void**, and then returns the cast pointer.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[ComPtrRef Class](../windows/comptrref-class.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

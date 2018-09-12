@@ -1,7 +1,7 @@
 ---
 title: "ENDP | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["ENDP"]
@@ -13,19 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ENDP
-Marks the end of procedure *name* previously begun with **PROC**.  
-  
-## Syntax  
-  
-```  
-  
-name  
- ENDP  
-  
-```  
-  
-## Remarks  
- See [PROC](../../assembler/masm/proc.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Marks the end of procedure *name* previously begun with **PROC**.
+
+## Syntax
+
+> *name* ENDP
+
+## Remarks
+
+See [PROC](../../assembler/masm/proc.md).
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

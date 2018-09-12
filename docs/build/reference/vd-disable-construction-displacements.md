@@ -34,7 +34,7 @@ ms.workload: ["cplusplus"]
 ## Remarks  
  These options apply only to C++ code that uses virtual bases.  
   
- [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] implements C++ construction displacement support in situations where virtual inheritance is used. Construction displacements solve the problem created when a virtual function, declared in a virtual base and overridden in a derived class, is called from a constructor during construction of a further derived class.  
+ Visual C++ implements C++ construction displacement support in situations where virtual inheritance is used. Construction displacements solve the problem created when a virtual function, declared in a virtual base and overridden in a derived class, is called from a constructor during construction of a further derived class.  
   
  The problem is that the virtual function may be passed an incorrect `this` pointer as a result of discrepancies between the displacements to the virtual bases of a class and the displacements to its derived classes. The solution provides a single construction displacement adjustment, called a vtordisp field, for each virtual base of a class.  
   

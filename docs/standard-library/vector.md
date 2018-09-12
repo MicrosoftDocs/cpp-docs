@@ -72,16 +72,16 @@ void swap (
 
 ### Parameters
 
-Type
+*Type*  
  The template parameter for the type of data stored in the vector.
 
-Allocator
+*Allocator*  
  The template parameter for the stored allocator object responsible for memory allocation and deallocation.
 
-`left`
+*left*  
  The first (left) vector in a compare operation
 
-`right`
+*right*  
  The second (right) vector in a compare operation.
 
 ### Operators

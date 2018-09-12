@@ -42,13 +42,13 @@ for (auto num : vec)
 
 There are five categories of iterators. In order of increasing power, the categories are:
 
-- **Output**. An output iterator `X` can iterate forward over a sequence by using the ++ operator, and can write an element only once, by using the * operator.
+- **Output**. An output iterator `X` can iterate forward over a sequence by using the ++ operator, and can write an element only once, by using the \* operator.
 
-- **Input**. An input iterator `X` can iterate forward over a sequence by using the ++ operator, and can read an element any number of times by using the * operator. You can compare input iterators by using the ++ and != operators. After you increment any copy of an input iterator, none of the other copies can safely be compared, dereferenced, or incremented thereafter.
+- **Input**. An input iterator `X` can iterate forward over a sequence by using the ++ operator, and can read an element any number of times by using the \* operator. You can compare input iterators by using the ++ and != operators. After you increment any copy of an input iterator, none of the other copies can safely be compared, dereferenced, or incremented thereafter.
 
-- **Forward**. A forward iterator `X` can iterate forward over a sequence using the ++ operator and can read any element or write non-const elements any number of times by using the * operator. You can access element members by using the -> operator and compare forward iterators by using the == and != operators. You can make multiple copies of a forward iterator, each of which can be dereferenced and incremented independently. A forward iterator that is initialized without reference to any container is called a null forward iterator. Null forward iterators always compare equal.
+- **Forward**. A forward iterator `X` can iterate forward over a sequence using the ++ operator and can read any element or write non-const elements any number of times by using the \* operator. You can access element members by using the -> operator and compare forward iterators by using the == and != operators. You can make multiple copies of a forward iterator, each of which can be dereferenced and incremented independently. A forward iterator that is initialized without reference to any container is called a null forward iterator. Null forward iterators always compare equal.
 
-- Bidirectional. A bidirectional iterator `X` can take the place of a forward iterator. You can, however, also decrement a bidirectional iterator, as in --`X`, `X`--, or (`V` = *`X`--). You can access element members and compare bidirectional iterators in the same way as forward iterators.
+- Bidirectional. A bidirectional iterator `X` can take the place of a forward iterator. You can, however, also decrement a bidirectional iterator, as in --`X`, `X`--, or (`V` = \*`X`--). You can access element members and compare bidirectional iterators in the same way as forward iterators.
 
 - **Random access**. A random-access iterator `X` can take the place of a bidirectional iterator. With a random access iterator you can use the subscript operator [] to access elements. You can use the +, -, += and -= operators to move forward or backward a specified number of elements and to calculate the distance between iterators. You can compare bidirectional iterators by using ==, !=, \<, >, \<=, and >=.
 

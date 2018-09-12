@@ -16,25 +16,25 @@ ms.workload: ["cplusplus"]
 
 **Microsoft Specific**
 
-Specifies that a function can only be called from managed code.  Use `__clrcall` for all virtual functions that will only be called from managed code. However this calling convention cannot be used for functions that will be called from native code.
+Specifies that a function can only be called from managed code.  Use **__clrcall** for all virtual functions that will only be called from managed code. However this calling convention cannot be used for functions that will be called from native code.
 
-Use `__clrcall` to improve performance when calling from a managed function to a virtual managed function or from managed function to managed function through pointer.
+Use **__clrcall** to improve performance when calling from a managed function to a virtual managed function or from managed function to managed function through pointer.
 
-Entry points are separate, compiler-generated functions. If a function has both native and managed entry points, one of them will be the actual function with the function implementation. The other function will be a separate function (a thunk) that calls into the actual function and lets the common language runtime perform PInvoke. When marking a function as `__clrcall`, you indicate the function implementation must be MSIL and that the native entry point function will not be generated.
+Entry points are separate, compiler-generated functions. If a function has both native and managed entry points, one of them will be the actual function with the function implementation. The other function will be a separate function (a thunk) that calls into the actual function and lets the common language runtime perform PInvoke. When marking a function as **__clrcall**, you indicate the function implementation must be MSIL and that the native entry point function will not be generated.
 
-When taking the address of a native function if `__clrcall` is not specified, the compiler uses the native entry point. `__clrcall` indicates that the function is managed and there is no need to go through the transition from managed to native. In that case the compiler uses the managed entry point.
+When taking the address of a native function if **__clrcall** is not specified, the compiler uses the native entry point. **__clrcall** indicates that the function is managed and there is no need to go through the transition from managed to native. In that case the compiler uses the managed entry point.
 
-When **/clr** (not **/clr:pure** or **/clr:safe**) is used and `__clrcall` is not used, taking the address of a function always returns the address of the native entry point function. When `__clrcall` is used, the native entry point function is not created, so you get the address of the managed function, not an entry point thunk function. For more information, see [Double Thunking](../dotnet/double-thunking-cpp.md). The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
+When `/clr` (not `/clr:pure` or `/clr:safe`) is used and **__clrcall** is not used, taking the address of a function always returns the address of the native entry point function. When **__clrcall** is used, the native entry point function is not created, so you get the address of the managed function, not an entry point thunk function. For more information, see [Double Thunking](../dotnet/double-thunking-cpp.md). The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
 
-[/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) implies that all functions and function pointers are `__clrcall` and the compiler will not permit a function inside the compiland to be marked anything other than `__clrcall`. When **/clr:pure** is used, `__clrcall` can only be specified on function pointers and external declarations.
+[/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) implies that all functions and function pointers are **__clrcall** and the compiler will not permit a function inside the compiland to be marked anything other than **__clrcall**. When **/clr:pure** is used, **__clrcall** can only be specified on function pointers and external declarations.
 
-You can directly call `__clrcall` functions from existing C++ code that was compiled by using **/clr** as long as that function has an MSIL implementation. `__clrcall` functions cannot be called directly from functions that have inline asm and call CPU-specific intrinisics, for example, even if those functions are compiled with **/clr**.
+You can directly call **__clrcall** functions from existing C++ code that was compiled by using **/clr** as long as that function has an MSIL implementation. **__clrcall** functions cannot be called directly from functions that have inline asm and call CPU-specific intrinisics, for example, even if those functions are compiled with `/clr`.
 
-`__clrcall` function pointers are only meant to be used in the application domain in which they were created.  Instead of passing `__clrcall` function pointers across application domains, use <xref:System.CrossAppDomainDelegate>. For more information, see [Application Domains and Visual C++](../dotnet/application-domains-and-visual-cpp.md).
+**__clrcall** function pointers are only meant to be used in the application domain in which they were created.  Instead of passing **__clrcall** function pointers across application domains, use <xref:System.CrossAppDomainDelegate>. For more information, see [Application Domains and Visual C++](../dotnet/application-domains-and-visual-cpp.md).
 
 ## Example
 
-Note that when a function is declared with `__clrcall`, code will be generated when needed; for example, when function is called.
+Note that when a function is declared with **__clrcall**, code will be generated when needed; for example, when function is called.
 
 ```cpp
 // clrcall2.cpp
@@ -92,6 +92,5 @@ int main() {
 ```
 
 ## See also
-
-- [Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md)
-- [Keywords](../cpp/keywords-cpp.md)
+ [Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md)  
+ [Keywords](../cpp/keywords-cpp.md)

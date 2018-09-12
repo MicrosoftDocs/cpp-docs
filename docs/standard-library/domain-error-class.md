@@ -53,10 +53,10 @@ int main( )
       cerr << "Type: " << typeid(e).name( ) << endl;
    };
 }
-\* Output:
+/* Output:
 Caught: Your domain is in error!
 Type: class std::domain_error
-*\
+*/
 ```
 
 ## Requirements

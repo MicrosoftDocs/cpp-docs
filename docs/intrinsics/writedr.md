@@ -36,7 +36,7 @@ void __writedr(unsigned DebugRegister, unsigned __int64 DebugValue);
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__writedr`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__writedr`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

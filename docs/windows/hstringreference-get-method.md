@@ -12,21 +12,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HStringReference::Get Method
-Retrieves the value of the underlying HSTRING handle.  
-  
-## Syntax  
-  
-```  
+
+Retrieves the value of the underlying HSTRING handle.
+
+## Syntax
+
+```cpp
 HSTRING Get() const throw()  
-```  
-  
-## Return Value  
- The value of the underlying HSTRING handle.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HStringReference Class](../windows/hstringreference-class.md)
+```
+
+## Return Value
+
+The value of the underlying HSTRING handle.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HStringReference Class](../windows/hstringreference-class.md)

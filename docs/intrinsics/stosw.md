@@ -41,7 +41,7 @@ void __stosw( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__stosw`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__stosw`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

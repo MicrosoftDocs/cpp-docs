@@ -222,10 +222,10 @@ ON_OLEVERB(idsVerbName,  memberFxn)
 
 ### Parameters
 
-*idsVerbName*
+*idsVerbName*<br/>
 The string resource ID of the verb's name.
 
-*memberFxn*  
+*memberFxn*<br/>
 The function called by the framework when the verb is invoked.
 
 ### Remarks

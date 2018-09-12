@@ -13,61 +13,69 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CPrimitiveElementTraits Class
-This class provides default methods and functions for a collection class composed of primitive data types.  
-  
-## Syntax  
-  
+
+This class provides default methods and functions for a collection class composed of primitive data types.
+
+## Syntax
+
 ```
 template <typename T>  
 class CPrimitiveElementTraits : public CDefaultElementTraits<T>
-```  
-  
-#### Parameters  
- *T*  
- The type of data to be stored in the collection class object.  
-  
-## Members  
-  
-### Public Typedefs  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[CPrimitiveElementTraits::INARGTYPE](#inargtype)|The data type to use for adding elements to the collection class object.|  
-|[CPrimitiveElementTraits::OUTARGTYPE](#outargtype)|The data type to use for retrieving elements from the collection class object.|  
-  
-## Remarks  
- This class provides default static functions and methods for moving, copying, comparing, and hashing primitive data type elements stored in a collection class object.  
-  
- For more information, see [ATL Collection Classes](../../atl/atl-collection-classes.md).  
-  
-## Inheritance Hierarchy  
- [CDefaultCompareTraits](../../atl/reference/cdefaultcomparetraits-class.md)  
-  
- [CDefaultHashTraits](../../atl/reference/cdefaulthashtraits-class.md)  
-  
- [CElementTraitsBase](../../atl/reference/celementtraitsbase-class.md)  
-  
- [CDefaultElementTraits](../../atl/reference/cdefaultelementtraits-class.md)  
-  
- `CPrimitiveElementTraits`  
-  
-## Requirements  
- **Header:** atlcoll.h  
-  
-##  <a name="inargtype"></a>  CPrimitiveElementTraits::INARGTYPE  
- The data type to use for adding elements to the collection class object.  
-  
+```
+
+#### Parameters
+
+*T*  
+The type of data to be stored in the collection class object.
+
+## Members
+
+### Public Typedefs
+
+|Name|Description|
+|----------|-----------------|
+|[CPrimitiveElementTraits::INARGTYPE](#inargtype)|The data type to use for adding elements to the collection class object.|
+|[CPrimitiveElementTraits::OUTARGTYPE](#outargtype)|The data type to use for retrieving elements from the collection class object.|
+
+## Remarks
+
+This class provides default static functions and methods for moving, copying, comparing, and hashing primitive data type elements stored in a collection class object.
+
+For more information, see [ATL Collection Classes](../../atl/atl-collection-classes.md).
+
+## Inheritance Hierarchy
+
+[CDefaultCompareTraits](../../atl/reference/cdefaultcomparetraits-class.md)
+
+[CDefaultHashTraits](../../atl/reference/cdefaulthashtraits-class.md)
+
+[CElementTraitsBase](../../atl/reference/celementtraitsbase-class.md)
+
+[CDefaultElementTraits](../../atl/reference/cdefaultelementtraits-class.md)
+
+`CPrimitiveElementTraits`
+
+## Requirements
+
+**Header:** atlcoll.h
+
+##  <a name="inargtype"></a>  CPrimitiveElementTraits::INARGTYPE
+
+The data type to use for adding elements to the collection class object.
+
 ```
 typedef T INARGTYPE;
-```  
-  
-##  <a name="outargtype"></a>  CPrimitiveElementTraits::OUTARGTYPE  
- The data type to use for retrieving elements from the collection class object.  
-  
+```
+
+##  <a name="outargtype"></a>  CPrimitiveElementTraits::OUTARGTYPE
+
+The data type to use for retrieving elements from the collection class object.
+
 ```
 typedef T& OUTARGTYPE;
-```  
-  
-## See Also  
- [CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)   
- [Class Overview](../../atl/atl-class-overview.md)
+```
+
+## See Also
+
+[CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)   
+[Class Overview](../../atl/atl-class-overview.md)

@@ -159,7 +159,7 @@ void DumpStatistics() const;
   
 -   total memory currently used by the program (in bytes)  
   
- Free blocks are the number of blocks whose deallocation was delayed if `afxMemDF` was set to `delayFreeMemDF`. For more information, see [afxMemDF](diagnostic-services.md#afxmemdf), in the "MFC Macros and Globals" section. See [Types of Blocks on the Debug Heap](http://msdn.microsoft.com/en-us/db2e7f62-0679-4b39-a23f-26f2c2f407c5) for more information on these block types.  
+ Free blocks are the number of blocks whose deallocation was delayed if `afxMemDF` was set to `delayFreeMemDF`. For more information, see [afxMemDF](diagnostic-services.md#afxmemdf), in the "MFC Macros and Globals" section.  
   
 ### Example  
   The following code should be placed in *projname*App.cpp. Define the following global variables:  

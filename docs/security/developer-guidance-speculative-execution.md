@@ -7,16 +7,16 @@ ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, security", "security [C++]", "security [C++], best practices", "Spectre", "CVE-2017-5753", "Speculative Execution"]
 author: "mamillmsft"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # C++ Developer Guidance for Speculative Execution Side Channels
 
-This article contains guidance for developers to assist with identifying and mitigating speculative execution side channel hardware vulnerabilities in C++ software. These vulnerabilities can disclose sensitive information across trust boundaries and can affect software that runs on processors that support speculative, out-of-order execution of instructions. This class of vulnerabilities was first described in January, 2018 and additional background and guidance can be found in [Microsoft's security advisory](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV180002).
+This article contains guidance for developers to assist with identifying and mitigating speculative execution side channel hardware vulnerabilities in C++ software. These vulnerabilities can disclose sensitive information across trust boundaries and can affect software that runs on processors that support speculative, out-of-order execution of instructions. This class of vulnerabilities was first described in January, 2018 and additional background and guidance can be found in [Microsoft's security advisory](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180002).
 
 The guidance provided by this article is related to the classes of vulnerabilities represented by:
 
-1. CVE-2017-5753, also known as Spectre variant 1. This hardware vulnerability class is related to side channels that can arise due to speculative execution that occurs as a result of a conditional branch misprediction. The Visual C++ compiler in Visual Studio 2017 (starting with version 15.5.5) includes support for the `/Qspectre` switch which provides a compile-time mitigation for a limited set of potentially vulnerable coding patterns related to CVE-2017-5753. The documentation for the [/Qspectre](https://docs.microsoft.com/en-us/cpp/build/reference/qspectre) flag provides more information on its effects and usage. 
+1. CVE-2017-5753, also known as Spectre variant 1. This hardware vulnerability class is related to side channels that can arise due to speculative execution that occurs as a result of a conditional branch misprediction. The Visual C++ compiler in Visual Studio 2017 (starting with version 15.5.5) includes support for the `/Qspectre` switch which provides a compile-time mitigation for a limited set of potentially vulnerable coding patterns related to CVE-2017-5753. The documentation for the [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) flag provides more information on its effects and usage. 
 
 2. CVE-2018-3639, also known as [Speculative Store Bypass (SSB)](https://aka.ms/sescsrdssb). This hardware vulnerability class is related to side channels that can arise due to speculative execution of a load ahead of a dependent store as a result of a memory access misprediction.
 
@@ -169,7 +169,7 @@ unsigned char WriteSlot(unsigned int untrusted_index, void *ptr) {
 }
 ```
 
-It should be noted that both of these examples involve speculative modification of stack-allocated indirect branch pointers. It is possible that speculative modification could also occur for global variables, heap-allocated memory, and even read-only memory on some CPUs. For stack-allocated memory, the Visual C++ compiler already takes steps to make it more difficult to speculatively modify stack-allocated indirect branch targets, such as by reordering local variables such that buffers are placed adjacent to a security cookie as part of the [/GS](https://docs.microsoft.com/en-us/cpp/build/reference/gs-buffer-security-check) compiler security feature.
+It should be noted that both of these examples involve speculative modification of stack-allocated indirect branch pointers. It is possible that speculative modification could also occur for global variables, heap-allocated memory, and even read-only memory on some CPUs. For stack-allocated memory, the Visual C++ compiler already takes steps to make it more difficult to speculatively modify stack-allocated indirect branch targets, such as by reordering local variables such that buffers are placed adjacent to a security cookie as part of the [/GS](https://docs.microsoft.com/cpp/build/reference/gs-buffer-security-check) compiler security feature.
 
 ## Speculative type confusion
 
@@ -353,6 +353,6 @@ Another technique that can be used to mitigate speculative execution side channe
 
 ## See Also
 
-[Guidance to mitigate speculative execution side-channel vulnerabilities](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV180002)
+[Guidance to mitigate speculative execution side-channel vulnerabilities](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180002)
 
 [Mitigating speculative execution side channel hardware vulnerabilities](https://blogs.technet.microsoft.com/srd/2018/03/15/mitigating-speculative-execution-side-channel-hardware-vulnerabilities/)

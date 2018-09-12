@@ -27,7 +27,7 @@ void __int2c(void);
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__int2c`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__int2c`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

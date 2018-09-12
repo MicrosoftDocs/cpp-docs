@@ -28,12 +28,12 @@ using remove_pointer_t = typename remove_pointer<T>::type;
 
 ### Parameters
 
-`T`
- The type to modify.
+*T*<br/>
+The type to modify.
 
 ## Remarks
 
-An instance of `remove_pointer<T>` holds a modified-type that is `T1` when `T` is of the form `T1*`, `T1* const`, `T1* volatile`, or `T1* const volatile`, otherwise `T`.
+An instance of `remove_pointer<T>` holds a modified-type that is `T1` when *T* is of the form `T1*`, `T1* const`, `T1* volatile`, or `T1* const volatile`, otherwise *T*.
 
 ## Example
 

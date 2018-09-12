@@ -28,12 +28,12 @@ using remove_volatile_t = typename remove_volatile<T>::type;
 
 ### Parameters
 
-`T`
- The type to modify.
+*T*<br/>
+The type to modify.
 
 ## Remarks
 
-An instance of `remove_volatile<T>` holds a modified-type that is `T1` when `T` is of the form `volatile T1`, otherwise `T`.
+An instance of `remove_volatile<T>` holds a modified-type that is `T1` when *T* is of the form `volatile T1`, otherwise *T*.
 
 ## Example
 

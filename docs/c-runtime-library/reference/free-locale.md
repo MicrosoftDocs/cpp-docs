@@ -29,7 +29,7 @@ void _free_locale(
 
 ### Parameters
 
-*locale*
+*locale*<br/>
 Locale object to free.
 
 ## Remarks

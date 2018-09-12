@@ -11,7 +11,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Types and Storage
-This section describes the enumeration and storage of data types for the [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] architecture.  
+This section describes the enumeration and storage of data types for the x64 architecture.  
   
 -   [Scalar Types](../build/scalar-types.md)  
   

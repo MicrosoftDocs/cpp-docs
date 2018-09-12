@@ -24,15 +24,15 @@ expression % expression
 ## Remarks  
  The multiplicative operators are:  
   
--   Multiplication (**\***)  
+-   Multiplication (<strong>\*</strong>)  
   
 -   Division (**/**)  
   
--   Modulus (remainder from division) (`%`)  
+-   Modulus (remainder from division) (**%**)  
   
  These binary operators have left-to-right associativity.  
   
- The multiplicative operators take operands of arithmetic types. The modulus operator (`%`) has a stricter requirement in that its operands must be of integral type. (To get the remainder of a floating-point division, use the run-time function, [fmod](../c-runtime-library/reference/fmod-fmodf.md).) The conversions covered in [Standard Conversions](standard-conversions.md) are applied to the operands, and the result is of the converted type.  
+ The multiplicative operators take operands of arithmetic types. The modulus operator (**%**) has a stricter requirement in that its operands must be of integral type. (To get the remainder of a floating-point division, use the run-time function, [fmod](../c-runtime-library/reference/fmod-fmodf.md).) The conversions covered in [Standard Conversions](standard-conversions.md) are applied to the operands, and the result is of the converted type.  
   
  The multiplication operator yields the result of multiplying the first operand by the second.  
   
@@ -77,7 +77,7 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C Multiplicative Operators](../c-language/c-multiplicative-operators.md)

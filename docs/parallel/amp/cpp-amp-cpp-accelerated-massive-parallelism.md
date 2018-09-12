@@ -28,16 +28,13 @@ C++ AMP (C++ Accelerated Massive Parallelism) accelerates the execution of your 
 |[Walkthrough: Debugging a C++ AMP Application](../../parallel/amp/walkthrough-debugging-a-cpp-amp-application.md)|Explains how to create and debug an application that uses parallel reduction to sum up a large array of integers.|  
   
 ## Reference  
- [Reference (C++ AMP)](../../parallel/amp/reference/reference-cpp-amp.md)  
-  
- [tile_static Keyword](../../cpp/tile-static-keyword.md)  
-  
- [restrict (C++ AMP)](../../cpp/restrict-cpp-amp.md)  
+
+[Reference (C++ AMP)](../../parallel/amp/reference/reference-cpp-amp.md)    
+[tile_static Keyword](../../cpp/tile-static-keyword.md)    
+[restrict (C++ AMP)](../../cpp/restrict-cpp-amp.md)  
   
 ## Other Resources  
- [Parallel Programming in Native Code Blog](http://go.microsoft.com/fwlink/p/?linkid=238472)  
-  
- [C++ AMP sample projects for download](http://go.microsoft.com/fwlink/p/?linkid=248508)  
-  
- [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/p/?linkid=253987&clcid=0x409)
-
+ 
+[Parallel Programming in Native Code Blog](http://go.microsoft.com/fwlink/p/?linkid=238472)  
+[C++ AMP sample projects for download](http://go.microsoft.com/fwlink/p/?linkid=248508)  
+[Analyzing C++ AMP Code with the Concurrency Visualizer](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)

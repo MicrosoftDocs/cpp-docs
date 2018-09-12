@@ -17,7 +17,7 @@ This topic describes dynasets and discusses their [availability](#_core_availabi
 > [!NOTE]
 >  This topic applies to the MFC ODBC classes, including [CRecordset](../../mfc/reference/crecordset-class.md). For information about dynasets in the DAO classes, see [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md). With DAO, you can open dynaset-type recordsets.  
   
- A dynaset is a recordset with dynamic properties. During its lifetime, a recordset object in dynaset mode (usually called a dynaset) stays synchronized with the data source in the following way. In a multiuser environment, other users might edit or delete records that are in your dynaset or add records to the table your dynaset represents. Records your application adds to or deletes from the recordset are reflected in your dynaset. Records that other users add to the table will not be reflected in your dynaset until you rebuild the dynaset by calling its **Requery** member function. When other users delete records, MFC code skips over the deletions in your recordset. Other users' editing changes to existing records are reflected in your dynaset as soon as you scroll to the affected record.  
+ A dynaset is a recordset with dynamic properties. During its lifetime, a recordset object in dynaset mode (usually called a dynaset) stays synchronized with the data source in the following way. In a multiuser environment, other users might edit or delete records that are in your dynaset or add records to the table your dynaset represents. Records your application adds to or deletes from the recordset are reflected in your dynaset. Records that other users add to the table will not be reflected in your dynaset until you rebuild the dynaset by calling its `Requery` member function. When other users delete records, MFC code skips over the deletions in your recordset. Other users' editing changes to existing records are reflected in your dynaset as soon as you scroll to the affected record.  
   
  Similarly, edits you make to records in a dynaset are reflected in dynasets in use by other users. Records you add are not reflected in other users' dynasets until they requery their dynasets. Records you delete are marked as "deleted" in other users' recordsets. If you have multiple connections to the same database (multiple `CDatabase` objects), recordsets associated with those connections have the same status as the recordsets of other users.  
   
@@ -26,10 +26,10 @@ This topic describes dynasets and discusses their [availability](#_core_availabi
 > [!NOTE]
 >  To use dynasets, you must have an ODBC driver for your data source that supports dynasets and the ODBC cursor library must not be loaded. For more information, see [Availability of Dynasets](#_core_availability_of_dynasets).  
   
- To specify that a recordset is a dynaset, pass **CRecordset::dynaset** as the first parameter to the **Open** member function of your recordset object.  
+ To specify that a recordset is a dynaset, pass `CRecordset::dynaset` as the first parameter to the `Open` member function of your recordset object.  
   
 > [!NOTE]
->  For updatable dynasets, your ODBC driver must support either positioned update statements or the **::SQLSetPos** ODBC API function. If both are supported, MFC uses **::SQLSetPos** for efficiency.  
+>  For updatable dynasets, your ODBC driver must support either positioned update statements or the `::SQLSetPos` ODBC API function. If both are supported, MFC uses `::SQLSetPos` for efficiency.  
   
 ##  <a name="_core_availability_of_dynasets"></a> Availability of Dynasets  
  The MFC database classes support dynasets if the following requirements are met:  
@@ -42,17 +42,17 @@ This topic describes dynasets and discusses their [availability](#_core_availabi
   
 -   The ODBC driver for your data source must support keyset-driven cursors.  
   
-     Keyset-driven cursors manage data from a table by getting and storing a set of keys. The keys are used to obtain current data from the table when the user scrolls onto a particular record. To determine whether your driver provides this support, call the **::SQLGetInfo** ODBC API function with the **SQL_SCROLL_OPTIONS** parameter.  
+     Keyset-driven cursors manage data from a table by getting and storing a set of keys. The keys are used to obtain current data from the table when the user scrolls onto a particular record. To determine whether your driver provides this support, call the `::SQLGetInfo` ODBC API function with the *SQL_SCROLL_OPTIONS* parameter.  
   
-     If you try to open a dynaset without keyset support, you get a `CDBException` with the return code value **AFX_SQL_ERROR_DYNASET_NOT_SUPPORTED**.  
+     If you try to open a dynaset without keyset support, you get a `CDBException` with the return code value AFX_SQL_ERROR_DYNASET_NOT_SUPPORTED.  
   
 -   The ODBC driver for your data source must support extended fetching.  
   
-     Extended fetching is the ability to scroll backward as well as forward over the resulting records of your SQL query. To determine whether your driver supports this ability, call the **::SQLGetFunctions** ODBC API function with the **SQL_API_SQLEXTENDEDFETCH** parameter.  
+     Extended fetching is the ability to scroll backward as well as forward over the resulting records of your SQL query. To determine whether your driver supports this ability, call the `::SQLGetFunctions` ODBC API function with the *SQL_API_SQLEXTENDEDFETCH* parameter.  
   
- If you want updateable dynasets (or snapshots, for that matter), your ODBC driver must also support either the **::SQLSetPos** ODBC API function or positioned updates. The **::SQLSetPos** function allows MFC to update the data source without sending SQL statements. If this support is available, MFC uses it in preference to making updates using SQL. To determine whether your driver supports **::SQLSetPos**, call **::SQLGetInfo** with the **SQL_POS_OPERATIONS** parameter.  
+ If you want updateable dynasets (or snapshots, for that matter), your ODBC driver must also support either the `::SQLSetPos` ODBC API function or positioned updates. The `::SQLSetPos` function allows MFC to update the data source without sending SQL statements. If this support is available, MFC uses it in preference to making updates using SQL. To determine whether your driver supports `::SQLSetPos`, call `::SQLGetInfo` with the *SQL_POS_OPERATIONS* parameter.  
   
- Positioned updates use SQL syntax (of the form **WHERE CURRENT OF** \<cursorname>) to identify a particular row in the table on the data source. To determine whether your driver supports positioned updates, call **::SQLGetInfo** with the **SQL_POSITIONED_STATEMENTS** parameter.  
+ Positioned updates use SQL syntax (of the form **WHERE CURRENT OF** \<cursorname>) to identify a particular row in the table on the data source. To determine whether your driver supports positioned updates, call `::SQLGetInfo` with the *SQL_POSITIONED_STATEMENTS* parameter.  
   
  Generally, MFC dynasets (but not forward-only recordsets) require an ODBC driver with level 2 API conformance. If the driver for your data source conforms to the level 1 API set, you can still use both updateable and read-only snapshots and forward-only recordsets, but not dynasets. However, a level 1 driver can support dynasets if it supports extended fetching and keyset-driven cursors. For more information about ODBC conformance levels, see [ODBC](../../data/odbc/odbc-basics.md).  
   

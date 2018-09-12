@@ -25,19 +25,19 @@ class stack
 
 ### Parameters
 
-*Type*
- The element data type to be stored in the stack.
+*Type*<br/>
+The element data type to be stored in the stack.
 
-`Container`
- The type of the underlying container used to implement the stack. The default value is the class `deque`*\<Type>*.
+*Container*<br/>
+The type of the underlying container used to implement the stack. The default value is the class `deque`*\<Type>*.
 
 ## Remarks
 
-The elements of class **Type** stipulated in the first template parameter of a stack object are synonymous with [value_type](#value_type) and must match the type of element in the underlying container class **Container** stipulated by the second template parameter. The **Type** must be assignable, so that it is possible to copy objects of that type and to assign values to variables of that type.
+The elements of class `Type` stipulated in the first template parameter of a stack object are synonymous with [value_type](#value_type) and must match the type of element in the underlying container class `Container` stipulated by the second template parameter. The `Type` must be assignable, so that it is possible to copy objects of that type and to assign values to variables of that type.
 
-Suitable underlying container classes for stack include [deque](../standard-library/deque-class.md), [list class](../standard-library/list-class.md), and [vector class](../standard-library/vector-class.md), or any other sequence container that supports the operations of **back**, `push_back`, and `pop_back`. The underlying container class is encapsulated within the container adaptor, which exposes only the limited set of the sequence container member functions as a public interface.
+Suitable underlying container classes for stack include [deque](../standard-library/deque-class.md), [list class](../standard-library/list-class.md), and [vector class](../standard-library/vector-class.md), or any other sequence container that supports the operations of `back`, `push_back`, and `pop_back`. The underlying container class is encapsulated within the container adaptor, which exposes only the limited set of the sequence container member functions as a public interface.
 
-The stack objects are equality comparable if and only if the elements of class **Type** are equality comparable and are less-than comparable if and only if the elements of class **Type** are less-than comparable.
+The stack objects are equality comparable if and only if the elements of class `Type` are equality comparable and are less-than comparable if and only if the elements of class `Type` are less-than comparable.
 
 - The stack class supports a last-in, first-out (LIFO) data structure. A good analogue to keep in mind would be a stack of plates. Elements (plates) may be inserted, inspected, or removed only from the top of the stack, which is the last element at the end of the base container. The restriction to accessing only the top element is the reason for using the stack class.
 
@@ -204,8 +204,8 @@ void push(const Type& val);
 
 ### Parameters
 
-`val`
- The element added to the top of the stack.
+*val*<br/>
+The element added to the top of the stack.
 
 ### Remarks
 
@@ -312,8 +312,8 @@ explicit stack(const container_type& right);
 
 ### Parameters
 
-`right`
- The container of which the constructed stack is to be a copy.
+*right*<br/>
+The container of which the constructed stack is to be a copy.
 
 ### Example
 
@@ -372,7 +372,7 @@ A reference to the last element in the container at the top of the stack.
 
 The stack must be nonempty to apply the member function. The top of the stack is the position occupied by the most recently added element and is the last element at the end of the container.
 
-If the return value of **top** is assigned to a `const_reference`, the stack object cannot be modified. If the return value of **top** is assigned to a **reference**, the stack object can be modified.
+If the return value of `top` is assigned to a `const_reference`, the stack object cannot be modified. If the return value of `top` is assigned to a `reference`, the stack object can be modified.
 
 ### Example
 

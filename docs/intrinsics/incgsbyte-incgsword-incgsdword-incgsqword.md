@@ -42,10 +42,10 @@ void __incgsqword( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__incgsbyte`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__incgsword`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__incgsdword`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__incgsqword`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__incgsbyte`|x64|  
+|`__incgsword`|x64|  
+|`__incgsdword`|x64|  
+|`__incgsqword`|x64|  
   
 ## Remarks  
  These intrinsics are only available in kernel mode, and the routines are only available as intrinsics.  

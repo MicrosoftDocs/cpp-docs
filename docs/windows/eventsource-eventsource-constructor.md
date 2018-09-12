@@ -13,18 +13,20 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventSource::EventSource Constructor
-Initializes a new instance of the EventSource class.  
-  
-## Syntax  
-  
-```  
-EventSource();  
-```  
-  
-## Requirements  
- **Header:** event.h  
-  
- **Namespace:** Microsoft::WRL
- 
- ## See Also
- [EventSource Class](../windows/eventsource-class.md)
+
+Initializes a new instance of the **EventSource** class.
+
+## Syntax
+
+```cpp
+EventSource();
+```
+
+## Requirements
+
+**Header:** event.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+[EventSource Class](../windows/eventsource-class.md)

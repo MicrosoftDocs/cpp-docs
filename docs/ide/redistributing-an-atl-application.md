@@ -38,7 +38,5 @@ filename /regserver
   
  where `filename` is the name of the executable file.  
   
- For OLE DB Templates applications, ensure that the target computer has the latest versions of Microsoft Data Access Components (MDAC) files. For more information, see [Redistributing Database Support Files](../ide/redistributing-database-support-files.md).  
-  
 ## See Also  
  [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md)

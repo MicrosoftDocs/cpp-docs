@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Avoiding Problem Areas with Multithread Programs
-There are several problems you might encounter in creating, linking, or executing a multithread C program. Some of the more common problems are described in the following table. (For a similar discussion from the MFC point of view, see [Multithreading: Programming Tips](../parallel/multithreading-programming-tips.md).)  
+There are several problems you might encounter in creating, linking, or executing a multithread C program. Some of the more common problems are described in the following table. (For a similar discussion from the MFC point of view, see [Multithreading: Programming Tips](multithreading-programming-tips.md).)  
   
 |Problem|Probable cause|  
 |-------------|--------------------|  
@@ -20,4 +20,5 @@ There are several problems you might encounter in creating, linking, or executin
 |Your program generates numerous compile and link errors.|You can eliminate many potential problems by setting the compiler's warning level to one of its highest values and heeding the warning messages. By using the level 3 or level 4 warning level options, you can detect unintentional data conversions, missing function prototypes, and use of non-ANSI features.|  
   
 ## See Also  
- [Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)
+
+[Multithreading with C and Win32](multithreading-with-c-and-win32.md)

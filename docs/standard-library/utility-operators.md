@@ -29,11 +29,11 @@ constexpr bool operator!=(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-`left`
- An object of type **pair.**
+*left*  
+An object of type `pair`.
 
-`right`
- An object of type `pair`.
+*right*  
+An object of type `pair`.
 
 ### Return Value
 
@@ -101,11 +101,11 @@ constexpr bool operator==(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-`left`
- An object of type **pair.**
+*left*<br/>
+An object of type `pair`.
 
-`right`
- An object of type `pair`.
+*right*<br/>
+An object of type `pair`.
 
 ### Return Value
 
@@ -164,11 +164,11 @@ constexpr bool operator<(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-`left`
- An object of type `pair` on the left side of the operator.
+*left*  
+An object of type `pair` on the left side of the operator.
 
-`right`
- An object of type `pair` on the right side of the operator.
+*right*  
+An object of type `pair` on the right side of the operator.
 
 ### Return Value
 
@@ -176,7 +176,7 @@ constexpr bool operator<(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Remarks
 
-The `left` `pair` object is said to be strictly less than the `right` `pair` object if `left` is less than and not equal to `right`.
+The `left` `pair` object is said to be strictly less than the `right` `pair` object if *left* is less than and not equal to *right*.
 
 In a comparison of pairs, the values' first elements of the two pairs have the highest priority. If they differ, then the result of their comparison is taken as the result of the comparison of the pair. If the values of the first elements are not different, then the values of the second elements are compared and the result of their comparison is taken as the result of the comparison of the pair.
 
@@ -241,11 +241,11 @@ constexpr bool operator<=(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-`left`
- An object of type `pair` on the left side of the operator.
+*left*  
+An object of type `pair` on the left side of the operator.
 
-`right`
- An object of type `pair` on the right side of the operator.
+*right*  
+An object of type `pair` on the right side of the operator.
 
 ### Return Value
 
@@ -326,11 +326,11 @@ constexpr bool operator>(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-`left`
- An object of type `pair` on the left side of the operator.
+*left*  
+An object of type `pair` on the left side of the operator.
 
-`right`
- An object of type `pair` on the right side of the operator.
+*right*  
+An object of type `pair` on the right side of the operator.
 
 ### Return Value
 
@@ -338,7 +338,7 @@ constexpr bool operator>(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Remarks
 
-The `left` `pair` object is said to be strictly greater than the `right` `pair` object if `left` is greater than and not equal to `right`.
+The `left` `pair` object is said to be strictly greater than the `right` `pair` object if *left* is greater than and not equal to *right*.
 
 In a comparison of pairs, the values' first elements of the two pairs have the highest priority. If they differ, then the result of their comparison is taken as the result of the comparison of the pair. If the values of the first elements are not different, then the values of the second elements are compared and the result of their comparison is taken as the result of the comparison of the pair.
 
@@ -413,11 +413,11 @@ constexpr bool operator>=(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-`left`
- An object of type `pair` on the left side of the operator.
+*left*  
+An object of type `pair` on the left side of the operator.
 
-`right`
- An object of type `pair` on the right side of the operator.
+*right*  
+An object of type `pair` on the right side of the operator.
 
 ### Return Value
 

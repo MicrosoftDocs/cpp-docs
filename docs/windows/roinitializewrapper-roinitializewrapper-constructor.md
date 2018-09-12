@@ -12,25 +12,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RoInitializeWrapper::RoInitializeWrapper Constructor
-Initializes a new instance of the RoInitializeWrapper class.  
-  
-## Syntax  
-  
-```cpp  
+
+Initializes a new instance of the **RoInitializeWrapper** class.
+
+## Syntax
+
+```cpp
 RoInitializeWrapper(   RO_INIT_TYPE flags)  
-```  
-  
-#### Parameters  
- `flags`  
- One of the RO_INIT_TYPE enumerations, which specifies the support provided by the Windows Runtime.  
-  
-## Remarks  
- The RoInitializeWrapper class invokes Windows::Foundation::Initialize(*flags*).  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HandleT Class](../windows/handlet-class.md)
+```
+
+### Parameters
+
+*flags*  
+One of the RO_INIT_TYPE enumerations, which specifies the support provided by the Windows Runtime.
+
+## Remarks
+
+The **RoInitializeWrapper** class invokes `Windows::Foundation::Initialize(flags)`.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HandleT Class](../windows/handlet-class.md)

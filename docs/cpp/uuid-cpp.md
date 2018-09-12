@@ -20,7 +20,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 __declspec( uuid("ComObjectGUID") ) declarator  
 ```  
   
@@ -38,6 +37,6 @@ struct __declspec(uuid("{00020400-0000-0000-c000-000000000046}")) IDispatch;
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [__declspec](../cpp/declspec.md)   
  [Keywords](../cpp/keywords-cpp.md)

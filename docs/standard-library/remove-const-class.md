@@ -30,12 +30,12 @@ using remove_const_t = typename remove_const<T>::type;
 
 ### Parameters
 
-`T`
- The type to modify.
+*T*<br/>
+The type to modify.
 
 ## Remarks
 
-An instance of `remove_const<T>` holds a modified-type that is `T1` when `T` is of the form `const T1`, otherwise `T`.
+An instance of `remove_const<T>` holds a modified-type that is `T1` when *T* is of the form `const T1`, otherwise *T*.
 
 ## Example
 

@@ -13,30 +13,36 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HandleT::operator= Operator
-Moves the value of the specified HandleT object to the current HandleT object.  
-  
-## Syntax  
-  
-```  
-HandleT& operator=(  
-   _Inout_ HandleT&& h  
-);  
-```  
-  
-#### Parameters  
- `h`  
- An rvalue-reference to a handle.  
-  
-## Return Value  
- A reference to the current HandleT object.  
-  
-## Remarks  
- This operation invalidates the HandleT object specified by parameter `h`.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HandleT Class](../windows/handlet-class.md)
+
+Moves the value of the specified **HandleT** object to the current **HandleT** object.
+
+## Syntax
+
+```cpp
+HandleT& operator=(
+   _Inout_ HandleT&& h
+);
+```
+
+### Parameters
+
+*h*  
+An rvalue-reference to a handle.
+
+## Return Value
+
+A reference to the current **HandleT** object.
+
+## Remarks
+
+This operation invalidates the **HandleT** object specified by parameter *h*.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HandleT Class](../windows/handlet-class.md)

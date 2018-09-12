@@ -20,9 +20,7 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 bool operator!( ) const throw( );  
-  
 ```  
   
 ## Return Value  
@@ -30,5 +28,5 @@ bool operator!( ) const throw( );
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_bstr_t Class](../cpp/bstr-t-class.md)

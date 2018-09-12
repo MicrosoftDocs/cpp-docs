@@ -1,7 +1,7 @@
 ---
 title: "TEXTEQU | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["TEXTEQU"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # TEXTEQU
-Assigns *textitem* to *name*. The *textitem* can be a literal string, a constant preceded by a `%`, or the string returned by a macro function.  
-  
-## Syntax  
-  
-```  
-  
-name TEXTEQU [[textitem]]  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Assigns *textitem* to *name*. The *textitem* can be a literal string, a constant preceded by a `%`, or the string returned by a macro function.
+
+## Syntax
+
+> name TEXTEQU [[textitem]]
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

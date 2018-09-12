@@ -13,27 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::FireProgress Method
-Invokes the current progress event handler.  
-  
-## Syntax  
-  
-```  
-void FireProgress(  
-   const typename ProgressTraits::Arg2Type arg  
-);  
-```  
-  
-#### Parameters  
- `arg`  
- The event handler method to invoke.  
-  
-## Remarks  
- `ProgressTraits` is derived from [ArgTraitsHelper Structure](../windows/argtraitshelper-structure.md).  
-  
-## Requirements  
- **Header:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [AsyncBase Class](../windows/asyncbase-class.md)
+
+Invokes the current progress event handler.
+
+## Syntax
+
+```cpp
+void FireProgress(
+   const typename ProgressTraits::Arg2Type arg
+);
+```
+
+### Parameters
+
+*arg*  
+The event handler method to invoke.
+
+## Remarks
+
+`ProgressTraits` is derived from [ArgTraitsHelper Structure](../windows/argtraitshelper-structure.md).
+
+## Requirements
+
+**Header:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[AsyncBase Class](../windows/asyncbase-class.md)

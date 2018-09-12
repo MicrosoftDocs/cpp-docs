@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "data-storage"]
 # Traversing a Simple Rowset
 The following example shows a quick and easy database access that does not involve commands. The following consumer code, in an ATL project, retrieves records from a table called *Artists* in a Microsoft Access database using the Microsoft OLE DB Provider for ODBC. The code creates a [CTable](../../data/oledb/ctable-class.md) table object with an accessor based on the user record class `CArtists`. It opens a connection, opens a session on the connection, and opens the table on the session.  
   
-```  
+```cpp  
 #include <atldbcli.h>  
   
 CDataSource connection;  
@@ -40,7 +40,7 @@ while (artists.MoveNext() == S_OK)
   
  The user record, `CArtists`, looks like this:  
   
-```  
+```cpp  
 class CArtists  
 {  
 public:  

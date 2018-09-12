@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 This note describes the MFC routines that support mapping Windows object handles to C++ objects.  
   
 ## The Problem  
- Windows objects are typically represented by various [HANDLE](http://msdn.microsoft.com/library/windows/desktop/aa383751) objects The MFC classes wrap Windows object handles with C++ objects. The handle wrapping functions of the MFC class library let you find the C++ object that is wrapping the Windows object that has a particular handle. However, sometimes an object does not have a C++ wrapper object and at these times the system creates a temporary object to act as the C++ wrapper.  
+ Windows objects are typically represented by various [HANDLE](/windows/desktop/WinProg/windows-data-types) objects The MFC classes wrap Windows object handles with C++ objects. The handle wrapping functions of the MFC class library let you find the C++ object that is wrapping the Windows object that has a particular handle. However, sometimes an object does not have a C++ wrapper object and at these times the system creates a temporary object to act as the C++ wrapper.  
   
  The Windows objects that use handle maps are as follows:  
   
@@ -60,7 +60,7 @@ CWnd myWnd;
 myWnd.Attach(hWnd);
 ```  
   
- This makes an entry in the permanent map associating *myWnd* and *hWnd*. Calling `CWnd::FromHandle(hWnd)` will now return a pointer to *myWnd*. When *myWnd* is deleted, the destructor will automatically destroy *hWnd* by calling the Windows [DestroyWindow](http://msdn.microsoft.com/library/windows/desktop/ms632682) function. If this is not desired, *hWnd* must be detached from *myWnd* before *myWnd* is destroyed (normally when leaving the scope at which *myWnd* was defined). The `Detach` method does this.  
+ This makes an entry in the permanent map associating *myWnd* and *hWnd*. Calling `CWnd::FromHandle(hWnd)` will now return a pointer to *myWnd*. When *myWnd* is deleted, the destructor will automatically destroy *hWnd* by calling the Windows [DestroyWindow](/windows/desktop/api/winuser/nf-winuser-destroywindow) function. If this is not desired, *hWnd* must be detached from *myWnd* before *myWnd* is destroyed (normally when leaving the scope at which *myWnd* was defined). The `Detach` method does this.  
   
 ```  
 myWnd.Detach();
