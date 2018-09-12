@@ -119,11 +119,11 @@ __int64 _InterlockedAnd64_rel(
 ```  
   
 #### Parameters  
- [in, out] `value`  
- A pointer to the first operand, to be replaced by the result.  
+`value`<br/>
+[in, out] A pointer to the first operand, to be replaced by the result.  
   
- [in] `mask`  
- The second operand.  
+`mask`<br/>
+[in] The second operand.  
   
 ## Return Value  
  The original value of the first operand.  

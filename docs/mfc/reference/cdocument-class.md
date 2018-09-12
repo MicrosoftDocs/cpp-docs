@@ -534,8 +534,8 @@ virtual void OnDocumentEvent(DocumentEvent deEvent);
 ```  
   
 ### Parameters  
- [in] *deEvent*  
- An enumerated data type that describes the type of event.  
+*deEvent*<br/>
+[in] An enumerated data type that describes the type of event.  
   
 ### Remarks  
  Document events may affect multiple classes. This method is responsible for handling document events that affect classes other than the [CDocument Class](../../mfc/reference/cdocument-class.md). Currently, the only class that must respond to document events is the [CDataRecoveryHandler Class](../../mfc/reference/cdatarecoveryhandler-class.md). The `CDocument` class has other overrideable methods responsible for handling the effect on the `CDocument`.  

@@ -78,8 +78,8 @@ CDrawingManager(CDC& dc);
 ```  
   
 ### Parameters  
- [in] *dc*  
- A reference to a device context. The `CDrawingManager` uses this context for drawing.  
+*dc*<br/>
+[in] A reference to a device context. The `CDrawingManager` uses this context for drawing.  
   
 ##  <a name="createbitmap_32"></a>  CDrawingManager::CreateBitmap_32  
  Creates a 32-bit device-independent bitmap (DIB) that applications can write to directly.  
@@ -122,17 +122,17 @@ void DrawAlpha(
 ```  
   
 ### Parameters  
- [in] *pDstDC*  
- A pointer to the device context for the destination.  
+*pDstDC*<br/>
+[in] A pointer to the device context for the destination.  
   
- [in] *rectDst*  
- The destination rectangle.  
+*rectDst*<br/>
+[in] The destination rectangle.  
   
- [in] *pSrcDC*  
- A pointer to the device context for the source.  
+*pSrcDC*<br/>
+[in] A pointer to the device context for the source.  
   
- [in] *rectSrc*  
- The source rectangle.  
+*rectSrc*<br/>
+[in] The source rectangle.  
   
 ### Remarks  
  This method performs alpha-blending for two bitmaps. For more information about alpha-blending, see [AlphaBlend](/windows/desktop/api/wingdi/nf-wingdi-alphablend) in the Windows SDK.  
@@ -148,14 +148,14 @@ void DrawEllipse(
 ```  
   
 ### Parameters  
- [in] *rect*  
- The bounding rectangle for the ellipse.  
+*rect*<br/>
+[in] The bounding rectangle for the ellipse.  
   
- [in] *clrFill*  
- The color this method uses to fill the ellipse.  
+*clrFill*<br/>
+[in] The color this method uses to fill the ellipse.  
   
- [in] *clrLine*  
- The color this method uses as the border of the ellipse.  
+*clrLine*<br/>
+[in] The color this method uses as the border of the ellipse.  
   
 ### Remarks  
  This method returns without drawing an ellipse if either color is set to -1. It also returns without drawing an ellipse if either dimension of the bounding rectangle is 0.  
@@ -175,26 +175,26 @@ BOOL DrawGradientRing(
 ```  
   
 ### Parameters  
- [in] *rect*  
- A [CRect](../../atl-mfc-shared/reference/crect-class.md) parameter that specifies the boundary for the gradient ring.  
+*rect*<br/>
+[in] A [CRect](../../atl-mfc-shared/reference/crect-class.md) parameter that specifies the boundary for the gradient ring.  
   
- [in] *colorStart*  
- The first color for the gradient.  
+*colorStart*<br/>
+[in] The first color for the gradient.  
   
- [in] *colorFinish*  
- The last color for the gradient.  
+*colorFinish*<br/>
+[in] The last color for the gradient.  
   
- [in] *colorBorder*  
- The color of the border.  
+*colorBorder*<br/>
+[in] The color of the border.  
   
- [in] *nAngle*  
- A parameter that specifies the initial gradient drawing angle. This value should be between 0 and 360.  
+*nAngle*<br/>
+[in] A parameter that specifies the initial gradient drawing angle. This value should be between 0 and 360.  
   
- [in] *nWidth*  
- The width of the border for the ring.  
+*nWidth*<br/>
+[in] The width of the border for the ring.  
   
- [in] *clrFace*  
- The color of the interior of the ring.  
+*clrFace*<br/>
+[in] The color of the interior of the ring.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -246,14 +246,14 @@ void DrawRect(
 ```  
   
 ### Parameters  
- [in] *rect*  
- The boundaries for the rectangle.  
+*rect*<br/>
+[in] The boundaries for the rectangle.  
   
- [in] *clrFill*  
- The color this method uses to fill the rectangle.  
+*clrFill*<br/>
+[in] The color this method uses to fill the rectangle.  
   
- [in] *clrLine*  
- The color this method uses for the border of the rectangle.  
+*clrLine*<br/>
+[in] The color this method uses for the border of the rectangle.  
   
 ### Remarks  
  This method returns without drawing a rectangle if either color is set to -1. It also returns if either dimension of the rectangle is 0.  
@@ -274,29 +274,29 @@ BOOL DrawShadow(
 ```  
   
 ### Parameters  
- [in] *rect*  
- A rectangular area in your application. The drawing manager will draw a shadow underneath this area.  
+*rect*<br/>
+[in] A rectangular area in your application. The drawing manager will draw a shadow underneath this area.  
   
- [in] *nDepth*  
- The width and height of the shadow.  
+*nDepth*<br/>
+[in] The width and height of the shadow.  
   
- [in] *iMinBrightness*  
- The minimum brightness of the shadow.  
+*iMinBrightness*<br/>
+[in] The minimum brightness of the shadow.  
   
- [in] *iMaxBrightness*  
- The maximum brightness of the shadow.  
+*iMaxBrightness*<br/>
+[in] The maximum brightness of the shadow.  
   
- [in] *pBmpSaveBottom*  
- A pointer to a bitmap that contains the image for the bottom part of the shadow.  
+*pBmpSaveBottom*<br/>
+[in] A pointer to a bitmap that contains the image for the bottom part of the shadow.  
   
- [in] *pBmpSaveRight*  
- A pointer to a bitmap that contains the image for the shadow that is drawn on the right side of the rectangle.  
+*pBmpSaveRight*<br/>
+[in] A pointer to a bitmap that contains the image for the shadow that is drawn on the right side of the rectangle.  
   
- [in] *clrBase*  
- The color of the shadow.  
+*clrBase*<br/>
+[in] The color of the shadow.  
   
- [in] *bRightShadow*  
- A Boolean parameter that indicates how the shadow is drawn. If *bRightShadow* is `TRUE`, `DrawShadow` draws a shadow on the right side of the rectangle.  
+*bRightShadow*<br/>
+[in] A Boolean parameter that indicates how the shadow is drawn. If *bRightShadow* is `TRUE`, `DrawShadow` draws a shadow on the right side of the rectangle.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -328,26 +328,26 @@ void Fill4ColorsGradient(
 ```  
   
 ### Parameters  
- [in] *rect*  
- The rectangle to fill.  
+*rect*<br/>
+[in] The rectangle to fill.  
   
- [in] *colorStart1*  
- The initial color for the first color gradient.  
+*colorStart1*<br/>
+[in] The initial color for the first color gradient.  
   
- [in] *colorFinish1*  
- The final color for the first color gradient.  
+*colorFinish1*<br/>
+[in] The final color for the first color gradient.  
   
- [in] *colorStart2*  
- The initial color for the second color gradient.  
+*colorStart2*<br/>
+[in] The initial color for the second color gradient.  
   
- [in] *colorFinish2*  
- The final color for the second color gradient.  
+*colorFinish2*<br/>
+[in] The final color for the second color gradient.  
   
- [in] *bHorz*  
- A Boolean parameter that indicates whether `Fill4ColorsGradient` colors a horizontal or vertical gradient. TRUE indicates a horizontal gradient.  
+*bHorz*<br/>
+[in] A Boolean parameter that indicates whether `Fill4ColorsGradient` colors a horizontal or vertical gradient. TRUE indicates a horizontal gradient.  
   
- [in] *nPercentage*  
- An integer from 0-100. This value indicates the percentage of the rectangle to fill with the first color gradient.  
+*nPercentage*<br/>
+[in] An integer from 0-100. This value indicates the percentage of the rectangle to fill with the first color gradient.  
   
 ### Remarks  
  When a rectangle is filled with two color gradients, they are either located above each other or next to each other, depending on the value of *bHorz*. Each color gradient is calculated independently with the method [CDrawingManager::FillGradient](#fillgradient).  
@@ -368,23 +368,23 @@ void FillGradient(
 ```  
   
 ### Parameters  
- [in] *rect*  
- The rectangular area to fill.  
+*rect*<br/>
+[in] The rectangular area to fill.  
   
- [in] *colorStart*  
- The first color for the gradient.  
+*colorStart*<br/>
+[in] The first color for the gradient.  
   
- [in] *colorFinish*  
- The final color for the gradient.  
+*colorFinish*<br/>
+[in] The final color for the gradient.  
   
- [in] *bHorz*  
- A Boolean parameter that specifies whether `FillGradient` should draw a horizontal or vertical gradient.  
+*bHorz*<br/>
+[in] A Boolean parameter that specifies whether `FillGradient` should draw a horizontal or vertical gradient.  
   
- [in] *nStartFlatPercentage*  
- The percentage of the rectangle that `FillGradient` fills with *colorStart* before it starts the gradient.  
+*nStartFlatPercentage*<br/>
+[in] The percentage of the rectangle that `FillGradient` fills with *colorStart* before it starts the gradient.  
   
- [in] *nEndFlatPercentage*  
- The percentage of the rectangle that `FillGradient` fills with *colorFinish* after it finishes the gradient.  
+*nEndFlatPercentage*<br/>
+[in] The percentage of the rectangle that `FillGradient` fills with *colorFinish* after it finishes the gradient.  
   
 ### Example  
  The following example demonstrates how to use the `FillGradient` method of the `CDrawingManager` class. This code snippet is part of the [MS Office 2007 Demo sample](../../visual-cpp-samples.md).  
@@ -403,17 +403,17 @@ void FillGradient2 (
 ```  
   
 ### Parameters  
- [in] *rect*  
- The rectangular area to fill.  
+*rect*<br/>
+[in] The rectangular area to fill.  
   
- [in] *colorStart*  
- The first color of the gradient.  
+*colorStart*<br/>
+[in] The first color of the gradient.  
   
- [in] *colorFinish*  
- The last color of the gradient.  
+*colorFinish*<br/>
+[in] The last color of the gradient.  
   
- [in] *nAngle*  
- An integer between 0 and 360. This parameter specifies the direction of the color gradient.  
+*nAngle*<br/>
+[in] An integer between 0 and 360. This parameter specifies the direction of the color gradient.  
   
 ### Remarks  
  Use *nAngle* to specify the direction of the color gradient. When you specify the direction of the color gradient, you also specify where the color gradient starts. A value of 0 for *nAngle* indicates the gradient starts from the top of the rectangle. As *nAngle* increases, the starting location for the gradient moves in a counter-clockwise direction based on the angle.  
@@ -435,17 +435,17 @@ BOOL GrayRect(
 ```  
   
 ### Parameters  
- [in] *rect*  
- The rectangular area to fill.  
+*rect*<br/>
+[in] The rectangular area to fill.  
   
- [in] *nPercentage*  
- The percentage of gray you want in the rectangle.  
+*nPercentage*<br/>
+[in] The percentage of gray you want in the rectangle.  
   
- [in] *clrTransparent*  
- The transparent color.  
+*clrTransparent*<br/>
+[in] The transparent color.  
   
- [in] *clrDisabled*  
- The color that this method uses for de-saturation if *nPercentage* is set to -1.  
+*clrDisabled*<br/>
+[in] The color that this method uses for de-saturation if *nPercentage* is set to -1.  
   
 ### Return Value  
  TRUE if the method was successful; otherwise FALSE.  
@@ -468,20 +468,20 @@ BOOL HighlightRect(
 ```  
   
 ### Parameters  
- [in] *rect*  
- A rectangular area to highlight.  
+*rect*<br/>
+[in] A rectangular area to highlight.  
   
- [in] *nPercentage*  
- A percentage that indicates how transparent the highlight should be.  
+*nPercentage*<br/>
+[in] A percentage that indicates how transparent the highlight should be.  
   
- [in] *clrTransparent*  
- The transparent color.  
+*clrTransparent*<br/>
+[in] The transparent color.  
   
- [in] *nTolerance*  
- An integer between 0 and 255 that indicates the color tolerance.  
+*nTolerance*<br/>
+[in] An integer between 0 and 255 that indicates the color tolerance.  
   
- [in] *clrBlend*  
- The base color for blending.  
+*clrBlend*<br/>
+[in] The base color for blending.  
   
 ### Return Value  
  TRUE if the method is successful; otherwise FALSE.  
@@ -502,14 +502,14 @@ static COLORREF __stdcall HLStoRGB_ONE(
 ```  
   
 ### Parameters  
- [in] *H*  
- A number between 0 and 1 that represents the hue for the color.  
+*H*<br/>
+[in] A number between 0 and 1 that represents the hue for the color.  
   
- [in] *L*  
- A number between 0 and 1 that indicates the luminosity for the color.  
+*L*<br/>
+[in] A number between 0 and 1 that indicates the luminosity for the color.  
   
- [in] *S*  
- A number between 0 and 1 that indicates the saturation for the color.  
+*S*<br/>
+[in] A number between 0 and 1 that indicates the saturation for the color.  
   
 ### Return Value  
  The RGB representation of the HLS color provided.  
@@ -530,14 +530,14 @@ static COLORREF __stdcall HLStoRGB_TWO(
 ```  
   
 ### Parameters  
- [in] *H*  
- A number between 0 and 360 that represents the hue for the color.  
+*H*<br/>
+[in] A number between 0 and 360 that represents the hue for the color.  
   
- [in] *L*  
- A number between 0 and 1 that indicates the luminosity for the color.  
+*L*<br/>
+[in] A number between 0 and 1 that indicates the luminosity for the color.  
   
- [in] *S*  
- A number between 0 and 1 that indicates the saturation for the color.  
+*S*<br/>
+[in] A number between 0 and 1 that indicates the saturation for the color.  
   
 ### Return Value  
  The RGB representation of the HLS color provided.  
@@ -589,23 +589,23 @@ static BYTE __stdcall HueToRGB(
 ```  
   
 ### Parameters  
- [in] *m1*  
- See Remarks.  
+*m1*<br/>
+[in] See Remarks.  
   
- [in] *m2*  
- See Remarks.  
+*m2*<br/>
+[in] See Remarks.  
   
- [in] *h*  
- See Remarks.  
+*h*<br/>
+[in] See Remarks.  
   
- [in] *rm1*  
- See Remarks.  
+*rm1*<br/>
+[in] See Remarks.  
   
- [in] *rm2*  
- See Remarks.  
+*rm2*<br/>
+[in] See Remarks.  
   
- [in] *rh*  
- See Remarks.  
+*rh*<br/>
+[in] See Remarks.  
   
 ### Return Value  
  The individual red, green, or blue component for the provided hue.  
@@ -631,11 +631,11 @@ void MirrorRect(
 ```  
   
 ### Parameters  
- [in] *rect*  
- The bounding rectangle of the area to flip.  
+*rect*<br/>
+[in] The bounding rectangle of the area to flip.  
   
- [in] *bHorz*  
- A Boolean parameter that indicates whether the rectangle flips horizontally or vertically.  
+*bHorz*<br/>
+[in] A Boolean parameter that indicates whether the rectangle flips horizontally or vertically.  
   
 ### Remarks  
  This method can flip any area of the device context owned by the `CDrawingManager` class. If *bHorz* is set to TRUE, this method flips the area horizontally. Otherwise, it flips the area vertically.  
@@ -661,23 +661,23 @@ static COLORREF __stdcall PixelAlpha(
 ```  
   
 ### Parameters  
- [in] *srcPixel*  
- The initial color for the pixel.  
+*srcPixel*<br/>
+[in] The initial color for the pixel.  
   
- [in] *percent*  
- A number between 0 and 100 that represents the percentage of transparency. A value of 100 indicates that the initial color is completely transparent.  
+*percent*<br/>
+[in] A number between 0 and 100 that represents the percentage of transparency. A value of 100 indicates that the initial color is completely transparent.  
   
- [in] *percentR*  
- A number between 0 and 100 that represents the percentage of transparency for the red component.  
+*percentR*<br/>
+[in] A number between 0 and 100 that represents the percentage of transparency for the red component.  
   
- [in] *percentG*  
- A number between 0 and 100 that represents the percentage of transparency for the green component.  
+*percentG*<br/>
+[in] A number between 0 and 100 that represents the percentage of transparency for the green component.  
   
- [in] *percentB*  
- A number between 0 and 100 that represents the percentage of transparency for the blue component.  
+*percentB*<br/>
+[in] A number between 0 and 100 that represents the percentage of transparency for the blue component.  
   
- [in] *dstPixel*  
- The base color for the pixel.  
+*dstPixel*<br/>
+[in] The base color for the pixel.  
   
 ### Return Value  
  The final color for the semitransparent pixel.  
@@ -699,17 +699,17 @@ static HBITMAP __stdcall PrepareShadowMask (
 ```  
   
 ### Parameters  
- [in] *nDepth*  
- The width and height of the shadow.  
+*nDepth*<br/>
+[in] The width and height of the shadow.  
   
- [in] *clrBase*  
- The color of the shadow.  
+*clrBase*<br/>
+[in] The color of the shadow.  
   
- [in] *iMinBrightness*  
- The minimum brightness of the shadow.  
+*iMinBrightness*<br/>
+[in] The minimum brightness of the shadow.  
   
- [in] *iMaxBrightness*  
- The maximum brightness of the shadow.  
+*iMaxBrightness*<br/>
+[in] The maximum brightness of the shadow.  
   
 ### Return Value  
  A handle to the created bitmap if this method is successful; otherwise NULL.  
@@ -755,17 +755,17 @@ static void __stdcall RGBtoHSV(
 ```  
   
 ### Parameters  
- [in] *rgb*  
- The color to convert in a RGB representation.  
+*rgb*<br/>
+[in] The color to convert in a RGB representation.  
   
- [out] *H*  
- A pointer to a double where this method stores the resulting hue for the color.  
+*H*<br/>
+[out] A pointer to a double where this method stores the resulting hue for the color.  
   
- [out] *S*  
- A pointer to a double where this method stores the resulting saturation for the color.  
+*S*<br/>
+[out] A pointer to a double where this method stores the resulting saturation for the color.  
   
- [out] *V*  
- A pointer to a double where this method stores the resulting value for the color.  
+*V*<br/>
+[out] A pointer to a double where this method stores the resulting value for the color.  
   
 ### Remarks  
  A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/p/?linkid=119126).  
@@ -788,29 +788,29 @@ static void __stdcall SetAlphaPixel(
 ```  
   
 ### Parameters  
- [in] *pBits*  
- A pointer to the bit values for the bitmap.  
+*pBits*<br/>
+[in] A pointer to the bit values for the bitmap.  
   
- [in] *rect*  
- A rectangular area in your application. The drawing manager draws a shadow underneath and to the right of this area.  
+*rect*<br/>
+[in] A rectangular area in your application. The drawing manager draws a shadow underneath and to the right of this area.  
   
- [in] *x*  
- The horizontal coordinate of the pixel to color.  
+*x*<br/>
+[in] The horizontal coordinate of the pixel to color.  
   
- [in] *y*  
- The vertical coordinate of the pixel to color.  
+*y*<br/>
+[in] The vertical coordinate of the pixel to color.  
   
- [in] *percent*  
- The percentage of transparency.  
+*percent*<br/>
+[in] The percentage of transparency.  
   
- [in] *iShadowSize*  
- The width and height of the shadow.  
+*iShadowSize*<br/>
+[in] The width and height of the shadow.  
   
- [in] *clrBase*  
- The color of the shadow.  
+*clrBase*<br/>
+[in] The color of the shadow.  
   
- [in] *bIsRight*  
- A Boolean parameter that indicates which pixel to color. See the Remarks section for more information.  
+*bIsRight*<br/>
+[in] A Boolean parameter that indicates which pixel to color. See the Remarks section for more information.  
   
 ### Remarks  
  This method is a helper method that is used by the [CDrawingManager::DrawShadow](#drawshadow) method. We recommend that if you want to draw a shadow, call `CDrawingManager::DrawShadow` instead.  

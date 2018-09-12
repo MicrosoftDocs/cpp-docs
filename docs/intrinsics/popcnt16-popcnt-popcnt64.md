@@ -32,8 +32,8 @@ unsigned __int64 __popcnt64(
 ```  
   
 #### Parameters  
- [in] `value`  
- The 16-, 32-, or 64-bit unsigned integer for which we want the population count.  
+`value`<br/>
+[in] The 16-, 32-, or 64-bit unsigned integer for which we want the population count.  
   
 ## Return Value  
  The number of one bits in the `value` parameter.  

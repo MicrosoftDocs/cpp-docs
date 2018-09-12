@@ -86,8 +86,8 @@ void RebuildFontSizes(const CString& strFontName);
 ```  
   
 ### Parameters  
- [in] *strFontName*  
- Specifies a font name.  
+*strFontName*<br/>
+[in] Specifies a font name.  
   
 ### Remarks  
  Call this function when you want to synchronize between selection in a font combo box and a font size combo box, such as a [CMFCToolBarFontComboBox Class](../../mfc/reference/cmfctoolbarfontcombobox-class.md).  
@@ -100,8 +100,8 @@ void SetTwipSize(int nSize);
 ```  
   
 ### Parameters  
- [in] *nSize*  
- Specifies the font size (in twips) to set.  
+*nSize*<br/>
+[in] Specifies the font size (in twips) to set.  
   
 ### Remarks  
  You can retrieve the previous valid font size later by calling the [CMFCToolBarFontSizeComboBox::GetTwipSize](#gettwipsize) method.  

@@ -168,8 +168,8 @@ static void EnableTabAutoColor(BOOL bEnable = TRUE);
 
 ### Parameters
 
-[in] *bEnable*  
-TRUE to enable auto coloring of tabs; otherwise, FALSE.
+*bEnable*<br/>
+[in] TRUE to enable auto coloring of tabs; otherwise, FALSE.
 
 ### Remarks
 
@@ -191,10 +191,10 @@ virtual BOOL FloatTab(
 
 ### Parameters
 
-[in] *pBar*  
-[in] *nTabID*  
-[in] *dockMethod*  
-[in] *bHide*  
+*pBar*<br/>
+[in] [in] *nTabID*  
+*dockMethod*<br/>
+[in] [in] *bHide*  
 
 ### Return Value
 
@@ -212,11 +212,11 @@ virtual void GetTabArea(
 
 ### Parameters
 
-[out] *rectTabAreaTop*  
-Contains the size and position, in screen coordinates, of the top tab area.
+*rectTabAreaTop*<br/>
+[out] Contains the size and position, in screen coordinates, of the top tab area.
 
-[out] *rectTabAreaBottom*  
-Contains the size and position, in screen coordinates, of the bottom tab area.
+*rectTabAreaBottom*<br/>
+[out] Contains the size and position, in screen coordinates, of the bottom tab area.
 
 ### Remarks
 
@@ -307,8 +307,8 @@ static void SetTabAutoColors(const CArray<COLORREF, COLORREF>& arColors);
 
 ### Parameters
 
-[in] *arColors*  
-Contains the array of colors to set.
+*arColors*<br/>
+[in] Contains the array of colors to set.
 
 ### Remarks
 

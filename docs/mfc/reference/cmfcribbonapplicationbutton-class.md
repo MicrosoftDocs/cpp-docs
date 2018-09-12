@@ -83,11 +83,11 @@ void SetImage(HBITMAP hBmp);
 ```  
   
 ### Parameters  
- [in] *uiBmpResID*  
- The resource ID of the image to display on the application button.  
+*uiBmpResID*<br/>
+[in] The resource ID of the image to display on the application button.  
   
- [in] *hBmp*  
- A handle to a bitmap to display on the application button.  
+*hBmp*<br/>
+[in] A handle to a bitmap to display on the application button.  
   
 ### Remarks  
  Use this method to assign a new image to the ribbon application button after you create the button. The application button is located in the upper-left corner of the application window.  

@@ -177,8 +177,8 @@ virtual HRESULT accSelect(
 ```  
   
 ### Parameters  
- [in] *flagsSelect*  
- [in] *varChild*  
+*flagsSelect*<br/>
+[in] [in] *varChild*  
   
 ### Return Value  
   
@@ -195,14 +195,14 @@ int AddProperty(
 ```  
   
 ### Parameters  
- [in] *pProp*  
- Pointer to a property.  
+*pProp*<br/>
+[in] Pointer to a property.  
   
- [in] *bRedraw*  
- TRUE to redraw the property immediately; otherwise, FALSE. The default value is TRUE.  
+*bRedraw*<br/>
+[in] TRUE to redraw the property immediately; otherwise, FALSE. The default value is TRUE.  
   
- [in] *bAdjustLayout*  
- TRUE to recalculate how to draw the text and value of the property, and then draw the property; FALSE to use existing calculations to draw the property. The default value is TRUE.  
+*bAdjustLayout*<br/>
+[in] TRUE to recalculate how to draw the text and value of the property, and then draw the property; FALSE to use existing calculations to draw the property. The default value is TRUE.  
   
 ### Return Value  
  If this method succeeds, the zero-based index of the position in the property grid control where the property is added; otherwise, -1.  
@@ -292,17 +292,17 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] *dwStyle*  
- A bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
+*dwStyle*<br/>
+[in] A bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] *rect*  
- A bounding rectangle that specifies the size and position of the window, in client coordinates of *pParentWnd*.  
+*rect*<br/>
+[in] A bounding rectangle that specifies the size and position of the window, in client coordinates of *pParentWnd*.  
   
- [in] *pParentWnd*  
- Pointer to the parent window. Must not be NULL.  
+*pParentWnd*<br/>
+[in] Pointer to the parent window. Must not be NULL.  
   
- [in] *nID*  
- The ID of the child window.  
+*nID*<br/>
+[in] The ID of the child window.  
   
 ### Return Value  
  TRUE if the window was created successfully; otherwise, FALSE.  
@@ -326,14 +326,14 @@ BOOL DeleteProperty(
 ```  
   
 ### Parameters  
- [in] *pProp*  
- Pointer to a property.  
+*pProp*<br/>
+[in] Pointer to a property.  
   
- [in] *bRedraw*  
- TRUE to redraw the property grid control; otherwise, FALSE. The default value is TRUE.  
+*bRedraw*<br/>
+[in] TRUE to redraw the property grid control; otherwise, FALSE. The default value is TRUE.  
   
- [in] *bAdjustLayout*  
- TRUE to recalculate how to draw all the text, images, and items in the property grid control, and then draw the control; otherwise, FALSE. The default value is TRUE.  
+*bAdjustLayout*<br/>
+[in] TRUE to recalculate how to draw all the text, images, and items in the property grid control, and then draw the control; otherwise, FALSE. The default value is TRUE.  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -362,11 +362,11 @@ virtual BOOL EditItem(
 ```  
   
 ### Parameters  
- [in] *pProp*  
- Pointer to a property.  
+*pProp*<br/>
+[in] Pointer to a property.  
   
- [in] *lptClick*  
- The point on the property grid control that the user clicked to begin the edit operation. The point is in the client coordinates of the control. The default value is NULL.  
+*lptClick*<br/>
+[in] The point on the property grid control that the user clicked to begin the edit operation. The point is in the client coordinates of the control. The default value is NULL.  
   
 ### Return Value  
  TRUE if method is successful; otherwise, FALSE.  
@@ -381,8 +381,8 @@ void EnableDescriptionArea(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable the description area; FALSE to disable the description area. The default value is TRUE.  
+*bEnable*<br/>
+[in] TRUE to enable the description area; FALSE to disable the description area. The default value is TRUE.  
   
 ### Remarks  
  The description area is displayed at the bottom of the property grid control. By default, the description area is disabled and not visible.  
@@ -398,14 +398,14 @@ void EnableHeaderCtrl(
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable the header control; FALSE to disable the header control. The default value is TRUE.  
+*bEnable*<br/>
+[in] TRUE to enable the header control; FALSE to disable the header control. The default value is TRUE.  
   
- [in] *lpszLeftColumn*  
- The title of the left column of the header control. The default value is **Property**.  
+*lpszLeftColumn*<br/>
+[in] The title of the left column of the header control. The default value is **Property**.  
   
- [in] *lpszRightColumn*  
- The title of the right column of the header control. The default value is **Value**.  
+*lpszRightColumn*<br/>
+[in] The title of the right column of the header control. The default value is **Value**.  
   
 ##  <a name="endedititem"></a>  CMFCPropertyGridCtrl::EndEditItem  
  Called by the framework when the user finishes modifying a property.  
@@ -415,8 +415,8 @@ virtual BOOL EndEditItem(BOOL bUpdateData=TRUE);
 ```  
   
 ### Parameters  
- [in] *bUpdateData*  
- TRUE to specify that the modified property data must be validated when the edit operation is complete; otherwise, FALSE. The default value is TRUE.  
+*bUpdateData*<br/>
+[in] TRUE to specify that the modified property data must be validated when the edit operation is complete; otherwise, FALSE. The default value is TRUE.  
   
 ### Return Value  
  TRUE if the edit operation ends successfully; FALSE if the modified property data is not valid or if the editing operation should continue.  
@@ -433,11 +433,11 @@ void EnsureVisible(
 ```  
   
 ### Parameters  
- [in] *pProp*  
- Pointer to a property.  
+*pProp*<br/>
+[in] Pointer to a property.  
   
- [in] *bExpandParents*  
- TRUE to expand parent items to make the specified property visible; otherwise, FALSE. The default is FALSE.  
+*bExpandParents*<br/>
+[in] TRUE to expand parent items to make the specified property visible; otherwise, FALSE. The default is FALSE.  
   
 ### Remarks  
   
@@ -449,8 +449,8 @@ void ExpandAll(BOOL bExpand=TRUE);
 ```  
   
 ### Parameters  
- [in] *bExpand*  
- TRUE to expand all nodes; FALSE to collapse all nodes. The default value is TRUE.  
+*bExpand*<br/>
+[in] TRUE to expand all nodes; FALSE to collapse all nodes. The default value is TRUE.  
   
 ### Remarks  
   
@@ -464,11 +464,11 @@ CMFCPropertyGridProperty* FindItemByData(
 ```  
   
 ### Parameters  
- [in] *dwData*  
- A DWORD value.  
+*dwData*<br/>
+[in] A DWORD value.  
   
- [in] *bSearchSubItems*  
- TRUE to search property sub-items; otherwise, FALSE. The default value is TRUE.  
+*bSearchSubItems*<br/>
+[in] TRUE to search property sub-items; otherwise, FALSE. The default value is TRUE.  
   
 ### Return Value  
  A pointer to the associated property object if this method succeeds; otherwise, NULL.  
@@ -514,8 +514,8 @@ virtual HRESULT get_accHelp(
 ```  
   
 ### Parameters  
- [in] *varChild*  
- [in] *pszHelp*  
+*varChild*<br/>
+[in] [in] *pszHelp*  
   
 ### Return Value  
   
@@ -532,8 +532,8 @@ virtual HRESULT get_accHelpTopic(
 ```  
   
 ### Parameters  
- [in] *pszHelpFile*  
- [in] *varChild*  
+*pszHelpFile*<br/>
+[in] [in] *varChild*  
  [in] *pidTopic*  
   
 ### Return Value  
@@ -550,8 +550,8 @@ virtual HRESULT get_accKeyboardShortcut(
 ```  
   
 ### Parameters  
- [in] *varChild*  
- [in] *pszKeyboardShortcut*  
+*varChild*<br/>
+[in] [in] *pszKeyboardShortcut*  
   
 ### Return Value  
   
@@ -621,26 +621,26 @@ void GetCustomColors(
 ```  
   
 ### Parameters  
- [out] *clrBackground*  
- The background color of property values.  
+*clrBackground*<br/>
+[out] The background color of property values.  
   
- [out] *clrText*  
- The color of property names and property value text.  
+*clrText*<br/>
+[out] The color of property names and property value text.  
   
- [out] *clrGroupBackground*  
- The background color of a property group.  
+*clrGroupBackground*<br/>
+[out] The background color of a property group.  
   
- [out] *clrGroupText*  
- The color of text in the property group.  
+*clrGroupText*<br/>
+[out] The color of text in the property group.  
   
- [out] *clrDescriptionBackground*  
- The background color of the description area.  
+*clrDescriptionBackground*<br/>
+[out] The background color of the description area.  
   
- [out] *clrDescriptionText*  
- The color of text in the description area.  
+*clrDescriptionText*<br/>
+[out] The color of text in the description area.  
   
- [out] *clrLine*  
- The color of lines that are drawn between properties.  
+*clrLine*<br/>
+[out] The color of lines that are drawn between properties.  
   
 ### Remarks  
  Use the [CMFCPropertyGridCtrl::SetCustomColors](#setcustomcolors) method to set custom colors.  
@@ -728,8 +728,8 @@ CMFCPropertyGridProperty* GetProperty(int nIndex) const;
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- The zero-based index of a property grid control item.  
+*nIndex*<br/>
+[in] The zero-based index of a property grid control item.  
   
  This method asserts if the *nIndex* parameter is less than zero or greater than or equal to the number of properties.  
   
@@ -784,8 +784,8 @@ virtual CScrollBar* GetScrollBarCtrl(int nBar) const;
 ```  
   
 ### Parameters  
- [in] *nBar*  
- The orientation of the scroll bar, which must be SB_VERT.  
+*nBar*<br/>
+[in] The orientation of the scroll bar, which must be SB_VERT.  
   
 ### Return Value  
  A pointer to a scroll bar object, or NULL if there is no scroll bar or the scroll bar orientation is SB_HORZ.  
@@ -817,14 +817,14 @@ CMFCPropertyGridProperty* HitTest(
 ```  
   
 ### Parameters  
- [in] *pt*  
- A point, in client coordinates.  
+*pt*<br/>
+[in] A point, in client coordinates.  
   
- [in, out] *pnArea*  
- A pointer to a `ClickArea` variable. When this method returns, the variable indicates the *property area* that contains the specified point. For more information about a property area, see Remarks.  
+*pnArea*<br/>
+[in, out] A pointer to a `ClickArea` variable. When this method returns, the variable indicates the *property area* that contains the specified point. For more information about a property area, see Remarks.  
   
- [in] *bPropsOnly*  
- TRUE to test only the property area; FALSE to test the *description area* if the specified point is not in the property area. The default value is FALSE. For more information about the description area, see Remarks.  
+*bPropsOnly*<br/>
+[in] TRUE to test only the property area; FALSE to test the *description area* if the specified point is not in the property area. The default value is FALSE. For more information about the description area, see Remarks.  
   
 ### Return Value  
  If the *bPropsOnly* parameter is TRUE and the specified point is in a property area, the return value is a pointer to the corresponding property object. In addition, the *pnArea* parameter is set to the particular area that contains the specified point. Otherwise, the return value is NULL and the *pnArea* parameter is not modified.  
@@ -972,11 +972,11 @@ void MarkModifiedProperties(
 ```  
   
 ### Parameters  
- [in] *bMark*  
- TRUE to display modified properties in bold style; FALSE to display modified properties in regular style. The default value is TRUE.  
+*bMark*<br/>
+[in] TRUE to display modified properties in bold style; FALSE to display modified properties in regular style. The default value is TRUE.  
   
- [in] *bRedraw*  
- TRUE to redraw the property grid control immediately; otherwise, FALSE. The default value is TRUE.  
+*bRedraw*<br/>
+[in] TRUE to redraw the property grid control immediately; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -1007,8 +1007,8 @@ virtual void OnClickButton(CPoint point);
 ```  
   
 ### Parameters  
- [in] *point*  
- A point, in client coordinates.  
+*point*<br/>
+[in] A point, in client coordinates.  
   
 ### Remarks  
  By default, this method updates the current property value.  
@@ -1021,8 +1021,8 @@ virtual void OnDrawBorder(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
 ### Remarks  
   
@@ -1036,11 +1036,11 @@ virtual void OnDrawDescription(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rect*  
- A rectangle that specifies where to draw the description area.  
+*rect*<br/>
+[in] A rectangle that specifies where to draw the description area.  
   
 ### Remarks  
  Use the [CMFCPropertyGridCtrl::EnableDescriptionArea](#enabledescriptionarea) method to display the description area.  
@@ -1053,8 +1053,8 @@ virtual void OnDrawList(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
 ### Remarks  
   
@@ -1068,11 +1068,11 @@ virtual int OnDrawProperty(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *pProp*  
- A pointer to a property object.  
+*pProp*<br/>
+[in] A pointer to a property object.  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -1087,8 +1087,8 @@ virtual void OnPropertyChanged(CMFCPropertyGridProperty* pProp) const;
 ```  
   
 ### Parameters  
- [in] *pProp*  
- A pointer to a property object whose value has changed.  
+*pProp*<br/>
+[in] A pointer to a property object whose value has changed.  
   
 ### Remarks  
  By default, this method sends the [AFX_WM_PROPERTY_CHANGED](../../mfc/reference/afx-messages.md) message to the owner of the property grid control.  
@@ -1119,8 +1119,8 @@ void ResetOriginalValues(BOOL bRedraw=TRUE);
 ```  
   
 ### Parameters  
- [in] *bRedraw*  
- TRUE to redraw the property list; otherwise, FALSE. The default value is TRUE.  
+*bRedraw*<br/>
+[in] TRUE to redraw the property list; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -1132,8 +1132,8 @@ void SetAlphabeticMode(BOOL bSet=TRUE);
 ```  
   
 ### Parameters  
- [in] *bSet*  
- TRUE to set alphabetic mode; FALSE reset alphabetic mode. The default value is TRUE.  
+*bSet*<br/>
+[in] TRUE to set alphabetic mode; FALSE reset alphabetic mode. The default value is TRUE.  
   
 ### Remarks  
  When the property grid control is in alphabetic mode, the control sorts all the properties it contains by their property name.  
@@ -1148,11 +1148,11 @@ void SetBoolLabels(
 ```  
   
 ### Parameters  
- [in] *lpszTrue*  
- The text string to display for the Boolean value of true.  
+*lpszTrue*<br/>
+[in] The text string to display for the Boolean value of true.  
   
- [in] *lpszFalse*  
- The text string to display for the Boolean value of false.  
+*lpszFalse*<br/>
+[in] The text string to display for the Boolean value of false.  
   
 ### Remarks  
   
@@ -1166,11 +1166,11 @@ void SetCurSel(
 ```  
   
 ### Parameters  
- [in] *pProp*  
- A pointer to a property object.  
+*pProp*<br/>
+[in] A pointer to a property object.  
   
- [in] *bRedraw*  
- TRUE to redraw the property grid control immediately; otherwise, FALSE. The default value is TRUE.  
+*bRedraw*<br/>
+[in] TRUE to redraw the property grid control immediately; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
  Use this method to cancel the selection of the current item in the property grid control and then select the item that corresponds to the specified property.  
@@ -1190,26 +1190,26 @@ void SetCustomColors(
 ```  
   
 ### Parameters  
- [in] *clrBackground*  
- The background color of property values.  
+*clrBackground*<br/>
+[in] The background color of property values.  
   
- [in] *clrText*  
- The color of property names and property value text.  
+*clrText*<br/>
+[in] The color of property names and property value text.  
   
- [in] *clrGroupBackground*  
- The background color of a property group.  
+*clrGroupBackground*<br/>
+[in] The background color of a property group.  
   
- [in] *clrGroupText*  
- The new text color of property group.  
+*clrGroupText*<br/>
+[in] The new text color of property group.  
   
- [in] *clrDescriptionBackground*  
- The background color of the description area.  
+*clrDescriptionBackground*<br/>
+[in] The background color of the description area.  
   
- [in] *clrDescriptionText*  
- The color of text in the description area.  
+*clrDescriptionText*<br/>
+[in] The color of text in the description area.  
   
- [in] *clrLine*  
- The color of lines that are drawn between properties.  
+*clrLine*<br/>
+[in] The color of lines that are drawn between properties.  
   
 ### Remarks  
  For any parameter, specify the `((COLORREF)-1)` color value to use the default color for that element of the property grid control.  
@@ -1224,8 +1224,8 @@ void SetDescriptionRows(int nDescRows);
 ```  
   
 ### Parameters  
- [in] *nDescRows*  
- The number of rows to display in the property description.  
+*nDescRows*<br/>
+[in] The number of rows to display in the property description.  
   
 ##  <a name="setgroupnamefullwidth"></a>  CMFCPropertyGridCtrl::SetGroupNameFullWidth  
  Specifies whether to display the full width of the category name for a group of properties in the current property grid control.  
@@ -1237,11 +1237,11 @@ void SetGroupNameFullWidth(
 ```  
   
 ### Parameters  
- [in] *bGroupNameFullWidth*  
- TRUE to display the complete width of the category name regardless of the width of the property name column. FALSE to limit the width of the category name to the width of the property name column. The default value is TRUE.  
+*bGroupNameFullWidth*<br/>
+[in] TRUE to display the complete width of the category name regardless of the width of the property name column. FALSE to limit the width of the category name to the width of the property name column. The default value is TRUE.  
   
- [in] *bRedraw*  
- TRUE to update the property grid control immediately; FALSE to update the control when the next redraw event occurs. The default value is TRUE.  
+*bRedraw*<br/>
+[in] TRUE to update the property grid control immediately; FALSE to update the control when the next redraw event occurs. The default value is TRUE.  
   
 ### Remarks  
  The property grid control consists of a resizable *property name* column and a *property value* column. The end of the name column is also the start of the value column. To resize the columns, drag the border between the columns.  
@@ -1256,8 +1256,8 @@ void SetListDelimiter(TCHAR c);
 ```  
   
 ### Parameters  
- [in] *c*  
- A character to serve as a delimiter.  
+*c*<br/>
+[in] A character to serve as a delimiter.  
   
 ### Remarks  
  Use this method to define a delimiter character in a list of property values that are used in the [CMFCPropertyGridProperty::CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md#cmfcpropertygridproperty) constructor. In that constructor, set the *bIsValueList* parameter to TRUE.  
@@ -1272,8 +1272,8 @@ void SetShowDragContext(BOOL bShowDragContext = TRUE);
 ```  
   
 ### Parameters  
- [in] *bShowDragContext*  
- TRUE to redraw the name and value columns during a resize operation; FALSE to redraw the columns after the drag operation is completed. The default value is TRUE.  
+*bShowDragContext*<br/>
+[in] TRUE to redraw the name and value columns during a resize operation; FALSE to redraw the columns after the drag operation is completed. The default value is TRUE.  
   
 ### Remarks  
  The user can resize the name and value columns of a property grid control by dragging the split bar that is between the columns. If the drag context is displayed, the name and value columns are resized as long as the user drags the split bar. Otherwise, the split bar moves but the columns are not redrawn until the drag operation is completed.  
@@ -1286,8 +1286,8 @@ void SetVSDotNetLook(BOOL bSet=TRUE);
 ```  
   
 ### Parameters  
- [in] *bSet*  
- TRUE to set the property grid control to the style that is used in Visual Studio .NET; otherwise, FALSE. The default value is TRUE.  
+*bSet*<br/>
+[in] TRUE to set the property grid control to the style that is used in Visual Studio .NET; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -1299,8 +1299,8 @@ virtual void UpdateColor(COLORREF color);
 ```  
   
 ### Parameters  
- [in] *color*  
- An RGB color value.  
+*color*<br/>
+[in] An RGB color value.  
   
 ### Remarks  
  This method asserts in debug mode if the currently selected property of the property grid control is not a color property.  

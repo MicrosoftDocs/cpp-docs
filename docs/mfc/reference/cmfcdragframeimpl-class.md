@@ -81,8 +81,8 @@ void PlaceTabPreDocking(CWnd* pCBarToPlaceOn);
 ```  
   
 ### Parameters  
- [in] *pTabbedBar*  
- [in] *bFirstTime*  
+*pTabbedBar*<br/>
+[in] [in] *bFirstTime*  
  [in] *pCBarToPlaceOn*  
   
 ### Remarks  

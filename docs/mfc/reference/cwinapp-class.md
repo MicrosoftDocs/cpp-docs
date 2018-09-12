@@ -240,8 +240,8 @@ virtual DWORD ApplicationRecoveryCallback(LPVOID lpvParam);
 
 ### Parameters
 
-[in] *lpvParam*  
-Reserved for future use.
+*lpvParam*<br/>
+[in] Reserved for future use.
 
 ### Return Value
 
@@ -1548,11 +1548,11 @@ virtual CDocument* OpenDocumentFile(
 
 ### Parameters
 
-[in] *lpszFileName*  
-The name of the file to be opened.
+*lpszFileName*<br/>
+[in] The name of the file to be opened.
 
-[in] *bAddToMRU*  
-TRUE indicates the document is one of the most recent files; FALSE indicates the document is not one of the most recent files.
+*bAddToMRU*<br/>
+[in] TRUE indicates the document is one of the most recent files; FALSE indicates the document is not one of the most recent files.
 
 ### Return Value
 
@@ -1739,8 +1739,8 @@ void RegisterShellFileTypes(BOOL bCompat = FALSE);
 
 ### Parameters
 
-[in] *bCompat*  
-TRUE adds registration entries for shell commands Print and Print To, allowing a user to print files directly from the shell, or by dragging the file to a printer object. It also adds a DefaultIcon key. By default, this parameter is FALSE for backward compatibility.
+*bCompat*<br/>
+[in] TRUE adds registration entries for shell commands Print and Print To, allowing a user to print files directly from the shell, or by dragging the file to a printer object. It also adds a DefaultIcon key. By default, this parameter is FALSE for backward compatibility.
 
 ### Remarks
 

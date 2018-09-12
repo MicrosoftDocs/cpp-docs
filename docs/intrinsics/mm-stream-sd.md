@@ -27,11 +27,11 @@ void _mm_stream_sd(
 ```  
   
 #### Parameters  
- [out] `Dest`  
- A pointer to the location where the source data will be written.  
+`Dest`<br/>
+[out] A pointer to the location where the source data will be written.  
   
- [in] `Source`  
- A 128-bit value containing the `double` value to be written in its bottom 64 bits..  
+`Source`<br/>
+[in] A 128-bit value containing the `double` value to be written in its bottom 64 bits..  
   
 ## Return Value  
  None.  

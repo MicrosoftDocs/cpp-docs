@@ -26,8 +26,8 @@ unsigned __int64 __rdtscp(
 ```  
   
 #### Parameters  
- [out] `Aux`  
- Pointer to a location that will contain the contents of the machine-specific register `TSC_AUX[31:0]`.  
+`Aux`<br/>
+[out] Pointer to a location that will contain the contents of the machine-specific register `TSC_AUX[31:0]`.  
   
 ## Return Value  
  A 64-bit unsigned integer tick count.  

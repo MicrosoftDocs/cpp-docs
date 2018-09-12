@@ -152,10 +152,10 @@ virtual void CalcExpectedDockedRect(
 ```  
   
 ### Parameters  
- [in] *pWndToDock*  
- [in] *ptMouse*  
- [in] *rectResult*  
- [in] *bDrawTab*  
+*pWndToDock*<br/>
+[in] [in] *ptMouse*  
+*rectResult*<br/>
+[in] [in] *bDrawTab*  
  [in] *ppTargetBar*  
   
 ### Remarks  
@@ -222,8 +222,8 @@ virtual BOOL DockFrame(
 ```  
   
 ### Parameters  
- [in] *pDockedFrame*  
- [in] *dockMethod*  
+*pDockedFrame*<br/>
+[in] [in] *dockMethod*  
   
 ### Return Value  
   
@@ -334,8 +334,8 @@ virtual BOOL InsertPane(
 ```  
   
 ### Parameters  
- [in] *pControlBar*  
- [in] *pTarget*  
+*pControlBar*<br/>
+[in] [in] *pTarget*  
  [in] *bAfter*  
   
 ### Return Value  
@@ -352,8 +352,8 @@ virtual BOOL LoadState(
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- [in] *uiID*  
+*lpszProfileName*<br/>
+[in] [in] *uiID*  
   
 ### Return Value  
   
@@ -405,8 +405,8 @@ virtual void OnShowPane(
 ```  
   
 ### Parameters  
- [in] *pBar*  
- [in] *bShow*  
+*pBar*<br/>
+[in] [in] *bShow*  
   
 ### Remarks  
   
@@ -421,8 +421,8 @@ virtual CBasePane* PaneFromPoint(
 ```  
   
 ### Parameters  
- [in] *point*  
- [in] *nSensitivity*  
+*point*<br/>
+[in] [in] *nSensitivity*  
  [in] *bCheckVisibility*  
   
 ### Return Value  
@@ -449,8 +449,8 @@ virtual void RemovePane(
 ```  
   
 ### Parameters  
- [in] *pBar*  
- [in] *bDestroy*  
+*pBar*<br/>
+[in] [in] *bDestroy*  
  [in] *bNoDelayedDestroy*  
   
 ### Remarks  
@@ -465,8 +465,8 @@ virtual void ReplacePane(
 ```  
   
 ### Parameters  
- [in] *pBarOrg*  
- [in] *pBarReplaceWith*  
+*pBarOrg*<br/>
+[in] [in] *pBarReplaceWith*  
   
 ### Remarks  
   
@@ -480,8 +480,8 @@ virtual BOOL SaveState(
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- [in] *uiID*  
+*lpszProfileName*<br/>
+[in] [in] *uiID*  
   
 ### Return Value  
   
@@ -534,8 +534,8 @@ virtual BOOL SetPreDockState(
 ```  
   
 ### Parameters  
- [in] *preDockState*  
- [in] *pBarToDock*  
+*preDockState*<br/>
+[in] [in] *pBarToDock*  
  [in] *dockMethod*  
   
 ### Return Value  
@@ -564,8 +564,8 @@ virtual void StoreRecentTabRelatedInfo(
 ```  
   
 ### Parameters  
- [in] *pDockingBar*  
- [in] *pTabbedBar*  
+*pDockingBar*<br/>
+[in] [in] *pTabbedBar*  
   
 ### Remarks  
   

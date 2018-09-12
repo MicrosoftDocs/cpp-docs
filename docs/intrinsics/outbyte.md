@@ -27,11 +27,11 @@ void __outbyte( 
 ```  
   
 #### Parameters  
- [in] `Port`  
- The port to send the data to.  
+`Port`<br/>
+[in] The port to send the data to.  
   
- [in] `Data`  
- The byte to be sent out the specified port.  
+`Data`<br/>
+[in] The byte to be sent out the specified port.  
   
 ## Requirements  
   

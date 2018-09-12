@@ -119,14 +119,14 @@ virtual BOOL GetErrorMessage(
 ```  
   
 ### Parameters  
- [in, out] *lpszError*  
- Pointer to a buffer that receives an error message.  
+*lpszError*<br/>
+[in, out] Pointer to a buffer that receives an error message.  
   
- [in] *nMaxError*  
- The maximum number of characters the specified buffer can hold. This includes the terminating null character.  
+*nMaxError*<br/>
+[in] The maximum number of characters the specified buffer can hold. This includes the terminating null character.  
   
- [in, out] *pnHelpContext*  
- Pointer to an unsigned integer that receives the help context ID. If `NULL`, no ID is returned.  
+*pnHelpContext*<br/>
+[in, out] Pointer to an unsigned integer that receives the help context ID. If `NULL`, no ID is returned.  
   
 ### Return Value  
  TRUE if the method was successful; otherwise FALSE.  

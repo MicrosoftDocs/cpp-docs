@@ -58,14 +58,14 @@ long _InterlockedCompareExchangePointer_rel (
 ```  
   
 #### Parameters  
- [in, out] `Destination`  
- Pointer to a pointer to the destination value. The sign is ignored.  
+`Destination`<br/>
+[in, out] Pointer to a pointer to the destination value. The sign is ignored.  
   
- [in] `Exchange`  
- Exchange pointer. The sign is ignored.  
+`Exchange`<br/>
+[in] Exchange pointer. The sign is ignored.  
   
- [in] `Comparand`  
- Pointer to compare to destination. The sign is ignored.  
+`Comparand`<br/>
+[in] Pointer to compare to destination. The sign is ignored.  
   
 ## Return Value  
  The return value is the initial value of the destination.  

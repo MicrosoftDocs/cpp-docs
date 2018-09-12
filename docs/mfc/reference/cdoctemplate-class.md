@@ -380,11 +380,11 @@ virtual CDocument* OpenDocumentFile(
 ```  
   
 ### Parameters  
- [in] *lpszPathName*  
- Pointer to the path of the file that contains the document to be opened.  
+*lpszPathName*<br/>
+[in] Pointer to the path of the file that contains the document to be opened.  
   
- [in] *bAddToMRU*  
- TRUE indicates the document is one of the most recent files; FALSE indicates the document is not one of the most recent files.  
+*bAddToMRU*<br/>
+[in] TRUE indicates the document is one of the most recent files; FALSE indicates the document is not one of the most recent files.  
   
 ### Return Value  
  A pointer to the document whose file is named by *lpszPathName*; NULL if unsuccessful.  

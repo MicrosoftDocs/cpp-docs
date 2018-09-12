@@ -149,11 +149,11 @@ void GetHotKey(
 ```  
   
 ### Parameters  
- [out] *wVirtualKeyCode*  
- Virtual key code of the keyboard shortcut. For a list of standard virtual key codes, see Winuser.h.  
+*wVirtualKeyCode*<br/>
+[out] Virtual key code of the keyboard shortcut. For a list of standard virtual key codes, see Winuser.h.  
   
- [out] *wModifiers*  
- A bitwise combination (OR) of flags that indicate the modifier keys in the keyboard shortcut.  
+*wModifiers*<br/>
+[out] A bitwise combination (OR) of flags that indicate the modifier keys in the keyboard shortcut.  
   
  The modifier flags are as follows:  
   
@@ -218,11 +218,11 @@ void SetHotKey(
 ```  
   
 ### Parameters  
- [in] *wVirtualKeyCode*  
- Virtual key code of the keyboard shortcut. For a list of standard virtual key codes, see Winuser.h.  
+*wVirtualKeyCode*<br/>
+[in] Virtual key code of the keyboard shortcut. For a list of standard virtual key codes, see Winuser.h.  
   
- [in] *wModifiers*  
- A bitwise combination (OR) of flags that indicate the modifier keys in the keyboard shortcut.  
+*wModifiers*<br/>
+[in] A bitwise combination (OR) of flags that indicate the modifier keys in the keyboard shortcut.  
   
  The modifier flags are as follows:  
   

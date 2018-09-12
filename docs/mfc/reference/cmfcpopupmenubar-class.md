@@ -89,8 +89,8 @@ virtual void AdjustSizeImmediate(BOOL bRecalcLayout);
 ```  
   
 ### Parameters  
- [in] *bRecalcLayout*  
- TRUE to automatically recalculate the layout of the popup menu bar pane; otherwise, FALSE.  
+*bRecalcLayout*<br/>
+[in] TRUE to automatically recalculate the layout of the popup menu bar pane; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -102,8 +102,8 @@ BOOL BuildOrigItems(UINT uiMenuResID);
 ```  
   
 ### Parameters  
- [in] *uiMenuResID*  
- Specifies the menu ID of the menu resource to load.  
+*uiMenuResID*<br/>
+[in] Specifies the menu ID of the menu resource to load.  
   
 ### Return Value  
  Returns TRUE if successful or FALSE if not.  
@@ -139,8 +139,8 @@ CMFCToolBar* FindDestintationToolBar(CPoint point);
 ```  
   
 ### Parameters  
- [in] *point*  
- A point on the screen.  
+*point*<br/>
+[in] A point on the screen.  
   
 ### Return Value  
  Returns a handle to the toolbar where the point lies, if there is one, or NULL if not.  
@@ -206,11 +206,11 @@ virtual BOOL ImportFromMenu(
 ```  
   
 ### Parameters  
- [in] *hMenu*  
- The menu from which to import the popup menu buttons.  
+*hMenu*<br/>
+[in] The menu from which to import the popup menu buttons.  
   
- [in] *bShowAllCommands*  
- TRUE if all commands on the menu are to be imported, or FALSE if rarely used ones may be hidden.  
+*bShowAllCommands*<br/>
+[in] TRUE if all commands on the menu are to be imported, or FALSE if rarely used ones may be hidden.  
   
 ### Return Value  
  Returns TRUE if the menu buttons were successfully imported from the menu, or FALSE if not.  
@@ -274,8 +274,8 @@ BOOL LoadFromHash(HMENU hMenu);
 ```  
   
 ### Parameters  
- [in] *hMenu*  
- A handle to the archived menu to load.  
+*hMenu*<br/>
+[in] A handle to the archived menu to load.  
   
 ### Return Value  
  Returns TRUE if the menu is loaded successfully, or FALSE if not.  
@@ -313,11 +313,11 @@ virtual void SetButtonStyle(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- The zero-based index of the toolbar button whose style is to be set.  
+*nIndex*<br/>
+[in] The zero-based index of the toolbar button whose style is to be set.  
   
- [in] *nStyle*  
- The style of the button. See [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md) for the list of available toolbar button styles.  
+*nStyle*<br/>
+[in] The style of the button. See [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md) for the list of available toolbar button styles.  
   
 ### Remarks  
   
@@ -329,8 +329,8 @@ void SetOffset(int iOffset);
 ```  
   
 ### Parameters  
- [in] *iOffset*  
- The number of rows that the popup menu bar should be offset.  
+*iOffset*<br/>
+[in] The number of rows that the popup menu bar should be offset.  
   
 ### Remarks  
   
@@ -344,11 +344,11 @@ void StartPopupMenuTimer(
 ```  
   
 ### Parameters  
- [in] *pMenuButton*  
- Pointer to the menu button for which to set the delay timer.  
+*pMenuButton*<br/>
+[in] Pointer to the menu button for which to set the delay timer.  
   
- [in] *nDelayFactor*  
- A delay factor, equal to at least one, to multiply by the standard menu delay time (generally between a half second and five seconds).  
+*nDelayFactor*<br/>
+[in] A delay factor, equal to at least one, to multiply by the standard menu delay time (generally between a half second and five seconds).  
   
 ### Remarks  
   

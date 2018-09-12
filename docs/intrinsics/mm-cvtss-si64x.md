@@ -26,8 +26,8 @@ __int64 _mm_cvtss_si64x( 
 ```  
   
 #### Parameters  
- [in] `value`  
- An `__m128` structure containing floating point-values.  
+`value`<br/>
+[in] An `__m128` structure containing floating point-values.  
   
 ## Return Value  
  A 64-bit integer, the result of the conversion of the first floating-point value to an integer.  

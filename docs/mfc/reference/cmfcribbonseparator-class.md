@@ -86,11 +86,11 @@ virtual int AddToListBox(
 ```  
   
 ### Parameters  
- [in] *pWndListBox*  
- A pointer to the **Commands** list where the separator is added.  
+*pWndListBox*<br/>
+[in] A pointer to the **Commands** list where the separator is added.  
   
- [in] *bDeep*  
- Ignored.  
+*bDeep*<br/>
+[in] Ignored.  
   
 ### Return Value  
  Zero-based index to the string in the list box specified by *pWndListBox*.  
@@ -103,8 +103,8 @@ CMFCRibbonSeparator(BOOL bIsHoriz = FALSE);
 ```  
   
 ### Parameters  
- [in] *bIsHoriz*  
- If TRUE, the separator is horizontal; if FALSE, the separator is vertical.  
+*bIsHoriz*<br/>
+[in] If TRUE, the separator is horizontal; if FALSE, the separator is vertical.  
   
 ### Remarks  
  Horizontal separators are used in application menus. Vertical separators are used in toolbars.  
@@ -122,8 +122,8 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```  
   
 ### Parameters  
- [in] *Src*  
- The source ribbon element to copy from.  
+*Src*<br/>
+[in] The source ribbon element to copy from.  
   
 ##  <a name="getregularsize"></a>  CMFCRibbonSeparator::GetRegularSize  
  Returns the size of a separator.  
@@ -133,8 +133,8 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device content.  
+*pDC*<br/>
+[in] A pointer to a device content.  
   
 ### Return Value  
  The size of the separator on the given device context.  
@@ -170,8 +170,8 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
 ##  <a name="ondrawonlist"></a>  CMFCRibbonSeparator::OnDrawOnList  
  Called by the system to draw the separator on the **Commands** list.  

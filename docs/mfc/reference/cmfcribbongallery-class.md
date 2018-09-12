@@ -112,20 +112,20 @@ void AddGroup(
 ```  
   
 ### Parameters  
- [in] *lpszGroupName*  
- Specifies the name of the group.  
+*lpszGroupName*<br/>
+[in] Specifies the name of the group.  
   
- [in] *uiImagesPaletteResID*  
- Specifies the resource ID of the image list that contains the images for the group.  
+*uiImagesPaletteResID*<br/>
+[in] Specifies the resource ID of the image list that contains the images for the group.  
   
- [in] *cxPaletteImage*  
- Specifies the width in pixels of an image.  
+*cxPaletteImage*<br/>
+[in] Specifies the width in pixels of an image.  
   
- [in] *imagesGroup*  
- A reference to image list that contains group images.  
+*imagesGroup*<br/>
+[in] A reference to image list that contains group images.  
   
- [in] *nIconsNum*  
- Specifies the number of icons in the group. This parameter should be specified only for custom (owner drawn) groups.  
+*nIconsNum*<br/>
+[in] Specifies the number of icons in the group. This parameter should be specified only for custom (owner drawn) groups.  
   
 ### Remarks  
  You can divide the items on a ribbon gallery into multiple groups by calling this method. Each group can have a caption.  
@@ -141,14 +141,14 @@ void AddSubItem(
 ```  
   
 ### Parameters  
- [in] *pSubItem*  
- A pointer to the item to add to the menu.  
+*pSubItem*<br/>
+[in] A pointer to the item to add to the menu.  
   
- [in] *nIndex*  
- Specifies the zero-based index of a location where to insert the item.  
+*nIndex*<br/>
+[in] Specifies the zero-based index of a location where to insert the item.  
   
- [in] *bOnTop*  
- TRUE to specify that the item should be inserted before the ribbon gallery; otherwise, FALSE.  
+*bOnTop*<br/>
+[in] TRUE to specify that the item should be inserted before the ribbon gallery; otherwise, FALSE.  
   
 ### Remarks  
  You can combine popup galleries with popup menu items by calling this method. Menu items can be placed before or after the gallery.  
@@ -242,11 +242,11 @@ void EnableMenuResize(
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable resizing the menu; otherwise, FALSE.  
+*bEnable*<br/>
+[in] TRUE to enable resizing the menu; otherwise, FALSE.  
   
- [in] *bVertcalOnly*  
- TRUE to specify that the gallery can be resized only vertically; FALSE to specify that the gallery can be resized both vertically and horizontally.  
+*bVertcalOnly*<br/>
+[in] TRUE to specify that the gallery can be resized only vertically; FALSE to specify that the gallery can be resized both vertically and horizontally.  
   
 ### Remarks  
  Use this method to enable or disable resizing the ribbon gallery. When resizing is enabled, the ribbon gallery displays a gripper that a user can use to resize it.  
@@ -259,8 +259,8 @@ void EnablMenuSideBar(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to specify that the side bar is enabled; otherwise, FALSE.  
+*bEnable*<br/>
+[in] TRUE to specify that the side bar is enabled; otherwise, FALSE.  
   
 ### Remarks  
  Call this method to enable or disable the Office XP-style side bar at the left side of the menu.  
@@ -298,8 +298,8 @@ LPCTSTR GetGroupName(int nGroupIndex) const;
 ```  
   
 ### Parameters  
- [in] *nGroupIndex*  
- Specifies the zero-based index for the group whose name you want to retrieve.  
+*nGroupIndex*<br/>
+[in] Specifies the zero-based index for the group whose name you want to retrieve.  
   
 ### Return Value  
  The name of the group located at the specified index. Passing an invalid index will result in a failed assertion.  
@@ -337,8 +337,8 @@ LPCTSTR GetItemToolTip(int nItemIndex) const;
 ```  
   
 ### Parameters  
- [in] *nItemIndex*  
- Specifies the zero-based index of the item for which to retrieve the tooltip text.  
+*nItemIndex*<br/>
+[in] Specifies the zero-based index of the item for which to retrieve the tooltip text.  
   
 ### Return Value  
  A pointer to the tooltip string assigned to an item in the ribbon gallery. It can be NULL if no tooltip is assigned to that item.  
@@ -353,8 +353,8 @@ static int GetLastSelectedItem(UINT uiCmdID);
 ```  
   
 ### Parameters  
- [in] *uiCmdID*  
- Specifies the command ID of the menu item that opened the ribbon gallery.  
+*uiCmdID*<br/>
+[in] Specifies the command ID of the menu item that opened the ribbon gallery.  
   
 ### Return Value  
  When the user selects any item in the ribbon gallery, the library sends the WM_COMMAND message along with Command ID of the menu button that opened the ribbon gallery.  
@@ -493,20 +493,20 @@ virtual void OnDrawPaletteIcon(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to the device context that is used for drawing.  
+*pDC*<br/>
+[in] A pointer to the device context that is used for drawing.  
   
- [in] *rectIcon*  
- Specifies the bounding rectangle of the icon to draw.  
+*rectIcon*<br/>
+[in] Specifies the bounding rectangle of the icon to draw.  
   
- [in] *nIconIndex*  
- Specifies the zero-based index in the image list of gallery icons of the icon to draw.  
+*nIconIndex*<br/>
+[in] Specifies the zero-based index in the image list of gallery icons of the icon to draw.  
   
- [in] *pIcon*  
- A pointer to the icon being drawn.  
+*pIcon*<br/>
+[in] A pointer to the icon being drawn.  
   
- [in] *clrText*  
- Specifies the color for the text of the item to draw.  
+*clrText*<br/>
+[in] Specifies the color for the text of the item to draw.  
   
 ### Remarks  
  You can override this method in a derived class to customize the appearance of a ribbon gallery.  
@@ -576,11 +576,11 @@ virtual BOOL SetACCData(
 ```  
   
 ### Parameters  
- [in] *pParent*  
- The parent window of the ribbon gallery window.  
+*pParent*<br/>
+[in] The parent window of the ribbon gallery window.  
   
- [out] *data*  
- A `CAccessibilityData` object that receives the accessibility data from the ribbon gallery.  
+*data*<br/>
+[out] A `CAccessibilityData` object that receives the accessibility data from the ribbon gallery.  
   
 ### Return Value  
   
@@ -595,8 +595,8 @@ void SetButtonMode(BOOL bSet=TRUE);
 ```  
   
 ### Parameters  
- [in] *bSet*  
- TRUE to display the ribbon gallery as a drop-down menu button; FALSE to display the contents of the ribbon gallery directly on the ribbon.  
+*bSet*<br/>
+[in] TRUE to display the ribbon gallery as a drop-down menu button; FALSE to display the contents of the ribbon gallery directly on the ribbon.  
   
 ### Remarks  
   
@@ -610,11 +610,11 @@ void SetGroupName(
 ```  
   
 ### Parameters  
- [in] *nGroupIndex*  
- Specifies the zero-based index for the group for which the name is being changed.  
+*nGroupIndex*<br/>
+[in] Specifies the zero-based index for the group for which the name is being changed.  
   
- [in] *lpszGroupName*  
- Specifies the new name for the group.  
+*lpszGroupName*<br/>
+[in] Specifies the new name for the group.  
   
 ### Remarks  
  The group whose name is being changed must have been added using the [CMFCRibbonGallery::AddGroup](#addgroup) method.  
@@ -627,8 +627,8 @@ void SetIconsInRow(int nIconsInRow);
 ```  
   
 ### Parameters  
- [in] *nIconsInRow*  
- Specifies the number of items to appear in each row of the gallery.  
+*nIconsInRow*<br/>
+[in] Specifies the number of items to appear in each row of the gallery.  
   
 ### Remarks  
  Use this method to specify the width of the ribbon gallery.  
@@ -643,11 +643,11 @@ void SetItemToolTip(
 ```  
   
 ### Parameters  
- [in] *nItemIndex*  
- The zero-based index of the palette item with which to associate the tooltip.  
+*nItemIndex*<br/>
+[in] The zero-based index of the palette item with which to associate the tooltip.  
   
- [in] *lpszToolTip*  
- The text to appear on the tooltip.  
+*lpszToolTip*<br/>
+[in] The text to appear on the tooltip.  
   
 ### Remarks  
   
@@ -664,14 +664,14 @@ void SetPalette(
 ```  
   
 ### Parameters  
- [in] *imagesPalette*  
- Specifies the image list that contains the icons to appear on the gallery.  
+*imagesPalette*<br/>
+[in] Specifies the image list that contains the icons to appear on the gallery.  
   
- [in] *uiImagesPaletteResID*  
- Specifies the resource ID of the image list that contains the icons to appear on the gallery.  
+*uiImagesPaletteResID*<br/>
+[in] Specifies the resource ID of the image list that contains the icons to appear on the gallery.  
   
- [in] *cxPaletteImage*  
- Specifies the width, in pixels, of an image on the gallery.  
+*cxPaletteImage*<br/>
+[in] Specifies the width, in pixels, of an image on the gallery.  
   
 ### Remarks  
   
@@ -683,8 +683,8 @@ void SetPaletteID(UINT nID);
 ```  
   
 ### Parameters  
- [in] *nID*  
- Specifies the command ID that is sent in the WM_COMMAND message when a user selects a gallery item.  
+*nID*<br/>
+[in] Specifies the command ID that is sent in the WM_COMMAND message when a user selects a gallery item.  
   
 ### Remarks  
  To determine the specific item that a user selected from the gallery, call the [CMFCRibbonGallery::GetLastSelectedItem](#getlastselecteditem) static method.  

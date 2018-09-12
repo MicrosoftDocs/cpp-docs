@@ -123,23 +123,23 @@ CMFCToolBarMenuButton(
 ```  
   
 ### Parameters  
- [in] *src*  
- An existing `CMFCToolBarMenuButton` object to be copied into this `CMFCToolBarMenuButton` object.  
+*src*<br/>
+[in] An existing `CMFCToolBarMenuButton` object to be copied into this `CMFCToolBarMenuButton` object.  
   
- [in] *uiID*  
- The ID of the command to execute when a user clicks the button; or (UINT)-1 for a menu button that does not directly execute a command.  
+*uiID*<br/>
+[in] The ID of the command to execute when a user clicks the button; or (UINT)-1 for a menu button that does not directly execute a command.  
   
- [in] *hMenu*  
- A handle to a menu; or NULL if the button does not have a menu.  
+*hMenu*<br/>
+[in] A handle to a menu; or NULL if the button does not have a menu.  
   
- [in] *iImage*  
- Index of the image for the button; or -1 if this button does not have an icon or uses the icon for the command specified by *uiID*. The index is the same for each `CMFCToolBarImages` object in your application.  
+*iImage*<br/>
+[in] Index of the image for the button; or -1 if this button does not have an icon or uses the icon for the command specified by *uiID*. The index is the same for each `CMFCToolBarImages` object in your application.  
   
- [in] *lpszText*  
- The text of the toolbar menu button.  
+*lpszText*<br/>
+[in] The text of the toolbar menu button.  
   
- [in] *bUserButton*  
- TRUE if the button displays a user-defined image; FALSE if the button displays a predefined image associated with the command specified by *uiID*.  
+*bUserButton*<br/>
+[in] TRUE if the button displays a user-defined image; FALSE if the button displays a predefined image associated with the command specified by *uiID*.  
   
 ### Remarks  
  If *uiID* is a valid command ID, the button performs that command when the user clicks it. If *hMenu* is a valid menu handle, the button provides a drop-down menu when it appears in a toolbar or a submenu when it appears in a menu. If both *uiID* and *hMenu* are valid, the button is a split-button with a portion that will perform the command when the user clicks on it and a portion with a down arrow that will drop-down a menu when the user clicks on it. However, if *hMenu* is valid, a user will not be able to click the button to perform a command when the button is inserted into a menu.  
@@ -183,8 +183,8 @@ virtual void CreateFromMenu(HMENU hMenu);
 ```  
   
 ### Parameters  
- [in] *hMenu*  
- A handle to a menu.  
+*hMenu*<br/>
+[in] A handle to a menu.  
   
 ### Remarks  
  A toolbar menu button can display a drop-down submenu.  
@@ -230,14 +230,14 @@ void DrawDocumentIcon(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to the device context.  
+*pDC*<br/>
+[in] A pointer to the device context.  
   
- [in] *rectImage*  
- Coordinates of the image bounding rectangle.  
+*rectImage*<br/>
+[in] Coordinates of the image bounding rectangle.  
   
- [in] *hIcon*  
- A handle to the icon.  
+*hIcon*<br/>
+[in] A handle to the icon.  
   
 ### Remarks  
  This method takes a document icon and draws it on the menu button, centered in the area specified by *rectImage*.  
@@ -327,8 +327,8 @@ void GetImageRect(CRect& rectImage);
 ```  
   
 ### Parameters  
- [out] *rectImage*  
- A reference to a `CRect` object that receives the coordinates of the image bounding rectangle.  
+*rectImage*<br/>
+[out] A reference to a `CRect` object that receives the coordinates of the image bounding rectangle.  
   
 ##  <a name="getpaletterows"></a>  CMFCToolBarMenuButton::GetPaletteRows  
  Returns the number of rows in the drop-down menu when the menu is in palette mode.  
@@ -463,8 +463,8 @@ virtual SIZE OnCalculateSize(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- [in] *sizeDefault*  
+*pDC*<br/>
+[in] [in] *sizeDefault*  
  [in] *bHorz*  
   
 ### Return Value  
@@ -502,8 +502,8 @@ virtual BOOL OnClick(
 ```  
   
 ### Parameters  
- [in] *pWnd*  
- [in] *bDelay*  
+*pWnd*<br/>
+[in] [in] *bDelay*  
   
 ### Return Value  
   
@@ -554,14 +554,14 @@ virtual void OnDraw(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- [in] *rect*  
- [in] *pImages*  
- [in] *bHorz*  
- [in] *bCustomizeMode*  
- [in] *bHighlight*  
- [in] *bDrawBorder*  
- [in] *bGrayDisabledButtons*  
+*pDC*<br/>
+[in] [in] *rect*  
+*pImages*<br/>
+[in] [in] *bHorz*  
+*bCustomizeMode*<br/>
+[in] [in] *bHighlight*  
+*bDrawBorder*<br/>
+[in] [in] *bGrayDisabledButtons*  
   
 ### Remarks  
   
@@ -576,8 +576,8 @@ virtual int OnDrawOnCustomizeList(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- [in] *rect*  
+*pDC*<br/>
+[in] [in] *rect*  
  [in] *bSelected*  
   
 ### Return Value  
@@ -592,8 +592,8 @@ virtual BOOL OpenPopupMenu(CWnd* pWnd=NULL);
 ```  
   
 ### Parameters  
- [in] *pWnd*  
- Specifies the window that receives the drop-down menu commands. It can be NULL only if the toolbar menu button has a parent window.  
+*pWnd*<br/>
+[in] Specifies the window that receives the drop-down menu commands. It can be NULL only if the toolbar menu button has a parent window.  
   
 ### Return Value  
  TRUE when a [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object was created and opened successfully; otherwise FALSE.  
@@ -662,8 +662,8 @@ void SetMenuOnly(BOOL bMenuOnly);
 ```  
   
 ### Parameters  
- [in] *bMenuOnly*  
- TRUE to show this button as a menu button when it has both a valid command ID and a submenu, FALSE to show this button as a split button when it has both a valid command ID and a submenu.  
+*bMenuOnly*<br/>
+[in] TRUE to show this button as a menu button when it has both a valid command ID and a submenu, FALSE to show this button as a split button when it has both a valid command ID and a submenu.  
   
 ### Remarks  
  Typically, when a toolbar menu button has both a submenu and a command ID, the menu appears to be a split button that has a main button and an attached down arrow button. If you call this method and *bMenuOnly* is TRUE, the button instead appears to be a single menu button with a down arrow in the button. When the user clicks the arrow in either mode, the submenu opens, and when the user clicks the non-arrow part of the button in either mode the framework executes the command .  
@@ -678,11 +678,11 @@ void SetMenuPaletteMode(
 ```  
   
 ### Parameters  
- [in] *bMenuPaletteMode*  
- Specifies whether the drop-down menu is in palette mode.  
+*bMenuPaletteMode*<br/>
+[in] Specifies whether the drop-down menu is in palette mode.  
   
- [in] *nPaletteRows*  
- Number of rows in palette.  
+*nPaletteRows*<br/>
+[in] Number of rows in palette.  
   
 ### Remarks  
  In the palette mode, all menu items are displayed as a multicolumn palette. You specify the number of rows by using *nPaletteRows*.  
@@ -719,8 +719,8 @@ virtual void SetTearOff(UINT uiBarID);
 ```  
   
 ### Parameters  
- [in] *uiBarID*  
- Specifies a new tear-off bar ID.  
+*uiBarID*<br/>
+[in] Specifies a new tear-off bar ID.  
   
 ### Remarks  
  Call this method to specify the ID for the tear-off bar that is created when the user drags the menu button off of a menu bar. If the *uiBarID* parameter is 0, the user cannot tear off the menu button.  

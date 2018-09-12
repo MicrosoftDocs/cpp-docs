@@ -346,11 +346,11 @@ CString GetCueBanner() const;
 ```  
   
 ### Parameters  
- [out] *lpszText*  
- A pointer to a string that contains the cue text.  
+*lpszText*<br/>
+[out] A pointer to a string that contains the cue text.  
   
- [in] *cchText*  
- The number of characters that can be received. This number includes the terminating NULL character.  
+*cchText*<br/>
+[in] The number of characters that can be received. This number includes the terminating NULL character.  
   
 ### Return Value  
  For the first overload, TRUE if the method is successful; otherwise FALSE.  
@@ -818,11 +818,11 @@ BOOL SetCueBanner(
 ```  
   
 ### Parameters  
- [in] *lpszText*  
- Pointer to a string that contains the cue to display in the edit control.  
+*lpszText*<br/>
+[in] Pointer to a string that contains the cue to display in the edit control.  
   
- [in] *fDrawWhenFocused*  
- If FALSE, the cue banner is not drawn when the user clicks in the edit control and gives the control the focus.  
+*fDrawWhenFocused*<br/>
+[in] If FALSE, the cue banner is not drawn when the user clicks in the edit control and gives the control the focus.  
   
  If TRUE, the cue banner is drawn even when the control has focus. The cue banner disappears when the user starts to type in the control.  
   

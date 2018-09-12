@@ -472,8 +472,8 @@ BOOL SetSimple(BOOL bSimple = TRUE);
 ```  
   
 ### Parameters  
- [in] *bSimple*  
- Display-type flag. If this parameter is TRUE, the control displays simple text; if it is FALSE, it displays multiple parts.  
+*bSimple*<br/>
+[in] Display-type flag. If this parameter is TRUE, the control displays simple text; if it is FALSE, it displays multiple parts.  
   
 ### Return Value  
  Always returns 0.  

@@ -1162,8 +1162,8 @@ BOOL IsButtonHighlighted(int nID) const;
 ```  
   
 ### Parameters  
- [in] *nID*  
- The command ID for the toolbar button.  
+*nID*<br/>
+[in] The command ID for the toolbar button.  
   
 ### Return Value  
  Positive integer if the button is highlighted, 0 if the button is not highlighted, or -1 if an error occurs.  
@@ -1176,8 +1176,8 @@ BOOL IsButtonIndeterminate(int nID) const;
 ```  
   
 ### Parameters  
- [in] *nID*  
- Command identifier of the button in the toolbar.  
+*nID*<br/>
+[in] Command identifier of the button in the toolbar.  
   
 ### Return Value  
  Positive integer if the button is indeterminate, zero if the button is not indeterminate, or -1 if an error occurs.  
@@ -1304,11 +1304,11 @@ BOOL PressButton(int nID, BOOL bPress = TRUE);
 ```  
   
 ### Parameters  
- [in] *nID*  
- Command identifier of the button to press or release.  
+*nID*<br/>
+[in] Command identifier of the button to press or release.  
   
- [in] *bPress*  
- TRUE to press the specified button; FALSE to release the specified button. The default value is TRUE.  
+*bPress*<br/>
+[in] TRUE to press the specified button; FALSE to release the specified button. The default value is TRUE.  
   
 ### Return Value  
  TRUE if the method is successful; otherwise, FALSE.  
@@ -1406,8 +1406,8 @@ BOOL SetAnchorHighlight(BOOL fAnchor = TRUE);
 ```  
   
 ### Parameters  
- [in] *fAnchor*  
- Specifies if anchor highlighting is enabled or disabled. If this value is nonzero, anchor highlighting will be enabled. If this value is zero, anchor highlighting will be disabled  
+*fAnchor*<br/>
+[in] Specifies if anchor highlighting is enabled or disabled. If this value is nonzero, anchor highlighting will be enabled. If this value is zero, anchor highlighting will be disabled  
   
 ### Return Value  
  The previous anchor setting. If highlighting was enabled, this value is nonzero. If highlighting was not enabled, this value is zero.  

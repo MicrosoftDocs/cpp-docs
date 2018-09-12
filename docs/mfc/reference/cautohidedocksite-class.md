@@ -155,8 +155,8 @@ void SetOffsetLeft(int nOffset);
 ```  
   
 ### Parameters  
- [in] *nOffset*  
- The new offset.  
+*nOffset*<br/>
+[in] The new offset.  
   
 ### Remarks  
  [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) objects are positioned statically on the `CAutoHideDockSite` object. This means that the user cannot manually change the location of `CMFCAutoHideBar` objects. The `SetOffsetLeft` method controls the spacing between the left side of the left-most `CMFCAutoHideBar` and the left side of the `CAutoHideDockSite`.  
@@ -169,8 +169,8 @@ void SetOffsetRight(int nOffset);
 ```  
   
 ### Parameters  
- [in] *nOffset*  
- The new offset.  
+*nOffset*<br/>
+[in] The new offset.  
   
 ### Remarks  
  [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) objects are positioned statically on the `CAutoHideDockSite` object. This means that the user cannot manually change the location of the `CMFCAutoHideBar` objects. The `SetOffsetRight` method controls the spacing between the right side of the right-most `CMFCAutoHideBar` and the right side of the `CAutoHideDockSite`.  

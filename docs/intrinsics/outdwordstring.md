@@ -28,14 +28,14 @@ void __outdwordstring( 
 ```  
   
 #### Parameters  
- [in] `Port`  
- The port to send the data to.  
+`Port`<br/>
+[in] The port to send the data to.  
   
- [in] `Buffer`  
- A pointer to the data to be sent out the specified port.  
+`Buffer`<br/>
+[in] A pointer to the data to be sent out the specified port.  
   
- [in] `Count`  
- The number of doublewords to send.  
+`Count`<br/>
+[in] The number of doublewords to send.  
   
 ## Requirements  
   

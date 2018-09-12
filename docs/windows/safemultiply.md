@@ -29,14 +29,14 @@ inline bool SafeMultiply (
 
 ### Parameters
 
-[in] *t*  
-The first number to multiply. This must be of type `T`.
+*t*<br/>
+[in] The first number to multiply. This must be of type `T`.
 
-[in] *u*  
-The second number to multiply. This must be of type `U`.
+*u*<br/>
+[in] The second number to multiply. This must be of type `U`.
 
-[out] *result*  
-The parameter where **SafeMultiply** stores the result.
+*result*<br/>
+[out] The parameter where **SafeMultiply** stores the result.
 
 ## Return Value
 

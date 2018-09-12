@@ -59,8 +59,8 @@ __int64 _InterlockedDecrement64_nf(
 ```  
   
 #### Parameters  
- [in, out] `lpAddend`  
- Pointer to the variable to be decremented.  
+`lpAddend`<br/>
+[in, out] Pointer to the variable to be decremented.  
   
 ## Return Value  
  The return value is the resulting decremented value.  

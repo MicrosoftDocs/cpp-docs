@@ -209,8 +209,8 @@ void SaveListOfRecentPanes(CList<HWND,
 ```  
   
 ### Parameters  
- [in] *CList<HWND*  
- [in] *lstOrg*  
+*CList<HWND*<br/>
+[in] [in] *lstOrg*  
  [in] *bForSlider*  
   
 ### Remarks  
@@ -225,8 +225,8 @@ virtual void SetInfo(
 ```  
   
 ### Parameters  
- [in] *bForSlider*  
- [in] *srcInfo*  
+*bForSlider*<br/>
+[in] [in] *srcInfo*  
   
 ### Remarks  
   
@@ -240,8 +240,8 @@ virtual void StoreDockInfo(
 ```  
   
 ### Parameters  
- [in] *pRecentContainer*  
- [in] *pTabbedBar*  
+*pRecentContainer*<br/>
+[in] [in] *pTabbedBar*  
   
 ### Remarks  
   

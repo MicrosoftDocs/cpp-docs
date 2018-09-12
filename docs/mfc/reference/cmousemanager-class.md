@@ -66,20 +66,20 @@ BOOL AddView(
 ```  
   
 ### Parameters  
- [in] *iViewId*  
- A view ID.  
+*iViewId*<br/>
+[in] A view ID.  
   
- [in] *uiViewNameResId*  
- A resource string ID that references the view name.  
+*uiViewNameResId*<br/>
+[in] A resource string ID that references the view name.  
   
- [in] *uiIconId*  
- A view icon ID.  
+*uiIconId*<br/>
+[in] A view icon ID.  
   
- [in] *iId*  
- A view ID.  
+*iId*<br/>
+[in] A view ID.  
   
- [in] *lpszViewName*  
- A view name.  
+*lpszViewName*<br/>
+[in] A view name.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -104,8 +104,8 @@ UINT GetViewDblClickCommand(int iId) const;
 ```  
   
 ### Parameters  
- [in] *iId*  
- The view ID.  
+*iId*<br/>
+[in] The view ID.  
   
 ### Return Value  
  The command identifier if the view is associated with a command; otherwise 0.  
@@ -118,8 +118,8 @@ UINT GetViewIconId(int iViewId) const;
 ```  
   
 ### Parameters  
- [in] *iViewId*  
- The view ID.  
+*iViewId*<br/>
+[in] The view ID.  
   
 ### Return Value  
  An icon resource identifier if successful; otherwise 0.  
@@ -135,8 +135,8 @@ int GetViewIdByName(LPCTSTR lpszName) const;
 ```  
   
 ### Parameters  
- [in] *lpszName*  
- The view name.  
+*lpszName*<br/>
+[in] The view name.  
   
 ### Return Value  
  A view ID if successful; otherwise 0.  
@@ -152,8 +152,8 @@ void GetViewNames(CStringList& listOfNames) const;
 ```  
   
 ### Parameters  
- [out] *listOfNames*  
- A reference to `CStringList` object.  
+*listOfNames*<br/>
+[out] A reference to `CStringList` object.  
   
 ### Remarks  
  This method fills the parameter `listOfNames` with the names of all the views registered by using [CMouseManager::AddView](#addview).  
@@ -166,8 +166,8 @@ BOOL LoadState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- A path of a registry key.  
+*lpszProfileName*<br/>
+[in] A path of a registry key.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -185,8 +185,8 @@ BOOL SaveState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- A path of a registry key.  
+*lpszProfileName*<br/>
+[in] A path of a registry key.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -206,11 +206,11 @@ void SetCommandForDblClk(
 ```  
   
 ### Parameters  
- [in] *iViewId*  
- The view identifier.  
+*iViewId*<br/>
+[in] The view identifier.  
   
- [in] *uiCmd*  
- The command identifier.  
+*uiCmd*<br/>
+[in] The command identifier.  
   
 ### Remarks  
  In order to associate a custom command with a view, you must first register the view by using [CMouseManager::AddView](#addview). The `AddView` method requires a view identifier as an input parameter. Once you register a view, you can call `CMouseManager::SetCommandForDblClk` with the same view identifier input parameter that you supplied to `AddView`. Thereafter, when the user double-clicks the mouse in the registered view, the application will execute the command indicated by *uiCmd.* To support the custom mouse behavior, you will also need to customize the view registered with the mouse manager. For more information about custom mouse behavior, see [Keyboard and Mouse Customization](../keyboard-and-mouse-customization.md).  

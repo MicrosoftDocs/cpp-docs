@@ -95,8 +95,8 @@ CMFCRibbonCustomizePropertyPage(CMFCRibbonBar* pRibbonBar = NULL);
 ```  
   
 ### Parameters  
- [in] *pRibbonBar*  
- A pointer to a ribbon control for which the options to customize.  
+*pRibbonBar*<br/>
+[in] A pointer to a ribbon control for which the options to customize.  
   
 ##  <a name="onok"></a>  CMFCRibbonCustomizePropertyPage::OnOK  
  Calleld by the system when a user clicks **OK** on the **Customize** dialog box.  

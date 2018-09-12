@@ -102,8 +102,8 @@ void EnableMultipleSort(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable multiple column sort mode; FALSE to disable multiple column sort mode and to remove any columns from the list of sorted columns. The default value is TRUE.  
+*bEnable*<br/>
+[in] TRUE to enable multiple column sort mode; FALSE to disable multiple column sort mode and to remove any columns from the list of sorted columns. The default value is TRUE.  
   
 ### Remarks  
  Use this method to enable or disable multiple column sort mode. Two or more columns can participate in a sort if the header control is in multiple column sort mode.  
@@ -116,8 +116,8 @@ int GetColumnState(int iColumn) const;
 ```  
   
 ### Parameters  
- [in] *iColumn*  
- The zero-based index of a column.  
+*iColumn*<br/>
+[in] The zero-based index of a column.  
   
 ### Return Value  
  A value that indicate the sort status of the specified column. The following table lists the possible values:  
@@ -192,20 +192,20 @@ virtual void OnDrawItem(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *iItem*  
- The zero-based index of the item to draw.  
+*iItem*<br/>
+[in] The zero-based index of the item to draw.  
   
- [in] *rect*  
- The bounding rectangle of the item to draw.  
+*rect*<br/>
+[in] The bounding rectangle of the item to draw.  
   
- [in] *bIsPressed*  
- TRUE to draw the item in pressed state; otherwise, FALSE.  
+*bIsPressed*<br/>
+[in] TRUE to draw the item in pressed state; otherwise, FALSE.  
   
- [in] *bIsHighlighted*  
- TRUE to draw the item in highlighted state; otherwise, FALSE.  
+*bIsHighlighted*<br/>
+[in] TRUE to draw the item in highlighted state; otherwise, FALSE.  
   
 ##  <a name="ondrawsortarrow"></a>  CMFCHeaderCtrl::OnDrawSortArrow  
  Called by the framework to draw the sort arrow.  
@@ -217,11 +217,11 @@ virtual void OnDrawSortArrow(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rectArrow*  
- The bounding rectangle of the sort arrow.  
+*rectArrow*<br/>
+[in] The bounding rectangle of the sort arrow.  
   
 ##  <a name="onfillbackground"></a>  CMFCHeaderCtrl::OnFillBackground  
  Called by the framework to fill the background of a header control column.  
@@ -231,8 +231,8 @@ virtual void OnFillBackground(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
 ### Remarks  
   
@@ -244,8 +244,8 @@ void RemoveSortColumn(int iColumn);
 ```  
   
 ### Parameters  
- [in] *iColumn*  
- The zero-based index of the column to remove.  
+*iColumn*<br/>
+[in] The zero-based index of the column to remove.  
   
 ##  <a name="setsortcolumn"></a>  CMFCHeaderCtrl::SetSortColumn  
  Sets the sort order of a specified column in a header control.  
@@ -258,14 +258,14 @@ void SetSortColumn(
 ```  
   
 ### Parameters  
- [in] *iColumn*  
- The zero-based index of a header control column. If this parameter is less than zero, this method removes all columns from the list of sort columns.  
+*iColumn*<br/>
+[in] The zero-based index of a header control column. If this parameter is less than zero, this method removes all columns from the list of sort columns.  
   
- [in] *bAscending*  
- Specifies the sort order of the column that the *iColumn* parameter specifies. TRUE to set ascending order; FALSE to set descending order. The default value is TRUE.  
+*bAscending*<br/>
+[in] Specifies the sort order of the column that the *iColumn* parameter specifies. TRUE to set ascending order; FALSE to set descending order. The default value is TRUE.  
   
- [in] *bAdd*  
- TRUE to set the sort order of the column that the *iColumn* parameter specifies.  
+*bAdd*<br/>
+[in] TRUE to set the sort order of the column that the *iColumn* parameter specifies.  
   
  If the current header control is in *multiple column sort* mode, this method adds the specified column to the list of sort columns. Use [CMFCHeaderCtrl::EnableMultipleSort](#enablemultiplesort) to set multiple column sort mode.  
   

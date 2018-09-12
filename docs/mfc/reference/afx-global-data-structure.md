@@ -160,14 +160,14 @@ BOOL DrawParentBackground(
 ```  
   
 ### Parameters   
- [in] *pWnd*  
- Pointer to a control's window.  
+*pWnd*<br/>
+[in] Pointer to a control's window.  
   
- [in] *pDC*  
- Pointer to a device context.  
+*pDC*<br/>
+[in] Pointer to a device context.  
   
- [in] *lpRect*  
- Pointer to a rectangle that bounds the area to draw. The default value is NULL.  
+*lpRect*<br/>
+[in] Pointer to a rectangle that bounds the area to draw. The default value is NULL.  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -190,36 +190,36 @@ BOOL DrawTextOnGlass(
 ```  
   
 ### Parameters   
- [in] *hTheme*  
- Handle to the theme data of a window, or NULL. The framework uses the specified theme to draw the text if this parameter is not NULL and themes are supported. Otherwise, the framework does not use a theme to draw the text.  
+*hTheme*<br/>
+[in] Handle to the theme data of a window, or NULL. The framework uses the specified theme to draw the text if this parameter is not NULL and themes are supported. Otherwise, the framework does not use a theme to draw the text.  
   
  Use the [OpenThemeData](/windows/desktop/api/uxtheme/nf-uxtheme-openthemedata) method to create an HTHEME.  
   
- [in] *pDC*  
- Pointer to a device context.  
+*pDC*<br/>
+[in] Pointer to a device context.  
   
- [in] *iPartId*  
- The control part that has the desired text appearance. For more information, see the Parts column of the table in [Parts and States](https://msdn.microsoft.com/library/windows/desktop/bb773210). If this value is 0, the text is drawn in the default font, or a font selected into the device context.  
+*iPartId*<br/>
+[in] The control part that has the desired text appearance. For more information, see the Parts column of the table in [Parts and States](https://msdn.microsoft.com/library/windows/desktop/bb773210). If this value is 0, the text is drawn in the default font, or a font selected into the device context.  
   
- [in] *iStateId*  
- The control state that has the desired text appearance. For more information, see the States column of the table in [Parts and States](https://msdn.microsoft.com/library/windows/desktop/bb773210).  
+*iStateId*<br/>
+[in] The control state that has the desired text appearance. For more information, see the States column of the table in [Parts and States](https://msdn.microsoft.com/library/windows/desktop/bb773210).  
   
- [in] *strText*  
- The text to draw.  
+*strText*<br/>
+[in] The text to draw.  
   
- [in] *rect*  
- The boundary of the area in which the specified text is drawn.  
+*rect*<br/>
+[in] The boundary of the area in which the specified text is drawn.  
   
- [in] *dwFlags*  
- A bitwise combination (OR) of flags that specify how the specified text is drawn.  
+*dwFlags*<br/>
+[in] A bitwise combination (OR) of flags that specify how the specified text is drawn.  
   
  If the *hTheme* parameter is `NULL` or if themes are not supported and enabled, the *nFormat* parameter of the [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) method describes the valid flags. If themes are supported, the *dwFlags* parameter of the [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex) method describes the valid flags.  
   
- [in] *nGlowSize*  
- The size of a glow effect that is drawn on the background before drawing the specified text. The default value is 0.  
+*nGlowSize*<br/>
+[in] The size of a glow effect that is drawn on the background before drawing the specified text. The default value is 0.  
   
- [in] *clrText*  
- The color in which the specified text is drawn. The default value is the default color.  
+*clrText*<br/>
+[in] The color in which the specified text is drawn. The default value is the default color.  
   
 ### Return Value  
  TRUE if a theme is used to draw the specified text; otherwise, FALSE.  
@@ -245,8 +245,8 @@ void EnableAccessibilitySupport(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters   
- [in] *bEnable*  
- TRUE to enable accessibility support; FALSE to disable accessibility support. The default value is TRUE.  
+*bEnable*<br/>
+[in] TRUE to enable accessibility support; FALSE to disable accessibility support. The default value is TRUE.  
   
 ### Remarks  
  Active Accessibility is a COM-based technology that improves the way programs and the Windows operating system work together with assistive technology products. It provides reliable methods for exposing information about user interface elements. However, a newer accessibility model called Microsoft UI Automation is now available. For a comparison of the two technologies, see [UI Automation and Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility).  
@@ -271,17 +271,17 @@ BOOL ExcludeTag(
 ```  
   
 ### Parameters   
- [in] *strBuffer*  
- A buffer of text.  
+*strBuffer*<br/>
+[in] A buffer of text.  
   
- [in] *lpszTag*  
- The name of a pair of opening and closing XML tags.  
+*lpszTag*<br/>
+[in] The name of a pair of opening and closing XML tags.  
   
- [out] *strTag*  
- When this method returns, the *strTag* parameter contains the text that is between the opening and closing XML tags that are named by the *lpszTag* parameter. Any leading or trailing whitespace is trimmed from the result.  
+*strTag*<br/>
+[out] When this method returns, the *strTag* parameter contains the text that is between the opening and closing XML tags that are named by the *lpszTag* parameter. Any leading or trailing whitespace is trimmed from the result.  
   
- [in] *bIsCharsList*  
- TRUE to convert symbols for escape characters in the *strTag* parameter into actual escape characters; FALSE not to perform the conversion.The default value is FALSE. For more information, see Remarks.  
+*bIsCharsList*<br/>
+[in] TRUE to convert symbols for escape characters in the *strTag* parameter into actual escape characters; FALSE not to perform the conversion.The default value is FALSE. For more information, see Remarks.  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -310,8 +310,8 @@ COLORREF GetColor(int nColor);
 ```  
   
 ### Parameters   
- [in] *nColor*  
- A value that specifies a user interface element whose color is retrieved. For a list of valid values, see the *nIndex* parameter of the [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor) method.  
+*nColor*<br/>
+[in] A value that specifies a user interface element whose color is retrieved. For a list of valid values, see the *nIndex* parameter of the [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor) method.  
   
 ### Return Value  
  The RGB color value of the specified user interface element. For more information, see Remarks.  
@@ -356,8 +356,8 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
 ```  
   
 ### Parameters   
- [in, out] *info*  
- A [NONCLIENTMETRICS](https://msdn.microsoft.com/library/windows/desktop/ff729175) structure that contains the scalable metrics associated with the nonclient area of a nonminimized window.  
+*info*<br/>
+[in, out] A [NONCLIENTMETRICS](https://msdn.microsoft.com/library/windows/desktop/ff729175) structure that contains the scalable metrics associated with the nonclient area of a nonminimized window.  
   
 ### Return Value  
  TRUE if this method succeeds; otherwise, FALSE.  
@@ -375,8 +375,8 @@ int GetTextHeight(BOOL bHorz = TRUE);
 ```  
   
 ### Parameters   
- [in] *bHorz*  
- TRUE to retrieve the height of characters when text runs horizontally; FALSE to retrieve the height of characters when text runs vertically. The default value is TRUE.  
+*bHorz*<br/>
+[in] TRUE to retrieve the height of characters when text runs horizontally; FALSE to retrieve the height of characters when text runs vertically. The default value is TRUE.  
   
 ### Return Value  
  The height of the current font, which is measured from its ascender to its descender.  
@@ -633,8 +633,8 @@ CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
 ```  
   
 ### Parameters   
- [in] *lpszClassNamePrefix*  
- The name of the window class to register.  
+*lpszClassNamePrefix*<br/>
+[in] The name of the window class to register.  
   
 ### Return Value  
  The qualified name of the registered class if this method succeeds; otherwise, a [resource exception](exception-processing.md#afxthrowresourceexception).  
@@ -673,17 +673,17 @@ BOOL SetLayeredAttrib(
 ```  
   
 ### Parameters   
- [in] *hwnd*  
- Handle to the layered window.  
+*hwnd*<br/>
+[in] Handle to the layered window.  
   
- [in] *crKey*  
- The transparency color key that the [Desktop Window Manager](/windows/desktop/dwm/dwm-overview) uses to compose the layered window.  
+*crKey*<br/>
+[in] The transparency color key that the [Desktop Window Manager](/windows/desktop/dwm/dwm-overview) uses to compose the layered window.  
   
- [in] *bAlpha*  
- The alpha value that is used to describe the opacity of the layered window.  
+*bAlpha*<br/>
+[in] The alpha value that is used to describe the opacity of the layered window.  
   
- [in] *dwFlags*  
- A bitwise combination (OR) of flags that specify which method parameters to use. Specify LWA_COLORKEY to use the *crKey* parameter as the transparency color. Specify LWA_ALPHA to use the *bAlpha* parameter to determine the opacity of the layered window.  
+*dwFlags*<br/>
+[in] A bitwise combination (OR) of flags that specify which method parameters to use. Specify LWA_COLORKEY to use the *crKey* parameter as the transparency color. Specify LWA_ALPHA to use the *bAlpha* parameter to determine the opacity of the layered window.  
   
 ### Return Value  
  TRUE if this method succeeds; otherwise, FALSE.   
@@ -703,11 +703,11 @@ BOOL SetMenuFont(
 ```  
   
 ### Parameters   
- [in] *lpLogFont*  
- Pointer to a structure that contains the attributes of a font.  
+*lpLogFont*<br/>
+[in] Pointer to a structure that contains the attributes of a font.  
   
- [in] *bHorz*  
- TRUE to specify that the text runs horizontally; FALSE to specify that the text runs vertically.  
+*bHorz*<br/>
+[in] TRUE to specify that the text runs horizontally; FALSE to specify that the text runs vertically.  
   
 ### Return Value  
  TRUE if this method succeeds; otherwise, FALSE. In debug mode, this method asserts if this method is unsuccessful.  

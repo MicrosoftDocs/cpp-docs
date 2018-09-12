@@ -27,11 +27,11 @@ void __outdword( 
 ```  
   
 #### Parameters  
- [in] `Port`  
- The port to send the data to.  
+`Port`<br/>
+[in] The port to send the data to.  
   
- [in] `Data`  
- The doubleword to be sent.  
+`Data`<br/>
+[in] The doubleword to be sent.  
   
 ## Requirements  
   

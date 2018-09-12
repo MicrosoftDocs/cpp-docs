@@ -23,8 +23,8 @@ unsigned __int64 __readdr(unsigned int DebugRegister);
 ```  
   
 #### Parameters  
- [in] `DebugRegister`  
- A constant from 0 through 7 that identifies the debug register.  
+`DebugRegister`<br/>
+[in] A constant from 0 through 7 that identifies the debug register.  
   
 ## Return Value  
  The value of the specified debug register.  

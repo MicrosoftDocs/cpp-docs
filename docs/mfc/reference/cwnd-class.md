@@ -857,11 +857,11 @@ virtual void CalcWindowRect(
 
 ### Parameters
 
-[in, out] *lpClientRect*  
-Pointer to a rectangle structure. On input, this structure contains the client rectangle. After the method is finished, this structure contains the window rectangle that can contain the specified client rectangle.
+*lpClientRect*<br/>
+[in, out] Pointer to a rectangle structure. On input, this structure contains the client rectangle. After the method is finished, this structure contains the window rectangle that can contain the specified client rectangle.
 
-[in] *nAdjustType*  
-Use `CWnd::adjustBorder` to calculate window coordinates without the WS_EX_CLIENTEDGE style; otherwise, use `CWnd::adjustOutside`.
+*nAdjustType*<br/>
+[in] Use `CWnd::adjustBorder` to calculate window coordinates without the WS_EX_CLIENTEDGE style; otherwise, use `CWnd::adjustOutside`.
 
 ### Remarks
 
@@ -1101,26 +1101,26 @@ virtual BOOL Create(
 
 ### Parameters
 
-[in] *lpszClassName*  
-Pointer to a null-terminated string that contains the name of a registered system window class; or the name of a predefined system window class.
+*lpszClassName*<br/>
+[in] Pointer to a null-terminated string that contains the name of a registered system window class; or the name of a predefined system window class.
 
-[in] *lpszWindowName*  
-Pointer to a null-terminated string that contains the window display name; otherwise NULL for no window display name.
+*lpszWindowName*<br/>
+[in] Pointer to a null-terminated string that contains the window display name; otherwise NULL for no window display name.
 
-[in] *dwStyle*  
-Bitwise combination (OR) of [window styles](styles-used-by-mfc.md#window-styles). The WS_POPUP option is not a valid style.
+*dwStyle*<br/>
+[in] Bitwise combination (OR) of [window styles](styles-used-by-mfc.md#window-styles). The WS_POPUP option is not a valid style.
 
-[in] *rect*  
-The size and location of the window relative to the top-left corner of the parent window.
+*rect*<br/>
+[in] The size and location of the window relative to the top-left corner of the parent window.
 
-[in] *pParentWnd*  
-Pointer to the parent window.
+*pParentWnd*<br/>
+[in] Pointer to the parent window.
 
-[in] *nID*  
-ID of the window.
+*nID*<br/>
+[in] ID of the window.
 
-[in] *pContext*  
-Pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) structure that is used to customize the document-view architecture for the application.
+*pContext*<br/>
+[in] Pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) structure that is used to customize the document-view architecture for the application.
 
 ### Return Value
 

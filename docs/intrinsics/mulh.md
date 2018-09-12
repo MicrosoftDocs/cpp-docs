@@ -27,11 +27,11 @@ __int64 __mulh( 
 ```  
   
 #### Parameters  
- [in] `a`  
- The first number to multiply.  
+`a`<br/>
+[in] The first number to multiply.  
   
- [in] `b`  
- The second number to multiply.  
+`b`<br/>
+[in] The second number to multiply.  
   
 ## Return Value  
  The high 64 bits of the 128-bit result of the multiplication.  

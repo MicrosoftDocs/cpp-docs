@@ -74,11 +74,11 @@ CMFCRibbonCheckBox(
 ```  
   
 ### Parameters  
- [in] *nID*  
- Specifies command ID.  
+*nID*<br/>
+[in] Specifies command ID.  
   
- [in] *lpszText*  
- Specifies text label.  
+*lpszText*<br/>
+[in] Specifies text label.  
   
 ### Return Value  
  Constructs a ribbon check box object.  
@@ -96,8 +96,8 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to the CDC associated with the check box.  
+*pDC*<br/>
+[in] Pointer to the CDC associated with the check box.  
   
 ### Return Value  
  Returns a `CSize` object that contains the compact size of the check box.  
@@ -113,8 +113,8 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to the CDC associated with this check box.  
+*pDC*<br/>
+[in] Pointer to the CDC associated with this check box.  
   
 ### Return Value  
  A `CSize` object containing the intermediate size of the check box.  
@@ -130,8 +130,8 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to the CDC object associated with this check box.  
+*pDC*<br/>
+[in] Pointer to the CDC object associated with this check box.  
   
 ### Return Value  
  Returns a `CSize` object that contains the regular size of the check box.  
@@ -159,8 +159,8 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to the CDC in which to draw the check box.  
+*pDC*<br/>
+[in] Pointer to the CDC in which to draw the check box.  
   
 ### Remarks  
   
@@ -175,8 +175,8 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
  [in] *CDC**  
  Pointer to the CDC associated with the check box.  
   
- [in] *CRect*  
- A `CRect` object specifying the rectangle in which to draw the menu image.  
+*CRect*<br/>
+[in] A `CRect` object specifying the rectangle in which to draw the menu image.  
   
 ### Return Value  
  Returns TRUE if the image was drawn, or FALSE if not.  
@@ -198,23 +198,23 @@ virtual void OnDrawOnList(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to the device context in which to draw the check box.  
+*pDC*<br/>
+[in] Pointer to the device context in which to draw the check box.  
   
- [in] *strText*  
- The display text.  
+*strText*<br/>
+[in] The display text.  
   
- [in] *nTextOffset*  
- The distance, in pixels, from the left side of the list box to the display text.  
+*nTextOffset*<br/>
+[in] The distance, in pixels, from the left side of the list box to the display text.  
   
- [in] *rect*  
- The display rectangle for the check box.  
+*rect*<br/>
+[in] The display rectangle for the check box.  
   
- [in] *bIsSelected*  
- TRUE if the check box is selected, or FALSE if not.  
+*bIsSelected*<br/>
+[in] TRUE if the check box is selected, or FALSE if not.  
   
- [in] *bHighlighted*  
- TRUE if the check box is highlighted, or FALSE if not.  
+*bHighlighted*<br/>
+[in] TRUE if the check box is highlighted, or FALSE if not.  
   
 ### Remarks  
   

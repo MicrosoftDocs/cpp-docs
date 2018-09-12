@@ -59,11 +59,11 @@ unsigned char _interlockedbittestandreset64_HLERelease(
 ```  
   
 #### Parameters  
- [in] `a`  
- A pointer to the memory to examine.  
+`a`<br/>
+[in] A pointer to the memory to examine.  
   
- [in] `b`  
- The bit position to test.  
+`b`<br/>
+[in] The bit position to test.  
   
 ## Return Value  
  The original value of the bit at the position specified by `b`.  

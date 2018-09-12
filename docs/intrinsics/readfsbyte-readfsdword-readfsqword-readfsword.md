@@ -35,8 +35,8 @@ unsigned __int64 __readfsqword( 
 ```  
   
 #### Parameters  
- [in] `Offset`  
- The offset from the beginning of `FS` to read from.  
+`Offset`<br/>
+[in] The offset from the beginning of `FS` to read from.  
   
 ## Return Value  
  The memory contents of the byte, word, doubleword, or quadword (as indicated by the name of the function called) at the location `FS:[Offset]`.  

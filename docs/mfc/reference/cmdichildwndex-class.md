@@ -122,11 +122,11 @@ BOOL AddPane(
 ```  
   
 ### Parameters  
- [in] *pControlBar*  
- A pointer to the pane.  
+*pControlBar*<br/>
+[in] A pointer to the pane.  
   
- [in] *bTail*  
- TRUE to add the pane to the end of the list of panes for the docking manager; otherwise, FALSE.  
+*bTail*<br/>
+[in] TRUE to add the pane to the end of the list of panes for the docking manager; otherwise, FALSE.  
   
 ### Return Value  
  TRUE if the pane was successfully registered with the docking manager; otherwise, FALSE.  
@@ -139,8 +139,8 @@ void AddTabbedPane(CDockablePane* pControlBar);
 ```  
   
 ### Parameters  
- [in] *pControlBar*  
- A pointer to the pane.  
+*pControlBar*<br/>
+[in] A pointer to the pane.  
   
 ##  <a name="adjustdockinglayout"></a>  CMDIChildWndEx::AdjustDockingLayout  
  Adjusts the docking layout.  
@@ -150,8 +150,8 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 ```  
   
 ### Parameters  
- [in] *hdwp*  
- Handle to a deferred window position structure.  
+*hdwp*<br/>
+[in] Handle to a deferred window position structure.  
   
 ##  <a name="canshowonmditabs"></a>  CMDIChildWndEx::CanShowOnMDITabs  
 
@@ -188,14 +188,14 @@ void DockPane(
 ```  
   
 ### Parameters  
- [in] *pBar*  
- A pointer to the pane.  
+*pBar*<br/>
+[in] A pointer to the pane.  
   
- [in] *nDockBarID*  
- The ID of the pane.  
+*nDockBarID*<br/>
+[in] The ID of the pane.  
   
- [in] *lpRect*  
- A pointer to a rectangle.  
+*lpRect*<br/>
+[in] A pointer to a rectangle.  
   
 ### Remarks  
  The *lpRect* parameter is not used.  
@@ -232,8 +232,8 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 ```  
   
 ### Parameters  
- [in] *dwDockStyle*  
- Specifies the sides of the main frame window that is enabled. Use one or more of the following flags.  
+*dwDockStyle*<br/>
+[in] Specifies the sides of the main frame window that is enabled. Use one or more of the following flags.  
   
 - CBRS_ALIGN_LEFT  
   
@@ -254,8 +254,8 @@ BOOL EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### Parameters  
- [in] *dwDockStyle*  
- Specifies the docking alignment to enable.  
+*dwDockStyle*<br/>
+[in] Specifies the docking alignment to enable.  
   
 ### Return Value  
  TRUE if the method succeeds; otherwise FALSE.  
@@ -336,8 +336,8 @@ CBasePane* GetPane(UINT nID);
 ```  
   
 ### Parameters  
- [in] *nID*  
- The control ID of the pane to find.  
+*nID*<br/>
+[in] The control ID of the pane to find.  
   
 ### Return Value  
  A pointer to the pane if found, otherwise NULL.  
@@ -389,14 +389,14 @@ BOOL InsertPane(
 ```  
   
 ### Parameters  
- [in] *pControlBar*  
- A pointer to the pane to insert.  
+*pControlBar*<br/>
+[in] A pointer to the pane to insert.  
   
- [in] *pTarget*  
- A pointer to the adjacent pane.  
+*pTarget*<br/>
+[in] A pointer to the adjacent pane.  
   
- [in] *bAfter*  
- If TRUE, *pControlBar* is inserted after *pTarget*. If FALSE, *pControlBar* is inserted before *pTarget*.  
+*bAfter*<br/>
+[in] If TRUE, *pControlBar* is inserted after *pTarget*. If FALSE, *pControlBar* is inserted before *pTarget*.  
   
 ### Return Value  
  TRUE if the method succeeds, FALSE otherwise.  
@@ -412,14 +412,14 @@ BOOL IsPointNearDockSite(
 ```  
   
 ### Parameters  
- [in] *point*  
- The specified point.  
+*point*<br/>
+[in] The specified point.  
   
- [in] *dwBarAlignment*  
- Specifies which edge the point is near. Possible values are CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT, CBRS_ALIGN_TOP, and CBRS_ALIGN_BOTTOM  
+*dwBarAlignment*<br/>
+[in] Specifies which edge the point is near. Possible values are CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT, CBRS_ALIGN_TOP, and CBRS_ALIGN_BOTTOM  
   
- [in] *bOuterEdge*  
- TRUE if the point is near the outer border of the dock site; FALSE otherwise.  
+*bOuterEdge*<br/>
+[in] TRUE if the point is near the outer border of the dock site; FALSE otherwise.  
   
 ### Return Value  
  TRUE if the point is near the dock site; otherwise FALSE.  
@@ -463,8 +463,8 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 ```  
   
 ### Parameters  
- [in] *pFrame*  
- A pointer to a mini-frame window.  
+*pFrame*<br/>
+[in] A pointer to a mini-frame window.  
   
 ### Return Value  
  TRUE if the method succeeds, otherwise FALSE.  
@@ -479,11 +479,11 @@ virtual void OnSetPreviewMode(
 ```  
   
 ### Parameters  
- [in] *bPreview*  
- If TRUE, enter print preview mode. If FALSE, exit print preview mode.  
+*bPreview*<br/>
+[in] If TRUE, enter print preview mode. If FALSE, exit print preview mode.  
   
- [in] *pState*  
- A pointer to the print preview state structure.  
+*pState*<br/>
+[in] A pointer to the print preview state structure.  
   
 ##  <a name="onupdateframetitle"></a>  CMDIChildWndEx::OnUpdateFrameTitle  
  Called by the framework to update the frame title.  
@@ -493,8 +493,8 @@ virtual void OnUpdateFrameTitle(BOOL bAddToTitle);
 ```  
   
 ### Parameters  
- [in] *bAddToTitle*  
- If TRUE, add the document name to the title.  
+*bAddToTitle*<br/>
+[in] If TRUE, add the document name to the title.  
   
 ##  <a name="panefrompoint"></a>  CMDIChildWndEx::PaneFromPoint  
  Returns the pane that contains the given point.  
@@ -514,20 +514,20 @@ CBasePane* PaneFromPoint(
 ```  
   
 ### Parameters  
- [in] *point*  
- Specifies the point, in screen coordinates, to check.  
+*point*<br/>
+[in] Specifies the point, in screen coordinates, to check.  
   
- [in] *nSensitivity*  
- Increase the search area by this amount. A pane satisfies the search criteria if the given point falls in the increased area.  
+*nSensitivity*<br/>
+[in] Increase the search area by this amount. A pane satisfies the search criteria if the given point falls in the increased area.  
   
- [in] *bExactBar*  
- TRUE to ignore the *nSensitivity* parameter; otherwise, FALSE.  
+*bExactBar*<br/>
+[in] TRUE to ignore the *nSensitivity* parameter; otherwise, FALSE.  
   
- [in] *pRTCBarType*  
- If not NULL, the method searches only panes of the specified type.  
+*pRTCBarType*<br/>
+[in] If not NULL, the method searches only panes of the specified type.  
   
- [in] *dwAlignment*  
- If a pane is found at the specified point, this parameter contains the side of the pane that was closest to the specified point. For more information, see the Remarks section.  
+*dwAlignment*<br/>
+[in] If a pane is found at the specified point, this parameter contains the side of the pane that was closest to the specified point. For more information, see the Remarks section.  
   
 ### Return Value  
  A pointer to the `CBasePane`-derived object that contains the given point, or NULL if no pane was found.  
@@ -545,8 +545,8 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```  
   
 ### Parameters  
- [in] *bNotify*  
- If TRUE, the active in-place item for the window receives notification of the layout change.  
+*bNotify*<br/>
+[in] If TRUE, the active in-place item for the window receives notification of the layout change.  
   
 ##  <a name="removepanefromdockmanager"></a>  CMDIChildWndEx::RemovePaneFromDockManager  
  Removes a pane from the docking manager.  
@@ -561,20 +561,20 @@ void RemovePaneFromDockManager(
 ```  
   
 ### Parameters  
- [in] *pControlBar*  
- A pointer to the pane to remove.  
+*pControlBar*<br/>
+[in] A pointer to the pane to remove.  
   
- [in] *bDestroy*  
- If TRUE, the removed pane is destroyed.  
+*bDestroy*<br/>
+[in] If TRUE, the removed pane is destroyed.  
   
- [in] *bAdjustLayout*  
- If TRUE, adjust the docking layout immediately.  
+*bAdjustLayout*<br/>
+[in] If TRUE, adjust the docking layout immediately.  
   
- [in] *bAutoHide*  
- If TRUE, the docking layout is related to the list of autohide bars. If FALSE, the docking layout is related to the list of regular panes.  
+*bAutoHide*<br/>
+[in] If TRUE, the docking layout is related to the list of autohide bars. If FALSE, the docking layout is related to the list of regular panes.  
   
- [in] *pBarReplacement*  
- A pointer to a pane that replaces the removed pane.  
+*pBarReplacement*<br/>
+[in] A pointer to a pane that replaces the removed pane.  
   
 ##  <a name="setrelatedtabgroup"></a>  CMDIChildWndEx::SetRelatedTabGroup  
 
@@ -600,10 +600,10 @@ void ShowPane(
 ```  
   
 ### Parameters  
- [in] *pBar*  
- [in] *bShow*  
- [in] *bDelay*  
- [in] *bActivate*  
+*pBar*<br/>
+[in] [in] *bShow*  
+*bDelay*<br/>
+[in] [in] *bActivate*  
   
 ### Remarks  
   

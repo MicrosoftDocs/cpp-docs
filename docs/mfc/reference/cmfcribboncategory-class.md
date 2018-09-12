@@ -140,8 +140,8 @@ void AddHidden(CMFCRibbonBaseElement* pElem);
 ```  
   
 ### Parameters  
- [in] *pElem*  
- Pointer to a ribbon element.  
+*pElem*<br/>
+[in] Pointer to a ribbon element.  
   
 ### Remarks  
  Ribbon elements on the customization dialog box are the commands that you can add to the quick access toolbar.  
@@ -157,14 +157,14 @@ CMFCRibbonPanel* AddPanel(
 ```  
   
 ### Parameters  
- [in] *lpszPanelName*  
- Pointer to the name of the new ribbon panel.  
+*lpszPanelName*<br/>
+[in] Pointer to the name of the new ribbon panel.  
   
- [in] *hIcon*  
- Handle to the default icon for the new ribbon panel.  
+*hIcon*<br/>
+[in] Handle to the default icon for the new ribbon panel.  
   
- [in] *pRTI*  
- Pointer to runtime class information for a custom ribbon panel.  
+*pRTI*<br/>
+[in] Pointer to runtime class information for a custom ribbon panel.  
   
 ### Return Value  
  Pointer to the new ribbon panel if the method was successful; otherwise NULL if the panel was not created.  
@@ -195,23 +195,23 @@ CMFCRibbonCategory(
 ```  
   
 ### Parameters  
- [in] *pParenrRibbonBar*  
- Pointer to the parent ribbon bar of the ribbon category.  
+*pParenrRibbonBar*<br/>
+[in] Pointer to the parent ribbon bar of the ribbon category.  
   
- [in] *lpszName*  
- Name of the ribbon category.  
+*lpszName*<br/>
+[in] Name of the ribbon category.  
   
- [in] *uiSmallImagesResID*  
- Resource ID of the image list for small images that are used by ribbon elements in the ribbon category.  
+*uiSmallImagesResID*<br/>
+[in] Resource ID of the image list for small images that are used by ribbon elements in the ribbon category.  
   
- [in] *uiLargeImagesResID*  
- Resource ID of the image list for large images that are used by ribbon elements in the ribbon category.  
+*uiLargeImagesResID*<br/>
+[in] Resource ID of the image list for large images that are used by ribbon elements in the ribbon category.  
   
- [in] *sizeSmallImage*  
- Default size of small images for ribbon elements in the ribbon category.  
+*sizeSmallImage*<br/>
+[in] Default size of small images for ribbon elements in the ribbon category.  
   
- [in] *sizeLargeImage*  
- Default size of large images for ribbon elements in the ribbon category.  
+*sizeLargeImage*<br/>
+[in] Default size of large images for ribbon elements in the ribbon category.  
   
 ##  <a name="copyfrom"></a>  CMFCRibbonCategory::CopyFrom  
  Copies the state of the specified [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md) to the current [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md) object.  
@@ -221,8 +221,8 @@ virtual void CopyFrom(CMFCRibbonCategory& src);
 ```  
   
 ### Parameters  
- [in] *src*  
- The source `CMFCRibbonCategory` object.  
+*src*<br/>
+[in] The source `CMFCRibbonCategory` object.  
   
 ### Remarks  
   
@@ -236,11 +236,11 @@ CMFCRibbonBaseElement* FindByData(
 ```  
   
 ### Parameters  
- [in] *dwData*  
- The data associated with a ribbon element.  
+*dwData*<br/>
+[in] The data associated with a ribbon element.  
   
- [in] *bVisibleOnly*  
- TRUE to include quick access ribbon elements in the search; FALSE to exclude quick access ribbon elements in the search.  
+*bVisibleOnly*<br/>
+[in] TRUE to include quick access ribbon elements in the search; FALSE to exclude quick access ribbon elements in the search.  
   
 ### Return Value  
  Pointer to a ribbon element if the method was successful; otherwise NULL.  
@@ -257,11 +257,11 @@ CMFCRibbonBaseElement* FindByID(
 ```  
   
 ### Parameters  
- [in] *uiCmdID*  
- Command ID associated with a ribbon element.  
+*uiCmdID*<br/>
+[in] Command ID associated with a ribbon element.  
   
- [in] *bVisibleOnly*  
- TRUE to include quick access ribbon elements in the search; FALSE to exclude quick access ribbon elements in the search.  
+*bVisibleOnly*<br/>
+[in] TRUE to include quick access ribbon elements in the search; FALSE to exclude quick access ribbon elements in the search.  
   
 ### Return Value  
  Pointer to a ribbon element if the method was successful; otherwise NULL.  
@@ -276,8 +276,8 @@ CMFCRibbonPanel* FindPanelWithElem(const CMFCRibbonBaseElement* pElement);
 ```  
   
 ### Parameters  
- [in] *pElement*  
- Pointer to a ribbon element.  
+*pElement*<br/>
+[in] Pointer to a ribbon element.  
   
 ### Return Value  
  Pointer to a ribbon panel if the method was successful; otherwise NULL.  
@@ -328,8 +328,8 @@ void GetElements(
 ```  
   
 ### Parameters  
- [in, out] *arElements*  
- Reference to a [CArray](../../mfc/reference/carray-class.md) of ribbon elements.  
+*arElements*<br/>
+[in, out] Reference to a [CArray](../../mfc/reference/carray-class.md) of ribbon elements.  
   
 ### Remarks  
  Ribbon elements that are designed for use on the quick access toolbar are included in the array.  
@@ -344,11 +344,11 @@ void GetElementsByID(
 ```  
   
 ### Parameters  
- [in] *uiCmdID*  
- Command ID associated with a ribbon element.  
+*uiCmdID*<br/>
+[in] Command ID associated with a ribbon element.  
   
- [in, out] *arElements*  
- Reference to a [CArray](../../mfc/reference/carray-class.md) of ribbon elements.  
+*arElements*<br/>
+[in, out] Reference to a [CArray](../../mfc/reference/carray-class.md) of ribbon elements.  
   
 ### Remarks  
  Ribbon elements that are designed for use on the quick access toolbar are included in the array.  
@@ -397,8 +397,8 @@ int GetImageCount(BOOL bIsLargeImage) const;
 ```  
   
 ### Parameters  
- [in] *bIsLargeImage*  
- TRUE for the number of images in the large image list; FALSE for the number of images in the small image list.  
+*bIsLargeImage*<br/>
+[in] TRUE for the number of images in the large image list; FALSE for the number of images in the small image list.  
   
 ### Return Value  
  The number of images in the specified image list.  
@@ -413,8 +413,8 @@ CSize GetImageSize(BOOL bIsLargeImage) const;
 ```  
   
 ### Parameters  
- [in] *bIsLargeImage*  
- TRUE for the size of large images; FALSE for the size of small images.  
+*bIsLargeImage*<br/>
+[in] TRUE for the size of large images; FALSE for the size of small images.  
   
 ### Return Value  
  The size of an image in the specified image list.  
@@ -432,11 +432,11 @@ void GetItemIDsList(
 ```  
   
 ### Parameters  
- [out] *lstItems*  
- The list of command IDs for the ribbon elements in the ribbon category.  
+*lstItems*<br/>
+[out] The list of command IDs for the ribbon elements in the ribbon category.  
   
- [in] *bHiddenOnly*  
- TRUE to exclude ribbon elements displayed on the ribbon panels in the ribbon category; FALSE to include all ribbon elements in the ribbon category.  
+*bHiddenOnly*<br/>
+[in] TRUE to exclude ribbon elements displayed on the ribbon panels in the ribbon category; FALSE to include all ribbon elements in the ribbon category.  
   
 ### Remarks  
   
@@ -470,8 +470,8 @@ int GetMaxHeight(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context for the ribbon panels.  
+*pDC*<br/>
+[in] Pointer to a device context for the ribbon panels.  
   
 ### Return Value  
  The maximum height of the ribbon panels that are contained in the ribbon category.  
@@ -499,8 +499,8 @@ CMFCRibbonPanel* GetPanel(int nIndex);
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- The zero-based index of a ribbon panel.  
+*nIndex*<br/>
+[in] The zero-based index of a ribbon panel.  
   
 ### Return Value  
  Pointer to the ribbon panel that is located at the specified index.  
@@ -526,8 +526,8 @@ CMFCRibbonPanel* GetPanelFromPoint(CPoint point) const;
 ```  
   
 ### Parameters  
- [in] *point*  
- The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
+*point*<br/>
+[in] The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
   
 ### Return Value  
  Pointer to a ribbon panel if the method was successful; otherwise NULL.  
@@ -543,8 +543,8 @@ int GetPanelIndex(const CMFCRibbonPanel* pPanel) const;
 ```  
   
 ### Parameters  
- [in] *pPanel*  
- Pointer to a ribbon panel.  
+*pPanel*<br/>
+[in] Pointer to a ribbon panel.  
   
 ### Return Value  
  Zero-based index of the specified ribbon panel if the method was successful; otherwise -1.  
@@ -687,11 +687,11 @@ CMFCRibbonPanel* HighlightPanel(
 ```  
   
 ### Parameters  
- [in] *pHLPanel*  
- Pointer to the ribbon panel to highlight.  
+*pHLPanel*<br/>
+[in] Pointer to the ribbon panel to highlight.  
   
- [in] *point*  
- The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
+*point*<br/>
+[in] The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
   
 ### Return Value  
  Pointer to the previously highlighted ribbon panel; otherwise NULL if no ribbon panel is highlighted when this method is invoked.  
@@ -709,11 +709,11 @@ CMFCRibbonBaseElement* HitTest(
 ```  
   
 ### Parameters  
- [in] *point*  
- The x and y coordinates of the mouse pointer, relative to the upper-left corner of the window.  
+*point*<br/>
+[in] The x and y coordinates of the mouse pointer, relative to the upper-left corner of the window.  
   
- [in] *bCheckPanelCaption*  
- TRUE to test the ribbon panel caption; FALSE to exclude the ribbon panel caption.  
+*bCheckPanelCaption*<br/>
+[in] TRUE to test the ribbon panel caption; FALSE to exclude the ribbon panel caption.  
   
 ### Return Value  
  Pointer to a ribbon element if the method was successful; otherwise NULL.  
@@ -729,8 +729,8 @@ int HitTestEx(CPoint point) const;
 ```  
   
 ### Parameters  
- [in] *point*  
- The x and y coordinates of the mouse pointer, relative to the upper-left corner of the window.  
+*point*<br/>
+[in] The x and y coordinates of the mouse pointer, relative to the upper-left corner of the window.  
   
 ### Return Value  
  Zero-based index of a ribbon element if the method was successful; otherwise -1.  
@@ -746,8 +746,8 @@ CMFCRibbonBaseElement* HitTestScrollButtons(CPoint point) const;
 ```  
   
 ### Parameters  
- [in] *point*  
- The point to test.  
+*point*<br/>
+[in] The point to test.  
   
 ### Return Value  
  If *point* falls within the bounding rectangle of either the left or the right scroll button of the ribbon category, returns a pointer to that button, or otherwise, returns NULL.  
@@ -804,17 +804,17 @@ virtual BOOL NotifyControlCommand(
 ```  
   
 ### Parameters  
- [in] *bAccelerator*  
- TRUE if this command originated from an accelerator, or FALSE otherwise.  
+*bAccelerator*<br/>
+[in] TRUE if this command originated from an accelerator, or FALSE otherwise.  
   
- [in] *nNotifyCode*  
- The notification code.  
+*nNotifyCode*<br/>
+[in] The notification code.  
   
- [in] *wParam*  
- The WPARAM field of the message.  
+*wParam*<br/>
+[in] The WPARAM field of the message.  
   
- [in] *lParam*  
- The LPARAM field of the message.  
+*lParam*<br/>
+[in] The LPARAM field of the message.  
   
 ### Return Value  
  Returns TRUE if the message was handled, or FALSE if not.  
@@ -838,8 +838,8 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context for the ribbon category.  
+*pDC*<br/>
+[in] Pointer to a device context for the ribbon category.  
   
 ### Remarks  
   
@@ -857,23 +857,23 @@ virtual BOOL OnDrawImage(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context for the image.  
+*pDC*<br/>
+[in] Pointer to a device context for the image.  
   
- [in] *rect*  
- Display rectangle for the image.  
+*rect*<br/>
+[in] Display rectangle for the image.  
   
- [in] *pElement*  
- Pointer to the ribbon element that contains the image.  
+*pElement*<br/>
+[in] Pointer to the ribbon element that contains the image.  
   
- [in] *bIsLargeImage*  
- TRUE if the image is the large size; FALSE if the image is the small size.  
+*bIsLargeImage*<br/>
+[in] TRUE if the image is the large size; FALSE if the image is the small size.  
   
- [in] *nImageIndex*  
- Zero-based index of the image in the image array that is contained in the ribbon category.  
+*nImageIndex*<br/>
+[in] Zero-based index of the image in the image array that is contained in the ribbon category.  
   
- [in] *bCenter*  
- TRUE to center the image in the display rectangle; FALSE to draw the image in the upper-left corner of the display rectangle.  
+*bCenter*<br/>
+[in] TRUE to center the image in the display rectangle; FALSE to draw the image in the upper-left corner of the display rectangle.  
   
 ### Return Value  
  TRUE if the method was successful; otherwise FALSE.  
@@ -890,11 +890,11 @@ virtual void OnDrawMenuBorder(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- This parameter is not used.  
+*pDC*<br/>
+[in] This parameter is not used.  
   
- [in] *pMenuBar*  
- This parameter is not used.  
+*pMenuBar*<br/>
+[in] This parameter is not used.  
   
 ### Remarks  
  By default this method does nothing. Override this method to draw the border of a popup menu.  
@@ -920,8 +920,8 @@ virtual CMFCRibbonBaseElement* OnLButtonDown(CPoint point);
 ```  
   
 ### Parameters  
- [in] *point*  
- The x and y coordinates of the mouse pointer, relative to the upper-left corner of the window.  
+*point*<br/>
+[in] The x and y coordinates of the mouse pointer, relative to the upper-left corner of the window.  
   
 ### Return Value  
  Pointer to a ribbon element if the method was successful; otherwise NULL.  
@@ -936,8 +936,8 @@ virtual void OnLButtonUp(CPoint point);
 ```  
   
 ### Parameters  
- [in] *point*  
- The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
+*point*<br/>
+[in] The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
   
 ### Remarks  
   
@@ -949,8 +949,8 @@ virtual void OnMouseMove(CPoint point);
 ```  
   
 ### Parameters  
- [in] *point*  
- The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
+*point*<br/>
+[in] The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
   
 ### Remarks  
   
@@ -962,8 +962,8 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ```  
   
 ### Parameters  
- [in] *bIsRTL*  
- TRUE if the layout is right-to-left; FALSE if the layout is left-to-right.  
+*bIsRTL*<br/>
+[in] TRUE if the layout is right-to-left; FALSE if the layout is left-to-right.  
   
 ### Remarks  
  This method adjusts the layout of all ribbon panels and ribbon elements that are contained in the ribbon category.  
@@ -978,11 +978,11 @@ virtual BOOL OnScrollHorz(
 ```  
   
 ### Parameters  
- [in] *bScrollLeft*  
- TRUE to scroll to the left; FALSE to scroll to the right.  
+*bScrollLeft*<br/>
+[in] TRUE to scroll to the left; FALSE to scroll to the right.  
   
- [in] *nScrollOffset*  
- The scroll distance in pixels.  
+*nScrollOffset*<br/>
+[in] The scroll distance in pixels.  
   
 ### Return Value  
  TRUE if the ribbon category moved in a horizontal direction; otherwise FALSE.  
@@ -1000,14 +1000,14 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### Parameters  
- [in] *pCmdUI*  
- Pointer to the `CMFCRibbonCmdUI` object that specifies which user-interface elements are to be enabled and which are to be disabled.  
+*pCmdUI*<br/>
+[in] Pointer to the `CMFCRibbonCmdUI` object that specifies which user-interface elements are to be enabled and which are to be disabled.  
   
- [in] *pTarget*  
- Pointer to the window that controls the enabling or disabling of the user-interface elements.  
+*pTarget*<br/>
+[in] Pointer to the window that controls the enabling or disabling of the user-interface elements.  
   
- [in] *bDisableIfNoHndler*  
- TRUE to disable the user-interface item if no handler is defined in a message map; otherwise, FALSE.  
+*bDisableIfNoHndler*<br/>
+[in] TRUE to disable the user-interface item if no handler is defined in a message map; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1019,8 +1019,8 @@ virtual void RecalcLayout(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context for the ribbon category.  
+*pDC*<br/>
+[in] Pointer to a device context for the ribbon category.  
   
 ### Remarks  
   
@@ -1034,11 +1034,11 @@ BOOL RemovePanel(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- The index number of the panel to remove. Obtained by calling the [CMFCRibbonCategory::GetPanelIndex](#getpanelindex) method.  
+*nIndex*<br/>
+[in] The index number of the panel to remove. Obtained by calling the [CMFCRibbonCategory::GetPanelIndex](#getpanelindex) method.  
   
- [in] *bDelete*  
- TRUE to delete the panel object from memory; FALSE to remove the panel object without deleting it.  
+*bDelete*<br/>
+[in] TRUE to delete the panel object from memory; FALSE to remove the panel object without deleting it.  
   
 ### Return Value  
  TRUE if the method was successful; otherwise, FALSE.  
@@ -1051,8 +1051,8 @@ virtual void ReposPanels(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context for the ribbon panels that are contained in the ribbon category.  
+*pDC*<br/>
+[in] Pointer to a device context for the ribbon panels that are contained in the ribbon category.  
   
 ### Remarks  
   
@@ -1064,8 +1064,8 @@ void SetCollapseOrder(const CArray<int,int>& arCollapseOrder);
 ```  
   
 ### Parameters  
- [in] *arCollapseOrder*  
- Specifies the collapse order. The array contains zero-based indexes of ribbon panels.  
+*arCollapseOrder*<br/>
+[in] Specifies the collapse order. The array contains zero-based indexes of ribbon panels.  
   
 ### Remarks  
  The library defines the collapse order. However, you can customize this behavior by providing the category with the list of indexes that specifies the collapse order.  
@@ -1087,8 +1087,8 @@ void SetData(DWORD_PTR dwData);
 ```  
   
 ### Parameters  
- [in] *dwData*  
- The user-defined data.  
+*dwData*<br/>
+[in] The user-defined data.  
   
 ##  <a name="setkeys"></a>  CMFCRibbonCategory::SetKeys  
  Assigns a keytip to the ribbon category.  
@@ -1098,8 +1098,8 @@ void SetKeys(LPCTSTR lpszKeys);
 ```  
   
 ### Parameters  
- [in] *lpszKeys*  
- The keytip text.  
+*lpszKeys*<br/>
+[in] The keytip text.  
   
 ### Remarks  
  Keytips are displayed when the user presses the Alt key or the F10 key.  
@@ -1112,8 +1112,8 @@ void SetName(LPCTSTR lpszName);
 ```  
   
 ### Parameters  
- [in] *lpszName*  
- The name and keytip of the ribbon category.  
+*lpszName*<br/>
+[in] The name and keytip of the ribbon category.  
   
 ### Remarks  
  To set the keytip for the ribbon category, append a newline escape sequence followed by the keytip characters to *lpszName*.  
@@ -1126,8 +1126,8 @@ void SetTabColor(AFX_RibbonCategoryColor color);
 ```  
   
 ### Parameters  
- [in] *color*  
- Specifies the new color of the ribbon category.  
+*color*<br/>
+[in] Specifies the new color of the ribbon category.  
   
 ### Remarks  
  Color can be one of the following values:  

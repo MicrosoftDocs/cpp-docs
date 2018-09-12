@@ -24,8 +24,8 @@ To_Type marshal_as<To_Type>(
 ```  
   
 #### Parameters  
- [in] `input`  
- The value that you want to marshal to a `To_Type` variable.  
+`input`<br/>
+[in] The value that you want to marshal to a `To_Type` variable.  
   
 ## Return Value  
  A variable of type `To_Type` that is the converted value of `input`.  

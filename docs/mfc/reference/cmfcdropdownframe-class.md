@@ -150,8 +150,8 @@ void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
 ```  
   
 ### Parameters  
- [in] *bAutoDestroy*  
- TRUE to automatically destroy the associated drop-down toolbar window; otherwise, FALSE.  
+*bAutoDestroy*<br/>
+[in] TRUE to automatically destroy the associated drop-down toolbar window; otherwise, FALSE.  
   
 ### Remarks  
  If *bAutoDestroy* is TRUE, then the `CMFCDropDownFrame` destructor destroys the associated drop-down toolbar window. The default value is TRUE.  

@@ -103,25 +103,25 @@ virtual BOOL DrawCheckBox(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context  
+*pDC*<br/>
+[in] A pointer to a device context  
   
- [in] *rect*  
- The bounding rectangle of the check box.  
+*rect*<br/>
+[in] The bounding rectangle of the check box.  
   
- [in] *bHighlighted*  
- Specifies whether the check box is highlighted.  
+*bHighlighted*<br/>
+[in] Specifies whether the check box is highlighted.  
   
- [in] *nState*  
- 0 for unchecked, 1 for checked normal,  
+*nState*<br/>
+[in] 0 for unchecked, 1 for checked normal,  
   
  2 for mixed normal.  
   
- [in] *bEnabled*  
- Specifies whether the check box is enabled.  
+*bEnabled*<br/>
+[in] Specifies whether the check box is enabled.  
   
- [in] *bPressed*  
- Specifies whether the check box is pressed.  
+*bPressed*<br/>
+[in] Specifies whether the check box is pressed.  
   
 ### Return Value  
  TRUE if Theme API is enabled; otherwise FALSE.  
@@ -148,20 +148,20 @@ virtual BOOL DrawComboBorder(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rect*  
- Bounding rectangle of the combo box border.  
+*rect*<br/>
+[in] Bounding rectangle of the combo box border.  
   
- [in] *bDisabled*  
- Specifies whether the combo box border is disabled.  
+*bDisabled*<br/>
+[in] Specifies whether the combo box border is disabled.  
   
- [in] *bIsDropped*  
- Specifies whether the combo box border is dropped down.  
+*bIsDropped*<br/>
+[in] Specifies whether the combo box border is dropped down.  
   
- [in] *bIsHighlighted*  
- Specifies whether the combo box border is highlighted.  
+*bIsHighlighted*<br/>
+[in] Specifies whether the combo box border is highlighted.  
   
 ### Return Value  
  TRUE if Theme API is enabled; otherwise FALSE.  
@@ -203,17 +203,17 @@ virtual BOOL DrawPushButton(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rect*  
- The bounding rectangle of the push button.  
+*rect*<br/>
+[in] The bounding rectangle of the push button.  
   
- [in] *pButton*  
- A pointer to the [CMFCButton Class](../../mfc/reference/cmfcbutton-class.md) object to draw.  
+*pButton*<br/>
+[in] A pointer to the [CMFCButton Class](../../mfc/reference/cmfcbutton-class.md) object to draw.  
   
- [in] *uiState*  
- Ignored. The state is taken from *pButton*.  
+*uiState*<br/>
+[in] Ignored. The state is taken from *pButton*.  
   
 ### Return Value  
  TRUE if Theme API is enabled; otherwise FALSE.  
@@ -232,23 +232,23 @@ virtual BOOL DrawRadioButton(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rect*  
- The bounding rectangle of the radio button.  
+*rect*<br/>
+[in] The bounding rectangle of the radio button.  
   
- [in] *bHighlighted*  
- Specifies whether the radio button is highlighted.  
+*bHighlighted*<br/>
+[in] Specifies whether the radio button is highlighted.  
   
- [in] *bChecked*  
- Specifies whether the radio button is checked.  
+*bChecked*<br/>
+[in] Specifies whether the radio button is checked.  
   
- [in] *bEnabled*  
- Specifies whether the radio button is enabled.  
+*bEnabled*<br/>
+[in] Specifies whether the radio button is enabled.  
   
- [in] *bPressed*  
- Specifies whether the radio button is pressed.  
+*bPressed*<br/>
+[in] Specifies whether the radio button is pressed.  
   
 ### Return Value  
  TRUE if Theme API is enabled; otherwise FALSE.  
@@ -270,32 +270,32 @@ virtual BOOL DrawStatusBarProgress(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *pStatusBar*  
- A pointer to status bar. This value is ignored.  
+*pStatusBar*<br/>
+[in] A pointer to status bar. This value is ignored.  
   
- [in] *rectProgress*  
- The bounding rectangle of the progress bar in *pDC* coordinates.  
+*rectProgress*<br/>
+[in] The bounding rectangle of the progress bar in *pDC* coordinates.  
   
- [in] *nProgressTotal*  
- The total progress value.  
+*nProgressTotal*<br/>
+[in] The total progress value.  
   
- [in] *nProgressCurr*  
- The current progress value.  
+*nProgressCurr*<br/>
+[in] The current progress value.  
   
- [in] *clrBar*  
- The start color. `CMFCBaseVisualManager` ignores this. Derived classes can use it for color gradients.  
+*clrBar*<br/>
+[in] The start color. `CMFCBaseVisualManager` ignores this. Derived classes can use it for color gradients.  
   
- [in] *clrProgressBarDest*  
- The end color. `CMFCBaseVisualManager` ignores this. Derived classes can use it for color gradients.  
+*clrProgressBarDest*<br/>
+[in] The end color. `CMFCBaseVisualManager` ignores this. Derived classes can use it for color gradients.  
   
- [in] *clrProgressText*  
- Progress text color. `CMFCBaseVisualManager` ignores this. The text color is defined by `afxGlobalData.clrBtnText`.  
+*clrProgressText*<br/>
+[in] Progress text color. `CMFCBaseVisualManager` ignores this. The text color is defined by `afxGlobalData.clrBtnText`.  
   
- [in] *bProgressText*  
- Specifies whether to display progress text.  
+*bProgressText*<br/>
+[in] Specifies whether to display progress text.  
   
 ### Return Value  
  TRUE if Theme API is enabled; otherwise FALSE.  
@@ -311,14 +311,14 @@ virtual void FillReBarPane(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *pBar*  
- A pointer to a pane whose background should be drawn.  
+*pBar*<br/>
+[in] A pointer to a pane whose background should be drawn.  
   
- [in] *rectClient*  
- The bounding rectangle of the area to be filled.  
+*rectClient*<br/>
+[in] The bounding rectangle of the area to be filled.  
   
 ### Return Value  
  TRUE if Theme API is enabled; otherwise FALSE.  

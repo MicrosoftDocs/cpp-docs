@@ -395,8 +395,8 @@ Determines whether the given window is an extended frame object.
 BOOL AFXAPI AfxIsExtendedFrameClass( CWnd* pWnd );  
 ```
 ### Parameters  
- [in] *pWnd*  
- A pointer to an object that is derived from `CWnd`.  
+*pWnd*<br/>
+[in] A pointer to an object that is derived from `CWnd`.  
    
 ### Return Value  
  TRUE if the provided window is an extended frame object; otherwise FALSE.  
@@ -431,8 +431,8 @@ Determines whether the given window is a toolbar object.
 BOOL AFXAPI AfxIsMFCToolBar(CWnd* pWnd);  
 ```
 ### Parameters  
- [in] *pWnd*  
- A pointer to an object that is derived from `CWnd`.  
+*pWnd*<br/>
+[in] A pointer to an object that is derived from `CWnd`.  
    
 ### Return Value  
  TRUE if the provided window is a toolbar object; otherwise FALSE.  
@@ -625,8 +625,8 @@ void AFXAPI AfxSetPerUserRegistration(BOOL bEnable);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE indicates that the registry information is directed to the HKCU node; FALSE indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** ( **HKCR**).  
+*bEnable*<br/>
+[in] TRUE indicates that the registry information is directed to the HKCU node; FALSE indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** ( **HKCR**).  
   
 ### Remarks  
 

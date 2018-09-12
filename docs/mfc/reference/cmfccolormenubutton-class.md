@@ -94,14 +94,14 @@ CMFCColorMenuButton(
 ```  
   
 ### Parameters  
- [in] *uiCmdID*  
- A button command ID.  
+*uiCmdID*<br/>
+[in] A button command ID.  
   
- [in] *lpszText*  
- The button text.  
+*lpszText*<br/>
+[in] The button text.  
   
- [in] *pPalette*  
- A pointer to the button's color palette.  
+*pPalette*<br/>
+[in] A pointer to the button's color palette.  
   
 ### Return Value  
   
@@ -118,8 +118,8 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### Parameters  
- [in] *src*  
- Source button to copy.  
+*src*<br/>
+[in] Source button to copy.  
   
 ### Remarks  
  Override this method to copy objects that are derived from the `CMFCColorMenuButton` object.  
@@ -148,14 +148,14 @@ void EnableAutomaticButton(
 ```  
   
 ### Parameters  
- [in] *lpszLabel*  
- Specifies the button text that is displayed when the button becomes automatic.  
+*lpszLabel*<br/>
+[in] Specifies the button text that is displayed when the button becomes automatic.  
   
- [in] *colorAutomatic*  
- Specifies a new automatic color.  
+*colorAutomatic*<br/>
+[in] Specifies a new automatic color.  
   
- [in] *bEnable*  
- Specifies whether the button is automatic or not.  
+*bEnable*<br/>
+[in] Specifies whether the button is automatic or not.  
   
 ### Remarks  
  The automatic button applies the current default color.  
@@ -170,11 +170,11 @@ void EnableDocumentColors(
 ```  
   
 ### Parameters  
- [in] *lpszLabel*  
- Specifies the button text.  
+*lpszLabel*<br/>
+[in] Specifies the button text.  
   
- [in] *bEnable*  
- TRUE to display document-specific colors or FALSE to display system colors.  
+*bEnable*<br/>
+[in] TRUE to display document-specific colors or FALSE to display system colors.  
   
 ### Remarks  
  Use this method to display the current document colors or the system palette colors when the user clicks a color menu button.  
@@ -190,14 +190,14 @@ void EnableOtherButton(
 ```  
   
 ### Parameters  
- [in] *lpszLabel*  
- Specifies the button text.  
+*lpszLabel*<br/>
+[in] Specifies the button text.  
   
- [in] *bAltColorDlg*  
- Specify TRUE to display the `CMFCColorDialog` dialog box, or FALSE to display the standard system color dialog box.  
+*bAltColorDlg*<br/>
+[in] Specify TRUE to display the `CMFCColorDialog` dialog box, or FALSE to display the standard system color dialog box.  
   
- [in] *bEnable*  
- Specify TRUE to display the "other" button; otherwise, FALSE. The default is TRUE.  
+*bEnable*<br/>
+[in] Specify TRUE to display the "other" button; otherwise, FALSE. The default is TRUE.  
   
 ### Remarks  
   
@@ -212,14 +212,14 @@ void EnableTearOff(
 ```  
   
 ### Parameters  
- [in] *uiID*  
- Specifies the ID for the tear-off pane.  
+*uiID*<br/>
+[in] Specifies the ID for the tear-off pane.  
   
- [in] *nVertDockColumns*  
- Specifies the number of columns in the vertically docked color pane while in tear-off state.  
+*nVertDockColumns*<br/>
+[in] Specifies the number of columns in the vertically docked color pane while in tear-off state.  
   
- [in] *nHorzDockRows*  
- Specifies the number of rows for the horizontally docked color pane while in tear-off state.  
+*nHorzDockRows*<br/>
+[in] Specifies the number of rows for the horizontally docked color pane while in tear-off state.  
   
 ### Remarks  
  Call this method to enable the "tear-off" feature for the color pane that pops up when the `CMFCColorMenuButton` button is pressed.  
@@ -257,8 +257,8 @@ static COLORREF GetColorByCmdID(UINT uiCmdID);
 ```  
   
 ### Parameters  
- [in] *uiCmdID*  
- A command ID.  
+*uiCmdID*<br/>
+[in] A command ID.  
   
 ### Return Value  
  The color that corresponds to the specified command ID.  
@@ -287,8 +287,8 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```  
   
 ### Parameters  
- [in] *pWndParent*  
- A pointer to the new parent window.  
+*pWndParent*<br/>
+[in] A pointer to the new parent window.  
   
 ### Remarks  
   
@@ -308,29 +308,29 @@ virtual void OnDraw(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rect*  
- A rectangle that bounds the area to be redrawn.  
+*rect*<br/>
+[in] A rectangle that bounds the area to be redrawn.  
   
- [in] *pImages*  
- Points to a list of toolbar images.  
+*pImages*<br/>
+[in] Points to a list of toolbar images.  
   
- [in] *bHorz*  
- TRUE to specify that the toolbar is in a horizontal docked state; otherwise, FALSE. The default is TRUE.  
+*bHorz*<br/>
+[in] TRUE to specify that the toolbar is in a horizontal docked state; otherwise, FALSE. The default is TRUE.  
   
- [in] *bCustomizeMode*  
- TRUE to specify that the application is in customization mode; otherwise, FALSE. The default is FALSE.  
+*bCustomizeMode*<br/>
+[in] TRUE to specify that the application is in customization mode; otherwise, FALSE. The default is FALSE.  
   
- [in] *bHighlight*  
- TRUE to specify that the button is highlighted; otherwise, FALSE. The default is FALSE.  
+*bHighlight*<br/>
+[in] TRUE to specify that the button is highlighted; otherwise, FALSE. The default is FALSE.  
   
- [in] *bDrawBorder*  
- TRUE to specify that the button's border is displayed; otherwise, FALSE. The default is TRUE.  
+*bDrawBorder*<br/>
+[in] TRUE to specify that the button's border is displayed; otherwise, FALSE. The default is TRUE.  
   
- [in] *bGrayDisabledButtons*  
- TRUE to specify that disabled buttons are grayed (dimmed) out; otherwise, FALSE. The default is TRUE.  
+*bGrayDisabledButtons*<br/>
+[in] TRUE to specify that disabled buttons are grayed (dimmed) out; otherwise, FALSE. The default is TRUE.  
   
 ### Remarks  
   
@@ -345,14 +345,14 @@ virtual int OnDrawOnCustomizeList(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rect*  
- A rectangle that bounds the button to be drawn.  
+*rect*<br/>
+[in] A rectangle that bounds the button to be drawn.  
   
- [in] *bSelected*  
- TRUE specifies that the button is in selected state; otherwise, FALSE.  
+*bSelected*<br/>
+[in] TRUE specifies that the button is in selected state; otherwise, FALSE.  
   
 ### Return Value  
  The width of the button.  
@@ -370,11 +370,11 @@ virtual BOOL OpenColorDialog(
 ```  
   
 ### Parameters  
- [in] *colorDefault*  
- The default color that is selected in the color dialog box.  
+*colorDefault*<br/>
+[in] The default color that is selected in the color dialog box.  
   
- [out] *colorRes*  
- Returns the color that the user selects from the color dialog box.  
+*colorRes*<br/>
+[out] Returns the color that the user selects from the color dialog box.  
   
 ### Return Value  
  Nonzero if the user selects a new color; otherwise, zero.  
@@ -392,11 +392,11 @@ virtual void SetColor(
 ```  
   
 ### Parameters  
- [in] *clr*  
- An RGB color value.  
+*clr*<br/>
+[in] An RGB color value.  
   
- [in] *bNotify*  
- TRUE to apply the *clr* parameter color to any associated menu button or toolbar button; otherwise, FALSE.  
+*bNotify*<br/>
+[in] TRUE to apply the *clr* parameter color to any associated menu button or toolbar button; otherwise, FALSE.  
   
 ### Remarks  
  Call this method to change the color of the current color button. If the *bNotify* parameter is nonzero, the color of the corresponding button on any associated popup menu or toolbar is changed to the color specified by the *clr* parameter.  
@@ -411,11 +411,11 @@ static void SetColorByCmdID(
 ```  
   
 ### Parameters  
- [in] *uiCmdID*  
- The resource ID of a color menu button.  
+*uiCmdID*<br/>
+[in] The resource ID of a color menu button.  
   
- [in] *color*  
- An RGB color value.  
+*color*<br/>
+[in] An RGB color value.  
   
 ##  <a name="setcolorname"></a>  CMFCColorMenuButton::SetColorName  
  Sets a new name for the specified color.  
@@ -427,11 +427,11 @@ static void SetColorName(
 ```  
   
 ### Parameters  
- [in] *color*  
- The RGB value of the color whose name changes.  
+*color*<br/>
+[in] The RGB value of the color whose name changes.  
   
- [in] *strName*  
- The new name of the color.  
+*strName*<br/>
+[in] The new name of the color.  
   
 ### Remarks  
   
@@ -443,8 +443,8 @@ void SetColumnsNumber(int nColumns);
 ```  
   
 ### Parameters  
- [in] *nColumns*  
- The number of columns to display.  
+*nColumns*<br/>
+[in] The number of columns to display.  
   
 ### Remarks  
   

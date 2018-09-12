@@ -28,11 +28,11 @@ inline bool SafeLessThan (
 
 ### Parameters
 
-[in] *t*  
-The first number. This must be of type `T`.
+*t*<br/>
+[in] The first number. This must be of type `T`.
 
-[in] *u*  
-The second numer. This must be of type `U`.
+*u*<br/>
+[in] The second numer. This must be of type `U`.
 
 ## Return Value
 

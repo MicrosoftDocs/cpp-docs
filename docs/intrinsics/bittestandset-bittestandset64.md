@@ -31,11 +31,11 @@ unsigned char _bittestandset64(
 ```  
   
 #### Parameters  
- [in, out] `a`  
- A pointer to the memory to examine.  
+`a`<br/>
+[in, out] A pointer to the memory to examine.  
   
- [in] `b`  
- The bit position to test.  
+`b`<br/>
+[in] The bit position to test.  
   
 ## Return Value  
  The bit at the position specified.  

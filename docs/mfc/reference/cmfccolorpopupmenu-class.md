@@ -114,51 +114,51 @@ CMFCColorPopupMenu(
 ```  
   
 ### Parameters  
- [in] *colors*  
- An array of colors that the framework displays on the pop-up menu.  
+*colors*<br/>
+[in] An array of colors that the framework displays on the pop-up menu.  
   
- [in] *color*  
- The default selected color.  
+*color*<br/>
+[in] The default selected color.  
   
- [in] *lpszAutoColor*  
- The text label of the *automatic* (default) color button, or NULL.  
+*lpszAutoColor*<br/>
+[in] The text label of the *automatic* (default) color button, or NULL.  
   
  The standard label for the automatic button is **Automatic**.  
   
- [in] *lpszOtherColor*  
- The text label of the *other* button, which displays more color choices, or NULL.  
+*lpszOtherColor*<br/>
+[in] The text label of the *other* button, which displays more color choices, or NULL.  
   
  The standard label for the other button is **More Colors...**.  
   
- [in] *lpszDocColors*  
- The text label of the document colors button. The document colors palette lists all the colors that the document currently uses.  
+*lpszDocColors*<br/>
+[in] The text label of the document colors button. The document colors palette lists all the colors that the document currently uses.  
   
- [in] *lstDocColors*  
- A list of colors that the document currently uses.  
+*lstDocColors*<br/>
+[in] A list of colors that the document currently uses.  
   
- [in] *nColumns*  
- The number of columns that the array of colors has.  
+*nColumns*<br/>
+[in] The number of columns that the array of colors has.  
   
- [in] *nHorzDockRows*  
- The number of rows that the color bar has when it is docked horizontally.  
+*nHorzDockRows*<br/>
+[in] The number of rows that the color bar has when it is docked horizontally.  
   
- [in] *nVertDockColumns*  
- The number of columns that the color bar has when it is docked vertically.  
+*nVertDockColumns*<br/>
+[in] The number of columns that the color bar has when it is docked vertically.  
   
- [in] *colorAutomatic*  
- The default color that the framework applies when you click the automatic button.  
+*colorAutomatic*<br/>
+[in] The default color that the framework applies when you click the automatic button.  
   
- [in] *uiCommandID*  
- The color bar control command ID.  
+*uiCommandID*<br/>
+[in] The color bar control command ID.  
   
- [in] *bStdColorDlg*  
- A Boolean that indicates whether to show the standard system color dialog box or the [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) dialog box.  
+*bStdColorDlg*<br/>
+[in] A Boolean that indicates whether to show the standard system color dialog box or the [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) dialog box.  
   
- [in] *pParentBtn*  
- A pointer to a parent button.  
+*pParentBtn*<br/>
+[in] A pointer to a parent button.  
   
- [in] *nID*  
- The command ID.  
+*nID*<br/>
+[in] The command ID.  
   
 ### Remarks  
  Each overloaded constructor sets the `m_bEnabledInCustomizeMode` member to FALSE.  
@@ -214,8 +214,8 @@ void SetPropList(CMFCPropertyGridCtrl* pWndList);
 ```  
   
 ### Parameters  
- [in] *pWndList*  
- Pointer to a property grid control object.  
+*pWndList*<br/>
+[in] Pointer to a property grid control object.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

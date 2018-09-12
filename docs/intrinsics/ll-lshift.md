@@ -27,11 +27,11 @@ unsigned __int64 __ll_lshift(
 ```  
   
 #### Parameters  
- [in] `Mask`  
- The 64-bit integer value to shift left.  
+`Mask`<br/>
+[in] The 64-bit integer value to shift left.  
   
- [in] `nBit`  
- The number of bits to shift.  
+`nBit`<br/>
+[in] The number of bits to shift.  
   
 ## Return Value  
  The mask shifted left by `nBit` bits.  

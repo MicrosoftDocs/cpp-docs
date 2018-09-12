@@ -156,8 +156,8 @@ void ActivateMDITab(int nTab = -1);
 ```  
   
 ### Parameters  
- [in] *nTab*  
- The zero-based index of a tab to display, or -1 to specify the currently active tab.  
+*nTab*<br/>
+[in] The zero-based index of a tab to display, or -1 to specify the currently active tab.  
   
 ##  <a name="allowdestroyemptytabbedpane"></a>  CMFCTabCtrl::AllowDestroyEmptyTabbedPane  
  For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
@@ -179,8 +179,8 @@ void AutoSizeWindow(BOOL bAutoSize = TRUE);
 ```  
   
 ### Parameters  
- [in] *bAutoSize*  
- TRUE to automatically resize tab control windows; otherwise, FALSE. The default value is TRUE.  
+*bAutoSize*<br/>
+[in] TRUE to automatically resize tab control windows; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -198,23 +198,23 @@ BOOL Create(
 ```  
   
 ### Parameters  
- [in] *style*  
- The style of the tab control. For more information, see Remarks.  
+*style*<br/>
+[in] The style of the tab control. For more information, see Remarks.  
   
- [in] *rect*  
- A rectangle that bounds the tab control.  
+*rect*<br/>
+[in] A rectangle that bounds the tab control.  
   
- [in] *pParentWnd*  
- A pointer to a parent window. Must not be NULL.  
+*pParentWnd*<br/>
+[in] A pointer to a parent window. Must not be NULL.  
   
- [in] *nID*  
- The ID of the tab control.  
+*nID*<br/>
+[in] The ID of the tab control.  
   
- [in] *location*  
- The location of tabs. The default value is LOCATION_BOTTOM. For more information, see Remarks.  
+*location*<br/>
+[in] The location of tabs. The default value is LOCATION_BOTTOM. For more information, see Remarks.  
   
- [in] *bCloseBtn*  
- TRUE to display a close button on the tab; otherwise, FALSE. The default value is FALSE.  
+*bCloseBtn*<br/>
+[in] TRUE to display a close button on the tab; otherwise, FALSE. The default value is FALSE.  
   
 ### Return Value  
  TRUE if successful; otherwise, FALSE.  
@@ -253,8 +253,8 @@ virtual void CalcRectEdit(CRect& rectEdit);
 ```  
   
 ### Parameters  
- [in] *rectEdit*  
- A rectangle that specifies the area of a tab.  
+*rectEdit*<br/>
+[in] A rectangle that specifies the area of a tab.  
   
 ### Remarks  
  This method is called when you change the label of a tab. This method deflates the left and right sides of the specified rectangle by one-half the current tab height, and deflates the top and bottom by one unit.  
@@ -267,8 +267,8 @@ void EnableActiveTabCloseButton(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to display the Close button on the active tab; FALSE to display the Close button on the upper-right corner of the tab area. The default value is TRUE.  
+*bEnable*<br/>
+[in] TRUE to display the Close button on the active tab; FALSE to display the Close button on the upper-right corner of the tab area. The default value is TRUE.  
   
 ##  <a name="enableinplaceedit"></a>  CMFCTabCtrl::EnableInPlaceEdit  
  Enables or disables editable tab labels.  
@@ -278,8 +278,8 @@ virtual void EnableInPlaceEdit(BOOL bEnable);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable editable tab labels; FALSE to disable editable tab labels.  
+*bEnable*<br/>
+[in] TRUE to enable editable tab labels; FALSE to disable editable tab labels.  
   
 ### Remarks  
   
@@ -291,8 +291,8 @@ void EnableTabDocumentsMenu(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to display a pop-up menu of tabbed window labels; FALSE to display forward and backward scroll buttons. The default value is TRUE.  
+*bEnable*<br/>
+[in] TRUE to display a pop-up menu of tabbed window labels; FALSE to display forward and backward scroll buttons. The default value is TRUE.  
   
 ### Remarks  
  When the user clicks a tab label, the framework displays the corresponding tabbed window. If the tab label is visible, the tabbed window is opened without changing its position. If the user selects a document from the pop-up menu and the corresponding tabbed window is off screen, the tabbed window becomes the first tab.  
@@ -305,8 +305,8 @@ virtual BOOL EnsureVisible(int iTab);
 ```  
   
 ### Parameters  
- [in] *iTab*  
- The zero-based index of a tab.  
+*iTab*<br/>
+[in] The zero-based index of a tab.  
   
 ### Return Value  
  TRUE if it is successful; FALSE if the *iTab* parameter index is invalid.  
@@ -322,8 +322,8 @@ static HICON __stdcall GetDocumentIcon(UINT nCmdID);
 ```  
   
 ### Parameters  
- [in] *nCmdID*  
- The command ID of a tab in a pop-up menu of tabbed windows.  
+*nCmdID*<br/>
+[in] The command ID of a tab in a pop-up menu of tabbed windows.  
   
 ### Return Value  
  The handle of a bitmap image.  
@@ -374,11 +374,11 @@ void GetTabArea(
 ```  
   
 ### Parameters  
- [out] *rectTabAreaTop*  
- When this method returns, this reference contains a rectangle that bounds the top tab label area. The rectangle is in client coordinates. This reference is empty if no tab label area exists at the top of the tab control.  
+*rectTabAreaTop*<br/>
+[out] When this method returns, this reference contains a rectangle that bounds the top tab label area. The rectangle is in client coordinates. This reference is empty if no tab label area exists at the top of the tab control.  
   
- [out] *rectTabAreaBottom*  
- When this method returns, this reference contains a rectangle that bounds the bottom tab label area. The rectangle is in client coordinates. This reference is empty if no tab label area exists at the bottom of the tab control.  
+*rectTabAreaBottom*<br/>
+[out] When this method returns, this reference contains a rectangle that bounds the bottom tab label area. The rectangle is in client coordinates. This reference is empty if no tab label area exists at the bottom of the tab control.  
   
 ### Remarks  
  Use this method to determine the size and position of the tab area in the tabbed window.  
@@ -414,8 +414,8 @@ virtual void GetTabsRect(CRect& rect) const;
 ```  
   
 ### Parameters  
- [out] *rect*  
- When this method returns, the *rect* parameter contains a rectangle that bounds the tab area.  
+*rect*<br/>
+[out] When this method returns, the *rect* parameter contains a rectangle that bounds the tab area.  
   
 ##  <a name="getwndarea"></a>  CMFCTabCtrl::GetWndArea  
  Retrieves the boundary of the client area of the current tab control.  
@@ -425,8 +425,8 @@ void GetWndArea(CRect& rect) const;
 ```  
   
 ### Parameters  
- [in, out] *rect*  
- When this method returns, this parameter contains a rectangle that bounds the current tab control.  
+*rect*<br/>
+[in, out] When this method returns, this parameter contains a rectangle that bounds the current tab control.  
   
 ### Remarks  
   
@@ -448,8 +448,8 @@ void HideInactiveWindow(BOOL bHide = TRUE);
 ```  
   
 ### Parameters  
- [in] *bHide*  
- TRUE not to display an inactive window; FALSE to display an inactive window. The default value is TRUE.  
+*bHide*<br/>
+[in] TRUE not to display an inactive window; FALSE to display an inactive window. The default value is TRUE.  
   
 ### Remarks  
   
@@ -461,8 +461,8 @@ void HideNoTabs(BOOL bHide=TRUE);
 ```  
   
 ### Parameters  
- [in] *bHide*  
- TRUE to enable drawing the tab area; FALSE to disable drawing. The default value is TRUE.  
+*bHide*<br/>
+[in] TRUE to enable drawing the tab area; FALSE to disable drawing. The default value is TRUE.  
   
 ### Remarks  
   
@@ -474,8 +474,8 @@ virtual void HideSingleTab(BOOL bHide=TRUE);
 ```  
   
 ### Parameters  
- [in] *bHide*  
- TRUE to not draw a tab for a single tabbed window; FALSE to draw a single tab. The default value is TRUE.  
+*bHide*<br/>
+[in] TRUE to not draw a tab for a single tabbed window; FALSE to draw a single tab. The default value is TRUE.  
   
 ### Remarks  
   
@@ -640,8 +640,8 @@ BOOL ModifyTabStyle(Style style);
 ```  
   
 ### Parameters  
- [in] *style*  
- One of the enumeration values that specifies the appearance of the tab control. For more information, see the table in Remarks.  
+*style*<br/>
+[in] One of the enumeration values that specifies the appearance of the tab control. For more information, see the table in Remarks.  
   
 ### Return Value  
  Always TRUE.  
@@ -671,14 +671,14 @@ virtual DROPEFFECT OnDragEnter(
 ```  
   
 ### Parameters  
- [in] *pDataObject*  
- Points to a data object that contains data that the user drags.  
+*pDataObject*<br/>
+[in] Points to a data object that contains data that the user drags.  
   
- [in] *dwKeyState*  
- Contains the state of the modifier keys. This parameter is a bitwise combination (OR) of the following values: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON. For more information, see the **Message Parameters** section of [About Mouse Input](/windows/desktop/inputdev/about-mouse-input).  
+*dwKeyState*<br/>
+[in] Contains the state of the modifier keys. This parameter is a bitwise combination (OR) of the following values: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON. For more information, see the **Message Parameters** section of [About Mouse Input](/windows/desktop/inputdev/about-mouse-input).  
   
- [in] *point*  
- Contains the current location of the cursor in client coordinates.  
+*point*<br/>
+[in] Contains the current location of the cursor in client coordinates.  
   
 ### Return Value  
  Always DROPEFFECT_NONE, which means that the drop target cannot accept the data.  
@@ -699,14 +699,14 @@ virtual DROPEFFECT OnDragOver(
 ```  
   
 ### Parameters  
- [in] *pDataObject*  
- Pointer to a [COleDataObject](../../mfc/reference/coledataobject-class.md) object that is being dragged over the drop target.  
+*pDataObject*<br/>
+[in] Pointer to a [COleDataObject](../../mfc/reference/coledataobject-class.md) object that is being dragged over the drop target.  
   
- [in] *dwKeyState*  
- The state of the modifier keys, which is a bitwise combination (OR) of MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON. For more information, see "Message Parameters" in [About Mouse Input](/windows/desktop/inputdev/about-mouse-input).  
+*dwKeyState*<br/>
+[in] The state of the modifier keys, which is a bitwise combination (OR) of MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON. For more information, see "Message Parameters" in [About Mouse Input](/windows/desktop/inputdev/about-mouse-input).  
   
- [in] *point*  
- The current mouse position.  
+*point*<br/>
+[in] The current mouse position.  
   
 ### Return Value  
  Always DROPEFFECT_NONE.  
@@ -722,8 +722,8 @@ virtual void OnShowTabDocumentsMenu(CPoint point);
 ```  
   
 ### Parameters  
- [in] *point*  
- The coordinates of where to display the pop-up menu.  
+*point*<br/>
+[in] The coordinates of where to display the pop-up menu.  
   
 ### Remarks  
   
@@ -735,8 +735,8 @@ void SetActiveInMDITabGroup(BOOL bActive);
 ```  
   
 ### Parameters  
- [in] *bActive*  
- TRUE to make the current tab the active tab; FALSE to make the current tab inactive.  
+*bActive*<br/>
+[in] TRUE to make the current tab the active tab; FALSE to make the current tab inactive.  
   
 ### Remarks  
  You can organize multiple document windows into either vertical or horizontal tab groups and easily shuffle documents from one tab group to another.  
@@ -749,8 +749,8 @@ virtual BOOL SetActiveTab(int iTab);
 ```  
   
 ### Parameters  
- [in] *iTab*  
- Specifies the zero-based index of the tab to activate.  
+*iTab*<br/>
+[in] Specifies the zero-based index of the tab to activate.  
   
 ### Return Value  
  TRUE if the specified tab was made active; FALSE if the specified *iTab* parameter value is invalid.  
@@ -768,8 +768,8 @@ void SetActiveTabBoldFont(BOOL bIsBold=TRUE);
 ```  
   
 ### Parameters  
- [in] *bIsBold*  
- TRUE to use a bold font to display the label of the active tab; FALSE to use the standard font to display the label. The default value is TRUE.  
+*bIsBold*<br/>
+[in] TRUE to use a bold font to display the label of the active tab; FALSE to use the standard font to display the label. The default value is TRUE.  
   
 ### Remarks  
   
@@ -781,8 +781,8 @@ void SetDrawFrame(BOOL bDraw=TRUE);
 ```  
   
 ### Parameters  
- [in] *bDraw*  
- TRUE to display a frame rectangle around an embedded bar; otherwise, FALSE. The default value is TRUE.  
+*bDraw*<br/>
+[in] TRUE to display a frame rectangle around an embedded bar; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -796,11 +796,11 @@ void SetFlatFrame(
 ```  
   
 ### Parameters  
- [in] *bFlat*  
- TRUE to draw a flat (2D) frame around the tab area; FALSE to draw a three-dimensional (3D) frame. The default value is TRUE.  
+*bFlat*<br/>
+[in] TRUE to draw a flat (2D) frame around the tab area; FALSE to draw a three-dimensional (3D) frame. The default value is TRUE.  
   
- [in] *bRepaint*  
- TRUE to redraw the window immediately; otherwise, FALSE. The default value is TRUE.  
+*bRepaint*<br/>
+[in] TRUE to redraw the window immediately; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -817,17 +817,17 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
 ```  
   
 ### Parameters  
- [in] *uiID*  
- The ID of a bitmap resource that contains the image list.  
+*uiID*<br/>
+[in] The ID of a bitmap resource that contains the image list.  
   
- [in] *cx*  
- The width of each image, in pixels. The default value is 15.  
+*cx*<br/>
+[in] The width of each image, in pixels. The default value is 15.  
   
- [in] *clrTransp*  
- The transparent image color. The parts of the image that are this color will be transparent. The default value is the color magenta, RGB(255,0,255).  
+*clrTransp*<br/>
+[in] The transparent image color. The parts of the image that are this color will be transparent. The default value is the color magenta, RGB(255,0,255).  
   
- [in] *hImageList*  
- A handle to a preloaded image list.  
+*hImageList*<br/>
+[in] A handle to a preloaded image list.  
   
 ### Return Value  
  TRUE if this method is successful. FALSE if the tab control is created by using a flat style or if the first method overload cannot load the bitmap that is specified by the *uiID* parameter.  
@@ -845,8 +845,8 @@ void SetResizeMode(ResizeMode resizeMode);
 ```  
   
 ### Parameters  
- [in] *resizeMode*  
- One of the `CMFCTabCtrl::ResizeMode` enumeration values that specifies how the tab control can be resized. For a list of possible values, see the table in Remarks.  
+*resizeMode*<br/>
+[in] One of the `CMFCTabCtrl::ResizeMode` enumeration values that specifies how the tab control can be resized. For a list of possible values, see the table in Remarks.  
   
 ### Remarks  
  The *resizeMode* parameter can be one of the following `ResizeMode` enumeration values.  
@@ -865,8 +865,8 @@ void SetTabMaxWidth(int nTabMaxWidth);
 ```  
   
 ### Parameters  
- [in] *nTabMaxWidth*  
- The maximum tab width, in pixels.  
+*nTabMaxWidth*<br/>
+[in] The maximum tab width, in pixels.  
   
 ### Remarks  
  Use this method to limit the width of each tab in a tabbed window. This method is useful if tabs have very long labels. The [CMFCTabCtrl](../../mfc/reference/cmfctabctrl-class.md) class constructor initializes the maximum tab width to 0, which actually means that the width is not limited.  
@@ -879,8 +879,8 @@ void StopResize(BOOL bCancel);
 ```  
   
 ### Parameters  
- [in] *bCancel*  
- TRUE to abandon the current resize operation; FALSE to complete the current resize operation. In either case, the framework stops drawing the resize rectangle.  
+*bCancel*<br/>
+[in] TRUE to abandon the current resize operation; FALSE to complete the current resize operation. In either case, the framework stops drawing the resize rectangle.  
   
 ##  <a name="synchronizescrollbar"></a>  CMFCTabCtrl::SynchronizeScrollBar  
  Draws a horizontal scroll bar on a tab control that displays flat tabs.  
@@ -890,8 +890,8 @@ BOOL SynchronizeScrollBar(SCROLLINFO* pScrollInfo = NULL);
 ```  
   
 ### Parameters  
- [out] *pScrollInfo*  
- Pointer to a [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) structure or NULL. When this method returns, and if this parameter is not NULL, the structure contains all the parameters of the scroll bar. The default value is NULL.  
+*pScrollInfo*<br/>
+[out] Pointer to a [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) structure or NULL. When this method returns, and if this parameter is not NULL, the structure contains all the parameters of the scroll bar. The default value is NULL.  
   
 ### Return Value  
  TRUE if this method succeeds; otherwise, FALSE.  

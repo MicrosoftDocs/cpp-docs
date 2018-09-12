@@ -117,20 +117,20 @@ virtual BOOL Create(
  [in] [out] *pWndOwner*  
  Specifies the owner of the alert window. That owner will then receive all notifications for the desktop alert window. This value cannot be NULL.  
   
- [in] *uiDlgResID*  
- Specifies the resource ID of the alert window.  
+*uiDlgResID*<br/>
+[in] Specifies the resource ID of the alert window.  
   
- [in] *hMenu*  
- Specifies the menu that displays when the user clicks the menu button. If NULL, the menu button is not displayed.  
+*hMenu*<br/>
+[in] Specifies the menu that displays when the user clicks the menu button. If NULL, the menu button is not displayed.  
   
- [in] *ptPos*  
- Specifies the initial position where the alert window is displayed, using screen coordinates. If this parameter is (-1, -1), the alert window is displayed in the lower-right corner of the screen.  
+*ptPos*<br/>
+[in] Specifies the initial position where the alert window is displayed, using screen coordinates. If this parameter is (-1, -1), the alert window is displayed in the lower-right corner of the screen.  
   
- [in] *pRTIDlgBar*  
- Runtime class information for a custom dialog box class that covers the alert window's client area.  
+*pRTIDlgBar*<br/>
+[in] Runtime class information for a custom dialog box class that covers the alert window's client area.  
   
- [in] *params*  
- Specifies parameters that are used to create an alert window.  
+*params*<br/>
+[in] Specifies parameters that are used to create an alert window.  
   
 ### Return Value  
  TRUE if the alert window was created successfully; otherwise, FALSE.  
@@ -262,8 +262,8 @@ virtual BOOL OnClickLinkButton(UINT uiCmdID);
 ```  
   
 ### Parameters  
- [in] *uiCmdID*  
- This parameter is not used.  
+*uiCmdID*<br/>
+[in] This parameter is not used.  
   
 ### Return Value  
  Always FALSE.  
@@ -281,8 +281,8 @@ virtual BOOL OnCommand(
 ```  
   
 ### Parameters  
- [in] *wParam*  
- [in] *lParam*  
+*wParam*<br/>
+[in] [in] *lParam*  
   
 ### Return Value  
   
@@ -322,8 +322,8 @@ void SetAnimationSpeed(UINT nSpeed);
 ```  
   
 ### Parameters  
- [in] *nSpeed*  
- Specifies the new animation speed, in milliseconds.  
+*nSpeed*<br/>
+[in] Specifies the new animation speed, in milliseconds.  
   
 ### Remarks  
  Call this method to set the animation speed for the alert window. The default animation speed is 30 milliseconds.  
@@ -336,8 +336,8 @@ void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
 ```  
   
 ### Parameters  
- [in] *type*  
- Specifies the animation type.  
+*type*<br/>
+[in] Specifies the animation type.  
   
 ### Remarks  
  Call this method to set animation type. You can specify one of the following values:  
@@ -360,8 +360,8 @@ void SetAutoCloseTime(int nTime);
 ```  
   
 ### Parameters  
- [in] *nTime*  
- The time, in milliseconds, that elapses before the alert window automatically closes.  
+*nTime*<br/>
+[in] The time, in milliseconds, that elapses before the alert window automatically closes.  
   
 ### Remarks  
  The alert window is automatically closed after the specified time if the user does not interact with the window.  
@@ -374,8 +374,8 @@ void SetSmallCaption(BOOL bSmallCaption = TRUE);
 ```  
   
 ### Parameters  
- [in] *bSmallCaption*  
- TRUE to specify that the alert window displays a small caption; otherwise, FALSE to specify that the alert window displays a regular-size caption.  
+*bSmallCaption*<br/>
+[in] TRUE to specify that the alert window displays a small caption; otherwise, FALSE to specify that the alert window displays a regular-size caption.  
   
 ### Remarks  
  Call this method to display the small or regular-size caption. By default, the small caption is 7 pixels high. You can obtain the size of the regular caption by calling the Windows API function `GetSystemMetrics(SM_CYCAPTION)`.  
@@ -388,8 +388,8 @@ void SetTransparency(BYTE nTransparency);
 ```  
   
 ### Parameters  
- [in] *nTransparency*  
- Specifies the transparency level. This value must be between 0 and 255, inclusive. The greater the value, the more opaque the window.  
+*nTransparency*<br/>
+[in] Specifies the transparency level. This value must be between 0 and 255, inclusive. The greater the value, the more opaque the window.  
   
 ### Remarks  
  Call this function to set the transparency level of the popup window.  

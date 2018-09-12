@@ -30,8 +30,8 @@ void __cdecl _unlock(
 ```  
   
 #### Parameters  
- [in] `locknum`  
- The identifier of the lock to release.  
+`locknum`<br/>
+[in] The identifier of the lock to release.  
   
 ## Requirements  
  **Source:** mlock.c  

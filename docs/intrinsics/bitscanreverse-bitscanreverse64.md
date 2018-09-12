@@ -31,11 +31,11 @@ unsigned char _BitScanReverse64(
 ```  
   
 #### Parameters  
- [out] `Index`  
- Loaded with the bit position of the first set bit (1) found.  
+`Index`<br/>
+[out] Loaded with the bit position of the first set bit (1) found.  
   
- [in] `Mask`  
- The 32-bit or 64-bit value to search.  
+`Mask`<br/>
+[in] The 32-bit or 64-bit value to search.  
   
 ## Return Value  
  Nonzero if `Index` was set, or 0 if no set bits were found.  

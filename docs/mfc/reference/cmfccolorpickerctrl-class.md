@@ -113,11 +113,11 @@ virtual void DrawCursor(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context.  
+*pDC*<br/>
+[in] Pointer to a device context.  
   
- [in] *rect*  
- Specifies a rectangular area around the selected color.  
+*rect*<br/>
+[in] Specifies a rectangular area around the selected color.  
   
 ### Remarks  
  Override this method when you need to change the shape of the cursor that points to the selected color.  
@@ -145,14 +145,14 @@ void GetHLS(
 ```  
   
 ### Parameters  
- [out] *hue*  
- Pointer to a variable of type double that receives hue information.  
+*hue*<br/>
+[out] Pointer to a variable of type double that receives hue information.  
   
- [out] *luminance*  
- Pointer to a variable of type double that receives luminance information.  
+*luminance*<br/>
+[out] Pointer to a variable of type double that receives luminance information.  
   
- [out] *saturation*  
- Pointer to a variable of type double that receives saturation information.  
+*saturation*<br/>
+[out] Pointer to a variable of type double that receives saturation information.  
   
 ### Remarks  
   
@@ -208,20 +208,20 @@ BOOL SelectCellHexagon(
 ```  
   
 ### Parameters  
- [in] *R*  
- The red color component.  
+*R*<br/>
+[in] The red color component.  
   
- [in] *G*  
- The green color component.  
+*G*<br/>
+[in] The green color component.  
   
- [in] *B*  
- The blue color component.  
+*B*<br/>
+[in] The blue color component.  
   
- [in] *x*  
- The x-coordinate of the cursor, which points to a cell hexagon.  
+*x*<br/>
+[in] The x-coordinate of the cursor, which points to a cell hexagon.  
   
- [in] *y*  
- The y-coordinate of the cursor, which points to a cell hexagon.  
+*y*<br/>
+[in] The y-coordinate of the cursor, which points to a cell hexagon.  
   
 ### Return Value  
  The second overload of this method always returns FALSE.  
@@ -239,8 +239,8 @@ void SetColor(COLORREF Color);
 ```  
   
 ### Parameters  
- [in] *Color*  
- An RGB color value.  
+*Color*<br/>
+[in] An RGB color value.  
   
 ### Remarks  
   
@@ -256,17 +256,17 @@ void SetHLS(
 ```  
   
 ### Parameters  
- [in] *hue*  
- A hue value.  
+*hue*<br/>
+[in] A hue value.  
   
- [in] *luminance*  
- A luminance value.  
+*luminance*<br/>
+[in] A luminance value.  
   
- [in] *saturation*  
- A saturation value.  
+*saturation*<br/>
+[in] A saturation value.  
   
- [in] *bInvalidate*  
- TRUE to force the window to immediately update to the new color; otherwise, FALSE. The default is TRUE.  
+*bInvalidate*<br/>
+[in] TRUE to force the window to immediately update to the new color; otherwise, FALSE. The default is TRUE.  
   
 ### Remarks  
   
@@ -278,8 +278,8 @@ void SetHue(double Hue);
 ```  
   
 ### Parameters  
- [in] *Hue*  
- A hue value.  
+*Hue*<br/>
+[in] A hue value.  
   
 ### Remarks  
   
@@ -291,8 +291,8 @@ void SetLuminance(double Luminance);
 ```  
   
 ### Parameters  
- [in] *Luminance*  
- A luminance value.  
+*Luminance*<br/>
+[in] A luminance value.  
   
 ### Remarks  
   
@@ -304,8 +304,8 @@ void SetLuminanceBarWidth(int w);
 ```  
   
 ### Parameters  
- [in] *w*  
- The width of the luminance bar measured in pixels.  
+*w*<br/>
+[in] The width of the luminance bar measured in pixels.  
   
 ### Remarks  
  Use this method to resize the luminance bar, which is on the **Custom** tab of the color picker control. The *w* parameter specifies the new width of the luminance bar. The width value is ignored if it exceeds three-fourths of the client area width.  
@@ -318,8 +318,8 @@ void SetOriginalColor(COLORREF ref);
 ```  
   
 ### Parameters  
- [in] *ref*  
- An RGB color value.  
+*ref*<br/>
+[in] An RGB color value.  
   
 ### Remarks  
  Call this method when the color picker control is initialized.  
@@ -332,8 +332,8 @@ void SetPalette(CPalette* pPalette);
 ```  
   
 ### Parameters  
- [in] *pPalette*  
- Pointer to a color palette.  
+*pPalette*<br/>
+[in] Pointer to a color palette.  
   
 ### Remarks  
  The color palette defines the array of colors that is presented in the color picker control.  
@@ -346,8 +346,8 @@ void SetSaturation(double Saturation);
 ```  
   
 ### Parameters  
- [in] *Saturation*  
- A saturation value.  
+*Saturation*<br/>
+[in] A saturation value.  
   
 ### Remarks  
   
@@ -359,8 +359,8 @@ void SetType(COLORTYPE colorType);
 ```  
   
 ### Parameters  
- [in] *colorType*  
- A color picker control type.  
+*colorType*<br/>
+[in] A color picker control type.  
   
  The types are defined by the `CMFCColorPickerCtrl::COLORTYPE` enumeration. The possible types are LUMINANCE, PICKER, HEX and HEX_GREYSCALE. The default type is PICKER.  
   

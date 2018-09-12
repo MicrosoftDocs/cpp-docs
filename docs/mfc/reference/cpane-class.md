@@ -140,8 +140,8 @@ virtual void AdjustSizeImmediate(BOOL bRecalcLayout = TRUE);
 ```  
   
 ### Parameters  
- [in] *bRecalcLayout*  
- TRUE to automatically recalculate the layout of the pane; otherwise, FALSE.  
+*bRecalcLayout*<br/>
+[in] TRUE to automatically recalculate the layout of the pane; otherwise, FALSE.  
   
 ### Remarks  
  Call this method when you dynamically change the layout of a pane. For example, you may want to call this method when you hide or show toolbar buttons.  
@@ -156,11 +156,11 @@ BOOL AllocElements(
 ```  
   
 ### Parameters  
- [in] *nElements*  
- The number of elements for which to allocate storage.  
+*nElements*<br/>
+[in] The number of elements for which to allocate storage.  
   
- [in] *cbElement*  
- The size, in bytes, of an element.  
+*cbElement*<br/>
+[in] The size, in bytes, of an element.  
   
 ### Return Value  
  FALSE if memory allocation fails; otherwise, TRUE.  
@@ -186,8 +186,8 @@ virtual CSize CalcAvailableSize(CRect rectRequired);
 ```  
   
 ### Parameters  
- [in] *rectRequired*  
- The required rectangle.  
+*rectRequired*<br/>
+[in] The required rectangle.  
   
 ### Return Value  
  The difference in width and height between *rectRequired* and the current window rectangle.  
@@ -202,11 +202,11 @@ void CalcInsideRect(
 ```  
   
 ### Parameters  
- [out] *rect*  
- Contains the size and offset of the client area of the pane.  
+*rect*<br/>
+[out] Contains the size and offset of the client area of the pane.  
   
- [in] *bHorz*  
- TRUE if the pane is oriented horizontally; otherwise, FALSE.  
+*bHorz*<br/>
+[in] TRUE if the pane is oriented horizontally; otherwise, FALSE.  
   
 ### Remarks  
  This method is called by the framework when it has to recalculate the layout for a pane. The *rect* parameter is filled with the size and offset of the client area of the pane. This includes its borders and grippers.  
@@ -229,8 +229,8 @@ virtual CSize CalcSize(BOOL bVertDock);
 ```  
   
 ### Parameters  
- [in] *bVertDock*  
- TRUE if the pane is being docked vertically, FALSE otherwise.  
+*bVertDock*<br/>
+[in] TRUE if the pane is being docked vertically, FALSE otherwise.  
   
 ### Return Value  
  The default implementation of this method returns a size of (0, 0).  
@@ -246,8 +246,8 @@ virtual BOOL CanBeDocked(CBasePane* pDockBar) const;
 ```  
   
 ### Parameters  
- [in] *pDockBar*  
- Specifies the pane where this pane is to be docked.  
+*pDockBar*<br/>
+[in] Specifies the pane where this pane is to be docked.  
   
 ### Return Value  
  TRUE if this pane can be docked at the specified docking pane; otherwise, FALSE.  
@@ -278,8 +278,8 @@ virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 ```  
   
 ### Parameters  
- [in] *bActiveTabOnly*  
- Not used in `CPane::ConvertToTabbedDocument`.  
+*bActiveTabOnly*<br/>
+[in] Not used in `CPane::ConvertToTabbedDocument`.  
   
 ### Remarks  
  Only dockable panes can be converted to tabbed documents. For information, see [CDockablePane::ConvertToTabbedDocument](../../mfc/reference/cdockablepane-class.md#converttotabbeddocument).  
@@ -292,8 +292,8 @@ virtual void CopyState(CPane* pOrgBar);
 ```  
   
 ### Parameters  
- [in] *pOrgBar*  
- A pointer to a pane.  
+*pOrgBar*<br/>
+[in] A pointer to a pane.  
   
 ### Remarks  
  This method copies the state of *pOrgBar* to the current pane.  
@@ -313,23 +313,23 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] *lpszClassName*  
- Specifies the name of the Windows class.  
+*lpszClassName*<br/>
+[in] Specifies the name of the Windows class.  
   
- [in] *dwStyle*  
- Specifies the window style attributes. For more information, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
+*dwStyle*<br/>
+[in] Specifies the window style attributes. For more information, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] *rect*  
- Specifies the initial size and position of the *pParentWnd* window, in client coordinates.  
+*rect*<br/>
+[in] Specifies the initial size and position of the *pParentWnd* window, in client coordinates.  
   
  [in] [out] *pParentWnd*  
  Specifies the parent window of this pane.  
   
- [in] *nID*  
- Specifies the ID of the pane.  
+*nID*<br/>
+[in] Specifies the ID of the pane.  
   
- [in] *dwControlBarStyle*  
- Specifies the style for the pane. For more information, see [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).  
+*dwControlBarStyle*<br/>
+[in] Specifies the style for the pane. For more information, see [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).  
   
  [in] [out] *pContext*  
  Specifies the create context of the pane.  
@@ -350,8 +350,8 @@ virtual CPaneFrameWnd* CreateDefaultMiniframe(CRect rectInitial);
 ```  
   
 ### Parameters  
- [in] *rectInitial*  
- Specifies the initial size and position, in screen coordinates, of the mini-frame window to create.  
+*rectInitial*<br/>
+[in] Specifies the initial size and position, in screen coordinates, of the mini-frame window to create.  
   
 ### Return Value  
  The newly created mini-frame window.  
@@ -377,26 +377,26 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- [in] *dwStyleEx*  
- Specifies extended window style attributes. For more information, see [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles).  
+*dwStyleEx*<br/>
+[in] Specifies extended window style attributes. For more information, see [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles).  
   
- [in] *lpszClassName*  
- Specifies the name of the Windows class.  
+*lpszClassName*<br/>
+[in] Specifies the name of the Windows class.  
   
- [in] *dwStyle*  
- Specifies window style attributes. For more information, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
+*dwStyle*<br/>
+[in] Specifies window style attributes. For more information, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] *rect*  
- Specifies the initial size and position of the *pParentWnd* window, in client coordinates.  
+*rect*<br/>
+[in] Specifies the initial size and position of the *pParentWnd* window, in client coordinates.  
   
  [in] [out] *pParentWnd*  
  Specifies the parent window of this pane.  
   
- [in] *nID*  
- Specifies the ID of the pane.  
+*nID*<br/>
+[in] Specifies the ID of the pane.  
   
- [in] *dwControlBarStyle*  
- Specifies the style for the pane. For more information, see [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).  
+*dwControlBarStyle*<br/>
+[in] Specifies the style for the pane. For more information, see [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).  
   
  [in] [out] *pContext*  
  Specifies the create context for the pane.  
@@ -417,8 +417,8 @@ virtual BOOL DockByMouse(CBasePane* pDockBar);
 ```  
   
 ### Parameters  
- [in] *pDockBar*  
- Specifies the base pane to which to dock this pane.  
+*pDockBar*<br/>
+[in] Specifies the base pane to which to dock this pane.  
   
 ### Return Value  
  TRUE if the pane was docked successfully; otherwise, FALSE.  
@@ -437,11 +437,11 @@ virtual BOOL DockPane(
  [in] [out] *pDockBar*  
  Specifies the base pane to dock this pane to.  
   
- [in] *lpRect*  
- Specifies the rectangle on the base pane where this pane is to be docked.  
+*lpRect*<br/>
+[in] Specifies the rectangle on the base pane where this pane is to be docked.  
   
- [in] *dockMethod*  
- Specifies the docking method to use. Available options are as follows:  
+*dockMethod*<br/>
+[in] Specifies the docking method to use. Available options are as follows:  
   
 |Option|Description|  
 |------------|-----------------|  
@@ -466,8 +466,8 @@ virtual CPane* DockPaneStandard(BOOL& bWasDocked);
 ```  
   
 ### Parameters  
- [in] *bWasDocked*  
- TRUE if the pane was successfully docked; otherwise, FALSE.  
+*bWasDocked*<br/>
+[in] TRUE if the pane was successfully docked; otherwise, FALSE.  
   
 ### Return Value  
  This method always returns the **this** pointer.  
@@ -489,23 +489,23 @@ virtual BOOL DockToFrameWindow(
 ```  
   
 ### Parameters  
- [in] *dwAlignment*  
- The side of the parent frame that you want to dock the pane to.  
+*dwAlignment*<br/>
+[in] The side of the parent frame that you want to dock the pane to.  
   
- [in] *lpRect*  
- The specified size.  
+*lpRect*<br/>
+[in] The specified size.  
   
- [in] *dwDockFlags*  
- Ignored.  
+*dwDockFlags*<br/>
+[in] Ignored.  
   
- [in] *pRelativeBar*  
- Ignored.  
+*pRelativeBar*<br/>
+[in] Ignored.  
   
- [in] *nRelativeIndex*  
- Ignored.  
+*nRelativeIndex*<br/>
+[in] Ignored.  
   
- [in] *bOuterEdge*  
- If TRUE and there are other dockable panes at the side that are specified by *dwAlignment*, the pane is docked outside the other panes, closer to the edge of the parent frame. If FALSE, the pane is docked closer to the center of the client area.  
+*bOuterEdge*<br/>
+[in] If TRUE and there are other dockable panes at the side that are specified by *dwAlignment*, the pane is docked outside the other panes, closer to the edge of the parent frame. If FALSE, the pane is docked closer to the center of the client area.  
   
 ### Return Value  
  FALSE if a pane divider ( [CPaneDivider Class](../../mfc/reference/cpanedivider-class.md)) cannot be created; otherwise, TRUE.  
@@ -538,14 +538,14 @@ virtual BOOL FloatPane(
 ```  
   
 ### Parameters  
- [in] *rectFloat*  
- Specifies the location, in screen coordinates, to position the pane when it is floated.  
+*rectFloat*<br/>
+[in] Specifies the location, in screen coordinates, to position the pane when it is floated.  
   
- [in] *dockMethod*  
- Specifies the docking method to use when the pane is floated. For a list of possible values, see [CPane::DockPane](#dockpane).  
+*dockMethod*<br/>
+[in] Specifies the docking method to use when the pane is floated. For a list of possible values, see [CPane::DockPane](#dockpane).  
   
- [in] *bShow*  
- TRUE to show the pane when floated; otherwise, FALSE.  
+*bShow*<br/>
+[in] TRUE to show the pane when floated; otherwise, FALSE.  
   
 ### Return Value  
  TRUE if the pane was floated successfully or if the pane cannot be floated because [CBasePane::CanFloat](../../mfc/reference/cbasepane-class.md#canfloat) returns FALSE; otherwise, FALSE.  
@@ -646,8 +646,8 @@ virtual void GetMinSize(CSize& size) const;
 ```  
   
 ### Parameters  
- [out] *size*  
- A `CSize` object that is filled with the minimum allowed size.  
+*size*<br/>
+[out] A `CSize` object that is filled with the minimum allowed size.  
   
 ### Remarks  
   
@@ -659,8 +659,8 @@ virtual void GetPaneName(CString& strName) const;
 ```  
   
 ### Parameters  
- [out] *strName*  
- A `CString` object that is filled with the caption name.  
+*strName*<br/>
+[out] A `CString` object that is filled with the caption name.  
   
 ### Remarks  
  The pane title is displayed in the caption area when the pane is docked or floating. If the pane is part of a tabbed group, the title is displayed in the tab area. If the pane is in auto-hide mode, the title is displayed on a `CMFCAutoHideButton`.  
@@ -673,8 +673,8 @@ void GetVirtualRect(CRect& rectVirtual) const;
 ```  
   
 ### Parameters  
- [out] *rectVirtual*  
- A `CRect` object that is filled with the virtual rectangle.  
+*rectVirtual*<br/>
+[out] A `CRect` object that is filled with the virtual rectangle.  
   
 ### Remarks  
  When a pane is moved, the framework stores the original position of the pane in a virtual rectangle. The framework can use the virtual rectangle to restore the original position of the pane.  
@@ -691,11 +691,11 @@ virtual AFX_CS_STATUS IsChangeState(
 ```  
   
 ### Parameters  
- [in] *nOffset*  
- Specifies docking sensitivity. For example, a pane that is moved within *nOffset* pixels from a dock row will be docked.  
+*nOffset*<br/>
+[in] Specifies docking sensitivity. For example, a pane that is moved within *nOffset* pixels from a dock row will be docked.  
   
- [in] *ppTargetBar*  
- When the method returns, *ppTargetBar* contains either a pointer to the object to which the current pane should be docked, or NULL if no docking should occur.  
+*ppTargetBar*<br/>
+[in] When the method returns, *ppTargetBar* contains either a pointer to the object to which the current pane should be docked, or NULL if no docking should occur.  
   
 ### Return Value  
  One of the following AFX_CS_STATUS values:  
@@ -742,11 +742,11 @@ bool IsLeftOf(
 ```  
   
 ### Parameters  
- [in] *rect*  
- A `CRect` object that is used for comparison.  
+*rect*<br/>
+[in] A `CRect` object that is used for comparison.  
   
- [in] *bWindowRect*  
- If TRUE, *rect* is assumed to contain screen coordinates; if FALSE, *rect* is assumed to contain client coordinates.  
+*bWindowRect*<br/>
+[in] If TRUE, *rect* is assumed to contain screen coordinates; if FALSE, *rect* is assumed to contain client coordinates.  
   
 ### Return Value  
   
@@ -794,14 +794,14 @@ virtual BOOL LoadState(
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- Profile name.  
+*lpszProfileName*<br/>
+[in] Profile name.  
   
- [in] *nIndex*  
- Profile index.  
+*nIndex*<br/>
+[in] Profile index.  
   
- [in] *uiID*  
- Pane ID.  
+*uiID*<br/>
+[in] Pane ID.  
   
 ### Return Value  
  TRUE if the pane state was loaded successfully; otherwise, FALSE.  
@@ -843,11 +843,11 @@ BOOL MoveByAlignment(
 ```  
   
 ### Parameters  
- [in] *dwAlignment*  
- Specifies pane alignment.  
+*dwAlignment*<br/>
+[in] Specifies pane alignment.  
   
- [in] *nOffset*  
- The amount, in pixels, by which to move the pane and the virtual rectangle.  
+*nOffset*<br/>
+[in] The amount, in pixels, by which to move the pane and the virtual rectangle.  
   
 ### Return Value  
   
@@ -875,14 +875,14 @@ virtual CSize MovePane(
 ```  
   
 ### Parameters  
- [in] *rectNew*  
- Specifies the new rectangle for the pane.  
+*rectNew*<br/>
+[in] Specifies the new rectangle for the pane.  
   
- [in] *bForceMove*  
- If TRUE, this method ignores the minimum allowed pane size ( [CPane::GetMinSize](#getminsize)); otherwise, the pane is adjusted, if necessary, to ensure that it is at least the minimum allowed size.  
+*bForceMove*<br/>
+[in] If TRUE, this method ignores the minimum allowed pane size ( [CPane::GetMinSize](#getminsize)); otherwise, the pane is adjusted, if necessary, to ensure that it is at least the minimum allowed size.  
   
- [in] *hdwp*  
- Not used.  
+*hdwp*<br/>
+[in] Not used.  
   
 ### Return Value  
  A `CSize` object that contains the differences in width and height between the new and old rectangles (old rectangle - *rectNew*).  
@@ -915,14 +915,14 @@ virtual void OnAfterDock(
 ```  
   
 ### Parameters  
- [in] *pBar*  
- This parameter is not used.  
+*pBar*<br/>
+[in] This parameter is not used.  
   
- [in] *lpRect*  
- This parameter is not used.  
+*lpRect*<br/>
+[in] This parameter is not used.  
   
- [in] *dockMethod*  
- This parameter is not used.  
+*dockMethod*<br/>
+[in] This parameter is not used.  
   
 ##  <a name="onafterfloat"></a>  CPane::OnAfterFloat  
  Called by the framework after a pane floats.  
@@ -947,8 +947,8 @@ virtual void OnBeforeChangeParent(
  [in] [out] *pWndNewParent*  
  Specifies the new parent window.  
   
- [in] *bDelay*  
- TRUE to delay the global docking layout adjustment; otherwise, FALSE.  
+*bDelay*<br/>
+[in] TRUE to delay the global docking layout adjustment; otherwise, FALSE.  
   
 ### Remarks  
  This method is called by the framework when the parent of the pane is about to change because the pane is being docked or floated.  
@@ -969,11 +969,11 @@ virtual BOOL OnBeforeDock(
  [in] [out] *ppDockBar*  
  Specifies the pane that this pane is docking to.  
   
- [in] *lpRect*  
- Specifies the docking rectangle.  
+*lpRect*<br/>
+[in] Specifies the docking rectangle.  
   
- [in] *dockMethod*  
- Specifies the docking method.  
+*dockMethod*<br/>
+[in] Specifies the docking method.  
   
 ### Return Value  
  TRUE if the pane can be docked. If the function returns FALSE, the docking operation will be aborted.  
@@ -991,11 +991,11 @@ virtual BOOL OnBeforeFloat(
 ```  
   
 ### Parameters  
- [in] *rectFloat*  
- Specifies the position and size of the pane when it is in a floating state.  
+*rectFloat*<br/>
+[in] Specifies the position and size of the pane when it is in a floating state.  
   
- [in] *dockMethod*  
- Specifies the docking method of the pane.  
+*dockMethod*<br/>
+[in] Specifies the docking method of the pane.  
   
 ### Return Value  
  TRUE if the pane can be floated; otherwise, FALSE.  
@@ -1021,8 +1021,8 @@ virtual BOOL OnShowControlBarMenu(CPoint point);
 ```  
   
 ### Parameters  
- [in] *point*  
- Specifies the menu location.  
+*point*<br/>
+[in] Specifies the menu location.  
   
 ### Return Value  
  TRUE if the menu can be displayed; otherwise, FALSE.  
@@ -1053,14 +1053,14 @@ virtual BOOL SaveState(
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- Profile name.  
+*lpszProfileName*<br/>
+[in] Profile name.  
   
- [in] *nIndex*  
- Profile index.  
+*nIndex*<br/>
+[in] Profile index.  
   
- [in] *uiID*  
- Pane ID.  
+*uiID*<br/>
+[in] Pane ID.  
   
 ### Return Value  
  TRUE if the state was saved successfully; otherwise, FALSE.  
@@ -1078,8 +1078,8 @@ virtual void SetActiveInGroup(BOOL bActive);
 ```  
   
 ### Parameters  
- [in] *bActive*  
- A BOOL that specifies whether the pane is flagged as active.  
+*bActive*<br/>
+[in] A BOOL that specifies whether the pane is flagged as active.  
   
 ### Remarks  
  When a dockable pane is shown or an auto-hide button is chosen, the corresponding auto-hide pane is marked as active.  
@@ -1102,20 +1102,20 @@ void SetBorders(LPCRECT lpRect);
 ```  
   
 ### Parameters  
- [in] *cxLeft*  
- Specifies the width, in pixels, of the left border of the pane.  
+*cxLeft*<br/>
+[in] Specifies the width, in pixels, of the left border of the pane.  
   
- [in] *cyTop*  
- Specifies the width, in pixels, of the top border of the pane.  
+*cyTop*<br/>
+[in] Specifies the width, in pixels, of the top border of the pane.  
   
- [in] *cxRight*  
- Specifies the width, in pixels, of the right border of the pane.  
+*cxRight*<br/>
+[in] Specifies the width, in pixels, of the right border of the pane.  
   
- [in] *cyBottom*  
- Specifies the width, in pixels, of the bottom border of the pane.  
+*cyBottom*<br/>
+[in] Specifies the width, in pixels, of the bottom border of the pane.  
   
- [in] *lpRect*  
- A [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the width, in pixels, of each border of the pane.  
+*lpRect*<br/>
+[in] A [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the width, in pixels, of each border of the pane.  
   
 ### Remarks  
  Call this function to set the sizes of the pane's borders.  
@@ -1128,8 +1128,8 @@ void SetClientHotSpot(const CPoint& ptNew);
 ```  
   
 ### Parameters  
- [in] *ptNew*  
- A `CPoint` object that specifies the new hot spot.  
+*ptNew*<br/>
+[in] A `CPoint` object that specifies the new hot spot.  
   
 ### Remarks  
  The *hot spot* is the point on the pane that the user selects and holds to move the pane. A hot spot is used for smooth animation when the pane is dragged from a docked position.  
@@ -1142,8 +1142,8 @@ virtual void SetDockState(CDockingManager* pDockManager);
 ```  
   
 ### Parameters  
- [in] *pDockManager*  
- Pointer to the docking manager for the main frame window.  
+*pDockManager*<br/>
+[in] Pointer to the docking manager for the main frame window.  
   
 ### Remarks  
  This method is called by the framework to restore recent docking state information for the pane. A pane stores recent docking state information in [CPane::m_recentDockInfo](#m_recentdockinfo). For more information, see the [CRecentDockSiteInfo Class](../../mfc/reference/crecentdocksiteinfo-class.md).  
@@ -1158,8 +1158,8 @@ virtual void SetExclusiveRowMode(BOOL bExclusive = TRUE);
 ```  
   
 ### Parameters  
- [in] *bExclusive*  
- TRUE to enable exclusive row mode; otherwise, FALSE.  
+*bExclusive*<br/>
+[in] TRUE to enable exclusive row mode; otherwise, FALSE.  
   
 ### Remarks  
  Call this method to enable or disable exclusive row mode. When a pane is in exclusive row mode, it cannot share the same row with any other toolbars.  
@@ -1174,8 +1174,8 @@ void SetMinSize(const CSize& size);
 ```  
   
 ### Parameters  
- [in] *size*  
- A `CSize` object that contains the minimum allowed size for the pane.  
+*size*<br/>
+[in] A `CSize` object that contains the minimum allowed size for the pane.  
   
 ### Remarks  
   
@@ -1189,11 +1189,11 @@ void SetVirtualRect(
 ```  
   
 ### Parameters  
- [in] *rect*  
- A `CRect` object that specifies the virtual rectangle to be set.  
+*rect*<br/>
+[in] A `CRect` object that specifies the virtual rectangle to be set.  
   
- [in] *bMapToParent*  
- Specify TRUE if *rect* contains points relative to the parent window.  
+*bMapToParent*<br/>
+[in] Specify TRUE if *rect* contains points relative to the parent window.  
   
 ### Remarks  
  A *virtual rectangle* stores the original position of a pane when it is moved. The framework can use the virtual rectangle to restore the original position.  
@@ -1224,11 +1224,11 @@ virtual int StretchPaneDeferWndPos(
 ```  
   
 ### Parameters  
- [in] *nStretchSize*  
- The amount, in pixels, to stretch the pane. Use a negative value to shrink the pane.  
+*nStretchSize*<br/>
+[in] The amount, in pixels, to stretch the pane. Use a negative value to shrink the pane.  
   
- [in] *hdwp*  
- Not used.  
+*hdwp*<br/>
+[in] Not used.  
   
 ### Return Value  
  The actual amount, in pixels, that the pane was stretched.  
@@ -1254,8 +1254,8 @@ virtual void UndockPane(BOOL bDelay = FALSE);
 ```  
   
 ### Parameters  
- [in] *bDelay*  
- If FALSE, the framework calls [CBasePane::AdjustDockingLayout](../../mfc/reference/cbasepane-class.md#adjustdockinglayout) to adjust the docking layout.  
+*bDelay*<br/>
+[in] If FALSE, the framework calls [CBasePane::AdjustDockingLayout](../../mfc/reference/cbasepane-class.md#adjustdockinglayout) to adjust the docking layout.  
   
 ### Remarks  
  Use this method to programmatically undock a pane.  
@@ -1270,11 +1270,11 @@ void UpdateVirtualRect(CPoint ptOffset);
 ```  
   
 ### Parameters  
- [in] *ptOffset*  
- A `CPoint` object that specifies an offset by which to shift the pane.  
+*ptOffset*<br/>
+[in] A `CPoint` object that specifies an offset by which to shift the pane.  
   
- [in] *sizeNew*  
- A `CSize` object that specifies a new size for the  pane.  
+*sizeNew*<br/>
+[in] A `CSize` object that specifies a new size for the  pane.  
   
 ### Remarks  
  The first overload sets the virtual rectangle by using the current position and size of the pane.  

@@ -32,8 +32,8 @@ void __incfsdword(
 ```  
   
 #### Parameters  
- [in] `Offset`  
- The offset from the beginning of `FS`.  
+`Offset`<br/>
+[in] The offset from the beginning of `FS`.  
   
 ## Requirements  
   

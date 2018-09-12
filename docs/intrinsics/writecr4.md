@@ -26,8 +26,8 @@ void writecr4( 
 ```  
   
 #### Parameters  
- [in] `Data`  
- The value to write to the CR4 register.  
+`Data`<br/>
+[in] The value to write to the CR4 register.  
   
 ## Requirements  
   

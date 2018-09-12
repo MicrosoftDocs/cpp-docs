@@ -104,11 +104,11 @@ __int64 _InterlockedExchangeAdd64_HLERelease(
 ```  
   
 #### Parameters  
- [in, out] `Addend`  
- The value to be added to; replaced by the result of the addition.  
+`Addend`<br/>
+[in, out] The value to be added to; replaced by the result of the addition.  
   
- [in] `Value`  
- The value to add.  
+`Value`<br/>
+[in] The value to add.  
   
 ## Return Value  
  The return value is the initial value of the variable pointed to by the `Addend` parameter.  

@@ -80,20 +80,20 @@ BOOL AddBar(
  [in] [out] *pBar*  
  A pointer to the child window that is to be inserted into the rebar. The referenced object must have the **WS_CHILD** window style.  
   
- [in] *pszText*  
- Specifies the text to appear on the rebar. The text is not part of the child window. Rather, it is displayed on the rebar itself.  
+*pszText*<br/>
+[in] Specifies the text to appear on the rebar. The text is not part of the child window. Rather, it is displayed on the rebar itself.  
   
  [in] [out] *pbmp*  
  Specifies the bitmap to be displayed on the rebar background.  
   
- [in] *dwStyle*  
- Contains the style to apply to the band. For a complete list of band styles, see the description for `fStyle` in the [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) structure in the Windows SDK documentation.  
+*dwStyle*<br/>
+[in] Contains the style to apply to the band. For a complete list of band styles, see the description for `fStyle` in the [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) structure in the Windows SDK documentation.  
   
- [in] *clrFore*  
- Represents the foreground color of the rebar.  
+*clrFore*<br/>
+[in] Represents the foreground color of the rebar.  
   
- [in] *clrBack*  
- Represents the background color of the rebar.  
+*clrBack*<br/>
+[in] Represents the background color of the rebar.  
   
 ### Return Value  
  TRUE if the band was successfully added to the rebar; otherwise, FALSE.  
@@ -113,14 +113,14 @@ BOOL Create(
  [in] [out] *pParentWnd*  
  A pointer to the parent window of this rebar control.  
   
- [in] *dwCtrlStyle*  
- Specifies the style for the rebar control. The default style value is **RBS_BANDBORDERS**, which displays narrow lines to separate adjacent bands on the rebar control. For a list of valid styles, see [Rebar Control Styles](/windows/desktop/Controls/rebar-control-styles) in the Windows SDK documentation.  
+*dwCtrlStyle*<br/>
+[in] Specifies the style for the rebar control. The default style value is **RBS_BANDBORDERS**, which displays narrow lines to separate adjacent bands on the rebar control. For a list of valid styles, see [Rebar Control Styles](/windows/desktop/Controls/rebar-control-styles) in the Windows SDK documentation.  
   
- [in] *dwStyle*  
- The window style of the rebar control. For a list of valid styles, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
+*dwStyle*<br/>
+[in] The window style of the rebar control. For a list of valid styles, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] *nID*  
- The rebar's child-window ID.  
+*nID*<br/>
+[in] The rebar's child-window ID.  
   
 ### Return Value  
  TRUE if the rebar was created successfully; otherwise, FALSE.  
@@ -150,8 +150,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### Parameters  
- [in] *bStretch*  
- [in] *bHorz*  
+*bStretch*<br/>
+[in] [in] *bHorz*  
   
 ### Return Value  
   
@@ -215,8 +215,8 @@ virtual INT_PTR OnToolHitTest(
 ```  
   
 ### Parameters  
- [in] *point*  
- [in] *pTI*  
+*point*<br/>
+[in] [in] *pTI*  
   
 ### Return Value  
   
@@ -232,8 +232,8 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### Parameters  
- [in] *pTarget*  
- [in] *bDisableIfNoHndler*  
+*pTarget*<br/>
+[in] [in] *bDisableIfNoHndler*  
   
 ### Remarks  
   

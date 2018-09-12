@@ -79,14 +79,14 @@ void BuildFonts(
 ```  
   
 ### Parameters  
- [in] *nFontType*  
- Specifies the font type of the fonts to add.  
+*nFontType*<br/>
+[in] Specifies the font type of the fonts to add.  
   
- [in] *nCharSet*  
- Specifies the character set of the fonts to add.  
+*nCharSet*<br/>
+[in] Specifies the character set of the fonts to add.  
   
- [in] *nPitchAndFamily*  
- Specifies the pitch and family of the fonts to add.  
+*nPitchAndFamily*<br/>
+[in] Specifies the pitch and family of the fonts to add.  
   
 ##  <a name="cmfcribbonfontcombobox"></a>  CMFCRibbonFontComboBox::CMFCRibbonFontComboBox  
  Constructs and initializes a [CMFCRibbonFontComboBox](../../mfc/reference/cmfcribbonfontcombobox-class.md) object.  
@@ -101,20 +101,20 @@ CMFCRibbonFontComboBox(
 ```  
   
 ### Parameters  
- [in] *nID*  
- The command ID of the command that executes when the user selects an item from the combo box.  
+*nID*<br/>
+[in] The command ID of the command that executes when the user selects an item from the combo box.  
   
- [in] *nFontType*  
- Specifies which font types to display in the combo box. Valid options are DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE, or any bitwise combination thereof.  
+*nFontType*<br/>
+[in] Specifies which font types to display in the combo box. Valid options are DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE, or any bitwise combination thereof.  
   
- [in] *nCharSet*  
- Filters the fonts in the combo box to those that belong to the specified character set..  
+*nCharSet*<br/>
+[in] Filters the fonts in the combo box to those that belong to the specified character set..  
   
- [in] *nPitchAndFamily*  
- Specifies the pitch and the family of the fonts that are displayed in the combo box.  
+*nPitchAndFamily*<br/>
+[in] Specifies the pitch and the family of the fonts that are displayed in the combo box.  
   
- [in] *nWidth*  
- Specifies the width, in pixels, of the combo box.  
+*nWidth*<br/>
+[in] Specifies the width, in pixels, of the combo box.  
   
 ### Remarks  
  For more information about possible *nFontType* parameter values, see [EnumFontFamProc](https://msdn.microsoft.com/library/windows/desktop/dd162621) in the Windows SDK documentation.  

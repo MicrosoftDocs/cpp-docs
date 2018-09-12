@@ -218,8 +218,8 @@ virtual CString GenerateAutosaveFileName(const CString& strDocumentName) const;
 ```  
   
 ### Parameters  
- [in] *strDocumentName*  
- A string that contains the document name. `GenerateAutosaveFileName` uses this document name to generate a corresponding autosave file name.  
+*strDocumentName*<br/>
+[in] A string that contains the document name. `GenerateAutosaveFileName` uses this document name to generate a corresponding autosave file name.  
   
 ### Return Value  
  The autosave file name generated from *strDocumentName*.  
@@ -295,8 +295,8 @@ virtual CString GetRecoveredDocumentTitle(const CString& strDocumentTitle) const
 ```  
   
 ### Parameters  
- [in] *strDocumentTitle*  
- The normal title for the document.  
+*strDocumentTitle*<br/>
+[in] The normal title for the document.  
   
 ### Return Value  
  The recovered document title.  
@@ -462,8 +462,8 @@ Virtual void SetAutosaveInterval(int nAutosaveInterval);
 ```  
   
 ### Parameters  
- [in] *nAutosaveInterval*  
- The new autosave interval in milliseconds.  
+*nAutosaveInterval*<br/>
+[in] The new autosave interval in milliseconds.  
   
 ##  <a name="setautosavepath"></a>  CDataRecoveryHandler::SetAutosavePath  
  Sets the directory where autosaved files are stored.  

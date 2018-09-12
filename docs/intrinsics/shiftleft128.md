@@ -28,14 +28,14 @@ unsigned __int64 __shiftleft128( 
 ```  
   
 #### Parameters  
- [in] `LowPart`  
- The low 64 bits of the 128-bit quantity to shift.  
+`LowPart`<br/>
+[in] The low 64 bits of the 128-bit quantity to shift.  
   
- [in] `HighPart`  
- The high 64 bits of the 128-bit quantity to shift.  
+`HighPart`<br/>
+[in] The high 64 bits of the 128-bit quantity to shift.  
   
- [in] `Shift`  
- The number of bits to shift.  
+`Shift`<br/>
+[in] The number of bits to shift.  
   
 ## Return Value  
  The high 64 bits of the result.  

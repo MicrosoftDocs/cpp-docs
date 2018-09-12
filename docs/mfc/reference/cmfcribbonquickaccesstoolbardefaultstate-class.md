@@ -78,8 +78,8 @@ void CopyFrom(const CMFCRibbonQuickAccessToolBarDefaultState& src);
 ```  
   
 ### Parameters  
- [in] *src*  
- A reference to the source `CMFCRibbonQuickAccessToolBarDefaultState` object to copy from.  
+*src*<br/>
+[in] A reference to the source `CMFCRibbonQuickAccessToolBarDefaultState` object to copy from.  
   
 ### Remarks  
  This method copies each command from the source `CMFCRibbonQuickAccessToolBarDefaultState` object to this object by using the [CMFCRibbonQuickAccessToolBarDefaultState::AddCommand](#addcommand) method.  

@@ -110,14 +110,14 @@ void EnableAutomaticButton(
 ```  
   
 ### Parameters  
- [in] *lpszLabel*  
- Specifies the automatic button's text.  
+*lpszLabel*<br/>
+[in] Specifies the automatic button's text.  
   
- [in] *colorAutomatic*  
- An RGB value that specifies the automatic button's default color.  
+*colorAutomatic*<br/>
+[in] An RGB value that specifies the automatic button's default color.  
   
- [in] *bEnable*  
- Specifies whether the automatic button is enabled or disabled.  
+*bEnable*<br/>
+[in] Specifies whether the automatic button is enabled or disabled.  
   
 ### Remarks  
   
@@ -132,14 +132,14 @@ void EnableOtherButton(
 ```  
   
 ### Parameters  
- [in] *lpszLabel*  
- Specifies the button's text.  
+*lpszLabel*<br/>
+[in] Specifies the button's text.  
   
- [in] *bAltColorDlg*  
- Specifies whether the [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) dialog box or the system color dialog box is opened when the user clicks the button.  
+*bAltColorDlg*<br/>
+[in] Specifies whether the [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) dialog box or the system color dialog box is opened when the user clicks the button.  
   
- [in] *bEnable*  
- Specifies whether the "other" button is enabled or disabled.  
+*bEnable*<br/>
+[in] Specifies whether the "other" button is enabled or disabled.  
   
 ### Remarks  
  Click the "other" button to display a color dialog box. If the *bAltColorDlg* parameter is TRUE, the [CMFCColorDialog Class](../../mfc/reference/cmfccolordialog-class.md) is displayed; otherwise, the system color dialog box is displayed.  
@@ -200,14 +200,14 @@ virtual void OnDraw(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Points to the device context that is used to render the image of the button.  
+*pDC*<br/>
+[in] Points to the device context that is used to render the image of the button.  
   
- [in] *rect*  
- A rectangle that bounds the button.  
+*rect*<br/>
+[in] A rectangle that bounds the button.  
   
- [in] *uiState*  
- Specifies the visual state of the button.  
+*uiState*<br/>
+[in] Specifies the visual state of the button.  
   
 ### Remarks  
  Override this method to customize the rendering process.  
@@ -223,14 +223,14 @@ virtual void OnDrawBorder(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Points to the device context used to draw the border.  
+*pDC*<br/>
+[in] Points to the device context used to draw the border.  
   
- [in] *rectClient*  
- A rectangle in the device context that is specified by the *pDC* parameter that defines the boundaries of the button to be drawn.  
+*rectClient*<br/>
+[in] A rectangle in the device context that is specified by the *pDC* parameter that defines the boundaries of the button to be drawn.  
   
- [in] *uiState*  
- Specifies the visual state of the button.  
+*uiState*<br/>
+[in] Specifies the visual state of the button.  
   
 ### Remarks  
  Override this function to customize the color button's border appearance.  
@@ -245,11 +245,11 @@ virtual void OnDrawFocusRect(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Points to the device context used to draw the focus rectangle.  
+*pDC*<br/>
+[in] Points to the device context used to draw the focus rectangle.  
   
- [in] *rectClient*  
- A rectangle in the device context specified by the *pDC* parameter that defines the boundaries of the button.  
+*rectClient*<br/>
+[in] A rectangle in the device context specified by the *pDC* parameter that defines the boundaries of the button.  
   
 ### Remarks  
  Override this method to customize appearance of the focus rectangle.  
@@ -284,8 +284,8 @@ void SetColor(COLORREF color);
 ```  
   
 ### Parameters  
- [in] *color*  
- An RGB value.  
+*color*<br/>
+[in] An RGB value.  
   
 ### Remarks  
   
@@ -299,11 +299,11 @@ static void SetColorName(
 ```  
   
 ### Parameters  
- [in] *color*  
- The color's RGB value.  
+*color*<br/>
+[in] The color's RGB value.  
   
- [in] *strName*  
- The color's name.  
+*strName*<br/>
+[in] The color's name.  
   
 ### Remarks  
  The list of color names is global per application. Consequently, this method transfers its parameters to [CMFCColorBar::SetColorName](../../mfc/reference/cmfccolorbar-class.md#setcolorname).  
@@ -316,8 +316,8 @@ void SetColumnsNumber(int nColumns);
 ```  
   
 ### Parameters  
- [in] *nColumns*  
- Specifies the number of columns.  
+*nColumns*<br/>
+[in] Specifies the number of columns.  
   
 ### Remarks  
  The user can select a color from a popup color bar that displays a table of predefined colors. Use this method to define the number of columns in the table.  
@@ -332,11 +332,11 @@ void SetDocumentColors(
 ```  
   
 ### Parameters  
- [in] *lpszLabel*  
- Specifies the label to be displayed with the set of document colors.  
+*lpszLabel*<br/>
+[in] Specifies the label to be displayed with the set of document colors.  
   
- [in] *lstColors*  
- A reference to a list of RGB values.  
+*lstColors*<br/>
+[in] A reference to a list of RGB values.  
   
 ### Remarks  
  A `CMFCColorButton` object maintains a list of RGB values that are transferred to a [CMFCColorBar Class](../../mfc/reference/cmfccolorbar-class.md) object. When the color bar is displayed, these colors are shown in a special section whose label is specified by the *lpszLabel* parameter.  
@@ -349,8 +349,8 @@ void SetPalette(CPalette* pPalette);
 ```  
   
 ### Parameters  
- [in] *pPalette*  
- A pointer to a color palette.  
+*pPalette*<br/>
+[in] A pointer to a color palette.  
   
 ### Remarks  
   
@@ -362,8 +362,8 @@ virtual CSize SizeToContent(BOOL bCalcOnly=FALSE);
 ```  
   
 ### Parameters  
- [in] *bCalcOnly*  
- If nonzero, the new size of the button control is calculated but the actual size is not changed.  
+*bCalcOnly*<br/>
+[in] If nonzero, the new size of the button control is calculated but the actual size is not changed.  
   
 ### Return Value  
  A `CSize` object that specifies a new button control size.  
@@ -378,8 +378,8 @@ virtual void UpdateColor(COLORREF color);
 ```  
   
 ### Parameters  
- [in] *color*  
- A color selected by the user.  
+*color*<br/>
+[in] A color selected by the user.  
   
 ### Remarks  
  The `UpdateColor` function changes the currently selected button's color and notifies its parent by sending a WM_COMMAND message with a BN_CLICKED standard notification. Use the [CMFCColorButton::GetColor](#getcolor) method to retrieve the selected color.  

@@ -2504,11 +2504,11 @@ void MoveItemToGroup(
 ```  
   
 ### Parameters  
- [in] *idItemFrom*  
- The index of the item to be moved.  
+*idItemFrom*<br/>
+[in] The index of the item to be moved.  
   
- [in] *idGroupTo*  
- The identifier of the group the item will be moved to.  
+*idGroupTo*<br/>
+[in] The identifier of the group the item will be moved to.  
   
 ### Remarks  
   
@@ -3569,13 +3569,13 @@ BOOL SortItems(
 ```  
   
 ### Parameters  
- [in] *pfnCompare*  
- Address of the application-defined comparison function.  
+*pfnCompare*<br/>
+[in] Address of the application-defined comparison function.  
   
  The sort operation calls the comparison function each time the relative order of two list items needs to be determined. The comparison function must be either a static member of a class or a stand-alone function that is not a member of any class.  
   
- [in] *dwData*  
- Application-defined value that is passed to the comparison function.  
+*dwData*<br/>
+[in] Application-defined value that is passed to the comparison function.  
   
 ### Return Value  
  TRUE if the method successful; otherwise FALSE.  

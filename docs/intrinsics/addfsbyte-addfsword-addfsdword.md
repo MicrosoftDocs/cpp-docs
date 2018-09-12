@@ -35,11 +35,11 @@ void __addfsdword( 
 ```  
   
 #### Parameters  
- [in] `Offset`  
- The offset from the beginning of `FS`.  
+`Offset`<br/>
+[in] The offset from the beginning of `FS`.  
   
- [in] `Data`  
- The value to add to the memory location.  
+`Data`<br/>
+[in] The value to add to the memory location.  
   
 ## Requirements  
   

@@ -47,11 +47,11 @@ void * _InterlockedExchangePointer_HLERelease(
 ```  
   
 #### Parameters  
- [in, out] `Target`  
- Pointer to the pointer to the value to exchange. The function sets the value to `Value` and returns its previous value.  
+`Target`<br/>
+[in, out] Pointer to the pointer to the value to exchange. The function sets the value to `Value` and returns its previous value.  
   
- [in] `Value`  
- Value to be exchanged with the value pointed to by `Target`.  
+`Value`<br/>
+[in] Value to be exchanged with the value pointed to by `Target`.  
   
 ## Return Value  
  The function returns the initial value pointed to by `Target`.  
