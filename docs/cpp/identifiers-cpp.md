@@ -1,7 +1,7 @@
 ---
 title: "Identifiers (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
 dev_langs: ["C++"]
