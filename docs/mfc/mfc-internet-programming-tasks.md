@@ -1,7 +1,7 @@
 ---
 title: "MFC Internet Programming Tasks | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -37,8 +37,6 @@ This section contains detailed steps for adding Internet support to your applica
 -   [ActiveX Controls on the Internet](../mfc/activex-controls-on-the-internet.md)  
   
 -   [Upgrading an Existing ActiveX Control](../mfc/upgrading-an-existing-activex-control.md)  
-  
--   [Active Documents on the Internet](../mfc/active-documents-on-the-internet.md)  
   
 -   [Asynchronous Monikers on the Internet](../mfc/asynchronous-monikers-on-the-internet.md)  
   

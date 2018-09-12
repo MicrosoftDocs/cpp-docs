@@ -156,6 +156,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/mfc/active-documents-on-the-internet.md",
+            "redirect_url": "/cpp/mfc/activex-controls",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/build/naming-conventions-for-mfc-dlls.md",
             "redirect_url": "/cpp/mfc/mfc-library-versions#mfc-static-library-naming-conventions",
             "redirect_document_id": false

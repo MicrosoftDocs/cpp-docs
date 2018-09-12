@@ -1,7 +1,7 @@
 ---
 title: "MFC Internet Programming Basics | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -12,7 +12,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # MFC Internet Programming Basics
+
 Microsoft provides many APIs for programming both client and server applications. Many new applications are being written for the Internet, and as technologies, browser capabilities, and security options change, new types of applications will be written. Browsers run on client computers, providing access to the World Wide Web and displaying HTML pages that contain text, graphics, ActiveX controls, and documents. Servers provide FTP, HTTP, and gopher services, and run server extension applications using CGI. Your custom application can retrieve information and provide data on the Internet.  
+
+>[!IMPORTANT]
+> ActiveX is a legacy technology that should not be used for new development. For more information, see [ActiveX Controls](activex-controls.md).
   
  ![Client and server applications](../mfc/media/vc38bq1.gif "vc38bq1")  
   
@@ -35,8 +39,6 @@ Microsoft provides many APIs for programming both client and server applications
 ## Related Sections  
   
 -   [ActiveX Controls on the Internet](../mfc/activex-controls-on-the-internet.md)  
-  
--   [Active Documents on the Internet](../mfc/active-documents-on-the-internet.md)  
   
 -   [Asynchronous Monikers on the Internet](../mfc/asynchronous-monikers-on-the-internet.md)  
   
