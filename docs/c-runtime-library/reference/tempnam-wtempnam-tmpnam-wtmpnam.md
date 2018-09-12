@@ -100,7 +100,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 // compile with: /W3
 // This program uses tmpnam to create a unique filename in the
 // temporary directory, and _tempname to create a unique filename
-// in C:\\temp.
+// in C:\\tmp.
 
 #include <stdio.h>
 #include <stdlib.h>
