@@ -32,7 +32,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 modifier __interface interface-name {interface-definition};  
 ```  
   
@@ -141,6 +140,6 @@ bstr_data = Testing
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)   
  [Interface Attributes](../windows/interface-attributes.md)

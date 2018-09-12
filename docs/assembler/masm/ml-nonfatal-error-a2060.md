@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2060 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2060"]
@@ -13,9 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2060
-**forced error : strings not equal**  
-  
- The conditional-error directive [.ERRDIF](../../assembler/masm/dot-errdif.md) or **.ERRDIFI** was used to generate this error.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+
+**forced error : strings not equal**
+
+The conditional-error directive [.ERRDIF](../../assembler/masm/dot-errdif.md) or **.ERRDIFI** was used to generate this error.
+
+## See also
+
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

@@ -315,11 +315,11 @@ shared_ptr& operator=(unique_ptr<Other, Deletor>&& ap);
 
 ### Parameters
 
-*sp*
- The shared pointer to copy.
+*sp*<br/>
+The shared pointer to copy.
 
-*ap*
- The auto pointer to copy.
+*ap*<br/>
+The auto pointer to copy.
 
 ### Remarks
 
@@ -407,8 +407,8 @@ bool owner_before(const weak_ptr<Other>& ptr);
 
 ### Parameters
 
-*ptr*
- An `lvalue` reference to either a `shared_ptr` or a `weak_ptr`.
+*ptr*<br/>
+An `lvalue` reference to either a `shared_ptr` or a `weak_ptr`.
 
 ### Remarks
 
@@ -433,23 +433,23 @@ void reset(Other *ptr, D dtor, A alloc);
 
 ### Parameters
 
-*Other*
- The type controlled by the argument pointer.
+*Other*<br/>
+The type controlled by the argument pointer.
 
-*D*
- The type of the deleter.
+*D*<br/>
+The type of the deleter.
 
-*ptr*
- The pointer to copy.
+*ptr*<br/>
+The pointer to copy.
 
-*dtor*
- The deleter to copy.
+*dtor*<br/>
+The deleter to copy.
 
-*A*
- The type of the allocator.
+*A*<br/>
+The type of the allocator.
 
-*alloc*
- The allocator to copy.
+*alloc*<br/>
+The allocator to copy.
 
 ### Remarks
 
@@ -554,32 +554,32 @@ shared_ptr(const unique_ptr<Other, D>& up) = delete;
 
 ### Parameters
 
-*Other*
- The type controlled by the argument pointer.
+*Other*<br/>
+The type controlled by the argument pointer.
 
-*ptr*
- The pointer to copy.
+*ptr*<br/>
+The pointer to copy.
 
-*D*
- The type of the deleter.
+*D*<br/>
+The type of the deleter.
 
-*A*
- The type of the allocator.
+*A*<br/>
+The type of the allocator.
 
-*dtor*
- The deleter.
+*dtor*<br/>
+The deleter.
 
-*ator*
- The allocator.
+*ator*<br/>
+The allocator.
 
-*sp*
- The smart pointer to copy.
+*sp*<br/>
+The smart pointer to copy.
 
-*wp*
- The weak pointer.
+*wp*<br/>
+The weak pointer.
 
-*ap*
- The auto pointer to copy.
+*ap*<br/>
+The auto pointer to copy.
 
 ### Remarks
 
@@ -704,8 +704,8 @@ void swap(shared_ptr& sp);
 
 ### Parameters
 
-*sp*
- The shared pointer to swap with.
+*sp*<br/>
+The shared pointer to swap with.
 
 ### Remarks
 

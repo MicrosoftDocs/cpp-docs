@@ -94,15 +94,12 @@ d = float( i );
  Explicit type conversions can also be specified using the "cast" syntax. The previous example, rewritten using the cast syntax, is:  
   
 ```cpp
-
 d = (float)i;  
-
 ```  
   
  Both cast and function-style conversions have the same results when converting from single values. However, in the function-style syntax, you can specify more than one argument for conversion. This difference is important for user-defined types. Consider a `Point` class and its conversions:  
   
 ```cpp
-
 struct Point  
 {  
     Point( short x, short y ) { _x = x; _y = y; }  
@@ -111,7 +108,6 @@ struct Point
 };  
 ...  
 Point pt = Point( 3, 10 );  
-
 ```
   
  The preceding example, which uses function-style conversion, shows how to convert two values (one for *x* and one for *y*) to the user-defined type `Point`.  
@@ -123,6 +119,6 @@ Point pt = Point( 3, 10 );
   
  Type definition within casts is illegal.  
   
-## See Also  
+## See also  
  [Postfix Expressions](../cpp/postfix-expressions.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

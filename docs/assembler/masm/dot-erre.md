@@ -1,7 +1,7 @@
 ---
 title: ".ERRE | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".ERRE"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .ERRE
-Generates an error if *expression* is false (0).  
-  
-## Syntax  
-  
-```  
-  
-.ERRE expression [[, message]]  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Generates an error if *expression* is false (0).
+
+## Syntax
+
+> .ERRE expression [[, message]]
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

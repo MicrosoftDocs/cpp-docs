@@ -23,5 +23,5 @@ Punctuators in C++ have syntactic and semantic meaning to the compiler but do no
 
  The punctuators **[ ]**, **( )**, and **{ }** must appear in pairs after [translation phase](../preprocessor/phases-of-translation.md) 4.  
 
-## See Also  
+## See also  
  [Lexical Conventions](../cpp/lexical-conventions.md)

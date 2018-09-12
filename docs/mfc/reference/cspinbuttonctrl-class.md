@@ -84,10 +84,10 @@ virtual BOOL Create(
   
 ### Parameters  
  *dwStyle*  
- Specifies the spin button control's style. Apply any combination of spin button control styles to the control. These styles are described in [Up-Down Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb759885) in the Windows SDK.  
+ Specifies the spin button control's style. Apply any combination of spin button control styles to the control. These styles are described in [Up-Down Control Styles](/windows/desktop/Controls/up-down-control-styles) in the Windows SDK.  
   
  *rect*  
- Specifies the spin button control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure  
+ Specifies the spin button control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure  
   
  *pParentWnd*  
  A pointer to the spin button control's parent window, usually a `CDialog`. It must not be NULL.  
@@ -117,13 +117,13 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  *dwExStyle*  
- Specifies the extended style of the control being created. For a list of extended windows styles, see the *dwExStyle* parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ Specifies the extended style of the control being created. For a list of extended windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.  
   
  *dwStyle*  
- Specifies the spin button control's style. Apply any combination of spin button control styles to the control. These styles are described in [Up-Down Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb759885) in the Windows SDK.  
+ Specifies the spin button control's style. Apply any combination of spin button control styles to the control. These styles are described in [Up-Down Control Styles](/windows/desktop/Controls/up-down-control-styles) in the Windows SDK.  
   
  *rect*  
- A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  
+ A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  
   
  *pParentWnd*  
  A pointer to the window that is the control's parent.  
@@ -158,7 +158,7 @@ UINT GetAccel(
  Number of elements in the array specified by *pAccel*.  
   
  *pAccel*  
- Pointer to an array of [UDACCEL](http://msdn.microsoft.com/library/windows/desktop/bb759897) structures that receives acceleration information.  
+ Pointer to an array of [UDACCEL](/windows/desktop/api/commctrl/ns-commctrl-_udaccel) structures that receives acceleration information.  
   
 ### Return Value  
  Number of accelerator structures retrieved.  
@@ -241,7 +241,7 @@ BOOL SetAccel(
   
 ### Parameters  
  *nAccel*  
- Number of [UDACCEL](http://msdn.microsoft.com/library/windows/desktop/bb759897) structures specified by *pAccel*.  
+ Number of [UDACCEL](/windows/desktop/api/commctrl/ns-commctrl-_udaccel) structures specified by *pAccel*.  
   
  *pAccel*  
  Pointer to an array of UDACCEL structures, which contain acceleration information. Elements should be sorted in ascending order based on the `nSec` member.  

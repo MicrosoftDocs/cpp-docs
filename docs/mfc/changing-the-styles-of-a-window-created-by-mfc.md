@@ -56,7 +56,7 @@ In its version of the `WinMain` function, MFC registers several standard window 
   
 -   [Frame-window styles](../mfc/frame-window-styles-cpp.md)  
   
--   [Window styles](http://msdn.microsoft.com/library/windows/desktop/ms632600)  
+-   [Window styles](https://msdn.microsoft.com/library/windows/desktop/ms632600)  
   
 ## See Also  
  [Frame-Window Styles](../mfc/frame-window-styles-cpp.md)

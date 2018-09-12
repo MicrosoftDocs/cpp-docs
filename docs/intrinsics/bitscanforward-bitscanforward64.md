@@ -47,8 +47,8 @@ unsigned char _BitScanForward64(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`_BitScanForward`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`_BitScanForward64`|ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_BitScanForward`|x86, ARM, x64|  
+|`_BitScanForward64`|ARM, x64|  
   
  **Header file** \<intrin.h>  
   

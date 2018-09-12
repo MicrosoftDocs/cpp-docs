@@ -16,7 +16,7 @@ You can use the [Add Property Wizard](../ide/names-add-property-wizard.md) to ad
   
 ### To add a property to your object  
   
-1.  In [Class View](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925), right-click the name of the interface to which you want to add the property.  
+1.  In [Class View](/visualstudio/ide/viewing-the-structure-of-code), right-click the name of the interface to which you want to add the property.  
   
     > [!NOTE]
     >  You can also add properties to dispinterfaces, which, unless the project is attributed, are nested within the library node.  
@@ -38,5 +38,5 @@ You can use the [Add Property Wizard](../ide/names-add-property-wizard.md) to ad
 ## See Also  
  [Creating a COM Interface](../ide/creating-a-com-interface-visual-cpp.md)   
  [Editing a COM Interface](../ide/editing-a-com-interface.md)   
- [The Component Object Model](http://msdn.microsoft.com/library/windows/desktop/ms694363)   
- [Interface Pointers and Interfaces](http://msdn.microsoft.com/library/windows/desktop/ms688484)
+ [The Component Object Model](/windows/desktop/com/the-component-object-model)   
+ [Interface Pointers and Interfaces](/windows/desktop/com/interface-pointers-and-interfaces)

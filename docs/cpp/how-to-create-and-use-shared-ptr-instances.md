@@ -15,7 +15,7 @@ The `shared_ptr` type is a smart pointer in the C++ standard library that is des
   
  The following illustration shows several `shared_ptr` instances that point to one memory location.  
   
- [![Shared pointer](../cpp/media/shared_ptr.png "shared_ptr")](assetId:///9785ad08-31d8-411a-86a9-fb9cd9684c27)  
+ [![Shared pointer](../cpp/media/shared_ptr.png "shared_ptr")]  
   
 ## Example  
  Whenever possible, use the [make_shared](../standard-library/memory-functions.md#make_shared) function to create a `shared_ptr` when the memory resource is created for the first time. `make_shared` is exception-safe. It uses the same call to allocate the memory for the control block and the resource, and thereby reduces the construction overhead. If you do not use `make_shared`, then you have to use an explicit new expression to create the object before you pass it to the `shared_ptr` constructor. The following example shows various ways to declare and initialize a `shared_ptr` together with a new object.  
@@ -57,5 +57,5 @@ The `shared_ptr` type is a smart pointer in the C++ standard library that is des
   
  [!code-cpp[stl_smart_pointers#3](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_6.cpp)]  
   
-## See Also  
+## See also  
  [Smart Pointers](../cpp/smart-pointers-modern-cpp.md)

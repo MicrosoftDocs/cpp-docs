@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 3) C4306 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/27/2018"
 ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4306"]
@@ -13,11 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4306
-**'**   
- ***identifier* ' : conversion from '**   
- ***type1* ' to '**   
- ***type2* ' of greater size**  
-  
- The identifier is type cast to a larger pointer. The unfilled high bits of the new type will be zero-filled.  
-  
- This warning may indicate an unwanted conversion. The resulting pointer may not be valid.
+
+> '*identifier*' : conversion from '*type1*' to '*type2*' of greater size
+
+The identifier is type cast to a larger pointer. The unfilled high bits of the new type will be zero-filled.
+
+This warning may indicate an unwanted conversion. The resulting pointer may not be valid.

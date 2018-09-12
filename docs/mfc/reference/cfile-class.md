@@ -298,7 +298,7 @@ virtual CString GetFileTitle() const;
  The title of the underlying file.  
   
 ### Remarks  
- This method calls [GetFileTitle](http://msdn.microsoft.com/library/windows/desktop/ms646924) to retrieve the title of the file. If successful, the method returns the string that the system would use to display the file name to the user. Otherwise, the method calls [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589) to retrieve the file name (including the file extension) of the underlying file. Therefore, the file extension will not always be included in the returned file title string. For more information, see [GetFileTitle](http://msdn.microsoft.com/library/windows/desktop/ms646924) and [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589) in the Windows SDK.  
+ This method calls [GetFileTitle](/windows/desktop/api/commdlg/nf-commdlg-getfiletitlea) to retrieve the title of the file. If successful, the method returns the string that the system would use to display the file name to the user. Otherwise, the method calls [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea) to retrieve the file name (including the file extension) of the underlying file. Therefore, the file extension will not always be included in the returned file title string. For more information, see [GetFileTitle](/windows/desktop/api/commdlg/nf-commdlg-getfiletitlea) and [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea) in the Windows SDK.  
   
  To return the entire path of the file, including the name, call [GetFilePath](#getfilepath). To return just the name of the file, call [GetFileName](#getfilename).  
   
@@ -503,7 +503,7 @@ virtual BOOL Open(
  [!code-cpp[NVC_MFCFiles#14](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_10.cpp)]  
   
 ##  <a name="operator_handle"></a>  CFile::operator HANDLE  
- Use this operator to pass a handle to a `CFile` object to functions such as [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) and [GetFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724320) that expect a `HANDLE`.  
+ Use this operator to pass a handle to a `CFile` object to functions such as [ReadFileEx](/windows/desktop/api/fileapi/nf-fileapi-readfileex) and [GetFileTime](/windows/desktop/api/fileapi/nf-fileapi-getfiletime) that expect a `HANDLE`.  
   
 ```  
 operator HANDLE() const;  

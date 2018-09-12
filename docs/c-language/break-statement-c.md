@@ -15,15 +15,16 @@ ms.workload: ["cplusplus"]
 # break Statement (C)
 The `break` statement terminates the execution of the nearest enclosing `do`, `for`, `switch`, or `while` statement in which it appears. Control passes to the statement that follows the terminated statement.  
   
-## Syntax  
- *jump-statement*:  
- `break;`  
+## Syntax
+
+*jump-statement*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**break ;**
   
- The `break` statement is frequently used to terminate the processing of a particular case within a `switch` statement. Lack of an enclosing iterative or `switch` statement generates an error.  
+The `break` statement is frequently used to terminate the processing of a particular case within a `switch` statement. Lack of an enclosing iterative or `switch` statement generates an error.  
   
- Within nested statements, the `break` statement terminates only the `do`, `for`, `switch`, or `while` statement that immediately encloses it. You can use a `return` or `goto` statement to transfer control elsewhere out of the nested structure.  
+Within nested statements, the `break` statement terminates only the `do`, `for`, `switch`, or `while` statement that immediately encloses it. You can use a `return` or `goto` statement to transfer control elsewhere out of the nested structure.  
   
- This example illustrates the `break` statement:  
+This example illustrates the `break` statement:  
   
 ```  
 #include <stdio.h>  
@@ -41,4 +42,4 @@ int main() {
 ```  
   
 ## See Also  
- [break Statement](../cpp/break-statement-cpp.md)
+[break Statement](../cpp/break-statement-cpp.md)

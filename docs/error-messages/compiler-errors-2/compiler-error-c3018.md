@@ -30,13 +30,13 @@ int main()
    {  
       #pragma omp for  
       for (i = 0; j < 10; ++i)   // C3018  
-      // try the the following line instead  
+      // try the following line instead  
       // for (i = 0; i < 10; ++i)  
          j *= 2;  
   
       #pragma omp for  
       for (i = 0; i < 10; j = j + i)   // C3018  
-      // try the the following line instead  
+      // try the following line instead  
       // for (i = 0; i < 10; i = j + i)  
          j *= 2;  
    }  

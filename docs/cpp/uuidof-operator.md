@@ -20,7 +20,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 __uuidof (expression)  
 ```  
   
@@ -71,6 +70,6 @@ StringFromCLSID(__LIBID_, &lpolestr);
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   
  [Keywords](../cpp/keywords-cpp.md)

@@ -12,18 +12,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Implements::IidCount Constant
-Holds the number of implemented interface IDs.  
-  
-## Syntax  
-  
-```  
-static const unsigned long IidCount;  
-```  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Implements Structure](../windows/implements-structure.md)
+
+Holds the number of implemented interface IDs.
+
+## Syntax
+
+```cpp
+static const unsigned long IidCount;
+```
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Implements Structure](../windows/implements-structure.md)

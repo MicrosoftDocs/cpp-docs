@@ -52,7 +52,7 @@ A *conversion* produces a new value of some type from a value of a different typ
   
  The **explicit** keyword can be applied to conversion constructors since C++98, and to conversion functions since C++11. The following sections contain more information about how to use the **explicit** keyword.  
   
-##  <a name="ConvCTOR"></a> Conversion constructors  
+## <a name="ConvCTOR"></a> Conversion constructors  
  Conversion constructors define conversions from user-defined or built-in types to a user-defined type. The following example demonstrates a conversion constructor that converts from the built-in type **double** to a user-defined type `Money`.  
   
 ```cpp 
@@ -154,7 +154,6 @@ void display_balance(const Money balance)
 {  
     std::cout << "The balance is: " << balance << std::endl;  
 }  
-  
 ```  
   
  Notice that the member variable `amount` is made private and that a public conversion function to type **double** is introduced just to return the value of `amount`. In the function `display_balance`, an implicit conversion occurs when the value of `balance` is streamed to standard output by using the stream insertion operator `<<`. Because no stream-insertion operator is defined for the user-defined type `Money`, but there is one for built-in type **double**, the compiler can use the conversion function from `Money` to **double** to satisfy the stream-insertion operator.  
@@ -199,8 +198,6 @@ void display_balance(const Money balance)
 {  
     std::cout << "The balance is: " << (double)balance << std::endl;  
 }  
-  
 ```  
   
  Here the conversion function **operator double** has been made explicit, and an explicit cast to type **double** has been introduced in the function `display_balance` to perform the conversion. If this cast were omitted, the compiler would be unable to locate a suitable stream-insertion operator `<<` for type `Money` and an error would occur.  
-  

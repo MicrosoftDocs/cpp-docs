@@ -1,7 +1,7 @@
 ---
 title: "IRPC | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["IRPC"]
@@ -13,16 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # IRPC
-## Syntax  
-  
-```  
-  
-IRPC  
-  
-```  
-  
-## Remarks  
- See [FORC](../../assembler/masm/forc.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+## Syntax
+
+> IRPC
+
+## Remarks
+
+See [FORC](../../assembler/masm/forc.md).
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

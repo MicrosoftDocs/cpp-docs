@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # try-finally Statement
 **Microsoft Specific**  
   
- The following syntax describes the `try-finally` statement:  
+ The following syntax describes the **try-finally** statement:  
   
 ```cpp 
 __try {  
@@ -32,7 +32,7 @@ __finally {
   
  **__finally** *compound-statement*  
   
- The `try-finally` statement is a Microsoft extension to the C and C++ languages that enables target applications to guarantee execution of cleanup code when execution of a block of code is interrupted. Cleanup consists of such tasks as deallocating memory, closing files, and releasing file handles. The `try-finally` statement is especially useful for routines that have several places where a check is made for an error that could cause premature return from the routine.  
+ The **try-finally** statement is a Microsoft extension to the C and C++ languages that enables target applications to guarantee execution of cleanup code when execution of a block of code is interrupted. Cleanup consists of such tasks as deallocating memory, closing files, and releasing file handles. The **try-finally** statement is especially useful for routines that have several places where a check is made for an error that could cause premature return from the routine.  
   
  For related information and a code sample, see [try-except Statement](../cpp/try-except-statement.md). For more information on structured exception handling in general, see [Structured Exception Handling](../cpp/structured-exception-handling-c-cpp.md). For more information on handling exceptions in managed applications, see [Exception Handling under /clr](../windows/exception-handling-cpp-component-extensions.md).  
   
@@ -60,21 +60,21 @@ Order of Termination-Handler Execution
 >  The behavior of try-finally is different from some other languages that support the use of **finally**, such as C#.  A single **__try** may have either, but not both, of **__finally** and **__except**.  If both are to be used together, an outer try-except statement must enclose the inner try-finally statement.  The rules specifying when each block executes are also different.  
   
 ## The __leave Keyword  
- The **__leave** keyword is valid only within the guarded section of a `try-finally` statement, and its effect is to jump to the end of the guarded section. Execution continues at the first statement in the termination handler.  
+ The **__leave** keyword is valid only within the guarded section of a **try-finally** statement, and its effect is to jump to the end of the guarded section. Execution continues at the first statement in the termination handler.  
   
  A **goto** statement can also jump out of the guarded section, but it degrades performance because it invokes stack unwinding. The **__leave** statement is more efficient because it does not cause stack unwinding.  
   
 ## Abnormal Termination  
- Exiting a `try-finally` statement using the [longjmp](../c-runtime-library/reference/longjmp.md) run-time function is considered abnormal termination. It is illegal to jump into a **__try** statement, but legal to jump out of one. All **__finally** statements that are active between the point of departure (normal termination of the **__try** block) and the destination (the **__except** block that handles the exception) must be run. This is called a local unwind.  
+ Exiting a **try-finally** statement using the [longjmp](../c-runtime-library/reference/longjmp.md) run-time function is considered abnormal termination. It is illegal to jump into a **__try** statement, but legal to jump out of one. All **__finally** statements that are active between the point of departure (normal termination of the **__try** block) and the destination (the **__except** block that handles the exception) must be run. This is called a local unwind.  
   
- If a **try** block is prematurely terminated for any reason, including a jump out of the block, the system executes the associated **finally** block as a part of the process of unwinding the stack. In such cases, the [AbnormalTermination](http://msdn.microsoft.com/library/windows/desktop/ms679265) function returns **true** if called from within the **finally** block; otherwise, it returns **false**.  
+ If a **try** block is prematurely terminated for any reason, including a jump out of the block, the system executes the associated **finally** block as a part of the process of unwinding the stack. In such cases, the [AbnormalTermination](/windows/desktop/Debug/abnormaltermination) function returns **true** if called from within the **finally** block; otherwise, it returns **false**.  
   
- The termination handler is not called if a process is killed in the middle of executing a `try-finally` statement.  
+ The termination handler is not called if a process is killed in the middle of executing a **try-finally** statement.  
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Writing a Termination Handler](../cpp/writing-a-termination-handler.md)   
  [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   
- [Termination-Handler Syntax](http://msdn.microsoft.com/library/windows/desktop/ms681393)
+ [Termination-Handler Syntax](/windows/desktop/Debug/termination-handler-syntax)

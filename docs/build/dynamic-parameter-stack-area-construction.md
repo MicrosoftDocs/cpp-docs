@@ -11,7 +11,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Dynamic Parameter Stack Area Construction
-If a frame pointer is used, the option exists to dynamically create the parameter stack area. This is not currently done in the [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] compiler.  
+If a frame pointer is used, the option exists to dynamically create the parameter stack area. This is not currently done in the x64 compiler.  
   
 ## See Also  
  [Stack Usage](../build/stack-usage.md)

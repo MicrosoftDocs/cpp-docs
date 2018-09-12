@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # complex&lt;double&gt;
 
-Describes an object that stores an ordered pair of objects both of type **double***,* the first representing the real part of a complex number and the second representing the imaginary part.
+Describes an object that stores an ordered pair of objects both of type **double**, the first representing the real part of a complex number and the second representing the imaginary part.
 
 ## Syntax
 
@@ -35,14 +35,14 @@ constexpr explicit complex(const complex<long double>& complexNum);
 
 ### Parameters
 
-*RealVal*
- The value of type **double** for the real part of the complex number being constructed.
+*RealVal*<br/>
+The value of type **double** for the real part of the complex number being constructed.
 
-*ImagVal*
- The value of type **double** for the imaginary part of the complex number being constructed.
+*ImagVal*<br/>
+The value of type **double** for the imaginary part of the complex number being constructed.
 
-*complexNum*
- The complex number of type **float** or of type **long double** whose real and imaginary parts are used to initialize a complex number of type **double** being constructed.
+*complexNum*<br/>
+The complex number of type **float** or of type **long double** whose real and imaginary parts are used to initialize a complex number of type **double** being constructed.
 
 ## Return Value
 
@@ -96,7 +96,7 @@ int main( )
         << argc3 << " radians, which is " << argc3 * 180 / pi
         << " degrees." << endl;
 }
-\* Output:
+/* Output:
 Specifying initial real & imaginary parts,
  as type double gives c1 = (4,5)
 Implicit conversion from type float to type double,
@@ -106,7 +106,7 @@ Explicit conversion from type float to type double,
 The modulus of c3 is recovered from c3 using: abs ( c3 ) = 6.40312
 Argument of c3 is recovered from c3 using:
  arg ( c3 ) = 0.896055 radians, which is 51.3402 degrees.
-*\
+*/
 ```
 
 ## Requirements

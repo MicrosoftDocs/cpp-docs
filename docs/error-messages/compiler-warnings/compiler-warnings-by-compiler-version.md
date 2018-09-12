@@ -393,7 +393,7 @@ C4694|'*type*': a sealed abstract class cannot have a base-class '*type*'
 C4720|in-line assembler reports: '*description*'
 C4721|'*description*': not available as an intrinsic
 C4722|'*description*': destructor never returns, potential memory leak
-C4726|ARM arch4/4T supports only '<cpsr_f> or <spsr_f>' with immediate value
+C4726|ARM arch4/4T supports only '\<cpsr_f> or \<spsr_f>' with immediate value
 C4727|PCH named *name* with same timestamp found in *name* and *name*.  Using first PCH.
 C4729|function too big for flow graph based warnings
 C4730|'*description*': mixing _m64 and floating point expressions may result in incorrect code

@@ -76,7 +76,7 @@ AFX_COMCTL32_IF_EXISTS(  proc );
  Pointer to a null-terminated string containing the function name, or specifies the function's ordinal value. If this parameter is an ordinal value, it must be in the low-order word; the high-order word must be zero. This parameter must be in Unicode.  
    
 ### Remarks  
- Use this macro to determine whether the Common Controls library the function specified by *proc* (instead of calling [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212).  
+ Use this macro to determine whether the Common Controls library the function specified by *proc* (instead of calling [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212).  
    
 ### Requirements  
  afxcomctl32.h, afxcomctl32.inl  
@@ -97,7 +97,7 @@ AFX_COMCTL32_IF_EXISTS2( proc );
  Pointer to a null-terminated string containing the function name, or specifies the function's ordinal value. If this parameter is an ordinal value, it must be in the low-order word; the high-order word must be zero. This parameter must be in Unicode.  
    
 ### Remarks  
- Use this macro to determine whether the Common Controls library the function specified by *proc* (instead of calling [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212). This macro is the Unicode version of AFX_COMCTL32_IF_EXISTS.  
+ Use this macro to determine whether the Common Controls library the function specified by *proc* (instead of calling [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212). This macro is the Unicode version of AFX_COMCTL32_IF_EXISTS.  
    
 ### Requirements  
  afxcomctl32.h, afxcomctl32.inl  
@@ -317,11 +317,12 @@ IMPLEMENT_OLECREATE_FLAGS( class_name, external_name, nFlags,
  *nFlags*  
  Contains one or more of the following flags:  
   
--   `afxRegInsertable` Allows the control to appear in the Insert Object dialog box for OLE objects.    
--   `afxRegApartmentThreading` Sets the threading model in the registry to ThreadingModel=Apartment.    
--   `afxRegFreeThreading` Sets the threading model in the registry to ThreadingModel=Free.  
-  
-     You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](http://msdn.microsoft.com/library/windows/desktop/ms682390) in the Windows SDK for more information on threading model registration.    
+    -   `afxRegInsertable` Allows the control to appear in the Insert Object dialog box for OLE objects.    
+    -   `afxRegApartmentThreading` Sets the threading model in the registry to ThreadingModel=Apartment.    
+    -   `afxRegFreeThreading` Sets the threading model in the registry to ThreadingModel=Free.  
+      
+         You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](/windows/desktop/com/inprocserver32) in the Windows SDK for more information on threading model registration. 
+   
  *l*, *w1*, *w2*, *b1*, *b2*, *b3*, *b4*, *b5*, *b6*, *b7*, *b8*  
  Components of the class's CLSID.  
    
@@ -340,7 +341,7 @@ IMPLEMENT_OLECREATE_FLAGS( class_name, external_name, nFlags,
 ### See Also  
  [Macros and Globals](mfc-macros-and-globals.md)   
  [DECLARE_OLECREATE](#declare_olecreate)   
- [CLSID Key](http://msdn.microsoft.com/library/windows/desktop/ms691424)
+ [CLSID Key](/windows/desktop/com/clsid-key-hklm)
 
 
 ## <a name="implement_olecreate"></a> IMPLEMENT_OLECTLTYPE
@@ -358,12 +359,12 @@ DECLARE_OLECTLTYPE( class_name, idsUserTypeName, dwOleMisc )
  The resource ID of a string containing the external name of the control.  
   
  *dwOleMisc*  
- An enumeration containing one or more flags. For more information on this enumeration, see [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) in the Windows SDK.  
+ An enumeration containing one or more flags. For more information on this enumeration, see [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) in the Windows SDK.  
    
 ### Remarks  
  In addition to IMPLEMENT_OLECTLTYPE, you must add the DECLARE_OLECTLTYPE macro to your control class declaration.  
   
- The `GetUserTypeNameID` member function returns the resource string that identifies your control class. `GetMiscStatus` returns the OLEMISC bits for your control. This enumeration specifies a collection of settings describing miscellaneous characteristics of your control. For a full description of the OLEMISC settings, see [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) in the Windows SDK.  
+ The `GetUserTypeNameID` member function returns the resource string that identifies your control class. `GetMiscStatus` returns the OLEMISC bits for your control. This enumeration specifies a collection of settings describing miscellaneous characteristics of your control. For a full description of the OLEMISC settings, see [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) in the Windows SDK.  
   
 > [!NOTE]
 >  The default settings used by the ActiveX ControlWizard are: OLEMISC_ACTIVATEWHENVISIBLE, OLEMISC_SETCLIENTSITEFIRST, OLEMISC_INSIDEOUT, OLEMISC_CANTLINKINSIDE, and OLEMISC_RECOMPOSEONRESIZE.  

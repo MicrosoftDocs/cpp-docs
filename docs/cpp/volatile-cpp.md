@@ -18,7 +18,6 @@ A type qualifier that you can use to declare that an object can be modified in t
 ## Syntax  
   
 ```  
-  
 volatile declarator ;  
 ```  
   
@@ -62,7 +61,7 @@ volatile declarator ;
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)   
  [const](../cpp/const-cpp.md)   
  [const and volatile Pointers](../cpp/const-and-volatile-pointers.md)

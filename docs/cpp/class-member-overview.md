@@ -111,7 +111,6 @@ For more information, see [Special Member Functions](../cpp/special-member-funct
  In C++11 and later, non-static member declarators can contain initializers.  
   
 ```cpp 
-  
 class CanInit  
 {  
 public:  
@@ -161,5 +160,5 @@ int CanInit2::j = i;
 > [!NOTE]
 >  The class name, `CanInit2`, must precede `i` to specify that the `i` being defined is a member of class `CanInit2`.  
   
-## See Also  
+## See also  
  [Classes and Structs](../cpp/classes-and-structs-cpp.md)

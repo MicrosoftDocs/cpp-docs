@@ -15,19 +15,19 @@ ms.workload: ["cplusplus"]
 # _com_error Class
 **Microsoft Specific**  
   
- A `_com_error` object represents an exception condition detected by the error-handling wrapper functions in the header files generated from the type library or by one of the COM support classes. The `_com_error` class encapsulates the HRESULT error code and any associated `IErrorInfo Interface` object.  
+ A **_com_error** object represents an exception condition detected by the error-handling wrapper functions in the header files generated from the type library or by one of the COM support classes. The **_com_error** class encapsulates the HRESULT error code and any associated `IErrorInfo Interface` object.  
   
 ### Construction  
   
 |||  
 |-|-|  
-|[_com_error](../cpp/com-error-com-error.md)|Constructs a `_com_error` object.|  
+|[_com_error](../cpp/com-error-com-error.md)|Constructs a **_com_error** object.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator =](../cpp/com-error-operator-equal.md)|Assigns an existing `_com_error` object to another.|  
+|[operator =](../cpp/com-error-operator-equal.md)|Assigns an existing **_com_error** object to another.|  
   
 ### Extractor Functions  
   
@@ -51,7 +51,7 @@ ms.workload: ["cplusplus"]
   
 |||  
 |-|-|  
-|[ErrorMessage](../cpp/com-error-errormessage.md)|Retrieves the string message for HRESULT stored in the `_com_error` object.|  
+|[ErrorMessage](../cpp/com-error-errormessage.md)|Retrieves the string message for HRESULT stored in the **_com_error** object.|  
   
 ### ExepInfo.wCode to HRESULT Mappers  
   
@@ -67,6 +67,6 @@ ms.workload: ["cplusplus"]
   
  `Lib:` comsuppw.lib or comsuppwd.lib (see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) for more information)  
   
-## See Also  
+## See also  
  [Compiler COM Support Classes](../cpp/compiler-com-support-classes.md)   
- [IErrorInfo Interface](http://msdn.microsoft.com/en-us/4dda6909-2d9a-4727-ae0c-b5f90dcfa447)
+ [IErrorInfo Interface](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo)

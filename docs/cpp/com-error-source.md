@@ -20,18 +20,16 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 _bstr_t Source() const;  
-  
 ```  
   
 ## Return Value  
- Returns the result of `IErrorInfo::GetSource` for the `IErrorInfo` object recorded within the `_com_error` object. The resulting BSTR is encapsulated in a `_bstr_t` object. If no `IErrorInfo` is recorded, it returns an empty `_bstr_t`.  
+ Returns the result of `IErrorInfo::GetSource` for the `IErrorInfo` object recorded within the `_com_error` object. The resulting `BSTR` is encapsulated in a `_bstr_t` object. If no `IErrorInfo` is recorded, it returns an empty `_bstr_t`.  
   
 ## Remarks  
  Any failure while calling the `IErrorInfo::GetSource` method is ignored.  
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_com_error Class](../cpp/com-error-class.md)

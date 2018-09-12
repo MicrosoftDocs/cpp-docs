@@ -21,7 +21,7 @@ Describes an input iterator object. It extracts objects of class `Type` from an 
 ```cpp
 template <class Type, class CharType = char, class Traits = char_traits<CharType>, class Distance = ptrdiff_t,>
 class istream_iterator
- : public iterator<
+: public iterator<
     input_iterator_tag, Type, Distance,
     const Type *,
     const Type&>;
@@ -29,17 +29,17 @@ class istream_iterator
 
 ### Parameters
 
-*Type*
- The type of object to be extracted from the input stream.
+*Type*<br/>
+The type of object to be extracted from the input stream.
 
-*CharType*
- The type that represents the character type for the `istream_iterator`. This argument is optional and the default value is **char**.
+*CharType*<br/>
+The type that represents the character type for the `istream_iterator`. This argument is optional and the default value is **char**.
 
-*Traits*
- The type that represents the character type for the `istream_iterator`. This argument is optional and the default value is `char_traits`< `CharType`>.
+*Traits*<br/>
+The type that represents the character type for the `istream_iterator`. This argument is optional and the default value is `char_traits`< `CharType`>.
 
-*Distance*
- A signed integral type that represents the difference type for the `istream_iterator`. This argument is optional and the default value is `ptrdiff_t`.
+*Distance*<br/>
+A signed integral type that represents the difference type for the `istream_iterator`. This argument is optional and the default value is `ptrdiff_t`.
 
 After constructing or incrementing an object of class istream_iterator with a nonnull stored pointer, the object attempts to extract and store an object of type `Type` from the associated input stream. If the extraction fails, the object effectively replaces the stored pointer with a null pointer, thus making an end-of-sequence indicator.
 
@@ -131,8 +131,8 @@ istream_iterator(istream_type& _Istr);
 
 ### Parameters
 
-*_Istr*
- The input stream to be read use to initialize the `istream_iterator`.
+*_Istr*<br/>
+The input stream to be read use to initialize the `istream_iterator`.
 
 ### Remarks
 

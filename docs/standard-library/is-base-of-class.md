@@ -25,11 +25,11 @@ struct is_base_of;
 
 ### Parameters
 
-*Base*
- The base class to test for.
+*Base*<br/>
+The base class to test for.
 
-*Derived*
- The derived type to test for.
+*Derived*<br/>
+The derived type to test for.
 
 ## Remarks
 

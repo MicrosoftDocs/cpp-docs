@@ -29,7 +29,7 @@ void _ftime64( struct __timeb64 *timeptr );
 
 ### Parameters
 
-*timeptr*
+*timeptr*<br/>
 Pointer to a **_timeb**, **__timeb32**, or **__timeb64** structure.
 
 ## Remarks

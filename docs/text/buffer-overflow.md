@@ -7,8 +7,8 @@ ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["buffers [C++], character sizes", "buffer overflows [C++]", "MBCS [C++], buffer overflow"]
 ms.assetid: f2b7e40a-f02b-46d8-a449-51d26fc0c663
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Buffer Overflow
@@ -44,7 +44,7 @@ while( (cb + _mbclen( sz )) <= sizeof( rgch ) )
 }  
 ```  
   
- This code tests for possible buffer overflow in the loop test, using `_mbclen` to test the size of the current character pointed to by `sz`. By making a call to the `_mbsnbcpy` function, you can replace the code in the `while` loop with a single line of code. For example:  
+ This code tests for possible buffer overflow in the loop test, using `_mbclen` to test the size of the current character pointed to by `sz`. By making a call to the `_mbsnbcpy` function, you can replace the code in the **while** loop with a single line of code. For example:  
   
 ```  
 _mbsnbcpy( rgch, sz, sizeof( rgch ) );  

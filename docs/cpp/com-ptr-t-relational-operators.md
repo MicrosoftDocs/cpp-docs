@@ -20,7 +20,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 template<typename _OtherIID>   
 bool operator==( const _com_ptr_t<_OtherIID>& p );  
   
@@ -94,5 +93,5 @@ bool operator>=( _InterfaceType* p );
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_com_ptr_t Class](../cpp/com-ptr-t-class.md)

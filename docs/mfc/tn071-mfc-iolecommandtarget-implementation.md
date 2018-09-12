@@ -27,7 +27,7 @@ In MFC, the `IOleCommandTarget` interface is used by Active document servers to 
 
 ## MFC OLE Command Maps
 
-MFC developers can take advantage of `IOleCommandTarget` by using MFC OLE command maps. OLE command maps are like message maps because they can be used to map OLE commands to member functions of the class that contains the command map. To make this work, place macros in the command map to specify the OLE command group of the command you want to handle, the OLE command, and the command ID of the [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) message that will be sent when the OLE command is received. MFC also provides a number of predefined macros for standard OLE commands. For a list of the standard OLE commands that were originally designed for use with Microsoft Office applications, see the OLECMDID enumeration, which is defined in docobj.h.
+MFC developers can take advantage of `IOleCommandTarget` by using MFC OLE command maps. OLE command maps are like message maps because they can be used to map OLE commands to member functions of the class that contains the command map. To make this work, place macros in the command map to specify the OLE command group of the command you want to handle, the OLE command, and the command ID of the [WM_COMMAND](/windows/desktop/menurc/wm-command) message that will be sent when the OLE command is received. MFC also provides a number of predefined macros for standard OLE commands. For a list of the standard OLE commands that were originally designed for use with Microsoft Office applications, see the OLECMDID enumeration, which is defined in docobj.h.
 
 When an OLE command is received by an MFC application that contains an OLE command map, MFC tries to find the command ID and command group for the requested command in the OLE command map of the application. If a match is found, a WM_COMMAND message is dispatched to the application containing the command map with the ID of the requested command. (See the description of `ON_OLECMD` below.) In this way, OLE commands dispatched to an application are turned into WM_COMMAND messages by MFC. The WM_COMMAND messages are then routed through the application's message maps using the MFC standard [command routing](../mfc/command-routing.md) architecture.
 
@@ -78,7 +78,7 @@ Use the ON_OLECMD macro in the command map to add entries for the OLE commands y
 
 ## Example
 
-The following example shows how to add OLE command-handling capability to an MFC Active document server to handle the [OLECMDID_PRINT](http://msdn.microsoft.com/library/windows/desktop/ms691264) OLE command. This example assumes that you used AppWizard to generate an MFC application that is an Active document server.
+The following example shows how to add OLE command-handling capability to an MFC Active document server to handle the [OLECMDID_PRINT](/windows/desktop/api/docobj/ne-docobj-olecmdid) OLE command. This example assumes that you used AppWizard to generate an MFC application that is an Active document server.
 
 1. In your `CView`-derived class's header file, add the DECLARE_OLECMD_MAP macro to the class declaration.
 

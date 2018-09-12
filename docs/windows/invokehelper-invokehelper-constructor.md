@@ -13,30 +13,35 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # InvokeHelper::InvokeHelper Constructor
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-explicit InvokeHelper(  
-   TCallback callback  
-);  
-```  
-  
-#### Parameters  
- `callback`  
- An event handler.  
-  
-## Remarks  
- Initializes a new instance of the InvokeHelper class.  
-  
- The `TCallback` template parameter specifies the type of the event handler.  
-  
-## Requirements  
- **Header:** event.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [InvokeHelper Structure](../windows/invokehelper-structure.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+explicit InvokeHelper(
+   TCallback callback
+);
+```
+
+### Parameters
+
+*callback*  
+An event handler.
+
+## Remarks
+
+Initializes a new instance of the **InvokeHelper** class.
+
+The `TCallback` template parameter specifies the type of the event handler.
+
+## Requirements
+
+**Header:** event.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[InvokeHelper Structure](../windows/invokehelper-structure.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

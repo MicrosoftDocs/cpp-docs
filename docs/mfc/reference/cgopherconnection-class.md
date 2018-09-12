@@ -139,7 +139,7 @@ static CGopherLocator CreateLocator(
  A pointer to the selector string to be sent to the gopher server in order to retrieve an item. *pstrSelectorString* can be NULL.  
   
  *dwGopherType*  
- This specifies whether *pstrSelectorString* refers to a directory or document, and whether the request is gopher or gopher+. See the attributes for the structure [GOPHER_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa384215) in the Windows SDK.  
+ This specifies whether *pstrSelectorString* refers to a directory or document, and whether the request is gopher or gopher+. See the attributes for the structure [GOPHER_FIND_DATA](/windows/desktop/api/wininet/ns-wininet-gopher_find_dataa) in the Windows SDK.  
   
  *pstrLocator*  
  A pointer to a string identifying the file to open. Generally, this string is returned from a call to [CGopherFileFind::GetLocator](../../mfc/reference/cgopherfilefind-class.md#getlocator).  
@@ -178,7 +178,7 @@ BOOL GetAttribute(
  A reference to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) that receives the locator type.  
   
 ### Return Value  
- Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
+ Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
   
 ##  <a name="openfile"></a>  CGopherConnection::OpenFile  
  Call this member function to open a file on a gopher server.  

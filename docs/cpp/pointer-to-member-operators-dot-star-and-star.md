@@ -124,6 +124,5 @@ int main() {
 > [!NOTE]
 >  If the result of one of the pointer-to-member operators is a function, then the result can be used only as an operand to the function call operator.  
   
-## See Also  
+## See also  
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
-

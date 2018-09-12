@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::~ComPtr Destructor
-Deinitializes an instance of ComPtr.  
-  
-## Syntax  
-  
-```  
-WRL_NOTHROW ~ComPtr();  
-```  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ComPtr Class](../windows/comptr-class.md)
+
+Deinitializes an instance of **ComPtr**.
+
+## Syntax
+
+```cpp
+WRL_NOTHROW ~ComPtr();
+```
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ComPtr Class](../windows/comptr-class.md)

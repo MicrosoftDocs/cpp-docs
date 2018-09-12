@@ -36,7 +36,7 @@ class CMFCColorDialog : public CDialogEx
 |----------|-----------------|  
 |[CMFCColorDialog::GetColor](#getcolor)|Returns the current selected color.|  
 |[CMFCColorDialog::GetPalette](#getpalette)|Returns the color's palette.|  
-|`CMFCColorDialog::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions. For syntax and more information, see [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Overrides `CDialogEx::PreTranslateMessage`.)|  
+|`CMFCColorDialog::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows functions. For syntax and more information, see [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Overrides `CDialogEx::PreTranslateMessage`.)|  
 |[CMFCColorDialog::RebuildPalette](#rebuildpalette)|Derives a palette from the system palette.|  
 |[CMFCColorDialog::SetCurrentColor](#setcurrentcolor)|Sets the current selected color.|  
 |[CMFCColorDialog::SetNewColor](#setnewcolor)|Sets the color most equivalent to a specified RGB value.|  
@@ -122,7 +122,7 @@ COLORREF GetColor() const;
 ```  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value that contains the RGB information for the color selected in the color dialog box.  
+ A [COLORREF](/windows/desktop/gdi/colorref) value that contains the RGB information for the color selected in the color dialog box.  
   
 ### Remarks  
  Call this function after you call the `DoModal` method.  
@@ -169,7 +169,7 @@ void SetNewColor(COLORREF rgb);
   
 ### Parameters  
  [in] *rgb*  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) that specifies an RGB color.  
+ A [COLORREF](/windows/desktop/gdi/colorref) that specifies an RGB color.  
   
 ### Remarks  
   

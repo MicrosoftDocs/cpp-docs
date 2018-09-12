@@ -13,22 +13,26 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # IAtlAutoThreadModule Class
-This class represents an interface to a `CreateInstance` method.  
-  
+
+This class represents an interface to a `CreateInstance` method.
+
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.  
-  
-## Syntax  
-  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.
+
+## Syntax
+
 ```
 __interface IAtlAutoThreadModule
-```  
-  
-## Remarks  
- The class [CAtlAutoThreadModuleT](../../atl/reference/catlautothreadmodulet-class.md) derives from `IAtlAutoThreadModule`, using it to provide code for creating an object and retrieving an interface pointer.  
-  
-## Requirements  
- **Header:** atlbase.h  
-  
-## See Also  
- [Class Overview](../../atl/atl-class-overview.md)
+```
+
+## Remarks
+
+The class [CAtlAutoThreadModuleT](../../atl/reference/catlautothreadmodulet-class.md) derives from `IAtlAutoThreadModule`, using it to provide code for creating an object and retrieving an interface pointer.
+
+## Requirements
+
+**Header:** atlbase.h
+
+## See Also
+
+[Class Overview](../../atl/atl-class-overview.md)

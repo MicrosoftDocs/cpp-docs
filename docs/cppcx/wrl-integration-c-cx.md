@@ -5,25 +5,25 @@ ms.date: "01/22/2017"
 ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: 3ad43894-c574-477c-ad3e-240301f381d4
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # WRL integration (C++/CX)
 
-You freely can mix WRL code with [!INCLUDE[cppwrl](includes/cppwrl-md.md)] ([!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)]) code. In the same translation unit, you can use objects declared with WRL handle-to-object (`^`) notation and [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] smart pointer (`ComPtr<T>`) notation. However, you must manually handle return values, and [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] HRESULT error codes and WRL exceptions.
-  
-## [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] development
+You freely can mix WRL code with Windows Runtime C++ Template Library (WRL) code. In the same translation unit, you can use objects declared with WRL handle-to-object (`^`) notation and WRL smart pointer (`ComPtr<T>`) notation. However, you must manually handle return values, and WRL HRESULT error codes and WRL exceptions.
 
-For more information about authoring and consuming [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] components, see [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).
+## WRL development
+
+For more information about authoring and consuming WRL components, see [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).
 
 ### Example
 
-The following code snippet demonstrates using WRL and [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] to consume [!INCLUDE[wrt](includes/wrt-md.md)] classes and examine a metadata file.
+The following code snippet demonstrates using WRL and WRL to consume Windows Runtime classes and examine a metadata file.
 
 The example is taken from a code snippet in the Building Microsoft Store apps forum. The author of this code snippet offers the following disclaimers and stipulations:
 
-1. C++ doesn't provide specific APIs to reflect on [!INCLUDE[wrt](includes/wrt-md.md)] types, but Windows metadata files (.winmd) for a type are fully compliant with CLR metadata files. Windows provides the new metadata discovery APIs (RoGetMetaDataFile) to get to the .winmd file for a given type. However, these APIs are of limited use to C++ developers because you can't instantiate a class.
+1. C++ doesn't provide specific APIs to reflect on Windows Runtime types, but Windows metadata files (.winmd) for a type are fully compliant with CLR metadata files. Windows provides the new metadata discovery APIs (RoGetMetaDataFile) to get to the .winmd file for a given type. However, these APIs are of limited use to C++ developers because you can't instantiate a class.
 
 1. After the code is compiled, you'll also need to pass Runtimeobject.lib and Rometadata.lib to the Linker.
 
@@ -108,9 +108,8 @@ IVector<String^>^ GetTypeMethods(Object^ instance)
     }
     return retVal;
 }
-
 ```
 
 ## See also
 
-[Interoperating with Other Languages](interoperating-with-other-languages-c-cx.md)  
+[Interoperating with Other Languages](interoperating-with-other-languages-c-cx.md)

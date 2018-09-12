@@ -25,11 +25,11 @@ struct enable_if;
 
 ### Parameters
 
-*B*
- The value that determines the existence of the resulting type.
+*B*<br/>
+The value that determines the existence of the resulting type.
 
-*T*
- The type to instantiate if *B* is true.
+*T*<br/>
+The type to instantiate if *B* is true.
 
 ## Remarks
 
@@ -54,12 +54,12 @@ Here are four example scenarios:
     template <your_stuff>
 typename enable_if<your_condition, your_return_type>::type
     yourfunction(args) {// ...
- }
+}
 // The alias template makes it more concise:
     template <your_stuff>
 enable_if_t<your_condition, your_return_type>
 yourfunction(args) {// ...
- }
+}
 ```
 
 - Scenario 2: Adding a function parameter that has a default argument:
@@ -68,7 +68,7 @@ yourfunction(args) {// ...
     template <your_stuff>
 your_return_type_if_present
     yourfunction(args, enable_if_t<your condition, FOO> = BAR) {// ...
- }
+}
 ```
 
 - Scenario 3: Adding a template parameter that has a default argument:
@@ -85,7 +85,7 @@ rest_of_function_declaration_goes_here
 void your_function(const T& t,
     enable_if_t<is_something<T>::value, const string&>
 s) {// ...
- }
+}
 ```
 
 Scenario 1 doesn't work with constructors and conversion operators because they don't have return types.

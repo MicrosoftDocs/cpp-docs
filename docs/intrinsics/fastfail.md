@@ -36,7 +36,7 @@ void __fastfail(unsigned int code);
 |Architecture|Instruction|Location of code argument|  
 |------------------|-----------------|-------------------------------|  
 |x86|int 0x29|ecx|  
-|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|int 0x29|rcx|  
+|x64|int 0x29|rcx|  
 |ARM|Opcode 0xDEFB|r0|  
   
  A fast fail request is self-contained and typically requires just two instructions to execute. Once a fast fail request has been executed the kernel then takes the appropriate action. In user-mode code, there are no memory dependencies beyond the instruction pointer itself when a fast fail event is raised. This maximizes its reliability even if there is severe memory corruption.  
@@ -53,7 +53,7 @@ void __fastfail(unsigned int code);
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__fastfail`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)], ARM|  
+|`__fastfail`|x86, x64, ARM|  
   
  **Header file** \<intrin.h>  
   

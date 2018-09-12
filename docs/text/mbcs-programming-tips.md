@@ -8,8 +8,8 @@ f1_keywords: ["_mbcs"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["programming [C++], MBCS", "character sets [C++], multibyte", "MBCS [C++], programming", "multibyte characters [C++]"]
 ms.assetid: d8ad36b8-917f-474e-8adb-69462adecd17
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # MBCS Programming Tips

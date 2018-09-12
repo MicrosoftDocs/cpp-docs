@@ -99,7 +99,7 @@ BOOL CreateFont(
   
 ### Parameters  
  *nHeight*  
- Specifies the desired height (in logical units) of the font. See the `lfHeight` member of the [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037)structure in the Windows SDK for a description. The absolute value of *nHeight* must not exceed 16,384 device units after it is converted. For all height comparisons, the font mapper looks for the largest font that does not exceed the requested size or the smallest font if all the fonts exceed the requested size.  
+ Specifies the desired height (in logical units) of the font. See the `lfHeight` member of the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta)structure in the Windows SDK for a description. The absolute value of *nHeight* must not exceed 16,384 device units after it is converted. For all height comparisons, the font mapper looks for the largest font that does not exceed the requested size or the smallest font if all the fonts exceed the requested size.  
   
  *nWidth*  
  Specifies the average width (in logical units) of characters in the font. If *nWidth* is 0, the aspect ratio of the device will be matched against the digitization aspect ratio of the available fonts to find the closest match, which is determined by the absolute value of the difference.  
@@ -148,7 +148,7 @@ BOOL CreateFont(
  Specifies the pitch and family of the font. See the `lfPitchAndFamily` member in the `LOGFONT` structure in the Windows SDK for a list of values and more information.  
   
  *lpszFacename*  
- A `CString` or pointer to a null-terminated string that specifies the typeface name of the font. The length of this string must not exceed 30 characters. The Windows [EnumFontFamilies](http://msdn.microsoft.com/library/windows/desktop/dd162619) function can be used to enumerate all currently available fonts. If *lpszFacename* is NULL, the GDI uses a device-independent typeface.  
+ A `CString` or pointer to a null-terminated string that specifies the typeface name of the font. The length of this string must not exceed 30 characters. The Windows [EnumFontFamilies](/windows/desktop/api/wingdi/nf-wingdi-enumfontfamiliesa) function can be used to enumerate all currently available fonts. If *lpszFacename* is NULL, the GDI uses a device-independent typeface.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -166,7 +166,7 @@ BOOL CreateFont(
  [!code-cpp[NVC_MFCDocView#71](../../mfc/codesnippet/cpp/cfont-class_2.cpp)]  
   
 ##  <a name="createfontindirect"></a>  CFont::CreateFontIndirect  
- Initializes a `CFont` object with the characteristics given in a [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037)structure.  
+ Initializes a `CFont` object with the characteristics given in a [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta)structure.  
   
 ```  
 BOOL CreateFontIndirect(const LOGFONT* lpLogFont);
@@ -182,7 +182,7 @@ BOOL CreateFontIndirect(const LOGFONT* lpLogFont);
 ### Remarks  
  The font can subsequently be selected as the current font for any device.  
   
- This font has the characteristics specified in the [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) structure. When the font is selected by using the [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject) member function, the GDI font mapper attempts to match the logical font with an existing physical font. If the font mapper fails to find an exact match for the logical font, it provides an alternative font whose characteristics match as many of the requested characteristics as possible.  
+ This font has the characteristics specified in the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure. When the font is selected by using the [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject) member function, the GDI font mapper attempts to match the logical font with an existing physical font. If the font mapper fails to find an exact match for the logical font, it provides an alternative font whose characteristics match as many of the requested characteristics as possible.  
   
  When you no longer need the `CFont` object created by the `CreateFontIndirect` function, use `CDC::SelectObject` to select a different font into the device context, then delete the `CFont` object that is no longer needed.  
   
@@ -231,7 +231,7 @@ BOOL CreatePointFontIndirect(
   
 ### Parameters  
  *lpLogFont*  
- Points to a [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) structure that defines the characteristics of the logical font. The `lfHeight` member of the `LOGFONT` structure is measured in tenths of a point rather than logical units. (For instance, set `lfHeight` to 120 to request a 12-point font.)  
+ Points to a [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure that defines the characteristics of the logical font. The `lfHeight` member of the `LOGFONT` structure is measured in tenths of a point rather than logical units. (For instance, set `lfHeight` to 120 to request a 12-point font.)  
   
  *pDC*  
  Pointer to the [CDC](../../mfc/reference/cdc-class.md) object to be used to convert the height in `lfHeight` to logical units. If NULL, a screen device context is used for the conversion.  
@@ -276,7 +276,7 @@ int GetLogFont(LOGFONT* pLogFont);
   
 ### Parameters  
  *pLogFont*  
- Pointer to the [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) structure to receive the font information.  
+ Pointer to the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure to receive the font information.  
   
 ### Return Value  
  Nonzero if the function succeeds, otherwise 0.  
@@ -295,9 +295,9 @@ operator HFONT() const;
  The handle of the Windows GDI font object attached to `CFont` if successful; otherwise NULL.  
   
 ### Remarks  
- Since this operator is automatically used for conversions from `CFont` to [Fonts and Text](http://msdn.microsoft.com/library/windows/desktop/dd144819), you can pass `CFont` objects to functions that expect HFONTs.  
+ Since this operator is automatically used for conversions from `CFont` to [Fonts and Text](/windows/desktop/gdi/fonts-and-text), you can pass `CFont` objects to functions that expect HFONTs.  
   
- For more information about using graphic objects, see [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the Windows SDK.  
+ For more information about using graphic objects, see [Graphic Objects](/windows/desktop/gdi/graphic-objects) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#77](../../mfc/codesnippet/cpp/cfont-class_8.cpp)]  

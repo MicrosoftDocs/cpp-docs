@@ -25,7 +25,7 @@ There are six kinds of scope:
 
 - **Local scope** A name declared within a function or lambda, including the parameter names, have local scope. They are often referred to as "locals". They are only visible from their point of declaration to the end of the function or lambda body. Local scope is a kind of block scope, which is discussed later in this article.
 
-- **Class scope** Names of class members have class scope, which extends throughout the class definition regardless of the point of declaration. Class member accessibility is futher controlled by the **public**, **private**, and **protected** keywords. Public or protected members can be accessed only by using the member-selection operators (**.** or **->**) or pointer-to-member operators (**.\*** or **->\***).
+- **Class scope** Names of class members have class scope, which extends throughout the class definition regardless of the point of declaration. Class member accessibility is futher controlled by the **public**, **private**, and **protected** keywords. Public or protected members can be accessed only by using the member-selection operators (**.** or **->**) or pointer-to-member operators (**.**<strong>\*</strong> or **->**<strong>\*</strong>).
 
 - **Statement scope** Names declared in a **for**, **if**, **while**, or **switch** statement are visible until the end of the statement block.
 
@@ -99,7 +99,7 @@ class Account *Checking = new class Account( Account );
 > [!NOTE]
 > The reuse of identifier names as shown in this example is considered poor programming style.
 
- For more information about pointers, see [Derived Types](http://msdn.microsoft.com/en-us/aa14183c-02fe-4d81-95fe-beddb0c01c7c). For information about declaration and initialization of class objects, see [Classes, Structures, and Unions](../cpp/classes-and-structs-cpp.md). For information about using the **new** and **delete** free-store operators, see [new and delete operators](new-and-delete-operators.md).
+For information about declaration and initialization of class objects, see [Classes, Structures, and Unions](../cpp/classes-and-structs-cpp.md). For information about using the **new** and **delete** free-store operators, see [new and delete operators](new-and-delete-operators.md).
 
 ## Hiding names with global scope
 
@@ -123,6 +123,5 @@ Block-scoped i has the value: 5
 Global-scoped i has the value: 7
 ```
 
-## See Also
-
+## See also
  [Basic Concepts](../cpp/basic-concepts-cpp.md)

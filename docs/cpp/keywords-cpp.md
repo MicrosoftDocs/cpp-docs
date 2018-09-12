@@ -88,6 +88,6 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Lexical Conventions](../cpp/lexical-conventions.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

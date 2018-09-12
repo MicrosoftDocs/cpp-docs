@@ -8,30 +8,34 @@ f1_keywords: ["VCCORLIB/Platform::InvalidArgumentException", "VCCORLIB/Platform:
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::InvalidArgumentException"]
 ms.assetid: 1a8d860b-3bcb-41a9-9346-6610616a0b46
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::InvalidArgumentException Class
-Thrown when one of the arguments provided to a method is not valid.  
-  
-## Syntax  
-  
-```cpp  
-public ref class InvalidArgumentException : COMException,    IException,    IPrintable,    IEquatable  
-```  
-  
-### Remarks  
- For more information, see the [COMException](../cppcx/platform-comexception-class.md) class.  
-  
-### Requirements  
- **Minimum supported client:** Windows 8  
-  
- **Minimum supported server:** Windows Server 2012  
-  
- **Namespace:** Platform  
-  
- **Metadata:** platform.winmd  
-  
-## See Also  
- [Platform::COMException Class](../cppcx/platform-comexception-class.md)
+
+Thrown when one of the arguments provided to a method is not valid.
+
+## Syntax
+
+```cpp
+public ref class InvalidArgumentException : COMException,    IException,    IPrintable,    IEquatable
+```
+
+### Remarks
+
+For more information, see the [COMException](../cppcx/platform-comexception-class.md) class.
+
+### Requirements
+
+**Minimum supported client:** Windows 8
+
+**Minimum supported server:** Windows Server 2012
+
+**Namespace:** Platform
+
+**Metadata:** platform.winmd
+
+## See Also
+
+[Platform::COMException Class](../cppcx/platform-comexception-class.md)

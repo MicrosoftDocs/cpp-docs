@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 
 **Microsoft Specific**
 
-When applied to a function declaration or definition that returns a pointer type, `restrict` tells the compiler that the function returns an object that is not *aliased*, that is, referenced by any other pointers. This allows the compiler to perform additional optimizations.
+When applied to a function declaration or definition that returns a pointer type, **restrict** tells the compiler that the function returns an object that is not *aliased*, that is, referenced by any other pointers. This allows the compiler to perform additional optimizations.
 
 ## Syntax
 
@@ -24,9 +24,9 @@ When applied to a function declaration or definition that returns a pointer type
   
 ## Remarks
 
-The compiler propagates `__declspec(restrict)`. For example, the CRT `malloc` function has a `__declspec(restrict)` decoration, and therefore, the compiler assumes that pointers initialized to memory locations by `malloc` are also not aliased by previously existing pointers.
+The compiler propagates **__declspec(restrict)**. For example, the CRT `malloc` function has a **__declspec(restrict)** decoration, and therefore, the compiler assumes that pointers initialized to memory locations by `malloc` are also not aliased by previously existing pointers.
 
-The compiler does not check that the returned pointer is not actually aliased. It is the developer's responsibility to ensure the program does not alias a pointer marked with the `restrict __declspec` modifier.  
+The compiler does not check that the returned pointer is not actually aliased. It is the developer's responsibility to ensure the program does not alias a pointer marked with the **restrict __declspec** modifier.  
   
 For similar semantics on variables, see [__restrict](../cpp/extension-restrict.md).
  
@@ -36,9 +36,9 @@ For information about the **restrict** keyword that is part of C++ AMP, see [res
  
 ## Example  
 
-The following sample demonstrates the use of `__declspec(restrict)`.
+The following sample demonstrates the use of **__declspec(restrict)**.
 
-When `__declspec(restrict)` is applied to a function that returns a pointer, this tells the compiler that the memory pointed to by the return value is not aliased. In this example, the pointers `mempool` and `memptr` are global, so the compiler can't be sure that the memory they refer to is not aliased. However, they are used within `ma` and its caller `init` in a way that returns memory that isn't otherwise referenced by the program, so `__decslpec(restrict)` is used to help the optimizer. This is similar to how the CRT headers decorate allocation functions such as `malloc` by using `__declspec(restrict)` to indicate that they always return memory that cannot be aliased by existing pointers.
+When **__declspec(restrict)** is applied to a function that returns a pointer, this tells the compiler that the memory pointed to by the return value is not aliased. In this example, the pointers `mempool` and `memptr` are global, so the compiler can't be sure that the memory they refer to is not aliased. However, they are used within `ma` and its caller `init` in a way that returns memory that isn't otherwise referenced by the program, so **__decslpec(restrict)** is used to help the optimizer. This is similar to how the CRT headers decorate allocation functions such as `malloc` by using **__declspec(restrict)** to indicate that they always return memory that cannot be aliased by existing pointers.
 
 ```C
 // declspec_restrict.c
@@ -110,7 +110,6 @@ int main()
 **END Microsoft Specific**
 
 ## See also
-
-[Keywords](../cpp/keywords-cpp.md)  
-[__declspec](../cpp/declspec.md)  
-[__declspec(noalias)](../cpp/noalias.md)  
+ [Keywords](../cpp/keywords-cpp.md)  
+ [__declspec](../cpp/declspec.md)  
+ [__declspec(noalias)](../cpp/noalias.md)  

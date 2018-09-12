@@ -13,25 +13,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # FactoryCache::cookie Data Member
-Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-union {   
-   WINRT_REGISTRATION_COOKIE winrt;  
-   DWORD com;   
-} cookie;  
-```  
-  
-## Remarks  
- Contains a value that identifies a registered Windows Runtime or COM class object, and is later used to unregister the object.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [FactoryCache Structure](../windows/factorycache-structure.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+union {
+   WINRT_REGISTRATION_COOKIE winrt;
+   DWORD com;
+} cookie;
+```
+
+## Remarks
+
+Contains a value that identifies a registered Windows Runtime or COM class object, and is later used to unregister the object.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[FactoryCache Structure](../windows/factorycache-structure.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

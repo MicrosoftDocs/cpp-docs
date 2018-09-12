@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2066 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2066"]
@@ -13,11 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2066
-**incompatible CPU mode and segment size**  
-  
- An attempt was made to open a segment with a **USE16**, **USE32**, or **FLAT** attribute that was not compatible with the specified CPU, or to change to a 16-bit CPU while in a 32-bit segment.  
-  
- The **USE32** and **FLAT** attributes must be preceded by the .386 or greater processor directive.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+
+**incompatible CPU mode and segment size**
+
+An attempt was made to open a segment with a **USE16**, **USE32**, or **FLAT** attribute that was not compatible with the specified CPU, or to change to a 16-bit CPU while in a 32-bit segment.
+
+The **USE32** and **FLAT** attributes must be preceded by the .386 or greater processor directive.
+
+## See also
+
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

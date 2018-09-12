@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1108
-unable to find DLL: 'dll'  
-  
- The specified DLL (***dll***) could not be found in the path.  
-  
- To resolve this error, reinstall Visual C++ or copy the appropriate .dll file from the installation CD to your computer.
+
+> unable to find DLL: '*dll name*'
+
+The specified DLL (*dll name*) could not be found in the path.
+
+To resolve this error, reinstall Visual C++ or copy the appropriate .dll file from the installation to your computer.

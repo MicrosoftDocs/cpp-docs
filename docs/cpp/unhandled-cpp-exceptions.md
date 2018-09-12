@@ -48,5 +48,5 @@ term_func was called by terminate.
   
  The `term_func` function should terminate the program or current thread, ideally by calling `exit`. If it doesn't, and instead returns to its caller, `abort` is called.  
   
-## See Also  
+## See also  
  [C++ Exception Handling](../cpp/cpp-exception-handling.md)

@@ -25,11 +25,11 @@ struct is_trivially_constructible;
 
 ### Parameters
 
-*T*
- The type to query.
+*T*<br/>
+The type to query.
 
-*Args*
- The argument types to match in a constructor of *T*.
+*Args*<br/>
+The argument types to match in a constructor of *T*.
 
 ## Remarks
 

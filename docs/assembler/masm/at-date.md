@@ -1,7 +1,7 @@
 ---
 title: "@Date | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["@Date"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @Date
-The system date in the format mm/dd/yy (text macro).  
-  
-## Syntax  
-  
-```  
-  
-@Date  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+The system date in the format mm/dd/yy (text macro).
+
+## Syntax
+
+> @Date
+
+## See also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

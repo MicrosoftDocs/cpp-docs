@@ -135,7 +135,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
   
 #### Cancellation Tokens and Task Composition  
 
- The [concurrency:: HYPERLINK "http://msdn.microsoft.com/library/system.threading.tasks.task.whenall(v=VS.110).aspx" when_all](reference/concurrency-namespace-functions.md#when_all) and [concurrency::when_any](reference/concurrency-namespace-functions.md#when_all) functions can help you compose multiple tasks to implement common patterns. This section describes how these functions work with cancellation tokens.  
+ The [concurrency::when_all](reference/concurrency-namespace-functions.md#when_all) and [concurrency::when_any](reference/concurrency-namespace-functions.md#when_all) functions can help you compose multiple tasks to implement common patterns. This section describes how these functions work with cancellation tokens.  
   
  When you provide a cancellation token to either the `when_all` and `when_any` function, that function cancels only when that cancellation token is cancelled or when one of the participant tasks ends in a canceled state or throws an exception.  
   

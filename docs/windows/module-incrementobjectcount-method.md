@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::IncrementObjectCount Method
-Increments the number of objects tracked by the module.  
-  
-## Syntax  
-  
-```  
-virtual long IncrementObjectCount();  
-```  
-  
-## Return Value  
- The count before the increment operation.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL
- 
- ## See Also
- [Module Class](../windows/module-class.md)
+
+Increments the number of objects tracked by the module.
+
+## Syntax
+
+```cpp
+virtual long IncrementObjectCount();
+```
+
+## Return Value
+
+The count before the increment operation.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Module Class](../windows/module-class.md)

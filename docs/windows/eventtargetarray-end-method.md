@@ -13,25 +13,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventTargetArray::End Method
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-ComPtr<IUnknown>* End();  
-```  
-  
-## Return Value  
- The address of the last element in the internal array of event handlers.  
-  
-## Remarks  
- Gets the address of the last element in the internal array of event handlers.  
-  
-## Requirements  
- **Header:** event.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [EventTargetArray Class](../windows/eventtargetarray-class.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+ComPtr<IUnknown>* End();
+```
+
+## Return Value
+
+The address of the last element in the internal array of event handlers.
+
+## Remarks
+
+Gets the address of the last element in the internal array of event handlers.
+
+## Requirements
+
+**Header:** event.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[EventTargetArray Class](../windows/eventtargetarray-class.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

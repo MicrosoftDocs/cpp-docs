@@ -32,5 +32,5 @@ This section explains concepts that are critical to understanding C++. C program
   
 -   [Trivial, standard-layout and POD types](../cpp/trivial-standard-layout-and-pod-types.md)  
   
-## See Also  
+## See also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)

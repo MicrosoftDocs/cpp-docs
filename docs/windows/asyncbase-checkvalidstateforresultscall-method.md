@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::CheckValidStateForResultsCall Method
-Tests whether the results of an asynchronous operation can be collected in the current asynchronous state.  
-  
-## Syntax  
-  
-```  
-inline HRESULT CheckValidStateForResultsCall();  
-```  
-  
-## Return Value  
- S_OK if results can be collected; otherwise, E_ILLEGAL_METHOD_CALLE_ILLEGAL_METHOD_CALL.  
-  
-## Requirements  
- **Header:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [AsyncBase Class](../windows/asyncbase-class.md)
+
+Tests whether the results of an asynchronous operation can be collected in the current asynchronous state.
+
+## Syntax
+
+```cpp
+inline HRESULT CheckValidStateForResultsCall();
+```
+
+## Return Value
+
+S_OK if results can be collected; otherwise, E_ILLEGAL_METHOD_CALLE_ILLEGAL_METHOD_CALL.
+
+## Requirements
+
+**Header:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[AsyncBase Class](../windows/asyncbase-class.md)

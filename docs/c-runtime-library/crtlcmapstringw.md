@@ -59,7 +59,7 @@ int __crtLCMapStringW(
  Zero indicates failure. To get extended error information, call the `GetLastError` function.  
   
 ## Remarks  
- If `cchSrc` is greater than zero and `lpSrcStr` is a null-terminated string, `__crtLCMapStringW` sets `cchSrc` to the length of the string. Then `__crtLCMapStringW` calls the wide string (Unicode) version of the `LCMapString` function with the specified parameters. For more information about the parameters and return value of this function, see the `LCMapString` function at [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=150542).  
+ If `cchSrc` is greater than zero and `lpSrcStr` is a null-terminated string, `__crtLCMapStringW` sets `cchSrc` to the length of the string. Then `__crtLCMapStringW` calls the wide string (Unicode) version of the `LCMapString` function with the specified parameters. For more information about the parameters and return value of this function, see the [LCMapString](/windows/desktop/api/winnls/nf-winnls-lcmapstringa).  
   
 ## Requirements  
   

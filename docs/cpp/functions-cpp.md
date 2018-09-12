@@ -68,7 +68,7 @@ The required parts of a function declaration are:
 
 Optional parts of a function declaration are:
 
-1. **constexpr**, which indicates that the return value of the function is a constant value can be computed at compile time.
+1. `constexpr`, which indicates that the return value of the function is a constant value can be computed at compile time.
 
     ```cpp
     constexpr float exp(float x, int n)
@@ -100,7 +100,7 @@ Optional parts of a function declaration are:
 
      For more information, see [Inline Functions](../cpp/inline-functions-cpp.md).
 
-1. A **noexcept** expression, which specifies whether or not the function can throw an exception. In the following example, the function does not throw an exception if the `is_pod` expression evaluates to **true**.
+1. A `noexcept` expression, which specifies whether or not the function can throw an exception. In the following example, the function does not throw an exception if the `is_pod` expression evaluates to **true**.
 
     ```cpp
     #include <type_traits>
@@ -113,7 +113,7 @@ Optional parts of a function declaration are:
 
 1. (Member functions only) The cv-qualifiers, which specify whether the function is **const** or **volatile**.
 
-1. (Member functions only) **virtual**, **override**, or **final**. **virtual** specifies that a function can be overridden in a derived class. **override** means that a function in a derived class is overriding a virtual function. **final** means a function cannot be overridden in any further derived class. For more information, see [Virtual Functions](../cpp/virtual-functions.md).
+1. (Member functions only) **virtual**, `override`, or `final`. **virtual** specifies that a function can be overridden in a derived class. `override` means that a function in a derived class is overriding a virtual function. `final` means a function cannot be overridden in any further derived class. For more information, see [Virtual Functions](../cpp/virtual-functions.md).
 
 1. (member functions only) **static** applied to a member function means that the function is not associated with any object instances of the class.
 
@@ -157,7 +157,7 @@ Variables declared inside the body are called local variables or locals. They go
 
 You can declare a member function as **const** to specify that the function is not allowed to change the values of any data members in the class. By declaring a member function as **const**, you help the compiler to enforce *const-correctness*. If someone mistakenly tries to modify the object by using a function declared as **const**, a compiler error is raised. For more information, see [const](const-cpp.md).
 
-Declare a function as **constexpr** when the value it produces can possibly be determined at compile time. A constexpr function generally executes faster than a regular function. For more information, see [constexpr](constexpr-cpp.md).
+Declare a function as `constexpr` when the value it produces can possibly be determined at compile time. A constexpr function generally executes faster than a regular function. For more information, see [constexpr](constexpr-cpp.md).
 
 ## Function Templates
 
@@ -256,11 +256,11 @@ When **auto** is used in conjunction with a trailing return type, it just serves
 
 A variable that is declared inside a function body is called a *local variable* or simply a *local*. Non-static locals are only visible inside the function body and, if they are declared on the stack go out of scope when the function exits. When you construct a local variable and return it by value, the compiler can usually perform the return value optimization to avoid unnecessary copy operations. If you return a local variable by reference, the compiler will issue a warning because any attempt by the caller to use that reference will occur after the local has been destroyed.
 
-In C++ a local variable may be declared as static. The variable is only visible inside the function body, but a single copy of the variable exists for all instances of the function. Local static objects are destroyed during termination specified by **atexit**. If a static object was not constructed because the program's flow of control bypassed its declaration, no attempt is made to destroy that object.
+In C++ a local variable may be declared as static. The variable is only visible inside the function body, but a single copy of the variable exists for all instances of the function. Local static objects are destroyed during termination specified by `atexit`. If a static object was not constructed because the program's flow of control bypassed its declaration, no attempt is made to destroy that object.
 
 ##  <a name="type_deduction"></a> Type deduction in return types (C++14)
 
-In C++14, you can use **auto** to instruct the compiler to infer the return type from the function body without having to provide a trailing return type. Note that **auto** always deduces to a return-by-value. Use **auto&&** to instruct the compiler to deduce a reference.
+In C++14, you can use **auto** to instruct the compiler to infer the return type from the function body without having to provide a trailing return type. Note that **auto** always deduces to a return-by-value. Use `auto&&` to instruct the compiler to deduce a reference.
 
 In this example, **auto** will be deduced as a non-const value copy of the sum of lhs and rhs.
 
@@ -293,7 +293,7 @@ template<typename F, typename Tuple = tuple<T...>,
 }
 ```
 
-## Returning multiple values from a function
+## <a name="multi_val"></a> Returning multiple values from a function
 
 There are various ways to return more than one value from a function:
 
@@ -421,11 +421,10 @@ int (*myFunction(char* s))(int);
 
 The preceding declaration is equivalent to the declaration using typedef above.
 
-## See Also
-
-- [Function Overloading](../cpp/function-overloading.md)
-- [Functions with Variable Argument Lists](../cpp/functions-with-variable-argument-lists-cpp.md)
-- [Explicitly Defaulted and Deleted Functions](../cpp/explicitly-defaulted-and-deleted-functions.md)
-- [Argument-Dependent Name (Koenig) Lookup on Functions](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)
-- [Default Arguments](../cpp/default-arguments.md)
-- [Inline Functions](../cpp/inline-functions-cpp.md)
+## See also
+ [Function Overloading](../cpp/function-overloading.md)  
+ [Functions with Variable Argument Lists](../cpp/functions-with-variable-argument-lists-cpp.md)  
+ [Explicitly Defaulted and Deleted Functions](../cpp/explicitly-defaulted-and-deleted-functions.md)  
+ [Argument-Dependent Name (Koenig) Lookup on Functions](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)  
+ [Default Arguments](../cpp/default-arguments.md)  
+ [Inline Functions](../cpp/inline-functions-cpp.md)

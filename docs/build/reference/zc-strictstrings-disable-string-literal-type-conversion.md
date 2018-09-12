@@ -52,7 +52,7 @@ int main() {
 If you use `auto` to declare a string pointer, the compiler creates the correct `const` pointer type declaration for you. An attempt to modify the contents of a `const` pointer is reported by the compiler as an error.
 
 > [!NOTE]
-> The C++ Standard Library in [!INCLUDE[cpp_dev12_long](../../build/reference/includes/cpp_dev12_long_md.md)] does not support the **/Zc:strictStrings** compiler option in debug builds. If you see several [C2665](../../error-messages/compiler-errors-2/compiler-error-c2665.md) errors in your build output, this may be the cause.
+> The C++ Standard Library in Visual Studio 2013 does not support the **/Zc:strictStrings** compiler option in debug builds. If you see several [C2665](../../error-messages/compiler-errors-2/compiler-error-c2665.md) errors in your build output, this may be the cause.
 
 For more information about conformance issues in Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).
 

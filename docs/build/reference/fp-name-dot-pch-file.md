@@ -17,10 +17,10 @@ Provides a path name for a precompiled header instead of using the default path 
   
 ## Syntax  
   
-> **/Fp**_pathname_  
+> **/Fp**<em>pathname</em>  
   
 ## Remarks  
- Use this option with [/Yc (Create Precompiled Header File)](../../build/reference/yc-create-precompiled-header-file.md) or [/Yu (Use Precompiled Header File)](../../build/reference/yu-use-precompiled-header-file.md) to provide a path name for a precompiled header instead of using the default path name. You can also use **/Fp** with **/Yc** to specify the use of a precompiled header file that differs from the **/Yc***filename* argument and from the base name of the source file.  
+ Use this option with [/Yc (Create Precompiled Header File)](../../build/reference/yc-create-precompiled-header-file.md) or [/Yu (Use Precompiled Header File)](../../build/reference/yu-use-precompiled-header-file.md) to provide a path name for a precompiled header instead of using the default path name. You can also use **/Fp** with **/Yc** to specify the use of a precompiled header file that differs from the **/Yc**<em>filename</em> argument and from the base name of the source file.  
   
  If you do not specify an extension as part of the path name, an extension of .pch is assumed. If you specify a directory without a file name, the default file name is VC*x*0.pch, where *x* is the major version of Visual C++ in use.  
   

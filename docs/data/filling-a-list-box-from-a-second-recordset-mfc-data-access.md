@@ -31,7 +31,7 @@ By default, a record view is associated with a single recordset object, whose fi
   
 5.  Initialize the selection in the combo box.  
   
-```  
+```cpp  
 void CSectionForm::OnInitialUpdate()  
 {  
     // ...  

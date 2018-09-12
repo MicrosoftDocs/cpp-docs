@@ -25,8 +25,8 @@ struct is_member_pointer;
 
 ### Parameters
 
-*Ty*
- The type to query.
+*Ty*<br/>
+The type to query.
 
 ## Remarks
 

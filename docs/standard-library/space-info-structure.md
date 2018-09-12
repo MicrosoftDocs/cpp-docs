@@ -1,7 +1,7 @@
 ---
 title: "space_info Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/10/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 f1_keywords: ["filesystem/std::tr2::sys::space_info"]
@@ -45,5 +45,4 @@ struct space_info	{
 
 [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
 [\<filesystem>](../standard-library/filesystem.md)<br/>
-[space](http://msdn.microsoft.com/en-us/7fce0b0e-523b-4598-b218-47245d0204ca)<br/>
 [File System Navigation (C++)](../standard-library/file-system-navigation.md)<br/>

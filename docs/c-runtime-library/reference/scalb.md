@@ -48,7 +48,7 @@ For more information about this and other return codes, see [_doserrno, errno, _
 
 ## Remarks
 
-The **_scalb** function calculates the value of *x* * 2<sup>*exp*</sup>.
+The **_scalb** function calculates the value of *x* \* 2<sup>*exp*</sup>.
 
 ## Requirements
 

@@ -44,8 +44,8 @@ The bit at the position specified.
   
 |Intrinsic|Architecture|Header|  
 |---------------|------------------|------------|  
-|`_bittest`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
-|`_bittest64`|ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
+|`_bittest`|x86, ARM, x64|\<intrin.h>|  
+|`_bittest64`|ARM, x64|\<intrin.h>|  
   
 ## Remarks  
 This routine is only available as an intrinsic.  

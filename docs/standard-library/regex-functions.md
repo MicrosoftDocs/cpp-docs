@@ -1,7 +1,7 @@
 ---
 title: "&lt;regex&gt; functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "06/19/2018"
+ms.date: "09/10/2018"
 ms.topic: "reference"
 f1_keywords: ["regex/std::regex_match", "regex/std::regex_replace", "regex/std::regex_search", "regex/std::swap"]
 dev_langs: ["C++"]
@@ -10,10 +10,12 @@ helpviewer_keywords: ["std::regex_match [C++]", "std::regex_replace [C++]", "std
 ---
 # &lt;regex&gt; functions
 
-||||
-|-|-|-|
-|[regex_match](#regex_match)|[regex_replace](#regex_replace)|[regex_search](#regex_search)|
-|[swap](#swap)|
+|||
+|-|-|
+|[regex_match](#regex_match)|Tests whether a regular expression matches the entire target string.|
+|[regex_replace](#regex_replace)|Replaces matched regular expressions.|
+|[regex_search](#regex_search)|Searches for a regular expression match.|
+|[swap](#swap)|Swaps two `basic_regex` or `match_results` objects.|
 
 ## <a name="regex_match"></a>  regex_match
 
@@ -29,7 +31,6 @@ bool regex_match(
     const basic_regex<Elem, RXtraits, Alloc2>& re,
     match_flag_type flags = match_default);
 
-
 // (2)
 template <class BidIt, class Elem, class RXtraits, class Alloc2>
 bool regex_match(
@@ -37,7 +38,6 @@ bool regex_match(
     Bidit last,
     const basic_regex<Elem, RXtraits, Alloc2>& re,
     match_flag_type flags = match_default);
-
 
 // (3)
 template <class Elem, class Alloc, class RXtraits, class Alloc2>
@@ -47,14 +47,12 @@ bool regex_match(
     const basic_regex<Elem, RXtraits, Alloc2>& re,
     match_flag_type flags = match_default);
 
-
 // (4)
 template <class Elem, class RXtraits, class Alloc2>
 bool regex_match(
     const Elem *ptr,
     const basic_regex<Elem, RXtraits, Alloc2>& re,
     match_flag_type flags = match_default);
-
 
 // (5)
 template <class IOtraits, class IOalloc, class Alloc, class Elem, class RXtraits, class Alloc2>
@@ -74,22 +72,47 @@ bool regex_match(
 
 ### Parameters
 
-|||
-|-|-|
-*BidIt*| The iterator type for submatches. For common cases this one of `string::const_iterator`, `wstring::const_iterator`, `const char*` or `const wchar_t*`.
-*Alloc*| The match results allocator class.
-*Elem*| The type of elements to match. For common cases this is `string`, `wstring`, `char*` or `wchar_t*`.
-*RXtraits*| Traits class for elements.
-*Alloc2*| The regular expression allocator class.
-*IOtraits*| The string traits class.
-*IOalloc*| The string allocator class.
-*flags*| Flags for matches.
-*first*| Beginning of sequence to match.
-*last*| End of sequence to match.
-*match*| The match results. Corresponds to Elem type: [smatch](../standard-library/regex-typedefs.md#smatch) for `string`, [wsmatch](../standard-library/regex-typedefs.md#wsmatch) for `wstring`, [cmatch](../standard-library/regex-typedefs.md#cmatch) for `char*` or [wcmatch](../standard-library/regex-typedefs.md#wcmatch) for `wchar_t*`.
-*ptr*| Pointer to beginning of sequence to match. If *ptr* is `char*`, then use `cmatch` and `regex`. If *ptr* is `wchar_t*` then use `wcmatch` and `wregex`.
-*re*| The regular expression to match. Type `regex` for `string` and `char*`, or `wregex` for `wstring` and `wchar_t*`.
-*str*| String to match. Corresponds to the type of *Elem*.
+*BidIt*<br/> 
+The iterator type for submatches. For common cases this one of `string::const_iterator`, `wstring::const_iterator`, `const char*` or `const wchar_t*`.
+
+*Alloc*<br/>
+The match results allocator class.
+
+*Elem*<br/>
+The type of elements to match. For common cases this is `string`, `wstring`, `char*` or `wchar_t*`.
+
+*RXtraits*<br/>
+Traits class for elements.
+
+*Alloc2*<br/>
+The regular expression allocator class.
+
+*IOtraits*<br/>
+The string traits class.
+
+*IOalloc*<br/>
+The string allocator class.
+
+*flags*<br/>
+Flags for matches.
+
+*first*<br/>
+Beginning of sequence to match.
+
+*last*<br/>
+End of sequence to match.
+
+*match*<br/>
+The match results. Corresponds to Elem type: [smatch](../standard-library/regex-typedefs.md#smatch) for `string`, [wsmatch](../standard-library/regex-typedefs.md#wsmatch) for `wstring`, [cmatch](../standard-library/regex-typedefs.md#cmatch) for `char*` or [wcmatch](../standard-library/regex-typedefs.md#wcmatch) for `wchar_t*`.
+
+*ptr*<br/>
+Pointer to beginning of sequence to match. If *ptr* is `char*`, then use `cmatch` and `regex`. If *ptr* is `wchar_t*` then use `wcmatch` and `wregex`.
+
+*re*<br/>
+The regular expression to match. Type `regex` for `string` and `char*`, or `wregex` for `wstring` and `wchar_t*`.
+
+*str*<br/>
+String to match. Corresponds to the type of *Elem*.
 
 ### Remarks
 
@@ -100,15 +123,15 @@ The functions that take a `match_results` object set its members to reflect whet
 ### Example
 
 ```cpp
-#include "stdafx.h"
+// std__regex__regex_match.cpp
+// compile with: /EHsc
 #include <regex>
 #include <iostream>
 
 using namespace std;
 
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
-
     // (1) with char*
     // Note how const char* requires cmatch and regex
     const char *first = "abc";
@@ -117,8 +140,10 @@ int _tmain(int argc, _TCHAR* argv[])
     regex rx("a(b)c");
 
     bool found = regex_match(first, last, narrowMatch, rx);
+    if (found)
+		wcout << L"Regex found in abc" << endl;
 
-    // (1) with std::wstring
+    // (2) with std::wstring
     // Note how wstring requires wsmatch and wregex.
     // Note use of const iterators cbegin() and cend().
     wstring target(L"Hello");
@@ -128,12 +153,15 @@ int _tmain(int argc, _TCHAR* argv[])
     if (regex_match(target.cbegin(), target.cend(), wideMatch, wrx))
         wcout << L"The matching text is:" << wideMatch.str() << endl;
 
-    // (2) with std::string
+    // (3) with std::string
     string target2("Drizzle");
     regex rx2(R"(D\w+e)"); // no double backslashes with raw string literal
-    found = regex_match(target2.cbegin(), target2.cend(), rx2);
 
-    // (3) with wchar_t*
+    found = regex_match(target2.cbegin(), target2.cend(), rx2);
+    if (found)
+		wcout << L"Regex found in Drizzle" << endl;
+
+    // (4) with wchar_t*
     const wchar_t* target3 = L"2014-04-02";
     wcmatch wideMatch2;
 
@@ -147,6 +175,13 @@ int _tmain(int argc, _TCHAR* argv[])
 
      return 0;
 }
+```
+
+```Output
+Regex found in abc
+The matching text is: Hello
+Regex found in Drizzle
+The matching text is: 2014-04-02
 ```
 
 ## <a name="regex_replace"></a>  regex_replace
@@ -173,20 +208,41 @@ basic_string<Elem> regex_replace(
 
 ### Parameters
 
-|||
-|-|-|
-*OutIt*| The iterator type for replacements.
-*BidIt*| The iterator type for submatches.
-*RXtraits*| Traits class for elements.
-*Alloc*| The regular expression allocator class.
-*Elem*| The type of elements to match.
-*flags*| Flags for matches.
-*first*| Beginning of sequence to match.
-*fmt*| The format for replacements.
-*last*| End of sequence to match.
-*out*| The output iterator.
-*re*| The regular expression to match.
-*str*| String to match.
+*OutIt*<br/>
+The iterator type for replacements.
+
+*BidIt*<br/>
+The iterator type for submatches.
+
+*RXtraits*<br/>
+Traits class for elements.
+
+*Alloc*<br/>
+The regular expression allocator class.
+
+*Elem*<br/>
+The type of elements to match.
+
+*flags*<br/>
+Flags for matches.
+
+*first*<br/>
+Beginning of sequence to match.
+
+*fmt*<br/>
+The format for replacements.
+
+*last*<br/>
+End of sequence to match.
+
+*out*<br/>
+The output iterator.
+
+*re*<br/>
+The regular expression to match.
+
+*str*<br/>
+String to match.
 
 ### Remarks
 
@@ -285,22 +341,47 @@ bool regex_search(
 
 ### Parameters
 
-|||
-|-|-|
-*BidIt*| The iterator type for submatches.
-*Alloc*| The match results allocator class.
-*Elem*| The type of elements to match.
-*RXtraits*| Traits class for elements.
-*Alloc2*| The regular expression allocator class.
-*IOtraits*| The string traits class.
-*IOalloc*| The string allocator class.
-*flags*| Flags for matches.
-*first*| Beginning of sequence to match.
-*last*| End of sequence to match.
-*match*| The match results.
-*ptr*| Pointer to beginning of sequence to match.
-*re*| The regular expression to match.
-*str*| String to match.
+*BidIt*<br/>
+The iterator type for submatches.
+
+*Alloc*<br/>
+The match results allocator class.
+
+*Elem*<br/>
+The type of elements to match.
+
+*RXtraits*<br/>
+Traits class for elements.
+
+*Alloc2*<br/>
+The regular expression allocator class.
+
+*IOtraits*<br/>
+The string traits class.
+
+*IOalloc*<br/>
+The string allocator class.
+
+*flags*<br/>
+Flags for matches.
+
+*first*<br/>
+Beginning of sequence to match.
+
+*last*<br/>
+End of sequence to match.
+
+*match*<br/>
+The match results.
+
+*ptr*<br/>
+Pointer to beginning of sequence to match.
+
+*re*<br/>
+The regular expression to match.
+
+*str*<br/>
+String to match.
 
 ### Remarks
 
@@ -380,10 +461,11 @@ void swap(
 
 ### Parameters
 
-|||
-|-|-|
-*Elem*| The type of elements to match.
-*RXtraits*| Traits class for elements.
+*Elem*<br/>
+The type of elements to match.
+
+*RXtraits*<br/>
+Traits class for elements.
 
 ### Remarks
 
@@ -426,11 +508,11 @@ string == aaa
 
 ## See also
 
-- [\<regex>](../standard-library/regex.md)
-- [regex_constants Class](../standard-library/regex-constants-class.md)
-- [regex_error Class](../standard-library/regex-error-class.md)
-- [regex_iterator Class](../standard-library/regex-iterator-class.md)
-- [\<regex> operators](../standard-library/regex-operators.md)
-- [regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)
-- [regex_traits Class](../standard-library/regex-traits-class.md)
-- [\<regex> typedefs](../standard-library/regex-typedefs.md)
+[\<regex>](../standard-library/regex.md)<br/>
+[regex_constants Class](../standard-library/regex-constants-class.md)<br/>
+[regex_error Class](../standard-library/regex-error-class.md)<br/>
+[regex_iterator Class](../standard-library/regex-iterator-class.md)<br/>
+[\<regex> operators](../standard-library/regex-operators.md)<br/>
+[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)<br/>
+[regex_traits Class](../standard-library/regex-traits-class.md)<br/>
+[\<regex> typedefs](../standard-library/regex-typedefs.md)<br/>

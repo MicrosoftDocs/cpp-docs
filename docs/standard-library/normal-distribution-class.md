@@ -50,7 +50,7 @@ public:
 
 ### Parameters
 
-*RealType*
+*RealType*<br/>
 The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -178,13 +178,13 @@ explicit normal_distribution(const param_type& parm);
 
 ### Parameters
 
-*mean*
+*mean*<br/>
 The `mean` distribution parameter.
 
-*stddev*
+*stddev*<br/>
 The `stddev` distribution parameter.
 
-*parm*
+*parm*<br/>
 The parameter structure used to construct the distribution.
 
 ### Remarks
@@ -212,13 +212,13 @@ struct param_type {
 ```
 ### Parameters
 
-*mean*
+*mean*<br/>
 The `mean` distribution parameter.
 
-*stddev*
+*stddev*<br/>
 The `stddev` distribution parameter.
 
-*right*
+*right*<br/>
 The `param_type` structure used to compare.
 
 ### Remarks

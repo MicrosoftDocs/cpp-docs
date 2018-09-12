@@ -13,24 +13,28 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # IsBaseOfStrict::value Constant
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-static const bool value = __is_base_of(Base, Derived);  
-```  
-  
-## Remarks  
- Indicates whether one type is the base of another.  
-  
- `value` is `true` if type `Base` is a base class of the type `Derived`, otherwise it is `false`.  
-  
-## Requirements  
- **Header:** internal.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [IsBaseOfStrict Structure](../windows/isbaseofstrict-structure.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+static const bool value = __is_base_of(Base, Derived);
+```
+
+## Remarks
+
+Indicates whether one type is the base of another.
+
+**value** is **true** if type `Base` is a base class of the type `Derived`, otherwise it is **false**.
+
+## Requirements
+
+**Header:** internal.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[IsBaseOfStrict Structure](../windows/isbaseofstrict-structure.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

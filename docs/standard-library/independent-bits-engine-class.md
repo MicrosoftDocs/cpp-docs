@@ -25,14 +25,14 @@ class independent_bits_engine;
 
 ### Parameters
 
-*Engine*
- The base engine type.
+*Engine*<br/>
+The base engine type.
 
-*W*
- **Word size**. Size, in bits, of each number generated. **Precondition**: `0 < W ≤ numeric_limits<UIntType>::digits`
+*W*<br/>
+**Word size**. Size, in bits, of each number generated. **Precondition**: `0 < W ≤ numeric_limits<UIntType>::digits`
 
-*UIntType*
- The unsigned integer result type. For possible types, see [\<random>](../standard-library/random.md).
+*UIntType*<br/>
+The unsigned integer result type. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Members
 

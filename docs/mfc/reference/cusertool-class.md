@@ -67,7 +67,7 @@ class CUserTool : public CObject
  **Header:** afxusertool.h  
   
 ##  <a name="copyicontoclipboard"></a>  CUserTool::CopyIconToClipboard  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 BOOL CopyIconToClipboard();
@@ -124,7 +124,7 @@ virtual BOOL Invoke();
  Nonzero if the command was executed successfully; otherwise 0.  
   
 ### Remarks  
- Calls [ShellExecute](http://msdn.microsoft.com/library/windows/desktop/bb762153) to execute a command associated with the user tool. The function fails if the command is empty or if [ShellExecute](http://msdn.microsoft.com/library/windows/desktop/bb762153) fails.  
+ Calls [ShellExecute](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) to execute a command associated with the user tool. The function fails if the command is empty or if [ShellExecute](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) fails.  
   
 ##  <a name="loaddefaulticon"></a>  CUserTool::LoadDefaultIcon  
  Loads the default icon for a user tool.  
@@ -169,7 +169,7 @@ CString m_strLabel;
 ```  
   
 ##  <a name="serialize"></a>  CUserTool::Serialize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual void Serialize(CArchive& ar);

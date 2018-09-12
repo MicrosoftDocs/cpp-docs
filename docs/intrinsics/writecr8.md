@@ -33,7 +33,7 @@ void writecr8( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__writecr8`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__writecr8`|x64|  
   
  **Header file** \<intrin.h>  
   

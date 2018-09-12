@@ -25,8 +25,8 @@ struct is_move_constructible;
 
 ### Parameters
 
-*T*
- The type to be evaluated
+*T*<br/>
+The type to be evaluated
 
 ## Remarks
 

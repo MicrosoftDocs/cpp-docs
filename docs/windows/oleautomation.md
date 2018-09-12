@@ -13,35 +13,37 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # oleautomation
-Indicates that an interface is compatible with Automation.  
-  
-## Syntax  
-  
-```  
-  
-[oleautomation]  
-  
-```  
-  
-## Remarks  
- The **oleautomation** C++ attribute has the same functionality as the [oleautomation](http://msdn.microsoft.com/library/windows/desktop/aa367129) MIDL attribute.  
-  
-## Example  
- See the examples for [defaultvalue](../windows/defaultvalue.md) and [nonextensible](../windows/nonextensible.md) for a sample use of **oleautomation**.  
-  
-## Requirements  
-  
-### Attribute Context  
-  
-|||  
-|-|-|  
-|**Applies to**|`interface`|  
-|**Repeatable**|No|  
-|**Required attributes**|None|  
-|**Invalid attributes**|**dispinterface**|  
-  
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
-  
-## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
- [Interface Attributes](../windows/interface-attributes.md)   
+
+Indicates that an interface is compatible with Automation.
+
+## Syntax
+
+```cpp
+[oleautomation]
+```
+
+## Remarks
+
+The **oleautomation** C++ attribute has the same functionality as the [oleautomation](/windows/desktop/Midl/oleautomation) MIDL attribute.
+
+## Example
+
+See the examples for [defaultvalue](../windows/defaultvalue.md) and [nonextensible](../windows/nonextensible.md) for a sample use of **oleautomation**.
+
+## Requirements
+
+### Attribute Context
+
+|||
+|-|-|
+|**Applies to**|**interface**|
+|**Repeatable**|No|
+|**Required attributes**|None|
+|**Invalid attributes**|**dispinterface**|
+
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+
+## See Also
+
+[IDL Attributes](../windows/idl-attributes.md)  
+[Interface Attributes](../windows/interface-attributes.md)  

@@ -104,8 +104,8 @@ All of these functions validate their parameters. If either *string1* or *string
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_strnicmp**, **_strnicmp_l**|<string.h>|
-|**_wcsnicmp**, **_wcsnicmp_l**|<string.h> or <wchar.h>|
+|**_strnicmp**, **_strnicmp_l**|\<string.h>|
+|**_wcsnicmp**, **_wcsnicmp_l**|\<string.h> or \<wchar.h>|
 |**_mbsnicmp**, **_mbsnicmp_l**|\<mbstring.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).

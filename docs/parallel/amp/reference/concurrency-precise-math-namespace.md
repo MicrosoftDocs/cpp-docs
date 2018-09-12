@@ -53,8 +53,8 @@ namespace precise_math;
 |[cosf](concurrency-precise-math-namespace-functions.md#cosf)|Calculates the cosine of the argument|  
 |[cosh](concurrency-precise-math-namespace-functions.md#cosh)|Overloaded. Calculates the hyperbolic cosine value of the argument|  
 |[coshf](concurrency-precise-math-namespace-functions.md#coshf)|Calculates the hyperbolic cosine value of the argument|  
-|[cospi](concurrency-precise-math-namespace-functions.md#cospi)|Overloaded. Calculates the cosine value of pi * _X|  
-|[cospif](concurrency-precise-math-namespace-functions.md#cospif)|Calculates the cosine value of pi * _X|  
+|[cospi](concurrency-precise-math-namespace-functions.md#cospi)|Overloaded. Calculates the cosine value of pi \* _X|  
+|[cospif](concurrency-precise-math-namespace-functions.md#cospif)|Calculates the cosine value of pi \* _X|  
 |[erf](concurrency-precise-math-namespace-functions.md#erf)|Overloaded. Computes the error function of _X|  
 |[erfc](concurrency-precise-math-namespace-functions.md#erfc)|Overloaded. Computes the complementary error function of _X|  
 |[erfcf](concurrency-precise-math-namespace-functions.md#erfcf)|Computes the complementary error function of _X|  
@@ -77,8 +77,8 @@ namespace precise_math;
 |[fdimf](concurrency-precise-math-namespace-functions.md#fdimf)|Determines the positive difference between the arguments|  
 |[floor](concurrency-precise-math-namespace-functions.md#floor)|Overloaded. Calculates the floor of the argument|  
 |[floorf](concurrency-precise-math-namespace-functions.md#floorf)|Calculates the floor of the argument|  
-|[fma](concurrency-precise-math-namespace-functions.md#fma)|Overloaded. Compute (_X * _Y) + _Z, rounded as one ternary operation|  
-|[fmaf](concurrency-precise-math-namespace-functions.md#fmaf)|Compute (_X * _Y) + _Z, rounded as one ternary operation|  
+|[fma](concurrency-precise-math-namespace-functions.md#fma)|Overloaded. Compute (_X \* _Y) + _Z, rounded as one ternary operation|  
+|[fmaf](concurrency-precise-math-namespace-functions.md#fmaf)|Compute (_X \* _Y) + _Z, rounded as one ternary operation|  
 |[fmax](concurrency-precise-math-namespace-functions.md#fmax)|Overloaded. Determine the maximum numeric value of the arguments|  
 |[fmaxf](concurrency-precise-math-namespace-functions.md#fmaxf)|Determine the maximum numeric value of the arguments|  
 |[fmin](concurrency-precise-math-namespace-functions.md#fmin)|Overloaded. Determine the minimum numeric value of the arguments|  
@@ -146,16 +146,16 @@ namespace precise_math;
 |[sinf](concurrency-precise-math-namespace-functions.md#sinf)|Calculates the sine value of the argument|  
 |[sinh](concurrency-precise-math-namespace-functions.md#sinh)|Overloaded. Calculates the hyperbolic sine value of the argument|  
 |[sinhf](concurrency-precise-math-namespace-functions.md#sinhf)|Calculates the hyperbolic sine value of the argument|  
-|[sinpi](concurrency-precise-math-namespace-functions.md#sinpi)|Overloaded. Calculates the sine value of pi * _X|  
-|[sinpif](concurrency-precise-math-namespace-functions.md#sinpif)|Calculates the sine value of pi * _X|  
+|[sinpi](concurrency-precise-math-namespace-functions.md#sinpi)|Overloaded. Calculates the sine value of pi \* _X|  
+|[sinpif](concurrency-precise-math-namespace-functions.md#sinpif)|Calculates the sine value of pi \* _X|  
 |[sqrt](concurrency-precise-math-namespace-functions.md#sqrt)|Overloaded. Calculates the squre root of the argument|  
 |[sqrtf](concurrency-precise-math-namespace-functions.md#sqrtf)|Calculates the squre root of the argument|  
 |[tan](concurrency-precise-math-namespace-functions.md#tan)|Overloaded. Calculates the tangent value of the argument|  
 |[tanf](concurrency-precise-math-namespace-functions.md#tanf)|Calculates the tangent value of the argument|  
 |[tanh](concurrency-precise-math-namespace-functions.md#tanh)|Overloaded. Calculates the hyperbolic tangent value of the argument|  
 |[tanhf](concurrency-precise-math-namespace-functions.md#tanhf)|Calculates the hyperbolic tangent value of the argument|  
-|[tanpi](concurrency-precise-math-namespace-functions.md#tanpi)|Overloaded. Calculates the tangent value of pi * _X|  
-|[tanpif](concurrency-precise-math-namespace-functions.md#tanpif)|Calculates the tangent value of pi * _X|  
+|[tanpi](concurrency-precise-math-namespace-functions.md#tanpi)|Overloaded. Calculates the tangent value of pi \* _X|  
+|[tanpif](concurrency-precise-math-namespace-functions.md#tanpif)|Calculates the tangent value of pi \* _X|  
 |[tgamma](concurrency-precise-math-namespace-functions.md#tgamma)|Overloaded. Computes the gamma function of _X|  
 |[tgammaf](concurrency-precise-math-namespace-functions.md#tgammaf)|Computes the gamma function of _X|  
 |[trunc](concurrency-precise-math-namespace-functions.md#trunc)|Overloaded. Truncates the argument to the integer component|  

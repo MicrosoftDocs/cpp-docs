@@ -20,7 +20,7 @@ This article family describes how messages and commands are processed by the MFC
   
  Message maps also supply a way to update user-interface objects (such as menus and toolbar buttons), enabling or disabling them to suit the current context.  
   
- For general information about messages and message queues in Windows, see [Messages and Message Queues](http://msdn.microsoft.com/library/windows/desktop/ms632590) in the Windows SDK.  
+ For general information about messages and message queues in Windows, see [Messages and Message Queues](https://msdn.microsoft.com/library/windows/desktop/ms632590) in the Windows SDK.  
   
 ## What do you want to know more about  
   

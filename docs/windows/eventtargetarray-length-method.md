@@ -13,25 +13,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventTargetArray::Length Method
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-size_t Length();  
-```  
-  
-## Return Value  
- The current number of elements in the internal array of event handlers.  
-  
-## Remarks  
- Gets the current number of elements in the internal array of event handlers.  
-  
-## Requirements  
- **Header:** event.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [EventTargetArray Class](../windows/eventtargetarray-class.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+size_t Length();
+```
+
+## Return Value
+
+The current number of elements in the internal array of event handlers.
+
+## Remarks
+
+Gets the current number of elements in the internal array of event handlers.
+
+## Requirements
+
+**Header:** event.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[EventTargetArray Class](../windows/eventtargetarray-class.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

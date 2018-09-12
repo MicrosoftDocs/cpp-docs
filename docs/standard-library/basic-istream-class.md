@@ -154,14 +154,14 @@ basic_istream(basic_istream&& right);
 
 ### Parameters
 
-*strbuf*
- An object of type [basic_streambuf](../standard-library/basic-streambuf-class.md).
+*strbuf*<br/>
+An object of type [basic_streambuf](../standard-library/basic-streambuf-class.md).
 
-*_Isstd*
- **true** if this is a standard stream; otherwise, **false**.
+*_Isstd*<br/>
+**true** if this is a standard stream; otherwise, **false**.
 
-*right*
- A `basic_istream` object to copy.
+*right*<br/>
+A `basic_istream` object to copy.
 
 ### Remarks
 
@@ -241,20 +241,20 @@ basic_istream<Elem, Tr>& get(basic_streambuf<Elem, Tr>& strbuf, Elem Delim);
 
 ### Parameters
 
-*count*
- The number of characters to read from `strbuf`.
+*count*<br/>
+The number of characters to read from `strbuf`.
 
-*Delim*
- The character that should terminate the read if it is encountered before *count*.
+*Delim*<br/>
+The character that should terminate the read if it is encountered before *count*.
 
-*str*
- A string in which to write.
+*str*<br/>
+A string in which to write.
 
-*Ch*
- A character to get.
+*Ch*<br/>
+A character to get.
 
-*strbuf*
- A buffer in which to write.
+*strbuf*<br/>
+A buffer in which to write.
 
 ### Return Value
 
@@ -325,14 +325,14 @@ basic_istream<Elem, Tr>& getline(
 
 ### Parameters
 
-*count*
- The number of characters to read from `strbuf`.
+*count*<br/>
+The number of characters to read from `strbuf`.
 
-*Delim*
- The character that should terminate the read if it is encountered before *count*.
+*Delim*<br/>
+The character that should terminate the read if it is encountered before *count*.
 
-*str*
- A string in which to write.
+*str*<br/>
+A string in which to write.
 
 ### Return Value
 
@@ -386,11 +386,11 @@ basic_istream<Elem, Tr>& ignore(
 
 ### Parameters
 
-*count*
- The number of elements to skip from the current read position.
+*count*<br/>
+The number of elements to skip from the current read position.
 
-*Delim*
- The element that, if encountered before count, causes `ignore` to return and allowing all elements after *Delim* to be read.
+*Delim*<br/>
+The element that, if encountered before count, causes `ignore` to return and allowing all elements after *Delim* to be read.
 
 ### Return Value
 
@@ -448,14 +448,14 @@ basic_istream& operator>>(long double& val);
 
 ### Parameters
 
-*Pfn*
- A function pointer.
+*Pfn*<br/>
+A function pointer.
 
-*strbuf*
- An object of type `stream_buf`.
+*strbuf*<br/>
+An object of type `stream_buf`.
 
-*val*
- The value to read from the stream.
+*val*<br/>
+The value to read from the stream.
 
 ### Return Value
 
@@ -498,7 +498,7 @@ basic_istream& operator>>(unsigned long long& val);
 basic_istream& operator>>(void *& val);
 ```
 
-each extract a field and convert it to a numeric value by calling `use_facet`< `num_get`\< **Elem**, **InIt**>( `getloc`). [get](#get)( **InIt**( `rdbuf`), `Init`(0), **\*this**, `getloc`, `val`). Here, **InIt** is defined as `istreambuf_iterator`\< **Elem**, **Tr**>, and `val` has type **long**,**unsigned long**, or **void \*** as needed.
+each extract a field and convert it to a numeric value by calling `use_facet`< `num_get`\< **Elem**, **InIt**>( `getloc`). [get](#get)( **InIt**( `rdbuf`), `Init`(0), **\*this**, `getloc`, `val`). Here, **InIt** is defined as `istreambuf_iterator`\< **Elem**, **Tr**>, and `val` has type **long**, **unsigned long**, or **void** <strong>\*</strong> as needed.
 
 If the converted value cannot be represented as the type of `val`, the function calls [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`). In any case, the function returns **\*this**.
 
@@ -561,8 +561,8 @@ basic_istream& operator=(basic_istream&& right);
 
 ### Parameters
 
-*right*
- An `rvalue` reference to a `basic_ifstream` object.
+*right*<br/>
+An `rvalue` reference to a `basic_ifstream` object.
 
 ### Return Value
 
@@ -631,8 +631,8 @@ basic_istream<Elem, Tr>& putback(
 
 ### Parameters
 
-*Ch*
- A character to put back into the stream.
+*Ch*<br/>
+A character to put back into the stream.
 
 ### Return Value
 
@@ -681,11 +681,11 @@ basic_istream<Elem, Tr>& read(
 
 ### Parameters
 
-*str*
- The array in which to read the characters.
+*str*<br/>
+The array in which to read the characters.
 
-*count*
- The number of characters to read.
+*count*<br/>
+The number of characters to read.
 
 ### Return Value
 
@@ -745,11 +745,11 @@ streamsize readsome(
 
 ### Parameters
 
-*str*
- The array in which `readsome` stores the characters it reads.
+*str*<br/>
+The array in which `readsome` stores the characters it reads.
 
-*count*
- The number of characters to read.
+*count*<br/>
+The number of characters to read.
 
 ### Return Value
 
@@ -802,14 +802,14 @@ basic_istream<Elem, Tr>& seekg(off_type off, ios_base::seekdir way);
 
 ### Parameters
 
-*pos*
- The absolute position in which to move the read pointer.
+*pos*<br/>
+The absolute position in which to move the read pointer.
 
-*off*
- An offset to move the read pointer relative to *way*.
+*off*<br/>
+An offset to move the read pointer relative to *way*.
 
-*way*
- One of the [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) enumerations.
+*way*<br/>
+One of the [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) enumerations.
 
 ### Return Value
 
@@ -879,8 +879,8 @@ void swap(basic_istream& right);
 
 ### Parameters
 
-*right*
- An lvalue reference to a `basic_istream` object.
+*right*<br/>
+An lvalue reference to a `basic_istream` object.
 
 ### Remarks
 

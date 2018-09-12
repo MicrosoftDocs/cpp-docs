@@ -141,7 +141,6 @@ B1 dtor
 B3 dtor
 B2 dtor
 B1 dtor
-
 ```
 
 ### Virtual base classes

@@ -14,50 +14,33 @@ ms.workload: ["cplusplus"]
 # Structure and Union Members
 A "member-selection expression" refers to members of structures and unions. Such an expression has the value and type of the selected member.  
   
-```  
+> *postfix-expression* **.** *identifier*  
+> *postfix-expression* **->** *identifier*
   
-postfix-expression  
-.  
-identifier  
-postfix-expression  
-->  
-identifier  
+This list describes the two forms of the member-selection expressions:  
   
-```  
-  
- This list describes the two forms of the member-selection expressions:  
-  
-1.  In the first form, *postfix-expression* represents a value of `struct` or **union** type, and *identifier* names a member of the specified structure or union. The value of the operation is that of *identifier* and is an l-value if *postfix-expression* is an l-value. See [L-Value and R-Value Expressions](../c-language/l-value-and-r-value-expressions.md) for more information.  
+1.  In the first form, *postfix-expression* represents a value of **struct** or **union** type, and *identifier* names a member of the specified structure or union. The value of the operation is that of *identifier* and is an l-value if *postfix-expression* is an l-value. See [L-Value and R-Value Expressions](../c-language/l-value-and-r-value-expressions.md) for more information.  
   
 2.  In the second form, *postfix-expression* represents a pointer to a structure or union, and *identifier* names a member of the specified structure or union. The value is that of *identifier* and is an l-value.  
   
  The two forms of member-selection expressions have similar effects.  
   
- In fact, an expression involving the member-selection operator (**->**) is a shorthand version of an expression using the period (**.**) if the expression before the period consists of the indirection operator (**\***) applied to a pointer value. Therefore,  
-  
-```  
-  
-expression  
-->  
-identifier  
-  
-```  
-  
- is equivalent to  
-  
-```  
-  
-(*  
-expression  
-) .  
-identifier  
-  
-```  
-  
+ In fact, an expression involving the member-selection operator (**->**) is a shorthand version of an expression using the period (**.**) if the expression before the period consists of the indirection operator (<strong>\*</strong>) applied to a pointer value. Therefore,  
+
+```cpp
+expression->identifier  
+```
+
+is equivalent to  
+
+```cpp
+(*expression).identifier
+```
+
  when *expression* is a pointer value.  
   
 ## Examples  
- The following examples refer to this structure declaration. For information about the indirection operator (**\***) used in these examples, see [Indirection and Address-of Operators](../c-language/indirection-and-address-of-operators.md).  
+ The following examples refer to this structure declaration. For information about the indirection operator (<strong>\*</strong>) used in these examples, see [Indirection and Address-of Operators](../c-language/indirection-and-address-of-operators.md).  
   
 ```  
 struct pair   

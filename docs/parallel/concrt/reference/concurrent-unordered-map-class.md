@@ -309,7 +309,7 @@ std::pair<const_iterator,
  The key value to search for.  
   
 ### Return Value  
- A [pair](http://msdn.microsoft.com/en-us/c5a37023-d939-4eb2-ae24-ce8e0cd4505d) where the first element is an iterator to the beginning and the second element is an iterator to the end of the range.  
+ A [pair](../../../standard-library/pair-structure.md) where the first element is an iterator to the beginning and the second element is an iterator to the end of the range.  
   
 ### Remarks  
  It is possible for concurrent inserts to cause additional keys to be inserted after the begin iterator and before the end iterator.  
@@ -329,7 +329,7 @@ const_iterator find(const key_type& KVal) const;
  The key value to search for.  
   
 ### Return Value  
- An iterator pointing to the location of the the first element that matched the key provided, or the iterator `end()` if no such element exists.  
+ An iterator pointing to the location of the first element that matched the key provided, or the iterator `end()` if no such element exists.  
   
 ##  <a name="get_allocator"></a> get_allocator 
 

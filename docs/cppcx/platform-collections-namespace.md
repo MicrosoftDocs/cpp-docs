@@ -8,13 +8,13 @@ f1_keywords: ["collection/Platform::Collections"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Collections Namespace"]
 ms.assetid: b5042864-5f22-40b7-b7a5-c0691f65cc47
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections Namespace
 
-The Platform::Collections namespace contains the `Map`, `MapView`, `Vector`, and `VectorView` classes. These classes are concrete implementations of the corresponding interfaces that are defined in the [Windows::Foundation::Collections](http://go.microsoft.com/fwlink/p/?LinkId=262645) namespace. The concrete collection types are not portable across the ABI (for example when a Javascript or C# program calls into a C++ component), but they are implicitly convertible to their corresponding interface types. For example, if you implement a public method that populates and returns a collection, then use [Platform::Collections::Vector](../cppcx/platform-collections-vector-class.md) to implement the collection internally and use [Windows::Foundation::Collections::IVector](http://go.microsoft.com/fwlink/p/?LinkId=262410) as the return type. For more information, see [Collections](../cppcx/collections-c-cx.md) and [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
+The Platform::Collections namespace contains the `Map`, `MapView`, `Vector`, and `VectorView` classes. These classes are concrete implementations of the corresponding interfaces that are defined in the [Windows::Foundation::Collections](/uwp/api/Windows.Foundation.Collections) namespace. The concrete collection types are not portable across the ABI (for example when a Javascript or C# program calls into a C++ component), but they are implicitly convertible to their corresponding interface types. For example, if you implement a public method that populates and returns a collection, then use [Platform::Collections::Vector](../cppcx/platform-collections-vector-class.md) to implement the collection internally and use [Windows::Foundation::Collections::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_) as the return type. For more information, see [Collections](../cppcx/collections-c-cx.md) and [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
 
 You can construct a Platform::Collections::Vector from a [std::vector](../standard-library/vector-class.md) and a [Platform::Collections::Map](../cppcx/platform-collections-map-class.md) from a [std::map](../standard-library/map-class.md).
 
@@ -58,4 +58,4 @@ This namespace contains the following members.
 
 ## See also
 
-[Platform Namespace](../cppcx/platform-namespace-c-cx.md)  
+[Platform Namespace](../cppcx/platform-namespace-c-cx.md)

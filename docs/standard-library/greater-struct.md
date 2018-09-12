@@ -35,19 +35,19 @@ struct greater<void>
   template <class T, class U>
   auto operator()(T&& Left, U&& Right) const
     ->  decltype(std::forward<T>(Left)> std::forward<U>(Right));
- };
+};
 ```
 
 ### Parameters
 
 *Type*, *T*, *U*
- Any type that supports an `operator>` that takes operands of the specified or inferred types.
+Any type that supports an `operator>` that takes operands of the specified or inferred types.
 
-*Left*
- The left operand of the greater-than operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
+*Left*<br/>
+The left operand of the greater-than operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
 
-*Right*
- The right operand of the greater-than operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
+*Right*<br/>
+The right operand of the greater-than operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
 
 ## Return Value
 

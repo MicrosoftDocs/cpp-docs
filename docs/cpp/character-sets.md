@@ -45,7 +45,6 @@ The text of a C++ program is stored in source files that use a particular charac
 ```cpp  
 auto \u30AD = 42; // \u30AD is 'キ'  
 if (キ == 42) return true; // \u30AD and キ are the same to the compiler  
-  
 ```  
   
  The format of extended characters on the Windows clipboard is specific to application locale settings. Cutting and pasting these characters into your code from another application may introduce unexpected character encodings. This can result in parsing errors with no visible cause in your code. We recommend that you set your source file encoding to a Unicode codepage before pasting extended characters. We also recommend that you use an IME or the Character Map app to generate extended characters.  
@@ -53,4 +52,4 @@ if (キ == 42) return true; // \u30AD and キ are the same to the compiler
  **END Microsoft Specific**  
   
 ### Basic execution character set  
- The *basic execution character set* and the *basic execution wide-character set* consist of all the characters in the basic source character set, and the control characters that represent alert, backspace, carriage return, and the null character.   The *execution character set* and *execution wide-character set* are supersets of the basic sets. They include the implementation-defined source characters outside the basic source character set. The execution character set has a locale-specific representation.
+ The *basic execution character set* and the *basic execution wide-character set* consist of all the characters in the basic source character set, and the control characters that represent alert, backspace, carriage return, and the null character. The *execution character set* and *execution wide-character set* are supersets of the basic sets. They include the implementation-defined source characters outside the basic source character set. The execution character set has a locale-specific representation.

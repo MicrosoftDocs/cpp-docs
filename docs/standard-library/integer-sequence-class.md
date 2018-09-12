@@ -25,11 +25,11 @@ struct integer_sequence
 
 ### Parameters
 
-*T*
- The type of the values; must be an integral type: bool, char, char16_t, char32_t, wchar_t, or signed or unsigned integer types.
+*T*<br/>
+The type of the values; must be an integral type: bool, char, char16_t, char32_t, wchar_t, or signed or unsigned integer types.
 
-*Vals*
- A non-type parameter pack that represents a sequence of values of integral type T.
+*Vals*<br/>
+A non-type parameter pack that represents a sequence of values of integral type T.
 
 ## Members
 
@@ -112,7 +112,7 @@ To make an `index_sequence` for a parameter pack, use `index_sequence_for`\<T...
 
 ## Requirements
 
-Header: <type_traits>
+Header: \<type_traits\>
 
 Namepace: std
 

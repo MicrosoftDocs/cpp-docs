@@ -12,12 +12,15 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # ATL/MFC Concepts
-This section provides conceptual and task-based topics to help you program using the classes shared between Active Template Library (ATL) and Microsoft Foundation Class (MFC) Library.  
-  
-## In This Section  
- [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)  
- Describes how to manage string data in applications.  
-  
-## See Also  
- [ATL/MFC Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md)
+
+This section provides conceptual and task-based topics to help you program using the classes shared between Active Template Library (ATL) and Microsoft Foundation Class (MFC) Library.
+
+## In This Section
+
+[Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)  
+Describes how to manage string data in applications.
+
+## See Also
+
+[ATL/MFC Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md)
 

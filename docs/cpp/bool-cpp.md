@@ -48,6 +48,5 @@ The postfix or prefix **--** operator cannot be applied to a variable of this ty
  The **bool** type participates in integral promotions. An r-value of type **bool** can be converted to an r-value of type **int**, with FALSE becoming zero and TRUE becoming one. As a distinct type, **bool** participates in overload resolution.  
   
 ## See also
-
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[Fundamental Types](../cpp/fundamental-types-cpp.md)<br/>
+[Keywords](../cpp/keywords-cpp.md)  
+[Fundamental Types](../cpp/fundamental-types-cpp.md)  

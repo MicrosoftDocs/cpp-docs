@@ -28,8 +28,8 @@ using remove_extent_t = typename remove_extent<T>::type;
 
 ### Parameters
 
-*T*
- The type to modify.
+*T*<br/>
+The type to modify.
 
 ## Remarks
 

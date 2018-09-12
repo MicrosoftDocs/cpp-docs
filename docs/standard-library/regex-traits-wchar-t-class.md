@@ -1,7 +1,7 @@
 ---
 title: "regex_traits&lt;wchar_t&gt; Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/10/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 f1_keywords: ["regex/std::regex_traits<wchar_t>"]
@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # regex_traits&lt;wchar_t&gt; Class
 
-Specialization of regex_traits for wchar_t.
+Specialization of `regex_traits` for **wchar_t**.
 
 ## Syntax
 

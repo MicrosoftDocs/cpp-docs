@@ -1,7 +1,7 @@
 ---
 title: "Linker Options | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/20/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 f1_keywords: ["link"]
@@ -109,6 +109,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/RELEASE](../../build/reference/release-set-the-checksum.md)|Sets the Checksum in the .exe header.|
 |[/SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md)|Specifies that the image will contain a table of safe exception handlers.|
 |[/SECTION](../../build/reference/section-specify-section-attributes.md)|Overrides the attributes of a section.|
+|[/SOURCELINK](../../build/reference/sourcelink.md)|Specifies a SourceLink file to add to the PDB.|
 |[/STACK](../../build/reference/stack-stack-allocations.md)|Sets the size of the stack in bytes.|
 |[/STUB](../../build/reference/stub-ms-dos-stub-file-name.md)|Attaches an MS-DOS stub program to a Win32 program.|
 |[/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md)|Tells the operating system how to run the .exe file.|

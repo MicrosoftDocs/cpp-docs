@@ -13,12 +13,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Site Information Classes
-The following classes allow an object to communicate with its site:  
-  
--   [IObjectWithSiteImpl](../atl/reference/iobjectwithsiteimpl-class.md) Retrieves and sets a pointer to an object's site. Used for objects that are not controls.  
-  
--   [IOleObjectImpl](../atl/reference/ioleobjectimpl-class.md) Retrieves and sets a pointer to an object's site. Used for controls.  
-  
-## See Also  
- [Class Overview](../atl/atl-class-overview.md)
+
+The following classes allow an object to communicate with its site:
+
+- [IObjectWithSiteImpl](../atl/reference/iobjectwithsiteimpl-class.md) Retrieves and sets a pointer to an object's site. Used for objects that are not controls.
+
+- [IOleObjectImpl](../atl/reference/ioleobjectimpl-class.md) Retrieves and sets a pointer to an object's site. Used for controls.
+
+## See Also
+
+[Class Overview](../atl/atl-class-overview.md)
 

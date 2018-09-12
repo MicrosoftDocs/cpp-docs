@@ -13,46 +13,52 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # DerefHelper Structure
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-template <  
-   typename T  
->  
-struct DerefHelper;  
-  
-template <  
-   typename T  
->  
-struct DerefHelper<T*>;  
-```  
-  
-#### Parameters  
- `T`  
- A template parameter.  
-  
-## Remarks  
- Represent a dereferenced pointer to the `T*` template parameter.  
-  
- DerefHelper is used in an expression such as: `ComPtr<Details::DerefHelper<ProgressTraits::Arg1Type>::DerefType> operationInterface;`.  
-  
-## Members  
-  
-### Public Typedefs  
-  
-|Name|Description|  
-|----------|-----------------|  
-|`DerefType`|Identifier for the dereferenced template parameter `T*`.|  
-  
-## Inheritance Hierarchy  
- `DerefHelper`  
-  
-## Requirements  
- **Header:** async.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+template <
+   typename T
+>
+struct DerefHelper;
+
+template <
+   typename T
+>
+struct DerefHelper<T*>;
+```
+
+### Parameters
+
+*T*  
+A template parameter.
+
+## Remarks
+
+Represent a dereferenced pointer to the `T*` template parameter.
+
+**DerefHelper** is used in an expression such as: `ComPtr<Details::DerefHelper<ProgressTraits::Arg1Type>::DerefType> operationInterface;`.
+
+## Members
+
+### Public Typedefs
+
+|Name|Description|
+|----------|-----------------|
+|`DerefType`|Identifier for the dereferenced template parameter `T*`.|
+
+## Inheritance Hierarchy
+
+`DerefHelper`
+
+## Requirements
+
+**Header:** async.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

@@ -64,7 +64,7 @@ On the ARM architecture, parameters from the variable arguments list that are pa
 printf("%d\n", 1LL);
 ```
 
-In this case, the bug can be fixed by making sure that the correct format specification is used so that that the alignment of the argument is considered. This code is correct:
+In this case, the bug can be fixed by making sure that the correct format specification is used so that the alignment of the argument is considered. This code is correct:
 
 ```C
 // CORRECT: use %I64d for 64-bit integers

@@ -12,29 +12,24 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Current Time: General Purpose Classes
-The following procedure shows how to create a `CTime` object and initialize it with the current time.  
-  
-#### To get the current time  
-  
-1.  Allocate a `CTime` object, as follows:  
-  
-     [!code-cpp[NVC_ATLMFC_Utilities#171](../atl-mfc-shared/codesnippet/cpp/current-time-general-purpose-classes_1.cpp)]  
-  
-    > [!NOTE]
-    >  Uninitialized `CTime` objects are not initialized to a valid time.  
-  
-2.  Call the `CTime::GetCurrentTime` function to get the current time from the operating system. This function returns a `CTime` object that can be used to set the value of `CTime`, as follows:  
-  
-     [!code-cpp[NVC_ATLMFC_Utilities#172](../atl-mfc-shared/codesnippet/cpp/current-time-general-purpose-classes_2.cpp)]  
-  
-     Since `GetCurrentTime` is a static member function from the `CTime` class, you must qualify its name with the name of the class and the scope resolution operator (`::`), `CTime::GetCurrentTime()`.  
-  
- Of course, the two steps outlined previously could be combined into a single program statement as follows:  
-  
- [!code-cpp[NVC_ATLMFC_Utilities#173](../atl-mfc-shared/codesnippet/cpp/current-time-general-purpose-classes_3.cpp)]  
-  
-## See Also  
- [Date and Time: General-Purpose Classes](../atl-mfc-shared/date-and-time-general-purpose-classes.md)
 
+The following procedure shows how to create a `CTime` object and initialize it with the current time.
 
+#### To get the current time
 
+1. Allocate a `CTime` object, as follows:
+
+   [!code-cpp[NVC_ATLMFC_Utilities#171](../atl-mfc-shared/codesnippet/cpp/current-time-general-purpose-classes_1.cpp)]
+
+   > [!NOTE]
+   > Uninitialized `CTime` objects are not initialized to a valid time.
+
+2. Call the `CTime::GetCurrentTime` function to get the current time from the operating system. This function returns a `CTime` object that can be used to set the value of `CTime`, as follows:
+
+   [!code-cpp[NVC_ATLMFC_Utilities#172](../atl-mfc-shared/codesnippet/cpp/current-time-general-purpose-classes_2.cpp)]
+
+   Since `GetCurrentTime` is a static member function from the `CTime` class, you must qualify its name with the name of the class and the scope resolution operator (`::`), `CTime::GetCurrentTime()`.
+
+Of course, the two steps outlined previously could be combined into a single program statement as follows:
+
+[!code-cpp[NVC_ATLMFC_Utilities#173](../atl-mfc-shared/codesnippet/cpp/current-time-general-purpose-classes_3.cpp)]

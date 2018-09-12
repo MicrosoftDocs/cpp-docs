@@ -28,19 +28,19 @@ Other types, such as arrays, structs, and unions, have stricter alignment requir
 ||||  
 |-|-|-|  
 |Scalar Type|C Data Type|Required Alignment|  
-|**INT8**|`char`|Byte|  
-|**UINT8**|`unsigned char`|Byte|  
+|**INT8**|**char**|Byte|  
+|**UINT8**|**unsigned char**|Byte|  
 |**INT16**|**short**|Word|  
 |**UINT16**|**unsigned short**|Word|  
-|**INT32**|**int, long**|Doubleword|  
+|**INT32**|**int**, **long**|Doubleword|  
 |**UINT32**|**unsigned int, unsigned long**|Doubleword|  
-|**INT64**|`__int64`|Quadword|  
+|**INT64**|**__int64**|Quadword|  
 |**UINT64**|**unsigned __int64**|Quadword|  
 |**FP32 (single precision)**|**float**|Doubleword|  
 |**FP64 (double precision)**|**double**|Quadword|  
-|**POINTER**|**\***|Quadword|  
-|`__m64`|**struct __m64**|Quadword|  
-|`__m128`|**struct __m128**|Octaword|  
+|**POINTER**|<strong>\*</strong>|Quadword|  
+|**__m64**|**struct __m64**|Quadword|  
+|**__m128**|**struct __m128**|Octaword|  
   
  The following aggregate alignment rules apply:  
   

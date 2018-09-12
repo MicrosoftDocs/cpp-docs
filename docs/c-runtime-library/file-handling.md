@@ -75,11 +75,11 @@ These routines provide a way to change the representation of the file between a 
 
  The following Win32 functions also open files and pipes:
 
-- [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858.aspx)
+- [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea)
 
-- [CreatePipe](http://msdn.microsoft.com/library/windows/desktop/aa365152.aspx)
+- [CreatePipe](https://msdn.microsoft.com/library/windows/desktop/aa365152.aspx)
 
-- [CreateNamedPipe](http://msdn.microsoft.com/library/windows/desktop/aa365150.aspx)
+- [CreateNamedPipe](/windows/desktop/api/winbase/nf-winbase-createnamedpipea)
 
 ## See Also
 

@@ -29,6 +29,6 @@ Event handling is primarily supported for COM classes (C++ classes that implemen
 |[__hook](../cpp/hook.md)|Associates a handler method with an event.|  
 |[__unhook](../cpp/unhook.md)|Dissociates a handler method from an event.|  
   
-## See Also  
+## See also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
  [Keywords](../cpp/keywords-cpp.md)   

@@ -12,15 +12,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 
-
 # ATL_URL_SCHEME  
 
-The members of this enumeration provide constants for the schemes understood by [CUrl](curl-class.md).  
-  
-## Syntax  
-  
-```  
-  
+The members of this enumeration provide constants for the schemes understood by [CUrl](curl-class.md).
+
+## Syntax
+
+```
+
       enum ATL_URL_SCHEME{  
    ATL_URL_SCHEME_UNKNOWN = -1,  
    ATL_URL_SCHEME_FTP     = 0,  
@@ -32,12 +31,14 @@ The members of this enumeration provide constants for the schemes understood by 
    ATL_URL_SCHEME_MAILTO  = 6,  
    ATL_URL_SCHEME_SOCKS   = 7  
 };  
-```  
-  
-## Requirements  
- **Header:** atlutil.h  
-  
-## See Also  
- [Concepts](../active-template-library-atl-concepts.md)   
- [CUrl::SetScheme](curl-class.md#setscheme)   
- [CUrl::GetScheme](curl-class.md#getscheme)
+```
+
+## Requirements
+
+**Header:** atlutil.h
+
+## See Also
+
+[Concepts](../active-template-library-atl-concepts.md)   
+[CUrl::SetScheme](curl-class.md#setscheme)   
+[CUrl::GetScheme](curl-class.md#getscheme)

@@ -15,4 +15,4 @@ ms.workload: ["cplusplus"]
 # Compiler Error C3157
 ParamArray attribute can only be applied to the last parameter  
   
- The [ParamArray](https://msdn.microsoft.com/en-us/library/system.paramarrayattribute.aspx) attribute was applied to the wrong parameter.
+ The [ParamArray](https://msdn.microsoft.com/library/system.paramarrayattribute.aspx) attribute was applied to the wrong parameter.

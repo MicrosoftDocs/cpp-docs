@@ -54,7 +54,7 @@ int main(int j) {
   
  When the template argument is explicitly specified, normal implicit conversions are done to convert the function argument to the type of the corresponding function template parameters. In the above example, the compiler will convert `char j` to type **int**.  
   
-## See Also  
+## See also  
  [Templates](../cpp/templates-cpp.md)   
  [Function Template Instantiation](../cpp/function-template-instantiation.md)   
  [Explicit Instantiation](../cpp/explicit-instantiation.md)   

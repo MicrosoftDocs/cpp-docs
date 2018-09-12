@@ -12,19 +12,23 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Using CStringT
-The topics in this section describe programming using the template class [CStringT](../atl-mfc-shared/reference/cstringt-class.md).  
-  
-## In This Section  
- [Memory Management with CStringT](../atl-mfc-shared/memory-management-with-cstringt.md)  
- Discusses memory management with `CStringT`, a template class used to manipulate variable-length character strings.  
-  
- [Exporting String Classes Using CStringT](../atl-mfc-shared/exporting-string-classes-using-cstringt.md)  
- Explains how to export your own string class from a DLL using the CStringT<> template class.  
-  
-## Reference  
- [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md).  
- Provides reference information about the shared `CStringT` class.  
-  
-## See Also  
- [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)
+
+The topics in this section describe programming using the template class [CStringT](../atl-mfc-shared/reference/cstringt-class.md).
+
+## In This Section
+
+[Memory Management with CStringT](../atl-mfc-shared/memory-management-with-cstringt.md)  
+Discusses memory management with `CStringT`, a template class used to manipulate variable-length character strings.
+
+[Exporting String Classes Using CStringT](../atl-mfc-shared/exporting-string-classes-using-cstringt.md)  
+Explains how to export your own string class from a DLL using the CStringT<> template class.
+
+## Reference
+
+[CStringT Class](../atl-mfc-shared/reference/cstringt-class.md).  
+Provides reference information about the shared `CStringT` class.
+
+## See Also
+
+[Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)
 

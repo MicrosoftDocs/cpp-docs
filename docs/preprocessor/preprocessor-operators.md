@@ -12,7 +12,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Preprocessor Operators
-Four preprocessor-specific operators are used in the context of the `#define` directive (see the following list for a summary of each). The stringizing, charizing, and token-pasting operators are discussed in the next three sections. For information on the **defined** operator, see [The #if, #elif, #else, and #endif Directives](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md).  
+Four preprocessor-specific operators are used in the context of the `#define` directive (see the following list for a summary of each). The stringizing, charizing, and token-pasting operators are discussed in the next three sections. For information on the `defined` operator, see [The #if, #elif, #else, and #endif Directives](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md).  
   
 |Operator|Action|  
 |--------------|------------|  
@@ -22,6 +22,7 @@ Four preprocessor-specific operators are used in the context of the `#define` di
 |[defined operator](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|Simplifies the writing of compound expressions in certain macro directives|  
   
 ## See Also  
- [Preprocessor Directives](../preprocessor/preprocessor-directives.md)   
- [Predefined Macros](../preprocessor/predefined-macros.md)   
- [C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)
+ 
+[Preprocessor Directives](../preprocessor/preprocessor-directives.md)   
+[Predefined Macros](../preprocessor/predefined-macros.md)   
+[C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)

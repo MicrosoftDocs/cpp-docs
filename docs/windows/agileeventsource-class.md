@@ -17,19 +17,19 @@ Represents an event that is raised by a agile component, which is a component th
 
 ## Syntax
 
-```
+```cpp
 template<typename TDelegateInterface, typename TEventSourceOptions = Microsoft::WRL::InvokeModeOptions<FireAll>>
 class AgileEventSource
     : public Microsoft::WRL::EventSource<TDelegateInterface, TEventSourceOptions>;
 ```
 
-## Parameters  
- `TDelegateInterface`  
+## Parameters
 
- The interface to a delegate that represents an event handler.
+*TDelegateInterface*  
+The interface to a delegate that represents an event handler.
 
- `TEventSourceOptions`  
- An [InvokeModeOptions](invokemodeoptions-structure.md) stucture whose invokeMode field is set to `InvokeMode::StopOnFirstError` or `InvokeMode::FireAll`.
+*TEventSourceOptions*  
+An [InvokeModeOptions](invokemodeoptions-structure.md) stucture whose invokeMode field is set to `InvokeMode::StopOnFirstError` or `InvokeMode::FireAll`.
 
 ## Remarks
 
@@ -37,14 +37,14 @@ The vast majority of components in the Windows Runtime are agile components. For
 
 ## Inheritance Hierarchy
 
- `EventSource`
- `AgileEventSource`
+`EventSource`
+`AgileEventSource`
 
 ## Requirements
 
- **Header:** event.h
+**Header:** event.h
 
- **Namespace:** Microsoft::WRL
+**Namespace:** Microsoft::WRL
 
 ## Members
 
@@ -52,7 +52,7 @@ The vast majority of components in the Windows Runtime are agile components. For
 
 |Name|Description|
 |----------|-----------------|
-|[AgileEventSource::Add Method](#add)|Appends the agile event handler represented by the specified delegate interface to the set of event handlers for the current AgileEventSource object.|
+|[AgileEventSource::Add Method](#add)|Appends the agile event handler represented by the specified delegate interface to the set of event handlers for the current **AgileEventSource** object.|
 
 ## <a name="add"></a> AgileEventSource::Add Method
 
@@ -69,12 +69,11 @@ HRESULT Add(
 
 ### Parameters
 
-*delegateInterface*
-
+*delegateInterface*  
 The interface to a delegate object, which represents an event handler.
 
-*token*
-When this operation completes, a handle that represents the event. Use this token as the parameter to the Remove() method to discard the event handler.
+*token*  
+When this operation completes, a handle that represents the event. Use this token as the parameter to the `Remove()` method to discard the event handler.
 
 ### Return Value
 
@@ -83,4 +82,4 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 ## See Also
 
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMFCRibbonBar Class
 The `CMFCRibbonBar` class implements a ribbon bar similar to that used in Office 2007.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
    
 ## Syntax  
   

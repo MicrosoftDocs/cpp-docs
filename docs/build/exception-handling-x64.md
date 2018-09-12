@@ -12,7 +12,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Exception Handling (x64)
-This section discusses structured exception handling and C++ exception handling behavior on the [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)].  
+This section discusses structured exception handling and C++ exception handling behavior on the x64.  
   
 -   [Unwind Data for Exception Handling, Debugger Support](../build/unwind-data-for-exception-handling-debugger-support.md)  
   

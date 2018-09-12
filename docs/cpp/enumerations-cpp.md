@@ -1,7 +1,7 @@
 ---
 title: "Enumerations (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "06/01/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
 f1_keywords: ["enum_cpp"]
@@ -83,12 +83,11 @@ namespace CardGame_NonScoped
   
 ```cpp  
 enum Suit { Diamonds = 1, Hearts, Clubs, Spades };  
-  
 ```  
   
  The enumerator `Diamonds` is assigned the value `1`. Subsequent enumerators, if they are not given an explicit value, receive the value of the previous enumerator plus one. In the previous example, `Hearts` would have the value 2, `Clubs` would have 3, and so on.  
   
- Every enumerator is treated as a constant and must have a unique name within the scope where the `enum` is defined (for unscoped enums) or within the enum itself (for scoped enums). The values given to the names do not have to be unique. For example, if the declaration of a unscoped enum `Suit` is this:  
+ Every enumerator is treated as a constant and must have a unique name within the scope where the **enum** is defined (for unscoped enums) or within the **enum** itself (for scoped enums). The values given to the names do not have to be unique. For example, if the declaration of a unscoped enum `Suit` is this:  
   
 ```cpp  
 enum Suit { Diamonds = 5, Hearts, Clubs = 4, Spades };  
@@ -104,7 +103,6 @@ enum Suit { Diamonds = 5, Hearts, Clubs = 4, Spades };
 int account_num = 135692;  
 Suit hand;  
 hand = account_num; // error C2440: '=' : cannot convert from 'int' to 'Suit'  
-  
 ```  
   
  A cast is required to convert an **int** to a scoped or unscoped enumerator. However, you can promote a unscoped enumerator to an integer value without a cast.  
@@ -132,12 +130,12 @@ namespace ScopedEnumConversions
         account_num = Suit::Hearts; // error C2440: '=' : cannot convert from 'Suit' to 'int'  
         account_num = static_cast<int>(Suit::Hearts); // OK  
 }  
-  
 ```  
   
  Notice that the line `hand = account_num;` still causes the error that occurs with unscoped enums, as shown earlier. It is allowed with an explicit cast. However, with scoped enums, the attempted conversion in the next statement, `account_num = Suit::Hearts;`, is no longer allowed without an explicit cast. 
 
-## Enums with no enumerators
+## <a name="no_enumerators"></a> Enums with no enumerators
+
 **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): By defining an enum (regular or scoped) with an explicit underlying type and no enumerators, you can in effect introduce a new integral type that has no implicit conversion to any other type. By using this type instead of its built-in underlying type, you can eliminate the potential for subtle errors caused by inadvertent implicit conversions.  
 
 
@@ -175,6 +173,6 @@ int main()
 }
 ``` 
   
-## See Also  
+## See also  
  [C Enumeration Declarations](../c-language/c-enumeration-declarations.md)   
  [Keywords](../cpp/keywords-cpp.md)

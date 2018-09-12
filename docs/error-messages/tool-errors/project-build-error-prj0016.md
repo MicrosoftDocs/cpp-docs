@@ -29,4 +29,4 @@ The user's security settings prevent the process from being created. These setti
   
 -   Knowledge Base article 324153, which is available on [http://support.microsoft.com/default.aspx?scid=kb;en-us;324153](http://support.microsoft.com/default.aspx?scid=kb;en-us;324153).  
   
--   [Adhering to System Policy Settings](http://msdn.microsoft.com/library/aa372139), the section on "Run only allowed Windows applications".
+-   [Adhering to System Policy Settings](https://msdn.microsoft.com/library/aa372139), the section on "Run only allowed Windows applications".

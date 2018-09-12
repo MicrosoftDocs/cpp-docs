@@ -13,29 +13,34 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLock::LockShared Method
-Acquires an SRWLock object in shared mode.  
-  
-## Syntax  
-  
-```  
-SyncLockShared LockShared();  
-  
-static SyncLockShared LockShared(  
-   _In_ SRWLOCK* lock  
-);  
-```  
-  
-#### Parameters  
- `lock`  
- Pointer to an SRWLock object.  
-  
-## Return Value  
- An SRWLock object in shared mode.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [SRWLock Class](../windows/srwlock-class.md)
+
+Acquires an **SRWLock** object in shared mode.
+
+## Syntax
+
+```cpp
+SyncLockShared LockShared();
+
+static SyncLockShared LockShared(
+   _In_ SRWLOCK* lock
+);
+```
+
+### Parameters
+
+*lock*  
+Pointer to an **SRWLock** object.
+
+## Return Value
+
+An **SRWLock** object in shared mode.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[SRWLock Class](../windows/srwlock-class.md)

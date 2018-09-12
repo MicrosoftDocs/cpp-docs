@@ -1,7 +1,7 @@
 ---
 title: "SDWORD | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["SDWORD"]
@@ -13,16 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # SDWORD
-Allocates and optionally initializes a signed double word (4 bytes) of storage for each `initializer`. Also can be used as a type specifier anywhere a type is legal.  
-  
-## Syntax  
-  
-```  
-  
-name SDWORD initializer [[, initializer]]...  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)   
- [DWORD](../../assembler/masm/dword.md)   
- [DD](../../assembler/masm/dd.md)
+
+Allocates and optionally initializes a signed double word (4 bytes) of storage for each `initializer`. Also can be used as a type specifier anywhere a type is legal.
+
+## Syntax
+
+> name SDWORD initializer [[, initializer]]...
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[DWORD](../../assembler/masm/dword.md)<br/>
+[DD](../../assembler/masm/dd.md)<br/>

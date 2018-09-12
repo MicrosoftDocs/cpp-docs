@@ -43,4 +43,3 @@ In some cases, it is necessary for the compiler to create temporary objects. The
 |------------------------------|-----------------------|  
 |Result of expression evaluation|All temporaries created as a result of expression evaluation are destroyed at the end of the expression statement (that is, at the semicolon), or at the end of the controlling expressions for **for**, **if**, **while**, **do**, and **switch** statements.|  
 |Initializing **const** references|If an initializer is not an l-value of the same type as the reference being initialized, a temporary of the underlying object type is created and initialized with the initialization expression. This temporary object is destroyed immediately after the reference object to which it is bound is destroyed.|  
-  

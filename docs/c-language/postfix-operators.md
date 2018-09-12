@@ -13,24 +13,20 @@ ms.workload: ["cplusplus"]
 ---
 # Postfix Operators
 The postfix operators have the highest precedence (the tightest binding) in expression evaluation.  
-  
-## Syntax  
- *postfix-expression*:  
- *primary-expression*  
-  
- *postfix-expression*  **[**  *expression*  **]**  
-  
- *postfix-expression*  **(**  *argument-expression-list* opt**)**  
-  
- *postfix-expression*  **.**  *identifier*  
-  
- *postfix-expression*  **->**  *identifier*  
-  
- *postfix-expression*  **++**  
-  
- *postfix-expression*  **--**  
-  
- Operators in this precedence level are the array subscripts, function calls, structure and union members, and postfix increment and decrement operators.  
-  
-## See Also  
- [C Operators](../c-language/c-operators.md)
+
+## Syntax
+
+*postfix-expression*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*primary-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*postfix-expression*  **[**  *expression*  **]**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*postfix-expression*  **(**  *argument-expression-list*<sub>opt</sub> **)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*postfix-expression*  **.**  *identifier*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*postfix-expression*  **->**  *identifier*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*postfix-expression*  **++**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*postfix-expression*  **--**
+
+Operators in this precedence level are the array subscripts, function calls, structure and union members, and postfix increment and decrement operators.
+
+## See Also
+
+[C Operators](../c-language/c-operators.md)

@@ -18,7 +18,7 @@ The usual starting point for a C++ programmer is a "Hello, world!" application t
 
 ## Prerequisites
 
-- Have Visual Studio with the Desktop development with C++ workload installed and running on your computer. If it's not installed yet, see [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md).
+- Have Visual Studio with the Desktop development with C++ workload installed and running on your computer. If it's not installed yet, see [Install C++ support in Visual Studio 2017](../build/vscpp-step-0-installation.md).
 
 ## Create your app project
 

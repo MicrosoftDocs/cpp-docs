@@ -27,5 +27,5 @@ Iteration statements cause statements (or compound statements) to be executed ze
   
  The statement part of an iteration statement cannot be a declaration. However, it can be a compound statement containing a declaration.  
   
-## See Also  
+## See also  
  [Overview of C++ Statements](../cpp/overview-of-cpp-statements.md)

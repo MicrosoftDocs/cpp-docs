@@ -8,8 +8,8 @@ f1_keywords: ["COLLECTION/Platform::Collections::Map::Map", "COLLECTION/Platform
 dev_langs: ["C++"]
 helpviewer_keywords: ["Map Class (C++/Cx)"]
 ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::Map Class
@@ -28,16 +28,16 @@ ref class Map sealed;
 
 ### Parameters
 
-*K*  
- The type of the key in the key-value pair.
+*K*<br/>
+The type of the key in the key-value pair.
 
-*V*  
+*V*<br/>
 The type of the value in the key-value pair.
 
-*C*  
+*C*<br/>
 A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map. By default, [std::less\<K>](../standard-library/less-struct.md).
 
-*__is_valid_winrt_type()*  
+*__is_valid_winrt_type()*
 A compiler generated function that validates the type of *K* and *V* and provides a friendly error message if the type cannot be stored in the Map.
 
 ### Remarks
@@ -54,7 +54,7 @@ Allowed types are:
 
 - public enum class
 
-Map is basically a wrapper for [std::map](../standard-library/map-class.md). It is a C++ concrete implementation of the [Windows::Foundation::Collections::IMap<Windows::Foundation::Collections::IKeyValuePair\<K,V>>](http://go.microsoft.com/fwlink/p/?LinkId=262408) and [IObservableMap](http://msdn.microsoft.com/library/windows/apps/br226050.aspx) types that are passed across public Windows Runtime interfaces. If you try to use a `Platform::Collections::Map` type in a public return value or parameter, compiler error C3986 is raised. You can fix the error by changing the type of the parameter or return value to [Windows::Foundation::Collections::IMap\<K,V>](http://go.microsoft.com/fwlink/p/?LinkId=262408).
+Map is basically a wrapper for [std::map](../standard-library/map-class.md). It is a C++ concrete implementation of the [Windows::Foundation::Collections::IMap<Windows::Foundation::Collections::IKeyValuePair\<K,V>>](/uwp/api/Windows.Foundation.Collections.IMap_K_V_) and [IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) types that are passed across public Windows Runtime interfaces. If you try to use a `Platform::Collections::Map` type in a public return value or parameter, compiler error C3986 is raised. You can fix the error by changing the type of the parameter or return value to [Windows::Foundation::Collections::IMap\<K,V>](/uwp/api/Windows.Foundation.Collections.IMap_K_V_).
 
 For more information, see [Collections](../cppcx/collections-c-cx.md).
 
@@ -127,7 +127,7 @@ A convenient way to hold the iterator returned by First() is to assign the retur
 
 ## <a name="getview"></a>  Map::GetView Method
 
-Returns a read-only view of the current Map; that is, a [Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md), which implements the [Windows::Foundation::Collections::IMapView\<K,V>](http://msdn.microsoft.com/library/windows/apps/br226037.aspx) interface.
+Returns a read-only view of the current Map; that is, a [Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md), which implements the [Windows::Foundation::Collections::IMapView\<K,V>]/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) interface.
 
 ### Syntax
 
@@ -151,7 +151,7 @@ bool HasKey(K key);
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key used to locate the Map element. The type of *key* is typename *K*.
 
 ### Return Value
@@ -170,10 +170,10 @@ virtual bool Insert(K key, V value);
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key portion of the key-value pair. The type of *key* is typename *K*.
 
-*value*  
+*value*<br/>
 The value portion of the key-value pair. The type of *value* is typename *V*.
 
 ### Return Value
@@ -192,7 +192,7 @@ V Lookup(K key);
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key used to locate an element in the Map. The type of *key* is typename *K*.
 
 ### Return Value
@@ -222,19 +222,19 @@ Map(
 
 ### Parameters
 
-*InIt*  
+*InIt*<br/>
 The typename of the current Map.
 
-*comp*  
+*comp*<br/>
 A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map.
 
-*m*  
+*m*<br/>
 A reference or [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) to a `map Class` that is used to initialize the current Map.
 
-*first*  
+*first*<br/>
 The input iterator of the first element in a range of elements used to initialize the current Map.
 
-*last*  
+*last*<br/>
 The input iterator of the first element after a range of elements used to initialize the current Map.
 
 ## <a name="mapchanged"></a>  Map::MapChanged Event
@@ -249,7 +249,7 @@ event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
 
 ### Property Value/Return Value
 
-A [MapChangedEventHandler\<K,V>](http://msdn.microsoft.com/library/windows/apps/br206644.aspx) that contains information about the object that raised the event, and the kind of change that occurred. See also [IMapChangedEventArgs\<K>](http://msdn.microsoft.com/library/windows/apps/br226034.aspx) and [CollectionChange Enumeration](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx).
+A [MapChangedEventHandler\<K,V>](/uwp/api/windows.foundation.collections.mapchangedeventhandler) that contains information about the object that raised the event, and the kind of change that occurred. See also [IMapChangedEventArgs\<K>](https://msdn.microsoft.com/library/windows/apps/br226034.aspx) and [CollectionChange Enumeration](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx).
 
 ## .NET Framework Equivalent
 
@@ -267,12 +267,12 @@ virtual void Remove(K key);
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key portion of the key-value pair. The type of *key* is typename *K*.
 
 ## <a name="size"></a>  Map::Size Method
 
-Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) elements in the Map.
+Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) elements in the Map.
 
 ### Syntax
 
@@ -286,5 +286,5 @@ The number of elements in the Map.
 
 ## See Also
 
-[Platform Namespace](platform-namespace-c-cx.md)  
-[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)  
+[Platform Namespace](platform-namespace-c-cx.md)<br/>
+[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

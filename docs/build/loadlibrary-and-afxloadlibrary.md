@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # LoadLibrary and AfxLoadLibrary
 
-Processes call [LoadLibrary](https://go.microsoft.com/fwlink/p/?LinkID=259187) (or [AfxLoadLibrary](../mfc/reference/application-information-and-management.md#afxloadlibrary)) to explicitly link to a DLL. If the function succeeds, it maps the specified DLL into the address space of the calling process and returns a handle to the DLL that can be used with other functions in explicit linking—for example, `GetProcAddress` and `FreeLibrary`.
+Processes call [LoadLibraryExA](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa) or [LoadLibraryExW](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexw)(or [AfxLoadLibrary](../mfc/reference/application-information-and-management.md#afxloadlibrary)) to explicitly link to a DLL. If the function succeeds, it maps the specified DLL into the address space of the calling process and returns a handle to the DLL that can be used with other functions in explicit linking—for example, `GetProcAddress` and `FreeLibrary`.
 
 `LoadLibrary` attempts to locate the DLL by using the same search sequence that is used for implicit linking. If the system cannot find the DLL or if the entry-point function returns FALSE, `LoadLibrary` returns NULL. If the call to `LoadLibrary` specifies a DLL module that is already mapped into the address space of the calling process, the function returns a handle of the DLL and increments the reference count of the module.
 
@@ -35,7 +35,7 @@ If Windows cannot load the DLL, the process can attempt to recover from the erro
 
 ## What do you want to know more about?
 
-- [Dynamic-Link Library Search Order](https://msdn.microsoft.com/library/windows/desktop/ms682586.aspx)
+- [Dynamic-Link Library Search Order](/windows/desktop/Dlls/dynamic-link-library-search-order)
 
 - [FreeLibrary and AfxFreeLibrary](../build/freelibrary-and-afxfreelibrary.md)
 
@@ -44,5 +44,3 @@ If Windows cannot load the DLL, the process can attempt to recover from the erro
 ## See also
 
 - [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
-- [LoadLibrary](https://go.microsoft.com/fwlink/p/?LinkID=259187)
-- [AfxLoadLibrary](../mfc/reference/application-information-and-management.md#afxloadlibrary)

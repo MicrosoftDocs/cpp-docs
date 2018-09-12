@@ -249,7 +249,7 @@ MFT_GRAYSCALE_SATURATION (type = double)
 
     Sets the saturation level. The nominal range is [0...1]. Values beyond 1.0f 
     result in supersaturated colors. Values below 0.0f create inverted colors.
-    
+ 
 MFT_GRAYSCALE_CHROMA_ROTATION (type = double)
 
     Rotates the chroma values of each pixel. The attribue value is the angle of
@@ -274,8 +274,8 @@ NOTES ON THE MFT IMPLEMENTATION
 
 6. Preferred input types:
  
-     (a) If the output type is set, that's the preferred type.
-     (b) Otherwise, the preferred types are partial types, constructed from the 
+   (a) If the output type is set, that's the preferred type.
+   (b) Otherwise, the preferred types are partial types, constructed from the 
          list of supported subtypes.
  
 7. Preferred output types: As above.
@@ -290,12 +290,12 @@ NOTES ON THE MFT IMPLEMENTATION
 
     This is a good approach for allocating resources that your MFT requires for
     streaming. 
-    
+ 
 9. The configuration attributes are applied in the BeginStreaming method. If the 
    client changes the attributes during streaming, the change is ignored until 
    streaming is stopped (either by changing the media types or by sending the 
    MFT_MESSAGE_NOTIFY_END_STREAMING message) and then restarted.
-   
+ 
 */
 
 
@@ -1241,7 +1241,7 @@ HRESULT CGrayscale::ProcessInput(
     // The client must set input and output types before calling ProcessInput.
     if (!m_pInputType || !m_pOutputType)
     {
-        hr = MF_E_NOTACCEPTING;   
+        hr = MF_E_NOTACCEPTING;
         goto done;
     }
 
@@ -1783,7 +1783,7 @@ HRESULT GetImageSize(DWORD fcc, UINT32 width, UINT32 height, DWORD* pcbImage)
             hr = E_INVALIDARG;
         }
         else
-        {   
+        {
             // 16 bpp
             *pcbImage = width * height * 2;
         }

@@ -7,10 +7,10 @@ In this topic, you'll see the basic process for adding or updating content in th
 In this topic, we'll cover:
 
 * [Process for contributing](#process-for-contributing)
-* [Guidance checklist](#guidance-checklist)
+* [DOs and DON'Ts](#dos-and-donts)
 * [Building the docs](#building-the-docs)
 * [Contributing to samples](#contributing-to-samples)
-* [Contributor License Agreement](#contributor-license-agreement)
+* [Contributor license agreement](#contributor-license-agreement)
 
 ## Process for contributing
 
@@ -19,7 +19,7 @@ The content inside the **docs** folder is organized into sections that are organ
 
 You can skip this first step for small changes.
 
-**Step 2:** Fork the `MicrosoftDocs/cpp-docs` repo.
+**Step 2:** Fork the `MicrosoftDocs/cpp-docs` repository.
 
 **Step 3:** Create a `branch` for your article.
 
@@ -30,17 +30,17 @@ If it's a new topic, you can use this [template file](./styleguide/template.md) 
 Navigate to the folder that corresponds to the TOC location determined for your article in step 1.
 That folder contains the Markdown files for all articles in that section. If necessary, create a new folder to place the files for your content.
 
-For images and other static resources, add them to the subfolder called **media**. If you are creating a new folder for content, add a media folder to the new folder.
+For images and other static resources, add them to the subfolder called `media`. If you are creating a new folder for content, add a media folder to the new folder.
 
 Be sure to follow the proper Markdown syntax. See the [style guide](./styleguide/template.md) for more information.
 
 ### Example structure
 
     docs
-      /standard-library
-          wstring-convert-class.md
-          /media
-              wstring-conversion.png
+        /standard-library
+            wstring-convert-class.md
+            /media
+                wstring-conversion.png
 
 **Step 5:** Submit a Pull Request (PR) from your branch to `MicrosoftDocs/cpp-docs/master`.
 
@@ -70,19 +70,17 @@ Below is a short list of guiding rules that you should keep in mind when you are
 
 ## Building the docs
 
-The documentation is written in [GitHub Flavored Markdown](https://help.github.com/categories/writing-on-github/) and built using [DocFX](http://dotnet.github.io/docfx/) and other internal publishing/building tools. It is hosted at [docs.microsoft.com](https://docs.microsoft.com/).
+The documentation is written in [GitHub Flavored Markdown](https://help.github.com/categories/writing-on-github/) and built using [DocFX](https://dotnet.github.io/docfx/) and other internal publishing/building tools. It is hosted at [docs.microsoft.com](https://docs.microsoft.com/).
 
 If you want to build the docs locally, you need to install [DocFX](https://dotnet.github.io/docfx/); latest versions are the best.
 
-There are several ways to use DocFX, and most of them are covered in the [DocFX getting started guide](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html).
-The following instructions use the [command-line based](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html#2-use-docfx-as-a-command-line-tool) version of the tool.
-If you are comfortable with other ways listed on the link above, feel free to use those.
+There are several ways to use DocFX, and most of them are covered in the [DocFX getting started guide](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html). The following instructions use the [command-line based](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html#2-use-docfx-as-a-command-line-tool) version of the tool. If you are comfortable with other ways listed on the link above, feel free to use those.
 
 **Note:** Currently DocFX requires the .NET Framework on Windows or Mono (for Linux or macOS). We hope to port it to .NET Core in the future.
 
 You can build and preview the resulting site locally using a built-in web server. Navigate to the `cpp-docs\docs` folder on your machine and type the following command:
 
-`docfx -t default --serve`
+> docfx -t default --serve
 
 This starts the local preview on [localhost:8080](http://localhost:8080). You can then view the changes by going to `http://localhost:8080/[path]`, such as `http://localhost:8080/cpp/visual-cpp-in-visual-studio.html`.
 
@@ -90,10 +88,10 @@ This starts the local preview on [localhost:8080](http://localhost:8080). You ca
 
 ## Contributing to samples
 
-For now, include required sample code as inline code blocks in your article. The repo has a codesnippets folder, but this is not ready for public contributions.
+For now, include required sample code as inline code blocks in your article. The repository has a `codesnippets` folder, but this is not ready for public contributions.
 
 ## Contributor license agreement
 
-You must sign the [Contribution License Agreement (CLA)](LICENSE) before your PR is merged. This is a one-time requirement for projects in docs.microsoft.com. You can read more about [Contribution License Agreements (CLA)](http://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia.
+You must sign the [Contribution License Agreement (CLA)](LICENSE) before your PR is merged. This is a one-time requirement for projects in docs.microsoft.com. You can read more about [Contribution License Agreements (CLA)](https://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia.
 
-You don't have to sign the agreement up-front. You can clone, fork, and submit your PR as usual. When your PR is created, it is classified by a CLA bot. If the change is trivial (for example, you fixed a typo), then the PR is labeled with cla-not-required. Otherwise, it's classified as cla-required. Once you signed the CLA, the current and all future pull requests are labeled as cla-signed.
+You don't have to sign the agreement up-front. You can clone, fork, and submit your PR as usual. When your PR is created, it is classified by a CLA bot. If the change is trivial (for example, you fixed a typo), then the PR is labeled with CLA-not-required. Otherwise, it's classified as CLA-required. Once you signed the CLA, the current and all future pull requests are labeled as CLA-signed.

@@ -29,7 +29,7 @@ This topic applies to the MFC ODBC classes.
  You use these SQL functions to obtain statistical information about the records in a data source rather than to extract records from the data source. The recordset that is created usually consists of a single record (if all columns are aggregates) that contains a value. (There might be more than one record if you used a **GROUP BY** clause.) This value is the result of the calculation or extraction performed by the SQL function.  
   
 > [!TIP]
->  To add a SQL **GROUP BY** clause (and possibly a **HAVING** clause) to your SQL statement, append it to the end of **m_strFilter**. For example:  
+>  To add a SQL **GROUP BY** clause (and possibly a **HAVING** clause) to your SQL statement, append it to the end of `m_strFilter`. For example:  
   
 ```  
 m_strFilter = "sales > 10 GROUP BY SALESPERSON_ID";  

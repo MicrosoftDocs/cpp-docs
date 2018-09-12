@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLock::SRWLock_ Data Member
-Contains the underlying lock variable for the current SRWLock object.  
-  
-## Syntax  
-  
-```  
-SRWLOCK SRWLock_;  
-```  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [SRWLock Class](../windows/srwlock-class.md)
+
+Contains the underlying lock variable for the current **SRWLock** object.
+
+## Syntax
+
+```cpp
+SRWLOCK SRWLock_;
+```
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[SRWLock Class](../windows/srwlock-class.md)

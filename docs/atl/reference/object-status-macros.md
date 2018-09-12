@@ -12,31 +12,38 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Object Status Macros
-This macro sets flags belonging to ActiveX controls.  
-  
-|||  
-|-|-|  
+
+This macro sets flags belonging to ActiveX controls.
+
+|||
+|-|-|
 |[DECLARE_OLEMISC_STATUS](#declare_olemisc_status)|Used in ATL ActiveX controls to set the OLEMISC flags.|  
 
-## Requirements  
- **Header:** atlcom.h  
+## Requirements
 
-##  <a name="declare_olemisc_status"></a>  DECLARE_OLEMISC_STATUS  
- Used in ATL ActiveX controls to set the OLEMISC flags.  
-  
+**Header:** atlcom.h  
+
+##  <a name="declare_olemisc_status"></a>  DECLARE_OLEMISC_STATUS
+
+Used in ATL ActiveX controls to set the OLEMISC flags.
+
 ```
 DECLARE_OLEMISC_STATUS( miscstatus )
-```  
-  
-### Parameters  
- *miscstatus*  
- All applicable OLEMISC flags.  
-  
-### Remarks  
- This macro is used to set the OLEMISC flags for an ActiveX control. Refer to [IOleObject::GetMiscStatus](http://msdn.microsoft.com/library/windows/desktop/ms678521) for more details.  
-  
-### Example  
- [!code-cpp[NVC_ATL_Windowing#124](../../atl/codesnippet/cpp/object-status-macros_1.h)]  
-  
-## See Also  
- [Macros](../../atl/reference/atl-macros.md)
+```
+
+### Parameters
+
+*miscstatus*  
+All applicable OLEMISC flags.
+
+### Remarks
+
+This macro is used to set the OLEMISC flags for an ActiveX control. Refer to [IOleObject::GetMiscStatus](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-getmiscstatus) for more details.
+
+### Example
+
+[!code-cpp[NVC_ATL_Windowing#124](../../atl/codesnippet/cpp/object-status-macros_1.h)]
+
+## See Also
+
+[Macros](../../atl/reference/atl-macros.md)

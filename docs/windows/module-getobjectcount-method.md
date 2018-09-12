@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::GetObjectCount Method
-Retrieves the number of objects managed by this module.  
-  
-## Syntax  
-  
-```  
-virtual long GetObjectCount() const;  
-```  
-  
-## Return Value  
- The current number of objects managed by this module.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL
- 
- ## See Also
- [Module Class](../windows/module-class.md)
+
+Retrieves the number of objects managed by this module.
+
+## Syntax
+
+```cpp
+virtual long GetObjectCount() const;
+```
+
+## Return Value
+
+The current number of objects managed by this module.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Module Class](../windows/module-class.md)

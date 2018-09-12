@@ -1,7 +1,7 @@
 ---
 title: "Identifiers (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
 dev_langs: ["C++"]
@@ -67,7 +67,7 @@ N O P Q R S T U V W X Y Z
   
  The dollar sign `$` is a valid identifier character in Visual C++. Visual C++ also allows you to use the actual characters represented by the allowed ranges of universal character names in identifiers. To use these characters, you must save the file by using a file encoding codepage that includes them.  This example shows how both extended characters and universal character names can be used interchangeably in your code.  
   
-```  
+```cpp  
 // extended_identifier.cpp  
 // In Visual Studio, use File, Advanced Save Options to set  
 // the file encoding to Unicode codepage 1200  
@@ -90,7 +90,7 @@ int main() {
   
  Identifiers cannot be exactly the same spelling and case as keywords. Identifiers that contain keywords are legal. For example, `Pint` is a legal identifier, even though it contains **int**, which is a keyword.  
   
- Use of two sequential underscore characters ( **__** ) at the beginning of an identifier, or a single leading underscore followed by a capital letter, is reserved for C++ implementations in all scopes. You should avoid using one leading underscore followed by a lowercase letter for names with file scope because of possible conflicts with current or future reserved identifiers.  
+ Use of two sequential underscore characters ( **__** ) in an identifier, or a single leading underscore followed by a capital letter, is reserved for C++ implementations in all scopes. You should avoid using one leading underscore followed by a lowercase letter for names with file scope because of possible conflicts with current or future reserved identifiers.  
   
-## See Also  
+## See also  
  [Lexical Conventions](../cpp/lexical-conventions.md)
