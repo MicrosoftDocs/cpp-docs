@@ -13,36 +13,40 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HANDLETraits Structure
-Defines common characteristics of a handle.  
-  
-## Syntax  
-  
-```  
-struct HANDLETraits;  
-```  
-  
-## Members  
-  
-### Public Typedefs  
-  
-|Name|Description|  
-|----------|-----------------|  
-|`Type`|A synonym for HANDLE.|  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[HANDLETraits::Close Method](../windows/handletraits-close-method.md)|Closes the specified handle.|  
-|[HANDLETraits::GetInvalidValue Method](../windows/handletraits-getinvalidvalue-method.md)|Represents an invalid handle.|  
-  
-## Inheritance Hierarchy  
- `HANDLETraits`  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## See Also  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+
+Defines common characteristics of a handle.
+
+## Syntax
+
+```cpp
+struct HANDLETraits;
+```
+
+## Members
+
+### Public Typedefs
+
+|Name|Description|
+|----------|-----------------|
+|`Type`|A synonym for HANDLE.|
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[HANDLETraits::Close Method](../windows/handletraits-close-method.md)|Closes the specified handle.|
+|[HANDLETraits::GetInvalidValue Method](../windows/handletraits-getinvalidvalue-method.md)|Represents an invalid handle.|
+
+## Inheritance Hierarchy
+
+`HANDLETraits`
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## See Also
+
+[Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

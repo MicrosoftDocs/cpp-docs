@@ -5,8 +5,8 @@ ms.date: "01/18/2018"
 ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: 5b3b4406-e20e-4c40-9d1d-5dcd860beeac
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # JavaScript integration (C++/CX)
@@ -15,4 +15,4 @@ For more information, see [Creating Windows Runtime Components in C++](/windows/
 
 ## See also
 
-[Interoperating with Other Languages](../cppcx/interoperating-with-other-languages-c-cx.md)  
+[Interoperating with Other Languages](../cppcx/interoperating-with-other-languages-c-cx.md)

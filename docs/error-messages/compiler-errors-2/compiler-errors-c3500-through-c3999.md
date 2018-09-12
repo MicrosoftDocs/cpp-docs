@@ -134,7 +134,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler Error C3611](compiler-error-c3611.md)|'*identifier*': a sealed function cannot have a pure-specifier|
 |[Compiler Error C3612](compiler-error-c3612.md)|'*identifier*': a sealed class cannot have any pure virtual methods|
 |Compiler Error C3613|missing return type after '->' ('int' assumed)|
-|Compiler Error C3614|Differing values for pack size within the same class; previous was was '*value*', new value is '*value*'|
+|Compiler Error C3614|Differing values for pack size within the same class; previous was '*value*', new value is '*value*'|
 |[Compiler Error C3615](compiler-error-c3615.md)|constexpr function '*function*' cannot result in a constant expression|
 |Compiler Error C3616|Obsolete.|
 |Compiler Error C3617|Obsolete.|
@@ -244,7 +244,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler Error C3721](compiler-error-c3721.md)|'*signature*': incompatible signature for event|
 |[Compiler Error C3722](compiler-error-c3722.md)|a generic event is not allowed|
 |[Compiler Error C3723](compiler-error-c3723.md)|'*function*': could not resolve event|
-|[Compiler Error C3724](compiler-error-c3724.md)|must #include <windows.h> to use multi-threading with events|
+|[Compiler Error C3724](compiler-error-c3724.md)|must #include \<windows.h> to use multi-threading with events|
 |Compiler Error C3725|Obsolete.|
 |Compiler Error C3726|Obsolete.|
 |[Compiler Error C3727](compiler-error-c3727.md)|'*event*': a managed event must be a member function or a data member that is a pointer to a delegate|

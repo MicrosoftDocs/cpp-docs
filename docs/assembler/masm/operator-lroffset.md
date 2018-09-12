@@ -1,7 +1,7 @@
 ---
 title: "operator LROFFSET | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["LROFFSET", "operator LROFFSET"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator LROFFSET
-Returns the offset of *expression*. Same as **OFFSET**, but it generates a loader resolved offset, which allows Windows to relocate code segments.  
-  
-## Syntax  
-  
-```  
-  
-LROFFSET expression  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+Returns the offset of *expression*. Same as **OFFSET**, but it generates a loader resolved offset, which allows Windows to relocate code segments.
+
+## Syntax
+
+> LROFFSET expression
+
+## See also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

@@ -148,7 +148,7 @@ error_code(_Enum _Errcode,
 
 The first constructor stores a zero error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category).
 
-The second constructor stores *val* as the error code value and a pointer to [error_category](http://msdn.microsoft.com/en-us/6fe57a15-63a1-4e79-8af4-6738e43e19c8).
+The second constructor stores *val* as the error code value and a pointer to [error_category](../standard-library/error-category-class.md).
 
 The third constructor stores `(value_type)_Errcode` as the error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category).
 
@@ -214,7 +214,7 @@ The member operator returns `!(*this == right)`.
 
 ## <a name="op_lt"></a>  error_code::operator&lt;
 
-Tests if the [error_code](http://msdn.microsoft.com/en-us/09c6ef90-b6f8-430a-b584-e168716c7e31) object is less than the `error_code` object passed in for comparison.
+Tests if the `error_code` object is less than the `error_code` object passed in for comparison.
 
 ```cpp
 bool operator<(const error_code& right) const;
@@ -236,7 +236,7 @@ The member operator returns `category() < right.category() || category() == righ
 
 ## <a name="op_eq"></a>  error_code::operator=
 
-Assigns a new enumeration value to the [error_code](http://msdn.microsoft.com/en-us/09c6ef90-b6f8-430a-b584-e168716c7e31) object.
+Assigns a new enumeration value to the `error_code` object.
 
 ```cpp
 template <class _Enum>

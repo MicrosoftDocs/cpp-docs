@@ -82,7 +82,7 @@ The OLE DB Consumer Templates contain the following classes. The reference mater
  Used to manipulate, set, and retrieve rowset data.  
   
  [CStreamRowset](../../data/oledb/cstreamrowset-class.md)  
- Returns an `ISequentialStream` object rather than a rowset; you then use the **Read** method to retrieve data in XML format. (SQL Server 2000 does the formatting; note that this feature works with SQL Server 2000 only.)  
+ Returns an `ISequentialStream` object rather than a rowset; you then use the `Read` method to retrieve data in XML format. (SQL Server 2000 does the formatting; note that this feature works with SQL Server 2000 only.)  
   
  [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md)  
  Provides a dummy implementation for `IRowsetNotify`, with empty functions for the `IRowsetNotify` methods `OnFieldChange`, `OnRowChange`, and `OnRowsetChange`.  

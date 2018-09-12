@@ -24,16 +24,16 @@ class const_mem_fun_t : public unary_function <Type *, Result>
 {
     explicit const_mem_fun_t(Result (Type::* Pm)() const);
     Result operator()(const Type* Pleft) const;
- };
+};
 ```
 
 ### Parameters
 
-*Pm*
- A pointer to the member function of class `Type` to be converted to a function object.
+*Pm*<br/>
+A pointer to the member function of class `Type` to be converted to a function object.
 
-*Pleft*
- The object that the *Pm* member function is called on.
+*Pleft*<br/>
+The object that the *Pm* member function is called on.
 
 ## Return Value
 

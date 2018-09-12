@@ -1,7 +1,7 @@
 ---
 title: "Overview of the Concurrency Runtime | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "07/20/2018"
 ms.technology: ["cpp-concrt"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -11,22 +11,35 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
+
+
 # Overview of the Concurrency Runtime
 This document provides an overview of the Concurrency Runtime. It describes the benefits of the Concurrency Runtime, when to use it, and how its components interact with each other and with the operating system and applications.  
-  
-> [!IMPORTANT]
->  In Visual Studio 2015 and later, the Concurrency Runtime Task Scheduler is no longer the scheduler for the task class and related types in ppltasks.h. Those types now use the Windows ThreadPool for better performance and interoperability with Windows synchronization primitives. Parallel algorithms such as parallel_for continue to use the Concurrency Runtime Task Scheduler.  
   
 ##  <a name="top"></a> Sections  
  This document contains the following sections:  
   
--   [Why a Runtime for Concurrency is Important](#runtime)  
+- [Concurrency Runtime implementation history](#dlls)
+
+- [Why a Runtime for Concurrency is Important](#runtime)  
   
--   [Architecture](#architecture)  
+- [Architecture](#architecture)  
   
--   [C++ Lambda Expressions](#lambda)  
+- [C++ Lambda Expressions](#lambda)  
   
--   [Requirements](#requirements)  
+- [Requirements](#requirements)  
+
+## <a name="dlls"></a> Concurrency Runtime implementation history
+
+In Visual Studio 2010 through 2013, the Concurrency Runtime was incorporated within msvcr100.dll through msvcr120.dll.  When the UCRT refactoring occurred in Visual Studio 2015, that DLL was refactored into three parts:
+
+- ucrtbase.dll – C API, shipped in Windows 10 and serviced downlevel via Windows Update- 
+
+- vcruntime140.dll – Compiler support functions and EH runtime, shipped via Visual Studio
+
+- concrt140.dll – Concurrency Runtime, shipped via Visual Studio. Required for parallel containers and algorithms such as `concurrency::parallel_for`. Also, the STL requires this DLL on Windows XP to power synchronization primitives, because Windows XP does not have condition variables. 
+
+In Visual Studio 2015 and later, the Concurrency Runtime Task Scheduler is no longer the scheduler for the task class and related types in ppltasks.h. Those types now use the Windows ThreadPool for better performance and interoperability with Windows synchronization primitives.  
   
 ##  <a name="runtime"></a> Why a Runtime for Concurrency is Important  
  A runtime for concurrency provides uniformity and predictability to applications and application components that run simultaneously. Two examples of the benefits of the Concurrency Runtime are *cooperative task scheduling* and *cooperative blocking*.  

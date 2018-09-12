@@ -13,21 +13,24 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::Terminate Method
-Causes all factories instantiated by the module to shut down.  
-  
-## Syntax  
-  
-```  
-void Terminate();  
-```  
-  
-## Remarks  
- Releases the factories in the cache.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL
- 
- ## See Also
- [Module Class](../windows/module-class.md)
+
+Causes all factories instantiated by the module to shut down.
+
+## Syntax
+
+```cpp
+void Terminate();
+```
+
+## Remarks
+
+Releases the factories in the cache.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+[Module Class](../windows/module-class.md)

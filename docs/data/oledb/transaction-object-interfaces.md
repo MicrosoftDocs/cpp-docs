@@ -18,9 +18,9 @@ The transaction object defines an atomic unit of work on a data source and deter
   
 |Interface|Required?|Implemented by OLE DB templates?|  
 |---------------|---------------|--------------------------------------|  
-|[IConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms683857)|Mandatory|No|  
-|[ITransaction](https://msdn.microsoft.com/en-us/library/ms723053.aspx)|Mandatory|No|  
-|[ISupportErrorInfo](https://msdn.microsoft.com/en-us/library/ms715816.aspx)|Optional|No|  
+|[IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)|Mandatory|No|  
+|[ITransaction](/previous-versions/windows/desktop/ms723053\(v=vs.85\))|Mandatory|No|  
+|[ISupportErrorInfo](/previous-versions/windows/desktop/ms715816\(v=vs.85\))|Optional|No|  
   
 ## See Also  
  [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

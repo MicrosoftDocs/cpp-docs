@@ -40,7 +40,7 @@ __int64 __mulh( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__mulh`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__mulh`|x64|  
   
  **Header file** \<intrin.h>  
   

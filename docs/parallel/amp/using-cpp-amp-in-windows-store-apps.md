@@ -14,9 +14,10 @@ ms.workload: ["cplusplus"]
 You can use C++ AMP (C++ Accelerated Massive Parallelism) in your Universal Windows Platform (UWP) app to perform calculations on the GPU (Graphics Processing Unit) or other computational accelerators. However, C++ AMP doesn't provide APIs for working directly with Windows Runtime types, and the Windows Runtime doesn't provide a wrapper for C++ AMP. When you use Windows Runtime types in your code—including those that you've created yourself—you must convert them to types that are compatible with C++ AMP.  
   
 ## Performance considerations  
- If you're using [!INCLUDE[cppwrt](../../build/reference/includes/cppwrt_md.md)] ([!INCLUDE[cppwrt_short](../../build/reference/includes/cppwrt_short_md.md)]) to create your Universal Windows Platform (UWP) app, we recommend that you use plain-old-data (POD) types together with contiguous storage—for example, `std::vector` or C-style arrays—for data that will be used with C++ AMP. This can help you achieve higher performance than by using non-POD types or Windows RT containers because no marshaling has to occur.  
+ 
+If you're using Visual C++ component extensions C++/CX to create your Universal Windows Platform (UWP) app, we recommend that you use plain-old-data (POD) types together with contiguous storage—for example, `std::vector` or C-style arrays—for data that will be used with C++ AMP. This can help you achieve higher performance than by using non-POD types or Windows RT containers because no marshaling has to occur.  
   
- In a C++ AMP kernel, to access data that’s stored in this way, just wrap the `std::vector` or array storage in a `concurrency::array_view` and then use the array view in a `concurrency::parallel_for_each` loop:  
+In a C++ AMP kernel, to access data that’s stored in this way, just wrap the `std::vector` or array storage in a `concurrency::array_view` and then use the array view in a `concurrency::parallel_for_each` loop:  
   
 ```cpp  
 // simple vector addition example  
@@ -37,22 +38,23 @@ concurrency::parallel_for_each(av0.extent, [=](concurrency::index<1> idx) restri
 ```  
   
 ## Marshaling Windows Runtime types  
- When you work with Windows Runtime APIs, you might want to use C++ AMP on data that's stored in a Windows Runtime container such as a `Platform::Array<T>^` or in complex data types such as classes or structs that are declared by using the `ref` keyword or the `value` keyword. In these situations, you have to do some extra work to make the data available to C++ AMP.  
+ 
+When you work with Windows Runtime APIs, you might want to use C++ AMP on data that's stored in a Windows Runtime container such as a `Platform::Array<T>^` or in complex data types such as classes or structs that are declared by using the **ref** keyword or the **value** keyword. In these situations, you have to do some extra work to make the data available to C++ AMP.  
   
 ### Platform::Array\<T>^, where T is a POD type  
- When you encounter a `Platform::Array<T>^` and T is a POD type, you can access its underlying storage just by using the `get` member function:  
+When you encounter a `Platform::Array<T>^` and T is a POD type, you can access its underlying storage just by using the `get` member function:  
   
 ```cpp  
 Platform::Array<float>^ arr; // Assume that this was returned by a Windows Runtime API  
 concurrency::array_view<float, 1> av(arr->Length, &arr->get(0));
 ```  
   
- If T is not a POD type, use the technique that's described in the following section to use the data with C++ AMP.  
+If T is not a POD type, use the technique that's described in the following section to use the data with C++ AMP.  
   
 ### Windows Runtime types: ref classes and value classes  
- C++ AMP doesn't support complex data types. This includes non-POD types and any types that are declared by using the `ref` keyword or the `value` keyword. If an unsupported type is used in a `restrict(amp)` context, a compile-time error is generated.  
+C++ AMP doesn't support complex data types. This includes non-POD types and any types that are declared by using the **ref** keyword or the **value** keyword. If an unsupported type is used in a `restrict(amp)` context, a compile-time error is generated.  
   
- When you encounter an unsupported type, you can copy interesting parts of its data into a `concurrency::array` object. In addition to making the data available for C++ AMP to consume, this manual-copy approach can also improve performance by maximizing data locality, and by ensuring that data that won't be used isn't copied to the accelerator. You can improve performance further by using a *staging array*, which is a special form of `concurrency::array` that provides a hint to the AMP runtime that the array should be optimized for frequent transfer between it and other arrays on the specified accelerator.  
+When you encounter an unsupported type, you can copy interesting parts of its data into a `concurrency::array` object. In addition to making the data available for C++ AMP to consume, this manual-copy approach can also improve performance by maximizing data locality, and by ensuring that data that won't be used isn't copied to the accelerator. You can improve performance further by using a *staging array*, which is a special form of `concurrency::array` that provides a hint to the AMP runtime that the array should be optimized for frequent transfer between it and other arrays on the specified accelerator.  
   
 ```cpp  
 // pixel_color.h  
@@ -110,6 +112,6 @@ concurrency::parallel_for_each(av_red.extent, [=](index<1> idx) restrict(amp)
 ```  
   
 ## See Also  
- [Create your first UWP app using C++](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)   
- [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
-
+ 
+[Create your first UWP app using C++](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)   
+[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

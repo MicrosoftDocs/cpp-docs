@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # complex&lt;float&gt;
 
-Describes an object that stores an ordered pair of objects both of type **float***,* the first representing the real part of a complex number and the second representing the imaginary part.
+Describes an object that stores an ordered pair of objects both of type **float**, the first representing the real part of a complex number and the second representing the imaginary part.
 
 ## Syntax
 
@@ -40,14 +40,14 @@ constexpr complex(
 
 ### Parameters
 
-*_RealVal*
- The value of type **float** for the real part of the complex number being constructed.
+*_RealVal*<br/>
+The value of type **float** for the real part of the complex number being constructed.
 
-*_ImagVal*
- The value of type **float** for the imaginary part of the complex number being constructed.
+*_ImagVal*<br/>
+The value of type **float** for the imaginary part of the complex number being constructed.
 
-*complexNum*
- The complex number of type **double** or of type **long double** whose real and imaginary parts are used to initialize a complex number of type **float** being constructed.
+*complexNum*<br/>
+The complex number of type **double** or of type **long double** whose real and imaginary parts are used to initialize a complex number of type **float** being constructed.
 
 ## Return Value
 
@@ -101,7 +101,7 @@ int main( )
         << argc3 << " radians, which is " << argc3 * 180 / pi
         << " degrees." << endl;
 }
-\* Output:
+/* Output:
 Specifying initial real & imaginary parts,
  as type float gives c1 = (4,5)
 Implicit conversion from type double to type float,
@@ -111,7 +111,7 @@ Explicit conversion from type long double to type float,
 The modulus of c3 is recovered from c3 using: abs ( c3 ) = 5
 Argument of c3 is recovered from c3 using:
  arg ( c3 ) = 0.927295 radians, which is 53.1301 degrees.
-*\
+*/
 ```
 
 ## Requirements

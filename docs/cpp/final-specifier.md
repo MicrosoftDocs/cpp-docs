@@ -18,7 +18,6 @@ You can use the **final** keyword to designate virtual functions that cannot be 
 ## Syntax  
   
 ```  
-  
 function-declaration final;  
 class class-name final base-classes  
 ```  
@@ -59,6 +58,6 @@ class DerivedClass: public BaseClass // compiler error: BaseClass is
 };  
 ```  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)   
  [override Specifier](../cpp/override-specifier.md)

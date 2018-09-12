@@ -36,7 +36,7 @@ __int64 _mm_cvttss_si64x( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`_mm_cvttss_si64x`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_mm_cvttss_si64x`|x64|  
   
  **Header file** \<intrin.h>  
   

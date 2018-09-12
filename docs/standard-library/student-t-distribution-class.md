@@ -48,8 +48,8 @@ public:
 
 ### Parameters
 
-*RealType*
- The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
+*RealType*<br/>
+The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
@@ -64,7 +64,7 @@ The property function `n()` returns the value for the stored distribution parame
 
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).
 
-For detailed information about the Student's *t*-distribution, see the Wolfram MathWorld article [Students t-Distribution](http://go.microsoft.com/fwlink/p/?linkid=401094).
+For detailed information about the Student's *t*-distribution, see the Wolfram MathWorld article [Students t-Distribution](http://mathworld.wolfram.com/Studentst-Distribution.html).
 
 ## Example
 
@@ -159,10 +159,10 @@ explicit student_t_distribution(const param_type& parm);
 ### Parameters
 
 *n*  
- The `n` distribution parameter.
+The `n` distribution parameter.
 
-*parm*
- The parameter package used to construct the distribution.
+*parm*<br/>
+The parameter package used to construct the distribution.
 
 ### Remarks
 

@@ -25,8 +25,8 @@ class back_insert_iterator;
 
 ### Parameters
 
-*Container*
- The type of container into the back of which elements are to be inserted by a `back_insert_iterator`.
+*Container*<br/>
+The type of container into the back of which elements are to be inserted by a `back_insert_iterator`.
 
 ## Remarks
 
@@ -49,9 +49,9 @@ The container must satisfy the requirements for a back insertion sequence where 
 
 |Operator|Description|
 |-|-|
-|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x` for a back insertion.|
+|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression \* `i` = `x` for a back insertion.|
 |[operator++](#op_add_add)|Increments the `back_insert_iterator` to the next location into which a value may be stored.|
-|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression * `i` = `x` for a back insertion.|
+|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression \* `i` = `x` for a back insertion.|
 
 ## Requirements
 
@@ -69,8 +69,8 @@ explicit back_insert_iterator(Container& _Cont);
 
 ### Parameters
 
-*_Cont*
- The container that the `back_insert_iterator` is to insert an element into.
+*_Cont*<br/>
+The container that the `back_insert_iterator` is to insert an element into.
 
 ### Return Value
 
@@ -108,9 +108,9 @@ int main( )
 
    // Alternatively, insertions can be done with template function
    back_insert_iterator<vector<int> > backiter ( vec );
- *backiter = 600;
+*backiter = 600;
    backiter++;
- *backiter = 700;
+*backiter = 700;
 
    cout << "After the insertions, the vector vec is: ( ";
    for ( vIter = vec.begin ( ) ; vIter != vec.end ( ); vIter++)
@@ -178,7 +178,7 @@ The original vector vec is: ( 1 2 3 ).
 After the insertion, the vector is: ( 1 2 3 40 ).
 ```
 
-## <a name="op_star"></a>  back_insert_iterator::operator*
+## <a name="op_star"></a>  back_insert_iterator::operator\*
 
 Dereferencing operator used to implement the output iterator expression \* *i* = *x*.
 
@@ -221,9 +221,9 @@ int main( )
    cout << ")." << endl;
 
    back_insert_iterator<vector<int> > backiter ( vec );
- *backiter = 10;
+*backiter = 10;
    backiter++;      // Increment to the next element
- *backiter = 20;
+*backiter = 20;
    backiter++;
 
    cout << "After the insertions, the vector vec becomes: ( ";
@@ -282,9 +282,9 @@ int main( )
    cout << ")." << endl;
 
    back_insert_iterator<vector<int> > backiter ( vec );
- *backiter = 30;
+*backiter = 30;
    backiter++;      // Increment to the next element
- *backiter = 40;
+*backiter = 40;
    backiter++;
 
    cout << "After the insertions, the vector vec becomes: ( ";
@@ -310,8 +310,8 @@ back_insert_iterator<Container>& operator=(typename Container::value_type&& val)
 
 ### Parameters
 
-*val*
- The value to be inserted into the container.
+*val*<br/>
+The value to be inserted into the container.
 
 ### Return Value
 
@@ -354,9 +354,9 @@ int main( )
    cout << ")." << endl;
 
    back_insert_iterator<vector<int> > backiter ( vec );
- *backiter = 10;
+*backiter = 10;
    backiter++;      // Increment to the next element
- *backiter = 20;
+*backiter = 20;
    backiter++;
 
    cout << "After the insertions, the vector vec becomes: ( ";

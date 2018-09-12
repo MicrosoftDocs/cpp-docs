@@ -1,7 +1,7 @@
 ---
 title: "@SubStr | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["@SubStr"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @SubStr
-A macro function that returns a substring starting at *position*.  
-  
-## Syntax  
-  
-```  
-  
-@SubStr( string, position [[, length]] )  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+A macro function that returns a substring starting at *position*.
+
+## Syntax
+
+> @SubStr( string, position [[, length]] )
+
+## See also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

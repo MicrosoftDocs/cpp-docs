@@ -12,13 +12,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Date and Time: Database Support
-As of version 4.0, MFC database programming uses the [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) and [COleDateTimeSpan](../atl-mfc-shared/reference/coledatetimespan-class.md) classes to represent date and time data. These classes, also used in Automation, are derived from class [COleVariant](../mfc/reference/colevariant-class.md). They supply better support for managing date and time data than do [CTime](../atl-mfc-shared/reference/ctime-class.md) and [CTimeSpan](../atl-mfc-shared/reference/ctimespan-class.md).  
-  
-## What do you want to know more about  
-  
--   [Automation support of date and time programming](../atl-mfc-shared/date-and-time-automation-support.md)  
-  
-## See Also  
- [Date and Time](../atl-mfc-shared/date-and-time.md)
 
+As of version 4.0, MFC database programming uses the [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) and [COleDateTimeSpan](../atl-mfc-shared/reference/coledatetimespan-class.md) classes to represent date and time data. These classes, also used in Automation, are derived from class [COleVariant](../mfc/reference/colevariant-class.md). They supply better support for managing date and time data than do [CTime](../atl-mfc-shared/reference/ctime-class.md) and [CTimeSpan](../atl-mfc-shared/reference/ctimespan-class.md).
+
+## What do you want to know more about
+
+- [Automation support of date and time programming](../atl-mfc-shared/date-and-time-automation-support.md)
+
+## See Also
+
+[Date and Time](../atl-mfc-shared/date-and-time.md)
 

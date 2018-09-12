@@ -11,21 +11,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::Reset
-Releases all references for the pointer to the interface that is associated with this ComPtr.  
-  
-## Syntax  
-  
-```  
-unsigned long Reset();  
-```  
-  
-## Return Value  
- The number of references released, if any.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ComPtr Class](../windows/comptr-class.md)
+
+Releases all references for the pointer to the interface that is associated with this **ComPtr**.
+
+## Syntax
+
+```cpp
+unsigned long Reset();
+```
+
+## Return Value
+
+The number of references released, if any.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ComPtr Class](../windows/comptr-class.md)

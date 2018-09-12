@@ -5,8 +5,8 @@ ms.date: "01/18/2018"
 ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: 6cbdc1f1-e4d7-4707-a670-86365146432f
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Exceptions (C++/CX)
@@ -59,7 +59,7 @@ The next example shows how to catch the exception.
 
 [!code-cpp[cx_exceptions#02](codesnippet/CPP/exceptiontest/class1.cpp#02)]
 
-To catch exceptions that are thrown during an asynchronous operation, use the task class and add an an error-handling continuation. The error-handling continuation marshals exceptions that are thrown on other threads back to the calling thread so that you can handle all potential exceptions at just one point in your code. For more information, see [Asynchronous Programming in C++](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps).
+To catch exceptions that are thrown during an asynchronous operation, use the task class and add an error-handling continuation. The error-handling continuation marshals exceptions that are thrown on other threads back to the calling thread so that you can handle all potential exceptions at just one point in your code. For more information, see [Asynchronous Programming in C++](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps).
 
 ## UnhandledErrorDetected event
 
@@ -84,7 +84,7 @@ void App::OnUnhandledException(Platform::Object^ sender, Windows::ApplicationMod
 
     if (!err->Handled) //Propagate has not been called on it yet.
 {
-     try
+    try
     {
         err->Propagate();
     }
@@ -94,7 +94,6 @@ void App::OnUnhandledException(Platform::Object^ sender, Windows::ApplicationMod
         // TODO: Log error and either take action to recover
         // or else re-throw exception to continue fail-fast
     }
-
 }
 ```
 
@@ -104,5 +103,5 @@ C++/CX does not use the `finally` clause.
 
 ## See also
 
-[Visual C++ Language Reference](visual-c-language-reference-c-cx.md)  
-[Namespaces Reference](namespaces-reference-c-cx.md)  
+[Visual C++ Language Reference](visual-c-language-reference-c-cx.md)<br/>
+[Namespaces Reference](namespaces-reference-c-cx.md)

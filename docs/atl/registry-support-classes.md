@@ -13,14 +13,17 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Registry Support Classes
-The following class provides registry support:  
-  
--   [CRegKey](../atl/reference/cregkey-class.md) Contains methods for manipulating values in the system registry.  
-  
-## Related Articles  
- [The ATL Registry Component (Registrar)](../atl/atl-registry-component-registrar.md)  
-  
-## See Also  
- [Class Overview](../atl/atl-class-overview.md)   
- [Registry Macros](../atl/reference/registry-macros.md)
+
+The following class provides registry support:
+
+- [CRegKey](../atl/reference/cregkey-class.md) Contains methods for manipulating values in the system registry.
+
+## Related Articles
+
+[The ATL Registry Component (Registrar)](../atl/atl-registry-component-registrar.md)
+
+## See Also
+
+[Class Overview](../atl/atl-class-overview.md)   
+[Registry Macros](../atl/reference/registry-macros.md)
 

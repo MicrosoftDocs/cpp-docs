@@ -537,7 +537,7 @@ DWORD_PTR GetItemData(int nIndex) const;
  [!code-cpp[NVC_MFC_CListBox#15](../../mfc/codesnippet/cpp/clistbox-class_15.cpp)]  
   
 ##  <a name="getitemdataptr"></a>  CListBox::GetItemDataPtr  
- Retrieves the application-supplied 32-bit value associated with the specified list-box item as a pointer ( **void\***).  
+ Retrieves the application-supplied 32-bit value associated with the specified list-box item as a pointer (**void** <strong>\*</strong>).  
   
 ```  
 void* GetItemDataPtr(int nIndex) const;  
@@ -603,7 +603,7 @@ DWORD GetListBoxInfo() const;
  Number of items per column of the `CListBox` object.  
   
 ### Remarks  
- This member function emulates the functionality of the [LB_GETLISTBOXINFO](http://msdn.microsoft.com/library/windows/desktop/bb775208) message, as described in the Windows SDK.  
+ This member function emulates the functionality of the [LB_GETLISTBOXINFO](/windows/desktop/Controls/lb-getlistboxinfo) message, as described in the Windows SDK.  
   
 ##  <a name="getlocale"></a>  CListBox::GetLocale  
  Retrieves the locale used by the list box.  
@@ -1037,7 +1037,7 @@ int SetItemData(
  [!code-cpp[NVC_MFC_CListBox#34](../../mfc/codesnippet/cpp/clistbox-class_34.cpp)]  
   
 ##  <a name="setitemdataptr"></a>  CListBox::SetItemDataPtr  
- Sets the 32-bit value associated with the specified item in a list box to be the specified pointer ( **void\***).  
+ Sets the 32-bit value associated with the specified item in a list box to be the specified pointer ( **void** <strong>\*</strong>).  
   
 ```  
 int SetItemDataPtr(
@@ -1200,7 +1200,7 @@ virtual int VKeyToItem(
   
 ### Parameters  
  *nKey*  
- The virtual key code of the key the user pressed. For a list of of standard virtual key codes, see Winuser.h  
+ The virtual key code of the key the user pressed. For a list of standard virtual key codes, see Winuser.h  
   
  *nIndex*  
  The current position of the list-box caret.  

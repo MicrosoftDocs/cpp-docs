@@ -25,11 +25,11 @@ bool operator!=(const queue <Type, Container>& left, const queue <Type, Containe
 
 ### Parameters
 
-*left*
- An object of type `queue`.
+*left*<br/>
+An object of type `queue`.
 
-*right*
- An object of type `queue`.
+*right*<br/>
+An object of type `queue`.
 
 ### Return Value
 
@@ -92,11 +92,11 @@ bool operator<(const queue <Type, Container>& left, const queue <Type, Container
 
 ### Parameters
 
-*left*
- An object of type `queue`.
+*left*<br/>
+An object of type `queue`.
 
-*right*
- An object of type `queue`.
+*right*<br/>
+An object of type `queue`.
 
 ### Return Value
 
@@ -155,11 +155,11 @@ bool operator<=(const queue <Type, Container>& left, const queue <Type, Containe
 
 ### Parameters
 
-*left*
- An object of type `queue`.
+*left*<br/>
+An object of type `queue`.
 
-*right*
- An object of type `queue`.
+*right*<br/>
+An object of type `queue`.
 
 ### Return Value
 
@@ -220,11 +220,11 @@ bool operator==(const queue <Type, Container>& left, const queue <Type, Containe
 
 ### Parameters
 
-*left*
- An object of type `queue`.
+*left*<br/>
+An object of type `queue`.
 
-*right*
- An object of type `queue`.
+*right*<br/>
+An object of type `queue`.
 
 ### Return Value
 
@@ -286,11 +286,11 @@ bool operator>(const queue <Type, Container>& left, const queue <Type, Container
 
 ### Parameters
 
-*left*
- An object of type `queue`.
+*left*<br/>
+An object of type `queue`.
 
-*right*
- An object of type `queue`.
+*right*<br/>
+An object of type `queue`.
 
 ### Return Value
 
@@ -352,11 +352,11 @@ bool operator>=(const queue <Type, Container>& left, const queue <Type, Containe
 
 ### Parameters
 
-*left*
- An object of type `queue`.
+*left*<br/>
+An object of type `queue`.
 
-*right*
- An object of type `queue`.
+*right*<br/>
+An object of type `queue`.
 
 ### Return Value
 

@@ -1,7 +1,8 @@
 ---
 title: "Configure a Linux CMake project in Visual Studio | Microsoft Docs"
+description: "How to configure a Linux CMake project in Visual Studio"
 ms.custom: ""
-ms.date: "04/28/2018"
+ms.date: "07/20/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-linux"]
@@ -16,12 +17,12 @@ ms.workload: ["cplusplus", "linux"]
 # Configure a Linux CMake project
 
 **Visual Studio 2017 version 15.4 and later**  
-When you install the Linux C++ workload, CMake support for Linux is selected by default. You can now work on your existing code base that uses CMake without having to convert it to a Visual Studio project. If your code base is cross-platform, you can target both Windows and Linux from within Visual Studio.
+When you install the Linux C++ workload for Visual Studio, CMake support for Linux is selected by default. You can now work on your existing code base that uses CMake without having to convert it to a Visual Studio project. If your code base is cross-platform, you can target both Windows and Linux from within Visual Studio.
 
 This topic assumes you have basic familiarity with CMake support in Visual Studio. For more information, see [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md). For more information about CMake itself, see [Build, Test and Package Your Software With CMake](https://cmake.org/).
 
 > [!NOTE]  
-> The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. If your package manager provides an older version of CMake, you can work around it by [building CMake from source](#build-a-supported-cmake release-from-source) or downloading it from the official [CMake download page](https://cmake.org/download/).
+> The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant that supports the [CMake Targets View](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) pane in Visual Studio, download the latest prebuilt binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases). If your package manager provides an older version than CMake 3.8, you can work around it by [building CMake from source](#build-a-supported-cmake-release-from-source), or you prefer to use standard CMake, you can download it from the official [CMake download page](https://cmake.org/download/). 
 
 ## Open a folder
 
@@ -29,13 +30,13 @@ To get started, choose **File** > **Open** > **Folder** from the main menu or el
 The following example shows a simple CMakeLists.txt file and .cpp file:
 
 ```cpp
-// Hello.cpp
+// hello.cpp
 
-#include <iostream>;
+#include <iostream>
 
 int main(int argc, char* argv[])
 {
-    std::cout << "Hello" << std::endl;
+    std::cout << "Hello from Linux CMake" << std::endl;
 }
 ```
 
@@ -78,10 +79,16 @@ To change the default CMake settings, choose **CMake | Change CMake Settings | C
       "remoteCMakeListsRoot": "/var/tmp/src/${workspaceHash}/${name}",
       "cmakeExecutable": "/usr/local/bin/cmake",
       "buildRoot": "${env.LOCALAPPDATA}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+      "installRoot": "${env.LOCALAPPDATA}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
       "remoteBuildRoot": "/var/tmp/build/${workspaceHash}/build/${name}",
+      "remoteInstallRoot": "/var/tmp/build/${workspaceHash}/install/${name}",
       "remoteCopySources": true,
       "remoteCopySourcesOutputVerbosity": "Normal",
       "remoteCopySourcesConcurrentCopies": "10",
+      "remoteCopySourcesMethod": "rsync",
+      "remoteCopySourcesExclusionList": [".vs", ".git"],
+      "rsyncCommandArgs" : "-t --delete --delete-excluded",
+      "remoteCopyBuildOutput" : "false",
       "cmakeCommandArgs": "",
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
@@ -89,7 +96,19 @@ To change the default CMake settings, choose **CMake | Change CMake Settings | C
 }
 ```
 
-The `name` value can be whatever you like. The `remoteMachineName` value specifies which remote system to target, in case you have more than one. IntelliSense is enabled for this field to help you select the right system. The field `remoteCMakeListsRoot` specifies where your project sources will be copied to on the remote system. The field `remoteBuildRoot` is where the build output will be generated on your remote system. That output is also copied locally to the location specified by `buildRoot`.
+The `name` value can be whatever you like. The `remoteMachineName` value specifies which remote system to target, in case you have more than one. IntelliSense is enabled for this field to help you select the right system. The field `remoteCMakeListsRoot` specifies where your project sources will be copied to on the remote system. The field `remoteBuildRoot` is where the build output will be generated on your remote system. That output is also copied locally to the location specified by `buildRoot`. The `remoteInstallRoot` and `installRoot` fields are similar to `remoteBuildRoot` and `buildRoot`, except they apply when doing a cmake install. The `remoteCopySources` entry controls whether or not your local sources are copied to the remote machine. You might set this to false if you have a lot of files and you're already syncing the sources yourself. The `remoteCopyOutputVerbosity` value controls the verbosity of the copy step in case you need to diagnose errors. The `remoteCopySourcesConcurrentCopies` entry controls how many processes are spawned to do the copy. The `remoteCopySourcesMethod` value can be one of rsync or sftp. The `remoteCopySourcesExclusionList` field allows you to control what gets copied to the remote machine. The `rsyncCommandArgs` value lets you control the rsync method of copying. The `remoteCopyBuildOutput` field controls whether or not the remote build output is copied to your local build folder.
+
+There are also some optional settings you can use for more control:
+
+```json
+{
+      "remotePreBuildCommand": "",
+      "remotePreGenerateCommand": "",
+      "remotePostBuildCommand": "",
+}
+```
+
+These options allow you to run commands on the remote box before and after building, and before CMake generation. They can be any valid command on the remote box. Output is piped back to Visual Studio.
 
 ## Build a supported CMake release from source
 
@@ -135,7 +154,7 @@ Next, run this command to verify the version is >= 3.8 and that server mode is e
 cmake -E capabilities
 ```
 
-## See also
+## See Also
 
 [Working with Project Properties](../ide/working-with-project-properties.md)  
 [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md)  

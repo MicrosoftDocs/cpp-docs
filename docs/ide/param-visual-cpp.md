@@ -29,7 +29,7 @@ The \<param> tag should be used in the comment for a method declaration to descr
  A description for the parameter.  
   
 ## Remarks  
- The text for the \<param> tag will be displayed in IntelliSense, the [Object Browser](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470), and in the Code Comment Web Report.  
+ The text for the \<param> tag will be displayed in IntelliSense, the [Object Browser](/visualstudio/ide/viewing-the-structure-of-code), and in the Code Comment Web Report.  
   
  Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.  
   

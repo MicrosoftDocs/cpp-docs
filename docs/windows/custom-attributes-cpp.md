@@ -12,14 +12,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Custom Attributes (C++)
-A custom attribute is a strongly typed technique that allows the user to extend metadata. This topic deals with using attributes: specifying parameters and targets.  
-  
- For information on defining new custom attributes, see,  
-  
--   [User-Defined Attributes](../windows/user-defined-attributes-cpp-component-extensions.md)  
-  
--   [attribute](../windows/attribute.md) (deprecated syntax).  
-  
-## See Also  
- [attribute](../windows/attribute.md)   
- [Custom Attributes (C++)](../windows/custom-attributes-cpp.md)
+
+A custom attribute is a strongly typed technique that allows the user to extend metadata. This topic deals with using attributes: specifying parameters and targets.
+
+For information on defining new custom attributes, see,
+
+- [User-Defined Attributes](../windows/user-defined-attributes-cpp-component-extensions.md)
+
+- [attribute](../windows/attribute.md) (deprecated syntax).
+
+## See Also
+
+[attribute](../windows/attribute.md)  
+[Custom Attributes (C++)](../windows/custom-attributes-cpp.md)

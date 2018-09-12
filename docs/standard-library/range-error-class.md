@@ -1,7 +1,7 @@
 ---
 title: "range_error Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/14/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 f1_keywords: ["stdexcept/std::range_error"]
@@ -22,15 +22,13 @@ The class serves as the base class for all exceptions thrown to report a range e
 class range_error : public runtime_error {
 public:
     explicit range_error(const string& message);
-
     explicit range_error(const char *message);
-
 };
 ```
 
 ## Remarks
 
-The value returned by [what](../standard-library/exception-class.md) is a copy of **message**`.`[data](../standard-library/basic-string-class.md#data).
+The value returned by [what](../standard-library/exception-class.md) is a copy of `message.data`. For more information, see [basic_string::data](../standard-library/basic-string-class.md#data).
 
 ## Example
 
@@ -45,16 +43,16 @@ int main()
    {
       throw range_error( "The range is in error!" );
    }
-   catch (exception &e)
+   catch (range_error &e)
    {
       cerr << "Caught: " << e.what( ) << endl;
       cerr << "Type: " << typeid( e ).name( ) << endl;
    };
 }
-\* Output:
+/* Output:
 Caught: The range is in error!
 Type: class std::range_error
-*\
+*/
 ```
 
 ## Requirements

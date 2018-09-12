@@ -42,14 +42,14 @@ protected:
 
 ### Parameters
 
-*Func*
- The binary function object to be converted to a unary function object.
+*Func*<br/>
+The binary function object to be converted to a unary function object.
 
-*left*
- The value to which the first argument of the binary function object is to be bound.
+*left*<br/>
+The value to which the first argument of the binary function object is to be bound.
 
-*right*
- The value of the argument that the adapted binary object compares to the fixed value of the second argument.
+*right*<br/>
+The value of the argument that the adapted binary object compares to the fixed value of the second argument.
 
 ## Return Value
 
@@ -104,11 +104,11 @@ int main()
     cout << "The number of elements in v1 less than 10 is: "
          << result2 << "." << endl;
 }
-\* Output:
+/* Output:
 The vector v1 = ( 0 5 10 15 20 25 )
 The number of elements in v1 greater than 10 is: 3.
 The number of elements in v1 less than 10 is: 2.
-*\
+*/
 ```
 
 ## Requirements

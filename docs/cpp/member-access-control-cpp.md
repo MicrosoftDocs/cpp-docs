@@ -30,7 +30,6 @@ private:                 // Declare private state variables.
 protected:      // Declare protected function for derived classes only.  
     Point ToWindowCoords();  
 };  
-  
 ``` 
   
  The default access is **private** in a class, and **public** in a struct or union. Access specifiers in a class can be used any number of times in any order. The allocation of storage for objects of class types is implementation dependent, but members are guaranteed to be assigned successively higher memory addresses between access specifiers.  
@@ -69,28 +68,44 @@ protected:      // Declare protected function for derived classes only.
   
 ```cpp 
 // access_specifiers_for_base_classes.cpp  
-class BaseClass  
-{  
-public:  
-    int PublicFunc();    // Declare a public member.  
-protected:  
-    int ProtectedFunc(); // Declare a protected member.  
-private:  
-    int PrivateFunc();   // Declare a private member.  
-};  
-  
+class BaseClass
+{
+public:
+	int PublicFunc(); // Declare a public member.  
+protected:
+	int ProtectedFunc(); // Declare a protected member.  
+private:
+	int PrivateFunc(); // Declare a private member.  
+};
+
 // Declare two classes derived from BaseClass.  
-class DerivedClass1 : public BaseClass  
-{  
-};  
-  
-class DerivedClass2 : private BaseClass  
-{  
-};  
-  
-int main()  
-{  
-}  
+class DerivedClass1 : public BaseClass
+{
+	void foo()
+	{
+		PublicFunc();
+		ProtectedFunc();
+		PrivateFunc(); // function is inaccessible
+	}
+};
+
+class DerivedClass2 : private BaseClass
+{
+	void foo()
+	{
+		PublicFunc();
+		ProtectedFunc();
+		PrivateFunc(); // function is inaccessible
+	}
+};
+
+int main()
+{
+	DerivedClass1 derived_class1;
+	DerivedClass2 derived_class2;
+	derived_class1.PublicFunc();
+	derived_class2.PublicFunc(); // function is inaccessible
+}
 ```  
   
  In `DerivedClass1`, the member function `PublicFunc` is a public member and `ProtectedFunc` is a protected member because `BaseClass` is a public base class. `PrivateFunc` is private to `BaseClass`, and it is inaccessible to any derived classes.  
@@ -217,5 +232,6 @@ Access Along Paths of an Inheritance Graph
   
  In the figure, a name declared in class `VBase` is always reached through class `RightPath`. The right path is more accessible because `RightPath` declares `VBase` as a public base class, whereas `LeftPath` declares `VBase` as private.  
   
+
 ## See Also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)

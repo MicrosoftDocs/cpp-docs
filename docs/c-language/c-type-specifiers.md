@@ -18,18 +18,18 @@ Type specifiers in declarations define the type of a variable or function declar
 ## Syntax
 
 *type-specifier*:  
-&nbsp;&nbsp;**void**  
-&nbsp;&nbsp;**char**  
-&nbsp;&nbsp;**short**  
-&nbsp;&nbsp;**int**  
-&nbsp;&nbsp;**long**  
-&nbsp;&nbsp;**float**  
-&nbsp;&nbsp;**double**  
-&nbsp;&nbsp;**signed**  
-&nbsp;&nbsp;**unsigned**  
-&nbsp;&nbsp;*struct-or-union-specifier*  
-&nbsp;&nbsp;*enum-specifier*  
-&nbsp;&nbsp;*typedef-name*  
+&nbsp;&nbsp;&nbsp;&nbsp;**void**  
+&nbsp;&nbsp;&nbsp;&nbsp;**char**  
+&nbsp;&nbsp;&nbsp;&nbsp;**short**  
+&nbsp;&nbsp;&nbsp;&nbsp;**int**  
+&nbsp;&nbsp;&nbsp;&nbsp;**long**  
+&nbsp;&nbsp;&nbsp;&nbsp;**float**  
+&nbsp;&nbsp;&nbsp;&nbsp;**double**  
+&nbsp;&nbsp;&nbsp;&nbsp;**signed**  
+&nbsp;&nbsp;&nbsp;&nbsp;**unsigned**  
+&nbsp;&nbsp;&nbsp;&nbsp;*struct-or-union-specifier*  
+&nbsp;&nbsp;&nbsp;&nbsp;*enum-specifier*  
+&nbsp;&nbsp;&nbsp;&nbsp;*typedef-name*  
 
 The **signed char**, **signed int**, **signed short int**, and **signed long int** types, together with their **unsigned** counterparts and **enum**, are called *integral* types. The **float**, **double**, and **long double** type specifiers are referred to as *floating* or *floating-point* types. You can use any integral or floating-point type specifier in a variable or function declaration. If a *type-specifier* is not provided in a declaration, it is taken to be **int**.
 
@@ -68,7 +68,7 @@ pi = pu;  /* Now generates warning */
 
 Type **void** expressions are evaluated for side effects. You cannot use the (nonexistent) value of an expression that has type **void** in any way, nor can you convert a **void** expression (by implicit or explicit conversion) to any type except **void**. If you do use an expression of any other type in a context where a **void** expression is required, its value is discarded.
 
-To conform to the ANSI specification, **void\*\*** cannot be used as **int\*\***. Only **void\*** can be used as a pointer to an unspecified type.
+To conform to the ANSI specification, <strong>void\*\*</strong> cannot be used as <strong>int\*\*</strong>. Only **void**<strong>\*</strong> can be used as a pointer to an unspecified type.
 
 **END Microsoft Specific**
 

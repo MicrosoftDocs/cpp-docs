@@ -17,14 +17,13 @@ Represents one of the accessor types.
   
 ## Syntax  
   
-```  
-  
+```cpp
 template <class T>  
 class CAccessor : public CAccessorBase, public T  
 ```  
   
-#### Parameters  
- `T`  
+### Parameters  
+ *T*  
  The user record class.  
   
 ## Remarks  

@@ -22,5 +22,5 @@ ms.workload: ["cplusplus"]
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [main: Program Startup](../cpp/main-program-startup.md)

@@ -17,7 +17,6 @@ You can use the **override** keyword to designate member functions that override
 ## Syntax  
   
 ```  
-  
 function-declaration override;  
 ```  
   
@@ -46,9 +45,7 @@ class DerivedClass: public BaseClass
     virtual void funcC(double = 0.0); // DerivedClass::funcC(double) has a different  
                                       // parameter type than BaseClass::funcC(int), so  
                                       // DerivedClass::funcC(double) is a new member function  
-  
 };  
-  
 ```  
   
  When you use **override**, the compiler generates errors instead of silently creating new member functions.  
@@ -76,12 +73,10 @@ class DerivedClass: public BaseClass
     void funcD() override; // compiler error: DerivedClass::funcD() does not   
                            // override the non-virtual BaseClass::funcD()  
 };  
-  
 ```  
   
  To specify that functions cannot be overridden and that classes cannot be inherited, use the [final](../cpp/final-specifier.md) keyword.  
   
-## See Also  
+## See also  
  [final Specifier](../cpp/final-specifier.md)   
  [Keywords](../cpp/keywords-cpp.md)   
- 

@@ -13,22 +13,26 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ArgTraitsHelper::args Constant
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-static const int args = Traits::args;  
-```  
-  
-## Remarks  
- Helps [ArgTraitsHelper::args](../windows/argtraitshelper-args-constant.md) keep count of the number of parameters on the Invoke method of a delegate interface.  
-  
-## Requirements  
- **Header:** event.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [ArgTraitsHelper Structure](../windows/argtraitshelper-structure.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+static const int args = Traits::args;
+```
+
+## Remarks
+
+Helps [ArgTraitsHelper::args](../windows/argtraitshelper-args-constant.md) keep count of the number of parameters on the `Invoke` method of a delegate interface.
+
+## Requirements
+
+**Header:** event.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[ArgTraitsHelper Structure](../windows/argtraitshelper-structure.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

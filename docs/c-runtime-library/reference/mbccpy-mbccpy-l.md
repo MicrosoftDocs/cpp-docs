@@ -38,13 +38,13 @@ void _mbccpy_l(
 
 ### Parameters
 
-*dest*
+*dest*<br/>
 Copy destination.
 
-*src*
+*src*<br/>
 Multibyte character to copy.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Remarks
@@ -55,7 +55,7 @@ This function validates its parameters. If **_mbccpy** is passed a null pointer 
 
 **_mbccpy** uses the current locale for any locale-dependent behavior. **_mbccpy_l** is identical to **_mbccpy** except that **_mbccpy_l** uses the locale passed in for any locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-**Security Note** Use a null-terminated string. The null-terminated string must not exceed the size of the destination buffer. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795). Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege.
+**Security Note** Use a null-terminated string. The null-terminated string must not exceed the size of the destination buffer. For more information, see [Avoiding Buffer Overruns](/windows/desktop/SecBP/avoiding-buffer-overruns). Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege.
 
 ### Generic-Text Routine Mappings
 

@@ -30,7 +30,7 @@ void Assign(
  A `BSTR` to be copied into the `BSTR` wrapped by a `_bstr_t`.  
   
 ## Remarks  
- `Assign` does a binary copy, which means the entire length of the `BSTR` is copied, regardless of content.  
+ **Assign** does a binary copy, which means the entire length of the `BSTR` is copied, regardless of content.  
   
 ## Example  
   
@@ -107,5 +107,5 @@ bstrWrapper2 = some text
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_bstr_t Class](../cpp/bstr-t-class.md)

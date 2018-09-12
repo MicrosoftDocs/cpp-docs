@@ -47,5 +47,5 @@ extern template MyStack<int, 6>::MyStack( void );
 > [!NOTE]
 >  The **extern** keyword in the specialization only applies to member functions defined outside of the body of the class. Functions defined inside the class declaration are considered inline functions and are always instantiated.  
   
-## See Also  
+## See also  
  [Function Templates](../cpp/function-templates.md)

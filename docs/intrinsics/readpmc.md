@@ -36,7 +36,7 @@ unsigned __int64 __readpmc( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__readpmc`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__readpmc`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

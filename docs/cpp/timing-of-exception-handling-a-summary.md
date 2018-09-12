@@ -39,6 +39,6 @@ A termination handler is executed no matter how the **__try** statement block is
   
     -   Control passes to the line of code after the end of this exception handler.  
   
-## See Also  
+## See also  
  [Writing a Termination Handler](../cpp/writing-a-termination-handler.md)   
  [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

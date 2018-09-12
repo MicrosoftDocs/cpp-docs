@@ -248,7 +248,7 @@ At the command prompt, type the following command to use the 64-bit tools to bui
 
 ### Using MSBuild with a different toolset
 
-If you have the toolsets and libraries for other versions of Visual C++ installed, MSBuild can build applications for either the current Visual C++ version or for the other installed versions. For example, if you have installed [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)], to specify the Visual C++ 11.0 toolset for Windows XP, add the following property group element to the Myproject.vcxproj project file after the Microsoft.Cpp.props `<Import />` element:
+If you have the toolsets and libraries for other versions of Visual C++ installed, MSBuild can build applications for either the current Visual C++ version or for the other installed versions. For example, if you have installed Visual Studio 2012, to specify the Visual C++ 11.0 toolset for Windows XP, add the following property group element to the Myproject.vcxproj project file after the Microsoft.Cpp.props `<Import />` element:
 
 ```xml
 <PropertyGroup>

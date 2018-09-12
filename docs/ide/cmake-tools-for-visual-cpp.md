@@ -211,6 +211,8 @@ To specify a Visual Studio generator, open the CMakeSettings.json from the main 
 1. **variables**: contains a name-value pair of CMake variables that will get passed as **-D**_name_**=**_value_ to CMake. If your CMake project build instructions specify the addition of any variables directly to the CMake cache file, it is recommended that you add them here instead.
 1. **cmakeCommandArgs**: specifies any additional switches you want to pass to CMake.exe.
 1. **configurationType**: defines the build configuration type for the selected generator. Currently supported values are "Debug", "MinSizeRel", "Release", and "RelWithDebInfo".
+1. **ctestCommandArgs**: specifies additional switches to pass to CTest when running tests.
+1. **buildCommandArgs**: specifies additional switches to pass to the underlying build system. For example, passing -v when using the Ninja generator forces Ninja to output command lines.
 
 ### Environment variables
 

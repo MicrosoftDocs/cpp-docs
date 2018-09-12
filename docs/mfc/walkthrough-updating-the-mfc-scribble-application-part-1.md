@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Updating the MFC Scribble Application (Part 1)
 
-This walkthrough demonstrates how to modify an existing MFC application to use the Ribbon user interface. Visual Studio supports both the Office 2007 Ribbon and the Windows 7 Scenic Ribbon. For more information about the Ribbon user interface, see [Ribbons](http://go.microsoft.com/fwlink/p/?linkid=129233) on the MSDN Web site.
+This walkthrough demonstrates how to modify an existing MFC application to use the Ribbon user interface. Visual Studio supports both the Office 2007 Ribbon and the Windows 7 Scenic Ribbon. For more information about the Ribbon user interface, see [Ribbons](/windows/desktop/uxguide/cmd-ribbons).
 
 This walkthrough modifies the classic Scribble 1.0 MFC sample that lets you use the mouse to create line drawings. This part of the walkthrough shows how to modify the Scribble sample so that it displays a ribbon bar. [Part 2](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md) adds more buttons to the ribbon bar.
 
@@ -114,7 +114,7 @@ To convert an application that supports a menu to an application that supports a
 
 The next four steps of this walkthrough require bitmap resources. You can obtain appropriate bitmaps in various ways:
 
-- Use the [Resource Editors](../windows/resource-editors.md) to invent your own bitmaps. Or use the resource editors to assemble bitmaps from the portable network graphics (.png) images that are included with [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)]. These images are in the `VS2008ImageLibrary` directory.
+- Use the [Resource Editors](../windows/resource-editors.md) to invent your own bitmaps. Or use the resource editors to assemble bitmaps from the portable network graphics (.png) images that are included with Visual Studio. These images are in the `VS2008ImageLibrary` directory.
 
      However, the Ribbon user interface requires that certain bitmaps support transparent images. Transparent bitmaps use 32-bit pixels, where 24 bits specify the red, green, and blue components of the color, and 8 bits define an *alpha channel* that specifies the transparency of the color. The current resource editors can view, but not modify bitmaps with 32-bit pixels. Consequently, use an external image editor instead of the resource editors to manipulate transparent bitmaps.
 

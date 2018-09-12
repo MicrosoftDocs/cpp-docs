@@ -1,7 +1,7 @@
 ---
 title: "MFC ActiveX Controls: Distributing ActiveX Controls | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 f1_keywords: ["GetWindowsDirectory", "GetSystemDirectory"]
@@ -20,6 +20,10 @@ This article discusses several issues related to redistributing ActiveX controls
 -   [Installing ActiveX Controls and Redistributable DLLs](#_core_installing_activex_controls_and_redistributable_dlls)  
   
 -   [Registering Controls](#_core_registering_controls)  
+
+
+>[!IMPORTANT]
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
   
 ##  <a name="_core_ansi_or_unicode_control_versions"></a> ANSI or Unicode Control Versions  
  You must decide whether to ship an ANSI or Unicode version of the control, or both. This decision is based on portability factors inherent in ANSI and Unicode character sets.  

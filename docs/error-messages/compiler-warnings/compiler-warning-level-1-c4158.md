@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4158
-assuming #pragma pointers_to_members(full_generality, inheritance)  
-  
- A **#pragma pointers_to_members(***single&#124;multiple&#124;virtual***)** was issued without an accompanying **#pragma pointers_to_members(full_generality)**.
+
+> assuming #pragma pointers_to_members(full_generality, inheritance)
+
+A **#pragma pointers_to_members(** *single* &#124; *multiple* &#124; *virtual* **)** was issued without an accompanying **#pragma pointers_to_members(full_generality)**.

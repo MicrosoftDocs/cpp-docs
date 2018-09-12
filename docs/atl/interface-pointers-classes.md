@@ -13,18 +13,20 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Interface Pointers Classes
-The following classes manage a given interface pointer:  
-  
--   [CComPtr](../atl/reference/ccomptr-class.md) Performs automatic reference counting.  
-  
--   [CComQIPtr](../atl/reference/ccomqiptr-class.md) Similar to `CComPtr`, but also performs automatic querying of interfaces.  
-  
--   [CInterfaceArray](../atl/reference/cinterfacearray-class.md) Provides methods useful when constructing an array of COM interface pointers.  
-  
--   [CInterfaceList](../atl/reference/cinterfacelist-class.md) Provides methods useful when constructing a list of COM interface pointers.  
-  
--   [CComGITPtr](../atl/reference/ccomgitptr-class.md) Provides methods for dealing with interface pointers and the global interface table (GIT).  
-  
-## See Also  
- [Class Overview](../atl/atl-class-overview.md)
+
+The following classes manage a given interface pointer:
+
+- [CComPtr](../atl/reference/ccomptr-class.md) Performs automatic reference counting.
+
+- [CComQIPtr](../atl/reference/ccomqiptr-class.md) Similar to `CComPtr`, but also performs automatic querying of interfaces.
+
+- [CInterfaceArray](../atl/reference/cinterfacearray-class.md) Provides methods useful when constructing an array of COM interface pointers.
+
+- [CInterfaceList](../atl/reference/cinterfacelist-class.md) Provides methods useful when constructing a list of COM interface pointers.
+
+- [CComGITPtr](../atl/reference/ccomgitptr-class.md) Provides methods for dealing with interface pointers and the global interface table (GIT).
+
+## See Also
+
+[Class Overview](../atl/atl-class-overview.md)
 

@@ -29,7 +29,7 @@ This document demonstrates how to use the Concurrency Runtime to move the work t
   
 -   [Cancellation in the PPL](cancellation-in-the-ppl.md)  
   
- We also recommend that you understand the basics of MFC application development and [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] before you start this walkthrough. For more information about MFC, see [MFC Desktop Applications](../../mfc/mfc-desktop-applications.md). For more information about [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)], see [GDI+](https://msdn.microsoft.com/en-us/library/windows/desktop/ms533798).  
+ We also recommend that you understand the basics of MFC application development and GDI+ before you start this walkthrough. For more information about MFC, see [MFC Desktop Applications](../../mfc/mfc-desktop-applications.md). For more information about GDI+, see [GDI+](https://msdn.microsoft.com/library/windows/desktop/ms533798).  
   
 ##  <a name="top"></a> Sections  
  This walkthrough contains the following sections:  
@@ -60,7 +60,7 @@ This document demonstrates how to use the Concurrency Runtime to move the work t
      Verify that the application was created successfully by building and running it. To build the application, on the **Build** menu, click **Build Solution**. If the application builds successfully, run the application by clicking **Start Debugging** on the **Debug** menu.  
   
 ##  <a name="serial"></a> Implementing the Serial Version of the Mandelbrot Application  
- This section describes how to draw the Mandelbrot fractal. This version draws the Mandelbrot fractal to a [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] [Bitmap](https://msdn.microsoft.com/library/ms534420.aspx) object and then copies the contents of that bitmap to the client window.  
+ This section describes how to draw the Mandelbrot fractal. This version draws the Mandelbrot fractal to a GDI+ [Bitmap](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) object and then copies the contents of that bitmap to the client window.  
   
 #### To implement the serial version of the Mandelbrot application  
   
@@ -80,13 +80,13 @@ This document demonstrates how to use the Concurrency Runtime to move the work t
   
      [!code-cpp[concrt-mandelbrot#4](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_4.cpp)]  
   
-     In Debug builds, this step prevents the application from using the `DEBUG_NEW` allocator, which is incompatible with [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)].  
+     In Debug builds, this step prevents the application from using the `DEBUG_NEW` allocator, which is incompatible with GDI+.  
   
 5.  In ChildView.cpp, add a `using` directive to the `Gdiplus` namespace.  
   
      [!code-cpp[concrt-mandelbrot#5](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_5.cpp)]  
   
-6.  Add the following code to the constructor and destructor of the `CChildView` class to initialize and shut down [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)].  
+6.  Add the following code to the constructor and destructor of the `CChildView` class to initialize and shut down GDI+.  
   
      [!code-cpp[concrt-mandelbrot#6](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_6.cpp)]  
   

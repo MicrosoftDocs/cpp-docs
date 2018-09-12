@@ -1,7 +1,7 @@
 ---
 title: ".EXIT | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".EXIT"]
@@ -13,17 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .EXIT
-Generates termination code.  
-  
-## Syntax  
-  
-```  
-  
-.EXIT [[expression]]  
-```  
-  
-## Remarks  
- Returns optional *expression* to shell.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Generates termination code.
+
+## Syntax
+
+> .EXIT [[expression]]
+
+## Remarks
+
+Returns optional *expression* to shell.
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

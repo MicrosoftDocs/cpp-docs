@@ -13,41 +13,45 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # WeakReference::Resolve Method
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
 STDMETHOD(Resolve)  
-   (REFIID riid,   
-   _Deref_out_opt_ IInspectable **ppvObject  
-);  
-```  
-  
-#### Parameters  
- `riid`  
- An interface ID.  
-  
- `ppvObject`  
- When this operation completes,  a copy of the current strong reference if the strong reference count is nonzero.  
-  
-## Return Value  
-  
--   S_OK if this operation is successful and the strong reference count is zero. The `ppvObject` parameter is set to `nullptr`.  
-  
--   S_OK if this operation is successful and the strong reference count is nonzero. The `ppvObject` parameter is set to the strong reference.  
-  
--   Otherwise, an HRESULT that indicates the reason this operation failed.  
-  
-## Remarks  
- Sets the specified pointer to the current strong reference value if the strong reference count is nonzero.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [WeakReference Class1](../windows/weakreference-class1.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+   (REFIID riid,
+   _Deref_out_opt_ IInspectable **ppvObject
+);
+```
+
+### Parameters
+
+*riid*  
+An interface ID.
+
+*ppvObject*  
+When this operation completes, a copy of the current strong reference if the strong reference count is nonzero.
+
+## Return Value
+
+- S_OK if this operation is successful and the strong reference count is zero. The *ppvObject* parameter is set to **nullptr**.
+
+- S_OK if this operation is successful and the strong reference count is nonzero. The *ppvObject* parameter is set to the strong reference.
+
+- Otherwise, an HRESULT that indicates the reason this operation failed.
+
+## Remarks
+
+Sets the specified pointer to the current strong reference value if the strong reference count is nonzero.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[WeakReference Class1](../windows/weakreference-class1.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

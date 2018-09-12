@@ -8,31 +8,33 @@ f1_keywords: ["VCCORLIB/Platform::CallbackContext"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::CallbackContext Enumeration"]
 ms.assetid: 60e0c7cb-5d8f-482a-bdca-ca9335ae4899
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::CallbackContext Enumeration
-Specifies the thread context in which a callback function (event handler) executes.  
-  
-## Syntax  
-  
-```cpp  
-enum class CallbackContext {};  
-```  
-  
-### Members  
-  
-|Type Code|Description|  
-|---------------|-----------------|  
-|Any|The callback function can execute on any thread context.|  
-|Same|The callback function can execute on only the thread context that started the asynchronous operation.|  
-  
-### Requirements  
- **Minimum supported client:** Windows 8  
-  
- **Minimum supported server:** Windows Server 2012  
-  
- **Namespace:** Platform  
-  
- **Metadata:** platform.winmd
+
+Specifies the thread context in which a callback function (event handler) executes.
+
+## Syntax
+
+```cpp
+enum class CallbackContext {};
+```
+
+### Members
+
+|Type Code|Description|
+|---------------|-----------------|
+|Any|The callback function can execute on any thread context.|
+|Same|The callback function can execute on only the thread context that started the asynchronous operation.|
+
+### Requirements
+
+**Minimum supported client:** Windows 8
+
+**Minimum supported server:** Windows Server 2012
+
+**Namespace:** Platform
+
+**Metadata:** platform.winmd

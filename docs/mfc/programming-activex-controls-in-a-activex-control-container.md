@@ -1,7 +1,7 @@
 ---
 title: "ActiveX Control Containers: Programming ActiveX Controls in an ActiveX Control Container | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -12,7 +12,12 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # ActiveX Control Containers: Programming ActiveX Controls in an ActiveX Control Container
-This article describes the process for accessing the exposed [methods](../mfc/mfc-activex-controls-methods.md) and [properties](../mfc/mfc-activex-controls-properties.md) of embedded ActiveX controls. Basically, you will follow these steps:  
+This article describes the process for accessing the exposed [methods](../mfc/mfc-activex-controls-methods.md) and [properties](../mfc/mfc-activex-controls-properties.md) of embedded ActiveX controls. 
+
+>[!IMPORTANT]
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
+
+Basically, you will follow these steps:  
   
 1.  [Insert an ActiveX control into the ActiveX container project](../mfc/inserting-a-control-into-a-control-container-application.md) using Gallery.  
   

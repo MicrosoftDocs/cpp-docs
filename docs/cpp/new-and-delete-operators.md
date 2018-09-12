@@ -41,7 +41,7 @@ The two scopes for **operator new** functions are described in the following tab
 |**::operator new**|Global|  
 |*class-name* **::operator new**|Class|  
   
- The first argument to **operator new** must be of type `size_t` (a type defined in \<stddef.h>), and the return type is always **void \***.  
+ The first argument to **operator new** must be of type `size_t` (a type defined in \<stddef.h>), and the return type is always **void** <strong>\*</strong>.  
   
  The global **operator new** function is called when the **new** operator is used to allocate objects of built-in types, objects of class type that do not contain user-defined **operator new** functions, and arrays of any type. When the **new** operator is used to allocate objects of a class type where an **operator new** is defined, that class's **operator new** is called.  
   
@@ -138,11 +138,11 @@ void operator delete( void * );
 void operator delete( void *, size_t );  
 ```  
   
- Only one of the preceding two forms can be present for a given class. The first form takes a single argument of type **void \***, which contains a pointer to the object to deallocate. The second form—sized deallocation—takes two arguments, the first of which is a pointer to the memory block to deallocate and the second of which is the number of bytes to deallocate. The return type of both forms is **void** (**operator delete** cannot return a value).  
+ Only one of the preceding two forms can be present for a given class. The first form takes a single argument of type `void *`, which contains a pointer to the object to deallocate. The second form—sized deallocation—takes two arguments, the first of which is a pointer to the memory block to deallocate and the second of which is the number of bytes to deallocate. The return type of both forms is **void** (**operator delete** cannot return a value).  
   
  The intent of the second form is to speed up searching for the correct size category of the object to be deleted, which is often not stored near the allocation itself and likely uncached; the second form is particularly useful when an **operator delete** function from a base class is used to delete an object of a derived class.  
   
- The **operator delete** function is static; therefore, it cannot be virtual. The `operator delete` function obeys access control, as described in [Member-Access Control](../cpp/member-access-control-cpp.md).  
+ The **operator delete** function is static; therefore, it cannot be virtual. The **operator delete** function obeys access control, as described in [Member-Access Control](../cpp/member-access-control-cpp.md).  
   
  The following example shows user-defined **operator new** and **operator delete** functions designed to log allocations and deallocations of memory:  
   
@@ -215,4 +215,3 @@ void f() {
    delete [] pX;  
 }  
 ```  
-

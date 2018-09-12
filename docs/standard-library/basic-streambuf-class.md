@@ -25,11 +25,11 @@ class basic_streambuf;
 
 ### Parameters
 
-*Elem*
- A [char_type](#char_type).
+*Elem*<br/>
+A [char_type](#char_type).
 
-*Tr*
- The character [traits_type](#traits_type).
+*Tr*<br/>
+The character [traits_type](#traits_type).
 
 ## Remarks
 
@@ -153,8 +153,8 @@ basic_streambuf(const basic_streambuf& right);
 
 ### Parameters
 
-*right*
- An lvalue reference to the `basic_streambuf` object that is used to set the values for this `basic_streambuf` object.
+*right*<br/>
+An lvalue reference to the `basic_streambuf` object that is used to set the values for this `basic_streambuf` object.
 
 ### Remarks
 
@@ -216,8 +216,8 @@ void gbump(int count);
 
 ### Parameters
 
-*count*
- The amount by which to advance the pointer.
+*count*<br/>
+The amount by which to advance the pointer.
 
 ## <a name="getloc"></a>  basic_streambuf::getloc
 
@@ -275,8 +275,8 @@ virtual void imbue(const locale& _Loc);
 
 ### Parameters
 
-*_Loc*
- A reference to a locale.
+*_Loc*<br/>
+A reference to a locale.
 
 ### Remarks
 
@@ -342,8 +342,8 @@ basic_streambuf& operator=(const basic_streambuf& right);
 
 ### Parameters
 
-*right*
- An lvalue reference to the `basic_streambuf` object that is used to assign values to this object.
+*right*<br/>
+An lvalue reference to the `basic_streambuf` object that is used to assign values to this object.
 
 ### Remarks
 
@@ -359,8 +359,8 @@ virtual int_type overflow(int_type _Meta = traits_type::eof());
 
 ### Parameters
 
-*_Meta*
- The character to insert into the buffer, or **traits_type::**[eof](../standard-library/char-traits-struct.md#eof).
+*_Meta*<br/>
+The character to insert into the buffer, or **traits_type::**[eof](../standard-library/char-traits-struct.md#eof).
 
 ### Return Value
 
@@ -394,8 +394,8 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof());
 
 ### Parameters
 
-*_Meta*
- The character to insert into the buffer, or **traits_type::**[eof](../standard-library/char-traits-struct.md#eof).
+*_Meta*<br/>
+The character to insert into the buffer, or **traits_type::**[eof](../standard-library/char-traits-struct.md#eof).
 
 ### Return Value
 
@@ -433,8 +433,8 @@ void pbump(int count);
 
 ### Parameters
 
-*count*
- The number of characters by which to move the write position forward.
+*count*<br/>
+The number of characters by which to move the write position forward.
 
 ## <a name="pos_type"></a>  basic_streambuf::pos_type
 
@@ -466,8 +466,8 @@ locale pubimbue(const locale& _Loc);
 
 ### Parameters
 
-*_Loc*
- A reference to a locale.
+*_Loc*<br/>
+A reference to a locale.
 
 ### Return Value
 
@@ -493,14 +493,14 @@ pos_type pubseekoff(off_type _Off,
 
 ### Parameters
 
-*_Off*
- The position to seek for relative to *_Way*.
+*_Off*<br/>
+The position to seek for relative to *_Way*.
 
-*_Way*
- The starting point for offset operations. See [seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
+*_Way*<br/>
+The starting point for offset operations. See [seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
 
-*_Which*
- Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
+*_Which*<br/>
+Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
 
@@ -520,11 +520,11 @@ pos_type pubseekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in | ios
 
 ### Parameters
 
-*_Sp*
- The position to seek for.
+*_Sp*<br/>
+The position to seek for.
 
-*_Which*
- Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
+*_Which*<br/>
+Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
 
@@ -546,11 +546,11 @@ basic_streambuf<Elem, Tr> *pubsetbuf(
 
 ### Parameters
 
-*_Buffer*
- A pointer to `char_type` for this instantiation.
+*_Buffer*<br/>
+A pointer to `char_type` for this instantiation.
 
-*count*
- The size of the buffer.
+*count*<br/>
+The size of the buffer.
 
 ### Return Value
 
@@ -582,7 +582,7 @@ The current element.
 
 ### Remarks
 
-If a read position is available, the member function returns **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( **\***[gptr](#gptr)) and increments the next pointer for the input buffer. Otherwise, it returns [uflow](#uflow).
+If a read position is available, the member function returns **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( <strong>\*</strong>[gptr](#gptr)) and increments the next pointer for the input buffer. Otherwise, it returns [uflow](#uflow).
 
 ### Example
 
@@ -625,14 +625,14 @@ virtual pos_type seekoff(
 
 ### Parameters
 
-*_Off*
- The position to seek for relative to *_Way*.
+*_Off*<br/>
+The position to seek for relative to *_Way*.
 
-*_Way*
- The starting point for offset operations. See [seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
+*_Way*<br/>
+The starting point for offset operations. See [seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
 
-*_Which*
- Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
+*_Which*<br/>
+Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
 
@@ -662,11 +662,11 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in 
 
 ### Parameters
 
-*_Sp*
- The position to seek for.
+*_Sp*<br/>
+The position to seek for.
 
-*_Which*
- Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
+*_Which*<br/>
+Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
 
@@ -692,11 +692,11 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
 
 ### Parameters
 
-*_Buffer*
- Pointer to a buffer.
+*_Buffer*<br/>
+Pointer to a buffer.
 
-*count*
- Size of the buffer.
+*count*<br/>
+Size of the buffer.
 
 ### Return Value
 
@@ -718,14 +718,14 @@ void setg(char_type* _Gbeg,
 
 ### Parameters
 
-*_Gbeg*
- A pointer to the beginning of the buffer.
+*_Gbeg*<br/>
+A pointer to the beginning of the buffer.
 
-*_Gnext*
- A pointer to somewhere in the middle of the buffer.
+*_Gnext*<br/>
+A pointer to somewhere in the middle of the buffer.
 
-*_Gend*
- A pointer to the end of the buffer.
+*_Gend*<br/>
+A pointer to the end of the buffer.
 
 ## <a name="setp"></a>  basic_streambuf::setp
 
@@ -737,11 +737,11 @@ void setp(char_type* _Pbeg, char_type* _Pend);
 
 ### Parameters
 
-*_Pbeg*
- A pointer to the beginning of the buffer.
+*_Pbeg*<br/>
+A pointer to the beginning of the buffer.
 
-*_Pend*
- A pointer to the end of the buffer.
+*_Pend*<br/>
+A pointer to the end of the buffer.
 
 ## <a name="sgetc"></a>  basic_streambuf::sgetc
 
@@ -793,11 +793,11 @@ streamsize sgetn(
 
 ### Parameters
 
-*ptr*
- The buffer to contain the extracted characters.
+*ptr*<br/>
+The buffer to contain the extracted characters.
 
-*count*
- The number of elements to read.
+*count*<br/>
+The number of elements to read.
 
 ### Return Value
 
@@ -899,8 +899,8 @@ int_type sputbackc(char_type _Ch);
 
 ### Parameters
 
-*_Ch*
- The character.
+*_Ch*<br/>
+The character.
 
 ### Return Value
 
@@ -947,8 +947,8 @@ int_type sputc(char_type _Ch);
 
 ### Parameters
 
-*_Ch*
- The character.
+*_Ch*<br/>
+The character.
 
 ### Return Value
 
@@ -990,11 +990,11 @@ streamsize sputn(const char_type* ptr, streamsize count);
 
 ### Parameters
 
-*ptr*
- The character string.
+*ptr*<br/>
+The character string.
 
-*count*
- The count of characters.
+*count*<br/>
+The count of characters.
 
 ### Return Value
 
@@ -1217,11 +1217,11 @@ virtual streamsize xsgetn(
 
 ### Parameters
 
-*ptr*
- The buffer to contain the extracted characters.
+*ptr*<br/>
+The buffer to contain the extracted characters.
 
-*count*
- The number of elements to extract.
+*count*<br/>
+The number of elements to extract.
 
 ### Return Value
 
@@ -1241,11 +1241,11 @@ virtual streamsize xsputn(const char_type* ptr, streamsize count);
 
 ### Parameters
 
-*ptr*
- Pointer to elements to insert.
+*ptr*<br/>
+Pointer to elements to insert.
 
-*count*
- Number of elements to insert.
+*count*<br/>
+Number of elements to insert.
 
 ### Return Value
 

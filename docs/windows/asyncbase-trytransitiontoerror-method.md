@@ -13,30 +13,36 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::TryTransitionToError Method
-Indicates whether the specified error code can modify the internal error state.  
-  
-## Syntax  
-  
-```  
-bool TryTransitionToError(  
-   const HRESULT error  
-);  
-```  
-  
-#### Parameters  
- `error`  
- An error HRESULT.  
-  
-## Return Value  
- `true` if the internal error state was changed; otherwise, `false`.  
-  
-## Remarks  
- This operation modifies the error state only if the error state is already set to S_OK. This operation has no effect if the error state is already error, cancelled, completed, or closed.  
-  
-## Requirements  
- **Header:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [AsyncBase Class](../windows/asyncbase-class.md)
+
+Indicates whether the specified error code can modify the internal error state.
+
+## Syntax
+
+```cpp
+bool TryTransitionToError(
+   const HRESULT error
+);
+```
+
+### Parameters
+
+*error*  
+An error HRESULT.
+
+## Return Value
+
+**true** if the internal error state was changed; otherwise, **false**.
+
+## Remarks
+
+This operation modifies the error state only if the error state is already set to S_OK. This operation has no effect if the error state is already error, cancelled, completed, or closed.
+
+## Requirements
+
+**Header:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[AsyncBase Class](../windows/asyncbase-class.md)

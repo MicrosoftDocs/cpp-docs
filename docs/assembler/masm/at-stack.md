@@ -1,7 +1,7 @@
 ---
 title: "@stack | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["@stack"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @stack
-DGROUP for near stacks or STACK for far stacks (text macro).  
-  
-## Syntax  
-  
-```  
-  
-@stack  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+DGROUP for near stacks or STACK for far stacks (text macro).
+
+## Syntax
+
+> @stack
+
+## See also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

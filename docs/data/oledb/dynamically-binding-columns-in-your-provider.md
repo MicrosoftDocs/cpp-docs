@@ -20,11 +20,11 @@ Make sure you really need dynamic column binding. You might need it because:
   
 ### To implement dynamic column binding  
   
-1.  Remove any **PROVIDER_COLUMN_MAP**s from your code.  
+1.  Remove any `PROVIDER_COLUMN_MAP`s from your code.  
   
 2.  In the user record (your structure), add the following declaration:  
   
-    ```  
+    ```cpp  
     static ATLCOLUMNINFO* GetColumnInfo(void* pThis, ULONG* pcCols);  
     ```  
   
@@ -32,7 +32,7 @@ Make sure you really need dynamic column binding. You might need it because:
   
      The following example shows a `GetColumnInfo` function.  
   
-    ```  
+    ```cpp  
     // Check the property flag for bookmarks, if it is set, set the zero  
     // ordinal entry in the column map with the bookmark information.  
     CAgentRowset* pRowset = (CAgentRowset*) pThis;  

@@ -13,31 +13,35 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CComAutoDeleteCriticalSection Class
-This class provides methods for obtaining and releasing ownership of a critical section object.  
-  
-## Syntax  
-  
+
+This class provides methods for obtaining and releasing ownership of a critical section object.
+
+## Syntax
+
 ```
 class CComAutoDeleteCriticalSection : public CComSafeDeleteCriticalSection
-```  
-  
-## Remarks  
- `CComAutoDeleteCriticalSection` derives from the class [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md). However, `CComAutoDeleteCriticalSection` overrides the [Term](ccomsafedeletecriticalsection-class.md#term) method to **private** access, which forces internal memory cleanup to occur only when instances of this class go out of scope or are explicitly deleted from memory.  
+```
 
-  
- This class introduces no additional methods over its base class. See [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md) and [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) for more information on critical section helper classes.  
-  
-## Inheritance Hierarchy  
- [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md)  
-  
- [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md)  
-  
- `CComAutoDeleteCriticalSection`  
-  
-## Requirements  
- **Header:** atlcore.h  
-  
-## See Also  
- [CComSafeDeleteCriticalSection Class](../../atl/reference/ccomsafedeletecriticalsection-class.md)   
- [CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md)   
- [Class Overview](../../atl/atl-class-overview.md)
+## Remarks
+
+`CComAutoDeleteCriticalSection` derives from the class [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md). However, `CComAutoDeleteCriticalSection` overrides the [Term](ccomsafedeletecriticalsection-class.md#term) method to **private** access, which forces internal memory cleanup to occur only when instances of this class go out of scope or are explicitly deleted from memory.  
+
+This class introduces no additional methods over its base class. See [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md) and [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) for more information on critical section helper classes.
+
+## Inheritance Hierarchy
+
+[CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md)
+
+[CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md)
+
+`CComAutoDeleteCriticalSection`
+
+## Requirements
+
+**Header:** atlcore.h
+
+## See Also
+
+[CComSafeDeleteCriticalSection Class](../../atl/reference/ccomsafedeletecriticalsection-class.md)   
+[CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md)   
+[Class Overview](../../atl/atl-class-overview.md)

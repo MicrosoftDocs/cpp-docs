@@ -32,4 +32,4 @@ typedef C1<x, y, z<T>>::C2<a,b,c> new_class ;
 new_class::f  
 ```  
   
- This warning only occurs in the [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] compiler.
+ This warning only occurs in the x64 compiler.

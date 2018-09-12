@@ -13,26 +13,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLockSharedTraits::Unlock Method
-Releases exclusive control of the specified SRWLock object.  
-  
-## Syntax  
-  
-```  
-inline static void Unlock(  
-   _In_ Type srwlock  
-);  
-```  
-  
-#### Parameters  
- `srwlock`  
- A handle to an SRWLock object.  
-  
-## Return Value  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## See Also  
- [SRWLockSharedTraits Structure](../windows/srwlocksharedtraits-structure.md)
+
+Releases exclusive control of the specified `SRWLock` object.
+
+## Syntax
+
+```cpp
+inline static void Unlock(
+   _In_ Type srwlock
+);
+```
+
+### Parameters
+
+*srwlock*  
+A handle to an `SRWLock` object.
+
+## Return Value
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## See Also
+
+[SRWLockSharedTraits Structure](../windows/srwlocksharedtraits-structure.md)

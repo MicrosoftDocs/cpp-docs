@@ -50,7 +50,7 @@ unsigned char _InterlockedCompareExchange128(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`_InterlockedCompareExchange128`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_InterlockedCompareExchange128`|x64|  
   
  **Header file** \<intrin.h>  
   

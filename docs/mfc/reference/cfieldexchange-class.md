@@ -102,7 +102,7 @@ void SetFieldType(UINT nFieldType);
 |SetFieldType parameter value|Type of parameter data member|  
 |----------------------------------|-----------------------------------|  
 |`CFieldExchange::inputParam`|Input parameter. A value that is passed into the recordset's query or stored procedure.|  
-|``ieldExchange::param**`ame as **CFieldExchange::inputParam`.|  
+|`CFieldExchange::param` | same as `CFieldExchange::inputParam`.|  
 |`CFieldExchange::outputParam`|Output parameter. A return value of the recordset's stored procedure.|  
 |`CFieldExchange::inoutParam`|Input/output parameter. A value that is passed into and returned from the recordset's stored procedure.|  
   

@@ -53,7 +53,7 @@ class COleInsertDialog : public COleDialog
 > [!NOTE]
 >  Application Wizard-generated container code uses this class.  
   
- For more information, see the [OLEUIINSERTOBJECT](http://msdn.microsoft.com/library/windows/desktop/ms691316) structure in the Windows SDK.  
+ For more information, see the [OLEUIINSERTOBJECT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiinsertobjecta) structure in the Windows SDK.  
   
  For more information regarding OLE-specific dialog boxes, see the article [Dialog Boxes in OLE](../../mfc/dialog-boxes-in-ole.md).  
   
@@ -85,25 +85,26 @@ COleInsertDialog (
 ```  
   
 ### Parameters  
- *dwFlags*  
- Creation flag that contains any number of the following values to be combined using the bitwise-OR operator:  
+
+*dwFlags*  
+Creation flag that contains any number of the following values to be combined using the bitwise-OR operator:  
   
 - IOF_SHOWHELP Specifies that the Help button will be displayed when the dialog box is called.  
-  
+      
 - IOF_SELECTCREATENEW Specifies that the Create New radio button will be selected initially when the dialog box is called. This is the default and cannot be used with IOF_SELECTCREATEFROMFILE.  
-  
+      
 - IOF_SELECTCREATEFROMFILE Specifies that the Create From File radio button will be selected initially when the dialog box is called. Cannot be used with IOF_SELECTCREATENEW.  
-  
+      
 - IOF_CHECKLINK Specifies that the Link check box will be checked initially when the dialog box is called.  
-  
+      
 - IOF_DISABLELINK Specifies that the Link check box will be disabled when the dialog box is called.  
-  
+      
 - IOF_CHECKDISPLAYASICON Specifies that the Display As Icon check box will be checked initially, the current icon will be displayed, and the Change Icon button will be enabled when the dialog box is called.  
-  
+      
 - IOF_VERIFYSERVERSEXIST Specifies that the dialog box should validate the classes it adds to the list box by ensuring that the servers specified in the registration database exist before the dialog box is displayed. Setting this flag can significantly impair performance.  
   
- *pParentWnd*  
- Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is NULL, the parent window of the dialog object is set to the main application window.  
+*pParentWnd*  
+Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is NULL, the parent window of the dialog object is set to the main application window.  
   
 ### Remarks  
  To display the dialog box, call the [DoModal](#domodal) function.  
@@ -154,7 +155,7 @@ INT_PTR
   
 -   IDCANCEL if the user canceled the dialog box.  
   
--   IDABORT if an error occurred. If IDABORT is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIInsertObject](http://msdn.microsoft.com/library/windows/desktop/ms694325) function in the Windows SDK.  
+-   IDABORT if an error occurred. If IDABORT is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIInsertObject](/windows/desktop/api/oledlg/nf-oledlg-oleuiinsertobjecta) function in the Windows SDK.  
   
 ### Remarks  
  If you want to initialize the various dialog box controls by setting members of the [m_io](#m_io) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
@@ -172,7 +173,7 @@ REFCLSID GetClassID() const;
  Returns the CLSID associated with the selected item.  
   
 ### Remarks  
- For more information, see [CLSID Key](http://msdn.microsoft.com/library/windows/desktop/ms691424) in the Windows SDK.  
+ For more information, see [CLSID Key](/windows/desktop/com/clsid-key-hklm) in the Windows SDK.  
   
 ##  <a name="getdrawaspect"></a>  COleInsertDialog::GetDrawAspect  
  Call this function to determine if the user chose to display the selected item as an icon.  
@@ -191,7 +192,7 @@ DVASPECT GetDrawAspect() const;
 ### Remarks  
  Call this function only if [DoModal](#domodal) returns IDOK.  
   
- For more information on drawing aspect, see [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) data structure in the Windows SDK.  
+ For more information on drawing aspect, see [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) data structure in the Windows SDK.  
   
 ##  <a name="geticonicmetafile"></a>  COleInsertDialog::GetIconicMetafile  
  Call this function to get a handle to the metafile that contains the iconic aspect of the selected item.  
@@ -252,7 +253,7 @@ OLEUIINSERTOBJECT m_io;
 ### Remarks  
  Members of this structure can be modified either directly or through member functions.  
   
- For more information, see the [OLEUIINSERTOBJECT](http://msdn.microsoft.com/library/windows/desktop/ms691316) structure in the Windows SDK.  
+ For more information, see the [OLEUIINSERTOBJECT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiinsertobjecta) structure in the Windows SDK.  
   
 ## See Also  
  [MFC Sample OCLIENT](../../visual-cpp-samples.md)   

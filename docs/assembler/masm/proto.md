@@ -1,7 +1,7 @@
 ---
 title: "PROTO | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["PROTO"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # PROTO
-Prototypes a function.  
-  
-## Syntax  
-  
-```  
-  
-label  
- PROTO [[distance]] [[langtype]] [[, [[parameter]]:tag]]...  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Prototypes a function.
+
+## Syntax
+
+> *label* PROTO [[*distance*]] [[*langtype*]] [[, [[*parameter*]]:*tag*]]...
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

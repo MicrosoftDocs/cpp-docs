@@ -13,47 +13,53 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # VerifyInterfaceHelper Structure
-Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-template <  
-   bool isWinRTInterface,  
-   typename I  
->  
-struct VerifyInterfaceHelper;  
-  
-template <  
-   typename I  
->  
-struct VerifyInterfaceHelper<false, I>;  
-```  
-  
-#### Parameters  
- `I`  
- An interface to verify.  
-  
- `isWinRTInterface`  
-  
-## Remarks  
- Verifies that the interface specified by the template parameter meets certain requirements.  
-  
-## Members  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[VerifyInterfaceHelper::Verify Method](../windows/verifyinterfacehelper-verify-method.md)||  
-  
-## Inheritance Hierarchy  
- `VerifyInterfaceHelper`  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+template <
+   bool isWinRTInterface,
+   typename I
+>
+struct VerifyInterfaceHelper;
+
+template <
+   typename I
+>
+struct VerifyInterfaceHelper<false, I>;
+```
+
+### Parameters
+
+*I*  
+An interface to verify.
+
+*isWinRTInterface*
+
+## Remarks
+
+Verifies that the interface specified by the template parameter meets certain requirements.
+
+## Members
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[VerifyInterfaceHelper::Verify Method](../windows/verifyinterfacehelper-verify-method.md)||
+
+## Inheritance Hierarchy
+
+`VerifyInterfaceHelper`
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

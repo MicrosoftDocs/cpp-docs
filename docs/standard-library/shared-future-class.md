@@ -92,8 +92,8 @@ shared_future& operator=(const shared_future& Right);
 
 ### Parameters
 
-*Right*
- A `shared_future` object.
+*Right*<br/>
+A `shared_future` object.
 
 ### Return Value
 
@@ -118,8 +118,8 @@ shared_future(const shared_future& Right);
 
 ### Parameters
 
-*Right*
- A [future](../standard-library/future-class.md) or `shared_future` object.
+*Right*<br/>
+A [future](../standard-library/future-class.md) or `shared_future` object.
 
 ### Remarks
 
@@ -165,8 +165,8 @@ future_status wait_for(
 
 ### Parameters
 
-*Rel_time*
- A [chrono::duration](../standard-library/duration-class.md) object that specifies a maximum time interval that the thread blocks.
+*Rel_time*<br/>
+A [chrono::duration](../standard-library/duration-class.md) object that specifies a maximum time interval that the thread blocks.
 
 ### Return Value
 
@@ -188,8 +188,8 @@ future_status wait_until(
 
 ### Parameters
 
-*Abs_time*
- A [chrono::time_point](../standard-library/time-point-class.md) object that specifies a time after which the thread can unblock.
+*Abs_time*<br/>
+A [chrono::time_point](../standard-library/time-point-class.md) object that specifies a time after which the thread can unblock.
 
 ### Return Value
 

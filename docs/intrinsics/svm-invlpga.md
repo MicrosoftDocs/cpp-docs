@@ -33,13 +33,13 @@ void __svm_invlpga(
 |[in] `ASID`|The address space identifier (ASID) of the page to invalidate.|  
   
 ## Remarks  
- The `__svm_invlpga` function is equivalent to the `INVLPGA` machine instruction. This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, search for the document, "AMD64 Architecture Programmer's Manual Volume 2: System Programming," document number 24593, revision 3.11, at the [AMD corporation](http://go.microsoft.com/fwlink/p/?linkid=23746) site.  
+ The `__svm_invlpga` function is equivalent to the `INVLPGA` machine instruction. This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, search for the document, "AMD64 Architecture Programmer's Manual Volume 2: System Programming," document number 24593, revision 3.11, at the [AMD corporation](https://developer.amd.com/resources/developer-guides-manuals/) site.  
   
 ## Requirements  
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__svm_invlpga`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__svm_invlpga`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

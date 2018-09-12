@@ -44,13 +44,13 @@ unsigned char __vmx_vmwrite( 
  The operation failed without status available.  
   
 ## Remarks  
- The `__vmx_vmwrite` function is equivalent to the `VMWRITE` machine instruction. The value of the `Field` parameter is an encoded field index that is described in Intel documentation. For more information, search for the document, "Intel Virtualization Technical Specification for the IA-32 Intel Architecture," document number C97063-002, at the [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) site, and then consult Appendix C of that document.  
+ The `__vmx_vmwrite` function is equivalent to the `VMWRITE` machine instruction. The value of the `Field` parameter is an encoded field index that is described in Intel documentation. For more information, search for the document, "Intel Virtualization Technical Specification for the IA-32 Intel Architecture," document number C97063-002, at the [Intel Corporation](https://software.intel.com/en-us/articles/intel-sdm) site, and then consult Appendix C of that document.  
   
 ## Requirements  
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__vmx_vmwrite`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__vmx_vmwrite`|x64|  
   
  **Header file** \<intrin.h>  
   

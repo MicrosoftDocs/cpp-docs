@@ -13,28 +13,28 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::UnregisterWinRTObject Method
-Unregisters one or more Windows Runtime objects so that other applications cannot connect to them.  
-  
-## Syntax  
-  
-```  
-virtual HRESULT UnregisterWinRTObject(  
-   unsigned int,  
-   _Inout_ WINRT_REGISTRATION_COOKIE* cookie  
-);  
-  
-```  
-  
-#### Parameters  
- `cookie`  
- A pointer to a value that identifies the class object whose registration is to be revoked.  
-  
-## Return Value  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL
- 
- ## See Also
- [Module Class](../windows/module-class.md)
+
+Unregisters one or more Windows Runtime objects so that other applications cannot connect to them.
+
+## Syntax
+
+```cpp
+virtual HRESULT UnregisterWinRTObject(
+   unsigned int,
+   _Inout_ WINRT_REGISTRATION_COOKIE* cookie
+);
+```
+
+### Parameters
+
+*cookie*  
+A pointer to a value that identifies the class object whose registration is to be revoked.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+[Module Class](../windows/module-class.md)

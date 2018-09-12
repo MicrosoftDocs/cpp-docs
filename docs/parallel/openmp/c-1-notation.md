@@ -11,16 +11,13 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # C.1 Notation
-The grammar rules consist of the name for a non-terminal, followed by a colon, followed by replacement alternatives on separate lines.  
-  
- The syntactic expression termopt indicates that the term is optional within the replacement.  
-  
- The syntactic expression *term*optseq is equivalent to *term-seq*opt with the following additional rules:  
-  
- *term-seq* :  
-  
- *term*  
-  
- *term-seq term*  
-  
- *term-seq* , *term*
+The grammar rules consist of the name for a non-terminal, followed by a colon, followed by replacement alternatives on separate lines.
+
+The syntactic expression term<sub>opt</sub> indicates that the term is optional within the replacement.
+
+The syntactic expression *term*<sub>optseq</sub> is equivalent to *term-seq*<sub>opt</sub> with the following additional rules:
+
+*term-seq* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*term*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*term-seq* *term*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*term-seq* **,** *term*

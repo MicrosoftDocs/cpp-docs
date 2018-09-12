@@ -34,7 +34,7 @@ In the parent class of the rebar control, create an `OnChildNotify` handler func
   
 -   RBN_LAYOUTCHANGED Sent by a rebar control when the user changes the layout of the control's bands.  
   
- For more information on these notifications, see [Rebar Control Reference](http://msdn.microsoft.com/library/windows/desktop/bb774375) in the Windows SDK.  
+ For more information on these notifications, see [Rebar Control Reference](https://msdn.microsoft.com/library/windows/desktop/bb774375) in the Windows SDK.  
   
 ## See Also  
  [Using CReBarCtrl](../mfc/using-crebarctrl.md)   

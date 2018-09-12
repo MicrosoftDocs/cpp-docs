@@ -13,37 +13,39 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # propput
-Specifies a property setting function.  
-  
-## Syntax  
-  
-```  
-  
-[propput]  
-  
-```  
-  
-## Remarks  
- The **propput** C++ attribute has the same functionality as the [propput](http://msdn.microsoft.com/library/windows/desktop/aa367146) MIDL attribute.  
-  
-## Example  
- See the example for [bindable](../windows/bindable.md) for a sample use of **propput**.  
-  
-## Requirements  
-  
-### Attribute Context  
-  
-|||  
-|-|-|  
-|**Applies to**|Method|  
-|**Repeatable**|No|  
-|**Required attributes**|None|  
-|**Invalid attributes**|**propget**, **propputref**|  
-  
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
-  
-## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
- [Method Attributes](../windows/method-attributes.md)   
- [propget](../windows/propget.md)   
- [propputref](../windows/propputref.md)
+
+Specifies a property setting function.
+
+## Syntax
+
+```cpp
+[propput]
+```
+
+## Remarks
+
+The **propput** C++ attribute has the same functionality as the [propput](/windows/desktop/Midl/propput) MIDL attribute.
+
+## Example
+
+See the example for [bindable](../windows/bindable.md) for a sample use of **propput**.
+
+## Requirements
+
+### Attribute Context
+
+|||
+|-|-|
+|**Applies to**|Method|
+|**Repeatable**|No|
+|**Required attributes**|None|
+|**Invalid attributes**|`propget`, `propputref`|
+
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+
+## See Also
+
+[IDL Attributes](../windows/idl-attributes.md)  
+[Method Attributes](../windows/method-attributes.md)  
+[propget](../windows/propget.md)  
+[propputref](../windows/propputref.md)

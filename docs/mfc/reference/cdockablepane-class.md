@@ -76,7 +76,7 @@ class CDockablePane : public CPane
 |[CDockablePane::IsTabLocationBottom](#istablocationbottom)|Specifies whether tabs are located at the top or bottom of the pane.|  
 |[CDockablePane::IsTracked](#istracked)|Specifies whether a pane is being dragged by the user.|  
 |[CDockablePane::IsVisible](#isvisible)|Determines whether the current pane is visible.|  
-|[CDockablePane::LoadState](http://msdn.microsoft.com/en-us/96110136-4f46-4764-8a76-3b4abaf77917)|Used internally.|  
+|[CDockablePane::LoadState](#loadstate)|Used internally.|  
 |[CDockablePane::OnAfterChangeParent](#onafterchangeparent)|Called by the framework when the parent of a pane has changed. (Overrides [CPane::OnAfterChangeParent](../../mfc/reference/cpane-class.md#onafterchangeparent).)|  
 |[CDockablePane::OnAfterDockFromMiniFrame](#onafterdockfromminiframe)|Called by the framework when a floating docking bar docks at a frame window.|  
 |[CDockablePane::OnBeforeChangeParent](#onbeforechangeparent)|Called by the framework when the parent of the pane is about to change. (Overrides [CPane::OnBeforeChangeParent](../../mfc/reference/cpane-class.md#onbeforechangeparent).)|  
@@ -790,7 +790,7 @@ virtual AFX_CS_STATUS GetDockingStatus(
 ### Remarks  
  The framework calls this method to handle docking of a floating pane.  
   
- For floating toolbars or docking panes that use the DT_IMMEDIATE docking mode, the framework delays the dock command to enable the user to move the window out of the client area of the parent frame before docking occurs. The length of the delay is measured in milliseconds and is controlled by the [CDockingManager::m_nTimeOutBeforeToolBarDock](../../mfc/reference/cdockingmanager-class.md#m_ntimeoutbeforetoolbardock) data member.. The default value of [CDockingManager::m_nTimeOutBeforeToolBarDock](../../mfc/reference/cdockingmanager-class.md#m_ntimeoutbeforetoolbardock) is 200. This behavior emulates the docking behavior of [!INCLUDE[ofprword](../../mfc/reference/includes/ofprword_md.md)] 2007.  
+ For floating toolbars or docking panes that use the DT_IMMEDIATE docking mode, the framework delays the dock command to enable the user to move the window out of the client area of the parent frame before docking occurs. The length of the delay is measured in milliseconds and is controlled by the [CDockingManager::m_nTimeOutBeforeToolBarDock](../../mfc/reference/cdockingmanager-class.md#m_ntimeoutbeforetoolbardock) data member.. The default value of [CDockingManager::m_nTimeOutBeforeToolBarDock](../../mfc/reference/cdockingmanager-class.md#m_ntimeoutbeforetoolbardock) is 200. This behavior emulates the docking behavior of Microsoft Word 2007.  
   
  For delayed docking states (CS_DELAY_DOCK and CS_DELAY_DOCK_TO_TAB), the framework does not perform docking until the user releases the mouse button. If a pane uses the DT_STANDARD docking mode, the framework displays a rectangle at the projected docking location. If a pane uses the DT_SMART docking mode, the framework displays smart docking markers and semi-transparent rectangles at the projected docking location. To specify the docking mode for your pane, call the [CBasePane::SetDockingMode](../../mfc/reference/cbasepane-class.md#setdockingmode) method. For more information about smart docking, see [CDockingManager::GetSmartDockingParams](../../mfc/reference/cdockingmanager-class.md#getsmartdockingparams).  
   
@@ -1016,7 +1016,18 @@ virtual BOOL IsVisible() const;
  If the dockable pane is in autohide mode and `IsHideInAutoHideMode` returns TRUE the visibility state depends on the visibility state of the related autohide toolbar.  
   
  If the dockable pane is not in autohide mode, the visibility state is determined by the [CBasePane::IsVisible](../../mfc/reference/cbasepane-class.md#isvisible) method.  
-  
+
+## ##  <a name="loadstate"></a>  CDockablePane::LoadState  
+For internal use only. For more detail see the source code located in the VC\atlmfc\src\mfc folder of your Visual Studio installation.
+
+```
+virtual BOOL LoadState(
+   LPCTSTR lpszProfileName = NULL,
+   int nIndex = -1,
+   UINT uiID = (UINT) -1
+);  
+```
+
 ##  <a name="m_bdisableanimation"></a>  CDockablePane::m_bDisableAnimation  
  Specifies whether autohide animation of the dockable pane is disabled.  
   
@@ -1049,7 +1060,7 @@ AFX_IMPORT_DATA static int m_nSlideSteps;
  For a faster animation effect, decrease this value. For a slower animation effect, increase this value.  
   
 ##  <a name="onafterchangeparent"></a>  CDockablePane::OnAfterChangeParent  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual void OnAfterChangeParent(CWnd* pWndOldParent);

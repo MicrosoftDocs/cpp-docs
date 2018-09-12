@@ -37,17 +37,17 @@ unspecified bind(Fty fn, T1 t1, T2 t2, ..., TN tN);
 
 ### Parameters
 
-*Fty*
- The type of the object to call.
+*Fty*<br/>
+The type of the object to call.
 
-*TN*
- The type of the Nth call argument.
+*TN*<br/>
+The type of the Nth call argument.
 
-*fn*
- The object to call.
+*fn*<br/>
+The object to call.
 
-*tN*
- The Nth call argument.
+*tN*<br/>
+The Nth call argument.
 
 ### Remarks
 
@@ -136,11 +136,11 @@ binder1st <Operation> bind1st (const Operation& func, const Type& left);
 
 ### Parameters
 
-*func*
- The binary function object to be converted to a unary function object.
+*func*<br/>
+The binary function object to be converted to a unary function object.
 
-*left*
- The value to which the first argument of the binary function object is to be bound.
+*left*<br/>
+The value to which the first argument of the binary function object is to be bound.
 
 ### Return Value
 
@@ -230,11 +230,11 @@ binder2nd <Operation> bind2nd(const Operation& func, const Type& right);
 
 ### Parameters
 
-*func*
- The binary function object to be converted to a unary function object.
+*func*<br/>
+The binary function object to be converted to a unary function object.
 
-*right*
- The value to which the second argument of the binary function object is to be bound.
+*right*<br/>
+The value to which the second argument of the binary function object is to be bound.
 
 ### Return Value
 
@@ -323,7 +323,7 @@ struct bit_and : public binary_function<Type, Type, Type> {
     Type operator()(
     const Type& Left,
     const Type& Right) const;
- };
+};
 
 // specialized transparent functor for operator&
 template <>
@@ -338,13 +338,13 @@ struct bit_and<void>
 ### Parameters
 
 *Type*, *T*, *U*
- Any type that supports an `operator&` that takes operands of the specified or inferred types.
+Any type that supports an `operator&` that takes operands of the specified or inferred types.
 
-*Left*
- The left operand of the bitwise AND operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
+*Left*<br/>
+The left operand of the bitwise AND operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
 
-*Right*
- The right operand of the bitwise AND operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
+*Right*<br/>
+The right operand of the bitwise AND operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
 
 ### Return Value
 
@@ -361,26 +361,26 @@ A predefined function object that performs the bitwise complement (NOT) operatio
 ```cpp
 template <class Type = void>
 struct bit_not : public unary_function<Type, Type>
- {
+{
     Type operator()(const Type& Right) const;
- };
+};
 
 // specialized transparent functor for operator~
 template <>
 struct bit_not<void>
- {
+{
     template <class Type>
     auto operator()(Type&& Right) const  ->  decltype(~std::forward<Type>(Right));
- };
+};
 ```
 
 ### Parameters
 
-*Type*
- A type that supports a unary `operator~`.
+*Type*<br/>
+A type that supports a unary `operator~`.
 
-*Right*
- The operand of the bitwise complement operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of an lvalue or rvalue reference argument of inferred type *Type*.
+*Right*<br/>
+The operand of the bitwise complement operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of an lvalue or rvalue reference argument of inferred type *Type*.
 
 ### Return Value
 
@@ -400,7 +400,7 @@ struct bit_or : public binary_function<Type, Type, Type> {
     Type operator()(
     const Type& Left,
     const Type& Right) const;
- };
+};
 
 // specialized transparent functor for operator|
 template <>
@@ -415,13 +415,13 @@ struct bit_or<void>
 ### Parameters
 
 *Type*, *T*, *U*
- Any type that supports an `operator|` that takes operands of the specified or inferred types.
+Any type that supports an `operator|` that takes operands of the specified or inferred types.
 
-*Left*
- The left operand of the bitwise OR operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
+*Left*<br/>
+The left operand of the bitwise OR operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
 
-*Right*
- The right operand of the bitwise OR operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
+*Right*<br/>
+The right operand of the bitwise OR operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
 
 ### Return Value
 
@@ -441,7 +441,7 @@ struct bit_xor : public binary_function<Type, Type, Type> {
     Type operator()(
     const Type& Left,
     const Type& Right) const;
- };
+};
 
 // specialized transparent functor for operator^
 template <>
@@ -456,13 +456,13 @@ struct bit_xor<void>
 ### Parameters
 
 *Type*, *T*, *U*
- Any type that supports an `operator^` that takes operands of the specified or inferred types.
+Any type that supports an `operator^` that takes operands of the specified or inferred types.
 
-*Left*
- The left operand of the bitwise XOR operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
+*Left*<br/>
+The left operand of the bitwise XOR operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
 
-*Right*
- The right operand of the bitwise XOR operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
+*Right*<br/>
+The right operand of the bitwise XOR operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
 
 ### Return Value
 
@@ -486,11 +486,11 @@ reference_wrapper<const Ty> cref(const reference_wrapper<Ty>& arg);
 
 ### Parameters
 
-*Ty*
- The type of the argument to wrap.
+*Ty*<br/>
+The type of the argument to wrap.
 
-*arg*
- The argument to wrap.
+*arg*<br/>
+The argument to wrap.
 
 ### Remarks
 
@@ -540,11 +540,11 @@ unspecified mem_fn(Ret Ty::*pm);
 
 ### Parameters
 
-*Ret*
- The return type of the wrapped function.
+*Ret*<br/>
+The return type of the wrapped function.
 
-*Ty*
- The type of the member function pointer.
+*Ty*<br/>
+The type of the member function pointer.
 
 ### Remarks
 
@@ -613,8 +613,8 @@ const_mem_fun1_t<Result, Type, Arg> mem_fun(Result (Type::* pmem)(Arg) const);
 
 ### Parameters
 
-*pmem*
- A pointer to the member function of class `Type` to be converted to a function object.
+*pmem*<br/>
+A pointer to the member function of class `Type` to be converted to a function object.
 
 ### Return Value
 
@@ -700,8 +700,8 @@ const_mem_fun1_ref_t<Result, Type, Arg> mem_fun_ref(Result (T::* pmem)(Arg) cons
 
 ### Parameters
 
-*pmem*
- A pointer to the member function of class `Type` to be converted to a function object.
+*pmem*<br/>
+A pointer to the member function of class `Type` to be converted to a function object.
 
 ### Return Value
 
@@ -796,8 +796,8 @@ unary_negate<UnaryPredicate> not1(const UnaryPredicate& pred);
 
 ### Parameters
 
-*pred*
- The unary predicate to be negated.
+*pred*<br/>
+The unary predicate to be negated.
 
 ### Return Value
 
@@ -868,8 +868,8 @@ binary_negate<BinaryPredicate> not2(const BinaryPredicate& func);
 
 ### Parameters
 
-*func*
- The binary predicate to be negated.
+*func*<br/>
+The binary predicate to be negated.
 
 ### Return Value
 
@@ -947,14 +947,14 @@ pointer_to_binary_function<Arg1, Arg2, Result, Result (*)(Arg1, Arg2)> ptr_fun(R
 
 ### Parameters
 
-*pfunc*
- The unary or binary function pointer to be converted to an adaptable function.
+*pfunc*<br/>
+The unary or binary function pointer to be converted to an adaptable function.
 
 ### Return Value
 
-The first template function returns the unary function [pointer_to_unary_function](../standard-library/pointer-to-unary-function-class.md) < `Arg`, **Result**>(* `pfunc`).
+The first template function returns the unary function [pointer_to_unary_function](../standard-library/pointer-to-unary-function-class.md) < `Arg`, **Result**>(\* `pfunc`).
 
-The second template function returns binary function [pointer_to_binary_function](../standard-library/pointer-to-binary-function-class.md) \< **Arg1**, **Arg2**, **Result**>(* `pfunc`).
+The second template function returns binary function [pointer_to_binary_function](../standard-library/pointer-to-binary-function-class.md) \< **Arg1**, **Arg2**, **Result**>(\* `pfunc`).
 
 ### Remarks
 
@@ -1067,14 +1067,14 @@ void swap(function<Fty>& f1, function<Fty>& f2);
 
 ### Parameters
 
-*Fty*
- The type controlled by the function objects.
+*Fty*<br/>
+The type controlled by the function objects.
 
-*f1*
- The first function object.
+*f1*<br/>
+The first function object.
 
-*f2*
- The second function object.
+*f2*<br/>
+The second function object.
 
 ### Remarks
 

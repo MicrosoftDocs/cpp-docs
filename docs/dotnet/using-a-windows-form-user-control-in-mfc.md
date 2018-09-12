@@ -29,10 +29,6 @@ The following sections describe how to:
 > [!NOTE]
 > When you build your application using a private (modified) copy of the MFC Windows Forms interfaces DLL (mfcmifc80.dll), it will fail to install in the GAC unless you replace the Microsoft key with your own vendor key. For more information on assembly signing, see [Programming with Assemblies](/dotnet/framework/app-domains/programming-with-assemblies) and [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
 
-For sample applications using Windows Forms, see [BirthdayPicker Sample: Demonstrates .NET Framework Resources with Windows Forms](http://msdn.microsoft.com/ac932aed-5502-4667-be29-709bca435317), [Calculator Sample: Windows Forms Pocket Calculator](http://msdn.microsoft.com/2283b516-3b7e-45f2-80c4-fdcfb366ce25), and [Scribble Sample: MDI Drawing Application](http://msdn.microsoft.com/f025da3e-659b-4222-b991-554a1b8b2358).
-
-For a sample application that shows Windows Forms used with MFC, see [MFC and Windows Forms Integration](http://www.microsoft.com/downloads/details.aspx?FamilyID=987021bc-e575-4fe3-baa9-15aa50b0f599&displaylang=en).
-
 If your MFC application uses Windows Forms, you need to redistribute mfcmifc80.dll with your application. For more information, see [Redistributing the MFC Library](../ide/redistributing-the-mfc-library.md).
 
 ## In This Section

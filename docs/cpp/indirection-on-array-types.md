@@ -12,7 +12,8 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Indirection on Array Types
-Use of the indirection operator (**\***) on an *n*-dimensional array type yields an *n*-1 dimensional array. If *n* is 1, a scalar (or array element) is yielded.  
+
+Use of the indirection operator (<strong>\*</strong>) on an *n*-dimensional array type yields an *n*-1 dimensional array. If *n* is 1, a scalar (or array element) is yielded.  
   
-## See Also  
+## See also  
  [Arrays](../cpp/arrays-cpp.md)

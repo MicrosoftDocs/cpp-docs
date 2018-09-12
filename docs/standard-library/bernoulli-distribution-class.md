@@ -48,7 +48,7 @@ public:
 
 ### Parameters
 
-*URNG*
+*URNG*<br/>
 The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -131,7 +131,7 @@ Enter an integer value for a sample count: 100
 p == 0.45
 Histogram for 100 samples:
 false :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- true :::::::::::::::::::::::::::::::::::::::::
+true :::::::::::::::::::::::::::::::::::::::::
 ```
 
 ## Requirements
@@ -151,11 +151,11 @@ explicit bernoulli_distribution(const param_type& parm);
 
 ### Parameters
 
-*p*
- The stored `p` distribution parameter.
+*p*<br/>
+The stored `p` distribution parameter.
 
-*parm*
- The `param_type` structure used to construct the distribution.
+*parm*<br/>
+The `param_type` structure used to construct the distribution.
 
 ### Remarks
 
@@ -180,7 +180,7 @@ struct param_type {
 
 ### Parameters
 
-*p*
+*p*<br/>
 The stored `p` distribution parameter.
 
 ### Remarks

@@ -1,7 +1,7 @@
 ---
 title: "IRP | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["IRP"]
@@ -13,16 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # IRP
-## Syntax  
-  
-```  
-  
-IRP  
-  
-```  
-  
-## Remarks  
- See [FOR](../../assembler/masm/for-masm.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+## Syntax
+
+> IRP
+
+## Remarks
+
+See [FOR](../../assembler/masm/for-masm.md).
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

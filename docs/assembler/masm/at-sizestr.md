@@ -1,7 +1,7 @@
 ---
 title: "@SizeStr | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["@SizeStr"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @SizeStr
-A macro function that returns the length of the given string. Returns an integer.  
-  
-## Syntax  
-  
-```  
-  
-@SizeStr( string )  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+A macro function that returns the length of the given string. Returns an integer.
+
+## Syntax
+
+> @SizeStr( string )
+
+## See also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

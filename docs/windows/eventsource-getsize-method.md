@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventSource::GetSize Method
-Retrieves the number of event handlers associated with the current EventSource object  
-  
-## Syntax  
-  
-```  
-size_t GetSize() const;  
-```  
-  
-## Return Value  
- The number of event handlers in [targets_](../windows/eventsource-targets-data-member.md).  
-  
-## Requirements  
- **Header:** event.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [EventSource Class](../windows/eventsource-class.md)
+
+Retrieves the number of event handlers associated with the current **EventSource** object
+
+## Syntax
+
+```cpp
+size_t GetSize() const;
+```
+
+## Return Value
+
+The number of event handlers in [targets_](../windows/eventsource-targets-data-member.md).
+
+## Requirements
+
+**Header:** event.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[EventSource Class](../windows/eventsource-class.md)

@@ -36,7 +36,7 @@ unsigned __int64 __readdr(unsigned int DebugRegister);
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__readdr`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__readdr`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

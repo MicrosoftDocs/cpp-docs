@@ -13,24 +13,28 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # InterfaceTraits::Verify Method
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-__forceinline static void Verify();  
-```  
-  
-## Remarks  
- Verifies that Base is properly derived.  
-  
- For more information about `Base`, see the Public Typedefs section in [InterfaceTraits Structure](../windows/interfacetraits-structure.md).  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [InterfaceTraits Structure](../windows/interfacetraits-structure.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+__forceinline static void Verify();
+```
+
+## Remarks
+
+Verifies that `Base` is properly derived.
+
+For more information about `Base`, see the **Public Typedefs** section in [InterfaceTraits Structure](../windows/interfacetraits-structure.md).
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[InterfaceTraits Structure](../windows/interfacetraits-structure.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

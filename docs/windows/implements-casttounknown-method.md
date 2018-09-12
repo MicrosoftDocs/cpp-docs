@@ -13,24 +13,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Implements::CastToUnknown Method
-Gets a pointer to the underlying IUnknown interface.  
-  
-## Syntax  
-  
-```  
-__forceinline IUnknown* CastToUnknown();  
-```  
-  
-## Return Value  
- This operation always succeeds and returns the IUnknown pointer.  
-  
-## Remarks  
- Internal helper function.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Implements Structure](../windows/implements-structure.md)
+
+Gets a pointer to the underlying `IUnknown` interface.
+
+## Syntax
+
+```cpp
+__forceinline IUnknown* CastToUnknown();
+```
+
+## Return Value
+
+This operation always succeeds and returns the `IUnknown` pointer.
+
+## Remarks
+
+Internal helper function.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Implements Structure](../windows/implements-structure.md)

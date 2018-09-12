@@ -45,4 +45,4 @@ Enables the [Auto-Parallelizer](../../parallel/auto-parallelization-and-auto-vec
  [Compiler Options](../../build/reference/compiler-options.md)   
  [Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
  [#pragma loop()](../../preprocessor/loop.md)   
- [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/p/?linkid=263662)
+ [Parallel Programming in Native Code](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/)

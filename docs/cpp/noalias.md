@@ -16,19 +16,19 @@ ms.workload: ["cplusplus"]
 
 **Microsoft Specific**
 
-`noalias` means that a function call does not modify or reference visible global state and only modifies the memory pointed to *directly* by pointer parameters (first-level indirections).
+**noalias** means that a function call does not modify or reference visible global state and only modifies the memory pointed to *directly* by pointer parameters (first-level indirections).
 
-If a function is annotated as `noalias`, the optimizer can assume that, in addition to the parameters themselves, only first-level indirections of pointer parameters are referenced or modified inside the function. The visible global state is the set of all data that is not defined or referenced outside of the compilation scope, and their address is not taken. The compilation scope is all source files ([/LTCG (Link-time Code Generation)](../build/reference/ltcg-link-time-code-generation.md) builds) or a single source file (non-**/LTCG** build).
+If a function is annotated as **noalias**, the optimizer can assume that, in addition to the parameters themselves, only first-level indirections of pointer parameters are referenced or modified inside the function. The visible global state is the set of all data that is not defined or referenced outside of the compilation scope, and their address is not taken. The compilation scope is all source files ([/LTCG (Link-time Code Generation)](../build/reference/ltcg-link-time-code-generation.md) builds) or a single source file (non-**/LTCG** build).
 
-The `noalias` annotation only applies within the body of the annotated function. Marking a function as `__declspec(noalias)` does not affect the aliasing of pointers returned by the function.
+The **noalias** annotation only applies within the body of the annotated function. Marking a function as **__declspec(noalias)** does not affect the aliasing of pointers returned by the function.
 
 For another annotation that can impact aliasing, see [__declspec(restrict)](../cpp/restrict.md).
 
 ## Example
 
-The following sample demonstrates the use of `__declspec(noalias)`.
+The following sample demonstrates the use of **__declspec(noalias)**.
 
-When the function `multiply` that accesses memory is annotated `__declspec(noalias)`, it tells the compiler that this function does not modify the global state except through the pointers in its parameter list.
+When the function `multiply` that accesses memory is annotated **__declspec(noalias)**, it tells the compiler that this function does not modify the global state except through the pointers in its parameter list.
 
 ```C
 // declspec_noalias.c
@@ -96,8 +96,7 @@ int main()
 }
 ```
 
-## See Also
-
-[__declspec](../cpp/declspec.md)  
-[Keywords](../cpp/keywords-cpp.md)  
-[__declspec(restrict)](../cpp/restrict.md)  
+## See also
+ [__declspec](../cpp/declspec.md)  
+ [Keywords](../cpp/keywords-cpp.md)  
+ [__declspec(restrict)](../cpp/restrict.md)  

@@ -20,11 +20,11 @@ The restart manager is a feature added to Visual Studio for Windows Vista or lat
 > [!NOTE]
 >  You can override the default behavior of the restart manager for saving data and restarting the application.  
   
- By default, MFC applications created by using the project wizard in [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] support the restart manager when the applications are run on a computer that has a Windows Vista or later operating system. If you do not want your application to support the restart manager, you can disable the restart manager in the new project wizard.  
+ By default, MFC applications created by using the project wizard in Visual Studio support the restart manager when the applications are run on a computer that has a Windows Vista or later operating system. If you do not want your application to support the restart manager, you can disable the restart manager in the new project wizard.  
   
 ### To Add Support For the Restart Manager to an Existing Application  
   
-1.  Open an existing MFC application in [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].  
+1.  Open an existing MFC application in Visual Studio.  
   
 2.  Open the source file for your main application. By default this is the .cpp file that has the same name as your application. For example, the main application source file for MyProject is MyProject.cpp.  
   

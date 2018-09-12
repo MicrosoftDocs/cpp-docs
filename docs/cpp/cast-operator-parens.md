@@ -17,7 +17,6 @@ A type cast provides a method for explicit conversion of the type of an object i
 ## Syntax  
   
 ```  
-  
 unary-expression ( type-name ) cast-expression  
 ```  
   
@@ -116,7 +115,7 @@ Note that the cast changed the raw internal string
 Raw Bytes after cast:   Exciting  
 ```  
   
-## See Also  
+## See also  
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Explicit Type Conversion Operator: ()](../cpp/explicit-type-conversion-operator-parens.md)   

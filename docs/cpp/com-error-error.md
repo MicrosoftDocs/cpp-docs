@@ -20,9 +20,7 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 HRESULT Error( ) const throw( );  
-  
 ```  
   
 ## Return Value  
@@ -33,5 +31,5 @@ HRESULT Error( ) const throw( );
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_com_error Class](../cpp/com-error-class.md)

@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2034 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2034"]
@@ -13,23 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2034
-**must be in segment block**  
-  
- One of the following was found outside of a segment block:  
-  
--   An instruction  
-  
--   A label definition  
-  
--   A [THIS](../../assembler/masm/operator-this.md) operator  
-  
--   A [$](../../assembler/masm/dollar.md) operator  
-  
--   A procedure definition  
-  
--   An [ALIGN](../../assembler/masm/align-masm.md) directive  
-  
--   An [ORG](../../assembler/masm/org.md) directive  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+
+**must be in segment block**
+
+One of the following was found outside of a segment block:
+
+- An instruction
+
+- A label definition
+
+- A [THIS](../../assembler/masm/operator-this.md) operator
+
+- A [$](../../assembler/masm/dollar.md) operator
+
+- A procedure definition
+
+- An [ALIGN](../../assembler/masm/align-masm.md) directive
+
+- An [ORG](../../assembler/masm/org.md) directive
+
+## See also
+
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

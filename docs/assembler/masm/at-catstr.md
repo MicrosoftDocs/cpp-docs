@@ -1,7 +1,7 @@
 ---
 title: "@CatStr | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["@CatStr"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @CatStr
-Macro function that concatenates one or more strings. Returns a string.  
-  
-## Syntax  
-  
-```  
-  
-@CatStr( string1 [[, string2...]] )  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+Macro function that concatenates one or more strings. Returns a string.
+
+## Syntax
+
+> @CatStr( string1 [[, string2...]] )
+
+## See also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

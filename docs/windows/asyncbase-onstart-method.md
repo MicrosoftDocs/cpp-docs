@@ -13,21 +13,24 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::OnStart Method
-When overridden in a derived class, starts an asynchronous operation.  
-  
-## Syntax  
-  
-```  
-virtual void OnStart(  
-   void  
-) = 0;  
-```  
-  
-## Requirements  
- **Header:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [AsyncBase Class](../windows/asyncbase-class.md)   
- [AsyncBase::OnStart Method](../windows/asyncbase-onstart-method.md)
+
+When overridden in a derived class, starts an asynchronous operation.
+
+## Syntax
+
+```cpp
+virtual void OnStart(
+   void
+) = 0;
+```
+
+## Requirements
+
+**Header:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[AsyncBase Class](../windows/asyncbase-class.md)  
+[AsyncBase::OnStart Method](../windows/asyncbase-onstart-method.md)

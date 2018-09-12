@@ -23,7 +23,7 @@ ms.workload: ["cplusplus"]
   
  However, different instances of the same type of control may be assigned to different apartments. So, if multiple instances of a control share any data in common (for example, static or global data), then access to this shared data will need to be protected by a synchronization object, such as a critical section.  
   
- For complete details on the apartment threading model, please see [Processes and Threads](http://msdn.microsoft.com/library/windows/desktop/ms684841) in the *OLE Programmer's Reference*.  
+ For complete details on the apartment threading model, please see [Processes and Threads](/windows/desktop/ProcThread/processes-and-threads) in the *OLE Programmer's Reference*.  
   
 ## Why Support Apartment-Model Threading  
  Controls that support apartment-model threading can be used in multithreaded container applications that also support the apartment model. If you do not enable apartment-model threading, you will limit the potential set of containers in which your control could be used.  

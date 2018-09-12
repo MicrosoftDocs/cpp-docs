@@ -26,7 +26,7 @@ ms.workload: ["cplusplus"]
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Compiler COM Support](../cpp/compiler-com-support.md)   
  [Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)   
  [C++ Language Reference](../cpp/cpp-language-reference.md)

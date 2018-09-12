@@ -83,6 +83,5 @@ More specialized function called
 Even more specialized function for const T*  
 ```  
   
-## See Also
-
-[Function Templates](../cpp/function-templates.md)
+## See also
+ [Function Templates](../cpp/function-templates.md)

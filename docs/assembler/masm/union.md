@@ -1,7 +1,7 @@
 ---
 title: "UNION | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["union"]
@@ -13,17 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # UNION
-Declares a union of one or more data types. The *fielddeclarations* must be valid data definitions. Omit the [ENDS](../../assembler/masm/ends-masm.md) *name* label on nested **UNION** definitions.  
-  
-## Syntax  
-  
-```  
-  
-      name   
-      UNION [[alignment]] [[, NONUNIQUE]]  
-   fielddeclarations  
-[[name]] ENDS  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Declares a union of one or more data types. The *field-declarations* must be valid data definitions. Omit the [ENDS](../../assembler/masm/ends-masm.md) *name* label on nested **UNION** definitions.
+
+## Syntax
+
+> *name* UNION [[*alignment*]] [[, NONUNIQUE]]<br/>
+> *field-declarations*<br/>
+> [[*name*]] ENDS
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

@@ -47,7 +47,7 @@ public:
 
 ### Parameters
 
-*RealType*
+*RealType*<br/>
 The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -174,13 +174,13 @@ explicit lognormal_distribution(const param_type& parm);
 
 ### Parameters
 
-*m*
+*m*<br/>
 The `m` distribution parameter.
 
-*s*
+*s*<br/>
 The `s` distribution parameter.
 
-*parm*
+*parm*<br/>
 The `param_type` structure used to construct the distribution.
 
 ### Remarks
@@ -209,13 +209,13 @@ struct param_type {
 
 ### Parameters
 
-*m*
+*m*<br/>
 The `m` distribution parameter.
 
-*s*
+*s*<br/>
 The `s` distribution parameter.
 
-*right*
+*right*<br/>
 The `param_type` structure used to compare.
 
 ### Remarks

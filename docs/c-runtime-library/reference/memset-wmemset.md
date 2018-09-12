@@ -53,7 +53,7 @@ The value of *dest*.
 
 Sets the first *count* characters of *dest* to the character *c*.
 
-**Security Note** Make sure that the destination buffer has enough room for at least *count* characters. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+**Security Note** Make sure that the destination buffer has enough room for at least *count* characters. For more information, see [Avoiding Buffer Overruns](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ## Requirements
 

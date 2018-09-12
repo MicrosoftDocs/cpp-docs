@@ -27,14 +27,14 @@ void __nop();
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__nop`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__nop`|x86, x64|  
   
  **Header file** \<intrin.h>  
   
 **END Microsoft Specific**  
   
 ## Remarks  
- The `__nop` function is equivalent to the `NOP` machine instruction. For more information, search for the document, "Intel Architecture Software Developer's Manual, Volume 2: Instruction Set Reference," at the [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
+ The `__nop` function is equivalent to the `NOP` machine instruction. For more information, search for the document, "Intel Architecture Software Developer's Manual, Volume 2: Instruction Set Reference," at the [Intel Corporation](https://software.intel.com/en-us/articles/intel-sdm) site.  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   

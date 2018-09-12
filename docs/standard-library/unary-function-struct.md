@@ -75,10 +75,10 @@ int main()
     cout << "The number of elements in v1 greater than 10 is: "
          << result1 << "." << endl;
 }
-\* Output:
+/* Output:
 The vector v1 = ( 0 5 10 15 20 25 )
 The number of elements in v1 greater than 10 is: 3.
-*\
+*/
 ```
 
 ## Requirements

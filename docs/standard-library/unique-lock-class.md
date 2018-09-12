@@ -66,7 +66,7 @@ Internally, a `unique_lock` stores a pointer to an associated `mutex` object and
 
 ## Inheritance Hierarchy
 
-`unique_lock`
+*unique_lock*<br/>
 
 ## Requirements
 
@@ -121,7 +121,7 @@ unique_lock& operator=(unique_lock&& Other) noexcept;
 ### Parameters
 
 *Other*  
- A `unique_lock` object.
+A `unique_lock` object.
 
 ### Return Value
 
@@ -172,7 +172,7 @@ void swap(unique_lock& Other) noexcept;
 ### Parameters
 
 *Other*  
- A `unique_lock` object.
+A `unique_lock` object.
 
 ## <a name="try_lock"></a>  try_lock
 
@@ -205,7 +205,7 @@ bool try_lock_for(
 ### Parameters
 
 *Rel_time*  
- A [chrono::duration](../standard-library/duration-class.md) object that specifies the maximum amount of time that the method attempts to obtain ownership of the `mutex`.
+A [chrono::duration](../standard-library/duration-class.md) object that specifies the maximum amount of time that the method attempts to obtain ownership of the `mutex`.
 
 ### Return Value
 
@@ -231,7 +231,7 @@ bool try_lock_until(const xtime* Abs_time);
 ### Parameters
 
 *Abs_time*  
- A point in time that specifies the threshold after which the method no longer attempts to obtain ownership of the `mutex`.
+A point in time that specifies the threshold after which the method no longer attempts to obtain ownership of the `mutex`.
 
 ### Return Value
 
@@ -274,16 +274,16 @@ unique_lock(mutex_type& Mtx,
 ### Parameters
 
 *Mtx*  
- A mutex type object.
+A mutex type object.
 
 *Rel_time*  
- A [chrono::duration](../standard-library/duration-class.md) object that specifies the maximum amount of time that the method attempts to obtain ownership of the `mutex`.
+A [chrono::duration](../standard-library/duration-class.md) object that specifies the maximum amount of time that the method attempts to obtain ownership of the `mutex`.
 
 *Abs_time*  
- A point in time that specifies the threshold after which the method no longer attempts to obtain ownership of the `mutex`.
+A point in time that specifies the threshold after which the method no longer attempts to obtain ownership of the `mutex`.
 
 *Other*  
- A `unique_lock` object.
+A `unique_lock` object.
 
 ### Remarks
 

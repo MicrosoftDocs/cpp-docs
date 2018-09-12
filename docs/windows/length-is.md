@@ -13,45 +13,49 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # length_is
-Specifies the number of array elements to be transmitted.  
-  
-## Syntax  
-  
-```  
-  
-      [ length_is(  
-   "expression"  
-) ]  
-```  
-  
-#### Parameters  
- *expression*  
- One or more C-language expressions. Empty argument slots are allowed.  
-  
-## Remarks  
- The **length_is** C++ attribute has the same functionality as the [length_is](http://msdn.microsoft.com/library/windows/desktop/aa367068) MIDL attribute.  
-  
-## Example  
- See [first_is](../windows/first-is.md) for an example of how to specify a section of an array.  
-  
-## Requirements  
-  
-### Attribute Context  
-  
-|||  
-|-|-|  
-|**Applies to**|Field in `struct` or **union**, interface parameter, interface method|  
-|**Repeatable**|No|  
-|**Required attributes**|None|  
-|**Invalid attributes**|None|  
-  
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).  
-  
-## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
- [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
- [Parameter Attributes](../windows/parameter-attributes.md)   
- [first_is](../windows/first-is.md)   
- [max_is](../windows/max-is.md)   
- [last_is](../windows/last-is.md)   
- [size_is](../windows/size-is.md)   
+
+Specifies the number of array elements to be transmitted.
+
+## Syntax
+
+```cpp
+[ length_is(
+   "expression"
+) ]
+```
+
+### Parameters
+
+*expression*  
+One or more C-language expressions. Empty argument slots are allowed.
+
+## Remarks
+
+The **length_is** C++ attribute has the same functionality as the [length_is](/windows/desktop/Midl/length-is) MIDL attribute.
+
+## Example
+
+See [first_is](../windows/first-is.md) for an example of how to specify a section of an array.
+
+## Requirements
+
+### Attribute Context
+
+|||
+|-|-|
+|**Applies to**|Field in **struct** or **union**, interface parameter, interface method|
+|**Repeatable**|No|
+|**Required attributes**|None|
+|**Invalid attributes**|None|
+
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+
+## See Also
+
+[IDL Attributes](../windows/idl-attributes.md)  
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
+[Parameter Attributes](../windows/parameter-attributes.md)  
+[first_is](../windows/first-is.md)  
+[max_is](../windows/max-is.md)  
+[last_is](../windows/last-is.md)  
+[size_is](../windows/size-is.md)  

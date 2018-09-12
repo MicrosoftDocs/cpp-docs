@@ -26,11 +26,11 @@ class money_put : public locale::facet;
 
 ### Parameters
 
-*CharType*
- The type used within a program to encode characters in a locale.
+*CharType*<br/>
+The type used within a program to encode characters in a locale.
 
-*OutputIterator*
- The type of iterator to which the monetary put functions write their output.
+*OutputIterator*<br/>
+The type of iterator to which the monetary put functions write their output.
 
 ## Remarks
 
@@ -98,20 +98,20 @@ virtual iter_type do_put(
 
 ### Parameters
 
-*next*
- An iterator addressing the first element of the inserted string.
+*next*<br/>
+An iterator addressing the first element of the inserted string.
 
-*_Intl*
- A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
+*_Intl*<br/>
+A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
 
-*_Iosbase*
- A format flag which when set indicates that the currency symbol is optional; otherwise, it is required
+*_Iosbase*<br/>
+A format flag which when set indicates that the currency symbol is optional; otherwise, it is required
 
-*_Fill*
- A character which is used for spacing.
+*_Fill*<br/>
+A character which is used for spacing.
 
-*val*
- A string object to be converted.
+*val*<br/>
+A string object to be converted.
 
 ### Return Value
 
@@ -181,8 +181,8 @@ explicit money_put(size_t _Refs = 0);
 
 ### Parameters
 
-*_Refs*
- Integer value used to specify the type of memory management for the object.
+*_Refs*<br/>
+Integer value used to specify the type of memory management for the object.
 
 ### Remarks
 
@@ -221,20 +221,20 @@ iter_type put(
 
 ### Parameters
 
-*next*
- An iterator addressing the first element of the inserted string.
+*next*<br/>
+An iterator addressing the first element of the inserted string.
 
-*_Intl*
- A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
+*_Intl*<br/>
+A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
 
-*_Iosbase*
- A format flag which when set indicates that the currency symbol is optional; otherwise, it is required
+*_Iosbase*<br/>
+A format flag which when set indicates that the currency symbol is optional; otherwise, it is required
 
-*_Fill*
- A character which is used for spacing.
+*_Fill*<br/>
+A character which is used for spacing.
 
-*val*
- A string object to be converted.
+*val*<br/>
+A string object to be converted.
 
 ### Return Value
 

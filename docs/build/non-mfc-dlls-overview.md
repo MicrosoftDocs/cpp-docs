@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # Non-MFC DLLs: Overview
 A non-MFC DLL is a DLL that does not use MFC internally, and the exported functions in the DLL can be called by either MFC or non-MFC executable files. Functions are usually exported from a non-MFC DLL using the standard C interface.  
   
- For more information about non-MFC DLLs, see [Dynamic-Link Libraries](http://msdn.microsoft.com/library/windows/desktop/ms682589) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
+ For more information about non-MFC DLLs, see [Dynamic-Link Libraries](https://msdn.microsoft.com/library/windows/desktop/ms682589) in the Windows SDK.  
   
 ## What do you want to do?  
   

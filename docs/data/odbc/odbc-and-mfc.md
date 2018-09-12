@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC and MFC
 > [!NOTE]
->  To use the MFC database classes, you must have the appropriate ODBC driver for your data source. The lastest Microsoft ODBC driver for SQL Server is [Microsoft ODBC Driver 13 for SQL Server](https://www.microsoft.com/en-us/download/details.aspx?id=50420). Most database vendors provide an ODBC driver for Windows. 
+>  To use the MFC database classes, you must have the appropriate ODBC driver for your data source. The lastest Microsoft ODBC driver for SQL Server is [Microsoft ODBC Driver 13 for SQL Server](https://www.microsoft.com/download/details.aspx?id=50420). Most database vendors provide an ODBC driver for Windows. 
   
  This topic introduces the main concepts of the Microsoft Foundation Classes (MFC) library's ODBC-based database classes and provides an overview of how the classes work together. For more information about ODBC and MFC, see the following topics:  
   

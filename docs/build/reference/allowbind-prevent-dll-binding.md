@@ -37,5 +37,5 @@ ms.workload: ["cplusplus"]
 ## See Also  
  [Setting Linker Options](../../build/reference/setting-linker-options.md)   
  [Linker Options](../../build/reference/linker-options.md)   
- [BindImage function](http://msdn.microsoft.com/library/windows/desktop/ms679278.aspx)   
- [BindImageEx function](http://msdn.microsoft.com/library/windows/desktop/ms679279.aspx)
+ [BindImage function](/windows/desktop/api/imagehlp/nf-imagehlp-bindimage)   
+ [BindImageEx function](/windows/desktop/api/imagehlp/nf-imagehlp-bindimageex)

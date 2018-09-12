@@ -25,11 +25,11 @@ class list
 
 ### Parameters
 
-*Type*
- The element data type to be stored in the list.
+*Type*<br/>
+The element data type to be stored in the list.
 
-*Allocator*
- The type that represents the stored allocator object that encapsulates details about the list's allocation and deallocation of memory. This argument is optional, and the default value is **allocator**\<*Type*>.
+*Allocator*<br/>
+The type that represents the stored allocator object that encapsulates details about the list's allocation and deallocation of memory. This argument is optional, and the default value is **allocator**\<*Type*>.
 
 ## Remarks
 
@@ -149,20 +149,20 @@ void assign(
 
 ### Parameters
 
-*First*
- Position of the first element in the range of elements to be copied from the argument list.
+*First*<br/>
+Position of the first element in the range of elements to be copied from the argument list.
 
-*Last*
- Position of the first element just beyond the range of elements to be copied from the argument list.
+*Last*<br/>
+Position of the first element just beyond the range of elements to be copied from the argument list.
 
-*Count*
- The number of copies of an element being inserted into the list.
+*Count*<br/>
+The number of copies of an element being inserted into the list.
 
-*Val*
- The value of the element being inserted into the list.
+*Val*<br/>
+The value of the element being inserted into the list.
 
-*IList*
- The initializer_list that contains the elements to be inserted.
+*IList*<br/>
+The initializer_list that contains the elements to be inserted.
 
 ### Remarks
 
@@ -856,7 +856,7 @@ int main( )
    cout << "The last integer of c1 is " << *c1_Iter << endl;
 
    c1_Iter--;
- *c1_Iter = 400;
+*c1_Iter = 400;
    cout << "The new next-to-last integer of c1 is "
         << *c1_Iter << endl;
 
@@ -887,14 +887,14 @@ iterator erase(iterator first, iterator last);
 
 ### Parameters
 
-*Where*
- Position of the element to be removed from the list.
+*Where*<br/>
+Position of the element to be removed from the list.
 
-*first*
- Position of the first element removed from the list.
+*first*<br/>
+Position of the first element removed from the list.
 
-*last*
- Position just beyond the last element removed from the list.
+*last*<br/>
+Position just beyond the last element removed from the list.
 
 ### Return Value
 
@@ -1344,11 +1344,11 @@ void merge(list<Type, Allocator>& right, Traits comp);
 
 ### Parameters
 
-*right*
- The argument list to be merged with the target list.
+*right*<br/>
+The argument list to be merged with the target list.
 
-*comp*
- The comparison operator used to order the elements of the target list.
+*comp*<br/>
+The comparison operator used to order the elements of the target list.
 
 ### Remarks
 
@@ -1743,7 +1743,7 @@ int main( )
    cout << endl;
 
    c1_rIter = c1.rbegin( );
- *c1_rIter = 40;
+*c1_rIter = 40;
    cout << "The last element in the list is now " << *c1_rIter << "." << endl;
 }
 ```
@@ -1801,8 +1801,8 @@ void remove(const Type& val);
 
 ### Parameters
 
-*val*
- The value which, if held by an element, will result in that element's removal from the list.
+*val*<br/>
+The value which, if held by an element, will result in that element's removal from the list.
 
 ### Remarks
 
@@ -1859,8 +1859,8 @@ void remove_if(Predicate pred)
 
 ### Parameters
 
-*pred*
- The unary predicate which, if satisfied by an element, results in the deletion of that element from the list.
+*pred*<br/>
+The unary predicate which, if satisfied by an element, results in the deletion of that element from the list.
 
 ### Example
 
@@ -2010,11 +2010,11 @@ void resize(size_type _Newsize, Type val);
 
 ### Parameters
 
-*_Newsize*
- The new size of the list.
+*_Newsize*<br/>
+The new size of the list.
 
-*val*
- The value of the new elements to be added to the list if the new size is larger that the original size. If the value is omitted, the new elements are assigned the default value for the class.
+*val*<br/>
+The value of the new elements to be added to the list if the new size is larger that the original size. If the value is omitted, the new elements are assigned the default value for the class.
 
 ### Remarks
 
@@ -2192,8 +2192,8 @@ void sort(Traits comp);
 
 ### Parameters
 
-*comp*
- The comparison operator used to order successive elements.
+*comp*<br/>
+The comparison operator used to order successive elements.
 
 ### Remarks
 
@@ -2264,20 +2264,20 @@ void splice(const_iterator Where, list<Type, Allocator>&& Source, const_iterator
 
 ### Parameters
 
-*Where*
- The position in the destination list before which to insert.
+*Where*<br/>
+The position in the destination list before which to insert.
 
-*Source*
- The source list that is to be inserted into the destination list.
+*Source*<br/>
+The source list that is to be inserted into the destination list.
 
-*Iter*
- The element to be inserted from the source list.
+*Iter*<br/>
+The element to be inserted from the source list.
 
-*First*
- The first element in the range to be inserted from the source list.
+*First*<br/>
+The first element in the range to be inserted from the source list.
 
-*Last*
- The first position beyond the last element in the range to be inserted from the source list.
+*Last*<br/>
+The first position beyond the last element in the range to be inserted from the source list.
 
 ### Remarks
 
@@ -2379,11 +2379,11 @@ friend void swap(list<Type, Allocator>& left, list<Type, Allocator>& right)
 
 ### Parameters
 
-*right*
- The list providing the elements to be swapped, or the list whose elements are to be exchanged with those of the list *left*.
+*right*<br/>
+The list providing the elements to be swapped, or the list whose elements are to be exchanged with those of the list *left*.
 
-*left*
- A list whose elements are to be exchanged with those of the list *right*.
+*left*<br/>
+A list whose elements are to be exchanged with those of the list *right*.
 
 ### Example
 
@@ -2446,8 +2446,8 @@ void unique(BinaryPredicate pred);
 
 ### Parameters
 
-*pred*
- The binary predicate used to compare successive elements.
+*pred*<br/>
+The binary predicate used to compare successive elements.
 
 ### Remarks
 

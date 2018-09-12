@@ -34,12 +34,12 @@ The following options can be specified to **pgomgr**:
 
 - **/unique** When used with **/summary**, causes decorated function names to display. The default, when **/unique** is not used, is for undecorated function names to be displayed.
 
-- **/merge**[**:***n*] Causes the data in the .pgc file or files to be added to the .pgd file. The optional parameter, *n*, lets you specify that the data should be added *n* times. For example, if a scenario would commonly be done six times to reflect how often it is done by customers, you can do it once in a test run and add it to the .pgd file six times with **pgomgr /merge:6**.
+- **/merge**\[**:**<em>n</em>] Causes the data in the .pgc file or files to be added to the .pgd file. The optional parameter, *n*, lets you specify that the data should be added *n* times. For example, if a scenario would commonly be done six times to reflect how often it is done by customers, you can do it once in a test run and add it to the .pgd file six times with **pgomgr /merge:6**.
 
 *pgcfiles*<br/>
 One or more .pgc files whose profile data you want to merge into the .pgd file. You can specify a single .pgc file or multiple .pgc files. If you do not specify any .pgc files, **pgomgr** merges all .pgc files whose filenames are the same as the .pgd file.
 
-*pgdfile*
+*pgdfile*<br/>
 The .pgd file into which you are merging data from the .pgc file or files.
 
 ## Remarks

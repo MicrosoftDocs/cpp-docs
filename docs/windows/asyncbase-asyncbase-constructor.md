@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::AsyncBase Constructor
-Initializes an instance of the AsyncBase class.  
-  
-## Syntax  
-  
-```  
-AsyncBase();  
-```  
-  
-## Requirements  
- **Header:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [AsyncBase Class](../windows/asyncbase-class.md)
+
+Initializes an instance of the **AsyncBase** class.
+
+## Syntax
+
+```cpp
+AsyncBase();
+```
+
+## Requirements
+
+**Header:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[AsyncBase Class](../windows/asyncbase-class.md)

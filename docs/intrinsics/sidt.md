@@ -34,12 +34,12 @@ void __sidt(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__sidt`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__sidt`|x86, x64|  
   
  **Header file** \<intrin.h>  
   
 ## Remarks  
- The `__sidt` function is equivalent to the `SIDT` machine instruction. For more information, search for the document, "Intel Architecture Software Developer's Manual, Volume 2: Instruction Set Reference," at the [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
+ The `__sidt` function is equivalent to the `SIDT` machine instruction. For more information, search for the document, "Intel Architecture Software Developer's Manual, Volume 2: Instruction Set Reference," at the [Intel Corporation](https://software.intel.com/en-us/articles/intel-sdm) site.  
   
 **END Microsoft Specific**  
   

@@ -1,7 +1,7 @@
 ---
 title: "@FileName | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["@FileName"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @FileName
-The base name of the main file being assembled (text macro).  
-  
-## Syntax  
-  
-```  
-  
-@FileName  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+The base name of the main file being assembled (text macro).
+
+## Syntax
+
+> @FileName
+
+## See also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

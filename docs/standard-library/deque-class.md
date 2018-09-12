@@ -25,11 +25,11 @@ class deque
 
 ### Parameters
 
-*Type*
+*Type*<br/>
  The element data type to be stored in the deque.
 
-*Allocator*
- The type that represents the stored allocator object that encapsulates details about the deque's allocation and deallocation of memory. This argument is optional, and the default value is **allocator\<Type>***.*
+*Allocator*<br/>
+ The type that represents the stored allocator object that encapsulates details about the deque's allocation and deallocation of memory. This argument is optional, and the default value is **allocator\<Type>**.
 
 ## Remarks
 
@@ -152,19 +152,19 @@ void assign(initializer_list<Type> IList);
 
 ### Parameters
 
-*First*
+*First*<br/>
  Position of the first element in the range of elements to be copied from the argument deque.
 
-*Last*
+*Last*<br/>
  Position of the first element beyond the range of elements to be copied from the argument deque.
 
-*Count*
+*Count*<br/>
  The number of copies of an element being inserted into the deque.
 
-*Val*
+*Val*<br/>
  The value of the element being inserted into the deque.
 
-*IList*
+*IList*<br/>
  The initializer_list being inserted into the deque.
 
 ### Remarks
@@ -239,7 +239,7 @@ const_reference at(size_type pos) const;
 
 ### Parameters
 
-*pos*
+*pos*<br/>
  The subscript (or position number) of the element to reference in the deque.
 
 ### Return Value
@@ -1252,13 +1252,13 @@ iterator erase(iterator first, iterator last);
 
 ### Parameters
 
-*_Where*
+*_Where*<br/>
  Position of the element to be removed from the deque.
 
-*first*
+*first*<br/>
  Position of the first element removed from the deque.
 
-*last*
+*last*<br/>
  Position just beyond the last element removed from the deque.
 
 ### Return Value
@@ -1509,7 +1509,7 @@ const_reference operator[](size_type pos) const;
 
 ### Parameters
 
-*pos*
+*pos*<br/>
  The position of the deque element to be referenced.
 
 ### Return Value
@@ -2005,10 +2005,10 @@ void resize(size_type _Newsize, Type val);
 
 ### Parameters
 
-*_Newsize*
+*_Newsize*<br/>
  The new size of the deque.
 
-*val*
+*val*<br/>
  The value of the new elements to be added to the deque if the new size is larger that the original size. If the value is omitted, the new elements are assigned the default value for the class.
 
 ### Remarks
@@ -2184,10 +2184,10 @@ void swap(deque<Type, Allocator>& left, deque<Type, Allocator>& right);
 
 ### Parameters
 
-*right*
+*right*<br/>
  The deque providing the elements to be swapped, or the deque whose elements are to be exchanged with those of the deque `left`.
 
-*left*
+*left*<br/>
  A deque whose elements are to be exchanged with those of the deque *right*.
 
 ### Example

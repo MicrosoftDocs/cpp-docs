@@ -1,7 +1,7 @@
 ---
 title: "= | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["="]
@@ -13,20 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # =
-Assigns the numeric value of *expression* to *name*.  
-  
-## Syntax  
-  
-```  
-  
-name  
- =   
-expression  
-  
-```  
-  
-## Remarks  
- The symbol can be redefined later.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Assigns the numeric value of *expression* to *name*.
+
+## Syntax
+
+> *name* = *expression*
+
+## Remarks
+
+The symbol can be redefined later.
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

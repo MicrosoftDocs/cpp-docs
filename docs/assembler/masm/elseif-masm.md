@@ -1,7 +1,7 @@
 ---
 title: "ELSEIF (MASM) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["ElseIf"]
@@ -13,18 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ELSEIF (MASM)
-Combines [ELSE](../../assembler/masm/else-masm.md) and [IF](../../assembler/masm/if-masm.md) into one statement.  
-  
-## Syntax  
-  
-```  
-  
-ELSEIF  
-  
-```  
-  
-## Remarks  
- See [IF](../../assembler/masm/if-masm.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Combines [ELSE](../../assembler/masm/else-masm.md) and [IF](../../assembler/masm/if-masm.md) into one statement.
+
+## Syntax
+
+> ELSEIF
+
+## Remarks
+
+See [IF](../../assembler/masm/if-masm.md).
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
