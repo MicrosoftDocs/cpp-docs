@@ -156,6 +156,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/mfc/active-documents-on-the-internet.md",
+            "redirect_url": "/cpp/mfc/activex-controls",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/build/naming-conventions-for-mfc-dlls.md",
             "redirect_url": "/cpp/mfc/mfc-library-versions#mfc-static-library-naming-conventions",
             "redirect_document_id": false
@@ -6223,6 +6228,81 @@
         {
             "source_path": "docs/windows/index.md",
             "redirect_url": "/cpp/windows/overview-of-windows-programming-in-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implements-cancastto-method.md",
+            "redirect_url": "/cpp/windows/implements-structure#cancastto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implements-casttounknown-method.md",
+            "redirect_url": "/cpp/windows/implements-structure#casttounknown",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implements-fillarraywithiid-method.md",
+            "redirect_url": "/cpp/windows/implements-structure#fillarraywithiid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implements-iidcount-constant.md",
+            "redirect_url": "/cpp/windows/implements-structure#iidcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/runtimeclass-tilde-runtimeclass-destructor.md",
+            "redirect_url": "/cpp/windows/runtimeclass-class#tilde-runtimeclass",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/runtimeclass-addref-method.md",
+            "redirect_url": "/cpp/windows/runtimeclass-class#addref",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/runtimeclass-decrementreference-method.md",
+            "redirect_url": "/cpp/windows/runtimeclass-class#decrementreference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/runtimeclass-getiids-method.md",
+            "redirect_url": "/cpp/windows/runtimeclass-class#getiids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/runtimeclass-getruntimeclassname-method.md",
+            "redirect_url": "/cpp/windows/runtimeclass-class#getruntimeclassname",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/runtimeclass-gettrustlevel-method.md",
+            "redirect_url": "/cpp/windows/runtimeclass-class#gettrustlevel",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/runtimeclass-getweakreference-method.md",
+            "redirect_url": "/cpp/windows/runtimeclass-class#getweakreference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/runtimeclass-internaladdref-method.md",
+            "redirect_url": "/cpp/windows/runtimeclass-class#internaladdref",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/runtimeclass-queryinterface-method.md",
+            "redirect_url": "/cpp/windows/runtimeclass-class#queryinterface",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/runtimeclass-release-method.md",
+            "redirect_url": "/cpp/windows/runtimeclass-class#release",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/runtimeclass-runtimeclass-constructor.md",
+            "redirect_url": "/cpp/windows/runtimeclass-class#runtimeclass",
             "redirect_document_id": false
         },
         {

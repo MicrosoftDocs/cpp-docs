@@ -1,7 +1,7 @@
 ---
 title: "ActiveX Controls on the Internet | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -12,7 +12,13 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # ActiveX Controls on the Internet
-ActiveX controls are the updated version of the OLE control specification. Controls are a primary architecture for developing programmable software components that can be used in a variety of different containers, including COM-aware Web browsers on the Internet. Any ActiveX control can be an Internet control and can add its functionality to an Active document or be part of a Web page. Controls on a Web page can communicate with each other using scripting.  
+
+ActiveX controls are the updated version of the OLE control specification. 
+
+>[!IMPORTANT]
+> ActiveX is a legacy technology that should not be used for new development. For more information, see [ActiveX Controls](activex-controls.md).
+
+Controls are a primary architecture for developing programmable software components that can be used in a variety of different containers, including COM-aware Web browsers on the Internet. Any ActiveX control can be an Internet control and can add its functionality to an Active document or be part of a Web page. Controls on a Web page can communicate with each other using scripting.  
   
  ActiveX controls are not limited to the Internet. An ActiveX control can also be used in any container, as long as the control supports the interfaces required by that container.  
   
