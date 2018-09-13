@@ -1,7 +1,7 @@
 ---
 title: "CEdit Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CEdit", "AFXWIN/CEdit", "AFXWIN/CEdit::CEdit", "AFXWIN/CEdit::CanUndo", "AFXWIN/CEdit::CharFromPos", "AFXWIN/CEdit::Clear", "AFXWIN/CEdit::Copy", "AFXWIN/CEdit::Create", "AFXWIN/CEdit::Cut", "AFXWIN/CEdit::EmptyUndoBuffer", "AFXWIN/CEdit::FmtLines", "AFXWIN/CEdit::GetCueBanner", "AFXWIN/CEdit::GetFirstVisibleLine", "AFXWIN/CEdit::GetHandle", "AFXWIN/CEdit::GetHighlight", "AFXWIN/CEdit::GetLimitText", "AFXWIN/CEdit::GetLine", "AFXWIN/CEdit::GetLineCount", "AFXWIN/CEdit::GetMargins", "AFXWIN/CEdit::GetModify", "AFXWIN/CEdit::GetPasswordChar", "AFXWIN/CEdit::GetRect", "AFXWIN/CEdit::GetSel", "AFXWIN/CEdit::HideBalloonTip", "AFXWIN/CEdit::LimitText", "AFXWIN/CEdit::LineFromChar", "AFXWIN/CEdit::LineIndex", "AFXWIN/CEdit::LineLength", "AFXWIN/CEdit::LineScroll", "AFXWIN/CEdit::Paste", "AFXWIN/CEdit::PosFromChar", "AFXWIN/CEdit::ReplaceSel", "AFXWIN/CEdit::SetCueBanner", "AFXWIN/CEdit::SetHandle", "AFXWIN/CEdit::SetHighlight", "AFXWIN/CEdit::SetLimitText", "AFXWIN/CEdit::SetMargins", "AFXWIN/CEdit::SetModify", "AFXWIN/CEdit::SetPasswordChar", "AFXWIN/CEdit::SetReadOnly", "AFXWIN/CEdit::SetRect", "AFXWIN/CEdit::SetRectNP", "AFXWIN/CEdit::SetSel", "AFXWIN/CEdit::SetTabStops", "AFXWIN/CEdit::ShowBalloonTip", "AFXWIN/CEdit::Undo"]
@@ -421,7 +421,7 @@ BOOL GetHighlight(
  TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
- This method sends the [EM_GETHILITE](/windows/desktop/Controls/em-gethilite) message, which is described in the Windows SDK.  
+ This method sends the [EM_GETHILITE](/windows/desktop/Controls/em-gethilite) message, which is described in the Windows SDK. Both `SetHighlight` and `GetHighlight` are currently enabled for UNICODE builds only. 
   
 ##  <a name="getlimittext"></a>  CEdit::GetLimitText  
  Call this member function to get the text limit for this `CEdit` object.  
@@ -886,7 +886,7 @@ void SetHighlight(
 |[in] *ichEnd*|Zero-based index of the last character in the range of text to highlight.|  
   
 ### Remarks  
- This method sends the [EM_SETHILITE](/windows/desktop/Controls/em-sethilite) message, which is described in the Windows SDK.  
+ This method sends the [EM_SETHILITE](/windows/desktop/Controls/em-sethilite) message, which is described in the Windows SDK.  This method sends the [EM_SETHILITE](/windows/desktop/Controls/em-sethilite) message, which is described in the Windows SDK. Both `SetHighlight` and `GetHighlight` are enabled for UNICODE builds only. 
   
 ##  <a name="setlimittext"></a>  CEdit::SetLimitText  
  Call this member function to set the text limit for this `CEdit` object.  
