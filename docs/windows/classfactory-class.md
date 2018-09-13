@@ -1,12 +1,12 @@
 ---
 title: "ClassFactory Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/13/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["module/Microsoft::WRL::ClassFactory"]
+f1_keywords: ["module/Microsoft::WRL::ClassFactory", "module/Microsoft::WRL::ClassFactory::AddRef", "module/Microsoft::WRL::ClassFactory::ClassFactory", "module/Microsoft::WRL::ClassFactory::LockServer", "module/Microsoft::WRL::ClassFactory::QueryInterface", "module/Microsoft::WRL::ClassFactory::Release"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["ClassFactory class"]
+helpviewer_keywords: ["Microsoft::WRL::ClassFactory class", "Microsoft::WRL::ClassFactory::AddRef method"], "Microsoft::WRL::ClassFactory::ClassFactory, constructor", "Microsoft::WRL::ClassFactory::LockServer method", "Microsoft::WRL::ClassFactory::QueryInterface method", "Microsoft::WRL::ClassFactory::Release method"
 ms.assetid: f13e6bce-722b-4f18-b7cf-3ffa6345c1db
 author: "mikeblome"
 ms.author: "mblome"
@@ -47,7 +47,7 @@ The second interface.
 
 ## Remarks
 
-Utilize **ClassFactory** to provide a user-defined factory implementation.
+Utilize `ClassFactory` to provide a user-defined factory implementation.
 
 The following programming pattern demonstrates how to use the [Implements](../windows/implements-structure.md) structure to specify more than three interfaces on a class factory.
 
@@ -57,18 +57,18 @@ The following programming pattern demonstrates how to use the [Implements](../wi
 
 ### Public Constructors
 
-|Name|Description|
-|----------|-----------------|
-|[ClassFactory::ClassFactory Constructor](../windows/classfactory-classfactory-constructor.md)||
+Name                                        | Description
+------------------------------------------- | -----------
+[ClassFactory::ClassFactory](#classfactory) |
 
 ### Public Methods
 
-|Name|Description|
-|----------|-----------------|
-|[ClassFactory::AddRef Method](../windows/classfactory-addref-method.md)|Increments the reference count for the current **ClassFactory** object.|
-|[ClassFactory::LockServer Method](../windows/classfactory-lockserver-method.md)|Increments or decrements the number of underlying objects that are tracked by the current **ClassFactory** object.|
-|[ClassFactory::QueryInterface Method](../windows/classfactory-queryinterface-method.md)|Retrieves a pointer to the interface specified by parameter.|
-|[ClassFactory::Release Method](../windows/classfactory-release-method.md)|Decrements the reference count for the current **ClassFactory** object.|
+Name                                            | Description
+----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------
+[ClassFactory::AddRef](#addref)                 | Increments the reference count for the current `ClassFactory` object.
+[ClassFactory::LockServer](#lockserver)         | Increments or decrements the number of underlying objects that are tracked by the current `ClassFactory` object.
+[ClassFactory::QueryInterface](#queryinterface) | Retrieves a pointer to the interface specified by parameter.
+[ClassFactory::Release](#release)               | Decrements the reference count for the current `ClassFactory` object.
 
 ## Inheritance Hierarchy
 
@@ -98,7 +98,83 @@ The following programming pattern demonstrates how to use the [Implements](../wi
 
 **Namespace:** Microsoft::WRL
 
-## See Also
+## <a name="addref"></a>ClassFactory::AddRef
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)  
-[RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md)
+Increments the reference count for the current `ClassFactory` object.
+
+```cpp
+STDMETHOD_(
+   ULONG,
+   AddRef
+)();
+```
+
+### Return Value
+
+S_OK if successful; otherwise, an HRESULT that describes the failure.
+
+## <a name="classfactory"></a>ClassFactory::ClassFactory
+
+```cpp
+WRL_NOTHROW ClassFactory();
+```
+
+## <a name="lockserver"></a>ClassFactory::LockServer
+
+Increments or decrements the number of underlying objects that are tracked by the current `ClassFactory` object.
+
+```cpp
+STDMETHOD(
+   LockServer
+)(BOOL fLock);
+```
+
+### Parameters
+
+*fLock*  
+`true` to increment the number of tracked objects. `false` to decrement the number of tracked objects.
+
+### Return Value
+
+S_OK if successful; otherwise, E_FAIL.
+
+### Remarks
+
+`ClassFactory` keeps track of objects in an underlying instance of the [Module](../windows/module-class.md) class.
+
+## <a name="queryinterface"></a>ClassFactory::QueryInterface
+
+Retrieves a pointer to the interface specified by parameter.
+
+```cpp
+STDMETHOD(
+   QueryInterface
+)(REFIID riid, _Deref_out_ void **ppvObject);
+```
+
+### Parameters
+
+*riid*  
+An interface ID.
+
+*ppvObject*  
+When this operation completes, a pointer to the interface specified by parameter *riid*.
+
+### Return Value
+
+S_OK if successful; otherwise, an HRESULT that describes the failure.
+
+## <a name="release"></a>ClassFactory::Release
+
+Decrements the reference count for the current `ClassFactory` object.
+
+```cpp
+STDMETHOD_(
+   ULONG,
+   Release
+)();
+```
+
+### Return Value
+
+S_OK if successful; otherwise, an HRESULT that describes the failure.
