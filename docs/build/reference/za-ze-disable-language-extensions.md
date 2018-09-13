@@ -31,8 +31,8 @@ The **/Za** compiler option emits an error for language constructs that are not 
   
  We recommend that you disable language extensions by specifying the **/Za** option if you plan to port your program to other environments. When **/Za** is specified, the compiler treats Microsoft extended keywords as simple identifiers, disables the other Microsoft extensions, and automatically defines the `__STDC__` predefined macro for C programs.  
   
- Other compiler options used with **/Za** can affect how the compiler ensures standards conformance. For example, **/Za** and [/fp (Specify Floating-Point Behavior)](../../build/reference/fp-specify-floating-point-behavior.md) may result in floating-point type promotion behavior that does not conform to the ISO C99 or C++11 standards.  
-  
+ Other compiler options used with **/Za** can affect how the compiler ensures standards conformance.
+
  For ways to specify specific standards-conformant behavior settings, see the [/Zc](../../build/reference/zc-conformance.md) compiler option.  
   
  For more information about conformance issues with Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).  
