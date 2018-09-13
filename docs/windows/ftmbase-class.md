@@ -32,27 +32,27 @@ For more information, see [RuntimeClass Class](runtimeclass-class.md).
 
 ### Public Constructors
 
-| Name                                     | Description                                        |
-| ---------------------------------------- | -------------------------------------------------- |
-| [FtmBase::FtmBase Constructor](#ftmbase) | Initializes a new instance of the `FtmBase` class. |
+| Name                         | Description                                        |
+| ---------------------------- | -------------------------------------------------- |
+| [FtmBase::FtmBase](#ftmbase) | Initializes a new instance of the `FtmBase` class. |
 
 ### Public Methods
 
-| Name                                                                      | Description                                                                                                                                                          |
-| ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [FtmBase::CreateGlobalInterfaceTable Method](#createglobalinterfacetable) | Creates a global interface table (GIT).                                                                                                                              |
-| [FtmBase::DisconnectObject Method](#disconnectobject)                     | Forcibly releases all external connections to an object. The object's server calls the object's implementation of this method prior to shutting down.                |
-| [FtmBase::GetMarshalSizeMax Method](#getmarshalsizemax)                   | Get the upper bound on the number of bytes needed to marshal the specified interface pointer on the specified object.                                                |
-| [FtmBase::GetUnmarshalClass Method](#getunmarshalclass)                   | Gets the CLSID that COM uses to locate the DLL containing the code for the corresponding proxy. COM loads this DLL to create an uninitialized instance of the proxy. |
-| [FtmBase::MarshalInterface Method](#marshalinterface)                     | Writes into a stream the data required to initialize a proxy object in some client process.                                                                          |
-| [FtmBase::ReleaseMarshalData Method](#releasemarshaldata)                 | Destroys a marshaled data packet.                                                                                                                                    |
-| [FtmBase::UnmarshalInterface Method](#unmarshalinterface)                 | Initializes a newly created proxy and returns an interface pointer to that proxy.                                                                                    |
+| Name                                                               | Description                                                                                                                                                          |
+| ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [FtmBase::CreateGlobalInterfaceTable](#createglobalinterfacetable) | Creates a global interface table (GIT).                                                                                                                              |
+| [FtmBase::DisconnectObject](#disconnectobject)                     | Forcibly releases all external connections to an object. The object's server calls the object's implementation of this method prior to shutting down.                |
+| [FtmBase::GetMarshalSizeMax](#getmarshalsizemax)                   | Get the upper bound on the number of bytes needed to marshal the specified interface pointer on the specified object.                                                |
+| [FtmBase::GetUnmarshalClass](#getunmarshalclass)                   | Gets the CLSID that COM uses to locate the DLL containing the code for the corresponding proxy. COM loads this DLL to create an uninitialized instance of the proxy. |
+| [FtmBase::MarshalInterface](#marshalinterface)                     | Writes into a stream the data required to initialize a proxy object in some client process.                                                                          |
+| [FtmBase::ReleaseMarshalData](#releasemarshaldata)                 | Destroys a marshaled data packet.                                                                                                                                    |
+| [FtmBase::UnmarshalInterface](#unmarshalinterface)                 | Initializes a newly created proxy and returns an interface pointer to that proxy.                                                                                    |
 
 ### Public Data Members
 
-| Name                                            | Description                                       |
-| ----------------------------------------------- | ------------------------------------------------- |
-| [FtmBase::marshaller_ Data Member](#marshaller) | Holds a reference to the free threaded marshaler. |
+| Name                                | Description                                       |
+| ----------------------------------- | ------------------------------------------------- |
+| [FtmBase::marshaller_](#marshaller) | Holds a reference to the free threaded marshaler. |
 
 ## Inheritance Hierarchy
 
