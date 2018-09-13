@@ -26,7 +26,7 @@ This error can be caused by an `#include "filename"` statement in a conditional 
 
 ## Example
 
-In typical usage, one source file in your project is designated as the PCH source file, and one header file is used as the PCH header file (a .h file). A typical PCH header file has all of the library headers used in your project, but not local headers that are still under development. In this sample, the PCH header file is named *my_pch.h*.
+In typical usage, one source file in your project is designated as the PCH source file, and one header file is used as the PCH header file. A typical PCH header file has all of the library headers used in your project, but not local headers that are still under development. In this sample, the PCH header file is named *my_pch.h*.
 
 ```cpp
 // my_pch.h
