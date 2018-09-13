@@ -5991,6 +5991,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "building-external-projects.md",
+            "redirect_url": "../ide/non-msbuild-projects",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/intrinsics/index.md",
             "redirect_url": "/cpp/intrinsics/compiler-intrinsics-and-assembly-language",
             "redirect_document_id": false
