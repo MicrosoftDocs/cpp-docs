@@ -1,13 +1,13 @@
 ---
 title: "How to: Design for Exception Safety | Microsoft Docs"
-ms.custom: "how-to"
-ms.date: "11/04/2016"
+ms.custom: how-to
+ms.date: 11/04/2016
 ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
+ms.topic: conceptual
 dev_langs: ["C++"]
 ms.assetid: 19ecc5d4-297d-4c4e-b4f3-4fccab890b3d
-author: "mikeblome"
-ms.author: "mblome"
+author: mikeblome
+ms.author: mblome
 ms.workload: ["cplusplus"]
 ---
 # How to: Design for Exception Safety
