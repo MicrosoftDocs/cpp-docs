@@ -191,12 +191,12 @@ virtual void OnDrawOnList(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *pDC*|A pointer to a device context.|  
-|[in] *strText*|Text displayed on the list.|  
-|[in] *nTextOffset*|Spacing between the text and the left side of the bounding rectangle.|  
-|[in] *rect*|Specifies the bounding rectangle.|  
-|[in] *bIsSelected*|Ignored.|  
-|[in] *bHighlighted*|Ignored.|  
+|*pDC*|[in] A pointer to a device context.|  
+|*strText*|[in] Text displayed on the list.|  
+|*nTextOffset*|[in] Spacing between the text and the left side of the bounding rectangle.|  
+|*rect*|[in] Specifies the bounding rectangle.|  
+|*bIsSelected*|[in] Ignored.|  
+|*bHighlighted*|[in] Ignored.|  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

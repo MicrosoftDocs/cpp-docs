@@ -133,10 +133,10 @@ static BOOL __stdcall IsKeyHandled(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *nKey*|The key to check.|  
-|[in] *fVirt*|Specifies the behavior of the shortcut key. For a list of possible values, see [ACCEL Structure](/windows/desktop/api/winuser/ns-winuser-tagaccel).|  
-|[in] *pWndFrame*|A frame window. This method determines whether a shortcut key is handled in this frame.|  
-|[in] *bIsDefaultFrame*|A Boolean parameter that indicates whether *pWndFrame* is the default frame window.|  
+|*nKey*|[in] The key to check.|  
+|*fVirt*|[in] Specifies the behavior of the shortcut key. For a list of possible values, see [ACCEL Structure](/windows/desktop/api/winuser/ns-winuser-tagaccel).|  
+|*pWndFrame*|[in] A frame window. This method determines whether a shortcut key is handled in this frame.|  
+|*bIsDefaultFrame*|[in] A Boolean parameter that indicates whether *pWndFrame* is the default frame window.|  
   
 ### Return Value  
  TRUE if the shortcut key is handled. FALSE if the key is not handled or if *pWndFrame* is NULL.  
@@ -156,7 +156,7 @@ static BOOL __stdcall IsKeyPrintable(const UINT nChar);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *nChar*|The character that this method checks.|  
+|*nChar*|[in] The character that this method checks.|  
   
 ### Return Value  
  Nonzero if the character is printable, zero if it is not.  

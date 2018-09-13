@@ -44,13 +44,12 @@ Not supported.
 `EQU`<br/>
 Specification of a type for the defined symbol is not supported.
 
-`EXPORT` and `GLOBAL`
+`EXPORT` and `GLOBAL`<br/>
+Specifies exports using this syntax:
 
-> **EXPORT** <em>sym</em>{**[**<em>type</em>**]**}
+> **EXPORT**|**GLOBAL** <em>sym</em>{**[**<em>type</em>**]**}
 
-*sym* is the symbol to be exported.  [*type*], if specified, can be either `[DATA]` to indicate that the symbol points to data or `[FUNC]` to indicate that the symbol points to code.
-
-`GLOBAL` is a synonym for `EXPORT`.
+*sym* is the symbol to be exported.  [*type*], if specified, can be either `[DATA]` to indicate that the symbol points to data or `[FUNC]` to indicate that the symbol points to code. `GLOBAL` is a synonym for `EXPORT`.
 
 `EXPORTAS`<br/>
 Not supported.
@@ -61,18 +60,22 @@ Not supported.
 `FUNCTION` and `PROC`<br/>
 Although the assembly syntax supports the specification of a custom calling convention on procedures by listing the registers that are caller-save and those that are callee-save, the Microsoft ARM assembler accepts the syntax but ignores the register lists.  The debug information that is produced by the assembler supports only the default calling convention.
 
-`IMPORT` and `EXTERN`
+`IMPORT` and `EXTERN`<br/>
+Specifies imports using this syntax:
 
-> **IMPORT** *sym*{**, WEAK** *alias*{**, TYPE** *t*}}
+> **IMPORT**|**EXTERN** *sym*{**, WEAK** *alias*{**, TYPE** *t*}}
 
 *sym* is the name of the symbol to be imported.
 
 If `WEAK` *alias* is specified, it indicates that *sym* is a weak external. If no definition for it is found at link time, then all references to it bind instead to *alias*.
 
-If `TYPE` *t* is specified, then *t* indicates how the linker should attempt to resolve *sym*.  These values for *t* are possible:<br/>
-1—Do not perform a library search for *sym*<br/>
-2—Perform a library search for *sym*<br/>
-3—*sym* is an alias for *alias* (default)
+If `TYPE` *t* is specified, then *t* indicates how the linker should attempt to resolve *sym*.  These values for *t* are possible:
+
+|Value|Description|
+|-|-|
+|1|Do not perform a library search for *sym*|
+|2|Perform a library search for *sym*|
+|3|*sym* is an alias for *alias* (default)|
 
 `EXTERN` is a synonym for `IMPORT`, except that *sym* is imported only if there are references to it in the current assembly.
 

@@ -79,10 +79,10 @@ virtual DROPEFFECT OnDragEnter(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *pWnd*|Unused.|  
-|[in] *pDataObject*|A pointer to the object that the user drags.|  
-|[in] *dwKeyState*|Contains the state of the modifier keys. This is a combination of any number of the following: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON.|  
-|[in] *point*|The location of the cursor in client coordinates.|  
+|*pWnd*|[in] Unused.|  
+|*pDataObject*|[in] A pointer to the object that the user drags.|  
+|*dwKeyState*|[in] Contains the state of the modifier keys. This is a combination of any number of the following: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON.|  
+|*point*|[in] The location of the cursor in client coordinates.|  
   
 ### Return Value  
  The effect that results if the drop occurs at the location specified by *point*. It can be one or more of the following:  
@@ -114,7 +114,7 @@ virtual void OnDragLeave(CWnd* pWnd);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *pWnd*|Unused.|  
+|*pWnd*|[in] Unused.|  
   
 ### Remarks  
  This method calls the `CMFCBaseTabCtrl::OnDragLeave` method to perform the drag operation.  
@@ -135,10 +135,10 @@ virtual DROPEFFECT OnDragOver(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *pWnd*|Unused.|  
-|[in] *pDataObject*|A pointer to the object that the user drags.|  
-|[in] *dwKeyState*|Contains the state of the modifier keys. This is a combination of any number of the following: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON.|  
-|[in] *point*|The location of the mouse pointer in client coordinates.|  
+|*pWnd*|[in] Unused.|  
+|*pDataObject*|[in] A pointer to the object that the user drags.|  
+|*dwKeyState*|[in] Contains the state of the modifier keys. This is a combination of any number of the following: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON.|  
+|*point*|[in] The location of the mouse pointer in client coordinates.|  
   
 ### Return Value  
  The effect that results if the drop occurs at the location specified by *point*. It can be one or more of the following:  
@@ -175,11 +175,11 @@ virtual DROPEFFECT OnDropEx(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *pWnd*|Unused.|  
-|[in] *pDataObject*|A pointer to the object that the user drags.|  
-|[in] *dropEffect*|The default drop operation.|  
-|[in] *dropList*|Unused.|  
-|[in] *point*|The location of the mouse pointer in client coordinates.|  
+|*pWnd*|[in] Unused.|  
+|*pDataObject*|[in] A pointer to the object that the user drags.|  
+|*dropEffect*|[in] The default drop operation.|  
+|*dropList*|[in] Unused.|  
+|*point*|[in] The location of the mouse pointer in client coordinates.|  
   
 ### Return Value  
  The resulting drop effect. It can be one or more of the following:  
@@ -211,7 +211,7 @@ BOOL Register(CMFCBaseTabCtrl *pOwner);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *pOwner*|The tab control to register as a drop target.|  
+|*pOwner*|[in] The tab control to register as a drop target.|  
   
 ### Return Value  
  Nonzero if registration was successful; otherwise 0.  

@@ -554,7 +554,7 @@ void SetThumbLength(int nLength);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *nLength*|Length of the slider, in pixels.|  
+|*nLength*|[in] Length of the slider, in pixels.|  
   
 ### Remarks  
  This method requires that the trackbar control be set to [TBS_FIXEDLENGTH](/windows/desktop/Controls/trackbar-control-styles) style.  

@@ -81,8 +81,8 @@ void AddCustomCategory(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *lpszName*|Specifies the custom category name.|  
-|[in] *lstIDS*|Contains ribbon command IDs to be shown in the custom category.|  
+|*lpszName*|[in] Specifies the custom category name.|  
+|*lstIDS*|[in] Contains ribbon command IDs to be shown in the custom category.|  
   
 ### Remarks  
  This method adds a category named *lpszName* to the **Commands** combo box. When the user selects the category, the commands specified in *lstIDS* appear in the command list.  

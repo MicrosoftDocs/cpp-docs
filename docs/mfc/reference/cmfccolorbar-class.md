@@ -304,8 +304,8 @@ void ContextToSize(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *bSquareButtons*|TRUE to specify that the shape of the buttons on a color bar control are square; otherwise, FALSE. The default value is TRUE.|  
-|[in] *bCenterButtons*|TRUE to specify that the content on the face of a color bar control button is centered; otherwise, FALSE. The default value is TRUE.|  
+|*bSquareButtons*|[in] TRUE to specify that the shape of the buttons on a color bar control are square; otherwise, FALSE. The default value is TRUE.|  
+|*bCenterButtons*|[in] TRUE to specify that the content on the face of a color bar control button is centered; otherwise, FALSE. The default value is TRUE.|  
   
 ### Remarks  
   
@@ -398,8 +398,8 @@ static BOOL CreatePalette(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *arColors*|An array of colors.|  
-|[in] *palette*|A palette of colors.|  
+|*arColors*|[in] An array of colors.|  
+|*palette*|[in] A palette of colors.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -472,7 +472,7 @@ CSize GetColorGridSize(BOOL bVertDock) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *bVertDock*|TRUE to perform the calculation for a vertically docked color bar control; otherwise, perform the calculation for a horizontally docked control.|  
+|*bVertDock*|[in] TRUE to perform the calculation for a vertically docked color bar control; otherwise, perform the calculation for a horizontally docked control.|  
   
 ### Return Value  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) object whose `cx` component contains the number of columns and whose `cy` component contains the number of rows.  
@@ -501,7 +501,7 @@ int GetExtraHeight(int nNumColumns) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *nNumColumns*|If the color bar control contains document colors, the number of columns to display in the grid of document colors. Otherwise, this value is not used.|  
+|*nNumColumns*|[in] If the color bar control contains document colors, the number of columns to display in the grid of document colors. Otherwise, this value is not used.|  
   
 ### Return Value  
  The calculated extra height that is required.  
@@ -551,8 +551,8 @@ static int InitColors(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *pPalette*|A pointer to a palette object, or NULL. If this parameter is NULL, this method uses the default palette of the operating system.|  
-|[in] *arColors*|An array of colors.|  
+|*pPalette*|[in] A pointer to a palette object, or NULL. If this parameter is NULL, this method uses the default palette of the operating system.|  
+|*arColors*|[in] An array of colors.|  
   
 ### Return Value  
  The number of elements in the array of colors.  
@@ -595,7 +595,7 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *pButton*|Pointer to a control that resides on a toolbar.|  
+|*pButton*|[in] Pointer to a control that resides on a toolbar.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -658,7 +658,7 @@ CPalette* SelectPalette(CDC* pDC);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *pDC*|Pointer to the device context of the parent button of the current color bar control.|  
+|*pDC*|[in] Pointer to the device context of the parent button of the current color bar control.|  
   
 ### Return Value  
  Pointer to the palette that is replaced by the palette of the parent button of the current color bar control.  
@@ -755,7 +755,7 @@ void SetPropList(CMFCPropertyGridCtrl* pWndList);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *pWndList*|Pointer to property grid control object.|  
+|*pWndList*|[in] Pointer to property grid control object.|  
   
 ##  <a name="setvertmargin"></a>  CMFCColorBar::SetVertMargin  
  Sets the vertical margin, which is the space between the top or bottom color cell and the client area boundary.  

@@ -30,8 +30,8 @@ unsigned char __vmx_vmread(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `Field`|The VMCS field to read.|  
-|[in] `FieldValue`|A pointer to the location to store the value read from the VMCS field specified by the `Field` parameter.|  
+|*Field*|[in] The VMCS field to read.|  
+|*FieldValue*|[in] A pointer to the location to store the value read from the VMCS field specified by the `Field` parameter.|  
   
 ## Return Value  
   

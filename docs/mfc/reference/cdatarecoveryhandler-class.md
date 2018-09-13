@@ -121,8 +121,8 @@ virtual BOOL AutosaveDocumentInfo(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *pDocument*|A pointer to the `CDocument` to save.|  
-|[in] *bResetModifiedFlag*|TRUE indicates that the `CDataRecoveryHandler` considers *pDocument* to be modified; FALSE indicates that the framework considers *pDocument* to be unmodified. See the Remarks section for more information about the effect of this flag.|  
+|*pDocument*|[in] A pointer to the `CDocument` to save.|  
+|*bResetModifiedFlag*|[in] TRUE indicates that the `CDataRecoveryHandler` considers *pDocument* to be modified; FALSE indicates that the framework considers *pDocument* to be unmodified. See the Remarks section for more information about the effect of this flag.|  
   
 ### Return Value  
  TRUE if the appropriate flags are set and *pDocument* is a valid `CDocument` object.  
@@ -151,8 +151,8 @@ CDataRecoveryHandler(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *dwRestartManagerSupportFlags*|Indicates which options of the restart manager are supported.|  
-|[in] *nAutosaveInterval*|The time between autosaves. This parameter is in milliseconds.|  
+|*dwRestartManagerSupportFlags*|[in] Indicates which options of the restart manager are supported.|  
+|*nAutosaveInterval*|[in] The time between autosaves. This parameter is in milliseconds.|  
   
 ### Remarks  
  The MFC framework automatically creates a `CDataRecoveryHandler` object for your application when you use the **New Project** wizard. Unless you are customizing the data recovery behavior or the restart manager, you should not create a `CDataRecoveryHandler` object.  
@@ -170,7 +170,7 @@ virtual BOOL CreateDocumentInfo(CDocument* pDocument);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *pDocument*|A pointer to a `CDocument`. This method creates the document information for this `CDocument`.|  
+|*pDocument*|[in] A pointer to a `CDocument`. This method creates the document information for this `CDocument`.|  
   
 ### Return Value  
  The default implementation returns TRUE.  
@@ -202,7 +202,7 @@ virtual BOOL DeleteAutosavedFile(const CString& strAutosavedFile);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *strAutosavedFile*|A string that contains the autosaved file name.|  
+|*strAutosavedFile*|[in] A string that contains the autosaved file name.|  
   
 ### Return Value  
  The default implementation always return TRUE.  
@@ -259,7 +259,7 @@ virtual CString GetDocumentListName(CDocument* pDocument) const;
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *pDocument*|A pointer to a `CDocument`. `GetDocumentListName` retrieves the document name from this `CDocument`.|  
+|*pDocument*|[in] A pointer to a `CDocument`. `GetDocumentListName` retrieves the document name from this `CDocument`.|  
   
 ### Return Value  
  The document name from *pDocument*.  
@@ -279,7 +279,7 @@ virtual CString GetNormalDocumentTitle(CDocument* pDocument);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *pDocument*|A pointer to a `CDocument`.|  
+|*pDocument*|[in] A pointer to a `CDocument`.|  
   
 ### Return Value  
  The normal title for the specified document.  
@@ -395,7 +395,7 @@ virtual BOOL RemoveDocumentInfo(CDocument* pDocument);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *pDocument*|A pointer to the document to remove.|  
+|*pDocument*|[in] A pointer to the document to remove.|  
   
 ### Return Value  
  TRUE if *pDocument* was removed from the list; FALSE if an error occurred.  
@@ -477,7 +477,7 @@ virtual void SetAutosavePath(const CString& strAutosavePath);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *strAutosavePath*|The path where autosave files are stored.|  
+|*strAutosavePath*|[in] The path where autosave files are stored.|  
   
 ### Remarks  
  Changing the autosave directory does not move currently autosaved files.  
@@ -494,7 +494,7 @@ virtual void SetRestartIdentifier(const CString& strRestartIdentifier);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *strRestartIdentifier*|The unique identifier for the restart manager.|  
+|*strRestartIdentifier*|[in] The unique identifier for the restart manager.|  
   
 ### Remarks  
  The restart manager records information about the open documents in the registry. This information is stored with the unique restart identifier as the key. Because the restart identifier is unique for each instance of an application, multiple instances of an application may exit unexpectedly and the restart manager can recover each of them.  
@@ -511,7 +511,7 @@ virtual void SetSaveDocumentInfoOnIdle(BOOL bSaveOnIdle);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *bSaveOnIdle*|TRUE to save document information during the current idle cycle; FALSE to not perform a save.|  
+|*bSaveOnIdle*|[in] TRUE to save document information during the current idle cycle; FALSE to not perform a save.|  
   
 ##  <a name="setshutdownbyrestartmanager"></a>  CDataRecoveryHandler::SetShutdownByRestartManager  
  Sets whether the previous exit of the application was caused by the restart manager.  
@@ -525,7 +525,7 @@ virtual void SetShutdownByRestartManager(BOOL bShutdownByRestartManager);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *bShutdownByRestartManager*|TRUE to indicate that the restart manager caused the application to exit; FALSE to indicate that the application exited for another reason.|  
+|*bShutdownByRestartManager*|[in] TRUE to indicate that the restart manager caused the application to exit; FALSE to indicate that the application exited for another reason.|  
   
 ### Remarks  
  The framework behaves differently based on whether the previous exit was unexpected or whether it was initiated by the restart manager.  
@@ -542,7 +542,7 @@ virtual BOOL UpdateDocumentInfo(CDocument* pDocument);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *pDocument*|A pointer to the saved document.|  
+|*pDocument*|[in] A pointer to the saved document.|  
   
 ### Return Value  
  TRUE if this method deleted the autosaved document and updated the document information; FALSE if an error occurred.  

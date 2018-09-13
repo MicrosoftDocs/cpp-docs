@@ -28,7 +28,7 @@ void __sidt(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `Destination`|A pointer to the memory location where the IDTR is stored.|  
+|*Destination*|[in] A pointer to the memory location where the IDTR is stored.|  
   
 ## Requirements  
   

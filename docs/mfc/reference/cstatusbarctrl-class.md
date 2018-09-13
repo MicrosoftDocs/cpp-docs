@@ -212,7 +212,7 @@ HICON GetIcon(int iPart) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *iPart*|The zero-based index of the part that contains the icon to be retrieved. If this parameter is -1, the status bar is assumed to be a simple mode status bar.|  
+|*iPart*|[in] The zero-based index of the part that contains the icon to be retrieved. If this parameter is -1, the status bar is assumed to be a simple mode status bar.|  
   
 ### Return Value  
  The handle to the icon if the method successful; otherwise, NULL.  

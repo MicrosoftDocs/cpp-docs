@@ -274,7 +274,7 @@ void RebuildPalette(CPalette* pPal);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *pPal*|A pointer to a logical palette or NULL. If NULL, the default system palette is used.|  
+|*pPal*|[in] A pointer to a logical palette or NULL. If NULL, the default system palette is used.|  
   
 ##  <a name="setcolor"></a>  CMFCColorButton::SetColor  
  Specifies the color of the button.  

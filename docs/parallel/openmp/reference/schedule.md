@@ -33,8 +33,8 @@ schedule(type[,size])
   
 -   `static`  
   
- `size` (optional)  
- Specifies the size of iterations. `size` must be an integer. Not valid when `type` is `runtime`.  
+*size* (optional)<br/>
+Specifies the size of iterations. `size` must be an integer. Not valid when `type` is `runtime`.  
   
 ## Remarks  
  For more information, see [2.4.1 for Construct](../../../parallel/openmp/2-4-1-for-construct.md).  

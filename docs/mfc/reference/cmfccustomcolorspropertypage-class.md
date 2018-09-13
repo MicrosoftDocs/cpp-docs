@@ -78,9 +78,9 @@ void Setup(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *R*|The red component of the RGB value.|  
-|[in] *G*|The green component of the RGB value.|  
-|[in] *B*|The blue component of the RGB value.|  
+|*R*|[in] The red component of the RGB value.|  
+|*G*|[in] The green component of the RGB value.|  
+|*B*|[in] The blue component of the RGB value.|  
   
 ### Remarks  
  This method updates the current RGB and the associated HLS (hue, lightness, and saturation) color values of the property page. The [CMFCColorDialog::SetPageTwo](../../mfc/reference/cmfccolordialog-class.md#setpagetwo) method calls this method when the framework initializes the color dialog box or the user presses the left mouse button. For more information about `CMFCColorDialog`, see [CMFCColorDialog Class](../../mfc/reference/cmfccolordialog-class.md).  
