@@ -6231,6 +6231,46 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/eventsource-add-method.md",
+            "redirect_url": "/cpp/windows/eventsource-class#add",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventsource-addremovelock-data-member.md",
+            "redirect_url": "/cpp/windows/eventsource-class#addremovelock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventsource-eventsource-constructor.md",
+            "redirect_url": "/cpp/windows/eventsource-class#eventsource",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventsource-getsize-method.md",
+            "redirect_url": "/cpp/windows/eventsource-class#getsize",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventsource-invokeall-method.md",
+            "redirect_url": "/cpp/windows/eventsource-class#invokeall",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventsource-remove-method.md",
+            "redirect_url": "/cpp/windows/eventsource-class#remove",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventsource-targets-data-member.md",
+            "redirect_url": "/cpp/windows/eventsource-class#targets",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventsource-targetspointerlock-data-member.md",
+            "redirect_url": "/cpp/windows/eventsource-class#targetspointerlock",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/ftmbase-createglobalinterfacetable-method.md",
             "redirect_url": "/cpp/windows/ftmbase-class#createglobalinterfacetable",
             "redirect_document_id": false
