@@ -5986,6 +5986,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/ide/building-external-projects.md",
+            "redirect_url": "/cpp/ide/non-msbuild-projects",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/ide/redistributing-database-support-files.md",
             "redirect_url": "../data/data-access-in-cpp",
             "redirect_document_id": false
