@@ -315,9 +315,10 @@ void SetRange32(
     int nUpper);
 ```  
   
-### Parameters  
- *nLower* and *nUpper*  
- Upper and lower limits for the control. For `SetRange`, neither limit can be greater than UD_MAXVAL or less than UD_MINVAL; in addition, the difference between the two limits cannot exceed UD_MAXVAL. `SetRange32` places no restrictions on the limits; use any integers.  
+### Parameters
+
+*nLower* and *nUpper*<br/>
+Upper and lower limits for the control. For `SetRange`, neither limit can be greater than UD_MAXVAL or less than UD_MINVAL; in addition, the difference between the two limits cannot exceed UD_MAXVAL. `SetRange32` places no restrictions on the limits; use any integers.  
   
 ### Remarks  
  The member function `SetRange32` sets the 32-bit range for the spin button control.  

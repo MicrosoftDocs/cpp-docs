@@ -22,12 +22,13 @@ template <class TYPE, class ARG_TYPE = const TYPE&>
 class CArray : public CObject  
 ```  
   
-#### Parameters  
- *TYPE*  
- Template parameter that specifies the type of objects stored in the array. *TYPE* is a parameter that is returned by `CArray`.  
-  
- *ARG* *_* *TYPE*  
- Template parameter that specifies the argument type that is used to access objects stored in the array. Often a reference to *TYPE*. *ARG_TYPE* is a parameter that is passed to `CArray`.  
+#### Parameters
+
+*TYPE*<br/>
+Template parameter that specifies the type of objects stored in the array. *TYPE* is a parameter that is returned by `CArray`.
+
+*ARG_TYPE*<br/>
+Template parameter that specifies the argument type that is used to access objects stored in the array. Often a reference to *TYPE*. *ARG_TYPE* is a parameter that is passed to `CArray`.  
   
 ## Members  
   
@@ -90,7 +91,7 @@ class CArray : public CObject
  `CArray`  
   
 ## Requirements  
- `Header:` afxtempl.h  
+**Header:** afxtempl.h  
   
 ##  <a name="add"></a>  CArray::Add  
  Adds a new element to the end of an array, growing the array by 1.  

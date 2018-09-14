@@ -44,7 +44,7 @@ Either **class** or **typename**
 *constraint-clauses*  
 A list (not comma-separated) of **where** clauses specifying the constraints for the type parameters. Takes the form:
 
-`where`  *type-parameter-identifier*  `:`  *constraint-list*  `...`
+> **where** *type-parameter-identifier* **:** *constraint-list*  **...**
 
 *constraint-list*  
 *class-or-interface*[`,` *...*]

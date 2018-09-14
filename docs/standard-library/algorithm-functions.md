@@ -2316,11 +2316,11 @@ Returns **true** if the elements in the specified range form a heap, **false** i
 
 ### Remarks
 
-The first template function returns [is_heap_until](../standard-library/algorithm-functions.md#is_heap_until)`(` `first ,` `last ) ==` `last`.
+The first template function returns [is_heap_until](../standard-library/algorithm-functions.md#is_heap_until)`(first , last) == last`.
 
 The second template function returns
 
-`is_heap_until` `(`  `first` `,`  `last` `,`  `comp` `) ==`  `last`.
+`is_heap_until(first, last, comp) == last`.
 
 ## <a name="is_heap_until"></a>  is_heap_until
 

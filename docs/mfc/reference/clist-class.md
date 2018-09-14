@@ -60,7 +60,7 @@ class CList : public CObject
  *TYPE*  
  Type of object stored in the list.  
   
- *ARG* *_* *TYPE*  
+ *ARG_TYPE*  
  Type used to reference objects stored in the list. Can be a reference.  
   
 ## Remarks  

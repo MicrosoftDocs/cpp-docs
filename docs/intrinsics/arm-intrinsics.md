@@ -229,8 +229,8 @@ void __iso_volatile_store8(volatile __int8 * Location, __int8 Value)
  `Location`  
  The address of a memory location to read from or write to.  
   
- `Value` (store intrinsics only)  
- The value to write to the specified memory location.  
+ `Value`  
+ The value to write to the specified memory location (store intrinsics only).  
   
  **Return Value (load intrinsics only)**  
   
@@ -240,9 +240,8 @@ void __iso_volatile_store8(volatile __int8 * Location, __int8 Value)
   
  You can use the `__iso_volatile_load8/16/32/64` and `__iso_volatile_store8/16/32/64` intrinsics to explicitly perform memory accesses that are not subject to compiler optimizations. The compiler cannot remove, synthetize, or change the relative order of these operations, but it does not generate implicit hardware memory barriers. Therefore, the hardware may still reorder the observable memory accesses across multiple threads. More precisely, these intrinsics are equivalent to the following expressions as compiled under **/volatile:iso**.  
   
-```  
-  
-      int a = __iso_volatile_load32(p);    // equivalent to: int a = *(const volatile __int32*)p;   
+```cpp
+int a = __iso_volatile_load32(p);    // equivalent to: int a = *(const volatile __int32*)p;   
 __iso_volatile_store32(p, a);        // equivalent to: *(volatile __int32*)p = a;  
 ```  
   
