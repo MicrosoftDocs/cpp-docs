@@ -92,26 +92,26 @@ TCHAR m_state[3] = 'CA';
 ]
 ```
 
-*name* (optional)  
-The name of the handle you use to work with the rowset. If you specify *name*, **db_command** generates a class with the specified *name*, which can be used to traverse the rowset or to execute multiple action queries. If you do not specify *name*, it will not be possible to return more than one row of results to the user.
+*name*  
+(Optional) The name of the handle you use to work with the rowset. If you specify *name*, **db_command** generates a class with the specified *name*, which can be used to traverse the rowset or to execute multiple action queries. If you do not specify *name*, it will not be possible to return more than one row of results to the user.
 
-*source_name* (optional)  
-The `CSession` variable or instance of a class that has the `db_source` attribute applied to it on which the command executes. See [db_source](../windows/db-source.md).
+*source_name*  
+(Optional) The `CSession` variable or instance of a class that has the `db_source` attribute applied to it on which the command executes. See [db_source](../windows/db-source.md).
 
 **db_command** checks to ensure that the variable used for *source_name* is valid, so the specified variable should be in function or global scope.
 
-*hresult* (optional)  
-Identifies the variable that will receive the HRESULT of this database command. If the variable does not exist, it will be automatically injected by the attribute.
+*hresult*  
+(Optional) Identifies the variable that will receive the HRESULT of this database command. If the variable does not exist, it will be automatically injected by the attribute.
 
-*bindings* (optional)  
-Allows you to separate the binding parameters from the OLE DB command.
+*bindings*  
+(Optional) Allows you to separate the binding parameters from the OLE DB command.
 
 If you specify a value for *bindings*, **db_command** will parse the associated value and will not parse the \[*bindtype*] parameter. This usage allows you to use OLE DB provider syntax. To disable parsing, without binding parameters, specify `Bindings=""`.
 
 If you do not specify a value for *bindings*, **db_command** will parse the binding parameter block, looking for '**(**', followed by **\[**_bindtype_**]** in brackets, followed by one or more previously declared C++ member variables, followed by '**)**'. All text between the parentheses will be stripped from the resulting command, and these parameters will be used to construct column and parameter bindings for this command.
 
-*bulk_fetch* (optional)  
-An integer value that specifies the number of rows to fetch.
+*bulk_fetch*  
+(Optional) An integer value that specifies the number of rows to fetch.
 
 The default value is 1, which specifies single row fetching (the rowset will be of type [CRowset](../data/oledb/crowset-class.md)).
 

@@ -39,20 +39,20 @@ The ordinal column number (`DBCOLUMNINFO` ordinal) or column name (ANSI or Unico
 [db_column(L"city_name")] TCHAR szCity[30];
 ```
 
-*dbtype* (optional)  
-An OLE DB [Type Indicator](/previous-versions/windows/desktop/ms711251\(v=vs.85\)) for the column entry.
+*dbtype*  
+(Optional) An OLE DB [Type Indicator](/previous-versions/windows/desktop/ms711251\(v=vs.85\)) for the column entry.
 
-*precision* (optional)  
-The precision to be used for the column entry. For details, see the description of the `bPrecision` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
+*precision*  
+(Optional) The precision to be used for the column entry. For details, see the description of the `bPrecision` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
 
-*scale* (optional)  
-The scale to be used for the column entry. For details, see the description of `bScale` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
+*scale*  
+(Optional) The scale to be used for the column entry. For details, see the description of `bScale` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
 
-*status* (optional)  
-A member variable used to hold the status of this column. The status indicates whether the column value is a data value or some other value, such as NULL. For possible values, see [Status](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) in the *OLE DB Programmer's Reference*.
+*status*  
+(Optional) A member variable used to hold the status of this column. The status indicates whether the column value is a data value or some other value, such as NULL. For possible values, see [Status](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) in the *OLE DB Programmer's Reference*.
 
-*length* (optional)  
-A member variable used to hold the size of the column in bytes.
+*length*  
+(Optional) A member variable used to hold the size of the column in bytes.
 
 ## Remarks
 

@@ -26,8 +26,8 @@ Specifies the threading model for a COM object.
 
 ### Parameters
 
-*model* (optional)  
-One of the following threading models:
+*model*<br/>
+(Optional) One of the following threading models:
 
 - `apartment` (apartment threading)
 

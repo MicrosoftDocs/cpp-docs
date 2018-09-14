@@ -38,8 +38,8 @@ ms.workload: ["cplusplus"]
  WINDOWS  
  Application does not require a console, probably because it creates its own windows for interaction with the user. If `WinMain` or `wWinMain` is defined for native code, or `WinMain(HISTANCE *, HINSTANCE *, char *, int)` or `wWinMain(HINSTANCE *, HINSTANCE *, wchar_t *, int)` is defined for managed code, WINDOWS is the default.  
   
- `Major` and `minor` (optional)  
- Specify the minimum required version of the subsystem. The arguments are decimal numbers in the range 0 through 65,535. See the Remarks for more information. There are no upper bounds for version numbers.  
+*major* and *minor*<br/>
+(Optional) Specify the minimum required version of the subsystem. The arguments are decimal numbers in the range 0 through 65,535. See the Remarks for more information. There are no upper bounds for version numbers.  
   
 ## Remarks  
  The /SUBSYSTEM option specifies the environment for the executable.  

@@ -91,11 +91,11 @@ A comma-separated list of the identifiers (enumerators) in the enumeration.
 *name*  
 The name of the enumeration. Anonymous managed enumerations are not allowed.
 
-*type* (optional)  
-The underlying type of the *identifiers*. This can be any scalar type, such as signed or unsigned versions of **int**, **short**, or **long**.  **bool** or **char** is also allowed.
+*type*  
+(Optional) The underlying type of the *identifiers*. This can be any scalar type, such as signed or unsigned versions of **int**, **short**, or **long**.  **bool** or **char** is also allowed.
 
-*var* (optional)  
-The name of a variable of the enumeration type.
+*var*  
+(Optional) The name of a variable of the enumeration type.
 
 ### Remarks
 

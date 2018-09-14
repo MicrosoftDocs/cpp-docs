@@ -19,10 +19,10 @@ Structured exception handling (SEH) is a Microsoft extension to C to handle cert
 
 ## Grammar
 
-*try-except-statement* :  
+*try-except-statement* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**__try** *compound-statement* **__except** **(** *expression* **)** *compound-statement*
 
-*try-finally-statement* :  
+*try-finally-statement* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**__try** *compound-statement* **__finally** *compound-statement*
 
 ## Remarks

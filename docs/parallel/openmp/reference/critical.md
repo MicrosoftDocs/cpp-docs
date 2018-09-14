@@ -26,8 +26,8 @@ Specifies that code is only be executed on one thread at a time.
   
 ## Arguments
 
-*name* (optional)<br/>
-A name to identify the critical code. Note that name must be enclosed in parentheses.  
+*name*<br/>
+(Optional) A name to identify the critical code. Note that name must be enclosed in parentheses.  
   
 ## Remarks  
  The **critical** directive supports no OpenMP clauses.  

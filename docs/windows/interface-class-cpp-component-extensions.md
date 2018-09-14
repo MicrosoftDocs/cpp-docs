@@ -37,8 +37,8 @@ The name of the interface.
 *inherit_access*  
 The accessibility of *base_interface*.  The only permitted accessibility for a base interface is **public** (the default).
 
-*base_interface* (optional)  
-A base interface for interface *name*.
+*base_interface*  
+(Optional) A base interface for interface *name*.
 
 ### Remarks
 

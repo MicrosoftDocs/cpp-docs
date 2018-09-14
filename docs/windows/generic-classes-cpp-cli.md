@@ -32,8 +32,8 @@ class-body
 
 In the above syntax, the following terms are used:
 
-*attributes* (optional)  
-Additional declarative information. For more information on attributes and attribute classes, see Attributes.
+*attributes*  
+(Optional) Additional declarative information. For more information on attributes and attribute classes, see Attributes.
 
 *class-key*  
 Either **class** or **typename**
@@ -55,8 +55,8 @@ Accessibility modifiers for the generic class. For the Windows Runtime, the only
 *identifier*  
 The name of the generic class, any valid C++ identifier.
 
-*modifiers* (optional)  
-Allowed modifiers include **sealed** and **abstract**.
+*modifiers*  
+(Optional) Allowed modifiers include **sealed** and **abstract**.
 
 *base-list*  
 A list that contains the one base class and any implemented interfaces, all separated by commas.

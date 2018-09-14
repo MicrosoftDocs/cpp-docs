@@ -23,8 +23,8 @@ Specifies that all threads have the same view of memory for all shared objects.
   
 ## Arguments
 
-*var* (optional)<br/>
-A comma-separated list of variables that represent objects you want to synchronize. If `var` is not specified, all memory is flushed.  
+*var*<br/>
+(Optional) A comma-separated list of variables that represent objects you want to synchronize. If `var` is not specified, all memory is flushed.  
   
 ## Remarks  
  The **flush** directive supports no OpenMP clauses.  

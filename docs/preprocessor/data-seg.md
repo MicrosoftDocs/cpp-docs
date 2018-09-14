@@ -29,22 +29,22 @@ OBJ files can be viewed with the [dumpbin](../build/reference/dumpbin-command-li
   
 **data_seg** with no parameters resets the segment to .data.  
   
-*push* (optional)  
-Puts a record on the internal compiler stack. A *push* can have an *identifier* and *segment-name*.  
+**push**  
+(Optional) Puts a record on the internal compiler stack. A **push** can have an *identifier* and *segment-name*.  
   
-*pop* (optional)  
-Removes a record from the top of the internal compiler stack.  
+**pop**  
+(Optional) Removes a record from the top of the internal compiler stack.  
   
-*identifier* (optional)  
-When used with *push*, assigns a name to the record on the internal compiler stack. When used with *pop*, pops records off the internal stack until *identifier* is removed; if *identifier* is not found on the internal stack, nothing is popped.  
+*identifier*  
+(Optional) When used with **push**, assigns a name to the record on the internal compiler stack. When used with **pop**, pops records off the internal stack until *identifier* is removed; if *identifier* is not found on the internal stack, nothing is popped.  
   
-*identifier* enables multiple records to be popped with a single *pop* command.  
+*identifier* enables multiple records to be popped with a single **pop** command.  
   
-*"segment-name"*(optional)  
-The name of a segment. When used with *pop*, the stack is popped and *segment-name* becomes the active segment name.  
+*"segment-name"*  
+(Optional) The name of a segment. When used with **pop**, the stack is popped and *segment-name* becomes the active segment name.  
   
-*"segment-class"* (optional)  
-Included for compatibility with C++ prior to version 2.0. It is ignored.  
+*"segment-class"*  
+(Optional) Included for compatibility with C++ prior to version 2.0. It is ignored.  
   
 ## Example  
   

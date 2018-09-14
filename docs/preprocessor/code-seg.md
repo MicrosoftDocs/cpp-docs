@@ -31,22 +31,22 @@ The **code_seg** pragma directive tells the compiler to put all subsequent objec
   
 A **code_seg** pragma directive without parameters resets the text segment name for the subsequent object code to .text.  
   
-*push* (optional)  
-Puts a record on the internal compiler stack. A *push* can have an *identifier* and *segment-name*.  
+**push**  
+(Optional) Puts a record on the internal compiler stack. A **push** can have an *identifier* and *segment-name*.  
   
-*pop* (optional)  
-Removes a record from the top of the internal compiler stack.  
+**pop**  
+(Optional) Removes a record from the top of the internal compiler stack.  
   
-*identifier* (optional)  
-When used with *push*, assigns a name to the record on the internal compiler stack. When used with *pop*, pops records off the internal stack until *identifier* is removed; if *identifier* is not found on the internal stack, nothing is popped.  
+*identifier*  
+(Optional) When used with **push**, assigns a name to the record on the internal compiler stack. When used with **pop**, pops records off the internal stack until *identifier* is removed; if *identifier* is not found on the internal stack, nothing is popped.  
   
-*identifier* enables multiple records to be popped with just one *pop* command.  
+*identifier* enables multiple records to be popped with just one **pop** command.  
   
-"*segment-name*" (optional)  
-The name of a segment. When used with *pop*, the stack is popped and *segment-name* becomes the active text segment name.  
+"*segment-name*"  
+(Optional) The name of a segment. When used with **pop**, the stack is popped and *segment-name* becomes the active text segment name.  
   
-"*segment-class*" (optional)  
-Ignored, but included for compatibility with versions of C++ earlier than version 2.0.  
+"*segment-class*"  
+(Optional) Ignored, but included for compatibility with versions of C++ earlier than version 2.0.  
   
 You can use the [DUMPBIN.EXE](../build/reference/dumpbin-command-line.md) application to view .obj files. Versions of DUMPBIN for each supported target architecture are included with Visual Studio.  
   

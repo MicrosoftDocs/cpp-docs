@@ -27,8 +27,8 @@ generic < [class | typename] type-parameter-identifiers>
 
 ### Parameters
 
-*attributes* (Optional)  
-Additional declarative information. For more information on attributes and attribute classes, see Attributes.
+*attributes*  
+(Optional) Additional declarative information. For more information on attributes and attribute classes, see Attributes.
 
 *type-parameter-identifier(s)*  
 Comma-separated list of identifiers for the type parameters.
@@ -36,8 +36,8 @@ Comma-separated list of identifiers for the type parameters.
 *type-parameter-constraints-clauses*  
 Takes the form specified in [Constraints on Generic Type Parameters (C++/CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)
 
-*accessibility-modifiers* (Optional)  
-Accessibility modifiers (e.g. **public**, **private**).
+*accessibility-modifiers*  
+(Optional) Accessibility modifiers (e.g. **public**, **private**).
 
 *result-type*  
 The return type of the delegate.
@@ -45,8 +45,8 @@ The return type of the delegate.
 *identifier*  
 The name of the delegate.
 
-*formal-parameters* (Optional)  
-The parameter list of the delegate.
+*formal-parameters*  
+(Optional) The parameter list of the delegate.
 
 ## Example
 

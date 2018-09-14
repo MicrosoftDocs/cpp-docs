@@ -24,8 +24,8 @@ Causes the work done in a for loop inside a parallel region to be divided among 
   
 ## Arguments
 
-*clause* (optional)<br/>
-Zero or more clauses. See the Remarks section for a list of the clauses supported by **for**.  
+*clause*<br/>
+(Optional) Zero or more clauses. See the Remarks section for a list of the clauses supported by **for**.  
   
 *for_statement*<br/>
 A for loop. Undefined behavior will result if user code in the for loop changes the index variable.  

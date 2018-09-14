@@ -26,23 +26,23 @@ These options are deprecated starting in Visual Studio 2015:
 
 ### Arguments
 
-**INCREMENTAL** (optional)<br/>
-Specifies that the linker only applies whole program optimization or link-time code generation (LTCG) to the set of files affected by an edit, instead of the entire project. By default, this flag is not set when **/LTCG** is specified, and the entire project is linked by using whole program optimization.
+**INCREMENTAL**<br/>
+(Optional) Specifies that the linker only applies whole program optimization or link-time code generation (LTCG) to the set of files affected by an edit, instead of the entire project. By default, this flag is not set when **/LTCG** is specified, and the entire project is linked by using whole program optimization.
 
-**NOSTATUS** &#124; **STATUS** (optional)<br/>
-Specifies whether the linker displays a progress indicator that shows what percentage of the link is complete. By default, this status information is not displayed.
+**NOSTATUS** &#124; **STATUS**<br/>
+(Optional) Specifies whether the linker displays a progress indicator that shows what percentage of the link is complete. By default, this status information is not displayed.
 
-**OFF** (optional)<br/>
-Disables link-time code generation. This behavior is the same as when **/LTCG** is not specified on the command line.
+**OFF**<br/>
+(Optional) Disables link-time code generation. This behavior is the same as when **/LTCG** is not specified on the command line.
 
-**PGINSTRUMENT** (optional)<br/>
-This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and [/GENPROFILE or /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) to generate an instrumented build for profile-guided optimization. The data that is collected from instrumented runs is used to create an optimized image. For more information, see [Profile Guided Optimization](profile-guided-optimizations.md). The short form of this option is **/LTCG:PGI**.
+**PGINSTRUMENT**<br/>
+(Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and [/GENPROFILE or /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) to generate an instrumented build for profile-guided optimization. The data that is collected from instrumented runs is used to create an optimized image. For more information, see [Profile Guided Optimization](profile-guided-optimizations.md). The short form of this option is **/LTCG:PGI**.
 
-**PGOPTIMIZE** (optional)<br/>
-This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and  [/USEPROFILE](useprofile.md) to build an optimized image. For more information, see [Profile Guided Optimization](../../build/reference/profile-guided-optimizations.md). The short form of this option is **/LTCG:PGO**.
+**PGOPTIMIZE**<br/>
+(Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and  [/USEPROFILE](useprofile.md) to build an optimized image. For more information, see [Profile Guided Optimization](../../build/reference/profile-guided-optimizations.md). The short form of this option is **/LTCG:PGO**.
 
-**PGUPDATE** (optional)<br/>
-This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and  **/USEPROFILE** to rebuild an optimized image. For more information, see [Profile Guided Optimization](../../build/reference/profile-guided-optimizations.md). The short form of this option is **/LTCG:PGU**.
+**PGUPDATE**<br/>
+(Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and  **/USEPROFILE** to rebuild an optimized image. For more information, see [Profile Guided Optimization](../../build/reference/profile-guided-optimizations.md). The short form of this option is **/LTCG:PGU**.
 
 ## Remarks
 

@@ -170,11 +170,11 @@ void clear(io_state state);
 
 ### Parameters
 
-*state* (optional)
-The flags you want to set after clearing all flags. Defaults to `goodbit`.
+*state*  
+(Optional) The flags you want to set after clearing all flags. Defaults to `goodbit`.
 
-*reraise* (optional)
-Specifies whether the exception should be re-raised. Defaults to **false** (will not re-raise the exception).
+*reraise*  
+(Optional) Specifies whether the exception should be re-raised. Defaults to **false** (will not re-raise the exception).
 
 ### Remarks
 

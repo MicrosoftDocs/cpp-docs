@@ -144,7 +144,7 @@ The following steps must be taken in order to create and use events in Visual C+
 
    - An event created from the delegate.
 
-   - (optional) A method that verifies that an instance of the delegate declared with the **event** keyword exists. Otherwise, this logic must be placed in the code that fires the event.
+   - (Optional) A method that verifies that an instance of the delegate declared with the **event** keyword exists. Otherwise, this logic must be placed in the code that fires the event.
 
    - Methods that call the event. These methods can be overrides of some base class functionality.
 

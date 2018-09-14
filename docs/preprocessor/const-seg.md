@@ -21,8 +21,8 @@ Specifies the segment where [const](../cpp/const-cpp.md) variables are stored in
 #pragma const_seg ( [ [ { push | pop}, ] [ identifier, ] ] [ "segment-name" [, "segment-class" ] )  
 ```  
   
-## Remarks  
- 
+## Remarks
+
 The meaning of the terms *segment* and *section* are interchangeable in this topic.  
   
 OBJ files can be viewed with the [dumpbin](../build/reference/dumpbin-command-line.md) application. The default segment in the .obj file for `const` variables is .rdata. Some `const` variables, such as scalars, are automatically inlined into the code stream. Inlined code will not appear in .rdata.  
@@ -31,22 +31,22 @@ Defining an object requiring dynamic initialization in a `const_seg` results in 
   
 `#pragma const_seg` with no parameters resets the segment to .rdata.  
   
-*push* (optional)  
-Puts a record on the internal compiler stack. A *push* can have an *identifier* and *segment-name*.  
+**push**  
+(Optional) Puts a record on the internal compiler stack. A **push** can have an *identifier* and *segment-name*.  
   
-*pop* (optional)  
-Removes a record from the top of the internal compiler stack.  
+**pop**  
+(Optional) Removes a record from the top of the internal compiler stack.  
   
-*identifier* (optional)  
-When used with *push*, assigns a name to the record on the internal compiler stack. When used with *pop*, pops records off the internal stack until *identifier* is removed; if *identifier* is not found on the internal stack, nothing is popped.  
+*identifier*  
+(Optional) When used with **push**, assigns a name to the record on the internal compiler stack. When used with **pop**, pops records off the internal stack until *identifier* is removed; if *identifier* is not found on the internal stack, nothing is popped.  
   
-Using *identifier* enables multiple records to be popped with a single *pop* command.  
+Using *identifier* enables multiple records to be popped with a single **pop** command.  
   
-"*segment-name*" (optional)  
-The name of a segment. When used with *pop*, the stack is popped and *segment-name* becomes the active segment name.  
+"*segment-name*"  
+(Optional) The name of a segment. When used with **pop**, the stack is popped and *segment-name* becomes the active segment name.  
   
-"*segment-class*" (optional)  
-Included for compatibility with C++ prior to version 2.0. It is ignored.  
+"*segment-class*"  
+(Optional) Included for compatibility with C++ prior to version 2.0. It is ignored.  
   
 ## Example  
   
