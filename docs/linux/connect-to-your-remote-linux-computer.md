@@ -33,7 +33,7 @@ When building a C++ Linux project in Visual Studio, Linux code is copied to your
    | **User name**           | User to authenticate as
    | **Authentication type** | Password or Private Key are both supported
    | **Password**            | Password for the entered user name
-   | **Private key file**    | Private key created for ssh connection
+   | **Private key file**    | Private key file created for ssh connection
    | **Passphrase**          | Passphrase used with private key selected above
 
 1. Click the **Connect** button to attempt a connection to the remote computer.  If the connection fails, the entry boxes which need to be changed will be outlined in red.
