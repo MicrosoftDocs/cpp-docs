@@ -144,7 +144,6 @@
 ### [Troubleshooting Build Customizations](troubleshooting-build-customizations.md)
 ### [Formatting the Output of a Custom Build Step or Build Event](formatting-the-output-of-a-custom-build-step-or-build-event.md)
 ## [Common Macros for Build Commands and Properties](common-macros-for-build-commands-and-properties.md)
-## [Building External Projects](building-external-projects.md)
 ## [Project Files](project-files.md)
 ## [Walkthrough: Compiling a C++ Program that Targets the CLR in Visual Studio](walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md)
 # [Using the Visual Studio IDE for C++ Desktop Development](using-the-visual-studio-ide-for-cpp-desktop-development.md)
