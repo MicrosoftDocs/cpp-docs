@@ -6231,6 +6231,91 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/eventsource-add-method.md",
+            "redirect_url": "/cpp/windows/eventsource-class#add",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventsource-addremovelock-data-member.md",
+            "redirect_url": "/cpp/windows/eventsource-class#addremovelock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventsource-eventsource-constructor.md",
+            "redirect_url": "/cpp/windows/eventsource-class#eventsource",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventsource-getsize-method.md",
+            "redirect_url": "/cpp/windows/eventsource-class#getsize",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventsource-invokeall-method.md",
+            "redirect_url": "/cpp/windows/eventsource-class#invokeall",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventsource-remove-method.md",
+            "redirect_url": "/cpp/windows/eventsource-class#remove",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventsource-targets-data-member.md",
+            "redirect_url": "/cpp/windows/eventsource-class#targets",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventsource-targetspointerlock-data-member.md",
+            "redirect_url": "/cpp/windows/eventsource-class#targetspointerlock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/ftmbase-createglobalinterfacetable-method.md",
+            "redirect_url": "/cpp/windows/ftmbase-class#createglobalinterfacetable",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/ftmbase-disconnectobject-method.md",
+            "redirect_url": "/cpp/windows/ftmbase-class#disconnectobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/ftmbase-ftmbase-constructor.md",
+            "redirect_url": "/cpp/windows/ftmbase-class#ftmbase",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/ftmbase-getmarshalsizemax-method.md",
+            "redirect_url": "/cpp/windows/ftmbase-class#getmarshalsizemax",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/ftmbase-getunmarshalclass-method.md",
+            "redirect_url": "/cpp/windows/ftmbase-class#getunmarshalclass",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/ftmbase-marshalinterface-method.md",
+            "redirect_url": "/cpp/windows/ftmbase-class#marshalinterface",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/ftmbase-marshaller-data-member.md",
+            "redirect_url": "/cpp/windows/ftmbase-class#marshaller",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/ftmbase-releasemarshaldata-method.md",
+            "redirect_url": "/cpp/windows/ftmbase-class#releasemarshaldata",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/ftmbase-unmarshalinterface-method.md",
+            "redirect_url": "/cpp/windows/ftmbase-class#unmarshalinterface",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/implements-cancastto-method.md",
             "redirect_url": "/cpp/windows/implements-structure#cancastto",
             "redirect_document_id": false

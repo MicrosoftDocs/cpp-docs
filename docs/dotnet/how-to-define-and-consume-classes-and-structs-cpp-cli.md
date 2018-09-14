@@ -1,7 +1,7 @@
 ---
 title: "How to: Define and Consume Classes and Structs (C++/CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-cli"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -36,7 +36,7 @@ This article shows how to define and consume user-defined reference types and va
  [Destructors and finalizers](#BKMK_Destructors_and_finalizers)  
   
 ##  <a name="BKMK_Object_instantiation"></a> Object instantiation  
- Reference (ref) types and value types can only be instantiated on the managed heap, not on the stack or on the native heap.  
+ Reference (ref) types can only be instantiated on the managed heap, not on the stack or on the native heap. Value types can be instantiated on the stack or the managed heap.
   
 ```  
 // mcppv2_ref_class2.cpp  
