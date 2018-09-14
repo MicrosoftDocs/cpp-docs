@@ -7,8 +7,8 @@ ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["external projects", "Visual C++ projects, external projects", "builds [C++], external projects", "projects [C++], external projects", "Makefile projects, external projects"]
 ms.assetid: 650b7803-ea91-489d-bee3-8f3e990e223c
-author: "corob-msft"
-ms.author: "corob"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Building External Projects
