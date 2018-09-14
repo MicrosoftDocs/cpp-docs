@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::ClassFactory", "module/Microsoft::WRL::ClassFactory::AddRef", "module/Microsoft::WRL::ClassFactory::ClassFactory", "module/Microsoft::WRL::ClassFactory::LockServer", "module/Microsoft::WRL::ClassFactory::QueryInterface", "module/Microsoft::WRL::ClassFactory::Release"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Microsoft::WRL::ClassFactory class", "Microsoft::WRL::ClassFactory::AddRef method"], "Microsoft::WRL::ClassFactory::ClassFactory, constructor", "Microsoft::WRL::ClassFactory::LockServer method", "Microsoft::WRL::ClassFactory::QueryInterface method", "Microsoft::WRL::ClassFactory::Release method"]
+helpviewer_keywords: ["Microsoft::WRL::ClassFactory class", "Microsoft::WRL::ClassFactory::AddRef method", "Microsoft::WRL::ClassFactory::ClassFactory, constructor", "Microsoft::WRL::ClassFactory::LockServer method", "Microsoft::WRL::ClassFactory::QueryInterface method", "Microsoft::WRL::ClassFactory::Release method"]
 ms.assetid: f13e6bce-722b-4f18-b7cf-3ffa6345c1db
 author: "mikeblome"
 ms.author: "mblome"
