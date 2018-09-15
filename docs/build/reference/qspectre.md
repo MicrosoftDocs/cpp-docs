@@ -33,7 +33,7 @@ If your code operates on data that crosses a trust boundary then we recommend th
 
 ### Availability
 
-The **/Qspectre** option is available in Visual Studio 2017 version 15.5.5 and all updates to Microsoft Visual C++ compilers (MSVC) made on or after January 23, 2018.
+The **/Qspectre** option is available in Visual Studio 2017 version 15.5.5 and all updates to Microsoft Visual C++ compilers (MSVC) made on or after January 23, 2018. Use the Visual Studio Installer to update the compiler, and to install the Spectre-mitigated libraries as individual components. The **/Qspectre** option is also available in Visual Studio 2015 Update 3 through a patch. For more information, see [KB 4338871](https://support.microsoft.com/help/4338871).
 
 All versions of Visual Studio 2017 version 15.5 and all Previews of Visual Studio version 15.6 already include an undocumented option, **/d2guardspecload**, that is equivalent to the initial behavior of **/Qspectre**. You can use **/d2guardspecload** to apply the same mitigations to your code in these versions of the compiler. Please update your build to use **/Qspectre** in compilers that support the option; the **/Qspectre** option may also support new mitigations in later versions of the compiler.
 
