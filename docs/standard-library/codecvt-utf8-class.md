@@ -25,8 +25,10 @@ class codecvt_utf8 : public std::codecvt<Elem, char, StateType>
 
 *Elem*<br/>
 The wide-character element type.
+
 *Maxcode*<br/>
 The maximum number of characters for the locale facet.
+
 *Mode*<br/>
 Configuration information for the locale facet.
 
