@@ -13,36 +13,39 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /vmb, /vmg (Representation Method)
-Select the method that the compiler uses to represent pointers to class members.  
-  
- Use **/vmb** if you always define a class before you declare a pointer to a member of the class.  
-  
- Use **/vmg** to declare a pointer to a member of a class before defining the class. This need can arise if you define members in two different classes that reference each other. For such mutually referencing classes, one class must be referenced before it is defined.  
-  
-## Syntax  
-  
-```  
-/vmb  
-/vmg  
-```  
-  
-## Remarks  
- You can also use [pointers_to_members](../../preprocessor/pointers-to-members.md) or [Inheritance Keywords](../../cpp/inheritance-keywords.md) in your code to specify a pointer representation.  
-  
-### To set this compiler option in the Visual Studio development environment  
-  
-1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Click the **C/C++** folder.  
-  
-3.  Click the **Command Line** property page.  
-  
-4.  Type the compiler option in the **Additional Options** box.  
-  
-### To set this compiler option programmatically  
-  
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
-  
-## See Also  
+
+Select the method that the compiler uses to represent pointers to class members.
+
+Use **/vmb** if you always define a class before you declare a pointer to a member of the class.
+
+Use **/vmg** to declare a pointer to a member of a class before defining the class. This need can arise if you define members in two different classes that reference each other. For such mutually referencing classes, one class must be referenced before it is defined.
+
+## Syntax
+
+```
+/vmb
+/vmg
+```
+
+## Remarks
+
+You can also use [pointers_to_members](../../preprocessor/pointers-to-members.md) or [Inheritance Keywords](../../cpp/inheritance-keywords.md) in your code to specify a pointer representation.
+
+### To set this compiler option in the Visual Studio development environment
+
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Click the **C/C++** folder.
+
+1. Click the **Command Line** property page.
+
+1. Type the compiler option in the **Additional Options** box.
+
+### To set this compiler option programmatically
+
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+
+## See Also
+
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

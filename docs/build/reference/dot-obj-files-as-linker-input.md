@@ -31,4 +31,4 @@ For more information about the compiler and linker, see [Unicode Support in the 
 [Support for Unicode](../../text/support-for-unicode.md)<br/>
 [Unicode Support in the Compiler and Linker](../../build/reference/unicode-support-in-the-compiler-and-linker.md)<br/>
 [Unicode standard](http://www.unicode.org/)<br/>
-[PE Format](/windows/desktop/Debug/pe-format)  
+[PE Format](/windows/desktop/Debug/pe-format)

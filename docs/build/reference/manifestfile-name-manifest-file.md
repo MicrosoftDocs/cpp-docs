@@ -13,31 +13,34 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /MANIFESTFILE (Name Manifest File)
-```  
-/MANIFESTFILE:filename  
-```  
-  
-## Remarks  
- /MANIFESTFILE lets you change the default name of the manifest file.  The default name of the manifest file is the file name with .manifest appended.  
-  
- /MANIFESTFILE will have no effect if you do not also link with [/MANIFEST](../../build/reference/manifest-create-side-by-side-assembly-manifest.md).  
-  
-### To set this linker option in the Visual Studio development environment  
-  
-1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Expand the **Configuration Properties** node.  
-  
-3.  Expand the **Linker** node.  
-  
-4.  Select the **Manifest File** property page.  
-  
-5.  Modify the **Manifest File** property.  
-  
-### To set this linker option programmatically  
-  
-1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ManifestFile%2A>.  
-  
-## See Also  
+
+```
+/MANIFESTFILE:filename
+```
+
+## Remarks
+
+/MANIFESTFILE lets you change the default name of the manifest file.  The default name of the manifest file is the file name with .manifest appended.
+
+/MANIFESTFILE will have no effect if you do not also link with [/MANIFEST](../../build/reference/manifest-create-side-by-side-assembly-manifest.md).
+
+### To set this linker option in the Visual Studio development environment
+
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Expand the **Configuration Properties** node.
+
+1. Expand the **Linker** node.
+
+1. Select the **Manifest File** property page.
+
+1. Modify the **Manifest File** property.
+
+### To set this linker option programmatically
+
+1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ManifestFile%2A>.
+
+## See Also
+
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

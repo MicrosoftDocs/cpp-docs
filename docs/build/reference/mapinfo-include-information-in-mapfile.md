@@ -13,27 +13,30 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /MAPINFO (Include Information in Mapfile)
-```  
-/MAPINFO:EXPORTS  
-```  
-  
-## Remarks  
- The /MAPINFO option tells the linker to include the specified information in a mapfile, which is created if you specify the [/MAP](../../build/reference/map-generate-mapfile.md) option.  EXPORTS tells the linker to include exported functions.  
-  
-### To set this linker option in the Visual Studio development environment  
-  
-1.  Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Click the **Linker** folder.  
-  
-3.  Click the **Debug** property page.  
-  
-4.  Modify of the **Map Exports** properties:  
-  
-### To set this linker option programmatically  
-  
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MapExports%2A>.  
-  
-## See Also  
+
+```
+/MAPINFO:EXPORTS
+```
+
+## Remarks
+
+The /MAPINFO option tells the linker to include the specified information in a mapfile, which is created if you specify the [/MAP](../../build/reference/map-generate-mapfile.md) option.  EXPORTS tells the linker to include exported functions.
+
+### To set this linker option in the Visual Studio development environment
+
+1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+
+1. Click the **Linker** folder.
+
+1. Click the **Debug** property page.
+
+1. Modify of the **Map Exports** properties:
+
+### To set this linker option programmatically
+
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MapExports%2A>.
+
+## See Also
+
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

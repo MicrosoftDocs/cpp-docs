@@ -28,7 +28,7 @@ The following optimizations are available under **/Og**:
 
 - Local and global common subexpression elimination
 
-     In this optimization, the value of a common subexpression is calculated once. In the following example, if the values of `b` and `c` do not change between the three expressions, the compiler can assign the calculation of `b + c` to a temporary variable, and substitute the variable for `b + c`:
+   In this optimization, the value of a common subexpression is calculated once. In the following example, if the values of `b` and `c` do not change between the three expressions, the compiler can assign the calculation of `b + c` to a temporary variable, and substitute the variable for `b + c`:
 
     ```C
     a = b + c;
@@ -36,15 +36,15 @@ The following optimizations are available under **/Og**:
     e = b + c;
     ```
 
-     For local common subexpression optimization, the compiler examines short sections of code for common subexpressions. For global common subexpression optimization, the compiler searches entire functions for common subexpressions.
+   For local common subexpression optimization, the compiler examines short sections of code for common subexpressions. For global common subexpression optimization, the compiler searches entire functions for common subexpressions.
 
 - Automatic register allocation
 
-     This optimization allows the compiler to store frequently used variables and subexpressions in registers; the `register` keyword is ignored.
+   This optimization allows the compiler to store frequently used variables and subexpressions in registers; the `register` keyword is ignored.
 
 - Loop optimization
 
-     This optimization removes invariant subexpressions from the body of a loop. An optimal loop contains only expressions whose values change through each execution of the loop. In the following example, the expression `x + y` does not change in the loop body:
+   This optimization removes invariant subexpressions from the body of a loop. An optimal loop contains only expressions whose values change through each execution of the loop. In the following example, the expression `x + y` does not change in the loop body:
 
     ```C
     i = -100;
@@ -53,7 +53,7 @@ The following optimizations are available under **/Og**:
     }
     ```
 
-     After optimization, `x + y` is calculated once rather than every time the loop is executed:
+   After optimization, `x + y` is calculated once rather than every time the loop is executed:
 
     ```C
     i = -100;
@@ -63,12 +63,12 @@ The following optimizations are available under **/Og**:
     }
     ```
 
-     Loop optimization is much more effective when the compiler can assume no aliasing, which you set with [__restrict](../../cpp/extension-restrict.md), [noalias](../../cpp/noalias.md), or [restrict](../../cpp/restrict.md).
+   Loop optimization is much more effective when the compiler can assume no aliasing, which you set with [__restrict](../../cpp/extension-restrict.md), [noalias](../../cpp/noalias.md), or [restrict](../../cpp/restrict.md).
 
-    > [!NOTE]
-    > You can enable or disable global optimization on a function-by-function basis using the `optimize` pragma together with the `g` option.
+   > [!NOTE]
+   > You can enable or disable global optimization on a function-by-function basis using the `optimize` pragma together with the `g` option.
 
- For related information, see [/Oi (Generate Intrinsic Functions)](../../build/reference/oi-generate-intrinsic-functions.md) and [/Ox (Enable Most Speed Optimizations)](../../build/reference/ox-full-optimization.md).
+For related information, see [/Oi (Generate Intrinsic Functions)](../../build/reference/oi-generate-intrinsic-functions.md) and [/Ox (Enable Most Speed Optimizations)](../../build/reference/ox-full-optimization.md).
 
 ### To set this compiler option in the Visual Studio development environment
 

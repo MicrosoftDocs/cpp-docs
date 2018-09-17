@@ -169,4 +169,4 @@ The Visual C++ compiler includes a C Runtime Library (CRT) that is compatible wi
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>
-[Compiler Options](../build/reference/compiler-options.md)  
+[Compiler Options](../build/reference/compiler-options.md)

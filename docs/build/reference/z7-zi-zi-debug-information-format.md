@@ -17,16 +17,16 @@ Specifies the type of debugging information created for your program and whether
 
 ## Syntax
 
-> **/Z**{**7**|**i**|**I**}  
+> **/Z**{**7**|**i**|**I**}
 
 ## Remarks
 
-When code is compiled and built in debug mode, the compiler produces symbol names for functions and variables, type information, and line number locations for use by the debugger. This symbolic debugging information can be included either in the object files (.obj files) produced by the compiler, or in a separate PDB file (a .pdb file) for the executable.  The debug information format options are described in the following sections.  
-  
+When code is compiled and built in debug mode, the compiler produces symbol names for functions and variables, type information, and line number locations for use by the debugger. This symbolic debugging information can be included either in the object files (.obj files) produced by the compiler, or in a separate PDB file (a .pdb file) for the executable.  The debug information format options are described in the following sections.
+
 ### None
 
-By default, if no debug information format option is specified, the compiler produces no debugging information, so compilation is faster.  
-  
+By default, if no debug information format option is specified, the compiler produces no debugging information, so compilation is faster.
+
 ### /Z7
 
 The **/Z7** option produces object files that also contain full symbolic debugging information for use with the debugger. These object files and the built executable can be substantially larger than files that have no debugging information. The symbolic debugging information includes the names and types of variables, as well as functions and line numbers. No PDB file is produced.
@@ -73,5 +73,5 @@ The **/ZI** option forces both the [/Gy (Enable Function-Level Linking)](../../b
 ## See also
 
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)  
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
 

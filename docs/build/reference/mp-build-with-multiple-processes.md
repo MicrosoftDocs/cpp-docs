@@ -113,7 +113,7 @@ Visual Studio uses the [MSBuild.exe](/visualstudio/msbuild/msbuild-reference) to
 
 The build time of your solution partly depends on the number of processes that perform the build. The *number* argument of the [/maxcpucount](/visualstudio/msbuild/msbuild-command-line-reference) MSBuild option specifies the maximum number of projects to build at the same time. Similarly, the *processMax* argument of the **/MP** compiler option specifies the maximum number of compilation units to build at the same time. If the **/maxcpucount** option specifies *P* projects and the **/MP** option specifies *C* processes, a maximum of *P* x *C* processes execute at the same time.
 
- The guideline for deciding whether to use MSBuild or **/MP** technology is as follows:
+The guideline for deciding whether to use MSBuild or **/MP** technology is as follows:
 
 - If there are many projects with few files in each project, use the MSBuild tool.
 

@@ -34,4 +34,4 @@ You can use the **/Q** compiler options to perform the following low-level compi
 ## See also
 
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)  
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

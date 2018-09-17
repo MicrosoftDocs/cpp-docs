@@ -18,7 +18,7 @@ Prepares an image for hotpatching.
 
 ## Syntax
 
-> **/FUNCTIONPADMIN**[**:**_space_]  
+> **/FUNCTIONPADMIN**[**:**_space_]
 
 ### Arguments
 

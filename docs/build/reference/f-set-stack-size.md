@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /F (Set Stack Size)
+
 Sets the program stack size in bytes.
 
 ## Syntax
@@ -32,9 +33,9 @@ You may need to increase the stack size if your program gets stack-overflow mess
 
 You can also set the stack size by:
 
--   Using the **/STACK** linker option. For more information, see [/STACK](../../build/reference/stack.md).
+- Using the **/STACK** linker option. For more information, see [/STACK](../../build/reference/stack.md).
 
--   Using EDITBIN on the .exe file. For more information, see [EDITBIN Reference](../../build/reference/editbin-reference.md).
+- Using EDITBIN on the .exe file. For more information, see [EDITBIN Reference](../../build/reference/editbin-reference.md).
 
 ### To set this compiler option in the Visual Studio development environment
 

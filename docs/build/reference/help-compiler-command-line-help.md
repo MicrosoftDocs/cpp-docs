@@ -13,26 +13,28 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /HELP (Compiler Command-Line Help)
-Displays a listing of compiler options to standard output.  
-  
-## Syntax  
-  
-```  
-/HELP  
-/help  
-/?  
-```  
-  
-## Remarks  
-  
-### To set this compiler option in the Visual Studio development environment  
-  
--   This compiler option should only be accessed from the command line.  
-  
-### To set this compiler option programmatically  
-  
--   This compiler option cannot be changed programmatically.  
-  
-## See Also  
+
+Displays a listing of compiler options to standard output.
+
+## Syntax
+
+```
+/HELP
+/help
+/?
+```
+
+## Remarks
+
+### To set this compiler option in the Visual Studio development environment
+
+- This compiler option should only be accessed from the command line.
+
+### To set this compiler option programmatically
+
+- This compiler option cannot be changed programmatically.
+
+## See Also
+
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

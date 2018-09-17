@@ -13,34 +13,37 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /GX (Enable Exception Handling)
-Deprecated. Enables synchronous exception handling using the assumption that functions declared by using `extern "C"` never throw an exception.  
-  
-## Syntax  
-  
-```  
-/GX  
-```  
-  
-## Remarks  
- **/GX** is deprecated. Use the equivalent [/EHsc](../../build/reference/eh-exception-handling-model.md) option instead. For a list of deprecated compiler options, see the **Deprecated and Removed Compiler Options** section in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).  
-  
- By default, **/EHsc**, the equivalent of **/GX**, is in effect when you compile by using the Visual Studio development environment. When using the command line tools, no exception handling is specified. This is the equivalent of **/GX-**.  
-  
- For more information, see [C++ Exception Handling](../../cpp/cpp-exception-handling.md).  
-  
-### To set this compiler option in the Visual Studio development environment  
-  
-1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  In the navigation pane, choose **Configuration Properties**, **C/C++**, **Command Line**.  
-  
-3.  Type the compiler option in the **Additional Options** box.  
-  
-### To set this compiler option programmatically  
-  
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
-  
-## See Also  
+
+Deprecated. Enables synchronous exception handling using the assumption that functions declared by using `extern "C"` never throw an exception.
+
+## Syntax
+
+```
+/GX
+```
+
+## Remarks
+
+**/GX** is deprecated. Use the equivalent [/EHsc](../../build/reference/eh-exception-handling-model.md) option instead. For a list of deprecated compiler options, see the **Deprecated and Removed Compiler Options** section in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).
+
+By default, **/EHsc**, the equivalent of **/GX**, is in effect when you compile by using the Visual Studio development environment. When using the command line tools, no exception handling is specified. This is the equivalent of **/GX-**.
+
+For more information, see [C++ Exception Handling](../../cpp/cpp-exception-handling.md).
+
+### To set this compiler option in the Visual Studio development environment
+
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. In the navigation pane, choose **Configuration Properties**, **C/C++**, **Command Line**.
+
+1. Type the compiler option in the **Additional Options** box.
+
+### To set this compiler option programmatically
+
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+
+## See Also
+
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
 [/EH (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md)

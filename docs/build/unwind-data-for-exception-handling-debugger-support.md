@@ -11,15 +11,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Unwind Data for Exception Handling, Debugger Support
-This section discusses the data structures required for exception handling and debugging support.  
-  
--   [struct RUNTIME_FUNCTION](../build/struct-runtime-function.md)  
-  
--   [struct UNWIND_INFO](../build/struct-unwind-info.md)  
-  
--   [struct UNWIND_CODE](../build/struct-unwind-code.md)  
-  
--   [Chained Unwind Info Structures](../build/chained-unwind-info-structures.md)  
-  
-## See Also  
- [Exception Handling (x64)](../build/exception-handling-x64.md)
+
+This section discusses the data structures required for exception handling and debugging support.
+
+- [struct RUNTIME_FUNCTION](../build/struct-runtime-function.md)
+
+- [struct UNWIND_INFO](../build/struct-unwind-info.md)
+
+- [struct UNWIND_CODE](../build/struct-unwind-code.md)
+
+- [Chained Unwind Info Structures](../build/chained-unwind-info-structures.md)
+
+## See Also
+
+[Exception Handling (x64)](../build/exception-handling-x64.md)

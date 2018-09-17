@@ -24,21 +24,21 @@ A command file is specified by an at sign (**\@**) followed by a filename; the f
 
 For example, if the following command is in a file named RESP:
 
-```  
+```
 /Og /link LIBC.LIB
-```  
+```
 
 and you specify the following CL command:
 
-```  
+```
 CL /Ob2 @RESP MYAPP.C
-```  
+```
 
 the command to CL is as follows:
 
-```  
+```
 CL /Ob2 /Og MYAPP.C /link LIBC.LIB
-```  
+```
 
 Note that the command line and the command-file commands are effectively combined.
 

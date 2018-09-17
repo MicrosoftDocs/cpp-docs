@@ -120,7 +120,7 @@ For frame chained functions, the fp and lr pair can be saved at any position in 
         sub    sp,#framesz-72           // allocate the remaining local area
     ```
 
-    Only r19 saved:
+   Only r19 saved:
 
     ```asm
         sub    sp, sp, #16              // reg save area allocation*
@@ -628,4 +628,4 @@ Note: EpilogStart Index [4] points to the middle of Prolog unwind code (partiall
 ## See also
 
 [Overview of ARM64 ABI conventions](arm64-windows-abi-conventions.md)<br/>
-[ARM Exception Handling](../build/arm-exception-handling.md)  
+[ARM Exception Handling](../build/arm-exception-handling.md)

@@ -13,25 +13,28 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /NOLOGO (Suppress Startup Banner) (Linker)
-```  
-/NOLOGO  
-```  
-  
-## Remarks  
- The /NOLOGO option prevents display of the copyright message and version number.  
-  
- This option also suppresses echoing of command files. For details, see [LINK Command Files](../../build/reference/link-command-files.md).  
-  
- By default, this information is sent by the linker to the Output window. On the command line, it is sent to standard output and can be redirected to a file.  
-  
-### To set this linker option in the Visual Studio development environment  
-  
-1.  This option should only be used from the command line.  
-  
-### To set this linker option programmatically  
-  
-1.  This linker option cannot be changed programmatically.  
-  
-## See Also  
+
+```
+/NOLOGO
+```
+
+## Remarks
+
+The /NOLOGO option prevents display of the copyright message and version number.
+
+This option also suppresses echoing of command files. For details, see [LINK Command Files](../../build/reference/link-command-files.md).
+
+By default, this information is sent by the linker to the Output window. On the command line, it is sent to standard output and can be redirected to a file.
+
+### To set this linker option in the Visual Studio development environment
+
+1. This option should only be used from the command line.
+
+### To set this linker option programmatically
+
+1. This linker option cannot be changed programmatically.
+
+## See Also
+
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

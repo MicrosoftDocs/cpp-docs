@@ -24,28 +24,28 @@ Enables code analysis and control options.
 
 ## Arguments
 
- /analyze  
- Turns on analysis in the default mode. Analysis output goes to the **Output** window like other error messages. Use **/analyze-** to explicitly turn off analysis.
+/analyze
+Turns on analysis in the default mode. Analysis output goes to the **Output** window like other error messages. Use **/analyze-** to explicitly turn off analysis.
 
- /analyze:WX-  
- Specifying **/analyze:WX-** means that code analysis warnings are not treated as errors when you compile by using **/WX**. For more information, see [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning Level)](../../build/reference/compiler-option-warning-level.md).
+/analyze:WX-
+Specifying **/analyze:WX-** means that code analysis warnings are not treated as errors when you compile by using **/WX**. For more information, see [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning Level)](../../build/reference/compiler-option-warning-level.md).
 
- /analyze:log `filename`  
- Detailed analyzer results are written as XML to the file that is specified by `filename`.
+/analyze:log `filename`
+Detailed analyzer results are written as XML to the file that is specified by `filename`.
 
- /analyze:quiet  
- Turns off analyzer output to the **Output** window.
+/analyze:quiet
+Turns off analyzer output to the **Output** window.
 
- /analyze:stacksize `number`  
- The `number` parameter that is used with this option specifies the size, in bytes, of the stack frame for which warning [C6262](/visualstudio/code-quality/c6262) is generated. If this parameter is not specified, the stack frame size is 16KB by default.
+/analyze:stacksize `number`
+The `number` parameter that is used with this option specifies the size, in bytes, of the stack frame for which warning [C6262](/visualstudio/code-quality/c6262) is generated. If this parameter is not specified, the stack frame size is 16KB by default.
 
- /analyze:max_paths `number`  
- The `number` parameter that is used with this option specifies the maximum number of code paths to be analyzed. If this parameter is not specified, the number is 256 by default. Larger values perform more thorough checking, but the analysis might take longer.
+/analyze:max_paths `number`
+The `number` parameter that is used with this option specifies the maximum number of code paths to be analyzed. If this parameter is not specified, the number is 256 by default. Larger values perform more thorough checking, but the analysis might take longer.
 
- /analyze:only  
- Typically, the compiler generates code and does more syntax checking after it runs the analyzer. The **/analyze:only** option turns off this code generation pass; this makes analysis faster but compile errors and warnings that might have been discovered by the code generation pass of the compiler are not emitted. If the program is not free of code-generation errors, analysis results might be unreliable; therefore, we recommend that you use this option only if the code already passes code-generation syntax checking without errors.
+/analyze:only
+Typically, the compiler generates code and does more syntax checking after it runs the analyzer. The **/analyze:only** option turns off this code generation pass; this makes analysis faster but compile errors and warnings that might have been discovered by the code generation pass of the compiler are not emitted. If the program is not free of code-generation errors, analysis results might be unreliable; therefore, we recommend that you use this option only if the code already passes code-generation syntax checking without errors.
 
- /analyze:ruleset `<file_path>.ruleset`  
+/analyze:ruleset `<file_path>.ruleset`
 Enables you to specify which rule sets to analyze, including custom rule sets that you can create yourself. When this switch is set, the rules engine is more efficient because it excludes non-members of the specified rule set before running. When the switch is not set, the engine checks all rules.
 
 The rulesets that ship with Visual Studio are found in **%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets.**
@@ -62,8 +62,8 @@ The following sample custom rule set tells the rules engine to check for C6001 a
 </RuleSet>
 ```
 
-/analyze:plugin  
-Enables the specified PREfast plugin as part of code analysis runs. 
+/analyze:plugin
+Enables the specified PREfast plugin as part of code analysis runs.
 LocalEspC.dll is the plugin that implements concurrency-related code analysis checks in the range of C261XX warnings. For example, [C26100](/visualstudio/code-quality/c26100), [C26101](/visualstudio/code-quality/c26101), ...,  [C26167](/visualstudio/code-quality/c26167).
 
 To run LocalEspC.dll, use this compiler option: **/analyze:plugin LocalEspC.dll**

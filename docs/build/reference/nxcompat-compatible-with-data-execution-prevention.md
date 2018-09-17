@@ -48,4 +48,4 @@ For more information about Data Execution Prevention, see these articles:
 ## See also
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)  
+[Linker Options](../../build/reference/linker-options.md)

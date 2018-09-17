@@ -13,49 +13,52 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /C (Preserve Comments During Preprocessing)
-Preserves comments during preprocessing.  
-  
-## Syntax  
-  
-```  
-/C  
-```  
-  
-## Remarks  
- This compiler option requires the **/E**, **/P**, or **/EP** option.  
-  
- The following code sample will display the source code comment.  
-  
-```  
-// C_compiler_option.cpp  
-// compile with: /E /C /c  
-int i;   // a variable  
-```  
-  
- This sample will produce the following output.  
-  
-```  
-#line 1 "C_compiler_option.cpp"  
-int i;   // a variable  
-```  
-  
-### To set this compiler option in the Visual Studio development environment  
-  
-1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Click the **C/C++** folder.  
-  
-3.  Click the **Preprocessor** property page.  
-  
-4.  Modify the **Keep Comments** property.  
-  
-### To set this compiler option programmatically  
-  
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.KeepComments%2A>.  
-  
-## See Also  
+
+Preserves comments during preprocessing.
+
+## Syntax
+
+```
+/C
+```
+
+## Remarks
+
+This compiler option requires the **/E**, **/P**, or **/EP** option.
+
+The following code sample will display the source code comment.
+
+```
+// C_compiler_option.cpp
+// compile with: /E /C /c
+int i;   // a variable
+```
+
+This sample will produce the following output.
+
+```
+#line 1 "C_compiler_option.cpp"
+int i;   // a variable
+```
+
+### To set this compiler option in the Visual Studio development environment
+
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Click the **C/C++** folder.
+
+1. Click the **Preprocessor** property page.
+
+1. Modify the **Keep Comments** property.
+
+### To set this compiler option programmatically
+
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.KeepComments%2A>.
+
+## See Also
+
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/E (Preprocess to stdout)](../../build/reference/e-preprocess-to-stdout.md)   
- [/P (Preprocess to a File)](../../build/reference/p-preprocess-to-a-file.md)   
- [/EP (Preprocess to stdout Without #line Directives)](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)
+[/E (Preprocess to stdout)](../../build/reference/e-preprocess-to-stdout.md)
+[/P (Preprocess to a File)](../../build/reference/p-preprocess-to-a-file.md)
+[/EP (Preprocess to stdout Without #line Directives)](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)

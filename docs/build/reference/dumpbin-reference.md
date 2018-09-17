@@ -13,16 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # DUMPBIN Reference
-The Microsoft COFF Binary File Dumper (DUMPBIN.EXE) displays information about Common Object File Format (COFF) binary files. You can use DUMPBIN to examine COFF object files, standard libraries of COFF objects, executable files, and dynamic-link libraries (DLLs).  
-  
+
+The Microsoft COFF Binary File Dumper (DUMPBIN.EXE) displays information about Common Object File Format (COFF) binary files. You can use DUMPBIN to examine COFF object files, standard libraries of COFF objects, executable files, and dynamic-link libraries (DLLs).
+
 > [!NOTE]
->  You can start this tool only from the Visual Studio command prompt. You cannot start it from a system command prompt or from File Explorer.  
-  
- Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.  
-  
--   [DUMPBIN command line](../../build/reference/dumpbin-command-line.md)  
-  
--   [DUMPBIN options](../../build/reference/dumpbin-options.md)  
-  
-## See Also  
- [C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)
+>  You can start this tool only from the Visual Studio command prompt. You cannot start it from a system command prompt or from File Explorer.
+
+Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.
+
+- [DUMPBIN command line](../../build/reference/dumpbin-command-line.md)
+
+- [DUMPBIN options](../../build/reference/dumpbin-options.md)
+
+## See Also
+
+[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)

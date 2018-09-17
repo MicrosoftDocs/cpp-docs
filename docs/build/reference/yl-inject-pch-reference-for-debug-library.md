@@ -18,9 +18,9 @@ The **/Yl** option generates a unique symbol in a precompiled header file, and a
 
 ## Syntax
 
->**/Yl**  
->**/Yl**_name_  
->**/Yl-**  
+>**/Yl**
+>**/Yl**_name_
+>**/Yl-**
 
 ### Arguments
 
@@ -63,4 +63,4 @@ For more information on precompiled headers, see:
 ## See also
 
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)  
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

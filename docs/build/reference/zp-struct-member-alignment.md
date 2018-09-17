@@ -36,7 +36,7 @@ The available packing values are described in the following table:
 
 You should not use this option unless you have specific alignment requirements.
 
-> [!WARNING]  
+> [!WARNING]
 > C++ headers in the Windows SDK assume **/Zp8** packing. Memory corruption may occur if the **/Zp** setting is changed when using Windows SDK headers.
 
 You can also use [pack](../../preprocessor/pack.md) to control structure packing. For more information about alignment, see:
@@ -51,7 +51,7 @@ You can also use [pack](../../preprocessor/pack.md) to control structure packing
 
 ### To set this compiler option in the Visual Studio development environment
 
-1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
 
 1. Select the **C/C++** > **Code Generation** property page.
 
@@ -59,9 +59,9 @@ You can also use [pack](../../preprocessor/pack.md) to control structure packing
 
 ### To set this compiler option programmatically
 
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.StructMemberAlignment%2A>.
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.StructMemberAlignment%2A>.
 
 ## See also
 
-- [Compiler Options](../../build/reference/compiler-options.md)   
+- [Compiler Options](../../build/reference/compiler-options.md)
 - [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

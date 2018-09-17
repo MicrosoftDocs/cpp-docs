@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 
 cl.exe is a tool that controls the Microsoft Visual C++ (MSVC) C and C++ compilers and linker. cl.exe can be run only on operating systems that support Microsoft Visual Studio for Windows.
 
-> [!NOTE]  
+> [!NOTE]
 > You can start this tool only from a Visual Studio developer command prompt. You cannot start it from a system command prompt or from File Explorer. For more information, see [Build C/C++ code on the command line](../building-on-the-command-line.md).
 
 The compilers produce Common Object File Format (COFF) object (.obj) files. The linker produces executable (.exe) files or dynamic-link libraries (DLLs).
@@ -51,4 +51,4 @@ The topic for each compiler option discusses how it can be set in the developmen
 [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
 [Fast Compilation](../../build/reference/fast-compilation.md)<br/>
-[CL Invokes the Linker](../../build/reference/cl-invokes-the-linker.md)  
+[CL Invokes the Linker](../../build/reference/cl-invokes-the-linker.md)

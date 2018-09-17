@@ -13,14 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /OUT (DUMPBIN)
-```  
-/OUT:filename  
-```  
-  
-## Remarks  
- This option specifies a *filename* for the output. By default, DUMPBIN displays the information to standard output.  
-  
- Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.  
-  
-## See Also  
- [DUMPBIN Options](../../build/reference/dumpbin-options.md)
+
+```
+/OUT:filename
+```
+
+## Remarks
+
+This option specifies a *filename* for the output. By default, DUMPBIN displays the information to standard output.
+
+Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.
+
+## See Also
+
+[DUMPBIN Options](../../build/reference/dumpbin-options.md)

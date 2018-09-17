@@ -13,35 +13,39 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /link (Pass Options to Linker)
-Passes one or more linker options to the linker.  
-  
-## Syntax  
-  
-```  
-/link linkeroptions  
-```  
-  
-## Arguments  
+
+Passes one or more linker options to the linker.
+
+## Syntax
+
+```
+/link linkeroptions
+```
+
+## Arguments
+
 *linkeroptions*<br/>
-The linker option or options to be passed to the linker.  
-  
-## Remarks  
- The **/link** option and its linker options must appear after any file names and CL options. A space is required between **/link** and `linkeroptions`. For more information, see [Setting Linker Options](../../build/reference/setting-linker-options.md).  
-  
-### To set this compiler option in the Visual Studio development environment  
-  
-1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Click the **Linker** folder.  
-  
-3.  Click a linker property page.  
-  
-4.  Modify one or more properties.  
-  
-### To set this compiler option programmatically  
-  
--   This compiler option cannot be changed programmatically.  
-  
-## See Also  
+The linker option or options to be passed to the linker.
+
+## Remarks
+
+The **/link** option and its linker options must appear after any file names and CL options. A space is required between **/link** and `linkeroptions`. For more information, see [Setting Linker Options](../../build/reference/setting-linker-options.md).
+
+### To set this compiler option in the Visual Studio development environment
+
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Click the **Linker** folder.
+
+1. Click a linker property page.
+
+1. Modify one or more properties.
+
+### To set this compiler option programmatically
+
+- This compiler option cannot be changed programmatically.
+
+## See Also
+
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

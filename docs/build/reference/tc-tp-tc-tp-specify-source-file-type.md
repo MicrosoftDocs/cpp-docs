@@ -18,10 +18,10 @@ The **/Tc** option specifies that its filename argument is a C source file, even
 
 ## Syntax
 
-> **/Tc** _filename_  
-> **/Tp** _filename_  
-> **/TC**  
-> **/TP**  
+> **/Tc** _filename_
+> **/Tp** _filename_
+> **/TC**
+> **/TP**
 
 ## Arguments
 
@@ -59,4 +59,4 @@ This CL command line specifies that TEST1.c, TEST2.cxx, TEST3.huh, and TEST4.o a
 ## See also
 
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)  
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

@@ -24,7 +24,7 @@ The CL tool uses the following environment variables:
 
 You can set the CL or \_CL\_ environment variable using the following syntax:
 
-> SET CL=[ [*option*] ... [*file*] ...] [/link *link-opt* ...]  
+> SET CL=[ [*option*] ... [*file*] ...] [/link *link-opt* ...]
 > SET \_CL\_=[ [*option*] ... [*file*] ...] [/link *link-opt* ...]
 
 For details on the arguments to the CL and \_CL\_ environment variables, see [Compiler Command-Line Syntax](../../build/reference/compiler-command-line-syntax.md).
@@ -47,9 +47,9 @@ When this environment variable is set, if you enter `CL INPUT.C` at the command 
 
 The following example causes a plain CL command to compile the source files FILE1.c and FILE2.c, and then link the object files FILE1.obj, FILE2.obj, and FILE3.obj:
 
-> SET CL=FILE1.C FILE2.C  
-> SET \_CL\_=FILE3.OBJ  
-> CL  
+> SET CL=FILE1.C FILE2.C
+> SET \_CL\_=FILE3.OBJ
+> CL
 
 This has the same effect as the following command line:
 

@@ -17,22 +17,22 @@ Specifies how the compiler generates warnings for a given compilation.
 
 ## Syntax
 
-> **/w**  
-> **/W0**  
-> **/W1**  
-> **/W2**  
-> **/W3**  
-> **/W4**  
-> **/Wall**  
-> **/Wv**\[**:**_version_]  
-> **/WX**  
-> **/w1**_warning_  
-> **/w2**_warning_  
-> **/w3**_warning_  
-> **/w4**_warning_  
-> **/wd**_warning_  
-> **/we**_warning_  
-> **/wo**_warning_  
+> **/w**
+> **/W0**
+> **/W1**
+> **/W2**
+> **/W3**
+> **/W4**
+> **/Wall**
+> **/Wv**\[**:**_version_]
+> **/WX**
+> **/w1**_warning_
+> **/w2**_warning_
+> **/w3**_warning_
+> **/w4**_warning_
+> **/wd**_warning_
+> **/we**_warning_
+> **/wo**_warning_
 
 ## Remarks
 
@@ -89,4 +89,4 @@ The [build errors documentation](../../error-messages/compiler-errors-1/c-cpp-bu
 ## See also
 
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)  
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

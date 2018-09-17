@@ -12,8 +12,10 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .Def Files as Linker Input
-See [Module-definition (.def) files](../../build/reference/module-definition-dot-def-files.md) for more information. Use the [/DEF](../../build/reference/def-specify-module-definition-file.md) option to specify the .def file name.  
-  
-## See Also  
+
+See [Module-definition (.def) files](../../build/reference/module-definition-dot-def-files.md) for more information. Use the [/DEF](../../build/reference/def-specify-module-definition-file.md) option to specify the .def file name.
+
+## See Also
+
 [LINK Input Files](../../build/reference/link-input-files.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

@@ -47,7 +47,7 @@ The file should contain one MIDL command-line option per line.
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)<br/>
-[/IDLOUT (Name MIDL Output Files)](../../build/reference/idlout-name-midl-output-files.md)   
-[/IGNOREIDL (Don't Process Attributes into MIDL)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)   
-[/TLBOUT (Name .TLB File)](../../build/reference/tlbout-name-dot-tlb-file.md)   
+[/IDLOUT (Name MIDL Output Files)](../../build/reference/idlout-name-midl-output-files.md)
+[/IGNOREIDL (Don't Process Attributes into MIDL)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)
+[/TLBOUT (Name .TLB File)](../../build/reference/tlbout-name-dot-tlb-file.md)
 [Building an Attributed Program](../../windows/building-an-attributed-program.md)
