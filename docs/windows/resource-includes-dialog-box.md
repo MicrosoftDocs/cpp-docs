@@ -18,14 +18,17 @@ You can use the **Resource Includes** dialog box in a C++ project to modify the 
 
 To open the **Resource Includes** dialog box, right-click an .rc file in [Resource View](../windows/resource-view-window.md), then choose **Resource Includes** from the shortcut menu.
 
-**Symbol header file**  
-Allows you to change the name of the header file where the symbol definitions for your resource file are stored. For more information, see [Changing the Names of Symbol Header Files](../windows/changing-the-names-of-symbol-header-files.md).
+- **Symbol header file**
 
-**Read-only symbol directives**  
-Enables you to include header files that contain symbols that should not be modified during an editing session. For example, you can include a symbol file that is shared among several projects. You can also include MFC .h files. For more information, see [Including Shared (Read-Only) or Calculated Symbols](../windows/including-shared-read-only-or-calculated-symbols.md).
+   Allows you to change the name of the header file where the symbol definitions for your resource file are stored. For more information, see [Changing the Names of Symbol Header Files](../windows/changing-the-names-of-symbol-header-files.md).
 
-**Compile-time directives**  
-Allows you to include resource files that are created and edited separately from the resources in your main resource file, contain compile-time directives (such as those that conditionally include resources), or contain resources in a custom format. You can also use the **Compile-time directives box** to include standard MFC resource files. For more information, see [Including Resources at Compile Time](../windows/how-to-include-resources-at-compile-time.md).
+- **Read-only symbol directives**
+
+   Enables you to include header files that contain symbols that should not be modified during an editing session. For example, you can include a symbol file that is shared among several projects. You can also include MFC .h files. For more information, see [Including Shared (Read-Only) or Calculated Symbols](../windows/including-shared-read-only-or-calculated-symbols.md).
+
+- **Compile-time directives**
+
+   Allows you to include resource files that are created and edited separately from the resources in your main resource file, contain compile-time directives (such as those that conditionally include resources), or contain resources in a custom format. You can also use the **Compile-time directives box** to include standard MFC resource files. For more information, see [Including Resources at Compile Time](../windows/how-to-include-resources-at-compile-time.md).
 
 > [!NOTE]
 > Entries in these text boxes appear in the .rc file marked by `TEXTINCLUDE 1`, `TEXTINCLUDE 2`, and `TEXTINCLUDE 3` respectively. For more information, see [TN035: Using Multiple Resource Files and Header Files with Visual C++](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md).

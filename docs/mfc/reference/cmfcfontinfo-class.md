@@ -71,23 +71,23 @@ CMFCFontInfo(const CMFCFontInfo& src);
 ```  
   
 ### Parameters  
- [in] *lpszName*  
- The name of the font. For more information, see the `lfFaceName` member of the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure.  
+*lpszName*<br/>
+[in] The name of the font. For more information, see the `lfFaceName` member of the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure.  
   
- [in] *lpszScript*  
- The name of the script (character set) of the font.  
+*lpszScript*<br/>
+[in] The name of the script (character set) of the font.  
   
- [in] *nCharSet*  
- A value that specifies the character set (script) of the font. For more information, see the `lfCharSet` member of the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure.  
+*nCharSet*<br/>
+[in] A value that specifies the character set (script) of the font. For more information, see the `lfCharSet` member of the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure.  
   
- [in] *nPitchAndFamily*  
- A value that specifies the pitch and family of the font. For more information, see the `lfPitchAndFamily` member of the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure.  
+*nPitchAndFamily*<br/>
+[in] A value that specifies the pitch and family of the font. For more information, see the `lfPitchAndFamily` member of the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure.  
   
- [in] *nType*  
- A value that specifies the font type. This parameter can be a bitwise combination (OR) of DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE.  
+*nType*<br/>
+[in] A value that specifies the font type. This parameter can be a bitwise combination (OR) of DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE.  
   
- [in] *src*  
- An existing `CMFCFontInfo` object whose members are used to construct this `CMFCFontInfo` object.  
+*src*<br/>
+[in] An existing `CMFCFontInfo` object whose members are used to construct this `CMFCFontInfo` object.  
   
 ### Return Value  
   

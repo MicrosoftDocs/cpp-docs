@@ -186,8 +186,8 @@ virtual void AddToKeyList(
 ```  
   
 ### Parameters  
- [in] *arElems*  
- Reference to a [CArray](../../mfc/reference/carray-class.md) of keytips.  
+*arElems*<br/>
+[in] Reference to a [CArray](../../mfc/reference/carray-class.md) of keytips.  
   
 ### Remarks  
  When the ribbon keytips feature is enabled, the framework displays ribbon keytips when the user presses the ALT key or the F10 key.  
@@ -202,11 +202,11 @@ virtual int AddToListBox(
 ```  
   
 ### Parameters  
- [in] *pWndListBox*  
- Pointer to a commands list box.  
+*pWndListBox*<br/>
+[in] Pointer to a commands list box.  
   
- [in] *bDeep*  
- This parameter is not used.  
+*bDeep*<br/>
+[in] This parameter is not used.  
   
 ### Return Value  
  The zero-based index of the added ribbon element.  
@@ -292,8 +292,8 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```  
   
 ### Parameters  
- [in] *src*  
- The source [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md) object.  
+*src*<br/>
+[in] The source [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md) object.  
   
 ### Remarks  
   
@@ -318,14 +318,14 @@ virtual void DrawImage(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context.  
+*pDC*<br/>
+[in] Pointer to a device context.  
   
- [in] *type*  
- An image type enumerated value. See the Remarks section for a list of possible values.  
+*type*<br/>
+[in] An image type enumerated value. See the Remarks section for a list of possible values.  
   
- [in] *rectImage*  
- The image rectangle.  
+*rectImage*<br/>
+[in] The image rectangle.  
   
 ### Remarks  
  By default this method does nothing. Override this method in a derived class to draw the image for the ribbon element.  
@@ -346,8 +346,8 @@ virtual CMFCRibbonBaseElement* Find(const CMFCRibbonBaseElement* pElement);
 ```  
   
 ### Parameters  
- [in] *pElement*  
- Pointer to a ribbon element.  
+*pElement*<br/>
+[in] Pointer to a ribbon element.  
   
 ### Return Value  
  A pointer to the ribbon element if *pElement* points to the current object; otherwise NULL.  
@@ -362,8 +362,8 @@ virtual CMFCRibbonBaseElement* FindByData(DWORD_PTR dwData);
 ```  
   
 ### Parameters  
- [in] *dwData*  
- The data associated with a ribbon element.  
+*dwData*<br/>
+[in] The data associated with a ribbon element.  
   
 ### Return Value  
  A pointer to the ribbon element if it contains the specified data; otherwise NULL.  
@@ -378,8 +378,8 @@ virtual CMFCRibbonBaseElement* FindByID(UINT uiCmdID);
 ```  
   
 ### Parameters  
- [in] *uiCmdID*  
- Command ID for a ribbon element.  
+*uiCmdID*<br/>
+[in] Command ID for a ribbon element.  
   
 ### Return Value  
  A pointer to the ribbon element if that element is identified by the specified command ID; otherwise NULL.  
@@ -394,8 +394,8 @@ virtual CMFCRibbonBaseElement* FindByOriginal(CMFCRibbonBaseElement* pOriginal);
 ```  
   
 ### Parameters  
- [in] *pOriginal*  
- Pointer to a ribbon element.  
+*pOriginal*<br/>
+[in] Pointer to a ribbon element.  
   
 ### Return Value  
  A pointer to the ribbon element if its original ribbon element matches the specified ribbon element; otherwise NULL.  
@@ -411,8 +411,8 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
 ### Return Value  
  The compact size of a ribbon element.  
@@ -461,8 +461,8 @@ virtual void GetElements(
 ```  
   
 ### Parameters  
- [in, out] *arElements*  
- An array of ribbon elements.  
+*arElements*<br/>
+[in, out] An array of ribbon elements.  
   
 ### Remarks  
   
@@ -476,11 +476,11 @@ virtual void GetElementsByID(
 ```  
   
 ### Parameters  
- [in] *uiCmdID*  
- Command ID of a ribbon element.  
+*uiCmdID*<br/>
+[in] Command ID of a ribbon element.  
   
- [in] *arElements*  
- An array of ribbon elements.  
+*arElements*<br/>
+[in] An array of ribbon elements.  
   
 ### Remarks  
   
@@ -524,8 +524,8 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
 ### Return Value  
  The size of the ribbon element in its intermediate state.  
@@ -550,11 +550,11 @@ virtual CRect GetKeyTipRect(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context.  
+*pDC*<br/>
+[in] Pointer to a device context.  
   
- [in] *bIsMenu*  
- TRUE if the ribbon element displays a pop-up menu; otherwise FALSE.  
+*bIsMenu*<br/>
+[in] TRUE if the ribbon element displays a pop-up menu; otherwise FALSE.  
   
 ### Return Value  
  Always returns a rectangle with 0 values.  
@@ -570,8 +570,8 @@ virtual CSize GetKeyTipSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context.  
+*pDC*<br/>
+[in] Pointer to a device context.  
   
 ### Return Value  
  The size of the keytip text.  
@@ -728,8 +728,8 @@ virtual CSize GetRegularSize(CDC* pDC) = 0;
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
 ### Return Value  
  The regular size of the ribbon element.  
@@ -747,8 +747,8 @@ virtual CSize GetSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
 ### Return Value  
  The current size of the ribbon element.  
@@ -846,8 +846,8 @@ virtual CMFCRibbonBaseElement* HitTest(CPoint point);
 ```  
   
 ### Parameters  
- [in] *point*  
- This parameter is not used.  
+*point*<br/>
+[in] This parameter is not used.  
   
 ### Return Value  
  A pointer to the ribbon element if it exists; otherwise FALSE.  
@@ -889,8 +889,8 @@ virtual BOOL IsAutoRepeatMode(int& nDelay) const;
 ```  
   
 ### Parameters  
- [in] *nDelay*  
- This parameter is not used.  
+*nDelay*<br/>
+[in] This parameter is not used.  
   
 ### Return Value  
  Always returns FALSE.  
@@ -1141,8 +1141,8 @@ BOOL NotifyCommand(BOOL bWithDelay = FALSE);
 ```  
   
 ### Parameters  
- [in] *bWithDelay*  
- TRUE to add the command notification to the message queue of the parent window; FALSE to send the message immediately to the parent window.  
+*bWithDelay*<br/>
+[in] TRUE to add the command notification to the message queue of the parent window; FALSE to send the message immediately to the parent window.  
   
 ### Return Value  
  TRUE if the message was sent; otherwise, FALSE.  
@@ -1157,8 +1157,8 @@ virtual void NotifyHighlightListItem(int nIndex);
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- The index of the ribbon element in the list.  
+*nIndex*<br/>
+[in] The index of the ribbon element in the list.  
   
 ### Remarks  
   
@@ -1170,8 +1170,8 @@ virtual BOOL OnAddToQAToolbar(CMFCRibbonQuickAccessToolBar& qat);
 ```  
   
 ### Parameters  
- [in] *qat*  
- The quick access toolbar.  
+*qat*<br/>
+[in] The quick access toolbar.  
   
 ### Return Value  
  Always returns TRUE indicating the ribbon element was added to the quick access toolbar.  
@@ -1186,8 +1186,8 @@ virtual void OnAfterChangeRect(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- This parameter is not used.  
+*pDC*<br/>
+[in] This parameter is not used.  
   
 ### Remarks  
  By default this method updates the tooltip for the ribbon element. Override this method to update the ribbon element after its display rectangle has changed.  
@@ -1213,8 +1213,8 @@ virtual void OnCalcTextSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- This parameter is not used.  
+*pDC*<br/>
+[in] This parameter is not used.  
   
 ### Remarks  
  By default this method does nothing. Override this method to calculate the size of the text for the ribbon element.  
@@ -1228,11 +1228,11 @@ virtual void OnChangeMenuHighlight(CMFCRibbonPanelMenuBar* pPanelMenuBar
 ```  
   
 ### Parameters  
- [in] *pPanelMenuBar*  
- This parameter is not used.  
+*pPanelMenuBar*<br/>
+[in] This parameter is not used.  
   
- [in] *pHot*  
- This parameter is not used.  
+*pHot*<br/>
+[in] This parameter is not used.  
   
 ### Remarks  
  By default this method does nothing. Override this method to update a ribbon element that is located in a menu when the highlight changes.  
@@ -1245,8 +1245,8 @@ virtual void OnDraw(CDC* pDC) = 0;
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
 ### Remarks  
  Override this method in a derived class if you want to customize the drawing of a specific ribbon element.  
@@ -1262,14 +1262,14 @@ virtual void OnDrawKeyTip(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context.  
+*pDC*<br/>
+[in] Pointer to a device context.  
   
- [in] *rect*  
- Boundary rectangle for the keytip.  
+*rect*<br/>
+[in] Boundary rectangle for the keytip.  
   
- [in] *bIsMenu*  
- TRUE if the keytip is for a pop-up menu button; otherwise, FALSE.  
+*bIsMenu*<br/>
+[in] TRUE if the keytip is for a pop-up menu button; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1283,11 +1283,11 @@ virtual BOOL OnDrawMenuImage(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context.  
+*pDC*<br/>
+[in] Pointer to a device context.  
   
- [in] *rect*  
- Menu image rectangle.  
+*rect*<br/>
+[in] Menu image rectangle.  
   
 ### Return Value  
  Always returns TRUE to indicate the image was drawn.  
@@ -1308,23 +1308,23 @@ virtual void OnDrawOnList(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context for the ribbon element.  
+*pDC*<br/>
+[in] Pointer to a device context for the ribbon element.  
   
- [in] *strText*  
- The display text.  
+*strText*<br/>
+[in] The display text.  
   
- [in] *nTextOffset*  
- Distance, in pixels, from the left side of the list box to the display text.  
+*nTextOffset*<br/>
+[in] Distance, in pixels, from the left side of the list box to the display text.  
   
- [in] *rect*  
- The display rectangle for the ribbon element.  
+*rect*<br/>
+[in] The display rectangle for the ribbon element.  
   
- [in] *bIsSelected*  
- This parameter is not used.  
+*bIsSelected*<br/>
+[in] This parameter is not used.  
   
- [in] *bHighlighted*  
- This parameter is not used.  
+*bHighlighted*<br/>
+[in] This parameter is not used.  
   
 ### Remarks  
  The commands list box displays ribbon elements to enable users to customize the quick access toolbar.  
@@ -1337,8 +1337,8 @@ virtual BOOL OnKey(BOOL bIsMenuKey);
 ```  
   
 ### Parameters  
- [in] *bIsMenuKey*  
- TRUE if the keytip displays a pop-up menu; otherwise, FALSE.  
+*bIsMenuKey*<br/>
+[in] TRUE if the keytip displays a pop-up menu; otherwise, FALSE.  
   
 ### Return Value  
  TRUE if the event was handled; otherwise FALSE.  
@@ -1353,8 +1353,8 @@ virtual BOOL OnMenuKey(UINT nUpperChar);
 ```  
   
 ### Parameters  
- [in] *nUpperChar*  
- This parameter is not used.  
+*nUpperChar*<br/>
+[in] This parameter is not used.  
   
 ### Return Value  
  Always returns FALSE.  
@@ -1370,8 +1370,8 @@ virtual BOOL OnProcessKey(UINT nChar);
 ```  
   
 ### Parameters  
- [in] *nChar*  
- This parameter is not used.  
+*nChar*<br/>
+[in] This parameter is not used.  
   
 ### Return Value  
  Always returns FALSE.  
@@ -1387,8 +1387,8 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ```  
   
 ### Parameters  
- [in] *bIsRTL*  
- This parameter is not used.  
+*bIsRTL*<br/>
+[in] This parameter is not used.  
   
 ### Remarks  
  By default this method does nothing. Override this method to adjust the ribbon element when the layout changes direction. The default layout direction is left-to-right.  
@@ -1411,8 +1411,8 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### Parameters  
- [in] *bShow*  
- This parameter is not used.  
+*bShow*<br/>
+[in] This parameter is not used.  
   
 ### Remarks  
  By default this method does nothing. Override this method to show or hide the ribbon element.  
@@ -1435,8 +1435,8 @@ void PostMenuCommand(UINT uiCmdId);
 ```  
   
 ### Parameters  
- [in] *uiCmdId*  
- The parameter is not used.  
+*uiCmdId*<br/>
+[in] The parameter is not used.  
   
 ### Remarks  
  The close message is only sent if the ribbon element is located on a pop-up menu.  
@@ -1481,8 +1481,8 @@ virtual void SetCompactMode(BOOL bCompactMode = TRUE);
 ```  
   
 ### Parameters  
- [in] *bCompactMode*  
- TRUE to reduce the display size of the ribbon element; FALSE to increase the display size of the ribbon element.  
+*bCompactMode*<br/>
+[in] TRUE to reduce the display size of the ribbon element; FALSE to increase the display size of the ribbon element.  
   
 ### Remarks  
  The following table summarizes the logic for this method.  
@@ -1502,8 +1502,8 @@ void SetData(DWORD_PTR dwData);
 ```  
   
 ### Parameters  
- [in] *dwData*  
- The data value.  
+*dwData*<br/>
+[in] The data value.  
   
 ##  <a name="setdefaultmenulook"></a>  CMFCRibbonBaseElement::SetDefaultMenuLook  
  Sets the ribbon element to appear as a pop-up command.  
@@ -1513,8 +1513,8 @@ void SetDefaultMenuLook(BOOL bIsDefaultMenuLook = TRUE);
 ```  
   
 ### Parameters  
- [in] *bIsDefaultMenuLook*  
- TRUE to set the ribbon element to appear as a pop-up command; otherwise FALSE.  
+*bIsDefaultMenuLook*<br/>
+[in] TRUE to set the ribbon element to appear as a pop-up command; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1526,8 +1526,8 @@ virtual void SetDescription(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- [in] *lpszText*  
- The description for the ribbon element.  
+*lpszText*<br/>
+[in] The description for the ribbon element.  
   
 ### Remarks  
  The framework displays the new description either on the status bar, or in the tooltip, or under the menu button.  
@@ -1540,8 +1540,8 @@ virtual void SetID(UINT nID);
 ```  
   
 ### Parameters  
- [in] *nID*  
- The command ID.  
+*nID*<br/>
+[in] The command ID.  
   
 ##  <a name="setinitialmode"></a>  CMFCRibbonBaseElement::SetInitialMode  
  Sets the initial display size for the ribbon element.  
@@ -1551,8 +1551,8 @@ virtual void SetInitialMode(BOOL bOneRow = FALSE);
 ```  
   
 ### Parameters  
- [in] *bOneRow*  
- TRUE to limit the display size for the ribbon element to compact or intermediate; otherwise, FALSE.  
+*bOneRow*<br/>
+[in] TRUE to limit the display size for the ribbon element to compact or intermediate; otherwise, FALSE.  
   
 ### Remarks  
  The display size of ribbon elements can be compact, intermediate, or large.  
@@ -1567,11 +1567,11 @@ virtual void SetKeys(
 ```  
   
 ### Parameters  
- [in] *lpszKeys*  
- The keytip for the ribbon element.  
+*lpszKeys*<br/>
+[in] The keytip for the ribbon element.  
   
- [in] *lpszMenuKeys*  
- The keytip for the pop-up menu of the ribbon element.  
+*lpszMenuKeys*<br/>
+[in] The keytip for the pop-up menu of the ribbon element.  
   
 ##  <a name="setoriginal"></a>  CMFCRibbonBaseElement::SetOriginal  
  Sets the original ribbon element for the ribbon element.  
@@ -1581,8 +1581,8 @@ virtual void SetOriginal(CMFCRibbonBaseElement* pOriginal);
 ```  
   
 ### Parameters  
- [in] *pOriginal*  
- Pointer to a ribbon element.  
+*pOriginal*<br/>
+[in] Pointer to a ribbon element.  
   
 ### Remarks  
  Ribbon elements that are copied to another container retain a pointer to the original ribbon element.  
@@ -1595,8 +1595,8 @@ virtual void SetParentCategory(CMFCRibbonCategory* pParent);
 ```  
   
 ### Parameters  
- [in] *pParent*  
- Pointer to a ribbon category.  
+*pParent*<br/>
+[in] Pointer to a ribbon category.  
   
 ### Remarks  
  The tabbed groups in ribbon controls are called categories.  
@@ -1609,8 +1609,8 @@ virtual void SetParentMenu(CMFCRibbonPanelMenuBar* pMenuBar);
 ```  
   
 ### Parameters  
- [in] *pMenuBar*  
- The parent menu.  
+*pMenuBar*<br/>
+[in] The parent menu.  
   
 ### Remarks  
   
@@ -1622,8 +1622,8 @@ virtual void SetParentRibbonBar(CMFCRibbonBar* pRibbonBar);
 ```  
   
 ### Parameters  
- [in] *pRibbonBar*  
- Pointer to the parent ribbon bar.  
+*pRibbonBar*<br/>
+[in] Pointer to the parent ribbon bar.  
   
 ### Remarks  
   
@@ -1635,8 +1635,8 @@ void SetRect(CRect rect);
 ```  
   
 ### Parameters  
- [in] *rect*  
- The dimensions of the rectangle.  
+*rect*<br/>
+[in] The dimensions of the rectangle.  
   
 ### Remarks  
   
@@ -1648,8 +1648,8 @@ virtual void SetText(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- [in] *lpszText*  
- The text and keytip for the ribbon element.  
+*lpszText*<br/>
+[in] The text and keytip for the ribbon element.  
   
 ### Remarks  
  To set the keytip for the ribbon element, append the newline escape sequence followed by the keytip characters to *lpszText*.  
@@ -1673,8 +1673,8 @@ virtual void SetTextAlwaysOnRight(BOOL bSet = TRUE);
 ```  
   
 ### Parameters  
- [in] *bSet*  
- TRUE to display the text on the right; otherwise FALSE.  
+*bSet*<br/>
+[in] TRUE to display the text on the right; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1686,8 +1686,8 @@ virtual void SetToolTipText(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- [in] *lpszText*  
- The tooltip text.  
+*lpszText*<br/>
+[in] The tooltip text.  
   
 ##  <a name="setvisible"></a>  CMFCRibbonBaseElement::SetVisible  
  Sets the visibility of the ribbon element.  
@@ -1697,8 +1697,8 @@ void SetVisible(BOOL bIsVisible);
 ```  
   
 ### Parameters  
- [in] *bIsVisible*  
- TRUE to display the ribbon element; FALSE to hide the ribbon element.  
+*bIsVisible*<br/>
+[in] TRUE to display the ribbon element; FALSE to hide the ribbon element.  
   
 ### Remarks  
   
@@ -1722,11 +1722,11 @@ virtual BOOL StretchToWholeRow(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- This parameter is not used.  
+*pDC*<br/>
+[in] This parameter is not used.  
   
- [in] *nHeight*  
- The height of the row.  
+*nHeight*<br/>
+[in] The height of the row.  
   
 ### Return Value  
  TRUE if the display height was set; otherwise, FALSE.  

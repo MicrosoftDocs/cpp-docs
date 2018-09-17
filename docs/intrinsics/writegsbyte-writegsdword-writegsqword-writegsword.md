@@ -39,11 +39,11 @@ void __writegsqword( 
 ```  
   
 #### Parameters  
- [in] `Offset`  
- The offset from the beginning of GS to write to.  
+*Offset*<br/>
+[in] The offset from the beginning of GS to write to.  
   
- [in] `Data`  
- The value to write.  
+*Data*<br/>
+[in] The value to write.  
   
 ## Requirements  
   

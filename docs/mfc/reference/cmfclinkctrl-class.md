@@ -72,11 +72,11 @@ virtual void OnDrawFocusRect(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rectClient*  
- A rectangle that bounds the link control.  
+*rectClient*<br/>
+[in] A rectangle that bounds the link control.  
   
 ### Remarks  
  Override this method when you want to use your own code to draw the button's focus rectangle.  
@@ -89,8 +89,8 @@ void SetURL(LPCTSTR lpszURL);
 ```  
   
 ### Parameters  
- [in] *lpszURL*  
- The button text to display.  
+*lpszURL*<br/>
+[in] The button text to display.  
   
 ### Remarks  
   
@@ -102,8 +102,8 @@ void SetURLPrefix(LPCTSTR lpszPrefix);
 ```  
   
 ### Parameters  
- [in] *lpszPrefix*  
- The prefix of the URL protocol.  
+*lpszPrefix*<br/>
+[in] The prefix of the URL protocol.  
   
 ### Remarks  
  Use this method to set the URL prefix. The prefix is not displayed on the button's face, but you can use it to help browse to the URL's target.  
@@ -118,11 +118,11 @@ virtual CSize SizeToContent(
 ```  
   
 ### Parameters  
- [in] *bVCenter*  
- TRUE to center the button text and bitmap vertically between the top and bottom of the link control; otherwise, FALSE. The default value is FALSE.  
+*bVCenter*<br/>
+[in] TRUE to center the button text and bitmap vertically between the top and bottom of the link control; otherwise, FALSE. The default value is FALSE.  
   
- [in] *bHCenter*  
- TRUE to center the button text and bitmap horizontally between the left and right sides of the link control; otherwise, FALSE. The default value is FALSE.  
+*bHCenter*<br/>
+[in] TRUE to center the button text and bitmap horizontally between the left and right sides of the link control; otherwise, FALSE. The default value is FALSE.  
   
 ### Return Value  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) object that contains the new size of the link control.  

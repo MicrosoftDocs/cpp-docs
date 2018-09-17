@@ -93,11 +93,11 @@ CMFCAutoHideButton* AddAutoHideWindow(
 ```  
   
 ### Parameters  
- [in] *pAutoHideWnd*  
- The window that you want to hide.  
+*pAutoHideWnd*<br/>
+[in] The window that you want to hide.  
   
- [in] *dwAlignment*  
- A value that specifies the alignment of the auto-hide button with the application window.  
+*dwAlignment*<br/>
+[in] A value that specifies the alignment of the auto-hide button with the application window.  
   
 ### Return Value  
   
@@ -133,8 +133,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### Parameters  
- [in] *bStretch*  
- [in] *bHorz*  
+*bStretch*<br/>
+[in] [in] *bHorz*  
   
 ### Return Value  
   
@@ -164,12 +164,12 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] *lpszClassName*  
- [in] *dwStyle*  
- [in] *rect*  
- [in] *pParentWnd*  
- [in] *nID*  
- [in] *dwControlBarStyle*  
+*lpszClassName*<br/>
+[in] [in] *dwStyle*  
+*rect*<br/>
+[in] [in] *pParentWnd*  
+*nID*<br/>
+[in] [in] *dwControlBarStyle*  
  [in] *pContext*  
   
 ### Return Value  
@@ -299,11 +299,11 @@ virtual CSize StretchPane(
 ```  
   
 ### Parameters  
- [in] *nLength*  
- The value is unused in the base implementation. In derived implementations, use this value to indicate the length of the resized pane.  
+*nLength*<br/>
+[in] The value is unused in the base implementation. In derived implementations, use this value to indicate the length of the resized pane.  
   
- [in] *bVert*  
- The value is unused in the base implementation. In derived implementations, use TRUE to handle the case where the auto-hide bar is collapsed vertically, and FALSE for the case where the auto-hide bar is collapsed horizontally.  
+*bVert*<br/>
+[in] The value is unused in the base implementation. In derived implementations, use TRUE to handle the case where the auto-hide bar is collapsed vertically, and FALSE for the case where the auto-hide bar is collapsed horizontally.  
   
 ### Return Value  
  The resulting size of the resized pane.  

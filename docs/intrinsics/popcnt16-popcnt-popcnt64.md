@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __popcnt16, __popcnt, __popcnt64
+
 **Microsoft Specific**  
   
  Counts the number of one bits (population count) in a 16-, 32-, or 64-byte unsigned integer.  
@@ -32,8 +33,8 @@ unsigned __int64 __popcnt64(
 ```  
   
 #### Parameters  
- [in] `value`  
- The 16-, 32-, or 64-bit unsigned integer for which we want the population count.  
+*value*<br/>
+[in] The 16-, 32-, or 64-bit unsigned integer for which we want the population count.  
   
 ## Return Value  
  The number of one bits in the `value` parameter.  
@@ -91,7 +92,8 @@ __popcnt(0xffffffff) = 32
 ```  
   
 **END Microsoft Specific**  
- Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
+
+Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

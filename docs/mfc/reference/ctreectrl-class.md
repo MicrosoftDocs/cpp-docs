@@ -298,7 +298,7 @@ BOOL EndEditLabelNow(BOOL fCancelWithoutSave);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *fCancelWithoutSave*|TRUE to discard changes to the tree-view item before concluding the edit operation, or FALSE to save changes to the tree-view item before concluding the operation.|  
+|*fCancelWithoutSave*|[in] TRUE to discard changes to the tree-view item before concluding the edit operation, or FALSE to save changes to the tree-view item before concluding the operation.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -565,7 +565,7 @@ int GetItemExpandedImageIndex(HTREEITEM hItem)const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *hItem*|Handle to a tree-view control item.|  
+|*hItem*|[in] Handle to a tree-view control item.|  
   
 ### Return Value  
  The index of the image to display when the specified item is in the expanded state.  
@@ -631,9 +631,9 @@ BOOL GetItemPartRect(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *hItem*|Handle to a tree-view control item.|  
-|[in] *nPart*|Identifier for the part. Must be set to TVGIPR_BUTTON.|  
-|[out] *lpRect*|Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure. If this method is successful, the structure receives the rectangle coordinates of the part specified by *hItem* and *nPart*.|  
+|*hItem*|[in] Handle to a tree-view control item.|  
+|*nPart*|[in] Identifier for the part. Must be set to TVGIPR_BUTTON.|  
+|*lpRect*|[out] Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure. If this method is successful, the structure receives the rectangle coordinates of the part specified by *hItem* and *nPart*.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -712,7 +712,7 @@ UINT GetItemStateEx(HTREEITEM hItem) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *hItem*|Handle to a tree-view control item.|  
+|*hItem*|[in] Handle to a tree-view control item.|  
   
 ### Return Value  
  The extended state of the item. For more information, see the `uStateEx` member of the [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) structure.  
@@ -1155,7 +1155,7 @@ HTREEITEM MapAccIdToItem(UINT uAccId) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *uAccId*|An accessibility identifier for an element in the tree-view item.|  
+|*uAccId*|[in] An accessibility identifier for an element in the tree-view item.|  
   
 ### Return Value  
  The handle to a tree-view item ( `HTREEITEM`) that corresponds to the *uAccId* parameter. For more information, see the *hItem* member of the [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) structure.  
@@ -1186,7 +1186,7 @@ UINT MapItemToAccID(HTREEITEM hItem) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *hItem*|A handle of a tree-view item in the control. For more information, see the *hItem* member of the [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) structure.|  
+|*hItem*|[in] A handle of a tree-view item in the control. For more information, see the *hItem* member of the [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) structure.|  
   
 ### Return Value  
  The accessibility identifier that corresponds to the *hItem* parameter.  
@@ -1307,8 +1307,8 @@ BOOL SetAutoscrollInfo(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *uPixelsPerSec*|The number of pixels per second to scroll.|  
-|[in] *uUpdateTime*|The time interval between updates of the control.|  
+|*uPixelsPerSec*|[in] The number of pixels per second to scroll.|  
+|*uUpdateTime*|[in] The time interval between updates of the control.|  
   
 ### Return Value  
  Always returns TRUE.  
@@ -1388,8 +1388,8 @@ DWORD SetExtendedStyle(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *dwExMask*|A bitmask that specifies which styles in the current tree-view control are affected by this method. If this parameter is zero, it is ignored and the value of the *dwExStyles* parameter is assigned to the tree-view control.<br /><br /> Specify zero or a bitwise combination (OR) of styles described in [Tree-View Control Extended Styles](/windows/desktop/Controls/tree-view-control-window-extended-styles).|  
-|[in] *dwExStyles*|A bitmask that specifies which styles in the current tree-view control to set or clear.<br /><br /> To set a combination of styles, specify a bitwise combination (OR) of styles described in [Tree-View Control Extended Styles](/windows/desktop/Controls/tree-view-control-window-extended-styles). To clear a set of styles, specify zero.|  
+|*dwExMask*|[in] A bitmask that specifies which styles in the current tree-view control are affected by this method. If this parameter is zero, it is ignored and the value of the *dwExStyles* parameter is assigned to the tree-view control.<br /><br /> Specify zero or a bitwise combination (OR) of styles described in [Tree-View Control Extended Styles](/windows/desktop/Controls/tree-view-control-window-extended-styles).|  
+|*dwExStyles*|[in] A bitmask that specifies which styles in the current tree-view control to set or clear.<br /><br /> To set a combination of styles, specify a bitwise combination (OR) of styles described in [Tree-View Control Extended Styles](/windows/desktop/Controls/tree-view-control-window-extended-styles). To clear a set of styles, specify zero.|  
   
 ### Return Value  
  A value that contains the previous extended control styles.  
@@ -1580,8 +1580,8 @@ BOOL SetItemExpandedImageIndex(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *hItem*|Handle to a tree-view control item.|  
-|[in] *iExpandedImage*|The index of the image to display when the specified item is in the expanded state.|  
+|*hItem*|[in] Handle to a tree-view control item.|  
+|*iExpandedImage*|[in] The index of the image to display when the specified item is in the expanded state.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -1691,8 +1691,8 @@ BOOL SetItemStateEx(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *hItem*|Handle to a tree-view control item.|  
-|[in] *uStateEx*|The extended state of the item. For more information, see the `uStateEx` member of the [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) structure.|  
+|*hItem*|[in] Handle to a tree-view control item.|  
+|*uStateEx*|[in] The extended state of the item. For more information, see the `uStateEx` member of the [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) structure.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -1817,7 +1817,7 @@ void ShowInfoTip(HTREEITEM hItem);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *hItem*|A handle to a tree-view item in the control. For more information, see the `hItem` member of the [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) structure.|  
+|*hItem*|[in] A handle to a tree-view item in the control. For more information, see the `hItem` member of the [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) structure.|  
   
 ### Remarks  
  For more information about the difference between tooltips and infotips, search for the "Tooltips and Infotips" topic at [Microsoft Developer Network](http://go.microsoft.com/fwlink/p/?linkid=56322).  

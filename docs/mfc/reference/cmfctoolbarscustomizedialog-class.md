@@ -108,17 +108,17 @@ void AddButton(
 ```  
   
 ### Parameters  
- [in] *uiCategoryId*  
- Specifies the category ID into which to insert the button.  
+*uiCategoryId*<br/>
+[in] Specifies the category ID into which to insert the button.  
   
- [in] *button*  
- Specifies the button to insert.  
+*button*<br/>
+[in] Specifies the button to insert.  
   
- [in] *iInsertBefore*  
- Specifies the zero-based index of a toolbar button before which the button is inserted.  
+*iInsertBefore*<br/>
+[in] Specifies the zero-based index of a toolbar button before which the button is inserted.  
   
- [in] *lpszCategory*  
- Specifies the category string to insert the button.  
+*lpszCategory*<br/>
+[in] Specifies the category string to insert the button.  
   
 ### Remarks  
  The `AddButton` method ignores buttons that have the standard command IDs (such as ID_FILE_MRU_FILE1), commands that are not permitted (see [CMFCToolBar::IsCommandPermitted](../../mfc/reference/cmfctoolbar-class.md#iscommandpermitted)) and dummy buttons.  
@@ -142,8 +142,8 @@ BOOL AddMenu(UINT uiMenuResId);
 ```  
   
 ### Parameters  
- [in] *uiMenuResId*  
- Specifies the resource ID of a menu to load.  
+*uiMenuResId*<br/>
+[in] Specifies the resource ID of a menu to load.  
   
 ### Return Value  
  TRUE if a menu was added successfully; otherwise FALSE.  
@@ -163,17 +163,17 @@ void AddMenuCommands(
 ```  
   
 ### Parameters  
- [in] *pMenu*  
- A pointer to the CMenu object to add.  
+*pMenu*<br/>
+[in] A pointer to the CMenu object to add.  
   
- [in] *bPopup*  
- Specifies whether to insert the popup menu items to the list of commands.  
+*bPopup*<br/>
+[in] Specifies whether to insert the popup menu items to the list of commands.  
   
- [in] *lpszCategory*  
- The name of the category to insert the menu.  
+*lpszCategory*<br/>
+[in] The name of the category to insert the menu.  
   
- [in] *lpszMenuPath*  
- A prefix that is added to the name when the command is shown in the **All Categories** list.  
+*lpszMenuPath*<br/>
+[in] A prefix that is added to the name when the command is shown in the **All Categories** list.  
   
 ### Remarks  
  The `AddMenuCommands` method loops over all menu items of *pMenu*. For each menu item that does not contain a submenu, this method creates a [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md) object and calls the [CMFCToolBarsCustomizeDialog::AddButton](#addbutton) method to add the menu item as a toolbar button to the list of commands on the **Commands** page. Separators are ignored in this process.  
@@ -194,14 +194,14 @@ BOOL AddToolBar(
 ```  
   
 ### Parameters  
- [in] *uiCategoryId*  
- Specifies the resource ID of the category to add the toolbar to.  
+*uiCategoryId*<br/>
+[in] Specifies the resource ID of the category to add the toolbar to.  
   
- [in] *uiToolbarResId*  
- Specifies the resource ID of a toolbar whose commands are inserted into the list of commands.  
+*uiToolbarResId*<br/>
+[in] Specifies the resource ID of a toolbar whose commands are inserted into the list of commands.  
   
- [in] *lpszCategory*  
- Specifies the name of the category to which to add the toolbar.  
+*lpszCategory*<br/>
+[in] Specifies the name of the category to which to add the toolbar.  
   
 ### Return Value  
  TRUE if the method is successful; otherwise FALSE.  
@@ -222,8 +222,8 @@ virtual BOOL CheckToolsValidity(const CObList& lstTools);
 ```  
   
 ### Parameters  
- [in] *lstTools*  
- The list of user-defined tools to check.  
+*lstTools*<br/>
+[in] The list of user-defined tools to check.  
   
 ### Return Value  
  Returns TRUE if the list of user-defined tools is valid; otherwise FALSE. The default implementation always returns TRUE.  
@@ -245,14 +245,14 @@ CMFCToolBarsCustomizeDialog(
 ```  
   
 ### Parameters  
- [in] *pWndParentFrame*  
- A pointer to the parent frame. This parameter must not be NULL.  
+*pWndParentFrame*<br/>
+[in] A pointer to the parent frame. This parameter must not be NULL.  
   
- [in] *bAutoSetFromMenus*  
- A Boolean value that specifies whether to add the menu commands from all menus to the list of commands on the **Commands** page. If this parameter is TRUE, the menu commands are added. Otherwise, the menu commands are not added.  
+*bAutoSetFromMenus*<br/>
+[in] A Boolean value that specifies whether to add the menu commands from all menus to the list of commands on the **Commands** page. If this parameter is TRUE, the menu commands are added. Otherwise, the menu commands are not added.  
   
- [in] *uiFlags*  
- A combination of flags that affect the behavior of the dialog box. This parameter can be one or more of the following values:  
+*uiFlags*<br/>
+[in] A combination of flags that affect the behavior of the dialog box. This parameter can be one or more of the following values:  
   
 - AFX_CUSTOMIZE_MENU_SHADOWS  
   
@@ -270,8 +270,8 @@ CMFCToolBarsCustomizeDialog(
   
 - AFX_CUSTOMIZE_NO_LARGE_ICONS  
   
- [in] *plistCustomPages*  
- A pointer to a list of `CRuntimeClass` objects that specify additional custom pages.  
+*plistCustomPages*<br/>
+[in] A pointer to a list of `CRuntimeClass` objects that specify additional custom pages.  
   
 ### Remarks  
  The *plistCustomPages* parameter refers to the list of `CRuntimeClass` objects that specify additional custom pages. The constructor adds more pages to the dialog box by using the [CRuntimeClass::CreateObject](../../mfc/reference/cruntimeclass-structure.md#createobject) method. See the CustomPages sample for an example that adds more pages to the **Customize** dialog box.  
@@ -304,8 +304,8 @@ void EnableUserDefinedToolbars(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable the user-defined toolbars; FALSE to disable the toolbars.  
+*bEnable*<br/>
+[in] TRUE to enable the user-defined toolbars; FALSE to disable the toolbars.  
   
 ### Remarks  
  If *bEnable* is TRUE, the **New**, **Rename** and **Delete** buttons are displayed on the **Toolbars** page.  
@@ -320,8 +320,8 @@ virtual void FillAllCommandsList(CListBox& wndListOfCommands) const;
 ```  
   
 ### Parameters  
- [out] `wndListOfCommands`  
- A reference to the `CListBox` object to populate.  
+*wndListOfCommands*<br/>
+[out] A reference to the `CListBox` object to populate.  
   
 ### Remarks  
  The **All Commands** category contains the commands of all categories. The [CMFCToolBarsCustomizeDialog::AddButton](#addbutton) method adds the command that is associated with the provided button to the **All Commands** category for you.  
@@ -340,11 +340,11 @@ void FillCategoriesComboBox(
 ```  
   
 ### Parameters  
- [out] *wndCategory*  
- A reference to the `CComboBox` object to populate.  
+*wndCategory*<br/>
+[out] A reference to the `CComboBox` object to populate.  
   
- [in] *bAddEmpty*  
- A Boolean value that specifies whether to add categories to the combo box that do not have commands. If this parameter is TRUE, empty categories are added to the combo box. Otherwise, empty categories are not added.  
+*bAddEmpty*<br/>
+[in] A Boolean value that specifies whether to add categories to the combo box that do not have commands. If this parameter is TRUE, empty categories are added to the combo box. Otherwise, empty categories are not added.  
   
 ### Remarks  
  This method is like the [CMFCToolBarsCustomizeDialog::FillCategoriesListBox](#fillcategorieslistbox) method except that this method works with a `CComboBox` object.  
@@ -365,11 +365,11 @@ void FillCategoriesListBox(
 ```  
   
 ### Parameters  
- [out] *wndCategory*  
- A reference to the `CListBox` object to populate.  
+*wndCategory*<br/>
+[out] A reference to the `CListBox` object to populate.  
   
- [in] *bAddEmpty*  
- A Boolean value that specifies whether to add categories to the list box that do not have commands. If this parameter is TRUE, empty categories are added to the list box. Otherwise, empty categories are not added.  
+*bAddEmpty*<br/>
+[in] A Boolean value that specifies whether to add categories to the list box that do not have commands. If this parameter is TRUE, empty categories are added to the list box. Otherwise, empty categories are not added.  
   
 ### Remarks  
  This method is like the [CMFCToolBarsCustomizeDialog::FillCategoriesComboBox](#fillcategoriescombobox) method except that this method works with a `CListBox` object.  
@@ -388,8 +388,8 @@ LPCTSTR GetCommandName(UINT uiCmd) const;
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- The ID of the command to retrieve.  
+*uiCmd*<br/>
+[in] The ID of the command to retrieve.  
   
 ### Return Value  
  The name that is associated with the given command ID, or NULL if the command does not exist.  
@@ -404,11 +404,11 @@ int GetCountInCategory(
 ```  
   
 ### Parameters  
- [in] *lpszItemName*  
- The text label to match.  
+*lpszItemName*<br/>
+[in] The text label to match.  
   
- [in] *lstCommands*  
- A reference to a list that contains `CMFCToolBarButton` objects.  
+*lstCommands*<br/>
+[in] A reference to a list that contains `CMFCToolBarButton` objects.  
   
 ### Return Value  
  The number of items in the provided list whose text label equals *lpszItemName*.  
@@ -463,8 +463,8 @@ virtual void OnAfterChangeTool(CUserTool* pSelTool);
 ```  
   
 ### Parameters  
- [in, out] *pSelTool*  
- A pointer to the user tool object that has been changed.  
+*pSelTool*<br/>
+[in, out] A pointer to the user tool object that has been changed.  
   
 ### Remarks  
  This method is called by the framework when a user changes the properties of a user-defined tool. The default implementation does nothing. Override this method in a class derived from `CMFCToolBarsCustomizeDialog`  to perform processing after a change to a user tool occurs.  
@@ -477,8 +477,8 @@ virtual BOOL OnAssignKey(ACCEL* pAccel);
 ```  
   
 ### Parameters  
- [in, out] *pAccel*  
- Pointer to the proposed keyboard assigment that is expressed as an [ACCEL](/windows/desktop/api/winuser/ns-winuser-tagaccel) struct.  
+*pAccel*<br/>
+[in, out] Pointer to the proposed keyboard assigment that is expressed as an [ACCEL](/windows/desktop/api/winuser/ns-winuser-tagaccel) struct.  
   
 ### Return Value  
  TRUE if the key can be assigned, or FALSE if the key cannot be assigned. The default implementation always returns TRUE.  
@@ -494,8 +494,8 @@ virtual void OnBeforeChangeTool(CUserTool* pSelTool);
 ```  
   
 ### Parameters  
- [in, out] *pSelTool*  
- A pointer to the user tool object that is about to be replaced.  
+*pSelTool*<br/>
+[in, out] A pointer to the user tool object that is about to be replaced.  
   
 ### Remarks  
  This method is called by the framework when the properties of a user-defined tool is about to change. The default implementation does nothing. Override the `OnBeforeChangeTool` method in a class derived from `CMFCToolBarsCustomizeDialog`  if you want to perform processing before a change to a user tool occurs, such as releasing resources that *pSelTool* uses.  
@@ -511,14 +511,14 @@ virtual BOOL OnEditToolbarMenuImage(
 ```  
   
 ### Parameters  
- [in] *pWndParent*  
- A pointer to the parent window.  
+*pWndParent*<br/>
+[in] A pointer to the parent window.  
   
- [in] *bitmap*  
- A reference to a bitmap object to be edited.  
+*bitmap*<br/>
+[in] A reference to a bitmap object to be edited.  
   
- [in] *nBitsPerPixel*  
- Bitmap color resolution, in bits per pixel.  
+*nBitsPerPixel*<br/>
+[in] Bitmap color resolution, in bits per pixel.  
   
 ### Return Value  
  TRUE if a change is being committed; otherwise FALSE. The default implementation displays a dialog box and returns TRUE if the user clicks **OK**, or FALSE if the user clicks **Cancel** or the **Close** button.  
@@ -575,14 +575,14 @@ int RemoveButton(
 ```  
   
 ### Parameters  
- [in] *uiCategoryId*  
- Specifies the category ID from which to remove the button.  
+*uiCategoryId*<br/>
+[in] Specifies the category ID from which to remove the button.  
   
- [in] *uiCmdId*  
- Specifies the command ID of the button.  
+*uiCmdId*<br/>
+[in] Specifies the command ID of the button.  
   
- [in] *lpszCategory*  
- Specifies the name of the category from which to remove the button.  
+*lpszCategory*<br/>
+[in] Specifies the name of the category from which to remove the button.  
   
 ### Return Value  
  The zero-based index of the removed button, or -1 if the specified command ID was not found in the specified category. If *uiCategoryId* is -1, the return value is 0.  
@@ -600,11 +600,11 @@ BOOL RenameCategory(
 ```  
   
 ### Parameters  
- [in] *lpszCategoryOld*  
- The category name to change.  
+*lpszCategoryOld*<br/>
+[in] The category name to change.  
   
- [in] *lpszCategoryNew*  
- The new category name.  
+*lpszCategoryNew*<br/>
+[in] The new category name.  
   
 ### Return Value  
  TRUE if the method was successful; otherwise FALSE.  
@@ -622,11 +622,11 @@ void ReplaceButton(
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- Specifies the command of the button to be replaced.  
+*uiCmd*<br/>
+[in] Specifies the command of the button to be replaced.  
   
- [in] *button*  
- A **const** reference to the toolbar button object that replaces the old button.  
+*button*<br/>
+[in] A **const** reference to the toolbar button object that replaces the old button.  
   
 ### Remarks  
  When [CMFCToolBarsCustomizeDialog::AddMenu](#addmenu), [CMFCToolBarsCustomizeDialog::AddMenuCommands](#addmenucommands), or [CMFCToolBarsCustomizeDialog::AddToolBar](#addtoolbar) adds a command to the **Commands** page, that command is in the form of a [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md) object (or a [CMFCToolBarMenuButton Class](../../mfc/reference/cmfctoolbarmenubutton-class.md) object for a menu item that contains a submenu added by `AddMenuCommands`). The framework also calls these three methods to add commands automatically. If you want a command to be represented by a derived type instead, call `ReplaceButton` and pass in a button of the derived type.  
@@ -644,8 +644,8 @@ BOOL SetUserCategory(LPCTSTR lpszCategory);
 ```  
   
 ### Parameters  
- [in] *lpszCategory*  
- The name of the category.  
+*lpszCategory*<br/>
+[in] The name of the category.  
   
 ### Return Value  
  TRUE if the method is successful; otherwise FALSE.  

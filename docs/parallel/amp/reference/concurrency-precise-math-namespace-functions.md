@@ -1471,8 +1471,8 @@ inline double modf(
 `_X`  
 Floating-point value
 
-`_Iptr` (out parameter)  
-The integer portion of `_X`, as a floating-point value.
+`_Iptr`  
+[out] The integer portion of `_X`, as a floating-point value.
 
 ### Return Value
 The signed fractional portion of `_X`.
@@ -1798,8 +1798,8 @@ The first floating-point argument.
 `_Y`  
 The second floating-point argument.
 
-`_Quo` (out parameter)  
-The address of an integer that’s used to return the quotient of the fractional bits of `_X` divided by the fractional bits of `_Y`.
+`_Quo`  
+[out] The address of an integer that’s used to return the quotient of the fractional bits of `_X` divided by the fractional bits of `_Y`.
 
 ### Return Value
 Returns the remainder of `_X` divided by `_Y`.
@@ -1821,8 +1821,8 @@ The first floating-point argument.
 `_Y`  
 The second floating-point argument.
 
-`_Quo` (out parameter)  
-The address of an integer that’s used to return the quotient of the fractional bits of `_X` divided by the fractional bits of `_Y`.
+`_Quo`  
+[out] The address of an integer that’s used to return the quotient of the fractional bits of `_X` divided by the fractional bits of `_Y`.
 
 ### Return Value
 Returns the remainder of `_X` divided by `_Y`.

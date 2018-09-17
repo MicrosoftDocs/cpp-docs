@@ -99,11 +99,11 @@ virtual INT_PTR AddItem(
 ```  
   
 ### Parameters  
- [in] *lpszItem*  
- The text of the item to add to the list box.  
+*lpszItem*<br/>
+[in] The text of the item to add to the list box.  
   
- [in] *dwData*  
- The data associated with the item to add to the list box.  
+*dwData*<br/>
+[in] The data associated with the item to add to the list box.  
   
 ### Return Value  
  The index of the last item in the list box.  
@@ -123,11 +123,11 @@ virtual INT_PTR AddSortedItem(
 ```  
   
 ### Parameters  
- [in] *lpszItem*  
- The text of the item to add to the list box.  
+*lpszItem*<br/>
+[in] The text of the item to add to the list box.  
   
- [in] *dwData*  
- The data associated with the item to add to the list box.  
+*dwData*<br/>
+[in] The data associated with the item to add to the list box.  
   
 ### Return Value  
  Index of the item that was added to the list box.  
@@ -157,17 +157,17 @@ CMFCToolBarComboBoxButton(
 ```  
   
 ### Parameters  
- [in] *uiID*  
- The command ID of the new button.  
+*uiID*<br/>
+[in] The command ID of the new button.  
   
- [in] *iImage*  
- The image index of the image associated with the new button.  
+*iImage*<br/>
+[in] The image index of the image associated with the new button.  
   
- [in] *dwStyle*  
- The style of the new button.  
+*dwStyle*<br/>
+[in] The style of the new button.  
   
- [in] *iWidth*  
- The width, in pixels, of the new button.  
+*iWidth*<br/>
+[in] The width, in pixels, of the new button.  
   
 ### Remarks  
  The default width is 150 pixels.  
@@ -194,11 +194,11 @@ virtual int Compare(
 ```  
   
 ### Parameters  
- [in] *lpszItem1*  
- The first string to compare.  
+*lpszItem1*<br/>
+[in] The first string to compare.  
   
- [in] *lpszItem2*  
- The second string to compare.  
+*lpszItem2*<br/>
+[in] The second string to compare.  
   
 ### Return Value  
  A value that indicates the case-sensitive lexicographic relationship between the strings. The following table lists the possible values:  
@@ -224,8 +224,8 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### Parameters  
- [in] *src*  
- The source `CMFCToolBarComboBoxButton` object.  
+*src*<br/>
+[in] The source `CMFCToolBarComboBoxButton` object.  
   
 ##  <a name="createcombo"></a>  CMFCToolBarComboBoxButton::CreateCombo  
  Creates a new combo box for the combo box button.  
@@ -237,11 +237,11 @@ virtual CComboBox* CreateCombo(
 ```  
   
 ### Parameters  
- [in] *pWndParent*  
- A pointer to the parent window of the button.  
+*pWndParent*<br/>
+[in] A pointer to the parent window of the button.  
   
- [in] *rect*  
- Bounding rectangle of the combo box.  
+*rect*<br/>
+[in] Bounding rectangle of the combo box.  
   
 ### Return Value  
  A pointer to the new combo box if the method was successful; otherwise, NULL.  
@@ -257,14 +257,14 @@ virtual CMFCToolBarComboBoxEdit* CreateEdit(
 ```  
   
 ### Parameters  
- [in] *pWndParent*  
- A pointer to the parent window of the button.  
+*pWndParent*<br/>
+[in] A pointer to the parent window of the button.  
   
- [in] *rect*  
- Bounding rectangle of the new edit box.  
+*rect*<br/>
+[in] Bounding rectangle of the new edit box.  
   
- [in] *dwEditStyle*  
- Control style of the new edit box.  
+*dwEditStyle*<br/>
+[in] Control style of the new edit box.  
   
 ### Return Value  
  A pointer to the new edit box if the method was successful; otherwise, NULL.  
@@ -282,14 +282,14 @@ BOOL DeleteItem(DWORD_PTR dwData);
 ```  
   
 ### Parameters  
- [in] *iIndex*  
- The zero-based index of the item to be deleted.  
+*iIndex*<br/>
+[in] The zero-based index of the item to be deleted.  
   
- [in] *dwData*  
- The data associated with the item to be deleted.  
+*dwData*<br/>
+[in] The data associated with the item to be deleted.  
   
- [in] *lpszText*  
- The text of the item to be deleted. If there are multiple items with the same text, the first item is deleted.  
+*lpszText*<br/>
+[in] The text of the item to be deleted. If there are multiple items with the same text, the first item is deleted.  
   
 ### Return Value  
  TRUE if the item was located and successfully deleted; otherwise, FALSE.  
@@ -314,8 +314,8 @@ virtual void EnableWindow(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable the edit and combo boxes; FALSE to disable the edit and combo boxes.  
+*bEnable*<br/>
+[in] TRUE to enable the edit and combo boxes; FALSE to disable the edit and combo boxes.  
   
 ### Remarks  
  When disabled, the controls cannot become active and cannot accept user input.  
@@ -328,8 +328,8 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 ```  
   
 ### Parameters  
- [out] *menuButton*  
- Reference to a menu button.  
+*menuButton*<br/>
+[out] Reference to a menu button.  
   
 ### Return Value  
  Always TRUE.  
@@ -342,8 +342,8 @@ int FindItem(LPCTSTR lpszText) const;
 ```  
   
 ### Parameters  
- [in] *lpszText*  
- The text for which to search in the list box.  
+*lpszText*<br/>
+[in] The text for which to search in the list box.  
   
 ### Return Value  
  The index of the item; or CB_ERR if the item is not found.  
@@ -360,11 +360,11 @@ static CMFCToolBarComboBoxButton* GetByCmd(
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- The command ID of a combo box button.  
+*uiCmd*<br/>
+[in] The command ID of a combo box button.  
   
- [in] *bIsFocus*  
- TRUE to search only focused buttons; FALSE to search all buttons.  
+*bIsFocus*<br/>
+[in] TRUE to search only focused buttons; FALSE to search all buttons.  
   
 ### Return Value  
  A pointer to a combo box button; or NULL if the button is not found.  
@@ -413,8 +413,8 @@ static int GetCountAll(UINT uiCmd);
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- The command ID of a combo box button.  
+*uiCmd*<br/>
+[in] The command ID of a combo box button.  
   
 ### Return Value  
  The number of items in the list box; otherwise, CB_ERR if the combo box button is not found.  
@@ -442,8 +442,8 @@ static int GetCurSelAll(UINT uiCmd);
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- The command ID of a combo box button.  
+*uiCmd*<br/>
+[in] The command ID of a combo box button.  
   
 ### Return Value  
  The index of the currently selected item in the list box; otherwise, CB_ERR if no item is selected or a combo box button is not found.  
@@ -481,8 +481,8 @@ LPCTSTR GetItem(int iIndex=-1) const;
 ```  
   
 ### Parameters  
- [in] *iIndex*  
- Zero-based index of an item in the list box.  
+*iIndex*<br/>
+[in] Zero-based index of an item in the list box.  
   
 ### Return Value  
  A pointer to the string that is associated with the item; otherwise, NULL if the index parameter is invalid, or if the index parameter is -1 and there is no selected item in the combo box.  
@@ -500,11 +500,11 @@ static LPCTSTR GetItemAll(
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- The command ID of a combo box button.  
+*uiCmd*<br/>
+[in] The command ID of a combo box button.  
   
- [in] *iIndex*  
- The zero-based index of an item in the list box.  
+*iIndex*<br/>
+[in] The zero-based index of an item in the list box.  
   
 ### Return Value  
  A pointer to the item's string if the method was successful; otherwise, NULL if the index is invalid, a combo box button is not found, or if index is -1 and there is no selected item in the combo box.  
@@ -520,8 +520,8 @@ DWORD_PTR GetItemData(int iIndex=-1) const;
 ```  
   
 ### Parameters  
- [in] *iIndex*  
- The zero-based index of an item in the list box.  
+*iIndex*<br/>
+[in] The zero-based index of an item in the list box.  
   
 ### Return Value  
  The data associated with the item; or 0 if the item does not exist.  
@@ -539,11 +539,11 @@ static DWORD_PTR GetItemDataAll(
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- The command ID of a combo box button.  
+*uiCmd*<br/>
+[in] The command ID of a combo box button.  
   
- [in] *iIndex*  
- The zero-based index of an item in the list box.  
+*iIndex*<br/>
+[in] The zero-based index of an item in the list box.  
   
 ### Return Value  
  The data associated with the item if the method was successful; otherwise, 0 if the specified index is not valid, or CB_ERR if the combo box button is not found.  
@@ -561,11 +561,11 @@ static void* GetItemDataPtrAll(
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- The command ID of the combo box button.  
+*uiCmd*<br/>
+[in] The command ID of the combo box button.  
   
- [in] *iIndex*  
- The zero-based index of an item in the list box.  
+*iIndex*<br/>
+[in] The zero-based index of an item in the list box.  
   
 ### Return Value  
  A pointer associated with the item if the method was successful; otherwise, -1 if an error occurs, or NULL if the combo box button is not found.  
@@ -605,8 +605,8 @@ static LPCTSTR GetTextAll(UINT uiCmd);
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- The command ID of a specific combo box button.  
+*uiCmd*<br/>
+[in] The command ID of a specific combo box button.  
   
 ### Return Value  
  The text in the edit box if the method was successful; otherwise, NULL.  
@@ -659,8 +659,8 @@ virtual BOOL IsOwnerOf(HWND hwnd);
 ```  
   
 ### Parameters  
- [in] *hwnd*  
- A window handle.  
+*hwnd*<br/>
+[in] A window handle.  
   
 ### Return Value  
  TRUE if the handle is assocated with the combo box button, or one of its children; otherwise, FALSE.  
@@ -696,8 +696,8 @@ virtual BOOL NotifyCommand(int iNotifyCode);
 ```  
   
 ### Parameters  
- [in] *iNotifyCode*  
- The notification message that is associated with the command.  
+*iNotifyCode*<br/>
+[in] The notification message that is associated with the command.  
   
 ### Return Value  
  Whether the combo box button processes the  message.  
@@ -720,14 +720,14 @@ virtual SIZE OnCalculateSize(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- The device context that displays the combo box button.  
+*pDC*<br/>
+[in] The device context that displays the combo box button.  
   
- [in] *sizeDefault*  
- The default size of the combo box button.  
+*sizeDefault*<br/>
+[in] The default size of the combo box button.  
   
- [in] *bHorz*  
- The dock state of the parent toolbar. TRUE when the toolbar is docked horizontally and FALSE when the toolbar is docked vertically.  
+*bHorz*<br/>
+[in] The dock state of the parent toolbar. TRUE when the toolbar is docked horizontally and FALSE when the toolbar is docked vertically.  
   
 ### Return Value  
  A `SIZE` structure that contains the dimensions of the combo box button, in pixels.  
@@ -740,8 +740,8 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```  
   
 ### Parameters  
- [in] *pWndParent*  
- Pointer to the new parent toolbar.  
+*pWndParent*<br/>
+[in] Pointer to the new parent toolbar.  
   
 ##  <a name="onclick"></a>  CMFCToolBarComboBoxButton::OnClick  
  Called by the framework when the user clicks the combo box button.  
@@ -753,11 +753,11 @@ virtual BOOL OnClick(
 ```  
   
 ### Parameters  
- [in] *pWnd*  
- Pointer to the parent window of the combo box button.  
+*pWnd*<br/>
+[in] Pointer to the parent window of the combo box button.  
   
- [in] *bDelay*  
- Reserved for use in a derived class.  
+*bDelay*<br/>
+[in] Reserved for use in a derived class.  
   
 ### Return Value  
  TRUE if the method handles the event; otherwise, FALSE.  
@@ -772,11 +772,11 @@ virtual HBRUSH OnCtlColor(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- The device context that displays the combo box button.  
+*pDC*<br/>
+[in] The device context that displays the combo box button.  
   
- [in] *nCtlColor*  
- Unused.  
+*nCtlColor*<br/>
+[in] Unused.  
   
 ### Return Value  
  Handle to the brush that the framework uses to paint the background of the combo box button.  
@@ -800,29 +800,29 @@ virtual void OnDraw(
 ```  
   
 ### Parameters  
- [in] *Pdc*  
- The device context that displays the button.  
+*Pdc*<br/>
+[in] The device context that displays the button.  
   
- [in] *rect*  
- The bounding rectangle of the button.  
+*rect*<br/>
+[in] The bounding rectangle of the button.  
   
- [in] *pImages*  
- The collection of images that is associated with the button.  
+*pImages*<br/>
+[in] The collection of images that is associated with the button.  
   
- [in] *bHorz*  
- The dock state of the parent toolbar. TRUE when the toolbar is docked horizontally and FALSE when the toolbar is docked vertically.  
+*bHorz*<br/>
+[in] The dock state of the parent toolbar. TRUE when the toolbar is docked horizontally and FALSE when the toolbar is docked vertically.  
   
- [in] *bCustomizeMode*  
- Whether the application is in customization mode.  
+*bCustomizeMode*<br/>
+[in] Whether the application is in customization mode.  
   
- [in] *bHighlight*  
- Whether to draw the combo box button highlighted.  
+*bHighlight*<br/>
+[in] Whether to draw the combo box button highlighted.  
   
- [in] *bDrawBorder*  
- Whether to draw the combo box button with a border.  
+*bDrawBorder*<br/>
+[in] Whether to draw the combo box button with a border.  
   
- [in] *bGrayDisabledButtons*  
- TRUE to draw shaded disabled buttons; FALSE to use the disabled images collection.  
+*bGrayDisabledButtons*<br/>
+[in] TRUE to draw shaded disabled buttons; FALSE to use the disabled images collection.  
   
 ##  <a name="ondrawoncustomizelist"></a>  CMFCToolBarComboBoxButton::OnDrawOnCustomizeList  
  Called by the framework to draw the combo box button in the **Commands** pane of the **Customize** dialog box.  
@@ -835,14 +835,14 @@ virtual int OnDrawOnCustomizeList(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- The device context that displays the combo box button.  
+*pDC*<br/>
+[in] The device context that displays the combo box button.  
   
- [in] *rect*  
- The bounding rectangle of the combo box button.  
+*rect*<br/>
+[in] The bounding rectangle of the combo box button.  
   
- [in] *bSelected*  
- TRUE if the combo box button is selected; otherwise, FALSE.  
+*bSelected*<br/>
+[in] TRUE if the combo box button is selected; otherwise, FALSE.  
   
 ### Return Value  
  The width, in pixels, of the combo box button.  
@@ -869,8 +869,8 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### Parameters  
- [in] *bShow*  
- Whether to hide or display the combo box button.  
+*bShow*<br/>
+[in] Whether to hide or display the combo box button.  
   
 ##  <a name="onsize"></a>  CMFCToolBarComboBoxButton::OnSize  
  Called by the framework to change the size of the combo box button when the parent toolbar changes size.  
@@ -880,8 +880,8 @@ virtual void OnSize(int iSize);
 ```  
   
 ### Parameters  
- [in] *iSize*  
- The new width of the combo box button.  
+*iSize*<br/>
+[in] The new width of the combo box button.  
   
 ##  <a name="onupdatetooltip"></a>  CMFCToolBarComboBoxButton::OnUpdateToolTip  
  Called by the framework when the user changes the tool tip for the combo box button.  
@@ -895,17 +895,17 @@ virtual BOOL OnUpdateToolTip(
 ```  
   
 ### Parameters  
- [in] *pWndParent*  
- Pointer to the parent window for the combo box button.  
+*pWndParent*<br/>
+[in] Pointer to the parent window for the combo box button.  
   
- [in] *iButtonIndex*  
- ID of the combo box button.  
+*iButtonIndex*<br/>
+[in] ID of the combo box button.  
   
- [in] *wndToolTip*  
- The tool tip to associate with the combo box button.  
+*wndToolTip*<br/>
+[in] The tool tip to associate with the combo box button.  
   
- [in] *str*  
- The tool tip text.  
+*str*<br/>
+[in] The tool tip text.  
   
 ### Return Value  
  TRUE if the method handles the event; otherwise, FALSE.  
@@ -933,17 +933,17 @@ BOOL SelectItem(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- [in] *iIndex*  
- The zero-based index of an item in the list box.  
+*iIndex*<br/>
+[in] The zero-based index of an item in the list box.  
   
- [in] *bNotify*  
- TRUE to notify the combo box button of the selection; otherwise FALSE.  
+*bNotify*<br/>
+[in] TRUE to notify the combo box button of the selection; otherwise FALSE.  
   
- [in] *dwData*  
- The data associated with an item in the list box.  
+*dwData*<br/>
+[in] The data associated with an item in the list box.  
   
- [in] *lpszText*  
- The text of an item in the list box.  
+*lpszText*<br/>
+[in] The text of an item in the list box.  
   
 ### Return Value  
  TRUE if the method was successful; otherwise FALSE.  
@@ -970,17 +970,17 @@ static BOOL SelectItemAll(
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- The command ID of the combo box button that contains the list box.  
+*uiCmd*<br/>
+[in] The command ID of the combo box button that contains the list box.  
   
- [in] *iIndex*  
- The zero-based index of the item in the list box. A value of -1 removes any current selection in the list box and clears the edit box.  
+*iIndex*<br/>
+[in] The zero-based index of the item in the list box. A value of -1 removes any current selection in the list box and clears the edit box.  
   
- [in] *dwData*  
- The data of an item in the list box.  
+*dwData*<br/>
+[in] The data of an item in the list box.  
   
- [in] *lpszText*  
- The text of an item in the list box.  
+*lpszText*<br/>
+[in] The text of an item in the list box.  
   
 ### Return Value  
  TRUE if the method was successful; otherwise FALSE.  
@@ -995,8 +995,8 @@ virtual void Serialize(CArchive& ar);
 ```  
   
 ### Parameters  
- [in, out] *ar*  
- The `CArchive` object to serialize.  
+*ar*<br/>
+[in, out] The `CArchive` object to serialize.  
   
 ### Remarks  
  Settings in the `CArchive` object determine whether this method reads or writes to the archive.  
@@ -1011,11 +1011,11 @@ virtual BOOL SetACCData(
 ```  
   
 ### Parameters  
- [in] *pParent*  
- The parent window of the combo box button.  
+*pParent*<br/>
+[in] The parent window of the combo box button.  
   
- [out] *data*  
- A `CAccessibilityData` object that receives the accessibility data from the combo box button.  
+*data*<br/>
+[out] A `CAccessibilityData` object that receives the accessibility data from the combo box button.  
   
 ### Return Value  
  TRUE if the method was successful; otherwise FALSE.  
@@ -1028,8 +1028,8 @@ static void SetCenterVert(BOOL bCenterVert=TRUE);
 ```  
   
 ### Parameters  
- [in] *bCenterVert*  
- TRUE to center the combo box button in the toolbar; FALSE to align the combo box button to the top of the toolbar.  
+*bCenterVert*<br/>
+[in] TRUE to center the combo box button in the toolbar; FALSE to align the combo box button to the top of the toolbar.  
   
 ### Remarks  
  By default, combo box buttons are aligned to the top.  
@@ -1042,8 +1042,8 @@ void SetContextMenuID(UINT uiResID);
 ```  
   
 ### Parameters  
- [in] *uiResID*  
- The shortcut menu resource ID.  
+*uiResID*<br/>
+[in] The shortcut menu resource ID.  
   
 ##  <a name="setdropdownheight"></a>  CMFCToolBarComboBoxButton::SetDropDownHeight  
  Sets the height of the list box when it is dropped down.  
@@ -1053,8 +1053,8 @@ void SetDropDownHeight(int nHeight);
 ```  
   
 ### Parameters  
- [in] *nHeight*  
- The height, in pixels, of the list box.  
+*nHeight*<br/>
+[in] The height, in pixels, of the list box.  
   
 ### Remarks  
  The default height is 150 pixels.  
@@ -1067,8 +1067,8 @@ static void SetFlatMode(BOOL bFlat=TRUE);
 ```  
   
 ### Parameters  
- [in] *bFlat*  
- TRUE for a flat style appearance; otherwise FALSE.  
+*bFlat*<br/>
+[in] TRUE for a flat style appearance; otherwise FALSE.  
   
 ### Remarks  
  The default flat style for combo box buttons is FALSE.  
@@ -1081,8 +1081,8 @@ virtual void SetStyle(UINT nStyle);
 ```  
   
 ### Parameters  
- [in] *nStyle*  
- A bitwise combination (OR) of toolbar styles.  
+*nStyle*<br/>
+[in] A bitwise combination (OR) of toolbar styles.  
   
 ### Remarks  
  For a list of toolbar button styles see [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md)  
@@ -1095,8 +1095,8 @@ void SetText(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- [in] *lpszText*  
- Pointer to a string that contains the text for the edit box.  
+*lpszText*<br/>
+[in] Pointer to a string that contains the text for the edit box.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

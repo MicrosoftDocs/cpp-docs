@@ -198,7 +198,7 @@ int GetIdealSize(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *cxMaxWidth*|The maximum width of the link, in pixels.|  
+|*cxMaxWidth*|[in] The maximum width of the link, in pixels.|  
 |[out] \* *pSize*|A pointer to a Windows [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure. When this method returns, the *cy* member of the `SIZE` structure contains the ideal link text height for the link text width that is specified by *cxMaxWidth*. The *cx* member of the structure contains the link text width that is actually needed.|  
   
 ### Return Value  

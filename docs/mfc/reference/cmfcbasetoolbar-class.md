@@ -73,8 +73,8 @@ virtual void GetMinSize(CSize& size) const;
 ```  
   
 ### Parameters  
- [out] *size*  
- The minimum size of a toolbar.  
+*size*<br/>
+[out] The minimum size of a toolbar.  
   
 ##  <a name="onafterchangeparent"></a>  CMFCBaseToolBar::OnAfterChangeParent  
  Called by the framework after the pane's parent changes.  
@@ -84,8 +84,8 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 ```  
   
 ### Parameters  
- [in] *pWndOldParent*  
- A pointer to the previous parent window.  
+*pWndOldParent*<br/>
+[in] A pointer to the previous parent window.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

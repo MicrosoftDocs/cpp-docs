@@ -270,8 +270,8 @@ int main( void )
    int *pInt = new int[5];
    std::raw_storage_iterator<int*,int> it( pInt );
    for ( int i = 0; i < 5; i++, it++ ) {
-*it = 2 * i;
-};
+      *it = 2 * i;
+   };
 
    for ( int i = 0; i < 5; i++ ) cout << "array " << i << " = " << pInt[i] << endl;;
 

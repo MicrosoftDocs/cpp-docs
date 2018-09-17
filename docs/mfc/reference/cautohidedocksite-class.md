@@ -88,7 +88,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *pBar*|The base pane that the framework tests.|  
+|*pBar*|[in] The base pane that the framework tests.|  
   
 ### Return Value  
  TRUE if *pBar* is derived from `CMFCAutoHideBar`; FALSE otherwise.  
@@ -111,9 +111,9 @@ virtual void DockPane(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *pWnd*|The pane that the framework docks.|  
-|[in] *dockMethod*|Docking options for the pane.|  
-|[in] *lpRect*|A rectangle that specifies the boundaries for the docked pane.|  
+|*pWnd*|[in] The pane that the framework docks.|  
+|*dockMethod*|[in] Docking options for the pane.|  
+|*lpRect*|[in] A rectangle that specifies the boundaries for the docked pane.|  
   
 ### Remarks  
  The default implementation does not use the parameter *dockMethod*, which is provided for future use.  
@@ -132,7 +132,7 @@ void GetAlignRect(CRect& rect) const;
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *rect*|A reference to a rectangle. The method stores the size of the dock site in this rectangle.|  
+|*rect*|[in] A reference to a rectangle. The method stores the size of the dock site in this rectangle.|  
   
 ### Remarks  
  The rectangle is adjusted for the offset margins so that they are not included.  
@@ -155,8 +155,8 @@ void SetOffsetLeft(int nOffset);
 ```  
   
 ### Parameters  
- [in] *nOffset*  
- The new offset.  
+*nOffset*<br/>
+[in] The new offset.  
   
 ### Remarks  
  [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) objects are positioned statically on the `CAutoHideDockSite` object. This means that the user cannot manually change the location of `CMFCAutoHideBar` objects. The `SetOffsetLeft` method controls the spacing between the left side of the left-most `CMFCAutoHideBar` and the left side of the `CAutoHideDockSite`.  
@@ -169,8 +169,8 @@ void SetOffsetRight(int nOffset);
 ```  
   
 ### Parameters  
- [in] *nOffset*  
- The new offset.  
+*nOffset*<br/>
+[in] The new offset.  
   
 ### Remarks  
  [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) objects are positioned statically on the `CAutoHideDockSite` object. This means that the user cannot manually change the location of the `CMFCAutoHideBar` objects. The `SetOffsetRight` method controls the spacing between the right side of the right-most `CMFCAutoHideBar` and the right side of the `CAutoHideDockSite`.  
@@ -187,7 +187,7 @@ virtual void RepositionPanes(CRect& rectNewClientArea);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *rectNewClientArea*|A reserved value.|  
+|*rectNewClientArea*|[in] A reserved value.|  
   
 ### Remarks  
  The default implementation does not use *rectNewClientArea*. It redraws the panes with the global toolbar margins and button spacing.  
@@ -204,7 +204,7 @@ void UnSetAutoHideMode(CMFCAutoHideBar* pAutoHideToolbar);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *pAutoHideToolbar*|A pointer to a [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) object pane located on the `CAutoHideDockSite`.|  
+|*pAutoHideToolbar*|[in] A pointer to a [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) object pane located on the `CAutoHideDockSite`.|  
   
 ### Remarks  
  This method searches for the row that contains *pAutoHideToolbar*. It calls `CMFCAutoHideBar.UnSetAutoHideMode` for all the `CMFCAutoHideBar` objects on that row. If *pAutoHideToolbar* is not found or it is NULL, this method calls `CMFCAutoHideBar.UnSetAutoHideMode` for all the `CMFCAutoHideBar` objects on the `CAutoHideDockSite`.  

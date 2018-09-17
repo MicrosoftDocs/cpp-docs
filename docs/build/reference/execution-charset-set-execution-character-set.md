@@ -21,12 +21,13 @@ Lets you specify the execution character set for your executable.
 /execution-charset:[IANA_name|.CPID]  
 ```  
   
-## Arguments  
- **IANA_name**  
- The IANA-defined character set name.  
+## Arguments
+
+**IANA_name**<br/>
+The IANA-defined character set name.  
   
- **CPID**  
- The code page identifier.  
+**CPID**<br/>
+The code page identifier.  
   
 ## Remarks  
  You can use the **/execution-charset** option to specify an execution character set. The execution character set is the encoding used for the text of your program that is input to the compilation phase after all preprocessing steps. This character set is used for the internal representation of any string or character literals in the compiled code. Set this option to specify the extended execution character set to use when your source files include characters that are not representable in the basic execution character set. You can use either the IANA or ISO character set name, or a dot (.) followed by a 3 to 5 digit decimal code page identifier to specify the character set to use. For a list of supported code page identifiers and character set names, see [Code Page Identifiers](/windows/desktop/Intl/code-page-identifiers).  

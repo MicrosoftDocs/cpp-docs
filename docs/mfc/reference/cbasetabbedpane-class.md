@@ -109,14 +109,14 @@ virtual BOOL AddTab(
  [in] [out] *pNewBar*  
  A pointer to the pane to add. This pointer may become invalid after you call this method. For more information, see the Remarks section.  
   
- [in] *bVisible*  
- TRUE to make the tab visible; otherwise, FALSE.  
+*bVisible*<br/>
+[in] TRUE to make the tab visible; otherwise, FALSE.  
   
- [in] *bSetActive*  
- TRUE to make the tab the active tab; otherwise, FALSE.  
+*bSetActive*<br/>
+[in] TRUE to make the tab the active tab; otherwise, FALSE.  
   
- [in] *bDetachable*  
- TRUE to make the tab detachable; otherwise, FALSE.  
+*bDetachable*<br/>
+[in] TRUE to make the tab detachable; otherwise, FALSE.  
   
 ### Return Value  
  TRUE if the pane was successfully added as a tab and was not destroyed in the process. FALSE if the pane being added is an object of type `CBaseTabbedPane`. For more information, see the Remarks section.  
@@ -145,8 +145,8 @@ virtual void ApplyRestoredTabInfo(BOOL bUseTabIndexes = FALSE);
 ```  
   
 ### Parameters  
- [in] *bUseTabIndexes*  
- This parameter is used internally by the framework.  
+*bUseTabIndexes*<br/>
+[in] This parameter is used internally by the framework.  
   
 ### Remarks  
  This method is called by the framework when it reloads docking state information from the registry. The method obtains information about tab order and tab names for a tabbed pane.  
@@ -182,8 +182,8 @@ virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 ```  
   
 ### Parameters  
- [in] *bActiveTabOnly*  
- When you convert a tabbed pane, specify TRUE to convert only the active tab. Specify FALSE to convert all tabs in the pane.  
+*bActiveTabOnly*<br/>
+[in] When you convert a tabbed pane, specify TRUE to convert only the active tab. Specify FALSE to convert all tabs in the pane.  
   
 ##  <a name="detachpane"></a>  CBaseTabbedPane::DetachPane  
  Detaches a pane from the tabbed pane.  
@@ -195,11 +195,11 @@ virtual BOOL DetachPane(
 ```  
   
 ### Parameters  
- [in] *pBar*  
- Pointer to the pane to detach.  
+*pBar*<br/>
+[in] Pointer to the pane to detach.  
   
- [in] *bHide*  
- Boolean parameter that specifies whether the framework hides the pane after it is detached.  
+*bHide*<br/>
+[in] Boolean parameter that specifies whether the framework hides the pane after it is detached.  
   
 ### Return Value  
  TRUE if the framework successfully detaches the pane; FALSE if *pBar* is NULL or refers to a pane that is not in the tabbed pane.  
@@ -215,8 +215,8 @@ virtual void EnableSetCaptionTextToTabName(BOOL bEnable);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to synchronize the tabbed pane caption with the active tab caption; otherwise, FALSE.  
+*bEnable*<br/>
+[in] TRUE to synchronize the tabbed pane caption with the active tab caption; otherwise, FALSE.  
   
 ##  <a name="filldefaulttabsorderarray"></a>  CBaseTabbedPane::FillDefaultTabsOrderArray  
  Restores the internal tab order to a default state.  
@@ -236,8 +236,8 @@ virtual CWnd* FindPaneByID(UINT uBarID);
 ```  
   
 ### Parameters  
- [in] *uBarID*  
- Specifies the ID of the pane to find.  
+*uBarID*<br/>
+[in] Specifies the ID of the pane to find.  
   
 ### Return Value  
  A pointer to the pane if it was found; otherwise, NULL.  
@@ -255,11 +255,11 @@ virtual CWnd* FindBarByTabNumber(
 ```  
   
 ### Parameters  
- [in] *nTabNum*  
- Specifies the zero-based index of the tab to retrieve.  
+*nTabNum*<br/>
+[in] Specifies the zero-based index of the tab to retrieve.  
   
- [in] *bGetWrappedBar*  
- TRUE to return the underlying (wrapped) window of the pane instead of the pane itself; otherwise FALSE. This only applies to panes derived from [CDockablePaneAdapter](../../mfc/reference/cdockablepaneadapter-class.md).  
+*bGetWrappedBar*<br/>
+[in] TRUE to return the underlying (wrapped) window of the pane instead of the pane itself; otherwise FALSE. This only applies to panes derived from [CDockablePaneAdapter](../../mfc/reference/cdockablepaneadapter-class.md).  
   
 ### Return Value  
  If the pane is found, then a valid pointer to the pane being searched for is returned; otherwise, NULL.  
@@ -282,14 +282,14 @@ virtual BOOL FloatTab(
  [in] [out] *pBar*  
  A pointer to the pane to float.  
   
- [in] *nTabID*  
- Specifies the zero-based index of the tab to float.  
+*nTabID*<br/>
+[in] Specifies the zero-based index of the tab to float.  
   
- [in] *dockMethod*  
- Specifies the method to use to make the pane float. For more information, see the Remarks section.  
+*dockMethod*<br/>
+[in] Specifies the method to use to make the pane float. For more information, see the Remarks section.  
   
- [in] *bHide*  
- TRUE to hide the pane before floating; otherwise, FALSE.  
+*bHide*<br/>
+[in] TRUE to hide the pane before floating; otherwise, FALSE.  
   
 ### Return Value  
  TRUE if the pane floated; otherwise, FALSE.  
@@ -320,8 +320,8 @@ virtual CWnd* GetFirstVisibleTab(int& iTabNum);
 ```  
   
 ### Parameters  
- [in] *iTabNum*  
- A reference to an integer. This method writes the zero-based index of the first displayed tab to this parameter, or -1 if no displayed tab is found.  
+*iTabNum*<br/>
+[in] A reference to an integer. This method writes the zero-based index of the first displayed tab to this parameter, or -1 if no displayed tab is found.  
   
 ### Return Value  
  If successful, a pointer to the first displayed tab; otherwise, NULL.  
@@ -334,8 +334,8 @@ virtual void GetMinSize(CSize& size) const;
 ```  
   
 ### Parameters  
- [out] *size*  
- A `CSize` object that is filled with the minimum allowed size.  
+*size*<br/>
+[out] A `CSize` object that is filled with the minimum allowed size.  
   
 ### Remarks  
  If consistent handling of minimum pane sizes is active ( [CPane::m_bHandleMinSize](../../mfc/reference/cpane-class.md#m_bhandleminsize)), *size* is filled with the minimum allowed size for the active tab. Otherwise, *size* is filled with the return value of [CPane::GetMinSize](../../mfc/reference/cpane-class.md#getminsize).  
@@ -348,8 +348,8 @@ virtual void GetMinSize(CSize& size) const;
 ```  
   
 ### Parameters  
- [out] *size*  
- A `CSize` object that is filled with the minimum allowed size.  
+*size*<br/>
+[out] A `CSize` object that is filled with the minimum allowed size.  
   
 ### Remarks  
  If consistent handling of minimum pane sizes is active ( [CPane::m_bHandleMinSize](../../mfc/reference/cpane-class.md#m_bhandleminsize)), *size* is filled with the minimum allowed size for the active tab. Otherwise, *size* is filled with the return value of [CPane::GetMinSize](../../mfc/reference/cpane-class.md#getminsize).  
@@ -364,11 +364,11 @@ virtual void GetPaneList(
 ```  
   
 ### Parameters  
- [out] *lst*  
- A `CObList` that is filled with the panes that are contained in the tabbed pane.  
+*lst*<br/>
+[out] A `CObList` that is filled with the panes that are contained in the tabbed pane.  
   
- [in] *pRTCFilter*  
- If it is not NULL, the returned list contains only panes that are of the specified runtime class.  
+*pRTCFilter*<br/>
+[in] If it is not NULL, the returned list contains only panes that are of the specified runtime class.  
   
 ##  <a name="gettabarea"></a>  CBaseTabbedPane::GetTabArea  
  Returns the bounding rectangles for the top and bottom tab areas.  
@@ -380,11 +380,11 @@ virtual void GetTabArea(
 ```  
   
 ### Parameters  
- [out] *rectTabAreaTop*  
- Receives the screen coordinates of the upper tab area.  
+*rectTabAreaTop*<br/>
+[out] Receives the screen coordinates of the upper tab area.  
   
- [out] *rectTabAreaBottom*  
- Receives the screen coordinates of the lower tab area.  
+*rectTabAreaBottom*<br/>
+[out] Receives the screen coordinates of the lower tab area.  
   
 ### Remarks  
  Call this method to determine the bounding rectangles, in screen coordinates, for the upper and lower tab areas.  
@@ -473,8 +473,8 @@ void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
 ```  
   
 ### Parameters  
- [in] *bAutoDestroy*  
- TRUE if the tabbed pane was created dynamically and you are not controlling its lifetime; otherwise, FALSE.  
+*bAutoDestroy*<br/>
+[in] TRUE if the tabbed pane was created dynamically and you are not controlling its lifetime; otherwise, FALSE.  
   
 ### Remarks  
  Set the auto-destroy mode to TRUE if you create a tabbed pane dynamically and if you are not controlling its lifetime. If auto-destroy mode is TRUE, the tabbed pane will be destroyed automatically by the framework.  
@@ -491,17 +491,17 @@ virtual BOOL ShowTab(
 ```  
   
 ### Parameters  
- [in] *pBar*  
- A pointer to the pane to show or hide.  
+*pBar*<br/>
+[in] A pointer to the pane to show or hide.  
   
- [in] *bShow*  
- TRUE to show the pane; FALSE to hide the pane.  
+*bShow*<br/>
+[in] TRUE to show the pane; FALSE to hide the pane.  
   
- [in] *bDelay*  
- TRUE to delay the adjustment of the tab layout; otherwise, FALSE.  
+*bDelay*<br/>
+[in] TRUE to delay the adjustment of the tab layout; otherwise, FALSE.  
   
- [in] *bActivate*  
- TRUE to make the tab the active tab; otherwise, FALSE.  
+*bActivate*<br/>
+[in] TRUE to make the tab the active tab; otherwise, FALSE.  
   
 ### Return Value  
  TRUE if the tab was either shown or hidden successfully; otherwise, FALSE.  
@@ -533,17 +533,17 @@ virtual CMFCAutoHideToolBar* SetAutoHideMode(
 ```  
   
 ### Parameters  
- [in] *bMode*  
- TRUE to enable auto-hide mode; FALSE to enable regular docking mode.  
+*bMode*<br/>
+[in] TRUE to enable auto-hide mode; FALSE to enable regular docking mode.  
   
- [in] *dwAlignment*  
- Specifies the alignment of the auto-hide pane that is to be created. For a list of possible values, see [CPane::MoveByAlignment](../../mfc/reference/cpane-class.md#movebyalignment).  
+*dwAlignment*<br/>
+[in] Specifies the alignment of the auto-hide pane that is to be created. For a list of possible values, see [CPane::MoveByAlignment](../../mfc/reference/cpane-class.md#movebyalignment).  
   
  [in] [out] *pCurrAutoHideBar*  
  A pointer to the current auto-hide toolbar. Can be NULL.  
   
- [in] *bUseTimer*  
- Specifies whether to use the auto-hide effect when the user switches the pane to auto-hide mode, or to hide the pane immediately.  
+*bUseTimer*<br/>
+[in] Specifies whether to use the auto-hide effect when the user switches the pane to auto-hide mode, or to hide the pane immediately.  
   
 ### Return Value  
  A pointer to the auto-hide toolbar that is created when switching to auto-hide mode, or NULL if no toolbar is created.  

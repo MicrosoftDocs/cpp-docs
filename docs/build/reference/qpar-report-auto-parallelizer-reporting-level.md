@@ -19,14 +19,15 @@ Enables the reporting feature of the compiler's [Auto-Parallelizer](../../parall
 /Qpar-report:{1}{2}  
 ```  
   
-## Remarks  
- **/Qpar-report:1**  
- Outputs an informational message for loops that are parallelized.  
+## Remarks
+
+**/Qpar-report:1**<br/>
+Outputs an informational message for loops that are parallelized.  
   
- **/Qpar-report:2**  
- Outputs an informational message for loops that are parallelized and also for loops that are not parallelized, together with a reason code.  
+**/Qpar-report:2**<br/>
+Outputs an informational message for loops that are parallelized and also for loops that are not parallelized, together with a reason code.  
   
- Messages are reported to stdout. If no informational messages are reported, then either the code contains no loops, or the reporting level was not set to report loops that are not parallelized. For more information about reason codes and messages, see [Vectorizer and Parallelizer Messages](../../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).  
+Messages are reported to stdout. If no informational messages are reported, then either the code contains no loops, or the reporting level was not set to report loops that are not parallelized. For more information about reason codes and messages, see [Vectorizer and Parallelizer Messages](../../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).  
   
 ### To set the /Qpar-report compiler option in Visual Studio  
   

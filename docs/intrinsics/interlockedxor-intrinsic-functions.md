@@ -119,11 +119,11 @@ __int64 _InterlockedXor64_rel(
 ```  
   
 #### Parameters  
- [in, out] `Value`  
- A pointer to the first operand, to be replaced by the result.  
+*Value*<br/>
+[in, out] A pointer to the first operand, to be replaced by the result.  
   
- [in] `Mask`  
- The second operand.  
+*Mask*<br/>
+[in] The second operand.  
   
 ## Return Value  
  The original value of the first operand.  

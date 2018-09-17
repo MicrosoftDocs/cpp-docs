@@ -91,14 +91,14 @@ virtual int AddItem(
 ```  
   
 ### Parameters  
- [in] *strIext*  
- A reference to a string.  
+*strIext*<br/>
+[in] A reference to a string.  
   
- [in] *dwData*  
- An application-specific 32-bit value that is associated with the string. The default value is 0.  
+*dwData*<br/>
+[in] An application-specific 32-bit value that is associated with the string. The default value is 0.  
   
- [in] *iIndex*  
- The zero-based index of the position that will hold the string. If the *iIndex* parameter is -1, the string is added to the end of the list. The default value is -1.  
+*iIndex*<br/>
+[in] The zero-based index of the position that will hold the string. If the *iIndex* parameter is -1, the string is added to the end of the list. The default value is -1.  
   
 ### Return Value  
  The zero-based index of the position of the string in the list control.  
@@ -125,8 +125,8 @@ virtual BOOL EditItem(int iIndex);
 ```  
   
 ### Parameters  
- [in] *iIndex*  
- Zero-based index of a list control item.  
+*iIndex*<br/>
+[in] Zero-based index of a list control item.  
   
 ### Return Value  
  TRUE if the edit operation starts successfully; otherwise, FALSE.  
@@ -155,8 +155,8 @@ virtual DWORD_PTR GetItemData(int iIndex) const;
 ```  
   
 ### Parameters  
- [in] *iIndex*  
- The zero-based index of an editable list control item.  
+*iIndex*<br/>
+[in] The zero-based index of an editable list control item.  
   
 ### Return Value  
  The 32-bit value that is associated with the specified item.  
@@ -172,8 +172,8 @@ virtual CString GetItemText(int iIndex) const;
 ```  
   
 ### Parameters  
- [in] `iIndex`  
- The zero-based index of an editable list control item.  
+*iIndex*<br/>
+[in] The zero-based index of an editable list control item.  
   
 ### Return Value  
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) object that contains the text of the specified item.  
@@ -213,8 +213,8 @@ virtual BOOL RemoveItem(int iIndex);
 ```  
   
 ### Parameters  
- [in] *iIndex*  
- The zero-based index of an editable list control item.  
+*iIndex*<br/>
+[in] The zero-based index of an editable list control item.  
   
 ### Return Value  
  TRUE if the specified item is removed; otherwise, FALSE.  
@@ -229,8 +229,8 @@ virtual BOOL SelectItem(int iItem);
 ```  
   
 ### Parameters  
- [in] *iItem*  
- The zero-based index of an editable list control item.  
+*iItem*<br/>
+[in] The zero-based index of an editable list control item.  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -248,11 +248,11 @@ virtual void SetItemData(
 ```  
   
 ### Parameters  
- [in] *iIndex*  
- The zero-based index of an editable list control item.  
+*iIndex*<br/>
+[in] The zero-based index of an editable list control item.  
   
- [in] *dwData*  
- A 32-bit value. This value can be an application-specific integer or a pointer to other data.  
+*dwData*<br/>
+[in] A 32-bit value. This value can be an application-specific integer or a pointer to other data.  
   
 ### Remarks  
   

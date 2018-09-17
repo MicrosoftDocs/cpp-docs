@@ -21,11 +21,10 @@ Modifies the behavior of the [schedule](../../../parallel/openmp/reference/sched
 set OMP_SCHEDULE[=type[,size]]  
 ```  
   
-## Remarks  
- where,  
-  
- `size` (optional)  
- Specifies the size of iterations. `size` must be a positive integer. The default is 1, except when `type` is static. Not valid when `type` is `runtime`.  
+## Arguments
+
+*size*<br/>
+(Optional) Specifies the size of iterations. `size` must be a positive integer. The default is 1, except when `type` is static. Not valid when `type` is `runtime`.  
   
  `type`  
  The kind of scheduling:  

@@ -13,9 +13,10 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __lzcnt16, __lzcnt, __lzcnt64
+
 **Microsoft Specific**  
   
- Counts the number of leading zeros in a 16-, 32-, or 64-bit integer.  
+Counts the number of leading zeros in a 16-, 32-, or 64-bit integer.  
   
 ## Syntax  
   
@@ -32,8 +33,8 @@ unsigned __int64 __lzcnt64(
 ```  
   
 #### Parameters  
- [in] `value`  
- The 16-, 32-, or 64-bit unsigned integer to scan for leading zeros.  
+*value*<br/>
+[in] The 16-, 32-, or 64-bit unsigned integer to scan for leading zeros.  
   
 ## Return Value  
  The number of leading zero bits in the `value` parameter. If `value` is zero, the return value is the size of the input operand (16, 32, or 64). If the most significant bit of `value` is one, the return value is zero.  
@@ -93,8 +94,9 @@ __lzcnt(0xffff) = 16
 __lzcnt(0xffffffff) = 0  
 ```  
   
-**END Microsoft Specific**  
- Portions of this content are Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
+**END Microsoft Specific**
+
+Portions of this content are Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

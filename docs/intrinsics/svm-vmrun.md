@@ -29,7 +29,7 @@ void __svm_vmrun(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `VmcbPhysicalAddress`|The physical address of the VMCB.|  
+|*VmcbPhysicalAddress*|[in] The physical address of the VMCB.|  
   
 ## Remarks  
  The `__svm_vmrun` function uses a minimal amount of information in the VMCB to begin executing the virtual machine guest code. Use the [__svm_vmsave](../intrinsics/svm-vmsave.md) or [__svm_vmload](../intrinsics/svm-vmload.md) function if you require more information to handle a complex interrupt or to switch to another guest.  

@@ -134,17 +134,17 @@ virtual COLORREF GetRibbonEditBackgroundColor (
 ```  
   
 ### Parameters  
- [in] *pEdit*  
- A pointer to the edit control. This value cannot be NULL.  
+*pEdit*<br/>
+[in] A pointer to the edit control. This value cannot be NULL.  
   
- [out] *bIsHighlighted*  
- Returns whether the ribbon box is highlighted.  
+*bIsHighlighted*<br/>
+[out] Returns whether the ribbon box is highlighted.  
   
- [out] *bIsPaneHighlighted*  
- Returns TRUE if the ribbon panel that contains *pEdit* is highlighted.  
+*bIsPaneHighlighted*<br/>
+[out] Returns TRUE if the ribbon panel that contains *pEdit* is highlighted.  
   
- [out] *bIsDisabled*  
- Returns whether *pEdit* is disabled.  
+*bIsDisabled*<br/>
+[out] Returns whether *pEdit* is disabled.  
   
 ### Return Value  
  The background color of the edit box *pEdit*.  
@@ -163,17 +163,17 @@ virtual void OnFillMenuImageRect(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to the device context of a menu button.  
+*pDC*<br/>
+[in] A pointer to the device context of a menu button.  
   
- [in] *pButton*  
- A pointer to a `CMFCToolBarButton`. The framework fills the background for this button.  
+*pButton*<br/>
+[in] A pointer to a `CMFCToolBarButton`. The framework fills the background for this button.  
   
- [in] *rect*  
- A rectangle that specifies the boundaries of the menu button image area.  
+*rect*<br/>
+[in] A rectangle that specifies the boundaries of the menu button image area.  
   
- [in] *state*  
- The button state.  
+*state*<br/>
+[in] The button state.  
   
 ### Remarks  
   

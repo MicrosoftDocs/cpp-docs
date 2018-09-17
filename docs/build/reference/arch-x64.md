@@ -19,12 +19,13 @@ Specifies the architecture for code generation on x64. Also see [/arch (x86)](..
 /arch:[AVX|AVX2]  
 ```  
   
-## Arguments  
- **/arch:AVX**  
- Enables the use of Intel Advanced Vector Extensions instructions.  
+## Arguments
+
+**/arch:AVX**<br/>
+Enables the use of Intel Advanced Vector Extensions instructions.  
   
- **/arch:AVX2**  
- Enables the use of Intel Advanced Vector Extensions 2 instructions.  
+**/arch:AVX2**<br/>
+Enables the use of Intel Advanced Vector Extensions 2 instructions.  
   
 ## Remarks  
  **/arch** only affects code generation for native functions. When you use [/clr](../../build/reference/clr-common-language-runtime-compilation.md) to compile, **/arch** has no effect on code generation for managed functions.  

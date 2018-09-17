@@ -890,7 +890,7 @@ HRESULT STDMETHODCALLTYPE put_HWND(LONG_PTR /* hWnd */);
 
 ### Parameters
 
-*/\* hWnd \*/*  
+*/&ast; hWnd &ast;/*  
 Reserved.
 
 ### Return Value

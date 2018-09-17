@@ -17,14 +17,13 @@ ms.workload: ["cplusplus"]
 /PDBPATH[:VERBOSE] filename  
 ```  
   
-## Remarks  
- where:  
+### Parameters
+
+*filename*<br/>
+The name of the .dll or .exe file for which you want to find the matching .pdb file.  
   
- *filename*  
- The name of the .dll or .exe file for which you want to find the matching .pdb file.  
-  
- VERBOSE (optional)  
- Reports all directories where an attempt was made to locate the .pdb file.  
+**:VERBOSE**<br/>
+(Optional) Reports all directories where an attempt was made to locate the .pdb file.  
   
 ## Remarks  
  /PDBPATH will search your computer along the same paths that the debugger would search for a .pdb file and will report which, if any, .pdb files correspond to the file specified in *filename*.  

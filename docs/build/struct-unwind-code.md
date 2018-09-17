@@ -19,13 +19,15 @@ The unwind code array is used to record the sequence of operations in the prolog
 |UBYTE: 4|Unwind operation code|  
 |UBYTE: 4|Operation info|  
   
- The array is sorted by descending order of offset in the prolog.  
+The array is sorted by descending order of offset in the prolog.  
   
- **Offset in prolog**  
- Offset from the beginning of the prolog of the end of the instruction that performs this operation, plus 1 (that is, the offset of the start of the next instruction).  
+## Offset in prolog
+
+Offset from the beginning of the prolog of the end of the instruction that performs this operation, plus 1 (that is, the offset of the start of the next instruction).  
   
- **Unwind operation code**  
- Note: Certain operation codes require an unsigned offset to a value in the local stack frame. This offset is from the start (lowest address) of the fixed stack allocation. If the Frame Register field in the UNWIND_INFO is zero, this offset is from RSP. If the Frame Register field is nonzero, this is the offset from where RSP was located when the FP reg was established. This equals the FP reg minus the FP reg offset (16 \* the scaled frame register offset in the UNWIND_INFO). If an FP reg is used, then any unwind code taking an offset must only be used after the FP reg is established in the prolog.  
+## Unwind operation code
+
+Note: Certain operation codes require an unsigned offset to a value in the local stack frame. This offset is from the start (lowest address) of the fixed stack allocation. If the Frame Register field in the UNWIND_INFO is zero, this offset is from RSP. If the Frame Register field is nonzero, this is the offset from where RSP was located when the FP reg was established. This equals the FP reg minus the FP reg offset (16 \* the scaled frame register offset in the UNWIND_INFO). If an FP reg is used, then any unwind code taking an offset must only be used after the FP reg is established in the prolog.  
   
  For all opcodes except UWOP_SAVE_XMM128 and UWOP_SAVE_XMM128_FAR, the offset will always be a multiple of 8, because all stack values of interest are stored on 8 byte boundaries (the stack itself is always 16-byte aligned). For operation codes that take a short offset (less than 512K), the final USHORT in the nodes for this code holds the offset divided by 8. For operation codes that take a long offset (512K <= offset < 4GB), the final two USHORT nodes for this code hold the offset (in little-endian format).  
   
@@ -47,9 +49,8 @@ The unwind code array is used to record the sequence of operations in the prolog
   
  The unwind code for a stack allocation should always use the shortest possible encoding:  
   
-|||  
-|-|-|  
 |**Allocation Size**|**Unwind Code**|  
+|-|-|  
 |8 to 128 bytes|UWOP_ALLOC_SMALL|  
 |136 to 512K-8 bytes|UWOP_ALLOC_LARGE, operation info = 0|  
 |512K to 4G-8 bytes|UWOP_ALLOC_LARGE, operation info = 1|  
@@ -99,24 +100,25 @@ The unwind code array is used to record the sequence of operations in the prolog
   
  This unwind code will always appear in a dummy prolog, which is never actually executed but instead appears before the real entry point of an interrupt routine, and exists only to provide a place to simulate the push of a machine frame. UWOP_PUSH_MACHFRAME records that simulation, which indicates the machine has conceptually done the following:  
   
- Pop RIP return address from top of stack into *Temp*  
+1. Pop RIP return address from top of stack into *Temp*  
   
- Push SS  
+2. Push SS  
   
- Push old RSP  
+3. Push old RSP  
   
- Push EFLAGS  
+4. Push EFLAGS  
   
- Push CS  
+5. Push CS  
   
- Push *Temp*  
+6. Push *Temp*  
   
- Push Error Code (if op info equals 1)  
+7. Push Error Code (if op info equals 1)  
   
- The simulated UWOP_PUSH_MACHFRAME operation decrements RSP by 40 (op info equals 0) or 48 (op info equals 1).  
+The simulated UWOP_PUSH_MACHFRAME operation decrements RSP by 40 (op info equals 0) or 48 (op info equals 1).  
   
- **Operation info**  
- The meaning of these 4 bits depends upon the operation code. To encode a general-purpose (integer) register, the following mapping is used:  
+## Operation info
+
+The meaning of these 4 bits depends upon the operation code. To encode a general-purpose (integer) register, the following mapping is used:  
   
 |||  
 |-|-|  
@@ -130,5 +132,6 @@ The unwind code array is used to record the sequence of operations in the prolog
 |7|RDI|  
 |8 to 15|R8 to R15|  
   
-## See Also  
- [Unwind Data for Exception Handling, Debugger Support](../build/unwind-data-for-exception-handling-debugger-support.md)
+## See Also
+
+[Unwind Data for Exception Handling, Debugger Support](../build/unwind-data-for-exception-handling-debugger-support.md)

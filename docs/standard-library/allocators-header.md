@@ -36,9 +36,10 @@ An allocator is a template class that describes an object that manages storage a
 
 The allocators are all templates of this type:
 
-`template<class` `Type` `>`
-
-`class allocator;`
+```cpp
+template<class Type>
+class allocator;
+```
 
 where the template argument `Type` is the type managed by the allocator instance. The C++ Standard Library provides a default allocator, template class [allocator](../standard-library/allocator-class.md), which is defined in [\<memory>](../standard-library/memory.md). The \<allocators> header provides the following allocators:
 

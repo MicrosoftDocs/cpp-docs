@@ -663,8 +663,8 @@ BOOL SetBandWidth(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *uBand*|Zero-based index of a rebar band.|  
-|[in] *cxWidth*|New width of the rebar band, in pixels.|  
+|*uBand*|[in] Zero-based index of a rebar band.|  
+|*cxWidth*|[in] New width of the rebar band, in pixels.|  
   
 ### Return Value  
  TRUE if the method is successful; otherwise, FALSE.  
@@ -743,8 +743,8 @@ DWORD SetExtendedStyle(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *dwMask*|A bitwise combination (OR) of flags that specify which flags in the *dwStyleEx* parameter apply. Use one or more of the following values:<br /><br /> RBS_EX_SPLITTER: By default, show the splitter on the bottom in horizontal mode, and to the right in vertical mode.<br /><br /> RBS_EX_TRANSPARENT: Forward the [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) message to the parent window.|  
-|[in] *dwStyleEx*|A bitwise combination (OR) of flags that specify the styles to apply. To set a style, specify the same flag that is used in the *dwMask* parameter. To reset a style, specify binary zero.|  
+|*dwMask*|[in] A bitwise combination (OR) of flags that specify which flags in the *dwStyleEx* parameter apply. Use one or more of the following values:<br /><br /> RBS_EX_SPLITTER: By default, show the splitter on the bottom in horizontal mode, and to the right in vertical mode.<br /><br /> RBS_EX_TRANSPARENT: Forward the [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) message to the parent window.|  
+|*dwStyleEx*|[in] A bitwise combination (OR) of flags that specify the styles to apply. To set a style, specify the same flag that is used in the *dwMask* parameter. To reset a style, specify binary zero.|  
   
 ### Return Value  
  The previous extended style.  

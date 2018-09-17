@@ -59,8 +59,8 @@ __int64 _InterlockedIncrement64_nf(
 ```  
   
 #### Parameters  
- [in, out] `lpAddend`  
- Pointer to the variable to be incremented.  
+*lpAddend*<br/>
+[in, out] Pointer to the variable to be incremented.  
   
 ## Return Value  
  The return value is the resulting incremented value.  

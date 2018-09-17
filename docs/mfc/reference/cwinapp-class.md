@@ -240,8 +240,8 @@ virtual DWORD ApplicationRecoveryCallback(LPVOID lpvParam);
 
 ### Parameters
 
-[in] *lpvParam*  
-Reserved for future use.
+*lpvParam*<br/>
+[in] Reserved for future use.
 
 ### Return Value
 
@@ -1548,11 +1548,11 @@ virtual CDocument* OpenDocumentFile(
 
 ### Parameters
 
-[in] *lpszFileName*  
-The name of the file to be opened.
+*lpszFileName*<br/>
+[in] The name of the file to be opened.
 
-[in] *bAddToMRU*  
-TRUE indicates the document is one of the most recent files; FALSE indicates the document is not one of the most recent files.
+*bAddToMRU*<br/>
+[in] TRUE indicates the document is one of the most recent files; FALSE indicates the document is not one of the most recent files.
 
 ### Return Value
 
@@ -1739,8 +1739,8 @@ void RegisterShellFileTypes(BOOL bCompat = FALSE);
 
 ### Parameters
 
-[in] *bCompat*  
-TRUE adds registration entries for shell commands Print and Print To, allowing a user to print files directly from the shell, or by dragging the file to a printer object. It also adds a DefaultIcon key. By default, this parameter is FALSE for backward compatibility.
+*bCompat*<br/>
+[in] TRUE adds registration entries for shell commands Print and Print To, allowing a user to print files directly from the shell, or by dragging the file to a printer object. It also adds a DefaultIcon key. By default, this parameter is FALSE for backward compatibility.
 
 ### Remarks
 
@@ -1776,14 +1776,14 @@ virtual HRESULT RegisterWithRestartManager(
 |||
 |-|-|
 |Parameter|Description|
-|[in] *bRegisterRecoveryCallback*|TRUE indicates that this instance of the application uses a recovery callback function; FALSE indicates that it does not. The framework calls the recovery callback function when the application exits unexpectedly. For more information, see [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|
-|[in] *strRestartIdentifier*|The unique string that identifies this instance of the restart manager. The restart manager identifier is unique for each instance of an application.|
-|[in] *pwzCommandLineArgs*|A string that contains any extra arguments from the command line.|
-|[in] *dwRestartFlags*|Optional flags for the restart manager. For more information, see the Remarks section.|
-|[in] *pRecoveryCallback*|The recovery callback function. This function must take a LPVOID parameter as input and return a DWORD. The default recovery callback function is `CWinApp::ApplicationRecoveryCallback`.|
-|[in] *lpvParam*|The input parameter for the recovery callback function. For more information, see [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|
-|[in] *dwPingInterval*|The length of time that the restart manager waits for the recovery callback function to return. This parameter is in milliseconds.|
-|[in] *dwCallbackFlags*|Flags passed to the recovery callback function. Reserved for future use.|
+|*bRegisterRecoveryCallback*|[in] TRUE indicates that this instance of the application uses a recovery callback function; FALSE indicates that it does not. The framework calls the recovery callback function when the application exits unexpectedly. For more information, see [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|
+|*strRestartIdentifier*|[in] The unique string that identifies this instance of the restart manager. The restart manager identifier is unique for each instance of an application.|
+|*pwzCommandLineArgs*|[in] A string that contains any extra arguments from the command line.|
+|*dwRestartFlags*|[in] Optional flags for the restart manager. For more information, see the Remarks section.|
+|*pRecoveryCallback*|[in] The recovery callback function. This function must take a LPVOID parameter as input and return a DWORD. The default recovery callback function is `CWinApp::ApplicationRecoveryCallback`.|
+|*lpvParam*|[in] The input parameter for the recovery callback function. For more information, see [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|
+|*dwPingInterval*|[in] The length of time that the restart manager waits for the recovery callback function to return. This parameter is in milliseconds.|
+|*dwCallbackFlags*|[in] Flags passed to the recovery callback function. Reserved for future use.|
 
 ### Return Value
 

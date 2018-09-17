@@ -99,17 +99,17 @@ static BOOL FindDefaultAccelerator(
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- The command ID.  
+*uiCmd*<br/>
+[in] The command ID.  
   
- [out] *str*  
- A reference to a `CString` object.  
+*str*<br/>
+[out] A reference to a `CString` object.  
   
- [in] *pWndFrame*  
- A pointer to a frame window.  
+*pWndFrame*<br/>
+[in] A pointer to a frame window.  
   
- [in] *bIsDefaultFrame*  
- Specifies whether the frame window is the default frame window.  
+*bIsDefaultFrame*<br/>
+[in] Specifies whether the frame window is the default frame window.  
   
 ### Return Value  
  Nonzero if the shortcut is found; otherwise 0.  
@@ -133,10 +133,10 @@ static BOOL __stdcall IsKeyHandled(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *nKey*|The key to check.|  
-|[in] *fVirt*|Specifies the behavior of the shortcut key. For a list of possible values, see [ACCEL Structure](/windows/desktop/api/winuser/ns-winuser-tagaccel).|  
-|[in] *pWndFrame*|A frame window. This method determines whether a shortcut key is handled in this frame.|  
-|[in] *bIsDefaultFrame*|A Boolean parameter that indicates whether *pWndFrame* is the default frame window.|  
+|*nKey*|[in] The key to check.|  
+|*fVirt*|[in] Specifies the behavior of the shortcut key. For a list of possible values, see [ACCEL Structure](/windows/desktop/api/winuser/ns-winuser-tagaccel).|  
+|*pWndFrame*|[in] A frame window. This method determines whether a shortcut key is handled in this frame.|  
+|*bIsDefaultFrame*|[in] A Boolean parameter that indicates whether *pWndFrame* is the default frame window.|  
   
 ### Return Value  
  TRUE if the shortcut key is handled. FALSE if the key is not handled or if *pWndFrame* is NULL.  
@@ -156,7 +156,7 @@ static BOOL __stdcall IsKeyPrintable(const UINT nChar);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *nChar*|The character that this method checks.|  
+|*nChar*|[in] The character that this method checks.|  
   
 ### Return Value  
  Nonzero if the character is printable, zero if it is not.  
@@ -187,11 +187,11 @@ BOOL LoadState(
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- The registry path where `CKeyboardManager` data is saved.  
+*lpszProfileName*<br/>
+[in] The registry path where `CKeyboardManager` data is saved.  
   
- [in] *pDefaultFrame*  
- A pointer to a frame window to use as the default window.  
+*pDefaultFrame*<br/>
+[in] A pointer to a frame window to use as the default window.  
   
 ### Return Value  
  Nonzero if the state was loaded successfully or 0 otherwise.  
@@ -221,11 +221,11 @@ BOOL SaveState(
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- The registry path for saving the `CKeyboardManager` state.  
+*lpszProfileName*<br/>
+[in] The registry path for saving the `CKeyboardManager` state.  
   
- [in] *pDefaultFrame*  
- A pointer to a frame window that becomes the default window.  
+*pDefaultFrame*<br/>
+[in] A pointer to a frame window that becomes the default window.  
   
 ### Return Value  
  Nonzero if the keyboard manager state was saved successfully, or 0 otherwise.  
@@ -245,11 +245,11 @@ static void ShowAllAccelerators(
 ```  
   
 ### Parameters  
- [in] *bShowAll*  
- If TRUE, all the shortcut keys will be displayed. If FALSE, only the first shortcut key will be displayed.  
+*bShowAll*<br/>
+[in] If TRUE, all the shortcut keys will be displayed. If FALSE, only the first shortcut key will be displayed.  
   
- [in] *lpszDelimiter*  
- A string to insert between shortcut keys. This delimiter has no effect if only one shortcut key is displayed.  
+*lpszDelimiter*<br/>
+[in] A string to insert between shortcut keys. This delimiter has no effect if only one shortcut key is displayed.  
   
 ### Remarks  
  By default, if a command has more than one shortcut key associated with it, only the first shortcut key will be shown. This function enables you to list all the shortcut keys associated with all commands.  
@@ -264,8 +264,8 @@ static UINT TranslateCharToUpper(const UINT nChar);
 ```  
   
 ### Parameters  
- [in] *nChar*  
- The character to convert.  
+*nChar*<br/>
+[in] The character to convert.  
   
 ### Return Value  
  The character that is the upper register of the input parameter.  
@@ -288,20 +288,20 @@ BOOL UpdateAccelTable(
 ```  
   
 ### Parameters  
- [in] *pTemplate*  
- A pointer to a document template.  
+*pTemplate*<br/>
+[in] A pointer to a document template.  
   
- [in] *lpAccel*  
- A pointer to the new shortcut key.  
+*lpAccel*<br/>
+[in] A pointer to the new shortcut key.  
   
- [in] *nSize*  
- The size of the new shortcut table.  
+*nSize*<br/>
+[in] The size of the new shortcut table.  
   
- [in] *pDefaultFrame*  
- A pointer to the default frame window.  
+*pDefaultFrame*<br/>
+[in] A pointer to the default frame window.  
   
- [in] *hAccelNew*  
- A handle to the new shortcut table.  
+*hAccelNew*<br/>
+[in] A handle to the new shortcut table.  
   
 ### Return Value  
  Nonzero if the method is successful; otherwise 0.  

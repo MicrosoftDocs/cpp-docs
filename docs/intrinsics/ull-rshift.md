@@ -27,11 +27,11 @@ unsigned __int64 __ull_rshift( 
 ```  
   
 #### Parameters  
- [in] `mask`  
- The 64-bit integer value to shift right.  
+*mask*<br/>
+[in] The 64-bit integer value to shift right.  
   
- [in] `nBit`  
- The number of bits to shift, modulo 32 on x86, and modulo 64 on x64.  
+*nBit*<br/>
+[in] The number of bits to shift, modulo 32 on x86, and modulo 64 on x64.  
   
 ## Return Value  
  The mask shifted by `nBit` bits.  

@@ -82,14 +82,14 @@ BOOL AddMenu(
 ```  
   
 ### Parameters  
- [in] *uiMenuNameResId*  
- A resource ID for a string that contains the name for the new menu.  
+*uiMenuNameResId*<br/>
+[in] A resource ID for a string that contains the name for the new menu.  
   
- [in] *uiMenuResId*  
- The menu resource ID.  
+*uiMenuResId*<br/>
+[in] The menu resource ID.  
   
- [in] *lpszName*  
- A string that contains the name for the new menu.  
+*lpszName*<br/>
+[in] A string that contains the name for the new menu.  
   
 ### Return Value  
  Nonzero if the method was successful; 0 if the method fails.  
@@ -115,8 +115,8 @@ HMENU GetMenuById(UINT nMenuResId) const;
 ```  
   
 ### Parameters  
- [in] *nMenuResId*  
- The resource ID for the menu.  
+*nMenuResId*<br/>
+[in] The resource ID for the menu.  
   
 ### Return Value  
  A handle to the associated menu or `NULL` if the menu is not found.  
@@ -131,11 +131,11 @@ HMENU GetMenuByName(
 ```  
   
 ### Parameters  
- [in] *lpszName*  
- A string that contains the name of the menu to retrieve.  
+*lpszName*<br/>
+[in] A string that contains the name of the menu to retrieve.  
   
- [out] *puiOrigResID*  
- A pointer to an UINT. This parameter contains the resource ID of the specified menu, if found.  
+*puiOrigResID*<br/>
+[out] A pointer to an UINT. This parameter contains the resource ID of the specified menu, if found.  
   
 ### Return Value  
  A handle to the menu that matches the name that was specified by *lpszName*. NULL if there is no menu called *lpszName*.  
@@ -151,8 +151,8 @@ void GetMenuNames(CStringList& listOfNames) const;
 ```  
   
 ### Parameters  
- [out] *listOfNames*  
- A reference to a [CStringList](../../mfc/reference/cstringlist-class.md) parameter. This method writes the list of menu names to this parameter.  
+*listOfNames*<br/>
+[out] A reference to a [CStringList](../../mfc/reference/cstringlist-class.md) parameter. This method writes the list of menu names to this parameter.  
   
 ##  <a name="loadstate"></a>  CContextMenuManager::LoadState  
  Loads information associated with the [CContextMenuManager Class](../../mfc/reference/ccontextmenumanager-class.md) from the Windows registry.  
@@ -162,8 +162,8 @@ virtual BOOL LoadState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- A string that contains the relative path of a registry key.  
+*lpszProfileName*<br/>
+[in] A string that contains the relative path of a registry key.  
   
 ### Return Value  
  Nonzero if the method is successful; otherwise 0.  
@@ -194,8 +194,8 @@ virtual BOOL SaveState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- A string that contains the relative path of a registry key.  
+*lpszProfileName*<br/>
+[in] A string that contains the relative path of a registry key.  
   
 ### Return Value  
  Nonzero if the method is successful; otherwise 0.  
@@ -213,8 +213,8 @@ void SetDontCloseActiveMenu (BOOL bSet = TRUE);
 ```  
   
 ### Parameters  
- [in] *bSet*  
- A Boolean parameter that controls whether to close the active pop-up menu. A value of TRUE indicates the active pop-up menu is not closed. FALSE indicates that the active pop-up menu is closed.  
+*bSet*<br/>
+[in] A Boolean parameter that controls whether to close the active pop-up menu. A value of TRUE indicates the active pop-up menu is not closed. FALSE indicates that the active pop-up menu is closed.  
   
 ### Remarks  
  By default, the `CContextMenuManager` closes the active pop-up menu.  
@@ -243,29 +243,29 @@ virtual CMFCPopupMenu* ShowPopupMenu(
 ```  
   
 ### Parameters  
- [in] *uiMenuResId*  
- The resource ID of the menu that this method will display.  
+*uiMenuResId*<br/>
+[in] The resource ID of the menu that this method will display.  
   
- [in] *x*  
- The horizontal offset for the shortcut menu in client coordinates.  
+*x*<br/>
+[in] The horizontal offset for the shortcut menu in client coordinates.  
   
- [in] *y*  
- The vertical offset for the shortcut menu in client coordinates  
+*y*<br/>
+[in] The vertical offset for the shortcut menu in client coordinates  
   
- [in] *pWndOwner*  
- A pointer to the parent window of the shortcut menu.  
+*pWndOwner*<br/>
+[in] A pointer to the parent window of the shortcut menu.  
   
- [in] *bOwnMessage*  
- A Boolean parameter that indicates how messages are routed. If *bOwnMessage* is FALSE, standard MFC routing is used. Otherwise, *pWndOwner* receives the messages.  
+*bOwnMessage*<br/>
+[in] A Boolean parameter that indicates how messages are routed. If *bOwnMessage* is FALSE, standard MFC routing is used. Otherwise, *pWndOwner* receives the messages.  
   
- [in] *hmenuPopup*  
- The handle of the menu that this method will display.  
+*hmenuPopup*<br/>
+[in] The handle of the menu that this method will display.  
   
- [in] *bAutoDestroy*  
- A Boolean parameter that indicates whether the menu will be automatically destroyed.  
+*bAutoDestroy*<br/>
+[in] A Boolean parameter that indicates whether the menu will be automatically destroyed.  
   
- [in] *bRightAlign*  
- A Boolean parameter that indicates how the menu items are aligned. If *bRightAlign* is TRUE, the menu is right-aligned for right-to-left reading order.  
+*bRightAlign*<br/>
+[in] A Boolean parameter that indicates how the menu items are aligned. If *bRightAlign* is TRUE, the menu is right-aligned for right-to-left reading order.  
   
 ### Return Value  
  The first method overload returns nonzero if the method shows the menu successfully; otherwise 0. The second method overload returns a pointer to [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) if the shortcut menu displays correctly; otherwise NULL.  
@@ -288,20 +288,20 @@ virtual UINT TrackPopupMenu(
 ```  
   
 ### Parameters  
- [in] *hmenuPopup*  
- The handle of the shortcut menu that this method displays.  
+*hmenuPopup*<br/>
+[in] The handle of the shortcut menu that this method displays.  
   
- [in] *x*  
- The horizontal offset for the shortcut menu in client coordinates.  
+*x*<br/>
+[in] The horizontal offset for the shortcut menu in client coordinates.  
   
- [in] *y*  
- The vertical offset for the shortcut menu in client coordinates.  
+*y*<br/>
+[in] The vertical offset for the shortcut menu in client coordinates.  
   
- [in] *pWndOwner*  
- A pointer to the parent window of the shortcut menu.  
+*pWndOwner*<br/>
+[in] A pointer to the parent window of the shortcut menu.  
   
- [in] *bRightAlign*  
- A Boolean parameter that indicates how menu items are aligned. If *bRightAlign* is TRUE, the menu is right-aligned for right-to-left reading order. If *bRightAlign* is FALSE, the menu is left-aligned for left-to-right reading order.  
+*bRightAlign*<br/>
+[in] A Boolean parameter that indicates how menu items are aligned. If *bRightAlign* is TRUE, the menu is right-aligned for right-to-left reading order. If *bRightAlign* is FALSE, the menu is left-aligned for left-to-right reading order.  
   
 ### Return Value  
  The menu command ID of the command that the user chooses; 0 if the user closes the shortcut menu without selecting a menu command.  

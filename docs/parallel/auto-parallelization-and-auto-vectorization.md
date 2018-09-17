@@ -66,8 +66,10 @@ Compiling by using this command:
   
  yields this output:  
   
-**--- Analyzing function: void __cdecl test(void)**   
-**d:\myproject\mytest.cpp(4) : loop parallelized**  
+```Output
+--- Analyzing function: void __cdecl test(void)
+d:\myproject\mytest.cpp(4) : loop parallelized
+```
   
 Compiling by using this command:  
   
@@ -75,9 +77,11 @@ Compiling by using this command:
   
 yields this output:  
   
-**--- Analyzing function: void __cdecl test(void)**   
-**d:\myproject\mytest.cpp(4) : loop parallelized**   
-**d:\myproject\mytest.cpp(4) : loop not parallelized due to reason '1008'**  
+```Output
+--- Analyzing function: void __cdecl test(void)
+d:\myproject\mytest.cpp(4) : loop parallelized
+d:\myproject\mytest.cpp(4) : loop not parallelized due to reason '1008'
+```
   
 Notice the difference in output between the two different [/Qpar-report (Auto-Parallelizer Reporting Level)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md) options. `/Qpar-report:1` outputs parallelizer messages only for loops that are successfully parallelized. `/Qpar-report:2` outputs parallelizer messages for both successful and unsuccessful loop parallelizations.  
   

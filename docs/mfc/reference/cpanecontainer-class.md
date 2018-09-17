@@ -142,8 +142,8 @@ BOOL AddSubPaneContainer(
 ```  
   
 ### Parameters  
- [in] *pContainer*  
- [in] *bRightNodeNew*  
+*pContainer*<br/>
+[in] [in] *bRightNodeNew*  
   
 ### Return Value  
   
@@ -161,10 +161,10 @@ virtual int CalcAvailablePaneSpace(
 ```  
   
 ### Parameters  
- [in] *nRequiredOffset*  
- [in] *pBar*  
- [in] *pContainer*  
- [in] *bLeftBar*  
+*nRequiredOffset*<br/>
+[in] [in] *pBar*  
+*pContainer*<br/>
+[in] [in] *bLeftBar*  
   
 ### Return Value  
   
@@ -180,8 +180,8 @@ virtual CSize CalcAvailableSpace(
 ```  
   
 ### Parameters  
- [in] *sizeStretch*  
- [in] *bLeftBar*  
+*sizeStretch*<br/>
+[in] [in] *bLeftBar*  
   
 ### Return Value  
   
@@ -231,10 +231,10 @@ CPaneContainer(
 ```  
   
 ### Parameters  
- [in] *pManager*  
- [in] *pLeftBar*  
- [in] *pRightBar*  
- [in] *pSlider*  
+*pManager*<br/>
+[in] [in] *pLeftBar*  
+*pRightBar*<br/>
+[in] [in] *pSlider*  
   
 ### Remarks  
   
@@ -248,8 +248,8 @@ virtual void DeletePane(
 ```  
   
 ### Parameters  
- [in] *pBar*  
- [in] *barType*  
+*pBar*<br/>
+[in] [in] *barType*  
   
 ### Remarks  
   
@@ -263,8 +263,8 @@ CPaneContainer* FindSubPaneContainer(
 ```  
   
 ### Parameters  
- [in] *pObject*  
- [in] *findCriteria*  
+*pObject*<br/>
+[in] [in] *findCriteria*  
   
 ### Return Value  
   
@@ -487,8 +487,8 @@ virtual void GetWindowRect(
 ```  
   
 ### Parameters  
- [in] *rect*  
- [in] *bIgnoreVisibility*  
+*rect*<br/>
+[in] [in] *bIgnoreVisibility*  
   
 ### Remarks  
   
@@ -600,8 +600,8 @@ void OnDeleteHidePane(
 ```  
   
 ### Parameters  
- [in] *pBar*  
- [in] *bHide*  
+*pBar*<br/>
+[in] [in] *bHide*  
   
 ### Remarks  
   
@@ -615,8 +615,8 @@ virtual int OnMoveInternalPaneDivider(
 ```  
   
 ### Parameters  
- [in] *nOffset*  
- [in] *hdwp*  
+*nOffset*<br/>
+[in] [in] *hdwp*  
   
 ### Return Value  
   
@@ -632,8 +632,8 @@ virtual void OnShowPane(
 ```  
   
 ### Parameters  
- [in] *pBar*  
- [in] *bShow*  
+*pBar*<br/>
+[in] [in] *bShow*  
   
 ### Remarks  
   
@@ -689,8 +689,8 @@ virtual void Resize(
 ```  
   
 ### Parameters  
- [in] *rect*  
- [in] *hdwp*  
+*rect*<br/>
+[in] [in] *hdwp*  
  [in] *bRedraw*  
   
 ### Remarks  
@@ -709,12 +709,12 @@ virtual void ResizePane(
 ```  
   
 ### Parameters  
- [in] *nOffset*  
- [in] *pBar*  
- [in] *pContainer*  
- [in] *bHorz*  
- [in] *bLeftBar*  
- [in] *hdwp*  
+*nOffset*<br/>
+[in] [in] *pBar*  
+*pContainer*<br/>
+[in] [in] *bHorz*  
+*bLeftBar*<br/>
+[in] [in] *hdwp*  
   
 ### Remarks  
   
@@ -729,8 +729,8 @@ virtual void ResizePartOfPaneContainer(
 ```  
   
 ### Parameters  
- [in] *nOffset*  
- [in] *bLeftPart*  
+*nOffset*<br/>
+[in] [in] *bLeftPart*  
  [in] *hdwp*  
   
 ### Remarks  
@@ -757,8 +757,8 @@ void SetPane(
 ```  
   
 ### Parameters  
- [in] *pBar*  
- [in] *bLeft*  
+*pBar*<br/>
+[in] [in] *bLeft*  
   
 ### Remarks  
   
@@ -772,8 +772,8 @@ void SetPaneContainer(
 ```  
   
 ### Parameters  
- [in] *pContainer*  
- [in] *bLeft*  
+*pContainer*<br/>
+[in] [in] *bLeft*  
   
 ### Remarks  
   
@@ -823,8 +823,8 @@ BOOL SetUpByID(
 ```  
   
 ### Parameters  
- [in] *nID*  
- [in] *pBar*  
+*nID*<br/>
+[in] [in] *pBar*  
   
 ### Return Value  
   
@@ -855,10 +855,10 @@ virtual int StretchPaneContainer(
 ```  
   
 ### Parameters  
- [in] *nOffset*  
- [in] *bStretchHorz*  
- [in] *bLeftBar*  
- [in] *bMoveSlider*  
+*nOffset*<br/>
+[in] [in] *bStretchHorz*  
+*bLeftBar*<br/>
+[in] [in] *bMoveSlider*  
  [in] *hdwp*  
   
 ### Return Value  

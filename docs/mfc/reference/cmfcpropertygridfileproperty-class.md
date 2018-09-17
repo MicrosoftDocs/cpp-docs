@@ -65,29 +65,29 @@ CMFCPropertyGridFileProperty(
 ```  
   
 ### Parameters  
- [in] *strName*  
- The property name.  
+*strName*<br/>
+[in] The property name.  
   
- [in] *bOpenFileDialog*  
- TRUE to open an **Open File** dialog box; FALSE to open a **Save File** dialog box.  
+*bOpenFileDialog*<br/>
+[in] TRUE to open an **Open File** dialog box; FALSE to open a **Save File** dialog box.  
   
- [in] *strFileName*  
- The initial file name.  
+*strFileName*<br/>
+[in] The initial file name.  
   
- [in] *lpszDefExt*  
- A string of one or more file name extensions. The default value is NULL.  
+*lpszDefExt*<br/>
+[in] A string of one or more file name extensions. The default value is NULL.  
   
- [in] *dwFlags*  
- Dialog box flags. The default value is a bitwise combination (OR) of OFN_HIDEREADONLY and OFN_OVERWRITEPROMPT.  
+*dwFlags*<br/>
+[in] Dialog box flags. The default value is a bitwise combination (OR) of OFN_HIDEREADONLY and OFN_OVERWRITEPROMPT.  
   
- [in] *lpszFilter*  
- A string of one or more file filters. The default value is NULL.  
+*lpszFilter*<br/>
+[in] A string of one or more file filters. The default value is NULL.  
   
- [in] *lpszDescr*  
- The property item description. The default value is NULL.  
+*lpszDescr*<br/>
+[in] The property item description. The default value is NULL.  
   
- [in] *dwData*  
- Application-specific data that is associated with the property item. For example, a 32-bit integer or a pointer to other data. The default value is 0.  
+*dwData*<br/>
+[in] Application-specific data that is associated with the property item. For example, a 32-bit integer or a pointer to other data. The default value is 0.  
   
 ### Return Value  
   

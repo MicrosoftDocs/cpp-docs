@@ -21,8 +21,8 @@ Used in profile-guided optimization to write all profile data from a running pro
 
 ### Parameters
 
-*options* (optional)<br/>
-The valid values for *options* are:
+*options*<br/>
+(Optional) The valid values for *options* are:
 
 - **/?** or **/help** displays the help message.
 

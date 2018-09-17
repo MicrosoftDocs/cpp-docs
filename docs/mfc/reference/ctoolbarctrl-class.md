@@ -345,8 +345,8 @@ BOOL ChangeBitmap(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *idButton*|Command identifier of the button that is to receive a new bitmap.|  
-|[in] *iBitmap*|Zero-based index of an image in the current toolbar control's image list.|  
+|*idButton*|[in] Command identifier of the button that is to receive a new bitmap.|  
+|*iBitmap*|[in] Zero-based index of an image in the current toolbar control's image list.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -654,7 +654,7 @@ CString GetButtonText(int idButton) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *idButton*|The identifier for the button whose display text is retrieved.|  
+|*idButton*|[in] The identifier for the button whose display text is retrieved.|  
   
 ### Return Value  
  A [CString](../../atl-mfc-shared/using-cstring.md) that contains the display text of the specified button.  
@@ -673,7 +673,7 @@ BOOL GetColorScheme(COLORSCHEME* lpColorScheme) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[out] *lpColorScheme*|Pointer to a [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) structure that receives the color scheme information. When this method returns, the structure describes the highlight color and shadow color of the toolbar control.|  
+|*lpColorScheme*|[out] Pointer to a [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) structure that receives the color scheme information. When this method returns, the structure describes the highlight color and shadow color of the toolbar control.|  
   
 ### Return Value  
 TRUE if this method is successful; otherwise, FALSE.  
@@ -866,8 +866,8 @@ BOOL GetPadding(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[out] *pnHorzPadding*|An integer that receives the horizontal padding of the toolbar control, in pixels.|  
-|[out] *pnVertPadding*|An integer that receives the vertical padding of the toolbar control, in pixels.|  
+|*pnHorzPadding*|[out] An integer that receives the horizontal padding of the toolbar control, in pixels.|  
+|*pnVertPadding*|[out] An integer that receives the vertical padding of the toolbar control, in pixels.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -1162,8 +1162,8 @@ BOOL IsButtonHighlighted(int nID) const;
 ```  
   
 ### Parameters  
- [in] *nID*  
- The command ID for the toolbar button.  
+*nID*<br/>
+[in] The command ID for the toolbar button.  
   
 ### Return Value  
  Positive integer if the button is highlighted, 0 if the button is not highlighted, or -1 if an error occurs.  
@@ -1176,8 +1176,8 @@ BOOL IsButtonIndeterminate(int nID) const;
 ```  
   
 ### Parameters  
- [in] *nID*  
- Command identifier of the button in the toolbar.  
+*nID*<br/>
+[in] Command identifier of the button in the toolbar.  
   
 ### Return Value  
  Positive integer if the button is indeterminate, zero if the button is not indeterminate, or -1 if an error occurs.  
@@ -1304,11 +1304,11 @@ BOOL PressButton(int nID, BOOL bPress = TRUE);
 ```  
   
 ### Parameters  
- [in] *nID*  
- Command identifier of the button to press or release.  
+*nID*<br/>
+[in] Command identifier of the button to press or release.  
   
- [in] *bPress*  
- TRUE to press the specified button; FALSE to release the specified button. The default value is TRUE.  
+*bPress*<br/>
+[in] TRUE to press the specified button; FALSE to release the specified button. The default value is TRUE.  
   
 ### Return Value  
  TRUE if the method is successful; otherwise, FALSE.  
@@ -1329,7 +1329,7 @@ BOOL ReplaceBitmap(LPTBREPLACEBITMAP pReplaceBitmap);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *pReplaceBitmap*|Pointer to a [TBREPLACEBITMAP](/windows/desktop/api/commctrl/ns-commctrl-tbreplacebitmap) structure that describes the bitmap to be replaced and the new bitmap.|  
+|*pReplaceBitmap*|[in] Pointer to a [TBREPLACEBITMAP](/windows/desktop/api/commctrl/ns-commctrl-tbreplacebitmap) structure that describes the bitmap to be replaced and the new bitmap.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -1406,8 +1406,8 @@ BOOL SetAnchorHighlight(BOOL fAnchor = TRUE);
 ```  
   
 ### Parameters  
- [in] *fAnchor*  
- Specifies if anchor highlighting is enabled or disabled. If this value is nonzero, anchor highlighting will be enabled. If this value is zero, anchor highlighting will be disabled  
+*fAnchor*<br/>
+[in] Specifies if anchor highlighting is enabled or disabled. If this value is nonzero, anchor highlighting will be enabled. If this value is zero, anchor highlighting will be disabled  
   
 ### Return Value  
  The previous anchor setting. If highlighting was enabled, this value is nonzero. If highlighting was not enabled, this value is zero.  
@@ -1542,7 +1542,7 @@ void SetColorScheme(const COLORSCHEME* lpColorScheme);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *lpColorScheme*|Pointer to a [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) structure that describes the highlight color and shadow color of the toolbar control.|  
+|*lpColorScheme*|[in] Pointer to a [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) structure that describes the highlight color and shadow color of the toolbar control.|  
   
 ### Remarks  
  This method has no effect if a Windows Vista visual theme is set.  
@@ -1765,8 +1765,8 @@ DWORD SetPadding(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *nHorzPadding*|Specifies the horizontal padding of the toolbar control, in pixels.|  
-|[in] *nVertPadding*|Specifies the vertical padding of the toolbar control, in pixels.|  
+|*nHorzPadding*|[in] Specifies the horizontal padding of the toolbar control, in pixels.|  
+|*nVertPadding*|[in] Specifies the vertical padding of the toolbar control, in pixels.|  
   
 ### Return Value  
  A DWORD whose low word contains the previous horizontal padding value, and whose high word contains the previous vertical padding value. The padding values are measured in pixels.  
@@ -1792,8 +1792,8 @@ CImagelist* SetPressedImageList(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *iImageID*|The zero-based index of the image list. Set this parameter to zero if you use only one image list.|  
-|[in] *pImageList*|Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) that contains the new image list.|  
+|*iImageID*|[in] The zero-based index of the image list. Set this parameter to zero if you use only one image list.|  
+|*pImageList*|[in] Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) that contains the new image list.|  
   
 ### Return Value  
  Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) that contains the previous image list for the current control, or NULL if no such image list was set.  

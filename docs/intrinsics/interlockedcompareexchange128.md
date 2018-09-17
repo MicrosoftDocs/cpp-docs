@@ -13,9 +13,10 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _InterlockedCompareExchange128
+
 **Microsoft Specific**  
   
- Performs a 128-bit interlocked compare and exchange.  
+Performs a 128-bit interlocked compare and exchange.  
   
 ## Syntax  
   
@@ -29,17 +30,17 @@ unsigned char _InterlockedCompareExchange128(
 ```  
   
 #### Parameters  
- [in, out] `Destination`  
- Pointer to the destination, which is an array of two 64-bit integers considered as a 128-bit field. The destination data must be 16-byte aligned to avoid a general protection fault.  
+*Destination*<br/>
+[in, out] Pointer to the destination, which is an array of two 64-bit integers considered as a 128-bit field. The destination data must be 16-byte aligned to avoid a general protection fault.  
   
- [in] `ExchangeHigh`  
- A 64-bit integer that may be exchanged with the high part of the destination.  
+*ExchangeHigh*<br/>
+[in] A 64-bit integer that may be exchanged with the high part of the destination.  
   
- [in] `ExchangeLow`  
- A 64-bit integer that may be exchanged with the low part of the destination.  
+*ExchangeLow*<br/>
+[in] A 64-bit integer that may be exchanged with the low part of the destination.  
   
- [in, out] `ComparandResult`  
- Pointer to an array of two 64-bit integers (considered as a 128-bit field) to compare with the destination.  On output, this is overwritten with the original value of the destination.  
+*ComparandResult*<br/>
+[in, out] Pointer to an array of two 64-bit integers (considered as a 128-bit field) to compare with the destination.  On output, this is overwritten with the original value of the destination.  
   
 ## Return Value  
  1 if the 128-bit comparand equals the original value of the destination. `ExchangeHigh` and `ExchangeLow` overwrite the 128-bit destination.  
@@ -115,8 +116,9 @@ int main(void)
 BigInt.Int[1] = 34, BigInt.Int[0] = 12  
 ```  
   
-**END Microsoft Specific**  
- Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
+**END Microsoft Specific**
+
+Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   

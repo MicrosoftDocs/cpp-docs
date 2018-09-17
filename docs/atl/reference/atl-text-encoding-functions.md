@@ -465,20 +465,20 @@ inline BOOL QPDecode(
 
 ### Parameters
 
-[in] *pbSrcData*  
-The buffer containing the data to be decoded.
+*pbSrcData*<br/>
+[in] The buffer containing the data to be decoded.
 
-[in] *nSrcLen*  
-The length in bytes of *pbSrcData*.
+*nSrcLen*<br/>
+[in] The length in bytes of *pbSrcData*.
 
-[out] *szDest*  
-Caller-allocated buffer to receive the decoded data.
+*szDest*<br/>
+[out] Caller-allocated buffer to receive the decoded data.
 
-[out] *pnDestLen*  
-Pointer to a variable that contains the length in bytes of *szDest*. If the function succeeds, the variable receives the number of bytes written to the buffer. If the function fails, the variable receives the required length in bytes of the buffer.
+*pnDestLen*<br/>
+[out] Pointer to a variable that contains the length in bytes of *szDest*. If the function succeeds, the variable receives the number of bytes written to the buffer. If the function fails, the variable receives the required length in bytes of the buffer.
 
-[in] *dwFlags*  
-ATLSMTP_QPENCODE flags describing how the conversion is to be performed.
+*dwFlags*<br/>
+[in] ATLSMTP_QPENCODE flags describing how the conversion is to be performed.
 
 ### Return Value
 

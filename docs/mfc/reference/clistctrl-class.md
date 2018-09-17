@@ -1007,8 +1007,8 @@ BOOL GetGroupInfoByIndex(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *iIndex*|Zero-based index of a group.|  
-|[out] *pGroup*|Pointer to an [LVGROUP](/windows/desktop/api/commctrl/ns-commctrl-taglvgroup) structure that receives information about the group specified by the *iIndex* parameter.<br /><br /> The caller is responsible for initializing the members of the [LVGROUP](/windows/desktop/api/commctrl/ns-commctrl-taglvgroup) structure. Set the `cbSize` member to the size of the structure, and the flags of the `mask` member to specify the information to retrieve.|  
+|*iIndex*|[in] Zero-based index of a group.|  
+|*pGroup*|[out] Pointer to an [LVGROUP](/windows/desktop/api/commctrl/ns-commctrl-taglvgroup) structure that receives information about the group specified by the *iIndex* parameter.<br /><br /> The caller is responsible for initializing the members of the [LVGROUP](/windows/desktop/api/commctrl/ns-commctrl-taglvgroup) structure. Set the `cbSize` member to the size of the structure, and the flags of the `mask` member to specify the information to retrieve.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -1084,9 +1084,9 @@ BOOL GetGroupRect(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *iGroupId*|Specifies a group.|  
-|[in, out] *lpRect*|Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure. If this method is successful, the structure receives the rectangle coordinates of the group that is specified by *iGroupId*.|  
-|[in] *iCoords*|Specifies the rectangle coordinates to retrieve. Use one of these values:<br /><br /> - LVGGR_GROUP - (Default) Coordinates of the entire expanded group.<br />- LVGGR_HEADER - Coordinates of only the header (collapsed group).<br />- LVGGR_SUBSETLINK - Coordinates of only the subset link (markup subset).|  
+|*iGroupId*|[in] Specifies a group.|  
+|*lpRect*|[in, out] Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure. If this method is successful, the structure receives the rectangle coordinates of the group that is specified by *iGroupId*.|  
+|*iCoords*|[in] Specifies the rectangle coordinates to retrieve. Use one of these values:<br /><br /> - LVGGR_GROUP - (Default) Coordinates of the entire expanded group.<br />- LVGGR_HEADER - Coordinates of only the header (collapsed group).<br />- LVGGR_SUBSETLINK - Coordinates of only the subset link (markup subset).|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -1137,8 +1137,8 @@ UINT GetGroupState(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *iGroupId*|Zero-based index of a group.|  
-|[in] *dwMask*|Mask that specifies the state value to retrieve for the specified group. For more information, see the `mask` member of the [LVGROUP](/windows/desktop/api/commctrl/ns-commctrl-taglvgroup) structure.|  
+|*iGroupId*|[in] Zero-based index of a group.|  
+|*dwMask*|[in] Mask that specifies the state value to retrieve for the specified group. For more information, see the `mask` member of the [LVGROUP](/windows/desktop/api/commctrl/ns-commctrl-taglvgroup) structure.|  
   
 ### Return Value  
  The requested state for the specified group, or 0 if the group cannot be found.  
@@ -1391,10 +1391,10 @@ BOOL GetItemIndexRect(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *pItemIndex*|Pointer to an [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) structure for the parent item of the subitem.<br /><br /> The caller is responsible for allocating and setting the members of the [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) structure. This parameter cannot be NULL.|  
-|[in] *iColumn*|Zero-based index of a column in the control.|  
-|[in] *rectType*|Portion of the list-view subitem for which the bounding rectangle is retrieved. Specify one of the following values:<br /><br /> LVIR_BOUNDS - Returns the bounding rectangle of the entire subitem, including the icon and label.<br /><br /> LVIR_ICON - Returns the bounding rectangle of the icon or small icon of the subitem.<br /><br /> LVIR_LABEL - Returns the bounding rectangle of the subitem text.|  
-|[out] *pRect*|Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that receives information about the bounding rectangle of the subitem.<br /><br /> The caller is responsible for allocating the [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure. This parameter cannot be NULL.|  
+|*pItemIndex*|[in] Pointer to an [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) structure for the parent item of the subitem.<br /><br /> The caller is responsible for allocating and setting the members of the [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) structure. This parameter cannot be NULL.|  
+|*iColumn*|[in] Zero-based index of a column in the control.|  
+|*rectType*|[in] Portion of the list-view subitem for which the bounding rectangle is retrieved. Specify one of the following values:<br /><br /> LVIR_BOUNDS - Returns the bounding rectangle of the entire subitem, including the icon and label.<br /><br /> LVIR_ICON - Returns the bounding rectangle of the icon or small icon of the subitem.<br /><br /> LVIR_LABEL - Returns the bounding rectangle of the subitem text.|  
+|*pRect*|[out] Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that receives information about the bounding rectangle of the subitem.<br /><br /> The caller is responsible for allocating the [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure. This parameter cannot be NULL.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -1552,9 +1552,9 @@ BOOL GetItemSpacing(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *fSmall*|View for which to retrieve the item spacing. Specify TRUE for small icon view, or FALSE for icon view.|  
-|[out] *pnHorzSpacing*|Contains the horizontal spacing between items.|  
-|[out] *pnVertSpacing*|Contains the vertical spacing between items.|  
+|*fSmall*|[in] View for which to retrieve the item spacing. Specify TRUE for small icon view, or FALSE for icon view.|  
+|*pnHorzSpacing*|[out] Contains the horizontal spacing between items.|  
+|*pnVertSpacing*|[out] Contains the vertical spacing between items.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -1675,8 +1675,8 @@ BOOL GetNextItemIndex(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in, out] *pItemIndex*|Pointer to the [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) structure that describes the item where the search begins, or -1 to find the first item that matches the flags in the *nFlags* parameter.<br /><br /> If this method is successful, the `LVITEMINDEX` structure describes the item found by the search.|  
-|[in] *nFlags*|A bitwise combination (OR) of flags that specify how to perform the search.<br /><br /> The search can depend on the index, state, or appearance of the target item, or the target item's physical position relative to the item specified by the *pItemIndex* parameter. For more information, see the *flags* parameter in the [LVM_GETNEXTITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761059) message.|  
+|*pItemIndex*|[in, out] Pointer to the [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) structure that describes the item where the search begins, or -1 to find the first item that matches the flags in the *nFlags* parameter.<br /><br /> If this method is successful, the `LVITEMINDEX` structure describes the item found by the search.|  
+|*nFlags*|[in] A bitwise combination (OR) of flags that specify how to perform the search.<br /><br /> The search can depend on the index, state, or appearance of the target item, or the target item's physical position relative to the item specified by the *pItemIndex* parameter. For more information, see the *flags* parameter in the [LVM_GETNEXTITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761059) message.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -2378,7 +2378,7 @@ BOOL IsItemVisible(int index) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *index*|Zero-based index of an item in the current list-view control.|  
+|*index*|[in] Zero-based index of an item in the current list-view control.|  
   
 ### Return Value  
  TRUE if the specified item is visible;otherwise, FALSE.  
@@ -2397,7 +2397,7 @@ UINT MapIDToIndex(UINT id) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *id*|The unique ID of an item.|  
+|*id*|[in] The unique ID of an item.|  
   
 ### Return Value  
  The current index for the specified ID.  
@@ -2420,7 +2420,7 @@ UINT MapIndexToID(UINT index) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *index*|The zero-based index of an item.|  
+|*index*|[in] The zero-based index of an item.|  
   
 ### Return Value  
  A unique ID for the specified item.  
@@ -2504,11 +2504,11 @@ void MoveItemToGroup(
 ```  
   
 ### Parameters  
- [in] *idItemFrom*  
- The index of the item to be moved.  
+*idItemFrom*<br/>
+[in] The index of the item to be moved.  
   
- [in] *idGroupTo*  
- The identifier of the group the item will be moved to.  
+*idGroupTo*<br/>
+[in] The identifier of the group the item will be moved to.  
   
 ### Remarks  
   
@@ -3227,9 +3227,9 @@ BOOL SetItemIndexState(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *pItemIndex*|Pointer to an [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) structure that describes an item. The caller is responsible for allocating this structure and setting its members.|  
-|[in] *dwState*|The state to set the item, which is a bitwise combination of [list view item states](/windows/desktop/Controls/list-view-item-states). Specify zero to reset, or one to set, a state.|  
-|[in] *dwMask*|A mask of the valid bits of the state specified by the *dwState* parameter. Specify a bitwise combination (OR) of [list view item states](/windows/desktop/Controls/list-view-item-states).|  
+|*pItemIndex*|[in] Pointer to an [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) structure that describes an item. The caller is responsible for allocating this structure and setting its members.|  
+|*dwState*|[in] The state to set the item, which is a bitwise combination of [list view item states](/windows/desktop/Controls/list-view-item-states). Specify zero to reset, or one to set, a state.|  
+|*dwMask*|[in] A mask of the valid bits of the state specified by the *dwState* parameter. Specify a bitwise combination (OR) of [list view item states](/windows/desktop/Controls/list-view-item-states).|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -3569,13 +3569,13 @@ BOOL SortItems(
 ```  
   
 ### Parameters  
- [in] *pfnCompare*  
- Address of the application-defined comparison function.  
+*pfnCompare*<br/>
+[in] Address of the application-defined comparison function.  
   
  The sort operation calls the comparison function each time the relative order of two list items needs to be determined. The comparison function must be either a static member of a class or a stand-alone function that is not a member of any class.  
   
- [in] *dwData*  
- Application-defined value that is passed to the comparison function.  
+*dwData*<br/>
+[in] Application-defined value that is passed to the comparison function.  
   
 ### Return Value  
  TRUE if the method successful; otherwise FALSE.  
@@ -3630,8 +3630,8 @@ BOOL SortItemsEx(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *pfnCompare*|Address of the application-defined comparison function.<br /><br /> The sort operation calls the comparison function each time the relative order of two list items needs to be determined. The comparison function must be either a static member of a class or a stand-alone function that is not a member of any class.|  
-|[in] *dwData*|Application-defined value passed to the comparison function.|  
+|*pfnCompare*|[in] Address of the application-defined comparison function.<br /><br /> The sort operation calls the comparison function each time the relative order of two list items needs to be determined. The comparison function must be either a static member of a class or a stand-alone function that is not a member of any class.|  
+|*dwData*|[in] Application-defined value passed to the comparison function.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  

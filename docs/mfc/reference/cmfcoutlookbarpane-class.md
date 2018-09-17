@@ -139,32 +139,32 @@ BOOL AddButton(
 ```  
   
 ### Parameters  
- [in] *uiImage*  
- Specifies the resource identifier of a bitmap.  
+*uiImage*<br/>
+[in] Specifies the resource identifier of a bitmap.  
   
- [in] *lpszLabel*  
- Specifies the button's text.  
+*lpszLabel*<br/>
+[in] Specifies the button's text.  
   
- [in] *iIdCommand*  
- Specifies the button control's ID.  
+*iIdCommand*<br/>
+[in] Specifies the button control's ID.  
   
- [in] *iInsertAt*  
- Specifies the zero-based index on the outlook bar's page at which to insert the button.  
+*iInsertAt*<br/>
+[in] Specifies the zero-based index on the outlook bar's page at which to insert the button.  
   
- [in] *uiLabel*  
- A string resource ID.  
+*uiLabel*<br/>
+[in] A string resource ID.  
   
- [in] *szBmpFileName*  
- Specifies the name of the disk image file to load.  
+*szBmpFileName*<br/>
+[in] Specifies the name of the disk image file to load.  
   
- [in] *szLabel*  
- Specifies the button's text.  
+*szLabel*<br/>
+[in] Specifies the button's text.  
   
- [in] *hBmp*  
- A handle to a button's bitmap.  
+*hBmp*<br/>
+[in] A handle to a button's bitmap.  
   
- [in] *hIcon*  
- A handle to a buttons' icon.  
+*hIcon*<br/>
+[in] A handle to a buttons' icon.  
   
 ### Return Value  
  TRUE if a button was added successfully; otherwise FALSE.  
@@ -209,17 +209,17 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] *pParentWnd*  
- Specifies the parent window of the Outlook bar pane control. Must not be NULL.  
+*pParentWnd*<br/>
+[in] Specifies the parent window of the Outlook bar pane control. Must not be NULL.  
   
- [in] *dwStyle*  
- The window style.  For a list of window styles, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
+*dwStyle*<br/>
+[in] The window style.  For a list of window styles, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] *uiID*  
- The control ID. Must be unique to enable saving of the control's state.  
+*uiID*<br/>
+[in] The control ID. Must be unique to enable saving of the control's state.  
   
- [in] *dwControlBarStyle*  
- Specifies special styles that define the behavior of the Outlook bar pane control when it is detached from the Outlook bar.  
+*dwControlBarStyle*<br/>
+[in] Specifies special styles that define the behavior of the Outlook bar pane control when it is detached from the Outlook bar.  
   
 ### Return Value  
  TRUE if the method was successful; otherwise FALSE.  
@@ -239,11 +239,11 @@ virtual BOOL EnableContextMenuItems(
 ```  
   
 ### Parameters  
- [in] *pButton*  
- A pointer to a toolbar button that a user clicked.  
+*pButton*<br/>
+[in] A pointer to a toolbar button that a user clicked.  
   
- [in] *pPopup*  
- A pointer to the shortcut menu.  
+*pPopup*<br/>
+[in] A pointer to the shortcut menu.  
   
 ### Return Value  
  Returns TRUE if the shortcut menu should be displayed; otherwise FALSE.  
@@ -264,8 +264,8 @@ void EnablePageScrollMode(BOOL bPageScroll=TRUE);
 ```  
   
 ### Parameters  
- [in] *bPageScroll*  
- If TRUE, enable the page scroll mode. If FALSE, disable the page scroll mode.  
+*bPageScroll*<br/>
+[in] If TRUE, enable the page scroll mode. If FALSE, disable the page scroll mode.  
   
 ##  <a name="getregularcolor"></a>  CMFCOutlookBarPane::GetRegularColor  
  Returns the regular (that is, non-selected) text color of the Outlook bar pane.  
@@ -320,8 +320,8 @@ BOOL RemoveButton(UINT iIdCommand);
 ```  
   
 ### Parameters  
- [in] *iIdCommand*  
- Specifies the command ID of a button to remove.  
+*iIdCommand*<br/>
+[in] Specifies the command ID of a button to remove.  
   
 ### Return Value  
  TRUE if the button was successfully removed; FALSE if the specified command ID is not valid.  
@@ -334,8 +334,8 @@ void SetBackColor(COLORREF color);
 ```  
   
 ### Parameters  
- [in] *color*  
- Specifies the new background color.  
+*color*<br/>
+[in] Specifies the new background color.  
   
 ### Remarks  
  Call this function to set the current background color for the Outlook bar. The background color is used only if there is no background image.  
@@ -348,8 +348,8 @@ void SetBackImage(UINT uiImageID);
 ```  
   
 ### Parameters  
- [in] *uiImageID*  
- Specifies the image resource ID.  
+*uiImageID*<br/>
+[in] Specifies the image resource ID.  
   
 ### Remarks  
  Call this method to set the Outlook bar's background image. The list of background images is managed by the embedded [CMFCToolBarImages Class](../../mfc/reference/cmfctoolbarimages-class.md) object.  
@@ -381,11 +381,11 @@ void SetTextColor(
 ```  
   
 ### Parameters  
- [in] *clrRegText*  
- Specifies the new color for non-selected text.  
+*clrRegText*<br/>
+[in] Specifies the new color for non-selected text.  
   
- [in] *clrSelText*  
- Specifies the new color for selected text.  
+*clrSelText*<br/>
+[in] Specifies the new color for selected text.  
   
 ##  <a name="settransparentcolor"></a>  CMFCOutlookBarPane::SetTransparentColor  
  Sets the transparent color for the Outlook bar pane.  

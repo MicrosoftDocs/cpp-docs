@@ -68,8 +68,8 @@ void AddUndoAction(LPCTSTR lpszLabel);
 ```  
   
 ### Parameters  
- [in] *lpszLabel*  
- The action label that will be displayed in the drop-down list.  
+*lpszLabel*<br/>
+[in] The action label that will be displayed in the drop-down list.  
   
 ##  <a name="cleanupundolist"></a>  CMFCRibbonUndoButton::CleanUpUndoList  
  Clears the action list, which is the drop-down list.  
@@ -96,20 +96,20 @@ CMFCRibbonUndoButton(
 ```  
   
 ### Parameters  
- [in] *nID*  
- Specifies the command identifier.  
+*nID*<br/>
+[in] Specifies the command identifier.  
   
- [in] *lpszText*  
- Specifies the text label of the button.  
+*lpszText*<br/>
+[in] Specifies the text label of the button.  
   
- [in] *nSmallImageIndex*  
- Zero-based index in the image list of the parent object for the button's small image.  
+*nSmallImageIndex*<br/>
+[in] Zero-based index in the image list of the parent object for the button's small image.  
   
- [in] *nLargeImageIndex*  
- Zero-based index in the image list of the parent object for the of button's large image.  
+*nLargeImageIndex*<br/>
+[in] Zero-based index in the image list of the parent object for the of button's large image.  
   
- [in] *hIcon*  
- A handle to an icon that you can use as a button's image.  
+*hIcon*<br/>
+[in] A handle to an icon that you can use as a button's image.  
   
 ##  <a name="getactionnumber"></a>  CMFCRibbonUndoButton::GetActionNumber  
  Determines the number of items that a user selected from the drop-down list.  

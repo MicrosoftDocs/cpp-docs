@@ -29,14 +29,14 @@ inline bool SafeSubtract (
 
 ### Parameters
 
-[in] *t*  
-The first number in the subtraction. This must be of type `T`.
+*t*<br/>
+[in] The first number in the subtraction. This must be of type `T`.
 
-[in] *u*  
-The number to subtract from *t*. This must be of type `U`.
+*u*<br/>
+[in] The number to subtract from *t*. This must be of type `U`.
 
-[out] *result*  
-The parameter where **SafeSubtract** stores the result.
+*result*<br/>
+[out] The parameter where **SafeSubtract** stores the result.
 
 ## Return Value
 

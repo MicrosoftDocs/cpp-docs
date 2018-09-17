@@ -19,21 +19,22 @@ Specifies the architecture for code generation on x86. Also see [/arch (x64)](..
 /arch:[IA32|SSE|SSE2|AVX|AVX2]  
 ```  
   
-## Arguments  
- **/arch:IA32**  
- Specifies no enhanced instructions and also specifies x87 for floating-point calculations.  
+## Arguments
+
+**/arch:IA32**<br/>
+Specifies no enhanced instructions and also specifies x87 for floating-point calculations.  
   
- **/arch:SSE**  
- Enables the use of SSE instructions.  
+**/arch:SSE**<br/>
+Enables the use of SSE instructions.  
   
- **/arch:SSE2**  
- Enables the use of SSE2 instructions. This is the default instruction on x86 platforms if no **/arch** option is specified.  
+**/arch:SSE2**<br/>
+Enables the use of SSE2 instructions. This is the default instruction on x86 platforms if no **/arch** option is specified.  
   
- **/arch:AVX**  
- Enables the use of Intel Advanced Vector Extensions instructions.  
+**/arch:AVX**<br/>
+Enables the use of Intel Advanced Vector Extensions instructions.  
   
- **/arch:AVX2**  
- Enables the use of Intel Advanced Vector Extensions 2 instructions.  
+**/arch:AVX2**<br/>
+Enables the use of Intel Advanced Vector Extensions 2 instructions.  
   
 ## Remarks  
  The SSE and SSE2 instructions exist on various Intel and AMD processors. The AVX instructions exist on Intel Sandy Bridge processors and AMD Bulldozer processors. AVX2 instructions are supported by Intel Haswell and Broadwell processors and AMD Excavator-based processors.  

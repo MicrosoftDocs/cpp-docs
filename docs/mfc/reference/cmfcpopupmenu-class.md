@@ -150,8 +150,8 @@ static BOOL __stdcall ActivatePopupMenu(
 ```  
   
 ### Parameters  
- [in] *pTopFrame*  
- [in] *pPopupMenu*  
+*pTopFrame*<br/>
+[in] [in] *pPopupMenu*  
   
 ### Return Value  
   
@@ -165,8 +165,8 @@ static void AlwaysShowEmptyToolsEntry(BOOL bShow = TRUE);
 ```  
   
 ### Parameters  
- [in] *bShow*  
- TRUE if the pop-up menu can display empty entries; FALSE otherwise.  
+*bShow*<br/>
+[in] TRUE if the pop-up menu can display empty entries; FALSE otherwise.  
   
 ##  <a name="areallcommandsshown"></a>  CMFCPopupMenu::AreAllCommandsShown  
 
@@ -187,8 +187,8 @@ MENUAREA_TYPE CheckArea(const CPoint& ptScreen) const;
 ```  
   
 ### Parameters  
- [in] *ptScreen*  
- A point, in screen coordinates.  
+*ptScreen*<br/>
+[in] A point, in screen coordinates.  
   
 ### Return Value  
  A MENUAREA_TYPE parameter that indicates where the point is relative to the pop-up menu.  
@@ -230,11 +230,11 @@ CMFCPopupMenu(
 ```  
   
 ### Parameters  
- [in] *pCustPage*  
- A pointer to a customization page.  
+*pCustPage*<br/>
+[in] A pointer to a customization page.  
   
- [in] *lpszTitle*  
- A string that contains the menu caption.  
+*lpszTitle*<br/>
+[in] A string that contains the menu caption.  
   
 ### Remarks  
  This method allocates the resources for a `CMFCPopupMenu`. To create the pop-up menu item, call [CMFCPopupMenu::Create](#create).  
@@ -253,23 +253,23 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] *pWndParent*  
- The parent window for the `CMFCPopupMenu`.  
+*pWndParent*<br/>
+[in] The parent window for the `CMFCPopupMenu`.  
   
- [in] *x*  
- The horizontal screen coordinate for the location of the pop-up menu  
+*x*<br/>
+[in] The horizontal screen coordinate for the location of the pop-up menu  
   
- [in] *y*  
- The vertical screen coordinate for the location of the pop-menu.  
+*y*<br/>
+[in] The vertical screen coordinate for the location of the pop-menu.  
   
- [in] *hMenu*  
- A handle to a menu resource.  
+*hMenu*<br/>
+[in] A handle to a menu resource.  
   
- [in] *bLocked*  
- A Boolean parameter that indicates whether the menu is customizable. FALSE indicates that the pop-up menu is customizable.  
+*bLocked*<br/>
+[in] A Boolean parameter that indicates whether the menu is customizable. FALSE indicates that the pop-up menu is customizable.  
   
- [in] *bOwnMessage*  
- A Boolean parameter that indicates how the framework routes the menu messages. See the Remarks section for more details.  
+*bOwnMessage*<br/>
+[in] A Boolean parameter that indicates how the framework routes the menu messages. See the Remarks section for more details.  
   
 ### Return Value  
  TRUE if the method is successful; otherwise FALSE.  
@@ -293,8 +293,8 @@ virtual CPane* CreateTearOffBar(
 ```  
   
 ### Parameters  
- [in] *pWndMain*  
- [in] *uiID*  
+*pWndMain*<br/>
+[in] [in] *uiID*  
  [in] *lpszName*  
   
 ### Return Value  
@@ -322,11 +322,11 @@ void EnableMenuLogo(
 ```  
   
 ### Parameters  
- [in] *iLogoSize*  
- The size of the logo, in pixels.  
+*iLogoSize*<br/>
+[in] The size of the logo, in pixels.  
   
- [in] *nLogoLocation*  
- An enumerated data type that indicates the location of the logo.  
+*nLogoLocation*<br/>
+[in] An enumerated data type that indicates the location of the logo.  
   
 ### Remarks  
  To display the logo, implement the method [CFrameWndEx::OnDrawMenuLogo](../../mfc/reference/cframewndex-class.md#ondrawmenulogo) in the main frame window.  
@@ -341,8 +341,8 @@ static void EnableMenuSound(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable sound, FALSE otherwise.  
+*bEnable*<br/>
+[in] TRUE to enable sound, FALSE otherwise.  
   
 ### Remarks  
  If you enable sound, the framework calls the [PlaySound](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iusernotification-playsound) method when a user opens a pop-up menu or selects a menu command. By default, this feature is enabled.  
@@ -431,8 +431,8 @@ static CMFCPopupMenu::ANIMATION_TYPE GetAnimationType(BOOL bNoSystem = FALSE);
 ```  
   
 ### Parameters  
- [in] *bNoSystem*  
- A Boolean parameter that indicates whether this method checks the global value. FALSE if you want this method to return the animation style for this instance of the [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md).  
+*bNoSystem*<br/>
+[in] A Boolean parameter that indicates whether this method checks the global value. FALSE if you want this method to return the animation style for this instance of the [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md).  
   
 ### Return Value  
  An enumerated value that describes the animation type.  
@@ -517,8 +517,8 @@ CMFCToolBarMenuButton* GetMenuItem(int iIndex) const;
 ```  
   
 ### Parameters  
- [in] *iIndex*  
- The zero-based index of a menu item.  
+*iIndex*<br/>
+[in] The zero-based index of a menu item.  
   
 ### Return Value  
  A pointer to a menu item. NULL if the index is invalid.  
@@ -684,11 +684,11 @@ int InsertItem(
 ```  
   
 ### Parameters  
- [in] *button*  
- A reference to the menu item to add.  
+*button*<br/>
+[in] A reference to the menu item to add.  
   
- [in] *iInsertAt*  
- The zero-based index for the new item. If *iInsertAt* is -1, the item is added to the end of the menu.  
+*iInsertAt*<br/>
+[in] The zero-based index for the new item. If *iInsertAt* is -1, the item is added to the end of the menu.  
   
 ### Return Value  
  The zero-based index of the position where the item was inserted. -1 if the method fails.  
@@ -704,8 +704,8 @@ int InsertSeparator(int iInsertAt = -1);
 ```  
   
 ### Parameters  
- [in] *iInsertAt*  
- The zero-based index of the position where this method will insert the separator.  
+*iInsertAt*<br/>
+[in] The zero-based index of the position where this method will insert the separator.  
   
 ### Return Value  
  The zero-based index of the position where the separator was inserted. -1 if this method fails.  
@@ -908,10 +908,10 @@ virtual BOOL OnCmdMsg(
 ```  
   
 ### Parameters  
- [in] *nID*  
- [in] *nCode*  
- [in] *pExtra*  
- [in] *pHandlerInfo*  
+*nID*<br/>
+[in] [in] *nCode*  
+*pExtra*<br/>
+[in] [in] *pHandlerInfo*  
   
 ### Return Value  
   
@@ -972,8 +972,8 @@ BOOL RemoveItem(int iIndex);
 ```  
   
 ### Parameters  
- [in] *iIndex*  
- The zero-based index of the item to delete.  
+*iIndex*<br/>
+[in] The zero-based index of the item to delete.  
   
 ### Return Value  
  TRUE if the method is successful; otherwise FALSE.  
@@ -998,8 +998,8 @@ static void SetAnimationSpeed(UINT nElapse);
 ```  
   
 ### Parameters  
- [in] *nElapse*  
- The new animation speed, in milliseconds.  
+*nElapse*<br/>
+[in] The new animation speed, in milliseconds.  
   
 ### Remarks  
  The animation speed is a global value and affects all the pop-up menus in the application. This value specifies how long it takes for the animation for a pop-up menu to finish.  
@@ -1014,8 +1014,8 @@ static void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
 ```  
   
 ### Parameters  
- [in] *type*  
- An enumerated data type that specifies the type of animation.  
+*type*<br/>
+[in] An enumerated data type that specifies the type of animation.  
   
 ### Remarks  
  See [CMFCPopupMenu::GetAnimationType](#getanimationtype) for a list of valid values for *type*.  
@@ -1040,8 +1040,8 @@ void SetDefaultItem(UINT uiCmd);
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- The menu command ID of the new default command.  
+*uiCmd*<br/>
+[in] The menu command ID of the new default command.  
   
 ### Remarks  
  The default command in the pop-up menu is the command that is selected when the pop-up menu appears.  
@@ -1054,8 +1054,8 @@ static void SetForceMenuFocus(BOOL bValue);
 ```  
   
 ### Parameters  
- [in] *bValue*  
- TRUE if you want the framework to force the input focus to the menu bar when a pop-up menu is displayed. FALSE if you want the pop-up menu to retain the focus.  
+*bValue*<br/>
+[in] TRUE if you want the framework to force the input focus to the menu bar when a pop-up menu is displayed. FALSE if you want the pop-up menu to retain the focus.  
   
 ### Remarks  
  This method sets a flag that is global for all pop-up menus in the application. By default, this feature is not enabled.  
@@ -1068,8 +1068,8 @@ static void SetForceShadow(BOOL bValue);
 ```  
   
 ### Parameters  
- [in] *bValue*  
- TRUE if you want the framework to draw menu shadows, FALSE otherwise.  
+*bValue*<br/>
+[in] TRUE if you want the framework to draw menu shadows, FALSE otherwise.  
   
 ### Remarks  
  When you call this method, it sets a global flag in your application. This flag affects all pop-up menus in your application.  
@@ -1082,8 +1082,8 @@ void SetMaxWidth(int iMaxWidth);
 ```  
   
 ### Parameters  
- [in] *iMaxWidth*  
- The maximum width for the pop-up menu, in pixels.  
+*iMaxWidth*<br/>
+[in] The maximum width for the pop-up menu, in pixels.  
   
 ### Remarks  
  If the text associated with a menu command will not fit in the maximum width, it is truncated and the part that does not fit is replaced by three dots.  
@@ -1141,8 +1141,8 @@ void SetRightAlign(BOOL bRightAlign = TRUE);
 ```  
   
 ### Parameters  
- [in] *bRightAlign*  
- A Boolean that indicates the menu alignment. TRUE indicates right alignment, FALSE indicates left alignment.  
+*bRightAlign*<br/>
+[in] A Boolean that indicates the menu alignment. TRUE indicates right alignment, FALSE indicates left alignment.  
   
 ### Remarks  
  By default, all pop-up menus are left-aligned.  
@@ -1155,8 +1155,8 @@ static void SetSendMenuSelectMsg(BOOL bSet = TRUE);
 ```  
   
 ### Parameters  
- [in] *bSet*  
- TRUE if the pop-up menu notifies its parent frame, FALSE otherwise.  
+*bSet*<br/>
+[in] TRUE if the pop-up menu notifies its parent frame, FALSE otherwise.  
   
 ### Remarks  
  This is a global option for all the pop-up menus in an application. If it is enabled, the pop-up menus will send a WM_MENUSELECT message to the parent frame when the user selects a command.  
@@ -1188,8 +1188,8 @@ static void UpdateAllShadows(LPRECT lprectScreen = NULL);
 ```  
   
 ### Parameters  
- [in] *lprectScreen*  
- A rectangle that specifies the region to update, in screen coordinates.  
+*lprectScreen*<br/>
+[in] A rectangle that specifies the region to update, in screen coordinates.  
   
 ### Remarks  
  This method is useful when pop-up menus are displayed over animated controls or other windows that have dynamic content.  
@@ -1202,8 +1202,8 @@ void UpdateShadow(LPRECT lprectScreen = NULL);
 ```  
   
 ### Parameters  
- [in] *lprectScreen*  
- A rectangle, in screen coordinates, that specifies the boundaries of the region to update.  
+*lprectScreen*<br/>
+[in] A rectangle, in screen coordinates, that specifies the boundaries of the region to update.  
   
 ### Remarks  
  Call this method when a pop-up menu that has a shadow overlaps an animated image.  

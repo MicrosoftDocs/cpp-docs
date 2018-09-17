@@ -28,11 +28,11 @@ inline bool SafeGreaterThan (
 
 ### Parameters
 
-[in] *t*  
-The first number to compare. This must be of type `T`.
+*t*<br/>
+[in] The first number to compare. This must be of type `T`.
 
-[in] *u*  
-The second number to compare. This must be of type `U`.
+*u*<br/>
+[in] The second number to compare. This must be of type `U`.
 
 ## Return Value
 

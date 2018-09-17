@@ -21,13 +21,14 @@ Modifies the output of dumpbin when used with other dumpbin options, such as /RA
 /RANGE:vaMin[,vaMax]  
 ```  
   
-## Flags  
- **vaMin**  
- The virtual address at which you want the dumpbin operation to begin.  
-  
- **vaMax** (optional)  
- The virtual address at which you want the dumpbin operation to end. If not specified, dumpbin will go to the end of the file.  
-  
+## Parameters
+
+*vaMin*<br/>
+The virtual address at which you want the dumpbin operation to begin.
+
+*vaMax*<br/>
+(Optional) The virtual address at which you want the dumpbin operation to end. If not specified, dumpbin will go to the end of the file.
+
 ## Remarks  
  To see the virtual addresses for an image, use the map file for the image (RVA + Base), the **/DISASM** or **/HEADERS** option of dumpbin, or the disassembly window in the Visual Studio debugger.  
   

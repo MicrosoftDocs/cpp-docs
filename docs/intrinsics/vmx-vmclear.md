@@ -29,7 +29,7 @@ unsigned char __vmx_vmclear(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `VmcsPhysicalAddress`|A pointer to a 64-bit memory location that contains the physical address of the VMCS to clear.|  
+|*VmcsPhysicalAddress*|[in] A pointer to a 64-bit memory location that contains the physical address of the VMCS to clear.|  
   
 ## Return Value  
   

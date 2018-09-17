@@ -110,23 +110,23 @@ CUserToolsManager(
 ```  
   
 ### Parameters  
- [in] *uiCmdToolsDummy*  
- An unsigned integer that the framework uses as a placeholder for the command ID of the user tools menu.  
+*uiCmdToolsDummy*<br/>
+[in] An unsigned integer that the framework uses as a placeholder for the command ID of the user tools menu.  
   
- [in] *uiCmdFirst*  
- The command ID for the first user tool command.  
+*uiCmdFirst*<br/>
+[in] The command ID for the first user tool command.  
   
- [in] *uiCmdLast*  
- The command ID for the last user tool command.  
+*uiCmdLast*<br/>
+[in] The command ID for the last user tool command.  
   
- [in] *pToolRTC*  
- The class that [CUserToolsManager::CreateNewTool](#createnewtool) creates. By using this class, you can use a derived type of [CUserTool Class](../../mfc/reference/cusertool-class.md) instead of the default implementation.  
+*pToolRTC*<br/>
+[in] The class that [CUserToolsManager::CreateNewTool](#createnewtool) creates. By using this class, you can use a derived type of [CUserTool Class](../../mfc/reference/cusertool-class.md) instead of the default implementation.  
   
- [in] *uArgMenuID*  
- The menu resource ID of the arguments popup menu.  
+*uArgMenuID*<br/>
+[in] The menu resource ID of the arguments popup menu.  
   
- [in] *uInitDirMenuID*  
- The menu resource ID of the initial directory popup menu.  
+*uInitDirMenuID*<br/>
+[in] The menu resource ID of the initial directory popup menu.  
   
 ### Remarks  
  Do not call this constructor. Instead, call [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) to enable user tools, and call [CWinAppEx::GetUserToolsManager](../../mfc/reference/cwinappex-class.md#getusertoolsmanager) to obtain a pointer to the `CUserToolsManager`. For more information, see [User-defined Tools](../../mfc/user-defined-tools.md).  
@@ -139,8 +139,8 @@ CUserTool* FindTool(UINT uiCmdId) const;
 ```  
   
 ### Parameters  
- [in] *uiCmdId*  
- A menu command identifier.  
+*uiCmdId*<br/>
+[in] A menu command identifier.  
   
 ### Return Value  
  A pointer to a [CUserTool Class](../../mfc/reference/cusertool-class.md) or `CUserTool`-derived object if success; otherwise NULL.  
@@ -241,8 +241,8 @@ BOOL InvokeTool(UINT uiCmdId);
 ```  
   
 ### Parameters  
- [in] *uiCmdId*  
- The menu command ID associated with the user tool.  
+*uiCmdId*<br/>
+[in] The menu command ID associated with the user tool.  
   
 ### Return Value  
  Nonzero if the command associated with user tool was executed successfully; otherwise 0.  
@@ -258,8 +258,8 @@ BOOL IsUserToolCmd(UINT uiCmdId) const;
 ```  
   
 ### Parameters  
- [in] *uiCmdId*  
- A command ID of the menu item.  
+*uiCmdId*<br/>
+[in] A command ID of the menu item.  
   
 ### Return Value  
  Nonzero if a given command ID is associated with a user tool; otherwise 0.  
@@ -275,8 +275,8 @@ BOOL LoadState(LPCTSTR lpszProfileName=NULL);
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- The path of the Windows registry key.  
+*lpszProfileName*<br/>
+[in] The path of the Windows registry key.  
   
 ### Return Value  
  Nonzero if the state was loaded successfully; otherwise 0.  
@@ -294,8 +294,8 @@ BOOL MoveToolDown(CUserTool* pTool);
 ```  
   
 ### Parameters  
- [in] *pTool*  
- Specifies the user tool to move.  
+*pTool*<br/>
+[in] Specifies the user tool to move.  
   
 ### Return Value  
  Nonzero if the user tool was moved down successfully; otherwise 0.  
@@ -311,8 +311,8 @@ BOOL MoveToolUp(CUserTool* pTool);
 ```  
   
 ### Parameters  
- [in] *pTool*  
- Specifies the user tool to move.  
+*pTool*<br/>
+[in] Specifies the user tool to move.  
   
 ### Return Value  
  Nonzero if the user tool was moved up successfully; otherwise 0.  
@@ -328,8 +328,8 @@ BOOL RemoveTool(CUserTool* pTool);
 ```  
   
 ### Parameters  
- [in, out] *pTool*  
- A pointer to a user tool to be removed.  
+*pTool*<br/>
+[in, out] A pointer to a user tool to be removed.  
   
 ### Return Value  
  TRUE if the tool is successfully removed. Otherwise, FALSE.  
@@ -345,8 +345,8 @@ BOOL SaveState(LPCTSTR lpszProfileName=NULL);
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- A path to the Windows registry key.  
+*lpszProfileName*<br/>
+[in] A path to the Windows registry key.  
   
 ### Return Value  
  Nonzero if the state was saved successfully; otherwise 0.  
@@ -364,8 +364,8 @@ void SetDefExt(const CString& strDefExt);
 ```  
   
 ### Parameters  
- [in] *strDefExt*  
- A text string that contains the default file name extension.  
+*strDefExt*<br/>
+[in] A text string that contains the default file name extension.  
   
 ### Remarks  
  Call this method to specify a default file name extension in the **File Open** dialog box, which is displayed when the user selects an application to associate with the user tool. The default is "exe".  
@@ -378,8 +378,8 @@ void SetFilter(const CString& strFilter);
 ```  
   
 ### Parameters  
- [in] *strFilter*  
- Specifies the filter.  
+*strFilter*<br/>
+[in] Specifies the filter.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

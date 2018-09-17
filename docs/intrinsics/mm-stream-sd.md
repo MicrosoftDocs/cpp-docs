@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _mm_stream_sd
+
 **Microsoft Specific**  
   
  Writes 64-bit data to a memory location without polluting the caches.  
@@ -27,11 +28,11 @@ void _mm_stream_sd(
 ```  
   
 #### Parameters  
- [out] `Dest`  
- A pointer to the location where the source data will be written.  
+*Dest*<br/>
+[out] A pointer to the location where the source data will be written.  
   
- [in] `Source`  
- A 128-bit value containing the `double` value to be written in its bottom 64 bits..  
+*Source*<br/>
+[in] A 128-bit value containing the `double` value to be written in its bottom 64 bits..  
   
 ## Return Value  
  None.  
@@ -77,7 +78,8 @@ d[0] = -1, d[1] = 1
 ```  
   
 **END Microsoft Specific**  
- Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
+
+Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
   
 ## See Also  
  [_mm_stream_ss](../intrinsics/mm-stream-ss.md)   
