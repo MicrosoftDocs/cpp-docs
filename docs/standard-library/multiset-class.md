@@ -26,15 +26,15 @@ class multiset
 ### Parameters
 
 *Key*<br/>
- The element data type to be stored in the multiset.
+The element data type to be stored in the multiset.
 
 *Compare*<br/>
- The type that provides a function object that can compare two element values as sort keys to determine their relative order in the multiset. The binary predicate **less**\<Key> is the default value.
+The type that provides a function object that can compare two element values as sort keys to determine their relative order in the multiset. The binary predicate **less**\<Key> is the default value.
 
 In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
 
 *Allocator*<br/>
- The type that represents the stored allocator object that encapsulates details about the multiset's allocation and deallocation of memory. The default value is `allocator<Key>`.
+The type that represents the stored allocator object that encapsulates details about the multiset's allocation and deallocation of memory. The default value is `allocator<Key>`.
 
 ## Remarks
 
@@ -391,7 +391,7 @@ size_type count(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The key of the elements to be matched from the multiset.
+The key of the elements to be matched from the multiset.
 
 ### Return Value
 
@@ -787,7 +787,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### Parameters
 
 *key*<br/>
- The argument key to be compared with the sort key of an element from the multiset being searched.
+The argument key to be compared with the sort key of an element from the multiset being searched.
 
 ### Return Value
 
@@ -872,16 +872,16 @@ size_type erase(
 ### Parameters
 
 *Where*<br/>
- Position of the element to be removed.
+Position of the element to be removed.
 
 *First*<br/>
- Position of the first element to be removed.
+Position of the first element to be removed.
 
 *Last*<br/>
- Position just beyond the last element to be removed.
+Position just beyond the last element to be removed.
 
 *Key*<br/>
- The key value of the elements to be removed.
+The key value of the elements to be removed.
 
 ### Return Value
 
@@ -907,7 +907,7 @@ const_iterator find(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The key value to be matched by the sort key of an element from the multiset being searched.
+The key value to be matched by the sort key of an element from the multiset being searched.
 
 ### Return Value
 
@@ -1350,7 +1350,7 @@ iterator lower_bound(const Key& key);
 ### Parameters
 
 *key*<br/>
- The argument key to be compared with the sort key of an element from the multiset being searched.
+The argument key to be compared with the sort key of an element from the multiset being searched.
 
 ### Return Value
 
@@ -1957,7 +1957,7 @@ void swap(
 ### Parameters
 
 *right*<br/>
- The argument multiset providing the elements to be swapped with the target multiset.
+The argument multiset providing the elements to be swapped with the target multiset.
 
 ### Remarks
 
@@ -2026,7 +2026,7 @@ iterator upper_bound(const Key& key);
 ### Parameters
 
 *key*<br/>
- The argument key to be compared with the sort key of an element from the multiset being searched.
+The argument key to be compared with the sort key of an element from the multiset being searched.
 
 ### Return Value
 

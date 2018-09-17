@@ -22,7 +22,7 @@ Placeholders for replaceable arguments.
 namespace placeholders {
     extern unspecified _1,
     _2, ... _M
- } // namespace placeholders (within std)
+} // namespace placeholders (within std)
 ```
 
 ## Remarks

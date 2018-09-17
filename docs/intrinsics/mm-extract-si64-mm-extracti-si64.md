@@ -13,9 +13,10 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _mm_extract_si64, _mm_extracti_si64
+
 **Microsoft Specific**  
   
- Generates the `extrq` instruction to extract specified bits from the low 64 bits of its first argument.  
+Generates the `extrq` instruction to extract specified bits from the low 64 bits of its first argument.  
   
 ## Syntax  
   
@@ -32,17 +33,17 @@ __m128i _mm_extracti_si64(
 ```  
   
 #### Parameters  
- [in] `Source`  
- A 128-bit field with input data in its lower 64 bits.  
+*Source*<br/>
+[in] A 128-bit field with input data in its lower 64 bits.  
   
- [in]  `Descriptor`  
- A 128-bit field that describes the bit field to extract.  
+*Descriptor*<br/>
+[in] A 128-bit field that describes the bit field to extract.  
   
- [in]  `Length`  
- An integer that specifies the length of the field to extract.  
+*Length*<br/>
+[in] An integer that specifies the length of the field to extract.  
   
- [in]  `Index`  
- An integer that specifies the index of the field to extract  
+*Index*<br/>
+[in] An integer that specifies the index of the field to extract  
   
 ## Return Value  
  A 128-bit field with the extracted field in its least significant bits.  
@@ -100,8 +101,9 @@ result2 = 0x30eca86
 result3 = 0x30eca86  
 ```  
   
-**END Microsoft Specific**  
- Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
+**END Microsoft Specific**
+
+Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
   
 ## See Also  
  [_mm_insert_si64, _mm_inserti_si64](../intrinsics/mm-insert-si64-mm-inserti-si64.md)   

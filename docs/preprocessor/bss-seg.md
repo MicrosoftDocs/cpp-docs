@@ -22,27 +22,27 @@ Specifies the segment where uninitialized variables are stored in the .obj file.
 ```  
   
 ## Remarks  
- 
+
 Obj files can be viewed with the [dumpbin](../build/reference/dumpbin-command-line.md) application. The default segment in the .obj file for uninitialized data is .bss. In some cases use of **bss_seg** can speed load times by grouping uninitialized data into one section.  
   
 **bss_seg** with no parameters resets the segment to .bss.  
   
-*push* (optional)  
-Puts a record on the internal compiler stack. A *push* can have an *identifier* and *segment-name*.  
+**push**<br/>
+(Optional) Puts a record on the internal compiler stack. A *pu*sh* can have an *identifier* and *segment-name*.  
   
-*pop* (optional)  
-Removes a record from the top of the internal compiler stack.  
+**pop**<br/>
+(Optional) Removes a record from the top of the internal compiler stack.  
   
-*identifier* (optional)  
-When used with *push*, assigns a name to the record on the internal compiler stack. When used with *pop*, pops records off the internal stack until *identifier* is removed; if *identifier* is not found on the internal stack, nothing is popped.  
+*identifier*<br/>
+(Optional) When used with **push**, assigns a name to the record on the internal compiler stack. When used with **pop**, pops records off the internal stack until *identifier* is removed; if *identifier* is not found on the internal stack, nothing is popped.  
   
-*identifier* enables multiple records to be popped with a single *pop* command.  
+*identifier* enables multiple records to be popped with a single **pop** command.  
   
-*"segment-name"*(optional)  
-The name of a segment. When used with *pop*, the stack is popped and *segment-name* becomes the active segment name.  
+*"segment-name"*<br/>
+(Optional) The name of a segment. When used with **pop**, the stack is popped and *segment-name* becomes the active segment name.  
   
-*"segment-class"* (optional)  
-Included for compatibility with C++ prior to version 2.0. It is ignored.  
+*"segment-class"*<br/>
+(Optional) Included for compatibility with C++ prior to version 2.0. It is ignored.  
   
 ## Example  
   

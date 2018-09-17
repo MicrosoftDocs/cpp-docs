@@ -69,11 +69,11 @@ CMFCRibbonCustomizeDialog(
 ```  
   
 ### Parameters  
- [in] *pWndParent*  
- A pointer to the parent window (usually the main frame).  
+*pWndParent*<br/>
+[in] A pointer to the parent window (usually the main frame).  
   
- [in] *pRibbon*  
- A pointer to the `CMFCRibbonBar` that is to be customized.  
+*pRibbon*<br/>
+[in] A pointer to the `CMFCRibbonBar` that is to be customized.  
   
 ### Example  
  The following example demonstrates how to construct a `CMFCRibbonCustomizeDialog` object.  

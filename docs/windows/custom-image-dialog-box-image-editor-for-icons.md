@@ -13,15 +13,20 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Custom Image Dialog Box (C++) (Image Editor for Icons)
+
 Enables you to create a new image with a custom size and number of colors.
- **Width**  
- Provides a space for you to enter the width of the custom image in pixels (1 - 512, limit of 2048).
+
+- **Width**
+
+   Provides a space for you to enter the width of the custom image in pixels (1 - 512, limit of 2048).
   
- **Height**  
- Provides a space for you to enter the height for the custom image in pixels (1 - 512, limit of 2048).
+- **Height**
+
+   Provides a space for you to enter the height for the custom image in pixels (1 - 512, limit of 2048).
   
- **Colors**  
- Provides a space for you to choose the number of colors for the custom image: 2, 16, or 256.
+- **Colors**
+
+   Provides a space for you to choose the number of colors for the custom image: 2, 16, or 256.
   
 ## Requirements
  None

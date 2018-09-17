@@ -200,20 +200,20 @@ int AddGroup(
 ```  
   
 ### Parameters  
- [in] *nPageIdx*  
- Specifies the zero-based page index.  
+*nPageIdx*<br/>
+[in] Specifies the zero-based page index.  
   
- [in] *lpszGroupName*  
- Specifies the group name.  
+*lpszGroupName*<br/>
+[in] Specifies the group name.  
   
- [in] *bBottomLocation*  
- TRUE to create the group at the bottom of the task pane control; otherwise, FALSE.  
+*bBottomLocation*<br/>
+[in] TRUE to create the group at the bottom of the task pane control; otherwise, FALSE.  
   
- [in] *bSpecial*  
- TRUE to mark this group as a *special* group; otherwise, FALSE. For more information about special groups, see the Remarks section of `CMFCTasksPane`.  
+*bSpecial*<br/>
+[in] TRUE to mark this group as a *special* group; otherwise, FALSE. For more information about special groups, see the Remarks section of `CMFCTasksPane`.  
   
- [in] *hIcon*  
- Specifies the icon to display in the group caption.  
+*hIcon*<br/>
+[in] Specifies the icon to display in the group caption.  
   
 ### Return Value  
  The zero-based index of the group in the internal list of groups that the class maintains.  
@@ -235,17 +235,17 @@ int AddLabel(
 ```  
   
 ### Parameters  
- [in] *nGroup*  
- Specifies the index of the group where the label is added.  
+*nGroup*<br/>
+[in] Specifies the index of the group where the label is added.  
   
- [in] *lpszLabelName*  
- Specifies the name of the label.  
+*lpszLabelName*<br/>
+[in] Specifies the name of the label.  
   
- [in] *nTaskIcon*  
- Specifies the icon to display next to the label. The framework stores icons in a list of images. This parameter is an index into that list.  
+*nTaskIcon*<br/>
+[in] Specifies the icon to display next to the label. The framework stores icons in a list of images. This parameter is an index into that list.  
   
- [in] *bIsBold*  
- TRUE to display the label in bold text; otherwise, FALSE.  
+*bIsBold*<br/>
+[in] TRUE to display the label in bold text; otherwise, FALSE.  
   
 ### Return Value  
  The zero-based index of the group where the label was added, or -1 if the group specified by *nGroup* does not exist.  
@@ -263,11 +263,11 @@ int AddMRUFilesList(
 ```  
   
 ### Parameters  
- [in] *nGroup*  
- Specifies the index of a group. This method adds the MRU files list to the group specified by this parameter.  
+*nGroup*<br/>
+[in] Specifies the index of a group. This method adds the MRU files list to the group specified by this parameter.  
   
- [in] *nMaxFiles*  
- Specifies the number of files to display in the MRU files list.  
+*nMaxFiles*<br/>
+[in] Specifies the number of files to display in the MRU files list.  
   
 ### Return Value  
  The zero-based index of the group where the MRU files list was added, or -1 if the group specified by *nGroup* does not exist.  
@@ -280,8 +280,8 @@ int AddPage(LPCTSTR lpszPageLabel);
 ```  
   
 ### Parameters  
- [in] *lpszPageLabel*  
- Specifies the label for the page.  
+*lpszPageLabel*<br/>
+[in] Specifies the label for the page.  
   
 ### Return Value  
  The zero-based index of the new page.  
@@ -313,20 +313,20 @@ int AddTask(
 ```  
   
 ### Parameters  
- [in] *nGroup*  
- Specifies the group index where the task is added.  
+*nGroup*<br/>
+[in] Specifies the group index where the task is added.  
   
- [in] *lpszTaskName*  
- Specifies the name of the task.  
+*lpszTaskName*<br/>
+[in] Specifies the name of the task.  
   
- [in] *nTaskIcon*  
- Specifies the icon to display next to the task. The framework stores icons in a list of images. This parameter is an index into that list.  
+*nTaskIcon*<br/>
+[in] Specifies the icon to display next to the task. The framework stores icons in a list of images. This parameter is an index into that list.  
   
- [in] *uiCommandID*  
- Specifies the command ID of the command to execute when the user clicks the task. The task is treated as a label if *uiCommandID* is 0.  
+*uiCommandID*<br/>
+[in] Specifies the command ID of the command to execute when the user clicks the task. The task is treated as a label if *uiCommandID* is 0.  
   
- [in] *dwUserData*  
- Specifies the user-defined data to be associated with the task.  
+*dwUserData*<br/>
+[in] Specifies the user-defined data to be associated with the task.  
   
 ### Return Value  
  The zero-based index of the group where the task was added, or -1 if the group specified by *nGroup* does not exist.  
@@ -344,20 +344,20 @@ int AddWindow(
 ```  
   
 ### Parameters  
- [in] *nGroup*  
- Specifies the group index where the window is added.  
+*nGroup*<br/>
+[in] Specifies the group index where the window is added.  
   
- [in] *hwndTask*  
- Specifies the handle of the window to add.  
+*hwndTask*<br/>
+[in] Specifies the handle of the window to add.  
   
- [in] *nWndHeight*  
- Specifies the height of the window.  
+*nWndHeight*<br/>
+[in] Specifies the height of the window.  
   
- [in] *bAutoDestroyWindow*  
- TRUE to destroy the window when the task is removed; otherwise, FALSE.  
+*bAutoDestroyWindow*<br/>
+[in] TRUE to destroy the window when the task is removed; otherwise, FALSE.  
   
- [in] *dwUserData*  
- Specifies the user-defined data associated with the task.  
+*dwUserData*<br/>
+[in] Specifies the user-defined data associated with the task.  
   
 ### Return Value  
  The zero-based index of the group where the window was added, or -1 if the group specified by *nGroup* does not exist.  
@@ -385,8 +385,8 @@ void CollapseAllGroups(
 ```  
   
 ### Parameters  
- [in] *bCollapse*  
- [in] *nPageIdx*  
+*bCollapse*<br/>
+[in] [in] *nPageIdx*  
   
 ### Remarks  
   
@@ -405,14 +405,14 @@ BOOL CollapseGroup(
 ```  
   
 ### Parameters  
- [in] *pGroup*  
- Specifies the group to collapse.  
+*pGroup*<br/>
+[in] Specifies the group to collapse.  
   
- [in] *bCollapse*  
- TRUE to collapse the group; FALSE to expand the group.  
+*bCollapse*<br/>
+[in] TRUE to collapse the group; FALSE to expand the group.  
   
- [in] *nGroup*  
- Specifies the zero-based index of the group to collapse in the internal list of groups.  
+*nGroup*<br/>
+[in] Specifies the zero-based index of the group to collapse in the internal list of groups.  
   
 ### Return Value  
  TRUE if the group collapses or expands successfully; otherwise, FALSE.  
@@ -457,8 +457,8 @@ void EnableAnimation(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable the animation that occurs when a task group expands or collapses; otherwise, FALSE.  
+*bEnable*<br/>
+[in] TRUE to enable the animation that occurs when a task group expands or collapses; otherwise, FALSE.  
   
 ### Remarks  
  By default, the animation that occurs when a task group expands or collapses is enabled.  
@@ -471,8 +471,8 @@ void EnableGroupCollapse(BOOL bEnable);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE if users can collapse task groups; otherwise, FALSE.  
+*bEnable*<br/>
+[in] TRUE if users can collapse task groups; otherwise, FALSE.  
   
 ### Remarks  
  A task group that is collapsed displays only the group caption; the list of tasks is hidden.  
@@ -485,8 +485,8 @@ void EnableHistoryMenuButtons(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable drop-down menus on the **Next** and **Previous** navigation buttons; otherwise, FALSE.  
+*bEnable*<br/>
+[in] TRUE to enable drop-down menus on the **Next** and **Previous** navigation buttons; otherwise, FALSE.  
   
 ### Remarks  
  By default, the drop-down menus on the **Next** and **Previous** buttons are disabled.  
@@ -507,17 +507,17 @@ void EnableNavigationToolbar(
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable the navigation toolbar; otherwise, FALSE.  
+*bEnable*<br/>
+[in] TRUE to enable the navigation toolbar; otherwise, FALSE.  
   
- [in] *uiToolbarBmpRes*  
- Specifies the resource ID of the bitmap that contains the images to display on the toolbar.  
+*uiToolbarBmpRes*<br/>
+[in] Specifies the resource ID of the bitmap that contains the images to display on the toolbar.  
   
- [in] *sizeToolbarImage*  
- Specifies the size of a toolbar image.  
+*sizeToolbarImage*<br/>
+[in] Specifies the size of a toolbar image.  
   
- [in] *sizeToolbarButton*  
- Specifies the size of a toolbar button.  
+*sizeToolbarButton*<br/>
+[in] Specifies the size of a toolbar button.  
   
 ### Remarks  
  The navigation toolbar is a toolbar that the framework displays at the top of the task pane. The navigation toolbar contains the **Back**, **Forward**, and **Home** navigation buttons and a menu button that contains the list of available pages.  
@@ -544,8 +544,8 @@ void EnableScrollButtons(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to display scroll buttons in the task pane instead of a scroll bar; otherwise, FALSE.  
+*bEnable*<br/>
+[in] TRUE to display scroll buttons in the task pane instead of a scroll bar; otherwise, FALSE.  
   
 ### Remarks  
  By default, the framework displays scroll buttons in the task pane.  
@@ -558,8 +558,8 @@ void EnableWrapLabels(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to wrap the text in labels that appear on the task pane; otherwise, FALSE.  
+*bEnable*<br/>
+[in] TRUE to wrap the text in labels that appear on the task pane; otherwise, FALSE.  
   
 ### Remarks  
  By default, the framework does not wrap the text in labels. When word wrapping is enabled, the text in labels can appear in multiple lines. The label can include line breaking markers such as `\n` and the underline marker `&`.  
@@ -572,8 +572,8 @@ void EnableWrapTasks(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to wrap tasks in the task pane; otherwise, FALSE.  
+*bEnable*<br/>
+[in] TRUE to wrap tasks in the task pane; otherwise, FALSE.  
   
 ### Remarks  
  By default, word wrapping for tasks is disabled.  
@@ -641,11 +641,11 @@ BOOL GetGroupLocation(
 ```  
   
 ### Parameters  
- [in] *pGroup*  
- Specifies the task group whose location is retrieved.  
+*pGroup*<br/>
+[in] Specifies the task group whose location is retrieved.  
   
- [out] *nGroup*  
- Contains the zero-based index of the task group.  
+*nGroup*<br/>
+[out] Contains the zero-based index of the task group.  
   
 ### Return Value  
  TRUE if the task group was found; otherwise, FALSE.  
@@ -695,11 +695,11 @@ BOOL GetPageByGroup(
 ```  
   
 ### Parameters  
- [in] *nGroup*  
- Specifies the zero-based index of the task group.  
+*nGroup*<br/>
+[in] Specifies the zero-based index of the task group.  
   
- [out] *nPage*  
- Contains the page index for the specified group. If the task group only contains a default page, the returned value is 0.  
+*nPage*<br/>
+[out] Contains the page index for the specified group. If the task group only contains a default page, the returned value is 0.  
   
 ### Return Value  
  TRUE if the group *nGroup* exists; otherwise, FALSE.  
@@ -750,11 +750,11 @@ CMFCTasksPaneTask* GetTask(
 ```  
   
 ### Parameters  
- [in] *nGroup*  
- Specifies the zero-based index of the group that contains the task.  
+*nGroup*<br/>
+[in] Specifies the zero-based index of the group that contains the task.  
   
- [in] *nTask*  
- Specifies the zero-based index of the task in the list specified by *nGroup*.  
+*nTask*<br/>
+[in] Specifies the zero-based index of the task in the list specified by *nGroup*.  
   
 ### Return Value  
  The task at the specified index.  
@@ -767,8 +767,8 @@ int GetTaskCount(int nGroup) const;
 ```  
   
 ### Parameters  
- [in] *nGroup*  
- Specifies the index of the task group.  
+*nGroup*<br/>
+[in] Specifies the index of the task group.  
   
 ### Return Value  
  The number of tasks in the specified group, or 0 if *nGroup* is invalid.  
@@ -781,8 +781,8 @@ CMFCTasksPaneTaskGroup* GetTaskGroup(int nGroup) const;
 ```  
   
 ### Parameters  
- [in] *nGroup*  
- Specifies the zero-based index of the group to retrieve.  
+*nGroup*<br/>
+[in] Specifies the zero-based index of the group to retrieve.  
   
 ### Return Value  
  The task group at the specified index.  
@@ -808,20 +808,20 @@ BOOL GetTaskLocation(
 ```  
   
 ### Parameters  
- [in] *uiCommandID*  
- Specifies the command ID of the task to find.  
+*uiCommandID*<br/>
+[in] Specifies the command ID of the task to find.  
   
- [out] *nGroup*  
- Contains the group index of the task.  
+*nGroup*<br/>
+[out] Contains the group index of the task.  
   
- [out] *nTask*  
- Contains the index of the task in the task group.  
+*nTask*<br/>
+[out] Contains the index of the task in the task group.  
   
- [in] *hwndTask*  
- Specifies the window associated with the task.  
+*hwndTask*<br/>
+[in] Specifies the window associated with the task.  
   
- [in] *pTask*  
- Specifies the task to find.  
+*pTask*<br/>
+[in] Specifies the task to find.  
   
 ### Return Value  
  TRUE if the task location was found; FALSE if the specified task does not exist.  
@@ -1000,8 +1000,8 @@ virtual BOOL LoadState(
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- [in] *nIndex*  
+*lpszProfileName*<br/>
+[in] [in] *nIndex*  
  [in] *uiID*  
   
 ### Return Value  
@@ -1039,17 +1039,17 @@ virtual void OnClickTask(
 ```  
   
 ### Parameters  
- [in] *nGroupNumber*  
- Specifies the zero-based index of the group that contains the clicked task.  
+*nGroupNumber*<br/>
+[in] Specifies the zero-based index of the group that contains the clicked task.  
   
- [in] *nTaskNumber*  
- Specifies the zero-based index of the clicked task.  
+*nTaskNumber*<br/>
+[in] Specifies the zero-based index of the clicked task.  
   
- [in] *uiCommandID*  
- Specifies the command ID associated with the task.  
+*uiCommandID*<br/>
+[in] Specifies the command ID associated with the task.  
   
- [in] *dwUserData*  
- Contains user-defined data associated with the clicked task.  
+*dwUserData*<br/>
+[in] Contains user-defined data associated with the clicked task.  
   
 ### Remarks  
  The framework calls this method when a user clicks a task. By default, the framework checks the command ID associated with the clicked task and, if it is not zero, sends the WM_COMMAND message to the owner of the task pane control.  
@@ -1111,8 +1111,8 @@ virtual void OnPressOtherButton(
 ```  
   
 ### Parameters  
- [in] *pbtn*  
- [in] *pWndOwner*  
+*pbtn*<br/>
+[in] [in] *pWndOwner*  
   
 ### Remarks  
   
@@ -1140,8 +1140,8 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### Parameters  
- [in] *pTarget*  
- [in] *bDisableIfNoHndler*  
+*pTarget*<br/>
+[in] [in] *bDisableIfNoHndler*  
   
 ### Remarks  
   
@@ -1179,8 +1179,8 @@ void RemoveAllGroups(int nPageIdx = 0);
 ```  
   
 ### Parameters  
- [in] *nPageIdx*  
- Specifies the zero-based index of the page.  
+*nPageIdx*<br/>
+[in] Specifies the zero-based index of the page.  
   
 ### Remarks  
  Removes all groups on the page specified by *nPageIdx*, or all groups if there is only a default page.  
@@ -1200,8 +1200,8 @@ void RemoveAllTasks(int nGroup);
 ```  
   
 ### Parameters  
- [in] *nGroup*  
- Specifies the zero-based index of the group.  
+*nGroup*<br/>
+[in] Specifies the zero-based index of the group.  
   
 ##  <a name="removegroup"></a>  CMFCTasksPane::RemoveGroup  
  Removes a group.  
@@ -1211,8 +1211,8 @@ void RemoveGroup(int nGroup);
 ```  
   
 ### Parameters  
- [in] *nGroup*  
- Specifies the zero-based index of the group to remove.  
+*nGroup*<br/>
+[in] Specifies the zero-based index of the group to remove.  
   
 ### Remarks  
  This method removes a single group. To remove all groups, call [CMFCTasksPane::RemoveAllGroups](#removeallgroups) instead.  
@@ -1227,8 +1227,8 @@ void RemovePage(int nPageIdx);
 ```  
   
 ### Parameters  
- [in] *nPageIdx*  
- Specifies the zero-based index of the page to remove.  
+*nPageIdx*<br/>
+[in] Specifies the zero-based index of the page to remove.  
   
 ##  <a name="removetask"></a>  CMFCTasksPane::RemoveTask  
  Removes a task from a task group.  
@@ -1241,14 +1241,14 @@ BOOL RemoveTask(
 ```  
   
 ### Parameters  
- [in] *nGroup*  
- Specifies the zero-based index of the task group that contains the task to remove.  
+*nGroup*<br/>
+[in] Specifies the zero-based index of the task group that contains the task to remove.  
   
- [in] *nTask*  
- Specifies the zero-based index of the task to remove.  
+*nTask*<br/>
+[in] Specifies the zero-based index of the task to remove.  
   
- [in] *bRedraw*  
- TRUE to redraw the task pane; otherwise, FALSE.  
+*bRedraw*<br/>
+[in] TRUE to redraw the task pane; otherwise, FALSE.  
   
 ### Return Value  
  TRUE if the function succeeds; FALSE if *nGroup* or *nTask* is invalid.  
@@ -1264,8 +1264,8 @@ virtual BOOL SaveState(
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- [in] *nIndex*  
+*lpszProfileName*<br/>
+[in] [in] *nIndex*  
  [in] *uiID*  
   
 ### Return Value  
@@ -1292,8 +1292,8 @@ void SetActivePage(int nPageIdx);
 ```  
   
 ### Parameters  
- [in] *nPageIdx*  
- Specifies the zero-based index of the page to display.  
+*nPageIdx*<br/>
+[in] Specifies the zero-based index of the page to display.  
   
 ### Remarks  
  This method asserts if the *nPageIdx* is invalid.  
@@ -1306,8 +1306,8 @@ void SetCaption(LPCTSTR lpszName);
 ```  
   
 ### Parameters  
- [in] *lpszName*  
- Specifies the caption name.  
+*lpszName*<br/>
+[in] Specifies the caption name.  
   
 ### Remarks  
  If a task pane has multiple pages, the default page has the caption that was set by using this function.  
@@ -1320,8 +1320,8 @@ void SetGroupCaptionHeight(int n = -1);
 ```  
   
 ### Parameters  
- [in] *n*  
- Specifies the caption height.  
+*n*<br/>
+[in] Specifies the caption height.  
   
 ### Remarks  
  Call this method to customize the margins of the task pane elements.  
@@ -1336,8 +1336,8 @@ void SetGroupCaptionHorzOffset(int n = -1);
 ```  
   
 ### Parameters  
- [in] *n*  
- Specifies the horizontal offset of the group caption.  
+*n*<br/>
+[in] Specifies the horizontal offset of the group caption.  
   
 ##  <a name="setgroupcaptionvertoffset"></a>  CMFCTasksPane::SetGroupCaptionVertOffset  
  Sets the vertical offset of a group caption.  
@@ -1347,8 +1347,8 @@ void SetGroupCaptionVertOffset(int n = -1);
 ```  
   
 ### Parameters  
- [in] *n*  
- Specifies the vertical offset, in pixels, of the group caption.  
+*n*<br/>
+[in] Specifies the vertical offset, in pixels, of the group caption.  
   
 ##  <a name="setgroupname"></a>  CMFCTasksPane::SetGroupName  
  Sets a group name.  
@@ -1360,11 +1360,11 @@ BOOL SetGroupName(
 ```  
   
 ### Parameters  
- [in] *nGroup*  
- Specifies the zero-based index of the group.  
+*nGroup*<br/>
+[in] Specifies the zero-based index of the group.  
   
- [in] *lpszGroupName*  
- Specifies the name of the group.  
+*lpszGroupName*<br/>
+[in] Specifies the name of the group.  
   
 ### Return Value  
  TRUE if the group name was successfully set; otherwise, FALSE.  
@@ -1380,14 +1380,14 @@ BOOL SetGroupTextColor(
 ```  
   
 ### Parameters  
- [in] *nGroup*  
- Specifies the zero-based index of the group.  
+*nGroup*<br/>
+[in] Specifies the zero-based index of the group.  
   
- [in] *color*  
- Specifies the text color.  
+*color*<br/>
+[in] Specifies the text color.  
   
- [in] *colorHot*  
- Specifies the text color for the highlighted group. If -1, the default highlight color is used.  
+*colorHot*<br/>
+[in] Specifies the text color for the highlighted group. If -1, the default highlight color is used.  
   
 ### Return Value  
  TRUE if the group text color was successfully changed; otherwise, FALSE.  
@@ -1400,8 +1400,8 @@ void SetGroupVertOffset(int n = -1);
 ```  
   
 ### Parameters  
- [in] *n*  
- Specifies the vertical offset.  
+*n*<br/>
+[in] Specifies the vertical offset.  
   
 ### Remarks  
  The vertical offset is the distance between a task group and the border of the task pane.  
@@ -1416,8 +1416,8 @@ void SetHorzMargin(int n = -1);
 ```  
   
 ### Parameters  
- [in] *n*  
- Specifies the margin, in pixels.  
+*n*<br/>
+[in] Specifies the margin, in pixels.  
   
 ### Remarks  
  The horizontal margin is the distance between a task pane and the top or bottom edge of the client area.  
@@ -1437,17 +1437,17 @@ void SetIconsList(HIMAGELIST hIcons);
 ```  
   
 ### Parameters  
- [in] *uiImageListResID*  
- Specifies the resource ID of the image list.  
+*uiImageListResID*<br/>
+[in] Specifies the resource ID of the image list.  
   
- [in] *cx*  
- Specifies the size of icons in the image list.  
+*cx*<br/>
+[in] Specifies the size of icons in the image list.  
   
- [in] *clrTransparent*  
- Specifies the transparent color.  
+*clrTransparent*<br/>
+[in] Specifies the transparent color.  
   
- [in] *hIcons*  
- Specifies the image list that contains the icons for the task pane.  
+*hIcons*<br/>
+[in] Specifies the image list that contains the icons for the task pane.  
   
 ### Remarks  
  The framework stores icons in an image list. Tasks are associated with icons that are stored in that list.  
@@ -1464,11 +1464,11 @@ void SetPageCaption(
 ```  
   
 ### Parameters  
- [in] *nPageIdx*  
- Specifies the zero-based index of the page.  
+*nPageIdx*<br/>
+[in] Specifies the zero-based index of the page.  
   
- [in] *lpszName*  
- Specifies the caption text to display on the page.  
+*lpszName*<br/>
+[in] Specifies the caption text to display on the page.  
   
 ### Remarks  
  If a task pane has multiple pages, the default page has the caption that was set by using this method.  
@@ -1484,14 +1484,14 @@ BOOL SetTaskName(
 ```  
   
 ### Parameters  
- [in] *nGroup*  
- Specifies the zero-based index of the task group.  
+*nGroup*<br/>
+[in] Specifies the zero-based index of the task group.  
   
- [in] *nTask*  
- Specifies the zero-based index of the task.  
+*nTask*<br/>
+[in] Specifies the zero-based index of the task.  
   
- [in] *lpszTaskName*  
- Specifies the task name.  
+*lpszTaskName*<br/>
+[in] Specifies the task name.  
   
 ### Return Value  
  TRUE if the task name was successfully set; otherwise, FALSE.  
@@ -1504,8 +1504,8 @@ void SetTasksHorzOffset(int n = -1);
 ```  
   
 ### Parameters  
- [in] *n*  
- Specifies the horizontal offset.  
+*n*<br/>
+[in] Specifies the horizontal offset.  
   
 ### Remarks  
  The horizontal offset is the distance in pixels from the left and right edges of a group.  
@@ -1550,17 +1550,17 @@ BOOL SetTaskTextColor(
 ```  
   
 ### Parameters  
- [in] *nGroup*  
- Specifies the zero-based index of the task group that contains the task.  
+*nGroup*<br/>
+[in] Specifies the zero-based index of the task group that contains the task.  
   
- [in] *nTask*  
- Specifies the zero-based index of the task.  
+*nTask*<br/>
+[in] Specifies the zero-based index of the task.  
   
- [in] *color*  
- Specifies the text color for the task.  
+*color*<br/>
+[in] Specifies the text color for the task.  
   
- [in] *colorHot*  
- Specifies the text color for the highlighted group. If -1, this method uses the default highlight color.  
+*colorHot*<br/>
+[in] Specifies the text color for the highlighted group. If -1, this method uses the default highlight color.  
   
 ### Return Value  
  TRUE if the text color for the task was successfully set; otherwise, FALSE.  
@@ -1573,8 +1573,8 @@ void SetVertMargin(int n = -1);
 ```  
   
 ### Parameters  
- [in] *n*  
- Specifies the vertical margin to set.  
+*n*<br/>
+[in] Specifies the vertical margin to set.  
   
 ### Remarks  
  The vertical margin is the distance between a task pane and the vertical edges of the client area.  
@@ -1597,14 +1597,14 @@ BOOL SetWindowHeight(
 ```  
   
 ### Parameters  
- [in] *nGroup*  
- Specifies the zero-based index of the group that contains the window control.  
+*nGroup*<br/>
+[in] Specifies the zero-based index of the group that contains the window control.  
   
- [in] *hwndTask*  
- Specifies the handle to the window control.  
+*hwndTask*<br/>
+[in] Specifies the handle to the window control.  
   
- [in] *nWndHeight*  
- Specifies the height to set.  
+*nWndHeight*<br/>
+[in] Specifies the height to set.  
   
 ### Return Value  
  TRUE if the height of the window control was successfully set; FALSE if *nGroup* is invalid or if *hwndTask* does not exist.  
@@ -1636,17 +1636,17 @@ BOOL ShowTask(
 ```  
   
 ### Parameters  
- [in] *nGroup*  
- Specifies the zero-based index of the group.  
+*nGroup*<br/>
+[in] Specifies the zero-based index of the group.  
   
- [in] *nTask*  
- Specifies the zero-based index of the task to show or hide.  
+*nTask*<br/>
+[in] Specifies the zero-based index of the task to show or hide.  
   
- [in] *bShow*  
- TRUE to show the task; FALSE to hide the task.  
+*bShow*<br/>
+[in] TRUE to show the task; FALSE to hide the task.  
   
- [in] *bRedraw*  
- TRUE to redraw the task pane; otherwise, FALSE.  
+*bRedraw*<br/>
+[in] TRUE to redraw the task pane; otherwise, FALSE.  
   
 ### Return Value  
  TRUE if the task was successfully shown or hidden; FALSE if the specified group or task does not exist.  
@@ -1665,14 +1665,14 @@ BOOL ShowTaskByCmdId(
 ```  
   
 ### Parameters  
- [in] *uiCommandID*  
- Specifies the command ID of the task to show or hide.  
+*uiCommandID*<br/>
+[in] Specifies the command ID of the task to show or hide.  
   
- [in] *bShow*  
- TRUE to show the task; FALSE to hide the task.  
+*bShow*<br/>
+[in] TRUE to show the task; FALSE to hide the task.  
   
- [in] *bRedraw*  
- TRUE to redraw the task pane; otherwise, FALSE.  
+*bRedraw*<br/>
+[in] TRUE to redraw the task pane; otherwise, FALSE.  
   
 ### Return Value  
  TRUE if the task was successfully shown or hidden; FALSE if a task with the specified command ID does not exist.  

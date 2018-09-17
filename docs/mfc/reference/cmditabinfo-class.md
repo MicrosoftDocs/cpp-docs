@@ -202,8 +202,8 @@ void Serialize(CArchive& ar);
 ```  
   
 ### Parameters  
- [in] *ar*  
- A [CArchive Class](../../mfc/reference/carchive-class.md) object to serialize.  
+*ar*<br/>
+[in] A [CArchive Class](../../mfc/reference/carchive-class.md) object to serialize.  
   
 ## See Also  
  [CMDIFrameWndEx Class](../../mfc/reference/cmdiframewndex-class.md)   

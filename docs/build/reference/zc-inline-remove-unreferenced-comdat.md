@@ -52,11 +52,11 @@ public:
 #include "example.h"
 
 void Example::inline_call() {
-   printf("inline_call was called.\n"); 
+   printf("inline_call was called.\n");
 }
 
 void Example::normal_call() {
-   printf("normal_call was called.\n"); 
+   printf("normal_call was called.\n");
    inline_call(); // with /Zc:inline-, inline_call forced into .obj file
 }
 ```
@@ -85,7 +85,7 @@ To resolve this error, you can remove the `inline` keyword from the declaration 
 class Example2 {
 public:
    inline void inline_call() {
-      printf("inline_call was called.\n"); 
+      printf("inline_call was called.\n");
    }
    void normal_call();
    Example2() {};
@@ -98,8 +98,8 @@ public:
 #include "example2.h"
 
 void Example2::normal_call() {
-   printf("normal_call was called.\n"); 
-   inline_call(); 
+   printf("normal_call was called.\n");
+   inline_call();
 }
 ```
 

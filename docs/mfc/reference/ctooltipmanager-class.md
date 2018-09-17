@@ -55,14 +55,14 @@ static BOOL CreateToolTip(
 ```  
   
 ### Parameters  
- [out] *pToolTip*  
- A reference to a tooltip pointer. It is set to point to the newly created tooltip when the function returns.  
+*pToolTip*<br/>
+[out] A reference to a tooltip pointer. It is set to point to the newly created tooltip when the function returns.  
   
- [in] *pWndParent*  
- Parent of the tooltip.  
+*pWndParent*<br/>
+[in] Parent of the tooltip.  
   
- [in] *nType*  
- Type of the tooltip.  
+*nType*<br/>
+[in] Type of the tooltip.  
   
 ### Return Value  
  Nonzero if a tooltip has been created successfully.  
@@ -96,8 +96,8 @@ static void DeleteToolTip(CToolTipCtrl*& pToolTip);
 ```  
   
 ### Parameters  
- [in, out] *pToolTip*  
- A reference to a pointer to a tooltip to be destroyed.  
+*pToolTip*<br/>
+[in, out] A reference to a pointer to a tooltip to be destroyed.  
   
 ### Remarks  
  Call this method for each [CToolTipCtrl Class](../../mfc/reference/ctooltipctrl-class.md) that was created by [CTooltipManager::CreateToolTip](#createtooltip). The parent control should call this method from its `OnDestroy` handler. This is required to correctly remove the tooltip from the framework. This method sets *pToolTip* to NULL before it returns.  
@@ -113,14 +113,14 @@ void SetTooltipParams(
 ```  
   
 ### Parameters  
- [in] *nTypes*  
- Specifies control types.  
+*nTypes*<br/>
+[in] Specifies control types.  
   
- [in] *pRTC*  
- Runtime class of custom tooltip.  
+*pRTC*<br/>
+[in] Runtime class of custom tooltip.  
   
- [in] *pParams*  
- Tooltip parameters.  
+*pParams*<br/>
+[in] Tooltip parameters.  
   
 ### Remarks  
  This method sets the runtime class and initial parameters that the [CToolTipManager](../../mfc/reference/ctooltipmanager-class.md) uses when it creates tooltips. When a control calls [CTooltipManager::CreateToolTip](#createtooltip) and passes in a tooltip type that is one of the types indicated by *nTypes*, the tooltip manager creates a tooltip control that is an instance of the runtime class specified by *pRTC* and passes the parameters specified by *pParams* to the new tooltip.  
@@ -147,20 +147,20 @@ static void SetTooltipText(
 ```  
   
 ### Parameters  
- [in] *pTI*  
- A pointer to a TOOLINFO object.  
+*pTI*<br/>
+[in] A pointer to a TOOLINFO object.  
   
- [in, out] *pToolTip*  
- A pointer to the tooltip control for which to set the text and description.  
+*pToolTip*<br/>
+[in, out] A pointer to the tooltip control for which to set the text and description.  
   
- [in] *nType*  
- Specifies the type of control with which this tooltip is associated.  
+*nType*<br/>
+[in] Specifies the type of control with which this tooltip is associated.  
   
- [in] *strText*  
- The text to set as the tooltip text.  
+*strText*<br/>
+[in] The text to set as the tooltip text.  
   
- [in] *lpszDescr*  
- A pointer to the tooltip description. Can be NULL.  
+*lpszDescr*<br/>
+[in] A pointer to the tooltip description. Can be NULL.  
   
 ### Remarks  
  The value of *nType* must be the same value as the *nType* parameter of [CTooltipManager::CreateToolTip](#createtooltip) when you created the tooltip.  

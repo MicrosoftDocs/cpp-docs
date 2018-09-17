@@ -26,8 +26,8 @@ unsigned char __vmx_on(
 ```  
   
 #### Parameters  
- [in] `VmsSupportPhysicalAddress`  
- A pointer to a 64-bit physical address that points to a virtual-machine control structure (VMCS).  
+*VmsSupportPhysicalAddress*<br/>
+[in] A pointer to a 64-bit physical address that points to a virtual-machine control structure (VMCS).  
   
 ## Return Value  
   

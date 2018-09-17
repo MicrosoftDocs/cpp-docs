@@ -26,8 +26,8 @@ unsigned short __inword(
 ```  
   
 #### Parameters  
- [in] `Port`  
- The port to read from.  
+*Port*<br/>
+[in] The port to read from.  
   
 ## Return Value  
  The word of data read.  

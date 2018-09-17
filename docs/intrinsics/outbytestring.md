@@ -28,14 +28,14 @@ void __outbytestring( 
 ```  
   
 #### Parameters  
- [in] `Port`  
- The port to send the data to.  
+*Port*<br/>
+[in] The port to send the data to.  
   
- [in] `Buffer`  
- The data to be sent out the specified port.  
+*Buffer*<br/>
+[in] The data to be sent out the specified port.  
   
- [in] `Count`  
- The number of bytes of data to be sent.  
+*Count*<br/>
+[in] The number of bytes of data to be sent.  
   
 ## Requirements  
   

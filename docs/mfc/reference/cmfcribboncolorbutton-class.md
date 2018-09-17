@@ -83,14 +83,14 @@ void AddColorsGroup(
 ```  
   
 ### Parameters  
- [in] *lpszName*  
- The group name.  
+*lpszName*<br/>
+[in] The group name.  
   
- [in] *lstColors*  
- The list of colors.  
+*lstColors*<br/>
+[in] The list of colors.  
   
- [in] *bContiguousColumns*  
- Controls how the color items are displayed in the group. If TRUE, the color items are drawn without a vertical spacing. If FALSE, the color items are drawn with a vertical spacing.  
+*bContiguousColumns*<br/>
+[in] Controls how the color items are displayed in the group. If TRUE, the color items are drawn without a vertical spacing. If FALSE, the color items are drawn with a vertical spacing.  
   
 ### Remarks  
  Use this function to make the color pop-up display several groups of colors. You can control how the colors are displayed in group.  
@@ -119,23 +119,23 @@ CMFCRibbonColorButton(
 ```  
   
 ### Parameters  
- [in] *nID*  
- Specifies the command ID of the command to execute when a user clicks the button.  
+*nID*<br/>
+[in] Specifies the command ID of the command to execute when a user clicks the button.  
   
- [in] *lpszText*  
- Specifies the text to appear on the button.  
+*lpszText*<br/>
+[in] Specifies the text to appear on the button.  
   
- [in] *nSmallImageIndex*  
- The zero-based index of the small image to appear on the button.  
+*nSmallImageIndex*<br/>
+[in] The zero-based index of the small image to appear on the button.  
   
- [in] *color*  
- The color of the button (defaults to black).  
+*color*<br/>
+[in] The color of the button (defaults to black).  
   
- [in] *bSimpleButtonLook*  
- If TRUE, the button is drawn as a simple rectangle.  
+*bSimpleButtonLook*<br/>
+[in] If TRUE, the button is drawn as a simple rectangle.  
   
- [in] *nLargeImageIndex*  
- The zero-based index of the large image to appear on the button.  
+*nLargeImageIndex*<br/>
+[in] The zero-based index of the large image to appear on the button.  
   
 ### Return Value  
   
@@ -155,23 +155,23 @@ void EnableAutomaticButton(
 ```  
   
 ### Parameters  
- [in] *lpszLabel*  
- The label for the **Automatic** button.  
+*lpszLabel*<br/>
+[in] The label for the **Automatic** button.  
   
- [in] *colorAutomatic*  
- An RGB value that specifies the **Automatic** button's default color.  
+*colorAutomatic*<br/>
+[in] An RGB value that specifies the **Automatic** button's default color.  
   
- [in] *bEnable*  
- TRUE if the **Automatic** button is enabled; FALSE if it is disabled.  
+*bEnable*<br/>
+[in] TRUE if the **Automatic** button is enabled; FALSE if it is disabled.  
   
- [in] *lpszToolTip*  
- The tooltip of the **Automatic** button.  
+*lpszToolTip*<br/>
+[in] The tooltip of the **Automatic** button.  
   
- [in] *bOnTop*  
- Specifies whether the **Automatic** button is at the top, before color palette.  
+*bOnTop*<br/>
+[in] Specifies whether the **Automatic** button is at the top, before color palette.  
   
- [in] *bDrawBorder*  
- TRUE if the application draws a border around the color bar on the ribbon color button. Color bar displays the currently selected color. FALSE if the application does not draw a border  
+*bDrawBorder*<br/>
+[in] TRUE if the application draws a border around the color bar on the ribbon color button. Color bar displays the currently selected color. FALSE if the application does not draw a border  
   
 ##  <a name="enableotherbutton"></a>  CMFCRibbonColorButton::EnableOtherButton  
  Enables the **Other** button.  
@@ -262,8 +262,8 @@ void SetColor(COLORREF color);
 ```  
   
 ### Parameters  
- [in] *color*  
- A color to set.  
+*color*<br/>
+[in] A color to set.  
   
 ##  <a name="setcolorboxsize"></a>  CMFCRibbonColorButton::SetColorBoxSize  
  Sets the size of all the color elements that appear on the color bar.  
@@ -273,8 +273,8 @@ void SetColorBoxSize(CSize sizeBox);
 ```  
   
 ### Parameters  
- [in] *sizeBox*  
- The new size of the color buttons in the color palette.  
+*sizeBox*<br/>
+[in] The new size of the color buttons in the color palette.  
   
 ##  <a name="setcolorname"></a>  CMFCRibbonColorButton::SetColorName  
  Sets a new name for a specified color.  
@@ -286,11 +286,11 @@ static void __stdcall SetColorName(
 ```  
   
 ### Parameters  
- [in] *color*  
- The RGB value of a color.  
+*color*<br/>
+[in] The RGB value of a color.  
   
- [in] *strName*  
- The new name for the specified color.  
+*strName*<br/>
+[in] The new name for the specified color.  
   
 ### Remarks  
  Because it calls `CMFCColorBar::SetColorName`, this method changes the name of the specified color in all `CMFCColorBar` objects in your application.  
@@ -303,8 +303,8 @@ void SetColumns(int nColumns);
 ```  
   
 ### Parameters  
- [in] *nColumns*  
- The number of color icons to display in each row.  
+*nColumns*<br/>
+[in] The number of color icons to display in each row.  
   
 ### Remarks  
   
@@ -318,11 +318,11 @@ void SetDocumentColors(
 ```  
   
 ### Parameters  
- [in] *lpszLabel*  
- The text to be displayed with the document colors.  
+*lpszLabel*<br/>
+[in] The text to be displayed with the document colors.  
   
- [in] *lstColors*  
- A reference to a list of RGB values.  
+*lstColors*<br/>
+[in] A reference to a list of RGB values.  
   
 ##  <a name="setpalette"></a>  CMFCRibbonColorButton::SetPalette  
  Specifies the standard colors to display in the color table that the color button displays.  
@@ -332,8 +332,8 @@ void SetPalette(CPalette* pPalette);
 ```  
   
 ### Parameters  
- [in] *pPalette*  
- A pointer to a color palette.  
+*pPalette*<br/>
+[in] A pointer to a color palette.  
   
 ### Remarks  
   
@@ -345,8 +345,8 @@ void UpdateColor(COLORREF color);
 ```  
   
 ### Parameters  
- [in] *color*  
- A color selected by the user.  
+*color*<br/>
+[in] A color selected by the user.  
   
 ### Remarks  
  The `CMFCRibbonColorButton::UpdateColor` method changes the currently selected button's color and notifies its parent by sending a WM_COMMAND message with a BN_CLICKED standard notification. Use the [CMFCRibbonColorButton::GetColor](#getcolor) method to retrieve the selected color.  

@@ -147,11 +147,11 @@ virtual DBSTATUS GetDBStatus(RowClass* currentRow,
 ```  
   
 #### Parameters  
- [in] *currentRow*  
- The current row.  
+*currentRow*<br/>
+[in] The current row.  
   
- [in] *columnNames*  
- The column for which status is being requested.  
+*columnNames*<br/>
+[in] The column for which status is being requested.  
   
 ### Return Value  
  The [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) flags for the column. 

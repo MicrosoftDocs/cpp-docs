@@ -44,17 +44,20 @@ Provides information for the C++ class created to implement the object.
 
 Provides information about the COM functionality for the object.
 
-**Coclass**  
-Sets the name of the component class that contains a list of interfaces supported by the object.
+- **Coclass**
 
-> [!NOTE]
->  If you create your project using attributes, or if you indicate on this wizard page that the property page uses attributes, you cannot change this option because ATL does not include the `coclass` attribute.
+   Sets the name of the component class that contains a list of interfaces supported by the object.
 
-**Type**  
-Sets the object description that will appear in the registry
+   > [!NOTE]
+   > If you create your project using attributes, or if you indicate on this wizard page that the property page uses attributes, you cannot change this option because ATL does not include the `coclass` attribute.
 
-**ProgID**  
-Sets the name that containers can use instead of the CLSID of the object.
+- **Type**
+
+   Sets the object description that will appear in the registry
+
+- **ProgID**
+
+   Sets the name that containers can use instead of the CLSID of the object.
 
 ## See Also
 

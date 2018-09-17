@@ -39,11 +39,11 @@ protected:
 
 ### Parameters
 
-*_Locname*  
- A locale name.
+*_Locname*<br/>
+A locale name.
 
-*_Refs*  
- An initial reference count.
+*_Refs*<br/>
+An initial reference count.
 
 ## Remarks
 

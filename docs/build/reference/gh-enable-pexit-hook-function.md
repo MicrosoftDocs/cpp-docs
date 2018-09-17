@@ -13,39 +13,42 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /GH (Enable _pexit Hook Function)
-Calls the `_pexit` function at the end of every method or function.  
-  
-## Syntax  
-  
-```  
-/GH  
-```  
-  
-## Remarks  
- The `_pexit` function is not part of any library and it is up to you to provide a definition for `_pexit`.  
-  
- Unless you plan to explicitly call `_pexit`, you do not need to provide a prototype. The function must appear as if it had the following prototype, and it must push the content of all registers on entry and pop the unchanged content on exit:  
-  
-```  
-void __declspec(naked) _cdecl _pexit( void );  
-```  
-  
- `_pexit` is similar to `_penter`; see [/Gh (Enable _penter Hook Function)](../../build/reference/gh-enable-penter-hook-function.md) for an example of how to write a `_pexit` function.  
-  
-### To set this compiler option in the Visual Studio development environment  
-  
-1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Click the **C/C++** folder.  
-  
-3.  Click the **Command Line** property page.  
-  
-4.  Type the compiler option in the **Additional Options** box.  
-  
-### To set this compiler option programmatically  
-  
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
-  
-## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+
+Calls the `_pexit` function at the end of every method or function.
+
+## Syntax
+
+```
+/GH
+```
+
+## Remarks
+
+The `_pexit` function is not part of any library and it is up to you to provide a definition for `_pexit`.
+
+Unless you plan to explicitly call `_pexit`, you do not need to provide a prototype. The function must appear as if it had the following prototype, and it must push the content of all registers on entry and pop the unchanged content on exit:
+
+```
+void __declspec(naked) _cdecl _pexit( void );
+```
+
+`_pexit` is similar to `_penter`; see [/Gh (Enable _penter Hook Function)](../../build/reference/gh-enable-penter-hook-function.md) for an example of how to write a `_pexit` function.
+
+### To set this compiler option in the Visual Studio development environment
+
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Click the **C/C++** folder.
+
+1. Click the **Command Line** property page.
+
+1. Type the compiler option in the **Additional Options** box.
+
+### To set this compiler option programmatically
+
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+
+## See Also
+
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

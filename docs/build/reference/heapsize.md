@@ -13,11 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # HEAPSIZE
-Exposes the same functionality as the [/HEAP](../../build/reference/heap-set-heap-size.md) linker option.  
-  
-```  
-/HEAP:reserve[,commit]  
-```  
-  
-## See Also  
- [Rules for Module-Definition Statements](../../build/reference/rules-for-module-definition-statements.md)
+
+Exposes the same functionality as the [/HEAP](../../build/reference/heap-set-heap-size.md) linker option.
+
+```
+/HEAP:reserve[,commit]
+```
+
+## See Also
+
+[Rules for Module-Definition Statements](../../build/reference/rules-for-module-definition-statements.md)

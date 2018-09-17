@@ -73,17 +73,17 @@ CDialogEx(
 ```  
   
 ### Parameters  
- [in] *nIDTemplate*  
- The resource ID of a dialog box template.  
+*nIDTemplate*<br/>
+[in] The resource ID of a dialog box template.  
   
- [in] *lpszTemplateName*  
- The resource name of a dialog box template.  
+*lpszTemplateName*<br/>
+[in] The resource name of a dialog box template.  
   
- [in] *pParent*  
- A pointer to the parent window. The default value is NULL.  
+*pParent*<br/>
+[in] A pointer to the parent window. The default value is NULL.  
   
- [in] *pParentWnd*  
- A pointer to the parent window. The default value is NULL.  
+*pParentWnd*<br/>
+[in] A pointer to the parent window. The default value is NULL.  
   
 ### Return Value  
   
@@ -99,11 +99,11 @@ void SetBackgroundColor(
 ```  
   
 ### Parameters  
- [in] *color*  
- An RGB color value.  
+*color*<br/>
+[in] An RGB color value.  
   
- [in] *bRepaint*  
- TRUE to immediately update the screen; otherwise, FALSE. The default value is TRUE.  
+*bRepaint*<br/>
+[in] TRUE to immediately update the screen; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -125,20 +125,20 @@ BOOL SetBackgroundImage(
 ```  
   
 ### Parameters  
- [in] *hBitmap*  
- A handle to the background image.  
+*hBitmap*<br/>
+[in] A handle to the background image.  
   
- [in] *uiBmpResId*  
- The resource ID of the background image.  
+*uiBmpResId*<br/>
+[in] The resource ID of the background image.  
   
- [in] *location*  
- One of the `CDialogEx::BackgroundLocation` values that specify the location of the image. Valid values include BACKGR_TILE, BACKGR_TOPLEFT, BACKGR_TOPRIGHT, BACKGR_BOTTOMLEFT, and BACKGR_BOTTOMRIGHT. The default value is BACKGR_TILE.  
+*location*<br/>
+[in] One of the `CDialogEx::BackgroundLocation` values that specify the location of the image. Valid values include BACKGR_TILE, BACKGR_TOPLEFT, BACKGR_TOPRIGHT, BACKGR_BOTTOMLEFT, and BACKGR_BOTTOMRIGHT. The default value is BACKGR_TILE.  
   
- [in] *bAutoDestroy*  
- TRUE to automatically destroy the background image; otherwise, FALSE.  
+*bAutoDestroy*<br/>
+[in] TRUE to automatically destroy the background image; otherwise, FALSE.  
   
- [in] *bRepaint*  
- TRUE to immediately redraw the dialog box; otherwise, FALSE.  
+*bRepaint*<br/>
+[in] TRUE to immediately redraw the dialog box; otherwise, FALSE.  
   
 ### Return Value  
  In the second method overload syntax, TRUE if the method is successful; otherwise, FALSE.  

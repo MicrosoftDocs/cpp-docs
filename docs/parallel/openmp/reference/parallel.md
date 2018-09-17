@@ -24,11 +24,10 @@ Defines a parallel region, which is code that will be executed by multiple threa
 }  
 ```  
   
-## Remarks  
- where,  
-  
- `clause` (optional)  
- Zero or more clauses.  See the Remarks section for a list of the clauses supported by **parallel**.  
+## Arguments
+
+*clause*<br/>
+(Optional) Zero or more clauses.  See the Remarks section for a list of the clauses supported by **parallel**.  
   
 ## Remarks  
  The **parallel** directive supports the following OpenMP clauses:  

@@ -13,9 +13,10 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _mm_insert_si64, _mm_inserti_si64
+
 **Microsoft Specific**  
   
- Generates the `insertq` instruction to insert bits from its second operand into its first operand.  
+Generates the `insertq` instruction to insert bits from its second operand into its first operand.  
   
 ## Syntax  
   
@@ -33,17 +34,17 @@ __m128i _mm_inserti_si64(
 ```  
   
 #### Parameters  
- [in] `Source1`  
- A 128-bit field with input data in its lower 64 bits into which a field will be inserted.  
+*Source1*<br/>
+[in] A 128-bit field with input data in its lower 64 bits into which a field will be inserted.  
   
- [in]  `Source2`  
- A 128-bit field with the data to insert in its low bits.  For `_mm_insert_si64`, also contains a field descriptor in its high bits.  
+*Source2*<br/>
+[in] A 128-bit field with the data to insert in its low bits.  For `_mm_insert_si64`, also contains a field descriptor in its high bits.  
   
- [in]  `Length`  
- An integer constant that specifies the length of the field to insert.  
+*Length*<br/>
+[in] An integer constant that specifies the length of the field to insert.  
   
- [in]  `Index`  
- An integer constant that specifies the index of the least significant bit of the field into which data will be inserted.  
+*Index*<br/>
+[in] An integer constant that specifies the index of the least significant bit of the field into which data will be inserted.  
   
 ## Return Value  
  A 128-bit field whose lower 64 bits contain the original low 64 bits of `Source1` with the specified bit field replaced by the low bits of `Source2`. The upper 64 bits of the return value are undefined.  
@@ -111,7 +112,8 @@ result3 = 0xfffffffff3210fff
 ```  
   
 **END Microsoft Specific**  
- Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
+
+Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
   
 ## See Also  
  [_mm_extract_si64, _mm_extracti_si64](../intrinsics/mm-extract-si64-mm-extracti-si64.md)   

@@ -14,17 +14,21 @@ ms.workload: ["cplusplus"]
 # IDL Attributes, Add Property Wizard
 Use this page of the Add Property Wizard to specify any interface definition language (IDL) settings for the property.  
   
- **id**  
- Sets the numerical ID that identifies the property. This option is not available for properties of custom interfaces. See [id](/windows/desktop/Midl/id) in the *MIDL Reference*.  
+- **id**
+
+   Sets the numerical ID that identifies the property. This option is not available for properties of custom interfaces. See [id](/windows/desktop/Midl/id) in the *MIDL Reference*.  
   
- **helpcontext**  
- Specifies a context ID that lets the user view information about this property in the Help file. See [helpcontext](/windows/desktop/Midl/helpcontext) in the *MIDL Reference*.  
+- **helpcontext**
+
+   Specifies a context ID that lets the user view information about this property in the Help file. See [helpcontext](/windows/desktop/Midl/helpcontext) in the *MIDL Reference*.  
   
- **helpstring**  
- Specifies a character string that is used to describe the element to which it applies. By default, it is set to "property *Property name*." See [helpstring](/windows/desktop/Midl/helpstring) in the *MIDL Reference*.  
+- **helpstring**
+
+   Specifies a character string that is used to describe the element to which it applies. By default, it is set to "property *Property name*." See [helpstring](/windows/desktop/Midl/helpstring) in the *MIDL Reference*.  
   
 ## Other options  
- Not all options are available to all property types.  
+
+Not all options are available to all property types.  
   
 |Option|Description|  
 |------------|-----------------|  

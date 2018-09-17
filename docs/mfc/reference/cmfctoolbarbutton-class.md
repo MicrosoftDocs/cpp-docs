@@ -150,8 +150,8 @@ virtual BOOL CanBeDropped(CMFCToolBar* pToolbar);
 ```  
   
 ### Parameters  
- [in] *pToolbar*  
- Unused.  
+*pToolbar*<br/>
+[in] Unused.  
   
 ### Return Value  
  This method returns TRUE.  
@@ -206,20 +206,20 @@ CMFCToolBarButton(
 ```  
   
 ### Parameters  
- [in] *uiID*  
- The command ID of the button.  
+*uiID*<br/>
+[in] The command ID of the button.  
   
- [in] *iImage*  
- The image index of the button in the collection of images.  
+*iImage*<br/>
+[in] The image index of the button in the collection of images.  
   
- [in] *lpszText*  
- The text label of the button. Can be NULL.  
+*lpszText*<br/>
+[in] The text label of the button. Can be NULL.  
   
- [in] *bUserButton*  
- A Boolean value that determines whether the button is user-defined. If this parameter is TRUE, the button is user-defined. Otherwise, the button image is loaded from a resource.  
+*bUserButton*<br/>
+[in] A Boolean value that determines whether the button is user-defined. If this parameter is TRUE, the button is user-defined. Otherwise, the button image is loaded from a resource.  
   
- [in] *bLocked*  
- A Boolean value that determines whether the button can be customized. If this parameter is TRUE, the button cannot be customized. Otherwise, the button can be customized.  
+*bLocked*<br/>
+[in] A Boolean value that determines whether the button can be customized. If this parameter is TRUE, the button cannot be customized. Otherwise, the button can be customized.  
   
 ##  <a name="comparewith"></a>  CMFCToolBarButton::CompareWith  
  Compares this instance with the provided `CMFCToolBarButton` object.  
@@ -229,8 +229,8 @@ virtual BOOL CompareWith(const CMFCToolBarButton& other) const;
 ```  
   
 ### Parameters  
- [in] *other*  
- Reference to the object to compare with this instance.  
+*other*<br/>
+[in] Reference to the object to compare with this instance.  
   
 ### Return Value  
  Nonzero if the provided object equals the value of this instance; otherwise, 0.  
@@ -246,8 +246,8 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### Parameters  
- [in] *src*  
- A reference to the source button from which to copy.  
+*src*<br/>
+[in] A reference to the source button from which to copy.  
   
 ### Remarks  
  Call this method to copy another toolbar button to this toolbar button.  
@@ -260,8 +260,8 @@ static CMFCToolBarButton* __stdcall CreateFromOleData(COleDataObject* pDataObjec
 ```  
   
 ### Parameters  
- [in] *pDataObject*  
- The source OLE data object.  
+*pDataObject*<br/>
+[in] The source OLE data object.  
   
 ### Return Value  
  The created `CMFCToolBarButton` object.  
@@ -277,8 +277,8 @@ virtual void EnableWindow(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- Set this parameter to TRUE to enable input, or to FALSE to disable input.  
+*bEnable*<br/>
+[in] Set this parameter to TRUE to enable input, or to FALSE to disable input.  
   
 ### Remarks  
  This method calls the `EnableWindow` function to enable or disable input. For more information, see [EnableWindow](https://msdn.microsoft.com/library/windows/desktop/ms646291) in the Windows SDK.  
@@ -291,8 +291,8 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 ```  
   
 ### Parameters  
- [in] *menuButton*  
- A reference to the target menu button.  
+*menuButton*<br/>
+[in] A reference to the target menu button.  
   
 ### Return Value  
  This method returns TRUE.  
@@ -577,8 +577,8 @@ virtual BOOL IsOwnerOf(HWND hwnd);
 ```  
   
 ### Parameters  
- [in] *hwnd*  
- A window handle.  
+*hwnd*<br/>
+[in] A window handle.  
   
 ### Return Value  
  Nonzero if the button is the owner of the provided window handle; otherwise 0.  
@@ -726,8 +726,8 @@ virtual BOOL NotifyCommand(int iNotifyCode);
 ```  
   
 ### Parameters  
- [in] *iNotifyCode*  
- The notification message that is associated with the command.  
+*iNotifyCode*<br/>
+[in] The notification message that is associated with the command.  
   
 ### Return Value  
  This method returns FALSE.  
@@ -770,8 +770,8 @@ virtual BOOL OnBeforeDrop(CMFCToolBar* pTarget);
 ```  
   
 ### Parameters  
- [in] *pTarget*  
- The target of the drag-and-drop operation.  
+*pTarget*<br/>
+[in] The target of the drag-and-drop operation.  
   
 ### Return Value  
  TRUE if the button can be dropped onto the provided target toolbar; otherwise FALSE.  
@@ -792,14 +792,14 @@ virtual SIZE OnCalculateSize(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- The device context that displays the button.  
+*pDC*<br/>
+[in] The device context that displays the button.  
   
- [in] *sizeDefault*  
- The default size of the button.  
+*sizeDefault*<br/>
+[in] The default size of the button.  
   
- [in] *bHorz*  
- The dock state of the parent toolbar. This parameter is TRUE if the toolbar is docked horizontally or is floating, or FALSE if the toolbar is docked vertically.  
+*bHorz*<br/>
+[in] The dock state of the parent toolbar. This parameter is TRUE if the toolbar is docked horizontally or is floating, or FALSE if the toolbar is docked vertically.  
   
 ### Return Value  
  A `SIZE` structure that contains the dimensions of the button, in pixels.  
@@ -829,8 +829,8 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```  
   
 ### Parameters  
- [in] *pWndParent*  
- The new parent window.  
+*pWndParent*<br/>
+[in] The new parent window.  
   
 ### Remarks  
  The button is inserted into a toolbar, for example, when the user drags it from one toolbar to another toolbar.  
@@ -847,11 +847,11 @@ virtual BOOL OnClick(
 ```  
   
 ### Parameters  
- [in] *pWnd*  
- The parent window of the toolbar button.  
+*pWnd*<br/>
+[in] The parent window of the toolbar button.  
   
- [in] *bDelay*  
- TRUE if the message should be handled with a delay.  
+*bDelay*<br/>
+[in] TRUE if the message should be handled with a delay.  
   
 ### Return Value  
  This method returns FALSE.  
@@ -884,8 +884,8 @@ virtual BOOL OnContextHelp(CWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] *pWnd*  
- The parent window of the toolbar button.  
+*pWnd*<br/>
+[in] The parent window of the toolbar button.  
   
 ### Return Value  
  This method returns FALSE.  
@@ -905,11 +905,11 @@ virtual HBRUSH OnCtlColor(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- The device context that displays the button.  
+*pDC*<br/>
+[in] The device context that displays the button.  
   
- [in] *nCtlColor*  
- The specific color notification.  
+*nCtlColor*<br/>
+[in] The specific color notification.  
   
 ### Return Value  
  A handle to the brush object that the framework uses to paint the background of the button.  
@@ -929,8 +929,8 @@ virtual BOOL OnCustomizeMenu(CMenu* pMenu);
 ```  
   
 ### Parameters  
- [in] *pMenu*  
- The menu to customize.  
+*pMenu*<br/>
+[in] The menu to customize.  
   
 ### Return Value  
  This method returns FALSE.  
@@ -946,8 +946,8 @@ virtual void OnDblClk(CWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] *pWnd*  
- -   The parent window of the button.  
+*pWnd*<br/>
+[in] -   The parent window of the button.  
   
 ### Remarks  
  This method is called by the `CMFCToolBar::OnLButtonDblClk` method when the parent toolbar handles a [WM_LBUTTONDBLCLK](/windows/desktop/inputdev/wm-lbuttondblclk) message.  
@@ -970,29 +970,29 @@ virtual void OnDraw(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- The device context that displays the button.  
+*pDC*<br/>
+[in] The device context that displays the button.  
   
- [in] *rect*  
- The bounding rectangle of the button.  
+*rect*<br/>
+[in] The bounding rectangle of the button.  
   
- [in] *pImages*  
- The collection of toolbar images that is associated with the button.  
+*pImages*<br/>
+[in] The collection of toolbar images that is associated with the button.  
   
- [in] *bHorz*  
- The dock state of the parent toolbar. This parameter is TRUE when the button is docked horizontally and FALSE when the button is docked vertically.  
+*bHorz*<br/>
+[in] The dock state of the parent toolbar. This parameter is TRUE when the button is docked horizontally and FALSE when the button is docked vertically.  
   
- [in] *bCustomizeMode*  
- Specifies whether the toolbar is in customization mode. This parameter is TRUE when the toolbar is in customization mode and FALSE when the toolbar is not in customization mode.  
+*bCustomizeMode*<br/>
+[in] Specifies whether the toolbar is in customization mode. This parameter is TRUE when the toolbar is in customization mode and FALSE when the toolbar is not in customization mode.  
   
- [in] *bHighlight*  
- Specifies whether the button is highlighted. This parameter is TRUE when the button is highlighted and FALSE when the button is not highlighted.  
+*bHighlight*<br/>
+[in] Specifies whether the button is highlighted. This parameter is TRUE when the button is highlighted and FALSE when the button is not highlighted.  
   
- [in] *bDrawBorder*  
- Specifies whether the button should display its border. This parameter is TRUE when the button should display its border and FALSE when the button should not display its border.  
+*bDrawBorder*<br/>
+[in] Specifies whether the button should display its border. This parameter is TRUE when the button should display its border and FALSE when the button should not display its border.  
   
- [in] *bGrayDisabledButtons*  
- Specifies whether to shade disabled buttons or use the disabled images collection. This parameter is TRUE when disabled buttons should be shaded and FALSE when this method should use the disabled images collection.  
+*bGrayDisabledButtons*<br/>
+[in] Specifies whether to shade disabled buttons or use the disabled images collection. This parameter is TRUE when disabled buttons should be shaded and FALSE when this method should use the disabled images collection.  
   
 ### Remarks  
  Override this method to customize toolbar button drawing.  
@@ -1008,14 +1008,14 @@ virtual int OnDrawOnCustomizeList(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- The device context that displays the button.  
+*pDC*<br/>
+[in] The device context that displays the button.  
   
- [in] *rect*  
- The bounding rectangle of the button.  
+*rect*<br/>
+[in] The bounding rectangle of the button.  
   
- [in] *bSelected*  
- Specifies whether the button is selected. If this parameter is TRUE, the button is selected. If this parameter is FALSE, the button is not selected.  
+*bSelected*<br/>
+[in] Specifies whether the button is selected. If this parameter is TRUE, the button is selected. If this parameter is FALSE, the button is not selected.  
   
 ### Return Value  
  The width, in pixels, of the button on the specified device context.  
@@ -1035,8 +1035,8 @@ virtual BOOL OnGetCustomToolTipText(CString& strToolTip);
 ```  
   
 ### Parameters  
- [out] *strToolTip*  
- A `CString` object that receives the custom tooltip text.  
+*strToolTip*<br/>
+[out] A `CString` object that receives the custom tooltip text.  
   
 ### Return Value  
  This method returns FALSE.  
@@ -1074,8 +1074,8 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### Parameters  
- [in] *bShow*  
- Specifies whether the button is visible. If this parameter is TRUE, the button is visible. Otherwise, the button is not visible.  
+*bShow*<br/>
+[in] Specifies whether the button is visible. If this parameter is TRUE, the button is visible. Otherwise, the button is not visible.  
   
 ### Remarks  
  The default implementation of this method does nothing. Override this method to update the visibility of the button.  
@@ -1088,8 +1088,8 @@ virtual void OnSize(int iSize);
 ```  
   
 ### Parameters  
- [in] *iSize*  
- The new width of the button.  
+*iSize*<br/>
+[in] The new width of the button.  
   
 ### Remarks  
  The default implementation of this method does nothing. Override this method to resize the button when the size or position of the parent toolbar changes.  
@@ -1104,11 +1104,11 @@ virtual BOOL OnToolHitTest(
 ```  
   
 ### Parameters  
- [in] *pWnd*  
- The parent window of the button. Can be NULL.  
+*pWnd*<br/>
+[in] The parent window of the button. Can be NULL.  
   
- [in] *pTI*  
- A `TOOLINFO` structure that contains information about a tool in a tooltip control.  
+*pTI*<br/>
+[in] A `TOOLINFO` structure that contains information about a tool in a tooltip control.  
   
 ### Return Value  
  The result of `OnMenuButtonToolHitTest` if the button can retrieve a pointer to the parent frame window; otherwise FALSE.  
@@ -1134,17 +1134,17 @@ virtual BOOL OnUpdateToolTip(
 ```  
   
 ### Parameters  
- [in] *pWndParent*  
- The parent window.  
+*pWndParent*<br/>
+[in] The parent window.  
   
- [in] *iButtonIndex*  
- The zero-based index of the button in the parent button collection.  
+*iButtonIndex*<br/>
+[in] The zero-based index of the button in the parent button collection.  
   
- [in] *wndToolTip*  
- The control that displays the tooltip text.  
+*wndToolTip*<br/>
+[in] The control that displays the tooltip text.  
   
- [out] *str*  
- A `CString` object that receives the updated tooltip text.  
+*str*<br/>
+[out] A `CString` object that receives the updated tooltip text.  
   
 ### Return Value  
  This method returns FALSE.  
@@ -1160,8 +1160,8 @@ virtual BOOL PrepareDrag(COleDataSource& srcItem);
 ```  
   
 ### Parameters  
- [in] *srcItem*  
- A `COleDataSource` object that stores state information about the drag-and-drop operation.  
+*srcItem*<br/>
+[in] A `COleDataSource` object that stores state information about the drag-and-drop operation.  
   
 ### Return Value  
  TRUE if the operation succeeds; otherwise FALSE.  
@@ -1215,8 +1215,8 @@ virtual void Serialize(CArchive& ar);
 ```  
   
 ### Parameters  
- [in] *ar*  
- The `CArchive` object from which or to which to serialize.  
+*ar*<br/>
+[in] The `CArchive` object from which or to which to serialize.  
   
 ### Remarks  
  This method supports data transfer processes such as clipboard or drag-and-drop operations. It reads or writes properties of the button such as the ID, text label, and image ID from or to the provided `CArchive` object.  
@@ -1233,11 +1233,11 @@ virtual BOOL SetACCData(
 ```  
   
 ### Parameters  
- [in] *pParent*  
- The parent window of the toolbar button.  
+*pParent*<br/>
+[in] The parent window of the toolbar button.  
   
- [in] *data*  
- A `CAccessibilityData` object that is populated with the accessibility data of the toolbar button.  
+*data*<br/>
+[in] A `CAccessibilityData` object that is populated with the accessibility data of the toolbar button.  
   
 ### Return Value  
  This method returns TRUE.  
@@ -1253,8 +1253,8 @@ static void __stdcall SetClipboardFormatName(LPCTSTR lpszName);
 ```  
   
 ### Parameters  
- [in] *lpszName*  
- The new name of the global clipboard format. Cannot be NULL.  
+*lpszName*<br/>
+[in] The new name of the global clipboard format. Cannot be NULL.  
   
 ### Remarks  
  This method makes it possible for drag-and-drop operations to occur among multiple applications. Each application must supply the same clipboard format name.  
@@ -1269,8 +1269,8 @@ virtual void SetImage(int iImage);
 ```  
   
 ### Parameters  
- [in] *iImage*  
- The index of the image in the collection of toolbar images.  
+*iImage*<br/>
+[in] The index of the image in the collection of toolbar images.  
   
 ### Remarks  
  If the toolbar button is a separator, *iImage* refers to the new width of the separator button.  
@@ -1285,8 +1285,8 @@ static void SetProtectedCommands(const CList<UINT,UINT>& lstCmds);
 ```  
   
 ### Parameters  
- [in] *lstCmds*  
- The list of protected commands.  
+*lstCmds*<br/>
+[in] The list of protected commands.  
   
 ### Remarks  
  In customization mode, the framework disables toolbar button commands that are protected. The user cannot perform drag-and-drop and edit operations on disabled toolbar buttons.  
@@ -1311,8 +1311,8 @@ void SetRect(const CRect rect);
 ```  
   
 ### Parameters  
- [in] *rect*  
- The new bounding rectangle of the button.  
+*rect*<br/>
+[in] The new bounding rectangle of the button.  
   
 ### Remarks  
  This method calls the [CMFCToolBarButton::OnMove](#onmove) method after it sets the new bounding rectangle.  
@@ -1325,8 +1325,8 @@ virtual void SetStyle(UINT nStyle);
 ```  
   
 ### Parameters  
- [in] *nStyle*  
- The new style of the button.  
+*nStyle*<br/>
+[in] The new style of the button.  
   
 ### Remarks  
  The default implementation sets the [CMFCToolBarButton::m_nStyle](#m_nstyle) data member to *nStyle*. Override this method if you want to perform additional processing to handle the change in style. See [ToolBar Control Styles](toolbar-control-styles.md) for a list of valid style flags.  
@@ -1339,8 +1339,8 @@ void SetVisible(BOOL bShow=TRUE);
 ```  
   
 ### Parameters  
- [in] *bShow*  
- A Boolean value that specifies whether to show or hide the button. If this parameter is TRUE, the button is shown. If the parameter is FALSE, the button is hidden.  
+*bShow*<br/>
+[in] A Boolean value that specifies whether to show or hide the button. If this parameter is TRUE, the button is shown. If the parameter is FALSE, the button is hidden.  
   
 ### Remarks  
  Use this function to hide or show a particular toolbar button. Call the [CPane::AdjustSizeImmediate](../../mfc/reference/cpane-class.md#adjustsizeimmediate) method after you call this method.  
@@ -1353,8 +1353,8 @@ void Show(BOOL bShow);
 ```  
   
 ### Parameters  
- [in] *bShow*  
- A Boolean value that specifies whether to show or hide the button. If this parameter is TRUE, the button is shown. If the parameter is FALSE, the button is hidden.  
+*bShow*<br/>
+[in] A Boolean value that specifies whether to show or hide the button. If this parameter is TRUE, the button is shown. If the parameter is FALSE, the button is hidden.  
   
 ### Remarks  
  The framework calls this method to update the visibility of toolbar buttons when their parent toolbar is resized. The framework calls this method with *bShow* set to FALSE when the button no longer fits within the bounds of the toolbar. The framework calls this method with *bShow* set to TRUE when after resizing the button again fits within the bounds of the toolbar.  

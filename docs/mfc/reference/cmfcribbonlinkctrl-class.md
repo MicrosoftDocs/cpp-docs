@@ -69,14 +69,14 @@ CMFCRibbonLinkCtrl(
 ```  
   
 ### Parameters  
- [in] *nID*  
- Specifies the command ID of the command that executes when the link control is clicked.  
+*nID*<br/>
+[in] Specifies the command ID of the command that executes when the link control is clicked.  
   
- [in] *lpszText*  
- Specifies the label to display on the link control.  
+*lpszText*<br/>
+[in] Specifies the label to display on the link control.  
   
- [in] *lpszLink*  
- Specifies the hyperlink associated with the link control.  
+*lpszLink*<br/>
+[in] Specifies the hyperlink associated with the link control.  
   
 ### Example  
  The following example demonstrates how to use the constructor of the `CMFCRibbonLinkCtrl` class. This code snippet is part of the [Ribbon Gadgets sample](../../visual-cpp-samples.md).  
@@ -226,8 +226,8 @@ void SetLink(LPCTSTR lpszLink);
 ```  
   
 ### Parameters  
- [in] *lpszLink*  
- Specifies the hyperlink text.  
+*lpszLink*<br/>
+[in] Specifies the hyperlink text.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

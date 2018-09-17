@@ -27,11 +27,11 @@ void __writemsr( 
 ```  
   
 #### Parameters  
- [in] `Register`  
- The model specific register.  
+*Register*<br/>
+[in] The model specific register.  
   
- [in] `Value`  
- The value to write.  
+*Value*<br/>
+[in] The value to write.  
   
 ## Requirements  
   

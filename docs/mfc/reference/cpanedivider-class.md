@@ -158,10 +158,10 @@ virtual BOOL AddPaneContainer(
 ```  
   
 ### Parameters  
- [in] *barContainerManager*  
- [in] *bOuterEdge*  
- [in] *pTargetBar*  
- [in] *dwAlignment*  
+*barContainerManager*<br/>
+[in] [in] *bOuterEdge*  
+*pTargetBar*<br/>
+[in] [in] *dwAlignment*  
   
 ### Return Value  
   
@@ -194,10 +194,10 @@ virtual void CalcExpectedDockedRect(
 ```  
   
 ### Parameters  
- [in] *pWndToDock*  
- [in] *ptMouse*  
- [in] *rectResult*  
- [in] *bDrawTab*  
+*pWndToDock*<br/>
+[in] [in] *ptMouse*  
+*rectResult*<br/>
+[in] [in] *bDrawTab*  
  [in] *ppTargetBar*  
   
 ### Remarks  
@@ -212,8 +212,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### Parameters  
- [in] *bStretch*  
- [in] *bHorz*  
+*bStretch*<br/>
+[in] [in] *bHorz*  
   
 ### Return Value  
   
@@ -243,8 +243,8 @@ CPaneDivider(
 ```  
   
 ### Parameters  
- [in] *bDefaultSlider*  
- [in] *pParent*  
+*bDefaultSlider*<br/>
+[in] [in] *pParent*  
   
 ### Return Value  
   
@@ -264,12 +264,12 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- [in] *dwStyleEx*  
- [in] *dwStyle*  
- [in] *rect*  
- [in] *pParentWnd*  
- [in] *nID*  
- [in] *pContext*  
+*dwStyleEx*<br/>
+[in] [in] *dwStyle*  
+*rect*<br/>
+[in] [in] *pParentWnd*  
+*nID*<br/>
+[in] [in] *pContext*  
   
 ### Return Value  
   
@@ -307,8 +307,8 @@ CPaneContainer* FindPaneContainer(
 ```  
   
 ### Parameters  
- [in] *pBar*  
- [in] *bLeftBar*  
+*pBar*<br/>
+[in] [in] *bLeftBar*  
   
 ### Return Value  
   
@@ -358,8 +358,8 @@ void GetPaneDividers(CObList& lstSliders);
 ```  
   
 ### Parameters  
- [out] *lstSliders*  
- Contains the list of pane dividers that reside in the pane container.  
+*lstSliders*<br/>
+[out] Contains the list of pane dividers that reside in the pane container.  
   
 ### Remarks  
  This method should be called for default pane dividers only. A default pane divider is a divider that resizes the entire pane container.  
@@ -383,8 +383,8 @@ void GetPanes(CObList& lstBars);
 ```  
   
 ### Parameters  
- [out] *lstBars*  
- Contains the list of panes that reside in the pane container.  
+*lstBars*<br/>
+[out] Contains the list of panes that reside in the pane container.  
   
 ### Remarks  
  This method should be called for default pane dividers only. A default pane divider is a divider that resizes the entire pane container.  
@@ -421,8 +421,8 @@ void Init(
 ```  
   
 ### Parameters  
- [in] *bDefaultSlider*  
- [in] *pParent*  
+*bDefaultSlider*<br/>
+[in] [in] *pParent*  
   
 ### Remarks  
   
@@ -438,10 +438,10 @@ virtual BOOL InsertPane(
 ```  
   
 ### Parameters  
- [in] *pBarToInsert*  
- [in] *pTargetBar*  
- [in] *dwAlignment*  
- [in] *lpRect*  
+*pBarToInsert*<br/>
+[in] [in] *pTargetBar*  
+*dwAlignment*<br/>
+[in] [in] *lpRect*  
   
 ### Return Value  
   
@@ -497,8 +497,8 @@ virtual void Move(
 ```  
   
 ### Parameters  
- [in] *ptOffset*  
- [in] *bAdjustLayout*  
+*ptOffset*<br/>
+[in] [in] *bAdjustLayout*  
   
 ### Remarks  
   
@@ -543,8 +543,8 @@ virtual void OnShowPane(
 ```  
   
 ### Parameters  
- [in] *pBar*  
- [in] *bShow*  
+*pBar*<br/>
+[in] [in] *bShow*  
   
 ### Remarks  
   
@@ -579,8 +579,8 @@ virtual BOOL ReplacePane(
 ```  
   
 ### Parameters  
- [in] *pBarToReplace*  
- [in] *pBarToReplaceWith*  
+*pBarToReplace*<br/>
+[in] [in] *pBarToReplaceWith*  
   
 ### Return Value  
   
@@ -596,8 +596,8 @@ virtual void RepositionPanes(
 ```  
   
 ### Parameters  
- [in] *rectNew*  
- [in] *hdwp*  
+*rectNew*<br/>
+[in] [in] *hdwp*  
   
 ### Remarks  
   
@@ -647,8 +647,8 @@ void StoreRecentTabRelatedInfo(
 ```  
   
 ### Parameters  
- [in] *pDockingBar*  
- [in] *pTabbedBar*  
+*pDockingBar*<br/>
+[in] [in] *pTabbedBar*  
   
 ### Remarks  
   

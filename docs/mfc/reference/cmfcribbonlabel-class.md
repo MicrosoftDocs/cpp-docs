@@ -65,11 +65,11 @@ CMFCRibbonLabel(
 ```  
   
 ### Parameters  
- [in] *lpszText*  
- The text to appear in the label.  
+*lpszText*<br/>
+[in] The text to appear in the label.  
   
- [in] *bIsMultiLine*  
- TRUE to specify that the label is a multi-line label; otherwise, FALSE.  
+*bIsMultiLine*<br/>
+[in] TRUE to specify that the label is a multi-line label; otherwise, FALSE.  
   
 ##  <a name="setaccdata"></a>  CMFCRibbonLabel::SetACCData  
  Determines the accessibility data for the current ribbon label element.  
@@ -81,11 +81,11 @@ virtual BOOL SetACCData(
 ```  
   
 ### Parameters  
- [in] *pParent*  
- Represents the parent window of the current ribbon label.  
+*pParent*<br/>
+[in] Represents the parent window of the current ribbon label.  
   
- [out] *data*  
- An object of type `CAccessibilityData` that is populated with the accessibility data of the current ribbon label.  
+*data*<br/>
+[out] An object of type `CAccessibilityData` that is populated with the accessibility data of the current ribbon label.  
   
 ### Return Value  
  TRUE if the *data* parameter was successfully populated with the accessibility data of the current ribbon label; otherwise, FALSE.  

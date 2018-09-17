@@ -140,8 +140,8 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```  
   
 ### Parameters  
- [in] *pMsg*  
- Points to a [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message to process.  
+*pMsg*<br/>
+[in] Points to a [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message to process.  
   
 ### Return Value  
  Nonzero if the message was translated and should not be dispatched; 0 if the message was not translated and should be dispatched.  
@@ -156,8 +156,8 @@ virtual CSize SizeToContent(BOOL bCalcOnly = FALSE);
 ```  
   
 ### Parameters  
- [in] *bCalcOnly*  
- A Boolean parameter that indicates whether this method resizes the button .  
+*bCalcOnly*<br/>
+[in] A Boolean parameter that indicates whether this method resizes the button .  
   
 ### Return Value  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) object that specifies the new size for the button.  

@@ -25,11 +25,11 @@ struct is_trivially_assignable;
 
 ### Parameters
 
-To
- The type of the object that receives the assignment.
+*To*<br/>
+The type of the object that receives the assignment.
 
-From
- The type of the object that provides the value.
+*From*<br/>
+The type of the object that provides the value.
 
 ## Remarks
 

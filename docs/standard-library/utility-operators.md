@@ -29,10 +29,10 @@ constexpr bool operator!=(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-*left*  
+*left*<br/>
 An object of type `pair`.
 
-*right*  
+*right*<br/>
 An object of type `pair`.
 
 ### Return Value
@@ -164,10 +164,10 @@ constexpr bool operator<(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-*left*  
+*left*<br/>
 An object of type `pair` on the left side of the operator.
 
-*right*  
+*right*<br/>
 An object of type `pair` on the right side of the operator.
 
 ### Return Value
@@ -241,10 +241,10 @@ constexpr bool operator<=(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-*left*  
+*left*<br/>
 An object of type `pair` on the left side of the operator.
 
-*right*  
+*right*<br/>
 An object of type `pair` on the right side of the operator.
 
 ### Return Value
@@ -326,10 +326,10 @@ constexpr bool operator>(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-*left*  
+*left*<br/>
 An object of type `pair` on the left side of the operator.
 
-*right*  
+*right*<br/>
 An object of type `pair` on the right side of the operator.
 
 ### Return Value
@@ -413,10 +413,10 @@ constexpr bool operator>=(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-*left*  
+*left*<br/>
 An object of type `pair` on the left side of the operator.
 
-*right*  
+*right*<br/>
 An object of type `pair` on the right side of the operator.
 
 ### Return Value

@@ -82,11 +82,11 @@ virtual INT_PTR AddItem(
 ```  
   
 ### Parameters  
- [in] *lpszItem*  
- The string of the item to add.  
+*lpszItem*<br/>
+[in] The string of the item to add.  
   
- [in] *dwData*  
- The data associated with the item to add.  
+*dwData*<br/>
+[in] The data associated with the item to add.  
   
 ### Return Value  
  The zero-based index of the appended item.  
@@ -108,20 +108,20 @@ CMFCRibbonComboBox();
 ```  
   
 ### Parameters  
- [in] *nID*  
- The ID of the combo box.  
+*nID*<br/>
+[in] The ID of the combo box.  
   
- [in] *bHasEditBox*  
- TRUE if you want an edit box within the control; FALSE otherwise.  
+*bHasEditBox*<br/>
+[in] TRUE if you want an edit box within the control; FALSE otherwise.  
   
- [in] *nWidth*  
- Width of the combo box in pixels; or -1 for the default width.  
+*nWidth*<br/>
+[in] Width of the combo box in pixels; or -1 for the default width.  
   
- [in] *lpszLabel*  
- The display label of the combo box.  
+*lpszLabel*<br/>
+[in] The display label of the combo box.  
   
- [in] *nImage*  
- The small image index of the combo box.  
+*nImage*<br/>
+[in] The small image index of the combo box.  
   
 ### Remarks  
  The default width is 108 pixels.  
@@ -137,14 +137,14 @@ BOOL DeleteItem(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- [in] *iIndex*  
- The zero-based index of the item to be deleted.  
+*iIndex*<br/>
+[in] The zero-based index of the item to be deleted.  
   
- [in] *dwData*  
- The data associated with the item to be deleted.  
+*dwData*<br/>
+[in] The data associated with the item to be deleted.  
   
- [in] *lpszText*  
- The string of the item to be deleted. If there are multiple items with the same string, the first item is deleted.  
+*lpszText*<br/>
+[in] The string of the item to be deleted. If there are multiple items with the same string, the first item is deleted.  
   
 ### Return Value  
  TRUE if the specified item has been deleted; otherwise, FALSE.  
@@ -159,8 +159,8 @@ void EnableDropDownListResize(BOOL bEnable=FALSE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable resizing; FALSE to disable resizing.  
+*bEnable*<br/>
+[in] TRUE to enable resizing; FALSE to disable resizing.  
   
 ### Remarks  
  When resizing is enabled, the list box will change size to fit the items it displays.  
@@ -173,8 +173,8 @@ int FindItem(LPCTSTR lpszText) const;
 ```  
   
 ### Parameters  
- [in] *lpszText*  
- The string of an item in the list box.  
+*lpszText*<br/>
+[in] The string of an item in the list box.  
   
 ### Return Value  
  The zero-based index of the item; or -1 if the item is not found.  
@@ -223,8 +223,8 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context for the combo box.  
+*pDC*<br/>
+[in] Pointer to a device context for the combo box.  
   
 ### Return Value  
  The size of the combo box.  
@@ -240,8 +240,8 @@ LPCTSTR GetItem(int iIndex) const;
 ```  
   
 ### Parameters  
- [in] *iIndex*  
- The zero-based index of an item in the list box.  
+*iIndex*<br/>
+[in] The zero-based index of an item in the list box.  
   
 ### Return Value  
  A pointer to the string that is associated with the item; otherwise, NULL if the index parameter is invalid, or if the index parameter is -1 and there is no item selected in the combo box.  
@@ -256,8 +256,8 @@ DWORD_PTR GetItemData(int iIndex) const;
 ```  
   
 ### Parameters  
- [in] *iIndex*  
- The zero-based index of an item in the list box.  
+*iIndex*<br/>
+[in] The zero-based index of an item in the list box.  
   
 ### Return Value  
  The data associated with the item; or 0 if the item does not exist, or if the index parameter is -1 and there is no selected item in the list box.  
@@ -295,8 +295,8 @@ virtual void OnSelectItem(int nItem);
 ```  
   
 ### Parameters  
- [in] *nItem*  
- The index of the selected item.  
+*nItem*<br/>
+[in] The index of the selected item.  
   
 ### Remarks  
  Override this method if you want to process a user input selection.  
@@ -321,14 +321,14 @@ BOOL SelectItem(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- [in] *iIndex*  
- The zero-based index of an item in the list box.  
+*iIndex*<br/>
+[in] The zero-based index of an item in the list box.  
   
- [in] *dwData*  
- The data associated with an item in the list box.  
+*dwData*<br/>
+[in] The data associated with an item in the list box.  
   
- [in] *lpszText*  
- The string of an item in the list box.  
+*lpszText*<br/>
+[in] The string of an item in the list box.  
   
 ### Return Value  
  TRUE if the method was successful; otherwise FALSE.  
@@ -343,8 +343,8 @@ void SetDropDownHeight(int nHeight);
 ```  
   
 ### Parameters  
- [in] *nHeight*  
- The height, in pixels, of the list box.  
+*nHeight*<br/>
+[in] The height, in pixels, of the list box.  
   
 ### Remarks  
  The default height is 150 pixels.  

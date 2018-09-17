@@ -131,8 +131,8 @@ virtual BOOL CleanState(LPCTSTR lpszSectionName=NULL);
 ```  
   
 ### Parameters  
- [in] *lpszSectionName*  
- A string that contains a path of a registry key.  
+*lpszSectionName*<br/>
+[in] A string that contains a path of a registry key.  
   
 ### Return Value  
  Nonzero if the method was successful; otherwise 0.  
@@ -148,8 +148,8 @@ CWinAppEx(BOOL bResourceSmartUpdate = FALSE);
 ```  
   
 ### Parameters  
- [in] *bResourceSmartUpdate*  
- A Boolean parameter that specifies whether the workspace object should detect and handle resource updates.  
+*bResourceSmartUpdate*<br/>
+[in] A Boolean parameter that specifies whether the workspace object should detect and handle resource updates.  
   
 ### Remarks  
  The `CWinAppEx` class has initialization methods, provides functionality for saving and loading application information to the registry, and controls global application settings. It also enables you to use global managers such as the [CKeyboardManager Class](../../mfc/reference/ckeyboardmanager-class.md) and the [CUserToolsManager Class](../../mfc/reference/cusertoolsmanager-class.md). Each application can have only one instance of the `CWinAppEx` class.  
@@ -162,8 +162,8 @@ void EnableLoadWindowPlacement(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- Specifies whether the application loads the initial size and location of the main frame window from the registry.  
+*bEnable*<br/>
+[in] Specifies whether the application loads the initial size and location of the main frame window from the registry.  
   
 ### Remarks  
  By default, the size and location of the main frame is loaded from the registry together with other application settings. This occurs during [CWinAppEx::LoadState](#loadstate). If you do not want to load the initial window placement from the registry, call this method with *bEnable* set to FALSE.  
@@ -179,14 +179,14 @@ BOOL EnableTearOffMenus(
 ```  
   
 ### Parameters  
- [in] *lpszRegEntry*  
- A string that contains the path of a registry key. The application uses this registry key to store information for the tear-off menus.  
+*lpszRegEntry*<br/>
+[in] A string that contains the path of a registry key. The application uses this registry key to store information for the tear-off menus.  
   
- [in] *uiCmdFirst*  
- The first tear off menu ID.  
+*uiCmdFirst*<br/>
+[in] The first tear off menu ID.  
   
- [in] *uiCmdLast*  
- The last tear off menu ID.  
+*uiCmdLast*<br/>
+[in] The last tear off menu ID.  
   
 ### Return Value  
  TRUE if the `CMenuTearOffManager` is created and initialized successfully; FALSE if an error occurs or if the `CMenuTearOffManager` already exists.  
@@ -208,23 +208,23 @@ BOOL EnableUserTools(
 ```  
   
 ### Parameters  
- [in] *uiCmdToolsDummy*  
- An unsigned integer that the framework uses as a placeholder for the command ID of the user tools menu.  
+*uiCmdToolsDummy*<br/>
+[in] An unsigned integer that the framework uses as a placeholder for the command ID of the user tools menu.  
   
- [in] *uiCmdFirst*  
- The command ID for the first user tool command.  
+*uiCmdFirst*<br/>
+[in] The command ID for the first user tool command.  
   
- [in] *uiCmdLast*  
- The command ID for the last user tool command.  
+*uiCmdLast*<br/>
+[in] The command ID for the last user tool command.  
   
- [in] *pToolRTC*  
- A class that the `CUserToolsManager` object uses to create new user tools.  
+*pToolRTC*<br/>
+[in] A class that the `CUserToolsManager` object uses to create new user tools.  
   
- [in] *uArgMenuID*  
- The argument menu ID.  
+*uArgMenuID*<br/>
+[in] The argument menu ID.  
   
- [in] *uInitDirMenuID*  
- The menu ID for the initial tool directory.  
+*uInitDirMenuID*<br/>
+[in] The menu ID for the initial tool directory.  
   
 ### Return Value  
  TRUE if the method creates and initializes a `CUserToolsManager` object; FALSE if the method fails or if a `CUserToolsManager` object already exists.  
@@ -258,14 +258,14 @@ BOOL GetBinary(
 ```  
   
 ### Parameters  
- [in] *lpszEntry*  
- A string that contains the name of a registry key.  
+*lpszEntry*<br/>
+[in] A string that contains the name of a registry key.  
   
- [out] *ppData*  
- A pointer to the buffer that the method fills with the binary data.  
+*ppData*<br/>
+[out] A pointer to the buffer that the method fills with the binary data.  
   
- [out] *pBytes*  
- A pointer to an unsigned integer that the method uses to write the number of bytes read.  
+*pBytes*<br/>
+[out] A pointer to an unsigned integer that the method uses to write the number of bytes read.  
   
 ### Return Value  
  TRUE if successful; FALSE otherwise.  
@@ -329,11 +329,11 @@ int GetInt(
 ```  
   
 ### Parameters  
- [in] *lpszEntry*  
- A string that contains the name of a registry entry.  
+*lpszEntry*<br/>
+[in] A string that contains the name of a registry entry.  
   
- [in] *nDefault*  
- The default value that the method returns if the specified registry entry does not exist.  
+*nDefault*<br/>
+[in] The default value that the method returns if the specified registry entry does not exist.  
   
 ### Return Value  
  The registry data if the method was successful; otherwise *nDefault*.  
@@ -379,11 +379,11 @@ BOOL GetObject(
 ```  
   
 ### Parameters  
- [in] *lpszEntry*  
- A string that contains the relative path of a registry entry.  
+*lpszEntry*<br/>
+[in] A string that contains the relative path of a registry entry.  
   
- [out] *obj*  
- A reference to a `CObject`. The method uses this reference to store the registry data.  
+*obj*<br/>
+[out] A reference to a `CObject`. The method uses this reference to store the registry data.  
   
 ### Return Value  
  Nonzero if the method was successful; otherwise 0.  
@@ -414,8 +414,8 @@ CString GetRegSectionPath(LPCTSTR szSectionAdd = _T(""));
 ```  
   
 ### Parameters  
- [in] *szSectionAdd*  
- A string that contains the relative path of a registry key.  
+*szSectionAdd*<br/>
+[in] A string that contains the relative path of a registry key.  
   
 ### Return Value  
  A `CString` that contains the absolute path of a registry key.  
@@ -435,17 +435,17 @@ BOOL GetSectionBinary(
 ```  
   
 ### Parameters  
- [in] *lpszSubSection*  
- A string that contains the relative path of a registry key.  
+*lpszSubSection*<br/>
+[in] A string that contains the relative path of a registry key.  
   
- [in] *lpszEntry*  
- A string that contains the value to read.  
+*lpszEntry*<br/>
+[in] A string that contains the value to read.  
   
- [out] *ppData*  
- A pointer to the buffer where the method stores the data.  
+*ppData*<br/>
+[out] A pointer to the buffer where the method stores the data.  
   
- [out] *pBytes*  
- A pointer to an unsigned integer. The method writes the size of *ppData* to this parameter.  
+*pBytes*<br/>
+[out] A pointer to an unsigned integer. The method writes the size of *ppData* to this parameter.  
   
 ### Return Value  
  TRUE if successful; otherwise FALSE.  
@@ -466,14 +466,14 @@ int GetSectionInt(
 ```  
   
 ### Parameters  
- [in] *lpszSubSection*  
- A string that contains the relative path of a registry key.  
+*lpszSubSection*<br/>
+[in] A string that contains the relative path of a registry key.  
   
- [in] *lpszEntry*  
- A string that contains the value to read.  
+*lpszEntry*<br/>
+[in] A string that contains the value to read.  
   
- [in] *nDefault*  
- The default value to return if the specified value does not exist.  
+*nDefault*<br/>
+[in] The default value to return if the specified value does not exist.  
   
 ### Return Value  
  The integer data that is stored in the specified registry value; *nDefault* if the data does not exist.  
@@ -494,14 +494,14 @@ BOOL GetSectionObject(
 ```  
   
 ### Parameters  
- [in] *lpszSubSection*  
- A string that contains the relative path of a registry key.  
+*lpszSubSection*<br/>
+[in] A string that contains the relative path of a registry key.  
   
- [in] *lpszEntry*  
- A string that contains the value to read.  
+*lpszEntry*<br/>
+[in] A string that contains the value to read.  
   
- [out] *obj*  
- A reference to a `CObject`. The method uses this `CObject` to store the registry data.  
+*obj*<br/>
+[out] A reference to a `CObject`. The method uses this `CObject` to store the registry data.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -522,14 +522,14 @@ CString GetSectionString(
 ```  
   
 ### Parameters  
- [in] *lpszSubSection*  
- A string that contains the relative path of a registry key.  
+*lpszSubSection*<br/>
+[in] A string that contains the relative path of a registry key.  
   
- [in] *lpszEntry*  
- A string that contains the value to read.  
+*lpszEntry*<br/>
+[in] A string that contains the value to read.  
   
- [in] *lpszDefault*  
- The default value to return if the specified value does not exist.  
+*lpszDefault*<br/>
+[in] The default value to return if the specified value does not exist.  
   
 ### Return Value  
  The string data stored in the specified registry value if the data exists; otherwise *lpszDefault*.  
@@ -562,11 +562,11 @@ CString GetString(
 ```  
   
 ### Parameters  
- [in] *lpszEntry*  
- A string that contains the name of a registry key  
+*lpszEntry*<br/>
+[in] A string that contains the name of a registry key  
   
- [in] *lpzDefault*  
- The default value that the method returns if the specified registry entry does not exist.  
+*lpzDefault*<br/>
+[in] The default value that the method returns if the specified registry entry does not exist.  
   
 ### Return Value  
  The string data stored in the registry if successful; *lpszDefault* otherwise.  
@@ -696,8 +696,8 @@ BOOL IsStateExists(LPCTSTR lpszSectionName);
 ```  
   
 ### Parameters  
- [in] *lpszSectionName*  
- A string that contains a path of a registry key.  
+*lpszSectionName*<br/>
+[in] A string that contains a path of a registry key.  
   
 ### Return Value  
  Nonzero if the key is in the registry; otherwise 0.  
@@ -739,14 +739,14 @@ virtual BOOL LoadState(
 ```  
   
 ### Parameters  
- [in] *pFrame*  
- A pointer to a frame window object. The method applies the state information in the registry to this frame window.  
+*pFrame*<br/>
+[in] A pointer to a frame window object. The method applies the state information in the registry to this frame window.  
   
- [in] *lpszSectionName*  
- A string that contains the relative path of a registry key.  
+*lpszSectionName*<br/>
+[in] A string that contains the relative path of a registry key.  
   
- [in] *pFrameImpl*  
- A pointer to a `CFrameImpl` object. The method applies the state information in the registry to this frame window.  
+*pFrameImpl*<br/>
+[in] A pointer to a `CFrameImpl` object. The method applies the state information in the registry to this frame window.  
   
 ### Return Value  
  Nonzero if successful; 0 otherwise.  
@@ -769,14 +769,14 @@ virtual BOOL LoadWindowPlacement(
 ```  
   
 ### Parameters  
- [out] *rectNormalPosition*  
- A rectangle that contains the coordinates of the main frame window when it is in the restored position.  
+*rectNormalPosition*<br/>
+[out] A rectangle that contains the coordinates of the main frame window when it is in the restored position.  
   
- [out] *nFlags*  
- Flags that control the position of the minimized window and how the operating system switches between a minimized window and a restored window.  
+*nFlags*<br/>
+[out] Flags that control the position of the minimized window and how the operating system switches between a minimized window and a restored window.  
   
- [out] *nShowCmd*  
- An integer that specifies the show state of the window. For more information about possible values, see [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow).  
+*nShowCmd*<br/>
+[out] An integer that specifies the show state of the window. For more information about possible values, see [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow).  
   
 ### Return Value  
  Nonzero if successful; 0 otherwise.  
@@ -806,11 +806,11 @@ virtual void OnAppContextHelp(
 ```  
   
 ### Parameters  
- [in] *pWndControl*  
- A pointer to a window object for which the user invoked context help.  
+*pWndControl*<br/>
+[in] A pointer to a window object for which the user invoked context help.  
   
- [in] *dwHelpIDArray[]*  
- A reserved value.  
+*dwHelpIDArray[]*<br/>
+[in] A reserved value.  
   
 ### Remarks  
  This method is currently reserved for future use. The default implementation does nothing and it is currently not called by the framework.  
@@ -823,8 +823,8 @@ virtual void OnClosingMainFrame(CFrameImpl* pFrameImpl);
 ```  
   
 ### Parameters  
- [in] *pFrameImpl*  
- A pointer to a `CFrameImpl` object.  
+*pFrameImpl*<br/>
+[in] A pointer to a `CFrameImpl` object.  
   
 ### Remarks  
  The default implementation of this method saves the state of *pFrameImpl*.  
@@ -839,11 +839,11 @@ virtual BOOL OnViewDoubleClick(
 ```  
   
 ### Parameters  
- [in] *pWnd*  
- A pointer to an object derived from the [CView Class](../../mfc/reference/cview-class.md).  
+*pWnd*<br/>
+[in] A pointer to an object derived from the [CView Class](../../mfc/reference/cview-class.md).  
   
- [in] *iViewId*  
- The view ID.  
+*iViewId*<br/>
+[in] The view ID.  
   
 ### Return Value  
  TRUE if the framework finds a command; otherwise FALSE.  
@@ -893,8 +893,8 @@ virtual BOOL ReloadWindowPlacement(CFrameWnd* pFrame);
 ```  
   
 ### Parameters  
- [in] *pFrame*  
- A pointer to a frame window.  
+*pFrame*<br/>
+[in] A pointer to a frame window.  
   
 ### Return Value  
  Nonzero if the method was successful; 0 if the load failed or there is no data to load.  
@@ -937,14 +937,14 @@ BOOL SaveState(
 ```  
   
 ### Parameters  
- [in] *lpszSectionName*  
- A string that contains the relative path of a registry key.  
+*lpszSectionName*<br/>
+[in] A string that contains the relative path of a registry key.  
   
- [in] *pFrameImpl*  
- A pointer to a `CFrameImpl` object. This frame is saved to the Windows registry.  
+*pFrameImpl*<br/>
+[in] A pointer to a `CFrameImpl` object. This frame is saved to the Windows registry.  
   
- [in] *pFrame*  
- A pointer to a frame window object. This frame is saved to the Windows registry.  
+*pFrame*<br/>
+[in] A pointer to a frame window object. This frame is saved to the Windows registry.  
   
 ### Return Value  
  TRUE if successful; FALSE otherwise.  
@@ -962,8 +962,8 @@ LPCTSTR SetRegistryBase(LPCTSTR lpszSectionName = NULL);
 ```  
   
 ### Parameters  
- [in] *lpszSectionName*  
- A string that contains the path of a registry key.  
+*lpszSectionName*<br/>
+[in] A string that contains the path of a registry key.  
   
 ### Return Value  
  A string that contains the path of the default registry location.  
@@ -982,14 +982,14 @@ virtual BOOL ShowPopupMenu(
 ```  
   
 ### Parameters  
- [in] *uiMenuResId*  
- A menu resource ID.  
+*uiMenuResId*<br/>
+[in] A menu resource ID.  
   
- [in] *point*  
- A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) that specifies the position of the menu in screen coordinates.  
+*point*<br/>
+[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) that specifies the position of the menu in screen coordinates.  
   
- [in] *pWnd*  
- A pointer to the window that owns the popup menu.  
+*pWnd*<br/>
+[in] A pointer to the window that owns the popup menu.  
   
 ### Return Value  
  Nonzero if the popup menu is displayed successfully; 0 otherwise.  
@@ -1010,14 +1010,14 @@ virtual BOOL StoreWindowPlacement(
 ```  
   
 ### Parameters  
- [in] *nFlags*  
- Flags that control the position of the minimized window and how the operating system switches between a minimized window and a restored window.  
+*nFlags*<br/>
+[in] Flags that control the position of the minimized window and how the operating system switches between a minimized window and a restored window.  
   
- [in] *nShowCmd*  
- An integer that specifies the show state of the window. For more information about possible values, see [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow).  
+*nShowCmd*<br/>
+[in] An integer that specifies the show state of the window. For more information about possible values, see [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow).  
   
- [in] *rectNormalPosition*  
- A rectangle that contains the coordinates of the main frame window when it is in the restored state.  
+*rectNormalPosition*<br/>
+[in] A rectangle that contains the coordinates of the main frame window when it is in the restored state.  
   
 ### Return Value  
  Nonzero if successful; 0 otherwise.  
@@ -1038,14 +1038,14 @@ BOOL WriteBinary(
 ```  
   
 ### Parameters  
- [in] *lpszEntry*  
- A string that contains the name of a registry key.  
+*lpszEntry*<br/>
+[in] A string that contains the name of a registry key.  
   
- [in] *pData*  
- The data to store.  
+*pData*<br/>
+[in] The data to store.  
   
- [in] *nBytes*  
- The size of *pData* in bytes.  
+*nBytes*<br/>
+[in] The size of *pData* in bytes.  
   
 ### Return Value  
  TRUE if this method is successful; otherwise FALSE.  
@@ -1065,11 +1065,11 @@ BOOL WriteInt(
 ```  
   
 ### Parameters  
- [in] *lpszEntry*  
- A string that contains the name of a registry key.  
+*lpszEntry*<br/>
+[in] A string that contains the name of a registry key.  
   
- [in] *nValue*  
- The data to store.  
+*nValue*<br/>
+[in] The data to store.  
   
 ### Return Value  
  TRUE if this method is successful; otherwise FALSE.  
@@ -1089,11 +1089,11 @@ BOOL WriteObject(
 ```  
   
 ### Parameters  
- [in] *lpszEntry*  
- A string that contains the value to set.  
+*lpszEntry*<br/>
+[in] A string that contains the value to set.  
   
- [in] *obj*  
- A reference to `CObject` data that the method will store.  
+*obj*<br/>
+[in] A reference to `CObject` data that the method will store.  
   
 ### Return Value  
  TRUE if this method is successful; otherwise FALSE.  
@@ -1113,17 +1113,17 @@ BOOL WriteSectionBinary(
 ```  
   
 ### Parameters  
- [in] *lpszSubSection*  
- A string that contains the name of a registry key  
+*lpszSubSection*<br/>
+[in] A string that contains the name of a registry key  
   
- [in] *lpszEntry*  
- A string that contains the value to set.  
+*lpszEntry*<br/>
+[in] A string that contains the value to set.  
   
- [in] *pData*  
- The data to write to the registry.  
+*pData*<br/>
+[in] The data to write to the registry.  
   
- [in] *nBytes*  
- The size of *pData* in bytes.  
+*nBytes*<br/>
+[in] The size of *pData* in bytes.  
   
 ### Return Value  
  TRUE if this method is successful; otherwise FALSE.  
@@ -1144,14 +1144,14 @@ BOOL WriteSectionInt(
 ```  
   
 ### Parameters  
- [in] *lpszSubSection*  
- A string that contains the relative path of a registry key.  
+*lpszSubSection*<br/>
+[in] A string that contains the relative path of a registry key.  
   
- [in] *lpszEntry*  
- A string that contains the value to set.  
+*lpszEntry*<br/>
+[in] A string that contains the value to set.  
   
- [in] *nValue*  
- The data to write to the registry.  
+*nValue*<br/>
+[in] The data to write to the registry.  
   
 ### Return Value  
  TRUE if this method is successful; otherwise FALSE.  
@@ -1172,14 +1172,14 @@ BOOL WriteSectionObject(
 ```  
   
 ### Parameters  
- [in] *lpszSubSection*  
- A string that contains the name of a registry key.  
+*lpszSubSection*<br/>
+[in] A string that contains the name of a registry key.  
   
- [in] *lpszEntry*  
- A string that contains the name of the value to set.  
+*lpszEntry*<br/>
+[in] A string that contains the name of the value to set.  
   
- [in] *obj*  
- The data to store.  
+*obj*<br/>
+[in] The data to store.  
   
 ### Return Value  
  TRUE if this method is successful; otherwise FALSE.  
@@ -1200,14 +1200,14 @@ BOOL WriteSectionString(
 ```  
   
 ### Parameters  
- [in] *lpszSubSection*  
- A string that contains the name of a registry key.  
+*lpszSubSection*<br/>
+[in] A string that contains the name of a registry key.  
   
- [in] *lpszEntry*  
- A string that contains the value to set.  
+*lpszEntry*<br/>
+[in] A string that contains the value to set.  
   
- [in] *lpszValue*  
- The string data to write to the registry.  
+*lpszValue*<br/>
+[in] The string data to write to the registry.  
   
 ### Return Value  
  TRUE if this method is successful; otherwise FALSE.  
@@ -1227,11 +1227,11 @@ BOOL WriteString(
 ```  
   
 ### Parameters  
- [in] *lpszEntry*  
- A string that contains the name of a registry key.  
+*lpszEntry*<br/>
+[in] A string that contains the name of a registry key.  
   
- [in] *lpszValue*  
- The data to store.  
+*lpszValue*<br/>
+[in] The data to store.  
   
 ### Return Value  
  TRUE if this method is successful; otherwise FALSE.  

@@ -70,8 +70,8 @@ void Build(
 ```  
   
 ### Parameters  
- [in] *uiTearOffBarID*  
- [in] *strText*  
+*uiTearOffBarID*<br/>
+[in] [in] *strText*  
   
 ### Remarks  
   
@@ -107,14 +107,14 @@ BOOL Initialize(
 ```  
   
 ### Parameters  
- [in] *lpszRegEntry*  
- A string that contains the path of a registry entry. Your applications stores the settings for tear-off bars in this registry entry.  
+*lpszRegEntry*<br/>
+[in] A string that contains the path of a registry entry. Your applications stores the settings for tear-off bars in this registry entry.  
   
- [in] *uiTearOffMenuFirst*  
- The first menu ID for a tear-off menu.  
+*uiTearOffMenuFirst*<br/>
+[in] The first menu ID for a tear-off menu.  
   
- [in] *uiTearOffMenuLast*  
- The last menu ID for a tear-off menu.  
+*uiTearOffMenuLast*<br/>
+[in] The last menu ID for a tear-off menu.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -172,8 +172,8 @@ void SetInUse(
 ```  
   
 ### Parameters  
- [in] *uiCmdId*  
- [in] *bUse*  
+*uiCmdId*<br/>
+[in] [in] *bUse*  
   
 ### Remarks  
   

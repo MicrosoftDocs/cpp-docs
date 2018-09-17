@@ -37,26 +37,26 @@ function declaration
 *name*  
 A user-defined name for the code block that will appear in the .idl file.
 
-*dllname* (optional)  
-The .dll file that contains the export.
+*dllname*  
+(Optional) The .dll file that contains the export.
 
-*uuid* (optional)  
-A unique ID.
+*uuid*  
+(Optional) A unique ID.
 
-*helpstring* (optional)  
-A character string used to describe the type library.
+*helpstring*  
+(Optional) A character string used to describe the type library.
 
-*helpstringcontext* (optional)  
-The ID of a help topic in an .hlp or .chm file.
+*helpstringcontext*  
+(Optional) The ID of a help topic in an .hlp or .chm file.
 
-*helpcontext* (optional)  
-The Help ID for this type library.
+*helpcontext*  
+(Optional) The Help ID for this type library.
 
-*hidden* (optional)  
-A parameter that prevents the library from being displayed. See the [hidden](/windows/desktop/Midl/hidden) MIDL attribute for more information.
+*hidden*  
+(Optional) A parameter that prevents the library from being displayed. See the [hidden](/windows/desktop/Midl/hidden) MIDL attribute for more information.
 
-*restricted*  (optional)  
-Members of the library cannot be arbitrarily called. See the [restricted](/windows/desktop/Midl/restricted) MIDL attribute for more information.
+*restricted*  
+(Optional) Members of the library cannot be arbitrarily called. See the [restricted](/windows/desktop/Midl/restricted) MIDL attribute for more information.
 
 *function declaration*  
 The function that you will define.

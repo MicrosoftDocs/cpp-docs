@@ -32,8 +32,8 @@ The default interface that will be made available to scripting environments that
 
 If no default interface is specified, the first occurrence of a nonsource interface is used as the default.
 
-*interface2*(optional)  
-The default source interface. You must also specify this interface with the [source](../windows/source-cpp.md) attribute.
+*interface2*<br/>
+(Optional) The default source interface. You must also specify this interface with the [source](../windows/source-cpp.md) attribute.
 
 If no default source interface is specified, the first source interface is used as the default.
 

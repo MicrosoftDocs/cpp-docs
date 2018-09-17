@@ -26,10 +26,10 @@ class time_put : public locale::facet;
 
 ### Parameters
 
-*CharType*  
+*CharType*<br/>
 The type used within a program to encode characters.
 
-*OutputIterator*  
+*OutputIterator*<br/>
 The type of iterator into which the time put functions write their output.
 
 ## Remarks
@@ -89,19 +89,19 @@ virtual iter_type do_put(
 
 ### Parameters
 
-*next*  
+*next*<br/>
 An output iterator where the sequence of characters representing time and date are to be inserted.
 
-*_Iosbase*  
+*_Iosbase*<br/>
 Unused.
 
-*_Pt*  
+*_Pt*<br/>
 The time and date information being output.
 
-*_Fmt*  
+*_Fmt*<br/>
 The format of the output. See [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for valid values.
 
-*_Mod*  
+*_Mod*<br/>
 A modifier for the format. See [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for valid values.
 
 ### Return Value
@@ -152,28 +152,28 @@ iter_type put(iter_type next,
 
 ### Parameters
 
-*next*  
+*next*<br/>
 An output iterator where the sequence of characters representing time and date are to be inserted.
 
-*_Iosbase*  
+*_Iosbase*<br/>
 Unused.
 
-*_Fill*  
+*_Fill*<br/>
 The character of type `CharType` used for spacing.
 
-*_Pt*  
+*_Pt*<br/>
 The time and date information being output.
 
-*_Fmt*  
+*_Fmt*<br/>
 The format of the output. See [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for valid values.
 
-*_Mod*  
+*_Mod*<br/>
 A modifier for the format. See [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for valid values.
 
-*first*  
+*first*<br/>
 The beginning of the formatting string for the output. See [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for valid values.
 
-*last*  
+*last*<br/>
 The end of the formatting string for the output. See [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for valid values.
 
 ### Return Value

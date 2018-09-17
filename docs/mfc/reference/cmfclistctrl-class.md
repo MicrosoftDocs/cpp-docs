@@ -72,11 +72,11 @@ void EnableMarkSortedColumn(
 ```  
   
 ### Parameters  
- [in] *bMark*  
- A Boolean parameter that determines whether to enable a different background color.  
+*bMark*<br/>
+[in] A Boolean parameter that determines whether to enable a different background color.  
   
- [in] *bRedraw*  
- A Boolean parameter that determines whether to redraw the control immediately.  
+*bRedraw*<br/>
+[in] A Boolean parameter that determines whether to redraw the control immediately.  
   
 ### Remarks  
  `EnableMarkSortedColumn` uses the method `CDrawingManager::PixelAlpha` to calculate what color to use for sorted columns. The color picked is based upon the regular background color.  
@@ -89,8 +89,8 @@ void EnableMultipleSort(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- A Boolean that specifies whether to enable multiple column sort mode.  
+*bEnable*<br/>
+[in] A Boolean that specifies whether to enable multiple column sort mode.  
   
 ### Remarks  
  When you enable sorting based on multiple columns, the columns do have a hierarchy. The rows of data will first be sorted by the primary column. Any equivalent values are then sorted by each subsequent column based on priority.  
@@ -132,14 +132,14 @@ virtual int OnCompareItems(
 ```  
   
 ### Parameters  
- [in] *lParam1*  
- The first item to compare.  
+*lParam1*<br/>
+[in] The first item to compare.  
   
- [in] *lParam2*  
- The second item to compare.  
+*lParam2*<br/>
+[in] The second item to compare.  
   
- [in] *iColumn*  
- The index of the column that this method is sorting.  
+*iColumn*<br/>
+[in] The index of the column that this method is sorting.  
   
 ### Return Value  
  An integer that indicates the relative position of the two items. A negative value indicates that the first item should precede the second, positive value indicates that the first item should follow the second, and zero means that the two items are equivalent.  
@@ -157,11 +157,11 @@ virtual COLORREF OnGetCellBkColor(
 ```  
   
 ### Parameters  
- [in] *nRow*  
- The row of the cell in question.  
+*nRow*<br/>
+[in] The row of the cell in question.  
   
- [in] *nColumn*  
- The column of the cell in question.  
+*nColumn*<br/>
+[in] The column of the cell in question.  
   
 ### Return Value  
  A COLOREF value that specifies the background color of the cell.  
@@ -180,14 +180,14 @@ virtual HFONT OnGetCellFont(
 ```  
   
 ### Parameters  
- [in] *nRow*  
- The row of the cell in question.  
+*nRow*<br/>
+[in] The row of the cell in question.  
   
- [in] *nColumn*  
- The column of the cell in question.  
+*nColumn*<br/>
+[in] The column of the cell in question.  
   
- [in] *dwData*  
- User-defined data. The default implementation does not use this parameter.  
+*dwData*<br/>
+[in] User-defined data. The default implementation does not use this parameter.  
   
 ### Return Value  
  A handle to the font that is used for the current cell.  
@@ -205,11 +205,11 @@ virtual COLORREF OnGetCellTextColor(
 ```  
   
 ### Parameters  
- [in] *nRow*  
- The row of the cell in question.  
+*nRow*<br/>
+[in] The row of the cell in question.  
   
- [in] *nColumn*  
- The column of the cell in question.  
+*nColumn*<br/>
+[in] The column of the cell in question.  
   
 ### Return Value  
  A COLOREF value that specifies the text color of the cell.  
@@ -225,8 +225,8 @@ void RemoveSortColumn(int iColumn);
 ```  
   
 ### Parameters  
- [in] *iColumn*  
- The column to remove.  
+*iColumn*<br/>
+[in] The column to remove.  
   
 ### Remarks  
  This method removes a sort column from the header control. It calls [CMFCHeaderCtrl::RemoveSortColumn](../../mfc/reference/cmfcheaderctrl-class.md#removesortcolumn).  
@@ -242,14 +242,14 @@ void SetSortColumn(
 ```  
   
 ### Parameters  
- [in] *iColumn*  
- The column to sort.  
+*iColumn*<br/>
+[in] The column to sort.  
   
- [in] *bAscending*  
- A Boolean that specifies the sort order.  
+*bAscending*<br/>
+[in] A Boolean that specifies the sort order.  
   
- [in] *bAdd*  
- A Boolean that specifies whether the method adds the column indicated by *iColumn* to the list of sort columns.  
+*bAdd*<br/>
+[in] A Boolean that specifies whether the method adds the column indicated by *iColumn* to the list of sort columns.  
   
 ### Remarks  
  This method passes the input parameters to the header control by using the method [CMFCHeaderCtrl::SetSortColumn](../../mfc/reference/cmfcheaderctrl-class.md#setsortcolumn).  
@@ -265,14 +265,14 @@ virtual void Sort(
 ```  
   
 ### Parameters  
- [in] *iColumn*  
- The column to sort.  
+*iColumn*<br/>
+[in] The column to sort.  
   
- [in] *bAscending*  
- A Boolean that specifies the sort order.  
+*bAscending*<br/>
+[in] A Boolean that specifies the sort order.  
   
- [in] *bAdd*  
- A Boolean that specifies whether this method adds the column indicated by *iColumn* to the list of sort columns.  
+*bAdd*<br/>
+[in] A Boolean that specifies whether this method adds the column indicated by *iColumn* to the list of sort columns.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

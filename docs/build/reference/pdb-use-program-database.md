@@ -13,39 +13,41 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /PDB (Use Program Database)
-```  
-/PDB:filename  
-```  
-  
-## Remarks  
- where:  
-  
- *filename*  
- A user-specified name for the program database (PDB) that the linker creates. It replaces the default name.  
-  
-## Remarks  
- By default, when [/DEBUG](../../build/reference/debug-generate-debug-info.md) is specified, the linker creates a program database (PDB) which holds debugging information. The default file name for the PDB has the base name of the program and the extension .pdb.  
-  
- Use /PDB:*filename* to specify the name of the PDB file. If /DEBUG is not specified, the /PDB option is ignored.  
-  
- A PDB file can be up to 2GB.  
-  
- For more information, see [.pdb Files as Linker Input](../../build/reference/dot-pdb-files-as-linker-input.md).  
-  
-### To set this linker option in the Visual Studio development environment  
-  
-1.  Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Click the **Linker** folder.  
-  
-3.  Click the **Debug** property page.  
-  
-4.  Modify the **Generate Program Database File** property.  
-  
-### To set this linker option programmatically  
-  
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ProgramDatabaseFile%2A>.  
-  
-## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+
+```
+/PDB:filename
+```
+
+## Arguments
+
+*filename*<br/>
+A user-specified name for the program database (PDB) that the linker creates. It replaces the default name.
+
+## Remarks
+
+By default, when [/DEBUG](../../build/reference/debug-generate-debug-info.md) is specified, the linker creates a program database (PDB) which holds debugging information. The default file name for the PDB has the base name of the program and the extension .pdb.
+
+Use /PDB:*filename* to specify the name of the PDB file. If /DEBUG is not specified, the /PDB option is ignored.
+
+A PDB file can be up to 2GB.
+
+For more information, see [.pdb Files as Linker Input](../../build/reference/dot-pdb-files-as-linker-input.md).
+
+### To set this linker option in the Visual Studio development environment
+
+1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+
+1. Click the **Linker** folder.
+
+1. Click the **Debug** property page.
+
+1. Modify the **Generate Program Database File** property.
+
+### To set this linker option programmatically
+
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ProgramDatabaseFile%2A>.
+
+## See Also
+
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

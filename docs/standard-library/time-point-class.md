@@ -96,8 +96,8 @@ time_point& operator+=(const duration& Dur);
 
 ### Parameters
 
-*Dur*  
- A `duration` object.
+*Dur*<br/>
+A `duration` object.
 
 ### Return Value
 
@@ -113,8 +113,8 @@ time_point& operator-=(const duration& Dur);
 
 ### Parameters
 
-*Dur*  
- A `duration` object.
+*Dur*<br/>
+A `duration` object.
 
 ### Return Value
 
@@ -135,11 +135,11 @@ constexpr time_point(const time_point<clock, Duration2>& Tp);
 
 ### Parameters
 
-*Dur*  
- A [duration](../standard-library/duration-class.md) object.
+*Dur*<br/>
+A [duration](../standard-library/duration-class.md) object.
 
-*Tp*  
- A `time_point` object.
+*Tp*<br/>
+A `time_point` object.
 
 ### Remarks
 

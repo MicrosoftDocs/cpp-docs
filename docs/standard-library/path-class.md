@@ -628,7 +628,7 @@ For `template<class InIt> path(InIt first, InIt last, const locale& loc)` it is 
 
 ## <a name="preferred_separator"></a> path::preferred_separator
 
-The constant object gives the preferred character for separating path components, depending on the host operating system. 
+The constant object gives the preferred character for separating path components, depending on the host operating system.
 
 ```cpp
 #if _WIN32_C_LIB
@@ -644,7 +644,7 @@ Note that it is equally permissible in most contexts under Windows to use L'/' i
 
 ## <a name="relative_path"></a> path::relative_path
 
-Returns the relative path component of `myname`. 
+Returns the relative path component of `myname`.
 
 ```cpp
 path relative_path() const;
@@ -664,7 +664,7 @@ path& remove_filename();
 
 ## <a name="replace_extension"></a> path::replace_extension
 
-Replaces the extension of `myname`. 
+Replaces the extension of `myname`.
 
 ```cpp
 path& replace_extension(const path& newext = path());
@@ -705,7 +705,7 @@ return (*this);
 
 ## <a name="root_directory"></a> path::root_directory
 
-Returns the root directory component of `myname`. 
+Returns the root directory component of `myname`.
 
 ```cpp
 path root_directory() const;
@@ -717,7 +717,7 @@ The component may be empty.
 
 ## <a name="root_name"></a> path::root_name
 
-Returns the root name component of `myname`. 
+Returns the root name component of `myname`.
 
 ```cpp
 path root_name() const;

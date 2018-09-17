@@ -16,7 +16,7 @@ ms.workload: ["cplusplus", "linux"]
 
 # Configure a Linux CMake project
 
-**Visual Studio 2017 version 15.4 and later**  
+**Visual Studio 2017 version 15.4 and later**<br/>
 When you install the Linux C++ workload for Visual Studio, CMake support for Linux is selected by default. You can now work on your existing code base that uses CMake without having to convert it to a Visual Studio project. If your code base is cross-platform, you can target both Windows and Linux from within Visual Studio.
 
 This topic assumes you have basic familiarity with CMake support in Visual Studio. For more information, see [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md). For more information about CMake itself, see [Build, Test and Package Your Software With CMake](https://cmake.org/).
@@ -57,7 +57,7 @@ After you specify a Linux target, your source is copied to your Linux machine. T
 
 ![Generate CMake cache on Linux](media/cmake-linux-1.png "Generate the CMake cache on Linux")
 
-**Visual Studio 2017 version 15.7 and later:**  
+**Visual Studio 2017 version 15.7 and later:**<br/>
 To provide IntelliSense support for remote headers, Visual Studio automatically copies them to a directory on your local Windows machine. For more information, see [IntelliSense for remote headers](configure-a-linux-project.md#remote_intellisense).
 
 ## Debug the project

@@ -18,7 +18,7 @@ The **/Zc:auto[-]** compiler option tells the compiler how to use the [auto keyw
 
 ## Syntax
 
-> **/Zc:auto**[**-**]  
+> **/Zc:auto**[**-**]
 
 ## Remarks
 

@@ -160,8 +160,8 @@ BOOL ActivateContextCategory(UINT uiContextID);
 ```  
   
 ### Parameters  
- [in] *uiContextID*  
- The context category ID.  
+*uiContextID*<br/>
+[in] The context category ID.  
   
 ### Return Value  
  TRUE if a context category with *uiContextID* is found and activated; otherwise FALSE.  
@@ -183,26 +183,26 @@ CMFCRibbonCategory* AddCategory(
 ```  
   
 ### Parameters  
- [in] *lpszName*  
- Name of the ribbon category.  
+*lpszName*<br/>
+[in] Name of the ribbon category.  
   
- [in] *uiSmallImagesResID*  
- Resource ID of the small image list for the ribbon category.  
+*uiSmallImagesResID*<br/>
+[in] Resource ID of the small image list for the ribbon category.  
   
- [in] *uiLargeImagesResID*  
- Resource ID of the large image list for the ribbon category.  
+*uiLargeImagesResID*<br/>
+[in] Resource ID of the large image list for the ribbon category.  
   
- [in] *sizeSmallImage*  
- Specifies the size of small images for the ribbon category.  
+*sizeSmallImage*<br/>
+[in] Specifies the size of small images for the ribbon category.  
   
- [in] *sizeLargeImage*  
- Specifies the size of large images for the ribbon category.  
+*sizeLargeImage*<br/>
+[in] Specifies the size of large images for the ribbon category.  
   
- [in] *nInsertAt*  
- Zero based index of the category location.  
+*nInsertAt*<br/>
+[in] Zero based index of the category location.  
   
- [in] *pRTI*  
- Pointer to a [CMFCRibbonCategory Class](../../mfc/reference/cmfcribboncategory-class.md) run-time class to dynamically create a ribbon category at run-time.  
+*pRTI*<br/>
+[in] Pointer to a [CMFCRibbonCategory Class](../../mfc/reference/cmfcribboncategory-class.md) run-time class to dynamically create a ribbon category at run-time.  
   
 ### Return Value  
  A pointer to the new ribbon category if the method was successful; otherwise, NULL.  
@@ -234,32 +234,32 @@ CMFCRibbonCategory* AddContextCategory(
 ```  
   
 ### Parameters  
- [in] *lpszName*  
- Name of the category.  
+*lpszName*<br/>
+[in] Name of the category.  
   
- [in] *lpszContextName*  
- Name of the context category caption.  
+*lpszContextName*<br/>
+[in] Name of the context category caption.  
   
- [in] *uiContextID*  
- Context ID.  
+*uiContextID*<br/>
+[in] Context ID.  
   
- [in] *clrContext*  
- Color of the context category caption.  
+*clrContext*<br/>
+[in] Color of the context category caption.  
   
- [in] *uiSmallImagesResID*  
- Resource ID of the small image of a context category.  
+*uiSmallImagesResID*<br/>
+[in] Resource ID of the small image of a context category.  
   
- [in] *uiLargeImagesResID*  
- Resource ID of the large image of a context category.  
+*uiLargeImagesResID*<br/>
+[in] Resource ID of the large image of a context category.  
   
- [in] *sizeSmallImage*  
- Size of a small image.  
+*sizeSmallImage*<br/>
+[in] Size of a small image.  
   
- [in] *sizeLargeImage*  
- Size of a large image.  
+*sizeLargeImage*<br/>
+[in] Size of a large image.  
   
- [in] *pRTI*  
- Pointer to a runtime class.  
+*pRTI*<br/>
+[in] Pointer to a runtime class.  
   
 ### Return Value  
  A pointer to the newly created category, or NULL if the `CreateObject` method of *pRTI* cannot create the specified category.  
@@ -300,20 +300,20 @@ CMFCRibbonMainPanel* AddMainCategory(
 ```  
   
 ### Parameters  
- [in] *lpszName*  
- Name of the main ribbon category.  
+*lpszName*<br/>
+[in] Name of the main ribbon category.  
   
- [in] *uiSmallImagesResID*  
- Resource ID of small images.  
+*uiSmallImagesResID*<br/>
+[in] Resource ID of small images.  
   
- [in] *uiLargeImagesResID*  
- Resource ID of large images.  
+*uiLargeImagesResID*<br/>
+[in] Resource ID of large images.  
   
- [in] *sizeSmallImage*  
- The size of small images.  
+*sizeSmallImage*<br/>
+[in] The size of small images.  
   
- [in] *sizeLargeImage*  
- The size of large images.  
+*sizeLargeImage*<br/>
+[in] The size of large images.  
   
 ### Return Value  
  Pointer to the new main ribbon category if the method was successful; otherwise, NULL.  
@@ -351,14 +351,14 @@ CMFCRibbonCategory* AddQATOnlyCategory(
 ```  
   
 ### Parameters  
- [in] *lpszName*  
- Name of the category.  
+*lpszName*<br/>
+[in] Name of the category.  
   
- [in] *uiSmallImagesResID*  
- Resource ID of the image list for the category.  
+*uiSmallImagesResID*<br/>
+[in] Resource ID of the image list for the category.  
   
- [in] *sizeSmallImage*  
- Size of images for ribbon elements in the category.  
+*sizeSmallImage*<br/>
+[in] Size of images for ribbon elements in the category.  
   
 ### Return Value  
  A pointer to the new category if the method was successful; otherwise, NULL.  
@@ -374,8 +374,8 @@ void AddToTabs(CMFCRibbonBaseElement* pElement);
 ```  
   
 ### Parameters  
- [in] *pElement*  
- Pointer to a ribbon element.  
+*pElement*<br/>
+[in] Pointer to a ribbon element.  
   
 ### Remarks  
  The ribbon element is positioned before any system buttons.  
@@ -388,8 +388,8 @@ CMFCRibbonBar(BOOL bReplaceFrameCaption = TRUE);
 ```  
   
 ### Parameters  
- [in] *bReplaceFrameCaption*  
- TRUE for the ribbon bar to replace the caption of the main frame window; FALSE to locate the ribbon bar under the caption of the main frame window.  
+*bReplaceFrameCaption*<br/>
+[in] TRUE for the ribbon bar to replace the caption of the main frame window; FALSE to locate the ribbon bar under the caption of the main frame window.  
   
 ### Remarks  
   
@@ -404,14 +404,14 @@ BOOL Create(
 ```  
   
 ### Parameters  
- [in] *pParentWnd*  
- Pointer to the parent window for the ribbon bar.  
+*pParentWnd*<br/>
+[in] Pointer to the parent window for the ribbon bar.  
   
- [in] *dwStyle*  
- A logical combination of styles for the new window.  
+*dwStyle*<br/>
+[in] A logical combination of styles for the new window.  
   
- [in] *nID*  
- ID of the new window.  
+*nID*<br/>
+[in] ID of the new window.  
   
 ### Return Value  
  TRUE if the window was created; otherwise FALSE.  
@@ -435,17 +435,17 @@ BOOL CreateEx(
 ```  
   
 ### Parameters  
- [in] *pParentWnd*  
- Pointer to the parent window for the ribbon bar.  
+*pParentWnd*<br/>
+[in] Pointer to the parent window for the ribbon bar.  
   
- [in] *dwCtrlStyle*  
- This parameter is not used.  
+*dwCtrlStyle*<br/>
+[in] This parameter is not used.  
   
- [in] *dwStyle*  
- A logical combination of styles for the new window.  
+*dwStyle*<br/>
+[in] A logical combination of styles for the new window.  
   
- [in] *nID*  
- ID of the new window.  
+*nID*<br/>
+[in] ID of the new window.  
   
 ### Return Value  
  TRUE if the window was created; otherwise FALSE.  
@@ -460,8 +460,8 @@ void DeactivateKeyboardFocus(BOOL bSetFocus = TRUE);
 ```  
   
 ### Parameters  
- [in] *bSetFocus*  
- TRUE to set the focus to the parent window of the ribbon bar.  
+*bSetFocus*<br/>
+[in] TRUE to set the focus to the parent window of the ribbon bar.  
   
 ### Remarks  
   
@@ -476,14 +476,14 @@ BOOL DrawMenuImage(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context for the menu button.  
+*pDC*<br/>
+[in] Pointer to a device context for the menu button.  
   
- [in] *pMenuItem*  
- Pointer to a toolbar menu button.  
+*pMenuItem*<br/>
+[in] Pointer to a toolbar menu button.  
   
- [in] *rectImage*  
- The display rectangle for a menu button.  
+*rectImage*<br/>
+[in] The display rectangle for a menu button.  
   
 ### Return Value  
  TRUE if the image was drawn; otherwise FALSE.  
@@ -507,8 +507,8 @@ void EnableKeyTips(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable the keytips feature; FALSE to disable the keytips feature.  
+*bEnable*<br/>
+[in] TRUE to enable the keytips feature; FALSE to disable the keytips feature.  
   
 ### Remarks  
  When you enable this feature, key tips are displayed when the user presses the ALT or F10 button. When the user presses ALT key, key tips are displayed with a 200 millisecond delay. This delay allows for shortcuts to be executed so that the pressed ALT key does not interfere with other combinations that include the ALT key.  
@@ -521,8 +521,8 @@ void EnablePrintPreview(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable the **Print Preview** feature; FALSE to disable the **Print Preview** feature.  
+*bEnable*<br/>
+[in] TRUE to enable the **Print Preview** feature; FALSE to disable the **Print Preview** feature.  
   
 ### Remarks  
  If *bEnable* is FALSE and a print preview category exists, it is deleted.  
@@ -539,11 +539,11 @@ void EnableToolTips(
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable tooltips on the ribbon bar; FALSE to disable tooltips on the ribbon bar.  
+*bEnable*<br/>
+[in] TRUE to enable tooltips on the ribbon bar; FALSE to disable tooltips on the ribbon bar.  
   
- [in] *bEnableDescr*  
- TRUE to enable tooltip descriptions on the tooltip; FALSE to disable tooltip descriptions on the tooltip.  
+*bEnableDescr*<br/>
+[in] TRUE to enable tooltip descriptions on the tooltip; FALSE to disable tooltip descriptions on the tooltip.  
   
 ### Remarks  
  The *bEnable* parameter determines whether tooltips are displayed when the mouse hovers over a ribbon element. The *bEnableDescr* parameter determines whether additional descriptive text appears with the tooltip text.  
@@ -558,11 +558,11 @@ CMFCRibbonBaseElement* FindByData(
 ```  
   
 ### Parameters  
- [in] *dwData*  
- The data associated with a ribbon element.  
+*dwData*<br/>
+[in] The data associated with a ribbon element.  
   
- [in] *bVisibleOnly*  
- TRUE to search visible ribbon elements only; FALSE to search all ribbon elements.  
+*bVisibleOnly*<br/>
+[in] TRUE to search visible ribbon elements only; FALSE to search all ribbon elements.  
   
 ### Return Value  
  A pointer to a ribbon element if it has the specified data and visibility; otherwise NULL.  
@@ -581,14 +581,14 @@ CMFCRibbonBaseElement* FindByID(
 ```  
   
 ### Parameters  
- [in] *uiCmdID*  
- Command ID for a ribbon element.  
+*uiCmdID*<br/>
+[in] Command ID for a ribbon element.  
   
- [in] *bVisibleOnly*  
- TRUE to search visible ribbon elements only; FALSE to search all ribbon elements.  
+*bVisibleOnly*<br/>
+[in] TRUE to search visible ribbon elements only; FALSE to search all ribbon elements.  
   
- [in] *bExcludeQAT*  
- TRUE to exclude quick access toolbar elements from the search; otherwise, FALSE.  
+*bExcludeQAT*<br/>
+[in] TRUE to exclude quick access toolbar elements from the search; otherwise, FALSE.  
   
 ### Return Value  
  A pointer to a ribbon element if it has the specified command ID and search values; otherwise, NULL.  
@@ -606,8 +606,8 @@ int FindCategoryIndexByData(DWORD dwData) const;
 ```  
   
 ### Parameters  
- [in] *dwData*  
- The data associated with a ribbon category.  
+*dwData*<br/>
+[in] The data associated with a ribbon category.  
   
 ### Return Value  
  The zero-based index of a ribbon category if the method was successful; otherwise -1.  
@@ -666,8 +666,8 @@ CMFCRibbonCategory* GetCategory(int nIndex) const;
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- The zero-based index of a ribbon category in the list of ribbon categories that is contained in the ribbon bar.  
+*nIndex*<br/>
+[in] The zero-based index of a ribbon category in the list of ribbon categories that is contained in the ribbon bar.  
   
 ### Return Value  
  A pointer to the ribbon category at the specified index; otherwise, NULL if *nIndex* was out of range.  
@@ -703,8 +703,8 @@ int GetCategoryIndex(CMFCRibbonCategory* pCategory) const;
 ```  
   
 ### Parameters  
- [in] *pCategory*  
- Pointer to a ribbon category.  
+*pCategory*<br/>
+[in] Pointer to a ribbon category.  
   
 ### Return Value  
  The zero-based index of a ribbon category specified by *pCategory*; or -1 if the ribbon category is not found.  
@@ -719,11 +719,11 @@ BOOL GetContextName(
 ```  
   
 ### Parameters  
- [in] *uiContextID*  
- A ribbon category context ID.  
+*uiContextID*<br/>
+[in] A ribbon category context ID.  
   
- [out] *strName*  
- The name of a context category caption.  
+*strName*<br/>
+[out] The name of a context category caption.  
   
 ### Return Value  
  TRUE if the method was successful; otherwise, FALSE if *uiContextID* was zero or the context category caption was not found.  
@@ -750,11 +750,11 @@ void GetElementsByID(
 ```  
   
 ### Parameters  
- [in] *uiCmdID*  
- Command ID of a ribbon element.  
+*uiCmdID*<br/>
+[in] Command ID of a ribbon element.  
   
- [out] *arButtons*  
- An array of pointers to ribbon elements.  
+*arButtons*<br/>
+[out] An array of pointers to ribbon elements.  
   
 ### Remarks  
  Multiple ribbon elements can have the same command ID because some ribbon elements can be copied to the quick access toolbar.  
@@ -787,11 +787,11 @@ void GetItemIDsList(CList<UINT, UINT>& lstItems,
 ```  
   
 ### Parameters  
- [out] *lstItems*  
- The list of command IDs for ribbon elements that are contained in the ribbon bar.  
+*lstItems*<br/>
+[out] The list of command IDs for ribbon elements that are contained in the ribbon bar.  
   
- [in] *bHiddenOnly*  
- TRUE to exclude ribbon elements that are displayed; FALSE to include all ribbon elements in the ribbon bar.  
+*bHiddenOnly*<br/>
+[in] TRUE to exclude ribbon elements that are displayed; FALSE to include all ribbon elements in the ribbon bar.  
   
 ### Remarks  
   
@@ -888,8 +888,8 @@ void GetQuickAccessCommands(CList<UINT,UINT>& lstCommands);
 ```  
   
 ### Parameters  
- [out] *lstCommands*  
- The list of command IDs for the ribbon elements on the quick access toolbar.  
+*lstCommands*<br/>
+[out] The list of command IDs for the ribbon elements on the quick access toolbar.  
   
 ### Remarks  
  The list does not contain ribbon elements that are control separators.  
@@ -990,14 +990,14 @@ virtual CMFCRibbonBaseElement* HitTest(
 ```  
   
 ### Parameters  
- [in] *point*  
- Location of the point in ribbon bar coordinates.  
+*point*<br/>
+[in] Location of the point in ribbon bar coordinates.  
   
- [in] *bCheckActiveCategory*  
- TRUE to search the active category; FALSE not to search the active category.  
+*bCheckActiveCategory*<br/>
+[in] TRUE to search the active category; FALSE not to search the active category.  
   
- [in] *bCheckPanelCaption*  
- TRUE to test the caption of the ribbon panel with the point located in it; FALSE not to test the caption of the ribbon panel with the point located in it. See the Remarks section for more information.  
+*bCheckPanelCaption*<br/>
+[in] TRUE to test the caption of the ribbon panel with the point located in it; FALSE not to test the caption of the ribbon panel with the point located in it. See the Remarks section for more information.  
   
 ### Return Value  
  A pointer to the ribbon element located at the specified point; otherwise NULL if the point is not located in a ribbon element.  
@@ -1078,8 +1078,8 @@ virtual BOOL IsShowGroupBorder(CMFCRibbonButtonsGroup* pGroup) const;
 ```  
   
 ### Parameters  
- [in] *pGroup*  
- This parameter is not used.  
+*pGroup*<br/>
+[in] This parameter is not used.  
   
 ### Return Value  
  Always returns FALSE.  
@@ -1132,11 +1132,11 @@ virtual void OnClickButton(
 ```  
   
 ### Parameters  
- [in] *pButton*  
- Pointer to the button that was clicked.  
+*pButton*<br/>
+[in] Pointer to the button that was clicked.  
   
- [in] *point*  
- This parameter is not used.  
+*point*<br/>
+[in] This parameter is not used.  
   
 ### Remarks  
   
@@ -1150,8 +1150,8 @@ virtual void OnEditContextMenu(
 ```  
   
 ### Parameters  
- [in] *pEdit*  
- [in] *point*  
+*pEdit*<br/>
+[in] [in] *point*  
   
 ### Remarks  
   
@@ -1163,8 +1163,8 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ```  
   
 ### Parameters  
- [in] *bIsRTL*  
- TRUE if the layout is right-to-left; FALSE if the layout is left-to-right.  
+*bIsRTL*<br/>
+[in] TRUE if the layout is right-to-left; FALSE if the layout is left-to-right.  
   
 ### Remarks  
  This method adjusts the layout of all controls on the ribbon bar for the new layout direction.  
@@ -1197,10 +1197,10 @@ virtual BOOL OnShowRibbonContextMenu(
 ```  
   
 ### Parameters  
- [in] *pWnd*  
- [in] *x*  
- [in] *y*  
- [in] *pHit*  
+*pWnd*<br/>
+[in] [in] *x*  
+*y*<br/>
+[in] [in] *pHit*  
   
 ### Return Value  
   
@@ -1218,10 +1218,10 @@ virtual BOOL OnShowRibbonQATMenu(
 ```  
   
 ### Parameters  
- [in] *pWnd*  
- [in] *x*  
- [in] *y*  
- [in] *pHit*  
+*pWnd*<br/>
+[in] [in] *x*  
+*y*<br/>
+[in] [in] *pHit*  
   
 ### Return Value  
   
@@ -1238,14 +1238,14 @@ BOOL OnSysKeyDown(
 ```  
   
 ### Parameters  
- [in] *pFrameWnd*  
- Pointer to the parent main frame window of the ribbon bar.  
+*pFrameWnd*<br/>
+[in] Pointer to the parent main frame window of the ribbon bar.  
   
- [in] *wParam*  
- Virtual key code of the key being pressed.  
+*wParam*<br/>
+[in] Virtual key code of the key being pressed.  
   
- [in] *lParam*  
- Keyboard state flags when the key was pressed.  
+*lParam*<br/>
+[in] Keyboard state flags when the key was pressed.  
   
 ### Return Value  
  TRUE if the keystroke event was processed; otherwise FALSE.  
@@ -1263,14 +1263,14 @@ BOOL OnSysKeyUp(
 ```  
   
 ### Parameters  
- [in] *pFrameWnd*  
- Pointer to the parent main frame window of the ribbon bar.  
+*pFrameWnd*<br/>
+[in] Pointer to the parent main frame window of the ribbon bar.  
   
- [in] *wParam*  
- Virtual key code of the key being released.  
+*wParam*<br/>
+[in] Virtual key code of the key being released.  
   
- [in] *lParam*  
- This parameter is not used.  
+*lParam*<br/>
+[in] This parameter is not used.  
   
 ### Return Value  
  TRUE if the keystroke event was processed; otherwise FALSE.  
@@ -1294,8 +1294,8 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```  
   
 ### Parameters  
- [in] *pMsg*  
- Pointer to a message.  
+*pMsg*<br/>
+[in] Pointer to a message.  
   
 ### Return Value  
  TRUE if the message was processed by the ribbon bar; otherwise FALSE.  
@@ -1340,8 +1340,8 @@ BOOL RemoveCategory(int nIndex);
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- The zero-based index of a category in the list of ribbon categories that is contained in the ribbon bar.  
+*nIndex*<br/>
+[in] The zero-based index of a category in the list of ribbon categories that is contained in the ribbon bar.  
   
 ### Return Value  
  TRUE if the specified ribbon category was deleted; otherwise FALSE.  
@@ -1359,11 +1359,11 @@ BOOL SetActiveCategory(
 ```  
   
 ### Parameters  
- [in] *pCategory*  
- A ribbon category that is contained in the ribbon bar.  
+*pCategory*<br/>
+[in] A ribbon category that is contained in the ribbon bar.  
   
- [in] *bForceRestore*  
- TRUE to maximize the ribbon bar if it is minimized; FALSE to display the active category in a pop-up window if the ribbon bar is minimized.  
+*bForceRestore*<br/>
+[in] TRUE to maximize the ribbon bar if it is minimized; FALSE to display the active category in a pop-up window if the ribbon bar is minimized.  
   
 ### Return Value  
  TRUE if the specified category was set as the active category; otherwise FALSE.  
@@ -1381,8 +1381,8 @@ void SetActiveMDIChild(CWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] *pWnd*  
- Pointer to an MDI child window.  
+*pWnd*<br/>
+[in] Pointer to an MDI child window.  
   
 ### Remarks  
   
@@ -1396,11 +1396,11 @@ void SetApplicationButton(
 ```  
   
 ### Parameters  
- [in] *pButton*  
- A pointer to the application ribbon button.  
+*pButton*<br/>
+[in] A pointer to the application ribbon button.  
   
- [in] *sizeButton*  
- The size of the application ribbon button.  
+*sizeButton*<br/>
+[in] The size of the application ribbon button.  
   
 ### Remarks  
  The application ribbon button is a large rounded button located at the upper-left corner of Ribbon control.  
@@ -1421,14 +1421,14 @@ BOOL SetElementKeys(
 ```  
   
 ### Parameters  
- [in] *uiCmdID*  
- The command ID of a ribbon element.  
+*uiCmdID*<br/>
+[in] The command ID of a ribbon element.  
   
- [in] *lpszKeys*  
- The keytip.  
+*lpszKeys*<br/>
+[in] The keytip.  
   
- [in] *lpszMenuKeys*  
- The menu keytip.  
+*lpszMenuKeys*<br/>
+[in] The menu keytip.  
   
 ### Return Value  
  TRUE if the keytips of at least one ribbon element are set; otherwise FALSE.  
@@ -1446,11 +1446,11 @@ void SetKeyboardNavigationLevel(
 ```  
   
 ### Parameters  
- [in] *pLevel*  
- Pointer to the current keyboard navigation object.  
+*pLevel*<br/>
+[in] Pointer to the current keyboard navigation object.  
   
- [in] *bSetFocus*  
- TRUE to set the keyboard focus to the ribbon bar.  
+*bSetFocus*<br/>
+[in] TRUE to set the keyboard focus to the ribbon bar.  
   
 ### Remarks  
  Keyboard navigation of the ribbon bar starts when the user presses the ALT or F10 key. The user selects the next navigation level by pressing a keytip on the ribbon bar. The user can return to the previous navigation level by pressing the escape key.  
@@ -1465,11 +1465,11 @@ void SetMaximizeMode(
 ```  
   
 ### Parameters  
- [in] *bMax*  
- TRUE to display the system buttons for an MDI child window on the ribbon bar; FALSE to remove the system buttons for an MDI child window from the ribbon bar.  
+*bMax*<br/>
+[in] TRUE to display the system buttons for an MDI child window on the ribbon bar; FALSE to remove the system buttons for an MDI child window from the ribbon bar.  
   
- [in] *pWnd*  
- Pointer to the main frame window for the ribbon bar.  
+*pWnd*<br/>
+[in] Pointer to the main frame window for the ribbon bar.  
   
 ### Remarks  
  The ribbon bar displays system buttons for an MDI child window in the tab row when an MDI child window is maximized.  
@@ -1484,11 +1484,11 @@ void SetQuickAccessCommands(
 ```  
   
 ### Parameters  
- [in] *lstCommands*  
- The list of commands to be placed on the Quick Access Toolbar.  
+*lstCommands*<br/>
+[in] The list of commands to be placed on the Quick Access Toolbar.  
   
- [in] *bRecalcLayout*  
- TRUE if want to redraw the ribbon after you add the ribbon elements; FALSE otherwise.  
+*bRecalcLayout*<br/>
+[in] TRUE if want to redraw the ribbon after you add the ribbon elements; FALSE otherwise.  
   
 ### Example  
  The following example demonstrates how to use the `SetQuickAccessCommands` method in the `CMFCRibbonBar` class.  
@@ -1503,8 +1503,8 @@ void SetQuickAccessDefaultState(const CMFCRibbonQuickAccessToolBarDefaultState& 
 ```  
   
 ### Parameters  
- [in] *state*  
- The quick access toolbar default state.  
+*state*<br/>
+[in] The quick access toolbar default state.  
   
 ### Remarks  
  The quick access toolbar state includes a list of commands and their visibility.  
@@ -1522,8 +1522,8 @@ void SetQuickAccessToolbarOnTop(BOOL bOnTop);
 ```  
   
 ### Parameters  
- [in] *bOnTop*  
- TRUE to position the quick access toolbar above the ribbon bar; FALSE to position the quick access toolbar below the ribbon bar.  
+*bOnTop*<br/>
+[in] TRUE to position the quick access toolbar above the ribbon bar; FALSE to position the quick access toolbar below the ribbon bar.  
   
 ##  <a name="settooltipfixedwidth"></a>  CMFCRibbonBar::SetTooltipFixedWidth  
  Sets the regular and large sizes of tooltip fixed widths for the ribbon bar.  
@@ -1535,11 +1535,11 @@ void SetTooltipFixedWidth(
 ```  
   
 ### Parameters  
- [in] *nWidthRegular*  
- The width, in pixels, of a regular fixed sized tooltip.  
+*nWidthRegular*<br/>
+[in] The width, in pixels, of a regular fixed sized tooltip.  
   
- [in] *nWidthLargeImage*  
- The width, in pixels, of a large fixed sized tooltip.  
+*nWidthLargeImage*<br/>
+[in] The width, in pixels, of a large fixed sized tooltip.  
   
 ### Remarks  
  Setting a parameter to 0 causes the corresponding width to vary.  
@@ -1554,11 +1554,11 @@ void ShowCategory(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- The index of the ribbon category.  
+*nIndex*<br/>
+[in] The index of the ribbon category.  
   
- [in] *bShow*  
- If TRUE, show the ribbon category; otherwise, hide the ribbon category.  
+*bShow*<br/>
+[in] If TRUE, show the ribbon category; otherwise, hide the ribbon category.  
   
 ##  <a name="showcontextcategories"></a>  CMFCRibbonBar::ShowContextCategories  
  Shows or hides the context categories that have the specified ID.  
@@ -1570,11 +1570,11 @@ void ShowContextCategories(
 ```  
   
 ### Parameters  
- [in] *uiContextID*  
- The context category ID.  
+*uiContextID*<br/>
+[in] The context category ID.  
   
- [in] *bShow*  
- If TRUE, show the categories that have the specified ID; otherwise, hide the categories that have the specified ID.  
+*bShow*<br/>
+[in] If TRUE, show the categories that have the specified ID; otherwise, hide the categories that have the specified ID.  
   
 ##  <a name="showkeytips"></a>  CMFCRibbonBar::ShowKeyTips  
  Shows the keytips for each ribbon element on the ribbon bar.  
@@ -1605,8 +1605,8 @@ virtual BOOL TranslateChar(UINT nChar);
 ```  
   
 ### Parameters  
- [in] *nChar*  
- A user keystroke character code.  
+*nChar*<br/>
+[in] A user keystroke character code.  
   
 ### Return Value  
  TRUE if the character code was processed by the ribbon bar; otherwise FALSE.  

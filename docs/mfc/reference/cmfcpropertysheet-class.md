@@ -106,8 +106,8 @@ void AddPage(CPropertyPage* pPage);
 ```  
   
 ### Parameters  
- [in] *pPage*  
- Pointer to a page object. This parameter cannot be NULL.  
+*pPage*<br/>
+[in] Pointer to a page object. This parameter cannot be NULL.  
   
 ### Remarks  
  This method adds the specified property page as the rightmost tab in the property sheet. Therefore, use this method to add pages in left-to-right order.  
@@ -126,17 +126,17 @@ void AddPageToTree(
 ```  
   
 ### Parameters  
- [in] *pCategory*  
- Pointer to a parent tree node, or NULL to associate the specified page with the top-level node. Call the [CMFCPropertySheet::AddTreeCategory](#addtreecategory) method to obtain this pointer.  
+*pCategory*<br/>
+[in] Pointer to a parent tree node, or NULL to associate the specified page with the top-level node. Call the [CMFCPropertySheet::AddTreeCategory](#addtreecategory) method to obtain this pointer.  
   
- [in] *pPage*  
- Pointer to a property page object.  
+*pPage*<br/>
+[in] Pointer to a property page object.  
   
- [in] *nIconNum*  
- Zero-based index of an icon, or -1 if no icon is used. The icon is displayed next to the tree control property page when the page is not selected. The default value is -1.  
+*nIconNum*<br/>
+[in] Zero-based index of an icon, or -1 if no icon is used. The icon is displayed next to the tree control property page when the page is not selected. The default value is -1.  
   
- [in] *nSelIconNum*  
- Zero-based index of an icon, or -1 if no icon is used. The icon is displayed next to the tree control property page when the page is selected. The default value is -1.  
+*nSelIconNum*<br/>
+[in] Zero-based index of an icon, or -1 if no icon is used. The icon is displayed next to the tree control property page when the page is selected. The default value is -1.  
   
 ### Remarks  
  This method adds a property page as a leaf of a tree control. To add a property page, create a `CMFCPropertySheet` object, call the [CMFCPropertySheet::SetLook](#setlook) method with the *look* parameter set to `CMFCPropertySheet::PropSheetLook_Tree`, and then use this method to add the property page.  
@@ -153,17 +153,17 @@ CMFCPropertySheetCategoryInfo* AddTreeCategory(
 ```  
   
 ### Parameters  
- [in] *lpszLabel*  
- The name of the node.  
+*lpszLabel*<br/>
+[in] The name of the node.  
   
- [in] *nIconNum*  
- Zero-based index of an icon, or -1 if no icon is used. The icon is displayed next to the tree control property page when the page is not selected. The default value is -1.  
+*nIconNum*<br/>
+[in] Zero-based index of an icon, or -1 if no icon is used. The icon is displayed next to the tree control property page when the page is not selected. The default value is -1.  
   
- [in] *nSelectedIconNum*  
- Zero-based index of an icon, or -1 if no icon is used. The icon is displayed next to the tree control property page when the page is selected. The default value is -1.  
+*nSelectedIconNum*<br/>
+[in] Zero-based index of an icon, or -1 if no icon is used. The icon is displayed next to the tree control property page when the page is selected. The default value is -1.  
   
- [in] *pParentCategory*  
- Pointer to a parent tree node, or NULL to associate the specified page with the top-level node. Set this parameter with the [CMFCPropertySheet::AddTreeCategory](#addtreecategory) method.  
+*pParentCategory*<br/>
+[in] Pointer to a parent tree node, or NULL to associate the specified page with the top-level node. Set this parameter with the [CMFCPropertySheet::AddTreeCategory](#addtreecategory) method.  
   
 ### Return Value  
  A pointer to the new node in the tree control.  
@@ -189,17 +189,17 @@ CMFCPropertySheet(
 ```  
   
 ### Parameters  
- [in] *pszCaption*  
- A string that contains the property sheet caption. Cannot be NULL.  
+*pszCaption*<br/>
+[in] A string that contains the property sheet caption. Cannot be NULL.  
   
- [in] *nIDCaption*  
- A resource ID that contains the property sheet caption.  
+*nIDCaption*<br/>
+[in] A resource ID that contains the property sheet caption.  
   
- [in] *pParentWnd*  
- Pointer to the parent window of the property sheet, or NULL if the parent window is the main window of the application. The default value is NULL.  
+*pParentWnd*<br/>
+[in] Pointer to the parent window of the property sheet, or NULL if the parent window is the main window of the application. The default value is NULL.  
   
- [in] *iSelectPage*  
- The zero-based index of the top property page. The default value is 0.  
+*iSelectPage*<br/>
+[in] The zero-based index of the top property page. The default value is 0.  
   
 ### Remarks  
  For more information, see the parameters for the [CPropertySheet::CPropertySheet](../../mfc/reference/cpropertysheet-class.md#cpropertysheet) constructor.  
@@ -212,8 +212,8 @@ void EnablePageHeader(int nHeaderHeight);
 ```  
   
 ### Parameters  
- [in] *nHeaderHeight*  
- The height of the header, in pixels.  
+*nHeaderHeight*<br/>
+[in] The height of the header, in pixels.  
   
 ### Remarks  
  To use the value of the *nHeaderHeight* parameter to draw a custom header, override the [CMFCPropertySheet::OnDrawPageHeader](#ondrawpageheader) method.  
@@ -289,8 +289,8 @@ virtual void OnActivatePage(CPropertyPage* pPage);
 ```  
   
 ### Parameters  
- [in] *pPage*  
- Pointer to a property page object that represents the enabled property page.  
+*pPage*<br/>
+[in] Pointer to a property page object that represents the enabled property page.  
   
 ### Remarks  
  By default, this method ensures that the enabled property page is scrolled into view. If the style of the current property sheet contains a Microsoft Outlook pane, this method sets the corresponding Outlook button to the checked state.  
@@ -306,14 +306,14 @@ virtual void OnDrawPageHeader(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context.  
+*pDC*<br/>
+[in] Pointer to a device context.  
   
- [in] *nPage*  
- The zero-based property page number.  
+*nPage*<br/>
+[in] The zero-based property page number.  
   
- [in] *rectHeader*  
- A bounding rectangle that specifies where to draw the header.  
+*rectHeader*<br/>
+[in] A bounding rectangle that specifies where to draw the header.  
   
 ### Remarks  
  By default, this method does nothing. If you override this method, call the [CMFCPropertySheet::EnablePageHeader](#enablepageheader) method before the framework calls this method.  
@@ -326,8 +326,8 @@ virtual BOOL OnRemoveTreePage(CPropertyPage* pPage);
 ```  
   
 ### Parameters  
- [in] *pPage*  
- Pointer to a property page object that represents the property page to remove.  
+*pPage*<br/>
+[in] Pointer to a property page object that represents the property page to remove.  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -340,8 +340,8 @@ void RemoveCategory(CMFCPropertySheetCategoryInfo* pCategory);
 ```  
   
 ### Parameters  
- [in] *pCategory*  
- Pointer to a category (node) to remove.  
+*pCategory*<br/>
+[in] Pointer to a category (node) to remove.  
   
 ### Remarks  
  Use this method to remove a node, which is also referred to as a category, from a tree control. Use the [CMFCPropertySheet::AddTreeCategory](#addtreecategory) method to add a node to a tree control.  
@@ -355,11 +355,11 @@ void RemovePage(int nPage);
 ```  
   
 ### Parameters  
- [in] *pPage*  
- Pointer to property page object that represents the property page to remove. Cannot be NULL.  
+*pPage*<br/>
+[in] Pointer to property page object that represents the property page to remove. Cannot be NULL.  
   
- [in] *nPage*  
- Zero-based index of the page to remove.  
+*nPage*<br/>
+[in] Zero-based index of the page to remove.  
   
 ### Remarks  
  This method removes the specified property page and destroys its associated window. The property page object that the *pPage* parameter specifies is not destroyed until the [CMFCPropertySheet](../../mfc/reference/cmfcpropertysheet-class.md) window is closed.  
@@ -376,17 +376,17 @@ void SetIconsList(HIMAGELIST hIcons);
 ```  
   
 ### Parameters  
- [in] *uiImageListResID*  
- The resource ID of an image list.  
+*uiImageListResID*<br/>
+[in] The resource ID of an image list.  
   
- [in] *cx*  
- The width, in pixels, of icons in the image list.  
+*cx*<br/>
+[in] The width, in pixels, of icons in the image list.  
   
- [in] *clrTransparent*  
- The transparent image color. The parts of the image that are this color will be transparent. The default value is the color magenta, RGB(255,0,255).  
+*clrTransparent*<br/>
+[in] The transparent image color. The parts of the image that are this color will be transparent. The default value is the color magenta, RGB(255,0,255).  
   
- [in] *hIcons*  
- A handle to an existing image list.  
+*hIcons*<br/>
+[in] A handle to an existing image list.  
   
 ### Return Value  
  In the first method overload syntax, TRUE if this method is successful; otherwise, FALSE.  
@@ -406,11 +406,11 @@ void SetLook(
 ```  
   
 ### Parameters  
- [in] *look*  
- One of the enumeration values that specifies the appearance of the property sheet. The default style for a property sheet is `CMFCPropertySheet::PropSheetLook_Tabs`. For more information, see the table in the Remarks section of this topic.  
+*look*<br/>
+[in] One of the enumeration values that specifies the appearance of the property sheet. The default style for a property sheet is `CMFCPropertySheet::PropSheetLook_Tabs`. For more information, see the table in the Remarks section of this topic.  
   
- [in] *nNavControlWidth*  
- The width of the navigation control, in pixels. The default value is 100.  
+*nNavControlWidth*<br/>
+[in] The width of the navigation control, in pixels. The default value is 100.  
   
 ### Remarks  
  To display a property sheet in a style other than the default, call this method before you create the property sheet window.  

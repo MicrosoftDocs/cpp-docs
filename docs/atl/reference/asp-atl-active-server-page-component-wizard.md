@@ -16,13 +16,17 @@ ms.workload: ["cplusplus"]
 
 Use this page of the ATL Active Server Page Component Wizard to specify optional settings for handling information and state related to your ASP component.
 
-**Optional methods**  
-Adds the optional ASP methods, **OnStartPage** and **OnEndPage**, to your object. This option must be selected to set any Active Server Pages intrinsic objects. By default, it is selected.
+- **Optional methods**  
 
-- **OnStartPage/OnEndPage** [OnStartPage](https://msdn.microsoft.com/library/ms691624.aspx) is called the first time the script tries to access the object. **OnEndPage** is called when the object is finished processing the script.
+   Adds the optional ASP methods, **OnStartPage** and **OnEndPage**, to your object. This option must be selected to set any Active Server Pages intrinsic objects. By default, it is selected.
 
-**Intrinsic object**  
-You must select the **OnStartPage/OnEndPage** option to set any ASP intrinsic objects.
+- **OnStartPage/OnEndPage**
+
+   [OnStartPage](https://msdn.microsoft.com/library/ms691624.aspx) is called the first time the script tries to access the object. **OnEndPage** is called when the object is finished processing the script.
+
+- **Intrinsic object**  
+
+   You must select the **OnStartPage/OnEndPage** option to set any ASP intrinsic objects.
 
 |Option|Description|
 |------------|-----------------|

@@ -26,12 +26,12 @@ Creates a pipe and executes a command.
 
 ```C
 FILE *_popen(
-const char *command,
-const char *mode
+    const char *command,
+    const char *mode
 );
 FILE *_wpopen(
-const wchar_t *command,
-const wchar_t *mode
+    const wchar_t *command,
+    const wchar_t *mode
 );
 ```
 
@@ -53,17 +53,12 @@ For information about these and other error codes, see [_doserrno, errno, _sys_e
 
 The **_popen** function creates a pipe and asynchronously executes a spawned copy of the command processor with the specified string *command*. The character string *mode* specifies the type of access requested, as follows.
 
-**"r"**
-The calling process can read the spawned command's standard output using the returned stream.
-
-**"w"**
-The calling process can write to the spawned command's standard input using the returned stream.
-
-**"b"**
-Open in binary mode.
-
-**"t"**
-Open in text mode.
+|Access mode|Description|
+|-|-|
+|**"r"**|The calling process can read the spawned command's standard output using the returned stream.|
+|**"w"**|The calling process can write to the spawned command's standard input using the returned stream.|
+|**"b"**|Open in binary mode.|
+|**"t"**|Open in text mode.|
 
 > [!NOTE]
 > If used in a Windows program, the **_popen** function returns an invalid file pointer that causes the program to stop responding indefinitely. **_popen** works properly in a console application. To create a Windows application that redirects input and output, see [Creating a Child Process with Redirected Input and Output](/windows/desktop/ProcThread/creating-a-child-process-with-redirected-input-and-output) in the Windows SDK.

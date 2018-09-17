@@ -75,8 +75,8 @@ virtual BOOL CreateKey(LPCTSTR pszPath);
 ```  
   
 ### Parameters  
- [in] *pszPath*  
- Specifies the name of a key to be created or opened.  
+*pszPath*<br/>
+[in] Specifies the name of a key to be created or opened.  
   
 ### Return Value  
  0 if successful; otherwise a nonzero value.  
@@ -94,11 +94,11 @@ CSettingsStore(
 ```  
   
 ### Parameters  
- [in] *bAdmin*  
- Boolean parameter that specifies whether the `CSettingsStore` object is acting in administrator mode.  
+*bAdmin*<br/>
+[in] Boolean parameter that specifies whether the `CSettingsStore` object is acting in administrator mode.  
   
- [in] *bReadOnly*  
- Boolean parameter that specifies whether the `CSettingsStore` object is created in read-only mode.  
+*bReadOnly*<br/>
+[in] Boolean parameter that specifies whether the `CSettingsStore` object is created in read-only mode.  
   
 ### Remarks  
  If *bAdmin* is set to TRUE, the `m_hKey` member variable is set to **HKEY_LOCAL_MACHINE**. If you set *bAdmin* to FALSE, `m_hKey` is set to **HKEY_CURRENT_USER**.  
@@ -117,11 +117,11 @@ virtual BOOL DeleteKey(
 ```  
   
 ### Parameters  
- [in] *pszPath*  
- The name of the key to delete.  
+*pszPath*<br/>
+[in] The name of the key to delete.  
   
- [in] *bAdmin*  
- Switch that specifies the location of the key to delete.  
+*bAdmin*<br/>
+[in] Switch that specifies the location of the key to delete.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -139,8 +139,8 @@ virtual BOOL DeleteValue(LPCTSTR pszValue);
 ```  
   
 ### Parameters  
- [in] *pszValue*  
- Specifies the value field to remove.  
+*pszValue*<br/>
+[in] Specifies the value field to remove.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -153,8 +153,8 @@ virtual BOOL Open(LPCTSTR pszPath);
 ```  
   
 ### Parameters  
- [in] *pszPath*  
- The name of a registry key.  
+*pszPath*<br/>
+[in] The name of a registry key.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -238,53 +238,53 @@ virtual BOOL Read(
 ```  
   
 ### Parameters  
- [in] *pszKey*  
- Pointer to a null-terminated string that contains the name of the value to read from the registry.  
+*pszKey*<br/>
+[in] Pointer to a null-terminated string that contains the name of the value to read from the registry.  
   
- [out] *iVal*  
- Reference to an integer variable that receives the value read from the registry key.  
+*iVal*<br/>
+[out] Reference to an integer variable that receives the value read from the registry key.  
   
- [out] *dwVal*  
- Reference to a 32-bit double word variable that receives the value read from the registry key.  
+*dwVal*<br/>
+[out] Reference to a 32-bit double word variable that receives the value read from the registry key.  
   
- [out] *sVal*  
- Reference to a string variable that receives the value read from the registry key.  
+*sVal*<br/>
+[out] Reference to a string variable that receives the value read from the registry key.  
   
- [out] *scStringList*  
- Reference to a string list variable that receives the value read from the registry key.  
+*scStringList*<br/>
+[out] Reference to a string list variable that receives the value read from the registry key.  
   
- [out] *scArray*  
- Reference to a string array variable that receives the value read from the registry key.  
+*scArray*<br/>
+[out] Reference to a string array variable that receives the value read from the registry key.  
   
- [out] *dwcArray*  
- Reference to a 32-bit double word array variable that receives the value read from the registry key.  
+*dwcArray*<br/>
+[out] Reference to a 32-bit double word array variable that receives the value read from the registry key.  
   
- [out] *wcArray*  
- Reference to a 16-bit word array variable that receives the value read from the registry key.  
+*wcArray*<br/>
+[out] Reference to a 16-bit word array variable that receives the value read from the registry key.  
   
- [out] *bcArray*  
- Reference to a byte array variable that receives the value read from the registry key.  
+*bcArray*<br/>
+[out] Reference to a byte array variable that receives the value read from the registry key.  
   
- [out] *lpPoint*  
- Reference to a pointer to a `POINT` structure that receives the value read from the registry key.  
+*lpPoint*<br/>
+[out] Reference to a pointer to a `POINT` structure that receives the value read from the registry key.  
   
- [out] *rect*  
- Reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) variable that receives the value read from the registry key.  
+*rect*<br/>
+[out] Reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) variable that receives the value read from the registry key.  
   
- [out] *ppData*  
- Pointer to a pointer to data that receives the value read from the registry key.  
+*ppData*<br/>
+[out] Pointer to a pointer to data that receives the value read from the registry key.  
   
- [out] *pBytes*  
- Pointer to an unsigned integer variable. This variable receives the size of the buffer that *ppData* points to.  
+*pBytes*<br/>
+[out] Pointer to an unsigned integer variable. This variable receives the size of the buffer that *ppData* points to.  
   
- [out] *list*  
- Reference to a [CObList](../../mfc/reference/coblist-class.md) variable that receives the value read from the registry key.  
+*list*<br/>
+[out] Reference to a [CObList](../../mfc/reference/coblist-class.md) variable that receives the value read from the registry key.  
   
- [out] *obj*  
- Reference to a [CObject](../../mfc/reference/cobject-class.md) variable that receives the value read from the registry key.  
+*obj*<br/>
+[out] Reference to a [CObject](../../mfc/reference/cobject-class.md) variable that receives the value read from the registry key.  
   
- [out] *pObj*  
- Reference to a pointer to a `CObject` variable that receives the value read from the registry key.  
+*pObj*<br/>
+[out] Reference to a pointer to a `CObject` variable that receives the value read from the registry key.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -368,53 +368,53 @@ virtual BOOL Write(
 ```  
   
 ### Parameters  
- [in] *pszKey*  
- Pointer to a string that contains the name of the value to set.  
+*pszKey*<br/>
+[in] Pointer to a string that contains the name of the value to set.  
   
- [in] *iVal*  
- Reference to an integer variable that contains the data to store.  
+*iVal*<br/>
+[in] Reference to an integer variable that contains the data to store.  
   
- [in] *dwVal*  
- Reference to a 32-bit double word variable that contains the data to store.  
+*dwVal*<br/>
+[in] Reference to a 32-bit double word variable that contains the data to store.  
   
- [in] *pszVal*  
- Pointer to a null-terminated string variable that contains the data to store.  
+*pszVal*<br/>
+[in] Pointer to a null-terminated string variable that contains the data to store.  
   
- [in] *scStringList*  
- Reference to a [CStringList](../../mfc/reference/cstringlist-class.md) variable that contains the data to store.  
+*scStringList*<br/>
+[in] Reference to a [CStringList](../../mfc/reference/cstringlist-class.md) variable that contains the data to store.  
   
- [in] *bcArray*  
- Reference to a byte array variable that contains the data to store.  
+*bcArray*<br/>
+[in] Reference to a byte array variable that contains the data to store.  
   
- [in] *scArray*  
- Reference to a string array variable that contains the data to store.  
+*scArray*<br/>
+[in] Reference to a string array variable that contains the data to store.  
   
- [in] *dwcArray*  
- Reference to a 32-bit double word array variable that contains the data to store.  
+*dwcArray*<br/>
+[in] Reference to a 32-bit double word array variable that contains the data to store.  
   
- [in] *wcArray*  
- Reference to a 16-bit word array variable that contains the data to store.  
+*wcArray*<br/>
+[in] Reference to a 16-bit word array variable that contains the data to store.  
   
- [in] *rect*  
- Reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) variable that contains the data to store.  
+*rect*<br/>
+[in] Reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) variable that contains the data to store.  
   
- [in] *lpPoint*  
- Reference to a pointer to a `POINT` variable that contains the data to store.  
+*lpPoint*<br/>
+[in] Reference to a pointer to a `POINT` variable that contains the data to store.  
   
- [in] *pData*  
- Pointer to a buffer that contains the data to store.  
+*pData*<br/>
+[in] Pointer to a buffer that contains the data to store.  
   
- [in] *nBytes*  
- Specifies the size, in bytes, of the data to which the *pData* parameter points.  
+*nBytes*<br/>
+[in] Specifies the size, in bytes, of the data to which the *pData* parameter points.  
   
- [in] *list*  
- Reference to a [CObList](../../mfc/reference/coblist-class.md) variable that contains the data to store.  
+*list*<br/>
+[in] Reference to a [CObList](../../mfc/reference/coblist-class.md) variable that contains the data to store.  
   
- [in] *obj*  
- Reference to a [CObject](../../mfc/reference/cobject-class.md) variable that contains the data to store.  
+*obj*<br/>
+[in] Reference to a [CObject](../../mfc/reference/cobject-class.md) variable that contains the data to store.  
   
- [in] *pObj*  
- Pointer to a pointer to a `CObject` variable that contains the data to store.  
+*pObj*<br/>
+[in] Pointer to a pointer to a `CObject` variable that contains the data to store.  
   
 ### Return Value  
  TRUE if successful; otherwise FALSE.  

@@ -75,14 +75,14 @@ CMFCRibbonProgressBar(
 ```  
   
 ### Parameters  
- [in] *nID*  
- Specifies the command ID for the ribbon progress bar.  
+*nID*<br/>
+[in] Specifies the command ID for the ribbon progress bar.  
   
- [in] *nWidth*  
- Specifies the width, in pixels, of the ribbon progress bar.  
+*nWidth*<br/>
+[in] Specifies the width, in pixels, of the ribbon progress bar.  
   
- [in] *nHeight*  
- Specifies the height, in pixels, of the ribbon progress bar.  
+*nHeight*<br/>
+[in] Specifies the height, in pixels, of the ribbon progress bar.  
   
 ##  <a name="getpos"></a>  CMFCRibbonProgressBar::GetPos  
  Returns the current position of the progress bar.  
@@ -166,8 +166,8 @@ void SetInfiniteMode(BOOL bSet = TRUE);
 ```  
   
 ### Parameters  
- [in] *bSet*  
- TRUE to specify that the progress bar is in infinite mode; otherwise, FALSE.  
+*bSet*<br/>
+[in] TRUE to specify that the progress bar is in infinite mode; otherwise, FALSE.  
   
 ### Remarks  
  Usually, if the progress bar is in infinite mode, it is telling the user that an operation is ongoing, but that the completion time is unknown. Thus, the progress bar fills repeatedly from the minimum value to the maximum value.  
@@ -182,11 +182,11 @@ void SetPos(
 ```  
   
 ### Parameters  
- [in] *nPos*  
- Specifies the position to which the progress bar is set.  
+*nPos*<br/>
+[in] Specifies the position to which the progress bar is set.  
   
- [in] *bRedraw*  
- Specifies whether the progress bar should be redrawn.  
+*bRedraw*<br/>
+[in] Specifies whether the progress bar should be redrawn.  
   
 ### Remarks  
  The range being set must be within the range specified by the [CMFCRibbonProgressBar::SetRange](#setrange) method.  
@@ -201,11 +201,11 @@ void SetRange(
 ```  
   
 ### Parameters  
- [in] *nMin*  
- Specifies the minimum value of the range.  
+*nMin*<br/>
+[in] Specifies the minimum value of the range.  
   
- [in] *nMax*  
- Specifies the maximum value of the range.  
+*nMax*<br/>
+[in] Specifies the maximum value of the range.  
   
 ### Remarks  
  Use this method to define the range of the progress bar by setting minimum and maximum values.  

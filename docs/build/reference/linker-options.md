@@ -132,5 +132,5 @@ For more information, see [Compiler-Controlled LINK Options](../../build/referen
 
 ## See Also
 
-[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)  
-[Setting Linker Options](../../build/reference/setting-linker-options.md)  
+[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)<br/>
+[Setting Linker Options](../../build/reference/setting-linker-options.md)

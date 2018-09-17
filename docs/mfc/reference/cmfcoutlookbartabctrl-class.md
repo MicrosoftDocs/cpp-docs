@@ -99,20 +99,20 @@ void AddControl(
 ```  
   
 ### Parameters  
- [in] *pWndCtrl*  
- A pointer to a control to add.  
+*pWndCtrl*<br/>
+[in] A pointer to a control to add.  
   
- [in] *lpszName*  
- Specifies the name of tab.  
+*lpszName*<br/>
+[in] Specifies the name of tab.  
   
- [in] *bDetachable*  
- If TRUE, the page will be created as detachable.  
+*bDetachable*<br/>
+[in] If TRUE, the page will be created as detachable.  
   
- [in] *nImageID*  
- Image index in the internal image list for the image to be displayed in the new tab.  
+*nImageID*<br/>
+[in] Image index in the internal image list for the image to be displayed in the new tab.  
   
- [in] *dwControlBarStyle*  
- Specifies the AFX_ CBRS_* style for wrapped docking panes.  
+*dwControlBarStyle*<br/>
+[in] Specifies the AFX_ CBRS_* style for wrapped docking panes.  
   
 ### Remarks  
  Use this function to add a control as a new page of an outlook bar.  
@@ -163,14 +163,14 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] *rect*  
- Specifies the initial size and position, in pixels.  
+*rect*<br/>
+[in] Specifies the initial size and position, in pixels.  
   
- [in] *pParentWnd*  
- Points to the parent window. Must not be NULL.  
+*pParentWnd*<br/>
+[in] Points to the parent window. Must not be NULL.  
   
- [in] *nID*  
- The control ID.  
+*nID*<br/>
+[in] The control ID.  
   
 ### Return Value  
  Nonzero if the control has been created successfully; otherwise 0.  
@@ -186,8 +186,8 @@ static void EnableAnimation(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- Specifies whether the animation should be enabled or disabled.  
+*bEnable*<br/>
+[in] Specifies whether the animation should be enabled or disabled.  
   
 ### Remarks  
  Call this function to enable and disable animation. When the user opens a tab page, the page's caption slides up or down if animation is enabled. If animation is disabled, the page becomes active immediately.  
@@ -219,14 +219,14 @@ void EnableScrollButtons(
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- Determines whether the scroll buttons are displayed.  
+*bEnable*<br/>
+[in] Determines whether the scroll buttons are displayed.  
   
- [in] *bIsUp*  
- Determines whether the top scrollbar is displayed.  
+*bIsUp*<br/>
+[in] Determines whether the top scrollbar is displayed.  
   
- [in] *bIsDown*  
- Determines whether the bottom scrollbar is displayed.  
+*bIsDown*<br/>
+[in] Determines whether the bottom scrollbar is displayed.  
   
 ### Remarks  
  Enables the display of the scroll buttons. This method is called by the framework when the active tab changes to restore the scroll buttons.  
@@ -318,8 +318,8 @@ virtual BOOL SetActiveTab(int iTab);
 ```  
   
 ### Parameters  
- [in] *iTab*  
- The zero-based index of a tab to be opened.  
+*iTab*<br/>
+[in] The zero-based index of a tab to be opened.  
   
 ### Return Value  
  Nonzero if the specified tab has been opened successfully; otherwise 0.  
@@ -335,8 +335,8 @@ void SetBorderSize(int nBorderSize);
 ```  
   
 ### Parameters  
- [in] *nBorderSize*  
- Specifies the new border size in pixels.  
+*nBorderSize*<br/>
+[in] Specifies the new border size in pixels.  
   
 ### Remarks  
  Sets the new border size and recalculates the outlook window layout.  
@@ -351,11 +351,11 @@ void SetPageButtonTextAlign(
 ```  
   
 ### Parameters  
- [in] *uiAlign*  
- Specifies the text alignment.  
+*uiAlign*<br/>
+[in] Specifies the text alignment.  
   
- [in] *bRedraw*  
- If TRUE, the outlook window will be redrawn.  
+*bRedraw*<br/>
+[in] If TRUE, the outlook window will be redrawn.  
   
 ### Remarks  
  Use this function to change text alignment for page buttons.  
@@ -381,14 +381,14 @@ BOOL SetToolbarImageList(
 ```  
   
 ### Parameters  
- [in] *uiID*  
- Specifies the resource ID of the image to load.  
+*uiID*<br/>
+[in] Specifies the resource ID of the image to load.  
   
- [in] *cx*  
- Specifies the width of an image in the image list, in pixels.  
+*cx*<br/>
+[in] Specifies the width of an image in the image list, in pixels.  
   
- [in] *clrTransp*  
- An RGB value that specifies the transparent color.  
+*clrTransp*<br/>
+[in] An RGB value that specifies the transparent color.  
   
 ### Return Value  
  Returns TRUE if successful; otherwise returns FALSE.  

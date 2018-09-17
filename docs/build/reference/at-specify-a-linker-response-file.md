@@ -22,7 +22,7 @@ Specifies a linker response file.
 
 ## Arguments
 
-*response_file*  
+*response_file*<br/>
 A text file specifying linker commands.
 
 ## Remarks
@@ -39,5 +39,5 @@ See [@ (Specify a Compiler Response File)](../../build/reference/at-specify-a-co
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)  
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

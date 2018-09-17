@@ -273,11 +273,11 @@ reference& operator=(bool Val);
 
 ### Parameters
 
-*Right*  
- The element reference whose value is to be assigned to the bit.
+*Right*<br/>
+The element reference whose value is to be assigned to the bit.
 
-*Val*  
- The Boolean value to be assigned to the bit.
+*Val*<br/>
+The Boolean value to be assigned to the bit.
 
 #### Example
 
@@ -362,11 +362,11 @@ static void swap(
 
 ### Parameters
 
-*Left*  
- The element to be exchanged with the *Right* element.
+*Left*<br/>
+The element to be exchanged with the *Right* element.
 
-*Right*  
- The element to be exchanged with the *Left* element.
+*Right*<br/>
+The element to be exchanged with the *Left* element.
 
 ### Remarks
 

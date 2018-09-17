@@ -78,20 +78,20 @@ CMFCPropertyGridColorProperty(
 ```  
   
 ### Parameters  
- [in] *strName*  
- The name of the property.  
+*strName*<br/>
+[in] The name of the property.  
   
- [in] *color*  
- The color value of the property.  
+*color*<br/>
+[in] The color value of the property.  
   
- [in] *pPalette*  
- Pointer to a palette of colors. The default value is NULL.  
+*pPalette*<br/>
+[in] Pointer to a palette of colors. The default value is NULL.  
   
- [in] *lpszDescr*  
- The property description. The default value is NULL.  
+*lpszDescr*<br/>
+[in] The property description. The default value is NULL.  
   
- [in] *dwData*  
- Application-specific data, such as an integer or a pointer to other data that is associated with the property. The default value is 0.  
+*dwData*<br/>
+[in] Application-specific data, such as an integer or a pointer to other data that is associated with the property. The default value is 0.  
   
 ##  <a name="enableautomaticbutton"></a>  CMFCPropertyGridColorProperty::EnableAutomaticButton  
  Enables the *automatic* button on the color selection dialog box. (The standard automatic button is labeled **Automatic**.)  
@@ -104,14 +104,14 @@ void EnableAutomaticButton(
 ```  
   
 ### Parameters  
- [in] *lpszLabel*  
- The label text of the automatic button.  
+*lpszLabel*<br/>
+[in] The label text of the automatic button.  
   
- [in] *colorAutomatic*  
- The RGB color value of the automatic (default) color.  
+*colorAutomatic*<br/>
+[in] The RGB color value of the automatic (default) color.  
   
- [in] *bEnable*  
- TRUE to enable the automatic button; otherwise, FALSE. The default value is TRUE.  
+*bEnable*<br/>
+[in] TRUE to enable the automatic button; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -126,14 +126,14 @@ void EnableOtherButton(
 ```  
   
 ### Parameters  
- [in] *lpszLabel*  
- The label text of the other button.  
+*lpszLabel*<br/>
+[in] The label text of the other button.  
   
- [in] *bAltColorDlg*  
- TRUE to display the `CMFCColorDialog` dialog box; FALSE to display the standard color selection dialog box. The default value is TRUE.  
+*bAltColorDlg*<br/>
+[in] TRUE to display the `CMFCColorDialog` dialog box; FALSE to display the standard color selection dialog box. The default value is TRUE.  
   
- [in] *bEnable*  
- TRUE to display the other button; otherwise, FALSE.  The default value is TRUE.  
+*bEnable*<br/>
+[in] TRUE to display the other button; otherwise, FALSE.  The default value is TRUE.  
   
 ### Remarks  
   
@@ -157,8 +157,8 @@ void SetColor(COLORREF color);
 ```  
   
 ### Parameters  
- [in] *color*  
- An RGB color value.  
+*color*<br/>
+[in] An RGB color value.  
   
 ### Remarks  
   
@@ -170,8 +170,8 @@ void SetColumnsNumber(int nColumnsNumber);
 ```  
   
 ### Parameters  
- [in] *nColumnsNumber*  
- The preferred number of columns in the color property grid.  
+*nColumnsNumber*<br/>
+[in] The preferred number of columns in the color property grid.  
   
 ### Remarks  
  This method sets the value of the `m_nColumnsNumber` protected data member.  
@@ -184,8 +184,8 @@ virtual void SetOriginalValue(const COleVariant& varValue);
 ```  
   
 ### Parameters  
- [in] *varValue*  
- A value.  
+*varValue*<br/>
+[in] A value.  
   
 ### Remarks  
  Use the [CMFCPropertyGridProperty::ResetOriginalValue](../../mfc/reference/cmfcpropertygridproperty-class.md#resetoriginalvalue) method to reset the original value of an edited property.  

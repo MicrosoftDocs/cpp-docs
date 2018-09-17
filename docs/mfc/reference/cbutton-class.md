@@ -315,8 +315,8 @@ BOOL GetNote(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[out] *lpszNote*|Pointer to a buffer, which the caller is responsible for allocating and deallocating. If the return value is TRUE, the buffer contains the note text that is associated with the current command link control; otherwise, the buffer is unchanged.|  
-|[in, out] *cchNote*|A pointer to an unsigned integer variable.<br /><br /> When this method is called, the variable contains the size of the buffer specified by the *lpszNote* parameter.<br /><br /> When this method returns, if the return value is TRUE the variable contains the size of the note associated with the current command link control. If the return value is FALSE, the variable contains the buffer size required to contain the note.|  
+|*lpszNote*|[out] Pointer to a buffer, which the caller is responsible for allocating and deallocating. If the return value is TRUE, the buffer contains the note text that is associated with the current command link control; otherwise, the buffer is unchanged.|  
+|*cchNote*|[in, out] A pointer to an unsigned integer variable.<br /><br /> When this method is called, the variable contains the size of the buffer specified by the *lpszNote* parameter.<br /><br /> When this method returns, if the return value is TRUE the variable contains the size of the note associated with the current command link control. If the return value is FALSE, the variable contains the buffer size required to contain the note.|  
   
 ### Return Value  
  In the first overload, a [CString](../../atl-mfc-shared/using-cstring.md) object that contains the note text associated with the current command link control.  
@@ -388,7 +388,7 @@ BOOL GetSplitInfo(PBUTTON_SPLITINFO pInfo) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[out] *pInfo*|Pointer to a [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) structure that receives information about the current split button control. The caller is responsible for allocating the structure.|  
+|*pInfo*|[out] Pointer to a [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) structure that receives information about the current split button control. The caller is responsible for allocating the structure.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -409,7 +409,7 @@ BOOL GetSplitSize(LPSIZE pSize) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[out] *pSize*|Pointer to a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure that receives the description of a rectangle.|  
+|*pSize*|[out] Pointer to a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure that receives the description of a rectangle.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -608,7 +608,7 @@ BOOL SetDropDownState(BOOL fDropDown);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *fDropDown*|TRUE to set BST_DROPDOWNPUSHED state; otherwise, FALSE.|  
+|*fDropDown*|[in] TRUE to set BST_DROPDOWNPUSHED state; otherwise, FALSE.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -639,7 +639,7 @@ BOOL SetElevationRequired(BOOL fElevationRequired);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *fElevationRequired*|TRUE to set `elevation required` state; otherwise, FALSE.|  
+|*fElevationRequired*|[in] TRUE to set `elevation required` state; otherwise, FALSE.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -711,7 +711,7 @@ BOOL SetNote(LPCTSTR lpszNote);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *lpszNote*|Pointer to a Unicode string that is set as the note text for the command link control.|  
+|*lpszNote*|[in] Pointer to a Unicode string that is set as the note text for the command link control.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -742,7 +742,7 @@ BOOL SetSplitGlyph(TCHAR chGlyph);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *chGlyph*|A character that specifies the glyph to use as the split button drop-down arrow.|  
+|*chGlyph*|[in] A character that specifies the glyph to use as the split button drop-down arrow.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -765,7 +765,7 @@ BOOL SetSplitImageList(CImageList* pSplitImageList);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *pSplitImageList*|Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object to assign to the current split button control.|  
+|*pSplitImageList*|[in] Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object to assign to the current split button control.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -786,7 +786,7 @@ BOOL SetSplitInfo(PBUTTON_SPLITINFO pInfo);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *pInfo*|Pointer to a [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) structure that defines the current split button control.|  
+|*pInfo*|[in] Pointer to a [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) structure that defines the current split button control.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -817,7 +817,7 @@ BOOL SetSplitSize(LPSIZE pSize);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *pSize*|Pointer to a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure that describes a bounding rectangle.|  
+|*pSize*|[in] Pointer to a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure that describes a bounding rectangle.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -850,7 +850,7 @@ BOOL SetSplitStyle(UINT uSplitStyle);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *uSplitStyle*|A bitwise combination of split button styles. For more information, see the `uSplitStyle` member of the [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) structure.|  
+|*uSplitStyle*|[in] A bitwise combination of split button styles. For more information, see the `uSplitStyle` member of the [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) structure.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  

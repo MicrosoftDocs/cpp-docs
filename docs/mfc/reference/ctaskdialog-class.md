@@ -154,17 +154,17 @@ void AddCommandControl(
 
 ### Parameters
 
-[in] *nCommandControlID*  
-The command control identification number.
+*nCommandControlID*<br/>
+[in] The command control identification number.
 
-[in] *strCaption*  
-The string that the `CTaskDialog` displays to the user. Use this string to explain the purpose of the command.
+*strCaption*<br/>
+[in] The string that the `CTaskDialog` displays to the user. Use this string to explain the purpose of the command.
 
-[in] *bEnabled*  
-A Boolean parameter that indicates if the new button is enabled or disabled.
+*bEnabled*<br/>
+[in] A Boolean parameter that indicates if the new button is enabled or disabled.
 
-[in] *bRequiresElevation*  
-A Boolean parameter that indicates whether a command requires elevation.
+*bRequiresElevation*<br/>
+[in] A Boolean parameter that indicates whether a command requires elevation.
 
 ### Remarks
 
@@ -189,14 +189,14 @@ void CTaskDialog::AddRadioButton(
 
 ### Parameters
 
-[in] *nRadioButtonID*  
-The identification number of the radio button.
+*nRadioButtonID*<br/>
+[in] The identification number of the radio button.
 
-[in] *strCaption*  
-The string that the `CTaskDialog` displays next to the radio button.
+*strCaption*<br/>
+[in] The string that the `CTaskDialog` displays next to the radio button.
 
-[in] *bEnabled*  
-A Boolean parameter that indicates whether the radio button is enabled.
+*bEnabled*<br/>
+[in] A Boolean parameter that indicates whether the radio button is enabled.
 
 ### Remarks
 
@@ -219,8 +219,8 @@ void ClickCommandControl(int nCommandControlID) const;
 
 ### Parameters
 
-[in] *nCommandControlID*  
-The command ID of the control to click.
+*nCommandControlID*<br/>
+[in] The command ID of the control to click.
 
 ### Remarks
 
@@ -237,8 +237,8 @@ void ClickRadioButton(int nRadioButtonID) const;
 
 ### Parameters
 
-[in] *nRadioButtonID*  
-The ID of the radio button to click.
+*nRadioButtonID*<br/>
+[in] The ID of the radio button to click.
 
 ### Remarks
 
@@ -271,29 +271,29 @@ CTaskDialog(
 
 ### Parameters
 
-[in] *strContent*  
-The string to use for the content of the `CTaskDialog`.
+*strContent*<br/>
+[in] The string to use for the content of the `CTaskDialog`.
 
-[in] *strMainInstruction*  
-The main instruction of the `CTaskDialog`.
+*strMainInstruction*<br/>
+[in] The main instruction of the `CTaskDialog`.
 
-[in] *strTitle*  
-The title of the `CTaskDialog`.
+*strTitle*<br/>
+[in] The title of the `CTaskDialog`.
 
-[in] *nCommonButtons*  
-A mask of the common buttons to add to the `CTaskDialog`.
+*nCommonButtons*<br/>
+[in] A mask of the common buttons to add to the `CTaskDialog`.
 
-[in] *nTaskDialogOptions*  
-The set of options to use for the `CTaskDialog`.
+*nTaskDialogOptions*<br/>
+[in] The set of options to use for the `CTaskDialog`.
 
-[in] *strFooter*  
-The string to use as the footer.
+*strFooter*<br/>
+[in] The string to use as the footer.
 
-[in] *nIDCommandControlsFirst*  
-The string ID of the first command.
+*nIDCommandControlsFirst*<br/>
+[in] The string ID of the first command.
 
-[in] *nIDCommandControlsLast*  
-The string ID of the last command.
+*nIDCommandControlsLast*<br/>
+[in] The string ID of the last command.
 
 ### Remarks
 
@@ -317,8 +317,8 @@ INT_PTR DoModal (HWND hParent = ::GetActiveWindow());
 
 ### Parameters
 
-[in] *hParent*  
-The parent window for the `CTaskDialog`.
+*hParent*<br/>
+[in] The parent window for the `CTaskDialog`.
 
 ### Return Value
 
@@ -362,8 +362,8 @@ int GetCommonButtonFlag(int nButtonId) const;
 
 ### Parameters
 
-[in] *nButtonId*  
-The standard Windows button value.
+*nButtonId*<br/>
+[in] The standard Windows button value.
 
 ### Return Value
 
@@ -379,8 +379,8 @@ int GetCommonButtonId(int nFlag);
 
 ### Parameters
 
-[in] *nFlag*  
-The common button type associated with the `CTaskDialog` class.
+*nFlag*<br/>
+[in] The common button type associated with the `CTaskDialog` class.
 
 ### Return Value
 
@@ -472,8 +472,8 @@ BOOL IsCommandControlEnabled(int nCommandControlID) const;
 
 ### Parameters
 
-[in] *nCommandControlID*  
-The ID of the command button control or button to test.
+*nCommandControlID*<br/>
+[in] The ID of the command button control or button to test.
 
 ### Return Value
 
@@ -499,8 +499,8 @@ BOOL IsRadioButtonEnabled(int nRadioButtonID) const;
 
 ### Parameters
 
-[in] *nRadioButtonID*  
-The ID of the radio button to test.
+*nRadioButtonID*<br/>
+[in] The ID of the radio button to test.
 
 ### Return Value
 
@@ -546,11 +546,11 @@ void LoadCommandControls(
 
 ### Parameters
 
-[in] *nIDCommandControlsFirst*  
-The string ID of the first command.
+*nIDCommandControlsFirst*<br/>
+[in] The string ID of the first command.
 
-[in] *nIDCommandControlsLast*  
-The string ID of the last command.
+*nIDCommandControlsLast*<br/>
+[in] The string ID of the last command.
 
 ### Remarks
 
@@ -574,11 +574,11 @@ void LoadRadioButtons(
 
 ### Parameters
 
-[in] *nIDRadioButtonsFirst*  
-The string ID of the first radio button.
+*nIDRadioButtonsFirst*<br/>
+[in] The string ID of the first radio button.
 
-[in] *nIDRadioButtonsLast*  
-The string ID of the last radio button.
+*nIDRadioButtonsLast*<br/>
+[in] The string ID of the last radio button.
 
 ### Remarks
 
@@ -601,8 +601,8 @@ void NavigateTo(CTaskDialog& oTaskDialog) const;
 
 ### Parameters
 
-[in] *oTaskDialog*  
-The `CTaskDialog` that receives the focus.
+*oTaskDialog*<br/>
+[in] The `CTaskDialog` that receives the focus.
 
 ### Remarks
 
@@ -618,8 +618,8 @@ virtual HRESULT OnCommandControlClick(int nCommandControlID);
 
 ### Parameters
 
-[in] *nCommandControlID*  
-The ID of the command button control that the user selected.
+*nCommandControlID*<br/>
+[in] The ID of the command button control that the user selected.
 
 ### Return Value
 
@@ -671,8 +671,8 @@ virtual HRESULT OnExpandButtonClicked(BOOL bExpanded);
 
 ### Parameters
 
-[in] *bExpanded*  
-A nonzero value indicates the extra information is displayed; 0 indicates the extra information is hidden.
+*bExpanded*<br/>
+[in] A nonzero value indicates the extra information is displayed; 0 indicates the extra information is hidden.
 
 ### Return Value
 
@@ -708,8 +708,8 @@ virtual HRESULT OnHyperlinkClick(const CString& strHref);
 
 ### Parameters
 
-[in] *strHref*  
-The string that represents the hyperlink.
+*strHref*<br/>
+[in] The string that represents the hyperlink.
 
 ### Return Value
 
@@ -763,8 +763,8 @@ virtual HRESULT OnRadioButtonClick(int nRadioButtonID);
 
 ### Parameters
 
-[in] *nRadioButtonID*  
-The ID of the radio button control that the user clicked.
+*nRadioButtonID*<br/>
+[in] The ID of the radio button control that the user clicked.
 
 ### Return Value
 
@@ -784,8 +784,8 @@ virtual HRESULT OnTimer(long lTime);
 
 ### Parameters
 
-[in] *lTime*  
-Time in milliseconds since the `CTaskDialog` was created or the timer was reset.
+*lTime*<br/>
+[in] Time in milliseconds since the `CTaskDialog` was created or the timer was reset.
 
 ### Return Value
 
@@ -805,8 +805,8 @@ virtual HRESULT OnVerificationCheckboxClick(BOOL bChecked);
 
 ### Parameters
 
-[in] *bChecked*  
-TRUE indicates the verification check box is selected; FALSE indicates it is not.
+*bChecked*<br/>
+[in] TRUE indicates the verification check box is selected; FALSE indicates it is not.
 
 ### Return Value
 
@@ -853,14 +853,14 @@ void SetCommandControlOptions(
 
 ### Parameters
 
-[in] *nCommandControlID*  
-The ID of the command control to update.
+*nCommandControlID*<br/>
+[in] The ID of the command control to update.
 
-[in] *bEnabled*  
-A Boolean parameter that indicates if the specified command button control is enabled or disabled.
+*bEnabled*<br/>
+[in] A Boolean parameter that indicates if the specified command button control is enabled or disabled.
 
-[in] *bRequiresElevation*  
-A Boolean parameter that indicates if the specified command button control requires elevation.
+*bRequiresElevation*<br/>
+[in] A Boolean parameter that indicates if the specified command button control requires elevation.
 
 ### Remarks
 
@@ -882,11 +882,11 @@ void SetCommonButtonOptions(
 
 ### Parameters
 
-[in] *nDisabledButtonMask*  
-A mask for the common buttons to disable.
+*nDisabledButtonMask*<br/>
+[in] A mask for the common buttons to disable.
 
-[in] *nElevationButtonMask*  
-A mask for the common buttons that require elevation.
+*nElevationButtonMask*<br/>
+[in] A mask for the common buttons that require elevation.
 
 ### Remarks
 
@@ -913,14 +913,14 @@ void SetCommonButtons(
 
 ### Parameters
 
-[in] *nButtonMask*  
-A mask of the buttons to add to the `CTaskDialog`.
+*nButtonMask*<br/>
+[in] A mask of the buttons to add to the `CTaskDialog`.
 
-[in] *nDisabledButtonMask*  
-A mask of the buttons to disable.
+*nDisabledButtonMask*<br/>
+[in] A mask of the buttons to disable.
 
-[in] *nElevationButtonMask*  
-A mask of the buttons that require elevation.
+*nElevationButtonMask*<br/>
+[in] A mask of the buttons that require elevation.
 
 ### Remarks
 
@@ -946,8 +946,8 @@ void SetContent(const CString& strContent);
 
 ### Parameters
 
-[in] *strContent*  
-The string to display to the user.
+*strContent*<br/>
+[in] The string to display to the user.
 
 ### Remarks
 
@@ -967,8 +967,8 @@ void SetDefaultCommandControl(int nCommandControlID);
 
 ### Parameters
 
-[in] *nCommandControlID*  
-The ID of the command button control to be the default.
+*nCommandControlID*<br/>
+[in] The ID of the command button control to be the default.
 
 ### Remarks
 
@@ -990,8 +990,8 @@ void SetDefaultRadioButton(int nRadioButtonID);
 
 ### Parameters
 
-[in] *nRadioButtonID*  
-The ID of the radio button to be the default.
+*nRadioButtonID*<br/>
+[in] The ID of the radio button to be the default.
 
 ### Remarks
 
@@ -1013,8 +1013,8 @@ void SetDialogWidth(int nWidth = 0);
 
 ### Parameters
 
-[in] *nWidth*  
-The width of the dialog box, in pixels.
+*nWidth*<br/>
+[in] The width of the dialog box, in pixels.
 
 ### Remarks
 
@@ -1039,14 +1039,14 @@ void SetExpansionArea(
 
 ### Parameters
 
-[in] *strExpandedInformation*  
-The string that the `CTaskDialog` displays in the main body of the dialog box when the user clicks the expansion button.
+*strExpandedInformation*<br/>
+[in] The string that the `CTaskDialog` displays in the main body of the dialog box when the user clicks the expansion button.
 
-[in] *strCollapsedLabel*  
-The string that the `CTaskDialog` displays next to the expansion button when the expanded area is collapsed.
+*strCollapsedLabel*<br/>
+[in] The string that the `CTaskDialog` displays next to the expansion button when the expanded area is collapsed.
 
-[in] *strExpandedLabel*  
-The string that the `CTaskDialog` displays next to the expansion button when the expanded area is displayed.
+*strExpandedLabel*<br/>
+[in] The string that the `CTaskDialog` displays next to the expansion button when the expanded area is displayed.
 
 ### Remarks
 
@@ -1069,11 +1069,11 @@ void SetFooterIcon(LPCWSTR lpszFooterIcon);
 
 ### Parameters
 
-[in] *hFooterIcon*  
-The new icon for the `CTaskDialog`.
+*hFooterIcon*<br/>
+[in] The new icon for the `CTaskDialog`.
 
-[in] *lpszFooterIcon*  
-The new icon for the `CTaskDialog`.
+*lpszFooterIcon*<br/>
+[in] The new icon for the `CTaskDialog`.
 
 ### Remarks
 
@@ -1097,8 +1097,8 @@ void SetFooterText(const CString& strFooterText);
 
 ### Parameters
 
-[in] *strFooterText*  
-The new text for the footer.
+*strFooterText*<br/>
+[in] The new text for the footer.
 
 ### Remarks
 
@@ -1119,11 +1119,11 @@ void SetMainIcon(LPCWSTR lpszMainIcon);
 
 ### Parameters
 
-[in] *hMainIcon*  
-The new icon.
+*hMainIcon*<br/>
+[in] The new icon.
 
-[in] *lpszMainIcon*  
-The new icon.
+*lpszMainIcon*<br/>
+[in] The new icon.
 
 ### Remarks
 
@@ -1145,8 +1145,8 @@ void SetMainInstruction(const CString& strInstructions);
 
 ### Parameters
 
-[in] *strInstructions*  
-The new main instruction.
+*strInstructions*<br/>
+[in] The new main instruction.
 
 ### Remarks
 
@@ -1166,8 +1166,8 @@ void SetOptions(int nOptionFlag);
 
 ### Parameters
 
-[in] *nOptionFlag*  
-The set of flags to use for the `CTaskDialog`.
+*nOptionFlag*<br/>
+[in] The set of flags to use for the `CTaskDialog`.
 
 ### Remarks
 
@@ -1210,11 +1210,11 @@ void SetProgressBarMarquee(
 
 ### Parameters
 
-[in] *bEnabled*  
-TRUE to enable the marquee bar; FALSE to disable the marquee bar and remove it from the `CTaskDialog`.
+*bEnabled*<br/>
+[in] TRUE to enable the marquee bar; FALSE to disable the marquee bar and remove it from the `CTaskDialog`.
 
-[in] *nMarqueeSpeed*  
-An integer that indicates the speed of the marquee bar.
+*nMarqueeSpeed*<br/>
+[in] An integer that indicates the speed of the marquee bar.
 
 ### Remarks
 
@@ -1238,8 +1238,8 @@ void SetProgressBarPosition(int nProgressPos);
 
 ### Parameters
 
-[in] *nProgressPos*  
-The position for the progress bar.
+*nProgressPos*<br/>
+[in] The position for the progress bar.
 
 ### Remarks
 
@@ -1261,11 +1261,11 @@ void SetProgressBarRange(
 
 ### Parameters
 
-[in] *nRangeMin*  
-The lower bound of the progress bar.
+*nRangeMin*<br/>
+[in] The lower bound of the progress bar.
 
-[in] *nRangeMax*  
-The upper bound of the progress bar.
+*nRangeMax*<br/>
+[in] The upper bound of the progress bar.
 
 ### Remarks
 
@@ -1289,8 +1289,8 @@ void SetProgressBarState(int nState = PBST_NORMAL);
 
 ### Parameters
 
-[in] *nState*  
-The state of the progress bar. See the Remarks section for the possible values.
+*nState*<br/>
+[in] The state of the progress bar. See the Remarks section for the possible values.
 
 ### Remarks
 
@@ -1322,11 +1322,11 @@ void SetRadioButtonOptions(
 
 ### Parameters
 
-[in] *nRadioButtonID*  
-The ID of the radio button control.
+*nRadioButtonID*<br/>
+[in] The ID of the radio button control.
 
-[in] *bEnabled*  
-TRUE to enable the radio button; FALSE to disable the radio button.
+*bEnabled*<br/>
+[in] TRUE to enable the radio button; FALSE to disable the radio button.
 
 ### Remarks
 
@@ -1346,8 +1346,8 @@ void SetVerificationCheckbox(BOOL bChecked);
 
 ### Parameters
 
-[in] *bChecked*  
-TRUE to have the verification check box selected when the `CTaskDialog` is displayed; FALSE to have the verification check box unselected when the `CTaskDialog` is displayed.
+*bChecked*<br/>
+[in] TRUE to have the verification check box selected when the `CTaskDialog` is displayed; FALSE to have the verification check box unselected when the `CTaskDialog` is displayed.
 
 ### Example
 
@@ -1363,8 +1363,8 @@ void SetVerificationCheckboxText(CString& strVerificationText);
 
 ### Parameters
 
-[in] *strVerificationText*  
-The text that this method displays next to the verification check box.
+*strVerificationText*<br/>
+[in] The text that this method displays next to the verification check box.
 
 ### Remarks
 
@@ -1384,8 +1384,8 @@ void SetWindowTitle(CString& strWindowTitle);
 
 ### Parameters
 
-[in] *strWindowTitle*  
-The new title for the `CTaskDialog`.
+*strWindowTitle*<br/>
+[in] The new title for the `CTaskDialog`.
 
 ### Remarks
 
@@ -1411,29 +1411,29 @@ static INT_PTR ShowDialog(
 
 ### Parameters
 
-[in] *strContent*  
-The string to use for the content of the `CTaskDialog`.
+*strContent*<br/>
+[in] The string to use for the content of the `CTaskDialog`.
 
-[in] *strMainInstruction*  
-The main instruction of the `CTaskDialog`.
+*strMainInstruction*<br/>
+[in] The main instruction of the `CTaskDialog`.
 
-[in] *strTitle*  
-The title of the `CTaskDialog`.
+*strTitle*<br/>
+[in] The title of the `CTaskDialog`.
 
-[in] *nIDCommandControlsFirst*  
-The string ID of the first command.
+*nIDCommandControlsFirst*<br/>
+[in] The string ID of the first command.
 
-[in] *nIDCommandControlsLast*  
-The string ID of the last command.
+*nIDCommandControlsLast*<br/>
+[in] The string ID of the last command.
 
-[in] *nCommonButtons*  
-A mask of the buttons to add to the `CTaskDialog`.
+*nCommonButtons*<br/>
+[in] A mask of the buttons to add to the `CTaskDialog`.
 
-[in] *nTaskDialogOptions*  
-The set of options to use for the `CTaskDialog`.
+*nTaskDialogOptions*<br/>
+[in] The set of options to use for the `CTaskDialog`.
 
-[in] *strFooter*  
-The string to use as the footer.
+*strFooter*<br/>
+[in] The string to use as the footer.
 
 ### Return Value
 
@@ -1469,20 +1469,20 @@ HRESULT TaskDialogCallback(
 
 ### Parameters
 
-[in] *hwnd*  
-A handle to the `m_hWnd` structure for the `CTaskDialog`.
+*hwnd*<br/>
+[in] A handle to the `m_hWnd` structure for the `CTaskDialog`.
 
-[in] *uNotification*  
-The notification code that specifies the generated message.
+*uNotification*<br/>
+[in] The notification code that specifies the generated message.
 
-[in] *wParam*  
-More information about the message.
+*wParam*<br/>
+[in] More information about the message.
 
-[in] *lParam*  
-More information about the message.
+*lParam*<br/>
+[in] More information about the message.
 
-[in] *dwRefData*  
-A pointer to the `CTaskDialog` object that the callback message applies to.
+*dwRefData*<br/>
+[in] A pointer to the `CTaskDialog` object that the callback message applies to.
 
 ### Return Value
 

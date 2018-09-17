@@ -12,7 +12,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Null and Undefined Macros
-Both null and undefined macros expand to null strings, but a macro defined as a null string is considered defined in preprocessing expressions. To define a macro as a null string, specify no characters except spaces or tabs after the equal sign (=) in a command line or command file, and enclose the null string or definition in double quotation marks (" "). To undefine a macro, use **!UNDEF.** For more information, see [Makefile Preprocessing Directives](../build/makefile-preprocessing-directives.md).  
-  
-## See Also  
- [Defining an NMAKE Macro](../build/defining-an-nmake-macro.md)
+
+Both null and undefined macros expand to null strings, but a macro defined as a null string is considered defined in preprocessing expressions. To define a macro as a null string, specify no characters except spaces or tabs after the equal sign (=) in a command line or command file, and enclose the null string or definition in double quotation marks (" "). To undefine a macro, use **!UNDEF.** For more information, see [Makefile Preprocessing Directives](../build/makefile-preprocessing-directives.md).
+
+## See Also
+
+[Defining an NMAKE Macro](../build/defining-an-nmake-macro.md)

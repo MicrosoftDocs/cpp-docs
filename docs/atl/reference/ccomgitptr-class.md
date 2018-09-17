@@ -111,17 +111,17 @@ CComGITPtr(CComGITPtr&& rv);
 
 ### Parameters
 
-[in] *p*  
-An interface pointer to be stored in the global interface table (GIT).
+*p*<br/>
+[in] An interface pointer to be stored in the global interface table (GIT).
 
-[in] *git*  
-A reference to an existing `CComGITPtr` object.
+*git*<br/>
+[in] A reference to an existing `CComGITPtr` object.
 
-[in] *dwCookie*  
-A cookie used to identify the interface pointer.
+*dwCookie*<br/>
+[in] A cookie used to identify the interface pointer.
 
-[in] *rv*  
-The source `CComGITPtr` object to move data from.
+*rv*<br/>
+[in] The source `CComGITPtr` object to move data from.
 
 ### Remarks
 
@@ -219,17 +219,17 @@ CComGITPtr& operator= (CComGITPtr&& rv);
 
 ### Parameters
 
-[in] *p*  
-A pointer to an interface.
+*p*<br/>
+[in] A pointer to an interface.
 
-[in] *git*  
-A reference to a `CComGITPtr` object.
+*git*<br/>
+[in] A reference to a `CComGITPtr` object.
 
-[in] *dwCookie*  
-A cookie used to identify the interface pointer.
+*dwCookie*<br/>
+[in] A cookie used to identify the interface pointer.
 
-[in] *rv*  
-The `CComGITPtr` to move data from.
+*rv*<br/>
+[in] The `CComGITPtr` to move data from.
 
 ### Return Value
 

@@ -56,8 +56,8 @@ ATLINLINE ATLAPI AtlGetPerUserRegistration(bool* pEnabled);
 
 ### Parameters
 
-[out] *pEnabled*  
-TRUE indicates that the registry information is directed to the **HKCU** node; FALSE indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** (**HKCR**).
+*pEnabled*<br/>
+[out] TRUE indicates that the registry information is directed to the **HKCU** node; FALSE indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** (**HKCR**).
 
 ### Return Value
 
@@ -287,8 +287,8 @@ ATLINLINE ATLAPI AtlSetPerUserRegistration(bool bEnable);
 
 ### Parameters
 
-[in] *bEnable*  
-TRUE indicates that the registry information is directed to the **HKCU** node; FALSE indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** (**HKCR**).
+*bEnable*  
+[in] TRUE indicates that the registry information is directed to the **HKCU** node; FALSE indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** (**HKCR**).
 
 ### Return Value
 

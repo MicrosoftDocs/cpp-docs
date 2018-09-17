@@ -42,10 +42,10 @@ The set of complex numbers with the operations of complex addition and complex m
 
 By representing a complex number *z* = (*a*, *b*) in the form *z* = *a* + *bi*, where *i*<sup>2</sup> = -1, the rules for the algebra of the set of real numbers can be applied to the set of complex numbers and to their components. For example:
 
-   (1 + 2*i*) \* (2 + 3*i*)  
-   = 1 \* (2 + 3*i*) + 2*i* \* (2 + 3*i*)  
-   = (2 + 3*i*) + (4*i* + 6*i*<sup>2</sup>)  
-   = (2 - 6) + (3 + 4)*i*  
+   (1 + 2*i*) \* (2 + 3*i*)
+   = 1 \* (2 + 3*i*) + 2*i* \* (2 + 3*i*)
+   = (2 + 3*i*) + (4*i* + 6*i*<sup>2</sup>)
+   = (2 - 6) + (3 + 4)*i*
    = -4 + 7*i*
 
 The system of complex numbers is a field, but it is not an ordered field. There is no ordering of the complex numbers as there is for the field of real numbers and its subsets, so inequalities cannot be applied to complex numbers as they are to real numbers.

@@ -83,11 +83,11 @@ virtual HRESULT DisplayFolder(LPAFX_SHELLITEMINFO lpItemInfo);
 ```  
   
 ### Parameters  
- [in] *lpszPath*  
- A string that contains the path of a folder.  
+*lpszPath*<br/>
+[in] A string that contains the path of a folder.  
   
- [in] *lpItemInfo*  
- A pointer to a `LPAFX_SHELLITEMINFO` structure that describes a folder to display.  
+*lpItemInfo*<br/>
+[in] A pointer to a `LPAFX_SHELLITEMINFO` structure that describes a folder to display.  
   
 ### Return Value  
  S_OK if successful; E_FAIL otherwise.  
@@ -110,8 +110,8 @@ void EnableShellContextMenu(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- A Boolean that specifies whether the framework enables the shortcut menu.  
+*bEnable*<br/>
+[in] A Boolean that specifies whether the framework enables the shortcut menu.  
   
 ##  <a name="getcurrentfolder"></a>  CMFCShellListCtrl::GetCurrentFolder  
  Retrieves the path of the currently selected folder in the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
@@ -121,8 +121,8 @@ BOOL GetCurrentFolder(CString& strPath) const;
 ```  
   
 ### Parameters  
- [out] *strPath*  
- A reference to a string parameter where the method writes the path.  
+*strPath*<br/>
+[out] A reference to a string parameter where the method writes the path.  
   
 ### Return Value  
  Nonzero if successful; 0 otherwise.  
@@ -138,8 +138,8 @@ BOOL GetCurrentFolderName(CString& strName) const;
 ```  
   
 ### Parameters  
- [out] *strName*  
- A reference to a string parameter where the method writes the name.  
+*strName*<br/>
+[out] A reference to a string parameter where the method writes the name.  
   
 ### Return Value  
  Nonzero if successful; 0 otherwise.  
@@ -180,11 +180,11 @@ BOOL GetItemPath(
 ```  
   
 ### Parameters  
- [out] *strPath*  
- A reference to a string that receives the path.  
+*strPath*<br/>
+[out] A reference to a string that receives the path.  
   
- [in] *iItem*  
- The index of the list item.  
+*iItem*<br/>
+[in] The index of the list item.  
   
 ### Return Value  
  TRUE if successful; FALSE otherwise.  
@@ -226,8 +226,8 @@ virtual int OnCompareItems(
 ```  
   
 ### Parameters  
- [in] *lParam1*  
- [in] *lParam2*  
+*lParam1*<br/>
+[in] [in] *lParam2*  
  [in] *iColumn*  
   
 ### Return Value  
@@ -244,11 +244,11 @@ virtual void OnFormatFileDate(
 ```  
   
 ### Parameters  
- [in] *tmFile*  
- The date associated with a file.  
+*tmFile*<br/>
+[in] The date associated with a file.  
   
- [out] *str*  
- A string that contains the formatted file date.  
+*str*<br/>
+[out] A string that contains the formatted file date.  
   
 ### Remarks  
  When a [CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md) object displays the date associated with a file, it must convert that date to a string format. The `CMFCShellListCtrl` uses this method to make that conversion. By default, this method uses the current locale to format the date into a string.  
@@ -263,11 +263,11 @@ virtual void OnFormatFileSize(
 ```  
   
 ### Parameters  
- [in] *lFileSize*  
- The size of the file that the framework will display.  
+*lFileSize*<br/>
+[in] The size of the file that the framework will display.  
   
- [out] *str*  
- A string that contains the formatted file size.  
+*str*<br/>
+[out] A string that contains the formatted file size.  
   
 ### Remarks  
  When a [CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md) object needs to display the size of a file, it needs to convert the file size into a string format. The `CMFCShellListCtrl` uses this method to make that conversion. By default, this method converts the file size from bytes to kilobytes and then uses the current locale to format the size into string.  
@@ -282,11 +282,11 @@ virtual int OnGetItemIcon(
 ```  
   
 ### Parameters  
- [in] *iItem*  
- The item index.  
+*iItem*<br/>
+[in] The item index.  
   
- [in] *pItem*  
- A LPAFX_SHELLITEMINFO parameter that describes the item.  
+*pItem*<br/>
+[in] A LPAFX_SHELLITEMINFO parameter that describes the item.  
   
 ### Return Value  
  The index of the icon image if successful; -1 if the function fails.  
@@ -307,14 +307,14 @@ virtual CString OnGetItemText(
 ```  
   
 ### Parameters  
- [in] *iItem*  
- The item index.  
+*iItem*<br/>
+[in] The item index.  
   
- [in] *iColumn*  
- The column of interest.  
+*iColumn*<br/>
+[in] The column of interest.  
   
- [in] *pItem*  
- A LPAFX_SHELLITEMINFO parameter that describes the item.  
+*pItem*<br/>
+[in] A LPAFX_SHELLITEMINFO parameter that describes the item.  
   
 ### Return Value  
  A `CString` that contains the text associated with the item.  
@@ -355,8 +355,8 @@ void SetItemTypes(SHCONTF nTypes);
 ```  
   
 ### Parameters  
- [in] *nTypes*  
- A list of item types that the `CMFCShellListCtrl` object supports.  
+*nTypes*<br/>
+[in] A list of item types that the `CMFCShellListCtrl` object supports.  
   
 ### Remarks  
  For more information about the list of item types, see [SHCONTF](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-_shcontf).  

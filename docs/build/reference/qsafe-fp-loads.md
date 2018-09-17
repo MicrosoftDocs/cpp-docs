@@ -41,6 +41,6 @@ This option is overridden by [/fp:except](../../build/reference/fp-specify-float
 
 ## See also
 
-[/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)  
-[Compiler Options](../../build/reference/compiler-options.md)  
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)  
+[/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

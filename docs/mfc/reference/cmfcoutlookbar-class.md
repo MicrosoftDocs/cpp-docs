@@ -167,8 +167,8 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 ```  
   
 ### Parameters  
- [in] *pBar*  
- A pointer to another pane that is being docked to this pane.  
+*pBar*<br/>
+[in] A pointer to another pane that is being docked to this pane.  
   
 ### Return Value  
  TRUE if another pane can be docked to the Outlook bar pane; otherwise FALSE.  
@@ -210,26 +210,26 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] *lpszCaption*  
- Specifies the window caption.  
+*lpszCaption*<br/>
+[in] Specifies the window caption.  
   
- [in] *pParentWnd*  
- Specifies a pointer to a parent window. It must not be NULL.  
+*pParentWnd*<br/>
+[in] Specifies a pointer to a parent window. It must not be NULL.  
   
- [in] *rect*  
- Specifies the outlook bar size and position in pixels.  
+*rect*<br/>
+[in] Specifies the outlook bar size and position in pixels.  
   
- [in] *nID*  
- Specifies the control ID. Must be distinct from other control IDs used in the application.  
+*nID*<br/>
+[in] Specifies the control ID. Must be distinct from other control IDs used in the application.  
   
- [in] *dwStyle*  
- Specifies the desired control bar style. For possible values, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
+*dwStyle*<br/>
+[in] Specifies the desired control bar style. For possible values, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] *dwControlBarStyle*  
- Specifies the special library-defined styles.  
+*dwControlBarStyle*<br/>
+[in] Specifies the special library-defined styles.  
   
- [in] *pContext*  
- Create context.  
+*pContext*<br/>
+[in] Create context.  
   
 ### Return Value  
  Nonzero if the method is successful; otherwise 0.  
@@ -257,17 +257,17 @@ CMFCOutlookBarPane* CreateCustomPage(
 ```  
   
 ### Parameters  
- [in] *lpszPageName*  
- The page label.  
+*lpszPageName*<br/>
+[in] The page label.  
   
- [in] *bActivatePage*  
- If TRUE, the page becomes active upon creation.  
+*bActivatePage*<br/>
+[in] If TRUE, the page becomes active upon creation.  
   
- [in] *dwEnabledDocking*  
- A combination of CBRS_ALIGN_ flags that specifies the enabled docking sides when the page is detached.  
+*dwEnabledDocking*<br/>
+[in] A combination of CBRS_ALIGN_ flags that specifies the enabled docking sides when the page is detached.  
   
- [in] *bEnableTextLabels*  
- If TRUE, the text labels are enabled for the buttons that reside on the page.  
+*bEnableTextLabels*<br/>
+[in] If TRUE, the text labels are enabled for the buttons that reside on the page.  
   
 ### Return Value  
  A pointer to the newly created page, or NULL if the creation failed.  
@@ -307,17 +307,17 @@ virtual BOOL FloatTab(
 ```  
   
 ### Parameters  
- [in] *pBar*  
- A pointer to the pane to float.  
+*pBar*<br/>
+[in] A pointer to the pane to float.  
   
- [in] *nTabID*  
- The zero-based index of the tab to float.  
+*nTabID*<br/>
+[in] The zero-based index of the tab to float.  
   
- [in] *dockMethod*  
- Specifies the method to use to make the pane float.  For more information, see [CBaseTabbedPane::FloatTab](../../mfc/reference/cbasetabbedpane-class.md#floattab).  
+*dockMethod*<br/>
+[in] Specifies the method to use to make the pane float.  For more information, see [CBaseTabbedPane::FloatTab](../../mfc/reference/cbasetabbedpane-class.md#floattab).  
   
- [in] *bHide*  
- TRUE to hide the pane before floating; otherwise, FALSE. Unlike the base class version of this method, this parameter does not have a default value.  
+*bHide*<br/>
+[in] TRUE to hide the pane before floating; otherwise, FALSE. Unlike the base class version of this method, this parameter does not have a default value.  
   
 ### Return Value  
  TRUE if the pane floated; otherwise, FALSE.  
@@ -348,11 +348,11 @@ virtual void GetTabArea(
 ```  
   
 ### Parameters  
- [out] *rectTabAreaTop*  
- Contains the size and position (in the client coordinates) of the top tab area when the function returns.  
+*rectTabAreaTop*<br/>
+[out] Contains the size and position (in the client coordinates) of the top tab area when the function returns.  
   
- [out] *rectTabAreaBottom*  
- Contains the size and position (in the client coordinates) of the bottom tab area when the function returns.  
+*rectTabAreaBottom*<br/>
+[out] Contains the size and position (in the client coordinates) of the bottom tab area when the function returns.  
   
 ### Remarks  
  The framework calls this method to determine the type of docking to the target pane. When the framework determines that the user drags the pane to be docked over the tab area of the target pane, it tries to add the first pane as a new tab of the target pane. Otherwise, it tries to dock the first pane at an appropriate side of the target pane. The framework creates a new container with a slider to accommodate the additional docked pane.  
@@ -382,8 +382,8 @@ virtual void OnAfterAnimation(int nPage);
 ```  
   
 ### Parameters  
- [in] *nPage*  
- The zero-based index of the tab page that has been made active.  
+*nPage*<br/>
+[in] The zero-based index of the tab page that has been made active.  
   
 ### Remarks  
  The visual effect of setting the active tab depends on whether you have enabled animation. For more information, see [CMFCOutlookBarTabCtrl::EnableAnimation](../../mfc/reference/cmfcoutlookbartabctrl-class.md#enableanimation).  
@@ -396,8 +396,8 @@ virtual BOOL OnBeforeAnimation(int nPage);
 ```  
   
 ### Parameters  
- [in] *nPage*  
- The zero-based index of the tab page that is about to be set active.  
+*nPage*<br/>
+[in] The zero-based index of the tab page that is about to be set active.  
   
 ### Return Value  
  Returns TRUE if animation should be used in setting the new active tab, or FALSE if animation should be disabled.  
@@ -412,8 +412,8 @@ virtual void OnScroll(BOOL bDown);
 ```  
   
 ### Parameters  
- [in] *bDown*  
- TRUE if the Outlook bar is scrolling down, or FALSE if it is scrolling up.  
+*bDown*<br/>
+[in] TRUE if the Outlook bar is scrolling down, or FALSE if it is scrolling up.  
   
 ### Remarks  
   
@@ -427,11 +427,11 @@ BOOL RemoveCustomPage(
 ```  
   
 ### Parameters  
- [in] *uiPage*  
- Zero-based index of the page in the parent Outlook window.  
+*uiPage*<br/>
+[in] Zero-based index of the page in the parent Outlook window.  
   
- [in] *pTargetWnd*  
- Pointerto the parent Outlook window.  
+*pTargetWnd*<br/>
+[in] Pointerto the parent Outlook window.  
   
 ### Return Value  
  Nonzero if the custom page has been removed successfully; otherwise 0.  
@@ -453,11 +453,11 @@ void SetButtonsFont(
 ```  
   
 ### Parameters  
- [in] *pFont*  
- Specifies the new font.  
+*pFont*<br/>
+[in] Specifies the new font.  
   
- [in] *bRedraw*  
- If TRUE, the Outlook bar will be redrawn.  
+*bRedraw*<br/>
+[in] If TRUE, the Outlook bar will be redrawn.  
   
 ### Remarks  
  Use this method to set a font for the text displayed on outlook tab page buttons.  
@@ -470,8 +470,8 @@ void SetMode2003(BOOL bMode2003=TRUE);
 ```  
   
 ### Parameters  
- [in] *bMode2003*  
- If TRUE, Office 2003 mode is enabled.  
+*bMode2003*<br/>
+[in] If TRUE, Office 2003 mode is enabled.  
   
 ### Remarks  
  Use this function to enable or disable Office 2003 mode. In this mode, the Outlook bar has an additional toolbar with a customization button. The behavior of the Outlook bar conforms to the behavior of the Outlook bar in Microsoft Office 2003.  

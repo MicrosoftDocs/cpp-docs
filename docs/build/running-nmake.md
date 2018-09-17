@@ -25,11 +25,11 @@ The *commandfile* text file (or response file) contains command-line input. Othe
 
 ## What do you want to know more about?
 
-[NMAKE options](../build/nmake-options.md)  
+[NMAKE options](../build/nmake-options.md)
 
-[Tools.ini and NMAKE](../build/tools-ini-and-nmake.md)  
+[Tools.ini and NMAKE](../build/tools-ini-and-nmake.md)
 
-[Exit codes from NMAKE](../build/exit-codes-from-nmake.md)  
+[Exit codes from NMAKE](../build/exit-codes-from-nmake.md)
 
 ## See Also
 

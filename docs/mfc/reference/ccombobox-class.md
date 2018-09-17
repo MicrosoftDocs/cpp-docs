@@ -499,8 +499,8 @@ BOOL GetCueBanner(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[out] *lpszText*|Pointer to a buffer that receives the cue banner text.|  
-|[in] *cchText*|Size of the buffer that the *lpszText* parameter points to.|  
+|*lpszText*|[out] Pointer to a buffer that receives the cue banner text.|  
+|*cchText*|[in] Size of the buffer that the *lpszText* parameter points to.|  
   
 ### Return Value  
  In the first overload, a [CString](../../atl-mfc-shared/using-cstring.md) object that contains the cue banner text if it exists; otherwise, a `CString` object that has zero length.  
@@ -935,7 +935,7 @@ BOOL SetCueBanner(LPCTSTR lpszText);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *lpszText*|Pointer to a null-terminated buffer that contains the cue text.|  
+|*lpszText*|[in] Pointer to a null-terminated buffer that contains the cue text.|  
   
 ### Return Value  
  TRUE if the method is successful; otherwise, FALSE.  
@@ -1178,7 +1178,7 @@ BOOL SetMinVisibleItems(int iMinVisible);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *iMinVisible*|Specifies the minimum number of visible items.|  
+|*iMinVisible*|[in] Specifies the minimum number of visible items.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  

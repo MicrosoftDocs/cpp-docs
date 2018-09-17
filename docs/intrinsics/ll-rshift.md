@@ -27,11 +27,11 @@ __int64 __ll_rshift(
 ```  
   
 #### Parameters  
- [in] `Mask`  
- The 64-bit integer value to shift right.  
+*Mask*<br/>
+[in] The 64-bit integer value to shift right.  
   
- [in] `nBit`  
- The number of bits to shift, modulo 64 on x64, and modulo 32 on x86.  
+*nBit*<br/>
+[in] The number of bits to shift, modulo 64 on x64, and modulo 32 on x86.  
   
 ## Return Value  
  The mask shifted by `nBit` bits.  

@@ -29,18 +29,19 @@ int _except_handler3(
 );  
 ```  
   
-#### Parameters  
- [in] `exception_record`  
- Information about the specific exception.  
+#### Parameters
+
+*exception_record*<br/>
+[in] Information about the specific exception.  
   
- [in] `registration`  
- The record that indicates which scope table should be used to find the exception handler.  
+*registration*<br/>
+[in] The record that indicates which scope table should be used to find the exception handler.  
   
- [in] `context`  
- Reserved.  
+*context*<br/>
+[in] Reserved.  
   
- [in] `dispatcher`  
- Reserved.  
+*dispatcher*<br/>
+[in] Reserved.  
   
 ## Return Value  
  If an exception should be dismissed, returns `DISPOSITION_DISMISS`. If the exception should be passed up a level to the encapsulating exception handlers, returns `DISPOSITION_CONTINUE_SEARCH`.  

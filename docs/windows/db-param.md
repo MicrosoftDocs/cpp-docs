@@ -35,8 +35,8 @@ Associates the specified member variable with an input or output parameter and d
 *ordinal*  
 The column number (DBCOLUMNINFO ordinal) corresponding to a field in the rowset to which to bind data.
 
-*paramtype* (optional)  
-The type to set for the parameter. Providers support only parameter I/O types that are supported by the underlying data source. The type is a combination of one or more DBPARAMIOENUM values:
+*paramtype*  
+(Optional) The type to set for the parameter. Providers support only parameter I/O types that are supported by the underlying data source. The type is a combination of one or more DBPARAMIOENUM values:
 
 - DBPARAMIO_INPUT An input parameter.
 
@@ -44,20 +44,20 @@ The type to set for the parameter. Providers support only parameter I/O types th
 
 - DBPARAMIO_NOTPARAM The accessor has no parameters. Setting `eParamIO` to this value in row accessors reminds the user that parameters are ignored.
 
-*dbtype* (optional)  
-An OLE DB [Type Indicator](/previous-versions/windows/desktop/ms711251\(v=vs.85\)) for the column entry.
+*dbtype*  
+(Optional) An OLE DB [Type Indicator](/previous-versions/windows/desktop/ms711251\(v=vs.85\)) for the column entry.
 
-*precision* (optional)  
-The precision to be used for the column entry. For details, see the description of `bPrecision` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
+*precision*  
+(Optional) The precision to be used for the column entry. For details, see the description of `bPrecision` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
 
-*scale* (optional)  
-The scale to be used for the column entry. For details, see the description of `bScale` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
+*scale*  
+(Optional) The scale to be used for the column entry. For details, see the description of `bScale` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
 
-*status* (optional)  
-A member variable used to hold the status of this column. The status indicates whether the column value is a data value or some other value, such as NULL. For possible values, see [Status](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) in the *OLE DB Programmer's Reference*.
+*status*  
+(Optional) A member variable used to hold the status of this column. The status indicates whether the column value is a data value or some other value, such as NULL. For possible values, see [Status](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) in the *OLE DB Programmer's Reference*.
 
-*length* (optional)  
-A member variable used to hold the size of the column in bytes.
+*length*  
+(Optional) A member variable used to hold the size of the column in bytes.
 
 ## Remarks
 

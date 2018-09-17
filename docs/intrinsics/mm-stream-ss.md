@@ -29,11 +29,11 @@ void _mm_stream_ss(
   
 #### Parameters  
   
- [out] `Dest`  
- A pointer to the location where the source data is written.  
+*Dest*<br/>
+[out] A pointer to the location where the source data is written.  
   
- [in] `Source`  
- A 128-bit number that contains the `float` value to be written in its bottom 32 bits..  
+*Source*<br/>
+[in] A 128-bit number that contains the `float` value to be written in its bottom 32 bits..  
   
 ## Return Value  
   

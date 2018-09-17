@@ -28,14 +28,14 @@ void __movsw( 
 ```  
   
 #### Parameters  
- [out] `Dest`  
- The destination of the operation.  
+*Dest*<br/>
+[out] The destination of the operation.  
   
- [in] `Source`  
- The source of the operation.  
+*Source*<br/>
+[in] The source of the operation.  
   
- [in] `Count`  
- The number of words to copy.  
+*Count*<br/>
+[in] The number of words to copy.  
   
 ## Requirements  
   

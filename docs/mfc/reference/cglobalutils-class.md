@@ -61,8 +61,8 @@ void AdjustRectToworkArea(
 ```  
   
 ### Parameters  
- [in, out] *rect*  
- [in] *pRectDelta*  
+*rect*<br/>
+[in, out] [in] *pRectDelta*  
   
 ### Remarks  
   
@@ -80,12 +80,12 @@ void CalcExpectedDockedRect(
 ```  
   
 ### Parameters  
- [in] *barContainerManager*  
- [in] *pWndTodock*  
- [in] *ptMouse*  
- [out] *rectResult*  
- [out] *bDrawTab*  
- [out] *ppTargetBar*  
+*barContainerManager*<br/>
+[in] [in] *pWndTodock*  
+*ptMouse*<br/>
+[in] [out] *rectResult*  
+*bDrawTab*<br/>
+[out] [out] *ppTargetBar*  
   
 ### Remarks  
   
@@ -133,14 +133,14 @@ BOOL CheckAlignment(
 ```  
   
 ### Parameters  
- [in] *point*  
- [in] *pBar*  
- [in] *nSensitivity*  
- [in] *pDockManager*  
- [in] *bOuterEdge*  
- [out] *dwAlignment*  
- [in] *dwEnabledDockBars*  
- [in] *lpRectBounds*  
+*point*<br/>
+[in] [in] *pBar*  
+*nSensitivity*<br/>
+[in] [in] *pDockManager*  
+*bOuterEdge*<br/>
+[in] [out] *dwAlignment*  
+*dwEnabledDockBars*<br/>
+[in] [in] *lpRectBounds*  
   
 ### Return Value  
   
@@ -156,8 +156,8 @@ BOOL CyFromString(
 ```  
   
 ### Parameters  
- [out] *cy*  
- [in] *psz*  
+*cy*<br/>
+[out] [in] *psz*  
   
 ### Return Value  
   
@@ -173,8 +173,8 @@ BOOL DecimalFromString(
 ```  
   
 ### Parameters  
- [out] *decimal*  
- [in] *psz*  
+*decimal*<br/>
+[out] [in] *psz*  
   
 ### Return Value  
   
@@ -190,8 +190,8 @@ void FlipRect(
 ```  
   
 ### Parameters  
- [in, out] *rect*  
- [in] *nDegrees*  
+*rect*<br/>
+[in, out] [in] *nDegrees*  
   
 ### Remarks  
   
@@ -206,8 +206,8 @@ void ForceAdjustLayout(
 ```  
   
 ### Parameters  
- [in, out] *pDockManager*  
- [in] *bForce*  
+*pDockManager*<br/>
+[in, out] [in] *bForce*  
  [in] *bForceInvisible*  
   
 ### Remarks  
@@ -254,12 +254,12 @@ BOOL GetPaneAndAlignFromPoint(
 ```  
   
 ### Parameters  
- [in] *barContainerManager*  
- [in] *pt*  
- [out] *ppTargetControlBar*  
- [out] *dwAlignment*  
- [out] *bTabArea*  
- [out] *bCaption*  
+*barContainerManager*<br/>
+[in] [in] *pt*  
+*ppTargetControlBar*<br/>
+[out] [out] *dwAlignment*  
+*bTabArea*<br/>
+[out] [out] *bCaption*  
   
 ### Return Value  
   
@@ -290,8 +290,8 @@ void SetNewParent(
 ```  
   
 ### Parameters  
- [in] *lstControlBars*  
- [in] *pNewParent*  
+*lstControlBars*<br/>
+[in] [in] *pNewParent*  
  [in] *bCheckVisibility*  
   
 ### Remarks  
@@ -306,8 +306,8 @@ BOOL StringFromCy(
 ```  
   
 ### Parameters  
- [out] *str*  
- [in] *cy*  
+*str*<br/>
+[out] [in] *cy*  
   
 ### Return Value  
   
@@ -323,8 +323,8 @@ BOOL StringFromDecimal(
 ```  
   
 ### Parameters  
- [out] *str*  
- [in] *decimal*  
+*str*<br/>
+[out] [in] *decimal*  
   
 ### Return Value  
   

@@ -93,14 +93,14 @@ CMFCToolBarFontComboBox();
 ```  
   
 ### Parameters  
- [in] *uiID*  
- The command ID of the combo box.  
+*uiID*<br/>
+[in] The command ID of the combo box.  
   
- [in] *iImage*  
- The zero-based index of a toolbar image. The image is located in the [CMFCToolBarImages Class](../../mfc/reference/cmfctoolbarimages-class.md) object that [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md) class maintains.  
+*iImage*<br/>
+[in] The zero-based index of a toolbar image. The image is located in the [CMFCToolBarImages Class](../../mfc/reference/cmfctoolbarimages-class.md) object that [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md) class maintains.  
   
- [in] *nFontType*  
- The types of fonts that the combo box contains. This parameter can be a combination (boolean OR) of the following values:  
+*nFontType*<br/>
+[in] The types of fonts that the combo box contains. This parameter can be a combination (boolean OR) of the following values:  
   
  DEVICE_FONTTYPE  
   
@@ -108,20 +108,20 @@ CMFCToolBarFontComboBox();
   
  TRUETYPE_FONTTYPE  
   
- [in] *nCharSet*  
- If set to DEFAULT_CHARSET, the combo box contains all uniquely-named fonts in all character sets. (If there are two fonts with the same name, the combo box contains one of them.) If set to a valid character set value, the combo box contains only fonts in the specified character set. See [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) for a listing of possible character sets.  
+*nCharSet*<br/>
+[in] If set to DEFAULT_CHARSET, the combo box contains all uniquely-named fonts in all character sets. (If there are two fonts with the same name, the combo box contains one of them.) If set to a valid character set value, the combo box contains only fonts in the specified character set. See [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) for a listing of possible character sets.  
   
- [in] *dwStyle*  
- The style of the combo box. (see [Combo-Box Styles](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles))  
+*dwStyle*<br/>
+[in] The style of the combo box. (see [Combo-Box Styles](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles))  
   
- [in] *iWidth*  
- The width in pixels of the edit control.  
+*iWidth*<br/>
+[in] The width in pixels of the edit control.  
   
- [in] *nPitchAndFamily*  
- If set to DEFAULT_PITCH, the combo box contains fonts regardless of pitch. If set to FIXED_PITCH or VARIABLE_PITCH, the combo box contains only fonts with that pitch type. Filtering based on font family is not currently supported.  
+*nPitchAndFamily*<br/>
+[in] If set to DEFAULT_PITCH, the combo box contains fonts regardless of pitch. If set to FIXED_PITCH or VARIABLE_PITCH, the combo box contains only fonts with that pitch type. Filtering based on font family is not currently supported.  
   
- [out] *pLstFontsExternal*  
- Pointer to a [CObList Class](../../mfc/reference/coblist-class.md) object that stores the available fonts.  
+*pLstFontsExternal*<br/>
+[out] Pointer to a [CObList Class](../../mfc/reference/coblist-class.md) object that stores the available fonts.  
   
 ### Remarks  
  Usually, `CMFCToolBarFontComboBox` objects store the list of available fonts in a single shared `CObList` object. If you use the second overload of the constructor and provide a valid pointer to *pLstFontsExternal*, that `CMFCToolBarFontComboBox` object will instead fill the `CObList` that *pLstFontsExternal* points to with available fonts.  
@@ -139,8 +139,8 @@ const CMFCFontInfo* GetFontDesc(int iIndex=-1) const;
 ```  
   
 ### Parameters  
- [in] *iIndex*  
- Specifies the zero-based index of a combo box item.  
+*iIndex*<br/>
+[in] Specifies the zero-based index of a combo box item.  
   
 ### Return Value  
  A pointer to a `CMFCFontInfo` object. If *iIndex* does not specify a valid item index, the return value is NULL.  
@@ -166,14 +166,14 @@ BOOL SetFont(
 ```  
   
 ### Parameters  
- [in] *lpszName*  
- Specifies the font name or prefix.  
+*lpszName*<br/>
+[in] Specifies the font name or prefix.  
   
- [in] *nCharSet*  
- Specifies the character set.  
+*nCharSet*<br/>
+[in] Specifies the character set.  
   
- [in] *bExact*  
- Specifies whether *lpszName* contains the font name or the font prefix.  
+*bExact*<br/>
+[in] Specifies whether *lpszName* contains the font name or the font prefix.  
   
 ### Return Value  
  Nonzero if the font was selected successfully; otherwise 0.  

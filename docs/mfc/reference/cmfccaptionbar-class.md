@@ -159,8 +159,8 @@ void EnableButton(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable the button, FALSE to disable the button.  
+*bEnable*<br/>
+[in] TRUE to enable the button, FALSE to disable the button.  
   
 ##  <a name="getalignment"></a>  CMFCCaptionBar::GetAlignment  
  Returns the alignment of the specified element.  
@@ -170,8 +170,8 @@ BarElementAlignment GetAlignment(BarElement elem);
 ```  
   
 ### Parameters  
- [in] *elem*  
- A caption bar element for which to retrieve alignment.  
+*elem*<br/>
+[in] A caption bar element for which to retrieve alignment.  
   
 ### Return Value  
  The alignment of an element, such as a button, a bitmap, text, or an icon.  
@@ -261,11 +261,11 @@ virtual void OnDrawBackground(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to the device context of the caption bar.  
+*pDC*<br/>
+[in] A pointer to the device context of the caption bar.  
   
- [in] *rect*  
- The bounding rectangle to fill.  
+*rect*<br/>
+[in] The bounding rectangle to fill.  
   
 ### Remarks  
  The `OnDrawBackground` method is called when the background of the caption bar is about to be filled. The default implementation fills the background by using the [CMFCCaptionBar::m_clrBarBackground](#m_clrbarbackground) color.  
@@ -282,11 +282,11 @@ virtual void OnDrawBorder(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A device context that is used to display the borders.  
+*pDC*<br/>
+[in] A device context that is used to display the borders.  
   
- [in] *rect*  
- The bounding rectangle.  
+*rect*<br/>
+[in] The bounding rectangle.  
   
 ### Remarks  
  By default, the borders have the flat style.  
@@ -305,17 +305,17 @@ virtual void OnDrawButton(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context that is used to display the button.  
+*pDC*<br/>
+[in] A pointer to a device context that is used to display the button.  
   
- [in] *rect*  
- The bounding rectangle of the button.  
+*rect*<br/>
+[in] The bounding rectangle of the button.  
   
- [in] *strButton*  
- The button's text label.  
+*strButton*<br/>
+[in] The button's text label.  
   
- [in] *bEnabled*  
- TRUE if the button is enabled; FALSE otherwise.  
+*bEnabled*<br/>
+[in] TRUE if the button is enabled; FALSE otherwise.  
   
 ### Remarks  
  Override this method in a `CMFCCaptionBar` derived class to customize the appearance of the caption bar's button.  
@@ -330,11 +330,11 @@ virtual void OnDrawImage(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context that is used to display the image.  
+*pDC*<br/>
+[in] A pointer to a device context that is used to display the image.  
   
- [in] *rect*  
- Specifies the bounding rectangle of the image.  
+*rect*<br/>
+[in] Specifies the bounding rectangle of the image.  
   
 ### Remarks  
  Override this method in a `CMFCCaptionBar` derived class to customize the image appearance.  
@@ -350,14 +350,14 @@ virtual void OnDrawText(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context that is used to display the button.  
+*pDC*<br/>
+[in] A pointer to a device context that is used to display the button.  
   
- [in] *rect*  
- The bounding rectangle of the text.  
+*rect*<br/>
+[in] The bounding rectangle of the text.  
   
- [in] *strText*  
- The text string to display.  
+*strText*<br/>
+[in] The text string to display.  
   
 ### Remarks  
  The default implementation displays the text by using `CDC::DrawText` and [CMFCCaptionBar::m_clrBarText](#m_clrbartext) color.  
@@ -414,17 +414,17 @@ void SetBitmap(
 ```  
   
 ### Parameters  
- [in] *hBitmap*  
- The handle to the bitmap to set.  
+*hBitmap*<br/>
+[in] The handle to the bitmap to set.  
   
- [in] *clrTransparent*  
- An RGB value that specifies the transparent color of the bitmap.  
+*clrTransparent*<br/>
+[in] An RGB value that specifies the transparent color of the bitmap.  
   
- [in] *bStretch*  
- If TRUE, the bitmap is stretched if it does not fit to the image bounding rectangle. Otherwise the bitmap is not stretched.  
+*bStretch*<br/>
+[in] If TRUE, the bitmap is stretched if it does not fit to the image bounding rectangle. Otherwise the bitmap is not stretched.  
   
- [in] *bmpAlignment*  
- The alignment of the bitmap.  
+*bmpAlignment*<br/>
+[in] The alignment of the bitmap.  
   
 ### Remarks  
  Use this method to set a bitmap on a caption bar.  
@@ -449,8 +449,8 @@ void SetBorderSize(int nSize);
 ```  
   
 ### Parameters  
- [in] *nSize*  
- The new size, in pixels, of the caption bar border.  
+*nSize*<br/>
+[in] The new size, in pixels, of the caption bar border.  
   
 ##  <a name="setbutton"></a>  CMFCCaptionBar::SetButton  
  Sets the button for the caption bar.  
@@ -497,11 +497,11 @@ void SetButtonToolTip(
 ```  
   
 ### Parameters  
- [in] *lpszToolTip*  
- The tooltip caption.  
+*lpszToolTip*<br/>
+[in] The tooltip caption.  
   
- [in] *lpszDescription*  
- The tooltip description.  
+*lpszDescription*<br/>
+[in] The tooltip description.  
   
 ##  <a name="setflatborder"></a>  CMFCCaptionBar::SetFlatBorder  
  Sets the border style of the caption bar.  
@@ -511,8 +511,8 @@ void SetFlatBorder(BOOL bFlat=TRUE);
 ```  
   
 ### Parameters  
- [in] *bFlat*  
- TRUE if the border of a caption bar is flat. FALSE if the border is 3D.  
+*bFlat*<br/>
+[in] TRUE if the border of a caption bar is flat. FALSE if the border is 3D.  
   
 ##  <a name="seticon"></a>  CMFCCaptionBar::SetIcon  
  Sets the icon for a caption bar.  
@@ -524,11 +524,11 @@ void SetIcon(
 ```  
   
 ### Parameters  
- [in] *hIcon*  
- The handle to the icon to set.  
+*hIcon*<br/>
+[in] The handle to the icon to set.  
   
- [in] *iconAlignment*  
- The alignment of the icon.  
+*iconAlignment*<br/>
+[in] The alignment of the icon.  
   
 ### Remarks  
  Caption bars can display either icons or bitmaps. See [CMFCCaptionBar::SetBitmap](#setbitmap) to find out how to display a bitmap. If you set both an icon and a bitmap, the icon is always displayed. Call [CMFCCaptionBar::RemoveIcon](#removeicon) to remove an icon from the caption bar.  
@@ -553,11 +553,11 @@ void SetImageToolTip(
 ```  
   
 ### Parameters  
- [in] *lpszToolTip*  
- The text of the tooltip.  
+*lpszToolTip*<br/>
+[in] The text of the tooltip.  
   
- [in] *lpszDescription*  
- The tooltip description.  
+*lpszDescription*<br/>
+[in] The tooltip description.  
   
 ##  <a name="setmargin"></a>  CMFCCaptionBar::SetMargin  
  Sets the distance between the edge of the caption bar element and the edge of the caption bar control.  
@@ -567,8 +567,8 @@ void SetMargin(int nMargin);
 ```  
   
 ### Parameters  
- [in] *nMargin*  
- The distance, in pixels, between the edge of the caption bar elements and the edge of the caption bar control.  
+*nMargin*<br/>
+[in] The distance, in pixels, between the edge of the caption bar elements and the edge of the caption bar control.  
   
 ##  <a name="settext"></a>  CMFCCaptionBar::SetText  
  Sets the text label for the caption bar.  
@@ -580,11 +580,11 @@ void SetText(
 ```  
   
 ### Parameters  
- [in] *strText*  
- The text string to set.  
+*strText*<br/>
+[in] The text string to set.  
   
- [in] *textAlignment*  
- The text alignment.  
+*textAlignment*<br/>
+[in] The text alignment.  
   
 ### Remarks  
  The text label is aligned as specified by the *textAlignment* parameter. It can be one of the following `BarElementAlignment` values:  

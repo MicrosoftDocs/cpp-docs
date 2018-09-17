@@ -71,23 +71,23 @@ BOOL BrowseForFolder(
 ```  
   
 ### Parameters  
- [out] *strOutFolder*  
- The string used by the method to store the path of the selected folder.  
+*strOutFolder*<br/>
+[out] The string used by the method to store the path of the selected folder.  
   
- [in] *pWndParent*  
- A pointer to the parent window.  
+*pWndParent*<br/>
+[in] A pointer to the parent window.  
   
- [in] *lplszInitialFolder*  
- A string that contains the folder that is selected by default when the dialog box is displayed.  
+*lplszInitialFolder*<br/>
+[in] A string that contains the folder that is selected by default when the dialog box is displayed.  
   
- [in] *lpszTitle*  
- The title for the dialog box.  
+*lpszTitle*<br/>
+[in] The title for the dialog box.  
   
- [in] *ulFlags*  
- Flags specifying options for the dialog box. See [BROWSEINFO](/windows/desktop/api/shlobj_core/ns-shlobj_core-_browseinfoa) for the detailed description.  
+*ulFlags*<br/>
+[in] Flags specifying options for the dialog box. See [BROWSEINFO](/windows/desktop/api/shlobj_core/ns-shlobj_core-_browseinfoa) for the detailed description.  
   
- [out] *piFolderImage*  
- A pointer to the integer value where the method writes the image index of the selected folder.  
+*piFolderImage*<br/>
+[out] A pointer to the integer value where the method writes the image index of the selected folder.  
   
 ### Return Value  
  Nonzero if the user selects a folder from the dialog box; otherwise 0.  
@@ -110,11 +110,11 @@ LPITEMIDLIST ConcatenateItem(
 ```  
   
 ### Parameters  
- [in] *pidl1*  
- The first item.  
+*pidl1*<br/>
+[in] The first item.  
   
- [in] *pidl2*  
- The second item.  
+*pidl2*<br/>
+[in] The second item.  
   
 ### Return Value  
  A pointer to the new item list if the function succeeds, otherwise NULL.  
@@ -130,8 +130,8 @@ LPITEMIDLIST CopyItem(LPCITEMIDLIST pidlSource);
 ```  
   
 ### Parameters  
- [in] *pidlSource*  
- The original item list.  
+*pidlSource*<br/>
+[in] The original item list.  
   
 ### Return Value  
  A pointer to the newly created item list if successful; otherwise NULL.  
@@ -147,8 +147,8 @@ LPITEMIDLIST CreateItem(UINT cbSize);
 ```  
   
 ### Parameters  
- [in] *cbSize*  
- The size of the item list.  
+*cbSize*<br/>
+[in] The size of the item list.  
   
 ### Return Value  
  A pointer to the created item list if successful; otherwise NULL.  
@@ -171,8 +171,8 @@ void FreeItem(LPITEMIDLIST pidl);
 ```  
   
 ### Parameters  
- [in] *pidl*  
- An item list to delete.  
+*pidl*<br/>
+[in] An item list to delete.  
   
 ##  <a name="getitemcount"></a>  CShellManager::GetItemCount  
  Returns the number of items in an item list.  
@@ -182,8 +182,8 @@ UINT GetItemCount(LPCITEMIDLIST pidl);
 ```  
   
 ### Parameters  
- [in] *pidl*  
- A pointer to an item list.  
+*pidl*<br/>
+[in] A pointer to an item list.  
   
 ### Return Value  
  The number of items in the item list.  
@@ -196,8 +196,8 @@ UINT GetItemSize(LPCITEMIDLIST pidl);
 ```  
   
 ### Parameters  
- [in] *pidl*  
- A pointer to an item list.  
+*pidl*<br/>
+[in] A pointer to an item list.  
   
 ### Return Value  
  The size of the item list.  
@@ -210,8 +210,8 @@ LPITEMIDLIST GetNextItem(LPCITEMIDLIST pidl);
 ```  
   
 ### Parameters  
- [in] *pidl*  
- The list of items to iterate.  
+*pidl*<br/>
+[in] The list of items to iterate.  
   
 ### Return Value  
  A pointer to the next item in the list.  
@@ -229,11 +229,11 @@ int GetParentItem(
 ```  
   
 ### Parameters  
- [in] *lpidl*  
- A PIDL whose parent will be retrieved.  
+*lpidl*<br/>
+[in] A PIDL whose parent will be retrieved.  
   
- [out] *lpidlParent*  
- A reference to a PIDL where the method will store the result.  
+*lpidlParent*<br/>
+[out] A reference to a PIDL where the method will store the result.  
   
 ### Return Value  
  The level of the parent PIDL.  
@@ -251,11 +251,11 @@ HRESULT ItemFromPath(
 ```  
   
 ### Parameters  
- [in] *lpszPath*  
- A string that specifies the path for the item.  
+*lpszPath*<br/>
+[in] A string that specifies the path for the item.  
   
- [out] *pidl*  
- A reference to a PIDL. The method uses this PIDL to store the pointer to its return value.  
+*pidl*<br/>
+[out] A reference to a PIDL. The method uses this PIDL to store the pointer to its return value.  
   
 ### Return Value  
  Returns NOERROR if successful; an OLE-defined error value.  

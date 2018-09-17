@@ -28,14 +28,14 @@ void __inwordstring(
 ```  
   
 #### Parameters  
- [in] `Port`  
- The port to read from.  
+*Port*<br/>
+[in] The port to read from.  
   
- [out] `Buffer`  
- The data read from the port is written here.  
+*Buffer*<br/>
+[out] The data read from the port is written here.  
   
- [in] `Count`  
- The number of words of data to read.  
+*Count*<br/>
+[in] The number of words of data to read.  
   
 ## Requirements  
   

@@ -13,19 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /Gs (Control Stack Checking Calls)
+
 Controls stack probes.
 
 ## Syntax
 
-```  
+```
 /Gs[size]
-```  
+```
 
 ## Arguments
+
 *size*<br/>
 (Optional) The number of bytes that local variables can occupy before a stack probe is initiated. If the **/Gs** option is specified without a `size` argument, it is the same as specifying **/Gs0**,
 
 ## Remarks
+
 A stack probe is a sequence of code that the compiler inserts into every function call. When initiated, a stack probe reaches benignly into memory by the amount of space that is required to store the function's local variables.
 
 If a function requires more than `size` bytes of stack space for local variables, its stack probe is initiated. By default, the compiler generates code that initiates a stack probe when a function requires more than one page of stack space. This is equivalent to a compiler option of **/Gs4096** for x86, x64, and ARM platforms. This value allows an application and the Windows memory manager to increase the amount of memory committed to the program stack dynamically at run time.
@@ -41,18 +44,19 @@ You can turn stack probes on or off by using [check_stack](../../preprocessor/ch
 
 ### To set this compiler option in the Visual Studio development environment
 
-1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-2.  Select the **C/C++** folder.
+1. Select the **C/C++** folder.
 
-3.  Select the **Command Line** property page.
+1. Select the **Command Line** property page.
 
-4.  Type the compiler option in the **Additional Options** box.
+1. Type the compiler option in the **Additional Options** box.
 
 ### To set this compiler option programmatically
 
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## See Also
-[Compiler Options](../../build/reference/compiler-options.md)   
+
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

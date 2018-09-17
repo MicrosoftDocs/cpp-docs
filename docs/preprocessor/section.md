@@ -30,30 +30,17 @@ Once a section is defined, it remains valid for the remainder of the compilation
 *section-name* is a required parameter that will be the name of the section. The name must not conflict with any standard section names. See [/SECTION](../build/reference/section-specify-section-attributes.md) for a list of names you should not use when creating a section.  
   
 *attributes* is an optional parameter consisting of one or more comma-separated attributes that you want to assign to the section. Possible *attributes* are:  
-  
-**read**  
-Allows read operations on data.  
-  
-**write**  
-Allows write operations on data.  
-  
-**execute**  
-Allows code to be executed.  
-  
-**shared**  
-Shares the section among all processes that load the image.  
-  
-**nopage**  
-Marks the section as not pageable; useful for Win32 device drivers.  
-  
-**nocache**  
-Marks the section as not cacheable; useful for Win32 device drivers.  
-  
-**discard**  
-Marks the section as discardable; useful for Win32 device drivers.  
-  
-**remove**  
-Marks the section as not memory-resident; virtual device drivers (V*x*D) only.  
+
+|Attribute|Description|
+|-|-|
+|**read**|Allows read operations on data.|
+|**write**|Allows write operations on data.|
+|**execute**|Allows code to be executed.|
+|**shared**|Shares the section among all processes that load the image.|
+|**nopage**|Marks the section as not pageable; useful for Win32 device drivers.|
+|**nocache**|Marks the section as not cacheable; useful for Win32 device drivers.|
+|**discard**|Marks the section as discardable; useful for Win32 device drivers.|
+|**remove**|Marks the section as not memory-resident; virtual device drivers (V*x*D) only.|
   
 If you do not specify attributes, the section will have read and write attributes.  
   

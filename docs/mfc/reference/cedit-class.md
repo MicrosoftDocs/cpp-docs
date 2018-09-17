@@ -346,11 +346,11 @@ CString GetCueBanner() const;
 ```  
   
 ### Parameters  
- [out] *lpszText*  
- A pointer to a string that contains the cue text.  
+*lpszText*<br/>
+[out] A pointer to a string that contains the cue text.  
   
- [in] *cchText*  
- The number of characters that can be received. This number includes the terminating NULL character.  
+*cchText*<br/>
+[in] The number of characters that can be received. This number includes the terminating NULL character.  
   
 ### Return Value  
  For the first overload, TRUE if the method is successful; otherwise FALSE.  
@@ -414,8 +414,8 @@ BOOL GetHighlight(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[out] *pichStart*|Zero-based index of the first character in the range of text that is highlighted.|  
-|[out] *pichEnd*|Zero-based index of the last character in the range of text that is highlighted.|  
+|*pichStart*|[out] Zero-based index of the first character in the range of text that is highlighted.|  
+|*pichEnd*|[out] Zero-based index of the last character in the range of text that is highlighted.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -818,11 +818,11 @@ BOOL SetCueBanner(
 ```  
   
 ### Parameters  
- [in] *lpszText*  
- Pointer to a string that contains the cue to display in the edit control.  
+*lpszText*<br/>
+[in] Pointer to a string that contains the cue to display in the edit control.  
   
- [in] *fDrawWhenFocused*  
- If FALSE, the cue banner is not drawn when the user clicks in the edit control and gives the control the focus.  
+*fDrawWhenFocused*<br/>
+[in] If FALSE, the cue banner is not drawn when the user clicks in the edit control and gives the control the focus.  
   
  If TRUE, the cue banner is drawn even when the control has focus. The cue banner disappears when the user starts to type in the control.  
   
@@ -882,8 +882,8 @@ void SetHighlight(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *ichStart*|Zero-based index of the first character in the range of text to highlight.|  
-|[in] *ichEnd*|Zero-based index of the last character in the range of text to highlight.|  
+|*ichStart*|[in] Zero-based index of the first character in the range of text to highlight.|  
+|*ichEnd*|[in] Zero-based index of the last character in the range of text to highlight.|  
   
 ### Remarks  
  This method sends the [EM_SETHILITE](/windows/desktop/Controls/em-sethilite) message, which is described in the Windows SDK.  This method sends the [EM_SETHILITE](/windows/desktop/Controls/em-sethilite) message, which is described in the Windows SDK. Both `SetHighlight` and `GetHighlight` are enabled for UNICODE builds only. 
@@ -1146,10 +1146,10 @@ BOOL ShowBalloonTip(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *pEditBalloonTip*|Pointer to an [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) structure that describes the balloon tip.|  
-|[in] *lpszTitle*|Pointer to a Unicode string that contains the title of the balloon tip.|  
-|[in] *lpszText*|Pointer to a Unicode string that contains the balloon tip text.|  
-|[in] *ttiIcon*|An **INT** that specifies the type of icon to associate with the balloon tip. The default value is TTI_NONE. For more information, see the `ttiIcon` member of the [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) structure.|  
+|*pEditBalloonTip*|[in] Pointer to an [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) structure that describes the balloon tip.|  
+|*lpszTitle*|[in] Pointer to a Unicode string that contains the title of the balloon tip.|  
+|*lpszText*|[in] Pointer to a Unicode string that contains the balloon tip text.|  
+|*ttiIcon*|[in] An **INT** that specifies the type of icon to associate with the balloon tip. The default value is TTI_NONE. For more information, see the `ttiIcon` member of the [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) structure.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  

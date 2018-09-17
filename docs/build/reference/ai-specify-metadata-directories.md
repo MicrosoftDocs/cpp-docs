@@ -26,6 +26,7 @@ Specifies a directory that the compiler will search to resolve file references p
 The directory or path for the compiler to search.
 
 ## Remarks
+
 Only one directory can be passed to an **/AI** invocation. Specify one **/AI** option for each path you want the compiler to search. For example, to add both C:\Project\Meta and C:\Common\Meta to the compiler search path for `#using` directives, add `/AI"C:\Project\Meta" /AI"C:\Common\Meta"` to the compiler command line or add each directory to the **Additional #using Directories** property in Visual Studio.
 
 ### To set this compiler option in the Visual Studio development environment
@@ -42,6 +43,6 @@ Only one directory can be passed to an **/AI** invocation. Specify one **/AI** o
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)   
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
 [#using Directive](../../preprocessor/hash-using-directive-cpp.md)

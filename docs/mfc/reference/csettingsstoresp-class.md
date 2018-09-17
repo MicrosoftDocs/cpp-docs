@@ -71,11 +71,11 @@ CSettingsStore& CSettingsStoreSP Create(
 ```  
   
 ### Parameters  
- [in] *bAdmin*  
- A Boolean parameter that determines whether a `CSettingsStore` object is created in administrator mode.  
+*bAdmin*<br/>
+[in] A Boolean parameter that determines whether a `CSettingsStore` object is created in administrator mode.  
   
- [in] *bReadOnly*  
- A Boolean parameter that determines whether a `CSettingsStore` object is created for read-only access.  
+*bReadOnly*<br/>
+[in] A Boolean parameter that determines whether a `CSettingsStore` object is created for read-only access.  
   
 ### Return Value  
  A reference to the newly created `CSettingsStore` object.  
@@ -100,8 +100,8 @@ CSettingsStoreSP::CSettingsStoreSP(DWORD dwUserData = 0);
 ```  
   
 ### Parameters  
- [in] *dwUserData*  
- User-defined data that the `CSettingsStoreSP` object stores.  
+*dwUserData*<br/>
+[in] User-defined data that the `CSettingsStoreSP` object stores.  
   
 ### Remarks  
  The `CSettingsStoreSP` object stores the data from *dwUserData* in the protected member variable `m_dwUserData`.  
@@ -114,8 +114,8 @@ static BOOL __stdcall CSettingsStoreSP::SetRuntimeClass(CRuntimeClass* pRTI);
 ```  
   
 ### Parameters  
- [in] *pRTI*  
- A pointer to the runtime class information for a class derived from the [CSettingsStore Class](../../mfc/reference/csettingsstore-class.md).  
+*pRTI*<br/>
+[in] A pointer to the runtime class information for a class derived from the [CSettingsStore Class](../../mfc/reference/csettingsstore-class.md).  
   
 ### Return Value  
  TRUE if successful; FALSE if the class identified by *pRTI* is not derived from `CSettingsStore`.  

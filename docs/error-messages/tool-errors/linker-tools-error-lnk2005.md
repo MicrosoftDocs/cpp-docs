@@ -13,9 +13,10 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK2005
-*symbol* already defined in object  
+
+> *symbol* already defined in object  
   
-The symbol *symbol* was defined more than once.   
+The symbol *symbol* was defined more than once.
   
 This error is followed by fatal error [LNK1169](../../error-messages/tool-errors/linker-tools-error-lnk1169.md).  
   

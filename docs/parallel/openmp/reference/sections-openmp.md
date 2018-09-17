@@ -27,12 +27,11 @@ Identifies code sections to be divided among all threads.
 }  
 ```  
   
-## Remarks  
- where,  
-  
- `clause` (optional)  
- Zero or more clauses. See the Remarks section for a list of the clauses supported by **sections**.  
-  
+## Arguments
+
+*clause*<br/>
+(Optional) Zero or more clauses. See the Remarks section for a list of the clauses supported by **sections**.
+
 ## Remarks  
  The **sections** directive can contain zero or more **section** directives.  
   

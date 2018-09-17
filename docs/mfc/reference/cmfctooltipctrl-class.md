@@ -167,14 +167,14 @@ virtual void OnDrawBorder(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context.  
+*pDC*<br/>
+[in] Pointer to a device context.  
   
- [in] *rect*  
- The bounding rectangle of the tooltip.  
+*rect*<br/>
+[in] The bounding rectangle of the tooltip.  
   
- [in] *clrLine*  
- Border color.  
+*clrLine*<br/>
+[in] Border color.  
   
 ### Remarks  
  Override this method in a derived class to customize the appearance of the tooltip border.  
@@ -190,8 +190,8 @@ virtual CSize OnDrawDescription(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- [in] *rect*  
+*pDC*<br/>
+[in] [in] *rect*  
  [in] *bCalcOnly*  
   
 ### Return Value  
@@ -208,11 +208,11 @@ virtual BOOL OnDrawIcon(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rectImage*  
- Coordinates of the icon.  
+*rectImage*<br/>
+[in] Coordinates of the icon.  
   
 ### Return Value  
  TRUE if the icon was drawn. Otherwise FALSE.  
@@ -231,14 +231,14 @@ virtual CSize OnDrawLabel(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rect*  
- Bounding rectangle of the label area.  
+*rect*<br/>
+[in] Bounding rectangle of the label area.  
   
- [in] *bCalcOnly*  
- If TRUE, the label will not be drawn.  
+*bCalcOnly*<br/>
+[in] If TRUE, the label will not be drawn.  
   
 ### Return Value  
  Size of the label, in pixels.  
@@ -258,17 +258,17 @@ virtual void OnDrawSeparator(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *x1*  
- Horizontal coordinate of the left end of the separator.  
+*x1*<br/>
+[in] Horizontal coordinate of the left end of the separator.  
   
- [in] *x2*  
- Horizontal coordinate of the right end of the separator.  
+*x2*<br/>
+[in] Horizontal coordinate of the right end of the separator.  
   
- [in] *Y*  
- Vertical coordinate of the separator.  
+*Y*<br/>
+[in] Vertical coordinate of the separator.  
   
 ### Remarks  
  The default implementation draws a line from the point (x1, y) to the point (x2, y).  
@@ -287,17 +287,17 @@ virtual void OnFillBackground(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rect*  
- Specifies the bounding rectangle of the area to fill.  
+*rect*<br/>
+[in] Specifies the bounding rectangle of the area to fill.  
   
- [in] *clrText*  
- Tooltip foreground color.  
+*clrText*<br/>
+[in] Tooltip foreground color.  
   
- [in] *clrLine*  
- Color of borders and the delimiter line between label and description.  
+*clrLine*<br/>
+[in] Color of borders and the delimiter line between label and description.  
   
 ### Remarks  
  The default implementation fills the rectangle that is specified by *rect* with the color or pattern specified by the most recent call to [CMFCToolTipCtrl::SetParams](#setparams).  
@@ -312,8 +312,8 @@ virtual void SetDescription(const CString strDesrciption);
 ```  
   
 ### Parameters  
- [in] *strDesrciption*  
- Description text.  
+*strDesrciption*<br/>
+[in] Description text.  
   
 ### Remarks  
  The description text is displayed on the tooltip under the separator.  
@@ -328,8 +328,8 @@ void SetFixedWidth(
 ```  
   
 ### Parameters  
- [in] *nWidthRegular*  
- [in] *nWidthLargeImage*  
+*nWidthRegular*<br/>
+[in] [in] *nWidthLargeImage*  
   
 ### Remarks  
   
@@ -365,8 +365,8 @@ void SetParams(CMFCToolTipInfo* pParams);
 ```  
   
 ### Parameters  
- [in] *pParams*  
- Pointer to a [CMFCToolTipInfo Class](../../mfc/reference/cmfctooltipinfo-class.md) object that contains  the display parameters.  
+*pParams*<br/>
+[in] Pointer to a [CMFCToolTipInfo Class](../../mfc/reference/cmfctooltipinfo-class.md) object that contains  the display parameters.  
   
 ### Remarks  
  Whenever the tooltip is displayed, it is drawn by using the colors and visual styles that *pParams* specifies. The value of *pParams* is stored in the protected member `m_Params`, which can be accessed by a derived class that overrides [CMFCToolTipCtrl::OnDrawBorder](#ondrawborder), [CMFCToolTipCtrl::OnDrawIcon](#ondrawicon), [CMFCToolTipCtrl::OnDrawLabel](#ondrawlabel), [CMFCToolTipCtrl::OnDrawSeparator](#ondrawseparator), or [CMFCToolTipCtrl::OnFillBackground](#onfillbackground) to maintain the specified appearance.  

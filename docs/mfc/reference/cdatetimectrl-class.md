@@ -147,7 +147,7 @@ BOOL GetDateTimePickerInfo(LPDATETIMEPICKERINFO pDateTimePickerInfo) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[out] *pDateTimePickerInfo*|A pointer to a [DATETIMEPICKERINFO](/windows/desktop/api/commctrl/ns-commctrl-tagdatetimepickerinfo) structure that receives a description of the current date and time picker control.<br /><br /> The caller is responsible for allocating this structure. However, this method initializes the *cbSize* member of the structure.|  
+|*pDateTimePickerInfo*|[out] A pointer to a [DATETIMEPICKERINFO](/windows/desktop/api/commctrl/ns-commctrl-tagdatetimepickerinfo) structure that receives a description of the current date and time picker control.<br /><br /> The caller is responsible for allocating this structure. However, this method initializes the *cbSize* member of the structure.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -302,7 +302,7 @@ BOOL GetIdealSize(LPSIZE psize) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[out] *psize*|Pointer to a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure that contains the ideal size for the control.|  
+|*psize*|[out] Pointer to a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure that contains the ideal size for the control.|  
   
 ### Return Value  
  The return value is always TRUE.  
@@ -413,7 +413,7 @@ DWORD SetMonthCalStyle(DWORD dwStyle);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *dwStyle*|A new month calendar control style, which is a bitwise combination (OR) of month calendar control styles. For more information, see [Month Calendar Control Styles](/windows/desktop/Controls/month-calendar-control-styles).|  
+|*dwStyle*|[in] A new month calendar control style, which is a bitwise combination (OR) of month calendar control styles. For more information, see [Month Calendar Control Styles](/windows/desktop/Controls/month-calendar-control-styles).|  
   
 ### Return Value  
  The previous style of the drop-down month calendar control.  

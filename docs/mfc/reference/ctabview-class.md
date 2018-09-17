@@ -68,17 +68,17 @@ int AddView(
 ```  
   
 ### Parameters  
- [in] *pViewClass*  
- A pointer to a runtime class of the inserted view.  
+*pViewClass*<br/>
+[in] A pointer to a runtime class of the inserted view.  
   
- [in] *strViewLabel*  
- Specifies the tab's text.  
+*strViewLabel*<br/>
+[in] Specifies the tab's text.  
   
- [in] *iIndex*  
- Specifies the zero-based position at which to insert the view. If the position is -1 the new tab is inserted at the end.  
+*iIndex*<br/>
+[in] Specifies the zero-based position at which to insert the view. If the position is -1 the new tab is inserted at the end.  
   
- [in] *pContext*  
- A pointer to the `CCreateContext` of the view.  
+*pContext*<br/>
+[in] A pointer to the `CCreateContext` of the view.  
   
 ### Return Value  
  A view index if this method succeeds. Otherwise, -1.  
@@ -94,8 +94,8 @@ int FindTab(HWND hWndView) const;
 ```  
   
 ### Parameters  
- [in] *hWndView*  
- The handle of the view.  
+*hWndView*<br/>
+[in] The handle of the view.  
   
 ### Return Value  
  The index of the view if it is found; otherwise, -1.  
@@ -148,8 +148,8 @@ virtual void OnActivateView(CView* view);
 ```  
   
 ### Parameters  
- [in] *view*  
- A pointer to the view.  
+*view*<br/>
+[in] A pointer to the view.  
   
 ### Remarks  
  The default implementation does nothing. Override this method in a `CTabView`-derived class to process this notification.  
@@ -162,8 +162,8 @@ BOOL RemoveView(int iTabNum);
 ```  
   
 ### Parameters  
- [in] *iTabNum*  
- The index of the view to remove.  
+*iTabNum*<br/>
+[in] The index of the view to remove.  
   
 ### Return Value  
  The index of the removed view if this method succeeds. Otherwise -1.  
@@ -178,8 +178,8 @@ BOOL SetActiveView(int iTabNum);
 ```  
   
 ### Parameters  
- [in] *iTabNum*  
- The zero-based index of the tab view.  
+*iTabNum*<br/>
+[in] The zero-based index of the tab view.  
   
 ### Return Value  
  TRUE if the specified view was made active, FALSE if the view's index is invalid.  

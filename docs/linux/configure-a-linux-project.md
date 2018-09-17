@@ -39,7 +39,7 @@ To change settings pertaining to the remote Linux computer, configure the remote
 
 ## Include directories and IntelliSense support
 
-**Visual Studio 2017 version 15.6 and earlier:**
+**Visual Studio 2017 version 15.6 and earlier:**<br/>
 By default, Visual Studio does not include any system-level include files from the Linux computer.  For example, items in the **/usr/include** directory are not present in Visual Studio.
 For full [IntelliSense](/visualstudio/ide/using-intellisense) support, you will need to copy those files to some location on your development computer and point Visual Studio to this location.  One option is to use scp (Secure Copy) to copy the files.  On Windows 10, you can use [Bash on Windows](https://msdn.microsoft.com/commandline/wsl/about) to run scp.  For previous versions of Windows, you could use something like [PSCP (PuTTY Secure Copy)](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 
@@ -53,7 +53,7 @@ Once the files are copied, use the **VC++ Directories** item in Project properti
 
 ![VC++ Directories](media/settings_directories.png)
 
-**Visual Studio 2017 version 15.7 and later:**
+**Visual Studio 2017 version 15.7 and later:**<br/>
 See [Manage Remote Headers for IntelliSense](#remote_intellisense).
 
 ## Copy sources

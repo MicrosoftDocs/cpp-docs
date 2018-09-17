@@ -106,10 +106,10 @@ virtual void AddPane(
 ```  
   
 ### Parameters  
- [in] *pControlBar*  
- [in] *dockMethod*  
- [in] *lpRect*  
- [in] *bAddLast*  
+*pControlBar*<br/>
+[in] [in] *dockMethod*  
+*lpRect*<br/>
+[in] [in] *bAddLast*  
   
 ### Remarks  
   
@@ -123,8 +123,8 @@ virtual void AddPaneFromRow(
 ```  
   
 ### Parameters  
- [in] *pControlBar*  
- [in] *dockMethod*  
+*pControlBar*<br/>
+[in] [in] *dockMethod*  
   
 ### Remarks  
   
@@ -138,11 +138,11 @@ virtual void ArrangePanes(
 ```  
   
 ### Parameters  
- [in] *nMargin*  
- Specifies the offset, in pixels, of the first pane from the upper-left corner of the row.  
+*nMargin*<br/>
+[in] Specifies the offset, in pixels, of the first pane from the upper-left corner of the row.  
   
- [in] *nSpacing*  
- Specifies the spacing, in pixels, between panes.  
+*nSpacing*<br/>
+[in] Specifies the spacing, in pixels, between panes.  
   
 ### Remarks  
  Call this method to arrange panes in the row where they will dock. After calling this method, you must call `CDockingPanesRow::FixupVirtualRects(FALSE, NULL)`.  
@@ -157,8 +157,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### Parameters  
- [in] *bStretch*  
- [in] *bHorz*  
+*bStretch*<br/>
+[in] [in] *bHorz*  
   
 ### Return Value  
   
@@ -175,8 +175,8 @@ CDockingPanesRow(
 ```  
   
 ### Parameters  
- [in] *pParentDockBar*  
- [in] *nOffset*  
+*pParentDockBar*<br/>
+[in] [in] *nOffset*  
  [in] *nHeight*  
   
 ### Remarks  
@@ -220,8 +220,8 @@ void FixupVirtualRects(
 ```  
   
 ### Parameters  
- [in] *bMoveBackToVirtualRect*  
- [in] *pBarToExclude*  
+*bMoveBackToVirtualRect*<br/>
+[in] [in] *pBarToExclude*  
   
 ### Remarks  
   
@@ -295,8 +295,8 @@ void GetGroupFromPane(
 ```  
   
 ### Parameters  
- [in] *pBar*  
- [in] *lst*  
+*pBar*<br/>
+[in] [in] *lst*  
   
 ### Remarks  
   
@@ -504,14 +504,14 @@ void MovePane(
 ```  
   
 ### Parameters  
- [in] *pControlBar*  
- [in] *ptOffset*  
- [in] *bSwapControlBars*  
- [in] *hdwp*  
- [in] *rectTarget*  
- [in] *nOffset*  
- [in] *bForward*  
- [in] *nAbsolutOffset*  
+*pControlBar*<br/>
+[in] [in] *ptOffset*  
+*bSwapControlBars*<br/>
+[in] [in] *hdwp*  
+*rectTarget*<br/>
+[in] [in] *nOffset*  
+*bForward*<br/>
+[in] [in] *nAbsolutOffset*  
   
 ### Remarks  
   
@@ -558,8 +558,8 @@ virtual BOOL ReplacePane(
 ```  
   
 ### Parameters  
- [in] *pBarOld*  
- [in] *pBarNew*  
+*pBarOld*<br/>
+[in] [in] *pBarNew*  
   
 ### Return Value  
   
@@ -577,10 +577,10 @@ virtual void RepositionPanes(
 ```  
   
 ### Parameters  
- [in] *rectNewParentBarArea*  
- [in] *nSide*  
- [in] *bExpand*  
- [in] *nOffset*  
+*rectNewParentBarArea*<br/>
+[in] [in] *nSide*  
+*bExpand*<br/>
+[in] [in] *nOffset*  
   
 ### Remarks  
   
@@ -634,8 +634,8 @@ void SetExtra(
 ```  
   
 ### Parameters  
- [in] *nExtraSpace*  
- [in] *rowExtraAlign*  
+*nExtraSpace*<br/>
+[in] [in] *rowExtraAlign*  
   
 ### Remarks  
   
@@ -649,8 +649,8 @@ virtual void ShowDockSiteRow(
 ```  
   
 ### Parameters  
- [in] *bShow*  
- [in] *bDelay*  
+*bShow*<br/>
+[in] [in] *bDelay*  
   
 ### Remarks  
   
@@ -665,8 +665,8 @@ virtual BOOL ShowPane(
 ```  
   
 ### Parameters  
- [in] *pControlBar*  
- [in] *bShow*  
+*pControlBar*<br/>
+[in] [in] *bShow*  
  [in] *bDelay*  
   
 ### Return Value  

@@ -427,8 +427,8 @@ Virtual void OnSetFont(CFont* pFont);
 ```  
   
 ### Parameters  
- [in] *pFont*  
- Specifies a pointer to the font that will be used as the default font for all controls in this dialog box.  
+*pFont*<br/>
+[in] Specifies a pointer to the font that will be used as the default font for all controls in this dialog box.  
   
 ### Remarks  
  The dialog box will use the specified font as the default for all its controls.  
