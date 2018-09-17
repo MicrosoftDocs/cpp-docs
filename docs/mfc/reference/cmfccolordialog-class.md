@@ -102,7 +102,7 @@ CMFCColorDialog(
 [in] The default color selection. If no value is specified, the default is RGB(0,0,0) (black).  
   
 *dwFlags*<br/>
-[in] (Reserved.)  
+[in] Reserved.
   
 *pParentWnd*<br/>
 [in] A pointer to the dialog box's parent or owner window.  

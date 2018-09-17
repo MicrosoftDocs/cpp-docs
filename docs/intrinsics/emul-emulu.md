@@ -31,10 +31,10 @@ unsigned __int64 __emulu(
 ```  
   
 #### Parameters  
-`a`<br/>
+*a*<br/>
 [in] The first integer operand of the multiplication.  
   
-`b`<br/>
+*b*<br/>
 [in] The second integer operand of the multiplication.  
   
 ## Return Value  

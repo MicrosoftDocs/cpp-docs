@@ -30,7 +30,7 @@ unsigned int _set_output_format(
 ```  
   
 #### Parameters  
-`format`<br/>
+*format*<br/>
 [in] An value representing the format to use.  
   
 ## Return value  

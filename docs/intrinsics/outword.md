@@ -27,10 +27,10 @@ void __outword( 
 ```  
   
 #### Parameters  
-`Port`<br/>
+*Port*<br/>
 [in] The port to send the data to.  
   
-`Data`<br/>
+*Data*<br/>
 [in] The data to be sent.  
   
 ## Requirements  

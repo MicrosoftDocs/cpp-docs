@@ -27,10 +27,10 @@ __m128 _mm_cvtsi64x_ss( 
 ```  
   
 #### Parameters  
-`a`<br/>
+*a*<br/>
 [in] An `__m128` structure containing four single-precision floating-point values.  
   
-`b`<br/>
+*b*<br/>
 [in] A 64-bit integer to be converted into a floating-point value.  
   
 ## Return Value  

@@ -26,7 +26,7 @@ unsigned long __indword(
 ```  
   
 #### Parameters  
-`Port`<br/>
+*Port*<br/>
 [in] The port to read from.  
   
 ## Return Value  

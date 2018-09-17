@@ -26,7 +26,7 @@ void writecr3( 
 ```  
   
 #### Parameters  
-`Data`<br/>
+*Data*<br/>
 [in] The value to write to the CR3 register.  
   
 ## Requirements  

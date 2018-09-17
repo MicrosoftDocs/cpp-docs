@@ -55,10 +55,10 @@ __int64 _InterlockedAdd64_rel(
 ```  
   
 #### Parameters  
-`Addend`<br/>
+*Addend*<br/>
 [in, out] Pointer to the integer to be added to; replaced by the result of the addition.  
   
-`Value`<br/>
+*Value*<br/>
 [in] The value to add.  
   
 ## Return Value  

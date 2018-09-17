@@ -35,7 +35,7 @@ void __incgsqword( 
 ```  
   
 #### Parameters  
-`Offset`<br/>
+*Offset*<br/>
 [in] The offset from the beginning of `GS`.  
   
 ## Requirements  

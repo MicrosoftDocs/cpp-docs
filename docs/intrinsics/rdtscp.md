@@ -27,7 +27,7 @@ unsigned __int64 __rdtscp(
 ```  
   
 #### Parameters  
-`Aux`<br/>
+*Aux*<br/>
 [out] Pointer to a location that will contain the contents of the machine-specific register `TSC_AUX[31:0]`.  
   
 ## Return Value  

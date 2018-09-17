@@ -512,7 +512,7 @@ virtual void OnDrawText(
 [in] Flags that specify how to format the text. For more information, see the *nFormat* parameter of the [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) method.  
   
 *uiState*<br/>
-[in] (Reserved.)  
+[in] Reserved.
   
 ### Remarks  
  Override this method to use your own code to draw the button text.  

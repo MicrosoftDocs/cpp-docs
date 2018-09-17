@@ -103,10 +103,10 @@ __int64 _InterlockedExchange64_rel(
 ```  
   
 #### Parameters  
-`Target`<br/>
+*Target*<br/>
 [in, out] Pointer to the value to be exchanged. The function sets this variable to `Value` and returns its prior value.  
   
-`Value`<br/>
+*Value*<br/>
 [in] Value to be exchanged with the value pointed to by `Target`.  
   
 ## Return Value  

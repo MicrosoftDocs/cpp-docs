@@ -119,10 +119,10 @@ __int64 _InterlockedAnd64_rel(
 ```  
   
 #### Parameters  
-`value`<br/>
+*value*<br/>
 [in, out] A pointer to the first operand, to be replaced by the result.  
   
-`mask`<br/>
+*mask*<br/>
 [in] The second operand.  
   
 ## Return Value  

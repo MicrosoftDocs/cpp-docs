@@ -172,7 +172,7 @@ virtual CString GetItemText(int iIndex) const;
 ```  
   
 ### Parameters  
-`iIndex`<br/>
+*iIndex*<br/>
 [in] The zero-based index of an editable list control item.  
   
 ### Return Value  

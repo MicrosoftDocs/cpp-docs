@@ -23,10 +23,10 @@ void __writedr(unsigned DebugRegister, unsigned __int64 DebugValue);
 ```  
   
 #### Parameters  
-`DebugRegister`<br/>
+*DebugRegister*<br/>
 [in] A number from 0 through 7 that identifies the debug register.  
   
-`DebugValue`<br/>
+*DebugValue*<br/>
 [in] A value to write to the debug register.  
   
 ## Remarks  

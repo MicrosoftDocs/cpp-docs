@@ -26,7 +26,7 @@ void writecr0( 
 ```  
   
 #### Parameters  
-`Data`<br/>
+*Data*<br/>
 [in] The value to write to the CR0 register.  
   
 ## Requirements  

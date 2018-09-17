@@ -33,16 +33,16 @@ __m128i _mm_extracti_si64(
 ```  
   
 #### Parameters  
-`Source`<br/>
+*Source*<br/>
 [in] A 128-bit field with input data in its lower 64 bits.  
   
-`Descriptor`<br/>
+*Descriptor*<br/>
 [in] A 128-bit field that describes the bit field to extract.  
   
-`Length`<br/>
+*Length*<br/>
 [in] An integer that specifies the length of the field to extract.  
   
-`Index`<br/>
+*Index*<br/>
 [in] An integer that specifies the index of the field to extract  
   
 ## Return Value  

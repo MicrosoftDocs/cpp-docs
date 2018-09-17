@@ -31,10 +31,10 @@ unsigned char _BitScanForward64(
 ```  
   
 #### Parameters  
-`Index`<br/>
+*Index*<br/>
 [out] Loaded with the bit position of the first set bit (1) found.  
   
-`Mask`<br/>
+*Mask*<br/>
 [in] The 32-bit or 64-bit value to search.  
   
 ## Return Value  

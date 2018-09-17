@@ -28,13 +28,13 @@ unsigned __int64 _umul128( 
 ```  
   
 #### Parameters  
-`Multiplier`<br/>
+*Multiplier*<br/>
 [in] The first 64-bit integer to multiply.  
   
-`Multiplicand`<br/>
+*Multiplicand*<br/>
 [in] The second 64-bit integer to multiply.  
   
-`HighProduct`<br/>
+*HighProduct*<br/>
 [out] The high 64 bits of the product.  
   
 ## Return Value  

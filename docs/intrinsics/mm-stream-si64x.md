@@ -29,10 +29,10 @@ void _mm_stream_si64x( 
   
 #### Parameters  
   
-`Dest`<br/>
+*Dest*<br/>
 [out] A pointer to the location to write the source data to.  
   
-`Source`<br/>
+*Source*<br/>
 [in] The data to write.  
   
 ## Requirements  

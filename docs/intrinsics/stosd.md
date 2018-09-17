@@ -28,13 +28,13 @@ void __stosd( 
 ```  
   
 #### Parameters  
-`Dest`<br/>
+*Dest*<br/>
 [out] The destination of the operation.  
   
-`Data`<br/>
+*Data*<br/>
 [in] The data to store.  
   
-`Count`<br/>
+*Count*<br/>
 [in] The length of the block of doublewords to write.  
   
 ## Requirements  

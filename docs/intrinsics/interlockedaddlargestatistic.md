@@ -27,10 +27,10 @@ long _InterlockedAddLargeStatistic(
 ```  
   
 #### Parameters  
-`Addend`<br/>
+*Addend*<br/>
 [in, out] A pointer to the first operand to the add operation. The value pointed to is replaced by the result of the addition.  
   
-`Value`<br/>
+*Value*<br/>
 [in] The second operand; value to add to the first operand.  
   
 ## Return Value  

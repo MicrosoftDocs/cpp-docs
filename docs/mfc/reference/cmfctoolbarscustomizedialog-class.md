@@ -320,7 +320,7 @@ virtual void FillAllCommandsList(CListBox& wndListOfCommands) const;
 ```  
   
 ### Parameters  
-`wndListOfCommands`<br/>
+*wndListOfCommands*<br/>
 [out] A reference to the `CListBox` object to populate.  
   
 ### Remarks  

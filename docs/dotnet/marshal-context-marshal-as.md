@@ -24,7 +24,7 @@ To_Type marshal_as<To_Type>(
 ```  
   
 #### Parameters  
-`input`<br/>
+*input*<br/>
 [in] The value that you want to marshal to a `To_Type` variable.  
   
 ## Return Value  

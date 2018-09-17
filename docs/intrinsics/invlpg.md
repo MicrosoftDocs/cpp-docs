@@ -26,7 +26,7 @@ void __invlpg(
 ```  
   
 #### Parameters  
-`Address`<br/>
+*Address*<br/>
 [in] A 64-bit address.  
   
 ## Requirements  

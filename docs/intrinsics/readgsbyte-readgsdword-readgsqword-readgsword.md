@@ -35,7 +35,7 @@ unsigned __int64 __readgsqword( 
 ```  
   
 #### Parameters  
-`Offset`<br/>
+*Offset*<br/>
 [in] The offset from the beginning of `GS` to read from.  
   
 ## Return Value  

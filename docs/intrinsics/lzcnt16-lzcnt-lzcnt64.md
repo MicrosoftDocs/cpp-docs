@@ -33,7 +33,7 @@ unsigned __int64 __lzcnt64(
 ```  
   
 #### Parameters  
-`value`<br/>
+*value*<br/>
 [in] The 16-, 32-, or 64-bit unsigned integer to scan for leading zeros.  
   
 ## Return Value  

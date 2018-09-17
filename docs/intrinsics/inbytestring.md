@@ -28,13 +28,13 @@ void __inbytestring(
 ```  
   
 #### Parameters  
-`Port`<br/>
+*Port*<br/>
 [in] The port to read from.  
   
-`Buffer`<br/>
+*Buffer*<br/>
 [out] The data read from the port is written here.  
   
-`Count`<br/>
+*Count*<br/>
 [in] The number of bytes of data to read.  
   
 ## Requirements  

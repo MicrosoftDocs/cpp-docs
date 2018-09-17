@@ -26,7 +26,7 @@ unsigned long __segmentlimit( 
 ```  
   
 #### Parameters  
-`a`<br/>
+*a*<br/>
 [in] A constant that specifies the segment selector.  
   
 ## Return Value  

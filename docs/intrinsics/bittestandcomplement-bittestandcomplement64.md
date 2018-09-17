@@ -31,10 +31,10 @@ unsigned char _bittestandcomplement64(
 ```  
   
 #### Parameters  
-`a`<br/>
+*a*<br/>
 [in, out] A pointer to the memory to examine.  
   
-`b`<br/>
+*b*<br/>
 [in] The bit position to test.  
   
 ## Return Value  

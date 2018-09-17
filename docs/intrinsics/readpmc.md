@@ -26,7 +26,7 @@ unsigned __int64 __readpmc( 
 ```  
   
 #### Parameters  
-`counter`<br/>
+*counter*<br/>
 [in] The performance counter to read.  
   
 ## Return Value  

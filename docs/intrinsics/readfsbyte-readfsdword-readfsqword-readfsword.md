@@ -35,7 +35,7 @@ unsigned __int64 __readfsqword( 
 ```  
   
 #### Parameters  
-`Offset`<br/>
+*Offset*<br/>
 [in] The offset from the beginning of `FS` to read from.  
   
 ## Return Value  

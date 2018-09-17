@@ -104,10 +104,10 @@ __int64 _InterlockedExchangeAdd64_HLERelease(
 ```  
   
 #### Parameters  
-`Addend`<br/>
+*Addend*<br/>
 [in, out] The value to be added to; replaced by the result of the addition.  
   
-`Value`<br/>
+*Value*<br/>
 [in] The value to add.  
   
 ## Return Value  

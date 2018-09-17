@@ -39,10 +39,10 @@ void __addgsqword( 
 ```  
   
 #### Parameters  
-`Offset`<br/>
+*Offset*<br/>
 [in] The offset from the beginning of `GS`.  
   
-`Data`<br/>
+*Data*<br/>
 [in] The value to add to the memory location.  
   
 ## Requirements  

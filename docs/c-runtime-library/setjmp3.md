@@ -29,13 +29,13 @@ int _setjmp3(
 ```  
   
 #### Parameters  
-`env`<br/>
+*env*<br/>
 [out] Address of the buffer for storing state information.  
   
-`count`<br/>
+*count*<br/>
 [in] The number of additional `DWORD`s of information that are stored in the `optional parameters`.  
   
-`optional parameters`<br/>
+*optional parameters*<br/>
 [in] Additional data pushed down by the `setjmp` intrinsic. The first `DWORD` is a function pointer that is used to unwind extra data and return to a nonvolatile register state. The second `DWORD` is the try level to be restored. Any further data is saved in the generic data array in the `jmp_buf`.  
   
 ## Return Value  

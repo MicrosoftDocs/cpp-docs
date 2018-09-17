@@ -31,10 +31,10 @@ unsigned short _rotl16( 
 ```  
   
 #### Parameters  
-`value`<br/>
+*value*<br/>
 [in] The value to rotate.  
   
-`shift`<br/>
+*shift*<br/>
 [in] The number of bits to rotate.  
   
 ## Return Value  

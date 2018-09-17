@@ -30,7 +30,7 @@ void __cdecl _lock
 ```  
   
 #### Parameters  
-`locknum`<br/>
+*locknum*<br/>
 [in] The identifier of the lock to acquire.  
   
 ## Remarks  

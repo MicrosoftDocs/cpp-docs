@@ -26,7 +26,7 @@ __int64 __readmsr( 
 ```  
   
 #### Parameters  
-`register`<br/>
+*register*<br/>
 [in] The model specific register to read.  
   
 ## Return Value  

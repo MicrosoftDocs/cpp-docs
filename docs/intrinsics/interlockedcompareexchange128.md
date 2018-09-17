@@ -30,16 +30,16 @@ unsigned char _InterlockedCompareExchange128(
 ```  
   
 #### Parameters  
-`Destination`<br/>
+*Destination*<br/>
 [in, out] Pointer to the destination, which is an array of two 64-bit integers considered as a 128-bit field. The destination data must be 16-byte aligned to avoid a general protection fault.  
   
-`ExchangeHigh`<br/>
+*ExchangeHigh*<br/>
 [in] A 64-bit integer that may be exchanged with the high part of the destination.  
   
-`ExchangeLow`<br/>
+*ExchangeLow*<br/>
 [in] A 64-bit integer that may be exchanged with the low part of the destination.  
   
-`ComparandResult`<br/>
+*ComparandResult*<br/>
 [in, out] Pointer to an array of two 64-bit integers (considered as a 128-bit field) to compare with the destination.  On output, this is overwritten with the original value of the destination.  
   
 ## Return Value  

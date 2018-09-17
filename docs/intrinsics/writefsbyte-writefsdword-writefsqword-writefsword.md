@@ -39,10 +39,10 @@ void __writefsqword( 
 ```  
   
 #### Parameters  
-`Offset`<br/>
+*Offset*<br/>
 [in] The offset from the beginning of FS to write to.  
   
-`Data`<br/>
+*Data*<br/>
 [in] The value to write.  
   
 ## Requirements  

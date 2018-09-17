@@ -28,13 +28,13 @@ void __movsq( 
 ```  
   
 #### Parameters  
-`Dest`<br/>
+*Dest*<br/>
 [out] The destination of the operation.  
   
-`Source`<br/>
+*Source*<br/>
 [in] The source of the operation.  
   
-`Count`<br/>
+*Count*<br/>
 [in] The number of quadwords to copy.  
   
 ## Requirements  

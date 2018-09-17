@@ -22,7 +22,7 @@ void __fastfail(unsigned int code);
 ```  
   
 #### Parameters  
-`code`<br/>
+*code*<br/>
 [in] A `FAST_FAIL_<description>` symbolic constant from winnt.h or wdm.h that indicates the reason for process termination.  
   
 ## Return Value  

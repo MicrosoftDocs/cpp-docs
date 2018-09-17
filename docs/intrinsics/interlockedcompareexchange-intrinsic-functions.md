@@ -133,13 +133,13 @@ __int64 _InterlockedCompareExchange64_rel(
 ```  
   
 #### Parameters  
-`Destination`<br/>
+*Destination*<br/>
 [in, out] Pointer to the destination value. The sign is ignored.  
   
-`Exchange`<br/>
+*Exchange*<br/>
 [in] Exchange value. The sign is ignored.  
   
-`Comparand`<br/>
+*Comparand*<br/>
 [in] Value to compare to destination. The sign is ignored.  
   
 ## Return Value  

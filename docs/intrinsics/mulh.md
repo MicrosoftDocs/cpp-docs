@@ -27,10 +27,10 @@ __int64 __mulh( 
 ```  
   
 #### Parameters  
-`a`<br/>
+*a*<br/>
 [in] The first number to multiply.  
   
-`b`<br/>
+*b*<br/>
 [in] The second number to multiply.  
   
 ## Return Value  
