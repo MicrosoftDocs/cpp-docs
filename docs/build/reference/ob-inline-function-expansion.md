@@ -33,7 +33,7 @@ The default value. Allows expansion of functions marked as `inline`, `__inline`,
 
 **/Ob2** is in effect when [/O1, /O2 (Minimize Size, Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) or [/Ox (Enable Most Speed Optimizations)](../../build/reference/ox-full-optimization.md) is used.
 
-This option requires that you enable optimizations using **/O1**, **/O2**, **/Ox**, or **/Og**.  
+This option requires that you enable optimizations using **/O1**, **/O2**, **/Ox**, or **/Og**.
 
 ## Remarks
 
@@ -58,6 +58,6 @@ You can use the `#pragma` [auto_inline](../../preprocessor/auto-inline.md) direc
 
 ## See Also
 
-[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)  
-[Compiler Options](../../build/reference/compiler-options.md)  
+[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

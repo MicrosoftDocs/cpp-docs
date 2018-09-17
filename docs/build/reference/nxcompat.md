@@ -13,14 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /NXCOMPAT
-```  
-/NXCOMPAT[:NO]  
-```  
-  
-## Remarks  
- Indicates that an executable was tested to be compatible with the Windows Data Execution Prevention feature.  
-  
- For more information, see [/NXCOMPAT (Compatible with Data Execution Prevention)](../../build/reference/nxcompat-compatible-with-data-execution-prevention.md).  
-  
-## See Also  
- [EDITBIN Options](../../build/reference/editbin-options.md)
+
+```
+/NXCOMPAT[:NO]
+```
+
+## Remarks
+
+Indicates that an executable was tested to be compatible with the Windows Data Execution Prevention feature.
+
+For more information, see [/NXCOMPAT (Compatible with Data Execution Prevention)](../../build/reference/nxcompat-compatible-with-data-execution-prevention.md).
+
+## See Also
+
+[EDITBIN Options](../../build/reference/editbin-options.md)

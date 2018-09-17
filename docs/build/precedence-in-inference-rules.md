@@ -12,13 +12,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Precedence in Inference Rules
-If an inference rule is multiply defined, NMAKE uses the highest-precedence definition. The following list shows the order of precedence from highest to lowest:  
-  
-1.  An inference rule defined in a makefile; later definitions have precedence.  
-  
-2.  An inference rule defined in Tools.ini; later definitions have precedence.  
-  
-3.  A predefined inference rule.  
-  
-## See Also  
- [Inference Rules](../build/inference-rules.md)
+
+If an inference rule is multiply defined, NMAKE uses the highest-precedence definition. The following list shows the order of precedence from highest to lowest:
+
+1. An inference rule defined in a makefile; later definitions have precedence.
+
+1. An inference rule defined in Tools.ini; later definitions have precedence.
+
+1. A predefined inference rule.
+
+## See Also
+
+[Inference Rules](../build/inference-rules.md)

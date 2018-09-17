@@ -12,11 +12,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Long Filenames in a Makefile
-Enclose long filenames in double quotation marks, as follows:  
-  
-```  
-all : "VeryLongFileName.exe"  
-```  
-  
-## See Also  
- [Contents of a Makefile](../build/contents-of-a-makefile.md)
+
+Enclose long filenames in double quotation marks, as follows:
+
+```
+all : "VeryLongFileName.exe"
+```
+
+## See Also
+
+[Contents of a Makefile](../build/contents-of-a-makefile.md)

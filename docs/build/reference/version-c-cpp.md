@@ -13,16 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # VERSION (C/C++)
-Tells LINK to put a number in the header of the .exe file or DLL.  
-  
-```  
-VERSION major[.minor]  
-```  
-  
-## Remarks  
- The *major* and *minor* arguments are decimal numbers in the range 0 through 65,535. The default is version 0.0.  
-  
- An equivalent way to specify a version number is with the [Version Information](../../build/reference/version-version-information.md) (/VERSION) option.  
-  
-## See Also  
- [Rules for Module-Definition Statements](../../build/reference/rules-for-module-definition-statements.md)
+
+Tells LINK to put a number in the header of the .exe file or DLL.
+
+```
+VERSION major[.minor]
+```
+
+## Remarks
+
+The *major* and *minor* arguments are decimal numbers in the range 0 through 65,535. The default is version 0.0.
+
+An equivalent way to specify a version number is with the [Version Information](../../build/reference/version-version-information.md) (/VERSION) option.
+
+## See Also
+
+[Rules for Module-Definition Statements](../../build/reference/rules-for-module-definition-statements.md)

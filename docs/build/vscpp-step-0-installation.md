@@ -28,9 +28,9 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
 ## Visual Studio 2015 Installation
 
- To install Visual Studio 2015, go to [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Run the setup program and choose **Custom installation** and then choose the C++ component. 
+To install Visual Studio 2015, go to [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Run the setup program and choose **Custom installation** and then choose the C++ component.
 
- In general, we highly recommend that you use Visual Studio 2017 even if you need to compile your code using the Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
+In general, we highly recommend that you use Visual Studio 2017 even if you need to compile your code using the Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
 
 ## Visual Studio 2017 Installation
 
@@ -50,13 +50,13 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
    ![Desktop development with C++](../build/media/desktop-development-with-cpp.png "Desktop development with C++")
 
-    For C++, select the **Desktop development with C++** workload and then choose **Install**.
+   For C++, select the **Desktop development with C++** workload and then choose **Install**.
 
    ![Install the Desktop development with C++ workload](../build/media/vscpp-concierge-choose-workload.gif "Install the Desktop development with C++ workload")
 
 1. When the installation completes, choose the **Launch** button to start Visual Studio.
 
-   The first time you run Visual Studio, you are asked to sign in with a Microsoft Account. If you don't have one, you can create one for free. You must also choose a theme. Don't worry, you can change it later if you want to. 
+   The first time you run Visual Studio, you are asked to sign in with a Microsoft Account. If you don't have one, you can create one for free. You must also choose a theme. Don't worry, you can change it later if you want to.
 
    It may take Visual Studio several minutes to get ready for use the first time you run it. Here's what it looks like in a quick time-lapse:
 

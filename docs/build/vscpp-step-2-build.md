@@ -82,5 +82,4 @@ If you don't see **Copy as path** in the shortcut menu, dismiss the menu, and th
 
 [Go back.](#run-your-code-in-a-command-window)
 
-
 <iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />

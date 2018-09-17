@@ -13,12 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /NOLOGO (EDITBIN)
-```  
-/NOLOGO  
-```  
-  
-## Remarks  
- This option suppresses display of the EDITBIN copyright message and version number.  
-  
-## See Also  
- [EDITBIN Options](../../build/reference/editbin-options.md)
+
+```
+/NOLOGO
+```
+
+## Remarks
+
+This option suppresses display of the EDITBIN copyright message and version number.
+
+## See Also
+
+[EDITBIN Options](../../build/reference/editbin-options.md)

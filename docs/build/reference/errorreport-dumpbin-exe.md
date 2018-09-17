@@ -13,14 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /ERRORREPORT (dumpbin.exe)
-```  
-/ERRORREPORT[NONE | PROMPT | QUEUE | SEND ]  
-```  
-  
-## Remarks  
- If dumpbin.exe fails at runtime, you can use **/ERRORREPORT** to send information to Microsoft about these internal errors.  
-  
- For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](../../build/reference/errorreport-report-internal-compiler-errors.md).  
-  
-## See Also  
- [DUMPBIN Options](../../build/reference/dumpbin-options.md)
+
+```
+/ERRORREPORT[NONE | PROMPT | QUEUE | SEND ]
+```
+
+## Remarks
+
+If dumpbin.exe fails at runtime, you can use **/ERRORREPORT** to send information to Microsoft about these internal errors.
+
+For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](../../build/reference/errorreport-report-internal-compiler-errors.md).
+
+## See Also
+
+[DUMPBIN Options](../../build/reference/dumpbin-options.md)

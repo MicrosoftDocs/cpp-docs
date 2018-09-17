@@ -22,7 +22,7 @@ Specify the link order for separately packaged (COMDAT) functions.
 
 ### Parameters
 
-*filename*  
+*filename*<br/>
 A text file that specifies the link order for COMDAT functions.
 
 ## Remarks
@@ -66,5 +66,5 @@ The **/ORDER** option disables incremental linking. You may see linker warning [
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)  
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

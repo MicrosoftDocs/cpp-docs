@@ -30,7 +30,7 @@ These are the same methods you use to specify exports when linking an exporting 
 
 The following options apply to building an import library and export file:
 
-> **/OUT:** *import*  
+> **/OUT:** *import*
 
 Overrides the default output file name for the *import* library being created. When /OUT is not specified, the default name is the base name of the first object file or library in the LIB command and the extension .lib. The export file is given the same base name as the import library and the extension .exp.
 

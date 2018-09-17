@@ -12,7 +12,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Function Pointers
-Function pointers are simply pointers to the label of the respective function. There are no table of contents (TOC) requirements for function pointers.  
-  
-## See Also  
- [Calling Convention](../build/calling-convention.md)
+
+Function pointers are simply pointers to the label of the respective function. There are no table of contents (TOC) requirements for function pointers.
+
+## See Also
+
+[Calling Convention](../build/calling-convention.md)

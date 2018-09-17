@@ -39,7 +39,7 @@ With **/FC**, the diagnostic text would look similar to this diagnostic text:
 
 - c:\test\compiler_option_fc.cpp(5) : error C2143: syntax error : missing ';' before '}'
 
- **/FC** is also needed if you want to see the full path of a file name when using the &#95;&#95;FILE&#95;&#95; macro. See [Predefined Macros](../../preprocessor/predefined-macros.md) for more information on &#95;&#95;FILE&#95;&#95;.
+**/FC** is also needed if you want to see the full path of a file name when using the &#95;&#95;FILE&#95;&#95; macro. See [Predefined Macros](../../preprocessor/predefined-macros.md) for more information on &#95;&#95;FILE&#95;&#95;.
 
 The **/FC** option is implied by **/ZI**. For more information about **/ZI**, see [/Z7, /Zi, /ZI (Debug Information Format)](../../build/reference/z7-zi-zi-debug-information-format.md).
 
@@ -59,5 +59,5 @@ The **/FC** option is implied by **/ZI**. For more information about **/ZI**, se
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)   
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

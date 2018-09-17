@@ -47,6 +47,6 @@ For information about how to create an assembly or module for the common languag
 
 ## See Also
 
-[Output-File (/F) Options](../../build/reference/output-file-f-options.md)   
-[Compiler Options](../../build/reference/compiler-options.md)   
+[Output-File (/F) Options](../../build/reference/output-file-f-options.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

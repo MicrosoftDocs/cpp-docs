@@ -57,7 +57,7 @@ The return value of the delay load helper needs to be stored in the passed-in fu
 The following code shows how to implement a simple hook function.
 
 ```C
-FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)  
+FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)
 {
     switch (dliNotify) {
         case dliStartProcessing :

@@ -11,7 +11,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Varargs
-If parameters are passed via varargs (for example, ellipsis arguments), then essentially the normal parameter passing applies including spilling the fifth and subsequent arguments. It is again the callee's responsibility to dump arguments that have their address taken. For floating-point values only, both the integer and the floating-point register will contain the float value in case the callee expects the value in the integer registers.  
-  
-## See Also  
- [Calling Convention](../build/calling-convention.md)
+
+If parameters are passed via varargs (for example, ellipsis arguments), then essentially the normal parameter passing applies including spilling the fifth and subsequent arguments. It is again the callee's responsibility to dump arguments that have their address taken. For floating-point values only, both the integer and the floating-point register will contain the float value in case the callee expects the value in the integer registers.
+
+## See Also
+
+[Calling Convention](../build/calling-convention.md)

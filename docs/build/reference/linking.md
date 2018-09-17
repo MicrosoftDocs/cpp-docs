@@ -11,15 +11,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linking
-For information on using the linker, see the following sections:  
-  
--   [Setting Linker Options](../../build/reference/setting-linker-options.md)  
-  
--   [Linker Options](../../build/reference/linker-options.md)  
-  
--   [Module-Definition (.def) Files](../../build/reference/module-definition-dot-def-files.md)  
-  
--   [Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md)  
-  
-## See Also  
- [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)
+
+For information on using the linker, see the following sections:
+
+- [Setting Linker Options](../../build/reference/setting-linker-options.md)
+
+- [Linker Options](../../build/reference/linker-options.md)
+
+- [Module-Definition (.def) Files](../../build/reference/module-definition-dot-def-files.md)
+
+- [Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+
+## See Also
+
+[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)

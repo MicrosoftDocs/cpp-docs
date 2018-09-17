@@ -78,6 +78,7 @@ Note that setting both **Assembler Output** and **Use Unicode For Assembler List
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AssemblerListingLocation%2A> or <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AssemblerOutput%2A>. To specify **/FAu**, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## Example
+
 The following command line produces a combined source and machine-code listing called HELLO.cod:
 
 ```cmd
@@ -86,7 +87,7 @@ CL /FAcs HELLO.CPP
 
 ## See Also
 
-[Output-File (/F) Options](../../build/reference/output-file-f-options.md)   
-[Compiler Options](../../build/reference/compiler-options.md)   
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
+[Output-File (/F) Options](../../build/reference/output-file-f-options.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
 [Specifying the Pathname](../../build/reference/specifying-the-pathname.md)

@@ -18,7 +18,7 @@ Specifies how the [volatile](../../cpp/volatile-cpp.md) keyword is to be interpr
 
 ## Syntax
 
-> **/volatile:**{**iso**|**ms**}  
+> **/volatile:**{**iso**|**ms**}
 
 ## Arguments
 
@@ -46,6 +46,6 @@ There is no `#pragma` equivalent to control this option.
 
 ## See also
 
-[volatile](../../cpp/volatile-cpp.md)  
-[Compiler Options](../../build/reference/compiler-options.md)  
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)  
+[volatile](../../cpp/volatile-cpp.md)<br/>
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

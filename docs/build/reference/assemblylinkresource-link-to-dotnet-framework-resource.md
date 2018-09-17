@@ -13,57 +13,59 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /ASSEMBLYLINKRESOURCE (Link to .NET Framework Resource)
-```  
-/ASSEMBLYLINKRESOURCE:filename  
-```  
-  
-## Remarks  
- where:  
-  
- *filename*  
- The .NET Framework resource file to which you want to link from the assembly.  
-  
-## Remarks  
- The /ASSEMBLYLINKRESOURCE option creates a link to a .NET Framework resource in the output file; the resource file is not placed in the output file. [/ASSEMBLYRESOURCE](../../build/reference/assemblyresource-embed-a-managed-resource.md) embeds a resource file in the output file.  
-  
- Linked resources are public in the assembly when created with the linker.  
-  
- /ASSEMBLYLINKRESOURCE requires that the compilation include [/clr](../../build/reference/clr-common-language-runtime-compilation.md); [/LN](../../build/reference/ln-create-msil-module.md) or [/NOASSEMBLY](../../build/reference/noassembly-create-a-msil-module.md) is not allowed with /ASSEMBLYLINKRESOURCE.  
-  
- If *filename* is a .NET Framework resource file created, for example, by [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) or in the development environment, it can be accessed with members in the **System.Resources** namespace. For more information, see [System.Resources.ResourceManager](https://msdn.microsoft.com/library/system.resources.resourcemanager.aspx). For all other resources, use the **GetManifestResource**\* methods in the **System.Reflection.Assembly** class to access the resource at run time.  
-  
- *filename* can be any file format. For example, you may want to make a native DLL part of the assembly, so it can be installed into the Global Assembly Cache and accessed from managed code in the assembly.  
-  
- Other linker options that affect assembly generation are:  
-  
--   [/ASSEMBLYDEBUG](../../build/reference/assemblydebug-add-debuggableattribute.md)  
-  
--   [/ASSEMBLYMODULE](../../build/reference/assemblymodule-add-a-msil-module-to-the-assembly.md)  
-  
--   [/ASSEMBLYRESOURCE](../../build/reference/assemblyresource-embed-a-managed-resource.md)  
-  
--   [/DELAYSIGN](../../build/reference/delaysign-partially-sign-an-assembly.md)  
-  
--   [/KEYCONTAINER](../../build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly.md)  
-  
--   [/KEYFILE](../../build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly.md)  
-  
--   [/NOASSEMBLY](../../build/reference/noassembly-create-a-msil-module.md)  
-  
-### To set this linker option in the Visual Studio development environment  
-  
-1.  Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Click the **Linker** folder.  
-  
-3.  Click the **Command Line** property page.  
-  
-4.  Type the option into the **Additional Options** box.  
-  
-### To set this linker option programmatically  
-  
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.  
-  
-## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+
+```
+/ASSEMBLYLINKRESOURCE:filename
+```
+
+## Arguments
+
+*filename*<br/>
+The .NET Framework resource file to which you want to link from the assembly.
+
+## Remarks
+
+The /ASSEMBLYLINKRESOURCE option creates a link to a .NET Framework resource in the output file; the resource file is not placed in the output file. [/ASSEMBLYRESOURCE](../../build/reference/assemblyresource-embed-a-managed-resource.md) embeds a resource file in the output file.
+
+Linked resources are public in the assembly when created with the linker.
+
+/ASSEMBLYLINKRESOURCE requires that the compilation include [/clr](../../build/reference/clr-common-language-runtime-compilation.md); [/LN](../../build/reference/ln-create-msil-module.md) or [/NOASSEMBLY](../../build/reference/noassembly-create-a-msil-module.md) is not allowed with /ASSEMBLYLINKRESOURCE.
+
+If *filename* is a .NET Framework resource file created, for example, by [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) or in the development environment, it can be accessed with members in the **System.Resources** namespace. For more information, see [System.Resources.ResourceManager](https://msdn.microsoft.com/library/system.resources.resourcemanager.aspx). For all other resources, use the **GetManifestResource**\* methods in the **System.Reflection.Assembly** class to access the resource at run time.
+
+*filename* can be any file format. For example, you may want to make a native DLL part of the assembly, so it can be installed into the Global Assembly Cache and accessed from managed code in the assembly.
+
+Other linker options that affect assembly generation are:
+
+- [/ASSEMBLYDEBUG](../../build/reference/assemblydebug-add-debuggableattribute.md)
+
+- [/ASSEMBLYMODULE](../../build/reference/assemblymodule-add-a-msil-module-to-the-assembly.md)
+
+- [/ASSEMBLYRESOURCE](../../build/reference/assemblyresource-embed-a-managed-resource.md)
+
+- [/DELAYSIGN](../../build/reference/delaysign-partially-sign-an-assembly.md)
+
+- [/KEYCONTAINER](../../build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly.md)
+
+- [/KEYFILE](../../build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly.md)
+
+- [/NOASSEMBLY](../../build/reference/noassembly-create-a-msil-module.md)
+
+### To set this linker option in the Visual Studio development environment
+
+1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+
+1. Click the **Linker** folder.
+
+1. Click the **Command Line** property page.
+
+1. Type the option into the **Additional Options** box.
+
+### To set this linker option programmatically
+
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
+
+## See Also
+
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

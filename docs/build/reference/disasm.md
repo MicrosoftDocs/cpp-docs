@@ -16,7 +16,7 @@ Print the disassembly of code sections in the DUMPBIN output.
 
 ## Syntax
 
-> **/DISASM**{**:**\[**BYTES**|**NOBYTES**]}  
+> **/DISASM**{**:**\[**BYTES**|**NOBYTES**]}
 
 ### Arguments
 
@@ -36,4 +36,4 @@ Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is availabl
 
 ## See also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)  
+[DUMPBIN Options](../../build/reference/dumpbin-options.md)
