@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Working with Projects and Solutions (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/13/2017"
+ms.date: "09/14/2018"
 ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -29,13 +29,13 @@ To create a project, first choose a project-type template. For each project type
 
 ### To create a project
 
-1. On the menu bar, choose **File > New > Project**.
+1. On the menu bar, choose **File** > **New** > **Project**.
 
 1. In the left pane of the **New Project** dialog box, expand **Installed** and select **Visual C++**, if it isn't open already.
 
 1. In the list of installed templates in the center pane, select **Windows Console Application**.
 
-1. Enter a name for the project in the **Name** box. For this example, enter **Game**.
+1. Enter a name for the project in the **Name** box. For this example, enter *Game*.
 
    You can accept the default location in the **Location** drop-down list, enter a different location, or choose the **Browse** button to browse to a directory where you want to save the project.
 
@@ -53,11 +53,11 @@ This part of the walkthrough shows how add a class to the project. When you add 
 
 ### To add a class to a project
 
-1. If the **Solution Explorer** window is not displayed in Visual Studio, on the menu bar, choose **View > Solution Explorer**.
+1. If the **Solution Explorer** window is not displayed in Visual Studio, on the menu bar, choose **View** > **Solution Explorer**.
 
-1. In **Solution Explorer**, select the **Game** project. On the menu bar, choose **Project > Add Class**.
+1. In **Solution Explorer**, select the **Game** project. On the menu bar, choose **Project** > **Add Class**.
 
-1. In the **Add Class** dialog, enter *Cardgame* in the **Class name** box. Don't modify the default file names and settings. Choose the **OK** button.
+1. In the **Add Class** dialog, enter *Cardgame* in the **Class Name** box. Don't modify the default file names and settings. Choose the **OK** button.
 
    Visual Studio creates new files and adds them to your project. You can see them in the **Solution Explorer** window. The Cardgame.h and Cardgame.cpp files are opened in the editor.
 
@@ -96,7 +96,7 @@ This part of the walkthrough shows how add a class to the project. When you add 
        static int totalParticipants;
    public:
        Cardgame(int players);
-       ~Cardgame(void);
+       ~Cardgame();
        static int GetParticipants() { return totalParticipants; }
    };
    ```
@@ -109,7 +109,7 @@ This part of the walkthrough shows how add a class to the project. When you add 
 
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#111](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_5.cpp)]-->
    ```cpp
-   #include "stdafx.h"
+   #include "pch.h"
    #include "Cardgame.h"
    #include <iostream>
 
@@ -131,7 +131,7 @@ This part of the walkthrough shows how add a class to the project. When you add 
    ```
 
    > [!NOTE]
-   > You can use auto-completion when you are entering code. For example, if you enter this code at the keyboard, you can enter *pl* or *tot* and then press Ctrl+Spacebar. Auto-completion enters `players` or `totalParticipants` for you.
+   > You can use auto-completion when you are entering code. For example, if you enter this code at the keyboard, you can enter *pl* or *tot* and then press **Ctrl**+**Spacebar**. Auto-completion enters `players` or `totalParticipants` for you.
 
 ## Add test code to your main function
 
@@ -139,14 +139,14 @@ Add some code to your app that tests the new functions.
 
 ### To add test code to the project
 
-1. In the Game.cpp editor window, replace the existing code with this:
+1. In the **Game.cpp** editor window, replace the existing code with this:
 
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#120](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_6.cpp)]-->
    ```cpp
    // Game.cpp : Defines the entry point for the console application.
    //
 
-   #include "stdafx.h"
+   #include "pch.h"
    #include "Cardgame.h"
    #include <iostream>
 
@@ -174,17 +174,17 @@ Next, build the project and run the app.
 
 ### To build and run the project
 
-1. On the menu bar, choose **Build > Build Solution**.
+1. On the menu bar, choose **Build** > **Build Solution**.
 
    Output from a build is displayed in the **Output** window. If your build is successful, the output should resemble this:
 
    ```Output
    1>------ Build started: Project: Game, Configuration: Debug Win32 ------
-   1>  stdafx.cpp
-   1>  Game.cpp
-   1>  Cardgame.cpp
-   1>  Generating Code...
-   1>  Game.vcxproj -> C:\Users\username\Source\Repos\Game\Debug\Game.exe
+   1>pch.cpp
+   1>Cardgame.cpp
+   1>Game.cpp
+   1>Generating Code...
+   1>Game.vcxproj -> C:\Users\<username>\source\repos\Game\Debug\Game.exe
    ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
    ```
 
@@ -192,7 +192,7 @@ Next, build the project and run the app.
 
    If your build did not succeed, compare your code to the code that is shown in the earlier steps.
 
-1. To run the project, on the menu bar, choose **Debug > Start Without Debugging**. A console window should appear, and the output should resemble this:
+1. To run the project, on the menu bar, choose **Debug** > **Start Without Debugging**. A console window should appear, and the output should resemble this:
 
    ```Output
    4 players have started a new game.  There are now 4 players in total.
@@ -206,10 +206,10 @@ Congratulations, you've successfully built an app project and solution. Continue
 
 ## Next Steps
 
-**Previous:** [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).  
-**Next:** [Walkthrough: Building a Project (C++)](../ide/walkthrough-building-a-project-cpp.md).
+**Previous:** [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)<br/>
+**Next:** [Walkthrough: Building a Project (C++)](../ide/walkthrough-building-a-project-cpp.md)<br/>
 
 ## See also
 
-[C++ Language Reference](../cpp/cpp-language-reference.md)  
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)
+[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
+[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>
