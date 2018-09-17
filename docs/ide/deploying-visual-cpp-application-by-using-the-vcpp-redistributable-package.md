@@ -25,7 +25,7 @@ You must have these components to complete this walkthrough:
 
 ### To use the Visual C++ Redistributable Package to deploy an application
 
-1.  Create and build an MFC application by following the steps in [Walkthrough: Deploying a Visual C++ Application By Using a Setup Project](deploying-visual-cpp-application-by-using-a-setup-project.md).
+1.  Create and build an MFC application by following the steps in [Walkthrough: Deploying a Visual C++ Application By Using a Setup Project](walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md).
 
 1. Create a file, name it setup.bat, and add the following commands to it. Change `MyMFCApplication` to the name of your project.
 
