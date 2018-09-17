@@ -1,7 +1,7 @@
 ---
 title: "CMake Projects in Visual C++ | Microsoft Docs"
 ms.custom: ""
-ms.date: "04/28/2018"
+ms.date: "09/17/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-ide"]
@@ -54,7 +54,7 @@ You can open folders containing any number of CMake projects. Visual Studio dete
 
 ## Import an existing cache
 
-When you import an existing CMakeCache.txt file, Visual Studio automatically extracts customized variables and creates a pre-populated CMakeSettings.json file based on them. The original cache is not modified in any way and can still be used from the command line or with whatever tool or IDE was used to generate it. The new CMakeSettings.json file is placed alongside the project’s root CMakeLists.txt. Visual Studio generates a new cache based the settings file.  
+When you import an existing CMakeCache.txt file, Visual Studio automatically extracts customized variables and creates a pre-populated [CMakeSettings.json](#cmake_settings) file based on them. The original cache is not modified in any way and can still be used from the command line or with whatever tool or IDE was used to generate it. The new CMakeSettings.json file is placed alongside the project’s root CMakeLists.txt. Visual Studio generates a new cache based the settings file.  
 
 
 **Visual Studio 2017 version 15.7 and later**: you can override automatic cache generation in the **Tools | Options | CMake | General** dialog.
@@ -208,11 +208,27 @@ Because Ninja is designed for fast builds speeds instead of flexibility and func
 To specify a Visual Studio generator, open the CMakeSettings.json from the main menu by choosing **CMake | Change CMake Settings**. Delete “Ninja” and type “V”. This activates IntelliSense, which enables you to choose the generator you want.
 
 1. **buildRoot**: maps to **-DCMAKE_BINARY_DIR** switch and specifies where the CMake cache will be created. If the folder does not exist, it is created.
-1. **variables**: contains a name-value pair of CMake variables that will get passed as **-D**_name_**=**_value_ to CMake. If your CMake project build instructions specify the addition of any variables directly to the CMake cache file, it is recommended that you add them here instead.
+1. **variables**: contains a name-value pair of CMake variables that will get passed as **-D**_name_**=**_value_ to CMake. If your CMake project build instructions specify the addition of any variables directly to the CMake cache file, it is recommended that you add them here instead. The following example shows how to specify the name-value pairs:
+
+```json
+
+"variables": [
+    {
+      "name": "CMAKE_CXX_COMPILER",
+      "value": "C:/Program Files (x86)/Microsoft Visual Studio/157/Enterprise/VC/Tools/MSVC/14.14.26428/bin/HostX86/x86/cl.exe"
+    },
+    {
+      "name": "CMAKE_C_COMPILER",
+      "value": "C:/Program Files (x86)/Microsoft Visual Studio/157/Enterprise/VC/Tools/MSVC/14.14.26428/bin/HostX86/x86/cl.exe"
+    }
+  ]
+
+```
+
 1. **cmakeCommandArgs**: specifies any additional switches you want to pass to CMake.exe.
-1. **configurationType**: defines the build configuration type for the selected generator. Currently supported values are "Debug", "MinSizeRel", "Release", and "RelWithDebInfo".
-1. **ctestCommandArgs**: specifies additional switches to pass to CTest when running tests.
-1. **buildCommandArgs**: specifies additional switches to pass to the underlying build system. For example, passing -v when using the Ninja generator forces Ninja to output command lines.
+2. **configurationType**: defines the build configuration type for the selected generator. Currently supported values are "Debug", "MinSizeRel", "Release", and "RelWithDebInfo".
+3. **ctestCommandArgs**: specifies additional switches to pass to CTest when running tests.
+4. **buildCommandArgs**: specifies additional switches to pass to the underlying build system. For example, passing -v when using the Ninja generator forces Ninja to output command lines.
 
 ### Environment variables
 
