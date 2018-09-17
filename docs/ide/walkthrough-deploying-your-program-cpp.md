@@ -24,17 +24,15 @@ Now that you've created your application by completing the earlier related walkt
   
 - This walkthrough cannot be completed in Express editions of Visual Studio.  
   
-- If you haven’t already done so, download InstallShield Limited Edition (ISLE), as described in the steps later in this article. ISLE is free for Visual Studio developers and replaces the functionality of the setup and deployment project templates in earlier editions of Visual Studio.  
+- If you haven’t already done so, download the Microsoft Visual Studio Installer Projects extension, as described in the steps later in this article. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio.  
   
-### To install the ISLE setup and deployment project template  
-  
-1. When you are connected to the Internet, on the menu bar, choose **File** > **New** > **Project** to open the **New Project** dialog box.  
-  
-1. In the left pane of the dialog box, expand the **Installed**, **Templates**, and **Other Project Types** nodes, and then select **Setup and Deployment**. In the center pane, select **Enable InstallShield Limited Edition** and then choose the **OK** button.  
-  
-1. Follow the instructions to install InstallShield Limited Edition for Visual Studio (ISLE).  
-  
-1. After you have downloaded, installed, and activated ISLE, close Visual Studio and re-open it.  
+### To install the Visual Studio setup and deployment project template  
+
+1. When you are connected to the Internet, in Visual Studio, choose **Tools** > **Extensions and Updates**.
+
+1. Under **Extensions and Updates**, select the **Online** tab and type *Microsoft Visual Studio Installer Projects* in the search box. Hit **Enter**, select **Microsoft Visual Studio 2017 Installer Projects**, and click **Download**.
+
+1. Choose to install the extension, then restart Visual Studio. 
   
 1. On the menu bar, choose **File** > **Recent Projects and Solutions**, and then choose the **Game** solution to reopen it.  
   
@@ -46,35 +44,29 @@ Now that you've created your application by completing the earlier related walkt
   
 1. In the left pane of the dialog box, expand the **Installed** > **Other Project Types** nodes, and then select **Visual Studio Installer**. In the center pane, select **Setup Project**.  
   
-1. Enter a name for the setup project in the **Name** box. For this example, enter *Game Installer*. In the **Solution** drop-down list, select **Add to solution**. Choose the **OK** button to create the setup project. A **Project Assistant (Game Installer)** tab opens in the editor window.  
+1. Enter a name for the setup project in the **Name** box. For this example, enter *Game Installer*. In the **Solution** drop-down list, select **Add to solution**. Choose the **OK** button to create the setup project. A **File Assistant (Game Installer)** tab opens in the editor window.  
+
+1. Right-click the **Application Folder** node and select **Add** > **Project Output** to open the **Add Project Output Group** dialog box.
+
+1. In the dialog box, select **Primary Output** and click **OK**. A new item named **Primary Output from Game (Active)** appears.  
+
+1. Select the item **Primary Output from Game (Active)**, right-click and choose **Create Shortcut to Primary Output from Game (Active)**. A new item named **Shortcut to Primary Output from Game (Active)** appears.
+
+1. Rename the shortcut item to *Game*, then drag and drop the item into the **User's Programs Menu** node on the left side of the window.
+
+1. In **Solution Explorer** select the **Game Installer** project and choose **View** > **Properties Window** or hit **F4** to open the **Properties** window.
+
+1. Specify additional details as you want it to appear in the installer.  For example, use *Contoso* for **Manufacturer**, *Game Installer* for **Product Name**, and *http://www.contoso.com* for **SupportUrl**.
   
 1. At the bottom of the **Project Assistant (Game Installer)** tab, choose the **Application Information** link.  
   
 1. On the **Application Information** page, specify your company name as you want it to appear in the installer. You can use your own company name, or for this example, use *Contoso*. Specify your application name; in this example, specify *Game*. Specify your company web address, or for this example, use *http://www.contoso.com*.  
-  
-1. At the bottom of the **Project Assistant (Game Installer)** tab, choose the **Installation Interview** link.  
-  
-1. On the **Installation Interview** page, under **Do you want to display a License Agreement Dialog**, select the **No** option button. Under **Do you want to prompt users to enter their Company Name and User Name**, select the **No** option button.  
-  
-1. In **Solution Explorer**, expand the **Game Installer** project, expand the **Organize Your Setup** node, and then open the **General Information** page.  
-  
-1. On the **General Information (Game Installer)** tab in the editor window, specify a **Tag Creator ID**, for example, *regid.2012-12.com.Contoso*.  
-  
-1. In **Solution Explorer**, under the **Game Installer** project, expand the **Specify Application Data** node, and then open the **Files** page.  
-  
-1. On the **Files (Game Installer)** tab in the editor window, under **Source computer’s files**, open the shortcut menu for **Primary Output From Game** and choose **Copy**.  
-  
-1. Open a shortcut menu in the space under the **Name** column in **Destination computer’s files**, and choose **Paste**. A new item named **Game.Primary Output** appears.  
-  
-1. In **Solution Explorer**, under the **Specify Application Data** node, open the **Redistributables** page.  
-  
-1. On the **Redistributables (Game Installer)** tab in the editor window, select the **Visual C++ 11.0 CRT (x86)** check box.  
+
+1. On the menu bar, choose **Build** > **Configuration Manager**. In the **Project** table, under the **Build** column, check the box for **Game Installer**. Click **Close**.
   
 1. On the menu bar, choose **Build** > **Build Solution** to build the Game project and the Game Installer project.  
   
-1. In the solution folder, locate the setup.exe program that was built from the Game Installer project, and then run it to install the Game application on your computer. You can copy this file to install the application and its required library files on another computer.  
-  
-1. You can set many options in the setup project to suit your requirements. For more information, in **Solution Explorer**, under the **Game Installer** project, open the **Getting Started** page and then choose the **F1** key to open the ISLE help library.  
+1. In the solution folder, locate the setup.exe program that was built from the Game Installer project, and then run it to install the Game application on your computer. You can copy this file (and GameInstaller.msi) to install the application and its required library files on another computer.   
   
 ## Next Steps  
 
