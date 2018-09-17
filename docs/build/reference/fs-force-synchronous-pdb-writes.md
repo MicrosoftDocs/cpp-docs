@@ -41,5 +41,5 @@ Forces writes to the program database (PDB) file—created by [/Zi](../../build/
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

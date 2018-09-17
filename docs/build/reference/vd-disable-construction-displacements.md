@@ -19,17 +19,18 @@ ms.workload: ["cplusplus"]
 /vdn  
 ```  
   
-## Arguments  
- `0`  
- Suppresses the vtordisp constructor/destructor displacement member. Choose this option only if you are certain that all class constructors and destructors call virtual functions virtually.  
+## Arguments
+
+**0**<br/>
+Suppresses the vtordisp constructor/destructor displacement member. Choose this option only if you are certain that all class constructors and destructors call virtual functions virtually.  
   
- `1`  
- Enables the creation of hidden vtordisp constructor/destructor displacement members. This choice is the default.  
+**1**<br/>
+Enables the creation of hidden vtordisp constructor/destructor displacement members. This choice is the default.  
   
- `2`  
- Allows you to use [dynamic_cast Operator](../../cpp/dynamic-cast-operator.md) on an object being constructed. For example, a dynamic_cast from a virtual base class to a derived class.  
+**2**<br/>
+Allows you to use [dynamic_cast Operator](../../cpp/dynamic-cast-operator.md) on an object being constructed. For example, a dynamic_cast from a virtual base class to a derived class.  
   
- **/vd2** adds a vtordisp field when you have a virtual base with virtual functions. **/vd1** should be sufficient. The most common case where **/vd2** is necessary is when the only virtual function in your virtual base is a destructor.  
+**/vd2** adds a vtordisp field when you have a virtual base with virtual functions. **/vd1** should be sufficient. The most common case where **/vd2** is necessary is when the only virtual function in your virtual base is a destructor.  
   
 ## Remarks  
  These options apply only to C++ code that uses virtual bases.  
@@ -57,5 +58,5 @@ ms.workload: ["cplusplus"]
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

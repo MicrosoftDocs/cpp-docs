@@ -17,8 +17,7 @@ A command can create more than one inline file.
 ## Syntax  
   
 ```  
-  
-      command << <<  
+command << <<  
 inlinetext  
 <<[KEEP | NOKEEP]  
 inlinetext  

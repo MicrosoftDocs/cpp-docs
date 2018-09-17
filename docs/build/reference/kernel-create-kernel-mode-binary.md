@@ -94,5 +94,5 @@ class NONPAGESECTION MyNonPagedClass
 4.  In the **Additional options** box, add `/kernel` or `/kernel-`.  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

@@ -45,5 +45,5 @@ Specifies that an assembly manifest should not be inserted into the output file.
 -   This compiler option cannot be changed programmatically.  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

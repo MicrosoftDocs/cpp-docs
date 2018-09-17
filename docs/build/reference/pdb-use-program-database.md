@@ -20,8 +20,8 @@ ms.workload: ["cplusplus"]
 ## Remarks  
  where:  
   
- *filename*  
- A user-specified name for the program database (PDB) that the linker creates. It replaces the default name.  
+*filename*<br/>
+A user-specified name for the program database (PDB) that the linker creates. It replaces the default name.  
   
 ## Remarks  
  By default, when [/DEBUG](../../build/reference/debug-generate-debug-info.md) is specified, the linker creates a program database (PDB) which holds debugging information. The default file name for the PDB has the base name of the program and the extension .pdb.  
@@ -47,5 +47,5 @@ ms.workload: ["cplusplus"]
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ProgramDatabaseFile%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

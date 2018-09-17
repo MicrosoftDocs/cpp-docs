@@ -20,11 +20,11 @@ ms.workload: ["cplusplus"]
 ## Remarks  
  where:  
   
- *path*  
- An absolute or relative path specification for where the .tlb file should be created.  
+*path*<br/>
+An absolute or relative path specification for where the .tlb file should be created.  
   
- *filename*  
- Specifies the name of the .tlb file created by the MIDL compiler. No file extension is assumed; specify *filename*.tlb if you want a .tlb extension.  
+*filename*<br/>
+Specifies the name of the .tlb file created by the MIDL compiler. No file extension is assumed; specify *filename*.tlb if you want a .tlb extension.  
   
 ## Remarks  
  The /TLBOUT option specifies the name and extension of the .tlb file.  
@@ -48,8 +48,8 @@ ms.workload: ["cplusplus"]
 1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TypeLibraryFile%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)   
- [/IGNOREIDL (Don't Process Attributes into MIDL)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)   
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)<br/>
+[/IGNOREIDL (Don't Process Attributes into MIDL)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)   
  [/MIDL (Specify MIDL Command Line Options)](../../build/reference/midl-specify-midl-command-line-options.md)   
  [Building an Attributed Program](../../windows/building-an-attributed-program.md)

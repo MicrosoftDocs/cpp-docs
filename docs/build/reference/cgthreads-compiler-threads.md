@@ -21,8 +21,9 @@ Sets the number of cl.exe threads to use for optimization and code generation wh
 ```  
   
 ## Arguments  
- number  
- The maximum number of threads for cl.exe to use, in the range 1 to 8.  
+
+*number*<br/>
+The maximum number of threads for cl.exe to use, in the range 1 to 8.  
   
 ## Remarks  
  The **/CGTHREADS** option specifies the maximum number of threads cl.exe uses in parallel for the optimization and code-generation phases of compilation when link-time code generation ([/LTCG](../../build/reference/ltcg-link-time-code-generation.md)) is specified. By default, cl.exe uses four threads, as if **/CGTHREADS:4** were specified. If more processor cores are available, a larger `number` value can improve build times.  
@@ -44,5 +45,5 @@ Sets the number of cl.exe threads to use for optimization and code generation wh
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.  
   
 ## See Also  
- [Linker Options](../../build/reference/linker-options.md)   
- [Setting Linker Options](../../build/reference/setting-linker-options.md)
+[Linker Options](../../build/reference/linker-options.md)<br/>
+[Setting Linker Options](../../build/reference/setting-linker-options.md)

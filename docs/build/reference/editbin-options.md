@@ -43,5 +43,5 @@ You can use EDITBIN to modify object files, executable files, and dynamic-link l
 |[/VERSION](../../build/reference/version.md)|Sets the version number in the header.|  
   
 ## See Also  
- [C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)   
- [EDITBIN Reference](../../build/reference/editbin-reference.md)
+[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
+[EDITBIN Reference](../../build/reference/editbin-reference.md)

@@ -22,8 +22,8 @@ Deprecated. Embeds a text string in the .obj file.
 ```  
   
 ## Arguments  
- `string`  
- A string specifying the version number or copyright notice to be embedded in an .obj file.  
+*string*<br/>
+A string specifying the version number or copyright notice to be embedded in an .obj file.  
   
 ## Remarks  
  The stringcan label an .obj file with a version number or a copyright notice. Any space or tab characters must be enclosed in double quotation marks (") if they are a part of the string. A backslash (\\) must precede any double quotation marks if they are a part of the string. A space between **/V** and `string` is optional.  
@@ -47,5 +47,5 @@ Deprecated. Embeds a text string in the .obj file.
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

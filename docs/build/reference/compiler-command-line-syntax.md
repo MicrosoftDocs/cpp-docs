@@ -36,5 +36,5 @@ CL [option...] file... [option | file]... [lib...] [@command-file] [/link link-o
 >  The command-line input limit of 1024 characters is not guaranteed to remain the same in future releases of Windows.  
   
 ## See Also  
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
- [Compiler Options](../../build/reference/compiler-options.md)
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
+[Compiler Options](../../build/reference/compiler-options.md)

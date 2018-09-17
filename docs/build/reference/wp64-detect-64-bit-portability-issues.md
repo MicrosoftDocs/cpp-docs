@@ -57,6 +57,6 @@ Variables of the following types are tested on a 32-bit operating system as if t
   
 ## See Also  
 
-[Compiler Options](../../build/reference/compiler-options.md)   
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
 [Configure Visual C++ for 64-bit, x64 targets](../../build/configuring-programs-for-64-bit-visual-cpp.md)

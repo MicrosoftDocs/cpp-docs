@@ -18,8 +18,8 @@ ms.workload: ["cplusplus"]
 ```  
   
 ## Parameters  
- `warning`  
- The number of the linker warning to suppress, in the range 4000 to 4999.  
+*warning*<br/>
+The number of the linker warning to suppress, in the range 4000 to 4999.  
   
 ## Remarks  
  By default, LINK reports all warnings. Specify **/IGNORE:**`warning` to tell the linker to suppress a specific warning number. To ignore multiple warnings, separate the warning numbers with commas.  

@@ -21,9 +21,10 @@ Sets number of cl.exe threads to use for optimization and code generation.
 /cgthreads[1-8]  
 ```  
   
-## Arguments  
- number  
- The maximum number of threads for cl.exe to use, in the range 1 to 8.  
+## Arguments
+
+*number*<br/>
+The maximum number of threads for cl.exe to use, in the range 1 to 8.  
   
 ## Remarks  
  The **/cgthreads** option specifies the maximum number of threads cl.exe uses in parallel for the optimization and code generation phases of compilation. Notice that there can be no space between **/cgthreads** and the `number` argument. By default, cl.exe uses four threads, as if **/cgthreads4** were specified. If more processor cores are available, a larger `number` value can improve build times. This option is especially useful when it's combined with [/GL (Whole Program Optimization)](../../build/reference/gl-whole-program-optimization.md).  
@@ -45,5 +46,5 @@ Sets number of cl.exe threads to use for optimization and code generation.
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

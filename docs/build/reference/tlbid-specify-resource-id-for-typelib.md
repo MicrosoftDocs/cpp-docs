@@ -17,11 +17,10 @@ ms.workload: ["cplusplus"]
 /TLBID:id  
 ```  
   
-## Remarks  
- where:  
+## Arguments
   
- `id`  
- A user-specified value for a linker-created type library. It overrides the default resource ID of 1.  
+*id*<br/>
+A user-specified value for a linker-created type library. It overrides the default resource ID of 1.  
   
 ## Remarks  
  When compiling a program that uses attributes, the linker will create a type library. The linker will assign a resource ID of 1 to the type library.  
@@ -43,5 +42,5 @@ ms.workload: ["cplusplus"]
 1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TypeLibraryResourceID%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

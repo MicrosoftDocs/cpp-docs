@@ -22,5 +22,5 @@ Data types that are larger than 4 bytes are not automatically aligned on the sta
  If you require more strict alignment, use `__declspec(align(N)) on your variable declarations`. This causes the compiler to dynamically align the stack to meet your specifications. However, dynamically adjusting the stack at run time may cause slower execution of your application.  
   
 ## See Also  
- [Types and Storage](../build/types-and-storage.md)   
- [align](../cpp/align-cpp.md)
+[Types and Storage](../build/types-and-storage.md)<br/>
+[align](../cpp/align-cpp.md)

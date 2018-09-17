@@ -57,5 +57,5 @@ int main() {
 ```  
   
 ## See Also  
- [LINK Input Files](../../build/reference/link-input-files.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[LINK Input Files](../../build/reference/link-input-files.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

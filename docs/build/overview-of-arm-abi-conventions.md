@@ -224,5 +224,5 @@ The counter is a true cycle counter, not a clock; therefore, the counting freque
 
 ## See also
 
-[Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md)  
+[Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md)<br/>
 [ARM Exception Handling](../build/arm-exception-handling.md)  

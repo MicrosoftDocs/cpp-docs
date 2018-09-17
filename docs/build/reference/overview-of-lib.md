@@ -50,8 +50,8 @@ The following table lists the options for lib.exe, with a link to more informati
 |**/WX**|   Treat warnings as errors.<br/><br/>For more information see [Running LIB](../../build/reference/running-lib.md).|
 
 ## See Also  
- [LIB Reference](../../build/reference/lib-reference.md)   
- [LIB Input Files](../../build/reference/lib-input-files.md)   
- [LIB Output Files](../../build/reference/lib-output-files.md)   
- [Other LIB Output](../../build/reference/other-lib-output.md)   
- [Structure of a Library](../../build/reference/structure-of-a-library.md)
+[LIB Reference](../../build/reference/lib-reference.md)<br/>
+[LIB Input Files](../../build/reference/lib-input-files.md)<br/>
+[LIB Output Files](../../build/reference/lib-output-files.md)<br/>
+[Other LIB Output](../../build/reference/other-lib-output.md)<br/>
+[Structure of a Library](../../build/reference/structure-of-a-library.md)

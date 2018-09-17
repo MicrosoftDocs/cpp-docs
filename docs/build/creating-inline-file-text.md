@@ -17,8 +17,7 @@ Inline files are temporary or permanent.
 ## Syntax  
   
 ```  
-  
-      inlinetext  
+inlinetext  
 .  
 .  
 .  

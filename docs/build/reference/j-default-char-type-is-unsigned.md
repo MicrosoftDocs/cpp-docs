@@ -44,6 +44,6 @@ Changes the default `char` type from `signed char` to `unsigned char`, and the `
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DefaultCharIsUnsigned%2A>.  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
- [Working with Project Properties](../../ide/working-with-project-properties.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
+[Working with Project Properties](../../ide/working-with-project-properties.md)

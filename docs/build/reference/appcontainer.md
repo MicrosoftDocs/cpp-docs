@@ -24,5 +24,5 @@ Marks an executable that must run in an app container—for example, a Microsoft
  An executable that has the **/APPCONTAINER** option set can only be run in an app container, which is the process-isolation environment introduced in Windows 8. For Microsoft Store and Universal Windows apps, this option must be set.  
   
 ## See Also  
- [EDITBIN Options](../../build/reference/editbin-options.md)   
- [What's a Universal Windows App?](/windows/uwp/get-started/universal-application-platform-guide)
+[EDITBIN Options](../../build/reference/editbin-options.md)<br/>
+[What's a Universal Windows App?](/windows/uwp/get-started/universal-application-platform-guide)

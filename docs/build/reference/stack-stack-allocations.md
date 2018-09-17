@@ -47,5 +47,5 @@ ms.workload: ["cplusplus"]
 1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.StackCommitSize%2A> and <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.StackReserveSize%2A> properties.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

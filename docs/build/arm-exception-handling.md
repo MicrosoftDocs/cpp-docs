@@ -740,6 +740,5 @@ Function:
 
 ## See also
 
-[Overview of ARM ABI Conventions](../build/overview-of-arm-abi-conventions.md)  
+[Overview of ARM ABI Conventions](../build/overview-of-arm-abi-conventions.md)<br/>
 [Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md)  
-

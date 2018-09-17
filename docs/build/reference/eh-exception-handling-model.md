@@ -100,8 +100,8 @@ However, the non-throwing attribute is not a guarantee that no exceptions can be
 
 ## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)  
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)  
-[Errors and Exception Handling](../../cpp/errors-and-exception-handling-modern-cpp.md)  
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
+[Errors and Exception Handling](../../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
 [Exception Specifications (throw)](../../cpp/exception-specifications-throw-cpp.md)  
 [Structured Exception Handling (C/C++)](../../cpp/structured-exception-handling-c-cpp.md)  

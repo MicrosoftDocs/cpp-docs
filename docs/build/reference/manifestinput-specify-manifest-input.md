@@ -19,9 +19,9 @@ Specifies a manifest input file to include in the manifest that's embedded in th
 /MANIFESTINPUT:filename  
 ```  
   
-#### Parameters  
- `filename`  
- The manifest file to include in the embedded manifest.  
+### Parameters  
+*filename*<br/>
+The manifest file to include in the embedded manifest.  
   
 ## Remarks  
  The **/MANIFESTINPUT** option specifies the path of an input file to use to create the embedded manifest in an executable image. If you have multiple manifest input files, use the switch multiple times—once for each input file. The manifest input files are merged to create the embedded manifest. This option requires the **/MANIFEST:EMBED** option.  
@@ -29,5 +29,5 @@ Specifies a manifest input file to include in the manifest that's embedded in th
  This option can’t be set directly in Visual Studio. Instead, use the **Additional Manifest Files** property of the project to specify additional manifest files to include. For more information, see [Input and Output, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../../ide/input-and-output-manifest-tool.md).  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

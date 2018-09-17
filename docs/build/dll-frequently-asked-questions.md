@@ -44,8 +44,7 @@ Multithreaded applications can access regular MFC DLLs that dynamically link to 
   
  Prior to version 4.2, only one external thread could attach to a regular MFC DLL that statically linked to MFC. For more information about restrictions accessing regular MFC DLLs that statically link to MFC from multiple threads (prior to Visual C++ version 4.2), see the Knowledge Base article, "Multiple Threads and MFC _USRDLLs" (Q122676).  
   
- Note that the term USRDLL is no longer used in the Visual C++ documentation. A regular MFC DLL that is statically linked to MFC has the same characteristics as the former USRDLL.  
-
+ Note that the term USRDLL is no longer used in the Visual C++ documentation. A regular MFC DLL that is statically linked to MFC has the same characteristics as the former USRDLL.
 
 ## <a name="mfc_prohibited_classes"></a> Are there any MFC classes or functions that cannot be used in an MFC DLL?
 Extension DLLs use the `CWinApp`-derived class of the client application. They must not have their own `CWinApp`-derived class.  

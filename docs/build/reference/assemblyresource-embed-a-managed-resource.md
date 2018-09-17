@@ -18,11 +18,11 @@ ms.workload: ["cplusplus"]
 ```  
   
 ## Parameters  
- *filename*  
- The managed resource you want to embed in this assembly.  
+*filename*<br/>
+The managed resource you want to embed in this assembly.  
   
- *name*  
- Optional. The logical name for the resource; the name used to load the resource. The default is the name of the file.  
+*name*<br/>
+Optional. The logical name for the resource; the name used to load the resource. The default is the name of the file.  
   
  Optionally, you can specify if the file should be private in the assembly manifest. By default, *name* is public in the assembly.  
   
@@ -64,5 +64,5 @@ ms.workload: ["cplusplus"]
 1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EmbedManagedResourceFile%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

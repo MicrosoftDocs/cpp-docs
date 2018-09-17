@@ -20,8 +20,8 @@ ms.workload: ["cplusplus"]
 ## Remarks  
  where:  
   
- *filename*  
- The name of a module-definition file (.def) to be passed to the linker.  
+*filename*<br/>
+The name of a module-definition file (.def) to be passed to the linker.  
   
 ## Remarks  
  The /DEF option passes a module-definition file (.def) to the linker. Only one .def file can be specified to LINK. For details about .def files, see [Module-Definition Files](../../build/reference/module-definition-dot-def-files.md).  
@@ -43,5 +43,5 @@ ms.workload: ["cplusplus"]
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ModuleDefinitionFile%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

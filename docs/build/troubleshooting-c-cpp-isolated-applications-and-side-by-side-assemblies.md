@@ -97,5 +97,5 @@ Loading a C/C++ application can fail if dependent libraries cannot be found. Thi
  For more information about how the loader searches for dependent assemblies, see [Assembly Searching Sequence](/windows/desktop/SbsCs/assembly-searching-sequence). If the loader fails to find a dependent assembly as a private assembly, load fails and the message "The system cannot execute the specified program" is displayed. To resolve this error, make sure that dependent assemblies—and DLLs that are part of them—are installed on the computer as either private or shared assemblies.  
   
 ## See Also  
- [Concepts of Isolated Applications and Side-by-side Assemblies](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)   
- [Building C/C++ Isolated Applications and Side-by-side Assemblies](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+[Concepts of Isolated Applications and Side-by-side Assemblies](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)<br/>
+[Building C/C++ Isolated Applications and Side-by-side Assemblies](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

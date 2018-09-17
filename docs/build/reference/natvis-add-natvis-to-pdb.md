@@ -17,7 +17,7 @@ ms.workload: ["cplusplus"]
   
 ## Parameters  
   
-*filename*  
+*filename*<br/>
 A Natvis file to add to the PDB file. It embeds the debugger visualizations in the Natvis file into the PDB.  
   
 ## Remarks  
@@ -40,6 +40,6 @@ LINK ignores /NATVIS when a PDB file is not created by using a [/DEBUG](../../bu
   
 ## See Also  
   
-[Create custom views of native objects in the Visual Studio debugger](/visualstudio/debugger/create-custom-views-of-native-objects)  
-[Setting Linker Options](../../build/reference/setting-linker-options.md)  
+[Create custom views of native objects in the Visual Studio debugger](/visualstudio/debugger/create-custom-views-of-native-objects)<br/>
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

@@ -18,12 +18,11 @@ Instructs the compiler to create a precompiled header (.pch) file that represent
 ## Syntax  
   
 > __/Yc__
-> __/Yc__*filename*  
-  
-  
+> __/Yc__*filename*
+
 ## Arguments  
-*filename*  
- Specifies a header (.h) file. When this argument is used, the compiler compiles all code up to and including the .h file.  
+*filename*<br/>
+Specifies a header (.h) file. When this argument is used, the compiler compiles all code up to and including the .h file.  
   
 ## Remarks  
  When **/Yc** is specified without an argument, the compiler compiles all code up to the end of the base source file, or to the point in the base file where a [hdrstop](../../preprocessor/hdrstop.md) directive occurs. The resulting .pch file has the same base name as your base source file unless you specify a different file name using the **hdrstop** pragma or the **/Fp** option.  
@@ -71,6 +70,6 @@ Instructs the compiler to create a precompiled header (.pch) file that represent
 When this code is compiled with the command `CL /YcMYAPP.H PROG.CPP`, the compiler saves all the preprocessing for AFXWIN.h, RESOURCE.h, and MYAPP.h in a precompiled header file called MYAPP.pch.  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
- [Creating Precompiled Header Files](../../build/reference/creating-precompiled-header-files.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
+[Creating Precompiled Header Files](../../build/reference/creating-precompiled-header-files.md)

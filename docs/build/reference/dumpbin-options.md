@@ -66,5 +66,5 @@ An option consists of an option specifier, which is either a dash ( - ) or a for
 -   [/TLS](../../build/reference/tls.md)  
   
 ## See Also  
- [C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)   
- [DUMPBIN Reference](../../build/reference/dumpbin-reference.md)
+[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
+[DUMPBIN Reference](../../build/reference/dumpbin-reference.md)

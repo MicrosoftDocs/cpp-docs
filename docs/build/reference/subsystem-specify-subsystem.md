@@ -20,33 +20,38 @@ ms.workload: ["cplusplus"]
             [,major[.minor]]  
 ```  
   
- BOOT_APPLICATION  
- An application that runs in the Windows boot environment. For more information about boot applications, see [About BCD](/previous-versions/windows/desktop/bcd/about-bcd).  
+## Arguments
+
+**BOOT_APPLICATION**<br/>
+An application that runs in the Windows boot environment. For more information about boot applications, see [About BCD](/previous-versions/windows/desktop/bcd/about-bcd).  
   
- CONSOLE  
- Win32 character-mode application. The operating system provides a console for console applications. If `main` or `wmain` is defined for native code, `int main(array<String ^> ^)` is defined for managed code, or you build the application completely by using `/clr:safe`, CONSOLE is the default.  
+**CONSOLE**<br/>
+Win32 character-mode application. The operating system provides a console for console applications. If `main` or `wmain` is defined for native code, `int main(array<String ^> ^)` is defined for managed code, or you build the application completely by using `/clr:safe`, CONSOLE is the default.  
   
- Extensible Firmware Interface  
- The EFI_* subsystems. See the EFI specification for more information. For example, see the Intel Web site. The minimum version and default version is 1.0.  
+**EFI_APPLICATION**<br/>
+**EFI_BOOT_SERVICE_DRIVER**<br/>
+**EFI_ROM**<br/>
+**EFI_RUNTIME_DRIVER**<br/>
+The Extensible Firmware Interface subsystems. See the EFI specification for more information. For examples, see the Intel Web site. The minimum version and default version is 1.0.  
   
- NATIVE  
- Kernel mode drivers for Windows NT. This option is usually reserved for Windows system components. If [/DRIVER:WDM](../../build/reference/driver-windows-nt-kernel-mode-driver.md) is specified, NATIVE is the default.  
+**NATIVE**<br/>
+Kernel mode drivers for Windows NT. This option is usually reserved for Windows system components. If [/DRIVER:WDM](../../build/reference/driver-windows-nt-kernel-mode-driver.md) is specified, NATIVE is the default.  
   
- POSIX  
- Application that runs with the POSIX subsystem in Windows NT.  
+**POSIX**<br/>
+Application that runs with the POSIX subsystem in Windows NT.  
   
- WINDOWS  
- Application does not require a console, probably because it creates its own windows for interaction with the user. If `WinMain` or `wWinMain` is defined for native code, or `WinMain(HISTANCE *, HINSTANCE *, char *, int)` or `wWinMain(HINSTANCE *, HINSTANCE *, wchar_t *, int)` is defined for managed code, WINDOWS is the default.  
+**WINDOWS**<br/>
+Application does not require a console, probably because it creates its own windows for interaction with the user. If `WinMain` or `wWinMain` is defined for native code, or `WinMain(HISTANCE *, HINSTANCE *, char *, int)` or `wWinMain(HINSTANCE *, HINSTANCE *, wchar_t *, int)` is defined for managed code, WINDOWS is the default.  
   
 *major* and *minor*<br/>
 (Optional) Specify the minimum required version of the subsystem. The arguments are decimal numbers in the range 0 through 65,535. See the Remarks for more information. There are no upper bounds for version numbers.  
   
 ## Remarks  
- The /SUBSYSTEM option specifies the environment for the executable.  
+ The **/SUBSYSTEM** option specifies the environment for the executable.  
   
  The choice of subsystem affects the entry point symbol (or entry point function) that the linker will select.  
   
- The optional minimum and default `major` and `minor` version numbers for the subsystems are as follows.  
+ The optional minimum and default *major* and *minor* version numbers for the subsystems are as follows.  
   
 |Subsystem|Minimum|Default|  
 |---------------|-------------|-------------|  
@@ -73,5 +78,5 @@ ms.workload: ["cplusplus"]
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.SubSystem%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

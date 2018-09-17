@@ -61,6 +61,6 @@ You can create Visual C++ programs that target the Windows Runtime and build the
     ```  
   
 ## See Also  
- [C++ Language Reference](../cpp/cpp-language-reference.md)   
- [Building C/C++ Programs](../build/building-c-cpp-programs.md)   
- [Compiler Options](../build/reference/compiler-options.md)
+[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
+[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>
+[Compiler Options](../build/reference/compiler-options.md)

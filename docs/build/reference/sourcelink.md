@@ -21,7 +21,7 @@ Specifies a SourceLink configuration file to include in the PDB file generated b
 
 ## Arguments
 
-*filename*  
+*filename*<br/>
 Specifies a JSON-formatted configuration file that contains a simple mapping of local file paths to URLs where the source file can be retrieved for display by the debugger. For more information on the format of this file, see [Source Link JSON Schema](https://github.com/dotnet/designs/blob/master/accepted/diagnostics/source-link.md#source-link-json-schema).
 
 ## Remarks
@@ -42,5 +42,5 @@ SourceLink is a language- and source-control agnostic system for providing sourc
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)  
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)  

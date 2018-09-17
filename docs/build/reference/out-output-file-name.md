@@ -20,8 +20,8 @@ ms.workload: ["cplusplus"]
 ## Remarks  
  where:  
   
- *filename*  
- A user-specified name for the output file. It replaces the default name.  
+*filename*<br/>
+A user-specified name for the output file. It replaces the default name.  
   
 ## Remarks  
  The /OUT option overrides the default name and location of the program that the linker creates.  
@@ -45,5 +45,5 @@ ms.workload: ["cplusplus"]
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.OutputFile%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

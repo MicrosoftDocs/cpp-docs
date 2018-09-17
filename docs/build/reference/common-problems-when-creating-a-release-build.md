@@ -45,5 +45,5 @@ During development, you will usually build and test with a debug build of your p
  Depending on the nature of certain segments of code, the optimizing compiler might generate unexpected code. This is the least likely cause of release build problems, but it does arise on occasion. For a solution, see [Optimizing Your Code](../../build/reference/optimizing-your-code.md).  
   
 ## See Also  
- [Release Builds](../../build/reference/release-builds.md)   
- [Fixing Release Build Problems](../../build/reference/fixing-release-build-problems.md)
+[Release Builds](../../build/reference/release-builds.md)<br/>
+[Fixing Release Build Problems](../../build/reference/fixing-release-build-problems.md)

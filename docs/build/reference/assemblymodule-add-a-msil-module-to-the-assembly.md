@@ -20,8 +20,8 @@ ms.workload: ["cplusplus"]
 ## Remarks  
  where:  
   
- *filename*  
- The module you want to include in this assembly.  
+*filename*<br/>
+The module you want to include in this assembly.  
   
 ## Remarks  
  The /ASSEMBLYMODULE option allows you to add a module reference to an assembly. Type information in the module will not be available to the assembly program that added the module reference. However, type information in the module will be available to any program that references the assembly.  
@@ -69,5 +69,5 @@ ms.workload: ["cplusplus"]
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AddModuleNamesToAssembly%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

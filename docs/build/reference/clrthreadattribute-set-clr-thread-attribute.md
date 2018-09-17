@@ -21,15 +21,16 @@ Explicitly specify the threading attribute for the entry point of your CLR progr
 /CLRTHREADATTRIBUTE:{STA|MTA|NONE}  
 ```  
   
-#### Parameters  
- MTA  
- Applies the MTAThreadAttribute attribute to the entry point of your program.  
+#### Parameters
+
+**MTA**<br/>
+Applies the MTAThreadAttribute attribute to the entry point of your program.  
   
- NONE  
- Same as not specifying /CLRTHREADATTRIBUTE.  Lets the Common Language Runtime (CLR) set the default threading attribute.  
+**NONE**<br/>
+Same as not specifying /CLRTHREADATTRIBUTE.  Lets the Common Language Runtime (CLR) set the default threading attribute.  
   
- STA  
- Applies the STAThreadAttribute attribute to the entry point of your program.  
+**STA**<br/>
+Applies the STAThreadAttribute attribute to the entry point of your program.  
   
 ## Remarks  
  Setting the thread attribute is only valid when building an .exe, as it affects the entry point of the main thread.  
@@ -59,5 +60,5 @@ Explicitly specify the threading attribute for the entry point of your CLR progr
 1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.CLRThreadAttribute%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

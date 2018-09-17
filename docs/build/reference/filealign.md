@@ -21,7 +21,7 @@ The **/FILEALIGN** linker option lets you specify the alignment of sections writ
 
 ### Parameters
 
-*size*  
+*size*<br/>
 The section alignment size in bytes, which must be a power of two.
 
 ## Remarks
@@ -46,5 +46,5 @@ Use [DUMPBIN](dumpbin-reference.md) to see information about sections in your ou
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)   
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

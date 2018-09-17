@@ -20,8 +20,8 @@ ms.workload: ["cplusplus"]
 ## Remarks  
  where:  
   
- *function*  
- A function that specifies a user-defined starting address for an .exe file or DLL.  
+*function*<br/>
+A function that specifies a user-defined starting address for an .exe file or DLL.  
   
 ## Remarks  
  The /ENTRY option specifies an entry point function as the starting address for an .exe file or DLL.  
@@ -59,5 +59,5 @@ ms.workload: ["cplusplus"]
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EntryPointSymbol%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

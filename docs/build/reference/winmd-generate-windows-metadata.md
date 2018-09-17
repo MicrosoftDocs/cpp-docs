@@ -41,5 +41,5 @@ Enables generation of a Windows Runtime Metadata (.winmd) file.
 4.  In the **Generate Windows Metadata** drop-down list box, select the option you want.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

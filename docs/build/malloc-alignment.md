@@ -16,6 +16,6 @@ ms.workload: ["cplusplus"]
  Visual C++ permits types that have *extended alignment*, which are also known as *over-aligned* types. For example, the SSE types [__m128](../cpp/m128.md) and `__m256`, and types that are declared by using `__declspec(align( n ))` where `n` is greater than 8, have extended alignment. Memory alignment on a boundary that's suitable for an object that requires extended alignment is not guaranteed by `malloc`. To allocate memory for over-aligned types, use [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) and related functions.  
   
 ## See Also  
- [Stack Usage](../build/stack-usage.md)   
- [align](../cpp/align-cpp.md)   
- [__declspec](../cpp/declspec.md)
+[Stack Usage](../build/stack-usage.md)<br/>
+[align](../cpp/align-cpp.md)<br/>
+[__declspec](../cpp/declspec.md)

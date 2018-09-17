@@ -37,5 +37,5 @@ The CL compiler automatically calls LINK unless you specify the /c option. CL pr
  For more information, see [Compiler Options](../../build/reference/compiler-options.md).  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

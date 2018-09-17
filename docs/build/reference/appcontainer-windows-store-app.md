@@ -39,5 +39,5 @@ Specifies whether the linker creates an executable image that must be run in an 
 5.  In **Additional Options**, enter `/APPCONTAINER` or `/APPCONTAINER:NO`.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

@@ -14,16 +14,19 @@ ms.workload: ["cplusplus"]
 # Aggregates and Unions
 Other types, such as arrays, structs, and unions, have stricter alignment requirements that ensure consistent aggregate and union storage and data retrieval. Here are the definitions for array, structure, and union:  
   
- Array  
- Contains an ordered group of adjacent data objects. Each object is called an element. All elements within an array have the same size and data type.  
+- Array  
+
+   Contains an ordered group of adjacent data objects. Each object is called an element. All elements within an array have the same size and data type.  
   
- Structure  
- Contains an ordered group of data objects. Unlike the elements of an array, the data objects within a structure can have different data types and sizes. Each data object in a structure is called a member.  
+-  Structure  
+
+   Contains an ordered group of data objects. Unlike the elements of an array, the data objects within a structure can have different data types and sizes. Each data object in a structure is called a member.  
   
- Union  
- An object that holds any one of a set of named members. The members of the named set can be of any type. The storage allocated for a union is equal to the storage required for the largest member of that union, plus any padding required for alignment.  
+- Union  
+
+   An object that holds any one of a set of named members. The members of the named set can be of any type. The storage allocated for a union is equal to the storage required for the largest member of that union, plus any padding required for alignment.  
   
- The following table shows the strongly suggested alignment for the scalar members of unions and structures.  
+The following table shows the strongly suggested alignment for the scalar members of unions and structures.  
   
 ||||  
 |-|-|-|  

@@ -17,11 +17,10 @@ ms.workload: ["cplusplus"]
 /LIBPATH:dir  
 ```  
   
-## Remarks  
- where:  
+## Parameters
   
- `dir`  
- Specifies a path that the linker will search before it searches the path specified in the LIB environment option.  
+*dir*<br/>
+Specifies a path that the linker will search before it searches the path specified in the LIB environment option.  
   
 ## Remarks  
  Use the /LIBPATH option to override the environment library path. The linker will first search in the path specified by this option, and then search in the path specified in the LIB environment variable. You can specify only one directory for each /LIBPATH option you enter. If you want to specify more than one directory, you must specify multiple /LIBPATH options. The linker will then search the specified directories in order.  
@@ -41,5 +40,5 @@ ms.workload: ["cplusplus"]
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalLibraryDirectories%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

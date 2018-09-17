@@ -37,8 +37,8 @@ Specifies both the source character set and the execution character set as UTF-8
 4.  Choose **OK** to save your changes.  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
- [/execution-charset (Set Execution Character Set)](../../build/reference/execution-charset-set-execution-character-set.md)   
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
+[/execution-charset (Set Execution Character Set)](../../build/reference/execution-charset-set-execution-character-set.md)   
  [/source-charset (Set Source Character Set)](../../build/reference/source-charset-set-source-character-set.md)   
  [/validate-charset (Validate for compatible characters)](../../build/reference/validate-charset-validate-for-compatible-characters.md)

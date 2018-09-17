@@ -41,5 +41,5 @@ The [/DELAY](../../build/reference/delay-delay-load-import-settings.md) option s
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)   
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

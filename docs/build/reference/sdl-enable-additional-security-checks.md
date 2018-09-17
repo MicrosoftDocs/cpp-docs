@@ -59,5 +59,5 @@ Adds recommended Security Development Lifecycle (SDL) checks. These checks inclu
 3.  On the **General** page, select the option from the **SDL checks** drop-down list.  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

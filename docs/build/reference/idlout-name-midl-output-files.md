@@ -18,11 +18,11 @@ ms.workload: ["cplusplus"]
 ```  
   
 ## Parameters  
- *path*  
- An absolute or relative path specification. By specifying a path, you affect only the location of an .idl file; all other files are placed in the project directory.  
+*path*<br/>
+An absolute or relative path specification. By specifying a path, you affect only the location of an .idl file; all other files are placed in the project directory.  
   
- *filename*  
- Specifies the name of the .idl file created by the MIDL compiler. No file extension is assumed; specify *filename*.idl if you want an .idl extension.  
+*filename*<br/>
+Specifies the name of the .idl file created by the MIDL compiler. No file extension is assumed; specify *filename*.idl if you want an .idl extension.  
   
 ## Remarks  
  The /IDLOUT option specifies the name and extension of the .idl file.  
@@ -58,8 +58,8 @@ ms.workload: ["cplusplus"]
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MergedIDLBaseFileName%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)   
- [/IGNOREIDL (Don't Process Attributes into MIDL)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)   
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)<br/>
+[/IGNOREIDL (Don't Process Attributes into MIDL)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)   
  [/MIDL (Specify MIDL Command Line Options)](../../build/reference/midl-specify-midl-command-line-options.md)   
  [Building an Attributed Program](../../windows/building-an-attributed-program.md)

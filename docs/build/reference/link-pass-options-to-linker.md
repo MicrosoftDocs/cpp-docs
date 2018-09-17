@@ -22,8 +22,8 @@ Passes one or more linker options to the linker.
 ```  
   
 ## Arguments  
- `linkeroptions`  
- The linker option or options to be passed to the linker.  
+*linkeroptions*<br/>
+The linker option or options to be passed to the linker.  
   
 ## Remarks  
  The **/link** option and its linker options must appear after any file names and CL options. A space is required between **/link** and `linkeroptions`. For more information, see [Setting Linker Options](../../build/reference/setting-linker-options.md).  
@@ -43,5 +43,5 @@ Passes one or more linker options to the linker.
 -   This compiler option cannot be changed programmatically.  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

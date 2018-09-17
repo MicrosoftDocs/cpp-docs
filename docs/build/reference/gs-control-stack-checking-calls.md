@@ -54,5 +54,5 @@ You can turn stack probes on or off by using [check_stack](../../preprocessor/ch
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## See Also
-[Compiler Options](../../build/reference/compiler-options.md)   
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

@@ -20,8 +20,8 @@ ms.workload: ["cplusplus"]
 ## Remarks  
  where:  
   
- *filename*  
- A user-specified name for the mapfile. It replaces the default name.  
+*filename*<br/>
+A user-specified name for the mapfile. It replaces the default name.  
   
 ## Remarks  
  The /MAP option tells the linker to create a mapfile.  
@@ -57,5 +57,5 @@ ms.workload: ["cplusplus"]
 1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.GenerateMapFile%2A> and <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MapFileName%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

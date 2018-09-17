@@ -22,7 +22,7 @@ The notification hooks are called just before the following actions are taken in
   
 -   Return to the delay import load thunk.  
   
- The notification hook is enabled:  
+The notification hook is enabled:  
   
 -   By supplying a new definition of the pointer **__pfnDliNotifyHook2** that is initialized to point to your own function that receives the notifications.  
   
@@ -30,31 +30,33 @@ The notification hooks are called just before the following actions are taken in
   
 -   By setting the pointer **__pfnDliNotifyHook2** to your hook function before any calls to the DLL that the program is delay loading.  
   
- If the notification is **dliStartProcessing**, the hook function can return:  
+If the notification is **dliStartProcessing**, the hook function can return:  
   
- NULL  
- The default helper handles the loading of the DLL. This is useful to be called just for informational purposes.  
+- NULL  
+
+   The default helper handles the loading of the DLL. This is useful to be called just for informational purposes.  
   
- function pointer  
- Bypass the default delay-load handling. This lets you supply your own load handler.  
+- function pointer  
+
+   Bypass the default delay-load handling. This lets you supply your own load handler.  
   
- If the notification is **dliNotePreLoadLibrary**, the hook function can return:  
+If the notification is **dliNotePreLoadLibrary**, the hook function can return:  
   
--   0, if it just wants informational notifications.  
+- 0, if it just wants informational notifications.  
   
--   The HMODULE for the loaded DLL, if it loaded the DLL itself.  
+- The HMODULE for the loaded DLL, if it loaded the DLL itself.  
   
- If the notification is **dliNotePreGetProcAddress**, the hook function can return:  
+If the notification is **dliNotePreGetProcAddress**, the hook function can return:  
   
--   0, if it just wants informational notifications.  
+- 0, if it just wants informational notifications.  
   
--   The imported function's address, if the hook function gets the address itself.  
+- The imported function's address, if the hook function gets the address itself.  
   
- If the notification is **dliNoteEndProcessing**, the hook function's return value is ignored.  
+If the notification is **dliNoteEndProcessing**, the hook function's return value is ignored.  
   
- If this pointer is initialized (nonzero), the delay load helper will invoke the function at certain notification points throughout its execution. The function pointer has the following definition:  
+If this pointer is initialized (nonzero), the delay load helper will invoke the function at certain notification points throughout its execution. The function pointer has the following definition:  
   
-```  
+```C  
 // The "notify hook" gets called for every call to the  
 // delay load helper.  This allows a user to hook every call and  
 // skip the delay load helper entirely.  

@@ -24,12 +24,13 @@ Used to enable and disable the run-time error checks feature, in conjunction wit
 /RTCu  
 ```  
   
-## Arguments  
- `1`  
- Equivalent of **/RTC**`su`.  
+## Arguments
+
+**1**<br/>
+Equivalent of **/RTC**`su`.  
   
- `c`  
- Reports when a value is assigned to a smaller data type and results in a data loss. For example, if a value of type `short 0x101` is assigned to a variable of type `char`.  
+**c**<br/>
+Reports when a value is assigned to a smaller data type and results in a data loss. For example, if a value of type `short 0x101` is assigned to a variable of type `char`.  
   
  This option reports situations in which you intend to truncate, for example, if you want the first eight bits of an `int` returned as a `char`. Because **/RTC**`c` causes a run-time error if any information is lost as a result of the assignment, you can mask off the information you need to avoid a run-time error as a result of **/RTC**`c`. For example:  
   
@@ -48,8 +49,8 @@ int main() {
 }  
 ```  
   
- `s`  
- Enables stack frame run-time error checking, as follows:  
+**s**<br/>
+Enables stack frame run-time error checking, as follows:  
   
 -   Initialization of local variables to a nonzero value. This helps identify bugs that do not appear when running in debug mode. There is a greater chance that stack variables will still be zero in a debug build compared to a release build because of compiler optimizations of stack variables in a release build. Once a program has used an area of its stack, it is never reset to 0 by the compiler. Therefore, subsequent, uninitialized stack variables that happen to use the same stack area can return values left over from the prior use of this stack memory.  
   
@@ -57,8 +58,8 @@ int main() {
   
 -   Stack pointer verification, which detects stack pointer corruption. Stack pointer corruption can be caused by a calling convention mismatch. For example, using a function pointer, you call a function in a DLL that is exported as [__stdcall](../../cpp/stdcall.md) but you declare the pointer to the function as [__cdecl](../../cpp/cdecl.md).  
   
- `u`  
- Reports when a variable is used without having been initialized. For example, an instruction that generates `C4701` may also generate a run-time error under **/RTC**`u`. Any instruction that generates [Compiler Warning (level 1 and level 4) C4700](../../error-messages/compiler-warnings/compiler-warning-level-1-and-level-4-c4700.md) will generate a run-time error under **/RTC**`u`.  
+**u**<br/>
+Reports when a variable is used without having been initialized. For example, an instruction that generates `C4701` may also generate a run-time error under **/RTC**`u`. Any instruction that generates [Compiler Warning (level 1 and level 4) C4700](../../error-messages/compiler-warnings/compiler-warning-level-1-and-level-4-c4700.md) will generate a run-time error under **/RTC**`u`.  
   
  However, consider the following code fragment:  
   
@@ -95,6 +96,6 @@ c = a;  // No run-time error with /RTCu
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BasicRuntimeChecks%2A> and <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.SmallerTypeCheck%2A> properties.  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
- [How to: Use Native Run-Time Checks](/visualstudio/debugger/how-to-use-native-run-time-checks)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
+[How to: Use Native Run-Time Checks](/visualstudio/debugger/how-to-use-native-run-time-checks)

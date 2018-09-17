@@ -25,6 +25,6 @@ If your code generates compile errors after switching from debug build to releas
 -   [Check for Memory Overwrite](../../build/reference/checking-for-memory-overwrites.md)  
   
 ## See Also  
- [Release Builds](../../build/reference/release-builds.md)   
- [Common Problems When Creating a Release Build](../../build/reference/common-problems-when-creating-a-release-build.md)   
- [Optimizing Your Code](../../build/reference/optimizing-your-code.md)
+[Release Builds](../../build/reference/release-builds.md)<br/>
+[Common Problems When Creating a Release Build](../../build/reference/common-problems-when-creating-a-release-build.md)<br/>
+[Optimizing Your Code](../../build/reference/optimizing-your-code.md)

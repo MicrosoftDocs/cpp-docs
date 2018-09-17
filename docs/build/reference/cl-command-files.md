@@ -44,5 +44,5 @@ Note that the command line and the command-file commands are effectively combine
 
 ## See Also
 
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
 [Compiler Options](../../build/reference/compiler-options.md)

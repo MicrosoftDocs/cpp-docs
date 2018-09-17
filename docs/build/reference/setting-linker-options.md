@@ -27,5 +27,5 @@ Linker options can be set inside or outside of the development environment. The 
  Options apply to the entire build; no options can be applied to specific input files.  
   
 ## See Also  
- [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

@@ -30,6 +30,6 @@ Processes that explicitly link to a DLL call the [FreeLibrary](https://msdn.micr
 -   [GetProcAddress](../build/getprocaddress.md)  
   
 ## See Also  
- [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)   
- [FreeLibrary](https://msdn.microsoft.com/library/windows/desktop/ms683152(v=vs.85).aspx)   
+[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)<br/>
+[FreeLibrary](https://msdn.microsoft.com/library/windows/desktop/ms683152(v=vs.85).aspx)   
  [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary)

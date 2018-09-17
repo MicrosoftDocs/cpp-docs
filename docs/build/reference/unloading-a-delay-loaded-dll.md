@@ -16,7 +16,7 @@ The default-supplied delay-load helper checks to see if the delay-load descripto
   
  Here are the associated structures and functions for explicitly unloading a delay-loaded DLL:  
   
-```  
+```cpp  
 //  
 // Unload support from delayimp.h  
 //  
@@ -47,13 +47,13 @@ PUnloadInfo __puiHead;
   
  The argument to the function __FUnloadDelayLoadedDLL2 is case sensitive. For example, you would specify:  
   
-```  
+```cpp  
 __FUnloadDelayLoadedDLL2("user32.DLL");  
 ```  
   
  and not:  
   
-```  
+```cpp  
 __FUnloadDelayLoadedDLL2("User32.DLL");.  
 ```  
   

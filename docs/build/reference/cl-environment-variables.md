@@ -57,5 +57,5 @@ This has the same effect as the following command line:
 
 ## See Also
 
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
 [Compiler Options](../../build/reference/compiler-options.md)

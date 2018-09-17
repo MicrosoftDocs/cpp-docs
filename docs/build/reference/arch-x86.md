@@ -79,5 +79,5 @@ r = t + d;     // This should produce the same overall result
   
 ## See Also  
  [/arch (Minimum CPU Architecture)](../../build/reference/arch-minimum-cpu-architecture.md)   
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

@@ -19,5 +19,5 @@ To increase the speed of your compiles:
 -   [Create Precompiled Header Files](../../build/reference/creating-precompiled-header-files.md) and use the [precompiled header options](../../build/reference/yc-create-precompiled-header-file.md).  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

@@ -47,7 +47,7 @@ ms.workload: ["cplusplus"]
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TerminalServerAware%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)   
- [Storing User-Specific Information](/windows/desktop/TermServ/storing-user-specific-information)   
- [Legacy Applications in a Terminal Services Environment](https://msdn.microsoft.com/library/aa382957.aspx)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)<br/>
+[Storing User-Specific Information](/windows/desktop/TermServ/storing-user-specific-information)<br/>
+[Legacy Applications in a Terminal Services Environment](https://msdn.microsoft.com/library/aa382957.aspx)

@@ -51,9 +51,8 @@ Dynamic linking has the following advantages:
   
 -   Dynamic linking makes creation of international versions of your application easier. By placing locale-specific resources in a DLL, it is much easier to create international versions of an application. Instead of shipping many localized versions of your application, you can place the strings and images for each language in a separate resource DLL, and then your application can load the appropriate resources for that locale at runtime.   
   
- A potential disadvantage to using DLLs is that the application is not self-contained; it depends on the existence of a separate DLL module that you must deploy or verify yourself as part of your installation.  
-  
-  
+ A potential disadvantage to using DLLs is that the application is not self-contained; it depends on the existence of a separate DLL module that you must deploy or verify yourself as part of your installation.
+
 ## More information on how to create and use DLLs  
   
 The following topics provide detailed information about how to program DLLs in Visual C++.  

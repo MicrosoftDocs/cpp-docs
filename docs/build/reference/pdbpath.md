@@ -43,5 +43,5 @@ The name of the .dll or .exe file for which you want to find the matching .pdb f
 -   Check in the Windows directory.  
   
 ## See Also  
- [DUMPBIN Options](../../build/reference/dumpbin-options.md)   
- [/PDBALTPATH (Use Alternate PDB Path)](../../build/reference/pdbaltpath-use-alternate-pdb-path.md)
+[DUMPBIN Options](../../build/reference/dumpbin-options.md)<br/>
+[/PDBALTPATH (Use Alternate PDB Path)](../../build/reference/pdbaltpath-use-alternate-pdb-path.md)

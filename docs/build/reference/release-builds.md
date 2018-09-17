@@ -31,5 +31,5 @@ A release build uses optimizations. When you use optimizations to create a relea
     -   [Checking for Memory Overwrites](../../build/reference/checking-for-memory-overwrites.md)  
   
 ## See Also  
- [Building C++ Projects in Visual Studio](../../ide/building-cpp-projects-in-visual-studio.md)   
- [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)
+[Building C++ Projects in Visual Studio](../../ide/building-cpp-projects-in-visual-studio.md)<br/>
+[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)

@@ -25,8 +25,8 @@ To see which environment variables are set by a developer command prompt shortcu
   
 ## See Also  
 
-[Build C/C++ code on the command line](../build/building-on-the-command-line.md)   
-[Linking](../build/reference/linking.md)   
-[Linker Options](../build/reference/linker-options.md)   
-[Compiling a C/C++ Program](../build/reference/compiling-a-c-cpp-program.md)   
+[Build C/C++ code on the command line](../build/building-on-the-command-line.md)<br/>
+[Linking](../build/reference/linking.md)<br/>
+[Linker Options](../build/reference/linker-options.md)<br/>
+[Compiling a C/C++ Program](../build/reference/compiling-a-c-cpp-program.md)<br/>
 [Compiler Options](../build/reference/compiler-options.md)

@@ -25,8 +25,8 @@ Compiles source code to support Visual C++ component extensions C++/CX for the c
 ```  
   
 ## Arguments  
- nostdlib  
- Indicates that Platform.winmd, Windows.Foundation.winmd, and other default Windows metadata (.winmd) files are not automatically included in the compilation. Instead, you must use the [/FU (Name Forced #using File)](../../build/reference/fu-name-forced-hash-using-file.md) compiler option to explicitly specify Windows metadata files.  
+**nostdlib**<br/>
+Indicates that Platform.winmd, Windows.Foundation.winmd, and other default Windows metadata (.winmd) files are not automatically included in the compilation. Instead, you must use the [/FU (Name Forced #using File)](../../build/reference/fu-name-forced-hash-using-file.md) compiler option to explicitly specify Windows metadata files.  
   
 ## Remarks  
  When you specify the **/ZW** option, the compiler supports these features:  
@@ -42,5 +42,5 @@ Compiles source code to support Visual C++ component extensions C++/CX for the c
 ## Requirements  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

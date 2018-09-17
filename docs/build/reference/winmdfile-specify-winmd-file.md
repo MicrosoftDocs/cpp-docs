@@ -33,5 +33,5 @@ Specifies the file name for the Windows Runtime Metadata (.winmd) output file th
   
 ## See Also  
  [/WINMD (Generate Windows Metadata)](../../build/reference/winmd-generate-windows-metadata.md)   
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

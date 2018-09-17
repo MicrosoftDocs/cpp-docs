@@ -63,5 +63,5 @@ Another way to set the base address is by using the *BASE* argument in a [NAME](
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)  
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

@@ -12,6 +12,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Batch-Mode Rules
+
 ```  
 {frompath}.fromext{topath}.toext::  
    commands  

@@ -20,8 +20,8 @@ ms.workload: ["cplusplus"]
 ## Remarks  
  where:  
   
- *filename*  
- File that contains the key. Place the string in double quotation marks (" ") if it contains a space.  
+*filename*<br/>
+File that contains the key. Place the string in double quotation marks (" ") if it contains a space.  
   
 ## Remarks  
  The linker inserts the public key into the assembly manifest and then signs the final assembly with the private key. To generate a key file, type [sn -k](/dotnet/framework/tools/sn-exe-strong-name-tool) *filename* at the command line. A signed assembly is said to have a strong name.  
@@ -63,5 +63,5 @@ ms.workload: ["cplusplus"]
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

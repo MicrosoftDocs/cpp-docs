@@ -37,5 +37,5 @@ C and C++ compiler options can be set either in the development environment or o
 -   [CL Invokes the Linker](../../build/reference/cl-invokes-the-linker.md)  
   
 ## See Also  
- [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)   
- [Compiler Options](../../build/reference/compiler-options.md)
+[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)<br/>
+[Compiler Options](../../build/reference/compiler-options.md)

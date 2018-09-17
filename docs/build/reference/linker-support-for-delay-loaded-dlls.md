@@ -49,5 +49,5 @@ The Visual C++ linker now supports the delayed loading of DLLs. This relieves yo
 -   [Developing Your Own Helper Function](../../build/reference/developing-your-own-helper-function.md)  
   
 ## See Also  
- [DLLs in Visual C++](../../build/dlls-in-visual-cpp.md)   
- [Linking](../../build/reference/linking.md)
+[DLLs in Visual C++](../../build/dlls-in-visual-cpp.md)<br/>
+[Linking](../../build/reference/linking.md)

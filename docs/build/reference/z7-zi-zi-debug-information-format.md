@@ -41,7 +41,6 @@ The **/Zi** option produces a separate PDB file that contains all the symbolic d
 
 Use of **/Zi** does not affect optimizations. However, **/Zi** does imply **/debug**; see [/DEBUG (Generate Debug Info)](../../build/reference/debug-generate-debug-info.md) for more information.
 
-
 When you specify both **/Zi** and **/clr**, the <xref:System.Diagnostics.DebuggableAttribute> attribute is not placed in the assembly metadata. If you want it, you must specify it in the source code. This attribute can affect the runtime performance of the application. For more information about how the **Debuggable** attribute affects performance and how you can modify the performance impact, see [Making an Image Easier to Debug](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug).
 
 The compiler names the PDB file *project*.pdb. If you compile a file outside of a project, the compiler creates a PDB file named VC*x*.pdb, where *x* is a concatenation of the major and minor version number of the compiler version in use. The compiler embeds the name of the PDB and an identifying timestamped signature in each object file created using this option, which points the debugger to the location of symbolic and line-number information. The name and signature in the PDB file must match the executable for symbols to be loaded in the debugger. The WinDBG debugger can load mismatched symbols by using the `.symopt+0x40` command. Visual Studio does not have a similar option to load mismatched symbols.
@@ -73,6 +72,6 @@ The **/ZI** option forces both the [/Gy (Enable Function-Level Linking)](../../b
 
 ## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)  
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)  
 

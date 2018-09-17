@@ -22,7 +22,7 @@ Specifies a compiler response file.
 
 ## Arguments
 
-*response_file*  
+*response_file*<br/>
 A text file containing compiler commands.
 
 ## Remarks
@@ -43,5 +43,5 @@ From the command line you can specify as many response file options (for example
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)  
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)  

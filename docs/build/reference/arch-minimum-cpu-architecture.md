@@ -22,5 +22,5 @@ The architecture options specify the architecture for code generation. Select th
 -   [/arch (ARM)](../../build/reference/arch-arm.md)  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

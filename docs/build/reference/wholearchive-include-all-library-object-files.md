@@ -30,9 +30,8 @@ The /WHOLEARCHIVE option was introduced in Visual Studio 2015 Update 2.
   
 1.  Select the **Command Line** property page under **Configuration Properties**, **Linker**.  
   
-1.  Add the /WHOLEARCHIVE option to the **Additional Options** text box.  
-  
-  
+1.  Add the /WHOLEARCHIVE option to the **Additional Options** text box.
+
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

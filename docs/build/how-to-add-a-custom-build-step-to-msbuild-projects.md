@@ -49,6 +49,6 @@ A custom build step is a user-defined step in a build. A custom build step behav
     ```  
   
 ## See Also  
- [Walkthrough: Using MSBuild to Create a Visual C++ Project](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)   
- [How to: Use Build Events in MSBuild Projects](../build/how-to-use-build-events-in-msbuild-projects.md)   
- [How to: Add Custom Build Tools to MSBuild Projects](../build/how-to-add-custom-build-tools-to-msbuild-projects.md)
+[Walkthrough: Using MSBuild to Create a Visual C++ Project](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)<br/>
+[How to: Use Build Events in MSBuild Projects](../build/how-to-use-build-events-in-msbuild-projects.md)<br/>
+[How to: Add Custom Build Tools to MSBuild Projects](../build/how-to-add-custom-build-tools-to-msbuild-projects.md)

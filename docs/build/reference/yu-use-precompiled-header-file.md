@@ -22,8 +22,8 @@ Instructs the compiler to use an existing precompiled header (.pch) file in the 
 ```  
   
 ## Arguments  
- *filename*  
- The name of a header file, which is included in the source file using an **#include** preprocessor directive.  
+*filename*<br/>
+The name of a header file, which is included in the source file using an **#include** preprocessor directive.  
   
 ## Remarks  
  The name of the include file must be the same for both the **/Yc** option that creates the precompiled header and any subsequent **/Yu** option indicating use of the precompiled header.  
@@ -87,5 +87,5 @@ CL /YuMYAPP.H /FpMYPCH.pch PROG.CPP
  This command specifies a precompiled header file named MYPCH.pch. The compiler uses its contents to restore the precompiled state of all header files up to and including MYAPP.h. The compiler then compiles the code that occurs after the MYAPP.h **include** statement.  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

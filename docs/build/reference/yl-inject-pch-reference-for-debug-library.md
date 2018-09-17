@@ -24,10 +24,10 @@ The **/Yl** option generates a unique symbol in a precompiled header file, and a
 
 ### Arguments
 
-*name*  
+*name*<br/>
 An optional name used as part of the unique symbol.
 
-*\-*  
+*\-*<br/>
 A dash (-) explicitly disables the **/Yl** compiler option.
 
 ## Remarks
@@ -62,5 +62,5 @@ For more information on precompiled headers, see:
 
 ## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)  
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)  

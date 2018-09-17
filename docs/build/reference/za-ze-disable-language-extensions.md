@@ -50,6 +50,6 @@ The **/Za** compiler option emits an error for language constructs that are not 
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DisableLanguageExtensions%2A>.  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
- [/Zc (Conformance)](../../build/reference/zc-conformance.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
+[/Zc (Conformance)](../../build/reference/zc-conformance.md)

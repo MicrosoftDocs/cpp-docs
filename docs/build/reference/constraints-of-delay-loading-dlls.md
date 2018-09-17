@@ -29,11 +29,11 @@ There are constraints regarding the delay loading of imports.
 -   Custom calling conventions (such as using condition codes on x86 architectures) are not supported. Also, the floating-point registers are not saved on any platform. If your custom helper routine or hook routines use floating-point types, they need to completely save and restore the floating-point state on machines with register calling conventions with floating-point parameters. Be careful about delay loading the CRT DLL if you call CRT functions that take floating-point parameters on a numeric data processor (NDP) stack in the help function.  
   
 ## See Also  
- [Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md)   
- [LoadLibrary function](https://msdn.microsoft.com/library/windows/desktop/ms684175.aspx)   
- [GetModuleHandle function](https://msdn.microsoft.com/library/windows/desktop/ms683199.aspx)   
- [GetProcAddress function](https://msdn.microsoft.com/library/windows/desktop/ms683212.aspx)   
- [TlsAlloc function](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc)   
- [TlsFree function](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsfree)   
- [TlsGetValue function](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)   
- [TlsSetValue function](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlssetvalue)
+[Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md)<br/>
+[LoadLibrary function](https://msdn.microsoft.com/library/windows/desktop/ms684175.aspx)<br/>
+[GetModuleHandle function](https://msdn.microsoft.com/library/windows/desktop/ms683199.aspx)<br/>
+[GetProcAddress function](https://msdn.microsoft.com/library/windows/desktop/ms683212.aspx)<br/>
+[TlsAlloc function](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc)<br/>
+[TlsFree function](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsfree)<br/>
+[TlsGetValue function](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)<br/>
+[TlsSetValue function](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlssetvalue)

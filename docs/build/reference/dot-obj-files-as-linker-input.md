@@ -26,9 +26,9 @@ For more information about the compiler and linker, see [Unicode Support in the 
 
 ## See also
 
-[LINK Input Files](../../build/reference/link-input-files.md)  
-[Linker Options](../../build/reference/linker-options.md)  
-[Support for Unicode](../../text/support-for-unicode.md)  
-[Unicode Support in the Compiler and Linker](../../build/reference/unicode-support-in-the-compiler-and-linker.md)  
-[Unicode standard](http://www.unicode.org/)  
+[LINK Input Files](../../build/reference/link-input-files.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)<br/>
+[Support for Unicode](../../text/support-for-unicode.md)<br/>
+[Unicode Support in the Compiler and Linker](../../build/reference/unicode-support-in-the-compiler-and-linker.md)<br/>
+[Unicode standard](http://www.unicode.org/)<br/>
 [PE Format](/windows/desktop/Debug/pe-format)  

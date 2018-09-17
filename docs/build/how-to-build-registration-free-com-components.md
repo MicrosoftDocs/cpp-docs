@@ -27,6 +27,6 @@ Registration-free COM components are COM components that have manifests built in
 5.  Build the solution.  
   
 ## See Also  
- [Isolated Applications](/windows/desktop/SbsCs/isolated-applications)   
- [About Side-by-Side Assemblies](/windows/desktop/SbsCs/about-side-by-side-assemblies-)   
- [How to: Build Isolated Applications to Consume COM Components](../build/how-to-build-isolated-applications-to-consume-com-components.md)
+[Isolated Applications](/windows/desktop/SbsCs/isolated-applications)<br/>
+[About Side-by-Side Assemblies](/windows/desktop/SbsCs/about-side-by-side-assemblies-)<br/>
+[How to: Build Isolated Applications to Consume COM Components](../build/how-to-build-isolated-applications-to-consume-com-components.md)

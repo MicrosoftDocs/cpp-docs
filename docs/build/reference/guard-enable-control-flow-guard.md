@@ -46,5 +46,5 @@ Enable compiler generation of Control Flow Guard security checks.
 4.  In the dropdown control, choose **Yes** to enable Control Flow Guard, or **No** to disable it.  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

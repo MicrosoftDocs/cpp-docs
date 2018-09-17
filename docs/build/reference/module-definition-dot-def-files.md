@@ -43,5 +43,5 @@ Module-definition (.def) files provide the linker with information about exports
 -   [Reserved words](../../build/reference/reserved-words.md)  
   
 ## See Also  
- [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)   
- [Linker Options](../../build/reference/linker-options.md)  
+[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)  

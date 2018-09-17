@@ -25,15 +25,16 @@ Specifies whether User Account Control (UAC) information is embedded in the prog
 /MANIFESTUAC:uiAccess=_uiAccess  
 ```  
   
-#### Parameters  
- `fragment`  
- A string that contains the `level` and `uiAccess` values. For more information, see the Remarks section later in this topic.  
+### Parameters
+
+*fragment*<br/>
+A string that contains the `level` and `uiAccess` values. For more information, see the Remarks section later in this topic.  
   
- `_level`  
- One of *asInvoker*, *highestAvailable*, or *requireAdministrator*. Defaults to asInvoker. For more information, see the Remarks section later in this topic.  
+*_level*<br/>
+One of *asInvoker*, *highestAvailable*, or *requireAdministrator*. Defaults to asInvoker. For more information, see the Remarks section later in this topic.  
   
- `_uiAccess`  
- `true` if you want the application to bypass user interface protection levels and drive input to higher-permission windows on the desktop; otherwise, `false`. Defaults to `false`. Set to `true` only for user interface accessibility applications.  
+*_uiAccess*<br/>
+`true` if you want the application to bypass user interface protection levels and drive input to higher-permission windows on the desktop; otherwise, `false`. Defaults to `false`. Set to `true` only for user interface accessibility applications.  
   
 ## Remarks  
  If you specify multiple /MANIFESTUAC options on the command-line, the last one entered takes precedence.  
@@ -69,5 +70,5 @@ Specifies whether User Account Control (UAC) information is embedded in the prog
 1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EnableUAC%2A>, <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.UACExecutionLevel%2A>, and <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.UACUIAccess%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

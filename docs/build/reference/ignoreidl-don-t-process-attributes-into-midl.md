@@ -35,9 +35,9 @@ ms.workload: ["cplusplus"]
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreEmbeddedIDL%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)   
- [/IDLOUT (Name MIDL Output Files)](../../build/reference/idlout-name-midl-output-files.md)   
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)<br/>
+[/IDLOUT (Name MIDL Output Files)](../../build/reference/idlout-name-midl-output-files.md)   
  [/TLBOUT (Name .TLB File)](../../build/reference/tlbout-name-dot-tlb-file.md)   
  [/MIDL (Specify MIDL Command Line Options)](../../build/reference/midl-specify-midl-command-line-options.md)   
  [Building an Attributed Program](../../windows/building-an-attributed-program.md)

@@ -18,7 +18,7 @@ ms.workload: ["cplusplus"]
   
 ## Parameters  
   
-*filename*  
+*filename*<br/>
 A user-specified name for the import library. It replaces the default name.  
   
 ## Remarks  
@@ -48,5 +48,5 @@ The /IMPLIB option overrides the default name for the import library that LINK c
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ImportLibrary%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

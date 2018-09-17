@@ -24,5 +24,5 @@ EDITBIN [options] files...
  When you type the command `editbin` without any other command-line input, EDITBIN displays a usage statement that summarizes its options.  
   
 ## See Also  
- [C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)   
- [EDITBIN Reference](../../build/reference/editbin-reference.md)
+[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
+[EDITBIN Reference](../../build/reference/editbin-reference.md)

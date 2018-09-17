@@ -22,7 +22,7 @@ Deprecated. Restricts the length of external names.
 
 ## Arguments
 
-*number*  
+*number*<br/>
 Specifies the maximum length of external names allowed in a program.
 
 ## Remarks
@@ -81,5 +81,5 @@ The **/H** option is deprecated since Visual Studio 2005; the maximum length lim
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)   
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

@@ -37,6 +37,6 @@ ms.workload: ["cplusplus"]
 1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ResourceOnlyDLL%2A>.  
   
 ## See Also  
- [Creating a Resource-Only DLL](../../build/creating-a-resource-only-dll.md)   
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Creating a Resource-Only DLL](../../build/creating-a-resource-only-dll.md)<br/>
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

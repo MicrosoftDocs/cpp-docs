@@ -20,8 +20,8 @@ ms.workload: ["cplusplus"]
 ## Remarks  
  where:  
   
- *filename*  
- An MS-DOS application.  
+*filename*<br/>
+An MS-DOS application.  
   
 ## Remarks  
  The /STUB option attaches an MS-DOS stub program to a Win32 program.  
@@ -53,5 +53,5 @@ This program cannot be run in MS-DOS mode.
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

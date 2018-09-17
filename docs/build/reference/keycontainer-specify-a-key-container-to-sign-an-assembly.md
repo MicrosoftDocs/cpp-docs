@@ -20,8 +20,8 @@ ms.workload: ["cplusplus"]
 ## Remarks  
  where,  
   
- *name*  
- Container that contains the key. Place the string in double quotation marks (" ") if it contains a space.  
+*name*<br/>
+Container that contains the key. Place the string in double quotation marks (" ") if it contains a space.  
   
 ## Remarks  
  The linker creates a signed assembly by inserting a public key into the assembly manifest and signing the final assembly with the private key. To generate a key file, type [sn -k](/dotnet/framework/tools/sn-exe-strong-name-tool) *filename* at the command line. **sn -i** installs the key pair into a container.  
@@ -57,5 +57,5 @@ ms.workload: ["cplusplus"]
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

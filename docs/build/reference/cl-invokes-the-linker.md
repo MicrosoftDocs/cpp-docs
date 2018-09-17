@@ -50,5 +50,5 @@ CL MAIN.c MOD1.C MOD2.C MYGRAPH.lib
 3.  In MOD2.obj, the references to `myline` and `mycircle` are resolved using the definitions in MYGRAPH.lib.  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

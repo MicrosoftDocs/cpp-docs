@@ -26,5 +26,5 @@ DUMPBIN [options] files...
  When you type the command `dumpbin` without any other command-line input, DUMPBIN displays a usage statement that summarizes its options.  
   
 ## See Also  
- [C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)   
- [DUMPBIN Reference](../../build/reference/dumpbin-reference.md)
+[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
+[DUMPBIN Reference](../../build/reference/dumpbin-reference.md)

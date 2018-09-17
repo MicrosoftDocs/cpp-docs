@@ -158,6 +158,6 @@ The Visual C++ C compiler is generally compatible with the ISO C99 standard, but
 ## See also
 
 [Walkthrough: Creating a Standard C++ Program (C++)](../windows/walkthrough-creating-a-standard-cpp-program-cpp.md)  
-[C Language Reference](../c-language/c-language-reference.md)  
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)  
+[C Language Reference](../c-language/c-language-reference.md)<br/>
+[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>
 [Compatibility](../c-runtime-library/compatibility.md)  

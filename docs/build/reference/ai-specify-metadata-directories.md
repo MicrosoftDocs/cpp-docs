@@ -42,6 +42,6 @@ Only one directory can be passed to an **/AI** invocation. Specify one **/AI** o
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)   
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
 [#using Directive](../../preprocessor/hash-using-directive-cpp.md)

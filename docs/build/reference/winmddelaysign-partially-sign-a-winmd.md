@@ -32,5 +32,5 @@ Enables partial signing of a Windows Runtime Metadata (.winmd) file by putting t
 4.  In the **Windows Metadata Delay Sign** drop-down list box, select the option you want.  
   
 ## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

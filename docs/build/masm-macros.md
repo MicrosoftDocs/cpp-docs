@@ -27,7 +27,7 @@ In order to simplify the use of the [Raw Pseudo Operations](../build/raw-pseudo-
   
  Here is a sample function prolog with proper usage of the macros:  
   
-```  
+```asm
 SkFrame struct   
 Fill    dq ?; fill to 8 mod 16   
 SavedRdi dq ?; saved register RDI   
@@ -48,13 +48,13 @@ save_reg rsi, sampleFrame.SavedRsi
   
 ; function body  
   
-mov rsi, sampleFrame.SavedRsi[rsp]  
-mov rdi, sampleFrame.SavedRdi[rsp]  
+    mov rsi, sampleFrame.SavedRsi[rsp]  
+    mov rdi, sampleFrame.SavedRdi[rsp]  
   
 ; Here’s the official epilog  
   
-add rsp, (sizeof sampleFrame)  
-ret  
+    add rsp, (sizeof sampleFrame)  
+    ret  
 sample2 ENDP  
 ```  
   
