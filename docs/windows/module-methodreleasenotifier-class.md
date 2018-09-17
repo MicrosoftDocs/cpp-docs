@@ -1,7 +1,7 @@
 ---
 title: "Module::MethodReleaseNotifier Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/17/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::MethodReleaseNotifier", "module/Microsoft::WRL::Module::MethodReleaseNotifier::Invoke", "module/Microsoft::WRL::Module::MethodReleaseNotifier::method_", "module/Microsoft::WRL::Module::MethodReleaseNotifier::MethodReleaseNotifier", "module/Microsoft::WRL::Module::MethodReleaseNotifier::object_"]
