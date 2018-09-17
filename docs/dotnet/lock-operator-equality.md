@@ -24,8 +24,8 @@ template<class T> bool operator==(
 ```  
   
 #### Parameters  
- `t`  
- The object to compare for equality.  
+*t*<br/>
+The object to compare for equality.  
   
 ## Return Value  
  Returns `true` if `t` is the same as the lock's object, `false` otherwise.  

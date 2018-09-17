@@ -25,7 +25,7 @@ class CElementTraits : public CDefaultElementTraits<T>
 
 #### Parameters
 
-`T`  
+*T*<br/>
 The type of data to be stored in the collection.
 
 ## Remarks

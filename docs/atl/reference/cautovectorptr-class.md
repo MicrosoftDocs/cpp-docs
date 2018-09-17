@@ -28,7 +28,7 @@ class CAutoVectorPtr
 
 #### Parameters
 
-`T`  
+*T*<br/>
 The pointer type.
 
 ## Members

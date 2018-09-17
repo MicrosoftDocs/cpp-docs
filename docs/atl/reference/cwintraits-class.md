@@ -50,14 +50,17 @@ Use this template when you want to provide default window styles that will be us
 
 ATL provides three predefined specializations of this template for commonly used combinations of window styles:
 
-`CControlWinTraits`  
-Designed for a standard control window. The following standard styles are used: WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN, and WS_CLIPSIBLINGS. There are no extended styles.
+- `CControlWinTraits`  
 
-`CFrameWinTraits`  
-Designed for a standard frame window. The standard styles used include: WS_OVERLAPPEDWINDOW, WS_CLIPCHILDREN, and WS_CLIPSIBLINGS. The extended styles used include: WS_EX_APPWINDOW and WS_EX_WINDOWEDGE.
+   Designed for a standard control window. The following standard styles are used: WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN, and WS_CLIPSIBLINGS. There are no extended styles.
 
-`CMDIChildWinTraits`  
-Designed for a standard MDI child window. The standard styles used include: WS_OVERLAPPEDWINDOW, WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN, and WS_CLIPSIBLINGS. The extended styles used include: WS_EX_MDICHILD.
+- `CFrameWinTraits`  
+
+   Designed for a standard frame window. The standard styles used include: WS_OVERLAPPEDWINDOW, WS_CLIPCHILDREN, and WS_CLIPSIBLINGS. The extended styles used include: WS_EX_APPWINDOW and WS_EX_WINDOWEDGE.
+
+- `CMDIChildWinTraits`  
+
+   Designed for a standard MDI child window. The standard styles used include: WS_OVERLAPPEDWINDOW, WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN, and WS_CLIPSIBLINGS. The extended styles used include: WS_EX_MDICHILD.
 
 If you want to ensure that certain styles are set for all instances of the window class while permitting other styles to be set on a per-instance basis, use [CWinTraitsOR](../../atl/reference/cwintraitsor-class.md) instead.
 

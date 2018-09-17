@@ -44,8 +44,9 @@ wchar_t *_getws(
 ```  
   
 #### Parameters  
- `buffer`  
- Storage location for input string.  
+
+*buffer*<br/>
+Storage location for input string.  
   
 ## Return Value  
  Returns its argument if successful. A **NULL** pointer indicates an error or end-of-file condition. Use [ferror](../c-runtime-library/reference/ferror.md) or [feof](../c-runtime-library/reference/feof.md) to determine which one has occurred. If `buffer` is **NULL**, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **NULL** and set errno to `EINVAL`.  

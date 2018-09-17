@@ -24,8 +24,8 @@ void reset(
 ```  
   
 #### Parameters  
- `_new_ptr`  
- (Optional) The new object.  
+*_new_ptr*<br/>
+(Optional) The new object.  
   
 ## Example  
   

@@ -25,7 +25,7 @@ class CSimpleArrayEqualHelper
 
 #### Parameters
 
-`T`  
+*T*<br/>
 A derived class.
 
 ## Members

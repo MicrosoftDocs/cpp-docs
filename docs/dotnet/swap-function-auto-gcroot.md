@@ -26,11 +26,11 @@ void swap(
 ```  
   
 #### Parameters  
- `_left`  
- An `auto_gcroot`.  
+*_left*<br/>
+An `auto_gcroot`.  
   
- `_right`  
- Another `auto_gcroot`.  
+*_right*<br/>
+Another `auto_gcroot`.  
   
 ## Example  
   

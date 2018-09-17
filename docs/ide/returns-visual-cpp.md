@@ -22,8 +22,8 @@ The \<returns> tag should be used in the comment for a method declaration to des
 ```  
   
 #### Parameters  
- `description`  
- A description of the return value.  
+*description*<br/>
+A description of the return value.  
   
 ## Remarks  
  Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.  

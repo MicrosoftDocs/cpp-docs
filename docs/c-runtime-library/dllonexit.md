@@ -28,14 +28,14 @@ _onexit_t __dllonexit(   _onexit_t func,
 ```  
   
 #### Parameters  
- `func`  
- Pointer to a function to be executed upon exit.  
+*func*<br/>
+Pointer to a function to be executed upon exit.  
   
- `pbegin`  
- Pointer to a variable that points to the beginning of a list of functions to execute on detach.  
+*pbegin*<br/>
+Pointer to a variable that points to the beginning of a list of functions to execute on detach.  
   
- `pend`  
- Pointer to variable that points to the end of a list of functions to execute on detach.  
+*pend*<br/>
+Pointer to variable that points to the end of a list of functions to execute on detach.  
   
 ## Return Value  
  If successful, a pointer to the user’s function. Otherwise, a **NULL** pointer.  

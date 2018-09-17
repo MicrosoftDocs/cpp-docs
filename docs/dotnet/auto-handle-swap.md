@@ -24,8 +24,8 @@ void swap(
 ```  
   
 #### Parameters  
- `_right`  
- The `auto_handle` with which to swap objects.  
+*_right*<br/>
+The `auto_handle` with which to swap objects.  
   
 ## Example  
   

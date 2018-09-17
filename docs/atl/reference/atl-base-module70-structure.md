@@ -33,28 +33,28 @@ struct _ATL_BASE_MODULE70 {
 
 ## Members
 
-`cbSize`  
+`cbSize`<br/>
 The size of the structure, used for versioning.
 
-`m_hInst`  
+`m_hInst`<br/>
 The `hInstance` for this module (either exe or dll).
 
-`m_hInstResource`  
+`m_hInstResource`<br/>
 Default instance resource handle.
 
-`m_bNT5orWin98`  
+`m_bNT5orWin98`<br/>
 Operating system version information. Used internally by ATL.
 
-`dwAtlBuildVer`  
+`dwAtlBuildVer`<br/>
 Stores the version of ATL. Currently 0x0700.
 
-`pguidVer`  
+`pguidVer`<br/>
 ATL's internal GUID.
 
-`m_csResource`  
+`m_csResource`<br/>
 Used to synchronize access to the `m_rgResourceInstance` array. Used internally by ATL.
 
-`m_rgResourceInstance`  
+`m_rgResourceInstance`<br/>
 Array used to search for resources in all the resource instances of which ATL is aware. Used internally by ATL.
 
 ## Remarks

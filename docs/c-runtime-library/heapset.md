@@ -30,23 +30,18 @@ int _heapset(
 ```  
   
 #### Parameters  
- `fill`  
- Fill character.  
+*fill*<br/>
+Fill character.  
   
 ## Return Value  
  `_heapset` returns one of the following integer manifest constants defined in Malloc.h.  
   
- `_HEAPBADBEGIN`  
- Initial header information invalid or not found.  
-  
- `_HEAPBADNODE`  
- Heap damaged or bad node found.  
-  
- `_HEAPEMPTY`  
- Heap not initialized.  
-  
- `_HEAPOK`  
- Heap appears to be consistent.  
+|||
+|-|-|
+| `_HEAPBADBEGIN`  | Initial header information invalid or not found.  |
+| `_HEAPBADNODE`  | Heap damaged or bad node found.  |
+| `_HEAPEMPTY`  | Heap not initialized.  |
+| `_HEAPOK`  | Heap appears to be consistent.  |
   
  In addition, if an error occurs, `_heapset` sets `errno` to `ENOSYS`.  
   
