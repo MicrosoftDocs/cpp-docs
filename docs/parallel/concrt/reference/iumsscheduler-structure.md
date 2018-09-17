@@ -54,8 +54,8 @@ virtual void SetCompletionList(_Inout_ IUMSCompletionList* pCompletionList) = 0;
 ```  
   
 ### Parameters  
- `pCompletionList`  
- The completion list interface for the scheduler. There is a single list per scheduler.  
+*pCompletionList*<br/>
+The completion list interface for the scheduler. There is a single list per scheduler.  
   
 ### Remarks  
  The Resource Manager will invoke this method on a scheduler that specifies it wants UMS threads, after the scheduler has requested an initial allocation of resources. The scheduler can use the `IUMSCompletionList` interface to determine when UMS thread proxies have unblocked. It is only valid to access this interface from a thread proxy running on a virtual processor root assigned to the UMS scheduler.  

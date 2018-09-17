@@ -24,15 +24,11 @@ class CMapStringToPtr : public CObject
 ## Members  
  The member functions of `CMapStringToPtr` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a function parameter or return value, substitute a pointer to **void**.  
   
- `BOOL CMapStringToOb::Lookup( const char* <key>,`  
-  
- `CObject*& <rValue> ) const;`  
+ `BOOL CMapStringToOb::Lookup( const char* <key>, CObject*& <rValue> ) const;`  
   
  for example, translates to  
   
- `BOOL CMapStringToPtr::Lookup( LPCTSTR <key>, void*& <rValue> )`  
-  
- `const;`  
+ `BOOL CMapStringToPtr::Lookup( LPCTSTR <key>, void*& <rValue> ) const;`  
   
 ### Public Constructors  
   

@@ -83,8 +83,11 @@ explicit scheduler_ptr(_In_opt_ scheduler_interface* pScheduler);
 ```  
   
 ### Parameters  
- `scheduler`  
- `pScheduler`  
+*scheduler*<br/>
+The scheduler to convert.
+
+*pScheduler*<br/>
+The scheduler pointer to convert.
   
 ## See Also  
  [concurrency Namespace](concurrency-namespace.md)

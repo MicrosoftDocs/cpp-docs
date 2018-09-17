@@ -15,23 +15,17 @@ ms.workload: ["cplusplus"]
 # TOOLTIPTEXT Structure
 In writing your [tool tip notification handler](../mfc/handling-ttn-needtext-notification-for-tool-tips.md), you need to use the **TOOLTIPTEXT** structure. The members of the **TOOLTIPTEXT** structure are:  
   
- `typedef struct {`  
-  
- `NMHDR     hdr;        // required for all WM_NOTIFY messages`  
-  
- `LPTSTR    lpszText;   // see below`  
-  
- `TCHAR     szText[80]; // buffer for tool tip text`  
-  
- `HINSTANCE hinst;      // see below`  
-  
- `UINT      uflags;     // flag indicating how to interpret the`  
-  
- `// idFrom member of the NMHDR structure`  
-  
- `// that is included in the structure`  
-  
- `} TOOLTIPTEXT, FAR *LPTOOLTIPTEXT;`  
+```cpp
+typedef struct {
+    NMHDR     hdr;        // required for all WM_NOTIFY messages
+    LPTSTR    lpszText;   // see below
+    TCHAR     szText[80]; // buffer for tool tip text
+    HINSTANCE hinst;      // see below
+    UINT      uflags;     // flag indicating how to interpret the
+                          // idFrom member of the NMHDR structure
+                          // that is included in the structure
+} TOOLTIPTEXT, FAR *LPTOOLTIPTEXT;
+```
   
  *hdr*  
  Identifies the tool that needs text. The only member of this structure you might need is the control's command ID. The control's command ID will be in the *idFrom* member of the **NMHDR** structure, accessed with the syntax `hdr.idFrom`. See [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) for a discussion of members of the **NMHDR** structure.  
@@ -45,7 +39,7 @@ In writing your [tool tip notification handler](../mfc/handling-ttn-needtext-not
  *hinst*  
  Handle of the instance that contains a string to be used as the tool tip text. If *lpszText* is the address of the tool tip text, this member is NULL.  
   
- When you handle the `TTN_NEEDTEXT` notification message, specify the string to be displayed in one of the following ways:  
+When you handle the `TTN_NEEDTEXT` notification message, specify the string to be displayed in one of the following ways:  
   
 -   Copy the text to the buffer specified by the *szText* member.  
   

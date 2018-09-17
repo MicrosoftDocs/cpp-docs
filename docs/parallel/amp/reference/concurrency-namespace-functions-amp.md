@@ -29,8 +29,8 @@ inline void all_memory_fence(const tile_barrier& _Barrier) restrict(amp);
 ```  
   
 ### Parameters  
- `_Barrier`  
- A `tile_barrier` object.  
+*_Barrier*<br/>
+A `tile_barrier` object.  
   
 ##  <a name="amp_uninitialize"></a>  amp_uninitialize  
  Uninitializes the C++ AMP runtime. It is legal to call this function multiple times during an applications lifetime. Calling any C++ AMP API afer calling this function will reinitialize the C++ AMP runtime. Note that it is illegal to use C++ AMP objects across calls to this function and doing so will result in undefined behavior. Also, concurrently calling this function and any other AMP APIs is illegal and would result in undefined behavior.  
@@ -58,14 +58,14 @@ inline bool atomic_compare_exchange(
 ```  
   
 ### Parameters  
- `_Dest`  
- The location from which one of the values to be compared is read, and to which the new value, if any, is to be stored.  
+*_Dest*<br/>
+The location from which one of the values to be compared is read, and to which the new value, if any, is to be stored.  
   
- `_Expected_value`  
- The location from which the second value to be compared is read.  
+*_Expected_value*<br/>
+The location from which the second value to be compared is read.  
   
- `value`  
- The value to be stored to the memory location specified in by `_Dest` if `_Dest` is equal to `_Expected_value`.  
+*value*<br/>
+The value to be stored to the memory location specified in by `_Dest` if `_Dest` is equal to `_Expected_value`.  
   
 ### Return Value  
  `true` if the operation is successful; otherwise, `false`.  
@@ -94,11 +94,11 @@ inline float atomic_exchange(
 ```  
   
 ### Parameters  
- `_Dest`  
- Pointer to the destionation location.  
+*_Dest*<br/>
+Pointer to the destionation location.  
   
- `value`  
- The new value.  
+*value*<br/>
+The new value.  
   
 ### Return Value  
  The original value of the destination location.  
@@ -121,11 +121,11 @@ inline unsigned int atomic_fetch_add(
 ```  
   
 ### Parameters  
- `_Dest`  
- Pointer to the memory location.  
+*_Dest*<br/>
+Pointer to the memory location.  
   
- `value`  
- The value to be added.  
+*value*<br/>
+The value to be added.  
   
 ### Return Value  
  The original value of the memory location.  
@@ -147,11 +147,11 @@ inline unsigned int atomic_fetch_and(
 ```  
   
 ### Parameters  
- `_Dest`  
- Pointer to the memory location.  
+*_Dest*<br/>
+Pointer to the memory location.  
   
- `value`  
- The value to use in the bitwise AND calculation.  
+*value*<br/>
+The value to use in the bitwise AND calculation.  
   
 ### Return Value  
  The original value of the memory location.  
@@ -168,8 +168,8 @@ inline unsigned int atomic_fetch_dec(_Inout_ unsigned int* _Dest) restrict(amp);
 ```  
   
 ### Parameters  
- `_Dest`  
- The location in memory of the value to be decremented.  
+*_Dest*<br/>
+The location in memory of the value to be decremented.  
   
 ### Return Value  
  The original value stored at the memory location.  
@@ -185,8 +185,8 @@ inline unsigned int atomic_fetch_inc(_Inout_ unsigned int* _Dest) restrict(amp);
 ```  
   
 ### Parameters  
- `_Dest`  
- The location in memory of the value to be incremented.  
+*_Dest*<br/>
+The location in memory of the value to be incremented.  
   
 ### Return Value  
  The original value stored at the memory location.  
@@ -208,11 +208,11 @@ inline unsigned int atomic_fetch_max(
 ```  
   
 ### Parameters  
- `_Dest`  
- The location from which one of the values to be compared is read, and to which the maximum of the two values is to be stored.  
+*_Dest*<br/>
+The location from which one of the values to be compared is read, and to which the maximum of the two values is to be stored.  
   
- `value`  
- The value to be compared to the value at the specified location.  
+*value*<br/>
+The value to be compared to the value at the specified location.  
   
 ### Return Value  
  The original value stored at the specified location location.  
@@ -234,11 +234,11 @@ inline unsigned int atomic_fetch_min(
 ```  
   
 ### Parameters  
- `_Dest`  
- The location from which one of the values to be compared is read, and to which the minimum of the two values is to be stored.  
+*_Dest*<br/>
+The location from which one of the values to be compared is read, and to which the minimum of the two values is to be stored.  
   
- `value`  
- The value to be compared to the value at the specified location.  
+*value*<br/>
+The value to be compared to the value at the specified location.  
   
 ### Return Value  
  The original value stored at the specified location location.  
@@ -260,11 +260,11 @@ inline unsigned int atomic_fetch_or(
 ```  
   
 ### Parameters  
- `_Dest`  
- Pointer to the memory location.  
+*_Dest*<br/>
+Pointer to the memory location.  
   
- `value`  
- The value to use in the bitwise OR calculation.  
+*value*<br/>
+The value to use in the bitwise OR calculation.  
   
 ### Return Value  
  The original value of the memory location.  
@@ -286,11 +286,11 @@ inline unsigned int atomic_fetch_sub(
 ```  
   
 ### Parameters  
- `_Dest`  
- Pointer to the destionation location.  
+*_Dest*<br/>
+Pointer to the destionation location.  
   
- `value`  
- The value to be subtracted.  
+*value*<br/>
+The value to be subtracted.  
   
 ### Return Value  
  The original value of the memory location.  
@@ -312,11 +312,11 @@ inline unsigned int atomic_fetch_xor(
 ```  
   
 ### Parameters  
- `_Dest`  
- Pointer to the memory location.  
+*_Dest*<br/>
+Pointer to the memory location.  
   
- `value`  
- The value to use in the XOR calculation.  
+*value*<br/>
+The value to use in the XOR calculation.  
   
 ### Return Value  
  The original value of the memory location.  
@@ -400,32 +400,32 @@ void copy(
 ```  
   
 ### Parameters  
- `_Dest`  
- The object to copy to.  
+*_Dest*<br/>
+The object to copy to.  
   
- `_DestIter`  
- An output iterator to the beginning position at destination.  
+*_DestIter*<br/>
+An output iterator to the beginning position at destination.  
   
- `InputIterator`  
- The type of the input interator.  
+*InputIterator*<br/>
+The type of the input interator.  
   
- `OutputIterator`  
- The type of the output iterator.  
+*OutputIterator*<br/>
+The type of the output iterator.  
   
- `_Rank`  
- The rank of the object to copy from or the object to copy to.  
+*_Rank*<br/>
+The rank of the object to copy from or the object to copy to.  
   
- `_Src`  
- To object to copy.  
+*_Src*<br/>
+To object to copy.  
   
- `_SrcFirst`  
- A beginning iterator into the source container.  
+*_SrcFirst*<br/>
+A beginning iterator into the source container.  
   
- `_SrcLast`  
- An ending iterator into the source container.  
+*_SrcLast*<br/>
+An ending iterator into the source container.  
   
- `value_type`  
- The data type of the elements that are copied.  
+*value_type*<br/>
+The data type of the elements that are copied.  
   
 ##  <a name="copy_async"></a>  copy_async  
  Copies a C++ AMP object and returns a [completion_future](completion-future-class.md) object that can be waited on. You can't copy data when running code on an accelerator.  The general form of this function is `copy(src, dest)`.  
@@ -498,32 +498,32 @@ concurrency::completion_future copy_async(
 ```  
   
 ### Parameters  
- `_Dest`  
- The object to copy to.  
+*_Dest*<br/>
+The object to copy to.  
   
- `_DestIter`  
- An output iterator to the beginning position at destination.  
+*_DestIter*<br/>
+An output iterator to the beginning position at destination.  
   
- `InputIterator`  
- The type of the input interator.  
+*InputIterator*<br/>
+The type of the input interator.  
   
- `OutputIterator`  
- The type of the output iterator.  
+*OutputIterator*<br/>
+The type of the output iterator.  
   
- `_Rank`  
- The rank of the object to copy from or the object to copy to.  
+*_Rank*<br/>
+The rank of the object to copy from or the object to copy to.  
   
- `_Src`  
- To object to copy.  
+*_Src*<br/>
+To object to copy.  
   
- `_SrcFirst`  
- A beginning iterator into the source container.  
+*_SrcFirst*<br/>
+A beginning iterator into the source container.  
   
- `_SrcLast`  
- An ending iterator into the source container.  
+*_SrcLast*<br/>
+An ending iterator into the source container.  
   
- `value_type`  
- The data type of the elements that are copied.  
+*value_type*<br/>
+The data type of the elements that are copied.  
   
 ### Return Value  
  A `future<void>` that can be waited on.  
@@ -561,8 +561,8 @@ inline void global_memory_fence(const tile_barrier& _Barrier) restrict(amp);
 ```  
   
 ### Parameters  
- `_Barrier`  
- A tile_barrier object  
+*_Barrier*<br/>
+A tile_barrier object  
   
 ##  <a name="parallel_for_each"></a>  parallel_for_each Function (C++ AMP)  
  Runs a function across the compute domain. For more information, see [C++ AMP Overview](../../../parallel/amp/cpp-amp-overview.md).  
@@ -621,29 +621,29 @@ void parallel_for_each(
 ```  
   
 ### Parameters  
- `_Accl_view`  
- The `accelerator_view` object to run the parallel computation on.  
+*_Accl_view*<br/>
+The `accelerator_view` object to run the parallel computation on.  
   
- `_Compute_domain`  
- An `extent` object that contains the data for the computation.  
+*_Compute_domain*<br/>
+An `extent` object that contains the data for the computation.  
   
- `_Dim0`  
- The dimension of the `tiled_extent` object.  
+*_Dim0*<br/>
+The dimension of the `tiled_extent` object.  
   
- `_Dim1`  
- The dimension of the `tiled_extent` object.  
+*_Dim1*<br/>
+The dimension of the `tiled_extent` object.  
   
- `_Dim2`  
- The dimension of the `tiled_extent` object.  
+*_Dim2*<br/>
+The dimension of the `tiled_extent` object.  
   
- `_Kernel`  
- A lambda or function object that takes an argument of type "index\<_Rank>" and performs the parallel computation.  
+*_Kernel*<br/>
+A lambda or function object that takes an argument of type "index\<_Rank>" and performs the parallel computation.  
   
- `_Kernel_type`  
- A lambda or functor.  
+*_Kernel_type*<br/>
+A lambda or functor.  
   
- `_Rank`  
- The rank of the extent.  
+*_Rank*<br/>
+The rank of the extent.  
   
 ##  <a name="tile_static_memory_fence"></a>  tile_static_memory_fence  
  Blocks execution of all threads in a tile until all outstanding `tile_static` memory accesses have been completed. This ensures that `tile_static` memory accesses are visible to other threads in the thread tile, and that accesses are executed in program order.  
@@ -653,8 +653,8 @@ inline void tile_static_memory_fence(const tile_barrier& _Barrier) restrict(amp)
 ```  
   
 ### Parameters  
- `_Barrier`  
- A tile_barrier object.  
+*_Barrier*<br/>
+A tile_barrier object.  
   
 ## See Also  
  [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

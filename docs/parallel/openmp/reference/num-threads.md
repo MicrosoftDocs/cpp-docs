@@ -21,11 +21,10 @@ Sets the number of threads in a thread team.
 num_threads(num)  
 ```  
   
-## Remarks  
- where,  
+### Parameters
   
- `num`  
- The number of threads  
+*num*<br/>
+The number of threads  
   
 ## Remarks  
  The `num_threads` clause has the same functionality as the [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) function.  

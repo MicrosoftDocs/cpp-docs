@@ -99,11 +99,11 @@ This note describes the MFC [CSplitterWnd Class](../mfc/reference/csplitterwnd-c
   
 - `virtual void OnInvertTracker(const CRect& rect);`  
   
- You call this function to create a shared scroll bar control. You can override it to create extra controls next to the scroll bar.  
+You call this function to create a shared scroll bar control. You can override it to create extra controls next to the scroll bar.  
   
 - `virtual BOOL CreateScrollBarCtrl(DWORD dwStyle, UINT nID);`  
   
- These functions implement the logic of the dynamic splitter window. You can override these to provide more advanced splitter logic.  
+These functions implement the logic of the dynamic splitter window. You can override these to provide more advanced splitter logic.  
   
 - `virtual void DeleteView(int row, int col);`  
   
@@ -118,14 +118,17 @@ This note describes the MFC [CSplitterWnd Class](../mfc/reference/csplitterwnd-c
 ## CView Functionality  
  The `CView` class uses the following high level commands to delegate to the `CSplitterWnd` implementation. Because these commands are virtual, the standard `CView` implementation will not require the entire `CSplitterWnd` implementation to be linked in. For applications that use `CView` but not `CSplitterWnd`, the `CSplitterWnd` implementation will not be linked with the application.  
   
- `virtual BOOL CanActivateNext(BOOL bPrev = FALSE);`  
- Checks whether ID_NEXT_PANE or ID_PREV_PANE is currently possible.  
+- `virtual BOOL CanActivateNext(BOOL bPrev = FALSE);`  
+
+   Checks whether ID_NEXT_PANE or ID_PREV_PANE is currently possible.  
   
- `virtual void ActivateNext(BOOL bPrev = FALSE);`  
- Executes the "Next Pane" or "Previous Pane" command.  
+- `virtual void ActivateNext(BOOL bPrev = FALSE);`  
+
+   Executes the "Next Pane" or "Previous Pane" command.  
   
- `virtual BOOL DoKeyboardSplit();`  
- Executes the keyboard split command, usually "Window Split".  
+- `virtual BOOL DoKeyboardSplit();`  
+
+   Executes the keyboard split command, usually "Window Split".  
   
 ## See Also  
  [Technical Notes by Number](../mfc/technical-notes-by-number.md)   

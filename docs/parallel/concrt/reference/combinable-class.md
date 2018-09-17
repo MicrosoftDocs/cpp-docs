@@ -23,8 +23,8 @@ class combinable;
 ```  
   
 #### Parameters  
- `T`  
- The data type of the final merged result. The type must have a copy constructor and a default constructor.  
+*T*<br/>
+The data type of the final merged result. The type must have a copy constructor and a default constructor.  
   
 ## Members  
   
@@ -83,14 +83,14 @@ combinable(const combinable& _Copy);
 ```  
   
 ### Parameters  
- `_Function`  
- The type of the initialization functor object.  
+*_Function*<br/>
+The type of the initialization functor object.  
   
- `_FnInitialize`  
- A function which will be called to initialize each new thread-private value of the type `T`. It must support a function call operator with the signature `T ()`.  
+*_FnInitialize*<br/>
+A function which will be called to initialize each new thread-private value of the type `T`. It must support a function call operator with the signature `T ()`.  
   
- `_Copy`  
- An existing `combinable` object to be copied into this one.  
+*_Copy*<br/>
+An existing `combinable` object to be copied into this one.  
   
 ### Remarks  
  The first constructor initializes new elements with the default constructor for the type `T`.  
@@ -117,11 +117,11 @@ T combine(_Function _FnCombine) const;
 ```  
   
 ### Parameters  
- `_Function`  
- The type of the function object that will be invoked to combine two thread-local sub-computations.  
+*_Function*<br/>
+The type of the function object that will be invoked to combine two thread-local sub-computations.  
   
- `_FnCombine`  
- The functor that is used to combine the sub-computations. Its signature is `T (T, T)` or `T (const T&, const T&)`, and it must be associative and commutative.  
+*_FnCombine*<br/>
+The functor that is used to combine the sub-computations. Its signature is `T (T, T)` or `T (const T&, const T&)`, and it must be associative and commutative.  
   
 ### Return Value  
  The final result of combining all the thread-private sub-computations.  
@@ -136,11 +136,11 @@ void combine_each(_Function _FnCombine) const;
 ```  
   
 ### Parameters  
- `_Function`  
- The type of the function object that will be invoked to combine a single thread-local sub-computation.  
+*_Function*<br/>
+The type of the function object that will be invoked to combine a single thread-local sub-computation.  
   
- `_FnCombine`  
- The functor that is used to combine one sub-computation. Its signature is `void (T)` or `void (const T&)`, and must be associative and commutative.  
+*_FnCombine*<br/>
+The functor that is used to combine one sub-computation. Its signature is `void (T)` or `void (const T&)`, and must be associative and commutative.  
   
 ##  <a name="local"></a> local 
 
@@ -153,8 +153,8 @@ T& local(bool& _Exists);
 ```  
   
 ### Parameters  
- `_Exists`  
- A reference to a boolean. The boolean value referenced by this argument will be set to `true` if the sub-computation already existed on this thread, and set to `false` if this was the first sub-computation on this thread.  
+*_Exists*<br/>
+A reference to a boolean. The boolean value referenced by this argument will be set to `true` if the sub-computation already existed on this thread, and set to `false` if this was the first sub-computation on this thread.  
   
 ### Return Value  
  A reference to the thread-private sub-computation.  
@@ -168,8 +168,8 @@ combinable& operator= (const combinable& _Copy);
 ```  
   
 ### Parameters  
- `_Copy`  
- An existing `combinable` object to be copied into this one.  
+*_Copy*<br/>
+An existing `combinable` object to be copied into this one.  
   
 ### Return Value  
  A reference to this `combinable` object.  

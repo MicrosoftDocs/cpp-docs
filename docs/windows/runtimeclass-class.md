@@ -35,7 +35,7 @@ The list of interfaces the object implements beyond `IUnknown`, `IInspectable` o
 
 ## Members
 
-`RuntimeClassInitialize`
+`RuntimeClassInitialize`<br/>
 A function which initializes the object if the `MakeAndInitialize` template function is used to construct the object. It returns S_OK if the object was successfully initialized, or a COM error code if initialization failed. The COM error code is propagated as the return value of `MakeAndInitialize`. Note that the `RuntimeClassInitialize` method is not called if the `Make` template function is used to construct the object.
 
 ### Public Constructors

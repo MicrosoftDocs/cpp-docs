@@ -21,14 +21,13 @@ Specifies that one or more variables that are private to each thread are the sub
 reduction(operation:var)  
 ```  
   
-## Remarks  
- where,  
+### Parameters
   
- `operation`  
- The operator for the operation to perform on the variables (`var`) at the end of the parallel region.  
+*operation*<br/>
+The operator for the operation to perform on the variables (`var`) at the end of the parallel region.  
   
- `var`  
- One or more variables on which to perform scalar reduction. If more than one variable is specified, separate variable names with a comma.  
+*var*<br/>
+One or more variables on which to perform scalar reduction. If more than one variable is specified, separate variable names with a comma.  
   
 ## Remarks  
  `reduction` applies to the following directives:  

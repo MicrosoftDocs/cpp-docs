@@ -31,15 +31,15 @@ auto_gcroot<_element_type> & operator=(
 ```  
   
 #### Parameters  
- `_right`  
- The object or `auto_gcroot` to be assigned to the current `auto_gcroot`.  
+*_right*<br/>
+The object or `auto_gcroot` to be assigned to the current `auto_gcroot`.  
   
 ## Return Value  
  The current `auto_gcroot`, now owning `_right`.  
   
 ## Example  
   
-```  
+```cpp  
 // msl_auto_gcroot_operator_equals.cpp  
 // compile with: /clr  
 #include <msclr\auto_gcroot.h>  

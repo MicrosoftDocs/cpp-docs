@@ -98,8 +98,8 @@ virtual void Remove(_Inout_ IScheduler* pScheduler) = 0;
 ```  
   
 ### Parameters  
- `pScheduler`  
- An interface to the scheduler making the request to remove this execution resource.  
+*pScheduler*<br/>
+An interface to the scheduler making the request to remove this execution resource.  
   
 ### Remarks  
  Use this method to return standalone execution resources as well as execution resources associated with virtual processor roots to the Resource Manager.  

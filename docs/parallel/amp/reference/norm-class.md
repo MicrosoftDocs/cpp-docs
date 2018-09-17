@@ -91,11 +91,11 @@ norm(
 ```  
   
 ### Parameters  
- `_V`  
- The value used to initialize.  
+*_V*<br/>
+The value used to initialize.  
   
- `_Other`  
- The object used to initialize.  
+*_Other*<br/>
+The object used to initialize.  
   
 ## See Also  
  [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

@@ -119,11 +119,11 @@ accelerator(const accelerator& _Other);
 ```  
   
 ### Parameters  
- `_Device_path`  
- The path of the physical device.  
+*_Device_path*<br/>
+The path of the physical device.  
   
- `_Other`  
- The accelerator to copy.  
+*_Other*<br/>
+The accelerator to copy.  
   
 ##  <a name="cpu_accelerator"></a> cpu_accelerator 
 
@@ -142,8 +142,8 @@ accelerator_view create_view(queuing_mode qmode = queuing_mode_automatic);
 ```  
   
 ### Parameters  
- `qmode`  
- The queuing mode.  
+*qmode*<br/>
+The queuing mode.  
   
 ### Return Value  
  A new `accelerator_view` object on this accelerator, using the specified queuing mode.  
@@ -425,8 +425,8 @@ bool operator!= (const accelerator& _Other) const;
 ```  
   
 ### Parameters  
- `_Other`  
- The `accelerator` object to compare with this one.  
+*_Other*<br/>
+The `accelerator` object to compare with this one.  
   
 ### Return Value  
  `false` if the two `accelerator` objects are the same; otherwise, `true`.  
@@ -440,8 +440,8 @@ accelerator& operator= (const accelerator& _Other);
 ```  
   
 ### Parameters  
- `_Other`  
- The `accelerator` object to copy from.  
+*_Other*<br/>
+The `accelerator` object to copy from.  
   
 ### Return Value  
  A reference to this `accelerator` object.  
@@ -457,8 +457,8 @@ bool operator== (const accelerator& _Other) const;
 ```  
   
 ### Parameters  
- `_Other`  
- The `accelerator` object to compare with this one.  
+*_Other*<br/>
+The `accelerator` object to compare with this one.  
   
 ### Return Value  
  `true` if the other `accelerator` object is same as this `accelerator` object; otherwise, `false`.  
@@ -472,8 +472,8 @@ static inline bool set_default(std::wstring _Path);
 ```  
   
 ### Parameters  
- `_Path`  
- The path to the accelerator.  
+*_Path*<br/>
+The path to the accelerator.  
   
 ### Return Value  
  `true` if the call succeeds at setting the default accelerator. Otherwise, `false`.  
@@ -487,8 +487,8 @@ bool set_default_cpu_access_type(access_type _Default_cpu_access_type);
 ```  
   
 ### Parameters  
- `_Default_cpu_access_type`  
- The default cpu access_type to be used for array/array_view memory allocations on this accelerator.  
+*_Default_cpu_access_type*<br/>
+The default cpu access_type to be used for array/array_view memory allocations on this accelerator.  
   
 ### Return Value  
  A boolean value indicating if the default cpu access_type for the accelerator was successfully set.  
@@ -552,8 +552,8 @@ accelerator_view(const accelerator_view& _Other);
 ```  
   
 ### Parameters  
- `_Other`  
- The `accelerator_view` object to copy.  
+*_Other*<br/>
+The `accelerator_view` object to copy.  
   
 ##  <a name="create_marker"></a> create_marker 
 
@@ -669,8 +669,8 @@ bool operator!= (const accelerator_view& _Other) const;
 ```  
   
 ### Parameters  
- `_Other`  
- The `accelerator_view` object to compare with this one.  
+*_Other*<br/>
+The `accelerator_view` object to compare with this one.  
   
 ### Return Value  
  `false` if the two objects are the same; otherwise, `true`.  
@@ -684,8 +684,8 @@ accelerator_view& operator= (const accelerator_view& _Other);
 ```  
   
 ### Parameters  
- `_Other`  
- The `accelerator_view` object to copy from.  
+*_Other*<br/>
+The `accelerator_view` object to copy from.  
   
 ### Return Value  
  A reference to the modified `accelerator_view` object.  
@@ -701,8 +701,8 @@ bool operator== (const accelerator_view& _Other) const;
 ```  
   
 ### Parameters  
- `_Other`  
- The `accelerator_view` object to compare with this one.  
+*_Other*<br/>
+The `accelerator_view` object to compare with this one.  
   
 ### Return Value  
  `true` if the two objects are the same; otherwise, `false`.  

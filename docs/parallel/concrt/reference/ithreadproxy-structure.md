@@ -61,8 +61,8 @@ virtual void SwitchOut(SwitchingProxyState switchState = Blocking) = 0;
 ```  
   
 ### Parameters  
- `switchState`  
- Indicates the state of the thread proxy that is executing the switch. The parameter is of type `SwitchingProxyState`.  
+*switchState*<br/>
+Indicates the state of the thread proxy that is executing the switch. The parameter is of type `SwitchingProxyState`.  
   
 ### Remarks  
  Use `SwitchOut` if you need to disassociate a context from the virtual processor root it is executing on, for any reason. Depending on the value you pass in to the parameter `switchState`, and whether or not it is executing on a virtual processor root, the call will either return immediately or block the thread proxy associated with the context. It is an error to call `SwitchOut` with the parameter set to `Idle`. Doing so will result in an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception.  
@@ -87,11 +87,11 @@ virtual void SwitchTo(
 ```  
   
 ### Parameters  
- `pContext`  
- The execution context to cooperatively switch to.  
+*pContext*<br/>
+The execution context to cooperatively switch to.  
   
- `switchState`  
- Indicates the state of the thread proxy that is executing the switch. The parameter is of type `SwitchingProxyState`.  
+*switchState*<br/>
+Indicates the state of the thread proxy that is executing the switch. The parameter is of type `SwitchingProxyState`.  
   
 ### Remarks  
  Use this method to switch from one execution context to another, from the [IExecutionContext::Dispatch](iexecutioncontext-structure.md#dispatch) method of the first execution context. The method associates the execution context `pContext` with a thread proxy if it is not already associated with one. The ownership of the current thread proxy is determined by the value you specify for the `switchState` argument.  

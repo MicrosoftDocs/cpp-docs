@@ -23,11 +23,11 @@ class concurrent_queue: public ::Concurrency::details::_Concurrent_queue_base_v4
 ```  
   
 #### Parameters  
- `T`  
- The data type of the elements to be stored in the queue.  
+*T*<br/>
+The data type of the elements to be stored in the queue.  
   
- `_Ax`  
- The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for this concurrent queue. This argument is optional and the default value is `allocator<T>`.  
+*_Ax*<br/>
+The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for this concurrent queue. This argument is optional and the default value is `allocator<T>`.  
   
 ## Members  
   
@@ -105,20 +105,20 @@ concurrent_queue(_InputIterator _Begin,
 ```  
   
 ### Parameters  
- `_InputIterator`  
- The type of the input iterator that specifies a range of values.  
+*_InputIterator*<br/>
+The type of the input iterator that specifies a range of values.  
   
- `_Al`  
- The allocator class to use with this object.  
+*_Al*<br/>
+The allocator class to use with this object.  
   
- `_OtherQ`  
- The source `concurrent_queue` object to copy or move elements from.  
+*_OtherQ*<br/>
+The source `concurrent_queue` object to copy or move elements from.  
   
- `_Begin`  
- Position of the first element in the range of elements to be copied.  
+*_Begin*<br/>
+Position of the first element in the range of elements to be copied.  
   
- `_End`  
- Position of the first element beyond the range of elements to be copied.  
+*_End*<br/>
+Position of the first element beyond the range of elements to be copied.  
   
 ### Remarks  
  All constructors store an allocator object `_Al` and initialize the queue.  
@@ -175,8 +175,8 @@ void push(T&& _Src);
 ```  
   
 ### Parameters  
- `_Src`  
- The item to be added to the queue.  
+*_Src*<br/>
+The item to be added to the queue.  
   
 ### Remarks  
  `push` is concurrency-safe with respect to calls to the methods `push`, `try_pop`, and `empty`.  
@@ -190,8 +190,8 @@ bool try_pop(T& _Dest);
 ```  
   
 ### Parameters  
- `_Dest`  
- A reference to a location to store the dequeued item.  
+*_Dest*<br/>
+A reference to a location to store the dequeued item.  
   
 ### Return Value  
  `true` if an item was successfully dequeued, `false` otherwise.  

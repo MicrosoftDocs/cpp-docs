@@ -27,17 +27,17 @@ typedef struct tagRECT {
 ```  
   
 ## Members  
- `left`  
- Specifies the x-coordinate of the upper-left corner of a rectangle.  
+`left`<br/>
+Specifies the x-coordinate of the upper-left corner of a rectangle.  
   
- `top`  
- Specifies the y-coordinate of the upper-left corner of a rectangle.  
+`top`<br/>
+Specifies the y-coordinate of the upper-left corner of a rectangle.  
   
- `right`  
- Specifies the x-coordinate of the lower-right corner of a rectangle.  
+`right`<br/>
+Specifies the x-coordinate of the lower-right corner of a rectangle.  
   
- `bottom`  
- Specifies the y-coordinate of the lower-right corner of a rectangle.  
+`bottom`<br/>
+Specifies the y-coordinate of the lower-right corner of a rectangle.  
   
 ## Example  
  [!code-cpp[NVC_MFC_Utilities#38](../../mfc/codesnippet/cpp/rect-structure1_1.cpp)]  

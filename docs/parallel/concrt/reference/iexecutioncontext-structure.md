@@ -52,8 +52,8 @@ virtual void Dispatch(_Inout_ DispatchState* pDispatchState) = 0;
 ```  
   
 ### Parameters  
- `pDispatchState`  
- A pointer to the state under which this execution context is being dispatched. For more information on dispatch state, see [DispatchState](dispatchstate-structure.md).  
+*pDispatchState*<br/>
+A pointer to the state under which this execution context is being dispatched. For more information on dispatch state, see [DispatchState](dispatchstate-structure.md).  
   
 ##  <a name="getid"></a>  IExecutionContext::GetId Method  
  Returns a unique identifier for the execution context.  
@@ -104,8 +104,8 @@ virtual void SetProxy(_Inout_ IThreadProxy* pThreadProxy) = 0;
 ```  
   
 ### Parameters  
- `pThreadProxy`  
- An interface to the thread proxy that is about to enter the `Dispatch` method on this execution context.  
+*pThreadProxy*<br/>
+An interface to the thread proxy that is about to enter the `Dispatch` method on this execution context.  
   
 ### Remarks  
  You are expected to save the parameter `pThreadProxy` and return it on a call to the `GetProxy` method. The Resource Manager guarantees that the thread proxy associated with the execution context will not change while the thread proxy is executing the `Dispatch` method.  

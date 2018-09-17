@@ -23,8 +23,8 @@ class progress_reporter;
 ```  
   
 #### Parameters  
- `_ProgressType`  
- The payload type of each progress notification reported through the progress reporter.  
+*_ProgressType*<br/>
+The payload type of each progress notification reported through the progress reporter.  
   
 ## Members  
   
@@ -66,8 +66,8 @@ void report(const _ProgressType& val) const;
 ```  
   
 ### Parameters  
- `val`  
- The payload to report through a progress notification.  
+*val*<br/>
+The payload to report through a progress notification.  
   
 ## See Also  
  [concurrency Namespace](concurrency-namespace.md)

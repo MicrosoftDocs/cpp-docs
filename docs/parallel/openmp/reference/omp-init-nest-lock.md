@@ -23,11 +23,10 @@ void omp_init_nest_lock(
 );  
 ```  
   
-## Remarks  
- where,  
+### Parameters 
   
- `lock`  
- A variable of type [omp_nest_lock_t](../../../parallel/openmp/reference/omp-nest-lock-t.md).  
+*lock*<br/>
+A variable of type [omp_nest_lock_t](../../../parallel/openmp/reference/omp-nest-lock-t.md).  
   
 ## Remarks  
  The initial nesting count is zero.  

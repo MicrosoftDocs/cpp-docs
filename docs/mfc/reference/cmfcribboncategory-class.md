@@ -102,23 +102,18 @@ class CMFCRibbonCategory : public CObject
   
  This following example demonstrates how to create a ribbon category and add a panel to it.  
   
- `// Create a new ribbon category and get a pointer to it`  
-  
- `CMFCRibbonCategory* pCategory = m_wndRibbonBar.AddCategory`  
-  
- `(_T("&Write"),           // Category name`  
-  
- `IDB_WRITE,              // Category small images (16 x 16)`  
-  
- `IDB_WRITE_LARGE);   // Category large images (32 x 32)`  
-  
- `// Add a panel to the new category`  
-  
- `CMFCRibbonPanel* pPanel = pCategory->AddPanel (`  
-  
- `_T("Clipboard"),                       // Panel name`  
-  
- `m_PanelIcons.ExtractIcon (0));  // Panel icon`  
+```cpp
+// Create a new ribbon category and get a pointer to it`  
+CMFCRibbonCategory* pCategory = m_wndRibbonBar.AddCategory
+    (_T("&Write"),           // Category name
+    IDB_WRITE,               // Category small images (16 x 16)
+    IDB_WRITE_LARGE);        // Category large images (32 x 32)
+
+// Add a panel to the new category
+CMFCRibbonPanel* pPanel = pCategory->AddPanel (
+    _T("Clipboard"),                // Panel name
+    m_PanelIcons.ExtractIcon (0));  // Panel icon
+```
   
  The following diagram shows a figure of the Home category from the RibbonApp sample application.  
   

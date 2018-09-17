@@ -118,11 +118,11 @@ void AddHead(CObList* pNewList);
   
  The results from this program are as follows:  
   
- `AddHead example: A CObList with 2 elements`  
-  
- `a CAge at $44A8 40`  
-  
- `a CAge at $442A 21`  
+```Output
+AddHead example: A CObList with 2 elements
+a CAge at $44A8 40
+a CAge at $442A 21
+```
   
 ##  <a name="addtail"></a>  CObList::AddTail  
  Adds a new element or list of elements to the tail of this list.  
@@ -159,11 +159,11 @@ void AddTail(CObList* pNewList);
   
  The results from this program are as follows:  
   
- `AddTail example: A CObList with 2 elements`  
-  
- `a CAge at $444A 21`  
-  
- `a CAge at $4526 40`  
+```Output
+AddTail example: A CObList with 2 elements
+a CAge at $444A 21
+a CAge at $4526 40
+```
   
 ##  <a name="coblist"></a>  CObList::CObList  
  Constructs an empty `CObject` pointer list.  
@@ -403,9 +403,10 @@ const CObject* GetNext(POSITION& rPosition) const;
   
  The results from this program are as follows:  
   
- `a CAge at $479C 40`  
-  
- `a CAge at $46C0 21`  
+```Output
+a CAge at $479C 40
+a CAge at $46C0 21
+```
   
 ##  <a name="getprev"></a>  CObList::GetPrev  
  Gets the list element identified by *rPosition*, then sets *rPosition* to the POSITION value of the previous entry in the list.  
@@ -446,9 +447,10 @@ const CObject* GetPrev(POSITION& rPosition) const;
   
  The results from this program are as follows:  
   
- `a CAge at $421C 21`  
-  
- `a CAge at $421C 40`  
+```Output
+a CAge at $421C 21
+a CAge at $421C 40
+```
   
 ##  <a name="getsize"></a>  CObList::GetSize  
  Returns the number of list elements.  
@@ -556,13 +558,12 @@ POSITION InsertAfter(
   
  The results from this program are as follows:  
   
- `InsertAfter example: A CObList with 3 elements`  
-  
- `a CAge at $4A44 40`  
-  
- `a CAge at $4A64 65`  
-  
- `a CAge at $4968 21`  
+```Output
+InsertAfter example: A CObList with 3 elements
+a CAge at $4A44 40
+a CAge at $4A64 65
+a CAge at $4968 21
+```
   
 ##  <a name="insertbefore"></a>  CObList::InsertBefore  
  Adds an element to this list before the element at the specified position.  
@@ -597,13 +598,12 @@ POSITION InsertBefore(
   
  The results from this program are as follows:  
   
- `InsertBefore example: A CObList with 3 elements`  
-  
- `a CAge at $4AE2 40`  
-  
- `a CAge at $4B02 65`  
-  
- `a CAge at $49E6 21`  
+```Output
+InsertBefore example: A CObList with 3 elements
+a CAge at $4AE2 40
+a CAge at $4B02 65
+a CAge at $49E6 21
+```
   
 ##  <a name="isempty"></a>  CObList::IsEmpty  
  Indicates whether this list contains no elements.  
@@ -772,11 +772,11 @@ void SetAt(
   
  The results from this program are as follows:  
   
- `SetAt example: A CObList with 2 elements`  
-  
- `a CAge at $4D98 40`  
-  
- `a CAge at $4DB8 65`  
+```Output
+SetAt example: A CObList with 2 elements
+a CAge at $4D98 40
+a CAge at $4DB8 65
+```
   
 ## See Also  
  [CObject Class](../../mfc/reference/cobject-class.md)   

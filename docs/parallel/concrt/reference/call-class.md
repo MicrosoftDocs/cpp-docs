@@ -23,11 +23,11 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
 ```  
   
 #### Parameters  
- `T`  
- The payload type of the messages propagated to this block.  
+*T*<br/>
+The payload type of the messages propagated to this block.  
   
- `_FunctorType`  
- The signature of functions that this block can accept.  
+*_FunctorType*<br/>
+The signature of functions that this block can accept.  
   
 ## Members  
   
@@ -95,17 +95,17 @@ call(
 ```  
   
 ### Parameters  
- `_Func`  
- A function that will be invoked for each accepted message.  
+*_Func*<br/>
+A function that will be invoked for each accepted message.  
   
- `_Filter`  
- A filter function which determines whether offered messages should be accepted.  
+*_Filter*<br/>
+A filter function which determines whether offered messages should be accepted.  
   
- `_PScheduler`  
- The `Scheduler` object within which the propagation task for the `call` messaging block is scheduled.  
+*_PScheduler*<br/>
+The `Scheduler` object within which the propagation task for the `call` messaging block is scheduled.  
   
- `_PScheduleGroup`  
- The `ScheduleGroup` object within which the propagation task for the `call` messaging block is scheduled. The `Scheduler` object used is implied by the schedule group.  
+*_PScheduleGroup*<br/>
+The `ScheduleGroup` object within which the propagation task for the `call` messaging block is scheduled. The `Scheduler` object used is implied by the schedule group.  
   
 ### Remarks  
  The runtime uses the default scheduler if you do not specify the `_PScheduler` or `_PScheduleGroup` parameters.  
@@ -131,7 +131,8 @@ virtual void process_input_messages(_Inout_ message<T>* _PMessage);
 ```  
   
 ### Parameters  
- `_PMessage`  
+*_PMessage*<br/>
+A pointer to the message that is to be handled.  
   
 ##  <a name="process_message"></a> process_message 
 
@@ -142,8 +143,8 @@ virtual void process_message(_Inout_ message<T>* _PMessage);
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the message that is to be handled.  
+*_PMessage*<br/>
+A pointer to the message that is to be handled.  
   
 ##  <a name="propagate_message"></a> propagate_message 
 
@@ -156,11 +157,11 @@ virtual message_status propagate_message(
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the `message` object.  
+*_PMessage*<br/>
+A pointer to the `message` object.  
   
- `_PSource`  
- A pointer to the source block offering the message.  
+*_PSource*<br/>
+A pointer to the source block offering the message.  
   
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
@@ -176,11 +177,11 @@ virtual message_status send_message(
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the `message` object.  
+*_PMessage*<br/>
+A pointer to the `message` object.  
   
- `_PSource`  
- A pointer to the source block offering the message.  
+*_PSource*<br/>
+A pointer to the source block offering the message.  
   
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  

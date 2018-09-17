@@ -174,15 +174,13 @@ UINT m_uiMarkerBmpResID[AFX_SD_MARKERS_NUM];
 ### Remarks  
  Fill this array with the resource IDs of the bitmaps representing the smart docking markers. AFX_SD_MARKERS_NUM is currently defined as 5. You fill the array as follows:  
   
- `params.m_uiMarkerBmpResID[0] = IDB_MARKER_LEFT;`  
-  
- `params.m_uiMarkerBmpResID[1] = IDB_MARKER_RIGHT;`  
-  
- `params.m_uiMarkerBmpResID[2] = IDB_MARKER_TOP;`  
-  
- `params.m_uiMarkerBmpResID[3] = IDB_MARKER_BOTTOM;`  
-  
- `params.m_uiMarkerBmpResID[4] = IDB_MARKER_CENTER;`  
+```cpp
+params.m_uiMarkerBmpResID[0] = IDB_MARKER_LEFT;
+params.m_uiMarkerBmpResID[1] = IDB_MARKER_RIGHT;
+params.m_uiMarkerBmpResID[2] = IDB_MARKER_TOP;
+params.m_uiMarkerBmpResID[3] = IDB_MARKER_BOTTOM;
+params.m_uiMarkerBmpResID[4] = IDB_MARKER_CENTER;
+```
   
 ##  <a name="m_uimarkerlightbmpresid"></a>  CSmartDockingInfo::m_uiMarkerLightBmpResID  
  Defines the resource IDs of the bitmaps that are used for highlighted custom smart docking markers.  
@@ -194,15 +192,13 @@ UINT m_uiMarkerLightBmpResID[AFX_SD_MARKERS_NUM];
 ### Remarks  
  Fill this array with the resource IDs of the bitmaps representing the highlighted smart docking markers. AFX_SD_MARKERS_NUM is currently defined as 5. You fill the array as follows:  
   
- `params.m_uiMarkerLightBmpResID[0] = IDB_MARKER_LEFT_LIGHT;`  
-  
- `params.m_uiMarkerLightBmpResID[1] = IDB_MARKER_RIGHT_LIGHT;`  
-  
- `params.m_uiMarkerLightBmpResID[2] = IDB_MARKER_TOP_LIGHT;`  
-  
- `params.m_uiMarkerLightBmpResID[3] = IDB_MARKER_BOTTOM_LIGHT;`  
-  
- `params.m_uiMarkerLightBmpResID[4] = IDB_MARKER_CENTER_LIGHT;`  
+```cpp
+params.m_uiMarkerLightBmpResID[0] = IDB_MARKER_LEFT_LIGHT;
+params.m_uiMarkerLightBmpResID[1] = IDB_MARKER_RIGHT_LIGHT;
+params.m_uiMarkerLightBmpResID[2] = IDB_MARKER_TOP_LIGHT;
+params.m_uiMarkerLightBmpResID[3] = IDB_MARKER_BOTTOM_LIGHT;
+params.m_uiMarkerLightBmpResID[4] = IDB_MARKER_CENTER_LIGHT;
+```
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

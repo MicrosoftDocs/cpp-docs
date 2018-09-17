@@ -23,11 +23,10 @@ void omp_destroy_nest_lock(
 );  
 ```  
   
-## Remarks  
- where,  
+### Parameters
   
- `lock`  
- A variable of type [omp_nest_lock_t](../../../parallel/openmp/reference/omp-nest-lock-t.md) that was initialized with [omp_init_nest_lock](../../../parallel/openmp/reference/omp-init-nest-lock.md).  
+*lock*<br/>
+A variable of type [omp_nest_lock_t](../../../parallel/openmp/reference/omp-nest-lock-t.md) that was initialized with [omp_init_nest_lock](../../../parallel/openmp/reference/omp-init-nest-lock.md).  
   
 ## Remarks  
  For more information, see [3.2.2 omp_destroy_lock and omp_destroy_nest_lock Functions](../../../parallel/openmp/3-2-2-omp-destroy-lock-and-omp-destroy-nest-lock-functions.md).  

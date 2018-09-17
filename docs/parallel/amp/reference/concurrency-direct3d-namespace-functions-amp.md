@@ -36,7 +36,7 @@ inline int abs(int _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Integer value
 
 ### Return Value
@@ -59,13 +59,13 @@ inline int clamp(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 The value to be clamped
 
-`_Min`  
+*_Min*<br/>
 The lower bound of the clamping range.
 
-`_Max`  
+*_Max*<br/>
 The upper bound of the clamping range.
 
 ### Return Value
@@ -79,7 +79,7 @@ inline unsigned int countbits(unsigned int _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Unsigned integer value
 
 ### Return Value
@@ -102,16 +102,16 @@ accelerator_view create_accelerator_view(
 ```  
 
 #### Parameters
-`_Accelerator`  
+*_Accelerator*<br/>
 The accelerator on which the new accelerator_view is to be created.
 
-`_D3D_device`  
+*_D3D_device*<br/>
 The pointer to the Direct3D device interface.
 
-`_Disable_timeout`  
+*_Disable_timeout*<br/>
 A Boolean parameter that specifies whether timeout should be disabled for the newly created accelerator_view. This corresponds to the D3D11_CREATE_DEVICE_DISABLE_GPU_TIMEOUT flag for Direct3D device creation and is used to indicate if the operating system should allow workloads that take more than 2 seconds to execute without resetting the device per the Windows timeout detection and recovery mechanism. Use of this flag is recommended if you need to perform time consuming tasks on the accelerator_view.
 
-`_Qmode`  
+*_Qmode*<br/>
 The [queuing_mode](concurrency-namespace-enums-amp.md#queuing_mode) to be used for the newly created accelerator_view. This parameter has a default value of `queuing_mode_automatic`.
 
 ## Return Value
@@ -133,7 +133,7 @@ void __cdecl d3d_access_lock(accelerator_view& _Av);
 ```  
 
 ### Parameters
-`_Av`  
+*_Av*<br/>
 The accelerator_view to lock.
 
 ##  <a name="d3d_access_try_lock"></a>  d3d_access_try_lock
@@ -144,7 +144,7 @@ bool __cdecl d3d_access_try_lock(accelerator_view& _Av);
 ```  
 
 ### Parameters
-`_Av`  
+*_Av*<br/>
 The accelerator_view to lock.
 
 ### Return Value
@@ -158,7 +158,7 @@ void __cdecl d3d_access_unlock(accelerator_view& _Av);
 ```  
 
 ### Parameters
-`_Av`  
+*_Av*<br/>
 The accelerator_view for which the lock is to be released.
 
 ##  <a name="firstbithigh"></a>  firstbithigh
@@ -169,7 +169,7 @@ inline int firstbithigh(int _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Integer value
 
 ### Return Value
@@ -183,7 +183,7 @@ inline int firstbitlow(int _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Integer value
 
 ### Return Value
@@ -202,13 +202,13 @@ IUnknown *get_buffer(
 ```  
 
 ### Parameters
-`value_type`  
+*value_type*<br/>
 The type of elements in the array.
 
-`_Rank`  
+*_Rank*<br/>
 The rank of the array.
 
-`_Array`  
+*_Array*<br/>
 An array on a Direct3D accelerator_view for which the underlying Direct3D buffer interface is returned.
 
 ### Return Value
@@ -239,10 +239,10 @@ inline int imax(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Integer value
 
-`_Y`  
+*_Y*<br/>
 Integer value
 
 ### Return Value
@@ -258,10 +258,10 @@ inline int imin(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Integer value
 
-`_Y`  
+*_Y*<br/>
 Integer value
 
 ### Return Value
@@ -275,7 +275,7 @@ bool __cdecl is_timeout_disabled(const accelerator_view& _Accelerator_view);
 ```  
 
 ### Parameters
-`_Accelerator_view`  
+*_Accelerator_view*<br/>
 The accelerator_view for which the timeout disabled setting is to be queried.
 
 ### Return Value
@@ -310,13 +310,13 @@ inline unsigned int mad(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 The first specified argument.
 
-`_Y`  
+*_Y*<br/>
 The second specified argument.
 
-`_Z`  
+*_Z*<br/>
 The third specified argument.
 
 ### Return Value
@@ -337,19 +337,19 @@ array<value_type, _Rank> make_array(
 ```  
 
 ### Parameters
-`value_type`  
+*value_type*<br/>
 The element type of the array to be created.
 
-`_Rank`  
+*_Rank*<br/>
 The rank of the array to be created.
 
-`_Extent`  
+*_Extent*<br/>
 An extent that describes the shape of the array aggregate.
 
-`_Rv`  
+*_Rv*<br/>
 A D3D accelerator view on which the array is to be created.
 
-`_D3D_buffer`  
+*_D3D_buffer*<br/>
 IUnknown interface pointer of the D3D buffer to create the array from.
 
 ### Return Value
@@ -363,7 +363,7 @@ inline float noise(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value from which to generate Perlin noise
 
 ### Return Value
@@ -377,7 +377,7 @@ inline float radians(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -394,7 +394,7 @@ inline double rcp(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 The value for which to compute the reciprocal.
 
 ### Return Value
@@ -408,7 +408,7 @@ inline unsigned int reversebits(unsigned int _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Unsigned integer value
 
 ### Return Value
@@ -422,7 +422,7 @@ inline float saturate(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -436,7 +436,7 @@ inline int sign(int _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Integer value
 
 ### Return Value
@@ -453,13 +453,13 @@ inline float smoothstep(
 ```  
 
 ### Parameters
-`_Min`  
+*_Min*<br/>
 Floating-point value
 
-`_Max`  
+*_Max*<br/>
 Floating-point value
 
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -475,10 +475,10 @@ inline float step(
 ```  
 
 ### Parameters
-`_Y`  
+*_Y*<br/>
 Floating-point value
 
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -494,10 +494,10 @@ inline unsigned int umax(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Integer value
 
-`_Y`  
+*_Y*<br/>
 Integer value
 
 ### Return Value
@@ -513,10 +513,10 @@ inline unsigned int umin(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Integer value
 
-`_Y`  
+*_Y*<br/>
 Integer value
 
 ### Return Value

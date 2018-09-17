@@ -44,8 +44,8 @@ inline float acos(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the arccosine value of the argument  
@@ -58,8 +58,8 @@ inline float acosf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the arccosine value of the argument  
@@ -72,8 +72,8 @@ inline float asin(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the arcsine value of the argument  
@@ -86,8 +86,8 @@ inline float asinf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the arcsine value of the argument  
@@ -100,8 +100,8 @@ inline float atan(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the arctangent value of the argument  
@@ -116,11 +116,11 @@ inline float atan2(
 ```  
   
 ### Parameters  
- `_Y`  
- Floating-point value  
+*_Y*<br/>
+Floating-point value  
   
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the arctangent value of _Y/_X  
@@ -135,11 +135,11 @@ inline float atan2f(
 ```  
   
 ### Parameters  
- `_Y`  
- Floating-point value  
+*_Y*<br/>
+Floating-point value  
   
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the arctangent value of _Y/_X  
@@ -152,8 +152,8 @@ inline float atanf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the arctangent value of the argument  
@@ -166,8 +166,8 @@ inline float ceil(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the ceiling of the argument  
@@ -180,8 +180,8 @@ inline float ceilf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the ceiling of the argument  
@@ -194,8 +194,8 @@ inline float cosf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the cosine value of the argument  
@@ -208,8 +208,8 @@ inline float coshf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the hyperbolic cosine value of the argument  
@@ -222,8 +222,8 @@ inline float cos(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the cosine value of the argument  
@@ -236,8 +236,8 @@ inline float cosh(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the hyperbolic cosine value of the argument  
@@ -250,8 +250,8 @@ inline float exp(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the base-e exponential of the argument  
@@ -264,8 +264,8 @@ inline float exp2(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the base-2 exponential of the argument  
@@ -278,8 +278,8 @@ inline float exp2f(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the base-2 exponential of the argument  
@@ -292,8 +292,8 @@ inline float expf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the base-e exponential of the argument  
@@ -306,8 +306,8 @@ inline float fabs(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Integer value  
+*_X*<br/>
+Integer value  
   
 ### Return Value  
  Returns the absolute value of the argument  
@@ -320,8 +320,8 @@ inline float fabsf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the absolute value of the argument  
@@ -334,8 +334,8 @@ inline float floor(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the floor of the argument  
@@ -348,8 +348,8 @@ inline float floorf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the floor of the argument  
@@ -364,11 +364,11 @@ inline float max(
 ```  
   
 ### Parameters  
- `_X`  
- Integer value  
+*_X*<br/>
+Integer value  
   
- `_Y`  
- Integer value  
+*_Y*<br/>
+Integer value  
   
 ### Return Value  
  Return the maximum numeric value of the arguments  
@@ -383,11 +383,11 @@ inline float fmaxf(
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
- `_Y`  
- Floating-point value  
+*_Y*<br/>
+Floating-point value  
   
 ### Return Value  
  Return the maximum numeric value of the arguments  
@@ -402,11 +402,11 @@ inline float min(
 ```  
   
 ### Parameters  
- `_X`  
- Integer value  
+*_X*<br/>
+Integer value  
   
- `_Y`  
- Integer value  
+*_Y*<br/>
+Integer value  
   
 ### Return Value  
  Return the minimum numeric value of the arguments  
@@ -421,11 +421,11 @@ inline float fminf(
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
- `_Y`  
- Floating-point value  
+*_Y*<br/>
+Floating-point value  
   
 ### Return Value  
  Return the minimum numeric value of the arguments  
@@ -440,11 +440,11 @@ inline float fmod(
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
- `_Y`  
- Floating-point value  
+*_Y*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the floating-point remainder of _X/_Y  
@@ -459,11 +459,11 @@ inline float fmodf(
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
- `_Y`  
- Floating-point value  
+*_Y*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the floating-point remainder of _X/_Y  
@@ -478,11 +478,11 @@ inline float frexp(
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
- `_Exp`  
- Returns the integer exponent of _X in floating-point value  
+*_Exp*<br/>
+Returns the integer exponent of _X in floating-point value  
   
 ### Return Value  
  Returns the mantissa _X  
@@ -497,11 +497,11 @@ inline float frexpf(
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
- `_Exp`  
- Returns the integer exponent of _X in floating-point value  
+*_Exp*<br/>
+Returns the integer exponent of _X in floating-point value  
   
 ### Return Value  
  Returns the mantissa _X  
@@ -514,8 +514,8 @@ inline int isfinite(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns a nonzero value if and only if the argument has a finite value  
@@ -528,8 +528,8 @@ inline int isinf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns a nonzero value if and only if the argument has an infinite value  
@@ -542,8 +542,8 @@ inline int isnan(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns a nonzero value if and only if the argument has a NaN value  
@@ -558,11 +558,11 @@ inline float ldexp(
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value, mentissa  
+*_X*<br/>
+Floating-point value, mentissa  
   
- `_Exp`  
- Integer exponent  
+*_Exp*<br/>
+Integer exponent  
   
 ### Return Value  
  Returns _X \* 2^_Exp  
@@ -577,11 +577,11 @@ inline float ldexpf(
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value, mentissa  
+*_X*<br/>
+Floating-point value, mentissa  
   
- `_Exp`  
- Integer exponent  
+*_Exp*<br/>
+Integer exponent  
   
 ### Return Value  
  Returns _X \* 2^_Exp  
@@ -594,8 +594,8 @@ inline float log(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the base-e logarithm of the argument  
@@ -608,8 +608,8 @@ inline float log10(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the base-10 logarithm of the argument  
@@ -622,8 +622,8 @@ inline float log10f(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the base-10 logarithm of the argument  
@@ -636,8 +636,8 @@ inline float log2(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the base-2 logarithm of the argument  
@@ -650,8 +650,8 @@ inline float log2f(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the base-10 logarithm of the argument  
@@ -664,8 +664,8 @@ inline float logf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the base-e logarithm of the argument  
@@ -680,10 +680,11 @@ inline float modf(
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
- `_Ip`  
+*_Ip*<br/>
+Receives integer part of the value  
   
 ### Return Value  
  Returns the signed fractional portion of _X  
@@ -698,10 +699,11 @@ inline float modff(
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
- `_Ip`  
+*_Ip*<br/>
+Receives integer part of the value  
   
 ### Return Value  
  Returns the signed fractional portion of _X  
@@ -716,11 +718,11 @@ inline float pow(
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value, base  
+*_X*<br/>
+Floating-point value, base  
   
- `_Y`  
- Floating-point value, exponent  
+*_Y*<br/>
+Floating-point value, exponent  
   
 ### Return Value  
  Returns the value of _X raised to the power of _Y  
@@ -735,11 +737,11 @@ inline float powf(
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value, base  
+*_X*<br/>
+Floating-point value, base  
   
- `_Y`  
- Floating-point value, exponent  
+*_Y*<br/>
+Floating-point value, exponent  
   
 ### Return Value  
   
@@ -751,8 +753,8 @@ inline float round(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the nearest integer of _X  
@@ -765,8 +767,8 @@ inline float roundf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the nearest integer of _X  
@@ -779,8 +781,8 @@ inline float rsqrt(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the reciprocal of the square root of the argument  
@@ -793,8 +795,8 @@ inline float rsqrtf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the reciprocal of the square root of the argument  
@@ -807,8 +809,8 @@ inline int signbit(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns a nonzero value if and only if the sign of _X is negative  
@@ -821,8 +823,8 @@ inline int signbitf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns a nonzero value if and only if the sign of _X is negative  
@@ -835,8 +837,8 @@ inline float sin(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the sine value of the argument  
@@ -849,8 +851,8 @@ inline float sinf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the sine value of the argument  
@@ -866,14 +868,14 @@ inline void sincos(
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
- `_S`  
- Returns the sine value of _X  
+*_S*<br/>
+Returns the sine value of _X  
   
- `_C`  
- Returns the cosine value of _X  
+*_C*<br/>
+Returns the cosine value of _X  
   
 ##  <a name="sincosf"></a>  sincosf  
  Calculates sine and cosine value of _X  
@@ -886,14 +888,14 @@ inline void sincosf(
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
- `_S`  
- Returns the sine value of _X  
+*_S*<br/>
+Returns the sine value of _X  
   
- `_C`  
- Returns the cosine value of _X  
+*_C*<br/>
+Returns the cosine value of _X  
   
 ##  <a name="sinh"></a>  sinh  
  Calculates the hyperbolic sine value of the argument  
@@ -903,8 +905,8 @@ inline float sinh(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the hyperbolic sine value of the argument  
@@ -917,8 +919,8 @@ inline float sinhf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the hyperbolic sine value of the argument  
@@ -931,8 +933,8 @@ inline float sqrt(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the squre root of the argument  
@@ -945,8 +947,8 @@ inline float sqrtf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the squre root of the argument  
@@ -959,8 +961,8 @@ inline float tan(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the tangent value of the argument  
@@ -973,8 +975,8 @@ inline float tanf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the tangent value of the argument  
@@ -987,8 +989,8 @@ inline float tanh(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the hyperbolic tangent value of the argument  
@@ -1001,8 +1003,8 @@ inline float tanhf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the hyperbolic tangent value of the argument  
@@ -1015,8 +1017,8 @@ inline float trunc(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the integer component of the argument  
@@ -1029,8 +1031,8 @@ inline float truncf(float _X) restrict(amp);
 ```  
   
 ### Parameters  
- `_X`  
- Floating-point value  
+*_X*<br/>
+Floating-point value  
   
 ### Return Value  
  Returns the integer component of the argument  

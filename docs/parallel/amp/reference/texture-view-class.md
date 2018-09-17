@@ -30,11 +30,11 @@ class texture_view<const value_type, _Rank>
 ```  
   
 #### Parameters  
- `value_type`  
- The type of the elements in the texture aggregate.  
+*value_type*<br/>
+The type of the elements in the texture aggregate.  
   
- `_Rank`  
- The rank of the `texture_view`.  
+*_Rank*<br/>
+The rank of the `texture_view`.  
   
 ## Members  
   
@@ -136,28 +136,28 @@ texture_view(// [7] copy constructor
 ```  
   
 ### Parameters  
- `_Src`  
- [1, 2] Constructor  
+*_Src*<br/>
+[1, 2] Constructor  
  The `texture` on which the writable `texture_view` is created.  
   
  [3, 4] Constructor  
  The `texture` on which the non-writable `texture_view` is created.  
   
- `_Other`  
- [5] Copy Constructor  
+*_Other*<br/>
+[5] Copy Constructor  
  The source writable `texture_view`.  
   
  [6, 7] Copy Constructor  
  The source non-writable `texture_view`.  
   
- `_Mipmap_level`  
- The specific mipmap level on the source `texture` that this writeable `texture_view` binds to. The default value is 0, which represents the top level (most detailed) mip level.  
+*_Mipmap_level*<br/>
+The specific mipmap level on the source `texture` that this writeable `texture_view` binds to. The default value is 0, which represents the top level (most detailed) mip level.  
   
- `_Most_detailed_mip`  
- Top level (most detailed) mip level for the view, relative to the specified `texture_view` object.  
+*_Most_detailed_mip*<br/>
+Top level (most detailed) mip level for the view, relative to the specified `texture_view` object.  
   
- `_Mip_levels`  
- The number of mipmap levels accessible through the `texture_view`.  
+*_Mip_levels*<br/>
+The number of mipmap levels accessible through the `texture_view`.  
   
 ##  <a name="gather_red"></a> gather_red 
 
@@ -177,14 +177,14 @@ const gather_return_type gather_red(
 ```  
   
 ### Parameters  
- `_Address_mode`  
- The address mode to use to sample the `texture_view`. The address mode is the same for all dimensions.  
+*_Address_mode*<br/>
+The address mode to use to sample the `texture_view`. The address mode is the same for all dimensions.  
   
- `_Sampler`  
- The sampler configuration to use to sample the `texture_view`.  
+*_Sampler*<br/>
+The sampler configuration to use to sample the `texture_view`.  
   
- `_Coord`  
- The coordinates to take the sample from. Fractional coordinate values are used to interpolate between sample texels.  
+*_Coord*<br/>
+The coordinates to take the sample from. Fractional coordinate values are used to interpolate between sample texels.  
   
 ### Return Value  
  A rank 4 short vector containing the red (x) component of the 4 sampled texel values.  
@@ -207,14 +207,14 @@ const gather_return_type gather_green(
 ```  
   
 ### Parameters  
- `_Address_mode`  
- The address mode to use to sample the `texture_view`. The address mode is the same for all dimensions.  
+*_Address_mode*<br/>
+The address mode to use to sample the `texture_view`. The address mode is the same for all dimensions.  
   
- `_Sampler`  
- The sampler configuration to use to sample the `texture_view`.  
+*_Sampler*<br/>
+The sampler configuration to use to sample the `texture_view`.  
   
- `_Coord`  
- The coordinates to take the sample from. Fractional coordinate values are used to interpolate between sample texels.  
+*_Coord*<br/>
+The coordinates to take the sample from. Fractional coordinate values are used to interpolate between sample texels.  
   
 ### Return Value  
  A rank 4 short vector containing the green (y) component of the 4 sampled texel values.  
@@ -237,14 +237,14 @@ const gather_return_type gather_blue(
 ```  
   
 ### Parameters  
- `_Address_mode`  
- The address mode to use to sample the `texture_view`. The address mode is the same for all dimensions.  
+*_Address_mode*<br/>
+The address mode to use to sample the `texture_view`. The address mode is the same for all dimensions.  
   
- `_Sampler`  
- The sampler configuration to use to sample the `texture_view`.  
+*_Sampler*<br/>
+The sampler configuration to use to sample the `texture_view`.  
   
- `_Coord`  
- The coordinates to take the sample from. Fractional coordinate values are used to interpolate between sample texels.  
+*_Coord*<br/>
+The coordinates to take the sample from. Fractional coordinate values are used to interpolate between sample texels.  
   
 ### Return Value  
  A rank 4 short vector containing the red (x) component of the 4 sampled texel values.  
@@ -267,14 +267,14 @@ const gather_return_type gather_alpha(
 ```  
   
 ### Parameters  
- `_Address_mode`  
- The address mode to use to sample the `texture_view`. The address mode is the same for all dimensions.  
+*_Address_mode*<br/>
+The address mode to use to sample the `texture_view`. The address mode is the same for all dimensions.  
   
- `_Sampler`  
- The sampler configuration to use to sample the `texture_view`.  
+*_Sampler*<br/>
+The sampler configuration to use to sample the `texture_view`.  
   
- `_Coord`  
- The coordinates to take the sample from. Fractional coordinate values are used to interpolate between sample texels.  
+*_Coord*<br/>
+The coordinates to take the sample from. Fractional coordinate values are used to interpolate between sample texels.  
   
 ### Return Value  
  A rank 4 short vector containing the alpha (w) component of the 4 sampled texel values.  
@@ -294,11 +294,11 @@ value_type get(
 ```  
   
 ### Parameters  
- `_Index`  
- The index of the element to get, possibly multi-dimensional.  
+*_Index*<br/>
+The index of the element to get, possibly multi-dimensional.  
   
- `_Mip_level`  
- The mipmap level from which we should get the value. The default value 0 represents the most detailed mipmap level.  
+*_Mip_level*<br/>
+The mipmap level from which we should get the value. The default value 0 represents the most detailed mipmap level.  
   
 ### Return Value  
  The value of the element.  
@@ -321,8 +321,8 @@ texture_view<const value_type, _Rank>& operator= (// [3] copy constructor
 ```  
   
 ### Parameters  
- `_Other`  
- [1, 2] Copy Constructor  
+*_Other*<br/>
+[1, 2] Copy Constructor  
  A writable `texture_view` object.  
   
  [3] Copy Constructor  
@@ -349,11 +349,11 @@ value_type operator[] (int _I0) const restrict(amp);
 ```  
   
 ### Parameters  
- `_Index`  
- The index, possibly multi-dimensional.  
+*_Index*<br/>
+The index, possibly multi-dimensional.  
   
- `_I0`  
- The one-dimensional index.  
+*_I0*<br/>
+The one-dimensional index.  
   
 ### Return Value  
  The element value indexed by `_Index`.  
@@ -401,17 +401,17 @@ value_type operator() (
 ```  
   
 ### Parameters  
- `_Index`  
- The index, possibly multi-dimensional.  
+*_Index*<br/>
+The index, possibly multi-dimensional.  
   
- `_I0`  
- The most-significant component of the index.  
+*_I0*<br/>
+The most-significant component of the index.  
   
- `_I1`  
- The next-to-most-significant component of the index.  
+*_I1*<br/>
+The next-to-most-significant component of the index.  
   
- `_I2`  
- The least-significant component of the index.  
+*_I2*<br/>
+The least-significant component of the index.  
   
 ### Return Value  
  The element value indexed by `_Index`.  
@@ -437,20 +437,20 @@ value_type sample(
 ```  
   
 ### Parameters  
- `_Filter_mode`  
- The filter mode to use to sample the texture_view. The filter mode is the same for the minimization, maximization, and mipmap filters.  
+*_Filter_mode*<br/>
+The filter mode to use to sample the texture_view. The filter mode is the same for the minimization, maximization, and mipmap filters.  
   
- `_Address_mode`  
- The address mode to use to sample the texture_view. The address mode is the same for all dimensions.  
+*_Address_mode*<br/>
+The address mode to use to sample the texture_view. The address mode is the same for all dimensions.  
   
- `_Sampler`  
- The sampler configuration to use to sample the texture_view.  
+*_Sampler*<br/>
+The sampler configuration to use to sample the texture_view.  
   
- `_Coord`  
- The coordinates to take the sample from. Fractional coordinate values are used to interpolate between texel values.  
+*_Coord*<br/>
+The coordinates to take the sample from. Fractional coordinate values are used to interpolate between texel values.  
   
- `_Level_of_detail`  
- The value specifies the mipmap level to sample from. Fractional values are used to interpolate between two mipmap levels. The default level of detail is 0, which represents the most detailed mip level.  
+*_Level_of_detail*<br/>
+The value specifies the mipmap level to sample from. Fractional values are used to interpolate between two mipmap levels. The default level of detail is 0, which represents the most detailed mip level.  
   
 ### Return Value  
  The interpolated sample value.  
@@ -466,11 +466,11 @@ void set(
 ```  
   
 ### Parameters  
- `_Index`  
- The index of the element to set, possibly multi-dimensional.  
+*_Index*<br/>
+The index of the element to set, possibly multi-dimensional.  
   
- `value`  
- The value to set the element to.  
+*value*<br/>
+The value to set the element to.  
   
 ##  <a name="value_type"></a> value_type 
 

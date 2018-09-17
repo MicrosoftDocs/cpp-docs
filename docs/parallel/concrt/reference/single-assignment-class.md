@@ -23,8 +23,8 @@ class single_assignment : public propagator_block<multi_link_registry<ITarget<T>
 ```  
   
 #### Parameters  
- `T`  
- The payload type of the message stored and propagated by the buffer.  
+*T*<br/>
+The payload type of the message stored and propagated by the buffer.  
   
 ## Members  
   
@@ -86,8 +86,8 @@ virtual message<T>* accept_message(runtime_object_identity _MsgId);
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the offered `message` object.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the offered `message` object.  
   
 ### Return Value  
  A pointer to the `message` object that the caller now has ownership of.  
@@ -104,8 +104,8 @@ virtual message<T>* consume_message(runtime_object_identity _MsgId);
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the `message` object being consumed.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the `message` object being consumed.  
   
 ### Return Value  
  A pointer to the `message` object that the caller now has ownership of.  
@@ -133,8 +133,8 @@ virtual void link_target_notification(_Inout_ ITarget<T>* _PTarget);
 ```  
   
 ### Parameters  
- `_PTarget`  
- A pointer to the newly linked target.  
+*_PTarget*<br/>
+A pointer to the newly linked target.  
   
 ##  <a name="propagate_message"></a> propagate_message 
 
@@ -147,11 +147,11 @@ virtual message_status propagate_message(
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the `message` object.  
+*_PMessage*<br/>
+A pointer to the `message` object.  
   
- `_PSource`  
- A pointer to the source block offering the message.  
+*_PSource*<br/>
+A pointer to the source block offering the message.  
   
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
@@ -165,8 +165,8 @@ virtual void propagate_to_any_targets(_Inout_opt_ message<T>* _PMessage);
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to a `message` that this `single_assignment` messaging block has taken ownership of.  
+*_PMessage*<br/>
+A pointer to a `message` that this `single_assignment` messaging block has taken ownership of.  
   
 ##  <a name="release_message"></a> release_message 
 
@@ -177,8 +177,8 @@ virtual void release_message(runtime_object_identity _MsgId);
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the `message` object being released.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the `message` object being released.  
   
 ##  <a name="reserve_message"></a> reserve_message 
 
@@ -189,8 +189,8 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the `message` object being reserved.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the `message` object being reserved.  
   
 ### Return Value  
  `true` if the message was successfully reserved, `false` otherwise.  
@@ -217,11 +217,11 @@ virtual message_status send_message(
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the `message` object.  
+*_PMessage*<br/>
+A pointer to the `message` object.  
   
- `_PSource`  
- A pointer to the source block offering the message.  
+*_PSource*<br/>
+A pointer to the source block offering the message.  
   
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
@@ -252,14 +252,14 @@ single_assignment(
 ```  
   
 ### Parameters  
- `_Filter`  
- A filter function which determines whether offered messages should be accepted.  
+*_Filter*<br/>
+A filter function which determines whether offered messages should be accepted.  
   
- `_PScheduler`  
- The `Scheduler` object within which the propagation task for the `single_assignment` messaging block is scheduled.  
+*_PScheduler*<br/>
+The `Scheduler` object within which the propagation task for the `single_assignment` messaging block is scheduled.  
   
- `_PScheduleGroup`  
- The `ScheduleGroup` object within which the propagation task for the `single_assignment` messaging block is scheduled. The `Scheduler` object used is implied by the schedule group.  
+*_PScheduleGroup*<br/>
+The `ScheduleGroup` object within which the propagation task for the `single_assignment` messaging block is scheduled. The `Scheduler` object used is implied by the schedule group.  
   
 ### Remarks  
  The runtime uses the default scheduler if you do not specify the `_PScheduler` or `_PScheduleGroup` parameters.  

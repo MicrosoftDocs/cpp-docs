@@ -22,13 +22,13 @@ For member functions of a COM interface, use the [METHOD_PROLOGUE](com-interface
   
  The `METHOD_PROLOGUE` macro is defined as:  
   
- `#define METHOD_PROLOGUE(theClass, localClass) \`  
-  
- `theClass* pThis = \`  
-  
- `((theClass*)((BYTE*)this - offsetof(theClass, m_x##localClass))); \`  
-  
- `AFX_MANAGE_STATE(pThis->m_pModuleState) \`  
+```cpp
+#define METHOD_PROLOGUE(theClass, localClass) \
+    theClass* pThis = \
+    ((theClass*)((BYTE*)this - offsetof(theClass, m_x##localClass))); \
+    AFX_MANAGE_STATE(pThis->m_pModuleState) \
+
+```
   
  The portion of the macro concerned with managing the global state is:  
   

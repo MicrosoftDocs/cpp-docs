@@ -73,11 +73,11 @@ agent(ScheduleGroup& _PGroup);
 ```  
   
 ### Parameters  
- `_PScheduler`  
- The `Scheduler` object within which the execution task of the agent is scheduled.  
+*_PScheduler*<br/>
+The `Scheduler` object within which the execution task of the agent is scheduled.  
   
- `_PGroup`  
- The `ScheduleGroup` object within which the execution task of the agent is scheduled. The `Scheduler` object used is implied by the schedule group.  
+*_PGroup*<br/>
+The `ScheduleGroup` object within which the execution task of the agent is scheduled. The `Scheduler` object used is implied by the schedule group.  
   
 ### Remarks  
  The runtime uses the default scheduler if you do not specify the `_PScheduler` or `_PGroup` parameters.  
@@ -173,11 +173,11 @@ static agent_status __cdecl wait(
 ```  
   
 ### Parameters  
- `_PAgent`  
- A pointer to the agent to wait for.  
+*_PAgent*<br/>
+A pointer to the agent to wait for.  
   
- `_Timeout`  
- The maximum time for which to wait, in milliseconds.  
+*_Timeout*<br/>
+The maximum time for which to wait, in milliseconds.  
   
 ### Return Value  
  The `agent_status` of the agent when the wait completes. This can either be `agent_canceled` or `agent_done`.  
@@ -200,17 +200,17 @@ static void __cdecl wait_for_all(
 ```  
   
 ### Parameters  
- `count`  
- The number of agent pointers present in the array `_PAgents`.  
+*count*<br/>
+The number of agent pointers present in the array `_PAgents`.  
   
- `_PAgents`  
- An array of pointers to the agents to wait for.  
+*_PAgents*<br/>
+An array of pointers to the agents to wait for.  
   
- `_PStatus`  
- A pointer to an array of agent statuses. Each status value will represent the status of the corresponding agent when the method returns.  
+*_PStatus*<br/>
+A pointer to an array of agent statuses. Each status value will represent the status of the corresponding agent when the method returns.  
   
- `_Timeout`  
- The maximum time for which to wait, in milliseconds.  
+*_Timeout*<br/>
+The maximum time for which to wait, in milliseconds.  
   
 ### Remarks  
  An agent task is completed when the agent enters the `agent_canceled` or `agent_done` states.  
@@ -231,20 +231,20 @@ static void __cdecl wait_for_one(
 ```  
   
 ### Parameters  
- `count`  
- The number of agent pointers present in the array `_PAgents`.  
+*count*<br/>
+The number of agent pointers present in the array `_PAgents`.  
   
- `_PAgents`  
- An array of pointers to the agents to wait for.  
+*_PAgents*<br/>
+An array of pointers to the agents to wait for.  
   
- `_Status`  
- A reference to a variable where the agent status will be placed.  
+*_Status*<br/>
+A reference to a variable where the agent status will be placed.  
   
- `_Index`  
- A reference to a variable where the agent index will be placed.  
+*_Index*<br/>
+A reference to a variable where the agent index will be placed.  
   
- `_Timeout`  
- The maximum time for which to wait, in milliseconds.  
+*_Timeout*<br/>
+The maximum time for which to wait, in milliseconds.  
   
 ### Remarks  
  An agent task is completed when the agent enters the `agent_canceled` or `agent_done` states.  
