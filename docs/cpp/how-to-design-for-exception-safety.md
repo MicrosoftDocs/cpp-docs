@@ -1,13 +1,13 @@
 ---
 title: "How to: Design for Exception Safety | Microsoft Docs"
-ms.custom: "how-to"
-ms.date: "11/04/2016"
+ms.custom: how-to
+ms.date: 11/04/2016
 ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
+ms.topic: conceptual
 dev_langs: ["C++"]
 ms.assetid: 19ecc5d4-297d-4c4e-b4f3-4fccab890b3d
-author: "mikeblome"
-ms.author: "mblome"
+author: mikeblome
+ms.author: mblome
 ms.workload: ["cplusplus"]
 ---
 # How to: Design for Exception Safety
@@ -80,7 +80,7 @@ public:
 ```  
   
 ### Use the RAII Idiom to Manage Resources  
- To be exception-safe, a function must ensure that objects that it has allocated by using `malloc` or **new** are destroyed, and all resources such as file handles are closed or released even if an exception is thrown. The *Resource Acquisition Is Initialization* (RAII) idiom ties management of such resources to the lifespan of automatic variables. When a function goes out of scope, either by returning normally or because of an exception, the destructors for all fully-constructed automatic variables are invoked. An RAII wrapper object such as a smart pointer calls the appropriate delete or close function in its destructor. In exception-safe code, it is critically important to pass ownership of each resource immediately to some kind of RAII object. Note that the `vector`, `string`, `make_shared`, `fstream`, and similar classes handle acquisition of the resource for you.  However, `unique_ptr` and traditional `shared_ptr` constructions are special because resource acquisition is performed by the user instead of the object; therefore, they count as *Resource Release Is Destruction* but are questionable as RAII.  
+ To be exception-safe, a function must ensure that objects that it has allocated by using `malloc` or **new** are destroyed, and all resources such as file handles are closed or released even if an exception is thrown. The *Resource Acquisition Is Initialization* (RAII) idiom ties management of such resources to the lifespan of automatic variables. When a function goes out of scope, either by returning normally or because of an exception, the destructors for all fully-constructed automatic variables are invoked. An RAII wrapper object such as a smart pointer calls the appropriate delete or close function in its destructor. In exception-safe code, it is critically important to pass ownership of each resource immediately to some kind of RAII object. Note that the `vector`, `string`, `make_shared`, `fstream`, and similar classes handle acquisition of the resource for you.  However, `unique_ptr` and traditional `shared_ptr` constructions are special because resource acquisition is performed by the user instead of the object; therefore, they count as *Resource Release Is Destruction* but are questionable as RAII.  For example, if you are trying to write some thing to a file by using the standard C File IO API, you should always check the return value of each IO function call(`fopen`/`fread`/`fwrite`/`fclose`). If you put `fclose` into destructor, there is no way to report an error.
   
 ## The Three Exception Guarantees  
  Typically, exception safety is discussed in terms of the three exception guarantees that a function can provide: the *no-fail guarantee*, the *strong guarantee*, and the *basic guarantee*.  
