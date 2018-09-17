@@ -40,8 +40,8 @@ public:
 
 ### Parameters
 
-*TN*  
- The type of the Nth tuple element.
+*TN*<br/>
+The type of the Nth tuple element.
 
 ## Remarks
 
@@ -142,11 +142,11 @@ template <class U1, class U2>
 
 ### Parameters
 
-*UN*  
- The type of the Nth copied tuple element.
+*UN*<br/>
+The type of the Nth copied tuple element.
 
-*right*  
- The tuple to copy from.
+*right*<br/>
+The tuple to copy from.
 
 ### Remarks
 
@@ -251,11 +251,11 @@ template <class U1, class U2>
 
 ### Parameters
 
-*UN*  
- The type of the Nth copied tuple element.
+*UN*<br/>
+The type of the Nth copied tuple element.
 
-*right*  
- The tuple to copy from.
+*right*<br/>
+The tuple to copy from.
 
 ### Remarks
 

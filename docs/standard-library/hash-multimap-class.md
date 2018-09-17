@@ -32,16 +32,16 @@ class hash_multimap
 ### Parameters
 
 *Key*<br/>
- The key data type to be stored in the hash_multimap.
+The key data type to be stored in the hash_multimap.
 
 *Type*<br/>
- The element data type to be stored in the hash_multimap.
+The element data type to be stored in the hash_multimap.
 
 *Traits*<br/>
- The type that includes two function objects, one of class *Traits* that is able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type `size_t`. This argument is optional, and the `hash_compare<Key, less<Key>>` is the default value.
+The type that includes two function objects, one of class *Traits* that is able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type `size_t`. This argument is optional, and the `hash_compare<Key, less<Key>>` is the default value.
 
 *Allocator*<br/>
- The type that represents the stored allocator object that encapsulates details about the hash_multimap's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<pair <const Key, Type>>`.
+The type that represents the stored allocator object that encapsulates details about the hash_multimap's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<pair <const Key, Type>>`.
 
 ## Remarks
 
@@ -509,7 +509,7 @@ size_type count(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The key of the elements to be matched from the hash_multimap.
+The key of the elements to be matched from the hash_multimap.
 
 ### Return Value
 
@@ -804,7 +804,7 @@ int main()
 
 ```Output
 After the emplace insertion, hm1 contains:
- 1 => a
+1 => a
 ```
 
 ## <a name="emplace_hint"></a>  hash_multimap::emplace_hint
@@ -864,7 +864,7 @@ int main()
 
 ```Output
 After the emplace insertion, hm1 contains:
- 1 => a
+1 => a
 ```
 
 ## <a name="empty"></a>  hash_multimap::empty
@@ -1005,7 +1005,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### Parameters
 
 *key*<br/>
- The argument key to be compared with the sort key of an element from the hash_multimap being searched.
+The argument key to be compared with the sort key of an element from the hash_multimap being searched.
 
 ### Return Value
 
@@ -1096,16 +1096,16 @@ size_type erase(const key_type& key);
 ### Parameters
 
 *_Where*<br/>
- Position of the element to be removed from the hash_multimap.
+Position of the element to be removed from the hash_multimap.
 
 *first*<br/>
- Position of the first element removed from the hash_multimap.
+Position of the first element removed from the hash_multimap.
 
 *last*<br/>
- Position just beyond the last element removed from the hash_multimap.
+Position just beyond the last element removed from the hash_multimap.
 
 *key*<br/>
- The key of the elements to be removed from the hash_multimap.
+The key of the elements to be removed from the hash_multimap.
 
 ### Return Value
 
@@ -1220,7 +1220,7 @@ const_iterator find(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The key to be matched by the sort key of an element from the hash_multimap being searched.
+The key to be matched by the sort key of an element from the hash_multimap being searched.
 
 ### Return Value
 
@@ -1414,18 +1414,18 @@ hash_multimap(
 
 template <class InputIterator>
 hash_multimap(
- InputIterator First,
+    InputIterator First,
     InputIterator Last);
 
 template <class InputIterator>
 hash_multimap(
- InputIterator First,
+    InputIterator First,
     InputIterator Last,
     const Compare& Comp);
 
 template <class InputIterator>
 hash_multimap(
- InputIterator First,
+    InputIterator First,
     InputIterator Last,
     const Compare& Comp,
     const Allocator& Al);
@@ -1671,7 +1671,7 @@ const_iterator lower_bound(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The argument key to be compared with the sort key of an element from the hash_multimap being searched.
+The argument key to be compared with the sort key of an element from the hash_multimap being searched.
 
 ### Return Value
 
@@ -2225,7 +2225,7 @@ void swap(hash_multimap& right);
 ### Parameters
 
 *right*<br/>
- The hash_multimap providing the elements to be swapped or the hash_multimap whose elements are to be exchanged with those of the hash_multimap.
+The hash_multimap providing the elements to be swapped or the hash_multimap whose elements are to be exchanged with those of the hash_multimap.
 
 ### Remarks
 
@@ -2299,7 +2299,7 @@ const_iterator upper_bound(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The argument key to be compared with the sort key of an element from the hash_multimap being searched.
+The argument key to be compared with the sort key of an element from the hash_multimap being searched.
 
 ### Return Value
 

@@ -25,17 +25,17 @@ class subtract_with_carry_engine;
 
 ### Parameters
 
-*UIntType*  
- The unsigned integer result type. For possible types, see [\<random>](../standard-library/random.md).
+*UIntType*<br/>
+The unsigned integer result type. For possible types, see [\<random>](../standard-library/random.md).
 
-*W*  
- **Word size**. Size of each word, in bits, of the state sequence. **Precondition**: `0 < W ≤ numeric_limits<UIntType>::digits`
+*W*<br/>
+**Word size**. Size of each word, in bits, of the state sequence. **Precondition**: `0 < W ≤ numeric_limits<UIntType>::digits`
 
-*S*  
- **Short lag**. Number of integer values. **Precondition**: `0 < S < R`
+*S*<br/>
+**Short lag**. Number of integer values. **Precondition**: `0 < S < R`
 
-*R*  
- **Long lag**. Determines recurrence in the series generated.
+*R*<br/>
+**Long lag**. Determines recurrence in the series generated.
 
 ## Members
 

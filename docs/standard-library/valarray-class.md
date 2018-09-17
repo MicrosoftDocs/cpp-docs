@@ -99,10 +99,10 @@ valarray<Type> apply(Type _Func(constType&)) const;
 ### Parameters
 
 *_Func(Type)*<br/>
- The function object to be applied to each element of the operand valarray.
+The function object to be applied to each element of the operand valarray.
 
 *_Func(const Type&)*<br/>
- The function object for const to be applied to each element of the operand valarray.
+The function object for const to be applied to each element of the operand valarray.
 
 ### Return Value
 
@@ -171,8 +171,8 @@ valarray<Type> cshift(int count) const;
 
 ### Parameters
 
-*count*  
- The number of places the elements are to be shifted forward.
+*count*<br/>
+The number of places the elements are to be shifted forward.
 
 ### Return Value
 
@@ -430,8 +430,8 @@ valarray<Type>& operator%=(const Type& right);
 
 ### Parameters
 
-*right*  
- The valarray or value of an element type identical to that of the operand valarray that is to divide, element-wise, the operand valarray.
+*right*<br/>
+The valarray or value of an element type identical to that of the operand valarray that is to divide, element-wise, the operand valarray.
 
 ### Return Value
 
@@ -495,8 +495,8 @@ valarray<Type>& operator&=(const Type& right);
 
 ### Parameters
 
-*right*  
- The valarray or value of an element type identical to that of the operand valarray that is to be combined, element-wise, by the logical `AND` with the operand valarray.
+*right*<br/>
+The valarray or value of an element type identical to that of the operand valarray that is to be combined, element-wise, by the logical `AND` with the operand valarray.
 
 ### Return Value
 
@@ -566,8 +566,8 @@ valarray<Type>& operator>>=(const Type& right);
 
 ### Parameters
 
-*right*  
- The value indicating the amount of right shift or valarray whose elements indicate the element-wise amount of right shift.
+*right*<br/>
+The value indicating the amount of right shift or valarray whose elements indicate the element-wise amount of right shift.
 
 ### Return Value
 
@@ -635,8 +635,8 @@ valarray<Type>& operator<<=(const Type& right);
 
 ### Parameters
 
-*right*  
- The value indicating the amount of left shift or valarray whose elements indicate the element-wise amount of left shift.
+*right*<br/>
+The value indicating the amount of left shift or valarray whose elements indicate the element-wise amount of left shift.
 
 ### Return Value
 
@@ -705,8 +705,8 @@ valarray<Type>& operator*=(const Type& right);
 
 ### Parameters
 
-*right*  
- The valarray or value of an element type identical to that of the operand valarray that is to multiply, element-wise, the operand valarray.
+*right*<br/>
+The valarray or value of an element type identical to that of the operand valarray that is to multiply, element-wise, the operand valarray.
 
 ### Return Value
 
@@ -821,8 +821,8 @@ valarray<Type>& operator+=(const Type& right);
 
 ### Parameters
 
-*right*  
- The valarray or value of an element type identical to that of the operand valarray that is to be added, element-wise, to the operand valarray.
+*right*<br/>
+The valarray or value of an element type identical to that of the operand valarray that is to be added, element-wise, to the operand valarray.
 
 ### Return Value
 
@@ -937,8 +937,8 @@ valarray<Type>& operator-=(const Type& right);
 
 ### Parameters
 
-*right*  
- The valarray or value of an element type identical to that of the operand valarray that is to be subtracted, element-wise, from the operand valarray.
+*right*<br/>
+The valarray or value of an element type identical to that of the operand valarray that is to be subtracted, element-wise, from the operand valarray.
 
 ### Return Value
 
@@ -1002,8 +1002,8 @@ valarray<Type>& operator/=(const Type& right);
 
 ### Parameters
 
-*right*  
- The valarray or value of an element type identical to that of the operand valarray that is to be divided, element-wise, into the operand valarray.
+*right*<br/>
+The valarray or value of an element type identical to that of the operand valarray that is to be divided, element-wise, into the operand valarray.
 
 ### Return Value
 
@@ -1077,23 +1077,23 @@ valarray<Type>& operator=(const indirect_array<Type>& _Indarray);
 
 ### Parameters
 
-*right*  
- The valarray to be copied into the operand valarray.
+*right*<br/>
+The valarray to be copied into the operand valarray.
 
-*val*  
- The value to be assigned to the elements of the operand valarray.
+*val*<br/>
+The value to be assigned to the elements of the operand valarray.
 
-*_Slicearray*  
- The slice_array to be copied into the operand valarray.
+*_Slicearray*<br/>
+The slice_array to be copied into the operand valarray.
 
-*_Gslicearray*  
- The gslice_array to be copied into the operand valarray.
+*_Gslicearray*<br/>
+The gslice_array to be copied into the operand valarray.
 
-*_Maskarray*  
- The mask_array to be copied into the operand valarray.
+*_Maskarray*<br/>
+The mask_array to be copied into the operand valarray.
 
-*_Indarray*  
- The indirect_array to be copied into the operand valarray.
+*_Indarray*<br/>
+The indirect_array to be copied into the operand valarray.
 
 ### Return Value
 
@@ -1195,20 +1195,20 @@ valarray<Type> operator[](const valarray<size_t>& _Indarray) const;
 
 ### Parameters
 
-*_Off*  
- The index of the element to be assigned a value.
+*_Off*<br/>
+The index of the element to be assigned a value.
 
-*_Slicearray*  
- A slice_array of a valarray that specifies a subset to be selected or returned to a new valarray.
+*_Slicearray*<br/>
+A slice_array of a valarray that specifies a subset to be selected or returned to a new valarray.
 
-*_Gslicearray*  
- A gslice_array of a valarray that specifies a subset to be selected or returned to a new valarray.
+*_Gslicearray*<br/>
+A gslice_array of a valarray that specifies a subset to be selected or returned to a new valarray.
 
-*_Boolarray*  
- A bool_array of a valarray that specifies a subset to be selected or returned to a new valarray.
+*_Boolarray*<br/>
+A bool_array of a valarray that specifies a subset to be selected or returned to a new valarray.
 
-*_Indarray*  
- An indirect_array of a valarray that specifies a subset to be selected or returned to a new valarray.
+*_Indarray*<br/>
+An indirect_array of a valarray that specifies a subset to be selected or returned to a new valarray.
 
 ### Return Value
 
@@ -1236,8 +1236,8 @@ valarray<Type>& operator|=(const Type& right);
 
 ### Parameters
 
-*right*  
- The valarray or value of an element type identical to that of the operand valarray that is to be combined, element-wise, by the exclusive logical **XOR** with the operand valarray.
+*right*<br/>
+The valarray or value of an element type identical to that of the operand valarray that is to be combined, element-wise, by the exclusive logical **XOR** with the operand valarray.
 
 ### Return Value
 
@@ -1309,8 +1309,8 @@ valarray<Type>& operator|=(const Type& right);
 
 ### Parameters
 
-*right*  
- The valarray or value of an element type identical to that of the operand valarray that is to be combined, element-wise, by the bitwise `OR` with the operand valarray.
+*right*<br/>
+The valarray or value of an element type identical to that of the operand valarray that is to be combined, element-wise, by the bitwise `OR` with the operand valarray.
 
 ### Return Value
 
@@ -1485,11 +1485,11 @@ void resize(
 
 ### Parameters
 
-*_Newsize*  
- The number of elements in the resized valarray.
+*_Newsize*<br/>
+The number of elements in the resized valarray.
 
-*val*  
- The value to be given to the elements of the resized valarray.
+*val*<br/>
+The value to be given to the elements of the resized valarray.
 
 ### Remarks
 
@@ -1556,8 +1556,8 @@ valarray<Type> shift(int count) const;
 
 ### Parameters
 
-*count*  
- The number of places the elements are to be shifted forward.
+*count*<br/>
+The number of places the elements are to be shifted forward.
 
 ### Return Value
 
@@ -1806,32 +1806,32 @@ valarray(
 
 ### Parameters
 
-*Count*  
- The number of elements to be in the valarray.
+*Count*<br/>
+The number of elements to be in the valarray.
 
-*Val*  
- The value to be used in initializing the elements in the valarray.
+*Val*<br/>
+The value to be used in initializing the elements in the valarray.
 
-*Ptr*  
- Pointer to the values to be used to initialize the elements in the valarray.
+*Ptr*<br/>
+Pointer to the values to be used to initialize the elements in the valarray.
 
-*Right*  
- An existing valarray to initialize the new valarray.
+*Right*<br/>
+An existing valarray to initialize the new valarray.
 
-*SliceArray*  
- A slice_array whose element values are to be used in initializing the elements of the valarray being constructed.
+*SliceArray*<br/>
+A slice_array whose element values are to be used in initializing the elements of the valarray being constructed.
 
-*GsliceArray*  
- A gslice_array whose element values are to be used in initializing the elements of the valarray being constructed.
+*GsliceArray*<br/>
+A gslice_array whose element values are to be used in initializing the elements of the valarray being constructed.
 
-*MaskArray*  
- A mask_array whose element values are to be used in initializing the elements of the valarray being constructed.
+*MaskArray*<br/>
+A mask_array whose element values are to be used in initializing the elements of the valarray being constructed.
 
-*IndArray*  
- A indirect_array whose element values are to be used in initializing the elements of the valarray being constructed.
+*IndArray*<br/>
+A indirect_array whose element values are to be used in initializing the elements of the valarray being constructed.
 
-*IList*  
- The initializer_list containing the elements to copy.
+*IList*<br/>
+The initializer_list containing the elements to copy.
 
 ### Remarks
 

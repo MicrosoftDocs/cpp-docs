@@ -36,4 +36,4 @@ Returns `lexicographical_compare(left.begin, left.end, right.begin, right.end)`.
 
 [\<sample container>](../standard-library/sample-container.md)<br/>
 [begin](../standard-library/container-class-begin.md)<br/>
-[end](../standard-library/container-class-end.md)  
+[end](../standard-library/container-class-end.md)

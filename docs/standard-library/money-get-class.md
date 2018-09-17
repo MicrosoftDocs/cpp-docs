@@ -26,10 +26,10 @@ class money_get : public locale::facet;
 ### Parameters
 
 *CharType*<br/>
- The type used within a program to encode characters in a locale.
+The type used within a program to encode characters in a locale.
 
 *InputIterator*<br/>
- The type of iterator from which the get functions read their input.
+The type of iterator from which the get functions read their input.
 
 ## Remarks
 
@@ -95,22 +95,22 @@ virtual iter_type do_get(iter_type first,
 ### Parameters
 
 *first*<br/>
- Input iterator addressing the beginning of the sequence to be converted.
+Input iterator addressing the beginning of the sequence to be converted.
 
 *last*<br/>
- Input iterator addressing the end of the sequence to be converted.
+Input iterator addressing the end of the sequence to be converted.
 
 *Intl*<br/>
- A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
+A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
 
 *Iosbase*<br/>
- A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.
+A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.
 
 *State*<br/>
- Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded or not.
+Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded or not.
 
 *val*<br/>
- A string storing the converted sequence.
+A string storing the converted sequence.
 
 ### Return Value
 
@@ -177,22 +177,22 @@ iter_type get(iter_type first,
 ### Parameters
 
 *first*<br/>
- Input iterator addressing the beginning of the sequence to be converted.
+Input iterator addressing the beginning of the sequence to be converted.
 
 *last*<br/>
- Input iterator addressing the end of the sequence to be converted.
+Input iterator addressing the end of the sequence to be converted.
 
 *Intl*<br/>
- A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
+A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
 
 *Iosbase*<br/>
- A format flag which when set indicates that the currency symbol is optional; otherwise, it is required
+A format flag which when set indicates that the currency symbol is optional; otherwise, it is required
 
 *State*<br/>
- Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
+Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
 
 *val*<br/>
- A string storing the converted sequence.
+A string storing the converted sequence.
 
 ### Return Value
 
@@ -274,7 +274,7 @@ explicit money_get(size_t _Refs = 0);
 ### Parameters
 
 *_Refs*<br/>
- Integer value used to specify the type of memory management for the object.
+Integer value used to specify the type of memory management for the object.
 
 ### Remarks
 

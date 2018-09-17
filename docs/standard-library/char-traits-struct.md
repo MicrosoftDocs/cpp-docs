@@ -89,7 +89,7 @@ The character whose value is to be assigned.
 *_CharTo*<br/>
 The element that is to be assigned the character value.
 
-* strTo*
+*strTo*<br/>
 The string or character array whose initial elements are to be assigned character values.
 
 *_Num*<br/>
@@ -168,10 +168,10 @@ static int compare(const char_type* str1,
 
 ### Parameters
 
-* str1*
+*str1*<br/>
 The first of two strings to be compared to each other.
 
-* str2*
+*str2*<br/>
 The second of two strings to be compared to each other.
 
 *_Num*<br/>

@@ -22,7 +22,7 @@ Iterator class for submatches.
 template<class BidIt,
    class Elem = typename std::iterator_traits<BidIt>::value_type,
    class RxTraits = regex_traits<Elem> >
-class regex_token_iterator 
+class regex_token_iterator
 ```
 
 ## Parameters

@@ -158,7 +158,7 @@ explicit student_t_distribution(const param_type& parm);
 
 ### Parameters
 
-*n*  
+*n*<br/>
 The `n` distribution parameter.
 
 *parm*<br/>
@@ -189,10 +189,10 @@ struct param_type {
 
 ### Parameters
 
-*n*  
+*n*<br/>
 The `n` distribution parameter.
 
-*right*  
+*right*<br/>
 The `param_type` object to compare to this.
 
 ### Remarks

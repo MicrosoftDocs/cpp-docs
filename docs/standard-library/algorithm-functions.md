@@ -3650,7 +3650,7 @@ constexpr const Type& min(
     const Type& right,
     BinaryPredicate comp);
 template<class Type>
-constexpr Type min( 
+constexpr Type min(
     initializer_list<Type> );
 template<class Type, class Pr>
 constexpr Type min(
