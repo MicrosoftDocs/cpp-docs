@@ -56,11 +56,7 @@ Now that you've created your application by completing the earlier related walkt
 
 1. In **Solution Explorer** select the **Game Installer** project and choose **View** > **Properties Window** or hit **F4** to open the **Properties** window.
 
-1. Specify additional details as you want it to appear in the installer.  For example, use *Contoso* for **Manufacturer**, *Game Installer* for **Product Name**, and *http://www.contoso.com* for **SupportUrl**.
-  
-1. At the bottom of the **Project Assistant (Game Installer)** tab, choose the **Application Information** link.  
-  
-1. On the **Application Information** page, specify your company name as you want it to appear in the installer. You can use your own company name, or for this example, use *Contoso*. Specify your application name; in this example, specify *Game*. Specify your company web address, or for this example, use *http://www.contoso.com*.  
+1. Specify additional details as you want them to appear in the installer.  For example, use *Contoso* for **Manufacturer**, *Game Installer* for **Product Name**, and *http://www.contoso.com* for **SupportUrl**.
 
 1. On the menu bar, choose **Build** > **Configuration Manager**. In the **Project** table, under the **Build** column, check the box for **Game Installer**. Click **Close**.
   
