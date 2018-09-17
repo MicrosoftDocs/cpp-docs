@@ -39,4 +39,5 @@ The byte stream should be written to a binary file; it can be corrupted if writt
 ## Requirements
 
 Header: \<codecvt>
+
 Namespace: std

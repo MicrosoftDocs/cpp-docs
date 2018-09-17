@@ -37,4 +37,5 @@ The byte stream can be written to either a binary file or a text file.
 ## Requirements
 
 Header: \<codecvt>
+
 Namespace: std
