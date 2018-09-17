@@ -21,7 +21,7 @@ The template class defines its method as returning `val.hash_code()`. The method
 template <>
 struct hash<type_index>
 : public unary_function<type_index, size_t>
- { // hashes a typeinfo object
+{ // hashes a typeinfo object
     size_t operator()(type_index val) const;
 
 };

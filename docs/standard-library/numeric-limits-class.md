@@ -26,7 +26,7 @@ class numeric_limits
 ### Parameters
 
 *Type*<br/>
- The fundamental element data type whose properties are being tested or queried or set.
+The fundamental element data type whose properties are being tested or queried or set.
 
 ## Remarks
 

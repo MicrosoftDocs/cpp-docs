@@ -25,11 +25,11 @@ T exchange(T& val, Other&& new_val)
 
 ### Parameters
 
-*val*  
- The object that will receive the value of new_val.
+*val*<br/>
+The object that will receive the value of new_val.
 
-*new_val*  
- The object whose value is copied or moved into val.
+*new_val*<br/>
+The object whose value is copied or moved into val.
 
 ### Remarks
 
@@ -147,17 +147,17 @@ constexpr T2&& get(pair<T1, T2>&& Pr) noexcept;
 
 ### Parameters
 
-*Index*  
- The 0-based index of the designated element.
+*Index*<br/>
+The 0-based index of the designated element.
 
-*T1*  
- The type of the first pair element.
+*T1*<br/>
+The type of the first pair element.
 
-*T2*  
- The type of the second pair element.
+*T2*<br/>
+The type of the second pair element.
 
-*pr*  
- The pair to select from.
+*pr*<br/>
+The pair to select from.
 
 ### Remarks
 
@@ -218,11 +218,11 @@ pair<T, U> make_pair(T&& Val1, U&& Val2);
 
 ### Parameters
 
-*Val1*  
- Value that initializes the first element of `pair`.
+*Val1*<br/>
+Value that initializes the first element of `pair`.
 
-*Val2*  
- Value that initializes the second element of `pair`.
+*Val2*<br/>
+Value that initializes the second element of `pair`.
 
 ### Return Value
 

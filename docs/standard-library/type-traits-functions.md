@@ -27,11 +27,11 @@ struct is_assignable;
 
 ### Parameters
 
-*To*  
- The type of the object that receives the assignment.
+*To*<br/>
+The type of the object that receives the assignment.
 
-*From*  
- The type of the object that provides the value.
+*From*<br/>
+The type of the object that provides the value.
 
 ### Remarks
 
@@ -48,8 +48,8 @@ struct is_copy_assignable;
 
 ### Parameters
 
-*Ty*  
- The type to query.
+*Ty*<br/>
+The type to query.
 
 ### Remarks
 
@@ -66,8 +66,8 @@ struct is_copy_constructible;
 
 ### Parameters
 
-*Ty*  
- The type to query.
+*Ty*<br/>
+The type to query.
 
 ### Remarks
 
@@ -119,8 +119,8 @@ struct is_default_constructible;
 
 ### Parameters
 
-*T*  
- The type to query.
+*T*<br/>
+The type to query.
 
 ### Remarks
 
@@ -172,8 +172,8 @@ struct is_move_assignable;
 
 ### Parameters
 
-*T*  
- The type to query.
+*T*<br/>
+The type to query.
 
 ### Remarks
 
@@ -190,8 +190,8 @@ struct is_move_constructible;
 
 ### Parameters
 
-*T*  
- The type to be evaluated
+*T*<br/>
+The type to be evaluated
 
 ### Remarks
 
@@ -208,8 +208,8 @@ struct is_nothrow_move_assignable;
 
 ### Parameters
 
-*Ty*  
- The type to query.
+*Ty*<br/>
+The type to query.
 
 ### Remarks
 
@@ -226,8 +226,8 @@ struct is_trivially_copy_assignable;
 
 ### Parameters
 
-*T*  
- The type to query.
+*T*<br/>
+The type to query.
 
 ### Remarks
 
@@ -246,8 +246,8 @@ struct is_trivially_move_assignable;
 
 ### Parameters
 
-*Ty*  
- The type to query.
+*Ty*<br/>
+The type to query.
 
 ### Remarks
 
@@ -276,8 +276,8 @@ struct is_trivially_move_constructible;
 
 ### Parameters
 
-*Ty*  
- The type to query.
+*Ty*<br/>
+The type to query.
 
 ### Remarks
 

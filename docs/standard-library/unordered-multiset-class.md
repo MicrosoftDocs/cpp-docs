@@ -224,8 +224,8 @@ size_type bucket(const Key& keyval) const;
 
 ### Parameters
 
-keyval
- The key value to map.
+*keyval*<br/>
+The key value to map.
 
 ### Remarks
 
@@ -369,8 +369,8 @@ size_type bucket_size(size_type nbucket) const;
 
 ### Parameters
 
-*nbucket*  
- The bucket number.
+*nbucket*<br/>
+The bucket number.
 
 ### Remarks
 
@@ -735,8 +735,8 @@ size_type count(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*  
- Key value to search for.
+*keyval*<br/>
+Key value to search for.
 
 ### Remarks
 
@@ -981,8 +981,8 @@ const_local_iterator end(size_type nbucket) const;
 
 ### Parameters
 
-*nbucket*  
- The bucket number.
+*nbucket*<br/>
+The bucket number.
 
 ### Remarks
 
@@ -1049,8 +1049,8 @@ std::pair<const_iterator, const_iterator>
 
 ### Parameters
 
-*keyval*  
- Key value to search for.
+*keyval*<br/>
+Key value to search for.
 
 ### Remarks
 
@@ -1123,17 +1123,17 @@ size_type erase(
 
 ### Parameters
 
-*Where*  
- Position of the element to be removed.
+*Where*<br/>
+Position of the element to be removed.
 
-*First*  
- Position of the first element to be removed.
+*First*<br/>
+Position of the first element to be removed.
 
-*Last*  
- Position just beyond the last element to be removed.
+*Last*<br/>
+Position just beyond the last element to be removed.
 
-*Key*  
- The key value of the elements to be removed.
+*Key*<br/>
+The key value of the elements to be removed.
 
 ### Return Value
 
@@ -1155,8 +1155,8 @@ const_iterator find(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*  
- Key value to search for.
+*keyval*<br/>
+Key value to search for.
 
 ### Remarks
 
@@ -1768,8 +1768,8 @@ void max_load_factor(float factor);
 
 ### Parameters
 
-*factor*  
- The new maximum load factor.
+*factor*<br/>
+The new maximum load factor.
 
 ### Remarks
 
@@ -2050,8 +2050,8 @@ void rehash(size_type nbuckets);
 
 ### Parameters
 
-*nbuckets*  
- The requested number of buckets.
+*nbuckets*<br/>
+The requested number of buckets.
 
 ### Remarks
 
@@ -2234,8 +2234,8 @@ void swap(unordered_multiset& right);
 
 ### Parameters
 
-*right*  
- The container to swap with.
+*right*<br/>
+The container to swap with.
 
 ### Remarks
 

@@ -19,9 +19,7 @@ Reports a bad function call.
 ## Syntax
 
 ```cpp
-class bad_function_call
- : public std::exception {
- };
+class bad_function_call : public std::exception {};
 ```
 
 ## Remarks

@@ -20,12 +20,12 @@ For more information about Visual C++ run-time libraries, see [CRT Library Featu
 ## In This Section
 
 [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)
- Provides an overview of the Microsoft implementation of the C++ Standard Library.
+Provides an overview of the Microsoft implementation of the C++ Standard Library.
 
 [iostream Programming](../standard-library/iostream-programming.md)
- Provides an overview of iostream programming.
+Provides an overview of iostream programming.
 
 [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
- Provides links to reference topics discussing the C++ Standard Library header files, with code examples.
+Provides links to reference topics discussing the C++ Standard Library header files, with code examples.
 
 

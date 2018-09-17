@@ -20,7 +20,7 @@ Describes characteristics of elements for matching.
 
 ```cpp
 template<class Elem>
-class regex_traits 
+class regex_traits
 ```
 
 ## Parameters

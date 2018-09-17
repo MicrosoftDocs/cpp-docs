@@ -49,21 +49,33 @@ public:
 
 ## Types
 
-`typedef unsigned int result_type;`
+```cpp
+typedef unsigned int result_type;
+```
+
 The type of the elements of the seed sequence. A 32-bit unsigned integer type.
 
 ## Constructors
 
-`seed_seq();`
+```cpp
+seed_seq();
+```
+
 Default constructor, initializes to have an empty internal sequence.
 
-`template<class T>`
- `seed_seq(initializer_list<T> initlist);`
+```cpp
+template<class T>
+seed_seq(initializer_list<T> initlist);
+```
+
 Uses `initlist` to set the internal sequence.
 `T` must be an integer type.
 
-`template<class InputIterator>`
- `seed_seq(InputIterator begin, InputIterator end);`
+```cpp
+template<class InputIterator>
+seed_seq(InputIterator begin, InputIterator end);
+```
+
 Initializes the internal sequence using all elements in the input iterator range provided.
 `iterator_traits<InputIterator>::value_type` must be an integer type.
 
@@ -71,16 +83,28 @@ Initializes the internal sequence using all elements in the input iterator range
 
 ### Generating Functions
 
-`template<class RandomAccessIterator> void generate(RandomAccessIterator begin,          RandomAccessIterator end);`
+```cpp
+template<class RandomAccessIterator>
+void generate(RandomAccessIterator begin,
+          RandomAccessIterator end);
+```
+
 Populates the elements of the provided sequence using an internal algorithm. This algorithm is affected by the internal sequence with which `seed_seq` was initialized.
 Does nothing if `begin == end`.
 
 ### Property Functions
 
-`size_t size() const;`
+```cpp
+size_t size() const;
+```
+
 Returns the number of elements in the `seed_seq`.
 
-`template<class OutputIterator> void param(OutputIterator dest) const;`
+```cpp
+template<class OutputIterator>
+void param(OutputIterator dest) const;
+```
+
 Copies the internal sequence into the output iterator `dest`.
 
 ## Example
