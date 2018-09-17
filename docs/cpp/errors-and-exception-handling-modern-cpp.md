@@ -1,7 +1,7 @@
 ---
 title: "Errors and Exception Handling (Modern C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/17/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -26,41 +26,40 @@ In modern C++, in most scenarios, the preferred way to report and handle both lo
 -   An exception enables a clean separation between the code that detects the error and the code that handles the error.  
   
  The following simplified example shows the necessary syntax for throwing and catching exceptions in C++.  
-  
-```cpp  
+
+```cpp
+
 #include <stdexcept>  
 #include <limits>  
 #include <iostream>  
-  
-using namespace std;  
-class MyClass  
-{  
-public:  
-   void MyFunc(char c)  
-   {  
-      if(c > numeric_limits<char>::max())  
-         throw invalid_argument("MyFunc argument too large.");  
-      //...  
-   }  
-};  
-  
-int main()  
-{  
-   try  
-   {  
-      MyFunc(256); //cause an exception to throw  
-   }  
-  
-   catch(invalid_argument& e)  
-   {  
-      cerr << e.what() << endl;  
-      return -1;  
-   }  
-   //...  
-   return 0;  
-}  
-```  
-  
+
+using namespace std;
+
+void MyFunc(int c)
+{
+    if (c > numeric_limits< char> ::max())
+        throw invalid_argument("MyFunc argument too large.");
+    //...  
+}
+
+int main()
+{
+    try
+    {
+        MyFunc(256); //cause an exception to throw  
+    }
+
+    catch (invalid_argument& e)
+    {
+        cerr << e.what() << endl;
+        return -1;
+    }
+    //...  
+    return 0;
+}
+
+```
+
  Exceptions in C++ resemble those in languages such as C# and Java. In the **try** block, if an exception is *thrown* it will be *caught* by the first associated **catch** block whose type matches that of the exception. In other words, execution jumps from the **throw** statement to the **catch** statement. If no usable catch block is found, `std::terminate` is invoked and the program exits. In C++, any type may be thrown; however, we recommend that you throw a type that derives directly or indirectly from `std::exception`. In the previous example, the exception type, [invalid_argument](../standard-library/invalid-argument-class.md), is defined in the standard library in the [\<stdexcept>](../standard-library/stdexcept.md) header file. C++ does not provide, and does not require, a **finally** block to make sure that all resources are released if an exception is thrown. The resource acquisition is initialization (RAII) idiom, which uses smart pointers, provides the required functionality for resource cleanup. For more information, see [How to: Design for Exception Safety](../cpp/how-to-design-for-exception-safety.md). For information about the C++ stack-unwinding mechanism, see [Exceptions and Stack Unwinding](../cpp/exceptions-and-stack-unwinding-in-cpp.md).  
   
 ## Basic guidelines  
