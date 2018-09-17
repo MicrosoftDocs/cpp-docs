@@ -21,18 +21,19 @@ Lets you provide internal compiler error (ICE) information directly to Microsoft
 /errorReport:[ none | prompt | queue | send ]  
 ```  
   
-## Arguments  
- **none**  
- Reports about internal compiler errors will not be collected or sent to Microsoft.  
+## Arguments
+
+**none**<br/>
+Reports about internal compiler errors will not be collected or sent to Microsoft.  
   
- **prompt**  
- Prompts you to send a report when you receive an internal compiler error. **prompt** is the default when an application is compiled in the development environment.  
+**prompt**<br/>
+Prompts you to send a report when you receive an internal compiler error. **prompt** is the default when an application is compiled in the development environment.  
   
- **queue**  
- Queues the error report. When you log in with administrator privileges, a window is displayed so that you can report any failures since the last time you were logged in (you will not be prompted to send reports for failures more than once every three days). **queue** is the default when an application is compiled at a command prompt.  
+**queue**<br/>
+Queues the error report. When you log in with administrator privileges, a window is displayed so that you can report any failures since the last time you were logged in (you will not be prompted to send reports for failures more than once every three days). **queue** is the default when an application is compiled at a command prompt.  
   
- **send**  
- Automatically sends reports of internal compiler errors to Microsoft if reporting is enabled by the Windows Error Reporting system settings.  
+**send**<br/>
+Automatically sends reports of internal compiler errors to Microsoft if reporting is enabled by the Windows Error Reporting system settings.  
   
 ## Remarks  
  An internal compiler error (ICE) results when the compiler cannot process a source code file. When an ICE occurs, the compiler does not produce an output file or any useful diagnostic that you can use to fix your code.  

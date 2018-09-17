@@ -21,12 +21,13 @@ Lets you specify the source character set for your executable.
 /source-charset:[IANA_name|.CPID]  
 ```  
   
-## Arguments  
- **IANA_name**  
- The IANA-defined character set name.  
+## Arguments
+
+**IANA_name**<br/>
+The IANA-defined character set name.  
   
- **CPID**  
- The code page identifier as a decimal number.  
+**CPID**<br/>
+The code page identifier as a decimal number.  
   
 ## Remarks  
  You can use the **/source-charset** option to specify an extended source character set to use when your source files include characters that are not represented in the basic source character set. The source character set is the encoding used to interpret the source text of your program into the internal representation used as input to the preprocessing phases before compilation. The internal representation is then converted to the execution character set to store string and character values in the executable. You can use either the IANA or ISO character set name, or a dot (.) followed by a 3 to 5 digit decimal code page identifier to specify the character set to use. For a list of supported code page identifiers and character set names, see [Code Page Identifiers](/windows/desktop/Intl/code-page-identifiers).  

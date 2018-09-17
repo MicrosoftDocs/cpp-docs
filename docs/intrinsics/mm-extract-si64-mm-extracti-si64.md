@@ -13,9 +13,10 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _mm_extract_si64, _mm_extracti_si64
+
 **Microsoft Specific**  
   
- Generates the `extrq` instruction to extract specified bits from the low 64 bits of its first argument.  
+Generates the `extrq` instruction to extract specified bits from the low 64 bits of its first argument.  
   
 ## Syntax  
   
@@ -100,8 +101,9 @@ result2 = 0x30eca86
 result3 = 0x30eca86  
 ```  
   
-**END Microsoft Specific**  
- Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
+**END Microsoft Specific**
+
+Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
   
 ## See Also  
  [_mm_insert_si64, _mm_inserti_si64](../intrinsics/mm-insert-si64-mm-inserti-si64.md)   

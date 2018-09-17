@@ -16,12 +16,15 @@ Use this dialog box to specify advanced options for [Mt.exe](https://msdn.micros
   
  To access this property page dialog box, open the property pages for your project or your property sheet. Expand the **Manifest Tool** node under **Configuration Properties**, and then select **Advanced**.  
   
-## UIElement List  
- **Update File Hashes**  
- Uses the /hashupdate option to specify that the manifest tool will compute the hash of files specified in `<file>` elements, and then update the hash attributes with the computed value.  
+## UIElement List
+
+- **Update File Hashes**
+
+   Uses the /hashupdate option to specify that the manifest tool will compute the hash of files specified in `<file>` elements, and then update the hash attributes with the computed value.  
   
- **Update File Hashes Search Path**  
- Specifies the search path for files that are referenced in `<file>` elements. This option also uses the /hashupdate option.  
+- **Update File Hashes Search Path**
+
+   Specifies the search path for files that are referenced in `<file>` elements. This option also uses the /hashupdate option.  
   
 ## See Also  
  [\<file> Element](/visualstudio/deployment/file-element-clickonce-application)   

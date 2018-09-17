@@ -33,115 +33,143 @@ A Windows toolbar common control has built-in customization features, including 
   
  These messages are all **WM_NOTIFY** messages, and they can be handled in your owner window by adding message-map entries of the following form to your owner window's message map:  
   
- `ON_NOTIFY( wNotifyCode, idControl, memberFxn )`  
+```cpp
+ON_NOTIFY( wNotifyCode, idControl, memberFxn )
+```
+
+- **wNotifyCode**
+
+   Notification message identifier code, such as **TBN_BEGINADJUST**.
+
+- **idControl**
+
+   The identifier of the control sending the notification.
+
+- **memberFxn**
+
+   The member function to be called when this notification is received.  
   
- `wNotifyCode`  
- Notification message identifier code, such as **TBN_BEGINADJUST**.  
+Your member function would be declared with the following prototype:  
   
- `idControl`  
- The identifier of the control sending the notification.  
-  
- `memberFxn`  
- The member function to be called when this notification is received.  
-  
- Your member function would be declared with the following prototype:  
-  
- `afx_msg void memberFxn( NMHDR * pNotifyStruct, LRESULT * result );`  
-  
+```cpp
+afx_msg void memberFxn( NMHDR * pNotifyStruct, LRESULT * result );
+```
+
  If the notification message handler returns a value, it should put it in the **LRESULT** pointed to by *result*.  
   
  For each message, `pNotifyStruct` points to either an **NMHDR** structure or a **TBNOTIFY** structure. These structures are described below:  
   
  The **NMHDR** structure contains the following members:  
   
- `typedef struct tagNMHDR {`  
+```cpp
+typedef struct tagNMHDR {
+    HWND hwndFrom;  // handle of control sending message
+    UINT idFrom;// identifier of control sending message
+    UINT code;  // notification code; see below
+} NMHDR;
+```
+
+- **hwndFrom**
+
+   Window handle of the control that is sending the notification. To convert this handle to a `CWnd` pointer, use [CWnd::FromHandle](../mfc/reference/cwnd-class.md#fromhandle).  
   
- `HWND hwndFrom;  // handle of control sending message`  
+- **idFrom**
+
+   Identifier of the control sending the notification.  
   
- `UINT idFrom;// identifier of control sending message`  
+- **code**
+
+   Notification code. This member can be a value specific to a control type, such as **TBN_BEGINADJUST** or **TTN_NEEDTEXT**, or it can be one of the common notification values listed below:  
   
- `UINT code;  // notification code; see below`  
+   - **NM_CLICK** The user has clicked the left mouse button within the control.  
   
- `} NMHDR;`  
+   - **NM_DBLCLK** The user has double-clicked the left mouse button within the control.  
   
- **hwndFrom**  
- Window handle of the control that is sending the notification. To convert this handle to a `CWnd` pointer, use [CWnd::FromHandle](../mfc/reference/cwnd-class.md#fromhandle).  
+   - **NM_KILLFOCUS** The control has lost the input focus.  
   
- **idFrom**  
- Identifier of the control sending the notification.  
+   - **NM_OUTOFMEMORY** The control could not complete an operation because there is not enough memory available.  
   
- **code**  
- Notification code. This member can be a value specific to a control type, such as **TBN_BEGINADJUST** or **TTN_NEEDTEXT**, or it can be one of the common notification values listed below:  
+   - **NM_RCLICK** The user has clicked the right mouse button within the control.  
   
--   **NM_CLICK** The user has clicked the left mouse button within the control.  
+   - **NM_RDBLCLK** The user has double-clicked the right mouse button within the control.  
   
--   **NM_DBLCLK** The user has double-clicked the left mouse button within the control.  
+   - **NM_RETURN** The control has the input focus, and the user has pressed the ENTER key.  
   
--   **NM_KILLFOCUS** The control has lost the input focus.  
+   - **NM_SETFOCUS** The control has received the input focus.  
   
--   **NM_OUTOFMEMORY** The control could not complete an operation because there is not enough memory available.  
+The **TBNOTIFY** structure contains the following members:  
   
--   **NM_RCLICK** The user has clicked the right mouse button within the control.  
+```cpp
+typedef struct {
+    NMHDR hdr; // information common to all WM_NOTIFY messages
+    int iItem; // index of button associated with notification
+    TBBUTTON tbButton; // info about button associated withnotification
+    int cchText;   // count of characters in button text
+    LPSTR lpszText;// address of button text
+} TBNOTIFY, FAR* LPTBNOTIFY;
+```
   
--   **NM_RDBLCLK** The user has double-clicked the right mouse button within the control.  
+- **hdr**
+
+   Information common to all **WM_NOTIFY** messages.  
   
--   **NM_RETURN** The control has the input focus, and the user has pressed the ENTER key.  
+- **iItem**
+
+   Index of button associated with notification.  
   
--   **NM_SETFOCUS** The control has received the input focus.  
+- **tbButton**
+
+   **TBBUTTON** structure that contains information about the toolbar button associated with the notification.  
   
- The **TBNOTIFY** structure contains the following members:  
+- **cchText**
+
+   Count of characters in button text.  
   
- `typedef struct {`  
+- **lpszText**
+
+   Pointer to button text.  
   
- `NMHDR hdr; // information common to all WM_NOTIFY messages`  
+The notifications the toolbar sends are as follows:  
   
- `int iItem; // index of button associated with notification`  
+- **TBN_BEGINADJUST**
+
+   Sent when the user begins customizing a toolbar control. The pointer points to an **NMHDR** structure that contains information about the notification. The handler doesn't need to return any specific value.  
   
- `TBBUTTON tbButton; // info about button associated withnotification`  
+- **TBN_BEGINDRAG**
+
+   Sent when the user begins dragging a button in a toolbar control. The pointer points to a **TBNOTIFY** structure. The **iItem** member contains the zero-based index of the button being dragged. The handler doesn't need to return any specific value.  
   
- `int cchText;   // count of characters in button text`  
+- **TBN_CUSTHELP**
+
+   Sent when the user chooses the Help button in the Customize Toolbar dialog box. No return value. The pointer points to an **NMHDR** structure that contains information about the notification message. The handler doesn't need to return any specific value.  
   
- `LPSTR lpszText;// address of button text`  
+- **TBN_ENDADJUST**
+
+   Sent when the user stops customizing a toolbar control. The pointer points to an **NMHDR** structure that contains information about the notification message. The handler doesn't need to return any specific value.  
   
- `} TBNOTIFY, FAR* LPTBNOTIFY;`  
+- **TBN_ENDDRAG**
+
+   Sent when the user stops dragging a button in a toolbar control. The pointer points to a **TBNOTIFY** structure. The **iItem** member contains the zero-based index of the button being dragged. The handler doesn't need to return any specific value.  
   
-## Remarks  
- **hdr**  
- Information common to all **WM_NOTIFY** messages.  
+- **TBN_GETBUTTONINFO**
+
+   Sent when the user is customizing a toolbar control. The toolbar uses this notification message to retrieve information needed by the Customize Toolbar dialog box. The pointer points to a **TBNOTIFY** structure. The **iItem** member specifies the zero-based index of a button. The **pszText** and **cchText** members specify the address and length, in characters, of the current button text. An application should fill the structure with information about the button. Return **TRUE** if button information was copied to the structure, or **FALSE** otherwise.  
   
- **iItem**  
- Index of button associated with notification.  
+- **TBN_QUERYDELETE**
+
+   Sent while the user is customizing a toolbar to determine whether a button may be deleted from a toolbar control. The pointer points to a **TBNOTIFY** structure. The **iItem** member contains the zero-based index of the button to be deleted. Return **TRUE** to allow the button to be deleted or **FALSE** to prevent the button from being deleted.  
   
- **tbButton**  
- **TBBUTTON** structure that contains information about the toolbar button associated with the notification.  
+- **TBN_QUERYINSERT**
+
+   Sent while the user is customizing a toolbar control to determine whether a button may be inserted to the left of the given button. The pointer points to a **TBNOTIFY** structure. The **iItem** member contains the zero-based index of the button to be inserted. Return **TRUE** to allow a button to be inserted in front of the given button or **FALSE** to prevent the button from being inserted.  
   
- **cchText**  
- Count of characters in button text.  
+- **TBN_RESET**
+
+   Sent when the user resets the content of the Customize Toolbar dialog box. The pointer points to an **NMHDR** structure that contains information about the notification message. The handler doesn't need to return any specific value.  
   
- **lpszText**  
- Pointer to button text.  
-  
- The notifications the toolbar sends are as follows:  
-  
--   **TBN_BEGINADJUST** Sent when the user begins customizing a toolbar control. The pointer points to an **NMHDR** structure that contains information about the notification. The handler doesn't need to return any specific value.  
-  
--   **TBN_BEGINDRAG** Sent when the user begins dragging a button in a toolbar control. The pointer points to a **TBNOTIFY** structure. The **iItem** member contains the zero-based index of the button being dragged. The handler doesn't need to return any specific value.  
-  
--   **TBN_CUSTHELP** Sent when the user chooses the Help button in the Customize Toolbar dialog box. No return value. The pointer points to an **NMHDR** structure that contains information about the notification message. The handler doesn't need to return any specific value.  
-  
--   **TBN_ENDADJUST** Sent when the user stops customizing a toolbar control. The pointer points to an **NMHDR** structure that contains information about the notification message. The handler doesn't need to return any specific value.  
-  
--   **TBN_ENDDRAG** Sent when the user stops dragging a button in a toolbar control. The pointer points to a **TBNOTIFY** structure. The **iItem** member contains the zero-based index of the button being dragged. The handler doesn't need to return any specific value.  
-  
--   **TBN_GETBUTTONINFO** Sent when the user is customizing a toolbar control. The toolbar uses this notification message to retrieve information needed by the Customize Toolbar dialog box. The pointer points to a **TBNOTIFY** structure. The **iItem** member specifies the zero-based index of a button. The **pszText** and **cchText** members specify the address and length, in characters, of the current button text. An application should fill the structure with information about the button. Return **TRUE** if button information was copied to the structure, or **FALSE** otherwise.  
-  
--   **TBN_QUERYDELETE** Sent while the user is customizing a toolbar to determine whether a button may be deleted from a toolbar control. The pointer points to a **TBNOTIFY** structure. The **iItem** member contains the zero-based index of the button to be deleted. Return **TRUE** to allow the button to be deleted or **FALSE** to prevent the button from being deleted.  
-  
--   **TBN_QUERYINSERT** Sent while the user is customizing a toolbar control to determine whether a button may be inserted to the left of the given button. The pointer points to a **TBNOTIFY** structure. The **iItem** member contains the zero-based index of the button to be inserted. Return **TRUE** to allow a button to be inserted in front of the given button or **FALSE** to prevent the button from being inserted.  
-  
--   **TBN_RESET** Sent when the user resets the content of the Customize Toolbar dialog box. The pointer points to an **NMHDR** structure that contains information about the notification message. The handler doesn't need to return any specific value.  
-  
--   **TBN_TOOLBARCHANGE** Sent after the user has customized a toolbar control. The pointer points to an **NMHDR** structure that contains information about the notification message. The handler doesn't need to return any specific value.  
+- **TBN_TOOLBARCHANGE**
+
+   Sent after the user has customized a toolbar control. The pointer points to an **NMHDR** structure that contains information about the notification message. The handler doesn't need to return any specific value.  
   
 ## See Also  
  [Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)   

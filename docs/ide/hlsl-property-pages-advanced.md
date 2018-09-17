@@ -14,12 +14,15 @@ ms.workload: ["cplusplus"]
 # HLSL Property Pages: Advanced
 To configure the following properties of the HLSL compiler (fxc.exe), use its **Advanced** property page. For information about how to access the **Advanced** property page in the HLSL folder, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
-## UIElement List  
- **Suppress Startup Banner**  
- **Yes (/nologo)** to suppress the display of the startup banner and information message; otherwise, **No**. By default, the value is **Yes (/nologo)**.  
+## UIElement List
+
+- **Suppress Startup Banner**
+
+   **Yes (/nologo)** to suppress the display of the startup banner and information message; otherwise, **No**. By default, the value is **Yes (/nologo)**.  
   
- **Treat Warnings As Errors**  
- **Yes (/WX)** to treat all compiler warnings as errors; otherwise, **No**.  
+- **Treat Warnings As Errors**
+
+   **Yes (/WX)** to treat all compiler warnings as errors; otherwise, **No**.  
   
 ## See Also  
  [HLSL Property Pages](../ide/hlsl-property-pages.md)   

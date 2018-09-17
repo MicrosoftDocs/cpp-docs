@@ -20,10 +20,11 @@ Use this page of the wizard to define the type of control you are creating and t
 
 ## UIElement List
 
-**Control type**  
+### Control type
+
 The kind of control you want to create.
 
-- **Standard control: An ActiveX control.**
+- **Standard control**: An ActiveX control.
 
 - **Composite control**: An ActiveX control that can contain (similar to a dialog box) other ActiveX controls or Windows controls. A composite control includes the following:
 
@@ -43,10 +44,12 @@ The kind of control you want to create.
 
      For more information, see [Identifying the Elements of the DHTML Control Project](../../atl/identifying-the-elements-of-the-dhtml-control-project.md).
 
-**Minimal control**  
+### Minimal control
+
 Supports only the interfaces that are absolutely needed by most containers. You can set **Minimal control** for any of the control types: you can create a minimal standard control, a minimal composite control, or a minimal DHTML control.
 
-**Aggregation**  
+### Aggregation
+
 Adds aggregation support for the control you are creating. For more information, see [Aggregation](../../atl/aggregation.md).
 
 - **Yes**: Create a control that can be aggregated.
@@ -55,25 +58,28 @@ Adds aggregation support for the control you are creating. For more information,
 
 - **Only**: Create a control that can only be instantiated through aggregation.
 
-**Threading model**  
+### Threading model
+
 Specifies that the threading model used by the control.
 
 - **Single**: The control will run only in the primary COM thread.
 
 - **Apartment**: The control can be created in any single thread apartment. The default.
 
-**Interface**  
+### Interface
+
 The type of interface this control exposes to the container.
 
 - **Dual**: Creates an interface that exposes properties and methods through `IDispatch` and directly through the VTBL.
 
 - **Custom**: Creates an interface that exposes methods directly through a VTBL.
 
-     If you select **Custom**, then you can specify that the control is **Automation compatible**. If you select **Automation compatible**, then the wizard adds the [oleautomation](../../windows/oleautomation.md) attribute to the interface in the IDL, and the interface can be marshaled by the universal marshaler in oleaut32.dll. See [Marshaling Details](/windows/desktop/com/marshaling-details) in the Windows SDK for more information.
+   If you select **Custom**, then you can specify that the control is **Automation compatible**. If you select **Automation compatible**, then the wizard adds the [oleautomation](../../windows/oleautomation.md) attribute to the interface in the IDL, and the interface can be marshaled by the universal marshaler in oleaut32.dll. See [Marshaling Details](/windows/desktop/com/marshaling-details) in the Windows SDK for more information.
 
-     Additionally, if you select **Automation compatible**, then all parameters for all methods in the control must be VARIANT compatible.
+   Additionally, if you select **Automation compatible**, then all parameters for all methods in the control must be VARIANT compatible.
 
-**Support**  
+### Support
+
 Sets additional miscellaneous support for the control.
 
 - **Connection points**: Enables connection points for your object by making your object's class derive from [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) and allowing it to expose a source interface.

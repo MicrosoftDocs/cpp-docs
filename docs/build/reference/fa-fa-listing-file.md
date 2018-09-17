@@ -29,38 +29,38 @@ By default, each listing file gets the same base name as the source file, and ha
 
 ### /FA arguments
 
-none  
+none<br/>
 Only assembler language is included in the listing.
 
-**c**  
+**c**<br/>
 Optional. Includes machine code in the listing.
 
-**s**  
+**s**<br/>
 Optional. Includes source code in the listing.
 
-**u**  
+**u**<br/>
 Optional. Encodes the listing file in UTF-8 format, and includes a byte order marker. By default, the file is encoded as ANSI. Use `u` to create a listing file that displays correctly on any system, or if you are using Unicode source code files as input to the compiler.
 
 If both **s** and **u** are specified, and if a source code file uses a Unicode encoding other than UTF-8, then the code lines in the .asm file may not display correctly.
 
 ### /Fa argument
 
-none  
+none<br/>
 One *source*.asm file is created for each source code file in the compilation.
 
-*filename*  
+*filename*<br/>
 A listing file named *filename*.asm is placed in the current directory. This is only valid when compiling a single source code file.
 
-*filename.extension*  
+*filename.extension*<br/>
 A listing file named *filename.extension* is placed in the current directory. This is only valid when compiling a single source code file.
 
-*directory*__\\__  
+*directory*__\\__<br/>
 One *source_file*.asm file is created and placed in the specified *directory* for each source code file in the compilation. Note the required trailing backslash. Only paths on the current disk are allowed.
 
-*directory*__\\__*filename*  
+*directory*__\\__*filename*<br/>
 A listing file named *filename*.asm is placed in the specified *directory*. This is only valid when compiling a single source code file.
 
-*directory*__\\__*filename.extension*  
+*directory*__\\__*filename.extension*<br/>
 A listing file named *filename.extension* is placed in the specified *directory*. This is only valid when compiling a single source code file.
 
 ### To set this compiler option in the Visual Studio development environment

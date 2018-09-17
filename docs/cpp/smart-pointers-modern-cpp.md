@@ -60,8 +60,9 @@ In modern C++ programming, the Standard Library includes *smart pointers*, which
 ## Kinds of Smart Pointers  
  The following section summarizes the different kinds of smart pointers that are available in the Windows programming environment and describes when to use them.  
   
- **C++ Standard Library Smart Pointers**  
- Use these smart pointers as a first choice for encapsulating pointers to plain old C++ objects (POCO).  
+### C++ Standard Library Smart Pointers
+
+Use these smart pointers as a first choice for encapsulating pointers to plain old C++ objects (POCO).  
   
 -   `unique_ptr`   
      Allows exactly one owner of the underlying pointer. Use as the default choice for POCO unless you know for certain that you require a `shared_ptr`. Can be moved to a new owner, but not copied or shared. Replaces `auto_ptr`, which is deprecated. Compare to `boost::scoped_ptr`. `unique_ptr` is small and efficient; the size is one pointer and it supports rvalue references for fast insertion and retrieval from C++ Standard Library collections. Header file: `<memory>`. For more information, see [How to: Create and Use unique_ptr Instances](../cpp/how-to-create-and-use-unique-ptr-instances.md) and [unique_ptr Class](../standard-library/unique-ptr-class.md).  
@@ -72,8 +73,9 @@ In modern C++ programming, the Standard Library includes *smart pointers*, which
 -   `weak_ptr`   
     Special-case smart pointer for use in conjunction with `shared_ptr`. A `weak_ptr` provides access to an object that is owned by one or more `shared_ptr` instances, but does not participate in reference counting. Use when you want to observe an object, but do not require it to remain alive. Required in some cases to break circular references between `shared_ptr` instances. Header file: `<memory>`. For more information, see [How to: Create and Use weak_ptr Instances](../cpp/how-to-create-and-use-weak-ptr-instances.md) and [weak_ptr Class](../standard-library/weak-ptr-class.md).  
   
- **Smart Pointers for COM Objects (Classic Windows Programming)**  
- When you work with COM objects, wrap the interface pointers in an appropriate smart pointer type. The Active Template Library (ATL) defines several smart pointers for various purposes. You can also use the `_com_ptr_t` smart pointer type, which the compiler uses when it creates wrapper classes from .tlb files. It's the best choice when you do not want to include the ATL header files.  
+### Smart Pointers for COM Objects (Classic Windows Programming)
+
+When you work with COM objects, wrap the interface pointers in an appropriate smart pointer type. The Active Template Library (ATL) defines several smart pointers for various purposes. You can also use the `_com_ptr_t` smart pointer type, which the compiler uses when it creates wrapper classes from .tlb files. It's the best choice when you do not want to include the ATL header files.  
   
  [CComPtr Class](../atl/reference/ccomptr-class.md)  
  Use this unless you cannot use ATL. Performs reference counting by using the `AddRef` and `Release` methods. For more information, see [How to: Create and Use CComPtr and CComQIPtr Instances](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md).  
@@ -90,8 +92,9 @@ In modern C++ programming, the Standard Library includes *smart pointers*, which
  [_com_ptr_t Class](../cpp/com-ptr-t-class.md)  
  Resembles `CComQIPtr` in functionality but does not depend on ATL headers.  
   
- **ATL Smart Pointers for POCO Objects**  
- In addition to smart pointers for COM objects, ATL also defines smart pointers, and collections of smart pointers, for plain old C++ objects. In classic Windows programming, these types are useful alternatives to the C++ Standard Library collections, especially when code portability is not required or when you do not want to mix the programming models of the C++ Standard Library and ATL.  
+### ATL Smart Pointers for POCO Objects
+
+In addition to smart pointers for COM objects, ATL also defines smart pointers, and collections of smart pointers, for plain old C++ objects. In classic Windows programming, these types are useful alternatives to the C++ Standard Library collections, especially when code portability is not required or when you do not want to mix the programming models of the C++ Standard Library and ATL.  
   
  [CAutoPtr Class](../atl/reference/cautoptr-class.md)  
  Smart pointer that enforces unique ownership by transferring ownership on copy. Comparable to the deprecated `std::auto_ptr` Class.  

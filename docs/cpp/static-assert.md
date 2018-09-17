@@ -20,8 +20,7 @@ Tests a software assertion at compile time. If the specified constant expression
 ```   
 static_assert( constant-expression, string-literal );  
 
-**Visual Studio 2017 and later:**
-static_assert( constant-expression ); 
+static_assert( constant-expression ); // Visual Studio 2017 and later
 ```  
   
 #### Parameters  

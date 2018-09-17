@@ -20,10 +20,10 @@ Print the disassembly of code sections in the DUMPBIN output.
 
 ### Arguments
 
-**BYTES**  
+**BYTES**<br/>
 Includes the instruction bytes together with the interpreted opcodes and arguments in the disassembly output. This is the default option.
 
-**NOBYTES**  
+**NOBYTES**<br/>
 Does not include the instruction bytes in the disassembly output.
 
 ## Remarks

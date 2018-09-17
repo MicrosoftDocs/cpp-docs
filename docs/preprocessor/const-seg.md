@@ -1,7 +1,7 @@
 ---
 title: "const_seg | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/17/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 f1_keywords: ["vc-pragma.const_seg", "const_seg_CPP"]
@@ -21,6 +21,25 @@ Specifies the segment where [const](../cpp/const-cpp.md) variables are stored in
 #pragma const_seg ( [ [ { push | pop}, ] [ identifier, ] ] [ "segment-name" [, "segment-class" ] )  
 ```  
   
+### Parameters
+
+**push**<br/>
+(Optional) Puts a record on the internal compiler stack. A **push** can have an *identifier* and *segment-name*.  
+  
+**pop**<br/>
+(Optional) Removes a record from the top of the internal compiler stack.  
+  
+*identifier*<br/>
+(Optional) When used with **push**, assigns a name to the record on the internal compiler stack. When used with **pop**, pops records off the internal stack until *identifier* is removed; if *identifier* is not found on the internal stack, nothing is popped.  
+  
+Using *identifier* enables multiple records to be popped with a single **pop** command.  
+  
+"*segment-name*"<br/>  
+(Optional) The name of a segment. When used with **pop**, the stack is popped and *segment-name* becomes the active segment name.  
+  
+"*segment-class*"<br/>
+(Optional) Included for compatibility with C++ prior to version 2.0. It is ignored.  
+  
 ## Remarks
 
 The meaning of the terms *segment* and *section* are interchangeable in this topic.  
@@ -29,25 +48,8 @@ OBJ files can be viewed with the [dumpbin](../build/reference/dumpbin-command-li
   
 Defining an object requiring dynamic initialization in a `const_seg` results in undefined behavior.  
   
-`#pragma const_seg` with no parameters resets the segment to .rdata.  
-  
-**push**  
-(Optional) Puts a record on the internal compiler stack. A **push** can have an *identifier* and *segment-name*.  
-  
-**pop**  
-(Optional) Removes a record from the top of the internal compiler stack.  
-  
-*identifier*  
-(Optional) When used with **push**, assigns a name to the record on the internal compiler stack. When used with **pop**, pops records off the internal stack until *identifier* is removed; if *identifier* is not found on the internal stack, nothing is popped.  
-  
-Using *identifier* enables multiple records to be popped with a single **pop** command.  
-  
-"*segment-name*"  
-(Optional) The name of a segment. When used with **pop**, the stack is popped and *segment-name* becomes the active segment name.  
-  
-"*segment-class*"  
-(Optional) Included for compatibility with C++ prior to version 2.0. It is ignored.  
-  
+`#pragma const_seg` with no parameters resets the segment to .rdata.
+
 ## Example  
   
 ```cpp  

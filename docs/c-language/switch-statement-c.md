@@ -28,18 +28,20 @@ Control passes to the statement whose **case** *constant-expression* matches the
   
 Use of the `switch` statement usually looks something like this:  
 
-**switch** ( *expression* )  
-**{**  
-&nbsp;&nbsp;&nbsp;&nbsp;*declarations*  
-&nbsp;&nbsp;&nbsp;&nbsp;/\* . . . \*/  
-&nbsp;&nbsp;&nbsp;&nbsp;**case** *constant-expression* **:**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* statements executed if the expression equals the \*/  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* value of this constant-expression \*/  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**break;**  
-&nbsp;&nbsp;&nbsp;&nbsp;**default :**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* statements executed if expression does not equal \*/  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* any case constant-expression \*/  
-**}**
+```C
+switch ( expression )
+{
+    // declarations
+    // . . .
+    case constant_expression:
+        // statements executed if the expression equals the
+        // value of this constant_expression
+        break;
+    default:
+        // statements executed if expression does not equal
+        // any case constant_expression
+}
+```
 
 You can use the **break** statement to end processing of a particular case within the `switch` statement and to branch to the end of the `switch` statement. Without **break**, the program continues to the next case, executing the statements until a **break** or the end of the statement is reached. In some situations, this continuation may be desirable.
 

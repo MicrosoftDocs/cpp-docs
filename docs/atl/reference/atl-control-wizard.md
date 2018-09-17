@@ -39,49 +39,58 @@ Specify the names for the object, interface, and classes to be added to your pro
 
 Provides information for the C++ class created to implement the object.
 
-**Short name**  
-Sets the abbreviated name for the object. The name that you provide determines the class and **Coclass** names, the file (.CPP and .H) names, the interface name, and the **Type** names, unless you change those fields individually.
+- **Short name**
 
-**Class**  
-Sets the name of the class that implements the object. This name is based on the name that you provide in **Short name**, preceded by 'C', the typical prefix for a class name.
+   Sets the abbreviated name for the object. The name that you provide determines the class and **Coclass** names, the file (.CPP and .H) names, the interface name, and the **Type** names, unless you change those fields individually.
 
-**.h file**  
-Sets the name of the header file for the new object's class. By default, this name is based on the name that you provide in **Short name**. Click the ellipsis button to save the file name to the location of your choice, or to append the class declaration to an existing file. If you select an existing file, the wizard will not save it to the selected location until you click **Finish**.
+- **Class**
 
-The wizard does not overwrite a file. If you select the name of an existing file, when you click **Finish**, the wizard prompts you to indicate whether the class declaration should be appended to the contents of the file. Click **Yes** to append the file; click **No** to return to the wizard and specify another file name.
+   Sets the name of the class that implements the object. This name is based on the name that you provide in **Short name**, preceded by 'C', the typical prefix for a class name.
 
-**.cpp file**  
-Sets the name of the implementation file for the new object's class. By default, this name is based on the name that you provide in **Short name**. Click the ellipsis button to save the file name to the location of your choice. The file is not saved to the selected location until you click **Finish** in the wizard.
+- **.h file**
 
-The wizard does not overwrite a file. If you select the name of an existing file, when you click **Finish**, the wizard prompts you to indicate whether the class implementation should be appended to the contents of the file. Click **Yes** to append the file; click **No** to return to the wizard and specify another file name.
+   Sets the name of the header file for the new object's class. By default, this name is based on the name that you provide in **Short name**. Click the ellipsis button to save the file name to the location of your choice, or to append the class declaration to an existing file. If you select an existing file, the wizard will not save it to the selected location until you click **Finish**.
 
-**Attributed**  
-Indicates whether the object uses attributes. If you are adding an object to an attributed ATL project, this option is selected and not available to change. That is, you can add only attributed objects to a project created with attribute support.
+   The wizard does not overwrite a file. If you select the name of an existing file, when you click **Finish**, the wizard prompts you to indicate whether the class declaration should be appended to the contents of the file. Click **Yes** to append the file; click **No** to return to the wizard and specify another file name.
 
-You can add an attributed object only to an ATL project that uses attributes. If you select this option for an ATL project that does not have attribute support, the wizard prompts you to specify whether you want to add attribute support to the project.
+- **.cpp file**
 
-By default, any objects you add after you set this option are designated as attributed (the check box is selected). You can clear this box to add an object that does not use attributes.
+   Sets the name of the implementation file for the new object's class. By default, this name is based on the name that you provide in **Short name**. Click the ellipsis button to save the file name to the location of your choice. The file is not saved to the selected location until you click **Finish** in the wizard.
 
-See [Application Settings, ATL Project Wizard](../../atl/reference/application-settings-atl-project-wizard.md) and [Basic Mechanics of Attributes](../../windows/basic-mechanics-of-attributes.md) for more information.
+   The wizard does not overwrite a file. If you select the name of an existing file, when you click **Finish**, the wizard prompts you to indicate whether the class implementation should be appended to the contents of the file. Click **Yes** to append the file; click **No** to return to the wizard and specify another file name.
+
+- **Attributed**
+
+   Indicates whether the object uses attributes. If you are adding an object to an attributed ATL project, this option is selected and not available to change. That is, you can add only attributed objects to a project created with attribute support.
+
+   You can add an attributed object only to an ATL project that uses attributes. If you select this option for an ATL project that does not have attribute support, the wizard prompts you to specify whether you want to add attribute support to the project.
+
+   By default, any objects you add after you set this option are designated as attributed (the check box is selected). You can clear this box to add an object that does not use attributes.
+
+   See [Application Settings, ATL Project Wizard](../../atl/reference/application-settings-atl-project-wizard.md) and [Basic Mechanics of Attributes](../../windows/basic-mechanics-of-attributes.md) for more information.
 
 ### COM
 
 Provides information about the COM functionality for the object.
 
-**Coclass**  
-Sets the name of the component class that contains a list of interfaces supported by the object.
+- **Coclass**
 
-> [!NOTE]
->  If you create your project using attributes, or if you indicate on this wizard page that the control uses attributes, you cannot change this option because ATL does not include the **coclass** attribute.
+   Sets the name of the component class that contains a list of interfaces supported by the object.
 
-**Interface**  
-Sets the name of the interface for the object. By default an interface name is prepended with "I".
+   > [!NOTE]
+   > If you create your project using attributes, or if you indicate on this wizard page that the control uses attributes, you cannot change this option because ATL does not include the **coclass** attribute.
 
-**Type**  
-Sets the object description that will appear in the registry
+- **Interface**
 
-**ProgID**  
-Sets the name that containers can use instead of the CLSID of the object. This field is not automatically populated. If you do not manually populate this field, the control may not be available to other tools. For example, ActiveX controls that are generated without a `ProgID` are not available in the **Insert ActiveX Control** dialog box. For more information about the dialog box, see [Insert ActiveX Control Dialog Box](../../windows/insert-activex-control-dialog-box.md).
+   Sets the name of the interface for the object. By default an interface name is prepended with "I".
+
+- **Type**
+
+   Sets the object description that will appear in the registry
+
+- **ProgID**
+
+   Sets the name that containers can use instead of the CLSID of the object. This field is not automatically populated. If you do not manually populate this field, the control may not be available to other tools. For example, ActiveX controls that are generated without a `ProgID` are not available in the **Insert ActiveX Control** dialog box. For more information about the dialog box, see [Insert ActiveX Control Dialog Box](../../windows/insert-activex-control-dialog-box.md).
 
 ## See Also
 

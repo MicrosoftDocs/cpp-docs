@@ -53,14 +53,17 @@ class CMFCEditBrowseCtrl : public CEdit
   
  The `CMFCEditBrowseCtrl` class supports the following modes.  
   
- **custom mode**  
- A custom action is performed when the user clicks the browse button. For example, you can display an application-specific dialog box.  
+- **custom mode**
+
+   A custom action is performed when the user clicks the browse button. For example, you can display an application-specific dialog box.  
   
- **file mode**  
- A standard file selection dialog box is displayed when the user clicks the browse button.  
+- **file mode**
+
+   A standard file selection dialog box is displayed when the user clicks the browse button.  
   
- **folder mode**  
- A standard folder selection dialog box is displayed when the user clicks the browse button.  
+- **folder mode**
+
+   A standard folder selection dialog box is displayed when the user clicks the browse button.  
   
 ## How-To: Specify an Edit Browse Control  
  Perform the following steps to incorporate an edit browse control in your application:  

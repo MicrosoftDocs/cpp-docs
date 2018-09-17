@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _mm_stream_sd
+
 **Microsoft Specific**  
   
  Writes 64-bit data to a memory location without polluting the caches.  
@@ -77,7 +78,8 @@ d[0] = -1, d[1] = 1
 ```  
   
 **END Microsoft Specific**  
- Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
+
+Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
   
 ## See Also  
  [_mm_stream_ss](../intrinsics/mm-stream-ss.md)   

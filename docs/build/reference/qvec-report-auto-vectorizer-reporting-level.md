@@ -19,14 +19,15 @@ Enables the reporting feature of the compiler [Auto-Vectorizer](../../parallel/a
 /Qvec-report:{1}{2}  
 ```  
   
-## Remarks  
- **/Qvec-report:1**  
- Outputs an informational message for loops that are vectorized.  
+## Remarks
+
+**/Qvec-report:1**<br/>
+Outputs an informational message for loops that are vectorized.  
   
- **/Qvec-report:2**  
- Outputs an informational message for loops that are vectorized and for loops that are not vectorized, together with a reason code.  
+**/Qvec-report:2**<br/>
+Outputs an informational message for loops that are vectorized and for loops that are not vectorized, together with a reason code.  
   
- For information about reason codes and messages, see [Vectorizer and Parallelizer Messages](../../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).  
+For information about reason codes and messages, see [Vectorizer and Parallelizer Messages](../../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).  
   
 ### To set the /Qvec-report compiler option in Visual Studio  
   

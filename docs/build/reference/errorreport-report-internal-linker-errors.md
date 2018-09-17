@@ -18,16 +18,16 @@ ms.workload: ["cplusplus"]
 
 ## Arguments
 
-**none**  
+**none**<br/>
 Reports about internal compiler errors will not be collected or sent to Microsoft.
 
-**prompt**  
+**prompt**<br/>
 Prompts you to send a report when you receive an internal compiler error. **prompt** is the default when an application is compiled in the development environment.
 
-**queue**  
+**queue**<br/>
 Queues the error report. When you log in with administrator privileges, a window is displayed so that you can report any failures since the last time you were logged in (you will not be prompted to send reports for failures more than once every three days). **queue** is the default when an application is compiled at a command prompt.
 
-**send**  
+**send**<br/>
 Automatically sends reports of internal compiler errors to Microsoft if reporting is enabled by the Windows Error Reporting service settings.
 
 ## Remarks

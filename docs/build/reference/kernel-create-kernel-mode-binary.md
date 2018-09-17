@@ -20,12 +20,13 @@ Creates a binary that can be executed in the Windows kernel.
 /kernel[-]  
 ```  
   
-## Arguments  
- **/kernel**  
- The code in the current project is compiled and linked by using a set of C++ language rules that are specific to code that will run in kernel mode.  
+## Arguments
+
+**/kernel**<br/>
+The code in the current project is compiled and linked by using a set of C++ language rules that are specific to code that will run in kernel mode.  
   
- **/kernel-**  
- The code in the current project is compiled and linked without using the C++ language rules that are specific to code that will run in kernel mode.  
+**/kernel-**<br/>
+The code in the current project is compiled and linked without using the C++ language rules that are specific to code that will run in kernel mode.  
   
 ## Remarks  
  There is no `#pragma` equivalent to control this option.  

@@ -19,12 +19,13 @@ Specifies the architecture for code generation on ARM. See also [/arch (x86)](..
 /arch:[ARMv7VE|VFPv4]  
 ```  
   
-## Arguments  
- **/arch:ARMv7VE**  
- Enables the use of ARMv7VE Virtualization Extensions instructions.  
+## Arguments
+
+**/arch:ARMv7VE**<br/>
+Enables the use of ARMv7VE Virtualization Extensions instructions.  
   
- **/arch:VFPv4**  
- Enables the use of ARM VFPv4 instructions. If this option is not specified, VFPv3 is the default.  
+**/arch:VFPv4**<br/>
+Enables the use of ARM VFPv4 instructions. If this option is not specified, VFPv3 is the default.  
   
 ## Remarks  
  The `_M_ARM_FP` macro (for ARM only) indicates which, if any, **/arch** compiler option was used. For more information, see [Predefined Macros](../../preprocessor/predefined-macros.md).  

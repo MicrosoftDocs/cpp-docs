@@ -13,9 +13,10 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _mm_insert_si64, _mm_inserti_si64
+
 **Microsoft Specific**  
   
- Generates the `insertq` instruction to insert bits from its second operand into its first operand.  
+Generates the `insertq` instruction to insert bits from its second operand into its first operand.  
   
 ## Syntax  
   
@@ -111,7 +112,8 @@ result3 = 0xfffffffff3210fff
 ```  
   
 **END Microsoft Specific**  
- Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
+
+Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
   
 ## See Also  
  [_mm_extract_si64, _mm_extracti_si64](../intrinsics/mm-extract-si64-mm-extracti-si64.md)   

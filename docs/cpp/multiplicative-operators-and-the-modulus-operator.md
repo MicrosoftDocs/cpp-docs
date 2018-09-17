@@ -52,11 +52,13 @@ f / 0.0
 > [!NOTE]
 >  Since the conversions performed by the multiplicative operators do not provide for overflow or underflow conditions, information may be lost if the result of a multiplicative operation cannot be represented in the type of the operands after conversion.  
   
-## Microsoft Specific  
- In Microsoft C++, the result of a modulus expression is always the same as the sign of the first operand.  
-  
-**END Microsoft Specific**  
- If the computed division of two integers is inexact and only one operand is negative, the result is the largest integer (in magnitude, disregarding the sign) that is less than the exact value the division operation would yield. For example, the computed value of -11 / 3 is -3.666666666. The result of that integral division is -3.  
+**Microsoft Specific**
+
+In Microsoft C++, the result of a modulus expression is always the same as the sign of the first operand.
+
+**END Microsoft Specific**
+
+If the computed division of two integers is inexact and only one operand is negative, the result is the largest integer (in magnitude, disregarding the sign) that is less than the exact value the division operation would yield. For example, the computed value of -11 / 3 is -3.666666666. The result of that integral division is -3.  
   
  The relationship between the multiplicative operators is given by the identity (*e1* / *e2*) \* *e2* + *e1* % *e2* == *e1*.  
   
