@@ -12,25 +12,26 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # stdx Namespace
-## Syntax  
-  
+
+## Syntax
+
 ```
 namespace stdx;
-```  
-  
-## Members  
-  
-### Functions  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[declval Function](declval-function.md)||  
-  
-## Requirements  
- **Header:** ppltasks.h  
-  
-## See Also  
- [Reference](reference-concurrency-runtime.md)
+```
 
+## Members
 
+### Functions
+
+|Name|Description|
+|----------|-----------------|
+|[declval Function](declval-function.md)||
+
+## Requirements
+
+**Header:** ppltasks.h
+
+## See Also
+
+[Reference](reference-concurrency-runtime.md)
 

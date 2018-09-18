@@ -11,26 +11,31 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Concurrency::graphics namespace enums
-|||  
-|-|-|  
-|[_mode Enumeration](#address_mode)|[filter_mode Enumeration](#filter_mode)|  
-  
-##  <a name="address_mode"></a>  address_mode Enumeration  
- Enumeration type use to denote address modes supported for texture sampling.  
-  
-```  
-enum address_mode;  
-```  
-  
-##  <a name="filter_mode"></a>  filter_mode Enumeration  
- Enumeration type use to denote filter modes supported for texture sampling.  
-  
-```  
-enum filter_mode;  
-```  
+
+|||
+|-|-|
+|[_mode Enumeration](#address_mode)|[filter_mode Enumeration](#filter_mode)|
+
+##  <a name="address_mode"></a>  address_mode Enumeration
+
+Enumeration type use to denote address modes supported for texture sampling.
+
+```
+enum address_mode;
+```
+
+##  <a name="filter_mode"></a>  filter_mode Enumeration
+
+Enumeration type use to denote filter modes supported for texture sampling.
+
+```
+enum filter_mode;
+```
 ## Requirements
+
 **Header:** amp_graphics.h
 **Namespace:** Concurrency::graphics
 
-## See Also  
- [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)
+## See Also
+
+[Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

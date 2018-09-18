@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # ordered (OpenMP Clauses)
-Required on a parallel [for](../../../parallel/openmp/reference/for-openmp.md) statement if an [ordered](../../../parallel/openmp/reference/ordered-openmp-directives.md) directive is to be used in the loop.  
-  
-## Syntax  
-  
-```  
-ordered  
-```  
-  
-## Remarks  
- `ordered` applies to the [for](../../../parallel/openmp/reference/for-openmp.md) directive.  
-  
- For more information, see [2.4.1 for Construct](../../../parallel/openmp/2-4-1-for-construct.md).  
-  
-## Example  
- See [ordered](../../../parallel/openmp/reference/ordered-openmp-directives.md) for an example of using `ordered` clause.  
-  
-## See Also  
- [Clauses](../../../parallel/openmp/reference/openmp-clauses.md)
+
+Required on a parallel [for](../../../parallel/openmp/reference/for-openmp.md) statement if an [ordered](../../../parallel/openmp/reference/ordered-openmp-directives.md) directive is to be used in the loop.
+
+## Syntax
+
+```
+ordered
+```
+
+## Remarks
+
+`ordered` applies to the [for](../../../parallel/openmp/reference/for-openmp.md) directive.
+
+For more information, see [2.4.1 for Construct](../../../parallel/openmp/2-4-1-for-construct.md).
+
+## Example
+
+See [ordered](../../../parallel/openmp/reference/ordered-openmp-directives.md) for an example of using `ordered` clause.
+
+## See Also
+
+[Clauses](../../../parallel/openmp/reference/openmp-clauses.md)

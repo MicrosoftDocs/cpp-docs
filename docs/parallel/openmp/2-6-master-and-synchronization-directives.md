@@ -11,16 +11,17 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # 2.6 Master and Synchronization Directives
-The following sections describe :  
-  
--   the **master** construct.  
-  
--   the **critical** construct.  
-  
--   the **barrier** directive.  
-  
--   the **atomic** construct.  
-  
--   the **flush** directive.  
-  
--   the **ordered** construct.
+
+The following sections describe :
+
+- the **master** construct.
+
+- the **critical** construct.
+
+- the **barrier** directive.
+
+- the **atomic** construct.
+
+- the **flush** directive.
+
+- the **ordered** construct.

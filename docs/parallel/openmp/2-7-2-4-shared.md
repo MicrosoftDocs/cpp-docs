@@ -11,10 +11,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # 2.7.2.4 shared
-This clause shares variables that appear in the *variable-list* among all the threads in a team. All threads within a team access the same storage area for **shared** variables.  
-  
- The syntax of the **shared** clause is as follows:  
-  
-```  
-shared(variable-list)  
+
+This clause shares variables that appear in the *variable-list* among all the threads in a team. All threads within a team access the same storage area for **shared** variables.
+
+The syntax of the **shared** clause is as follows:
+
+```
+shared(variable-list)
 ```

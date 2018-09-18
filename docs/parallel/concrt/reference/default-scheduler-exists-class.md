@@ -13,45 +13,50 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # default_scheduler_exists Class
-This class describes an exception thrown when the `Scheduler::SetDefaultSchedulerPolicy` method is called when a default scheduler already exists within the process.  
-  
-## Syntax  
-  
+
+This class describes an exception thrown when the `Scheduler::SetDefaultSchedulerPolicy` method is called when a default scheduler already exists within the process.
+
+## Syntax
+
 ```
 class default_scheduler_exists : public std::exception;
-```  
-  
-## Members  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[default_scheduler_exists](#ctor)|Overloaded. Constructs a `default_scheduler_exists` object.|  
-  
-## Inheritance Hierarchy  
- `exception`  
-  
- `default_scheduler_exists`  
-  
-## Requirements  
- **Header:** concrt.h  
-  
- **Namespace:** concurrency  
-  
-##  <a name="ctor"></a> default_scheduler_exists 
+```
 
- Constructs a `default_scheduler_exists` object.  
-  
+## Members
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[default_scheduler_exists](#ctor)|Overloaded. Constructs a `default_scheduler_exists` object.|
+
+## Inheritance Hierarchy
+
+`exception`
+
+`default_scheduler_exists`
+
+## Requirements
+
+**Header:** concrt.h
+
+**Namespace:** concurrency
+
+##  <a name="ctor"></a> default_scheduler_exists
+
+Constructs a `default_scheduler_exists` object.
+
 ```
 explicit _CRTIMP default_scheduler_exists(_In_z_ const char* _Message) throw();
 
 default_scheduler_exists() throw();
-```  
-  
-### Parameters  
+```
+
+### Parameters
+
 *_Message*<br/>
-A descriptive message of the error.  
-  
-## See Also  
- [concurrency Namespace](concurrency-namespace.md)
+A descriptive message of the error.
+
+## See Also
+
+[concurrency Namespace](concurrency-namespace.md)

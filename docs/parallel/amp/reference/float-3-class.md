@@ -13,203 +13,200 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # float_3 Class
-Represents a short vector of three floats.  
-  
-## Syntax  
-  
-```  
-class float_3;  
-```  
-  
-## Members  
-  
-### Public Typedefs  
-  
-|Name|Description|  
-|----------|-----------------|  
-|`value_type`||  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[float_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|float_3::get_x||  
-|float_3::get_xy||  
-|float_3::get_xyz||  
-|float_3::get_xz||  
-|float_3::get_xzy||  
-|float_3::get_y||  
-|float_3::get_yx||  
-|float_3::get_yxz||  
-|float_3::get_yz||  
-|float_3::get_yzx||  
-|float_3::get_z||  
-|float_3::get_zx||  
-|float_3::get_zxy||  
-|float_3::get_zy||  
-|float_3::get_zyx||  
-|float_3::ref_b||  
-|float_3::ref_g||  
-|float_3::ref_r||  
-|float_3::ref_x||  
-|float_3::ref_y||  
-|float_3::ref_z||  
-|float_3::set_x||  
-|float_3::set_xy||  
-|float_3::set_xyz||  
-|float_3::set_xz||  
-|float_3::set_xzy||  
-|float_3::set_y||  
-|float_3::set_yx||  
-|float_3::set_yxz||  
-|float_3::set_yz||  
-|float_3::set_yzx||  
-|float_3::set_z||  
-|float_3::set_zx||  
-|float_3::set_zxy||  
-|float_3::set_zy||  
-|float_3::set_zyx||  
-  
-### Public Operators  
-  
-|Name|Description|  
-|----------|-----------------|  
-|float_3::operator-||  
-|float_3::operator--||  
-|float_3::operator*=||  
-|float_3::operator/=||  
-|float_3::operator++||  
-|float_3::operator+=||  
-|float_3::operator=||  
-|float_3::operator-=||  
-  
-### Public Constants  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[size Constant](#float_3__size)||  
-  
-### Public Data Members  
-  
-|Name|Description|  
-|----------|-----------------|  
-|float_3::b||  
-|float_3::bg||  
-|float_3::bgr||  
-|float_3::br||  
-|float_3::brg||  
-|float_3::g||  
-|float_3::gb||  
-|float_3::gbr||  
-|float_3::gr||  
-|float_3::grb||  
-|float_3::r||  
-|float_3::rb||  
-|float_3::rbg||  
-|float_3::rg||  
-|float_3::rgb||  
-|float_3::x||  
-|float_3::xy||  
-|float_3::xyz||  
-|float_3::xz||  
-|float_3::xzy||  
-|float_3::y||  
-|float_3::yx||  
-|float_3::yxz||  
-|float_3::yz||  
-|float_3::yzx||  
-|float_3::z||  
-|float_3::zx||  
-|float_3::zxy||  
-|float_3::zy||  
-|float_3::zyx||  
-  
-## Inheritance Hierarchy  
- `float_3`  
-  
-## Requirements  
- **Header:** amp_short_vectors.h  
-  
- **Namespace:** Concurrency::graphics  
-  
-##  <a name="ctor"></a> float_3 
 
- Default constructor, initializes all elements with 0.  
-  
-```  
+Represents a short vector of three floats.
+
+## Syntax
+
+```
+class float_3;
+```
+
+## Members
+
+### Public Typedefs
+
+|Name|Description|
+|----------|-----------------|
+|`value_type`||
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[float_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|float_3::get_x||
+|float_3::get_xy||
+|float_3::get_xyz||
+|float_3::get_xz||
+|float_3::get_xzy||
+|float_3::get_y||
+|float_3::get_yx||
+|float_3::get_yxz||
+|float_3::get_yz||
+|float_3::get_yzx||
+|float_3::get_z||
+|float_3::get_zx||
+|float_3::get_zxy||
+|float_3::get_zy||
+|float_3::get_zyx||
+|float_3::ref_b||
+|float_3::ref_g||
+|float_3::ref_r||
+|float_3::ref_x||
+|float_3::ref_y||
+|float_3::ref_z||
+|float_3::set_x||
+|float_3::set_xy||
+|float_3::set_xyz||
+|float_3::set_xz||
+|float_3::set_xzy||
+|float_3::set_y||
+|float_3::set_yx||
+|float_3::set_yxz||
+|float_3::set_yz||
+|float_3::set_yzx||
+|float_3::set_z||
+|float_3::set_zx||
+|float_3::set_zxy||
+|float_3::set_zy||
+|float_3::set_zyx||
+
+### Public Operators
+
+|Name|Description|
+|----------|-----------------|
+|float_3::operator-||
+|float_3::operator--||
+|float_3::operator*=||
+|float_3::operator/=||
+|float_3::operator++||
+|float_3::operator+=||
+|float_3::operator=||
+|float_3::operator-=||
+
+### Public Constants
+
+|Name|Description|
+|----------|-----------------|
+|[size Constant](#float_3__size)||
+
+### Public Data Members
+
+|Name|Description|
+|----------|-----------------|
+|float_3::b||
+|float_3::bg||
+|float_3::bgr||
+|float_3::br||
+|float_3::brg||
+|float_3::g||
+|float_3::gb||
+|float_3::gbr||
+|float_3::gr||
+|float_3::grb||
+|float_3::r||
+|float_3::rb||
+|float_3::rbg||
+|float_3::rg||
+|float_3::rgb||
+|float_3::x||
+|float_3::xy||
+|float_3::xyz||
+|float_3::xz||
+|float_3::xzy||
+|float_3::y||
+|float_3::yx||
+|float_3::yxz||
+|float_3::yz||
+|float_3::yzx||
+|float_3::z||
+|float_3::zx||
+|float_3::zxy||
+|float_3::zy||
+|float_3::zyx||
+
+## Inheritance Hierarchy
+
+`float_3`
+
+## Requirements
+
+**Header:** amp_short_vectors.h
+
+**Namespace:** Concurrency::graphics
+
+##  <a name="ctor"></a> float_3
+
+Default constructor, initializes all elements with 0.
+
+```
 float_3() restrict(amp,
     cpu);
 
- 
 float_3(
-    float _V0,  
-    float _V1,  
+    float _V0,
+    float _V1,
     float _V2) restrict(amp,
     cpu);
 
- 
 float_3(
     float _V) restrict(amp,
     cpu);
 
- 
 float_3(
     const float_3& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline float_3(
     const uint_3& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline float_3(
     const int_3& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline float_3(
     const unorm_3& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline float_3(
     const norm_3& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline float_3(
     const double_3& _Other) restrict(amp,
     cpu);
-```  
-  
-### Parameters  
-*_V0*<br/>
-The value to initialize element 0.  
-  
-*_V1*<br/>
-The value to initialize element 1.  
-  
-*_V2*<br/>
-The value to initialize element 2.  
-  
-*_V*<br/>
-The value for initialization.  
-  
-*_Other*<br/>
-The object used to initialize.  
-  
-##  <a name="float_3__size"></a> size 
+```
 
-```  
-static const int size = 3;  
-```  
-  
-## See Also  
- [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)
+### Parameters
+
+*_V0*<br/>
+The value to initialize element 0.
+
+*_V1*<br/>
+The value to initialize element 1.
+
+*_V2*<br/>
+The value to initialize element 2.
+
+*_V*<br/>
+The value for initialization.
+
+*_Other*<br/>
+The object used to initialize.
+
+##  <a name="float_3__size"></a> size
+
+```
+static const int size = 3;
+```
+
+## See Also
+
+[Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

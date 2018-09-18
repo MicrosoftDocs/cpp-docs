@@ -13,57 +13,60 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # omp_set_nested
-Enables nested parallelism.  
-  
-## Syntax  
-  
-```  
-void omp_set_nested(  
-   int val  
-);  
-```  
-  
+
+Enables nested parallelism.
+
+## Syntax
+
+```
+void omp_set_nested(
+   int val
+);
+```
+
 ### Parameters
-  
+
 *val*<br/>
-If nonzero, enables nested parallelism. If zero, disables nested parallelism.  
-  
-## Remarks  
- OMP nested parallelism can be turned on with `omp_set_nested`, or by setting the [OMP_NESTED](../../../parallel/openmp/reference/omp-nested.md) environment variable.  
-  
- The setting for `omp_set_nested` will override the setting of the `OMP_NESTED` environment variable.  
-  
- When enabled, the environment variable can break an otherwise operational program because the number of threads increases exponentially when nesting parallel regions.  For example a function that recurses 6 times with the number of OMP threads set to 4 requires 4,096 (4 to the power of 6) threads  In general, the performance of your application will degrade if the number of thread exceeds the number of processors. One exception to this would be I/O bound applications.  
-  
- Use [omp_get_nested](../../../parallel/openmp/reference/omp-get-nested.md) to display the current setting of `omp_set_nested`.  
-  
- For more information, see [3.1.9 omp_set_nested Function](../../../parallel/openmp/3-1-9-omp-set-nested-function.md).  
-  
-## Example  
-  
-```  
-// omp_set_nested.cpp  
-// compile with: /openmp  
-#include <stdio.h>  
-#include <omp.h>  
-  
-int main( )   
-{  
-    omp_set_nested(1);  
-    omp_set_num_threads(4);  
-    printf_s("%d\n", omp_get_nested( ));  
-    #pragma omp parallel  
-        #pragma omp master  
-        {  
-            printf_s("%d\n", omp_get_nested( ));  
-        }  
-}  
-```  
-  
-```Output  
-1  
-1  
-```  
-  
-## See Also  
- [Functions](../../../parallel/openmp/reference/openmp-functions.md)
+If nonzero, enables nested parallelism. If zero, disables nested parallelism.
+
+## Remarks
+
+OMP nested parallelism can be turned on with `omp_set_nested`, or by setting the [OMP_NESTED](../../../parallel/openmp/reference/omp-nested.md) environment variable.
+
+The setting for `omp_set_nested` will override the setting of the `OMP_NESTED` environment variable.
+
+When enabled, the environment variable can break an otherwise operational program because the number of threads increases exponentially when nesting parallel regions.  For example a function that recurses 6 times with the number of OMP threads set to 4 requires 4,096 (4 to the power of 6) threads  In general, the performance of your application will degrade if the number of thread exceeds the number of processors. One exception to this would be I/O bound applications.
+
+Use [omp_get_nested](../../../parallel/openmp/reference/omp-get-nested.md) to display the current setting of `omp_set_nested`.
+
+For more information, see [3.1.9 omp_set_nested Function](../../../parallel/openmp/3-1-9-omp-set-nested-function.md).
+
+## Example
+
+```
+// omp_set_nested.cpp
+// compile with: /openmp
+#include <stdio.h>
+#include <omp.h>
+
+int main( )
+{
+    omp_set_nested(1);
+    omp_set_num_threads(4);
+    printf_s("%d\n", omp_get_nested( ));
+    #pragma omp parallel
+        #pragma omp master
+        {
+            printf_s("%d\n", omp_get_nested( ));
+        }
+}
+```
+
+```Output
+1
+1
+```
+
+## See Also
+
+[Functions](../../../parallel/openmp/reference/openmp-functions.md)
