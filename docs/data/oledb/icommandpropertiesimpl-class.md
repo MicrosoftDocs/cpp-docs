@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandPropertiesImpl Class
+
 Provides an implementation of the [ICommandProperties](/previous-versions/windows/desktop/ms723044\(v=vs.85\)) interface.  
   
 ## Syntax
@@ -24,14 +25,16 @@ class ATL_NO_VTABLE ICommandPropertiesImpl
 ```  
   
 ### Parameters  
- *T*  
- Your class, derived from  
+
+*T*<br/>
+Your class, derived from  
   
- *PropClass*  
- Your properties class.  
+*PropClass*<br/>
+Your properties class.  
 
 ## Requirements  
- **Header:** atldb.h  
+
+**Header:** atldb.h  
   
 ## Members  
   
@@ -43,9 +46,11 @@ class ATL_NO_VTABLE ICommandPropertiesImpl
 |[SetProperties](#setproperties)|Sets properties in the Rowset property group.|  
   
 ## Remarks  
- This is mandatory on commands. The implementation is provided by a static function defined by the [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) macro.  
+
+This is mandatory on commands. The implementation is provided by a static function defined by the [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) macro.  
 
 ## <a name="getproperties"></a> ICommandPropertiesImpl::GetProperties
+
 Returns all the requested property sets using the command's property map.  
   
 ### Syntax  
@@ -58,12 +63,15 @@ STDMETHOD(GetProperties)(const ULONG cPropertyIDSets, 
 ```  
   
 #### Parameters  
- See [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723119\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723119\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
- See [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).  
+
+See [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).  
   
 ## <a name="setproperties"></a> ICommandPropertiesImpl::SetProperties
+
 Sets properties for the command object.  
   
 ### Syntax  
@@ -74,8 +82,10 @@ STDMETHOD(SetProperties)(ULONG cPropertySets, 
 ```  
   
 #### Parameters  
- See [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ## See Also  
- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

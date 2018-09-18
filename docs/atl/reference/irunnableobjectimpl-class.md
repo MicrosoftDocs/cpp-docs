@@ -22,13 +22,13 @@ This class implements `IUnknown` and provides a default implementation of the [I
 ## Syntax
 
 ```
-template<class T>  
+template<class T>
 class IRunnableObjectImpl
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IRunnableObjectImpl`.
 
 ## Members
@@ -141,5 +141,5 @@ See [IRunnableObject::SetContainedObject](/windows/desktop/api/objidl/nf-objidl-
 
 ## See Also
 
-[CComControl Class](../../atl/reference/ccomcontrol-class.md)   
+[CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 2) C4094
-untagged 'token' declared no symbols  
-  
- The compiler detected an empty declaration using an untagged structure, union, or class. The declaration is ignored.  
-  
-## Example  
-  
-```  
-// C4094.cpp  
-// compile with: /W2  
-struct  
-{  
-};   // C4094  
-  
-int main()  
-{  
-}  
-```  
-  
- This condition generates an error under ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
+
+untagged 'token' declared no symbols
+
+The compiler detected an empty declaration using an untagged structure, union, or class. The declaration is ignored.
+
+## Example
+
+```
+// C4094.cpp
+// compile with: /W2
+struct
+{
+};   // C4094
+
+int main()
+{
+}
+```
+
+This condition generates an error under ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).

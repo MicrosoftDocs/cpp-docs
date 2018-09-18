@@ -130,22 +130,22 @@ explicit CSid(
 
 ### Parameters
 
-*rhs*  
+*rhs*<br/>
 An existing `CSid` object or `SID` (security identifier) structure.
 
-*IdentifierAuthority*  
+*IdentifierAuthority*<br/>
 The authority.
 
-*nSubAuthorityCount*  
+*nSubAuthorityCount*<br/>
 The subauthority count.
 
-*pszAccountName*  
+*pszAccountName*<br/>
 The account name.
 
-*pszSystem*  
+*pszSystem*<br/>
 The system name. This string can be the name of a remote computer. If this string is NULL, the local system is used instead.
 
-*pSid*  
+*pSid*<br/>
 A pointer to a `SID` structure.
 
 ### Remarks
@@ -207,7 +207,7 @@ bool EqualPrefix(const CSid& rhs) const throw();
 
 ### Parameters
 
-*rhs*  
+*rhs*<br/>
 The `SID` (security identifier) structure or `CSid` object to compare.
 
 ### Return Value
@@ -274,7 +274,7 @@ DWORD GetSubAuthority(DWORD nSubAuthority) const throw();
 
 ### Parameters
 
-*nSubAuthority*  
+*nSubAuthority*<br/>
 The subauthority.
 
 ### Return Value
@@ -337,13 +337,13 @@ bool LoadAccount(
 
 ### Parameters
 
-*pszAccountName*  
+*pszAccountName*<br/>
 The account name.
 
-*pszSystem*  
+*pszSystem*<br/>
 The system name. This string can be the name of a remote computer. If this string is NULL, the local system is used instead.
 
-*pSid*  
+*pSid*<br/>
 A pointer to a [SID](/windows/desktop/api/winnt/ns-winnt-_sid) structure.
 
 ### Return Value
@@ -359,13 +359,13 @@ Returns TRUE on success, FALSE on failure. To get extended error information, ca
 Assignment operator.
 
 ```
-CSid& operator= (const CSid& rhs) throw(...);  
+CSid& operator= (const CSid& rhs) throw(...);
 CSid& operator= (const SID& rhs) throw(...);
 ```
 
 ### Parameters
 
-*rhs*  
+*rhs*<br/>
 The `SID` (security identifier) or `CSid` to assign to the `CSid` object.
 
 ### Return Value
@@ -384,10 +384,10 @@ bool operator==(
 
 ### Parameters
 
-*lhs*  
+*lhs*<br/>
 The `SID` (security identifier) or `CSid` that appears on the left side of the == operator.
 
-*rhs*  
+*rhs*<br/>
 The `SID` (security identifier) or `CSid` that appears on the right side of the == operator.
 
 ### Return Value
@@ -406,10 +406,10 @@ bool operator!=(
 
 ### Parameters
 
-*lhs*  
+*lhs*<br/>
 The `SID` (security identifier) or `CSid` that appears on the left side of the != operator.
 
-*rhs*  
+*rhs*<br/>
 The `SID` (security identifier) or `CSid` that appears on the right side of the != operator.
 
 ### Return Value
@@ -428,10 +428,10 @@ bool operator<(
 
 ### Parameters
 
-*lhs*  
+*lhs*<br/>
 The `SID` (security identifier) or `CSid` that appears on the left side of the != operator.
 
-*rhs*  
+*rhs*<br/>
 The `SID` (security identifier) or `CSid` that appears on the right side of the != operator.
 
 ### Return Value
@@ -450,10 +450,10 @@ bool operator<=(
 
 ### Parameters
 
-*lhs*  
+*lhs*<br/>
 The `SID` (security identifier) or `CSid` that appears on the left side of the != operator.
 
-*rhs*  
+*rhs*<br/>
 The `SID` (security identifier) or `CSid` that appears on the right side of the != operator.
 
 ### Return Value
@@ -472,10 +472,10 @@ bool operator>(
 
 ### Parameters
 
-*lhs*  
+*lhs*<br/>
 The `SID` (security identifier) or `CSid` that appears on the left side of the != operator.
 
-*rhs*  
+*rhs*<br/>
 The `SID` (security identifier) or `CSid` that appears on the right side of the != operator.
 
 ### Return Value
@@ -494,10 +494,10 @@ bool operator>=(
 
 ### Parameters
 
-*lhs*  
+*lhs*<br/>
 The `SID` (security identifier) or `CSid` that appears on the left side of the != operator.
 
-*rhs*  
+*rhs*<br/>
 The `SID` (security identifier) or `CSid` that appears on the right side of the != operator.
 
 ### Return Value
@@ -508,7 +508,7 @@ TRUE if *lhs* is greater than or equal to *rhs*, otherwise FALSE.
 
 Casts a `CSid` object to a pointer to a `SID` (security identifier) structure.
 
-```  
+```
 operator const SID *() const throw(...);
 ```
 
@@ -558,7 +558,7 @@ Call [CSid::LoadAccount](#loadaccount) to update the `CSid` object before callin
 
 ## See Also
 
-[Security Sample](../../visual-cpp-samples.md)   
-[Class Overview](../../atl/atl-class-overview.md)   
-[Security Global Functions](../../atl/reference/security-global-functions.md)   
+[Security Sample](../../visual-cpp-samples.md)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
+[Security Global Functions](../../atl/reference/security-global-functions.md)<br/>
 [Operators](../../atl/reference/atl-operators.md)

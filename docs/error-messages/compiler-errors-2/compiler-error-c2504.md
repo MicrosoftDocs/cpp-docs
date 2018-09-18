@@ -13,26 +13,27 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2504
-'class' : base class undefined  
-  
- The base class is declared but never defined.  Possible causes:  
-  
-1.  Missing include file.  
-  
-2.  External base class not declared with [extern](../../cpp/using-extern-to-specify-linkage.md).  
-  
- The following sample generates C2504:  
-  
-```  
-// C2504.cpp  
-// compile with: /c  
-class A;  
-class B : public A {};   // C2504  
-```  
-  
- // OK  
-  
-```  
-class C{};  
-class D : public C {};  
+
+'class' : base class undefined
+
+The base class is declared but never defined.  Possible causes:
+
+1. Missing include file.
+
+1. External base class not declared with [extern](../../cpp/using-extern-to-specify-linkage.md).
+
+The following sample generates C2504:
+
+```
+// C2504.cpp
+// compile with: /c
+class A;
+class B : public A {};   // C2504
+```
+
+// OK
+
+```
+class C{};
+class D : public C {};
 ```

@@ -21,11 +21,10 @@ Allows threads to access the master thread's value, for a [threadprivate](../../
 copyin(var)  
 ```  
   
-## Remarks  
- where,  
+## Parameters
   
- `var`  
- The `threadprivate` variable that will be initialized with the value of the variable in the master thread, as it exists before the parallel construct.  
+*var*<br/>
+The `threadprivate` variable that will be initialized with the value of the variable in the master thread, as it exists before the parallel construct.  
   
 ## Remarks  
  `copyin` applies to the following directives:  

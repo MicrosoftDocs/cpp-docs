@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # NMAKE Fatal Error U1065
-invalid option 'option'  
-  
- The option is not valid for NMAKE.
+
+invalid option 'option'
+
+The option is not valid for NMAKE.

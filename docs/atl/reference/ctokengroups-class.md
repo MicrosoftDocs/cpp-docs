@@ -71,19 +71,19 @@ For an introduction to the access control model in Windows, see [Access Control]
 Adds a `CSid` or existing `TOKEN_GROUPS` structure to the `CTokenGroups` object.
 
 ```
-void Add(const CSid& rSid, DWORD dwAttributes) throw(... );  
+void Add(const CSid& rSid, DWORD dwAttributes) throw(... );
 void Add(const TOKEN_GROUPS& rTokenGroups) throw(...);
 ```
 
 ### Parameters
 
-*rSid*  
+*rSid*<br/>
 A [CSid](../../atl/reference/csid-class.md) object.
 
-*dwAttributes*  
+*dwAttributes*<br/>
 The attributes to associate with the `CSid` object.
 
-*rTokenGroups*  
+*rTokenGroups*<br/>
 A [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) structure.
 
 ### Remarks
@@ -96,13 +96,13 @@ The constructor.
 
 ```
 CTokenGroups() throw();
-CTokenGroups(const CTokenGroups& rhs) throw(... );  
+CTokenGroups(const CTokenGroups& rhs) throw(... );
 CTokenGroups(const TOKEN_GROUPS& rhs) throw(...);
 ```
 
 ### Parameters
 
-*rhs*  
+*rhs*<br/>
 The `CTokenGroups` object or [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) structure with which to construct the `CTokenGroups` object.
 
 ### Remarks
@@ -131,7 +131,7 @@ bool Delete(const CSid& rSid) throw();
 
 ### Parameters
 
-*rSid*  
+*rSid*<br/>
 The [CSid](../../atl/reference/csid-class.md) object for which the security identifier (SID) and attributes should be removed.
 
 ### Return Value
@@ -194,10 +194,10 @@ void GetSidsAndAttributes(
 
 ### Parameters
 
-*pSids*  
+*pSids*<br/>
 Pointer to an array of [CSid](../../atl/reference/csid-class.md) objects.
 
-*pAttributes*  
+*pAttributes*<br/>
 Pointer to an array of DWORDs. If this parameter is omitted or NULL, the attributes are not retrieved.
 
 ### Remarks
@@ -216,10 +216,10 @@ bool LookupSid(
 
 ### Parameters
 
-*rSid*  
+*rSid*<br/>
 The [CSid](../../atl/reference/csid-class.md) object.
 
-*pdwAttributes*  
+*pdwAttributes*<br/>
 Pointer to a DWORD which will accept the `CSid` object's attribute. If omitted or NULL, the attribute will not be retrieved.
 
 ### Return Value
@@ -235,13 +235,13 @@ Setting *pdwAttributes* to NULL provides a way of confirming the existence of th
 Assignment operator.
 
 ```
-CTokenGroups& operator= (const TOKEN_GROUPS& rhs) throw(...);  
+CTokenGroups& operator= (const TOKEN_GROUPS& rhs) throw(...);
 CTokenGroups& operator= (const CTokenGroups& rhs) throw(...);
 ```
 
 ### Parameters
 
-*rhs*  
+*rhs*<br/>
 The `CTokenGroups` object or [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) structure to assign to the `CTokenGroups` object.
 
 ### Return Value
@@ -252,7 +252,7 @@ Returns the updated `CTokenGroups` object.
 
 Casts a value to a pointer to the `TOKEN_GROUPS` structure.
 
-```  
+```
 operator const TOKEN_GROUPS *() const throw(...);
 ```
 
@@ -262,7 +262,7 @@ Casts a value to a pointer to the [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-w
 
 ## See Also
 
-[Security Sample](../../visual-cpp-samples.md)   
-[CSid Class](../../atl/reference/csid-class.md)   
-[Class Overview](../../atl/atl-class-overview.md)   
+[Security Sample](../../visual-cpp-samples.md)<br/>
+[CSid Class](../../atl/reference/csid-class.md)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)

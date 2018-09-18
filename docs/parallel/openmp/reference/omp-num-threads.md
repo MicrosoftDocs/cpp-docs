@@ -21,11 +21,10 @@ Sets the maximum number of threads in the parallel region, unless overridden by 
 set OMP_NUM_THREADS[=num]  
 ```  
   
-## Remarks  
- where,  
+### Parameters
   
- `num`  
- The maximum number of threads you want in the parallel region, up to 64 in the Visual C++ implementation.  
+*num*<br/>
+The maximum number of threads you want in the parallel region, up to 64 in the Visual C++ implementation.  
   
 ## Remarks  
  The **OMP_NUM_THREADS** environment variable can be overridden by the [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) function or by [num_threads](../../../parallel/openmp/reference/num-threads.md).  

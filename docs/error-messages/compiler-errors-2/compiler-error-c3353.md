@@ -13,14 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3353
-'delegate' : a delegate can only be created from a global function or a member function of a managed or WinRT type  
-  
- Delegates, declared with the [delegate](../../windows/delegate-cpp-component-extensions.md) keyword, can only be declared at global scope.  
-  
- The following sample generates C3353:  
-  
-```  
-// C3353.cpp  
-// compile with: /clr  
-delegate int f;   // C3353  
+
+'delegate' : a delegate can only be created from a global function or a member function of a managed or WinRT type
+
+Delegates, declared with the [delegate](../../windows/delegate-cpp-component-extensions.md) keyword, can only be declared at global scope.
+
+The following sample generates C3353:
+
+```
+// C3353.cpp
+// compile with: /clr
+delegate int f;   // C3353
 ```

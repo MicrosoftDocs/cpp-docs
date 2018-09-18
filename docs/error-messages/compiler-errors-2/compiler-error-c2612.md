@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2612
-trailing 'char' illegal in base/member initializer list  
-  
- A character appears after the last base or member in an initializer list.  
-  
- The following sample generates C2612:  
-  
-```  
-// C2612.cpp  
-class A {  
-public:  
-   int i;  
-   A( int ia ) : i( ia ) + {};   // C2612  
-};  
+
+trailing 'char' illegal in base/member initializer list
+
+A character appears after the last base or member in an initializer list.
+
+The following sample generates C2612:
+
+```
+// C2612.cpp
+class A {
+public:
+   int i;
+   A( int ia ) : i( ia ) + {};   // C2612
+};
 ```

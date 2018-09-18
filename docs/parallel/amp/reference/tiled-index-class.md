@@ -38,14 +38,14 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
 ```  
   
 #### Parameters  
- `_Dim0`  
- The length of the most significant dimension.  
+*_Dim0*<br/>
+The length of the most significant dimension.  
   
- `_Dim1`  
- The length of the next-to-most significant dimension.  
+*_Dim1*<br/>
+The length of the next-to-most significant dimension.  
   
- `_Dim2`  
- The length of the least significant dimension.  
+*_Dim2*<br/>
+The length of the least significant dimension.  
   
 ## Members  
   
@@ -116,23 +116,23 @@ tiled_index(
 ```  
   
 #### Parameters  
- `_Global`  
- The global [index](index-class.md) of the constructed `tiled_index`.  
+*_Global*<br/>
+The global [index](index-class.md) of the constructed `tiled_index`.  
   
- `_Local`  
- The local [index](index-class.md) of the constructed `tiled_index`  
+*_Local*<br/>
+The local [index](index-class.md) of the constructed `tiled_index`  
   
- `_Tile`  
- The tile [index](index-class.md) of the constructed `tiled_index`  
+*_Tile*<br/>
+The tile [index](index-class.md) of the constructed `tiled_index`  
   
- `_Tile_origin`  
- The tile origin [index](index-class.md) of the constructed `tiled_index`  
+*_Tile_origin*<br/>
+The tile origin [index](index-class.md) of the constructed `tiled_index`  
   
- `_Barrier`  
- The [tile_barrier](tile-barrier-class.md) object of the constructed `tiled_index`.  
+*_Barrier*<br/>
+The [tile_barrier](tile-barrier-class.md) object of the constructed `tiled_index`.  
   
- `_Other`  
- The `tile_index` object to be copied to the constructed `tiled_index`.  
+*_Other*<br/>
+The `tile_index` object to be copied to the constructed `tiled_index`.  
   
 ## Overloads  
   

@@ -13,21 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2583
-'identifier' : 'const/volatile' 'this' pointer is illegal for constructors/destructors  
-  
- A constructor or destructor is declared `const` or `volatile`. This is not allowed.  
-  
- The following sample generates C2583:  
-  
-```  
-// C2583.cpp  
-// compile with: /c  
-class A {  
-public:  
-   int i;  
-   A() const;   // C2583  
-  
-   // try the following line instead  
-   // A();  
-};  
+
+'identifier' : 'const/volatile' 'this' pointer is illegal for constructors/destructors
+
+A constructor or destructor is declared `const` or `volatile`. This is not allowed.
+
+The following sample generates C2583:
+
+```
+// C2583.cpp
+// compile with: /c
+class A {
+public:
+   int i;
+   A() const;   // C2583
+
+   // try the following line instead
+   // A();
+};
 ```

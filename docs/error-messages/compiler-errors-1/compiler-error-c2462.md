@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2462
-'identifier' : cannot define a type in a 'new-expression'  
-  
- You cannot define a type in the operand field of the `new` operator. Put the type definition in a separate statement.  
-  
- The following sample generates C2462:  
-  
-```  
-// C2462.cpp  
-int main() {  
-   new struct S { int i; };   // C2462  
-}  
+
+'identifier' : cannot define a type in a 'new-expression'
+
+You cannot define a type in the operand field of the `new` operator. Put the type definition in a separate statement.
+
+The following sample generates C2462:
+
+```
+// C2462.cpp
+int main() {
+   new struct S { int i; };   // C2462
+}
 ```

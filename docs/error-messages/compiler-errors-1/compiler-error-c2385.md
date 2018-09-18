@@ -13,58 +13,60 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2385
-ambiguous access of 'member'  
-  
- The member can derive from more than one object (it is inherited from more than one object).  To resolve this error,  
-  
--   Make the member unambiguous by providing a cast.  
-  
--   Rename the ambiguous members in the base classes.  
-  
-## Example  
- The following sample generates C2385.  
-  
-```  
-// C2385.cpp  
-// C2385 expected  
-#include <stdio.h>  
-  
-struct A   
-{  
-    void x(int i)   
-    {  
-        printf_s("\nIn A::x");  
-    }  
-};  
-  
-struct B   
-{  
-    void x(char c)   
-    {  
-        printf_s("\nIn B::x");  
-    }  
-};  
-  
-// Delete the following line to resolve.  
-struct C : A, B {}  
-  
-// Uncomment the following 4 lines to resolve.  
-// struct C : A, B   
-// {  
-//     using B::x;  
-//     using A::x;  
-// };  
-  
-int main()   
-{  
-    C aC;  
-    aC.x(100);  
-    aC.x('c');  
-}  
-  
-struct C : A, B   
-{  
-    using B::x;  
-    using A::x;  
-};  
+
+ambiguous access of 'member'
+
+The member can derive from more than one object (it is inherited from more than one object).  To resolve this error,
+
+- Make the member unambiguous by providing a cast.
+
+- Rename the ambiguous members in the base classes.
+
+## Example
+
+The following sample generates C2385.
+
+```
+// C2385.cpp
+// C2385 expected
+#include <stdio.h>
+
+struct A
+{
+    void x(int i)
+    {
+        printf_s("\nIn A::x");
+    }
+};
+
+struct B
+{
+    void x(char c)
+    {
+        printf_s("\nIn B::x");
+    }
+};
+
+// Delete the following line to resolve.
+struct C : A, B {}
+
+// Uncomment the following 4 lines to resolve.
+// struct C : A, B
+// {
+//     using B::x;
+//     using A::x;
+// };
+
+int main()
+{
+    C aC;
+    aC.x(100);
+    aC.x('c');
+}
+
+struct C : A, B
+{
+    using B::x;
+    using A::x;
+};
 ```

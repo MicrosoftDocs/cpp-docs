@@ -26,8 +26,8 @@ __assume(
 ```  
   
 #### Parameters  
- `expression`  
- Any expression that is assumed to evaluate to true.  
+*expression*<br/>
+Any expression that is assumed to evaluate to true.  
   
 ## Remarks  
  The optimizer assumes that the condition represented by `expression` is true at the point where the keyword appears and remains true until `expression` is modified (for example, by assignment to a variable). Selective use of hints passed to the optimizer by `__assume` can improve optimization.  

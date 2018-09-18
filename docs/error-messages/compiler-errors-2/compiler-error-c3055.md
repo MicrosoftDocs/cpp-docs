@@ -13,39 +13,40 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3055
-'symbol' : symbol cannot be referenced before it is used in 'threadprivate' directive  
-  
- A symbol was referenced and then used in a [threadprivate](../../parallel/openmp/reference/threadprivate.md) clause, which is not allowed.  
-  
- The following sample generates C3055:  
-  
-```  
-// C3055.cpp  
-// compile with: /openmp  
-int x, y;  
-int z = x;  
-#pragma omp threadprivate(x, y)   // C3055  
-  
-void test() {  
-   #pragma omp parallel copyin(x, y)  
-   {  
-      x = y;  
-   }  
-}  
-```  
-  
- Possible resolution:  
-  
-```  
-// C3055b.cpp  
-// compile with: /openmp /LD  
-int x, y, z;  
-#pragma omp threadprivate(x, y)  
-  
-void test() {  
-   #pragma omp parallel copyin(x, y)  
-   {  
-      x = y;  
-   }  
-}  
+
+'symbol' : symbol cannot be referenced before it is used in 'threadprivate' directive
+
+A symbol was referenced and then used in a [threadprivate](../../parallel/openmp/reference/threadprivate.md) clause, which is not allowed.
+
+The following sample generates C3055:
+
+```
+// C3055.cpp
+// compile with: /openmp
+int x, y;
+int z = x;
+#pragma omp threadprivate(x, y)   // C3055
+
+void test() {
+   #pragma omp parallel copyin(x, y)
+   {
+      x = y;
+   }
+}
+```
+
+Possible resolution:
+
+```
+// C3055b.cpp
+// compile with: /openmp /LD
+int x, y, z;
+#pragma omp threadprivate(x, y)
+
+void test() {
+   #pragma omp parallel copyin(x, y)
+   {
+      x = y;
+   }
+}
 ```

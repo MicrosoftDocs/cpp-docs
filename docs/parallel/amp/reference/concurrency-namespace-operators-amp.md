@@ -30,14 +30,14 @@ bool operator== (
 ```  
   
 ### Parameters  
- `_Rank`  
- The rank of the tuple arguments.  
+*_Rank*<br/>
+The rank of the tuple arguments.  
   
- `_Lhs`  
- One of the tuples to compare.  
+*_Lhs*<br/>
+One of the tuples to compare.  
   
- `_Rhs`  
- One of the tuples to compare.  
+*_Rhs*<br/>
+One of the tuples to compare.  
   
 ### Return Value  
  `true` if the tuples are equal; otherwise, `false`.  
@@ -56,14 +56,14 @@ bool operator!= (
 ```  
   
 ### Parameters  
- `_Rank`  
- The rank of the tuple arguments.  
+*_Rank*<br/>
+The rank of the tuple arguments.  
   
- `_Lhs`  
- One of the tuples to compare.  
+*_Lhs*<br/>
+One of the tuples to compare.  
   
- `_Rhs`  
- One of the tuples to compare.  
+*_Rhs*<br/>
+One of the tuples to compare.  
   
 ### Return Value  
  `true` if the tuples are not equal; otherwise, `false`.  
@@ -101,14 +101,14 @@ class _Tuple_type> _Tuple_type<_Rank>   operator+(
 ```  
   
 ### Parameters  
- `_Rank`  
- The rank of the tuple arguments.  
+*_Rank*<br/>
+The rank of the tuple arguments.  
   
- `_Lhs`  
- One of the arguments to add.  
+*_Lhs*<br/>
+One of the arguments to add.  
   
- `_Rhs`  
- One of the arguments to add.  
+*_Rhs*<br/>
+One of the arguments to add.  
   
 ### Return Value  
  The component-wise sum of the specified arguments.  
@@ -146,14 +146,14 @@ _Tuple_type<_Rank>   operator-(
 ```  
   
 ### Parameters  
- `_Rank`  
- The rank of the tuple arguments.  
+*_Rank*<br/>
+The rank of the tuple arguments.  
   
- `_Lhs`  
- The argument to be subtracted from.  
+*_Lhs*<br/>
+The argument to be subtracted from.  
   
- `_Rhs`  
- The argument to subtract.  
+*_Rhs*<br/>
+The argument to subtract.  
   
 ### Return Value  
  The component-wise difference between the specified arguments.  
@@ -182,14 +182,14 @@ _Tuple_type<_Rank>   operator*(
 ```  
   
 ### Parameters  
- `_Rank`  
- The rank of the tuple arguments.  
+*_Rank*<br/>
+The rank of the tuple arguments.  
   
- `_Lhs`  
- One of the tuples to multiply.  
+*_Lhs*<br/>
+One of the tuples to multiply.  
   
- `_Rhs`  
- One of the tuples to multiply.  
+*_Rhs*<br/>
+One of the tuples to multiply.  
   
 ### Return Value  
  The component-wise product of the specified arguments.  
@@ -218,14 +218,14 @@ _Tuple_type<_Rank>   operator/(
 ```  
   
 ### Parameters  
- `_Rank`  
- The rank of the tuple arguments.  
+*_Rank*<br/>
+The rank of the tuple arguments.  
   
- `_Lhs`  
- The tuple to be divided.  
+*_Lhs*<br/>
+The tuple to be divided.  
   
- `_Rhs`  
- The tuple to divide by.  
+*_Rhs*<br/>
+The tuple to divide by.  
   
 ### Return Value  
  The component-wise quotient of the specified arguments.  
@@ -254,14 +254,14 @@ _Tuple_type<_Rank>   operator%(
 ```  
   
 ### Parameters  
- `_Rank`  
- The rank of the tuple arguments.  
+*_Rank*<br/>
+The rank of the tuple arguments.  
   
- `_Lhs`  
- The tuple from which the modulo is calculated.  
+*_Lhs*<br/>
+The tuple from which the modulo is calculated.  
   
- `_Rhs`  
- The tuple to modulo by.  
+*_Rhs*<br/>
+The tuple to modulo by.  
   
 ### Return Value  
  The result of the first specified argument modulus the second specified argument.  

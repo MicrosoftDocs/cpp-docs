@@ -13,26 +13,27 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3265
-cannot declare a managed 'managed construct' in an unmanaged 'unmanaged construct'  
-  
-You cannot include a managed object in an unmanaged context.  
-  
-The following sample reproduces C3265:  
-  
-```  
-// C3265_2.cpp  
-// compile with: /clr /LD  
-#include <vcclr.h>  
-  
-ref class A { };  
-  
-class B  
-// try the following line instead  
-// ref class B   
-{  
-   A ^a;   // C3265  
-   // or embed the managed handle using gcroot  
-   // try the following line instead  
-   // gcroot<A^> a;  
-};  
-```  
+
+cannot declare a managed 'managed construct' in an unmanaged 'unmanaged construct'
+
+You cannot include a managed object in an unmanaged context.
+
+The following sample reproduces C3265:
+
+```
+// C3265_2.cpp
+// compile with: /clr /LD
+#include <vcclr.h>
+
+ref class A { };
+
+class B
+// try the following line instead
+// ref class B
+{
+   A ^a;   // C3265
+   // or embed the managed handle using gcroot
+   // try the following line instead
+   // gcroot<A^> a;
+};
+```

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2056
-illegal expression  
-  
- An expression was invalid because of a previous error.
+
+illegal expression
+
+An expression was invalid because of a previous error.

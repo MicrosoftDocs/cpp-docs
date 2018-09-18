@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1080
-compiler limit : command line option exceeded limit of number characters  
-  
- An argument passed to the compiler exceeds 256 characters.
+
+compiler limit : command line option exceeded limit of number characters
+
+An argument passed to the compiler exceeds 256 characters.

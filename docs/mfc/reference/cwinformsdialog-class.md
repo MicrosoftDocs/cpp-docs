@@ -24,8 +24,8 @@ class CWinFormsDialog :
 ```  
   
 #### Parameters  
- `TManagedControl`  
- The .NET Framework user control to be displayed in the MFC application.  
+*TManagedControl*<br/>
+The .NET Framework user control to be displayed in the MFC application.  
   
 ## Members  
   

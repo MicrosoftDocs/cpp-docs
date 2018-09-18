@@ -13,26 +13,27 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3264
-'class' : a class-constructor cannot have a return type  
-  
-Class constructors cannot have return types.  
-  
-The following sample generates C3264:  
-  
-```  
-// C3264_2.cpp  
-// compile with: /clr  
-  
-ref class X {  
-   public:  
-      static int X()   { // C3264  
-      }  
-  
-      /* use the code below to resolve the error  
-      static X() {  
-      }  
-      */  
-};  
-int main() {  
-}  
-```  
+
+'class' : a class-constructor cannot have a return type
+
+Class constructors cannot have return types.
+
+The following sample generates C3264:
+
+```
+// C3264_2.cpp
+// compile with: /clr
+
+ref class X {
+   public:
+      static int X()   { // C3264
+      }
+
+      /* use the code below to resolve the error
+      static X() {
+      }
+      */
+};
+int main() {
+}
+```

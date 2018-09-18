@@ -54,8 +54,8 @@ out_of_memory () throw();
 ```  
   
 ### Parameters  
- `_Message`  
- A description of the error.  
+*_Message*<br/>
+A description of the error.  
   
 ### Return Value  
  A new instance of the `out_of_memory` class.  

@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3152
-'construct' : 'keyword' can only be applied to a class, struct, or virtual member function  
-  
- Certain keywords can only be applied to a C++ class.  
-  
- The following sample generates C3152 and shows how to fix it:  
-  
-```  
-// C3152.cpp  
-// compile with: /clr /c  
-ref class C {  
-   int (*pfn)() sealed;   // C3152  
-   virtual int g() sealed;   // OK  
-};  
-```  
+
+'construct' : 'keyword' can only be applied to a class, struct, or virtual member function
+
+Certain keywords can only be applied to a C++ class.
+
+The following sample generates C3152 and shows how to fix it:
+
+```
+// C3152.cpp
+// compile with: /clr /c
+ref class C {
+   int (*pfn)() sealed;   // C3152
+   virtual int g() sealed;   // OK
+};
+```

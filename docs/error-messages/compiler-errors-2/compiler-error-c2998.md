@@ -13,14 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2998
-'identifier' : cannot be a template definition  
-  
- The compiler could not process the syntax used in the template definition.  
-  
- The following sample generates C2998:  
-  
-```  
-// C2998.cpp  
-// compile with: /c  
-template <class T> int x = 1018; // C2998  
+
+'identifier' : cannot be a template definition
+
+The compiler could not process the syntax used in the template definition.
+
+The following sample generates C2998:
+
+```
+// C2998.cpp
+// compile with: /c
+template <class T> int x = 1018; // C2998
 ```

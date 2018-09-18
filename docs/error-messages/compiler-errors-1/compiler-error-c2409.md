@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2409
-illegal type used as operator in 'context'  
-  
- The type is not legal as an operator in this context.
+
+illegal type used as operator in 'context'
+
+The type is not legal as an operator in this context.

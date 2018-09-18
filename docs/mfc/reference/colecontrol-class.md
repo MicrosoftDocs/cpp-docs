@@ -1361,23 +1361,14 @@ enum ControlFlags {
 
 By default, `GetControlFlags` returns `fastBeginPaint | clipPaintDC`.
 
-`fastBeginPaint`
-If set, uses a begin-paint function tailored for OLE controls instead of the [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) API (set by default).
-
-`clipPaintDC`
-If not set, disables the call to `IntersectClipRect` made by `COleControl` and gains a small speed advantage. If you are using windowless activation, the flag has no effect.
-
-`pointerInactive`
-If set, provides mouse interaction while your control is inactive by enabling `COleControl`'s implementation of the `IPointerInactive` interface, which is disabled by default.
-
-`noFlickerActivate`
-If set, eliminates extra drawing operations and the accompanying visual flicker. Use when your control draws itself identically in the inactive and active states. If you are using windowless activation, the flag has no effect.
-
-`windowlessActivate`
-If set, indicates your control uses windowless activation.
-
-`canOptimizeDraw`
-If set, indicates that the control will perform optimized drawing, if the container supports it.
+|||
+|-|-|
+|`fastBeginPaint`|If set, uses a begin-paint function tailored for OLE controls instead of the [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) API (set by default).|
+|`clipPaintDC`|If not set, disables the call to `IntersectClipRect` made by `COleControl` and gains a small speed advantage. If you are using windowless activation, the flag has no effect.|
+|`pointerInactive`|If set, provides mouse interaction while your control is inactive by enabling `COleControl`'s implementation of the `IPointerInactive` interface, which is disabled by default.|
+|`noFlickerActivate`|If set, eliminates extra drawing operations and the accompanying visual flicker. Use when your control draws itself identically in the inactive and active states. If you are using windowless activation, the flag has no effect.|
+|`windowlessActivate`|If set, indicates your control uses windowless activation.|
+|`canOptimizeDraw`|If set, indicates that the control will perform optimized drawing, if the container supports it.|
 
 For more information about `GetControlFlags` and other optimizations of OLE controls, see [ActiveX Controls: Optimization](../../mfc/mfc-activex-controls-optimization.md).
 

@@ -29,10 +29,12 @@ class task;
 ```  
   
 #### Parameters  
- `T`  
- `T`  
- `_ReturnType`  
- The result type of this task.  
+
+*T*<br/>
+The task object type.
+
+*_ReturnType*<br/>
+The result type of this task.  
   
 ## Members  
   
@@ -132,7 +134,8 @@ bool operator!= (const task<void>& _Rhs) const;
 ```  
   
 ### Parameters  
- `_Rhs`  
+*_Rhs*<br/>
+The task to compare.
   
 ### Return Value  
  `true` if the objects refer to different underlying tasks, and `false` otherwise.  
@@ -148,8 +151,8 @@ task& operator= (task&& _Other);
 ```  
   
 ### Parameters  
- `_Other`  
- The source `task` object.  
+*_Other*<br/>
+The source `task` object.  
   
 ### Return Value  
   
@@ -167,7 +170,8 @@ bool operator== (const task<void>& _Rhs) const;
 ```  
   
 ### Parameters  
- `_Rhs`  
+*_Rhs*<br/>
+The task to compare.
   
 ### Return Value  
  `true` if the objects refer to the same underlying task, and `false` otherwise.  
@@ -205,17 +209,17 @@ task(
 ```  
   
 ### Parameters  
- `T`  
- The type of the parameter from which the task is to be constructed.  
+*T*<br/>
+The type of the parameter from which the task is to be constructed.  
   
- `_Param`  
- The parameter from which the task is to be constructed. This could be a lambda, a function object, a `task_completion_event<result_type>` object, or a Windows::Foundation::IAsyncInfo if you are using tasks in your Windows Runtime app. The lambda or function object should be a type equivalent to `std::function<X(void)>`, where X can be a variable of type `result_type`, `task<result_type>`, or a Windows::Foundation::IAsyncInfo in Windows Runtime apps.  
+*_Param*<br/>
+The parameter from which the task is to be constructed. This could be a lambda, a function object, a `task_completion_event<result_type>` object, or a Windows::Foundation::IAsyncInfo if you are using tasks in your Windows Runtime app. The lambda or function object should be a type equivalent to `std::function<X(void)>`, where X can be a variable of type `result_type`, `task<result_type>`, or a Windows::Foundation::IAsyncInfo in Windows Runtime apps.  
   
- `_TaskOptions`  
- The task options include cancellation token, scheduler etc  
+*_TaskOptions*<br/>
+The task options include cancellation token, scheduler etc  
   
- `_Other`  
- The source `task` object.  
+*_Other*<br/>
+The source `task` object.  
   
 ### Remarks  
  The default constructor for a `task` is only present in order to allow tasks to be used within containers. A default constructed task cannot be used until you assign a valid task to it. Methods such as `get`, `wait` or `then` will throw an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception when called on a default constructed task.  
@@ -270,20 +274,20 @@ __declspec(
 ```   
   
 ### Parameters  
- `_Function`  
- The type of the function object that will be invoked by this task.  
+*_Function*<br/>
+The type of the function object that will be invoked by this task.  
   
- `_Func`  
- The continuation function to execute when this task completes. This continuation function must take as input a variable of either `result_type` or `task<result_type>`, where `result_type` is the type of the result this task produces.  
+*_Func*<br/>
+The continuation function to execute when this task completes. This continuation function must take as input a variable of either `result_type` or `task<result_type>`, where `result_type` is the type of the result this task produces.  
   
- `_TaskOptions`  
- The task options include cancellation token, scheduler and continuation context. By default the former 3 options are inherited from the antecedent task  
+*_TaskOptions*<br/>
+The task options include cancellation token, scheduler and continuation context. By default the former 3 options are inherited from the antecedent task  
   
- `_CancellationToken`  
- The cancellation token to associate with the continuation task. A continuation task that is created without a cancellation token will inherit the token of its antecedent task.  
+*_CancellationToken*<br/>
+The cancellation token to associate with the continuation task. A continuation task that is created without a cancellation token will inherit the token of its antecedent task.  
   
- `_ContinuationContext`  
- A variable that specifies where the continuation should execute. This variable is only useful when used in a UWP app. For more information, see [task_continuation_context](task-continuation-context-class.md)  
+*_ContinuationContext*<br/>
+A variable that specifies where the continuation should execute. This variable is only useful when used in a UWP app. For more information, see [task_continuation_context](task-continuation-context-class.md)  
   
 ### Return Value  
  The newly created continuation task. The result type of the returned task is determined by what `_Func` returns.  

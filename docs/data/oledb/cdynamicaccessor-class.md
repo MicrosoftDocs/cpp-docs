@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor Class
+
 Allows you to access a data source when you have no knowledge of the database schema (the database's underlying structure).  
   
 ## Syntax
@@ -22,7 +23,8 @@ class CDynamicAccessor : public CAccessorBase
 ```  
 
 ## Requirements  
- **Header**: atldbcli.h  
+
+**Header**: atldbcli.h  
   
 ## Members  
   
@@ -52,13 +54,15 @@ class CDynamicAccessor : public CAccessorBase
 |[SetValue](#setvalue)|Stores the data to the buffer.|  
   
 ## Remarks  
- Use `CDynamicAccessor` methods to obtain column information such as column names, column count, data type, and so on. You then use this column information to create an accessor dynamically at run time.  
+
+Use `CDynamicAccessor` methods to obtain column information such as column names, column count, data type, and so on. You then use this column information to create an accessor dynamically at run time.  
   
- The column information is stored in a buffer that is created and managed by this class. Obtain data from the buffer using [GetValue](../../data/oledb/cdynamicaccessor-getvalue.md).  
+The column information is stored in a buffer that is created and managed by this class. Obtain data from the buffer using [GetValue](../../data/oledb/cdynamicaccessor-getvalue.md).  
   
- For a discussion and examples of using the dynamic accessor classes, see [Using Dynamic Accessors](../../data/oledb/using-dynamic-accessors.md).  
+For a discussion and examples of using the dynamic accessor classes, see [Using Dynamic Accessors](../../data/oledb/using-dynamic-accessors.md).  
 
 ## <a name="addbindentry"></a> CDynamicAccessor::AddBindEntry
+
 Adds a bind entry to the output columns.  
   
 ### Syntax  
@@ -68,16 +72,20 @@ HRESULT AddBindEntry(const DBCOLUMNINFO& info) throw();
 ```  
   
 #### Parameters  
- *info*  
- [in] A `DBCOLUMNINFO` structure containing column information. See "DBCOLUMNINFO Structures" in [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+*info*<br/>
+[in] A `DBCOLUMNINFO` structure containing column information. See "DBCOLUMNINFO Structures" in [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
- One of the standard HRESULT values.  
+
+One of the standard HRESULT values.  
   
 ### Remarks  
- Use this method when overriding the default accessor created with `CDynamicAccessor` (see [How Do I Fetch Data?](../../data/oledb/fetching-data.md)). 
+
+Use this method when overriding the default accessor created with `CDynamicAccessor` (see [How Do I Fetch Data?](../../data/oledb/fetching-data.md)). 
   
 ## <a name="cdynamicaccessor"></a> CDynamicAccessor::CDynamicAccessor
+
 Instantiates and initializes the `CDynamicAccessor` object.  
   
 ### Syntax  
@@ -88,18 +96,21 @@ CDynamicAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,
 ```  
   
 #### Parameters  
- *eBlobHandling*  
- Specifies how the binary large object (BLOB) data is to be handled. The default value is DBBLOBHANDLING_DEFAULT. See [SetBlobHandling](../../data/oledb/cdynamicaccessor-setblobhandling.md) for a description of the DBBLOBHANDLINGENUM values.  
+
+*eBlobHandling*<br/>
+Specifies how the binary large object (BLOB) data is to be handled. The default value is DBBLOBHANDLING_DEFAULT. See [SetBlobHandling](../../data/oledb/cdynamicaccessor-setblobhandling.md) for a description of the DBBLOBHANDLINGENUM values.  
   
- *nBlobSize*  
- The maximum BLOB size in bytes; column data over this value is treated as a BLOB. The default value is 8,000. See [SetBlobSizeLimit](../../data/oledb/cdynamicaccessor-setblobsizelimit.md) for details.  
+*nBlobSize*<br/>
+The maximum BLOB size in bytes; column data over this value is treated as a BLOB. The default value is 8,000. See [SetBlobSizeLimit](../../data/oledb/cdynamicaccessor-setblobsizelimit.md) for details.  
   
 ### Remarks  
- If you use the constructor to initialize the `CDynamicAccessor` object, you can specify how it will bind BLOBs. BLOBs can contain binary data such as graphics, sound, or compiled code. The default behavior is to treat columns more than 8,000 bytes as BLOBs and try to bind them to an `ISequentialStream` object. However, you can specify a different value to be the BLOB size.  
+
+If you use the constructor to initialize the `CDynamicAccessor` object, you can specify how it will bind BLOBs. BLOBs can contain binary data such as graphics, sound, or compiled code. The default behavior is to treat columns more than 8,000 bytes as BLOBs and try to bind them to an `ISequentialStream` object. However, you can specify a different value to be the BLOB size.  
   
- You can also specify how `CDynamicAccessor` handles column data that qualifies as BLOB data: it can handle BLOB data in the default manner; it can skip (does not bind) BLOB data; or it can bind BLOB data in provider-allocated memory.  
+You can also specify how `CDynamicAccessor` handles column data that qualifies as BLOB data: it can handle BLOB data in the default manner; it can skip (does not bind) BLOB data; or it can bind BLOB data in provider-allocated memory.  
 
 ## <a name="close"></a> CDynamicAccessor::Close
+
 Unbinds all the columns, releases the allocated memory, and releases the [IAccessor](/previous-versions/windows/desktop/ms719672\(v=vs.85\)) interface pointer in the class.  
   
 ### Syntax  
@@ -109,6 +120,7 @@ void Close() throw();
 ```  
 
 ## <a name="getblobhandling"></a> CDynamicAccessor::GetBlobHandling
+
 Retrieves the BLOB handling value for the current row.  
   
 ### Syntax  
@@ -118,9 +130,11 @@ const DBBLOBHANDLINGENUM GetBlobHandling() const;
 ```  
   
 ### Remarks  
- Returns the BLOB handling value *eBlobHandling* as set by [SetBlobHandling](../../data/oledb/cdynamicaccessor-setblobhandling.md). 
+
+Returns the BLOB handling value *eBlobHandling* as set by [SetBlobHandling](../../data/oledb/cdynamicaccessor-setblobhandling.md). 
 
 ## <a name="getblobsizelimit"></a> CDynamicAccessor::GetBlobSizeLimit
+
 Retrieves the maximum BLOB size in bytes.  
   
 ### Syntax  
@@ -130,9 +144,11 @@ const DBLENGTH GetBlobSizeLimit() const;
 ```  
   
 ### Remarks  
- Returns the BLOB handling value *nBlobSize* as set by [SetBlobSizeLimit](../../data/oledb/cdynamicaccessor-setblobsizelimit.md).  
+
+Returns the BLOB handling value *nBlobSize* as set by [SetBlobSizeLimit](../../data/oledb/cdynamicaccessor-setblobsizelimit.md).  
 
 ## <a name="getbookmark"></a> CDynamicAccessor::GetBookmark
+
 Retrieves the bookmark for the current row.  
   
 ### Syntax  
@@ -142,16 +158,20 @@ HRESULT GetBookmark(CBookmark< >* pBookmark) const throw();
 ```  
   
 #### Parameters  
- *pBookmark*  
- [out] A pointer to the [CBookmark](../../data/oledb/cbookmark-class.md) object.  
+
+*pBookmark*<br/>
+[out] A pointer to the [CBookmark](../../data/oledb/cbookmark-class.md) object.  
   
 ### Return Value  
- One of the standard HRESULT values.  
+
+One of the standard HRESULT values.  
   
 ### Remarks  
- You need to set `DBPROP_IRowsetLocate` to VARIANT_TRUE to retrieve a bookmark. 
+
+You need to set `DBPROP_IRowsetLocate` to VARIANT_TRUE to retrieve a bookmark. 
 
 ## <a name="getcolumncount"></a> CDynamicAccessor::GetColumnCount
+
 Retrieves the number of columns.  
   
 ### Syntax  
@@ -161,9 +181,11 @@ DBORDINAL GetColumnCount() const throw();
 ```  
   
 ### Return Value  
- The number of columns retrieved.  
+
+The number of columns retrieved.  
 
 ## <a name="getcolumnflags"></a> CDynamicAccessor::GetColumnFlags
+
 Retrieves the column characteristics.  
   
 ### Syntax  
@@ -174,19 +196,23 @@ bool GetColumnFlags(DBORDINAL nColumn, 
 ```  
   
 #### Parameters  
- *nColumn*  
- [in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
+
+*nColumn*<br/>
+[in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
   
- *pFlags*  
- [out] A pointer to a bitmask that describes column characteristics. See "DBCOLUMNFLAGS Enumerated Type" in [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+*pFlags*<br/>
+[out] A pointer to a bitmask that describes column characteristics. See "DBCOLUMNFLAGS Enumerated Type" in [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
- Returns **true** if the column characteristics are successfully retrieved. Otherwise, it returns **false**.  
+
+Returns **true** if the column characteristics are successfully retrieved. Otherwise, it returns **false**.  
   
 ### Remarks  
- The column number is offset from one. Column zero is a special case; it is the bookmark if available.
+
+The column number is offset from one. Column zero is a special case; it is the bookmark if available.
 
 ## <a name="getcolumninfo"></a> CDynamicAccessor::GetColumnInfo
+
 Returns the column metadata needed by most consumers.  
   
 ### Syntax  
@@ -199,25 +225,29 @@ HRESULT GetColumnInfo(IRowset* pRowset, 
 ```  
   
 #### Parameters  
- *pRowset*  
- [in] A pointer to the [IRowset](/previous-versions/windows/desktop/ms720986\(v=vs.85\)) interface.  
+
+*pRowset*<br/>
+[in] A pointer to the [IRowset](/previous-versions/windows/desktop/ms720986\(v=vs.85\)) interface.  
   
- *pColumns*  
- [out] A pointer to memory in which to return the number of columns in the rowset; this number includes the bookmark column, if there is one.  
+*pColumns*<br/>
+[out] A pointer to memory in which to return the number of columns in the rowset; this number includes the bookmark column, if there is one.  
   
- *ppColumnInfo*  
- [out] A pointer to memory in which to return an array of `DBCOLUMNINFO` structures. See "DBCOLUMNINFO Structures" in [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+*ppColumnInfo*<br/>
+[out] A pointer to memory in which to return an array of `DBCOLUMNINFO` structures. See "DBCOLUMNINFO Structures" in [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
- *ppStringsBuffer*  
- [out] A pointer to memory in which to return a pointer to storage for all string values (names used either within *columnid* or for *pwszName*) within a single allocation block.  
+*ppStringsBuffer*<br/>
+[out] A pointer to memory in which to return a pointer to storage for all string values (names used either within *columnid* or for *pwszName*) within a single allocation block.  
   
 ### Return Value  
- One of the standard HRESULT values.  
+
+One of the standard HRESULT values.  
   
 ### Remarks  
- See [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference* for information on the data types `DBORDINAL`, `DBCOLUMNINFO`, and `OLECHAR`.  
+
+See [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference* for information on the data types `DBORDINAL`, `DBCOLUMNINFO`, and `OLECHAR`.  
 
 ## <a name="getcolumnname"></a> CDynamicAccessor::GetColumnName
+
 Retrieves the name of the specified column.  
   
 ### Syntax  
@@ -227,13 +257,16 @@ LPOLESTR GetColumnName(DBORDINAL nColumn) const throw();
 ```  
   
 #### Parameters  
- *nColumn*  
- [in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
+
+*nColumn*<br/>
+[in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
   
 ### Return Value  
- The name of the specified column.  
+
+The name of the specified column.  
 
 ## <a name="getcolumntype"></a> CDynamicAccessor::GetColumnType
+
 Retrieves the data type of a specified column.  
   
 ### Syntax  
@@ -244,16 +277,19 @@ bool GetColumnType(DBORDINAL nColumn, 
 ```  
   
 #### Parameters  
- *nColumn*  
- [in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
+
+*nColumn*<br/>
+[in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
   
- *pType*  
- [out] A pointer to the data type of the specified column.  
+*pType*<br/>
+[out] A pointer to the data type of the specified column.  
   
 ### Return Value  
- Returns **true** on success or **false** on failure.  
+
+Returns **true** on success or **false** on failure.  
 
 ## <a name="getlength"></a> CDynamicAccessor::GetLength
+
 Retrieves the length of the specified column.  
   
 ### Syntax  
@@ -270,22 +306,26 @@ bool GetLength(const WCHAR* pColumnName, 
 ```  
   
 #### Parameters  
- *nColumn*  
- [in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
+
+*nColumn*<br/>
+[in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
   
- *pColumnName*  
- [in] A pointer to a character string containing the column name.  
+*pColumnName*<br/>
+[in] A pointer to a character string containing the column name.  
   
- *pLength*  
- [out] A pointer to the integer containing the length of the column in bytes.  
+*pLength*<br/>
+[out] A pointer to the integer containing the length of the column in bytes.  
   
 ### Return Value  
- Returns **true** if the specified column is found. Otherwise, this function returns **false**.  
+
+Returns **true** if the specified column is found. Otherwise, this function returns **false**.  
   
 ### Remarks  
- The first override takes the column number, and the second and third overrides take the column name in ANSI or Unicode format, respectively. 
+
+The first override takes the column number, and the second and third overrides take the column name in ANSI or Unicode format, respectively. 
 
 ## <a name="getordinal"></a> CDynamicAccessor::GetOrdinal
+
 Retrieves the column number given a column name.  
   
 ### Syntax  
@@ -299,16 +339,19 @@ bool GetOrdinal(const WCHAR* pColumnName,
 ```  
   
 #### Parameters  
- *pColumnName*  
- [in] A pointer to a character string containing the column name.  
+
+*pColumnName*<br/>
+[in] A pointer to a character string containing the column name.  
   
- *pOrdinal*  
- [out] A pointer to the column number.  
+*pOrdinal*<br/>
+[out] A pointer to the column number.  
   
 ### Return Value  
- Returns **true** if a column with the specified name is found. Otherwise, this function returns **false**.
+
+Returns **true** if a column with the specified name is found. Otherwise, this function returns **false**.
 
 ## <a name="getstatus"></a> CDynamicAccessor::GetStatus
+
 Retrieves the status of the specified column.  
   
 ### Syntax  
@@ -325,19 +368,22 @@ bool GetStatus(const WCHAR* pColumnName,
 ```  
   
 #### Parameters  
- *nColumn*  
- [in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
+
+*nColumn*<br/>
+[in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
   
- *pColumnName*  
- [in] A pointer to a character string containing the column name.  
+*pColumnName*<br/>
+[in] A pointer to a character string containing the column name.  
   
- *pStatus*  
- [out] A pointer to the variable containing the column status. See [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.  
+*pStatus*<br/>
+[out] A pointer to the variable containing the column status. See [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.  
   
 ### Return Value  
- Returns **true** if the specified column is found. Otherwise, this function returns **false**.  
+
+Returns **true** if the specified column is found. Otherwise, this function returns **false**.  
 
 ## <a name="getvalue"></a> CDynamicAccessor::GetValue
+
 Retrieves the data for a specified column.  
   
 ### Syntax  
@@ -360,29 +406,33 @@ bool GetValue(const WCHAR* pColumnName, ctype* pData) const throw();
 ```  
   
 #### Parameters  
- *ctype*  
- [in] A templated parameter that handles any data type except string types (`CHAR*`, `WCHAR*`), which require special handling. `GetValue` uses the appropriate data type based on what you specify here.  
+
+*ctype*<br/>
+[in] A templated parameter that handles any data type except string types (`CHAR*`, `WCHAR*`), which require special handling. `GetValue` uses the appropriate data type based on what you specify here.  
   
- *nColumn*  
- [in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
+*nColumn*<br/>
+[in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
   
- *pColumnName*  
- [in] The column name.  
+*pColumnName*<br/>
+[in] The column name.  
   
- *pData*  
- [out] The pointer to the contents of the specified column.  
+*pData*<br/>
+[out] The pointer to the contents of the specified column.  
   
 ### Return Value  
- If you want to pass string data, use the nontemplated versions of `GetValue`. The nontemplated versions of this method return `void*`, which points to the part of the buffer that contains the specified column data. Returns NULL if the column is not found.  
+
+If you want to pass string data, use the nontemplated versions of `GetValue`. The nontemplated versions of this method return `void*`, which points to the part of the buffer that contains the specified column data. Returns NULL if the column is not found.  
   
- For all other data types, it is simpler to use the templated versions of `GetValue`. The templated versions return **true** on success or **false** on failure.  
+For all other data types, it is simpler to use the templated versions of `GetValue`. The templated versions return **true** on success or **false** on failure.  
   
 ### Remarks  
- Use the nontemplated versions to return columns that contain strings and the templated versions for columns that contain other data types.  
+
+Use the nontemplated versions to return columns that contain strings and the templated versions for columns that contain other data types.  
   
- In debug mode, you will get an assertion if the size of *pData* is unequal to the size of the column to which it points.  
+In debug mode, you will get an assertion if the size of *pData* is unequal to the size of the column to which it points.  
 
 ## <a name="setblobhandling"></a> CDynamicAccessor::SetBlobHandling
+
 Sets the BLOB handling value for the current row.  
   
 ### Syntax  
@@ -392,21 +442,24 @@ bool SetBlobHandling(DBBLOBHANDLINGENUM eBlobHandling);
 ```  
   
 #### Parameters  
- *eBlobHandling*  
- Specifies how the BLOB data is to be handled. It can take the following values:  
+
+*eBlobHandling*<br/>
+Specifies how the BLOB data is to be handled. It can take the following values:  
   
--   DBBLOBHANDLING_DEFAULT: Handle column data larger than *nBlobSize* (as set by `SetBlobSizeLimit`) as BLOB data and retrieve it through an `ISequentialStream` or `IStream` object. This option will attempt to bind every column containing data larger than *nBlobSize* or listed as DBTYPE_IUNKNOWN as BLOB data.  
+- DBBLOBHANDLING_DEFAULT: Handle column data larger than *nBlobSize* (as set by `SetBlobSizeLimit`) as BLOB data and retrieve it through an `ISequentialStream` or `IStream` object. This option will attempt to bind every column containing data larger than *nBlobSize* or listed as DBTYPE_IUNKNOWN as BLOB data.  
   
--   DBBLOBHANDLING_NOSTREAMS: Handle column data larger than *nBlobSize* (as set by `SetBlobSizeLimit`) as BLOB data and retrieve it through reference in provider-allocated, consumer-owned memory. This option is useful for tables that have more than one BLOB column, and the provider supports only one `ISequentialStream` object per accessor.  
+- DBBLOBHANDLING_NOSTREAMS: Handle column data larger than *nBlobSize* (as set by `SetBlobSizeLimit`) as BLOB data and retrieve it through reference in provider-allocated, consumer-owned memory. This option is useful for tables that have more than one BLOB column, and the provider supports only one `ISequentialStream` object per accessor.  
   
--   DBBLOBHANDLING_SKIP: Skip (do not bind) columns qualifying as containing BLOBs (the accessor will not bind or retrieve the column value but it will still retrieve the column status and length).  
+- DBBLOBHANDLING_SKIP: Skip (do not bind) columns qualifying as containing BLOBs (the accessor will not bind or retrieve the column value but it will still retrieve the column status and length).  
   
 ### Remarks  
- You should call `SetBlobHandling` before calling `Open`.  
+
+You should call `SetBlobHandling` before calling `Open`.  
   
- The constructor method [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) sets the BLOB handling value to DBBLOBHANDLING_DEFAULT.
+The constructor method [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) sets the BLOB handling value to DBBLOBHANDLING_DEFAULT.
 
 ## <a name="setblobsizelimit"></a> CDynamicAccessor::SetBlobSizeLimit
+
 Sets the maximum BLOB size in bytes.  
   
 ### Syntax  
@@ -416,15 +469,18 @@ void SetBlobSizeLimit(DBLENGTH nBlobSize);
 ```  
   
 #### Parameters  
- *nBlobSize*  
- Specifies the BLOB size limit.  
+
+*nBlobSize*<br/>
+Specifies the BLOB size limit.  
   
 ### Remarks  
- Sets the maximum BLOB size in bytes; column data larger than this value is treated as a BLOB. Some providers give extremely large sizes for columns (such as 2 GB). Rather than attempting to allocate memory for a column this size, you would typically try to bind these columns as BLOBs. In that way you don't have to allocate all the memory, but you can still read all the data without fear of truncation. However, there are some cases in which you might want to force `CDynamicAccessor` to bind large columns in their native data types. To do this, call `SetBlobSizeLimit` before calling `Open`.  
+
+Sets the maximum BLOB size in bytes; column data larger than this value is treated as a BLOB. Some providers give extremely large sizes for columns (such as 2 GB). Rather than attempting to allocate memory for a column this size, you would typically try to bind these columns as BLOBs. In that way you don't have to allocate all the memory, but you can still read all the data without fear of truncation. However, there are some cases in which you might want to force `CDynamicAccessor` to bind large columns in their native data types. To do this, call `SetBlobSizeLimit` before calling `Open`.  
   
- The constructor method [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) sets the maximum BLOB size to a default value of 8,000 bytes.  
+The constructor method [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) sets the maximum BLOB size to a default value of 8,000 bytes.  
 
 ## <a name="setlength"></a> CDynamicAccessor::SetLength
+
 Sets the length of the specified column.  
   
 ### Syntax  
@@ -441,19 +497,22 @@ bool SetLength(const WCHAR* pColumnName, 
 ```  
   
 #### Parameters  
- *nColumn*  
- [in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
+
+*nColumn*<br/>
+[in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
   
- *nLength*  
- [in] The length of the column in bytes.  
+*nLength*<br/>
+[in] The length of the column in bytes.  
   
- *pColumnName*  
- [in] A pointer to a character string containing the column name.  
+*pColumnName*<br/>
+[in] A pointer to a character string containing the column name.  
   
 ### Return Value  
- Returns **true** if the specified column length is set successfully. Otherwise, this function returns **false**.  
+
+Returns **true** if the specified column length is set successfully. Otherwise, this function returns **false**.  
 
 ## <a name="setstatus"></a> CDynamicAccessor::SetStatus
+
 Sets the status of the specified column.  
   
 ### Syntax  
@@ -470,19 +529,22 @@ bool SetStatus(const WCHAR* pColumnName, 
 ```  
   
 #### Parameters  
- *nColumn*  
- [in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
+
+*nColumn*<br/>
+[in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
   
- *status*  
- [in] The column status. See [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.  
+*status*<br/>
+[in] The column status. See [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.  
   
- *pColumnName*  
- [in] A pointer to a character string containing the column name.  
+*pColumnName*<br/>
+[in] A pointer to a character string containing the column name.  
   
 ### Return Value  
- Returns **true** if the specified column status is set successfully. Otherwise, this function returns **false**. 
+
+Returns **true** if the specified column status is set successfully. Otherwise, this function returns **false**. 
 
 ## <a name="setvalue"></a> CDynamicAccessor::SetValue
+
 Stores data to a specified column.  
   
 ### Syntax  
@@ -505,26 +567,29 @@ bool SetValue(
 ```  
   
 #### Parameters  
- *ctype*  
- [in] A templated parameter that handles any data type except string types (`CHAR*`, `WCHAR*`), which require special handling. `GetValue` uses the appropriate data type based on what you specify here.  
+
+*ctype*<br/>
+[in] A templated parameter that handles any data type except string types (`CHAR*`, `WCHAR*`), which require special handling. `GetValue` uses the appropriate data type based on what you specify here.  
   
- *pColumnName*  
- [in] A pointer to a character string containing the column name.  
+*pColumnName*<br/>
+[in] A pointer to a character string containing the column name.  
   
- *data*  
- [in] The pointer to the memory containing the data.  
+*data*<br/>
+[in] The pointer to the memory containing the data.  
   
- *nColumn*  
- [in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
+*nColumn*<br/>
+[in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
   
 ### Return Value  
- If you want to set string data, use the nontemplated versions of `GetValue`. The nontemplated versions of this method return `void*`, which points to the part of the buffer that contains the specified column data. Returns NULL if the column is not found.  
+
+If you want to set string data, use the nontemplated versions of `GetValue`. The nontemplated versions of this method return `void*`, which points to the part of the buffer that contains the specified column data. Returns NULL if the column is not found.  
   
- For all other data types, it is simpler to use the templated versions of `GetValue`. The templated versions return **true** on success or **false** on failure.  
+For all other data types, it is simpler to use the templated versions of `GetValue`. The templated versions return **true** on success or **false** on failure.  
 
 ## See Also  
- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)   
- [CAccessor Class](../../data/oledb/caccessor-class.md)   
- [CDynamicParameterAccessor Class](../../data/oledb/cdynamicparameteraccessor-class.md)   
- [CManualAccessor Class](../../data/oledb/cmanualaccessor-class.md)
+
+[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
+[CAccessor Class](../../data/oledb/caccessor-class.md)<br/>
+[CDynamicParameterAccessor Class](../../data/oledb/cdynamicparameteraccessor-class.md)<br/>
+[CManualAccessor Class](../../data/oledb/cmanualaccessor-class.md)

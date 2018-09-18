@@ -90,11 +90,11 @@ inline explicit unorm(
 ```  
   
 ### Parameters  
- `_V`  
- The value used to initialize.  
+*_V*<br/>
+The value used to initialize.  
   
- `_Other`  
- The norm object used to initialize.  
+*_Other*<br/>
+The norm object used to initialize.  
   
 ## See Also  
  [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

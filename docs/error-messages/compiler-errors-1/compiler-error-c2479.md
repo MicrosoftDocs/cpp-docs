@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2479
-'identifier' : 'allocate( )' is only valid for data items of static extent  
-  
- The `__declspec( allocate())` syntax can be used for static data only.  
-  
- The following sample generates C2479:  
-  
-```  
-// C2479.cpp  
-// compile with: /c  
-#pragma section("mycode", read)  
-static __declspec(allocate("mycode")) void DoNothing() {}   // C2479  
-__declspec(allocate("mycode"))  int i = 0;   // OK  
+
+'identifier' : 'allocate( )' is only valid for data items of static extent
+
+The `__declspec( allocate())` syntax can be used for static data only.
+
+The following sample generates C2479:
+
+```
+// C2479.cpp
+// compile with: /c
+#pragma section("mycode", read)
+static __declspec(allocate("mycode")) void DoNothing() {}   // C2479
+__declspec(allocate("mycode"))  int i = 0;   // OK
 ```

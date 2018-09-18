@@ -23,8 +23,8 @@ class auto_gcroot;
 ```  
   
 #### Parameters  
- `_element_type`  
- The managed type to be embedded.  
+*_element_type*<br/>
+The managed type to be embedded.  
   
 ## Requirements  
  **Header file** \<msclr\auto_gcroot.h>  

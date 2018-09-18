@@ -81,7 +81,7 @@ ATLASSERT(booleanExpression);
 
 ### Parameters
 
-*booleanExpression*  
+*booleanExpression*<br/>
 Expression (including pointers) that evaluates to nonzero or 0.
 
 ### Remarks
@@ -103,10 +103,10 @@ ATLENSURE_THROW(booleanExpression, hr);
 
 ### Parameters
 
-*booleanExpression*  
+*booleanExpression*<br/>
 Specifies a boolean expression to be tested.
 
-*hr*  
+*hr*<br/>
 Specifies an error code to return.
 
 ### Remarks
@@ -139,7 +139,7 @@ ATLTRACENOTIMPL(funcname);
 
 ### Parameters
 
-*funcname*  
+*funcname*<br/>
 [in] A string containing the name of the function that is not implemented.
 
 ### Remarks
@@ -169,16 +169,16 @@ ATLTRACE(
 
 ### Parameters
 
-*exp*  
+*exp*<br/>
 [in] The string and variables to send to the Visual C++ output window or any application that traps these messages.
 
-*category*  
+*category*<br/>
 [in] Type of event or method on which to report. See the Remarks for a list of categories.
 
-*level*  
+*level*<br/>
 [in] The level of tracing to report. See the Remarks for details.
 
-*lpszFormat*  
+*lpszFormat*<br/>
 [in] The formatted string to send to the dump device.
 
 ### Remarks
@@ -200,16 +200,16 @@ ATLTRACE2(
 
 ### Parameters
 
-*exp*  
+*exp*<br/>
 [in] The string to send to the Visual C++ output window or any application that traps these messages.
 
-*category*  
+*category*<br/>
 [in] Type of event or method on which to report. See the Remarks for a list of categories.
 
-*level*  
+*level*<br/>
 [in] The level of tracing to report. See the Remarks for details.
 
-*lpszFormat*  
+*lpszFormat*<br/>
 [in] The `printf`-style format string to use to create a string to send to the dump device.
 
 ### Remarks
@@ -279,5 +279,5 @@ ATLTRACE and ATLTRACE2 have the same behavior, ATLTRACE is included for backward
 
 ## See Also
 
-[Macros](../../atl/reference/atl-macros.md)   
+[Macros](../../atl/reference/atl-macros.md)<br/>
 [Debugging and Error Reporting Global Functions](../../atl/reference/debugging-and-error-reporting-global-functions.md)

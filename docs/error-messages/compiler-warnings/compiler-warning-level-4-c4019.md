@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4019
-empty statement at global scope  
-  
- A semicolon at global scope is not preceded by a statement.  
-  
- This warning may be fixed if you remove the extra semicolon.  
-  
-## Example  
-  
-```  
-// C4019.c  
-// compile with: /Za /W4  
-#define declint( varname ) int varname;  
-declint( a );   // C4019, int a;;  
-declint( b )   // OK, int b;  
-  
-int main()  
-{  
-}  
+
+empty statement at global scope
+
+A semicolon at global scope is not preceded by a statement.
+
+This warning may be fixed if you remove the extra semicolon.
+
+## Example
+
+```
+// C4019.c
+// compile with: /Za /W4
+#define declint( varname ) int varname;
+declint( a );   // C4019, int a;;
+declint( b )   // OK, int b;
+
+int main()
+{
+}
 ```

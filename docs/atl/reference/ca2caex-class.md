@@ -22,13 +22,13 @@ This class is used by string conversion macros CA2CTEX and CT2CAEX, and the type
 ## Syntax
 
 ```
-template<int t_nBufferLength = 128>  
+template<int t_nBufferLength = 128>
 class CA2CAEX
 ```
 
 #### Parameters
 
-*t_nBufferLength*  
+*t_nBufferLength*<br/>
 The size of the buffer used in the translation process. The default length is 128 bytes.
 
 ## Members
@@ -89,10 +89,10 @@ CA2CAEX(LPCSTR psz) throw(...);
 
 ### Parameters
 
-*psz*  
+*psz*<br/>
 The text string to be converted.
 
-*nCodePage*  
+*nCodePage*<br/>
 Unused in this class.
 
 ### Remarks
@@ -123,7 +123,7 @@ LPCSTR m_psz;
 
 Conversion operator.
 
-```  
+```
 operator LPCSTR() const throw();
 ```
 
@@ -133,9 +133,9 @@ Returns the text string as type LPCSTR.
 
 ## See Also
 
-[CA2AEX Class](../../atl/reference/ca2aex-class.md)   
-[CA2WEX Class](../../atl/reference/ca2wex-class.md)   
-[CW2AEX Class](../../atl/reference/cw2aex-class.md)   
-[CW2CWEX Class](../../atl/reference/cw2cwex-class.md)   
-[CW2WEX Class](../../atl/reference/cw2wex-class.md)   
+[CA2AEX Class](../../atl/reference/ca2aex-class.md)<br/>
+[CA2WEX Class](../../atl/reference/ca2wex-class.md)<br/>
+[CW2AEX Class](../../atl/reference/cw2aex-class.md)<br/>
+[CW2CWEX Class](../../atl/reference/cw2cwex-class.md)<br/>
+[CW2WEX Class](../../atl/reference/cw2wex-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

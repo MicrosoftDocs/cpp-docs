@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2103
-'&' on register variable  
-  
- You cannot take the address of a register.
+
+'&' on register variable
+
+You cannot take the address of a register.

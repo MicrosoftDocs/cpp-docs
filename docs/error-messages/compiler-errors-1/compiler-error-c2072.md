@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2072
-'identifier' : initialization of a function  
-  
- A function initializer was specified incorrectly.
+
+'identifier' : initialization of a function
+
+A function initializer was specified incorrectly.

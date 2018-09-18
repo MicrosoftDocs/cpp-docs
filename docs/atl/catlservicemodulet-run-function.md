@@ -24,9 +24,9 @@ Once security is specified, the object is registered with COM so that new client
 
 ## See Also
 
-[Services](../atl/atl-services.md)   
-[CSecurityDesc Class](../atl/reference/csecuritydesc-class.md)   
-[CSid Class](../atl/reference/csid-class.md)   
-[CDacl Class](../atl/reference/cdacl-class.md)   
+[Services](../atl/atl-services.md)<br/>
+[CSecurityDesc Class](../atl/reference/csecuritydesc-class.md)<br/>
+[CSid Class](../atl/reference/csid-class.md)<br/>
+[CDacl Class](../atl/reference/cdacl-class.md)<br/>
 [CAtlServiceModuleT::Run](../atl/reference/catlservicemodulet-class.md#run)
 

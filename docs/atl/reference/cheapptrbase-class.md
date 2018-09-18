@@ -22,16 +22,16 @@ This class forms the basis for several smart heap pointer classes.
 ## Syntax
 
 ```
-template <class T, class Allocator = CCRTAllocator>  
+template <class T, class Allocator = CCRTAllocator>
 class CHeapPtrBase
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The object type to be stored on the heap.
 
-*Allocator*  
+*Allocator*<br/>
 The memory allocation class to use. By default CRT routines are used to allocate and free memory.
 
 ## Members
@@ -84,7 +84,7 @@ bool AllocateBytes(size_t nBytes) throw();
 
 ### Parameters
 
-*nBytes*  
+*nBytes*<br/>
 The number of bytes of memory to allocate.
 
 ### Return Value
@@ -105,7 +105,7 @@ void Attach(T* pData) throw();
 
 ### Parameters
 
-*pData*  
+*pData*<br/>
 The `CHeapPtrBase` object will take ownership of this pointer.
 
 ### Remarks
@@ -198,7 +198,7 @@ Use this operator to call a method in a class pointed to by the `CHeapPtrBase` o
 
 The cast operator.
 
-```  
+```
 operator T*() const throw();
 ```
 
@@ -216,7 +216,7 @@ bool ReallocateBytes(size_t nBytes) throw();
 
 ### Parameters
 
-*nBytes*  
+*nBytes*<br/>
 The new amount of memory to allocate, in bytes.
 
 ### Return Value
@@ -225,6 +225,6 @@ Returns true if the memory is successfully allocated, false otherwise.
 
 ## See Also
 
-[CHeapPtr Class](../../atl/reference/cheapptr-class.md)   
-[CComHeapPtr Class](../../atl/reference/ccomheapptr-class.md)   
+[CHeapPtr Class](../../atl/reference/cheapptr-class.md)<br/>
+[CComHeapPtr Class](../../atl/reference/ccomheapptr-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

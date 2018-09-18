@@ -23,11 +23,10 @@ void omp_set_dynamic(
 );  
 ```  
   
-## Remarks  
- where,  
+### Parameters
   
- `val`  
- A value that indicates if the number of threads available in subsequent parallel region can be adjusted by the runtime.  If nonzero, the runtime can adjust the number of threads, if zero, the runtime will not dynamically adjust the number of threads.  
+*val*<br/>
+A value that indicates if the number of threads available in subsequent parallel region can be adjusted by the runtime.  If nonzero, the runtime can adjust the number of threads, if zero, the runtime will not dynamically adjust the number of threads.  
   
 ## Remarks  
  The number of threads will never exceed the value set by [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) or by [OMP_NUM_THREADS](../../../parallel/openmp/reference/omp-num-threads.md).  

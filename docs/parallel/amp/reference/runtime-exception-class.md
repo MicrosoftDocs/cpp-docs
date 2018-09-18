@@ -71,14 +71,14 @@ runtime_exception(
 ```  
   
 ### Parameters  
- `_Message`  
- A description of the error that caused the exception.  
+*_Message*<br/>
+A description of the error that caused the exception.  
   
- `_Hresult`  
- The HRESULT of error that caused the exception.  
+*_Hresult*<br/>
+The HRESULT of error that caused the exception.  
   
- `_Other`  
- The `runtime_exception` object to copy.  
+*_Other*<br/>
+The `runtime_exception` object to copy.  
   
 ### Return Value  
  The `runtime_exception` object.  
@@ -114,8 +114,8 @@ runtime_exception & operator= (    const runtime_exception & _Other ) throw();
 ```  
   
 ### Parameters  
- `_Other`  
- The `runtime_exception` object to copy.  
+*_Other*<br/>
+The `runtime_exception` object to copy.  
   
 ### Return Value  
  A reference to this `runtime_exception` object.  

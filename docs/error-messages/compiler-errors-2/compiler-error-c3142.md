@@ -13,24 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3142
-'property_name' : you cannot take the address of a property  
-  
- The address of a property is not available to the developer.  
-  
- The following sample generates C3142:  
-  
-```  
-// C3142_2.cpp  
-// compile with: /clr  
-using namespace System;  
-ref class CSize {  
-private:  
-   property int Size {  
-      int get();  
-   }  
-};  
-  
-int main() {  
-    &CSize::Size; // C3142  
-}  
-```  
+
+'property_name' : you cannot take the address of a property
+
+The address of a property is not available to the developer.
+
+The following sample generates C3142:
+
+```
+// C3142_2.cpp
+// compile with: /clr
+using namespace System;
+ref class CSize {
+private:
+   property int Size {
+      int get();
+   }
+};
+
+int main() {
+    &CSize::Size; // C3142
+}
+```

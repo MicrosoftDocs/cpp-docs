@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2380
-type(s) preceding 'identifier' (constructor with return type, or illegal redefinition of current class-name?)  
-  
- A constructor returns a value or redefines the class name.  
-  
- The following sample generates C2326:  
-  
-```  
-// C2380.cpp  
-// compile with: /c  
-class C {  
-public:  
-   int C();   // C2380, specifies an int return  
-   int C;   // C2380, redefinition of i  
-   C();   // OK  
-};  
+
+type(s) preceding 'identifier' (constructor with return type, or illegal redefinition of current class-name?)
+
+A constructor returns a value or redefines the class name.
+
+The following sample generates C2326:
+
+```
+// C2380.cpp
+// compile with: /c
+class C {
+public:
+   int C();   // C2380, specifies an int return
+   int C;   // C2380, redefinition of i
+   C();   // OK
+};
 ```

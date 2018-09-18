@@ -12,15 +12,15 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# Storage classes (C++)  
-  
-A *storage class* in the context of C++ variable declarations is a type specifier that governs the lifetime, linkage, and memory location of objects. A given object can have only one storage class. Variables defined within a block have automatic storage unless otherwise specified using the **extern**, **static**, or `thread_local` specifiers. Automatic objects and variables have no linkage; they are not visible to code outside the block.  
-  
-**Notes**  
-  
-1.  The [mutable](../cpp/mutable-data-members-cpp.md) keyword may be considered a storage class specifier. However, it is only available in the member list of a class definition.  
-  
-2.  **Visual C++ 2010 and later:** The **auto** keyword is no longer a C++ storage-class specifier, and the **register** keyword is deprecated. **Visual Studio 2017 version 15.7 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The **register** keyword is removed from the C++ language.
+# Storage classes (C++)
+
+A *storage class* in the context of C++ variable declarations is a type specifier that governs the lifetime, linkage, and memory location of objects. A given object can have only one storage class. Variables defined within a block have automatic storage unless otherwise specified using the **extern**, **static**, or `thread_local` specifiers. Automatic objects and variables have no linkage; they are not visible to code outside the block.
+
+**Notes**
+
+1. The [mutable](../cpp/mutable-data-members-cpp.md) keyword may be considered a storage class specifier. However, it is only available in the member list of a class definition.
+
+1. **Visual C++ 2010 and later:** The **auto** keyword is no longer a C++ storage-class specifier, and the **register** keyword is deprecated. **Visual Studio 2017 version 15.7 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The **register** keyword is removed from the C++ language.
 
 
 ```cpp
@@ -134,14 +134,14 @@ using namespace std;
 struct C {
    void Test(int value) {
       static int var = 0;
-      if (var == value) 
+      if (var == value)
          cout << "var == value" << endl;
       else
          cout << "var != value" << endl;
 
       var = value;
    }
-}; 
+};
 
 int main() {
    C c1;
@@ -171,9 +171,9 @@ The following code shows two **extern** declarations, `DefinedElsewhere` (which 
 ```cpp
 // external.cpp
 // DefinedElsewhere is defined in another translation unit
-extern int DefinedElsewhere;   
+extern int DefinedElsewhere;
 int main() {
-   int DefinedHere; 
+   int DefinedHere;
    {
       // refers to DefinedHere in the enclosing scope
       extern int DefinedHere;
@@ -191,7 +191,7 @@ thread_local float f = 42.0; // Global namespace. Not implicitly static.
 struct S // cannot be applied to type definition
 {
     thread_local int i; // Illegal. The member must be static.
-    thread_local static char buf[10]; // OK 
+    thread_local static char buf[10]; // OK
 };
 
 void DoSomething()
@@ -210,7 +210,7 @@ Things to note about the `thread_local` specifier:
 
 -  You can apply `thread_local` only to data declarations and definitions; `thread_local` cannot be used on function declarations or definitions.
 
--  You can specify `thread_local` only on data items with static storage duration. This includes global data objects (both **static** and **extern**), local static objects, and static data members of classes. Any local variable declared `thread_local` is implicitly static if no other storage class is provided; in other words, at block scope `thread_local` is equivalent to `thread_local static`. 
+-  You can specify `thread_local` only on data items with static storage duration. This includes global data objects (both **static** and **extern**), local static objects, and static data members of classes. Any local variable declared `thread_local` is implicitly static if no other storage class is provided; in other words, at block scope `thread_local` is equivalent to `thread_local static`.
 
 -  You must specify `thread_local` for both the declaration and the definition of a thread local object, whether the declaration and definition occur in the same file or separate files.
 
@@ -218,7 +218,7 @@ On Windows, `thread_local` is functionally equivalent to  [__declspec(thread)](.
 
 ##  <a name="register"></a>  register
 
-**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The **register** keyword is no longer a supported storage class. The keyword is still reserved in the standard for future use. 
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The **register** keyword is no longer a supported storage class. The keyword is still reserved in the standard for future use.
 
 ```cpp
    register int val; // warning C5033: 'register' is no longer a supported storage class
@@ -308,4 +308,5 @@ There are several points to note about the program:
 - Finally, static local variables such as `I3` retain their values for the duration of the program, but are destroyed as the program terminates.
 
 ## See also
- [Declarations and Definitions](../cpp/declarations-and-definitions-cpp.md)
+
+[Declarations and Definitions](../cpp/declarations-and-definitions-cpp.md)

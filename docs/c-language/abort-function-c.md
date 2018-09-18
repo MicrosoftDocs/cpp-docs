@@ -12,9 +12,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # abort Function (C)
-**ANSI 4.10.4.1** The behavior of the **abort** function with regard to open and temporary files  
-  
- The **abort** function does not close files that are open or temporary. It does not flush stream buffers.  
-  
-## See Also  
- [Library Functions](../c-language/library-functions.md)
+
+**ANSI 4.10.4.1** The behavior of the **abort** function with regard to open and temporary files
+
+The **abort** function does not close files that are open or temporary. It does not flush stream buffers.
+
+## See Also
+
+[Library Functions](../c-language/library-functions.md)

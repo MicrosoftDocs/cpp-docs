@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Command-Line Error D8021
-invalid numeric argument 'number'  
-  
- A number greater than 65,534 was specified as a numeric argument.
+
+invalid numeric argument 'number'
+
+A number greater than 65,534 was specified as a numeric argument.

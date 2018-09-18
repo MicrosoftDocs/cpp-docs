@@ -22,8 +22,8 @@ The \<see> tag lets you specify a link from within text. Use [\<seealso>](../ide
 ```  
   
 #### Parameters  
- `member`  
- A reference to a member or field that is available to be called from the current compilation environment.  Enclose the name in single or double quotation marks.  
+*member*<br/>
+A reference to a member or field that is available to be called from the current compilation environment.  Enclose the name in single or double quotation marks.  
   
  The compiler checks that the given code element exists and resolves `member` to the element name in the output XML.  The compiler issues a warning if it does not find `member`.  
   

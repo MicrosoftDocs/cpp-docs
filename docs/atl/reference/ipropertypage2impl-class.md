@@ -22,13 +22,13 @@ This class implements `IUnknown` and inherits the default implementation of [IPr
 ## Syntax
 
 ```
-template<class T>  
+template<class T>
 class IPropertyPage2Impl : public IPropertyPageImpl<T>
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IPropertyPage2Impl`.
 
 ## Members
@@ -79,6 +79,6 @@ See [IPropertyPage2::EditProperty](/windows/desktop/api/ocidl/nf-ocidl-iproperty
 
 ## See Also
 
-[IPerPropertyBrowsingImpl Class](../../atl/reference/iperpropertybrowsingimpl-class.md)   
-[ISpecifyPropertyPagesImpl Class](../../atl/reference/ispecifypropertypagesimpl-class.md)   
+[IPerPropertyBrowsingImpl Class](../../atl/reference/iperpropertybrowsingimpl-class.md)<br/>
+[ISpecifyPropertyPagesImpl Class](../../atl/reference/ispecifypropertypagesimpl-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -23,8 +23,8 @@ ref class ptr;
 ```  
   
 #### Parameters  
- `_interface_type`  
- COM interface.  
+*_interface_type*<br/>
+COM interface.  
   
 ## Remarks  
  A `com::ptr` can also be used as a local function variable to simplify various COM tasks and to automate lifetime management.  

@@ -23,8 +23,8 @@ class message : public ::Concurrency::details::_Runtime_object;
 ```  
   
 #### Parameters  
- `T`  
- The data type of the payload within the message.  
+*T*<br/>
+The data type of the payload within the message.  
   
 ## Members  
   
@@ -97,14 +97,14 @@ message(
 ```  
   
 ### Parameters  
- `_P`  
- The payload of this message.  
+*_P*<br/>
+The payload of this message.  
   
- `_Id`  
- The unique ID of this message.  
+*_Id*<br/>
+The unique ID of this message.  
   
- `_Msg`  
- A reference or pointer to a `message` object.  
+*_Msg*<br/>
+A reference or pointer to a `message` object.  
   
 ### Remarks  
  The constructor that takes a pointer to a `message` object as an argument throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if the parameter `_Msg` is `NULL`.  

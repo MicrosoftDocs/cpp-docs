@@ -15,8 +15,8 @@ ms.workload: ["cplusplus"]
 
 *translation-unit*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*external-declaration* <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*translation-unit* *external-declaration*  
-  
+&nbsp;&nbsp;&nbsp;&nbsp;*translation-unit* *external-declaration*
+
 *external-declaration*: /\* Allowed only at external (file) scope \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*function-definition*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*declaration*

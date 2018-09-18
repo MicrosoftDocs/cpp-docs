@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2464
-'identifier' : cannot use 'new' to allocate a reference  
-  
- A reference identifier was allocated with the `new` operator. References are not memory objects, so `new` cannot return a pointer to them. Use the standard variable declaration syntax to declare a reference.  
-  
- The following sample generates C2464:  
-  
-```  
-// C2464.cpp  
-int main() {  
-   new ( int& ir );   // C2464  
-}  
+
+'identifier' : cannot use 'new' to allocate a reference
+
+A reference identifier was allocated with the `new` operator. References are not memory objects, so `new` cannot return a pointer to them. Use the standard variable declaration syntax to declare a reference.
+
+The following sample generates C2464:
+
+```
+// C2464.cpp
+int main() {
+   new ( int& ir );   // C2464
+}
 ```

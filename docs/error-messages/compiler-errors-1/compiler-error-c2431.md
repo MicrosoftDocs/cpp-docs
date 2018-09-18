@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2431
-illegal index register in 'identifier'  
-  
- The ESP register is scaled or used as both index and base register. The SIB encoding for the x86 processor does not allow either.  
-  
- The following sample generates C2431:  
-  
-```  
-// C2431.cpp  
-// processor: x86  
-int main() {  
-   _asm mov ax, [ESI + 2*ESP]   // C2431  
-   _asm mov ax, [esp + esp]   // C2431  
-}  
+
+illegal index register in 'identifier'
+
+The ESP register is scaled or used as both index and base register. The SIB encoding for the x86 processor does not allow either.
+
+The following sample generates C2431:
+
+```
+// C2431.cpp
+// processor: x86
+int main() {
+   _asm mov ax, [ESI + 2*ESP]   // C2431
+   _asm mov ax, [esp + esp]   // C2431
+}
 ```

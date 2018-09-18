@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4429
-possible incomplete or improperly formed universal-character-name  
-  
- The compiler detected a character sequence that may be a badly formed universal character name. A universal character name is `\u` followed by four hex digits, or `\U` followed by eight hex digits.  
-  
- The following sample generates C4429:  
-  
-```  
-// C4429.cpp  
-// compile with: /W4 /WX  
-int \ug0e4 = 0;   // C4429  
-// Try the following line instead:  
-// int \u00e4 = 0;   // OK, a well-formed universal character name.  
+
+possible incomplete or improperly formed universal-character-name
+
+The compiler detected a character sequence that may be a badly formed universal character name. A universal character name is `\u` followed by four hex digits, or `\U` followed by eight hex digits.
+
+The following sample generates C4429:
+
+```
+// C4429.cpp
+// compile with: /W4 /WX
+int \ug0e4 = 0;   // C4429
+// Try the following line instead:
+// int \u00e4 = 0;   // OK, a well-formed universal character name.
 ```

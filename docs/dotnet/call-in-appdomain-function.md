@@ -37,17 +37,17 @@ RetType call_in_appdomain(
 ```  
   
 #### Parameters  
- `appdomainId`  
- The appdomain in which to call the function.  
+*appdomainId*<br/>
+The appdomain in which to call the function.  
   
- `voidFunc`  
- Pointer to a `void` function that takes N parameters (0 <= N <= 15).  
+*voidFunc*<br/>
+Pointer to a `void` function that takes N parameters (0 <= N <= 15).  
   
- `nonvoidFunc`  
- Pointer to a non-`void` function that takes N parameters (0 <= N <= 15).  
+*nonvoidFunc*<br/>
+Pointer to a non-`void` function that takes N parameters (0 <= N <= 15).  
   
- `arg1...argN`  
- Zero to 15 parameters to be passed to `voidFunc` or `nonvoidFunc` in the other appdomain.  
+*arg1...argN*<br/>
+Zero to 15 parameters to be passed to `voidFunc` or `nonvoidFunc` in the other appdomain.  
   
 ## Return Value  
  The result of executing `voidFunc` or `nonvoidFunc` in the specified application domain.  

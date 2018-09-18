@@ -39,7 +39,7 @@ BEGIN_PROP_MAP(theClass)
 
 ### Parameters
 
-*theClass*  
+*theClass*<br/>
 [in] Specifies the class containing the property map.
 
 ### Remarks
@@ -64,13 +64,13 @@ PROP_DATA_ENTRY( szDesc, member, vt)
 
 ### Parameters
 
-*szDesc*  
+*szDesc*<br/>
 [in] The property description.
 
-*member*  
+*member*<br/>
 [in] The data member containing the extent; for example, `m_sizeExtent`.
 
-*vt*  
+*vt*<br/>
 [in] Specifies the VARIANT type of the property.
 
 ### Remarks
@@ -97,16 +97,16 @@ PROP_ENTRY_TYPE( szDesc, dispid, clsid, vt)
 
 ### Parameters
 
-*szDesc*  
+*szDesc*<br/>
 [in] The property description.
 
-*dispid*  
+*dispid*<br/>
 [in] The property's DISPID.
 
-*clsid*  
+*clsid*<br/>
 [in] The CLSID of the associated property page. Use the special value CLSID_NULL for a property that does not have an associated property page.
 
-*vt*  
+*vt*<br/>
 [in] The property's type.
 
 ### Remarks
@@ -129,19 +129,19 @@ PROP_ENTRY_TYPE_EX( szDesc, dispid, clsid, iidDispatch, vt)
 
 ### Parameters
 
-*szDesc*  
+*szDesc*<br/>
 [in] The property description.
 
-*dispid*  
+*dispid*<br/>
 [in] The property's DISPID.
 
-*clsid*  
+*clsid*<br/>
 [in] The CLSID of the associated property page. Use the special value CLSID_NULL for a property that does not have an associated property page.
 
-*iidDispatch*  
+*iidDispatch*<br/>
 [in] The IID of the dual interface defining the property.
 
-*vt*  
+*vt*<br/>
 [in] The property's type.
 
 ### Remarks
@@ -166,7 +166,7 @@ PROP_PAGE(clsid)
 
 ### Parameters
 
-*clsid*  
+*clsid*<br/>
 [in] The CLSID of a property page.
 
 ### Remarks

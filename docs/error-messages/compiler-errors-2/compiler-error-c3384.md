@@ -13,20 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3384
-'type_parameter' : the value constraint and the ref constraint are mutually exclusive  
-  
- You cannot constrain a generic type to both `value class` and `ref class`.  
-  
- See [Constraints on Generic Type Parameters (C++/CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md) for more information.  
-  
-## Example  
- The following sample generates C3384.  
-  
-```  
-// C3384.cpp  
-// compile with: /c /clr  
-generic <typename T>  
-where T : ref class  
-where T : value class   // C3384  
-ref class List {};  
+
+'type_parameter' : the value constraint and the ref constraint are mutually exclusive
+
+You cannot constrain a generic type to both `value class` and `ref class`.
+
+See [Constraints on Generic Type Parameters (C++/CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md) for more information.
+
+## Example
+
+The following sample generates C3384.
+
+```
+// C3384.cpp
+// compile with: /c /clr
+generic <typename T>
+where T : ref class
+where T : value class   // C3384
+ref class List {};
 ```

@@ -13,21 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # errno Constants
-## Syntax  
-  
-```  
-  
-#include <errno.h>  
-```  
-  
-## Remarks  
- The **errno** values are constants assigned to [errno](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) in the event of various error conditions.  
-  
- ERRNO.H contains the definitions of the **errno** values. However, not all the definitions given in ERRNO.H are used in 32-bit Windows operating systems. Some of the values in ERRNO.H are present to maintain compatibility with the UNIX family of operating systems.  
-  
- The **errno** values in a 32-bit Windows operating system are a subset of the values for **errno** in XENIX systems. Thus, the **errno** value is not necessarily the same as the actual error code returned by a system call from the Windows operating systems. To access the actual operating system error code, use the [_doserrno](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) variable, which contains this value.  
-  
- The following **errno** values are supported:  
+
+## Syntax
+
+```
+
+#include <errno.h>
+```
+
+## Remarks
+
+The **errno** values are constants assigned to [errno](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) in the event of various error conditions.
+
+ERRNO.H contains the definitions of the **errno** values. However, not all the definitions given in ERRNO.H are used in 32-bit Windows operating systems. Some of the values in ERRNO.H are present to maintain compatibility with the UNIX family of operating systems.
+
+The **errno** values in a 32-bit Windows operating system are a subset of the values for **errno** in XENIX systems. Thus, the **errno** value is not necessarily the same as the actual error code returned by a system call from the Windows operating systems. To access the actual operating system error code, use the [_doserrno](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) variable, which contains this value.
+
+The following **errno** values are supported:
 
 |Constant|Description|
 |-|-|
@@ -48,91 +50,92 @@ ms.workload: ["cplusplus"]
 |**ENOSPC**|No space left on device. No more space for writing is available on the device (for example, when the disk is full).|
 |**ERANGE**|Result too large. An argument to a math function is too large, resulting in partial or total loss of significance in the result. This error can also occur in other functions when an argument is larger than expected (for example, when the *buffer* argument to **_getcwd** is longer than expected).|
 |**EXDEV**|Cross-device link. An attempt was made to move a file to a different device (using the **rename** function).|
-|**STRUNCATE**|A string copy or concatenation resulted in a truncated string. See [_TRUNCATE](../c-runtime-library/truncate.md).  
+|**STRUNCATE**|A string copy or concatenation resulted in a truncated string. See [_TRUNCATE](../c-runtime-library/truncate.md).
 
-The following values are supported for compatibility with Posix. They are required values on non-Posix systems.  
-  
-```C  
-#define E2BIG /* argument list too long */  
-#define EACCES /* permission denied */  
-#define EADDRINUSE /* address in use */  
-#define EADDRNOTAVAIL /* address not available */  
-#define EAFNOSUPPORT /* address family not supported */  
-#define EAGAIN /* resource unavailable try again */  
-#define EALREADY /* connection already in progress */  
-#define EBADF /* bad file descriptor */  
-#define EBADMSG /* bad message */  
-#define EBUSY /* device or resource busy */  
-#define ECANCELED /* operation canceled */  
-#define ECHILD /* no child process */  
-#define ECONNABORTED /* connection aborted */  
-#define ECONNREFUSED /* connection refused */  
-#define ECONNRESET /* connection reset */  
-#define EDEADLK /* resource deadlock would occur */  
-#define EDESTADDRREQ /* destination address required */  
-#define EDOM /* argument out of domain */  
-#define EEXIST /* file exists */  
-#define EFAULT /* bad address */  
-#define EFBIG /* file too large */  
-#define EHOSTUNREACH /* host unreachable */  
-#define EIDRM /* identifier removed */  
-#define EILSEQ /* illegal byte sequence */  
-#define EINPROGRESS /* operation in progress */  
-#define EINTR /* interrupted */  
-#define EINVAL /* invalid argument */  
-#define EIO /* io error */  
-#define EISCONN /* already connected */  
-#define EISDIR /* is a directory */  
-#define ELOOP /* too many synbolic link levels */  
-#define EMFILE /* too many files open */  
-#define EMLINK /* too many links */  
-#define EMSGSIZE /* message size */  
-#define ENAMETOOLONG /* filename too long */  
-#define ENETDOWN /* network down */  
-#define ENETRESET /* network reset */  
-#define ENETUNREACH /* network unreachable */  
-#define ENFILE /* too many files open in system */  
-#define ENOBUFS /* no buffer space */  
-#define ENODATA /* no message available */  
-#define ENODEV /* no such device */  
-#define ENOENT /* no such file or directory */  
-#define ENOEXEC /* executable format error */  
-#define ENOLCK /* no lock available */  
-#define ENOLINK /* no link */  
-#define ENOMEM /* not enough memory */  
-#define ENOMSG /* no message */  
-#define ENOPROTOOPT /* no protocol option */  
-#define ENOSPC /* no space on device */  
-#define ENOSR /* no stream resources */  
-#define ENOSTR /* not a stream */  
-#define ENOSYS /* function not supported */  
-#define ENOTCONN /* not connected */  
-#define ENOTDIR /* not a directory */  
-#define ENOTEMPTY /* directory not empty */  
-#define ENOTRECOVERABLE /* state not recoverable */  
-#define ENOTSOCK /* not a socket */  
-#define ENOTSUP /* not supported */  
-#define ENOTTY /* inappropriate io control operation */  
-#define ENXIO /* no such device or address */  
-#define EOPNOTSUPP /* operation not supported */  
-#define EOTHER /* other */  
-#define EOVERFLOW /* value too large */  
-#define EOWNERDEAD /* owner dead */  
-#define EPERM /* operation not permitted */  
-#define EPIPE /* broken pipe */  
-#define EPROTO /* protocol error */  
-#define EPROTONOSUPPORT /* protocol not supported */  
-#define EPROTOTYPE /* wrong protocol type */  
-#define ERANGE /* result out of range */  
-#define EROFS /* read only file system */  
-#define ESPIPE /* invalid seek */  
-#define ESRCH /* no such process */  
-#define ETIME /* stream timeout */  
-#define ETIMEDOUT /* timed out */  
-#define ETXTBSY /* text file busy */  
-#define EWOULDBLOCK /* operation would block */  
-#define EXDEV /* cross device link */  
-```  
-  
-## See Also  
- [Global Constants](../c-runtime-library/global-constants.md)
+The following values are supported for compatibility with Posix. They are required values on non-Posix systems.
+
+```C
+#define E2BIG /* argument list too long */
+#define EACCES /* permission denied */
+#define EADDRINUSE /* address in use */
+#define EADDRNOTAVAIL /* address not available */
+#define EAFNOSUPPORT /* address family not supported */
+#define EAGAIN /* resource unavailable try again */
+#define EALREADY /* connection already in progress */
+#define EBADF /* bad file descriptor */
+#define EBADMSG /* bad message */
+#define EBUSY /* device or resource busy */
+#define ECANCELED /* operation canceled */
+#define ECHILD /* no child process */
+#define ECONNABORTED /* connection aborted */
+#define ECONNREFUSED /* connection refused */
+#define ECONNRESET /* connection reset */
+#define EDEADLK /* resource deadlock would occur */
+#define EDESTADDRREQ /* destination address required */
+#define EDOM /* argument out of domain */
+#define EEXIST /* file exists */
+#define EFAULT /* bad address */
+#define EFBIG /* file too large */
+#define EHOSTUNREACH /* host unreachable */
+#define EIDRM /* identifier removed */
+#define EILSEQ /* illegal byte sequence */
+#define EINPROGRESS /* operation in progress */
+#define EINTR /* interrupted */
+#define EINVAL /* invalid argument */
+#define EIO /* io error */
+#define EISCONN /* already connected */
+#define EISDIR /* is a directory */
+#define ELOOP /* too many synbolic link levels */
+#define EMFILE /* too many files open */
+#define EMLINK /* too many links */
+#define EMSGSIZE /* message size */
+#define ENAMETOOLONG /* filename too long */
+#define ENETDOWN /* network down */
+#define ENETRESET /* network reset */
+#define ENETUNREACH /* network unreachable */
+#define ENFILE /* too many files open in system */
+#define ENOBUFS /* no buffer space */
+#define ENODATA /* no message available */
+#define ENODEV /* no such device */
+#define ENOENT /* no such file or directory */
+#define ENOEXEC /* executable format error */
+#define ENOLCK /* no lock available */
+#define ENOLINK /* no link */
+#define ENOMEM /* not enough memory */
+#define ENOMSG /* no message */
+#define ENOPROTOOPT /* no protocol option */
+#define ENOSPC /* no space on device */
+#define ENOSR /* no stream resources */
+#define ENOSTR /* not a stream */
+#define ENOSYS /* function not supported */
+#define ENOTCONN /* not connected */
+#define ENOTDIR /* not a directory */
+#define ENOTEMPTY /* directory not empty */
+#define ENOTRECOVERABLE /* state not recoverable */
+#define ENOTSOCK /* not a socket */
+#define ENOTSUP /* not supported */
+#define ENOTTY /* inappropriate io control operation */
+#define ENXIO /* no such device or address */
+#define EOPNOTSUPP /* operation not supported */
+#define EOTHER /* other */
+#define EOVERFLOW /* value too large */
+#define EOWNERDEAD /* owner dead */
+#define EPERM /* operation not permitted */
+#define EPIPE /* broken pipe */
+#define EPROTO /* protocol error */
+#define EPROTONOSUPPORT /* protocol not supported */
+#define EPROTOTYPE /* wrong protocol type */
+#define ERANGE /* result out of range */
+#define EROFS /* read only file system */
+#define ESPIPE /* invalid seek */
+#define ESRCH /* no such process */
+#define ETIME /* stream timeout */
+#define ETIMEDOUT /* timed out */
+#define ETXTBSY /* text file busy */
+#define EWOULDBLOCK /* operation would block */
+#define EXDEV /* cross device link */
+```
+
+## See Also
+
+[Global Constants](../c-runtime-library/global-constants.md)

@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2208
-'type' : no members defined using this type  
-  
- An identifier resolving to a type name is in an aggregate declaration, but the compiler cannot declare a member.  
-  
- The following sample generates C2208:  
-  
-```  
-// C2208.cpp  
-class C {  
-   C;   // C2208  
-   C(){}   // OK  
-};  
+
+'type' : no members defined using this type
+
+An identifier resolving to a type name is in an aggregate declaration, but the compiler cannot declare a member.
+
+The following sample generates C2208:
+
+```
+// C2208.cpp
+class C {
+   C;   // C2208
+   C(){}   // OK
+};
 ```

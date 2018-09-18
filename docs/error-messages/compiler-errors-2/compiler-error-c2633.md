@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2633
-'identifier' : 'inline' is the only legal storage class for constructors  
-  
- A constructor is declared as a storage class other than inline.  
-  
- The following sample generates C2633:  
-  
-```  
-// C2633.cpp  
-// compile with: /c  
-class C {  
-   extern C();   // C2633, not inline  
-   inline C();   // OK  
-};  
+
+'identifier' : 'inline' is the only legal storage class for constructors
+
+A constructor is declared as a storage class other than inline.
+
+The following sample generates C2633:
+
+```
+// C2633.cpp
+// compile with: /c
+class C {
+   extern C();   // C2633, not inline
+   inline C();   // OK
+};
 ```

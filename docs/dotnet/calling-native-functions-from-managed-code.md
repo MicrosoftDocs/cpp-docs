@@ -89,7 +89,7 @@ int main() {
   
  In this example, a Visual C++ program interoperates with the MessageBox function that is part of the Win32 API.  
   
-```  
+```cpp  
 // platform_invocation_services_4.cpp  
 // compile with: /clr /c  
 using namespace System;  
@@ -116,16 +116,17 @@ int main() {
   
  If we use PInvoke in a Visual C++ application, we might write something similar to the following:  
   
- `[DllImport("mylib")]`  
-  
- `extern "C" String * MakeSpecial([MarshalAs(UnmanagedType::LPStr)] String ^);`  
+```cpp
+[DllImport("mylib")]
+extern "C" String * MakeSpecial([MarshalAs(UnmanagedType::LPStr)] String ^);
+```
   
  The difficulty here is that we cannot delete the memory for the unmanaged string returned by MakeSpecial. Other functions called through PInvoke return a pointer to an internal buffer that does not have to be deallocated by the user. In this case, using the IJW feature is the obvious choice.  
   
 ## Limitations of PInvoke  
  You cannot return the same exact pointer from a native function that you took as a parameter. If a native function returns the pointer that has been marshaled to it by PInvoke, memory corruption and exceptions may ensue.  
   
-```  
+```cpp  
 __declspec(dllexport)  
 char* fstringA(char* param) {  
    return param;  

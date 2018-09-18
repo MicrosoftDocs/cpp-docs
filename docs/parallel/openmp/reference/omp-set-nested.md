@@ -23,11 +23,10 @@ void omp_set_nested(
 );  
 ```  
   
-## Remarks  
- where,  
+### Parameters
   
- `val`  
- If nonzero, enables nested parallelism. If zero, disables nested parallelism.  
+*val*<br/>
+If nonzero, enables nested parallelism. If zero, disables nested parallelism.  
   
 ## Remarks  
  OMP nested parallelism can be turned on with `omp_set_nested`, or by setting the [OMP_NESTED](../../../parallel/openmp/reference/omp-nested.md) environment variable.  

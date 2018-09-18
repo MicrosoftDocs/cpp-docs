@@ -70,7 +70,7 @@ DWORD Add(IUnknown* pUnk);
 
 ### Parameters
 
-*pUnk*  
+*pUnk*<br/>
 The `IUnknown` pointer to add to the array.
 
 ### Return Value
@@ -151,7 +151,7 @@ IUnknown* GetAt(int nIndex);
 
 ### Parameters
 
-*nIndex*  
+*nIndex*<br/>
 The index of the element to retrieve.
 
 ### Return Value
@@ -168,7 +168,7 @@ DWORD WINAPI GetCookie(IUnknown** ppFind);
 
 ### Parameters
 
-*ppFind*  
+*ppFind*<br/>
 The `IUnknown` pointer for which the associated cookie is required.
 
 ### Return Value
@@ -201,7 +201,7 @@ IUnknown* WINAPI GetUnknown(DWORD dwCookie);
 
 ### Parameters
 
-*dwCookie*  
+*dwCookie*<br/>
 The cookie for which the associated `IUnknown` pointer is required.
 
 ### Return Value
@@ -218,7 +218,7 @@ BOOL Remove(DWORD dwCookie);
 
 ### Parameters
 
-*dwCookie*  
+*dwCookie*<br/>
 The cookie referencing the `IUnknown` pointer to be removed from the array.
 
 ### Return Value
@@ -227,5 +227,5 @@ Returns TRUE if the pointer is removed; otherwise FALSE.
 
 ## See Also
 
-[CComUnkArray Class](../../atl/reference/ccomunkarray-class.md)   
+[CComUnkArray Class](../../atl/reference/ccomunkarray-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -81,7 +81,8 @@ cancellation_token_source(cancellation_token_source&& _Src);
 ```  
   
 ### Parameters  
- `_Src`  
+*_Src*<br/>
+Object to copy or move.  
   
 ##  <a name="create_linked_source"></a> create_linked_source 
 
@@ -96,15 +97,17 @@ static cancellation_token_source create_linked_source(_Iter _Begin, _Iter _End);
 ```  
   
 ### Parameters  
- `_Iter`  
- `_Src`  
- A token whose cancellation will cause cancellation of the returned token source. Note that the returned token source can also be canceled independently of the source contained in this parameter.  
+*_Iter*<br/>
+Iterator type.
+
+*_Src*<br/>
+A token whose cancellation will cause cancellation of the returned token source. Note that the returned token source can also be canceled independently of the source contained in this parameter.  
   
- `_Begin`  
- The C++ Standard Library iterator corresponding to the beginning of the range of tokens to listen for cancellation of.  
+*_Begin*<br/>
+The C++ Standard Library iterator corresponding to the beginning of the range of tokens to listen for cancellation of.  
   
- `_End`  
- The C++ Standard Library iterator corresponding to the ending of the range of tokens to listen for cancellation of.  
+*_End*<br/>
+The C++ Standard Library iterator corresponding to the ending of the range of tokens to listen for cancellation of.  
   
 ### Return Value  
  A `cancellation_token_source` which is canceled when the token provided by the `_Src` parameter is canceled.  
@@ -127,7 +130,8 @@ bool operator!= (const cancellation_token_source& _Src) const;
 ```  
   
 ### Parameters  
- `_Src`  
+*_Src*<br/>
+Operand.
   
 ### Return Value  
   
@@ -140,8 +144,9 @@ cancellation_token_source& operator= (cancellation_token_source&& _Src);
 ```  
   
 ### Parameters  
- `_Src`  
-  
+*_Src*<br/>
+Operand.
+
 ### Return Value  
   
 ##  <a name="operator_eq_eq"></a> operator== 
@@ -151,7 +156,8 @@ bool operator== (const cancellation_token_source& _Src) const;
 ```  
   
 ### Parameters  
- `_Src`  
+*_Src*<br/>
+Operand.
   
 ### Return Value  
   

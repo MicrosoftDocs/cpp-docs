@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2231
-'.' : left operand points to 'class-key', use '->'  
-  
- The operand to the left of the member-selection operation (.) is a pointer instead of a class, structure, or union.  
-  
- The following sample generates C2231:  
-  
-```  
-// C2231.c  
-struct S {  
-   int member;  
-} s, *ps = &s;  
-int main() {  
-   ps.member = 0;   // C2231  
-  
-   // OK  
-   ps->member = 0;   // crash  
-   s.member = 0;  
-}  
+
+'.' : left operand points to 'class-key', use '->'
+
+The operand to the left of the member-selection operation (.) is a pointer instead of a class, structure, or union.
+
+The following sample generates C2231:
+
+```
+// C2231.c
+struct S {
+   int member;
+} s, *ps = &s;
+int main() {
+   ps.member = 0;   // C2231
+
+   // OK
+   ps->member = 0;   // crash
+   s.member = 0;
+}
 ```

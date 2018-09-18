@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2651
-'data type' : left of 'operator' must be a class, struct or union  
-  
- To use a template parameter as if it is a class, specialize the class template with a class instead of an integral type.
+
+'data type' : left of 'operator' must be a class, struct or union
+
+To use a template parameter as if it is a class, specialize the class template with a class instead of an integral type.

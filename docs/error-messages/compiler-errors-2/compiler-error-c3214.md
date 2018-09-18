@@ -13,25 +13,26 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3214
-'type' : invalid type argument for generic parameter 'param' of generic 'generic_type', does not meet constraint 'constraint'  
-  
- The type was specified for an instantiation of a generic class that does not meet the generic class's constraint.  
-  
- The following sample generates C3214:  
-  
-```  
-// C3214.cpp  
-// compile with: /clr  
-interface struct A {};  
-  
-generic <class T>   
-where T : A  
-ref class C {};  
-  
-ref class X : public A {};  
-  
-int main() {  
-   C<int>^ c = new C<int>;   // C3214  
-   C<X ^> ^ c2 = new C<X^>;   // OK  
-}  
+
+'type' : invalid type argument for generic parameter 'param' of generic 'generic_type', does not meet constraint 'constraint'
+
+The type was specified for an instantiation of a generic class that does not meet the generic class's constraint.
+
+The following sample generates C3214:
+
+```
+// C3214.cpp
+// compile with: /clr
+interface struct A {};
+
+generic <class T>
+where T : A
+ref class C {};
+
+ref class X : public A {};
+
+int main() {
+   C<int>^ c = new C<int>;   // C3214
+   C<X ^> ^ c2 = new C<X^>;   // OK
+}
 ```

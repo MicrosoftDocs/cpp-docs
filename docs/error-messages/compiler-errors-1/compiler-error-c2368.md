@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2368
-'identifier' : redefinition; different allocation specifiers  
-  
- The declaration and definition of the symbol specify different `__declspec` attributes.
+
+'identifier' : redefinition; different allocation specifiers
+
+The declaration and definition of the symbol specify different `__declspec` attributes.

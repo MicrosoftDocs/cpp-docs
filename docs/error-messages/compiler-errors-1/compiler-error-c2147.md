@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2147
-syntax error : 'identifier' is a new keyword  
-  
- An identifier was used that is now a reserved keyword in the language.  
-  
- The following sample generates C2147:  
-  
-```  
-// C2147.cpp  
-// compile with: /clr  
-int main() {  
-   int gcnew = 0;   // C2147  
-   int i = 0;   // OK  
-}  
+
+syntax error : 'identifier' is a new keyword
+
+An identifier was used that is now a reserved keyword in the language.
+
+The following sample generates C2147:
+
+```
+// C2147.cpp
+// compile with: /clr
+int main() {
+   int gcnew = 0;   // C2147
+   int i = 0;   // OK
+}
 ```

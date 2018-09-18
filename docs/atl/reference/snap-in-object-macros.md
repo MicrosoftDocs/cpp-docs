@@ -40,7 +40,7 @@ BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP(classname)
 
 ### Parameters
 
-*classname*  
+*classname*<br/>
 [in] The name of the snap-in extension data class.
 
 ### Remarks
@@ -61,7 +61,7 @@ BEGIN_SNAPINTOOLBARID_MAP(_class)
 
 ### Parameters
 
-*_class*  
+*_class*<br/>
 [in] Specifies the Snap-In object class.
 
 ### Example
@@ -94,7 +94,7 @@ END_SNAPINTOOLBARID_MAP( _class )
 
 ### Parameters
 
-*_class*  
+*_class*<br/>
 [in] Specifies the Snap-In object class.
 
 ### Example
@@ -111,7 +111,7 @@ EXTENSION_SNAPIN_DATACLASS(dataClass )
 
 ### Parameters
 
-*dataClass*  
+*dataClass*<br/>
 [in] The data class of the snap-in extension.
 
 ### Remarks
@@ -132,7 +132,7 @@ EXTENSION_SNAPIN_NODEINFO_ENTRY( dataClass )
 
 ### Parameters
 
-*dataClass*  
+*dataClass*<br/>
 [in] The data class of the snap-in extension.
 
 ### Remarks
@@ -153,7 +153,7 @@ SNAPINMENUID( id )
 
 ### Parameters
 
-*id*  
+*id*<br/>
 [in] Identifies the context menu of the Snap-In object.
 
 ##  <a name="snapintoolbarid_entry"></a>  SNAPINTOOLBARID_ENTRY
@@ -166,7 +166,7 @@ SNAPINTOOLBARID_ENTRY( id )
 
 ### Parameters
 
-*id*  
+*id*<br/>
 [in] Identifies the toolbar control.
 
 ### Remarks

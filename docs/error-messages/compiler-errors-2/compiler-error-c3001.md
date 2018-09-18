@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3001
-'error_text' : expected an OpenMP directive name  
-  
- The `omp` pragma must be followed by a directive.  
-  
- The following sample generates C3001:  
-  
-```  
-// C3001.c  
-// compile with: /openmp  
-int main()  
-{  
-   #pragma omp   // C3001 missing token  
-}  
+
+'error_text' : expected an OpenMP directive name
+
+The `omp` pragma must be followed by a directive.
+
+The following sample generates C3001:
+
+```
+// C3001.c
+// compile with: /openmp
+int main()
+{
+   #pragma omp   // C3001 missing token
+}
 ```

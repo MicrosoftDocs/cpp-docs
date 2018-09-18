@@ -33,15 +33,13 @@ Message mapping in MFC provides an efficient way to direct Windows messages to a
   
  Normally, the message map for this class would be defined as:  
   
- `BEGIN_MESSAGE_MAP(CSyncListBox, CListBox)`  
-  
- `ON_WM_PAINT()`  
-  
- `ON_WM_DESTROY()`  
-  
- `ON_MESSAGE(LBN_SYNCHRONIZE, OnSynchronize)`  
-  
- `END_MESSAGE_MAP()`  
+```cpp
+BEGIN_MESSAGE_MAP(CSyncListBox, CListBox)
+  ON_WM_PAINT()
+  ON_WM_DESTROY()
+  ON_MESSAGE(LBN_SYNCHRONIZE, OnSynchronize)
+END_MESSAGE_MAP()
+```
   
  where **LBN_SYNCHRONIZE** is a custom user message defined by the application, such as:  
   

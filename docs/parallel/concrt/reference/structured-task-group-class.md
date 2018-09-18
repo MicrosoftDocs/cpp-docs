@@ -102,14 +102,14 @@ void run(
 ```  
   
 ### Parameters  
- `_Function`  
- The type of the function object that will be invoked to execute the body of the task handle.  
+*_Function*<br/>
+The type of the function object that will be invoked to execute the body of the task handle.  
   
- `_Task_handle`  
- A handle to the work being scheduled. Note that the caller has responsibility for the lifetime of this object. The runtime will continue to expect it to live until either the `wait` or `run_and_wait` method has been called on this `structured_task_group` object.  
+*_Task_handle*<br/>
+A handle to the work being scheduled. Note that the caller has responsibility for the lifetime of this object. The runtime will continue to expect it to live until either the `wait` or `run_and_wait` method has been called on this `structured_task_group` object.  
   
- `_Placement`  
- A reference to the location where the task represented by the `_Task_handle` parameter should execute.  
+*_Placement*<br/>
+A reference to the location where the task represented by the `_Task_handle` parameter should execute.  
   
 ### Remarks  
  The runtime creates a copy of the work function that you pass to this method. Any state changes that occur in a function object that you pass to this method will not appear in your copy of that function object.  
@@ -131,14 +131,14 @@ task_group_status run_and_wait(const _Function& _Func);
 ```  
   
 ### Parameters  
- `_Function`  
- The type of the function object that will be invoked to execute the task.  
+*_Function*<br/>
+The type of the function object that will be invoked to execute the task.  
   
- `_Task_handle`  
- A handle to the task which will be run inline on the calling context. Note that the caller has responsibility for the lifetime of this object. The runtime will continue to expect it to live until the `run_and_wait` method finishes execution.  
+*_Task_handle*<br/>
+A handle to the task which will be run inline on the calling context. Note that the caller has responsibility for the lifetime of this object. The runtime will continue to expect it to live until the `run_and_wait` method finishes execution.  
   
- `_Func`  
- A function which will be called to invoke the body of the work. This may be a lambda or other object which supports a version of the function call operator with the signature `void operator()()`.  
+*_Func*<br/>
+A function which will be called to invoke the body of the work. This may be a lambda or other object which supports a version of the function call operator with the signature `void operator()()`.  
   
 ### Return Value  
  An indication of whether the wait was satisfied or the task group was canceled, due to either an explicit cancel operation or an exception being thrown from one of its tasks. For more information, see [task_group_status](concurrency-namespace-enums.md)  
@@ -163,8 +163,8 @@ structured_task_group(cancellation_token _CancellationToken);
 ```  
   
 ### Parameters  
- `_CancellationToken`  
- A cancellation token to associate with this structured task group. The structured task group will be canceled when the token is canceled.  
+*_CancellationToken*<br/>
+A cancellation token to associate with this structured task group. The structured task group will be canceled when the token is canceled.  
   
 ### Remarks  
  The constructor that takes a cancellation token creates a `structured_task_group` that will be canceled when the source associated with the token is canceled. Providing an explicit cancellation token also isolates this structured task group from participating in an implicit cancellation from a parent group with a different token or no token.  

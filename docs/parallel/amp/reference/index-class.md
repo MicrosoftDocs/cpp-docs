@@ -23,8 +23,8 @@ class index;
 ```  
   
 #### Parameters  
- `_Rank`  
- The rank, or number of dimensions.  
+*_Rank*<br/>
+The rank, or number of dimensions.  
   
 ## Members  
   

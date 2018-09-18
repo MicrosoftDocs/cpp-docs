@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2069
-cast of 'void' term to non-'void'  
-  
- Type `void` cannot be cast to any other type.
+
+cast of 'void' term to non-'void'
+
+Type `void` cannot be cast to any other type.

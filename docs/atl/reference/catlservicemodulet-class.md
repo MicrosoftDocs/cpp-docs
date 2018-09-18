@@ -22,16 +22,16 @@ This class implements a service.
 ## Syntax
 
 ```
-template <class T, UINT nServiceNameID>  
+template <class T, UINT nServiceNameID>
 class ATL_NO_VTABLE CAtlServiceModuleT : public CAtlExeModuleT<T>
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class derived from `CAtlServiceModuleT`.
 
-*nServiceNameID*  
+*nServiceNameID*<br/>
 The resource identifier of the service.
 
 ## Members
@@ -123,7 +123,7 @@ void Handler(DWORD dwOpcode) throw();
 
 ### Parameters
 
-*dwOpcode*  
+*dwOpcode*<br/>
 A switch that defines the handler operation. For details, see the Remarks.
 
 ### Remarks
@@ -206,10 +206,10 @@ void __cdecl LogEvent(LPCTSTR pszFormat, ...) throw();
 
 ### Parameters
 
-*pszFormat*  
+*pszFormat*<br/>
 The string to write to the event log.
 
-...  
+*...*<br/>
 Optional extra strings to be written to the event log.
 
 ### Remarks
@@ -326,7 +326,7 @@ void OnUnknownRequest(DWORD /* dwOpcode*/) throw();
 
 ### Parameters
 
-*dwOpcode*  
+*dwOpcode*<br/>
 Reserved.
 
 ##  <a name="parsecommandline"></a>  CAtlServiceModuleT::ParseCommandLine
@@ -339,10 +339,10 @@ bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
 
 ### Parameters
 
-*lpCmdLine*  
+*lpCmdLine*<br/>
 The command line.
 
-*pnRetCode*  
+*pnRetCode*<br/>
 The HRESULT corresponding to the registration (if it took place).
 
 ### Return Value
@@ -363,7 +363,7 @@ HRESULT PreMessageLoop(int nShowCmd) throw();
 
 ### Parameters
 
-*nShowCmd*  
+*nShowCmd*<br/>
 This parameter is passed to [CAtlExeModuleT::PreMessageLoop](../../atl/reference/catlexemodulet-class.md#premessageloop).
 
 ### Return Value
@@ -384,7 +384,7 @@ inline HRESULT RegisterAppId(bool bService = false) throw();
 
 ### Parameters
 
-*bService*  
+*bService*<br/>
 Must be true to register as a service.
 
 ### Return Value
@@ -401,7 +401,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 
 ### Parameters
 
-*nShowCmd*  
+*nShowCmd*<br/>
 Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) section. The default value is SW_HIDE.
 
 ### Return Value
@@ -422,10 +422,10 @@ void ServiceMain(DWORD dwArgc, LPTSTR* lpszArgv) throw();
 
 ### Parameters
 
-*dwArgc*  
+*dwArgc*<br/>
 The argc argument.
 
-*lpszArgv*  
+*lpszArgv*<br/>
 The argv argument.
 
 ### Remarks
@@ -444,7 +444,7 @@ void SetServiceStatus(DWORD dwState) throw();
 
 ### Parameters
 
-*dwState*  
+*dwState*<br/>
 The new status. See [SetServiceStatus](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) for possible values.
 
 ### Remarks
@@ -461,7 +461,7 @@ HRESULT Start(int nShowCmd) throw();
 
 ### Parameters
 
-*nShowCmd*  
+*nShowCmd*<br/>
 Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) section.
 
 ### Return Value
@@ -522,7 +522,7 @@ int WinMain(int nShowCmd) throw();
 
 ### Parameters
 
-*nShowCmd*  
+*nShowCmd*<br/>
 Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) section.
 
 ### Return Value
@@ -535,5 +535,5 @@ This method processes the command line (with [CAtlServiceModuleT::ParseCommandLi
 
 ## See Also
 
-[CAtlExeModuleT Class](../../atl/reference/catlexemodulet-class.md)   
+[CAtlExeModuleT Class](../../atl/reference/catlexemodulet-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -23,8 +23,8 @@ class network_link_registry;
 ```  
   
 #### Parameters  
- `_Block`  
- The block data type being stored in the `network_link_registry`.  
+*_Block*<br/>
+The block data type being stored in the `network_link_registry`.  
   
 ## Members  
   
@@ -67,8 +67,8 @@ virtual void add(_EType _Link) = 0;
 ```  
   
 ### Parameters  
- `_Link`  
- A pointer to a block to be added.  
+*_Link*<br/>
+A pointer to a block to be added.  
   
 ##  <a name="begin"></a> begin 
 
@@ -93,8 +93,8 @@ virtual bool contains(_EType _Link) = 0;
 ```  
   
 ### Parameters  
- `_Link`  
- A pointer to a block that is being searched for in the `network_link_registry` object.  
+*_Link*<br/>
+A pointer to a block that is being searched for in the `network_link_registry` object.  
   
 ### Return Value  
  `true` if the block was found, `false` otherwise.  
@@ -119,8 +119,8 @@ virtual bool remove(_EType _Link) = 0;
 ```  
   
 ### Parameters  
- `_Link`  
- A pointer to a block to be removed, if found.  
+*_Link*<br/>
+A pointer to a block to be removed, if found.  
   
 ### Return Value  
  `true` if the link was found and removed, `false` otherwise.  

@@ -20,8 +20,11 @@ exception_ptr make_exception_ptr(_E _Except);
 ```  
   
 #### Parameters  
- `_E`  
- `_Except`  
+*_E*<br/>
+Exception type.
+
+*_Except*<br/>
+Exception value.
   
 ## Return Value  
   

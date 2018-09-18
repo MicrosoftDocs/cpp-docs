@@ -17,8 +17,8 @@ As part of [enabling tool tips](../mfc/enabling-tool-tips.md), you handle the **
   
  [!code-cpp[NVC_MFCControlLadenDialog#40](../mfc/codesnippet/cpp/handling-ttn-needtext-notification-for-tool-tips_1.cpp)]  
   
- `memberFxn`  
- The member function to be called when text is needed for this button.  
+*memberFxn*<br/>
+The member function to be called when text is needed for this button.  
   
  Note that the ID of a tool tip is always 0.  
   
@@ -28,14 +28,14 @@ As part of [enabling tool tips](../mfc/enabling-tool-tips.md), you handle the **
   
  where the italicized parameters are:  
   
- `id`  
- Identifier of the control that sent the notification. Not used. The control id is taken from the **NMHDR** structure.  
+*id*<br/>
+Identifier of the control that sent the notification. Not used. The control id is taken from the **NMHDR** structure.  
   
- `pNMHDR`  
- A pointer to the [NMTTDISPINFO](/windows/desktop/api/commctrl/ns-commctrl-tagnmttdispinfoa) structure. This structure is also discussed further in [The TOOLTIPTEXT Structure](../mfc/tooltiptext-structure.md).  
+*pNMHDR*<br/>
+A pointer to the [NMTTDISPINFO](/windows/desktop/api/commctrl/ns-commctrl-tagnmttdispinfoa) structure. This structure is also discussed further in [The TOOLTIPTEXT Structure](../mfc/tooltiptext-structure.md).  
   
- `pResult`  
- A pointer to result code you can set before you return. **TTN_NEEDTEXT** handlers can ignore the *pResult* parameter.  
+*pResult*<br/>
+A pointer to result code you can set before you return. **TTN_NEEDTEXT** handlers can ignore the *pResult* parameter.  
   
  As an example of a form-view notification handler:  
   

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2116
-expecting number for ID  
-  
- Expecting a number for the `id` field of a control statement in the **DIALOG** statement. Make sure you have a number or `#define` statement for the control ID.
+
+expecting number for ID
+
+Expecting a number for the `id` field of a control statement in the **DIALOG** statement. Make sure you have a number or `#define` statement for the control ID.

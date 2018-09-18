@@ -13,15 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4939
-\#pragma vtordisp is deprecated and will be removed in a future release of Visual C++  
-  
- The [vtordisp](../../preprocessor/vtordisp.md) pragma will be removed in a future release of Visual C++.  
-  
-## Example  
- The following sample generates C4939.  
-  
-```  
-// C4939.cpp  
-// compile with: /c /W1  
-#pragma vtordisp(off)   // C4939  
+
+\#pragma vtordisp is deprecated and will be removed in a future release of Visual C++
+
+The [vtordisp](../../preprocessor/vtordisp.md) pragma will be removed in a future release of Visual C++.
+
+## Example
+
+The following sample generates C4939.
+
+```
+// C4939.cpp
+// compile with: /c /W1
+#pragma vtordisp(off)   // C4939
 ```

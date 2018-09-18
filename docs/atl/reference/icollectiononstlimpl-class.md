@@ -19,25 +19,25 @@ This class provides methods used by a collection class.
 ## Syntax
 
 ```
-template <class T, class CollType, class ItemType, class CopyItem, class EnumType>  
+template <class T, class CollType, class ItemType, class CopyItem, class EnumType>
 class ICollectionOnSTLImpl : public T
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 A COM collection interface.
 
-*CollType*  
+*CollType*<br/>
 A C++ Standard Library container class.
 
-*ItemType*  
+*ItemType*<br/>
 The type of item exposed by the container interface.
 
-*CopyItem*  
+*CopyItem*<br/>
 A [copy policy class](../../atl/atl-copy-policy-classes.md).
 
-*EnumType*  
+*EnumType*<br/>
 A [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md)-compatible enumerator class.
 
 ## Members
@@ -95,7 +95,7 @@ STDMETHOD(getcount)(long* pcount);
 
 ### Parameters
 
-*pcount*  
+*pcount*<br/>
 [out] The number of elements in the collection.
 
 ### Return Value
@@ -112,10 +112,10 @@ STDMETHOD(get_Item)(long Index, ItemType* pvar);
 
 ### Parameters
 
-*Index*  
+*Index*<br/>
 [in] The 1-based index of an item in the collection.
 
-*pvar*  
+*pvar*<br/>
 [out] The item corresponding to *Index*.
 
 ### Return Value
@@ -136,7 +136,7 @@ STDMETHOD(get__NewEnum)(IUnknown** ppUnk);
 
 ### Parameters
 
-*ppUnk*  
+*ppUnk*<br/>
 [out] The **IUnknown** pointer of a newly created enumerator object.
 
 ### Return Value
@@ -157,5 +157,5 @@ CollType m_coll;
 
 ## See Also
 
-[ATLCollections Sample](../../visual-cpp-samples.md)   
+[ATLCollections Sample](../../visual-cpp-samples.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

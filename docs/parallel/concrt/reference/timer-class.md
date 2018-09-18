@@ -23,8 +23,8 @@ class timer : public Concurrency::details::_Timer, public source_block<single_li
 ```  
   
 #### Parameters  
- `T`  
- The payload type of the output messages of this block.  
+*T*<br/>
+The payload type of the output messages of this block.  
   
 ## Members  
   
@@ -79,8 +79,8 @@ virtual message<T>* accept_message(runtime_object_identity _MsgId);
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the offered `message` object.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the offered `message` object.  
   
 ### Return Value  
  A pointer to the `message` object that the caller now has ownership of.  
@@ -94,8 +94,8 @@ virtual message<T>* consume_message(runtime_object_identity _MsgId);
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the `message` object being consumed.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the `message` object being consumed.  
   
 ### Return Value  
  A pointer to the `message` object that the caller now has ownership of.  
@@ -112,8 +112,8 @@ virtual void link_target_notification(_Inout_ ITarget<T>* _PTarget);
 ```  
   
 ### Parameters  
- `_PTarget`  
- A pointer to the newly linked target.  
+*_PTarget*<br/>
+A pointer to the newly linked target.  
   
 ##  <a name="pause"></a> pause 
 
@@ -140,8 +140,8 @@ virtual void release_message(runtime_object_identity _MsgId);
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the `message` object being released.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the `message` object being released.  
   
 ##  <a name="reserve_message"></a> reserve_message 
 
@@ -152,8 +152,8 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the `message` object being reserved.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the `message` object being reserved.  
   
 ### Return Value  
  `true` if the message was successfully reserved, `false` otherwise.  
@@ -212,23 +212,23 @@ timer(
 ```  
   
 ### Parameters  
- `_Ms`  
- The number of milliseconds that must elapse after the call to start for the specified message to be propagated downstream.  
+*_Ms*<br/>
+The number of milliseconds that must elapse after the call to start for the specified message to be propagated downstream.  
   
- `value`  
- The value which will be propagated downstream when the timer elapses.  
+*value*<br/>
+The value which will be propagated downstream when the timer elapses.  
   
- `_PTarget`  
- The target to which the timer will propagate its message.  
+*_PTarget*<br/>
+The target to which the timer will propagate its message.  
   
- `_Repeating`  
- If true, indicates that the timer will fire periodically every `_Ms` milliseconds.  
+*_Repeating*<br/>
+If true, indicates that the timer will fire periodically every `_Ms` milliseconds.  
   
- `_Scheduler`  
- The `Scheduler` object within which the propagation task for the `timer` messaging block is scheduled is scheduled.  
+*_Scheduler*<br/>
+The `Scheduler` object within which the propagation task for the `timer` messaging block is scheduled is scheduled.  
   
- `_ScheduleGroup`  
- The `ScheduleGroup` object within which the propagation task for the `timer` messaging block is scheduled. The `Scheduler` object used is implied by the schedule group.  
+*_ScheduleGroup*<br/>
+The `ScheduleGroup` object within which the propagation task for the `timer` messaging block is scheduled. The `Scheduler` object used is implied by the schedule group.  
   
 ### Remarks  
  The runtime uses the default scheduler if you do not specify the `_Scheduler` or `_ScheduleGroup` parameters.  

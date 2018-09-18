@@ -13,22 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3749
-'attribute': a custom attribute may not be used inside a function  
-  
- A custom attribute cannot be used inside a function. For more information on custom attributes, see the topic [attribute](../../windows/attribute.md).  
-  
-## Example  
- The following sample generates C3749:  
-  
-```  
-// C3749a.cpp  
-// compile with: /clr /c  
-using namespace System;  
-  
-[AttributeUsage(AttributeTargets::All)]  
-public ref struct ABC : public Attribute {  
-   ABC() {}  
-};  
-  
-void f1() { [ABC]; };  // C3749  
-```  
+
+'attribute': a custom attribute may not be used inside a function
+
+A custom attribute cannot be used inside a function. For more information on custom attributes, see the topic [attribute](../../windows/attribute.md).
+
+## Example
+
+The following sample generates C3749:
+
+```
+// C3749a.cpp
+// compile with: /clr /c
+using namespace System;
+
+[AttributeUsage(AttributeTargets::All)]
+public ref struct ABC : public Attribute {
+   ABC() {}
+};
+
+void f1() { [ABC]; };  // C3749
+```

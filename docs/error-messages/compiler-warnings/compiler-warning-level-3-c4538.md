@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4538
-'type' : const/volatile qualifiers on this type are not supported  
-  
- A qualifier keyword was applied to an array incorrectly. For more information, see [array](../../windows/arrays-cpp-component-extensions.md).  
-  
- The following sample generates C4538:  
-  
-```  
-// C4538.cpp  
-// compile with: /clr /W3 /LD  
-const array<int> ^f1();   // C4538  
-array<const int> ^f2();   // OK  
+
+'type' : const/volatile qualifiers on this type are not supported
+
+A qualifier keyword was applied to an array incorrectly. For more information, see [array](../../windows/arrays-cpp-component-extensions.md).
+
+The following sample generates C4538:
+
+```
+// C4538.cpp
+// compile with: /clr /W3 /LD
+const array<int> ^f1();   // C4538
+array<const int> ^f2();   // OK
 ```

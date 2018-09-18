@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3050
-'type1' : a ref class cannot inherit from 'type1'  
-  
- `System::ValueType` cannot be a base class for a reference type.  
-  
- The following sample generates C3050:  
-  
-```  
-// C3050.cpp  
-// compile with: /clr /LD  
-ref struct X : System::ValueType {};   // C3050  
-ref struct Y {};   // OK  
+
+'type1' : a ref class cannot inherit from 'type1'
+
+`System::ValueType` cannot be a base class for a reference type.
+
+The following sample generates C3050:
+
+```
+// C3050.cpp
+// compile with: /clr /LD
+ref struct X : System::ValueType {};   // C3050
+ref struct Y {};   // OK
 ```

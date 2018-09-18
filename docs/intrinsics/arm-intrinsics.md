@@ -226,11 +226,11 @@ void __iso_volatile_store8(volatile __int8 * Location, __int8 Value)
   
  **Parameters**  
   
- `Location`  
- The address of a memory location to read from or write to.  
+*Location*<br/>
+The address of a memory location to read from or write to.  
   
- `Value`  
- The value to write to the specified memory location (store intrinsics only).  
+*Value*<br/>
+The value to write to the specified memory location (store intrinsics only).  
   
  **Return Value (load intrinsics only)**  
   
@@ -273,20 +273,20 @@ int _MoveFromCoprocessor2(
   
  **Parameters**  
   
- `coproc`  
- Coprocessor number in the range 0 to 15.  
+*coproc*<br/>
+Coprocessor number in the range 0 to 15.  
   
- `opcode1`  
- Coprocessor-specific opcode in the range 0 to 7  
+*opcode1*<br/>
+Coprocessor-specific opcode in the range 0 to 7  
   
- `crn`  
- Coprocessor register number, in the range 0 to 15, that specifies the first operand to the instruction.  
+*crn*<br/>
+Coprocessor register number, in the range 0 to 15, that specifies the first operand to the instruction.  
   
- `crm`  
- Coprocessor register number, in the range 0 to 15, that specifies an additional source or destination operand.  
+*crm*<br/>
+Coprocessor register number, in the range 0 to 15, that specifies an additional source or destination operand.  
   
- `opcode2`  
- Additional coprocessor-specific opcode in the range 0 to 7.  
+*opcode2*<br/>
+Additional coprocessor-specific opcode in the range 0 to 7.  
   
  **Return Value**  
   
@@ -312,14 +312,14 @@ unsigned __int64 _MoveFromCoprocessor64(
   
  **Parameters**  
   
- `coproc`  
- Coprocessor number in the range 0 to 15.  
+*coproc*<br/>
+Coprocessor number in the range 0 to 15.  
   
- `opcode1`  
- Coprocessor-specific opcode in the range 0 to 15.  
+*opcode1*<br/>
+Coprocessor-specific opcode in the range 0 to 15.  
   
- `crm`  
- Coprocessor register number, in the range 0 to 15, that specifies an additional source or destination operand.  
+*crm*<br/>
+Coprocessor register number, in the range 0 to 15, that specifies an additional source or destination operand.  
   
  **Returns Value**  
   
@@ -357,23 +357,23 @@ void _MoveToCoprocessor2(
   
  **Parameters**  
   
- `value`  
- The value to be written to the coprocessor.  
+*value*<br/>
+The value to be written to the coprocessor.  
   
- `coproc`  
- Coprocessor number in the range 0 to 15.  
+*coproc*<br/>
+Coprocessor number in the range 0 to 15.  
   
- `opcode1`  
- Coprocessor-specific opcode in the range 0 to 7.  
+*opcode1*<br/>
+Coprocessor-specific opcode in the range 0 to 7.  
   
- `crn`  
- Coprocessor register number, in the range 0 to 15, that specifies the first operand to the instruction.  
+*crn*<br/>
+Coprocessor register number, in the range 0 to 15, that specifies the first operand to the instruction.  
   
- `crm`  
- Coprocessor register number, in the range 0 to 15, that specifies an additional source or destination operand.  
+*crm*<br/>
+Coprocessor register number, in the range 0 to 15, that specifies an additional source or destination operand.  
   
- `opcode2`  
- Additional coprocessor-specific opcode in the range 0 to 7.  
+*opcode2*<br/>
+Additional coprocessor-specific opcode in the range 0 to 7.  
   
  **Return Value**  
   
@@ -400,14 +400,14 @@ void _MoveFromCoprocessor64(
   
  **Parameters**  
   
- `coproc`  
- Coprocessor number in the range 0 to 15.  
+*coproc*<br/>
+Coprocessor number in the range 0 to 15.  
   
- `opcode1`  
- Coprocessor-specific opcode in the range 0 to 15.  
+*opcode1*<br/>
+Coprocessor-specific opcode in the range 0 to 15.  
   
- `crm`  
- Coprocessor register number, in the range 0 to 15, that specifies an additional source or destination operand.  
+*crm*<br/>
+Coprocessor register number, in the range 0 to 15, that specifies an additional source or destination operand.  
   
  **Return Value**  
   

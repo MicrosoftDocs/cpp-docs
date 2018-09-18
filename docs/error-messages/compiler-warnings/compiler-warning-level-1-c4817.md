@@ -13,20 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4817
-'member' : illegal use of '.' to access this member; compiler replaced with '->'  
-  
- The wrong member access operator was used.  
-  
-## Example  
- The following sample generates C4817.  
-  
-```  
-// C4817.cpp  
-// compile with: /clr /W1  
-using namespace System;  
-int main() {  
-   array<Int32> ^ a = gcnew array<Int32>(100);  
-   Console::WriteLine( a.Length );   // C4817  
-   Console::WriteLine( a->Length );   // OK  
-}  
-```  
+
+'member' : illegal use of '.' to access this member; compiler replaced with '->'
+
+The wrong member access operator was used.
+
+## Example
+
+The following sample generates C4817.
+
+```
+// C4817.cpp
+// compile with: /clr /W1
+using namespace System;
+int main() {
+   array<Int32> ^ a = gcnew array<Int32>(100);
+   Console::WriteLine( a.Length );   // C4817
+   Console::WriteLine( a->Length );   // OK
+}
+```

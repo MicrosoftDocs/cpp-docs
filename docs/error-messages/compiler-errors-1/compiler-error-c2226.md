@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2226
-syntax error : unexpected type 'type'  
-  
- A syntax error occurs before or in the type specifier.
+
+syntax error : unexpected type 'type'
+
+A syntax error occurs before or in the type specifier.

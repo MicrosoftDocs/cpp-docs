@@ -22,17 +22,17 @@ This class provides methods, static functions, and typedefs useful when creating
 ## Syntax
 
 ```
-template<typename T, class Allocator = ATL::CCRTAllocator>  
+template<typename T, class Allocator = ATL::CCRTAllocator>
 class CHeapPtrElementTraits : 
    public CDefaultElementTraits<ATL::CHeapPtr<T, Allocator>>
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The object type to be stored in the collection class.
 
-*Allocator*  
+*Allocator*<br/>
 The memory allocation class to use. The default is [CCRTAllocator](../../atl/reference/ccrtallocator-class.md).
 
 ## Members
@@ -84,6 +84,6 @@ typedef T *& OUTARGTYPE;
 
 ## See Also
 
-[CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)   
-[CComHeapPtr Class](../../atl/reference/ccomheapptr-class.md)   
+[CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)<br/>
+[CComHeapPtr Class](../../atl/reference/ccomheapptr-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -13,26 +13,27 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2005
-\#line expected a line number, found 'token'  
-  
- The `#line` directive must be followed by a line number.  
-  
- The following sample generates C2005:  
-  
-```  
-// C2005.cpp  
-int main() {  
-   int i = 0;  
-   #line i   // C2005  
-}  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2005b.cpp  
-int main() {  
-   int i = 0;  
-   #line 0  
-}  
+
+\#line expected a line number, found 'token'
+
+The `#line` directive must be followed by a line number.
+
+The following sample generates C2005:
+
+```
+// C2005.cpp
+int main() {
+   int i = 0;
+   #line i   // C2005
+}
+```
+
+Possible resolution:
+
+```
+// C2005b.cpp
+int main() {
+   int i = 0;
+   #line 0
+}
 ```

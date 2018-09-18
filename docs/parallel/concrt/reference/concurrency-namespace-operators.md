@@ -45,14 +45,14 @@ inline task<void> operator||(
 ```  
   
 ### Parameters  
- `ReturnType`  
- The type of the returned task.  
+*ReturnType*<br/>
+The type of the returned task.  
   
- `lhs`  
- The first task to combine into the resulting task.  
+*lhs*<br/>
+The first task to combine into the resulting task.  
   
- `rhs`  
- The second task to combine into the resulting task.  
+*rhs*<br/>
+The second task to combine into the resulting task.  
   
 ### Return Value  
  A task that completes sucessfully when either of the input tasks has completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>`. If the input tasks are of type `void` the output task will also be a `task<void>`.  
@@ -94,14 +94,14 @@ inline task<void>  operator&&(
 ```  
   
 ### Parameters  
- `ReturnType`  
- The type of the returned task.  
+*ReturnType*<br/>
+The type of the returned task.  
   
- `lhs`  
- The first task to combine into the resulting task.  
+*lhs*<br/>
+The first task to combine into the resulting task.  
   
- `rhs`  
- The second task to combine into the resulting task.  
+*rhs*<br/>
+The second task to combine into the resulting task.  
   
 ### Return Value  
  A task that completes successfully when both of the input tasks have completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>>`. If the input tasks are of type `void` the output task will also be a `task<void>`.  
@@ -120,20 +120,20 @@ inline bool operator== (
 ```  
   
 ### Parameters  
- `T`  
- The data type of the elements stored in the concurrent vectors.  
+*T*<br/>
+The data type of the elements stored in the concurrent vectors.  
   
- `A1`  
- The allocator type of the first `concurrent_vector` object.  
+*A1*<br/>
+The allocator type of the first `concurrent_vector` object.  
   
- `A2`  
- The allocator type of the second `concurrent_vector` object.  
+*A2*<br/>
+The allocator type of the second `concurrent_vector` object.  
   
- `_A`  
- An object of type `concurrent_vector`.  
+*_A*<br/>
+An object of type `concurrent_vector`.  
   
- `_B`  
- An object of type `concurrent_vector`.  
+*_B*<br/>
+An object of type `concurrent_vector`.  
   
 ### Return Value  
  `true` if the concurrent vector on the left side of the operator is equal to the concurrent vector on the right side of the operator; otherwise `false`.  
@@ -154,20 +154,20 @@ inline bool operator!= (
 ```  
   
 ### Parameters  
- `T`  
- The data type of the elements stored in the concurrent vectors.  
+*T*<br/>
+The data type of the elements stored in the concurrent vectors.  
   
- `A1`  
- The allocator type of the first `concurrent_vector` object.  
+*A1*<br/>
+The allocator type of the first `concurrent_vector` object.  
   
- `A2`  
- The allocator type of the second `concurrent_vector` object.  
+*A2*<br/>
+The allocator type of the second `concurrent_vector` object.  
   
- `_A`  
- An object of type `concurrent_vector`.  
+*_A*<br/>
+An object of type `concurrent_vector`.  
   
- `_B`  
- An object of type `concurrent_vector`.  
+*_B*<br/>
+An object of type `concurrent_vector`.  
   
 ### Return Value  
  `true` if the concurrent vectors are not equal; `false` if the concurrent vectors are equal.  
@@ -188,20 +188,20 @@ inline bool operator<(
 ```  
   
 ### Parameters  
- `T`  
- The data type of the elements stored in the concurrent vectors.  
+*T*<br/>
+The data type of the elements stored in the concurrent vectors.  
   
- `A1`  
- The allocator type of the first `concurrent_vector` object.  
+*A1*<br/>
+The allocator type of the first `concurrent_vector` object.  
   
- `A2`  
- The allocator type of the second `concurrent_vector` object.  
+*A2*<br/>
+The allocator type of the second `concurrent_vector` object.  
   
- `_A`  
- An object of type `concurrent_vector`.  
+*_A*<br/>
+An object of type `concurrent_vector`.  
   
- `_B`  
- An object of type `concurrent_vector`.  
+*_B*<br/>
+An object of type `concurrent_vector`.  
   
 ### Return Value  
  `true` if the concurrent vector on the left side of the operator is less than the concurrent vector on the right side of the operator; otherwise `false`.  
@@ -222,20 +222,20 @@ inline bool operator<= (
 ```  
   
 ### Parameters  
- `T`  
- The data type of the elements stored in the concurrent vectors.  
+*T*<br/>
+The data type of the elements stored in the concurrent vectors.  
   
- `A1`  
- The allocator type of the first `concurrent_vector` object.  
+*A1*<br/>
+The allocator type of the first `concurrent_vector` object.  
   
- `A2`  
- The allocator type of the second `concurrent_vector` object.  
+*A2*<br/>
+The allocator type of the second `concurrent_vector` object.  
   
- `_A`  
- An object of type `concurrent_vector`.  
+*_A*<br/>
+An object of type `concurrent_vector`.  
   
- `_B`  
- An object of type `concurrent_vector`.  
+*_B*<br/>
+An object of type `concurrent_vector`.  
   
 ### Return Value  
  `true` if the concurrent vector on the left side of the operator is less than or equal to the concurrent vector on the right side of the operator; otherwise `false`.  
@@ -256,20 +256,20 @@ inline bool operator>(
 ```  
   
 ### Parameters  
- `T`  
- The data type of the elements stored in the concurrent vectors.  
+*T*<br/>
+The data type of the elements stored in the concurrent vectors.  
   
- `A1`  
- The allocator type of the first `concurrent_vector` object.  
+*A1*<br/>
+The allocator type of the first `concurrent_vector` object.  
   
- `A2`  
- The allocator type of the second `concurrent_vector` object.  
+*A2*<br/>
+The allocator type of the second `concurrent_vector` object.  
   
- `_A`  
- An object of type `concurrent_vector`.  
+*_A*<br/>
+An object of type `concurrent_vector`.  
   
- `_B`  
- An object of type `concurrent_vector`.  
+*_B*<br/>
+An object of type `concurrent_vector`.  
   
 ### Return Value  
  `true` if the concurrent vector on the left side of the operator is greater than the concurrent vector on the right side of the operator; otherwise `false`.  
@@ -290,20 +290,20 @@ inline bool operator>= (
 ```  
   
 ### Parameters  
- `T`  
- The data type of the elements stored in the concurrent vectors.  
+*T*<br/>
+The data type of the elements stored in the concurrent vectors.  
   
- `A1`  
- The allocator type of the first `concurrent_vector` object.  
+*A1*<br/>
+The allocator type of the first `concurrent_vector` object.  
   
- `A2`  
- The allocator type of the second `concurrent_vector` object.  
+*A2*<br/>
+The allocator type of the second `concurrent_vector` object.  
   
- `_A`  
- An object of type `concurrent_vector`.  
+*_A*<br/>
+An object of type `concurrent_vector`.  
   
- `_B`  
- An object of type `concurrent_vector`.  
+*_B*<br/>
+An object of type `concurrent_vector`.  
   
 ### Return Value  
  `true` if the concurrent vector on the left side of the operator is greater than or equal to the concurrent vector on the right side of the operator; otherwise `false`.  

@@ -13,10 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1207
-Managed templates not supported by the version of the runtime installed  
-  
- C1207 occurs when you have a compiler for the current release, but a common language runtime from a previous release.  
-  
- Some functionality of the compiler may not work on a previous version of the run time.  
-  
- To resolve C1207 install the common language runtime version that is intended for use with your compiler.
+
+Managed templates not supported by the version of the runtime installed
+
+C1207 occurs when you have a compiler for the current release, but a common language runtime from a previous release.
+
+Some functionality of the compiler may not work on a previous version of the run time.
+
+To resolve C1207 install the common language runtime version that is intended for use with your compiler.

@@ -26,7 +26,7 @@ Lets you specify that a section of code should be executed on a single thread, n
   
 #### Parameters  
 
-`clause`  
+*clause*<br/>
 (Optional) Zero or more clauses. See the Remarks section for a list of the clauses supported by **single**.  
   
 ## Remarks  
@@ -40,13 +40,13 @@ Lets you specify that a section of code should be executed on a single thread, n
   
 -   [private](../../../parallel/openmp/reference/private-openmp.md)  
   
- The [master](../../../parallel/openmp/reference/master.md) directive lets you specify that a section of code should be executed only on the master thread.  
+The [master](../../../parallel/openmp/reference/master.md) directive lets you specify that a section of code should be executed only on the master thread.  
   
  For more information, see [2.4.3 single Construct](../../../parallel/openmp/2-4-3-single-construct.md).  
   
 ## Example  
   
-```  
+```cpp  
 // omp_single.cpp  
 // compile with: /openmp   
 #include <stdio.h>  

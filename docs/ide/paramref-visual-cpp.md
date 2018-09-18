@@ -22,8 +22,8 @@ The \<paramref> tag gives you a way to indicate that a word is a parameter. The 
 ```  
   
 #### Parameters  
- `name`  
- The name of the parameter to refer to.  Enclose the name in single or double quotation marks.  The compiler issues a warning if it does not find `name`.  
+*name*<br/>
+The name of the parameter to refer to.  Enclose the name in single or double quotation marks.  The compiler issues a warning if it does not find `name`.  
   
 ## Remarks  
  Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.  

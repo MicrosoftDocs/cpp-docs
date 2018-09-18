@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2458
-'identifier' : redefinition within definition  
-  
- A class, structure, union, or enumeration is redefined in its own declaration.  
-  
- The following sample generates C2458:  
-  
-```  
-// C2458.cpp  
-class C {  
-   enum i { C };   // C2458  
-};  
+
+'identifier' : redefinition within definition
+
+A class, structure, union, or enumeration is redefined in its own declaration.
+
+The following sample generates C2458:
+
+```
+// C2458.cpp
+class C {
+   enum i { C };   // C2458
+};
 ```

@@ -251,8 +251,8 @@ IMPLEMENT_DYNAMIC(class_name, base_class_name)
  *class_name*  
  The actual name of the class.  
   
- `base_class_name`  
- The name of the base class.  
+*base_class_name*<br/>
+The name of the base class.  
   
 ### Remarks  
  Use the IMPLEMENT_DYNAMIC macro in a .cpp module, and then link the resulting object code only once.  

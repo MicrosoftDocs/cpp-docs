@@ -13,35 +13,36 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2663
-'function' : number overloads have no legal conversions for 'this' pointer  
-  
- The compiler could not convert `this` to any of the overloaded versions of the member function.  
-  
- This error can be caused by invoking a non-`const` member function on a `const` object.  Possible resolutions:  
-  
-1.  Remove the `const` from the object declaration.  
-  
-2.  Add `const` to one of the member function overloads.  
-  
- The following sample generates C2663:  
-  
-```  
-// C2663.cpp  
-struct C {  
-   void f() volatile {}  
-   void f() {}  
-};  
-  
-struct D {  
-   void f() volatile;  
-   void f() const {}  
-};  
-  
-const C *pcc;  
-const D *pcd;  
-  
-int main() {  
-   pcc->f();    // C2663  
-   pcd->f();    // OK  
-}  
+
+'function' : number overloads have no legal conversions for 'this' pointer
+
+The compiler could not convert `this` to any of the overloaded versions of the member function.
+
+This error can be caused by invoking a non-`const` member function on a `const` object.  Possible resolutions:
+
+1. Remove the `const` from the object declaration.
+
+1. Add `const` to one of the member function overloads.
+
+The following sample generates C2663:
+
+```
+// C2663.cpp
+struct C {
+   void f() volatile {}
+   void f() {}
+};
+
+struct D {
+   void f() volatile;
+   void f() const {}
+};
+
+const C *pcc;
+const D *pcd;
+
+int main() {
+   pcc->f();    // C2663
+   pcd->f();    // OK
+}
 ```

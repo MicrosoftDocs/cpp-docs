@@ -19,16 +19,16 @@ This class is a helper for the [CSimpleMap](../../atl/reference/csimplemap-class
 ## Syntax
 
 ```
-template <class TKey, class TVal>  
+template <class TKey, class TVal>
 class CSimpleMapEqualHelper
 ```
 
 #### Parameters
 
-*TKey*  
+*TKey*<br/>
 The key element.
 
-*TVal*  
+*TVal*<br/>
 The value element.
 
 ## Members
@@ -58,10 +58,10 @@ static bool IsEqualKey(const TKey& k1, const TKey& k2);
 
 ### Parameters
 
-*k1*  
+*k1*<br/>
 The first key.
 
-*k2*  
+*k2*<br/>
 The second key.
 
 ### Return Value
@@ -78,10 +78,10 @@ static bool IsEqualValue(const TVal& v1, const TVal& v2);
 
 ### Parameters
 
-*v1*  
+*v1*<br/>
 The first value.
 
-*v2*  
+*v2*<br/>
 The second value.
 
 ### Return Value
@@ -90,5 +90,5 @@ Returns true if the values are equal, false otherwise.
 
 ## See Also
 
-[CSimpleMapEqualHelperFalse Class](../../atl/reference/csimplemapequalhelperfalse-class.md)   
+[CSimpleMapEqualHelperFalse Class](../../atl/reference/csimplemapequalhelperfalse-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

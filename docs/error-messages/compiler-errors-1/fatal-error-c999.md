@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C999
-UNKNOWN MESSAGE    Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information  
-  
- This error usually means that you have mixed files from different versions of the compiler, or your compiler installation is corrupted. Use the **Programs and Features** applet in the Control Panel to repair or reinstall the product.
+
+UNKNOWN MESSAGE    Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information
+
+This error usually means that you have mixed files from different versions of the compiler, or your compiler installation is corrupted. Use the **Programs and Features** applet in the Control Panel to repair or reinstall the product.

@@ -13,20 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3611
-'function': a sealed function cannot have a pure-specifier  
-  
- A sealed function was declared incorrectly.  For more information, see [sealed](../../windows/sealed-cpp-component-extensions.md).  
-  
-## Example  
- The following sample generates C3611.  
-  
-```  
-// C3611.cpp  
-// compile with: /clr /c  
-  
-ref struct V {  
-   virtual void Test() sealed = 0;   // C3611  
-   virtual void Test2() sealed;   // OK  
-   virtual void Test3() = 0;   // OK  
-};  
+
+'function': a sealed function cannot have a pure-specifier
+
+A sealed function was declared incorrectly.  For more information, see [sealed](../../windows/sealed-cpp-component-extensions.md).
+
+## Example
+
+The following sample generates C3611.
+
+```
+// C3611.cpp
+// compile with: /clr /c
+
+ref struct V {
+   virtual void Test() sealed = 0;   // C3611
+   virtual void Test2() sealed;   // OK
+   virtual void Test3() = 0;   // OK
+};
 ```

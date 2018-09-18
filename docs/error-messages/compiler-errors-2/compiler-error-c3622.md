@@ -13,19 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3622
-'class' : a class declared as 'keyword' cannot be instantiated  
-  
-An attempt was made to instantiate a class marked as [abstract](../../windows/abstract-cpp-component-extensions.md). A class marked as `abstract` can be a base class, but it cannot be instantiated.  
-  
-## Example  
-The following sample generates C3622.  
-  
-```  
-// C3622.cpp  
-// compile with: /clr  
-ref class a abstract {};  
-  
-int main() {  
-   a aa;   // C3622  
-}  
-```  
+
+'class' : a class declared as 'keyword' cannot be instantiated
+
+An attempt was made to instantiate a class marked as [abstract](../../windows/abstract-cpp-component-extensions.md). A class marked as `abstract` can be a base class, but it cannot be instantiated.
+
+## Example
+
+The following sample generates C3622.
+
+```
+// C3622.cpp
+// compile with: /clr
+ref class a abstract {};
+
+int main() {
+   a aa;   // C3622
+}
+```

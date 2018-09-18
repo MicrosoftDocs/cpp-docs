@@ -57,17 +57,17 @@ void CreateInstance(
 ```  
   
 #### Parameters  
- `progid`  
- A `ProgID` string.  
+*progid*<br/>
+A `ProgID` string.  
   
- `pouter`  
- Pointer to the aggregate object's IUnknown interface (the controlling IUnknown). If `pouter` is not specified, `NULL` is used.  
+*pouter*<br/>
+Pointer to the aggregate object's IUnknown interface (the controlling IUnknown). If `pouter` is not specified, `NULL` is used.  
   
- `cls_context`  
- Context in which the code that manages the newly created object will run. The values are taken from the `CLSCTX` enumeration. If `cls_context` is not specified, the value CLSCTX_ALL is used.  
+*cls_context*<br/>
+Context in which the code that manages the newly created object will run. The values are taken from the `CLSCTX` enumeration. If `cls_context` is not specified, the value CLSCTX_ALL is used.  
   
- `rclsid`  
- `CLSID` associated with the data and code that will be used to create the object.  
+*rclsid*<br/>
+`CLSID` associated with the data and code that will be used to create the object.  
   
 ## Exceptions  
  If the `com::ptr` already owns a reference to a COM object, `CreateInstance` throws <xref:System.InvalidOperationException>.  

@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2194
-'identifier' : is a text segment  
-  
- The `data_seg` pragma uses a segment name used with `code_seg`.  
-  
- The following sample generates C2194:  
-  
-```  
-// C2194.cpp  
-// compile with: /c  
-#pragma code_seg("MYCODE")  
-#pragma data_seg("MYCODE")   // C2194  
-#pragma data_seg("MYCODE2")   // OK  
+
+'identifier' : is a text segment
+
+The `data_seg` pragma uses a segment name used with `code_seg`.
+
+The following sample generates C2194:
+
+```
+// C2194.cpp
+// compile with: /c
+#pragma code_seg("MYCODE")
+#pragma data_seg("MYCODE")   // C2194
+#pragma data_seg("MYCODE2")   // OK
 ```

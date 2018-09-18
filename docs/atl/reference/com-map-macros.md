@@ -35,7 +35,7 @@ BEGIN_COM_MAP(x)
 
 ### Parameters
 
-*x*  
+*x*<br/>
 [in] The name of the class object you are exposing interfaces on.
 
 ### Remarks
@@ -58,5 +58,5 @@ END_COM_MAP()
 
 ## See Also
 
-[Macros](../../atl/reference/atl-macros.md)   
+[Macros](../../atl/reference/atl-macros.md)<br/>
 [COM Map Global Functions](../../atl/reference/com-map-global-functions.md)

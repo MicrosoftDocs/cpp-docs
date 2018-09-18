@@ -24,8 +24,8 @@ template<class T> bool operator!=(
 ```  
   
 #### Parameters  
- `t`  
- The object to compare for inequality.  
+*t*<br/>
+The object to compare for inequality.  
   
 ## Return Value  
  Returns `true` if `t` differs from the lock's object, `false` otherwise.  

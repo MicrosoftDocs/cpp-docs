@@ -22,7 +22,7 @@ Use `__declspec(align(#))` to precisely control the alignment of user-defined da
 
 ## Syntax
 
-> **__declspec( align(** *#* **) )** *declarator*  
+> **__declspec( align(** *#* **) )** *declarator*
 
 ## Remarks
 
@@ -239,6 +239,7 @@ The offset of an object is based on the offset of the previous object and the cu
 **END Microsoft Specific**
 
 ## See also
-[__declspec](../cpp/declspec.md)  
-[Overview of ARM ABI Conventions](../build/overview-of-arm-abi-conventions.md)  
-[Overview of x64 Calling Conventions](../build/overview-of-x64-calling-conventions.md)  
+
+[__declspec](../cpp/declspec.md)<br/>
+[Overview of ARM ABI Conventions](../build/overview-of-arm-abi-conventions.md)<br/>
+[Overview of x64 Calling Conventions](../build/overview-of-x64-calling-conventions.md)

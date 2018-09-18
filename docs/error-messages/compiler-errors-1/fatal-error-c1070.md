@@ -13,33 +13,34 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1070
-mismatched #if/#endif pair in file 'filename'  
-  
- An `#if`, `#ifdef`, or `#ifndef` directive has no corresponding `#endif`.  
-  
- The following sample generates C1070:  
-  
-```  
-// C1070.cpp  
-#define TEST  
-  
-#ifdef TEST  
-  
-#ifdef TEST  
-#endif  
-// C1070  
-```  
-  
- Possible resolution:  
-  
-```  
-// C1070b.cpp  
-// compile with: /c  
-#define TEST  
-  
-#ifdef TEST  
-#endif  
-  
-#ifdef TEST  
-#endif  
+
+mismatched #if/#endif pair in file 'filename'
+
+An `#if`, `#ifdef`, or `#ifndef` directive has no corresponding `#endif`.
+
+The following sample generates C1070:
+
+```
+// C1070.cpp
+#define TEST
+
+#ifdef TEST
+
+#ifdef TEST
+#endif
+// C1070
+```
+
+Possible resolution:
+
+```
+// C1070b.cpp
+// compile with: /c
+#define TEST
+
+#ifdef TEST
+#endif
+
+#ifdef TEST
+#endif
 ```

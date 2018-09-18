@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3858
-'type': cannot be redeclared in current scope  
-  
- The type cannot be declared twice in the same scope.  
-  
- The following sample generates C3858:  
-  
-```  
-// C3858.cpp  
-// compile with: /LD  
-template <class T>  
-struct Outer  
-{  
-   struct Inner;  
-};  
-  
-template <class T>  
-struct Outer<T>::Inner;   // C3858  
-// try the following line instead  
-// struct Outer<T>::Inner{};  
+
+'type': cannot be redeclared in current scope
+
+The type cannot be declared twice in the same scope.
+
+The following sample generates C3858:
+
+```
+// C3858.cpp
+// compile with: /LD
+template <class T>
+struct Outer
+{
+   struct Inner;
+};
+
+template <class T>
+struct Outer<T>::Inner;   // C3858
+// try the following line instead
+// struct Outer<T>::Inner{};
 ```

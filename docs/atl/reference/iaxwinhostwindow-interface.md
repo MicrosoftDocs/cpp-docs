@@ -61,10 +61,10 @@ STDMETHOD(AttachControl)(IUnknown* pUnkControl, HWND hWnd);
 
 ### Parameters
 
-*pUnkControl*  
+*pUnkControl*<br/>
 [in] A pointer to the `IUnknown` interface of the control to be attached to the host object.
 
-*hWnd*  
+*hWnd*<br/>
 [in] A handle to the window to be used for hosting.
 
 ### Return Value
@@ -84,13 +84,13 @@ STDMETHOD(CreateControl)(
 
 ### Parameters
 
-*lpTricsData*  
+*lpTricsData*<br/>
 [in] A string identifying the control to create. Can be a CLSID (must include the braces), ProgID, URL, or raw HTML (prefixed by **MSHTML:**).
 
-*hWnd*  
+*hWnd*<br/>
 [in] A handle to the window to be used for hosting.
 
-*pStream*  
+*pStream*<br/>
 [in] An interface pointer for a stream containing initialization data for the control. Can be NULL.
 
 ### Return Value
@@ -121,22 +121,22 @@ STDMETHOD(CreateControlEx)(
 
 ### Parameters
 
-*lpTricsData*  
+*lpTricsData*<br/>
 [in] A string identifying the control to create. Can be a CLSID (must include the braces), ProgID, URL, or raw HTML (prefixed with **MSHTML:**).
 
-*hWnd*  
+*hWnd*<br/>
 [in] A handle to the window to be used for hosting.
 
-*pStream*  
+*pStream*<br/>
 [in] An interface pointer for a stream containing initialization data for the control. Can be NULL.
 
-*ppUnk*  
+*ppUnk*<br/>
 [out] The address of a pointer that will receive the `IUnknown` interface of the created control. Can be NULL.
 
-*riidAdvise*  
+*riidAdvise*<br/>
 [in] The interface identifier of an outgoing interface on the contained object. Can be IID_NULL.
 
-*punkAdvise*  
+*punkAdvise*<br/>
 [in] A pointer to the `IUnknown` interface of the sink object to be connected to the connection point on the contained object specified by `iidSink`.
 
 ### Return Value
@@ -161,10 +161,10 @@ STDMETHOD(QueryControl)(
 
 ### Parameters
 
-*riid*  
+*riid*<br/>
 [in] The ID of an interface on the control being requested.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] The address of a pointer that will receive the specified interface of the created control.
 
 ### Return Value
@@ -181,7 +181,7 @@ STDMETHOD(SetExternalDispatch)(IDispatch* pDisp);
 
 ### Parameters
 
-*pDisp*  
+*pDisp*<br/>
 [in] A pointer to an `IDispatch` interface.
 
 ### Return Value
@@ -198,7 +198,7 @@ STDMETHOD(SetExternalUIHandler)(IDocHostUIHandlerDispatch* pDisp);
 
 ### Parameters
 
-*pDisp*  
+*pDisp*<br/>
 [in] A pointer to an `IDocHostUIHandlerDispatch` interface.
 
 ### Return Value
@@ -211,7 +211,7 @@ This function is used by controls (such as the Web browser control) that query t
 
 ## See Also
 
-[IAxWinAmbientDispatch Interface](../../atl/reference/iaxwinambientdispatch-interface.md)   
-[CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)   
+[IAxWinAmbientDispatch Interface](../../atl/reference/iaxwinambientdispatch-interface.md)<br/>
+[CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)<br/>
 [AtlAxGetHost](composite-control-global-functions.md#atlaxgethost)
 

@@ -45,7 +45,7 @@ DECLARE_AGGREGATABLE( x )
 
 ### Parameters
 
-*x*  
+*x*<br/>
 [in] The name of the class you are defining as aggregatable.
 
 ### Remarks
@@ -109,7 +109,7 @@ DECLARE_CLASSFACTORY_EX( cf )
 
 ### Parameters
 
-*cf*  
+*cf*<br/>
 [in] The name of the class that implements your class factory object.
 
 ### Remarks
@@ -132,7 +132,7 @@ DECLARE_CLASSFACTORY2( lic )
 
 ### Parameters
 
-*lic*  
+*lic*<br/>
 [in] A class that implements `VerifyLicenseKey`, `GetLicenseKey`, and `IsLicenseValid`.
 
 ### Remarks
@@ -156,7 +156,7 @@ class  CComClassFactory2 : public IClassFactory2,
 
 ### Parameters
 
-*license*  
+*license*<br/>
 A class that implements the following static functions:
 
 - `static BOOL VerifyLicenseKey( BSTR bstr );`
@@ -227,7 +227,7 @@ DECLARE_CLASSFACTORY_SINGLETON( obj )
 
 ### Parameters
 
-*obj*  
+*obj*<br/>
 [in] The name of your class object.
 
 ### Remarks
@@ -252,7 +252,7 @@ class CComClassFactorySingleton : public CComClassFactory
 
 ### Parameters
 
-*T*  
+*T*<br/>
 Your class.
 
 `CComClassFactorySingleton` derives from [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) and uses [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) to construct a single object. Each call to the `CreateInstance` method simply queries this object for an interface pointer.
@@ -285,7 +285,7 @@ DECLARE_NOT_AGGREGATABLE( x )
 
 ### Parameters
 
-*x*  
+*x*<br/>
 [in] The name of the class object you are defining as not aggregatable.
 
 ### Remarks
@@ -308,7 +308,7 @@ DECLARE_ONLY_AGGREGATABLE( x )
 
 ### Parameters
 
-*x*  
+*x*<br/>
 [in] The name of the class object you are defining as only aggregatable.
 
 ### Remarks
@@ -331,7 +331,7 @@ DECLARE_POLY_AGGREGATABLE( x )
 
 ### Parameters
 
-*x*  
+*x*<br/>
 [in] The name of the class object you are defining as aggregatable or not aggregatable.
 
 ### Remarks
@@ -360,7 +360,7 @@ DECLARE_VIEW_STATUS( statusFlags )
 
 ### Parameters
 
-*statusFlags*  
+*statusFlags*<br/>
 [in] The VIEWSTATUS flags. See [VIEWSTATUS](/windows/desktop/api/ocidl/ne-ocidl-tagviewstatus) for a list of flags.
 
 ### Example

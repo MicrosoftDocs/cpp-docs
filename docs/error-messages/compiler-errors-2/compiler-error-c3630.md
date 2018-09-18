@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3630
-error when processing the token 'token'  
-  
- A token in source code could not be processed.
+
+error when processing the token 'token'
+
+A token in source code could not be processed.

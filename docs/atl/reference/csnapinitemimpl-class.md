@@ -22,16 +22,16 @@ This class provides methods for implementing a snap-in node object.
 ## Syntax
 
 ```
-template <class T, BOOL bIsExtension = FALSE>  
+template <class T, BOOL bIsExtension = FALSE>
 class ATL_NO_VTABLE CSnapInItemImpl : public CSnapInItem
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `CSnapInItemImpl`.
 
-*bIsExtension*  
+*bIsExtension*<br/>
 TRUE if the object is a snap-in extension; otherwise FALSE.
 
 ## Members
@@ -95,10 +95,10 @@ AddMenuItems(
 
 ### Parameters
 
-*piCallback*  
+*piCallback*<br/>
 [in] Pointer to the `IContextMenuCallback` that can add items to the context menu.
 
-*pInsertionAllowed*  
+*pInsertionAllowed*<br/>
 [in, out] Identifies Microsoft Management Console (MMC)-defined, menu-item insertion points that can be used. This can be a combination of the following flags:
 
 - CCM_INSERTIONALLOWED_TOP Items can be inserted at the top of a context menu.
@@ -109,7 +109,7 @@ AddMenuItems(
 
 - CCM_INSERTIONALLOWED_VIEW Items can be inserted in the toolbar view menu or in the View submenu of the result pane context menu.
 
-*type*  
+*type*<br/>
 [in] Specifies the type of object. It can have one of the following values:
 
 - CCT_SCOPE Data object for scope pane context.
@@ -130,10 +130,10 @@ Command(long lCommandID, DATA_OBJECT_TYPES type);
 
 ### Parameters
 
-*lCommandID*  
+*lCommandID*<br/>
 [in] Specifies the command identifier of the menu item.
 
-*type*  
+*type*<br/>
 [in] Specifies the type of object. It can have one of the following values:
 
 - CCT_SCOPE Data object for scope pane context.
@@ -158,16 +158,16 @@ CreatePropertyPages(
 
 ### Parameters
 
-*lpProvider*  
+*lpProvider*<br/>
 [in] Pointer to the `IPropertySheetCallback` interface.
 
-*handle*  
+*handle*<br/>
 [in] Specifies the handle used to route the MMCN_PROPERTY_CHANGE notification message to the appropriate data class.
 
-*pUnk*  
+*pUnk*<br/>
 [in] Pointer to the `IExtendPropertySheet` interface on the object that contains context information about the node.
 
-*type*  
+*type*<br/>
 [in] Specifies the type of object. It can have one of the following values:
 
 - CCT_SCOPE Data object for scope pane context.
@@ -196,10 +196,10 @@ FillData(CLIPFORMAT cf, LPSTREAM pStream);
 
 ### Parameters
 
-*cf*  
+*cf*<br/>
 [in] The format (text, rich text, or rich text with OLE items) of the Clipboard.
 
-*pStream*  
+*pStream*<br/>
 [in] A pointer to the stream containing the object data.
 
 ### Remarks
@@ -218,10 +218,10 @@ GetResultViewType(
 
 ### Parameters
 
-*ppViewType*  
+*ppViewType*<br/>
 [out] Pointer to the address of the returned view type.
 
-*pViewOptions*  
+*pViewOptions*<br/>
 [out] Pointer to the MMC_VIEW_OPTIONS enumeration, which provides the console with options specified by the owning snap-in. This value can be one of the following:
 
 - MMC_VIEW_OPTIONS_NOLISTVIEWS = 0x00000001   Tells the console to refrain from presenting standard list view choices in the **View** menu. Allows the snap-in to display its own custom views only in the result view pane. This is the only option flag defined at this time.
@@ -238,7 +238,7 @@ GetScopePaneInfo (SCOPEDATAITEM* pScopeDataItem);
 
 ### Parameters
 
-*pScopeDataItem*  
+*pScopeDataItem*<br/>
 [out] A pointer to the `SCOPEDATAITEM` structure of the `CSnapInItemImpl` object.
 
 ##  <a name="getresultpaneinfo"></a>  CSnapInItemImpl::GetResultPaneInfo
@@ -251,7 +251,7 @@ GetResultPaneInfo (RESULTDATAITEM* pResultDataItem);
 
 ### Parameters
 
-*pResultDataItem*  
+*pResultDataItem*<br/>
 [out] A pointer to the `RESULTDATAITEM` structure of the `CSnapInItemImpl` object.
 
 ##  <a name="m_bstrdisplayname"></a>  CSnapInItemImpl::m_bstrDisplayName
@@ -294,7 +294,7 @@ STDMETHOD(Notify)(
 
 ### Parameters
 
-*event*  
+*event*<br/>
 [in] Identifies an action taken by a user. The following notifications are possible:
 
 - MMCN_ACTIVATE Sent when a window is being activated and deactivated.
@@ -325,19 +325,19 @@ STDMETHOD(Notify)(
 
 - MMCN_VIEW_CHANGE Sent when the snap-in can update all views when a change occurs.
 
-*arg*  
+*arg*<br/>
 [in] Depends on the notification type.
 
-*param*  
+*param*<br/>
 [in] Depends on the notification type.
 
-*pComponentData*  
+*pComponentData*<br/>
 [out] A pointer to the object implementing `IComponentData`. This parameter is NULL if the notification is not being forwarded from `IComponentData::Notify`.
 
-*pComponent*  
+*pComponent*<br/>
 [out] A pointer to the object that implements `IComponent`. This parameter is NULL if the notification is not being forwarded from `IComponent::Notify`.
 
-*type*  
+*type*<br/>
 [in] Specifies the type of object. It can have one of the following values:
 
 - CCT_SCOPE Data object for scope pane context.
@@ -368,10 +368,10 @@ void SetMenuInsertionFlags(
 
 ### Parameters
 
-*bBeforeInsertion*  
+*bBeforeInsertion*<br/>
 [in] Nonzero if the function should be called before items are added to the context menu; otherwise 0.
 
-*pInsertionAllowed*  
+*pInsertionAllowed*<br/>
 [in, out] Identifies Microsoft Management Console (MMC)-defined, menu-item insertion points that can be used. This can be a combination of the following flags:
 
 - CCM_INSERTIONALLOWED_TOP Items can be inserted at the top of a context menu.
@@ -401,10 +401,10 @@ void SetToolbarButtonInfo(
 
 ### Parameters
 
-*id*  
+*id*<br/>
 [in] The ID of the toolbar button to be set.
 
-*fsState*  
+*fsState*<br/>
 [in] The state flags of the button. Can be one or more of the following:
 
 - TBSTATE_CHECKED The button has the TBSTYLE_CHECKED style and is being pressed.
@@ -419,7 +419,7 @@ void SetToolbarButtonInfo(
 
 - TBSTATE_WRAP A line break follows the button. The button must also have the TBSTATE_ENABLED.
 
-*fsType*  
+*fsType*<br/>
 [in] The state flags of the button. Can be one or more of the following:
 
 - TBSTYLE_BUTTON Creates a standard push button.
@@ -445,13 +445,13 @@ void UpdateMenuState(
 
 ### Parameters
 
-*id*  
+*id*<br/>
 [in] The ID of the menu item to be set.
 
-*pBuf*  
+*pBuf*<br/>
 [in] A pointer to the string for the menu item to be updated.
 
-*flags*  
+*flags*<br/>
 [in] Specifies the new state flags. This can be a combination of the following flags:
 
 - MF_POPUP Specifies that this is a submenu within the context menu. Menu items, insertion points, and further submenus may be added to this submenu using its `lCommandID` as their `IInsertionPointID`.
@@ -492,10 +492,10 @@ BOOL UpdateToolbarButton(UINT id, BYTE fsState);
 
 ### Parameters
 
-*id*  
+*id*<br/>
 Specifies the button ID of the toolbar button to be updated.
 
-*fsState*  
+*fsState*<br/>
 Specifies a toolbar button state. If this state is to be set, return TRUE. This can be a combination of the following flags:
 
 - ENABLED The button accepts user input. A button that does not have this state does not accept user input and is grayed.

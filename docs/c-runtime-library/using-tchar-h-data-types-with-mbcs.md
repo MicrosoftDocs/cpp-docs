@@ -22,7 +22,7 @@ As the table of generic-text routine mappings indicates (see [Generic-Text Mappi
 
 - An MBCS-specific routine. In this case, the string arguments are expected to be of type __unsigned char&#42;__. For example, **_tcsrev** maps to **_mbsrev**, which expects and returns a string of type __unsigned char&#42;__. Again, if you use the **_TCHAR** generic-text data type for your string types, there is a potential type conflict because **_TCHAR** maps to type **char**.
 
- Following are three solutions for preventing this type conflict (and the C compiler warnings or C++ compiler errors that would result):
+Following are three solutions for preventing this type conflict (and the C compiler warnings or C++ compiler errors that would result):
 
 - Use the default behavior. TCHAR.H provides generic-text routine prototypes for routines in the run-time libraries, as in the following example.
 

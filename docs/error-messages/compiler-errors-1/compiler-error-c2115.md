@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2115
-'identifier' : incompatible types  
-  
- An expression contained incompatible types.
+
+'identifier' : incompatible types
+
+An expression contained incompatible types.

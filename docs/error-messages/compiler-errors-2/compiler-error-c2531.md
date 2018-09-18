@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2531
-'identifier' : reference to a bit field illegal  
-  
- References to bit fields are not allowed.  
-  
- The following sample generates C2531:  
-  
-```  
-// C2531.cpp  
-// compile with: /c  
-class P {  
-   int &b1 : 10;   // C2531  
-   int b2 : 10;   // OK  
-};  
+
+'identifier' : reference to a bit field illegal
+
+References to bit fields are not allowed.
+
+The following sample generates C2531:
+
+```
+// C2531.cpp
+// compile with: /c
+class P {
+   int &b1 : 10;   // C2531
+   int b2 : 10;   // OK
+};
 ```

@@ -16,22 +16,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _CIatan
-Calculates the arctangent of the top value on the stack.  
-  
-## Syntax  
-  
-```  
-void __cdecl _CIatan();  
-```  
-  
-## Remarks  
- This version of the `atan` function has a specialized calling convention that the compiler understands. It speeds up the execution because it prevents copies from being generated and helps with register allocation.  
-  
- The resulting value is pushed onto the top of the stack.  
-  
-## Requirements  
- **Platform:** x86  
-  
-## See Also  
- [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [atan, atanf, atanl, atan2, atan2f, atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)
+
+Calculates the arctangent of the top value on the stack.
+
+## Syntax
+
+```
+void __cdecl _CIatan();
+```
+
+## Remarks
+
+This version of the `atan` function has a specialized calling convention that the compiler understands. It speeds up the execution because it prevents copies from being generated and helps with register allocation.
+
+The resulting value is pushed onto the top of the stack.
+
+## Requirements
+ **Platform:** x86
+
+## See Also
+
+[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[atan, atanf, atanl, atan2, atan2f, atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)

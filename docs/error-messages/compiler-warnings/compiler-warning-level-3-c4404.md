@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4404
-period on directive ignored  
-  
- The optional period preceding the directive is ignored.
+
+period on directive ignored
+
+The optional period preceding the directive is ignored.

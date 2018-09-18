@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Fatal Error RW1023
-I/O error writing file, drive full  
-  
- Free space must equal at least twice the size of the executable file you are creating.
+
+I/O error writing file, drive full
+
+Free space must equal at least twice the size of the executable file you are creating.

@@ -63,11 +63,11 @@ explicit accelerator_view_removed(
 ```  
   
 ### Parameters  
- `_Message`  
- A description of the error.  
+*_Message*<br/>
+A description of the error.  
   
- `_View_removed_reason`  
- An HRESULT error code indicating the cause of removal of the `accelerator_view` object.  
+*_View_removed_reason*<br/>
+An HRESULT error code indicating the cause of removal of the `accelerator_view` object.  
   
 ### Return Value  
  A new instance of the accelerator_view_removed class.  

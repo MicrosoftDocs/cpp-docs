@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2487
-'identifier' : member of dll interface class may not be declared with dll interface  
-  
- You can declare a whole class, or certain members of a non-DLL interface class, with DLL interface. You cannot declare a class with DLL interface and then declare a member of that class with DLL interface.
+
+'identifier' : member of dll interface class may not be declared with dll interface
+
+You can declare a whole class, or certain members of a non-DLL interface class, with DLL interface. You cannot declare a class with DLL interface and then declare a member of that class with DLL interface.

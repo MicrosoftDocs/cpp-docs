@@ -13,19 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2714
-__alignof(void) is not allowed  
-  
- An invalid value was passed to an operator.  
-  
- See [__alignof Operator](../../cpp/alignof-operator.md) for more information.  
-  
-## Example  
- The following sample generates C2714.  
-  
-```  
-// C2714.cpp  
-int main() {  
-   return __alignof(void);   // C2714  
-   return __alignof(char);   // OK  
-}  
+
+__alignof(void) is not allowed
+
+An invalid value was passed to an operator.
+
+See [__alignof Operator](../../cpp/alignof-operator.md) for more information.
+
+## Example
+
+The following sample generates C2714.
+
+```
+// C2714.cpp
+int main() {
+   return __alignof(void);   // C2714
+   return __alignof(char);   // OK
+}
 ```

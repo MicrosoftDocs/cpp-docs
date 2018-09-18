@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2670
-'identifier' : the function template cannot convert parameter number from type 'type'  
-  
- A parameter could not be converted to the required type.  
-  
- This error may be fixed if you create an explicit conversion.
+
+'identifier' : the function template cannot convert parameter number from type 'type'
+
+A parameter could not be converted to the required type.
+
+This error may be fixed if you create an explicit conversion.

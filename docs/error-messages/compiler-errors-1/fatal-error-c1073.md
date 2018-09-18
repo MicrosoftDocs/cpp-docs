@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1073
-Internal error involving incremental compilation (compiler file 'filename', line number)  
-  
- Recompile the file without using incremental compilation.
+
+Internal error involving incremental compilation (compiler file 'filename', line number)
+
+Recompile the file without using incremental compilation.

@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 2) C4150
-deletion of pointer to incomplete type 'type'; no destructor called  
-  
- The **delete** operator is called to delete a type that was declared but not defined, so the compiler cannot find a destructor.  
-  
- The following sample generates C4150:  
-  
-```  
-// C4150.cpp  
-// compile with: /W2  
-class  IncClass;  
-  
-void NoDestruct( IncClass* pIncClass )  
-{  
-   delete pIncClass;  
-} // C4150, define class to resolve  
-  
-int main()  
-{  
-}  
+
+deletion of pointer to incomplete type 'type'; no destructor called
+
+The **delete** operator is called to delete a type that was declared but not defined, so the compiler cannot find a destructor.
+
+The following sample generates C4150:
+
+```
+// C4150.cpp
+// compile with: /W2
+class  IncClass;
+
+void NoDestruct( IncClass* pIncClass )
+{
+   delete pIncClass;
+} // C4150, define class to resolve
+
+int main()
+{
+}
 ```

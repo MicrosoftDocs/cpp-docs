@@ -314,30 +314,34 @@ BOOL GetItem(int nItem,   TCITEM* pTabCtrlItem) const;
 ### Remarks  
  When the message is sent, the `mask` member specifies which attributes to return. If the `mask` member specifies the TCIF_TEXT value, the `pszText` member must contain the address of the buffer that receives the item text and the `cchTextMax` member must specify the size of the buffer.  
   
- `mask`  
- Value specifying which `TCITEM` structure members to retrieve or set. This member can be zero or a combination of the following values:  
+- `mask`
+
+   Value specifying which `TCITEM` structure members to retrieve or set. This member can be zero or a combination of the following values:  
   
-- TCIF_TEXT The `pszText` member is valid.  
+   - TCIF_TEXT The `pszText` member is valid.  
   
-- TCIF_IMAGE The `iImage` member is valid.  
+   - TCIF_IMAGE The `iImage` member is valid.  
   
-- TCIF_PARAM The `lParam` member is valid.  
+   - TCIF_PARAM The `lParam` member is valid.  
   
-- TCIF_RTLREADING The text of `pszText` is displayed using right-to-left reading order on Hebrew or Arabic systems.  
+   - TCIF_RTLREADING The text of `pszText` is displayed using right-to-left reading order on Hebrew or Arabic systems.  
   
-- TCIF_STATE The `dwState` member is valid.  
+   - TCIF_STATE The `dwState` member is valid.  
   
- `pszText`  
- Pointer to a null-terminated string containing the tab text if the structure contains information about a tab. If the structure is receiving information, this member specifies the address of the buffer that receives the tab text.  
+- `pszText`  
+
+   Pointer to a null-terminated string containing the tab text if the structure contains information about a tab. If the structure is receiving information, this member specifies the address of the buffer that receives the tab text.  
   
- `cchTextMax`  
- Size of the buffer pointed to by `pszText`. This member is ignored if the structure is not receiving information.  
+- `cchTextMax`  
+
+   Size of the buffer pointed to by `pszText`. This member is ignored if the structure is not receiving information.  
   
- `iImage`  
+- `iImage`  
  Index into the tab control's image list, or - 1 if there is no image for the tab.  
   
- lParam  
- Application-defined data associated with the tab. If there are more than four bytes of application-defined data per tab, an application must define a structure and use it instead of the `TCITEM` structure. The first member of the application-defined structure must be a [TCITEMHEADER](/windows/desktop/api/commctrl/ns-commctrl-tagtcitemheadera)structure. The `TCITEMHEADER` structure is identical to the `TCITEM` structure, but without the `lParam` member. The difference between the size of your structure and the size of the `TCITEMHEADER` structure should equal the number of extra bytes per tab.  
+- `lParam`  
+
+   Application-defined data associated with the tab. If there are more than four bytes of application-defined data per tab, an application must define a structure and use it instead of the `TCITEM` structure. The first member of the application-defined structure must be a [TCITEMHEADER](/windows/desktop/api/commctrl/ns-commctrl-tagtcitemheadera)structure. The `TCITEMHEADER` structure is identical to the `TCITEM` structure, but without the `lParam` member. The difference between the size of your structure and the size of the `TCITEMHEADER` structure should equal the number of extra bytes per tab.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CTabCtrl#4](../../mfc/reference/codesnippet/cpp/ctabctrl-class_4.cpp)]  

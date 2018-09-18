@@ -16,20 +16,20 @@ In some applications, such as an SDI or MDI application, you will want to embed 
   
  The **Create** member function has the following parameters:  
   
- `lpszWindowName`  
- A pointer to the text to be displayed in the control's Text or Caption property (if any).  
+*lpszWindowName*<br/>
+A pointer to the text to be displayed in the control's Text or Caption property (if any).  
   
- `dwStyle`  
- Windows styles. For a complete list, see [CWnd::CreateControl](../mfc/reference/cwnd-class.md#createcontrol).  
+*dwStyle*<br/>
+Windows styles. For a complete list, see [CWnd::CreateControl](../mfc/reference/cwnd-class.md#createcontrol).  
   
- `rect`  
- Specifies the control's size and position.  
+*rect*<br/>
+Specifies the control's size and position.  
   
- `pParentWnd`  
- Specifies the control's parent window, usually a `CDialog`. It must not be **NULL**.  
+*pParentWnd*<br/>
+Specifies the control's parent window, usually a `CDialog`. It must not be **NULL**.  
   
- `nID`  
- Specifies the control ID and can be used by the container to refer to the control.  
+*nID*<br/>
+Specifies the control ID and can be used by the container to refer to the control.  
   
  One example of using this function to dynamically create an ActiveX control would be in a form view of an SDI application. You could then create an instance of the control in the `WM_CREATE` handler of the application.  
   

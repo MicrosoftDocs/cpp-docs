@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2053
-'identifier' : wide string mismatch  
-  
- The wide string is assigned to an incompatible type.  
-  
- The following sample generates C2053:  
-  
-```  
-// C2053.c  
-int main() {  
-   char array[] = L"Rika";   // C2053  
-}  
+
+'identifier' : wide string mismatch
+
+The wide string is assigned to an incompatible type.
+
+The following sample generates C2053:
+
+```
+// C2053.c
+int main() {
+   char array[] = L"Rika";   // C2053
+}
 ```

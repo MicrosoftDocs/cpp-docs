@@ -90,10 +90,10 @@ HRESULT RegisterServer(BOOL bRegTypeLib = FALSE, const CLSID* pCLSID = NULL);
 
 ### Parameters
 
-*bRegTypeLib*  
+*bRegTypeLib*<br/>
 TRUE if the type library is to be registered. The default value is FALSE.
 
-*pCLSID*  
+*pCLSID*<br/>
 Points to the CLSID of the object to be registered. If NULL (the default value), all objects in the object map will be registered.
 
 ### Return Value
@@ -115,7 +115,7 @@ HRESULT RegisterTypeLib();
 
 ### Parameters
 
-*lpszIndex*  
+*lpszIndex*<br/>
 String in the format "\\\N", where N is the integer index of the TYPELIB resource.
 
 ### Return Value
@@ -138,10 +138,10 @@ HRESULT UnregisterServer(
 
 ### Parameters
 
-*bRegTypeLib*  
+*bRegTypeLib*<br/>
 TRUE if the type library is to be unregistered. The default value is FALSE.
 
-*pCLSID*  
+*pCLSID*<br/>
 Points to the CLSID of the object to be unregistered. If NULL (the default value), all objects in the object map will be unregistered.
 
 ### Return Value
@@ -163,7 +163,7 @@ HRESULT UnRegisterTypeLib();
 
 ### Parameters
 
-*lpszIndex*  
+*lpszIndex*<br/>
 String in the format "\\\N", where N is the integer index of the TYPELIB resource.
 
 ### Remarks
@@ -176,5 +176,5 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ## See Also
 
-[_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module)   
+[_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

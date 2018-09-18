@@ -22,8 +22,8 @@ schedule(type[,size])
 ```  
   
 #### Parameters  
- `type`  
- The kind of scheduling:  
+*type*<br/>
+The kind of scheduling:  
   
 -   `dynamic`  
   
@@ -41,7 +41,7 @@ schedule(type[,size])
   
 ## Example  
   
-```  
+```cpp  
 // omp_schedule.cpp  
 // compile with: /openmp   
 #include <windows.h>  

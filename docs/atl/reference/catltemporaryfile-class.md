@@ -109,7 +109,7 @@ HRESULT Close(LPCTSTR szNewName = NULL) throw();
 
 ### Parameters
 
-*szNewName*  
+*szNewName*<br/>
 The name for the new file to store the contents of the temporary file in. If this argument is NULL, the contents of the temporary file are deleted.
 
 ### Return Value
@@ -130,10 +130,10 @@ HRESULT Create(LPCTSTR pszDir = NULL, DWORD dwDesiredAccess = GENERIC_WRITE) thr
 
 ### Parameters
 
-*pszDir*  
+*pszDir*<br/>
 The path for the temporary file. If this is NULL, [GetTempPath](/windows/desktop/api/fileapi/nf-fileapi-gettemppatha) will be called to assign a path.
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 The desired access. See *dwDesiredAccess* in [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea) in the Windows SDK.
 
 ### Return Value
@@ -174,7 +174,7 @@ HRESULT GetPosition(ULONGLONG& nPos) const throw();
 
 ### Parameters
 
-*nPos*  
+*nPos*<br/>
 The position in bytes.
 
 ### Return Value
@@ -195,7 +195,7 @@ HRESULT GetSize(ULONGLONG& nLen) const throw();
 
 ### Parameters
 
-*nLen*  
+*nLen*<br/>
 The number of bytes in the file.
 
 ### Return Value
@@ -244,10 +244,10 @@ HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 
 ### Parameters
 
-*nPos*  
+*nPos*<br/>
 The position in the file where the lock should begin.
 
-*nCount*  
+*nCount*<br/>
 The length of the byte range to be locked.
 
 ### Return Value
@@ -262,7 +262,7 @@ Locking bytes in a file prevents access to those bytes by other processes. You c
 
 Returns a handle to the temporary file.
 
-```  
+```
 operator HANDLE() throw();
 ```
 
@@ -279,13 +279,13 @@ HRESULT Read(
 
 ### Parameters
 
-*pBuffer*  
+*pBuffer*<br/>
 Pointer to the buffer that will receive the data read from the file.
 
-*nBufSize*  
+*nBufSize*<br/>
 The buffer size in bytes.
 
-*nBytesRead*  
+*nBytesRead*<br/>
 The number of bytes read.
 
 ### Return Value
@@ -310,10 +310,10 @@ HRESULT Seek(LONGLONG nOffset, DWORD dwFrom = FILE_CURRENT) throw();
 
 ### Parameters
 
-*nOffset*  
+*nOffset*<br/>
 The offset, in bytes, from the starting point given by *dwFrom.*
 
-*dwFrom*  
+*dwFrom*<br/>
 The starting point (FILE_BEGIN, FILE_CURRENT, or FILE_END).
 
 ### Return Value
@@ -338,7 +338,7 @@ HRESULT SetSize(ULONGLONG nNewLen) throw();
 
 ### Parameters
 
-*nNewLen*  
+*nNewLen*<br/>
 The new length of the file in bytes.
 
 ### Return Value
@@ -375,10 +375,10 @@ HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 
 ### Parameters
 
-*nPos*  
+*nPos*<br/>
 The position in the file where the unlock should begin.
 
-*nCount*  
+*nCount*<br/>
 The length of the byte range to be unlocked.
 
 ### Return Value
@@ -394,7 +394,7 @@ Calls [CAtlFile::UnlockRange](../../atl/reference/catlfile-class.md#unlockrange)
 Call this method to write data to the temporary file starting at the position indicated by the file pointer.
 
 ```
-HRESULT Write(  
+HRESULT Write(
     LPCVOID pBuffer,
     DWORD nBufSize,
     DWORD* pnBytesWritten = NULL) throw();
@@ -402,13 +402,13 @@ HRESULT Write(
 
 ### Parameters
 
-*pBuffer*  
+*pBuffer*<br/>
 The buffer containing the data to be written to the file.
 
-*nBufSize*  
+*nBufSize*<br/>
 The number of bytes to be transferred from the buffer.
 
-*pnBytesWritten*  
+*pnBytesWritten*<br/>
 The number of bytes written.
 
 ### Return Value
@@ -425,5 +425,5 @@ See the example for [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile).
 
 ## See Also
 
-[Class Overview](../../atl/atl-class-overview.md)   
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [CAtlFile Class](../../atl/reference/catlfile-class.md)

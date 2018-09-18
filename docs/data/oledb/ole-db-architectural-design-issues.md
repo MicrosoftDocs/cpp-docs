@@ -12,6 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Architectural Design Issues
+
 You should consider the following issues before starting your OLE DB application:  
   
 ## What programming implementation will you use to write your OLE DB application?

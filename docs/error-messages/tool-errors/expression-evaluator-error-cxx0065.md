@@ -13,12 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0065
-variable needs stack frame  
-  
- An expression contained a variable that exists within the current scope but hasn't been created yet.  
-  
- This error can occur when you have stepped into the prolog of a function but not yet set up the stack frame for the function, or if you have stepped into the exit code for the function.  
-  
- Step through the prolog code until the stack frame has been set up before evaluating the expression.  
-  
- This error is identical to CAN0065.
+
+variable needs stack frame
+
+An expression contained a variable that exists within the current scope but hasn't been created yet.
+
+This error can occur when you have stepped into the prolog of a function but not yet set up the stack frame for the function, or if you have stepped into the exit code for the function.
+
+Step through the prolog code until the stack frame has been set up before evaluating the expression.
+
+This error is identical to CAN0065.

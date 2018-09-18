@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # NMAKE Fatal Error U1023
-syntax error in expression  
-  
- An expression is invalid.  
-  
- Check the allowed operators and operator precedence.
+
+syntax error in expression
+
+An expression is invalid.
+
+Check the allowed operators and operator precedence.

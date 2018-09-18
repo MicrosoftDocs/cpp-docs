@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3747
-missing default type parameter : parameter param  
-  
- Generic or template parameters with default values cannot be followed in the parameter list by parameters that do not have default values.  
-  
- The following sample generates C3747:  
-  
-```  
-// C3747.cpp  
-template <class T1 = int, class T2>   // C3747  
-struct MyStruct {};  
-```  
-  
- Possible resolution:  
-  
-```  
-// C3747b.cpp  
-// compile with: /c  
-template <class T1, class T2 = int>  
-struct MyStruct {};  
+
+missing default type parameter : parameter param
+
+Generic or template parameters with default values cannot be followed in the parameter list by parameters that do not have default values.
+
+The following sample generates C3747:
+
+```
+// C3747.cpp
+template <class T1 = int, class T2>   // C3747
+struct MyStruct {};
+```
+
+Possible resolution:
+
+```
+// C3747b.cpp
+// compile with: /c
+template <class T1, class T2 = int>
+struct MyStruct {};
 ```

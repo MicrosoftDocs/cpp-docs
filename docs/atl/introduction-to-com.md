@@ -31,6 +31,6 @@ Fundamental to COM are these concepts:
 
 ## See Also
 
-[Introduction to COM and ATL](../atl/introduction-to-com-and-atl.md)   
+[Introduction to COM and ATL](../atl/introduction-to-com-and-atl.md)<br/>
 [The Component Object Model](/windows/desktop/com/the-component-object-model)
 

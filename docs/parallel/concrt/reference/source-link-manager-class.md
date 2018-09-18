@@ -23,8 +23,8 @@ class source_link_manager;
 ```  
   
 #### Parameters  
- `_LinkRegistry`  
- The network link registry.  
+*_LinkRegistry*<br/>
+The network link registry.  
   
 ## Members  
   
@@ -78,8 +78,8 @@ void add(_EType _Link);
 ```  
   
 ### Parameters  
- `_Link`  
- A pointer to a block to be added.  
+*_Link*<br/>
+A pointer to a block to be added.  
   
 ##  <a name="begin"></a> begin 
 
@@ -104,8 +104,8 @@ bool contains(_EType _Link);
 ```  
   
 ### Parameters  
- `_Link`  
- A pointer to a block that is to be searched for in the `source_link_manager` object.  
+*_Link*<br/>
+A pointer to a block that is to be searched for in the `source_link_manager` object.  
   
 ### Return Value  
  `true` if the specified block was found, `false` otherwise.  
@@ -138,8 +138,8 @@ void register_target_block(_Inout_ ITarget<typename _Block::source_type>* _PTarg
 ```  
   
 ### Parameters  
- `_PTarget`  
- The target block holding this `source_link_manager` object.  
+*_PTarget*<br/>
+The target block holding this `source_link_manager` object.  
   
 ##  <a name="release"></a> release 
 
@@ -158,8 +158,8 @@ bool remove(_EType _Link);
 ```  
   
 ### Parameters  
- `_Link`  
- A pointer to a block to be removed, if found.  
+*_Link*<br/>
+A pointer to a block to be removed, if found.  
   
 ### Return Value  
  `true` if the link was found and removed, `false` otherwise.  
@@ -173,8 +173,8 @@ void set_bound(size_t _MaxLinks);
 ```  
   
 ### Parameters  
- `_MaxLinks`  
- The maximum number of links.  
+*_MaxLinks*<br/>
+The maximum number of links.  
   
 ##  <a name="ctor"></a> source_link_manager 
 

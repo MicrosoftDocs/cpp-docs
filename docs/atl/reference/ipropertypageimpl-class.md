@@ -22,13 +22,13 @@ This class implements `IUnknown` and provides a default implementation of the [I
 ## Syntax
 
 ```
-template<class T>  
+template<class T>
 class IPropertyPageImpl
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IPropertyPageImpl`.
 
 ## Members
@@ -275,7 +275,7 @@ void SetDirty(BOOL bDirty);
 
 ### Parameters
 
-*bDirty*  
+*bDirty*<br/>
 [in] If TRUE, the property page's state is marked as changed. Otherwise, it is marked as unchanged.
 
 ### Remarks
@@ -332,7 +332,7 @@ See [IPropertyPage::TranslateAccelerator](/windows/desktop/api/ocidl/nf-ocidl-ip
 
 ## See Also
 
-[IPropertyPage2Impl Class](../../atl/reference/ipropertypage2impl-class.md)   
-[IPerPropertyBrowsingImpl Class](../../atl/reference/iperpropertybrowsingimpl-class.md)   
-[ISpecifyPropertyPagesImpl Class](../../atl/reference/ispecifypropertypagesimpl-class.md)   
+[IPropertyPage2Impl Class](../../atl/reference/ipropertypage2impl-class.md)<br/>
+[IPerPropertyBrowsingImpl Class](../../atl/reference/iperpropertybrowsingimpl-class.md)<br/>
+[ISpecifyPropertyPagesImpl Class](../../atl/reference/ispecifypropertypagesimpl-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

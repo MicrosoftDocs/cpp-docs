@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetImpl Class
+
 Provides an implementation of the `IRowset` interface.  
   
 ## Syntax
@@ -29,20 +30,22 @@ class ATL_NO_VTABLE IRowsetImpl : public RowsetInterface
 ```  
   
 ### Parameters  
- *T*  
- Your class, derived from `IRowsetImpl`.  
+
+*T*<br/>
+Your class, derived from `IRowsetImpl`.  
   
- *RowsetInterface*  
- A class derived from `IRowsetImpl`.  
+*RowsetInterface*<br/>
+A class derived from `IRowsetImpl`.  
   
- *RowClass*  
- Storage unit for the `HROW`.  
+*RowClass*<br/>
+Storage unit for the `HROW`.  
   
- *MapClass*  
- Storage unit for all row handles held by the provider.  
+*MapClass*<br/>
+Storage unit for all row handles held by the provider.  
 
 ## Requirements  
- **Header:** atldb.h  
+
+**Header:** atldb.h  
   
 ## Members  
   
@@ -72,9 +75,11 @@ class ATL_NO_VTABLE IRowsetImpl : public RowsetInterface
 |[m_rgRowHandles](#rgrowhandles)|A list of row handles.|  
   
 ## Remarks  
- [IRowset](/previous-versions/windows/desktop/ms720986\(v=vs.85\)) is the base rowset interface.  
+
+[IRowset](/previous-versions/windows/desktop/ms720986\(v=vs.85\)) is the base rowset interface.  
 
 ## <a name="addrefrows"></a> IRowsetImpl::AddRefRows
+
 Adds a reference count to an existing row handle.  
   
 ### Syntax  
@@ -87,9 +92,11 @@ STDMETHOD(AddRefRows )(DBCOUNTITEM cRows,
 ```  
   
 #### Parameters  
- See [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="createrow"></a> IRowsetImpl::CreateRow
+
 A helper method called by [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) to allocate a new `HROW`.  
   
 ### Syntax  
@@ -101,19 +108,22 @@ HRESULT CreateRow(DBROWOFFSET lRowsOffset,
 ```  
   
 #### Parameters  
- *lRowsOffset*  
- Cursor position of the row being created.  
+
+*lRowsOffset*<br/>
+Cursor position of the row being created.  
   
- *cRowsObtained*  
- A reference passed back to the user indicating the number of rows created.  
+*cRowsObtained*<br/>
+A reference passed back to the user indicating the number of rows created.  
   
- *rgRows*  
- An array of `HROW`s returned to the caller with the newly created row handles.  
+*rgRows*<br/>
+An array of `HROW`s returned to the caller with the newly created row handles.  
   
 ### Remarks  
- If the row exists, this method calls [AddRefRows](../../data/oledb/irowsetimpl-addrefrows.md) and returns. Otherwise, it allocates a new instance of the RowClass template variable and adds it to [m_rgRowHandles](../../data/oledb/irowsetimpl-m-rgrowhandles.md).  
+
+If the row exists, this method calls [AddRefRows](../../data/oledb/irowsetimpl-addrefrows.md) and returns. Otherwise, it allocates a new instance of the RowClass template variable and adds it to [m_rgRowHandles](../../data/oledb/irowsetimpl-m-rgrowhandles.md).  
   
 ## <a name="getdata"></a> IRowsetImpl::GetData
+
 Retrieves data from the rowset's copy of the row.  
   
 ### Syntax  
@@ -125,18 +135,21 @@ STDMETHOD(GetData )(HROW hRow,
 ```  
   
 #### Parameters  
- See [IRowset::GetData](/previous-versions/windows/desktop/ms716988\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IRowset::GetData](/previous-versions/windows/desktop/ms716988\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
- Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IRowset::GetData`:  
+Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IRowset::GetData`:  
   
 |OLE DB Template parameters|*OLE DB Programmer's Reference* parameters|  
 |--------------------------------|------------------------------------------------|  
 |*pDstData*|*pData*|  
   
 ### Remarks  
- Also handles data conversion using the OLE DB data conversion DLL. 
+
+Also handles data conversion using the OLE DB data conversion DLL. 
 
 ## <a name="getdbstatus"></a> IRowsetImpl::GetDBStatus
+
 Returns the DBSTATUS status flags for the specified field.  
   
 ### Syntax  
@@ -147,6 +160,7 @@ virtual DBSTATUS GetDBStatus(RowClass* currentRow,
 ```  
   
 #### Parameters  
+
 *currentRow*<br/>
 [in] The current row.  
   
@@ -154,9 +168,11 @@ virtual DBSTATUS GetDBStatus(RowClass* currentRow,
 [in] The column for which status is being requested.  
   
 ### Return Value  
- The [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) flags for the column. 
+
+The [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) flags for the column. 
 
 ## <a name="getnextrows"></a> IRowsetImpl::GetNextRows
+
 Fetches rows sequentially, remembering the previous position.  
   
 ### Syntax  
@@ -170,9 +186,11 @@ STDMETHOD(GetNextRows )(HCHAPTER hReserved,
 ```  
   
 #### Parameters  
- See [IRowset::GetNextRows](/previous-versions/windows/desktop/ms709827\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
+
+See [IRowset::GetNextRows](/previous-versions/windows/desktop/ms709827\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="irowsetimpl"></a> IRowsetImpl::IRowsetImpl
+
 The constructor.  
   
 ### Syntax  
@@ -182,9 +200,11 @@ IRowsetImpl();
 ```  
   
 ### Remarks  
- You usually do not need to call this method directly.  
+
+You usually do not need to call this method directly.  
 
 ## <a name="refrows"></a> IRowsetImpl::RefRows
+
 Called by [AddRefRows](../../data/oledb/irowsetimpl-addrefrows.md) and [ReleaseRows](../../data/oledb/irowsetimpl-releaserows.md) to either increment or release a reference count to an existing row handle.  
   
 ### Syntax  
@@ -198,12 +218,15 @@ HRESULT RefRows(DBCOUNTITEM cRows,
 ```  
   
 #### Parameters  
- See [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
- A standard HRESULT value.  
+
+A standard HRESULT value.  
 
 ## <a name="releaserows"></a> IRowsetImpl::ReleaseRows
+
 Releases rows.  
   
 ### Syntax  
@@ -217,9 +240,11 @@ STDMETHOD(ReleaseRows )(DBCOUNTITEM cRows,
 ```  
   
 #### Parameters  
- See [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="restartposition"></a> IRowsetImpl::RestartPosition
+
 Repositions the next fetch position to its initial position; that is, its position when the rowset was first created.  
   
 ### Syntax  
@@ -229,12 +254,15 @@ STDMETHOD(RestartPosition )(HCHAPTER /* hReserved */);
 ```  
   
 #### Parameters  
- See [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
- The rowset position is undefined until `GetNextRow` is called. You can move backwards in a rowet by calling `RestartPosition` and then fetching or scrolling backwards.  
+
+The rowset position is undefined until `GetNextRow` is called. You can move backwards in a rowet by calling `RestartPosition` and then fetching or scrolling backwards.  
 
 ## <a name="setdbstatus"></a> IRowsetImpl::SetDBStatus
+
 Sets the DBSTATUS status flags for the specified field.  
   
 ### Syntax  
@@ -246,22 +274,26 @@ virtual HRESULT SetDBStatus(DBSTATUS* statusFlags,
 ```  
   
 #### Parameters  
- *statusFlags*  
- The [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) flags to set for the column.  
+
+*statusFlags*<br/>
+The [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) flags to set for the column.  
   
- *currentRow*  
- The current row.  
+*currentRow*<br/>
+The current row.  
   
- *columnInfo*  
- The column for which status is being set.  
+*columnInfo*<br/>
+The column for which status is being set.  
   
 ### Return Value  
- A standard HRESULT value.  
+
+A standard HRESULT value.  
   
 ### Remarks  
- The provider overrides this function to provide special processing for DBSTATUS_S_ISNULL and DBSTATUS_S_DEFAULT. 
+
+The provider overrides this function to provide special processing for DBSTATUS_S_ISNULL and DBSTATUS_S_DEFAULT. 
 
 ## <a name="bcanfetchback"></a> IRowsetImpl::m_bCanFetchBack
+
 Indicates whether a provider supports backward fetching.  
   
 ### Syntax  
@@ -271,9 +303,11 @@ unsigned m_bCanFetchBack:1;
 ```  
   
 ### Remarks  
- Linked to the `DBPROP_CANFETCHBACKWARDS` property in the `DBPROPSET_ROWSET` group. The provider must support `DBPROP_CANFETCHBACKWARDS` for `m_bCanFetchBackwards` to be **true**.  
+
+Linked to the `DBPROP_CANFETCHBACKWARDS` property in the `DBPROPSET_ROWSET` group. The provider must support `DBPROP_CANFETCHBACKWARDS` for `m_bCanFetchBackwards` to be **true**.  
 
 ## <a name="bcanscrollback"></a> IRowsetImpl::m_bCanScrollBack
+
 Indicates whether a provider can have its cursor scroll backwards.  
   
 ### Syntax  
@@ -283,9 +317,11 @@ unsigned  m_bCanScrollBack:1;
 ```  
   
 ### Remarks  
- Linked to the `DBPROP_CANSCROLLBACKWARDS` property in the `DBPROPSET_ROWSET` group. The provider must support `DBPROP_CANSCROLLBACKWARDS` for `m_bCanFetchBackwards` to be **true**. 
+
+Linked to the `DBPROP_CANSCROLLBACKWARDS` property in the `DBPROPSET_ROWSET` group. The provider must support `DBPROP_CANSCROLLBACKWARDS` for `m_bCanFetchBackwards` to be **true**. 
 
 ## <a name="breset"></a> IRowsetImpl::m_bReset
+
 A bit flag used to determine if the cursor position is defined on the rowset.  
   
 ### Syntax  
@@ -295,9 +331,11 @@ unsigned m_bReset:1;
 ```  
   
 ### Remarks  
- If the consumer calls [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) with a negative `lOffset` or *cRows* and `m_bReset` is true, `GetNextRows` moves to the end of the rowset. If `m_bReset` is false, the consumer receives an error code, in conformance with the OLE DB specification. The `m_bReset` flag gets set to **true** when the rowset is first created and when the consumer calls [IRowsetImpl::RestartPosition](../../data/oledb/irowsetimpl-restartposition.md). It gets set to **false** when you call `GetNextRows`. 
+
+If the consumer calls [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) with a negative `lOffset` or *cRows* and `m_bReset` is true, `GetNextRows` moves to the end of the rowset. If `m_bReset` is false, the consumer receives an error code, in conformance with the OLE DB specification. The `m_bReset` flag gets set to **true** when the rowset is first created and when the consumer calls [IRowsetImpl::RestartPosition](../../data/oledb/irowsetimpl-restartposition.md). It gets set to **false** when you call `GetNextRows`. 
 
 ## <a name="irowset"></a> IRowsetImpl::m_iRowset
+
 An index to the rowset, representing the cursor.  
   
 ### Syntax  
@@ -307,6 +345,7 @@ DBROWOFFSET m_iRowset;
 ```  
 
 ## <a name="rgrowhandles"></a> IRowsetImpl::m_rgRowHandles
+
 A map of row handles currently contained by the provider in response to `GetNextRows`.  
   
 ### Syntax  
@@ -316,9 +355,11 @@ MapClass m_rgRowHandles;
 ```  
   
 ### Remarks  
- Row handles are removed by calling `ReleaseRows`. See the [IRowsetImpl overview](../../data/oledb/irowsetimpl-class.md) for the definition of *MapClass*.  
+
+Row handles are removed by calling `ReleaseRows`. See the [IRowsetImpl overview](../../data/oledb/irowsetimpl-class.md) for the definition of *MapClass*.  
 
 ## See Also  
- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)    
- [CSimpleRow Class](../../data/oledb/csimplerow-class.md)
+
+[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
+[CSimpleRow Class](../../data/oledb/csimplerow-class.md)

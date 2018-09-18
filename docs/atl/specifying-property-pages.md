@@ -37,6 +37,6 @@ The following class for a calendar control uses the `ISpecifyPropertyPages` inte
 
 ## See Also
 
-[Property Pages](../atl/atl-com-property-pages.md)   
+[Property Pages](../atl/atl-com-property-pages.md)<br/>
 [ATLPages Sample](../visual-cpp-samples.md)
 

@@ -13,18 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2162
-expected macro formal parameter  
-  
- The token following a stringizing operator (#) is not a formal parameter name.  
-  
-## Example  
- The following sample generates C2162:  
-  
-```  
-// C2162.cpp  
-// compile with: /c  
-#include <stdio.h>  
-  
-#define print(a) printf_s(b)   // OK  
-#define print(a) printf_s(#b)    // C2162  
+
+expected macro formal parameter
+
+The token following a stringizing operator (#) is not a formal parameter name.
+
+## Example
+
+The following sample generates C2162:
+
+```
+// C2162.cpp
+// compile with: /c
+#include <stdio.h>
+
+#define print(a) printf_s(b)   // OK
+#define print(a) printf_s(#b)    // C2162
 ```

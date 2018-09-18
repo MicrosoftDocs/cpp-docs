@@ -121,6 +121,6 @@ In the next step, you will add an event.
 
 ## See Also
 
-[Tutorial](../atl/active-template-library-atl-tutorial.md)   
+[Tutorial](../atl/active-template-library-atl-tutorial.md)<br/>
 [Testing Properties and Events with Test Container](../mfc/testing-properties-and-events-with-test-container.md)
 

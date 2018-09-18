@@ -13,29 +13,30 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1022
-expected #endif  
-  
- An `#if`, `#ifdef`, or `#ifndef` directive has no matching `#endif` directive. Be sure each `#if`, `#ifdef`, or `#ifndef` has a matching `#endif`.  
-  
- The following sample generates C1022:  
-  
-```  
-// C1022.cpp  
-#define true 1  
-  
-#if (true)  
-#else   
-#else    // C1022  
-```  
-  
- Possible resolution:  
-  
-```  
-// C1022b.cpp  
-// compile with: /c  
-#define true 1  
-  
-#if (true)  
-#else   
-#endif  
+
+expected #endif
+
+An `#if`, `#ifdef`, or `#ifndef` directive has no matching `#endif` directive. Be sure each `#if`, `#ifdef`, or `#ifndef` has a matching `#endif`.
+
+The following sample generates C1022:
+
+```
+// C1022.cpp
+#define true 1
+
+#if (true)
+#else
+#else    // C1022
+```
+
+Possible resolution:
+
+```
+// C1022b.cpp
+// compile with: /c
+#define true 1
+
+#if (true)
+#else
+#endif
 ```

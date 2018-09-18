@@ -23,8 +23,8 @@ class ordered_message_processor : public message_processor<T>;
 ```  
   
 #### Parameters  
- `T`  
- The payload type of messages handled by the processor.  
+*T*<br/>
+The payload type of messages handled by the processor.  
   
 ## Members  
   
@@ -76,8 +76,8 @@ virtual void async_send(_Inout_opt_ message<T>* _Msg);
 ```  
   
 ### Parameters  
- `_Msg`  
- A pointer to a message.  
+*_Msg*<br/>
+A pointer to a message.  
   
 ##  <a name="initialize"></a> initialize 
 
@@ -91,14 +91,14 @@ void initialize(
 ```  
   
 ### Parameters  
- `_PScheduler`  
- A pointer to the scheduler to be used for scheduling light-weight tasks.  
+*_PScheduler*<br/>
+A pointer to the scheduler to be used for scheduling light-weight tasks.  
   
- `_PScheduleGroup`  
- A pointer to the schedule group to be used for scheduling light-weight tasks.  
+*_PScheduleGroup*<br/>
+A pointer to the schedule group to be used for scheduling light-weight tasks.  
   
- `_Handler`  
- The handler functor invoked during callback.  
+*_Handler*<br/>
+The handler functor invoked during callback.  
   
 ##  <a name="initialize_batched_processing"></a> initialize_batched_processing 
 
@@ -111,11 +111,11 @@ virtual void initialize_batched_processing(
 ```  
   
 ### Parameters  
- `_Processor`  
- The processor functor invoked during callback.  
+*_Processor*<br/>
+The processor functor invoked during callback.  
   
- `_Propagator`  
- The propagator functor invoked during callback.  
+*_Propagator*<br/>
+The propagator functor invoked during callback.  
   
 ##  <a name="ctor"></a> ordered_message_processor 
 
@@ -156,8 +156,8 @@ virtual void sync_send(_Inout_opt_ message<T>* _Msg);
 ```  
   
 ### Parameters  
- `_Msg`  
- A pointer to a message.  
+*_Msg*<br/>
+A pointer to a message.  
   
 ##  <a name="wait"></a> wait 
 

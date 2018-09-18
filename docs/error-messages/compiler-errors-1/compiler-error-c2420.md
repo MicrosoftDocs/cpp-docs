@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2420
-'identifier' : illegal symbol in context  
-  
- The identifier is invalid in this context.
+
+'identifier' : illegal symbol in context
+
+The identifier is invalid in this context.

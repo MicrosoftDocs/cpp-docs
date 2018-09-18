@@ -22,22 +22,22 @@ This class represents a mapping structure that allows each key can be associated
 template<typename K,
          typename V, 
          class KTraits = CElementTraits<K>, 
-         class VTraits = CElementTraits<V>>  
+         class VTraits = CElementTraits<V>>
 class CRBMultiMap : public CRBTree<K, V, KTraits, VTraits>
 ```
 
 #### Parameters
 
-*K*  
+*K*<br/>
 The key element type.
 
-*V*  
+*V*<br/>
 The value element type.
 
-*KTraits*  
+*KTraits*<br/>
 The code used to copy or move key elements. See [CElementTraits Class](../../atl/reference/celementtraits-class.md) for more details.
 
-*VTraits*  
+*VTraits*<br/>
 The code used to copy or move value elements.
 
 ## Members
@@ -93,7 +93,7 @@ explicit CRBMultiMap(size_t nBlockSize = 10) throw();
 
 ### Parameters
 
-*nBlockSize*  
+*nBlockSize*<br/>
 The block size.
 
 ### Remarks
@@ -130,7 +130,7 @@ POSITION FindFirstWithKey(KINARGTYPE key) const throw();
 
 ### Parameters
 
-*key*  
+*key*<br/>
 Specifies the key that identifies the element to be found.
 
 ### Return Value
@@ -162,10 +162,10 @@ V& GetNextValueWithKey(
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position value, obtained with either a call to [CRBMultiMap::FindFirstWithKey](#findfirstwithkey) or [CRBMultiMap::GetNextWithKey](#getnextwithkey), or a previous call to `GetNextValueWithKey`.
 
-*key*  
+*key*<br/>
 Specifies the key that identifies the element to be found.
 
 ### Return Value
@@ -197,10 +197,10 @@ CPair* GetNextWithKey(
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position value, obtained with either a call to [CRBMultiMap::FindFirstWithKey](#findfirstwithkey) or [CRBMultiMap::GetNextValueWithKey](#getnextvaluewithkey), or a previous call to `GetNextWithKey`.
 
-*key*  
+*key*<br/>
 Specifies the key that identifies the element to be found.
 
 ### Return Value
@@ -223,10 +223,10 @@ POSITION Insert(KINARGTYPE key, VINARGTYPE value) throw(...);
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key value to add to the `CRBMultiMap` object.
 
-*value*  
+*value*<br/>
 The value to add to the `CRBMultiMap` object, associated with *key*.
 
 ### Return Value
@@ -251,7 +251,7 @@ size_t RemoveKey(KINARGTYPE key) throw();
 
 ### Parameters
 
-*key*  
+*key*<br/>
 Specifies the key that identifies the element(s) to be deleted.
 
 ### Return Value
@@ -270,7 +270,7 @@ See the example for [CRBMultiMap::CRBMultiMap](#crbmultimap).
 
 ## See Also
 
-[CRBTree Class](../../atl/reference/crbtree-class.md)   
-[CAtlMap Class](../../atl/reference/catlmap-class.md)   
-[CRBMap Class](../../atl/reference/crbmap-class.md)   
+[CRBTree Class](../../atl/reference/crbtree-class.md)<br/>
+[CAtlMap Class](../../atl/reference/catlmap-class.md)<br/>
+[CRBMap Class](../../atl/reference/crbmap-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

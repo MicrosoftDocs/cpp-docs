@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2267
-'function' : static functions with block scope are illegal  
-  
- A local function is declared `static`. Static functions must have global scope.  
-  
- The following sample generates C2267:  
-  
-```  
-// C2267.cpp  
-static int func2();   // OK  
-int main() {  
-    static int func1();   // C2267  
-}  
+
+'function' : static functions with block scope are illegal
+
+A local function is declared `static`. Static functions must have global scope.
+
+The following sample generates C2267:
+
+```
+// C2267.cpp
+static int func2();   // OK
+int main() {
+    static int func1();   // C2267
+}
 ```

@@ -21,11 +21,10 @@ Specifies that one or more variables should be shared among all threads.
 shared(var)  
 ```  
   
-## Remarks  
- where,  
+### Parameters
   
- `var`  
- One or more variables to share. If more than one variable is specified, separate variable names with a comma.  
+*var*<br/>
+One or more variables to share. If more than one variable is specified, separate variable names with a comma.  
   
 ## Remarks  
  Another way to share variables among threads is with the [copyprivate](../../../parallel/openmp/reference/copyprivate.md) clause.  

@@ -31,11 +31,11 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
 ```  
   
 #### Parameters  
- `value_type`  
- The type of the elements in the texture.  
+*value_type*<br/>
+The type of the elements in the texture.  
   
- `_Rank`  
- The rank of the texture.  
+*_Rank*<br/>
+The rank of the texture.  
   
 ## Members  
   
@@ -99,8 +99,8 @@ writeonly_texture_view<value_type, _Rank>& operator= (
 ```  
   
 ### Parameters  
- `_Other`  
- `writeonly_texture_view` object to copy from.  
+*_Other*<br/>
+`writeonly_texture_view` object to copy from.  
   
 ### Return Value  
  A reference to this `writeonly_texture_view` object.  
@@ -124,11 +124,11 @@ void set(
 ```  
   
 ### Parameters  
- `_Index`  
- The index of the element.  
+*_Index*<br/>
+The index of the element.  
   
- `value`  
- The new value of the element.  
+*value*<br/>
+The new value of the element.  
   
 ##  <a name="ctor"></a> writeonly_texture_view 
 
@@ -146,14 +146,14 @@ writeonly_texture_view(
 ```  
   
 ### Parameters  
- `_Rank`  
- The rank of the texture.  
+*_Rank*<br/>
+The rank of the texture.  
   
- `value_type`  
- The type of the elements in the texture.  
+*value_type*<br/>
+The type of the elements in the texture.  
   
- `_Src`  
- The texture that is used to create the `writeonly_texture_view`.  
+*_Src*<br/>
+The texture that is used to create the `writeonly_texture_view`.  
   
 ## See Also  
  [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

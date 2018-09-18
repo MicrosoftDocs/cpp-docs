@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2957
-'delim' : invalid left delimiter : expected '<'  
-  
- A generic class was ill formed.  
-  
- The following sample generates C2957:  
-  
-```  
-// C2957.cpp  
-// compile with: /clr /LD  
-generic << class T>   // C2957  
-// try the following line instead  
-// generic < class T>  
-gc class C {};  
+
+'delim' : invalid left delimiter : expected '<'
+
+A generic class was ill formed.
+
+The following sample generates C2957:
+
+```
+// C2957.cpp
+// compile with: /clr /LD
+generic << class T>   // C2957
+// try the following line instead
+// generic < class T>
+gc class C {};
 ```

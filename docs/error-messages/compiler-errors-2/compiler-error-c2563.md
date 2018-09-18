@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2563
-mismatch in formal parameter list  
-  
- The formal parameter list of a function (or a pointer to a function) does not match those of another function (or pointer to a member function). As a result, the assignment of functions or pointers cannot be made.  
-  
- The following sample generates C2563:  
-  
-```  
-// C2563.cpp  
-void func( int );  
-void func( int, int );  
-int main() {  
-   void *fp();  
-   fp = func;   // C2563  
-}  
+
+mismatch in formal parameter list
+
+The formal parameter list of a function (or a pointer to a function) does not match those of another function (or pointer to a member function). As a result, the assignment of functions or pointers cannot be made.
+
+The following sample generates C2563:
+
+```
+// C2563.cpp
+void func( int );
+void func( int, int );
+int main() {
+   void *fp();
+   fp = func;   // C2563
+}
 ```

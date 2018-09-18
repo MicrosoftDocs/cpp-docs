@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Creating a UWP app using WRL and Media Foundation | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/17/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -91,7 +91,7 @@ In most cases, you can use C++/CX to create Windows Runtime). However, sometimes
 
    1. Under **Input**, for the **Module Definition File**, specify `GrayScaleTransform.def`.
 
-   2. Also under **Input**, add `runtimeobject.lib`, `mfuuid.lib`, and `mfplatf.lib` to the **Additional Dependencies** property.
+   2. Also under **Input**, add `runtimeobject.lib`, `mfuuid.lib`, and `mfplat.lib` to the **Additional Dependencies** property.
 
    3. Under **Windows Metadata**, set **Generate Windows Metadata** to **Yes (/WINMD)**.
 

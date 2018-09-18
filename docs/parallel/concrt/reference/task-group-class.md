@@ -114,17 +114,17 @@ void run(
 ```  
   
 ### Parameters  
- `_Function`  
- The type of the function object that will be invoked to execute the body of the task handle.  
+*_Function*<br/>
+The type of the function object that will be invoked to execute the body of the task handle.  
   
- `_Func`  
- A function which will be called to invoke the body of the task. This may be a lambda expression or other object which supports a version of the function call operator with the signature `void operator()()`.  
+*_Func*<br/>
+A function which will be called to invoke the body of the task. This may be a lambda expression or other object which supports a version of the function call operator with the signature `void operator()()`.  
   
- `_Placement`  
- A reference to the location where the task represented by the `_Func` parameter should execute.  
+*_Placement*<br/>
+A reference to the location where the task represented by the `_Func` parameter should execute.  
   
- `_Task_handle`  
- A handle to the work being scheduled. Note that the caller has responsibility for the lifetime of this object. The runtime will continue to expect it to live until either the `wait` or `run_and_wait` method has been called on this `task_group` object.  
+*_Task_handle*<br/>
+A handle to the work being scheduled. Note that the caller has responsibility for the lifetime of this object. The runtime will continue to expect it to live until either the `wait` or `run_and_wait` method has been called on this `task_group` object.  
   
 ### Remarks  
  The runtime schedules the provided work function to run at a later time, which can be after the calling function returns. This method uses a [task_handle](task-handle-class.md) object to hold a copy of the provided work function. Therefore, any state changes that occur in a function object that you pass to this method will not appear in your copy of that function object. In addition, make sure that the lifetime of any objects that you pass by pointer or by reference to the work function remain valid until the work function returns.  
@@ -154,14 +154,14 @@ task_group_status run_and_wait(
 ```  
   
 ### Parameters  
- `_Function`  
- The type of the function object that will be invoked to execute the body of the task.  
+*_Function*<br/>
+The type of the function object that will be invoked to execute the body of the task.  
   
- `_Task_handle`  
- A handle to the task which will be run inline on the calling context. Note that the caller has responsibility for the lifetime of this object. The runtime will continue to expect it to live until the `run_and_wait` method finishes execution.  
+*_Task_handle*<br/>
+A handle to the task which will be run inline on the calling context. Note that the caller has responsibility for the lifetime of this object. The runtime will continue to expect it to live until the `run_and_wait` method finishes execution.  
   
- `_Func`  
- A function which will be called to invoke the body of the work. This may be a lambda expression or other object which supports a version of the function call operator with the signature `void operator()()`.  
+*_Func*<br/>
+A function which will be called to invoke the body of the work. This may be a lambda expression or other object which supports a version of the function call operator with the signature `void operator()()`.  
   
 ### Return Value  
  An indication of whether the wait was satisfied or the task group was canceled, due to either an explicit cancel operation or an exception being thrown from one of its tasks. For more information, see [task_group_status](concurrency-namespace-enums.md#task_group_status).  
@@ -189,8 +189,8 @@ task_group(
 ```  
   
 ### Parameters  
- `_CancellationToken`  
- A cancellation token to associate with this task group. The task group will be canceled when the token is canceled.  
+*_CancellationToken*<br/>
+A cancellation token to associate with this task group. The task group will be canceled when the token is canceled.  
   
 ### Remarks  
  The constructor that takes a cancellation token creates a `task_group` that will be canceled when the source associated with the token is canceled. Providing an explicit cancellation token also isolates this task group from participating in an implicit cancellation from a parent group with a different token or no token.  

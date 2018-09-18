@@ -22,8 +22,8 @@ The \<example> tag lets you specify an example of how to use a method or other l
 ```  
   
 #### Parameters  
- `description`  
- A description of the code sample.  
+*description*<br/>
+A description of the code sample.  
   
 ## Remarks  
  Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.  
