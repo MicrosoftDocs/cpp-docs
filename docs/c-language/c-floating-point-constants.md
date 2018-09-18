@@ -12,62 +12,65 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # C Floating-Point Constants
-A "floating-point constant" is a decimal number that represents a signed real number. The representation of a signed real number includes an integer portion, a fractional portion, and an exponent. Use floating-point constants to represent floating-point values that cannot be changed.  
-  
-## Syntax  
- *floating-point-constant*:  
- &nbsp;&nbsp; *fractional-constant exponent-part*<sub>opt</sub> *floating-suffix*<sub>opt</sub>  
- &nbsp;&nbsp; *digit-sequence exponent-part floating-suffix*<sub>opt</sub>  
-  
- *fractional-constant*:  
- &nbsp;&nbsp; *digit-sequence*<sub>opt</sub> **.** *digit-sequence*  
- &nbsp;&nbsp; *digit-sequence*  **.**  
-  
- *exponent-part*:  
- &nbsp;&nbsp; **e**  *sign*<sub>opt</sub> *digit-sequence*  
- &nbsp;&nbsp; **E**  *sign*<sub>opt</sub> *digit-sequence*  
-  
- *sign* : one of  
- &nbsp;&nbsp; **+ -**  
-  
- *digit-sequence*:  
- &nbsp;&nbsp; *digit*  
- &nbsp;&nbsp; *digit-sequence digit*  
-  
- *floating-suffix* : one of  
- &nbsp;&nbsp; **f l F L**  
-  
- You can omit either the digits before the decimal point (the integer portion of the value) or the digits after the decimal point (the fractional portion), but not both. You can leave out the decimal point only if you include an exponent. No white-space characters can separate the digits or characters of the constant.  
-  
- The following examples illustrate some forms of floating-point constants and expressions:  
-  
-```  
-15.75  
-1.575E1   /* = 15.75   */  
-1575e-2   /* = 15.75   */  
--2.5e-3   /* = -0.0025 */  
-25E-4     /* =  0.0025 */  
-```  
-  
- Floating-point constants are positive unless they are preceded by a minus sign (**-**). In this case, the minus sign is treated as a unary arithmetic negation operator. Floating-point constants have type `float`, `double`, or `long double`.  
-  
- A floating-point constant without an **f**, **F**, **l**, or **L** suffix has type `double`. If the letter **f** or **F** is the suffix, the constant has type `float`. If suffixed by the letter **l** or **L**, it has type `long double`. For example:  
-  
-```  
-100L  /* Has type long double  */  
-100F  /* Has type float        */  
-```  
-  
- Note that the Microsoft C compiler internally represents `long double` the same as type `double`. See [Storage of Basic Types](../c-language/storage-of-basic-types.md) for information about type `double`, `float`, and `long double`.  
-  
- You can omit the integer portion of the floating-point constant, as shown in the following examples. The number .75 can be expressed in many ways, including the following:  
-  
-```  
-.0075e2  
-0.075e1  
-.075e1  
-75e-2  
-```  
-  
-## See Also  
- [C Constants](../c-language/c-constants.md)
+
+A "floating-point constant" is a decimal number that represents a signed real number. The representation of a signed real number includes an integer portion, a fractional portion, and an exponent. Use floating-point constants to represent floating-point values that cannot be changed.
+
+## Syntax
+
+*floating-point-constant*:
+&nbsp;&nbsp; *fractional-constant exponent-part*<sub>opt</sub> *floating-suffix*<sub>opt</sub>
+&nbsp;&nbsp; *digit-sequence exponent-part floating-suffix*<sub>opt</sub>
+
+*fractional-constant*:
+&nbsp;&nbsp; *digit-sequence*<sub>opt</sub> **.** *digit-sequence*
+&nbsp;&nbsp; *digit-sequence*  **.**
+
+*exponent-part*:
+&nbsp;&nbsp; **e**  *sign*<sub>opt</sub> *digit-sequence*
+&nbsp;&nbsp; **E**  *sign*<sub>opt</sub> *digit-sequence*
+
+*sign* : one of
+&nbsp;&nbsp; **+ -**
+
+*digit-sequence*:
+&nbsp;&nbsp; *digit*
+&nbsp;&nbsp; *digit-sequence digit*
+
+*floating-suffix* : one of
+&nbsp;&nbsp; **f l F L**
+
+You can omit either the digits before the decimal point (the integer portion of the value) or the digits after the decimal point (the fractional portion), but not both. You can leave out the decimal point only if you include an exponent. No white-space characters can separate the digits or characters of the constant.
+
+The following examples illustrate some forms of floating-point constants and expressions:
+
+```
+15.75
+1.575E1   /* = 15.75   */
+1575e-2   /* = 15.75   */
+-2.5e-3   /* = -0.0025 */
+25E-4     /* =  0.0025 */
+```
+
+Floating-point constants are positive unless they are preceded by a minus sign (**-**). In this case, the minus sign is treated as a unary arithmetic negation operator. Floating-point constants have type `float`, `double`, or `long double`.
+
+A floating-point constant without an **f**, **F**, **l**, or **L** suffix has type `double`. If the letter **f** or **F** is the suffix, the constant has type `float`. If suffixed by the letter **l** or **L**, it has type `long double`. For example:
+
+```
+100L  /* Has type long double  */
+100F  /* Has type float        */
+```
+
+Note that the Microsoft C compiler internally represents `long double` the same as type `double`. See [Storage of Basic Types](../c-language/storage-of-basic-types.md) for information about type `double`, `float`, and `long double`.
+
+You can omit the integer portion of the floating-point constant, as shown in the following examples. The number .75 can be expressed in many ways, including the following:
+
+```
+.0075e2
+0.075e1
+.075e1
+75e-2
+```
+
+## See Also
+
+[C Constants](../c-language/c-constants.md)

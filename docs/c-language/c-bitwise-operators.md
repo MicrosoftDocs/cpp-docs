@@ -17,16 +17,16 @@ The bitwise operators perform bitwise-AND (**&**), bitwise-exclusive-OR (**^**),
 
 ## Syntax
 
-*AND-expression*:  
-&nbsp;&nbsp;*equality-expression*  
+*AND-expression*:
+&nbsp;&nbsp;*equality-expression*
 &nbsp;&nbsp;*AND-expression* **&** *equality-expression*
 
-*exclusive-OR-expression*:  
-&nbsp;&nbsp;*AND-expression*  
+*exclusive-OR-expression*:
+&nbsp;&nbsp;*AND-expression*
 &nbsp;&nbsp;*exclusive-OR-expression* **^** *AND-expression*
 
-*inclusive-OR-expression*:  
-&nbsp;&nbsp;*exclusive-OR-expression*  
+*inclusive-OR-expression*:
+&nbsp;&nbsp;*exclusive-OR-expression*
 &nbsp;&nbsp;*inclusive-OR-expression* &#124; *exclusive-OR-expression*
 
 The operands of bitwise operators must have integral types, but their types can be different. These operators perform the usual arithmetic conversions; the type of the result is the type of the operands after conversion.
@@ -78,6 +78,6 @@ The result of the bitwise AND is 96 decimal.
 
 ## See also
 
-[Bitwise AND Operator: &](../cpp/bitwise-and-operator-amp.md)  
-[Bitwise Exclusive OR Operator: ^](../cpp/bitwise-exclusive-or-operator-hat.md)  
-[Bitwise Inclusive OR Operator: &#124;](../cpp/bitwise-inclusive-or-operator-pipe.md)  
+[Bitwise AND Operator: &](../cpp/bitwise-and-operator-amp.md)<br/>
+[Bitwise Exclusive OR Operator: ^](../cpp/bitwise-exclusive-or-operator-hat.md)<br/>
+[Bitwise Inclusive OR Operator: &#124;](../cpp/bitwise-inclusive-or-operator-pipe.md)

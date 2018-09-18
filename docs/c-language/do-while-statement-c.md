@@ -18,7 +18,7 @@ The *do-while* statement lets you repeat a statement or compound statement until
 
 ## Syntax
 
-*iteration-statement*:  
+*iteration-statement*:
 &nbsp;&nbsp;&nbsp;&nbsp;**do**  *statement*  **while (**  *expression*  **) ;**
 
 The *expression* in a *do-while* statement is evaluated after the body of the loop is executed. Therefore, the body of the loop is always executed at least once.
@@ -35,10 +35,10 @@ This is an example of the *do-while* statement:
 
 ```C
 do
-{  
-    y = f( x );  
-    x--;  
-} while ( x > 0 );  
+{
+    y = f( x );
+    x--;
+} while ( x > 0 );
 ```
 
 In this *do-while* statement, the two statements `y = f( x );` and `x--;` are executed, regardless of the initial value of `x`. Then `x > 0` is evaluated. If `x` is greater than 0, the statement body is executed again and `x > 0` is reevaluated. The statement body is executed repeatedly as long as `x` remains greater than 0. Execution of the *do-while* statement terminates when `x` becomes 0 or negative. The body of the loop is executed at least once.

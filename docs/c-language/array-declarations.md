@@ -36,9 +36,9 @@ An "array declaration" names the array and specifies the type of its elements. I
 
 Because *constant-expression* is optional, the syntax has two forms:
 
--   The first form defines an array variable. The *constant-expression* argument within the brackets specifies the number of elements in the array. The *constant-expression*, if present, must have integral type, and a value larger than zero. Each element has the type given by *type-specifier*, which can be any type except `void`. An array element cannot be a function type.
+- The first form defines an array variable. The *constant-expression* argument within the brackets specifies the number of elements in the array. The *constant-expression*, if present, must have integral type, and a value larger than zero. Each element has the type given by *type-specifier*, which can be any type except `void`. An array element cannot be a function type.
 
--   The second form declares a variable that has been defined elsewhere. It omits the *constant-expression* argument in brackets, but not the brackets. You can use this form only if you previously have initialized the array, declared it as a parameter, or declared it as a reference to an array explicitly defined elsewhere in the program.
+- The second form declares a variable that has been defined elsewhere. It omits the *constant-expression* argument in brackets, but not the brackets. You can use this form only if you previously have initialized the array, declared it as a parameter, or declared it as a reference to an array explicitly defined elsewhere in the program.
 
 In both forms, *direct-declarator* names the variable and can modify the variable's type. The brackets (**[ ]**) following *direct-declarator* modify the declarator to an array type.
 
@@ -63,6 +63,7 @@ The three columns of the first row are stored first, followed by the three colum
 To refer to an individual element of an array, use a subscript expression, as described in [Postfix Operators](../c-language/postfix-operators.md).
 
 ## Examples
+
 These examples illustrate array declarations:
 
 ```C

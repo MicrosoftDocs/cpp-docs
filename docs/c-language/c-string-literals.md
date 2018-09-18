@@ -17,16 +17,16 @@ A "string literal" is a sequence of characters from the source character set enc
 
 ## Syntax
 
-*string-literal*:  
-&nbsp;&nbsp;&nbsp;&nbsp;**"** *s-char-sequence*<sub>opt</sub> **"**  
+*string-literal*:
+&nbsp;&nbsp;&nbsp;&nbsp;**"** *s-char-sequence*<sub>opt</sub> **"**
 &nbsp;&nbsp;&nbsp;&nbsp;**L"** *s-char-sequence*<sub>opt</sub> **"**
 
-*s-char-sequence*:  
-&nbsp;&nbsp;&nbsp;&nbsp;*s-char*  
+*s-char-sequence*:
+&nbsp;&nbsp;&nbsp;&nbsp;*s-char*
 &nbsp;&nbsp;&nbsp;&nbsp;*s-char-sequence* *s-char*
 
-*s-char*:  
-&nbsp;&nbsp;&nbsp;&nbsp;any member of the source character set except the double quotation mark ("), backslash (\\), or newline character  
+*s-char*:
+&nbsp;&nbsp;&nbsp;&nbsp;any member of the source character set except the double quotation mark ("), backslash (\\), or newline character
 &nbsp;&nbsp;&nbsp;&nbsp;*escape-sequence*
 
 ## Remarks
@@ -41,4 +41,4 @@ All escape codes listed in the [Escape Sequences](../c-language/escape-sequences
 
 ## See Also
 
-[Elements of C](../c-language/elements-of-c.md)  
+[Elements of C](../c-language/elements-of-c.md)
