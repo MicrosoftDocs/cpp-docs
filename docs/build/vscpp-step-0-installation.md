@@ -2,7 +2,7 @@
 title: Install C++ support in Visual Studio 2017 | Microsoft Docs
 description: "Install Visual Studio support for Visual C++"
 ms.custom: "mvc"
-ms.date: "06/21/2018"
+ms.date: "09/17/2018"
 ms.topic: "tutorial"
 ms.technology: ["devlang-C++"]
 ms.devlang: "C++"
@@ -28,7 +28,7 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
 ## Visual Studio 2015 Installation
 
-To install Visual Studio 2015, go to [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Run the setup program and choose **Custom installation** and then choose the C++ component.
+To install Visual Studio 2015, go to [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Run the setup program and choose **Custom installation** and then choose the C++ component. To add C++ support to an existing Visual Studio 2015 installation, go to **Add Remove Programs** in the Windows Start menu. Double-click on Visual Studio 2015, then choose **Modify** and select the Visual C++ components to install.
 
 In general, we highly recommend that you use Visual Studio 2017 even if you need to compile your code using the Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
 
