@@ -26,7 +26,7 @@ The (optional) *declarator* is the name by which the member is accessed in the p
 > [!NOTE]
 > An unnamed bit field of width 0 forces alignment of the next bit field to the next **type** boundary, where **type** is the type of the member.
 
- The following example declares a structure that contains bit fields:
+The following example declares a structure that contains bit fields:
 
 ```cpp
 // bit_fields1.cpp
@@ -84,4 +84,5 @@ The following list details erroneous operations on bit fields:
 - Initializing a non-**const** reference with a bit field.
 
 ## See also
- [Classes and Structs](../cpp/classes-and-structs-cpp.md)
+
+[Classes and Structs](../cpp/classes-and-structs-cpp.md)

@@ -13,30 +13,34 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # _variant_t::ChangeType
-**Microsoft Specific**  
-  
- Changes the type of the `_variant_t` object to the indicated `VARTYPE`.  
-  
-## Syntax  
-  
-```  
-void ChangeType(  
-   VARTYPE vartype,  
-   const _variant_t* pSrc = NULL   
-);  
-```  
-  
-#### Parameters  
- *vartype*  
- The `VARTYPE` for this `_variant_t` object.  
-  
- *pSrc*  
- A pointer to the `_variant_t` object to be converted. If this value is NULL, conversion is done in place.  
-  
-## Remarks  
- This member function converts a `_variant_t` object into the indicated `VARTYPE`. If *pSrc* is NULL, the conversion is done in place, otherwise this `_variant_t` object is copied from *pSrc* and then converted.  
-  
- **END Microsoft Specific**  
-  
-## See also  
- [_variant_t Class](../cpp/variant-t-class.md)
+
+**Microsoft Specific**
+
+Changes the type of the `_variant_t` object to the indicated `VARTYPE`.
+
+## Syntax
+
+```
+void ChangeType(
+   VARTYPE vartype,
+   const _variant_t* pSrc = NULL
+);
+```
+
+#### Parameters
+
+*vartype*<br/>
+The `VARTYPE` for this `_variant_t` object.
+
+*pSrc*<br/>
+A pointer to the `_variant_t` object to be converted. If this value is NULL, conversion is done in place.
+
+## Remarks
+
+This member function converts a `_variant_t` object into the indicated `VARTYPE`. If *pSrc* is NULL, the conversion is done in place, otherwise this `_variant_t` object is copied from *pSrc* and then converted.
+
+**END Microsoft Specific**
+
+## See also
+
+[_variant_t Class](../cpp/variant-t-class.md)

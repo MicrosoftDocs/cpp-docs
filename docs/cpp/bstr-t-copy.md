@@ -13,32 +13,36 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # _bstr_t::copy
-**Microsoft Specific**  
-  
- Constructs a copy of the encapsulated `BSTR`.  
-  
-## Syntax  
-  
-```  
-BSTR copy( bool fCopy = true ) const;  
-```  
-  
-#### Parameters  
- *fCopy*  
- If TRUE, **copy** returns a copy of the contained `BSTR`, otherwise **copy** returns the actual BSTR.  
-  
-## Remarks  
- Returns a newly allocated copy of the encapsulated `BSTR` object.  
-  
-## Example  
-  
-```cpp 
-STDMETHODIMP CAlertMsg::get_ConnectionStr(BSTR *pVal){ //  m_bsConStr is _bstr_t  
-   *pVal = m_bsConStr.copy();  
-}  
-```  
-  
- **END Microsoft Specific**  
-  
-## See also  
- [_bstr_t Class](../cpp/bstr-t-class.md)
+
+**Microsoft Specific**
+
+Constructs a copy of the encapsulated `BSTR`.
+
+## Syntax
+
+```
+BSTR copy( bool fCopy = true ) const;
+```
+
+#### Parameters
+
+*fCopy*<br/>
+If TRUE, **copy** returns a copy of the contained `BSTR`, otherwise **copy** returns the actual BSTR.
+
+## Remarks
+
+Returns a newly allocated copy of the encapsulated `BSTR` object.
+
+## Example
+
+```cpp
+STDMETHODIMP CAlertMsg::get_ConnectionStr(BSTR *pVal){ //  m_bsConStr is _bstr_t
+   *pVal = m_bsConStr.copy();
+}
+```
+
+**END Microsoft Specific**
+
+## See also
+
+[_bstr_t Class](../cpp/bstr-t-class.md)
