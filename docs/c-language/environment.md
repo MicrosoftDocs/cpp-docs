@@ -11,9 +11,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Environment
--   [Arguments to main](../c-language/arguments-to-main.md)  
-  
--   [Interactive Devices](../c-language/interactive-devices.md)  
-  
-## See Also  
- [Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
+
+- [Arguments to main](../c-language/arguments-to-main.md)
+
+- [Interactive Devices](../c-language/interactive-devices.md)
+
+## See Also
+
+[Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)

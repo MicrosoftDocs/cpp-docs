@@ -12,9 +12,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Arrays and Pointers
--   [Largest Array Size](../c-language/largest-array-size.md)  
-  
--   [Pointer Subtraction](../c-language/pointer-subtraction.md)  
-  
-## See Also  
- [Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
+
+- [Largest Array Size](../c-language/largest-array-size.md)
+
+- [Pointer Subtraction](../c-language/pointer-subtraction.md)
+
+## See Also
+
+[Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)

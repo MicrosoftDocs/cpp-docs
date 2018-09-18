@@ -46,6 +46,7 @@ The *declarator* names the variable and can include a type modifier. For example
 You can declare a pointer to a structure, union, or enumeration type before you define the structure, union, or enumeration type. You declare the pointer by using the structure or union tag as shown in the examples below. Such declarations are allowed because the compiler does not need to know the size of the structure or union to allocate space for the pointer variable.
 
 ## Examples
+
 The following examples illustrate pointer declarations.
 
 ```

@@ -13,20 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # switch Statement (C)
-The `switch` and **case** statements help control complex conditional and branching operations. The `switch` statement transfers control to a statement within its body.  
-  
+
+The `switch` and **case** statements help control complex conditional and branching operations. The `switch` statement transfers control to a statement within its body.
+
 ## Syntax
 
 *selection-statement*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**switch (** *expression* **)** *statement*  
-  
+&nbsp;&nbsp;&nbsp;&nbsp;**switch (** *expression* **)** *statement*
+
 *labeled-statement*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**case**  *constant-expression*  **:**  *statement*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**default :**  *statement*  
-  
-Control passes to the statement whose **case** *constant-expression* matches the value of **switch (** *expression* **)**. The `switch` statement can include any number of **case** instances, but no two case constants within the same `switch` statement can have the same value. Execution of the statement body begins at the selected statement and proceeds until the end of the body or until a **break** statement transfers control out of the body.  
-  
-Use of the `switch` statement usually looks something like this:  
+&nbsp;&nbsp;&nbsp;&nbsp;**default :**  *statement*
+
+Control passes to the statement whose **case** *constant-expression* matches the value of **switch (** *expression* **)**. The `switch` statement can include any number of **case** instances, but no two case constants within the same `switch` statement can have the same value. Execution of the statement body begins at the selected statement and proceeds until the end of the body or until a **break** statement transfers control out of the body.
+
+Use of the `switch` statement usually looks something like this:
 
 ```C
 switch ( expression )
@@ -85,29 +86,29 @@ switch( i )
 }
 ```
 
-In this example, a **break** statement follows each statement of the `switch` body. The **break** statement forces an exit from the statement body after one statement is executed. If `i` is equal to -1, only `n` is incremented. The **break** following the statement `n++;` causes execution control to pass out of the statement body, bypassing the remaining statements. Similarly, if `i` is equal to 0, only `z` is incremented; if `i` is equal to 1, only `p` is incremented. The final **break** statement is not strictly necessary, since control passes out of the body at the end of the compound statement, but it is included for consistency.  
-  
-A single statement can carry multiple **case** labels, as the following example shows:  
-  
+In this example, a **break** statement follows each statement of the `switch` body. The **break** statement forces an exit from the statement body after one statement is executed. If `i` is equal to -1, only `n` is incremented. The **break** following the statement `n++;` causes execution control to pass out of the statement body, bypassing the remaining statements. Similarly, if `i` is equal to 0, only `z` is incremented; if `i` is equal to 1, only `p` is incremented. The final **break** statement is not strictly necessary, since control passes out of the body at the end of the compound statement, but it is included for consistency.
+
+A single statement can carry multiple **case** labels, as the following example shows:
+
 ```C
-case 'a' :  
-case 'b' :  
-case 'c' :  
-case 'd' :  
-case 'e' :  
-case 'f' :  hexcvt(c);  
-```  
-  
-In this example, if *constant-expression* equals any letter between `'a'` and `'f'`, the `hexcvt` function is called.  
-  
-**Microsoft Specific**  
-  
-Microsoft C does not limit the number of case values in a `switch` statement. The number is limited only by the available memory. ANSI C requires at least 257 case labels be allowed in a `switch` statement.  
-  
-The default for Microsoft C is that the Microsoft extensions are enabled. Use the /Za compiler option to disable these extensions.  
-  
-**END Microsoft Specific**  
-  
+case 'a' :
+case 'b' :
+case 'c' :
+case 'd' :
+case 'e' :
+case 'f' :  hexcvt(c);
+```
+
+In this example, if *constant-expression* equals any letter between `'a'` and `'f'`, the `hexcvt` function is called.
+
+**Microsoft Specific**
+
+Microsoft C does not limit the number of case values in a `switch` statement. The number is limited only by the available memory. ANSI C requires at least 257 case labels be allowed in a `switch` statement.
+
+The default for Microsoft C is that the Microsoft extensions are enabled. Use the /Za compiler option to disable these extensions.
+
+**END Microsoft Specific**
+
 ## See Also
 
 [switch Statement (C++)](../cpp/switch-statement-cpp.md)

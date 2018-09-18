@@ -71,8 +71,8 @@ int main()
 }
 ```
 
-## Output  
-  
+## Output
+
 ```Output
 Number of spaces: 4
 Number of tabs: 2
