@@ -12,6 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Rowset Object Interfaces
+
 The following table shows the mandatory and optional interfaces defined by OLE DB for a rowset object.  
   
 |Interface|Required?|Implemented by OLE DB templates?|  
@@ -41,7 +42,8 @@ The following table shows the mandatory and optional interfaces defined by OLE D
 |[ISupportErrorInfo](/previous-versions/windows/desktop/ms715816\(v=vs.85\))|Optional|Yes|  
 |[IRowsetBookmark](/previous-versions/windows/desktop/ms714246\(v=vs.85\))|Optional|No|  
   
- The wizard-generated rowset object implements `IAccessor`, `IRowset`, and `IRowsetInfo` through inheritance. The `IAccessorImpl` binds both output columns. The `IRowset` interface handles fetches rows and data. The `IRowsetInfo` interface handles the rowset properties.  
+The wizard-generated rowset object implements `IAccessor`, `IRowset`, and `IRowsetInfo` through inheritance. The `IAccessorImpl` binds both output columns. The `IRowset` interface handles fetches rows and data. The `IRowsetInfo` interface handles the rowset properties.  
   
 ## See Also  
- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

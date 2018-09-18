@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CBookmark Class
+
 Holds a bookmark value in its buffer.  
   
 ## Syntax
@@ -26,11 +27,13 @@ class CBookmark< 0 > : public CBookmarkBase
 ```  
   
 ### Parameters  
- *nSize*  
- The size of the bookmark buffer in bytes. When *nSize* is zero, the bookmark buffer will be dynamically created at run time.  
+
+*nSize*<br/>
+The size of the bookmark buffer in bytes. When *nSize* is zero, the bookmark buffer will be dynamically created at run time.  
 
 ## Requirements  
- **Header:** atldbcli.h  
+
+**Header:** atldbcli.h  
   
 ## Members  
   
@@ -50,9 +53,11 @@ class CBookmark< 0 > : public CBookmarkBase
 |[operator =](#operator)|Assigns one `CBookmark` class to another.|  
   
 ## Remarks  
- `CBookmark<0>` is a template specialization of `CBookmark`; its buffer is dynamically created at run time.  
+
+`CBookmark<0>` is a template specialization of `CBookmark`; its buffer is dynamically created at run time.  
 
 ## <a name="cbookmark"></a> CBookmark::CBookmark
+
 The constructor.  
   
 ### Syntax  
@@ -64,16 +69,19 @@ CBookmark(DBLENGTH nSize);
 ```  
   
 #### Parameters  
- *nSize*  
- [in] Size of the bookmark buffer in bytes.  
+
+*nSize*<br/>
+[in] Size of the bookmark buffer in bytes.  
   
 ### Remarks  
- The first function sets the buffer to NULL and the buffer size to 0. The second function sets the buffer size to *nSize*, and the buffer to a byte array of *nSize* bytes.  
+
+The first function sets the buffer to NULL and the buffer size to 0. The second function sets the buffer size to *nSize*, and the buffer to a byte array of *nSize* bytes.  
   
 > [!NOTE]
 >  This function is only available in `CBookmark<0>`. 
   
 ## <a name="getbuffer"></a> CBookmark::GetBuffer
+
 Retrieves the pointer to the bookmark buffer.  
   
 ### Syntax  
@@ -83,9 +91,11 @@ virtual BYTE* GetBuffer() const throw();
 ```  
   
 ### Return Value  
- A pointer to the bookmark buffer. 
+
+A pointer to the bookmark buffer. 
 
 ## <a name="getsize"></a> CBookmark::GetSize
+
 Retrieves the size of the bookmark buffer.  
   
 ### Syntax  
@@ -95,9 +105,11 @@ virtual DBLENGTH GetSize() const throw();
 ```  
   
 ### Return Value  
- The size of the buffer in bytes.  
+
+The size of the buffer in bytes.  
 
 ## <a name="setbookmark"></a> CBookmark::SetBookmark
+
 Copies the bookmark value referenced by *pBuffer* to the `CBookmark` buffer and sets the buffer size to *nSize*.  
   
 ### Syntax  
@@ -107,19 +119,23 @@ HRESULT SetBookmark(DBLENGTH nSize, BYTE* pBuffer) throw();
 ```  
   
 #### Parameters  
- *nSize*  
- [in] The size of the bookmark buffer.  
+
+*nSize*<br/>
+[in] The size of the bookmark buffer.  
   
- *pBuffer*  
- [in] A pointer to the byte array containing the bookmark value.  
+*pBuffer*<br/>
+[in] A pointer to the byte array containing the bookmark value.  
   
 ### Return Value  
- A standard HRESULT.  
+
+A standard HRESULT.  
   
 ### Remarks  
- This function is only available in `CBookmark<0>`. 
+
+This function is only available in `CBookmark<0>`. 
 
 ## <a name="operator"></a> CBookmark::operator =
+
 Assigns a `CBookmark` object to another.  
   
 ### Syntax  
@@ -129,8 +145,10 @@ CBookmark& operator =(const CBookmark& bookmark) throw();
 ```  
   
 ### Remarks  
- This operator is needed only in `CBookmark<0>`.   
+
+This operator is needed only in `CBookmark<0>`.   
 
 ## See Also  
- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
+
+[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

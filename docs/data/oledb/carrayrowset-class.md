@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CArrayRowset Class
+
 Accesses elements of a rowset using array syntax.  
   
 ## Syntax
@@ -25,11 +26,13 @@ class CArrayRowset :
 ```  
   
 ### Parameters  
- *TAccessor*  
- The type of accessor class that you want the rowset to use.  
+
+*TAccessor*<br/>
+The type of accessor class that you want the rowset to use.  
 
 ## Requirements  
- **Header:** atldbcli.h  
+
+**Header:** atldbcli.h  
   
 ## Members  
   
@@ -53,6 +56,7 @@ class CArrayRowset :
 |[CArrayRowset::m_nRowsRead](#nrowsread)|The number of rows already read.|  
   
 ## <a name="carrayrowset"></a> CArrayRowset::CArrayRowset
+
 Creates a new `CArrayRowset` object.  
   
 ### Syntax  
@@ -62,10 +66,12 @@ CArrayRowset(int nMax = 100000);
 ```  
   
 #### Parameters  
- *nMax*  
- [in] Maximum number of rows in the rowset. 
+
+*nMax*<br/>
+[in] Maximum number of rows in the rowset. 
 
 ## <a name="snapshot"></a> CArrayRowset::Snapshot
+
 Reads the entire rowset into memory, creating an image or snapshot of it.  
   
 ### Syntax  
@@ -75,6 +81,7 @@ HRESULT Snapshot() throw();
 ```  
 
 ## <a name="operator"></a> CArrayRowset::operator
+
 Provides array-like syntax for accessing a row in the rowset.  
   
 ### Syntax  
@@ -84,19 +91,23 @@ TAccessor & operator[](int nrow);
 ```  
   
 #### Parameters  
- *TAccessor*  
- A templated parameter that specifies the type of accessor stored in the rowset.  
+
+*TAccessor*<br/>
+A templated parameter that specifies the type of accessor stored in the rowset.  
   
- *nRow*  
- [in] Number of the row (array element) you want to access.  
+*nRow*<br/>
+[in] Number of the row (array element) you want to access.  
   
 ### Return Value  
- The contents of the requested row.  
+
+The contents of the requested row.  
   
 ### Remarks  
- If *nRow* exceeds the number of rows in the rowset, an exception is thrown.  
+
+If *nRow* exceeds the number of rows in the rowset, an exception is thrown.  
 
 ## <a name="nrowsread"></a> CArrayRowset::m_nRowsRead
+
 Contains the number of rows in the rowset that have already been read.  
   
 ### Syntax  
@@ -106,6 +117,7 @@ ULONG m_nRowsRead;
 ```  
   
 ## See Also  
- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)   
- [CRowset Class](../../data/oledb/crowset-class.md)
+
+[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
+[CRowset Class](../../data/oledb/crowset-class.md)
