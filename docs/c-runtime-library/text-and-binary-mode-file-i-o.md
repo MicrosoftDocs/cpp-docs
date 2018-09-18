@@ -27,4 +27,4 @@ When you call a file-open function such as [_open](../c-runtime-library/referenc
 ## See Also
 
 [Input and Output](../c-runtime-library/input-and-output.md)<br/>
- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

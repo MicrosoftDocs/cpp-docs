@@ -13,16 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # signal Action Constants
-The action taken when the interrupt signal is received depends on the value of `func`.  
-  
-## Syntax  
-  
-```  
-#include <signal.h>  
-```  
-  
-## Remarks  
- The `func` argument must be either a function address or one of the manifest constants listed below and defined in SIGNAL.H.  
+
+The action taken when the interrupt signal is received depends on the value of `func`.
+
+## Syntax
+
+```
+#include <signal.h>
+```
+
+## Remarks
+
+The `func` argument must be either a function address or one of the manifest constants listed below and defined in SIGNAL.H.
 
 |||
 |-|-|
@@ -31,7 +33,8 @@ The action taken when the interrupt signal is received depends on the value of `
 | `SIG_SGE`  | Indicates an error occurred in the signal.  |
 | `SIG_ACK`  | Indicates an acknowledgement was received.  |
 | `SIG_ERR`  | A return type from a signal indicating an error has occurred.  |
-  
-## See Also  
- [signal](../c-runtime-library/reference/signal.md)   
- [Global Constants](../c-runtime-library/global-constants.md)
+
+## See Also
+
+[signal](../c-runtime-library/reference/signal.md)<br/>
+[Global Constants](../c-runtime-library/global-constants.md)

@@ -162,16 +162,16 @@ Wide character that corresponds to a hexadecimal-digit character.
 /* This program tests all characters between 0x0
 * and 0x7F, then displays each character with abbreviations
 * for the character-type codes that apply.
-*/  
+*/
 
 #include <stdio.h>
 #include <ctype.h>
 
-int main( void )  
-{  
+int main( void )
+{
    int ch;
-   for( ch = 0; ch <= 0x7F; ch++ )  
-   {  
+   for( ch = 0; ch <= 0x7F; ch++ )
+   {
       printf( "%.2x  ", ch );
       printf( " %c", isprint( ch )  ? ch   : ' ' );
       printf( "%4s", isalnum( ch )  ? "AN" : "" );
@@ -189,9 +189,9 @@ int main( void )
       printf( "%3s", isupper( ch )  ? "U"  : "" );
       printf( "%3s", isxdigit( ch ) ? "X"  : "" );
       printf( ".\n" );
-   }  
-}  
-```  
+   }
+}
+```
 
 ## Output
 
@@ -328,8 +328,8 @@ int main( void )
 
 ## See Also
 
-[Character Classification](../c-runtime-library/character-classification.md)   
-[Locale](../c-runtime-library/locale.md)   
-[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)   
-[Interpretation of Multibyte-Character Sequences](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
+[Character Classification](../c-runtime-library/character-classification.md)<br/>
+[Locale](../c-runtime-library/locale.md)<br/>
+[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
+[Interpretation of Multibyte-Character Sequences](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [to Functions](../c-runtime-library/to-functions.md)

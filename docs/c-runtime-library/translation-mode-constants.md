@@ -13,30 +13,33 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Translation Mode Constants
-## Syntax  
-  
-```  
-  
-#include <fcntl.h>  
-  
-```  
-  
-## Remarks  
- The `_O_BINARY` and `_O_TEXT` manifest constants determine the translation mode for files (`_open` and `_sopen`) or the translation mode for streams (`_setmode`).  
-  
- The allowed values are:  
+
+## Syntax
+
+```
+
+#include <fcntl.h>
+
+```
+
+## Remarks
+
+The `_O_BINARY` and `_O_TEXT` manifest constants determine the translation mode for files (`_open` and `_sopen`) or the translation mode for streams (`_setmode`).
+
+The allowed values are:
 
 |||
 |-|-|
- `_O_TEXT`  | Opens file in text (translated) mode. Carriage return - linefeed (CR-LF) combinations are translated into a single linefeed (LF) on input. Linefeed characters are translated into CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading and reading/writing, `fopen` checks for CTRL+Z at the end of the file and removes it, if possible. This is done because using the `fseek` and `ftell` functions to move within a file ending with CTRL+Z may cause `fseek` to behave improperly near the end of the file.  
- `_O_BINARY`  | Opens file in binary (untranslated) mode. The above translations are suppressed.  
- `_O_RAW`  | Same as `_O_BINARY`. Supported for C 2.0 compatibility.  
-  
- For more information, see [Text and Binary Mode File I/O](../c-runtime-library/text-and-binary-mode-file-i-o.md) and [File Translation](../c-runtime-library/file-translation-constants.md).  
-  
-## See Also  
- [_open, _wopen](../c-runtime-library/reference/open-wopen.md)   
- [_pipe](../c-runtime-library/reference/pipe.md)   
- [_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)   
- [_setmode](../c-runtime-library/reference/setmode.md)   
- [Global Constants](../c-runtime-library/global-constants.md)
+`_O_TEXT`  | Opens file in text (translated) mode. Carriage return - linefeed (CR-LF) combinations are translated into a single linefeed (LF) on input. Linefeed characters are translated into CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading and reading/writing, `fopen` checks for CTRL+Z at the end of the file and removes it, if possible. This is done because using the `fseek` and `ftell` functions to move within a file ending with CTRL+Z may cause `fseek` to behave improperly near the end of the file.
+`_O_BINARY`  | Opens file in binary (untranslated) mode. The above translations are suppressed.
+`_O_RAW`  | Same as `_O_BINARY`. Supported for C 2.0 compatibility.
+
+For more information, see [Text and Binary Mode File I/O](../c-runtime-library/text-and-binary-mode-file-i-o.md) and [File Translation](../c-runtime-library/file-translation-constants.md).
+
+## See Also
+
+[_open, _wopen](../c-runtime-library/reference/open-wopen.md)<br/>
+[_pipe](../c-runtime-library/reference/pipe.md)<br/>
+[_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)<br/>
+[_setmode](../c-runtime-library/reference/setmode.md)<br/>
+[Global Constants](../c-runtime-library/global-constants.md)

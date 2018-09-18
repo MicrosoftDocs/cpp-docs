@@ -27,6 +27,6 @@ The following functions are Windows operating system calls.
 ## See Also
 
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
- [File Handling](../c-runtime-library/file-handling.md)<br/>
- [Directory Control](../c-runtime-library/directory-control.md)<br/>
- [Low-Level I/O](../c-runtime-library/low-level-i-o.md)<br/>
+[File Handling](../c-runtime-library/file-handling.md)<br/>
+[Directory Control](../c-runtime-library/directory-control.md)<br/>
+[Low-Level I/O](../c-runtime-library/low-level-i-o.md)<br/>

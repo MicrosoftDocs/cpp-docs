@@ -16,26 +16,30 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __pctype_func
-Retrieves a pointer to an array of character classification information.  
-  
-## Syntax  
-  
-```cpp  
-const unsigned short *__pctype_func(  
-   )  
-```  
-  
-## Return Value  
- A pointer to an array of character classification information.  
-  
-## Remarks  
- The information in the character classification table is for internal use only, and is used by various functions that classify characters of type `char`. For more information, see the `Remarks` section of [_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md).  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|__pctype_func|ctype.h|  
-  
-## See Also  
- [_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md)
+
+Retrieves a pointer to an array of character classification information.
+
+## Syntax
+
+```cpp
+const unsigned short *__pctype_func(
+   )
+```
+
+## Return Value
+
+A pointer to an array of character classification information.
+
+## Remarks
+
+The information in the character classification table is for internal use only, and is used by various functions that classify characters of type `char`. For more information, see the `Remarks` section of [_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md).
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|__pctype_func|ctype.h|
+
+## See Also
+
+[_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md)

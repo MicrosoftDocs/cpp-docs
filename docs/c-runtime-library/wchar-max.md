@@ -13,13 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # WCHAR_MAX
-Maximum value for type `wchar_t`.  
-  
-## Syntax  
-  
-```  
-#include <wchar.h>  
-```  
-  
-## See Also  
- [Global Constants](../c-runtime-library/global-constants.md)
+
+Maximum value for type `wchar_t`.
+
+## Syntax
+
+```
+#include <wchar.h>
+```
+
+## See Also
+
+[Global Constants](../c-runtime-library/global-constants.md)

@@ -12,18 +12,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Environmental Constants
-## Syntax  
-  
-```  
-#include <stdlib.h>  
-```  
-  
-## Remarks  
- This constant defines the environmental length for strings.  
-  
-|Constant|Meaning|  
-|--------------|-------------|  
-|`_MAX_ENV`|Maximum string size of an environmental string.|  
-  
-## See Also  
- [Global Constants](../c-runtime-library/global-constants.md)
+
+## Syntax
+
+```
+#include <stdlib.h>
+```
+
+## Remarks
+
+This constant defines the environmental length for strings.
+
+|Constant|Meaning|
+|--------------|-------------|
+|`_MAX_ENV`|Maximum string size of an environmental string.|
+
+## See Also
+
+[Global Constants](../c-runtime-library/global-constants.md)

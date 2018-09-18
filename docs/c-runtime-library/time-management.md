@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 
 Use these functions to get the current time and convert, adjust, and store it as necessary. The current time is the system time.
 
- The **_ftime** and **localtime** routines use the **TZ** environment variable. If **TZ** is not set, the run-time library attempts to use the time-zone information specified by the operating system. If this information is unavailable, these functions use the default value of PST8PDT. For more information on **TZ**, see [_tzset](../c-runtime-library/reference/tzset.md); also see [_daylight, timezone, and _tzname](../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
+The **_ftime** and **localtime** routines use the **TZ** environment variable. If **TZ** is not set, the run-time library attempts to use the time-zone information specified by the operating system. If this information is unavailable, these functions use the default value of PST8PDT. For more information on **TZ**, see [_tzset](../c-runtime-library/reference/tzset.md); also see [_daylight, timezone, and _tzname](../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
 
 ### Time Routines
 

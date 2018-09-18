@@ -13,18 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # File Constants
-## Syntax  
-  
-```  
-  
-#include <fcntl.h>  
-  
-```  
-  
-## Remarks  
- The integer expression formed from one or more of these constants determines the type of reading or writing operations permitted. It is formed by combining one or more constants with a translation-mode constant.  
-  
- The file constants are as follows:  
+
+## Syntax
+
+```
+
+#include <fcntl.h>
+
+```
+
+## Remarks
+
+The integer expression formed from one or more of these constants determines the type of reading or writing operations permitted. It is formed by combining one or more constants with a translation-mode constant.
+
+The file constants are as follows:
 
 |Constant|Description|
 |-|-|
@@ -35,8 +37,9 @@ ms.workload: ["cplusplus"]
 | `_O_RDWR`  | Opens file for both reading and writing; if this flag is given, neither `_O_RDONLY` nor `_O_WRONLY` can be given.  |
 | `_O_TRUNC`  | Opens and truncates an existing file to zero length; the file must have write permission. The contents of the file are destroyed. If this flag is given, you cannot specify `_O_RDONLY`.  |
 | `_O_WRONLY`  | Opens file for writing only; if this flag is given, neither `_O_RDONLY` nor `_O_RDWR` can be given.  |
-  
-## See Also  
- [_open, _wopen](../c-runtime-library/reference/open-wopen.md)   
- [_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)   
- [Global Constants](../c-runtime-library/global-constants.md)
+
+## See Also
+
+[_open, _wopen](../c-runtime-library/reference/open-wopen.md)<br/>
+[_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)<br/>
+[Global Constants](../c-runtime-library/global-constants.md)

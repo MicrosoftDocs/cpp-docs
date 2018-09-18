@@ -13,16 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _locking Constants
-## Syntax  
-  
-```  
+
+## Syntax
+
+```
 #include <sys/locking.h>
-```  
-  
-## Remarks  
- The *mode* argument in the call to the `_locking` function specifies the locking action to be performed.  
-  
- The *mode* argument must be one of the following manifest constants.  
+```
+
+## Remarks
+
+The *mode* argument in the call to the `_locking` function specifies the locking action to be performed.
+
+The *mode* argument must be one of the following manifest constants.
 
 |||
 |-|-|
@@ -31,7 +33,8 @@ ms.workload: ["cplusplus"]
 |`_LK_NBLCK`  | Locks the specified bytes. If bytes cannot be locked, the function returns an error.  |
 | `_LK_NBRLCK`  | Same as `_LK_NBLCK`.  |
 | `_LK_UNLCK`  | Unlocks the specified bytes. (The bytes must have been previously locked.)  |
-  
-## See Also  
- [_locking](../c-runtime-library/reference/locking.md)   
- [Global Constants](../c-runtime-library/global-constants.md)
+
+## See Also
+
+[_locking](../c-runtime-library/reference/locking.md)<br/>
+[Global Constants](../c-runtime-library/global-constants.md)
