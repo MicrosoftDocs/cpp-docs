@@ -31,11 +31,11 @@ unsigned short _rotr16( 
 ```  
   
 #### Parameters  
- [in] `value`  
- The value to rotate.  
+*value*<br/>
+[in] The value to rotate.  
   
- [in] `shift`  
- The number of bits to rotate.  
+*shift*<br/>
+[in] The number of bits to rotate.  
   
 ## Return Value  
  The rotated value.  

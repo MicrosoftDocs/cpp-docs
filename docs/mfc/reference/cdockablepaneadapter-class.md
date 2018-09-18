@@ -71,14 +71,14 @@ virtual BOOL LoadState(
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- The profile name.  
+*lpszProfileName*<br/>
+[in] The profile name.  
   
- [in] *nIndex*  
- The profile index.  
+*nIndex*<br/>
+[in] The profile index.  
   
- [in] *uiID*  
- The pane ID.  
+*uiID*<br/>
+[in] The pane ID.  
   
 ### Return Value  
   
@@ -95,14 +95,14 @@ virtual BOOL SaveState(
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- The profile name.  
+*lpszProfileName*<br/>
+[in] The profile name.  
   
- [in] *nIndex*  
- The profile index (defaults to the control ID of the window).  
+*nIndex*<br/>
+[in] The profile index (defaults to the control ID of the window).  
   
- [in] *uiID*  
- The pane ID.  
+*uiID*<br/>
+[in] The pane ID.  
   
 ### Return Value  
   
@@ -116,8 +116,8 @@ virtual BOOL SetWrappedWnd(CWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] *pWnd*  
- A pointer to the window for the pane adapter to wrap.  
+*pWnd*<br/>
+[in] A pointer to the window for the pane adapter to wrap.  
   
 ### Return Value  
   

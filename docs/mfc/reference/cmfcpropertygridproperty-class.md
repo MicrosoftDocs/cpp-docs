@@ -155,11 +155,11 @@ BOOL AddOption(
 ```  
   
 ### Parameters  
- [in] *lpszOption*  
- The list item (option) to add.  
+*lpszOption*<br/>
+[in] The list item (option) to add.  
   
- [in] *bInsertUnique*  
- TRUE to add the list item only if it does not already exist; otherwise, FALSE. The default value is TRUE.  
+*bInsertUnique*<br/>
+[in] TRUE to add the list item only if it does not already exist; otherwise, FALSE. The default value is TRUE.  
   
 ### Return Value  
  TRUE, which means that the list item is added. Otherwise, FALSE, which means that the list item is not added because the *bInsertUnique* parameter is TRUE and the list item specified by the *lpszOption* parameter already exists.  
@@ -174,8 +174,8 @@ BOOL AddSubItem(CMFCPropertyGridProperty* pProp);
 ```  
   
 ### Parameters  
- [in] *pProp*  
- Pointer to a property to add.  
+*pProp*<br/>
+[in] Pointer to a property to add.  
   
 ### Return Value  
  TRUE if the specified property is successfully added as a child property. FALSE if the property is not added because it already occurs in the parent property.  
@@ -209,11 +209,11 @@ virtual void AdjustInPlaceEditRect(
 ```  
   
 ### Parameters  
- [out] *rectEdit*  
- When this method returns, a rectangle that specifies the boundaries of the text box for the property value.  
+*rectEdit*<br/>
+[out] When this method returns, a rectangle that specifies the boundaries of the text box for the property value.  
   
- [out] *rectSpin*  
- When this method returns, a rectangle that specifies the boundaries of the spin button control for the property value. Or, if the property does not support a spin button, an empty rectangle.  
+*rectSpin*<br/>
+[out] When this method returns, a rectangle that specifies the boundaries of the spin button control for the property value. Or, if the property does not support a spin button, an empty rectangle.  
   
 ### Remarks  
  The value area of a property consists of a text box and possibly an *option button*, such as a spin button control. This method calculates the dimensions of the text box and option button and then returns those values in the specified parameters.  
@@ -226,8 +226,8 @@ void AllowEdit(BOOL bAllow=TRUE);
 ```  
   
 ### Parameters  
- [in] *bAllow*  
- TRUE to make the property editable; FALSE to make the property read-only. The default value is TRUE.  
+*bAllow*<br/>
+[in] TRUE to make the property editable; FALSE to make the property read-only. The default value is TRUE.  
   
 ### Remarks  
   
@@ -252,32 +252,32 @@ CMFCPropertyGridProperty(
 ```  
   
 ### Parameters  
- [in] *strGroupName*  
- The group name. A *group* is a collection of related properties in a property grid control. If the control is displayed hierarchically, the *group name* is displayed as a category title in the row above the group.  
+*strGroupName*<br/>
+[in] The group name. A *group* is a collection of related properties in a property grid control. If the control is displayed hierarchically, the *group name* is displayed as a category title in the row above the group.  
   
- [in] *dwData*  
- Application-specific data, such as an integer or a pointer to other data that is associated with the property. The default value is 0.  
+*dwData*<br/>
+[in] Application-specific data, such as an integer or a pointer to other data that is associated with the property. The default value is 0.  
   
- [in] *strName*  
- The name of the property.  
+*strName*<br/>
+[in] The name of the property.  
   
- [in] *varValue*  
- The property value.  
+*varValue*<br/>
+[in] The property value.  
   
- [in] *lpszDescr*  
- The property description. The default value is NULL.  
+*lpszDescr*<br/>
+[in] The property description. The default value is NULL.  
   
- [in] *lpszEditMask*  
- The edit mask, if the property is a masked edit control. The default value is NULL.  
+*lpszEditMask*<br/>
+[in] The edit mask, if the property is a masked edit control. The default value is NULL.  
   
- [in] *lpszEditTemplate*  
- The edit template, if the property is a masked edit control. The default value is NULL.  
+*lpszEditTemplate*<br/>
+[in] The edit template, if the property is a masked edit control. The default value is NULL.  
   
- [in] *lpszValidChars*  
- A list of valid characters, if the property is a masked edit control. The default value is NULL.  
+*lpszValidChars*<br/>
+[in] A list of valid characters, if the property is a masked edit control. The default value is NULL.  
   
- [in] *bIsValueList*  
- TRUE if the property represents a list of values; FALSE if the property represents a single value. The default value is FALSE.  
+*bIsValueList*<br/>
+[in] TRUE if the property represents a list of values; FALSE if the property represents a single value. The default value is FALSE.  
   
 ### Remarks  
   
@@ -291,11 +291,11 @@ virtual CComboBox* CreateCombo(
 ```  
   
 ### Parameters  
- [in] *pWndParent*  
- Pointer to the parent window of the combo box.  
+*pWndParent*<br/>
+[in] Pointer to the parent window of the combo box.  
   
- [in] *rect*  
- The bounding rectangle of the combo box.  
+*rect*<br/>
+[in] The bounding rectangle of the combo box.  
   
 ### Return Value  
  Pointer to a new [CComboBox](../../mfc/reference/ccombobox-class.md) object.  
@@ -312,11 +312,11 @@ virtual CWnd* CreateInPlaceEdit(
 ```  
   
 ### Parameters  
- [in] *rectEdit*  
- The bounding rectangle of the editable control.  
+*rectEdit*<br/>
+[in] The bounding rectangle of the editable control.  
   
- [in] *bDefaultFormat*  
- TRUE to use the default property format to set the text of the editable control; otherwise, FALSE.  
+*bDefaultFormat*<br/>
+[in] TRUE to use the default property format to set the text of the editable control; otherwise, FALSE.  
   
 ### Return Value  
  A pointer to the editable control if this method succeeds; otherwise, NULL.  
@@ -334,8 +334,8 @@ virtual CSpinButtonCtrl* CreateSpinControl(CRect rectSpin);
 ```  
   
 ### Parameters  
- [in] *rectSpin*  
- A rectangle that defines where the editable spin button control is created.  
+*rectSpin*<br/>
+[in] A rectangle that defines where the editable spin button control is created.  
   
 ### Return Value  
  A pointer to a new [CMFCSpinButtonCtrl](../../mfc/reference/cmfcspinbuttonctrl-class.md) object that is cast as a pointer to a [CSpinButtonCtrl](../../mfc/reference/cspinbuttonctrl-class.md) object.  
@@ -351,8 +351,8 @@ void Enable(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable the property; FALSE to disable the property. Disabled properties do not respond to mouse or keyboard input. The default value is TRUE.  
+*bEnable*<br/>
+[in] TRUE to enable the property; FALSE to disable the property. Disabled properties do not respond to mouse or keyboard input. The default value is TRUE.  
   
 ### Remarks  
   
@@ -367,14 +367,14 @@ void EnableSpinControl(
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable the spin button control; FALSE to disable the spin button control. The default value is TRUE.  
+*bEnable*<br/>
+[in] TRUE to enable the spin button control; FALSE to disable the spin button control. The default value is TRUE.  
   
- [in] *nMin*  
- The minimum value of the spin button control. The default value is 0.  
+*nMin*<br/>
+[in] The minimum value of the spin button control. The default value is 0.  
   
- [in] *nMax*  
- The maximum value of the spin button control. The default value is 0.  
+*nMax*<br/>
+[in] The maximum value of the spin button control. The default value is 0.  
   
 ### Remarks  
  The framework automatically creates a spin button control when a property is about to be edited.  
@@ -389,8 +389,8 @@ void Expand(BOOL bExpand=TRUE);
 ```  
   
 ### Parameters  
- [in] *bExpand*  
- TRUE to expand the property; FALSE to collapse the property. The default value is TRUE.  
+*bExpand*<br/>
+[in] TRUE to expand the property; FALSE to collapse the property. The default value is TRUE.  
   
 ### Remarks  
   
@@ -444,7 +444,7 @@ int GetExpandedSubItems(BOOL bIncludeHidden=TRUE) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *bIncludeHidden*|TRUE to include the hidden sub-items in the count; otherwise, FALSE. The default value is TRUE.|  
+|*bIncludeHidden*|[in] TRUE to include the hidden sub-items in the count; otherwise, FALSE. The default value is TRUE.|  
   
 ### Return Value  
  The number of expanded sub-items.  
@@ -563,8 +563,8 @@ CMFCPropertyGridProperty* GetSubItem(int nIndex) const;
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- The zero-based index of the property to retrieve. This parameter is invalid if it is less than zero or greater than or equal to the number of sub-properties.  
+*nIndex*<br/>
+[in] The zero-based index of the property to retrieve. This parameter is invalid if it is less than zero or greater than or equal to the number of sub-properties.  
   
 ### Return Value  
  A pointer to a property object that is a child item of this property.  
@@ -639,17 +639,17 @@ CMFCPropertyGridProperty* HitTest(
 ```  
   
 ### Parameters  
- [in] *point*  
- The point to test, in client coordinates. This parameter is typically the current mouse pointer location.  
+*point*<br/>
+[in] The point to test, in client coordinates. This parameter is typically the current mouse pointer location.  
   
- [in] *pt*  
- The point to test, in client coordinates.  
+*pt*<br/>
+[in] The point to test, in client coordinates.  
   
- [out] *pnArea*  
- When this method returns, indicates the area that contains the specified point. For more information, see Remarks. The default value is NULL.  
+*pnArea*<br/>
+[out] When this method returns, indicates the area that contains the specified point. For more information, see Remarks. The default value is NULL.  
   
- [in] *bPropsOnly*  
- TRUE to test any area in the property control; FALSE to test only the description area. The default value is FALSE.  
+*bPropsOnly*<br/>
+[in] TRUE to test any area in the property control; FALSE to test only the description area. The default value is FALSE.  
   
 ### Return Value  
  A pointer to a property object or NULL.  
@@ -780,8 +780,8 @@ BOOL IsSubItem(CMFCPropertyGridProperty* pProp) const;
 ```  
   
 ### Parameters  
- [in] *pProp*  
- A pointer to a property.  
+*pProp*<br/>
+[in] A pointer to a property.  
   
 ### Return Value  
  TRUE if the specified property is a sub-item of the current property; otherwise, FALSE.  
@@ -854,8 +854,8 @@ virtual void OnClickButton(CPoint point);
 ```  
   
 ### Parameters  
- [in] *point*  
- A point, in client coordinates.  
+*point*<br/>
+[in] A point, in client coordinates.  
   
 ### Remarks  
  By default, this method does nothing.  
@@ -871,7 +871,7 @@ virtual void OnClickName(CPoint C);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *C*|A point, in client coordinates.|  
+|*C*|[in] A point, in client coordinates.|  
   
 ### Remarks  
  By default, this method does nothing.  
@@ -886,11 +886,11 @@ virtual BOOL OnClickValue(
 ```  
   
 ### Parameters  
- [in] *uiMsg*  
- A mouse message.  
+*uiMsg*<br/>
+[in] A mouse message.  
   
- [in] *point*  
- A point, in client coordinates.  
+*point*<br/>
+[in] A point, in client coordinates.  
   
 ### Return Value  
  TRUE if the specified mouse message is processed by this method; otherwise, FALSE.  
@@ -917,11 +917,11 @@ virtual HBRUSH OnCtlColor(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context.  
+*pDC*<br/>
+[in] Pointer to a device context.  
   
- [in] *nCtlColor*  
- (This parameter is not used.)  
+*nCtlColor*<br/>
+[in] (This parameter is not used.)  
   
 ### Return Value  
  The handle to a brush if this method is successful; otherwise, NULL.  
@@ -936,8 +936,8 @@ virtual BOOL OnDblClk(CPoint point);
 ```  
   
 ### Parameters  
- [in] *point*  
- A point, in client coordinates.  
+*point*<br/>
+[in] A point, in client coordinates.  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -964,11 +964,11 @@ virtual void OnDrawButton(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rectButton*  
- A bounding rectangle that specifies where to draw a button.  
+*rectButton*<br/>
+[in] A bounding rectangle that specifies where to draw a button.  
   
 ### Remarks  
   
@@ -982,11 +982,11 @@ virtual void OnDrawDescription(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rect*  
- A bounding rectangle that specifies where to draw the property description.  
+*rect*<br/>
+[in] A bounding rectangle that specifies where to draw the property description.  
   
 ### Remarks  
  By default, this method draws the property name and description in the font used by the parent property list control. The property description is drawn in regular style and the property name is drawn in bold style.  
@@ -1001,11 +1001,11 @@ virtual void OnDrawExpandBox(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rectExpand*  
- A bounding rectangle that specifies where to draw the expand box control.  
+*rectExpand*<br/>
+[in] A bounding rectangle that specifies where to draw the expand box control.  
   
 ### Remarks  
  Click the expand box control to expand or collapse a list of sub-properties. The expand box control is designated by a square that contains a plus (+) or minus (-) sign. A plus sign indicates that the property can be expanded to show a list of sub-properties. A minus sign indicates that the list can be collapsed to show only the property.  
@@ -1020,11 +1020,11 @@ virtual void OnDrawName(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rect*  
- A bounding rectangle that specifies where to draw the property name.  
+*rect*<br/>
+[in] A bounding rectangle that specifies where to draw the property name.  
   
 ### Remarks  
   
@@ -1038,11 +1038,11 @@ virtual void OnDrawValue(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rect*  
- A bounding rectangle that specifies where to draw the property value.  
+*rect*<br/>
+[in] A bounding rectangle that specifies where to draw the property value.  
   
 ### Remarks  
   
@@ -1054,8 +1054,8 @@ virtual BOOL OnEdit(LPPOINT lptClick);
 ```  
   
 ### Parameters  
- [in] *lptClick*  
- (This parameter is not used.) A pointer to a point, in client coordinates.  
+*lptClick*<br/>
+[in] (This parameter is not used.) A pointer to a point, in client coordinates.  
   
 ### Return Value  
  TRUE if the edit operation starts successfully; otherwise, FALSE.  
@@ -1087,7 +1087,7 @@ virtual BOOL OnKillFocus(CWnd*);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *CWnd*|(Not used.) Pointer to a window.|  
+|*CWnd*|[in] (Not used.) Pointer to a window.|  
   
 ### Return Value  
  This method always returns TRUE.  
@@ -1132,7 +1132,7 @@ virtual void OnRClickName(CPoint C);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *C*|A point, in client coordinates.|  
+|*C*|[in] A point, in client coordinates.|  
   
 ### Remarks  
  By default, this method does nothing.  
@@ -1150,8 +1150,8 @@ virtual void OnRClickValue(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *C*|A point, in client coordinates.|  
-|[in] *B*|A Boolean.|  
+|*C*|[in] A point, in client coordinates.|  
+|*B*|[in] A Boolean.|  
   
 ### Remarks  
  By default, this method does nothing and the *B* parameter has no predefined purpose.  
@@ -1212,8 +1212,8 @@ virtual BOOL PushChar(UINT nChar);
 ```  
   
 ### Parameters  
- [in] *nChar*  
- A character.  
+*nChar*<br/>
+[in] A character.  
   
 ### Return Value  
  TRUE if the edit operation is continuing; otherwise, FALSE.  
@@ -1250,11 +1250,11 @@ BOOL RemoveSubItem(
 ```  
   
 ### Parameters  
- [in] *pProp*  
- Pointer to a property sub-item.  
+*pProp*<br/>
+[in] Pointer to a property sub-item.  
   
- [in] *bDelete*  
- TRUE to delete the property object that is specified by the *pProp* parameter; otherwise, FALSE. The default value is TRUE.  
+*bDelete*<br/>
+[in] TRUE to delete the property object that is specified by the *pProp* parameter; otherwise, FALSE. The default value is TRUE.  
   
 ### Return Value  
   
@@ -1278,8 +1278,8 @@ void SetData(DWORD_PTR dwData);
 ```  
   
 ### Parameters  
- [in] *dwData*  
- An application-specific 32-bit value, such as an integer or a pointer to other data.  
+*dwData*<br/>
+[in] An application-specific 32-bit value, such as an integer or a pointer to other data.  
   
 ### Remarks  
  Use the [CMFCPropertyGridProperty::GetData](#getdata) method to retrieve the DWORD value. Use the [CMFCPropertyGridCtrl::FindItemByData](../../mfc/reference/cmfcpropertygridctrl-class.md#finditembydata) method to locate the property list item that is associated with the specified DWORD value.  
@@ -1292,8 +1292,8 @@ void SetDescription(const CString& strDescr);
 ```  
   
 ### Parameters  
- [in] *strDescr*  
- Text that describes the current property.  
+*strDescr*<br/>
+[in] Text that describes the current property.  
   
 ### Remarks  
   
@@ -1307,11 +1307,11 @@ void SetName(
 ```  
   
 ### Parameters  
- [in] *lpszName*  
- The property name.  
+*lpszName*<br/>
+[in] The property name.  
   
- [in] *bRedraw*  
- TRUE to redraw the property immediately; otherwise, FALSE. The default value is TRUE.  
+*bRedraw*<br/>
+[in] TRUE to redraw the property immediately; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -1323,8 +1323,8 @@ virtual void SetOriginalValue(const COleVariant& varValue);
 ```  
   
 ### Parameters  
- [in] *varValue*  
- A value.  
+*varValue*<br/>
+[in] A value.  
   
 ### Remarks  
  Use the [CMFCPropertyGridProperty::ResetOriginalValue](#resetoriginalvalue) method to reset the original value of an edited property.  
@@ -1337,8 +1337,8 @@ virtual void SetValue(const _variant_t& varValue);
 ```  
   
 ### Parameters  
- [in] *varValue*  
- A reference to a value.  
+*varValue*<br/>
+[in] A reference to a value.  
   
 ### Remarks  
   
@@ -1352,11 +1352,11 @@ void Show(
 ```  
   
 ### Parameters  
- [in] *bShow*  
- TRUE to display the current property and its sub-items; FALSE to hide the current property and its sub-items. The default value is TRUE.  
+*bShow*<br/>
+[in] TRUE to display the current property and its sub-items; FALSE to hide the current property and its sub-items. The default value is TRUE.  
   
- [in] *bAdjustLayout*  
- TRUE to recalculate how to draw the label and value of a property and then draw the property; FALSE to use existing calculations to draw the property. The default value is TRUE.  
+*bAdjustLayout*<br/>
+[in] TRUE to recalculate how to draw the label and value of a property and then draw the property; FALSE to use existing calculations to draw the property. The default value is TRUE.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

@@ -137,8 +137,8 @@ void AdaptColors(
 ```  
   
 ### Parameters  
- [in] *clrBase*  
- [in] *clrTone*  
+*clrBase*<br/>
+[in] [in] *clrTone*  
   
 ### Remarks  
   
@@ -152,11 +152,11 @@ int AddIcon(
 ```  
   
 ### Parameters  
- [in] *hIcon*  
- A handle to the icon to be added.  
+*hIcon*<br/>
+[in] A handle to the icon to be added.  
   
- [in] *bAlphaBlend*  
- TRUE if this icon is used with alpha blending; otherwise FALSE.  
+*bAlphaBlend*<br/>
+[in] TRUE if this icon is used with alpha blending; otherwise FALSE.  
   
 ### Return Value  
  The zero-based index of the toolbar image that was added if the method is successful; otherwise -1.  
@@ -175,17 +175,17 @@ int AddImage(
 ```  
   
 ### Parameters  
- [in] *hbmp*  
- The handle to the bitmap to add.  
+*hbmp*<br/>
+[in] The handle to the bitmap to add.  
   
- [in] *bSetBitPerPixel*  
- TRUE if the `CMFCToolBarImages`  object uses the color depth (bits per pixel) of the new image; FALSE if the `CMFCToolbarImages` object keeps the current color depth.  
+*bSetBitPerPixel*<br/>
+[in] TRUE if the `CMFCToolBarImages`  object uses the color depth (bits per pixel) of the new image; FALSE if the `CMFCToolbarImages` object keeps the current color depth.  
   
- [in] *imageList*  
- A reference to a `CMFCToolbarImages` object that contains the image to add.  
+*imageList*<br/>
+[in] A reference to a `CMFCToolbarImages` object that contains the image to add.  
   
- [in] *nIndex*  
- The index in the source `CMFCToolbarImages` object of the image to add.  
+*nIndex*<br/>
+[in] The index in the source `CMFCToolbarImages` object of the image to add.  
   
 ### Return Value  
  The number of toolbar images that the `CMFCToolBarImages`  object maintains after the new bitmap was added successfully; -1 if the operation failed.  
@@ -252,8 +252,8 @@ BOOL CreateFromImageList(const CImageList& imageList);
 ```  
   
 ### Parameters  
- [in] *imageList*  
- The image list to be used as a source for toolbar images.  
+*imageList*<br/>
+[in] The image list to be used as a source for toolbar images.  
   
 ### Return Value  
  Always returns TRUE.  
@@ -271,8 +271,8 @@ static HRGN __stdcall CreateRegionFromImage(
 ```  
   
 ### Parameters  
- [in] *bmp*  
- [in] *clrTransparent*  
+*bmp*<br/>
+[in] [in] *clrTransparent*  
   
 ### Return Value  
   
@@ -286,8 +286,8 @@ BOOL DeleteImage(int iImage);
 ```  
   
 ### Parameters  
- [in] *iImage*  
- Specifies the zero-based index of the image to delete.  
+*iImage*<br/>
+[in] Specifies the zero-based index of the image to delete.  
   
 ### Return Value  
  TRUE if the image was deleted successfully; FALSE if the image index is invalid, the `CMFCToolbarImages` object is temporary, the `CMFCToolbarImages` object does not contain user-defined images, or if some other error occurred.  
@@ -310,35 +310,35 @@ BOOL Draw(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *x*  
- The X coordinate of the left side of the rectangle where the image is to be drawn.  
+*x*<br/>
+[in] The X coordinate of the left side of the rectangle where the image is to be drawn.  
   
- [in] *y*  
- The Y coordinate of the top of the rectangle where the image is to be drawn.  
+*y*<br/>
+[in] The Y coordinate of the top of the rectangle where the image is to be drawn.  
   
- [in] *iImageIndex*  
- The zero-based index of the image to be displayed.  
+*iImageIndex*<br/>
+[in] The zero-based index of the image to be displayed.  
   
- [in] *bHilite*  
- TRUE if the image is to be highlighted; otherwise FALSE.  
+*bHilite*<br/>
+[in] TRUE if the image is to be highlighted; otherwise FALSE.  
   
- [in] *bDisabled*  
- TRUE if the image is to be drawn in the disabled style; otherwise FALSE.  
+*bDisabled*<br/>
+[in] TRUE if the image is to be drawn in the disabled style; otherwise FALSE.  
   
- [in] *bIndeterminate*  
- TRUE if the image is to be drawn in the indeterminate state style; otherwise FALSE.  
+*bIndeterminate*<br/>
+[in] TRUE if the image is to be drawn in the indeterminate state style; otherwise FALSE.  
   
- [in] *bShadow*  
- TRUE if the image is to be drawn with a drop shadow; otherwise FALSE.  
+*bShadow*<br/>
+[in] TRUE if the image is to be drawn with a drop shadow; otherwise FALSE.  
   
- [in] *bInactive*  
- TRUE if the image is to be drawn in the inactive state style; otherwise FALSE.  
+*bInactive*<br/>
+[in] TRUE if the image is to be drawn in the inactive state style; otherwise FALSE.  
   
- [in] *alphaSrc*  
- The alpha channel (opacity) value. A value of 255 means the image is drawn opaque. A value of 0 means the image is drawn transparent. This value is used only for 32 bit color images and for images that displayed a Windows Vista glass style.  
+*alphaSrc*<br/>
+[in] The alpha channel (opacity) value. A value of 255 means the image is drawn opaque. A value of 0 means the image is drawn transparent. This value is used only for 32 bit color images and for images that displayed a Windows Vista glass style.  
   
 ### Return Value  
  TRUE if the specified image was displayed successfully; FALSE if the image index was invalid or some other error occurred.  
@@ -361,14 +361,14 @@ BOOL DrawEx(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- [in] *rect*  
- [in] *iImageIndex*  
- [in] *horzAlign*  
- [in] *vertAlign*  
- [in] *rectSrc*  
- [in] *0*  
- [in] *0)*  
+*pDC*<br/>
+[in] [in] *rect*  
+*iImageIndex*<br/>
+[in] [in] *horzAlign*  
+*vertAlign*<br/>
+[in] [in] *rectSrc*  
+*0*<br/>
+[in] [in] *0)*  
  [in] *alphaSrc*  
   
 ### Return Value  
@@ -395,8 +395,8 @@ void EndDrawImage(CAfxDrawState& ds);
 ```  
   
 ### Parameters  
- [in] *ds*  
- A reference to the `CAfxDrawState` object that was passed to the `PrepareDrawImage` method.  
+*ds*<br/>
+[in] A reference to the `CAfxDrawState` object that was passed to the `PrepareDrawImage` method.  
   
 ##  <a name="extracticon"></a>  CMFCToolBarImages::ExtractIcon  
  Returns the icon that has a specified image index from the toolbar images.  
@@ -406,8 +406,8 @@ HICON ExtractIcon(int nIndex);
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- The zero-based index in the image list at which the image to be extracted as an icon is located.  
+*nIndex*<br/>
+[in] The zero-based index in the image list at which the image to be extracted as an icon is located.  
   
 ### Return Value  
  A handle to the extracted icon, or NULL if *nIndex* is out of range.  
@@ -422,11 +422,11 @@ static void FillDitheredRect(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rect*  
- The coordinates of a rectangle to fill.  
+*rect*<br/>
+[in] The coordinates of a rectangle to fill.  
   
 ### Remarks  
  Use this method to fill a rectangle with a color that is the average of the system colors COLOR_BTNFACE and COLOR_BTNHIGHLIGHT. If the system is using 256 or fewer colors, the rectangle will be filled with a dithered pattern of those two colors instead.  
@@ -484,8 +484,8 @@ SIZE GetImageSize(BOOL bDest=FALSE) const;
 ```  
   
 ### Parameters  
- [in] *bDest*  
- TRUE to retrieve the destination size; FALSE to retrieve the source image size.  
+*bDest*<br/>
+[in] TRUE to retrieve the destination size; FALSE to retrieve the source image size.  
   
 ### Return Value  
  A `SIZE` structure, which specifies the size of an image in pixels.  
@@ -574,8 +574,8 @@ int GetResourceOffset(UINT uiResId) const;
 ```  
   
 ### Parameters  
- [in] *uiResId*  
- An image resource ID.  
+*uiResId*<br/>
+[in] An image resource ID.  
   
 ### Return Value  
  An image index if the method was successful; -1 if the image with the specified resource ID does not exist.  
@@ -599,8 +599,8 @@ BOOL GrayImages(int nGrayImageLuminancePercentage);
 ```  
   
 ### Parameters  
- [in] *nGrayImageLuminancePercentage*  
- Luminance percentage.  
+*nGrayImageLuminancePercentage*<br/>
+[in] Luminance percentage.  
   
 ### Return Value  
  TRUE if images in the collection were grayed successfully; otherwise FALSE.  
@@ -699,20 +699,20 @@ BOOL Load(
 ```  
   
 ### Parameters  
- [in] *uiResID*  
- The ID of a bitmap resource.  
+*uiResID*<br/>
+[in] The ID of a bitmap resource.  
   
- [in] *hinstRes*  
- An instance of the resource DLL.  
+*hinstRes*<br/>
+[in] An instance of the resource DLL.  
   
- [in] *bAdd*  
- TRUE to add the loaded bitmap to the existing bitmap, or FALSE to replace the existing bitmap.  
+*bAdd*<br/>
+[in] TRUE to add the loaded bitmap to the existing bitmap, or FALSE to replace the existing bitmap.  
   
- [in] *lpszBmpFileName*  
- A path to a disk file from which to load the bitmap.  
+*lpszBmpFileName*<br/>
+[in] A path to a disk file from which to load the bitmap.  
   
- [in] *nMaxFileSize*  
- Maximum number of bytes in the bitmap file; or 0 to load the bitmap regardless of file size. If the size of the file exceeds this maximum size, the method returns FALSE and does not load the bitmap.  
+*nMaxFileSize*<br/>
+[in] Maximum number of bytes in the bitmap file; or 0 to load the bitmap regardless of file size. If the size of the file exceeds this maximum size, the method returns FALSE and does not load the bitmap.  
   
 ### Return Value  
  TRUE if the bitmap was loaded successfully; otherwise FALSE.  
@@ -731,8 +731,8 @@ BOOL LoadStr(
 ```  
   
 ### Parameters  
- [in] *lpszResourceName*  
- [in] *hinstRes*  
+*lpszResourceName*<br/>
+[in] [in] *hinstRes*  
  [in] *bAdd*  
   
 ### Return Value  
@@ -749,8 +749,8 @@ static COLORREF __stdcall MapFromSysColor(
 ```  
   
 ### Parameters  
- [in] *color*  
- [in] *bUseRGBQUAD*  
+*color*<br/>
+[in] [in] *bUseRGBQUAD*  
   
 ### Return Value  
   
@@ -767,8 +767,8 @@ BOOL MapTo3dColors(
 ```  
   
 ### Parameters  
- [in] *bUseRGBQUAD*  
- [in] *clrSrc*  
+*bUseRGBQUAD*<br/>
+[in] [in] *clrSrc*  
  [in] *clrDest*  
   
 ### Return Value  
@@ -785,8 +785,8 @@ static COLORREF __stdcall MapToSysColor(
 ```  
   
 ### Parameters  
- [in] *color*  
- [in] *bUseRGBQUAD*  
+*color*<br/>
+[in] [in] *bUseRGBQUAD*  
   
 ### Return Value  
   
@@ -829,11 +829,11 @@ static BOOL MirrorBitmap(
 ```  
   
 ### Parameters  
- [in, out] *hbmp*  
- A handle to bitmap to mirror.  
+*hbmp*<br/>
+[in, out] A handle to bitmap to mirror.  
   
- [in] *cxImage*  
- Width of the image in pixels.  
+*cxImage*<br/>
+[in] Width of the image in pixels.  
   
 ### Return Value  
  TRUE if the image was successfully mirrored; otherwise FALSE.  
@@ -851,8 +851,8 @@ static BOOL __stdcall MirrorBitmapVert(
 ```  
   
 ### Parameters  
- [in] *hbmp*  
- [in] *cyImage*  
+*hbmp*<br/>
+[in] [in] *cyImage*  
   
 ### Return Value  
   
@@ -890,8 +890,8 @@ BOOL PreMultiplyAlpha(HBITMAP hbmp);
 ```  
   
 ### Parameters  
- [in] *hbmp*  
- [in] *bAutoCheckPremlt*  
+*hbmp*<br/>
+[in] [in] *bAutoCheckPremlt*  
   
 ### Return Value  
   
@@ -921,14 +921,14 @@ BOOL PrepareDrawImage(
 ```  
   
 ### Parameters  
- [in] *ds*  
- A reference to `CAfxDrawState` structure, which stores the allocated resources between image rendering stages.  
+*ds*<br/>
+[in] A reference to `CAfxDrawState` structure, which stores the allocated resources between image rendering stages.  
   
- [in] *sizeImageDest*  
- Specifies the size of a destination image.  
+*sizeImageDest*<br/>
+[in] Specifies the size of a destination image.  
   
- [in] *bFadeInactive*  
- TRUE if you want inactive images to be drawn faded.  
+*bFadeInactive*<br/>
+[in] TRUE if you want inactive images to be drawn faded.  
   
 ### Return Value  
  TRUE if the resources required to draw the toolbar image were allocated successfully, otherwise FALSE.  
@@ -973,8 +973,8 @@ static void SetDisabledImageAlpha(BYTE nValue);
 ```  
   
 ### Parameters  
- [in] *nValue*  
- The new value of the alpha channel.  
+*nValue*<br/>
+[in] The new value of the alpha channel.  
   
 ### Remarks  
  Use this method to set a custom alpha value for disabled images. The default value is 127, which causes disabled button images to be semitransparent. If you set a value of 0, disabled images will be completely transparent. If you set a value of 255, disabled images will be completely opaque.  
@@ -1001,8 +1001,8 @@ void SetImageSize(
 ```  
   
 ### Parameters  
- [in] *sizeImage*  
- The new size of toolbar images.  
+*sizeImage*<br/>
+[in] The new size of toolbar images.  
   
 ### Remarks  
  By default the size of the toolbar image is 16x15 pixels. Call this method if you want to use toolbar images of a different size.  
@@ -1060,8 +1060,8 @@ COLORREF SetTransparentColor(COLORREF clrTransparent);
 ```  
   
 ### Parameters  
- [in] *clrTransparent*  
- An RGB value.  
+*clrTransparent*<br/>
+[in] An RGB value.  
   
 ### Return Value  
  The previous transparent color.  
@@ -1079,11 +1079,11 @@ BOOL UpdateImage(
 ```  
   
 ### Parameters  
- [in] *iImage*  
- The zero-based index of the image to update.  
+*iImage*<br/>
+[in] The zero-based index of the image to update.  
   
- [in] *hbmp*  
- A handle to the bitmap from which to update the image.  
+*hbmp*<br/>
+[in] A handle to the bitmap from which to update the image.  
   
 ### Return Value  
  TRUE if the image was updated successfully; FALSE if the image list is not user-defined or temporary.  

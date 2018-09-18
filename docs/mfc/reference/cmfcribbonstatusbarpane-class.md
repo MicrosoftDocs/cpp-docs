@@ -99,32 +99,32 @@ CMFCRibbonStatusBarPane(
 ```  
   
 ### Parameters  
- [in] *nCmdID*  
- Specifies the command ID of the pane.  
+*nCmdID*<br/>
+[in] Specifies the command ID of the pane.  
   
- [in] *lpszText*  
- Specifies text string to be displayed on pane.  
+*lpszText*<br/>
+[in] Specifies text string to be displayed on pane.  
   
- [in] *bIsStatic*  
- If TRUE, the status pane cannot be highlighted or selected by clicking it.  
+*bIsStatic*<br/>
+[in] If TRUE, the status pane cannot be highlighted or selected by clicking it.  
   
- [in] *hIcon*  
- Specifies a handle to an icon to be displayed on the pane.  
+*hIcon*<br/>
+[in] Specifies a handle to an icon to be displayed on the pane.  
   
- [in] *lpszAlmostLargeText*  
- Specifies the longest text string that can be displayed by the pane.  
+*lpszAlmostLargeText*<br/>
+[in] Specifies the longest text string that can be displayed by the pane.  
   
- [in] *hBmpAnimationList*  
- Specifies a handle to an image list that is used for animation.  
+*hBmpAnimationList*<br/>
+[in] Specifies a handle to an image list that is used for animation.  
   
- [in] *cxAnimation*  
- Specifies the width, in pixels, of the icon in the image list that is used for animation.  
+*cxAnimation*<br/>
+[in] Specifies the width, in pixels, of the icon in the image list that is used for animation.  
   
- [in] *clrTrnsp*  
- Specifies the transparent color of images in the image list that are used for animation.  
+*clrTrnsp*<br/>
+[in] Specifies the transparent color of images in the image list that are used for animation.  
   
- [in] *uiAnimationListResID*  
- Specifies a resource ID of an image list that is used for animation.  
+*uiAnimationListResID*<br/>
+[in] Specifies a resource ID of an image list that is used for animation.  
   
 ##  <a name="getalmostlargetext"></a>  CMFCRibbonStatusBarPane::GetAlmostLargeText  
  Gets the longest text string that the status bar pane can display.  
@@ -216,8 +216,8 @@ void SetAlmostLargeText(LPCTSTR lpszAlmostLargeText);
 ```  
   
 ### Parameters  
- [in] *lpszAlmostLargeText*  
- Specifies the longest string that can be displayed on the status bar pane without truncation.  
+*lpszAlmostLargeText*<br/>
+[in] Specifies the longest string that can be displayed on the status bar pane without truncation.  
   
 ### Remarks  
  The library calculates the size of text that *lpszAlmostLargeText* specifies and resizes the pane accordingly. The text will be truncated if it still does not fit in the pane.  
@@ -238,17 +238,17 @@ BOOL SetAnimationList(
 ```  
   
 ### Parameters  
- [in] *hBmpAnimationList*  
- Specifies a handle to an image list.  
+*hBmpAnimationList*<br/>
+[in] Specifies a handle to an image list.  
   
- [in] *cxAnimation*  
- Specifies the width, in pixels, of the frame in the image list.  
+*cxAnimation*<br/>
+[in] Specifies the width, in pixels, of the frame in the image list.  
   
- [in] *clrTransp*  
- Specifies the transparent color of the image list.  
+*clrTransp*<br/>
+[in] Specifies the transparent color of the image list.  
   
- [in] *uiAnimationListResID*  
- Specifies the resource ID of the image list.  
+*uiAnimationListResID*<br/>
+[in] Specifies the resource ID of the image list.  
   
 ### Return Value  
  TRUE if the image list is successfully attached to the status bar pane; FALSE otherwise.  
@@ -261,8 +261,8 @@ void SetTextAlign(int nAlign);
 ```  
   
 ### Parameters  
- [in] *nAlign*  
- Specifies the text alignment.  
+*nAlign*<br/>
+[in] Specifies the text alignment.  
   
 ### Remarks  
  *nAlign* can have one of the following values:  
@@ -283,11 +283,11 @@ void StartAnimation(
 ```  
   
 ### Parameters  
- [in] *nFrameDelay*  
- Specifies the animation frame rate, in milliseconds.  
+*nFrameDelay*<br/>
+[in] Specifies the animation frame rate, in milliseconds.  
   
- [in] *nDuration*  
- Specifies how long to play the animation, in milliseconds. Use -1 for an infinite loop.  
+*nDuration*<br/>
+[in] Specifies how long to play the animation, in milliseconds. Use -1 for an infinite loop.  
   
 ### Remarks  
  You must specify a handle to an image list before you call `StartAnimation` by using `SetAnimationList`.  

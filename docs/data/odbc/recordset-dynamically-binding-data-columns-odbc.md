@@ -76,20 +76,16 @@ Building Lists of Columns to Bind Dynamically
      One approach is to add a loop to your main recordset's `DoFieldExchange` function that loops through your list of new columns, calling the appropriate RFX function for each column in the list. On each RFX call, pass a column name from the column name list and a storage location in the corresponding member of the result value list.  
   
 ###  <a name="_core_lists_of_columns"></a> Lists of Columns  
- The four lists you need to work with are shown in the following table.  
-  
- **Current-Table-Columns (List 1 in the illustration)** 
- A list of the columns currently in the table on the data source. This list might match the list of columns currently bound in your recordset.  
-  
- **Bound-Recordset-Columns (List 2 in the illustration)**  
- A list of the columns bound in your recordset. These columns already have RFX statements in your `DoFieldExchange` function.  
-  
- **Columns-To-Bind-Dynamically (List 3 in the illustration)**  
- A list of columns in the table but not in your recordset. These are the columns you want to bind dynamically.  
-  
- **Dynamic-Column-Values (List 4 in the illustration)**  
- A list containing storage for the values retrieved from the columns you bind dynamically. Elements of this list correspond to those in Columns-to-Bind-Dynamically, one to one.  
-  
+
+The four lists you need to work with are shown in the following table.  
+
+|||
+|-|-|  
+**Current-Table-Columns**| (List 1 in the illustration) A list of the columns currently in the table on the data source. This list might match the list of columns currently bound in your recordset.|
+|**Bound-Recordset-Columns**| (List 2 in the illustration) A list of the columns bound in your recordset. These columns already have RFX statements in your `DoFieldExchange` function.|
+|**Columns-To-Bind-Dynamically**| (List 3 in the illustration) A list of columns in the table but not in your recordset. These are the columns you want to bind dynamically.|
+|**Dynamic-Column-Values**| (List 4 in the illustration) A list containing storage for the values retrieved from the columns you bind dynamically. Elements of this list correspond to those in Columns-to-Bind-Dynamically, one to one.|
+
 ###  <a name="_core_building_your_lists"></a> Building Your Lists  
  With a general strategy in mind, you can turn to the details. The procedures in the rest of this topic show you how to build the lists shown in [Lists of Columns](#_core_lists_of_columns). The procedures guide you through:  
   

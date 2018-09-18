@@ -102,10 +102,10 @@ virtual BOOL Create(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *dwStyle*|A bitwise combination of styles to be applied to the control. For more information, see [Edit Styles](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|  
-|[in] *rect*|A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that contains the position and size of the control.|  
-|[in] *pParentWnd*|A non-null pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control.|  
-|[in] *nID*|The ID of the control.|  
+|*dwStyle*|[in] A bitwise combination of styles to be applied to the control. For more information, see [Edit Styles](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|  
+|*rect*|[in] A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that contains the position and size of the control.|  
+|*pParentWnd*|[in] A non-null pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control.|  
+|*nID*|[in] The ID of the control.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -126,11 +126,11 @@ virtual BOOL CreateEx(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *dwExStyle*|A bitwise combination (OR) of extended styles to be applied to the control. For more information, see the *dwExStyle* parameter of the [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) function.|  
-|[in] *dwStyle*|A bitwise combination (OR) of styles to be applied to the control. For more information, see [Edit Styles](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|  
-|[in] *rect*|A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that contains the position and size of the control.|  
-|[in] *pParentWnd*|A non-null pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control.|  
-|[in] *nID*|The ID of the control.|  
+|*dwExStyle*|[in] A bitwise combination (OR) of extended styles to be applied to the control. For more information, see the *dwExStyle* parameter of the [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) function.|  
+|*dwStyle*|[in] A bitwise combination (OR) of styles to be applied to the control. For more information, see [Edit Styles](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|  
+|*rect*|[in] A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that contains the position and size of the control.|  
+|*pParentWnd*|[in] A non-null pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control.|  
+|*nID*|[in] The ID of the control.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -158,10 +158,9 @@ HRESULT GetAddress(PNC_ADDRESS pAddress) const;
 ```  
   
 ### Parameters  
-  
-|Parameter|Description|  
-|---------------|-----------------|  
-|[in, out] *pAddress*|Pointer to an [NC_ADDRESS](/windows/desktop/api/shellapi/ns-shellapi-tagnc_address) structure.  Set the *pAddrInfo* member of this structure to the address of a [NET_ADDRESS_INFO](https://msdn.microsoft.com/library/windows/desktop/bb773346) structure before you call the GetAddress method.|  
+
+*pAddress*<br/>
+[in, out] Pointer to an [NC_ADDRESS](/windows/desktop/api/shellapi/ns-shellapi-tagnc_address) structure.  Set the *pAddrInfo* member of this structure to the address of a [NET_ADDRESS_INFO](https://msdn.microsoft.com/library/windows/desktop/bb773346) structure before you call the GetAddress method.
   
 ### Return Value  
  The value S_OK if this method is successful; otherwise, a COM error code. For more information about the possible error codes, see the Return Value section of the [NetAddr_GetAddress](/windows/desktop/api/shellapi/nf-shellapi-netaddr_getaddress) macro.  
@@ -197,7 +196,7 @@ HRESULT SetAllowType(DWORD dwAddrMask);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *dwAddrMask*|A bitwise combination (OR) of flags that specifies the types of addresses the network address control can support. For more information, see [NET_STRING](https://msdn.microsoft.com/library/windows/desktop/bb762586).|  
+|*dwAddrMask*|[in] A bitwise combination (OR) of flags that specifies the types of addresses the network address control can support. For more information, see [NET_STRING](https://msdn.microsoft.com/library/windows/desktop/bb762586).|  
   
 ### Return Value  
  S_OK if this method is successful; otherwise, a COM error code.  

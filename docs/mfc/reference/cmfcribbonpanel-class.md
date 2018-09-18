@@ -116,8 +116,8 @@ virtual void Add(CMFCRibbonBaseElement* pElem);
 ```  
   
 ### Parameters  
- [in, out] *pElem*  
- Pointer to a ribbon element.  
+*pElem*<br/>
+[in, out] Pointer to a ribbon element.  
   
 ### Remarks  
   
@@ -143,17 +143,17 @@ UINT uiDisabledResID = 0);
 ```  
   
 ### Parameters  
- [in] *uiToolbarResID*  
- Specifies the resource ID of the toolbar to add.  
+*uiToolbarResID*<br/>
+[in] Specifies the resource ID of the toolbar to add.  
   
- [in] *uiColdResID*  
- Specifies the resource ID of the toolbar's cold images.  
+*uiColdResID*<br/>
+[in] Specifies the resource ID of the toolbar's cold images.  
   
- [in] *uiHotResID*  
- Specifies the resource ID of the toolbar's hot images.  
+*uiHotResID*<br/>
+[in] Specifies the resource ID of the toolbar's hot images.  
   
- [in] *uiDisabledResID*  
- Specifies the resource ID of the toolbar's disabled images.  
+*uiDisabledResID*<br/>
+[in] Specifies the resource ID of the toolbar's disabled images.  
   
 ### Return Value  
  Call this method to add a toolbar to the ribbon panel. The toolbar will be added next to the ribbon element added by the previous call to [CMFCRibbonPanel::Add](#add).  
@@ -173,14 +173,14 @@ CMFCRibbonPanel(CMFCRibbonGallery* pPaletteButton);
 ```  
   
 ### Parameters  
- [in] *lpszName*  
- The name of the ribbon panel.  
+*lpszName*<br/>
+[in] The name of the ribbon panel.  
   
- [in] *hIcon*  
- Handle to the icon of the default button for the ribbon panel.  
+*hIcon*<br/>
+[in] Handle to the icon of the default button for the ribbon panel.  
   
- [in] *pPaletteButton*  
- Pointer to a ribbon gallery for the ribbon panel.  
+*pPaletteButton*<br/>
+[in] Pointer to a ribbon gallery for the ribbon panel.  
   
 ##  <a name="findbydata"></a>  CMFCRibbonPanel::FindByData  
  Retrieves the ribbon element that is associated with the specified data.  
@@ -190,8 +190,8 @@ CMFCRibbonBaseElement* FindByData(DWORD_PTR dwData) const;
 ```  
   
 ### Parameters  
- [in] *dwData*  
- The data associated with a ribbon element.  
+*dwData*<br/>
+[in] The data associated with a ribbon element.  
   
 ### Return Value  
  Pointer to a ribbon element if the method was successful; otherwise NULL.  
@@ -206,8 +206,8 @@ CMFCRibbonBaseElement* FindByID(UINT uiCmdID) const;
 ```  
   
 ### Parameters  
- [in] *uiCmdID*  
- The command ID of a ribbon element.  
+*uiCmdID*<br/>
+[in] The command ID of a ribbon element.  
   
 ### Return Value  
  The ribbon element that is identified by the specified command ID; otherwise NULL if no ribbon element is identified with the specified command ID.  
@@ -278,8 +278,8 @@ CMFCRibbonBaseElement* GetElement(int nIndex) const;
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the zero-based index of the element to retrieve.  
+*nIndex*<br/>
+[in] Specifies the zero-based index of the element to retrieve.  
   
 ### Return Value  
  A valid pointer to the base ribbon element located at position *nIndex* in the ribbon panel, or NULL if there is no element at the specified index.  
@@ -292,8 +292,8 @@ void GetElements(CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arEleme
 ```  
   
 ### Parameters  
- [out] *arElements*  
- An array to fill with all the ribbon elements that are contained in the ribbon panel.  
+*arElements*<br/>
+[out] An array to fill with all the ribbon elements that are contained in the ribbon panel.  
   
 ### Remarks  
   
@@ -307,11 +307,11 @@ CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arElements);
 ```  
   
 ### Parameters  
- [in] *uiCmdID*  
- Command ID for a ribbon element.  
+*uiCmdID*<br/>
+[in] Command ID for a ribbon element.  
   
- [in] *arElements*  
- Array of ribbon elements.  
+*arElements*<br/>
+[in] Array of ribbon elements.  
   
 ### Remarks  
  Only ribbon elements that are contained in the ribbon panel are tested.  
@@ -336,8 +336,8 @@ virtual int GetIndex(CMFCRibbonBaseElement* pElem) const;
 ```  
   
 ### Parameters  
- [in] *pElem*  
- Pointer to a ribbon element.  
+*pElem*<br/>
+[in] Pointer to a ribbon element.  
   
 ### Return Value  
  Zero-based index of the specified ribbon element if the method was successful; otherwise -1.  
@@ -352,8 +352,8 @@ void GetItemIDsList(CList<UINT, UINT>& lstItems) const;
 ```  
   
 ### Parameters  
- [out] *lstItems*  
- The list of command IDs for ribbon elements that are contained in the ribbon panel.  
+*lstItems*<br/>
+[out] The list of command IDs for ribbon elements that are contained in the ribbon panel.  
   
 ### Remarks  
   
@@ -409,8 +409,8 @@ virtual BOOL GetPreferedMenuLocation(CRect& rect);
 ```  
   
 ### Parameters  
- [out] *rect*  
- This parameter is not used.  
+*rect*<br/>
+[out] This parameter is not used.  
   
 ### Return Value  
  Always returns FALSE.  
@@ -450,8 +450,8 @@ BOOL HasElement(const CMFCRibbonBaseElement* pElem) const;
 ```  
   
 ### Parameters  
- [in] *pElem*  
- Pointer to a ribbon element.  
+*pElem*<br/>
+[in] Pointer to a ribbon element.  
   
 ### Return Value  
  TRUE if the ribbon panel contains the specified ribbon element; otherwise FALSE.  
@@ -468,11 +468,11 @@ CPoint point);
 ```  
   
 ### Parameters  
- [in] *bHighlight*  
- TRUE to highlight the ribbon panel; FALSE to unhighlight the ribbon panel.  
+*bHighlight*<br/>
+[in] TRUE to highlight the ribbon panel; FALSE to unhighlight the ribbon panel.  
   
- [in] *point*  
- The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
+*point*<br/>
+[in] The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
   
 ### Remarks  
   
@@ -486,11 +486,11 @@ BOOL bCheckPanelCaption = FALSE);
 ```  
   
 ### Parameters  
- [in] *point*  
- The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
+*point*<br/>
+[in] The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
   
- [in] *bCheckPanelCaption*  
- TRUE to test the ribbon panel caption; otherwise FALSE.  
+*bCheckPanelCaption*<br/>
+[in] TRUE to test the ribbon panel caption; otherwise FALSE.  
   
 ### Return Value  
  Pointer to a ribbon element if the specified point is located in it; otherwise NULL.  
@@ -506,8 +506,8 @@ virtual int HitTestEx(CPoint point) const;
 ```  
   
 ### Parameters  
- [in] *point*  
- The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
+*point*<br/>
+[in] The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
   
 ### Return Value  
  The zero-based index of the ribbon element that has the specified point located in it; otherwise -1.  
@@ -525,11 +525,11 @@ int nIndex);
 ```  
   
 ### Parameters  
- [in, out] *pElem*  
- Pointer to a ribbon element.  
+*pElem*<br/>
+[in, out] Pointer to a ribbon element.  
   
- [in] *nIndex*  
- Zero-based value, ranging from -1 to the number of ribbon elements that are contained in the array.  
+*nIndex*<br/>
+[in] Zero-based value, ranging from -1 to the number of ribbon elements that are contained in the array.  
   
 ### Return Value  
  TRUE if the ribbon element was inserted successfully; otherwise FALSE.  
@@ -545,8 +545,8 @@ virtual BOOL InsertSeparator(int nIndex);
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the zero-based index where the separator is inserted.  
+*nIndex*<br/>
+[in] Specifies the zero-based index where the separator is inserted.  
   
 ### Return Value  
  TRUE if the separator has been inserted successfully; otherwise, FALSE.  
@@ -650,11 +650,11 @@ int nHeight);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context for the ribbon panel.  
+*pDC*<br/>
+[in] Pointer to a device context for the ribbon panel.  
   
- [in] *nHeight*  
- The height of the ribbon panel.  
+*nHeight*<br/>
+[in] The height of the ribbon panel.  
   
 ### Remarks  
  A ribbon panel changes its layout configuration as the available width changes.  
@@ -669,11 +669,11 @@ BOOL bDelete = TRUE);
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the zero-based index of the element that is removed from the ribbon panel.  
+*nIndex*<br/>
+[in] Specifies the zero-based index of the element that is removed from the ribbon panel.  
   
- [in] *bDelete*  
- TRUE to delete the element being removed; otherwise, FALSE.  
+*bDelete*<br/>
+[in] TRUE to delete the element being removed; otherwise, FALSE.  
   
 ### Return Value  
  TRUE if the element has been removed and deleted (if *bDelete* is TRUE); FALSE if the element was not removed or if there is no ribbon element located at *nIndex*.  
@@ -701,8 +701,8 @@ CMFCRibbonBaseElement* pElem);
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the zero-based index of the element to replace.  
+*nIndex*<br/>
+[in] Specifies the zero-based index of the element to replace.  
   
  [in] [out] *pElem*  
  A valid pointer to the element that replaces the original element.  
@@ -723,8 +723,8 @@ CMFCRibbonBaseElement* pElem);
 ```  
   
 ### Parameters  
- [in] *uiCmdID*  
- Specifies the command ID of the element to replace.  
+*uiCmdID*<br/>
+[in] Specifies the command ID of the element to replace.  
   
  [in] [out] *pElem*  
  A valid pointer to the element that will replace the original element.  
@@ -743,8 +743,8 @@ void SetCenterColumnVert(BOOL bSet = TRUE);
 ```  
   
 ### Parameters  
- [in] *bSet*  
- TRUE to center the vertical positions of ribbon elements within their display rectangle; FALSE to disable this feature.  
+*bSet*<br/>
+[in] TRUE to center the vertical positions of ribbon elements within their display rectangle; FALSE to disable this feature.  
   
 ### Remarks  
   
@@ -756,8 +756,8 @@ void SetData(DWORD_PTR dwData);
 ```  
   
 ### Parameters  
- [in] *dwData*  
- Specifies the user-defined data to set.  
+*dwData*<br/>
+[in] Specifies the user-defined data to set.  
   
 ### Remarks  
  Call this method to associate user-defined data with the ribbon panel.  
@@ -781,20 +781,20 @@ BOOL bRightAlign = FALSE);
 ```  
   
 ### Parameters  
- [in] *uiCmdID*  
- Specifies the command ID of the ribbon element where the menu is added.  
+*uiCmdID*<br/>
+[in] Specifies the command ID of the ribbon element where the menu is added.  
   
- [in] *hMenu*  
- Specifies the handle to the Windows menu to add to the ribbon panel.  
+*hMenu*<br/>
+[in] Specifies the handle to the Windows menu to add to the ribbon panel.  
   
- [in] *bIsDefautCommand*  
- TRUE to specify that the command associated with the ribbon element should be executed if the ribbon element is clicked. In this case, the menu is only opened when the user clicks the arrow next to the ribbon element. FALSE to specify that the command associated with the ribbon element should not be executed if the ribbon element is clicked. In this case, the popup menu appears regardless of where the user clicks on the element.  
+*bIsDefautCommand*<br/>
+[in] TRUE to specify that the command associated with the ribbon element should be executed if the ribbon element is clicked. In this case, the menu is only opened when the user clicks the arrow next to the ribbon element. FALSE to specify that the command associated with the ribbon element should not be executed if the ribbon element is clicked. In this case, the popup menu appears regardless of where the user clicks on the element.  
   
- [in] *bRightAlign*  
- TRUE to specify that the popup menu is right-aligned; otherwise, FALSE.  
+*bRightAlign*<br/>
+[in] TRUE to specify that the popup menu is right-aligned; otherwise, FALSE.  
   
- [in] *uiMenuResID*  
- Specifies the resource ID of the menu to add to the ribbon panel.  
+*uiMenuResID*<br/>
+[in] Specifies the resource ID of the menu to add to the ribbon panel.  
   
 ### Return Value  
  TRUE if the menu has been assigned to the ribbon element; otherwise, FALSE.  
@@ -812,8 +812,8 @@ CRuntimeClass* pRTC);
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the zero-based index of the ribbon element to add.  
+*nIndex*<br/>
+[in] Specifies the zero-based index of the ribbon element to add.  
   
  [in] [out] *pRTC*  
  A pointer to the runtime class information for the ribbon element that is added to the ribbon panel.  
@@ -834,8 +834,8 @@ CRuntimeClass* pRTC);
 ```  
   
 ### Parameters  
- [in] *uiCmdID*  
- Specifies the command ID of the ribbon element to add.  
+*uiCmdID*<br/>
+[in] Specifies the command ID of the ribbon element to add.  
   
  [in] [out] *pRTC*  
  A pointer to the runtime class information associated with the ribbon element that is added to the ribbon panel.  
@@ -880,8 +880,8 @@ void SetJustifyColumns(BOOL bSet = TRUE);
 ```  
   
 ### Parameters  
- [in] *bSet*  
- TRUE to adjust the width of ribbon elements in the same column to the width of the largest ribbon element in the column; FALSE to disable this width adjustment.  
+*bSet*<br/>
+[in] TRUE to adjust the width of ribbon elements in the same column to the width of the largest ribbon element in the column; FALSE to disable this width adjustment.  
   
 ### Remarks  
  When this feature is enabled in a ribbon panel, the widths of ribbon elements in the same column are adjusted to the width of the largest ribbon element in the same column.  
@@ -894,8 +894,8 @@ void SetKeys(LPCTSTR lpszKeys);
 ```  
   
 ### Parameters  
- [in] *lpszKeys*  
- The keytip for the default button of the ribbon panel.  
+*lpszKeys*<br/>
+[in] The keytip for the default button of the ribbon panel.  
   
 ### Remarks  
  The default button is displayed when a ribbon panel has insufficient space to display its ribbon elements.  
@@ -908,8 +908,8 @@ CMFCRibbonPanelMenu* ShowPopup(CMFCRibbonDefaultPanelButton* pButton = NULL);
 ```  
   
 ### Parameters  
- [in] *pButton*  
- Pointer to the default button for the ribbon panel.  
+*pButton*<br/>
+[in] Pointer to the default button for the ribbon panel.  
   
 ### Return Value  
  Pointer to the pop-up menu for the ribbon panel if the method was successful; otherwise NULL.  

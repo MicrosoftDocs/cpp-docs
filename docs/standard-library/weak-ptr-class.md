@@ -44,8 +44,8 @@ public:
 
 ### Parameters
 
-*Ty*  
- The type controlled by the weak pointer.
+*Ty*<br/>
+The type controlled by the weak pointer.
 
 ## Remarks
 
@@ -257,14 +257,14 @@ weak_ptr& operator=(const shared_ptr<Other>& sp);
 
 ### Parameters
 
-*Other*  
- The type controlled by the argument shared/weak pointer.
+*Other*<br/>
+The type controlled by the argument shared/weak pointer.
 
-*wp*  
- The weak pointer to copy.
+*wp*<br/>
+The weak pointer to copy.
 
-*sp*  
- The shared pointer to copy.
+*sp*<br/>
+The shared pointer to copy.
 
 ### Remarks
 
@@ -316,8 +316,8 @@ bool owner_before(const weak_ptr<Other>& ptr);
 
 ### Parameters
 
-*ptr*  
- An `lvalue` reference to either a `shared_ptr` or a `weak_ptr`.
+*ptr*<br/>
+An `lvalue` reference to either a `shared_ptr` or a `weak_ptr`.
 
 ### Remarks
 
@@ -376,8 +376,8 @@ void swap(weak_ptr& wp);
 
 ### Parameters
 
-*wp*  
- The weak pointer to swap with.
+*wp*<br/>
+The weak pointer to swap with.
 
 ### Remarks
 
@@ -496,14 +496,14 @@ weak_ptr(const shared_ptr<Other>& sp);
 
 ### Parameters
 
-*Other*  
- The type controlled by the argument shared/weak pointer.
+*Other*<br/>
+The type controlled by the argument shared/weak pointer.
 
-*wp*  
- The weak pointer to copy.
+*wp*<br/>
+The weak pointer to copy.
 
-*sp*  
- The shared pointer to copy.
+*sp*<br/>
+The shared pointer to copy.
 
 ### Remarks
 

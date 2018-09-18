@@ -26,7 +26,7 @@ void __writeeflags(unsigned __int64 Value);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `Value`|The value to write to the EFLAGS register. The `Value` parameter is 32 bits long for a 32-bit platform and 64 bits long for a 64-bit platform.|  
+|*Value*|[in] The value to write to the EFLAGS register. The `Value` parameter is 32 bits long for a 32-bit platform and 64 bits long for a 64-bit platform.|  
   
 ## Remarks  
  These routines are available only as intrinsics.  

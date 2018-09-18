@@ -66,23 +66,23 @@ CMFCPropertyGridFontProperty(
 ```  
   
 ### Parameters  
- [in] *strName*  
- The name of the property.  
+*strName*<br/>
+[in] The name of the property.  
   
- [in] *lf*  
- A logical font structure that specifies the attributes of the font.  
+*lf*<br/>
+[in] A logical font structure that specifies the attributes of the font.  
   
- [in] *dwFontDialogFlags*  
- Styles that are applied to the font dialog box that is displayed when you click the property value drop-down button. The default value is the bitwise combination (OR) of CF_EFFECTS and CF_SCREENFONTS. For more information, see the *Flags* parameter of the [CHOOSEFONT Structure](/windows/desktop/api/commdlg/ns-commdlg-tagchoosefonta).  
+*dwFontDialogFlags*<br/>
+[in] Styles that are applied to the font dialog box that is displayed when you click the property value drop-down button. The default value is the bitwise combination (OR) of CF_EFFECTS and CF_SCREENFONTS. For more information, see the *Flags* parameter of the [CHOOSEFONT Structure](/windows/desktop/api/commdlg/ns-commdlg-tagchoosefonta).  
   
- [in] *lpszDescr*  
- Description of the font property. The default value is NULL.  
+*lpszDescr*<br/>
+[in] Description of the font property. The default value is NULL.  
   
- [in] *dwData*  
- Application-specific data, such as an integer or a pointer to other data that is associated with the property. The default value is 0.  
+*dwData*<br/>
+[in] Application-specific data, such as an integer or a pointer to other data that is associated with the property. The default value is 0.  
   
- [in] *color*  
- The color of the font. The default value is the default color.  
+*color*<br/>
+[in] The color of the font. The default value is the default color.  
   
 ### Remarks  
  A `CMFCPropertyGridFontProperty` object represents a font property in a property grid font control.  

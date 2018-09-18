@@ -103,17 +103,17 @@ CMFCRibbonEdit();
 ```  
   
 ### Parameters  
- [in] *nID*  
- Command ID for the `CMFCRibbonEdit` control.  
+*nID*<br/>
+[in] Command ID for the `CMFCRibbonEdit` control.  
   
- [in] *nWidth*  
- The width, in pixels, of the text box for the `CMFCRibbonEdit` control.  
+*nWidth*<br/>
+[in] The width, in pixels, of the text box for the `CMFCRibbonEdit` control.  
   
- [in] *lpszLabel*  
- The label for the `CMFCRibbonEdit` control.  
+*lpszLabel*<br/>
+[in] The label for the `CMFCRibbonEdit` control.  
   
- [in] *nImage*  
- Index of the small image to use for the `CMFCRibbonEdit` control. The collection of small images is maintained by the parent ribbon category.  
+*nImage*<br/>
+[in] Index of the small image to use for the `CMFCRibbonEdit` control. The collection of small images is maintained by the parent ribbon category.  
   
 ### Remarks  
  The `CMFCRibbonEdit` control does not use a large image.  
@@ -126,8 +126,8 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```  
   
 ### Parameters  
- [in] *src*  
- The source `CMFCRibbonEdit` object.  
+*src*<br/>
+[in] The source `CMFCRibbonEdit` object.  
   
 ### Remarks  
  The *src* parameter must be of type `CMFCRibbonEdit`.  
@@ -142,11 +142,11 @@ virtual CMFCRibbonRichEditCtrl* CreateEdit(
 ```  
   
 ### Parameters  
- [in] *pWndParent*  
- A pointer to the parent window of the `CMFCRibbonEdit` object.  
+*pWndParent*<br/>
+[in] A pointer to the parent window of the `CMFCRibbonEdit` object.  
   
- [in] *dwEditStyle*  
- Specifies the style of the text box. You can combine the window styles listed in the Remarks section with the [edit control styles](/windows/desktop/Controls/edit-control-styles) that are described in the Windows SDK.  
+*dwEditStyle*<br/>
+[in] Specifies the style of the text box. You can combine the window styles listed in the Remarks section with the [edit control styles](/windows/desktop/Controls/edit-control-styles) that are described in the Windows SDK.  
   
 ### Return Value  
  A pointer to the new text box if the method was successful; otherwise, NULL.  
@@ -195,11 +195,11 @@ void EnableSpinButtons(
 ```  
   
 ### Parameters  
- [in] *nMin*  
- The minimum value of the spin button.  
+*nMin*<br/>
+[in] The minimum value of the spin button.  
   
- [in] *nMax*  
- The maximum value of the spin button.  
+*nMax*<br/>
+[in] The maximum value of the spin button.  
   
 ### Remarks  
  Spin buttons display an up and down arrow and enable users to move through a fixed set of values.  
@@ -212,8 +212,8 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context for the `CMFCRibbonEdit` object.  
+*pDC*<br/>
+[in] Pointer to a device context for the `CMFCRibbonEdit` object.  
   
 ### Return Value  
  The compact size of the `CMFCRibbonEdit` object.  
@@ -240,8 +240,8 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context for the `CMFCRibbonEdit` object.  
+*pDC*<br/>
+[in] Pointer to a device context for the `CMFCRibbonEdit` object.  
   
 ### Return Value  
  The intermediate size of the `CMFCRibbonEdit` object.  
@@ -277,8 +277,8 @@ int GetWidth(BOOL bInFloatyMode = FALSE) const;
 ```  
   
 ### Parameters  
- [in] *bInFloatyMode*  
- TRUE if the `CMFCRibbonEdit` control is in floating mode; otherwise, FALSE.  
+*bInFloatyMode*<br/>
+[in] TRUE if the `CMFCRibbonEdit` control is in floating mode; otherwise, FALSE.  
   
 ### Return Value  
  The width, in pixels, of the `CMFCRibbonEdit` control.  
@@ -355,8 +355,8 @@ virtual void OnAfterChangeRect(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context for the `CMFCRibbonEdit` control.  
+*pDC*<br/>
+[in] Pointer to a device context for the `CMFCRibbonEdit` control.  
   
 ### Remarks  
   
@@ -368,8 +368,8 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context for the `CMFCRibbonEdit` control.  
+*pDC*<br/>
+[in] Pointer to a device context for the `CMFCRibbonEdit` control.  
   
 ### Remarks  
   
@@ -381,8 +381,8 @@ virtual void OnDrawLabelAndImage(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context for the `CMFCRibbonEdit` control.  
+*pDC*<br/>
+[in] Pointer to a device context for the `CMFCRibbonEdit` control.  
   
 ### Remarks  
   
@@ -400,23 +400,23 @@ virtual void OnDrawOnList(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context for the `CMFCRibbonEdit` control.  
+*pDC*<br/>
+[in] Pointer to a device context for the `CMFCRibbonEdit` control.  
   
- [in] *strText*  
- The display text [](../../mfc/reference/cmfcribbonedit-class.md "cmfcribbonedit class").  
+*strText*<br/>
+[in] The display text [](../../mfc/reference/cmfcribbonedit-class.md "cmfcribbonedit class").  
   
- [in] *nTextOffset*  
- Distance, in pixels, from the left side of the list box to the display text.  
+*nTextOffset*<br/>
+[in] Distance, in pixels, from the left side of the list box to the display text.  
   
- [in] *rect*  
- The display rectangle for the `CMFCRibbonEdit` control.  
+*rect*<br/>
+[in] The display rectangle for the `CMFCRibbonEdit` control.  
   
- [in] *bIsSelected*  
- This parameter is not used.  
+*bIsSelected*<br/>
+[in] This parameter is not used.  
   
- [in] *bHighlighted*  
- This parameter is not used.  
+*bHighlighted*<br/>
+[in] This parameter is not used.  
   
 ### Remarks  
  The commands list box displays ribbon controls to enable users to customize the quick access toolbar.  
@@ -429,8 +429,8 @@ virtual void OnEnable(BOOL bEnable);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable the control; FALSE to disable the control.  
+*bEnable*<br/>
+[in] TRUE to enable the control; FALSE to disable the control.  
   
 ### Remarks  
   
@@ -442,8 +442,8 @@ virtual void OnHighlight(BOOL bHighlight);
 ```  
   
 ### Parameters  
- [in] *bHighlight*  
- TRUE if the pointer is in the bounds of the `CMFCRibbonEdit` control; otherwise, FALSE.  
+*bHighlight*<br/>
+[in] TRUE if the pointer is in the bounds of the `CMFCRibbonEdit` control; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -455,8 +455,8 @@ virtual BOOL OnKey(BOOL bIsMenuKey);
 ```  
   
 ### Parameters  
- [in] *bIsMenuKey*  
- TRUE if the keytip displays a pop-up menu; otherwise, FALSE.  
+*bIsMenuKey*<br/>
+[in] TRUE if the keytip displays a pop-up menu; otherwise, FALSE.  
   
 ### Return Value  
  TRUE if the event was handled; otherwise, FALSE.  
@@ -471,8 +471,8 @@ virtual void OnLButtonDown(CPoint point);
 ```  
   
 ### Parameters  
- [in] *point*  
- This parameter is not used.  
+*point*<br/>
+[in] This parameter is not used.  
   
 ### Remarks  
   
@@ -484,8 +484,8 @@ virtual void OnLButtonUp(CPoint point);
 ```  
   
 ### Parameters  
- [in] *point*  
- This parameter is not used.  
+*point*<br/>
+[in] This parameter is not used.  
   
 ### Remarks  
   
@@ -497,8 +497,8 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ```  
   
 ### Parameters  
- [in] *bIsRTL*  
- TRUE if the layout is right-to-left; FALSE if the layout is left-to-right.  
+*bIsRTL*<br/>
+[in] TRUE if the layout is right-to-left; FALSE if the layout is left-to-right.  
   
 ### Remarks  
   
@@ -510,8 +510,8 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### Parameters  
- [in] *bShow*  
- TRUE to show the control; FALSE to hide the control.  
+*bShow*<br/>
+[in] TRUE to show the control; FALSE to hide the control.  
   
 ### Remarks  
   
@@ -554,8 +554,8 @@ void SetEditText(CString strText);
 ```  
   
 ### Parameters  
- [in] *strText*  
- The text for the text box.  
+*strText*<br/>
+[in] The text for the text box.  
   
 ##  <a name="settextalign"></a>  CMFCRibbonEdit::SetTextAlign  
  Sets the text alignment of the text box.  
@@ -565,8 +565,8 @@ void SetTextAlign(int nAlign);
 ```  
   
 ### Parameters  
- [in] *nAlign*  
- A text alignment enumerated value. See the Remarks section for possible values.  
+*nAlign*<br/>
+[in] A text alignment enumerated value. See the Remarks section for possible values.  
   
 ### Remarks  
  The parameter *nAlign* is one of the following edit control styles:  
@@ -589,8 +589,8 @@ void SetWidth(
 ```  
   
 ### Parameters  
- [in] *nWidth*  
- The width, in pixels, of the text box.  
+*nWidth*<br/>
+[in] The width, in pixels, of the text box.  
   
  *bInFloatyMode*  
  TRUE to set the width for floating mode; FALSE to set the width for regular mode.  

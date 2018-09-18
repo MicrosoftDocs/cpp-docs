@@ -23,11 +23,11 @@ void __writedr(unsigned DebugRegister, unsigned __int64 DebugValue);
 ```  
   
 #### Parameters  
- [in] `DebugRegister`  
- A number from 0 through 7 that identifies the debug register.  
+*DebugRegister*<br/>
+[in] A number from 0 through 7 that identifies the debug register.  
   
- [in] `DebugValue`  
- A value to write to the debug register.  
+*DebugValue*<br/>
+[in] A value to write to the debug register.  
   
 ## Remarks  
  These intrinsics are available only in kernel mode, and the routines are available only as intrinsics.  

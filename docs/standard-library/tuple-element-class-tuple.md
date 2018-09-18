@@ -55,22 +55,22 @@ template <class T1, class T2>
 
 ### Parameters
 
-*Index*  
+*Index*<br/>
 The index of the designated element.
 
-*Tuple*  
+*Tuple*<br/>
 The type of the tuple.
 
-*Elem*  
+*Elem*<br/>
 The type of an array element.
 
-*Size*  
+*Size*<br/>
 The size of the array.
 
-*T1*  
+*T1*<br/>
 The type of the first element in a pair.
 
-*T2*  
+*T2*<br/>
 The type of the second element in a pair.
 
 ## Remarks
@@ -174,9 +174,12 @@ int main() {
 ## Requirements
 
 **Header:** \<tuple>
- **Header:** \<array> (for array specialization)
- **Header:** \<utility> (for pair specializations)
- **Namespace:** std
+
+**Header:** \<array> (for array specialization)
+
+**Header:** \<utility> (for pair specializations)
+
+**Namespace:** std
 
 ## See also
 

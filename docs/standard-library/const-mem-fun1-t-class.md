@@ -20,12 +20,11 @@ An adapter class that allows a **const** member function that takes a single arg
 
 ```cpp
 template <class Result, class Type, class Arg>
-class const_mem_fun1_t
- : public binary_function<const Type *, Arg, Result>
+class const_mem_fun1_t : public binary_function<const Type *, Arg, Result>
 {
     explicit const_mem_fun1_t(Result (Type::* _Pm)(Arg) const);
     Result operator()(const Type* _Pleft, Arg right) const;
- };
+};
 ```
 
 ### Parameters

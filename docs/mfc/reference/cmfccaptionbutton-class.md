@@ -77,11 +77,11 @@ CMFCCaptionButton(
 ```  
   
 ### Parameters  
- [in] *nHit*  
- The command associated with the button.  
+*nHit*<br/>
+[in] The command associated with the button.  
   
- [in] *bLeftAlign*  
- Specifies whether the button is aligned to the left.  
+*bLeftAlign*<br/>
+[in] Specifies whether the button is aligned to the left.  
   
  The following table lists possible values for the *nHit* parameter.  
   
@@ -132,11 +132,11 @@ virtual CMenuImages::IMAGES_IDS GetIconID(
 ```  
   
 ### Parameters  
- [in] *bHorz*  
- TRUE for left or right arrow image IDs; FALSE for up or down arrow image IDs.  
+*bHorz*<br/>
+[in] TRUE for left or right arrow image IDs; FALSE for up or down arrow image IDs.  
   
- [in] *bMaximized*  
- TRUE for a maximize image ID; FALSE for a minimize image ID.  
+*bMaximized*<br/>
+[in] TRUE for a maximize image ID; FALSE for a minimize image ID.  
   
 ### Return Value  
  The image ID.  
@@ -192,11 +192,11 @@ void Move(
 ```  
   
 ### Parameters  
- [in] *ptTo*  
- The new location.  
+*ptTo*<br/>
+[in] The new location.  
   
- [in] *bHide*  
- Whether to show the button.  
+*bHide*<br/>
+[in] Whether to show the button.  
   
 ##  <a name="ondraw"></a>  CMFCCaptionButton::OnDraw  
  Draws the caption button.  
@@ -211,20 +211,20 @@ virtual void OnDraw(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to a device context for the button.  
+*pDC*<br/>
+[in] Pointer to a device context for the button.  
   
- [in] *bActive*  
- Whether to draw an active button image.  
+*bActive*<br/>
+[in] Whether to draw an active button image.  
   
- [in] *bHorz*  
- Reserved for use in a derived class.  
+*bHorz*<br/>
+[in] Reserved for use in a derived class.  
   
- [in] *bMaximized*  
- Whether to draw a maximized button image.  
+*bMaximized*<br/>
+[in] Whether to draw a maximized button image.  
   
- [in] *bDisabled*  
- Whether to draw an enabled button image.  
+*bDisabled*<br/>
+[in] Whether to draw an enabled button image.  
   
 ### Remarks  
  The *bMaximized* parameter is used when the button is a maximize or minimize button.  
@@ -237,8 +237,8 @@ void SetMiniFramebutton(BOOL bSet = TRUE);
 ```  
   
 ### Parameters  
- [in] *bSet*  
- TRUE for mini title bar height; FALSE for default title bar height.  
+*bSet*<br/>
+[in] TRUE for mini title bar height; FALSE for default title bar height.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

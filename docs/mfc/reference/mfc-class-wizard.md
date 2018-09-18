@@ -17,76 +17,89 @@ Lets you add messages and message handlers to classes in your project. You can a
   
  To open the **MFC Class Wizard**, on the **Project** menu, click **Class Wizard**. To open the wizard with a keyboard shortcut, type CTRL+SHIFT+X.  
   
-## UIElement List  
- **Project**  
- The name of a project in your solution.  
+## UIElement List
+
+- **Project**
+
+   The name of a project in your solution.  
   
- You can select other projects in your solution from the drop-down list box.  
+   You can select other projects in your solution from the drop-down list box.  
   
- **Class name**  
- The name of a class in your project.  
+- **Class name**
+
+   The name of a class in your project.  
   
- When you select a class in the **Class name** list, data from the class populates the controls in the **MFC Class Wizard**. When you change the value of a control, data in the selected class is affected.  
+   When you select a class in the **Class name** list, data from the class populates the controls in the **MFC Class Wizard**. When you change the value of a control, data in the selected class is affected.  
   
- **Add Class**  
- Lets you add a class from one of several sources.  
+- **Add Class**
+
+   Lets you add a class from one of several sources.  
   
- Depending on your selection, the **MFC Add Class Wizard**, **Add Class From Typelib Wizard**, **Add Class From ActiveX Control Wizard**, or **MFC ODBC Consumer Wizard** is started.  
+   Depending on your selection, the **MFC Add Class Wizard**, **Add Class From Typelib Wizard**, **Add Class From ActiveX Control Wizard**, or **MFC ODBC Consumer Wizard** is started.  
   
- **Base class**  
- The base class of the class that is displayed in **Class name**.  
+- **Base class**
+
+   The base class of the class that is displayed in **Class name**.  
   
- **Class declaration**  
- The class in which the **Class name** class is declared.  
+- **Class declaration**
+
+   The class in which the **Class name** class is declared.  
   
- The **Class declaration** box is displayed only if the name in it differs from the name in **Class implementation**.  
+   The **Class declaration** box is displayed only if the name in it differs from the name in **Class implementation**.  
   
- **Resource**  
- The ID of the resource in **Class name**, if any. Otherwise, the **Resource** box is empty.  
+- **Resource**
+
+   The ID of the resource in **Class name**, if any. Otherwise, the **Resource** box is empty.  
   
- **Class implementation**  
- The name of the file that contains the implementation of the class in **Class name**.  
+- **Class implementation**
+
+   The name of the file that contains the implementation of the class in **Class name**.  
   
- You can select a different implementation file by clicking the arrow. The following table lists the available options.  
+   You can select a different implementation file by clicking the arrow. The following table lists the available options.  
   
-|Option|Description|  
-|------------|-----------------|  
-|**Open File**|Exits the class wizard and opens the current class implementation file.|  
-|**Open Containing Folder**|Opens the folder that contains the current class implementation file.|  
-|**Copy Full Path to Clipboard**|Copies the path of the current implementation file to the Clipboard.|  
+   |Option|Description|  
+   |------------|-----------------|  
+   |**Open File**|Exits the class wizard and opens the current class implementation file.|  
+   |**Open Containing Folder**|Opens the folder that contains the current class implementation file.|  
+   |**Copy Full Path to Clipboard**|Copies the path of the current implementation file to the Clipboard.|  
   
- **Commands**  
- Lets you add, delete, edit, or search for a command and its message handler.  
+- **Commands**
+
+   Lets you add, delete, edit, or search for a command and its message handler.  
   
- To add a handler, click **Add Handler**, or double-click an item in the **Object IDs** list or **Messages** list. The resulting function name, ID, and message are displayed in the **Member functions** list.  
+   To add a handler, click **Add Handler**, or double-click an item in the **Object IDs** list or **Messages** list. The resulting function name, ID, and message are displayed in the **Member functions** list.  
   
- To delete a handler, select an item in the **Member functions** list and then click **Delete Handler**.  
+   To delete a handler, select an item in the **Member functions** list and then click **Delete Handler**.  
   
- To modify a handler, double-click the corresponding item in the **Member functions** list. Or, select an item in the list box and then click **Edit Code**.  
+   To modify a handler, double-click the corresponding item in the **Member functions** list. Or, select an item in the list box and then click **Edit Code**.  
   
- **Messages**  
- Lets you add, delete, edit, or search for a message and its message handler.  
+- **Messages**
+
+   Lets you add, delete, edit, or search for a message and its message handler.  
   
- To add a handler, click **Add Handler**, or double-click an item in the **Messages** list.  
+   To add a handler, click **Add Handler**, or double-click an item in the **Messages** list.  
   
- To add a custom message, click **Add Custom Message** or press the Enter key, and then specify values in the **Add Custom Message** dialog box. In that dialog box, you can also select **Registered Message** to handle a window message that is guaranteed to be unique throughout the operating system.  
+   To add a custom message, click **Add Custom Message** or press the Enter key, and then specify values in the **Add Custom Message** dialog box. In that dialog box, you can also select **Registered Message** to handle a window message that is guaranteed to be unique throughout the operating system.  
   
- **Virtual Functions**  
- Lets you add, delete, edit, or search for a virtual function, or an overridden virtual function.  
+- **Virtual Functions**
+
+   Lets you add, delete, edit, or search for a virtual function, or an overridden virtual function.  
   
- **Member Variables**  
- Lets you add, delete, edit, or search for a member variable.  
+- **Member Variables**
+
+   Lets you add, delete, edit, or search for a member variable.  
   
- **Methods**  
- Lets you add, delete, or search for a method, and also go to the definition or declaration of a method.  
+- **Methods**
+
+   Lets you add, delete, or search for a method, and also go to the definition or declaration of a method.  
   
- To add a method, click **Add Method**, and then specify values in the **Add Method** dialog box.  
+   To add a method, click **Add Method**, and then specify values in the **Add Method** dialog box.  
   
- To delete a method, select an item in the **Methods** list and then click **Delete Method**.  
+   To delete a method, select an item in the **Methods** list and then click **Delete Method**.  
   
- To display a declaration, select an item in the **Methods** list and then click **Go to Declaration.**  
+   To display a declaration, select an item in the **Methods** list and then click **Go to Declaration.**  
   
- To display a definition, double-click an item in the **Methods** list. Or, select an item in the **Methods** list and then click the **Go to Definition** button.  
+   To display a definition, double-click an item in the **Methods** list. Or, select an item in the **Methods** list and then click the **Go to Definition** button.  
   
 ## See Also  
  [Adding a Class](../../ide/adding-a-class-visual-cpp.md)

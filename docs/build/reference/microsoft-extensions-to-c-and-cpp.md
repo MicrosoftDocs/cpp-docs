@@ -235,7 +235,7 @@ void func ()
 
 ## ISO646.H not enabled
 
- Under **/Ze**, you have to include iso646.h if you want to use text forms of the following operators:
+Under **/Ze**, you have to include iso646.h if you want to use text forms of the following operators:
 
 - && (and)
 

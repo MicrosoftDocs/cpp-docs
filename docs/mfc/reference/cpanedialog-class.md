@@ -105,32 +105,32 @@ BOOL Create(
 ```  
   
 ### Parameters  
- [in] *lpszWindowName*  
- The name of the docking dialog box.  
+*lpszWindowName*<br/>
+[in] The name of the docking dialog box.  
   
- [in] *pParentWnd*  
- Points to the parent window.  
+*pParentWnd*<br/>
+[in] Points to the parent window.  
   
- [in] *bHasGripper*  
- TRUE to create the docking dialog box with a caption (gripper); otherwise, FALSE.  
+*bHasGripper*<br/>
+[in] TRUE to create the docking dialog box with a caption (gripper); otherwise, FALSE.  
   
- [in] *lpszTemplateName*  
- The name of the resource dialog template.  
+*lpszTemplateName*<br/>
+[in] The name of the resource dialog template.  
   
- [in] *nStyle*  
- The Windows style.  
+*nStyle*<br/>
+[in] The Windows style.  
   
- [in] *nID*  
- The control ID.  
+*nID*<br/>
+[in] The control ID.  
   
- [in] *nIDTemplate*  
- The resource ID of the dialog template.  
+*nIDTemplate*<br/>
+[in] The resource ID of the dialog template.  
   
- [in] *dwTabbedStyle*  
- The style of the tabbed window that results when the user drags another control pane onto the caption of this control pane. The default value is AFX_CBRS_REGULAR_TABS. For more information, see the Remarks section of the [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) method.  
+*dwTabbedStyle*<br/>
+[in] The style of the tabbed window that results when the user drags another control pane onto the caption of this control pane. The default value is AFX_CBRS_REGULAR_TABS. For more information, see the Remarks section of the [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) method.  
   
- [in] *dwControlBarStyle*  
- Additional style attributes. The default value is AFX_DEFAULT_DOCKING_PANE_STYLE. For more information, see the Remarks section of the [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) method.  
+*dwControlBarStyle*<br/>
+[in] Additional style attributes. The default value is AFX_DEFAULT_DOCKING_PANE_STYLE. For more information, see the Remarks section of the [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) method.  
   
 ### Return Value  
  TRUE if this method succeeds; otherwise, FALSE.  
@@ -153,11 +153,11 @@ afx_msg LRESULT HandleInitDialog(
 ```  
   
 ### Parameters  
- [in] *wParam*  
- Handle to the control that is to receive the default keyboard focus.  
+*wParam*<br/>
+[in] Handle to the control that is to receive the default keyboard focus.  
   
- [in] *lParam*  
- Specifies additional initialization data.  
+*lParam*<br/>
+[in] Specifies additional initialization data.  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE. In addition, TRUE sets the keyboard focus to the control specified by the *wParam* parameter; FALSE prevents setting the default keyboard focus.  
@@ -173,8 +173,8 @@ virtual BOOL SetOccDialogInfo(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
 ```  
   
 ### Parameters  
- [in] *pOccDialogInfo*  
- Pointer to a dialog box template that is used to create the dialog box object. The value of this parameter is subsequently passed into the [COccManager::CreateDlgControls](../../mfc/reference/coccmanager-class.md#createdlgcontrols) method.  
+*pOccDialogInfo*<br/>
+[in] Pointer to a dialog box template that is used to create the dialog box object. The value of this parameter is subsequently passed into the [COccManager::CreateDlgControls](../../mfc/reference/coccmanager-class.md#createdlgcontrols) method.  
   
 ### Return Value  
  Always TRUE.  

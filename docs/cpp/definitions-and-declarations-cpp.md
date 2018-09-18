@@ -12,6 +12,7 @@ ms.workload: ["cplusplus"]
 ---
 # Definitions and Declarations (C++)
 **Microsoft Specific**
+
  The DLL interface refers to all items (functions and data) that are known to be exported by some program in the system; that is, all items that are declared as **dllimport** or **dllexport**. All declarations included in the DLL interface must specify either the **dllimport** or **dllexport** attribute. However, the definition must specify only the **dllexport** attribute. For example, the following function definition generates a compiler error:
 
 ```

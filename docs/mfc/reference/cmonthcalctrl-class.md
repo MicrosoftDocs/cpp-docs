@@ -202,7 +202,7 @@ BOOL GetCalendarGridInfo(PMCGRIDINFO pmcGridInfo) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[out] *pmcGridInfo*|Pointer to a [MCGRIDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagmcgridinfo) structure that receives information about the current month calendar control. The caller is responsible for allocating and initializing this structure.|  
+|*pmcGridInfo*|[out] Pointer to a [MCGRIDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagmcgridinfo) structure that receives information about the current month calendar control. The caller is responsible for allocating and initializing this structure.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -638,7 +638,7 @@ void SetCalendarBorder(int cxyBorder);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *cxyBorder*|The width of the border, in pixels.|  
+|*cxyBorder*|[in] The width of the border, in pixels.|  
   
 ### Remarks  
  If this method succeeds, the border width is set to the *cxyBorder* parameter. Otherwise, the border width is reset to the default value that is specified by the current [theme](/windows/desktop/Controls/visual-styles-overview), or zero if themes are not used.  
@@ -678,7 +678,7 @@ BOOL SetCalID(CALID calid);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *calid*|One of the [calendar identifier](/windows/desktop/Intl/calendar-identifiers) constants.|  
+|*calid*|[in] One of the [calendar identifier](/windows/desktop/Intl/calendar-identifiers) constants.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -756,7 +756,7 @@ BOOL SetCurrentView(DWORD dwNewView);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *dwNewView*|One of the following values that specifies a monthly, annual, decade, or century view.<br /><br /> MCMV_MONTH: Monthly view<br /><br /> MCMV_YEAR: Annual view<br /><br /> MCMV_DECADE: Decade view<br /><br /> MCMV_CENTURY: Century view|  
+|*dwNewView*|[in] One of the following values that specifies a monthly, annual, decade, or century view.<br /><br /> MCMV_MONTH: Monthly view<br /><br /> MCMV_YEAR: Annual view<br /><br /> MCMV_DECADE: Decade view<br /><br /> MCMV_CENTURY: Century view|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -1042,7 +1042,7 @@ LPRECT SizeRectToMin(LPRECT lpRect);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *lpRect*|Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that defines a rectangle that contains the desired number of calendars.|  
+|*lpRect*|[in] Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that defines a rectangle that contains the desired number of calendars.|  
   
 ### Return Value  
  Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that defines a rectangle whose size is less than or equal to the rectangle defined by the *lpRect* parameter.  

@@ -26,10 +26,10 @@ class deque
 ### Parameters
 
 *Type*<br/>
- The element data type to be stored in the deque.
+The element data type to be stored in the deque.
 
 *Allocator*<br/>
- The type that represents the stored allocator object that encapsulates details about the deque's allocation and deallocation of memory. This argument is optional, and the default value is **allocator\<Type>**.
+The type that represents the stored allocator object that encapsulates details about the deque's allocation and deallocation of memory. This argument is optional, and the default value is **allocator\<Type>**.
 
 ## Remarks
 
@@ -153,19 +153,19 @@ void assign(initializer_list<Type> IList);
 ### Parameters
 
 *First*<br/>
- Position of the first element in the range of elements to be copied from the argument deque.
+Position of the first element in the range of elements to be copied from the argument deque.
 
 *Last*<br/>
- Position of the first element beyond the range of elements to be copied from the argument deque.
+Position of the first element beyond the range of elements to be copied from the argument deque.
 
 *Count*<br/>
- The number of copies of an element being inserted into the deque.
+The number of copies of an element being inserted into the deque.
 
 *Val*<br/>
- The value of the element being inserted into the deque.
+The value of the element being inserted into the deque.
 
 *IList*<br/>
- The initializer_list being inserted into the deque.
+The initializer_list being inserted into the deque.
 
 ### Remarks
 
@@ -240,7 +240,7 @@ const_reference at(size_type pos) const;
 ### Parameters
 
 *pos*<br/>
- The subscript (or position number) of the element to reference in the deque.
+The subscript (or position number) of the element to reference in the deque.
 
 ### Return Value
 
@@ -1221,7 +1221,7 @@ int main( )
    cout << "The last integer of c1 is " << *c1_Iter << endl;
 
    c1_Iter--;
- *c1_Iter = 400;
+   *c1_Iter = 400;
    cout << "The new next-to-last integer of c1 is " << *c1_Iter << endl;
 
    // If a const iterator had been declared instead with the line:
@@ -1253,13 +1253,13 @@ iterator erase(iterator first, iterator last);
 ### Parameters
 
 *_Where*<br/>
- Position of the element to be removed from the deque.
+Position of the element to be removed from the deque.
 
 *first*<br/>
- Position of the first element removed from the deque.
+Position of the first element removed from the deque.
 
 *last*<br/>
- Position just beyond the last element removed from the deque.
+Position just beyond the last element removed from the deque.
 
 ### Return Value
 
@@ -1510,7 +1510,7 @@ const_reference operator[](size_type pos) const;
 ### Parameters
 
 *pos*<br/>
- The position of the deque element to be referenced.
+The position of the deque element to be referenced.
 
 ### Return Value
 
@@ -1621,7 +1621,7 @@ int main( )
 
    cout << "     ";
    S<MyDeque&&>::show ( move< MyDeque& > (d1) );
- }
+}
 ```
 
 ## <a name="pointer"></a>  deque::pointer
@@ -1858,7 +1858,7 @@ int main( )
    cout << endl;
 
    c1_rIter = c1.rbegin( );
- *c1_rIter = 40;  // This would have caused an error if a
+   *c1_rIter = 40;  // This would have caused an error if a
                     // const_reverse iterator had been declared as
                     // noted above
    cout << "Last element in deque is now " << *c1_rIter << "." << endl;
@@ -1976,7 +1976,7 @@ int main( )
    c1_rIter = c1.rend( );
    c1_rIter--; // Decrementing the reverse iterator moves it backward
                // in the reversed deque (to the last element here)
- *c1_rIter = 40; // This modification of the last element would
+   *c1_rIter = 40; // This modification of the last element would
                    // have caused an error if a const_reverse
                    // iterator had been declared (as noted above)
    cout << "The modified reversed deque is: ";
@@ -2006,10 +2006,10 @@ void resize(size_type _Newsize, Type val);
 ### Parameters
 
 *_Newsize*<br/>
- The new size of the deque.
+The new size of the deque.
 
 *val*<br/>
- The value of the new elements to be added to the deque if the new size is larger that the original size. If the value is omitted, the new elements are assigned the default value for the class.
+The value of the new elements to be added to the deque if the new size is larger that the original size. If the value is omitted, the new elements are assigned the default value for the class.
 
 ### Remarks
 
@@ -2185,10 +2185,10 @@ void swap(deque<Type, Allocator>& left, deque<Type, Allocator>& right);
 ### Parameters
 
 *right*<br/>
- The deque providing the elements to be swapped, or the deque whose elements are to be exchanged with those of the deque `left`.
+The deque providing the elements to be swapped, or the deque whose elements are to be exchanged with those of the deque `left`.
 
 *left*<br/>
- A deque whose elements are to be exchanged with those of the deque *right*.
+A deque whose elements are to be exchanged with those of the deque *right*.
 
 ### Example
 

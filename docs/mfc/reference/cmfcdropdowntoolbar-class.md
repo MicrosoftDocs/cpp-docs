@@ -108,23 +108,23 @@ virtual BOOL LoadBitmap(
 ```  
   
 ### Parameters  
- [in] *uiResID*  
- The resource ID of the bitmap that refers to the hot toolbar images.  
+*uiResID*<br/>
+[in] The resource ID of the bitmap that refers to the hot toolbar images.  
   
- [in] *uiColdResID*  
- The resource ID of the bitmap that refers to the cold toolbar images.  
+*uiColdResID*<br/>
+[in] The resource ID of the bitmap that refers to the cold toolbar images.  
   
- [in] *uiMenuResID*  
- The resource ID of the bitmap that refers to the regular menu images.  
+*uiMenuResID*<br/>
+[in] The resource ID of the bitmap that refers to the regular menu images.  
   
- [in] *bLocked*  
- TRUE to lock the toolbar; otherwise FALSE.  
+*bLocked*<br/>
+[in] TRUE to lock the toolbar; otherwise FALSE.  
   
- [in] *uiDisabledResID*  
- The resource ID of the bitmap that refers to the disabled toolbar images.  
+*uiDisabledResID*<br/>
+[in] The resource ID of the bitmap that refers to the disabled toolbar images.  
   
- [in] *uiMenuDisabledResID*  
- The resource ID of the bitmap that refers to the disabled menu images.  
+*uiMenuDisabledResID*<br/>
+[in] The resource ID of the bitmap that refers to the disabled menu images.  
   
 ### Return Value  
  Nonzero if the method succeeds; otherwise 0.  
@@ -149,12 +149,12 @@ virtual BOOL LoadToolBar(
 ```  
   
 ### Parameters  
- [in] *uiResID*  
- [in] *uiColdResID*  
- [in] *uiMenuResID*  
- [in] *BOOL*  
- [in] *uiDisabledResID*  
- [in] *uiMenuDisabledResID*  
+*uiResID*<br/>
+[in] [in] *uiColdResID*  
+*uiMenuResID*<br/>
+[in] [in] *BOOL*  
+*uiDisabledResID*<br/>
+[in] [in] *uiMenuDisabledResID*  
  [in] *uiHotResID*  
   
 ### Return Value  
@@ -171,8 +171,8 @@ afx_msg void OnLButtonUp(
 ```  
   
 ### Parameters  
- [in] *nFlags*  
- [in] *point*  
+*nFlags*<br/>
+[in] [in] *point*  
   
 ### Remarks  
   
@@ -186,8 +186,8 @@ afx_msg void OnMouseMove(
 ```  
   
 ### Parameters  
- [in] *nFlags*  
- [in] *point*  
+*nFlags*<br/>
+[in] [in] *point*  
   
 ### Remarks  
   
@@ -215,8 +215,8 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### Parameters  
- [in] *pTarget*  
- [in] *bDisableIfNoHndler*  
+*pTarget*<br/>
+[in] [in] *bDisableIfNoHndler*  
   
 ### Remarks  
   

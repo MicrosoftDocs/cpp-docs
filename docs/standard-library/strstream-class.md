@@ -60,8 +60,8 @@ void freeze(bool _Freezeit = true);
 
 ### Parameters
 
-*_Freezeit*  
- A **bool** indicating whether you want the stream to be frozen.
+*_Freezeit*<br/>
+A **bool** indicating whether you want the stream to be frozen.
 
 ### Remarks
 
@@ -145,14 +145,14 @@ strstream(char* ptr,
 
 ### Parameters
 
-*count*  
- The size of the buffer.
+*count*<br/>
+The size of the buffer.
 
-*_Mode*  
- The input and output mode of the buffer. See [ios_base::openmode](../standard-library/ios-base-class.md#openmode) for more information.
+*_Mode*<br/>
+The input and output mode of the buffer. See [ios_base::openmode](../standard-library/ios-base-class.md#openmode) for more information.
 
-*ptr*  
- The buffer.
+*ptr*<br/>
+The buffer.
 
 ### Remarks
 

@@ -28,11 +28,11 @@ inline bool SafeCast (
 
 ### Parameters
 
-[in] *From*  
-The source number to convert. This must be of type `T`.
+*From*<br/>
+[in] The source number to convert. This must be of type `T`.
 
-[out] *To*  
-A reference to the new number type. This must be of type `U`.
+*To*<br/>
+[out] A reference to the new number type. This must be of type `U`.
 
 ## Return Value
 

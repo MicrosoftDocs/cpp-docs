@@ -22,7 +22,7 @@ Enables applications and components to use features from the common language run
 
 ## Arguments
 
-*options*  
+*options*<br/>
 One or more of the following switches, comma-separated.
 
 - none
@@ -122,5 +122,5 @@ If you have code that uses Managed Extensions for C++, we recommend that you por
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)   
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /doc (Process Documentation Comments) (C/C++)
+
 Causes the compiler to process documentation comments in source code files and to create an .xdc file for each source code file that has documentation comments.
 
 ## Syntax
@@ -34,7 +35,7 @@ To use the generated .xml file with IntelliSense, make the file name of the .xml
 
 ### To set this compiler option in the Visual Studio development environment
 
-1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Output Files** property page.
 
@@ -46,5 +47,5 @@ To use the generated .xml file with IntelliSense, make the file name of the .xml
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)   
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

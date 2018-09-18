@@ -77,8 +77,8 @@ CMFCRibbonSlider(
 ```  
   
 ### Parameters  
- [in] *nID*  
- Slider ID.  
+*nID*<br/>
+[in] Slider ID.  
   
  [in]. *nWidth*  
  Slider width in pixels.  
@@ -172,11 +172,11 @@ void SetPos(
 ```  
   
 ### Parameters  
- [in] *nPos*  
- Specifies the position to set for the slider. The position is relative to the beginning of the slider.  
+*nPos*<br/>
+[in] Specifies the position to set for the slider. The position is relative to the beginning of the slider.  
   
- [in] *bRedraw*  
- If TRUE, the slider will be redrawn.  
+*bRedraw*<br/>
+[in] If TRUE, the slider will be redrawn.  
   
 ##  <a name="setrange"></a>  CMFCRibbonSlider::SetRange  
  Set the range of values for the slider control.  
@@ -188,11 +188,11 @@ void SetRange(
 ```  
   
 ### Parameters  
- [in] *nMin*  
- Specifies minimum value of the slider control.  
+*nMin*<br/>
+[in] Specifies minimum value of the slider control.  
   
- [in] *nMax*  
- Specifies maximum value of the slider control.  
+*nMax*<br/>
+[in] Specifies maximum value of the slider control.  
   
 ### Remarks  
  Specifies the range of values for the slider control by setting the minimum and maximum values.  
@@ -216,8 +216,8 @@ void SetZoomIncrement(int nZoomIncrement);
 ```  
   
 ### Parameters  
- [in] *nZoomIncrement*  
- Specifies the zoom increment of the slider control.  
+*nZoomIncrement*<br/>
+[in] Specifies the zoom increment of the slider control.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

@@ -81,8 +81,8 @@ void AddCustomCategory(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *lpszName*|Specifies the custom category name.|  
-|[in] *lstIDS*|Contains ribbon command IDs to be shown in the custom category.|  
+|*lpszName*|[in] Specifies the custom category name.|  
+|*lstIDS*|[in] Contains ribbon command IDs to be shown in the custom category.|  
   
 ### Remarks  
  This method adds a category named *lpszName* to the **Commands** combo box. When the user selects the category, the commands specified in *lstIDS* appear in the command list.  
@@ -95,8 +95,8 @@ CMFCRibbonCustomizePropertyPage(CMFCRibbonBar* pRibbonBar = NULL);
 ```  
   
 ### Parameters  
- [in] *pRibbonBar*  
- A pointer to a ribbon control for which the options to customize.  
+*pRibbonBar*<br/>
+[in] A pointer to a ribbon control for which the options to customize.  
   
 ##  <a name="onok"></a>  CMFCRibbonCustomizePropertyPage::OnOK  
  Calleld by the system when a user clicks **OK** on the **Customize** dialog box.  

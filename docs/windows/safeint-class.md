@@ -33,9 +33,9 @@ class SafeInt;
 
 |Parameter|Description|
 |---------------|-----------------|
-|[in] *rhs*|An input parameter that represents the value on the right side of the operator in several stand-alone functions.|
-|[in] *i*|An input parameter that represents the value on the right side of the operator in several stand-alone functions.|
-|[in] *bits*|An input parameter that represents the value on the right side of the operator in several stand-alone functions.|
+|*rhs*|[in] An input parameter that represents the value on the right side of the operator in several stand-alone functions.|
+|*i*|[in] An input parameter that represents the value on the right side of the operator in several stand-alone functions.|
+|*bits*|[in] An input parameter that represents the value on the right side of the operator in several stand-alone functions.|
 
 ## Members
 

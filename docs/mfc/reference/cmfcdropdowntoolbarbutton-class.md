@@ -85,8 +85,8 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### Parameters  
- [in] *src*  
- A reference to the source button from which to copy.  
+*src*<br/>
+[in] A reference to the source button from which to copy.  
   
 ### Remarks  
  Call this method to copy another toolbar button to this toolbar button. *src* must be of type `CMFCDropDownToolbarButton`.  
@@ -104,11 +104,11 @@ CMFCDropDownToolbarButton(
 ```  
   
 ### Parameters  
- [in] *lpszName*  
- The default text of the button.  
+*lpszName*<br/>
+[in] The default text of the button.  
   
- [in] *pToolBar*  
- A pointer to the `CMFCDropDownToolBar` object that is displayed when the user presses the button.  
+*pToolBar*<br/>
+[in] A pointer to the `CMFCDropDownToolBar` object that is displayed when the user presses the button.  
   
 ### Remarks  
  The second overload of the constructor copies to the drop-down button the first button from the toolbar that *pToolBar* specifies.  
@@ -128,8 +128,8 @@ BOOL DropDownToolbar(CWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] *pWnd*  
- The parent window of the drop-down frame, or NULL to use the parent window of the drop-down toolbar button.  
+*pWnd*<br/>
+[in] The parent window of the drop-down frame, or NULL to use the parent window of the drop-down toolbar button.  
   
 ### Return Value  
  Nonzero if the method is successful; otherwise 0.  
@@ -149,8 +149,8 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 ```  
   
 ### Parameters  
- [in] *menuButton*  
- A reference to the target menu button.  
+*menuButton*<br/>
+[in] A reference to the target menu button.  
   
 ### Return Value  
  Nonzero if the method succeeds; otherwise 0.  
@@ -220,14 +220,14 @@ virtual SIZE OnCalculateSize(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- The device context that displays the button.  
+*pDC*<br/>
+[in] The device context that displays the button.  
   
- [in] *sizeDefault*  
- The default size of the button.  
+*sizeDefault*<br/>
+[in] The default size of the button.  
   
- [in] *bHorz*  
- The dock state of the parent toolbar. This parameter is TRUE if the toolbar is docked horizontally or is floating, or FALSE if the toolbar is docked vertically.  
+*bHorz*<br/>
+[in] The dock state of the parent toolbar. This parameter is TRUE if the toolbar is docked horizontally or is floating, or FALSE if the toolbar is docked vertically.  
   
 ### Return Value  
  A `SIZE` structure that contains the dimensions of the button, in pixels.  
@@ -243,8 +243,8 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```  
   
 ### Parameters  
- [in] *pWndParent*  
- The new parent window.  
+*pWndParent*<br/>
+[in] The new parent window.  
   
 ### Remarks  
  This method overrides the base class implementation ( [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)) by clearing the text label ( [CMFCToolBarButton::m_strText](../../mfc/reference/cmfctoolbarbutton-class.md#m_strtext)) and setting the [CMFCToolBarButton::m_bText](../../mfc/reference/cmfctoolbarbutton-class.md#m_btext) and [CMFCToolBarButton::m_bUserButton](../../mfc/reference/cmfctoolbarbutton-class.md#m_buserbutton) data members to FALSE.  
@@ -259,11 +259,11 @@ virtual BOOL OnClick(
 ```  
   
 ### Parameters  
- [in] *pWnd*  
- The parent window of the toolbar button.  
+*pWnd*<br/>
+[in] The parent window of the toolbar button.  
   
- [in] *bDelay*  
- TRUE if the message should be handled with a delay.  
+*bDelay*<br/>
+[in] TRUE if the message should be handled with a delay.  
   
 ### Return Value  
  Nonzero if the button processes the click message; otherwise 0.  
@@ -298,8 +298,8 @@ virtual BOOL OnContextHelp(CWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] *pWnd*  
- The parent window of the toolbar button.  
+*pWnd*<br/>
+[in] The parent window of the toolbar button.  
   
 ### Return Value  
  Nonzero if the button processes the help message; otherwise 0.  
@@ -317,8 +317,8 @@ virtual BOOL OnCustomizeMenu(CMenu* pMenu);
 ```  
   
 ### Parameters  
- [in] *pMenu*  
- The menu to customize.  
+*pMenu*<br/>
+[in] The menu to customize.  
   
 ### Return Value  
  This method returns TRUE.  
@@ -354,29 +354,29 @@ virtual void OnDraw(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- The device context that displays the button.  
+*pDC*<br/>
+[in] The device context that displays the button.  
   
- [in] *rect*  
- The bounding rectangle of the button.  
+*rect*<br/>
+[in] The bounding rectangle of the button.  
   
- [in] *pImages*  
- The collection of toolbar images that is associated with the button.  
+*pImages*<br/>
+[in] The collection of toolbar images that is associated with the button.  
   
- [in] *bHorz*  
- The dock state of the parent toolbar. This parameter is TRUE when the button is docked horizontally and FALSE when the button is docked vertically.  
+*bHorz*<br/>
+[in] The dock state of the parent toolbar. This parameter is TRUE when the button is docked horizontally and FALSE when the button is docked vertically.  
   
- [in] *bCustomizeMode*  
- Specifies whether the toolbar is in customization mode. This parameter is TRUE when the toolbar is in customization mode and FALSE when the toolbar is not in customization mode.  
+*bCustomizeMode*<br/>
+[in] Specifies whether the toolbar is in customization mode. This parameter is TRUE when the toolbar is in customization mode and FALSE when the toolbar is not in customization mode.  
   
- [in] *bHighlight*  
- Specifies whether the button is highlighted. This parameter is TRUE when the button is highlighted and FALSE when the button is not highlighted.  
+*bHighlight*<br/>
+[in] Specifies whether the button is highlighted. This parameter is TRUE when the button is highlighted and FALSE when the button is not highlighted.  
   
- [in] *bDrawBorder*  
- Specifies whether the button should display its border. This parameter is TRUE when the button should display its border and FALSE when the button should not display its border.  
+*bDrawBorder*<br/>
+[in] Specifies whether the button should display its border. This parameter is TRUE when the button should display its border and FALSE when the button should not display its border.  
   
- [in] *bGrayDisabledButtons*  
- Specifies whether to shade disabled buttons or use the disabled images collection. This parameter is TRUE when disabled buttons should be shaded and FALSE when this method should use the disabled images collection.  
+*bGrayDisabledButtons*<br/>
+[in] Specifies whether to shade disabled buttons or use the disabled images collection. This parameter is TRUE when disabled buttons should be shaded and FALSE when this method should use the disabled images collection.  
   
 ### Remarks  
  Override this method to customize toolbar button drawing.  
@@ -392,14 +392,14 @@ virtual int OnDrawOnCustomizeList(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- The device context that displays the button.  
+*pDC*<br/>
+[in] The device context that displays the button.  
   
- [in] *rect*  
- The bounding rectangle of the button.  
+*rect*<br/>
+[in] The bounding rectangle of the button.  
   
- [in] *bSelected*  
- Whether the button is selected. If this parameter is TRUE, the button is selected. If this parameter is FALSE, the button is not selected.  
+*bSelected*<br/>
+[in] Whether the button is selected. If this parameter is TRUE, the button is selected. If this parameter is FALSE, the button is not selected.  
   
 ### Return Value  
  The width, in pixels, of the button on the specified device context.  
@@ -417,8 +417,8 @@ virtual void Serialize(CArchive& ar);
 ```  
   
 ### Parameters  
- [in] *ar*  
- The `CArchive` object from which or to which to serialize.  
+*ar*<br/>
+[in] The `CArchive` object from which or to which to serialize.  
   
 ### Remarks  
  This method extends the base class implementation ( [CMFCToolBarButton::Serialize](../../mfc/reference/cmfctoolbarbutton-class.md#serialize)) by serializing the resource ID of the parent toolbar. When the archive is loading ( [CArchive::IsLoading](../../mfc/reference/carchive-class.md#isloading) returns a nonzero value), this method sets the `m_pToolBar` data member to the toolbar that contains the serialized resource ID.  
@@ -431,8 +431,8 @@ void SetDefaultCommand(UINT uiCmd);
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- The ID of the default command.  
+*uiCmd*<br/>
+[in] The ID of the default command.  
   
 ### Remarks  
  Call this method to specify a default command that the framework executes when the user clicks the button. An item with the command ID specified by *uiCmd* must be located in the parent drop-down toolbar.  

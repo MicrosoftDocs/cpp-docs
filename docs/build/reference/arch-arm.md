@@ -11,41 +11,45 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /arch (ARM)
-Specifies the architecture for code generation on ARM. See also [/arch (x86)](../../build/reference/arch-x86.md) and [/arch (x64)](../../build/reference/arch-x64.md).  
-  
-## Syntax  
-  
-```  
-/arch:[ARMv7VE|VFPv4]  
-```  
-  
-## Arguments  
- **/arch:ARMv7VE**  
- Enables the use of ARMv7VE Virtualization Extensions instructions.  
-  
- **/arch:VFPv4**  
- Enables the use of ARM VFPv4 instructions. If this option is not specified, VFPv3 is the default.  
-  
-## Remarks  
- The `_M_ARM_FP` macro (for ARM only) indicates which, if any, **/arch** compiler option was used. For more information, see [Predefined Macros](../../preprocessor/predefined-macros.md).  
-  
- When you use [/clr](../../build/reference/clr-common-language-runtime-compilation.md) to compile, **/arch** has no effect on code generation for managed functions. **/arch** only affects code generation for native functions.  
-  
-### To set the /arch:ARMv7VE or /arch:VFPv4 compiler option in Visual Studio  
-  
-1.  Open the **Property Pages** dialog box for the project. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Select the **C/C++** folder.  
-  
-3.  Select the **Command Line** property page.  
-  
-4.  In the **Additional options** box, add `/arch:ARMv7VE` or `/arch:VFPv4`.  
-  
-### To set this compiler option programmatically  
-  
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>.  
-  
-## See Also  
- [/arch (Minimum CPU Architecture)](../../build/reference/arch-minimum-cpu-architecture.md)   
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+
+Specifies the architecture for code generation on ARM. See also [/arch (x86)](../../build/reference/arch-x86.md) and [/arch (x64)](../../build/reference/arch-x64.md).
+
+## Syntax
+
+```
+/arch:[ARMv7VE|VFPv4]
+```
+
+## Arguments
+
+**/arch:ARMv7VE**<br/>
+Enables the use of ARMv7VE Virtualization Extensions instructions.
+
+**/arch:VFPv4**<br/>
+Enables the use of ARM VFPv4 instructions. If this option is not specified, VFPv3 is the default.
+
+## Remarks
+
+The `_M_ARM_FP` macro (for ARM only) indicates which, if any, **/arch** compiler option was used. For more information, see [Predefined Macros](../../preprocessor/predefined-macros.md).
+
+When you use [/clr](../../build/reference/clr-common-language-runtime-compilation.md) to compile, **/arch** has no effect on code generation for managed functions. **/arch** only affects code generation for native functions.
+
+### To set the /arch:ARMv7VE or /arch:VFPv4 compiler option in Visual Studio
+
+1. Open the **Property Pages** dialog box for the project. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Select the **C/C++** folder.
+
+1. Select the **Command Line** property page.
+
+1. In the **Additional options** box, add `/arch:ARMv7VE` or `/arch:VFPv4`.
+
+### To set this compiler option programmatically
+
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>.
+
+## See Also
+
+[/arch (Minimum CPU Architecture)](../../build/reference/arch-minimum-cpu-architecture.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

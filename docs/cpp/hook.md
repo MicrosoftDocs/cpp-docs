@@ -63,8 +63,8 @@ A pointer to the event handler method to be hooked to an event. The handler is s
 
 - Managed events: *ReceiverClass* is the event receiver class and `HandlerMethod` is the handler.
 
-*receiver* (optional)<br/>
-A pointer to an instance of the event receiver class. If you do not specify a receiver, the default is the receiver class or structure in which **__hook** is called.
+*receiver*<br/>
+(Optional) A pointer to an instance of the event receiver class. If you do not specify a receiver, the default is the receiver class or structure in which **__hook** is called.
 
 ## Usage
 

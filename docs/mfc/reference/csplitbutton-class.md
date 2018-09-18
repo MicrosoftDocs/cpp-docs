@@ -82,10 +82,10 @@ virtual BOOL Create(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *dwStyle*|A bitwise combination (OR) of styles to be applied to the control. For more information, see [Button Styles](../../mfc/reference/styles-used-by-mfc.md#button-styles).|  
-|[in] *rect*|A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that contains the position and size of the control.|  
-|[in] *pParentWnd*|A non-null pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control.|  
-|[in] *nID*|The ID of the control.|  
+|*dwStyle*|[in] A bitwise combination (OR) of styles to be applied to the control. For more information, see [Button Styles](../../mfc/reference/styles-used-by-mfc.md#button-styles).|  
+|*rect*|[in] A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that contains the position and size of the control.|  
+|*pParentWnd*|[in] A non-null pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control.|  
+|*nID*|[in] The ID of the control.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -107,9 +107,9 @@ CSplitButton(CMenu* pMenu)
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *nMenuId*|The resource ID of the menu bar.|  
-|[in] *nSubMenuId*|The resource ID of a submenu.|  
-|[in] *pMenu*|A pointer to a [CMenu](../../mfc/reference/cmenu-class.md) object that specifies a submenu. The `CSplitButton` object deletes the `CMenu` object and its associated HMENU when the `CSplitButton` object goes out of scope.|  
+|*nMenuId*|[in] The resource ID of the menu bar.|  
+|*nSubMenuId*|[in] The resource ID of a submenu.|  
+|*pMenu*|[in] A pointer to a [CMenu](../../mfc/reference/cmenu-class.md) object that specifies a submenu. The `CSplitButton` object deletes the `CMenu` object and its associated HMENU when the `CSplitButton` object goes out of scope.|  
   
 ### Remarks  
  Use the [CSplitButton::Create](#create) method to create a split button control and attach it to the `CSplitButton` object.  
@@ -127,8 +127,8 @@ afx_msg void OnDropDown(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *pNMHDR*|Pointer to an [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) structure that contains information about the [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) notification.|  
-|[out] *pResult*|(Not used; no value is returned.) Return value of the [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) notification.|  
+|*pNMHDR*|[in] Pointer to an [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) structure that contains information about the [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) notification.|  
+|*pResult*|[out] (Not used; no value is returned.) Return value of the [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) notification.|  
   
 ### Remarks  
  When the user clicks the drop-down arrow on a split button control, system sends a BCN_DROPDOWN notification message, which the `OnDropDown` method handles. However, the `CSplitButton` object does not forward the BCN_DROPDOWN notification to the control that contains the split button control. Consequently, the containing control cannot support a custom action in response to the notification.  
@@ -159,9 +159,9 @@ void SetDropDownMenu(CMenu* pMenu);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *nMenuId*|The resource ID of the menu bar.|  
-|[in] *nSubMenuId*|The resource ID of a submenu.|  
-|[in] *pMenu*|Pointer to a [CMenu](../../mfc/reference/cmenu-class.md) object that specifies a submenu. The `CSplitButton` object deletes the `CMenu` object and its associated HMENU when the `CSplitButton` object goes out of scope.|  
+|*nMenuId*|[in] The resource ID of the menu bar.|  
+|*nSubMenuId*|[in] The resource ID of a submenu.|  
+|*pMenu*|[in] Pointer to a [CMenu](../../mfc/reference/cmenu-class.md) object that specifies a submenu. The `CSplitButton` object deletes the `CMenu` object and its associated HMENU when the `CSplitButton` object goes out of scope.|  
   
 ### Remarks  
  The *nMenuId* parameter identifies a menu bar, which is a horizontal list of menu bar items. The *nSubMenuId* parameter is a zero-based index number that identifies a submenu, which is the drop-down list of menu items associated with each menu bar item. For example, a typical application has a menu that contains the menu bar items, "File," "Edit," and "Help." The "File" menu bar item has a submenu that contains the menu items, "Open," "Close" and "Exit." When the drop-down arrow of the split-button control is clicked, the control displays the specified submenu, not the menu bar.  

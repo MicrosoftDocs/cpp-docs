@@ -13,30 +13,32 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /nologo (Suppress Startup Banner) (C/C++)
-Suppresses the display of the copyright banner when the compiler starts up and display of informational messages during compiling.  
-  
-## Syntax  
-  
-```  
-/nologo  
-```  
-  
-## Remarks  
-  
-### To set this compiler option in the Visual Studio development environment  
-  
-1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Click the **C/C++** folder.  
-  
-3.  Click the **General** property page.  
-  
-4.  Modify the **Suppress Startup Banner** property.  
-  
-### To set this compiler option programmatically  
-  
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.SuppressStartupBanner%2A>.  
-  
-## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+
+Suppresses the display of the copyright banner when the compiler starts up and display of informational messages during compiling.
+
+## Syntax
+
+```
+/nologo
+```
+
+## Remarks
+
+### To set this compiler option in the Visual Studio development environment
+
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Click the **C/C++** folder.
+
+1. Click the **General** property page.
+
+1. Modify the **Suppress Startup Banner** property.
+
+### To set this compiler option programmatically
+
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.SuppressStartupBanner%2A>.
+
+## See Also
+
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

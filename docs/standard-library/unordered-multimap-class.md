@@ -227,7 +227,7 @@ size_type bucket(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*  
+*keyval*<br/>
 The key value to map.
 
 ### Remarks
@@ -372,7 +372,7 @@ size_type bucket_size(size_type nbucket) const;
 
 ### Parameters
 
-*nbucket*  
+*nbucket*<br/>
 The bucket number.
 
 ### Remarks
@@ -738,7 +738,7 @@ size_type count(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*  
+*keyval*<br/>
 Key value to search for.
 
 ### Remarks
@@ -1059,7 +1059,7 @@ std::pair<const_iterator, const_iterator>
 
 ### Parameters
 
-*keyval*  
+*keyval*<br/>
 Key value to search for.
 
 ### Remarks
@@ -1135,16 +1135,16 @@ size_type erase(
 
 ### Parameters
 
-*Where*  
+*Where*<br/>
 Position of the element to be removed.
 
-*First*  
+*First*<br/>
 Position of the first element to be removed.
 
-*Last*  
+*Last*<br/>
 Position just beyond the last element to be removed.
 
-*Key*  
+*Key*<br/>
 The key value of the elements to be removed.
 
 ### Return Value
@@ -1167,7 +1167,7 @@ const_iterator find(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*  
+*keyval*<br/>
 Key value to search for.
 
 ### Remarks
@@ -1869,7 +1869,7 @@ void max_load_factor(float factor);
 
 ### Parameters
 
-*factor*  
+*factor*<br/>
 The new maximum load factor.
 
 ### Remarks
@@ -2149,7 +2149,7 @@ void rehash(size_type nbuckets);
 
 ### Parameters
 
-*nbuckets*  
+*nbuckets*<br/>
 The requested number of buckets.
 
 ### Remarks

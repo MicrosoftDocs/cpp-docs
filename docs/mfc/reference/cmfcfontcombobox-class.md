@@ -111,14 +111,14 @@ BOOL SelectFont(
 ```  
   
 ### Parameters  
- [in] *pDesc*  
- Points to a font description object.  
+*pDesc*<br/>
+[in] Points to a font description object.  
   
- [in] *lpszName*  
- Specifies a font name.  
+*lpszName*<br/>
+[in] Specifies a font name.  
   
- [in] *nCharSet*  
- Specifies a character set. The default value is DEFAULT_CHARSET. For more information, see the `lfCharSet` member of the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure.  
+*nCharSet*<br/>
+[in] Specifies a character set. The default value is DEFAULT_CHARSET. For more information, see the `lfCharSet` member of the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure.  
   
 ### Return Value  
  TRUE if an item in the font combo box matches the specified font description object or font name and charset; otherwise, FALSE.  
@@ -143,14 +143,14 @@ BOOL Setup(
 ```  
   
 ### Parameters  
- [in] *nFontType*  
- Specifies the font type. The default value is the bitwise combination (OR) of DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE.  
+*nFontType*<br/>
+[in] Specifies the font type. The default value is the bitwise combination (OR) of DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE.  
   
- [in] *nCharSet*  
- Specifies the font character set. The default value is DEFAULT_CHARSET.  
+*nCharSet*<br/>
+[in] Specifies the font character set. The default value is DEFAULT_CHARSET.  
   
- [in] *nPitchAndFamily*  
- Specifies the font pitch and family. The default value is DEFAULT_PITCH.  
+*nPitchAndFamily*<br/>
+[in] Specifies the font pitch and family. The default value is DEFAULT_PITCH.  
   
 ### Return Value  
  TRUE if the font combo box was initialized successfully; otherwise, FALSE.  

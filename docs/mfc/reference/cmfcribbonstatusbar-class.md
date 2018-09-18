@@ -94,8 +94,8 @@ void AddDynamicElement(CMFCRibbonBaseElement* pElement);
 ```  
   
 ### Parameters  
- [in] *pElement*  
- A pointer to a dynamic element.  
+*pElement*<br/>
+[in] A pointer to a dynamic element.  
   
 ### Remarks  
  Unlike regular elements, dynamic elements are not customizable and the customize menu of the status bar does not display them.  
@@ -111,14 +111,14 @@ void AddElement(
 ```  
   
 ### Parameters  
- [in] *pElement*  
- A pointer to the added element.  
+*pElement*<br/>
+[in] A pointer to the added element.  
   
- [in] *lpszLabel*  
- A text label of the element.  
+*lpszLabel*<br/>
+[in] A text label of the element.  
   
- [in] *bIsVisible*  
- TRUE if you want to add the element as visible, FALSE if you want to add the element as hidden.  
+*bIsVisible*<br/>
+[in] TRUE if you want to add the element as visible, FALSE if you want to add the element as hidden.  
   
 ##  <a name="addextendedelement"></a>  CMFCRibbonStatusBar::AddExtendedElement  
  Adds a ribbon element to the extended area of the ribbon status bar.  
@@ -131,14 +131,14 @@ void AddExtendedElement(
 ```  
   
 ### Parameters  
- [in] *pElement*  
- A pointer to the added element.  
+*pElement*<br/>
+[in] A pointer to the added element.  
   
- [in] *lpszLabel*  
- The text label of the element.  
+*lpszLabel*<br/>
+[in] The text label of the element.  
   
- [in] *bIsVisible*  
- TRUE if you want to add the element as visible, FALSE if you want to add the element as hidden.  
+*bIsVisible*<br/>
+[in] TRUE if you want to add the element as visible, FALSE if you want to add the element as hidden.  
   
 ### Remarks  
  The extended area is on the right side of the status bar control.  
@@ -164,14 +164,14 @@ BOOL Create(
 ```  
   
 ### Parameters  
- [in] *pParentWnd*  
- A pointer to the parent window.  
+*pParentWnd*<br/>
+[in] A pointer to the parent window.  
   
- [in] *dwStyle*  
- A logical OR combination of control styles.  
+*dwStyle*<br/>
+[in] A logical OR combination of control styles.  
   
- [in] *nID*  
- The control ID of the status bar.  
+*nID*<br/>
+[in] The control ID of the status bar.  
   
 ### Return Value  
  TRUE if the status bar is created successfully, FALSE otherwise.  
@@ -211,8 +211,8 @@ CMFCRibbonBaseElement* FindByID(UINT uiCmdID, BOOL = TRUE);
 ```  
   
 ### Parameters  
- [in] *uiCmdID*  
- [in] *BOOL*  
+*uiCmdID*<br/>
+[in] [in] *BOOL*  
   
 ### Return Value  
   
@@ -226,8 +226,8 @@ CMFCRibbonBaseElement* FindElement(UINT uiID);
 ```  
   
 ### Parameters  
- [in] *uiID*  
- The ID of the element.  
+*uiID*<br/>
+[in] The ID of the element.  
   
 ### Return Value  
  A pointer to the element that has the specified command ID. NULL if there is no such element.  
@@ -250,8 +250,8 @@ CMFCRibbonBaseElement* GetElement(int nIndex);
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies a zero-based index of an element that is located in the main area of the status bar control.  
+*nIndex*<br/>
+[in] Specifies a zero-based index of an element that is located in the main area of the status bar control.  
   
 ### Return Value  
  A pointer to the element that is located at the specified index. NULL if the index is negative or exceeds the number of elements in the status bar.  
@@ -276,8 +276,8 @@ CMFCRibbonBaseElement* GetExElement(int nIndex);
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the zero-based index of an element that is located in the extended area of the status bar control.  
+*nIndex*<br/>
+[in] Specifies the zero-based index of an element that is located in the extended area of the status bar control.  
   
 ### Return Value  
  A pointer to the element that is located at a specified index in the extended area of the ribbon status bar. NULL if *nIndex* is negative or exceeds the number of elements in the extended area of the ribbon status bar.  
@@ -358,14 +358,14 @@ virtual void OnDrawInformation(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *strInfo*  
- The information string.  
+*strInfo*<br/>
+[in] The information string.  
   
- [in] *rectInfo*  
- The bounding rectangle.  
+*rectInfo*<br/>
+[in] The bounding rectangle.  
   
 ### Remarks  
  Override this method in a derived class if you want to customize the appearance of the information string on the status bar. Use the [CMFCRibbonStatusBar::SetInformation](#setinformation) method to put the status bar in information mode. In this mode, the status bar hides all panes and displays the information string specified by *strInfo*.  
@@ -394,8 +394,8 @@ BOOL RemoveElement(UINT uiID);
 ```  
   
 ### Parameters  
- [in] *uiID*  
- The ID of the element to remove from the status bar.  
+*uiID*<br/>
+[in] The ID of the element to remove from the status bar.  
   
 ### Return Value  
  TRUE if an element with the specified *uiID* is removed. FALSE otherwise.  
@@ -408,8 +408,8 @@ void SetInformation(LPCTSTR lpszInfo);
 ```  
   
 ### Parameters  
- [in] *lpszInfo*  
- The information string.  
+*lpszInfo*<br/>
+[in] The information string.  
   
 ### Remarks  
  Use this method to put the status bar in the information mode. In this mode, the status bar hides all panes and displays the information string specified by *lpszInfo*.  

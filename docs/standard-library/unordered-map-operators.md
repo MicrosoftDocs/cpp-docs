@@ -23,11 +23,11 @@ bool operator!=(const unordered_map <Key, Type, Hash, Pred, Allocator>& left, co
 
 ### Parameters
 
-*left*  
- An object of type `unordered_map`.
+*left*<br/>
+An object of type `unordered_map`.
 
-*right*  
- An object of type `unordered_map`.
+*right*<br/>
+An object of type `unordered_map`.
 
 ### Return Value
 
@@ -88,11 +88,11 @@ bool operator==(const unordered_map <Key, Type, Hash, Pred, Allocator>& left, co
 
 ### Parameters
 
-*left*  
- An object of type `unordered_map`.
+*left*<br/>
+An object of type `unordered_map`.
 
-*right*  
- An object of type `unordered_map`.
+*right*<br/>
+An object of type `unordered_map`.
 
 ### Return Value
 
@@ -153,11 +153,11 @@ bool operator!=(const unordered_multimap <Key, Type, Hash, Pred, Allocator>& lef
 
 ### Parameters
 
-*left*  
- An object of type `unordered_multimap`.
+*left*<br/>
+An object of type `unordered_multimap`.
 
-*right*  
- An object of type `unordered_multimap`.
+*right*<br/>
+An object of type `unordered_multimap`.
 
 ### Return Value
 
@@ -219,11 +219,11 @@ bool operator==(const unordered_multimap <Key, Type, Hash, Pred, Allocator>& lef
 
 ### Parameters
 
-*left*  
- An object of type `unordered_multimap`.
+*left*<br/>
+An object of type `unordered_multimap`.
 
-*right*  
- An object of type `unordered_multimap`.
+*right*<br/>
+An object of type `unordered_multimap`.
 
 ### Return Value
 

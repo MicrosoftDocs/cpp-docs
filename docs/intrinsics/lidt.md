@@ -28,7 +28,7 @@ void __lidt(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `Source`|Pointer to the value to be copied to the IDTR.|  
+|*Source*|[in] Pointer to the value to be copied to the IDTR.|  
   
 ## Requirements  
   

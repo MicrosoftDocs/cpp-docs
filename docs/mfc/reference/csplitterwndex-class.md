@@ -68,14 +68,14 @@ virtual void OnDrawSplitter(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to the device context. If this parameter is NULL, the framework redraws the active window.  
+*pDC*<br/>
+[in] Pointer to the device context. If this parameter is NULL, the framework redraws the active window.  
   
- [in] *nType*  
- One of the `CSplitterWnd::ESplitType` enumeration values that specifies the splitter window element to draw. Valid values are `splitBox`, `splitBar`, `splitIntersection`, and `splitBorder`.  
+*nType*<br/>
+[in] One of the `CSplitterWnd::ESplitType` enumeration values that specifies the splitter window element to draw. Valid values are `splitBox`, `splitBar`, `splitIntersection`, and `splitBorder`.  
   
- [in] *rect*  
- A bounding rectangle that specifies the dimensions and location to draw the specified splitter window element.  
+*rect*<br/>
+[in] A bounding rectangle that specifies the dimensions and location to draw the specified splitter window element.  
   
 ### Remarks  
   

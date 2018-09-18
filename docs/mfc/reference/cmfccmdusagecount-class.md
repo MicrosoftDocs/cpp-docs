@@ -79,7 +79,7 @@ void AddCmd(UINT uiCmd);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *uiCmd*|Specifies the command counter to increment.|  
+|*uiCmd*|[in] Specifies the command counter to increment.|  
   
 ### Remarks  
  This method adds a new entry to the map structure of command counts, `m_CmdUsage`, if the entry does not already exist.  
@@ -104,7 +104,7 @@ UINT GetCount(UINT uiCmd) const;
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *uiCmd*|The ID of the command counter to retrieve.|  
+|*uiCmd*|[in] The ID of the command counter to retrieve.|  
   
 ### Return Value  
  The usage count that is associated with the given command ID.  
@@ -136,7 +136,7 @@ BOOL IsFreqeuntlyUsedCmd(UINT uiCmd) const;
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *uiCmd*|Specifies the command to check.|  
+|*uiCmd*|[in] Specifies the command to check.|  
   
 ### Return Value  
  Nonzero if the command is frequently used; otherwise 0.  
@@ -168,7 +168,7 @@ virtual void Serialize(CArchive& ar);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *ar*|A `CArchive` object to serialize from or to.|  
+|*ar*|[in] A `CArchive` object to serialize from or to.|  
   
 ### Remarks  
  This method serializes the map structure of command counts, `m_CmdUsage`, and the total command usage, `m_nTotalUsage`, counter from or to the specified archive.  
@@ -189,8 +189,8 @@ static BOOL __stdcall SetOptions(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] *nStartCount*|The new initial count of all tracked commands.|  
-|[in] *nMinUsagePercentage*|The new minimum usage percentage.|  
+|*nStartCount*|[in] The new initial count of all tracked commands.|  
+|*nMinUsagePercentage*|[in] The new minimum usage percentage.|  
   
 ### Return Value  
  TRUE if the method succeeds, FALSE if the *nMinUsagePercentage* parameter is larger than or equal to 100.  

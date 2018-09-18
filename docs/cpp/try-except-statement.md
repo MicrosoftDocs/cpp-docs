@@ -14,7 +14,8 @@ ms.workload: ["cplusplus"]
 ---
 # try-except Statement
 
-**Microsoft Specific**  
+**Microsoft Specific**
+
 The **try-except** statement is a Microsoft extension to the C and C++ languages that supports structured exception handling.  
 
 ## Syntax  

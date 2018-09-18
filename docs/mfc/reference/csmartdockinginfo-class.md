@@ -88,8 +88,8 @@ void CopyTo(CSmartDockingInfo& params);
 ```  
   
 ### Parameters  
- [out] *params*  
- An object of type `CSmartDockingInfo` that is populated with the current smart docking parameters.  
+*params*<br/>
+[out] An object of type `CSmartDockingInfo` that is populated with the current smart docking parameters.  
   
 ##  <a name="m_busethemecolorinshading"></a>  CSmartDockingInfo::m_bUseThemeColorInShading  
  Specifies whether to use the current theme color when the framework displays smart docking markers.  

@@ -28,8 +28,8 @@ SafeIntException(
 
 ### Parameters
 
-[in] *code*  
-An enumerated data value that describes the error that occurred.
+*code*<br/>
+[in] An enumerated data value that describes the error that occurred.
 
 ## Remarks
 

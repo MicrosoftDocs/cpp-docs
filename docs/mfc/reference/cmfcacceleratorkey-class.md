@@ -63,8 +63,8 @@ CMFCAcceleratorKey(LPACCEL lpAccel);
 ```  
   
 ### Parameters  
- [in] *lpAccel*  
- A pointer to a shortcut key.  
+*lpAccel*<br/>
+[in] A pointer to a shortcut key.  
   
 ### Remarks  
  If you do not provide a shortcut key when you create a `CMFCAccleratorKey`, use the [CMFCAcceleratorKey::SetAccelerator](#setaccelerator) method to associate a shortcut key with your `CMFCAcceleratorKey` object.  
@@ -77,8 +77,8 @@ void Format(CString& str) const;
 ```  
   
 ### Parameters  
- [out] *str*  
- A reference to a `CString` object where the method writes the translated shortcut key.  
+*str*<br/>
+[out] A reference to a `CString` object where the method writes the translated shortcut key.  
   
 ### Remarks  
  This method retrieves the string format of the associated shortcut key. You can set the string format of a [CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) object using either the constructor or the method [CMFCAcceleratorKey::SetAccelerator](#setaccelerator).  
@@ -91,8 +91,8 @@ void SetAccelerator(LPACCEL lpAccel);
 ```  
   
 ### Parameters  
- [in] *lpAccel*  
- A pointer to a shortcut key.  
+*lpAccel*<br/>
+[in] A pointer to a shortcut key.  
   
 ### Remarks  
  Use this method to set the shortcut key for a `CMFCAcceleratorKey` if you did not provide a shortcut key when you created the `CMFCAcceleratorKey`.  

@@ -89,14 +89,14 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] *pParentBar*  
- A pointer to the parent toolbar.  
+*pParentBar*<br/>
+[in] A pointer to the parent toolbar.  
   
- [in] *pAutoHideWnd*  
- A pointer to a [CDockablePane](../../mfc/reference/cdockablepane-class.md) object. This auto-hide button hides and shows that `CDockablePane`.  
+*pAutoHideWnd*<br/>
+[in] A pointer to a [CDockablePane](../../mfc/reference/cdockablepane-class.md) object. This auto-hide button hides and shows that `CDockablePane`.  
   
- [in] *dwAlignment*  
- A value that specifies the alignment of the button with the main frame window.  
+*dwAlignment*<br/>
+[in] A value that specifies the alignment of the button with the main frame window.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -248,8 +248,8 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
 ### Remarks  
  If you want to customize the appearance of auto-hide buttons in your application, create a new class derived from `CMFCAutoHideButton`. In your derived class, override this method.  
@@ -265,14 +265,14 @@ virtual void OnDrawBorder(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rectBounds*  
- The bounding rectangle of the auto-hide button.  
+*rectBounds*<br/>
+[in] The bounding rectangle of the auto-hide button.  
   
- [in] *rectBorderSize*  
- The border thickness for each side of the auto-hide button.  
+*rectBorderSize*<br/>
+[in] The border thickness for each side of the auto-hide button.  
   
 ### Remarks  
  If you want to customize the border of each auto-hide button in your application, create a new class derived from the `CMFCAutoHideButton`. In your derived class, override this method.  
@@ -287,11 +287,11 @@ virtual void OnFillBackground(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rect*  
- The bounding rectangle of the auto-hide button.  
+*rect*<br/>
+[in] The bounding rectangle of the auto-hide button.  
   
 ### Remarks  
  If you want to customize the background for auto-hide buttons in your application, create a new class derived from the `CMFCAutoHideButton`. In your derived class, override this method.  
@@ -304,8 +304,8 @@ void ShowAttachedWindow(BOOL bShow);
 ```  
   
 ### Parameters  
- [in] *bShow*  
- A Boolean that specifies whether this method shows the attached `CDockablePane`.  
+*bShow*<br/>
+[in] A Boolean that specifies whether this method shows the attached `CDockablePane`.  
   
 ##  <a name="showbutton"></a>  CMFCAutoHideButton::ShowButton  
  Shows or hides the auto-hide button.  
@@ -315,8 +315,8 @@ virtual void ShowButton(BOOL bShow);
 ```  
   
 ### Parameters  
- [in] *bShow*  
- A Boolean that specifies whether to show the auto-hide button.  
+*bShow*<br/>
+[in] A Boolean that specifies whether to show the auto-hide button.  
   
 ##  <a name="move"></a>  CMFCAutoHideButton::Move  
 
@@ -350,8 +350,8 @@ virtual void UnSetAutoHideMode(CDockablePane* pFirstBarInGroup);
 ```  
   
 ### Parameters  
- [in] *pFirstBarInGroup*  
- A pointer to the first bar in the group.  
+*pFirstBarInGroup*<br/>
+[in] A pointer to the first bar in the group.  
   
 ### Remarks  
   

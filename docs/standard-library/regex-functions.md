@@ -72,7 +72,7 @@ bool regex_match(
 
 ### Parameters
 
-*BidIt*<br/> 
+*BidIt*<br/>
 The iterator type for submatches. For common cases this one of `string::const_iterator`, `wstring::const_iterator`, `const char*` or `const wchar_t*`.
 
 *Alloc*<br/>

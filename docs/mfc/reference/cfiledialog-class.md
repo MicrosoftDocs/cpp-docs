@@ -385,29 +385,29 @@ explicit CFileDialog(
 ```  
   
 ### Parameters  
- [in] *bOpenFileDialog*  
- The parameter that specifies what type of dialog box to create. Set it to TRUE to construct a **File Open** dialog box. Set it to FALSE to construct a **File Save As** dialog box.  
+*bOpenFileDialog*<br/>
+[in] The parameter that specifies what type of dialog box to create. Set it to TRUE to construct a **File Open** dialog box. Set it to FALSE to construct a **File Save As** dialog box.  
   
- [in] *lpszDefExt*  
- The default file name extension. If the user does not include a known extension (one that has an association on the user’s computer) in the Filename box, the extension specified by *lpszDefExt* is automatically appended to the file name. If this parameter is NULL, no extension is appended.  
+*lpszDefExt*<br/>
+[in] The default file name extension. If the user does not include a known extension (one that has an association on the user’s computer) in the Filename box, the extension specified by *lpszDefExt* is automatically appended to the file name. If this parameter is NULL, no extension is appended.  
   
- [in] *lpszFileName*  
- The initial file name that appears in the Filename box. If NULL, no initial file name appears.  
+*lpszFileName*<br/>
+[in] The initial file name that appears in the Filename box. If NULL, no initial file name appears.  
   
- [in] *dwFlags*  
- A combination of one or more flags that you can use to customize the dialog box. For a description of these flags, see the [OPENFILENAME](/windows/desktop/api/commdlg/ns-commdlg-tagofna) structure in the Windows SDK. If you modify the `m_ofn.Flags` structure member, use a bitwise-OR operator in your changes to keep the default behavior intact.  
+*dwFlags*<br/>
+[in] A combination of one or more flags that you can use to customize the dialog box. For a description of these flags, see the [OPENFILENAME](/windows/desktop/api/commdlg/ns-commdlg-tagofna) structure in the Windows SDK. If you modify the `m_ofn.Flags` structure member, use a bitwise-OR operator in your changes to keep the default behavior intact.  
   
- [in] *lpszFilter*  
- A series of string pairs that specify filters you can apply to the file. If you specify file filters, only files that match filter criteria will appear in the Files list. See the Remarks section for more information about how to work with file filters.  
+*lpszFilter*<br/>
+[in] A series of string pairs that specify filters you can apply to the file. If you specify file filters, only files that match filter criteria will appear in the Files list. See the Remarks section for more information about how to work with file filters.  
   
- [in] *pParentWnd*  
- A pointer to the parent or owner window of the file dialog box.  
+*pParentWnd*<br/>
+[in] A pointer to the parent or owner window of the file dialog box.  
   
- [in] *dwSize*  
- The size of the `OPENFILENAME` structure. This value depends on the operating system version. MFC used this parameter to determine the appropriate kind of dialog box to create. The default size of 0 means that the MFC code will determine the correct dialog box size to use based on the operating system version on which the program is run.  
+*dwSize*<br/>
+[in] The size of the `OPENFILENAME` structure. This value depends on the operating system version. MFC used this parameter to determine the appropriate kind of dialog box to create. The default size of 0 means that the MFC code will determine the correct dialog box size to use based on the operating system version on which the program is run.  
   
- [in] *bVistaStyle*  
- **Note** This parameter is available in Visual Studio 2008 and later and is will cause the new-style dialog to be used only if you are running in Windows Vista or later.  
+*bVistaStyle*<br/>
+[in] **Note** This parameter is available in Visual Studio 2008 and later and is will cause the new-style dialog to be used only if you are running in Windows Vista or later.  
   
  The parameter that specifies the style of the file dialog. Set it to TRUE to use the new Vista style file dialogs. Otherwise, the old style of dialog boxes will be used. See the Remarks section for more information about running under Vista.  
   
@@ -1209,11 +1209,11 @@ void SetControlText(
 ```  
   
 ### Parameters  
- [in] *nID*  
- The ID of the control for which to set the text.  
+*nID*<br/>
+[in] The ID of the control for which to set the text.  
   
- [in] *lpsz*  
- A pointer to the string that contains the text to set for the control.  
+*lpsz*<br/>
+[in] A pointer to the string that contains the text to set for the control.  
   
 ### Remarks  
  Both versions of this function are valid for applications that use Unicode. However, only the version with the LPCSTR type is valid for applications that use ANSI.  
@@ -1298,17 +1298,17 @@ void SetTemplate(
 ```  
   
 ### Parameters  
- [in] *nWin3ID*  
- Contains the ID number of the template resource for the non-Explorer `CFileDialog` object. This template is only used on Windows NT 3.51 or when the OFN_EXPLORER style is not present.  
+*nWin3ID*<br/>
+[in] Contains the ID number of the template resource for the non-Explorer `CFileDialog` object. This template is only used on Windows NT 3.51 or when the OFN_EXPLORER style is not present.  
   
- [in] *nWin4ID*  
- Contains the ID number of the template resource for the Explorer `CFileDialog` object. This template is used only on Windows NT 4.0  and later versions, Windows 95 and later versions, or when the OFN_EXPLORER style is present.  
+*nWin4ID*<br/>
+[in] Contains the ID number of the template resource for the Explorer `CFileDialog` object. This template is used only on Windows NT 4.0  and later versions, Windows 95 and later versions, or when the OFN_EXPLORER style is present.  
   
- [in] *lpWin3ID*  
- Contains the name of the template resource for the non-Explorer `CFileDialog` object. This template is only used on Windows NT 3.51 or when the OFN_EXPLORER style is not present.  
+*lpWin3ID*<br/>
+[in] Contains the name of the template resource for the non-Explorer `CFileDialog` object. This template is only used on Windows NT 3.51 or when the OFN_EXPLORER style is not present.  
   
- [in] *lpWin4ID*  
- Contains the name of the template resource of the Explorer `CFileDialog` object. This template is used only on Windows NT 4.0  and later versions, Windows 95 and later versions, or when the OFN_EXPLORER style is present.  
+*lpWin4ID*<br/>
+[in] Contains the name of the template resource of the Explorer `CFileDialog` object. This template is used only on Windows NT 4.0  and later versions, Windows 95 and later versions, or when the OFN_EXPLORER style is present.  
   
 ### Remarks  
  The system will use only one of the specified templates. The system determines which template to use based on the presence of the OFN_EXPLORER style and the operating system that the application is running on. By specifying both a non-Explorer and Explorer-style template, it is easy to support Windows NT 3.51, Windows NT 4.0  and later versions, and Windows 95 and later versions.  

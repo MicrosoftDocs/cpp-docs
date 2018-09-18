@@ -78,8 +78,8 @@ void freeze(bool _Freezeit = true);
 
 ### Parameters
 
-*_Freezeit*  
- A **bool** indicating whether you want the stream to be frozen.
+*_Freezeit*<br/>
+A **bool** indicating whether you want the stream to be frozen.
 
 ### Remarks
 
@@ -166,8 +166,8 @@ virtual int overflow(int _Meta = EOF);
 
 ### Parameters
 
-*_Meta*  
- The character to insert into the buffer, or `EOF`.
+*_Meta*<br/>
+The character to insert into the buffer, or `EOF`.
 
 ### Return Value
 
@@ -191,8 +191,8 @@ virtual int pbackfail(int _Meta = EOF);
 
 ### Parameters
 
-*_Meta*  
- The character to insert into the buffer, or `EOF`.
+*_Meta*<br/>
+The character to insert into the buffer, or `EOF`.
 
 ### Return Value
 
@@ -255,14 +255,14 @@ virtual streampos seekoff(streamoff _Off,
 
 ### Parameters
 
-*_Off*  
- The position to seek for relative to *_Way*.
+*_Off*<br/>
+The position to seek for relative to *_Way*.
 
-*_Way*  
- The starting point for offset operations. See [seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
+*_Way*<br/>
+The starting point for offset operations. See [seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
 
-*_Which*  
- Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
+*_Which*<br/>
+Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
 
@@ -294,11 +294,11 @@ virtual streampos seekpos(streampos _Sp, ios_base::openmode _Which = ios_base::i
 
 ### Parameters
 
-*_Sp*  
- The position to seek for.
+*_Sp*<br/>
+The position to seek for.
 
-*_Which*  
- Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
+*_Which*<br/>
+Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
 
@@ -364,20 +364,20 @@ strstreambuf(const unsigned char* _Getptr,
 
 ### Parameters
 
-*_Allocfunc*  
- The function used to allocate buffer memory.
+*_Allocfunc*<br/>
+The function used to allocate buffer memory.
 
-*count*  
- Determines the length of the buffer pointed to by *_Getptr*. If *_Getptr* is not an argument (first constructor form), a suggested allocation size for the buffers.
+*count*<br/>
+Determines the length of the buffer pointed to by *_Getptr*. If *_Getptr* is not an argument (first constructor form), a suggested allocation size for the buffers.
 
-*_Freefunc*  
- The function used to free buffer memory.
+*_Freefunc*<br/>
+The function used to free buffer memory.
 
-*_Getptr*  
- A buffer used for input.
+*_Getptr*<br/>
+A buffer used for input.
 
-*_Putptr*  
- A buffer used for output.
+*_Putptr*<br/>
+A buffer used for output.
 
 ### Remarks
 

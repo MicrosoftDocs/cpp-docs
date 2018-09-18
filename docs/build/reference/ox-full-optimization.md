@@ -62,6 +62,6 @@ To apply all available file-level optimizations for release builds, we recommend
 
 ## See Also
 
-[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)  
-[Compiler Options](../../build/reference/compiler-options.md)  
+[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

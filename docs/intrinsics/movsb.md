@@ -28,14 +28,14 @@ void __movsb( 
 ```  
   
 #### Parameters  
- [out] `Destination`  
- A pointer to the destination of the copy.  
+*Destination*<br/>
+[out] A pointer to the destination of the copy.  
   
- [in] `Source`  
- A pointer to the source of the copy.  
+*Source*<br/>
+[in] A pointer to the source of the copy.  
   
- [in] `Count`  
- The number of bytes to copy.  
+*Count*<br/>
+[in] The number of bytes to copy.  
   
 ## Requirements  
   

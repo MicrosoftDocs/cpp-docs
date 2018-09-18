@@ -12,21 +12,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Multiple Inline Files
-A command can create more than one inline file.  
-  
-## Syntax  
-  
-```  
-  
-      command << <<  
-inlinetext  
-<<[KEEP | NOKEEP]  
-inlinetext  
-<<[KEEP | NOKEEP]  
-```  
-  
-## Remarks  
- For each file, specify one or more lines of inline text followed by a closing line containing the delimiter. Begin the second file's text on the line following the delimiting line for the first file.  
-  
-## See Also  
- [Inline Files in a Makefile](../build/inline-files-in-a-makefile.md)
+
+A command can create more than one inline file.
+
+## Syntax
+
+```
+command << <<
+inlinetext
+<<[KEEP | NOKEEP]
+inlinetext
+<<[KEEP | NOKEEP]
+```
+
+## Remarks
+
+For each file, specify one or more lines of inline text followed by a closing line containing the delimiter. Begin the second file's text on the line following the delimiting line for the first file.
+
+## See Also
+
+[Inline Files in a Makefile](../build/inline-files-in-a-makefile.md)

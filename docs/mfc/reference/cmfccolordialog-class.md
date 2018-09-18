@@ -98,17 +98,17 @@ CMFCColorDialog(
 ```  
   
 ### Parameters  
- [in] *clrInit*  
- The default color selection. If no value is specified, the default is RGB(0,0,0) (black).  
+*clrInit*<br/>
+[in] The default color selection. If no value is specified, the default is RGB(0,0,0) (black).  
   
- [in] *dwFlags*  
- (Reserved.)  
+*dwFlags*<br/>
+[in] Reserved.
   
- [in] *pParentWnd*  
- A pointer to the dialog box's parent or owner window.  
+*pParentWnd*<br/>
+[in] A pointer to the dialog box's parent or owner window.  
   
- [in] *hPal*  
- A handle to a color palette.  
+*hPal*<br/>
+[in] A handle to a color palette.  
   
 ### Return Value  
   
@@ -155,8 +155,8 @@ void SetCurrentColor(COLORREF rgb);
 ```  
   
 ### Parameters  
- [in] *rgb*  
- An RGB color value  
+*rgb*<br/>
+[in] An RGB color value  
   
 ### Remarks  
   
@@ -168,8 +168,8 @@ void SetNewColor(COLORREF rgb);
 ```  
   
 ### Parameters  
- [in] *rgb*  
- A [COLORREF](/windows/desktop/gdi/colorref) that specifies an RGB color.  
+*rgb*<br/>
+[in] A [COLORREF](/windows/desktop/gdi/colorref) that specifies an RGB color.  
   
 ### Remarks  
   
@@ -184,14 +184,14 @@ void SetPageOne(
 ```  
   
 ### Parameters  
- [in] *R*  
- Specifies the red component of the RGB value.  
+*R*<br/>
+[in] Specifies the red component of the RGB value.  
   
- [in] *G*  
- Specifies the green component of the RGB value.  
+*G*<br/>
+[in] Specifies the green component of the RGB value.  
   
- [in] *B*  
- Specifies the blue component of the RGB value.  
+*B*<br/>
+[in] Specifies the blue component of the RGB value.  
   
 ### Remarks  
   
@@ -206,14 +206,14 @@ void SetPageTwo(
 ```  
   
 ### Parameters  
- [in] *R*  
- Specifies a red component of the RGB value  
+*R*<br/>
+[in] Specifies a red component of the RGB value  
   
- [in] *G*  
- Specifies a green component of an RGB value  
+*G*<br/>
+[in] Specifies a green component of an RGB value  
   
- [in] *B*  
- Specifies a blue component of an RGB value  
+*B*<br/>
+[in] Specifies a blue component of an RGB value  
   
 ### Remarks  
   

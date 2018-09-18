@@ -421,8 +421,8 @@ BOOL GetItemDropDownRect(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *iItem*|Zero-based index of a header item whose style is HDF_SPLITBUTTON. For more information, see the `fmt` member of the [HDITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) structure.|  
-|[out] *lpRect*|Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure to receive the bounding rectangle information.|  
+|*iItem*|[in] Zero-based index of a header item whose style is HDF_SPLITBUTTON. For more information, see the `fmt` member of the [HDITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) structure.|  
+|*lpRect*|[out] Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure to receive the bounding rectangle information.|  
   
 ### Return Value  
  TRUE if this function is successful; otherwise, FALSE.  
@@ -498,7 +498,7 @@ BOOL GetOverflowRect(LPRECT lpRect) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[out] *lpRect*|Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that receives the bounding rectangle information.|  
+|*lpRect*|[out] Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that receives the bounding rectangle information.|  
   
 ### Return Value  
  TRUE if this function is successful; otherwise, FALSE.  
@@ -529,7 +529,7 @@ int HitTest(LPHDHITTESTINFO* phdhti);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in, out] *phdhti*|Pointer to a [HDHITTESTINFO](/windows/desktop/api/commctrl/ns-commctrl-_hd_hittestinfo) structure that specifies the point to test and receives the results of the test.|  
+|*phdhti*|[in, out] Pointer to a [HDHITTESTINFO](/windows/desktop/api/commctrl/ns-commctrl-_hd_hittestinfo) structure that specifies the point to test and receives the results of the test.|  
   
 ### Return Value  
  The zero-based index of the header item, if any, at the specified position; otherwise, -1.  
@@ -657,7 +657,7 @@ BOOL SetFocusedItem(int iItem);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *iItem*|Zero-based index of a header item.|  
+|*iItem*|[in] Zero-based index of a header item.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  

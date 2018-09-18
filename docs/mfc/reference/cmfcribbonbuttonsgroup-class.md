@@ -71,8 +71,8 @@ void AddButton(CMFCRibbonBaseElement* pButton);
 ```  
   
 ### Parameters  
- [in] *pButton*  
- A pointer to a button to add.  
+*pButton*<br/>
+[in] A pointer to a button to add.  
   
 ##  <a name="addbuttons"></a>  CMFCRibbonButtonsGroup::AddButtons  
  Adds a list of buttons to a group.  
@@ -83,8 +83,8 @@ void AddButtons(
 ```  
   
 ### Parameters  
- [in] *lstButtons*  
- A list of pointers to the buttons that you want to add.  
+*lstButtons*<br/>
+[in] A list of pointers to the buttons that you want to add.  
   
 ##  <a name="cmfcribbonbuttonsgroup"></a>  CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup  
  Constructs a `CMFCRibbonButtonsGroup` object.  
@@ -95,8 +95,8 @@ CMFCRibbonButtonsGroup(CMFCRibbonBaseElement* pButton);
 ```  
   
 ### Parameters  
- [in] *pButton*  
- Specifies a button to add to the newly created `CMFCRibbonButtonsGroup` object.  
+*pButton*<br/>
+[in] Specifies a button to add to the newly created `CMFCRibbonButtonsGroup` object.  
   
 ### Return Value  
   
@@ -110,8 +110,8 @@ CMFCRibbonBaseElement* GetButton(int i) const;
 ```  
   
 ### Parameters  
- [in] *i*  
- A zero-based index of a button to return.  
+*i*<br/>
+[in] A zero-based index of a button to return.  
   
 ### Return Value  
  A pointer to the button that is located at the specified index. NULL if the specified index is out of range.  
@@ -148,8 +148,8 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to the device context of the ribbon group.  
+*pDC*<br/>
+[in] Pointer to the device context of the ribbon group.  
   
 ### Return Value  
   
@@ -179,17 +179,17 @@ virtual void OnDrawImage(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to the device context of the `CMFCRibbonButtonsGroup` object.  
+*pDC*<br/>
+[in] Pointer to the device context of the `CMFCRibbonButtonsGroup` object.  
   
- [in] *rectImage*  
- The rectangle within which to draw the image.  
+*rectImage*<br/>
+[in] The rectangle within which to draw the image.  
   
- [in] *pButton*  
- The button for which to draw the image.  
+*pButton*<br/>
+[in] The button for which to draw the image.  
   
- [in] *nImageIndex*  
- The index of the image to draw on the button (in one of the three image arrays for normal, highlighted or disabled buttons).  
+*nImageIndex*<br/>
+[in] The index of the image to draw on the button (in one of the three image arrays for normal, highlighted or disabled buttons).  
   
 ### Remarks  
   
@@ -213,14 +213,14 @@ void SetImages(
 ```  
   
 ### Parameters  
- [in] *pImages*  
- Regular images.  
+*pImages*<br/>
+[in] Regular images.  
   
- [in] *pHotImages*  
- Hot images.  
+*pHotImages*<br/>
+[in] Hot images.  
   
- [in] *pDisabledImages*  
- Disabled images.  
+*pDisabledImages*<br/>
+[in] Disabled images.  
   
 ### Remarks  
  Call `SetImages` before you add buttons to a group. The number of images must be greater or equal to the number of buttons to be added to the group.  
@@ -236,8 +236,8 @@ virtual void SetParentCategory(CMFCRibbonCategory* pCategory);
 ```  
   
 ### Parameters  
- [in] *pCategory*  
- Pointer to the parent category to set (the tabbed groups in ribbon controls are called categories).  
+*pCategory*<br/>
+[in] Pointer to the parent category to set (the tabbed groups in ribbon controls are called categories).  
   
 ### Remarks  
   

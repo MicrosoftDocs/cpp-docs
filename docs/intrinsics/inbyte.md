@@ -26,8 +26,8 @@ unsigned char __inbyte(
 ```  
   
 #### Parameters  
- [in] `Port`  
- The port to read from.  
+*Port*<br/>
+[in] The port to read from.  
   
 ## Return Value  
  The byte read from the specified port.  

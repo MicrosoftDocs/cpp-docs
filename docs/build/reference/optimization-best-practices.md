@@ -21,7 +21,7 @@ This document describes some best practices for optimization in Visual C++.
 
 Visual C++ supports *profile-guided optimization* (PGO). This optimization uses profile data from training executions of an instrumented version of an application to drive later optimization of the application. Using PGO can be time consuming, so it may not be something that every developer uses, but we do recommend using PGO for the final release build of a product. For more information, see [Profile-Guided Optimizations](../../build/reference/profile-guided-optimizations.md).
 
-In addition, *Whole Program Optimization* (also knows as Link Time Code Generation) and the **/O1** and **/O2** optimizations have been improved. In general, an application compiled with one of these options will be faster than the same application compiled with an earlier compiler. 
+In addition, *Whole Program Optimization* (also knows as Link Time Code Generation) and the **/O1** and **/O2** optimizations have been improved. In general, an application compiled with one of these options will be faster than the same application compiled with an earlier compiler.
 
 For more information, see [/GL (Whole Program Optimization)](../../build/reference/gl-whole-program-optimization.md) and [/O1, /O2 (Minimize Size, Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md).
 

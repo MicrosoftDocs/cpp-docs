@@ -594,8 +594,8 @@ BOOL AFXAPI AfxEnableMemoryLeakDump(BOOL bDump);
 ```  
   
 ### Parameters  
- [in] *bDump*  
- TRUE indicates the memory leak dump is enabled; FALSE indicates the memory leak dump is disabled.  
+*bDump*<br/>
+[in] TRUE indicates the memory leak dump is enabled; FALSE indicates the memory leak dump is disabled.  
   
 ### Return Value  
  The previous value for this flag.  

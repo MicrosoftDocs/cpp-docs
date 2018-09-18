@@ -77,11 +77,11 @@ void SetCommands(
 ```  
   
 ### Parameters  
- [in] *pRibbonBar*  
- The ribbon bar that the mini toolbar searches for the buttons to display.  
+*pRibbonBar*<br/>
+[in] The ribbon bar that the mini toolbar searches for the buttons to display.  
   
- [in] *lstCommands*  
- The list of commands to be displayed on the mini toolbar. All ribbon categories are searched to find the associated buttons.  
+*lstCommands*<br/>
+[in] The list of commands to be displayed on the mini toolbar. All ribbon categories are searched to find the associated buttons.  
   
 ### Remarks  
  Use this function to set the list of commands to be displayed in the mini toolbar.  
@@ -101,11 +101,11 @@ BOOL Show(
 ```  
   
 ### Parameters  
- [in] *x*  
- Specifies the horizontal position of the mini toolbar in screen coordinates.  
+*x*<br/>
+[in] Specifies the horizontal position of the mini toolbar in screen coordinates.  
   
- [in] *y*  
- Specifies the vertical position of the mini toolbar in screen coordinates.  
+*y*<br/>
+[in] Specifies the vertical position of the mini toolbar in screen coordinates.  
   
 ### Return Value  
  TRUE if the mini toolbar was displayed successfully; otherwise, FALSE.  
@@ -122,17 +122,17 @@ BOOL ShowWithContextMenu(
 ```  
   
 ### Parameters  
- [in] *x*  
- Specifies the horizontal position of the context menu in screen coordinates.  
+*x*<br/>
+[in] Specifies the horizontal position of the context menu in screen coordinates.  
   
- [in] *y*  
- Specifies the vertical position of the context menu in screen coordinates.  
+*y*<br/>
+[in] Specifies the vertical position of the context menu in screen coordinates.  
   
- [in] *uiMenuResID*  
- Specifies the resource ID of the context menu to display.  
+*uiMenuResID*<br/>
+[in] Specifies the resource ID of the context menu to display.  
   
- [in] *pWndOwner*  
- Identifies the window which receives messages from the context menu.  
+*pWndOwner*<br/>
+[in] Identifies the window which receives messages from the context menu.  
   
 ### Return Value  
  TRUE if the context menu was displayed successfully; otherwise, FALSE.  

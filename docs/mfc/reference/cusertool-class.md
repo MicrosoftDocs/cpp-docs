@@ -87,11 +87,11 @@ void DrawToolIcon(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rectImage*  
- Specifies the coordinates of the area to display the icon.  
+*rectImage*<br/>
+[in] Specifies the coordinates of the area to display the icon.  
   
 ##  <a name="getcommand"></a>  CUserTool::GetCommand  
  Returns a string that contains the text of the command associated with the user tool.  
@@ -188,8 +188,8 @@ void SetCommand(LPCTSTR lpszCmd);
 ```  
   
 ### Parameters  
- [in] *lpszCmd*  
- Specifies the new application to be associated with the user tool.  
+*lpszCmd*<br/>
+[in] Specifies the new application to be associated with the user tool.  
   
 ### Remarks  
  Call this method to set a new application that the user tool runs. The method destroys the old icon and loads a new icon from the given application. If it cannot load an icon from the application, it loads the default icon for a user tool by calling [CUserTool::LoadDefaultIcon](#loaddefaulticon).  

@@ -12,19 +12,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Exception Handling (x64)
-This section discusses structured exception handling and C++ exception handling behavior on the x64.  
-  
--   [Unwind Data for Exception Handling, Debugger Support](../build/unwind-data-for-exception-handling-debugger-support.md)  
-  
--   [The Unwind Procedure](../build/unwind-procedure.md)  
-  
--   [The Language Specific Handler](../build/language-specific-handler.md)  
-  
--   [Unwind Helpers for MASM](../build/unwind-helpers-for-masm.md)  
-  
--   [Unwind Data Definitions in C](../build/unwind-data-definitions-in-c.md)  
-  
- For more information, see [Exception Handling](../cpp/exception-handling-in-visual-cpp.md).  
-  
-## See Also  
- [x64 Software Conventions](../build/x64-software-conventions.md)
+
+This section discusses structured exception handling and C++ exception handling behavior on the x64.
+
+- [Unwind Data for Exception Handling, Debugger Support](../build/unwind-data-for-exception-handling-debugger-support.md)
+
+- [The Unwind Procedure](../build/unwind-procedure.md)
+
+- [The Language Specific Handler](../build/language-specific-handler.md)
+
+- [Unwind Helpers for MASM](../build/unwind-helpers-for-masm.md)
+
+- [Unwind Data Definitions in C](../build/unwind-data-definitions-in-c.md)
+
+For more information, see [Exception Handling](../cpp/exception-handling-in-visual-cpp.md).
+
+## See Also
+
+[x64 Software Conventions](../build/x64-software-conventions.md)

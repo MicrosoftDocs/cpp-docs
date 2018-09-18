@@ -42,14 +42,14 @@ SafeInt (
 
 ### Parameters
 
-[in] *i*  
-The value for the new **SafeInt** object. This must be a parameter of type T or U, depending on the constructor.
+*i*<br/>
+[in] The value for the new **SafeInt** object. This must be a parameter of type T or U, depending on the constructor.
 
-[in] *b*  
-The Boolean value for the new **SafeInt** object.
+*b*<br/>
+[in] The Boolean value for the new **SafeInt** object.
 
-[in] *u*  
-A **SafeInt** of type U. The new **SafeInt** object will have the same value as *u*, but will be of type T.
+*u*<br/>
+[in] A **SafeInt** of type U. The new **SafeInt** object will have the same value as *u*, but will be of type T.
 
 U
  The type of data stored in the **SafeInt**. This can be either a Boolean, character, or integer type. If it is an integer type, it can be signed or unsigned and be between 8 and 64 bits.

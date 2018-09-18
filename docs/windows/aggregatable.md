@@ -26,8 +26,8 @@ Indicates that the class supports aggregation.
 
 ### Parameters
 
-*value* (optional)  
-A parameter to indicate when the COM object can be aggregated:
+*value*  
+(Optional) A parameter to indicate when the COM object can be aggregated:
 
 - `never` The COM object cannot be aggregated.
 

@@ -31,8 +31,8 @@ Creates a registry key or modifies an existing registry key.
 *key*  
 The name of the key to be created or opened.
 
-*valuename* (optional)  
-Specifies the value field to be set. If a value field with this name does not already exist in the key, it is added.
+*valuename*  
+(Optional) Specifies the value field to be set. If a value field with this name does not already exist in the key, it is added.
 
 *regtype*  
 The type of registry key being added. Can be one of the following: `text`, `dword`, `binary`, or `CString`.

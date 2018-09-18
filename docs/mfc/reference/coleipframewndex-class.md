@@ -118,8 +118,8 @@ BOOL AddPane(
 ```  
   
 ### Parameters  
- [in] *pControlBar*  
- [in] *bTail*  
+*pControlBar*<br/>
+[in] [in] *bTail*  
   
 ### Return Value  
   
@@ -148,8 +148,8 @@ void DockPane(
 ```  
   
 ### Parameters  
- [in] *pBar*  
- [in] *nDockBarID*  
+*pBar*<br/>
+[in] [in] *nDockBarID*  
  [in] *lpRect*  
   
 ### Remarks  
@@ -164,11 +164,11 @@ BOOL DockPaneLeftOf(
 ```  
   
 ### Parameters  
- [in] *pBar*  
- A pointer to the pane to dock.  
+*pBar*<br/>
+[in] A pointer to the pane to dock.  
   
- [in] *pLeftOf*  
- A pointer to the pane that serves as origin.  
+*pLeftOf*<br/>
+[in] A pointer to the pane that serves as origin.  
   
 ### Return Value  
  Returns TRUE if the operation is successful. Otherwise returns FALSE.  
@@ -218,12 +218,12 @@ void EnablePaneMenu(
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- [in] *uiCustomizeCmd*  
- [in] *strCustomizeLabel*  
- [in] *uiViewToolbarsMenuEntryID*  
- [in] *bContextMenuShowsToolbarsOnly*  
- [in] *bViewMenuShowsToolbarsOnly*  
+*bEnable*<br/>
+[in] [in] *uiCustomizeCmd*  
+*strCustomizeLabel*<br/>
+[in] [in] *uiViewToolbarsMenuEntryID*  
+*bContextMenuShowsToolbarsOnly*<br/>
+[in] [in] *bViewMenuShowsToolbarsOnly*  
   
 ### Remarks  
   
@@ -347,11 +347,11 @@ virtual BOOL GetToolbarButtonToolTipText(
 ```  
   
 ### Parameters  
- [in] *pButton*  
- Pointer to the button.  
+*pButton*<br/>
+[in] Pointer to the button.  
   
- [in] *strTTText*  
- Pointer to the tooltip text.  
+*strTTText*<br/>
+[in] Pointer to the tooltip text.  
   
 ### Return Value  
  The default implementation returns 0.  
@@ -370,14 +370,14 @@ void InitUserToolbars(
 ```  
   
 ### Parameters  
- [in] *lpszRegEntry*  
- The registry entry where the library stores user toolbar settings.  
+*lpszRegEntry*<br/>
+[in] The registry entry where the library stores user toolbar settings.  
   
- [in] *uiUserToolbarFirst*  
- Control ID assigned to the first user-defined toolbar.  
+*uiUserToolbarFirst*<br/>
+[in] Control ID assigned to the first user-defined toolbar.  
   
- [in] *uiUserToolbarLast*  
- Control ID assigned to the last user-defined toolbar.  
+*uiUserToolbarLast*<br/>
+[in] Control ID assigned to the last user-defined toolbar.  
   
 ### Remarks  
  Use this function to initialize a range of control IDs for assignment to toolbars that users define dynamically. The parameters *uiUserToolbarFirst* and *uiUserToolbarLast* define a range of allowed toolbar control IDs. To disable the creation of user-defined toolbars, set *uiUserToolbarFirst* or *uiUserToolbarLast* to -1.  
@@ -393,8 +393,8 @@ BOOL InsertPane(
 ```  
   
 ### Parameters  
- [in] *pControlBar*  
- [in] *pTarget*  
+*pControlBar*<br/>
+[in] [in] *pTarget*  
  [in] *bAfter*  
   
 ### Return Value  
@@ -425,8 +425,8 @@ BOOL IsPointNearDockSite(
 ```  
   
 ### Parameters  
- [in] *point*  
- [in] *dwBarAlignment*  
+*point*<br/>
+[in] [in] *dwBarAlignment*  
  [in] *bOuterEdge*  
   
 ### Return Value  
@@ -445,10 +445,10 @@ virtual BOOL LoadFrame(
 ```  
   
 ### Parameters  
- [in] *nIDResource*  
- [in] *dwDefaultStyle*  
- [in] *pParentWnd*  
- [in] *pContext*  
+*nIDResource*<br/>
+[in] [in] *dwDefaultStyle*  
+*pParentWnd*<br/>
+[in] [in] *pContext*  
   
 ### Return Value  
   
@@ -490,8 +490,8 @@ virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
 ```  
   
 ### Parameters  
- [in] *pMenuPopup*  
- A pointer to the pop-up menu object.  
+*pMenuPopup*<br/>
+[in] A pointer to the pop-up menu object.  
   
 ### Remarks  
  Override this method to receive notifications from `CMFCPopupMenu` objects when they process WM_DESTROY messages.  
@@ -508,10 +508,10 @@ virtual BOOL OnCmdMsg(
 ```  
   
 ### Parameters  
- [in] *nID*  
- [in] *nCode*  
- [in] *pExtra*  
- [in] *pHandlerInfo*  
+*nID*<br/>
+[in] [in] *nCode*  
+*pExtra*<br/>
+[in] [in] *pHandlerInfo*  
   
 ### Return Value  
   
@@ -528,14 +528,14 @@ virtual BOOL OnDrawMenuImage(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to the device context.  
+*pDC*<br/>
+[in] Pointer to the device context.  
   
- [in] *pMenuButton*  
- Pointer to the menu button.  
+*pMenuButton*<br/>
+[in] Pointer to the menu button.  
   
- [in] *rectImage*  
- The image associated with the menu item.  
+*rectImage*<br/>
+[in] The image associated with the menu item.  
   
 ### Return Value  
  The default implementation does nothing and returns 0.  
@@ -554,14 +554,14 @@ virtual void OnDrawMenuLogo(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- Pointer to the device context.  
+*pDC*<br/>
+[in] Pointer to the device context.  
   
- [in] *pMenu*  
- Pointer to the pop-up menu object.  
+*pMenu*<br/>
+[in] Pointer to the pop-up menu object.  
   
- [in] *rectLogo*  
- Pointer to the logo to display.  
+*rectLogo*<br/>
+[in] Pointer to the logo to display.  
   
 ### Remarks  
  Override this method to display a logo on the pop-up menu associated with the menu bar owned by the `COleIPFrameWndEx`-derived object. The default implementation does nothing.  
@@ -612,8 +612,8 @@ virtual void OnSetPreviewMode(
 ```  
   
 ### Parameters  
- [in] *bPreview*  
- [in] *pState*  
+*bPreview*<br/>
+[in] [in] *pState*  
   
 ### Remarks  
   
@@ -627,8 +627,8 @@ virtual BOOL OnShowCustomizePane(
 ```  
   
 ### Parameters  
- [in] *pMenuPane*  
- [in] *uiToolbarID*  
+*pMenuPane*<br/>
+[in] [in] *uiToolbarID*  
   
 ### Return Value  
   
@@ -656,8 +656,8 @@ virtual BOOL OnShowPopupMenu(CMFCPopupMenu* pMenuPopup);
 ```  
   
 ### Parameters  
- [in] *pMenuPopup*  
- Pointer to the pop-up menu to be displayed.  
+*pMenuPopup*<br/>
+[in] Pointer to the pop-up menu to be displayed.  
   
 ### Return Value  
  The default implementation does nothing and returns a non-zero value. Your implementation should return FALSE if the pop-up menu cannot be displayed.  
@@ -675,11 +675,11 @@ virtual BOOL OnTearOffMenu(
 ```  
   
 ### Parameters  
- [in] *pMenuPopup*  
- A pointer to the pop-up menu that the user selected.  
+*pMenuPopup*<br/>
+[in] A pointer to the pop-up menu that the user selected.  
   
- [in] *pBar*  
- A pointer to the pane that hosts the menu.  
+*pBar*<br/>
+[in] A pointer to the pane that hosts the menu.  
   
 ### Return Value  
  TRUE if you want the framework to activate the pop-up menu; otherwise FALSE. The default value is TRUE.  
@@ -705,10 +705,10 @@ CBasePane* PaneFromPoint(
 ```  
   
 ### Parameters  
- [in] *point*  
- [in] *nSensitivity*  
- [in] *bExactBar*  
- [in] *pRTCBarType*  
+*point*<br/>
+[in] [in] *nSensitivity*  
+*bExactBar*<br/>
+[in] [in] *pRTCBarType*  
  [in] *dwAlignment*  
   
 ### Return Value  
@@ -754,10 +754,10 @@ void RemovePaneFromDockManager(
 ```  
   
 ### Parameters  
- [in] *pControlBar*  
- [in] *bDestroy*  
- [in] *bAdjustLayout*  
- [in] *bAutoHide*  
+*pControlBar*<br/>
+[in] [in] *bDestroy*  
+*bAdjustLayout*<br/>
+[in] [in] *bAutoHide*  
  [in] *pBarReplacement*  
   
 ### Remarks  
@@ -770,8 +770,8 @@ void SetDockState(const CDockState& state);
 ```  
   
 ### Parameters  
- [in] *state*  
- Specifies the docking state.  
+*state*<br/>
+[in] Specifies the docking state.  
   
 ### Remarks  
  Use this function to specify a new docking state for panes that belong to the `COleIPFrameWndEx` object.  
@@ -787,14 +787,14 @@ void SetupToolbarMenu(
 ```  
   
 ### Parameters  
- [in] *menu*  
- A reference to a [CMenu](../../mfc/reference/cmenu-class.md) object to be modified.  
+*menu*<br/>
+[in] A reference to a [CMenu](../../mfc/reference/cmenu-class.md) object to be modified.  
   
- [in] *uiViewUserToolbarCmdFirst*  
- Specifies the first user-defined command.  
+*uiViewUserToolbarCmdFirst*<br/>
+[in] Specifies the first user-defined command.  
   
- [in] *uiViewUserToolbarCmdLast*  
- Specifies the last user-defined command.  
+*uiViewUserToolbarCmdLast*<br/>
+[in] Specifies the last user-defined command.  
   
 ### Remarks  
   
@@ -810,10 +810,10 @@ void ShowPane(
 ```  
   
 ### Parameters  
- [in] *pBar*  
- [in] *bShow*  
- [in] *bDelay*  
- [in] *bActivate*  
+*pBar*<br/>
+[in] [in] *bShow*  
+*bDelay*<br/>
+[in] [in] *bActivate*  
   
 ### Remarks  
   
@@ -830,8 +830,8 @@ virtual void WinHelp(
  [in] dwData  
  Specifies data as required for the type of help specified by *nCmd*.  
   
- [in] *nCmd*  
- Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp Function](/windows/desktop/api/winuser/nf-winuser-winhelpa) in the Windows SDK.  
+*nCmd*<br/>
+[in] Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp Function](/windows/desktop/api/winuser/nf-winuser-winhelpa) in the Windows SDK.  
   
 ### Remarks  
   

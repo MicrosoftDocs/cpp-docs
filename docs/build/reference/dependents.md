@@ -13,14 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /DEPENDENTS
-```  
-/DEPENDENTS  
-```  
-  
-## Remarks  
- Dumps the names of the DLLs from which the image imports functions. Does not dump the names of the imported functions.  
-  
- Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.  
-  
-## See Also  
- [DUMPBIN Options](../../build/reference/dumpbin-options.md)
+
+```
+/DEPENDENTS
+```
+
+## Remarks
+
+Dumps the names of the DLLs from which the image imports functions. Does not dump the names of the imported functions.
+
+Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.
+
+## See Also
+
+[DUMPBIN Options](../../build/reference/dumpbin-options.md)

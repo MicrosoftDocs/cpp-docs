@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __rdtscp
+
 **Microsoft Specific**  
   
  Generates the `rdtscp` instruction, writes `TSC_AUX[31:0`] to memory, and returns the 64-bit Time Stamp Counter (`TSC)` result.  
@@ -26,8 +27,8 @@ unsigned __int64 __rdtscp(
 ```  
   
 #### Parameters  
- [out] `Aux`  
- Pointer to a location that will contain the contents of the machine-specific register `TSC_AUX[31:0]`.  
+*Aux*<br/>
+[out] Pointer to a location that will contain the contents of the machine-specific register `TSC_AUX[31:0]`.  
   
 ## Return Value  
  A 64-bit unsigned integer tick count.  
@@ -71,7 +72,8 @@ TSC_AUX was 0
 ```  
   
 **END Microsoft Specific**  
- Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
+
+Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
   
 ## See Also  
  [__rdtsc](../intrinsics/rdtsc.md)   

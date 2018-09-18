@@ -120,8 +120,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### Parameters  
- [in] *bStretch*  
- [in] *bHorz*  
+*bStretch*<br/>
+[in] [in] *bHorz*  
   
 ### Return Value  
   
@@ -152,8 +152,8 @@ BOOL Create(
 ```  
   
 ### Parameters  
- [in] *pParentWnd*  
- [in] *dwStyle*  
+*pParentWnd*<br/>
+[in] [in] *dwStyle*  
  [in] *nID*  
   
 ### Return Value  
@@ -172,10 +172,10 @@ BOOL CreateEx(
 ```  
   
 ### Parameters  
- [in] *pParentWnd*  
- [in] *dwCtrlStyle*  
- [in] *dwStyle*  
- [in] *nID*  
+*pParentWnd*<br/>
+[in] [in] *dwCtrlStyle*  
+*dwStyle*<br/>
+[in] [in] *nID*  
   
 ### Return Value  
   
@@ -200,8 +200,8 @@ void EnablePaneDoubleClick(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- If TRUE, enable the processing of the mouse double-click. Otherwise disable the processing of the mouse double-click.  
+*bEnable*<br/>
+[in] If TRUE, enable the processing of the mouse double-click. Otherwise disable the processing of the mouse double-click.  
   
 ### Remarks  
  If the status bar is enabled to process double clicks, Windows sends the WM_COMMAND notification together with a resource ID to the owner of the status bar every time that the user double clicks on the status bar pane.  
@@ -220,23 +220,23 @@ void EnablePaneProgressBar(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the index of the pane whose progress bar to enable.  
+*nIndex*<br/>
+[in] Specifies the index of the pane whose progress bar to enable.  
   
- [in] *nTotal*  
- Specifies the maximum value for the progress bar.  
+*nTotal*<br/>
+[in] Specifies the maximum value for the progress bar.  
   
- [in] *bDisplayText*  
- Specifies whether the progress bar should display the current progress value.  
+*bDisplayText*<br/>
+[in] Specifies whether the progress bar should display the current progress value.  
   
- [in] *clrBar*  
- Specifies the background color of the progress bar.  
+*clrBar*<br/>
+[in] Specifies the background color of the progress bar.  
   
- [in] *clrBarDest*  
- Specifies the secondary color of the progress bar background. Use different value than *clrBar* to fill by a color blended into a gradient.  
+*clrBarDest*<br/>
+[in] Specifies the secondary color of the progress bar background. Use different value than *clrBar* to fill by a color blended into a gradient.  
   
- [in] *clrProgressText*  
- Specifies the color of the text of the progress bar.  
+*clrProgressText*<br/>
+[in] Specifies the color of the text of the progress bar.  
   
 ### Remarks  
  If you want to disable the progress bar call `EnablePaneProgressBar` with *nTotal* set to -1. By default *nTotal* is set to 100. Therefore, you do not need any additional calculations to display progress as percentage.  
@@ -304,8 +304,8 @@ void GetItemRect(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- [in] *lpRect*  
+*nIndex*<br/>
+[in] [in] *lpRect*  
   
 ### Remarks  
   
@@ -321,10 +321,10 @@ void GetPaneInfo(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- [in] *nID*  
- [in] *nStyle*  
- [in] *cxWidth*  
+*nIndex*<br/>
+[in] [in] *nID*  
+*nStyle*<br/>
+[in] [in] *cxWidth*  
   
 ### Remarks  
   
@@ -368,8 +368,8 @@ CString GetPaneText(int nIndex) const;
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- [in] *s*  
+*nIndex*<br/>
+[in] [in] *s*  
   
 ### Return Value  
   
@@ -383,8 +383,8 @@ int GetPaneWidth(int nIndex) const;
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the index of the status bar pane.  
+*nIndex*<br/>
+[in] Specifies the index of the status bar pane.  
   
 ### Return Value  
  The width of the status bar pane that *nIndex* specifies; otherwise, zero if a status-bar pane does not exist.  
@@ -397,8 +397,8 @@ CString GetTipText(int nIndex) const;
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the index of the pane for which to retrieve tool tip text.  
+*nIndex*<br/>
+[in] Specifies the index of the pane for which to retrieve tool tip text.  
   
 ### Return Value  
  The tooltip text of the status-bar pane that *nIndex* specifies. Otherwise, the empty string if a status bar pane does not exist for the specified *nIndex* or if its tooltip text is empty.  
@@ -411,8 +411,8 @@ void InvalidatePaneContent(int nIndex);
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the index of the pane whose content is to be invalidated and redrawn.  
+*nIndex*<br/>
+[in] Specifies the index of the pane whose content is to be invalidated and redrawn.  
   
 ### Remarks  
  When the status bar is invalidated, it is marked for redrawing. Windows redraws it when the `UpdateWindow` method sends a WM_PAINT message to the `OnPaint` method.  
@@ -427,11 +427,11 @@ virtual void OnDrawPane(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context for drawing.  
+*pDC*<br/>
+[in] A pointer to a device context for drawing.  
   
- [in] *pPane*  
- A pointer to a `CMFCStatusBarPaneInfo` structure that contains the information about the pane to be redrawn.  
+*pPane*<br/>
+[in] A pointer to a `CMFCStatusBarPaneInfo` structure that contains the information about the pane to be redrawn.  
   
 ### Remarks  
  By default, `OnDrawPane` redraws the pane by using the device context *pDC* according to the pane's style and content.  
@@ -474,8 +474,8 @@ BOOL SetIndicators(
 ```  
   
 ### Parameters  
- [in] *lpIDArray*  
- [in] *nIDCount*  
+*lpIDArray*<br/>
+[in] [in] *nIDCount*  
   
 ### Return Value  
   
@@ -493,17 +493,17 @@ void SetPaneAnimation(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the index of the pane to which you want to assign to it an animation.  
+*nIndex*<br/>
+[in] Specifies the index of the pane to which you want to assign to it an animation.  
   
- [in] *hImageList*  
- Specifies a handle to the image list that holds the animation frames.  
+*hImageList*<br/>
+[in] Specifies a handle to the image list that holds the animation frames.  
   
- [in] *nFrameRate*  
- Specifies the frame rate, in milliseconds, for the animation.  
+*nFrameRate*<br/>
+[in] Specifies the frame rate, in milliseconds, for the animation.  
   
- [in] *bUpdate*  
- If TRUE, update the pane content immediately. Otherwise, the pane content is updated when it is invalidated.  
+*bUpdate*<br/>
+[in] If TRUE, update the pane content immediately. Otherwise, the pane content is updated when it is invalidated.  
   
 ### Remarks  
  If you want to disable the current animation, call `SetPaneAnimation` with `hImageList` set to NULL.  
@@ -519,14 +519,14 @@ void SetPaneBackgroundColor(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the index of the pane for which to set a new background color.  
+*nIndex*<br/>
+[in] Specifies the index of the pane for which to set a new background color.  
   
- [in] *clrBackground*  
- Specifies the new background color.  
+*clrBackground*<br/>
+[in] Specifies the new background color.  
   
- [in] *bUpdate*  
- If TRUE, update the pane content immediately. Otherwise, do not update the pane content until the pane is invalidated by another method.  
+*bUpdate*<br/>
+[in] If TRUE, update the pane content immediately. Otherwise, do not update the pane content until the pane is invalidated by another method.  
   
 ##  <a name="setpaneicon"></a>  CMFCStatusBar::SetPaneIcon  
  Set the icon of the status bar pane.  
@@ -546,20 +546,20 @@ void SetPaneIcon(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the index of the pane for which to set the image.  
+*nIndex*<br/>
+[in] Specifies the index of the pane for which to set the image.  
   
- [in] *hIcon*  
- Specifies a handle to the icon to be set as the pane image.  
+*hIcon*<br/>
+[in] Specifies a handle to the icon to be set as the pane image.  
   
- [in] *bUpdate*  
- Specifies whether to update the pane content immediately.  
+*bUpdate*<br/>
+[in] Specifies whether to update the pane content immediately.  
   
- [in] *hBmp*  
- Specifies a handle to the bitmap to be set as the pane image.  
+*hBmp*<br/>
+[in] Specifies a handle to the bitmap to be set as the pane image.  
   
- [in] *clrTransparent*  
- Specifies the transparent color of the bitmap that the *hBmp* indicates.  
+*clrTransparent*<br/>
+[in] Specifies the transparent color of the bitmap that the *hBmp* indicates.  
   
 ### Remarks  
  You can pass either HICON or HBITMAP together with the transparent color to set the pane's image. If you do not want to display the image any longer, pass the NULL value as the image handle.  
@@ -578,10 +578,10 @@ void SetPaneInfo(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- [in] *nID*  
- [in] *nStyle*  
- [in] *cxWidth*  
+*nIndex*<br/>
+[in] [in] *nID*  
+*nStyle*<br/>
+[in] [in] *cxWidth*  
   
 ### Remarks  
   
@@ -596,14 +596,14 @@ void SetPaneProgress(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the index of the pane for which to update the progress indicator.  
+*nIndex*<br/>
+[in] Specifies the index of the pane for which to update the progress indicator.  
   
- [in] *nCurr*  
- Specifies the current value of the progress indicator.  
+*nCurr*<br/>
+[in] Specifies the current value of the progress indicator.  
   
- [in] *bUpdate*  
- Specifies whether the pane should be updated immediately.  
+*bUpdate*<br/>
+[in] Specifies whether the pane should be updated immediately.  
   
 ### Remarks  
  Call this method when you want to update the progress indicator for the progress bar in the specified pane.  
@@ -620,8 +620,8 @@ void SetPaneStyle(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- [in] *nStyle*  
+*nIndex*<br/>
+[in] [in] *nStyle*  
   
 ### Remarks  
   
@@ -636,8 +636,8 @@ virtual BOOL SetPaneText(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- [in] *lpszNewText*  
+*nIndex*<br/>
+[in] [in] *lpszNewText*  
  [in] *bUpdate*  
   
 ### Return Value  
@@ -655,14 +655,14 @@ void SetPaneTextColor(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the index of the pane to which you want to assign a new text color.  
+*nIndex*<br/>
+[in] Specifies the index of the pane to which you want to assign a new text color.  
   
- [in] *clrText*  
- Specifies the text color.  
+*clrText*<br/>
+[in] Specifies the text color.  
   
- [in] *bUpdate*  
- If TRUE, update the pane content immediately. Otherwise, do not update the pane content until the pane is invalidated by another method.  
+*bUpdate*<br/>
+[in] If TRUE, update the pane content immediately. Otherwise, do not update the pane content until the pane is invalidated by another method.  
   
 ##  <a name="setpanewidth"></a>  CMFCStatusBar::SetPaneWidth  
  Set the width of the status bar pane.  
@@ -674,11 +674,11 @@ void SetPaneWidth(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- The index of the status bar pane for which to set a new width.  
+*nIndex*<br/>
+[in] The index of the status bar pane for which to set a new width.  
   
- [in] *cx*  
- The new width of the status bar pane, in pixels.  
+*cx*<br/>
+[in] The new width of the status bar pane, in pixels.  
   
 ##  <a name="settiptext"></a>  CMFCStatusBar::SetTipText  
  Set the tooltip text of a status bar pane.  
@@ -690,11 +690,11 @@ void SetTipText(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- The index of the pane to which you want to assign the tooltip text.  
+*nIndex*<br/>
+[in] The index of the pane to which you want to assign the tooltip text.  
   
- [in] *pszTipText*  
- The new tooltip text.  
+*pszTipText*<br/>
+[in] The new tooltip text.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

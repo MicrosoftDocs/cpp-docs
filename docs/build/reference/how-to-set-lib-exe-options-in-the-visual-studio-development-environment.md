@@ -12,15 +12,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # How to: Set LIB.EXE Options in the Visual Studio Development Environment
-### To set LIB.EXE options in the Visual Studio development environment  
-  
-1.  Access the project's [Property Page](../../ide/working-with-project-properties.md) dialog box.  
-  
-2.  With a static library project active, select the **Librarian** node.  
-  
-3.  Select either the General or Input/Output property page.  
-  
-4.  Modify properties as needed.  
-  
-## See Also  
- [LIB Reference](../../build/reference/lib-reference.md)
+
+### To set LIB.EXE options in the Visual Studio development environment
+
+1. Access the project's [Property Page](../../ide/working-with-project-properties.md) dialog box.
+
+1. With a static library project active, select the **Librarian** node.
+
+1. Select either the General or Input/Output property page.
+
+1. Modify properties as needed.
+
+## See Also
+
+[LIB Reference](../../build/reference/lib-reference.md)

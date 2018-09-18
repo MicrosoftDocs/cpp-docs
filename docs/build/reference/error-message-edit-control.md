@@ -12,7 +12,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Error Message Edit Control
-The **Error Message** box contains the text of the system error message or module error message based on the value entered.  
-  
-## See Also  
- [Value Edit Control](../../build/reference/value-edit-control.md)
+
+The **Error Message** box contains the text of the system error message or module error message based on the value entered.
+
+## See Also
+
+[Value Edit Control](../../build/reference/value-edit-control.md)

@@ -17,16 +17,16 @@ Specifies the type of debugging information created for your program and whether
 
 ## Syntax
 
-> **/Z**{**7**|**i**|**I**}  
+> **/Z**{**7**|**i**|**I**}
 
 ## Remarks
 
-When code is compiled and built in debug mode, the compiler produces symbol names for functions and variables, type information, and line number locations for use by the debugger. This symbolic debugging information can be included either in the object files (.obj files) produced by the compiler, or in a separate PDB file (a .pdb file) for the executable.  The debug information format options are described in the following sections.  
-  
+When code is compiled and built in debug mode, the compiler produces symbol names for functions and variables, type information, and line number locations for use by the debugger. This symbolic debugging information can be included either in the object files (.obj files) produced by the compiler, or in a separate PDB file (a .pdb file) for the executable.  The debug information format options are described in the following sections.
+
 ### None
 
-By default, if no debug information format option is specified, the compiler produces no debugging information, so compilation is faster.  
-  
+By default, if no debug information format option is specified, the compiler produces no debugging information, so compilation is faster.
+
 ### /Z7
 
 The **/Z7** option produces object files that also contain full symbolic debugging information for use with the debugger. These object files and the built executable can be substantially larger than files that have no debugging information. The symbolic debugging information includes the names and types of variables, as well as functions and line numbers. No PDB file is produced.
@@ -40,7 +40,6 @@ The [/Gm (Enable Minimal Rebuild)](../../build/reference/gm-enable-minimal-rebui
 The **/Zi** option produces a separate PDB file that contains all the symbolic debugging information for use with the debugger. The debugging information is not included in the object files or executable, which makes them much smaller.
 
 Use of **/Zi** does not affect optimizations. However, **/Zi** does imply **/debug**; see [/DEBUG (Generate Debug Info)](../../build/reference/debug-generate-debug-info.md) for more information.
-
 
 When you specify both **/Zi** and **/clr**, the <xref:System.Diagnostics.DebuggableAttribute> attribute is not placed in the assembly metadata. If you want it, you must specify it in the source code. This attribute can affect the runtime performance of the application. For more information about how the **Debuggable** attribute affects performance and how you can modify the performance impact, see [Making an Image Easier to Debug](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug).
 
@@ -73,6 +72,6 @@ The **/ZI** option forces both the [/Gy (Enable Function-Level Linking)](../../b
 
 ## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)  
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)  
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
 

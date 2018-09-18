@@ -98,10 +98,10 @@ virtual BOOL Create(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *dwStyle*|A bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) and [pager control styles](/windows/desktop/Controls/pager-control-styles) to be applied to the control.|  
-|[in] *rect*|A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that contains the position and size of the control in client coordinates.|  
-|[in] *pParentWnd*|A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control. This parameter cannot be NULL.|  
-|[in] *nID*|The ID of the control.|  
+|*dwStyle*|[in] A bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) and [pager control styles](/windows/desktop/Controls/pager-control-styles) to be applied to the control.|  
+|*rect*|[in] A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that contains the position and size of the control in client coordinates.|  
+|*pParentWnd*|[in] A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control. This parameter cannot be NULL.|  
+|*nID*|[in] The ID of the control.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -130,11 +130,11 @@ virtual BOOL CreateEx(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *dwExStyle*|A bitwise combination of extended styles to be applied to the control. For more information, see the *dwExStyle* parameter of the [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) function.|  
-|[in] *dwStyle*|A bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) and [pager control styles](/windows/desktop/Controls/pager-control-styles) to be applied to the control.|  
-|[in] *rect*|A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that contains the position and size of the control in client coordinates.|  
-|[in] *pParentWnd*|A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control. This parameter cannot be NULL.|  
-|[in] *nID*|The ID of the control.|  
+|*dwExStyle*|[in] A bitwise combination of extended styles to be applied to the control. For more information, see the *dwExStyle* parameter of the [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) function.|  
+|*dwStyle*|[in] A bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) and [pager control styles](/windows/desktop/Controls/pager-control-styles) to be applied to the control.|  
+|*rect*|[in] A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that contains the position and size of the control in client coordinates.|  
+|*pParentWnd*|[in] A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control. This parameter cannot be NULL.|  
+|*nID*|[in] The ID of the control.|  
   
 ### Return Value  
  TRUE if this method is successful; otherwise, FALSE.  
@@ -153,7 +153,7 @@ void ForwardMouse(BOOL bForward);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *bForward*|TRUE to forward mouse messages, or FALSE to not forward mouse messages.|  
+|*bForward*|[in] TRUE to forward mouse messages, or FALSE to not forward mouse messages.|  
   
 ### Remarks  
  This method sends the [PGM_FORWARDMOUSE](/windows/desktop/Controls/pgm-forwardmouse) message, which is described in the Windows SDK.  
@@ -220,7 +220,7 @@ DWORD GetButtonState(int iButton) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *iButton*|Indicates the button for which the state is retrieved. If the pager control style is PGS_HORZ, specify PGB_TOPORLEFT for the left button and PGB_BOTTOMORRIGHT for the right button. If the pager control style is PGS_VERT, specify PGB_TOPORLEFT for the top button and PGB_BOTTOMORRIGHT for the bottom button. For more information, see [Pager Control Styles](/windows/desktop/Controls/pager-control-styles).|  
+|*iButton*|[in] Indicates the button for which the state is retrieved. If the pager control style is PGS_HORZ, specify PGB_TOPORLEFT for the left button and PGB_BOTTOMORRIGHT for the right button. If the pager control style is PGS_VERT, specify PGB_TOPORLEFT for the top button and PGB_BOTTOMORRIGHT for the bottom button. For more information, see [Pager Control Styles](/windows/desktop/Controls/pager-control-styles).|  
   
 ### Return Value  
  The state of the button specified by the *iButton* parameter. The state is either PGF_INVISIBLE, PGF_NORMAL, PGF_GRAYED, PGF_DEPRESSED, or PGF_HOT. For more information, see the Return Value section of the [PGM_GETBUTTONSTATE](/windows/desktop/Controls/pgm-getbuttonstate) message.  
@@ -272,7 +272,7 @@ BOOL IsButtonDepressed(int iButton) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *iButton*|Indicates the button for which the state is retrieved. If the pager control style is PGS_HORZ, specify PGB_TOPORLEFT for the left button and PGB_BOTTOMORRIGHT for the right button. If the pager control style is PGS_VERT, specify PGB_TOPORLEFT for the top button and PGB_BOTTOMORRIGHT for the bottom button. For more information, see [Pager Control Styles](/windows/desktop/Controls/pager-control-styles).|  
+|*iButton*|[in] Indicates the button for which the state is retrieved. If the pager control style is PGS_HORZ, specify PGB_TOPORLEFT for the left button and PGB_BOTTOMORRIGHT for the right button. If the pager control style is PGS_VERT, specify PGB_TOPORLEFT for the top button and PGB_BOTTOMORRIGHT for the bottom button. For more information, see [Pager Control Styles](/windows/desktop/Controls/pager-control-styles).|  
   
 ### Return Value  
  TRUE if the specified button is in pressed state; otherwise, FALSE.  
@@ -291,7 +291,7 @@ BOOL IsButtonGrayed(int iButton) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *iButton*|Indicates the button for which the state is retrieved. If the pager control style is PGS_HORZ, specify PGB_TOPORLEFT for the left button and PGB_BOTTOMORRIGHT for the right button. If the pager control style is PGS_VERT, specify PGB_TOPORLEFT for the top button and PGB_BOTTOMORRIGHT for the bottom button. For more information, see [Pager Control Styles](/windows/desktop/Controls/pager-control-styles).|  
+|*iButton*|[in] Indicates the button for which the state is retrieved. If the pager control style is PGS_HORZ, specify PGB_TOPORLEFT for the left button and PGB_BOTTOMORRIGHT for the right button. If the pager control style is PGS_VERT, specify PGB_TOPORLEFT for the top button and PGB_BOTTOMORRIGHT for the bottom button. For more information, see [Pager Control Styles](/windows/desktop/Controls/pager-control-styles).|  
   
 ### Return Value  
  TRUE if the specified button is in grayed state; otherwise, FALSE.  
@@ -310,7 +310,7 @@ BOOL IsButtonHot(int iButton) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *iButton*|Indicates the button for which the state is retrieved. If the pager control style is PGS_HORZ, specify PGB_TOPORLEFT for the left button and PGB_BOTTOMORRIGHT for the right button. If the pager control style is PGS_VERT, specify PGB_TOPORLEFT for the top button and PGB_BOTTOMORRIGHT for the bottom button. For more information, see [Pager Control Styles](/windows/desktop/Controls/pager-control-styles).|  
+|*iButton*|[in] Indicates the button for which the state is retrieved. If the pager control style is PGS_HORZ, specify PGB_TOPORLEFT for the left button and PGB_BOTTOMORRIGHT for the right button. If the pager control style is PGS_VERT, specify PGB_TOPORLEFT for the top button and PGB_BOTTOMORRIGHT for the bottom button. For more information, see [Pager Control Styles](/windows/desktop/Controls/pager-control-styles).|  
   
 ### Return Value  
  TRUE if the specified button is in hot state; otherwise, FALSE.  
@@ -329,7 +329,7 @@ BOOL IsButtonInvisible(int iButton) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *iButton*|Indicates the button for which the state is retrieved. If the pager control style is PGS_HORZ, specify PGB_TOPORLEFT for the left button and PGB_BOTTOMORRIGHT for the right button. If the pager control style is PGS_VERT, specify PGB_TOPORLEFT for the top button and PGB_BOTTOMORRIGHT for the bottom button. For more information, see [Pager Control Styles](/windows/desktop/Controls/pager-control-styles).|  
+|*iButton*|[in] Indicates the button for which the state is retrieved. If the pager control style is PGS_HORZ, specify PGB_TOPORLEFT for the left button and PGB_BOTTOMORRIGHT for the right button. If the pager control style is PGS_VERT, specify PGB_TOPORLEFT for the top button and PGB_BOTTOMORRIGHT for the bottom button. For more information, see [Pager Control Styles](/windows/desktop/Controls/pager-control-styles).|  
   
 ### Return Value  
  TRUE if the specified button is in invisible state; otherwise, FALSE.  
@@ -355,7 +355,7 @@ BOOL IsButtonNormal(int iButton) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *iButton*|Indicates the button for which the state is retrieved. If the pager control style is PGS_HORZ, specify PGB_TOPORLEFT for the left button and PGB_BOTTOMORRIGHT for the right button. If the pager control style is PGS_VERT, specify PGB_TOPORLEFT for the top button and PGB_BOTTOMORRIGHT for the bottom button. For more information, see [Pager Control Styles](/windows/desktop/Controls/pager-control-styles).|  
+|*iButton*|[in] Indicates the button for which the state is retrieved. If the pager control style is PGS_HORZ, specify PGB_TOPORLEFT for the left button and PGB_BOTTOMORRIGHT for the right button. If the pager control style is PGS_VERT, specify PGB_TOPORLEFT for the top button and PGB_BOTTOMORRIGHT for the bottom button. For more information, see [Pager Control Styles](/windows/desktop/Controls/pager-control-styles).|  
   
 ### Return Value  
  TRUE if the specified button is in normal state; otherwise, FALSE.  
@@ -394,7 +394,7 @@ COLORREF SetBkColor(COLORREF clrBk);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *clrBk*|A [COLORREF](/windows/desktop/gdi/colorref) value that contains the new background color of the pager control.|  
+|*clrBk*|[in] A [COLORREF](/windows/desktop/gdi/colorref) value that contains the new background color of the pager control.|  
   
 ### Return Value  
  A [COLORREF](/windows/desktop/gdi/colorref) value that contains the previous background color of the pager control.  
@@ -418,7 +418,7 @@ int SetBorder(int iBorder);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *iBorder*|The new border size, measured in pixels. If the *iBorder* parameter is negative, the border size is set to zero.|  
+|*iBorder*|[in] The new border size, measured in pixels. If the *iBorder* parameter is negative, the border size is set to zero.|  
   
 ### Return Value  
  The previous border size, measured in pixels.  
@@ -442,7 +442,7 @@ int SetButtonSize(int iButtonSize);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *iButtonSize*|The new button size, measured in pixels.|  
+|*iButtonSize*|[in] The new button size, measured in pixels.|  
   
 ### Return Value  
  The previous button size, measured in pixels.  
@@ -468,7 +468,7 @@ void SetChild(HWND hwndChild);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *hwndChild*|Handle to the window to be contained.|  
+|*hwndChild*|[in] Handle to the window to be contained.|  
   
 ### Remarks  
  This method sends the [PGM_SETCHILD](/windows/desktop/Controls/pgm-setchild) message, which is described in the Windows SDK.  
@@ -491,7 +491,7 @@ void SetScrollPos(int iPos);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *iPos*|The new scroll position, measured in pixels.|  
+|*iPos*|[in] The new scroll position, measured in pixels.|  
   
 ### Remarks  
  This method sends the [PGM_SETPOS](/windows/desktop/Controls/pgm-setpos) message, which is described in the Windows SDK.  

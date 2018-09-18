@@ -247,8 +247,8 @@ static void __stdcall AddBasicCommand(UINT uiCmd);
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- Specifies the command to add.  
+*uiCmd*<br/>
+[in] Specifies the command to add.  
   
 ### Remarks  
  A basic command is always displayed when the menu is opened. This method is meaningful when the user chooses to view recently used commands.  
@@ -263,8 +263,8 @@ static void __stdcall AddCommandUsage(UINT uiCommand);
 ```  
   
 ### Parameters  
- [in] *uiCommand*  
- Specifies the command counter to increment.  
+*uiCommand*<br/>
+[in] Specifies the command counter to increment.  
   
 ### Remarks  
  The framework calls this method when the user selects a menu item.  
@@ -287,23 +287,23 @@ static BOOL __stdcall AddToolBarForImageCollection(
 ```  
   
 ### Parameters  
- [in] *uiResID*  
- Resource ID of a toolbar with images to load.  
+*uiResID*<br/>
+[in] Resource ID of a toolbar with images to load.  
   
- [in] *uiBmpResID*  
- Resource ID of a bitmap with toolbar images.  
+*uiBmpResID*<br/>
+[in] Resource ID of a bitmap with toolbar images.  
   
- [in] *uiColdResID*  
- Resource ID of a bitmap with "cold" toolbar images.  
+*uiColdResID*<br/>
+[in] Resource ID of a bitmap with "cold" toolbar images.  
   
- [in] *uiMenuResID*  
- Resource ID of a bitmap with menu images.  
+*uiMenuResID*<br/>
+[in] Resource ID of a bitmap with menu images.  
   
- [in] *uiDisabledResID*  
- Resource ID of a bitmap with disabled toolbar images.  
+*uiDisabledResID*<br/>
+[in] Resource ID of a bitmap with disabled toolbar images.  
   
- [in] *uiMenuDisabledResID*  
- Resource ID of a bitmap with disabled menu images.  
+*uiMenuDisabledResID*<br/>
+[in] Resource ID of a bitmap with disabled menu images.  
   
 ### Return Value  
  TRUE if the method succeeds; FALSE if *uiResID* or *uiBmpResID* do not specify valid resources, or another error occurs.  
@@ -393,14 +393,14 @@ static void AutoGrayInactiveImages(
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- A Boolean value that specifies whether to dim inactive images. If this parameter is TRUE, inactive images are dimmed. Otherwise, inactive images are not dimmed.  
+*bEnable*<br/>
+[in] A Boolean value that specifies whether to dim inactive images. If this parameter is TRUE, inactive images are dimmed. Otherwise, inactive images are not dimmed.  
   
- [in] *nGrayImagePercentage*  
- Specifies the luminance percentage for inactive images. If *bEnable* is FALSE, this value is ignored.  
+*nGrayImagePercentage*<br/>
+[in] Specifies the luminance percentage for inactive images. If *bEnable* is FALSE, this value is ignored.  
   
- [in] *bRedrawAllToolbars*  
- A Boolean value that specifies whether to redraw all toolbars in the application. If this parameter is TRUE, this method redraws all toolbars.  
+*bRedrawAllToolbars*<br/>
+[in] A Boolean value that specifies whether to redraw all toolbars in the application. If this parameter is TRUE, this method redraws all toolbars.  
   
 ### Remarks  
  If *bEnable* is TRUE, the framework uses *nGrayImagePercentage* to generate inactive images from the regular images. Otherwise, you must provide the set of inactive images by using the [CMFCToolBar::GetColdImages](#getcoldimages) method. By default, this option is disabled.  
@@ -415,8 +415,8 @@ int ButtonToIndex(const CMFCToolBarButton* pButton) const;
 ```  
   
 ### Parameters  
- [in] *pButton*  
- A pointer to the toolbar button object.  
+*pButton*<br/>
+[in] A pointer to the toolbar button object.  
   
 ### Return Value  
  Index of *pButton* in the internal list of toolbar buttons; or -1 if the specified button is not on this toolbar.  
@@ -431,11 +431,11 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### Parameters  
- [in] *bStretch*  
- TRUE to stretch the toolbar to the size of the parent frame.  
+*bStretch*<br/>
+[in] TRUE to stretch the toolbar to the size of the parent frame.  
   
- [in] *bHorz*  
- TRUE to orient the toolbar horizontally; FALSE to orient the toolbar vertically.  
+*bHorz*<br/>
+[in] TRUE to orient the toolbar horizontally; FALSE to orient the toolbar vertically.  
   
 ### Return Value  
  A `CSize` object that specifies the size of the toolbar.  
@@ -468,8 +468,8 @@ virtual CSize CalcSize(BOOL bVertDock);
 ```  
   
 ### Parameters  
- [in] *bVertDock*  
- TRUE to specify that the toolbar is docked vertically; FALSE to specify that the toolbar is docked horizontally.  
+*bVertDock*<br/>
+[in] TRUE to specify that the toolbar is docked vertically; FALSE to specify that the toolbar is docked horizontally.  
   
 ### Return Value  
  A `CSize` object that specifies the overall size of the buttons on the toolbar.  
@@ -571,11 +571,11 @@ int CommandToIndex(
 ```  
   
 ### Parameters  
- [in] *nIDFind*  
- Specifies the command ID.  
+*nIDFind*<br/>
+[in] Specifies the command ID.  
   
- [in] *iIndexFirst*  
- Specifies the initial index to start from.  
+*iIndexFirst*<br/>
+[in] Specifies the initial index to start from.  
   
 ### Return Value  
  Zero-based index of the toolbar button if the method was successful; -1 if there is no button with the specified ID.  
@@ -596,14 +596,14 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] *pParentWnd*  
- A pointer to the parent window of the toolbar.  
+*pParentWnd*<br/>
+[in] A pointer to the parent window of the toolbar.  
   
- [in] *dwStyle*  
- The toolbar style. See [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles) in the Windows SDK for the list of styles.  
+*dwStyle*<br/>
+[in] The toolbar style. See [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles) in the Windows SDK for the list of styles.  
   
- [in] *nID*  
- The ID of the child window of the toolbar.  
+*nID*<br/>
+[in] The ID of the child window of the toolbar.  
   
 ### Return Value  
  TRUE if this method succeeds; otherwise FALSE.  
@@ -627,20 +627,20 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- [in] *pParentWnd*  
- A pointer to the parent window of the toolbar.  
+*pParentWnd*<br/>
+[in] A pointer to the parent window of the toolbar.  
   
- [in] *dwCtrlStyle*  
- Additional styles for creating the embedded control bar object.  
+*dwCtrlStyle*<br/>
+[in] Additional styles for creating the embedded control bar object.  
   
- [in] *dwStyle*  
- The toolbar style. See [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles) for a list of appropriate styles.  
+*dwStyle*<br/>
+[in] The toolbar style. See [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles) for a list of appropriate styles.  
   
- [in] *rcBorders*  
- A `CRect` object that specifies the widths of the toolbar window borders.  
+*rcBorders*<br/>
+[in] A `CRect` object that specifies the widths of the toolbar window borders.  
   
- [in] *nID*  
- The ID of the child window of the toolbar.  
+*nID*<br/>
+[in] The ID of the child window of the toolbar.  
   
 ### Return Value  
  Nonzero if this method succeeds; otherwise 0.  
@@ -674,8 +674,8 @@ virtual void DoPaint(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
 ### Remarks  
  This method is called by the framework when a part of the toolbar must be repainted.  
@@ -695,20 +695,20 @@ virtual BOOL DrawButton(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *pButton*  
- A pointer to a button to draw.  
+*pButton*<br/>
+[in] A pointer to a button to draw.  
   
- [in] *pImages*  
- A pointer to the toolbar images.  
+*pImages*<br/>
+[in] A pointer to the toolbar images.  
   
- [in] *bHighlighted*  
- TRUE if the button is highlighted; otherwise FALSE.  
+*bHighlighted*<br/>
+[in] TRUE if the button is highlighted; otherwise FALSE.  
   
- [in] *bDrawDisabledImages*  
- TRUE if disabled buttons are dimmed; otherwise FALSE.  
+*bDrawDisabledImages*<br/>
+[in] TRUE if disabled buttons are dimmed; otherwise FALSE.  
   
 ### Return Value  
  TRUE if the button was repainted; FALSE if the button is hidden.  
@@ -729,14 +729,14 @@ virtual void DrawSeparator(
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
- [in] *rect*  
- The bounding rectangle of the location where the separator is drawn, in pixels.  
+*rect*<br/>
+[in] The bounding rectangle of the location where the separator is drawn, in pixels.  
   
- [in] *bHorz*  
- TRUE if the separator is horizontal, FALSE if the separator is vertical.  
+*bHorz*<br/>
+[in] TRUE if the separator is horizontal, FALSE if the separator is vertical.  
   
 ### Remarks  
  [CMFCToolBar::DoPaint](#dopaint) calls this method for each [CMFCToolBar::DrawSeparator](#drawseparator) object that has the TBBS_SEPARATOR style, instead of calling [CMFCToolBar::DrawButton](#drawbutton) for those buttons.  
@@ -762,20 +762,20 @@ void EnableCustomizeButton(
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- Enables or disables the Customize button.  
+*bEnable*<br/>
+[in] Enables or disables the Customize button.  
   
- [in] *iCustomizeCmd*  
- The command ID of the Customize button.  
+*iCustomizeCmd*<br/>
+[in] The command ID of the Customize button.  
   
- [in] *strCustomizeText*  
- The text label of the Customize button.  
+*strCustomizeText*<br/>
+[in] The text label of the Customize button.  
   
- [in] *uiCustomizeTextResId*  
- The resource string ID of the Customize button label.  
+*uiCustomizeTextResId*<br/>
+[in] The resource string ID of the Customize button label.  
   
- [in] *bQuickCustomize*  
- Enables or disables the **Add or Remove Buttons** option on the menu that drops down from the button.  
+*bQuickCustomize*<br/>
+[in] Enables or disables the **Add or Remove Buttons** option on the menu that drops down from the button.  
   
 ### Remarks  
  If *iCustomizeCmd* is -1, the framework displays the Customize button when multiple toolbar buttons do not fit in the toolbar area. The button displays a double left-pointing arrow, or chevron, which indicates that there are more buttons.  
@@ -792,8 +792,8 @@ virtual void EnableDocking(DWORD dwAlignment);
 ```  
   
 ### Parameters  
- [in] *dwAlignment*  
- Specifies the docking alignment to enable.  
+*dwAlignment*<br/>
+[in] Specifies the docking alignment to enable.  
   
 ### Remarks  
  This method extends the base class implementation, [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking), by setting the `CBasePane::m_dwControlBarStyle` data member to AFX_CBRS_FLOAT. This method then passes *dwAlignment* to the base class implementation.  
@@ -806,8 +806,8 @@ void EnableLargeIcons(BOOL bEnable);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable large icons, FALSE to disable large icons.  
+*bEnable*<br/>
+[in] TRUE to enable large icons, FALSE to disable large icons.  
   
 ### Remarks  
  By default, large icons are enabled.  
@@ -820,8 +820,8 @@ static void EnableQuickCustomization(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable quick customization, FALSE to disable quick customization.  
+*bEnable*<br/>
+[in] TRUE to enable quick customization, FALSE to disable quick customization.  
   
 ##  <a name="enablereflections"></a>  CMFCToolBar::EnableReflections  
  Enables or disables command reflection.  
@@ -831,8 +831,8 @@ void EnableReflections(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] *bEnable*  
- TRUE to enable command reflection; FALSE to disable command reflection.  
+*bEnable*<br/>
+[in] TRUE to enable command reflection; FALSE to disable command reflection.  
   
 ### Remarks  
  Call this method to enable command reflection for toolbar buttons that contain embedded controls, such as combo boxes.  
@@ -861,8 +861,8 @@ static CMFCToolBar* __stdcall FromHandlePermanent(HWND hwnd);
 ```  
   
 ### Parameters  
- [in] *hwnd*  
- The window handle to look for.  
+*hwnd*<br/>
+[in] The window handle to look for.  
   
 ### Return Value  
  A pointer to the `CMFCToolBar` object that contains the given window handle, or NULL if no corresponding `CMFCToolBar` object exists.  
@@ -911,8 +911,8 @@ CMFCToolBarButton* GetButton(int iIndex) const;
 ```  
   
 ### Parameters  
- [in] *iIndex*  
- Specifies the index of the button to return.  
+*iIndex*<br/>
+[in] Specifies the index of the button to return.  
   
 ### Return Value  
  A pointer to the toolbar button if it exists; or NULL if there is no such button.  
@@ -929,17 +929,17 @@ void GetButtonInfo(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the index of the button in the list of buttons on the toolbar.  
+*nIndex*<br/>
+[in] Specifies the index of the button in the list of buttons on the toolbar.  
   
- [out] *nID*  
- The command ID of a button.  
+*nID*<br/>
+[out] The command ID of a button.  
   
- [out] *nStyle*  
- The style of the button.  
+*nStyle*<br/>
+[out] The style of the button.  
   
- [out] *iImage*  
- The index of the image for the button.  
+*iImage*<br/>
+[out] The index of the image for the button.  
   
 ### Remarks  
  The `GetButtonInfo` method finds a toolbar button at the specified index and retrieves the command ID, style and image index of the button.  
@@ -967,8 +967,8 @@ UINT GetButtonStyle(int nIndex) const;
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the index of a toolbar button.  
+*nIndex*<br/>
+[in] Specifies the index of a toolbar button.  
   
 ### Return Value  
  A value that specifies the style of the toolbar button. . See [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md) for a list of possible styles.  
@@ -988,11 +988,11 @@ void GetButtonText(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- The index of a toolbar button.  
+*nIndex*<br/>
+[in] The index of a toolbar button.  
   
- [out] *rString*  
- The label text of the toolbar button.  
+*rString*<br/>
+[out] The label text of the toolbar button.  
   
 ### Return Value  
  The label text of the toolbar button.  
@@ -1036,11 +1036,11 @@ static int GetCommandButtons(
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- The command ID of the buttons.  
+*uiCmd*<br/>
+[in] The command ID of the buttons.  
   
- [out] *listButtons*  
- A reference to a [CObList Class](../../mfc/reference/coblist-class.md) object that receives the list of toolbar buttons.  
+*listButtons*<br/>
+[out] A reference to a [CObList Class](../../mfc/reference/coblist-class.md) object that receives the list of toolbar buttons.  
   
 ### Return Value  
  The number of buttons that have the specified command ID.  
@@ -1078,8 +1078,8 @@ static int GetDefaultImage(UINT uiID);
 ```  
   
 ### Parameters  
- [in] *uiID*  
- Specifies the command ID of the button.  
+*uiID*<br/>
+[in] Specifies the command ID of the button.  
   
 ### Return Value  
  The index of the toolbar image in the shared list of images.  
@@ -1121,8 +1121,8 @@ CMFCToolBarMenuButton* GetDroppedDownMenu(int* pIndex = NULL) const;
 ```  
   
 ### Parameters  
- [out] *pIndex*  
- Receives the index of the button in the collection of toolbar buttons.  
+*pIndex*<br/>
+[out] Receives the index of the button in the collection of toolbar buttons.  
   
 ### Return Value  
  A pointer to the menu button object that is displaying its sub-menu or NULL if no menu is displaying its sub-menu.  
@@ -1257,11 +1257,11 @@ virtual void GetInvalidateItemRect(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- The index of the button for which to retrieve the client area.  
+*nIndex*<br/>
+[in] The index of the button for which to retrieve the client area.  
   
- [out] *lpRect*  
- A pointer to a RECT object that receives the region of the client area.  
+*lpRect*<br/>
+[out] A pointer to a RECT object that receives the region of the client area.  
   
 ### Remarks  
  The *lpRect* parameter must not be NULL. If no button exists at the provided index, *lpRect* receives a RECT object that is initialized to zero.  
@@ -1274,8 +1274,8 @@ UINT GetItemID(int nIndex) const;
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the index of the toolbar button.  
+*nIndex*<br/>
+[in] Specifies the index of the toolbar button.  
   
 ### Return Value  
  The command ID of the toolbar button; or zero if the button with the specified index does not exist.  
@@ -1290,11 +1290,11 @@ virtual void GetItemRect(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the index of a toolbar button.  
+*nIndex*<br/>
+[in] Specifies the index of a toolbar button.  
   
- [out] *lpRect*  
- A pointer to `CRect` object that receives the coordinates of the image bounding rectangle.  
+*lpRect*<br/>
+[out] A pointer to `CRect` object that receives the coordinates of the image bounding rectangle.  
   
 ### Remarks  
  The `CRect` object to which *lpRect* points is set to 0 if a button at the specified index does not exist.  
@@ -1588,8 +1588,8 @@ virtual int HitTest(CPoint point);
 ```  
   
 ### Parameters  
- [in] *point*  
- The point to be tested, in client coordinates.  
+*point*<br/>
+[in] The point to be tested, in client coordinates.  
   
 ### Return Value  
  The index of the button that is located at the specified position, or -1 if there is no such button or the button is a separator.  
@@ -1609,11 +1609,11 @@ virtual int InsertButton(
 ```  
   
 ### Parameters  
- [in] *button*  
- Specifies the button to insert.  
+*button*<br/>
+[in] Specifies the button to insert.  
   
- [in] *iInsertAt*  
- Specifies the zero-based position to insert the button at.  
+*iInsertAt*<br/>
+[in] Specifies the zero-based position to insert the button at.  
   
 ### Return Value  
  The position at which the button was inserted or -1 if an error occurs.  
@@ -1631,8 +1631,8 @@ virtual int InsertSeparator(INT_PTR iInsertAt=-1);
 ```  
   
 ### Parameters  
- [in] *iInsertAt*  
- Specifies the zero-based position to insert the separator at. This parameter must be larger than 0.  
+*iInsertAt*<br/>
+[in] Specifies the zero-based position to insert the separator at. This parameter must be larger than 0.  
   
 ### Return Value  
  The position at which the separator was inserted or -1 if an error occurs.  
@@ -1652,8 +1652,8 @@ CMFCToolBarButton* InvalidateButton(int nIndex);
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- The zero-based index of the button in the toolbar.  
+*nIndex*<br/>
+[in] The zero-based index of the button in the toolbar.  
   
 ### Return Value  
  A pointer to the `CMFCToolBarButton` object that exists at the provided index or NULL if no such object exists.  
@@ -1706,8 +1706,8 @@ static BOOL IsBasicCommand(UINT uiCmd);
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- Specifies the command to check.  
+*uiCmd*<br/>
+[in] Specifies the command to check.  
   
 ### Return Value  
  TRUE if the specified command belongs to the list of basic commands; otherwise FALSE.  
@@ -1738,8 +1738,8 @@ BOOL IsButtonHighlighted(int iButton) const;
 ```  
   
 ### Parameters  
- [in] *iButton*  
- Specifies the index of a toolbar button.  
+*iButton*<br/>
+[in] Specifies the index of a toolbar button.  
   
 ### Return Value  
  TRUE if the specified button is highlighted; otherwise, FALSE.  
@@ -1754,8 +1754,8 @@ static BOOL IsCommandPermitted(UINT uiCmd);
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- Specifies the command to check.  
+*uiCmd*<br/>
+[in] Specifies the command to check.  
   
 ### Return Value  
  TRUE if the specified command is permitted; otherwise FALSE.  
@@ -1773,8 +1773,8 @@ static BOOL IsCommandRarelyUsed(UINT uiCmd);
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- Specifies the command to check.  
+*uiCmd*<br/>
+[in] Specifies the command to check.  
   
 ### Return Value  
  TRUE if the specified command is rarely used; otherwise FALSE.  
@@ -1815,8 +1815,8 @@ BOOL IsDragButton(const CMFCToolBarButton* pButton) const;
 ```  
   
 ### Parameters  
- [in] *pButton*  
- Pointer to a toolbar button.  
+*pButton*<br/>
+[in] Pointer to a toolbar button.  
   
 ### Return Value  
  TRUE if the specified button is being dragged; otherwise, FALSE.  
@@ -1871,8 +1871,8 @@ static BOOL IsLastCommandFromButton(CMFCToolBarButton* pButton);
 ```  
   
 ### Parameters  
- [in] *pButton*  
- Pointer to button.  
+*pButton*<br/>
+[in] Pointer to button.  
   
 ### Return Value  
  TRUE if the last command was sent from the button that *pButton* specifies; otherwise FALSE.  
@@ -1956,23 +1956,23 @@ virtual BOOL LoadBitmap(
 ```  
   
 ### Parameters  
- [in] *uiResID*  
- The resource ID of the bitmap that refers to the hot toolbar images.  
+*uiResID*<br/>
+[in] The resource ID of the bitmap that refers to the hot toolbar images.  
   
- [in] *uiColdResID*  
- The resource ID of the bitmap that refers to the cold toolbar images.  
+*uiColdResID*<br/>
+[in] The resource ID of the bitmap that refers to the cold toolbar images.  
   
- [in] *uiMenuResID*  
- The resource ID of the bitmap that refers to the regular menu images.  
+*uiMenuResID*<br/>
+[in] The resource ID of the bitmap that refers to the regular menu images.  
   
- [in] *bLocked*  
- TRUE to lock the toolbar; otherwise FALSE.  
+*bLocked*<br/>
+[in] TRUE to lock the toolbar; otherwise FALSE.  
   
- [in] *uiDisabledResID*  
- The resource ID of the bitmap that refers to the disabled toolbar images.  
+*uiDisabledResID*<br/>
+[in] The resource ID of the bitmap that refers to the disabled toolbar images.  
   
- [in] *uiMenuDisabledResID*  
- The resource ID of the bitmap that refers to the disabled menu images.  
+*uiMenuDisabledResID*<br/>
+[in] The resource ID of the bitmap that refers to the disabled menu images.  
   
 ### Return Value  
  Nonzero if the method succeeds; otherwise 0.  
@@ -1992,8 +1992,8 @@ virtual BOOL LoadBitmapEx(
 ```  
   
 ### Parameters  
- [in] *params*  
- [in] *bLocked*  
+*params*<br/>
+[in] [in] *bLocked*  
   
 ### Return Value  
   
@@ -2021,8 +2021,8 @@ static BOOL LoadParameters(LPCTSTR lpszProfileName=NULL);
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- Specifies the relative path of the Windows registry key.  
+*lpszProfileName*<br/>
+[in] Specifies the relative path of the Windows registry key.  
   
 ### Return Value  
  Nonzero if the method succeeds; otherwise 0.  
@@ -2043,14 +2043,14 @@ virtual BOOL LoadState(
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- Specifies the relative path of the Windows registry key.  
+*lpszProfileName*<br/>
+[in] Specifies the relative path of the Windows registry key.  
   
- [in] *nIndex*  
- Specifies the control ID of the toolbar.  
+*nIndex*<br/>
+[in] Specifies the control ID of the toolbar.  
   
- [in] *uiID*  
- Specifies the resource ID of the toolbar.  
+*uiID*<br/>
+[in] Specifies the resource ID of the toolbar.  
   
 ### Return Value  
  Nonzero if the method succeeds; otherwise 0.  
@@ -2073,26 +2073,26 @@ virtual BOOL LoadToolBar(
 ```  
   
 ### Parameters  
- [in] *uiResID*  
- The resource ID of the toolbar.  
+*uiResID*<br/>
+[in] The resource ID of the toolbar.  
   
- [in] *uiColdResID*  
- The resource ID of the bitmap that refers to the cold toolbar images.  
+*uiColdResID*<br/>
+[in] The resource ID of the bitmap that refers to the cold toolbar images.  
   
- [in] *uiMenuResID*  
- The resource ID of the bitmap that refers to the regular menu images.  
+*uiMenuResID*<br/>
+[in] The resource ID of the bitmap that refers to the regular menu images.  
   
- [in] *bLocked*  
- A Boolean value that specifies whether the toolbar is locked or not. If this parameter is *TRUE*, the toolbar is locked. Otherwise, the toolbar is not locked.  
+*bLocked*<br/>
+[in] A Boolean value that specifies whether the toolbar is locked or not. If this parameter is *TRUE*, the toolbar is locked. Otherwise, the toolbar is not locked.  
   
- [in] *uiDisabledResID*  
- The resource ID of the bitmap that refers to the disabled toolbar images.  
+*uiDisabledResID*<br/>
+[in] The resource ID of the bitmap that refers to the disabled toolbar images.  
   
- [in] *uiMenuDisabledResID*  
- The resource ID of the bitmap that refers to the disabled menu images.  
+*uiMenuDisabledResID*<br/>
+[in] The resource ID of the bitmap that refers to the disabled menu images.  
   
- [in] *uiHotResID*  
- The resource ID of the bitmap that refers to the hot toolbar images.  
+*uiHotResID*<br/>
+[in] The resource ID of the bitmap that refers to the hot toolbar images.  
   
 ### Return Value  
  Nonzero if the method succeeds; otherwise 0.  
@@ -2117,14 +2117,14 @@ virtual BOOL LoadToolBarEx(
 ```  
   
 ### Parameters  
- [in] *uiToolbarResID*  
- The resource ID of the toolbar.  
+*uiToolbarResID*<br/>
+[in] The resource ID of the toolbar.  
   
- [in] *params*  
- A reference to a `CMFCToolBarInfo` object that contains the resource IDs for the toolbar images.  
+*params*<br/>
+[in] A reference to a `CMFCToolBarInfo` object that contains the resource IDs for the toolbar images.  
   
- [in] *bLocked*  
- A Boolean value that specifies whether the toolbar is locked or not. If this parameter is TRUE, the toolbar is locked. Otherwise, the toolbar is not locked.  
+*bLocked*<br/>
+[in] A Boolean value that specifies whether the toolbar is locked or not. If this parameter is TRUE, the toolbar is locked. Otherwise, the toolbar is not locked.  
   
 ### Return Value  
  Nonzero if the method succeeds; otherwise 0.  
@@ -2165,11 +2165,11 @@ virtual BOOL OnBeforeRemoveButton(
 ```  
   
 ### Parameters  
- [in] *pButton*  
- Unused.  
+*pButton*<br/>
+[in] Unused.  
   
- [in] *dropEffect*  
- Unused.  
+*dropEffect*<br/>
+[in] Unused.  
   
 ### Return Value  
   
@@ -2183,8 +2183,8 @@ virtual void OnChangeHot(int iHot);
 ```  
   
 ### Parameters  
- [in] *iHot*  
- Specifies the index of the toolbar button that is selected; or -1 if no toolbar button is selected.  
+*iHot*<br/>
+[in] Specifies the index of the toolbar button that is selected; or -1 if no toolbar button is selected.  
   
 ### Remarks  
  Override this method to process notifications that the user selected a button on a toolbar.  
@@ -2206,8 +2206,8 @@ virtual void OnFillBackground(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] *pDC*  
- A pointer to a device context.  
+*pDC*<br/>
+[in] A pointer to a device context.  
   
 ### Remarks  
  [CMFCToolBar::DoPaint](#dopaint) calls this method when the background of a toolbar has been filled. The default implementation does nothing.  
@@ -2257,8 +2257,8 @@ virtual BOOL OnSetDefaultButtonText(CMFCToolBarButton* pButton);
 ```  
   
 ### Parameters  
- [in] *pButton*  
- Points to a button, whose text is being set.  
+*pButton*<br/>
+[in] Points to a button, whose text is being set.  
   
 ### Return Value  
  TRUE ifthe text was successfully restored; otherwise FALSE.  
@@ -2278,11 +2278,11 @@ virtual BOOL OnUserToolTip(
 ```  
   
 ### Parameters  
- [in] *pButton*  
- Points to a toolbar button for which a tooltip is to be displayed.  
+*pButton*<br/>
+[in] Points to a toolbar button for which a tooltip is to be displayed.  
   
- [out] *strTTText*  
- A reference to `CString` object that receives the text of the tooltip.  
+*strTTText*<br/>
+[out] A reference to `CString` object that receives the text of the tooltip.  
   
 ### Return Value  
  TRUE if *strTTText* was populated with tooltip text; otherwise FALSE.  
@@ -2311,8 +2311,8 @@ BOOL ProcessCommand(CMFCToolBarButton* pButton);
 ```  
   
 ### Parameters  
- [in] *pButton*  
- Pointer to a button on the toolbar.  
+*pButton*<br/>
+[in] Pointer to a button on the toolbar.  
   
 ### Return Value  
  This method should always return TRUE. MFC uses FALSE values internally.  
@@ -2340,8 +2340,8 @@ virtual BOOL RemoveButton(int iIndex);
 ```  
   
 ### Parameters  
- [in] *iIndex*  
- Specifies the zero-based index of the button to remove.  
+*iIndex*<br/>
+[in] Specifies the zero-based index of the button to remove.  
   
 ### Return Value  
  TRUE if the method succeeds, or FALSE if the specified index is invalid or the index refers to the **Customize** button.  
@@ -2362,14 +2362,14 @@ virtual BOOL RemoveStateFromRegistry(
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- Specifies the registry key where the state information is located.  
+*lpszProfileName*<br/>
+[in] Specifies the registry key where the state information is located.  
   
- [in] *nIndex*  
- The control ID of the toolbar.  
+*nIndex*<br/>
+[in] The control ID of the toolbar.  
   
- [in] *uiID*  
- The resource ID of the toolbar. If this parameter is -1, this method uses the [CWnd::GetDlgCtrlID](../../mfc/reference/cwnd-class.md#getdlgctrlid) method to retrieve the resource ID.  
+*uiID*<br/>
+[in] The resource ID of the toolbar. If this parameter is -1, this method uses the [CWnd::GetDlgCtrlID](../../mfc/reference/cwnd-class.md#getdlgctrlid) method to retrieve the resource ID.  
   
 ### Return Value  
  Nonzero if the method succeeds; otherwise 0.  
@@ -2390,14 +2390,14 @@ int ReplaceButton(
 ```  
   
 ### Parameters  
- [in] *uiCmd*  
- The command ID of the button to replace.  
+*uiCmd*<br/>
+[in] The command ID of the button to replace.  
   
- [in] *button*  
- A reference to the `CMFCToolBarButton` to insert.  
+*button*<br/>
+[in] A reference to the `CMFCToolBarButton` to insert.  
   
- [in] *bAll*  
- A Boolean value that specifies whether to replace all buttons that have the command ID specified by *uiCmd*. If this parameter is TRUE, all buttons that have the specified command ID are replaced. Otherwise, the first button is replaced.  
+*bAll*<br/>
+[in] A Boolean value that specifies whether to replace all buttons that have the command ID specified by *uiCmd*. If this parameter is TRUE, all buttons that have the specified command ID are replaced. Otherwise, the first button is replaced.  
   
 ### Return Value  
  The number of buttons that are replaced. This method returns 0 if a button with the specified command ID does not exist on the toolbar.  
@@ -2489,14 +2489,14 @@ virtual BOOL SaveState(
 ```  
   
 ### Parameters  
- [in] *lpszProfileName*  
- Specifies the relative path of the Windows registry key.  
+*lpszProfileName*<br/>
+[in] Specifies the relative path of the Windows registry key.  
   
- [in] *nIndex*  
- The control ID of the toolbar.  
+*nIndex*<br/>
+[in] The control ID of the toolbar.  
   
- [in] *uiID*  
- The resource ID of the toolbar.  
+*uiID*<br/>
+[in] The resource ID of the toolbar.  
   
 ### Return Value  
  Nonzero if the method succeeds; otherwise 0.  
@@ -2512,8 +2512,8 @@ static void __stdcall SetBasicCommands(CList<UINT,UINT>& lstCommands);
 ```  
   
 ### Parameters  
- [in] *lstCommands*  
- A reference to a `CList` object that contains a collection of commands.  
+*lstCommands*<br/>
+[in] A reference to a `CList` object that contains a collection of commands.  
   
 ### Remarks  
  A basic command is always displayed when the menu is opened. This method is meaningful when the user chooses to view recently used commands.  
@@ -2534,17 +2534,17 @@ void SetButtonInfo(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- The zero-based index of the button whose properties are set.  
+*nIndex*<br/>
+[in] The zero-based index of the button whose properties are set.  
   
- [in] *nID*  
- The command ID of the button.  
+*nID*<br/>
+[in] The command ID of the button.  
   
- [in] *nStyle*  
- The style of the button. See [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md) for the list of available toolbar button styles.  
+*nStyle*<br/>
+[in] The style of the button. See [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md) for the list of available toolbar button styles.  
   
- [in] *iImage*  
- The zero-based image index of the button (that is, the index in the collection of toolbar images).  
+*iImage*<br/>
+[in] The zero-based image index of the button (that is, the index in the collection of toolbar images).  
   
 ### Remarks  
  Call this method to set the properties of a toolbar button.  
@@ -2564,14 +2564,14 @@ virtual BOOL SetButtons(
 ```  
   
 ### Parameters  
- [in] *lpIDArray*  
- A pointer to the array of command IDs of the buttons to insert.  
+*lpIDArray*<br/>
+[in] A pointer to the array of command IDs of the buttons to insert.  
   
- [in] *nIDCount*  
- The number of items in *lpIDArray*.  
+*nIDCount*<br/>
+[in] The number of items in *lpIDArray*.  
   
- [in] *bRemapImages*  
- A Boolean value that specifies whether to associate the existing button images with the inserted buttons. If this parameter is TRUE, the images are remapped.  
+*bRemapImages*<br/>
+[in] A Boolean value that specifies whether to associate the existing button images with the inserted buttons. If this parameter is TRUE, the images are remapped.  
   
 ### Return Value  
  Nonzero if the method succeeds; otherwise 0.  
@@ -2591,11 +2591,11 @@ virtual void SetButtonStyle(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- The zero-based index of the toolbar button whose style is to be set.  
+*nIndex*<br/>
+[in] The zero-based index of the toolbar button whose style is to be set.  
   
- [in] *nStyle*  
- The style of the button. See [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md) for the list of available toolbar button styles.  
+*nStyle*<br/>
+[in] The style of the button. See [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md) for the list of available toolbar button styles.  
   
 ### Remarks  
  This method removes the TBBS_PRESSED style if *nStyle* is TBBS_DISABLED because the user cannot click a disabled button.  
@@ -2610,11 +2610,11 @@ BOOL SetButtonText(
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- The index of the toolbar button.  
+*nIndex*<br/>
+[in] The index of the toolbar button.  
   
- [in] *lpszText*  
- The text label of the toolbar button. Must be non- NULL.  
+*lpszText*<br/>
+[in] The text label of the toolbar button. Must be non- NULL.  
   
 ### Return Value  
  TRUE if the method succeeds; otherwise FALSE.  
@@ -2632,11 +2632,11 @@ static BOOL SetCommandUsageOptions(
 ```  
   
 ### Parameters  
- [in] *nStartCount*  
- Specifies the number of times that commands must be executed before the framework shows only the basic and recently-used commands.  
+*nStartCount*<br/>
+[in] Specifies the number of times that commands must be executed before the framework shows only the basic and recently-used commands.  
   
- [in] *nMinUsagePercentage*  
- The percentage of times that a command must be executed to be considered a recently-used command.  
+*nMinUsagePercentage*<br/>
+[in] The percentage of times that a command must be executed to be considered a recently-used command.  
   
 ### Return Value  
  FALSE if *nMinUsagePercentage* is equal to or larger than 100; otherwise TRUE.  
@@ -2654,8 +2654,8 @@ static BOOL __stdcall SetCustomizeMode(BOOL bSet=TRUE);
 ```  
   
 ### Parameters  
- [in] *bSet*  
- A Boolean value that specifies whether to enable or disable customization mode. Set this parameter to TRUE to enable customization mode or FALSE to disable it.  
+*bSet*<br/>
+[in] A Boolean value that specifies whether to enable or disable customization mode. Set this parameter to TRUE to enable customization mode or FALSE to disable it.  
   
 ### Return Value  
  TRUE if calling this method changes the customization mode; otherwise FALSE.  
@@ -2671,8 +2671,8 @@ void SetGrayDisabledButtons(BOOL bGrayDisabledButtons);
 ```  
   
 ### Parameters  
- [in] *bGrayDisabledButtons*  
- A Boolean value that specifies how to display unavailable buttons. If this parameter is TRUE, the framework dims the buttons. Otherwise, the framework uses the collection of button-unavailable images.  
+*bGrayDisabledButtons*<br/>
+[in] A Boolean value that specifies how to display unavailable buttons. If this parameter is TRUE, the framework dims the buttons. Otherwise, the framework uses the collection of button-unavailable images.  
   
 ### Remarks  
  By default, unavailable buttons are dimmed.  
@@ -2685,8 +2685,8 @@ void SetHeight(int cyHeight);
 ```  
   
 ### Parameters  
- [in] *cyHeight*  
- The height of the toolbar, in pixels.  
+*cyHeight*<br/>
+[in] The height of the toolbar, in pixels.  
   
 ### Remarks  
  This method redraws the toolbar after it sets the height.  
@@ -2725,8 +2725,8 @@ void SetHotBorder(BOOL bShowHotBorder);
 ```  
   
 ### Parameters  
- [in] *bShowHotBorder*  
- A Boolean value that specifies whether to hot-track toolbar buttons. If this parameter is TRUE, the toolbar hot-tracks its buttons. Otherwise, the toolbar does not hot-track its buttons.  
+*bShowHotBorder*<br/>
+[in] A Boolean value that specifies whether to hot-track toolbar buttons. If this parameter is TRUE, the toolbar hot-tracks its buttons. Otherwise, the toolbar does not hot-track its buttons.  
   
 ### Remarks  
  If a button is hot-tracked, the framework highlights the button when the mouse moves across it. By default, each toolbar hot-tracks its buttons.  
@@ -2741,8 +2741,8 @@ static void SetHotTextColor(COLORREF clrText);
 ```  
   
 ### Parameters  
- [in] *clrText*  
- Specifies the text color for toolbar buttons that are hot-tracked.  
+*clrText*<br/>
+[in] Specifies the text color for toolbar buttons that are hot-tracked.  
   
 ### Remarks  
  For more information about hot-tracked toolbar buttons, see [CMFCToolBar::GetHotBorder](#gethotborder) and [CMFCToolBar::SetHotBorder](#sethotborder).  
@@ -2767,8 +2767,8 @@ static void SetLargeIcons(BOOL bLargeIcons=TRUE);
 ```  
   
 ### Parameters  
- [in] *bLargeIcons*  
- A Boolean value that specifies which icons to use. If this parameter is TRUE, the framework displays large icons. Otherwise, the framework displays regular icons.  
+*bLargeIcons*<br/>
+[in] A Boolean value that specifies which icons to use. If this parameter is TRUE, the framework displays large icons. Otherwise, the framework displays regular icons.  
   
 ### Remarks  
  The framework calls this method when the user changes the state of the **Large Icons** check box in the **Options** tab of the **Customize** dialog box. This method resizes all toolbars in the application.  
@@ -2788,11 +2788,11 @@ void SetLockedSizes(
 ```  
   
 ### Parameters  
- [in] *sizeButton*  
- Specifies the size of locked toolbar buttons.  
+*sizeButton*<br/>
+[in] Specifies the size of locked toolbar buttons.  
   
- [in] *sizeImage*  
- Specifies the size of locked toolbar images.  
+*sizeImage*<br/>
+[in] Specifies the size of locked toolbar images.  
   
  *bDontScale*  
  Specifies whether to scale or not locked toolbar images in high DPI mode.  
@@ -2824,11 +2824,11 @@ static void __stdcall SetMenuSizes(
 ```  
   
 ### Parameters  
- [in] *sizeButton*  
- Specifies the size of toolbar buttons, in pixels.  
+*sizeButton*<br/>
+[in] Specifies the size of toolbar buttons, in pixels.  
   
- [in] *sizeImage*  
- Specifies the size of toolbar images, in pixels.  
+*sizeImage*<br/>
+[in] Specifies the size of toolbar images, in pixels.  
   
 ### Remarks  
  By default, menu buttons and their images have an undefined size.  
@@ -2845,8 +2845,8 @@ static void SetNonPermittedCommands(CList<UINT,UINT>& lstCommands);
 ```  
   
 ### Parameters  
- [in] *lstCommands*  
- A reference to a `CList` object that contains the commands that cannot be executed by the user.  
+*lstCommands*<br/>
+[in] A reference to a `CList` object that contains the commands that cannot be executed by the user.  
   
 ### Remarks  
  Call this method to prevent the user from selecting certain commands. For example, you might want to prevent the user from selecting certain commands for security reasons. See the MDITabsDemo and MenuSubSet samples for examples that use this method.  
@@ -2887,8 +2887,8 @@ void SetPermament(BOOL bPermament=TRUE);
 ```  
   
 ### Parameters  
- [in] *bPermament*  
- A Boolean value that specifies whether a user can close the toolbar. If this parameter is TRUE, a user cannot close the toolbar. Otherwise, a user can close the toolbar.  
+*bPermament*<br/>
+[in] A Boolean value that specifies whether a user can close the toolbar. If this parameter is TRUE, a user cannot close the toolbar. Otherwise, a user can close the toolbar.  
   
 ### Remarks  
  By default, a user can close each toolbar.  
@@ -2903,8 +2903,8 @@ void SetRouteCommandsViaFrame(BOOL bValue);
 ```  
   
 ### Parameters  
- [in] *bValue*  
- If this parameter is TRUE, the parent frame sends commands to the toolbar. Otherwise, the owner sends commands to the toolbar.  
+*bValue*<br/>
+[in] If this parameter is TRUE, the parent frame sends commands to the toolbar. Otherwise, the owner sends commands to the toolbar.  
   
 ### Remarks  
  By default, the parent frame sends commands to the toolbar. Call the [CMFCToolBar::GetRouteCommandsViaFrame](#getroutecommandsviaframe) method to determine whether the parent frame or the owner sends commands to the toolbar.  
@@ -2917,8 +2917,8 @@ static void SetShowTooltips(BOOL bValue);
 ```  
   
 ### Parameters  
- [in] *bValue*  
- If this parameter is TRUE, the framework shows tool tips. Otherwise, the framework hides tool tips.  
+*bValue*<br/>
+[in] If this parameter is TRUE, the framework shows tool tips. Otherwise, the framework hides tool tips.  
   
 ### Remarks  
  By default, the framework shows tool tips.  
@@ -2933,8 +2933,8 @@ void SetSiblingToolBar(CMFCToolBar* pBrotherToolbar);
 ```  
   
 ### Parameters  
- [in] *pBrotherToolbar*  
- A pointer to the sibling toolbar.  
+*pBrotherToolbar*<br/>
+[in] A pointer to the sibling toolbar.  
   
 ### Remarks  
  This method enables the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons that are shown when the user displays the **Customize** pop-up menu. Call this method when you want to enable the user to specify whether related toolbars appear on the same row or on different rows.  
@@ -2953,11 +2953,11 @@ static void __stdcall SetSizes(
 ```  
   
 ### Parameters  
- [in] *sizeButton*  
- The size of toolbar buttons, in pixels.  
+*sizeButton*<br/>
+[in] The size of toolbar buttons, in pixels.  
   
- [in] *sizeImage*  
- The size of toolbar button images, in pixels.  
+*sizeImage*<br/>
+[in] The size of toolbar button images, in pixels.  
   
 ### Remarks  
  The default size of toolbar buttons is 23x22 pixels. The default size of toolbar button images is 16x15 pixels.  
@@ -2976,17 +2976,17 @@ void SetToolBarBtnText(
 ```  
   
 ### Parameters  
- [in] *nBtnIndex*  
- The zero-based index of the toolbar button in the list of toolbar buttons.  
+*nBtnIndex*<br/>
+[in] The zero-based index of the toolbar button in the list of toolbar buttons.  
   
- [in] *szText*  
- Specifies the text label of the toolbar button.  
+*szText*<br/>
+[in] Specifies the text label of the toolbar button.  
   
- [in] *bShowText*  
- If this parameter is TRUE, the framework shows the text label. Otherwise, the framework hides the text label.  
+*bShowText*<br/>
+[in] If this parameter is TRUE, the framework shows the text label. Otherwise, the framework hides the text label.  
   
- [in] *bShowImage*  
- If this parameter is TRUE, the framework shows the toolbar button image. Otherwise, the framework hides the toolbar button image.  
+*bShowImage*<br/>
+[in] If this parameter is TRUE, the framework shows the toolbar button image. Otherwise, the framework hides the toolbar button image.  
   
 ### Remarks  
  By default, the framework shows the images of toolbar buttons but does not show the text label of toolbar buttons.  
@@ -3015,8 +3015,8 @@ static BOOL SetUserImages(CMFCToolBarImages* pUserImages);
 ```  
   
 ### Parameters  
- [in] *pUserImages*  
- A pointer to the collection of user-defined images.  
+*pUserImages*<br/>
+[in] A pointer to the collection of user-defined images.  
   
 ### Return Value  
  Nonzero if the method succeeds; otherwise 0 if the specified `CMFCToolBarImages` object is not valid or has an image size that differs from the default image size of the toolbar.  
@@ -3040,11 +3040,11 @@ virtual CSize StretchPane(
 ```  
   
 ### Parameters  
- [in] *nLength*  
- The amount, in pixels, by which to stretch the pane.  
+*nLength*<br/>
+[in] The amount, in pixels, by which to stretch the pane.  
   
- [in] *bVert*  
- If TRUE, stretches the pane vertically. If FALSE, stretches the pane horizontally.  
+*bVert*<br/>
+[in] If TRUE, stretches the pane vertically. If FALSE, stretches the pane horizontally.  
   
 ### Return Value  
  A `CSize` object that specifies the size of the toolbar client area.  
@@ -3062,8 +3062,8 @@ virtual BOOL TranslateChar(UINT nChar);
 ```  
   
 ### Parameters  
- [in] *nChar*  
- Specifies a virtual key code. For a list of standard virtual key codes, see Winuser.h  
+*nChar*<br/>
+[in] Specifies a virtual key code. For a list of standard virtual key codes, see Winuser.h  
   
 ### Return Value  
  FALSE if the specified key code is either unprintable or does not correspond to a valid keyboard shortcut; TRUE if the specified key code corresponds to a drop-down menu option; otherwise, the return value from [CMFCToolBar::ProcessCommand](#processcommand).  
@@ -3079,8 +3079,8 @@ void UpdateButton(int nIndex);
 ```  
   
 ### Parameters  
- [in] *nIndex*  
- Specifies the zero-based index of the button to update.  
+*nIndex*<br/>
+[in] Specifies the zero-based index of the button to update.  
   
 ### Remarks  
   
@@ -3097,17 +3097,17 @@ int WrapToolBar(
 ```  
   
 ### Parameters  
- [in] *nWidth*  
- Maximum width of the toolbar.  
+*nWidth*<br/>
+[in] Maximum width of the toolbar.  
   
- [in] *nHeight*  
- Maximum height of the toolbar. Not used if the toolbar is floating.  
+*nHeight*<br/>
+[in] Maximum height of the toolbar. Not used if the toolbar is floating.  
   
- [in] *pDC*  
- Pointer to a device context. If NULL, the device context for the toolbar is used.  
+*pDC*<br/>
+[in] Pointer to a device context. If NULL, the device context for the toolbar is used.  
   
- [in] *nColumnWidth*  
- Button width. If -1, the current width is used.  
+*nColumnWidth*<br/>
+[in] Button width. If -1, the current width is used.  
   
  [in] m *nRowHeight*  
  Button height. If -1, the current height is used.  

@@ -76,10 +76,10 @@ bool operator<(const vector<Type, Allocator>& left, const vector<Type, Allocator
 
 ### Parameters
 
-*left*  
+*left*<br/>
 An object of type `vector`.
 
-*right*  
+*right*<br/>
 An object of type `vector`.
 
 ### Return Value
@@ -127,10 +127,10 @@ bool operator<=(const vector<Type, Allocator>& left, const vector<Type, Allocato
 
 ### Parameters
 
-*left*  
+*left*<br/>
 An object of type `vector`.
 
-*right*  
+*right*<br/>
 An object of type `vector`.
 
 ### Return Value
@@ -178,10 +178,10 @@ bool operator==(const vector<Type, Allocator>& left, const vector<Type, Allocato
 
 ### Parameters
 
-*left*  
+*left*<br/>
 An object of type `vector`.
 
-*right*  
+*right*<br/>
 An object of type `vector`.
 
 ### Return Value
@@ -229,10 +229,10 @@ bool operator>(const vector<Type, Allocator>& left, const vector<Type, Allocator
 
 ### Parameters
 
-*left*  
+*left*<br/>
 An object of type `vector`.
 
-*right*  
+*right*<br/>
 An object of type `vector`.
 
 ### Return Value
@@ -281,10 +281,10 @@ bool operator>=(const vector<Type, Allocator>& left, const vector<Type, Allocato
 
 ### Parameters
 
-*left*  
+*left*<br/>
 An object of type `vector`.
 
-*right*  
+*right*<br/>
 An object of type `vector`.
 
 ### Return Value

@@ -217,11 +217,11 @@ virtual BOOL SetACCData(
 ```  
   
 ### Parameters  
- [in] *pParent*  
- Represents the parent window of the current task.  
+*pParent*<br/>
+[in] Represents the parent window of the current task.  
   
- [out] *data*  
- An object of type `CAccessibilityData` that is populated with the accessibility data of the current task.  
+*data*<br/>
+[out] An object of type `CAccessibilityData` that is populated with the accessibility data of the current task.  
   
 ### Return Value  
  TRUE if the *data* parameter was successfully populated with the accessibility data of the current task; otherwise, FALSE.  

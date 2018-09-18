@@ -29,14 +29,14 @@ inline bool SafeModulus (
 
 ### Parameters
 
-[in] *t*  
-The divisor. This must be of type `T`.
+*t*<br/>
+[in] The divisor. This must be of type `T`.
 
-[in] *u*  
-The dividend. This must be of type `U`.
+*u*<br/>
+[in] The dividend. This must be of type `U`.
 
-[out] *result*  
-The parameter where **SafeModulus** stores the result.
+*result*<br/>
+[out] The parameter where **SafeModulus** stores the result.
 
 ## Return Value
 

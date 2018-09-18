@@ -33,23 +33,23 @@ class ATL_NO_VTABLE IDispatchImpl : public T
 
 #### Parameters
 
-[in] *T*  
-A dual interface.
+*T*<br/>
+[in] A dual interface.
 
-[in] *piid*  
-A pointer to the IID of *T*.
+*piid*<br/>
+[in] A pointer to the IID of *T*.
 
-[in] *plibid*  
-A pointer to the LIBID of the type library that contains information about the interface. By default, the server-level type library is passed.
+*plibid*<br/>
+[in] A pointer to the LIBID of the type library that contains information about the interface. By default, the server-level type library is passed.
 
-[in] *wMajor*  
-The major version of the type library. By default, the value is 1.
+*wMajor*<br/>
+[in] The major version of the type library. By default, the value is 1.
 
-[in] *wMinor*  
-The minor version of the type library. By default, the value is 0.
+*wMinor*<br/>
+[in] The minor version of the type library. By default, the value is 0.
 
-[in] *tihclass*  
-The class used to manage the type information for *T*. By default, the value is `CComTypeInfoHolder`.
+*tihclass*<br/>
+[in] The class used to manage the type information for *T*. By default, the value is `CComTypeInfoHolder`.
 
 ## Members
 

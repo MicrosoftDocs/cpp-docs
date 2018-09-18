@@ -34,12 +34,13 @@ int _execute_onexit_table(
     );  
 ```  
   
-#### Parameters  
- [inout] `table`  
- Pointer to the onexit function table.  
+#### Parameters
+
+*table*<br/>
+[in, out] Pointer to the onexit function table.  
   
- [in] `function`  
- Pointer to a function to add to the onexit function table.  
+*function*<br/>
+[in] Pointer to a function to add to the onexit function table.  
   
 ## Return Value  
  If successful, returns 0. Otherwise, returns a negative value.  

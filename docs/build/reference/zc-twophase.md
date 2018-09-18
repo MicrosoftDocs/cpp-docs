@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # /Zc:twoPhase- (disable two-phase name lookup)
 
-When the **/Zc:twoPhase-** option is specified, the compiler parses and instantiates class templates and function templates in the same non-conforming way as versions of Visual Studio before Visual Studio 2017 version 15.3. 
+When the **/Zc:twoPhase-** option is specified, the compiler parses and instantiates class templates and function templates in the same non-conforming way as versions of Visual Studio before Visual Studio 2017 version 15.3.
 
 ## Syntax
 
@@ -61,7 +61,7 @@ template<typename T> void g(T x)
 
 void func(int) { std::puts("The call resolves to int"); }
 
-int main() 
+int main()
 {
     g(3.14);
 }

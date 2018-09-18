@@ -30,8 +30,8 @@ unsigned char __vmx_vmwrite( 
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `Field`|The VMCS field to write.|  
-|[in] `FieldValue`|The value to write to the VMCS field.|  
+|*Field*|[in] The VMCS field to write.|  
+|*FieldValue*|[in] The value to write to the VMCS field.|  
   
 ## Return Value  
  0  

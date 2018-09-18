@@ -22,7 +22,7 @@ Iterator class for matches.
 template<class BidIt,
    class Elem = typename std::iterator_traits<BidIt>::value_type,
    class RxTraits = regex_traits<Elem> >
-class regex_iterator 
+class regex_iterator
 ```
 
 ## Parameters
