@@ -13,49 +13,56 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CInvalidArgException Class
-This class represents an invalid argument exception condition.  
-  
-## Syntax  
-  
-```  
-class CInvalidArgException : public CSimpleException  
-```  
-  
-## Members  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[CInvalidArgException::CInvalidArgException](#cinvalidargexception)|The constructor.|  
-  
-## Remarks  
- A `CInvalidArgException` object represents an invalid argument exception condition.  
-  
- For more information on Exception Handling, see the [CException Class](../../mfc/reference/cexception-class.md) topic and [Exception Handling (MFC)](../../mfc/exception-handling-in-mfc.md).  
-  
-## Inheritance Hierarchy  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- [CException](../../mfc/reference/cexception-class.md)  
-  
- [CSimpleException](../../mfc/reference/csimpleexception-class.md)  
-  
- `CInvalidArgException`  
-  
-## Requirements  
- **Header:** afx.h  
-  
-##  <a name="cinvalidargexception"></a>  CInvalidArgException::CInvalidArgException  
- The constructor.  
-  
-```  
+
+This class represents an invalid argument exception condition.
+
+## Syntax
+
+```
+class CInvalidArgException : public CSimpleException
+```
+
+## Members
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[CInvalidArgException::CInvalidArgException](#cinvalidargexception)|The constructor.|
+
+## Remarks
+
+A `CInvalidArgException` object represents an invalid argument exception condition.
+
+For more information on Exception Handling, see the [CException Class](../../mfc/reference/cexception-class.md) topic and [Exception Handling (MFC)](../../mfc/exception-handling-in-mfc.md).
+
+## Inheritance Hierarchy
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+[CException](../../mfc/reference/cexception-class.md)
+
+[CSimpleException](../../mfc/reference/csimpleexception-class.md)
+
+`CInvalidArgException`
+
+## Requirements
+
+**Header:** afx.h
+
+##  <a name="cinvalidargexception"></a>  CInvalidArgException::CInvalidArgException
+
+The constructor.
+
+```
 CInvalidArgException();
-```  
-  
-### Remarks  
- Do not use this constructor directly; call the global function **AfxThrowInvalidArgException**.  
-  
-## See Also  
- [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
- [CSimpleException Class](../../mfc/reference/csimpleexception-class.md)
+```
+
+### Remarks
+
+Do not use this constructor directly; call the global function **AfxThrowInvalidArgException**.
+
+## See Also
+
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
+[CSimpleException Class](../../mfc/reference/csimpleexception-class.md)

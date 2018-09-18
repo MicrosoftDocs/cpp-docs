@@ -124,7 +124,7 @@ void AddPage(CPropertyPage* pPage);
 
 ### Parameters
 
-*pPage*  
+*pPage*<br/>
 Points to the page to be added to the property sheet. Cannot be NULL.
 
 ### Remarks
@@ -180,25 +180,25 @@ void Construct(
 
 ### Parameters
 
-*nIDCaption*  
+*nIDCaption*<br/>
 ID of the caption to be used for the property sheet.
 
-*pParentWnd*  
+*pParentWnd*<br/>
 Pointer to the parent window of the property sheet. If NULL, the parent window will be the main window of the application.
 
-*iSelectPage*  
+*iSelectPage*<br/>
 The index of the page that will initially be on top. Default is the first page added to the sheet.
 
-*pszCaption*  
+*pszCaption*<br/>
 Pointer to a string containing the caption to be used for the property sheet. Cannot be NULL.
 
-*hbmWatermark*  
+*hbmWatermark*<br/>
 Handle to the watermark bitmap of the property page.
 
-*hpalWatermark*  
+*hpalWatermark*<br/>
 Handle to the palette of the watermark bitmap and/or header bitmap.
 
-*hbmHeader*  
+*hbmHeader*<br/>
 Handle to the header bitmap of the property page.
 
 ### Remarks
@@ -255,25 +255,25 @@ CPropertySheet(
 
 ### Parameters
 
-*nIDCaption*  
+*nIDCaption*<br/>
 ID of the caption to be used for the property sheet.
 
-*pParentWnd*  
+*pParentWnd*<br/>
 Points to the parent window of the property sheet. If NULL, the parent window will be the main window of the application.
 
-*iSelectPage*  
+*iSelectPage*<br/>
 The index of the page that will initially be on top. Default is the first page added to the sheet.
 
-*pszCaption*  
+*pszCaption*<br/>
 Points to a string containing the caption to be used for the property sheet. Cannot be NULL.
 
-*hbmWatermark*  
+*hbmWatermark*<br/>
 A handle to the background bitmap of the property sheet.
 
-*hpalWatermark*  
+*hpalWatermark*<br/>
 A handle to the palette of the watermark bitmap and/or header bitmap.
 
-*hbmHeader*  
+*hbmHeader*<br/>
 A handle to the header bitmap of the property page.
 
 ### Remarks
@@ -300,13 +300,13 @@ virtual BOOL Create(CWnd* pParentWnd = NULL,
 
 ### Parameters
 
-*pParentWnd*  
+*pParentWnd*<br/>
 Points to parent window. If NULL, parent is the desktop.
 
-*dwStyle*  
+*dwStyle*<br/>
 Window styles for property sheet. For a complete list of available styles, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).
 
-*dwExStyle*  
+*dwExStyle*<br/>
 Extended window styles for property sheet. For a complete list of available styles, see [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)
 
 ### Return Value
@@ -388,7 +388,7 @@ void EnableStackedTabs(BOOL bStacked);
 
 ### Parameters
 
-*bStacked*  
+*bStacked*<br/>
 Indicates whether stacked tabs are enabled in the property sheet. Disable stacked rows of tags by setting *bStacked* to FALSE.
 
 ### Remarks
@@ -411,7 +411,7 @@ void EndDialog(int nEndID);
 
 ### Parameters
 
-*nEndID*  
+*nEndID*<br/>
 Identifier to be used as return value of the property sheet.
 
 ### Remarks
@@ -470,7 +470,7 @@ CPropertyPage* GetPage(int nPage) const;
 
 ### Parameters
 
-*nPage*  
+*nPage*<br/>
 Index of the desired page, starting at 0. Must be between 0 and one less than the number of pages in the property sheet, inclusive.
 
 ### Return Value
@@ -507,7 +507,7 @@ int GetPageIndex(CPropertyPage* pPage);
 
 ### Parameters
 
-*pPage*  
+*pPage*<br/>
 Points to the page with the index to be found. Cannot be NULL.
 
 ### Return Value
@@ -566,7 +566,7 @@ void MapDialogRect(LPRECT lpRect) const;
 
 ### Parameters
 
-*lpRect*  
+*lpRect*<br/>
 Points to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the dialog-box coordinates to be converted.
 
 ### Remarks
@@ -607,7 +607,7 @@ void PressButton(int nButton);
 
 ### Parameters
 
-*nButton*  
+*nButton*<br/>
 nButton : Identifies the button to be pressed. This parameter can be one of the following values:
 
 - PSBTN_BACK Chooses the Back button.
@@ -645,10 +645,10 @@ void RemovePage(int nPage);
 
 ### Parameters
 
-*pPage*  
+*pPage*<br/>
 Points to the page to be removed from the property sheet. Cannot be NULL.
 
-*nPage*  
+*nPage*<br/>
 Index of the page to be removed. Must be between 0 and one less than the number of pages in the property sheet, inclusive.
 
 ### Remarks
@@ -666,10 +666,10 @@ BOOL SetActivePage(CPropertyPage* pPage);
 
 ### Parameters
 
-*nPage*  
+*nPage*<br/>
 Index of the page to set. It must be between 0 and one less than the number of pages in the property sheet, inclusive.
 
-*pPage*  
+*pPage*<br/>
 Points to the page to set in the property sheet. It cannot be NULL.
 
 ### Return Value
@@ -694,7 +694,7 @@ void SetFinishText(LPCTSTR lpszText);
 
 ### Parameters
 
-*lpszText*  
+*lpszText*<br/>
 Points to the text to be displayed on the Finish command button.
 
 ### Remarks
@@ -717,10 +717,10 @@ void SetTitle(
 
 ### Parameters
 
-*nStyle*  
+*nStyle*<br/>
 Specifies the style of the property sheet title. The style must be specified at 0 or as PSH_PROPTITLE. If the style is set as PSH_PROPTITLE, the word "Properties" appears after the text specified as the caption. For example, calling `SetTitle`("Simple", PSH_PROPTITLE) will result in a property sheet caption of "Simple Properties."
 
-*lpszText*  
+*lpszText*<br/>
 Points to the text to be used as the caption in the title bar of the property sheet.
 
 ### Remarks
@@ -741,7 +741,7 @@ void SetWizardButtons(DWORD dwFlags);
 
 ### Parameters
 
-*dwFlags*  
+*dwFlags*<br/>
 A set of flags that customize the function and appearance of the wizard buttons. This parameter can be a combination of the following values:
 
 - PSWIZB_BACK Back button
@@ -790,9 +790,9 @@ Call `SetWizardMode` before calling [DoModal](#domodal). After you call `SetWiza
 
 ## See Also
 
-[MFC Sample CMNCTRL1](../../visual-cpp-samples.md)  
-[MFC Sample CMNCTRL2](../../visual-cpp-samples.md)  
-[MFC Sample PROPDLG](../../visual-cpp-samples.md)  
-[MFC Sample SNAPVW](../../visual-cpp-samples.md)  
-[CWnd Class](../../mfc/reference/cwnd-class.md)  
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)  
+[MFC Sample CMNCTRL1](../../visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
+[MFC Sample PROPDLG](../../visual-cpp-samples.md)<br/>
+[MFC Sample SNAPVW](../../visual-cpp-samples.md)<br/>
+[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)

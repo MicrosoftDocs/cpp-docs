@@ -12,16 +12,18 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Menu Sample List
-See the following sample programs that illustrate creating, editing, and updating menus:  
-  
- *MDI Sample: Enable and Disable Menu Items*  
-  
--   [SCRIBBLE](../visual-cpp-samples.md)  
-  
- *Dynamically Change Menus*  
-  
--   [DYNAMENU](../visual-cpp-samples.md)  
-  
-## See Also  
- [Menus](../mfc/menus-mfc.md)
+
+See the following sample programs that illustrate creating, editing, and updating menus:
+
+*MDI Sample: Enable and Disable Menu Items*
+
+- [SCRIBBLE](../visual-cpp-samples.md)
+
+*Dynamically Change Menus*
+
+- [DYNAMENU](../visual-cpp-samples.md)
+
+## See Also
+
+[Menus](../mfc/menus-mfc.md)
 

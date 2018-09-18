@@ -13,28 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # DHtmlUrlEventMapEntry Structure
-The `DHtmlUrlEventMapEntry` structure provides multi-URL event map support.  
-  
-## Syntax  
-  
-```  
-struct DHtmlUrlEventMapEntry  
-{  
-LPCTSTR szUrl;  
-const DHtmlEventMapEntry *pEventMap;  
-};  
-```  
-  
-#### Parameters  
- *szUrl*  
- The URL.  
-  
- *pEventMap*  
- The event map associated with the URL.  
-  
-## Requirements  
- **Header:** afxdhtml.h  
-  
-## See Also  
- [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
+
+The `DHtmlUrlEventMapEntry` structure provides multi-URL event map support.
+
+## Syntax
+
+```
+struct DHtmlUrlEventMapEntry
+{
+LPCTSTR szUrl;
+const DHtmlEventMapEntry *pEventMap;
+};
+```
+
+#### Parameters
+
+*szUrl*<br/>
+The URL.
+
+*pEventMap*<br/>
+The event map associated with the URL.
+
+## Requirements
+
+**Header:** afxdhtml.h
+
+## See Also
+
+[Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
 

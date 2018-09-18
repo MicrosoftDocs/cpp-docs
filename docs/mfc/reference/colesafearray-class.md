@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # COleSafeArray Class
+
 A class for working with arrays of arbitrary type and dimension.
 
 ## Syntax

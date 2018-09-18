@@ -12,8 +12,10 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # HTML Help: Context-Sensitive Help for Your Programs
+
 > [!IMPORTANT]
->  HTML Help is not supported in this version of MFC.  
-  
-## See Also  
- [User Interface Elements](../mfc/user-interface-elements-mfc.md)
+>  HTML Help is not supported in this version of MFC.
+
+## See Also
+
+[User Interface Elements](../mfc/user-interface-elements-mfc.md)

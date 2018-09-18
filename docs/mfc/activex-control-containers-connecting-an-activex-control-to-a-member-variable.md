@@ -12,27 +12,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # ActiveX Control Containers: Connecting an ActiveX Control to a Member Variable
-The easiest way to access an ActiveX control from within its control container application is to associate the ActiveX control with a member variable of the dialog class that will contain the control.  
-  
+
+The easiest way to access an ActiveX control from within its control container application is to associate the ActiveX control with a member variable of the dialog class that will contain the control.
+
 > [!NOTE]
->  This is not the only way to access an embedded control from within a container class, but for the purposes of this article it is sufficient.  
-  
-### Adding a member variable to the dialog class  
-  
-1.  From Class View, right-click the main dialog class to open the shortcut menu. For example, `CContainerDlg`.  
-  
-2.  From the shortcut menu, click **Add** and then **Add Variable**.  
-  
-3.  In the Add Member Variable Wizard, click **Control variable**.  
-  
-4.  In the **Control ID** list box, select the control ID of the embedded ActiveX control. For example, `IDC_CIRCCTRL1`.  
-  
-5.  In the **Variable Name** box, enter a name.  
-  
-     For example, *m_circctl*.  
-  
-6.  Click **Finish** to accept your choices and exit the Add Member Variable Wizard.  
-  
-## See Also  
- [ActiveX Control Containers](../mfc/activex-control-containers.md)
+>  This is not the only way to access an embedded control from within a container class, but for the purposes of this article it is sufficient.
+
+### Adding a member variable to the dialog class
+
+1. From Class View, right-click the main dialog class to open the shortcut menu. For example, `CContainerDlg`.
+
+1. From the shortcut menu, click **Add** and then **Add Variable**.
+
+1. In the Add Member Variable Wizard, click **Control variable**.
+
+1. In the **Control ID** list box, select the control ID of the embedded ActiveX control. For example, `IDC_CIRCCTRL1`.
+
+1. In the **Variable Name** box, enter a name.
+
+     For example, *m_circctl*.
+
+1. Click **Finish** to accept your choices and exit the Add Member Variable Wizard.
+
+## See Also
+
+[ActiveX Control Containers](../mfc/activex-control-containers.md)
 

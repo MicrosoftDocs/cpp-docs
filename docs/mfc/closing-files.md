@@ -12,14 +12,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Closing Files
-As usual in I/O operations, once you finish with a file, you must close it.  
-  
-#### To close a file  
-  
-1.  Use the **Close** member function. This function closes the file-system file and flushes buffers if necessary.  
-  
- If you allocated the [CFile](../mfc/reference/cfile-class.md) object on the frame (as in the example shown in [Opening Files](../mfc/opening-files.md)), the object will automatically be closed and then destroyed when it goes out of scope. Note that deleting the `CFile` object does not delete the physical file in the file system.  
-  
-## See Also  
- [Files](../mfc/files-in-mfc.md)
+
+As usual in I/O operations, once you finish with a file, you must close it.
+
+#### To close a file
+
+1. Use the **Close** member function. This function closes the file-system file and flushes buffers if necessary.
+
+If you allocated the [CFile](../mfc/reference/cfile-class.md) object on the frame (as in the example shown in [Opening Files](../mfc/opening-files.md)), the object will automatically be closed and then destroyed when it goes out of scope. Note that deleting the `CFile` object does not delete the physical file in the file system.
+
+## See Also
+
+[Files](../mfc/files-in-mfc.md)
 

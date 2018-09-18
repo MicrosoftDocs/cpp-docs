@@ -59,7 +59,7 @@ To complete this walkthrough, you must have Visual Studio.
 
 7. Save MFCAnimationWalkthrough.rc and close it.
 
-8. In **Solution Explorer**, double-click MainFrm.cpp to open it for modification. In the `CMainFrame::OnCreate` method, locate the section that has several calls to `lstBasicCommands.AddTail`. Just after that section, add the following code.  
+8. In **Solution Explorer**, double-click MainFrm.cpp to open it for modification. In the `CMainFrame::OnCreate` method, locate the section that has several calls to `lstBasicCommands.AddTail`. Just after that section, add the following code.
 
     ```cpp
     lstBasicCommands.AddTail(ID_ANIMATION_STARTFORWARD);
@@ -367,4 +367,4 @@ To complete this walkthrough, you must have Visual Studio.
 
 ## See also
 
-[Walkthroughs](../mfc/walkthroughs-mfc.md)  
+[Walkthroughs](../mfc/walkthroughs-mfc.md)

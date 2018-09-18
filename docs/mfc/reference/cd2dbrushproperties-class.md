@@ -13,62 +13,69 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CD2DBrushProperties Class
-A wrapper for `D2D1_BRUSH_PROPERTIES`.  
-  
-## Syntax  
-  
-```  
-class CD2DBrushProperties : public D2D1_BRUSH_PROPERTIES;  
-```  
-  
-## Members  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[CD2DBrushProperties::CD2DBrushProperties](#cd2dbrushproperties)|Overloaded. Creates a `CD2D_BRUSH_PROPERTIES` structure|  
-  
-### Protected Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[CD2DBrushProperties::CommonInit](#commoninit)|Initializes the object|  
-  
-## Inheritance Hierarchy  
- `D2D1_BRUSH_PROPERTIES`  
-  
- `CD2DBrushProperties`  
-  
-## Requirements  
- **Header:** afxrendertarget.h  
-  
-##  <a name="cd2dbrushproperties"></a>  CD2DBrushProperties::CD2DBrushProperties  
- Creates a CD2D_BRUSH_PROPERTIES structure  
-  
-```  
-CD2DBrushProperties();  
+
+A wrapper for `D2D1_BRUSH_PROPERTIES`.
+
+## Syntax
+
+```
+class CD2DBrushProperties : public D2D1_BRUSH_PROPERTIES;
+```
+
+## Members
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[CD2DBrushProperties::CD2DBrushProperties](#cd2dbrushproperties)|Overloaded. Creates a `CD2D_BRUSH_PROPERTIES` structure|
+
+### Protected Methods
+
+|Name|Description|
+|----------|-----------------|
+|[CD2DBrushProperties::CommonInit](#commoninit)|Initializes the object|
+
+## Inheritance Hierarchy
+
+`D2D1_BRUSH_PROPERTIES`
+
+`CD2DBrushProperties`
+
+## Requirements
+
+**Header:** afxrendertarget.h
+
+##  <a name="cd2dbrushproperties"></a>  CD2DBrushProperties::CD2DBrushProperties
+
+Creates a CD2D_BRUSH_PROPERTIES structure
+
+```
+CD2DBrushProperties();
 CD2DBrushProperties(FLOAT _opacity);
 
- 
+
 CD2DBrushProperties(
-    D2D1_MATRIX_3X2_F _transform,  
+    D2D1_MATRIX_3X2_F _transform,
     FLOAT _opacity = 1.);
-```  
-  
-### Parameters  
- *_opacity*  
- The base opacity of the brush. The default value is 1.0.  
-  
- *_transform*  
- The transformation to apply to the brush  
-  
-##  <a name="commoninit"></a>  CD2DBrushProperties::CommonInit  
- Initializes the object  
-  
-```  
+```
+
+### Parameters
+
+*_opacity*<br/>
+The base opacity of the brush. The default value is 1.0.
+
+*_transform*<br/>
+The transformation to apply to the brush
+
+##  <a name="commoninit"></a>  CD2DBrushProperties::CommonInit
+
+Initializes the object
+
+```
 void CommonInit();
-```  
-  
-## See Also  
- [Classes](../../mfc/reference/mfc-classes.md)
+```
+
+## See Also
+
+[Classes](../../mfc/reference/mfc-classes.md)
