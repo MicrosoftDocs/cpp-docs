@@ -19,7 +19,7 @@ This example creates a custom Media Foundation transform that applies a grayscal
 > [!NOTE]
 > Instead of C#, you can also use JavaScript, Visual Basic, or C++ to consume the custom transform component.
 
-In most cases, you can use C++/CX to create Windows Runtime). However, sometimes you have to use the WRL. For example, when you create a media extension for Microsoft Media Foundation, you must create a component that implements both COM and Windows Runtime interfaces. Because C++/CX can only create Windows Runtime objects, to create a media extension you must use the WRL because it enables the implementation of both COM and Windows Runtime interfaces.
+In most cases, you can use C++/CX to create Windows Runtime. However, sometimes you have to use the WRL. For example, when you create a media extension for Microsoft Media Foundation, you must create a component that implements both COM and Windows Runtime interfaces. Because C++/CX can only create Windows Runtime objects, to create a media extension you must use the WRL because it enables the implementation of both COM and Windows Runtime interfaces.
 
 > [!NOTE]
 > Although this code example is long, it demonstrates the minimum that's required to create a useful Media Foundation transform. You can use it as a starting point for your own custom transform. This example is adapted from the [Media extensions sample](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096), which uses media extensions to apply effects to video, decode video, and create scheme handlers that produce media streams.
@@ -56,11 +56,11 @@ In most cases, you can use C++/CX to create Windows Runtime). However, sometimes
 
 1. Add a **Midl File (.idl)** file to the project. Name the file, for example, *GrayscaleTransform.idl*.
 
-1. Add this code to GrayscaleTransform.idl.
+1. Add this code to GrayscaleTransform.idl:
 
    [!code-cpp[wrl-media-capture#1](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_1.idl)]
 
-1. Use the following code to replace the contents of `pch.h`.
+1. Use the following code to replace the contents of `pch.h`:
 
    [!code-cpp[wrl-media-capture#2](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_2.h)]
 
@@ -70,7 +70,7 @@ In most cases, you can use C++/CX to create Windows Runtime). However, sometimes
 
 1. `GrayscaleTransform.h` is not used in this example. You can remove it from the project if you want to.
 
-1. Use the following code to replace the contents of `GrayscaleTransform.cpp`.
+1. Use the following code to replace the contents of `GrayscaleTransform.cpp`:
 
    [!code-cpp[wrl-media-capture#4](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_4.cpp)]
 
@@ -83,7 +83,7 @@ In most cases, you can use C++/CX to create Windows Runtime). However, sometimes
        DllGetClassObject                   PRIVATE
    ```
 
-1. Use the following code to replace the contents of `dllmain.cpp`.
+1. Use the following code to replace the contents of `dllmain.cpp`:
 
    [!code-cpp[wrl-media-capture#6](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_6.cpp)]
 
@@ -107,7 +107,7 @@ In most cases, you can use C++/CX to create Windows Runtime). However, sometimes
 
    [!code-xml[wrl-media-capture#7](../windows/codesnippet/Xaml/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_7.xaml)]
 
-1. Use the following code to replace the contents of `MainPage.xaml.cs`.
+1. Use the following code to replace the contents of `MainPage.xaml.cs`:
 
    [!code-cs[wrl-media-capture#8](../windows/codesnippet/CSharp/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_8.cs)]
 
