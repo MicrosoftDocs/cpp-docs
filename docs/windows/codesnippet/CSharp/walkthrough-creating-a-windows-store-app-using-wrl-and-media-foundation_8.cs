@@ -1,6 +1,7 @@
 using System;
 using Windows.Devices.Enumeration;
 using Windows.Media.Capture;
+using Windows.Media.Effects;
 using Windows.Media.MediaProperties;
 using Windows.Storage.Streams;
 using Windows.UI;
@@ -110,7 +111,8 @@ namespace MediaCapture
             try
             {
                 AddRemoveEffect.IsEnabled = false;
-                await mediaCapture.AddEffectAsync(MediaStreamType.Photo, "GrayscaleTransform.GrayscaleEffect", null);
+                VideoEffectDefinition def = new VideoEffectDefinition("GrayscaleTransform.GrayscaleEffect");
+                await mediaCapture.AddVideoEffectAsync(def, MediaStreamType.Photo);
                 ShowStatusMessage("Add effect to video preview successful");
                 AddRemoveEffect.IsEnabled = true;
             }
