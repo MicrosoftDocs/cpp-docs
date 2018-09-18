@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Creating a Standard C++ Program (C++) | Microsoft Docs"
 ms.custom: "get-started-article"
-ms.date: "11/04/2016"
+ms.date: "09/18/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vcfirstapp", "vccreatefirst"]
@@ -31,41 +31,42 @@ To complete this walkthrough, you must understand the fundamentals of the C++ la
 
 1. Create a project by pointing to **New** on the **File** menu, and then clicking **Project**.
 
-2. In the **Visual C++** project types pane, click **Windows Desktop**, and then click **Windows Console Application**.
+1. In the **Visual C++** project types pane, click **Windows Desktop**, and then click **Windows Console Application**.
 
-3. Type a name for the project.
+1. Type a name for the project.
 
    By default, the solution that contains the project has the same name as the project, but you can type a different name. You can also type a different location for the project.
 
    Click **OK** to create the project.
 
-4. If **Solution Explorer** is not displayed, on the **View** menu, click **Solution Explorer**.
+1. If **Solution Explorer** is not displayed, on the **View** menu, click **Solution Explorer**.
 
-5. Add a new source file to the project, as follows.
+1. Add a new source file to the project, as follows.
 
    1. In **Solution Explorer**, right-click the **Source Files** folder, point to **Add**, and then click **New Item**.
 
-   2. In the **Code** node, click **C++ File (.cpp)**, type a name for the file, and then click **Add**.
+   1. In the **Code** node, click **C++ File (.cpp)**, type a name for the file, and then click **Add**.
 
    The .cpp file appears in the **Source Files** folder in **Solution Explorer**, and the file is opened in the Visual Studio editor.
 
-6. In the file in the editor, type a valid C++ program that uses the C++ Standard Library, or copy one of the sample programs and paste it in the file.
+1. In the file in the editor, type a valid C++ program that uses the C++ Standard Library, or copy one of the sample programs and paste it in the file.
 
-7. Save the file.
+1. Save the file.
 
-8. On the **Build** menu, click **Build Solution**.
+1. On the **Build** menu, click **Build Solution**.
 
    The **Output** window displays information about the compilation progress, for example, the location of the build log and a message that indicates the build status.
 
-9. On the **Debug** menu, click **Start without Debugging**.
+1. On the **Debug** menu, click **Start without Debugging**.
 
    If you used the sample program, a command window is displayed and shows whether certain integers are found in the set.
 
 ## Next Steps
 
-**Previous:** [Console Applications in Visual C++](../windows/console-applications-in-visual-cpp.md). **Next:**[Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md).
+**Previous:** [Console Applications in Visual C++](../windows/console-applications-in-visual-cpp.md)<br/>
+**Next:** [Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
 
 ## See Also
 
-[C++ Language Reference](../cpp/cpp-language-reference.md)  
-[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)
+[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
+[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)<br/>
