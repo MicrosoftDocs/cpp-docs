@@ -11,30 +11,31 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Definitions and Declarations (C++)
+
 **Microsoft Specific**
 
- The DLL interface refers to all items (functions and data) that are known to be exported by some program in the system; that is, all items that are declared as **dllimport** or **dllexport**. All declarations included in the DLL interface must specify either the **dllimport** or **dllexport** attribute. However, the definition must specify only the **dllexport** attribute. For example, the following function definition generates a compiler error:
+The DLL interface refers to all items (functions and data) that are known to be exported by some program in the system; that is, all items that are declared as **dllimport** or **dllexport**. All declarations included in the DLL interface must specify either the **dllimport** or **dllexport** attribute. However, the definition must specify only the **dllexport** attribute. For example, the following function definition generates a compiler error:
 
 ```
 __declspec( dllimport ) int func() {   // Error; dllimport
                                        // prohibited on definition.
-   return 1;  
+   return 1;
 }
 ```
 
- This code also generates an error:
+This code also generates an error:
 
 ```
 __declspec( dllimport ) int i = 10;  // Error; this is a definition.
 ```
 
- However, this is correct syntax:
+However, this is correct syntax:
 
 ```
 __declspec( dllexport ) int i = 10;  // Okay--export definition
 ```
 
- The use of **dllexport** implies a definition, while **dllimport** implies a declaration. You must use the **extern** keyword with **dllexport** to force a declaration; otherwise, a definition is implied. Thus, the following examples are correct:
+The use of **dllexport** implies a definition, while **dllimport** implies a declaration. You must use the **extern** keyword with **dllexport** to force a declaration; otherwise, a definition is implied. Thus, the following examples are correct:
 
 ```
 #define DllImport   __declspec( dllimport )
@@ -44,7 +45,7 @@ extern DllExport int k; // These are both correct and imply a
 DllImport int j;        // declaration.
 ```
 
- The following examples clarify the preceding:
+The following examples clarify the preceding:
 
 ```
 static __declspec( dllimport ) int l; // Error; not declared extern.
@@ -68,4 +69,5 @@ void func() {
 **END Microsoft Specific**
 
 ## See also
- [dllexport, dllimport](../cpp/dllexport-dllimport.md)
+
+[dllexport, dllimport](../cpp/dllexport-dllimport.md)

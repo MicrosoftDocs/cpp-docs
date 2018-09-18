@@ -121,7 +121,7 @@ Optional parts of a function declaration are:
 
 The following figure shows the parts of a function definition. The shaded area is the function body.
 
- ![Parts of a function definition](../cpp/media/vc38ru1.gif "vc38RU1")
+![Parts of a function definition](../cpp/media/vc38ru1.gif "vc38RU1")
 Parts of a Function Definition
 
 ## Function definitions
@@ -192,7 +192,7 @@ When a function modifies an argument that is passed by reference, it modifies th
 void DoSomething(const std::string& input){...}
 ```
 
- **C++ 11:**  To explicitly handle arguments that are passed by rvalue-reference or lvalue-reference, use a double-ampersand on the parameter to indicate a universal reference:
+**C++ 11:**  To explicitly handle arguments that are passed by rvalue-reference or lvalue-reference, use a double-ampersand on the parameter to indicate a universal reference:
 
 ```cpp
 void DoSomething(const std::string&& input){...}
@@ -302,22 +302,22 @@ There are various ways to return more than one value from a function:
     ```cpp
     #include <string>
     #include <iostream>
-    
+
     using namespace std;
-    
+
     struct S
     {
         string name;
         int num;
     };
-    
+
     S g()
     {
         string t{ "hello" };
         int u{ 42 };
         return { t, u };
     }
-    
+
     int main()
     {
         S s = g();
@@ -325,16 +325,16 @@ There are various ways to return more than one value from a function:
         return 0;
     }
     ```
-    
+
 1. Return a std::tuple or std::pair object:
 
     ```cpp
     #include <tuple>
     #include <string>
     #include <iostream>
-    
+
     using namespace std;
-        
+
     tuple<int, string, double> f()
     {
         int i{ 108 };
@@ -342,20 +342,20 @@ There are various ways to return more than one value from a function:
         double d{ .01 };
         return { i,s,d };
     }
-    
+
     int main()
     {
         auto t = f();
         cout << get<0>(t) << " " << get<1>(t) << " " << get<2>(t) << endl;
-     
+
         // --or--
-    
+
         int myval;
         string myname;
         double mydecimal;
         tie(myval, myname, mydecimal) = f();
         cout << myval << " " << myname << " " << mydecimal << endl;
-    
+
         return 0;
     }
     ```
@@ -366,9 +366,9 @@ There are various ways to return more than one value from a function:
     #include <tuple>
     #include <string>
     #include <iostream>
-    
+
     using namespace std;
-    
+
     tuple<int, string, double> f()
     {
         int i{ 108 };
@@ -381,25 +381,25 @@ There are various ways to return more than one value from a function:
         string name;
         int num;
     };
-    
+
     S g()
     {
         string t{ "hello" };
         int u{ 42 };
         return { t, u };
     }
-    
+
     int main()
     {
         auto[x, y, z] = f(); // init from tuple
         cout << x << " " << y << " " << z << endl;
-    
+
         auto[a, b] = g(); // init from POD struct
         cout << a << " " << b << endl;
         return 0;
     }
     ```
-    
+
 1. In addition to using the return value itself, you can "return" values by defining any number of parameters to use pass-by-reference so that the function can modify or initialize the values of objects that the caller provides. For more information, see [Reference-Type Function Arguments](reference-type-function-arguments.md).
 
 ## Function pointers
@@ -422,9 +422,10 @@ int (*myFunction(char* s))(int);
 The preceding declaration is equivalent to the declaration using typedef above.
 
 ## See also
- [Function Overloading](../cpp/function-overloading.md)  
- [Functions with Variable Argument Lists](../cpp/functions-with-variable-argument-lists-cpp.md)  
- [Explicitly Defaulted and Deleted Functions](../cpp/explicitly-defaulted-and-deleted-functions.md)  
- [Argument-Dependent Name (Koenig) Lookup on Functions](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)  
- [Default Arguments](../cpp/default-arguments.md)  
- [Inline Functions](../cpp/inline-functions-cpp.md)
+
+[Function Overloading](../cpp/function-overloading.md)<br/>
+[Functions with Variable Argument Lists](../cpp/functions-with-variable-argument-lists-cpp.md)<br/>
+[Explicitly Defaulted and Deleted Functions](../cpp/explicitly-defaulted-and-deleted-functions.md)<br/>
+[Argument-Dependent Name (Koenig) Lookup on Functions](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)<br/>
+[Default Arguments](../cpp/default-arguments.md)<br/>
+[Inline Functions](../cpp/inline-functions-cpp.md)

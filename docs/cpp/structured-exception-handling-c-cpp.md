@@ -139,8 +139,8 @@ For more information, see [/EH (Exception Handling Model)](../build/reference/eh
 
 ## See also
 
-[Exception Handling](../cpp/exception-handling-in-visual-cpp.md)  
-[Keywords](../cpp/keywords-cpp.md)  
-[\<exception>](../standard-library/exception.md)  
-[Errors and Exception Handling](../cpp/errors-and-exception-handling-modern-cpp.md)  
-[Structured Exception Handling (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms680657.aspx)  
+[Exception Handling](../cpp/exception-handling-in-visual-cpp.md)<br/>
+[Keywords](../cpp/keywords-cpp.md)<br/>
+[\<exception>](../standard-library/exception.md)<br/>
+[Errors and Exception Handling](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[Structured Exception Handling (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms680657.aspx)

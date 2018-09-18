@@ -22,13 +22,13 @@ For modern C++ programming, we recommend that you use the algorithms in the [C++
 
 To write a comparator, use strict **<** and use *named lambdas* when you can.
 
-```cpp  
+```cpp
 auto comp = [](const widget& w1, const widget& w2)
      { return w1.weight() < w2.weight(); }
 
 sort( v.begin(), v.end(), comp );
 
-auto i = lower_bound( v.begin(), v.end(), comp );  
+auto i = lower_bound( v.begin(), v.end(), comp );
 ```
 
 ## Loops
@@ -37,26 +37,26 @@ When possible, use range-based **for** loops or algorithm calls, or both, instea
 
 Instead of old C++ like this:
 
-```cpp  
+```cpp
 for ( auto i = strings.begin(); i != strings.end(); ++i ) {
-    /* ... */  
+    /* ... */
 }
 
 auto i = v.begin();
 
 for ( ; i != v.end(); ++i ) {
-    if (*i > x && *i < y) break;  
-}  
+    if (*i > x && *i < y) break;
+}
 ```
 
 Use modern C++ like this:
 
-```cpp  
+```cpp
 for_each( begin(strings), end(strings), [](string& s) {
-  // ...  
+  // ...
 } );
 
-auto i = find_if( begin(v), end(v),  [=](int i) { return i > x && i < y; } );  
+auto i = find_if( begin(v), end(v),  [=](int i) { return i > x && i < y; } );
 ```
 
 ### Range-based for loops

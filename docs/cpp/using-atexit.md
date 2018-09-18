@@ -13,7 +13,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Using atexit
-With the [atexit](../c-runtime-library/reference/atexit.md) function, you can specify an exit-processing function that executes prior to program termination. No global static objects initialized prior to the call to **atexit** are destroyed prior to execution of the exit-processing function.  
-  
-## See also  
- [Additional Termination Considerations](../cpp/additional-termination-considerations.md)
+
+With the [atexit](../c-runtime-library/reference/atexit.md) function, you can specify an exit-processing function that executes prior to program termination. No global static objects initialized prior to the call to **atexit** are destroyed prior to execution of the exit-processing function.
+
+## See also
+
+[Additional Termination Considerations](../cpp/additional-termination-considerations.md)

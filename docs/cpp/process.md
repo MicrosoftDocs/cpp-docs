@@ -25,5 +25,6 @@ If you want each application domain to have its own copy of a global variable, u
 See [Application Domains and Visual C++](../dotnet/application-domains-and-visual-cpp.md) for more information.
 
 ## See also
- [__declspec](../cpp/declspec.md)  
- [Keywords](../cpp/keywords-cpp.md)
+
+[__declspec](../cpp/declspec.md)<br/>
+[Keywords](../cpp/keywords-cpp.md)

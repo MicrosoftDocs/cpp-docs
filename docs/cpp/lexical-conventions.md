@@ -12,6 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Lexical Conventions
+
 This section introduces the fundamental elements of a C++ program. You use these elements, called "lexical elements" or "tokens" to construct statements, definitions, declarations, and so on, which are used to construct complete programs. The following lexical elements are discussed in this section:
 
 - [Overview of File Translation](overview-of-file-translation.md)
@@ -34,5 +35,6 @@ This section introduces the fundamental elements of a C++ program. You use these
 - [User-Defined Literals](../cpp/user-defined-literals-cpp.md)
 
 ## See also
- [C++ Language Reference](../cpp/cpp-language-reference.md)  
- [Program and linkage](program-and-linkage-cpp.md)
+
+[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
+[Program and linkage](program-and-linkage-cpp.md)

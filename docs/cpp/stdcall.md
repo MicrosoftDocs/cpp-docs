@@ -43,7 +43,7 @@ On ARM and x64 processors, **__stdcall** is accepted and ignored by the compiler
 For non-static class functions, if the function is defined out-of-line, the calling convention modifier does not have to be specified on the out-of-line definition. That is, for class non-static member methods, the calling convention specified during declaration is assumed at the point of definition. Given this class definition,
 
 ```cpp
-struct CMyClass {  
+struct CMyClass {
    void __stdcall mymethod();
 };
 ```
@@ -51,13 +51,13 @@ struct CMyClass {
 this
 
 ```cpp
-void CMyClass::mymethod() { return; }  
+void CMyClass::mymethod() { return; }
 ```
 
 is equivalent to this
 
 ```cpp
-void __stdcall CMyClass::mymethod() { return; }  
+void __stdcall CMyClass::mymethod() { return; }
 ```
 
 ## Example
@@ -73,5 +73,5 @@ typedef BOOL (__stdcall *funcname_ptr)(void * arg1, const char * arg2, DWORD fla
 
 ## See also
 
-[Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md)   
+[Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)
