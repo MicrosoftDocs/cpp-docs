@@ -112,8 +112,8 @@ size_t wait(unsigned int _Timeout = COOPERATIVE_TIMEOUT_INFINITE);
 ```  
   
 ### Parameters  
- `_Timeout`  
- Indicates the number of milliseconds before the wait times out. The value `COOPERATIVE_TIMEOUT_INFINITE` signifies that there is no timeout.  
+*_Timeout*<br/>
+Indicates the number of milliseconds before the wait times out. The value `COOPERATIVE_TIMEOUT_INFINITE` signifies that there is no timeout.  
   
 ### Return Value  
  If the wait was satisfied, the value `0` is returned; otherwise, the value `COOPERATIVE_WAIT_TIMEOUT` to indicate that the wait timed out without the event becoming signaled.  
@@ -134,17 +134,17 @@ static size_t __cdecl wait_for_multiple(
 ```  
   
 ### Parameters  
- `_PPEvents`  
- An array of events to wait on. The number of events within the array is indicated by the `count` parameter.  
+*_PPEvents*<br/>
+An array of events to wait on. The number of events within the array is indicated by the `count` parameter.  
   
- `count`  
- The count of events within the array supplied in the `_PPEvents` parameter.  
+*count*<br/>
+The count of events within the array supplied in the `_PPEvents` parameter.  
   
- `_FWaitAll`  
- If set to the value `true`, the parameter specifies that all events within the array supplied in the `_PPEvents` parameter must become signaled in order to satisfy the wait. If set to the value `false`, it specifies that any event within the array supplied in the `_PPEvents` parameter becoming signaled will satisfy the wait.  
+*_FWaitAll*<br/>
+If set to the value `true`, the parameter specifies that all events within the array supplied in the `_PPEvents` parameter must become signaled in order to satisfy the wait. If set to the value `false`, it specifies that any event within the array supplied in the `_PPEvents` parameter becoming signaled will satisfy the wait.  
   
- `_Timeout`  
- Indicates the number of milliseconds before the wait times out. The value `COOPERATIVE_TIMEOUT_INFINITE` signifies that there is no timeout.  
+*_Timeout*<br/>
+Indicates the number of milliseconds before the wait times out. The value `COOPERATIVE_TIMEOUT_INFINITE` signifies that there is no timeout.  
   
 ### Return Value  
  If the wait was satisfied, the index within the array supplied in the `_PPEvents` parameter which satisfied the wait condition; otherwise, the value `COOPERATIVE_WAIT_TIMEOUT` to indicate that the wait timed out without the condition being satisfied.  

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0001
-exception executing user function  
-  
- The code being executed caused a general protection fault. This error is identical to CAN0001.
+
+exception executing user function
+
+The code being executed caused a general protection fault. This error is identical to CAN0001.

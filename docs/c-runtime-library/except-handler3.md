@@ -16,38 +16,42 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _except_handler3
-Internal CRT function. Used by a framework to find the appropriate exception handler to process the current exception.  
-  
-## Syntax  
-  
-```  
-int _except_handler3(  
-   PEXCEPTION_RECORD exception_record,  
-   PEXCEPTION_REGISTRATION registration,  
-   PCONTEXT context,  
-   PEXCEPTION_REGISTRATION dispatcher  
-);  
-```  
-  
+
+Internal CRT function. Used by a framework to find the appropriate exception handler to process the current exception.
+
+## Syntax
+
+```
+int _except_handler3(
+   PEXCEPTION_RECORD exception_record,
+   PEXCEPTION_REGISTRATION registration,
+   PCONTEXT context,
+   PEXCEPTION_REGISTRATION dispatcher
+);
+```
+
 #### Parameters
 
 *exception_record*<br/>
-[in] Information about the specific exception.  
-  
+[in] Information about the specific exception.
+
 *registration*<br/>
-[in] The record that indicates which scope table should be used to find the exception handler.  
-  
+[in] The record that indicates which scope table should be used to find the exception handler.
+
 *context*<br/>
-[in] Reserved.  
-  
+[in] Reserved.
+
 *dispatcher*<br/>
-[in] Reserved.  
-  
-## Return Value  
- If an exception should be dismissed, returns `DISPOSITION_DISMISS`. If the exception should be passed up a level to the encapsulating exception handlers, returns `DISPOSITION_CONTINUE_SEARCH`.  
-  
-## Remarks  
- If this method finds an appropriate exception handler, it passes the exception to the handler. In this situation, this method does not return to the code that called it and the return value is irrelevant.  
-  
-## See Also  
- [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+[in] Reserved.
+
+## Return Value
+
+If an exception should be dismissed, returns `DISPOSITION_DISMISS`. If the exception should be passed up a level to the encapsulating exception handlers, returns `DISPOSITION_CONTINUE_SEARCH`.
+
+## Remarks
+
+If this method finds an appropriate exception handler, it passes the exception to the handler. In this situation, this method does not return to the code that called it and the return value is irrelevant.
+
+## See Also
+
+[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)

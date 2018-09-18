@@ -13,25 +13,26 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2034
-'identifier' : type of bit field too small for number of bits  
-  
- The number of bits in the bit-field declaration exceeds the size of the base type.  
-  
- The following sample generates C2034:  
-  
-```  
-// C2034.cpp  
-struct A {  
-   char test : 9;   // C2034, char has 8 bits  
-};  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2034b.cpp  
-// compile with: /c  
-struct A {  
-   char test : 8;  
-};  
+
+'identifier' : type of bit field too small for number of bits
+
+The number of bits in the bit-field declaration exceeds the size of the base type.
+
+The following sample generates C2034:
+
+```
+// C2034.cpp
+struct A {
+   char test : 9;   // C2034, char has 8 bits
+};
+```
+
+Possible resolution:
+
+```
+// C2034b.cpp
+// compile with: /c
+struct A {
+   char test : 8;
+};
 ```

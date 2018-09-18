@@ -23,8 +23,8 @@ ref class auto_handle;
 ```  
   
 #### Parameters  
- `_element_type`  
- The managed type to be embedded.  
+*_element_type*<br/>
+The managed type to be embedded.  
   
 ## Requirements  
  **Header file** \<msclr\auto_handle.h>  

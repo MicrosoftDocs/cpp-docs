@@ -21,11 +21,10 @@ Specifies that each thread should have its own instance of a variable.
 private(var)  
 ```  
   
-## Remarks  
- where,  
+### Parameters
   
- `var`  
- The variable to have instances in each thread.  
+*var*<br/>
+The variable to have instances in each thread.  
   
 ## Remarks  
  **private** applies to the following directives:  
@@ -42,7 +41,7 @@ private(var)
   
 ## Example  
   
-```  
+```C  
 // openmp_private.c  
 // compile with: /openmp  
 #include <windows.h>  

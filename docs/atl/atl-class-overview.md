@@ -40,10 +40,10 @@ For additional classes that can be used in ATL projects, see [Shared Classes](..
 
 ## See Also
 
-[Classes and structs](../atl/reference/atl-classes.md)   
-[ATL COM Desktop Components](../atl/atl-com-desktop-components.md)  
-[Functions](../atl/reference/atl-functions.md)   
-[Global Variables](../atl/reference/atl-global-variables.md)   
-[Macros](../atl/reference/atl-macros.md)   
+[Classes and structs](../atl/reference/atl-classes.md)<br/>
+[ATL COM Desktop Components](../atl/atl-com-desktop-components.md)<br/>
+[Functions](../atl/reference/atl-functions.md)<br/>
+[Global Variables](../atl/reference/atl-global-variables.md)<br/>
+[Macros](../atl/reference/atl-macros.md)<br/>
 [Typedefs](../atl/reference/atl-typedefs.md)
 

@@ -19,13 +19,13 @@ This class is a helper for the [CSimpleArray](../../atl/reference/csimplearray-c
 ## Syntax
 
 ```
-template <class T>  
+template <class T>
 class CSimpleArrayEqualHelperFalse
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 A derived class.
 
 ## Members
@@ -62,5 +62,5 @@ This method always returns false, and will call `ATLASSERT` with an argument of 
 
 ## See Also
 
-[CSimpleArrayEqualHelper Class](../../atl/reference/csimplearrayequalhelper-class.md)   
+[CSimpleArrayEqualHelper Class](../../atl/reference/csimplearrayequalhelper-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

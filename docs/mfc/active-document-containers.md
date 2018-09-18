@@ -55,14 +55,13 @@ An active document container, such as Microsoft Office Binder or Internet Explor
   
 ##  <a name="document_site_objects"></a> Document Site Objects  
  In the active document containment architecture, a document site is the same as a client site object in OLE Documents with the addition of the `IOleDocument` interface:  
-  
- `interface IOleDocumentSite : IUnknown`  
-  
- `{`  
-  
- `HRESULT ActivateMe(IOleDocumentView *pViewToActivate);`  
-  
- `}`  
+
+```cpp
+interface IOleDocumentSite : IUnknown
+{
+    HRESULT ActivateMe(IOleDocumentView *pViewToActivate);
+}
+```  
   
  The document site is conceptually the container for one or more "view site" objects. Each view site object is associated with individual view objects of the document managed by the document site. If the container only supports a single view per document site, then it can implement the document site and the view site with a single concrete class.  
   

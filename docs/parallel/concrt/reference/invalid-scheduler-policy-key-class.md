@@ -50,8 +50,8 @@ invalid_scheduler_policy_key() throw();
 ```  
   
 ### Parameters  
- `_Message`  
- A descriptive message of the error.  
+*_Message*<br/>
+A descriptive message of the error.  
   
 ## See Also  
  [concurrency Namespace](concurrency-namespace.md)   

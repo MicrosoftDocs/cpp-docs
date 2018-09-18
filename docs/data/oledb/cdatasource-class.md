@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataSource Class
+
 Corresponds to an OLE DB data source object, which represents a connection through a provider to a data source.  
   
 ## Syntax
@@ -22,7 +23,8 @@ class CDataSource
 ```  
 
 ## Requirements  
- **Header:** atldbcli.h 
+
+**Header:** atldbcli.h 
   
 ## Members  
   
@@ -41,11 +43,13 @@ class CDataSource
 |[OpenWithServiceComponents](#openwithservicecomponents)|Opens a data source object using the Data Link dialog box.|  
   
 ## Remarks  
- One or more database sessions can be created for a single connection. These sessions are represented by `CSession`. You must call [CDataSource::Open](../../data/oledb/cdatasource-open.md) to open the connection before creating a session with `CSession::Open`.  
+
+One or more database sessions can be created for a single connection. These sessions are represented by `CSession`. You must call [CDataSource::Open](../../data/oledb/cdatasource-open.md) to open the connection before creating a session with `CSession::Open`.  
   
- For an example of how to use `CDataSource`, see the [CatDB](../../visual-cpp-samples.md) sample.  
+For an example of how to use `CDataSource`, see the [CatDB](../../visual-cpp-samples.md) sample.  
 
 ## <a name="close"></a> CDataSource::Close
+
 Closes the connection by releasing the `m_spInit` pointer.  
   
 ### Syntax  
@@ -55,6 +59,7 @@ void Close() throw();
 ``` 
 
 ## <a name="getinitializationstring"></a> CDataSource::GetInitializationString
+
 Retrieves the initialization string of a data source that is currently open.  
   
 ### Syntax  
@@ -65,19 +70,23 @@ HRESULT GetInitializationString(BSTR* pInitializationString, 
 ```  
   
 #### Parameters  
- *pInitializationString*  
- [out] A pointer to the initialization string.  
+
+*pInitializationString*<br/>
+[out] A pointer to the initialization string.  
   
- *bIncludePassword*  
- [in] **true** if string includes a password; otherwise **false**.  
+*bIncludePassword*<br/>
+[in] **true** if string includes a password; otherwise **false**.  
   
 ### Return Value  
- A standard HRESULT.  
+
+A standard HRESULT.  
   
 ### Remarks  
- The resulting initialization string can be used to later reopen this data source connection. 
+
+The resulting initialization string can be used to later reopen this data source connection. 
  
 ## <a name="getproperties"></a> CDataSource::GetProperties
+
 Returns the property information requested for the connected data source object.  
   
 ### Syntax  
@@ -90,15 +99,19 @@ HRESULT GetProperties(ULONG ulPropIDSets, 
 ```  
   
 #### Parameters  
- See [IDBProperties::GetProperties](/previous-versions/windows/desktop/ms714344\(v=vs.85\)) in the *OLE DB Programmer's Reference* in the Windows SDK.  
+
+See [IDBProperties::GetProperties](/previous-versions/windows/desktop/ms714344\(v=vs.85\)) in the *OLE DB Programmer's Reference* in the Windows SDK.  
   
 ### Return Value  
- A standard HRESULT.  
+
+A standard HRESULT.  
   
 ### Remarks  
- To get a single property, use [GetProperty](../../data/oledb/cdatasource-getproperty.md).
+
+To get a single property, use [GetProperty](../../data/oledb/cdatasource-getproperty.md).
 
 ## <a name="getproperty"></a> CDataSource::GetProperty
+
 Returns the value of a specified property for the connected data source object.  
   
 ### Syntax  
@@ -110,22 +123,26 @@ HRESULT GetProperty(const GUID& guid, 
 ```  
   
 #### Parameters  
- *guid*  
- [in] A GUID identifying the property set for which to return the property.  
+
+*guid*<br/>
+[in] A GUID identifying the property set for which to return the property.  
   
- *propid*  
- [in] Property ID for the property to return.  
+*propid*<br/>
+[in] Property ID for the property to return.  
   
- *pVariant*  
- [out] A pointer to the variant where `GetProperty` returns the value of the property.  
+*pVariant*<br/>
+[out] A pointer to the variant where `GetProperty` returns the value of the property.  
   
 ### Return Value  
- A standard HRESULT.  
+
+A standard HRESULT.  
   
 ### Remarks  
- To get multiple properties, use [GetProperties](../../data/oledb/cdatasource-getproperties.md).
+
+To get multiple properties, use [GetProperties](../../data/oledb/cdatasource-getproperties.md).
 
 ## <a name="open"></a> CDataSource::Open
+
 Opens a connection to a data source using a `CLSID`, `ProgID`, or `CEnumerator` moniker or prompts the user with a locator dialog box.  
   
 ### Syntax  
@@ -171,53 +188,58 @@ HRESULT Open(LPCSTR szProgID, 
 ```  
   
 #### Parameters  
- *clsid*  
- [in] The `CLSID` of the data provider.  
+
+*clsid*<br/>
+[in] The `CLSID` of the data provider.  
   
- *pPropSet*  
- [in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) in the *OLE DB Programmer's Reference* in the Windows SDK.  
+*pPropSet*<br/>
+[in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) in the *OLE DB Programmer's Reference* in the Windows SDK.  
   
- *nPropertySets*  
- [in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures passed in the *pPropSet* argument.  
+*nPropertySets*<br/>
+[in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures passed in the *pPropSet* argument.  
   
- *pName*  
- [in] The name of the database to which to connect.  
+*pName*<br/>
+[in] The name of the database to which to connect.  
   
- *pUserName*  
- [in] The name of the user.  
+*pUserName*<br/>
+[in] The name of the user.  
   
- *pPassword*  
- [in] The user's password.  
+*pPassword*<br/>
+[in] The user's password.  
   
- *nInitMode*  
- [in] Database initialization mode. See [Initialization Properties](/previous-versions/windows/desktop/ms723127\(v=vs.85\))in the *OLE DB Programmer's Reference* in the Windows SDK for a list of valid initialization modes. If *nInitMode* is zero, no initialization mode is included in the property set used to open the connection.  
+*nInitMode*<br/>
+[in] Database initialization mode. See [Initialization Properties](/previous-versions/windows/desktop/ms723127\(v=vs.85\))in the *OLE DB Programmer's Reference* in the Windows SDK for a list of valid initialization modes. If *nInitMode* is zero, no initialization mode is included in the property set used to open the connection.  
   
- *szProgID*  
- [in] A program identifier.  
+*szProgID*<br/>
+[in] A program identifier.  
   
- *enumerator*  
- [in] A [CEnumerator](../../data/oledb/cenumerator-class.md) object used to obtain a moniker for opening the connection when the caller does not specify a `CLSID`.  
+*enumerator*<br/>
+[in] A [CEnumerator](../../data/oledb/cenumerator-class.md) object used to obtain a moniker for opening the connection when the caller does not specify a `CLSID`.  
   
- *hWnd*  
- [in] Handle to the window that is to be the parent of the dialog box. Using the function overload that uses the *hWnd* parameter will automatically invoke Service Components; see Remarks for details.  
+*hWnd*<br/>
+[in] Handle to the window that is to be the parent of the dialog box. Using the function overload that uses the *hWnd* parameter will automatically invoke Service Components; see Remarks for details.  
   
- *dwPromptOptions*  
- [in] Determines the style of locator dialog box to display. See Msdasc.h for possible values.  
+*dwPromptOptions*<br/>
+[in] Determines the style of locator dialog box to display. See Msdasc.h for possible values.  
   
 ### Return Value  
- A standard HRESULT.  
+
+A standard HRESULT.  
   
 ### Remarks  
- The method overload that uses the *hWnd* parameter opens a data source object with the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on. For more information, see "OLE DB Services" in the OLE DB Programmer's Reference at [https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).  
+
+The method overload that uses the *hWnd* parameter opens a data source object with the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on. For more information, see "OLE DB Services" in the OLE DB Programmer's Reference at [https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).  
   
- The method overloads that do not use the *hWnd* parameter open a data source object without using the service components in oledb32.dll. A [CDataSource](../../data/oledb/cdatasource-class.md) object opened with these function overloads will be unable to utilize any of the functionality of Service Components.  
+The method overloads that do not use the *hWnd* parameter open a data source object without using the service components in oledb32.dll. A [CDataSource](../../data/oledb/cdatasource-class.md) object opened with these function overloads will be unable to utilize any of the functionality of Service Components.  
   
 ### Example  
- The following code shows how to open a Jet 4.0 data source with OLE DB Templates. You treat the Jet data source as an OLE DB data source. However, your call to `Open` needs two property sets: one for DBPROPSET_DBINIT and the other for DBPROPSET_JETOLEDB_DBINIT, so that you can set DBPROP_JETOLEDB_DATABASEPASSWORD.  
+
+The following code shows how to open a Jet 4.0 data source with OLE DB Templates. You treat the Jet data source as an OLE DB data source. However, your call to `Open` needs two property sets: one for DBPROPSET_DBINIT and the other for DBPROPSET_JETOLEDB_DBINIT, so that you can set DBPROP_JETOLEDB_DATABASEPASSWORD.  
   
- [!code-cpp[NVC_OLEDB_Consumer#7](../../data/oledb/codesnippet/cpp/cdatasource-open_1.cpp)]  
+[!code-cpp[NVC_OLEDB_Consumer#7](../../data/oledb/codesnippet/cpp/cdatasource-open_1.cpp)]  
 
 ## <a name="openfromfilename"></a> CDataSource::OpenFromFileName
+
 Opens a data source from a file specified by the user-supplied file name.  
   
 ### Syntax  
@@ -227,18 +249,22 @@ HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();
 ```  
   
 #### Parameters  
- *szFileName*  
- [in] The name of a file, usually a data source connection (.UDL) file.  
+
+*szFileName*<br/>
+[in] The name of a file, usually a data source connection (.UDL) file.  
   
- For more information about data link files (.udl files), see [Data Link API Overview](/previous-versions/windows/desktop/ms718102\(v=vs.85\)) in the Windows SDK.  
+For more information about data link files (.udl files), see [Data Link API Overview](/previous-versions/windows/desktop/ms718102\(v=vs.85\)) in the Windows SDK.  
   
 ### Return Value  
- A standard HRESULT.  
+
+A standard HRESULT.  
   
 ### Remarks  
- This method opens a data source object using the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on. For more information, see "OLE DB Services" in the OLE DB Programmer's Reference at [https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).  
+
+This method opens a data source object using the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on. For more information, see "OLE DB Services" in the OLE DB Programmer's Reference at [https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).  
 
 ## <a name="openfrominitializationstring"></a> CDataSource::OpenFromInitializationString
+
 Opens a data source specified by the user-supplied initialization string.  
   
 ### Syntax  
@@ -249,21 +275,25 @@ HRESULT OpenFromInitializationString(LPCOLESTR szInitializationString, 
 ```  
   
 #### Parameters  
- *szInitializationString*  
- [in] The initialization string.  
+
+*szInitializationString*<br/>
+[in] The initialization string.  
   
- *fPromptForInfo*  
- [in] If this argument is set to **true**, then `OpenFromInitializationString` will set the DBPROP_INIT_PROMPT property to DBPROMPT_COMPLETEREQUIRED, which specifies that the user be prompted only if more information is needed. This is useful for situations in which the initialization string specifies a database that requires a password, but the string does not contain the password. The user will be prompted for a password (or any other missing information) when trying to connect to the database.  
+*fPromptForInfo*<br/>
+[in] If this argument is set to **true**, then `OpenFromInitializationString` will set the DBPROP_INIT_PROMPT property to DBPROMPT_COMPLETEREQUIRED, which specifies that the user be prompted only if more information is needed. This is useful for situations in which the initialization string specifies a database that requires a password, but the string does not contain the password. The user will be prompted for a password (or any other missing information) when trying to connect to the database.  
   
- The default value is **false**, which specifies that the user never be prompted (sets DBPROP_INIT_PROMPT to DBPROMPT_NOPROMPT).  
+The default value is **false**, which specifies that the user never be prompted (sets DBPROP_INIT_PROMPT to DBPROMPT_NOPROMPT).  
   
 ### Return Value  
- A standard HRESULT.  
+
+A standard HRESULT.  
   
 ### Remarks  
- This method opens a data source object using the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on.  
+
+This method opens a data source object using the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on.  
 
 ## <a name="openwithpromptfilename"></a> CDataSource::OpenWithPromptFileName
+
 This method prompts the user with a dialog box, then opens a data source using the file specified by the user.  
   
 ### Syntax  
@@ -275,22 +305,26 @@ HRESULT OpenWithPromptFileName(HWND hWnd = GetActiveWindow(   ), 
 ```  
   
 #### Parameters  
- *hWnd*  
- [in] Handle to the window that is to be the parent of the dialog box.  
+
+*hWnd*<br/>
+[in] Handle to the window that is to be the parent of the dialog box.  
   
- *dwPromptOptions*  
- [in] Determines the style of locator dialog box to display. See Msdasc.h for possible values.  
+*dwPromptOptions*<br/>
+[in] Determines the style of locator dialog box to display. See Msdasc.h for possible values.  
   
- *szInitialDirectory*  
- [in] The initial directory to display in the locator dialog box.  
+*szInitialDirectory*<br/>
+[in] The initial directory to display in the locator dialog box.  
   
 ### Return Value  
- A standard HRESULT.  
+
+A standard HRESULT.  
   
 ### Remarks  
- This method opens a data source object using the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on. For more information, see "OLE DB Services" in the OLE DB Programmer's Reference at [https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).
+
+This method opens a data source object using the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on. For more information, see "OLE DB Services" in the OLE DB Programmer's Reference at [https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).
 
 ## <a name="openwithservicecomponents"></a> CDataSource::OpenWithServiceComponents
+
 Opens a data source object using the service components in oledb32.dll.  
   
 ### Syntax  
@@ -306,24 +340,28 @@ HRESULT OpenWithServiceComponents (LPCSTR szProgID,
 ```  
   
 #### Parameters  
- *clsid*  
- [in] The `CLSID` of a data provider.  
+
+*clsid*<br/>
+[in] The `CLSID` of a data provider.  
   
- *szProgID*  
- [in] Program ID of a data provider.  
+*szProgID*<br/>
+[in] Program ID of a data provider.  
   
- *pPropset*  
- [in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) in the *OLE DB Programmer's Reference* in the Windows SDK. If the data source object is initialized, the properties must belong to the Data Source property group. If the same property is specified more than once in *pPropset*, then which value is used is provider-specific. If *ulPropSets* is zero, this parameter is ignored.  
+*pPropset*<br/>
+[in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) in the *OLE DB Programmer's Reference* in the Windows SDK. If the data source object is initialized, the properties must belong to the Data Source property group. If the same property is specified more than once in *pPropset*, then which value is used is provider-specific. If *ulPropSets* is zero, this parameter is ignored.  
   
- *ulPropSets*  
- [in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures passed in the *pPropSet* argument. If this is zero, the provider ignores *pPropset*.  
+*ulPropSets*<br/>
+[in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures passed in the *pPropSet* argument. If this is zero, the provider ignores *pPropset*.  
   
 ### Return Value  
- A standard HRESULT.  
+
+A standard HRESULT.  
   
 ### Remarks  
- This method opens a data source object using the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on. For more information, see "OLE DB Services" in the OLE DB Programmer's Reference at [https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).    
+
+This method opens a data source object using the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on. For more information, see "OLE DB Services" in the OLE DB Programmer's Reference at [https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).    
 
 ## See Also  
- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
+
+[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

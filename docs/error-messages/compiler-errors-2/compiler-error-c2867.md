@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2867
-'identifier' : is not a namespace  
-  
- A `using` directive is applied to something other than a namespace.  
-  
- The following sample generates C2867:  
-  
-```  
-// C2867.cpp  
-// compile with: /c  
-namespace N {  
-   class X {};  
-}  
-using namespace N::X;   // C2867  
+
+'identifier' : is not a namespace
+
+A `using` directive is applied to something other than a namespace.
+
+The following sample generates C2867:
+
+```
+// C2867.cpp
+// compile with: /c
+namespace N {
+   class X {};
+}
+using namespace N::X;   // C2867
 ```

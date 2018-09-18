@@ -23,8 +23,8 @@ class CWinFormsControl : public CWnd
 ```  
   
 #### Parameters  
- `TManagedControl`  
- A .NET Framework Windows Forms control to be displayed in the MFC application.  
+*TManagedControl*<br/>
+A .NET Framework Windows Forms control to be displayed in the MFC application.  
   
 ## Members  
   

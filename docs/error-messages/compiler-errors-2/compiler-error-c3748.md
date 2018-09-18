@@ -13,20 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3748
-'interface': managed interfaces may not fire events  
-  
- The [__event](../../cpp/event.md) keyword cannot appear inside an interface.  
-  
- The following sample generates C3748:  
-  
-```  
-// C3748.cpp  
-__interface I {  
-// try the following line instead  
-// struct I {  
-   __event void f();   // C3748  
-};  
-  
-int main() {  
-}  
+
+'interface': managed interfaces may not fire events
+
+The [__event](../../cpp/event.md) keyword cannot appear inside an interface.
+
+The following sample generates C3748:
+
+```
+// C3748.cpp
+__interface I {
+// try the following line instead
+// struct I {
+   __event void f();   // C3748
+};
+
+int main() {
+}
 ```

@@ -64,7 +64,7 @@ For more information on ATL projects and ATL COM classes, see [ATL COM Desktop C
 
 ## See Also
 
-[ATL Simple Object Wizard](../../atl/reference/atl-simple-object-wizard.md)   
-[ATL Simple Object](../../atl/reference/adding-an-atl-simple-object.md)   
+[ATL Simple Object Wizard](../../atl/reference/atl-simple-object-wizard.md)<br/>
+[ATL Simple Object](../../atl/reference/adding-an-atl-simple-object.md)<br/>
 [In-Process Server Threading Issues](/windows/desktop/com/in-process-server-threading-issues)
 

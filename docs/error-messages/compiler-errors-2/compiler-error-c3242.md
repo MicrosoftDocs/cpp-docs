@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3242
-'function' : you can only explicitly override virtual functions  
-  
- You tried to explicitly override a nonvirtual method.
+
+'function' : you can only explicitly override virtual functions
+
+You tried to explicitly override a nonvirtual method.

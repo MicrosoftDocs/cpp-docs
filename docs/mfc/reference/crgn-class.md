@@ -275,13 +275,12 @@ BOOL CreatePolygonRgn(
  *lpPoints*  
  Points to an array of `POINT` structures or an array of `CPoint` objects. Each structure specifies the x-coordinate and y-coordinate of one vertex of the polygon. The `POINT` structure has the following form:  
   
- `typedef struct tagPOINT {`  
-  
- `int x;`  
-  
- `int y;`  
-  
- `} POINT;`  
+```cpp
+typedef struct tagPOINT {
+    int x;
+    int y;
+} POINT;
+```
   
  *nCount*  
  Specifies the number of `POINT` structures or `CPoint` objects in the array pointed to by *lpPoints*.  
@@ -321,13 +320,12 @@ BOOL CreatePolyPolygonRgn(
  *lpPoints*  
  Points to an array of `POINT` structures or an array of `CPoint` objects that defines the vertices of the polygons. Each polygon must be explicitly closed because the system does not close them automatically. The polygons are specified consecutively. The `POINT` structure has the following form:  
   
- `typedef struct tagPOINT {`  
-  
- `int x;`  
-  
- `int y;`  
-  
- `} POINT;`  
+```cpp
+typedef struct tagPOINT {
+    int x;
+    int y;
+} POINT;
+```
   
  *lpPolyCounts*  
  Points to an array of integers. The first integer specifies the number of vertices in the first polygon in the *lpPoints* array, the second integer specifies the number of vertices in the second polygon, and so on.  
@@ -402,17 +400,14 @@ BOOL CreateRectRgnIndirect(LPCRECT lpRect);
  *lpRect*  
  Points to a `RECT` structure or `CRect` object that contains the logical coordinates of the upper-left and lower-right corners of the region. The `RECT` structure has the following form:  
   
- `typedef struct tagRECT {`  
-  
- `int left;`  
-  
- `int top;`  
-  
- `int right;`  
-  
- `int bottom;`  
-  
- `} RECT;`  
+```cpp
+typedef struct tagRECT {
+    int left;
+    int top;
+    int right;
+    int bottom;
+} RECT;
+```
   
 ### Return Value  
  Nonzero if the operation succeeded; otherwise 0.  
@@ -664,17 +659,14 @@ BOOL RectInRegion(LPCRECT lpRect) const;
  *lpRect*  
  Points to a `RECT` structure or `CRect` object. The `RECT` structure has the following form:  
   
- `typedef struct tagRECT {`  
-  
- `int left;`  
-  
- `int top;`  
-  
- `int right;`  
-  
- `int bottom;`  
-  
- `} RECT;`  
+```cpp
+typedef struct tagRECT {
+    int left;
+    int top;
+    int right;
+    int bottom;
+} RECT;
+```
   
 ### Return Value  
  Nonzero if any part of the specified rectangle lies within the boundaries of the region; otherwise 0.  

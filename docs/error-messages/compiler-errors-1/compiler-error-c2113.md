@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2113
-'-' : pointer can only be subtracted from another pointer  
-  
- The right operand in a subtraction operation was a pointer, but the left operand was not.
+
+'-' : pointer can only be subtracted from another pointer
+
+The right operand in a subtraction operation was a pointer, but the left operand was not.

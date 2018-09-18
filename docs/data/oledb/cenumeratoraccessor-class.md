@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CEnumeratorAccessor Class
+
 Used by [CEnumerator](../../data/oledb/cenumerator-class.md) to access the data from the enumerator rowset.  
   
 ## Syntax
@@ -22,7 +23,8 @@ class CEnumeratorAccessor
 ```  
 
 ## Requirements  
- **Header:** atldbcli.h  
+
+**Header:** atldbcli.h  
   
 ## Members  
   
@@ -37,9 +39,11 @@ class CEnumeratorAccessor
 |[m_szParseName](#szparsename)|String to pass to [IParseDisplayName](/windows/desktop/api/oleidl/nn-oleidl-iparsedisplayname) to obtain a moniker for the data source or enumerator.|  
   
 ## Remarks  
- This rowset consists of the data sources and enumerators visible from the current enumerator.  
+
+This rowset consists of the data sources and enumerators visible from the current enumerator.  
   
 ## <a name="bisparent"></a> CEnumeratorAccessor::m_bIsParent
+
 A variable indicating whether the enumerator is a parent enumerator, if the row is an enumerator.  
   
 ### Syntax  
@@ -49,9 +53,11 @@ VARIANT_BOOL m_bIsParent;
 ```  
   
 ### Remarks  
- See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information. 
+
+See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information. 
 
 ## <a name="ntype"></a> CEnumeratorAccessor::m_nType
+
 A variable indicating whether the row describes a data source or an enumerator.  
   
 ### Syntax  
@@ -61,9 +67,11 @@ USHORT m_nType;
 ```  
   
 ### Remarks  
- See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.
+
+See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.
 
 ## <a name="szdescription"></a> CEnumeratorAccessor::m_szDescription
+
 The description of the data source or enumerator.  
   
 ### Syntax  
@@ -73,9 +81,11 @@ WCHAR m_szDescription[129];
 ```  
   
 ### Remarks  
- See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.
+
+See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.
 
 ## <a name="szname"></a> CEnumeratorAccessor::m_szName
+
 The name of the data source or enumerator.  
   
 ### Syntax  
@@ -85,9 +95,11 @@ WCHAR m_szName[129];
 ```  
   
 ### Remarks  
- See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.  
+
+See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.  
 
 ## <a name="szparsename"></a> CEnumeratorAccessor::m_szParseName
+
 String to pass to [IParseDisplayName](/windows/desktop/api/oleidl/nn-oleidl-iparsedisplayname) to obtain a moniker for the data source or enumerator.  
   
 ### Syntax  
@@ -97,8 +109,10 @@ WCHAR m_szParseName[129];
 ```  
   
 ### Remarks  
- See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.  
+
+See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.  
   
 ## See Also  
- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
+
+[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

@@ -66,7 +66,7 @@ ALT_MSG_MAP(msgMapID)
 
 ### Parameters
 
-*msgMapID*  
+*msgMapID*<br/>
 [in] The message map identifier.
 
 ### Remarks
@@ -105,7 +105,7 @@ BEGIN_MSG_MAP(theClass)
 
 ### Parameters
 
-*theClass*  
+*theClass*<br/>
 [in] The name of the class containing the message map.
 
 ### Remarks
@@ -184,10 +184,10 @@ CHAIN_MSG_MAP_ALT(theChainClass, msgMapID)
 
 ### Parameters
 
-*theChainClass*  
+*theChainClass*<br/>
 [in] The name of the base class containing the message map.
 
-*msgMapID*  
+*msgMapID*<br/>
 [in] The message map identifier.
 
 ### Remarks
@@ -213,10 +213,10 @@ CHAIN_MSG_MAP_ALT_MEMBER(theChainMember, msgMapID)
 
 ### Parameters
 
-*theChainMember*  
+*theChainMember*<br/>
 [in] The name of the data member containing the message map.
 
-*msgMapID*  
+*msgMapID*<br/>
 [in] The message map identifier.
 
 ### Remarks
@@ -242,7 +242,7 @@ CHAIN_MSG_MAP(theChainClass)
 
 ### Parameters
 
-*theChainClass*  
+*theChainClass*<br/>
 [in] The name of the base class containing the message map.
 
 ### Remarks
@@ -280,7 +280,7 @@ CHAIN_MSG_MAP_DYNAMIC(dynaChainID)
 
 ### Parameters
 
-*dynaChainID*  
+*dynaChainID*<br/>
 [in] The unique identifier for an object's message map.
 
 ### Remarks
@@ -306,7 +306,7 @@ CHAIN_MSG_MAP_MEMBER(theChainMember)
 
 ### Parameters
 
-*theChainMember*  
+*theChainMember*<br/>
 [in] The name of the data member containing the message map.
 
 ### Remarks
@@ -344,10 +344,10 @@ COMMAND_CODE_HANDLER(code, func)
 
 ### Parameters
 
-*code*  
+*code*<br/>
 [in] The notification code.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.
 
 ### Requirements
@@ -364,13 +364,13 @@ COMMAND_HANDLER(id, code, func)
 
 ### Parameters
 
-*id*  
+*id*<br/>
 [in] The identifier of the menu item, control, or accelerator.
 
-*code*  
+*code*<br/>
 [in] The notification code.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.
 
 ### Remarks
@@ -406,10 +406,10 @@ COMMAND_ID_HANDLER(id, func)
 
 ### Parameters
 
-*id*  
+*id*<br/>
 [in] The identifier of the menu item, control, or accelerator sending the message.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.
 
 ### Requirements
@@ -426,16 +426,16 @@ COMMAND_RANGE_CODE_HANDLER(idFirst, idLast, code, func)
 
 ### Parameters
 
-*idFirst*  
+*idFirst*<br/>
 [in] Marks the beginning of a contiguous range of control identifiers.
 
-*idLast*  
+*idLast*<br/>
 [in] Marks the end of a contiguous range of control identifiers.
 
-*code*  
+*code*<br/>
 [in] The notification code.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.
 
 ### Remarks
@@ -456,13 +456,13 @@ COMMAND_RANGE_HANDLER( idFirst, idLast, func)
 
 ### Parameters
 
-*idFirst*  
+*idFirst*<br/>
 [in] Marks the beginning of a contiguous range of control identifiers.
 
-*idLast*  
+*idLast*<br/>
 [in] Marks the end of a contiguous range of control identifiers.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.
 
 ### Remarks
@@ -555,10 +555,10 @@ MESSAGE_HANDLER( msg, func )
 
 ### Parameters
 
-*msg*  
+*msg*<br/>
 [in] The Windows message.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.
 
 ### Remarks
@@ -596,13 +596,13 @@ MESSAGE_RANGE_HANDLER( msgFirst, msgLast, func )
 
 ### Parameters
 
-*msgFirst*  
+*msgFirst*<br/>
 [in] Marks the beginning of a contiguous range of messages.
 
-*msgLast*  
+*msgLast*<br/>
 [in] Marks the end of a contiguous range of messages.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.
 
 ### Requirements
@@ -619,10 +619,10 @@ NOTIFY_CODE_HANDLER(cd, func)
 
 ### Parameters
 
-*cd*  
+*cd*<br/>
 [in] The notification code.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.
 
 ### Requirements
@@ -639,13 +639,13 @@ NOTIFY_HANDLER( id, cd, func )
 
 ### Parameters
 
-*id*  
+*id*<br/>
 [in] The identifier of the control sending the message.
 
-*cd*  
+*cd*<br/>
 [in] The notification code.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.
 
 ### Remarks
@@ -683,10 +683,10 @@ NOTIFY_ID_HANDLER( id, func )
 
 ### Parameters
 
-*id*  
+*id*<br/>
 [in] The identifier of the control sending the message.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.
 
 ### Requirements
@@ -703,16 +703,16 @@ NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
 
 ### Parameters
 
-*idFirst*  
+*idFirst*<br/>
 [in] Marks the beginning of a contiguous range of control identifiers.
 
-*idLast*  
+*idLast*<br/>
 [in] Marks the end of a contiguous range of control identifiers.
 
-*cd*  
+*cd*<br/>
 [in] The notification code.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.
 
 ### Remarks
@@ -733,13 +733,13 @@ NOTIFY_RANGE_HANDLER( idFirst, idLast, func )
 
 ### Parameters
 
-*idFirst*  
+*idFirst*<br/>
 [in] Marks the beginning of a contiguous range of control identifiers.
 
-*idLast*  
+*idLast*<br/>
 [in] Marks the end of a contiguous range of control identifiers.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.
 
 ### Remarks
@@ -776,10 +776,10 @@ REFLECTED_COMMAND_CODE_HANDLER( code, func )
 
 ### Parameters
 
-*code*  
+*code*<br/>
 [in] The notification code.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.  
 
 ### Requirements
@@ -796,13 +796,13 @@ REFLECTED_COMMAND_HANDLER( id, code, func )
 
 ### Parameters
 
-*id*  
+*id*<br/>
 [in] The identifier of the menu item, control, or accelerator.
 
-*code*  
+*code*<br/>
 [in] The notification code.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.  
 
 ### Requirements
@@ -819,10 +819,10 @@ REFLECTED_COMMAND_ID_HANDLER( id, func )
 
 ### Parameters
 
-*id*  
+*id*<br/>
 [in] The identifier of the menu item, control, or accelerator.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.  
 
 ### Requirements
@@ -839,16 +839,16 @@ REFLECTED_COMMAND_RANGE_CODE_HANDLER( idFirst, idLast, code, func )
 
 ### Parameters
 
-*idFirst*  
+*idFirst*<br/>
 [in] Marks the beginning of a contiguous range of control identifiers.
 
-*idLast*  
+*idLast*<br/>
 [in] Marks the end of a contiguous range of control identifiers.
 
-*code*  
+*code*<br/>
 [in] The notification code.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.  
 
 ### Requirements
@@ -865,13 +865,13 @@ REFLECTED_COMMAND_RANGE_HANDLER( idFirst, idLast, func )
 
 ### Parameters
 
-*idFirst*  
+*idFirst*<br/>
 [in] Marks the beginning of a contiguous range of control identifiers.
 
-*idLast*  
+*idLast*<br/>
 [in] Marks the end of a contiguous range of control identifiers.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.  
 
 ### Requirements
@@ -888,10 +888,10 @@ REFLECTED_NOTIFY_CODE_HANDLER_EX( cd, func )
 
 ### Parameters
 
-*cd*  
+*cd*<br/>
 [in] The notification code.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.  
 
 ### Requirements
@@ -908,13 +908,13 @@ REFLECTED_NOTIFY_HANDLER( id, cd, func )
 
 ### Parameters
 
-*id*  
+*id*<br/>
 [in] The identifier of the menu item, control, or accelerator.
 
-*cd*  
+*cd*<br/>
 [in] The notification code.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.  
 
 ### Requirements
@@ -931,10 +931,10 @@ REFLECTED_NOTIFY_ID_HANDLER( id, func )
 
 ### Parameters
 
-*id*  
+*id*<br/>
 [in] The identifier of the menu item, control, or accelerator.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.  
 
 ### Requirements
@@ -951,16 +951,16 @@ REFLECTED_NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
 
 ### Parameters
 
-*idFirst*  
+*idFirst*<br/>
 [in] Marks the beginning of a contiguous range of control identifiers.
 
-*idLast*  
+*idLast*<br/>
 [in] Marks the end of a contiguous range of control identifiers.
 
-*cd*  
+*cd*<br/>
 [in] The notification code.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.
 
 ### Requirements
@@ -977,13 +977,13 @@ REFLECTED_NOTIFY_RANGE_HANDLER( idFirst, idLast, func )
 
 ### Parameters
 
-*idFirst*  
+*idFirst*<br/>
 [in] Marks the beginning of a contiguous range of control identifiers.
 
-*idLast*  
+*idLast*<br/>
 [in] Marks the end of a contiguous range of control identifiers.
 
-*func*  
+*func*<br/>
 [in] The name of the message-handler function.
 
 ## See Also

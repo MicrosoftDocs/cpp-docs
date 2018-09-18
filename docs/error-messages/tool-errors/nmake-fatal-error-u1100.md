@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # NMAKE Fatal Error U1100
-macro 'macroname' is illegal in the context of batch rule 'rule'  
-  
- NMAKE generates this error when the command block of a batch-mode rule directly or indirectly references a special file macro that is not $<.  
-  
- $< is the only allowed macro for batch-mode rules.
+
+macro 'macroname' is illegal in the context of batch rule 'rule'
+
+NMAKE generates this error when the command block of a batch-mode rule directly or indirectly references a special file macro that is not $<.
+
+$< is the only allowed macro for batch-mode rules.

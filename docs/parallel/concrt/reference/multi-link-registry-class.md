@@ -23,8 +23,8 @@ class multi_link_registry : public network_link_registry<_Block>;
 ```  
   
 #### Parameters  
- `_Block`  
- The block data type being stored in the `multi_link_registry` object.  
+*_Block*<br/>
+The block data type being stored in the `multi_link_registry` object.  
   
 ## Members  
   
@@ -65,8 +65,8 @@ virtual void add(_EType _Link);
 ```  
   
 ### Parameters  
- `_Link`  
- A pointer to a block to be added.  
+*_Link*<br/>
+A pointer to a block to be added.  
   
 ### Remarks  
  The method throws an [invalid_link_target](invalid-link-target-class.md) exception if the link is already present in the registry, or if a bound has already been set with the `set_bound` function and a link has since been removed.  
@@ -94,8 +94,8 @@ virtual bool contains(_EType _Link);
 ```  
   
 ### Parameters  
- `_Link`  
- A pointer to a block that is to be searched for in the `multi_link_registry` object.  
+*_Link*<br/>
+A pointer to a block that is to be searched for in the `multi_link_registry` object.  
   
 ### Return Value  
  `true` if the specified block was found, `false` otherwise.  
@@ -139,8 +139,8 @@ virtual bool remove(_EType _Link);
 ```  
   
 ### Parameters  
- `_Link`  
- A pointer to a block to be removed, if found.  
+*_Link*<br/>
+A pointer to a block to be removed, if found.  
   
 ### Return Value  
  `true` if the link was found and removed, `false` otherwise.  
@@ -154,8 +154,8 @@ void set_bound(size_t _MaxLinks);
 ```  
   
 ### Parameters  
- `_MaxLinks`  
- The maximum number of links that the `multi_link_registry` object can hold.  
+*_MaxLinks*<br/>
+The maximum number of links that the `multi_link_registry` object can hold.  
   
 ### Remarks  
  After a bound is set, unlinking an entry will cause the `multi_link_registry` object to enter an immutable state where further calls to `add` will throw an `invalid_link_target` exception.  

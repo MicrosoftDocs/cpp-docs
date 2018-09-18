@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4199
-/DELAYLOAD:dllname ignored; no imports found from dllname  
-  
- The linker ignores `dllname` because it does not need any of the functions that `dllname` exports.
+
+/DELAYLOAD:dllname ignored; no imports found from dllname
+
+The linker ignores `dllname` because it does not need any of the functions that `dllname` exports.

@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2227
-left of '->member' must point to class/struct/union/generic type  
-  
- The operand to the left of `->` is not a pointer to a class, structure, or union.  
-  
- The following sample generates C2227:  
-  
-```  
-// C2227.cpp  
-int *pInt;  
-struct S {  
-public:  
-    int member;  
-} s, *pS = &s;  
-  
-int main() {  
-   pInt->member = 0;   // C2227 pInt points to an int  
-   pS->member = 0;   // OK  
-}  
+
+left of '->member' must point to class/struct/union/generic type
+
+The operand to the left of `->` is not a pointer to a class, structure, or union.
+
+The following sample generates C2227:
+
+```
+// C2227.cpp
+int *pInt;
+struct S {
+public:
+    int member;
+} s, *pS = &s;
+
+int main() {
+   pInt->member = 0;   // C2227 pInt points to an int
+   pS->member = 0;   // OK
+}
 ```

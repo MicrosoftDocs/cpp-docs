@@ -23,8 +23,8 @@ class ITarget;
 ```  
   
 #### Parameters  
- `T`  
- The data type of the payload within the messages accepted by the target block.  
+*T*<br/>
+The data type of the payload within the messages accepted by the target block.  
   
 ## Members  
   
@@ -85,8 +85,8 @@ virtual void link_source(_Inout_ ISource<T>* _PSource) = 0;
 ```  
   
 ### Parameters  
- `_PSource`  
- The `ISource` block being linked to this `ITarget` block.  
+*_PSource*<br/>
+The `ISource` block being linked to this `ITarget` block.  
   
 ### Remarks  
  This function should not be called directly on an `ITarget` block. Blocks should be connected together using the `link_target` method on `ISource` blocks, which will invoke the `link_source` method on the corresponding target.  
@@ -102,11 +102,11 @@ virtual message_status propagate(
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the `message` object.  
+*_PMessage*<br/>
+A pointer to the `message` object.  
   
- `_PSource`  
- A pointer to the source block offering the message.  
+*_PSource*<br/>
+A pointer to the source block offering the message.  
   
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
@@ -125,11 +125,11 @@ virtual message_status send(
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the `message` object.  
+*_PMessage*<br/>
+A pointer to the `message` object.  
   
- `_PSource`  
- A pointer to the source block offering the message.  
+*_PSource*<br/>
+A pointer to the source block offering the message.  
   
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
@@ -161,8 +161,8 @@ virtual void unlink_source(_Inout_ ISource<T>* _PSource) = 0;
 ```  
   
 ### Parameters  
- `_PSource`  
- The `ISource` block being unlinked from this `ITarget` block.  
+*_PSource*<br/>
+The `ISource` block being unlinked from this `ITarget` block.  
   
 ### Remarks  
  This function should not be called directly on an `ITarget` block. Blocks should be disconnected using the `unlink_target` or `unlink_targets` methods on `ISource` blocks, which will invoke the `unlink_source` method on the corresponding target.  

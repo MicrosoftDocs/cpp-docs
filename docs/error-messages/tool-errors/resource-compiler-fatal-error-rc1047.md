@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Fatal Error RC1047
-"too many option options, 'string'"  
-  
- The given option was specified too many times. The given string is the argument to the option that caused the error.
+
+"too many option options, 'string'"
+
+The given option was specified too many times. The given string is the argument to the option that caused the error.

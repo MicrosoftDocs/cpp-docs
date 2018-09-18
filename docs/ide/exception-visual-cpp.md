@@ -22,15 +22,15 @@ The \<exception> tag lets you specify which exceptions can be thrown. This tag i
 ```  
   
 #### Parameters  
- `member`  
- A reference to an exception that is available from the current compilation environment. Using name lookup rules, the compiler checks that the given exception exists, and translates `member` to the canonical element name in the output XML.  The compiler issues a warning if it does not find `member`.  
+*member*<br/>
+A reference to an exception that is available from the current compilation environment. Using name lookup rules, the compiler checks that the given exception exists, and translates `member` to the canonical element name in the output XML.  The compiler issues a warning if it does not find `member`.  
   
  Enclose the name in single or double quotation marks.  
   
  For information on how to create a cref reference to a generic type, see [\<see>](../ide/see-visual-cpp.md).  
   
- `description`  
- A description.  
+*description*<br/>
+A description.  
   
 ## Remarks  
  Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.  

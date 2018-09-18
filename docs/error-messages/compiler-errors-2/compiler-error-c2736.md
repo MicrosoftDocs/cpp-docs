@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2736
-'keyword' keyword is not permitted in cast  
-  
- The keyword is invalid in a cast.  
-  
- The following sample generates C2736:  
-  
-```  
-// C2736.cpp  
-int main() {  
-   return (virtual) 0;   // C2736  
-   // try the following line instead  
-   // return 0;  
-}  
+
+'keyword' keyword is not permitted in cast
+
+The keyword is invalid in a cast.
+
+The following sample generates C2736:
+
+```
+// C2736.cpp
+int main() {
+   return (virtual) 0;   // C2736
+   // try the following line instead
+   // return 0;
+}
 ```

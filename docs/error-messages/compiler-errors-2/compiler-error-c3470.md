@@ -13,31 +13,33 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3470
-'type' : a class cannot have both an indexer (default indexed property) and an operator[]  
-  
- A type cannot define both a default indexer and an operator[].  
-  
-## Example  
- The following sample generates C3470  
-  
-```  
-// C3470.cpp  
-// compile with: /clr  
-using namespace System;  
-  
-ref class R {  
-public:  
-   property int default[int] {  
-      int get(int i) {  
-         return i+1;  
-      }  
-   }  
-  
-   int operator[](String^ s) { return Convert::ToInt32(s); }   // C3470  
-};  
-  
-int main() {  
-   R ^ r = gcnew R;  
-   // return r[9] + r["32"] - 42;  
-}  
+
+'type' : a class cannot have both an indexer (default indexed property) and an operator[]
+
+A type cannot define both a default indexer and an operator[].
+
+## Example
+
+The following sample generates C3470
+
+```
+// C3470.cpp
+// compile with: /clr
+using namespace System;
+
+ref class R {
+public:
+   property int default[int] {
+      int get(int i) {
+         return i+1;
+      }
+   }
+
+   int operator[](String^ s) { return Convert::ToInt32(s); }   // C3470
+};
+
+int main() {
+   R ^ r = gcnew R;
+   // return r[9] + r["32"] - 42;
+}
 ```

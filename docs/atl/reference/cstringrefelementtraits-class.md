@@ -19,13 +19,13 @@ This class provides static functions related to strings stored in collection cla
 ## Syntax
 
 ```
-template <typename T>  
+template <typename T>
 class CStringRefElementTraits : public CElementTraitsBase<T>
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The type of data to be stored in the collection.
 
 ## Members
@@ -64,10 +64,10 @@ static bool CompareElements(INARGTYPE element1, INARGTYPE element2) throw();
 
 ### Parameters
 
-*element1*  
+*element1*<br/>
 The first string element.
 
-*element2*  
+*element2*<br/>
 The second string element.
 
 ### Return Value
@@ -84,10 +84,10 @@ static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2) throw();
 
 ### Parameters
 
-*str1*  
+*str1*<br/>
 The first string element.
 
-*str2*  
+*str2*<br/>
 The second string element.
 
 ### Return Value
@@ -104,7 +104,7 @@ static ULONG Hash(INARGTYPE str) throw();
 
 ### Parameters
 
-*str*  
+*str*<br/>
 The string element.
 
 ### Return Value
@@ -113,5 +113,5 @@ Returns a hash value, calculated using the string's contents.
 
 ## See Also
 
-[CElementTraitsBase Class](../../atl/reference/celementtraitsbase-class.md)   
+[CElementTraitsBase Class](../../atl/reference/celementtraitsbase-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

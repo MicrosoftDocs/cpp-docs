@@ -12,6 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Session Object Interfaces
+
 The following table shows the mandatory and optional interfaces defined by OLE DB for a session object.  
   
 |Interface|Required?|Implemented by OLE DB templates?|  
@@ -35,9 +36,10 @@ The following table shows the mandatory and optional interfaces defined by OLE D
 |[ITransactionLocal](/previous-versions/windows/desktop/ms714893\(v=vs.85\))|Optional|No|  
 |[ITransactionObject](/previous-versions/windows/desktop/ms713659\(v=vs.85\))|Optional|No|  
   
- The session object creates a rowset object. If the provider supports commands, the session also creates a command object (`CCommand`, implementing the OLE DB `TCommand`). The command object implements the `ICommand` interface and uses the `ICommand::Execute` method to execute commands on the rowset, as shown in the following figure.  
+The session object creates a rowset object. If the provider supports commands, the session also creates a command object (`CCommand`, implementing the OLE DB `TCommand`). The command object implements the `ICommand` interface and uses the `ICommand::Execute` method to execute commands on the rowset, as shown in the following figure.  
   
- ![Provider conceptual diagram](../../data/oledb/media/vc4u551.gif "vc4u551")  
+![Provider conceptual diagram](../../data/oledb/media/vc4u551.gif "vc4u551")  
   
 ## See Also  
- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

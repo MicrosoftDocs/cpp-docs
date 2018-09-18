@@ -13,32 +13,35 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3482
-'this' can only be used as a lambda capture within a non-static member function  
-  
- You cannot pass `this` to the capture list of a lambda expression that is declared in a static method or a global function.  
-  
-### To correct this error  
-  
--   Convert the enclosing function to a non-static method, or  
-  
--   Remove the `this` pointer from the capture list of the lambda expression.  
-  
-## Example  
- The following example generates C3482:  
-  
-```  
-// C3482.cpp  
-// compile with: /c  
-  
-class C  
-{  
-public:  
-   static void staticMethod()  
-   {  
-      [this] {}(); // C3482  
-   }  
-};  
-```  
-  
-## See Also  
- [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)
+
+'this' can only be used as a lambda capture within a non-static member function
+
+You cannot pass `this` to the capture list of a lambda expression that is declared in a static method or a global function.
+
+### To correct this error
+
+- Convert the enclosing function to a non-static method, or
+
+- Remove the `this` pointer from the capture list of the lambda expression.
+
+## Example
+
+The following example generates C3482:
+
+```
+// C3482.cpp
+// compile with: /c
+
+class C
+{
+public:
+   static void staticMethod()
+   {
+      [this] {}(); // C3482
+   }
+};
+```
+
+## See Also
+
+[Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)

@@ -63,8 +63,9 @@ cancellation_token_registration(cancellation_token_registration&& _Src);
 ```  
   
 ### Parameters  
- `_Src`  
-  
+*_Src*<br/>
+The `cancellation_token_registration` to copy or move.
+ 
 ##  <a name="operator_neq"></a> operator!= 
 
 ```
@@ -72,8 +73,9 @@ bool operator!= (const cancellation_token_registration& _Rhs) const;
 ```  
   
 ### Parameters  
- `_Rhs`  
-  
+*_Rhs*<br/>
+The `cancellation_token_registration` to compare.
+ 
 ### Return Value  
   
 ##  <a name="operator_eq"></a> operator= 
@@ -85,8 +87,9 @@ cancellation_token_registration& operator= (cancellation_token_registration&& _S
 ```  
   
 ### Parameters  
- `_Src`  
-  
+*_Src*<br/>
+The `cancellation_token_registration` to assign.
+ 
 ### Return Value  
   
 ##  <a name="operator_eq_eq"></a> operator== 
@@ -96,8 +99,9 @@ bool operator== (const cancellation_token_registration& _Rhs) const;
 ```  
   
 ### Parameters  
- `_Rhs`  
-  
+*_Rhs*<br/>
+The `cancellation_token_registration` to compare.
+ 
 ### Return Value  
   
 ## See Also  

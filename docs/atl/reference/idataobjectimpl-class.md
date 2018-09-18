@@ -22,13 +22,13 @@ This class provides methods for supporting Uniform Data Transfer and managing co
 ## Syntax
 
 ```
-template<class T>  
+template<class T>
 class IDataObjectImpl
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IDataObjectImpl`.
 
 ## Members

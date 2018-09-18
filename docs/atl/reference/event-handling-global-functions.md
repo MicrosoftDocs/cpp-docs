@@ -40,7 +40,7 @@ BOOL AtlWaitWithMessageLoop(HANDLE hEvent);
 
 ### Parameters
 
-*hEvent*  
+*hEvent*<br/>
 [in] The handle of the object to wait for.
 
 ### Return Value

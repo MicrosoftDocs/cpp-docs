@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2308
-concatenating mismatched strings  
-  
- Both wide and non-wide character strings were specified for concatenation. You cannot concatenate a wide character string and non-wide character string.
+
+concatenating mismatched strings
+
+Both wide and non-wide character strings were specified for concatenation. You cannot concatenate a wide character string and non-wide character string.

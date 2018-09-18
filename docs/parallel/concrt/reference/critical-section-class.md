@@ -125,8 +125,8 @@ explicit _CRTIMP scoped_lock(critical_section& _Critical_section);
 ```  
   
 ### Parameters  
- `_Critical_section`  
- The critical section to lock.  
+*_Critical_section*<br/>
+The critical section to lock.  
   
 ##  <a name="critical_section__scoped_lock_dtor"></a> scoped_lock::~scoped_lock 
 
@@ -156,8 +156,8 @@ bool try_lock_for(unsigned int _Timeout);
 ```  
   
 ### Parameters  
- `_Timeout`  
- The number of milliseconds to wait before timing out.  
+*_Timeout*<br/>
+The number of milliseconds to wait before timing out.  
   
 ### Return Value  
  If the lock was acquired, the value `true`; otherwise, the value `false`.  

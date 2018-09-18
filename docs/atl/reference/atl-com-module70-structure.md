@@ -30,19 +30,19 @@ struct _ATL_COM_MODULE70 {
 
 ## Members
 
-`cbSize`  
+`cbSize`<br/>
 The size of the structure, used for versioning.
 
-`m_hInstTypeLib`  
+`m_hInstTypeLib`<br/>
 The handle instance to the type library for this module.
 
-`m_ppAutoObjMapFirst`  
+`m_ppAutoObjMapFirst`<br/>
 Address of the array element indicating the beginning of the object map entries for this module.
 
-`m_ppAutoObjMapLast`  
+`m_ppAutoObjMapLast`<br/>
 Address of the array element indicating the end of the object map entries for this module.
 
-`m_csObjMap`  
+`m_csObjMap`<br/>
 Critical section to serialize access to the object map entries. Used internally by ATL.
 
 ## Remarks

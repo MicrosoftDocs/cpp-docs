@@ -13,14 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1140
-too many modules for program database; link with /PDB:NONE  
-  
- The project contains more than 4096 modules.  
-  
-### To fix by using the following possible solutions  
-  
-1.  Relink using [/PDB:NONE](../../build/reference/pdb-use-program-database.md).  
-  
-2.  Compile some modules without debugging information.  
-  
-3.  Reduce the number of modules.
+
+too many modules for program database; link with /PDB:NONE
+
+The project contains more than 4096 modules.
+
+### To fix by using the following possible solutions
+
+1. Relink using [/PDB:NONE](../../build/reference/pdb-use-program-database.md).
+
+1. Compile some modules without debugging information.
+
+1. Reduce the number of modules.

@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2805
-binary 'operator operator' has too few parameters  
-  
- The binary operator has no parameters.  
-  
- The following sample generates C2805:  
-  
-```  
-// C2805.cpp  
-// compile with: /c  
-class X {  
-public:  
-   X operator< ( void );   // C2805 must take one parameter  
-   X operator< ( X );   // OK  
-};  
+
+binary 'operator operator' has too few parameters
+
+The binary operator has no parameters.
+
+The following sample generates C2805:
+
+```
+// C2805.cpp
+// compile with: /c
+class X {
+public:
+   X operator< ( void );   // C2805 must take one parameter
+   X operator< ( X );   // OK
+};
 ```

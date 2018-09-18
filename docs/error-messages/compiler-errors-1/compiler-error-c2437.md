@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2437
-'identifier' : already initialized  
-  
- An object can be initialized only once.  
-  
- The following sample generates C2437:  
-  
-```  
-// C2437.cpp  
-// compile with: /c  
-class A {  
-public:  
-   A(int i) {}  
-};  
-  
-class B : A {  
-   B() : A(1), A(2) {}   // C2437  
-   B() : A(1) {}   // OK  
-};  
+
+'identifier' : already initialized
+
+An object can be initialized only once.
+
+The following sample generates C2437:
+
+```
+// C2437.cpp
+// compile with: /c
+class A {
+public:
+   A(int i) {}
+};
+
+class B : A {
+   B() : A(1), A(2) {}   // C2437
+   B() : A(1) {}   // OK
+};
 ```

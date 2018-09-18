@@ -44,30 +44,30 @@ Other aspects of your ATL COM object are handled by other classes:
 
 ## In This Section
 
-[Implementing CComObjectRootEx](../atl/implementing-ccomobjectrootex.md)  
+[Implementing CComObjectRootEx](../atl/implementing-ccomobjectrootex.md)<br/>
 Show example COM map entries for implementing `CComObjectRootEx`.
 
-[Implementing CComObject, CComAggObject, and CComPolyObject](../atl/implementing-ccomobject-ccomaggobject-and-ccompolyobject.md)  
+[Implementing CComObject, CComAggObject, and CComPolyObject](../atl/implementing-ccomobject-ccomaggobject-and-ccompolyobject.md)<br/>
 Discusses how the **DECLARE_\*_AGGREGATABLE** macros affect the use of `CComObject`, `CComAggObject`, and `CComPolyObject`.
 
-[Supporting IDispatch and IErrorInfo](../atl/supporting-idispatch-and-ierrorinfo.md)  
+[Supporting IDispatch and IErrorInfo](../atl/supporting-idispatch-and-ierrorinfo.md)<br/>
 Lists the ATL implementation classes to use for supporting the `IDispatch` and `IErrorInfo` interfaces.
 
-[Supporting IDispEventImpl](../atl/supporting-idispeventimpl.md)  
+[Supporting IDispEventImpl](../atl/supporting-idispeventimpl.md)<br/>
 Discusses the steps to implement a connection point for your class.
 
-[Changing the Default Class Factory and Aggregation Model](../atl/changing-the-default-class-factory-and-aggregation-model.md)  
+[Changing the Default Class Factory and Aggregation Model](../atl/changing-the-default-class-factory-and-aggregation-model.md)<br/>
 Show what macros to use to change the default class factory and aggregation model.
 
-[Creating an Aggregated Object](../atl/creating-an-aggregated-object.md)  
+[Creating an Aggregated Object](../atl/creating-an-aggregated-object.md)<br/>
 Lists the steps for creating an aggregated object.
 
 ## Related Sections
 
-[Creating an ATL Project](../atl/reference/creating-an-atl-project.md)  
+[Creating an ATL Project](../atl/reference/creating-an-atl-project.md)<br/>
 Provides information about creating an ATL COM object.
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Provides links to conceptual topics on how to program using the Active Template Library.
 
 ## See Also

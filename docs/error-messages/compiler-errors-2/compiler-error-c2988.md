@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2988
-unrecognizable template declaration/definition  
-  
- The template declaration does not parse correctly. Check delimiters.
+
+unrecognizable template declaration/definition
+
+The template declaration does not parse correctly. Check delimiters.

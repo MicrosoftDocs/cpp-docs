@@ -1526,11 +1526,11 @@ Unlike the CRT tokenize functions like [strtok_s, _strtok_s_l, wcstok_s, _wcstok
 
 The output from this example is as follows:
 
-`Resulting Token: First`
-
-`Resulting Token: Second`
-
-`Resulting Token: Third`
+```Output
+Resulting Token: First
+Resulting Token: Second
+Resulting Token: Third
+```
 
 ##  <a name="trim"></a>  CStringT::Trim
 
@@ -1572,9 +1572,10 @@ Removes all leading and trailing occurrences of one of the following:
 
 The output from this example is as follows:
 
-`Before: "******Soccer is best, but liquor is quicker!!!!!"`
-
-`After : "Soccer is best, but liquor is quicker"`
+```Output
+Before: "******Soccer is best, but liquor is quicker!!!!!"
+After : "Soccer is best, but liquor is quicker"
+```
 
 ##  <a name="trimleft"></a>  CStringT::TrimLeft
 

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2412
-'label' : case-insensitive label redefined  
-  
- The label is defined more than once in the current function. Change the spelling of the label and its references.
+
+'label' : case-insensitive label redefined
+
+The label is defined more than once in the current function. Change the spelling of the label and its references.

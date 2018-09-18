@@ -159,33 +159,21 @@ Controls are a primary architecture for developing programmable software compone
 ## Displaying a Control on a Web Page  
  Here is an example of an object tag and attributes for inserting a control on a Web page.  
   
- `<OBJECT`  
-  
- `CLASSID="clsid:FC25B780-75BE-11CF-8B01-444553540000"`  
-  
- `CODEBASE="/ie/download/activex/iechart.ocx"`  
-  
- `ID=chart1`  
-  
- `WIDTH=400`  
-  
- `HEIGHT=200`  
-  
- `ALIGN=center`  
-  
- `HSPACE=0`  
-  
- `VSPACE=0`  
-  
- `>`  
-  
- `<PARAM NAME="BackColor" value="#ffffff">`  
-  
- `<PARAM NAME="ForeColor" value="#0000ff">`  
-  
- `<PARAM NAME="url" VALUE="/ie/controls/chart/mychart.txt">`  
-  
- `</OBJECT>`  
+```xml
+<OBJECT
+  CLASSID="clsid:FC25B780-75BE-11CF-8B01-444553540000"
+  CODEBASE="/ie/download/activex/iechart.ocx"
+  ID=chart1
+  WIDTH=400
+  HEIGHT=200
+  ALIGN=center
+  HSPACE=0
+  VSPACE=0>
+  <PARAM NAME="BackColor" value="#ffffff"/>
+  <PARAM NAME="ForeColor" value="#0000ff"/>
+  <PARAM NAME="url" VALUE="/ie/controls/chart/mychart.txt"/>
+</OBJECT>
+```
   
 ## Updating an Existing OLE Control to Use New ActiveX Control Features  
  If your OLE control was created with a version of Visual C++ prior to 4.2, there are steps you can take to improve its performance and enhance its functionality. For a detailed discussion of these changes, see [ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md).  

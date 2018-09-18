@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2849
-'destructor' : an interface cannot have a destructor  
-  
- A Visual C++ [interface](../../cpp/interface.md) cannot have a destructor.  
-  
- The following sample generates C2849:  
-  
-```  
-// C2849.cpp  
-// compile with: /c  
-__interface C {  
-   ~C();   // C2849 destructor not allowed in an interface  
-};  
+
+'destructor' : an interface cannot have a destructor
+
+A Visual C++ [interface](../../cpp/interface.md) cannot have a destructor.
+
+The following sample generates C2849:
+
+```
+// C2849.cpp
+// compile with: /c
+__interface C {
+   ~C();   // C2849 destructor not allowed in an interface
+};
 ```

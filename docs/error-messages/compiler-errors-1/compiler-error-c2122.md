@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2122
-'identifier' : prototype parameter in name list illegal  
-  
- The parameter is not a legal type. ANSI C does not support user-defined types.
+
+'identifier' : prototype parameter in name list illegal
+
+The parameter is not a legal type. ANSI C does not support user-defined types.

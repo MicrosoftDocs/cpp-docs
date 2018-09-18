@@ -114,7 +114,7 @@ inline BOOL Canonicalize(DWORD dwFlags = 0) throw();
 
 ### Parameters
 
-*dwFlags*  
+*dwFlags*<br/>
 The flags that control canonicalization. If no flags are specified (*dwFlags* = 0), the method converts all unsafe characters and meta sequences (such as \\.,\ .., and \\...) to escape sequences. *dwFlags* can be one of the following values:
 
 - ATL_URL_BROWSER_MODE: Does not encode or decode characters after "#" or "" and does not remove trailing white space after "". If this value is not specified, the entire URL is encoded and trailing white space is removed.
@@ -155,10 +155,10 @@ BOOL CrackUrl(LPCTSTR lpszUrl, DWORD dwFlags = 0) throw();
 
 ### Parameters
 
-*lpszUrl*  
+*lpszUrl*<br/>
 The URL.
 
-*dwFlags*  
+*dwFlags*<br/>
 Specify ATL_URL_DECODE or ATL_URL_ESCAPE to convert all escape characters in *lpszUrl* to their real values after parsing. (Before Visual C++ 2005, ATL_URL_DECODE converted all escape characters before parsing.)
 
 ### Return Value
@@ -178,13 +178,13 @@ inline BOOL CreateUrl(
 
 ### Parameters
 
-*lpszUrl*  
+*lpszUrl*<br/>
 A string buffer to hold the complete URL string.
 
-*pdwMaxLength*  
+*pdwMaxLength*<br/>
 The maximum length of the *lpszUrl* string buffer.
 
-*dwFlags*  
+*dwFlags*<br/>
 Specify ATL_URL_ESCAPE to convert all escape characters in *lpszUrl* to their real values.
 
 ### Return Value
@@ -216,7 +216,7 @@ CUrl(const CUrl& urlThat) throw();
 
 ### Parameters
 
-*urlThat*  
+*urlThat*<br/>
 The `CUrl` object to copy to create the URL.
 
 ##  <a name="dtor"></a>  CUrl::~CUrl
@@ -417,7 +417,7 @@ CUrl& operator= (const CUrl& urlThat) throw();
 
 ### Parameters
 
-*urlThat*  
+*urlThat*<br/>
 The `CUrl` object to copy into the current object.
 
 ### Return Value
@@ -434,7 +434,7 @@ inline BOOL SetExtraInfo(LPCTSTR lpszInfo) throw();
 
 ### Parameters
 
-*lpszInfo*  
+*lpszInfo*<br/>
 The string containing the extra information to include in the URL.
 
 ### Return Value
@@ -451,7 +451,7 @@ inline BOOL SetHostName(LPCTSTR lpszHost) throw();
 
 ### Parameters
 
-*lpszHost*  
+*lpszHost*<br/>
 The host name.
 
 ### Return Value
@@ -468,7 +468,7 @@ inline BOOL SetPassword(LPCTSTR lpszPass) throw();
 
 ### Parameters
 
-*lpszPass*  
+*lpszPass*<br/>
 The password.
 
 ### Return Value
@@ -485,7 +485,7 @@ inline BOOL SetPortNumber(ATL_URL_PORT nPrt) throw();
 
 ### Parameters
 
-*nPrt*  
+*nPrt*<br/>
 The port number.
 
 ### Return Value
@@ -502,7 +502,7 @@ inline BOOL SetScheme(ATL_URL_SCHEME nScheme) throw();
 
 ### Parameters
 
-*nScheme*  
+*nScheme*<br/>
 One of the [ATL_URL_SCHEME](atl-url-scheme-enum.md) values for the scheme.
 
 ### Return Value
@@ -523,7 +523,7 @@ inline BOOL SetSchemeName(LPCTSTR lpszSchm) throw();
 
 ### Parameters
 
-*lpszSchm*  
+*lpszSchm*<br/>
 The URL scheme name.
 
 ### Return Value
@@ -544,7 +544,7 @@ inline BOOL SetUrlPath(LPCTSTR lpszPath) throw();
 
 ### Parameters
 
-*lpszPath*  
+*lpszPath*<br/>
 The URL path.
 
 ### Return Value
@@ -561,7 +561,7 @@ inline BOOL SetUserName(LPCTSTR lpszUser) throw();
 
 ### Parameters
 
-*lpszUser*  
+*lpszUser*<br/>
 The user name.
 
 ### Return Value

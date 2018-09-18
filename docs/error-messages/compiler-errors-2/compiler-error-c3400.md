@@ -13,20 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3400
-circular constraint dependency involving 'constraint_1' and 'constraint_2'  
-  
- The compiler detected circular constraints.  
-  
- For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).  
-  
-## Example  
- The following sample generates C3400.  
-  
-```  
-// C3400.cpp  
-// compile with: /clr /c  
-generic<class T, class U>  
-where T : U  
-where U : T   // C3400  
-public ref struct R {};  
+
+circular constraint dependency involving 'constraint_1' and 'constraint_2'
+
+The compiler detected circular constraints.
+
+For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).
+
+## Example
+
+The following sample generates C3400.
+
+```
+// C3400.cpp
+// compile with: /clr /c
+generic<class T, class U>
+where T : U
+where U : T   // C3400
+public ref struct R {};
 ```

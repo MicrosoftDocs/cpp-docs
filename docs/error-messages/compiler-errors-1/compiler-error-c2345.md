@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2345
-align(value) : illegal alignment value  
-  
- You passed a value to the [align](../../cpp/align-cpp.md) keyword that is outside the allowable range.  
-  
- The following code generates C2345  
-  
-```  
-// C2345.cpp  
-// compile with: /c  
-__declspec(align(0)) int a;   // C2345  
-__declspec(align(1)) int a;   // OK  
+
+align(value) : illegal alignment value
+
+You passed a value to the [align](../../cpp/align-cpp.md) keyword that is outside the allowable range.
+
+The following code generates C2345
+
+```
+// C2345.cpp
+// compile with: /c
+__declspec(align(0)) int a;   // C2345
+__declspec(align(1)) int a;   // OK
 ```

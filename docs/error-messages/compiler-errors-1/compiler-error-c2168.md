@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2168
-'function' : too few actual parameters for intrinsic function  
-  
- A reference to an `intrinsic` function has too few parameters.
+
+'function' : too few actual parameters for intrinsic function
+
+A reference to an `intrinsic` function has too few parameters.

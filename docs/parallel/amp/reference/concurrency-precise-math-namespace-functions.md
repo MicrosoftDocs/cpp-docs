@@ -70,7 +70,7 @@ inline double acos(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -84,7 +84,7 @@ inline float acosf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -101,7 +101,7 @@ inline double acosh(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -115,7 +115,7 @@ inline float acoshf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -132,7 +132,7 @@ inline double asin(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -146,7 +146,7 @@ inline float asinf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -163,7 +163,7 @@ inline double asinh(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -177,7 +177,7 @@ inline float asinhf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -194,7 +194,7 @@ inline double atan(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -215,10 +215,10 @@ inline double atan2(
 ```  
 
 ### Parameters
-`_Y`  
+*_Y*<br/>
 Floating-point value
 
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -234,10 +234,10 @@ inline float atan2f(
 ```  
 
 ### Parameters
-`_Y`  
+*_Y*<br/>
 Floating-point value
 
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -251,7 +251,7 @@ inline float atanf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -268,7 +268,7 @@ inline double atanh(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -282,7 +282,7 @@ inline float atanhf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -299,7 +299,7 @@ inline double cbrt(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -313,7 +313,7 @@ inline float cbrtf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -330,7 +330,7 @@ inline double ceil(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -344,7 +344,7 @@ inline float ceilf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -365,10 +365,10 @@ inline double copysign(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Y`  
+*_Y*<br/>
 Floating-point value
 
 ### Return Value
@@ -384,10 +384,10 @@ inline float copysignf(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Y`  
+*_Y*<br/>
 Floating-point value
 
 ### Return Value
@@ -404,7 +404,7 @@ inline double cos(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -418,7 +418,7 @@ inline float cosf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -435,7 +435,7 @@ inline double cosh(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -449,7 +449,7 @@ inline float coshf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -466,7 +466,7 @@ inline double cospi(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -480,7 +480,7 @@ inline float cospif(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -497,7 +497,7 @@ inline double erf(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -514,7 +514,7 @@ inline double erfc(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -528,7 +528,7 @@ inline float erfcf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -545,7 +545,7 @@ inline double erfcinv(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -559,7 +559,7 @@ inline float erfcinvf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -573,7 +573,7 @@ inline float erff(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -590,7 +590,7 @@ inline double erfinv(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -604,7 +604,7 @@ inline float erfinvf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -621,7 +621,7 @@ inline double exp10(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -635,7 +635,7 @@ inline float exp10f(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -652,7 +652,7 @@ inline double expm1(double exponent) restrict(amp);
 ```  
 
 ### Parameters
-`exponent`  
+*exponent*<br/>
 The exponential term *n* of the mathematical expression `e`<sup>n</sup>, where `e` is the base of the natural logarithm.
 
 ### Return Value
@@ -666,7 +666,7 @@ inline float expm1f(float exponent) restrict(amp);
 ```  
 
 ### Parameters
-`exponent`  
+*exponent*<br/>
 The exponential term *n* of the mathematical expression `e`<sup>n</sup>, where `e` is the base of the natural logarithm.
 
 ### Return Value
@@ -683,7 +683,7 @@ inline double exp(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -697,7 +697,7 @@ inline float expf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -714,7 +714,7 @@ inline double exp2(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -728,7 +728,7 @@ inline float exp2f(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -745,7 +745,7 @@ inline double fabs(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -759,7 +759,7 @@ inline float fabsf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -815,7 +815,7 @@ inline double floor(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -829,7 +829,7 @@ inline float floorf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -896,10 +896,10 @@ inline double fmax(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Y`  
+*_Y*<br/>
 Floating-point value
 
 ### Return Value
@@ -915,10 +915,10 @@ inline float fmaxf(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Y`  
+*_Y*<br/>
 Floating-point value
 
 ### Return Value
@@ -939,10 +939,10 @@ inline double fmin(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Y`  
+*_Y*<br/>
 Floating-point value
 
 ### Return Value
@@ -958,10 +958,10 @@ inline float fminf(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Y`  
+*_Y*<br/>
 Floating-point value
 
 ### Return Value
@@ -982,10 +982,10 @@ inline double fmod(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 The first floating-point argument.
 
-`_Y`  
+*_Y*<br/>
 The second floating-point argument.
 
 ### Return Value
@@ -1001,10 +1001,10 @@ inline float fmodf(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 The first floating-point argument.
 
-`_Y`  
+*_Y*<br/>
 The second floating-point argument.
 
 ### Return Value
@@ -1021,7 +1021,7 @@ inline int fpclassify(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1042,10 +1042,10 @@ inline double frexp(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Exp`  
+*_Exp*<br/>
 Returns the integer exponent of _X in floating-point value
 
 ### Return Value
@@ -1061,10 +1061,10 @@ inline float frexpf(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Exp`  
+*_Exp*<br/>
 Returns the integer exponent of _X in floating-point value
 
 ### Return Value
@@ -1085,10 +1085,10 @@ inline double hypot(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Y`  
+*_Y*<br/>
 Floating-point value
 
 ### Return Value
@@ -1104,10 +1104,10 @@ inline float hypotf(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Y`  
+*_Y*<br/>
 Floating-point value
 
 ### Return Value
@@ -1124,7 +1124,7 @@ inline int ilogb(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1138,7 +1138,7 @@ inline int ilogbf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1155,7 +1155,7 @@ inline int isfinite(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1172,7 +1172,7 @@ inline int isinf(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1189,7 +1189,7 @@ inline int isnan(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1206,7 +1206,7 @@ inline int isnormal(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1227,10 +1227,10 @@ inline double ldexp(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value, mantissa
 
-`_Exp`  
+*_Exp*<br/>
 Integer value, exponent
 
 ### Return Value
@@ -1246,10 +1246,10 @@ inline float ldexpf(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value, mantissa
 
-`_Exp`  
+*_Exp*<br/>
 Integer value, exponent
 
 ### Return Value
@@ -1270,10 +1270,10 @@ inline double lgamma(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Sign`  
+*_Sign*<br/>
 Returns the sign
 
 ### Return Value
@@ -1289,10 +1289,10 @@ inline float lgammaf(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Sign`  
+*_Sign*<br/>
 Returns the sign
 
 ### Return Value
@@ -1309,7 +1309,7 @@ inline double log(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1326,7 +1326,7 @@ inline double log10(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1340,7 +1340,7 @@ inline float log10f(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1357,7 +1357,7 @@ inline double log1p(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1371,7 +1371,7 @@ inline float log1pf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1388,7 +1388,7 @@ inline double log2(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1402,7 +1402,7 @@ inline float log2f(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1419,7 +1419,7 @@ inline double logb(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1433,7 +1433,7 @@ inline float logbf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1447,7 +1447,7 @@ inline float logf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1468,10 +1468,10 @@ inline double modf(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Iptr`  
+*_Iptr*<br/>
 [out] The integer portion of `_X`, as a floating-point value.
 
 ### Return Value
@@ -1487,10 +1487,10 @@ inline float modff(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Iptr`  
+*_Iptr*<br/>
 The integer portion of `_X`, as a floating-point value.
 
 ### Return Value
@@ -1504,7 +1504,7 @@ inline double nan(int _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Integer value
 
 ### Return Value
@@ -1518,7 +1518,7 @@ inline float nanf(int _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Integer value
 
 ### Return Value
@@ -1535,7 +1535,7 @@ inline double nearbyint(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1549,7 +1549,7 @@ inline float nearbyintf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1570,10 +1570,10 @@ inline double nextafter(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Y`  
+*_Y*<br/>
 Floating-point value
 
 ### Return Value
@@ -1589,10 +1589,10 @@ inline float nextafterf(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Y`  
+*_Y*<br/>
 Floating-point value
 
 ### Return Value
@@ -1609,7 +1609,7 @@ inline double phi(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1623,7 +1623,7 @@ inline float phif(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1644,10 +1644,10 @@ inline double pow(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value, base
 
-`_Y`  
+*_Y*<br/>
 Floating-point value, exponent
 
 ### Return Value
@@ -1662,10 +1662,10 @@ inline float powf(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value, base
 
-`_Y`  
+*_Y*<br/>
 Floating-point value, exponent
 
 ### Return Value
@@ -1681,7 +1681,7 @@ inline double probit(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1695,7 +1695,7 @@ inline float probitf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1712,7 +1712,7 @@ inline double rcbrt(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1726,7 +1726,7 @@ inline float rcbrtf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1747,10 +1747,10 @@ inline double remainder(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Y`  
+*_Y*<br/>
 Floating-point value
 
 ### Return Value
@@ -1766,10 +1766,10 @@ inline float remainderf(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Y`  
+*_Y*<br/>
 Floating-point value
 
 ### Return Value
@@ -1792,13 +1792,13 @@ inline double remquo(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 The first floating-point argument.
 
-`_Y`  
+*_Y*<br/>
 The second floating-point argument.
 
-`_Quo`  
+*_Quo*<br/>
 [out] The address of an integer that’s used to return the quotient of the fractional bits of `_X` divided by the fractional bits of `_Y`.
 
 ### Return Value
@@ -1815,13 +1815,13 @@ inline float remquof(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 The first floating-point argument.
 
-`_Y`  
+*_Y*<br/>
 The second floating-point argument.
 
-`_Quo`  
+*_Quo*<br/>
 [out] The address of an integer that’s used to return the quotient of the fractional bits of `_X` divided by the fractional bits of `_Y`.
 
 ### Return Value
@@ -1838,7 +1838,7 @@ inline double round(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1852,7 +1852,7 @@ inline float roundf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1869,7 +1869,7 @@ inline double rsqrt(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1883,7 +1883,7 @@ inline float rsqrtf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -1904,10 +1904,10 @@ inline double scalb(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Y`  
+*_Y*<br/>
 Floating-point value
 
 ### Return Value
@@ -1923,10 +1923,10 @@ inline float scalbf(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Y`  
+*_Y*<br/>
 Floating-point value
 
 ### Return Value
@@ -1947,10 +1947,10 @@ inline double scalbn(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Y`  
+*_Y*<br/>
 Integer value
 
 ### Return Value
@@ -1966,10 +1966,10 @@ inline float scalbnf(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_Y`  
+*_Y*<br/>
 Integer value
 
 ### Return Value
@@ -1986,7 +1986,7 @@ inline int signbit(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2000,7 +2000,7 @@ inline int signbitf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2017,7 +2017,7 @@ inline double sin(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2031,7 +2031,7 @@ inline float sinf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2054,13 +2054,13 @@ inline void sincos(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_S`  
+*_S*<br/>
 Returns the sine value of _X
 
-`_C`  
+*_C*<br/>
 Returns the cosine value of _X
 
 ##  <a name="sincosf"></a>  sincosf
@@ -2074,13 +2074,13 @@ inline void sincosf(
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
-`_S`  
+*_S*<br/>
 Returns the sine value of _X
 
-`_C`  
+*_C*<br/>
 Returns the cosine value of _X
 
 ##  <a name="sinh"></a>  sinh
@@ -2094,7 +2094,7 @@ inline double sinh(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2108,7 +2108,7 @@ inline float sinhf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2125,7 +2125,7 @@ inline double sinpi(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2139,7 +2139,7 @@ inline float sinpif(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2156,7 +2156,7 @@ inline double sqrt(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2170,7 +2170,7 @@ inline float sqrtf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2187,7 +2187,7 @@ inline double tan(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2201,7 +2201,7 @@ inline float tanf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2218,7 +2218,7 @@ inline double tanh(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2232,7 +2232,7 @@ inline float tanhf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2249,7 +2249,7 @@ inline double tanpi(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2263,7 +2263,7 @@ inline float tanpif(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2280,7 +2280,7 @@ inline double tgamma(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2294,7 +2294,7 @@ inline float tgammaf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2311,7 +2311,7 @@ inline double trunc(double _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value
@@ -2325,7 +2325,7 @@ inline float truncf(float _X) restrict(amp);
 ```  
 
 ### Parameters
-`_X`  
+*_X*<br/>
 Floating-point value
 
 ### Return Value

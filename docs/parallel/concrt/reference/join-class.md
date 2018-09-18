@@ -25,11 +25,11 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
 ```   
   
 #### Parameters  
- `T`  
- The payload type of the messages joined and propagated by the block.  
+*T*<br/>
+The payload type of the messages joined and propagated by the block.  
   
- `_Jtype`  
- The kind of `join` block this is, either `greedy` or `non_greedy`  
+*_Jtype*<br/>
+The kind of `join` block this is, either `greedy` or `non_greedy`  
   
 ## Members  
   
@@ -81,8 +81,8 @@ virtual message<_OutputType>* accept_message(runtime_object_identity _MsgId);
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the offered `message` object.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the offered `message` object.  
   
 ### Return Value  
  A pointer to the `message` object that the caller now has ownership of.  
@@ -96,8 +96,8 @@ virtual message<_OutputType>* consume_message(runtime_object_identity _MsgId);
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the `message` object being consumed.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the `message` object being consumed.  
   
 ### Return Value  
  A pointer to the `message` object that the caller now has ownership of.  
@@ -137,17 +137,17 @@ join(
 ```  
   
 ### Parameters  
- `_NumInputs`  
- The number of inputs this `join` block will be allowed.  
+*_NumInputs*<br/>
+The number of inputs this `join` block will be allowed.  
   
- `_Filter`  
- A filter function which determines whether offered messages should be accepted.  
+*_Filter*<br/>
+A filter function which determines whether offered messages should be accepted.  
   
- `_PScheduler`  
- The `Scheduler` object within which the propagation task for the `join` messaging block is scheduled.  
+*_PScheduler*<br/>
+The `Scheduler` object within which the propagation task for the `join` messaging block is scheduled.  
   
- `_PScheduleGroup`  
- The `ScheduleGroup` object within which the propagation task for the `join` messaging block is scheduled. The `Scheduler` object used is implied by the schedule group.  
+*_PScheduleGroup*<br/>
+The `ScheduleGroup` object within which the propagation task for the `join` messaging block is scheduled. The `Scheduler` object used is implied by the schedule group.  
   
 ### Remarks  
  The runtime uses the default scheduler if you do not specify the `_PScheduler` or `_PScheduleGroup` parameters.  
@@ -181,11 +181,11 @@ message_status propagate_message(
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the `message` object.  
+*_PMessage*<br/>
+A pointer to the `message` object.  
   
- `_PSource`  
- A pointer to the source block offering the message.  
+*_PSource*<br/>
+A pointer to the source block offering the message.  
   
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
@@ -207,8 +207,8 @@ virtual void release_message(runtime_object_identity _MsgId);
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the `message` object being released.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the `message` object being released.  
   
 ##  <a name="reserve_message"></a> reserve_message 
 
@@ -219,8 +219,8 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the offered `message` object.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the offered `message` object.  
   
 ### Return Value  
  `true` if the message was successfully reserved, `false` otherwise.  

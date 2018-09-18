@@ -35,7 +35,7 @@ DECLARE_OBJECT_DESCRIPTION( x )
 
 ### Parameters
 
-*x*  
+*x*<br/>
 [in] The class object's description.
 
 ### Remarks
@@ -62,10 +62,10 @@ OBJECT_ENTRY_AUTO( clsid, class )
 
 ### Parameters
 
-*clsid*  
+*clsid*<br/>
 [in] The CLSID of a COM class implemented by the C++ class named *class*.
 
-*class*  
+*class*<br/>
 [in] The name of the C++ class implementing the COM class represented by *clsid*.
 
 ### Remarks
@@ -94,10 +94,10 @@ OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO( clsid, class )
 
 ### Parameters
 
-*clsid*  
+*clsid*<br/>
 [in] The CLSID of a COM class implemented by the C++ class named *class*.
 
-*class*  
+*class*<br/>
 [in] The name of the C++ class implementing the COM class represented by *clsid*.
 
 ### Remarks

@@ -13,36 +13,38 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3797
-'override': event declaration cannot have override specifier (should be placed on event add/remove/raise methods instead)  
-  
- You cannot override a trivial event (an event without explicitly defined accessor methods) with another trivial event. The overriding event must define its behavior with accessor functions.  
-  
- For more information, see [event](../../windows/event-cpp-component-extensions.md).  
-  
-## Example  
- The following sample generates C3797.  
-  
-```  
-// C3797.cpp  
-// compile with: /clr /c  
-delegate void MyDel();  
-  
-ref class Class1 {  
-public:  
-   virtual event MyDel ^ E;  
-};  
-  
-ref class Class2 : public Class1 {  
-public:  
-   virtual event MyDel ^ E override;   // C3797  
-};  
-  
-// OK  
-ref class Class3 : public Class1 {  
-public:  
-   virtual event MyDel ^ E {  
-      void add(MyDel ^ d) override {}  
-      void remove(MyDel ^ d) override {}  
-   }  
-};  
+
+'override': event declaration cannot have override specifier (should be placed on event add/remove/raise methods instead)
+
+You cannot override a trivial event (an event without explicitly defined accessor methods) with another trivial event. The overriding event must define its behavior with accessor functions.
+
+For more information, see [event](../../windows/event-cpp-component-extensions.md).
+
+## Example
+
+The following sample generates C3797.
+
+```
+// C3797.cpp
+// compile with: /clr /c
+delegate void MyDel();
+
+ref class Class1 {
+public:
+   virtual event MyDel ^ E;
+};
+
+ref class Class2 : public Class1 {
+public:
+   virtual event MyDel ^ E override;   // C3797
+};
+
+// OK
+ref class Class3 : public Class1 {
+public:
+   virtual event MyDel ^ E {
+      void add(MyDel ^ d) override {}
+      void remove(MyDel ^ d) override {}
+   }
+};
 ```

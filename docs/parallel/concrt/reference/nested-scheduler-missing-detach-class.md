@@ -53,8 +53,8 @@ nested_scheduler_missing_detach() throw();
 ```  
   
 ### Parameters  
- `_Message`  
- A descriptive message of the error.  
+*_Message*<br/>
+A descriptive message of the error.  
   
 ## See Also  
  [concurrency Namespace](concurrency-namespace.md)   

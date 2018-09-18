@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2611
-'token' : illegal following '~' (expected identifier)  
-  
- The token is not an identifier.  
-  
- The following sample generates C2611:  
-  
-```  
-// C2611.cpp  
-// compile with: /c  
-class C {  
-   C::~operator int();   // C2611  
-   ~C();   // OK  
-};  
+
+'token' : illegal following '~' (expected identifier)
+
+The token is not an identifier.
+
+The following sample generates C2611:
+
+```
+// C2611.cpp
+// compile with: /c
+class C {
+   C::~operator int();   // C2611
+   ~C();   // OK
+};
 ```

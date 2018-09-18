@@ -12,6 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # C Function Definitions
+
 A function definition specifies the name of the function, the types and number of parameters it expects to receive, and its return type. A function definition also includes a function body with the declarations of its local variables, and the statements that determine what the function does.
 
 ## Syntax
@@ -85,4 +86,5 @@ The *compound-statement* is the function body containing local variable declarat
 The sections [Function Attributes](../c-language/function-attributes.md), [Storage Class](../c-language/storage-class.md), [Return Type](../c-language/return-type.md), [Parameters](../c-language/parameters.md), and [Function Body](../c-language/function-body.md) describe the components of the function definition in detail.
 
 ## See Also
+
 [Functions](../c-language/functions-c.md)

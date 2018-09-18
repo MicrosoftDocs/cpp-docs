@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2101
-'&' on constant  
-  
- The address-of operator ( `&` ) must have an l-value as operand.  
-  
- The following sample generates C2101:  
-  
-```  
-// C2101.cpp  
-int main() {  
-   char test;  
-   test = &'a';   // C2101  
-   test = 'a';   // OK  
-}  
+
+'&' on constant
+
+The address-of operator ( `&` ) must have an l-value as operand.
+
+The following sample generates C2101:
+
+```
+// C2101.cpp
+int main() {
+   char test;
+   test = &'a';   // C2101
+   test = 'a';   // OK
+}
 ```

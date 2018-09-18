@@ -19,13 +19,13 @@ This class provides a static function for calculating hash values.
 ## Syntax
 
 ```
-template<typename T>  
+template<typename T>
 class CDefaultHashTraits
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The type of data to be stored in the collection.
 
 ## Members
@@ -56,7 +56,7 @@ static ULONG Hash(const T& element) throw();
 
 ### Parameters
 
-*element*  
+*element*<br/>
 The element.
 
 ### Return Value

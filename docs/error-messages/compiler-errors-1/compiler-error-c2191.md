@@ -13,17 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2191
-second parameter list longer than first  
-  
- A C function was declared a second time with a longer parameter list. C does not support overloaded functions.  
-  
-## Example  
- The following sample generates C2191:  
-  
-```  
-// C2191.c  
-// compile with: /Za /c  
-void func( int );  
-void func( int, float );   // C2191 different parameter list  
-void func2( int, float );   // OK  
+
+second parameter list longer than first
+
+A C function was declared a second time with a longer parameter list. C does not support overloaded functions.
+
+## Example
+
+The following sample generates C2191:
+
+```
+// C2191.c
+// compile with: /Za /c
+void func( int );
+void func( int, float );   // C2191 different parameter list
+void func2( int, float );   // OK
 ```

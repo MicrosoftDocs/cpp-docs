@@ -331,12 +331,11 @@ virtual void DrawImage(
  By default this method does nothing. Override this method in a derived class to draw the image for the ribbon element.  
   
  The following table lists possible values for the *type* parameter:  
-  
- `RibbonImageLarge`  
- Large 32x32 pixel image size.  
-  
- `RibbonImageSmall`  
- Small 16x16 pixel image size.  
+
+|||
+|-|-|
+| `RibbonImageLarge`  | Large 32x32 pixel image size.  |
+| `RibbonImageSmall`  | Small 16x16 pixel image size.  |
   
 ##  <a name="find"></a>  CMFCRibbonBaseElement::Find  
  Returns the specified pointer if it points to the current object.  

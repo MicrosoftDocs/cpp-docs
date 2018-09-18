@@ -22,6 +22,6 @@ The following classes provide support for developing Microsoft Management Consol
 
 ## See Also
 
-[Class Overview](../atl/atl-class-overview.md)   
+[Class Overview](../atl/atl-class-overview.md)<br/>
 [Snap-In Object Macros](../atl/reference/snap-in-object-macros.md)
 

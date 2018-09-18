@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2669
-member function not allowed in anonymous union  
-  
-[Anonymous unions](../../cpp/unions.md#anonymous_unions) cannot have member functions.  
-  
-## Example  
-The following sample generates C2669:  
-  
-```cpp  
-// C2669.cpp  
-struct X {  
-   union {  
-      int i;  
-      void f() {   // C2669, remove function  
-         i = 0;   
-      }  
-   };  
-};  
-```  
-  
+
+member function not allowed in anonymous union
+
+[Anonymous unions](../../cpp/unions.md#anonymous_unions) cannot have member functions.
+
+## Example
+
+The following sample generates C2669:
+
+```cpp
+// C2669.cpp
+struct X {
+   union {
+      int i;
+      void f() {   // C2669, remove function
+         i = 0;
+      }
+   };
+};
+```

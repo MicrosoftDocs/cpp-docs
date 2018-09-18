@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2846
-'constructor' : an interface cannot have a constructor  
-  
- A Visual C++ [interface](../../cpp/interface.md) cannot have a constructor.  
-  
- The following sample generates C2846:  
-  
-```  
-// C2846.cpp  
-// compile with: /c  
-__interface C {  
-   C();   // C2846 constructor not allowed in an interface  
-};  
+
+'constructor' : an interface cannot have a constructor
+
+A Visual C++ [interface](../../cpp/interface.md) cannot have a constructor.
+
+The following sample generates C2846:
+
+```
+// C2846.cpp
+// compile with: /c
+__interface C {
+   C();   // C2846 constructor not allowed in an interface
+};
 ```

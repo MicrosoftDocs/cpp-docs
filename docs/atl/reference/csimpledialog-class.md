@@ -19,7 +19,7 @@ This class implements a basic modal dialog box.
 ## Syntax
 
 ```
-template <WORD t_wDlgTemplateID, BOOL t_bCenter = TRUE>  
+template <WORD t_wDlgTemplateID, BOOL t_bCenter = TRUE>
 class CSimpleDialog : public CDialogImplBase
 ```
 
@@ -29,7 +29,7 @@ class CSimpleDialog : public CDialogImplBase
 
 The resource ID of the dialog template resource.
 
-*t_bCenter*  
+*t_bCenter*<br/>
 TRUE if the dialog object is to be centered on the owner window; otherwise FALSE.
 
 ## Members
@@ -68,7 +68,7 @@ INT_PTR DoModal(HWND hWndParent = ::GetActiveWindow());
 
 ### Parameters
 
-*hWndParent*  
+*hWndParent*<br/>
 A handle to the parent of the dialog box. If no value is provided, the parent is set to the current active window.
 
 ### Return Value

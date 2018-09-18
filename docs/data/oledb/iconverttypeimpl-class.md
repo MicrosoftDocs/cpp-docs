@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IConvertTypeImpl Class
+
 Provides an implementation of the [IConvertType](/previous-versions/windows/desktop/ms715926\(v=vs.85\)) interface.  
   
 ## Syntax
@@ -24,11 +25,13 @@ class ATL_NO_VTABLE IConvertTypeImpl
 ```  
   
 ### Parameters  
- *T*  
- Your class, derived from `IConvertTypeImpl`.  
+
+*T*<br/>
+Your class, derived from `IConvertTypeImpl`.  
 
 ## Requirements  
- **Header:** atldb.h  
+
+**Header:** atldb.h  
   
 ## Members  
   
@@ -39,9 +42,11 @@ class ATL_NO_VTABLE IConvertTypeImpl
 |[CanConvert](#canconvert)|Gives information on the availability of type conversions on a command or on a rowset.|  
   
 ## Remarks  
- This interface is mandatory on commands, rowsets, and index rowsets. `IConvertTypeImpl` implements the interface by delegating to the conversion object supplied by OLE DB.  
+
+This interface is mandatory on commands, rowsets, and index rowsets. `IConvertTypeImpl` implements the interface by delegating to the conversion object supplied by OLE DB.  
 
 ## <a name="canconvert"></a> IConvertTypeImpl::CanConvert
+
 Gives information on the availability of type conversions on a command or on a rowset.  
   
 ### Syntax  
@@ -53,11 +58,14 @@ STDMETHOD(CanConvert)(DBTYPE wFromType, 
 ```  
   
 #### Parameters  
- See [IConvertType::CanConvert](/previous-versions/windows/desktop/ms711224\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IConvertType::CanConvert](/previous-versions/windows/desktop/ms711224\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
- Uses OLE DB data conversion in `MSADC.DLL`.  
+
+Uses OLE DB data conversion in `MSADC.DLL`.  
   
 ## See Also  
- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

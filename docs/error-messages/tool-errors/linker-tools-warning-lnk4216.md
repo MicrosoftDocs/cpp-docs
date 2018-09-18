@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4216
-Exported entry point entry  
-  
- An entry point was exported from a DLL. The entry point of a DLL does not need to be exported.
+
+Exported entry point entry
+
+An entry point was exported from a DLL. The entry point of a DLL does not need to be exported.

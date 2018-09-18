@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2132
-syntax error : unexpected identifier  
-  
- An identifier appears in an unsupported context.
+
+syntax error : unexpected identifier
+
+An identifier appears in an unsupported context.

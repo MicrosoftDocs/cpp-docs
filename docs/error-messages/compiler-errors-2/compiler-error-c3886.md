@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3886
-'var' : a literal data member must be initialized  
-  
- A [literal](../../windows/literal-cpp-component-extensions.md) variable must be initialized when it is declaraed.  
-  
- The following sample generates C3886:  
-  
-```  
-// C3886.cpp  
-// compile with: /clr /c  
-ref struct Y1 {  
-   literal int staticConst;   // C3886  
-   literal int staticConst2 = 0;   // OK  
-};  
+
+'var' : a literal data member must be initialized
+
+A [literal](../../windows/literal-cpp-component-extensions.md) variable must be initialized when it is declaraed.
+
+The following sample generates C3886:
+
+```
+// C3886.cpp
+// compile with: /clr /c
+ref struct Y1 {
+   literal int staticConst;   // C3886
+   literal int staticConst2 = 0;   // OK
+};
 ```

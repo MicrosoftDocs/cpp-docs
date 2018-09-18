@@ -12,19 +12,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Program Structure
-This section gives an overview of C programs and program execution. Terms and features important to understanding C programs and components are also introduced. Topics discussed include:  
-  
--   [Source files and source programs](../c-language/source-files-and-source-programs.md)  
-  
--   [The main function and program execution](../c-language/main-function-and-program-execution.md)  
-  
--   [Parsing command-line arguments](../c-language/parsing-c-command-line-arguments.md)  
-  
--   [Lifetime, scope, visibility, and linkage](../c-language/lifetime-scope-visibility-and-linkage.md)  
-  
--   [Name spaces](../c-language/name-spaces.md)  
-  
- Because this section is an overview, the topics discussed contain introductory material only. See the cross-referenced information for more detailed explanations.  
-  
-## See Also  
- [C Language Reference](../c-language/c-language-reference.md)
+
+This section gives an overview of C programs and program execution. Terms and features important to understanding C programs and components are also introduced. Topics discussed include:
+
+- [Source files and source programs](../c-language/source-files-and-source-programs.md)
+
+- [The main function and program execution](../c-language/main-function-and-program-execution.md)
+
+- [Parsing command-line arguments](../c-language/parsing-c-command-line-arguments.md)
+
+- [Lifetime, scope, visibility, and linkage](../c-language/lifetime-scope-visibility-and-linkage.md)
+
+- [Name spaces](../c-language/name-spaces.md)
+
+Because this section is an overview, the topics discussed contain introductory material only. See the cross-referenced information for more detailed explanations.
+
+## See Also
+
+[C Language Reference](../c-language/c-language-reference.md)

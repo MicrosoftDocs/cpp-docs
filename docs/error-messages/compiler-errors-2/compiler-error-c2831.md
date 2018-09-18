@@ -13,29 +13,30 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2831
-'operator operator' cannot have default parameters  
-  
- Only three operators can have default parameters:  
-  
--   [new](../../cpp/new-operator-cpp.md)  
-  
--   Assignment =  
-  
--   Left parenthesis (  
-  
- The following sample generates C2831:  
-  
-```  
-// C2831.cpp  
-// compile with: /c  
-#define BINOP <=  
-class A {  
-public:  
-   int i;  
-   int operator BINOP(int x = 1) {   // C2831  
-   // try the following line instead  
-   // int operator BINOP(int x) {  
-      return i+x;  
-   }  
-};  
+
+'operator operator' cannot have default parameters
+
+Only three operators can have default parameters:
+
+- [new](../../cpp/new-operator-cpp.md)
+
+- Assignment =
+
+- Left parenthesis (
+
+The following sample generates C2831:
+
+```
+// C2831.cpp
+// compile with: /c
+#define BINOP <=
+class A {
+public:
+   int i;
+   int operator BINOP(int x = 1) {   // C2831
+   // try the following line instead
+   // int operator BINOP(int x) {
+      return i+x;
+   }
+};
 ```

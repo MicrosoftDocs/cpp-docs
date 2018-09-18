@@ -19,6 +19,6 @@ ATL is shipped as source code which you include in your application. ATL also ma
 
 ## See Also
 
-[Introduction to ATL](../atl/introduction-to-atl.md)   
+[Introduction to ATL](../atl/introduction-to-atl.md)<br/>
 [ATL Project Wizard](../atl/reference/atl-project-wizard.md)
 

@@ -90,13 +90,13 @@ The constructor.
 
 ```
 CSecurityDesc() throw();
-CSecurityDesc(const CSecurityDesc& rhs) throw(... );  
+CSecurityDesc(const CSecurityDesc& rhs) throw(... );
 CSecurityDesc(const SECURITY_DESCRIPTOR& rhs) throw(...);
 ```
 
 ### Parameters
 
-*rhs*  
+*rhs*<br/>
 The `CSecurityDesc` object or `SECURITY_DESCRIPTOR` structure to assign to the new `CSecurityDesc` object.
 
 ### Remarks
@@ -125,7 +125,7 @@ bool FromString(LPCTSTR pstr) throw(...);
 
 ### Parameters
 
-*pstr*  
+*pstr*<br/>
 Pointer to a null-terminated string that contains the [string-format security descriptor](/windows/desktop/SecAuthZ/security-descriptor-string-format) to be converted.
 
 ### Return Value
@@ -148,7 +148,7 @@ bool GetControl(SECURITY_DESCRIPTOR_CONTROL* psdc) const throw();
 
 ### Parameters
 
-*psdc*  
+*psdc*<br/>
 Pointer to a `SECURITY_DESCRIPTOR_CONTROL` structure that receives the security descriptor's control information.
 
 ### Return Value
@@ -172,13 +172,13 @@ bool GetDacl(
 
 ### Parameters
 
-*pDacl*  
+*pDacl*<br/>
 Pointer to an `CDacl` structure in which to store a copy of the security descriptor's DACL. If a discretionary ACL exists, the method sets *pDacl* to the address of the security descriptor's discretionary ACL. If a discretionary ACL does not exist, no value is stored.
 
-*pbPresent*  
+*pbPresent*<br/>
 Pointer to a value that indicates the presence of a discretionary ACL in the specified security descriptor. If the security descriptor contains a discretionary ACL, this parameter is set to true. If the security descriptor does not contain a discretionary ACL, this parameter is set to false.
 
-*pbDefaulted*  
+*pbDefaulted*<br/>
 Pointer to a flag set to the value of the SE_DACL_DEFAULTED flag in the `SECURITY_DESCRIPTOR_CONTROL` structure if a discretionary ACL exists for the security descriptor. If this flag is true, the discretionary ACL was retrieved by a default mechanism; if false, the discretionary ACL was explicitly specified by a user.
 
 ### Return Value
@@ -197,10 +197,10 @@ bool GetGroup(
 
 ### Parameters
 
-*pSid*  
+*pSid*<br/>
 Pointer to a [CSid](../../atl/reference/csid-class.md) (security identifier) that receives a copy of the group stored in the CDacl.
 
-*pbDefaulted*  
+*pbDefaulted*<br/>
 Pointer to a flag set to the value of the SE_GROUP_DEFAULTED flag in the `SECURITY_DESCRIPTOR_CONTROL` structure when the method returns.
 
 ### Return Value
@@ -219,10 +219,10 @@ bool GetOwner(
 
 ### Parameters
 
-*pSid*  
+*pSid*<br/>
 Pointer to a [CSid](../../atl/reference/csid-class.md) (security identifier) that receives a copy of the group stored in the CDacl.
 
-*pbDefaulted*  
+*pbDefaulted*<br/>
 Pointer to a flag set to the value of the SE_OWNER_DEFAULTED flag in the `SECURITY_DESCRIPTOR_CONTROL` structure when the method returns.
 
 ### Return Value
@@ -254,13 +254,13 @@ bool GetSacl(
 
 ### Parameters
 
-*pSacl*  
+*pSacl*<br/>
 Pointer to an `CSacl` structure in which to store a copy of the security descriptor's SACL. If a system ACL exists, the method sets *pSacl* to the address of the security descriptor's system ACL. If a system ACL does not exist, no value is stored.
 
-*pbPresent*  
+*pbPresent*<br/>
 Pointer to a flag the method sets to indicate the presence of a system ACL in the specified security descriptor. If the security descriptor contains a system ACL, this parameter is set to true. If the security descriptor does not contain a system ACL, this parameter is set to false.
 
-*pbDefaulted*  
+*pbDefaulted*<br/>
 Pointer to a flag set to the value of the SE_SACL_DEFAULTED flag in the `SECURITY_DESCRIPTOR_CONTROL` structure if a system ACL exists for the security descriptor.
 
 ### Return Value
@@ -490,13 +490,13 @@ A security descriptor in absolute format contains pointers to the information it
 Assignment operator.
 
 ```
-CSecurityDesc& operator= (const SECURITY_DESCRIPTOR& rhs) throw(...);  
+CSecurityDesc& operator= (const SECURITY_DESCRIPTOR& rhs) throw(...);
 CSecurityDesc& operator= (const CSecurityDesc& rhs) throw(...);
 ```
 
 ### Parameters
 
-*rhs*  
+*rhs*<br/>
 The `SECURITY_DESCRIPTOR` structure or `CSecurityDesc` object to assign to the `CSecurityDesc` object.
 
 ### Return Value
@@ -507,7 +507,7 @@ Returns the updated `CSecurityDesc` object.
 
 Casts a value to a pointer to the `SECURITY_DESCRIPTOR` structure.
 
-```  
+```
 operator const SECURITY_DESCRIPTOR *() const throw();
 ```
 
@@ -523,10 +523,10 @@ bool SetControl(
 
 ### Parameters
 
-*ControlBitsOfInterest*  
+*ControlBitsOfInterest*<br/>
 A SECURITY_DESCRIPTOR_CONTROL mask that indicates the control bits to set. For a list of the flags which can be set, see [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx).
 
-*ControlBitsToSet*  
+*ControlBitsToSet*<br/>
 A SECURITY_DESCRIPTOR_CONTROL mask that indicates the new values for the control bits specified by the *ControlBitsOfInterest* mask. This parameter can be a combination of the flags listed for the *ControlBitsOfInterest* parameter.
 
 ### Return Value
@@ -553,13 +553,13 @@ inline void SetDacl(
 
 ### Parameters
 
-*Dacl*  
+*Dacl*<br/>
 Reference to a `CDacl` object specifying the DACL for the security descriptor. This parameter must not be NULL. To set a NULL DACL in the security descriptor, the first form of the method should be used with *bPresent* set to false.
 
-*bPresent*  
+*bPresent*<br/>
 Specifies a flag indicating the presence of a DACL in the security descriptor. If this parameter is true, the method sets the SE_DACL_PRESENT flag in the `SECURITY_DESCRIPTOR_CONTROL` structure and uses the values in the *Dacl* and *bDefaulted* parameters. If it is false, the method clears the SE_DACL_PRESENT flag, and *bDefaulted* is ignored.
 
-*bDefaulted*  
+*bDefaulted*<br/>
 Specifies a flag indicating the source of the DACL. If this flag is true, the DACL has been retrieved by some default mechanism. If false, the DACL has been explicitly specified by a user. The method stores this value in the SE_DACL_DEFAULTED flag of the `SECURITY_DESCRIPTOR_CONTROL` structure. If this parameter is not specified, the SE_DACL_DEFAULTED flag is cleared.
 
 ### Return Value
@@ -580,10 +580,10 @@ bool SetGroup(const CSid& Sid, bool bDefaulted = false) throw(...);
 
 ### Parameters
 
-*Sid*  
+*Sid*<br/>
 Reference to a [CSid](../../atl/reference/csid-class.md) object for the security descriptor's new primary group. This parameter must not be NULL. A security descriptor can be marked as not having a DACL or a SACL, but it must have a group and an owner, even it these are the NULL SID (which is a built-in SID with a special meaning).
 
-*bDefaulted*  
+*bDefaulted*<br/>
 Indicates whether the primary group information was derived from a default mechanism. If this value is true, it is default information, and the method stores this value as the SE_GROUP_DEFAULTED flag in the `SECURITY_DESCRIPTOR_CONTROL` structure. If this parameter is zero, the SE_GROUP_DEFAULTED flag is cleared.
 
 ### Return Value
@@ -600,10 +600,10 @@ bool SetOwner(const CSid& Sid, bool bDefaulted = false) throw(...);
 
 ### Parameters
 
-*Sid*  
+*Sid*<br/>
 The [CSid](../../atl/reference/csid-class.md) object for the security descriptor's new primary owner. This parameter must not be NULL.
 
-*bDefaulted*  
+*bDefaulted*<br/>
 Indicates whether the owner information is derived from a default mechanism. If this value is true, it is default information. The method stores this value as the SE_OWNER_DEFAULTED flag in the `SECURITY_DESCRIPTOR_CONTROL` structure. If this parameter is zero, the SE_OWNER_DEFAULTED flag is cleared.
 
 ### Return Value
@@ -620,10 +620,10 @@ bool SetSacl(const CSacl& Sacl, bool bDefaulted = false) throw(...);
 
 ### Parameters
 
-*Sacl*  
+*Sacl*<br/>
 Pointer to an `CSacl` object specifying the SACL for the security descriptor. This parameter must not be NULL, and must be a CSacl object. Unlike DACLs, there is no difference between NULL and an empty SACL, as SACL objects do not specify access rights, only auditing information.
 
-*bDefaulted*  
+*bDefaulted*<br/>
 Specifies a flag indicating the source of the SACL. If this flag is true, the SACL has been retrieved by some default mechanism. If false, the SACL has been explicitly specified by a user. The method stores this value in the SE_SACL_DEFAULTED flag of the `SECURITY_DESCRIPTOR_CONTROL` structure. If this parameter is not specified, the SE_SACL_DEFAULTED flag is cleared.
 
 ### Return Value
@@ -643,10 +643,10 @@ bool ToString(
 
 ### Parameters
 
-*pstr*  
+*pstr*<br/>
 Pointer to a null-terminated string which will receive the [string-format security descriptor](/windows/desktop/SecAuthZ/security-descriptor-string-format).
 
-*si*  
+*si*<br/>
 Specifies a combination of SECURITY_INFORMATION bit flags to indicate the components of the security descriptor to include in the output string.
 
 ### Return Value
@@ -674,7 +674,7 @@ This method calls [ConvertStringSecurityDescriptorToSecurityDescriptor](/windows
 
 ## See Also
 
-[Security Sample](../../visual-cpp-samples.md)   
-[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)   
-[Class Overview](../../atl/atl-class-overview.md)   
+[Security Sample](../../visual-cpp-samples.md)<br/>
+[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)

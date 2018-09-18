@@ -23,8 +23,8 @@ class message_processor;
 ```  
   
 #### Parameters  
- `T`  
- The data type of the payload within messages handled by this `message_processor` object.  
+*T*<br/>
+The data type of the payload within messages handled by this `message_processor` object.  
   
 ## Members  
   
@@ -65,8 +65,8 @@ virtual void async_send(_Inout_opt_ message<T>* _Msg) = 0;
 ```  
   
 ### Parameters  
- `_Msg`  
- A `message` object to send asynchronously.  
+*_Msg*<br/>
+A `message` object to send asynchronously.  
   
 ### Remarks  
  Processor implementations should override this method.  
@@ -91,8 +91,8 @@ virtual void sync_send(_Inout_opt_ message<T>* _Msg) = 0;
 ```  
   
 ### Parameters  
- `_Msg`  
- A `message` object to send synchronously.  
+*_Msg*<br/>
+A `message` object to send synchronously.  
   
 ### Remarks  
  Processor implementations should override this method.  

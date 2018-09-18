@@ -24,7 +24,7 @@ The following class provides support for creating composite controls
 
 ## See Also
 
-[Class Overview](../atl/atl-class-overview.md)   
-[Composite Control Macros](../atl/reference/composite-control-macros.md)   
+[Class Overview](../atl/atl-class-overview.md)<br/>
+[Composite Control Macros](../atl/reference/composite-control-macros.md)<br/>
 [Composite Control Global Functions](../atl/reference/composite-control-global-functions.md)
 

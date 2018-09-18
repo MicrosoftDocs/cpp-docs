@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3130
-Internal Compiler Error: failed to write injected code block to PDB  
-  
- This error occurs if the compiler failed to write an injected code block to the .pdb file. The most common reason for the failure is lack of disk space.
+
+Internal Compiler Error: failed to write injected code block to PDB
+
+This error occurs if the compiler failed to write an injected code block to the .pdb file. The most common reason for the failure is lack of disk space.

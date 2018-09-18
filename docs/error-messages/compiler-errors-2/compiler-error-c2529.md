@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2529
-'name' : reference to reference is illegal  
-  
- This error may be fixed by using pointer syntax and declaring a reference to a pointer.  
-  
- The following sample generates C2529:  
-  
-```  
-// C2529.cpp  
-// compile with: /c  
-int i;  
-int &ri = i;  
-int &(&rri) = ri;   // C2529  
+
+'name' : reference to reference is illegal
+
+This error may be fixed by using pointer syntax and declaring a reference to a pointer.
+
+The following sample generates C2529:
+
+```
+// C2529.cpp
+// compile with: /c
+int i;
+int &ri = i;
+int &(&rri) = ri;   // C2529
 ```

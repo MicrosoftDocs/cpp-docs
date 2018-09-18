@@ -19,13 +19,13 @@ This class provides methods to handle object reference count management for both
 ## Syntax
 
 ```
-template<class ThreadModel>  
+template<class ThreadModel>
 class CComObjectRootEx : public CComObjectRootBase
 ```
 
 #### Parameters
 
-*ThreadModel*  
+*ThreadModel*<br/>
 The class whose methods implement the desired threading model. You can explicitly choose the threading model by setting *ThreadModel* to [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md), [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md), or [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md). You can accept the server's default thread model by setting *ThreadModel* to [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) or [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel).  
 
 ## Members
@@ -180,16 +180,16 @@ static HRESULT InternalQueryInterface(
 
 ### Parameters
 
-*pThis*  
+*pThis*<br/>
 [in] A pointer to the object that contains the COM map of interfaces exposed to `QueryInterface`.
 
-*pEntries*  
+*pEntries*<br/>
 [in] A pointer to the `_ATL_INTMAP_ENTRY` structure that accesses a map of available interfaces.
 
-*iid*  
+*iid*<br/>
 [in] The GUID of the interface being requested.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] A pointer to the interface pointer specified in *iid*, or NULL if the interface is not found.
 
 ### Return Value
@@ -283,7 +283,7 @@ static void WINAPI ObjectMain(bool bStarting);
 
 ### Parameters
 
-*bStarting*  
+*bStarting*<br/>
 [out] The value is TRUE if the class is being initialized; otherwise FALSE.
 
 ### Remarks
@@ -318,10 +318,10 @@ HRESULT OuterQueryInterface(REFIID iid, void** ppvObject);
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] The GUID of the interface being requested.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] A pointer to the interface pointer specified in *iid*, or NULL if the aggregation does not support the interface.
 
 ### Return Value
@@ -356,7 +356,7 @@ If the thread model is single-threaded, this method does nothing.
 
 ## See Also
 
-[CComAggObject Class](../../atl/reference/ccomaggobject-class.md)   
-[CComObject Class](../../atl/reference/ccomobject-class.md)   
-[CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)   
+[CComAggObject Class](../../atl/reference/ccomaggobject-class.md)<br/>
+[CComObject Class](../../atl/reference/ccomobject-class.md)<br/>
+[CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

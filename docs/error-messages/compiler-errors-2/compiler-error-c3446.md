@@ -12,33 +12,34 @@ author: "corob-msft"
 ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
-# Compiler Error C3446  
-  
->'*class*': a default member initializer is not allowed for a member of a value class  
-  
+# Compiler Error C3446
+
+>'*class*': a default member initializer is not allowed for a member of a value class
+
 In Visual Studio 2015 and earlier, the compiler permitted (but ignored) a default member initializer for a member of a value class. Default initialization of a value class always zero-initializes the members; a default constructor is not permitted. In Visual Studio 2017, default member initializers raise a compiler error, as shown in this example:
 
-## Example  
- The following sample generates C3446 in Visual Studio 2017 and later:  
-  
-```cpp  
-// C3446.cpp  
+## Example
+
+The following sample generates C3446 in Visual Studio 2017 and later:
+
+```cpp
+// C3446.cpp
 value struct V
 {
-       int i = 0; // error C3446: 'V::i': a default member initializer  
+       int i = 0; // error C3446: 'V::i': a default member initializer
                   // is not allowed for a member of a value class
-       int j {0}; // C3446           
+       int j {0}; // C3446
 };
-```  
-  
-To correct the error, remove the initializer:  
-  
-```cpp  
-// C3446b.cpp  
+```
+
+To correct the error, remove the initializer:
+
+```cpp
+// C3446b.cpp
 value struct V
 {
-       int i;  
+       int i;
        int j;
 };
-```  
-  
+```
+

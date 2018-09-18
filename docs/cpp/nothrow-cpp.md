@@ -18,8 +18,8 @@ ms.workload: ["cplusplus"]
 
 A **__declspec** extended attribute which can be used in the declaration of functions.
 
-## Syntax  
-  
+## Syntax
+
 > *return-type* __declspec(nothrow) [*call-convention*] *function-name* ([*argument-list*])
 
 ## Remarks
@@ -45,6 +45,7 @@ The `void __stdcall f3() throw();` declaration uses the syntax defined by the C+
 **END Microsoft Specific**
 
 ## See also
- [__declspec](../cpp/declspec.md)  
- [noexcept](noexcept-cpp.md)  
- [Keywords](../cpp/keywords-cpp.md)  
+
+[__declspec](../cpp/declspec.md)<br/>
+[noexcept](noexcept-cpp.md)<br/>
+[Keywords](../cpp/keywords-cpp.md)

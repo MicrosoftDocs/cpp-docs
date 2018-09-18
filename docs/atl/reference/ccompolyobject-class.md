@@ -19,14 +19,14 @@ This class implements `IUnknown` for an aggregated or nonaggregated object.
 ## Syntax
 
 ```
-template<class contained>  
+template<class contained>
 class CComPolyObject : public IUnknown,
       public CComObjectRootEx<contained::_ThreadModel::ThreadModelNoCS>
 ```
 
 #### Parameters
 
-*contained*  
+*contained*<br/>
 Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), as well as from any other interfaces you want to support on the object.
 
 ## Members
@@ -105,7 +105,7 @@ CComPolyObject(void* pv);
 
 ### Parameters
 
-*pv*  
+*pv*<br/>
 [in] A pointer to the outer unknown if the object is to be aggregated, or NULL if the object if the object is not aggregated.
 
 ### Remarks
@@ -138,7 +138,7 @@ static HRESULT WINAPI CreateInstance(
 
 ### Parameters
 
-*pp*  
+*pp*<br/>
 [out] A pointer to a **CComPolyObject<** `contained`**>** pointer. If `CreateInstance` is unsuccessful, *pp* is set to NULL.
 
 ### Return Value
@@ -181,7 +181,7 @@ CComContainedObject<contained> m_contained;
 
 ### Parameters
 
-*contained*  
+*contained*<br/>
 [in] Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), as well as from any other interfaces you want to support on the object.
 
 ### Remarks
@@ -194,22 +194,22 @@ Retrieves a pointer to the requested interface.
 
 ```
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
-template <class Q>  
+template <class Q>
 HRESULT QueryInterface(Q** pp);
 ```
 
 ### Parameters
 
-*Q*  
+*Q*<br/>
 The COM interface.
 
-*iid*  
+*iid*<br/>
 [in] The identifier of the interface being requested.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] A pointer to the interface pointer identified by *iid*. If the object does not support this interface, *ppvObject* is set to NULL.
 
-*pp*  
+*pp*<br/>
 [out] A pointer to the interface identified by `__uuidof(Q)`.
 
 ### Return Value
@@ -234,6 +234,6 @@ In debug builds, `Release` returns a value that may be useful for diagnostics or
 
 ## See Also
 
-[CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
-[DECLARE_POLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_poly_aggregatable)   
+[CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)<br/>
+[DECLARE_POLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_poly_aggregatable)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

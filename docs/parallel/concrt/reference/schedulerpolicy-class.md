@@ -64,8 +64,8 @@ unsigned int GetPolicyValue(PolicyElementKey key) const;
 ```  
   
 ### Parameters  
- `key`  
- The policy key to retrieve a value for.  
+*key*<br/>
+The policy key to retrieve a value for.  
   
 ### Return Value  
  If the key specified by the `key` parameter is supported, the policy value for the key cast to an `unsigned int`.  
@@ -82,8 +82,8 @@ SchedulerPolicy& operator= (const SchedulerPolicy& _RhsPolicy);
 ```  
   
 ### Parameters  
- `_RhsPolicy`  
- The policy to assign to this policy.  
+*_RhsPolicy*<br/>
+The policy to assign to this policy.  
   
 ### Return Value  
  A reference to the scheduler policy.  
@@ -107,11 +107,11 @@ SchedulerPolicy(
 ```  
   
 ### Parameters  
- `_PolicyKeyCount`  
- The number of key/value pairs that follow the `_PolicyKeyCount` parameter.  
+*_PolicyKeyCount*<br/>
+The number of key/value pairs that follow the `_PolicyKeyCount` parameter.  
   
- `_SrcPolicy`  
- The source policy to copy.  
+*_SrcPolicy*<br/>
+The source policy to copy.  
   
 ### Remarks  
  The first constructor creates a new scheduler policy where all policies will be initialized to their default values.  
@@ -139,11 +139,11 @@ void SetConcurrencyLimits(
 ```  
   
 ### Parameters  
- `_MinConcurrency`  
- The value for the `MinConcurrency` policy key.  
+*_MinConcurrency*<br/>
+The value for the `MinConcurrency` policy key.  
   
- `_MaxConcurrency`  
- The value for the `MaxConcurrency` policy key.  
+*_MaxConcurrency*<br/>
+The value for the `MaxConcurrency` policy key.  
   
 ### Remarks  
  The method will throw [invalid_scheduler_policy_thread_specification](invalid-scheduler-policy-thread-specification-class.md) if the value specified for the `MinConcurrency` policy is greater than that specified for the `MaxConcurrency` policy.  
@@ -161,11 +161,11 @@ unsigned int SetPolicyValue(
 ```  
   
 ### Parameters  
- `key`  
- The policy key to set a value for.  
+*key*<br/>
+The policy key to set a value for.  
   
- `value`  
- The value to set the policy key to.  
+*value*<br/>
+The value to set the policy key to.  
   
 ### Return Value  
  If the key specified by the `key` parameter is supported, the old policy value for the key cast to an `unsigned int`.  

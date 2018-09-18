@@ -143,25 +143,25 @@ Implement the method as shown below:
 Once you've built the project, you can test the property page and the helper object using a simple macro that you can create and run in the Visual Studio development environment. This macro will create a helper object, then call its `ShowPage` method using the ProgID of the **DocProperties** property page and the `IUnknown` pointer of the document currently active in the Visual Studio editor. The code you need for this macro is shown below:
 
 ```vb
-Imports EnvDTE  
-Imports System.Diagnostics  
+Imports EnvDTE
+Imports System.Diagnostics
 
-Public Module AtlPages  
+Public Module AtlPages
 
-Public Sub Test()  
-    Dim Helper  
-    Helper = CreateObject("ATLPages7.Helper.1")  
+Public Sub Test()
+    Dim Helper
+    Helper = CreateObject("ATLPages7.Helper.1")
 
-    On Error Resume Next  
-    Helper.ShowPage( ActiveDocument.Name, "ATLPages7Lib.DocumentProperties.1", DTE.ActiveDocument )  
+    On Error Resume Next
+    Helper.ShowPage( ActiveDocument.Name, "ATLPages7Lib.DocumentProperties.1", DTE.ActiveDocument )
 End Sub
 
-End Module  
+End Module
 ```
 
 When you run this macro, the property page will be displayed showing the file name and read-only status of the currently active text document. The read-only state of the document only reflects the ability to write to the document in the development environment; it doesn't affect the read-only attribute of the file on disk.
 
 ## See Also
 
-[Property Pages](../atl/atl-com-property-pages.md)   
+[Property Pages](../atl/atl-com-property-pages.md)<br/>
 [ATLPages Sample](../visual-cpp-samples.md)

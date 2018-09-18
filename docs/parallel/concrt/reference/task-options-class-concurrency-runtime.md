@@ -145,9 +145,13 @@ task_options(
   
 ### Parameters  
  `_SchedType`  
+
  `_Token`  
+
  `_ContinuationContext`  
+
  `_Scheduler`  
+
  `_TaskOptions`  
   
 ## See Also  

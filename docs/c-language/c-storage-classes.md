@@ -45,6 +45,6 @@ The exact meaning of each storage-class specifier depends on two factors:
 
 [Storage-Class Specifiers for External-Level Declarations](../c-language/storage-class-specifiers-for-external-level-declarations.md) and [Storage-Class Specifiers for Internal-Level Declarations](../c-language/storage-class-specifiers-for-internal-level-declarations.md) describe the *storage-class-specifier* terminals in each kind of declaration and explain the default behavior when the *storage-class-specifier* is omitted from a variable. [Storage-Class Specifiers with Function Declarations](../c-language/storage-class-specifiers-with-function-declarations.md) discusses storage-class specifiers used with functions.
 
-## See Also  
+## See Also
 
-[Declarations and Types](../c-language/declarations-and-types.md)  
+[Declarations and Types](../c-language/declarations-and-types.md)

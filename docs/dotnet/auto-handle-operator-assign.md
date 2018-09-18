@@ -28,8 +28,8 @@ auto_handle<_element_type> % operator=(
 ```  
   
 #### Parameters  
- `_right`  
- The `auto_handle` to be assigned to the current `auto_handle`.  
+*_right*<br/>
+The `auto_handle` to be assigned to the current `auto_handle`.  
   
 ## Return Value  
  The current `auto_handle`, now owning `_right`.  

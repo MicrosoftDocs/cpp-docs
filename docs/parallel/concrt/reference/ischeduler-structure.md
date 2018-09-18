@@ -56,11 +56,11 @@ virtual void AddVirtualProcessors(
 ```  
   
 ### Parameters  
- `ppVirtualProcessorRoots`  
- An array of `IVirtualProcessorRoot` interfaces representing the virtual processor roots being added to the scheduler.  
+*ppVirtualProcessorRoots*<br/>
+An array of `IVirtualProcessorRoot` interfaces representing the virtual processor roots being added to the scheduler.  
   
- `count`  
- The number of `IVirtualProcessorRoot` interfaces in the array.  
+*count*<br/>
+The number of `IVirtualProcessorRoot` interfaces in the array.  
   
 ### Remarks  
  The Resource Manager invokes the `AddVirtualProcessor` method to grant an initial set of virtual processor roots to a scheduler. It could also invoke the method to add virtual processor roots to the scheduler when it rebalances resources among schedulers.  
@@ -100,11 +100,11 @@ virtual void NotifyResourcesExternallyBusy(
 ```  
   
 ### Parameters  
- `ppVirtualProcessorRoots`  
- An array of `IVirtualProcessorRoot` interfaces associated with the hardware threads on which other schedulers have become busy.  
+*ppVirtualProcessorRoots*<br/>
+An array of `IVirtualProcessorRoot` interfaces associated with the hardware threads on which other schedulers have become busy.  
   
- `count`  
- The number of `IVirtualProcessorRoot` interfaces in the array.  
+*count*<br/>
+The number of `IVirtualProcessorRoot` interfaces in the array.  
   
 ### Remarks  
  It is possible for a particular hardware thread to be assigned to multiple schedulers at the same time. One reason for this could be that there are not enough hardware threads on the system to satisfy the minimum concurrency for all schedulers, without sharing resources. Another possibility is that resources are temporarily assigned to other schedulers when the owning scheduler is not using them, by way of all its virtual processor roots on that hardware thread being deactivated.  
@@ -125,11 +125,11 @@ virtual void NotifyResourcesExternallyIdle(
 ```  
   
 ### Parameters  
- `ppVirtualProcessorRoots`  
- An array of `IVirtualProcessorRoot` interfaces associated with hardware threads on which other schedulers have become idle.  
+*ppVirtualProcessorRoots*<br/>
+An array of `IVirtualProcessorRoot` interfaces associated with hardware threads on which other schedulers have become idle.  
   
- `count`  
- The number of `IVirtualProcessorRoot` interfaces in the array.  
+*count*<br/>
+The number of `IVirtualProcessorRoot` interfaces in the array.  
   
 ### Remarks  
  It is possible for a particular hardware thread to be assigned to multiple schedulers at the same time. One reason for this could be that there are not enough hardware threads on the system to satisfy the minimum concurrency for all schedulers, without sharing resources. Another possibility is that resources are temporarily assigned to other schedulers when the owning scheduler is not using them, by way of all its virtual processor roots on that hardware thread being deactivated.  
@@ -150,11 +150,11 @@ virtual void RemoveVirtualProcessors(
 ```  
   
 ### Parameters  
- `ppVirtualProcessorRoots`  
- An array of `IVirtualProcessorRoot` interfaces representing the virtual processor roots to be removed.  
+*ppVirtualProcessorRoots*<br/>
+An array of `IVirtualProcessorRoot` interfaces representing the virtual processor roots to be removed.  
   
- `count`  
- The number of `IVirtualProcessorRoot` interfaces in the array.  
+*count*<br/>
+The number of `IVirtualProcessorRoot` interfaces in the array.  
   
 ### Remarks  
  The Resource Manager invokes the `RemoveVirtualProcessors` method to take back a set of virtual processor roots from a scheduler. The scheduler is expected to invoke the [Remove](iexecutionresource-structure.md#remove) method on each interface when it is done with the virtual processor roots. Do not use an `IVirtualProcessorRoot` interface once you have invoked the `Remove` method on it.  
@@ -172,14 +172,14 @@ virtual void Statistics(
 ```  
   
 ### Parameters  
- `pTaskCompletionRate`  
- The number of tasks that have been completed by the scheduler since the last call to this method.  
+*pTaskCompletionRate*<br/>
+The number of tasks that have been completed by the scheduler since the last call to this method.  
   
- `pTaskArrivalRate`  
- The number of tasks that have arrived in the scheduler since the last call to this method.  
+*pTaskArrivalRate*<br/>
+The number of tasks that have arrived in the scheduler since the last call to this method.  
   
- `pNumberOfTasksEnqueued`  
- The total number of tasks in all scheduler queues.  
+*pNumberOfTasksEnqueued*<br/>
+The total number of tasks in all scheduler queues.  
   
 ### Remarks  
  This method is invoked by the Resource Manager in order to gather statistics for a scheduler. The statistics gathered here will be used to drive dynamic feedback algorithms to determine when it is appropriate to assign more resources to the scheduler and when to take resources away. The values provided by the scheduler can be optimistic and do not necessarily have to reflect the current count accurately.  

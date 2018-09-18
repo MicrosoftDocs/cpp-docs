@@ -15,16 +15,16 @@ ms.workload: ["cplusplus"]
 ---
 # Header files (C++)
 
-The names of program elements such as variables, functions, classes, and so on must be declared before they can be used. For example, you can't just write `x = 42` without first declaring 'x'. 
+The names of program elements such as variables, functions, classes, and so on must be declared before they can be used. For example, you can't just write `x = 42` without first declaring 'x'.
 
 ```cpp
 int x; // declaration
 x = 42; // use x
 ```
 
- The declaration tells the compiler whether is an **int**, a **double**, a **function**, a **class** or some other thing.  Furthermore, each name must be declared (directly or indirectly) in every .cpp file in which it is used. When you compile a program, each .cpp file is compiled independently into a compilation unit. The compiler has no knowledge of what names are declared in other compilation units. That means that if you define a class or function or global variable, you must provide a declaration of that thing in each additional .cpp file that uses it. Each declaration of that thing must be exactly identical in all files. A slight inconsistency will cause errors, or unintended behavior, when the linker attempts to merge all the compilation units into a single program.
+The declaration tells the compiler whether is an **int**, a **double**, a **function**, a **class** or some other thing.  Furthermore, each name must be declared (directly or indirectly) in every .cpp file in which it is used. When you compile a program, each .cpp file is compiled independently into a compilation unit. The compiler has no knowledge of what names are declared in other compilation units. That means that if you define a class or function or global variable, you must provide a declaration of that thing in each additional .cpp file that uses it. Each declaration of that thing must be exactly identical in all files. A slight inconsistency will cause errors, or unintended behavior, when the linker attempts to merge all the compilation units into a single program.
 
-To minimize the potential for errors, C++ has adopted the convention of using *header files* to contain declarations. You make the declarations in a header file, then use the #include directive in every .cpp file or other header file requires that declaration. The #include directive inserts a copy of the header file directly into the .cpp file prior to compilation. 
+To minimize the potential for errors, C++ has adopted the convention of using *header files* to contain declarations. You make the declarations in a header file, then use the #include directive in every .cpp file or other header file requires that declaration. The #include directive inserts a copy of the header file directly into the .cpp file prior to compilation.
 
 ## Example
 
@@ -81,7 +81,7 @@ After the compiler finishes compiling each .cpp file into .obj files, it passes 
 
 ## Include guards
 
-Typically, header files have an *include guard* or a `#pragma once` directive to ensure that they are not inserted multiple times into a single .cpp file. 
+Typically, header files have an *include guard* or a `#pragma once` directive to ensure that they are not inserted multiple times into a single .cpp file.
 
 ```cpp
 // my_class.h
@@ -105,20 +105,20 @@ namespace N
 Because a header file might potentially be included by multiple files, it cannot contain definitions that might produce multiple definitions of the same name. The following are not allowed, or are considered very bad practice:
 
 - built-in type definitions at namespace or global scope
-- non-inline function definitions 
+- non-inline function definitions
 - non-const variable definitions
 - aggregate definitions
 - unnamed namespaces
 - using directives
 
-Use of the **using** directive will not necessarily cause an error, but can potentially cause a problem because it brings the namespace into scope in every .cpp file that directly or indirectly includes that header. 
+Use of the **using** directive will not necessarily cause an error, but can potentially cause a problem because it brings the namespace into scope in every .cpp file that directly or indirectly includes that header.
 
 ## Sample header file
 
 The following example shows the various kinds of declarations and definitions that are allowed in a header file:
 
 ```cpp
-#pragma once 
+#pragma once
 #include <vector> // #include directive
 #include <string>
 
@@ -147,7 +147,7 @@ namespace N  // namespace declaration
     void print_to_log();
 #endif
 
-    class my_class   // regular class definition, 
+    class my_class   // regular class definition,
     {                // but no non-inline function definitions
 
         friend class other_class;

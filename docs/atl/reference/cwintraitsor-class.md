@@ -30,10 +30,10 @@ class CWinTraitsOR
 
 #### Parameters
 
-*t_dwStyle*  
+*t_dwStyle*<br/>
 Default window styles.
 
-*t_dwExStyle*  
+*t_dwExStyle*<br/>
 Default extended window styles.
 
 ## Members
@@ -67,7 +67,7 @@ static DWORD GetWndStyle(DWORD dwStyle);
 
 ### Parameters
 
-*dwStyle*  
+*dwStyle*<br/>
 Styles used for creation of a window.
 
 ### Return Value
@@ -84,7 +84,7 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
 
 ### Parameters
 
-*dwExStyle*  
+*dwExStyle*<br/>
 Extended styles used for creation of a window.
 
 ### Return Value
@@ -93,6 +93,6 @@ A combination of extended styles that are passed in *dwExStyle* and default ones
 
 ## See Also
 
-[Class Overview](../../atl/atl-class-overview.md)   
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [Understanding Window Traits](../../atl/understanding-window-traits.md)
 

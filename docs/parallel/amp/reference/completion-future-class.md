@@ -74,8 +74,8 @@ completion_future(
 ```  
   
 ### Parameters  
- `_Other`  
- The `completion_future` object to copy or move.  
+*_Other*<br/>
+The `completion_future` object to copy or move.  
   
 ### Overloads List  
   
@@ -120,8 +120,8 @@ completion_future&  operator= (completion_future&& _Other );
 ```  
   
 ### Parameters  
- `_Other`  
- The object to copy from.  
+*_Other*<br/>
+The object to copy from.  
   
 ### Return Value  
  A reference to this `completion_future` object.  
@@ -145,11 +145,11 @@ void then(const _Functor & _Func ) const;
 ```  
   
 ### Parameters  
- `_Functor`  
- The callback functor.  
+*_Functor*<br/>
+The callback functor.  
   
- `_Func`  
- The callback function object.  
+*_Func*<br/>
+The callback function object.  
   
 ## <a name="to_task"></a> to_task 
 
@@ -203,14 +203,14 @@ std::future_status::future_status wait_for(
 ```  
   
 ### Parameters  
- `_Rep`  
- An arithmetic type that represents the number of ticks.  
+*_Rep*<br/>
+An arithmetic type that represents the number of ticks.  
   
- `_Period`  
- A std::ratio that represents the number of seconds that elapse per tick.  
+*_Period*<br/>
+A std::ratio that represents the number of seconds that elapse per tick.  
   
- `_Rel_time`  
- The maximum amount of time to wait for the operation to complete.  
+*_Rel_time*<br/>
+The maximum amount of time to wait for the operation to complete.  
   
 ### Return Value  
  Returns:  
@@ -237,14 +237,14 @@ std::future_status::future_status wait_until(
 ```  
   
 ### Parameters  
- `_Clock`  
- The clock on which this time point is measured.  
+*_Clock*<br/>
+The clock on which this time point is measured.  
   
- `_Duration`  
- The time interval since the start of `_Clock`’s epoch, after which the function will time out.  
+*_Duration*<br/>
+The time interval since the start of `_Clock`’s epoch, after which the function will time out.  
   
- `_Abs_time`  
- The point in time after which the function will time out.  
+*_Abs_time*<br/>
+The point in time after which the function will time out.  
   
 ### Return Value  
  Returns:  

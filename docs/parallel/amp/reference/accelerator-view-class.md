@@ -97,8 +97,8 @@ accelerator_view( const accelerator_view & _Other );
 ```  
   
 ### Parameters  
- `_Other`  
- The `accelerator_view` object to copy.  
+*_Other*<br/>
+The `accelerator_view` object to copy.  
   
 ## <a name="accelerator_view__create_marker"></a> create_marker 
 
@@ -219,8 +219,8 @@ bool operator!= (    const accelerator_view & _Other ) const;
 ```  
   
 ### Parameters  
- `_Other`  
- The `accelerator_view` object to compare with this one.  
+*_Other*<br/>
+The `accelerator_view` object to compare with this one.  
   
 ### Return Value  
  `false` if the two objects are the same; otherwise, `true`.  
@@ -236,8 +236,8 @@ accelerator_view & operator= (    const accelerator_view & _Other );
 ```  
   
 ### Parameters  
- `_Other`  
- The `accelerator_view` object to copy from.  
+*_Other*<br/>
+The `accelerator_view` object to copy from.  
   
 ### Return Value  
  A reference to the modified `accelerator_view` object.  
@@ -253,8 +253,8 @@ bool operator= = (    const accelerator_view & _Other ) const;
 ```  
   
 ### Parameters  
- `_Other`  
- The `accelerator_view` object to compare with this one.  
+*_Other*<br/>
+The `accelerator_view` object to compare with this one.  
   
 ### Return Value  
  `true` if the two objects are the same; otherwise, `false`.  

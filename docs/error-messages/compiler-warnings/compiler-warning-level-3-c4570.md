@@ -13,19 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4570
-'type' : is not explicitly declared as abstract but has abstract functions  
-  
- A type that contains [abstract](../../windows/abstract-cpp-component-extensions.md) functions should itself be marked as abstract.  
-  
-## Example  
- The following sample generates C4570.  
-  
-```  
-// C4570.cpp  
-// compile with: /clr /W3 /c  
-ref struct X {   // C4570  
-// try the following line instead  
-// ref class X abstract {  
-   virtual void f() abstract;  
-};  
+
+'type' : is not explicitly declared as abstract but has abstract functions
+
+A type that contains [abstract](../../windows/abstract-cpp-component-extensions.md) functions should itself be marked as abstract.
+
+## Example
+
+The following sample generates C4570.
+
+```
+// C4570.cpp
+// compile with: /clr /W3 /c
+ref struct X {   // C4570
+// try the following line instead
+// ref class X abstract {
+   virtual void f() abstract;
+};
 ```

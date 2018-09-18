@@ -32,11 +32,11 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
 ```  
   
 #### Parameters  
- `value_type`  
- The data type of the elements in the `array_view` object.  
+*value_type*<br/>
+The data type of the elements in the `array_view` object.  
   
- `_Rank`  
- The rank of the `array_view` object.  
+*_Rank*<br/>
+The rank of the `array_view` object.  
   
 ## Members  
   
@@ -328,32 +328,32 @@ array_view(
 ```  
   
 ### Parameters  
- `_Arr_type`  
- The element type of a C-style array from which data is supplied.  
+*_Arr_type*<br/>
+The element type of a C-style array from which data is supplied.  
   
- `_Container`  
- A template argument that must specify a linear container that supports `data()` and `size()` members.  
+*_Container*<br/>
+A template argument that must specify a linear container that supports `data()` and `size()` members.  
   
- `_E0`  
- The most significant component of the extent of this section.  
+*_E0*<br/>
+The most significant component of the extent of this section.  
   
- `_E1`  
- The next-to-most-significant component of the extent of this section.  
+*_E1*<br/>
+The next-to-most-significant component of the extent of this section.  
   
- `_E2`  
- The least significant component of the extent of this section.  
+*_E2*<br/>
+The least significant component of the extent of this section.  
   
- `_Extent`  
- The extent in each dimension of this `array_view`.  
+*_Extent*<br/>
+The extent in each dimension of this `array_view`.  
   
- `_Other`  
- An object of type `array_view<T,N>` from which to initialize the new `array_view`.  
+*_Other*<br/>
+An object of type `array_view<T,N>` from which to initialize the new `array_view`.  
   
- `_Size`  
- The size of a C-style array from which data is supplied.  
+*_Size*<br/>
+The size of a C-style array from which data is supplied.  
   
- `_Src`  
- A pointer to the source data that will be copied into the new array.  
+*_Src*<br/>
+A pointer to the source data that will be copied into the new array.  
   
 ##  <a name="copy_to"></a> copy_to 
 
@@ -372,8 +372,8 @@ void copy_to(
 ```  
   
 ### Parameters  
- `_Dest`  
- The object to copy to.  
+*_Dest*<br/>
+The object to copy to.  
   
 ##  <a name="data"></a> data 
 
@@ -428,8 +428,8 @@ value_type& get_ref(
 ```  
   
 ### Parameters  
- `_Index`  
- The index.  
+*_Index*<br/>
+The index.  
   
 ### Return Value  
  Reference to the element indexed by _Index  
@@ -475,20 +475,20 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
 ```  
   
 ### Parameters  
- `_Index`  
- The location of the element.  
+*_Index*<br/>
+The location of the element.  
   
- `_I0`  
- The index in the first dimension.  
+*_I0*<br/>
+The index in the first dimension.  
   
- `_I1`  
- The index in the second dimension.  
+*_I1*<br/>
+The index in the second dimension.  
   
- `_I2`  
- The index in the third dimension.  
+*_I2*<br/>
+The index in the third dimension.  
   
- `_I`  
- The location of the element.  
+*_I*<br/>
+The location of the element.  
   
 ### Return Value  
  The value of the element that is specified by the parameter or parameters.  
@@ -507,11 +507,11 @@ value_type& operator[] (
 ```  
   
 ### Parameters  
- `_Index`  
- The index.  
+*_Index*<br/>
+The index.  
   
- `_I`  
- The index.  
+*_I*<br/>
+The index.  
   
 ### Return Value  
  The value of the element at the index, or an `array_view` projected on the most-significant dimension.  
@@ -530,8 +530,8 @@ array_view& operator= (
 ```  
   
 ### Parameters  
- `_Other`  
- The `array_view` object to copy from.  
+*_Other*<br/>
+The `array_view` object to copy from.  
   
 ### Return Value  
  A reference to this `array_view` object.  
@@ -570,8 +570,8 @@ array_view<const _Value_type2, _Rank> reinterpret_as() const restrict(amp,cpu);
 ```  
   
 ### Parameters  
- `_Value_type2`  
- The data type of the new `array_view` object.  
+*_Value_type2*<br/>
+The data type of the new `array_view` object.  
   
 ### Return Value  
  An `array_view` object or a const `array_view` object that is based on this `array_view`, with the element type converted from `T` to `_Value_type2`, and the rank reduced from *N* to 1.  
@@ -632,38 +632,38 @@ array_view section(
 ```  
   
 ### Parameters  
- `_E0`  
- The most significant component of the extent of this section.  
+*_E0*<br/>
+The most significant component of the extent of this section.  
   
- `_E1`  
- The next-to-most-significant component of the extent of this section.  
+*_E1*<br/>
+The next-to-most-significant component of the extent of this section.  
   
- `_E2`  
- The least significant component of the extent of this section.  
+*_E2*<br/>
+The least significant component of the extent of this section.  
   
- `_Ext`  
- The [extent](extent-class.md) object that specifies the extent of the section. The origin is 0.  
+*_Ext*<br/>
+The [extent](extent-class.md) object that specifies the extent of the section. The origin is 0.  
   
- `_Idx`  
- The [index](index-class.md) object that specifies the location of the origin. The subsection is the rest of the extent.  
+*_Idx*<br/>
+The [index](index-class.md) object that specifies the location of the origin. The subsection is the rest of the extent.  
   
- `_I0`  
- The most significant component of the origin of this section.  
+*_I0*<br/>
+The most significant component of the origin of this section.  
   
- `_I1`  
- The next-to-most-significant component of the origin of this section.  
+*_I1*<br/>
+The next-to-most-significant component of the origin of this section.  
   
- `_I2`  
- The least significant component of the origin of this section.  
+*_I2*<br/>
+The least significant component of the origin of this section.  
   
- `_Rank`  
- The rank of the section.  
+*_Rank*<br/>
+The rank of the section.  
   
- `_Section_extent`  
- The [extent](extent-class.md) object that specifies the extent of the section.  
+*_Section_extent*<br/>
+The [extent](extent-class.md) object that specifies the extent of the section.  
   
- `_Section_origin`  
- The [index](index-class.md) object that specifies the location of the origin.  
+*_Section_origin*<br/>
+The [index](index-class.md) object that specifies the location of the origin.  
   
 ### Return Value  
  A subsection of the `array_view` object that's at the specified origin and, optionally, that has the specified extent. When only the `index` object is specified, the subsection contains all elements in the associated extent that have indexes that are larger than the indexes of the elements in the `index` object.  
@@ -688,8 +688,8 @@ void synchronize() const restrict(cpu);
 ```  
   
 ### Parameters  
- `_Access_type`  
- The intended [access_type](concurrency-namespace-enums-amp.md#access_type) on the target [accelerator_view](accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
+*_Access_type*<br/>
+The intended [access_type](concurrency-namespace-enums-amp.md#access_type) on the target [accelerator_view](accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
   
 ##  <a name="synchronize_async"></a> synchronize_async 
 
@@ -703,8 +703,8 @@ concurrency::completion_future synchronize_async() const restrict(cpu);
 ```  
   
 ### Parameters  
- `_Access_type`  
- The intended [access_type](concurrency-namespace-enums-amp.md#access_type) on the target [accelerator_view](accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
+*_Access_type*<br/>
+The intended [access_type](concurrency-namespace-enums-amp.md#access_type) on the target [accelerator_view](accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
   
 ### Return Value  
  A future upon which to wait for the operation to complete.  
@@ -724,11 +724,11 @@ void synchronize_to(
 ```  
   
 ### Parameters  
- `_Accl_view`  
- The target accelerator_view to synchronize to.  
+*_Accl_view*<br/>
+The target accelerator_view to synchronize to.  
   
- `_Access_type`  
- The desired access_type on the target accelerator_view. This parameter has a default value of access_type_read.  
+*_Access_type*<br/>
+The desired access_type on the target accelerator_view. This parameter has a default value of access_type_read.  
   
 ##  <a name="synchronize_to_async"></a> synchronize_to_async 
 
@@ -745,11 +745,11 @@ concurrency::completion_future synchronize_to_async(
 ```  
   
 ### Parameters  
- `_Accl_view`  
- The target accelerator_view to synchronize to.  
+*_Accl_view*<br/>
+The target accelerator_view to synchronize to.  
   
- `_Access_type`  
- The desired access_type on the target accelerator_view. This parameter has a default value of access_type_read.  
+*_Access_type*<br/>
+The desired access_type on the target accelerator_view. This parameter has a default value of access_type_read.  
   
 ### Return Value  
  A future upon which to wait for the operation to complete.  
@@ -782,14 +782,14 @@ array_view<const value_type,_New_rank> view_as(
 ```  
   
 ### Parameters  
- `_New_rank`  
- The rank of the new `array_view` object.  
+*_New_rank*<br/>
+The rank of the new `array_view` object.  
   
- `_View_extent`  
- The reshaping `extent`.  
+*_View_extent*<br/>
+The reshaping `extent`.  
   
- `value_type`  
- The data type of the elements in both the original [array](array-class.md) object and the returned `array_view` object.  
+*value_type*<br/>
+The data type of the elements in both the original [array](array-class.md) object and the returned `array_view` object.  
   
 ### Return Value  
  The `array_view` object that is constructed.  

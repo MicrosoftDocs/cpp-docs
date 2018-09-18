@@ -88,25 +88,25 @@ int FindAddr(
 
 ### Parameters
 
-*szHost*  
+*szHost*<br/>
 The host name or dotted IP address.
 
-*szPortOrServiceName*  
+*szPortOrServiceName*<br/>
 The port number or name of service on host.
 
-*nPortNo*  
+*nPortNo*<br/>
 The port number.
 
-*flags*  
+*flags*<br/>
 0 or combination of AI_PASSIVE, AI_CANONNAME or AI_NUMERICHOST.
 
-*addr_family*  
+*addr_family*<br/>
 Address family (such as PF_INET).
 
-*sock_type*  
+*sock_type*<br/>
 Socket type (such as SOCK_STREAM).
 
-*ai_proto*  
+*ai_proto*<br/>
 Protocol (such as IPPROTO_IP or IPPROTO_IPV6).
 
 ### Return Value
@@ -131,16 +131,16 @@ int FindINET4Addr(
 
 ### Parameters
 
-*szHost*  
+*szHost*<br/>
 The host name or dotted IP address.
 
-*nPortNo*  
+*nPortNo*<br/>
 The port number.
 
-*flags*  
+*flags*<br/>
 0 or combination of AI_PASSIVE, AI_CANONNAME or AI_NUMERICHOST.
 
-*sock_type*  
+*sock_type*<br/>
 Socket type (such as SOCK_STREAM).
 
 ### Return Value
@@ -165,16 +165,16 @@ int FindINET6Addr(
 
 ### Parameters
 
-*szHost*  
+*szHost*<br/>
 The host name or dotted IP address.
 
-*nPortNo*  
+*nPortNo*<br/>
 The port number.
 
-*flags*  
+*flags*<br/>
 0 or combination of AI_PASSIVE, AI_CANONNAME or AI_NUMERICHOST.
 
-*sock_type*  
+*sock_type*<br/>
 Socket type (such as SOCK_STREAM).
 
 ### Return Value
@@ -195,7 +195,7 @@ addrinfo* const GetAddrInfoint nIndex = 0) const;
 
 ### Parameters
 
-*nIndex*  
+*nIndex*<br/>
 A reference to a specific element in the [addrinfo](https://msdn.microsoft.com/library/windows/desktop/ms737530) list.
 
 ### Return Value

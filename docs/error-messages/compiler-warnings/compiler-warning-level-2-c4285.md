@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 2) C4285
-return type for 'identifier::operator ->' is recursive if applied using infix notation  
-  
- The specified **operator->()** function cannot return the type for which it is defined or a reference to the type for which it is defined.  
-  
- The following sample generates C4285:  
-  
-```  
-// C4285.cpp  
-// compile with: /W2  
-class C  
-{  
-public:  
-    C operator->();   // C4285  
-   // C& operator->();  C4285, also  
-};  
-  
-int main()  
-{  
-}  
+
+return type for 'identifier::operator ->' is recursive if applied using infix notation
+
+The specified **operator->()** function cannot return the type for which it is defined or a reference to the type for which it is defined.
+
+The following sample generates C4285:
+
+```
+// C4285.cpp
+// compile with: /W2
+class C
+{
+public:
+    C operator->();   // C4285
+   // C& operator->();  C4285, also
+};
+
+int main()
+{
+}
 ```

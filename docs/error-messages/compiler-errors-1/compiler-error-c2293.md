@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2293
-'identifier': illegal to have a member variable as a __based specifier  
-  
- Specifiers for `__based` modifier must be nonmember pointers.  
-  
- The following sample generates C2293:  
-  
-```  
-// C2293.cpp  
-// compile with: /c  
-class A {  
-   static int *i;  
-   void __based(i) *bp;   // C2293  
-   void *bp2;   // OK  
-};  
+
+'identifier': illegal to have a member variable as a __based specifier
+
+Specifiers for `__based` modifier must be nonmember pointers.
+
+The following sample generates C2293:
+
+```
+// C2293.cpp
+// compile with: /c
+class A {
+   static int *i;
+   void __based(i) *bp;   // C2293
+   void *bp2;   // OK
+};
 ```

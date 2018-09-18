@@ -27,8 +27,8 @@ bool try_acquire(
 ```  
   
 #### Parameters  
- `_timeout`  
- Timeout value in milliseconds or as a <xref:System.TimeSpan>.  
+*_timeout*<br/>
+Timeout value in milliseconds or as a <xref:System.TimeSpan>.  
   
 ## Return Value  
  `true` if lock was acquired, `false` otherwise.  

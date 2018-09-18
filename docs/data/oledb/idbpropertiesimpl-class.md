@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBPropertiesImpl Class
+
 Provides an implementation for the `IDBProperties` interface.  
   
 ## Syntax
@@ -24,11 +25,13 @@ class ATL_NO_VTABLE IDBPropertiesImpl
 ```  
   
 ### Parameters  
- *T*  
- Your class, derived from `IDBPropertiesImpl`.  
+
+*T*<br/>
+Your class, derived from `IDBPropertiesImpl`.  
 
 ## Requirements  
- **Header:** atldb.h  
+
+**Header:** atldb.h  
   
 ## Members  
   
@@ -41,9 +44,11 @@ class ATL_NO_VTABLE IDBPropertiesImpl
 |[SetProperties](#setproperties)|Sets properties in the Data Source and Initialization property groups, for data source objects, or the Initialization property group, for enumerators.|  
   
 ## Remarks  
- [IDBProperties](/previous-versions/windows/desktop/ms719607\(v=vs.85\)) is a mandatory interface for data source objects and an optional interface for enumerators. However, if an enumerator exposes [IDBInitialize](/previous-versions/windows/desktop/ms713706\(v=vs.85\)), it must expose `IDBProperties`. `IDBPropertiesImpl` implements `IDBProperties` by using a static function defined by [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).  
+
+[IDBProperties](/previous-versions/windows/desktop/ms719607\(v=vs.85\)) is a mandatory interface for data source objects and an optional interface for enumerators. However, if an enumerator exposes [IDBInitialize](/previous-versions/windows/desktop/ms713706\(v=vs.85\)), it must expose `IDBProperties`. `IDBPropertiesImpl` implements `IDBProperties` by using a static function defined by [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).  
 
 ## <a name="getproperties"></a> IDBPropertiesImpl::GetProperties
+
 Returns the values of properties in the Data Source, Data Source Information, and Initialization property groups that are currently set on the data source object or the values of properties in the Initialization property group that are currently set on the enumerator.  
   
 ### Syntax  
@@ -56,9 +61,10 @@ STDMETHOD(GetProperties)(ULONG cPropertySets, 
 ```  
   
 #### Parameters  
- See [IDBProperties::GetProperties](/previous-versions/windows/desktop/ms714344\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IDBProperties::GetProperties](/previous-versions/windows/desktop/ms714344\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
- Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IDBProperties::GetProperties`:  
+Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IDBProperties::GetProperties`:  
   
 |OLE DB Template parameters|*OLE DB Programmer's Reference* parameters|  
 |--------------------------------|------------------------------------------------|  
@@ -68,9 +74,11 @@ STDMETHOD(GetProperties)(ULONG cPropertySets, 
 |*prgProperties*|*prgPropertySets*|  
   
 ### Remarks  
- If the provider is initialized, this method returns the values of properties in the DBPROPSET_DATASOURCE, DBPROPSET_DATASOURCEINFO, DBPROPSET_DBINIT property groups that are currently set on the data source object. If the provider is not initialized, it returns DBPROPSET_DBINIT group properties only. 
+
+If the provider is initialized, this method returns the values of properties in the DBPROPSET_DATASOURCE, DBPROPSET_DATASOURCEINFO, DBPROPSET_DBINIT property groups that are currently set on the data source object. If the provider is not initialized, it returns DBPROPSET_DBINIT group properties only. 
   
 ## <a name="getpropertyinfo"></a> IDBPropertiesImpl::GetPropertyInfo
+
 Returns property information supported by the data source.  
   
 ### Syntax  
@@ -84,9 +92,10 @@ STDMETHOD(GetPropertyInfo)(ULONG cPropertySets, 
 ```  
   
 #### Parameters  
- See [IDBProperties::GetPropertyInfo](/previous-versions/windows/desktop/ms718175\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IDBProperties::GetPropertyInfo](/previous-versions/windows/desktop/ms718175\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
- Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IDBProperties::GetPropertyInfo`:  
+Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IDBProperties::GetPropertyInfo`:  
   
 |OLE DB Template parameters|*OLE DB Programmer's Reference* parameters|  
 |--------------------------------|------------------------------------------------|  
@@ -94,9 +103,11 @@ STDMETHOD(GetPropertyInfo)(ULONG cPropertySets, 
 |*rgPropertySets*|*rgPropertyIDSets*|  
   
 ### Remarks  
- Uses [IDBInitializeImpl::m_pCUtlPropInfo](../../data/oledb/idbinitializeimpl-m-pcutlpropinfo.md) to implement this functionality. 
+
+Uses [IDBInitializeImpl::m_pCUtlPropInfo](../../data/oledb/idbinitializeimpl-m-pcutlpropinfo.md) to implement this functionality. 
 
 ## <a name="setproperties"></a> IDBPropertiesImpl::SetProperties
+
 Sets properties in the Data Source and Initialization property groups, for data source objects, or the Initialization property group, for enumerators.  
   
 ### Syntax  
@@ -107,11 +118,14 @@ STDMETHOD(SetProperties)(ULONG cPropertySets, 
 ```  
   
 #### Parameters  
- See [IDBProperties::SetProperties](/previous-versions/windows/desktop/ms723049\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IDBProperties::SetProperties](/previous-versions/windows/desktop/ms723049\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
- If the provider is initialized, this method sets the values of properties in the DBPROPSET_DATASOURCE, DBPROPSET_DATASOURCEINFO, DBPROPSET_DBINIT property groups for the data source object. If the provider is not initialized, it sets DBPROPSET_DBINIT group properties only.  
+
+If the provider is initialized, this method sets the values of properties in the DBPROPSET_DATASOURCE, DBPROPSET_DATASOURCEINFO, DBPROPSET_DBINIT property groups for the data source object. If the provider is not initialized, it sets DBPROPSET_DBINIT group properties only.  
   
 ## See Also  
- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

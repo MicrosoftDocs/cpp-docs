@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2333
-'function' : error in function declaration; skipping function body  
-  
- This error occurs after another error, for member functions defined inside their class.  
-  
- The following sample generates C2333:  
-  
-```  
-// C2333.cpp  
-struct s1 {  
-   s1(s1) {}   // C2333  
-};  
+
+'function' : error in function declaration; skipping function body
+
+This error occurs after another error, for member functions defined inside their class.
+
+The following sample generates C2333:
+
+```
+// C2333.cpp
+struct s1 {
+   s1(s1) {}   // C2333
+};
 ```

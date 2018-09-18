@@ -24,16 +24,16 @@ The \<include> tag lets you refer to comments in another file that describe the 
 
 #### Parameters
 
-`filename`  
+*filename*<br/>
 The name of the file containing the documentation. The file name can be qualified with a path.  Enclose the name in single or double quotation marks.  The compiler issues a warning if it does not find `filename`.
 
-`tagpath`  
+*tagpath*<br/>
 A valid XPath expression that selects the desired node-set contained in the file.
 
-`name`  
+*name*<br/>
 The name specifier in the tag that precedes the comments; `name` will have an `id`.
 
-`id`  
+*id*<br/>
 The ID for the tag that precedes the comments.  Enclose the name in single or double quotation marks.
 
 ## Remarks

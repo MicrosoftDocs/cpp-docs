@@ -38,7 +38,7 @@ float abs( float n );   // C++ only
 
 ### Parameters
 
-*n*  
+*n*<br/>
 Numeric value.
 
 ## Return Value
@@ -119,8 +119,8 @@ _abs64(_I64_MIN) returns 0x8000000000000000
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)  
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)  
-[_cabs](cabs.md)  
-[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)  
-[imaxabs](imaxabs.md)  
+[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+[_cabs](cabs.md)<br/>
+[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)<br/>
+[imaxabs](imaxabs.md)

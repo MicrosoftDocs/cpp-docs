@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1113
-invalid machine type type  
-  
- The machine type specified in the object header is not valid.  
-  
- This error can be caused if the file is corrupt. Rebuild the object.
+
+invalid machine type type
+
+The machine type specified in the object header is not valid.
+
+This error can be caused if the file is corrupt. Rebuild the object.

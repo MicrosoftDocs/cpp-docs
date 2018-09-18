@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2421
-PTR operator used with register in 'context'  
-  
- The `PTR` operator cannot be used with a `register` operand.
+
+PTR operator used with register in 'context'
+
+The `PTR` operator cannot be used with a `register` operand.

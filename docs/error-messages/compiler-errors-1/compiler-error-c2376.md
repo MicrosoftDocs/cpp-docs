@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2376
-'function' : redefinition; different based allocation  
-  
- The function is already declared with a different based allocation.
+
+'function' : redefinition; different based allocation
+
+The function is already declared with a different based allocation.

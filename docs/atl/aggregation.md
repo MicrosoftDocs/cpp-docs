@@ -21,6 +21,6 @@ Primarily, all `IUnknown` method calls on the contained object must delegate to 
 
 ## See Also
 
-[Introduction to COM](../atl/introduction-to-com.md)   
+[Introduction to COM](../atl/introduction-to-com.md)<br/>
 [Reusing Objects](/windows/desktop/com/reusing-objects)
 

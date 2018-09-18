@@ -21,18 +21,18 @@ Each connection point supports the [IConnectionPoint](/windows/desktop/api/ocidl
 
 ## In This Section
 
-[ATL Connection Point Classes](../atl/atl-connection-point-classes.md)  
+[ATL Connection Point Classes](../atl/atl-connection-point-classes.md)<br/>
 Briefly describes the ATL classes that support connection points.
 
-[Adding Connection Points to an Object](../atl/adding-connection-points-to-an-object.md)  
+[Adding Connection Points to an Object](../atl/adding-connection-points-to-an-object.md)<br/>
 Outlines the steps used to add connection points to an object.
 
-[ATL Connection Point Example](../atl/atl-connection-point-example.md)  
+[ATL Connection Point Example](../atl/atl-connection-point-example.md)<br/>
 Provides an example of declaring a connection point.
 
 ## Related Sections
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Provides links to conceptual topics on how to program using the Active Template Library.
 
 ## See Also

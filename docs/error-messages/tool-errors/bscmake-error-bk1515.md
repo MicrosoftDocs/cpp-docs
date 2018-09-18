@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # BSCMAKE Error BK1515
-bscfile: incompatible version: cannot incrementally update  
-  
- The .bsc file was created with another version of BSCMAKE. Recreate the .bsc file.
+
+bscfile: incompatible version: cannot incrementally update
+
+The .bsc file was created with another version of BSCMAKE. Recreate the .bsc file.

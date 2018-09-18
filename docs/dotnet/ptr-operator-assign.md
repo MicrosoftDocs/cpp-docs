@@ -24,8 +24,8 @@ ptr<_interface_type> % operator=(
 ```  
   
 #### Parameters  
- `_right`  
- The COM interface pointer to attach.  
+*_right*<br/>
+The COM interface pointer to attach.  
   
 ## Return Value  
  A tracking reference on the `com::ptr`.  

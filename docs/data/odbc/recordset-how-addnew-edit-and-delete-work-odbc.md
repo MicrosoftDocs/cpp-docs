@@ -12,42 +12,43 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: How AddNew, Edit, and Delete Work (ODBC)
+
 This topic applies to the MFC ODBC classes.  
   
- This topic explains how the `AddNew`, `Edit`, and `Delete` member functions of class `CRecordset` work. Topics covered include:  
+This topic explains how the `AddNew`, `Edit`, and `Delete` member functions of class `CRecordset` work. Topics covered include:  
   
--   [How Adding Records Works](#_core_adding_a_record)  
+- [How Adding Records Works](#_core_adding_a_record)  
   
--   [Visibility of Added Records](#_core_visibility_of_added_records)  
+- [Visibility of Added Records](#_core_visibility_of_added_records)  
   
--   [How Editing Records Works](#_core_editing_an_existing_record)  
+- [How Editing Records Works](#_core_editing_an_existing_record)  
   
--   [How Deleting Records Works](#_core_deleting_a_record)  
+- [How Deleting Records Works](#_core_deleting_a_record)  
   
 > [!NOTE]
 >  This topic applies to objects derived from `CRecordset` in which bulk row fetching has not been implemented. If you are using bulk row fetching, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
- As a supplement, you might want to read [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md), which describes the corresponding role of RFX in update operations.  
+As a supplement, you might want to read [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md), which describes the corresponding role of RFX in update operations.  
   
 ##  <a name="_core_adding_a_record"></a> Adding a Record  
 
- Adding a new record to a recordset involves calling the recordset's [AddNew](../../mfc/reference/crecordset-class.md#addnew) member function, setting the values of the new record's field data members, and calling the [Update](../../mfc/reference/crecordset-class.md#update) member function to write the record to the data source.  
+Adding a new record to a recordset involves calling the recordset's [AddNew](../../mfc/reference/crecordset-class.md#addnew) member function, setting the values of the new record's field data members, and calling the [Update](../../mfc/reference/crecordset-class.md#update) member function to write the record to the data source.  
   
- As a precondition for calling `AddNew`, the recordset must not have been opened as read-only. The `CanUpdate` and `CanAppend` member functions let you determine these conditions.  
+As a precondition for calling `AddNew`, the recordset must not have been opened as read-only. The `CanUpdate` and `CanAppend` member functions let you determine these conditions.  
   
- When you call `AddNew`:  
+When you call `AddNew`:  
   
--   The record in the edit buffer is stored, so its contents can be restored if the operation is canceled.  
+- The record in the edit buffer is stored, so its contents can be restored if the operation is canceled.  
   
--   The field data members are flagged so it is possible to detect changes in them later. The field data members are also marked clean (unchanged) and set to a Null.  
+- The field data members are flagged so it is possible to detect changes in them later. The field data members are also marked clean (unchanged) and set to a Null.  
   
- After you call `AddNew`, the edit buffer represents a new, empty record, ready to be filled in with values. To do this, you manually set the values by assigning to them. Instead of specifying an actual data value for a field, you can call `SetFieldNull` to specify the value Null.  
+After you call `AddNew`, the edit buffer represents a new, empty record, ready to be filled in with values. To do this, you manually set the values by assigning to them. Instead of specifying an actual data value for a field, you can call `SetFieldNull` to specify the value Null.  
   
- To commit your changes, you call `Update`. When you call `Update` for the new record:  
+To commit your changes, you call `Update`. When you call `Update` for the new record:  
   
--   If your ODBC driver supports the `::SQLSetPos` ODBC API function, MFC uses the function to add the record on the data source. With `::SQLSetPos`, MFC can add a record more efficiently because it does not have to construct and process a SQL statement.  
+- If your ODBC driver supports the `::SQLSetPos` ODBC API function, MFC uses the function to add the record on the data source. With `::SQLSetPos`, MFC can add a record more efficiently because it does not have to construct and process a SQL statement.  
   
--   If `::SQLSetPos` cannot be used, MFC does the following:  
+- If `::SQLSetPos` cannot be used, MFC does the following:  
   
     1.  If no changes are detected, `Update` does nothing and returns 0.  
   
@@ -68,35 +69,37 @@ This topic applies to the MFC ODBC classes.
     >  To detect when recordset data members change value, MFC uses a PSEUDO_NULL value appropriate to each data type that you can store in a recordset. If you must explicitly set a field to the PSEUDO_NULL value and the field happens already to be marked Null, you must also call `SetFieldNull`, passing the address of the field in the first parameter and FALSE in the second parameter.  
   
 ##  <a name="_core_visibility_of_added_records"></a> Visibility of Added Records  
- When is an added record visible to your recordset? Added records sometimes show up and sometimes are not visible, depending on two things:  
+
+When is an added record visible to your recordset? Added records sometimes show up and sometimes are not visible, depending on two things:  
   
--   What your driver is capable of.  
+- What your driver is capable of.  
   
--   What the framework can take advantage of.  
+- What the framework can take advantage of.  
   
- If your ODBC driver supports the `::SQLSetPos` ODBC API function, MFC uses the function to add records. With `::SQLSetPos`, added records are visible to any updatable MFC recordset. Without support for the function, added records are not visible and you must call `Requery` to see them. Using `::SQLSetPos` is also more efficient.  
+If your ODBC driver supports the `::SQLSetPos` ODBC API function, MFC uses the function to add records. With `::SQLSetPos`, added records are visible to any updatable MFC recordset. Without support for the function, added records are not visible and you must call `Requery` to see them. Using `::SQLSetPos` is also more efficient.  
   
 ##  <a name="_core_editing_an_existing_record"></a> Editing an Existing Record  
- Editing an existing record in a recordset involves scrolling to the record, calling the recordset's [Edit](../../mfc/reference/crecordset-class.md#edit) member function, setting the values of the new record's field data members, and calling the [Update](../../mfc/reference/crecordset-class.md#update) member function to write the changed record to the data source.  
+
+Editing an existing record in a recordset involves scrolling to the record, calling the recordset's [Edit](../../mfc/reference/crecordset-class.md#edit) member function, setting the values of the new record's field data members, and calling the [Update](../../mfc/reference/crecordset-class.md#update) member function to write the changed record to the data source.  
   
- As a precondition for calling `Edit`, the recordset must be updatable and on a record. The `CanUpdate` and `IsDeleted` member functions let you determine these conditions. The current record also must not already have been deleted, and there must be records in the recordset (both `IsBOF` and `IsEOF` return 0).  
+As a precondition for calling `Edit`, the recordset must be updatable and on a record. The `CanUpdate` and `IsDeleted` member functions let you determine these conditions. The current record also must not already have been deleted, and there must be records in the recordset (both `IsBOF` and `IsEOF` return 0).  
   
- When you call `Edit`, the record in the edit buffer (the current record) is stored. The stored record's values are later used to detect whether any fields have changed.  
+When you call `Edit`, the record in the edit buffer (the current record) is stored. The stored record's values are later used to detect whether any fields have changed.  
   
- After you call `Edit`, the edit buffer still represents the current record but is now ready to accept changes to the field data members. To change the record, you manually set the values of any field data members you want to edit. Instead of specifying an actual data value for a field, you can call `SetFieldNull` to specify the value Null. To commit your changes, call `Update`.  
+After you call `Edit`, the edit buffer still represents the current record but is now ready to accept changes to the field data members. To change the record, you manually set the values of any field data members you want to edit. Instead of specifying an actual data value for a field, you can call `SetFieldNull` to specify the value Null. To commit your changes, call `Update`.  
   
 > [!TIP]
 >  To get out of `AddNew` or `Edit` mode, call `Move` with the parameter *AFX_MOVE_REFRESH*.  
   
- As a precondition for calling `Update`, the recordset must not be empty and the current record must not have been deleted. `IsBOF`, `IsEOF`, and `IsDeleted` should all return 0.  
+As a precondition for calling `Update`, the recordset must not be empty and the current record must not have been deleted. `IsBOF`, `IsEOF`, and `IsDeleted` should all return 0.  
   
- When you call `Update` for the edited record:  
+When you call `Update` for the edited record:  
   
--   If your ODBC driver supports the `::SQLSetPos` ODBC API function, MFC uses the function to update the record on the data source. With `::SQLSetPos`, the driver compares your edit buffer with the corresponding record on the server, updating the record on the server if the two are different. With `::SQLSetPos`, MFC can update a record more efficiently because it does not have to construct and process a SQL statement.  
+- If your ODBC driver supports the `::SQLSetPos` ODBC API function, MFC uses the function to update the record on the data source. With `::SQLSetPos`, the driver compares your edit buffer with the corresponding record on the server, updating the record on the server if the two are different. With `::SQLSetPos`, MFC can update a record more efficiently because it does not have to construct and process a SQL statement.  
   
      -or-  
   
--   If `::SQLSetPos` cannot be used, MFC does the following:  
+- If `::SQLSetPos` cannot be used, MFC does the following:  
   
     1.  If there have been no changes, `Update` does nothing and returns 0.  
   
@@ -113,17 +116,18 @@ This topic applies to the MFC ODBC classes.
     >  If you call `AddNew` or `Edit` after having called either function previously but before you call `Update`, the edit buffer is refreshed with the stored record, replacing the new or edited record in progress. This behavior gives you a way to abort an `AddNew` or `Edit` and begin a new one: if you determine that the record-in-progress is faulty, simply call `Edit` or `AddNew` again.  
   
 ##  <a name="_core_deleting_a_record"></a> Deleting a Record  
- Deleting a record from a recordset involves scrolling to the record and calling the recordset's [Delete](../../mfc/reference/crecordset-class.md#delete) member function. Unlike `AddNew` and `Edit`, `Delete` does not require a matching call to `Update`.  
+
+Deleting a record from a recordset involves scrolling to the record and calling the recordset's [Delete](../../mfc/reference/crecordset-class.md#delete) member function. Unlike `AddNew` and `Edit`, `Delete` does not require a matching call to `Update`.  
   
- As a precondition for calling `Delete`, the recordset must be updatable and it must be on a record. The `CanUpdate`, `IsBOF`, `IsEOF`, and `IsDeleted` member functions let you determine these conditions.  
+As a precondition for calling `Delete`, the recordset must be updatable and it must be on a record. The `CanUpdate`, `IsBOF`, `IsEOF`, and `IsDeleted` member functions let you determine these conditions.  
   
- When you call `Delete`:  
+When you call `Delete`:  
   
--   If your ODBC driver supports the `::SQLSetPos` ODBC API function, MFC uses the function to delete the record on the data source. Using `::SQLSetPos` is usually more efficient than using SQL.  
+- If your ODBC driver supports the `::SQLSetPos` ODBC API function, MFC uses the function to delete the record on the data source. Using `::SQLSetPos` is usually more efficient than using SQL.  
   
      -or-  
   
--   If `::SQLSetPos` cannot be used, MFC does the following:  
+- If `::SQLSetPos` cannot be used, MFC does the following:  
   
     1.  The current record in the edit buffer is not backed up as in `AddNew` and `Edit`.  
   
@@ -138,9 +142,10 @@ This topic applies to the MFC ODBC classes.
     > [!NOTE]
     >  After deleting a record, you should scroll to another record to refill the edit buffer with the new record's data. It is an error to call `Delete` again or to call `Edit`.  
   
- For information about the SQL statements used in update operations, see [SQL](../../data/odbc/sql.md).  
+For information about the SQL statements used in update operations, see [SQL](../../data/odbc/sql.md).  
   
 ## See Also  
- [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)   
- [Recordset: More About Updates (ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md)   
- [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)
+
+[Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
+[Recordset: More About Updates (ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md)<br/>
+[Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)

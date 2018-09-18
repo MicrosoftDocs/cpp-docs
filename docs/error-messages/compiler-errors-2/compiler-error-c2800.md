@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2800
-'operator operator' cannot be overloaded  
-  
- The following operators cannot be overloaded: class member access (`.`), pointer to member (`.*`), scope resolution (`::`), conditional expression (`? :`), and `sizeof`.  
-  
- The following sample generates C2800:  
-  
-```  
-// C2800.cpp  
-// compile with: /c  
-class C {  
-   operator:: ();   // C2800  
-};  
+
+'operator operator' cannot be overloaded
+
+The following operators cannot be overloaded: class member access (`.`), pointer to member (`.*`), scope resolution (`::`), conditional expression (`? :`), and `sizeof`.
+
+The following sample generates C2800:
+
+```
+// C2800.cpp
+// compile with: /c
+class C {
+   operator:: ();   // C2800
+};
 ```

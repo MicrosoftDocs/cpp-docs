@@ -74,15 +74,13 @@ CSingleDocTemplate(
   
  The string resource consists of up to seven substrings separated by the '\n' character (the '\n' character is needed as a placeholder if a substring is not included; however, trailing '\n' characters are not necessary); these substrings describe the document type. For information about the substrings, see [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). This string resource is found in the application's resource file. For example:  
   
- `// MYCALC.RC`  
-  
- `STRINGTABLE PRELOAD DISCARDABLE`  
-  
- `BEGIN`  
-  
- `IDR_MAINFRAME "MyCalc Windows Application\nSheet\nWorksheet\n Worksheets (*.myc)\n.myc\nMyCalcSheet\n MyCalc Worksheet"`  
-  
- `END`  
+```RC
+// MYCALC.RC
+STRINGTABLE PRELOAD DISCARDABLE
+BEGIN
+  IDR_MAINFRAME "MyCalc Windows Application\nSheet\nWorksheet\n Worksheets (*.myc)\n.myc\nMyCalcSheet\n MyCalc Worksheet"
+END
+```
   
  You can edit this string using the string editor; the entire string appears as a single entry in the String Editor, not as seven separate entries.  
   

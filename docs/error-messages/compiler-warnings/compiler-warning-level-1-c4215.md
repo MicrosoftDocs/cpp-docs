@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4215
-nonstandard extension used : long float  
-  
- The default Microsoft extensions (/Ze) treat **long float** as **double**. ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) does not. Use **double** to maintain compatibility.  
-  
- The following sample generates C4215:  
-  
-```  
-// C4215.cpp  
-// compile with: /W1 /LD  
-long float a;   // C4215  
-  
-// use the line below to resolve the warning  
-// double a;  
+
+nonstandard extension used : long float
+
+The default Microsoft extensions (/Ze) treat **long float** as **double**. ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) does not. Use **double** to maintain compatibility.
+
+The following sample generates C4215:
+
+```
+// C4215.cpp
+// compile with: /W1 /LD
+long float a;   // C4215
+
+// use the line below to resolve the warning
+// double a;
 ```

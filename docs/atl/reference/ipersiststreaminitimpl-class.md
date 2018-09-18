@@ -22,14 +22,14 @@ This class implements `IUnknown` and provides a default implementation of the [I
 ## Syntax
 
 ```
-template<class T>  
+template<class T>
 class ATL_NO_VTABLE IPersistStreamInitImpl 
    : public IPersistStreamInit
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IPersistStreamInitImpl`.
 
 ## Members
@@ -143,5 +143,5 @@ See [IPersistStreamInit::Save](/windows/desktop/api/ocidl/nf-ocidl-ipersiststrea
 
 ## See Also
 
-[Storages and Streams](/windows/desktop/Stg/storages-and-streams)   
+[Storages and Streams](/windows/desktop/Stg/storages-and-streams)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

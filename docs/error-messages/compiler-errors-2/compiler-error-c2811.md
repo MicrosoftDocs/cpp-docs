@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2811
-'type1' : cannot inherit from 'type2', a ref class can only inherit from a ref class or interface class  
-  
- You attempted to use an unmanaged class as a base class for a managed class.  
-  
- The following sample generates C2811:  
-  
-```  
-// C2811.cpp  
-// compile with: /clr /c  
-struct S{};  
-ref struct T {};  
-ref class C : public S {};   // C2811  
-ref class D : public T {};   // OK  
+
+'type1' : cannot inherit from 'type2', a ref class can only inherit from a ref class or interface class
+
+You attempted to use an unmanaged class as a base class for a managed class.
+
+The following sample generates C2811:
+
+```
+// C2811.cpp
+// compile with: /clr /c
+struct S{};
+ref struct T {};
+ref class C : public S {};   // C2811
+ref class D : public T {};   // OK
 ```

@@ -37,14 +37,14 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
 ```  
   
 ### Parameters  
- `_Dim0`  
- The length of the most significant dimension.  
+*_Dim0*<br/>
+The length of the most significant dimension.  
   
- `_Dim1`  
- The length of the next-to-most significant dimension.  
+*_Dim1*<br/>
+The length of the next-to-most significant dimension.  
   
- `_Dim2`  
- The length of the least significant dimension.  
+*_Dim2*<br/>
+The length of the least significant dimension.  
   
 ## Members  
   
@@ -111,8 +111,8 @@ tiled_extent(
 ```  
   
 ### Parameters  
- `_Other`  
- The `extent` or `tiled_extent` object to copy.  
+*_Other*<br/>
+The `extent` or `tiled_extent` object to copy.  
   
 
   
@@ -164,8 +164,8 @@ tiled_extent&  operator= (
 ```  
   
 ### Parameters  
- `_Other`  
- The `tiled_index` object to copy from.  
+*_Other*<br/>
+The `tiled_index` object to copy from.  
   
 ### Return Value  
  A reference to this `tiled_index` instance.  

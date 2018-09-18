@@ -25,8 +25,8 @@ class task_handle : public ::Concurrency::details::_UnrealizedChore;
 ```  
   
 #### Parameters  
- `_Function`  
- The type of the function object that will be invoked to execute the work represented by the `task_handle` object.  
+*_Function*<br/>
+The type of the function object that will be invoked to execute the work represented by the `task_handle` object.  
   
 ## Members  
   
@@ -79,8 +79,8 @@ task_handle(const _Function& _Func);
 ```  
   
 ### Parameters  
- `_Func`  
- The function that will be invoked to execute the work represented by the `task_handle` object. This may be a lambda functor, a pointer to a function, or any object that supports a version of the function call operator with the signature `void operator()()`.  
+*_Func*<br/>
+The function that will be invoked to execute the work represented by the `task_handle` object. This may be a lambda functor, a pointer to a function, or any object that supports a version of the function call operator with the signature `void operator()()`.  
   
 ### Remarks  
  The runtime creates a copy of the work function that you pass to the constructor. Therefore, any state changes that occur in a function object that you pass to a `task_handle` object will not appear in your copy of that function object.  

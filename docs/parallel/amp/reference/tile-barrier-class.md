@@ -57,8 +57,8 @@ tile_barrier(
 ```  
   
 ### Parameters  
- `_Other`  
- The `tile_barrier` object to copy.  
+*_Other*<br/>
+The `tile_barrier` object to copy.  
 
 ## <a name="wait"></a>  wait 
 Instructs all threads in the thread group (tile) to stop execution until all threads in the tile have finished waiting.  

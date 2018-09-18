@@ -53,6 +53,6 @@ For more information on ATL projects and ATL COM classes, see [ATL COM Desktop C
 
 ## See Also
 
-[ATL COM+ 1.0 Component Wizard](../../atl/reference/atl-com-plus-1-0-component-wizard.md)   
+[ATL COM+ 1.0 Component Wizard](../../atl/reference/atl-com-plus-1-0-component-wizard.md)<br/>
 [ATL COM+ 1.0 Component](../../atl/reference/adding-an-atl-com-plus-1-0-component.md)
 

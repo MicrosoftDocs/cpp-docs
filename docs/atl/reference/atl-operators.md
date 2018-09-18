@@ -32,16 +32,16 @@ This section contains the reference topics for the ATL global operators.
 
 Compares `CSid` objects or `SID` (security identifier) structures for equality.
 
-```   
+```
 bool operator==(const CSid& lhs, const CSid& rhs) throw();
 ```
 
 ### Parameters
 
-*lhs*  
+*lhs*<br/>
 The first `CSid` object or `SID` structure to compare.
 
-*rhs*  
+*rhs*<br/>
 The second `CSid` object or `SID` structure to compare.
 
 ### Return Value
@@ -52,16 +52,16 @@ Returns TRUE if the objects are equal, FALSE if they are not equal.
 
 Compares `CSid` objects or `SID` (security identifier) structures for inequality.
 
-```   
+```
 bool operator==(const CSid& lhs, const CSid& rhs) throw();
 ```
 
 ### Parameters
 
-*lhs*  
+*lhs*<br/>
 The first `CSid` object or `SID` structure to compare.
 
-*rhs*  
+*rhs*<br/>
 The second `CSid` object or `SID` structure to compare.
 
 ### Return Value
@@ -72,16 +72,16 @@ Returns TRUE if the objects are not equal, FALSE if they are equal.
 
 Tests if the `CSid` object or `SID` structure on the left side of the operator is less than the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).
 
-```   
+```
 bool operator<(const CSid& lhs, const CSid& rhs) throw();
 ```
 
 ### Parameters
 
-*lhs*  
+*lhs*<br/>
 The first `CSid` object or `SID` structure to compare.
 
-*rhs*  
+*rhs*<br/>
 The second `CSid` object or `SID` structure to compare.
 
 ### Return Value
@@ -96,16 +96,16 @@ This operator acts on the address of the `CSid` object or `SID` structure, and i
 
 Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).
 
-```   
+```
 bool operator<(const CSid& lhs, const CSid& rhs) throw();
 ```
 
 ### Parameters
 
-*lhs*  
+*lhs*<br/>
 The first `CSid` object or `SID` structure to compare.
 
-*rhs*  
+*rhs*<br/>
 The second `CSid` object or `SID` structure to compare.
 
 ### Return Value
@@ -120,16 +120,16 @@ This operator acts on the address of the `CSid` object or `SID` structure, and i
 
 Tests if the `CSid` object or `SID` structure on the left side of the operator is less than or equal to the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).
 
-```   
+```
 bool operator<(const CSid& lhs, const CSid& rhs) throw();
 ```
 
 ### Parameters
 
-*lhs*  
+*lhs*<br/>
 The first `CSid` object or `SID` structure to compare.
 
-*rhs*  
+*rhs*<br/>
 The second `CSid` object or `SID` structure to compare.
 
 ### Return Value
@@ -144,16 +144,16 @@ This operator acts on the address of the `CSid` object or `SID` structure, and i
 
 Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than or equal to the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).
 
-```   
+```
 bool operator<(const CSid& lhs, const CSid& rhs) throw();
 ```
 
 ### Parameters
 
-*lhs*  
+*lhs*<br/>
 The first `CSid` object or `SID` structure to compare.
 
-*rhs*  
+*rhs*<br/>
 The second `CSid` object or `SID` structure to compare.
 
 ### Return Value

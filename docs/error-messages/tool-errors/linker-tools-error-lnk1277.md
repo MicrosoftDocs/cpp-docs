@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1277
-object record not found in pgd (filename)  
-  
- When using [/LTCG:PGOPTIMZE](../../build/reference/ltcg-link-time-code-generation.md), the path of one of the input .lib, def, or .obj files was different from the path on which they were found during /LTCG:PGINSTRUMENT. This may be explained by a change in the LIB environment variable after /LTCG:PGINSTRUMENT. The full path to the input files is stored in the .pgd file.  
-  
- /LTCG:PGOPTIMIZE requires that the inputs be identical to the /LTCG:PGINSTRUMENT phase.  
-  
- To resolve this warning, do one of the following:  
-  
--   Run /LTCG:PGINSTRUMENT, redo all test runs, and run /LTCG:PGOPTIMIZE.  
-  
--   Change the LIB environment variable to what it was when you ran /LTCG:PGINSTRUMENT.  
-  
- It is not recommended that you work around LNK1277 by using /LTCG:PGUPDATE.
+
+object record not found in pgd (filename)
+
+When using [/LTCG:PGOPTIMZE](../../build/reference/ltcg-link-time-code-generation.md), the path of one of the input .lib, def, or .obj files was different from the path on which they were found during /LTCG:PGINSTRUMENT. This may be explained by a change in the LIB environment variable after /LTCG:PGINSTRUMENT. The full path to the input files is stored in the .pgd file.
+
+/LTCG:PGOPTIMIZE requires that the inputs be identical to the /LTCG:PGINSTRUMENT phase.
+
+To resolve this warning, do one of the following:
+
+- Run /LTCG:PGINSTRUMENT, redo all test runs, and run /LTCG:PGOPTIMIZE.
+
+- Change the LIB environment variable to what it was when you ran /LTCG:PGINSTRUMENT.
+
+It is not recommended that you work around LNK1277 by using /LTCG:PGUPDATE.

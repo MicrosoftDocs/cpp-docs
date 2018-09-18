@@ -25,8 +25,8 @@ ptr(
 ```  
   
 #### Parameters  
- `P`  
- A COM interface pointer.  
+*P*<br/>
+A COM interface pointer.  
   
 ## Remarks  
  The no-argument constructor assigns `nullptr` to the underlying object handle. Subsequent calls to the `com::ptr` will validate the internal object and silently fail until an object is actually created or attached.  

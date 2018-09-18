@@ -12,14 +12,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Reading Strings into the OLE DB Provider
+
 The `RMyProviderRowset::Execute` function opens a file and reads strings. The consumer passes the file name to the provider by calling [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757\(v=vs.85\)). The provider receives the file name and stores it in the member variable `m_szCommandText`. `Execute` reads the file name from `m_szCommandText`. If the file name is invalid or the file is unavailable, `Execute` returns an error. Otherwise, it opens the file and calls `fgets` to retrieve the strings. For each set of strings it reads, `Execute` creates an instance of the user record (`CAgentMan`) and places it into an array.  
   
- If the file cannot be opened, `Execute` must return DB_E_NOTABLE. If it returns E_FAIL instead, the provider will not work with many consumers and will not pass the OLE DB [conformance tests](../../data/oledb/testing-your-provider.md).  
+If the file cannot be opened, `Execute` must return DB_E_NOTABLE. If it returns E_FAIL instead, the provider will not work with many consumers and will not pass the OLE DB [conformance tests](../../data/oledb/testing-your-provider.md).  
   
 ## Example  
   
 ### Description  
- The edited `Execute` function looks like this:  
+
+The edited `Execute` function looks like this:  
   
 ### Code  
   
@@ -96,4 +98,5 @@ public:
 ```  
   
 ## See Also  
- [Implementing the Simple Read-Only Provider](../../data/oledb/implementing-the-simple-read-only-provider.md)
+
+[Implementing the Simple Read-Only Provider](../../data/oledb/implementing-the-simple-read-only-provider.md)

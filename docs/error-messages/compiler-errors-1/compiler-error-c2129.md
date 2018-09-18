@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2129
-static function 'function' declared but not defined  
-  
- A forward reference is made to a `static` function that is never defined.  
-  
- A `static` function must be defined within file scope. If the function is defined in another file, it must be declared `extern`.
+
+static function 'function' declared but not defined
+
+A forward reference is made to a `static` function that is never defined.
+
+A `static` function must be defined within file scope. If the function is defined in another file, it must be declared `extern`.

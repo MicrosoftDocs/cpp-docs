@@ -43,13 +43,13 @@ ATLINLINE ATLAPI AtlComModuleRegisterServer(
 
 ### Parameters
 
-*pComModule*  
+*pComModule*<br/>
 Pointer to the COM module.
 
-*bRegTypeLib*  
+*bRegTypeLib*<br/>
 TRUE if the type library is to be registered.
 
-*pCLSID*  
+*pCLSID*<br/>
 Points to the CLSID of the object to be registered. If NULL, all objects in the object map will be registered.
 
 ### Return Value
@@ -75,13 +75,13 @@ ATLINLINE ATLAPI AtlComModuleUnregisterServer(
 
 ### Parameters
 
-*pComModule*  
+*pComModule*<br/>
 Pointer to the COM module.
 
-*bUnRegTypeLib*  
+*bUnRegTypeLib*<br/>
 TRUE if the type library is to be registered.
 
-*pCLSID*  
+*pCLSID*<br/>
 Points to the CLSID of the object to be unregistered. If NULL all objects in the object map will be unregistered.
 
 ### Return Value
@@ -107,13 +107,13 @@ ATLINLINE ATLAPI AtlComModuleRegisterClassObjects(
 
 ### Parameters
 
-*pComModule*  
+*pComModule*<br/>
 Pointer to the COM module.
 
-*dwClsContext*  
+*dwClsContext*<br/>
 Specifies the context in which the class object is to be run. Possible values are CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER, or CLSCTX_LOCAL_SERVER. See [CLSCTX](https://msdn.microsoft.com/library/windows/desktop/ms693716) for more details.
 
-*dwFlags*  
+*dwFlags*<br/>
 Determines the connection types to the class object. Possible values are REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE, or REGCLS_MULTI_SEPARATE. See [REGCLS](/windows/desktop/api/combaseapi/ne-combaseapi-tagregcls) for more details.
 
 ### Return Value
@@ -134,7 +134,7 @@ ATLINLINE ATLAPI AtlComModuleRevokeClassObjects(_ATL_COM_MODULE* pComModule);
 
 ### Parameters
 
-*pComModule*  
+*pComModule*<br/>
 Pointer to the COM module.
 
 ### Return Value
@@ -159,16 +159,16 @@ ATLINLINE ATLAPI AtlComModuleGetClassObject(
 
 ### Parameters
 
-*pComModule*  
+*pComModule*<br/>
 Pointer to the COM module.
 
-*rclsid*  
+*rclsid*<br/>
 The CLSID of the object to be created.
 
-*riid*  
+*riid*<br/>
 The IID of the requested interface.
 
-*ppv*  
+*ppv*<br/>
 A pointer to the interface pointer identified by *riid*. If the object does not support this interface, *ppv* is set to NULL.
 
 ### Return Value

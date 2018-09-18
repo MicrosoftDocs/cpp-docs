@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 2) C4007
-'function' : must be 'attribute'  
-  
- A required attribute for a function is not explicitly stated. For example, the function **main** must have the `__cdecl` attribute. The compiler forces the attribute.
+
+'function' : must be 'attribute'
+
+A required attribute for a function is not explicitly stated. For example, the function **main** must have the `__cdecl` attribute. The compiler forces the attribute.

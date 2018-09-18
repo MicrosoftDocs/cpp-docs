@@ -134,7 +134,7 @@ CAcl(const CAcl& rhs) throw(...);
 
 ### Parameters
 
-*rhs*  
+*rhs*<br/>
 An existing `CAcl` object.
 
 ### Remarks
@@ -179,16 +179,16 @@ void GetAclEntries(
 
 ### Parameters
 
-*pSids*  
+*pSids*<br/>
 A pointer to an array of [CSid](../../atl/reference/csid-class.md) objects.
 
-*pAccessMasks*  
+*pAccessMasks*<br/>
 The access masks.
 
-*pAceTypes*  
+*pAceTypes*<br/>
 The access-control entry (ACE) types.
 
-*pAceFlags*  
+*pAceFlags*<br/>
 The ACE flags.
 
 ### Remarks
@@ -216,25 +216,25 @@ void GetAclEntry(
 
 ### Parameters
 
-*nIndex*  
+*nIndex*<br/>
 Index to the ACL entry to retrieve.
 
-*pSid*  
+*pSid*<br/>
 The [CSid](../../atl/reference/csid-class.md) object to which the ACL entry applies.
 
-*pMask*  
+*pMask*<br/>
 The mask specifying permissions to grant or deny access.
 
-*pType*  
+*pType*<br/>
 The ACE type.
 
-*pFlags*  
+*pFlags*<br/>
 The ACE flags.
 
-*pObjectType*  
+*pObjectType*<br/>
 The object type. This will be set to GUID_NULL if the object type is not specified in the ACE, or if the ACE is not an OBJECT ACE.
 
-*pInheritedObjectType*  
+*pInheritedObjectType*<br/>
 The inherited object type. This will be set to GUID_NULL if the inherited object type is not specified in the ACE, or if the ACE is not an OBJECT ACE.
 
 ### Remarks
@@ -295,7 +295,7 @@ Returns TRUE if the `CAcl` object is NULL, FALSE otherwise.
 
 Casts a `CAcl` object to an `ACL` (access-control list) structure.
 
-```  
+```
 operator const ACL *() const throw(...);
 ```
 
@@ -313,7 +313,7 @@ CAcl& operator= (const CAcl& rhs) throw(...);
 
 ### Parameters
 
-*rhs*  
+*rhs*<br/>
 The `CAcl` to assign to the existing object.
 
 ### Return Value
@@ -330,7 +330,7 @@ void RemoveAce(UINT nIndex) throw();
 
 ### Parameters
 
-*nIndex*  
+*nIndex*<br/>
 Index to the ACE entry to remove.
 
 ### Remarks
@@ -347,7 +347,7 @@ bool RemoveAces(const CSid& rSid) throw(...)
 
 ### Parameters
 
-*rSid*  
+*rSid*<br/>
 A reference to a `CSid` object.
 
 ##  <a name="setempty"></a>  CAcl::SetEmpty
@@ -376,5 +376,5 @@ The `CAcl` can be set to empty or to NULL: the two states are distinct.
 
 ## See Also
 
-[Class Overview](../../atl/atl-class-overview.md)   
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)

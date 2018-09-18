@@ -13,28 +13,30 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4995
-'function': name was marked as #pragma deprecated  
-  
- The compiler encountered a function that was marked with pragma [deprecated](../../preprocessor/deprecated-c-cpp.md). The function may no longer be supported in a future release. You can turn this warning off with the [warning](../../preprocessor/warning.md) pragma (example below).  
-  
-## Example  
- The following sample generates C4995:  
-  
-```  
-// C4995.cpp  
-// compile with: /W3  
-#include <stdio.h>  
-  
-// #pragma warning(disable : 4995)  
-void func1(void)  
-{  
-    printf("\nIn func1");  
-}  
-  
-int main()   
-{  
-    func1();  
-    #pragma deprecated(func1)  
-    func1();   // C4995  
-}  
+
+'function': name was marked as #pragma deprecated
+
+The compiler encountered a function that was marked with pragma [deprecated](../../preprocessor/deprecated-c-cpp.md). The function may no longer be supported in a future release. You can turn this warning off with the [warning](../../preprocessor/warning.md) pragma (example below).
+
+## Example
+
+The following sample generates C4995:
+
+```
+// C4995.cpp
+// compile with: /W3
+#include <stdio.h>
+
+// #pragma warning(disable : 4995)
+void func1(void)
+{
+    printf("\nIn func1");
+}
+
+int main()
+{
+    func1();
+    #pragma deprecated(func1)
+    func1();   // C4995
+}
 ```

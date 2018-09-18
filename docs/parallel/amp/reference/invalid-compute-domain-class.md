@@ -57,8 +57,8 @@ invalid_compute_domain() throw();
 ```  
   
 ### Parameters  
- `_Message`  
- A description of the error.  
+*_Message*<br/>
+A description of the error.  
   
 ### Return Value  
  An instance of the `invalid_compute_domain` class  

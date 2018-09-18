@@ -15,14 +15,12 @@ ms.workload: ["cplusplus"]
 The use of documentation tags requires delimiters, which indicate to the compiler where a documentation comment begins and ends.  
   
  You can use the following kinds of delimiters with the XML documentation tags:  
+|||
+|-|-|
+|`///`  | This is the form that is shown in documentation examples and used by the Visual C++ project templates.  |
+| `/** */`  | These are multiline delimiters.  |
   
- `///`  
- This is the form that is shown in documentation examples and used by the Visual C++ project templates.  
-  
- `/** */`  
- These are multiline delimiters.  
-  
- There are some formatting rules when using the `/** */` delimiters:  
+There are some formatting rules when using the `/** */` delimiters:  
   
 -   For the line that contains the `/**` delimiter, if the remainder of the line is white space, the line is not processed for comments. If the first character is white space, that white space character is ignored and the rest of the line is processed. Otherwise, the entire text of the line after the `/**` delimiter is processed as part of the comment.  
   
@@ -30,7 +28,7 @@ The use of documentation tags requires delimiters, which indicate to the compile
   
 -   For the lines after the one that begins with the `/**` delimiter, the compiler looks for a common pattern at the beginning of each line that consists of optional white space and an asterisk (`*`), followed by more optional white space. If the compiler finds a common set of characters at the beginning of each line, it will ignore that pattern for all lines after the `/**` delimiter, up to and possibly including the line that contains the `*/` delimiter.  
   
- Some examples:  
+Some examples:  
   
 -   The only part of the following comment that will be processed is the line that begins with `<summary>`. The following two tag formats will produce the same comments:  
   

@@ -13,26 +13,27 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0018
-bad register name  
-  
- A specified register does not exist or cannot be displayed.  
-  
- The Watch window can display the following registers:  
-  
- AX    SP    DS    IP  
-  
- BX    BP    ES    FL  
-  
- CX    SI    SS    GS  
-  
- DX    DI    CS    SS  
-  
- EAX    ESP    DS    EIP  
-  
- EBX    EBP    ES    EFL  
-  
- ECX    ESI    FS  
-  
- EDX    EDI    CS  
-  
- This error is identical to CAN0018.
+
+bad register name
+
+A specified register does not exist or cannot be displayed.
+
+The Watch window can display the following registers:
+
+AX    SP    DS    IP
+
+BX    BP    ES    FL
+
+CX    SI    SS    GS
+
+DX    DI    CS    SS
+
+EAX    ESP    DS    EIP
+
+EBX    EBP    ES    EFL
+
+ECX    ESI    FS
+
+EDX    EDI    CS
+
+This error is identical to CAN0018.

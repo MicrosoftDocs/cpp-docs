@@ -38,6 +38,6 @@ Use this page of the ATL Active Server Page Component Wizard to specify optional
 
 ## See Also
 
-[ATL Active Server Page Component Wizard](../../atl/reference/atl-active-server-page-component-wizard.md)   
+[ATL Active Server Page Component Wizard](../../atl/reference/atl-active-server-page-component-wizard.md)<br/>
 [ATL Active Server Page Component](../../atl/reference/adding-an-atl-active-server-page-component.md)
 

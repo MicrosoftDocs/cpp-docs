@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IErrorRecordsImpl Class
+
 Implements the OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) interface, adding records to and retrieving records from a data member ([m_rgErrors](../../data/oledb/ierrorrecordsimpl-m-rgerrors.md)) of type **CAtlArray<**`RecordClass`**>**.  
   
 ## Syntax
@@ -23,14 +24,16 @@ class IErrorRecordsImpl : public IErrorRecords
 ```  
   
 ### Parameters  
- *T*  
- A class derived from `IErrorRecordsImpl`.  
+
+*T*<br/>
+A class derived from `IErrorRecordsImpl`.  
   
- *RecordClass*  
- A class that represents an OLE DB error object.  
+*RecordClass*<br/>
+A class that represents an OLE DB error object.  
 
 ## Requirements  
- **Header:** atldb.h  
+
+**Header:** atldb.h  
   
 ## Members  
   
@@ -62,6 +65,7 @@ class IErrorRecordsImpl : public IErrorRecords
 |[m_rgErrors](#rgerrors)|An array of error records.|  
 
 ## <a name="geterrordescriptionstring"></a> IErrorRecordsImpl::GetErrorDescriptionString
+
 Gets the error description string from an error record.  
   
 ### Syntax  
@@ -71,13 +75,16 @@ LPOLESTR GetErrorDescriptionString(ERRORINFO& rCurError);
 ```  
   
 #### Parameters  
- *rCurError*  
- An `ERRORINFO` record in an `IErrorInfo` interface.  
+
+*rCurError*<br/>
+An `ERRORINFO` record in an `IErrorInfo` interface.  
   
 ### Return Value  
- A pointer to a string describing the error.  
+
+A pointer to a string describing the error.  
   
 ## <a name="geterrorguid"></a> IErrorRecordsImpl::GetErrorGUID
+
 Gets the error GUID from an error record.  
   
 ### Syntax  
@@ -87,13 +94,16 @@ REFGUID GetErrorGUID(ERRORINFO& rCurError);
 ```  
   
 #### Parameters  
- *rCurError*  
- An `ERRORINFO` record in an `IErrorInfo` interface.  
+
+*rCurError*<br/>
+An `ERRORINFO` record in an `IErrorInfo` interface.  
   
 ### Return Value  
- A reference to a GUID for the error.  
+
+A reference to a GUID for the error.  
 
 ## <a name="geterrorhelpcontext"></a> IErrorRecordsImpl::GetErrorHelpContext
+
 Gets the help context ID from an error record.  
   
 ### Syntax  
@@ -103,13 +113,16 @@ DWORD GetErrorHelpContext(ERRORINFO& rCurError);
 ```  
   
 #### Parameters  
- *rCurError*  
- An `ERRORINFO` record in an `IErrorInfo` interface.  
+
+*rCurError*<br/>
+An `ERRORINFO` record in an `IErrorInfo` interface.  
   
 ### Return Value  
- The help context ID for the error.  
+
+The help context ID for the error.  
 
 ## <a name="geterrorhelpfile"></a> IErrorRecordsImpl::GetErrorHelpFile
+
 Gets the path name of the help file from an error record.  
   
 ### Syntax  
@@ -119,13 +132,16 @@ LPOLESTR GetErrorHelpFile(ERRORINFO& rCurError);
 ```  
   
 #### Parameters  
- *rCurError*  
- An `ERRORINFO` record in an `IErrorInfo` interface.  
+
+*rCurError*<br/>
+An `ERRORINFO` record in an `IErrorInfo` interface.  
   
 ### Return Value  
- Pointer to a string that contains the path name of the help file for the error.
+
+Pointer to a string that contains the path name of the help file for the error.
 
 ## <a name="geterrorsource"></a> IErrorRecordsImpl::GetErrorSource
+
 Gets the source code that caused the error from an error record.  
   
 ### Syntax  
@@ -135,13 +151,16 @@ LPOLESTR GetErrorSource(ERRORINFO& rCurError);
 ```  
   
 #### Parameters  
- *rCurError*  
- An `ERRORINFO` record in an `IErrorInfo` interface.  
+
+*rCurError*<br/>
+An `ERRORINFO` record in an `IErrorInfo` interface.  
   
 ### Return Value  
- Pointer to a string containing the source code for the error. 
+
+Pointer to a string containing the source code for the error. 
 
 ## <a name="adderrorrecord"></a> IErrorRecordsImpl::AddErrorRecord
+
 Adds a record to the OLE DB error object.  
   
 ### Syntax  
@@ -155,9 +174,11 @@ STDMETHOD(AddErrorRecord )(ERRORINFO *pErrorInfo,
 ```  
   
 #### Parameters  
- See [IErrorRecords::AddErrorRecord](/previous-versions/windows/desktop/ms725362\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IErrorRecords::AddErrorRecord](/previous-versions/windows/desktop/ms725362\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="getbasicerrorinfo"></a> IErrorRecordsImpl::GetBasicErrorInfo
+
 Returns basic information about the error, such as the return code and provider-specific error number.  
   
 ### Syntax  
@@ -168,9 +189,11 @@ STDMETHOD(GetBasicErrorInfo )(ULONG ulRecordNum,
 ```  
   
 #### Parameters  
- See [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
+
+See [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="getcustomerrorobject"></a> IErrorRecordsImpl::GetCustomErrorObject
+
 Returns a pointer to an interface on a custom error object.  
   
 ### Syntax  
@@ -182,9 +205,11 @@ STDMETHOD(GetCustomErrorObject )(ULONG ulRecordNum,
 ```  
   
 #### Parameters  
- See [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="geterrorinfo"></a> IErrorRecordsImpl::GetErrorInfo
+
 Returns an [IErrorInfo](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) interface pointer on the specified record.  
   
 ### Syntax  
@@ -196,9 +221,11 @@ STDMETHOD(GetErrorInfo )(ULONG ulRecordNum,
 ```  
   
 #### Parameters  
- See [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) in the *OLE DB Programmer's Reference*.
+
+See [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="geterrorparameters"></a> IErrorRecordsImpl::GetErrorParameters
+
 Returns the error parameters.  
   
 ### Syntax  
@@ -209,9 +236,11 @@ STDMETHOD(GetErrorParameters )(ULONG ulRecordNum,
 ```  
   
 #### Parameters  
- See [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="getrecordcount"></a> IErrorRecordsImpl::GetRecordCount
+
 Returns the number of records in the OLE DB record object.  
   
 ### Syntax  
@@ -221,9 +250,11 @@ STDMETHOD(GetRecordCount )(ULONG *pcRecords);
 ```  
   
 #### Parameters  
- See [IErrorRecords::GetRecordCount](/previous-versions/windows/desktop/ms722724\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IErrorRecords::GetRecordCount](/previous-versions/windows/desktop/ms722724\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="rgerrors"></a> IErrorRecordsImpl::m_rgErrors
+
 An array of error records.  
   
 ### Syntax  
@@ -233,5 +264,6 @@ CAtlArray< RecordClass > m_rgErrors;
 ```  
   
 ## See Also  
- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4194
-/DELAYLOAD:dll name ignored  
-  
- The linker cannot [delay load](../../build/reference/delayload-delay-load-import.md) the requested DLL.
+
+/DELAYLOAD:dll name ignored
+
+The linker cannot [delay load](../../build/reference/delayload-delay-load-import.md) the requested DLL.

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2122
-unknown menu subtype  
-  
- The *item-definition* field of the **MENU** statement can contain only **MENUITEM** and **POPUP** statements.
+
+unknown menu subtype
+
+The *item-definition* field of the **MENU** statement can contain only **MENUITEM** and **POPUP** statements.

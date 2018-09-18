@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2898
-'declaration' : member function templates cannot be virtual  
-  
- The following sample generates C2898:  
-  
-```  
-// C2898.cpp  
-// compile with: /c  
-class X {  
-public:  
-   template<typename T> virtual void f(T t) {}   // C2898  
-};  
+
+'declaration' : member function templates cannot be virtual
+
+The following sample generates C2898:
+
+```
+// C2898.cpp
+// compile with: /c
+class X {
+public:
+   template<typename T> virtual void f(T t) {}   // C2898
+};
 ```

@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3721
-'signature': incompatible signature for event  
-  
- An event was declared incorrectly. For more information, see [__event](../../cpp/event.md).  
-  
- C3721 is only reachable using the obsolete compiler option **/clr:oldSyntax**.  
+
+'signature': incompatible signature for event
+
+An event was declared incorrectly. For more information, see [__event](../../cpp/event.md).
+
+C3721 is only reachable using the obsolete compiler option **/clr:oldSyntax**.

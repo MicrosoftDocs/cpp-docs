@@ -22,8 +22,8 @@ The \<value> tag lets you describe a property and property accessor methods. Not
 ```  
   
 #### Parameters  
- `property-description`  
- A description for the property.  
+*property-description*<br/>
+A description for the property.  
   
 ## Remarks  
  Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.  

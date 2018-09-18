@@ -122,44 +122,44 @@ void copy (
 ```  
   
 ### Parameters  
- `_Copy_extent`  
- The extent of the texture section to be copied.  
+*_Copy_extent*<br/>
+The extent of the texture section to be copied.  
   
- `_Dst`  
- The object to copy to.  
+*_Dst*<br/>
+The object to copy to.  
   
- `_Dst_byte_size`  
- The number of bytes in the destination.  
+*_Dst_byte_size*<br/>
+The number of bytes in the destination.  
   
- `_Dst_type`  
- The type of the destination object.  
+*_Dst_type*<br/>
+The type of the destination object.  
   
- `_Dst_offset`  
- The offset into the destination at which to begin copying.  
+*_Dst_offset*<br/>
+The offset into the destination at which to begin copying.  
   
- `InputIterator`  
- The type of the input interator.  
+*InputIterator*<br/>
+The type of the input interator.  
   
- `OutputIterator`  
- The type of the output iterator.  
+*OutputIterator*<br/>
+The type of the output iterator.  
   
- `_Src`  
- To object to copy.  
+*_Src*<br/>
+To object to copy.  
   
- `_Src_byte_size`  
- The number of bytes in the source.  
+*_Src_byte_size*<br/>
+The number of bytes in the source.  
   
- `_Src_type`  
- The type of the source object.  
+*_Src_type*<br/>
+The type of the source object.  
   
- `_Src_offset`  
- The offset into the source from which to begin copying.  
+*_Src_offset*<br/>
+The offset into the source from which to begin copying.  
   
- `first`  
- A beginning iterator into the source container.  
+*first*<br/>
+A beginning iterator into the source container.  
   
- `last`  
- An ending iterator into the source container.  
+*last*<br/>
+An ending iterator into the source container.  
   
 ##  <a name="copy_async"></a>  copy_async Function (Concurrency::graphics Namespace)  
  Asynchronously copies a source texture into a destination buffer, or copies a source buffer into a destination buffer, and then returns a [completion_future](completion-future-class.md) object that can be waited on. Data can't be copied when code is running on an accelerator. The general form of this function is `copy(src, dest)`.  
@@ -264,44 +264,44 @@ concurrency::completion_future copy_async(_Src_type& _Src,
 ```  
   
 ### Parameters  
- `_Copy_extent`  
- The extent of the texture section to be copied.  
+*_Copy_extent*<br/>
+The extent of the texture section to be copied.  
   
- `_Dst`  
- The object to copy to.  
+*_Dst*<br/>
+The object to copy to.  
   
- `_Dst_byte_size`  
- The number of bytes in the destination.  
+*_Dst_byte_size*<br/>
+The number of bytes in the destination.  
   
- `_Dst_type`  
- The type of the destination object.  
+*_Dst_type*<br/>
+The type of the destination object.  
   
- `_Dst_offset`  
- The offset into the destination at which to begin copying.  
+*_Dst_offset*<br/>
+The offset into the destination at which to begin copying.  
   
- `InputIterator`  
- The type of the input interator.  
+*InputIterator*<br/>
+The type of the input interator.  
   
- `OutputIterator`  
- The type of the output iterator.  
+*OutputIterator*<br/>
+The type of the output iterator.  
   
- `_Src`  
- To object to copy.  
+*_Src*<br/>
+To object to copy.  
   
- `_Src_byte_size`  
- The number of bytes in the source.  
+*_Src_byte_size*<br/>
+The number of bytes in the source.  
   
- `_Src_type`  
- The type of the source object.  
+*_Src_type*<br/>
+The type of the source object.  
   
- `_Src_offset`  
- The offset into the source from which to begin copying.  
+*_Src_offset*<br/>
+The offset into the source from which to begin copying.  
   
- `first`  
- A beginning iterator into the source container.  
+*first*<br/>
+A beginning iterator into the source container.  
   
- `last`  
- An ending iterator into the source container.  
+*last*<br/>
+An ending iterator into the source container.  
 
 ## Requirements  
  **Header:** amp_graphics.h  

@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1143
-invalid or corrupt file: no symbol for COMDAT section number  
-  
- This error can be caused if the object file is corrupt.  
-  
- Rebuild the file.
+
+invalid or corrupt file: no symbol for COMDAT section number
+
+This error can be caused if the object file is corrupt.
+
+Rebuild the file.

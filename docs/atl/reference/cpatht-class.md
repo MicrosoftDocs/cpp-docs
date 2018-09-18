@@ -28,7 +28,7 @@ class CPathT
 
 #### Parameters
 
-*StringType*  
+*StringType*<br/>
 The ATL/MFC string class to use for the path (see [CStringT](../../atl-mfc-shared/reference/cstringt-class.md)).
 
 ## Members
@@ -140,7 +140,7 @@ BOOL AddExtension(PCXSTR pszExtension);
 
 ### Parameters
 
-*pszExtension*  
+*pszExtension*<br/>
 The file extension to add.
 
 ### Return Value
@@ -161,7 +161,7 @@ BOOL Append(PCXSTR pszMore);
 
 ### Parameters
 
-*pszMore*  
+*pszMore*<br/>
 The string to append.
 
 ### Return Value
@@ -182,7 +182,7 @@ void BuildRoot(int iDrive);
 
 ### Parameters
 
-*iDrive*  
+*iDrive*<br/>
 The drive number (0 is A:, 1 is B:, and so on).
 
 ### Remarks
@@ -211,10 +211,10 @@ void Combine(PCXSTR pszDir, PCXSTR  pszFile);
 
 ### Parameters
 
-*pszDir*  
+*pszDir*<br/>
 The directory path.
 
-*pszFile*  
+*pszFile*<br/>
 The file path.
 
 ### Remarks
@@ -231,7 +231,7 @@ CPathT<StringType> CommonPrefix(PCXSTR pszOther);
 
 ### Parameters
 
-*pszOther*  
+*pszOther*<br/>
 The path to compare to the current one.
 
 ### Return Value
@@ -252,10 +252,10 @@ BOOL CompactPath(HDC hDC, UINT nWidth);
 
 ### Parameters
 
-*hDC*  
+*hDC*<br/>
 The device context used for font metrics.
 
-*nWidth*  
+*nWidth*<br/>
 The width, in pixels, that the string will be forced to fit in.
 
 ### Return Value
@@ -276,10 +276,10 @@ BOOL CompactPathEx(UINT nMaxChars, DWORD dwFlags = 0);
 
 ### Parameters
 
-*nMaxChars*  
+*nMaxChars*<br/>
 The maximum number of characters to be contained in the new string, including the terminating NULL character.
 
-*dwFlags*  
+*dwFlags*<br/>
 Reserved.
 
 ### Return Value
@@ -302,10 +302,10 @@ CPathT() throw();
 
 ### Parameters
 
-*pszPath*  
+*pszPath*<br/>
 The pointer to a path string.
 
-*path*  
+*path*<br/>
 The path string.
 
 ##  <a name="fileexists"></a>  CPathT::FileExists
@@ -426,7 +426,7 @@ BOOL IsPrefix(PCXSTR pszPrefix) const;
 
 ### Parameters
 
-*pszPrefix*  
+*pszPrefix*<br/>
 The prefix for which to search. A prefix is one of these types: "C:\\\\", ".", "..", "..\\\\".
 
 ### Return Value
@@ -479,7 +479,7 @@ BOOL IsSameRoot(PCXSTR pszOther) const;
 
 ### Parameters
 
-*pszOther*  
+*pszOther*<br/>
 The other path.
 
 ### Return Value
@@ -576,7 +576,7 @@ BOOL MatchSpec(PCXSTR pszSpec) const;
 
 ### Parameters
 
-*pszSpec*  
+*pszSpec*<br/>
 Pointer to a null-terminated string with the file type for which to search. For example, to test whether the file at the current path is a DOC file, *pszSpec* should be set to "*.doc".
 
 ### Return Value
@@ -597,7 +597,7 @@ CPathT<StringType>& operator+=(PCXSTR pszMore);
 
 ### Parameters
 
-*pszMore*  
+*pszMore*<br/>
 The string to append.
 
 ### Return Value
@@ -690,16 +690,16 @@ BOOL RelativePathTo(
 
 ### Parameters
 
-*pszFrom*  
+*pszFrom*<br/>
 The start of the relative path.
 
-*dwAttrFrom*  
+*dwAttrFrom*<br/>
 The File attributes of *pszFrom*. If this value contains FILE_ATTRIBUTE_DIRECTORY, *pszFrom* is assumed to be a directory; otherwise, *pszFrom* is assumed to be a file.
 
-*pszTo*  
+*pszTo*<br/>
 The end point of the relative path.
 
-*dwAttrTo*  
+*dwAttrTo*<br/>
 The File attributes of *pszTo*. If this value contains FILE_ATTRIBUTE_DIRECTORY, *pszTo* is assumed to be a directory; otherwise, *pszTo* is assumed to be a file.
 
 ### Return Value
@@ -784,7 +784,7 @@ BOOL RenameExtension(PCXSTR pszExtension);
 
 ### Parameters
 
-*pszExtension*  
+*pszExtension*<br/>
 The new file name extension, preceded by a "." character.
 
 ### Return Value
@@ -865,5 +865,5 @@ typedef StringType::XCHAR XCHAR;
 
 ## See Also
 
-[Classes](../../atl/reference/atl-classes.md)   
+[Classes](../../atl/reference/atl-classes.md)<br/>
 [CStringT Class](../../atl-mfc-shared/reference/cstringt-class.md)
