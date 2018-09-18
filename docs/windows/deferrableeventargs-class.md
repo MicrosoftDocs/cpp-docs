@@ -1,10 +1,12 @@
 ---
 title: "DeferrableEventArgs Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
+f1_keywords: ["event/Microsoft::WRL::DeferrableEventArgs", "event/Microsoft::WRL::DeferrableEventArgs::GetDeferral", "event/Microsoft::WRL::DeferrableEventArgs::InvokeAllFinished"]
 dev_langs: ["C++"]
+helpviewer_keywords: ["Microsoft::WRL::DeferrableEventArgs class", "Microsoft::WRL::DeferrableEventArgs::GetDeferral method", "Microsoft::WRL::DeferrableEventArgs::InvokeAllFinished method"]
 ms.assetid: ece89267-7b72-40e1-8185-550c865b070a
 author: "mikeblome"
 ms.author: "mblome"
@@ -36,16 +38,16 @@ The class that implements *TEventArgsInterface*.
 
 ### Public Methods
 
-|Name|Description|
-|----------|-----------------|
-|[DeferrableEventArgs::GetDeferral Method](../windows/deferrableeventargs-getdeferral-method.md)|Gets a reference to the [Deferral](http://go.microsoft.com/fwlink/p/?linkid=526520) object which represents a deferred event.|
-|[DeferrableEventArgs::InvokeAllFinished Method](../windows/deferrableeventargs-invokeallfinished-method.md)|Called to indicate that all processing to handle a deferred event is complete.|
+Name                                                         | Description
+------------------------------------------------------------ | -----------------------------------------------------------------------------------------------------------------------------
+[DeferrableEventArgs::GetDeferral](#getdeferral)             | Gets a reference to the [Deferral](http://go.microsoft.com/fwlink/p/?linkid=526520) object which represents a deferred event.
+[DeferrableEventArgs::InvokeAllFinished](#invokeallfinished) | Called to indicate that all processing to handle a deferred event is complete.
 
 ## Remarks
 
 Instances of this class are passed to event handlers for deferred events. The template parameters represent an interface that defines the details of the event arguments for a specific type of deferred event, and a class that implements that interface.
 
-The class appears as the first argument to an event handler for a deferred event. You can call the [GetDeferral](../windows/deferrableeventargs-getdeferral-method.md) method to get the [Deferral](http://go.microsoft.com/fwlink/p/?linkid=526520) object from which you can get all the information about the deferred event. After completing the event handling, you should call Complete on the Deferral object. You should then call [InvokeAllFinished](../windows/deferrableeventargs-invokeallfinished-method.md) at the end of the event handler method, which ensures that the completion of all deferred events is communicated properly.
+The class appears as the first argument to an event handler for a deferred event. You can call the [GetDeferral](#getdeferral) method to get the [Deferral](http://go.microsoft.com/fwlink/p/?linkid=526520) object from which you can get all the information about the deferred event. After completing the event handling, you should call Complete on the Deferral object. You should then call [InvokeAllFinished](#invokeallfinished) at the end of the event handler method, which ensures that the completion of all deferred events is communicated properly.
 
 ## Requirements
 
@@ -53,6 +55,31 @@ The class appears as the first argument to an event handler for a deferred event
 
 **Namespace:** Microsoft::WRL
 
-## See Also
+## <a name="getdeferral"></a>DeferrableEventArgs::GetDeferral
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+Gets a reference to the [Deferral](http://go.microsoft.com/fwlink/p/?linkid=526520) object which represents a deferred event.
+
+```cpp
+HRESULT GetDeferral([out, retval] Windows::Foundation::IDeferral** result)  
+```
+
+### Parameters
+
+*result*  
+A pointer that will reference the [Deferral](http://go.microsoft.com/fwlink/p/?linkid=526520) object when the call completes.
+
+### Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+## <a name="invokeallfinished"></a>DeferrableEventArgs::InvokeAllFinished
+
+Called to indicate that all processing to handle a deferred event is complete.
+  
+```cpp
+void InvokeAllFinished()  
+```
+  
+### Remarks
+
+You should call this method after the event source calls [InvokeAll](../windows/eventsource-invokeall-method.md). Calling this method prevents further deferrals from being taken and forces the completion handler to execute if no deferrals were taken.
