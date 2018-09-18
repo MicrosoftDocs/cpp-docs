@@ -4,9 +4,9 @@ ms.custom: ""
 ms.date: "09/17/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["module/Microsoft::WRL::Module::ReleaseNotifier", "module/Microsoft::WRL::Module::ReleaseNotifier::~ReleaseNotifier", "module/Microsoft::WRL::Module::ReleaseNotifier::Invoke", "module/Microsoft::WRL::Module::ReleaseNotifier::Release", "module/Microsoft::WRL::Module::ReleaseNotifier::ReleaseNotifier", "module/Microsoft::WRL::Module::ReleaseNotifier::releaseNotifier_"]
+f1_keywords: ["module/Microsoft::WRL::Module::ReleaseNotifier", "module/Microsoft::WRL::Module::ReleaseNotifier::~ReleaseNotifier", "module/Microsoft::WRL::Module::ReleaseNotifier::Invoke", "module/Microsoft::WRL::Module::ReleaseNotifier::Release", "module/Microsoft::WRL::Module::ReleaseNotifier::ReleaseNotifier"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Microsoft::WRL::Module::ReleaseNotifier class", "Microsoft::WRL::Module::ReleaseNotifier::~ReleaseNotifier, destructor", "Microsoft::WRL::Module::ReleaseNotifier::Invoke method", "Microsoft::WRL::Module::ReleaseNotifier::Release method", "Microsoft::WRL::Module::ReleaseNotifier::ReleaseNotifier, constructor", "Microsoft::WRL::Module::ReleaseNotifier::releaseNotifier_ data member"]
+helpviewer_keywords: ["Microsoft::WRL::Module::ReleaseNotifier class", "Microsoft::WRL::Module::ReleaseNotifier::~ReleaseNotifier, destructor", "Microsoft::WRL::Module::ReleaseNotifier::Invoke method", "Microsoft::WRL::Module::ReleaseNotifier::Release method", "Microsoft::WRL::Module::ReleaseNotifier::ReleaseNotifier, constructor"]
 ms.assetid: 17249cd1-4d88-42e3-8146-da9e942d12bd
 author: "mikeblome"
 ms.author: "mblome"
@@ -84,11 +84,3 @@ ReleaseNotifier(bool release) throw();
 
 *release*  
 `true` to delete this instance when the `Release` method is called; `false` to not delete this instance.
-
-## <a name="releasenotifier-releasenotifier-underscore"></a>Module::ReleaseNotifier::releaseNotifier_
-
-Holds a pointer to a `ReleaseNotifier` object.
-
-```cpp
-ReleaseNotifier *releaseNotifier_;
-```
