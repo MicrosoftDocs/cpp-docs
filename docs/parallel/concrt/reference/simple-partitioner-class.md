@@ -55,7 +55,8 @@ explicit simple_partitioner(_Size_type _Chunk_size);
 ```  
   
 ### Parameters  
- `_Chunk_size`  
+*_Chunk_size*<br/>
+The minimum partition size.
   
 ## See Also  
  [concurrency Namespace](concurrency-namespace.md)

@@ -32,8 +32,8 @@ void __cdecl _set_app_type(
 ```  
   
 ## Parameters  
- `appType`  
- A value that indicates the application type. The possible values are:  
+*appType*<br/>
+A value that indicates the application type. The possible values are:  
   
 |Value|Description|  
 |----------------|-----------------|  

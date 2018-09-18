@@ -39,8 +39,8 @@ unsigned long _inpd(
 ```  
   
 #### Parameters  
- `port`  
- I/O port number.  
+*port*<br/>
+I/O port number.  
   
 ## Return Value  
  The functions return the byte, word, or double word read from `port`. There is no error return.  

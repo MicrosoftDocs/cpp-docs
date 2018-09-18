@@ -31,11 +31,11 @@ auto_gcroot(
 ```  
   
 #### Parameters  
- `_ptr`  
- The object to own.  
+*_ptr*<br/>
+The object to own.  
   
- `_right`  
- An existing `auto_gcroot`.  
+*_right*<br/>
+An existing `auto_gcroot`.  
   
 ## Remarks  
  When constructing an `auto_gcroot` from an existing `auto_gcroot`, the existing `auto_gcroot` releases its object before transferring ownership of the object to the new `auto_gcroot`.  

@@ -25,14 +25,14 @@ class propagator_block : public source_block<_TargetLinkRegistry,
 ```  
   
 #### Parameters  
- `_TargetLinkRegistry`  
- The link registry to be used for holding the target links.  
+*_TargetLinkRegistry*<br/>
+The link registry to be used for holding the target links.  
   
- `_SourceLinkRegistry`  
- The link registry to be used for holding the source links.  
+*_SourceLinkRegistry*<br/>
+The link registry to be used for holding the source links.  
   
- `_MessageProcessorType`  
- The processor type for message processing.  
+*_MessageProcessorType*<br/>
+The processor type for message processing.  
   
 ## Members  
   
@@ -110,11 +110,11 @@ void initialize_source_and_target(
 ```  
   
 ### Parameters  
- `_PScheduler`  
- The scheduler to be used for scheduling tasks.  
+*_PScheduler*<br/>
+The scheduler to be used for scheduling tasks.  
   
- `_PScheduleGroup`  
- The schedule group to be used for scheduling tasks.  
+*_PScheduleGroup*<br/>
+The schedule group to be used for scheduling tasks.  
   
 ##  <a name="link_source"></a> link_source 
 
@@ -125,8 +125,8 @@ virtual void link_source(_Inout_ ISource<_Source_type>* _PSource);
 ```  
   
 ### Parameters  
- `_PSource`  
- A pointer to the `ISource` block that is to be linked.  
+*_PSource*<br/>
+A pointer to the `ISource` block that is to be linked.  
   
 ##  <a name="process_input_messages"></a> process_input_messages 
 
@@ -137,7 +137,8 @@ virtual void process_input_messages(_Inout_ message<_Target_type>* _PMessage);
 ```  
   
 ### Parameters  
- `_PMessage`  
+*_PMessage*<br/>
+A pointer to the message that is to be processed.  
   
 ##  <a name="propagate"></a> propagate 
 
@@ -150,11 +151,11 @@ virtual message_status propagate(
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the `message` object.  
+*_PMessage*<br/>
+A pointer to the `message` object.  
   
- `_PSource`  
- A pointer to the source block offering the message.  
+*_PSource*<br/>
+A pointer to the source block offering the message.  
   
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
@@ -175,11 +176,11 @@ virtual message_status propagate_message(
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the `message` object.  
+*_PMessage*<br/>
+A pointer to the `message` object.  
   
- `_PSource`  
- A pointer to the source block offering the message.  
+*_PSource*<br/>
+A pointer to the source block offering the message.  
   
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
@@ -209,8 +210,8 @@ void register_filter(filter_method const& _Filter);
 ```  
   
 ### Parameters  
- `_Filter`  
- The filter method.  
+*_Filter*<br/>
+The filter method.  
   
 ##  <a name="remove_network_links"></a> remove_network_links 
 
@@ -231,11 +232,11 @@ virtual message_status send(
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the `message` object.  
+*_PMessage*<br/>
+A pointer to the `message` object.  
   
- `_PSource`  
- A pointer to the source block offering the message.  
+*_PSource*<br/>
+A pointer to the source block offering the message.  
   
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
@@ -268,8 +269,8 @@ virtual void unlink_source(_Inout_ ISource<_Source_type>* _PSource);
 ```  
   
 ### Parameters  
- `_PSource`  
- A pointer to the `ISource` block that is to be unlinked.  
+*_PSource*<br/>
+A pointer to the `ISource` block that is to be unlinked.  
   
 ##  <a name="unlink_sources"></a> unlink_sources 
 

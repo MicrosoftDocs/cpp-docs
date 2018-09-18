@@ -22,8 +22,8 @@ The \<summary> tag should be used to describe a type or a type member. Use [\<re
 ```  
   
 #### Parameters  
- `description`  
- A summary of the object.  
+*description*<br/>
+A summary of the object.  
   
 ## Remarks  
  The text for the \<summary> tag is the only source of information about the type in IntelliSense, and is also displayed in the [Object Browser](/visualstudio/ide/viewing-the-structure-of-code) and in the Code Comment Web Report.  

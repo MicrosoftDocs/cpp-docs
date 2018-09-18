@@ -26,8 +26,8 @@ set OMP_SCHEDULE[=type[,size]]
 *size*<br/>
 (Optional) Specifies the size of iterations. `size` must be a positive integer. The default is 1, except when `type` is static. Not valid when `type` is `runtime`.  
   
- `type`  
- The kind of scheduling:  
+*type*<br/>
+The kind of scheduling:  
   
 -   `dynamic`  
   

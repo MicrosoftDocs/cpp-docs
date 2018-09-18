@@ -26,11 +26,11 @@ void swap(
 ```  
   
 #### Parameters  
- `_left`  
- An `auto_handle`.  
+*_left*<br/>
+An `auto_handle`.  
   
- `_right`  
- Another `auto_handle`.  
+*_right*<br/>
+Another `auto_handle`.  
   
 ## Example  
   

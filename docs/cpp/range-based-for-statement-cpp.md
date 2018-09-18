@@ -85,19 +85,14 @@ int main()
  Here is the output:  
 
 ```Output
- 1 2 3 4 5 6 7 8 9 10  
-  
- 1 2 3 4 5 6 7 8 9 10  
-  
- 1 2 3 4 5 6 7 8 9 10  
-  
- 1 2 3 4 5 6 7 8 9 10  
-  
- `end of integer array test`  
-  
- `0.14159 1.14159 2.14159 3.14159 4.14159 5.14159 6.14159 7.14159 8.14159 9.14159`  
-  
- `end of vector test`  
+ 1 2 3 4 5 6 7 8 9 10
+ 1 2 3 4 5 6 7 8 9 10
+ 1 2 3 4 5 6 7 8 9 10
+ 1 2 3 4 5 6 7 8 9 10
+end of integer array test
+
+0.14159 1.14159 2.14159 3.14159 4.14159 5.14159 6.14159 7.14159 8.14159 9.14159
+end of vector test
 ```
 
  A range-based **for** loop terminates when one of these in `statement` is executed: a [break](../cpp/break-statement-cpp.md), [return](../cpp/return-statement-cpp.md), or [goto](../cpp/goto-statement-cpp.md) to a labeled statement outside the range-based **for** loop. A [continue](../cpp/continue-statement-cpp.md) statement in a range-based **for** loop terminates only the current iteration.  

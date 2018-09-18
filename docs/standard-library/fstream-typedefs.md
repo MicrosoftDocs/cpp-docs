@@ -52,21 +52,17 @@ typedef basic_ifstream<char, char_traits<char>> ifstream;
 
 The type is a synonym for template class [basic_ifstream](../standard-library/basic-ifstream-class.md), specialized for elements of type char with default character traits. An example is
 
-`using namespace std;`
+```cpp
+using namespace std;
 
-`ifstream infile("existingtextfile.txt");`
+ifstream infile("existingtextfile.txt");
 
-`if (!infile.bad())`
-
-`{`
-
-`// Dump the contents of the file to cout.`
-
-`cout << infile.rdbuf();`
-
-`infile.close();`
-
-`}`
+if (!infile.bad())
+{
+    // Dump the contents of the file to cout.
+    cout << infile.rdbuf();infile.close();
+}
+```
 
 ## <a name="ofstream"></a>  ofstream
 

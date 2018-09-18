@@ -496,24 +496,25 @@ BOOL HitTest(
   
  The `TTHITTESTINFO` structure is defined as follows:  
   
- `typedef struct _TT_HITTESTINFO { // tthti`  
+```cpp
+typedef struct _TT_HITTESTINFO { // tthti
+    HWND hwnd;   // handle of tool or window with tool
+    POINT pt;    // client coordinates of point to test
+    TOOLINFO ti; // receives information about the tool
+} TTHITTESTINFO, FAR * LPHITTESTINFO;
+```
   
- `HWND hwnd;   // handle of tool or window with tool`  
+- `hwnd`  
+
+   Specifies the tool's handle.  
   
- `POINT pt;    // client coordinates of point to test`  
+- `pt`  
+
+   Specifies the coordinates of a point if the point is in the tool's bounding rectangle.  
   
- `TOOLINFO ti; // receives information about the tool`  
-  
- `} TTHITTESTINFO, FAR * LPHITTESTINFO;`  
-  
- `hwnd`  
- Specifies the tool's handle.  
-  
- `pt`  
- Specifies the coordinates of a point if the point is in the tool's bounding rectangle.  
-  
- `ti`  
- Information about the tool. For more information about the `TOOLINFO` structure, see [CToolTipCtrl::GetToolInfo](#gettoolinfo).  
+- `ti`  
+
+   Information about the tool. For more information about the `TOOLINFO` structure, see [CToolTipCtrl::GetToolInfo](#gettoolinfo).  
   
 ##  <a name="pop"></a>  CToolTipCtrl::Pop  
  Removes a displayed tool tip window from the view.  

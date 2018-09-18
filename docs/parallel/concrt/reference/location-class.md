@@ -81,8 +81,8 @@ static location __cdecl from_numa_node(unsigned short _NumaNodeNumber);
 ```  
   
 ### Parameters  
- `_NumaNodeNumber`  
- The NUMA node number to construct a location for.  
+*_NumaNodeNumber*<br/>
+The NUMA node number to construct a location for.  
   
 ### Return Value  
  A location representing the NUMA node specified by the `_NumaNodeNumber` parameter.  
@@ -105,12 +105,17 @@ location(
 ```  
   
 ### Parameters  
- `_Src`  
- `_LocationType`  
- `_Id`  
- `_BindingId`  
- `_PBinding`  
-  
+*_Src*<br/>
+
+*_LocationType*<br/>
+
+*_Id*<br/>
+
+*_BindingId*<br/>
+
+*_PBinding*<br/>
+(Optional) Binding pointer.
+
 ### Remarks  
  A default constructed location represents the system as a whole.  
   
@@ -123,7 +128,8 @@ bool operator!= (const location& _Rhs) const;
 ```  
   
 ### Parameters  
- `_Rhs`  
+*_Rhs*<br/>
+Operand `location`.
   
 ### Return Value  
  `true` if the two locations are different, `false` otherwise.  
@@ -137,8 +143,8 @@ location& operator= (const location& _Rhs);
 ```  
   
 ### Parameters  
- `_Rhs`  
- The source `location` object.  
+*_Rhs*<br/>
+The source `location` object.  
   
 ### Return Value  
   
@@ -151,7 +157,8 @@ bool operator== (const location& _Rhs) const;
 ```  
   
 ### Parameters  
- `_Rhs`  
+*_Rhs*<br/>
+Operand `location`.
   
 ### Return Value  
  `true` if the two locations are identical, and `false` otherwise.  

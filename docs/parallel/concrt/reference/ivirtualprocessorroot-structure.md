@@ -55,8 +55,8 @@ virtual void Activate(_Inout_ IExecutionContext* pContext) = 0;
 ```  
   
 ### Parameters  
- `pContext`  
- An interface to the execution context that will be dispatched on this virtual processor root.  
+*pContext*<br/>
+An interface to the execution context that will be dispatched on this virtual processor root.  
   
 ### Remarks  
  The Resource Manager will supply a thread proxy if one is not associated with the execution context interface `pContext`  
@@ -81,8 +81,8 @@ virtual bool Deactivate(_Inout_ IExecutionContext* pContext) = 0;
 ```  
   
 ### Parameters  
- `pContext`  
- The context which is currently being dispatched by this root.  
+*pContext*<br/>
+The context which is currently being dispatched by this root.  
   
 ### Return Value  
  A boolean value. A value of `true` indicates that the thread proxy returned from the `Deactivate` method in response to a call to the `Activate` method. A value of `false` indicates that the thread proxy returned from the method in response to a notification event in the Resource Manager. On a user-mode schedulable (UMS) thread scheduler, this indicates that items have appeared on the scheduler's completion list, and the scheduler is required to handle them.  
@@ -108,8 +108,8 @@ virtual void EnsureAllTasksVisible(_Inout_ IExecutionContext* pContext) = 0;
 ```  
   
 ### Parameters  
- `pContext`  
- The context which is currently being dispatched by this virtual processor root.  
+*pContext*<br/>
+The context which is currently being dispatched by this virtual processor root.  
   
 ### Remarks  
  You may find this method useful when you want to synchronize deactivation of a virtual processor root with the addition of new work into the scheduler. For performance reasons, you may decide to add work items to your scheduler without executing a memory barrier, which means work items added by a thread executing on one processor are not immediately visible to all other processors. By using this method in conjunction with the `Deactivate` method you can ensure that your scheduler does not deactivate all its virtual processor roots while work items exist in your scheduler's collections.  

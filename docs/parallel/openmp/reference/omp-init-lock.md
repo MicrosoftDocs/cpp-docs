@@ -24,8 +24,8 @@ void omp_init_lock(
 ```  
   
 #### Parameters  
- `lock`  
- A variable of type [omp_lock_t](../../../parallel/openmp/reference/omp-lock-t.md).  
+*lock*<br/>
+A variable of type [omp_lock_t](../../../parallel/openmp/reference/omp-lock-t.md).  
   
 ## Remarks  
  For more information, see [3.2.1 omp_init_lock and omp_init_nest_lock Functions](../../../parallel/openmp/3-2-1-omp-init-lock-and-omp-init-nest-lock-functions.md).  

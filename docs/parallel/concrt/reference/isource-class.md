@@ -23,8 +23,8 @@ class ISource;
 ```  
   
 #### Parameters  
- `T`  
- The data type of the payload within the messages produced by the source block.  
+*T*<br/>
+The data type of the payload within the messages produced by the source block.  
   
 ## Members  
   
@@ -76,11 +76,11 @@ virtual message<T>* accept(
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the offered `message` object.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the offered `message` object.  
   
- `_PTarget`  
- A pointer to the target block that is calling the `accept` method.  
+*_PTarget*<br/>
+A pointer to the target block that is calling the `accept` method.  
   
 ### Return Value  
  A pointer to the message that the caller now has ownership of.  
@@ -97,8 +97,8 @@ virtual void acquire_ref(_Inout_ ITarget<T>* _PTarget) = 0;
 ```  
   
 ### Parameters  
- `_PTarget`  
- A pointer to the target block that is calling this method.  
+*_PTarget*<br/>
+A pointer to the target block that is calling this method.  
   
 ### Remarks  
  This method is called by an `ITarget` object that is being linked to this source during the `link_target` method.  
@@ -114,11 +114,11 @@ virtual message<T>* consume(
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the reserved `message` object.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the reserved `message` object.  
   
- `_PTarget`  
- A pointer to the target block that is calling the `consume` method.  
+*_PTarget*<br/>
+A pointer to the target block that is calling the `consume` method.  
   
 ### Return Value  
  A pointer to the `message` object that the caller now has ownership of.  
@@ -143,8 +143,8 @@ virtual void link_target(_Inout_ ITarget<T>* _PTarget) = 0;
 ```  
   
 ### Parameters  
- `_PTarget`  
- A pointer to the target block being linked to this `ISource` block.  
+*_PTarget*<br/>
+A pointer to the target block being linked to this `ISource` block.  
   
 ##  <a name="release"></a> release 
 
@@ -157,11 +157,11 @@ virtual void release(
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the reserved `message` object.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the reserved `message` object.  
   
- `_PTarget`  
- A pointer to the target block that is calling the `release` method.  
+*_PTarget*<br/>
+A pointer to the target block that is calling the `release` method.  
   
 ##  <a name="release_ref"></a> release_ref 
 
@@ -172,8 +172,8 @@ virtual void release_ref(_Inout_ ITarget<T>* _PTarget) = 0;
 ```  
   
 ### Parameters  
- `_PTarget`  
- A pointer to the target block that is calling this method.  
+*_PTarget*<br/>
+A pointer to the target block that is calling this method.  
   
 ### Remarks  
  This method is called by an `ITarget` object that is being unlinked from this source. The source block is allowed to release any resources reserved for the target block.  
@@ -189,11 +189,11 @@ virtual bool reserve(
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the offered `message` object.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the offered `message` object.  
   
- `_PTarget`  
- A pointer to the target block that is calling the `reserve` method.  
+*_PTarget*<br/>
+A pointer to the target block that is calling the `reserve` method.  
   
 ### Return Value  
  `true` if the message was successfully reserved, `false` otherwise. Reservations can fail for many reasons, including: the message was already reserved or accepted by another target, the source could deny reservations, and so forth.  
@@ -210,8 +210,8 @@ virtual void unlink_target(_Inout_ ITarget<T>* _PTarget) = 0;
 ```  
   
 ### Parameters  
- `_PTarget`  
- A pointer to the target block being unlinked from this `ISource` block.  
+*_PTarget*<br/>
+A pointer to the target block being unlinked from this `ISource` block.  
   
 ##  <a name="unlink_targets"></a> unlink_targets 
 

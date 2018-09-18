@@ -44,8 +44,8 @@ wchar_t *_cgetws(
 ```  
   
 #### Parameters  
- `buffer`  
- Storage location for data.  
+*buffer*<br/>
+Storage location for data.  
   
 ## Return Value  
  `_cgets` and `_cgetws` return a pointer to the start of the string, at `buffer[2]`. If `buffer` is **NULL**, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../c-runtime-library/parameter-validation.md). If execution is allowed to continue, they return **NULL** and set `errno` to `EINVAL`.  

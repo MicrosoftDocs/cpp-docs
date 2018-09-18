@@ -53,8 +53,8 @@ virtual void BindContext(_Inout_ IExecutionContext* pContext) = 0;
 ```  
   
 ### Parameters  
- `pContext`  
- An interface to the execution context to associate with a thread proxy.  
+*pContext*<br/>
+An interface to the execution context to associate with a thread proxy.  
   
 ### Remarks  
  Normally, the [IThreadProxy::SwitchTo](ithreadproxy-structure.md#switchto) method will bind a thread proxy to an execution context on demand. There are, however, circumstances where it is necessary to bind a context in advance to ensure that the `SwitchTo` method switches to an already bound context. This is the case on a UMS scheduling context as it cannot call methods that allocate memory, and binding a thread proxy may involve memory allocation if a thread proxy is not readily available in the free pool of the thread proxy factory.  
@@ -69,8 +69,8 @@ virtual IVirtualProcessorRoot* CreateOversubscriber(_Inout_ IExecutionResource* 
 ```  
   
 ### Parameters  
- `pExecutionResource`  
- An `IExecutionResource` interface that represents the hardware thread you want to oversubscribe.  
+*pExecutionResource*<br/>
+An `IExecutionResource` interface that represents the hardware thread you want to oversubscribe.  
   
 ### Return Value  
  An `IVirtualProcessorRoot` interface.  
@@ -88,8 +88,8 @@ virtual IExecutionResource* RequestInitialVirtualProcessors(bool doSubscribeCurr
 ```  
   
 ### Parameters  
- `doSubscribeCurrentThread`  
- Whether to subscribe the current thread and account for it during resource allocation.  
+*doSubscribeCurrentThread*<br/>
+Whether to subscribe the current thread and account for it during resource allocation.  
   
 ### Return Value  
  The `IExecutionResource` interface for the current thread, if the parameter `doSubscribeCurrentThread` has the value `true`. If the value is `false`, the method returns `NULL`.  
@@ -144,8 +144,8 @@ virtual void UnbindContext(_Inout_ IExecutionContext* pContext) = 0;
 ```  
   
 ### Parameters  
- `pContext`  
- The execution context to disassociate from its thread proxy.  
+*pContext*<br/>
+The execution context to disassociate from its thread proxy.  
   
 ## See Also  
  [concurrency Namespace](concurrency-namespace.md)   

@@ -23,7 +23,7 @@ class extent;
 ```  
 
 ### Parameters
-`_Rank`  
+*_Rank*<br/>
 The rank of the `extent` object.
 
 ## Requirements
@@ -85,7 +85,7 @@ bool contains(const index<rank>& _Index) const restrict(amp,cpu);
 ```  
 
 ### Parameters
-`_Index`  
+*_Index*<br/>
 The `index` value to test.
 
 ### Return Value
@@ -107,22 +107,22 @@ explicit extent(const int _Array[_Rank])restrict(amp,cpu);
 ```  
 
 ### Parameters
-`_Array`  
+*_Array*<br/>
 An array of `_Rank` integers that is used to create the new `extent` object.
 
-`_I`  
+*_I*<br/>
 The length of the extent.
 
-`_I0`  
+*_I0*<br/>
 The length of the most significant dimension.
 
-`_I1`  
+*_I1*<br/>
 The length of the next-to-most-significant dimension.
 
-`_I2`  
+*_I2*<br/>
 The length of the least significant dimension.
 
-`_Other`  
+*_Other*<br/>
 An `extent` object on which the new `extent` object is based.
 
 ## Remarks
@@ -141,7 +141,7 @@ extent<_Rank>& operator%=(int _Rhs) restrict(cpu, direct3d);
 ```  
 
 ### Parameters
-`_Rhs`  
+*_Rhs*<br/>
 The number to find the modulus of.
 
 ### Return Value
@@ -158,7 +158,7 @@ extent<_Rank>& operator*=(int _Rhs) restrict(amp,cpu);
 ```  
 
 ### Parameters
-`_Rhs`  
+*_Rhs*<br/>
 The number to multiply.
 
 ### Return Value
@@ -175,7 +175,7 @@ extent<_Rank> operator+(const index<_Rank>& _Rhs) restrict(amp,cpu);
 ```  
 
 ### Parameters
-`_Rhs`  
+*_Rhs*<br/>
 The `index` object that contains the elements to add.
 
 ### Return Value
@@ -208,7 +208,7 @@ extent<_Rank>& operator+=(int _Rhs) restrict(amp,cpu);
 ```  
 
 ### Parameters
-`_Rhs`  
+*_Rhs*<br/>
 The number, index, or extent to add.
 
 ### Return Value
@@ -225,7 +225,7 @@ extent<_Rank> operator-(const index<_Rank>& _Rhs) restrict(amp,cpu);
 ```  
 
 ### Parameters
-`_Rhs`  
+*_Rhs*<br/>
 The `index` object that contains the elements to subtract.
 
 ### Return Value
@@ -256,7 +256,7 @@ extent<_Rank>& operator/=(int _Rhs) restrict(amp,cpu);
 ```  
 
 ### Parameters
-`_Rhs`  
+*_Rhs*<br/>
 The number to divide by.
 
 ### Return Value
@@ -275,7 +275,7 @@ extent<_Rank>& operator-=(int _Rhs) restrict(amp,cpu);
 ```  
 
 ### Parameters
-`_Rhs`  
+*_Rhs*<br/>
 The number to subtract.
 
 ### Return Value
@@ -292,7 +292,7 @@ extent<_Rank>& operator=(const extent<_Rank>& _Other) restrict(amp,cpu);
 ```  
 
 ### Parameters
-`_Other`  
+*_Other*<br/>
 The `extent` object to copy from.
 
 ### Return Value
@@ -309,7 +309,7 @@ int& operator[](unsigned int _Index) restrict(amp,cpu);
 ```  
 
 ### Parameters
-`_Index`  
+*_Index*<br/>
 An integer from 0 through the rank minus 1.
 
 ### Return Value

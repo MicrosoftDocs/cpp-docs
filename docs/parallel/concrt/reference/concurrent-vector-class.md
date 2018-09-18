@@ -25,11 +25,11 @@ class concurrent_vector: protected details::_Allocator_base<T,
 ```  
   
 #### Parameters  
- `T`  
- The data type of the elements to be stored in the vector.  
+*T*<br/>
+The data type of the elements to be stored in the vector.  
   
- `_Ax`  
- The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent vector. This argument is optional and the default value is `allocator<T>`.  
+*_Ax*<br/>
+The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent vector. This argument is optional and the default value is `allocator<T>`.  
   
 ## Members  
   
@@ -124,20 +124,20 @@ void assign(_InputIterator _Begin,
 ```  
   
 ### Parameters  
- `_InputIterator`  
- The type of the specified iterator.  
+*_InputIterator*<br/>
+The type of the specified iterator.  
   
- `_N`  
- The number of items to copy into the concurrent vector.  
+*_N*<br/>
+The number of items to copy into the concurrent vector.  
   
- `_Item`  
- Reference to a value used to fill the concurrent vector.  
+*_Item*<br/>
+Reference to a value used to fill the concurrent vector.  
   
- `_Begin`  
- An iterator to the first element of the source range.  
+*_Begin*<br/>
+An iterator to the first element of the source range.  
   
- `_End`  
- An iterator to one past the last element of the source range.  
+*_End*<br/>
+An iterator to one past the last element of the source range.  
   
 ### Remarks  
  `assign` is not concurrency-safe. You must ensure that no other threads are invoking methods on the concurrent vector when you call this method.  
@@ -153,8 +153,8 @@ const_reference at(size_type _Index) const;
 ```  
   
 ### Parameters  
- `_Index`  
- The index of the element to be retrieved.  
+*_Index*<br/>
+The index of the element to be retrieved.  
   
 ### Return Value  
  A reference to the item at the given index.  
@@ -272,29 +272,29 @@ concurrent_vector(_InputIterator _Begin,
 ```  
   
 ### Parameters  
- `M`  
- The allocator type of the source vector.  
+*M*<br/>
+The allocator type of the source vector.  
   
- `_InputIterator`  
- The type of the input iterator.  
+*_InputIterator*<br/>
+The type of the input iterator.  
   
- `_Al`  
- The allocator class to use with this object.  
+*_Al*<br/>
+The allocator class to use with this object.  
   
- `_Vector`  
- The source `concurrent_vector` object to copy or move elements from.  
+*_Vector*<br/>
+The source `concurrent_vector` object to copy or move elements from.  
   
- `_N`  
- The initial capacity of the `concurrent_vector` object.  
+*_N*<br/>
+The initial capacity of the `concurrent_vector` object.  
   
- `_Item`  
- The value of elements in the constructed object.  
+*_Item*<br/>
+The value of elements in the constructed object.  
   
- `_Begin`  
- Position of the first element in the range of elements to be copied.  
+*_Begin*<br/>
+Position of the first element in the range of elements to be copied.  
   
- `_End`  
- Position of the first element beyond the range of elements to be copied.  
+*_End*<br/>
+Position of the first element beyond the range of elements to be copied.  
   
 ### Remarks  
  All constructors store an allocator object `_Al` and initialize the vector.  
@@ -403,11 +403,11 @@ iterator grow_by(
 ```  
   
 ### Parameters  
- `_Delta`  
- The number of elements to append to the object.  
+*_Delta*<br/>
+The number of elements to append to the object.  
   
- `_Item`  
- The value to initialize the new elements with.  
+*_Item*<br/>
+The value to initialize the new elements with.  
   
 ### Return Value  
  An iterator to first item appended.  
@@ -424,8 +424,8 @@ iterator grow_to_at_least(size_type _N);
 ```  
   
 ### Parameters  
- `_N`  
- The new minimum size for the `concurrent_vector` object.  
+*_N*<br/>
+The new minimum size for the `concurrent_vector` object.  
   
 ### Return Value  
  An iterator that points to beginning of appended sequence, or to the element at index `_N` if no elements were appended.  
@@ -458,11 +458,11 @@ concurrent_vector& operator= (
 ```  
   
 ### Parameters  
- `M`  
- The allocator type of the source vector.  
+*M*<br/>
+The allocator type of the source vector.  
   
- `_Vector`  
- The source `concurrent_vector` object.  
+*_Vector*<br/>
+The source `concurrent_vector` object.  
   
 ### Return Value  
  A reference to this `concurrent_vector` object.  
@@ -478,8 +478,8 @@ const_reference operator[](size_type _index) const;
 ```  
   
 ### Parameters  
- `_Index`  
- The index of the element to be retrieved.  
+*_Index*<br/>
+The index of the element to be retrieved.  
   
 ### Return Value  
  A reference to the item at the given index.  
@@ -500,8 +500,8 @@ iterator push_back(T&& _Item);
 ```  
   
 ### Parameters  
- `_Item`  
- The value to be appended.  
+*_Item*<br/>
+The value to be appended.  
   
 ### Return Value  
  An iterator to item appended.  
@@ -541,8 +541,8 @@ void reserve(size_type _N);
 ```  
   
 ### Parameters  
- `_N`  
- The number of elements to reserve space for.  
+*_N*<br/>
+The number of elements to reserve space for.  
   
 ### Remarks  
  `reserve` is not concurrency-safe. You must ensure that no other threads are invoking methods on the concurrent vector when you call this method. The capacity of the concurrent vector after the method returns may be bigger than the requested reservation.  
@@ -561,11 +561,11 @@ void resize(
 ```  
   
 ### Parameters  
- `_N`  
- The new size of the concurrent_vector.  
+*_N*<br/>
+The new size of the concurrent_vector.  
   
- `val`  
- The value of new elements added to the vector if the new size is larger than the original size. If the value is omitted, the new objects are assigned the default value for their type.  
+*val*<br/>
+The value of new elements added to the vector if the new size is larger than the original size. If the value is omitted, the new objects are assigned the default value for their type.  
   
 ### Remarks  
  If the size of the container is less than the requested size, elements are added to the vector until it reaches the requested size. If the size of the container is larger than the requested size, the elements closest to the end of the container are deleted until the container reaches the size `_N`. If the present size of the container is the same as the requested size, no action is taken.  
@@ -606,8 +606,8 @@ void swap(concurrent_vector& _Vector);
 ```  
   
 ### Parameters  
- `_Vector`  
- The `concurrent_vector` object to swap contents with.  
+*_Vector*<br/>
+The `concurrent_vector` object to swap contents with.  
   
 ## See Also  
  [concurrency Namespace](concurrency-namespace.md)   

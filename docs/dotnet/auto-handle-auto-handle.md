@@ -32,11 +32,11 @@ auto_handle(
 ```  
   
 #### Parameters  
- `_ptr`  
- The object to own.  
+*_ptr*<br/>
+The object to own.  
   
- `_right`  
- An existing `auto_handle`.  
+*_right*<br/>
+An existing `auto_handle`.  
   
 ## Example  
   

@@ -23,11 +23,11 @@ class source_block : public ISource<typename _TargetLinkRegistry::type::type>;
 ```  
   
 #### Parameters  
- `_TargetLinkRegistry`  
- Link registry to be used for holding the target links.  
+*_TargetLinkRegistry*<br/>
+Link registry to be used for holding the target links.  
   
- `_MessageProcessorType`  
- Processor type for message processing.  
+*_MessageProcessorType*<br/>
+Processor type for message processing.  
   
 ## Members  
   
@@ -103,11 +103,11 @@ virtual message<_Target_type>* accept(
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the offered `message` object.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the offered `message` object.  
   
- `_PTarget`  
- A pointer to the target block that is calling the `accept` method.  
+*_PTarget*<br/>
+A pointer to the target block that is calling the `accept` method.  
   
 ### Return Value  
  A pointer to the `message` object that the caller now has ownership of.  
@@ -126,8 +126,8 @@ virtual message<_Target_type>* accept_message(runtime_object_identity _MsgId) = 
 ```  
   
 ### Parameters  
- `_MsgId`  
- The runtime object identity of the `message` object.  
+*_MsgId*<br/>
+The runtime object identity of the `message` object.  
   
 ### Return Value  
  A pointer to the message that the caller now has ownership of.  
@@ -155,8 +155,8 @@ virtual void async_send(_Inout_opt_ message<_Target_type>* _Msg);
 ```  
   
 ### Parameters  
- `_Msg`  
- A pointer to a `message` object to asynchronously send.  
+*_Msg*<br/>
+A pointer to a `message` object to asynchronously send.  
   
 ##  <a name="consume"></a> consume 
 
@@ -169,11 +169,11 @@ virtual message<_Target_type>* consume(
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the reserved `message` object.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the reserved `message` object.  
   
- `_PTarget`  
- A pointer to the target block that is calling the `consume` method.  
+*_PTarget*<br/>
+A pointer to the target block that is calling the `consume` method.  
   
 ### Return Value  
  A pointer to the `message` object that the caller now has ownership of.  
@@ -194,8 +194,8 @@ virtual message<_Target_type>* consume_message(runtime_object_identity _MsgId) =
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the `message` object being consumed.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the `message` object being consumed.  
   
 ### Return Value  
  A pointer to the message that the caller now has ownership of.  
@@ -222,11 +222,11 @@ void initialize_source(
 ```  
   
 ### Parameters  
- `_PScheduler`  
- The scheduler to be used for scheduling tasks.  
+*_PScheduler*<br/>
+The scheduler to be used for scheduling tasks.  
   
- `_PScheduleGroup`  
- The schedule group to be used for scheduling tasks.  
+*_PScheduleGroup*<br/>
+The schedule group to be used for scheduling tasks.  
   
 ##  <a name="link_target"></a> link_target 
 
@@ -237,8 +237,8 @@ virtual void link_target(_Inout_ ITarget<_Target_type>* _PTarget);
 ```  
   
 ### Parameters  
- `_PTarget`  
- A pointer to an `ITarget` block to link to this `source_block` object.  
+*_PTarget*<br/>
+A pointer to an `ITarget` block to link to this `source_block` object.  
   
 ### Remarks  
  The method throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if the parameter `_PTarget` is `NULL`.  
@@ -260,7 +260,8 @@ virtual void process_input_messages(_Inout_ message<_Target_type>* _PMessage);
 ```  
   
 ### Parameters  
- `_PMessage`  
+*_PMessage*<br/>
+A pointer to the message that is to be processed.  
   
 ##  <a name="propagate_output_messages"></a> propagate_output_messages 
 
@@ -279,8 +280,8 @@ virtual void propagate_to_any_targets(_Inout_opt_ message<_Target_type>* _PMessa
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the message that is to be propagated.  
+*_PMessage*<br/>
+A pointer to the message that is to be propagated.  
   
 ##  <a name="release"></a> release 
 
@@ -293,11 +294,11 @@ virtual void release(
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the reserved `message` object.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the reserved `message` object.  
   
- `_PTarget`  
- A pointer to the target block that is calling the `release` method.  
+*_PTarget*<br/>
+A pointer to the target block that is calling the `release` method.  
   
 ### Remarks  
  The method throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if the parameter `_PTarget` is `NULL`.  
@@ -313,8 +314,8 @@ virtual void release_message(runtime_object_identity _MsgId) = 0;
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the `message` object being released.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the `message` object being released.  
   
 ##  <a name="release_ref"></a> release_ref 
 
@@ -325,8 +326,8 @@ virtual void release_ref(_Inout_ ITarget<_Target_type>* _PTarget);
 ```  
   
 ### Parameters  
- `_PTarget`  
- A pointer to the target block that is calling this method.  
+*_PTarget*<br/>
+A pointer to the target block that is calling this method.  
   
 ### Remarks  
  This method is called by an `ITarget` object that is being unlinked from this source. The source block is allowed to release any resources reserved for the target block.  
@@ -350,11 +351,11 @@ virtual bool reserve(
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the offered `message` object.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the offered `message` object.  
   
- `_PTarget`  
- A pointer to the target block that is calling the `reserve` method.  
+*_PTarget*<br/>
+A pointer to the target block that is calling the `reserve` method.  
   
 ### Return Value  
  `true` if the message was successfully reserved, `false` otherwise. Reservations can fail for many reasons, including: the message was already reserved or accepted by another target, the source could deny reservations, and so forth.  
@@ -373,8 +374,8 @@ virtual bool reserve_message(runtime_object_identity _MsgId) = 0;
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the `message` object being reserved.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the `message` object being reserved.  
   
 ### Return Value  
  `true` if the message was successfully reserved, `false` otherwise.  
@@ -415,8 +416,8 @@ virtual void sync_send(_Inout_opt_ message<_Target_type>* _Msg);
 ```  
   
 ### Parameters  
- `_Msg`  
- A pointer to a `message` object to synchronously send.  
+*_Msg*<br/>
+A pointer to a `message` object to synchronously send.  
   
 ##  <a name="unlink_target"></a> unlink_target 
 
@@ -427,8 +428,8 @@ virtual void unlink_target(_Inout_ ITarget<_Target_type>* _PTarget);
 ```  
   
 ### Parameters  
- `_PTarget`  
- A pointer to an `ITarget` block to unlink from this `source_block` object.  
+*_PTarget*<br/>
+A pointer to an `ITarget` block to unlink from this `source_block` object.  
   
 ### Remarks  
  The method throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if the parameter `_PTarget` is `NULL`.  
@@ -442,8 +443,8 @@ virtual void unlink_target_notification(_Inout_ ITarget<_Target_type>* _PTarget)
 ```  
   
 ### Parameters  
- `_PTarget`  
- The `ITarget` block that was unlinked.  
+*_PTarget*<br/>
+The `ITarget` block that was unlinked.  
   
 ##  <a name="unlink_targets"></a> unlink_targets 
 

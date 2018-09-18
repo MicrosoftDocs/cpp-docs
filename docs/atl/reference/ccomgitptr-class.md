@@ -25,7 +25,7 @@ class CComGITPtr
 
 #### Parameters
 
-`T`  
+*T*<br/>
 The type of the interface pointer to be stored in the GIT.
 
 ## Members

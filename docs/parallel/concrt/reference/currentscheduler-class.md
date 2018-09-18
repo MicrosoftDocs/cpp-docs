@@ -58,8 +58,8 @@ static void __cdecl Create(const SchedulerPolicy& _Policy);
 ```  
   
 ### Parameters  
- `_Policy`  
- The scheduler policy that describes the behavior of the newly created scheduler.  
+*_Policy*<br/>
+The scheduler policy that describes the behavior of the newly created scheduler.  
   
 ### Remarks  
  The attachment of the scheduler to the calling context implicitly places a reference count on the scheduler.  
@@ -81,8 +81,8 @@ static ScheduleGroup* __cdecl CreateScheduleGroup(location& _Placement);
 ```  
   
 ### Parameters  
- `_Placement`  
- A reference to a location where the tasks within the schedule group will be biased towards executing at.  
+*_Placement*<br/>
+A reference to a location where the tasks within the schedule group will be biased towards executing at.  
   
 ### Return Value  
  A pointer to the newly created schedule group. This `ScheduleGroup` object has an initial reference count placed on it.  
@@ -176,8 +176,8 @@ static bool __cdecl IsAvailableLocation(const location& _Placement);
 ```  
   
 ### Parameters  
- `_Placement`  
- A reference to the location to query the current scheduler about.  
+*_Placement*<br/>
+A reference to the location to query the current scheduler about.  
   
 ### Return Value  
  An indication of whether or not the location specified by the `_Placement` argument is available on the current scheduler.  
@@ -196,8 +196,8 @@ static void __cdecl RegisterShutdownEvent(HANDLE _ShutdownEvent);
 ```  
   
 ### Parameters  
- `_ShutdownEvent`  
- A handle to a Windows event object which will be signaled by the runtime when the scheduler associated with the current context shuts down and destroys itself.  
+*_ShutdownEvent*<br/>
+A handle to a Windows event object which will be signaled by the runtime when the scheduler associated with the current context shuts down and destroys itself.  
   
 ### Remarks  
  If there is no scheduler attached to the calling context, calling this method will result in a [scheduler_not_attached](scheduler-not-attached-class.md) exception being thrown.  
@@ -218,14 +218,14 @@ static void __cdecl ScheduleTask(
 ```  
   
 ### Parameters  
- `_Proc`  
- A pointer to the function to execute to perform the body of the light-weight task.  
+*_Proc*<br/>
+A pointer to the function to execute to perform the body of the light-weight task.  
   
- `_Data`  
- A void pointer to the data that will be passed as a parameter to the body of the task.  
+*_Data*<br/>
+A void pointer to the data that will be passed as a parameter to the body of the task.  
   
- `_Placement`  
- A reference to a location where the light-weight task will be biased towards executing at.  
+*_Placement*<br/>
+A reference to a location where the light-weight task will be biased towards executing at.  
   
 ### Remarks  
  This method will result in the process' default scheduler being created and/or attached to the calling context if there is no scheduler currently associated with the calling context.  

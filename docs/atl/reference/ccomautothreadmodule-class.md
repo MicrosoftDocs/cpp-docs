@@ -28,7 +28,7 @@ class CComAutoThreadModule : public CComModule
 
 #### Parameters
 
-`ThreadAllocator`  
+*ThreadAllocator*<br/>
 [in] The class managing thread selection. The default value is [CComSimpleThreadAllocator](../../atl/reference/ccomsimplethreadallocator-class.md).
 
 ## Members

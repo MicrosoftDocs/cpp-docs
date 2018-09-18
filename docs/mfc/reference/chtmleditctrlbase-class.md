@@ -136,8 +136,8 @@ template <class T> class CHtmlEditCtrlBase
 |[CHtmlEditCtrlBase::UnorderList](#unorderlist)|Toggles the current selection between an ordered list and a normal format block.|  
   
 #### Parameters  
- `T`  
- The name of the derived class.  
+*T*<br/>
+The name of the derived class.  
   
 ## Remarks  
  `CHtmlEditCtrlBase` provides member functions for the WebBrowser's HTML editing commands, such as [Bold](#bold). (Alternately, you can call [ExecCommand](#execcommand) to execute the IDM_BOLD command.)  

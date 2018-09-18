@@ -22,8 +22,8 @@ The \<para> tag is for use inside a tag, such as [\<summary>](../ide/summary-vis
 ```  
   
 #### Parameters  
- `content`  
- The text of the paragraph.  
+*content*<br/>
+The text of the paragraph.  
   
 ## Remarks  
  Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.  

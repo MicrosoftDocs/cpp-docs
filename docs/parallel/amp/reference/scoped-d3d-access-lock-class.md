@@ -62,14 +62,14 @@ scoped_d3d_access_lock(// [3] move constructor
 ```  
   
 ### Parameters  
- `_Av`  
- The `accelerator_view` for the lock to adopt.  
+*_Av*<br/>
+The `accelerator_view` for the lock to adopt.  
   
- `_T`  
- The `adopt_d3d_access_lock_t` object.  
+*_T*<br/>
+The `adopt_d3d_access_lock_t` object.  
   
- `_Other`  
- The `scoped_d3d_access_lock` object from which to move an existing lock.  
+*_Other*<br/>
+The `scoped_d3d_access_lock` object from which to move an existing lock.  
   
 ## Construction  
  [1] Constructor  
@@ -98,8 +98,8 @@ scoped_d3d_access_lock& operator= (scoped_d3d_access_lock&& _Other);
 ```  
   
 ### Parameters  
- `_Other`  
- The accelerator_view from which to move the D3D access lock.  
+*_Other*<br/>
+The accelerator_view from which to move the D3D access lock.  
   
 ### Return Value  
  A reference to this `scoped_accelerator_view_lock`.  

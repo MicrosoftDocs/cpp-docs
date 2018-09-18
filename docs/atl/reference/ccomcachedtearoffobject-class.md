@@ -29,7 +29,7 @@ public CComObjectRootEx<contained
 
 #### Parameters
 
-`contained`  
+*contained*<br/>
 Your tear-off class, derived from `CComTearOffObjectBase` and the interfaces you want your tear-off object to support.
 
 ## Members

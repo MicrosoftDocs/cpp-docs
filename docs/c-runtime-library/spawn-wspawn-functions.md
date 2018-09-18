@@ -25,18 +25,13 @@ Each of the `_spawn` functions creates and executes a new process:
 |[_spawnlpe, _wspawnlpe](../c-runtime-library/reference/spawnlpe-wspawnlpe.md)|[_spawnvpe, _wspawnvpe](../c-runtime-library/reference/spawnvpe-wspawnvpe.md)|  
   
  The letters at the end of the function name determine the variation.  
-  
- `e`  
- `envp`, array of pointers to environment settings, is passed to new process.  
-  
- `l`  
- Command-line arguments are passed individually to `_spawn` function. This suffix is typically used when a number of parameters to a new process is known in advance.  
-  
- `p`  
- `PATH` environment variable is used to find the file to execute.  
-  
- `v`  
- `argv`, array of pointers to command-line arguments, is passed to `_spawn` function. This suffix is typically used when a number of parameters to a new process is variable.  
+
+|Letter|Variant|
+|-|-|
+| `e`  | `envp`, array of pointers to environment settings, is passed to new process.  |
+| `l`  | Command-line arguments are passed individually to `_spawn` function. This suffix is typically used when a number of parameters to a new process is known in advance.  |
+| `p`  | `PATH` environment variable is used to find the file to execute.  |
+| `v`  | `argv`, array of pointers to command-line arguments, is passed to `_spawn` function. This suffix is typically used when a number of parameters to a new process is variable.  |
   
 ## Remarks  
  The `_spawn` functions each create and execute a new process. They automatically handle multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. The `_wspawn` functions are wide-character versions of the `_spawn` functions; they do not handle multibyte-character strings. Otherwise, the `_wspawn` functions behave identically to their `_spawn` counterparts.  
@@ -55,18 +50,13 @@ Each of the `_spawn` functions creates and executes a new process:
 |`_tspawnvpe`|`_spawnvpe`|`_spawnvpe`|`_wspawnvpe`|  
   
  Enough memory must be available for loading and executing the new process. The `mode` argument determines the action taken by the calling process before and during `_spawn`. The following values for `mode` are defined in Process.h:  
-  
- `_P_OVERLAY`  
- Overlays a calling process with a new process, destroying the calling process (same effect as `_exec` calls).  
-  
- `_P_WAIT`  
- Suspends a calling thread until execution of the new process is complete (synchronous `_spawn`).  
-  
- `_P_NOWAIT` or `_P_NOWAITO`  
- Continues to execute a calling process concurrently with the new process (asynchronous `_spawn`).  
-  
- `_P_DETACH`  
- Continues to execute the calling process; the new process is run in the background with no access to the console or keyboard. Calls to `_cwait` against the new process fail (asynchronous `_spawn`).  
+
+|||
+|-|-|
+| `_P_OVERLAY`  | Overlays a calling process with a new process, destroying the calling process (same effect as `_exec` calls).  |
+| `_P_WAIT`  | Suspends a calling thread until execution of the new process is complete (synchronous `_spawn`).  |
+| `_P_NOWAIT` or `_P_NOWAITO`  | Continues to execute a calling process concurrently with the new process (asynchronous `_spawn`).  |
+| `_P_DETACH`  | Continues to execute the calling process; the new process is run in the background with no access to the console or keyboard. Calls to `_cwait` against the new process fail (asynchronous `_spawn`).  |
   
  The `cmdname` argument specifies the file that is executed as the new process and can specify a full path (from the root), a partial path (from the current working directory), or just a file name. If `cmdname` does not have a file name extension or does not end with a period (.), the `_spawn` function first tries the .com file name extension and then the .exe file name extension, the .bat file name extension, and finally the .cmd file name extension.  
   

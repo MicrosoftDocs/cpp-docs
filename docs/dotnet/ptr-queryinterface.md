@@ -25,8 +25,8 @@ void QueryInterface(
 ```  
   
 #### Parameters  
- `other`  
- The `com::ptr` that will get the interface.  
+*other*<br/>
+The `com::ptr` that will get the interface.  
   
 ## Exceptions  
  Internally, `QueryInterface` is called on the owned COM object and any error `HRESULT` is converted to an exception by <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>.  

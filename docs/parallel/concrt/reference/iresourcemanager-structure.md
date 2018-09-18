@@ -63,17 +63,17 @@ virtual void CreateNodeTopology(
 ```  
   
 ### Parameters  
- `nodeCount`  
- The number of processor nodes being simulated.  
+*nodeCount*<br/>
+The number of processor nodes being simulated.  
   
- `pCoreCount`  
- An array that specifies the number of cores on each node.  
+*pCoreCount*<br/>
+An array that specifies the number of cores on each node.  
   
- `pNodeDistance`  
- A matrix specifying the node distance between any two nodes. This parameter can have the value `NULL`.  
+*pNodeDistance*<br/>
+A matrix specifying the node distance between any two nodes. This parameter can have the value `NULL`.  
   
- `pProcessorGroups`  
- An array that specifies the processor group each node belongs to.  
+*pProcessorGroups*<br/>
+An array that specifies the processor group each node belongs to.  
   
 ### Remarks  
  [invalid_argument](../../../standard-library/invalid-argument-class.md) is thrown if the parameter `nodeCount` has the value `0` was passed in, or if the parameter `pCoreCount` has the value `NULL`.  
@@ -127,11 +127,11 @@ virtual ISchedulerProxy *RegisterScheduler(
 ```  
   
 ### Parameters  
- `pScheduler`  
- An `IScheduler` interface to the scheduler to be registered.  
+*pScheduler*<br/>
+An `IScheduler` interface to the scheduler to be registered.  
   
- `version`  
- The version of communication interface the scheduler is using to communicate with the Resource Manager. Using a version allows the Resource Manager to evolve the communication interface while allowing schedulers to obtain access to older features. Schedulers that wish to use Resource Manager features present in Visual Studio 2010 should use the version `CONCRT_RM_VERSION_1`.  
+*version*<br/>
+The version of communication interface the scheduler is using to communicate with the Resource Manager. Using a version allows the Resource Manager to evolve the communication interface while allowing schedulers to obtain access to older features. Schedulers that wish to use Resource Manager features present in Visual Studio 2010 should use the version `CONCRT_RM_VERSION_1`.  
   
 ### Return Value  
  The `ISchedulerProxy` interface the Resource Manager has associated with your scheduler. Your scheduler should use this interface to communicate with Resource Manager from this point on.  

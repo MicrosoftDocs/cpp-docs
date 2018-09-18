@@ -19,8 +19,8 @@ When you specify the **TBSTYLE_TOOLTIPS** style, the toolbar creates and manages
  [!code-cpp[NVC_MFCControlLadenDialog#40](../mfc/codesnippet/cpp/handling-tool-tip-notifications_1.cpp)]  
   
 ## Remarks  
- `memberFxn`  
- The member function to be called when text is needed for this button.  
+*memberFxn*<br/>
+The member function to be called when text is needed for this button.  
   
  Note that the id of a tool tip is always 0.  
   

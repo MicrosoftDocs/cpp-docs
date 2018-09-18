@@ -28,17 +28,17 @@ Iterates through an array or collection. This non-standard keyword is available 
   
  **Parameters**  
   
- `type`  
- The type of `identifier`.  
+*type*<br/>
+The type of `identifier`.  
   
- `identifier`  
- The iteration variable that represents the collection element.  When `identifier` is a [Tracking Reference Operator](../windows/tracking-reference-operator-cpp-component-extensions.md), you can modify the element.  
+*identifier*<br/>
+The iteration variable that represents the collection element.  When `identifier` is a [Tracking Reference Operator](../windows/tracking-reference-operator-cpp-component-extensions.md), you can modify the element.  
   
- `expression`  
- An array expression or collection. The collection element must be such that the compiler can convert it to the `identifier` type.  
+*expression*<br/>
+An array expression or collection. The collection element must be such that the compiler can convert it to the `identifier` type.  
   
- `statements`  
- One or more statements to be executed.  
+*statements*<br/>
+One or more statements to be executed.  
   
  **Remarks**  
   

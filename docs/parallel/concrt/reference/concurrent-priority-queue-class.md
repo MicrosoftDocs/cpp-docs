@@ -26,14 +26,14 @@ template <typename T,
 ```  
   
 #### Parameters  
- `T`  
- The data type of the elements to be stored in the priority queue.  
+*T*<br/>
+The data type of the elements to be stored in the priority queue.  
   
- `_Compare`  
- The type of the function object that can compare two element values as sort keys to determine their relative order in the priority queue. This argument is optional and the binary predicate `less<T>` is the default value.  
+*_Compare*<br/>
+The type of the function object that can compare two element values as sort keys to determine their relative order in the priority queue. This argument is optional and the binary predicate `less<T>` is the default value.  
   
- `_Ax`  
- The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent priority queue. This argument is optional and the default value is `allocator<T>`.  
+*_Ax*<br/>
+The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent priority queue. This argument is optional and the default value is `allocator<T>`.  
   
 ## Members  
   
@@ -126,23 +126,23 @@ concurrent_priority_queue(
 ```  
   
 ### Parameters  
- `_InputIterator`  
- The type of the input iterator.  
+*_InputIterator*<br/>
+The type of the input iterator.  
   
- `_Al`  
- The allocator class to use with this object.  
+*_Al*<br/>
+The allocator class to use with this object.  
   
- `_Init_capacity`  
- The initial capacity of the `concurrent_priority_queue` object.  
+*_Init_capacity*<br/>
+The initial capacity of the `concurrent_priority_queue` object.  
   
- `_Begin`  
- The position of the first element in the range of elements to be copied.  
+*_Begin*<br/>
+The position of the first element in the range of elements to be copied.  
   
- `_End`  
- The position of the first element beyond the range of elements to be copied.  
+*_End*<br/>
+The position of the first element beyond the range of elements to be copied.  
   
- `_Src`  
- The source `concurrent_priority_queue` object to copy or move elements from.  
+*_Src*<br/>
+The source `concurrent_priority_queue` object to copy or move elements from.  
   
 ### Remarks  
  All constructors store an allocator object `_Al` and initialize the priority queue.  
@@ -190,8 +190,8 @@ concurrent_priority_queue& operator= (concurrent_priority_queue&& _Src);
 ```  
   
 ### Parameters  
- `_Src`  
- The source `concurrent_priority_queue` object.  
+*_Src*<br/>
+The source `concurrent_priority_queue` object.  
   
 ### Return Value  
  A reference to this `concurrent_priority_queue` object.  
@@ -207,8 +207,8 @@ void push(value_type&& _Elem);
 ```  
   
 ### Parameters  
- `_Elem`  
- The element to be added to the concurrent priority queue.  
+*_Elem*<br/>
+The element to be added to the concurrent priority queue.  
   
 ##  <a name="size"></a> size 
 
@@ -233,8 +233,8 @@ void swap(concurrent_priority_queue& _Queue);
 ```  
   
 ### Parameters  
- `_Queue`  
- The `concurrent_priority_queue` object to swap contents with.  
+*_Queue*<br/>
+The `concurrent_priority_queue` object to swap contents with.  
   
 ##  <a name="try_pop"></a> try_pop 
 
@@ -245,8 +245,8 @@ bool try_pop(reference _Elem);
 ```  
   
 ### Parameters  
- `_Elem`  
- A reference to a variable that will be populated with the highest priority element, if the queue is non-empty.  
+*_Elem*<br/>
+A reference to a variable that will be populated with the highest priority element, if the queue is non-empty.  
   
 ### Return Value  
  `true` if a value was popped, `false` otherwise.  

@@ -58,11 +58,11 @@ explicit _CRTIMP scheduler_worker_creation_error(
 ```  
   
 ### Parameters  
- `_Message`  
- A descriptive message of the error.  
+*_Message*<br/>
+A descriptive message of the error.  
   
- `_Hresult`  
- The `HRESULT` value of the error that caused the exception.  
+*_Hresult*<br/>
+The `HRESULT` value of the error that caused the exception.  
   
 ## See Also  
  [concurrency Namespace](concurrency-namespace.md)

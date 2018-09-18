@@ -27,8 +27,8 @@ void __set_app_type (
 ```  
   
 #### Parameters  
- `at`  
- A value that indicates the application type. The possible values are:  
+*at*<br/>
+A value that indicates the application type. The possible values are:  
   
 |Value|Description|  
 |-----------|-----------------|  

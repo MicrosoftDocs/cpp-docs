@@ -21,11 +21,10 @@ Specifies that one or more variables should be shared among all threads.
 copyprivate(var)  
 ```  
   
-## Remarks  
- where,  
+### Parameters
   
- `var`  
- One or more variables to share. If more than one variable is specified, separate variable names with a comma.  
+*var*<br/>
+One or more variables to share. If more than one variable is specified, separate variable names with a comma.  
   
 ## Remarks  
  `copyprivate` applies to the [single](../../../parallel/openmp/reference/single.md) directive.  

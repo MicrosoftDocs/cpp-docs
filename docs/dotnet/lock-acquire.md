@@ -28,8 +28,8 @@ void acquire(
 ```  
   
 #### Parameters  
- `_timeout`  
- Timeout value in milliseconds or as a <xref:System.TimeSpan>.  
+*_timeout*<br/>
+Timeout value in milliseconds or as a <xref:System.TimeSpan>.  
   
 ## Exceptions  
  Throws <xref:System.ApplicationException> if lock acquisition does not occur before timeout.  

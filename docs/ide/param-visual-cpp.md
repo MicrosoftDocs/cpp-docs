@@ -22,11 +22,11 @@ The \<param> tag should be used in the comment for a method declaration to descr
 ```  
   
 #### Parameters  
- `name`  
- The name of a method parameter.  Enclose the name in single or double quotation marks.  The compiler issues a warning if it does not find `name`.  
+*name*<br/>
+The name of a method parameter.  Enclose the name in single or double quotation marks.  The compiler issues a warning if it does not find `name`.  
   
- `description`  
- A description for the parameter.  
+*description*<br/>
+A description for the parameter.  
   
 ## Remarks  
  The text for the \<param> tag will be displayed in IntelliSense, the [Object Browser](/visualstudio/ide/viewing-the-structure-of-code), and in the Code Comment Web Report.  
@@ -35,7 +35,7 @@ The \<param> tag should be used in the comment for a method declaration to descr
   
 ## Example  
   
-```  
+```cpp  
 // xml_param_tag.cpp  
 // compile with: /clr /doc /LD  
 // post-build command: xdcmake xml_param_tag.dll  

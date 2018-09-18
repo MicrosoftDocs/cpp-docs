@@ -26,10 +26,9 @@ class task_completion_event<void>;
 ```  
   
 #### Parameters  
- `_ResultType`  
- The result type of this `task_completion_event` class.  
-  
- `T`  
+*_ResultType*<br/>
+The result type of this `task_completion_event` class.  
+
   
 ## Members  
   
@@ -72,8 +71,8 @@ bool set() const ;
 ```  
   
 ### Parameters  
- `_Result`  
- The result to set this event with.  
+*_Result*<br/>
+The result to set this event with.  
   
 ### Return Value  
  The method returns `true` if it was successful in setting the event. It returns `false` if the event is already set.  
@@ -93,9 +92,14 @@ __declspec(noinline) bool set_exception(std::exception_ptr _ExceptionPtr) const 
 ```  
   
 ### Parameters  
- `_E`  
- `_Except`  
- `_ExceptionPtr`  
+*_E*<br/>
+The exception type.
+
+*_Except*<br/>
+The exception to set.
+
+*_ExceptionPtr*<br/>
+The exception pointer to set.
   
 ### Return Value  
   

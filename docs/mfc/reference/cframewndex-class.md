@@ -1015,17 +1015,12 @@ afx_msg LRESULT OnMenuChar(
   
 ### Return Value  
  The high-order word must be one of the following values.  
-  
- `0`  
- The framework should ignore the keystroke.  
-  
- `1`  
- The framework should close the menu.  
-  
- `2`  
- The framework should select one of the items displayed in the menu. The low-order word contains the ID of the command to select.  
-  
-### Remarks  
+
+|||
+|-|-|
+ `0` | The framework should ignore the keystroke.  
+ `1`  | The framework should close the menu.  
+ `2`  | The framework should select one of the items displayed in the menu. The low-order word contains the ID of the command to select.  
   
 ##  <a name="onmousemove"></a>  CFrameWndEx::OnMouseMove  
  The framework calls this method when the pointer moves.  

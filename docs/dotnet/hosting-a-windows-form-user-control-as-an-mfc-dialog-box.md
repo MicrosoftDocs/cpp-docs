@@ -52,9 +52,10 @@ MFC provides the template class [CWinFormsDialog](../mfc/reference/cwinformsdial
   
      Before the return statement in the definition of CMFC03App::InitInstance, add:  
   
-     `CHostForWinForm m_HostForWinForm;`  
-  
-     `m_HostForWinForm.DoModal();`  
+    ```cpp
+    CHostForWinForm m_HostForWinForm;
+    m_HostForWinForm.DoModal();
+    ```
   
 8.  Build and run the project.  
   
@@ -68,7 +69,7 @@ MFC provides the template class [CWinFormsDialog](../mfc/reference/cwinformsdial
   
      Display the **Properties** window (F4). In **Class View**, select CHostForWinForm. In the **Properties** window, select overrides and in the row for OnInitDialog, click in the left hand column and select \< Add >. This adds the following line to CHostForWinForm.h:  
   
-    ```  
+    ```cpp  
     virtual BOOL OnInitDialog();  
     ```  
   

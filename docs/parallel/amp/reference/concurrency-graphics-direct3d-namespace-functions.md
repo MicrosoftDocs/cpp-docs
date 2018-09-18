@@ -27,11 +27,11 @@ IUnknown* get_sampler(
 ```  
   
 ### Parameters  
- `_Av`  
- A D3D accelerator view on which the D3D sampler state is to be created.  
+*_Av*<br/>
+A D3D accelerator view on which the D3D sampler state is to be created.  
   
- `_Sampler`  
- A sampler object for which the underlying D3D sampler state interface is created.  
+*_Sampler*<br/>
+A sampler object for which the underlying D3D sampler state interface is created.  
   
 ### Return Value  
  The IUnknown interface pointer corresponding to the D3D sampler state that represents the given sampler.  
@@ -67,14 +67,14 @@ _Ret_ IUnknown *get_texture(
 ```  
   
 ### Parameters  
- `value_type`  
- The element type of the texture.  
+*value_type*<br/>
+The element type of the texture.  
   
- `_Rank`  
- The rank of the texture.  
+*_Rank*<br/>
+The rank of the texture.  
   
- `_Texture`  
- A texture or texture view associated with the accelerator_view for which the underlying Direct3D texture interface is returned.  
+*_Texture*<br/>
+A texture or texture view associated with the accelerator_view for which the underlying Direct3D texture interface is returned.  
   
 ### Return Value  
  The IUnknown interface pointer corresponding to the Direct3D texture underlying the texture.  
@@ -87,8 +87,8 @@ sampler make_sampler(_In_ IUnknown* _D3D_sampler) restrict(amp);
 ```  
   
 ### Parameters  
- `_D3D_sampler`  
- IUnknown interface pointer of the D3D sampler state to create the sampler from.  
+*_D3D_sampler*<br/>
+IUnknown interface pointer of the D3D sampler state to create the sampler from.  
   
 ### Return Value  
  A sampler represents the provided D3D sampler state.  
@@ -108,20 +108,20 @@ texture<value_type, _Rank> make_texture(
 ```  
   
 ### Parameters  
- `value_type`  
- The type of the elements in the texture.  
+*value_type*<br/>
+The type of the elements in the texture.  
   
- `_Rank`  
- The rank of the texture.  
+*_Rank*<br/>
+The rank of the texture.  
   
- `_Av`  
- A D3D accelerator view on which the texture is to be created.  
+*_Av*<br/>
+A D3D accelerator view on which the texture is to be created.  
   
- `_D3D_texture`  
- IUnknown interface pointer of the D3D texture to create the texture from.  
+*_D3D_texture*<br/>
+IUnknown interface pointer of the D3D texture to create the texture from.  
   
- `_View_format`  
- The DXGI format to use for views created from this texture. Pass DXGI_FORMAT_UNKNOWN (the default) to derive the format from the underlying format of _D3D_texture and the value_type of this template. The provided format must be compatible with the underlying format of _D3D_texture.  
+*_View_format*<br/>
+The DXGI format to use for views created from this texture. Pass DXGI_FORMAT_UNKNOWN (the default) to derive the format from the underlying format of _D3D_texture and the value_type of this template. The provided format must be compatible with the underlying format of _D3D_texture.  
   
 ### Return Value  
  A texture using the provided D3D texture.  
@@ -137,14 +137,14 @@ inline uint4 msad4(
 ```  
   
 ### Parameters  
- `_Reference`  
- The reference array of 4 bytes in one uint value  
+*_Reference*<br/>
+The reference array of 4 bytes in one uint value  
   
- `_Source`  
- The source array of 8 bytes in a vector of two uint values.  
+*_Source*<br/>
+The source array of 8 bytes in a vector of two uint values.  
   
- `_Accum`  
- A vector of 4 values to be added to the masked sum of absolute differences of the different byte alignments between the reference value and the source value.  
+*_Accum*<br/>
+A vector of 4 values to be added to the masked sum of absolute differences of the different byte alignments between the reference value and the source value.  
   
 ### Return Value  
  Returns a vector of 4 sums. Each sum corresponds to the masked sum of absolute differences of different byte alignments between the reference value and the source value.  

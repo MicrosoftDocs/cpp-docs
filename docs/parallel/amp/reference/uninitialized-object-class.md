@@ -55,8 +55,8 @@ unsupported_feature() throw();
 ```  
   
 ### Parameters  
- `_Message`  
- A description of the error.  
+*_Message*<br/>
+A description of the error.  
   
 ### Return Value  
  The `unsupported_feature` object. 

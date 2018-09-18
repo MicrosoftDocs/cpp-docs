@@ -26,11 +26,11 @@ class multitype_join: public ISource<typename _Unwrap<T>::type>;
 ```  
   
 #### Parameters  
- `T`  
- The `tuple` payload type of the messages joined and propagated by the block.  
+*T*<br/>
+The `tuple` payload type of the messages joined and propagated by the block.  
   
- `_Jtype`  
- The kind of `join` block this is, either `greedy` or `non_greedy`  
+*_Jtype*<br/>
+The kind of `join` block this is, either `greedy` or `non_greedy`  
   
 ## Members  
   
@@ -85,11 +85,11 @@ virtual message<_Destination_type>* accept(
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the offered `message` object.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the offered `message` object.  
   
- `_PTarget`  
- A pointer to the target block that is calling the `accept` method.  
+*_PTarget*<br/>
+A pointer to the target block that is calling the `accept` method.  
   
 ### Return Value  
  A pointer to the message that the caller now has ownership of.  
@@ -103,8 +103,8 @@ virtual void acquire_ref(_Inout_ ITarget<_Destination_type>* _PTarget);
 ```  
   
 ### Parameters  
- `_PTarget`  
- A pointer to the target block that is calling this method.  
+*_PTarget*<br/>
+A pointer to the target block that is calling this method.  
   
 ### Remarks  
  This method is called by an `ITarget` object that is being linked to this source during the `link_target` method.  
@@ -120,11 +120,11 @@ virtual message<_Destination_type>* consume(
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the reserved `message` object.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the reserved `message` object.  
   
- `_PTarget`  
- A pointer to the target block that is calling the `consume` method.  
+*_PTarget*<br/>
+A pointer to the target block that is calling the `consume` method.  
   
 ### Return Value  
  A pointer to the `message` object that the caller now has ownership of.  
@@ -141,8 +141,8 @@ virtual void link_target(_Inout_ ITarget<_Destination_type>* _PTarget);
 ```  
   
 ### Parameters  
- `_PTarget`  
- A pointer to an `ITarget` block to link to this `multitype_join` messaging block.  
+*_PTarget*<br/>
+A pointer to an `ITarget` block to link to this `multitype_join` messaging block.  
   
 ##  <a name="ctor"></a> multitype_join 
 
@@ -168,17 +168,17 @@ multitype_join(
 ```  
   
 ### Parameters  
- `_Tuple`  
- A `tuple` of sources for this `multitype_join` messaging block.  
+*_Tuple*<br/>
+A `tuple` of sources for this `multitype_join` messaging block.  
   
- `_PScheduler`  
- The `Scheduler` object within which the propagation task for the `multitype_join` messaging block is scheduled.  
+*_PScheduler*<br/>
+The `Scheduler` object within which the propagation task for the `multitype_join` messaging block is scheduled.  
   
- `_PScheduleGroup`  
- The `ScheduleGroup` object within which the propagation task for the `multitype_join` messaging block is scheduled. The `Scheduler` object used is implied by the schedule group.  
+*_PScheduleGroup*<br/>
+The `ScheduleGroup` object within which the propagation task for the `multitype_join` messaging block is scheduled. The `Scheduler` object used is implied by the schedule group.  
   
- `_Join`  
- A `multitype_join` messaging block to copy from. Note that the original object is orphaned, making this a move constructor.  
+*_Join*<br/>
+A `multitype_join` messaging block to copy from. Note that the original object is orphaned, making this a move constructor.  
   
 ### Remarks  
  The runtime uses the default scheduler if you do not specify the `_PScheduler` or `_PScheduleGroup` parameters.  
@@ -204,11 +204,11 @@ virtual void release(
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the `message` object being released.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the `message` object being released.  
   
- `_PTarget`  
- A pointer to the target block that is calling the `release` method.  
+*_PTarget*<br/>
+A pointer to the target block that is calling the `release` method.  
   
 ##  <a name="release_ref"></a> release_ref 
 
@@ -219,8 +219,8 @@ virtual void release_ref(_Inout_ ITarget<_Destination_type>* _PTarget);
 ```  
   
 ### Parameters  
- `_PTarget`  
- A pointer to the target block that is calling this method.  
+*_PTarget*<br/>
+A pointer to the target block that is calling this method.  
   
 ### Remarks  
  This method is called by an `ITarget` object that is being unlinked from this source. The source block is allowed to release any resources reserved for the target block.  
@@ -236,11 +236,11 @@ virtual bool reserve(
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the `message` object being reserved.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the `message` object being reserved.  
   
- `_PTarget`  
- A pointer to the target block that is calling the `reserve` method.  
+*_PTarget*<br/>
+A pointer to the target block that is calling the `reserve` method.  
   
 ### Return Value  
  `true` if the message was successfully reserved, `false` otherwise. Reservations can fail for many reasons, including: the message was already reserved or accepted by another target, the source could deny reservations, and so forth.  
@@ -257,8 +257,8 @@ virtual void unlink_target(_Inout_ ITarget<_Destination_type>* _PTarget);
 ```  
   
 ### Parameters  
- `_PTarget`  
- A pointer to an `ITarget` block to unlink from this `multitype_join` messaging block.  
+*_PTarget*<br/>
+A pointer to an `ITarget` block to unlink from this `multitype_join` messaging block.  
   
 ##  <a name="unlink_targets"></a> unlink_targets 
 

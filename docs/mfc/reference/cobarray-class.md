@@ -123,11 +123,11 @@ INT_PTR Add(CObject* newElement);
   
  The results from this program are as follows:  
   
- `Add example: A CObArray with 2 elements`  
-  
- `[0] = a CAge at $442A 21`  
-  
- `[1] = a CAge at $4468 40`  
+```Output
+Add example: A CObArray with 2 elements
+[0] = a CAge at $442A 21
+[1] = a CAge at $4468 40
+```
   
 ##  <a name="append"></a>  CObArray::Append  
  Call this member function to add the contents of another array to the end of the given array.  
@@ -483,13 +483,12 @@ void InsertAt(
   
  The results from this program are as follows:  
   
- `InsertAt example: A CObArray with 3 elements`  
-  
- `[0] = a CAge at $45C8 21`  
-  
- `[1] = a CAge at $4646 30`  
-  
- `[2] = a CAge at $4606 40`  
+```Output
+InsertAt example: A CObArray with 3 elements
+[0] = a CAge at $45C8 21
+[1] = a CAge at $4646 30
+[2] = a CAge at $4606 40
+```
   
 ##  <a name="isempty"></a>  CObArray::IsEmpty  
  Determines if the array is empty.  
@@ -599,9 +598,10 @@ void RemoveAt(
   
  The results from this program are as follows:  
   
- `RemoveAt example: A CObArray with 1 elements`  
-  
- `[0] = a CAge at $4606 40`  
+```Output
+RemoveAt example: A CObArray with 1 elements
+[0] = a CAge at $4606 40
+```
   
 ##  <a name="setat"></a>  CObArray::SetAt  
  Sets the array element at the specified index.  
@@ -642,11 +642,11 @@ void SetAt(
   
  The results from this program are as follows:  
   
- `SetAt example: A CObArray with 2 elements`  
-  
- `[0] = a CAge at $47E0 30`  
-  
- `[1] = a CAge at $47A0 40`  
+```Output
+SetAt example: A CObArray with 2 elements
+[0] = a CAge at $47E0 30
+[1] = a CAge at $47A0 40
+```
   
 ##  <a name="setatgrow"></a>  CObArray::SetAtGrow  
  Sets the array element at the specified index.  
@@ -685,15 +685,13 @@ void SetAtGrow(
   
  The results from this program are as follows:  
   
- `SetAtGrow example: A CObArray with 4 elements`  
-  
- `[0] = a CAge at $47C0 21`  
-  
- `[1] = a CAge at $4800 40`  
-  
- `[2] = NULL`  
-  
- `[3] = a CAge at $4840 65`  
+```Output
+SetAtGrow example: A CObArray with 4 elements
+[0] = a CAge at $47C0 21
+[1] = a CAge at $4800 40
+[2] = NULL
+[3] = a CAge at $4840 65
+```
   
 ##  <a name="setsize"></a>  CObArray::SetSize  
  Establishes the size of an empty or existing array; allocates memory if necessary.  

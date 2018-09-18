@@ -37,8 +37,8 @@ void* __cdecl Alloc(size_t _NumBytes);
 ```  
   
 ### Parameters  
- `_NumBytes`  
- The number of bytes of memory to allocate.  
+*_NumBytes*<br/>
+The number of bytes of memory to allocate.  
   
 ### Return Value  
  A pointer to newly allocated memory.  
@@ -62,14 +62,14 @@ bool asend(
 ```  
   
 ### Parameters  
- `T`  
- The type of the data to be sent.  
+*T*<br/>
+The type of the data to be sent.  
   
- `_Trg`  
- A pointer or reference to the target to which data is sent.  
+*_Trg*<br/>
+A pointer or reference to the target to which data is sent.  
   
- `_Data`  
- A reference to the data to be sent.  
+*_Data*<br/>
+A reference to the data to be sent.  
   
 ### Return Value  
  `true` if the message was accepted before the method returned, `false` otherwise.  
@@ -95,8 +95,9 @@ void concurrent_queue<T, _Ax>::clear();
 ```   
   
 ### Parameters  
- `T`  
- `_Ax`  
+*T*<br/>
+
+*_Ax*<br/>
   
 ##  <a name="create_async"></a>  create_async  
  Creates a Windows Runtime asynchronous construct based on a user supplied lambda or function object. The return type of `create_async` is one of either `IAsyncAction^`, `IAsyncActionWithProgress<TProgress>^`, `IAsyncOperation<TResult>^`, or `IAsyncOperationWithProgress<TResult, TProgress>^` based on the signature of the lambda passed to the method.  
@@ -108,9 +109,11 @@ __declspec(noinline) auto create_async(const _Function& _Func)
 ```  
   
 ### Parameters  
- `_Function`  
- `_Func`  
- The lambda or function object from which to create a Windows Runtime asynchronous construct.  
+*_Function*<br/>
+Type.
+
+*_Func*<br/>
+The lambda or function object from which to create a Windows Runtime asynchronous construct.  
   
 ### Return Value  
  An asynchronous construct represented by an IAsyncAction^, IAsyncActionWithProgress\<TProgress>^, IAsyncOperation\<TResult>^, or an IAsyncOperationWithProgress\<TResult, TProgress>^. The interface returned depends on the signature of the lambda passed into the function.  
@@ -158,16 +161,21 @@ __declspec( noinline) task<_ReturnType> create_task(const task<_ReturnType>& _Ta
 ```  
   
 ### Parameters  
- `T`  
- The type of the parameter from which the task is to be constructed.  
+*T*<br/>
+The type of the parameter from which the task is to be constructed.  
   
- `_ReturnType`  
- `_Param`  
- The parameter from which the task is to be constructed. This could be a lambda or function object, a `task_completion_event` object, a different `task` object, or a Windows::Foundation::IAsyncInfo interface if you are using tasks in your UWP app.  
+*_ReturnType*<br/>
+Type.
+
+*_Param*<br/>
+The parameter from which the task is to be constructed. This could be a lambda or function object, a `task_completion_event` object, a different `task` object, or a Windows::Foundation::IAsyncInfo interface if you are using tasks in your UWP app.  
   
- `_TaskOptions`  
- `_Task`  
-  
+*_TaskOptions*<br/>
+The task options.
+
+*_Task*<br/>
+The task to create.
+
 ### Return Value  
  A new task of type `T`, that is inferred from `_Param`.  
   
@@ -208,8 +216,8 @@ void __cdecl Free(_Pre_maybenull_ _Post_invalid_ void* _PAllocation);
 ```  
   
 ### Parameters  
- `_PAllocation`  
- A pointer to memory previously allocated by the `Alloc` method which is to be freed. If the parameter `_PAllocation` is set to the value `NULL`, this method will ignore it and return immediately.  
+*_PAllocation*<br/>
+A pointer to memory previously allocated by the `Alloc` method which is to be freed. If the parameter `_PAllocation` is set to the value `NULL`, this method will ignore it and return immediately.  
   
 ### Remarks  
  For more information about which scenarios in your application could benefit from using the Caching Suballocator, see [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md).  
@@ -300,11 +308,15 @@ void concurrent_vector<T, _Ax>::internal_assign_iterators(
 ```   
   
 ### Parameters  
- `T`  
- `_Ax`  
- `_I`  
- `first`  
- `last`  
+*T*<br/>
+
+*_Ax*<br/>
+
+*_I*<br/>
+
+*first*<br/>
+
+*last*<br/>
   
 ##  <a name="interruption_point"></a>  interruption_point  
  Creates an interruption point for cancellation. If a cancellation is in progress in the context where this function is called, this will throw an internal exception that aborts the execution of the currently executing parallel work. If cancellation is not in progress, the function does nothing.  
@@ -355,26 +367,26 @@ choice<std::tuple<T1, T2, Ts...>> make_choice(
 ```  
   
 ### Parameters  
- `T1`  
- The message block type of the first source.  
+*T1*<br/>
+The message block type of the first source.  
   
- `T2`  
- The message block type of the second source.  
+*T2*<br/>
+The message block type of the second source.  
   
- `_PScheduler`  
- The `Scheduler` object within which the propagation task for the `choice` messaging block is scheduled.  
+*_PScheduler*<br/>
+The `Scheduler` object within which the propagation task for the `choice` messaging block is scheduled.  
   
- `_Item1`  
- The first source.  
+*_Item1*<br/>
+The first source.  
   
- `_Item2`  
- The second source.  
+*_Item2*<br/>
+The second source.  
   
- `_Items`  
- Additional sources.  
+*_Items*<br/>
+Additional sources.  
   
- `_PScheduleGroup`  
- The `ScheduleGroup` object within which the propagation task for the `choice` messaging block is scheduled. The `Scheduler` object used is implied by the schedule group.  
+*_PScheduleGroup*<br/>
+The `ScheduleGroup` object within which the propagation task for the `choice` messaging block is scheduled. The `Scheduler` object used is implied by the schedule group.  
   
 ### Return Value  
  A `choice` message block with two or more input sources.  
@@ -405,26 +417,26 @@ multitype_join<std::tuple<T1, T2, Ts...>, greedy> make_greedy_join(
 ```  
   
 ### Parameters  
- `T1`  
- The message block type of the first source.  
+*T1*<br/>
+The message block type of the first source.  
   
- `T2`  
- The message block type of the second source.  
+*T2*<br/>
+The message block type of the second source.  
   
- `_PScheduler`  
- The `Scheduler` object within which the propagation task for the `multitype_join` messaging block is scheduled.  
+*_PScheduler*<br/>
+The `Scheduler` object within which the propagation task for the `multitype_join` messaging block is scheduled.  
   
- `_Item1`  
- The first source.  
+*_Item1*<br/>
+The first source.  
   
- `_Item2`  
- The second source.  
+*_Item2*<br/>
+The second source.  
   
- `_Items`  
- Additional sources.  
+*_Items*<br/>
+Additional sources.  
   
- `_PScheduleGroup`  
- The `ScheduleGroup` object within which the propagation task for the `multitype_join` messaging block is scheduled. The `Scheduler` object used is implied by the schedule group.  
+*_PScheduleGroup*<br/>
+The `ScheduleGroup` object within which the propagation task for the `multitype_join` messaging block is scheduled. The `Scheduler` object used is implied by the schedule group.  
   
 ### Return Value  
  A `greedy multitype_join` message block with two or more input sources.  
@@ -456,26 +468,26 @@ multitype_join<std::tuple<T1, T2, Ts...>> make_join(
 ```  
   
 ### Parameters  
- `T1`  
- The message block type of the first source.  
+*T1*<br/>
+The message block type of the first source.  
   
- `T2`  
- The message block type of the second source.  
+*T2*<br/>
+The message block type of the second source.  
   
- `_PScheduler`  
- The `Scheduler` object within which the propagation task for the `multitype_join` messaging block is scheduled.  
+*_PScheduler*<br/>
+The `Scheduler` object within which the propagation task for the `multitype_join` messaging block is scheduled.  
   
- `_Item1`  
- The first source.  
+*_Item1*<br/>
+The first source.  
   
- `_Item2`  
- The second source.  
+*_Item2*<br/>
+The second source.  
   
- `_Items`  
- Additional sources.  
+*_Items*<br/>
+Additional sources.  
   
- `_PScheduleGroup`  
- The `ScheduleGroup` object within which the propagation task for the `multitype_join` messaging block is scheduled. The `Scheduler` object used is implied by the schedule group.  
+*_PScheduleGroup*<br/>
+The `ScheduleGroup` object within which the propagation task for the `multitype_join` messaging block is scheduled. The `Scheduler` object used is implied by the schedule group.  
   
 ### Return Value  
  A `non_greedy multitype_join` message block with two or more input sources.  
@@ -489,11 +501,11 @@ task_handle<_Function> make_task(const _Function& _Func);
 ```  
   
 ### Parameters  
- `_Function`  
- The type of the function object that will be invoked to execute the work represented by the `task_handle` object.  
+*_Function*<br/>
+The type of the function object that will be invoked to execute the work represented by the `task_handle` object.  
   
- `_Func`  
- The function that will be invoked to execute the work represented by the `task_handle` object. This may be a lambda functor, a pointer to a function, or any object that supports a version of the function call operator with the signature `void operator()()`.  
+*_Func*<br/>
+The function that will be invoked to execute the work represented by the `task_handle` object. This may be a lambda functor, a pointer to a function, or any object that supports a version of the function call operator with the signature `void operator()()`.  
   
 ### Return Value  
  A `task_handle` object.  
@@ -552,29 +564,29 @@ inline void parallel_buffered_sort(
 ```  
   
 ### Parameters  
- `_Random_iterator`  
- The iterator type of the input range.  
+*_Random_iterator*<br/>
+The iterator type of the input range.  
   
- `_Allocator`  
- The type of a C++ Standard Library compatible memory allocator.  
+*_Allocator*<br/>
+The type of a C++ Standard Library compatible memory allocator.  
   
- `_Function`  
- The type of the binary comparator.  
+*_Function*<br/>
+The type of the binary comparator.  
   
- `_Begin`  
- A random-access iterator addressing the position of the first element in the range to be sorted.  
+*_Begin*<br/>
+A random-access iterator addressing the position of the first element in the range to be sorted.  
   
- `_End`  
- A random-access iterator addressing the position one past the final element in the range to be sorted.  
+*_End*<br/>
+A random-access iterator addressing the position one past the final element in the range to be sorted.  
   
- `_Alloc`  
- An instance of a C++ Standard Library compatible memory allocator.  
+*_Alloc*<br/>
+An instance of a C++ Standard Library compatible memory allocator.  
   
- `_Func`  
- A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns `true` when satisfied and `false` when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.  
+*_Func*<br/>
+A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns `true` when satisfied and `false` when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.  
   
- `_Chunk_size`  
- The mimimum size of a chunk that will be split into two for parallel execution.  
+*_Chunk_size*<br/>
+The mimimum size of a chunk that will be split into two for parallel execution.  
   
 ### Remarks  
  All overloads require `n * sizeof(T)` additional space, where `n` is the number of elements to be sorted, and `T` is the element type. In most cases parallel_buffered_sort will show an improvement in performance over [parallel_sort](concurrency-namespace-functions.md), and you should use it over parallel_sort if you have the memory available.  
@@ -634,29 +646,29 @@ void parallel_for(
 ```  
   
 ### Parameters  
- `_Index_type`  
- The type of the index being used for the iteration.  
+*_Index_type*<br/>
+The type of the index being used for the iteration.  
   
- `_Function`  
- The type of the function that will be executed at each iteration.  
+*_Function*<br/>
+The type of the function that will be executed at each iteration.  
   
- `_Partitioner`  
- The type of the partitioner that is used to partition the supplied range.  
+*_Partitioner*<br/>
+The type of the partitioner that is used to partition the supplied range.  
   
- `first`  
- The first index to be included in the iteration.  
+*first*<br/>
+The first index to be included in the iteration.  
   
- `last`  
- The index one past the last index to be included in the iteration.  
+*last*<br/>
+The index one past the last index to be included in the iteration.  
   
- `_Step`  
- The value by which to step when iterating from `first` to `last`. The step must be positive. [invalid_argument](../../../standard-library/invalid-argument-class.md) is thrown if the step is less than 1.  
+*_Step*<br/>
+The value by which to step when iterating from `first` to `last`. The step must be positive. [invalid_argument](../../../standard-library/invalid-argument-class.md) is thrown if the step is less than 1.  
   
- `_Func`  
- The function to be executed at each iteration. This may be a lambda expression, a function pointer, or any object that supports a version of the function call operator with the signature `void operator()(_Index_type)`.  
+*_Func*<br/>
+The function to be executed at each iteration. This may be a lambda expression, a function pointer, or any object that supports a version of the function call operator with the signature `void operator()(_Index_type)`.  
   
- `_Part`  
- A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](auto-partitioner-class.md)`&`, `const`[static_partitioner](static-partitioner-class.md)`&`, `const`[simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.  
+*_Part*<br/>
+A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](auto-partitioner-class.md)`&`, `const`[static_partitioner](static-partitioner-class.md)`&`, `const`[simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.  
   
 ### Remarks  
  For more information, see [Parallel Algorithms](../../../parallel/concrt/parallel-algorithms.md).  
@@ -680,24 +692,24 @@ void parallel_for_each(
 ```  
   
 ### Parameters  
- `_Iterator`  
- The type of the iterator being used to iterate over the container.  
+*_Iterator*<br/>
+The type of the iterator being used to iterate over the container.  
   
- `_Function`  
- The type of the function that will be applied to each element within the range.  
+*_Function*<br/>
+The type of the function that will be applied to each element within the range.  
   
- `_Partitioner`  
- `first`  
- An iterator addressing the position of the first element to be included in parallel iteration.  
+*_Partitioner*<br/>
+*first*<br/>
+An iterator addressing the position of the first element to be included in parallel iteration.  
   
- `last`  
- An iterator addressing the position one past the final element to be included in parallel iteration.  
+*last*<br/>
+An iterator addressing the position one past the final element to be included in parallel iteration.  
   
- `_Func`  
- A user-defined function object that is applied to each element in the range.  
+*_Func*<br/>
+A user-defined function object that is applied to each element in the range.  
   
- `_Part`  
- A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](auto-partitioner-class.md)`&`, `const`[static_partitioner](static-partitioner-class.md)`&`, `const`[simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.  
+*_Part*<br/>
+A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](auto-partitioner-class.md)`&`, `const`[static_partitioner](static-partitioner-class.md)`&`, `const`[simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.  
   
 ### Remarks  
  [auto_partitioner](auto-partitioner-class.md) will be used for the overload without an explicit partitioner.  
@@ -835,65 +847,65 @@ void parallel_invoke(
 ```  
   
 ### Parameters  
- `_Function1`  
- The type of the first function object to be executed in parallel.  
+*_Function1*<br/>
+The type of the first function object to be executed in parallel.  
   
- `_Function2`  
- The type of the second function object to be executed in parallel.  
+*_Function2*<br/>
+The type of the second function object to be executed in parallel.  
   
- `_Function3`  
- The type of the third function object to be executed in parallel.  
+*_Function3*<br/>
+The type of the third function object to be executed in parallel.  
   
- `_Function4`  
- The type of the fourth function object to be executed in parallel.  
+*_Function4*<br/>
+The type of the fourth function object to be executed in parallel.  
   
- `_Function5`  
- The type of the fifth function object to be executed in parallel.  
+*_Function5*<br/>
+The type of the fifth function object to be executed in parallel.  
   
- `_Function6`  
- The type of the sixth function object to be executed in parallel.  
+*_Function6*<br/>
+The type of the sixth function object to be executed in parallel.  
   
- `_Function7`  
- The type of the seventh function object to be executed in parallel.  
+*_Function7*<br/>
+The type of the seventh function object to be executed in parallel.  
   
- `_Function8`  
- The type of the eighth function object to be executed in parallel.  
+*_Function8*<br/>
+The type of the eighth function object to be executed in parallel.  
   
- `_Function9`  
- The type of the ninth function object to be executed in parallel.  
+*_Function9*<br/>
+The type of the ninth function object to be executed in parallel.  
   
- `_Function10`  
- The type of the tenth function object to be executed in parallel.  
+*_Function10*<br/>
+The type of the tenth function object to be executed in parallel.  
   
- `_Func1`  
- The first function object to be executed in parallel.  
+*_Func1*<br/>
+The first function object to be executed in parallel.  
   
- `_Func2`  
- The second function object to be executed in parallel.  
+*_Func2*<br/>
+The second function object to be executed in parallel.  
   
- `_Func3`  
- The third function object to be executed in parallel.  
+*_Func3*<br/>
+The third function object to be executed in parallel.  
   
- `_Func4`  
- The fourth function object to be executed in parallel.  
+*_Func4*<br/>
+The fourth function object to be executed in parallel.  
   
- `_Func5`  
- The fifth function object to be executed in parallel.  
+*_Func5*<br/>
+The fifth function object to be executed in parallel.  
   
- `_Func6`  
- The sixth function object to be executed in parallel.  
+*_Func6*<br/>
+The sixth function object to be executed in parallel.  
   
- `_Func7`  
- The seventh function object to be executed in parallel.  
+*_Func7*<br/>
+The seventh function object to be executed in parallel.  
   
- `_Func8`  
- The eighth function object to be executed in parallel.  
+*_Func8*<br/>
+The eighth function object to be executed in parallel.  
   
- `_Func9`  
- The ninth function object to be executed in parallel.  
+*_Func9*<br/>
+The ninth function object to be executed in parallel.  
   
- `_Func10`  
- The tenth function object to be executed in parallel.  
+*_Func10*<br/>
+The tenth function object to be executed in parallel.  
   
 ### Remarks  
  Note that one or more of the function objects supplied as parameters may execute inline on the calling context.  
@@ -949,29 +961,29 @@ inline void parallel_radixsort(
 ```  
   
 ### Parameters  
- `_Random_iterator`  
- The iterator type of the input range.  
+*_Random_iterator*<br/>
+The iterator type of the input range.  
   
- `_Allocator`  
- The type of a C++ Standard Library compatible memory allocator.  
+*_Allocator*<br/>
+The type of a C++ Standard Library compatible memory allocator.  
   
- `_Function`  
- The type of the projection function.  
+*_Function*<br/>
+The type of the projection function.  
   
- `_Begin`  
- A random-access iterator addressing the position of the first element in the range to be sorted.  
+*_Begin*<br/>
+A random-access iterator addressing the position of the first element in the range to be sorted.  
   
- `_End`  
- A random-access iterator addressing the position one past the final element in the range to be sorted.  
+*_End*<br/>
+A random-access iterator addressing the position one past the final element in the range to be sorted.  
   
- `_Alloc`  
- An instance of a C++ Standard Library compatible memory allocator.  
+*_Alloc*<br/>
+An instance of a C++ Standard Library compatible memory allocator.  
   
- `_Proj_func`  
- A user-defined projection function object that converts an element into an integral value.  
+*_Proj_func*<br/>
+A user-defined projection function object that converts an element into an integral value.  
   
- `_Chunk_size`  
- The mimimum size of a chunk that will be split into two for parallel execution.  
+*_Chunk_size*<br/>
+The mimimum size of a chunk that will be split into two for parallel execution.  
   
 ### Remarks  
  All overloads require `n * sizeof(T)` additional space, where `n` is the number of elements to be sorted, and `T` is the element type. An unary projection functor with the signature `I _Proj_func(T)` is required to return a key when given an element, where `T` is the element type and `I` is an unsigned integer-like type.  
@@ -1012,32 +1024,32 @@ inline _Reduce_type parallel_reduce(
 ```  
   
 ### Parameters  
- `_Forward_iterator`  
- The iterator type of input range.  
+*_Forward_iterator*<br/>
+The iterator type of input range.  
   
- `_Sym_reduce_fun`  
- The type of the symmetric reduction function. This must be a function type with signature `_Reduce_type _Sym_fun(_Reduce_type, _Reduce_type)`, where _Reduce_type is the same as the identity type and the result type of the reduction. For the third overload, this should be consistent with the output type of `_Range_reduce_fun`.  
+*_Sym_reduce_fun*<br/>
+The type of the symmetric reduction function. This must be a function type with signature `_Reduce_type _Sym_fun(_Reduce_type, _Reduce_type)`, where _Reduce_type is the same as the identity type and the result type of the reduction. For the third overload, this should be consistent with the output type of `_Range_reduce_fun`.  
   
- `_Reduce_type`  
- The type that the input will reduce to, which can be different from the input element type. The return value and identity value will has this type.  
+*_Reduce_type*<br/>
+The type that the input will reduce to, which can be different from the input element type. The return value and identity value will has this type.  
   
- `_Range_reduce_fun`  
- The type of the range reduction function. This must be a function type with signature `_Reduce_type _Range_fun(_Forward_iterator, _Forward_iterator, _Reduce_type)`, _Reduce_type is the same as the identity type and the result type of the reduction.  
+*_Range_reduce_fun*<br/>
+The type of the range reduction function. This must be a function type with signature `_Reduce_type _Range_fun(_Forward_iterator, _Forward_iterator, _Reduce_type)`, _Reduce_type is the same as the identity type and the result type of the reduction.  
   
- `_Begin`  
- An input iterator addressing the first element in the range to be reduced.  
+*_Begin*<br/>
+An input iterator addressing the first element in the range to be reduced.  
   
- `_End`  
- An input iterator addressing the element that is one position beyond the final element in the range to be reduced.  
+*_End*<br/>
+An input iterator addressing the element that is one position beyond the final element in the range to be reduced.  
   
- `_Identity`  
- The identity value `_Identity` is of the same type as the result type of the reduction and also the `value_type` of the iterator for the first and second overloads. For the third overload, the identity value must have the same type as the result type of the reduction, but can be different from the `value_type` of the iterator. It must have an appropriate value such that the range reduction operator `_Range_fun`, when applied to a range of a single element of type `value_type` and the identity value, behaves like a type cast of the value from type `value_type` to the identity type.  
+*_Identity*<br/>
+The identity value `_Identity` is of the same type as the result type of the reduction and also the `value_type` of the iterator for the first and second overloads. For the third overload, the identity value must have the same type as the result type of the reduction, but can be different from the `value_type` of the iterator. It must have an appropriate value such that the range reduction operator `_Range_fun`, when applied to a range of a single element of type `value_type` and the identity value, behaves like a type cast of the value from type `value_type` to the identity type.  
   
- `_Sym_fun`  
- The symmetric function that will be used in the second of the reduction. Refer to Remarks for more information.  
+*_Sym_fun*<br/>
+The symmetric function that will be used in the second of the reduction. Refer to Remarks for more information.  
   
- `_Range_fun`  
- The function that will be used in the first phase of the reduction. Refer to Remarks for more information.  
+*_Range_fun*<br/>
+The function that will be used in the first phase of the reduction. Refer to Remarks for more information.  
   
 ### Return Value  
  The result of the reduction.  
@@ -1069,23 +1081,23 @@ inline void parallel_sort(
 ```  
   
 ### Parameters  
- `_Random_iterator`  
- The iterator type of the input range.  
+*_Random_iterator*<br/>
+The iterator type of the input range.  
   
- `_Function`  
- The type of the binary comparison functor.  
+*_Function*<br/>
+The type of the binary comparison functor.  
   
- `_Begin`  
- A random-access iterator addressing the position of the first element in the range to be sorted.  
+*_Begin*<br/>
+A random-access iterator addressing the position of the first element in the range to be sorted.  
   
- `_End`  
- A random-access iterator addressing the position one past the final element in the range to be sorted.  
+*_End*<br/>
+A random-access iterator addressing the position one past the final element in the range to be sorted.  
   
- `_Func`  
- A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns `true` when satisfied and `false` when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.  
+*_Func*<br/>
+A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns `true` when satisfied and `false` when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.  
   
- `_Chunk_size`  
- The mimimum size of a chunk that will be split into two for parallel execution.  
+*_Chunk_size*<br/>
+The mimimum size of a chunk that will be split into two for parallel execution.  
   
 ### Remarks  
  The first overload uses the binary comparator `std::less`.  
@@ -1166,42 +1178,42 @@ _Output_iterator parallel_transform(
 ```  
   
 ### Parameters  
- `_Input_iterator1`  
- The type of the first or only input iterator.  
+*_Input_iterator1*<br/>
+The type of the first or only input iterator.  
   
- `_Output_iterator`  
- The type of the output iterator.  
+*_Output_iterator*<br/>
+The type of the output iterator.  
   
- `_Unary_operator`  
- The type of the unary functor to be executed on each element in the input range.  
+*_Unary_operator*<br/>
+The type of the unary functor to be executed on each element in the input range.  
   
- `_Input_iterator2`  
- The type of second input iterator.  
+*_Input_iterator2*<br/>
+The type of second input iterator.  
   
- `_Binary_operator`  
- The type of the binary functor executed pairwise on elements from the two source ranges.  
+*_Binary_operator*<br/>
+The type of the binary functor executed pairwise on elements from the two source ranges.  
   
- `_Partitioner`  
- `first1`  
- An input iterator addressing the position of the first element in the first or only source range to be operated on.  
+*_Partitioner*<br/>
+*first1*<br/>
+An input iterator addressing the position of the first element in the first or only source range to be operated on.  
   
- `last1`  
- An input iterator addressing the position one past the final element in the first or only source range to be operated on.  
+*last1*<br/>
+An input iterator addressing the position one past the final element in the first or only source range to be operated on.  
   
- `_Result`  
- An output iterator addressing the position of the first element in the destination range.  
+*_Result*<br/>
+An output iterator addressing the position of the first element in the destination range.  
   
- `_Unary_op`  
- A user-defined unary function object that is applied to each element in the source range.  
+*_Unary_op*<br/>
+A user-defined unary function object that is applied to each element in the source range.  
   
- `_Part`  
- A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](auto-partitioner-class.md)`&`, `const`[static_partitioner](static-partitioner-class.md)`&`, `const`[simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.  
+*_Part*<br/>
+A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](auto-partitioner-class.md)`&`, `const`[static_partitioner](static-partitioner-class.md)`&`, `const`[simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.  
   
- `first2`  
- An input iterator addressing the position of the first element in the second source range to be operated on.  
+*first2*<br/>
+An input iterator addressing the position of the first element in the second source range to be operated on.  
   
- `_Binary_op`  
- A user-defined binary function object that is applied pairwise, in a forward order, to the two source ranges.  
+*_Binary_op*<br/>
+A user-defined binary function object that is applied pairwise, in a forward order, to the two source ranges.  
   
 ### Return Value  
  An output iterator addressing the position one past the final element in the destination range that is receiving the output elements transformed by the function object.  
@@ -1245,17 +1257,17 @@ T receive(
 ```  
   
 ### Parameters  
- `T`  
- The payload type.  
+*T*<br/>
+The payload type.  
   
- `_Src`  
- A pointer or reference to the source from which data is expected.  
+*_Src*<br/>
+A pointer or reference to the source from which data is expected.  
   
- `_Timeout`  
- The maximum time for which the method should for the data, in milliseconds.  
+*_Timeout*<br/>
+The maximum time for which the method should for the data, in milliseconds.  
   
- `_Filter_proc`  
- A filter function which determines whether messages should be accepted.  
+*_Filter_proc*<br/>
+A filter function which determines whether messages should be accepted.  
   
 ### Return Value  
  A value from the source, of the payload type.  
@@ -1276,14 +1288,14 @@ void run_with_cancellation_token(
 ```  
   
 ### Parameters  
- `_Function`  
- The type of the function object that will be invoked.  
+*_Function*<br/>
+The type of the function object that will be invoked.  
   
- `_Func`  
- The function object which will be executed. This object must support the function call operator with a signature of void(void).  
+*_Func*<br/>
+The function object which will be executed. This object must support the function call operator with a signature of void(void).  
   
- `_Ct`  
- The cancellation token which will control implicit cancellation of the function object. Use `cancellation_token::none()` if you want the function execute without any possibility of implicit cancellation from a parent task group being canceled.  
+*_Ct*<br/>
+The cancellation token which will control implicit cancellation of the function object. Use `cancellation_token::none()` if you want the function execute without any possibility of implicit cancellation from a parent task group being canceled.  
   
 ### Remarks  
  Any interruption points in the function object will be triggered when the `cancellation_token` is canceled. The explicit token `_Ct` will isolate this `_Func` from parent cancellation if the parent has a different token or no token.  
@@ -1300,14 +1312,14 @@ bool send(ITarget<T>& _Trg, const T& _Data);
 ```  
   
 ### Parameters  
- `T`  
- The payload type.  
+*T*<br/>
+The payload type.  
   
- `_Trg`  
- A pointer or reference to the target to which data is sent.  
+*_Trg*<br/>
+A pointer or reference to the target to which data is sent.  
   
- `_Data`  
- A reference to the data to be sent.  
+*_Data*<br/>
+A reference to the data to be sent.  
   
 ### Return Value  
  `true` if the message was accepted, `false` otherwise.  
@@ -1322,7 +1334,8 @@ inline void set_ambient_scheduler(std::shared_ptr<::Concurrency::scheduler_inter
 ```  
   
 ### Parameters  
- `_Scheduler`  
+*_Scheduler*<br/>
+The ambient scheduler to set.
   
 ##  <a name="set_task_execution_resources"></a>  set_task_execution_resources  
  Restricts the execution resources used by the Concurrency Runtime internal worker threads to the affinity set specified.  
@@ -1341,14 +1354,14 @@ void __cdecl set_task_execution_resources(
 ```  
   
 ### Parameters  
- `_ProcessAffinityMask`  
- The affinity mask that the Concurrency Runtime worker threads are to be restricted to. Use this method on a system with greater than 64 hardware threads only if you want to limit the Concurrency Runtime to a subset of the current processor group. In general, you should use the version of the method that accepts an array of group affinities as a parameter, to restrict affinity on machines with greater than 64 hardware threads.  
+*_ProcessAffinityMask*<br/>
+The affinity mask that the Concurrency Runtime worker threads are to be restricted to. Use this method on a system with greater than 64 hardware threads only if you want to limit the Concurrency Runtime to a subset of the current processor group. In general, you should use the version of the method that accepts an array of group affinities as a parameter, to restrict affinity on machines with greater than 64 hardware threads.  
   
- `count`  
- The number of `GROUP_AFFINITY` entries in the array specified by the parameter `_PGroupAffinity`.  
+*count*<br/>
+The number of `GROUP_AFFINITY` entries in the array specified by the parameter `_PGroupAffinity`.  
   
- `_PGroupAffinity`  
- An array of `GROUP_AFFINITY` entries.  
+*_PGroupAffinity*<br/>
+An array of `GROUP_AFFINITY` entries.  
   
 ### Remarks  
  The method will throw an [invalid_operation](invalid-operation-class.md) exception if a Resource Manager is present at the time it is invoked, and an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if the affinity specified results in an empty set of resources.  
@@ -1368,17 +1381,17 @@ inline void swap(
 ```  
   
 ### Parameters  
- `T`  
- The data type of the elements stored in the concurrent vectors.  
+*T*<br/>
+The data type of the elements stored in the concurrent vectors.  
   
- `_Ax`  
- The allocator type of the concurrent vectors.  
+*_Ax*<br/>
+The allocator type of the concurrent vectors.  
   
- `_A`  
- The concurrent vector whose elements are to be exchanged with those of the concurrent vector `_B`.  
+*_A*<br/>
+The concurrent vector whose elements are to be exchanged with those of the concurrent vector `_B`.  
   
- `_B`  
- The concurrent vector providing the elements to be swapped, or the vector whose elements are to be exchanged with those of the concurrent vector `_A`.  
+*_B*<br/>
+The concurrent vector providing the elements to be swapped, or the vector whose elements are to be exchanged with those of the concurrent vector `_A`.  
   
 ### Remarks  
  The template function is an algorithm specialized on the container class `concurrent_vector` to execute the member function `_A`. [concurrent_vector::swap](concurrent-vector-class.md#swap)( `_B`). These are instances of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function, `template <class T> void swap(T&, T&)`, in the algorithm class works by assignment and is a slow operation. The specialized version in each container is much faster as it can work with the internal representation of the container class.  
@@ -1395,10 +1408,13 @@ task<_TaskType> task_from_exception(
 ```  
   
 ### Parameters  
- `_TaskType`  
- `_ExType`  
- `_Exception`  
- `_TaskOptions`  
+*_TaskType*<br/>
+
+*_ExType*<br/>
+
+*_Exception*<br/>
+
+*_TaskOptions*<br/>
   
 ### Return Value  
   
@@ -1417,9 +1433,11 @@ inline task<void> task_from_result(
 ```  
   
 ### Parameters  
- `T`  
- `_Param`  
- `_TaskOptions`  
+*T*<br/>
+
+*_Param*<br/>
+
+*_TaskOptions*<br/>
   
 ### Return Value  
   
@@ -1434,14 +1452,14 @@ void Trace_agents_register_name(
 ```  
   
 ### Parameters  
- `T`  
- The type of the object. This is typically a message block or an agent.  
+*T*<br/>
+The type of the object. This is typically a message block or an agent.  
   
- `_PObject`  
- A pointer to the message block or agent that is being named in the trace.  
+*_PObject*<br/>
+A pointer to the message block or agent that is being named in the trace.  
   
- `_Name`  
- The name for the given object.  
+*_Name*<br/>
+The name for the given object.  
   
 ##  <a name="try_receive"></a>  try_receive  
  A general try-receive implementation, allowing a context to look for data from exactly one source and filter the values that are accepted. If the data is not ready, the method will return false.  
@@ -1467,17 +1485,17 @@ bool try_receive(
 ```  
   
 ### Parameters  
- `T`  
- The payload type  
+*T*<br/>
+The payload type  
   
- `_Src`  
- A pointer or reference to the source from which data is expected.  
+*_Src*<br/>
+A pointer or reference to the source from which data is expected.  
   
- `_value`  
- A reference to a location where the result will be placed.  
+*_value*<br/>
+A reference to a location where the result will be placed.  
   
- `_Filter_proc`  
- A filter function which determines whether messages should be accepted.  
+*_Filter_proc*<br/>
+A filter function which determines whether messages should be accepted.  
   
 ### Return Value  
  A `bool` value indicating whether or not a payload was placed in `_value`.  
@@ -1493,8 +1511,8 @@ void __cdecl wait(unsigned int _Milliseconds);
 ```  
   
 ### Parameters  
- `_Milliseconds`  
- The number of milliseconds the current context should be paused for. If the `_Milliseconds` parameter is set to the value `0`, the current context should yield execution to other runnable contexts before continuing.  
+*_Milliseconds*<br/>
+The number of milliseconds the current context should be paused for. If the `_Milliseconds` parameter is set to the value `0`, the current context should yield execution to other runnable contexts before continuing.  
   
 ### Remarks  
  If this method is called on a Concurrency Runtime scheduler context, the scheduler will find a different context to run on the underlying resource. Because the scheduler is cooperative in nature, this context cannot resume exactly after the number of milliseconds specified. If the scheduler is busy executing other tasks that do not cooperatively yield to the scheduler, the wait period could be indefinite.  
@@ -1513,16 +1531,17 @@ auto when_all(
 ```   
   
 ### Parameters  
- `_Iterator`  
- The type of the input iterator.  
+*_Iterator*<br/>
+The type of the input iterator.  
   
- `_Begin`  
- The position of the first element in the range of elements to be combined into the resulting task.  
+*_Begin*<br/>
+The position of the first element in the range of elements to be combined into the resulting task.  
   
- `_End`  
- The position of the first element beyond the range of elements to be combined into the resulting task.  
+*_End*<br/>
+The position of the first element beyond the range of elements to be combined into the resulting task.  
   
- `_TaskOptions`  
+*_TaskOptions*<br/>
+The `task_options` object.
   
 ### Return Value  
  A task that completes sucessfully when all of the input tasks have completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>>`. If the input tasks are of type `void` the output task will also be a `task<void>`.  
@@ -1560,18 +1579,18 @@ auto when_any(
 ```   
   
 ### Parameters  
- `_Iterator`  
- The type of the input iterator.  
+*_Iterator*<br/>
+The type of the input iterator.  
   
- `_Begin`  
- The position of the first element in the range of elements to be combined into the resulting task.  
+*_Begin*<br/>
+The position of the first element in the range of elements to be combined into the resulting task.  
   
- `_End`  
- The position of the first element beyond the range of elements to be combined into the resulting task.  
+*_End*<br/>
+The position of the first element beyond the range of elements to be combined into the resulting task.  
   
- `_TaskOptions`  
- `_CancellationToken`  
- The cancellation token which controls cancellation of the returned task. If you do not provide a cancellation token, the resulting task will receive the cancellation token of the task that causes it to complete.  
+*_TaskOptions*<br/>
+*_CancellationToken*<br/>
+The cancellation token which controls cancellation of the returned task. If you do not provide a cancellation token, the resulting task will receive the cancellation token of the task that causes it to complete.  
   
 ### Return Value  
  A task that completes successfully when any one of the input tasks has completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::pair<T, size_t>>>`, where the first element of the pair is the result of the completing task, and the second element is the index of the task that finished. If the input tasks are of type `void` the output is a `task<size_t>`, where the result is the index of the completing task.  

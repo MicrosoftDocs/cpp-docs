@@ -23,11 +23,10 @@ void omp_set_num_threads(
 );  
 ```  
   
-## Remarks  
- where,  
+### Parameters
   
- `num_threads`  
- The number of threads in the parallel region.  
+*num_threads*<br/>
+The number of threads in the parallel region.  
   
 ## Remarks  
  For more information, see [3.1.1 omp_set_num_threads Function](../../../parallel/openmp/3-1-1-omp-set-num-threads-function.md).  

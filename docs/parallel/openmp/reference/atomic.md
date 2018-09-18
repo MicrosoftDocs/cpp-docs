@@ -23,8 +23,8 @@ Specifies that a memory location that will be updated atomically.
 ```  
   
 #### Parameters  
- `expression`  
- The statement containing the lvalue whose memory location you want to protect against multiple writes. For more information about legal expression forms, see the OpenMP specification.  
+*expression*<br/>
+The statement containing the lvalue whose memory location you want to protect against multiple writes. For more information about legal expression forms, see the OpenMP specification.  
   
 ## Remarks  
  The `atomic` directive supports no OpenMP clauses.  

@@ -31,11 +31,11 @@ The \<listheader> block is used to define the heading row of either a table or d
 ```  
   
 #### Parameters  
- `term`  
- A term to define, which will be defined in `description`.  
+*term*<br/>
+A term to define, which will be defined in `description`.  
   
- `description`  
- Either an item in a bullet or numbered list or the definition of a `term`.  
+*description*<br/>
+Either an item in a bullet or numbered list or the definition of a `term`.  
   
 ## Remarks  
  Each item in the list is specified with an \<item> block. When creating a definition list, you will need to specify both `term` and `description`. However, for a table, bulleted list, or numbered list, you only need to supply an entry for `description`.  
@@ -46,7 +46,7 @@ The \<listheader> block is used to define the heading row of either a table or d
   
 ## Example  
   
-```  
+```cpp  
 // xml_list_tag.cpp  
 // compile with: /doc /LD  
 // post-build command: xdcmake xml_list_tag.dll  

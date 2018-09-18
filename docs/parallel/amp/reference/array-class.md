@@ -23,10 +23,10 @@ friend class array;
 ```  
 
 #### Parameters
-`value_type`  
+*value_type*<br/>
 The element type of the data.
 
-`_Rank`  
+*_Rank*<br/>
 The rank of the array.
 
 ## Members
@@ -377,46 +377,46 @@ array(array&& _Other) restrict(cpu);
 ```  
 
 ### Parameters
-`_Associated_Av`  
+*_Associated_Av*<br/>
 An accelerator_view which specifies the preferred target location of the array.
 
-`_Av`  
+*_Av*<br/>
 An [accelerator_view](accelerator-view-class.md) object that specifies the location of the array.
 
-`_Cpu_access_type`  
+*_Cpu_access_type*<br/>
 The desired [access_type](concurrency-namespace-enums-amp.md#access_type)  for the array on the CPU. This parameter has a default value of `access_type_auto` leaving the CPU `access_type` determination to the runtime. The actual CPU `access_type` for the array can be queried using the `get_cpu_access_type` method.
 
-`_Extent`  
+*_Extent*<br/>
 The extent in each dimension of the array.
 
-`_E0`  
+*_E0*<br/>
 The most significant component of the extent of this section.
 
-`_E1`  
+*_E1*<br/>
 The next-to-most-significant component of the extent of this section.
 
-`_E2`  
+*_E2*<br/>
 The least significant component of the extent of this section.
 
-`_InputIterator`  
+*_InputIterator*<br/>
 The type of the input interator.
 
-`_Src`  
+*_Src*<br/>
 To object to copy.
 
-`_Src_first`  
+*_Src_first*<br/>
 A beginning iterator into the source container.
 
-`_Src_last`  
+*_Src_last*<br/>
 An ending iterator into the source container.
 
-`_Other`  
+*_Other*<br/>
 Other data source.
 
-`_Rank`  
+*_Rank*<br/>
 The rank of the section.
 
-`value_type`  
+*value_type*<br/>
 The data type of the elements that are copied.
 
 ##  <a name="associated_accelerator_view"></a> associated_accelerator_view
@@ -440,7 +440,7 @@ void copy_to(
 ```  
 
 ### Parameters
-`_Dest`  
+*_Dest*<br/>
 The [array_view](array-view-class.md) object to copy to.
 
 ##  <a name="cpu_access_type"></a> cpu_access_type
@@ -524,7 +524,7 @@ operator std::vector<value_type>() const restrict(cpu);
 ```  
 
 ### Parameters
-`value_type`  
+*value_type*<br/>
 The data type of the elements of the vector.
 
 ### Return Value
@@ -553,19 +553,19 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
 ```  
 
 ### Parameters
-`_Index`  
+*_Index*<br/>
 The location of the element.
 
-`_I0`  
+*_I0*<br/>
 The most significant component of the origin of this section.
 
-`_I1`  
+*_I1*<br/>
 The next-to-most-significant component of the origin of this section.
 
-`_I2`  
+*_I2*<br/>
 The least significant component of the origin of this section.
 
-`_I`  
+*_I*<br/>
 The location of the element.
 
 ### Return Value
@@ -587,10 +587,10 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
 ```  
 
 ### Parameters
-`_Index`  
+*_Index*<br/>
 The index.
 
-`_I`  
+*_I*<br/>
 The index.
 
 ### Return Value
@@ -610,10 +610,10 @@ array& operator= (
 ```  
 
 ### Parameters
-`_Other`  
+*_Other*<br/>
 The `array` object to copy from.
 
-`_Src`  
+*_Src*<br/>
 The `array` object to copy from.
 
 ### Return Value
@@ -725,40 +725,40 @@ array_view<const value_type,3> section(
 ```  
 
 ### Parameters
-`_E0`  
+*_E0*<br/>
 The most significant component of the extent of this section.
 
-`_E1`  
+*_E1*<br/>
 The next-to-most-significant component of the extent of this section.
 
-`_E2`  
+*_E2*<br/>
 The least significant component of the extent of this section.
 
-`_Ext`  
+*_Ext*<br/>
 The [extent](extent-class.md) object that specifies the extent of the section. The origin is 0.
 
-`_Idx`  
+*_Idx*<br/>
 The [index](index-class.md) object that specifies the location of the origin. The subsection is the rest of the extent.
 
-`_I0`  
+*_I0*<br/>
 The most significant component of the origin of this section.
 
-`_I1`  
+*_I1*<br/>
 The next-to-most-significant component of the origin of this section.
 
-`_I2`  
+*_I2*<br/>
 The least significant component of the origin of this section.
 
-`_Rank`  
+*_Rank*<br/>
 The rank of the section.
 
-`_Section_extent`  
+*_Section_extent*<br/>
 The [extent](extent-class.md) object that specifies the extent of the section.
 
-`_Section_origin`  
+*_Section_origin*<br/>
 The [index](index-class.md) object that specifies the location of the origin.
 
-`value_type`  
+*value_type*<br/>
 The data type of the elements that are copied.
 
 ### Return Value
@@ -780,13 +780,13 @@ array_view<const value_type,_New_rank> view_as(
 ```  
 
 ### Parameters
-`_New_rank`  
+*_New_rank*<br/>
 The rank of the `extent` object passed as a parameter.
 
-`_View_extent`  
+*_View_extent*<br/>
 The extent that is used to construct the new [array_view](array-view-class.md) object.
 
-`value_type`  
+*value_type*<br/>
 The data type of the elements in both the original `array` object and the returned `array_view` object.
 
 ### Return Value

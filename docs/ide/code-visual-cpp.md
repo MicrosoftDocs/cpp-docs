@@ -22,8 +22,8 @@ The \<code> tag gives you a way to indicate one or more lines as code.
 ```  
   
 #### Parameters  
- `content`  
- The text you want marked as code.  
+*content*<br/>
+The text you want marked as code.  
   
 ## Remarks  
  Use [\<c>](../ide/c-visual-cpp.md) to indicate a portion of text should be marked as code.  

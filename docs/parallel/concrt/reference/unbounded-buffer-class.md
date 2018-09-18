@@ -25,8 +25,8 @@ class unbounded_buffer : public propagator_block<multi_link_registry<ITarget<   
 ```  
   
 #### Parameters  
- `_Type`  
- The payload type of the messages stored and propagated by the buffer.  
+*_Type*<br/>
+The payload type of the messages stored and propagated by the buffer.  
   
 ## Members  
   
@@ -89,8 +89,8 @@ virtual message<_Type> * accept_message(
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the offered `message` object.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the offered `message` object.  
   
 ### Return Value  
  A pointer to the `message` object that the caller now has ownership of.  
@@ -106,8 +106,8 @@ virtual message<_Type> * consume_message(
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the `message` object being consumed.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the `message` object being consumed.  
   
 ### Return Value  
  A pointer to the `message` object that the caller now has ownership of.  
@@ -137,8 +137,8 @@ bool enqueue(
 ```  
   
 ### Parameters  
- `_Item`  
- The item to add.  
+*_Item*<br/>
+The item to add.  
   
 ### Return Value  
  `true` if the item was accepted, `false` otherwise.  
@@ -154,8 +154,8 @@ virtual void link_target_notification(
 ```  
   
 ### Parameters  
- `_PTarget`  
- A pointer to the newly linked target.  
+*_PTarget*<br/>
+A pointer to the newly linked target.  
   
 ##  <a name="propagate_message"></a> propagate_message 
 
@@ -169,11 +169,11 @@ virtual message_status propagate_message(
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the `message` object.  
+*_PMessage*<br/>
+A pointer to the `message` object.  
   
- `_PSource`  
- A pointer to the source block offering the message.  
+*_PSource*<br/>
+A pointer to the source block offering the message.  
   
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md#message_status) indication of what the target decided to do with the message.  
@@ -200,7 +200,8 @@ virtual void process_input_messages(
 ```  
   
 ### Parameters  
- `_PMessage`  
+*_PMessage*<br/>
+A pointer to the message that is to be processed.  
   
 ##  <a name="release_message"></a> release_message 
 
@@ -213,8 +214,8 @@ virtual void release_message(
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the `message` object being released.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the `message` object being released.  
   
 ##  <a name="reserve_message"></a> reserve_message 
 
@@ -227,8 +228,8 @@ virtual bool reserve_message(
 ```  
   
 ### Parameters  
- `_MsgId`  
- The `runtime_object_identity` of the `message` object being reserved.  
+*_MsgId*<br/>
+The `runtime_object_identity` of the `message` object being reserved.  
   
 ### Return Value  
  `true` if the message was successfully reserved, `false` otherwise.  
@@ -256,11 +257,11 @@ virtual message_status send_message(
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the `message` object.  
+*_PMessage*<br/>
+A pointer to the `message` object.  
   
- `_PSource`  
- A pointer to the source block offering the message.  
+*_PSource*<br/>
+A pointer to the source block offering the message.  
   
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md#message_status) indication of what the target decided to do with the message.  
@@ -307,14 +308,14 @@ unbounded_buffer(
 ```  
   
 ### Parameters  
- `_Filter`  
- A filter function which determines whether offered messages should be accepted.  
+*_Filter*<br/>
+A filter function which determines whether offered messages should be accepted.  
   
- `_PScheduler`  
- The `Scheduler` object within which the propagation task for the `unbounded_buffer` messaging block is scheduled.  
+*_PScheduler*<br/>
+The `Scheduler` object within which the propagation task for the `unbounded_buffer` messaging block is scheduled.  
   
- `_PScheduleGroup`  
- The `ScheduleGroup` object within which the propagation task for the `unbounded_buffer` messaging block is scheduled. The `Scheduler` object used is implied by the schedule group.  
+*_PScheduleGroup*<br/>
+The `ScheduleGroup` object within which the propagation task for the `unbounded_buffer` messaging block is scheduled. The `Scheduler` object used is implied by the schedule group.  
   
 ### Remarks  
  The runtime uses the default scheduler if you do not specify the `_PScheduler` or `_PScheduleGroup` parameters.  

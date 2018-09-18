@@ -22,8 +22,8 @@ The \<remarks> tag is used to add information about a type, supplementing the in
 ```  
   
 #### Parameters  
- `description`  
- A description of the member.  
+*description*<br/>
+A description of the member.  
   
 ## Remarks  
  Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.  

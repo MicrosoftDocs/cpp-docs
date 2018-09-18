@@ -22,11 +22,11 @@ class texture;
 ```  
   
 #### Parameters  
- `value_type`  
- The type of the elements in the texture.  
+*value_type*<br/>
+The type of the elements in the texture.  
   
- `_Rank`  
- The rank of the texture.  
+*_Rank*<br/>
+The rank of the texture.  
   
 ## Members  
   
@@ -114,14 +114,14 @@ void copy_to(writeonly_texture_view<value_type, _Rank>& _Dest) const;
 ```  
   
 ### Parameters  
- `_Dest`  
- The object to copy to.  
+*_Dest*<br/>
+The object to copy to.  
   
- `_Rank`  
- The rank of the texture.  
+*_Rank*<br/>
+The rank of the texture.  
   
- `value_type`  
- The type of the elements in the texture.  
+*value_type*<br/>
+The type of the elements in the texture.  
   
 ##  <a name="data"></a> data 
 
@@ -154,8 +154,8 @@ const value_type get(const index<_Rank>& _Index) const restrict(amp);
 ```  
   
 ### Parameters  
- `_Index`  
- The index of the element.  
+*_Index*<br/>
+The index of the element.  
   
 ### Return Value  
  The value of the element at the specified index.  
@@ -218,20 +218,20 @@ const value_type operator() (
 ```  
   
 ### Parameters  
- `_Index`  
- The index.  
+*_Index*<br/>
+The index.  
   
- `_I0`  
- The most-significant component of the index.  
+*_I0*<br/>
+The most-significant component of the index.  
   
- `_I1`  
- The next-to-most-significant component of the index.  
+*_I1*<br/>
+The next-to-most-significant component of the index.  
   
- `_I2`  
- The least-significant component of the index.  
+*_I2*<br/>
+The least-significant component of the index.  
   
- `_Rank`  
- The rank of the index.  
+*_Rank*<br/>
+The rank of the index.  
   
 ### Return Value  
  The element value that is specified by the parameters.  
@@ -248,11 +248,11 @@ const value_type operator[] (int _I0) const restrict(amp);
 ```  
   
 ### Parameters  
- `_Index`  
- The index.  
+*_Index*<br/>
+The index.  
   
- `_I0`  
- The index.  
+*_I0*<br/>
+The index.  
   
 ### Return Value  
  The element that is at the specified index.  
@@ -271,8 +271,8 @@ texture& operator= (
 ```  
   
 ### Parameters  
- `_Other`  
- The `texture` object to copy from.  
+*_Other*<br/>
+The `texture` object to copy from.  
   
 ### Return Value  
  A reference to this `texture` object.  
@@ -304,14 +304,14 @@ void set(
 ```  
   
 ### Parameters  
- `_Index`  
- The index of the element.  
+*_Index*<br/>
+The index of the element.  
   
- `_Rank`  
- The rank of the index.  
+*_Rank*<br/>
+The rank of the index.  
   
- `value`  
- The new value of the element.  
+*value*<br/>
+The new value of the element.  
   
 ##  <a name="ctor"></a> texture 
 
@@ -538,59 +538,59 @@ texture(
 ```  
   
 ### Parameters  
- `_Acc_view`  
- The [accelerator_view](accelerator-view-class.md) that specifies the location of the texture.  
+*_Acc_view*<br/>
+The [accelerator_view](accelerator-view-class.md) that specifies the location of the texture.  
   
- `_Av`  
- The [accelerator_view](accelerator-view-class.md) that specifies the location of the texture.  
+*_Av*<br/>
+The [accelerator_view](accelerator-view-class.md) that specifies the location of the texture.  
   
- `_Associated_av`  
- An accelerator_view that specifies the preferred target for copies to or from this texture.  
+*_Associated_av*<br/>
+An accelerator_view that specifies the preferred target for copies to or from this texture.  
   
- `_Bits_per_scalar_element`  
- The number of bits per each scalar element in the underlying scalar type of the texture. In general, supported value are 8, 16, 32, and 64. If 0 is specified, the number of bits is the same as the underlying scalar_type. 64 is only valid for double-based textures.  
+*_Bits_per_scalar_element*<br/>
+The number of bits per each scalar element in the underlying scalar type of the texture. In general, supported value are 8, 16, 32, and 64. If 0 is specified, the number of bits is the same as the underlying scalar_type. 64 is only valid for double-based textures.  
   
- `_Ext`  
- The extent in each dimension of the texture.  
+*_Ext*<br/>
+The extent in each dimension of the texture.  
   
- `_E0`  
- The most significant component of the texture.  
+*_E0*<br/>
+The most significant component of the texture.  
   
- `_E1`  
- The next-to-most-significant component of the texture.  
+*_E1*<br/>
+The next-to-most-significant component of the texture.  
   
- `_E2`  
- The least significant component of the extent of the texture.  
+*_E2*<br/>
+The least significant component of the extent of the texture.  
   
- `_Input_iterator`  
- The type of the input interator.  
+*_Input_iterator*<br/>
+The type of the input interator.  
   
- `_Mipmap_levels`  
- The number of mipmap levels in the underlying texture. If 0 is specified, the texture will have the full range of mipmap levels down to the smallest possible size for the specified extent.  
+*_Mipmap_levels*<br/>
+The number of mipmap levels in the underlying texture. If 0 is specified, the texture will have the full range of mipmap levels down to the smallest possible size for the specified extent.  
   
- `_Rank`  
- The rank of the extent.  
+*_Rank*<br/>
+The rank of the extent.  
   
- `_Source`  
- A pointer to a host buffer.  
+*_Source*<br/>
+A pointer to a host buffer.  
   
- `_Src`  
- To texture to copy.  
+*_Src*<br/>
+To texture to copy.  
   
- `_Src_byte_size`  
- The number of bytes in the source buffer.  
+*_Src_byte_size*<br/>
+The number of bytes in the source buffer.  
   
- `_Src_first`  
- A beginning iterator into the source container.  
+*_Src_first*<br/>
+A beginning iterator into the source container.  
   
- `_Src_last`  
- An ending iterator into the source container.  
+*_Src_last*<br/>
+An ending iterator into the source container.  
   
- `_Other`  
- Other data source.  
+*_Other*<br/>
+Other data source.  
   
- `_Rank`  
- The rank of the section.  
+*_Rank*<br/>
+The rank of the section.  
   
 ## See Also  
  [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

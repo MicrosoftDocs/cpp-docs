@@ -87,8 +87,8 @@ static Scheduler* __cdecl Create(const SchedulerPolicy& _Policy);
 ```  
   
 ### Parameters  
- `_Policy`  
- The scheduler policy that describes behavior of the newly created scheduler.  
+*_Policy*<br/>
+The scheduler policy that describes behavior of the newly created scheduler.  
   
 ### Return Value  
  A pointer to a newly created scheduler. This `Scheduler` object has an initial reference count placed on it.  
@@ -111,8 +111,8 @@ virtual ScheduleGroup* CreateScheduleGroup(location& _Placement) = 0;
 ```  
   
 ### Parameters  
- `_Placement`  
- A reference to a location where the tasks within the schedule group will biased towards executing at.  
+*_Placement*<br/>
+A reference to a location where the tasks within the schedule group will biased towards executing at.  
   
 ### Return Value  
  A pointer to the newly created schedule group. This `ScheduleGroup` object has an initial reference count placed on it.  
@@ -164,8 +164,8 @@ virtual bool IsAvailableLocation(const location& _Placement) const = 0;
 ```  
   
 ### Parameters  
- `_Placement`  
- A reference to the location to query the scheduler about.  
+*_Placement*<br/>
+A reference to the location to query the scheduler about.  
   
 ### Return Value  
  An indication of whether or not the location specified by the `_Placement` argument is available on the scheduler.  
@@ -198,8 +198,8 @@ virtual void RegisterShutdownEvent(HANDLE _Event) = 0;
 ```  
   
 ### Parameters  
- `_Event`  
- A handle to a Windows event object which will be signaled by the runtime when the scheduler shuts down and destroys itself.  
+*_Event*<br/>
+A handle to a Windows event object which will be signaled by the runtime when the scheduler shuts down and destroys itself.  
   
 ##  <a name="release"></a> Release 
 
@@ -263,14 +263,14 @@ virtual void ScheduleTask(
 ```  
   
 ### Parameters  
- `_Proc`  
- A pointer to the function to execute to perform the body of the light-weight task.  
+*_Proc*<br/>
+A pointer to the function to execute to perform the body of the light-weight task.  
   
- `_Data`  
- A void pointer to the data that will be passed as a parameter to the body of the task.  
+*_Data*<br/>
+A void pointer to the data that will be passed as a parameter to the body of the task.  
   
- `_Placement`  
- A reference to a location where the light-weight task will be biased towards executing at.  
+*_Placement*<br/>
+A reference to a location where the light-weight task will be biased towards executing at.  
   
 ##  <a name="setdefaultschedulerpolicy"></a> SetDefaultSchedulerPolicy 
 
@@ -281,8 +281,8 @@ static void __cdecl SetDefaultSchedulerPolicy(const SchedulerPolicy& _Policy);
 ```  
   
 ### Parameters  
- `_Policy`  
- The policy to be set as the default scheduler policy.  
+*_Policy*<br/>
+The policy to be set as the default scheduler policy.  
   
 ### Remarks  
  If the `SetDefaultSchedulerPolicy` method is called when a default scheduler already exists within the process, the runtime will throw a [default_scheduler_exists](default-scheduler-exists-class.md) exception.  

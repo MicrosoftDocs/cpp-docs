@@ -73,8 +73,8 @@ void operator delete(
 ```    
   
 ### Parameters  
- `_PObject`  
- A pointer to the object to be deleted.  
+*_PObject*<br/>
+A pointer to the object to be deleted.  
   
 ##  <a name="reference"></a> Reference 
 
@@ -123,11 +123,11 @@ virtual void ScheduleTask(
 ```  
   
 ### Parameters  
- `_Proc`  
- A pointer to the function to execute to perform the body of the light-weight task.  
+*_Proc*<br/>
+A pointer to the function to execute to perform the body of the light-weight task.  
   
- `_Data`  
- A void pointer to the data that will be passed as a parameter to the body of the task.  
+*_Data*<br/>
+A void pointer to the data that will be passed as a parameter to the body of the task.  
   
 ### Remarks  
  Calling the `ScheduleTask` method implicitly places a reference count on the schedule group which is removed by the runtime at an appropriate time after the task executes.  

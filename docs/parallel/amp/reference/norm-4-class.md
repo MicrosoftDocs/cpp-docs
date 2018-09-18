@@ -409,23 +409,23 @@ explicit inline norm_4(
 ```  
   
 ### Parameters  
- `_V0`  
- The value to initialize element 0.  
+*_V0*<br/>
+The value to initialize element 0.  
   
- `_V1`  
- The value to initialize element 1.  
+*_V1*<br/>
+The value to initialize element 1.  
   
- `_V2`  
- The value to initialize element 2.  
+*_V2*<br/>
+The value to initialize element 2.  
   
- `_V3`  
- The value to initialize element 3.  
+*_V3*<br/>
+The value to initialize element 3.  
   
- `_V`  
- The value for initialization.  
+*_V*<br/>
+The value for initialization.  
   
- `_Other`  
- The object used to initialize.  
+*_Other*<br/>
+The object used to initialize.  
   
 ##  <a name="norm_4__size"></a> size 
 

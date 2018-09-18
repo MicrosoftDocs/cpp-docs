@@ -739,15 +739,13 @@ void GetStatus(CRecordsetStatus& rStatus) const;
   
  The `CRecordsetStatus` structure has the following form:  
   
- `struct CRecordsetStatus`  
-  
- `{`  
-  
- `long m_lCurrentRecord;`  
-  
- `BOOL m_bRecordCountFinal;`  
-  
- `};`  
+```cpp
+struct CRecordsetStatus
+{
+    long m_lCurrentRecord;
+    BOOL m_bRecordCountFinal;
+};
+```
   
  The two members of `CRecordsetStatus` have the following meanings:  
   

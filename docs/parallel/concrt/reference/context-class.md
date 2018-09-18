@@ -185,8 +185,8 @@ void operator delete(void* _PObject);
 ```  
   
 ### Parameters  
- `_PObject`  
- A pointer to the object to be deleted.  
+*_PObject*<br/>
+A pointer to the object to be deleted.  
   
 ##  <a name="oversubscribe"></a> Oversubscribe 
 
@@ -197,8 +197,8 @@ static void __cdecl Oversubscribe(bool _BeginOversubscription);
 ```  
   
 ### Parameters  
- `_BeginOversubscription`  
- If `true`, an indication that an extra virtual processor should be added for the duration of the oversubscription. If `false`, an indication that the oversubscription should end and the previously added virtual processor should be removed.  
+*_BeginOversubscription*<br/>
+If `true`, an indication that an extra virtual processor should be added for the duration of the oversubscription. If `false`, an indication that the oversubscription should end and the previously added virtual processor should be removed.  
   
 ##  <a name="schedulegroupid"></a> ScheduleGroupId 
 

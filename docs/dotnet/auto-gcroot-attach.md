@@ -31,8 +31,8 @@ auto_gcroot<_element_type> & attach(
 ```  
   
 #### Parameters  
- `_right`  
- The object to attach, or an `auto_gcroot` containing the object to attach.  
+*_right*<br/>
+The object to attach, or an `auto_gcroot` containing the object to attach.  
   
 ## Return Value  
  The current `auto_gcroot`.  

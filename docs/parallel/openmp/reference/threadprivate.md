@@ -21,11 +21,10 @@ Specifies that a variable is private to a thread.
 #pragma omp threadprivate(var)  
 ```  
   
-## Remarks  
- where,  
+### Parameters
   
- `var`  
- A comma-separated list of variables that you want to make private to a thread. `var` must be either a global- or namespace-scoped variable or a local static variable.  
+*var*<br/>
+A comma-separated list of variables that you want to make private to a thread. `var` must be either a global- or namespace-scoped variable or a local static variable.  
   
 ## Remarks  
  The `threadprivate` directive supports no OpenMP clauses.  

@@ -37,20 +37,20 @@ template <typename K,
 ```  
   
 #### Parameters  
- `K`  
- The key type.  
+*K*<br/>
+The key type.  
   
- `_Element_type`  
- The mapped type.  
+*_Element_type*<br/>
+The mapped type.  
   
- `_Hasher`  
- The hash function object type. This argument is optional and the default value is `std::hash<K>`.  
+*_Hasher*<br/>
+The hash function object type. This argument is optional and the default value is `std::hash<K>`.  
   
- `key_equality`  
- The equality comparison function object type. This argument is optional and the default value is `std::equal_to<K>`.  
+*key_equality*<br/>
+The equality comparison function object type. This argument is optional and the default value is `std::equal_to<K>`.  
   
- `_Allocator_type`  
- The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent vector. This argument is optional and the default value is `std::allocator<std::pair<K`, `_Element_type>>`.  
+*_Allocator_type*<br/>
+The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent vector. This argument is optional and the default value is `std::allocator<std::pair<K`, `_Element_type>>`.  
   
 ## Members  
   
@@ -189,29 +189,29 @@ concurrent_unordered_multimap(
 ```  
   
 ### Parameters  
- `_Iterator`  
- The type of the input iterator.  
+*_Iterator*<br/>
+The type of the input iterator.  
   
- `_Number_of_buckets`  
- The initial number of buckets for this unordered multimap.  
+*_Number_of_buckets*<br/>
+The initial number of buckets for this unordered multimap.  
   
- `_Hasher`  
- The hash function for this unordered multimap.  
+*_Hasher*<br/>
+The hash function for this unordered multimap.  
   
- `key_equality`  
- The equality comparison function for this unordered multimap.  
+*key_equality*<br/>
+The equality comparison function for this unordered multimap.  
   
- `_Allocator`  
- The allocator for this unordered multimap.  
+*_Allocator*<br/>
+The allocator for this unordered multimap.  
   
- `_Begin`  
- The position of the first element in the range of elements to be copied.  
+*_Begin*<br/>
+The position of the first element in the range of elements to be copied.  
   
- `_End`  
- The position of the first element beyond the range of elements to be copied.  
+*_End*<br/>
+The position of the first element beyond the range of elements to be copied.  
   
- `_Umap`  
- The source `concurrent_unordered_multimap` object to copy elements from.  
+*_Umap*<br/>
+The source `concurrent_unordered_multimap` object to copy elements from.  
   
 ### Remarks  
  All constructors store an allocator object `_Allocator` and initialize the unordered multimap.  
@@ -235,8 +235,8 @@ size_type count(const key_type& KVal) const;
 ```  
   
 ### Parameters  
- `KVal`  
- The key to search for.  
+*KVal*<br/>
+The key to search for.  
   
 ### Return Value  
  The number of times number of times the key appears in the container.  
@@ -283,8 +283,8 @@ std::pair<const_iterator,
 ```  
   
 ### Parameters  
- `KVal`  
- The key value to search for.  
+*KVal*<br/>
+The key value to search for.  
   
 ### Return Value  
  A [pair](../../../standard-library/pair-structure.md) where the first element is an iterator to the beginning and the second element is an iterator to the end of the range.  
@@ -303,8 +303,8 @@ const_iterator find(const key_type& KVal) const;
 ```  
   
 ### Parameters  
- `KVal`  
- The key value to search for.  
+*KVal*<br/>
+The key value to search for.  
   
 ### Return Value  
  An iterator pointing to the location of the first element that matched the key provided, or the iterator `end()` if no such element exists.  
@@ -360,23 +360,23 @@ typename std::enable_if<!std::is_same<const_iterator,
 ```  
   
 ### Parameters  
- `_Iterator`  
- The iterator type used for insertion.  
+*_Iterator*<br/>
+The iterator type used for insertion.  
   
- `V`  
- The type of the value inserted into the map.  
+*V*<br/>
+The type of the value inserted into the map.  
   
- `value`  
- The value to be inserted.  
+*value*<br/>
+The value to be inserted.  
   
- `_Where`  
- The starting location to search for an insertion point.  
+*_Where*<br/>
+The starting location to search for an insertion point.  
   
- `first`  
- The beginning of the range to insert.  
+*first*<br/>
+The beginning of the range to insert.  
   
- `last`  
- The end of the range to insert.  
+*last*<br/>
+The end of the range to insert.  
   
 ### Return Value  
  An iterator pointing to the insertion location.  
@@ -453,8 +453,8 @@ concurrent_unordered_multimap& operator= (concurrent_unordered_multimap&& _Umap)
 ```  
   
 ### Parameters  
- `_Umap`  
- The source `concurrent_unordered_multimap` object.  
+*_Umap*<br/>
+The source `concurrent_unordered_multimap` object.  
   
 ### Return Value  
  A reference to this `concurrent_unordered_multimap` object.  
@@ -471,8 +471,8 @@ void rehash(size_type _Buckets);
 ```  
   
 ### Parameters  
- `_Buckets`  
- The desired number of buckets.  
+*_Buckets*<br/>
+The desired number of buckets.  
   
 ### Remarks  
  The member function alters the number of buckets to be at least `_Buckets` and rebuilds the hash table as needed. The number of buckets must be a power of 2. If not a power of 2, it will be rounded up to the next largest power of 2.  
@@ -502,8 +502,8 @@ void swap(concurrent_unordered_multimap& _Umap);
 ```  
   
 ### Parameters  
- `_Umap`  
- The `concurrent_unordered_multimap` object to swap with.  
+*_Umap*<br/>
+The `concurrent_unordered_multimap` object to swap with.  
   
 ##  <a name="unsafe_begin"></a> unsafe_begin 
 
@@ -516,8 +516,8 @@ const_local_iterator unsafe_begin(size_type _Bucket) const;
 ```  
   
 ### Parameters  
- `_Bucket`  
- The bucket index.  
+*_Bucket*<br/>
+The bucket index.  
   
 ### Return Value  
  An iterator pointing to the beginning of the bucket.  
@@ -531,8 +531,8 @@ size_type unsafe_bucket(const key_type& KVal) const;
 ```  
   
 ### Parameters  
- `KVal`  
- The element key being searched for.  
+*KVal*<br/>
+The element key being searched for.  
   
 ### Return Value  
  The bucket index for the key in this container.  
@@ -557,8 +557,8 @@ size_type unsafe_bucket_size(size_type _Bucket);
 ```  
   
 ### Parameters  
- `_Bucket`  
- The bucket to search for.  
+*_Bucket*<br/>
+The bucket to search for.  
   
 ### Return Value  
  The current number of buckets in this container.  
@@ -572,8 +572,8 @@ const_local_iterator unsafe_cbegin(size_type _Bucket) const;
 ```  
   
 ### Parameters  
- `_Bucket`  
- The bucket index.  
+*_Bucket*<br/>
+The bucket index.  
   
 ### Return Value  
  An iterator pointing to the beginning of the bucket.  
@@ -587,8 +587,8 @@ const_local_iterator unsafe_cend(size_type _Bucket) const;
 ```  
   
 ### Parameters  
- `_Bucket`  
- The bucket index.  
+*_Bucket*<br/>
+The bucket index.  
   
 ### Return Value  
  An iterator pointing to the beginning of the bucket.  
@@ -604,8 +604,8 @@ const_local_iterator unsafe_end(size_type _Bucket) const;
 ```  
   
 ### Parameters  
- `_Bucket`  
- The bucket index.  
+*_Bucket*<br/>
+The bucket index.  
   
 ### Return Value  
  An iterator pointing to the end of the bucket.  
@@ -627,14 +627,15 @@ iterator unsafe_erase(
 ```  
   
 ### Parameters  
- `_Where`  
- The iterator position to erase from.  
+*_Where*<br/>
+The iterator position to erase from.  
   
- `KVal`  
- The key value to erase.  
+*KVal*<br/>
+The key value to erase.  
   
- `first`  
- `last`  
+*first*<br/>
+*last*<br/>
+Iterators.
   
 ### Return Value  
  The first two member functions return an iterator that designates the first element remaining beyond any elements removed, or `concurrent_unordered_multimap::end`() if no such element exists. The third member function returns the number of elements it removes.  

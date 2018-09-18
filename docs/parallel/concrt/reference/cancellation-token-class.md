@@ -71,7 +71,8 @@ cancellation_token(cancellation_token&& _Src);
 ```  
   
 ### Parameters  
- `_Src`  
+*_Src*<br/>
+The cancellation_token to be copied or moved.
   
 ##  <a name="deregister_callback"></a> deregister_callback 
 
@@ -82,8 +83,8 @@ void deregister_callback(const cancellation_token_registration& _Registration) c
 ```  
   
 ### Parameters  
- `_Registration`  
- The `cancellation_token_registration` object corresponding to the callback to be deregistered. This token must have been previously returned from a call to the `register` method.  
+*_Registration*<br/>
+The `cancellation_token_registration` object corresponding to the callback to be deregistered. This token must have been previously returned from a call to the `register` method.  
   
 ##  <a name="is_cancelable"></a> is_cancelable 
 
@@ -125,8 +126,9 @@ bool operator!= (const cancellation_token& _Src) const;
 ```  
   
 ### Parameters  
- `_Src`  
-  
+*_Src*<br/>
+The `cancellation_token` to compare.
+
 ### Return Value  
   
 ##  <a name="operator_eq"></a> operator= 
@@ -138,7 +140,8 @@ cancellation_token& operator= (cancellation_token&& _Src);
 ```  
   
 ### Parameters  
- `_Src`  
+*_Src*<br/>
+The `cancellation_token` to assign.
   
 ### Return Value  
   
@@ -149,7 +152,8 @@ bool operator== (const cancellation_token& _Src) const;
 ```  
   
 ### Parameters  
- `_Src`  
+*_Src*<br/>
+The `cancellation_token` to compare.
   
 ### Return Value  
   
@@ -163,11 +167,11 @@ template<typename _Function>
 ```  
   
 ### Parameters  
- `_Function`  
- The type of the function object that will be called back when this `cancellation_token` is canceled.  
+*_Function*<br/>
+The type of the function object that will be called back when this `cancellation_token` is canceled.  
   
- `_Func`  
- The function object that will be called back when this `cancellation_token` is canceled.  
+*_Func*<br/>
+The function object that will be called back when this `cancellation_token` is canceled.  
   
 ### Return Value  
  A `cancellation_token_registration` object which can be utilized in the `deregister` method to deregister a previously registered callback and prevent it from being made. The method will throw an [invalid_operation](invalid-operation-class.md) exception if it is called on a `cancellation_token` object that was created using the [cancellation_token::none](#none) method.  

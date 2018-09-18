@@ -23,11 +23,11 @@ class target_block : public ITarget<typename _SourceLinkRegistry::type::source_t
 ```  
   
 #### Parameters  
- `_SourceLinkRegistry`  
- The link registry to be used for holding the source links.  
+*_SourceLinkRegistry*<br/>
+The link registry to be used for holding the source links.  
   
- `_MessageProcessorType`  
- The processor type for message processing.  
+*_MessageProcessorType*<br/>
+The processor type for message processing.  
   
 ## Members  
   
@@ -90,8 +90,8 @@ void async_send(_Inout_opt_ message<_Source_type>* _PMessage);
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the message being sent.  
+*_PMessage*<br/>
+A pointer to the message being sent.  
   
 ##  <a name="decline_incoming_messages"></a> decline_incoming_messages 
 
@@ -123,11 +123,11 @@ void initialize_target(
 ```  
   
 ### Parameters  
- `_PScheduler`  
- The scheduler to be used for scheduling tasks.  
+*_PScheduler*<br/>
+The scheduler to be used for scheduling tasks.  
   
- `_PScheduleGroup`  
- The schedule group to be used for scheduling tasks.  
+*_PScheduleGroup*<br/>
+The schedule group to be used for scheduling tasks.  
   
 ##  <a name="link_source"></a> link_source 
 
@@ -138,8 +138,8 @@ virtual void link_source(_Inout_ ISource<_Source_type>* _PSource);
 ```  
   
 ### Parameters  
- `_PSource`  
- A pointer to the `ISource` block that is to be linked.  
+*_PSource*<br/>
+A pointer to the `ISource` block that is to be linked.  
   
 ### Remarks  
  This function should not be called directly on a `target_block` object. Blocks should be connected together using the `link_target` method on `ISource` blocks, which will invoke the `link_source` method on the corresponding target.  
@@ -153,7 +153,8 @@ virtual void process_input_messages(_Inout_ message<_Source_type>* _PMessage);
 ```  
   
 ### Parameters  
- `_PMessage`  
+*_PMessage*<br/>
+A pointer to the message that is to be processed.  
   
 ##  <a name="process_message"></a> process_message 
 
@@ -174,11 +175,11 @@ virtual message_status propagate(
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the `message` object.  
+*_PMessage*<br/>
+A pointer to the `message` object.  
   
- `_PSource`  
- A pointer to the source block offering the message.  
+*_PSource*<br/>
+A pointer to the source block offering the message.  
   
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
@@ -197,11 +198,11 @@ virtual message_status propagate_message(
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the `message` object.  
+*_PMessage*<br/>
+A pointer to the `message` object.  
   
- `_PSource`  
- A pointer to the source block offering the message.  
+*_PSource*<br/>
+A pointer to the source block offering the message.  
   
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
@@ -215,8 +216,8 @@ void register_filter(filter_method const& _Filter);
 ```  
   
 ### Parameters  
- `_Filter`  
- The filter method.  
+*_Filter*<br/>
+The filter method.  
   
 ##  <a name="remove_sources"></a> remove_sources 
 
@@ -240,11 +241,11 @@ virtual message_status send(
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the `message` object.  
+*_PMessage*<br/>
+A pointer to the `message` object.  
   
- `_PSource`  
- A pointer to the source block offering the message.  
+*_PSource*<br/>
+A pointer to the source block offering the message.  
   
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
@@ -281,8 +282,8 @@ void sync_send(_Inout_opt_ message<_Source_type>* _PMessage);
 ```  
   
 ### Parameters  
- `_PMessage`  
- A pointer to the message being sent.  
+*_PMessage*<br/>
+A pointer to the message being sent.  
   
 ##  <a name="ctor"></a> target_block 
 
@@ -309,8 +310,8 @@ virtual void unlink_source(_Inout_ ISource<_Source_type>* _PSource);
 ```  
   
 ### Parameters  
- `_PSource`  
- A pointer to the `ISource` block that is to be unlinked.  
+*_PSource*<br/>
+A pointer to the `ISource` block that is to be unlinked.  
   
 ##  <a name="unlink_sources"></a> unlink_sources 
 

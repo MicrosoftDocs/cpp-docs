@@ -29,7 +29,7 @@ class CAutoPtrElementTraits
 
 #### Parameters
 
-`T`  
+*T*<br/>
 The pointer type.
 
 ## Members

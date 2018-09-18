@@ -22,15 +22,15 @@ The \<permission> tag lets you document the access of a member. <xref:System.Sec
 ```  
   
 #### Parameters  
- `member`  
- A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and translates `member` to the canonical element name in the output XML.  Enclose the name in single or double quotation marks.  
+*member*<br/>
+A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and translates `member` to the canonical element name in the output XML.  Enclose the name in single or double quotation marks.  
   
  The compiler issues a warning if it does not find `member`.  
   
  For information on how to create a cref reference to a generic type, see [\<see>](../ide/see-visual-cpp.md).  
   
- `description`  
- A description of the access to the member.  
+*description*<br/>
+A description of the access to the member.  
   
 ## Remarks  
  Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.  

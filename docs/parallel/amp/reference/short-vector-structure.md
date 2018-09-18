@@ -73,8 +73,10 @@ struct short_vector<double, 4>;
 ```  
   
 #### Parameters  
- `_Scalar_type`  
- `_Size`  
+
+*_Scalar_type*<br/>
+
+*_Size*<br/>
   
 ## Members  
   

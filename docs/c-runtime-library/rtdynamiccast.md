@@ -31,20 +31,20 @@ PVOID __RTDynamicCast (
 ```  
   
 #### Parameters  
- `inptr`  
- Pointer to a polymorphic object.  
+*inptr*<br/>
+Pointer to a polymorphic object.  
   
- `VfDelta`  
- Offset of virtual function pointer in object.  
+*VfDelta*<br/>
+Offset of virtual function pointer in object.  
   
- `SrcType`  
- Static type of object pointed to by the `inptr` parameter.  
+*SrcType*<br/>
+Static type of object pointed to by the `inptr` parameter.  
   
- `TargetType`  
- Intended result of cast.  
+*TargetType*<br/>
+Intended result of cast.  
   
- `isReference`  
- `true` if input is a reference; `false` if input is a pointer.  
+*isReference*<br/>
+`true` if input is a reference; `false` if input is a pointer.  
   
 ## Return Value  
  Pointer to the appropriate sub-object, if successful; otherwise, **NULL**.  

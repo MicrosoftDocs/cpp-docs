@@ -42,75 +42,75 @@ The output value is affected by the setting of the `LC_CTYPE` category setting o
 
 In the "C" locale, the test conditions for the **is** routines are as follows:
 
-`isalnum`  
+`isalnum`<br/>
 Alphanumeric (A - Z, a - z, or 0 - 9).
 
-`isalpha`  
+`isalpha`<br/>
 Alphabetic (A - Z or a - z).
 
-`__isascii`  
+`__isascii`<br/>
 ASCII character (0x00 - 0x7F).
 
-`isblank`  
+`isblank`<br/>
 Horizontal tab or space character (0x09 or 0x20).
 
-`iscntrl`  
+`iscntrl`<br/>
 Control character (0x00 - 0x1F or 0x7F).
 
-`__iscsym`  
+`__iscsym`<br/>
 Letter, underscore, or digit.
 
-`__iscsymf`  
+`__iscsymf`<br/>
 Letter or underscore.
 
-`isdigit`  
+`isdigit`<br/>
 Decimal digit (0 - 9).
 
-`isgraph`  
+`isgraph`<br/>
 Printable character except space ( ).
 
-`islower`  
+`islower`<br/>
 Lowercase letter (a - z).
 
-`isprint`  
+`isprint`<br/>
 Printable character including space (0x20 - 0x7E).
 
-`ispunct`  
+`ispunct`<br/>
 Punctuation character.
 
-`isspace`  
+`isspace`<br/>
 White-space character (0x09 - 0x0D or 0x20).
 
-`isupper`  
+`isupper`<br/>
 Uppercase letter (A - Z).
 
-`isxdigit`  
+`isxdigit`<br/>
 Hexadecimal digit (A - F, a - f, or 0 - 9).
 
 For the **isw** routines, the result of the test for the specified condition is independent of locale. The test conditions for the **isw** functions are as follows:
 
-`iswalnum`  
+`iswalnum`<br/>
 `iswalpha` or `iswdigit`.
 
-`iswalpha`  
+`iswalpha`<br/>
 Any wide character that is one of an implementation-defined set for which none of `iswcntrl`, `iswdigit`, `iswpunct`, or `iswspace` is nonzero. `iswalpha` returns nonzero only for wide characters for which `iswupper` or `iswlower` is nonzero.
 
-`iswascii`  
+`iswascii`<br/>
 Wide-character representation of ASCII character (0x0000 - 0x007F).
 
-`iswblank`  
+`iswblank`<br/>
 Wide character that corresponds to the standard space character or is one of an implementation-defined set of wide characters for which `iswalnum` is false. Standard blank characters are space (L' ') and horizontal tab (L'\t').
 
-`iswcntrl`  
+`iswcntrl`<br/>
 Control wide character.
 
-`__iswcsym`  
+`__iswcsym`<br/>
 Any wide character for which `isalnum` is true, or the '_' character.
 
-`__iswcsymf`  
+`__iswcsymf`<br/>
 Any wide character for which `iswalpha` is true, or the '_' character.
 
-`iswctype`  
+`iswctype`<br/>
 Character has property specified by the `desc` argument. For each valid value of the `desc` argument of `iswctype`, there is an equivalent wide-character classification routine, as shown in the following table:
 
 ### Equivalence of iswctype(c, desc) to Other isw Testing Routines
@@ -131,28 +131,28 @@ Character has property specified by the `desc` argument. For each valid value of
 |**_UPPER**|**iswupper(** `c` **)**|
 |**_HEX**|**iswxdigit(** `c` **)**|
 
-`iswdigit`  
+`iswdigit`<br/>
 Wide character corresponding to a decimal-digit character.
 
-`iswgraph`  
+`iswgraph`<br/>
 Printable wide character except space wide character (L' ').
 
-`iswlower`  
+`iswlower`<br/>
 Lowercase letter, or one of implementation-defined set of wide characters for which none of `iswcntrl`, `iswdigit`, `iswpunct`, or `iswspace` is nonzero. `iswlower` returns nonzero only for wide characters that correspond to lowercase letters.
 
-`iswprint`  
+`iswprint`<br/>
 Printable wide character, including space wide character (L' ').
 
-`iswpunct`  
+`iswpunct`<br/>
 Printable wide character that is neither space wide character (L' ') nor wide character for which `iswalnum` is nonzero.
 
-`iswspace`  
+`iswspace`<br/>
 Wide character that corresponds to standard white-space character or is one of implementation-defined set of wide characters for which `iswalnum` is false. Standard white-space characters are: space (L' '), formfeed (L'\f'), newline (L'\n'), carriage return (L'\r'), horizontal tab (L'\t'), and vertical tab (L'\v').
 
-`iswupper`  
+`iswupper`<br/>
 Wide character that is uppercase or is one of an implementation-defined set of wide characters for which none of `iswcntrl`, `iswdigit`, `iswpunct`, or `iswspace` is nonzero. `iswupper` returns nonzero only for wide characters that correspond to uppercase characters.
 
-`iswxdigit`  
+`iswxdigit`<br/>
 Wide character that corresponds to a hexadecimal-digit character.
 
 ## Example

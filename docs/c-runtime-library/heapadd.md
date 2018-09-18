@@ -31,11 +31,11 @@ int _heapadd(
 ```  
   
 #### Parameters  
- `memblock`  
- Pointer to the heap memory.  
+*memblock*<br/>
+Pointer to the heap memory.  
   
- `size`  
- Size of memory to add, in bytes.  
+*size*<br/>
+Size of memory to add, in bytes.  
   
 ## Return Value  
  If successful, `_heapadd` returns 0; otherwise, the function returns -1 and sets `errno` to `ENOSYS`.  

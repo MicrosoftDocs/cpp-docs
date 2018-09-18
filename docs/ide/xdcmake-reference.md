@@ -30,13 +30,12 @@ xdcmake.exe is a program that compiles .xdc files into an .xml file. An .xdc fil
  xdcmake `input_filename options`  
   
 ## Parameters  
- where:  
   
- `input_filename`  
- The file name of the .xdc files used as input to xdcmake.exe. Specify one or more .xdc files or use *.xdc to use all .xdc files in the current directory.  
+*input_filename*<br/>
+The file name of the .xdc files used as input to xdcmake.exe. Specify one or more .xdc files or use *.xdc to use all .xdc files in the current directory.  
   
- `options`  
- Zero or more of the following:  
+*options*<br/>
+Zero or more of the following:  
   
 |Option|Description|  
 |------------|-----------------|  

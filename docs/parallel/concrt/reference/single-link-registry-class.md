@@ -23,8 +23,8 @@ class single_link_registry : public network_link_registry<_Block>;
 ```  
   
 #### Parameters  
- `_Block`  
- The block data type being stored in the `single_link_registry` object.  
+*_Block*<br/>
+The block data type being stored in the `single_link_registry` object.  
   
 ## Members  
   
@@ -64,8 +64,8 @@ virtual void add(_EType _Link);
 ```  
   
 ### Parameters  
- `_Link`  
- A pointer to a block to be added.  
+*_Link*<br/>
+A pointer to a block to be added.  
   
 ### Remarks  
  The method throws an [invalid_link_target](invalid-link-target-class.md) exception if there is already a link in this registry.  
@@ -93,8 +93,8 @@ virtual bool contains(_EType _Link);
 ```  
   
 ### Parameters  
- `_Link`  
- A pointer to a block that is to be searched for in the `single_link_registry` object.  
+*_Link*<br/>
+A pointer to a block that is to be searched for in the `single_link_registry` object.  
   
 ### Return Value  
  `true` if the link was found, `false` otherwise.  
@@ -119,8 +119,8 @@ virtual bool remove(_EType _Link);
 ```  
   
 ### Parameters  
- `_Link`  
- A pointer to a block to be removed, if found.  
+*_Link*<br/>
+A pointer to a block to be removed, if found.  
   
 ### Return Value  
  `true` if the link was found and removed, `false` otherwise.  
