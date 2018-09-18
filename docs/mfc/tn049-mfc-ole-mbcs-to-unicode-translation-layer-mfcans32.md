@@ -13,9 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # TN049: MFC/OLE MBCS to Unicode Translation Layer (MFCANS32)
-This note originally described how MFCANS32.DLL provides ANSI interfaces in the primarily Unicode world of 32-bit OLE. This DLL is no longer used by MFC.  
-  
-## See Also  
- [Technical Notes by Number](../mfc/technical-notes-by-number.md)   
- [Technical Notes by Category](../mfc/technical-notes-by-category.md)
+
+This note originally described how MFCANS32.DLL provides ANSI interfaces in the primarily Unicode world of 32-bit OLE. This DLL is no longer used by MFC.
+
+## See Also
+
+[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
+[Technical Notes by Category](../mfc/technical-notes-by-category.md)
 

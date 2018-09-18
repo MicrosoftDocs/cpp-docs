@@ -13,30 +13,35 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # POINT Structure1
-The `POINT` structure defines the x*-* and y-coordinates of a point.  
-  
-## Syntax  
-  
-```  
-typedef struct tagPOINT {  
-    LONG x;  
-    LONG y;  
-} POINT;  
-```  
-  
-#### Parameters  
- *x*  
- Specifies the x-coordinate of a point.  
-  
- *y*  
- Specifies the y-coordinate of a point.  
-  
-## Example  
- [!code-cpp[NVC_MFC_Utilities#37](../../mfc/codesnippet/cpp/point-structure1_1.cpp)]  
-  
-## Requirements  
- **Header:** windef.h  
-  
-## See Also  
- [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CPoint Class](../../atl-mfc-shared/reference/cpoint-class.md)
+
+The `POINT` structure defines the x*-* and y-coordinates of a point.
+
+## Syntax
+
+```
+typedef struct tagPOINT {
+    LONG x;
+    LONG y;
+} POINT;
+```
+
+#### Parameters
+
+*x*<br/>
+Specifies the x-coordinate of a point.
+
+*y*<br/>
+Specifies the y-coordinate of a point.
+
+## Example
+
+[!code-cpp[NVC_MFC_Utilities#37](../../mfc/codesnippet/cpp/point-structure1_1.cpp)]
+
+## Requirements
+
+**Header:** windef.h
+
+## See Also
+
+[Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
+[CPoint Class](../../atl-mfc-shared/reference/cpoint-class.md)

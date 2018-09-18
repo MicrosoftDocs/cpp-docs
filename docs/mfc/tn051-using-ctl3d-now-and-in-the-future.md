@@ -13,9 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # TN051: Using CTL3D Now and in the Future
-This technical note, which previously discussed CTL3D and MFC, is now obsolete. The 3D effect for controls is automatically implemented by MFC.  
-  
-## See Also  
- [Technical Notes by Number](../mfc/technical-notes-by-number.md)   
- [Technical Notes by Category](../mfc/technical-notes-by-category.md)
+
+This technical note, which previously discussed CTL3D and MFC, is now obsolete. The 3D effect for controls is automatically implemented by MFC.
+
+## See Also
+
+[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
+[Technical Notes by Category](../mfc/technical-notes-by-category.md)
 

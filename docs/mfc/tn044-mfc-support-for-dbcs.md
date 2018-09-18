@@ -13,9 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # TN044: MFC Support for DBCS
-This technical note described the support in MFC for "double-byte character sets" or DBCS. This information as well as information on MFC's support for UNICODE is now available in the *Class Library Reference*.  
-  
-## See Also  
- [Technical Notes by Number](../mfc/technical-notes-by-number.md)   
- [Technical Notes by Category](../mfc/technical-notes-by-category.md)
+
+This technical note described the support in MFC for "double-byte character sets" or DBCS. This information as well as information on MFC's support for UNICODE is now available in the *Class Library Reference*.
+
+## See Also
+
+[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
+[Technical Notes by Category](../mfc/technical-notes-by-category.md)
 

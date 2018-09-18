@@ -12,22 +12,24 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Adding Controls By Hand
-You can either [add controls to a dialog box with the dialog editor](../mfc/using-the-dialog-editor-to-add-controls.md) or add them yourself, with code.  
-  
- To create a control object yourself, you will usually embed the C++ control object in a C++ dialog or frame-window object. Like many other objects in the framework, controls require two-stage construction. You should call the control's **Create** member function as part of creating the parent dialog box or frame window. For dialog boxes, this is usually done in [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog), and for frame windows, in [OnCreate](../mfc/reference/cwnd-class.md#oncreate).  
-  
- The following example shows how you might declare a `CEdit` object in the class declaration of a derived dialog class and then call the `Create` member function in `OnInitDialog`. Because the `CEdit` object is declared as an embedded object, it is automatically constructed when the dialog object is constructed, but it must still be initialized with its own `Create` member function.  
-  
- [!code-cpp[NVC_MFCControlLadenDialog#1](../mfc/codesnippet/cpp/adding-controls-by-hand_1.h)]  
-  
- The following `OnInitDialog` function sets up a rectangle, then calls `Create` to create the Windows edit control and attach it to the uninitialized `CEdit` object.  
-  
- [!code-cpp[NVC_MFCControlLadenDialog#2](../mfc/codesnippet/cpp/adding-controls-by-hand_2.cpp)]  
-  
- After creating the edit object, you can also set the input focus to the control by calling the `SetFocus` member function. Finally, you return 0 from `OnInitDialog` to show that you set the focus. If you return a nonzero value, the dialog manager sets the focus to the first control item in the dialog item list. In most cases, you'll want to add controls to your dialog boxes with the dialog editor.  
-  
-## See Also  
- [Making and Using Controls](../mfc/making-and-using-controls.md)   
- [Controls](../mfc/controls-mfc.md)   
- [CDialog::OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog)
+
+You can either [add controls to a dialog box with the dialog editor](../mfc/using-the-dialog-editor-to-add-controls.md) or add them yourself, with code.
+
+To create a control object yourself, you will usually embed the C++ control object in a C++ dialog or frame-window object. Like many other objects in the framework, controls require two-stage construction. You should call the control's **Create** member function as part of creating the parent dialog box or frame window. For dialog boxes, this is usually done in [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog), and for frame windows, in [OnCreate](../mfc/reference/cwnd-class.md#oncreate).
+
+The following example shows how you might declare a `CEdit` object in the class declaration of a derived dialog class and then call the `Create` member function in `OnInitDialog`. Because the `CEdit` object is declared as an embedded object, it is automatically constructed when the dialog object is constructed, but it must still be initialized with its own `Create` member function.
+
+[!code-cpp[NVC_MFCControlLadenDialog#1](../mfc/codesnippet/cpp/adding-controls-by-hand_1.h)]
+
+The following `OnInitDialog` function sets up a rectangle, then calls `Create` to create the Windows edit control and attach it to the uninitialized `CEdit` object.
+
+[!code-cpp[NVC_MFCControlLadenDialog#2](../mfc/codesnippet/cpp/adding-controls-by-hand_2.cpp)]
+
+After creating the edit object, you can also set the input focus to the control by calling the `SetFocus` member function. Finally, you return 0 from `OnInitDialog` to show that you set the focus. If you return a nonzero value, the dialog manager sets the focus to the first control item in the dialog item list. In most cases, you'll want to add controls to your dialog boxes with the dialog editor.
+
+## See Also
+
+[Making and Using Controls](../mfc/making-and-using-controls.md)<br/>
+[Controls](../mfc/controls-mfc.md)<br/>
+[CDialog::OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog)
 

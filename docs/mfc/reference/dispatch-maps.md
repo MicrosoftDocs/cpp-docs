@@ -63,10 +63,10 @@ BEGIN_DISPATCH_MAP(theClass, baseClass)
 
 ### Parameters
 
-*theClass*  
+*theClass*<br/>
 Specifies the name of the class that owns this dispatch map.
 
-*baseClass*  
+*baseClass*<br/>
 Specifies the base class name of *theClass*.
 
 ### Remarks
@@ -108,19 +108,19 @@ DISP_FUNCTION(
 
 ### Parameters
 
-*theClass*  
+*theClass*<br/>
 Name of the class.
 
-*pszName*  
+*pszName*<br/>
 External name of the function.
 
-*pfnMember*  
+*pfnMember*<br/>
 Name of the member function.
 
-*vtRetVal*  
+*vtRetVal*<br/>
 A value specifying the function's return type.
 
-*vtsParams*  
+*vtsParams*<br/>
 A space-separated list of one or more constants specifying the function's parameter list.
 
 ### Remarks
@@ -197,16 +197,16 @@ DISP_PROPERTY(
 
 ### Parameters
 
-*theClass*  
+*theClass*<br/>
 Name of the class.
 
-*pszName*  
+*pszName*<br/>
 External name of the property.
 
-*memberName*  
+*memberName*<br/>
 Name of the member variable in which the property is stored.
 
-*vtPropType*  
+*vtPropType*<br/>
 A value specifying the property's type.
 
 ### Remarks
@@ -249,19 +249,19 @@ DISP_PROPERTY_EX(
 
 ### Parameters
 
-*theClass*  
+*theClass*<br/>
 Name of the class.
 
-*pszName*  
+*pszName*<br/>
 External name of the property.
 
-*memberGet*  
+*memberGet*<br/>
 Name of the member function used to get the property.
 
-*memberSet*  
+*memberSet*<br/>
 Name of the member function used to set the property.
 
-*vtPropType*  
+*vtPropType*<br/>
 A value specifying the property's type.
 
 ### Remarks
@@ -289,19 +289,19 @@ DISP_PROPERTY_NOTIFY(
 
 ### Parameters
 
-*theClass*  
+*theClass*<br/>
 Name of the class.
 
-*szExternalName*  
+*szExternalName*<br/>
 External name of the property.
 
-*memberName*  
+*memberName*<br/>
 Name of the member variable in which the property is stored.
 
-*pfnAfterSet*  
+*pfnAfterSet*<br/>
 Name of the notification function for *szExternalName*.
 
-*vtPropType*  
+*vtPropType*<br/>
 A value specifying the property's type.
 
 ### Remarks
@@ -345,22 +345,22 @@ DISP_PROPERTY_PARAM(
 
 ### Parameters
 
-*theClass*  
+*theClass*<br/>
 Name of the class.
 
-*pszExternalName*  
+*pszExternalName*<br/>
 External name of the property.
 
-*pfnGet*  
+*pfnGet*<br/>
 Name of the member function used to get the property.
 
-*pfnSet*  
+*pfnSet*<br/>
 Name of the member function used to set the property.
 
-*vtPropType*  
+*vtPropType*<br/>
 A value specifying the property's type.
 
-*vtsParams*  
+*vtsParams*<br/>
 A string of space-separated `VTS_*` variant parameter types, one for each parameter.
 
 ### Remarks
@@ -399,10 +399,10 @@ DISP_DEFVALUE(theClass, pszName)
 
 ### Parameters
 
-*theClass*  
+*theClass*<br/>
 Name of the class.
 
-*pszName*  
+*pszName*<br/>
 External name of the property that represents the "value" of the object.
 
 ### Remarks
@@ -417,4 +417,4 @@ The "default value" of your object is the property that is retrieved or set when
 
 ## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)  
+[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

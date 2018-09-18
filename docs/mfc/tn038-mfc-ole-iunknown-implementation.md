@@ -391,7 +391,7 @@ CAggrExample::CAggrExample()
 }
 
 BOOL CAggrExample::OnCreateAggregates()
-{ 
+{
     // wire up aggregate with correct controlling unknown
     m_lpAggrInner = CoCreateInstance(CLSID_Example,
         GetControllingUnknown(), CLSCTX_INPROC_SERVER,
@@ -448,10 +448,10 @@ DWORD ExternalQueryInterface(
 
 #### Parameters
 
-*lpIID*  
+*lpIID*<br/>
 A far pointer to an IID (the first argument to QueryInterface)
 
-*ppvObj*  
+*ppvObj*<br/>
 A pointer to an IUnknown* (second argument to QueryInterface)
 
 #### Remarks
@@ -497,10 +497,10 @@ END_INTERFACE_PART(localClass)
 
 #### Parameters
 
-*localClass*  
+*localClass*<br/>
 The name of the class that implements the interface
 
-*iface*  
+*iface*<br/>
 The name of the interface that this class implements
 
 #### Remarks
@@ -537,10 +537,10 @@ END_INTERFACE_MAP
 
 #### Parameters
 
-*theClass*  
+*theClass*<br/>
 The class in which the interface map is to be defined
 
-*baseClass*  
+*baseClass*<br/>
 The class from which *theClass* derives from.
 
 #### Remarks
@@ -555,13 +555,13 @@ INTERFACE_PART(theClass, iid, localClass)
 
 #### Parameters
 
-*theClass*  
+*theClass*<br/>
 The name of the class that contains the interface map.
 
-*iid*  
+*iid*<br/>
 The `IID` that is to be mapped to the embedded class.
 
-*localClass*  
+*localClass*<br/>
 The name of the local class (less the 'X').
 
 #### Remarks
@@ -603,10 +603,10 @@ INTERFACE_AGGREGATE(theClass, theAggr)
 
 #### Parameters
 
-*theClass*  
+*theClass*<br/>
 The name of the class that contains the interface map,
 
-*theAggr*  
+*theAggr*<br/>
 The name of the member variable that is to be aggregated.
 
 #### Remarks
@@ -615,5 +615,5 @@ This macro is used to tell the framework that the class is using an aggregate ob
 
 ## See also
 
-[Technical Notes by Number](../mfc/technical-notes-by-number.md)  
-[Technical Notes by Category](../mfc/technical-notes-by-category.md)  
+[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
+[Technical Notes by Category](../mfc/technical-notes-by-category.md)

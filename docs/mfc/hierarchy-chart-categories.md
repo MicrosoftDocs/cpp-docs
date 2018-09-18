@@ -13,9 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Hierarchy Chart Categories
-![MFC hierarchy chart categories](../mfc/media/vc369r1.png "vc369r1")  
-  
-## See Also  
- [Hierarchy Chart](../mfc/hierarchy-chart.md)   
- [MFC Desktop Applications](../mfc/mfc-desktop-applications.md)
+
+![MFC hierarchy chart categories](../mfc/media/vc369r1.png "vc369r1")
+
+## See Also
+
+[Hierarchy Chart](../mfc/hierarchy-chart.md)<br/>
+[MFC Desktop Applications](../mfc/mfc-desktop-applications.md)
 

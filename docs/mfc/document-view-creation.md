@@ -12,20 +12,22 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Document/View Creation
-The framework supplies implementations of the **New** and **Open** commands (among others) on the **File** menu. Creation of a new document and its associated view and frame window is a cooperative effort among the application object, a document template, the newly created document, and the newly created frame window. The following table summarizes which objects create what.  
-  
-### Object Creators  
-  
-|Creator|Creates|  
-|-------------|-------------|  
-|Application object|Document template|  
-|Document template|Document|  
-|Document template|Frame window|  
-|Frame window|View|  
-  
-## See Also  
- [Document Templates and the Document/View Creation Process](../mfc/document-templates-and-the-document-view-creation-process.md)   
- [Document Template Creation](../mfc/document-template-creation.md)   
- [Relationships Among MFC Objects](../mfc/relationships-among-mfc-objects.md)   
- [Creating New Documents, Windows, and Views](../mfc/creating-new-documents-windows-and-views.md)
+
+The framework supplies implementations of the **New** and **Open** commands (among others) on the **File** menu. Creation of a new document and its associated view and frame window is a cooperative effort among the application object, a document template, the newly created document, and the newly created frame window. The following table summarizes which objects create what.
+
+### Object Creators
+
+|Creator|Creates|
+|-------------|-------------|
+|Application object|Document template|
+|Document template|Document|
+|Document template|Frame window|
+|Frame window|View|
+
+## See Also
+
+[Document Templates and the Document/View Creation Process](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
+[Document Template Creation](../mfc/document-template-creation.md)<br/>
+[Relationships Among MFC Objects](../mfc/relationships-among-mfc-objects.md)<br/>
+[Creating New Documents, Windows, and Views](../mfc/creating-new-documents-windows-and-views.md)
 

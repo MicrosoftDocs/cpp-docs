@@ -139,7 +139,7 @@ The original Scribble application lets the user select pen widths from a dialog 
     {
         m_nThinWidth = atoi(pThinComboBox->GetItem(nCurSel));
     }
-    
+
     // Create a new pen using the selected width
     ReplacePen();
     ```
@@ -171,7 +171,7 @@ The original Scribble application lets the user select pen widths from a dialog 
       {
           m_nThickWidth = atoi(pThickComboBox->GetItem(nCurSel));
       }
-      
+
       // Create a new pen using the selected width
       ReplacePen();
       ```
@@ -349,5 +349,5 @@ You have updated the MFC Scribble application. Use this walkthrough as a guide w
 
 ## See Also
 
-[Walkthroughs](../mfc/walkthroughs-mfc.md)  
-[Walkthrough: Updating the MFC Scribble Application (Part 1)](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)  
+[Walkthroughs](../mfc/walkthroughs-mfc.md)<br/>
+[Walkthrough: Updating the MFC Scribble Application (Part 1)](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)

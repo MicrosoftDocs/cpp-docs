@@ -196,7 +196,7 @@ void AddDocTemplate(CDocTemplate* pTemplate);
 
 ### Parameters
 
-*pTemplate*  
+*pTemplate*<br/>
 A pointer to the `CDocTemplate` to be added.
 
 ### Remarks
@@ -217,7 +217,7 @@ virtual void AddToRecentFileList(LPCTSTR lpszPathName);
 
 ### Parameters
 
-*lpszPathName*  
+*lpszPathName*<br/>
 The path of the file.
 
 ### Remarks
@@ -265,7 +265,7 @@ void CloseAllDocuments(BOOL bEndSession);
 
 ### Parameters
 
-*bEndSession*  
+*bEndSession*<br/>
 Specifies whether or not the Windows session is being ended. It is TRUE if the session is being ended; otherwise FALSE.
 
 ### Remarks
@@ -282,7 +282,7 @@ BOOL CreatePrinterDC(CDC& dc);
 
 ### Parameters
 
-*dc*  
+*dc*<br/>
 A reference to a printer device context.
 
 ### Return Value
@@ -305,7 +305,7 @@ CWinApp(LPCTSTR lpszAppName = NULL);
 
 ### Parameters
 
-*lpszAppName*  
+*lpszAppName*<br/>
 A null-terminated string that contains the application name that Windows uses. If this argument is not supplied or is NULL, `CWinApp` uses the resource string AFX_IDS_APP_TITLE or the filename of the executable file.
 
 ### Remarks
@@ -329,13 +329,13 @@ LONG DelRegTree(
 
 ### Parameters
 
-*hParentKey*  
+*hParentKey*<br/>
 Handle to a registry key.
 
-*strKeyName*  
+*strKeyName*<br/>
 The name of the registry key to be deleted.
 
-*pTM*  
+*pTM*<br/>
 Pointer to CAtlTransactionManager object.
 
 ### Return Value
@@ -359,13 +359,13 @@ virtual int DoMessageBox(
 
 ### Parameters
 
-*lpszPrompt*  
+*lpszPrompt*<br/>
 Address of text in the message box.
 
-*nType*  
+*nType*<br/>
 The message box [style](../../mfc/reference/styles-used-by-mfc.md#message-box-styles).
 
-*nIDPrompt*  
+*nIDPrompt*<br/>
 An index to a Help context string.
 
 ### Return Value
@@ -388,7 +388,7 @@ virtual void DoWaitCursor(int nCode);
 
 ### Parameters
 
-*nCode*  
+*nCode*<br/>
 If this parameter is 1, a wait cursor appears. If 0, the wait cursor is restored without incrementing the reference count. If -1, the wait cursor ends.
 
 ### Remarks
@@ -417,10 +417,10 @@ BOOL EnableD2DSupport(
 
 ### Parameters
 
-*d2dFactoryType*  
+*d2dFactoryType*<br/>
 The threading model of the D2D factory and the resources it creates.
 
-*writeFactoryType*  
+*writeFactoryType*<br/>
 A value that specifies whether the write factory object will be shared or isolated
 
 ### Return Value
@@ -463,7 +463,7 @@ BOOL EnableTaskbarInteraction(BOOL bEnable = TRUE);
 
 ### Parameters
 
-*bEnable*  
+*bEnable*<br/>
 Specifies whether interaction with Windows 7 taskbar should be enabled (TRUE), or disabled (FALSE).
 
 ### Return Value
@@ -570,7 +570,7 @@ HKEY GetAppRegistryKey(CAtlTransactionManager* pTM = NULL);
 
 ### Parameters
 
-*pTM*  
+*pTM*<br/>
 Pointer to a `CAtlTransactionManager` object.
 
 ### Return Value
@@ -637,7 +637,7 @@ CDocTemplate* GetNextDocTemplate(POSITION& pos) const;
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 A reference to a POSITION value returned by a previous call to `GetNextDocTemplate` or [GetFirstDocTemplatePosition](#getfirstdoctemplateposition). The value is updated to the next position by this call.
 
 ### Return Value
@@ -662,7 +662,7 @@ BOOL GetPrinterDeviceDefaults(struct tagPDA* pPrintDlg);
 
 ### Parameters
 
-*pPrintDlg*  
+*pPrintDlg*<br/>
 A pointer to a [PRINTDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpda) structure.
 
 ### Return Value
@@ -691,16 +691,16 @@ BOOL GetProfileBinary(
 
 ### Parameters
 
-*lpszSection*  
+*lpszSection*<br/>
 Points to a null-terminated string that specifies the section containing the entry.
 
-*lpszEntry*  
+*lpszEntry*<br/>
 Points to a null-terminated string that contains the entry whose value is to be retrieved.
 
-*ppData*  
+*ppData*<br/>
 Points to a pointer that will receive the address of the data.
 
-*pBytes*  
+*pBytes*<br/>
 Points to a UINT that will receive the size of the data (in bytes).
 
 ### Return Value
@@ -736,13 +736,13 @@ UINT GetProfileInt(
 
 ### Parameters
 
-*lpszSection*  
+*lpszSection*<br/>
 Points to a null-terminated string that specifies the section containing the entry.
 
-*lpszEntry*  
+*lpszEntry*<br/>
 Points to a null-terminated string that contains the entry whose value is to be retrieved.
 
-*nDefault*  
+*nDefault*<br/>
 Specifies the default value to return if the framework cannot find the entry.
 
 ### Return Value
@@ -777,13 +777,13 @@ CString GetProfileString(
 
 ### Parameters
 
-*lpszSection*  
+*lpszSection*<br/>
 Points to a null-terminated string that specifies the section containing the entry.
 
-*lpszEntry*  
+*lpszEntry*<br/>
 Points to a null-terminated string that contains the entry whose string is to be retrieved. This value must not be NULL.
 
-*lpszDefault*  
+*lpszDefault*<br/>
 Points to the default string value for the given entry if the entry cannot be found in the initialization file.
 
 ### Return Value
@@ -813,10 +813,10 @@ HKEY GetSectionKey(
 
 ### Parameters
 
-*lpszSection*  
+*lpszSection*<br/>
 The name of the key to be obtained.
 
-*pTM*  
+*pTM*<br/>
 Pointer to a `CAtlTransactionManager` object.
 
 ### Return Value
@@ -845,10 +845,10 @@ virtual void HtmlHelp(
 
 ### Parameters
 
-*dwData*  
+*dwData*<br/>
 Specifies additional data. The value used depends on the value of the *nCmd* parameter.
 
-*nCmd*  
+*nCmd*<br/>
 Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the *uCommand* parameter described in About the HTMLHelp API Function in the Windows SDK.
 
 ### Remarks
@@ -908,10 +908,10 @@ HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nID
 
 ### Parameters
 
-*lpszResourceName*  
+*lpszResourceName*<br/>
 Points to a null-terminated string that contains the name of the cursor resource. You can use a `CString` for this argument.
 
-*nIDResource*  
+*nIDResource*<br/>
 ID of the cursor resource. For a list of resources, see [LoadCursor](/windows/desktop/api/winuser/nf-winuser-loadcursora) in the Windows SDK.
 
 ### Return Value
@@ -938,10 +938,10 @@ HICON LoadIcon(LPCTSTR lpszResourceName) const;  HICON LoadIcon(UINT nIDResource
 
 ### Parameters
 
-*lpszResourceName*  
+*lpszResourceName*<br/>
 Points to a null-terminated string that contains the name of the icon resource. You can also use a `CString` for this argument.
 
-*nIDResource*  
+*nIDResource*<br/>
 ID number of the icon resource.
 
 ### Return Value
@@ -967,7 +967,7 @@ HCURSOR LoadOEMCursor(UINT nIDCursor) const;
 
 ### Parameters
 
-*nIDCursor*  
+*nIDCursor*<br/>
 An **OCR_** manifest constant identifier that specifies a predefined Windows cursor. You must have `#define OEMRESOURCE` before `#include \<afxwin.h>` to gain access to the **OCR_** constants in WINDOWS.H.
 
 ### Return Value
@@ -994,7 +994,7 @@ HICON LoadOEMIcon(UINT nIDIcon) const;
 
 ### Parameters
 
-*nIDIcon*  
+*nIDIcon*<br/>
 An **OIC_** manifest constant identifier that specifies a predefined Windows icon. You must have `#define OEMRESOURCE` before `#include \<afxwin.h>` to access the **OIC_** constants in WINDOWS.H.
 
 ### Return Value
@@ -1015,7 +1015,7 @@ HCURSOR LoadStandardCursor(LPCTSTR lpszCursorName) const;
 
 ### Parameters
 
-*lpszCursorName*  
+*lpszCursorName*<br/>
 An **IDC_** manifest constant identifier that specifies a predefined Windows cursor. These identifiers are defined in WINDOWS.H. The following list shows the possible predefined values and meanings for *lpszCursorName*:
 
 - IDC_ARROW Standard arrow cursor
@@ -1064,7 +1064,7 @@ HICON LoadStandardIcon(LPCTSTR lpszIconName) const;
 
 ### Parameters
 
-*lpszIconName*  
+*lpszIconName*<br/>
 A manifest constant identifier that specifies a predefined Windows icon. These identifiers are defined in WINDOWS.H. For a list of the possible predefined values and their descriptions, see the *lpIconName* parameter in [LoadIcon](/windows/desktop/api/winuser/nf-winuser-loadicona) in the Windows SDK.
 
 ### Return Value
@@ -1085,7 +1085,7 @@ void LoadStdProfileSettings(UINT nMaxMRU = _AFX_MRU_COUNT);
 
 ### Parameters
 
-*nMaxMRU*  
+*nMaxMRU*<br/>
 The number of recently used files to track.
 
 ### Remarks
@@ -1361,7 +1361,7 @@ virtual BOOL OnDDECommand(LPTSTR lpszCommand);
 
 ### Parameters
 
-*lpszCommand*  
+*lpszCommand*<br/>
 Points to a DDE command string received by the application.
 
 ### Return Value
@@ -1500,7 +1500,7 @@ virtual BOOL OnIdle(LONG lCount);
 
 ### Parameters
 
-*lCount*  
+*lCount*<br/>
 A counter incremented each time `OnIdle` is called when the application's message queue is empty. This count is reset to 0 each time a new message is processed. You can use the *lCount* parameter to determine the relative length of time the application has been idle without processing a message.
 
 ### Return Value
@@ -1576,7 +1576,7 @@ void ParseCommandLine(CCommandLineInfo& rCmdInfo);
 
 ### Parameters
 
-*rCmdInfo*  
+*rCmdInfo*<br/>
 A reference to a [CCommandLineInfo](../../mfc/reference/ccommandlineinfo-class.md) object.
 
 ### Remarks
@@ -1605,7 +1605,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ### Parameters
 
-*pMsg*  
+*pMsg*<br/>
 A pointer to a [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message to process.
 
 ### Return Value
@@ -1624,10 +1624,10 @@ virtual BOOL ProcessMessageFilter(
 
 ### Parameters
 
-*code*  
+*code*<br/>
 Specifies a hook code. This member function uses the code to determine how to process *lpMsg.*
 
-*lpMsg*  
+*lpMsg*<br/>
 A pointer to a Windows [MSG](../../mfc/reference/msg-structure1.md) structure.
 
 ### Return Value
@@ -1650,7 +1650,7 @@ BOOL ProcessShellCommand(CCommandLineInfo& rCmdInfo);
 
 ### Parameters
 
-*rCmdInfo*  
+*rCmdInfo*<br/>
 A reference to a [CCommandLineInfo](../../mfc/reference/ccommandlineinfo-class.md) object.
 
 ### Return Value
@@ -1695,10 +1695,10 @@ virtual LRESULT ProcessWndProcException(
 
 ### Parameters
 
-*e*  
+*e*<br/>
 A pointer to an uncaught exception.
 
-*pMsg*  
+*pMsg*<br/>
 A [MSG](../../mfc/reference/msg-structure1.md) structure that contains information about the windows message that caused the framework to throw an exception.
 
 ### Return Value
@@ -1930,13 +1930,13 @@ void SelectPrinter(
 
 ### Parameters
 
-*hDevNames*  
+*hDevNames*<br/>
 A handle to a [DEVNAMES](../../mfc/reference/devnames-structure.md) structure that identifies the driver, device, and output port names of a specific printer.
 
-*hDevMode*  
+*hDevMode*<br/>
 A handle to a [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) structure that specifies information about the device initialization and environment of a printer.
 
-*bFreeOld*  
+*bFreeOld*<br/>
 Frees the previously-selected printer.
 
 ### Remarks
@@ -1953,7 +1953,7 @@ void SetHelpMode(AFX_HELP_TYPE eHelpType);
 
 ### Parameters
 
-*eHelpType*  
+*eHelpType*<br/>
 Specifies the type of help to use. See [CWinApp::m_eHelpType](#m_ehelptype) for more information.
 
 ### Remarks
@@ -1973,10 +1973,10 @@ void SetRegistryKey(UINT nIDRegistryKey);
 
 ### Parameters
 
-*lpszRegistryKey*  
+*lpszRegistryKey*<br/>
 Pointer to a string containing the name of the key.
 
-*nIDRegistryKey*  
+*nIDRegistryKey*<br/>
 ID of a string resource containing the name of the registry key.
 
 ### Remarks
@@ -2069,10 +2069,10 @@ virtual void WinHelp(
 
 ### Parameters
 
-*dwData*  
+*dwData*<br/>
 Specifies additional data. The value used depends on the value of the *nCmd* parameter.
 
-*nCmd*  
+*nCmd*<br/>
 Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows function.
 
 ### Remarks
@@ -2099,16 +2099,16 @@ BOOL WriteProfileBinary(
 
 ### Parameters
 
-*lpszSection*  
+*lpszSection*<br/>
 Points to a null-terminated string that specifies the section containing the entry. If the section does not exist, it is created. The name of the section is case independent; the string may be any combination of uppercase and lowercase letters.
 
-*lpszEntry*  
+*lpszEntry*<br/>
 Points to a null-terminated string that contains the entry into which the value is to be written. If the entry does not exist in the specified section, it is created.
 
-*pData*  
+*pData*<br/>
 Points to the data to be written.
 
-*nBytes*  
+*nBytes*<br/>
 Contains the number of bytes to be written.
 
 ### Return Value
@@ -2136,13 +2136,13 @@ BOOL WriteProfileInt(
 
 ### Parameters
 
-*lpszSection*  
+*lpszSection*<br/>
 Points to a null-terminated string that specifies the section containing the entry. If the section does not exist, it is created. The name of the section is case independent; the string may be any combination of uppercase and lowercase letters.
 
-*lpszEntry*  
+*lpszEntry*<br/>
 Points to a null-terminated string that contains the entry into which the value is to be written. If the entry does not exist in the specified section, it is created.
 
-*nValue*  
+*nValue*<br/>
 Contains the value to be written.
 
 ### Return Value
@@ -2170,13 +2170,13 @@ BOOL WriteProfileString(
 
 ### Parameters
 
-*lpszSection*  
+*lpszSection*<br/>
 Points to a null-terminated string that specifies the section containing the entry. If the section does not exist, it is created. The name of the section is case independent; the string may be any combination of uppercase and lowercase letters.
 
-*lpszEntry*  
+*lpszEntry*<br/>
 Points to a null-terminated string that contains the entry into which the value is to be written. If the entry does not exist in the specified section, it is created. If this parameter is NULL, the section specified by *lpszSection* is deleted.
 
-*lpszValue*  
+*lpszValue*<br/>
 Points to the string to be written. If this parameter is NULL, the entry specified by the *lpszEntry* parameter is deleted.
 
 ### Return Value
@@ -2199,13 +2199,13 @@ void SetAppID(LPCTSTR lpcszAppID);
 
 ### Parameters
 
-*lpcszAppID*  
+*lpcszAppID*<br/>
 Specifies the Application User Model ID.
 
 ### Remarks
 
 ## See Also
 
-[CWinThread Class](../../mfc/reference/cwinthread-class.md)  
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)  
-[How to: Add Restart Manager Support](../../mfc/how-to-add-restart-manager-support.md)  
+[CWinThread Class](../../mfc/reference/cwinthread-class.md)<br/>
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
+[How to: Add Restart Manager Support](../../mfc/how-to-add-restart-manager-support.md)
