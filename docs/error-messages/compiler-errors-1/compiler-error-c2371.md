@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2371
-'identifier' : redefinition; different basic types  
-  
- The identifier is already declared.  
-  
- The following sample generates C2371:  
-  
-```  
-// C2371.cpp  
-int main() {  
-   int i;  
-   float i;   // C2371, redefinition  
-   float f;   // OK  
-}  
+
+'identifier' : redefinition; different basic types
+
+The identifier is already declared.
+
+The following sample generates C2371:
+
+```
+// C2371.cpp
+int main() {
+   int i;
+   float i;   // C2371, redefinition
+   float f;   // OK
+}
 ```

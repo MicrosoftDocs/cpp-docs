@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2279
-exception specification cannot appear in a typedef declaration  
-  
- Under **/Za**, [exception specifications](../../cpp/exception-specifications-throw-cpp.md) are not allowed in a typedef declaration.  
-  
- The following sample generates C2279:  
-  
-```  
-// C2279.cpp  
-// compile with: /Za /c  
-typedef int (*xy)() throw(...);   // C2279  
-typedef int (*xyz)();   // OK  
+
+exception specification cannot appear in a typedef declaration
+
+Under **/Za**, [exception specifications](../../cpp/exception-specifications-throw-cpp.md) are not allowed in a typedef declaration.
+
+The following sample generates C2279:
+
+```
+// C2279.cpp
+// compile with: /Za /c
+typedef int (*xy)() throw(...);   // C2279
+typedef int (*xyz)();   // OK
 ```

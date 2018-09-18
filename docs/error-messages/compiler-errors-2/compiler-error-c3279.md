@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3279
-partial and explicit specializations as well as explicit instantiations of class templates declared in the cli namespace are disallowed  
-  
- The `cli` namespace is defined by Microsoft and contains pseudo-templates. The Visual C++ compiler does not allow user-defined, partial and explicit specializations, and explicit instantiations of class templates in this namespace.  
-  
- The following sample generates C3279:  
-  
-```  
-// C3279.cpp  
-// compile with: /clr  
-namespace cli {  
-   template <> ref class array<int> {};   // C3279  
-   template <typename T> ref class array<T, 2> {};   // C3279  
-}  
+
+partial and explicit specializations as well as explicit instantiations of class templates declared in the cli namespace are disallowed
+
+The `cli` namespace is defined by Microsoft and contains pseudo-templates. The Visual C++ compiler does not allow user-defined, partial and explicit specializations, and explicit instantiations of class templates in this namespace.
+
+The following sample generates C3279:
+
+```
+// C3279.cpp
+// compile with: /clr
+namespace cli {
+   template <> ref class array<int> {};   // C3279
+   template <typename T> ref class array<T, 2> {};   // C3279
+}
 ```

@@ -13,24 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2075
-'identifier' : array initialization needs curly braces  
-  
- There were no curly braces around the specified array initializer.  
-  
- The following sample generates C2075:  
-  
-```  
-// C2075.c  
-int main() {  
-   int i[] = 1, 2, 3 };   // C2075  
-}  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2075b.c  
-int main() {  
-   int j[] = { 1, 2, 3 };  
-}  
+
+'identifier' : array initialization needs curly braces
+
+There were no curly braces around the specified array initializer.
+
+The following sample generates C2075:
+
+```
+// C2075.c
+int main() {
+   int i[] = 1, 2, 3 };   // C2075
+}
+```
+
+Possible resolution:
+
+```
+// C2075b.c
+int main() {
+   int j[] = { 1, 2, 3 };
+}
 ```

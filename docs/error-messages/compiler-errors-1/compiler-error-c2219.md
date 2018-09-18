@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2219
-syntax error : type qualifier must be after '*'  
-  
- Type qualifier (`const` or `volatile`) appears where it is not permitted.
+
+syntax error : type qualifier must be after '*'
+
+Type qualifier (`const` or `volatile`) appears where it is not permitted.

@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2369
-'array' : redefinition; different subscripts  
-  
- The array is already declared with a different subscript.  
-  
- The following sample generates C2369:  
-  
-```  
-// C2369.cpp  
-// compile with: /c  
-int a[10];  
-int a[20];   // C2369  
-int b[20];   // OK  
+
+'array' : redefinition; different subscripts
+
+The array is already declared with a different subscript.
+
+The following sample generates C2369:
+
+```
+// C2369.cpp
+// compile with: /c
+int a[10];
+int a[20];   // C2369
+int b[20];   // OK
 ```

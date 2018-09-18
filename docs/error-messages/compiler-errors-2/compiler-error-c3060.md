@@ -13,25 +13,26 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3060
-'member' : a friend function may not be defined inside a class using a qualified name (it may only be declared)  
-  
- A friend function was defined using a qualified name, which is not allowed.  
-  
- The following sample generates C3060:  
-  
-```  
-// C3060.cpp  
-class A {  
-public:  
-   void func();  
-};  
-  
-class C {  
-public:  
-   friend void A::func() { }   // C3060  
-   // Try the following line and the out of class definition:  
-   // friend void A::func();  
-};  
-  
-// void A::func(){}  
+
+'member' : a friend function may not be defined inside a class using a qualified name (it may only be declared)
+
+A friend function was defined using a qualified name, which is not allowed.
+
+The following sample generates C3060:
+
+```
+// C3060.cpp
+class A {
+public:
+   void func();
+};
+
+class C {
+public:
+   friend void A::func() { }   // C3060
+   // Try the following line and the out of class definition:
+   // friend void A::func();
+};
+
+// void A::func(){}
 ```

@@ -13,29 +13,30 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3354
-'function' : the function used to create a delegate cannot have return type 'type'  
-  
- The following types are invalid as return types for a `delegate`:  
-  
--   Pointer to function  
-  
--   Pointer to member  
-  
--   Pointer to member function  
-  
--   Reference to function  
-  
--   Reference to member function  
-  
- The following sample generates C3354:  
-  
-```  
-// C3354_2.cpp  
-// compile with: /clr /c  
-using namespace System;  
-typedef void ( *VoidPfn )();  
-  
-delegate VoidPfn func(); // C3354  
-// try the following line instead  
-// delegate  void func();  
-```  
+
+'function' : the function used to create a delegate cannot have return type 'type'
+
+The following types are invalid as return types for a `delegate`:
+
+- Pointer to function
+
+- Pointer to member
+
+- Pointer to member function
+
+- Reference to function
+
+- Reference to member function
+
+The following sample generates C3354:
+
+```
+// C3354_2.cpp
+// compile with: /clr /c
+using namespace System;
+typedef void ( *VoidPfn )();
+
+delegate VoidPfn func(); // C3354
+// try the following line instead
+// delegate  void func();
+```

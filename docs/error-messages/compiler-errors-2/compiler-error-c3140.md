@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3140
-cannot have multiple 'module' attributes in the same compilation unit  
-  
- The [module](../../windows/module-cpp.md) attribute can only be defined once per project.  
-  
- The following sample generates C3140:  
-  
-```  
-// C3140.cpp  
-// compile with: /c  
-[emitidl];  
-[module(name = "MyLibrary")];  
-[module(name = "MyLibrary2")];   // C3140  
+
+cannot have multiple 'module' attributes in the same compilation unit
+
+The [module](../../windows/module-cpp.md) attribute can only be defined once per project.
+
+The following sample generates C3140:
+
+```
+// C3140.cpp
+// compile with: /c
+[emitidl];
+[module(name = "MyLibrary")];
+[module(name = "MyLibrary2")];   // C3140
 ```

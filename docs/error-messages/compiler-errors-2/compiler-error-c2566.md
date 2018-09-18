@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2566
-overloaded function in conditional expression  
-  
- An overloaded function in a conditional expression cannot be evaluated.
+
+overloaded function in conditional expression
+
+An overloaded function in a conditional expression cannot be evaluated.

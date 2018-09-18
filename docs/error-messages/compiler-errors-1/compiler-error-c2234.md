@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2234
-'name' : arrays of references are illegal  
-  
- Because pointers to references are not allowed, arrays of references are not possible.  
-  
- The following sample generates C2234:  
-  
-```  
-// C2234.cpp  
-int main() {  
-   int i = 0, j = 0, k = 0, l = 0;  
-   int &array[4] = {i,j,k,l};   // C2234  
-   int array2[4] = {i,j,k,l};   // OK  
-}  
+
+'name' : arrays of references are illegal
+
+Because pointers to references are not allowed, arrays of references are not possible.
+
+The following sample generates C2234:
+
+```
+// C2234.cpp
+int main() {
+   int i = 0, j = 0, k = 0, l = 0;
+   int &array[4] = {i,j,k,l};   // C2234
+   int array2[4] = {i,j,k,l};   // OK
+}
 ```

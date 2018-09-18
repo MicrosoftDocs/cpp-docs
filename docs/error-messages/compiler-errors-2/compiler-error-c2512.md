@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2512
 
-> '*identifier*' : no appropriate default constructor available  
+> '*identifier*' : no appropriate default constructor available
 
 A *default constructor*, a constructor that requires no arguments, is not available for the specified class, structure, or union. The compiler supplies a default constructor only if no user-defined constructors are provided.
 

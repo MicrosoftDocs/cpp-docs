@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4088
-'function' : pointer mismatch in actual parameter 'number', formal parameter 'number'  
-  
- The corresponding formal and actual parameters have a different level of indirection. The actual parameter is passed without change. The called function interprets its value as a pointer.
+
+'function' : pointer mismatch in actual parameter 'number', formal parameter 'number'
+
+The corresponding formal and actual parameters have a different level of indirection. The actual parameter is passed without change. The called function interprets its value as a pointer.

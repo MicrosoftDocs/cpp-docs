@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2124
-divide or mod by zero  
-  
- A constant expression has a zero denominator. To resolve the error, do not divide by zero.  
-  
- The following sample generates C2124:  
-  
-```  
-// C2124.cpp  
-int main() {  
-  int i = 1 / 0;   // C2124  do not divide by zero  
-  int i2 = 12 / 2;   // OK  
-}  
+
+divide or mod by zero
+
+A constant expression has a zero denominator. To resolve the error, do not divide by zero.
+
+The following sample generates C2124:
+
+```
+// C2124.cpp
+int main() {
+  int i = 1 / 0;   // C2124  do not divide by zero
+  int i2 = 12 / 2;   // OK
+}
 ```

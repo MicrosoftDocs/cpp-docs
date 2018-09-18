@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0056
-error in line number  
-  
- An invalid line number was specified.  
-  
- This error is identical to CAN0056.
+
+error in line number
+
+An invalid line number was specified.
+
+This error is identical to CAN0056.

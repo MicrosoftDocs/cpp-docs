@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4045
-'array' : array bounds overflow  
-  
- The array has too many initializers. Extra initializers are ignored.  
-  
- Make sure that array elements and initializers match in size and quantity.
+
+'array' : array bounds overflow
+
+The array has too many initializers. Extra initializers are ignored.
+
+Make sure that array elements and initializers match in size and quantity.

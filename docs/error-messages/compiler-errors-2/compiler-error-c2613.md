@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2613
-trailing ',' illegal in base class list  
-  
- A comma appears after the last base in a base class list.
+
+trailing ',' illegal in base class list
+
+A comma appears after the last base in a base class list.

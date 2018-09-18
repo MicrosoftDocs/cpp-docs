@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4119
-different bases 'base1' and 'base2' specified  
-  
- Two based pointers are incompatible because they have different bases. The compiler cannot convert between them.
+
+different bases 'base1' and 'base2' specified
+
+Two based pointers are incompatible because they have different bases. The compiler cannot convert between them.

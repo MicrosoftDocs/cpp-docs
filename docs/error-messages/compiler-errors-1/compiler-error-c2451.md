@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2451
-conditional expression of type 'type' is illegal  
-  
- The conditional expression evaluates to an integer type.  
-  
- The following sample generates C2451:  
-  
-```  
-// C2451.cpp  
-class B {};  
-  
-int main () {  
-   B b1;  
-   int i = 0;  
-   if (b1)   // C2451  
-   // try the following line instead  
-   // if (i)  
-      ;  
-}  
+
+conditional expression of type 'type' is illegal
+
+The conditional expression evaluates to an integer type.
+
+The following sample generates C2451:
+
+```
+// C2451.cpp
+class B {};
+
+int main () {
+   B b1;
+   int i = 0;
+   if (b1)   // C2451
+   // try the following line instead
+   // if (i)
+      ;
+}
 ```

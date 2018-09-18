@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2721
-'specifier' : storage-class specifier illegal between operator keyword and type  
-  
- User-defined type conversions apply to all storage classes, so you cannot specify a storage class in a type conversion.
+
+'specifier' : storage-class specifier illegal between operator keyword and type
+
+User-defined type conversions apply to all storage classes, so you cannot specify a storage class in a type conversion.

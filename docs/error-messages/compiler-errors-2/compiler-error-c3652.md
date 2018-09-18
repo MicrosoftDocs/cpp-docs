@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3652
-'override' : a function that explicitly overrides must be virtual  
-  
- A function that does an explicit override must be virtual. For more information, see [Explicit Overrides](../../windows/explicit-overrides-cpp-component-extensions.md).  
-  
- The following sample generates C3652:  
-  
-```  
-// C3652.cpp  
-// compile with: /clr /c  
-public interface class I {  
-   void f();  
-};  
-  
-public ref struct R : I {  
-   void f() = I::f {}   // C3652  
-   // try the following line instead  
-   // virtual void f() = I::f {}  
-};  
+
+'override' : a function that explicitly overrides must be virtual
+
+A function that does an explicit override must be virtual. For more information, see [Explicit Overrides](../../windows/explicit-overrides-cpp-component-extensions.md).
+
+The following sample generates C3652:
+
+```
+// C3652.cpp
+// compile with: /clr /c
+public interface class I {
+   void f();
+};
+
+public ref struct R : I {
+   void f() = I::f {}   // C3652
+   // try the following line instead
+   // virtual void f() = I::f {}
+};
 ```

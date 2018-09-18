@@ -13,31 +13,32 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1308
-linking assemblies is not supported  
-  
- A .netmodule is allowed as input to the linker, but an assembly is not. This error can be generated when an attempt is made to link an assembly compiled with `/clr:safe`.  
-  
- For more information, see [.netmodule Files as Linker Input](../../build/reference/netmodule-files-as-linker-input.md).  
-  
- The following sample generates C1308:  
-  
-```  
-// C1308.cpp  
-// compile with: /clr:safe /LD  
-public ref class MyClass {  
-public:  
-   int i;  
-};  
-```  
-  
- and then,  
-  
-```  
-// C1308b.cpp  
-// compile with: /clr /link C1308b.obj C1308.dll  
-// C1308 expected  
-#using "C1308.dll"  
-int main() {  
-   MyClass ^ my = gcnew MyClass();  
-}  
+
+linking assemblies is not supported
+
+A .netmodule is allowed as input to the linker, but an assembly is not. This error can be generated when an attempt is made to link an assembly compiled with `/clr:safe`.
+
+For more information, see [.netmodule Files as Linker Input](../../build/reference/netmodule-files-as-linker-input.md).
+
+The following sample generates C1308:
+
+```
+// C1308.cpp
+// compile with: /clr:safe /LD
+public ref class MyClass {
+public:
+   int i;
+};
+```
+
+and then,
+
+```
+// C1308b.cpp
+// compile with: /clr /link C1308b.obj C1308.dll
+// C1308 expected
+#using "C1308.dll"
+int main() {
+   MyClass ^ my = gcnew MyClass();
+}
 ```

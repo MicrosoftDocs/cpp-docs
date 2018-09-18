@@ -26,7 +26,7 @@ The following samples generate C3851, and show how to fix it:
 
 ```cpp
 // C3851.cpp
-int main()  
+int main()
 {
    int test1_\u0041 = 0;   // C3851, \u0041 = 'A' in basic character set
    int test2_A = 0;        // OK

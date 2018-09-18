@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4822
-'member' : local class member function does not have a body  
-  
- A local class member function was declared but not defined in class. To use a local class member function, you must define it in the class. You cannot declare it in class and define it out of class.  
-  
- Any out-of-class definition for a local class member function will be an error.  
-  
- The following sample generates C4822:  
-  
-```  
-// C4822.cpp  
-// compile with: /W1  
-int main() {  
-   struct C {  
-      void func1(int);   // C4822  
-      // try the following line instead  
-      // void func1(int){}  
-  };  
-}  
+
+'member' : local class member function does not have a body
+
+A local class member function was declared but not defined in class. To use a local class member function, you must define it in the class. You cannot declare it in class and define it out of class.
+
+Any out-of-class definition for a local class member function will be an error.
+
+The following sample generates C4822:
+
+```
+// C4822.cpp
+// compile with: /W1
+int main() {
+   struct C {
+      void func1(int);   // C4822
+      // try the following line instead
+      // void func1(int){}
+  };
+}
 ```

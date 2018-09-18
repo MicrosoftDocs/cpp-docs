@@ -13,21 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4515
-'namespace' : namespace uses itself  
-  
- A namespace is used recursively.  
-  
- The following sample generates C4515:  
-  
-```  
-// C4515.cpp  
-// compile with: /W4  
-namespace A  
-{  
-   using namespace A; // C4515  
-}  
-  
-int main()  
-{  
-}  
+
+'namespace' : namespace uses itself
+
+A namespace is used recursively.
+
+The following sample generates C4515:
+
+```
+// C4515.cpp
+// compile with: /W4
+namespace A
+{
+   using namespace A; // C4515
+}
+
+int main()
+{
+}
 ```

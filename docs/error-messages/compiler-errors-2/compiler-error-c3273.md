@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3273
-__finally cannot be used on an exception block in unmanaged code.  
-  
- The following sample generates C3273:  
-  
-```  
-// C3273.cpp  
-// compile with: /GX  
-int main()  
-{     
-   try  
-   {  
-   }  
-   catch (int)  
-   {  
-   }  
-   __finally   // C3273, remove __finally clause  
-   {  
-   }  
-}  
+
+__finally cannot be used on an exception block in unmanaged code.
+
+The following sample generates C3273:
+
+```
+// C3273.cpp
+// compile with: /GX
+int main()
+{
+   try
+   {
+   }
+   catch (int)
+   {
+   }
+   __finally   // C3273, remove __finally clause
+   {
+   }
+}
 ```

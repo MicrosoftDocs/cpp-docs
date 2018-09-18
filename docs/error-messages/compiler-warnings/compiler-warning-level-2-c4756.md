@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 2) C4756
-overflow in constant arithmetic  
-  
- The compiler generated an exception while doing constant arithmetic during compilation.  
-  
- The following sample generates C4756:  
-  
-```  
-// C4756.cpp  
-// compile with: /W2 /Od  
-int main()  
-{  
-   float f = 1e100+1e100;   // C4756  
-}  
+
+overflow in constant arithmetic
+
+The compiler generated an exception while doing constant arithmetic during compilation.
+
+The following sample generates C4756:
+
+```
+// C4756.cpp
+// compile with: /W2 /Od
+int main()
+{
+   float f = 1e100+1e100;   // C4756
+}
 ```

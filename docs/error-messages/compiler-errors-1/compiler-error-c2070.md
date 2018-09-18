@@ -13,28 +13,29 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2070
-'type': illegal sizeof operand  
-  
- The [sizeof](../../cpp/sizeof-operator.md) operator requires an expression or type name.  
-  
- The following sample generates C2070:  
-  
-```  
-// C2070.cpp  
-void func() {}  
-int main() {  
-   int a;  
-   a = sizeof(func);   // C2070  
-}  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2070b.cpp  
-void func() {}  
-int main() {  
-   int a;  
-   a = sizeof(a);  
-}  
+
+'type': illegal sizeof operand
+
+The [sizeof](../../cpp/sizeof-operator.md) operator requires an expression or type name.
+
+The following sample generates C2070:
+
+```
+// C2070.cpp
+void func() {}
+int main() {
+   int a;
+   a = sizeof(func);   // C2070
+}
+```
+
+Possible resolution:
+
+```
+// C2070b.cpp
+void func() {}
+int main() {
+   int a;
+   a = sizeof(a);
+}
 ```

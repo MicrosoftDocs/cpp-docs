@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2906
-'specialization' : explicit specialization requires 'template <>'  
-  
- You must use the new syntax for explicit specialization of templates.  
-  
- The following sample generates C2906:  
-  
-```  
-// C2906.cpp  
-// compile with: /c  
-template<class T> class X{};   // primary template  
-class X<int> { }   // C2906  
-template<> class X<int> { };   // new syntax  
+
+'specialization' : explicit specialization requires 'template <>'
+
+You must use the new syntax for explicit specialization of templates.
+
+The following sample generates C2906:
+
+```
+// C2906.cpp
+// compile with: /c
+template<class T> class X{};   // primary template
+class X<int> { }   // C2906
+template<> class X<int> { };   // new syntax
 ```

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2407
-illegal 'float' register in 'context'  
-  
- An `NDP` register was specified in an invalid context.
+
+illegal 'float' register in 'context'
+
+An `NDP` register was specified in an invalid context.

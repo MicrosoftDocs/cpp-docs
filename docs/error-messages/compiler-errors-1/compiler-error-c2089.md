@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2089
-'identifier' : 'class-key' too large  
-  
- The specified structure or union exceeds the 4GB limit.
+
+'identifier' : 'class-key' too large
+
+The specified structure or union exceeds the 4GB limit.

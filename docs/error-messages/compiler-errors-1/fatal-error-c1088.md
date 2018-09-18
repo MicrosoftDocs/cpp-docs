@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1088
-Cannot flush filetype file: 'file': message  
-  
- The compiler cannot complete an I/O operation.
+
+Cannot flush filetype file: 'file': message
+
+The compiler cannot complete an I/O operation.

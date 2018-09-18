@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2166
-l-value specifies const object  
-  
- Code attempts to modify an item declared `const`.  
-  
- The following sample generates C2166:  
-  
-```  
-// C2166.cpp  
-int f();  
-int main() {  
-   ( (const int&) 1 ) = 5;   // C2166  
-}  
+
+l-value specifies const object
+
+Code attempts to modify an item declared `const`.
+
+The following sample generates C2166:
+
+```
+// C2166.cpp
+int f();
+int main() {
+   ( (const int&) 1 ) = 5;   // C2166
+}
 ```

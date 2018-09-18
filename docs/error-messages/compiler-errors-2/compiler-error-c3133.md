@@ -13,19 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3133
-Attributes cannot be applied to C++ varargs  
-  
- An attribute was applied incorrectly. Attributes can not be applied to an ellipsis representing variable arguments.  
-  
- For more information, see [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md).  
-  
-## Example  
- The following sample generates C3133.  
-  
-```  
-// C3133.cpp  
-// compile with: /clr /c  
-ref struct MyAttr: System::Attribute {};   
-void Func([MyAttr]...);   // C3133  
-void Func2([MyAttr] int i);   // OK  
+
+Attributes cannot be applied to C++ varargs
+
+An attribute was applied incorrectly. Attributes can not be applied to an ellipsis representing variable arguments.
+
+For more information, see [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md).
+
+## Example
+
+The following sample generates C3133.
+
+```
+// C3133.cpp
+// compile with: /clr /c
+ref struct MyAttr: System::Attribute {};
+void Func([MyAttr]...);   // C3133
+void Func2([MyAttr] int i);   // OK
 ```

@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2272
-'function' : modifiers not allowed on static member functions  
-  
- A `static` member function is declared with a memory-model specifier, such as [const](../../cpp/const-cpp.md) or [volatile](../../cpp/volatile-cpp.md), and such modifiers are not allowed on `static` member functions.  
-  
- The following sample generates C2272:  
-  
-```  
-// C2272.cpp  
-// compile with: /c  
-class CMyClass {  
-public:  
-   static void func1() const volatile;   // C2272  func1 is static  
-   void func2() const volatile;   // OK  
-};  
+
+'function' : modifiers not allowed on static member functions
+
+A `static` member function is declared with a memory-model specifier, such as [const](../../cpp/const-cpp.md) or [volatile](../../cpp/volatile-cpp.md), and such modifiers are not allowed on `static` member functions.
+
+The following sample generates C2272:
+
+```
+// C2272.cpp
+// compile with: /c
+class CMyClass {
+public:
+   static void func1() const volatile;   // C2272  func1 is static
+   void func2() const volatile;   // OK
+};
 ```

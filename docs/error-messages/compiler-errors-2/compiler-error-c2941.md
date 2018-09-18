@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2941
-'class' : type-class-id redefined as a local 'item'  
-  
- You cannot use a generic or template class as an item.
+
+'class' : type-class-id redefined as a local 'item'
+
+You cannot use a generic or template class as an item.

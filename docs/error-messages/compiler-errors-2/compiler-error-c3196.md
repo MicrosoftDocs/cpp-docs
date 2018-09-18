@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3196
-'keyword' : used more than once  
-  
- A keyword was used more than once.  
-  
- The following sample generates C3196:  
-  
-```  
-// C3196.cpp  
-// compile with: /clr  
-ref struct R abstract abstract {};   // C3196  
-ref struct S abstract {};   // OK  
+
+'keyword' : used more than once
+
+A keyword was used more than once.
+
+The following sample generates C3196:
+
+```
+// C3196.cpp
+// compile with: /clr
+ref struct R abstract abstract {};   // C3196
+ref struct S abstract {};   // OK
 ```

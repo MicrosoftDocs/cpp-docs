@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3007
-'arg' : clause on OpenMP 'directive' directive does not take an argument  
-  
- An OpenMP directive had an argument, but the directive does not take an argument.  
-  
- The following sample generates C3007:  
-  
-```  
-// C3007.c  
-// compile with: /openmp  
-int main()  
-{  
-   #pragma omp parallel for ordered(2)   // C3007  
-}  
+
+'arg' : clause on OpenMP 'directive' directive does not take an argument
+
+An OpenMP directive had an argument, but the directive does not take an argument.
+
+The following sample generates C3007:
+
+```
+// C3007.c
+// compile with: /openmp
+int main()
+{
+   #pragma omp parallel for ordered(2)   // C3007
+}
 ```

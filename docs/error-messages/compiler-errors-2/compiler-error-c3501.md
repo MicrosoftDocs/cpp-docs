@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3501
-there is no typelib registered for ProgID 'progid'  
-  
- The class ID for a given progid does not have an associated type library. Therefore, you cannot pass this progid to the `#import` statement.
+
+there is no typelib registered for ProgID 'progid'
+
+The class ID for a given progid does not have an associated type library. Therefore, you cannot pass this progid to the `#import` statement.

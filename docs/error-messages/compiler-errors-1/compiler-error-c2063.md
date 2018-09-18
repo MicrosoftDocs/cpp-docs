@@ -13,27 +13,28 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2063
-'identifier' : not a function  
-  
- The identifier is used as a function but not declared as a function.  
-  
- The following sample generates C2063:  
-  
-```  
-// C2063.c  
-int main() {  
-   int i, j;  
-   j = i();    // C2063, i is not a function  
-}  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2063b.c  
-int i() { return 0;}  
-int main() {  
-   int j;  
-   j = i();  
-}  
+
+'identifier' : not a function
+
+The identifier is used as a function but not declared as a function.
+
+The following sample generates C2063:
+
+```
+// C2063.c
+int main() {
+   int i, j;
+   j = i();    // C2063, i is not a function
+}
+```
+
+Possible resolution:
+
+```
+// C2063b.c
+int i() { return 0;}
+int main() {
+   int j;
+   j = i();
+}
 ```

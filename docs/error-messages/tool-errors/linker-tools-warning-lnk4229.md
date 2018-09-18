@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4229
-invalid directive /directive found; ignored  
-  
- A directive passed via the [comment](../../preprocessor/comment-c-cpp.md) pragma was not valid. The linker ignores `/directive`.
+
+invalid directive /directive found; ignored
+
+A directive passed via the [comment](../../preprocessor/comment-c-cpp.md) pragma was not valid. The linker ignores `/directive`.

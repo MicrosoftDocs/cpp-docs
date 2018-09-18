@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2485
-'identifier' : unrecognized extended attribute  
-  
- The declaration attribute is not valid.
+
+'identifier' : unrecognized extended attribute
+
+The declaration attribute is not valid.

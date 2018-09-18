@@ -13,27 +13,28 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2390
-'identifier' : incorrect storage class 'specifier'  
-  
- The storage class is not valid for the global-scope identifier. The default storage class is used in place of the invalid class.  
-  
- Possible resolutions:  
-  
--   If the identifier is a function, declare it with `extern` storage.  
-  
--   If the identifier is a formal parameter or local variable, declare it with auto storage.  
-  
--   If the identifier is a global variable, declare it with no storage class (auto storage).  
-  
-## Example  
-  
--   The following sample generates C2390:  
-  
-```  
-// C2390.cpp  
-register int i;   // C2390  
-  
-int main() {  
-   register int j;   // OK  
-}  
+
+'identifier' : incorrect storage class 'specifier'
+
+The storage class is not valid for the global-scope identifier. The default storage class is used in place of the invalid class.
+
+Possible resolutions:
+
+- If the identifier is a function, declare it with `extern` storage.
+
+- If the identifier is a formal parameter or local variable, declare it with auto storage.
+
+- If the identifier is a global variable, declare it with no storage class (auto storage).
+
+## Example
+
+- The following sample generates C2390:
+
+```
+// C2390.cpp
+register int i;   // C2390
+
+int main() {
+   register int j;   // OK
+}
 ```

@@ -13,14 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4109
-unexpected identifier 'identifier'  
-  
- The pragma containing the unexpected identifier is ignored.  
-  
-## Example  
-  
-```  
-// C4109.cpp  
-// compile with: /W1 /LD  
-#pragma init_seg( abc ) // C4109  
+
+unexpected identifier 'identifier'
+
+The pragma containing the unexpected identifier is ignored.
+
+## Example
+
+```
+// C4109.cpp
+// compile with: /W1 /LD
+#pragma init_seg( abc ) // C4109
 ```

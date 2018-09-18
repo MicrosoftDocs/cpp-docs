@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3303
-'attribute': attribute can only be used on 'usage'  
-  
- An attempt was made to use an attribute where it is not valid.
+
+'attribute': attribute can only be used on 'usage'
+
+An attempt was made to use an attribute where it is not valid.

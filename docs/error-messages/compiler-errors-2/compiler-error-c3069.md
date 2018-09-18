@@ -13,26 +13,28 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3069
-'operator': not allowed for enumeration type  
-  
- An operator is not supported for CLR enumerations.  For more information, see [How to: Define and consume enums in C++/CLI](../../dotnet/how-to-define-and-consume-enums-in-cpp-cli.md).  
-  
-## Example  
- The following sample generates C3069:  
-  
-```  
-// C3069.cpp  
-// compile with: /clr  
-enum struct E { e1 };  
-enum F { f1 };  
-  
-int main() {  
-   E e = E::e1;  
-   bool tf;  
-   tf = !e;   // C3069  
-  
-   // supported for native enums  
-   F f = f1;  
-   tf = !f;  
-}  
+
+'operator': not allowed for enumeration type
+
+An operator is not supported for CLR enumerations.  For more information, see [How to: Define and consume enums in C++/CLI](../../dotnet/how-to-define-and-consume-enums-in-cpp-cli.md).
+
+## Example
+
+The following sample generates C3069:
+
+```
+// C3069.cpp
+// compile with: /clr
+enum struct E { e1 };
+enum F { f1 };
+
+int main() {
+   E e = E::e1;
+   bool tf;
+   tf = !e;   // C3069
+
+   // supported for native enums
+   F f = f1;
+   tf = !f;
+}
 ```

@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1205
-Generics are not supported by the version of the runtime installed  
-  
- The version of the common language runtime that the compiler is using is not a version of the runtime supported by the current compiler.  For example, the generics feature requires a runtime that is matched to the compiler.  
-  
- Your path specification may need to be modified.
+
+Generics are not supported by the version of the runtime installed
+
+The version of the common language runtime that the compiler is using is not a version of the runtime supported by the current compiler.  For example, the generics feature requires a runtime that is matched to the compiler.
+
+Your path specification may need to be modified.

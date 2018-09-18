@@ -13,15 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3838
-cannot explicitly inherit from 'type'  
-  
- The specified `type` cannot act as a base class in any class.  
-  
+
+cannot explicitly inherit from 'type'
+
+The specified `type` cannot act as a base class in any class.
+
 ## Example
- The following sample generates C3838:  
-  
-```  
-// C3838a.cpp  
-// compile with: /clr /c  
-public ref class B : public System::Enum {};   // C3838  
-```  
+
+The following sample generates C3838:
+
+```
+// C3838a.cpp
+// compile with: /clr /c
+public ref class B : public System::Enum {};   // C3838
+```

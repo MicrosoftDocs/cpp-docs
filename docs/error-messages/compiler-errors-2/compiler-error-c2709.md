@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2709
-'identifier' : formal parameter's length in bytes differs from previous declaration  
-  
- The signature in a call to the specified function differs from the prototype.
+
+'identifier' : formal parameter's length in bytes differs from previous declaration
+
+The signature in a call to the specified function differs from the prototype.

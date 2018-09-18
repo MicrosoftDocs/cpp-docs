@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3135
-'property' : a property cannot have a 'const' or 'volatile' type  
-  
- The [const](../../cpp/const-cpp.md) and [volatile](../../cpp/volatile-cpp.md) keywords are not permitted on properties.
+
+'property' : a property cannot have a 'const' or 'volatile' type
+
+The [const](../../cpp/const-cpp.md) and [volatile](../../cpp/volatile-cpp.md) keywords are not permitted on properties.

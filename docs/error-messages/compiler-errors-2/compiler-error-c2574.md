@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2574
-'destructor' : cannot be declared static  
-  
- Neither destructors nor constructors can be declared `static`.  
-  
- The following sample generates C2574:  
-  
-```  
-// C2574.cpp  
-// compile with: /c  
-class A {  
-   virtual static ~A();   // C2574  
-   //  try the following line instead  
-   // virtual ~A();  
-};  
+
+'destructor' : cannot be declared static
+
+Neither destructors nor constructors can be declared `static`.
+
+The following sample generates C2574:
+
+```
+// C2574.cpp
+// compile with: /c
+class A {
+   virtual static ~A();   // C2574
+   //  try the following line instead
+   // virtual ~A();
+};
 ```

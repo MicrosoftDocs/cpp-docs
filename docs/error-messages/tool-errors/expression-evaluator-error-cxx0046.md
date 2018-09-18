@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0046
-argument list required for member function  
-  
- An expression called a member function but did not specify any actual parameters.  
-  
- This error is identical to CAN0046.
+
+argument list required for member function
+
+An expression called a member function but did not specify any actual parameters.
+
+This error is identical to CAN0046.

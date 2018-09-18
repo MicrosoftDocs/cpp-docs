@@ -13,37 +13,41 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3484
-expected '->' before the return type  
-  
- You must provide `->` before the return type of a lambda expression.  
-  
-### To correct this error  
-  
--   Provide `->` before the return type.  
-  
-## Example  
- The following example generates C3484:  
-  
-```  
-// C3484a.cpp  
-  
-int main()  
-{  
-   return []() . int { return 42; }(); // C3484  
-}  
-```  
-  
-## Example  
- The following example resolves C3484 by providing `->` before the return type of the lambda expression:  
-  
-```  
-// C3484b.cpp  
-  
-int main()  
-{  
-   return []() -> int { return 42; }();  
-}  
-```  
-  
-## See Also  
- [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)
+
+expected '->' before the return type
+
+You must provide `->` before the return type of a lambda expression.
+
+### To correct this error
+
+- Provide `->` before the return type.
+
+## Example
+
+The following example generates C3484:
+
+```
+// C3484a.cpp
+
+int main()
+{
+   return []() . int { return 42; }(); // C3484
+}
+```
+
+## Example
+
+The following example resolves C3484 by providing `->` before the return type of the lambda expression:
+
+```
+// C3484b.cpp
+
+int main()
+{
+   return []() -> int { return 42; }();
+}
+```
+
+## See Also
+
+[Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)

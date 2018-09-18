@@ -13,17 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3381
-'assembly' : assembly access specifiers are only available in code compiled with a /clr option  
-  
- Native types can be visible outside the assembly, but you can only specify assembly access for native types in a **/clr** compilation.  
-  
- For more information, see [Type visibility](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) and [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md).  
-  
-## Example  
- The following sample generates C3381.  
-  
-```  
-// C3381.cpp  
-// compile with: /c  
-public class A {};   // C3381  
+
+'assembly' : assembly access specifiers are only available in code compiled with a /clr option
+
+Native types can be visible outside the assembly, but you can only specify assembly access for native types in a **/clr** compilation.
+
+For more information, see [Type visibility](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) and [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md).
+
+## Example
+
+The following sample generates C3381.
+
+```
+// C3381.cpp
+// compile with: /c
+public class A {};   // C3381
 ```

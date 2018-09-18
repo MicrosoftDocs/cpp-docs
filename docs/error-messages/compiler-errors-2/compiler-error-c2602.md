@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2602
-'class::Identifier' is not a member of a base class of 'class'  
-  
- `Identifier` cannot be accessed because it is not a member inherited from any base class.  
-  
- The following sample generates C2602:  
-  
-```  
-// C2602.cpp  
-// compile with: /c  
-struct X {  
-   int x;  
-};  
-struct A {  
-   int a;  
-};  
-struct B : public A {  
-   X::x;   // C2602 B is not derived from X  
-   A::a;   // OK  
-};  
+
+'class::Identifier' is not a member of a base class of 'class'
+
+`Identifier` cannot be accessed because it is not a member inherited from any base class.
+
+The following sample generates C2602:
+
+```
+// C2602.cpp
+// compile with: /c
+struct X {
+   int x;
+};
+struct A {
+   int a;
+};
+struct B : public A {
+   X::x;   // C2602 B is not derived from X
+   A::a;   // OK
+};
 ```

@@ -13,31 +13,32 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3110
-'function_name' : you cannot overload a COM interface method  
-  
- An interface that is prefaced by an interface attribute, such as:  
-  
--   [custom](../../windows/custom-cpp.md)  
-  
--   [dispinterface](../../windows/dispinterface.md)  
-  
--   [dual](../../windows/dual.md)  
-  
--   [object](../../windows/object-cpp.md)  
-  
- cannot be overloaded. For example:  
-  
-```  
-// C3110.cpp  
-#include <unknwn.h>  
-[ object, uuid= "4F98A180-EF37-11D1-978D-0000F805D73B" ]  
-__interface ITestInterface  
-{  
-   HRESULT mf1(void);  
-   HRESULT mf1(BSTR); // C3110  
-};  
-  
-int main()  
-{  
-}  
+
+'function_name' : you cannot overload a COM interface method
+
+An interface that is prefaced by an interface attribute, such as:
+
+- [custom](../../windows/custom-cpp.md)
+
+- [dispinterface](../../windows/dispinterface.md)
+
+- [dual](../../windows/dual.md)
+
+- [object](../../windows/object-cpp.md)
+
+cannot be overloaded. For example:
+
+```
+// C3110.cpp
+#include <unknwn.h>
+[ object, uuid= "4F98A180-EF37-11D1-978D-0000F805D73B" ]
+__interface ITestInterface
+{
+   HRESULT mf1(void);
+   HRESULT mf1(BSTR); // C3110
+};
+
+int main()
+{
+}
 ```

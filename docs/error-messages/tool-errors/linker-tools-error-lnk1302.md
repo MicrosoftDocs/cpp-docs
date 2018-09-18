@@ -13,14 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1302
-only support linking safe .netmodules; unable to link file .netmodule  
-  
- A .netmodule (compiled with **/LN**) was passed to the linker in a user attempt to invoke MSIL linking.  A C++ module is valid for MSIL linking if it is compiled with **/clr:safe**.  
-  
- To correct this error, compile with **/clr:safe** to enable MSIL linking, or pass the **/clr** or **/clr:pure** .obj file to the linker instead of the module.  
-  
- For more information, see  
-  
--   [/LN (Create MSIL Module)](../../build/reference/ln-create-msil-module.md)  
-  
--   [.netmodule Files as Linker Input](../../build/reference/netmodule-files-as-linker-input.md)
+
+only support linking safe .netmodules; unable to link file .netmodule
+
+A .netmodule (compiled with **/LN**) was passed to the linker in a user attempt to invoke MSIL linking.  A C++ module is valid for MSIL linking if it is compiled with **/clr:safe**.
+
+To correct this error, compile with **/clr:safe** to enable MSIL linking, or pass the **/clr** or **/clr:pure** .obj file to the linker instead of the module.
+
+For more information, see
+
+- [/LN (Create MSIL Module)](../../build/reference/ln-create-msil-module.md)
+
+- [.netmodule Files as Linker Input](../../build/reference/netmodule-files-as-linker-input.md)

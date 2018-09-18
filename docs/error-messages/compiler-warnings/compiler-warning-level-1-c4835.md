@@ -13,40 +13,43 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4835
-'variable' : the initializer for exported data will not be run until managed code is first executed in the host assembly  
-  
- When accessing data between managed components, it is recommended that you not use native C++ import and export mechanisms. Instead, declare your data members inside a managed type and reference the metadata with `#using` in the client. For more information, see [#using Directive](../../preprocessor/hash-using-directive-cpp.md).  
-  
-## Example  
- The following sample generates C4835.  
-  
-```  
-// C4835.cpp  
-// compile with: /W1 /clr /LD  
-int f() { return 1; }  
-int n = 9;  
-  
-__declspec(dllexport) int m = f();   // C4835  
-__declspec(dllexport) int *p = &n;   // C4835  
-```  
-  
-## Example  
- The following sample consumes the component built in the previous sample, showing that the value of the variables is not as expected.  
-  
-```  
-// C4835_b.cpp  
-// compile with: /clr C4835.lib  
-#include <stdio.h>  
-__declspec(dllimport) int m;  
-__declspec(dllimport) int *p;  
-  
-int main() {  
-   printf("%d\n", m);  
-   printf("%d\n", p);  
-}  
-```  
-  
-```Output  
-0  
-268456008  
+
+'variable' : the initializer for exported data will not be run until managed code is first executed in the host assembly
+
+When accessing data between managed components, it is recommended that you not use native C++ import and export mechanisms. Instead, declare your data members inside a managed type and reference the metadata with `#using` in the client. For more information, see [#using Directive](../../preprocessor/hash-using-directive-cpp.md).
+
+## Example
+
+The following sample generates C4835.
+
+```
+// C4835.cpp
+// compile with: /W1 /clr /LD
+int f() { return 1; }
+int n = 9;
+
+__declspec(dllexport) int m = f();   // C4835
+__declspec(dllexport) int *p = &n;   // C4835
+```
+
+## Example
+
+The following sample consumes the component built in the previous sample, showing that the value of the variables is not as expected.
+
+```
+// C4835_b.cpp
+// compile with: /clr C4835.lib
+#include <stdio.h>
+__declspec(dllimport) int m;
+__declspec(dllimport) int *p;
+
+int main() {
+   printf("%d\n", m);
+   printf("%d\n", p);
+}
+```
+
+```Output
+0
+268456008
 ```

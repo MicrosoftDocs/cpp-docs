@@ -13,28 +13,31 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2370
-'identifier' : redefinition; different storage class  
-  
- The identifier is already declared with a different storage class.  
-  
-## Example  
- The following sample generates C2370:  
-  
-```  
-// C2370.cpp  
-// compile with: /Za /c  
-extern int i;  
-static int i;   // C2370  
-int i;   // OK  
-```  
-  
-## Example  
- The following sample generates C2370:  
-  
-```  
-// C2370b.cpp  
-#define Thread __declspec( thread )  
-extern int tls_i;  
-int Thread tls_i;   // C2370 declaration and the definition differ  
-int tls_i;   // OK  
+
+'identifier' : redefinition; different storage class
+
+The identifier is already declared with a different storage class.
+
+## Example
+
+The following sample generates C2370:
+
+```
+// C2370.cpp
+// compile with: /Za /c
+extern int i;
+static int i;   // C2370
+int i;   // OK
+```
+
+## Example
+
+The following sample generates C2370:
+
+```
+// C2370b.cpp
+#define Thread __declspec( thread )
+extern int tls_i;
+int Thread tls_i;   // C2370 declaration and the definition differ
+int tls_i;   // OK
 ```

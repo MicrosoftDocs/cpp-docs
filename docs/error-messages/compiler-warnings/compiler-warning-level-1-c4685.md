@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4685
-expecting '> >' found '>>' when parsing template parameters  
-  
- A template definition was not terminated correctly.
+
+expecting '> >' found '>>' when parsing template parameters
+
+A template definition was not terminated correctly.

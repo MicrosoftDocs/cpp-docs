@@ -13,20 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3417
-'member' : value types cannot contain user-defined special member functions  
-  
- Value types cannot contain functions such as a default instance constructor, destructor, or copy constructor.  
-  
- The following sample generates C3517:  
-  
-```  
-// C3417.cpp  
-// compile with: /clr /c  
-value class VC {  
-   VC(){}   // C3417  
-  
-   // OK  
-   static VC(){}  
-   VC(int i){}  
-};  
+
+'member' : value types cannot contain user-defined special member functions
+
+Value types cannot contain functions such as a default instance constructor, destructor, or copy constructor.
+
+The following sample generates C3517:
+
+```
+// C3417.cpp
+// compile with: /clr /c
+value class VC {
+   VC(){}   // C3417
+
+   // OK
+   static VC(){}
+   VC(int i){}
+};
 ```

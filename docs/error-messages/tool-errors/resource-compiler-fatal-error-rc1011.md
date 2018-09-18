@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Fatal Error RC1011
-compiler limit : 'identifier' : macro definition too big  
-  
- Try to split the definition into shorter definitions.
+
+compiler limit : 'identifier' : macro definition too big
+
+Try to split the definition into shorter definitions.

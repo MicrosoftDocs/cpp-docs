@@ -13,29 +13,30 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2184
-'type' : illegal type for __except expression, must be an integral  
-  
- A type was used in an [__except](../../c-language/try-except-statement-c.md) statement, but the type is not allowed.  
-  
- The following sample generates C2184:  
-  
-```  
-// C2184.cpp  
-void f() {  
-   int * p;  
-   __try{}  
-   __except(p){};   // C2184  
-}  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2184b.cpp  
-// compile with: /c  
-void f() {  
-   int i = 0;  
-   __try{}  
-   __except(i){};  
-}  
+
+'type' : illegal type for __except expression, must be an integral
+
+A type was used in an [__except](../../c-language/try-except-statement-c.md) statement, but the type is not allowed.
+
+The following sample generates C2184:
+
+```
+// C2184.cpp
+void f() {
+   int * p;
+   __try{}
+   __except(p){};   // C2184
+}
+```
+
+Possible resolution:
+
+```
+// C2184b.cpp
+// compile with: /c
+void f() {
+   int i = 0;
+   __try{}
+   __except(i){};
+}
 ```

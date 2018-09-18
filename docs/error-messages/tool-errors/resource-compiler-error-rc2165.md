@@ -13,10 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2165
-string not found in DLGINCLUDE statement  
-  
- The statement did not specify a valid include file.  
-  
- The **DLGINCLUDE** statement must use the following syntax:  
-  
- **DLGINCLUDE "*filename*.h"**
+
+string not found in DLGINCLUDE statement
+
+The statement did not specify a valid include file.
+
+The **DLGINCLUDE** statement must use the following syntax:
+
+**DLGINCLUDE "*filename*.h"**

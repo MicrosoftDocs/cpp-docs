@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2570
-'identifier' : union cannot have base classes  
-  
- A union derives from a class, structure, or union. This is not allowed. Declare the derived type as a class or structure instead.  
-  
- The following sample generates C2570:  
-  
-```  
-// C2570.cpp  
-// compile with: /c  
-class base {};  
-union hasPubBase : public base {};   // C2570  
-union hasNoBase {};   // OK  
+
+'identifier' : union cannot have base classes
+
+A union derives from a class, structure, or union. This is not allowed. Declare the derived type as a class or structure instead.
+
+The following sample generates C2570:
+
+```
+// C2570.cpp
+// compile with: /c
+class base {};
+union hasPubBase : public base {};   // C2570
+union hasNoBase {};   // OK
 ```

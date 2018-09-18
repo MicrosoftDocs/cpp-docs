@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2645
-no qualified name for pointer to member (found ':: *')  
-  
- The declaration of a pointer to a member does not specify a class.  
-  
- The following sample generates C2645:  
-  
-```  
-// C2645.cpp  
-class A {};  
-int main() {  
-   int B::* bp;   // C2645 B not defined  
-   int A::* ap;   // OK  
-}  
+
+no qualified name for pointer to member (found ':: *')
+
+The declaration of a pointer to a member does not specify a class.
+
+The following sample generates C2645:
+
+```
+// C2645.cpp
+class A {};
+int main() {
+   int B::* bp;   // C2645 B not defined
+   int A::* ap;   // OK
+}
 ```
