@@ -1,7 +1,7 @@
 ---
 title: "STL/CLR Library Reference | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: 09/18/2018"
 ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # STL/CLR Library Reference
-The STL/CLR Library is a packaging of a subset of the C++ Standard Library for use with C++ and the .NET Framework common language runtime (CLR). With STL/CLR, you can use all the containers, iterators, and algorithms of the standard library in a managed environment.  
+The STL/CLR Library provides an STL-like interface for use with C++ and the .NET Framework common language runtime (CLR). This library is maintained for legacy support but is not kept up-to-date with the C++ standard. We strongly recommend using the native [C++ Standard Library](../standard-library/cpp-standard-library-reference.md) containers instead of STL/CLR.   
   
  To use STL/CLR:  
   
@@ -20,7 +20,7 @@ The STL/CLR Library is a packaging of a subset of the C++ Standard Library for u
   
 -   Qualify library names with `cliext::` instead of `std::`.  
   
- STL/CLR exposes the generic types and interfaces that it uses in cross-assembly scenarios in the .NET assembly **Microsoft.VisualC.STLCLR.dll**. This DLL is included in .NET Framework 3.5. If you redistribute an application that uses STL/CLR, you will need to include the .NET Framework 3.5, as well as any other Visual C++ libraries that your project uses, in the dependencies section of your setup project.  
+ STL/CLR exposes the generic types and interfaces that it uses in cross-assembly scenarios in the .NET assembly **Microsoft.VisualC.STLCLR.dll**. This DLL is included in the .NET Framework. If you redistribute an application that uses STL/CLR, you will need to include the .NET Framework, as well as any other C++ libraries that your project uses, in the dependencies section of your setup project.  
   
 ## In This Section  
  [cliext Namespace](../dotnet/cliext-namespace.md)  

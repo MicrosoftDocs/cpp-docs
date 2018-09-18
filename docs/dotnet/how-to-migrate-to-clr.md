@@ -1,7 +1,7 @@
 ---
 title: "How to: Migrate to -clr | Microsoft Docs"
 ms.custom: "get-started-article"
-ms.date: "11/04/2016"
+ms.date: "09/18/2018"
 ms.technology: ["cpp-cli"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Migrate to /clr
-This topic discusses issues that arise when compiling native code with **/clr** (see [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) for more information). **/clr** allows Visual C++ modules to invoke and be invoked from .NET assemblies while retaining compatibility with unmanaged modules. See [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md) and [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md) for more information on the advantages of compiling with **/clr**.  
+This topic discusses issues that arise when compiling native code with **/clr** (see [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) for more information). **/clr** allows native C++ code to invoke and be invoked from .NET assemblies in addition to other native C++ code. See [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md) and [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md) for more information on the advantages of compiling with **/clr**.  
   
 ## Known Issues Compiling Library Projects with /clr  
  Visual Studio contains some known issues when compiling library projects with **/clr**:  
@@ -28,18 +28,7 @@ This topic discusses issues that arise when compiling native code with **/clr** 
     ```  
   
 ## Compile with Visual C++  
- Before using **/clr** on any module in your project, first compile and link your native project with Visual Studio 2010.  
-  
- The following steps, followed in order, provide the easiest path to a **/clr** compilation. It is important to compile and run your project after each of these steps.  
-  
-### Versions Prior to Visual C++ 2003  
- If you are upgrading to Visual Studio 2010 from a version prior to Visual C++ 2003, you may see compiler errors related to the enhanced C++ standard conformance in Visual C++ 2003  
-  
-### Upgrading from Visual C++ 2003  
- Projects previous built with Visual C++ 2003 should also first be compiled without **/clr** as Visual Studio now has increased ANSI/ISO compliance and some breaking changes. The change that is likely to require the most attention is [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md). Code that uses the CRT is very likely to produce deprecation warnings. These warnings can be suppressed, but migrating to the new [Security-Enhanced Versions of CRT Functions](../c-runtime-library/security-enhanced-versions-of-crt-functions.md) is preferred, as they provide better security and may reveal security issues in your code.  
-  
-### Upgrading from Managed Extensions for C++  
- Starting in Visual Studio 2005, code written with Managed Extensions for C++ won't compile under **/clr**.  
+ Before using **/clr** on any module in your project, first compile and link your native project with Visual Studio.  
   
 ## Convert C Code to C++  
  Although Visual Studio will compile C files, it is necessary to convert them to C++ for a **/clr** compilation. The actual filename doesn't have to be changed; you can use **/Tp** (see [/Tc, /Tp, /TC, /TP (Specify Source File Type)](../build/reference/tc-tp-tc-tp-specify-source-file-type.md).) Note that although C++ source code files are required for **/clr**, it is not necessary to re-factor your code to use object-oriented paradigms.  
@@ -71,7 +60,7 @@ COMObj2->Method(args);  // C++ equivalent
 ```  
   
 ## Reconfigure Project Settings  
- After your project compiles and runs in Visual Studio 2010 you should create new project configurations for **/clr** rather than modifying the default configurations. **/clr** is incompatible with some compiler options and creating separate configurations lets you build your project as native or managed. When **/clr** is selected in the property pages dialog box, project settings not compatible with **/clr** are disabled (and disabled options are not automatically restored if **/clr** is subsequently unselected).  
+ After your project compiles and runs you should create new project configurations for **/clr** rather than modifying the default configurations. **/clr** is incompatible with some compiler options and creating separate configurations lets you build your project as native or managed. When **/clr** is selected in the property pages dialog box, project settings not compatible with **/clr** are disabled (and disabled options are not automatically restored if **/clr** is subsequently unselected).  
   
 ### Create New Project Configurations  
  You can use **Copy Settings From** option in the **New Project Configuration Dialog Box** (**Build** > **Configuration Manager** > **Active Solution Configuration** > **New**) to create a project configuration based on your existing project settings. Do this once for the Debug configuration and once for Release configuration. Subsequent changes can then be applied to the **/clr** -specific configurations only, leaving the original project configurations intact.  
@@ -82,9 +71,6 @@ COMObj2->Method(args);  // C++ equivalent
   
 ### Change Project Settings  
  **/clr** can be selected in the development environment by following the instructions in [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md). As mentioned previously, this step will automatically disable conflicting project settings.  
-  
-> [!NOTE]
->  When upgrading a managed library or web service project from Visual C++ 2003, the **/Zl** compiler option will added to the **Command Line** property page. This will cause LNK2001. Remove **/Zl** from the **Command Line** property page to resolve. See [/Zl (Omit Default Library Name)](../build/reference/zl-omit-default-library-name.md) and [Working with Project Properties](../ide/working-with-project-properties.md) for more information. Or, add msvcrt.lib and msvcmrt.lib to the linker's **Additional Dependencies** property.  
   
  For projects built with makefiles, incompatible compiler options must be disabled manually once **/clr** is added. See /[/clr Restrictions](../build/reference/clr-restrictions.md) for information on compiler options that are not compatible with **/clr**.  
   
@@ -102,7 +88,7 @@ COMObj2->Method(args);  // C++ equivalent
  Differing versions of data types can cause the linker to fail because the metadata generated for the two types doesn't match. (This is usually caused when members of a type are conditionally defined, but the conditions are not the same for all CPP files that use the type.) In this case the linker fails, reporting only the symbol name and the name of the second OBJ file where the type was defined. It is often useful to rotate the order that OBJ files are sent to the linker to discover the location of the other version of the data type.  
   
 ### Loader Lock Deadlock  
- In Visual Studio 2010 and later, the "loader lock deadlock" can still occur as in earlier versions, but is deterministic and is detected and reported at runtime. See [Initialization of Mixed Assemblies](../dotnet/initialization-of-mixed-assemblies.md) for detailed background, guidance, and solutions.  
+The "loader lock deadlock" can occur, but is deterministic and is detected and reported at runtime. See [Initialization of Mixed Assemblies](../dotnet/initialization-of-mixed-assemblies.md) for detailed background, guidance, and solutions.  
   
 ### Data Exports  
  Exporting DLL data is error-prone, and not recommended. This is because the data section of a DLL is not guaranteed to be initialized until some managed portion of the DLL has been executed. Reference metadata with [#using Directive](../preprocessor/hash-using-directive-cpp.md).  
@@ -125,19 +111,9 @@ COMObj2->Method(args);  // C++ equivalent
   
 ### Program Crashes on Shutdown  
  In some cases, the CLR can shutdown before your managed code is finished running. Using `std::set_terminate` and `SIGTERM` can cause this. See [signal Constants](../c-runtime-library/signal-constants.md) and [set_terminate](../c-runtime-library/abnormal-termination.md) for more information.  
-  
-## Using New Visual C++ Features  
- After your application compiles, links, and runs, you can begin using .NET features in any module compiled with **/clr**. For more information, see [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md).  
-  
- If you used Managed Extensions for C++, you can convert your code to use the new syntax. For details on converting Managed Extensions for C++, see [C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md).  
-  
- For information on .NET programming in Visual C++ see:  
-  
--   [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)  
-  
--   [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md)  
-  
--   [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)  
-  
+
 ## See Also  
- [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md)
+[Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md)  
+[.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)  
+[Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md)  
+[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
