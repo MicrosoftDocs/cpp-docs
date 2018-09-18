@@ -80,7 +80,7 @@ In addition to `AutoCriticalSection`, you can use the **typedef** name [Critical
 
 The following code is modeled after [CComObjectRootEx](ccomobjectrootex-class.md), and demonstrates `AutoCriticalSection` being used in a threading environment.
 
-```cpp  
+```cpp
 template<class ThreadModel>
 class CMyAutoCritClass
 {
@@ -156,7 +156,7 @@ static ULONG WINAPI Decrement(LPLONG p) throw ();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 [in] Pointer to the variable to be decremented.
 
 ### Return Value
@@ -177,7 +177,7 @@ static ULONG WINAPI Increment(LPLONG p) throw ();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 [in] Pointer to the variable to be incremented.
 
 ### Return Value
@@ -214,7 +214,7 @@ See [CComMultiThreadModel::AutoCriticalSection](#autocriticalsection).
 
 ## See Also
 
-[CComSingleThreadModel Class](ccomsinglethreadmodel-class.md)   
-[CComAutoCriticalSection Class](ccomautocriticalsection-class.md)   
-[CComCriticalSection Class](ccomcriticalsection-class.md)   
+[CComSingleThreadModel Class](ccomsinglethreadmodel-class.md)<br/>
+[CComAutoCriticalSection Class](ccomautocriticalsection-class.md)<br/>
+[CComCriticalSection Class](ccomcriticalsection-class.md)<br/>
 [Class Overview](../atl-class-overview.md)

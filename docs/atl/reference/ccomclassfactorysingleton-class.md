@@ -21,13 +21,13 @@ This class derives from [CComClassFactory](../../atl/reference/ccomclassfactory-
 ## Syntax
 
 ```
-template<class T>  
+template<class T>
 class CComClassFactorySingleton : public CComClassFactory
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class.
 
 `CComClassFactorySingleton` derives from [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) and uses [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) to construct a single object. Each call to the `CreateInstance` method simply queries this object for an interface pointer.
@@ -78,13 +78,13 @@ STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 
 ### Parameters
 
-*pUnkOuter*  
+*pUnkOuter*<br/>
 [in] If the object is being created as part of an aggregate, then *pUnkOuter* must be the outer unknown. Otherwise, *pUnkOuter* must be NULL.
 
-*riid*  
+*riid*<br/>
 [in] The IID of the requested interface. If *pUnkOuter* is non- NULL, *riid* must be `IID_IUnknown`.
 
-*ppvObj*  
+*ppvObj*<br/>
 [out] A pointer to the interface pointer identified by *riid*. If the object does not support this interface, *ppvObj* is set to NULL.
 
 ### Return Value
@@ -107,9 +107,9 @@ Note that the current form of `m_spObj` presents a breaking change from the way 
 
 ## See Also
 
-[IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)   
-[CComClassFactory2 Class](../../atl/reference/ccomclassfactory2-class.md)   
-[CComClassFactoryAutoThread Class](../../atl/reference/ccomclassfactoryautothread-class.md)   
-[CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
-[CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)   
+[IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)<br/>
+[CComClassFactory2 Class](../../atl/reference/ccomclassfactory2-class.md)<br/>
+[CComClassFactoryAutoThread Class](../../atl/reference/ccomclassfactoryautothread-class.md)<br/>
+[CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)<br/>
+[CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

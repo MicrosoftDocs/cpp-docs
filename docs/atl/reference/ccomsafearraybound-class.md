@@ -61,10 +61,10 @@ CComSafeArrayBound(ULONG ulCount = 0, LONG lLowerBound = 0) throw();
 
 ### Parameters
 
-*ulCount*  
+*ulCount*<br/>
 The number of elements in the array.
 
-*lLowerBound*  
+*lLowerBound*<br/>
 The lower bound from which the array is numbered.
 
 ### Remarks
@@ -126,10 +126,10 @@ CComSafeArrayBound& operator= (ULONG ulCount) throw();
 
 ### Parameters
 
-*bound*  
+*bound*<br/>
 A `CComSafeArrayBound` object.
 
-*ulCount*  
+*ulCount*<br/>
 The number of elements.
 
 ### Return Value
@@ -150,7 +150,7 @@ ULONG SetCount(ULONG ulCount) throw();
 
 ### Parameters
 
-*ulCount*  
+*ulCount*<br/>
 The number of elements.
 
 ### Return Value
@@ -167,7 +167,7 @@ LONG SetLowerBound(LONG lLowerBound) throw();
 
 ### Parameters
 
-*lLowerBound*  
+*lLowerBound*<br/>
 The lower bound.
 
 ### Return Value

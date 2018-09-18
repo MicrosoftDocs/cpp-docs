@@ -61,7 +61,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 ### Parameters
 
-*nBytes*  
+*nBytes*<br/>
 The requested number of bytes in the new memory block.
 
 ### Return Value
@@ -84,7 +84,7 @@ virtual void Free(void* p) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 Pointer to memory previously allocated by this memory manager. NULL is a valid value and does nothing.
 
 ### Remarks
@@ -101,7 +101,7 @@ virtual size_t GetSize(void* p) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 Pointer to memory previously allocated by this memory manager.
 
 ### Return Value
@@ -122,10 +122,10 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 Pointer to memory previously allocated by this memory manager.
 
-*nBytes*  
+*nBytes*<br/>
 The requested number of bytes in the new memory block.
 
 ### Return Value
@@ -138,9 +138,9 @@ Call [CCRTHeap::Free](#free) to free the memory allocated by this method. Implem
 
 ## See Also
 
-[Class Overview](../../atl/atl-class-overview.md)   
-[CComHeap Class](../../atl/reference/ccomheap-class.md)   
-[CWin32Heap Class](../../atl/reference/cwin32heap-class.md)   
-[CLocalHeap Class](../../atl/reference/clocalheap-class.md)   
-[CGlobalHeap Class](../../atl/reference/cglobalheap-class.md)   
+[Class Overview](../../atl/atl-class-overview.md)<br/>
+[CComHeap Class](../../atl/reference/ccomheap-class.md)<br/>
+[CWin32Heap Class](../../atl/reference/cwin32heap-class.md)<br/>
+[CLocalHeap Class](../../atl/reference/clocalheap-class.md)<br/>
+[CGlobalHeap Class](../../atl/reference/cglobalheap-class.md)<br/>
 [IAtlMemMgr Class](../../atl/reference/iatlmemmgr-class.md)

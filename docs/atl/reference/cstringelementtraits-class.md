@@ -19,13 +19,13 @@ This class provides static functions used by collection classes storing `CString
 ## Syntax
 
 ```
-template <typename T>  
+template <typename T>
 class CStringElementTraits
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The type of data to be stored in the collection.
 
 ## Members
@@ -67,10 +67,10 @@ static bool CompareElements(INARGTYPE str1, INARGTYPE str2);
 
 ### Parameters
 
-*str1*  
+*str1*<br/>
 The first string element.
 
-*str2*  
+*str2*<br/>
 The second string element.
 
 ### Return Value
@@ -87,10 +87,10 @@ static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2);
 
 ### Parameters
 
-*str1*  
+*str1*<br/>
 The first string element.
 
-*str2*  
+*str2*<br/>
 The second string element.
 
 ### Return Value
@@ -110,13 +110,13 @@ static void CopyElements(
 
 ### Parameters
 
-*pDest*  
+*pDest*<br/>
 Pointer to the first element that will receive the copied data.
 
-*pSrc*  
+*pSrc*<br/>
 Pointer to the first element to copy.
 
-*nElements*  
+*nElements*<br/>
 The number of elements to copy.
 
 ### Remarks
@@ -133,7 +133,7 @@ static ULONG Hash(INARGTYPE str);
 
 ### Parameters
 
-*str*  
+*str*<br/>
 The string element.
 
 ### Return Value
@@ -169,13 +169,13 @@ static void RelocateElements(
 
 ### Parameters
 
-*pDest*  
+*pDest*<br/>
 Pointer to the first element that will receive the relocated data.
 
-*pSrc*  
+*pSrc*<br/>
 Pointer to the first element to relocate.
 
-*nElements*  
+*nElements*<br/>
 The number of elements to relocate.
 
 ### Remarks
@@ -184,6 +184,6 @@ This static function calls [memmove](../../c-runtime-library/reference/memmove-w
 
 ## See Also
 
-[CElementTraitsBase Class](../../atl/reference/celementtraitsbase-class.md)   
-[CStringElementTraitsI Class](../../atl/reference/cstringelementtraitsi-class.md)   
+[CElementTraitsBase Class](../../atl/reference/celementtraitsbase-class.md)<br/>
+[CStringElementTraitsI Class](../../atl/reference/cstringelementtraitsi-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

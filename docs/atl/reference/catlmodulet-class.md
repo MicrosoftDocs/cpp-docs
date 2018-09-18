@@ -19,13 +19,13 @@ This class implements an ATL module.
 ## Syntax
 
 ```
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class derived from `CAtlModuleT`.
 
 ## Members
@@ -55,7 +55,7 @@ Your class derived from `CAtlModuleT`.
 
 ## Inheritance Hierarchy
 
-[_ATL_MODULE](atl-typedefs.md#_atl_module)  
+[_ATL_MODULE](atl-typedefs.md#_atl_module)
 
 [CAtlModule](../../atl/reference/catlmodule-class.md)
 
@@ -113,10 +113,10 @@ HRESULT RegisterServer(
 
 ### Parameters
 
-*bRegTypeLib*  
+*bRegTypeLib*<br/>
 TRUE if the type library is to be registered. The default value is FALSE.
 
-*pCLSID*  
+*pCLSID*<br/>
 Points to the CLSID of the object to be registered. If NULL (the default value), all objects in the object map will be registered.
 
 ### Return Value
@@ -147,10 +147,10 @@ HRESULT UnregisterServer(
 
 ### Parameters
 
-*bUnRegTypeLib*  
+*bUnRegTypeLib*<br/>
 TRUE if the type library is also to be unregistered.
 
-*pCLSID*  
+*pCLSID*<br/>
 Points to the CLSID of the object to be unregistered. If NULL (the default value), all objects in the object map will be unregistered.
 
 ### Return Value
@@ -167,7 +167,7 @@ static HRESULT WINAPI UpdateRegistryAppId(BOOL /* bRegister*/) throw();
 
 ### Parameters
 
-*bRegister*  
+*bRegister*<br/>
 Reserved.
 
 ### Return Value
@@ -176,6 +176,6 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ## See Also
 
-[CAtlModule Class](../../atl/reference/catlmodule-class.md)   
-[Class Overview](../../atl/atl-class-overview.md)   
+[CAtlModule Class](../../atl/reference/catlmodule-class.md)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [Module Classes](../../atl/atl-module-classes.md)

@@ -22,13 +22,13 @@ This class implements `IUnknown` and allows an object to save its properties to 
 ## Syntax
 
 ```
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE IPersistPropertyBagImpl : public IPersistPropertyBag
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IPersistPropertyBagImpl`.
 
 ## Members
@@ -121,5 +121,5 @@ See [IPersistPropertyBag::Save](https://msdn.microsoft.com/library/aa768207.aspx
 
 ## See Also
 
-[BEGIN_PROP_MAP](property-map-macros.md#begin_prop_map)   
+[BEGIN_PROP_MAP](property-map-macros.md#begin_prop_map)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

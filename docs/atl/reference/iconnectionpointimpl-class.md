@@ -19,19 +19,19 @@ This class implements a connection point.
 ## Syntax
 
 ```
-template<class T, const IID* piid, class CDV = CComDynamicUnkArray>  
+template<class T, const IID* piid, class CDV = CComDynamicUnkArray>
 class ATL_NO_VTABLE IConnectionPointImpl : public _ICPLocator<piid>
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IConnectionPointImpl`.
 
-*piid*  
+*piid*<br/>
 A pointer to the IID of the interface represented by the connection point object.
 
-*CDV*  
+*CDV*<br/>
 A class that manages the connections. The default value is [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md), which allows unlimited connections. You can also use [CComUnkArray](../../atl/reference/ccomunkarray-class.md), which specifies a fixed number of connections.
 
 ## Members
@@ -148,5 +148,5 @@ See [IConnectionPoint::Unadvise](/windows/desktop/api/ocidl/nf-ocidl-iconnection
 
 ## See Also
 
-[IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint)   
+[IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -54,7 +54,7 @@ DECLARE_LIBID( libid )
 
 ### Parameters
 
-*libid*  
+*libid*<br/>
 The GUID of the type library.
 
 ### Remarks
@@ -88,19 +88,19 @@ DECLARE_REGISTRY(
 
 ### Parameters
 
-*class*  
+*class*<br/>
 [in] Included for backward compatibility.
 
-*pid*  
+*pid*<br/>
 [in] An LPCTSTR that is a version-specific program identifier.
 
-*vpid*  
+*vpid*<br/>
 [in] An LPCTSTR that is a version-independent program identifier.
 
-*nid*  
+*nid*<br/>
 [in] A UINT that is an index of the resource string in the registry to use as the description of the program.
 
-*flags*  
+*flags*<br/>
 [in] A DWORD containing the program's threading model in the registry. Must be one of the following values: THREADFLAGS_APARTMENT, THREADFLAGS_BOTH, or AUTPRXFLAG.
 
 ### Remarks
@@ -121,10 +121,10 @@ DECLARE_REGISTRY_APPID_RESOURCEID(
 
 ### Parameters
 
-*resid*  
+*resid*<br/>
 The resource id of the .rgs file that contains information about the *appid*.
 
-*appid*  
+*appid*<br/>
 A GUID.
 
 ### Remarks
@@ -145,7 +145,7 @@ DECLARE_REGISTRY_RESOURCE( x )
 
 ### Parameters
 
-*x*  
+*x*<br/>
 [in] String identifier of your resource.
 
 ### Remarks
@@ -170,7 +170,7 @@ DECLARE_REGISTRY_RESOURCEID( x )
 
 ### Parameters
 
-*x*  
+*x*<br/>
 [in] Wizard-generated identifier of your resource.
 
 ### Remarks

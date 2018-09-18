@@ -56,10 +56,10 @@ static HRESULT FireOnChanged(IUnknown* pUnk, DISPID dispID);
 
 ### Parameters
 
-*pUnk*  
+*pUnk*<br/>
 [in] Pointer to the `IUnknown` of the object sending the notification.
 
-*dispID*  
+*dispID*<br/>
 [in] Identifier of the property that has changed.
 
 ### Return Value
@@ -80,10 +80,10 @@ static HRESULT FireOnRequestEdit(IUnknown* pUnk, DISPID dispID);
 
 ### Parameters
 
-*pUnk*  
+*pUnk*<br/>
 [in] Pointer to the `IUnknown` of the object sending the notification.
 
-*dispID*  
+*dispID*<br/>
 [in] Identifier of the property about to change.
 
 ### Return Value

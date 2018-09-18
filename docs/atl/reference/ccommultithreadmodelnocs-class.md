@@ -116,7 +116,7 @@ static ULONG WINAPI Decrement(LPLONG p) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 [in] Pointer to the variable to be decremented.
 
 ### Return Value
@@ -137,7 +137,7 @@ static ULONG WINAPI Increment(LPLONG p) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 [in] Pointer to the variable to be incremented.
 
 ### Return Value

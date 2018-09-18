@@ -65,7 +65,7 @@ virtual HRESULT STDMETHODCALLTYPE SetAmbientDispatch(IDispatch* pDispatch) = 0;
 
 ### Parameters
 
-*pDispatch*  
+*pDispatch*<br/>
 Pointer to the new interface.
 
 ### Return Value

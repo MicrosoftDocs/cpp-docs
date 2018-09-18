@@ -25,10 +25,10 @@ class CAtlArray
 
 #### Parameters
 
-*E*  
+*E*<br/>
 The type of data to be stored in the array.
 
-*ETraits*  
+*ETraits*<br/>
 The code used to copy or move elements.
 
 ## Members
@@ -94,7 +94,7 @@ size_t Add();
 
 ### Parameters
 
-*element*  
+*element*<br/>
 The element to be added to the array.
 
 ### Return Value
@@ -119,7 +119,7 @@ size_t Append(const CAtlArray<E, ETraits>& aSrc);
 
 ### Parameters
 
-*aSrc*  
+*aSrc*<br/>
 The array to append.
 
 ### Return Value
@@ -192,7 +192,7 @@ void Copy(const CAtlArray<E, ETraits>& aSrc);
 
 ### Parameters
 
-*aSrc*  
+*aSrc*<br/>
 The source of the elements to copy to an array.
 
 ### Remarks
@@ -235,7 +235,7 @@ E& GetAt(size_t iElement) throw();
 
 ### Parameters
 
-*iElement*  
+*iElement*<br/>
 The index value of the array element to return.
 
 ### Return Value
@@ -305,10 +305,10 @@ void InsertArrayAt(size_t iStart, const CAtlArray<E, ETraits>* paNew);
 
 ### Parameters
 
-*iStart*  
+*iStart*<br/>
 The index at which the array is to be inserted.
 
-*paNew*  
+*paNew*<br/>
 The array to be inserted.
 
 ### Remarks
@@ -334,13 +334,13 @@ void InsertAt(size_t iElement, INARGTYPE element, size_t nCount = 1);
 
 ### Parameters
 
-*iElement*  
+*iElement*<br/>
 The index where the element or elements are to be inserted.
 
-*element*  
+*element*<br/>
 The value of the element or elements to be inserted.
 
-*nCount*  
+*nCount*<br/>
 The number of elements to add.
 
 ### Remarks
@@ -384,7 +384,7 @@ const E& operator[](size_t ielement) const throw();
 
 ### Parameters
 
-*iElement*  
+*iElement*<br/>
 The index value of the array element to return.
 
 ### Return Value
@@ -433,10 +433,10 @@ void RemoveAt(size_t iElement, size_t nCount = 1);
 
 ### Parameters
 
-*iElement*  
+*iElement*<br/>
 The index of the first element to remove.
 
-*nCount*  
+*nCount*<br/>
 The number of elements to remove.
 
 ### Remarks
@@ -459,10 +459,10 @@ void SetAt(size_t iElement, INARGTYPE element);
 
 ### Parameters
 
-*iElement*  
+*iElement*<br/>
 The index pointing to the array element to set.
 
-*element*  
+*element*<br/>
 The new value of the specified element.
 
 ### Remarks
@@ -483,10 +483,10 @@ bool SetCount(size_t nNewSize, int nGrowBy = - 1);
 
 ### Parameters
 
-*nNewSize*  
+*nNewSize*<br/>
 The required size of the array.
 
-*nGrowBy*  
+*nGrowBy*<br/>
 A value used to determine how large to make the buffer. A value of -1 causes an internally calculated value to be used.
 
 ### Return Value
@@ -513,10 +513,10 @@ void SetAtGrow(size_t iElement, INARGTYPE element);
 
 ### Parameters
 
-*iElement*  
+*iElement*<br/>
 The index pointing to the array element to set.
 
-*element*  
+*element*<br/>
 The new value of the specified element.
 
 ### Remarks
@@ -529,9 +529,9 @@ Replaces the value of the element pointed to by the index. If *iElement* is larg
 
 ## See Also
 
-[MMXSwarm Sample](../../visual-cpp-samples.md)   
-[DynamicConsumer Sample](../../visual-cpp-samples.md)   
-[UpdatePV Sample](../../visual-cpp-samples.md)   
-[Marquee Sample](../../visual-cpp-samples.md)   
-[CArray Class](../../mfc/reference/carray-class.md)   
+[MMXSwarm Sample](../../visual-cpp-samples.md)<br/>
+[DynamicConsumer Sample](../../visual-cpp-samples.md)<br/>
+[UpdatePV Sample](../../visual-cpp-samples.md)<br/>
+[Marquee Sample](../../visual-cpp-samples.md)<br/>
+[CArray Class](../../mfc/reference/carray-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

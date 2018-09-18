@@ -24,6 +24,6 @@ You can enter interfaces into the COM map table with the [COM_INTERFACE_ENTRY](r
 
 ## See Also
 
-[Fundamentals of ATL COM Objects](../atl/fundamentals-of-atl-com-objects.md)   
+[Fundamentals of ATL COM Objects](../atl/fundamentals-of-atl-com-objects.md)<br/>
 [COM Map Macros](../atl/reference/com-map-macros.md)
 

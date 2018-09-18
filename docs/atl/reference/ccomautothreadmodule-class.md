@@ -22,7 +22,7 @@ As of ATL 7.0, `CComAutoThreadModule` is obsolete: see [ATL Module Classes](../.
 ## Syntax
 
 ```
-template <class ThreadAllocator = CComSimpleThreadAllocator>  
+template <class ThreadAllocator = CComSimpleThreadAllocator>
 class CComAutoThreadModule : public CComModule
 ```
 
@@ -100,13 +100,13 @@ HRESULT CreateInstance(
 
 ### Parameters
 
-*pfnCreateInstance*  
+*pfnCreateInstance*<br/>
 [in] A pointer to a creator function.
 
-*riid*  
+*riid*<br/>
 [in] The IID of the requested interface.
 
-*ppvObj*  
+*ppvObj*<br/>
 [out] A pointer to the interface pointer identified by *riid*. If the object does not support this interface, *ppvObj* is set to NULL.
 
 ### Return Value
@@ -159,16 +159,16 @@ HRESULT Init(
 
 ### Parameters
 
-*p*  
+*p*<br/>
 [in] A pointer to an array of object map entries.
 
-*h*  
+*h*<br/>
 [in] The HINSTANCE passed to `DLLMain` or `WinMain`.
 
-*plibid*  
+*plibid*<br/>
 [in] A pointer to the LIBID of the type library associated with the project.
 
-*nThreads*  
+*nThreads*<br/>
 [in] The number of threads to be created. By default, *nThreads* is the value returned by [GetDefaultThreads](#getdefaultthreads).
 
 ### Remarks
@@ -247,5 +247,5 @@ When the module lock count reaches zero, the module can be unloaded.
 
 ## See Also
 
-[Class Overview](../../atl/atl-class-overview.md)   
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [Module Classes](../../atl/atl-module-classes.md)

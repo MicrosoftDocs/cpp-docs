@@ -22,7 +22,7 @@ This class provides methods useful when constructing a list of heap pointers.
 ## Syntax
 
 ```
-template<typename E, class Allocator = ATL::CCRTAllocator>  
+template<typename E, class Allocator = ATL::CCRTAllocator>
 class CHeapPtrList 
    : public CAtlList<ATL::CHeapPtr<E, Allocator>,
                      CHeapPtrElementTraits<E, Allocator>>
@@ -30,10 +30,10 @@ class CHeapPtrList
 
 #### Parameters
 
-*E*  
+*E*<br/>
 The object type to be stored in the collection class.
 
-*Allocator*  
+*Allocator*<br/>
 The memory allocation class to use. The default is [CCRTAllocator](../../atl/reference/ccrtallocator-class.md).
 
 ## Members
@@ -68,7 +68,7 @@ CHeapPtrList(UINT nBlockSize = 10) throw();
 
 ### Parameters
 
-*nBlockSize*  
+*nBlockSize*<br/>
 The block size.
 
 ### Remarks
@@ -77,7 +77,7 @@ The block size is a measure of the amount of memory allocated when a new element
 
 ## See Also
 
-[CAtlList Class](../../atl/reference/catllist-class.md)   
-[CHeapPtr Class](../../atl/reference/cheapptr-class.md)   
-[CHeapPtrElementTraits Class](../../atl/reference/cheapptrelementtraits-class.md)   
+[CAtlList Class](../../atl/reference/catllist-class.md)<br/>
+[CHeapPtr Class](../../atl/reference/cheapptr-class.md)<br/>
+[CHeapPtrElementTraits Class](../../atl/reference/cheapptrelementtraits-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

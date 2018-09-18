@@ -94,7 +94,7 @@ Provides information about the COM functionality for the object.
 
 ## See Also
 
-[ATL Control](../../atl/reference/adding-an-atl-control.md)   
-[Adding Functionality to the Composite Control](../../atl/adding-functionality-to-the-composite-control.md)   
+[ATL Control](../../atl/reference/adding-an-atl-control.md)<br/>
+[Adding Functionality to the Composite Control](../../atl/adding-functionality-to-the-composite-control.md)<br/>
 [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)
 

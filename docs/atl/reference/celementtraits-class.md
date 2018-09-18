@@ -19,7 +19,7 @@ This class is used by collection classes to provide methods and functions for mo
 ## Syntax
 
 ```
-template<typename T>  
+template<typename T>
 class CElementTraits : public CDefaultElementTraits<T>
 ```
 
@@ -42,5 +42,5 @@ For more information, see [ATL Collection Classes](../../atl/atl-collection-clas
 
 ## See Also
 
-[CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)   
+[CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

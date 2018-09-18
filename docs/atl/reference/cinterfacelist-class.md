@@ -19,7 +19,7 @@ This class provides methods useful when constructing a list of COM interface poi
 ## Syntax
 
 ```
-template<class I, const IID* piid =& __uuidof(I)>  
+template<class I, const IID* piid =& __uuidof(I)>
 class CInterfaceList 
    : public CAtlList<ATL::CComQIPtr<I, piid>,
                      CComQIPtrElementTraits<I, piid>>
@@ -27,10 +27,10 @@ class CInterfaceList
 
 #### Parameters
 
-*I*  
+*I*<br/>
 A COM interface specifying the type of pointer to be stored.
 
-*piid*  
+*piid*<br/>
 A pointer to the IID of *I*.
 
 ## Members
@@ -67,7 +67,7 @@ CInterfaceList(UINT nBlockSize = 10) throw();
 
 ### Parameters
 
-*nBlockSize*  
+*nBlockSize*<br/>
 The block size, with a default of 10.
 
 ### Remarks
@@ -76,7 +76,7 @@ The block size is a measure of the amount of memory allocated when a new element
 
 ## See Also
 
-[CAtlList Class](../../atl/reference/catllist-class.md)   
-[CComQIPtr Class](../../atl/reference/ccomqiptr-class.md)   
-[CComQIPtrElementTraits Class](../../atl/reference/ccomqiptrelementtraits-class.md)   
+[CAtlList Class](../../atl/reference/catllist-class.md)<br/>
+[CComQIPtr Class](../../atl/reference/ccomqiptr-class.md)<br/>
+[CComQIPtrElementTraits Class](../../atl/reference/ccomqiptrelementtraits-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

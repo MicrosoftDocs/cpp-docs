@@ -46,16 +46,16 @@ HRESULT    AtlAdvise(
 
 ### Parameters
 
-*pUnkCP*  
+*pUnkCP*<br/>
 [in] A pointer to the `IUnknown` of the object the client wants to connect with.
 
-*pUnk*  
+*pUnk*<br/>
 [in] A pointer to the client's `IUnknown`.
 
-*iid*  
+*iid*<br/>
 [in] The GUID of the connection point. Typically, this is the same as the outgoing interface managed by the connection point.
 
-*pdw*  
+*pdw*<br/>
 [out] A pointer to the cookie that uniquely identifies the connection.
 
 ### Return Value
@@ -86,13 +86,13 @@ HRESULT    AtlUnadvise(
 
 ### Parameters
 
-*pUnkCP*  
+*pUnkCP*<br/>
 [in] A pointer to the `IUnknown` of the object that the client is connected with.
 
-*iid*  
+*iid*<br/>
 [in] The GUID of the connection point. Typically, this is the same as the outgoing interface managed by the connection point.
 
-*dw*  
+*dw*<br/>
 [in] The cookie that uniquely identifies the connection.
 
 ### Return Value
@@ -116,10 +116,10 @@ HRESULT AtlAdviseSinkMap(T* pT, bool bAdvise);
 
 ### Parameters
 
-*pT*  
+*pT*<br/>
 [in] A pointer to the object containing the sink map.
 
-*bAdvise*  
+*bAdvise*<br/>
 [in] TRUE if all sink entries are to be advised; FALSE if all sink entries are to be unadvised.
 
 ### Return Value
@@ -132,5 +132,5 @@ A standard HRESULT value.
 
 ## See Also
 
-[Functions](../../atl/reference/atl-functions.md)   
+[Functions](../../atl/reference/atl-functions.md)<br/>
 [Connection Point Macros](../../atl/reference/connection-point-macros.md)

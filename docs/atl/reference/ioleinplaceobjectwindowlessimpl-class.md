@@ -28,7 +28,7 @@ class IOleInPlaceObjectWindowlessImpl
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IOleInPlaceObjectWindowlessImpl`.
 
 ## Members
@@ -172,5 +172,5 @@ See [IOleInPlaceObject::UIDeactivate](/windows/desktop/api/oleidl/nf-oleidl-iole
 
 ## See Also
 
-[CComControl Class](../../atl/reference/ccomcontrol-class.md)   
+[CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

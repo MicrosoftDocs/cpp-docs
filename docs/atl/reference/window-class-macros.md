@@ -17,8 +17,8 @@ These macros define window class utilities.
 
 |||
 |-|-|
-|[DECLARE_WND_CLASS](#declare_wnd_class)|Allows you to specify the name of a new window class.| 
-|[DECLARE_WND_CLASS2](#declare_wnd_class2)|(Visual Studio 2017) Allows you to specify the name of a new window class and the enclosing class whose window procedure the new class will use.| 
+|[DECLARE_WND_CLASS](#declare_wnd_class)|Allows you to specify the name of a new window class.|
+|[DECLARE_WND_CLASS2](#declare_wnd_class2)|(Visual Studio 2017) Allows you to specify the name of a new window class and the enclosing class whose window procedure the new class will use.|
 |[DECLARE_WND_SUPERCLASS](#declare_wnd_superclass)|Allows you to specify the name of an existing window class on which a new window class will be based.|
 |[DECLARE_WND_CLASS_EX](#declare_wnd_class_ex)|Allows you to specify the parameters of a class.|  
 
@@ -36,7 +36,7 @@ DECLARE_WND_CLASS( WndClassName )
 
 ### Parameters
 
-*WndClassName*  
+*WndClassName*<br/>
 [in] The name of the new window class. If NULL, ATL will generate a window class name.
 
 ### Remarks
@@ -71,10 +71,10 @@ DECLARE_WND_CLASS2( WndClassName, EnclosingClass )
 
 ### Parameters
 
-*WndClassName*  
+*WndClassName*<br/>
 [in] The name of the new window class. If NULL, ATL will generate a window class name. 
 
-*EnclosingClass*  
+*EnclosingClass*<br/>
 [in] The name of the window class that encloses the new window class. Cannot be NULL.
 
 ### Remarks
@@ -92,10 +92,10 @@ DECLARE_WND_SUPERCLASS( WndClassName, OrigWndClassName )
 
 ### Parameters
 
-*WndClassName*  
+*WndClassName*<br/>
 [in] The name of the window class that will superclass *OrigWndClassName*. If NULL, ATL will generate a window class name.
 
-*OrigWndClassName*  
+*OrigWndClassName*<br/>
 [in] The name of an existing window class.
 
 ### Remarks
@@ -122,13 +122,13 @@ DECLARE_WND_CLASS_EX( WndClassName, style, bkgnd )
 
 ### Parameters
 
-*WndClassName*  
+*WndClassName*<br/>
 [in] The name of the new window class. If NULL, ATL will generate a window class name.
 
-*style*  
+*style*<br/>
 [in] The style of the window.
 
-*bkgnd*  
+*bkgnd*<br/>
 [in] The background color of the window.
 
 ### Remarks

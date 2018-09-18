@@ -19,7 +19,7 @@ This class provides default methods and functions for a collection class.
 ## Syntax
 
 ```
-template <typename T>  
+template <typename T>
 class CDefaultElementTraits : public CElementTraitsBase<T>,
     public CDefaultHashTraits<T>,
     public CDefaultCompareTraits<T>
@@ -27,7 +27,7 @@ class CDefaultElementTraits : public CElementTraitsBase<T>,
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The type of data to be stored in the collection.
 
 ## Remarks

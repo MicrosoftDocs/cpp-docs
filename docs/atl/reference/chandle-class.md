@@ -73,7 +73,7 @@ void Attach(HANDLE h) throw();
 
 ### Parameters
 
-*h*  
+*h*<br/>
 `CHandle` will take ownership of the handle *h*.
 
 ### Remarks
@@ -92,7 +92,7 @@ explicit CHandle(HANDLE h) throw();
 
 ### Parameters
 
-*h*  
+*h*<br/>
 An existing handle or `CHandle`.
 
 ### Remarks
@@ -157,7 +157,7 @@ CHandle& operator=(CHandle& h) throw();
 
 ### Parameters
 
-*h*  
+*h*<br/>
 `CHandle` will take ownership of the handle *h*.
 
 ### Return Value
@@ -172,7 +172,7 @@ If the `CHandle` object currently contains a handle, it will be closed. The `CHa
 
 Returns the value of the stored handle.
 
-```  
+```
 operator HANDLE() const throw();
 ```
 

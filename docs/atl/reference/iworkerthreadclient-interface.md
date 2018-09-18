@@ -52,7 +52,7 @@ HRESULT CloseHandle(HANDLE  hHandle);
 
 ### Parameters
 
-*hHandle*  
+*hHandle*<br/>
 The handle to be closed.
 
 ### Return Value
@@ -79,10 +79,10 @@ HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
 
 ### Parameters
 
-*dwParam*  
+*dwParam*<br/>
 The user parameter.
 
-*hObject*  
+*hObject*<br/>
 The handle that has become signaled.
 
 ### Return Value
@@ -101,5 +101,5 @@ The following code shows a simple implementation of `IWorkerThreadClient::Execut
 
 ## See Also
 
-[Classes](../../atl/reference/atl-classes.md)   
+[Classes](../../atl/reference/atl-classes.md)<br/>
 [CWorkerThread Class](../../atl/reference/cworkerthread-class.md)

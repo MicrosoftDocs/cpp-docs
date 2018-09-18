@@ -36,7 +36,7 @@ BEGIN_CATEGORY_MAP(theClass)
 
 ### Parameters
 
-*theClass*  
+*theClass*<br/>
 [in] The name of the class containing the category map.
 
 ### Remarks
@@ -78,7 +78,7 @@ IMPLEMENTED_CATEGORY(catID)
 
 ### Parameters
 
-*catID*  
+*catID*<br/>
 [in] A CATID constant or variable holding the globally unique identifier (GUID) for the implemented category. The address of *catID* will be taken and added to the map. See the table below for a selection of stock categories.
 
 ### Remarks
@@ -115,7 +115,7 @@ REQUIRED_CATEGORY( catID )
 
 ### Parameters
 
-*catID*  
+*catID*<br/>
 [in] A CATID constant or variable holding the globally unique identifier (GUID) for the required category. The address of *catID* will be taken and added to the map. See the table below for a selection of stock categories.
 
 ### Remarks

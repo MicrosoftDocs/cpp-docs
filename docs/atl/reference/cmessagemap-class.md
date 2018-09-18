@@ -65,22 +65,22 @@ virtual BOOL ProcessWindowMessage(
 
 ### Parameters
 
-*hWnd*  
+*hWnd*<br/>
 [in] The handle to the window receiving the message.
 
-*uMsg*  
+*uMsg*<br/>
 [in] The message sent to the window.
 
-*wParam*  
+*wParam*<br/>
 [in] Additional message-specific information.
 
-*lParam*  
+*lParam*<br/>
 [in] Additional message-specific information.
 
-*lResult*  
+*lResult*<br/>
 [out] The result of the message processing.
 
-*dwMsgMapID*  
+*dwMsgMapID*<br/>
 [in] The identifier of the message map that will process the message. The default message map, declared with [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map), is identified by 0. An alternate message map, declared with [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), is identified by `msgMapID`.
 
 ### Return Value
@@ -93,7 +93,7 @@ Called by the window procedure of a [CContainedWindow](../../atl/reference/ccont
 
 ## See Also
 
-[CDynamicChain Class](../../atl/reference/cdynamicchain-class.md)   
-[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)   
-[ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)   
+[CDynamicChain Class](../../atl/reference/cdynamicchain-class.md)<br/>
+[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
+[ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

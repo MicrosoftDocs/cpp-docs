@@ -43,56 +43,56 @@ Here are a few syntax examples to help you understand how the notation and strin
 
 ### Syntax Example 1
 
-```  
-<registry expression> ::= <Add Key>  
+```
+<registry expression> ::= <Add Key>
 ```
 
 specifies that `registry expression` is equivalent to `Add Key`.
 
 ### Syntax Example 2
 
-```  
-<registry expression> ::= <Add Key> | <Delete Key>  
+```
+<registry expression> ::= <Add Key> | <Delete Key>
 ```
 
 specifies that `registry expression` is equivalent to either `Add Key` or `Delete Key`.
 
 ### Syntax Example 3
 
-```  
-<Key Name> ::= '<AlphaNumeric>+'  
+```
+<Key Name> ::= '<AlphaNumeric>+'
 ```
 
 specifies that `Key Name` is equivalent to one or more `AlphaNumerics`.
 
 ### Syntax Example 4
 
-```  
-<Add Key> ::= [ForceRemove | NoRemove | val]<Key Name>  
+```
+<Add Key> ::= [ForceRemove | NoRemove | val]<Key Name>
 ```
 
 specifies that `Add Key` is equivalent to `Key Name`, and that the string literals, `ForceRemove`, `NoRemove`, and `val`, are optional.
 
 ### Syntax Example 5
 
-```  
-<AlphaNumeric> ::= any character not NULL, that is, ASCII 0  
+```
+<AlphaNumeric> ::= any character not NULL, that is, ASCII 0
 ```
 
 specifies that `AlphaNumeric` is equivalent to any non-NULL character.
 
 ### Syntax Example 6
 
-```  
-val 'testmulti' = m 'String 1\0String 2\0'  
+```
+val 'testmulti' = m 'String 1\0String 2\0'
 ```
 
 specifies that the key name `testmulti` is a multistring value composed of `String 1` and `String 2`.
 
 ### Syntax Example 7
 
-```  
-val 'testhex' = d '&H55'  
+```
+val 'testhex' = d '&H55'
 ```
 
 specifies that the key name `testhex` is a DWORD value set to hexadecimal 55 (decimal 85). Note this format adheres to the **&H** notation as found in the Visual Basic specification.

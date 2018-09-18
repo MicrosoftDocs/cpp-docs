@@ -58,7 +58,7 @@ void* Allocate(size_t nBytes) throw();
 
 ### Parameters
 
-*nBytes*  
+*nBytes*<br/>
 The requested number of bytes in the new memory block.
 
 ### Return Value
@@ -83,7 +83,7 @@ void Free(void* p) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 Pointer to memory previously allocated by this memory manager.
 
 ### Remarks
@@ -104,7 +104,7 @@ size_t GetSize(void* p) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 Pointer to memory previously allocated by this memory manager.
 
 ### Return Value
@@ -125,10 +125,10 @@ void* Reallocate(void* p, size_t nBytes) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 Pointer to memory previously allocated by this memory manager.
 
-*nBytes*  
+*nBytes*<br/>
 The requested number of bytes in the new memory block.
 
 ### Return Value
@@ -155,7 +155,7 @@ STDMETHOD(get_AllowContextMenu)(VARIANT_BOOL* pbAllowContextMenu);
 
 ### Parameters
 
-*pbAllowContextMenu*  
+*pbAllowContextMenu*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -176,7 +176,7 @@ STDMETHOD(get_AllowShowUI)(VARIANT_BOOL* pbAllowShowUI);
 
 ### Parameters
 
-*pbAllowShowUI*  
+*pbAllowShowUI*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -197,7 +197,7 @@ STDMETHOD(get_AllowWindowlessActivation)(VARIANT_BOOL* pbAllowWindowless);
 
 ### Parameters
 
-*pbAllowWindowless*  
+*pbAllowWindowless*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -218,7 +218,7 @@ STDMETHOD(get_BackColor)(OLE_COLOR* pclrBackground);
 
 ### Parameters
 
-*pclrBackground*  
+*pclrBackground*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -239,7 +239,7 @@ STDMETHOD(get_DisplayAsDefault)(VARIANT_BOOL* pbDisplayAsDefault);
 
 ### Parameters
 
-*pbDisplayAsDefault*  
+*pbDisplayAsDefault*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -260,7 +260,7 @@ STDMETHOD(get_DocHostDoubleClickFlags)(DWORD* pdwDocHostDoubleClickFlags);
 
 ### Parameters
 
-*pdwDocHostDoubleClickFlags*  
+*pdwDocHostDoubleClickFlags*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -281,7 +281,7 @@ STDMETHOD(get_DocHostFlags)(DWORD* pdwDocHostFlags);
 
 ### Parameters
 
-*pdwDocHostFlags*  
+*pdwDocHostFlags*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -302,7 +302,7 @@ STDMETHOD(get_Font)(IFontDisp** pFont);
 
 ### Parameters
 
-*pFont*  
+*pFont*<br/>
 [out] The address of an `IFontDisp` interface pointer used to receive the current value of this property.
 
 ### Return Value
@@ -323,7 +323,7 @@ STDMETHOD(get_ForeColor)(OLE_COLOR* pclrForeground);
 
 ### Parameters
 
-*pclrForeground*  
+*pclrForeground*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -344,7 +344,7 @@ STDMETHOD(get_LocaleID)(LCID* plcidLocaleID);
 
 ### Parameters
 
-*plcidLocaleID*  
+*plcidLocaleID*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -367,7 +367,7 @@ STDMETHOD(get_MessageReflect)(VARIANT_BOOL* pbMessageReflect);
 
 ### Parameters
 
-*pbMessageReflect*  
+*pbMessageReflect*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -388,7 +388,7 @@ STDMETHOD(get_OptionKeyPath)(BSTR* pbstrOptionKeyPath);
 
 ### Parameters
 
-*pbstrOptionKeyPath*  
+*pbstrOptionKeyPath*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -405,7 +405,7 @@ STDMETHOD(get_ShowGrabHandles)(VARIANT_BOOL* pbShowGrabHandles);
 
 ### Parameters
 
-*pbShowGrabHandles*  
+*pbShowGrabHandles*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -426,7 +426,7 @@ STDMETHOD(get_ShowHatching)(VARIANT_BOOL* pbShowHatching);
 
 ### Parameters
 
-*pbShowHatching*  
+*pbShowHatching*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -447,7 +447,7 @@ STDMETHOD(get_UserMode)(VARIANT_BOOL* pbUserMode);
 
 ### Parameters
 
-*pbUserMode*  
+*pbUserMode*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -468,7 +468,7 @@ STDMETHOD(put_AllowContextMenu)(VARIANT_BOOL bAllowContextMenu);
 
 ### Parameters
 
-*bAllowContextMenu*  
+*bAllowContextMenu*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -489,7 +489,7 @@ STDMETHOD(put_AllowShowUI)(VARIANT_BOOL bAllowShowUI);
 
 ### Parameters
 
-*bAllowShowUI*  
+*bAllowShowUI*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -510,7 +510,7 @@ STDMETHOD(put_AllowWindowlessActivation)(VARIANT_BOOL bAllowWindowless);
 
 ### Parameters
 
-*bAllowWindowless*  
+*bAllowWindowless*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -531,7 +531,7 @@ STDMETHOD(put_BackColor)(OLE_COLOR clrBackground);
 
 ### Parameters
 
-*clrBackground*  
+*clrBackground*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -552,7 +552,7 @@ STDMETHOD(put_DisplayAsDefault)(VARIANT_BOOL bDisplayAsDefault);
 
 ### Parameters
 
-*bDisplayAsDefault*  
+*bDisplayAsDefault*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -573,7 +573,7 @@ STDMETHOD(put_DocHostDoubleClickFlags)(DWORD dwDocHostDoubleClickFlags);
 
 ### Parameters
 
-*dwDocHostDoubleClickFlags*  
+*dwDocHostDoubleClickFlags*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -594,7 +594,7 @@ STDMETHOD(put_DocHostFlags)(DWORD dwDocHostFlags);
 
 ### Parameters
 
-*dwDocHostFlags*  
+*dwDocHostFlags*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -615,7 +615,7 @@ STDMETHOD(put_Font)(IFontDisp* pFont);
 
 ### Parameters
 
-*pFont*  
+*pFont*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -636,7 +636,7 @@ STDMETHOD(put_ForeColor)(OLE_COLOR clrForeground);
 
 ### Parameters
 
-*clrForeground*  
+*clrForeground*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -657,7 +657,7 @@ STDMETHOD(put_LocaleID)(LCID lcidLocaleID);
 
 ### Parameters
 
-*lcidLocaleID*  
+*lcidLocaleID*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -678,7 +678,7 @@ STDMETHOD(put_MessageReflect)(VARIANT_BOOL bMessageReflect);
 
 ### Parameters
 
-*bMessageReflect*  
+*bMessageReflect*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -699,7 +699,7 @@ STDMETHOD(put_OptionKeyPath)(BSTR bstrOptionKeyPath);
 
 ### Parameters
 
-*bstrOptionKeyPath*  
+*bstrOptionKeyPath*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -716,7 +716,7 @@ STDMETHOD(put_UserMode)(VARIANT_BOOL bUserMode);
 
 ### Parameters
 
-*bUserMode*  
+*bUserMode*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -737,7 +737,7 @@ virtual HRESULT STDMETHODCALLTYPE SetAmbientDispatch(IDispatch* pDispatch) = 0;
 
 ### Parameters
 
-*pDispatch*  
+*pDispatch*<br/>
 Pointer to the new interface.
 
 ### Return Value
@@ -758,10 +758,10 @@ STDMETHOD(AttachControl)(IUnknown* pUnkControl, HWND hWnd);
 
 ### Parameters
 
-*pUnkControl*  
+*pUnkControl*<br/>
 [in] A pointer to the `IUnknown` interface of the control to be attached to the host object.
 
-*hWnd*  
+*hWnd*<br/>
 [in] A handle to the window to be used for hosting.
 
 ### Return Value
@@ -781,13 +781,13 @@ STDMETHOD(CreateControl)(
 
 ### Parameters
 
-*lpTricsData*  
+*lpTricsData*<br/>
 [in] A string identifying the control to create. Can be a CLSID (must include the braces), ProgID, URL, or raw HTML (prefixed by **MSHTML:**).
 
-*hWnd*  
+*hWnd*<br/>
 [in] A handle to the window to be used for hosting.
 
-*pStream*  
+*pStream*<br/>
 [in] An interface pointer for a stream containing initialization data for the control. Can be NULL.
 
 ### Return Value
@@ -818,22 +818,22 @@ STDMETHOD(CreateControlEx)(
 
 ### Parameters
 
-*lpTricsData*  
+*lpTricsData*<br/>
 [in] A string identifying the control to create. Can be a CLSID (must include the braces), ProgID, URL, or raw HTML (prefixed with **MSHTML:**).
 
-*hWnd*  
+*hWnd*<br/>
 [in] A handle to the window to be used for hosting.
 
-*pStream*  
+*pStream*<br/>
 [in] An interface pointer for a stream containing initialization data for the control. Can be NULL.
 
-*ppUnk*  
+*ppUnk*<br/>
 [out] The address of a pointer that will receive the `IUnknown` interface of the created control. Can be NULL.
 
-*riidAdvise*  
+*riidAdvise*<br/>
 [in] The interface identifier of an outgoing interface on the contained object. Can be IID_NULL.
 
-*punkAdvise*  
+*punkAdvise*<br/>
 [in] A pointer to the `IUnknown` interface of the sink object to be connected to the connection point on the contained object specified by `iidSink`.
 
 ### Return Value
@@ -856,10 +856,10 @@ STDMETHOD(QueryControl)(REFIID riid, void** ppvObject);
 
 ### Parameters
 
-*riid*  
+*riid*<br/>
 [in] The ID of an interface on the control being requested.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] The address of a pointer that will receive the specified interface of the created control.
 
 ### Return Value
@@ -876,7 +876,7 @@ STDMETHOD(SetExternalDispatch)(IDispatch* pDisp);
 
 ### Parameters
 
-*pDisp*  
+*pDisp*<br/>
 [in] A pointer to an `IDispatch` interface.
 
 ### Return Value
@@ -893,7 +893,7 @@ STDMETHOD(SetExternalUIHandler)(IDocHostUIHandlerDispatch* pDisp);
 
 ### Parameters
 
-*pDisp*  
+*pDisp*<br/>
 [in] A pointer to an `IDocHostUIHandlerDispatch` interface.
 
 ### Return Value
@@ -918,7 +918,7 @@ STDMETHOD(CreateControlLic)(
 
 ### Parameters
 
-*bstrLic*  
+*bstrLic*<br/>
 [in] The BSTR that contains the license key for the control.
 
 ### Remarks
@@ -948,7 +948,7 @@ STDMETHOD(CreateControlLicEx)(
 
 ### Parameters
 
-*bstrLic*  
+*bstrLic*<br/>
 [in] The BSTR that contains the license key for the control.
 
 ### Remarks

@@ -42,6 +42,6 @@ This class introduces no additional methods over its base class. See [CComSafeDe
 
 ## See Also
 
-[CComSafeDeleteCriticalSection Class](../../atl/reference/ccomsafedeletecriticalsection-class.md)   
-[CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md)   
+[CComSafeDeleteCriticalSection Class](../../atl/reference/ccomsafedeletecriticalsection-class.md)<br/>
+[CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

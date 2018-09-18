@@ -55,6 +55,6 @@ The functionality of `CComModule` was distributed into several new classes for t
 
 ## See Also
 
-[Concepts](../atl/active-template-library-atl-concepts.md)   
+[Concepts](../atl/active-template-library-atl-concepts.md)<br/>
 [Class Overview](../atl/atl-class-overview.md)
 
