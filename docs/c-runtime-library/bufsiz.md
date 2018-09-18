@@ -13,16 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # BUFSIZ
-## Syntax  
-  
-```  
-  
-#include <stdio.h>  
-```  
-  
-## Remarks  
- `BUFSIZ` is the required user-allocated buffer for the [setvbuf](../c-runtime-library/reference/setvbuf.md) routine.  
-  
-## See Also  
- [Stream I/O](../c-runtime-library/stream-i-o.md)   
- [Global Constants](../c-runtime-library/global-constants.md)
+
+## Syntax
+
+```
+
+#include <stdio.h>
+```
+
+## Remarks
+
+`BUFSIZ` is the required user-allocated buffer for the [setvbuf](../c-runtime-library/reference/setvbuf.md) routine.
+
+## See Also
+
+[Stream I/O](../c-runtime-library/stream-i-o.md)<br/>
+[Global Constants](../c-runtime-library/global-constants.md)

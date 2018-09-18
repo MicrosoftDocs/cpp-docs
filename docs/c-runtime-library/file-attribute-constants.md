@@ -13,17 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # File Attribute Constants
-## Syntax  
-  
-```  
-  
-#include <io.h>  
-```  
-  
-## Remarks  
- These constants specify the current attributes of the file or directory specified by the function.  
-  
- The attributes are represented by the following manifest constants:
+
+## Syntax
+
+```
+
+#include <io.h>
+```
+
+## Remarks
+
+These constants specify the current attributes of the file or directory specified by the function.
+
+The attributes are represented by the following manifest constants:
 
 |Constant|Description|
 |-|-|
@@ -33,9 +35,10 @@ ms.workload: ["cplusplus"]
 |`_A_RDONLY`| Read-only. File cannot be opened for writing, and a file with the same name cannot be created. Value: 0x01|
 |`_A_SUBDIR`| Subdirectory. Value: 0x10|
 |`_A_SYSTEM`| System file. Not normally seen with the DIR command, unless the /AS option is used. Value: 0x04|
-  
-Multiple constants can be combined with the OR operator (&#124;).  
-  
-## See Also  
- [Filename Search Functions](../c-runtime-library/filename-search-functions.md)   
- [Global Constants](../c-runtime-library/global-constants.md)
+
+Multiple constants can be combined with the OR operator (&#124;).
+
+## See Also
+
+[Filename Search Functions](../c-runtime-library/filename-search-functions.md)<br/>
+[Global Constants](../c-runtime-library/global-constants.md)

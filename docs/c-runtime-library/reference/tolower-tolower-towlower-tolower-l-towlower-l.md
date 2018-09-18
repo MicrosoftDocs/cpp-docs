@@ -16,6 +16,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # tolower, _tolower, towlower, _tolower_l, _towlower_l
+
 Converts a character to lowercase.
 
 ## Syntax

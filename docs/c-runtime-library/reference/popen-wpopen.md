@@ -133,12 +133,12 @@ int main( void )
 This output assumes that there is only one file in the current directory with a .c file name extension.
 
 ```Output
- Volume in drive C is CDRIVE
- Volume Serial Number is 0E17-1702
+Volume in drive C is CDRIVE
+Volume Serial Number is 0E17-1702
 
 Directory of D:\proj\console\test1
 
- 07/17/98  07:26p                   780 popen.c
+07/17/98  07:26p                   780 popen.c
                1 File(s)            780 bytes
                              86,597,632 bytes free
 

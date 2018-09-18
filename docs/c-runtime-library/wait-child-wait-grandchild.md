@@ -13,22 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _WAIT_CHILD, _WAIT_GRANDCHILD
-## Syntax  
-  
-```  
-  
-#include <process.h>  
-  
-```  
-  
-## Remarks  
- The `_cwait` function can be used by any process to wait for any other process (if the process ID is known). The action argument can be one of the following values:  
-  
-|Constant|Meaning|  
-|--------------|-------------|  
-|`_WAIT_CHILD`|Calling process waits until specified new process terminates.|  
-|`_WAIT_GRANDCHILD`|Calling process waits until specified new process, and all processes created by that new process, terminate.|  
-  
-## See Also  
- [_cwait](../c-runtime-library/reference/cwait.md)   
- [Global Constants](../c-runtime-library/global-constants.md)
+
+## Syntax
+
+```
+
+#include <process.h>
+
+```
+
+## Remarks
+
+The `_cwait` function can be used by any process to wait for any other process (if the process ID is known). The action argument can be one of the following values:
+
+|Constant|Meaning|
+|--------------|-------------|
+|`_WAIT_CHILD`|Calling process waits until specified new process terminates.|
+|`_WAIT_GRANDCHILD`|Calling process waits until specified new process, and all processes created by that new process, terminate.|
+
+## See Also
+
+[_cwait](../c-runtime-library/reference/cwait.md)<br/>
+[Global Constants](../c-runtime-library/global-constants.md)

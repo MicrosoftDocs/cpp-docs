@@ -29,7 +29,7 @@ void _aligned_free (
 
 ### Parameters
 
-*memblock*  
+*memblock*<br/>
 A pointer to the memory block that was returned to the `_aligned_malloc` or `_aligned_offset_malloc` function.
 
 ## Remarks
@@ -50,4 +50,4 @@ For more information, see [_aligned_malloc](aligned-malloc.md).
 
 ## See also
 
-[Data Alignment](../../c-runtime-library/data-alignment.md)  
+[Data Alignment](../../c-runtime-library/data-alignment.md)
