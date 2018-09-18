@@ -19,13 +19,13 @@ This class provides default copy and move methods for a collection class.
 ## Syntax
 
 ```
-template<typename T>  
+template<typename T>
 class CElementTraitsBase
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The type of data to be stored in the collection.
 
 ## Members
@@ -67,13 +67,13 @@ static void CopyElements(
 
 ### Parameters
 
-*pDest*  
+*pDest*<br/>
 Pointer to the first element that will receive the copied data.
 
-*pSrc*  
+*pSrc*<br/>
 Pointer to the first element to copy.
 
-*nElements*  
+*nElements*<br/>
 The number of elements to copy.
 
 ### Remarks
@@ -109,13 +109,13 @@ static void RelocateElements(
 
 ### Parameters
 
-*pDest*  
+*pDest*<br/>
 Pointer to the first element that will receive the relocated data.
 
-*pSrc*  
+*pSrc*<br/>
 Pointer to the first element to relocate.
 
-*nElements*  
+*nElements*<br/>
 The number of elements to relocate.
 
 ### Remarks

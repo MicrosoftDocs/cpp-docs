@@ -18,40 +18,40 @@ If you select **Support MFC** in the ATL Project Wizard, your project declares t
 
 This option is available for nonattributed ATL DLL projects only.
 
-```  
-class CProjNameApp : public CWinApp  
-{  
+```
+class CProjNameApp : public CWinApp
+{
 public:  
 
 // Overrides  
     virtual BOOL InitInstance();
 virtual int ExitInstance();
-DECLARE_MESSAGE_MAP() 
+DECLARE_MESSAGE_MAP()
 };  
 
-BEGIN_MESSAGE_MAP(CProjNameApp, CWinApp)  
+BEGIN_MESSAGE_MAP(CProjNameApp, CWinApp)
 END_MESSAGE_MAP()  
 
 CProjNameApp theApp;  
 
-BOOL CProjNameApp::InitInstance()  
+BOOL CProjNameApp::InitInstance()
 {  
     return CWinApp::InitInstance();
 
 }  
 
-int CProjNameApp::ExitInstance()  
+int CProjNameApp::ExitInstance()
 {  
     return CWinApp::ExitInstance();
 
-}  
+}
 ```
 
 You can view the application object class and its `InitInstance` and `ExitInstance` functions in Class View.
 
 ## See Also
 
-[Adding a Class](../../ide/adding-a-class-visual-cpp.md)   
-[Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)   
+[Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
+[Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)<br/>
 [Default ATL Project Configurations](../../atl/reference/default-atl-project-configurations.md)
 

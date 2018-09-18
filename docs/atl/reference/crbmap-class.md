@@ -22,22 +22,22 @@ This class represents a mapping structure, using a Red-Black binary tree.
 template <typename K,
           typename V, 
           class KTraits = CElementTraits<K>, 
-          class VTraits = CElementTraits<V>> 
+          class VTraits = CElementTraits<V>>
 class CRBMap : public CRBTree<K, V, KTraits, VTraits>
 ```
 
 #### Parameters
 
-*K*  
+*K*<br/>
 The key element type.
 
-*V*  
+*V*<br/>
 The value element type.
 
-*KTraits*  
+*KTraits*<br/>
 The code used to copy or move key elements. See [CElementTraits Class](../../atl/reference/celementtraits-class.md) for more details.
 
-*VTraits*  
+*VTraits*<br/>
 The code used to copy or move value elements.
 
 ## Members
@@ -91,7 +91,7 @@ explicit CRBMap(size_t nBlockSize = 10) throw();
 
 ### Parameters
 
-*nBlockSize*  
+*nBlockSize*<br/>
 The block size.
 
 ### Remarks
@@ -130,10 +130,10 @@ CPair* Lookup(KINARGTYPE key) throw();
 
 ### Parameters
 
-*key*  
+*key*<br/>
 Specifies the key that identifies the element to be looked up.
 
-*value*  
+*value*<br/>
 Variable that receives the looked-up value.
 
 ### Return Value
@@ -158,7 +158,7 @@ bool RemoveKey(KINARGTYPE key) throw();
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key corresponding to the element pair you want to remove.
 
 ### Return Value
@@ -185,10 +185,10 @@ POSITION SetAt(
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key value to add to the `CRBMap` object.
 
-*value*  
+*value*<br/>
 The value to add to the `CRBMap` object.
 
 ### Return Value
@@ -207,7 +207,7 @@ See the documentation for the base class [CRBTree](../../atl/reference/crbtree-c
 
 ## See Also
 
-[CRBTree Class](../../atl/reference/crbtree-class.md)   
-[CAtlMap Class](../../atl/reference/catlmap-class.md)   
-[CRBMultiMap Class](../../atl/reference/crbmultimap-class.md)   
+[CRBTree Class](../../atl/reference/crbtree-class.md)<br/>
+[CAtlMap Class](../../atl/reference/catlmap-class.md)<br/>
+[CRBMultiMap Class](../../atl/reference/crbmultimap-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

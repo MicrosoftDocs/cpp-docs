@@ -25,7 +25,7 @@ class CComObjectGlobal : public Base
 
 #### Parameters
 
-*Base*  
+*Base*<br/>
 Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), as well as from any other interface you want to support on the object.
 
 ## Members
@@ -125,10 +125,10 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] The GUID of the interface being requested.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] A pointer to the interface pointer identified by iid, or NULL if the interface is not found.
 
 ### Return Value
@@ -157,7 +157,7 @@ By default, `Release` calls `_Module::Unlock`, where `_Module` is the global ins
 
 ## See Also
 
-[CComObjectStack Class](../../atl/reference/ccomobjectstack-class.md)   
-[CComAggObject Class](../../atl/reference/ccomaggobject-class.md)   
-[CComObject Class](../../atl/reference/ccomobject-class.md)   
+[CComObjectStack Class](../../atl/reference/ccomobjectstack-class.md)<br/>
+[CComAggObject Class](../../atl/reference/ccomaggobject-class.md)<br/>
+[CComObject Class](../../atl/reference/ccomobject-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

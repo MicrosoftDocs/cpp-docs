@@ -22,13 +22,13 @@ This class represents a memory-mapped file, adding a cast operator to the method
 ## Syntax
 
 ```
-template <typename T = char>  
+template <typename T = char>
 class CAtlFileMapping : public CAtlFileMappingBase
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The type of data used for the cast operator.
 
 ## Members
@@ -57,7 +57,7 @@ This class adds a single cast operator to allow implicit conversion of `CAtlFile
 
 Allows implicit conversion of `CAtlFileMapping` objects to `T*`.
 
-```  
+```
 operator T*() const throw();
 ```
 
@@ -71,5 +71,5 @@ Calls [CAtlFileMappingBase::GetData](../../atl/reference/catlfilemappingbase-cla
 
 ## See Also
 
-[CAtlFileMappingBase Class](../../atl/reference/catlfilemappingbase-class.md)   
+[CAtlFileMappingBase Class](../../atl/reference/catlfilemappingbase-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

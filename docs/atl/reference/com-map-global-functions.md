@@ -39,16 +39,16 @@ HRESULT AtlInternalQueryInterface(
 
 ### Parameters
 
-*pThis*  
+*pThis*<br/>
 [in] A pointer to the object that contains the COM map of interfaces exposed to `QueryInterface`.
 
-*pEntries*  
+*pEntries*<br/>
 [in] An array of `_ATL_INTMAP_ENTRY` structures that access a map of available interfaces.
 
-*iid*  
+*iid*<br/>
 [in] The GUID of the interface being requested.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] A pointer to the interface pointer specified in *iid*, or NULL if the interface is not found.
 
 ### Return Value
@@ -73,10 +73,10 @@ BOOL InlineIsEqualUnknown(REFGUID rguid1);
 
 ### Parameters
 
-*rguid1*  
+*rguid1*<br/>
 [in] The GUID to compare to `IID_IUnknown`.
 
 ## See Also
 
-[Functions](../../atl/reference/atl-functions.md)   
+[Functions](../../atl/reference/atl-functions.md)<br/>
 [COM Map Macros](../../atl/reference/com-map-macros.md)

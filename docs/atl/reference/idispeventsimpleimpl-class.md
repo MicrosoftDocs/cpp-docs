@@ -22,19 +22,19 @@ This class provides implementations of the `IDispatch` methods, without getting 
 ## Syntax
 
 ```
-template <UINT nID, class T, const IID* pdiid>  
+template <UINT nID, class T, const IID* pdiid>
 class ATL_NO_VTABLE IDispEventSimpleImpl : public _IDispEventLocator<nID, pdiid>
 ```
 
 #### Parameters
 
-*nID*  
+*nID*<br/>
 A unique identifier for the source object. When `IDispEventSimpleImpl` is the base class for a composite control, use the resource ID of the desired contained control for this parameter. In other cases, use an arbitrary positive integer.
 
-*T*  
+*T*<br/>
 The user's class, which is derived from `IDispEventSimpleImpl`.
 
-*pdiid*  
+*pdiid*<br/>
 The pointer to the IID of the event dispinterface implemented by this class.
 
 ## Members
@@ -99,7 +99,7 @@ HRESULT Advise(IUnknown* pUnk);
 
 ### Parameters
 
-*pUnk*  
+*pUnk*<br/>
 [in] A pointer to the `IUnknown` interface of the event source object.
 
 ### Return Value
@@ -125,10 +125,10 @@ HRESULT DispEventAdvise(IUnknown* pUnk  const IID* piid);
 
 ### Parameters
 
-*pUnk*  
+*pUnk*<br/>
 [in] A pointer to the `IUnknown` interface of the event source object.
 
-*piid*  
+*piid*<br/>
 A pointer to the IID of the event source object.
 
 ### Return Value
@@ -154,10 +154,10 @@ HRESULT DispEventUnadvise(IUnknown* pUnk  const IID* piid);
 
 ### Parameters
 
-*pUnk*  
+*pUnk*<br/>
 [in] A pointer to the `IUnknown` interface of the event source object.
 
-*piid*  
+*piid*<br/>
 A pointer to the IID of the event source object.
 
 ### Return Value
@@ -247,7 +247,7 @@ HRESULT Unadvise(IUnknown* pUnk);
 
 ### Parameters
 
-*pUnk*  
+*pUnk*<br/>
 [in] A pointer to the `IUnknown` interface of the event source object.
 
 ### Return Value
@@ -267,8 +267,8 @@ Once the connection is broken, events will no longer be routed to the handler fu
 
 ## See Also
 
-[_ATL_FUNC_INFO Structure](../../atl/reference/atl-func-info-structure.md)   
-[IDispatchImpl Class](../../atl/reference/idispatchimpl-class.md)   
-[IDispEventImpl Class](../../atl/reference/idispeventimpl-class.md)   
-[SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)   
+[_ATL_FUNC_INFO Structure](../../atl/reference/atl-func-info-structure.md)<br/>
+[IDispatchImpl Class](../../atl/reference/idispatchimpl-class.md)<br/>
+[IDispEventImpl Class](../../atl/reference/idispeventimpl-class.md)<br/>
+[SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

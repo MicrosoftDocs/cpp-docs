@@ -19,19 +19,19 @@ This class provides support for a simple mapping array.
 ## Syntax
 
 ```
-template <class TKey, class TVal, class TEqual = CSimpleMapEqualHelper<TKey, TVal>>  
+template <class TKey, class TVal, class TEqual = CSimpleMapEqualHelper<TKey, TVal>>
 class CSimpleMap
 ```
 
 #### Parameters
 
-*TKey*  
+*TKey*<br/>
 The key element type.
 
-*TVal*  
+*TVal*<br/>
 The value element type.
 
-*TEqual*  
+*TEqual*<br/>
 A trait object, defining the equality test for elements of type `T`.
 
 ## Members
@@ -96,10 +96,10 @@ BOOL Add(const TKey& key, const TVal& val);
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key.
 
-*val*  
+*val*<br/>
 The associated value.
 
 ### Return Value
@@ -160,7 +160,7 @@ int FindKey(const TKey& key) const;
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key to search for.
 
 ### Return Value
@@ -177,7 +177,7 @@ int FindVal(const TVal& val) const;
 
 ### Parameters
 
-*val*  
+*val*<br/>
 The value for which to search.
 
 ### Return Value
@@ -194,7 +194,7 @@ TKey& GetKeyAt(int nIndex) const;
 
 ### Parameters
 
-*nIndex*  
+*nIndex*<br/>
 The index of the key to return.
 
 ### Return Value
@@ -227,7 +227,7 @@ TVal& GetValueAt(int nIndex) const;
 
 ### Parameters
 
-*nIndex*  
+*nIndex*<br/>
 The index of the value to return.
 
 ### Return Value
@@ -248,7 +248,7 @@ TVal Lookup(const TKey& key) const;
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key.
 
 ### Return Value
@@ -265,7 +265,7 @@ BOOL Remove(const TKey& key);
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key.
 
 ### Return Value
@@ -294,7 +294,7 @@ BOOL RemoveAt(int nIndex);
 
 ### Parameters
 
-*nIndex*  
+*nIndex*<br/>
 The index of the key and associated value to remove.
 
 ### Return Value
@@ -311,7 +311,7 @@ TKey ReverseLookup(const TVal& val) const;
 
 ### Parameters
 
-*val*  
+*val*<br/>
 The value.
 
 ### Return Value
@@ -328,10 +328,10 @@ BOOL SetAt(const TKey& key, const TVal& val);
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key.
 
-*val*  
+*val*<br/>
 The new value to assign.
 
 ### Return Value
@@ -351,13 +351,13 @@ BOOL SetAtIndex(
 
 ### Parameters
 
-*nIndex*  
+*nIndex*<br/>
 The index, referencing the key and value pairing to change.
 
-*key*  
+*key*<br/>
 The new key.
 
-*val*  
+*val*<br/>
 The new value.
 
 ### Return Value

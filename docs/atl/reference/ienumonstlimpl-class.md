@@ -20,25 +20,25 @@ This class defines an enumerator interface based on a C++ Standard Library colle
 
 ```
 template <class Base,
-    const IID* piid, class T, class Copy, class CollType>  
+    const IID* piid, class T, class Copy, class CollType>
 class ATL_NO_VTABLE IEnumOnSTLImpl : public Base
 ```
 
 #### Parameters
 
-*Base*  
+*Base*<br/>
 A COM enumerator. See [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) for an example.
 
-*piid*  
+*piid*<br/>
 A pointer to the interface ID of the enumerator interface.
 
-*T*  
+*T*<br/>
 The type of item exposed by the enumerator interface.
 
-*Copy*  
+*Copy*<br/>
 A [copy policy class](../../atl/atl-copy-policy-classes.md).
 
-*CollType*  
+*CollType*<br/>
 A C++ Standard Library container class.
 
 ## Members
@@ -94,10 +94,10 @@ HRESULT Init(
 
 ### Parameters
 
-*pUnkForRelease*  
+*pUnkForRelease*<br/>
 [in] The `IUnknown` pointer of an object that must be kept alive during the lifetime of the enumerator. Pass NULL if no such object exists.
 
-*collection*  
+*collection*<br/>
 A reference to the C++ Standard Library container that holds the items to be enumerated.
 
 ### Return Value
@@ -120,7 +120,7 @@ STDMETHOD(Clone)(Base** ppEnum);
 
 ### Parameters
 
-*ppEnum*  
+*ppEnum*<br/>
 [out] The enumerator interface on a newly created object cloned from the current enumerator.
 
 ### Return Value
@@ -172,13 +172,13 @@ STDMETHOD(Next)(
 
 ### Parameters
 
-*celt*  
+*celt*<br/>
 [in] The number of elements requested.
 
-*rgelt*  
+*rgelt*<br/>
 [out] The array to be filled in with the elements.
 
-*pceltFetched*  
+*pceltFetched*<br/>
 [out] The number of elements actually returned in *rgelt*. This can be less than *celt* if fewer than *celt* elements remain in the list.
 
 ### Return Value
@@ -207,7 +207,7 @@ STDMETHOD(Skip)(ULONG celt);
 
 ### Parameters
 
-*celt*  
+*celt*<br/>
 [in] The number of elements to skip.
 
 ### Return Value

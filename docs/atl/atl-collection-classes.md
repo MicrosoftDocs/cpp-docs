@@ -119,6 +119,6 @@ The following samples demonstrate the collection classes:
 
 ## See Also
 
-[Concepts](../atl/active-template-library-atl-concepts.md)   
+[Concepts](../atl/active-template-library-atl-concepts.md)<br/>
 [Collection Classes](../atl/collection-classes.md)
 

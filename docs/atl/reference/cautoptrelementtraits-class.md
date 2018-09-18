@@ -22,8 +22,8 @@ This class provides methods, static functions, and typedefs useful when creating
 ## Syntax
 
 ```
-template<typename T>  
-class CAutoPtrElementTraits 
+template<typename T>
+class CAutoPtrElementTraits
     : public CDefaultElementTraits<ATL::CAutoPtr<T>>
 ```
 
@@ -79,5 +79,5 @@ typedef T *& OUTARGTYPE;
 
 ## See Also
 
-[CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)   
+[CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

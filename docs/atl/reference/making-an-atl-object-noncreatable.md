@@ -34,10 +34,10 @@ You can change the attributes of an ATL-based COM object so that a client cannot
 
 ## See Also
 
-[ATL Project Wizard](../../atl/reference/atl-project-wizard.md)   
-[Visual C++ Project Types](../../ide/visual-cpp-project-types.md)   
-[Creating Desktop Projects By Using Application Wizards](../../ide/creating-desktop-projects-by-using-application-wizards.md)   
-[Programming with ATL and C Run-Time Code](../../atl/programming-with-atl-and-c-run-time-code.md)   
-[Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)   
+[ATL Project Wizard](../../atl/reference/atl-project-wizard.md)<br/>
+[Visual C++ Project Types](../../ide/visual-cpp-project-types.md)<br/>
+[Creating Desktop Projects By Using Application Wizards](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
+[Programming with ATL and C Run-Time Code](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
+[Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Default ATL Project Configurations](../../atl/reference/default-atl-project-configurations.md)
 

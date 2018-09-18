@@ -20,22 +20,22 @@ This class provides the implementation for a COM enumerator interface where the 
 
 ```
 template <class Base,
-    const IID* piid, class T, class Copy>  
+    const IID* piid, class T, class Copy>
 class ATL_NO_VTABLE CComEnumImpl : public Base
 ```
 
 #### Parameters
 
-*Base*  
+*Base*<br/>
 A COM enumerator interface. See [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) for an example.
 
-*piid*  
+*piid*<br/>
 A pointer to the interface ID of the enumerator interface.
 
-*T*  
+*T*<br/>
 The type of item exposed by the enumerator interface.
 
-*Copy*  
+*Copy*<br/>
 A homogeneous [copy policy class](../../atl/atl-copy-policy-classes.md).
 
 ## Members
@@ -120,16 +120,16 @@ HRESULT Init(
 
 ### Parameters
 
-*begin*  
+*begin*<br/>
 A pointer to the first element of the array containing the items to be enumerated.
 
-*end*  
+*end*<br/>
 A pointer to the location just beyond the last element of the array containing the items to be enumerated.
 
-*pUnk*  
+*pUnk*<br/>
 [in] The `IUnknown` pointer of an object that must be kept alive during the lifetime of the enumerator. Pass NULL if no such object exists.
 
-*flags*  
+*flags*<br/>
 Flags specifying whether or not the enumerator should take ownership of the array or make a copy of it. Possible values are described below.
 
 ### Return Value
@@ -144,13 +144,13 @@ If you pass pointers to items in an array held in another object (and you don't 
 
 The *flags* parameter allows you to specify how the enumerator should treat the array elements passed to it. *flags* can take one of the values from the `CComEnumFlags` enumeration shown below:
 
-```  
-enum CComEnumFlags  
-   {  
-   AtlFlagNoCopy = 0,  
-   AtlFlagTakeOwnership = 2, // BitOwn  
-   AtlFlagCopy = 3           // BitOwn | BitCopy  
-   };  
+```
+enum CComEnumFlags
+   {
+   AtlFlagNoCopy = 0,
+   AtlFlagTakeOwnership = 2, // BitOwn
+   AtlFlagCopy = 3           // BitOwn | BitCopy
+   };
 ```
 
 `AtlFlagNoCopy` means that the array's lifetime is not controlled by the enumerator. In this case, either the array will be static or the object identified by *pUnk* will be responsible for freeing the array when it's no longer needed.
@@ -172,7 +172,7 @@ STDMETHOD(Clone)(Base** ppEnum);
 
 ### Parameters
 
-*ppEnum*  
+*ppEnum*<br/>
 [out] The enumerator interface on a newly created object cloned from the current enumerator.
 
 ### Return Value
@@ -233,13 +233,13 @@ STDMETHOD(Next)(ULONG celt, T* rgelt, ULONG* pceltFetched);
 
 ### Parameters
 
-*celt*  
+*celt*<br/>
 [in] The number of elements requested.
 
-*rgelt*  
+*rgelt*<br/>
 [out] The array to be filled with the elements.
 
-*pceltFetched*  
+*pceltFetched*<br/>
 [out] The number of elements actually returned in *rgelt*. This can be less than *celt* if fewer than *celt* elements remained in the list.
 
 ### Return Value
@@ -268,7 +268,7 @@ STDMETHOD(Skip)(ULONG celt);
 
 ### Parameters
 
-*celt*  
+*celt*<br/>
 [in] The number of elements to skip.
 
 ### Return Value
@@ -281,6 +281,6 @@ Returns E_INVALIDARG if *celt* is zero, returns S_FALSE if less than *celt* elem
 
 ## See Also
 
-[IEnumOnSTLImpl Class](../../atl/reference/ienumonstlimpl-class.md)   
-[CComEnum Class](../../atl/reference/ccomenum-class.md)   
+[IEnumOnSTLImpl Class](../../atl/reference/ienumonstlimpl-class.md)<br/>
+[CComEnum Class](../../atl/reference/ccomenum-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

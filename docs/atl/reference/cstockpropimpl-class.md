@@ -26,7 +26,7 @@ template <class T, class InterfaceName,
     const IID* piid = &_ATL_IIDOF(InterfaceName),
     const GUID* plibid = &CComModule::m_libid,
     WORD wMajor = 1,
-    WORD wMinor = 0, class tihclass = CcomTypeInfoHolder>  
+    WORD wMinor = 0, class tihclass = CcomTypeInfoHolder>
 class ATL_NO_VTABLE CStockPropImpl : public IDispatchImpl<InterfaceName, piid,
 plibid,
     wMajor,
@@ -36,25 +36,25 @@ wMinor,
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The class implementing the control and deriving from `CStockPropImpl`.
 
-*InterfaceName*  
+*InterfaceName*<br/>
 A dual interface exposing the stock properties.
 
-*piid*  
+*piid*<br/>
 A pointer to the IID of `InterfaceName`.
 
-*plibid*  
+*plibid*<br/>
 A pointer to the LIBID of the type library containing the definition of `InterfaceName`.
 
-*wMajor*  
+*wMajor*<br/>
 The major version of the type library. The default value is 1.
 
-*wMinor*  
+*wMinor*<br/>
 The minor version of the type library. The default value is 0.
 
-*tihclass*  
+*tihclass*<br/>
 The class used to manage the type information for *T*. The default value is `CComTypeInfoHolder`.
 
 ## Members
@@ -159,7 +159,7 @@ HRESULT STDMETHODCALLTYPE get_Appearance(SHORT pnAppearance);
 
 ### Parameters
 
-*pnAppearance*  
+*pnAppearance*<br/>
 Variable that receives the control's paint style.
 
 ### Return Value
@@ -176,7 +176,7 @@ HRESULT STDMETHODCALLTYPE get_Autosize(VARIANT_BOOL* pbAutoSize);
 
 ### Parameters
 
-*pbAutoSize*  
+*pbAutoSize*<br/>
 Variable that receives the flag status. TRUE indicates that the control cannot be any other size.
 
 ### Return Value
@@ -193,7 +193,7 @@ HRESULT STDMETHODCALLTYPE get_BackColor(OLE_COLOR* pclrBackColor);
 
 ### Parameters
 
-*pclrBackColor*  
+*pclrBackColor*<br/>
 Variable that receives the control's background color.
 
 ### Return Value
@@ -210,7 +210,7 @@ HRESULT STDMETHODCALLTYPE get_BackStyle(LONG* pnBackStyle);
 
 ### Parameters
 
-*pnBackStyle*  
+*pnBackStyle*<br/>
 Variable that receives the control's background style.
 
 ### Return Value
@@ -227,7 +227,7 @@ HRESULT STDMETHODCALLTYPE get_BorderColor(OLE_COLOR* pclrBorderColor);
 
 ### Parameters
 
-*pclrBorderColor*  
+*pclrBorderColor*<br/>
 Variable that receives the control's border color.
 
 ### Return Value
@@ -244,7 +244,7 @@ HRESULT STDMETHODCALLTYPE get_BorderStyle(LONG* pnBorderStyle);
 
 ### Parameters
 
-*pnBorderStyle*  
+*pnBorderStyle*<br/>
 Variable that receives the control's border style.
 
 ### Return Value
@@ -261,7 +261,7 @@ HRESULT STDMETHODCALLTYPE get_BorderVisible(VARIANT_BOOL* pbBorderVisible);
 
 ### Parameters
 
-*pbBorderVisible*  
+*pbBorderVisible*<br/>
 Variable that receives the flag status. TRUE indicates that the control's border is visible.
 
 ### Return Value
@@ -278,7 +278,7 @@ HRESULT STDMETHODCALLTYPE get_BorderWidth(LONG* pnBorderWidth);
 
 ### Parameters
 
-*pnBorderWidth*  
+*pnBorderWidth*<br/>
 Variable that receives the control's border width.
 
 ### Return Value
@@ -295,7 +295,7 @@ HRESULT STDMETHODCALLTYPE get_Caption(BSTR* pbstrCaption);
 
 ### Parameters
 
-*pbstrCaption*  
+*pbstrCaption*<br/>
 The text to be displayed with the control.
 
 ### Return Value
@@ -312,7 +312,7 @@ HRESULT STDMETHODCALLTYPE get_DrawMode(LONG* pnDrawMode);
 
 ### Parameters
 
-*pnDrawMode*  
+*pnDrawMode*<br/>
 Variable that receives the control's drawing mode.
 
 ### Return Value
@@ -329,7 +329,7 @@ HRESULT STDMETHODCALLTYPE get_DrawStyle(LONG* pnDrawStyle);
 
 ### Parameters
 
-*pnDrawStyle*  
+*pnDrawStyle*<br/>
 Variable that receives the control's drawing style.
 
 ### Return Value
@@ -346,7 +346,7 @@ HRESULT STDMETHODCALLTYPE get_DrawWidth(LONG* pnDrawWidth);
 
 ### Parameters
 
-*pnDrawWidth*  
+*pnDrawWidth*<br/>
 Variable that receives the control's width value, in pixels.
 
 ### Return Value
@@ -363,7 +363,7 @@ HRESULT STDMETHODCALLTYPE get_Enabled(VARIANT_BOOL* pbEnabled);
 
 ### Parameters
 
-*pbEnabled*  
+*pbEnabled*<br/>
 Variable that receives the flag status. TRUE indicates that the control is enabled.
 
 ### Return Value
@@ -380,7 +380,7 @@ HRESULT STDMETHODCALLTYPE get_FillColor(OLE_COLOR* pclrFillColor);
 
 ### Parameters
 
-*pclrFillColor*  
+*pclrFillColor*<br/>
 Variable that receives the control's fill color.
 
 ### Return Value
@@ -397,7 +397,7 @@ HRESULT STDMETHODCALLTYPE get_FillStyle(LONG* pnFillStyle);
 
 ### Parameters
 
-*pnFillStyle*  
+*pnFillStyle*<br/>
 Variable that receives the control's fill style.
 
 ### Return Value
@@ -414,7 +414,7 @@ HRESULT STDMETHODCALLTYPE get_Font(IFontDisp** ppFont);
 
 ### Parameters
 
-*ppFont*  
+*ppFont*<br/>
 Variable that receives a pointer to the control's font properties.
 
 ### Return Value
@@ -431,7 +431,7 @@ HRESULT STDMETHODCALLTYPE get_ForeColor(OLE_COLOR* pclrForeColor);
 
 ### Parameters
 
-*pclrForeColor*  
+*pclrForeColor*<br/>
 Variable that receives the controls foreground color.
 
 ### Return Value
@@ -448,7 +448,7 @@ HRESULT STDMETHODCALLTYPE get_HWND(LONG_PTR* phWnd);
 
 ### Parameters
 
-*phWnd*  
+*phWnd*<br/>
 The window handle associated with the control.
 
 ### Return Value
@@ -465,7 +465,7 @@ HRESULT STDMETHODCALLTYPE get_MouseIcon(IPictureDisp** ppPicture);
 
 ### Parameters
 
-*ppPicture*  
+*ppPicture*<br/>
 Variable that receives a pointer to the picture properties of the graphic.
 
 ### Return Value
@@ -482,7 +482,7 @@ HRESULT STDMETHODCALLTYPE get_MousePointer(LONG* pnMousePointer);
 
 ### Parameters
 
-*pnMousePointer*  
+*pnMousePointer*<br/>
 Variable that receives the type of mouse pointer.
 
 ### Return Value
@@ -499,7 +499,7 @@ HRESULT STDMETHODCALLTYPE get_Picture(IPictureDisp** ppPicture);
 
 ### Parameters
 
-*ppPicture*  
+*ppPicture*<br/>
 Variable that receives a pointer to the picture's properties. See [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) for more details.
 
 ### Return Value
@@ -516,7 +516,7 @@ HRESULT STDMETHODCALLTYPE get_ReadyState(LONG* pnReadyState);
 
 ### Parameters
 
-*pnReadyState*  
+*pnReadyState*<br/>
 Variable that receives the control's ready state.
 
 ### Return Value
@@ -533,7 +533,7 @@ HRESULT STDMETHODCALLTYPE get_TabStop(VARIANT_BOOL* pbTabStop);
 
 ### Parameters
 
-*pbTabStop*  
+*pbTabStop*<br/>
 Variable that receives the flag status. TRUE indicates that the control is a tab stop.
 
 ### Return Value
@@ -550,7 +550,7 @@ HRESULT STDMETHODCALLTYPE get_Text(BSTR* pbstrText);
 
 ### Parameters
 
-*pbstrText*  
+*pbstrText*<br/>
 The text that is displayed with the control.
 
 ### Return Value
@@ -567,7 +567,7 @@ HRESULT STDMETHODCALLTYPE getvalid(VARIANT_BOOL* pbValid);
 
 ### Parameters
 
-*pbValid*  
+*pbValid*<br/>
 Variable that receives the flag status. TRUE indicates that the control is valid.
 
 ### Return Value
@@ -584,7 +584,7 @@ HRESULT STDMETHODCALLTYPE get_Window(LONG_PTR* phWnd);
 
 ### Parameters
 
-*phWnd*  
+*phWnd*<br/>
 The window handle associated with the control.
 
 ### Return Value
@@ -601,7 +601,7 @@ HRESULT STDMETHODCALLTYPE put_Appearance(SHORT nAppearance);
 
 ### Parameters
 
-*nAppearance*  
+*nAppearance*<br/>
 The new paint style to be used by the control.
 
 ### Return Value
@@ -618,7 +618,7 @@ HRESULT STDMETHODCALLTYPE put_AutoSize(VARIANT_BOOL bAutoSize,);
 
 ### Parameters
 
-*bAutoSize*  
+*bAutoSize*<br/>
 TRUE if the control cannot be any other size.
 
 ### Return Value
@@ -635,7 +635,7 @@ HRESULT STDMETHODCALLTYPE put_BackColor(OLE_COLOR clrBackColor);
 
 ### Parameters
 
-*clrBackColor*  
+*clrBackColor*<br/>
 The new control background color.
 
 ### Return Value
@@ -652,7 +652,7 @@ HRESULT STDMETHODCALLTYPE put_BackStyle(LONG nBackStyle);
 
 ### Parameters
 
-*nBackStyle*  
+*nBackStyle*<br/>
 The new control background style.
 
 ### Return Value
@@ -669,7 +669,7 @@ HRESULT STDMETHODCALLTYPE put_BorderColor(OLE_COLOR clrBorderColor);
 
 ### Parameters
 
-*clrBorderColor*  
+*clrBorderColor*<br/>
 The new border color. The OLE_COLOR data type is internally represented as a 32-bit long integer.
 
 ### Return Value
@@ -686,7 +686,7 @@ HRESULT STDMETHODCALLTYPE put_BorderStyle(LONG nBorderStyle);
 
 ### Parameters
 
-*nBorderStyle*  
+*nBorderStyle*<br/>
 The new border style.
 
 ### Return Value
@@ -703,7 +703,7 @@ HRESULT STDMETHODCALLTYPE put_BorderVisible(VARIANT_BOOL bBorderVisible);
 
 ### Parameters
 
-*bBorderVisible*  
+*bBorderVisible*<br/>
 TRUE if the border is to be visible.
 
 ### Return Value
@@ -720,7 +720,7 @@ HRESULT STDMETHODCALLTYPE put_BorderWidth(LONG nBorderWidth);
 
 ### Parameters
 
-*nBorderWidth*  
+*nBorderWidth*<br/>
 The new width of the control's border.
 
 ### Return Value
@@ -737,7 +737,7 @@ HRESULT STDMETHODCALLTYPE put_Caption(BSTR bstrCaption);
 
 ### Parameters
 
-*bstrCaption*  
+*bstrCaption*<br/>
 The text to be displayed with the control.
 
 ### Return Value
@@ -754,7 +754,7 @@ HRESULT STDMETHODCALLTYPE put_DrawMode(LONG nDrawMode);
 
 ### Parameters
 
-*nDrawMode*  
+*nDrawMode*<br/>
 The new drawing mode for the control.
 
 ### Return Value
@@ -771,7 +771,7 @@ HRESULT STDMETHODCALLTYPE put_DrawStyle(LONG pnDrawStyle);
 
 ### Parameters
 
-*nDrawStyle*  
+*nDrawStyle*<br/>
 The new drawing style for the control.
 
 ### Return Value
@@ -788,7 +788,7 @@ HRESULT STDMETHODCALLTYPE put_DrawWidth(LONG nDrawWidth);
 
 ### Parameters
 
-*nDrawWidth*  
+*nDrawWidth*<br/>
 The new width to be used by the control's drawing methods.
 
 ### Return Value
@@ -805,7 +805,7 @@ HRESULT STDMETHODCALLTYPE put_Enabled(VARIANT_BOOL bEnabled);
 
 ### Parameters
 
-*bEnabled*  
+*bEnabled*<br/>
 TRUE if the control is enabled.
 
 ### Return Value
@@ -822,7 +822,7 @@ HRESULT STDMETHODCALLTYPE put_FillColor(OLE_COLOR clrFillColor);
 
 ### Parameters
 
-*clrFillColor*  
+*clrFillColor*<br/>
 The new fill color for the control.
 
 ### Return Value
@@ -839,7 +839,7 @@ HRESULT STDMETHODCALLTYPE put_FillStyle(LONG nFillStyle);
 
 ### Parameters
 
-*nFillStyle*  
+*nFillStyle*<br/>
 The new fill style for the control.
 
 ### Return Value
@@ -856,7 +856,7 @@ HRESULT STDMETHODCALLTYPE put_Font(IFontDisp* pFont);
 
 ### Parameters
 
-*pFont*  
+*pFont*<br/>
 A pointer to the control's font properties.
 
 ### Return Value
@@ -873,7 +873,7 @@ HRESULT STDMETHODCALLTYPE put_ForeColor(OLE_COLOR clrForeColor);
 
 ### Parameters
 
-*clrForeColor*  
+*clrForeColor*<br/>
 The new foreground color of the control.
 
 ### Return Value
@@ -890,7 +890,7 @@ HRESULT STDMETHODCALLTYPE put_HWND(LONG_PTR /* hWnd */);
 
 ### Parameters
 
-*/&ast; hWnd &ast;/*  
+*/&ast; hWnd &ast;/*<br/>
 Reserved.
 
 ### Return Value
@@ -911,7 +911,7 @@ HRESULT STDMETHODCALLTYPE put_MouseIcon(IPictureDisp* pPicture);
 
 ### Parameters
 
-*pPicture*  
+*pPicture*<br/>
 A pointer to the picture properties of the graphic.
 
 ### Return Value
@@ -928,7 +928,7 @@ HRESULT STDMETHODCALLTYPE put_MousePointer(LONG nMousePointer);
 
 ### Parameters
 
-*nMousePointer*  
+*nMousePointer*<br/>
 The type of mouse pointer.
 
 ### Return Value
@@ -945,7 +945,7 @@ HRESULT STDMETHODCALLTYPE put_Picture(IPictureDisp* pPicture);
 
 ### Parameters
 
-*pPicture*  
+*pPicture*<br/>
 A pointer to the picture's properties. See [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) for more details.
 
 ### Return Value
@@ -962,7 +962,7 @@ HRESULT STDMETHODCALLTYPE put_ReadyState(LONG nReadyState);
 
 ### Parameters
 
-*nReadyState*  
+*nReadyState*<br/>
 The control's ready state.
 
 ### Return Value
@@ -979,7 +979,7 @@ HRESULT STDMETHODCALLTYPE put_TabStop(VARIANT_BOOL bTabStop);
 
 ### Parameters
 
-*bTabStop*  
+*bTabStop*<br/>
 TRUE if the control is a tab stop.
 
 ### Return Value
@@ -996,7 +996,7 @@ HRESULT STDMETHODCALLTYPE put_Text(BSTR bstrText);
 
 ### Parameters
 
-*bstrText*  
+*bstrText*<br/>
 The text that is displayed with the control.
 
 ### Return Value
@@ -1013,7 +1013,7 @@ HRESULT STDMETHODCALLTYPE getvalid(VARIANT_BOOL bValid);
 
 ### Parameters
 
-*bValid*  
+*bValid*<br/>
 TRUE if the control is valid.
 
 ### Return Value
@@ -1030,7 +1030,7 @@ HRESULT STDMETHODCALLTYPE put_Window(LONG_PTR hWnd);
 
 ### Parameters
 
-*hWnd*  
+*hWnd*<br/>
 The window handle.
 
 ### Return Value
@@ -1051,7 +1051,7 @@ HRESULT STDMETHODCALLTYPE putref_Font(IFontDisp* pFont);
 
 ### Parameters
 
-*pFont*  
+*pFont*<br/>
 A pointer to the control's font properties.
 
 ### Return Value
@@ -1072,7 +1072,7 @@ HRESULT STDMETHODCALLTYPE putref_MouseIcon(IPictureDisp* pPicture);
 
 ### Parameters
 
-*pPicture*  
+*pPicture*<br/>
 A pointer to the picture properties of the graphic.
 
 ### Return Value
@@ -1093,7 +1093,7 @@ HRESULT STDMETHODCALLTYPE putref_Picture(IPictureDisp* pPicture);
 
 ### Parameters
 
-*pPicture*  
+*pPicture*<br/>
 A pointer to the picture's properties. See [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) for more details.
 
 ### Return Value
@@ -1106,5 +1106,5 @@ The same as [CStockPropImpl::put_Picture](#put_picture), but with a reference co
 
 ## See Also
 
-[Class Overview](../../atl/atl-class-overview.md)   
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [IDispatchImpl Class](../../atl/reference/idispatchimpl-class.md)

@@ -33,6 +33,6 @@ Once your project is created, you can view the files created in **Solution Explo
 
 ## See Also
 
-[Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)   
+[Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Property Pages](../../ide/property-pages-visual-cpp.md)   
 

@@ -22,17 +22,17 @@ This class exposes [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipr
 ## Syntax
 
 ```
-template<class T, class CDV = CComDynamicUnkArray>  
+template<class T, class CDV = CComDynamicUnkArray>
 class IPropertyNotifySinkCP 
    : public IConnectionPointImpl<T, &IID_IPropertyNotifySink, CDV>
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IPropertyNotifySinkCP`.
 
-*CDV*  
+*CDV*<br/>
 A class that manages the connections between a connection point and its sinks. The default value is [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md), which allows unlimited connections. You can also use [CComUnkArray](../../atl/reference/ccomunkarray-class.md), which specifies a fixed number of connections.
 
 ## Remarks
@@ -51,6 +51,6 @@ For more information about using connection points in ATL, see the article [Conn
 
 ## See Also
 
-[IConnectionPointImpl Class](../../atl/reference/iconnectionpointimpl-class.md)   
-[IConnectionPointContainerImpl Class](../../atl/reference/iconnectionpointcontainerimpl-class.md)   
+[IConnectionPointImpl Class](../../atl/reference/iconnectionpointimpl-class.md)<br/>
+[IConnectionPointContainerImpl Class](../../atl/reference/iconnectionpointcontainerimpl-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

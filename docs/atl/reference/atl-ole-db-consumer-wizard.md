@@ -180,6 +180,6 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
 
 ## See also
 
-[ATL OLE DB Consumer](../../atl/reference/adding-an-atl-ole-db-consumer.md)
-[Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)
+[ATL OLE DB Consumer](../../atl/reference/adding-an-atl-ole-db-consumer.md)<br/>
+[Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Connection Strings and Data Links (OLE DB)](/previous-versions/windows/desktop/ms718376\(v=vs.85\))

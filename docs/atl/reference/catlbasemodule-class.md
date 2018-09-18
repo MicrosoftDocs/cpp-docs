@@ -73,7 +73,7 @@ bool AddResourceInstance(HINSTANCE hInst) throw();
 
 ### Parameters
 
-*hInst*  
+*hInst*<br/>
 The resource instance to add.
 
 ### Return Value
@@ -102,7 +102,7 @@ HINSTANCE GetHInstanceAt(int i) throw();
 
 ### Parameters
 
-*i*  
+*i*<br/>
 The number of the resource instance.
 
 ### Return Value
@@ -155,7 +155,7 @@ bool RemoveResourceInstance(HINSTANCE hInst) throw();
 
 ### Parameters
 
-*hInst*  
+*hInst*<br/>
 The resource instance to remove.
 
 ### Return Value
@@ -172,7 +172,7 @@ HINSTANCE SetResourceInstance(HINSTANCE hInst) throw();
 
 ### Parameters
 
-*hInst*  
+*hInst*<br/>
 The new resource instance.
 
 ### Return Value
@@ -181,5 +181,5 @@ Returns the updated resource instance.
 
 ## See Also
 
-[Class Overview](../../atl/atl-class-overview.md)   
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [Module Classes](../../atl/atl-module-classes.md)

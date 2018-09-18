@@ -19,16 +19,16 @@ This class provides methods for creating and managing a list object.
 ## Syntax
 
 ```
-template<typename E, class ETraits = CElementTraits<E>>  
+template<typename E, class ETraits = CElementTraits<E>>
 class CAtlList
 ```
 
 #### Parameters
 
-*E*  
+*E*<br/>
 The element type.
 
-*ETraits*  
+*ETraits*<br/>
 The code used to copy or move elements. See [CElementTraits Class](../../atl/reference/celementtraits-class.md) for more details.
 
 ## Members
@@ -102,7 +102,7 @@ POSITION AddHead(INARGTYPE element);
 
 ### Parameters
 
-*element*  
+*element*<br/>
 The new element.
 
 ### Return Value
@@ -127,7 +127,7 @@ void AddHeadList(const CAtlList<E, ETraits>* plNew);
 
 ### Parameters
 
-*plNew*  
+*plNew*<br/>
 The list to be added.
 
 ### Remarks
@@ -149,7 +149,7 @@ POSITION AddTail(INARGTYPE element);
 
 ### Parameters
 
-*element*  
+*element*<br/>
 The element to add.
 
 ### Return Value
@@ -174,7 +174,7 @@ void AddTailList(const CAtlList<E, ETraits>* plNew);
 
 ### Parameters
 
-*plNew*  
+*plNew*<br/>
 The list to be added.
 
 ### Remarks
@@ -211,7 +211,7 @@ CAtlList(UINT nBlockSize = 10) throw();
 
 ### Parameters
 
-*nBlockSize*  
+*nBlockSize*<br/>
 The block size.
 
 ### Remarks
@@ -246,10 +246,10 @@ POSITION Find(INARGTYPE element, POSITION posStartAfter = NULL) const throw();
 
 ### Parameters
 
-*element*  
+*element*<br/>
 The element to be found in the list.
 
-*posStartAfter*  
+*posStartAfter*<br/>
 The start position for the search. If no value is specified, the search begins with the head element.
 
 ### Return Value
@@ -274,7 +274,7 @@ POSITION FindIndex(size_t iElement) const throw();
 
 ### Parameters
 
-*iElement*  
+*iElement*<br/>
 The zero-based index of the required list element.
 
 ### Return Value
@@ -302,7 +302,7 @@ const E& GetAt(POSITION pos) const throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The POSITION value specifying a particular element.
 
 ### Return Value
@@ -393,7 +393,7 @@ const E& GetNext(POSITION& pos) const throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 A POSITION value, returned by a previous call to `GetNext`, [CAtlList::GetHeadPosition](#getheadposition), or other `CAtlList` method.
 
 ### Return Value
@@ -421,7 +421,7 @@ const E& GetPrev(POSITION& pos) const throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 A POSITION value, returned by a previous call to `GetPrev`, [CAtlList::GetTailPosition](#gettailposition), or other `CAtlList` method.
 
 ### Return Value
@@ -501,10 +501,10 @@ POSITION InsertAfter(POSITION pos, INARGTYPE element);
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The POSITION value after which the new element will be inserted.
 
-*element*  
+*element*<br/>
 The element to be inserted.
 
 ### Return Value
@@ -529,10 +529,10 @@ POSITION InsertBefore(POSITION pos, INARGTYPE element);
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The new element will be inserted into the list before this POSITION value.
 
-*element*  
+*element*<br/>
 The element to be inserted.
 
 ### Return Value
@@ -573,7 +573,7 @@ void MoveToHead(POSITION pos) throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The POSITION value of the element to move.
 
 ### Remarks
@@ -594,7 +594,7 @@ void MoveToTail(POSITION pos) throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The POSITION value of the element to move.
 
 ### Remarks
@@ -631,7 +631,7 @@ void RemoveAt(POSITION pos) throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The POSITION value of the element to remove.
 
 ### Remarks
@@ -726,10 +726,10 @@ void SetAt(POSITION pos, INARGTYPE element);
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The POSITION value corresponding to the element to change.
 
-*element*  
+*element*<br/>
 The new element value.
 
 ### Remarks
@@ -750,10 +750,10 @@ void SwapElements(POSITION pos1, POSITION pos2) throw();
 
 ### Parameters
 
-*pos1*  
+*pos1*<br/>
 The first POSITION value.
 
-*pos2*  
+*pos2*<br/>
 The second POSITION value.
 
 ### Remarks
@@ -766,5 +766,5 @@ Swaps the elements at the two positions specified. In debug builds, an assertion
 
 ## See Also
 
-[CList Class](../../mfc/reference/clist-class.md)   
+[CList Class](../../mfc/reference/clist-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -22,13 +22,13 @@ This class implements the [IPersistStorage](/windows/desktop/api/objidl/nn-objid
 ## Syntax
 
 ```
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE IPersistStorageImpl : public IPersistStorage
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IPersistStorageImpl`.
 
 ## Members
@@ -165,7 +165,7 @@ See [IPersistStorage:SaveCompleted](/windows/desktop/api/objidl/nf-objidl-ipersi
 
 ## See Also
 
-[Storages and Streams](/windows/desktop/Stg/storages-and-streams)   
-[IPersistStreamInitImpl Class](../../atl/reference/ipersiststreaminitimpl-class.md)   
-[IPersistPropertyBagImpl Class](../../atl/reference/ipersistpropertybagimpl-class.md)   
+[Storages and Streams](/windows/desktop/Stg/storages-and-streams)<br/>
+[IPersistStreamInitImpl Class](../../atl/reference/ipersiststreaminitimpl-class.md)<br/>
+[IPersistPropertyBagImpl Class](../../atl/reference/ipersistpropertybagimpl-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

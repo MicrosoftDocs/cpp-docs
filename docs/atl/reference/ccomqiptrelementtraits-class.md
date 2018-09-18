@@ -19,17 +19,17 @@ This class provides methods, static functions, and typedefs useful when creating
 ## Syntax
 
 ```
-template<typename I, const IID* piid=& __uuidof(I)>  
+template<typename I, const IID* piid=& __uuidof(I)>
 class CComQIPtrElementTraits : 
    public CDefaultElementTraits<ATL::CComQIPtr<I, piid>>
 ```
 
 #### Parameters
 
-*I*  
+*I*<br/>
 A COM interface specifying the type of pointer to be stored.
 
-*piid*  
+*piid*<br/>
 A pointer to the IID of *I*.
 
 ## Members
@@ -72,5 +72,5 @@ typedef I* INARGTYPE;
 
 ## See Also
 
-[CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)   
+[CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

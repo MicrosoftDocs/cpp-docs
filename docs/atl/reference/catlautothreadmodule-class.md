@@ -50,7 +50,7 @@ You must use the [DECLARE_CLASSFACTORY_AUTO_THREAD](aggregation-and-class-factor
 
 ## See Also
 
-[CAtlAutoThreadModuleT Class](../../atl/reference/catlautothreadmodulet-class.md)   
-[IAtlAutoThreadModule Class](../../atl/reference/iatlautothreadmodule-class.md)   
-[Class Overview](../../atl/atl-class-overview.md)   
+[CAtlAutoThreadModuleT Class](../../atl/reference/catlautothreadmodulet-class.md)<br/>
+[IAtlAutoThreadModule Class](../../atl/reference/iatlautothreadmodule-class.md)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [Module Classes](../../atl/atl-module-classes.md)

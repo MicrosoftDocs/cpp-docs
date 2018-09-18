@@ -19,13 +19,13 @@ A smart pointer class for managing COM interface pointers.
 ## Syntax
 
 ```
-template<class T>  
+template<class T>
 class CComPtr
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 A COM interface specifying the type of pointer to be stored.
 
 ## Members
@@ -76,10 +76,10 @@ CComPtr (const CComPtr<T>& lp) throw ();
 
 ### Parameters
 
-*lp*  
+*lp*<br/>
 Used to initialize the interface pointer.
 
-*T*  
+*T*<br/>
 A COM interface.
 
 ##  <a name="operator_eq"></a>  CComPtr::operator =
@@ -101,6 +101,6 @@ This operation AddRefs the new object and releases the existing object, if one e
 
 ## See Also
 
-[CComPtr::CComPtr](#ccomptr)   
-[CComQIPtr::CComQIPtr](../../atl/reference/ccomqiptr-class.md#ccomqiptr)   
+[CComPtr::CComPtr](#ccomptr)<br/>
+[CComQIPtr::CComQIPtr](../../atl/reference/ccomqiptr-class.md#ccomqiptr)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

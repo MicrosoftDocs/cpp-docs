@@ -19,16 +19,16 @@ This class provides methods for managing a simple array.
 ## Syntax
 
 ```
-template <class T, class TEqual = CSimpleArrayEqualHelper<T>>  
+template <class T, class TEqual = CSimpleArrayEqualHelper<T>>
 class CSimpleArray
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The type of data to store in the array.
 
-*TEqual*  
+*TEqual*<br/>
 A trait object, defining the equality test for elements of type *T*.
 
 ## Members
@@ -86,7 +86,7 @@ BOOL Add(const T& t);
 
 ### Parameters
 
-*t*  
+*t*<br/>
 The element to add to the array.
 
 ### Return Value
@@ -102,13 +102,13 @@ Returns TRUE if the element is successfully added to the array, FALSE otherwise.
 The constructor for the array object.
 
 ```
-CSimpleArray(const CSimpleArray<T, TEqual>& src);  
+CSimpleArray(const CSimpleArray<T, TEqual>& src);
 CSimpleArray();
 ```
 
 ### Parameters
 
-*src*  
+*src*<br/>
 An existing `CSimpleArray` object.
 
 ### Remarks
@@ -137,7 +137,7 @@ int Find(const T& t) const;
 
 ### Parameters
 
-*t*  
+*t*<br/>
 The element for which to search.
 
 ### Return Value
@@ -182,7 +182,7 @@ T& operator[](int nindex);
 
 ### Parameters
 
-*nIndex*  
+*nIndex*<br/>
 The element index.
 
 ### Return Value
@@ -205,7 +205,7 @@ CSimpleArray<T, TEqual>
 
 ### Parameters
 
-*src*  
+*src*<br/>
 The array to copy.
 
 ### Return Value
@@ -230,7 +230,7 @@ BOOL Remove(const T& t);
 
 ### Parameters
 
-*t*  
+*t*<br/>
 The element to remove from the array.
 
 ### Return Value
@@ -263,7 +263,7 @@ BOOL RemoveAtint nIndex);
 
 ### Parameters
 
-*nIndex*  
+*nIndex*<br/>
 Index pointing to the element to remove.
 
 ### Return Value
@@ -286,10 +286,10 @@ BOOL SetAtIndex(
 
 ### Parameters
 
-*nIndex*  
+*nIndex*<br/>
 The index of the element to change.
 
-*t*  
+*t*<br/>
 The value to assign to the specified element.
 
 ### Return Value

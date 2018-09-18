@@ -57,7 +57,7 @@ Choose from one of three server types:
 
 ## See Also
 
-[ATL Project Wizard](../../atl/reference/atl-project-wizard.md)   
-[Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)   
+[ATL Project Wizard](../../atl/reference/atl-project-wizard.md)<br/>
+[Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)<br/>
 [Default ATL Project Configurations](../../atl/reference/default-atl-project-configurations.md)
 

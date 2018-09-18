@@ -22,21 +22,21 @@ This class provides methods for implementing a thread-pooled, apartment-model CO
 ## Syntax
 
 ```
-template <class T, 
+template <class T,
          class ThreadAllocator = CComSimpleThreadAllocator,
-         DWORD dwWait = INFINITE>  
+         DWORD dwWait = INFINITE>
 class ATL_NO_VTABLE CAtlAutoThreadModuleT : public IAtlAutoThreadModule
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The class which will implement the COM server.
 
-*ThreadAllocator*  
+*ThreadAllocator*<br/>
 The class managing thread selection. The default value is [CComSimpleThreadAllocator](../../atl/reference/ccomsimplethreadallocator-class.md).
 
-*dwWait*  
+*dwWait*<br/>
 Specifies the time-out interval, in milliseconds. The default is INFINITE, which means the method's time-out interval never elapses.
 
 ## Members
@@ -82,7 +82,7 @@ Override this method if you want to use a different method for calculating the n
 
 ## See Also
 
-[IAtlAutoThreadModule Class](../../atl/reference/iatlautothreadmodule-class.md)   
-[Class Overview](../../atl/atl-class-overview.md)   
-[IAtlAutoThreadModule Class](../../atl/reference/iatlautothreadmodule-class.md)   
+[IAtlAutoThreadModule Class](../../atl/reference/iatlautothreadmodule-class.md)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
+[IAtlAutoThreadModule Class](../../atl/reference/iatlautothreadmodule-class.md)<br/>
 [Module Classes](../../atl/atl-module-classes.md)

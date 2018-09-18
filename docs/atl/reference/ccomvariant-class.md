@@ -18,9 +18,8 @@ This class wraps the VARIANT type, providing a member indicating the type of dat
 
 ## Syntax
 
-```  
-cpp
-class CComVariant : public tagVARIANT  
+```cpp
+class CComVariant : public tagVARIANT
 ```
 
 ## Members
@@ -83,7 +82,7 @@ HRESULT Attach(VARIANT* pSrc);
 
 ### Parameters
 
-*pSrc*  
+*pSrc*<br/>
 [in] Points to the [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) to be attached to the object.
 
 ### Return Value
@@ -126,39 +125,39 @@ CComVariant(const CComBSTR& bstrSrc);
 
 ### Parameters
 
-*varSrc*  
+*varSrc*<br/>
 [in] The `CComVariant` or VARIANT used to initialize the `CComVariant` object. The contents of the source variant are copied to the destination without conversion.
 
-*lpszSrc*  
+*lpszSrc*<br/>
 [in] The character string used to initialize the `CComVariant` object. You can pass a zero-terminated wide (Unicode) character string to the LPCOLESTR version of the constructor or an ANSI string to the LPCSTR version. In either case the string is converted to a Unicode BSTR allocated using `SysAllocString`. The type of the `CComVariant` object will be VT_BSTR.
 
-*bSrc*  
+*bSrc*<br/>
 [in] The **bool** used to initialize the `CComVariant` object. The **bool** argument is converted to a VARIANT_BOOL before being stored. The type of the `CComVariant` object will be VT_BOOL.
 
-*nSrc*  
+*nSrc*<br/>
 [in] The **int**, **BYTE**, **short**, **long**, LONGLONG, ULONGLONG, **unsigned short**, **unsigned long**, or **unsigned int** used to initialize the `CComVariant` object. The type of the `CComVariant` object will be VT_I4, VT_UI1, VT_I2, VT_I4, VT_I8, VT_UI8, VT_UI2, VT_UI4, or VT_UI4, respectively.
 
-*vtSrc*  
+*vtSrc*<br/>
 [in] The type of the variant. When the first parameter is **int**, valid types are VT_I4 and VT_INT. When the first parameter is **long**, valid types are VT_I4 and VT_ERROR. When the first parameter is **double**, valid types are VT_R8 and VT_DATE. When the first parameter is **unsigned int**, valid types are VT_UI4 and VT_UINT.
 
-*fltSrc*  
+*fltSrc*<br/>
 [in] The **float** used to initialize the `CComVariant` object. The type of the `CComVariant` object will be VT_R4.
 
-*dblSrc*  
+*dblSrc*<br/>
 [in] The **double** used to initialize the `CComVariant` object. The type of the `CComVariant` object will be VT_R8.
 
-*cySrc*  
+*cySrc*<br/>
 [in] The `CY` used to initialize the `CComVariant` object. The type of the `CComVariant` object will be VT_CY.
 
-*pSrc*  
+*pSrc*<br/>
 [in] The `IDispatch` or `IUnknown` pointer used to initialize the `CComVariant` object. `AddRef` will be called on the interface pointer. The type of the `CComVariant` object will be VT_DISPATCH or VT_UNKNOWN, respectively.
 
 Or, the SAFERRAY pointer used to initialize the `CComVariant` object. A copy of the SAFEARRAY is stored in the `CComVariant` object. The type of the `CComVariant` object will be a combination of the original type of the SAFEARRAY and VT_ARRAY.
 
-*cSrc*  
+*cSrc*<br/>
 [in] The **char** used to initialize the `CComVariant` object. The type of the `CComVariant` object will be VT_I1.
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] The BSTR used to initialize the `CComVariant` object. The type of the `CComVariant` object will be VT_BSTR.
 
 ### Remarks
@@ -187,10 +186,10 @@ HRESULT ChangeType(VARTYPE vtNew, const VARIANT* pSrc = NULL);
 
 ### Parameters
 
-*vtNew*  
+*vtNew*<br/>
 [in] The new type for the `CComVariant` object.
 
-*pSrc*  
+*pSrc*<br/>
 [in] A pointer to the VARIANT whose value will be converted to the new type. The default value is NULL, meaning the `CComVariant` object will be converted in place.
 
 ### Return Value
@@ -227,7 +226,7 @@ HRESULT Copy(const VARIANT* pSrc);
 
 ### Parameters
 
-*pSrc*  
+*pSrc*<br/>
 [in] A pointer to the [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) to be copied.
 
 ### Return Value
@@ -244,7 +243,7 @@ HRESULT CopyTo(BSTR* pstrDest);
 
 ### Parameters
 
-*pstrDest*  
+*pstrDest*<br/>
 Points to a BSTR that will receive a copy of the contents of the `CComVariant` object.
 
 ### Return Value
@@ -265,7 +264,7 @@ HRESULT Detach(VARIANT* pDest);
 
 ### Parameters
 
-*pDest*  
+*pDest*<br/>
 [out] Returns the underlying VARIANT value of the object.
 
 ### Return Value
@@ -327,36 +326,36 @@ CComVariant& operator=(char cSrc) throw();
 
 ### Parameters
 
-*varSrc*  
+*varSrc*<br/>
 [in] The `CComVariant` or [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) to be assigned to the `CComVariant` object. The contents of the source variant are copied to the destination without conversion.
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] The BSTR to be assigned to the `CComVariant` object. The type of the `CComVariant` object will be VT_BSTR.
 
-*lpszSrc*  
+*lpszSrc*<br/>
 [in] The character string to be assigned to the `CComVariant` object. You can pass a zero-terminated wide (Unicode) character string to the LPCOLESTR version of the operator or an ANSI string to the LPCSTR version. In either case, the string is converted to a Unicode BSTR allocated using `SysAllocString`. The type of the `CComVariant` object will be VT_BSTR.
 
-*bSrc*  
+*bSrc*<br/>
 [in] The **bool** to be assigned to the `CComVariant` object. The **bool** argument is converted to a VARIANT_BOOL before being stored. The type of the `CComVariant` object will be VT_BOOL.
 
-*nSrc*  
+*nSrc*<br/>
 [in] The **int**, BYTE, **short**, **long**, LONGLONG, ULONGLONG, **unsigned short**, **unsigned long**, or **unsigned int** to be assigned to the `CComVariant` object. The type of the `CComVariant` object will be VT_I4, VT_UI1, VT_I2, VT_I4, VT_I8, VT_UI8, VT_UI2, VT_UI4, or VT_UI4, respectively.
 
-*fltSrc*  
+*fltSrc*<br/>
 [in] The **float** to be assigned to the `CComVariant` object. The type of the `CComVariant` object will be VT_R4.
 
-*dblSrc*  
+*dblSrc*<br/>
 [in] The **double** to be assigned to the `CComVariant` object. The type of the `CComVariant` object will be VT_R8.
 
-*cySrc*  
+*cySrc*<br/>
 [in] The `CY` to be assigned to the `CComVariant` object. The type of the `CComVariant` object will be VT_CY.
 
-*pSrc*  
+*pSrc*<br/>
 [in] The `IDispatch` or `IUnknown` pointer to be assigned to the `CComVariant` object. `AddRef` will be called on the interface pointer. The type of the `CComVariant` object will be VT_DISPATCH or VT_UNKNOWN, respectively.
 
 Or, a SAFEARRAY pointer to be assigned to the `CComVariant` object. A copy of the SAFEARRAY is stored in the `CComVariant` object. The type of the `CComVariant` object will be a combination of the original type of the SAFEARRAY and VT_ARRAY.
 
-*cSrc*  
+*cSrc*<br/>
 [in] The char to be assigned to the `CComVariant` object. The type of the `CComVariant` object will be VT_I1.
 
 ##  <a name="operator_eq_eq"></a>  CComVariant::operator ==
@@ -421,7 +420,7 @@ HRESULT ReadFromStream(IStream* pStream);
 
 ### Parameters
 
-*pStream*  
+*pStream*<br/>
 [in] A pointer to the [IStream](/windows/desktop/api/objidl/nn-objidl-istream) interface on the stream containing the data.
 
 ### Return Value
@@ -443,10 +442,10 @@ void SetByRef(T* pT) throw();
 
 ### Parameters
 
-*T*  
+*T*<br/>
 The type of VARIANT, for example, BSTR, **int**, or **char**.
 
-*pT*  
+*pT*<br/>
 The pointer used to initialize the `CComVariant` object.
 
 ### Remarks
@@ -465,7 +464,7 @@ HRESULT WriteToStream(IStream* pStream);
 
 ### Parameters
 
-*pStream*  
+*pStream*<br/>
 [in] A pointer to the [IStream](/windows/desktop/api/objidl/nn-objidl-istream) interface on a stream.
 
 ### Return Value

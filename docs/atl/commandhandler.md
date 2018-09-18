@@ -18,7 +18,7 @@ ms.workload: ["cplusplus"]
 
 ## Syntax
 
-```  
+```cpp
 LRESULT CommandHandler(
     WORD wNotifyCode,  
     WORD wID,  
@@ -28,16 +28,16 @@ LRESULT CommandHandler(
 
 #### Parameters
 
-*wNotifyCode*  
+*wNotifyCode*<br/>
 The notification code.
 
-*wID*  
+*wID*<br/>
 The identifier of the menu item, control, or accelerator.
 
-*hWndCtl*  
+*hWndCtl*<br/>
 A handle to a window control.
 
-*bHandled*  
+*bHandled*<br/>
 The message map sets *bHandled* to TRUE before `CommandHandler` is called. If `CommandHandler` does not fully handle the message, it should set *bHandled* to FALSE to indicate the message needs further processing.
 
 ## Return Value
@@ -50,7 +50,7 @@ For an example of using this message handler in a message map, see [COMMAND_HAND
 
 ## See Also
 
-[Implementing a Window](../atl/implementing-a-window.md)   
-[Message Maps](../atl/message-maps-atl.md)   
+[Implementing a Window](../atl/implementing-a-window.md)<br/>
+[Message Maps](../atl/message-maps-atl.md)<br/>
 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)
 

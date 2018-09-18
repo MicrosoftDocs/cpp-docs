@@ -22,13 +22,13 @@ This class is used by the string conversion macros CT2AEX, CW2TEX, CW2CTEX, and 
 ## Syntax
 
 ```
-template<int t_nBufferLength = 128>  
+template<int t_nBufferLength = 128>
 class CW2AEX
 ```
 
 #### Parameters
 
-*t_nBufferLength*  
+*t_nBufferLength*<br/>
 The size of the buffer used in the translation process. The default length is 128 bytes.
 
 ## Members
@@ -92,16 +92,16 @@ See [ATL and MFC String Conversion Macros](string-conversion-macros.md) for an e
 The constructor.
 
 ```
-CW2AEX(LPCWSTR psz, UINT nCodePage) throw(...);  
+CW2AEX(LPCWSTR psz, UINT nCodePage) throw(...);
 CW2AEX(LPCWSTR psz) throw(...);
 ```
 
 ### Parameters
 
-*psz*  
+*psz*<br/>
 The text string to be converted.
 
-*nCodePage*  
+*nCodePage*<br/>
 The code page used to perform the conversion. See the code page parameter discussion for the Windows SDK function [MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar) for more details.
 
 ### Remarks
@@ -140,7 +140,7 @@ char m_szBuffer[t_nBufferLength];
 
 Conversion operator.
 
-```  
+```
 operator LPSTR() const throw();
 ```
 
@@ -150,9 +150,9 @@ Returns the text string as type LPSTR.
 
 ## See Also
 
-[CA2AEX Class](../../atl/reference/ca2aex-class.md)   
-[CA2CAEX Class](../../atl/reference/ca2caex-class.md)   
-[CA2WEX Class](../../atl/reference/ca2wex-class.md)   
-[CW2CWEX Class](../../atl/reference/cw2cwex-class.md)   
-[CW2WEX Class](../../atl/reference/cw2wex-class.md)   
+[CA2AEX Class](../../atl/reference/ca2aex-class.md)<br/>
+[CA2CAEX Class](../../atl/reference/ca2caex-class.md)<br/>
+[CA2WEX Class](../../atl/reference/ca2wex-class.md)<br/>
+[CW2CWEX Class](../../atl/reference/cw2cwex-class.md)<br/>
+[CW2WEX Class](../../atl/reference/cw2wex-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

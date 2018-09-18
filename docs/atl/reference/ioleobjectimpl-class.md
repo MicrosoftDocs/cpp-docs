@@ -22,13 +22,13 @@ This class implements `IUnknown` and is the principal interface through which a 
 ## Syntax
 
 ```
-template<class T>  
+template<class T>
 class ATL_NO_VTABLE IOleObjectImpl : public IOleObject
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IOleObjectImpl`.
 
 ## Members
@@ -165,10 +165,10 @@ HRESULT DoVerbDiscardUndo(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 
 ### Parameters
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] Pointer to the rectangle the container wants the control to draw into.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] Handle of the window containing the control.
 
 ### Return Value
@@ -185,10 +185,10 @@ HRESULT DoVerbHide(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 
 ### Parameters
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] Pointer to the rectangle the container wants the control to draw into.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] Handle of the window containing the control. Not used in the ATL implementation.
 
 ### Return Value
@@ -205,10 +205,10 @@ HRESULT DoVerbInPlaceActivate(LPCRECT prcPosRect, HWND /* hwndParent */);
 
 ### Parameters
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] Pointer to the rectangle the container wants the control to draw into.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] Handle of the window containing the control. Not used in the ATL implementation.
 
 ### Return Value
@@ -229,10 +229,10 @@ HRESULT DoVerbOpen(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 
 ### Parameters
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] Pointer to the rectangle the container wants the control to draw into.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] Handle of the window containing the control.
 
 ### Return Value
@@ -249,10 +249,10 @@ HRESULT DoVerbPrimary(LPCRECT prcPosRect, HWND hwndParent);
 
 ### Parameters
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] Pointer to the rectangle the container wants the control to draw into.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] Handle of the window containing the control.
 
 ### Return Value
@@ -273,10 +273,10 @@ HRESULT DoVerbShow(LPCRECT prcPosRect, HWND /* hwndParent */);
 
 ### Parameters
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] Pointer to the rectangle the container wants the control to draw into.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] Handle of the window containing the control. Not used in the ATL implementation.
 
 ### Return Value
@@ -293,10 +293,10 @@ HRESULT DoVerbUIActivate(LPCRECT prcPosRect, HWND /* hwndParent */);
 
 ### Parameters
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] Pointer to the rectangle the container wants the control to draw into.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] Handle of the window containing the control. Not used in the ATL implementation.
 
 ### Return Value
@@ -779,6 +779,6 @@ See [IOleObject::Update](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-update
 
 ## See Also
 
-[CComControl Class](../../atl/reference/ccomcontrol-class.md)   
-[ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)   
+[CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
+[ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -101,7 +101,7 @@ Now, you can test the code with the client of your choice.
 
 ## See Also
 
-[Collections and Enumerators](../atl/atl-collections-and-enumerators.md)   
-[ATLCollections Sample](../visual-cpp-samples.md)   
+[Collections and Enumerators](../atl/atl-collections-and-enumerators.md)<br/>
+[ATLCollections Sample](../visual-cpp-samples.md)<br/>
 [ATL Copy Policy Classes](../atl/atl-copy-policy-classes.md)
 

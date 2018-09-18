@@ -25,40 +25,46 @@ These functions support manipulation of URLs.
 
 ## Requirements
 
-**Header:** atlutil.h  
+**Header:** atlutil.h
 
 ## <a name="atlcanonicalizeurl"></a> AtlCanonicalizeUrl
 
 Call this function to canonicalize a URL, which includes converting unsafe characters and spaces into escape sequences.
 
-```    
-inline BOOL AtlCanonicalizeUrl(  
-   LPCTSTR szUrl,  
-   LPTSTR szCanonicalized,  
-   DWORD* pdwMaxLength,  
-   DWORD dwFlags = 0) throw();  
+```cpp
+inline BOOL AtlCanonicalizeUrl(
+   LPCTSTR szUrl,
+   LPTSTR szCanonicalized,
+   DWORD* pdwMaxLength,
+   DWORD dwFlags = 0) throw();
 ```
 
 ### Parameters
 
-*szUrl*  
+*szUrl*<br/>
 The URL to be canonicalized.
 
-*szCanonicalized*  
+*szCanonicalized*<br/>
 Caller-allocated buffer to receive the canonicalized URL.
 
-*pdwMaxLength*  
+*pdwMaxLength*<br/>
 Pointer to a variable that contains the length in characters of *szCanonicalized*. If the function succeeds, the variable receives the number of characters written to the buffer including the terminating null character. If the function fails, the variable receives the required length in bytes of the buffer including space for the terminating null character.
 
-*dwFlags*  
-ATL_URL flags controlling the behavior of this function. 
+*dwFlags*<br/>
+ATL_URL flags controlling the behavior of this function.
 
 - ATL_URL_BROWSER_MODE Does not encode or decode characters after "#" or "?", and does not remove trailing white space after "?". If this value is not specified, the entire URL is encoded and trailing white space is removed.
+
 - ATL_URL_DECODE Converts all %XX sequences to characters, including escape sequences, before the URL is parsed.
+
 - ATL_URL_ENCODE_PERCENT Encodes any percent signs encountered. By default, percent signs are not encoded.
+
 - ATL_URL_ENCODE_SPACES_ONLY Encodes spaces only.
+
 - ATL_URL_ESCAPE Converts all escape sequences (%XX) to their corresponding characters.
+
 - ATL_URL_NO_ENCODE Does not convert unsafe characters to escape sequences.
+
 - ATL_URL_NO_META Does not remove meta sequences (such as "." and "..") from the URL.
 
 ### Return Value
@@ -77,30 +83,30 @@ Behaves like the current version of [InternetCanonicalizeUrl](/windows/desktop/a
 
 Call this function to combine a base URL and a relative URL into a single, canonical URL.
 
-```    
-inline BOOL AtlCombineUrl(  
-   LPCTSTR szBaseUrl,  
-   LPCTSTR szRelativeUrl,  
-   LPTSTR szBuffer,  
-   DWORD* pdwMaxLength,  
-   DWORD dwFlags = 0) throw();  
+```cpp
+inline BOOL AtlCombineUrl(
+   LPCTSTR szBaseUrl,
+   LPCTSTR szRelativeUrl,
+   LPTSTR szBuffer,
+   DWORD* pdwMaxLength,
+   DWORD dwFlags = 0) throw();
 ```
 
 ### Parameters
 
-*szBaseUrl*  
+*szBaseUrl*<br/>
 The base URL.
 
-*szRelativeUrl*  
+*szRelativeUrl*<br/>
 The URL relative to the base URL.
 
-*szBuffer*  
+*szBuffer*<br/>
 Caller-allocated buffer to receive the canonicalized URL.
 
-*pdwMaxLength*  
+*pdwMaxLength*<br/>
 Pointer to a variable that contains the length in characters of *szBuffer*. If the function succeeds, the variable receives the number of characters written to the buffer including the terminating null character. If the function fails, the variable receives the required length in bytes of the buffer including space for the terminating null character.
 
-*dwFlags*  
+*dwFlags*<br/>
 Flags controlling the behavior of this function. See [AtlCanonicalizeUrl](#atlcanonicalizeurl).
 
 ### Return Value
@@ -115,37 +121,37 @@ Behaves like the current version of [InternetCombineUrl](/windows/desktop/api/wi
 
 Call this function to convert all unsafe characters to escape sequences.
 
-```    
-inline BOOL AtlEscapeUrl(  
-   LPCSTR szStringIn,  
-   LPSTR szStringOut,  
-   DWORD* pdwStrLen,  
-   DWORD dwMaxLength,  
+```cpp
+inline BOOL AtlEscapeUrl(
+   LPCSTR szStringIn,
+   LPSTR szStringOut,
+   DWORD* pdwStrLen,
+   DWORD dwMaxLength,
    DWORD dwFlags = 0) throw();
 
-inline BOOL AtlEscapeUrl(  
-   LPCWSTR szStringIn,  
-   LPWSTR szStringOut,  
-   DWORD* pdwStrLen,  
-   DWORD dwMaxLength,  
-   DWORD dwFlags = 0) throw();  
+inline BOOL AtlEscapeUrl(
+   LPCWSTR szStringIn,
+   LPWSTR szStringOut,
+   DWORD* pdwStrLen,
+   DWORD dwMaxLength,
+   DWORD dwFlags = 0) throw();
 ```
 
 ### Parameters
 
-*lpszStringIn*  
+*lpszStringIn*<br/>
 The URL to be converted.
 
-*lpszStringOut*  
+*lpszStringOut*<br/>
 Caller-allocated buffer to which the converted URL will be written.
 
-*pdwStrLen*  
+*pdwStrLen*<br/>
 Pointer to a DWORD variable. If the function succeeds, *pdwStrLen* receives the number of characters written to the buffer including the terminating null character. If the function fails, the variable receives the required length in bytes of the buffer including space for the terminating null character. When using the wide character version of this method, *pdwStrLen* receives the number of characters required, not the number of bytes.
 
-*dwMaxLength*  
+*dwMaxLength*<br/>
 The size of the buffer *lpszStringOut*.
 
-*dwFlags*  
+*dwFlags*<br/>
 ATL_URL flags controlling the behavior of this function. See [ATLCanonicalizeUrl](#atlcanonicalizeurl) for possible values.
 
 ### Return Value
@@ -156,30 +162,30 @@ Returns TRUE on success, FALSE on failure.
 
 Call this function to get the default port number associated with a particular Internet protocol or scheme.
 
-```  
-inline ATL_URL_PORT AtlGetDefaultUrlPort(ATL_URL_SCHEME m_nScheme) throw();  
+```
+inline ATL_URL_PORT AtlGetDefaultUrlPort(ATL_URL_SCHEME m_nScheme) throw();
 ```
 
 ### Parameters
 
-*m_nScheme*  
+*m_nScheme*<br/>
 The [ATL_URL_SCHEME](atl-url-scheme-enum.md) value identifying the scheme for which you want to obtain the port number.
 
 ### Return Value
 
-The [ATL_URL_PORT](atl-typedefs.md#atl_url_port) associated with the specified scheme or ATL_URL_INVALID_PORT_NUMBER if the scheme is not recognized.  
+The [ATL_URL_PORT](atl-typedefs.md#atl_url_port) associated with the specified scheme or ATL_URL_INVALID_PORT_NUMBER if the scheme is not recognized.
 
 ## <a name="atlisunsafeurlchar"></a> AtlIsUnsafeUrlChar
 
 Call this function to find out whether a character is safe for use in a URL.
 
-```  
-inline BOOL AtlIsUnsafeUrlChar(char chIn) throw();  
+```
+inline BOOL AtlIsUnsafeUrlChar(char chIn) throw();
 ```
 
 ### Parameters
 
-*chIn*  
+*chIn*<br/>
 The character to be tested for safety.
 
 ### Return Value
@@ -194,32 +200,32 @@ Characters that should not be used in URLs can be tested using this function and
 
 Call this function to convert escaped characters back to their original values.
 
-```    
-inline BOOL AtlUnescapeUrl(  
-   LPCSTR szStringIn,  
-   LPSTR szStringOut,  
-   LPDWORD pdwStrLen,  
-   DWORD dwMaxLength) throw();  
+```cpp
+inline BOOL AtlUnescapeUrl(
+   LPCSTR szStringIn,
+   LPSTR szStringOut,
+   LPDWORD pdwStrLen,
+   DWORD dwMaxLength) throw();
 
-inline BOOL AtlUnescapeUrl(  
-   LPCWSTR szStringIn,  
-   LPWSTR szStringOut,  
-   LPDWORD pdwStrLen,  
-   DWORD dwMaxLength) throw();  
+inline BOOL AtlUnescapeUrl(
+   LPCWSTR szStringIn,
+   LPWSTR szStringOut,
+   LPDWORD pdwStrLen,
+   DWORD dwMaxLength) throw();
 ```
 
 ### Parameters
 
-*lpszStringIn*  
+*lpszStringIn*<br/>
 The URL to be converted.
 
-*lpszStringOut*  
+*lpszStringOut*<br/>
 Caller-allocated buffer to which the converted URL will be written.
 
-*pdwStrLen*  
+*pdwStrLen*<br/>
 Pointer to a DWORD variable. If the function succeeds, the variable receives the number of characters written to the buffer including the terminating null character. If the function fails, the variable receives the required length in bytes of the buffer including space for the terminating null character.
 
-*dwMaxLength*  
+*dwMaxLength*<br/>
 The size of the buffer *lpszStringOut*.
 
 ### Return Value
@@ -234,22 +240,22 @@ Reverses the conversion process applied by [AtlEscapeUrl](#atlescapeurl).
 
 Converts a [COLORREF](/windows/desktop/gdi/colorref) value to the HTML text corresponding to that color value.
 
-```  
-bool inline RGBToHtml(  
-   COLORREF color,  
-   LPTSTR pbOut,  
-   long nBuffer);  
+```cpp
+bool inline RGBToHtml(
+   COLORREF color,
+   LPTSTR pbOut,
+   long nBuffer);
 ```
 
 ### Parameters
 
-*color*  
+*color*<br/>
 An RGB color value.
 
-*pbOut*  
+*pbOut*<br/>
 Caller-allocated buffer to receive the text for the HTML color value. The buffer must have space for at least 8 characters including space for the null terminator).
 
-*nBuffer*  
+*nBuffer*<br/>
 The size in bytes of the buffer (including space for the null terminator).
 
 ### Return Value
@@ -264,22 +270,21 @@ An HTML color value is a pound sign followed by a 6-digit hexadecimal value usin
 
 Call this function to convert a system time to a string in a format suitable for using in HTTP headers.
 
-```  
-inline void SystemTimeToHttpDate( 
-   const SYSTEMTIME& st,  
-   CStringA& strTime);  
+```cpp
+inline void SystemTimeToHttpDate(
+   const SYSTEMTIME& st,
+   CStringA& strTime);
 ```
 
 ### Parameters
 
-*st*  
+*st*<br/>
 The system time to be obtained as an HTTP format string.
 
-*strTime*  
+*strTime*<br/>
 A reference to a string variable to receive the HTTP date time as defined in RFC 2616 ([http://www.ietf.org/rfc/rfc2616.txt](http://www.ietf.org/rfc/rfc2616.txt)) and RFC 1123 ([http://www.ietf.org/rfc/rfc1123.txt](http://www.ietf.org/rfc/rfc1123.txt)).
 
 ## See Also
 
-[Concepts](../../atl/active-template-library-atl-concepts.md)   
-[ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)   
-
+[Concepts](../../atl/active-template-library-atl-concepts.md)<br/>
+[ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)

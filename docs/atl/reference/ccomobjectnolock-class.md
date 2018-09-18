@@ -19,13 +19,13 @@ This class implements `IUnknown` for a nonaggregated object, but does not increm
 ## Syntax
 
 ```
-template<class Base>  
+template<class Base>
 class CComObjectNoLock : public Base
 ```
 
 #### Parameters
 
-*Base*  
+*Base*<br/>
 Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), as well as from any other interface you want to support on the object.
 
 ## Members
@@ -83,7 +83,7 @@ CComObjectNoLock(void* = NULL);
 
 ### Parameters
 
-<em>void\*</em>  
+<em>void\*</em><br/>
 [in] This unnamed parameter is not used. It exists for symmetry with other `CComXXXObjectXXX` constructors.
 
 ##  <a name="dtor"></a>  CComObjectNoLock::~CComObjectNoLock
@@ -108,10 +108,10 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] The identifier of the interface being requested.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] A pointer to the interface pointer identified by *iid*. If the object does not support this interface, *ppvObject* is set to NULL.
 
 ### Return Value

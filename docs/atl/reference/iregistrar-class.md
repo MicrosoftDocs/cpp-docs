@@ -127,7 +127,7 @@ virtualHRESULT STDMETHODCALLTYPE ResourceUnregister(
 
 ## See Also
 
-[Using Replaceable Parameters (The Registrar's Preprocessor)](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)   
-[Class Overview](../../atl/atl-class-overview.md)   
-[Module Classes](../../atl/atl-module-classes.md)   
+[Using Replaceable Parameters (The Registrar's Preprocessor)](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
+[Module Classes](../../atl/atl-module-classes.md)<br/>
 [Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md)

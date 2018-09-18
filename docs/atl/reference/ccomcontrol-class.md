@@ -22,17 +22,17 @@ This class provides methods for creating and managing ATL controls.
 ## Syntax
 
 ```
-template <class T, class WinBase = CWindowImpl<T>>  
+template <class T, class WinBase = CWindowImpl<T>>
 class ATL_NO_VTABLE CComControl : public CComControlBase,
     public WinBase;
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The class implementing the control.
 
-*WinBase*  
+*WinBase*<br/>
 The base class that implements windowing functions. Defaults to [CWindowImpl](../../atl/reference/cwindowimpl-class.md).
 
 ## Members
@@ -95,10 +95,10 @@ virtual HRESULT ControlQueryInterface(const IID& iid, void** ppv);
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] The GUID of the interface being requested.
 
-*ppv*  
+*ppv*<br/>
 [out] A pointer to the interface pointer identified by *iid*, or NULL if the interface is not found.
 
 ### Remarks
@@ -119,10 +119,10 @@ virtual HWND CreateControlWindow(HWND hWndParent, RECT& rcPos);
 
 ### Parameters
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] Handle to the parent or owner window. A valid window handle must be supplied. The control window is confined to the area of its parent window.
 
-*rcPos*  
+*rcPos*<br/>
 [in] The initial size and position of the window to be created.
 
 ### Remarks
@@ -143,7 +143,7 @@ HRESULT FireOnChanged(DISPID dispID);
 
 ### Parameters
 
-*dispID*  
+*dispID*<br/>
 [in] Identifier of the property that has changed.
 
 ### Return Value
@@ -170,7 +170,7 @@ HRESULT FireOnRequestEdit(DISPID dispID);
 
 ### Parameters
 
-*dispID*  
+*dispID*<br/>
 [in] Identifier of the property about to change.
 
 ### Return Value
@@ -179,7 +179,7 @@ One of the standard HRESULT values.
 
 ### Remarks
 
-If your control class derives from [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink), this method calls [CFirePropNotifyEvent::FireOnRequestEdit](cfirepropnotifyevent-class.md#fireonrequestedit) to notify all connected `IPropertyNotifySink` interfaces that the specified control property is about to change. If your control class does not derive from `IPropertyNotifySink`, this method returns S_OK.  
+If your control class derives from [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink), this method calls [CFirePropNotifyEvent::FireOnRequestEdit](cfirepropnotifyevent-class.md#fireonrequestedit) to notify all connected `IPropertyNotifySink` interfaces that the specified control property is about to change. If your control class does not derive from `IPropertyNotifySink`, this method returns S_OK.
 
 This method is safe to call even if your control doesn't support connection points.
 
@@ -200,13 +200,13 @@ int MessageBox(
 
 ### Parameters
 
-*lpszText*  
+*lpszText*<br/>
 The text to be displayed in the message box.
 
-*lpszCaption*  
+*lpszCaption*<br/>
 The dialog box title. If NULL (the default), the title "Error" is used.
 
-*nType*  
+*nType*<br/>
 Specifies the contents and behavior of the dialog box. See the [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) entry in the Windows SDK documentation for a list of the different message boxes available. The default provides a simple **OK** button.
 
 ### Return Value
@@ -219,7 +219,7 @@ Returns an integer value specifying one of the menu-item values listed under [Me
 
 ## See Also
 
-[CWindowImpl Class](../../atl/reference/cwindowimpl-class.md)   
-[Class Overview](../../atl/atl-class-overview.md)   
-[CComControlBase Class](../../atl/reference/ccomcontrolbase-class.md)   
+[CWindowImpl Class](../../atl/reference/cwindowimpl-class.md)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
+[CComControlBase Class](../../atl/reference/ccomcontrolbase-class.md)<br/>
 [CComCompositeControl Class](../../atl/reference/ccomcompositecontrol-class.md)

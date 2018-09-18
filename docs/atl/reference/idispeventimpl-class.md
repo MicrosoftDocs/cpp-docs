@@ -27,31 +27,31 @@ template <UINT nID, class T,
     const GUID* plibid = &GUID_NULL,
     WORD wMajor = 0,
     WORD wMinor = 0, 
-    class tihclass = CcomTypeInfoHolder>  
+    class tihclass = CcomTypeInfoHolder>
 class ATL_NO_VTABLE IDispEventImpl : public IDispEventSimpleImpl<nID, T, pdiid>
 ```
 
 #### Parameters
 
-*nID*  
+*nID*<br/>
 A unique identifier for the source object. When `IDispEventImpl` is the base class for a composite control, use the resource ID of the desired contained control for this parameter. In other cases, use an arbitrary positive integer.
 
-*T*  
+*T*<br/>
 The user's class, which is derived from `IDispEventImpl`.
 
-*pdiid*  
+*pdiid*<br/>
 The pointer to the IID of the event dispinterface implemented by this class. This interface must be defined in the type library denoted by *plibid*, *wMajor*, and *wMinor*.
 
-*plibid*  
+*plibid*<br/>
 A pointer to the type library that defines the dispatch interface pointed to by *pdiid*. If **&GUID_NULL**, the type library will be loaded from the object sourcing the events.
 
-*wMajor*  
+*wMajor*<br/>
 The major version of the type library. The default value is 0.
 
-*wMinor*  
+*wMinor*<br/>
 The minor version of the type library. The default value is 0.
 
-*tihclass*  
+*tihclass*<br/>
 The class used to manage the type information for *T*. The default value is a class of type `CComTypeInfoHolder`; however, you can override this template parameter by providing a class of a type other than `CComTypeInfoHolder`.
 
 ## Members
@@ -125,16 +125,16 @@ HRESULT GetFuncInfoFromId(
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] A reference to the ID of the function.
 
-*dispidMember*  
+*dispidMember*<br/>
 [in] The dispatch ID of the function.
 
-*lcid*  
+*lcid*<br/>
 [in] The locale context of the function ID.
 
-*info*  
+*info*<br/>
 [in] The structure indicating how the function is called.
 
 ### Return Value
@@ -195,10 +195,10 @@ VARTYPE GetUserDefinedType(
 
 ### Parameters
 
-*pTI*  
+*pTI*<br/>
 [in] A pointer to the [ITypeInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) interface containing the user-defined type.
 
-*hrt*  
+*hrt*<br/>
 [in] A handle to the type description to be retrieved.
 
 ### Return Value
@@ -231,10 +231,10 @@ By default, the class is `CComTypeInfoHolder`. `CComTypeInfoHolder` manages the 
 
 ## See Also
 
-[_ATL_FUNC_INFO Structure](../../atl/reference/atl-func-info-structure.md)   
-[IDispatchImpl Class](../../atl/reference/idispatchimpl-class.md)   
-[IDispEventSimpleImpl Class](../../atl/reference/idispeventsimpleimpl-class.md)   
-[SINK_ENTRY](composite-control-macros.md#sink_entry)   
-[SINK_ENTRY_EX](composite-control-macros.md#sink_entry_ex)   
-[SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)   
+[_ATL_FUNC_INFO Structure](../../atl/reference/atl-func-info-structure.md)<br/>
+[IDispatchImpl Class](../../atl/reference/idispatchimpl-class.md)<br/>
+[IDispEventSimpleImpl Class](../../atl/reference/idispeventsimpleimpl-class.md)<br/>
+[SINK_ENTRY](composite-control-macros.md#sink_entry)<br/>
+[SINK_ENTRY_EX](composite-control-macros.md#sink_entry_ex)<br/>
+[SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

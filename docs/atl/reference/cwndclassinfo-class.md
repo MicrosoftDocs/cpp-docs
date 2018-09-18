@@ -165,7 +165,7 @@ ATOM Register(WNDPROC* pProc);
 
 ### Parameters
 
-*pProc*  
+*pProc*<br/>
 [out] Specifies the original window procedure of an existing window class.
 
 ### Return Value
@@ -180,5 +180,5 @@ If you have specified the [DECLARE_WND_SUPERCLASS](window-class-macros.md#declar
 
 ## See Also
 
-[CComControl Class](../../atl/reference/ccomcontrol-class.md)   
+[CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

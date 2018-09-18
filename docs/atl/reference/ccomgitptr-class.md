@@ -19,7 +19,7 @@ This class provides methods for dealing with interface pointers and the global i
 ## Syntax
 
 ```
-template <class T>  
+template <class T>
 class CComGITPtr
 ```
 
@@ -83,10 +83,10 @@ HRESULT Attach(DWORD dwCookie) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 The interface pointer to be added to the GIT.
 
-*dwCookie*  
+*dwCookie*<br/>
 The cookie used to identify the interface pointer.
 
 ### Return Value
@@ -151,7 +151,7 @@ HRESULT CopyTo(T** pp) const throw();
 
 ### Parameters
 
-*pp*  
+*pp*<br/>
 The pointer which is to receive the interface.
 
 ### Return Value
@@ -243,7 +243,7 @@ Assigns a new value to a `CComGITPtr` object, either from an existing object or 
 
 Returns the cookie associated with the `CComGITPtr` object.
 
-```  
+```
 operator DWORD() const;
 ```
 
@@ -269,7 +269,7 @@ Removes the interface from the GIT.
 
 ## See Also
 
-[Free Threaded Marshaler](../../atl/atl-and-the-free-threaded-marshaler.md)   
-[Accessing Interfaces Across Apartments](/windows/desktop/com/accessing-interfaces-across-apartments)   
-[When to Use the Global Interface Table](/windows/desktop/com/when-to-use-the-global-interface-table)   
+[Free Threaded Marshaler](../../atl/atl-and-the-free-threaded-marshaler.md)<br/>
+[Accessing Interfaces Across Apartments](/windows/desktop/com/accessing-interfaces-across-apartments)<br/>
+[When to Use the Global Interface Table](/windows/desktop/com/when-to-use-the-global-interface-table)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

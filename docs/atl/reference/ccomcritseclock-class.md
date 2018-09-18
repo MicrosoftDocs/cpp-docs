@@ -24,7 +24,7 @@ template<class TLock> class CComCritSecLock
 
 #### Parameters
 
-*TLock*  
+*TLock*<br/>
 The object to be locked and unlocked.
 
 ## Members
@@ -61,10 +61,10 @@ CComCritSecLock(TLock& cs, bool bInitialLock = true);
 
 ### Parameters
 
-*cs*  
+*cs*<br/>
 The critical section object.
 
-*bInitialLock*  
+*bInitialLock*<br/>
 The initial lock state: **true** means locked.
 
 ### Remarks
@@ -113,5 +113,5 @@ If the object is already unlocked, an ASSERT error will occur in debug builds.
 
 ## See Also
 
-[CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md)   
+[CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md)<br/>
 [CComAutoCriticalSection Class](../../atl/reference/ccomautocriticalsection-class.md)

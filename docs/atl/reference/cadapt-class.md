@@ -19,13 +19,13 @@ This template is used to wrap classes that redefine the address-of operator to r
 ## Syntax
 
 ```
-template <class T>  
+template <class T>
 class CAdapt
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The adapted type.
 
 ## Members
@@ -80,10 +80,10 @@ CAdapt(CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 
 ### Parameters
 
-*rSrc*  
+*rSrc*<br/>
 A variable of the type being adapted to be copied into the newly constructed adapter object.
 
-*rSrCA*  
+*rSrCA*<br/>
 An adapter object whose contained data should be copied (or moved) into the newly constructed adapter object.
 
 ##  <a name="m_t"></a>  CAdapt::m_T
@@ -102,7 +102,7 @@ This **public** data member can be accessed directly or indirectly with [operato
 
 Returns a **const** reference to the [m_T](#m_t) member, allowing the adapter object to be treated as if it were an object of type *T*.
 
-```  
+```
 operator const T&() const;
 ```
 
@@ -114,7 +114,7 @@ A **const** reference to `m_T`.
 
 Returns a reference to the [m_T](#m_t) member, allowing the adapter object to be treated as if it were an object of type *T*.
 
-```  
+```
 operator T&();
 ```
 
@@ -132,7 +132,7 @@ bool operator<(const T& rSrc) const;
 
 ### Parameters
 
-*rSrc*  
+*rSrc*<br/>
 A reference to the object to be compared.
 
 ### Return Value
@@ -151,10 +151,10 @@ CAdapt& operator= (CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 
 ### Parameters
 
-*rSrc*  
+*rSrc*<br/>
 A reference to an object of the adapted type to be copied.
 
-*rSrCA*  
+*rSrCA*<br/>
 A reference to an object to be moved.
 
 ### Return Value
@@ -171,7 +171,7 @@ bool operator== (const T& rSrc) const;
 
 ### Parameters
 
-*rSrc*  
+*rSrc*<br/>
 A reference to the object to be compared.
 
 ### Return Value

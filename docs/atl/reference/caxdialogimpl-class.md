@@ -22,16 +22,16 @@ This class implements a dialog box (modal or modeless) that hosts ActiveX contro
 ## Syntax
 
 ```
-template <class T, class TBase = CWindow>  
+template <class T, class TBase = CWindow>
 class ATL_NO_VTABLE CAxDialogImpl : public CDialogImplBaseT<TBase>
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `CAxDialogImpl`.
 
-*TBase*  
+*TBase*<br/>
 The base window class for `CDialogImplBaseT`.
 
 ## Members
@@ -99,7 +99,7 @@ HRESULT AdviseSinkMap(bool bAdvise);
 
 ### Parameters
 
-*bAdvise*  
+*bAdvise*<br/>
 Set to true if all sink entries are to be advised; false if all sink entries are to be unadvised.
 
 ### Return Value
@@ -117,13 +117,13 @@ HWND Create(HWND hWndParent, RECT&, LPARAM dwInitParam = NULL);
 
 ### Parameters
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] The handle to the owner window.
 
-*dwInitParam*  
+*dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.
 
-*RECT&*  
+*RECT&*<br/>
 This parameter is not used. This parameter is passed in by `CComControl`.
 
 ### Return Value
@@ -158,16 +158,16 @@ Call this method to create a modal dialog box.
 
 ```
 INT_PTR DoModal(
-    HWND hWndParent = ::GetActiveWindow(), 
+    HWND hWndParent = ::GetActiveWindow(),
     LPARAM dwInitParam = NULL);
 ```
 
 ### Parameters
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] The handle to the owner window. The default value is the return value of the [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 function.
 
-*dwInitParam*  
+*dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.
 
 ### Return Value
@@ -190,7 +190,7 @@ BOOL EndDialog(int nRetCode);
 
 ### Parameters
 
-*nRetCode*  
+*nRetCode*<br/>
 [in] The value to be returned by [DoModal](#domodal).
 
 ### Return Value
@@ -242,7 +242,7 @@ BOOL IsDialogMessage(LPMSG pMsg);
 
 ### Parameters
 
-*pMsg*  
+*pMsg*<br/>
 Pointer to a [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958) structure that contains the message to be checked.
 
 ### Return Value
@@ -263,5 +263,5 @@ bool m_bModal;
 
 ## See Also
 
-[CDialogImpl Class](../../atl/reference/cdialogimpl-class.md)   
+[CDialogImpl Class](../../atl/reference/cdialogimpl-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -27,10 +27,10 @@ template <DWORD t_dwStyle = 0, DWORD t_dwExStyle = 0>  class CWinTraits
 
 #### Parameters
 
-*t_dwStyle*  
+*t_dwStyle*<br/>
 Default standard window styles.
 
-*t_dwExStyle*  
+*t_dwExStyle*<br/>
 Default extended window styles.
 
 ## Members
@@ -78,7 +78,7 @@ static DWORD GetWndStyle(DWORD dwStyle);
 
 ### Parameters
 
-*dwStyle*  
+*dwStyle*<br/>
 Standard styles used for creation of a window. If *dwStyle* is 0, the template style values (`t_dwStyle`) are returned. If *dwStyle* is nonzero, *dwStyle* is returned.
 
 ### Return Value
@@ -95,7 +95,7 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
 
 ### Parameters
 
-*dwExStyle*  
+*dwExStyle*<br/>
 Extended styles used for creation of a window. If *dwExStyle* is 0, the template style values (`t_dwExStyle`) are returned. If *dwExStyle* is nonzero, *dwExStyle* is returned.
 
 ### Return Value
@@ -104,5 +104,5 @@ The extended window styles of the object.
 
 ## See Also
 
-[Class Overview](../../atl/atl-class-overview.md)   
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [Understanding Window Traits](../../atl/understanding-window-traits.md)

@@ -29,10 +29,10 @@ HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);
 
 ### Parameters
 
-*hdc*  
+*hdc*<br/>
 [in] The existing handle of a device context, or NULL.
 
-*ptd*  
+*ptd*<br/>
 [in] A pointer to the `DVTARGETDEVICE` structure that contains information about the target device.
 
 ### Return Value

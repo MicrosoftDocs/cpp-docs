@@ -64,16 +64,16 @@ HMENU m_hMenu;
 The UINT argument is just cast to an HMENU in the constructor and the result stored in the class's single data member, [m_hMenu](#_u_menuorid__m_hmenu).
 
 ```
-_U_MENUorID(UINT nID);  
+_U_MENUorID(UINT nID);
 _U_MENUorID(HMENU hMenu);
 ```
 
 ### Parameters
 
-*nID*  
+*nID*<br/>
 A child window identifier.
 
-*hMenu*  
+*hMenu*<br/>
 A menu handle.
 
 ### Remarks
