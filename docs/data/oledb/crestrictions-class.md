@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRestrictions Class
+
 A generic class that allows you to specify restrictions for schema rowsets.  
   
 ## Syntax
@@ -24,17 +25,19 @@ class CRestrictions :
 ```  
   
 ### Parameters  
- *T*  
- The class used for the accessor.  
+
+*T*<br/>
+The class used for the accessor.  
   
- *nRestrictions*  
- The number of restriction columns for the schema rowset.  
+*nRestrictions*<br/>
+The number of restriction columns for the schema rowset.  
   
- *pguid*  
- A pointer to the GUID for the schema.  
+*pguid*<br/>
+A pointer to the GUID for the schema.  
 
 ## Requirements  
- **Header:** atldbsch.h 
+
+**Header:** atldbsch.h 
   
 ## Members  
   
@@ -45,6 +48,7 @@ class CRestrictions :
 |[Open](#open)|Returns a result set according to the user-supplied restrictions.|   
 
 ## <a name="open"></a> CRestrictions::Open
+
 Returns a result set according to the user-supplied restrictions.  
   
 ### Syntax  
@@ -62,24 +66,28 @@ HRESULT Open(const CSession& session,
 ```  
   
 #### Parameters  
- *session*  
- [in] Specifies an existing session object used to connect to the data source.  
+
+*session*<br/>
+[in] Specifies an existing session object used to connect to the data source.  
   
- *lpszParam*  
- [in] Specifies the restrictions on the schema rowset.  
+*lpszParam*<br/>
+[in] Specifies the restrictions on the schema rowset.  
   
- *bBind*  
- [in] Specifies whether to bind the column map automatically. The default is **true**, which causes the column map to be bound automatically. Setting *bBind* to **false** prevents the automatic binding of the column map so that you can bind manually. (Manual binding is of particular interest to OLAP users.)  
+*bBind*<br/>
+[in] Specifies whether to bind the column map automatically. The default is **true**, which causes the column map to be bound automatically. Setting *bBind* to **false** prevents the automatic binding of the column map so that you can bind manually. (Manual binding is of particular interest to OLAP users.)  
   
 ### Return Value  
- One of the standard HRESULT values.  
+
+One of the standard HRESULT values.  
   
 ### Remarks  
- You can specify a maximum of seven restrictions on a schema rowset.  
+
+You can specify a maximum of seven restrictions on a schema rowset.  
   
- See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) for information about the defined restrictions on each schema rowset.  
+See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) for information about the defined restrictions on each schema rowset.  
   
 ## See Also  
- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)    
- [Schema Rowset Classes and Typedef Classes](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)
+
+[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
+[Schema Rowset Classes and Typedef Classes](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)

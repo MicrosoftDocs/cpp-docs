@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetIdentityImpl Class
+
 Implements the OLE DB [IRowsetIdentity](/previous-versions/windows/desktop/ms715913\(v=vs.85\)) interface, which enables testing for row identity.  
   
 ## Syntax
@@ -24,14 +25,16 @@ class ATL_NO_VTABLE IRowsetIdentityImpl
 ```  
   
 ### Parameters  
- *T*  
- A class derived from `IRowsetIdentityImpl`.  
+
+*T*<br/>
+A class derived from `IRowsetIdentityImpl`.  
   
- *RowClass*  
- The storage unit for the `HROW`.  
+*RowClass*<br/>
+The storage unit for the `HROW`.  
 
 ## Requirements  
- **Header:** atldb.h  
+
+**Header:** atldb.h  
   
 ## Members  
   
@@ -42,6 +45,7 @@ class ATL_NO_VTABLE IRowsetIdentityImpl
 |[IsSameRow](#issamerow)|Compares two row handles to see if they refer to the same row.|  
   
 ## <a name="issamerow"></a> IRowsetIdentityImpl::IsSameRow
+
 Compares two row handles to see if they refer to the same row.  
   
 ### Syntax  
@@ -52,11 +56,14 @@ STDMETHOD(IsSameRow )(HROW hThisRow,
 ```  
   
 #### Parameters  
- See [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
- To compare row handles, this method casts the `HROW` handles to `RowClass` members and calls `memcmp` on the pointers.  
+
+To compare row handles, this method casts the `HROW` handles to `RowClass` members and calls `memcmp` on the pointers.  
   
 ## See Also  
- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

@@ -12,13 +12,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Fetching Data
+
 After you open the data source, session, and rowset objects, you can fetch data. Depending on the type of accessor you are using, you might need to bind columns.  
   
 ### To fetch data  
   
-1.  Open the rowset using the appropriate **Open** command.  
+1. Open the rowset using the appropriate **Open** command.  
   
-2.  If you are using `CManualAccessor`, bind the output columns if you have not already done so. To bind the columns, call `GetColumnInfo`, and then create an accessor with the bindings, as shown in the following example:  
+1. If you are using `CManualAccessor`, bind the output columns if you have not already done so. To bind the columns, call `GetColumnInfo`, and then create an accessor with the bindings, as shown in the following example:  
   
     ```cpp  
     // From the DBViewer Sample CDBTreeView::OnQueryEdit  
@@ -35,7 +36,7 @@ After you open the data source, session, and rowset objects, you can fetch data.
     rs.Bind();  
     ```  
   
-3.  Write a `while` loop to retrieve the data. In the loop, call `MoveNext` to advance the cursor and test the return value against S_OK, as shown in the following example:  
+1. Write a `while` loop to retrieve the data. In the loop, call `MoveNext` to advance the cursor and test the return value against S_OK, as shown in the following example:  
   
     ```cpp  
     while (rs.MoveNext() == S_OK)  
@@ -45,7 +46,7 @@ After you open the data source, session, and rowset objects, you can fetch data.
     }  
     ```  
   
-4.  Within the `while` loop, you can fetch the data according to your accessor type.  
+1. Within the `while` loop, you can fetch the data according to your accessor type.  
   
     -   If you use the [CAccessor](../../data/oledb/caccessor-class.md) class, you should have a user record that contains data members. You can access your data using those data members, as shown in the following example:  
   
@@ -87,4 +88,5 @@ After you open the data source, session, and rowset objects, you can fetch data.
         ```  
   
 ## See Also  
- [Working with OLE DB Consumer Templates](../../data/oledb/working-with-ole-db-consumer-templates.md)
+
+[Working with OLE DB Consumer Templates](../../data/oledb/working-with-ole-db-consumer-templates.md)
