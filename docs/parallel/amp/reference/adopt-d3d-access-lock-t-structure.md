@@ -12,23 +12,27 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # adopt_d3d_access_lock_t Structure
-Tag type to indicate the D3D access lock should be adopted rather than acquired.  
-  
-## Syntax  
-  
-```  
-struct adopt_d3d_access_lock_t;  
-```  
-  
-## Members  
-  
-## Inheritance Hierarchy  
- `adopt_d3d_access_lock_t`  
-  
-## Requirements  
- **Header:** amprt.h  
-  
- **Namespace:** concurrency::direct3d  
-  
-## See Also  
- [Concurrency::direct3d Namespace](concurrency-direct3d-namespace.md)
+
+Tag type to indicate the D3D access lock should be adopted rather than acquired.
+
+## Syntax
+
+```
+struct adopt_d3d_access_lock_t;
+```
+
+## Members
+
+## Inheritance Hierarchy
+
+`adopt_d3d_access_lock_t`
+
+## Requirements
+
+**Header:** amprt.h
+
+**Namespace:** concurrency::direct3d
+
+## See Also
+
+[Concurrency::direct3d Namespace](concurrency-direct3d-namespace.md)

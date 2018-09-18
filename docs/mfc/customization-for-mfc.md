@@ -12,28 +12,33 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Customization for MFC
-This topic provides tips for customizing an MFC application.  
-  
-## General Customizations  
- You can save and load the state of your application to the registry. When you enable this option, your application will load its initial state from the registry. If you change the initial docking layout for your application, you will have to clear the registry data for your application. Otherwise, the data in the registry will override any changes that you made to the initial layout.  
-  
-## Class-Specific Customizations  
- Additional customization tips can be found in the following topics:  
-  
--   [CBasePane Class](../mfc/reference/cbasepane-class.md)  
-  
--   [CDockablePane Class](../mfc/reference/cdockablepane-class.md)  
-  
--   [CDockingManager Class](../mfc/reference/cdockingmanager-class.md)  
-  
--   [CMFCBaseTabCtrl Class](../mfc/reference/cmfcbasetabctrl-class.md)  
-  
-## Additional Customization Tips  
- [Keyboard and Mouse Customization](../mfc/keyboard-and-mouse-customization.md)  
-  
- [User-defined Tools](../mfc/user-defined-tools.md)  
-  
-## See Also  
- [MFC Desktop Applications](../mfc/mfc-desktop-applications.md)   
- [Security Implications of Customization](../mfc/security-implications-of-customization.md)
+
+This topic provides tips for customizing an MFC application.
+
+## General Customizations
+
+You can save and load the state of your application to the registry. When you enable this option, your application will load its initial state from the registry. If you change the initial docking layout for your application, you will have to clear the registry data for your application. Otherwise, the data in the registry will override any changes that you made to the initial layout.
+
+## Class-Specific Customizations
+
+Additional customization tips can be found in the following topics:
+
+- [CBasePane Class](../mfc/reference/cbasepane-class.md)
+
+- [CDockablePane Class](../mfc/reference/cdockablepane-class.md)
+
+- [CDockingManager Class](../mfc/reference/cdockingmanager-class.md)
+
+- [CMFCBaseTabCtrl Class](../mfc/reference/cmfcbasetabctrl-class.md)
+
+## Additional Customization Tips
+
+[Keyboard and Mouse Customization](../mfc/keyboard-and-mouse-customization.md)
+
+[User-defined Tools](../mfc/user-defined-tools.md)
+
+## See Also
+
+[MFC Desktop Applications](../mfc/mfc-desktop-applications.md)<br/>
+[Security Implications of Customization](../mfc/security-implications-of-customization.md)
 

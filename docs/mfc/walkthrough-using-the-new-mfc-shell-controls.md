@@ -176,4 +176,4 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
 
 ## See also
 
-[Walkthroughs](../mfc/walkthroughs-mfc.md)  
+[Walkthroughs](../mfc/walkthroughs-mfc.md)

@@ -13,100 +13,117 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CAnimationTimerEventHandler Class
-Implements a callback, which is called by the Animation API when timing events occur.  
-  
-## Syntax  
-  
-```  
-class CAnimationTimerEventHandler : public CUIAnimationTimerEventHandlerBase<CAnimationTimerEventHandler>;  
-```  
-  
-## Members  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[CAnimationTimerEventHandler::CreateInstance](#createinstance)|Creates an instance of `CAnimationTimerEventHandler` callback.|  
-|[CAnimationTimerEventHandler::OnPostUpdate](#onpostupdate)|Handles events that occur after an animation update is finished. (Overrides `CUIAnimationTimerEventHandlerBase::OnPostUpdate`.)|  
-|[CAnimationTimerEventHandler::OnPreUpdate](#onpreupdate)|Handles events that occur before an animation update begins. (Overrides `CUIAnimationTimerEventHandlerBase::OnPreUpdate`.)|  
-|[CAnimationTimerEventHandler::OnRenderingTooSlow](#onrenderingtooslow)|Handles events that occur when the rendering frame rate for an animation falls below the minimum desirable frame rate. (Overrides `CUIAnimationTimerEventHandlerBase::OnRenderingTooSlow`.)|  
-|[CAnimationTimerEventHandler::SetAnimationController](#setanimationcontroller)|Stores a pointer to animation controller to route events.|  
-  
-## Remarks  
- This event handler is created and passed to IUIAnimationTimer::SetTimerEventHandler when you call CAnimationController::EnableAnimationTimerEventHandler.  
-  
-## Inheritance Hierarchy  
- `CUIAnimationCallbackBase`  
-  
- `CUIAnimationTimerEventHandlerBase`  
-  
- `CAnimationTimerEventHandler`  
-  
-## Requirements  
- **Header:** afxanimationcontroller.h  
-  
-##  <a name="createinstance"></a>  CAnimationTimerEventHandler::CreateInstance  
- Creates an instance of CAnimationTimerEventHandler callback.  
-  
-```  
+
+Implements a callback, which is called by the Animation API when timing events occur.
+
+## Syntax
+
+```
+class CAnimationTimerEventHandler : public CUIAnimationTimerEventHandlerBase<CAnimationTimerEventHandler>;
+```
+
+## Members
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[CAnimationTimerEventHandler::CreateInstance](#createinstance)|Creates an instance of `CAnimationTimerEventHandler` callback.|
+|[CAnimationTimerEventHandler::OnPostUpdate](#onpostupdate)|Handles events that occur after an animation update is finished. (Overrides `CUIAnimationTimerEventHandlerBase::OnPostUpdate`.)|
+|[CAnimationTimerEventHandler::OnPreUpdate](#onpreupdate)|Handles events that occur before an animation update begins. (Overrides `CUIAnimationTimerEventHandlerBase::OnPreUpdate`.)|
+|[CAnimationTimerEventHandler::OnRenderingTooSlow](#onrenderingtooslow)|Handles events that occur when the rendering frame rate for an animation falls below the minimum desirable frame rate. (Overrides `CUIAnimationTimerEventHandlerBase::OnRenderingTooSlow`.)|
+|[CAnimationTimerEventHandler::SetAnimationController](#setanimationcontroller)|Stores a pointer to animation controller to route events.|
+
+## Remarks
+
+This event handler is created and passed to IUIAnimationTimer::SetTimerEventHandler when you call CAnimationController::EnableAnimationTimerEventHandler.
+
+## Inheritance Hierarchy
+
+`CUIAnimationCallbackBase`
+
+`CUIAnimationTimerEventHandlerBase`
+
+`CAnimationTimerEventHandler`
+
+## Requirements
+
+**Header:** afxanimationcontroller.h
+
+##  <a name="createinstance"></a>  CAnimationTimerEventHandler::CreateInstance
+
+Creates an instance of CAnimationTimerEventHandler callback.
+
+```
 static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
-    CAnimationController* pAnimationController,  
+    CAnimationController* pAnimationController,
     IUIAnimationTimerEventHandler** ppTimerEventHandler);
-```  
-  
-### Parameters  
- *pAnimationController*  
- A pointer to animation controller, which will receive events.  
-  
- *ppTimerEventHandler*  
-  
-### Return Value  
- If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.  
-  
-##  <a name="onpostupdate"></a>  CAnimationTimerEventHandler::OnPostUpdate  
- Handles events that occur after an animation update is finished.  
-  
-```  
+```
+
+### Parameters
+
+*pAnimationController*<br/>
+A pointer to animation controller, which will receive events.
+
+*ppTimerEventHandler*
+
+### Return Value
+
+If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.
+
+##  <a name="onpostupdate"></a>  CAnimationTimerEventHandler::OnPostUpdate
+
+Handles events that occur after an animation update is finished.
+
+```
 IFACEMETHOD(OnPostUpdate)();
-```  
-  
-### Return Value  
- S_OK if the method succeeds; otherwise E_FAIL.  
-  
-##  <a name="onpreupdate"></a>  CAnimationTimerEventHandler::OnPreUpdate  
- Handles events that occur before an animation update begins.  
-  
-```  
+```
+
+### Return Value
+
+S_OK if the method succeeds; otherwise E_FAIL.
+
+##  <a name="onpreupdate"></a>  CAnimationTimerEventHandler::OnPreUpdate
+
+Handles events that occur before an animation update begins.
+
+```
 IFACEMETHOD(OnPreUpdate)();
-```  
-  
-### Return Value  
- S_OK if the method succeeds; otherwise E_FAIL.  
-  
-##  <a name="onrenderingtooslow"></a>  CAnimationTimerEventHandler::OnRenderingTooSlow  
- Handles events that occur when the rendering frame rate for an animation falls below the minimum desirable frame rate.  
-  
-```  
+```
+
+### Return Value
+
+S_OK if the method succeeds; otherwise E_FAIL.
+
+##  <a name="onrenderingtooslow"></a>  CAnimationTimerEventHandler::OnRenderingTooSlow
+
+Handles events that occur when the rendering frame rate for an animation falls below the minimum desirable frame rate.
+
+```
 IFACEMETHOD(OnRenderingTooSlow)(UINT32 fps);
-```  
-  
-### Parameters  
- *fps*  
-  
-### Return Value  
- S_OK if the method succeeds; otherwise E_FAIL.  
-  
-##  <a name="setanimationcontroller"></a>  CAnimationTimerEventHandler::SetAnimationController  
- Stores a pointer to animation controller to route events.  
-  
-```  
+```
+
+### Parameters
+
+*fps*
+
+### Return Value
+
+S_OK if the method succeeds; otherwise E_FAIL.
+
+##  <a name="setanimationcontroller"></a>  CAnimationTimerEventHandler::SetAnimationController
+
+Stores a pointer to animation controller to route events.
+
+```
 void SetAnimationController(CAnimationController* pAnimationController);
-```  
-  
-### Parameters  
- *pAnimationController*  
- A pointer to animation controller, which will receive events.  
-  
-## See Also  
- [Classes](../../mfc/reference/mfc-classes.md)
+```
+
+### Parameters
+
+*pAnimationController*<br/>
+A pointer to animation controller, which will receive events.
+
+## See Also
+
+[Classes](../../mfc/reference/mfc-classes.md)

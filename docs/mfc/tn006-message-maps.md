@@ -63,7 +63,7 @@ A standard function signature has been defined for unpacking the parameters of e
 > [!NOTE]
 > ClassWizard requires that you use the **afx_msg** keyword in your message map handler declarations.
 
- These function signatures were derived by using a simple convention. The name of the function always starts with `"On`". This is followed by the name of the Windows message with the "WM_" removed and the first letter of each word capitalized. The ordering of the parameters is *wParam* followed by `LOWORD`(*lParam*) then `HIWORD`(*lParam*). Unused parameters are not passed. Any handles that are wrapped by MFC classes are converted to pointers to the appropriate MFC objects. The following example shows how to handle the WM_PAINT message and cause the `CMyWnd::OnPaint` function to be called:
+These function signatures were derived by using a simple convention. The name of the function always starts with `"On`". This is followed by the name of the Windows message with the "WM_" removed and the first letter of each word capitalized. The ordering of the parameters is *wParam* followed by `LOWORD`(*lParam*) then `HIWORD`(*lParam*). Unused parameters are not passed. Any handles that are wrapped by MFC classes are converted to pointers to the appropriate MFC objects. The following example shows how to handle the WM_PAINT message and cause the `CMyWnd::OnPaint` function to be called:
 
 ```cpp
 BEGIN_MESSAGE_MAP(CMyWnd, CMyParentWndClass)
@@ -73,7 +73,7 @@ BEGIN_MESSAGE_MAP(CMyWnd, CMyParentWndClass)
 END_MESSAGE_MAP()
 ```
 
- The message map table must be defined outside the scope of any function or class definition. It should not be put in an extern "C" block.
+The message map table must be defined outside the scope of any function or class definition. It should not be put in an extern "C" block.
 
 > [!NOTE]
 > ClassWizard will modify the message map entries that occur between the //{{ and //}} comment bracket.
@@ -199,7 +199,7 @@ Examples of these forms:
     }
     ```
 
- Advanced users can handle a range of commands by using a single command handler: [ON_COMMAND_RANGE](reference/message-map-macros-mfc.md#on_command_range) or ON_COMMAND_RANGE_EX. See the product documentation for more information about these macros.
+Advanced users can handle a range of commands by using a single command handler: [ON_COMMAND_RANGE](reference/message-map-macros-mfc.md#on_command_range) or ON_COMMAND_RANGE_EX. See the product documentation for more information about these macros.
 
 > [!NOTE]
 > ClassWizard supports creating ON_COMMAND and ON_UPDATE_COMMAND_UI handlers, but it does not support creating ON_COMMAND_EX or ON_COMMAND_RANGE handlers. However, Class Wizard will parse and let you browse all four command handler variants.
@@ -227,5 +227,5 @@ The Windows Common Controls use the more powerful [WM_NOTIFY](https://msdn.micro
 
 ## See also
 
-[Technical Notes by Number](../mfc/technical-notes-by-number.md)  
-[Technical Notes by Category](../mfc/technical-notes-by-category.md)  
+[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
+[Technical Notes by Category](../mfc/technical-notes-by-category.md)

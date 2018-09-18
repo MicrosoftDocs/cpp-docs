@@ -1,7 +1,7 @@
 ---
 title: ".vcxproj and .props file structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "04/27/2017"
+ms.date: "09/18/2018"
 ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # .vcxproj and .props file structure
 
-MSBuild is the default project system in Visual Studio; when you choose **File | New Project** in Visual C++ you are creating an MSBuild project whose settings are stored in an XML project file that has the extension `.vcxproj`. The project file may also import .props files and .targets files where settings can be stored. In most cases, you never need to manually edit the project file, and in fact you should not edit it manually unless you have a good understanding of MSBuild. Whenever possible you should use the Visual Studio property pages to modify project settings (see [Working with project properties](working-with-project-properties.md). However, in some cases you may need to modify a project file or property sheet manually. For those scenarios, this article contains basic information about the structure of the file.
+[MSBuild](../build/msbuild-visual-cpp.md) is the default project system in Visual Studio; when you choose **File | New Project** in Visual C++ you are creating an MSBuild project whose settings are stored in an XML project file that has the extension `.vcxproj`. The project file may also import .props files and .targets files where settings can be stored. In most cases, you never need to manually edit the project file, and in fact you should not edit it manually unless you have a good understanding of MSBuild. Whenever possible you should use the Visual Studio property pages to modify project settings (see [Working with project properties](working-with-project-properties.md). However, in some cases you may need to modify a project file or property sheet manually. For those scenarios, this article contains basic information about the structure of the file.
 
 **Important:**
 
@@ -32,6 +32,8 @@ If you choose to manually edit a .vcxproj file, be aware of these facts:
    ```xml
    <ClCompile Include="$(IntDir)\generated.cpp"/>
    ```
+
+"Not supported" means that macros are not guaranteed to work for all operations in the IDE. Macros which don’t change their value in different configurations should work, but might not be preserved if an item is moved to a different filter or project. Macros which change their value for different configurations will cause problems because the IDE doesn't expect project item paths to be different for different project configurations.
 
 1. In order to have project properties correctly added, removed, or modified when edited in the **Project Properties** dialog, the file must contain separate groups for each project configuration, and the conditions must be in this form:
 

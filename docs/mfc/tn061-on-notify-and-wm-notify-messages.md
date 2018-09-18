@@ -86,14 +86,14 @@ ON_NOTIFY(wNotifyCode, id, memberFxn)
 
 where the parameters are:
 
-*wNotifyCode*  
- The code for the notification message to be handled, such as LVN_KEYDOWN.
+*wNotifyCode*<br/>
+The code for the notification message to be handled, such as LVN_KEYDOWN.
 
-*id*  
- The child identifier of the control for which the notification is sent.
+*id*<br/>
+The child identifier of the control for which the notification is sent.
 
-*memberFxn*  
- The member function to be called when this notification is sent.
+*memberFxn*<br/>
+The member function to be called when this notification is sent.
 
 Your member function must be declared with the following prototype:
 
@@ -103,11 +103,11 @@ afx_msg void memberFxn(NMHDR* pNotifyStruct, LRESULT* result);
 
 where the parameters are:
 
-*pNotifyStruct*  
- A pointer to the notification structure, as described in the section above.
+*pNotifyStruct*<br/>
+A pointer to the notification structure, as described in the section above.
 
-*result*  
- A pointer to the result code you'll set before you return.
+*result*<br/>
+A pointer to the result code you'll set before you return.
 
 ## Example
 
@@ -123,7 +123,7 @@ In the example above, the function provided by ClassWizard is:
 void CMessageReflectionDlg::OnKeydownList1(NMHDR* pNMHDR, LRESULT* pResult)
 {
     LV_KEYDOWN* pLVKeyDow = (LV_KEYDOWN*)pNMHDR;
-    
+
     // TODO: Add your control notification handler
     //       code here
 
@@ -149,17 +149,17 @@ ON_NOTIFY_RANGE(wNotifyCode, id, idLast, memberFxn)
 
 where the parameters are:
 
-*wNotifyCode*  
- The code for the notification message to be handled, such as LVN_KEYDOWN.
+*wNotifyCode*<br/>
+The code for the notification message to be handled, such as LVN_KEYDOWN.
 
-*id*  
- The first identifier in the contiguous range of identifiers.
+*id*<br/>
+The first identifier in the contiguous range of identifiers.
 
-*idLast*  
- The last identifier in the contiguous range of identifiers.
+*idLast*<br/>
+The last identifier in the contiguous range of identifiers.
 
-*memberFxn*  
- The member function to be called when this notification is sent.
+*memberFxn*<br/>
+The member function to be called when this notification is sent.
 
 Your member function must be declared with the following prototype:
 
@@ -169,14 +169,14 @@ afx_msg void memberFxn(UINT id, NMHDR* pNotifyStruct, LRESULT* result);
 
 where the parameters are:
 
-*id*  
- The child identifier of the control that sent the notification.
+*id*<br/>
+The child identifier of the control that sent the notification.
 
-*pNotifyStruct*  
- A pointer to the notification structure, as described above.
+*pNotifyStruct*<br/>
+A pointer to the notification structure, as described above.
 
-*result*  
- A pointer to the result code you'll set before you return.
+*result*<br/>
+A pointer to the result code you'll set before you return.
 
 ##  <a name="_mfcnotes_tn061_on_notify_ex.2c_.on_notify_ex_range"></a> ON_NOTIFY_EX, ON_NOTIFY_EX_RANGE
 
@@ -203,5 +203,5 @@ Your function must return **TRUE** if the notification message has been complete
 
 ## See also
 
-[Technical Notes by Number](../mfc/technical-notes-by-number.md)  
-[Technical Notes by Category](../mfc/technical-notes-by-category.md)  
+[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
+[Technical Notes by Category](../mfc/technical-notes-by-category.md)

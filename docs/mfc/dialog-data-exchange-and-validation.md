@@ -12,15 +12,17 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Dialog Data Exchange and Validation
-Dialog data exchange (DDX) is an easy way to initialize the controls in your dialog box and to gather data input by the user. Dialog data validation (DDV) is an easy way to validate data entry in a dialog box. To take advantage of DDX and DDV in your dialog boxes, use the [Add Member Variable Wizard](../ide/add-member-variable-wizard.md) to create the data members and set their data types and specify validation rules.  
-  
-## What do you want to know more about  
-  
--   [Dialog data exchange](../mfc/dialog-data-exchange.md)  
-  
--   [Dialog data validation](../mfc/dialog-data-validation.md)  
-  
-## See Also  
- [Dialog Boxes](../mfc/dialog-boxes.md)   
- [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
+
+Dialog data exchange (DDX) is an easy way to initialize the controls in your dialog box and to gather data input by the user. Dialog data validation (DDV) is an easy way to validate data entry in a dialog box. To take advantage of DDX and DDV in your dialog boxes, use the [Add Member Variable Wizard](../ide/add-member-variable-wizard.md) to create the data members and set their data types and specify validation rules.
+
+## What do you want to know more about
+
+- [Dialog data exchange](../mfc/dialog-data-exchange.md)
+
+- [Dialog data validation](../mfc/dialog-data-validation.md)
+
+## See Also
+
+[Dialog Boxes](../mfc/dialog-boxes.md)<br/>
+[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
 

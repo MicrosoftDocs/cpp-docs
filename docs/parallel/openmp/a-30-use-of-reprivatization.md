@@ -11,18 +11,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # A.30   Use of Reprivatization
-The following example demonstrates the reprivatization of variables. Private variables can be marked `private` again in a nested directive. They do not have to be shared in the enclosing parallel region.  
-  
-```  
-int i, a;  
-...  
-#pragma omp parallel private(a)  
-{  
-  ...  
-  #pragma omp parallel for private(a)  
-  for (i=0; i<10; i++)  
-     {  
-       ...  
-     }  
-}  
+
+The following example demonstrates the reprivatization of variables. Private variables can be marked `private` again in a nested directive. They do not have to be shared in the enclosing parallel region.
+
+```
+int i, a;
+...
+#pragma omp parallel private(a)
+{
+  ...
+  #pragma omp parallel for private(a)
+  for (i=0; i<10; i++)
+     {
+       ...
+     }
+}
 ```

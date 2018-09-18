@@ -13,7 +13,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # What Does it Cost me to Derive a Class from CObject?
-The overhead in deriving from class [CObject](../mfc/reference/cobject-class.md) is minimal. Your derived class inherits only four virtual functions and a single [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) object.  
-  
-## See Also  
- [CObject Class: Frequently Asked Questions](../mfc/cobject-class-frequently-asked-questions.md)
+
+The overhead in deriving from class [CObject](../mfc/reference/cobject-class.md) is minimal. Your derived class inherits only four virtual functions and a single [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) object.
+
+## See Also
+
+[CObject Class: Frequently Asked Questions](../mfc/cobject-class-frequently-asked-questions.md)

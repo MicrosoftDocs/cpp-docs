@@ -13,25 +13,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # LINGER Structure
-The `LINGER` structure is used for manipulating the SO_LINGER and SO_DONTLINGER options of `CAsyncSocket::GetSockOpt`.  
-  
-## Syntax  
-  
-```  
-struct linger {  
-    u_short l_onoff;            // option on/off  
-    u_short l_linger;           // linger time  
-};  
-```  
-  
-## Remarks  
- Setting the SO_DONTLINGER option prevents blocking on member function `Close` while waiting for unsent data to be sent. Setting this option is equivalent to setting SO_LINGER with `l_onoff` set to 0.  
-  
-## Requirements  
- **Header:** winsock2.h  
-  
-## See Also  
- [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CAsyncSocket::GetSockOpt](../../mfc/reference/casyncsocket-class.md#getsockopt)   
- [CAsyncSocket::SetSockOpt](../../mfc/reference/casyncsocket-class.md#setsockopt)
+
+The `LINGER` structure is used for manipulating the SO_LINGER and SO_DONTLINGER options of `CAsyncSocket::GetSockOpt`.
+
+## Syntax
+
+```
+struct linger {
+    u_short l_onoff;            // option on/off
+    u_short l_linger;           // linger time
+};
+```
+
+## Remarks
+
+Setting the SO_DONTLINGER option prevents blocking on member function `Close` while waiting for unsent data to be sent. Setting this option is equivalent to setting SO_LINGER with `l_onoff` set to 0.
+
+## Requirements
+
+**Header:** winsock2.h
+
+## See Also
+
+[Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
+[CAsyncSocket::GetSockOpt](../../mfc/reference/casyncsocket-class.md#getsockopt)<br/>
+[CAsyncSocket::SetSockOpt](../../mfc/reference/casyncsocket-class.md#setsockopt)
 

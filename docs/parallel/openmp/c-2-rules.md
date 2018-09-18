@@ -11,6 +11,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # C.2 Rules
+
 The notation is described in section 6.1 of the C standard. This grammar appendix shows the extensions to the base language grammar for the OpenMP C and C++ directives.
 
 **/\* in C++ (ISO/IEC 14882:1998) \*/**

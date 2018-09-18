@@ -13,11 +13,13 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # TN056: Installation of Localized MFC Components
-This tech note, which discussed the installation of localized MFC components, is now obsolete.  
-  
- **See** [TechNote 57](../mfc/tn057-localization-of-mfc-components.md) for more information on localizing MFC applications.  
-  
-## See Also  
- [Technical Notes by Number](../mfc/technical-notes-by-number.md)   
- [Technical Notes by Category](../mfc/technical-notes-by-category.md)
+
+This tech note, which discussed the installation of localized MFC components, is now obsolete.
+
+**See** [TechNote 57](../mfc/tn057-localization-of-mfc-components.md) for more information on localizing MFC applications.
+
+## See Also
+
+[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
+[Technical Notes by Category](../mfc/technical-notes-by-category.md)
 

@@ -13,17 +13,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Ready-to-Use List Classes
-The following classes are ready-to-use list classes.  
-  
- [CObList](../mfc/reference/coblist-class.md)  
- Stores pointers to objects of class `CObject` or to objects of classes derived from `CObject` in a linked list.  
-  
- [CPtrList](../mfc/reference/cptrlist-class.md)  
- Stores pointers to **void** (generic pointers) in a linked list.  
-  
- [CStringList](../mfc/reference/cstringlist-class.md)  
- Stores `CString` objects in a linked list.  
-  
-## See Also  
- [Class Overview](../mfc/class-library-overview.md)
+
+The following classes are ready-to-use list classes.
+
+[CObList](../mfc/reference/coblist-class.md)<br/>
+Stores pointers to objects of class `CObject` or to objects of classes derived from `CObject` in a linked list.
+
+[CPtrList](../mfc/reference/cptrlist-class.md)<br/>
+Stores pointers to **void** (generic pointers) in a linked list.
+
+[CStringList](../mfc/reference/cstringlist-class.md)<br/>
+Stores `CString` objects in a linked list.
+
+## See Also
+
+[Class Overview](../mfc/class-library-overview.md)
 
