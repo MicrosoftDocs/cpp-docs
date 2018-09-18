@@ -12,203 +12,200 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # double_3 Class
-Represents a short vector of three doubles.  
-  
-## Syntax  
-  
-```  
-class double_3;  
-```  
-  
-## Members  
-  
-### Public Typedefs  
-  
-|Name|Description|  
-|----------|-----------------|  
-|value_type||  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[double_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|double_3::get_x||  
-|double_3::get_xy||  
-|double_3::get_xyz||  
-|double_3::get_xz||  
-|double_3::get_xzy||  
-|double_3::get_y||  
-|double_3::get_yx||  
-|double_3::get_yxz||  
-|double_3::get_yz||  
-|double_3::get_yzx||  
-|double_3::get_z||  
-|double_3::get_zx||  
-|double_3::get_zxy||  
-|double_3::get_zy||  
-|double_3::get_zyx||  
-|double_3::ref_b||  
-|double_3::ref_g||  
-|double_3::ref_r||  
-|double_3::ref_x||  
-|double_3::ref_y||  
-|double_3::ref_z||  
-|double_3::set_x||  
-|double_3::set_xy||  
-|double_3::set_xyz||  
-|double_3::set_xz||  
-|double_3::set_xzy||  
-|double_3::set_y||  
-|double_3::set_yx||  
-|double_3::set_yxz||  
-|double_3::set_yz||  
-|double_3::set_yzx||  
-|double_3::set_z||  
-|double_3::set_zx||  
-|double_3::set_zxy||  
-|double_3::set_zy||  
-|double_3::set_zyx||  
-  
-### Public Operators  
-  
-|Name|Description|  
-|----------|-----------------|  
-|double_3::operator-||  
-|double_3::operator--||  
-|double_3::operator*=||  
-|double_3::operator/=||  
-|double_3::operator++||  
-|double_3::operator+=||  
-|double_3::operator=||  
-|double_3::operator-=||  
-  
-### Public Constants  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[size Constant](#double_3__size)||  
-  
-### Public Data Members  
-  
-|Name|Description|  
-|----------|-----------------|  
-|double_3::b||  
-|double_3::bg||  
-|double_3::bgr||  
-|double_3::br||  
-|double_3::brg||  
-|double_3::g||  
-|double_3::gb||  
-|double_3::gbr||  
-|double_3::gr||  
-|double_3::grb||  
-|double_3::r||  
-|double_3::rb||  
-|double_3::rbg||  
-|double_3::rg||  
-|double_3::rgb||  
-|double_3::x||  
-|double_3::xy||  
-|double_3::xyz||  
-|double_3::xz||  
-|double_3::xzy||  
-|double_3::y||  
-|double_3::yx||  
-|double_3::yxz||  
-|double_3::yz||  
-|double_3::yzx||  
-|double_3::z||  
-|double_3::zx||  
-|double_3::zxy||  
-|double_3::zy||  
-|double_3::zyx||  
-  
-## Inheritance Hierarchy  
- `double_3`  
-  
-## Requirements  
- **Header:** amp_short_vectors.h  
-  
- **Namespace:** Concurrency::graphics  
-  
-##  <a name="ctor"></a> double_3 
 
- Default constructor, initializes all elements with 0.  
-  
-```  
+Represents a short vector of three doubles.
+
+## Syntax
+
+```
+class double_3;
+```
+
+## Members
+
+### Public Typedefs
+
+|Name|Description|
+|----------|-----------------|
+|value_type||
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[double_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|double_3::get_x||
+|double_3::get_xy||
+|double_3::get_xyz||
+|double_3::get_xz||
+|double_3::get_xzy||
+|double_3::get_y||
+|double_3::get_yx||
+|double_3::get_yxz||
+|double_3::get_yz||
+|double_3::get_yzx||
+|double_3::get_z||
+|double_3::get_zx||
+|double_3::get_zxy||
+|double_3::get_zy||
+|double_3::get_zyx||
+|double_3::ref_b||
+|double_3::ref_g||
+|double_3::ref_r||
+|double_3::ref_x||
+|double_3::ref_y||
+|double_3::ref_z||
+|double_3::set_x||
+|double_3::set_xy||
+|double_3::set_xyz||
+|double_3::set_xz||
+|double_3::set_xzy||
+|double_3::set_y||
+|double_3::set_yx||
+|double_3::set_yxz||
+|double_3::set_yz||
+|double_3::set_yzx||
+|double_3::set_z||
+|double_3::set_zx||
+|double_3::set_zxy||
+|double_3::set_zy||
+|double_3::set_zyx||
+
+### Public Operators
+
+|Name|Description|
+|----------|-----------------|
+|double_3::operator-||
+|double_3::operator--||
+|double_3::operator*=||
+|double_3::operator/=||
+|double_3::operator++||
+|double_3::operator+=||
+|double_3::operator=||
+|double_3::operator-=||
+
+### Public Constants
+
+|Name|Description|
+|----------|-----------------|
+|[size Constant](#double_3__size)||
+
+### Public Data Members
+
+|Name|Description|
+|----------|-----------------|
+|double_3::b||
+|double_3::bg||
+|double_3::bgr||
+|double_3::br||
+|double_3::brg||
+|double_3::g||
+|double_3::gb||
+|double_3::gbr||
+|double_3::gr||
+|double_3::grb||
+|double_3::r||
+|double_3::rb||
+|double_3::rbg||
+|double_3::rg||
+|double_3::rgb||
+|double_3::x||
+|double_3::xy||
+|double_3::xyz||
+|double_3::xz||
+|double_3::xzy||
+|double_3::y||
+|double_3::yx||
+|double_3::yxz||
+|double_3::yz||
+|double_3::yzx||
+|double_3::z||
+|double_3::zx||
+|double_3::zxy||
+|double_3::zy||
+|double_3::zyx||
+
+## Inheritance Hierarchy
+
+`double_3`
+
+## Requirements
+
+**Header:** amp_short_vectors.h
+
+**Namespace:** Concurrency::graphics
+
+##  <a name="ctor"></a> double_3
+
+Default constructor, initializes all elements with 0.
+
+```
 double_3() restrict(amp,
     cpu);
 
- 
 double_3(
-    double _V0,  
-    double _V1,  
+    double _V0,
+    double _V1,
     double _V2) restrict(amp,
     cpu);
 
- 
 double_3(
     double _V) restrict(amp,
     cpu);
 
- 
 double_3(
     const double_3& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline double_3(
     const uint_3& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline double_3(
     const int_3& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline double_3(
     const float_3& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline double_3(
     const unorm_3& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline double_3(
     const norm_3& _Other) restrict(amp,
     cpu);
-```  
-  
-### Parameters  
-*_V0*<br/>
-The value to initialize element 0.  
-  
-*_V1*<br/>
-The value to initialize element 1.  
-  
-*_V2*<br/>
-The value to initialize element 2.  
-  
-*_V*<br/>
-The value for initialization.  
-  
-*_Other*<br/>
-The object used to initialize.  
-  
-##  <a name="double_3__size"></a> size 
+```
 
-```  
-static const int size = 3;  
-```  
-  
-## See Also  
- [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)
+### Parameters
+
+*_V0*<br/>
+The value to initialize element 0.
+
+*_V1*<br/>
+The value to initialize element 1.
+
+*_V2*<br/>
+The value to initialize element 2.
+
+*_V*<br/>
+The value for initialization.
+
+*_Other*<br/>
+The object used to initialize.
+
+##  <a name="double_3__size"></a> size
+
+```
+static const int size = 3;
+```
+
+## See Also
+
+[Concurrency::graphics Namespace](concurrency-graphics-namespace.md)
