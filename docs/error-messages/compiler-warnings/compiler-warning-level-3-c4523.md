@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4523
-'class' : multiple destructors specified  
-  
- The class has multiple destructors.
+
+'class' : multiple destructors specified
+
+The class has multiple destructors.

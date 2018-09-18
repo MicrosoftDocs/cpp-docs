@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2290
-C++ asm syntax ignored. Use __asm.  
-  
- The `asm` syntax is reserved for future use.
+
+C++ asm syntax ignored. Use __asm.
+
+The `asm` syntax is reserved for future use.

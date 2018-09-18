@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2413
-'token' : illegal align size  
-  
- The size used with the `ALIGN` directive is missing or outside the valid range.
+
+'token' : illegal align size
+
+The size used with the `ALIGN` directive is missing or outside the valid range.

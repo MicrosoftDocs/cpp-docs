@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4403
-illegal PTR operator  
-  
- A PTR operator is used inappropriately in inline assembler code.  
-  
- The compiler ignored the PTR operator.
+
+illegal PTR operator
+
+A PTR operator is used inappropriately in inline assembler code.
+
+The compiler ignored the PTR operator.

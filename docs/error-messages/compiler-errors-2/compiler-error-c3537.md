@@ -13,27 +13,30 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3537
-'type': you cannot cast to a type that contains 'auto'  
-  
- You cannot cast a variable to the indicated type because the type contains the `auto` keyword and the default [/Zc:auto](../../build/reference/zc-auto-deduce-variable-type.md) compiler option is in effect.  
-  
-## Example  
- The following code yields C3537 because the variables are cast to a type that contains the `auto` keyword.  
-  
-```  
-// C3537.cpp  
-// Compile with /Zc:auto  
-int main()  
-{  
-   int value = 123;  
-   auto(value);                        // C3537  
-   (auto)value;                        // C3537  
-   auto x1 = auto(value);              // C3537  
-   auto x2 = (auto)value;              // C3537  
-   auto x3 = static_cast<auto>(value); // C3537  
-   return 0;  
-}  
-```  
-  
-## See Also  
- [auto Keyword](../../cpp/auto-keyword.md)
+
+'type': you cannot cast to a type that contains 'auto'
+
+You cannot cast a variable to the indicated type because the type contains the `auto` keyword and the default [/Zc:auto](../../build/reference/zc-auto-deduce-variable-type.md) compiler option is in effect.
+
+## Example
+
+The following code yields C3537 because the variables are cast to a type that contains the `auto` keyword.
+
+```
+// C3537.cpp
+// Compile with /Zc:auto
+int main()
+{
+   int value = 123;
+   auto(value);                        // C3537
+   (auto)value;                        // C3537
+   auto x1 = auto(value);              // C3537
+   auto x2 = (auto)value;              // C3537
+   auto x3 = static_cast<auto>(value); // C3537
+   return 0;
+}
+```
+
+## See Also
+
+[auto Keyword](../../cpp/auto-keyword.md)

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # NMAKE Fatal Error U1088
-invalid separator '::' on inference rule  
-  
- An inference rule must be followed by a single colon (**:**).
+
+invalid separator '::' on inference rule
+
+An inference rule must be followed by a single colon (**:**).

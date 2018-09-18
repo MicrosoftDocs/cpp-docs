@@ -13,10 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Project Build Warning PRJ0041
-Cannot find missing dependency 'dependency' for file 'file'. Your project may still build, but may continue to appear out of date until this file is found.  
-  
- A file (resource file or .idl/.odl file, for example, contained an include statement that the project system could not resolve.  
-  
- Because the project system does not process preprocessor statements (#if, for example), the offending statement may not actually be part of the build.  
-  
- To resolve this warning, delete all unnecessary code in .rc files or add placeholder files of the appropriate name.
+
+Cannot find missing dependency 'dependency' for file 'file'. Your project may still build, but may continue to appear out of date until this file is found.
+
+A file (resource file or .idl/.odl file, for example, contained an include statement that the project system could not resolve.
+
+Because the project system does not process preprocessor statements (#if, for example), the offending statement may not actually be part of the build.
+
+To resolve this warning, delete all unnecessary code in .rc files or add placeholder files of the appropriate name.

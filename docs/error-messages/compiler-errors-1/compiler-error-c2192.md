@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2192
-parameter 'number' declaration different  
-  
- A C function was declared a second time with a different parameter list. C does not support overloaded functions.  
-  
- The following sample generates C2192:  
-  
-```  
-// C2192.c  
-// compile with: /Za /c  
-void func( float, int );  
-void func( int, float );   // C2192, different parameter list  
-void func2( int, float );   // OK  
+
+parameter 'number' declaration different
+
+A C function was declared a second time with a different parameter list. C does not support overloaded functions.
+
+The following sample generates C2192:
+
+```
+// C2192.c
+// compile with: /Za /c
+void func( float, int );
+void func( int, float );   // C2192, different parameter list
+void func2( int, float );   // OK
 ```

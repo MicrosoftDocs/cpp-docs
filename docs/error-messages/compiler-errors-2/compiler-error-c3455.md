@@ -13,22 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3455
-'attribute': none of the attribute constructors matched the arguments  
-  
- An invalid value was used to declare an attribute.  See [attribute](../../windows/attribute.md) for more information.  
-  
-## Example  
- The following sample generates C3455.  
-  
-```  
-// C3455.cpp  
-// compile with: /clr /c  
-using namespace System;  
-  
-[attribute("MyAt")]   // C3455  
-// try the following line instead  
-// [attribute(All)]  
-ref struct MyAttr {  
-   MyAttr() {}  
-};  
+
+'attribute': none of the attribute constructors matched the arguments
+
+An invalid value was used to declare an attribute.  See [attribute](../../windows/attribute.md) for more information.
+
+## Example
+
+The following sample generates C3455.
+
+```
+// C3455.cpp
+// compile with: /clr /c
+using namespace System;
+
+[attribute("MyAt")]   // C3455
+// try the following line instead
+// [attribute(All)]
+ref struct MyAttr {
+   MyAttr() {}
+};
 ```

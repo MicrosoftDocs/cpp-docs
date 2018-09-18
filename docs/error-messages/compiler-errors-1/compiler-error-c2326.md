@@ -13,23 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2326
-'declarator' : function cannot access 'name'  
-  
- The code tries to modify a member variable, which is not possible.  
-  
-## Example  
- The following sample generates C2326:  
-  
-```  
-// C2326.cpp  
-void MyFunc() {  
-   int i;  
-  
-   class MyClass  {  
-   public:  
-      void mf() {  
-         i = 4;   // C2326 i is inaccessible  
-      }  
-   };  
-}  
+
+'declarator' : function cannot access 'name'
+
+The code tries to modify a member variable, which is not possible.
+
+## Example
+
+The following sample generates C2326:
+
+```
+// C2326.cpp
+void MyFunc() {
+   int i;
+
+   class MyClass  {
+   public:
+      void mf() {
+         i = 4;   // C2326 i is inaccessible
+      }
+   };
+}
 ```

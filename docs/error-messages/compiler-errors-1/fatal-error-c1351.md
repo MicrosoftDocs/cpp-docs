@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1351
 
-> error loading dll '*dll*': incompatible version  
+> error loading dll '*dll*': incompatible version
 
 The wrong version of a DLL was found.
 

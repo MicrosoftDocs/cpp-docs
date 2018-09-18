@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Fatal Error RC1018
-unexpected '#elif'  
-  
- The `#elif` directive did not appear within an `#if`, **#ifdef**, or **#ifndef** construct.  
-  
- Make sure that there is an `#if`, **#ifdef**, or **#ifndef** statement in effect before this statement.
+
+unexpected '#elif'
+
+The `#elif` directive did not appear within an `#if`, **#ifdef**, or **#ifndef** construct.
+
+Make sure that there is an `#if`, **#ifdef**, or **#ifndef** statement in effect before this statement.

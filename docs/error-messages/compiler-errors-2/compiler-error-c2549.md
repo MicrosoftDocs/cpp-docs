@@ -13,20 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2549
-user-defined conversion cannot specify a return type  
-  
- The following sample generates C2549:  
-  
-```  
-// C2549.cpp  
-// compile with: /c  
-class X {  
-public:  
-   int operator int() { return value; }   // C2549  
-  
-   // try the following line instead  
-   // operator int() { return value; }  
-private:  
-   int value;  
-};  
+
+user-defined conversion cannot specify a return type
+
+The following sample generates C2549:
+
+```
+// C2549.cpp
+// compile with: /c
+class X {
+public:
+   int operator int() { return value; }   // C2549
+
+   // try the following line instead
+   // operator int() { return value; }
+private:
+   int value;
+};
 ```

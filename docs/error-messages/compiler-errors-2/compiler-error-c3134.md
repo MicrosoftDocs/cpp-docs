@@ -13,9 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3134
-'value' : value of attribute argument 'attribute' does not have valid type 'type'  
-  
- A syntax error was detected when a value was assigned to an attribute.  
-  
-## See Also  
- [Attributes by Usage](../../windows/attributes-by-usage.md)
+
+'value' : value of attribute argument 'attribute' does not have valid type 'type'
+
+A syntax error was detected when a value was assigned to an attribute.
+
+## See Also
+
+[Attributes by Usage](../../windows/attributes-by-usage.md)

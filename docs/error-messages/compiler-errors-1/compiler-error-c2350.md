@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2350
-'identifier' is not a static member  
-  
- Nonstatic members of a class or structure cannot be defined.
+
+'identifier' is not a static member
+
+Nonstatic members of a class or structure cannot be defined.

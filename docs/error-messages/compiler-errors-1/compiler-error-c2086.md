@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2086
-'identifier' : redefinition  
-  
- The identifier is defined more than once, or a subsequent declaration differs from a previous one.  
-  
- C2086 can also be the result of incremental building for a referenced C# assembly. Rebuild the C# assembly to resolve this error.  
-  
- The following sample generates C2086:  
-  
-```  
-// C2086.cpp  
-main() {  
-  int a;  
-  int a;   // C2086 not an error in ANSI C  
-}  
+
+'identifier' : redefinition
+
+The identifier is defined more than once, or a subsequent declaration differs from a previous one.
+
+C2086 can also be the result of incremental building for a referenced C# assembly. Rebuild the C# assembly to resolve this error.
+
+The following sample generates C2086:
+
+```
+// C2086.cpp
+main() {
+  int a;
+  int a;   // C2086 not an error in ANSI C
+}
 ```

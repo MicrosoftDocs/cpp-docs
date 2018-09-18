@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3752
-'attribute class': cannot classify attribute; 'keyword' should not be used in this context  
-  
- A user-defined attribute was applied incorrectly.
+
+'attribute class': cannot classify attribute; 'keyword' should not be used in this context
+
+A user-defined attribute was applied incorrectly.

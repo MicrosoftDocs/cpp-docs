@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2164
-'function' : intrinsic function not declared  
-  
- An `intrinsic` pragma uses an undeclared function (only occurs with **/Oi**). Or, one of the compiler intrinsics was used without including its header file.  
-  
- The following sample generates C2164:  
-  
-```  
-// C2164.c  
-// compile with: /c  
-// processor: x86  
-// Uncomment the following line to resolve.  
-// #include "xmmintrin.h"  
-void b(float *p) {  
-   _mm_load_ss(p);   // C2164  
-}  
+
+'function' : intrinsic function not declared
+
+An `intrinsic` pragma uses an undeclared function (only occurs with **/Oi**). Or, one of the compiler intrinsics was used without including its header file.
+
+The following sample generates C2164:
+
+```
+// C2164.c
+// compile with: /c
+// processor: x86
+// Uncomment the following line to resolve.
+// #include "xmmintrin.h"
+void b(float *p) {
+   _mm_load_ss(p);   // C2164
+}
 ```

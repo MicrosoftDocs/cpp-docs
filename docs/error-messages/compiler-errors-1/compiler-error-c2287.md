@@ -13,20 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2287
-'class': inheritance representation: 'representation1' is less general than the required 'representation2'  
-  
- A class is declared with a simpler representation than required.  
-  
- The following sample generates C2287:  
-  
-```  
-// C2287.cpp  
-// compile with: /vmg /c  
-class __single_inheritance X;  
-class __single_inheritance Y;  
-  
-struct A { };  
-struct B { };  
-struct X : A, B { };  // C2287  X uses multiple inheritance  
-struct Y : A { };  // OK  
+
+'class': inheritance representation: 'representation1' is less general than the required 'representation2'
+
+A class is declared with a simpler representation than required.
+
+The following sample generates C2287:
+
+```
+// C2287.cpp
+// compile with: /vmg /c
+class __single_inheritance X;
+class __single_inheritance Y;
+
+struct A { };
+struct B { };
+struct X : A, B { };  // C2287  X uses multiple inheritance
+struct Y : A { };  // OK
 ```

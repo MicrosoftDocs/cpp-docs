@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2808
-unary 'operator operator' has too many formal parameters  
-  
- The unary operator has a nonvoid parameter list.  
-  
- The following sample generates C2808:  
-  
-```  
-// C2808.cpp  
-// compile with: /c  
-class X {  
-public:  
-   X operator! ( X );   // C2808 nonvoid parameter list  
-   X operator! ( void );   // OK  
-};  
-  
+
+unary 'operator operator' has too many formal parameters
+
+The unary operator has a nonvoid parameter list.
+
+The following sample generates C2808:
+
+```
+// C2808.cpp
+// compile with: /c
+class X {
+public:
+   X operator! ( X );   // C2808 nonvoid parameter list
+   X operator! ( void );   // OK
+};
+
 ```

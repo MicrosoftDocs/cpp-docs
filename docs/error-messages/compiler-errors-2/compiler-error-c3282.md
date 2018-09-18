@@ -13,23 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3282
-generic parameter lists can only appear on managed or WinRTclasses, structs, or functions  
-  
- A generic parameter list was used incorrectly.  For more information, see [Generics](../../windows/generics-cpp-component-extensions.md).  
-  
-## Example  
- The following sample generates C3282 and shows how to fix it.  
-  
-```  
-// C3282.cpp  
-// compile with: /clr /c  
-generic <typename T> int x;   // C3282  
-  
-ref struct GC0 {  
-   generic <typename T> int x;   // C3282  
-};  
-  
-// OK  
-generic <typename T>  
-ref class M {};  
+
+generic parameter lists can only appear on managed or WinRTclasses, structs, or functions
+
+A generic parameter list was used incorrectly.  For more information, see [Generics](../../windows/generics-cpp-component-extensions.md).
+
+## Example
+
+The following sample generates C3282 and shows how to fix it.
+
+```
+// C3282.cpp
+// compile with: /clr /c
+generic <typename T> int x;   // C3282
+
+ref struct GC0 {
+   generic <typename T> int x;   // C3282
+};
+
+// OK
+generic <typename T>
+ref class M {};
 ```

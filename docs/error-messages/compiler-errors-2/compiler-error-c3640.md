@@ -13,21 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3640
-'member' : a referenced or virtual member function of a local class must be defined  
-  
- The compiler requires certain functions to be defined.  
-  
- The following sample generates C3640:  
-  
-```  
-// C3640.cpp  
-void f()   
-{  
-   struct S  
-   {  
-      virtual void f1();   // C3640  
-      // Try the following line instead:  
-      // virtual void f1(){}  
-   };  
-}  
+
+'member' : a referenced or virtual member function of a local class must be defined
+
+The compiler requires certain functions to be defined.
+
+The following sample generates C3640:
+
+```
+// C3640.cpp
+void f()
+{
+   struct S
+   {
+      virtual void f1();   // C3640
+      // Try the following line instead:
+      // virtual void f1(){}
+   };
+}
 ```

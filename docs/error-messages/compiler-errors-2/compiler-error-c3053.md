@@ -13,37 +13,38 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3053
-'symbol' : 'threadprivate' is only valid for global or static data items  
-  
- Symbols passed to [threadprivate](../../parallel/openmp/reference/threadprivate.md) must either be global or static.  
-  
- The following sample generates C3053:  
-  
-```  
-// C3053.cpp  
-// compile with: /openmp  
-void Test() {  
-   int x, y;  
-   #pragma omp threadprivate(x, y)   // C3053  
-   #pragma omp parallel copyin(x, y)  
-   {  
-      x = y;  
-   }  
-}  
-```  
-  
- Possible resolution:  
-  
-```  
-// C3053b.cpp  
-// compile with: /openmp /LD  
-int x, y;  
-#pragma omp threadprivate(x, y)  
-  
-void Test() {  
-   #pragma omp parallel copyin(x, y)  
-   {  
-      x = y;  
-   }  
-}  
+
+'symbol' : 'threadprivate' is only valid for global or static data items
+
+Symbols passed to [threadprivate](../../parallel/openmp/reference/threadprivate.md) must either be global or static.
+
+The following sample generates C3053:
+
+```
+// C3053.cpp
+// compile with: /openmp
+void Test() {
+   int x, y;
+   #pragma omp threadprivate(x, y)   // C3053
+   #pragma omp parallel copyin(x, y)
+   {
+      x = y;
+   }
+}
+```
+
+Possible resolution:
+
+```
+// C3053b.cpp
+// compile with: /openmp /LD
+int x, y;
+#pragma omp threadprivate(x, y)
+
+void Test() {
+   #pragma omp parallel copyin(x, y)
+   {
+      x = y;
+   }
+}
 ```

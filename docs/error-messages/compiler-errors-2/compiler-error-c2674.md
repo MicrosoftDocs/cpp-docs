@@ -13,16 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2674
-a generic declaration is not allowed in this context  
-  
- A generic was declared incorrectly. For more information, see [Generics](../../windows/generics-cpp-component-extensions.md).  
-  
-## Example  
- The following sample generates C2674.  
-  
-```  
-// C2674.cpp  
-// compile with: /clr /c  
-void F(generic <class T> ref class R1);   // C2674  
-generic <class T> ref class R2 {};   // OK  
+
+a generic declaration is not allowed in this context
+
+A generic was declared incorrectly. For more information, see [Generics](../../windows/generics-cpp-component-extensions.md).
+
+## Example
+
+The following sample generates C2674.
+
+```
+// C2674.cpp
+// compile with: /clr /c
+void F(generic <class T> ref class R1);   // C2674
+generic <class T> ref class R2 {};   // OK
 ```

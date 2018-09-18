@@ -13,24 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2460
-'identifier1' : uses 'identifier2', which is being defined  
-  
- A class or structure (`identifier2`) is declared as a member of itself (`identifier1`). Recursive definitions of classes and structures are not allowed.  
-  
- The following sample generates C2460:  
-  
-```  
-// C2460.cpp  
-class C {  
-   C aC;    // C2460  
-};  
-```  
-  
- Instead, use a pointer reference in the class.  
-  
-```  
-// C2460.cpp  
-class C {  
-   C * aC;    // OK  
-};  
+
+'identifier1' : uses 'identifier2', which is being defined
+
+A class or structure (`identifier2`) is declared as a member of itself (`identifier1`). Recursive definitions of classes and structures are not allowed.
+
+The following sample generates C2460:
+
+```
+// C2460.cpp
+class C {
+   C aC;    // C2460
+};
+```
+
+Instead, use a pointer reference in the class.
+
+```
+// C2460.cpp
+class C {
+   C * aC;    // OK
+};
 ```

@@ -13,10 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0031
-expression not expandable  
-  
- The expression evaluator encountered an internal error.  
-  
- You may be able to write an equivalent expression that can be evaluated correctly.  
-  
- This error is identical to CAN0031.
+
+expression not expandable
+
+The expression evaluator encountered an internal error.
+
+You may be able to write an equivalent expression that can be evaluated correctly.
+
+This error is identical to CAN0031.

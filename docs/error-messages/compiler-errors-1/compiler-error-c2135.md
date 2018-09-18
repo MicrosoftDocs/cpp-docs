@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2135
-'bit operator' : illegal bit field operation  
-  
- The address-of operator (`&`) cannot be applied to a bit field.  
-  
- The following sample generates C2135:  
-  
-```  
-// C2135.cpp  
-struct S {  
-   int i : 1;  
-};  
-  
-struct T {  
-   int j;  
-};  
-int main() {  
-   &S::i;   // C2135 address of a bit field  
-   &T::j;   // OK  
-}  
+
+'bit operator' : illegal bit field operation
+
+The address-of operator (`&`) cannot be applied to a bit field.
+
+The following sample generates C2135:
+
+```
+// C2135.cpp
+struct S {
+   int i : 1;
+};
+
+struct T {
+   int j;
+};
+int main() {
+   &S::i;   // C2135 address of a bit field
+   &T::j;   // OK
+}
 ```

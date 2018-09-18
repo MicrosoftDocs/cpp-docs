@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2839
-invalid return type 'type' for overloaded 'operator ->'  
-  
- The `->` operator must return a class, struct, or union, or a reference to one.
+
+invalid return type 'type' for overloaded 'operator ->'
+
+The `->` operator must return a class, struct, or union, or a reference to one.

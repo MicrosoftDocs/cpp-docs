@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2337
-'attribute name' : attribute not found  
-  
- You have used an attribute that is not supported in this version of Visual C++.  
-  
- The following sample generates C2337:  
-  
-```  
-// C2337.cpp  
-// compile with: /c  
-[emitidl];  
-[module(name="x")];  
-[grasshopper]   // C2337, not a supported attribute  
-class a{};  
+
+'attribute name' : attribute not found
+
+You have used an attribute that is not supported in this version of Visual C++.
+
+The following sample generates C2337:
+
+```
+// C2337.cpp
+// compile with: /c
+[emitidl];
+[module(name="x")];
+[grasshopper]   // C2337, not a supported attribute
+class a{};
 ```

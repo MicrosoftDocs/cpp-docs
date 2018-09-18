@@ -13,26 +13,27 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2635
-cannot convert an 'identifier1*' to an 'identifier2\*'; conversion from a virtual base class is implied  
-  
- The conversion requires a cast from a `virtual` base class to a derived class, which is not allowed.  
-  
- The following sample generates C2635:  
-  
-```  
-// C2635.cpp  
-class B {};  
-class D : virtual public B {};  
-class E : public B {};  
-  
-int main() {  
-   B b;  
-   D d;  
-   E e;  
-  
-   D * pD = &d;  
-   E * pE = &e;  
-   pD = (D*)&b;   // C2635  
-   pE = (E*)&b;   // OK  
-}  
+
+cannot convert an 'identifier1*' to an 'identifier2\*'; conversion from a virtual base class is implied
+
+The conversion requires a cast from a `virtual` base class to a derived class, which is not allowed.
+
+The following sample generates C2635:
+
+```
+// C2635.cpp
+class B {};
+class D : virtual public B {};
+class E : public B {};
+
+int main() {
+   B b;
+   D d;
+   E e;
+
+   D * pD = &d;
+   E * pE = &e;
+   pD = (D*)&b;   // C2635
+   pE = (E*)&b;   // OK
+}
 ```

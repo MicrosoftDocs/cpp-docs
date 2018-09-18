@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2745
-'token' : this token cannot be converted to an identifier  
-  
- Identifiers must be comprised of legal characters.  
-  
- The following sample generates C2745:  
-  
-```  
-// C2745.cpp  
-// compile with: /clr  
-int main() {  
-   int __identifier([));   // C2745  
-}  
+
+'token' : this token cannot be converted to an identifier
+
+Identifiers must be comprised of legal characters.
+
+The following sample generates C2745:
+
+```
+// C2745.cpp
+// compile with: /clr
+int main() {
+   int __identifier([));   // C2745
+}
 ```

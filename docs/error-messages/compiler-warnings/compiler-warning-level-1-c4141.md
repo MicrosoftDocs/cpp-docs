@@ -13,12 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4141
-'modifier' : used more than once  
-  
-## Example  
-  
-```  
-// C4141.cpp  
-// compile with: /W1 /LD  
-inline inline void func ();   // C4141  
+
+'modifier' : used more than once
+
+## Example
+
+```
+// C4141.cpp
+// compile with: /W1 /LD
+inline inline void func ();   // C4141
 ```

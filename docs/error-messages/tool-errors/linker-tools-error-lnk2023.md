@@ -13,14 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK2023
-bad dll or entry point \<dll or entry point>  
-  
- The linker is loading an incorrect version of msobj90.dll. Ensure that link.exe and msobj90.dll in your path have the same version.  
-  
- A dependency of msobj90.dll may not be present. The dependency list for msobj90.dll is:  
-  
--   Msvcr90.dll  
-  
--   Kernel32.dll  
-  
- Check your machine for any other copies of msobj90.dll that may be out of date.
+
+bad dll or entry point \<dll or entry point>
+
+The linker is loading an incorrect version of msobj90.dll. Ensure that link.exe and msobj90.dll in your path have the same version.
+
+A dependency of msobj90.dll may not be present. The dependency list for msobj90.dll is:
+
+- Msvcr90.dll
+
+- Kernel32.dll
+
+Check your machine for any other copies of msobj90.dll that may be out of date.

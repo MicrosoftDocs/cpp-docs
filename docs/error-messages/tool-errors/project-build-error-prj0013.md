@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Project Build Error PRJ0013
-System resource could be critically low. Unable to create a pipe required to launch a build.  
-  
- This error indicates that system resources are low. To resolve this error, decrease system resource usage by other processes/applications.  
-  
- This error can also occur if your security level is insufficient to create pipes (see [CreatePipe](https://msdn.microsoft.com/library/windows/desktop/aa365152.aspx)).
+
+System resource could be critically low. Unable to create a pipe required to launch a build.
+
+This error indicates that system resources are low. To resolve this error, decrease system resource usage by other processes/applications.
+
+This error can also occur if your security level is insufficient to create pipes (see [CreatePipe](https://msdn.microsoft.com/library/windows/desktop/aa365152.aspx)).

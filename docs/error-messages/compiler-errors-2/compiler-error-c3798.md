@@ -13,35 +13,37 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3798
-'specifier': property declaration cannot have override specifier (should be placed on property get/set methods instead)  
-  
- A property was declared incorrectly. For more information, see  
-  
--   [property](../../windows/property-cpp-component-extensions.md)  
-  
--   [abstract](../../windows/abstract-cpp-component-extensions.md)  
-  
--   [sealed](../../windows/sealed-cpp-component-extensions.md)  
-  
-## Example  
- The following sample generates C3798  
-  
-```  
-// C3798.cpp  
-// compile with: /clr /c  
-ref struct A {  
-   property int Prop_1 abstract;   // C3798  
-   property int Prop_2 sealed;   // C3798  
-  
-   // OK  
-   property int Prop_3 {  
-      virtual int get() abstract;  
-      virtual void set(int i) abstract;  
-   }  
-  
-   property int Prop_4 {  
-      virtual int get() sealed;  
-      virtual void set(int i) sealed;  
-   }  
-};  
+
+'specifier': property declaration cannot have override specifier (should be placed on property get/set methods instead)
+
+A property was declared incorrectly. For more information, see
+
+- [property](../../windows/property-cpp-component-extensions.md)
+
+- [abstract](../../windows/abstract-cpp-component-extensions.md)
+
+- [sealed](../../windows/sealed-cpp-component-extensions.md)
+
+## Example
+
+The following sample generates C3798
+
+```
+// C3798.cpp
+// compile with: /clr /c
+ref struct A {
+   property int Prop_1 abstract;   // C3798
+   property int Prop_2 sealed;   // C3798
+
+   // OK
+   property int Prop_3 {
+      virtual int get() abstract;
+      virtual void set(int i) abstract;
+   }
+
+   property int Prop_4 {
+      virtual int get() sealed;
+      virtual void set(int i) sealed;
+   }
+};
 ```

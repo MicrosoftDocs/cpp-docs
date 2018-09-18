@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3132
-'function-parameter' : parameter arrays can only be applied to a formal argument of type 'single-dimensional managed array'  
-  
- The [ParamArray](https://msdn.microsoft.com/library/system.paramarrayattribute.aspx) attribute was applied to a parameter that was not a single-dimension array.  
-  
- The following sample generates C3132:  
-  
-```  
-// C3132.cpp  
-// compile with: /clr /c  
-using namespace System;  
-void f( [ParamArray] Int32[,] );   // C3132  
-void g( [ParamArray] Int32[] );   // C3132  
-  
-void h( [ParamArray] array<Char ^> ^ MyArray );   // OK  
-  
+
+'function-parameter' : parameter arrays can only be applied to a formal argument of type 'single-dimensional managed array'
+
+The [ParamArray](https://msdn.microsoft.com/library/system.paramarrayattribute.aspx) attribute was applied to a parameter that was not a single-dimension array.
+
+The following sample generates C3132:
+
+```
+// C3132.cpp
+// compile with: /clr /c
+using namespace System;
+void f( [ParamArray] Int32[,] );   // C3132
+void g( [ParamArray] Int32[] );   // C3132
+
+void h( [ParamArray] array<Char ^> ^ MyArray );   // OK
+
 ```

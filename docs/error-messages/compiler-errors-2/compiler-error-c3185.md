@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3185
-'typeid' used on managed or WinRT type 'type', use 'operator' instead  
-  
- You cannot apply the [typeid](../../cpp/typeid-operator.md) operator to a managed or WinRT type; use [typeid](../../windows/typeid-cpp-component-extensions.md) instead.  
-  
- The following sample generates C3185 and shows how to fix it:  
-  
-```  
-// C3185a.cpp  
-// compile with: /clr  
-ref class Base {};  
-ref class Derived : public Base {};  
-  
-int main() {  
-   Derived ^ pd = gcnew Derived;  
-   Base ^pb = pd;  
-   const type_info & t1 = typeid(pb);   // C3185  
-   System::Type ^ MyType = Base::typeid;   // OK  
-};  
-```  
+
+'typeid' used on managed or WinRT type 'type', use 'operator' instead
+
+You cannot apply the [typeid](../../cpp/typeid-operator.md) operator to a managed or WinRT type; use [typeid](../../windows/typeid-cpp-component-extensions.md) instead.
+
+The following sample generates C3185 and shows how to fix it:
+
+```
+// C3185a.cpp
+// compile with: /clr
+ref class Base {};
+ref class Derived : public Base {};
+
+int main() {
+   Derived ^ pd = gcnew Derived;
+   Base ^pb = pd;
+   const type_info & t1 = typeid(pb);   // C3185
+   System::Type ^ MyType = Base::typeid;   // OK
+};
+```

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # NMAKE Fatal Error U1036
-syntax error : too many names to left of '='  
-  
- Only one string is allowed to the left of a macro definition.
+
+syntax error : too many names to left of '='
+
+Only one string is allowed to the left of a macro definition.

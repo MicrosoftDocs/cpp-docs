@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2695
-'function1': overriding virtual function differs from 'function2' only by calling convention  
-  
- The signature of a function in a derived class cannot override a function in a base class and change the calling convention.  
-  
- The following sample generates C2695:  
-  
-```  
-// C2695.cpp  
-class C {  
-   virtual void __fastcall func();  
-};  
-  
-class D : public C {  
-   virtual void __clrcall func();   // C2695  
-};  
+
+'function1': overriding virtual function differs from 'function2' only by calling convention
+
+The signature of a function in a derived class cannot override a function in a base class and change the calling convention.
+
+The following sample generates C2695:
+
+```
+// C2695.cpp
+class C {
+   virtual void __fastcall func();
+};
+
+class D : public C {
+   virtual void __clrcall func();   // C2695
+};
 ```

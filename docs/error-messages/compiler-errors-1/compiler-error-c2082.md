@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2082
-redefinition of formal parameter 'identifier'  
-  
- A formal parameter to a function is redeclared within the function body. To resolve the error, remove the redefinition.  
-  
- The following sample generates C2082:  
-  
-```  
-// C2082.cpp  
-void func(int i) {  
-   int i;   // C2082  
-   int ii;   // OK  
-}  
+
+redefinition of formal parameter 'identifier'
+
+A formal parameter to a function is redeclared within the function body. To resolve the error, remove the redefinition.
+
+The following sample generates C2082:
+
+```
+// C2082.cpp
+void func(int i) {
+   int i;   // C2082
+   int ii;   // OK
+}
 ```

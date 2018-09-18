@@ -13,21 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2312
-'exception1' : is caught by 'exception2' on line number  
-  
- Two handlers catch the same exception type.  
-  
- The following sample generates C2312:  
-  
-```  
-// C2312.cpp  
-// compile with: /EHsc  
-#include <eh.h>  
-int main() {  
-    try {  
-        throw "ooops!";  
-    }  
-    catch( signed int ) {}  
-    catch( int ) {}   // C2312  
-}  
+
+'exception1' : is caught by 'exception2' on line number
+
+Two handlers catch the same exception type.
+
+The following sample generates C2312:
+
+```
+// C2312.cpp
+// compile with: /EHsc
+#include <eh.h>
+int main() {
+    try {
+        throw "ooops!";
+    }
+    catch( signed int ) {}
+    catch( int ) {}   // C2312
+}
 ```

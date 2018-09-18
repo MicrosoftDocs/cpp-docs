@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3609
-'member': a sealed or final function must be virtual  
-  
- The [sealed](../../windows/sealed-cpp-component-extensions.md) and [final](../../cpp/final-specifier.md) keywords are only allowed on a class, struct, or member function marked `virtual`.  
-  
- The following sample generates C3609:  
-  
-```  
-// C3609.cpp  
-// compile with: /clr /c  
-ref class C {  
-   int f() sealed;   // C3609  
-   virtual int f2() sealed;   // OK  
-};  
-```  
+
+'member': a sealed or final function must be virtual
+
+The [sealed](../../windows/sealed-cpp-component-extensions.md) and [final](../../cpp/final-specifier.md) keywords are only allowed on a class, struct, or member function marked `virtual`.
+
+The following sample generates C3609:
+
+```
+// C3609.cpp
+// compile with: /clr /c
+ref class C {
+   int f() sealed;   // C3609
+   virtual int f2() sealed;   // OK
+};
+```

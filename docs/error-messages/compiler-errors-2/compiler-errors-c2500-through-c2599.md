@@ -120,4 +120,4 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler Error C2596|'*identifier*' A WinRT attribute field can only be a 'public enum class', 'int', 'unsigned int', 'bool', 'Platform::Type', 'Platform::String' or 'Windows::Foundation::HResult'|
 |[Compiler Error C2597](compiler-error-C2597.md)|illegal reference to non-static member '*identifier*'|
 |[Compiler Error C2598](compiler-error-C2598.md)|linkage specification must be at global scope|
-|[Compiler Error C2599](compiler-error-C2599.md)|'*identifier*': the forward declaration of a managed/WinRT enum is not allowed|  
+|[Compiler Error C2599](compiler-error-C2599.md)|'*identifier*': the forward declaration of a managed/WinRT enum is not allowed|

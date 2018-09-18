@@ -13,15 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3555
-  
-> incorrect argument to 'decltype'  
-  
- The argument to the `decltype(`*expression*`)` type specifier is not a valid expression.  
-  
+
+> incorrect argument to 'decltype'
+
+The argument to the `decltype(`*expression*`)` type specifier is not a valid expression.
+
 > [!NOTE]
->  C3555 is not likely to occur. If the compiler emits C3555, it is probably because an internal compiler error has occurred.  
-  
-## See Also  
-  
- [Compiler Error C3556](../../error-messages/compiler-errors-2/compiler-error-c3556.md)   
- [Fatal Error C1001](../../error-messages/compiler-errors-1/fatal-error-c1001.md)
+>  C3555 is not likely to occur. If the compiler emits C3555, it is probably because an internal compiler error has occurred.
+
+## See Also
+
+[Compiler Error C3556](../../error-messages/compiler-errors-2/compiler-error-c3556.md)<br/>
+[Fatal Error C1001](../../error-messages/compiler-errors-1/fatal-error-c1001.md)

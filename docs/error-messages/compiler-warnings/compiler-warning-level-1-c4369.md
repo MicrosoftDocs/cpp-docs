@@ -13,18 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4369
-'enumerator' :  enumerator value 'value' cannot be represented as 'type', value is 'new_value'  
-  
- An enumerator was calculated to be greater than the greatest value for the specified underlying type.  This caused an overflow and the compiler wrapped the enumerator value to the lowest possible value for the type.  
-  
-## Example  
- The following sample generates C4369.  
-  
-```  
-// C4369.cpp  
-// compile with: /W1  
-int main() {  
-   enum Color: char { red = 0x7e, green, blue };   // C4369  
-   enum Color2: char { red2 = 0x7d, green2, blue2};   // OK  
-}  
+
+'enumerator' :  enumerator value 'value' cannot be represented as 'type', value is 'new_value'
+
+An enumerator was calculated to be greater than the greatest value for the specified underlying type.  This caused an overflow and the compiler wrapped the enumerator value to the lowest possible value for the type.
+
+## Example
+
+The following sample generates C4369.
+
+```
+// C4369.cpp
+// compile with: /W1
+int main() {
+   enum Color: char { red = 0x7e, green, blue };   // C4369
+   enum Color2: char { red2 = 0x7d, green2, blue2};   // OK
+}
 ```

@@ -13,20 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3912
-'event': type of event must be a delegate type  
-  
- An event was declared but was not of the proper type.  
-  
- For more information, see [event](../../windows/event-cpp-component-extensions.md).  
-  
- The following sample generates C3912:  
-  
-```  
-// C3912.cpp  
-// compile with: /clr  
-delegate void H();  
-ref class X {  
-   event int Ev;   // C3912  
-   event H^ Ev2;   // OK  
-};  
+
+'event': type of event must be a delegate type
+
+An event was declared but was not of the proper type.
+
+For more information, see [event](../../windows/event-cpp-component-extensions.md).
+
+The following sample generates C3912:
+
+```
+// C3912.cpp
+// compile with: /clr
+delegate void H();
+ref class X {
+   event int Ev;   // C3912
+   event H^ Ev2;   // OK
+};
 ```

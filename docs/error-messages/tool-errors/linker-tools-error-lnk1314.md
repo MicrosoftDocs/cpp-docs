@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1314
-corrupt or invalid COFF symbol table (undefined static or label symbol)  
-  
- The compiler-generated content for a section in the given object appears to be corrupt.  
-  
- This error may represent a failure of the compiler.
+
+corrupt or invalid COFF symbol table (undefined static or label symbol)
+
+The compiler-generated content for a section in the given object appears to be corrupt.
+
+This error may represent a failure of the compiler.

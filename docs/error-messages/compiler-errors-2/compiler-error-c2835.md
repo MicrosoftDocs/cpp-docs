@@ -13,29 +13,30 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2835
-user-defined conversion 'type' takes no formal parameters  
-  
- User-defined type conversions cannot take formal parameters.  
-  
- The following sample generates C2835:  
-  
-```  
-// C2835.cpp  
-class A {  
-public:  
-   char v_char;  
-  
-   A() {   
-      v_char = 'A';   
-   };  
-   operator char(char a) {   // C2835  
-   // try the following line instead  
-   // operator char() {     
-      return v_char + 1;   
-   };  
-};  
-  
-int main() {  
-   A a;  
-}  
+
+user-defined conversion 'type' takes no formal parameters
+
+User-defined type conversions cannot take formal parameters.
+
+The following sample generates C2835:
+
+```
+// C2835.cpp
+class A {
+public:
+   char v_char;
+
+   A() {
+      v_char = 'A';
+   };
+   operator char(char a) {   // C2835
+   // try the following line instead
+   // operator char() {
+      return v_char + 1;
+   };
+};
+
+int main() {
+   A a;
+}
 ```

@@ -13,18 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3824
-'member': this type cannot appear in this context (function parameter, return type, or a static member)  
-  
- Pinning pointers cannot be function parameters, return types, or declared `static`.  
-  
-## Example  
- The following sample generates C3824:  
-  
-```  
-// C3824a.cpp  
-// compile with: /clr /c  
-void func() {  
-   static pin_ptr<int> a; // C3824  
-   pin_ptr<int> b; // OK  
-}  
-```  
+
+'member': this type cannot appear in this context (function parameter, return type, or a static member)
+
+Pinning pointers cannot be function parameters, return types, or declared `static`.
+
+## Example
+
+The following sample generates C3824:
+
+```
+// C3824a.cpp
+// compile with: /clr /c
+void func() {
+   static pin_ptr<int> a; // C3824
+   pin_ptr<int> b; // OK
+}
+```

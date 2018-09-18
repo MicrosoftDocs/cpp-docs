@@ -13,32 +13,33 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3216
-constraint must be a generic parameter, not 'type'  
-  
- A constraint was ill formed.  
-  
- The following sample generates C3216:  
-  
-```  
-// C3216.cpp  
-// compile with: /clr  
-interface struct A {};  
-  
-generic <class T>  
-where F : A   // C3216  
-// Try the following line instead:  
-// where T : A    // C3216  
-ref class C {};  
-```  
-  
- The following example demonstrates a possible resolution:  
-  
-```  
-// C3216b.cpp  
-// compile with: /clr /c  
-interface struct A {};  
-  
-generic <class T>  
-where T : A  
-ref class C {};  
+
+constraint must be a generic parameter, not 'type'
+
+A constraint was ill formed.
+
+The following sample generates C3216:
+
+```
+// C3216.cpp
+// compile with: /clr
+interface struct A {};
+
+generic <class T>
+where F : A   // C3216
+// Try the following line instead:
+// where T : A    // C3216
+ref class C {};
+```
+
+The following example demonstrates a possible resolution:
+
+```
+// C3216b.cpp
+// compile with: /clr /c
+interface struct A {};
+
+generic <class T>
+where T : A
+ref class C {};
 ```

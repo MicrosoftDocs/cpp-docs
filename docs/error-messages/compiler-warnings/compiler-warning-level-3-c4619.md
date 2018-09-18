@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4619
-\#pragma warning : there is no warning number 'number'  
-  
- An attempt was made to disable a warning that does not exist.  
-  
- This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.  
-  
- The following sample generates C4619:  
-  
-```  
-// C4619.cpp  
-// compile with: /W3 /c  
-#pragma warning(default : 4619)  
-#pragma warning(disable : 4354)   // C4619, C4354 does not exist  
+
+\#pragma warning : there is no warning number 'number'
+
+An attempt was made to disable a warning that does not exist.
+
+This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+
+The following sample generates C4619:
+
+```
+// C4619.cpp
+// compile with: /W3 /c
+#pragma warning(default : 4619)
+#pragma warning(disable : 4354)   // C4619, C4354 does not exist
 ```

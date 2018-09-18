@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3369
-'module name': idl_module already defined  
-  
- The [idl_module](../../windows/idl-module.md) usage where you define the DLL can only occur once in a program.  
-  
- The following sample generates C3369:  
-  
-```  
-// C3369.cpp  
-// compile with: /c  
-[idl_module(name="name1", dllname="x.dll")]; // C3369  
-[idl_module(name="name1", dllname="x.dll")];  
+
+'module name': idl_module already defined
+
+The [idl_module](../../windows/idl-module.md) usage where you define the DLL can only occur once in a program.
+
+The following sample generates C3369:
+
+```
+// C3369.cpp
+// compile with: /c
+[idl_module(name="name1", dllname="x.dll")]; // C3369
+[idl_module(name="name1", dllname="x.dll")];
 ```

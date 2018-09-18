@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3632
-'event': illegal style of event for construct  
-  
- [__event](../../cpp/event.md) declarations are not valid in all constructs.  
-  
- C3632 is only reachable using the obsolete compiler option **/clr:oldSyntax**.  
+
+'event': illegal style of event for construct
+
+[__event](../../cpp/event.md) declarations are not valid in all constructs.
+
+C3632 is only reachable using the obsolete compiler option **/clr:oldSyntax**.

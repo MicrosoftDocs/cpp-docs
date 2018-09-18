@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2767
-managed or WinRTarray dimension mismatch : expected N argument(s) - M provided  
-  
- A managed or WinRT array declaration was ill formed. For more information, see [array](../../windows/arrays-cpp-component-extensions.md).  
-  
- The following sample generates C2767 and shows how to fix it:  
-  
-```  
-// C2767.cpp  
-// compile with: /clr  
-int main() {  
-   array<int> ^p1 = new array<int>(2,3); // C2767  
-   array<int> ^p2 = new array<int>(2);   // OK  
-}  
+
+managed or WinRTarray dimension mismatch : expected N argument(s) - M provided
+
+A managed or WinRT array declaration was ill formed. For more information, see [array](../../windows/arrays-cpp-component-extensions.md).
+
+The following sample generates C2767 and shows how to fix it:
+
+```
+// C2767.cpp
+// compile with: /clr
+int main() {
+   array<int> ^p1 = new array<int>(2,3); // C2767
+   array<int> ^p2 = new array<int>(2);   // OK
+}
 ```

@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # NMAKE Fatal Error U1045
-spawn failed : message  
-  
- A program or command called by NMAKE failed for the given reason. When NMAKE calls another program—for example, the compiler or linker—the call may fail, or an error may be returned by the called program. This message is used to report the error.  
-  
- To fix this issue, first determine the cause of the error. You can use the commands reported by the NMAKE [/N](../../build/nmake-options.md) option to verify the environment settings and to repeat the actions performed by NMAKE on the command line.
+
+spawn failed : message
+
+A program or command called by NMAKE failed for the given reason. When NMAKE calls another program—for example, the compiler or linker—the call may fail, or an error may be returned by the called program. This message is used to report the error.
+
+To fix this issue, first determine the cause of the error. You can use the commands reported by the NMAKE [/N](../../build/nmake-options.md) option to verify the environment settings and to repeat the actions performed by NMAKE on the command line.

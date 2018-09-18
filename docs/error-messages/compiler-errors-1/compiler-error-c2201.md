@@ -13,18 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2201
-'identifier' : must have external linkage in order to be exported/imported  
-  
- The exported identifier is `static`.  
-  
- The following sample generates C2286:  
-  
-```  
-// C2201.cpp  
-// compile with: /c  
-__declspec(dllexport) static void func() {}   // C2201 func() is static  
-__declspec(dllexport) void func2() {}   // OK  
-```  
-  
-## See Also  
- [Types of Linkage](../../cpp/types-of-linkage.md)
+
+'identifier' : must have external linkage in order to be exported/imported
+
+The exported identifier is `static`.
+
+The following sample generates C2286:
+
+```
+// C2201.cpp
+// compile with: /c
+__declspec(dllexport) static void func() {}   // C2201 func() is static
+__declspec(dllexport) void func2() {}   // OK
+```
+
+## See Also
+
+[Types of Linkage](../../cpp/types-of-linkage.md)

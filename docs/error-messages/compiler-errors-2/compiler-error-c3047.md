@@ -13,34 +13,35 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3047
-Structured block in an OpenMP 'sections' region must be preceded by '#pragma omp section'  
-  
- Any code in a code block introduced by a [sections](../../parallel/openmp/reference/sections-openmp.md) directive must be in a code block introduced by a `section` directive.  
-  
- The following sample generates C3047:  
-  
-```  
-// C3047.cpp  
-// compile with: /openmp /c  
-#include "omp.h"  
-  
-int main() {  
-   int n2 = 2, n3 = 3;  
-  
-   #pragma omp parallel  
-   {  
-      ++n2;  
-  
-      #pragma omp sections  
-      {  
-  
-         #pragma omp section  
-         {  
-            ++n3;  
-         }  
-  
-         ++n2;   // C3047 not enclosed in #pragma omp section  
-      }  
-   }  
-}  
+
+Structured block in an OpenMP 'sections' region must be preceded by '#pragma omp section'
+
+Any code in a code block introduced by a [sections](../../parallel/openmp/reference/sections-openmp.md) directive must be in a code block introduced by a `section` directive.
+
+The following sample generates C3047:
+
+```
+// C3047.cpp
+// compile with: /openmp /c
+#include "omp.h"
+
+int main() {
+   int n2 = 2, n3 = 3;
+
+   #pragma omp parallel
+   {
+      ++n2;
+
+      #pragma omp sections
+      {
+
+         #pragma omp section
+         {
+            ++n3;
+         }
+
+         ++n2;   // C3047 not enclosed in #pragma omp section
+      }
+   }
+}
 ```

@@ -13,24 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1106
-invalid file or disk full: cannot seek to location  
-  
- The tool could not read or write to `location` in a memory-mapped file.  
-  
-### To fix by checking the following possible causes  
-  
-1.  Disk full.  
-  
-     Free up some space and link again.  
-  
-2.  Trying to link over a network.  
-  
-     Some networks do not fully support the memory-mapped files used by the linker. Try linking on your local disk.  
-  
-3.  Bad block on your disk.  
-  
-     Although the operating system and disk hardware should have detected such an error, you may want to run a disk-checking program.  
-  
-4.  Out of heap space.  
-  
+
+invalid file or disk full: cannot seek to location
+
+The tool could not read or write to `location` in a memory-mapped file.
+
+### To fix by checking the following possible causes
+
+1. Disk full.
+
+     Free up some space and link again.
+
+1. Trying to link over a network.
+
+     Some networks do not fully support the memory-mapped files used by the linker. Try linking on your local disk.
+
+1. Bad block on your disk.
+
+     Although the operating system and disk hardware should have detected such an error, you may want to run a disk-checking program.
+
+1. Out of heap space.
+
      See [C1060](../../error-messages/compiler-errors-1/fatal-error-c1060.md) for more information.

@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2246
-'identifier' : illegal static data member in locally defined class  
-  
- A member of a class, structure, or union with local scope is declared `static`.  
-  
- The following sample generates C2246:  
-  
-```  
-// C2246.cpp  
-// compile with: /c  
-void func( void ) {  
-   class A { static int i; };   // C2246  i is local to func  
-   static int j;   // OK  
-};  
+
+'identifier' : illegal static data member in locally defined class
+
+A member of a class, structure, or union with local scope is declared `static`.
+
+The following sample generates C2246:
+
+```
+// C2246.cpp
+// compile with: /c
+void func( void ) {
+   class A { static int i; };   // C2246  i is local to func
+   static int j;   // OK
+};
 ```

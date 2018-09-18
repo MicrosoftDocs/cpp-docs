@@ -166,7 +166,7 @@ Code that invokes template functions must have matching template function declar
 #include <iostream>
 using namespace std;
 
-template<class T> class 
+template<class T> class
 Test {
    // The operator<< declaration does not match the definition below:
    friend ostream& operator<<(ostream&, Test&);
@@ -210,7 +210,7 @@ int main() {
 }
 ```
 
- To fix this error, change `unsigned short` to `wchar_t` or `WCHAR`, or compile LNK2019g.cpp by using **/Zc:wchar_t-**.
+To fix this error, change `unsigned short` to `wchar_t` or `WCHAR`, or compile LNK2019g.cpp by using **/Zc:wchar_t-**.
 
 ## Additional resources
 

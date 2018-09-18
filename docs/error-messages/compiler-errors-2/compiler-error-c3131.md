@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3131
-project must have a 'module' attribute with a 'name' property  
-  
- The [module](../../windows/module-cpp.md) attribute must have a name parameter.  
-  
- The following sample generates C3131:  
-  
-```  
-// C3131.cpp  
-[emitidl];  
-[module];   // C3131  
-// try the following line instead  
-// [module (name="MyLib")];  
-  
-[public]  
-typedef long int LongInt;  
+
+project must have a 'module' attribute with a 'name' property
+
+The [module](../../windows/module-cpp.md) attribute must have a name parameter.
+
+The following sample generates C3131:
+
+```
+// C3131.cpp
+[emitidl];
+[module];   // C3131
+// try the following line instead
+// [module (name="MyLib")];
+
+[public]
+typedef long int LongInt;
 ```

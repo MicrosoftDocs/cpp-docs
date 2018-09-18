@@ -13,14 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1053
-'\<identifier>' : function too large  
-  
- The function is too large to compile.  
-  
-### To fix by using the following possible solutions  
-  
-1.  Try compiling without optimizations.  
-  
-2.  Divide the function into smaller functions.  
-  
-3.  Reduce calls to inline functions.
+
+'\<identifier>' : function too large
+
+The function is too large to compile.
+
+### To fix by using the following possible solutions
+
+1. Try compiling without optimizations.
+
+1. Divide the function into smaller functions.
+
+1. Reduce calls to inline functions.

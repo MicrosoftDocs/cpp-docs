@@ -13,17 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2959
-a generic class or function may not be a member of a template  
-  
- For more information, see [Windows Runtime and Managed Templates](../../windows/windows-runtime-and-managed-templates-cpp-component-extensions.md) and [Generics](../../windows/generics-cpp-component-extensions.md).  
-  
-## Example  
- The following sample generates C2959.  
-  
-```  
-// C2959.cpp  
-// compile with: /clr /c  
-template <class T> ref struct S {  
-   generic <class U> ref struct GR1;   // C2959  
-};  
+
+a generic class or function may not be a member of a template
+
+For more information, see [Windows Runtime and Managed Templates](../../windows/windows-runtime-and-managed-templates-cpp-component-extensions.md) and [Generics](../../windows/generics-cpp-component-extensions.md).
+
+## Example
+
+The following sample generates C2959.
+
+```
+// C2959.cpp
+// compile with: /clr /c
+template <class T> ref struct S {
+   generic <class U> ref struct GR1;   // C2959
+};
 ```

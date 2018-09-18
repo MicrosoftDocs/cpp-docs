@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2256
-illegal use of friend specifier on 'function'  
-  
- A destructor or constructor cannot be specified as a [friend](../../cpp/friend-cpp.md).  
-  
- The following sample generates C2256:  
-  
-```  
-// C2256.cpp  
-// compile with: /c  
-class C {  
-public:  
-   friend ~C();   // C2256  
-   ~C();   // OK  
-};  
+
+illegal use of friend specifier on 'function'
+
+A destructor or constructor cannot be specified as a [friend](../../cpp/friend-cpp.md).
+
+The following sample generates C2256:
+
+```
+// C2256.cpp
+// compile with: /c
+class C {
+public:
+   friend ~C();   // C2256
+   ~C();   // OK
+};
 ```

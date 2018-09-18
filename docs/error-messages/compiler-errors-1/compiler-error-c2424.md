@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2424
-'token' : improper expression in 'context'  
-  
- The token forms part of an incorrect expression in this context.
+
+'token' : improper expression in 'context'
+
+The token forms part of an incorrect expression in this context.

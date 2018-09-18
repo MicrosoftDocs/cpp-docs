@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2627
-'function' : member function not allowed in anonymous union  
-  
- An [anonymous union](../../cpp/unions.md#anonymous_unions) cannot have member functions.  
-  
- The following sample generates C2627:  
-  
-```  
-// C2627.cpp  
-int main() {  
-   union { void f(){} };   // C2627  
-   union X { void f(){} };  
-}  
+
+'function' : member function not allowed in anonymous union
+
+An [anonymous union](../../cpp/unions.md#anonymous_unions) cannot have member functions.
+
+The following sample generates C2627:
+
+```
+// C2627.cpp
+int main() {
+   union { void f(){} };   // C2627
+   union X { void f(){} };
+}
 ```

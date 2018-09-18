@@ -13,31 +13,34 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3412
-'template' : cannot specialize template in current scope  
-  
- A template cannot be specialized at class scope, only in global or namespace scope.  
-  
-## Example  
- The following sample generates C3412.  
-  
-```  
-// C3412.cpp  
-template <class T>  
-struct S {  
-   template <>  
-   struct S<int> {};   // C3412 in a class  
-};  
-```  
-  
-## Example  
- The following sample shows a possible resolution.  
-  
-```  
-// C3412b.cpp  
-// compile with: /c  
-template <class T>  
-struct S {};  
-  
-template <>  
-struct S<int> {};  
+
+'template' : cannot specialize template in current scope
+
+A template cannot be specialized at class scope, only in global or namespace scope.
+
+## Example
+
+The following sample generates C3412.
+
+```
+// C3412.cpp
+template <class T>
+struct S {
+   template <>
+   struct S<int> {};   // C3412 in a class
+};
+```
+
+## Example
+
+The following sample shows a possible resolution.
+
+```
+// C3412b.cpp
+// compile with: /c
+template <class T>
+struct S {};
+
+template <>
+struct S<int> {};
 ```

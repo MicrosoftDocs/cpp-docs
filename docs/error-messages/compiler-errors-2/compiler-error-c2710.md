@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2710
-'construct' : '__declspec(modifier)' can only be applied to a function returning a pointer  
-  
- A function whose return value is a pointer is the only construct to which `modifier` can be applied.  
-  
- The following sample generates C2710:  
-  
-```  
-// C2710.cpp  
-__declspec(restrict) void f();   // C2710  
-// try the following line instead  
-__declspec(restrict) int * g();  
+
+'construct' : '__declspec(modifier)' can only be applied to a function returning a pointer
+
+A function whose return value is a pointer is the only construct to which `modifier` can be applied.
+
+The following sample generates C2710:
+
+```
+// C2710.cpp
+__declspec(restrict) void f();   // C2710
+// try the following line instead
+__declspec(restrict) int * g();
 ```

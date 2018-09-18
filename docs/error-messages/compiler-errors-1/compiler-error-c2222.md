@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2222
-unexpected type 'type': a base-class or member was expected  
-  
- The initializer list can only initialize base classes or members of a type. To fix this error, verify that only base classes or members of the type are initialized in the initializer list.
+
+unexpected type 'type': a base-class or member was expected
+
+The initializer list can only initialize base classes or members of a type. To fix this error, verify that only base classes or members of the type are initialized in the initializer list.

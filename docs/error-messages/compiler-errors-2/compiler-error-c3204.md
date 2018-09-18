@@ -13,26 +13,28 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3204
-'_alloca' cannot be called from within a catch block  
-  
- This error occurs when you use a call to [_alloca](../../c-runtime-library/reference/alloca.md) from within a catch block.  
-  
-## Example  
- The following sample generates C3204:  
-  
-```  
-// C3204.cpp  
-// compile with: /EHsc  
-#include <malloc.h>  
-  
-void ShowError(void)  
-{  
-   try  
-   {  
-   }  
-   catch(...)  
-   {  
-      _alloca(1);   // C3204  
-   }  
-}  
+
+'_alloca' cannot be called from within a catch block
+
+This error occurs when you use a call to [_alloca](../../c-runtime-library/reference/alloca.md) from within a catch block.
+
+## Example
+
+The following sample generates C3204:
+
+```
+// C3204.cpp
+// compile with: /EHsc
+#include <malloc.h>
+
+void ShowError(void)
+{
+   try
+   {
+   }
+   catch(...)
+   {
+      _alloca(1);   // C3204
+   }
+}
 ```

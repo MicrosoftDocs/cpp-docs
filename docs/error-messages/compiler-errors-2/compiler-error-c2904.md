@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2904
-'identifier' : name already used for a template in the current scope  
-  
- Check the code for duplicate names.  
-  
- The following sample generates C2904:  
-  
-```  
-// C2904.cpp  
-// compile with: /c  
-void X();  // X is declared as a function  
-template<class T> class X{};  // C2904  
+
+'identifier' : name already used for a template in the current scope
+
+Check the code for duplicate names.
+
+The following sample generates C2904:
+
+```
+// C2904.cpp
+// compile with: /c
+void X();  // X is declared as a function
+template<class T> class X{};  // C2904
 ```

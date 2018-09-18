@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2043
-illegal break  
-  
- A [break](../../cpp/break-statement-cpp.md) is legal only within a `do`, `for`, `while`, or `switch` statement.
+
+illegal break
+
+A [break](../../cpp/break-statement-cpp.md) is legal only within a `do`, `for`, `while`, or `switch` statement.
