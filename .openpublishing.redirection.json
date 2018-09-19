@@ -6377,67 +6377,67 @@
         },
         {
             "source_path": "docs/windows/module-tilde-module-destructor.md",
-            "redirect_url": "/cpp/windows/module-class#",
+            "redirect_url": "/cpp/windows/module-class#tilde-module",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/module-create-method.md",
-            "redirect_url": "/cpp/windows/module-class#",
+            "redirect_url": "/cpp/windows/module-class#create",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/module-decrementobjectcount-method.md",
-            "redirect_url": "/cpp/windows/module-class#",
+            "redirect_url": "/cpp/windows/module-class#decrementobjectcount",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/module-getactivationfactory-method.md",
-            "redirect_url": "/cpp/windows/module-class#",
+            "redirect_url": "/cpp/windows/module-class#getactivationfactory",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/module-getclassobject-method.md",
-            "redirect_url": "/cpp/windows/module-class#",
+            "redirect_url": "/cpp/windows/module-class#getclassobject",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/module-getmodule-method.md",
-            "redirect_url": "/cpp/windows/module-class#",
+            "redirect_url": "/cpp/windows/module-class#getmodule",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/module-getobjectcount-method.md",
-            "redirect_url": "/cpp/windows/module-class#",
+            "redirect_url": "/cpp/windows/module-class#getobjectcount",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/module-incrementobjectcount-method.md",
-            "redirect_url": "/cpp/windows/module-class#",
+            "redirect_url": "/cpp/windows/module-class#incrementobjectcount",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/module-module-constructor.md",
-            "redirect_url": "/cpp/windows/module-class#",
+            "redirect_url": "/cpp/windows/module-class#module",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/module-objectcount-data-member.md",
-            "redirect_url": "/cpp/windows/module-class#",
+            "redirect_url": "/cpp/windows/module-class#objectcount",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/module-registercomobject-method.md",
-            "redirect_url": "/cpp/windows/module-class#",
+            "redirect_url": "/cpp/windows/module-class#registercomobject",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/module-registerobjects-method.md",
-            "redirect_url": "/cpp/windows/module-class#",
+            "redirect_url": "/cpp/windows/module-class#registerobjects",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/module-registerwinrtobject-method.md",
-            "redirect_url": "/cpp/windows/module-class#",
+            "redirect_url": "/cpp/windows/module-class#registerwinrtobject",
             "redirect_document_id": false
         },
         {
@@ -6447,22 +6447,22 @@
         },
         {
             "source_path": "docs/windows/module-terminate-method.md",
-            "redirect_url": "/cpp/windows/module-class#",
+            "redirect_url": "/cpp/windows/module-class#terminate",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/module-unregistercomobject-method.md",
-            "redirect_url": "/cpp/windows/module-class#",
+            "redirect_url": "/cpp/windows/module-class#unregistercomobject",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/module-unregisterobjects-method.md",
-            "redirect_url": "/cpp/windows/module-class#",
+            "redirect_url": "/cpp/windows/module-class#unregisterobjects",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/module-unregisterwinrtobject-method.md",
-            "redirect_url": "/cpp/windows/module-class#",
+            "redirect_url": "/cpp/windows/module-class#unregisterwinrtobject",
             "redirect_document_id": false
         },
         {
