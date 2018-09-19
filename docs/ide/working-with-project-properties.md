@@ -128,11 +128,11 @@ A user-defined macro is stored in a property sheet. If your project does not alr
 
 ##### To create a user-defined macro
 
-1.  In the **Property Manager** window (on the menu bar, choose **View**, **Property Manager**), open the shortcut menu for a property sheet (its name ends in .user) and then choose Properties. The **Property Pages** dialog box for that property sheet opens.
+1. In the **Property Manager** window (on the menu bar, choose **View**, **Property Manager**), open the shortcut menu for a property sheet (its name ends in .user) and then choose Properties. The **Property Pages** dialog box for that property sheet opens.
 
-2.  In the left pane of the dialog box, select **User Macros**. In the right pane, choose the **Add Macro** button to open the **Add User Macro** dialog box.
+1. In the left pane of the dialog box, select **User Macros**. In the right pane, choose the **Add Macro** button to open the **Add User Macro** dialog box.
 
-3.  In the dialog box, specify a name and value for the macro. Optionally, select the **Set this macro as an environment variable in the build environment** check box.
+1. In the dialog box, specify a name and value for the macro. Optionally, select the **Set this macro as an environment variable in the build environment** check box.
 
 ## Property Editor
 

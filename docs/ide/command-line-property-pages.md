@@ -13,12 +13,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Command Line Property Pages
-Most property page folders contain a **Command Line** property page. This page displays which properties are set in the folder. The **Command Line** property page also contains an **Additional Options** box where you can specify properties that are valid for the tool but for which there is no property in the folder.  
-  
- Any command that you enter in the edit box will be passed through to the tool for the folder. No verification or checks will be done on the input, nor will there be any dependency checking.  
-  
- For information on how to access the **Command Line** property pages, see [Working with Project Properties](../ide/working-with-project-properties.md).  
-  
-## See Also  
- [Property Pages](../ide/property-pages-visual-cpp.md)   
- [.Lib Files as Linker Input](../build/reference/dot-lib-files-as-linker-input.md)
+
+Most property page folders contain a **Command Line** property page. This page displays which properties are set in the folder. The **Command Line** property page also contains an **Additional Options** box where you can specify properties that are valid for the tool but for which there is no property in the folder.
+
+Any command that you enter in the edit box will be passed through to the tool for the folder. No verification or checks will be done on the input, nor will there be any dependency checking.
+
+For information on how to access the **Command Line** property pages, see [Working with Project Properties](../ide/working-with-project-properties.md).
+
+## See Also
+
+[Property Pages](../ide/property-pages-visual-cpp.md)<br>
+[.Lib Files as Linker Input](../build/reference/dot-lib-files-as-linker-input.md)
