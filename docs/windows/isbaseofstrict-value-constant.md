@@ -36,5 +36,5 @@ Indicates whether one type is the base of another.
 
 ## See Also
 
-[IsBaseOfStrict Structure](../windows/isbaseofstrict-structure.md)  
+[IsBaseOfStrict Structure](../windows/isbaseofstrict-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

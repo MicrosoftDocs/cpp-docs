@@ -46,7 +46,7 @@ Win32
 
 ## See Also
 
-[Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)  
-[How to: Create a Resource](../windows/how-to-create-a-resource.md)  
-[Resource Files](../windows/resource-files-visual-studio.md)  
+[Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)<br/>
+[How to: Create a Resource](../windows/how-to-create-a-resource.md)<br/>
+[Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [Dialog Editor](../windows/dialog-editor.md)

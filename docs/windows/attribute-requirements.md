@@ -26,5 +26,5 @@ The requirements listed for C++ attributes describe the project types, compiler 
  This field provides the compiler options that must be present for this attribute to be used.
   
 ## See Also
- [Attribute Contexts](../windows/attribute-contexts.md)  
- [Attributes by Group](../windows/attributes-by-group.md)
+[Attribute Contexts](../windows/attribute-contexts.md)<br/>
+[Attributes by Group](../windows/attributes-by-group.md)

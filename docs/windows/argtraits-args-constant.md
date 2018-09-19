@@ -38,5 +38,5 @@ When **args** equals -1 indicates there can be no match for the `Invoke` method 
 
 ## See Also
 
-[ArgTraits Structure](../windows/argtraits-structure.md)  
+[ArgTraits Structure](../windows/argtraits-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

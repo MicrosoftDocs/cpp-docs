@@ -72,6 +72,6 @@ If you create a **SafeInt** from a Boolean parameter, you need to initialize the
 
 ## See Also
 
-[SafeInt Library](../windows/safeint-library.md)  
-[SafeInt Class](../windows/safeint-class.md)  
+[SafeInt Library](../windows/safeint-library.md)<br/>
+[SafeInt Class](../windows/safeint-class.md)<br/>
 [SafeIntException Class](../windows/safeintexception-class.md)

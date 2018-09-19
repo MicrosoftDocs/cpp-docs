@@ -96,5 +96,5 @@ Calls the event handler whose signature contains the specified number of argumen
 
 ## See Also
 
-[InvokeHelper Structure](../windows/invokehelper-structure.md)  
+[InvokeHelper Structure](../windows/invokehelper-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

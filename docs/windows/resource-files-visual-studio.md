@@ -72,6 +72,6 @@ Win32
 
 ## See Also
 
-[Resource Editors](../windows/resource-editors.md)  
-[Working with Resource Files](../windows/working-with-resource-files.md)  
+[Resource Editors](../windows/resource-editors.md)<br/>
+[Working with Resource Files](../windows/working-with-resource-files.md)<br/>
 [Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

@@ -54,5 +54,5 @@ The first constructor initializes the current **SyncLockWithStatusT** object fro
 
 ## See Also
 
-[SyncLockWithStatusT Class](../windows/synclockwithstatust-class.md)  
+[SyncLockWithStatusT Class](../windows/synclockwithstatust-class.md)<br/>
 [SyncLockWithStatusT::GetStatus Method](../windows/synclockwithstatust-getstatus-method.md)

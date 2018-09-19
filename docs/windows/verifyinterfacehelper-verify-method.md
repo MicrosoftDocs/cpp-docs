@@ -34,5 +34,5 @@ Verifies that the interface specified by the current template parameter meets ce
 
 ## See Also
 
-[VerifyInterfaceHelper Structure](../windows/verifyinterfacehelper-structure.md)  
+[VerifyInterfaceHelper Structure](../windows/verifyinterfacehelper-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

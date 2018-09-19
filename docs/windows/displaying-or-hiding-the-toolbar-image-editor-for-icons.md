@@ -30,6 +30,6 @@ None
 
 ## See Also
 
-[Colors Window](../windows/colors-window-image-editor-for-icons.md)  
-[Toolbar](../windows/toolbar-image-editor-for-icons.md)  
+[Colors Window](../windows/colors-window-image-editor-for-icons.md)<br/>
+[Toolbar](../windows/toolbar-image-editor-for-icons.md)<br/>
 [Image Editor for Icons](../windows/image-editor-for-icons.md)

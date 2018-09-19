@@ -76,5 +76,5 @@ The **SyncLockT** class is used, for example, to help implement the [SRWLock](..
 
 ## See Also
 
-[Microsoft::WRL::Wrappers::Details Namespace](../windows/microsoft-wrl-wrappers-details-namespace.md)  
+[Microsoft::WRL::Wrappers::Details Namespace](../windows/microsoft-wrl-wrappers-details-namespace.md)<br/>
 [SRWLock Class](../windows/srwlock-class.md)

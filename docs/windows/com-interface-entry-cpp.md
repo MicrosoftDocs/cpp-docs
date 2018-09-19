@@ -118,6 +118,6 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[COM Attributes](../windows/com-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)  
+[COM Attributes](../windows/com-attributes.md)<br/>
+[Class Attributes](../windows/class-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  

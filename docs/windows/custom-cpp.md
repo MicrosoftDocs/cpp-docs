@@ -54,10 +54,10 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Stand-Alone Attributes](../windows/stand-alone-attributes.md)  
-[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
-[Parameter Attributes](../windows/parameter-attributes.md)  
-[Method Attributes](../windows/method-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Stand-Alone Attributes](../windows/stand-alone-attributes.md)<br/>
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[Parameter Attributes](../windows/parameter-attributes.md)<br/>
+[Method Attributes](../windows/method-attributes.md)<br/>
+[Class Attributes](../windows/class-attributes.md)<br/>
 [Interface Attributes](../windows/interface-attributes.md)  

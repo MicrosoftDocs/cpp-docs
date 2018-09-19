@@ -49,5 +49,5 @@ S_OK if successful; otherwise, the HRESULT returned by GetActivationFactory.
 
 ## See Also
 
-[Module Class](../windows/module-class.md)  
+[Module Class](../windows/module-class.md)<br/>
 [ActivatableClass Macros](../windows/activatableclass-macros.md)

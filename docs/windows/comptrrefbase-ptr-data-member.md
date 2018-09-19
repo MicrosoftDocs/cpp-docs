@@ -38,5 +38,5 @@ Pointer to the type specified by the current template parameter.
 
 ## See Also
 
-[ComPtrRefBase Class](../windows/comptrrefbase-class.md)  
+[ComPtrRefBase Class](../windows/comptrrefbase-class.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

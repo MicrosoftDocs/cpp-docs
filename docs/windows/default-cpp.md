@@ -111,6 +111,6 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Class Attributes](../windows/class-attributes.md)<br/>
 [coclass](../windows/coclass.md)  

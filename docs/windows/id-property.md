@@ -18,5 +18,5 @@ The ID property references each accelerator table entry in program code. This is
  Win32
   
 ## See Also
- [Setting Accelerator Properties](../windows/setting-accelerator-properties.md)  
- [Accelerator Editor](../windows/accelerator-editor.md)
+[Setting Accelerator Properties](../windows/setting-accelerator-properties.md)<br/>
+[Accelerator Editor](../windows/accelerator-editor.md)

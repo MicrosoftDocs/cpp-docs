@@ -1197,9 +1197,9 @@ See the example for [SetDate](#setdate).
 
 ## See Also
 
-[COleVariant Class](../../mfc/reference/colevariant-class.md)   
-[CTime Class](../../atl-mfc-shared/reference/ctime-class.md)   
-[CTimeSpan Class](../../atl-mfc-shared/reference/ctimespan-class.md)   
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)   
+[COleVariant Class](../../mfc/reference/colevariant-class.md)<br/>
+[CTime Class](../../atl-mfc-shared/reference/ctime-class.md)<br/>
+[CTimeSpan Class](../../atl-mfc-shared/reference/ctimespan-class.md)<br/>
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
 

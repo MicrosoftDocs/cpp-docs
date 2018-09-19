@@ -72,5 +72,5 @@ Indicates whether two **ComPtrRef** objects are not equal.
 
 ## See Also
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)<br/>
 [ComPtrRef Class](../windows/comptrref-class.md)

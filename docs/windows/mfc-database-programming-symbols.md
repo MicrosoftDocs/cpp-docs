@@ -35,5 +35,5 @@ The symbols in this table only appear in an MFC project when database support ha
  MFC
   
 ## See Also
- [MFC Predefined Symbols](../windows/mfc-predefined-symbols.md)  
- [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)
+[MFC Predefined Symbols](../windows/mfc-predefined-symbols.md)<br/>
+[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)

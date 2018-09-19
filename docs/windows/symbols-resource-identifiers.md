@@ -59,6 +59,6 @@ Win32
 
 ## See Also
 
-[How to: Search for Symbols in Resources](../windows/how-to-search-for-symbols-in-resources.md)  
-[Resource Editors](../windows/resource-editors.md)  
+[How to: Search for Symbols in Resources](../windows/how-to-search-for-symbols-in-resources.md)<br/>
+[Resource Editors](../windows/resource-editors.md)<br/>
 [Resource Files](../windows/resource-files-visual-studio.md)

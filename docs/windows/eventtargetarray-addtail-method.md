@@ -43,5 +43,5 @@ Appends the specified event handler to the end of the internal array of event ha
 
 ## See Also
 
-[EventTargetArray Class](../windows/eventtargetarray-class.md)  
+[EventTargetArray Class](../windows/eventtargetarray-class.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

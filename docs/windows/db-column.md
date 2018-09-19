@@ -119,5 +119,5 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)  
+[OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)<br/>
 [Class Attributes](../windows/class-attributes.md)  

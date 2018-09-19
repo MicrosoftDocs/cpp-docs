@@ -52,10 +52,10 @@ See [first_is](../windows/first-is.md) for an example of how to specify a sectio
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
-[Parameter Attributes](../windows/parameter-attributes.md)  
-[first_is](../windows/first-is.md)  
-[last_is](../windows/last-is.md)  
-[length_is](../windows/length-is.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[Parameter Attributes](../windows/parameter-attributes.md)<br/>
+[first_is](../windows/first-is.md)<br/>
+[last_is](../windows/last-is.md)<br/>
+[length_is](../windows/length-is.md)<br/>
 [size_is](../windows/size-is.md)  

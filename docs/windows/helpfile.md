@@ -52,10 +52,10 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Interface Attributes](../windows/interface-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)  
-[Method Attributes](../windows/method-attributes.md)  
-[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
-[helpcontext](../windows/helpcontext.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Interface Attributes](../windows/interface-attributes.md)<br/>
+[Class Attributes](../windows/class-attributes.md)<br/>
+[Method Attributes](../windows/method-attributes.md)<br/>
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[helpcontext](../windows/helpcontext.md)<br/>
 [helpstring](../windows/helpstring.md)  

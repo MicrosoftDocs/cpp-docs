@@ -41,5 +41,5 @@ This operation is thread-safe.
 
 ## See Also
 
-[AsyncBase Class](../windows/asyncbase-class.md)  
+[AsyncBase Class](../windows/asyncbase-class.md)<br/>
 [AsyncStatusInternal Enumeration](../windows/asyncstatusinternal-enumeration.md)

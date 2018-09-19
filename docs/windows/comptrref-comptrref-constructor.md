@@ -41,5 +41,5 @@ Initializes a new instance of the **ComPtrRef** class from the specified pointer
 
 ## See Also
 
-[ComPtrRef Class](../windows/comptrref-class.md)  
+[ComPtrRef Class](../windows/comptrref-class.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

@@ -44,5 +44,5 @@ Inserts the interface ID specified by the current zeroth template parameter into
 
 ## See Also
 
-[ImplementsHelper Structure](../windows/implementshelper-structure.md)  
+[ImplementsHelper Structure](../windows/implementshelper-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

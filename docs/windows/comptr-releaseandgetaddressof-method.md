@@ -34,5 +34,5 @@ The address of the [ptr_](../windows/comptr-ptr-data-member.md) data member of t
 
 ## See Also
 
-[ComPtr Class](../windows/comptr-class.md)  
+[ComPtr Class](../windows/comptr-class.md)<br/>
 [ComPtr::ptr_ Data Member](../windows/comptr-ptr-data-member.md)

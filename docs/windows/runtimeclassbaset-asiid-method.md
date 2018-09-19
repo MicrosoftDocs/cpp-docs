@@ -57,5 +57,5 @@ Retrieves a pointer to the specified interface ID.
 
 ## See Also
 
-[RuntimeClassBaseT Structure](../windows/runtimeclassbaset-structure.md)  
+[RuntimeClassBaseT Structure](../windows/runtimeclassbaset-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

@@ -178,5 +178,5 @@ My function returned a string: Hello generic functions!
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)  
+[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)<br/>
 [Generics](../windows/generics-cpp-component-extensions.md)

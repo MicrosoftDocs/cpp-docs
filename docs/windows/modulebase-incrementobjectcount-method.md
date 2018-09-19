@@ -38,5 +38,5 @@ When implemented, increments the number of objects tracked by the module.
 
 ## See Also
 
-[ModuleBase Class](../windows/modulebase-class.md)  
+[ModuleBase Class](../windows/modulebase-class.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

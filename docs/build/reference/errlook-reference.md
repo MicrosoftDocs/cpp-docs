@@ -19,19 +19,19 @@ The accelerator keys for Copy (CTRL+C), Cut (CTRL+X), and Paste (CTRL+V) work fo
 
 ## In This Section
 
-[Value Edit Control](../../build/reference/value-edit-control.md)
+[Value Edit Control](../../build/reference/value-edit-control.md)<br/>
 Describes the Value Edit control in ERRLOOK.
 
-[Error Message Edit Control](../../build/reference/error-message-edit-control.md)
+[Error Message Edit Control](../../build/reference/error-message-edit-control.md)<br/>
 Describes the Error Message Edit control in ERRLOOK.
 
-[Modules Button](../../build/reference/modules-button.md)
+[Modules Button](../../build/reference/modules-button.md)<br/>
 Describes the Modules button in ERRLOOK.
 
-[Look Up Button](../../build/reference/look-up-button.md)
+[Look Up Button](../../build/reference/look-up-button.md)<br/>
 Describes the Look Up button in ERRLOOK.
 
 ## Related Sections
 
-[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)
+[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
 Provides links to topics discussing the C/C++ build tools provided in Visual C++.

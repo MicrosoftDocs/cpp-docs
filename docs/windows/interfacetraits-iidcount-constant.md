@@ -34,5 +34,5 @@ Holds the number of interface IDs associated with the current **InterfaceTraits*
 
 ## See Also
 
-[InterfaceTraits Structure](../windows/interfacetraits-structure.md)  
+[InterfaceTraits Structure](../windows/interfacetraits-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

@@ -53,5 +53,5 @@ Sets the specified pointer to the current strong reference value if the strong r
 
 ## See Also
 
-[WeakReference Class1](../windows/weakreference-class1.md)  
+[WeakReference Class1](../windows/weakreference-class1.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

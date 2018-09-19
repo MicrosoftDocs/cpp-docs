@@ -81,5 +81,5 @@ public:
 
 ## See Also
 
-[COM Attributes](../windows/com-attributes.md)  
+[COM Attributes](../windows/com-attributes.md)<br/>
 [registration_script](../windows/registration-script.md)  

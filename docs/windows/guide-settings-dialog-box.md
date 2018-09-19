@@ -49,5 +49,5 @@ Win32
 
 ## See Also
 
-[Modifying the Layout Grid](../windows/modifying-the-layout-grid.md)  
+[Modifying the Layout Grid](../windows/modifying-the-layout-grid.md)<br/>
 [Dialog Editor States (Guides and Grids)](../windows/dialog-editor-states-guides-and-grids.md)

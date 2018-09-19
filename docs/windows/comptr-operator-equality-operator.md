@@ -56,5 +56,5 @@ The second and third operators yield **true** if object *a* is equal to **nullpt
 
 ## See Also
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)  
+[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)<br/>
 [ComPtr Class](../windows/comptr-class.md)

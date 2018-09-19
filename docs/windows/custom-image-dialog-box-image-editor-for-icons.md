@@ -32,5 +32,5 @@ Enables you to create a new image with a custom size and number of colors.
  None
   
 ## See Also
- [New \<Device> Image Type Dialog Box](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md)  
- [Image Editor for Icons](../windows/image-editor-for-icons.md)
+[New \<Device> Image Type Dialog Box](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md)<br/>
+[Image Editor for Icons](../windows/image-editor-for-icons.md)

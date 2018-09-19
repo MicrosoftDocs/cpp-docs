@@ -44,6 +44,6 @@ Win32
 
 ## See Also
 
-[How to: Copy Resources](../windows/how-to-copy-resources.md)  
-[Resource Files](../windows/resource-files-visual-studio.md)  
+[How to: Copy Resources](../windows/how-to-copy-resources.md)<br/>
+[Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [Resource Editors](../windows/resource-editors.md)

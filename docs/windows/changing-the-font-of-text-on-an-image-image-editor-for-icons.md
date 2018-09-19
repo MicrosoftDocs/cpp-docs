@@ -45,5 +45,5 @@ The following procedure is an example of how to:
 
 ## See Also
 
-[Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)  
+[Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
 [Toolbar](../windows/toolbar-image-editor-for-icons.md)

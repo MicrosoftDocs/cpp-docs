@@ -67,5 +67,5 @@ To complete this walkthrough, you must understand the fundamentals of the C++ la
 
 ## See Also
 
-[C++ Language Reference](../cpp/cpp-language-reference.md)  
+[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

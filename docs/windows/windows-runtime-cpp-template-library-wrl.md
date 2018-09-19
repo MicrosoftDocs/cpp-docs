@@ -40,43 +40,43 @@ The Windows Runtime C++ Template Library and C++/CX provide different benefits. 
 
 Here are some resources that can help you get working with the Windows Runtime C++ Template Library right away.
 
-[The Windows Runtime Library (WRL)](http://channel9.msdn.com/Events/Windows-Camp/Developing-Windows-8-Metro-style-apps-in-Cpp/The-Windows-Runtime-Library-WRL-)  
+[The Windows Runtime Library (WRL)](http://channel9.msdn.com/Events/Windows-Camp/Developing-Windows-8-Metro-style-apps-in-Cpp/The-Windows-Runtime-Library-WRL-)<br/>
 In this Channel 9 video, learn more about how the Windows Runtime C++ Template Library helps you write Universal Windows Platform (UWP) apps and how to author and consume Windows Runtime components.
 
-[How to: Activate and Use a Windows Runtime Component](../windows/how-to-activate-and-use-a-windows-runtime-component-using-wrl.md)  
+[How to: Activate and Use a Windows Runtime Component](../windows/how-to-activate-and-use-a-windows-runtime-component-using-wrl.md)<br/>
 Shows how to use the Windows Runtime C++ Template Library to initialize the Windows Runtime and activate and use a Windows Runtime component.
 
-[How to: Complete Asynchronous Operations](../windows/how-to-complete-asynchronous-operations-using-wrl.md)  
+[How to: Complete Asynchronous Operations](../windows/how-to-complete-asynchronous-operations-using-wrl.md)<br/>
 Shows how to use the Windows Runtime C++ Template Library to start asynchronous operations and perform work when the operations complete.
 
-[How to: Handle Events](../windows/how-to-handle-events-using-wrl.md)  
+[How to: Handle Events](../windows/how-to-handle-events-using-wrl.md)<br/>
 Shows how to use the Windows Runtime C++ Template Library to subscribe to and handle the events of a Windows Runtime object.
 
-[Walkthrough: Creating a UWP app using WRL and Media Foundation](../windows/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)  
+[Walkthrough: Creating a UWP app using WRL and Media Foundation](../windows/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)<br/>
 Learn how to create a UWP app that uses [Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk).
 
-[How to: Create a Classic COM Component](../windows/how-to-create-a-classic-com-component-using-wrl.md)  
+[How to: Create a Classic COM Component](../windows/how-to-create-a-classic-com-component-using-wrl.md)<br/>
 Shows how to use the Windows Runtime C++ Template Library to create a basic COM component and a basic way to register and consume the COM component from a desktop app.
 
-[How to: Instantiate WRL Components Directly](../windows/how-to-instantiate-wrl-components-directly.md)  
+[How to: Instantiate WRL Components Directly](../windows/how-to-instantiate-wrl-components-directly.md)<br/>
 Learn how to use the [Microsoft::WRL::Make](../windows/make-function.md) and [Microsoft::WRL::Details::MakeAndInitialize](../windows/makeandinitialize-function.md) functions to instantiate a component from the module that defines it.
 
-[How to: Use winmdidl.exe and midlrt.exe to create .h files from windows metadata](../windows/use-winmdidl-and-midlrt-to-create-h-files-from-windows-metadata.md)  
+[How to: Use winmdidl.exe and midlrt.exe to create .h files from windows metadata](../windows/use-winmdidl-and-midlrt-to-create-h-files-from-windows-metadata.md)<br/>
 Shows how to consume custom Windows Runtime components from WRL by creating an IDL file from the .winmd metadata.
 
-[Walkthrough: Connecting Using Tasks and XML HTTP Requests](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)  
+[Walkthrough: Connecting Using Tasks and XML HTTP Requests](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)<br/>
 Shows how to use the [IXMLHTTPRequest2](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) and [IXMLHTTPRequest2Callback](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) interfaces together with tasks to send HTTP GET and POST requests to a web service in a UWP app.
 
-[Bing Maps Trip Optimizer sample](http://code.msdn.microsoft.com/Bing-Maps-trip-optimizer-c4e037f7)  
+[Bing Maps Trip Optimizer sample](http://code.msdn.microsoft.com/Bing-Maps-trip-optimizer-c4e037f7)<br/>
 Uses the `HttpRequest` class that's defined in [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md) in the context of a complete UWP app.
 
-[Creating a Windows Runtime DLL component with C++ sample](http://code.msdn.microsoft.com/windowsapps/Creating-a-Windows-Runtime-6c399797)  
+[Creating a Windows Runtime DLL component with C++ sample](http://code.msdn.microsoft.com/windowsapps/Creating-a-Windows-Runtime-6c399797)<br/>
 Shows how to use the Windows Runtime C++ Template Library to create an in-process DLL component and consume it from C++/CX, JavaScript, and C#.
 
-[DirectX marble maze game sample](http://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345)  
+[DirectX marble maze game sample](http://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345)<br/>
 Demonstrates how to use the Windows Runtime C++ Template Library to manage the lifetime of COM components such as DirectX and Media Foundation in the context of a complete 3-D game.
 
-[Sending toast notifications from desktop apps sample](http://code.msdn.microsoft.com/windowsdesktop/Sending-toast-notifications-71e230a2)  
+[Sending toast notifications from desktop apps sample](http://code.msdn.microsoft.com/windowsdesktop/Sending-toast-notifications-71e230a2)<br/>
 Demonstrates how to use the Windows Runtime C++ Template Library to work with toast notifications from a desktop app.
 
 ## Windows Runtime C++ Template Library Compared to ATL
