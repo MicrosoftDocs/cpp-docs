@@ -6376,6 +6376,151 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/module-tilde-module-destructor.md",
+            "redirect_url": "/cpp/windows/module-class#tilde-module",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-create-method.md",
+            "redirect_url": "/cpp/windows/module-class#create",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-decrementobjectcount-method.md",
+            "redirect_url": "/cpp/windows/module-class#decrementobjectcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-getactivationfactory-method.md",
+            "redirect_url": "/cpp/windows/module-class#getactivationfactory",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-getclassobject-method.md",
+            "redirect_url": "/cpp/windows/module-class#getclassobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-getmodule-method.md",
+            "redirect_url": "/cpp/windows/module-class#getmodule",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-getobjectcount-method.md",
+            "redirect_url": "/cpp/windows/module-class#getobjectcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-incrementobjectcount-method.md",
+            "redirect_url": "/cpp/windows/module-class#incrementobjectcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-module-constructor.md",
+            "redirect_url": "/cpp/windows/module-class#module",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-objectcount-data-member.md",
+            "redirect_url": "/cpp/windows/module-class#objectcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-registercomobject-method.md",
+            "redirect_url": "/cpp/windows/module-class#registercomobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-registerobjects-method.md",
+            "redirect_url": "/cpp/windows/module-class#registerobjects",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-registerwinrtobject-method.md",
+            "redirect_url": "/cpp/windows/module-class#registerwinrtobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-releasenotifier-data-member.md",
+            "redirect_url": "/cpp/windows/module-class#releasenotifier",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-terminate-method.md",
+            "redirect_url": "/cpp/windows/module-class#terminate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-unregistercomobject-method.md",
+            "redirect_url": "/cpp/windows/module-class#unregistercomobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-unregisterobjects-method.md",
+            "redirect_url": "/cpp/windows/module-class#unregisterobjects",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-unregisterwinrtobject-method.md",
+            "redirect_url": "/cpp/windows/module-class#unregisterwinrtobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-genericreleasenotifier-callback-data-member.md",
+            "redirect_url": "/cpp/windows/module-genericreleasenotifier-class#genericreleasenotifier-callback",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-genericreleasenotifier-genericreleasenotifier-constructor.md",
+            "redirect_url": "/cpp/windows/module-genericreleasenotifier-class#genericreleasenotifier-genericreleasenotifier",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-genericreleasenotifier-invoke-method.md",
+            "redirect_url": "/cpp/windows/module-genericreleasenotifier-class#genericreleasenotifier-invoke",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-methodreleasenotifier-invoke-method.md",
+            "redirect_url": "/cpp/windows/module-methodreleasenotifier-class#methodreleasenotifier-invoke",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-methodreleasenotifier-method-data-member.md",
+            "redirect_url": "/cpp/windows/module-methodreleasenotifier-class#methodreleasenotifier-method",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-methodreleasenotifier-methodreleasenotifier-constructor.md",
+            "redirect_url": "/cpp/windows/module-methodreleasenotifier-class#methodreleasenotifier-methodreleasenotifier",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-methodreleasenotifier-object-data-member.md",
+            "redirect_url": "/cpp/windows/module-methodreleasenotifier-class#methodreleasenotifier-object",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-releasenotifier-invoke-method.md",
+            "redirect_url": "/cpp/windows/module-releasenotifier-class#releasenotifier-invoke",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-releasenotifier-release.md",
+            "redirect_url": "/cpp/windows/module-releasenotifier-class#releasenotifier-release",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-releasenotifier-releasenotifier-constructor.md",
+            "redirect_url": "/cpp/windows/module-releasenotifier-class#releasenotifier-releasenotifier",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-releasenotifier-tilde-releasenotifier-destructor.md",
+            "redirect_url": "/cpp/windows/module-releasenotifier-class#releasenotifier-tilde-releasenotifier",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/runtimeclass-tilde-runtimeclass-destructor.md",
             "redirect_url": "/cpp/windows/runtimeclass-class#tilde-runtimeclass",
             "redirect_document_id": false
