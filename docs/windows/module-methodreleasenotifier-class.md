@@ -99,7 +99,7 @@ An object whose member function is an event handler.
 The member function of parameter *object* that is the event handler.
 
 *release*  
-Specify `true` to enable calling the underlying [Module::ReleaseNotifier::Release()](../windows/module-releasenotifier-release.md#release) method; otherwise, specify `false`.
+Specify `true` to enable calling the underlying [Module::ReleaseNotifier::Release()](../windows/module-releasenotifier-class.md#releasenotifier-release) method; otherwise, specify `false`.
 
 ## <a name="methodreleasenotifier-object"></a>Module::MethodReleaseNotifier::object_
 
