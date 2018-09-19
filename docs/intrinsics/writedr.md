@@ -13,35 +13,39 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __writedr
-Writes the specified value to the specified debug register.  
-  
-## Syntax  
-  
-```  
-void __writedr(unsigned DebugRegister, unsigned DebugValue);  
-void __writedr(unsigned DebugRegister, unsigned __int64 DebugValue);  
-```  
-  
-#### Parameters  
+
+Writes the specified value to the specified debug register.
+
+## Syntax
+
+```
+void __writedr(unsigned DebugRegister, unsigned DebugValue);
+void __writedr(unsigned DebugRegister, unsigned __int64 DebugValue);
+```
+
+#### Parameters
+
 *DebugRegister*<br/>
-[in] A number from 0 through 7 that identifies the debug register.  
-  
+[in] A number from 0 through 7 that identifies the debug register.
+
 *DebugValue*<br/>
-[in] A value to write to the debug register.  
-  
-## Remarks  
- These intrinsics are available only in kernel mode, and the routines are available only as intrinsics.  
-  
-## Requirements  
-  
-|Intrinsic|Architecture|  
-|---------------|------------------|  
-|`__writedr`|x86, x64|  
-  
- **Header file** \<intrin.h>  
-  
-**END Microsoft Specific**  
-  
-## See Also  
- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   
- [__readdr](../intrinsics/readdr.md)
+[in] A value to write to the debug register.
+
+## Remarks
+
+These intrinsics are available only in kernel mode, and the routines are available only as intrinsics.
+
+## Requirements
+
+|Intrinsic|Architecture|
+|---------------|------------------|
+|`__writedr`|x86, x64|
+
+**Header file** \<intrin.h>
+
+**END Microsoft Specific**
+
+## See Also
+
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[__readdr](../intrinsics/readdr.md)
