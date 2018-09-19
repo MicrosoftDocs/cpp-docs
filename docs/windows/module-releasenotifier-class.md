@@ -1,12 +1,12 @@
 ---
 title: "Module::ReleaseNotifier Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/17/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["module/Microsoft::WRL::Module::ReleaseNotifier"]
+f1_keywords: ["module/Microsoft::WRL::Module::ReleaseNotifier", "module/Microsoft::WRL::Module::ReleaseNotifier::~ReleaseNotifier", "module/Microsoft::WRL::Module::ReleaseNotifier::Invoke", "module/Microsoft::WRL::Module::ReleaseNotifier::Release", "module/Microsoft::WRL::Module::ReleaseNotifier::ReleaseNotifier"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["ReleaseNotifier class"]
+helpviewer_keywords: ["Microsoft::WRL::Module::ReleaseNotifier class", "Microsoft::WRL::Module::ReleaseNotifier::~ReleaseNotifier, destructor", "Microsoft::WRL::Module::ReleaseNotifier::Invoke method", "Microsoft::WRL::Module::ReleaseNotifier::Release method", "Microsoft::WRL::Module::ReleaseNotifier::ReleaseNotifier, constructor"]
 ms.assetid: 17249cd1-4d88-42e3-8146-da9e942d12bd
 author: "mikeblome"
 ms.author: "mblome"
@@ -26,17 +26,17 @@ class ReleaseNotifier;
 
 ### Public Constructors
 
-|Name|Description|
-|----------|-----------------|
-|[Module::ReleaseNotifier::~ReleaseNotifier Destructor](../windows/module-releasenotifier-tilde-releasenotifier-destructor.md)|Deinitializes the current instance of the **Module::ReleaseNotifier** class.|
-|[Module::ReleaseNotifier::ReleaseNotifier Constructor](../windows/module-releasenotifier-releasenotifier-constructor.md)|Initializes a new instance of the **Module::ReleaseNotifier** class.|
+Name                                                                                | Description
+----------------------------------------------------------------------------------- | --------------------------------------------------------------------------
+[Module::ReleaseNotifier::~ReleaseNotifier](#releasenotifier-tilde-releasenotifier) | Deinitializes the current instance of the `Module::ReleaseNotifier` class.
+[Module::ReleaseNotifier::ReleaseNotifier](#releasenotifier-releasenotifier)        | Initializes a new instance of the `Module::ReleaseNotifier` class.
 
 ### Public Methods
 
-|Name|Description|
-|----------|-----------------|
-|[Module::ReleaseNotifier::Invoke Method](../windows/module-releasenotifier-invoke-method.md)|When implemented, calls an event handler when the last object in a module is released.|
-|[Module::ReleaseNotifier::Release](../windows/module-releasenotifier-release.md)|Deletes the current **Module::ReleaseNotifier** object if the object was constructed with a parameter of **true**.|
+Name                                                         | Description
+------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------
+[Module::ReleaseNotifier::Invoke](#releasenotifier-invoke)   | When implemented, calls an event handler when the last object in a module is released.
+[Module::ReleaseNotifier::Release](#releasenotifier-release) | Deletes the current `Module::ReleaseNotifier` object if the object was constructed with a parameter of `true`.
 
 ## Inheritance Hierarchy
 
@@ -48,6 +48,39 @@ class ReleaseNotifier;
 
 **Namespace:** Microsoft::WRL
 
-## See Also
+## <a name="releasenotifier-tilde-releasenotifier"></a>Module::ReleaseNotifier::~ReleaseNotifier
 
-[Module Class](../windows/module-class.md)
+Deinitializes the current instance of the `Module::ReleaseNotifier` class.
+
+```cpp
+WRL_NOTHROW virtual ~ReleaseNotifier();
+```
+
+## <a name="releasenotifier-invoke"></a>Module::ReleaseNotifier::Invoke
+
+When implemented, calls an event handler when the last object in a module is released.
+
+```cpp
+virtual void Invoke() = 0;
+```
+
+## <a name="releasenotifier-release"></a>Module::ReleaseNotifier::Release
+
+Deletes the current `Module::ReleaseNotifier` object if the object was constructed with a parameter of `true`.
+
+```cpp
+void Release() throw();
+```
+
+## <a name="releasenotifier-releasenotifier"></a>Module::ReleaseNotifier::ReleaseNotifier
+
+Initializes a new instance of the `Module::ReleaseNotifier` class.
+
+```cpp
+ReleaseNotifier(bool release) throw();
+```
+
+### Parameters
+
+*release*  
+`true` to delete this instance when the `Release` method is called; `false` to not delete this instance.
