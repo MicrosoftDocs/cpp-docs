@@ -59,19 +59,11 @@ After this change, the Visual Studio 2008 compiler and libraries are used to gen
 
 You may have an old Visual C++ project that you can't or don't want to upgrade, but not the platform toolset version that matches your project. In this case, to get the toolset, you can install the free Visual Studio Community or Express edition of the version you need. Every version of Visual Studio from Visual Studio 2008 on can install the compiler, tools, and libraries you need to target that version from the current Visual Studio. Search the Microsoft Download Center to find and download a particular version of Visual Studio. Make sure you choose the C++ installation options during setup. After setup completes, run that version of Visual Studio to install any updates. Also check for any Windows Update changes that might be required. This update check process may need to be repeated more than once to get every update.
 
-Here are some of the Visual Studio downloads you might need:
-
-  - [Microsoft Visual Studio Community 2015](https://www.microsoft.com/download/details.aspx?id=48146)  
-  - [Microsoft Visual Studio Express 2013 for Windows Desktop with Update 5](https://www.microsoft.com/download/details.aspx?id=48131)  
-  - [Microsoft Visual Studio Express 2012 for Windows Desktop](https://www.microsoft.com/download/details.aspx?id=34673)  
-  - [Visual Studio 2012 Update 5](https://www.microsoft.com/download/details.aspx?id=34673)  
-  - [Microsoft Visual C++ 2010 Express (Web Installer)](https://download.microsoft.com/download/1/D/9/1D9A6C0E-FC89-43EE-9658-B9F0E3A76983/vc_web.exe)  
-  - [Microsoft Visual Studio 2010 Service Pack 1](https://www.microsoft.com/download/details.aspx?id=23691)  
-  - [Microsoft Visual C++ 2008 Express with SP1 (Web Installer)](https://go.microsoft.com/?linkid=7729279)  
+For the currently available downloads, see [Download older Visual Studio software](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 When these products are installed, the **Platform Toolset** property drop-down in the **Property Pages** dialog box is automatically updated to show the available toolsets. You can now use the latest version of Visual Studio to build projects for those older versions of the toolset without converting or upgrading them.
 
 ## See Also
 
-[Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
+[Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md)  
