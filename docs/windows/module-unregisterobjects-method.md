@@ -26,10 +26,10 @@ HRESULT UnregisterObjects(
 
 ### Parameters
 
-*module*  
+*module*<br/>
 Pointer to a module.
 
-*serverName*  
+*serverName*<br/>
 A qualifying name that specifies a subset of objects affected by this operation.
 
 ## Return Value
@@ -43,4 +43,5 @@ S_OK if this operation is successful; otherwise, an error HRESULT that indicates
 **Namespace:** Microsoft::WRL
 
 ## See Also
+
 [Module Class](../windows/module-class.md)

@@ -36,5 +36,5 @@ An error is emitted if the current **ComPtrRefBase** doesn't derive from `IUnkno
 
 ## See Also
 
-[ComPtrRefBase Class](../windows/comptrrefbase-class.md)  
+[ComPtrRefBase Class](../windows/comptrrefbase-class.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

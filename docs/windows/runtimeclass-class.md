@@ -27,10 +27,10 @@ template <unsigned int classFlags, typename ...TInterfaces> class RuntimeClass;
 
 ### Parameters
 
-*classFlags*  
+*classFlags*<br/>
 Optional paramater. A combination of one or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration values. The `__WRL_CONFIGURATION_LEGACY__` macro can be defined to change the default value of classFlags for all runtime classes in the project. If defined, RuntimeClass instances are non-agile by default. When not defined, RuntimeClass instances are agile by default. To avoid ambiguity always specify the `Microsoft::WRL::FtmBase` in `TInterfaces` or `RuntimeClassType::InhibitFtmBase`. Note, if InhibitFtmBase and FtmBase are both used the object will be agile.
 
-*TInterfaces*  
+*TInterfaces*<br/>
 The list of interfaces the object implements beyond `IUnknown`, `IInspectable` or other interfaces controlled by [RuntimeClassType](../windows/runtimeclasstype-enumeration.md). It also may list other classes to be derived from, notably `Microsoft::WRL::FtmBase` to make the object agile and cause it to implement `IMarshal`.
 
 ## Members
@@ -118,10 +118,10 @@ STDMETHOD(
 
 ### Parameters
 
-*iidCount*  
+*iidCount*<br/>
 When this operation completes, the total number of elements in array *iids*.
 
-*iids*  
+*iids*<br/>
 When this operation completes, a pointer to an array of interface IDs.
 
 ### Return Value
@@ -140,7 +140,7 @@ STDMETHOD( GetRuntimeClassName )(
 
 ### Parameters
 
-*runtimeName*  
+*runtimeName*<br/>
 When this operation completes, the runtime class name.
 
 ### Return Value
@@ -163,7 +163,7 @@ STDMETHOD(GetTrustLevel)(
 
 ### Parameters
 
-*trustLvl*  
+*trustLvl*<br/>
 When this operation completes, the trust level of the current `RuntimeClass` object.
 
 ### Return Value
@@ -186,7 +186,7 @@ STDMETHOD(
 
 ### Parameters
 
-*weakReference*  
+*weakReference*<br/>
 When this operation completes, a pointer to a weak reference object.
 
 ### Return Value
@@ -219,10 +219,10 @@ STDMETHOD(
 
 ### Parameters
 
-*riid*  
+*riid*<br/>
 An interface ID.
 
-*ppvObject*  
+*ppvObject*<br/>
 When this opereation completes, a pointer to the interface specified by the *riid* parameter.
 
 ### Return Value

@@ -26,7 +26,7 @@ Mutex& operator=(
 
 ### Parameters
 
-*h*  
+*h*<br/>
 An rvalue-reference to a **Mutex** object.
 
 ## Return Value
@@ -44,4 +44,5 @@ For more information, see the **Move Semantics** section of [Rvalue Reference De
 **Namespace:** Microsoft::WRL::Wrappers
 
 ## See Also
+
 [Mutex Class](../windows/mutex-class1.md)

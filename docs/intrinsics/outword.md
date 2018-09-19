@@ -13,38 +13,42 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __outword
-**Microsoft Specific**  
-  
- Generates the `out` instruction, which sends the word `Data` out the I/O port specified by `Port`.  
-  
-## Syntax  
-  
-```  
-void __outword(   
-   unsigned short Port,   
-   unsigned short Data   
-);  
-```  
-  
-#### Parameters  
+
+**Microsoft Specific**
+
+Generates the `out` instruction, which sends the word `Data` out the I/O port specified by `Port`.
+
+## Syntax
+
+```
+void __outword( 
+   unsigned short Port, 
+   unsigned short Data 
+);
+```
+
+#### Parameters
+
 *Port*<br/>
-[in] The port to send the data to.  
-  
+[in] The port to send the data to.
+
 *Data*<br/>
-[in] The data to be sent.  
-  
-## Requirements  
-  
-|Intrinsic|Architecture|  
-|---------------|------------------|  
-|`__outword`|x86, x64|  
-  
- **Header file** \<intrin.h>  
-  
-## Remarks  
- This routine is only available as an intrinsic.  
-  
-**END Microsoft Specific**  
-  
-## See Also  
- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[in] The data to be sent.
+
+## Requirements
+
+|Intrinsic|Architecture|
+|---------------|------------------|
+|`__outword`|x86, x64|
+
+**Header file** \<intrin.h>
+
+## Remarks
+
+This routine is only available as an intrinsic.
+
+**END Microsoft Specific**
+
+## See Also
+
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

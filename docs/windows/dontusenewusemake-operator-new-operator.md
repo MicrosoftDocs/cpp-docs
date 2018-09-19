@@ -27,10 +27,10 @@ void* operator new(
 
 ### Parameters
 
-*__unnamed0*  
+*__unnamed0*<br/>
 An unnamed parameter that specifies the number of bytes of memory to allocate.
 
-*placement*  
+*placement*<br/>
 The type to be allocated.
 
 ## Return Value
@@ -49,5 +49,5 @@ Overloads operator **new** and prevents it from being used in `RuntimeClass`.
 
 ## See Also
 
-[DontUseNewUseMake Class](../windows/dontusenewusemake-class.md)  
+[DontUseNewUseMake Class](../windows/dontusenewusemake-class.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

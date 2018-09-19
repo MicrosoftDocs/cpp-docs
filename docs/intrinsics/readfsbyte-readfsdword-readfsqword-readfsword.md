@@ -13,50 +13,55 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __readfsbyte, __readfsdword, __readfsqword, __readfsword
-**Microsoft Specific**  
-  
- Read memory from a location specified by an offset relative to the beginning of the FS segment.  
-  
-## Syntax  
-  
-```  
-unsigned char __readfsbyte(   
-   unsigned long Offset   
-);  
-unsigned short __readfsword(   
-   unsigned long Offset   
-);  
-unsigned long __readfsdword(   
-   unsigned long Offset  
-);  
-unsigned __int64 __readfsqword(   
-   unsigned long Offset   
-);  
-```  
-  
-#### Parameters  
+
+**Microsoft Specific**
+
+Read memory from a location specified by an offset relative to the beginning of the FS segment.
+
+## Syntax
+
+```
+unsigned char __readfsbyte( 
+   unsigned long Offset 
+);
+unsigned short __readfsword( 
+   unsigned long Offset 
+);
+unsigned long __readfsdword( 
+   unsigned long Offset
+);
+unsigned __int64 __readfsqword( 
+   unsigned long Offset 
+);
+```
+
+#### Parameters
+
 *Offset*<br/>
-[in] The offset from the beginning of `FS` to read from.  
-  
-## Return Value  
- The memory contents of the byte, word, doubleword, or quadword (as indicated by the name of the function called) at the location `FS:[Offset]`.  
-  
-## Requirements  
-  
-|Intrinsic|Architecture|  
-|---------------|------------------|  
-|`__readfsbyte`|x86|  
-|`__readfsdword`|x86|  
-|`__readfsqword`|x86|  
-|`__readfsword`|x86|  
-  
- **Header file** \<intrin.h>  
-  
-## Remarks  
- These routines are available only as intrinsics.  
-  
-**END Microsoft Specific**  
-  
-## See Also  
- [__writefsbyte, \__writefsdword, \__writefsqword, \__writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)   
- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[in] The offset from the beginning of `FS` to read from.
+
+## Return Value
+
+The memory contents of the byte, word, doubleword, or quadword (as indicated by the name of the function called) at the location `FS:[Offset]`.
+
+## Requirements
+
+|Intrinsic|Architecture|
+|---------------|------------------|
+|`__readfsbyte`|x86|
+|`__readfsdword`|x86|
+|`__readfsqword`|x86|
+|`__readfsword`|x86|
+
+**Header file** \<intrin.h>
+
+## Remarks
+
+These routines are available only as intrinsics.
+
+**END Microsoft Specific**
+
+## See Also
+
+[__writefsbyte, \__writefsdword, \__writefsqword, \__writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)<br/>
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

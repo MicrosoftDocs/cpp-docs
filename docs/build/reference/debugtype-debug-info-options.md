@@ -41,7 +41,7 @@ To debug code in user mode, which is typical for applications, the **/DEBUGTYPE*
 
 ## See Also
 
-[/DEBUG (Generate Debug Info)](../../build/reference/debug-generate-debug-info.md)
-[/DRIVER (Windows NT Kernel Mode Driver)](../../build/reference/driver-windows-nt-kernel-mode-driver.md)
-[/PROFILE (Performance Tools Profiler)](../../build/reference/profile-performance-tools-profiler.md)
+[/DEBUG (Generate Debug Info)](../../build/reference/debug-generate-debug-info.md)<br/>
+[/DRIVER (Windows NT Kernel Mode Driver)](../../build/reference/driver-windows-nt-kernel-mode-driver.md)<br/>
+[/PROFILE (Performance Tools Profiler)](../../build/reference/profile-performance-tools-profiler.md)<br/>
 [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](/windows-hardware/drivers/debugger/index)

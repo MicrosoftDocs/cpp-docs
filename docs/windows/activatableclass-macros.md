@@ -37,13 +37,13 @@ ActivatableClassWithFactoryEx(
 
 ### Parameters
 
-*className*  
+*className*<br/>
 Name of the class to create.
 
-*factory*  
+*factory*<br/>
 Factory that will create an instance of the specified class.
 
-*serverName*  
+*serverName*<br/>
 A name that specifies a subset of factories in the module.
 
 ## Remarks

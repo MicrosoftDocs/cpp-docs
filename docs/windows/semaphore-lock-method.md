@@ -31,10 +31,10 @@ static SyncLock Lock(
 
 ### Parameters
 
-*milliseconds*  
+*milliseconds*<br/>
 The time-out interval, in milliseconds. The default value is INFINITE, which waits indefinitely.
 
-*h*  
+*h*<br/>
 A handle to a **Semaphore** object.
 
 ## Return Value

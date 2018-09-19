@@ -26,7 +26,7 @@ Executes the specified custom registration script.
 
 ### Parameters
 
-*script*  
+*script*<br/>
 The full path to a custom registration script (.rgs) file. A value of **none**, such as `script = "none"`, indicates that the coclass has no registration requirements.
 
 ## Remarks
@@ -73,6 +73,6 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[COM Attributes](../windows/com-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)  
+[COM Attributes](../windows/com-attributes.md)<br/>
+[Class Attributes](../windows/class-attributes.md)<br/>
 [rdx](../windows/rdx.md)  

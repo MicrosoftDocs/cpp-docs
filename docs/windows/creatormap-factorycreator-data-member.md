@@ -23,21 +23,21 @@ HRESULT (*factoryCreator)(
    unsigned int* currentflags,
    const CreatorMap* entry,
    REFIID iidClassFactory,
- IUnknown** factory);
+IUnknown** factory);
 ```
 
 ### Parameters
 
-*currentflags*  
+*currentflags*<br/>
 One of the [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumerators.
 
-*entry*  
+*entry*<br/>
 A CreatorMap.
 
-*iidClassFactory*  
+*iidClassFactory*<br/>
 The interface ID of a class factory.
 
-*factory*  
+*factory*<br/>
 When the operation completes, the address of a class factory.
 
 ## Return Value
@@ -56,5 +56,5 @@ Creates a factory for the specified CreatorMap.
 
 ## See Also
 
-[CreatorMap Structure](../windows/creatormap-structure.md)  
+[CreatorMap Structure](../windows/creatormap-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

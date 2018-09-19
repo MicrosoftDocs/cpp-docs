@@ -166,7 +166,7 @@ Add some code to your app that tests the new functions.
        return 0;
    }
    ```
-This code adds a test function, `PlayGames`, to the source code, and calls it in `main`. 
+This code adds a test function, `PlayGames`, to the source code, and calls it in `main`.
 
 ## Build and run your app project
 

@@ -32,10 +32,10 @@ struct VerifyInheritanceHelper<I, Nil>;
 
 ### Parameters
 
-*I*  
+*I*<br/>
 A type.
 
-*Base*  
+*Base*<br/>
 Another type.
 
 ## Remarks

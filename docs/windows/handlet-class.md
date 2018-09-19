@@ -27,7 +27,7 @@ class HandleT;
 
 ### Parameters
 
-*HandleTraits*  
+*HandleTraits*<br/>
 An instance of the [HandleTraits](../windows/handletraits-structure.md) stucture that defines common characteristics of a handle.
 
 ## Members

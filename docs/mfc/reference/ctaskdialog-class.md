@@ -257,7 +257,7 @@ CTaskDialog(
     int nTaskDialogOptions = TDF_ENABLE_HYPERLINKS | TDF_USE_COMMAND_LINKS,
     const CString& strFooter = _T(""));
 
- 
+
 CTaskDialog(
     const CString& strContent,
     const CString& strMainInstruction,
@@ -1510,7 +1510,7 @@ The values for *wParam* and *lParam* depend on the specific generated message. I
 
 ## See Also
 
-[Classes](../../mfc/reference/mfc-classes.md)  
-[CObject Class](../../mfc/reference/cobject-class.md)  
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)  
-[Walkthrough: Adding a CTaskDialog to an Application](../../mfc/walkthrough-adding-a-ctaskdialog-to-an-application.md)  
+[Classes](../../mfc/reference/mfc-classes.md)<br/>
+[CObject Class](../../mfc/reference/cobject-class.md)<br/>
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
+[Walkthrough: Adding a CTaskDialog to an Application](../../mfc/walkthrough-adding-a-ctaskdialog-to-an-application.md)

@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # COleControl Class
+
 A powerful base class for developing OLE controls.
 
 ## Syntax
@@ -1101,20 +1102,13 @@ void FireReadyStateChange();
 
 The ready state can be one of the following values:
 
-READYSTATE_UNINITIALIZED
-Default initialization state
-
-READYSTATE_LOADING
-Control is currently loading its properties
-
-READYSTATE_LOADED
-Control has been initialized
-
-READYSTATE_INTERACTIVE
-Control has enough data to be interactive but not all asynchronous data is yet loaded
-
-READYSTATE_COMPLETE
-Control has all its data
+|||
+|-|-|
+|READYSTATE_UNINITIALIZED|Default initialization state|
+|READYSTATE_LOADING|Control is currently loading its properties|
+|READYSTATE_LOADED|Control has been initialized|
+|READYSTATE_INTERACTIVE|Control has enough data to be interactive but not all asynchronous data is yet loaded|
+|READYSTATE_COMPLETE|Control has all its data|
 
 Use [GetReadyState](#getreadystate) to determine the control's current readiness.
 
@@ -1132,14 +1126,11 @@ virtual DWORD GetActivationPolicy();
 
 A combination of flags from the POINTERINACTIVE enumeration. Possible flags are:
 
-POINTERINACTIVE_ACTIVATEONENTRY
-The object should be in-place activated when the mouse enters it during a mouse move operation.
-
-POINTERINACTIVE_DEACTIVATEONLEAVE
-The object should be deactivated when the mouse leaves the object during a mouse move operation.
-
-POINTERINACTIVE_ACTIVATEONDRAG
-The object should be in-place activated when the mouse is dragged over it during a drag and drop operation.
+|||
+|-|-|
+|POINTERINACTIVE_ACTIVATEONENTRY|The object should be in-place activated when the mouse enters it during a mouse move operation.|
+|POINTERINACTIVE_DEACTIVATEONLEAVE|The object should be deactivated when the mouse leaves the object during a mouse move operation.|
+|POINTERINACTIVE_ACTIVATEONDRAG|The object should be in-place activated when the mouse is dragged over it during a drag and drop operation.|
 
 ### Remarks
 
@@ -1584,20 +1575,13 @@ long GetReadyState();
 
 The readiness state of the control, one of the following values:
 
-READYSTATE_UNINITIALIZED
-Default initialization state
-
-READYSTATE_LOADING
-Control is currently loading its properties
-
-READYSTATE_LOADED
-Control has been initialized
-
-READYSTATE_INTERACTIVE
-Control has enough data to be interactive but not all asynchronous data is yet loaded
-
-READYSTATE_COMPLETE
-Control has all its data
+|||
+|-|-|
+|READYSTATE_UNINITIALIZED|Default initialization state|
+|READYSTATE_LOADING|Control is currently loading its properties|
+|READYSTATE_LOADED|Control has been initialized|
+|READYSTATE_INTERACTIVE|Control has enough data to be interactive but not all asynchronous data is yet loaded|
+|READYSTATE_COMPLETE|Control has all its data|
 
 ### Remarks
 
@@ -1739,20 +1723,13 @@ void InternalSetReadyState(long lNewReadyState);
 *lNewReadyState*<br/>
 The readiness state to set for the control, one of the following values:
 
-READYSTATE_UNINITIALIZED
-Default initialization state
-
-READYSTATE_LOADING
-Control is currently loading its properties
-
-READYSTATE_LOADED
-Control has been initialized
-
-READYSTATE_INTERACTIVE
-Control has enough data to be interactive but not all asynchronous data is yet loaded
-
-READYSTATE_COMPLETE
-Control has all its data
+|||
+|-|-|
+|READYSTATE_UNINITIALIZED|Default initialization state|
+|READYSTATE_LOADING|Control is currently loading its properties|
+|READYSTATE_LOADED|Control has been initialized|
+|READYSTATE_INTERACTIVE|Control has enough data to be interactive but not all asynchronous data is yet loaded|
+|READYSTATE_COMPLETE|Control has all its data|
 
 ### Remarks
 
@@ -2527,17 +2504,12 @@ virtual DWORD OnGetViewStatus();
 
 One of the values of the VIEWSTATUS enumeration if successful; otherwise 0. Possible values are any combination of the following:
 
-VIEWSTATUS_OPAQUE
-Object is completely opaque. If this bit is not set, the object contains transparent parts. This bit applies only to content-related aspects and not to DVASPECT_ICON or DVASPECT_DOCPRINT.
-
-VIEWSTATUS_SOLIDBKGND
-Object has a solid background (consisting in a solid color, not a brush pattern). This bit is meaningful only if VIEWSTATUS_OPAQUE is set and applies only to content-related aspects and not to DVASPECT_ICON or DVASPECT_DOCPRINT.
-
-VIEWSTATUS_DVASPECTOPAQUE
-Object supports DVASPECT_OPAQUE. All IViewObjectEx methods that take a drawing aspect as a parameter can be called with this aspect.
-
-VIEWSTATUS_DVASPECTTRANSPARENT
-Object supports DVASPECT_TRANSPARENT. All `IViewObjectEx` methods that take a drawing aspect as a parameter can be called with this aspect.
+|||
+|-|-|
+|VIEWSTATUS_OPAQUE|Object is completely opaque. If this bit is not set, the object contains transparent parts. This bit applies only to content-related aspects and not to DVASPECT_ICON or DVASPECT_DOCPRINT.|
+|VIEWSTATUS_SOLIDBKGND|Object has a solid background (consisting in a solid color, not a brush pattern). This bit is meaningful only if VIEWSTATUS_OPAQUE is set and applies only to content-related aspects and not to DVASPECT_ICON or DVASPECT_DOCPRINT.|
+|VIEWSTATUS_DVASPECTOPAQUE|Object supports DVASPECT_OPAQUE. All IViewObjectEx methods that take a drawing aspect as a parameter can be called with this aspect.|
+|VIEWSTATUS_DVASPECTTRANSPARENT|Object supports DVASPECT_TRANSPARENT. All `IViewObjectEx` methods that take a drawing aspect as a parameter can be called with this aspect.|
 
 ### Remarks
 

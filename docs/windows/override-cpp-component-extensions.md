@@ -81,5 +81,5 @@ Compiler option: `/clr`
 
 ## See Also
 
-[override Specifier](../cpp/override-specifier.md)  
+[override Specifier](../cpp/override-specifier.md)<br/>
 [Override Specifiers](../windows/override-specifiers-cpp-component-extensions.md)

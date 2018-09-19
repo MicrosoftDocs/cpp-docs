@@ -55,6 +55,6 @@ For more information about the template types T and U, see [SafeInt Functions](.
 
 ## See Also
 
-[SafeInt Functions](../windows/safeint-functions.md)  
-[SafeInt Library](../windows/safeint-library.md)  
+[SafeInt Functions](../windows/safeint-functions.md)<br/>
+[SafeInt Library](../windows/safeint-library.md)<br/>
 [SafeInt Class](../windows/safeint-class.md)

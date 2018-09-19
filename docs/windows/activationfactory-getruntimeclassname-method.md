@@ -26,7 +26,7 @@ STDMETHOD(
 
 ### Parameters
 
-*runtimeName*  
+*runtimeName*<br/>
 When this operation completes, a handle to a string that contains the runtime class name of the object that the current **ActivationFactory** instantiates.
 
 ## Return Value

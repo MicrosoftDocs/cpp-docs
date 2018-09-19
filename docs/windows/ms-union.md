@@ -46,7 +46,7 @@ __interface IFireTabCtrl {
       double dMcCovey;
    [default]
       int x;
- };
+};
 
 [public] typedef _WILLIE_UNION_TYPE WILLIE_UNION_TYPE;
 
@@ -68,5 +68,5 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  

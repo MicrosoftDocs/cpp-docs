@@ -12,10 +12,13 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Synchronization (lock Class)
-Provides a mechanism to automate taking a lock that synchronizes access to an object.  
-  
-## In This Section  
- [lock](../dotnet/lock.md)  
-  
-## See Also  
- [C++ Support Library](../dotnet/cpp-support-library.md)
+
+Provides a mechanism to automate taking a lock that synchronizes access to an object.
+
+## In This Section
+
+[lock](../dotnet/lock.md)
+
+## See Also
+
+[C++ Support Library](../dotnet/cpp-support-library.md)

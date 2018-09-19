@@ -26,7 +26,7 @@ Specifies that a member of a module, interface, or dispinterface cannot be calle
 
 ### Parameters
 
-*interfaces*  
+*interfaces*<br/>
 One or more interfaces that may not be called arbitrarily on a COM object. This parameter is only valid when applied to a class.
 
 ## Remarks
@@ -75,6 +75,6 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Interface Attributes](../windows/interface-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Interface Attributes](../windows/interface-attributes.md)<br/>
 [Method Attributes](../windows/method-attributes.md)  

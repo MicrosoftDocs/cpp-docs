@@ -277,5 +277,5 @@ You have modified the classic Scribble 1.0 MFC sample to use the Ribbon Designer
 
 ## See also
 
-[Walkthroughs](../mfc/walkthroughs-mfc.md)  
-[Walkthrough: Updating the MFC Scribble Application (Part 2)] (../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md)  
+[Walkthroughs](../mfc/walkthroughs-mfc.md)<br/>
+[Walkthrough: Updating the MFC Scribble Application (Part 2)] (../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md)

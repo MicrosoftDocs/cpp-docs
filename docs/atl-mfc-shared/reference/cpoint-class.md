@@ -336,9 +336,9 @@ Use the unary operator to negate a point. For example, using the unary operator 
 
 ## See Also
 
-[MFC Sample MDI](../../visual-cpp-samples.md)   
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)   
-[POINT Structure](../../mfc/reference/point-structure1.md)   
-[CRect Class](../../atl-mfc-shared/reference/crect-class.md)   
+[MFC Sample MDI](../../visual-cpp-samples.md)<br/>
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
+[POINT Structure](../../mfc/reference/point-structure1.md)<br/>
+[CRect Class](../../atl-mfc-shared/reference/crect-class.md)<br/>
 [CSize Class](../../atl-mfc-shared/reference/csize-class.md)
 

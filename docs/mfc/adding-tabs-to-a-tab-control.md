@@ -12,19 +12,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Adding Tabs to a Tab Control
-After creating the tab control ([CTabCtrl](../mfc/reference/ctabctrl-class.md)), add as many tabs as you need.  
-  
-### To add a tab item  
-  
-1.  Prepare a [TCITEM](/windows/desktop/api/commctrl/ns-commctrl-tagtcitema) structure.  
-  
-2.  Call [CTabCtrl::InsertItem](../mfc/reference/ctabctrl-class.md#insertitem), passing the structure.  
-  
-3.  Repeat steps 1 and 2 for additional tab items.  
-  
- For more information, see [Creating a Tab Control](/windows/desktop/Controls/tab-controls) in the Windows SDK.  
-  
-## See Also  
- [Using CTabCtrl](../mfc/using-ctabctrl.md)   
- [Controls](../mfc/controls-mfc.md)
+
+After creating the tab control ([CTabCtrl](../mfc/reference/ctabctrl-class.md)), add as many tabs as you need.
+
+### To add a tab item
+
+1. Prepare a [TCITEM](/windows/desktop/api/commctrl/ns-commctrl-tagtcitema) structure.
+
+1. Call [CTabCtrl::InsertItem](../mfc/reference/ctabctrl-class.md#insertitem), passing the structure.
+
+1. Repeat steps 1 and 2 for additional tab items.
+
+For more information, see [Creating a Tab Control](/windows/desktop/Controls/tab-controls) in the Windows SDK.
+
+## See Also
+
+[Using CTabCtrl](../mfc/using-ctabctrl.md)<br/>
+[Controls](../mfc/controls-mfc.md)
 

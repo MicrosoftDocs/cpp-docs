@@ -13,54 +13,57 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # omp_get_max_threads
-Returns an integer that is equal to or greater than the number of threads that would be available if a parallel region without [num_threads](../../../parallel/openmp/reference/num-threads.md) were defined at that point in the code.  
-  
-## Syntax  
-  
-```  
-int omp_get_max_threads( )  
-```  
-  
-## Remarks  
- For more information, see [3.1.3 omp_get_max_threads Function](../../../parallel/openmp/3-1-3-omp-get-max-threads-function.md).  
-  
-## Example  
-  
-```  
-// omp_get_max_threads.cpp  
-// compile with: /openmp  
-#include <stdio.h>  
-#include <omp.h>  
-  
-int main( )   
-{  
-    omp_set_num_threads(8);  
-    printf_s("%d\n", omp_get_max_threads( ));  
-    #pragma omp parallel  
-        #pragma omp master  
-        {  
-            printf_s("%d\n", omp_get_max_threads( ));  
-        }  
-  
-    printf_s("%d\n", omp_get_max_threads( ));  
-  
-    #pragma omp parallel num_threads(3)  
-        #pragma omp master  
-        {  
-            printf_s("%d\n", omp_get_max_threads( ));  
-        }  
-  
-    printf_s("%d\n", omp_get_max_threads( ));  
-}  
-```  
-  
-```Output  
-8  
-8  
-8  
-8  
-8  
-```  
-  
-## See Also  
- [Functions](../../../parallel/openmp/reference/openmp-functions.md)
+
+Returns an integer that is equal to or greater than the number of threads that would be available if a parallel region without [num_threads](../../../parallel/openmp/reference/num-threads.md) were defined at that point in the code.
+
+## Syntax
+
+```
+int omp_get_max_threads( )
+```
+
+## Remarks
+
+For more information, see [3.1.3 omp_get_max_threads Function](../../../parallel/openmp/3-1-3-omp-get-max-threads-function.md).
+
+## Example
+
+```
+// omp_get_max_threads.cpp
+// compile with: /openmp
+#include <stdio.h>
+#include <omp.h>
+
+int main( )
+{
+    omp_set_num_threads(8);
+    printf_s("%d\n", omp_get_max_threads( ));
+    #pragma omp parallel
+        #pragma omp master
+        {
+            printf_s("%d\n", omp_get_max_threads( ));
+        }
+
+    printf_s("%d\n", omp_get_max_threads( ));
+
+    #pragma omp parallel num_threads(3)
+        #pragma omp master
+        {
+            printf_s("%d\n", omp_get_max_threads( ));
+        }
+
+    printf_s("%d\n", omp_get_max_threads( ));
+}
+```
+
+```Output
+8
+8
+8
+8
+8
+```
+
+## See Also
+
+[Functions](../../../parallel/openmp/reference/openmp-functions.md)

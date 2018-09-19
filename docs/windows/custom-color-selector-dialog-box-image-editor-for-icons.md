@@ -58,6 +58,6 @@ None
 
 ## See Also
 
-[Image Menu](../windows/image-menu-image-editor-for-icons.md)  
-[Customizing or Changing Colors](../windows/customizing-or-changing-colors-image-editor-for-icons.md)  
+[Image Menu](../windows/image-menu-image-editor-for-icons.md)<br/>
+[Customizing or Changing Colors](../windows/customizing-or-changing-colors-image-editor-for-icons.md)<br/>
 [Colors Window](../windows/colors-window-image-editor-for-icons.md)

@@ -26,7 +26,7 @@ HandleT& operator=(
 
 ### Parameters
 
-*h*  
+*h*<br/>
 An rvalue-reference to a handle.
 
 ## Return Value

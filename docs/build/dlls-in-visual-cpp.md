@@ -57,67 +57,67 @@ A potential disadvantage to using DLLs is that the application is not self-conta
 
 The following topics provide detailed information about how to program DLLs in Visual C++.
 
-[Walkthrough: Creating and Using a Dynamic Link Library (C++)](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)
+[Walkthrough: Creating and Using a Dynamic Link Library (C++)](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)<br/>
 Describes how to create and use a DLL using Visual Studio.
 
-[Kinds of DLLs](../build/kinds-of-dlls.md)
+[Kinds of DLLs](../build/kinds-of-dlls.md)<br/>
 Provides information about the different kinds of DLLs that can be built.
 
-[DLL Frequently Asked Questions](../build/dll-frequently-asked-questions.md)
+[DLL Frequently Asked Questions](../build/dll-frequently-asked-questions.md)<br/>
 Provides answers to frequently asked questions about DLLs.
 
-[Link an executable to a DLL](../build/linking-an-executable-to-a-dll.md)
+[Link an executable to a DLL](../build/linking-an-executable-to-a-dll.md)<br/>
 Describes explicit and implicit linking to a DLL.
 
-[Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)
+[Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)<br/>
 Discusses DLL initialization code that must execute when your DLL loads.
 
-[DLLs and Visual C++ run-time library behavior](../build/run-time-library-behavior.md)
+[DLLs and Visual C++ run-time library behavior](../build/run-time-library-behavior.md)<br/>
 Describes how the run-time library performs the DLL startup sequence.
 
-[LoadLibrary and AfxLoadLibrary](../build/loadlibrary-and-afxloadlibrary.md)
+[LoadLibrary and AfxLoadLibrary](../build/loadlibrary-and-afxloadlibrary.md)<br/>
 Discusses using **LoadLibrary** and `AfxLoadLibrary` to explicitly link to a DLL at runtime.
 
-[GetProcAddress](../build/getprocaddress.md)
+[GetProcAddress](../build/getprocaddress.md)<br/>
 Discusses using **GetProcAddress** to obtain the address of an exported function in the DLL.
 
-[FreeLibrary and AfxFreeLibrary](../build/freelibrary-and-afxfreelibrary.md)
+[FreeLibrary and AfxFreeLibrary](../build/freelibrary-and-afxfreelibrary.md)<br/>
 Discusses using **FreeLibrary** and `AfxFreeLibrary` when the DLL module is no longer needed.
 
-[Dynamic-Link Library Search Order](/windows/desktop/Dlls/dynamic-link-library-search-order)
+[Dynamic-Link Library Search Order](/windows/desktop/Dlls/dynamic-link-library-search-order)<br/>
 Describes the search path that the Windows operating system uses to locate a DLL on the system.
 
-[Module States of a Regular MFC DLL Dynamically Linked to MFC](../build/module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)
+[Module States of a Regular MFC DLL Dynamically Linked to MFC](../build/module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)<br/>
 Describes the module states of a regular MFC DLL dynamically linked to MFC.
 
-[MFC extension DLLs](../build/extension-dlls-overview.md)
+[MFC extension DLLs](../build/extension-dlls-overview.md)<br/>
 Explains DLLs that typically implements reusable classes derived from the existing Microsoft Foundation Class Library classes.
 
-[Creating a Resource-Only DLL](../build/creating-a-resource-only-dll.md)
+[Creating a Resource-Only DLL](../build/creating-a-resource-only-dll.md)<br/>
 Discusses a resource-only DLL, which contains nothing but resources, such as icons, bitmaps, strings, and dialog boxes.
 
-[Localized Resources in MFC Applications: Satellite DLLs](../build/localized-resources-in-mfc-applications-satellite-dlls.md)
+[Localized Resources in MFC Applications: Satellite DLLs](../build/localized-resources-in-mfc-applications-satellite-dlls.md)<br/>
 Provides enhanced support for satellite DLLs, a feature that helps in creating applications localized for multiple languages.
 
-[Importing and Exporting](../build/importing-and-exporting.md)
+[Importing and Exporting](../build/importing-and-exporting.md)<br/>
 Describes importing public symbols into an application or exporting functions from a DLL
 
-[Active Technology and DLLs](../build/active-technology-and-dlls.md)
+[Active Technology and DLLs](../build/active-technology-and-dlls.md)<br/>
 Allows object servers to be implemented inside a DLL.
 
-[Automation in a DLL](../build/automation-in-a-dll.md)
+[Automation in a DLL](../build/automation-in-a-dll.md)<br/>
 Describes what the Automation option in the MFC DLL Wizard supplies.
 
-[Naming Conventions for MFC DLLs](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions)
+[Naming Conventions for MFC DLLs](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions)<br/>
 Discusses how the DLLs and libraries included in MFC follow a structured naming convention.
 
-[Calling DLL functions from Visual Basic Applications](../build/calling-dll-functions-from-visual-basic-applications.md)
+[Calling DLL functions from Visual Basic Applications](../build/calling-dll-functions-from-visual-basic-applications.md)<br/>
 Describes how to call DLL functions from Visual Basic applications.
 
 ## Related Sections
 
-[Using MFC as Part of a DLL](../mfc/tn011-using-mfc-as-part-of-a-dll.md)
+[Using MFC as Part of a DLL](../mfc/tn011-using-mfc-as-part-of-a-dll.md)<br/>
 Describes regular MFC DLLs, which let you use the MFC library as part of a Windows dynamic-link library.
 
-[DLL Version of MFC](../mfc/tn033-dll-version-of-mfc.md)
+[DLL Version of MFC](../mfc/tn033-dll-version-of-mfc.md)<br/>
 Describes how you can use the MFCxx.dll and MFCxxD.dll (where x is the MFC version number) shared dynamic-link libraries with MFC applications and MFC extension DLLs.

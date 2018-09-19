@@ -17,18 +17,18 @@ Nearly all programs work with string data. Visual C++ provides several ways to m
 
 ## In This Section
 
-[Using CStringT](../atl-mfc-shared/using-cstringt.md)  
+[Using CStringT](../atl-mfc-shared/using-cstringt.md)<br/>
 Describes programming using the template class CStringT.
 
-[Using CString](../atl-mfc-shared/using-cstring.md)  
+[Using CString](../atl-mfc-shared/using-cstring.md)<br/>
 Describes programming using CString, the default implementation of CStringT.
 
 ## Related Sections
 
-[CStringT Overview](../atl-mfc-shared/reference/cstringt-class.md)  
+[CStringT Overview](../atl-mfc-shared/reference/cstringt-class.md)<br/>
 Provides reference information about the shared `CStringT` class.
 
-[MFC Concepts](../mfc/mfc-concepts.md)  
+[MFC Concepts](../mfc/mfc-concepts.md)<br/>
 Provides conceptual and task-based topics to help you program using the MFC Library.
 
 ## See Also

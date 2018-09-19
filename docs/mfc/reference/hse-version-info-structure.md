@@ -13,27 +13,31 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # HSE_VERSION_INFO Structure
-This structure is pointed to by the *pVer* parameter in the `CHttpServer::GetExtensionVersion` member function. It provides the ISA version number and a text description of the ISA.  
-  
-## Syntax  
-  
-```  
-typedef struct _HSE_VERSION_INFO {  
-    DWORD dwExtensionVersion;  
-    CHAR lpszExtensionDesc[HSE_MAX_EXT_DLL_NAME_LEN];  
-} HSE_VERSION_INFO, *LPHSE_VERSION_INFO;  
-```  
-  
-#### Parameters  
- *dwExtensionVersion*  
- The version number of the ISA.  
-  
- *lpszExtensionDesc*  
- The text description of the ISA. The default implementation provides placeholder text; override `CHttpServer::GetExtensionVersion` to provide your own description.  
-  
-## Requirements  
- **Header:** httpext.h  
-  
-## See Also  
- [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
+
+This structure is pointed to by the *pVer* parameter in the `CHttpServer::GetExtensionVersion` member function. It provides the ISA version number and a text description of the ISA.
+
+## Syntax
+
+```
+typedef struct _HSE_VERSION_INFO {
+    DWORD dwExtensionVersion;
+    CHAR lpszExtensionDesc[HSE_MAX_EXT_DLL_NAME_LEN];
+} HSE_VERSION_INFO, *LPHSE_VERSION_INFO;
+```
+
+#### Parameters
+
+*dwExtensionVersion*<br/>
+The version number of the ISA.
+
+*lpszExtensionDesc*<br/>
+The text description of the ISA. The default implementation provides placeholder text; override `CHttpServer::GetExtensionVersion` to provide your own description.
+
+## Requirements
+
+**Header:** httpext.h
+
+## See Also
+
+[Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
 

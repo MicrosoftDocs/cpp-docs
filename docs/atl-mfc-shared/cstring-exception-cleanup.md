@@ -19,6 +19,6 @@ Under the C++ exception handling mechanism that MFC now uses, you do not have to
 
 ## See Also
 
-[Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)   
+[Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [Exception Handling](../mfc/exception-handling-in-mfc.md)
 

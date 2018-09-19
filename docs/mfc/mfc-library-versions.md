@@ -65,7 +65,7 @@ For example, the AFX.H header file instructs the linker to link in the full stat
 #endif
 ```
 
-MFC header files also include directives to link in all required libraries, including MFC libraries, Win32 libraries, OLE libraries, OLE libraries built from samples, ODBC libraries, and so on. 
+MFC header files also include directives to link in all required libraries, including MFC libraries, Win32 libraries, OLE libraries, OLE libraries built from samples, ODBC libraries, and so on.
 
 ## ANSI, MBCS, and Unicode
 
@@ -135,4 +135,4 @@ When you create your DLL project by linking to the MFC static libraries, your DL
 
 ## See also
 
-[General MFC Topics](../mfc/general-mfc-topics.md)  
+[General MFC Topics](../mfc/general-mfc-topics.md)

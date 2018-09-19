@@ -45,7 +45,7 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Interface Attributes](../windows/interface-attributes.md)  
-[Method Attributes](../windows/method-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Interface Attributes](../windows/interface-attributes.md)<br/>
+[Method Attributes](../windows/method-attributes.md)<br/>
 [call_as](../windows/call-as.md)  

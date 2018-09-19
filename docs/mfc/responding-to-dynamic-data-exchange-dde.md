@@ -12,8 +12,10 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Responding to Dynamic Data Exchange (DDE)
-The frame window can respond to dynamic data exchange (DDE) requests to open files from the File Manager (if the file extension is registered or associated with the application). See [Shell Registration](../mfc/special-cwinapp-services.md).  
-  
-## See Also  
- [Using Frame Windows](../mfc/using-frame-windows.md)
+
+The frame window can respond to dynamic data exchange (DDE) requests to open files from the File Manager (if the file extension is registered or associated with the application). See [Shell Registration](../mfc/special-cwinapp-services.md).
+
+## See Also
+
+[Using Frame Windows](../mfc/using-frame-windows.md)
 

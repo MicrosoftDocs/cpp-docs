@@ -32,10 +32,10 @@ struct IsSame<T1, T1>;
 
 ### Parameters
 
-*T1*  
+*T1*<br/>
 A type.
 
-*T2*  
+*T2*<br/>
 Another type.
 
 ## Remarks

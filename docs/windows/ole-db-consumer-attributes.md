@@ -24,4 +24,5 @@ The OLE DB consumer attributes inject code, based on the [OLE DB Consumer Templa
 |[db_table](../windows/db-table.md)|Opens an OLE DB table.|
   
 ## See Also
- [Attributes by Group](../windows/attributes-by-group.md)
+
+[Attributes by Group](../windows/attributes-by-group.md)

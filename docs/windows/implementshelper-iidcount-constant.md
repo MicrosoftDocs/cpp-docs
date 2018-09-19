@@ -34,5 +34,5 @@ Holds the number of implemented interface IDs in the current `Implements` object
 
 ## See Also
 
-[ImplementsHelper Structure](../windows/implementshelper-structure.md)  
+[ImplementsHelper Structure](../windows/implementshelper-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

@@ -12,12 +12,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # MAPI Samples
-See the following sample programs that illustrate Microsoft Messaging Application Programming Interface (MAPI) functionality:  
-  
--   [NPP](../visual-cpp-samples.md)  
-  
--   [DRAWCLI](../visual-cpp-samples.md)  
-  
-## See Also  
- [MAPI](../mfc/mapi.md)
+
+See the following sample programs that illustrate Microsoft Messaging Application Programming Interface (MAPI) functionality:
+
+- [NPP](../visual-cpp-samples.md)
+
+- [DRAWCLI](../visual-cpp-samples.md)
+
+## See Also
+
+[MAPI](../mfc/mapi.md)
 

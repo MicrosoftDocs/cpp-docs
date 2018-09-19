@@ -91,6 +91,6 @@ TEST defined 1
 
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/U, /u (Undefine Symbols)](../../build/reference/u-u-undefine-symbols.md)
-[#undef Directive (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md)
+[/U, /u (Undefine Symbols)](../../build/reference/u-u-undefine-symbols.md)<br/>
+[#undef Directive (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md)<br/>
 [#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)

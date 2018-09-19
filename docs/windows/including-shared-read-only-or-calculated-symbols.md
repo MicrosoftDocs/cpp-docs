@@ -64,7 +64,7 @@ Win32
 
 ## See Also
 
-[Symbol Name Restrictions](../windows/symbol-name-restrictions.md)  
-[Symbol Value Restrictions](../windows/symbol-value-restrictions.md)  
-[Predefined Symbol IDs](../windows/predefined-symbol-ids.md)  
+[Symbol Name Restrictions](../windows/symbol-name-restrictions.md)<br/>
+[Symbol Value Restrictions](../windows/symbol-value-restrictions.md)<br/>
+[Predefined Symbol IDs](../windows/predefined-symbol-ids.md)<br/>
 [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)

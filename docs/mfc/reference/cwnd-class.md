@@ -496,7 +496,7 @@ virtual HRESULT accDoDefaultAction(VARIANT varChild);
 
 ### Parameters
 
-*varChild*  
+*varChild*<br/>
 Specifies whether the default action to be invoked is that of the object or one of the object's child elements. This parameter can be either CHILDID_SELF (to perform the object's default action) or a child ID (to perform the default action of one of the object's child elements).
 
 ### Return Value
@@ -522,13 +522,13 @@ virtual HRESULT accHitTest(
 
 ### Parameters
 
-*xLeft*  
+*xLeft*<br/>
 X-coordinate of the point to be hit tested (in screen units).
 
-*yTop*  
+*yTop*<br/>
 Y-coordinate of the point to be hit tested (in screen units).
 
-*pvarChild*  
+*pvarChild*<br/>
 Receives information identifying the object at the point specified by *xLeft* and *yTop*. See *pvarID* in [IAccessible::accHitTest](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-acchittest) in the Windows SDK.
 
 ### Return Value
@@ -558,19 +558,19 @@ virtual HRESULT accLocation(
 
 ### Parameters
 
-*pxLeft*  
+*pxLeft*<br/>
 Receives x-coordinate of the object's upper-left corner (in screen units).
 
-*pyTop*  
+*pyTop*<br/>
 Receives y-coordinate of the object's upper-left corner (in screen units).
 
-*pcxWidth*  
+*pcxWidth*<br/>
 Receives width of the object (in screen units).
 
-*pcyHeight*  
+*pcyHeight*<br/>
 Receives height of the object (in screen units).
 
-*varChild*  
+*varChild*<br/>
 Specifies whether the location to be retrieved is that of the object or one of the object's child elements. This parameter can be either CHILDID_SELF (to obtain information about the object) or a child ID (to obtain information about the object's child element).
 
 ### Return Value
@@ -596,13 +596,13 @@ virtual HRESULT accNavigate(
 
 ### Parameters
 
-*navDir*  
+*navDir*<br/>
 Specifies the direction to navigate. See *navDir* in [IAccessible::accNavigate](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-accnavigate) in the Windows SDK.
 
-*varStart*  
+*varStart*<br/>
 Specifies the starting object. See *varStart* in `IAccessible::accNavigate` in the Windows SDK.
 
-*pvarEndUpAt*  
+*pvarEndUpAt*<br/>
 Receives information about the destination user interface object. See *pvarEnd* in `IAccessible::accNavigate` in the Windows SDK.
 
 ### Return Value
@@ -629,10 +629,10 @@ virtual HRESULT accSelect(
 
 ### Parameters
 
-*flagsSelect*  
+*flagsSelect*<br/>
 Specifies how to change the current selection or focus. See *flagsSelect* in [IAccessible::accSelect](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-accselect) in the Windows SDK.
 
-*varChild*  
+*varChild*<br/>
 Specifies the object to be selected. This parameter can be either CHILDID_SELF (to select the object itself) or a child ID (to select one of the object's children).
 
 ### Return Value
@@ -659,10 +659,10 @@ BOOL AnimateWindow(
 
 ### Parameters
 
-*dwTime*  
+*dwTime*<br/>
 Specifies how long it takes to play the animation, in milliseconds. Typically, an animation takes 200 milliseconds to play.
 
-*dwFlags*  
+*dwFlags*<br/>
 Specifies the type of animation. For a full list of possible values, see [AnimateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632669).
 
 ### Return Value
@@ -705,7 +705,7 @@ BOOL Attach(HWND hWndNew);
 
 ### Parameters
 
-*hWndNew*  
+*hWndNew*<br/>
 Specifies a handle to a Windows window.
 
 ### Return Value
@@ -740,7 +740,7 @@ CDC* BeginPaint(LPPAINTSTRUCT lpPaint);
 
 ### Parameters
 
-*lpPaint*  
+*lpPaint*<br/>
 Points to the [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) structure that is to receive painting information.
 
 ### Return Value
@@ -773,16 +773,16 @@ void BindDefaultProperty(
 
 ### Parameters
 
-*dwDispID*  
+*dwDispID*<br/>
 Specifies the DISPID of a property on a data-bound control that is to be bound to a data-source control.
 
-*vtProp*  
+*vtProp*<br/>
 Specifies the type of the property to be bound — for example, VT_BSTR, VT_VARIANT, and so on.
 
-*szFieldName*  
+*szFieldName*<br/>
 Specifies the name of the column, in the cursor provided by the data-source control, to which the property will be bound.
 
-*pDSCWnd*  
+*pDSCWnd*<br/>
 Points to the window that hosts the data-source control to which the property will be bound. Call `GetDlgItem` with the resource ID of the DCS's host window to retrieve this pointer.
 
 ### Remarks
@@ -809,10 +809,10 @@ void BindProperty(
 
 ### Parameters
 
-*dwDispId*  
+*dwDispId*<br/>
 Specifies the DISPID of a property on a data-bound control that is to be bound to a data-source control.
 
-*pWndDSC*  
+*pWndDSC*<br/>
 Points to the window that hosts the data-source control to which the property will be bound. Call `GetDlgItem` with the resource ID of the DCS's host window to retrieve this pointer.
 
 ### Remarks
@@ -883,7 +883,7 @@ static void PASCAL CancelToolTips(BOOL bKeys = FALSE);
 
 ### Parameters
 
-*bKeys*  
+*bKeys*<br/>
 TRUE to cancel tool tips when a key is pressed and set the status bar text to the default; otherwise FALSE.
 
 ### Remarks
@@ -905,7 +905,7 @@ void CenterWindow(CWnd* pAlternateOwner = NULL);
 
 ### Parameters
 
-*pAlternateOwner*  
+*pAlternateOwner*<br/>
 Pointer to an alternate window relative to which it will be centered (other than the parent window).
 
 ### Remarks
@@ -926,7 +926,7 @@ BOOL ChangeClipboardChain(HWND hWndNext);
 
 ### Parameters
 
-*hWndNext*  
+*hWndNext*<br/>
 Identifies the window that follows `CWnd` in the Clipboard-viewer chain.
 
 ### Return Value
@@ -945,10 +945,10 @@ void CheckDlgButton(
 
 ### Parameters
 
-*nIDButton*  
+*nIDButton*<br/>
 Specifies the button to be modified.
 
-*nCheck*  
+*nCheck*<br/>
 Specifies the action to take. If *nCheck* is nonzero, the `CheckDlgButton` member function places a check mark next to the button; if 0, the check mark is removed. For three-state buttons, if *nCheck* is 2, the button state is indeterminate.
 
 ### Remarks
@@ -972,13 +972,13 @@ void CheckRadioButton(
 
 ### Parameters
 
-*nIDFirstButton*  
+*nIDFirstButton*<br/>
 Specifies the integer identifier of the first radio button in the group.
 
-*nIDLastButton*  
+*nIDLastButton*<br/>
 Specifies the integer identifier of the last radio button in the group.
 
-*nIDCheckButton*  
+*nIDCheckButton*<br/>
 Specifies the integer identifier of the radio button to be checked.
 
 ### Remarks
@@ -1003,10 +1003,10 @@ CWnd* ChildWindowFromPoint(
 
 ### Parameters
 
-*point*  
+*point*<br/>
 Specifies the client coordinates of the point to be tested.
 
-*nflags*  
+*nflags*<br/>
 Specifies which child windows to skip. This parameter can be a combination of the following values:
 
 |Value|Meaning|
@@ -1040,10 +1040,10 @@ void ClientToScreen(LPPOINT lpPoint) const;  void ClientToScreen(LPRECT lpRect) 
 
 ### Parameters
 
-*lpPoint*  
+*lpPoint*<br/>
 Points to a [POINT structure](../../mfc/reference/point-structure1.md) or `CPoint` object that contains the client coordinates to be converted.
 
-*lpRect*  
+*lpRect*<br/>
 Points to a [RECT structure](../../mfc/reference/rect-structure1.md) or `CRect` object that contains the client coordinates to be converted.
 
 ### Remarks
@@ -1154,17 +1154,17 @@ virtual HRESULT CreateAccessibleProxy(
 
 ### Parameters
 
-*wParam*  
+*wParam*<br/>
 Identifies the object accessed by the Active Accessibility proxy. Can be one of the following values
 
 |Value|Meaning|
 |-----------|-------------|
 |OBJID_CLIENT|Refers to the window's client area.|
 
-*lParam*  
+*lParam*<br/>
 Provides additional message-dependent information.
 
-*pResult*  
+*pResult*<br/>
 A pointer to an LRESULT that stores the result code.
 
 ### Remarks
@@ -1181,7 +1181,7 @@ void CreateCaret(CBitmap* pBitmap);
 
 ### Parameters
 
-*pBitmap*  
+*pBitmap*<br/>
 Identifies the bitmap that defines the caret shape.
 
 ### Remarks
@@ -1240,40 +1240,40 @@ BOOL CreateControl(
 
 ### Parameters
 
-*pszClass*  
+*pszClass*<br/>
 This string may contain the OLE "short name" (ProgID) for the class, e.g., "CIRC3.Circ3Ctrl.1". The name needs to match the same name registered by the control. Alternatively, the string may contain the string form of a CLSID, contained in braces, e.g., "{9DBAFCCF-592F-101B-85CE-00608CEC297B}". In either case, `CreateControl` converts the string to the corresponding class ID.
 
-*pszWindowName*  
+*pszWindowName*<br/>
 A pointer to the text to be displayed in the control. Sets the value of the control's Caption or Text property (if any). If NULL, the control's Caption or Text property is not changed.
 
-*dwStyle*  
+*dwStyle*<br/>
 Windows styles. The available styles are listed under Remarks.
 
-*rect*  
+*rect*<br/>
 Specifies the control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT structure](../../mfc/reference/rect-structure1.md).
 
-*ppt*  
+*ppt*<br/>
 Points to a [POINT structure](../../mfc/reference/point-structure1.md) or `CPoint` object that contains the upper left corner of the control.
 
-*pSize*  
+*pSize*<br/>
 Points to a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure or `CSize` object that contains the control's size
 
-*pParentWnd*  
+*pParentWnd*<br/>
 Specifies the control's parent window. It must not be NULL.
 
-*nID*  
+*nID*<br/>
 Specifies the control's ID.
 
-*pPersist*  
+*pPersist*<br/>
 A pointer to a [CFile](../../mfc/reference/cfile-class.md) containing the persistent state for the control. The default value is NULL, indicating that the control initializes itself without restoring its state from any persistent storage. If not NULL, it should be a pointer to a `CFile`-derived object which contains the control's persistent data, in the form of either a stream or a storage. This data could have been saved in a previous activation of the client. The `CFile` can contain other data, but must have its read-write pointer set to the first byte of persistent data at the time of the call to `CreateControl`.
 
-*bStorage*  
+*bStorage*<br/>
 Indicates whether the data in *pPersist* should be interpreted as IStorage or IStream data. If the data in *pPersist* is a storage, *bStorage* should be TRUE. If the data in *pPersist* is a stream, *bStorage* should be FALSE. The default value is FALSE.
 
-*bstrLicKey*  
+*bstrLicKey*<br/>
 Optional license key data. This data is needed only for creating controls that require a run-time license key. If the control supports licensing, you must provide a license key for the creation of the control to succeed. The default value is NULL.
 
-*clsid*  
+*clsid*<br/>
 The unique class ID of the control.
 
 ### Return Value
@@ -1332,46 +1332,46 @@ virtual BOOL CreateEx(
 
 ### Parameters
 
-*dwExStyle*  
+*dwExStyle*<br/>
 Bitwise combination (OR) of [extended window styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles); otherwise NULL for the default extended window style.
 
-*lpszClassName*  
+*lpszClassName*<br/>
 Pointer to a null-terminated string that contains the name of a registered system window class; or the name of a predefined system window class.
 
-*lpszWindowName*  
+*lpszWindowName*<br/>
 Pointer to a null-terminated string that contains the window display name; otherwise NULL for no window display name.
 
-*dwStyle*  
+*dwStyle*<br/>
 Bitwise combination (OR) of [window styles](styles-used-by-mfc.md#window-styles); otherwise NULL for the default window style.
 
-*x*  
+*x*<br/>
 The initial horizontal distance of the window from the left side of the screen or the parent window.
 
-*y*  
+*y*<br/>
 The initial vertical distance of the window from the top of the screen or the parent window.
 
-*nWidth*  
+*nWidth*<br/>
 The width, in pixels, of the window.
 
-*nHeight*  
+*nHeight*<br/>
 The height, in pixels, of the window.
 
-*hwndParent*  
+*hwndParent*<br/>
 For a child window, the handle to the parent window; otherwise, the handle of the owner window if the window has an owner.
 
-*nIDorHMenu*  
+*nIDorHMenu*<br/>
 For a child window, the window ID; otherwise, the ID of a menu for the window.
 
-*lpParam*  
+*lpParam*<br/>
 Pointer to user data that is passed to the [CWnd::OnCreate](#oncreate) method in the *lpCreateParams* field.
 
-*rect*  
+*rect*<br/>
 The size and location of the window relative to the screen or the parent window.
 
-*pParentWnd*  
+*pParentWnd*<br/>
 For a child window, pointer to the parent window; otherwise, pointer to the owner window if the window has an owner.
 
-*nID*  
+*nID*<br/>
 For a child window, the window ID; otherwise, the ID of a menu for the window.
 
 ### Return Value
@@ -1409,10 +1409,10 @@ void CreateGrayCaret(
 
 ### Parameters
 
-*nWidth*  
+*nWidth*<br/>
 Specifies the width of the caret (in logical units). If this parameter is 0, the width is set to the system-defined window-border width.
 
-*nHeight*  
+*nHeight*<br/>
 Specifies the height of the caret (in logical units). If this parameter is 0, the height is set to the system-defined window-border height.
 
 ### Remarks
@@ -1443,10 +1443,10 @@ void CreateSolidCaret(
 
 ### Parameters
 
-*nWidth*  
+*nWidth*<br/>
 Specifies the width of the caret (in logical units). If this parameter is 0, the width is set to the system-defined window-border width.
 
-*nHeight*  
+*nHeight*<br/>
 Specifies the height of the caret (in logical units). If this parameter is 0, the height is set to the system-defined window-border height.
 
 ### Remarks
@@ -1510,13 +1510,13 @@ virtual LRESULT DefWindowProc(
 
 ### Parameters
 
-*message*  
+*message*<br/>
 Specifies the Windows message to be processed.
 
-*wParam*  
+*wParam*<br/>
 Specifies additional message-dependent information.
 
-*lParam*  
+*lParam*<br/>
 Specifies additional message-dependent information.
 
 ### Return Value
@@ -1603,16 +1603,16 @@ int DlgDirList(
 
 ### Parameters
 
-*lpPathSpec*  
+*lpPathSpec*<br/>
 Points to a null-terminated string that contains the path or filename. `DlgDirList` modifies this string, which should be long enough to contain the modifications. For more information, see the following "Remarks" section.
 
-*nIDListBox*  
+*nIDListBox*<br/>
 Specifies the identifier of a list box. If *nIDListBox* is 0, `DlgDirList` assumes that no list box exists and does not attempt to fill one.
 
-*nIDStaticPath*  
+*nIDStaticPath*<br/>
 Specifies the identifier of the static-text control used to display the current drive and directory. If *nIDStaticPath* is 0, `DlgDirList` assumes that no such text control is present.
 
-*nFileType*  
+*nFileType*<br/>
 Specifies the attributes of the files to be displayed. It can be any combination of the following values:
 
 - DDL_READWRITE Read-write data files with no additional attributes.
@@ -1671,16 +1671,16 @@ int DlgDirListComboBox(
 
 ### Parameters
 
-*lpPathSpec*  
+*lpPathSpec*<br/>
 Points to a null-terminated string that contains the path or filename. `DlgDirListComboBox` modifies this string, so this data should not be in the form of a string literal. See the following "Remarks" section.
 
-*nIDComboBox*  
+*nIDComboBox*<br/>
 Specifies the identifier of a combo box in a dialog box. If *nIDComboBox* is 0, `DlgDirListComboBox` assumes that no combo box exists and does not attempt to fill one.
 
-*nIDStaticPath*  
+*nIDStaticPath*<br/>
 Specifies the identifier of the static-text control used to display the current drive and directory. If *nIDStaticPath* is 0, `DlgDirListComboBox` assumes that no such text control is present.
 
-*nFileType*  
+*nFileType*<br/>
 Specifies DOS file attributes of the files to be displayed. It can be any combination of the following values:
 
 - DDL_READWRITE Read-write data files with no additional attributes.
@@ -1737,10 +1737,10 @@ BOOL DlgDirSelect(
 
 ### Parameters
 
-*lpString*  
+*lpString*<br/>
 Points to a buffer that is to receive the current selection in the list box.
 
-*nIDListBox*  
+*nIDListBox*<br/>
 Specifies the integer ID of a list box in the dialog box.
 
 ### Return Value
@@ -1769,10 +1769,10 @@ BOOL DlgDirSelectComboBox(
 
 ### Parameters
 
-*lpString*  
+*lpString*<br/>
 Points to a buffer that is to receive the selected path.
 
-*nIDComboBox*  
+*nIDComboBox*<br/>
 Specifies the integer ID of the combo box in the dialog box.
 
 ### Return Value
@@ -1799,7 +1799,7 @@ virtual void DoDataExchange(CDataExchange* pDX);
 
 ### Parameters
 
-*pDX*  
+*pDX*<br/>
 A pointer to a `CDataExchange` object.
 
 ### Remarks
@@ -1826,7 +1826,7 @@ void DragAcceptFiles(BOOL bAccept = TRUE);
 
 ### Parameters
 
-*BAccept*  
+*BAccept*<br/>
 Flag that indicates whether dragged files are accepted.
 
 ### Remarks
@@ -1845,7 +1845,7 @@ BOOL DragDetect(POINT pt) const;
 
 ### Parameters
 
-*pt*  
+*pt*<br/>
 Initial position of the mouse, in screen coordinates. The function determines the coordinates of the drag rectangle by using this point.
 
 ### Return Value
@@ -1871,13 +1871,13 @@ BOOL DrawAnimatedRects(
 
 ### Parameters
 
-*idAni*  
+*idAni*<br/>
 Specifies the type of animation. If you specify IDANI_CAPTION, the window caption will animate from the position specified by *lprcFrom* to the position specified by *lprcTo*. The effect is similar to minimizing or maximizing a window.
 
-*lprcFrom*  
+*lprcFrom*<br/>
 Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the location and size of the icon or minimized window.
 
-*lprcTo*  
+*lprcTo*<br/>
 Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the location and size of the restored window
 
 ### Return Value
@@ -1901,13 +1901,13 @@ BOOL DrawCaption(
 
 ### Parameters
 
-*pDC*  
+*pDC*<br/>
 A pointer to a device context. The function draws the window caption into this device context.
 
-*lprc*  
+*lprc*<br/>
 A pointer to a RECT structure that specifies the bounding rectangle for the window caption.
 
-*uFlags*  
+*uFlags*<br/>
 Specifies drawing options. For a complete list of values, see [DrawCaption](/windows/desktop/api/winuser/nf-winuser-drawcaption).
 
 ### Return Value
@@ -1956,7 +1956,7 @@ void EnableDynamicLayout(BOOL bEnable = TRUE);
 
 ### Parameters
 
-*bEnable*  
+*bEnable*<br/>
 TRUE to enable dynamic layout; FALSE to disable dynamic layout.
 
 ### Remarks
@@ -1975,10 +1975,10 @@ void EnableD2DSupport(
 
 ### Parameters
 
-*bEnable*  
+*bEnable*<br/>
 Specifies whether to turn on, or off D2D support.
 
-*bUseDCRenderTarget*  
+*bUseDCRenderTarget*<br/>
 Species whether to use the Device Context (DC) render target, CDCRenderTarget. If FALSE, CHwndRenderTarget is used.
 
 ##  <a name="enablescrollbar"></a>  CWnd::EnableScrollBar
@@ -1993,7 +1993,7 @@ BOOL EnableScrollBar(
 
 ### Parameters
 
-*nSBFlags*  
+*nSBFlags*<br/>
 Specifies the scroll-bar type. Can have one of the following values:
 
 - SB_BOTH Enables or disables the arrows of the horizontal and vertical scroll bars associated with the window.
@@ -2002,7 +2002,7 @@ Specifies the scroll-bar type. Can have one of the following values:
 
 - SB_VERT Enables or disables the arrows of the vertical scroll bar associated with the window.
 
-*nArrowFlags*  
+*nArrowFlags*<br/>
 Specifies whether the scroll-bar arrows are enabled or disabled and which arrows are enabled or disabled. Can have one of the following values:
 
 - ESB_ENABLE_BOTH Enables both arrows of a scroll bar (default).
@@ -2029,10 +2029,10 @@ void EnableScrollBarCtrl(
 
 ### Parameters
 
-*nBar*  
+*nBar*<br/>
 The scroll-bar identifier.
 
-*bEnable*  
+*bEnable*<br/>
 Specifies whether the scroll bar is to be enabled or disabled.
 
 ### Remarks
@@ -2049,7 +2049,7 @@ BOOL EnableToolTips(BOOL bEnable = TRUE);
 
 ### Parameters
 
-*bEnable*  
+*bEnable*<br/>
 Specifies whether the tool tip control is enabled or disabled. TRUE enables the control; FALSE disables the control.
 
 ### Return Value
@@ -2085,7 +2085,7 @@ BOOL EnableTrackingToolTips(BOOL bEnable = TRUE);
 
 ### Parameters
 
-*bEnable*  
+*bEnable*<br/>
 Specifies whether tracking tool tips are enabled or disabled. If this parameter is TRUE, the tracking tool tips will be enabled. If this parameter is FALSE, the tracking tool tips will be disabled.
 
 ### Return Value
@@ -2106,7 +2106,7 @@ BOOL EnableWindow(BOOL bEnable = TRUE);
 
 ### Parameters
 
-*bEnable*  
+*bEnable*<br/>
 Specifies whether the given window is to be enabled or disabled. If this parameter is TRUE, the window will be enabled. If this parameter is FALSE, the window will be disabled.
 
 ### Return Value
@@ -2141,7 +2141,7 @@ virtual void EndModalLoop(int nResult);
 
 ### Parameters
 
-*nResult*  
+*nResult*<br/>
 Contains the value to be returned to the caller of [RunModalLoop](#runmodalloop).
 
 ### Remarks
@@ -2166,7 +2166,7 @@ void EndPaint(LPPAINTSTRUCT lpPaint);
 
 ### Parameters
 
-*lpPaint*  
+*lpPaint*<br/>
 Points to a [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) structure that contains the painting information retrieved by the [BeginPaint](#beginpaint) member function.
 
 ### Remarks
@@ -2190,10 +2190,10 @@ BOOL ExecuteDlgInit(LPVOID lpResource);
 
 ### Parameters
 
-*lpszResourceName*  
+*lpszResourceName*<br/>
 A pointer to a null-terminated string specifying the name of the resource.
 
-*lpResource*  
+*lpResource*<br/>
 A pointer to a resource.
 
 ### Return Value
@@ -2214,7 +2214,7 @@ void FilterToolTipMessage(MSG* pMsg);
 
 ### Parameters
 
-*pMsg*  
+*pMsg*<br/>
 A pointer to the tool tip message.
 
 ### Remarks
@@ -2235,10 +2235,10 @@ static CWnd* PASCAL FindWindow(
 
 ### Parameters
 
-*lpszClassName*  
+*lpszClassName*<br/>
 Points to a null-terminated string that specifies the window's class name (a `WNDCLASS` structure). If *lpClassName* is NULL, all class names match.
 
-*lpszWindowName*  
+*lpszWindowName*<br/>
 Points to a null-terminated string that specifies the window name (the window's title). If *lpWindowName* is NULL, all window names match.
 
 ### Return Value
@@ -2269,16 +2269,16 @@ static CWnd* FindWindowEx(
 
 ### Parameters
 
-*hwndParent*  
+*hwndParent*<br/>
 Handle to the parent window whose child windows are to be searched.
 
-*hwndChildAfter*  
+*hwndChildAfter*<br/>
 Handle to a child window. The search begins with the next child window in the Z order. The child window must be a direct child window of *hwndParent*, not just a descendant window.
 
-*lpszClass*  
+*lpszClass*<br/>
 Pointer to a null-terminated string that specifies the class name or a class atom created by a previous call to the [RegisterClass](https://msdn.microsoft.com/library/windows/desktop/ms633586) or [RegisterClassEx](https://msdn.microsoft.com/library/windows/desktop/ms633587).
 
-*lpszWindow*  
+*lpszWindow*<br/>
 Pointer to a null-terminated string that specifies the window name (the window's title). If this parameter is NULL, all window names match.
 
 ### Return Value
@@ -2299,7 +2299,7 @@ BOOL FlashWindow(BOOL bInvert);
 
 ### Parameters
 
-*bInvert*  
+*bInvert*<br/>
 Specifies whether the `CWnd` is to be flashed or returned to its original state. The `CWnd` is flashed from one state to the other if *bInvert* is TRUE. If *bInvert* is FALSE, the window is returned to its original state (either active or inactive).
 
 ### Return Value
@@ -2333,13 +2333,13 @@ BOOL FlashWindowEx(
 
 ### Parameters
 
-*dwFlags*  
+*dwFlags*<br/>
 Specifies the flash status. For a complete list of values, see the [FLASHWINFO](/windows/desktop/api/winuser/ns-winuser-flashwinfo) structure.
 
-*uCount*  
+*uCount*<br/>
 Specifies the number of times to flash the window.
 
-*dwTimeout*  
+*dwTimeout*<br/>
 Specifies the rate, in milliseconds, at which the window will be flashed. If *dwTimeout* is zero, the function uses the default cursor blink rate.
 
 ### Return Value
@@ -2360,7 +2360,7 @@ static CWnd* PASCAL FromHandle(HWND hWnd);
 
 ### Parameters
 
-*hWnd*  
+*hWnd*<br/>
 An HWND of a Windows window.
 
 ### Return Value
@@ -2379,7 +2379,7 @@ static CWnd* PASCAL FromHandlePermanent(HWND hWnd);
 
 ### Parameters
 
-*hWnd*  
+*hWnd*<br/>
 An HWND of a Windows window.
 
 ### Return Value
@@ -2404,10 +2404,10 @@ virtual HRESULT get_accChild(
 
 ### Parameters
 
-*varChild*  
+*varChild*<br/>
 Identifies the child whose `IDispatch` interface is to be retrieved.
 
-*ppdispChild*  
+*ppdispChild*<br/>
 Receives the address of the child object's `IDispatch` interface.
 
 ### Return Value
@@ -2432,7 +2432,7 @@ virtual HRESULT get_accChildCount(long* pcountChildren);
 
 ### Parameters
 
-*pcountChildren*  
+*pcountChildren*<br/>
 Receives the number of children.
 
 ### Return Value
@@ -2459,10 +2459,10 @@ virtual HRESULT get_accDefaultAction(
 
 ### Parameters
 
-*varChild*  
+*varChild*<br/>
 Specifies whether the default action to be retrieved is that of the object or one of the object's child elements. This parameter can be either CHILDID_SELF (to obtain information about the object) or a child ID (to obtain information about the object's child element).
 
-*pszDefaultAction*  
+*pszDefaultAction*<br/>
 Address of a BSTR that receives a localized string describing the default action for the specified object, or NULL if this object has no default action.
 
 ### Return Value
@@ -2489,10 +2489,10 @@ virtual HRESULT get_accDescription(
 
 ### Parameters
 
-*varChild*  
+*varChild*<br/>
 Specifies whether the description to be retrieved is that of the object or one of the object's child elements. This parameter can be either CHILDID_SELF (to obtain information about the object) or a child ID (to obtain information about the object's child element).
 
-*pszDescription*  
+*pszDescription*<br/>
 Address of a BSTR that receives a localized string describing the specified object, or NULL if no description is available for this object.
 
 ### Return Value
@@ -2517,7 +2517,7 @@ virtual HRESULT get_accFocus(VARIANT* pvarChild);
 
 ### Parameters
 
-*pvarChild*  
+*pvarChild*<br/>
 Receives information about the object that has the focus. See *pvarID* in [IAccessible::get_accFocus](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accfocus) in the Windows SDK.
 
 ### Return Value
@@ -2544,10 +2544,10 @@ virtual HRESULT get_accHelp(
 
 ### Parameters
 
-*varChild*  
+*varChild*<br/>
 Specifies whether the help information to be retrieved is that of the object or one of the object's child elements. This parameter can be either CHILDID_SELF (to obtain information about the object) or a child ID (to obtain information about the object's child element).
 
-*pszHelp*  
+*pszHelp*<br/>
 Address of a BSTR that receives the localized string containing the help information for the specified object, or NULL if no help information is available.
 
 ### Return Value
@@ -2575,13 +2575,13 @@ virtual HRESULT get_accHelpTopic(
 
 ### Parameters
 
-*pszHelpFile*  
+*pszHelpFile*<br/>
 Address of a BSTR that receives the full path of the `WinHelp` file associated with the specified object, if any.
 
-*varChild*  
+*varChild*<br/>
 Specifies whether the Help topic to be retrieved is that of the object or one of the object's child elements. This parameter can be either CHILDID_SELF (to obtain a Help topic for the object) or a child ID (to obtain a Help topic for one of the object's child elements).
 
-*pidTopic*  
+*pidTopic*<br/>
 Identifies the Help file topic associated with the specified object. See *pidTopic* in [IAccessible::get_accHelpTopic](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_acchelptopic) in the Windows SDK.
 
 ### Return Value
@@ -2608,10 +2608,10 @@ virtual HRESULT get_accKeyboardShortcut(
 
 ### Parameters
 
-*varChild*  
+*varChild*<br/>
 Specifies whether the keyboard shortcut to be retrieved is that of the object or one of the object's child elements. This parameter can be either CHILDID_SELF (to obtain information about the object) or a child ID (to obtain information about the object's child element).
 
-*pszKeyboardShortcut*  
+*pszKeyboardShortcut*<br/>
 Address of a BSTR that receives a localized string identifying the keyboard shortcut, or NULL if no keyboard shortcut is associated with the specified object.
 
 ### Return Value
@@ -2638,10 +2638,10 @@ virtual HRESULT get_accName(
 
 ### Parameters
 
-*varChild*  
+*varChild*<br/>
 Specifies whether the name to be retrieved is that of the object or one of the object's child elements. This parameter can be either CHILDID_SELF (to obtain information about the object) or a child ID (to obtain information about the object's child element).
 
-*pszName*  
+*pszName*<br/>
 Address of a BSTR that receives a string containing the specified object's name.
 
 ### Return Value
@@ -2666,7 +2666,7 @@ virtual HRESULT get_accParent(IDispatch** ppdispParent);
 
 ### Parameters
 
-*ppdispParent*  
+*ppdispParent*<br/>
 Receives the address of the parent object's `IDispatch` interface. The variable is set to NULL if no parent exists, or if the child cannot access its parent.
 
 ### Return Value
@@ -2693,10 +2693,10 @@ virtual HRESULT get_accRole(
 
 ### Parameters
 
-*varChild*  
+*varChild*<br/>
 Specifies whether the role information to be retrieved is that of the object or one of the object's child elements. This parameter can be either CHILDID_SELF (to obtain information about the object) or a child ID (to obtain information about the object's child element).
 
-*pvarRole*  
+*pvarRole*<br/>
 Receives the role information. See *pvarRole* in [IAccessible::get_accRole](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accrole) in the Windows SDK.
 
 ### Return Value
@@ -2721,7 +2721,7 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
 
 ### Parameters
 
-*pvarChildren*  
+*pvarChildren*<br/>
 Receives information about which children are selected. See *pvarChildren* in [IAccessible::get_accSelection](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accselection) in the Windows SDK.
 
 ### Return Value
@@ -2748,10 +2748,10 @@ virtual HRESULT get_accState(
 
 ### Parameters
 
-*varChild*  
+*varChild*<br/>
 Specifies whether the state information to be retrieved is that of the object or one of the object's child elements. This parameter can be either CHILDID_SELF (to obtain information about the object) or a child ID (to obtain information about the object's child element).
 
-*pvarState*  
+*pvarState*<br/>
 Receives information about the object's state. See *pvarState* in [IAccessible::get_accState](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accstate) in the Windows SDK.
 
 ### Return Value
@@ -2778,10 +2778,10 @@ virtual HRESULT get_accValue(
 
 ### Parameters
 
-*varChild*  
+*varChild*<br/>
 Specifies whether the value information to be retrieved is that of the object or one of the object's child elements. This parameter can be either CHILDID_SELF (to obtain information about the object) or a child ID (to obtain information about the object's child element).
 
-*pszValue*  
+*pszValue*<br/>
 Address of the BSTR that receives a localized string containing the object's current value.
 
 ### Return Value
@@ -2822,7 +2822,7 @@ CWnd* GetAncestor(UINT gaFlags) const;
 
 ### Parameters
 
-*gaFlags*  
+*gaFlags*<br/>
 Specifies the ancestor to be retrieved. For a complete list of possible values, see [GetAncestor](https://msdn.microsoft.com/library/windows/desktop/ms633502).
 
 ### Return Value
@@ -2879,10 +2879,10 @@ int GetCheckedRadioButton(
 
 ### Parameters
 
-*nIDFirstButton*  
+*nIDFirstButton*<br/>
 Specifies the integer identifier of the first radio button in the group.
 
-*nIDLastButton*  
+*nIDLastButton*<br/>
 Specifies the integer identifier of the last radio button in the group.
 
 ### Return Value
@@ -2899,7 +2899,7 @@ void GetClientRect(LPRECT lpRect) const;
 
 ### Parameters
 
-*lpRect*  
+*lpRect*<br/>
 Points to a [RECT structure](../../mfc/reference/rect-structure1.md) or a `CRect` object to receive the client coordinates. The `left` and `top` members will be 0. The `right` and `bottom` members will contain the width and height of the window.
 
 ### Remarks
@@ -3012,10 +3012,10 @@ CDC* GetDCEx(
 
 ### Parameters
 
-*prgnClip*  
+*prgnClip*<br/>
 Identifies a clipping region that may be combined with the visible region of the client window.
 
-*flags*  
+*flags*<br/>
 Can have one of the following preset values:
 
 - DCX_CACHE Returns a device context from the cache rather than the OWNDC or CLASSDC window. Overrides CS_OWNDC and CS_CLASSDC.
@@ -3078,10 +3078,10 @@ CWnd* GetDescendantWindow(
 
 ### Parameters
 
-*nID*  
+*nID*<br/>
 Specifies the identifier of the control or child window to be retrieved.
 
-*bOnlyPerm*  
+*bOnlyPerm*<br/>
 Specifies whether the window to be returned can be temporary. If TRUE, only a permanent window can be returned; if FALSE, the function can return a temporary window. For more information on temporary windows see [Technical Note 3](../../mfc/tn003-mapping-of-windows-handles-to-objects.md).
 
 ### Return Value
@@ -3142,10 +3142,10 @@ void GetDlgItem(
 
 ### Parameters
 
-*nID*  
+*nID*<br/>
 Specifies the identifier of the control or child window to be retrieved.
 
-*phWnd*  
+*phWnd*<br/>
 A pointer to a child window.
 
 ### Return Value
@@ -3175,13 +3175,13 @@ UINT GetDlgItemInt(
 
 ### Parameters
 
-*nID*  
+*nID*<br/>
 Specifies the integer identifier of the dialog-box control to be translated.
 
-*lpTrans*  
+*lpTrans*<br/>
 Points to the Boolean variable that is to receive the translated flag.
 
-*bSigned*  
+*bSigned*<br/>
 Specifies whether the value to be retrieved is signed.
 
 ### Return Value
@@ -3217,16 +3217,16 @@ int GetDlgItemText(
 
 ### Parameters
 
-*nID*  
+*nID*<br/>
 Specifies the integer identifier of the control whose title is to be retrieved.
 
-*lpStr*  
+*lpStr*<br/>
 Points to the buffer to receive the control's title or text.
 
-*nMaxCount*  
+*nMaxCount*<br/>
 Specifies the maximum length (in characters) of the string to be copied to *lpStr*. If the string is longer than *nMaxCount*, it is truncated.
 
-*rString*  
+*rString*<br/>
 A reference to a [CString](../../atl-mfc-shared/reference/cstringt-class.md).
 
 ### Return Value
@@ -3343,7 +3343,7 @@ HICON GetIcon(BOOL bBigIcon) const;
 
 ### Parameters
 
-*bBigIcon*  
+*bBigIcon*<br/>
 Specifies a 32 pixel by 32 pixel icon if TRUE; specifies a 16 pixel by 16 pixel icon if FALSE.
 
 ### Return Value
@@ -3362,11 +3362,11 @@ CWnd* GetLastActivePopup() const;
 
 Identifies the most recently active pop-up window. The return value will be the window itself if any of the following conditions are met:
 
--   The window itself was most recently active.
+- The window itself was most recently active.
 
--   The window does not own any pop-up windows.
+- The window does not own any pop-up windows.
 
--   The window is not a top-level window or is owned by another window.
+- The window is not a top-level window or is owned by another window.
 
 The pointer may be temporary and should not be stored for later use.
 
@@ -3387,13 +3387,13 @@ BOOL GetLayeredWindowAttributes(
 
 ### Parameters
 
-*pcrKey*  
+*pcrKey*<br/>
 Pointer to a COLORREF value that receives the transparency color key to be used when composing the layered window. All pixels painted by the window in this color will be transparent. This can be NULL if the argument is not needed.
 
-*pbAlpha*  
+*pbAlpha*<br/>
 Pointer to a BYTE that receives the Alpha value used to describe the opacity of the layered window. When the variable referred to by *pbAlpha* is 0, the window is completely transparent. When the variable referred to by *pbAlpha* is 255, the window is opaque. This can be NULL if the argument is not needed.
 
-*pdwFlags*  
+*pdwFlags*<br/>
 Pointer to a DWORD that receives a layering flag. This can be NULL if the argument is not needed. For a complete list of possible values, see [GetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633508).
 
 ### Return Value
@@ -3439,13 +3439,13 @@ BOOL GetMenuBarInfo(
 
 ### Parameters
 
-*idObject*  
+*idObject*<br/>
 Specifies the menu object. For a list of possible values, see [GetMenuBarInfo](/windows/desktop/api/winuser/nf-winuser-getmenubarinfo).
 
-*idItem*  
+*idItem*<br/>
 Specifies the item for which to retrieve information. If this parameter is zero, the function retrieves information about the menu itself. If this parameter is 1, the function retrieves information about the first item on the menu, and so on.
 
-*pmbi*  
+*pmbi*<br/>
 Pointer to a [MENUBARINFO](/windows/desktop/api/winuser/ns-winuser-tagmenubarinfo) structure that receives the information.
 
 ### Return Value
@@ -3471,13 +3471,13 @@ COleControlSiteOrWnd* GetNextDlgGroupItem(
 
 ### Parameters
 
-*pWndCtl*  
+*pWndCtl*<br/>
 Identifies the control to be used as the starting point for the search.
 
-*bPrevious*  
+*bPrevious*<br/>
 Specifies how the function is to search the group of controls in the dialog box. If TRUE, the function searches for the previous control in the group; if FALSE, it searches for the next control in the group.
 
-*pCurSiteOrWnd*  
+*pCurSiteOrWnd*<br/>
 Identifies the `COleControlSiteOrWnd` control. For more information about `COleControlSiteOrWnd`, see **Remarks**.
 
 ### Return Value
@@ -3517,13 +3517,13 @@ COleControlSiteOrWnd* GetNextDlgTabItem(
 
 ### Parameters
 
-*pWndCtl*  
+*pWndCtl*<br/>
 Identifies the control to be used as the starting point for the search.
 
-*pCurSiteOrWnd*  
+*pCurSiteOrWnd*<br/>
 Identifies the `COleControlSiteOrWnd` control. For more information about `COleControlSiteOrWnd`, see [CWnd::GetNextDlgGroupItem](#getnextdlggroupitem).
 
-*bPrevious*  
+*bPrevious*<br/>
 Specifies how the function is to search the dialog box. If TRUE, the function searches for the previous control in the dialog box; if FALSE, it searches for the next control.
 
 ### Return Value
@@ -3544,7 +3544,7 @@ CWnd* GetNextWindow(UINT nFlag = GW_HWNDNEXT) const;
 
 ### Parameters
 
-*nFlag*  
+*nFlag*<br/>
 Specifies whether the function returns a pointer to the next window or the previous window. It can be either GW_HWNDNEXT, which returns the window that follows the `CWnd` object on the window manager's list, or GW_HWNDPREV, which returns the previous window on the window manager's list.
 
 ### Return Value
@@ -3569,7 +3569,7 @@ COleControlSite* GetOleControlSite(UINT idControl) const;
 
 ### Parameters
 
-*idControl*  
+*idControl*<br/>
 The ID of the ActiveX control.
 
 ##  <a name="getopenclipboardwindow"></a>  CWnd::GetOpenClipboardWindow
@@ -3665,13 +3665,13 @@ void GetProperty(
 
 ### Parameters
 
-*dwDispID*  
+*dwDispID*<br/>
 Identifies the property to be retrieved.
 
-*vtProp*  
+*vtProp*<br/>
 Specifies the type of the property to be retrieved. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).
 
-*pvProp*  
+*pvProp*<br/>
 Address of the variable that will that will receive the property value. It must match the type specified by *vtProp*.
 
 ### Remarks
@@ -3723,10 +3723,10 @@ static CWnd* GetSafeOwner(
 
 ### Parameters
 
-*pParent*  
+*pParent*<br/>
 A pointer to a parent `CWnd` window. May be NULL.
 
-*pWndTop*  
+*pWndTop*<br/>
 A pointer to the window that is currently on top. May be NULL.
 
 ### Return Value
@@ -3750,7 +3750,7 @@ virtual CScrollBar* GetScrollBarCtrl(int nBar) const;
 
 ### Parameters
 
-*nBar*  
+*nBar*<br/>
 Specifies the type of scroll bar. The parameter can take one of the following values:
 
 - SB_HORZ Retrieves the position of the horizontal scroll bar.
@@ -3777,10 +3777,10 @@ BOOL GetScrollBarInfo(
 
 ### Parameters
 
-*idObject*  
+*idObject*<br/>
 Specifies the menu object. For a list of possible values, see [GetScrollBarInfo](/windows/desktop/api/winuser/nf-winuser-getscrollbarinfo).
 
-*psbi*  
+*psbi*<br/>
 Pointer to a [SCROLLBARINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollbarinfo) structure that receives the information.
 
 ### Return Value
@@ -3804,7 +3804,7 @@ BOOL GetScrollInfo(
 
 ### Parameters
 
-*nBar*  
+*nBar*<br/>
 Specifies whether the scroll bar is a control or part of a window's nonclient area. If it is part of the nonclient area, *nBar* also indicates whether the scroll bar is positioned horizontally, vertically, or both. It must be one of the following:
 
 - SB_CTL Retrieves the parameters for a scroll bar control. The `m_hWnd` data member must be the handle of the scroll bar control.
@@ -3813,10 +3813,10 @@ Specifies whether the scroll bar is a control or part of a window's nonclient ar
 
 - SB_VERT Retrieves the parameters for the window's standard vertical scroll bar.
 
-*lpScrollInfo*  
+*lpScrollInfo*<br/>
 A pointer to a [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) structure. See the Windows SDK for more information about this structure.
 
-*nMask*  
+*nMask*<br/>
 Specifies the scroll bar parameters to retrieve. The default specifies a combination of SIF_PAGE, SIF_POS, SIF_TRACKPOS, and SIF_RANGE. See `SCROLLINFO` for more information on the *nMask* values.
 
 ### Return Value
@@ -3841,7 +3841,7 @@ int GetScrollLimit(int nBar);
 
 ### Parameters
 
-*nBar*  
+*nBar*<br/>
 Specifies the type of scroll bar. The parameter can take one of the following values:
 
 - SB_HORZ Retrieves the scroll limit of the horizontal scroll bar.
@@ -3862,7 +3862,7 @@ int GetScrollPos(int nBar) const;
 
 ### Parameters
 
-*nBar*  
+*nBar*<br/>
 Specifies the scroll bar to examine. The parameter can take one of the following values:
 
 - SB_HORZ Retrieves the position of the horizontal scroll bar.
@@ -3890,17 +3890,17 @@ void GetScrollRange(
 
 ### Parameters
 
-*nBar*  
+*nBar*<br/>
 Specifies the scroll bar to examine. The parameter can take one of the following values:
 
 - SB_HORZ Retrieves the position of the horizontal scroll bar.
 
 - SB_VERT Retrieves the position of the vertical scroll bar.
 
-*lpMinPos*  
+*lpMinPos*<br/>
 Points to the integer variable that is to receive the minimum position.
 
-*lpMaxPos*  
+*lpMaxPos*<br/>
 Points to the integer variable that is to receive the maximum position.
 
 ### Remarks
@@ -3931,7 +3931,7 @@ CMenu* GetSystemMenu(BOOL bRevert) const;
 
 ### Parameters
 
-*bRevert*  
+*bRevert*<br/>
 Specifies the action to be taken. If *bRevert* is FALSE, `GetSystemMenu` returns a handle to a copy of the Control menu currently in use. This copy is initially identical to the Control menu but can be modified. If *bRevert* is TRUE, `GetSystemMenu` resets the Control menu back to the default state. The previous, possibly modified, Control menu, if any, is destroyed. The return value is undefined in this case.
 
 ### Return Value
@@ -3964,7 +3964,7 @@ BOOL GetTitleBarInfo(PTITLEBARINFO pti) const;
 
 ### Parameters
 
-*pti*  
+*pti*<br/>
 Pointer to a [TITLEBARINFO](https://msdn.microsoft.com/library/windows/desktop/ms632608) structure that receives the information.
 
 ### Remarks
@@ -4053,12 +4053,12 @@ BOOL GetUpdateRect(
 
 ### Parameters
 
-*lpRect*  
+*lpRect*<br/>
 Points to a `CRect` object or [RECT structure](../../mfc/reference/rect-structure1.md) that is to receive the client coordinates of the update that encloses the update region.
 
 Set this parameter to NULL to determine whether an update region exists within the `CWnd`. If *lpRect* is NULL, the `GetUpdateRect` member function returns nonzero if an update region exists and 0 if one does not. This provides a way to determine whether a WM_PAINT message resulted from an invalid area. Do not set this parameter to NULL in Windows version 3.0 and earlier.
 
-*bErase*  
+*bErase*<br/>
 Specifies whether the background in the update region is to be erased.
 
 ### Return Value
@@ -4089,10 +4089,10 @@ int GetUpdateRgn(
 
 ### Parameters
 
-*pRgn*  
+*pRgn*<br/>
 Identifies the update region.
 
-*bErase*  
+*bErase*<br/>
 Specifies whether the background will be erased and nonclient areas of child windows will be drawn. If the value is FALSE, no drawing is done.
 
 ### Return Value
@@ -4123,7 +4123,7 @@ CWnd* GetWindow(UINT nCmd) const;
 
 ### Parameters
 
-*nCmd*  
+*nCmd*<br/>
 Specifies the relationship between `CWnd` and the returned window. It can take one of the following values:
 
 - GW_CHILD Identifies the `CWnd` first child window.
@@ -4202,7 +4202,7 @@ BOOL GetWindowInfo(PWINDOWINFO pwi) const;
 
 ### Parameters
 
-*pwi*  
+*pwi*<br/>
 A pointer to a [WINDOWINFO](https://msdn.microsoft.com/library/windows/desktop/ms632610) structure.
 
 ### Remarks
@@ -4231,7 +4231,7 @@ BOOL GetWindowPlacement(WINDOWPLACEMENT* lpwndpl) const;
 
 ### Parameters
 
-*lpwndpl*  
+*lpwndpl*<br/>
 Points to the `WINDOWPLACEMENT` structure that receives the show state and position information.
 
 ### Return Value
@@ -4252,7 +4252,7 @@ void GetWindowRect(LPRECT lpRect) const;
 
 ### Parameters
 
-*lpRect*  
+*lpRect*<br/>
 Points to a `CRect` object or a [RECT structure](../../mfc/reference/rect-structure1.md) that will receive the screen coordinates of the upper-left and lower-right corners.
 
 ### Remarks
@@ -4269,7 +4269,7 @@ int GetWindowRgn(HRGN hRgn)const;
 
 ### Parameters
 
-*hRgn*  
+*hRgn*<br/>
 A handle to a window region.
 
 ### Return Value
@@ -4307,13 +4307,13 @@ void GetWindowText(
 
 ### Parameters
 
-*lpszStringBuf*  
+*lpszStringBuf*<br/>
 Points to the buffer that is to receive the copied string of the window's title.
 
-*nMaxCount*  
+*nMaxCount*<br/>
 Specifies the maximum number of characters to be copied to the buffer, including the terminating null character. If the string is longer than the number of characters specified in *nMaxCount*, it is truncated.
 
-*rString*  
+*rString*<br/>
 A [CString](../../atl-mfc-shared/reference/cstringt-class.md) object that is to receive the copied string of the window's title.
 
 ### Return Value
@@ -4379,13 +4379,13 @@ BOOL HiliteMenuItem(
 
 ### Parameters
 
-*pMenu*  
+*pMenu*<br/>
 Identifies the top-level menu that contains the item to be highlighted.
 
-*nIDHiliteItem*  
+*nIDHiliteItem*<br/>
 Specifies the menu item to be highlighted, depending on the value of the *nHilite* parameter.
 
-*nHilite*  
+*nHilite*<br/>
 Specifies whether the menu item is highlighted or the highlight is removed. It can be a combination of MF_HILITE or MF_UNHILITE with MF_BYCOMMAND or MF_BYPOSITION. The values can be combined using the bitwise OR operator. These values have the following meanings:
 
 - MF_BYCOMMAND Interprets *nIDHiliteItem* as the menu-item ID (the default interpretation).
@@ -4416,10 +4416,10 @@ virtual void HtmlHelp(
 
 ### Parameters
 
-*dwData*  
+*dwData*<br/>
 Specifies additional data. The value used depends on the value of the *nCmd* parameter.
 
-*nCmd*  
+*nCmd*<br/>
 Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the *uCommand* parameter described in the HTML Help API Reference in the Windows SDK.
 
 ### Remarks
@@ -4448,7 +4448,7 @@ void Invalidate(BOOL bErase = TRUE);
 
 ### Parameters
 
-*bErase*  
+*bErase*<br/>
 Specifies whether the background within the update region is to be erased.
 
 ### Remarks
@@ -4475,10 +4475,10 @@ void InvalidateRect(
 
 ### Parameters
 
-*lpRect*  
+*lpRect*<br/>
 Points to a `CRect` object or a [RECT structure](../../mfc/reference/rect-structure1.md) that contains the rectangle (in client coordinates) to be added to the update region. If *lpRect* is NULL, the entire client area is added to the region.
 
-*bErase*  
+*bErase*<br/>
 Specifies whether the background within the update region is to be erased.
 
 ### Remarks
@@ -4501,10 +4501,10 @@ void InvalidateRgn(
 
 ### Parameters
 
-*pRgn*  
+*pRgn*<br/>
 A pointer to a [CRgn](../../mfc/reference/crgn-class.md) object that identifies the region to be added to the update region. The region is assumed to have client coordinates. If this parameter is NULL, the entire client area is added to the update region.
 
-*bErase*  
+*bErase*<br/>
 Specifies whether the background within the update region is to be erased.
 
 ### Remarks
@@ -4533,22 +4533,22 @@ void AFX_CDECL InvokeHelper(
 
 ### Parameters
 
-*dwDispID*  
+*dwDispID*<br/>
 Identifies the method or property to be invoked.
 
-*wFlags*  
+*wFlags*<br/>
 Flags describing the context of the call to `IDispatch::Invoke`.
 
-*vtRet*  
+*vtRet*<br/>
 Specifies the type of the return value. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).
 
-*pvRet*  
+*pvRet*<br/>
 Address of the variable that will that will receive the property value or return value. It must match the type specified by *vtRet*.
 
-*pbParamInfo*  
+*pbParamInfo*<br/>
 Pointer to a null-terminated string of bytes specifying the types of the parameters following *pbParamInfo*. For possible values, see the Remarks section for `COleDispatchDriver::InvokeHelper`.
 
-*...*  
+*...*<br/>
 Variable List of parameters, of types specified in *pbParamInfo*.
 
 ### Remarks
@@ -4572,7 +4572,7 @@ BOOL IsChild(const CWnd* pWnd) const;
 
 ### Parameters
 
-*pWnd*  
+*pWnd*<br/>
 Identifies the window to be tested.
 
 ### Return Value
@@ -4605,7 +4605,7 @@ BOOL IsDialogMessage(LPMSG lpMsg);
 
 ### Parameters
 
-*lpMsg*  
+*lpMsg*<br/>
 Points to an [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message to be checked.
 
 ### Return Value
@@ -4630,7 +4630,7 @@ UINT IsDlgButtonChecked(int nIDButton) const;
 
 ### Parameters
 
-*nIDButton*  
+*nIDButton*<br/>
 Specifies the integer identifier of the button control.
 
 ### Return Value
@@ -4745,7 +4745,7 @@ BOOL KillTimer(UINT_PTR nIDEvent);
 
 ### Parameters
 
-*nIDEvent*  
+*nIDEvent*<br/>
 The value of the timer event passed to [SetTimer](#settimer).
 
 ### Return Value
@@ -4770,7 +4770,7 @@ BOOL LoadDynamicLayoutResource(LPCTSTR lpszResourceName);
 
 ### Parameters
 
-*lpszResourceName*  
+*lpszResourceName*<br/>
 The name of the resource that contains the desired dynamic layout information for this window.
 
 ### Return Value
@@ -4832,16 +4832,16 @@ void MapWindowPoints(
 
 ### Parameters
 
-*pwndTo*  
+*pwndTo*<br/>
 Identifies the window to which points are converted. If this parameter is NULL, the points are converted to screen coordinates.
 
-*lpRect*  
+*lpRect*<br/>
 Specifies the rectangle whose points are to be converted. The first version of this function is available only for Windows 3.1 and later.
 
-*lpPoint*  
+*lpPoint*<br/>
 A pointer to an array of [POINT structure](../../mfc/reference/point-structure1.md) that contain the set of points to be converted.
 
-*nCount*  
+*nCount*<br/>
 Specifies the number of `POINT` structures in the array pointed to by *lpPoint*.
 
 ##  <a name="messagebox"></a>  CWnd::MessageBox
@@ -4857,13 +4857,13 @@ int MessageBox(
 
 ### Parameters
 
-*lpszText*  
+*lpszText*<br/>
 Points to a `CString` object or null-terminated string containing the message to be displayed.
 
-*lpszCaption*  
+*lpszCaption*<br/>
 Points to a `CString` object or null-terminated string to be used for the message-box caption. If *lpszCaption* is NULL, the default caption "Error" is used.
 
-*nType*  
+*nType*<br/>
 Specifies the contents and behavior of the message box.
 
 ### Return Value
@@ -4900,13 +4900,13 @@ BOOL ModifyStyle(
 
 ### Parameters
 
-*dwRemove*  
+*dwRemove*<br/>
 Specifies window styles to be removed during style modification.
 
-*dwAdd*  
+*dwAdd*<br/>
 Specifies window styles to be added during style modification.
 
-*nFlags*  
+*nFlags*<br/>
 Flags to be passed to [SetWindowPos](#setwindowpos), or zero if `SetWindowPos` should not be called. The default is zero. See the Remarks section for a list of preset flags.
 
 ### Return Value
@@ -4949,13 +4949,13 @@ BOOL ModifyStyleEx(
 
 ### Parameters
 
-*dwRemove*  
+*dwRemove*<br/>
 Specifies extended styles to be removed during style modification.
 
-*dwAdd*  
+*dwAdd*<br/>
 Specifies extended styles to be added during style modification.
 
-*nFlags*  
+*nFlags*<br/>
 Flags to be passed to [SetWindowPos](#setwindowpos), or zero if `SetWindowPos` should not be called. The default is zero. See the Remarks section for a list of preset flags.
 
 ### Return Value
@@ -5002,22 +5002,22 @@ void MoveWindow(
 
 ### Parameters
 
-*x*  
+*x*<br/>
 Specifies the new position of the left side of the `CWnd`.
 
-*y*  
+*y*<br/>
 Specifies the new position of the top of the `CWnd`.
 
-*nWidth*  
+*nWidth*<br/>
 Specifies the new width of the `CWnd`.
 
-*nHeight*  
+*nHeight*<br/>
 Specifies the new height of the `CWnd`.
 
-*bRepaint*  
+*bRepaint*<br/>
 Specifies whether `CWnd` is to be repainted. If TRUE, `CWnd` receives a [WM_PAINT](/windows/desktop/gdi/wm-paint) message in its [OnPaint](#onpaint) message handler as usual. If this parameter is FALSE, no repainting of any kind occurs. This applies to the client area, to the nonclient area (including the title and scroll bars), and to any part of the parent window uncovered as a result of `CWnd`'s move. When this parameter is FALSE, the application must explicitly invalidate or redraw any parts of `CWnd` and parent window that must be redrawn.
 
-*lpRect*  
+*lpRect*<br/>
 The [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](../../mfc/reference/rect-structure1.md) that specifies the new size and position.
 
 ### Remarks
@@ -5043,13 +5043,13 @@ void NotifyWinEvent(
 
 ### Parameters
 
-*event*  
+*event*<br/>
 Specifies the event that occurred. This value must be one of the [event constants](/windows/desktop/WinAuto/event-constants).
 
-*idObjectType*  
+*idObjectType*<br/>
 Identifies the kind of object that generated the event. This value is one of the predefined [object identifiers](/windows/desktop/WinAuto/object-identifiers) or a custom object ID value.
 
-*idObject*  
+*idObject*<br/>
 Identifies whether the event was generated by an object or a child element of the object. If this value is CHILDID_SELF, the event was generated by the object itself. If not, this value is the child ID of the element that generated the event.
 
 ### Remarks
@@ -5069,7 +5069,7 @@ afx_msg void OnActivate(
 
 ### Parameters
 
-*nState*  
+*nState*<br/>
 Specifies whether the `CWnd` is being activated or deactivated. It can be one of the following values:
 
 - WA_INACTIVE The window is being deactivated.
@@ -5078,10 +5078,10 @@ Specifies whether the `CWnd` is being activated or deactivated. It can be one of
 
 - WA_CLICKACTIVE The window is being activated by a mouse click.
 
-*pWndOther*  
+*pWndOther*<br/>
 Pointer to the `CWnd` being activated or deactivated. The pointer can be NULL, and it may be temporary.
 
-*bMinimized*  
+*bMinimized*<br/>
 Specifies the minimized state of the `CWnd` being activated or deactivated. A value of TRUE indicates the window is minimized.
 
 If TRUE, the `CWnd` is being activated; otherwise deactivated.
@@ -5105,10 +5105,10 @@ afx_msg void OnActivateApp(
 
 ### Parameters
 
-*bActive*  
+*bActive*<br/>
 Specifies whether the `CWnd` is being activated or deactivated. TRUE means the `CWnd` is being activated. FALSE means the `CWnd` is being deactivated.
 
-*dwThreadID*  
+*dwThreadID*<br/>
 Specifies the value of the thread ID. If *bActive* is TRUE, *dwThreadID* identifies the thread that owns the `CWnd` being deactivated. If *bActive* is FALSE, *dwThreadID* identifies the thread that owns the `CWnd` being activated.
 
 ### Remarks
@@ -5129,13 +5129,13 @@ virtual BOOL OnAmbientProperty(
 
 ### Parameters
 
-*pSite*  
+*pSite*<br/>
 Pointer to the site of the control that requested the ambient property.
 
-*dispid*  
+*dispid*<br/>
 The dispatch ID of the requested ambient property.
 
-*pvar*  
+*pvar*<br/>
 Pointer to a caller-allocated `VARIANT` structure, through which the ambient property's value will be returned.
 
 ### Return Value
@@ -5186,10 +5186,10 @@ afx_msg void OnAskCbFormatName(
 
 ### Parameters
 
-*nMaxCount*  
+*nMaxCount*<br/>
 Specifies the maximum number of bytes to copy.
 
-*lpszString*  
+*lpszString*<br/>
 Points to the buffer where the copy of the format name is to be stored.
 
 ### Remarks
@@ -5225,7 +5225,7 @@ afx_msg void OnCaptureChanged(CWnd* pWnd);
 
 ### Parameters
 
-*pWnd*  
+*pWnd*<br/>
 A pointer to the window to gain mouse capture
 
 ### Remarks
@@ -5249,10 +5249,10 @@ afx_msg void OnChangeCbChain(
 
 ### Parameters
 
-*hWndRemove*  
+*hWndRemove*<br/>
 Specifies the window handle that is being removed from the Clipboard-viewer chain.
 
-*hWndAfter*  
+*hWndAfter*<br/>
 Specifies the window handle that follows the window being removed from the Clipboard-viewer chain.
 
 ### Remarks
@@ -5274,7 +5274,7 @@ afx_msg void OnChangeUIState(
 
 ### Parameters
 
-*nAction*  
+*nAction*<br/>
 Specifies the action to be taken. Can be one of the following values:
 
 - UIS_CLEAR The UI state element (specified by *nUIElement*) should be hidden.
@@ -5283,7 +5283,7 @@ Specifies the action to be taken. Can be one of the following values:
 
 - UIS_SET The UI state element (specified by *nUIElement*) should be visible.
 
-*nUIElement*  
+*nUIElement*<br/>
 Specifies which UI state elements are affected or the style of the control. Can be one of the following values:
 
 - UISF_HIDEACCEL Keyboard accelerators.
@@ -5309,13 +5309,13 @@ afx_msg void OnChar(
 
 ### Parameters
 
-*nChar*  
+*nChar*<br/>
 Contains the character code value of the key.
 
-*nRepCnt*  
+*nRepCnt*<br/>
 Contains the repeat count, the number of times the keystroke is repeated when user holds down the key.
 
-*nFlags*  
+*nFlags*<br/>
 Contains the scan code, key-transition code, previous key state, and context code, as shown in the following list:
 
 |Value|Meaning|
@@ -5352,13 +5352,13 @@ afx_msg int OnCharToItem(
 
 ### Parameters
 
-*nChar*  
+*nChar*<br/>
 Specifies the value of the key pressed by the user.
 
-*pListBox*  
+*pListBox*<br/>
 Specifies a pointer to the list box. It may be temporary.
 
-*nIndex*  
+*nIndex*<br/>
 Specifies the current caret position.
 
 ### Return Value
@@ -5392,16 +5392,16 @@ virtual BOOL OnChildNotify(
 
 ### Parameters
 
-*message*  
+*message*<br/>
 A Windows message number sent to a parent window.
 
-*wParam*  
+*wParam*<br/>
 The *wparam* associated with the message.
 
-*lParam*  
+*lParam*<br/>
 The *lparam* associated with the message.
 
-*pLResult*  
+*pLResult*<br/>
 A pointer to a value to be returned from the parent's window procedure. This pointer will be NULL if no return value is expected.
 
 ### Return Value
@@ -5472,10 +5472,10 @@ virtual BOOL OnCommand(
 
 ### Parameters
 
-*wParam*  
+*wParam*<br/>
 The low-order word of *wParam* identifies the command ID of the menu item, control, or accelerator. The high-order word of *wParam* specifies the notification message if the message is from a control. If the message is from an accelerator, the high-order word is 1. If the message is from a menu, the high-order word is 0.
 
-*lParam*  
+*lParam*<br/>
 Identifies the control that sends the message if the message is from a control. Otherwise, *lParam* is 0.
 
 ### Return Value
@@ -5501,7 +5501,7 @@ afx_msg void OnCompacting(UINT nCpuTime);
 
 ### Parameters
 
-*nCpuTime*  
+*nCpuTime*<br/>
 Specifies the ratio of CPU time currently spent by Windows compacting memory to CPU time spent performing other operations. For example, 8000h represents 50 percent of CPU time spent compacting memory.
 
 ### Remarks
@@ -5525,10 +5525,10 @@ afx_msg int OnCompareItem(
 
 ### Parameters
 
-*nIDCtl*  
+*nIDCtl*<br/>
 The identifier of the control that sent the WM_COMPAREITEM message.
 
-*lpCompareItemStruct*  
+*lpCompareItemStruct*<br/>
 Contains a long pointer to a [COMPAREITEMSTRUCT](../../mfc/reference/compareitemstruct-structure.md) data structure that contains the identifiers and application-supplied data for two items in the combo or list box.
 
 ### Return Value
@@ -5579,10 +5579,10 @@ afx_msg void OnContextMenu(
 
 ### Parameters
 
-*pWnd*  
+*pWnd*<br/>
 Handle to the window in which the user right clicked the mouse. This can be a child window of the window receiving the message. For more information about processing this message, see the Remarks section.
 
-*pos*  
+*pos*<br/>
 Position of the cursor, in screen coordinates, at the time of the mouse click.
 
 ### Remarks
@@ -5603,10 +5603,10 @@ afx_msg BOOL OnCopyData(
 
 ### Parameters
 
-*pWnd*  
+*pWnd*<br/>
 A pointer to a `CWnd` object that is sending the data.
 
-*pCopyDataStruct*  
+*pCopyDataStruct*<br/>
 A pointer to a [COPYDATASTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcopydatastruct) structure that contains the data being sent.
 
 ### Return Value
@@ -5636,7 +5636,7 @@ afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 
 ### Parameters
 
-*lpCreateStruct*  
+*lpCreateStruct*<br/>
 Points to a [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) structure that contains information about the `CWnd` object being created.
 
 ### Return Value
@@ -5667,13 +5667,13 @@ afx_msg HBRUSH OnCtlColor(
 
 ### Parameters
 
-*pDC*  
+*pDC*<br/>
 Contains a pointer to the display context for the child window. May be temporary.
 
-*pWnd*  
+*pWnd*<br/>
 Contains a pointer to the control asking for the color. May be temporary.
 
-*nCtlColor*  
+*nCtlColor*<br/>
 Contains one of the following values, specifying the type of control:
 
 - CTLCOLOR_BTN Button control
@@ -5724,13 +5724,13 @@ afx_msg void OnDeadChar(
 
 ### Parameters
 
-*nChar*  
+*nChar*<br/>
 Specifies the dead-key character value.
 
-*nRepCnt*  
+*nRepCnt*<br/>
 Specifies the repeat count.
 
-*nFlags*  
+*nFlags*<br/>
 Specifies the scan code, key-transition code, previous key state, and context code, as shown in the following list:
 
 |Value|Description|
@@ -5768,10 +5768,10 @@ afx_msg void OnDeleteItem(
 
 ### Parameters
 
-*nIDCtl*  
+*nIDCtl*<br/>
 The identifier of the control that sent the WM_DELETEITEM message.
 
-*lpDeleteItemStruct*  
+*lpDeleteItemStruct*<br/>
 Specifies a long pointer to a [DELETEITEMSTRUCT](../../mfc/reference/deleteitemstruct-structure.md) data structure that contains information about the deleted list box item.
 
 ### Remarks
@@ -5817,10 +5817,10 @@ afx_msg BOOL OnDeviceChange(
 
 ### Parameters
 
-*nEventType*  
+*nEventType*<br/>
 An event type. See the Remarks section for a description of the available values
 
-*dwData*  
+*dwData*<br/>
 The address of a structure that contains event-specific data. Its meaning depends on the given event.
 
 ### Remarks
@@ -5860,7 +5860,7 @@ afx_msg void OnDevModeChange(LPTSTR lpDeviceName);
 
 ### Parameters
 
-*lpDeviceName*  
+*lpDeviceName*<br/>
 Points to the device name specified in the Windows initialization file, WIN.INI.
 
 ### Remarks
@@ -5901,19 +5901,19 @@ virtual void OnDrawIconicThumbnailOrLivePreview(
 
 ### Parameters
 
-*dc*  
+*dc*<br/>
 Specifies the device context.
 
-*rect*  
+*rect*<br/>
 Specifies the bounding rectangle of the area to render.
 
-*szRequiredThumbnailSize*  
+*szRequiredThumbnailSize*<br/>
 Specifies the size of the target thumbnail. Should be ignored if *bIsThumbnail* is FALSE.
 
-*bIsThumbnail*  
+*bIsThumbnail*<br/>
 Specifies whether this method is called for iconic thumbnail or live preview (peek).
 
-*bAlphaChannelSet*  
+*bAlphaChannelSet*<br/>
 [out] Set it to TRUE if your implementation initializes the alpha channel of a bitmap selected in *dc*.
 
 ### Remarks
@@ -5932,10 +5932,10 @@ afx_msg void OnDrawItem(
 
 ### Parameters
 
-*nIDCtl*  
+*nIDCtl*<br/>
 Contains the identifier of the control that sent the WM_DRAWITEM message. If a menu sent the message, *nIDCtl* contains 0.
 
-*lpDrawItemStruct*  
+*lpDrawItemStruct*<br/>
 Specifies a long pointer to a `DRAWITEMSTRUCT` data structure that contains information about the item to be drawn and the type of drawing required.
 
 ### Remarks
@@ -5959,7 +5959,7 @@ afx_msg void OnDropFiles(HDROP hDropInfo);
 
 ### Parameters
 
-*hDropInfo*  
+*hDropInfo*<br/>
 A pointer to an internal data structure that describes the dropped files. This handle is used by the `DragFinish`, `DragQueryFile`, and `DragQueryPoint` Windows functions to retrieve information about the dropped files.
 
 ### Remarks
@@ -5979,7 +5979,7 @@ afx_msg void OnEnable(BOOL bEnable);
 
 ### Parameters
 
-*bEnable*  
+*bEnable*<br/>
 Specifies whether the `CWnd` object has been enabled or disabled. This parameter is TRUE if the `CWnd` has been enabled; it is FALSE if the `CWnd` has been disabled.
 
 ### Remarks
@@ -5999,7 +5999,7 @@ afx_msg void OnEndSession(BOOL bEnding);
 
 ### Parameters
 
-*bEnding*  
+*bEnding*<br/>
 Specifies whether or not the session is being ended. It is TRUE if the session is being ended; otherwise FALSE.
 
 ### Remarks
@@ -6025,14 +6025,14 @@ afx_msg void OnEnterIdle(
 
 ### Parameters
 
-*nWhy*  
+*nWhy*<br/>
 Specifies whether the message is the result of a dialog box or a menu being displayed. This parameter can be one of the following values:
 
 - MSGF_DIALOGBOX The system is idle because a dialog box is being displayed.
 
 - MSGF_MENU The system is idle because a menu is being displayed.
 
-*pWho*  
+*pWho*<br/>
 Specifies a pointer to the dialog box (if *nWhy* is MSGF_DIALOGBOX), or the window that contains the displayed menu (if *nWhy* is MSGF_MENU). This pointer may be temporary and should not be stored for later use.
 
 ### Remarks
@@ -6052,7 +6052,7 @@ afx_msg void OnEnterMenuLoop(BOOL bIsTrackPopupMenu);
 
 ### Parameters
 
-*bIsTrackPopupMenu*  
+*bIsTrackPopupMenu*<br/>
 Specifies whether the menu involved is a popup menu. Has a nonzero value if the function is successful; otherwise 0.
 
 ### Remarks
@@ -6087,7 +6087,7 @@ afx_msg BOOL OnEraseBkgnd(CDC* pDC);
 
 ### Parameters
 
-*pDC*  
+*pDC*<br/>
 Specifies the device-context object.
 
 ### Return Value
@@ -6119,7 +6119,7 @@ afx_msg void OnExitMenuLoop(BOOL bIsTrackPopupMenu);
 
 ### Parameters
 
-*bIsTrackPopupMenu*  
+*bIsTrackPopupMenu*<br/>
 Specifies whether the menu involved is a pop-up menu. Has a nonzero value if the function is successful; otherwise 0.
 
 ### Remarks
@@ -6208,7 +6208,7 @@ afx_msg void OnGetMinMaxInfo(MINMAXINFO* lpMMI);
 
 ### Parameters
 
-*lpMMI*  
+*lpMMI*<br/>
 Points to a `MINMAXINFO` structure that contains information about a window's maximized size and position and its minimum and maximum tracking size. For more about this structure, see the [MINMAXINFO](../../mfc/reference/minmaxinfo-structure.md) structure.
 
 ### Remarks
@@ -6266,7 +6266,7 @@ afx_msg BOOL OnHelpInfo(HELPINFO* lpHelpInfo);
 
 ### Parameters
 
-*lpHelpInfo*  
+*lpHelpInfo*<br/>
 Pointer to a [HELPINFO](/windows/desktop/api/winuser/ns-winuser-taghelpinfo) structure that contains information about the menu item, control, dialog box, or window for which help is requested.
 
 ### Return Value
@@ -6328,7 +6328,7 @@ afx_msg void OnHScroll(
 
 ### Parameters
 
-*nSBCode*  
+*nSBCode*<br/>
 Specifies a scroll-bar code that indicates the user's scrolling request. This parameter can be one of the following:
 
 - SB_LEFT Scroll to far left.
@@ -6349,10 +6349,10 @@ Specifies a scroll-bar code that indicates the user's scrolling request. This pa
 
 - SB_THUMBTRACK Drag scroll box to specified position. The current position is specified by the *nPos* parameter.
 
-*nPos*  
+*nPos*<br/>
 Specifies the scroll-box position if the scroll-bar code is SB_THUMBPOSITION or SB_THUMBTRACK; otherwise, not used. Depending on the initial scroll range, *nPos* may be negative and should be cast to an **int** if necessary.
 
-*pScrollBar*  
+*pScrollBar*<br/>
 If the scroll message came from a scroll-bar control, contains a pointer to the control. If the user clicked a window's scroll bar, this parameter is NULL. The pointer may be temporary and should not be stored for later use.
 
 ### Remarks
@@ -6381,10 +6381,10 @@ afx_msg void OnHScrollClipboard(
 
 ### Parameters
 
-*pClipAppWnd*  
+*pClipAppWnd*<br/>
 Specifies a pointer to a Clipboard-viewer window. The pointer may be temporary and should not be stored for later use.
 
-*nSBCode*  
+*nSBCode*<br/>
 Specifies one of the following scroll-bar codes in the low-order word:
 
 - SB_BOTTOM Scroll to lower right.
@@ -6403,7 +6403,7 @@ Specifies one of the following scroll-bar codes in the low-order word:
 
 - SB_TOP Scroll to upper left.
 
-*nPos*  
+*nPos*<br/>
 Contains the scroll-box position if the scroll-bar code is SB_THUMBPOSITION; otherwise not used.
 
 ### Remarks
@@ -6423,7 +6423,7 @@ afx_msg void OnIconEraseBkgnd(CDC* pDC);
 
 ### Parameters
 
-*pDC*  
+*pDC*<br/>
 Specifies the device-context object of the icon. May be temporary and should not be stored for later use.
 
 ### Remarks
@@ -6445,7 +6445,7 @@ afx_msg void OnInitMenu(CMenu* pMenu);
 
 ### Parameters
 
-*pMenu*  
+*pMenu*<br/>
 Specifies the menu to be initialized. May be temporary and should not be stored for later use.
 
 ### Remarks
@@ -6470,13 +6470,13 @@ afx_msg void OnInitMenuPopup(
 
 ### Parameters
 
-*pPopupMenu*  
+*pPopupMenu*<br/>
 Specifies the menu object of the pop-up menu. May be temporary and should not be stored for later use.
 
-*nIndex*  
+*nIndex*<br/>
 Specifies the index of the pop-up menu in the main menu.
 
-*bSysMenu*  
+*bSysMenu*<br/>
 TRUE if the pop-up menu is the Control menu; otherwise FALSE.
 
 ### Remarks
@@ -6568,13 +6568,13 @@ afx_msg void OnKeyDown(
 
 ### Parameters
 
-*nChar*  
+*nChar*<br/>
 Specifies the virtual key code of the given key. For a list of standard virtual key codes, see Winuser.h
 
-*nRepCnt*  
+*nRepCnt*<br/>
 Repeat count (the number of times the keystroke is repeated as a result of the user holding down the key).
 
-*nFlags*  
+*nFlags*<br/>
 Specifies the scan code, key-transition code, previous key state, and context code, as shown in the following list:
 
 |Value|Description|
@@ -6613,13 +6613,13 @@ afx_msg void OnKeyUp(
 
 ### Parameters
 
-*nChar*  
+*nChar*<br/>
 Specifies the virtual key code of the given key. For a list of standard virtual key codes, see Winuser.h
 
-*nRepCnt*  
+*nRepCnt*<br/>
 Repeat count (the number of times the keystroke is repeated as a result of the user holding down the key).
 
-*nFlags*  
+*nFlags*<br/>
 Specifies the scan code, key-transition code, previous key state, and context code, as shown in the following list:
 
 |Value|Description|
@@ -6653,7 +6653,7 @@ afx_msg void OnKillFocus(CWnd* pNewWnd);
 
 ### Parameters
 
-*pNewWnd*  
+*pNewWnd*<br/>
 Specifies a pointer to the window that receives the input focus (may be NULL or may be temporary).
 
 ### Remarks
@@ -6675,7 +6675,7 @@ afx_msg void OnLButtonDblClk(
 
 ### Parameters
 
-*nFlags*  
+*nFlags*<br/>
 Indicates whether various virtual keys are down. This parameter can be any combination of the following values:
 
 - MK_CONTROL Set if the CTRL key is down.
@@ -6688,7 +6688,7 @@ Indicates whether various virtual keys are down. This parameter can be any combi
 
 - MK_SHIFT Set if the SHIFT key is down.
 
-*point*  
+*point*<br/>
 Specifies the x- and y-coordinate of the cursor. These coordinates are always relative to the upper-left corner of the window.
 
 ### Remarks
@@ -6710,7 +6710,7 @@ afx_msg void OnLButtonDown(
 
 ### Parameters
 
-*nFlags*  
+*nFlags*<br/>
 Indicates whether various virtual keys are down. This parameter can be any combination of the following values:
 
 - MK_CONTROL Set if the CTRL key is down.
@@ -6723,7 +6723,7 @@ Indicates whether various virtual keys are down. This parameter can be any combi
 
 - MK_SHIFT Set if the SHIFT key is down.
 
-*point*  
+*point*<br/>
 Specifies the x- and y-coordinate of the cursor. These coordinates are always relative to the upper-left corner of the window.
 
 ### Remarks
@@ -6743,7 +6743,7 @@ afx_msg void OnLButtonUp(
 
 ### Parameters
 
-*nFlags*  
+*nFlags*<br/>
 Indicates whether various virtual keys are down. This parameter can be any combination of the following values:
 
 - MK_CONTROL Set if the CTRL key is down.
@@ -6754,7 +6754,7 @@ Indicates whether various virtual keys are down. This parameter can be any combi
 
 - MK_SHIFT Set if the SHIFT key is down.
 
-*point*  
+*point*<br/>
 Specifies the x- and y-coordinate of the cursor. These coordinates are always relative to the upper-left corner of the window.
 
 ### Remarks
@@ -6774,7 +6774,7 @@ afx_msg void OnMButtonDblClk(
 
 ### Parameters
 
-*nFlags*  
+*nFlags*<br/>
 Indicates whether various virtual keys are down. This parameter can be any combination of the following values:
 
 - MK_CONTROL Set if the CTRL key is down.
@@ -6787,7 +6787,7 @@ Indicates whether various virtual keys are down. This parameter can be any combi
 
 - MK_SHIFT Set if the SHIFT key is down.
 
-*point*  
+*point*<br/>
 Specifies the x- and y-coordinate of the cursor. These coordinates are always relative to the upper-left corner of the window.
 
 ### Remarks
@@ -6809,7 +6809,7 @@ afx_msg void OnMButtonDown(
 
 ### Parameters
 
-*nFlags*  
+*nFlags*<br/>
 Indicates whether various virtual keys are down. This parameter can be any combination of the following values:
 
 - MK_CONTROL Set if the CTRL key is down.
@@ -6822,7 +6822,7 @@ Indicates whether various virtual keys are down. This parameter can be any combi
 
 - MK_SHIFT Set if the SHIFT key is down.
 
-*point*  
+*point*<br/>
 Specifies the x- and y-coordinate of the cursor. These coordinates are always relative to the upper-left corner of the window.
 
 ### Remarks
@@ -6842,7 +6842,7 @@ afx_msg void OnMButtonUp(
 
 ### Parameters
 
-*nFlags*  
+*nFlags*<br/>
 Indicates whether various virtual keys are down. This parameter can be any combination of the following values:
 
 - MK_CONTROL Set if the CTRL key is down.
@@ -6853,7 +6853,7 @@ Indicates whether various virtual keys are down. This parameter can be any combi
 
 - MK_SHIFT Set if the SHIFT key is down.
 
-*point*  
+*point*<br/>
 Specifies the x- and y-coordinate of the cursor. These coordinates are always relative to the upper-left corner of the window.
 
 ### Remarks
@@ -6874,13 +6874,13 @@ afx_msg void OnMDIActivate(
 
 ### Parameters
 
-*bActivate*  
+*bActivate*<br/>
 TRUE if the child is being activated and FALSE if it is being deactivated.
 
-*pActivateWnd*  
+*pActivateWnd*<br/>
 Contains a pointer to the MDI child window to be activated. When received by an MDI child window, *pActivateWnd* contains a pointer to the child window being activated. This pointer may be temporary and should not be stored for later use.
 
-*pDeactivateWnd*  
+*pDeactivateWnd*<br/>
 Contains a pointer to the MDI child window being deactivated. This pointer may be temporary and should not be stored for later use.
 
 ### Remarks
@@ -6901,10 +6901,10 @@ afx_msg void OnMeasureItem(
 
 ### Parameters
 
-*nIDCtl*  
+*nIDCtl*<br/>
 The ID of the control.
 
-*lpMeasureItemStruct*  
+*lpMeasureItemStruct*<br/>
 Points to a [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) data structure that contains the dimensions of the owner-draw control.
 
 ### Remarks
@@ -6935,13 +6935,13 @@ afx_msg LRESULT OnMenuChar(
 
 ### Parameters
 
-*nChar*  
+*nChar*<br/>
 Depending on the build settings, specifies the ANSI or Unicode character that the user pressed.
 
-*nFlags*  
+*nFlags*<br/>
 Contains the MF_POPUP flag if the menu is a pop-up menu. It contains the MF_SYSMENU flag if the menu is a Control menu.
 
-*pMenu*  
+*pMenu*<br/>
 Contains a pointer to the selected `CMenu`. The pointer may be temporary and should not be stored.
 
 ### Return Value
@@ -7059,10 +7059,10 @@ afx_msg void OnMenuSelect(
 
 ### Parameters
 
-*nItemID*  
+*nItemID*<br/>
 Identifies the item selected. If the selected item is a menu item, *nItemID* contains the menu-item ID. If the selected item contains a pop-up menu, *nItemID* contains the pop-up menu index, and *hSysMenu* contains the handle of the main (clicked-on) menu.
 
-*nFlags*  
+*nFlags*<br/>
 Contains a combination of the following menu flags:
 
 - MF_BITMAP Item is a bitmap.
@@ -7083,7 +7083,7 @@ Contains a combination of the following menu flags:
 
 - MF_SYSMENU Item is contained in the Control menu.
 
-*hSysMenu*  
+*hSysMenu*<br/>
 If *nFlags* contains MF_SYSMENU, identifies the menu associated with the message. If *nFlags* contains MF_POPUP, identifies the handle of the main menu. If *nFlags* contains neither MF_SYSMENU nor MF_POPUP, it is unused.
 
 ### Remarks
@@ -7106,13 +7106,13 @@ afx_msg int OnMouseActivate(
 
 ### Parameters
 
-*pDesktopWnd*  
+*pDesktopWnd*<br/>
 Specifies a pointer to the top-level parent window of the window being activated. The pointer may be temporary and should not be stored.
 
-*nHitTest*  
+*nHitTest*<br/>
 Specifies the [hit-test](#onnchittest) area code. A hit test is a test that determines the location of the cursor.
 
-*message*  
+*message*<br/>
 Specifies the mouse message number.
 
 ### Return Value
@@ -7229,7 +7229,7 @@ afx_msg void OnMouseMove(
 
 ### Parameters
 
-*nFlags*  
+*nFlags*<br/>
 Indicates whether various virtual keys are down. This parameter can be any combination of the following values:
 
 - MK_CONTROL Set if the CTRL key is down.
@@ -7242,7 +7242,7 @@ Indicates whether various virtual keys are down. This parameter can be any combi
 
 - MK_SHIFT Set if the SHIFT key is down.
 
-*point*  
+*point*<br/>
 Specifies the x- and y-coordinate of the cursor. These coordinates are always relative to the upper-left corner of the window.
 
 ### Remarks
@@ -7265,7 +7265,7 @@ afx_msg BOOL OnMouseWheel(
 
 ### Parameters
 
-*nFlags*  
+*nFlags*<br/>
 Indicates whether various virtual keys are down. This parameter can be any combination of the following values:
 
 - MK_CONTROL Set if the CTRL key is down.
@@ -7278,10 +7278,10 @@ Indicates whether various virtual keys are down. This parameter can be any combi
 
 - MK_SHIFT Set if the SHIFT key is down.
 
-*zDelta*  
+*zDelta*<br/>
 Indicates distance rotated. The *zDelta* value is expressed in multiples or divisions of WHEEL_DELTA, which is 120. A value less than zero indicates rotating back (toward the user) while a value greater than zero indicates rotating forward (away from the user). The user can reverse this response by changing the Wheel setting in the mouse software. See the Remarks for more information about this parameter.
 
-*pt*  
+*pt*<br/>
 Specifies the x- and y-coordinate of the cursor. These coordinates are always relative to the upper-left corner of the screen.
 
 ### Return Value
@@ -7313,10 +7313,10 @@ afx_msg void OnMove(
 
 ### Parameters
 
-*x*  
+*x*<br/>
 Specifies the new x-coordinate location of the upper-left corner of the client area. This new location is given in screen coordinates for overlapped and pop-up windows, and parent-client coordinates for child windows.
 
-*y*  
+*y*<br/>
 Specifies the new y-coordinate location of the upper-left corner of the client area. This new location is given in screen coordinates for overlapped and pop-up windows, and parent-client coordinates for child windows.
 
 ### Remarks
@@ -7336,10 +7336,10 @@ afx_msg void OnMoving(
 
 ### Parameters
 
-*nSide*  
+*nSide*<br/>
 The edge of window to be moved.
 
-*lpRect*  
+*lpRect*<br/>
 Address of the [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT structure](../../mfc/reference/rect-structure1.md) that will contain the item's coordinates.
 
 ### Remarks
@@ -7357,7 +7357,7 @@ afx_msg BOOL OnNcActivate(BOOL bActive);
 
 ### Parameters
 
-*bActive*  
+*bActive*<br/>
 Specifies when a caption bar or icon needs to be changed to indicate an active or inactive state. The *bActive* parameter is TRUE if an active caption or icon is to be drawn. It is FALSE for an inactive caption or icon.
 
 ### Return Value
@@ -7383,10 +7383,10 @@ afx_msg void OnNcCalcSize(
 
 ### Parameters
 
-*bCalcValidRects*  
+*bCalcValidRects*<br/>
 Specifies whether the application should specify which part of the client area contains valid information. Windows will copy the valid information to the specified area within the new client area. If this parameter is TRUE, the application should specify which part of the client area is valid.
 
-*lpncsp*  
+*lpncsp*<br/>
 Points to a [NCCALCSIZE_PARAMS](../../mfc/reference/nccalcsize-params-structure.md) data structure that contains information an application can use to calculate the new size and position of the `CWnd` rectangle (including client area, borders, caption, scroll bars, and so on).
 
 ### Remarks
@@ -7412,7 +7412,7 @@ afx_msg BOOL OnNcCreate(LPCREATESTRUCT lpCreateStruct);
 
 ### Parameters
 
-*lpCreateStruct*  
+*lpCreateStruct*<br/>
 Points to the [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) data structure for `CWnd`.
 
 ### Return Value
@@ -7448,7 +7448,7 @@ afx_msg LRESULT OnNcHitTest(CPoint point);
 
 ### Parameters
 
-*point*  
+*point*<br/>
 Contains the x- and y-coordinates of the cursor. These coordinates are always screen coordinates.
 
 ### Return Value
@@ -7472,10 +7472,10 @@ afx_msg void OnNcLButtonDblClk(
 
 ### Parameters
 
-*nHitTest*  
+*nHitTest*<br/>
 Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
 
-*point*  
+*point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.
 
 ### Remarks
@@ -7497,10 +7497,10 @@ afx_msg void OnNcLButtonDown(
 
 ### Parameters
 
-*nHitTest*  
+*nHitTest*<br/>
 Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
 
-*point*  
+*point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.
 
 ### Remarks
@@ -7522,10 +7522,10 @@ afx_msg void OnNcLButtonUp(
 
 ### Parameters
 
-*nHitTest*  
+*nHitTest*<br/>
 Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
 
-*point*  
+*point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.
 
 ### Remarks
@@ -7547,10 +7547,10 @@ afx_msg void OnNcMButtonDblClk(
 
 ### Parameters
 
-*nHitTest*  
+*nHitTest*<br/>
 Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
 
-*point*  
+*point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.
 
 ### Remarks
@@ -7570,10 +7570,10 @@ afx_msg void OnNcMButtonDown(
 
 ### Parameters
 
-*nHitTest*  
+*nHitTest*<br/>
 Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
 
-*point*  
+*point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.
 
 ### Remarks
@@ -7593,10 +7593,10 @@ afx_msg void OnNcMButtonUp(
 
 ### Parameters
 
-*nHitTest*  
+*nHitTest*<br/>
 Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
 
-*point*  
+*point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.
 
 ### Remarks
@@ -7655,10 +7655,10 @@ afx_msg void OnNcMouseMove(
 
 ### Parameters
 
-*nHitTest*  
+*nHitTest*<br/>
 Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
 
-*point*  
+*point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.
 
 ### Remarks
@@ -7694,10 +7694,10 @@ afx_msg void OnNcRButtonDblClk(
 
 ### Parameters
 
-*nHitTest*  
+*nHitTest*<br/>
 Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
 
-*point*  
+*point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.
 
 ### Remarks
@@ -7717,10 +7717,10 @@ afx_msg void OnNcRButtonDown(
 
 ### Parameters
 
-*nHitTest*  
+*nHitTest*<br/>
 Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
 
-*point*  
+*point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.
 
 ### Remarks
@@ -7740,10 +7740,10 @@ afx_msg void OnNcRButtonUp(
 
 ### Parameters
 
-*nHitTest*  
+*nHitTest*<br/>
 Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
 
-*point*  
+*point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.
 
 ### Remarks
@@ -7887,13 +7887,13 @@ virtual BOOL OnNotify(
 
 ### Parameters
 
-*wParam*  
+*wParam*<br/>
 Identifies the control that sends the message if the message is from a control. Otherwise, *wParam* is 0.
 
-*lParam*  
+*lParam*<br/>
 Pointer to a notification message (`NMHDR`) structure that contains the notification code and additional information. For some notification messages, this parameter points to a larger structure that has the `NMHDR` structure as its first member.
 
-*pResult*  
+*pResult*<br/>
 Pointer to an LRESULT variable in which to store the result code if the message is handled.
 
 ### Return Value
@@ -7978,10 +7978,10 @@ afx_msg void OnPaintClipboard(
 
 ### Parameters
 
-*pClipAppWnd*  
+*pClipAppWnd*<br/>
 Specifies a pointer to the Clipboard-application window. The pointer may be temporary and should not be stored for later use.
 
-*hPaintStruct*  
+*hPaintStruct*<br/>
 Identifies a [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) data structure that defines what part of the client area to paint.
 
 ### Remarks
@@ -8003,7 +8003,7 @@ afx_msg void OnPaletteChanged(CWnd* pFocusWnd);
 
 ### Parameters
 
-*pFocusWnd*  
+*pFocusWnd*<br/>
 Specifies a pointer to the window that caused the system palette to change. The pointer may be temporary and should not be stored.
 
 ### Remarks
@@ -8027,7 +8027,7 @@ afx_msg void OnPaletteIsChanging(CWnd* pRealizeWnd);
 
 ### Parameters
 
-*pRealizeWnd*  
+*pRealizeWnd*<br/>
 Specifies the window that is about to realize its logical palette.
 
 ### Remarks
@@ -8046,7 +8046,7 @@ afx_msg void OnParentNotify(
 
 ### Parameters
 
-*message*  
+*message*<br/>
 Specifies the event for which the parent is being notified and the identifier of the child window. The event is the low-order word of *message*. If the event is WM_CREATE or WM_DESTROY, the high-order word of *message* is the identifier of the child window; otherwise, the high-order word is undefined. The event (low-order word of *message*) can be any of these values:
 
 - WM_CREATE The child window is being created.
@@ -8059,7 +8059,7 @@ Specifies the event for which the parent is being notified and the identifier of
 
 - WM_RBUTTONDOWN The user has placed the mouse cursor over the child window and clicked the right mouse button.
 
-*lParam*  
+*lParam*<br/>
 If the event (low-order word) of *message* is WM_CREATE or WM_DESTROY, *lParam* specifies the window handle of the child window; otherwise *lParam* contains the x and y coordinates of the cursor. The x coordinate is in the low-order word and the y coordinate is in the high-order word.
 
 ### Remarks
@@ -8221,7 +8221,7 @@ afx_msg void OnRButtonDblClk(
 
 ### Parameters
 
-*nFlags*  
+*nFlags*<br/>
 Indicates whether various virtual keys are down. This parameter can be any combination of the following values:
 
 - MK_CONTROL Set if CTRL key is down.
@@ -8234,7 +8234,7 @@ Indicates whether various virtual keys are down. This parameter can be any combi
 
 - MK_SHIFT Set if SHIFT key is down.
 
-*point*  
+*point*<br/>
 Specifies the x and y coordinates of the cursor. These coordinates are always relative to the upper-left corner of the window.
 
 ### Remarks
@@ -8256,7 +8256,7 @@ afx_msg void OnRButtonDown(
 
 ### Parameters
 
-*nFlags*  
+*nFlags*<br/>
 Indicates whether various virtual keys are down. This parameter can be any combination of the following values:
 
 - MK_CONTROL Set if CTRL key is down.
@@ -8269,7 +8269,7 @@ Indicates whether various virtual keys are down. This parameter can be any combi
 
 - MK_SHIFT Set if SHIFT key is down.
 
-*point*  
+*point*<br/>
 Specifies the x and y coordinates of the cursor. These coordinates are always relative to the upper-left corner of the window.
 
 ### Remarks
@@ -8288,7 +8288,7 @@ afx_msg void OnRButtonUp(
 
 ### Parameters
 
-*nFlags*  
+*nFlags*<br/>
 Indicates whether various virtual keys are down. This parameter can be any combination of the following values:
 
 - MK_CONTROL Set if CTRL key is down.
@@ -8299,7 +8299,7 @@ Indicates whether various virtual keys are down. This parameter can be any combi
 
 - MK_SHIFT Set if SHIFT key is down.
 
-*point*  
+*point*<br/>
 Specifies the x and y coordinates of the cursor. These coordinates are always relative to the upper-left corner of the window.
 
 ### Remarks
@@ -8318,10 +8318,10 @@ afx_msg LRESULT OnRegisteredMouseWheel(
 
 ### Parameters
 
-*wParam*  
+*wParam*<br/>
 Horizontal position of the pointer.
 
-*lParam*  
+*lParam*<br/>
 Vertical position of the pointer.
 
 ### Return Value
@@ -8359,7 +8359,7 @@ afx_msg void OnRenderFormat(UINT nFormat);
 
 ### Parameters
 
-*nFormat*  
+*nFormat*<br/>
 Specifies the Clipboard format.
 
 ### Remarks
@@ -8410,13 +8410,13 @@ afx_msg BOOL OnSetCursor(
 
 ### Parameters
 
-*pWnd*  
+*pWnd*<br/>
 Specifies a pointer to the window that contains the cursor. The pointer may be temporary and should not be stored for later use.
 
-*nHitTest*  
+*nHitTest*<br/>
 Specifies the [hit-test](#onnchittest) area code. The hit test determines the cursor's location.
 
-*message*  
+*message*<br/>
 Specifies the mouse message number.
 
 ### Return Value
@@ -8446,7 +8446,7 @@ afx_msg void OnSetFocus(CWnd* pOldWnd);
 
 ### Parameters
 
-*pOldWnd*  
+*pOldWnd*<br/>
 Contains the `CWnd` object that loses the input focus (may be NULL). The pointer may be temporary and should not be stored for later use.
 
 ### Remarks
@@ -8468,10 +8468,10 @@ afx_msg void OnSettingChange(
 
 ### Parameters
 
-*uFlags*  
+*uFlags*<br/>
 When the system sends the message as a result of a `SystemParametersInfo` call, this parameter is a flag that indicates the system parameter that was changed. For a list of values, see [SystemParametersInfo](https://msdn.microsoft.com/library/windows/desktop/ms724947) in the Windows SDK. When an application sends the message, this parameter must be 0.
 
-*lpszSection*  
+*lpszSection*<br/>
 Points to a string that specifies the name of the section that has changed. (The string does not include the square brackets that enclose the section name.)
 
 ### Remarks
@@ -8480,9 +8480,9 @@ An application should send the message to all top-level windows when it makes ch
 
 The ON_WM_SETTINGCHANGE message is similar to the ON_WM_WININICHANGE message, with the following difference:
 
--   Use ON_WM_SETTINGCHANGE when running Windows NT 4.0 or newer, or under Windows 95/98.
+- Use ON_WM_SETTINGCHANGE when running Windows NT 4.0 or newer, or under Windows 95/98.
 
--   Use ON_WININICHANGE when running Windows NT 3.51 or older. This message is now obsolete.
+- Use ON_WININICHANGE when running Windows NT 3.51 or older. This message is now obsolete.
 
 You should have only one of these macros in your message map. To write a program that works for both Windows 95/98 and Windows NT 4.0, write a handler for ON_WM_SETTINGCHANGE. Under Windows NT 3.51, your handler will be called by `OnSettingChange` and *uFlags* and will always be zero.
 
@@ -8498,10 +8498,10 @@ afx_msg void OnShowWindow(
 
 ### Parameters
 
-*bShow*  
+*bShow*<br/>
 Specifies whether a window is being shown. It is TRUE if the window is being shown; it is FALSE if the window is being hidden.
 
-*nStatus*  
+*nStatus*<br/>
 Specifies the status of the window being shown. It is 0 if the message is sent because of a `ShowWindow` member function call; otherwise *nStatus* is one of the following:
 
 - SW_PARENTCLOSING Parent window is closing (being made iconic) or a pop-up window is being hidden.
@@ -8528,7 +8528,7 @@ afx_msg void OnSize(
 
 ### Parameters
 
-*nType*  
+*nType*<br/>
 Specifies the type of resizing requested. This parameter can be one of the following values:
 
 - SIZE_MAXIMIZED Window has been maximized.
@@ -8541,10 +8541,10 @@ Specifies the type of resizing requested. This parameter can be one of the follo
 
 - SIZE_MAXSHOW Message is sent to all pop-up windows when some other window has been restored to its former size.
 
-*cx*  
+*cx*<br/>
 Specifies the new width of the client area.
 
-*cy*  
+*cy*<br/>
 Specifies the new height of the client area.
 
 ### Remarks
@@ -8570,10 +8570,10 @@ afx_msg void OnSizeClipboard(
 
 ### Parameters
 
-*pClipAppWnd*  
+*pClipAppWnd*<br/>
 Identifies the Clipboard-application window. The pointer may be temporary and should not be stored.
 
-*hRect*  
+*hRect*<br/>
 Identifies a global memory object. The memory object contains a RECT data structure that specifies the area for the Clipboard owner to paint.
 
 ### Remarks
@@ -8597,10 +8597,10 @@ afx_msg void OnSizing(
 
 ### Parameters
 
-*nSide*  
+*nSide*<br/>
 The edge of window to be moved.
 
-*lpRect*  
+*lpRect*<br/>
 Address of the [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT structure](../../mfc/reference/rect-structure1.md) that will contain the item's coordinates.
 
 ### Remarks
@@ -8626,10 +8626,10 @@ afx_msg void OnSpoolerStatus(
 
 ### Parameters
 
-*nStatus*  
+*nStatus*<br/>
 Specifies the SP_JOBSTATUS flag.
 
-*nJobs*  
+*nJobs*<br/>
 Specifies the number of jobs remaining in the Print Manager queue.
 
 ### Remarks
@@ -8651,14 +8651,14 @@ afx_msg void OnStyleChanged(
 
 ### Parameters
 
-*nStyleType*  
+*nStyleType*<br/>
 Specifies whether the window's extended or nonextended styles have changed. This parameter can be a combination of the following values:
 
 - GWL_EXSTYLE The window's extended styles have changed.
 
 - GWL_STYLE The window's nonextended styles have changed.
 
-*lpStyleStruct*  
+*lpStyleStruct*<br/>
 Points to a [STYLESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632607) structure that contains the new styles for the window. An application can examine the styles, but it can not change them.
 
 ### Remarks
@@ -8678,14 +8678,14 @@ afx_msg void OnStyleChanging(
 
 ### Parameters
 
-*nStyleType*  
+*nStyleType*<br/>
 Specifies whether the window's extended or nonextended styles have changed. This parameter can be a combination of the following values:
 
 - GWL_EXSTYLE The window's extended styles have changed.
 
 - GWL_STYLE The window's nonextended styles have changed.
 
-*lpStyleStruct*  
+*lpStyleStruct*<br/>
 Points to a [STYLESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632607) structure that contains the new styles for the window. An application can examine the styles and change them.
 
 ### Remarks
@@ -8706,13 +8706,13 @@ afx_msg void OnSysChar(
 
 ### Parameters
 
-*nChar*  
+*nChar*<br/>
 Specifies the ASCII-character key code of a Control-menu key.
 
-*nRepCnt*  
+*nRepCnt*<br/>
 Specifies the repeat count (the number of times the keystroke is repeated as a result of the user holding down the key).
 
-*nFlags*  
+*nFlags*<br/>
 The *nFlags* parameter can have these values:
 
 |Value|Meaning|
@@ -8762,7 +8762,7 @@ afx_msg void OnSysCommand(
 
 ### Parameters
 
-*nID*  
+*nID*<br/>
 Specifies the type of system command requested. This parameter can be any one of the following values:
 
 - SC_CLOSE Close the `CWnd` object.
@@ -8795,7 +8795,7 @@ Specifies the type of system command requested. This parameter can be any one of
 
 - SC_VSCROLL Scroll vertically.
 
-*lParam*  
+*lParam*<br/>
 If a Control-menu command is chosen with the mouse, *lParam* contains the cursor coordinates. The low-order word contains the x coordinate, and the high-order word contains the y coordinate. Otherwise this parameter is not used.
 
 - SC_HOTKEY Activate the window associated with the application-specified hot key. The low-order word of *lParam* identifies the window to activate.
@@ -8830,13 +8830,13 @@ afx_msg void OnSysDeadChar(
 
 ### Parameters
 
-*nChar*  
+*nChar*<br/>
 Specifies the dead-key character value.
 
-*nRepCnt*  
+*nRepCnt*<br/>
 Specifies the repeat count.
 
-*nFlags*  
+*nFlags*<br/>
 Specifies the scan code, key-transition code, previous key state, and context code, as shown in the following list:
 
 |Value|Meaning|
@@ -8869,13 +8869,13 @@ afx_msg void OnSysKeyDown(
 
 ### Parameters
 
-*nChar*  
+*nChar*<br/>
 Specifies the virtual key code of the key being pressed. For a list of standard virtual key codes, see Winuser.h
 
-*nRepCnt*  
+*nRepCnt*<br/>
 Specifies the repeat count.
 
-*nFlags*  
+*nFlags*<br/>
 Specifies the scan code, key-transition code, previous key state, and context code, as shown in the following list:
 
 |Value|Meaning|
@@ -8916,13 +8916,13 @@ afx_msg void OnSysKeyUp(
 
 ### Parameters
 
-*nChar*  
+*nChar*<br/>
 Specifies the virtual key code of the key being pressed. For a list of standard virtual key codes, see Winuser.h
 
-*nRepCnt*  
+*nRepCnt*<br/>
 Specifies the repeat count.
 
-*nFlags*  
+*nFlags*<br/>
 Specifies the scan code, key-transition code, previous key state, and context code, as shown in the following list:
 
 |Value|Meaning|
@@ -8969,7 +8969,7 @@ afx_msg void OnTCard(
 
 ### Parameters
 
-*idAction*  
+*idAction*<br/>
 Indicates the action the user has taken. This parameter can be one of these values:
 
 - IDABORT The user clicked an authorable Abort button.
@@ -8996,7 +8996,7 @@ Indicates the action the user has taken. This parameter can be one of these valu
 
 - IDYES The user clicked an authorable Yes button.
 
-*dwActionData*  
+*dwActionData*<br/>
 If *idAction* specifies HELP_TCARD_DATA, this parameter is a long integer specified by the help author. Otherwise, this parameter is zero.
 
 ### Remarks
@@ -9025,7 +9025,7 @@ afx_msg void OnTimer(UINT_PTR nIDEvent);
 
 ### Parameters
 
-*nIDEvent*  
+*nIDEvent*<br/>
 Specifies the identifier of the timer.
 
 ### Remarks
@@ -9051,10 +9051,10 @@ virtual INT_PTR OnToolHitTest(
 
 ### Parameters
 
-*point*  
+*point*<br/>
 Specifies the x- and y-coordinate of the cursor. These coordinates are always relative to the upper-left corner of the window
 
-*pTI*  
+*pTI*<br/>
 A pointer to a [TOOLINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) structure. The following structure values are set by default:
 
 - *hwnd* = `m_hWnd` Handle to a window
@@ -9093,16 +9093,16 @@ virtual BOOL OnTouchInput(
 
 ### Parameters
 
-*pt*  
+*pt*<br/>
 Point where screen has been touched (in the client coordinates).
 
-*nInputNumber*  
+*nInputNumber*<br/>
 Number of touch input.
 
-*nInputsCount*  
+*nInputsCount*<br/>
 Total number of touch inputs.
 
-*pInput*  
+*pInput*<br/>
 Pointer to TOUCHINPUT structure.
 
 ### Return Value
@@ -9123,10 +9123,10 @@ virtual BOOL OnTouchInputs(
 
 ### Parameters
 
-*nInputsCount*  
+*nInputsCount*<br/>
 Total number of Windows touch inputs.
 
-*pInputs*  
+*pInputs*<br/>
 Array of TOUCHINPUT.
 
 ### Return Value
@@ -9197,7 +9197,7 @@ afx_msg void OnUpdateUIState(
 
 ### Parameters
 
-*nAction*  
+*nAction*<br/>
 Specifies the action to be performed. Can be one of the following values:
 
 - UIS_CLEAR The UI state element (specified by *nUIElement*) should be hidden.
@@ -9206,7 +9206,7 @@ Specifies the action to be performed. Can be one of the following values:
 
 - UIS_SET The UI state element (specified by *nUIElement*) should be visible.
 
-*nUIElement*  
+*nUIElement*<br/>
 Specifies which UI state elements are affected or the style of the control. Can be one of the following values:
 
 - UISF_HIDEACCEL Keyboard accelerators.
@@ -9247,13 +9247,13 @@ afx_msg int OnVKeyToItem(
 
 ### Parameters
 
-*nKey*  
+*nKey*<br/>
 Specifies the virtual key code of the key that the user pressed. For a list of standard virtual key codes, see Winuser.h
 
-*pListBox*  
+*pListBox*<br/>
 Specifies a pointer to the list box. The pointer may be temporary and should not be stored for later use.
 
-*nIndex*  
+*nIndex*<br/>
 Specifies the current caret position.
 
 ### Return Value
@@ -9280,7 +9280,7 @@ afx_msg void OnVScroll(
 
 ### Parameters
 
-*nSBCode*  
+*nSBCode*<br/>
 Specifies a scroll-bar code that indicates the user's scrolling request. This parameter can be one of the following:
 
 - SB_BOTTOM Scroll to bottom.
@@ -9301,10 +9301,10 @@ Specifies a scroll-bar code that indicates the user's scrolling request. This pa
 
 - SB_TOP Scroll to top.
 
-*nPos*  
+*nPos*<br/>
 Contains the current scroll-box position if the scroll-bar code is SB_THUMBPOSITION or SB_THUMBTRACK; otherwise not used. Depending on the initial scroll range, *nPos* may be negative and should be cast to an **int** if necessary.
 
-*pScrollBar*  
+*pScrollBar*<br/>
 If the scroll message came from a scroll-bar control, contains a pointer to the control. If the user clicked a window's scroll bar, this parameter is NULL. The pointer may be temporary and should not be stored for later use.
 
 ### Remarks
@@ -9329,10 +9329,10 @@ afx_msg void OnVScrollClipboard(
 
 ### Parameters
 
-*pClipAppWnd*  
+*pClipAppWnd*<br/>
 Specifies a pointer to a Clipboard-viewer window. The pointer may be temporary and should not be stored for later use.
 
-*nSBCode*  
+*nSBCode*<br/>
 Specifies one of the following scroll-bar values:
 
 - SB_BOTTOM Scroll to bottom.
@@ -9351,7 +9351,7 @@ Specifies one of the following scroll-bar values:
 
 - SB_TOP Scroll to top.
 
-*nPos*  
+*nPos*<br/>
 Contains the scroll-box position if the scroll-bar code is SB_THUMBPOSITION; otherwise *nPos* is not used.
 
 ### Remarks
@@ -9392,7 +9392,7 @@ afx_msg void OnWindowPosChanged(WINDOWPOS* lpwndpos);
 
 ### Parameters
 
-*lpwndpos*  
+*lpwndpos*<br/>
 Points to a [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) data structure that contains information about the window's new size and position.
 
 ### Remarks
@@ -9412,7 +9412,7 @@ afx_msg void OnWindowPosChanging(WINDOWPOS* lpwndpos);
 
 ### Parameters
 
-*lpwndpos*  
+*lpwndpos*<br/>
 Points to a `WINDOWPOS` data structure that contains information about the window's new size and position.
 
 ### Remarks
@@ -9434,7 +9434,7 @@ afx_msg void OnWinIniChange(LPCTSTR lpszSection);
 
 ### Parameters
 
-*lpszSection*  
+*lpszSection*<br/>
 Points to a string that specifies the name of the section that has changed. (The string does not include the square brackets that enclose the section name.)
 
 ### Remarks
@@ -9464,16 +9464,16 @@ virtual BOOL OnWndMsg(
 
 ### Parameters
 
-*message*  
+*message*<br/>
 Specifies the message to be sent.
 
-*wParam*  
+*wParam*<br/>
 Specifies additional message-dependent information.
 
-*lParam*  
+*lParam*<br/>
 Specifies additional message-dependent information.
 
-*pResult*  
+*pResult*<br/>
 The return value of [WindowProc](#windowproc). Depends on the message; may be NULL.
 
 ### Return Value
@@ -9640,7 +9640,7 @@ BOOL operator!=(const CWnd& wnd) const;
 
 ### Parameters
 
-*wnd*  
+*wnd*<br/>
 A reference to a `CWnd` object.
 
 ### Return Value
@@ -9657,7 +9657,7 @@ BOOL operator==(const CWnd& wnd) const;
 
 ### Parameters
 
-*wnd*  
+*wnd*<br/>
 A reference to a `CWnd` object.
 
 ### Return Value
@@ -9674,7 +9674,7 @@ BOOL PaintWindowlessControls(CDC* pDC);
 
 ### Parameters
 
-*pDC*  
+*pDC*<br/>
 The device context on which to draw the windowless controls.
 
 ### Return Value
@@ -9694,13 +9694,13 @@ BOOL PostMessage(
 
 ### Parameters
 
-*message*  
+*message*<br/>
 Specifies the message to be posted.
 
-*wParam*  
+*wParam*<br/>
 Specifies additional message information. The content of this parameter depends on the message being posted.
 
-*lParam*  
+*lParam*<br/>
 Specifies additional message information. The content of this parameter depends on the message being posted.
 
 ### Return Value
@@ -9739,7 +9739,7 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 
 ### Parameters
 
-*cs*  
+*cs*<br/>
 A [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) structure.
 
 ### Return Value
@@ -9787,7 +9787,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ### Parameters
 
-*pMsg*  
+*pMsg*<br/>
 Points to a [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message to process.
 
 ### Return Value
@@ -9806,10 +9806,10 @@ void Print(
 
 ### Parameters
 
-*pDC*  
+*pDC*<br/>
 A pointer to a device context.
 
-*dwFlags*  
+*dwFlags*<br/>
 Specifies the drawing options. This parameter can be one or more of these flags:
 
 - PRF_CHECKVISIBLE Draw the window only if it is visible.
@@ -9828,17 +9828,17 @@ Specifies the drawing options. This parameter can be one or more of these flags:
 
 [CWnd::DefWindowProc](#defwindowproc) function processes this message based on which drawing option is specified:
 
--   If PRF_CHECKVISIBLE is specified and the window is not visible, do nothing.
+- If PRF_CHECKVISIBLE is specified and the window is not visible, do nothing.
 
--   If PRF_NONCLIENT is specified, draw the nonclient area in the given device context.
+- If PRF_NONCLIENT is specified, draw the nonclient area in the given device context.
 
--   If PRF_ERASEBKGND is specified, send the window a [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) message.
+- If PRF_ERASEBKGND is specified, send the window a [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) message.
 
--   If PRF_CLIENT is specified, send the window a [WM_PRINTCLIENT](/windows/desktop/gdi/wm-printclient) message.
+- If PRF_CLIENT is specified, send the window a [WM_PRINTCLIENT](/windows/desktop/gdi/wm-printclient) message.
 
--   If PRF_CHILDREN is set, send each visible child window a [WM_PRINT](/windows/desktop/gdi/wm-print) message.
+- If PRF_CHILDREN is set, send each visible child window a [WM_PRINT](/windows/desktop/gdi/wm-print) message.
 
--   If PRF_OWNED is set, send each visible owned window a WM_PRINT message.
+- If PRF_OWNED is set, send each visible owned window a WM_PRINT message.
 
 ##  <a name="printclient"></a>  CWnd::PrintClient
 
@@ -9852,10 +9852,10 @@ void PrintClient(
 
 ### Parameters
 
-*pDC*  
+*pDC*<br/>
 A pointer to a device context.
 
-*dwFlags*  
+*dwFlags*<br/>
 Specifies drawing options. This parameter can be one or more of these flags:
 
 - PRF_CHECKVISIBLE Draw the window only if it is visible.
@@ -9882,10 +9882,10 @@ BOOL PrintWindow(
 
 ### Parameters
 
-*pDC*  
+*pDC*<br/>
 A pointer to the device context to be printed to.
 
-*nFlags*  
+*nFlags*<br/>
 Specifies the drawing options. For a list of possible values, see [PrintWindow](/windows/desktop/api/winuser/nf-winuser-printwindow).
 
 ### Return Value
@@ -9909,13 +9909,13 @@ BOOL RedrawWindow(
 
 ### Parameters
 
-*lpRectUpdate*  
+*lpRectUpdate*<br/>
 Points to a [RECT structure](../../mfc/reference/rect-structure1.md) containing the coordinates of the update rectangle. This parameter is ignored if *prgnUpdate* contains a valid region handle.
 
-*prgnUpdate*  
+*prgnUpdate*<br/>
 Identifies the update region. If both *prgnUpdate* and *lpRectUpdate* are NULL, the entire client area is added to the update region.
 
-*flags*  
+*flags*<br/>
 The following flags are used to invalidate the window:
 
 - RDW_ERASE Causes the window to receive a [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) message when the window is repainted. The RDW_INVALIDATE flag must also be specified; otherwise RDW_ERASE has no effect.
@@ -9970,16 +9970,16 @@ BOOL ReflectChildNotify(
 
 ### Parameters
 
-*message*  
+*message*<br/>
 Specifies the message to be reflected.
 
-*wParam*  
+*wParam*<br/>
 Specifies additional message-dependent information.
 
-*lParam*  
+*lParam*<br/>
 Specifies additional message-dependent information.
 
-*pResult*  
+*pResult*<br/>
 The result generated by the child window to be returned by the parent window. Can be NULL.
 
 ### Return Value
@@ -10006,10 +10006,10 @@ static BOOL PASCAL ReflectLastMsg(
 
 ### Parameters
 
-*hWndChild*  
+*hWndChild*<br/>
 A handle to a child window.
 
-*pResult*  
+*pResult*<br/>
 The result generated by the child window to be returned by the parent window. Can be NULL.
 
 ### Return Value
@@ -10032,7 +10032,7 @@ int ReleaseDC(CDC* pDC);
 
 ### Parameters
 
-*pDC*  
+*pDC*<br/>
 Identifies the device context to be released.
 
 ### Return Value
@@ -10061,16 +10061,16 @@ void RepositionBars(UINT nIDFirst,
 
 ### Parameters
 
-*nIDFirst*  
+*nIDFirst*<br/>
 The ID of the first in a range of control bars to reposition and resize.
 
-*nIDLast*  
+*nIDLast*<br/>
 The ID of the last in a range of control bars to reposition and resize.
 
-*nIDLeftOver*  
+*nIDLeftOver*<br/>
 Specifies ID of pane that fills the rest of the client area.
 
-*nFlag*  
+*nFlag*<br/>
 Can have one of the following values:
 
 - `CWnd::reposDefault` Performs the layout of the control bars. *lpRectParam* is not used and can be NULL.
@@ -10079,13 +10079,13 @@ Can have one of the following values:
 
 - `CWnd::reposExtra` Adds the values of *lpRectParam* to the client area of *nIDLast* and also performs the layout.
 
-*lpRectParam*  
+*lpRectParam*<br/>
 Points to a [RECT structure](../../mfc/reference/rect-structure1.md); the usage of which depends on the value of *nFlag*.
 
-*lpRectClient*  
+*lpRectClient*<br/>
 Points to a [RECT structure](../../mfc/reference/rect-structure1.md) containing the available client area. If NULL, the window's client area will be used.
 
-*bStretch*  
+*bStretch*<br/>
 Indicates whether the bar should be stretched to the size of the frame.
 
 ### Remarks
@@ -10102,7 +10102,7 @@ int RunModalLoop(DWORD dwFlags = 0);
 
 ### Parameters
 
-*dwFlags*  
+*dwFlags*<br/>
 Specifies the Windows message to be sent. Can be one of the following values:
 
 - MLF_NOIDLEMSG Don't send [WM_ENTERIDLE](/windows/desktop/dlgbox/wm-enteridle) messages to the parent.
@@ -10129,10 +10129,10 @@ void ScreenToClient(LPPOINT lpPoint) const;  void ScreenToClient(LPRECT lpRect) 
 
 ### Parameters
 
-*lpPoint*  
+*lpPoint*<br/>
 Points to a [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object or [POINT structure](../../mfc/reference/point-structure1.md) that contains the screen coordinates to be converted.
 
-*lpRect*  
+*lpRect*<br/>
 Points to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](../../mfc/reference/rect-structure1.md) that contains the screen coordinates to be converted.
 
 ### Remarks
@@ -10157,16 +10157,16 @@ void ScrollWindow(
 
 ### Parameters
 
-*xAmount*  
+*xAmount*<br/>
 Specifies the amount, in device units, of horizontal scrolling. This parameter must be a negative value to scroll to the left.
 
-*yAmount*  
+*yAmount*<br/>
 Specifies the amount, in device units, of vertical scrolling. This parameter must be a negative value to scroll up.
 
-*lpRect*  
+*lpRect*<br/>
 Points to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](../../mfc/reference/rect-structure1.md) that specifies the portion of the client area to be scrolled. If *lpRect* is NULL, the entire client area is scrolled. The caret is repositioned if the cursor rectangle intersects the scroll rectangle.
 
-*lpClipRect*  
+*lpClipRect*<br/>
 Points to a `CRect` object or `RECT` structure that specifies the clipping rectangle to scroll. Only bits inside this rectangle are scrolled. Bits outside this rectangle are not affected even if they are in the *lpRect* rectangle. If *lpClipRect* is NULL, no clipping is performed on the scroll rectangle.
 
 ### Remarks
@@ -10196,25 +10196,25 @@ int ScrollWindowEx(
 
 ### Parameters
 
-*dx*  
+*dx*<br/>
 Specifies the amount, in device units, of horizontal scrolling. This parameter must have a negative value to scroll to the left.
 
-*dy*  
+*dy*<br/>
 Specifies the amount, in device units, of vertical scrolling. This parameter must have a negative value to scroll up.
 
-*lpRectScroll*  
+*lpRectScroll*<br/>
 Points to a [RECT structure](../../mfc/reference/rect-structure1.md) that specifies the portion of the client area to be scrolled. If this parameter is NULL, the entire client area is scrolled.
 
-*lpRectClip*  
+*lpRectClip*<br/>
 Points to a `RECT` structure that specifies the clipping rectangle to scroll. This structure takes precedence over the rectangle pointed to by *lpRectScroll*. Only bits inside this rectangle are scrolled. Bits outside this rectangle are not affected even if they are in the *lpRectScroll* rectangle. If this parameter is NULL, no clipping is performed on the scroll rectangle.
 
-*prgnUpdate*  
+*prgnUpdate*<br/>
 Identifies the region that is modified to hold the region invalidated by scrolling. This parameter may be NULL.
 
-*lpRectUpdate*  
+*lpRectUpdate*<br/>
 Points to a `RECT` structure that will receive the boundaries of the rectangle invalidated by scrolling. This parameter may be NULL.
 
-*flags*  
+*flags*<br/>
 Can have one of the following values:
 
 - SW_ERASE When specified with SW_INVALIDATE, erases the newly invalidated region by sending a [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) message to the window.
@@ -10249,7 +10249,7 @@ BOOL SendChildNotifyLastMsg(LRESULT* pResult = NULL);
 
 ### Parameters
 
-*pResult*  
+*pResult*<br/>
 The result generated by the child window to be returned by the parent window.
 
 ### Return Value
@@ -10276,16 +10276,16 @@ LRESULT SendDlgItemMessage(
 
 ### Parameters
 
-*nID*  
+*nID*<br/>
 Specifies the identifier of the dialog control that will receive the message.
 
-*message*  
+*message*<br/>
 Specifies the message to be sent.
 
-*wParam*  
+*wParam*<br/>
 Specifies additional message-dependent information.
 
-*lParam*  
+*lParam*<br/>
 Specifies additional message-dependent information.
 
 ### Return Value
@@ -10315,13 +10315,13 @@ LRESULT SendMessage(
 
 ### Parameters
 
-*message*  
+*message*<br/>
 Specifies the message to be sent.
 
-*wParam*  
+*wParam*<br/>
 Specifies additional message-dependent information.
 
-*lParam*  
+*lParam*<br/>
 Specifies additional message-dependent information.
 
 ### Return Value
@@ -10351,19 +10351,19 @@ void SendMessageToDescendants(
 
 ### Parameters
 
-*message*  
+*message*<br/>
 Specifies the message to be sent.
 
-*wParam*  
+*wParam*<br/>
 Specifies additional message-dependent information.
 
-*lParam*  
+*lParam*<br/>
 Specifies additional message-dependent information.
 
-*bDeep*  
+*bDeep*<br/>
 Specifies the level to which to search. If TRUE, recursively search all children; if FALSE, search only immediate children.
 
-*bOnlyPerm*  
+*bOnlyPerm*<br/>
 Specifies whether the message will be received by temporary windows. If TRUE, temporary windows can receive the message; if FALSE, only permanent windows receive the message. For more information on temporary windows see [Technical Note 3](../../mfc/tn003-mapping-of-windows-handles-to-objects.md).
 
 ### Remarks
@@ -10389,13 +10389,13 @@ BOOL SendNotifyMessage(
 
 ### Parameters
 
-*message*  
+*message*<br/>
 Specifies the message to be sent.
 
-*wParam*  
+*wParam*<br/>
 Specifies additional message-dependent information.
 
-*lParam*  
+*lParam*<br/>
 Specifies additional message-dependent information.
 
 ### Return Value
@@ -10452,7 +10452,7 @@ static void PASCAL SetCaretPos(POINT point);
 
 ### Parameters
 
-*point*  
+*point*<br/>
 Specifies the new x and y coordinates (in client coordinates) of the caret.
 
 ### Remarks
@@ -10495,7 +10495,7 @@ int SetDlgCtrlID(int nID);
 
 ### Parameters
 
-*nID*  
+*nID*<br/>
 The new value to set for the control's identifier.
 
 ### Return Value
@@ -10519,13 +10519,13 @@ void SetDlgItemInt(
 
 ### Parameters
 
-*nID*  
+*nID*<br/>
 Specifies the integer ID of the control to be changed.
 
-*nValue*  
+*nValue*<br/>
 Specifies the integer value used to generate the item text.
 
-*bSigned*  
+*bSigned*<br/>
 Specifies whether the integer value is signed or unsigned. If this parameter is TRUE, *nValue* is signed. If this parameter is TRUE and *nValue* is less than 0, a minus sign is placed before the first digit in the string. If this parameter is FALSE, *nValue* is unsigned.
 
 ### Remarks
@@ -10548,10 +10548,10 @@ void SetDlgItemText(
 
 ### Parameters
 
-*nID*  
+*nID*<br/>
 Identifies the control whose text is to be set.
 
-*lpszString*  
+*lpszString*<br/>
 Points to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object or null-terminated string that contains the text to be copied to the control.
 
 ### Remarks
@@ -10614,10 +10614,10 @@ void SetFont(
 
 ### Parameters
 
-*pFont*  
+*pFont*<br/>
 Pointer to a `CFont` object.
 
-*bRedraw*  
+*bRedraw*<br/>
 TRUE for the window to redraw immediately after it processes the WM_SETFONT message; otherwise FALSE.
 
 ### Remarks
@@ -10636,10 +10636,10 @@ HICON SetIcon(
 
 ### Parameters
 
-*hIcon*  
+*hIcon*<br/>
 A handle to a previous icon.
 
-*bBigIcon*  
+*bBigIcon*<br/>
 Specifies a 32 pixel by 32 pixel icon if TRUE; specifies a 16 pixel by 16 pixel icon if FALSE.
 
 ### Return Value
@@ -10667,13 +10667,13 @@ BOOL SetLayeredWindowAttributes(
 
 ### Parameters
 
-*crKey*  
+*crKey*<br/>
 Pointer to a COLORREF value that specifies the transparency color key to be used when composing the layered window. All pixels painted by the window in this color will be transparent. To generate a COLORREF, use the RGB macro.
 
-*bAlpha*  
+*bAlpha*<br/>
 Alpha value used to describe the opacity of the layered window. For more information, see the `SourceConstantAlpha` member of the [BLENDFUNCTION](/windows/desktop/api/wingdi/ns-wingdi-_blendfunction) structure. When *bAlpha* is 0, the window is completely transparent. When *bAlpha* is 255, the window is opaque.
 
-*dwFlags*  
+*dwFlags*<br/>
 Specifies an action to take. This parameter can be one or more of the following values. For a list of possible values, see [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes).
 
 ### Return Value
@@ -10694,7 +10694,7 @@ BOOL SetMenu(CMenu* pMenu);
 
 ### Parameters
 
-*pMenu*  
+*pMenu*<br/>
 Identifies the new menu. If this parameter is NULL, the current menu is removed.
 
 ### Return Value
@@ -10721,7 +10721,7 @@ void SetOwner(CWnd* pOwnerWnd);
 
 ### Parameters
 
-*pOwnerWnd*  
+*pOwnerWnd*<br/>
 Identifies the new owner of the window object. If this parameter is NULL, the window object has no owner.
 
 ### Remarks
@@ -10742,7 +10742,7 @@ CWnd* SetParent(CWnd* pWndNewParent);
 
 ### Parameters
 
-*pWndNewParent*  
+*pWndNewParent*<br/>
 Identifies the new parent window.
 
 ### Return Value
@@ -10765,13 +10765,13 @@ void AFX_CDECL SetProperty(
 
 ### Parameters
 
-*dwDispID*  
+*dwDispID*<br/>
 Identifies the property to be set.
 
-*vtProp*  
+*vtProp*<br/>
 Specifies the type of the property to be set. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).
 
-*...*  
+*...*<br/>
 A single parameter of the type specified by *vtProp*.
 
 ### Remarks
@@ -10791,7 +10791,7 @@ void SetRedraw(BOOL bRedraw = TRUE);
 
 ### Parameters
 
-*bRedraw*  
+*bRedraw*<br/>
 Specifies the state of the redraw flag. If this parameter is TRUE, the redraw flag is set; if FALSE, the flag is cleared.
 
 ### Remarks
@@ -10815,7 +10815,7 @@ BOOL SetScrollInfo(
 
 ### Parameters
 
-*nBar*  
+*nBar*<br/>
 Specifies whether the scroll bar is a control or part of a window's nonclient area. If it is part of the nonclient area, nBar also indicates whether the scroll bar is positioned horizontally, vertically, or both. It must be one of the following:
 
 - SB_CTL Contains the parameters for a scroll bar control. The `m_hWnd` data member must be the handle of the scroll bar control.
@@ -10824,10 +10824,10 @@ Specifies whether the scroll bar is a control or part of a window's nonclient ar
 
 - SB_VERT Specifies that the window is a vertical scroll bar.
 
-*lpScrollInfo*  
+*lpScrollInfo*<br/>
 A pointer to a [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) structure. See the Windows SDK for more information about this structure.
 
-*bRedraw*  
+*bRedraw*<br/>
 Specifies whether the scroll bar should be redrawn to reflect the new position. If *bRedraw* is TRUE, the scroll bar is redrawn. If it is FALSE, it is not redrawn. The scroll bar is redrawn by default.
 
 ### Return Value
@@ -10856,17 +10856,17 @@ int SetScrollPos(
 
 ### Parameters
 
-*nBar*  
+*nBar*<br/>
 Specifies the scroll bar to be set. This parameter can be either of the following:
 
 - SB_HORZ Sets the position of the scroll box in the horizontal scroll bar of the window.
 
 - SB_VERT Sets the position of the scroll box in the vertical scroll bar of the window.
 
-*nPos*  
+*nPos*<br/>
 Specifies the new position of the scroll box. It must be within the scrolling range.
 
-*bRedraw*  
+*bRedraw*<br/>
 Specifies whether the scroll bar should be repainted to reflect the new scroll-box position. If this parameter is TRUE, the scroll bar is repainted; if FALSE, the scroll bar is not repainted.
 
 ### Return Value
@@ -10891,20 +10891,20 @@ void SetScrollRange(
 
 ### Parameters
 
-*nBar*  
+*nBar*<br/>
 Specifies the scroll bar to be set. This parameter can be either of the following values:
 
 - SB_HORZ Sets the range of the horizontal scroll bar of the window.
 
 - SB_VERT Sets the range of the vertical scroll bar of the window.
 
-*nMinPos*  
+*nMinPos*<br/>
 Specifies the minimum scrolling position.
 
-*nMaxPos*  
+*nMaxPos*<br/>
 Specifies the maximum scrolling position.
 
-*bRedraw*  
+*bRedraw*<br/>
 Specifies whether the scroll bar should be redrawn to reflect the change. If *bRedraw* is TRUE, the scroll bar is redrawn; if FALSE, the scroll bar is not redrawn.
 
 ### Remarks
@@ -10933,13 +10933,13 @@ UINT_PTR SetTimer(
 
 ### Parameters
 
-*nIDEvent*  
+*nIDEvent*<br/>
 Specifies a nonzero timer identifier. If the timer identifier is unique, this same value is returned by `SetTimer`. Otherwise, `SetTimer` determines a new unique value and returns that. For a window timer (which has a NULL callback function), the value must be unique only for other windows timers that are associated with the current window. For a callback timer, the value must be unique for all timers in all processes. Therefore, when you create a callback timer, it is more likely that the returned value might differ from the value you specify.
 
-*nElapse*  
+*nElapse*<br/>
 Specifies the time-out value, or interval, in milliseconds.
 
-*lpfnTimer*  
+*lpfnTimer*<br/>
 Specifies the address of the application-supplied `TimerProc` callback function that processes the [WM_TIMER](/windows/desktop/winmsg/wm-timer) messages. If this parameter is NULL, the WM_TIMER messages are placed in the message queue of the application and handled by the `CWnd` object.
 
 ### Return Value
@@ -10976,7 +10976,7 @@ BOOL SetWindowContextHelpId(DWORD dwContextHelpId);
 
 ### Parameters
 
-*dwContextHelpId*  
+*dwContextHelpId*<br/>
 The help context identifier.
 
 ### Return Value
@@ -11001,7 +11001,7 @@ BOOL SetWindowPlacement(const WINDOWPLACEMENT* lpwndpl);
 
 ### Parameters
 
-*lpwndpl*  
+*lpwndpl*<br/>
 Points to a [WINDOWPLACEMENT](../../mfc/reference/windowplacement-structure.md) structure that specifies the new show state and positions.
 
 ### Return Value
@@ -11024,7 +11024,7 @@ BOOL SetWindowPos(
 
 ### Parameters
 
-*pWndInsertAfter*  
+*pWndInsertAfter*<br/>
 Identifies the `CWnd` object that will precede (be higher than) this `CWnd` object in the Z-order. This parameter can be a pointer to a `CWnd` or a pointer to one of the following values:
 
 - `wndBottom` Places the window at the bottom of the Z-order. If this `CWnd` is a topmost window, the window loses its topmost status; the system places the window at the bottom of all other windows.
@@ -11037,19 +11037,19 @@ Identifies the `CWnd` object that will precede (be higher than) this `CWnd` obje
 
 For rules about how to use this parameter, see the "Remarks" section of this topic.
 
-*x*  
+*x*<br/>
 Specifies the new position of the left side of the window.
 
-*y*  
+*y*<br/>
 Specifies the new position of the top of the window.
 
-*cx*  
+*cx*<br/>
 Specifies the new width of the window.
 
-*cy*  
+*cy*<br/>
 Specifies the new height of the window.
 
-*nFlags*  
+*nFlags*<br/>
 Specifies sizing and positioning options. This parameter can be a combination of the following flags:
 
 - SWP_DRAWFRAME Draws a frame (defined when the window was created) around the window.
@@ -11094,9 +11094,9 @@ A topmost window is no longer topmost if it is repositioned to the bottom ( **&w
 
 If neither SWP_NOACTIVATE nor SWP_NOZORDER is specified (that is, when the application requests that a window be simultaneously activated and placed in the specified Z-order), the value specified in *pWndInsertAfter* is used only in the following circumstances:
 
--   Neither **&wndTopMost** nor **&wndNoTopMost** is specified in the *pWndInsertAfter* parameter.
+- Neither **&wndTopMost** nor **&wndNoTopMost** is specified in the *pWndInsertAfter* parameter.
 
--   This window is not the active window.
+- This window is not the active window.
 
 An application cannot activate an inactive window without also bringing it to the top of the Z-order. Applications can change the Z-order of an activated window without restrictions.
 
@@ -11126,10 +11126,10 @@ int SetWindowRgn(
 
 ### Parameters
 
-*hRgn*  
+*hRgn*<br/>
 A handle to a region.
 
-*bRedraw*  
+*bRedraw*<br/>
 If TRUE, the operating system redraws the window after setting the region; otherwise, it does not. Typically, set *bRedraw* to TRUE if the window is visible. If set to TRUE, the system sends the WM_WINDOWPOSCHANGING and WM_WINDOWPOSCHANGED messages to the window.
 
 ### Return Value
@@ -11152,7 +11152,7 @@ void SetWindowText(LPCTSTR lpszString);
 
 ### Parameters
 
-*lpszString*  
+*lpszString*<br/>
 Points to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object or null-terminated string to be used as the new title or control text.
 
 ### Remarks
@@ -11197,7 +11197,7 @@ void ShowOwnedPopups(BOOL bShow = TRUE);
 
 ### Parameters
 
-*bShow*  
+*bShow*<br/>
 Specifies whether pop-up windows are to be shown or hidden. If this parameter is TRUE, all hidden pop-up windows are shown. If this parameter is FALSE, all visible pop-up windows are hidden.
 
 ### Example
@@ -11216,7 +11216,7 @@ void ShowScrollBar(
 
 ### Parameters
 
-*nBar*  
+*nBar*<br/>
 Specifies whether the scroll bar is a control or part of a window's nonclient area. If it is part of the nonclient area, *nBar* also indicates whether the scroll bar is positioned horizontally, vertically, or both. It must be one of the following:
 
 - SB_BOTH Specifies the horizontal and vertical scroll bars of the window.
@@ -11225,7 +11225,7 @@ Specifies whether the scroll bar is a control or part of a window's nonclient ar
 
 - SB_VERT Specifies that the window is a vertical scroll bar.
 
-*bShow*  
+*bShow*<br/>
 Specifies whether Windows shows or hides the scroll bar. If this parameter is TRUE, the scroll bar is shown; otherwise the scroll bar is hidden.
 
 ### Remarks
@@ -11242,7 +11242,7 @@ BOOL ShowWindow(int nCmdShow);
 
 ### Parameters
 
-*nCmdShow*  
+*nCmdShow*<br/>
 Specifies how the `CWnd` is to be shown. It must be one of the following values:
 
 - SW_HIDE Hides this window and passes activation to another window.
@@ -11289,10 +11289,10 @@ BOOL SubclassDlgItem(
 
 ### Parameters
 
-*nID*  
+*nID*<br/>
 The control's ID.
 
-*pParent*  
+*pParent*<br/>
 The control's parent (usually a dialog box).
 
 ### Return Value
@@ -11319,7 +11319,7 @@ BOOL SubclassWindow(HWND hWnd);
 
 ### Parameters
 
-*hWnd*  
+*hWnd*<br/>
 A handle to the window.
 
 ### Return Value
@@ -11377,7 +11377,7 @@ BOOL UpdateData(BOOL bSaveAndValidate = TRUE);
 
 ### Parameters
 
-*bSaveAndValidate*  
+*bSaveAndValidate*<br/>
 Flag that indicates whether dialog box is being initialized (FALSE) or data is being retrieved (TRUE).
 
 ### Return Value
@@ -11400,10 +11400,10 @@ void UpdateDialogControls(
 
 ### Parameters
 
-*pTarget*  
+*pTarget*<br/>
 Points to the main frame window of the application, and is used for routing update messages.
 
-*bDisableIfNoHndler*  
+*bDisableIfNoHndler*<br/>
 Flag that indicates whether a control that has no update handler should be automatically displayed as disabled.
 
 ### Remarks
@@ -11430,34 +11430,34 @@ BOOL UpdateLayeredWindow(
 
 ### Parameters
 
-*pDCDst*  
+*pDCDst*<br/>
 A pointer to a device context for the screen. It is used for palette color matching when the window contents are updated. If *pDCDst* is NULL, the default palette will be used.
 
 If *pDCSrc* is NULL, *pDCDst* must be NULL.
 
-*pptDst*  
+*pptDst*<br/>
 A pointer to a `POINT` structure specifying the new screen position of the layered window. If the current position is not changing, *pptDst* can be NULL.
 
-*psize*  
+*psize*<br/>
 Pointer to a `SIZE` structure that specifies the new size of the layered window. If the size of the window is not changing, *psize* can be NULL.
 
 If *pDCSrc* is NULL, *psize* must be NULL.
 
-*pDCSrc*  
+*pDCSrc*<br/>
 A pointer to a DC for the surface that defines the layered window. If the shape and visual context of the window are not changing, *pDCSrc* can be NULL.
 
-*pptSrc*  
+*pptSrc*<br/>
 Pointer to a `POINT` structure that specifies the location of the layer in the device context.
 
 If *pDCSrc* is NULL, *pptSrc* should be NULL.
 
-*crKey*  
+*crKey*<br/>
 Pointer to a COLORREF value that specifies the transparency color key to be used when composing the layered window. All pixels painted by the window in this color will be transparent. To generate a COLORREF, use the RGB macro.
 
-*pblend*  
+*pblend*<br/>
 Pointer to a [BLENDFUNCTION](/windows/desktop/api/wingdi/ns-wingdi-_blendfunction) structure that specifies the transparency value to be used when composing the layered window.
 
-*dwFlags*  
+*dwFlags*<br/>
 Specifies an action to take. This parameter can be one or more of the following values. For a list of possible values, see [UpdateLayeredWindow](https://msdn.microsoft.com/library/windows/desktop/ms633556).
 
 ### Return Value
@@ -11494,7 +11494,7 @@ void ValidateRect(LPCRECT lpRect);
 
 ### Parameters
 
-*lpRect*  
+*lpRect*<br/>
 Points to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](../../mfc/reference/rect-structure1.md) that contains client coordinates of the rectangle to be removed from the update region. If *lpRect* is NULL, the entire window is validated.
 
 ### Remarks
@@ -11513,7 +11513,7 @@ void ValidateRgn(CRgn* pRgn);
 
 ### Parameters
 
-*pRgn*  
+*pRgn*<br/>
 A pointer to a [CRgn](../../mfc/reference/crgn-class.md) object that identifies a region that defines the area to be removed from the update region. If this parameter is NULL, the entire client area is removed.
 
 ### Remarks
@@ -11532,7 +11532,7 @@ static CWnd* PASCAL WindowFromPoint(POINT point);
 
 ### Parameters
 
-*point*  
+*point*<br/>
 Specifies a [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object or [POINT](../../mfc/reference/point-structure1.md) data structure that defines the point to be checked.
 
 ### Return Value
@@ -11556,13 +11556,13 @@ virtual LRESULT WindowProc(
 
 ### Parameters
 
-*message*  
+*message*<br/>
 Specifies the Windows message to be processed.
 
-*wParam*  
+*wParam*<br/>
 Provides additional information used in processing the message. The parameter value depends on the message.
 
-*lParam*  
+*lParam*<br/>
 Provides additional information used in processing the message. The parameter value depends on the message.
 
 ### Return Value
@@ -11585,10 +11585,10 @@ virtual void WinHelp(
 
 ### Parameters
 
-*dwData*  
+*dwData*<br/>
 Specifies additional data. The value used depends on the value of the *nCmd* parameter.
 
-*nCmd*  
+*nCmd*<br/>
 Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows function in the Windows SDK.
 
 ### Remarks
@@ -11607,10 +11607,10 @@ BOOL RegisterTouchWindow(
 
 ### Parameters
 
-*bRegister*  
+*bRegister*<br/>
 TRUE indicates register Windows touch support; FALSE otherwise.
 
-*ulFlags*  
+*ulFlags*<br/>
 A set of bit flags that specify optional modifications. This field may contain 0 or one of the following values: TWF_FINETOUCH, TWF_WANTPALM.
 
 ### Return Value
@@ -11631,7 +11631,7 @@ virtual void ResizeDynamicLayout();
 
 ## See Also
 
-[CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)  
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)  
-[CFrameWnd Class](../../mfc/reference/cframewnd-class.md)  
-[CView Class](../../mfc/reference/cview-class.md)  
+[CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
+[CFrameWnd Class](../../mfc/reference/cframewnd-class.md)<br/>
+[CView Class](../../mfc/reference/cview-class.md)

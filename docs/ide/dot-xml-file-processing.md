@@ -72,9 +72,9 @@ The compiler observes the following rules when it generates the ID strings:
 
 - For generic types, the name of the type will be followed by a back tick and then a number that indicates the number of generic type parameters.  For example,
 
-    ```  
+    ```xml
     <member name="T:MyClass`2">
-    ```  
+    ```
 
    For a type that is defined as `public class MyClass<T, U>`.
 
@@ -87,7 +87,7 @@ The following examples show how the ID strings for a class and its members would
 ```cpp
 // xml_id_strings.cpp
 // compile with: /clr /doc /LD
-///   
+///
 namespace N {
 // "N:N"
 
@@ -97,81 +97,81 @@ namespace N {
    // "T:N.X"
 
    protected:
-      ///   
+      ///
       !X(){}
       // "M:N.X.Finalize", destructor's representation in metadata
 
    public:
-      ///   
+      ///
       X() {}
       // "M:N.X.#ctor"
 
-      ///   
+      ///
       static X() {}
       // "M:N.X.#cctor"
 
-      ///   
+      ///
       X(int i) {}
       // "M:N.X.#ctor(System.Int32)"
 
-      ///   
+      ///
       ~X() {}
       // "M:N.X.Dispose", Dispose function representation in metadata
 
-      ///   
+      ///
       System::String^ q;
       // "F:N.X.q"
 
-      ///   
+      ///
       double PI;
       // "F:N.X.PI"
 
-      ///   
+      ///
       int f() { return 1; }
       // "M:N.X.f"
 
-      ///   
+      ///
       int bb(System::String ^ s, int % y, void * z) { return 1; }
       // "M:N.X.bb(System.String,System.Int32@,System.Void*)"
 
-      ///   
+      ///
       int gg(array<short> ^ array1, array< int, 2 >^ IntArray) { return 0; }
       // "M:N.X.gg(System.Int16[], System.Int32[0:,0:])"
 
-      ///   
+      ///
       static X^ operator+(X^ x, X^ xx) { return x; }
      // "M:N.X.op_Addition(N.X,N.X)"
 
-      ///   
+      ///
       property int prop;
       // "M:N.X.prop"
 
-      ///   
+      ///
       property int prop2 {
       // "P:N.X.prop2"
 
-         ///   
+         ///
          int get() { return 0; }
          // M:N.X.get_prop2
 
-         ///   
+         ///
          void set(int i) {}
-         // M:N.X.set_prop2(System.Int32)  
+         // M:N.X.set_prop2(System.Int32)
       }
 
-      ///   
+      ///
       delegate void D(int i);
       // "T:N.X.D"
 
-      ///   
+      ///
       event D ^ d;
       // "E:N.X.d"
 
-      ///   
+      ///
       ref class Nested {};
       // "T:N.X.Nested"
 
-      ///   
+      ///
       static explicit operator System::Int32 (X x) { return 1; }
       // "M:N.X.op_Explicit(N.X!System.Runtime.CompilerServices.IsByValue)~System.Int32"
    };

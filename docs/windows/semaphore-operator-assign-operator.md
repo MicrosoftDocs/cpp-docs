@@ -26,7 +26,7 @@ Semaphore& operator=(
 
 ### Parameters
 
-*h*  
+*h*<br/>
 Rvalue-reference to a **Semaphore** object.
 
 ## Return Value
@@ -40,4 +40,5 @@ A reference to the current **Semaphore** object.
 **Namespace:** Microsoft::WRL::Wrappers
 
 ## See Also
+
 [Semaphore Class](../windows/semaphore-class.md)

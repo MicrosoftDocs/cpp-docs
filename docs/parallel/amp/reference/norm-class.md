@@ -12,90 +12,89 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # norm Class
-Represent a norm number. Each element is a floating point number in the range of [-1.0f, 1.0f].  
-  
-## Syntax  
-  
-```  
-class norm;  
-```  
-  
-## Members  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[norm Constructor](#ctor)|Overloaded. Default constructor. Initialize to 0.0f.|  
-  
-### Public Operators  
-  
-|Name|Description|  
-|----------|-----------------|  
-|norm::operator-||  
-|norm::operator--||  
-|norm::operator float|Conversion operator. Convert the norm number to a floating point value.|  
-|norm::operator*=||  
-|norm::operator/=||  
-|norm::operator++||  
-|norm::operator+=||  
-|norm::operator=||  
-|norm::operator-=||  
-  
-## Inheritance Hierarchy  
- `norm`  
-  
-## Requirements  
- **Header:** amp_short_vectors.h  
-  
- **Namespace:** Concurrency::graphics  
-  
-##  <a name="ctor"></a> norm 
 
- Default constructor. Initialize to 0.0f.  
-  
-```  
+Represent a norm number. Each element is a floating point number in the range of [-1.0f, 1.0f].
+
+## Syntax
+
+```
+class norm;
+```
+
+## Members
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[norm Constructor](#ctor)|Overloaded. Default constructor. Initialize to 0.0f.|
+
+### Public Operators
+
+|Name|Description|
+|----------|-----------------|
+|norm::operator-||
+|norm::operator--||
+|norm::operator float|Conversion operator. Convert the norm number to a floating point value.|
+|norm::operator*=||
+|norm::operator/=||
+|norm::operator++||
+|norm::operator+=||
+|norm::operator=||
+|norm::operator-=||
+
+## Inheritance Hierarchy
+
+`norm`
+
+## Requirements
+
+**Header:** amp_short_vectors.h
+
+**Namespace:** Concurrency::graphics
+
+##  <a name="ctor"></a> norm
+
+Default constructor. Initialize to 0.0f.
+
+```
 norm(
     void) restrict(amp,
     cpu);
 
- 
 explicit norm(
     float _V) restrict(amp,
     cpu);
 
- 
 explicit norm(
     unsigned int _V) restrict(amp,
     cpu);
 
- 
 explicit norm(
     int _V) restrict(amp,
     cpu);
 
- 
 explicit norm(
     double _V) restrict(amp,
     cpu);
 
- 
 norm(
     const norm& _Other) restrict(amp,
     cpu);
 
- 
 norm(
     const unorm& _Other) restrict(amp,
     cpu);
-```  
-  
-### Parameters  
+```
+
+### Parameters
+
 *_V*<br/>
-The value used to initialize.  
-  
+The value used to initialize.
+
 *_Other*<br/>
-The object used to initialize.  
-  
-## See Also  
- [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)
+The object used to initialize.
+
+## See Also
+
+[Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

@@ -33,4 +33,5 @@ This constructor is protected and cannot be called with the **new** keyword. Ins
 **Namespace:** Microsoft::WRL
 
 ## See Also
+
 [Module Class](../windows/module-class.md)

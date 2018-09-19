@@ -52,7 +52,7 @@ SafeInt (
 [in] A **SafeInt** of type U. The new **SafeInt** object will have the same value as *u*, but will be of type T.
 
 U
- The type of data stored in the **SafeInt**. This can be either a Boolean, character, or integer type. If it is an integer type, it can be signed or unsigned and be between 8 and 64 bits.
+The type of data stored in the **SafeInt**. This can be either a Boolean, character, or integer type. If it is an integer type, it can be signed or unsigned and be between 8 and 64 bits.
 
 ## Remarks
 
@@ -72,6 +72,6 @@ If you create a **SafeInt** from a Boolean parameter, you need to initialize the
 
 ## See Also
 
-[SafeInt Library](../windows/safeint-library.md)  
-[SafeInt Class](../windows/safeint-class.md)  
+[SafeInt Library](../windows/safeint-library.md)<br/>
+[SafeInt Class](../windows/safeint-class.md)<br/>
 [SafeIntException Class](../windows/safeintexception-class.md)

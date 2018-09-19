@@ -13,43 +13,47 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # MSG Structure1
-The `MSG` structure contains message information from a thread's message queue.  
-  
-## Syntax  
-  
-```  
-typedef struct tagMSG {     // msg    
-    HWND hwnd;  
-    UINT message;  
-    WPARAM wParam;  
-    LPARAM lParam;  
-    DWORD time;  
-    POINT pt;  
-} MSG;  
-```  
-  
-#### Parameters  
- *hwnd*  
- Identifies the window whose window procedure receives the message.  
-  
- *message*  
- Specifies the message number.  
-  
- *wParam*  
- Specifies additional information about the message. The exact meaning depends on the value of the `message` member.  
-  
- *lParam*  
- Specifies additional information about the message. The exact meaning depends on the value of the `message` member.  
-  
- *time*  
- Specifies the time at which the message was posted.  
-  
- *pt*  
- Specifies the cursor position, in screen coordinates, when the message was posted.  
-  
-## Requirements  
- **Header:** winuser.h  
-  
-## See Also  
- [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
+
+The `MSG` structure contains message information from a thread's message queue.
+
+## Syntax
+
+```
+typedef struct tagMSG {     // msg
+    HWND hwnd;
+    UINT message;
+    WPARAM wParam;
+    LPARAM lParam;
+    DWORD time;
+    POINT pt;
+} MSG;
+```
+
+#### Parameters
+
+*hwnd*<br/>
+Identifies the window whose window procedure receives the message.
+
+*message*<br/>
+Specifies the message number.
+
+*wParam*<br/>
+Specifies additional information about the message. The exact meaning depends on the value of the `message` member.
+
+*lParam*<br/>
+Specifies additional information about the message. The exact meaning depends on the value of the `message` member.
+
+*time*<br/>
+Specifies the time at which the message was posted.
+
+*pt*<br/>
+Specifies the cursor position, in screen coordinates, when the message was posted.
+
+## Requirements
+
+**Header:** winuser.h
+
+## See Also
+
+[Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
 

@@ -34,6 +34,6 @@ Win32
 
 ## See Also
 
-[Dialog Editor Tab, Toolbox](../windows/dialog-editor-tab-toolbox.md)  
-[Resource Files](../windows/resource-files-visual-studio.md)  
+[Dialog Editor Tab, Toolbox](../windows/dialog-editor-tab-toolbox.md)<br/>
+[Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)

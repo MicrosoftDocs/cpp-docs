@@ -38,5 +38,5 @@ MFC or ATL
 
 ## See Also
 
-[Creating New Toolbars](../windows/creating-new-toolbars.md)  
+[Creating New Toolbars](../windows/creating-new-toolbars.md)<br/>
 [Toolbar Editor](../windows/toolbar-editor.md)

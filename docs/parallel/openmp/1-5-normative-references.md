@@ -11,10 +11,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # 1.5 Normative References
--   ISO/IEC 9899:1999, *Information Technology - Programming Languages - C*. This OpenMP API specification refers to ISO/IEC 9899:1999 as C99.  
-  
--   ISO/IEC 9899:1990, *Information Technology - Programming Languages - C*. This OpenMP API specification refers to ISO/IEC 9899:1990 as C90.  
-  
--   ISO/IEC 14882:1998, *Information Technology - Programming Languages - C++*. This OpenMP API specification refers to ISO/IEC 14882:1998 as C++.  
-  
- Where this OpenMP API specification refers to C, reference is made to the base language supported by the implementation.
+
+- ISO/IEC 9899:1999, *Information Technology - Programming Languages - C*. This OpenMP API specification refers to ISO/IEC 9899:1999 as C99.
+
+- ISO/IEC 9899:1990, *Information Technology - Programming Languages - C*. This OpenMP API specification refers to ISO/IEC 9899:1990 as C90.
+
+- ISO/IEC 14882:1998, *Information Technology - Programming Languages - C++*. This OpenMP API specification refers to ISO/IEC 14882:1998 as C++.
+
+Where this OpenMP API specification refers to C, reference is made to the base language supported by the implementation.

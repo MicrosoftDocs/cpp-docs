@@ -36,16 +36,16 @@ A *pinning pointer* is an interior pointer that prevents the object pointed to f
 
 ### Parameters
 
-*cv_qualifier*  
+*cv_qualifier*<br/>
 **const** or **volatile** qualifiers. By default, a pinning pointer is **volatile**. It is redundant but not an error to declare a pinning pointer **volatile**.
 
-*type*  
+*type*<br/>
 The type of *initializer*.
 
-*var*  
+*var*<br/>
 The name of the **pin_ptr** variable.
 
-*initializer*  
+*initializer*<br/>
 A member of a reference type, element of a managed array, or any other object that you can assign to a native pointer.
 
 ### Remarks

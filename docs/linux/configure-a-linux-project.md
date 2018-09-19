@@ -1,7 +1,7 @@
 ---
 title: "Configure a C++ Linux project in Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/05/2018"
+ms.date: "09/18/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-linux"]
@@ -24,9 +24,11 @@ A variety of options can be configured for a Linux project with Visual Studio.  
 
 By default, an executable (.out) is built with the tool.  To build a static or dynamic library, or to use an existing Makefile, use the **Configuration Type** selection.
 
+For more information about the options in the property pages, see [Linux Project Property Page Reference](prop-pages-linux.md).
+
 ## Remote settings
 
-To change settings pertaining to the remote Linux computer, configure the remote options that appear in the **General** settings:
+To change settings pertaining to the remote Linux computer, configure the remote options that appear in the [General](prop-pages/general-linux.md) settings:
 
 - To change the target Linux computer, use the **Remote Build Machine** entry.  This will allow you to select one of the connections created previously.  To create a new entry, please see the [Connecting to Your Remote Linux Computer](connect-to-your-remote-linux-computer.md) section.
 
@@ -35,7 +37,7 @@ To change settings pertaining to the remote Linux computer, configure the remote
 - The **Remote Build Project Directory** is where this specific project will be built on the remote Linux computer.  This will default to **$(RemoteRootDir)/$(ProjectName)**, which will expand to a directory named after the current project, under the root directory set above.
 
 > [!NOTE]
-> To change the default C and C++ compilers, or the Linker and Archiver used to build the project, use the appropriate entries in the **C/C++ > General** section and the **Linker > General** section.  These could be set to use a certain version of GCC, or even the Clang compiler, for example.
+> To change the default C and C++ compilers, or the Linker and Archiver used to build the project, use the appropriate entries in the **C/C++ > General** section and the **Linker > General** section.  These could be set to use a certain version of GCC, or even the Clang compiler, for example. For more information see [C/C++ Properties (Linux C++)](prop-pages/c-cpp-linux.md) and [Linker Properties (Linux C++)](prop-pages/linker-linux.md).
 
 ## Include directories and IntelliSense support
 
@@ -90,8 +92,8 @@ To manage your header cache, navigate to **Tools > Options, Cross Platform > Con
 
 ## See Also
 
-[Working with Project Properties](../ide/working-with-project-properties.md)  
-[C++ General Properties (Linux C++)](../linux/prop-pages/general-linux.md)  
-[VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md)  
-[Copy Sources Project Properties (Linux C++)](../linux/prop-pages/copy-sources-project.md)  
+[Working with Project Properties](../ide/working-with-project-properties.md)<br/>
+[C++ General Properties (Linux C++)](../linux/prop-pages/general-linux.md)<br/>
+[VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md)<br/>
+[Copy Sources Project Properties (Linux C++)](../linux/prop-pages/copy-sources-project.md)<br/>
 [Build Event Properties (Linux C++)](../linux/prop-pages/build-events-linux.md)

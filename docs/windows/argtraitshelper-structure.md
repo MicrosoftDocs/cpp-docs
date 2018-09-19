@@ -25,7 +25,7 @@ struct ArgTraitsHelper;
 
 ### Parameters
 
-*TDelegateInterface*  
+*TDelegateInterface*<br/>
 A delegate interface.
 
 ## Remarks

@@ -27,10 +27,10 @@ GenericReleaseNotifier(
 
 ### Parameters
 
-*callback*  
+*callback*<br/>
 A lambda, functor, or pointer-to-function event handler that can be invoked with the parentheses function operator (`()`).
 
-*release*  
+*release*<br/>
 Specify **true** to enable calling the underlying [Module::ReleaseNotifier::Release()](../windows/module-releasenotifier-release.md) method; otherwise, specify **false**.
 
 ## Requirements

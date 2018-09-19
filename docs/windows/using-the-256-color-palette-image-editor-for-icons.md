@@ -34,6 +34,6 @@ None
 
 ## See Also
 
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)  
-[Creating a 256-Color Icon or Cursor](creating-a-256-color-icon-or-cursor-image-editor-for-icons.md)  
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+[Creating a 256-Color Icon or Cursor](creating-a-256-color-icon-or-cursor-image-editor-for-icons.md)<br/>
 [Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)
