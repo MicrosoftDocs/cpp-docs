@@ -12,39 +12,41 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Hold Reference to Value Type in Native Type
-Use `gcroot` on the boxed type to hold a reference to a value type in a native type.  
-  
-## Example  
-  
-```  
-// reference_to_value_in_native.cpp  
-// compile with: /clr  
-#using <mscorlib.dll>  
-#include <vcclr.h>   
-  
-using namespace System;   
-  
-public value struct V {  
-   String ^str;  
-};  
-  
-class Native {  
-public:  
-   gcroot< V^ > v_handle;  
-};  
-  
-int main() {  
-   Native native;  
-   V v;  
-   native.v_handle = v;  
-   native.v_handle->str = "Hello";  
-   Console::WriteLine("String in V: {0}", native.v_handle->str);  
-}  
-```  
-  
-```Output  
-String in V: Hello  
-```  
-  
-## See Also  
- [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+
+Use `gcroot` on the boxed type to hold a reference to a value type in a native type.
+
+## Example
+
+```
+// reference_to_value_in_native.cpp
+// compile with: /clr
+#using <mscorlib.dll>
+#include <vcclr.h>
+
+using namespace System;
+
+public value struct V {
+   String ^str;
+};
+
+class Native {
+public:
+   gcroot< V^ > v_handle;
+};
+
+int main() {
+   Native native;
+   V v;
+   native.v_handle = v;
+   native.v_handle->str = "Hello";
+   Console::WriteLine("String in V: {0}", native.v_handle->str);
+}
+```
+
+```Output
+String in V: Hello
+```
+
+## See Also
+
+[Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

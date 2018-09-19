@@ -13,7 +13,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # cliext Namespace
-The `cliext` namespace contains all the types of the STL/CLR library. For a list of all these types, and links to more information on the STL/CLR types, see [STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md).  
-  
-## See Also  
- [STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md)
+
+The `cliext` namespace contains all the types of the STL/CLR library. For a list of all these types, and links to more information on the STL/CLR types, see [STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md).
+
+## See Also
+
+[STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md)

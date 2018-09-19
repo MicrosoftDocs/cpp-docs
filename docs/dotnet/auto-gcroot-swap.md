@@ -13,52 +13,56 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot::swap
-Swaps objects with another `auto_gcroot`.  
-  
-## Syntax  
-  
-```  
-void swap(  
-   auto_gcroot<_element_type> & _right  
-);  
-```  
-  
-#### Parameters  
+
+Swaps objects with another `auto_gcroot`.
+
+## Syntax
+
+```
+void swap(
+   auto_gcroot<_element_type> & _right
+);
+```
+
+#### Parameters
+
 *_right*<br/>
-The `auto_gcroot` with which to swap objects.  
-  
-## Example  
-  
-```  
-// msl_auto_gcroot_swap.cpp  
-// compile with: /clr  
-#include <msclr\auto_gcroot.h>  
-  
-using namespace System;  
-using namespace msclr;  
-  
-int main() {  
-   auto_gcroot<String^> s1 = "string one";  
-   auto_gcroot<String^> s2 = "string two";  
-  
-   Console::WriteLine( "s1 = '{0}', s2 = '{1}'",  
-      s1->ToString(), s2->ToString() );  
-   s1.swap( s2 );  
-   Console::WriteLine( "s1 = '{0}', s2 = '{1}'",  
-      s1->ToString(), s2->ToString() );  
-}  
-```  
-  
-```Output  
-s1 = 'string one', s2 = 'string two'  
-s1 = 'string two', s2 = 'string one'  
-```  
-  
-## Requirements  
- **Header file** \<msclr\auto_gcroot.h>  
-  
- **Namespace** msclr  
-  
-## See Also  
- [auto_gcroot Members](../dotnet/auto-gcroot-members.md)   
- [swap Function (auto_gcroot)](../dotnet/swap-function-auto-gcroot.md)
+The `auto_gcroot` with which to swap objects.
+
+## Example
+
+```
+// msl_auto_gcroot_swap.cpp
+// compile with: /clr
+#include <msclr\auto_gcroot.h>
+
+using namespace System;
+using namespace msclr;
+
+int main() {
+   auto_gcroot<String^> s1 = "string one";
+   auto_gcroot<String^> s2 = "string two";
+
+   Console::WriteLine( "s1 = '{0}', s2 = '{1}'",
+      s1->ToString(), s2->ToString() );
+   s1.swap( s2 );
+   Console::WriteLine( "s1 = '{0}', s2 = '{1}'",
+      s1->ToString(), s2->ToString() );
+}
+```
+
+```Output
+s1 = 'string one', s2 = 'string two'
+s1 = 'string two', s2 = 'string one'
+```
+
+## Requirements
+
+**Header file** \<msclr\auto_gcroot.h>
+
+**Namespace** msclr
+
+## See Also
+
+[auto_gcroot Members](../dotnet/auto-gcroot-members.md)<br/>
+[swap Function (auto_gcroot)](../dotnet/swap-function-auto-gcroot.md)
