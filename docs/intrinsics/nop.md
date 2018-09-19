@@ -13,29 +13,32 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __nop
-**Microsoft Specific**  
-  
- Generates platform-specific machine code that performs no operation.  
-  
-## Syntax  
-  
-```  
-void __nop();  
-```  
-  
-## Requirements  
-  
-|Intrinsic|Architecture|  
-|---------------|------------------|  
-|`__nop`|x86, x64|  
-  
- **Header file** \<intrin.h>  
-  
-**END Microsoft Specific**  
-  
-## Remarks  
- The `__nop` function is equivalent to the `NOP` machine instruction. For more information, search for the document, "Intel Architecture Software Developer's Manual, Volume 2: Instruction Set Reference," at the [Intel Corporation](https://software.intel.com/en-us/articles/intel-sdm) site.  
-  
-## See Also  
- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   
- [__noop](../intrinsics/noop.md)
+
+**Microsoft Specific**
+
+Generates platform-specific machine code that performs no operation.
+
+## Syntax
+
+```
+void __nop();
+```
+
+## Requirements
+
+|Intrinsic|Architecture|
+|---------------|------------------|
+|`__nop`|x86, x64|
+
+**Header file** \<intrin.h>
+
+**END Microsoft Specific**
+
+## Remarks
+
+The `__nop` function is equivalent to the `NOP` machine instruction. For more information, search for the document, "Intel Architecture Software Developer's Manual, Volume 2: Instruction Set Reference," at the [Intel Corporation](https://software.intel.com/en-us/articles/intel-sdm) site.
+
+## See Also
+
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[__noop](../intrinsics/noop.md)

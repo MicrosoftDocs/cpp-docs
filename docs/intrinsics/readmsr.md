@@ -13,39 +13,44 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __readmsr
-**Microsoft Specific**  
-  
- Generates the `rdmsr` instruction, which reads the model-specific register specified by `register` and returns its value.  
-  
-## Syntax  
-  
-```  
-__int64 __readmsr(   
-   int register   
-);  
-```  
-  
-#### Parameters  
+
+**Microsoft Specific**
+
+Generates the `rdmsr` instruction, which reads the model-specific register specified by `register` and returns its value.
+
+## Syntax
+
+```
+__int64 __readmsr( 
+   int register 
+);
+```
+
+#### Parameters
+
 *register*<br/>
-[in] The model specific register to read.  
-  
-## Return Value  
- The value in the specified register.  
-  
-## Requirements  
-  
-|Intrinsic|Architecture|  
-|---------------|------------------|  
-|`__readmsr`|x86, x64|  
-  
- **Header file** \<intrin.h>  
-  
-## Remarks  
- This function is only available in kernel mode, and the routine is only available as an intrinsic.  
-  
- For more information, see the AMD documentation.  
-  
-**END Microsoft Specific**  
-  
-## See Also  
- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[in] The model specific register to read.
+
+## Return Value
+
+The value in the specified register.
+
+## Requirements
+
+|Intrinsic|Architecture|
+|---------------|------------------|
+|`__readmsr`|x86, x64|
+
+**Header file** \<intrin.h>
+
+## Remarks
+
+This function is only available in kernel mode, and the routine is only available as an intrinsic.
+
+For more information, see the AMD documentation.
+
+**END Microsoft Specific**
+
+## See Also
+
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
