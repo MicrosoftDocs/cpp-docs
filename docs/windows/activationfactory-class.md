@@ -29,13 +29,13 @@ class ActivationFactory : public Details::RuntimeClass<typename Details::Interfa
 
 ### Parameters
 
-*I0*  
+*I0*<br/>
 The zeroth interface.
 
-*I1*  
+*I1*<br/>
 The first interface.
 
-*I2*  
+*I2*<br/>
 The second interface.
 
 ## Remarks

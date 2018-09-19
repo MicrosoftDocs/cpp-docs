@@ -30,10 +30,10 @@ explicit SyncLockT(
 
 ### Parameters
 
-*other*  
+*other*<br/>
 An rvalue-reference to another **SyncLockT** object.
 
-*sync*  
+*sync*<br/>
 A reference to another `SyncLockWithStatusT` object.
 
 ## Remarks

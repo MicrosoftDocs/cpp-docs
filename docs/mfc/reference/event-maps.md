@@ -78,10 +78,10 @@ BEGIN_EVENT_MAP(theClass,  baseClass)
 
 ### Parameters
 
-*theClass*  
+*theClass*<br/>
 Specifies the name of the control class whose event map this is.
 
-*baseClass*  
+*baseClass*<br/>
 Specifies the name of the base class of *theClass*.
 
 ### Remarks
@@ -116,13 +116,13 @@ EVENT_CUSTOM(pszName, pfnFire,  vtsParams)
 
 ### Parameters
 
-*pszName*  
+*pszName*<br/>
 The name of the event.
 
-*pfnFire*  
+*pfnFire*<br/>
 The name of the event firing function.
 
-*vtsParams*  
+*vtsParams*<br/>
 A space-separated list of one or more constants specifying the function's parameter list.
 
 ### Remarks
@@ -186,16 +186,16 @@ EVENT_CUSTOM_ID(
 
 ### Parameters
 
-*pszName*  
+*pszName*<br/>
 The name of the event.
 
-*dispid*  
+*dispid*<br/>
 The dispatch ID used by the control when firing the event.
 
-*pfnFire*  
+*pfnFire*<br/>
 The name of the event firing function.
 
-*vtsParams*  
+*vtsParams*<br/>
 A variable list of parameters passed to the control container when the event is fired.
 
 ### Remarks
@@ -257,10 +257,10 @@ ON_STDOLEVERB(iVerb, memberFxn)
 
 ### Parameters
 
-*iVerb*  
+*iVerb*<br/>
 The standard verb index for the verb being overridden.
 
-*memberFxn*  
+*memberFxn*<br/>
 The function called by the framework when the verb is invoked.
 
 ### Remarks

@@ -57,9 +57,9 @@ For more information about the template types `T` and `U`, see [SafeInt Function
 
 ## See Also
 
-[SafeInt Functions](../windows/safeint-functions.md)  
-[SafeInt Library](../windows/safeint-library.md)  
-[SafeInt Class](../windows/safeint-class.md)  
-[SafeGreaterThan](../windows/safegreaterthan.md)  
-[SafeLessThan](../windows/safelessthan.md)  
+[SafeInt Functions](../windows/safeint-functions.md)<br/>
+[SafeInt Library](../windows/safeint-library.md)<br/>
+[SafeInt Class](../windows/safeint-class.md)<br/>
+[SafeGreaterThan](../windows/safegreaterthan.md)<br/>
+[SafeLessThan](../windows/safelessthan.md)<br/>
 [SafeGreaterThanEquals](../windows/safegreaterthanequals.md)

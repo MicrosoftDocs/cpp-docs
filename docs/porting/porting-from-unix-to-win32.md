@@ -12,6 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Porting from UNIX to Win32
+
 When migrating applications from UNIX to Windows, you have several options:  
   
 - Using UNIX libraries to port applications from UNIX to Win32  
@@ -68,6 +69,6 @@ Another option UNIX programmers look at is the Windows POSIX subsystem. However,
   
 ## See Also  
  
-[Visual C++ Porting and Upgrading Guide](visual-cpp-change-history-2003-2015.md)   
-[UNIX](../c-runtime-library/unix.md)   
+[Visual C++ Porting and Upgrading Guide](visual-cpp-change-history-2003-2015.md)<br/>
+[UNIX](../c-runtime-library/unix.md)<br/>
 [Inference Rules](../build/inference-rules.md)

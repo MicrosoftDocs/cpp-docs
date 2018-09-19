@@ -30,6 +30,6 @@ ms.workload: ["cplusplus"]
      * Right-click the code, select the **Quick Actions and Refactorings** menu and select **Convert to Raw String Literal** from the context menu.
      * Click the ![Lightbulb](images/bulb.png) icon which appears in the left margin and select **Convert to Raw String Literal** from the context menu.
 
-1. The string will be immediately converted into a raw string literal.  
+1. The string will be immediately converted into a raw string literal.
 
    ![Raw String Literal result](images/stringliteral_result.png)

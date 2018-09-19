@@ -12,11 +12,13 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Scrolling, Arranging, Sorting, and Finding in List Controls
-List controls ([CListCtrl](../mfc/reference/clistctrl-class.md)) are scrollable by default. For more information, see [Scroll Position](/windows/desktop/Controls/using-list-view-controls) in the Windows SDK and the [Scroll](../mfc/reference/clistctrl-class.md#scroll) member function.  
-  
- You can call `CListCtrl` member functions to arrange list items in the control, sort items, and find particular items. For more information, see [Arranging, Sorting, and Finding](https://msdn.microsoft.com/library/windows/desktop/bb774736) in the Windows SDK and the [CListCtrl](../mfc/reference/clistctrl-class.md) members [Arrange](../mfc/reference/clistctrl-class.md#arrange), [SortItems](../mfc/reference/clistctrl-class.md#sortitems), and [FindItem](../mfc/reference/clistctrl-class.md#finditem).  
-  
-## See Also  
- [Using CListCtrl](../mfc/using-clistctrl.md)   
- [Controls](../mfc/controls-mfc.md)
+
+List controls ([CListCtrl](../mfc/reference/clistctrl-class.md)) are scrollable by default. For more information, see [Scroll Position](/windows/desktop/Controls/using-list-view-controls) in the Windows SDK and the [Scroll](../mfc/reference/clistctrl-class.md#scroll) member function.
+
+You can call `CListCtrl` member functions to arrange list items in the control, sort items, and find particular items. For more information, see [Arranging, Sorting, and Finding](https://msdn.microsoft.com/library/windows/desktop/bb774736) in the Windows SDK and the [CListCtrl](../mfc/reference/clistctrl-class.md) members [Arrange](../mfc/reference/clistctrl-class.md#arrange), [SortItems](../mfc/reference/clistctrl-class.md#sortitems), and [FindItem](../mfc/reference/clistctrl-class.md#finditem).
+
+## See Also
+
+[Using CListCtrl](../mfc/using-clistctrl.md)<br/>
+[Controls](../mfc/controls-mfc.md)
 

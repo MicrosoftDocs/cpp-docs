@@ -109,20 +109,20 @@ DISP_PROPERTY_NOTIFY(
 
 ### Parameters
 
-*theClass*  
- Name of the class.
+*theClass*<br/>
+Name of the class.
 
-*pszName*  
- External name of the property.
+*pszName*<br/>
+External name of the property.
 
-*memberName*  
- Name of the member variable in which the property is stored.
+*memberName*<br/>
+Name of the member variable in which the property is stored.
 
-*pfnAfterSet*  
- Name of member function to call when property is changed.
+*pfnAfterSet*<br/>
+Name of member function to call when property is changed.
 
-*vtPropType*  
- A value specifying the property's type.
+*vtPropType*<br/>
+A value specifying the property's type.
 
 ### Remarks
 
@@ -142,23 +142,23 @@ DISP_PROPERTY_PARAM(
 
 ### Parameters
 
-*theClass*  
- Name of the class.
+*theClass*<br/>
+Name of the class.
 
-*pszName*  
- External name of the property.
+*pszName*<br/>
+External name of the property.
 
-*memberGet*  
- Name of the member function used to get the property.
+*memberGet*<br/>
+Name of the member function used to get the property.
 
-*memberSet*  
- Name of the member function used to set the property.
+*memberSet*<br/>
+Name of the member function used to set the property.
 
-*vtPropType*  
- A value specifying the property's type.
+*vtPropType*<br/>
+A value specifying the property's type.
 
-*vtsParams*  
- A string of space separated VTS_ for each parameter.
+*vtsParams*<br/>
+A string of space separated VTS_ for each parameter.
 
 ### Remarks
 
@@ -217,28 +217,28 @@ DISP_PROPERTY_PARAM_ID(
 
 ### Parameters
 
-*theClass*  
+*theClass*<br/>
 Name of the class.
 
-*pszName*  
+*pszName*<br/>
 External name of the property.
 
-*dispid*  
+*dispid*<br/>
 The fixed DISPID for the property or method.
 
-*pfnGet*  
+*pfnGet*<br/>
 Name of the member function used to get the property.
 
-*pfnSet*  
+*pfnSet*<br/>
 Name of the member function used to set the property.
 
-*memberName*  
+*memberName*<br/>
 The name of the member variable to map to the property
 
-*vtPropType*  
+*vtPropType*<br/>
 A value specifying the property's type.
 
-*vtsParams*  
+*vtsParams*<br/>
 A string of space separated VTS_ for each parameter.
 
 ### Remarks
@@ -308,5 +308,5 @@ The dispatch interface returned from this function could then be used directly o
 
 ## See also
 
-[Technical Notes by Number](../mfc/technical-notes-by-number.md)  
-[Technical Notes by Category](../mfc/technical-notes-by-category.md)  
+[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
+[Technical Notes by Category](../mfc/technical-notes-by-category.md)

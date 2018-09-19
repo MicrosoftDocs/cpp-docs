@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 # Move Definition Location
 **What:** Lets you immediately move a function definition to the corresponding header file.
 
-**When:** You have a function that you want to move to a header file.  
+**When:** You have a function that you want to move to a header file.
 
 **Why:** You could manually move the function, but this feature will move it automatically, creating the header file if required.
 

@@ -26,7 +26,7 @@ Specifies the required component categories of the target class.
 
 ### Parameters
 
-*requires_category*  
+*requires_category*<br/>
 The ID of the required category.
 
 ## Remarks
@@ -68,5 +68,5 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[COM Attributes](../windows/com-attributes.md)  
+[COM Attributes](../windows/com-attributes.md)<br/>
 [implements_category](../windows/implements-category.md)  

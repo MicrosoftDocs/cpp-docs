@@ -26,10 +26,10 @@ inline void __declspec(noreturn)   RaiseException(
 
 ### Parameters
 
-*hr*  
+*hr*<br/>
 The exception code of the exception being raised; that is, the HRESULT of a failed operation.
 
-*dwExceptionFlags*  
+*dwExceptionFlags*<br/>
 A flag that indicates a continuable exception (the flag value is zero), or noncontinuable exception (flag value is nonzero). By default, the exception is noncontinuable.
 
 ## Remarks

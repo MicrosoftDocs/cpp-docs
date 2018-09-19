@@ -32,10 +32,10 @@ HRESULT As(
 
 ### Parameters
 
-*U*  
+*U*<br/>
 The interface to be represented by parameter *p*.
 
-*p*  
+*p*<br/>
 A **ComPtr** object that represents the interface specified by parameter *U*. Parameter *p* must not refer to the current **ComPtr** object.
 
 ## Remarks

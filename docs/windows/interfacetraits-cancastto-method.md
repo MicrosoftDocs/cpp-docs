@@ -29,13 +29,13 @@ static __forceinline bool CanCastTo(
 
 ### Parameters
 
-*ptr*  
+*ptr*<br/>
 The name of a pointer to a type.
 
-*riid*  
+*riid*<br/>
 The interface ID of `Base`.
 
-*ppv*  
+*ppv*<br/>
 If this operation is successful, *ppv* points to the interface specified by `Base`. Otherwise, *ppv* is set to **nullptr**.
 
 ## Return Value
@@ -56,5 +56,5 @@ For more information about `Base`, see the **Public Typedefs** section in [Inter
 
 ## See Also
 
-[InterfaceTraits Structure](../windows/interfacetraits-structure.md)  
+[InterfaceTraits Structure](../windows/interfacetraits-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

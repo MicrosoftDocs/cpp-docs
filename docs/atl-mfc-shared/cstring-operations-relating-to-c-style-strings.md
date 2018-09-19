@@ -90,6 +90,6 @@ For most function results, you can simply return a `CString` object by value.
 
 ## See Also
 
-[Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)   
+[Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [CString Argument Passing](../atl-mfc-shared/cstring-argument-passing.md)
 

@@ -13,52 +13,56 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_handle::swap
-Swaps objects with another `auto_handle`.  
-  
-## Syntax  
-  
-```  
-void swap(  
-   auto_handle<_element_type> % _right  
-);  
-```  
-  
-#### Parameters  
+
+Swaps objects with another `auto_handle`.
+
+## Syntax
+
+```
+void swap(
+   auto_handle<_element_type> % _right
+);
+```
+
+#### Parameters
+
 *_right*<br/>
-The `auto_handle` with which to swap objects.  
-  
-## Example  
-  
-```  
-// msl_auto_handle_swap.cpp  
-// compile with: /clr  
-#include <msclr\auto_handle.h>  
-  
-using namespace System;  
-using namespace msclr;  
-  
-int main() {  
-   auto_handle<String> s1 = "string one";  
-   auto_handle<String> s2 = "string two";  
-  
-   Console::WriteLine( "s1 = '{0}', s2 = '{1}'",  
-      s1->ToString(), s2->ToString() );  
-   s1.swap( s2 );  
-   Console::WriteLine( "s1 = '{0}', s2 = '{1}'",  
-      s1->ToString(), s2->ToString() );  
-}  
-```  
-  
-```Output  
-s1 = 'string one', s2 = 'string two'  
-s1 = 'string two', s2 = 'string one'  
-```  
-  
-## Requirements  
- **Header file** \<msclr\auto_handle.h>  
-  
- **Namespace** msclr  
-  
-## See Also  
- [auto_handle Members](../dotnet/auto-handle-members.md)   
- [swap Function (auto_handle)](../dotnet/swap-function-auto-handle.md)
+The `auto_handle` with which to swap objects.
+
+## Example
+
+```
+// msl_auto_handle_swap.cpp
+// compile with: /clr
+#include <msclr\auto_handle.h>
+
+using namespace System;
+using namespace msclr;
+
+int main() {
+   auto_handle<String> s1 = "string one";
+   auto_handle<String> s2 = "string two";
+
+   Console::WriteLine( "s1 = '{0}', s2 = '{1}'",
+      s1->ToString(), s2->ToString() );
+   s1.swap( s2 );
+   Console::WriteLine( "s1 = '{0}', s2 = '{1}'",
+      s1->ToString(), s2->ToString() );
+}
+```
+
+```Output
+s1 = 'string one', s2 = 'string two'
+s1 = 'string two', s2 = 'string one'
+```
+
+## Requirements
+
+**Header file** \<msclr\auto_handle.h>
+
+**Namespace** msclr
+
+## See Also
+
+[auto_handle Members](../dotnet/auto-handle-members.md)<br/>
+[swap Function (auto_handle)](../dotnet/swap-function-auto-handle.md)

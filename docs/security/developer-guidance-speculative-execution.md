@@ -16,7 +16,7 @@ This article contains guidance for developers to assist with identifying and mit
 
 The guidance provided by this article is related to the classes of vulnerabilities represented by:
 
-1. CVE-2017-5753, also known as Spectre variant 1. This hardware vulnerability class is related to side channels that can arise due to speculative execution that occurs as a result of a conditional branch misprediction. The Visual C++ compiler in Visual Studio 2017 (starting with version 15.5.5) includes support for the `/Qspectre` switch which provides a compile-time mitigation for a limited set of potentially vulnerable coding patterns related to CVE-2017-5753. The `/Qspectre` switch is also available in Visual Studio 2015 Update 3 through [KB 4338871](https://support.microsoft.com/help/4338871). The documentation for the [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) flag provides more information on its effects and usage. 
+1. CVE-2017-5753, also known as Spectre variant 1. This hardware vulnerability class is related to side channels that can arise due to speculative execution that occurs as a result of a conditional branch misprediction. The Visual C++ compiler in Visual Studio 2017 (starting with version 15.5.5) includes support for the `/Qspectre` switch which provides a compile-time mitigation for a limited set of potentially vulnerable coding patterns related to CVE-2017-5753. The `/Qspectre` switch is also available in Visual Studio 2015 Update 3 through [KB 4338871](https://support.microsoft.com/help/4338871). The documentation for the [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) flag provides more information on its effects and usage.
 
 2. CVE-2018-3639, also known as [Speculative Store Bypass (SSB)](https://aka.ms/sescsrdssb). This hardware vulnerability class is related to side channels that can arise due to speculative execution of a load ahead of a dependent store as a result of a memory access misprediction.
 
@@ -40,9 +40,9 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 }
 ```
 
-In this example, `ReadByte` is supplied a buffer, a buffer size, and an index into that buffer. The index parameter, as specified by `untrusted_index`, is supplied by a less privileged context, such as a non-administrative process. If `untrusted_index` is less than `buffer_size`, then the character at that index is read from `buffer` and used to index into a shared region of memory referred to by `shared_buffer`. 
+In this example, `ReadByte` is supplied a buffer, a buffer size, and an index into that buffer. The index parameter, as specified by `untrusted_index`, is supplied by a less privileged context, such as a non-administrative process. If `untrusted_index` is less than `buffer_size`, then the character at that index is read from `buffer` and used to index into a shared region of memory referred to by `shared_buffer`.
 
-From an architectural perspective, this code sequence is perfectly safe as it is guaranteed that `untrusted_index` will always be less than `buffer_size`. However, in the presence of speculative execution, it is possible that the CPU will mispredict the conditional branch and execute the body of the if statement even when `untrusted_index` is greater than or equal to `buffer_size`. As a consequence of this, the CPU may speculatively read a byte from beyond the bounds of `buffer` (which could be a secret) and could then use that byte value to compute the address of a subsequent load through `shared_buffer`. 
+From an architectural perspective, this code sequence is perfectly safe as it is guaranteed that `untrusted_index` will always be less than `buffer_size`. However, in the presence of speculative execution, it is possible that the CPU will mispredict the conditional branch and execute the body of the if statement even when `untrusted_index` is greater than or equal to `buffer_size`. As a consequence of this, the CPU may speculatively read a byte from beyond the bounds of `buffer` (which could be a secret) and could then use that byte value to compute the address of a subsequent load through `shared_buffer`.
 
 While the CPU will eventually detect this misprediction, residual side effects may be left in the CPU cache that reveal information about the byte value that was read out of bounds from `buffer`. These side effects can be detected by a less privileged context running on the system by probing how quickly each cache line in `shared_buffer` is accessed. The steps that can be taken to accomplish this are:
 
@@ -58,14 +58,14 @@ The above steps provide an example of using a technique known as FLUSH+RELOAD in
 
 ## What software scenarios can be impacted?
 
-Developing secure software using a process like the [Security Development Lifecycle](https://www.microsoft.com/en-us/sdl/) (SDL) typically requires developers to identify the trust boundaries that exist in their application. A trust boundary exists in places where an application may interact with data provided by a less-trusted context, such as another process on the system or a non-administrative user mode process in the case of a kernel-mode device driver. The new class of vulnerabilities involving speculative execution side channels is relevant to many of the trust boundaries in existing software security models that isolate code and data on a device. 
+Developing secure software using a process like the [Security Development Lifecycle](https://www.microsoft.com/en-us/sdl/) (SDL) typically requires developers to identify the trust boundaries that exist in their application. A trust boundary exists in places where an application may interact with data provided by a less-trusted context, such as another process on the system or a non-administrative user mode process in the case of a kernel-mode device driver. The new class of vulnerabilities involving speculative execution side channels is relevant to many of the trust boundaries in existing software security models that isolate code and data on a device.
 
 The following table provides a summary of the software security models where developers may need to be concerned about these vulnerabilities occurring:
 
 |Trust boundary|Description|
 |----------------|----------------|
-|Virtual machine boundary|Applications that isolate workloads in separate virtual machines that receive untrusted data from another virtual machine may be at risk.| 
-|Kernel boundary|A kernel-mode device driver that receives untrusted data from a non-administrative user mode process may be at risk.| 
+|Virtual machine boundary|Applications that isolate workloads in separate virtual machines that receive untrusted data from another virtual machine may be at risk.|
+|Kernel boundary|A kernel-mode device driver that receives untrusted data from a non-administrative user mode process may be at risk.|
 |Process boundary|An application that receives untrusted data from another process running on the local system, such as through a Remote Procedure Call (RPC), shared memory, or other Inter-Process Communication (IPC) mechanisms may be at risk.|
 |Enclave boundary|An application that executes within a secure enclave (such as Intel SGX) that receives untrusted data from outside of the enclave may be at risk.|
 |Language boundary|An application that interprets or Just-In-Time (JIT) compiles and executes untrusted code written in a higher-level language may be at risk.|
@@ -118,7 +118,7 @@ unsigned char ReadBytes(unsigned char *buffer, unsigned int buffer_size) {
 
 ### Array out-of-bounds load feeding an indirect branch
 
-This coding pattern involves the case where a conditional branch misprediction can lead to an out-of-bounds access to an array of function pointers which then leads to an indirect branch to the target address that was read out-of-bounds. The following snippet provides an example that demonstrates this. 
+This coding pattern involves the case where a conditional branch misprediction can lead to an out-of-bounds access to an array of function pointers which then leads to an indirect branch to the target address that was read out-of-bounds. The following snippet provides an example that demonstrates this.
 
 In this example, an untrusted message identifier is provided to DispatchMessage through the `untrusted_message_id` parameter. If `untrusted_message_id` is less than `MAX_MESSAGE_ID`, then it is used to index into an array of function pointers and branch to the corresponding branch target. This code is safe architecturally, but if the CPU mispredicts the conditional branch, it could result in `DispatchTable` being indexed by `untrusted_message_id` when its value is greater than or equal to `MAX_MESSAGE_ID`, thus leading to an out-of-bounds access. This could result in speculative execution from a branch target address that is derived beyond the bounds of the array which could lead to information disclosure depending on the code that is executed speculatively.
 
@@ -173,7 +173,7 @@ It should be noted that both of these examples involve speculative modification 
 
 ## Speculative type confusion
 
-This category deals with coding patterns that can give rise to a speculative type confusion. This occurs when memory is accessed using an incorrect type along a non-architectural path during speculative execution. Both conditional branch misprediction and speculative store bypass can potentially lead to a speculative type confusion. 
+This category deals with coding patterns that can give rise to a speculative type confusion. This occurs when memory is accessed using an incorrect type along a non-architectural path during speculative execution. Both conditional branch misprediction and speculative store bypass can potentially lead to a speculative type confusion.
 
 For speculative store bypass, this could occur in scenarios where a compiler reuses a stack location for variables of multiple types. This is because the architectural store of a variable of type `A` may be bypassed, thus allowing the load of type `A` to speculatively execute before the variable is assigned. If the previously stored variable is of a different type, then this can create the conditions for a speculative type confusion.
 
@@ -353,6 +353,5 @@ Another technique that can be used to mitigate speculative execution side channe
 
 ## See Also
 
-[Guidance to mitigate speculative execution side-channel vulnerabilities](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180002)
-
+[Guidance to mitigate speculative execution side-channel vulnerabilities](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180002)<br/>
 [Mitigating speculative execution side channel hardware vulnerabilities](https://blogs.technet.microsoft.com/srd/2018/03/15/mitigating-speculative-execution-side-channel-hardware-vulnerabilities/)

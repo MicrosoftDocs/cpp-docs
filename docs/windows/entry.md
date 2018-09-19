@@ -26,7 +26,7 @@ Specifies an exported function or constant in a module by identifying the entry 
 
 ### Parameters
 
-*id*  
+*id*<br/>
 The ID of the entry point.
 
 ## Remarks

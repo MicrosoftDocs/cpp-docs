@@ -12,20 +12,22 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Destroying Window Objects
-Care must be taken with your own child windows to destroy the C++ window object when the user is finished with the window. If these objects are not destroyed, your application will not recover their memory. Fortunately, the framework manages window destruction as well as creation for frame windows, views, and dialog boxes. If you create additional windows, you are responsible for destroying them.  
-  
-## What do you want to know more about  
-  
--   [Window destruction sequence](../mfc/window-destruction-sequence.md)  
-  
--   [Allocating and deallocating window memory](../mfc/allocating-and-deallocating-window-memory.md)  
-  
--   [Detaching a CWnd from its HWND](../mfc/detaching-a-cwnd-from-its-hwnd.md)  
-  
--   [General Window Creation Sequence](../mfc/general-window-creation-sequence.md)  
-  
--   [Destroying frame windows](../mfc/destroying-frame-windows.md)  
-  
-## See Also  
- [Window Objects](../mfc/window-objects.md)
+
+Care must be taken with your own child windows to destroy the C++ window object when the user is finished with the window. If these objects are not destroyed, your application will not recover their memory. Fortunately, the framework manages window destruction as well as creation for frame windows, views, and dialog boxes. If you create additional windows, you are responsible for destroying them.
+
+## What do you want to know more about
+
+- [Window destruction sequence](../mfc/window-destruction-sequence.md)
+
+- [Allocating and deallocating window memory](../mfc/allocating-and-deallocating-window-memory.md)
+
+- [Detaching a CWnd from its HWND](../mfc/detaching-a-cwnd-from-its-hwnd.md)
+
+- [General Window Creation Sequence](../mfc/general-window-creation-sequence.md)
+
+- [Destroying frame windows](../mfc/destroying-frame-windows.md)
+
+## See Also
+
+[Window Objects](../mfc/window-objects.md)
 

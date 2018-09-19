@@ -13,25 +13,27 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # initonly (C++/CLI)
-**initonly** is a context-sensitive keyword that indicates that variable assignment can occur only as part of the declaration or in a static constructor in the same class.  
-  
- The following example shows how to use `initionly`:  
-  
-```  
-// mcpp_initonly.cpp  
-// compile with: /clr /c  
-ref struct Y1 {  
-   initonly  
-   static int staticConst1;  
-  
-   initonly  
-   static int staticConst2 = 0;  
-  
-   static Y1() {  
-      staticConst1 = 0;  
-   }  
-};  
-```  
-  
-## See Also  
- [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md)
+
+**initonly** is a context-sensitive keyword that indicates that variable assignment can occur only as part of the declaration or in a static constructor in the same class.
+
+The following example shows how to use `initionly`:
+
+```
+// mcpp_initonly.cpp
+// compile with: /clr /c
+ref struct Y1 {
+   initonly
+   static int staticConst1;
+
+   initonly
+   static int staticConst2 = 0;
+
+   static Y1() {
+      staticConst1 = 0;
+   }
+};
+```
+
+## See Also
+
+[Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md)

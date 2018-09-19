@@ -13,35 +13,37 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Event Handler Wizard
-This wizard adds an event handler for a dialog box control to the class of your choice. If you add an event handler from the [Properties window](/visualstudio/ide/reference/properties-window), you can add it only to the class that implements the dialog box. See [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md) for more information.  
-  
+
+This wizard adds an event handler for a dialog box control to the class of your choice. If you add an event handler from the [Properties window](/visualstudio/ide/reference/properties-window), you can add it only to the class that implements the dialog box. See [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md) for more information.
+
 - **Command name**
 
-   Identifies the selected control, for which the event handler is added. This box is unavailable.  
-  
+   Identifies the selected control, for which the event handler is added. This box is unavailable.
+
 - **Message type**
 
-   Displays the list of current possible message handlers for the selected control.  
-  
+   Displays the list of current possible message handlers for the selected control.
+
 - **Function handler name**
 
-   Displays the name of the function that is added to handle the event. By default, the name is based on the message type and the command, prepended by "On". For example, for the button called `IDC_BUTTON1`, the message type `BN_CLICKED` displays the function handler name `OnBnClickedButton1`.  
-  
+   Displays the name of the function that is added to handle the event. By default, the name is based on the message type and the command, prepended by "On". For example, for the button called `IDC_BUTTON1`, the message type `BN_CLICKED` displays the function handler name `OnBnClickedButton1`.
+
 - **Class list**
 
-   Displays available classes to which you can add an event handler. The class for the selected dialog box is displayed in red.  
-  
+   Displays available classes to which you can add an event handler. The class for the selected dialog box is displayed in red.
+
 - **Handler description**
 
-   Provides a description for the item selected in the **Message type** box. This box is unavailable.  
-  
+   Provides a description for the item selected in the **Message type** box. This box is unavailable.
+
 - **Add and edit**
 
-   Adds the message handler to the selected class or object, and then opens the text editor to the new function so you can add the control notification handler code.  
-  
+   Adds the message handler to the selected class or object, and then opens the text editor to the new function so you can add the control notification handler code.
+
 - **Edit code**
 
-   Opens the text editor to the selected existing function so you can add or edit the control notification handler code.  
-  
-## See Also  
- [Adding an Event Handler](../ide/adding-an-event-handler-visual-cpp.md)
+   Opens the text editor to the selected existing function so you can add or edit the control notification handler code.
+
+## See Also
+
+[Adding an Event Handler](../ide/adding-an-event-handler-visual-cpp.md)

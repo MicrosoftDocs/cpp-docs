@@ -49,10 +49,10 @@ WRL_NOTHROW ComPtr(
 
 ### Parameters
 
-*U*  
+*U*<br/>
 The type of the *other* parameter.
 
-*other*  
+*other*<br/>
 An object of type *U*.
 
 ## Return Value

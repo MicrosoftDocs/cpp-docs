@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 # Change Signature
 **What:** Lets you modify a function's parameters.
 
-**When:** You want to re-order, add, remove, or modify a function's parameters that is currently being used in a variety of locations.  
+**When:** You want to re-order, add, remove, or modify a function's parameters that is currently being used in a variety of locations.
 
 **Why:** You could manually change these parameters yourself, and then find all calls to that function and change them one-by-one, but that could lead to errors.  This refactoring tool will perform the task automatically.
 

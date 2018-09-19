@@ -27,7 +27,7 @@ class ComPtrRefBase;
 
 ### Parameters
 
-*T*  
+*T*<br/>
 A [ComPtr\<T>](../windows/comptr-class.md) type or a type derived from it, not merely the interface represented by the **ComPtr**.
 
 ## Remarks

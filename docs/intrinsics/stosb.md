@@ -61,9 +61,9 @@ This routine is only available as an intrinsic.
 #include <stdio.h>
 #include <intrin.h>
 
-#pragma intrinsic(__stosb)  
+#pragma intrinsic(__stosb)
 
-int main()  
+int main()
 {
     unsigned char c = 0x40; /* '@' character */
     unsigned char s[] = "*********************************";
@@ -73,12 +73,12 @@ int main()
     printf_s("%s\n", s);
 
 }
-```  
+```
 
 ```Output
-*********************************  
-*@@@@@@**************************  
-```  
+*********************************
+*@@@@@@**************************
+```
 
 **END Microsoft Specific**
 

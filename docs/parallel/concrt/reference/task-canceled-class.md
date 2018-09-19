@@ -13,45 +13,50 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # task_canceled Class
-This class describes an exception thrown by the PPL tasks layer in order to force the current task to cancel. It is also thrown by the `get()` method on [task](/visualstudio/extensibility/debugger/task-class-internal-members), for a canceled task.  
-  
-## Syntax  
-  
+
+This class describes an exception thrown by the PPL tasks layer in order to force the current task to cancel. It is also thrown by the `get()` method on [task](/visualstudio/extensibility/debugger/task-class-internal-members), for a canceled task.
+
+## Syntax
+
 ```
 class task_canceled : public std::exception;
-```  
-  
-## Members  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[task_canceled](#ctor)|Overloaded. Constructs a `task_canceled` object.|  
-  
-## Inheritance Hierarchy  
- `exception`  
-  
- `task_canceled`  
-  
-## Requirements  
- **Header:** concrt.h  
-  
- **Namespace:** concurrency  
-  
-##  <a name="ctor"></a> task_canceled 
+```
 
- Constructs a `task_canceled` object.  
-  
+## Members
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[task_canceled](#ctor)|Overloaded. Constructs a `task_canceled` object.|
+
+## Inheritance Hierarchy
+
+`exception`
+
+`task_canceled`
+
+## Requirements
+
+**Header:** concrt.h
+
+**Namespace:** concurrency
+
+##  <a name="ctor"></a> task_canceled
+
+Constructs a `task_canceled` object.
+
 ```
 explicit _CRTIMP task_canceled(_In_z_ const char* _Message) throw();
 
 task_canceled() throw();
-```  
-  
-### Parameters  
+```
+
+### Parameters
+
 *_Message*<br/>
-A descriptive message of the error.  
-  
-## See Also  
- [concurrency Namespace](concurrency-namespace.md)
+A descriptive message of the error.
+
+## See Also
+
+[concurrency Namespace](concurrency-namespace.md)

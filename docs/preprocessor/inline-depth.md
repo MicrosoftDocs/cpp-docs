@@ -40,5 +40,5 @@ The **inline_depth** pragma has no effect on functions marked with `__forceinlin
   
 ## See Also  
  
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)   
+[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 [inline_recursion](../preprocessor/inline-recursion.md)

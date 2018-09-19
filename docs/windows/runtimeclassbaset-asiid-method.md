@@ -29,16 +29,16 @@ __forceinline static HRESULT AsIID(
 
 ### Parameters
 
-*T*  
+*T*<br/>
 A type that implements the interface ID specified by parameter *riid*.
 
-*implements*  
+*implements*<br/>
 A variable of the type specified by template parameter *T*.
 
-*riid*  
+*riid*<br/>
 The interface ID to retrieve.
 
-*ppvObject*  
+*ppvObject*<br/>
 If this operation is successful, a pointer-to-a-pointer to the interface specified by parameter *riid*.
 
 ## Return Value
@@ -57,5 +57,5 @@ Retrieves a pointer to the specified interface ID.
 
 ## See Also
 
-[RuntimeClassBaseT Structure](../windows/runtimeclassbaset-structure.md)  
+[RuntimeClassBaseT Structure](../windows/runtimeclassbaset-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

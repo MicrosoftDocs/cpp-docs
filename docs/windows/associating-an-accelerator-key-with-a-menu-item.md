@@ -21,5 +21,5 @@ Win32
 
 ## See Also
 
-[Accelerator Editor](../windows/accelerator-editor.md)  
+[Accelerator Editor](../windows/accelerator-editor.md)<br/>
 [Resource Editors](../windows/resource-editors.md)

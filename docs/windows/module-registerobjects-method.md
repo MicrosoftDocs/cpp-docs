@@ -26,10 +26,10 @@ HRESULT RegisterObjects(
 
 ### Parameters
 
-*module*  
+*module*<br/>
 An array of COM or Windows Runtime objects.
 
-*serverName*  
+*serverName*<br/>
 Name of the server that created the objects.
 
 ## Return Value

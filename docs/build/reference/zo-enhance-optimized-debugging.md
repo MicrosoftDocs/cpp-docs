@@ -44,6 +44,6 @@ The **/Zo** switch is available starting in Visual Studio 2013 Update 3, and it 
 
 ## See Also
 
-[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)
-[/Z7, /Zi, /ZI (Debug Information Format)](../../build/reference/z7-zi-zi-debug-information-format.md)
+[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)<br/>
+[/Z7, /Zi, /ZI (Debug Information Format)](../../build/reference/z7-zi-zi-debug-information-format.md)<br/>
 [Edit and Continue](/visualstudio/debugger/edit-and-continue)

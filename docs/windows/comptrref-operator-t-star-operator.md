@@ -34,5 +34,5 @@ Returns the value of the [ptr_](../windows/comptrrefbase-ptr-data-member.md) dat
 
 ## See Also
 
-[ComPtrRef Class](../windows/comptrref-class.md)  
+[ComPtrRef Class](../windows/comptrref-class.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

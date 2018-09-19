@@ -26,5 +26,5 @@ None
 
 ## See Also
 
-[Image Menu](../windows/image-menu-image-editor-for-icons.md)  
+[Image Menu](../windows/image-menu-image-editor-for-icons.md)<br/>
 [Image Editor for Icons](../windows/image-editor-for-icons.md)

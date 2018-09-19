@@ -32,5 +32,5 @@ virtual void OnCancel(
 
 ## See Also
 
-[AsyncBase Class](../windows/asyncbase-class.md)  
+[AsyncBase Class](../windows/asyncbase-class.md)<br/>
 [AsyncBase::Cancel Method](../windows/asyncbase-cancel-method.md)

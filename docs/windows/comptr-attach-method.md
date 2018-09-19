@@ -26,7 +26,7 @@ void Attach(
 
 ### Parameters
 
-*other*  
+*other*<br/>
 An interface type.
 
 ## Requirements

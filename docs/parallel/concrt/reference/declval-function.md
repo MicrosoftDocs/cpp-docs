@@ -12,22 +12,26 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # declval Function
-## Syntax  
-  
+
+## Syntax
+
 ```
 template<class _T>
 _T&& declval();
-```  
-  
-#### Parameters  
- `_T`  
-  
-## Return Value  
-  
-## Requirements  
- **Header:** ppltasks.h  
-  
- **Namespace:** stdx  
-  
-## See Also  
- [stdx Namespace](stdx-namespace.md)
+```
+
+#### Parameters
+
+`_T`
+
+## Return Value
+
+## Requirements
+
+**Header:** ppltasks.h
+
+**Namespace:** stdx
+
+## See Also
+
+[stdx Namespace](stdx-namespace.md)

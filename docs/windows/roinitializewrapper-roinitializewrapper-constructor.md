@@ -23,7 +23,7 @@ RoInitializeWrapper(   RO_INIT_TYPE flags)
 
 ### Parameters
 
-*flags*  
+*flags*<br/>
 One of the RO_INIT_TYPE enumerations, which specifies the support provided by the Windows Runtime.
 
 ## Remarks

@@ -13,9 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # TN063: Debugging Internet MFC extension DLLs
-This information is obsolete and has been removed.  
-  
-## See Also  
- [Technical Notes by Number](../mfc/technical-notes-by-number.md)   
- [Technical Notes by Category](../mfc/technical-notes-by-category.md)
+
+This information is obsolete and has been removed.
+
+## See Also
+
+[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
+[Technical Notes by Category](../mfc/technical-notes-by-category.md)
 

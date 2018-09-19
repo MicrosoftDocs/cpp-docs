@@ -12,14 +12,17 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Tool Tips
-The procedures are distinct for adding tool tips to controls contained in windows derived from MFC class [CFrameWnd](../mfc/reference/cframewnd-class.md) and windows not derived from `CFrameWnd`.  
-  
-## What do you want to know more about  
- Tool tips for controls in a window that is:  
-  
--   [Toolbar Tooltips (derived from CFrameWnd)](../mfc/toolbar-tool-tips.md)  
-  
--   [Tooltips in Windows not derived from CFrameWnd](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)  
-  
-## See Also  
- [User Interface Elements](../mfc/user-interface-elements-mfc.md)
+
+The procedures are distinct for adding tool tips to controls contained in windows derived from MFC class [CFrameWnd](../mfc/reference/cframewnd-class.md) and windows not derived from `CFrameWnd`.
+
+## What do you want to know more about
+
+Tool tips for controls in a window that is:
+
+- [Toolbar Tooltips (derived from CFrameWnd)](../mfc/toolbar-tool-tips.md)
+
+- [Tooltips in Windows not derived from CFrameWnd](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
+
+## See Also
+
+[User Interface Elements](../mfc/user-interface-elements-mfc.md)

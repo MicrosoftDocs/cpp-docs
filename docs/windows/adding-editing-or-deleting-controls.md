@@ -39,6 +39,6 @@ Win32
 
 ## See Also
 
-[Controls in Dialog Boxes](controls-in-dialog-boxes.md)  
-[Adding Event Handlers for Dialog Box Controls](adding-event-handlers-for-dialog-box-controls.md)  
+[Controls in Dialog Boxes](controls-in-dialog-boxes.md)<br/>
+[Adding Event Handlers for Dialog Box Controls](adding-event-handlers-for-dialog-box-controls.md)<br/>
 [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)

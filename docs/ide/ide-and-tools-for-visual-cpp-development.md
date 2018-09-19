@@ -19,7 +19,7 @@ In addition to shared tools in the Visual Studio IDE, MSVC has several tools spe
 
 ## Creating a solution and project(s)
 
-A *project* is basically a set of source code files and resources such as images or data files that are built into an executable file. 
+A *project* is basically a set of source code files and resources such as images or data files that are built into an executable file.
 
 Visual Studio 2015 provides support for MSBuild projects. You can download Visual Studio extensions for other build systems such as Qt or CMake.
 
@@ -109,7 +109,7 @@ You can debug your program by pressing **F5** when your project configuration is
 
 ## Deploy completed applications
 
-You deploy a UWP app to customers through the Microsoft Store through the **Project** > **Store** menu option. Deployment of the CRT is handled automatically behind the scenes. For more information, see [Publish Windows apps and games](/windows/uwp/publish/). 
+You deploy a UWP app to customers through the Microsoft Store through the **Project** > **Store** menu option. Deployment of the CRT is handled automatically behind the scenes. For more information, see [Publish Windows apps and games](/windows/uwp/publish/).
 
 When you deploy a native C++ desktop application to another computer, you must install the application itself and any library files that the application depends on. There are three ways to deploy the Universal C++ runtime (UCRT) with an application: central deployment, local deployment, or static linking. For more information, see [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md).
 

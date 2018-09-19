@@ -28,7 +28,7 @@ WRL_NOTHROW Event(
 
 ### Parameters
 
-*h*  
+*h*<br/>
 Handle to an event. By default, *h* is initialized to **nullptr**.
 
 ## Requirements

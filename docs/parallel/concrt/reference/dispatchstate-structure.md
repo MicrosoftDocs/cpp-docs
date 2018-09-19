@@ -13,65 +13,73 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # DispatchState Structure
-The `DispatchState` structure is used to transfer state to the `IExecutionContext::Dispatch` method. It describes the circumstances under which the `Dispatch` method is invoked on an `IExecutionContext` interface.  
-  
-## Syntax  
-  
+
+The `DispatchState` structure is used to transfer state to the `IExecutionContext::Dispatch` method. It describes the circumstances under which the `Dispatch` method is invoked on an `IExecutionContext` interface.
+
+## Syntax
+
 ```
 struct DispatchState;
-```  
-  
-## Members  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[DispatchState::DispatchState](#ctor)|Constructs a new `DispatchState` object.|  
-  
-### Public Data Members  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[DispatchState::m_dispatchStateSize](#m_dispatchstatesize)|Size of this structure, which is used for versioning.|  
-|[DispatchState::m_fIsPreviousContextAsynchronouslyBlocked](#m_fispreviouscontextasynchronouslyblocked)|Tells whether this context has entered the `Dispatch` method because the previous context asynchronously blocked. This is used only on the UMS scheduling context, and is set to the value `0` for all other execution contexts.|  
-|[DispatchState::m_reserved](#m_reserved)|Bits reserved for future information passing.|  
-  
-## Inheritance Hierarchy  
- `DispatchState`  
-  
-## Requirements  
- **Header:** concrtrm.h  
-  
- **Namespace:** concurrency  
-  
-##  <a name="ctor"></a>  DispatchState::DispatchState Constructor  
- Constructs a new `DispatchState` object.  
-  
+```
+
+## Members
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[DispatchState::DispatchState](#ctor)|Constructs a new `DispatchState` object.|
+
+### Public Data Members
+
+|Name|Description|
+|----------|-----------------|
+|[DispatchState::m_dispatchStateSize](#m_dispatchstatesize)|Size of this structure, which is used for versioning.|
+|[DispatchState::m_fIsPreviousContextAsynchronouslyBlocked](#m_fispreviouscontextasynchronouslyblocked)|Tells whether this context has entered the `Dispatch` method because the previous context asynchronously blocked. This is used only on the UMS scheduling context, and is set to the value `0` for all other execution contexts.|
+|[DispatchState::m_reserved](#m_reserved)|Bits reserved for future information passing.|
+
+## Inheritance Hierarchy
+
+`DispatchState`
+
+## Requirements
+
+**Header:** concrtrm.h
+
+**Namespace:** concurrency
+
+##  <a name="ctor"></a>  DispatchState::DispatchState Constructor
+
+Constructs a new `DispatchState` object.
+
 ```
 DispatchState();
-```  
-  
-##  <a name="m_dispatchstatesize"></a>  DispatchState::m_dispatchStateSize Data Member  
- Size of this structure, which is used for versioning.  
-  
+```
+
+##  <a name="m_dispatchstatesize"></a>  DispatchState::m_dispatchStateSize Data Member
+
+Size of this structure, which is used for versioning.
+
 ```
 unsigned long m_dispatchStateSize;
-```  
-  
-##  <a name="m_fispreviouscontextasynchronouslyblocked"></a>  DispatchState::m_fIsPreviousContextAsynchronouslyBlocked Data Member  
- Tells whether this context has entered the `Dispatch` method because the previous context asynchronously blocked. This is used only on the UMS scheduling context, and is set to the value `0` for all other execution contexts.  
-  
+```
+
+##  <a name="m_fispreviouscontextasynchronouslyblocked"></a>  DispatchState::m_fIsPreviousContextAsynchronouslyBlocked Data Member
+
+Tells whether this context has entered the `Dispatch` method because the previous context asynchronously blocked. This is used only on the UMS scheduling context, and is set to the value `0` for all other execution contexts.
+
 ```
 unsigned int m_fIsPreviousContextAsynchronouslyBlocked : 1;
-```  
-  
-##  <a name="m_reserved"></a>  DispatchState::m_reserved Data Member  
- Bits reserved for future information passing.  
-  
+```
+
+##  <a name="m_reserved"></a>  DispatchState::m_reserved Data Member
+
+Bits reserved for future information passing.
+
 ```
 unsigned int m_reserved : 31;
-```  
-  
-## See Also  
- [concurrency Namespace](concurrency-namespace.md)
+```
+
+## See Also
+
+[concurrency Namespace](concurrency-namespace.md)

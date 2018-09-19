@@ -31,13 +31,13 @@ explicit SyncLockWithStatusT(
 
 ### Parameters
 
-*other*  
+*other*<br/>
 An rvalue-reference to another **SyncLockWithStatusT** object.
 
-*sync*  
+*sync*<br/>
 A reference to another **SyncLockWithStatusT** object.
 
-*status*  
+*status*<br/>
 The value of the [status_](../windows/synclockwithstatust-status-data-member.md) data member of the *other* parameter or the *sync* parameter.
 
 ## Remarks
@@ -54,5 +54,5 @@ The first constructor initializes the current **SyncLockWithStatusT** object fro
 
 ## See Also
 
-[SyncLockWithStatusT Class](../windows/synclockwithstatust-class.md)  
+[SyncLockWithStatusT Class](../windows/synclockwithstatust-class.md)<br/>
 [SyncLockWithStatusT::GetStatus Method](../windows/synclockwithstatust-getstatus-method.md)

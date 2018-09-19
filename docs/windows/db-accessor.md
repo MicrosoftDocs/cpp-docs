@@ -27,10 +27,10 @@ Groups `db_column` attributes that participate in `IAccessor`-based binding.
 
 #### Parameters
 
-*num*  
+*num*<br/>
 Specifies the accessor number (a zero-based integer index). You must specify accessor numbers in increasing order, using integers or defined values.
 
-*auto*  
+*auto*<br/>
 A Boolean value that specifies whether the accessor is automatically retrieved (TRUE) or not retrieved (FALSE).
 
 ## Remarks

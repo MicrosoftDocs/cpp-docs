@@ -13,37 +13,42 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __readpmc
-**Microsoft Specific**  
-  
- Generates the `rdpmc` instruction, which reads the performance monitoring counter specified by `counter`.  
-  
-## Syntax  
-  
-```  
-unsigned __int64 __readpmc(   
-   unsigned long counter   
-);  
-```  
-  
-#### Parameters  
+
+**Microsoft Specific**
+
+Generates the `rdpmc` instruction, which reads the performance monitoring counter specified by `counter`.
+
+## Syntax
+
+```
+unsigned __int64 __readpmc( 
+   unsigned long counter 
+);
+```
+
+#### Parameters
+
 *counter*<br/>
-[in] The performance counter to read.  
-  
-## Return Value  
- The value of the specified performance counter.  
-  
-## Requirements  
-  
-|Intrinsic|Architecture|  
-|---------------|------------------|  
-|`__readpmc`|x86, x64|  
-  
- **Header file** \<intrin.h>  
-  
-## Remarks  
- This intrinsic is available in kernel mode only, and the routine is only available as an intrinsic.  
-  
-**END Microsoft Specific**  
-  
-## See Also  
- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[in] The performance counter to read.
+
+## Return Value
+
+The value of the specified performance counter.
+
+## Requirements
+
+|Intrinsic|Architecture|
+|---------------|------------------|
+|`__readpmc`|x86, x64|
+
+**Header file** \<intrin.h>
+
+## Remarks
+
+This intrinsic is available in kernel mode only, and the routine is only available as an intrinsic.
+
+**END Microsoft Specific**
+
+## See Also
+
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

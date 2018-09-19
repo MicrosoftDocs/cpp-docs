@@ -55,6 +55,6 @@ There are several caveats:
 
 ## See Also
 
-[Using CStringT](../atl-mfc-shared/using-cstringt.md)   
+[Using CStringT](../atl-mfc-shared/using-cstringt.md)<br/>
 [Using CString](../atl-mfc-shared/using-cstring.md)
 

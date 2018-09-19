@@ -34,8 +34,8 @@ None
 
 ## See Also
 
-[Displaying or Hiding the Colors Window](../windows/displaying-or-hiding-the-colors-window-image-editor-for-icons.md)  
-[Creating Transparent or Inverse Regions in Device Images](../windows/creating-transparent-or-inverse-regions-in-device-images.md)  
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)  
-[Custom Color Selector Dialog Box](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md)  
+[Displaying or Hiding the Colors Window](../windows/displaying-or-hiding-the-colors-window-image-editor-for-icons.md)<br/>
+[Creating Transparent or Inverse Regions in Device Images](../windows/creating-transparent-or-inverse-regions-in-device-images.md)<br/>
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+[Custom Color Selector Dialog Box](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md)<br/>
 [Image Editor for Icons](../windows/image-editor-for-icons.md)

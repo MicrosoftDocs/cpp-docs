@@ -12,10 +12,12 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Mapping Messages
-Each framework class that can receive messages or commands has its own "message map." The framework uses message maps to connect messages and commands to their handler functions. Any class derived from class `CCmdTarget` can have a message map. Other articles explain message maps in detail and describe how to use them.  
-  
- In spite of the name "message map," message maps handle both messages and commands — all three categories of messages listed in [Message Categories](../mfc/message-categories.md).  
-  
-## See Also  
- [Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md)
+
+Each framework class that can receive messages or commands has its own "message map." The framework uses message maps to connect messages and commands to their handler functions. Any class derived from class `CCmdTarget` can have a message map. Other articles explain message maps in detail and describe how to use them.
+
+In spite of the name "message map," message maps handle both messages and commands — all three categories of messages listed in [Message Categories](../mfc/message-categories.md).
+
+## See Also
+
+[Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md)
 

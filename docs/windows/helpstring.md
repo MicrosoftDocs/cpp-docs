@@ -26,7 +26,7 @@ Specifies a character string that is used to describe the element to which it ap
 
 ### Parameters
 
-*string*  
+*string*<br/>
 The text of the help string.
 
 ## Remarks
@@ -52,10 +52,10 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Interface Attributes](../windows/interface-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)  
-[Method Attributes](../windows/method-attributes.md)  
-[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
-[helpfile](../windows/helpfile.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Interface Attributes](../windows/interface-attributes.md)<br/>
+[Class Attributes](../windows/class-attributes.md)<br/>
+[Method Attributes](../windows/method-attributes.md)<br/>
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[helpfile](../windows/helpfile.md)<br/>
 [helpcontext](../windows/helpcontext.md)  

@@ -13,16 +13,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # com::ptr
-A wrapper for a COM object that can be used as a member of a CLR class. The wrapper also automates lifetime management of the COM object, releasing owned references on the object when its destructor is called. Analogous to [CComPtr Class](../atl/reference/ccomptr-class.md).  
-  
-## Syntax  
-  
-```  
-#include <msclr\com\ptr.h>  
-```  
-  
-## Remarks  
- [com::ptr Class](../dotnet/com-ptr-class.md) is defined in the \<msclr\com\ptr.h> file.  
-  
-## See Also  
- [C++ Support Library](../dotnet/cpp-support-library.md)
+
+A wrapper for a COM object that can be used as a member of a CLR class. The wrapper also automates lifetime management of the COM object, releasing owned references on the object when its destructor is called. Analogous to [CComPtr Class](../atl/reference/ccomptr-class.md).
+
+## Syntax
+
+```
+#include <msclr\com\ptr.h>
+```
+
+## Remarks
+
+[com::ptr Class](../dotnet/com-ptr-class.md) is defined in the \<msclr\com\ptr.h> file.
+
+## See Also
+
+[C++ Support Library](../dotnet/cpp-support-library.md)

@@ -13,61 +13,68 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # progress_reporter Class
-The progress reporter class allows reporting progress notifications of a specific type. Each progress_reporter object is bound to a particular asynchronous action or operation.  
-  
-## Syntax  
-  
+
+The progress reporter class allows reporting progress notifications of a specific type. Each progress_reporter object is bound to a particular asynchronous action or operation.
+
+## Syntax
+
 ```
 template<typename _ProgressType>
 class progress_reporter;
-```  
-  
-#### Parameters  
+```
+
+#### Parameters
+
 *_ProgressType*<br/>
-The payload type of each progress notification reported through the progress reporter.  
-  
-## Members  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[progress_reporter](#ctor)||  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[report](#report)|Sends a progress report to the asynchronous action or operation to which this progress reporter is bound.|  
-  
-## Remarks  
- This type is only available to Windows Runtime apps.  
-  
-## Inheritance Hierarchy  
- `progress_reporter`  
-  
-## Requirements  
- **Header:** ppltasks.h  
-  
- **Namespace:** concurrency  
-  
-##  <a name="ctor"></a> progress_reporter 
+The payload type of each progress notification reported through the progress reporter.
+
+## Members
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[progress_reporter](#ctor)||
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[report](#report)|Sends a progress report to the asynchronous action or operation to which this progress reporter is bound.|
+
+## Remarks
+
+This type is only available to Windows Runtime apps.
+
+## Inheritance Hierarchy
+
+`progress_reporter`
+
+## Requirements
+
+**Header:** ppltasks.h
+
+**Namespace:** concurrency
+
+##  <a name="ctor"></a> progress_reporter
 
 ```
 progress_reporter();
-```  
-  
-##  <a name="report"></a> report 
+```
 
- Sends a progress report to the asynchronous action or operation to which this progress reporter is bound.  
-  
+##  <a name="report"></a> report
+
+Sends a progress report to the asynchronous action or operation to which this progress reporter is bound.
+
 ```
 void report(const _ProgressType& val) const;
-```  
-  
-### Parameters  
+```
+
+### Parameters
+
 *val*<br/>
-The payload to report through a progress notification.  
-  
-## See Also  
- [concurrency Namespace](concurrency-namespace.md)
+The payload to report through a progress notification.
+
+## See Also
+
+[concurrency Namespace](concurrency-namespace.md)

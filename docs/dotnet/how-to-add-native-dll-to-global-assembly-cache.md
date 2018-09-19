@@ -12,16 +12,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Add Native DLL to Global Assembly Cache
-You can put a native DLL (not COM) into the Global Assembly Cache.  
-  
-## Example  
- **/ASSEMBLYLINKRESOURCE** lets you embed a native DLL in an assembly.  
-  
- For more information, see [/ASSEMBLYLINKRESOURCE (Link to .NET Framework Resource)](../build/reference/assemblylinkresource-link-to-dotnet-framework-resource.md).  
-  
-```  
-/ASSEMBLYLINKRESOURCE:MyComponent.dll  
-```  
-  
-## See Also  
- [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+
+You can put a native DLL (not COM) into the Global Assembly Cache.
+
+## Example
+
+**/ASSEMBLYLINKRESOURCE** lets you embed a native DLL in an assembly.
+
+For more information, see [/ASSEMBLYLINKRESOURCE (Link to .NET Framework Resource)](../build/reference/assemblylinkresource-link-to-dotnet-framework-resource.md).
+
+```
+/ASSEMBLYLINKRESOURCE:MyComponent.dll
+```
+
+## See Also
+
+[Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

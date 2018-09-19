@@ -36,5 +36,5 @@ An error is emitted if one interface is not derived from the other.
 
 ## See Also
 
-[VerifyInheritanceHelper Structure](../windows/verifyinheritancehelper-structure.md)  
+[VerifyInheritanceHelper Structure](../windows/verifyinheritancehelper-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

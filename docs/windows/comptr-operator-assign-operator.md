@@ -47,10 +47,10 @@ WRL_NOTHROW ComPtr& operator=(
 
 ### Parameters
 
-*U*  
+*U*<br/>
 A class.
 
-*other*  
+*other*<br/>
 A pointer, reference, or rvalue reference to a type or another **ComPtr**.
 
 ## Return Value

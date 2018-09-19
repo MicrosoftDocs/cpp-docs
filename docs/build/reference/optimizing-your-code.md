@@ -18,13 +18,13 @@ By optimizing an executable, you can achieve a balance between fast execution sp
 
 The following topics describe some of the optimization features in the C/C++ language.
 
-[Optimization Pragmas and Keywords](../../build/reference/optimization-pragmas-and-keywords.md)
+[Optimization Pragmas and Keywords](../../build/reference/optimization-pragmas-and-keywords.md)<br/>
 A list of keywords and pragmas that you can use in your code to improve performance.
 
-[Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md)
+[Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md)<br/>
 A list of **/O** compiler options that specifically affect execution speed or code size.
 
-[Rvalue Reference Declarator: &&](../../cpp/rvalue-reference-declarator-amp-amp.md)
+[Rvalue Reference Declarator: &&](../../cpp/rvalue-reference-declarator-amp-amp.md)<br/>
 Rvalue references support the implementation of *move semantics*. If move semantics are used to implement template libraries, the performance of applications that use those templates can significantly improve.
 
 ### The optimize pragma
@@ -47,10 +47,10 @@ Paradoxically, optimizing a program for speed could cause code to run slower. Th
 
 The following topics discuss good programming practices.
 
-[Tips for Improving Time-Critical Code](../../build/reference/tips-for-improving-time-critical-code.md)
+[Tips for Improving Time-Critical Code](../../build/reference/tips-for-improving-time-critical-code.md)<br/>
 Better coding techniques can yield better performance. This topic suggests coding techniques that can help you make sure that the time-critical parts of your code perform satisfactorily.
 
-[Optimization Best Practices](../../build/reference/optimization-best-practices.md)
+[Optimization Best Practices](../../build/reference/optimization-best-practices.md)<br/>
 Provides general guidelines about how best to optimize your application.
 
 ## Debugging optimized code

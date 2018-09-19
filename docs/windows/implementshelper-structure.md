@@ -29,13 +29,13 @@ friend struct Details::ImplementsHelper;
 
 ### Parameters
 
-*RuntimeClassFlagsT*  
+*RuntimeClassFlagsT*<br/>
 A field of flags that specifies one or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumerators.
 
-*ILst*  
+*ILst*<br/>
 A list of interface IDs.
 
-*IsDelegateToClass*  
+*IsDelegateToClass*<br/>
 Specify **true** if the current instance of `Implements` is a base class of the first interface ID in *ILst*; otherwise, **false**.
 
 ## Remarks

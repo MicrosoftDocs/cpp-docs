@@ -34,5 +34,5 @@ Points to a Windows Runtime or COM class factory.
 
 ## See Also
 
-[FactoryCache Structure](../windows/factorycache-structure.md)  
+[FactoryCache Structure](../windows/factorycache-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

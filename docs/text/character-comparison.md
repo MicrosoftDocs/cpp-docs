@@ -12,22 +12,24 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Character Comparison
-Use the following tips:  
-  
--   Comparing a known lead byte with an ASCII character works correctly:  
-  
-    ```  
-    if( *sz1 == 'A' )  
-    ```  
-  
--   Comparing two unknown characters requires the use of one of the macros defined in Mbstring.h:  
-  
-    ```  
-    if( !_mbccmp( sz1, sz2) )  
-    ```  
-  
-     This ensures that both bytes of a double-byte character are compared for equality.  
-  
-## See Also  
- [MBCS Programming Tips](../text/mbcs-programming-tips.md)   
- [Buffer Overflow](../text/buffer-overflow.md)
+
+Use the following tips:
+
+- Comparing a known lead byte with an ASCII character works correctly:
+
+    ```cpp
+    if( *sz1 == 'A' )
+    ```
+
+- Comparing two unknown characters requires the use of one of the macros defined in Mbstring.h:
+
+    ```cpp
+    if( !_mbccmp( sz1, sz2) )
+    ```
+
+   This ensures that both bytes of a double-byte character are compared for equality.
+
+## See Also
+
+[MBCS Programming Tips](../text/mbcs-programming-tips.md)<br/>
+[Buffer Overflow](../text/buffer-overflow.md)

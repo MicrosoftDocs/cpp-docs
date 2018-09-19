@@ -12,26 +12,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # make_exception_ptr Function
-## Syntax  
-  
+
+## Syntax
+
 ```
 template<class _E>
 exception_ptr make_exception_ptr(_E _Except);
-```  
-  
-#### Parameters  
+```
+
+#### Parameters
+
 *_E*<br/>
 Exception type.
 
 *_Except*<br/>
 Exception value.
-  
-## Return Value  
-  
-## Requirements  
- **Header:** ppltasks.h  
-  
- **Namespace:** std  
-  
-## See Also  
- [std Namespace](std-namespace.md)
+
+## Return Value
+
+## Requirements
+
+**Header:** ppltasks.h
+
+**Namespace:** std
+
+## See Also
+
+[std Namespace](std-namespace.md)

@@ -26,7 +26,7 @@ Adds an interface entry into the COM map of the target class.
 
 ### Parameters
 
-*com_interface_entry*  
+*com_interface_entry*<br/>
 A string containing the actual text of the entry. For a list of possible values, see [COM_INTERFACE_ENTRY Macros](../atl/reference/com-interface-entry-macros.md).
 
 ## Remarks
@@ -118,6 +118,6 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[COM Attributes](../windows/com-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)  
+[COM Attributes](../windows/com-attributes.md)<br/>
+[Class Attributes](../windows/class-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  

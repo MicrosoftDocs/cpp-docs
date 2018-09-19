@@ -77,9 +77,9 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Attributes by Usage](../windows/attributes-by-usage.md)  
-[custom](../windows/custom-cpp.md)  
-[dispinterface](../windows/dispinterface.md)  
-[object](../windows/object-cpp.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Attributes by Usage](../windows/attributes-by-usage.md)<br/>
+[custom](../windows/custom-cpp.md)<br/>
+[dispinterface](../windows/dispinterface.md)<br/>
+[object](../windows/object-cpp.md)<br/>
 [__interface](../cpp/interface.md)  

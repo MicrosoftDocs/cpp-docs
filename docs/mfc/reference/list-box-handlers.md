@@ -13,16 +13,18 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # List Box Handlers
-The following map entries have the corresponding function prototype.  
-  
-|Map entry|Function prototype|  
-|---------------|------------------------|  
-|ON_LBN_DBLCLK( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
-|ON_LBN_ERRSPACE( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
-|ON_LBN_KILLFOCUS( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
-|ON_LBN_SELCHANGE( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
-|ON_LBN_SETFOCUS( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
-  
-## See Also  
- [Message Maps](../../mfc/reference/message-maps-mfc.md)
+
+The following map entries have the corresponding function prototype.
+
+|Map entry|Function prototype|
+|---------------|------------------------|
+|ON_LBN_DBLCLK( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|
+|ON_LBN_ERRSPACE( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|
+|ON_LBN_KILLFOCUS( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|
+|ON_LBN_SELCHANGE( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|
+|ON_LBN_SETFOCUS( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|
+
+## See Also
+
+[Message Maps](../../mfc/reference/message-maps-mfc.md)
 

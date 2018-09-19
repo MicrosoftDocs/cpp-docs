@@ -12,9 +12,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Servers: User-Interface Issues
-A server application has a number of features that must be added to the user interface to supply OLE items to container applications. For further information on the menus and additional resources that need to be added to a server application, see [Menus and Resources: Server Additions](../mfc/menus-and-resources-server-additions.md).  
-  
-## See Also  
- [Servers](../mfc/servers.md)   
- [Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)
+
+A server application has a number of features that must be added to the user interface to supply OLE items to container applications. For further information on the menus and additional resources that need to be added to a server application, see [Menus and Resources: Server Additions](../mfc/menus-and-resources-server-additions.md).
+
+## See Also
+
+[Servers](../mfc/servers.md)<br/>
+[Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)
 

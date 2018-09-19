@@ -13,36 +13,41 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # COleControlModule Class
-The base class from which you derive an OLE control module object.  
-  
-## Syntax  
-  
-```  
-class COleControlModule : public CWinApp  
-```  
-  
-## Remarks  
- This class provides member functions for initializing your control module. Each OLE control module that uses the Microsoft Foundation classes can only contain one object derived from `COleControlModule`. This object is constructed when other C++ global objects are constructed. Declare your derived `COleControlModule` object at the global level.  
-  
- For more information on using the `COleControlModule` class, see the [CWinApp](../../mfc/reference/cwinapp-class.md) class and the article [ActiveX Controls](../../mfc/mfc-activex-controls.md).  
-  
-## Inheritance Hierarchy  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- [CCmdTarget](../../mfc/reference/ccmdtarget-class.md)  
-  
- [CWinThread](../../mfc/reference/cwinthread-class.md)  
-  
- [CWinApp](../../mfc/reference/cwinapp-class.md)  
-  
- `COleControlModule`  
-  
-## Requirements  
- **Header:** afxctl.h  
-  
-## See Also  
- [MFC Sample TESTHELP](../../visual-cpp-samples.md)   
- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+
+The base class from which you derive an OLE control module object.
+
+## Syntax
+
+```
+class COleControlModule : public CWinApp
+```
+
+## Remarks
+
+This class provides member functions for initializing your control module. Each OLE control module that uses the Microsoft Foundation classes can only contain one object derived from `COleControlModule`. This object is constructed when other C++ global objects are constructed. Declare your derived `COleControlModule` object at the global level.
+
+For more information on using the `COleControlModule` class, see the [CWinApp](../../mfc/reference/cwinapp-class.md) class and the article [ActiveX Controls](../../mfc/mfc-activex-controls.md).
+
+## Inheritance Hierarchy
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+
+[CWinThread](../../mfc/reference/cwinthread-class.md)
+
+[CWinApp](../../mfc/reference/cwinapp-class.md)
+
+`COleControlModule`
+
+## Requirements
+
+**Header:** afxctl.h
+
+## See Also
+
+[MFC Sample TESTHELP](../../visual-cpp-samples.md)<br/>
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
 
 
