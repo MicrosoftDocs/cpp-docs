@@ -12,6 +12,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Deploying a Visual C++ Application to an Application-local Folder
+
 Describes how to deploy a Visual C++ application by copying files to its folder.  
   
 ## Prerequisites  
@@ -28,11 +29,11 @@ Describes how to deploy a Visual C++ application by copying files to its folder.
   
 1. Run the MFC application on a second computer that does not have the Visual C++ libraries.  
   
-    1. Copy the contents of the \Release\ folder and paste them in the application folder on the second computer.  
+   1. Copy the contents of the \Release\ folder and paste them in the application folder on the second computer.  
   
-    1. Run the application on the second computer.  
+   1. Run the application on the second computer.  
   
-     The application runs successfully because the Visual C++ libraries are available in the application-local folder.  
+   The application runs successfully because the Visual C++ libraries are available in the application-local folder.  
   
 ## See Also  
 

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1312
-Too many conditional branches in function. Simplify or refactor source code.  
-  
- The code is too complex for the compiler to process without running out of stack memory.  Simplify your code.
+
+Too many conditional branches in function. Simplify or refactor source code.
+
+The code is too complex for the compiler to process without running out of stack memory.  Simplify your code.

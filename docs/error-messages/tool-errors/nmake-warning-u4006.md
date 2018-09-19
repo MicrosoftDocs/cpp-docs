@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # NMAKE Warning U4006
-special macro undefined : 'macroname'  
-  
- The given special macro name is undefined and expands to nothing.
+
+special macro undefined : 'macroname'
+
+The given special macro name is undefined and expands to nothing.

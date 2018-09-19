@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2258
-illegal pure syntax, must be '= 0'  
-  
- A pure virtual function is declared with incorrect syntax.  
-  
- The following sample generates C2258:  
-  
-```  
-// C2258.cpp  
-// compile with: /c  
-class A {  
-public:  
-   void virtual func1() = 1; // C2258  
-   void virtual func2() = 0;   // OK  
-};  
+
+illegal pure syntax, must be '= 0'
+
+A pure virtual function is declared with incorrect syntax.
+
+The following sample generates C2258:
+
+```
+// C2258.cpp
+// compile with: /c
+class A {
+public:
+   void virtual func1() = 1; // C2258
+   void virtual func2() = 0;   // OK
+};
 ```

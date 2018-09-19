@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2499
-'class' : a class cannot be its own base class  
-  
- You attempted to specify the class that you are defining as a base class.  
-  
- The following sample generates C2499:  
-  
-```  
-// C2499.cpp  
-// compile with: /c  
-class CMyClass : public CMyClass {};   // C2499  
-class CMyClass{};   // OK  
+
+'class' : a class cannot be its own base class
+
+You attempted to specify the class that you are defining as a base class.
+
+The following sample generates C2499:
+
+```
+// C2499.cpp
+// compile with: /c
+class CMyClass : public CMyClass {};   // C2499
+class CMyClass{};   // OK
 ```

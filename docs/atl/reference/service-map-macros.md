@@ -36,7 +36,7 @@ BEGIN_SERVICE_MAP(theClass)
 
 ### Parameters
 
-*theClass*  
+*theClass*<br/>
 [in] Specifies the class containing the service map.
 
 ### Remarks
@@ -73,7 +73,7 @@ SERVICE_ENTRY( SID )
 
 ### Parameters
 
-*SID*  
+*SID*<br/>
 The service ID.
 
 ### Example
@@ -90,7 +90,7 @@ SERVICE_ENTRY_CHAIN( punk )
 
 ### Parameters
 
-*punk*  
+*punk*<br/>
 A pointer to the **IUnknown** interface to which to chain.
 
 ### Example

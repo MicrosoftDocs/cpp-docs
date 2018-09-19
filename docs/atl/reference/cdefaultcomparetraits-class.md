@@ -19,13 +19,13 @@ This class provides default element comparison functions.
 ## Syntax
 
 ```
-template<typename T>  
+template<typename T>
 class CDefaultCompareTraits
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The type of data to be stored in the collection.
 
 ## Members
@@ -57,10 +57,10 @@ static bool CompareElements(const T& element1, const T& element2);
 
 ### Parameters
 
-*element1*  
+*element1*<br/>
 The first element.
 
-*element2*  
+*element2*<br/>
 The second element.
 
 ### Return Value
@@ -81,10 +81,10 @@ static int CompareElementsOrdered(const T& element1, const T& element2);
 
 ### Parameters
 
-*element1*  
+*element1*<br/>
 The first element.
 
-*element2*  
+*element2*<br/>
 The second element.
 
 ### Return Value

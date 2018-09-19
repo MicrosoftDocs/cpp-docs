@@ -13,25 +13,26 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4812
-obsolete declaration style: please use 'new_syntax' instead  
-  
- In the current release of Visual C++, the explicit constructor specialization is still supported, but it may not be supported in a future release.  
-  
- The following sample generates C4812:  
-  
-```  
-// C4812.cpp  
-// compile with: /W1 /c  
-template <class T>   
-class MyClass;  
-  
-template<class T>  
-class MyClass<T*> {  
-   MyClass();  
-};  
-  
-template<class T>  
-MyClass<T*>::MyClass<T*>() {}   // C4812  
-// try the following line instead  
-// MyClass<T*>::MyClass() {}  
+
+obsolete declaration style: please use 'new_syntax' instead
+
+In the current release of Visual C++, the explicit constructor specialization is still supported, but it may not be supported in a future release.
+
+The following sample generates C4812:
+
+```
+// C4812.cpp
+// compile with: /W1 /c
+template <class T>
+class MyClass;
+
+template<class T>
+class MyClass<T*> {
+   MyClass();
+};
+
+template<class T>
+MyClass<T*>::MyClass<T*>() {}   // C4812
+// try the following line instead
+// MyClass<T*>::MyClass() {}
 ```

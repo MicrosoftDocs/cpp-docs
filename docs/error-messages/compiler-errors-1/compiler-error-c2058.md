@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2058
-constant expression is not integral  
-  
- The context requires an integer constant expression.
+
+constant expression is not integral
+
+The context requires an integer constant expression.

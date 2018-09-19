@@ -13,37 +13,40 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3229
-'type' : indirections on a generic type parameter are not allowed  
-  
- You cannot use generic parameters with `*`, `^`, or `&`.  
-  
-## Example  
- The following sample generates C3229.  
-  
-```  
-// C3229.cpp  
-// compile with: /clr /c  
-generic <class T>  
-ref class C {  
-   T^ t;   // C3229  
-};  
-  
-// OK  
-generic <class T>  
-ref class D {  
-   T u;  
-};  
-```  
-  
-## Example  
- The following sample generates C3229.  
-  
-```  
-// C3229_b.cpp  
-// compile with: /clr /c  
-generic <class T>   // OK  
-ref class Utils {  
-   static void sort(T elems[], size_t size);   // C3229  
-   static void sort2(T elems, size_t size);   // OK  
-};  
+
+'type' : indirections on a generic type parameter are not allowed
+
+You cannot use generic parameters with `*`, `^`, or `&`.
+
+## Example
+
+The following sample generates C3229.
+
+```
+// C3229.cpp
+// compile with: /clr /c
+generic <class T>
+ref class C {
+   T^ t;   // C3229
+};
+
+// OK
+generic <class T>
+ref class D {
+   T u;
+};
+```
+
+## Example
+
+The following sample generates C3229.
+
+```
+// C3229_b.cpp
+// compile with: /clr /c
+generic <class T>   // OK
+ref class Utils {
+   static void sort(T elems[], size_t size);   // C3229
+   static void sort2(T elems, size_t size);   // OK
+};
 ```

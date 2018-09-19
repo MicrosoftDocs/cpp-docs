@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2913
-explicit specialization; 'declaration' is not a specialization of a class template  
-  
- You cannot specialize a non-template class.  
-  
- The following sample generates C2913:  
-  
-```  
-// C2913.cpp  
-// compile with: /c  
-class X{};  
-template <class T> class Y{};  
-  
-template<> class X<int> {};   // C2913  
-template<> class Y<int> {};  
+
+explicit specialization; 'declaration' is not a specialization of a class template
+
+You cannot specialize a non-template class.
+
+The following sample generates C2913:
+
+```
+// C2913.cpp
+// compile with: /c
+class X{};
+template <class T> class Y{};
+
+template<> class X<int> {};   // C2913
+template<> class Y<int> {};
 ```

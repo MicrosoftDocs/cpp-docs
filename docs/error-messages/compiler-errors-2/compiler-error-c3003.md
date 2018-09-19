@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3003
-'directive' : OpenMP directive name not allowed after directive clauses  
-  
- An OpenMP directive name cannot follow an OpenMP directive clause.  
-  
- The following sample generates C3003:  
-  
-```  
-// C3003.c  
-// compile with: /openmp  
-int main()  
-{  
-   int x, y, z;  
-   #pragma omp parallel shared(x, y, z) for   // C3003  
-}  
+
+'directive' : OpenMP directive name not allowed after directive clauses
+
+An OpenMP directive name cannot follow an OpenMP directive clause.
+
+The following sample generates C3003:
+
+```
+// C3003.c
+// compile with: /openmp
+int main()
+{
+   int x, y, z;
+   #pragma omp parallel shared(x, y, z) for   // C3003
+}
 ```

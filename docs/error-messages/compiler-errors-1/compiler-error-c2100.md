@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2100
-illegal indirection  
-  
- Indirection operator ( `*` ) is applied to a nonpointer value.  
-  
- The following sample generates C2100:  
-  
-```  
-// C2100.cpp  
-int main() {  
-   int r = 0, *s = 0;  
-   s = &r;  
-   *r = 200;   // C2100  
-   *s = 200;   // OK  
-}  
+
+illegal indirection
+
+Indirection operator ( `*` ) is applied to a nonpointer value.
+
+The following sample generates C2100:
+
+```
+// C2100.cpp
+int main() {
+   int r = 0, *s = 0;
+   s = &r;
+   *r = 200;   // C2100
+   *s = 200;   // OK
+}
 ```

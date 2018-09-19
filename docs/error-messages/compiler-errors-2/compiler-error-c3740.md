@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3740
-templates cannot source or receive events  
-  
- A templated class or struct cannot contain [events](../../cpp/event-handling.md).  
-  
- The following sample generates C3740:  
-  
-```  
-// C3740.cpp  
-template <typename T>   // Delete the template specification  
-struct E {  
-   __event void f();   // C3740  
-};  
-  
-int main() {  
-}  
+
+templates cannot source or receive events
+
+A templated class or struct cannot contain [events](../../cpp/event-handling.md).
+
+The following sample generates C3740:
+
+```
+// C3740.cpp
+template <typename T>   // Delete the template specification
+struct E {
+   __event void f();   // C3740
+};
+
+int main() {
+}
 ```

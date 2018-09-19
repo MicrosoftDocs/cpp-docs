@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0014
-missing operand  
-  
- An operator was specified without a required operand. Check the syntax of the expression.  
-  
- This error is identical to CAN0014.
+
+missing operand
+
+An operator was specified without a required operand. Check the syntax of the expression.
+
+This error is identical to CAN0014.

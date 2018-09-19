@@ -13,21 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2473
-'identifier' : looks like a function definition, but there is no parameter list.  
-  
- The compiler detected what looked like a function, without the parameter list.  
-  
-## Example  
- The following sample generates C2473.  
-  
-```  
-// C2473.cpp  
-// compile with: /clr /c  
-class A {  
-   int i {}   // C2473  
-};  
-  
-class B {  
-   int i() {}   // OK  
-};  
+
+'identifier' : looks like a function definition, but there is no parameter list.
+
+The compiler detected what looked like a function, without the parameter list.
+
+## Example
+
+The following sample generates C2473.
+
+```
+// C2473.cpp
+// compile with: /clr /c
+class A {
+   int i {}   // C2473
+};
+
+class B {
+   int i() {}   // OK
+};
 ```

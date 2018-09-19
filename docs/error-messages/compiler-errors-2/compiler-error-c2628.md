@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2628
-'type1' followed by 'type2' is illegal (did you forget a ';'?)  
-  
- A semicolon may be missing.  
-  
- The following sample generates C2628:  
-  
-```  
-// C2628.cpp  
-class CMyClass {}  
-int main(){}   // C2628 error  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2628b.cpp  
-class CMyClass {};  
-int main(){}  
+
+'type1' followed by 'type2' is illegal (did you forget a ';'?)
+
+A semicolon may be missing.
+
+The following sample generates C2628:
+
+```
+// C2628.cpp
+class CMyClass {}
+int main(){}   // C2628 error
+```
+
+Possible resolution:
+
+```
+// C2628b.cpp
+class CMyClass {};
+int main(){}
 ```

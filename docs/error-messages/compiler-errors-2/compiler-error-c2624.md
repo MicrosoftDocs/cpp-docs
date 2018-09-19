@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2624
-local classes cannot be used to declare 'extern' variables  
-  
- A local class or structure cannot be used to declare `extern` variables.  
-  
- The following sample generates C2624:  
-  
-```  
-// C2624.cpp  
-int main() {  
-   struct C {};  
-   extern C ac;   // C2624  
-}  
+
+local classes cannot be used to declare 'extern' variables
+
+A local class or structure cannot be used to declare `extern` variables.
+
+The following sample generates C2624:
+
+```
+// C2624.cpp
+int main() {
+   struct C {};
+   extern C ac;   // C2624
+}
 ```

@@ -11,9 +11,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Uniform Initialization and Delegating Constructors
+
 In modern C++, you can use *brace initialization* for any type, without the equals sign. Also, you can use delegating constructors to simplify your code when you have multiple constructors that perform similar work.
 
 ## Brace Initialization
+
 You can use brace initialization for any class, struct, or union. If a type has a default constructor, either implicitly or explicitly declared, you can use default brace initialization (with empty braces). For example, the following class may be initialized by using both default and non-default brace initialization:
 
 ```cpp
@@ -90,6 +92,7 @@ return { 4.5 };
 ```
 
 ## initializer_list Constructors
+
 The [initializer_list Class](../standard-library/initializer-list-class.md) represents a list of objects of a specified type that can be used in a constructor, and in other contexts. You can construct an initializer_list by using brace initialization:
 
 ```cpp
@@ -118,6 +121,7 @@ regex rgx{'x', 'y', 'z'};
 ```
 
 ## Delegating Constructors
+
 Many classes have multiple constructors that do similar things—for example, validate parameters:
 
 ```cpp

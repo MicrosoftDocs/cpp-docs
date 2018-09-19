@@ -49,6 +49,6 @@ The possible values for *code* are defined in the file Safeint.h. For convenienc
 
 ## See Also
 
-[SafeInt Library](../windows/safeint-library.md)  
-[SafeIntException Class](../windows/safeintexception-class.md)  
+[SafeInt Library](../windows/safeint-library.md)<br/>
+[SafeIntException Class](../windows/safeintexception-class.md)<br/>
 [SafeInt Class](../windows/safeint-class.md)

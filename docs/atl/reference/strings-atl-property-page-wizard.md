@@ -30,6 +30,6 @@ Provides the text associated with the property page.
 
 ## See Also
 
-[ATL Property Page Wizard](../../atl/reference/atl-property-page-wizard.md)   
+[ATL Property Page Wizard](../../atl/reference/atl-property-page-wizard.md)<br/>
 [Options, ATL Property Page Wizard](../../atl/reference/options-atl-property-page-wizard.md)
 

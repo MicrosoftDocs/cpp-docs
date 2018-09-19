@@ -28,13 +28,13 @@ WRL_NOTHROW HRESULT GetActivationFactory(
 
 ### Parameters
 
-*pActivatibleClassId*  
+*pActivatibleClassId*<br/>
 IID of a runtime class.
 
-*ppIFactory*  
+*ppIFactory*<br/>
 The IActivationFactory for the specified runtime class.
 
-*serverName*  
+*serverName*<br/>
 The name of a subset of class factories in the current module. Specify the server name used in the [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) macro, or specify **nullptr** to get the default server name.
 
 ## Return Value
@@ -49,5 +49,5 @@ S_OK if successful; otherwise, the HRESULT returned by GetActivationFactory.
 
 ## See Also
 
-[Module Class](../windows/module-class.md)  
+[Module Class](../windows/module-class.md)<br/>
 [ActivatableClass Macros](../windows/activatableclass-macros.md)

@@ -218,6 +218,6 @@ typedef CSimpleStringT<TCharType> StringType;
 
 ## See Also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)   
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
 

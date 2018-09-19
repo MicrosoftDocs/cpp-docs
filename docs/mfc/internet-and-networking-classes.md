@@ -13,14 +13,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Internet and Networking Classes
-These classes allow you to exchange information with another computer using a Windows Socket or Win32 Internet (WinInet). There are also a set of classes for manipulating Windows Sockets.  
-  
- The following categories of classes support connectivity.  
-  
--   [Windows Sockets Classes](../mfc/windows-sockets-classes.md)  
-  
--   [Win32 Internet Classes](../mfc/win32-internet-classes.md)  
-  
-## See Also  
- [Class Overview](../mfc/class-library-overview.md)
+
+These classes allow you to exchange information with another computer using a Windows Socket or Win32 Internet (WinInet). There are also a set of classes for manipulating Windows Sockets.
+
+The following categories of classes support connectivity.
+
+- [Windows Sockets Classes](../mfc/windows-sockets-classes.md)
+
+- [Win32 Internet Classes](../mfc/win32-internet-classes.md)
+
+## See Also
+
+[Class Overview](../mfc/class-library-overview.md)
 

@@ -13,23 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3454
-[attribute] not allowed on class declaration  
-  
- A class must be defined for it to be an attribute.  
-  
- For more information, see [attribute](../../windows/attribute.md).  
-  
-## Example  
- The following sample generates C3454.  
-  
-```  
-// C3454.cpp  
-// compile with: /clr /c  
-using namespace System;  
-  
-[attribute]   // C3454  
-ref class Attr1;  
-  
-[attribute]   // OK  
-ref class Attr2 {};  
+
+[attribute] not allowed on class declaration
+
+A class must be defined for it to be an attribute.
+
+For more information, see [attribute](../../windows/attribute.md).
+
+## Example
+
+The following sample generates C3454.
+
+```
+// C3454.cpp
+// compile with: /clr /c
+using namespace System;
+
+[attribute]   // C3454
+ref class Attr1;
+
+[attribute]   // OK
+ref class Attr2 {};
 ```

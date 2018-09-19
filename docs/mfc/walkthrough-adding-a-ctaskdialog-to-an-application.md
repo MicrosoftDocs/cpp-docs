@@ -42,7 +42,7 @@ The following procedure demonstrates the most basic use of the `CTaskDialog`, wh
 
 3. Add `#include "afxtaskdialog.h"` after the list of includes.
 
-4. Find the method `CMyProjectApp::InitInstance`. Insert the following lines of code before the `return TRUE;` statement. This code creates the strings that we use in either the Windows message box or in the `CTaskDialog`.  
+4. Find the method `CMyProjectApp::InitInstance`. Insert the following lines of code before the `return TRUE;` statement. This code creates the strings that we use in either the Windows message box or in the `CTaskDialog`.
 
     ```cpp
     CString message("My message to the user");
@@ -190,6 +190,6 @@ These examples do not demonstrate all the available options for a `CTaskDialog`,
 
 ## See also
 
-[Dialog Boxes](../mfc/dialog-boxes.md)  
-[CTaskDialog Class](../mfc/reference/ctaskdialog-class.md)  
-[CTaskDialog::CTaskDialog](../mfc/reference/ctaskdialog-class.md#ctaskdialog)  
+[Dialog Boxes](../mfc/dialog-boxes.md)<br/>
+[CTaskDialog Class](../mfc/reference/ctaskdialog-class.md)<br/>
+[CTaskDialog::CTaskDialog](../mfc/reference/ctaskdialog-class.md#ctaskdialog)

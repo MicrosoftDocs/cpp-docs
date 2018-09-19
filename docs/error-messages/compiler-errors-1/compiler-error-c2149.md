@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2149
-'identifier' : named bit field cannot have zero width  
-  
- Bit fields can have zero width only if unnamed.  
-  
- The following sample generates C2149:  
-  
-```  
-// C2149.cpp  
-// compile with: /c  
-struct C {  
-   int i : 0;   // C2149  
-   int j : 2;   // OK  
-};  
+
+'identifier' : named bit field cannot have zero width
+
+Bit fields can have zero width only if unnamed.
+
+The following sample generates C2149:
+
+```
+// C2149.cpp
+// compile with: /c
+struct C {
+   int i : 0;   // C2149
+   int j : 2;   // OK
+};
 ```

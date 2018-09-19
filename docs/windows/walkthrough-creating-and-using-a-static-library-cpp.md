@@ -124,5 +124,5 @@ An understanding of the fundamentals of the C++ language.
 
 ## See Also
 
-[Walkthrough: Creating and Using a Dynamic Link Library (C++)](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)  
+[Walkthrough: Creating and Using a Dynamic Link Library (C++)](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)<br/>
 [Desktop Applications (Visual C++)](../windows/desktop-applications-visual-cpp.md)

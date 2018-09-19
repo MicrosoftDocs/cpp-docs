@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IGetDataSourceImpl Class
+
 Provides an implementation of the [IGetDataSource](/previous-versions/windows/desktop/ms709721\(v=vs.85\)) object.  
   
 ## Syntax
@@ -23,11 +24,13 @@ class ATL_NO_VTABLE IGetDataSourceImpl : public IGetDataSource
 ```  
   
 ### Parameters  
- *T*  
- Your class, derived from `IGetDataSourceImpl`.  
+
+*T*<br/>
+Your class, derived from `IGetDataSourceImpl`.  
 
 ## Requirements  
- **Header:** atldb.h  
+
+**Header:** atldb.h  
   
 ## Members  
   
@@ -38,9 +41,11 @@ class ATL_NO_VTABLE IGetDataSourceImpl : public IGetDataSource
 |[GetDataSource](#getdatasource)|Returns an interface pointer on the data source object that created the session.|  
   
 ## Remarks  
- This is a mandatory interface on the session for obtaining an interface pointer to the data source object.  
+
+This is a mandatory interface on the session for obtaining an interface pointer to the data source object.  
 
 ## <a name="getdatasource"></a> IGetDataSourceImpl::GetDataSource
+
 Returns an interface pointer on the data source object that created the session.  
   
 ### Syntax  
@@ -51,11 +56,14 @@ STDMETHOD(GetDataSource)(REFIID riid, 
 ```  
   
 #### Parameters  
- See [IGetDataSource::GetDataSource](/previous-versions/windows/desktop/ms725443\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IGetDataSource::GetDataSource](/previous-versions/windows/desktop/ms725443\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
- Useful if you need to access properties in the data source object.  
+
+Useful if you need to access properties in the data source object.  
   
 ## See Also  
- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

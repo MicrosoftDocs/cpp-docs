@@ -13,26 +13,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot Class
-Automatic resource management (like [auto_ptr Class](../standard-library/auto-ptr-class.md)) which can be used to embed a virtual handle into a native type.  
-  
-## Syntax  
-  
-```  
-template<typename _element_type>  
-class auto_gcroot;  
-```  
-  
-#### Parameters  
- `_element_type`  
- The managed type to be embedded.  
-  
-## Requirements  
- **Header file** \<msclr\auto_gcroot.h>  
-  
- **Namespace** msclr  
-  
-## See Also  
- [auto_gcroot](../dotnet/auto-gcroot.md)   
- [auto_gcroot Members](../dotnet/auto-gcroot-members.md)   
- [How to: Declare Handles in Native Types](../dotnet/how-to-declare-handles-in-native-types.md)   
- [auto_handle Class](../dotnet/auto-handle-class.md)
+
+Automatic resource management (like [auto_ptr Class](../standard-library/auto-ptr-class.md)) which can be used to embed a virtual handle into a native type.
+
+## Syntax
+
+```cpp
+template<typename _element_type>
+class auto_gcroot;
+```
+
+#### Parameters
+
+*_element_type*<br/>
+The managed type to be embedded.
+
+## Requirements
+
+**Header file** \<msclr\auto_gcroot.h>
+
+**Namespace** msclr
+
+## See Also
+
+[auto_gcroot](../dotnet/auto-gcroot.md)<br/>
+[auto_gcroot Members](../dotnet/auto-gcroot-members.md)<br/>
+[How to: Declare Handles in Native Types](../dotnet/how-to-declare-handles-in-native-types.md)<br/>
+[auto_handle Class](../dotnet/auto-handle-class.md)

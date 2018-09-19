@@ -13,15 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _FREEENTRY, _USEDENTRY
-## Syntax  
-  
-```  
-#include <malloc.h>  
-```  
-  
-## Remarks  
- These constants represent values assigned by the `_heapwalk` routines to the **_useflag** element of the **_HEAPINFO** structure. They indicate the status of the heap entry.  
-  
-## See Also  
- [_heapwalk](../c-runtime-library/reference/heapwalk.md)   
- [Global Constants](../c-runtime-library/global-constants.md)
+
+## Syntax
+
+```
+#include <malloc.h>
+```
+
+## Remarks
+
+These constants represent values assigned by the `_heapwalk` routines to the **_useflag** element of the **_HEAPINFO** structure. They indicate the status of the heap entry.
+
+## See Also
+
+[_heapwalk](../c-runtime-library/reference/heapwalk.md)<br/>
+[Global Constants](../c-runtime-library/global-constants.md)

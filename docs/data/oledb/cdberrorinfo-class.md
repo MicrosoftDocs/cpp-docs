@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBErrorInfo Class
+
 Provides support for OLE DB error processing using the OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) interface.  
   
 ## Syntax
@@ -22,7 +23,8 @@ class CDBErrorInfo
 ``` 
 
 ## Requirements  
- **Header:** atldbcli.h 
+
+**Header:** atldbcli.h 
   
 ## Members  
   
@@ -38,9 +40,11 @@ class CDBErrorInfo
 |[GetErrorRecords](#geterrorrecords)|Gets error records for the specified object.|  
   
 ## Remarks  
- This interface returns one or more error records to the user. Call [CDBErrorInfo::GetErrorRecords](../../data/oledb/cdberrorinfo-geterrorrecords.md) first, to get a count of error records. Then call one of the access functions, such as [CDBErrorInfo::GetAllErrorInfo](../../data/oledb/cdberrorinfo-getallerrorinfo.md), to retrieve error information for each record.  
+
+This interface returns one or more error records to the user. Call [CDBErrorInfo::GetErrorRecords](../../data/oledb/cdberrorinfo-geterrorrecords.md) first, to get a count of error records. Then call one of the access functions, such as [CDBErrorInfo::GetAllErrorInfo](../../data/oledb/cdberrorinfo-getallerrorinfo.md), to retrieve error information for each record.  
   
 ## <a name="getallerrorinfo"></a> CDBErrorInfo::GetAllErrorInfo
+
 Returns all the types of error information contained in an error record.  
   
 ### Syntax  
@@ -55,38 +59,42 @@ HRESULT GetAllErrorInfo(ULONG ulRecordNum,
 ```  
   
 #### Parameters  
- *ulRecordNum*  
- [in] The zero-based number of the record for which to return error information.  
+
+*ulRecordNum*<br/>
+[in] The zero-based number of the record for which to return error information.  
   
- *lcid*  
- [in] The locale ID for the error information to be returned.  
+*lcid*<br/>
+[in] The locale ID for the error information to be returned.  
   
- *pbstrDescription*  
- [out] A pointer to a text description of the error or NULL if the locale is not supported. See Remarks.  
+*pbstrDescription*<br/>
+[out] A pointer to a text description of the error or NULL if the locale is not supported. See Remarks.  
   
- *pbstrSource*  
- [out] A pointer to a string containing the name of the component that generated the error.  
+*pbstrSource*<br/>
+[out] A pointer to a string containing the name of the component that generated the error.  
   
- *pguid*  
- [out] A pointer to the GUID of the interface that defined the error.  
+*pguid*<br/>
+[out] A pointer to the GUID of the interface that defined the error.  
   
- *pdwHelpContext*  
- [out] A pointer to the help context ID for the error.  
+*pdwHelpContext*<br/>
+[out] A pointer to the help context ID for the error.  
   
- *pbstrHelpFile*  
- [out] A pointer to a string containing the path to the help file that describes the error.  
+*pbstrHelpFile*<br/>
+[out] A pointer to a string containing the path to the help file that describes the error.  
   
 ### Return Value  
- S_OK if successful. See [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) in the *OLE DB Programmer's Reference* for other return values.  
+
+S_OK if successful. See [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) in the *OLE DB Programmer's Reference* for other return values.  
   
 ### Remarks  
- The output value of *pbstrDescription* is obtained internally by calling `IErrorInfo::GetDescription`, which sets the value to NULL if the locale is not supported, or if both of the following conditions are true:  
+
+The output value of *pbstrDescription* is obtained internally by calling `IErrorInfo::GetDescription`, which sets the value to NULL if the locale is not supported, or if both of the following conditions are true:  
   
-1.  the value of *lcid* is NOT U.S. English and  
+1. the value of *lcid* is NOT U.S. English and  
   
-2.  the value of *lcid* is NOT equal to the value returned by GetUserDefaultLCID. 
+1. the value of *lcid* is NOT equal to the value returned by GetUserDefaultLCID. 
 
 ## <a name="getbasicerrorinfo"></a> CDBErrorInfo::GetBasicErrorInfo
+
 Calls [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907\(v=vs.85\)) to return basic information about the error, such as the return code and provider-specific error number.  
   
 ### Syntax  
@@ -97,12 +105,15 @@ HRESULT GetBasicErrorInfo(ULONG ulRecordNum, 
 ```  
   
 #### Parameters  
- See [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
- A standard HRESULT.  
+
+A standard HRESULT.  
 
 ## <a name="getcustomerrorobject"></a> CDBErrorInfo::GetCustomErrorObject
+
 Calls [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417\(v=vs.85\)) to return a pointer to an interface on a custom error object.  
   
 ### Syntax  
@@ -113,12 +124,15 @@ HRESULT GetCustomErrorObject(ULONG ulRecordNum, 
 ```  
   
 #### Parameters  
- See [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
- A standard HRESULT.  
+
+A standard HRESULT.  
 
 ## <a name="geterrorinfo"></a> CDBErrorInfo::GetErrorInfo
+
 Calls [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) to return an [IErrorInfo](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) interface pointer to the specified record.  
   
 ### Syntax  
@@ -129,12 +143,15 @@ HRESULT GetErrorInfo(ULONG ulRecordNum, 
 ```  
   
 #### Parameters  
- See [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
- A standard HRESULT.  
+
+A standard HRESULT.  
 
 ## <a name="geterrorparameters"></a> CDBErrorInfo::GetErrorParameters
+
 Calls [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793\(v=vs.85\)) to return the error parameters.  
   
 ### Syntax  
@@ -145,12 +162,15 @@ HRESULT GetErrorParameters(ULONG ulRecordNum, 
 ```  
   
 #### Parameters  
- See [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
- A standard HRESULT.  
+
+A standard HRESULT.  
 
 ## <a name="geterrorrecords"></a> CDBErrorInfo::GetErrorRecords
+
 Gets error records for the specified object.  
   
 ### Syntax  
@@ -164,22 +184,26 @@ HRESULT GetErrorRecords(ULONG* pcRecords) throw();
 ```  
   
 #### Parameters  
- *pUnk*  
- [in] Interface to the object for which to get error records.  
+
+*pUnk*<br/>
+[in] Interface to the object for which to get error records.  
   
- *iid*  
- [in] The IID of the interface associated with the error.  
+*iid*<br/>
+[in] The IID of the interface associated with the error.  
   
- *pcRecords*  
- [out] A pointer to the (one-based) count of error records.  
+*pcRecords*<br/>
+[out] A pointer to the (one-based) count of error records.  
   
 ### Return Value  
- A standard HRESULT.  
+
+A standard HRESULT.  
   
 ### Remarks  
- Use the first form of the function if you want to check which interface to get the error information from. Otherwise, use the second form.  
+
+Use the first form of the function if you want to check which interface to get the error information from. Otherwise, use the second form.  
   
 ## See Also  
- [DBViewer](../../visual-cpp-samples.md)   
- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
+
+[DBViewer](../../visual-cpp-samples.md)<br/>
+[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

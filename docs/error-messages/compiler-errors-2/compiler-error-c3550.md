@@ -13,9 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3550
-only plain 'decltype(auto)' is allowed in this context  
-  
- If `decltype(auto)` is used as a placeholder for the return type of a function, it must be used by itself. It cannot be used as part of a pointer declaration (`decltype(auto*)`), a reference declaration (`decltype(auto&)`), or any other such qualification.  
-  
-## See Also  
- [auto](../../cpp/auto-cpp.md)
+
+only plain 'decltype(auto)' is allowed in this context
+
+If `decltype(auto)` is used as a placeholder for the return type of a function, it must be used by itself. It cannot be used as part of a pointer declaration (`decltype(auto*)`), a reference declaration (`decltype(auto&)`), or any other such qualification.
+
+## See Also
+
+[auto](../../cpp/auto-cpp.md)

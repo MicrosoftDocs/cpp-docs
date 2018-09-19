@@ -13,31 +13,35 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __readeflags
-Reads the program status and control (EFLAGS) register.  
-  
-## Syntax  
-  
-```  
-unsigned     int __readeflags(void);  
-unsigned __int64 __readeflags(void);  
-```  
-  
-## Return Value  
- The value of the EFLAGS register. The return value is 32 bits long on a 32-bit platform and 64 bits long on a 64-bit platform.  
-  
-## Remarks  
- These routines are available only as intrinsics.  
-  
-## Requirements  
-  
-|Intrinsic|Architecture|  
-|---------------|------------------|  
-|`__readeflags`|x86, x64|  
-  
- **Header file** \<intrin.h>  
-  
-**END Microsoft Specific**  
-  
-## See Also  
- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   
- [__writeeflags](../intrinsics/writeeflags.md)
+
+Reads the program status and control (EFLAGS) register.
+
+## Syntax
+
+```
+unsigned     int __readeflags(void);
+unsigned __int64 __readeflags(void);
+```
+
+## Return Value
+
+The value of the EFLAGS register. The return value is 32 bits long on a 32-bit platform and 64 bits long on a 64-bit platform.
+
+## Remarks
+
+These routines are available only as intrinsics.
+
+## Requirements
+
+|Intrinsic|Architecture|
+|---------------|------------------|
+|`__readeflags`|x86, x64|
+
+**Header file** \<intrin.h>
+
+**END Microsoft Specific**
+
+## See Also
+
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[__writeeflags](../intrinsics/writeeflags.md)

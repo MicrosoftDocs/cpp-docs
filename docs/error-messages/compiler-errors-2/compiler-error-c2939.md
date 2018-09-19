@@ -13,34 +13,35 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2939
-'class' : type-class-id redefined as a local data variable  
-  
- You cannot use a generic or template class as a local data variable.  
-  
- This error can be caused if braces are improperly matched.  
-  
- The following sample generates C2939:  
-  
-```  
-// C2939.cpp  
-template<class T>  
-struct TC { };   
-int main() {  
-   int TC<int>;   // C2939  
-   int TC;   // OK  
-}  
-```  
-  
- C2939 can also occur when using generics:  
-  
-```  
-// C2939b.cpp  
-// compile with: /clr  
-generic<class T>  
-ref struct GC { };  
-  
-int main() {  
-   int GC<int>;   // C2939  
-   int GC;   // OK  
-}  
+
+'class' : type-class-id redefined as a local data variable
+
+You cannot use a generic or template class as a local data variable.
+
+This error can be caused if braces are improperly matched.
+
+The following sample generates C2939:
+
+```
+// C2939.cpp
+template<class T>
+struct TC { };
+int main() {
+   int TC<int>;   // C2939
+   int TC;   // OK
+}
+```
+
+C2939 can also occur when using generics:
+
+```
+// C2939b.cpp
+// compile with: /clr
+generic<class T>
+ref struct GC { };
+
+int main() {
+   int GC<int>;   // C2939
+   int GC;   // OK
+}
 ```

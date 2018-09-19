@@ -32,7 +32,7 @@ For more information, see [Implementing a Dialog Box](../../atl/implementing-a-d
 
 ## See Also
 
-[Adding a Class](../../ide/adding-a-class-visual-cpp.md)   
-[Window Classes](../../atl/atl-window-classes.md)   
+[Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
+[Window Classes](../../atl/atl-window-classes.md)<br/>
 [Message Maps](../../atl/message-maps-atl.md)
 

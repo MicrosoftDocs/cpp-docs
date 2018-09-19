@@ -13,14 +13,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Root Class: CObject
-Most of the classes in the Microsoft Foundation Class (MFC) Library are derived from a single base class at the root of the class hierarchy. `CObject` provides a number of useful capabilities to all classes derived from it, with very low overhead. For more information about `CObject` and its capabilities, see [Using CObject](../mfc/using-cobject.md).  
-  
- [CObject](../mfc/reference/cobject-class.md)  
- The ultimate base class of most MFC classes. Supports serializing data and obtaining run-time information about a class.  
-  
- [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md)  
- Structure used to determine the exact class of an object at run time.  
-  
-## See Also  
- [Class Overview](../mfc/class-library-overview.md)
+
+Most of the classes in the Microsoft Foundation Class (MFC) Library are derived from a single base class at the root of the class hierarchy. `CObject` provides a number of useful capabilities to all classes derived from it, with very low overhead. For more information about `CObject` and its capabilities, see [Using CObject](../mfc/using-cobject.md).
+
+[CObject](../mfc/reference/cobject-class.md)<br/>
+The ultimate base class of most MFC classes. Supports serializing data and obtaining run-time information about a class.
+
+[CRuntimeClass](../mfc/reference/cruntimeclass-structure.md)<br/>
+Structure used to determine the exact class of an object at run time.
+
+## See Also
+
+[Class Overview](../mfc/class-library-overview.md)
 

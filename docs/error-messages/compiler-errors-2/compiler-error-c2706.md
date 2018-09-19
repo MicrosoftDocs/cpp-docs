@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2706
-illegal __except without matching \__try (missing '}' in \__try block?)  
-  
- The compiler did not find a closing brace for a `__try` block.  
-  
- The following sample generates C2706:  
-  
-```  
-// C2706.cpp  
-int main() {  
-   __try {  
-      void f();  
-   // C2706  } missing here  
-   __except(GetExceptionCode() == 0x0) {  
-   }  
-}  
+
+illegal __except without matching \__try (missing '}' in \__try block?)
+
+The compiler did not find a closing brace for a `__try` block.
+
+The following sample generates C2706:
+
+```
+// C2706.cpp
+int main() {
+   __try {
+      void f();
+   // C2706  } missing here
+   __except(GetExceptionCode() == 0x0) {
+   }
+}
 ```

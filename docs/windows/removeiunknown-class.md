@@ -31,7 +31,7 @@ class RemoveIUnknown : public T;
 
 ### Parameters
 
-*T*  
+*T*<br/>
 A class.
 
 ## Remarks

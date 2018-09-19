@@ -12,201 +12,208 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # norm_3 Class
-Represents a short vector of three normal numbers.  
-  
-## Syntax  
-  
-```  
-class norm_3;  
-```  
-  
-## Members  
-  
-### Public Typedefs  
-  
-|Name|Description|  
-|----------|-----------------|  
-|`value_type`||  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[norm_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|norm_3::get_x||  
-|norm_3::get_xy||  
-|norm_3::get_xyz||  
-|norm_3::get_xz||  
-|norm_3::get_xzy||  
-|norm_3::get_y||  
-|norm_3::get_yx||  
-|norm_3::get_yxz||  
-|norm_3::get_yz||  
-|norm_3::get_yzx||  
-|norm_3::get_z||  
-|norm_3::get_zx||  
-|norm_3::get_zxy||  
-|norm_3::get_zy||  
-|norm_3::get_zyx||  
-|norm_3::ref_b||  
-|norm_3::ref_g||  
-|norm_3::ref_r||  
-|norm_3::ref_x||  
-|norm_3::ref_y||  
-|norm_3::ref_z||  
-|norm_3::set_x||  
-|norm_3::set_xy||  
-|norm_3::set_xyz||  
-|norm_3::set_xz||  
-|norm_3::set_xzy||  
-|norm_3::set_y||  
-|norm_3::set_yx||  
-|norm_3::set_yxz||  
-|norm_3::set_yz||  
-|norm_3::set_yzx||  
-|norm_3::set_z||  
-|norm_3::set_zx||  
-|norm_3::set_zxy||  
-|norm_3::set_zy||  
-|norm_3::set_zyx||  
-  
-### Public Operators  
-  
-|Name|Description|  
-|----------|-----------------|  
-|norm_3::operator-||  
-|norm_3::operator--||  
-|norm_3::operator*=||  
-|norm_3::operator/=||  
-|norm_3::operator++||  
-|norm_3::operator+=||  
-|norm_3::operator=||  
-|norm_3::operator-=||  
-  
-### Public Constants  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[size Constant](#size)||  
-  
-### Public Data Members  
-  
-|Name|Description|  
-|----------|-----------------|  
-|norm_3::b||  
-|norm_3::bg||  
-|norm_3::bgr||  
-|norm_3::br||  
-|norm_3::brg||  
-|norm_3::g||  
-|norm_3::gb||  
-|norm_3::gbr||  
-|norm_3::gr||  
-|norm_3::grb||  
-|norm_3::r||  
-|norm_3::rb||  
-|norm_3::rbg||  
-|norm_3::rg||  
-|norm_3::rgb||  
-|norm_3::x||  
-|norm_3::xy||  
-|norm_3::xyz||  
-|norm_3::xz||  
-|norm_3::xzy||  
-|norm_3::y||  
-|norm_3::yx||  
-|norm_3::yxz||  
-|norm_3::yz||  
-|norm_3::yzx||  
-|norm_3::z||  
-|norm_3::zx||  
-|norm_3::zxy||  
-|norm_3::zy||  
-|norm_3::zyx||  
-  
-## Inheritance Hierarchy  
- `norm_3`  
-  
-## Requirements  
- **Header:** amp_short_vectors.h  
-  
- **Namespace:** Concurrency::graphics  
+
+Represents a short vector of three normal numbers.
+
+## Syntax
+
+```
+class norm_3;
+```
+
+## Members
+
+### Public Typedefs
+
+|Name|Description|
+|----------|-----------------|
+|`value_type`||
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[norm_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|norm_3::get_x||
+|norm_3::get_xy||
+|norm_3::get_xyz||
+|norm_3::get_xz||
+|norm_3::get_xzy||
+|norm_3::get_y||
+|norm_3::get_yx||
+|norm_3::get_yxz||
+|norm_3::get_yz||
+|norm_3::get_yzx||
+|norm_3::get_z||
+|norm_3::get_zx||
+|norm_3::get_zxy||
+|norm_3::get_zy||
+|norm_3::get_zyx||
+|norm_3::ref_b||
+|norm_3::ref_g||
+|norm_3::ref_r||
+|norm_3::ref_x||
+|norm_3::ref_y||
+|norm_3::ref_z||
+|norm_3::set_x||
+|norm_3::set_xy||
+|norm_3::set_xyz||
+|norm_3::set_xz||
+|norm_3::set_xzy||
+|norm_3::set_y||
+|norm_3::set_yx||
+|norm_3::set_yxz||
+|norm_3::set_yz||
+|norm_3::set_yzx||
+|norm_3::set_z||
+|norm_3::set_zx||
+|norm_3::set_zxy||
+|norm_3::set_zy||
+|norm_3::set_zyx||
+
+### Public Operators
+
+|Name|Description|
+|----------|-----------------|
+|norm_3::operator-||
+|norm_3::operator--||
+|norm_3::operator*=||
+|norm_3::operator/=||
+|norm_3::operator++||
+|norm_3::operator+=||
+|norm_3::operator=||
+|norm_3::operator-=||
+
+### Public Constants
+
+|Name|Description|
+|----------|-----------------|
+|[size Constant](#size)||
+
+### Public Data Members
+
+|Name|Description|
+|----------|-----------------|
+|norm_3::b||
+|norm_3::bg||
+|norm_3::bgr||
+|norm_3::br||
+|norm_3::brg||
+|norm_3::g||
+|norm_3::gb||
+|norm_3::gbr||
+|norm_3::gr||
+|norm_3::grb||
+|norm_3::r||
+|norm_3::rb||
+|norm_3::rbg||
+|norm_3::rg||
+|norm_3::rgb||
+|norm_3::x||
+|norm_3::xy||
+|norm_3::xyz||
+|norm_3::xz||
+|norm_3::xzy||
+|norm_3::y||
+|norm_3::yx||
+|norm_3::yxz||
+|norm_3::yz||
+|norm_3::yzx||
+|norm_3::z||
+|norm_3::zx||
+|norm_3::zxy||
+|norm_3::zy||
+|norm_3::zyx||
+
+## Inheritance Hierarchy
+
+`norm_3`
+
+## Requirements
+
+**Header:** amp_short_vectors.h
+
+**Namespace:** Concurrency::graphics
 
 ## <a name="ctor"></a> norm_3 Constructor
-Default constructor, initializes all elements with 0.  
-  
-## Syntax  
-  
-```  
-norm_3() restrict(amp,cpu);  
-norm_3(  
-   norm _V0,  
-   norm _V1,  
-   norm _V2  
-) restrict(amp,cpu);  
-norm_3(  
-   float _V0,  
-   float _V1,  
-   float _V2  
-) restrict(amp,cpu);  
-norm_3(  
-   unorm _V0,  
-   unorm _V1,  
-   unorm _V2  
-) restrict(amp,cpu);  
-norm_3(  
-   norm _V  
-) restrict(amp,cpu);  
-explicit norm_3(  
-   float _V  
-) restrict(amp,cpu);  
-norm_3(  
-   const norm_3& _Other  
-) restrict(amp,cpu);  
-explicit inline norm_3(  
-   const uint_3& _Other  
-) restrict(amp,cpu);  
-explicit inline norm_3(  
-   const int_3& _Other  
-) restrict(amp,cpu);  
-explicit inline norm_3(  
-   const float_3& _Other  
-) restrict(amp,cpu);  
-explicit inline norm_3(  
-   const unorm_3& _Other  
-) restrict(amp,cpu);  
-explicit inline norm_3(  
-   const double_3& _Other  
-) restrict(amp,cpu);  
-```  
-  
-#### Parameters  
- `_V0`  
- The value to initialize element 0.  
-  
- `_V1`  
- The value to initialize element 1.  
-  
- `_V2`  
- The value to initialize element 2.  
-  
- `_V`  
- The value for initialization.  
-  
- `_Other`  
- The object used to initialize.  
-  
+
+Default constructor, initializes all elements with 0.
+
+## Syntax
+
+```
+norm_3() restrict(amp,cpu);
+norm_3(
+   norm _V0,
+   norm _V1,
+   norm _V2
+) restrict(amp,cpu);
+norm_3(
+   float _V0,
+   float _V1,
+   float _V2
+) restrict(amp,cpu);
+norm_3(
+   unorm _V0,
+   unorm _V1,
+   unorm _V2
+) restrict(amp,cpu);
+norm_3(
+   norm _V
+) restrict(amp,cpu);
+explicit norm_3(
+   float _V
+) restrict(amp,cpu);
+norm_3(
+   const norm_3& _Other
+) restrict(amp,cpu);
+explicit inline norm_3(
+   const uint_3& _Other
+) restrict(amp,cpu);
+explicit inline norm_3(
+   const int_3& _Other
+) restrict(amp,cpu);
+explicit inline norm_3(
+   const float_3& _Other
+) restrict(amp,cpu);
+explicit inline norm_3(
+   const unorm_3& _Other
+) restrict(amp,cpu);
+explicit inline norm_3(
+   const double_3& _Other
+) restrict(amp,cpu);
+```
+
+#### Parameters
+
+*_V0*<br/>
+The value to initialize element 0.
+
+*_V1*<br/>
+The value to initialize element 1.
+
+*_V2*<br/>
+The value to initialize element 2.
+
+*_V*<br/>
+The value for initialization.
+
+*_Other*<br/>
+The object used to initialize.
+
 ## <a name="size"> size Constant
-### Syntax  
-  
-```  
-static const int size = 3;  
-```   
- 
-## See Also  
- [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)
+
+### Syntax
+
+```
+static const int size = 3;
+```
+
+## See Also
+
+[Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

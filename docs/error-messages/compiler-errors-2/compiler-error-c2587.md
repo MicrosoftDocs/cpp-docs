@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2587
-'identifier' : illegal use of local variable as default parameter  
-  
- Local variables are not allowed as default parameters.  
-  
- The following sample generates C2587:  
-  
-```  
-// C2587.cpp  
-// compile with: /c  
-int i;  
-void func() {  
-   int j;  
-   extern void func2( int k = j );  // C2587 -- local variable  
-   extern void func3( int k = i );   // OK  
-}  
+
+'identifier' : illegal use of local variable as default parameter
+
+Local variables are not allowed as default parameters.
+
+The following sample generates C2587:
+
+```
+// C2587.cpp
+// compile with: /c
+int i;
+void func() {
+   int j;
+   extern void func2( int k = j );  // C2587 -- local variable
+   extern void func3( int k = i );   // OK
+}
 ```

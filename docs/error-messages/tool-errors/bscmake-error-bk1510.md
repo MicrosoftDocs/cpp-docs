@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # BSCMAKE Error BK1510
-corrupt .SBR file filename  
-  
- The given .sbr file does not have the expected format. Recompile to create a new .sbr.
+
+corrupt .SBR file filename
+
+The given .sbr file does not have the expected format. Recompile to create a new .sbr.

@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2751
-'parameter' : the name of a function parameter cannot be qualified  
-  
- You cannot use a qualified name as a function parameter.  
-  
- The following sample generates C2751:  
-  
-```  
-// C2751.cpp  
-namespace std {  
-   template<typename T>  
-   class list {};  
-}  
-  
-#define list std::list  
-void f(int &list){}   // C2751  
+
+'parameter' : the name of a function parameter cannot be qualified
+
+You cannot use a qualified name as a function parameter.
+
+The following sample generates C2751:
+
+```
+// C2751.cpp
+namespace std {
+   template<typename T>
+   class list {};
+}
+
+#define list std::list
+void f(int &list){}   // C2751
 ```

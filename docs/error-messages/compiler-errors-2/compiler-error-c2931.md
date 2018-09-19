@@ -13,37 +13,38 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2931
-'class' : type-class-id redefined as a member function of 'identifier'  
-  
- You cannot use a generic or template class as a member function of another class.  
-  
- This error can be caused if braces are improperly matched.  
-  
- The following sample generates C2931:  
-  
-```  
-// C2931.cpp  
-// compile with: /c  
-template<class T>   
-struct TC { };   
-struct MyStruct {  
-   void TC<int>();   // C2931  
-};  
-  
-struct TC2 { };   
-struct MyStruct2 {  
-   void TC2();  
-};  
-```  
-  
- C2931 can also occur when using generics:  
-  
-```  
-// C2931b.cpp  
-// compile with: /clr /c  
-generic<class T> ref struct GC {};  
-struct MyStruct {  
-   void GC<int>();   // C2931  
-   void GC2();   // OK  
-};  
+
+'class' : type-class-id redefined as a member function of 'identifier'
+
+You cannot use a generic or template class as a member function of another class.
+
+This error can be caused if braces are improperly matched.
+
+The following sample generates C2931:
+
+```
+// C2931.cpp
+// compile with: /c
+template<class T>
+struct TC { };
+struct MyStruct {
+   void TC<int>();   // C2931
+};
+
+struct TC2 { };
+struct MyStruct2 {
+   void TC2();
+};
+```
+
+C2931 can also occur when using generics:
+
+```
+// C2931b.cpp
+// compile with: /clr /c
+generic<class T> ref struct GC {};
+struct MyStruct {
+   void GC<int>();   // C2931
+   void GC2();   // OK
+};
 ```

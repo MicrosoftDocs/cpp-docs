@@ -13,16 +13,18 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Child Window Notification Message Handlers
-There are five categories of child window notification messages:  
-  
-|Category|Description|  
-|--------------|-----------------|  
-|[Generic Control Handler](../../mfc/reference/generic-control-handler.md)|Handler for generic control notification codes.|  
-|[User Button Handlers](../../mfc/reference/user-button-handlers.md)|Handlers for user button notification codes.|  
-|[Combo Box Handlers](../../mfc/reference/combo-box-handlers.md)|Handlers for combo box notification codes.|  
-|[Edit Control Handlers](../../mfc/reference/edit-control-handlers.md)|Handlers for edit control notification codes.|  
-|[List Box Handlers](../../mfc/reference/list-box-handlers.md)|Handlers for list box notification codes.|  
-  
-## See Also  
- [Message Maps](../../mfc/reference/message-maps-mfc.md)
+
+There are five categories of child window notification messages:
+
+|Category|Description|
+|--------------|-----------------|
+|[Generic Control Handler](../../mfc/reference/generic-control-handler.md)|Handler for generic control notification codes.|
+|[User Button Handlers](../../mfc/reference/user-button-handlers.md)|Handlers for user button notification codes.|
+|[Combo Box Handlers](../../mfc/reference/combo-box-handlers.md)|Handlers for combo box notification codes.|
+|[Edit Control Handlers](../../mfc/reference/edit-control-handlers.md)|Handlers for edit control notification codes.|
+|[List Box Handlers](../../mfc/reference/list-box-handlers.md)|Handlers for list box notification codes.|
+
+## See Also
+
+[Message Maps](../../mfc/reference/message-maps-mfc.md)
 

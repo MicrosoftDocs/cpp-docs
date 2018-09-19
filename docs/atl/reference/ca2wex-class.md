@@ -28,7 +28,7 @@ class CA2WEX
 
 #### Parameters
 
-*t_nBufferLength*  
+*t_nBufferLength*<br/>
 The size of the buffer used in the translation process. The default length is 128 bytes.
 
 ## Members
@@ -98,10 +98,10 @@ CA2WEX(LPCSTR psz) throw(...);
 
 ### Parameters
 
-*psz*  
+*psz*<br/>
 The text string to be converted.
 
-*nCodePage*  
+*nCodePage*<br/>
 The code page used to perform the conversion. See the code page parameter discussion for the Windows SDK function [MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar) for more details.
 
 ### Remarks
@@ -140,7 +140,7 @@ wchar_t m_szBuffer[t_nBufferLength];
 
 Conversion operator.
 
-```  
+```
 operator LPWSTR() const throw();
 ```
 
@@ -150,9 +150,9 @@ Returns the text string as type LPWSTR.
 
 ## See Also
 
-[CA2AEX Class](../../atl/reference/ca2aex-class.md)   
-[CA2CAEX Class](../../atl/reference/ca2caex-class.md)   
-[CW2AEX Class](../../atl/reference/cw2aex-class.md)   
-[CW2CWEX Class](../../atl/reference/cw2cwex-class.md)   
-[CW2WEX Class](../../atl/reference/cw2wex-class.md)   
+[CA2AEX Class](../../atl/reference/ca2aex-class.md)<br/>
+[CA2CAEX Class](../../atl/reference/ca2caex-class.md)<br/>
+[CW2AEX Class](../../atl/reference/cw2aex-class.md)<br/>
+[CW2CWEX Class](../../atl/reference/cw2cwex-class.md)<br/>
+[CW2WEX Class](../../atl/reference/cw2wex-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

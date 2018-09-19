@@ -13,37 +13,41 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __vmx_vmptrst
-**Microsoft Specific**  
-  
- Stores the pointer to the current virtual-machine control structure (VMCS) at the specified address.  
-  
-## Syntax  
-  
-```  
-void __vmx_vmptrst(   
-   unsigned __int64 *VmcsPhysicalAddress   
-);  
-```  
-  
-#### Parameters  
- [in] *`VmcsPhysicalAddress`  
- The address where the current VMCS pointer is stored.  
-  
-## Remarks  
- The VMCS pointer is a 64-bit physical address.  
-  
- The `__vmx_vmptrst` function is equivalent to the `VMPTRST` machine instruction. This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, search for the document, "Intel Virtualization Technical Specification for the IA-32 Intel Architecture," document number C97063-002, at the [Intel Corporation](https://software.intel.com/en-us/articles/intel-sdm) site.  
-  
-## Requirements  
-  
-|Intrinsic|Architecture|  
-|---------------|------------------|  
-|`__vmx_vmptrst`|x86, x64|  
-  
- **Header file** \<intrin.h>  
-  
-**END Microsoft Specific**  
-  
-## See Also  
- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   
- [__vmx_vmptrld](../intrinsics/vmx-vmptrld.md)
+
+**Microsoft Specific**
+
+Stores the pointer to the current virtual-machine control structure (VMCS) at the specified address.
+
+## Syntax
+
+```
+void __vmx_vmptrst( 
+   unsigned __int64 *VmcsPhysicalAddress 
+);
+```
+
+#### Parameters
+
+[in] *`VmcsPhysicalAddress`
+The address where the current VMCS pointer is stored.
+
+## Remarks
+
+The VMCS pointer is a 64-bit physical address.
+
+The `__vmx_vmptrst` function is equivalent to the `VMPTRST` machine instruction. This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, search for the document, "Intel Virtualization Technical Specification for the IA-32 Intel Architecture," document number C97063-002, at the [Intel Corporation](https://software.intel.com/en-us/articles/intel-sdm) site.
+
+## Requirements
+
+|Intrinsic|Architecture|
+|---------------|------------------|
+|`__vmx_vmptrst`|x86, x64|
+
+**Header file** \<intrin.h>
+
+**END Microsoft Specific**
+
+## See Also
+
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[__vmx_vmptrld](../intrinsics/vmx-vmptrld.md)

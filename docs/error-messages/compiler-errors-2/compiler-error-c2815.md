@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2815
-'operator delete' : first formal parameter must be 'void *', but 'param' was used  
-  
- Any user-defined [operator delete](../../standard-library/new-operators.md#op_delete) function must take a first formal parameter of type `void *`.  
-  
- The following sample generates C2815:  
-  
-```  
-// C2815.cpp  
-// compile with: /c  
-class CMyClass {  
-public:  
-   void mf1(int *a);  
-   void operator delete(CMyClass *);   // C2815  
-   void operator delete(void *);   
-};  
+
+'operator delete' : first formal parameter must be 'void *', but 'param' was used
+
+Any user-defined [operator delete](../../standard-library/new-operators.md#op_delete) function must take a first formal parameter of type `void *`.
+
+The following sample generates C2815:
+
+```
+// C2815.cpp
+// compile with: /c
+class CMyClass {
+public:
+   void mf1(int *a);
+   void operator delete(CMyClass *);   // C2815
+   void operator delete(void *);
+};
 ```

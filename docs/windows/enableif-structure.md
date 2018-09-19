@@ -33,10 +33,10 @@ struct EnableIf<true, T>;
 
 ### Parameters
 
-*T*  
+*T*<br/>
 A type.
 
-*b*  
+*b*<br/>
 A Boolean expression.
 
 ## Remarks

@@ -12,37 +12,41 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # scheduler_interface Structure
-Scheduler Interface  
-  
-## Syntax  
-  
+
+Scheduler Interface
+
+## Syntax
+
 ```
 struct __declspec(novtable) scheduler_interface;
-```  
-  
-## Members  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[scheduler_interface::schedule](#schedule)||  
-  
-## Inheritance Hierarchy  
- `scheduler_interface`  
-  
-## Requirements  
- **Header:** pplinterface.h  
-  
- **Namespace:** concurrency  
-  
-##  <a name="schedule"></a>  scheduler_interface::schedule Method  
-  
+```
+
+## Members
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[scheduler_interface::schedule](#schedule)||
+
+## Inheritance Hierarchy
+
+`scheduler_interface`
+
+## Requirements
+
+**Header:** pplinterface.h
+
+**Namespace:** concurrency
+
+##  <a name="schedule"></a>  scheduler_interface::schedule Method
+
 ```
 virtual void schedule(
     TaskProc_t,
- void*) = 0;
-```  
-  
-## See Also  
- [concurrency Namespace](concurrency-namespace.md)
+void*) = 0;
+```
+
+## See Also
+
+[concurrency Namespace](concurrency-namespace.md)

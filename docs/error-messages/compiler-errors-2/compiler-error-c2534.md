@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2534
-'identifier' : constructor cannot return a value  
-  
- A constructor cannot return a value or have a return type (not even a `void` return type).  
-  
- This error may be fixed by removing the `return` statement from the constructor definition.  
-  
- The following sample generates C2534:  
-  
-```  
-// C2534.cpp  
-class A {  
-public:  
-   int i;  
-   A() { return i; }   // C2534  
-};  
+
+'identifier' : constructor cannot return a value
+
+A constructor cannot return a value or have a return type (not even a `void` return type).
+
+This error may be fixed by removing the `return` statement from the constructor definition.
+
+The following sample generates C2534:
+
+```
+// C2534.cpp
+class A {
+public:
+   int i;
+   A() { return i; }   // C2534
+};
 ```

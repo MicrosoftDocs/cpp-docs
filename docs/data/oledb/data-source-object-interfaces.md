@@ -12,6 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Source Object Interfaces
+
 The following table shows the mandatory and optional interfaces defined by OLE DB for a data source object.  
   
 |Interface|Required?|Implemented by OLE DB templates?|  
@@ -26,7 +27,8 @@ The following table shows the mandatory and optional interfaces defined by OLE D
 |[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|Optional|No|  
 |`ISupportErrorInfo`|Optional|No|  
   
- The data source object implements the `IDBProperties`, `IDBInitialize`, and `IDBCreateSession` interfaces through inheritance. You can choose to support additional functionality by inheriting or not inheriting from one of these implementation classes. If you want to support the `IDBDataSourceAdmin` interface, you must inherit from the `IDBDataSourceAdminImpl` class.  
+The data source object implements the `IDBProperties`, `IDBInitialize`, and `IDBCreateSession` interfaces through inheritance. You can choose to support additional functionality by inheriting or not inheriting from one of these implementation classes. If you want to support the `IDBDataSourceAdmin` interface, you must inherit from the `IDBDataSourceAdminImpl` class.  
   
 ## See Also  
- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

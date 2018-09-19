@@ -13,20 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3769
-'type' : a nested class cannot have the same name as the immediately enclosing class  
-  
- A nested class cannot have the same name as the immediately enclosing class.  
-  
-## Example  
- The following sample generates C3769.  
-  
-```  
-// C3769.cpp  
-// compile with: /c  
-class x {  
-   class x {};   // C3769  
-   class y {  
-      class x{};   // OK  
-   };  
-};  
+
+'type' : a nested class cannot have the same name as the immediately enclosing class
+
+A nested class cannot have the same name as the immediately enclosing class.
+
+## Example
+
+The following sample generates C3769.
+
+```
+// C3769.cpp
+// compile with: /c
+class x {
+   class x {};   // C3769
+   class y {
+      class x{};   // OK
+   };
+};
 ```

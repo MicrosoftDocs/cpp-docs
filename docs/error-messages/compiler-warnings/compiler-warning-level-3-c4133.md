@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4133
-'type' : incompatible types - from 'type1' to 'type2'  
-  
- This warning can be caused by trying to subtract two pointers of different types.  
-  
- To avoid this warning, provide an appropriate type cast.
+
+'type' : incompatible types - from 'type1' to 'type2'
+
+This warning can be caused by trying to subtract two pointers of different types.
+
+To avoid this warning, provide an appropriate type cast.

@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0010
-missing left bracket  
-  
- The expression contains unbalanced square brackets. Retype the expression with balanced square brackets.  
-  
- This error is identical to CAN0010.
+
+missing left bracket
+
+The expression contains unbalanced square brackets. Retype the expression with balanced square brackets.
+
+This error is identical to CAN0010.

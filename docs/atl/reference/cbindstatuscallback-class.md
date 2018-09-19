@@ -23,17 +23,17 @@ This class implements the `IBindStatusCallback` interface.
 
 ```
 template <class T,
-    int nBindFlags = BINDF_ASYNCHRONOUS | BINDF_ASYNCSTORAGE | BINDF_GETNEWESTVERSION | BINDF_NOWRITECACHE>  
+    int nBindFlags = BINDF_ASYNCHRONOUS | BINDF_ASYNCSTORAGE | BINDF_GETNEWESTVERSION | BINDF_NOWRITECACHE>
 class ATL_NO_VTABLE CBindStatusCallback : public CComObjectRootEx <T ::_ThreadModel::ThreadModelNoCS>,
     public IBindStatusCallbackImpl<T>
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class containing the function that will be called as the data is received.
 
-*nBindFlags*  
+*nBindFlags*<br/>
 Specifies the bind flags that are returned by [GetBindInfo](#getbindinfo). The default implementation sets the binding to be asynchronous, retrieves the newest version of the data/object, and does not store retrieved data in the disk cache.
 
 ## Members
@@ -128,7 +128,7 @@ Frees all allocated resources.
 Creates a `CBindStatusCallback` object and calls `StartAsyncDownload` to start downloading data asynchronously from the specified URL.
 
 ```
-static HRESULT Download(  
+static HRESULT Download(
     T* pT,
     ATL_PDATAAVAILABLE pFunc,
     BSTR bstrURL,
@@ -138,21 +138,21 @@ static HRESULT Download(
 
 ### Parameters
 
-*pT*  
+*pT*<br/>
 [in] A pointer to the object requesting the asynchronous data transfer. The `CBindStatusCallback` object is templatized on this object's class.
 
-*pFunc*  
+*pFunc*<br/>
 [in] A pointer to the function that receives the data that is read. The function is a member of your object's class of type `T`. See [StartAsyncDownload](#startasyncdownload) for syntax and an example.
 
-*bstrURL*  
+*bstrURL*<br/>
 [in] The URL to obtain data from. Can be any valid URL or file name. Cannot be NULL. For example:
 
 `CComBSTR mybstr =_T("http://somesite/data.htm")`
 
-*pUnkContainer*  
+*pUnkContainer*<br/>
 [in] The `IUnknown` of the container. NULL by default.
 
-*bRelative*  
+*bRelative*<br/>
 [in] A flag indicating whether the URL is relative or absolute. FALSE by default, meaning the URL is absolute.
 
 ### Return Value
@@ -175,7 +175,7 @@ STDMETHOD(GetBindInfo)(
 
 ### Parameters
 
-*pgrfBSCF*  
+*pgrfBSCF*<br/>
 [out] A pointer to BINDF enumeration values indicating how the bind operation should occur. By default, set with the following enumeration values:
 
 BINDF_ASYNCHRONOUS Asynchronous download.
@@ -186,7 +186,7 @@ BINDF_GETNEWESTVERSION The bind operation should retrieve the newest version of 
 
 BINDF_NOWRITECACHE The bind operation should not store retrieved data in the disk cache.
 
-*pbindinfo*  
+*pbindinfo*<br/>
 [in, out] A pointer to the `BINDINFO` structure giving more information about how the object wants binding to occur.
 
 ### Return Value
@@ -207,7 +207,7 @@ STDMETHOD(GetPriority)(LONG* pnPriority);
 
 ### Parameters
 
-*pnPriority*  
+*pnPriority*<br/>
 [out] Address of the **LONG** variable that, on success, receives the priority.
 
 ### Return Value
@@ -250,12 +250,12 @@ ATL_PDATAAVAILABLE m_pFunc;
 
 The function pointed to by `m_pFunc` is a member of your object's class and has the following syntax:
 
-```  
-void Function_Name(  
-   CBindStatusCallback<T>* pbsc,  
-   BYTE* pBytes,  
-   DWORD dwSize  
-   );  
+```
+void Function_Name(
+   CBindStatusCallback<T>* pbsc,
+   BYTE* pBytes,
+   DWORD dwSize
+   );
 ```
 
 ##  <a name="m_pt"></a>  CBindStatusCallback::m_pT
@@ -323,7 +323,7 @@ Initialized in `OnDataAvailable` from the `STGMEDIUM` structure when the BCSF fl
 The system-supplied asynchronous moniker calls `OnDataAvailable` to provide data to the object as it becomes available.
 
 ```
-STDMETHOD(  
+STDMETHOD(
     OnDataAvailable)(DWORD grfBSCF,
     DWORD dwSize,
     FORMATETC* /* pformatetc */,
@@ -332,16 +332,16 @@ STDMETHOD(
 
 ### Parameters
 
-*grfBSCF*  
+*grfBSCF*<br/>
 [in] A BSCF enumeration value. One or more of the following: BSCF_FIRSTDATANOTIFICATION, BSCF_INTERMEDIARYDATANOTIFICATION, or BSCF_LASTDATANOTIFICATION.
 
-*dwSize*  
+*dwSize*<br/>
 [in] The cumulative amount (in bytes) of data available since the beginning of the binding. Can be zero, indicating that the amount of data is not relevant or that no specific amount became available.
 
-*pformatetc*  
+*pformatetc*<br/>
 [in] Pointer to the [FORMATETC](/windows/desktop/com/the-formatetc-structure) structure that contains the format of the available data. If there is no format, can be CF_NULL.
 
-*pstgmed*  
+*pstgmed*<br/>
 [in] Pointer to the [STGMEDIUM](/windows/desktop/com/the-stgmedium-structure) structure that holds the actual data now available.
 
 ### Return Value
@@ -362,7 +362,7 @@ STDMETHOD(OnLowResource)(DWORD /* dwReserved */);
 
 ### Parameters
 
-*dwReserved*  
+*dwReserved*<br/>
 Reserved.
 
 ### Return Value
@@ -379,10 +379,10 @@ STDMETHOD(OnObjectAvailable)(REFID /* riid */, IUnknown* /* punk */);
 
 ### Parameters
 
-*riid*  
+*riid*<br/>
 Interface identifier of the requested interface. Unused.
 
-*punk*  
+*punk*<br/>
 Address of the IUnknown interface. Unused.
 
 ### Return Value
@@ -403,16 +403,16 @@ STDMETHOD(OnProgress)(
 
 ### Parameters
 
-*ulProgress*  
+*ulProgress*<br/>
 Unsigned long integer. Unused.
 
-*ulProgressMax*  
+*ulProgressMax*<br/>
 Unsigned long integer Unused.
 
-*ulStatusCode*  
+*ulStatusCode*<br/>
 Unsigned long integer. Unused.
 
-*szStatusText*  
+*szStatusText*<br/>
 Address of a string value. Unused.
 
 ### Return Value
@@ -429,10 +429,10 @@ STDMETHOD(OnStartBinding)(DWORD /* dwReserved */, IBinding* pBinding);
 
 ### Parameters
 
-*dwReserved*  
+*dwReserved*<br/>
 Reserved for future use.
 
-*pBinding*  
+*pBinding*<br/>
 [in] Address of the IBinding interface of the current bind operation. This cannot be NULL. The client should call AddRef on this pointer to keep a reference to the binding object.
 
 ##  <a name="onstopbinding"></a>  CBindStatusCallback::OnStopBinding
@@ -445,11 +445,11 @@ STDMETHOD(OnStopBinding)(HRESULT hresult, LPCWSTR /* szError */);
 
 ### Parameters
 
-*hresult*  
+*hresult*<br/>
 Status code returned from the bind operation.
 
-szStatusText  
-Address of a string value Unused.
+*szError*<br/>
+Address of a string value. Unused.
 
 ### Remarks
 
@@ -460,7 +460,7 @@ Called by the system-supplied asynchronous moniker to indicate the end of the bi
 Starts downloading data asynchronously from the specified URL.
 
 ```
-HRESULT StartAsyncDownload(  
+HRESULT StartAsyncDownload(
     T* pT,
     ATL_PDATAAVAILABLE pFunc,
     BSTR bstrURL,
@@ -470,21 +470,21 @@ HRESULT StartAsyncDownload(
 
 ### Parameters
 
-*pT*  
+*pT*<br/>
 [in] A pointer to the object requesting the asynchronous data transfer. The `CBindStatusCallback` object is templatized on this object's class.
 
-*pFunc*  
+*pFunc*<br/>
 [in] A pointer to the function that receives the data being read. The function is a member of your object's class of type `T`. See **Remarks** for syntax and an example.
 
-*bstrURL*  
+*bstrURL*<br/>
 [in] The URL to obtain data from. Can be any valid URL or file name. Cannot be NULL. For example:
 
 `CComBSTR mybstr =_T("http://somesite/data.htm")`
 
-*pUnkContainer*  
+*pUnkContainer*<br/>
 [in] The `IUnknown` of the container. NULL by default.
 
-*bRelative*  
+*bRelative*<br/>
 [in] A flag indicating whether the URL is relative or absolute. FALSE by default, meaning the URL is absolute.
 
 ### Return Value

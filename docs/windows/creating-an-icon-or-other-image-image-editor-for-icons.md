@@ -50,8 +50,8 @@ None
 
 ## See Also
 
-[Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)  
-[Converting Bitmaps to Toolbars](../windows/converting-bitmaps-to-toolbars.md)  
-[Creating New Toolbars](../windows/creating-new-toolbars.md)  
-[Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)  
+[Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)<br/>
+[Converting Bitmaps to Toolbars](../windows/converting-bitmaps-to-toolbars.md)<br/>
+[Creating New Toolbars](../windows/creating-new-toolbars.md)<br/>
+[Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
 [Image Editor for Icons](../windows/image-editor-for-icons.md)

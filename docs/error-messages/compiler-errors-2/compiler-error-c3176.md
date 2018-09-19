@@ -13,17 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3176
-'type' : cannot declare local value type  
-  
- A class can only be declared as a value type at global scope.  
-  
-## Example  
- The following sample generates C3176.  
-  
-```  
-// C3176.cpp  
-// compile with: /clr  
-int main () {  
-   enum class C {};   // C3176  
-}  
+
+'type' : cannot declare local value type
+
+A class can only be declared as a value type at global scope.
+
+## Example
+
+The following sample generates C3176.
+
+```
+// C3176.cpp
+// compile with: /clr
+int main () {
+   enum class C {};   // C3176
+}
 ```

@@ -34,7 +34,7 @@ You must have these components to complete this walkthrough:
     vcredist_x86.exe
     mkdir "C:\Program Files\MyMFCApplication"
     copy MyMFCApplication.exe "C:\Program Files\MyMFCApplication"
-    ```  
+    ```
 
 1. Create a self-extracting setup file:
 
@@ -60,7 +60,7 @@ You must have these components to complete this walkthrough:
 
    1. On the **Install Program to Launch** page, in the **Install Program** text box, enter the following command line and then choose **Next**.
 
-      `cmd.exe /c "setup.bat"`  
+      **cmd.exe /c "setup.bat"**
 
    1. On the **Show window** page, select **Default** and then choose **Next**.
 

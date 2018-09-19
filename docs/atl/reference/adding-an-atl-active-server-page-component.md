@@ -33,10 +33,10 @@ Active Server Pages components are part of the Internet Information Services arc
 
 ## See Also
 
-[Adding a Class](../../ide/adding-a-class-visual-cpp.md)   
-[Adding a New Interface in an ATL Project](../../atl/reference/adding-a-new-interface-in-an-atl-project.md)   
-[Adding Connection Points to an Object](../../atl/adding-connection-points-to-an-object.md)   
-[Adding a Method](../../ide/adding-a-method-visual-cpp.md)   
-[MFC Class](../../mfc/reference/adding-an-mfc-class.md)   
+[Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
+[Adding a New Interface in an ATL Project](../../atl/reference/adding-a-new-interface-in-an-atl-project.md)<br/>
+[Adding Connection Points to an Object](../../atl/adding-connection-points-to-an-object.md)<br/>
+[Adding a Method](../../ide/adding-a-method-visual-cpp.md)<br/>
+[MFC Class](../../mfc/reference/adding-an-mfc-class.md)<br/>
 [Adding a Generic C++ Class](../../ide/adding-a-generic-cpp-class.md)
 

@@ -30,7 +30,7 @@ class ATL_NO_VTABLE IPerPropertyBrowsingImpl :
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IPerPropertyBrowsingImpl`.
 
 ## Members
@@ -135,6 +135,6 @@ See [IPerPropertyBrowsing::MapPropertyToPage](/windows/desktop/api/ocidl/nf-ocid
 
 ## See Also
 
-[IPropertyPageImpl Class](../../atl/reference/ipropertypageimpl-class.md)   
-[ISpecifyPropertyPagesImpl Class](../../atl/reference/ispecifypropertypagesimpl-class.md)   
+[IPropertyPageImpl Class](../../atl/reference/ipropertypageimpl-class.md)<br/>
+[ISpecifyPropertyPagesImpl Class](../../atl/reference/ispecifypropertypagesimpl-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

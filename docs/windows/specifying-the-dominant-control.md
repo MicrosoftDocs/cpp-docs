@@ -35,6 +35,6 @@ Win32
 
 ## See Also
 
-[Selecting Multiple Controls](../windows/selecting-multiple-controls.md)  
-[Selecting Controls](../windows/selecting-controls.md)  
+[Selecting Multiple Controls](../windows/selecting-multiple-controls.md)<br/>
+[Selecting Controls](../windows/selecting-controls.md)<br/>
 [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)

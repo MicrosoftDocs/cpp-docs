@@ -27,10 +27,10 @@ __forceinline static void FillArrayWithIid(
 
 ### Parameters
 
-*index*  
+*index*<br/>
 Pointer to an index value into the *iids* array.
 
-*iids*  
+*iids*<br/>
 An array of interface IDs.
 
 ## Requirements

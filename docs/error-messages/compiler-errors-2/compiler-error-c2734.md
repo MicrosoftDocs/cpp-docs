@@ -13,14 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2734
-'identifier' : const object must be initialized if not extern  
-  
- The identifier is declared `const` but not initialized or `extern`.  
-  
- The following sample generates C2734:  
-  
-```  
-// C2734.cpp  
-const int j;   // C2734  
-extern const int i;   // OK, declared as extern  
+
+'identifier' : const object must be initialized if not extern
+
+The identifier is declared `const` but not initialized or `extern`.
+
+The following sample generates C2734:
+
+```
+// C2734.cpp
+const int j;   // C2734
+extern const int i;   // OK, declared as extern
 ```

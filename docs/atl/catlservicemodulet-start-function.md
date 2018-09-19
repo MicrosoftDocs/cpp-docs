@@ -23,6 +23,6 @@ When the service is run, `_tWinMain` calls `CAtlServiceModuleT::WinMain`, which 
 
 ## See Also
 
-[Services](../atl/atl-services.md)   
+[Services](../atl/atl-services.md)<br/>
 [CAtlServiceModuleT::Start](../atl/reference/catlservicemodulet-class.md#start)
 

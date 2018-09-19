@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4224
-nonstandard extension used : formal parameter 'identifier' was previously defined as a type  
-  
- The identifier was previously used as a `typedef`. This causes a warning under ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).  
-  
-## Example  
-  
-```  
-// C4224.cpp  
-// compile with: /Za /W1 /LD  
-typedef int I;  
-void func ( int I );  // C4224  
+
+nonstandard extension used : formal parameter 'identifier' was previously defined as a type
+
+The identifier was previously used as a `typedef`. This causes a warning under ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
+
+## Example
+
+```
+// C4224.cpp
+// compile with: /Za /W1 /LD
+typedef int I;
+void func ( int I );  // C4224
 ```

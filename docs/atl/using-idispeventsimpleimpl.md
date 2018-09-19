@@ -35,7 +35,7 @@ The example below shows you how to handle the `DocumentChange` event fired by Wo
 The example is from the [ATLEventHandling sample](../visual-cpp-samples.md).  
 
 ```cpp
-[ uuid(000209F7-0000-0000-C000-000000000046), hidden ]  
+[ uuid(000209F7-0000-0000-C000-000000000046), hidden ]
 dispinterface ApplicationEvents {
 properties:
 methods:
@@ -66,6 +66,6 @@ The following code is from Simple.cpp:
 
 ## See Also
 
-[Event Handling](../atl/event-handling-and-atl.md)   
+[Event Handling](../atl/event-handling-and-atl.md)<br/>
 [ATLEventHandling Sample](../visual-cpp-samples.md)
 

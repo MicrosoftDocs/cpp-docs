@@ -13,16 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _CRT_DISABLE_PERFCRIT_LOCKS
-Disables performance-critical locking in I/O operations.  
-  
-## Syntax  
-  
-```  
-#define _CRT_DISABLE_PERFCRIT_LOCKS  
-```  
-  
-## Remarks  
- Defining this symbol can improve performance in single-threaded I/O-bound programs by forcing all I/O operations to assume a single-threaded I/O model. For more information, see [Multithreaded Libraries Performance](../c-runtime-library/multithreaded-libraries-performance.md).  
-  
-## See Also  
- [Global Constants](../c-runtime-library/global-constants.md)
+
+Disables performance-critical locking in I/O operations.
+
+## Syntax
+
+```
+#define _CRT_DISABLE_PERFCRIT_LOCKS
+```
+
+## Remarks
+
+Defining this symbol can improve performance in single-threaded I/O-bound programs by forcing all I/O operations to assume a single-threaded I/O model. For more information, see [Multithreaded Libraries Performance](../c-runtime-library/multithreaded-libraries-performance.md).
+
+## See Also
+
+[Global Constants](../c-runtime-library/global-constants.md)

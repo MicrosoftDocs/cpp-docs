@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3698
-'type' : cannot use this type as argument of 'operator'  
-  
- A managed object was declared incorrectly.  
-  
- The following sample generates C3698:  
-  
-```  
-// C3698.cpp  
-// compile with: /clr  
-  
-int main() {  
-   array<int>^a = new array<int>^(20);   // C3698  
-   array<int>^a2 = gcnew array<int>(20);   // OK  
-}  
+
+'type' : cannot use this type as argument of 'operator'
+
+A managed object was declared incorrectly.
+
+The following sample generates C3698:
+
+```
+// C3698.cpp
+// compile with: /clr
+
+int main() {
+   array<int>^a = new array<int>^(20);   // C3698
+   array<int>^a2 = gcnew array<int>(20);   // OK
+}
 ```

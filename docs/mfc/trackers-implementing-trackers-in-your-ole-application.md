@@ -12,14 +12,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Trackers: Implementing Trackers in Your OLE Application
-Trackers provide a graphical interface to enable users to interact with OLE client items. By using different tracker styles, OLE client items can be displayed with hatched borders, resize handles, or a variety of other visual effects. This article describes:  
-  
--   [How to Implement Tracking in Your Code](../mfc/how-to-implement-tracking-in-your-code.md).  
-  
--   [Rubber-Banding and Trackers](../mfc/rubber-banding-and-trackers.md).  
-  
- The article also covers the use of styles with trackers. In addition, it makes several references to the MFC OLE sample [OCLIENT](../visual-cpp-samples.md).  
-  
-## See Also  
- [Trackers](../mfc/trackers.md)
+
+Trackers provide a graphical interface to enable users to interact with OLE client items. By using different tracker styles, OLE client items can be displayed with hatched borders, resize handles, or a variety of other visual effects. This article describes:
+
+- [How to Implement Tracking in Your Code](../mfc/how-to-implement-tracking-in-your-code.md).
+
+- [Rubber-Banding and Trackers](../mfc/rubber-banding-and-trackers.md).
+
+The article also covers the use of styles with trackers. In addition, it makes several references to the MFC OLE sample [OCLIENT](../visual-cpp-samples.md).
+
+## See Also
+
+[Trackers](../mfc/trackers.md)
 

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Profile-Guided Optimization Warning PG1039
-Failed waiting for quiet time to sweep.  
-  
- The application did not allow [pgosweep](../../build/reference/pgosweep.md) to run.  If possible, run pgosweep when the application is in an idle state.
+
+Failed waiting for quiet time to sweep.
+
+The application did not allow [pgosweep](../../build/reference/pgosweep.md) to run.  If possible, run pgosweep when the application is in an idle state.

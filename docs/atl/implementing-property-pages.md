@@ -45,5 +45,5 @@ For an example property page implementation, see [Example: Implementing a Proper
 
 ## See Also
 
-[Property Pages](../atl/atl-com-property-pages.md)   
+[Property Pages](../atl/atl-com-property-pages.md)<br/>
 [ATLPages Sample](../visual-cpp-samples.md)

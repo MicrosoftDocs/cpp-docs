@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2700
-'identifier' : cannot be thrown (use /W4 for more info)  
-  
- The object cannot be thrown. Compile with [/W4](../../build/reference/compiler-option-warning-level.md) for more diagnostic information.
+
+'identifier' : cannot be thrown (use /W4 for more info)
+
+The object cannot be thrown. Compile with [/W4](../../build/reference/compiler-option-warning-level.md) for more diagnostic information.

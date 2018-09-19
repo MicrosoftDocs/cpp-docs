@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4031
-second formal parameter list longer than the first list  
-  
- A function is redeclared with different formal parameters. The compiler uses the formal parameters given in the first declaration.
+
+second formal parameter list longer than the first list
+
+A function is redeclared with different formal parameters. The compiler uses the formal parameters given in the first declaration.

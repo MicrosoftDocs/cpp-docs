@@ -28,7 +28,7 @@ class IPointerInactiveImpl
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IPointerInactiveImpl`.
 
 ## Members

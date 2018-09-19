@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2177
-constant too big  
-  
- A constant value is too large for the variable type it is assigned.  
-  
- The following sample generates C2177:  
-  
-```  
-// C2177.cpp  
-int main() {  
-   int a=18446744073709551616;   // C2177  
-   int b=18446744073709551615;   // OK  
-}  
+
+constant too big
+
+A constant value is too large for the variable type it is assigned.
+
+The following sample generates C2177:
+
+```
+// C2177.cpp
+int main() {
+   int a=18446744073709551616;   // C2177
+   int b=18446744073709551615;   // OK
+}
 ```

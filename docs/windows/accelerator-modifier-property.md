@@ -32,5 +32,5 @@ Win32
 
 ## See Also
 
-[Setting Accelerator Properties](../windows/setting-accelerator-properties.md)  
+[Setting Accelerator Properties](../windows/setting-accelerator-properties.md)<br/>
 [Accelerator Editor](../windows/accelerator-editor.md)

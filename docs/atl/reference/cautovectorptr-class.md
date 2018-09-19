@@ -22,13 +22,13 @@ This class represents a smart pointer object using vector new and delete operato
 ## Syntax
 
 ```
-template<typename T>  
+template<typename T>
 class CAutoVectorPtr
 ```
 
 #### Parameters
 
-`T`  
+*T*<br/>
 The pointer type.
 
 ## Members
@@ -64,7 +64,7 @@ The pointer type.
 
 ## Remarks
 
-This class provides methods for creating and managing a smart pointer, which will help protect against memory leaks by automatically freeing resources when it falls out of scope. `CAutoVectorPtr` is similar to `CAutoPtr`, the only difference being that `CAutoVectorPtr` uses [vector new&#91;&#93;](../../standard-library/new-operators.md#op_new_arr) and [vector delete&#91;&#93;](../../standard-library/new-operators.md#op_delete_arr) to allocate and free memory instead of the C++ **new** and **delete** operators. See [CAutoVectorPtrElementTraits](../../atl/reference/cautovectorptrelementtraits-class.md) if collection classes of `CAutoVectorPtr` are required.  
+This class provides methods for creating and managing a smart pointer, which will help protect against memory leaks by automatically freeing resources when it falls out of scope. `CAutoVectorPtr` is similar to `CAutoPtr`, the only difference being that `CAutoVectorPtr` uses [vector new&#91;&#93;](../../standard-library/new-operators.md#op_new_arr) and [vector delete&#91;&#93;](../../standard-library/new-operators.md#op_delete_arr) to allocate and free memory instead of the C++ **new** and **delete** operators. See [CAutoVectorPtrElementTraits](../../atl/reference/cautovectorptrelementtraits-class.md) if collection classes of `CAutoVectorPtr` are required.
 
 See [CAutoPtr](../../atl/reference/cautoptr-class.md) for an example of using a smart pointer class.
 
@@ -82,7 +82,7 @@ bool Allocate(size_t nElements) throw();
 
 ### Parameters
 
-*nElements*  
+*nElements*<br/>
 The number of elements in the array.
 
 ### Return Value
@@ -103,7 +103,7 @@ void Attach(T* p) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 The `CAutoVectorPtr` object will take ownership of this pointer.
 
 ### Remarks
@@ -124,7 +124,7 @@ CAutoVectorPtr(CAutoVectorPtr<T>& p) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 An existing pointer.
 
 ### Remarks
@@ -193,7 +193,7 @@ CAutoVectorPtr<T>& operator= (CAutoVectorPtr<T>& p) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 A pointer.
 
 ### Return Value
@@ -208,7 +208,7 @@ The assignment operator detaches the `CAutoVectorPtr` object from any current po
 
 The cast operator.
 
-```  
+```
 operator T*() const throw();
 ```
 
@@ -218,5 +218,5 @@ Returns a pointer to the object data type defined in the class template.
 
 ## See Also
 
-[CAutoPtr Class](../../atl/reference/cautoptr-class.md)   
+[CAutoPtr Class](../../atl/reference/cautoptr-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

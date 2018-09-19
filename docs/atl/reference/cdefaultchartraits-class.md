@@ -19,13 +19,13 @@ This class provides two static functions for converting characters between upper
 ## Syntax
 
 ```
-template <typename T>  
+template <typename T>
 class CDefaultCharTraits
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The type of data to be stored in the collection.
 
 ## Members
@@ -50,13 +50,13 @@ This class provides functions that are utilized by the class [CStringElementTrai
 Call this function to convert a character to lowercase.
 
 ```
-static wchar_t CharToLower(wchar_t x);  
+static wchar_t CharToLower(wchar_t x);
 static char CharToLower(char x);
 ```
 
 ### Parameters
 
-*x*  
+*x*<br/>
 The character to convert to lowercase.
 
 ### Example
@@ -68,13 +68,13 @@ The character to convert to lowercase.
 Call this function to convert a character to uppercase.
 
 ```
-static wchar_t CharToUpper(wchar_t x);  
+static wchar_t CharToUpper(wchar_t x);
 static char CharToUpper(char x);
 ```
 
 ### Parameters
 
-*x*  
+*x*<br/>
 The character to convert to uppercase.
 
 ## See Also

@@ -26,7 +26,7 @@ Emits the specified string, without the quote characters, into the generated .id
 
 ### Parameters
 
-*statement*  
+*statement*<br/>
 A C instruction.
 
 ## Remarks
@@ -56,5 +56,5 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
 [Stand-Alone Attributes](../windows/stand-alone-attributes.md)  

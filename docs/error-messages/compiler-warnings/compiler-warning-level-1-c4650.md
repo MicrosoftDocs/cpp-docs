@@ -13,10 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4650
-debugging information not in precompiled header; only global symbols from the header will be available  
-  
- The precompiled header file was not compiled with Microsoft symbolic debugging information.  
-  
- When linked, the resulting executable or dynamic-link library file will not include debugging information for local symbols contained in the precompiled header.  
-  
- This warning can be avoided by recompiling the precompiled header file with the [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) command-line option.
+
+debugging information not in precompiled header; only global symbols from the header will be available
+
+The precompiled header file was not compiled with Microsoft symbolic debugging information.
+
+When linked, the resulting executable or dynamic-link library file will not include debugging information for local symbols contained in the precompiled header.
+
+This warning can be avoided by recompiling the precompiled header file with the [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) command-line option.

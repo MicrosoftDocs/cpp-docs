@@ -48,6 +48,6 @@ Win32
 
 ## See Also
 
-[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)  
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)  
+[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)<br/>
+[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
 [ActiveX Control Containers](../mfc/activex-control-containers.md)

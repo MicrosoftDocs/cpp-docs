@@ -28,7 +28,7 @@ If you select the **Support COM+ 1.0** check box, you can also select **Support 
 
 ## See Also
 
-[Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)   
-[Programming with ATL and C Run-Time Code](../../atl/programming-with-atl-and-c-run-time-code.md)   
+[Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)<br/>
+[Programming with ATL and C Run-Time Code](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [Default ATL Project Configurations](../../atl/reference/default-atl-project-configurations.md)
 

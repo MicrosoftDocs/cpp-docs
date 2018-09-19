@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2824
-return type for 'operator new' must be 'void *'  
-  
- With non-based pointers, overloads of operator `new` must return `void *`.  
-  
- The following sample generates C2824:  
-  
-```  
-// C2824.cpp  
-// compile with: /c  
-class   A {  
-   A* operator new(size_t i, char *m);   // C2824  
-   // try the following line instead  
-   // void* operator new(size_t i, char *m);  
-};  
+
+return type for 'operator new' must be 'void *'
+
+With non-based pointers, overloads of operator `new` must return `void *`.
+
+The following sample generates C2824:
+
+```
+// C2824.cpp
+// compile with: /c
+class   A {
+   A* operator new(size_t i, char *m);   // C2824
+   // try the following line instead
+   // void* operator new(size_t i, char *m);
+};
 ```

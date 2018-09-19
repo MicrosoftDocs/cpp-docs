@@ -26,7 +26,7 @@ inline static void Unlock(
 
 ### Parameters
 
-*srwlock*  
+*srwlock*<br/>
 Handle to an `SRWLock` object.
 
 ## Requirements

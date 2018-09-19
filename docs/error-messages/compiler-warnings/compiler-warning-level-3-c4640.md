@@ -13,30 +13,31 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4640
-'instance' : construction of local static object is not thread-safe  
-  
- A static instance of an object is not thread safe.  
-  
- This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.  
-  
- The following sample generates C4640:  
-  
-```  
-// C4640.cpp  
-// compile with: /W3  
-#pragma warning(default:4640)  
-  
-class X {  
-public:  
-   X() {  
-   }  
-};  
-  
-void f() {  
-   static X aX;   // C4640  
-}  
-  
-int main() {  
-   f();  
-}  
+
+'instance' : construction of local static object is not thread-safe
+
+A static instance of an object is not thread safe.
+
+This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+
+The following sample generates C4640:
+
+```
+// C4640.cpp
+// compile with: /W3
+#pragma warning(default:4640)
+
+class X {
+public:
+   X() {
+   }
+};
+
+void f() {
+   static X aX;   // C4640
+}
+
+int main() {
+   f();
+}
 ```

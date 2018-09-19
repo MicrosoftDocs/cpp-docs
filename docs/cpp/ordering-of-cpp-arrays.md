@@ -12,7 +12,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Ordering of C++ Arrays
-C++ arrays are stored in row-major order. Row-major order means the last subscript varies the fastest.  
-  
-## See also  
- [Arrays](../cpp/arrays-cpp.md)
+
+C++ arrays are stored in row-major order. Row-major order means the last subscript varies the fastest.
+
+## See also
+
+[Arrays](../cpp/arrays-cpp.md)

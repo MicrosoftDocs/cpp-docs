@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2302
-left of '.~identifier' must have class/struct/union type  
-  
- The expression to the left of the period (.) operator is not a class, structure, or union.
+
+left of '.~identifier' must have class/struct/union type
+
+The expression to the left of the period (.) operator is not a class, structure, or union.

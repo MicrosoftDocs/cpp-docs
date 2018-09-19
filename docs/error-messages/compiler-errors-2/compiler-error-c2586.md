@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2586
-incorrect user-defined conversion syntax : illegal indirections  
-  
- Indirection of a conversion operator is not allowed.  
-  
- The following sample generates C2586:  
-  
-```  
-// c2586.cpp  
-// compile with: /c  
-struct C {  
-   * operator int();   // C2586  
-   operator char();   // OK  
-};  
+
+incorrect user-defined conversion syntax : illegal indirections
+
+Indirection of a conversion operator is not allowed.
+
+The following sample generates C2586:
+
+```
+// c2586.cpp
+// compile with: /c
+struct C {
+   * operator int();   // C2586
+   operator char();   // OK
+};
 ```

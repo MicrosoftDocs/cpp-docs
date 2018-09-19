@@ -50,7 +50,7 @@ static __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 ### Parameters
 
-*nBytes*  
+*nBytes*<br/>
 The number of bytes to allocate.
 
 ### Return Value
@@ -71,7 +71,7 @@ static void Free(void* p) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 Pointer to the allocated memory.
 
 ### Remarks
@@ -88,10 +88,10 @@ static __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 Pointer to the allocated memory.
 
-*nBytes*  
+*nBytes*<br/>
 The number of bytes to reallocate.
 
 ### Return Value
@@ -104,6 +104,6 @@ Resizes the amount of allocated memory. See [realloc](../../c-runtime-library/re
 
 ## See Also
 
-[CHeapPtr Class](../../atl/reference/cheapptr-class.md)   
-[CComAllocator Class](../../atl/reference/ccomallocator-class.md)   
+[CHeapPtr Class](../../atl/reference/cheapptr-class.md)<br/>
+[CComAllocator Class](../../atl/reference/ccomallocator-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

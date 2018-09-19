@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2045
-'identifier' : label redefined  
-  
- The label appears before multiple statements in the same function.  
-  
- The following sample generates C2045:  
-  
-```  
-// C2045.cpp  
-int main() {  
-   label: {  
-   }  
-   goto label;  
-   label: {}   // C2045  
-}  
+
+'identifier' : label redefined
+
+The label appears before multiple statements in the same function.
+
+The following sample generates C2045:
+
+```
+// C2045.cpp
+int main() {
+   label: {
+   }
+   goto label;
+   label: {}   // C2045
+}
 ```

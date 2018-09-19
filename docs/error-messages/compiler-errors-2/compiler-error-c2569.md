@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2569
-'EnumOrUnion' : enum/union cannot be used as a base class  
-  
- If you must derive a type from the specified union or enumeration, change the union or enumeration to a class or structure.  
-  
- The following sample generates C2569:  
-  
-```  
-// C2569.cpp  
-// compile with: /c  
-union ubase {};  
-class cHasPubUBase : public ubase {};   // C2569  
-// OK  
-struct sbase {};  
-class cHasPubUBase : public sbase {};  
+
+'EnumOrUnion' : enum/union cannot be used as a base class
+
+If you must derive a type from the specified union or enumeration, change the union or enumeration to a class or structure.
+
+The following sample generates C2569:
+
+```
+// C2569.cpp
+// compile with: /c
+union ubase {};
+class cHasPubUBase : public ubase {};   // C2569
+// OK
+struct sbase {};
+class cHasPubUBase : public sbase {};
 ```

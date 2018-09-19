@@ -16,11 +16,11 @@ ms.workload: ["cplusplus"]
 
 *Locale* refers to country/region and language settings that you can use to customize your program. Some locale-dependent categories include the display formats for dates and monetary values. For more information, see [Locale Categories](../c-runtime-library/locale-categories.md).
 
- Use the [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) function to change or query some or all of the current program or thread locale information while using functions without the **_l** suffix. The functions with the **_l** suffix will use the locale parameter passed in for their locale information during the execution of that specific function only. To create a locale for use with a function with a **_l** suffix, use [_create_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md). To free this locale, use [_free_locale](../c-runtime-library/reference/free-locale.md). To get the current locale, use [_get_current_locale](../c-runtime-library/reference/get-current-locale.md).
+Use the [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) function to change or query some or all of the current program or thread locale information while using functions without the **_l** suffix. The functions with the **_l** suffix will use the locale parameter passed in for their locale information during the execution of that specific function only. To create a locale for use with a function with a **_l** suffix, use [_create_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md). To free this locale, use [_free_locale](../c-runtime-library/reference/free-locale.md). To get the current locale, use [_get_current_locale](../c-runtime-library/reference/get-current-locale.md).
 
- Use [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md) to control whether each thread has its own locale, or all threads in a program share the same locale. For more information, see [Locales and Code Pages](../text/locales-and-code-pages.md).
+Use [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md) to control whether each thread has its own locale, or all threads in a program share the same locale. For more information, see [Locales and Code Pages](../text/locales-and-code-pages.md).
 
- More secure versions of the functions in the following table are available, indicated by the **_s** ("secure") suffix. For more information, see [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md).
+More secure versions of the functions in the following table are available, indicated by the **_s** ("secure") suffix. For more information, see [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md).
 
 ## Locale-Dependent Routines
 
@@ -67,4 +67,4 @@ ms.workload: ["cplusplus"]
 ## See Also
 
 [Internationalization](../c-runtime-library/internationalization.md)<br/>
- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

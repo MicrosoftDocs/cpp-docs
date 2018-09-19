@@ -58,6 +58,6 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Array Attributes](../windows/array-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Array Attributes](../windows/array-attributes.md)<br/>
 [export](../windows/export.md)  

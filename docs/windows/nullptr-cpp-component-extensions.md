@@ -223,5 +223,5 @@ Compiler option: (Not required; supported by all code generation options, includ
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)  
+[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)<br/>
 [nullptr](../cpp/nullptr.md)

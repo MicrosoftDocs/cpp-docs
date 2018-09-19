@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2855
-command-line option 'option' inconsistent with precompiled header  
-  
- The given command-line option differs from the option used to create the precompiled header. Regenerate the precompiled header with the given command-line option.
+
+command-line option 'option' inconsistent with precompiled header
+
+The given command-line option differs from the option used to create the precompiled header. Regenerate the precompiled header with the given command-line option.

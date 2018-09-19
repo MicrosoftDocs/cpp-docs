@@ -26,7 +26,7 @@ Specifies the component categories implemented by the target class.
 
 ### Parameters
 
-*implements_category*  
+*implements_category*<br/>
 The ID of the implemented category.
 
 ## Remarks
@@ -67,6 +67,6 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[COM Attributes](../windows/com-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)  
+[COM Attributes](../windows/com-attributes.md)<br/>
+[Class Attributes](../windows/class-attributes.md)<br/>
 [IMPLEMENTED_CATEGORY](../atl/reference/category-macros.md#implemented_category)  

@@ -13,27 +13,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # omp_set_num_threads
-Sets the number of threads in subsequent parallel regions, unless overridden by a [num_threads](../../../parallel/openmp/reference/num-threads.md) clause.  
-  
-## Syntax  
-  
-```  
-void omp_set_num_threads(  
-   int num_threads  
-);  
-```  
-  
-## Remarks  
- where,  
-  
- `num_threads`  
- The number of threads in the parallel region.  
-  
-## Remarks  
- For more information, see [3.1.1 omp_set_num_threads Function](../../../parallel/openmp/3-1-1-omp-set-num-threads-function.md).  
-  
-## Example  
- See [omp_get_num_threads](../../../parallel/openmp/reference/omp-get-num-threads.md) for an example of using `omp_set_num_threads`.  
-  
-## See Also  
- [Functions](../../../parallel/openmp/reference/openmp-functions.md)
+
+Sets the number of threads in subsequent parallel regions, unless overridden by a [num_threads](../../../parallel/openmp/reference/num-threads.md) clause.
+
+## Syntax
+
+```
+void omp_set_num_threads(
+   int num_threads
+);
+```
+
+### Parameters
+
+*num_threads*<br/>
+The number of threads in the parallel region.
+
+## Remarks
+
+For more information, see [3.1.1 omp_set_num_threads Function](../../../parallel/openmp/3-1-1-omp-set-num-threads-function.md).
+
+## Example
+
+See [omp_get_num_threads](../../../parallel/openmp/reference/omp-get-num-threads.md) for an example of using `omp_set_num_threads`.
+
+## See Also
+
+[Functions](../../../parallel/openmp/reference/openmp-functions.md)

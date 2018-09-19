@@ -16,6 +16,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l
+
 Compares the specified number of characters of two strings without regard to case.
 
 > [!IMPORTANT]

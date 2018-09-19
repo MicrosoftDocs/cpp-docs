@@ -13,25 +13,26 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2341
-'section name' : segment must be defined using #pragma data_seg, code_seg or section prior to use  
-  
- An [allocate](../../cpp/allocate.md) statement refers to a segment not yet defined by [code_seg](../../preprocessor/code-seg.md), [data_seg](../../preprocessor/data-seg.md), or [section](../../preprocessor/section.md) pragmas.  
-  
- The following sample generates C2341:  
-  
-```  
-// C2341.cpp  
-// compile with: /c  
-__declspec(allocate(".test"))   // C2341  
-int j = 1;  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2341b.cpp  
-// compile with: /c  
-#pragma data_seg(".test")  
-__declspec(allocate(".test"))  
-int j = 1;  
+
+'section name' : segment must be defined using #pragma data_seg, code_seg or section prior to use
+
+An [allocate](../../cpp/allocate.md) statement refers to a segment not yet defined by [code_seg](../../preprocessor/code-seg.md), [data_seg](../../preprocessor/data-seg.md), or [section](../../preprocessor/section.md) pragmas.
+
+The following sample generates C2341:
+
+```
+// C2341.cpp
+// compile with: /c
+__declspec(allocate(".test"))   // C2341
+int j = 1;
+```
+
+Possible resolution:
+
+```
+// C2341b.cpp
+// compile with: /c
+#pragma data_seg(".test")
+__declspec(allocate(".test"))
+int j = 1;
 ```

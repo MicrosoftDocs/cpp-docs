@@ -44,5 +44,5 @@ Win32
 
 ## See Also
 
-[Selecting Controls](../windows/selecting-controls.md)  
+[Selecting Controls](../windows/selecting-controls.md)<br/>
 [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)

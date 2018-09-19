@@ -22,16 +22,16 @@ This class provides a default implementation of the `IObjectSafety` interface to
 ## Syntax
 
 ```
-template <class T,DWORD dwSupportedSafety>  
+template <class T,DWORD dwSupportedSafety>
 class IObjectSafetyImpl
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IObjectSafetyImpl`.
 
-*dwSupportedSafety*  
+*dwSupportedSafety*<br/>
 Specifies the supported safety options for the control. Can be one of the following values:
 
 - INTERFACESAFE_FOR_UNTRUSTED_CALLER The interface identified by the [SetInterfaceSafetyOptions](#setinterfacesafetyoptions) parameter `riid` should be made safe for scripting.
@@ -121,5 +121,5 @@ See [IObjectSafety::SetInterfaceSafetyOptions](https://msdn.microsoft.com/librar
 
 ## See Also
 
-[IObjectSafety Interface](https://msdn.microsoft.com/library/aa768224.aspx)   
+[IObjectSafety Interface](https://msdn.microsoft.com/library/aa768224.aspx)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -27,7 +27,7 @@ WRL_NOTHROW static SyncLockShared TryLockShared(
 
 ### Parameters
 
-*lock*  
+*lock*<br/>
 Pointer to an **SRWLock** object.
 
 ## Return Value

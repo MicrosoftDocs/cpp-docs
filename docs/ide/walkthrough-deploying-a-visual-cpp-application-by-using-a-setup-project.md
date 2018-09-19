@@ -12,10 +12,12 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Deploying a Visual C++ Application By Using a Setup Project
-Describes how to use a setup project to deploy a Visual C++ application.  
-  
-## Prerequisites  
- You need the following components to complete this walkthrough:  
+
+Describes how to use a setup project to deploy a Visual C++ application.
+
+## Prerequisites
+
+You need the following components to complete this walkthrough:  
   
 - A computer with Visual Studio installed.  
   
@@ -27,8 +29,8 @@ Describes how to use a setup project to deploy a Visual C++ application.
   
 1. Use the **MFC ApplicationWizard** to create a new Visual Studio solution. To find the wizard, from the **New Project** dialog box, expand the **Visual C++** node, select **MFC**, select **MFC Application**, enter a name for the project, and then click **OK**. Click **Finish**.
 
-    > [!NOTE]
-    > If the **MFC Application** type is missing, select **Open Visual Studio Installer** in the left pane of the **New Project** dialog box. Install the option located under **Desktop development with C++** in the **Optional** components section, named **Visual C++ MFC for x86 and x64**.
+   > [!NOTE]
+   > If the **MFC Application** type is missing, select **Open Visual Studio Installer** in the left pane of the **New Project** dialog box. Install the option located under **Desktop development with C++** in the **Optional** components section, named **Visual C++ MFC for x86 and x64**.
   
 1. Change the active solution configuration to **Release**. From the **Build** menu, select **Configuration Manger**. From the **Configuration Manager** dialog box, select **Release** from the **Active solution configuration** drop-down box. Click **Close**.
   

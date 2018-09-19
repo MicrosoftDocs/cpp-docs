@@ -13,25 +13,26 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2427
-'class' : cannot define class in this scope  
-  
- An attempt was made to define a nested class, but the nested class is a member of a base class, not the most containing class.  
-  
- The following sample generates C2427:  
-  
-```  
-// C2427.cpp  
-// compile with: /c  
-template <class T>   
-struct S {  
-   struct Inner;   
-};   
-  
-struct Y : S<int> {};   
-  
-struct Y::Inner {};   // C2427  
-  
-// OK  
-template<typename T>  
-struct S<T>::Inner {};  
+
+'class' : cannot define class in this scope
+
+An attempt was made to define a nested class, but the nested class is a member of a base class, not the most containing class.
+
+The following sample generates C2427:
+
+```
+// C2427.cpp
+// compile with: /c
+template <class T>
+struct S {
+   struct Inner;
+};
+
+struct Y : S<int> {};
+
+struct Y::Inner {};   // C2427
+
+// OK
+template<typename T>
+struct S<T>::Inner {};
 ```

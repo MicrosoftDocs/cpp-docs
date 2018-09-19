@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CNoRowset Class
+
 Can be used as a template argument (`TRowset`) for [CCommand](../../data/oledb/ccommand-class.md) or [CTable](../../data/oledb/ctable-class.md).  
   
 ## Syntax
@@ -23,31 +24,35 @@ class CNoRowset
 ```  
   
 ### Parameters  
- *TAccessor*  
- An accessor class. The default is `CAccessorBase`.  
+
+*TAccessor*<br/>
+An accessor class. The default is `CAccessorBase`.  
   
 ## Remarks  
- Use `CNoRowset` as a template argument if the command does not return a rowset.  
+
+Use `CNoRowset` as a template argument if the command does not return a rowset.  
   
- `CNoRowset` implements the following stub methods, each of which correspond to other accessor class methods:  
+`CNoRowset` implements the following stub methods, each of which correspond to other accessor class methods:  
   
--   `BindFinished` - Indicates when binding is complete (returns `S_OK`).  
+- `BindFinished` - Indicates when binding is complete (returns `S_OK`).  
   
--   `Close` - Releases rows and the current IRowset interface.  
+- `Close` - Releases rows and the current IRowset interface.  
   
--   `GetIID` - Retrieves the interface ID of a connection point.  
+- `GetIID` - Retrieves the interface ID of a connection point.  
   
--   `GetInterface` - Retrieves an interface.  
+- `GetInterface` - Retrieves an interface.  
   
--   `GetInterfacePtr` - Retrieves an encapsulated interface pointer.  
+- `GetInterfacePtr` - Retrieves an encapsulated interface pointer.  
   
--   `SetAccessor` - Sets a pointer to the accessor.  
+- `SetAccessor` - Sets a pointer to the accessor.  
   
--   `SetupOptionalRowsetInterfaces` - Sets up optional interfaces for the rowset.  
+- `SetupOptionalRowsetInterfaces` - Sets up optional interfaces for the rowset.  
   
 ## Requirements  
- **Header:** atldbcli.h  
+
+**Header:** atldbcli.h  
   
 ## See Also  
- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
+
+[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

@@ -12,7 +12,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # _variant_t Member Functions
-For information about the **_variant_t** member functions, see [_variant_t Class](../cpp/variant-t-class.md).  
-  
-## See Also  
- [_variant_t Class](../cpp/variant-t-class.md)
+
+For information about the **_variant_t** member functions, see [_variant_t Class](../cpp/variant-t-class.md).
+
+## See Also
+
+[_variant_t Class](../cpp/variant-t-class.md)

@@ -36,11 +36,11 @@ However, in some cases it may be necessary to declare a global variable or class
 
 ## Linkage vs. scope
 
-The concept of *linkage* refers to the visibility of global symbols (such as variables, type names and function names) within the program as a whole across translation units. The concept of *scope* refers to symbols that are declared within a block such as a namespace, class, or function body. Such symbols are visible only within the scope in which they are defined; the concept of linkage does not apply to them. 
+The concept of *linkage* refers to the visibility of global symbols (such as variables, type names and function names) within the program as a whole across translation units. The concept of *scope* refers to symbols that are declared within a block such as a namespace, class, or function body. Such symbols are visible only within the scope in which they are defined; the concept of linkage does not apply to them.
 
 ## External vs. internal linkage
 
-A *free function* is a function that is defined at global or namespace scope. Non-const global variables and free functions by default have *external linkage*; they are visible from any translation unit in the program. Therefore, no other global object (variable, class definition, etc.) can have that name. A symbol with *internal linkage* or *no linkage* is visible only within the translation unit in which it is declared. When a name has internal linkage, the same name may exist in another translation unit. Variables declared with class definitions or function bodies have no linkage. 
+A *free function* is a function that is defined at global or namespace scope. Non-const global variables and free functions by default have *external linkage*; they are visible from any translation unit in the program. Therefore, no other global object (variable, class definition, etc.) can have that name. A symbol with *internal linkage* or *no linkage* is visible only within the translation unit in which it is declared. When a name has internal linkage, the same name may exist in another translation unit. Variables declared with class definitions or function bodies have no linkage.
 
 You can force a global name to have internal linkage by explicitly declaring it as **static**. This limits its visiblity to the same translation unit in which it is declared. Note that in this context, **static** means something different than when applied to local variables.
 
@@ -59,4 +59,5 @@ extern const int value = 42;
 See [extern](extern-cpp.md) for more information.
 
 ## See also
- [Basic Concepts](../cpp/basic-concepts-cpp.md)
+
+[Basic Concepts](../cpp/basic-concepts-cpp.md)

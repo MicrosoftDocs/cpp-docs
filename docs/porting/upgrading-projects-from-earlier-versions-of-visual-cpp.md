@@ -12,6 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Upgrading Projects from Earlier Versions of Visual C++
+
 In most cases, you can open a project that was created in an earlier version of Visual Studio. However, to accomplish this, Visual Studio upgrades the project. If you save this upgraded project, it cannot be opened in the earlier version.  
   
 > [!IMPORTANT]
@@ -33,7 +34,7 @@ For information about how to update the targeted Windows versions, see [Modifyin
   
 ## See Also  
 
-[Build System Changes](../build/build-system-changes.md)  
-[What's New for Visual C++ in Visual Studio 2017](../what-s-new-for-visual-cpp-in-visual-studio.md) 
-[Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)   
+[Build System Changes](../build/build-system-changes.md)<br/>
+[What's New for Visual C++ in Visual Studio 2017](../what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
+[Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>
 [Nonstandard Behavior](../cpp/nonstandard-behavior.md)

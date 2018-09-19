@@ -40,7 +40,7 @@ The following classes provide support for connection points:
 
 ## See Also
 
-[Class Overview](../atl/atl-class-overview.md)   
-[Connection Point Macros](../atl/reference/connection-point-macros.md)   
+[Class Overview](../atl/atl-class-overview.md)<br/>
+[Connection Point Macros](../atl/reference/connection-point-macros.md)<br/>
 [Connection Point Global Functions](../atl/reference/connection-point-global-functions.md)
 

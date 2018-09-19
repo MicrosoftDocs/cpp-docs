@@ -27,10 +27,10 @@ __forceinline static void FillArrayWithIid(
 
 ### Parameters
 
-*index*  
+*index*<br/>
 Pointer to a field that contains a zero-based index value.
 
-*iids*  
+*iids*<br/>
 An array of interface IDs.
 
 ## Remarks
@@ -49,5 +49,5 @@ For more information about `Base`, see the Public Typedefs section in [Interface
 
 ## See Also
 
-[InterfaceTraits Structure](../windows/interfacetraits-structure.md)  
+[InterfaceTraits Structure](../windows/interfacetraits-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

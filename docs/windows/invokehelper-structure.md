@@ -79,11 +79,11 @@ struct InvokeHelper<TDelegateInterface, TCallback, 9> : Microsoft::WRL::RuntimeC
 
 ### Parameters
 
-*TDelegateInterface*  
+*TDelegateInterface*<br/>
 *TCallback*  
 The type of the event handler function.
 
-*argCount*  
+*argCount*<br/>
 The number of arguments in an **InvokeHelper** specialization.
 
 ## Remarks

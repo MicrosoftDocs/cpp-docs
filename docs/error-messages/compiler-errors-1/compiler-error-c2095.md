@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2095
-'function' : actual parameter has type 'void' : parameter 'number'  
-  
- The parameter passed to the function is type `void`, which is not allowed. Use a pointer to void ( `void *`) instead.  
-  
- The `number` indicates which parameter is `void`.
+
+'function' : actual parameter has type 'void' : parameter 'number'
+
+The parameter passed to the function is type `void`, which is not allowed. Use a pointer to void ( `void *`) instead.
+
+The `number` indicates which parameter is `void`.

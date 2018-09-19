@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2112
-'-' : pointer subtraction requires integral or pointer operand  
-  
- An attempt was made to subtract pointers that point to different types.
+
+'-' : pointer subtraction requires integral or pointer operand
+
+An attempt was made to subtract pointers that point to different types.

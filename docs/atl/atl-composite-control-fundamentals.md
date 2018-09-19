@@ -29,7 +29,7 @@ The ATL Project Wizard and **Add Class** dialog box automate the process of crea
 
 ## See Also
 
-[Concepts](../atl/active-template-library-atl-concepts.md)   
-[Composite Control Global Functions](../atl/reference/composite-control-global-functions.md)   
+[Concepts](../atl/active-template-library-atl-concepts.md)<br/>
+[Composite Control Global Functions](../atl/reference/composite-control-global-functions.md)<br/>
 [Composite Control Macros](../atl/reference/composite-control-macros.md)
 

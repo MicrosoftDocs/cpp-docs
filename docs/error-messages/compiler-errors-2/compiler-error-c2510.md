@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2510
-'identifier' : left of '::' must be a class/struct/union  
-  
- A class, structure, or union name must appear on the left side of the scope-resolution operator (`::`) operator.
+
+'identifier' : left of '::' must be a class/struct/union
+
+A class, structure, or union name must appear on the left side of the scope-resolution operator (`::`) operator.

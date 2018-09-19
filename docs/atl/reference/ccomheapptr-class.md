@@ -19,13 +19,13 @@ A smart pointer class for managing heap pointers.
 ## Syntax
 
 ```
-template<typename T>  
+template<typename T>
 class CComHeapPtr : public CHeapPtr<T, CComAllocator>
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The object type to be stored on the heap.
 
 ## Members
@@ -63,7 +63,7 @@ explicit CComHeapPtr(T* pData) throw();
 
 ### Parameters
 
-*pData*  
+*pData*<br/>
 An existing `CComHeapPtr` object.
 
 ### Remarks
@@ -72,7 +72,7 @@ The heap pointer can optionally be created using an existing `CComHeapPtr` objec
 
 ## See Also
 
-[CHeapPtr Class](../../atl/reference/cheapptr-class.md)   
-[CHeapPtrBase Class](../../atl/reference/cheapptrbase-class.md)   
-[CComAllocator Class](../../atl/reference/ccomallocator-class.md)   
+[CHeapPtr Class](../../atl/reference/cheapptr-class.md)<br/>
+[CHeapPtrBase Class](../../atl/reference/cheapptrbase-class.md)<br/>
+[CComAllocator Class](../../atl/reference/ccomallocator-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

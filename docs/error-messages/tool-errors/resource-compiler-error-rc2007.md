@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2007
-\#define syntax  
-  
- An identifier was expected following `#define` in a preprocessing directive.
+
+\#define syntax
+
+An identifier was expected following `#define` in a preprocessing directive.

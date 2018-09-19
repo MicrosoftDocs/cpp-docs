@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Project Build Error PRJ0046
-Could not spawn command line because the one specified was empty.  
-  
- An empty command line was specified for a makefile configuration; the command line is required.
+
+Could not spawn command line because the one specified was empty.
+
+An empty command line was specified for a makefile configuration; the command line is required.

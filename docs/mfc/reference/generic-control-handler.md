@@ -13,12 +13,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Generic Control Handler
-The following map entry corresponds to the function prototype.  
-  
-|Map entry|Function prototype|  
-|---------------|------------------------|  
-|ON_CONTROL( \<wNotifyCode>, \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
-  
-## See Also  
- [Message Maps](../../mfc/reference/message-maps-mfc.md)
+
+The following map entry corresponds to the function prototype.
+
+|Map entry|Function prototype|
+|---------------|------------------------|
+|ON_CONTROL( \<wNotifyCode>, \<id>, \<memberFxn> )|afx_msg void memberFxn( );|
+
+## See Also
+
+[Message Maps](../../mfc/reference/message-maps-mfc.md)
 

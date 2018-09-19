@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2112
-BEGIN expected in dialog  
-  
- The **BEGIN** keyword must immediately follow the **DIALOG** keyword.
+
+BEGIN expected in dialog
+
+The **BEGIN** keyword must immediately follow the **DIALOG** keyword.

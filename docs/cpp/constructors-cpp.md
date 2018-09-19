@@ -76,7 +76,7 @@ Using a member intializer list is preferred over assigning values in the body of
     {}
 ```
 
-The identifier must refer to a class member; it is initialized with the value of the argument. The argument can be one of the constructor parameters, a function call or a [std::initializer_list\<T>](../standard-library/initializer-list-class.md). 
+The identifier must refer to a class member; it is initialized with the value of the argument. The argument can be one of the constructor parameters, a function call or a [std::initializer_list\<T>](../standard-library/initializer-list-class.md).
 
 **const** members and members of reference type must be initialized in the member initializer list.
 
@@ -84,7 +84,7 @@ Calls to parameterized base class constructors should be made in the initializer
 
 ## <a name="default_constructors"></a> Default constructors
 
- *Default constructors* typically have no parameters, but they can have parameters with default values.
+*Default constructors* typically have no parameters, but they can have parameters with default values.
 
 ```cpp
 class Box {
@@ -204,6 +204,7 @@ You can prevent your object from being copied by defining the copy constructor a
 Attempting to copy the object produces error *C2280: attempting to reference a deleted function*.
 
 ## <a name="move_constructors"></a> Move constructors
+
 A *move constructor* is a special member function that moves ownership of an existing object's data to a new variable without copying the original data. It takes an rvalue reference as its first parameter, and any additional parameters must have default values. Move constructors can significantly increase your program's efficiency when passing around large objects. A move constructor takes an rvalue reference as its first parameter. Any other parameters must have default values.
 
 ```cpp

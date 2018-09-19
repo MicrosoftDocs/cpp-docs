@@ -13,9 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _DEBUG
-The compiler defines `_DEBUG` when you specify the /MTd or /MDd option. These options specify debug versions of the C run-time library.  
-  
- For more information, see [CRT Debugging Techniques](/visualstudio/debugger/crt-debugging-techniques).  
-  
-## See Also  
- [Control Flags](../c-runtime-library/control-flags.md)
+
+The compiler defines `_DEBUG` when you specify the /MTd or /MDd option. These options specify debug versions of the C run-time library.
+
+For more information, see [CRT Debugging Techniques](/visualstudio/debugger/crt-debugging-techniques).
+
+## See Also
+
+[Control Flags](../c-runtime-library/control-flags.md)

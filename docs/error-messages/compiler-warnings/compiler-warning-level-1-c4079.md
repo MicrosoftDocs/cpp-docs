@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4079
-unexpected token 'token'  
-  
- An unexpected separator token occurs in a pragma argument list. The remainder of the pragma was ignored.  
-  
- The following sample generates C4079:  
-  
-```  
-// C4079.cpp  
-// compile with: /W1  
-#pragma warning(disable : 4081)  
-#pragma pack(c,16)   // C4079  
-  
-int main() {  
-}  
+
+unexpected token 'token'
+
+An unexpected separator token occurs in a pragma argument list. The remainder of the pragma was ignored.
+
+The following sample generates C4079:
+
+```
+// C4079.cpp
+// compile with: /W1
+#pragma warning(disable : 4081)
+#pragma pack(c,16)   // C4079
+
+int main() {
+}
 ```

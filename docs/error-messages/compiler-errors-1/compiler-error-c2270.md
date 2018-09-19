@@ -13,21 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2270
-'function' : modifiers not allowed on nonmember functions  
-  
- A nonmember function is declared with [const](../../cpp/const-cpp.md), [volatile](../../cpp/volatile-cpp.md), or another memory-model modifier.  
-  
- The following sample generates C2270:  
-  
-```  
-// C2270.cpp  
-// compile with: /c  
-void func1(void) const;   // C2270, nonmember function  
-  
-void func2(void);  
-  
-class CMyClass {  
-public:  
-   void func2(void) const;  
-};  
+
+'function' : modifiers not allowed on nonmember functions
+
+A nonmember function is declared with [const](../../cpp/const-cpp.md), [volatile](../../cpp/volatile-cpp.md), or another memory-model modifier.
+
+The following sample generates C2270:
+
+```
+// C2270.cpp
+// compile with: /c
+void func1(void) const;   // C2270, nonmember function
+
+void func2(void);
+
+class CMyClass {
+public:
+   void func2(void) const;
+};
 ```

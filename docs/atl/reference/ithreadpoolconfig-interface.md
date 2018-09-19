@@ -55,7 +55,7 @@ STDMETHOD(GetSize)(int* pnNumThreads);
 
 ### Parameters
 
-*pnNumThreads*  
+*pnNumThreads*<br/>
 [out] Address of the variable that, on success, receives the number of threads in the pool.
 
 ### Return Value
@@ -76,7 +76,7 @@ STDMETHOD(GetTimeout)(DWORD* pdwMaxWait);
 
 ### Parameters
 
-*pdwMaxWait*  
+*pdwMaxWait*<br/>
 [out] Address of the variable that, on success, receives the maximum time in milliseconds that the thread pool will wait for a thread to shut down.
 
 ### Return Value
@@ -97,7 +97,7 @@ STDMETHOD(SetSize)int nNumThreads);
 
 ### Parameters
 
-*nNumThreads*  
+*nNumThreads*<br/>
 The requested number of threads in the pool.
 
 If *nNumThreads* is negative, its absolute value will be multiplied by the number of processors in the machine to get the total number of threads.
@@ -122,7 +122,7 @@ STDMETHOD(SetTimeout)(DWORD dwMaxWait);
 
 ### Parameters
 
-*dwMaxWait*  
+*dwMaxWait*<br/>
 The requested maximum time in milliseconds that the thread pool will wait for a thread to shut down.
 
 ### Return Value
@@ -135,5 +135,5 @@ See [IThreadPoolConfig::GetSize](#getsize).
 
 ## See Also
 
-[Classes](../../atl/reference/atl-classes.md)   
+[Classes](../../atl/reference/atl-classes.md)<br/>
 [CThreadPool Class](../../atl/reference/cthreadpool-class.md)

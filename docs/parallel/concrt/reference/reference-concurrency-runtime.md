@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Reference (Concurrency Runtime)
+
 This section contains reference information for the Concurrency Runtime.
 
 > [!Note]
@@ -20,7 +21,7 @@ This section contains reference information for the Concurrency Runtime.
 
 ## In This Section
 
-[concurrency Namespace](concurrency-namespace.md)
+[concurrency Namespace](concurrency-namespace.md)<br/>
 The concurrency namespace provides classes and functions that give you access to the Concurrency Runtime, a concurrent programming framework for C++. For more information, see [Concurrency Runtime](../concurrency-runtime.md).
 
 [std namespace](std-namespace.md)

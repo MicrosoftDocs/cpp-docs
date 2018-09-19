@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2197
-'function' : too many arguments for call  
-  
- The compiler detected too many parameters for a call to the function, or an incorrect function declaration.  
-  
- The following sample generates C2197:  
-  
-```  
-// C2197.c  
-// compile with: /Za /c  
-void func( int );  
-int main() {  
-   func( 1, 2 );   // C2197 two actual parameters  
-   func( 2 );   // OK  
-}  
+
+'function' : too many arguments for call
+
+The compiler detected too many parameters for a call to the function, or an incorrect function declaration.
+
+The following sample generates C2197:
+
+```
+// C2197.c
+// compile with: /Za /c
+void func( int );
+int main() {
+   func( 1, 2 );   // C2197 two actual parameters
+   func( 2 );   // OK
+}
 ```

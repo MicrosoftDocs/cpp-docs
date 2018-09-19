@@ -19,13 +19,13 @@ This class is a helper for the [CSimpleArray](../../atl/reference/csimplearray-c
 ## Syntax
 
 ```
-template <class T>  
+template <class T>
 class CSimpleArrayEqualHelper
 ```
 
 #### Parameters
 
-`T`  
+*T*<br/>
 A derived class.
 
 ## Members
@@ -56,10 +56,10 @@ static bool IsEqual(
 
 ### Parameters
 
-*t1*  
+*t1*<br/>
 An object of type T.
 
-*t2*  
+*t2*<br/>
 An object of type T.
 
 ### Return Value
@@ -68,6 +68,6 @@ Returns true if the elements are equal, false otherwise.
 
 ## See Also
 
-[CSimpleArray Class](../../atl/reference/csimplearray-class.md)   
-[CSimpleArrayEqualHelperFalse Class](../../atl/reference/csimplearrayequalhelperfalse-class.md)   
+[CSimpleArray Class](../../atl/reference/csimplearray-class.md)<br/>
+[CSimpleArrayEqualHelperFalse Class](../../atl/reference/csimplearrayequalhelperfalse-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

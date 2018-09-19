@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4406
-operand on directive ignored  
-  
- The directive does not take any operands, but an operand was specified.  
-  
- The compiler ignored the given operand or operands.
+
+operand on directive ignored
+
+The directive does not take any operands, but an operand was specified.
+
+The compiler ignored the given operand or operands.

@@ -13,21 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2008
-'character' : unexpected in macro definition  
-  
- The character appears immediately following the macro name. To resolve the error, there must be a space after the macro name.  
-  
- The following sample generates C2008:  
-  
-```  
-// C2008.cpp  
-#define TEST1"mytest1"    // C2008  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2008b.cpp  
-// compile with: /c  
-#define TEST2 "mytest2"  
+
+'character' : unexpected in macro definition
+
+The character appears immediately following the macro name. To resolve the error, there must be a space after the macro name.
+
+The following sample generates C2008:
+
+```
+// C2008.cpp
+#define TEST1"mytest1"    // C2008
+```
+
+Possible resolution:
+
+```
+// C2008b.cpp
+// compile with: /c
+#define TEST2 "mytest2"
 ```

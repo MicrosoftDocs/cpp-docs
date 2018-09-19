@@ -63,14 +63,14 @@ CAtlException() throw();
 
 ### Parameters
 
-*hr*  
+*hr*<br/>
 The HRESULT error code.
 
 ##  <a name="operator_hresult"></a>  CAtlException::operator HRESULT
 
 Casts the current object to an HRESULT value.
 
-```  
+```
 operator HRESULT() const throw ();
 ```
 
@@ -88,5 +88,5 @@ The data member that stores the error condition. The HRESULT value is set by the
 
 ## See Also
 
-[AtlThrow](debugging-and-error-reporting-global-functions.md#atlthrow)   
+[AtlThrow](debugging-and-error-reporting-global-functions.md#atlthrow)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2010
-'character' : unexpected in macro formal parameter list  
-  
- The character is used incorrectly in the formal parameter list of a macro definition. Remove the character to resolve the error.  
-  
- The following sample generates C2010:  
-  
-```  
-// C2010.cpp  
-// compile with: /c  
-#define mymacro(a|) (2*a)   // C2010  
-#define mymacro(a) (2*a)   // OK  
+
+'character' : unexpected in macro formal parameter list
+
+The character is used incorrectly in the formal parameter list of a macro definition. Remove the character to resolve the error.
+
+The following sample generates C2010:
+
+```
+// C2010.cpp
+// compile with: /c
+#define mymacro(a|) (2*a)   // C2010
+#define mymacro(a) (2*a)   // OK
 ```

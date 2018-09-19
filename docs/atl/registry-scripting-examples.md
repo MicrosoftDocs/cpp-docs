@@ -19,17 +19,17 @@ The scripting examples in this topic demonstrate how to add a key to the system 
 
 The following parse tree illustrates a simple script that adds a single key to the system registry. In particular, the script adds the key, `MyVeryOwnKey`, to `HKEY_CURRENT_USER`. It also assigns the default string value of `HowGoesIt` to the new key:
 
-```  
-HKEY_CURRENT_USER  
+```
+HKEY_CURRENT_USER
 {  
-'MyVeryOwnKey' = s 'HowGoesIt'  
-}  
+    'MyVeryOwnKey' = s 'HowGoesIt'
+}
 ```
 
 This script can easily be extended to define multiple subkeys as follows:
 
-```  
-HKCU  
+```
+HKCU
 {  
     'MyVeryOwnKey' = s 'HowGoesIt'  
     {  
@@ -38,8 +38,8 @@ HKCU
             'PrettyCool' = d '55'  
             val 'ANameValue' = s 'WithANamedValue'  
         }  
-    }  
-}  
+    }
+}
 ```
 
 Now, the script adds a subkey, `HasASubkey`, to `MyVeryOwnKey`. To this subkey, it adds both the `PrettyCool` subkey (with a default `DWORD` value of 55) and the `ANameValue` named value (with a string value of `WithANamedValue`).
@@ -48,8 +48,8 @@ Now, the script adds a subkey, `HasASubkey`, to `MyVeryOwnKey`. To this subkey, 
 
 The following script registers the Registrar COM server itself.
 
-```  
-HKCR  
+```
+HKCR
 {  
     ATL.Registrar = s 'ATL Registrar Class'  
     {  
@@ -65,8 +65,8 @@ HKCR
                 val ThreadingModel = s 'Apartment'  
             }  
         }  
-    }  
-}  
+    }
+}
 ```
 
 At run time, this parse tree adds the `ATL.Registrar` key to `HKEY_CLASSES_ROOT`. To this new key, it then:
@@ -93,15 +93,15 @@ The parse tree now adds two new subkeys to `{44EC053A-400F-11D0-9DCD-00A0C90391D
 
 To specify more than one parse tree in a script, simply place one tree at the end of another. For example, the following script adds the key, `MyVeryOwnKey`, to the parse trees for both `HKEY_CLASSES_ROOT` and `HKEY_CURRENT_USER`:
 
-```  
-HKCR  
+```
+HKCR
 {  
-    'MyVeryOwnKey' = s 'HowGoesIt'  
-}  
-HKEY_CURRENT_USER  
+    'MyVeryOwnKey' = s 'HowGoesIt'
+}
+HKEY_CURRENT_USER
 {  
-    'MyVeryOwnKey' = s 'HowGoesIt'  
-}  
+    'MyVeryOwnKey' = s 'HowGoesIt'
+}
 ```
 
 > [!NOTE]

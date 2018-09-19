@@ -12,31 +12,33 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Unbox
-Shows how to unbox and modify a value.  
-  
-## Example  
-  
-```  
-// vcmcppv2_unboxing.cpp  
-// compile with: /clr  
-using namespace System;  
-  
-int main() {  
-   int ^ i = gcnew int(13);  
-   int j;  
-   Console::WriteLine(*i);   // unboxing  
-   *i = 14;   // unboxing and assignment  
-   Console::WriteLine(*i);  
-   j = safe_cast<int>(i);   // unboxing and assignment  
-   Console::WriteLine(j);  
-}  
-```  
-  
-```Output  
-13  
-14  
-14  
-```  
-  
-## See Also  
- [Boxing](../windows/boxing-cpp-component-extensions.md)
+
+Shows how to unbox and modify a value.
+
+## Example
+
+```
+// vcmcppv2_unboxing.cpp
+// compile with: /clr
+using namespace System;
+
+int main() {
+   int ^ i = gcnew int(13);
+   int j;
+   Console::WriteLine(*i);   // unboxing
+   *i = 14;   // unboxing and assignment
+   Console::WriteLine(*i);
+   j = safe_cast<int>(i);   // unboxing and assignment
+   Console::WriteLine(j);
+}
+```
+
+```Output
+13
+14
+14
+```
+
+## See Also
+
+[Boxing](../windows/boxing-cpp-component-extensions.md)

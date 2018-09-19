@@ -25,7 +25,7 @@ class CComSafeArray
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The type of data to be stored in the array.
 
 ## Members
@@ -125,19 +125,19 @@ HRESULT Add(const T& t, BOOL bCopy = TRUE);
 
 ### Parameters
 
-*psaSrc*  
+*psaSrc*<br/>
 A pointer to a `SAFEARRAY` object.
 
-*ulCount*  
+*ulCount*<br/>
 The number of objects to add to the array.
 
-*pT*  
+*pT*<br/>
 A pointer to one or more objects to be added to the array.
 
-*t*  
+*t*<br/>
 A reference to the object to be added to the array.
 
-*bCopy*  
+*bCopy*<br/>
 Indicates whether a copy of the data should be created. The default value is TRUE.
 
 ### Return Value
@@ -160,7 +160,7 @@ HRESULT Attach(const SAFEARRAY* psaSrc);
 
 ### Parameters
 
-*psaSrc*  
+*psaSrc*<br/>
 A pointer to the `SAFEARRAY` structure.
 
 ### Return Value
@@ -187,25 +187,25 @@ CComSafeArray(const SAFEARRAY* psaSrc);
 
 ### Parameters
 
-*bound*  
+*bound*<br/>
 A `SAFEARRAYBOUND` structure.
 
-*ulCount*  
+*ulCount*<br/>
 The number of elements in the array.
 
-*lLBound*  
+*lLBound*<br/>
 The lower bound value; that is, the index of the first element in the array.
 
-*pBound*  
+*pBound*<br/>
 A pointer to a `SAFEARRAYBOUND` structure.
 
-*uDims*  
+*uDims*<br/>
 The count of dimensions in the array.
 
-*saSrc*  
+*saSrc*<br/>
 A reference to a `SAFEARRAY` structure or `CComSafeArray` object. In either case the constructor uses this reference to make a copy of the array, so the array is not referenced after construction.
 
-*psaSrc*  
+*psaSrc*<br/>
 A pointer to a `SAFEARRAY` structure. The constructor uses this address to make a copy of the array, so the array is not referenced after construction.
 
 ### Remarks
@@ -234,7 +234,7 @@ HRESULT CopyFrom(LPSAFEARRAY* ppArray);
 
 ### Parameters
 
-*ppArray*  
+*ppArray*<br/>
 Pointer to the `SAFEARRAY` to copy.
 
 ### Return Value
@@ -255,7 +255,7 @@ HRESULT CopyTo(LPSAFEARRAY* ppArray);
 
 ### Parameters
 
-*ppArray*  
+*ppArray*<br/>
 A pointer to a location in which to create the new `SAFEARRAY`.
 
 ### Return Value
@@ -277,16 +277,16 @@ HRESULT Create(ULONG ulCount = 0, LONG lLBound = 0);
 
 ### Parameters
 
-*pBound*  
+*pBound*<br/>
 A pointer to a `SAFEARRAYBOUND` object.
 
-*uDims*  
+*uDims*<br/>
 The number of dimensions in the array.
 
-*ulCount*  
+*ulCount*<br/>
 The number of elements in the array.
 
-*lLBound*  
+*lLBound*<br/>
 The lower bound value; that is, the index of the first element in the array.
 
 ### Return Value
@@ -339,7 +339,7 @@ T& GetAt(LONG lIndex) const;
 
 ### Parameters
 
-*lIndex*  
+*lIndex*<br/>
 The index number of the value in the array to return.
 
 ### Return Value
@@ -356,7 +356,7 @@ ULONG GetCount(UINT uDim = 0) const;
 
 ### Parameters
 
-*uDim*  
+*uDim*<br/>
 The array dimension.
 
 ### Return Value
@@ -389,7 +389,7 @@ LONG GetLowerBound(UINT uDim = 0) const;
 
 ### Parameters
 
-*uDim*  
+*uDim*<br/>
 The array dimension for which to get the lower bound. If omitted, the default is 0.
 
 ### Return Value
@@ -452,7 +452,7 @@ LONG GetUpperBound(UINT uDim = 0) const;
 
 ### Parameters
 
-*uDim*  
+*uDim*<br/>
 The array dimension for which to get the upper bound. If omitted, the default is 0.
 
 ### Return Value
@@ -493,10 +493,10 @@ HRESULT MultiDimGetAt(const LONG* alIndex, T& t);
 
 ### Parameters
 
-*alIndex*  
+*alIndex*<br/>
 Pointer to a vector of indexes for each dimension in the array. The leftmost (most significant) dimension is `alIndex[0]`.
 
-*t*  
+*t*<br/>
 A reference to the data returned.
 
 ### Return Value
@@ -513,10 +513,10 @@ HRESULT MultiDimSetAt(const LONG* alIndex, const T& t);
 
 ### Parameters
 
-*alIndex*  
+*alIndex*<br/>
 Pointer to a vector of indexes for each dimension in the array. The rightmost (least significant) dimension is `alIndex`[0].
 
-*T*  
+*T*<br/>
 Specifies the value of the new element.
 
 ### Return Value
@@ -538,7 +538,7 @@ T& operator[]int nindex) const;
 
 ### Parameters
 
-*lIndex, nIndex*  
+*lIndex, nIndex*<br/>
 The index number of the required element in the array.
 
 ### Return Value
@@ -560,10 +560,10 @@ ATL::CComSafeArray<T>& operator=(const SAFEARRAY* psaSrc);
 
 ### Parameters
 
-*saSrc*  
+*saSrc*<br/>
 A reference to a `CComSafeArray` object.
 
-*psaSrc*  
+*psaSrc*<br/>
 A pointer to a `SAFEARRAY` object.
 
 ### Return Value
@@ -593,13 +593,13 @@ HRESULT Resize(ULONG ulCount, LONG lLBound = 0);
 
 ### Parameters
 
-*pBound*  
+*pBound*<br/>
 A pointer to a `SAFEARRAYBOUND` structure that contains information on the number of elements and the lower bound of an array.
 
-*ulCount*  
+*ulCount*<br/>
 The requested number of objects in the resized array.
 
-*lLBound*  
+*lLBound*<br/>
 The lower bound.
 
 ### Return Value
@@ -620,13 +620,13 @@ HRESULT SetAt(LONG lIndex, const T& t, BOOL bCopy = TRUE);
 
 ### Parameters
 
-*lIndex*  
+*lIndex*<br/>
 The index number of the array element to set.
 
-*t*  
+*t*<br/>
 The new value of the specified element.
 
-*bCopy*  
+*bCopy*<br/>
 Indicates whether a copy of the data should be created. The default value is TRUE.
 
 ### Return Value
@@ -639,7 +639,7 @@ The *bCopy* flag is taken into account when elements of type BSTR or VARIANT are
 
 ## See Also
 
-[SAFEARRAY Data Type](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearray)   
-[CComSafeArray::Create](#create)   
-[CComSafeArray::Destroy](#destroy)   
+[SAFEARRAY Data Type](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearray)<br/>
+[CComSafeArray::Create](#create)<br/>
+[CComSafeArray::Destroy](#destroy)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

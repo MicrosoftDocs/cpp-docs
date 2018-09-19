@@ -26,7 +26,7 @@ inline static bool Close(
 
 ### Parameters
 
-*h*  
+*h*<br/>
 The handle to close.
 
 ## Return Value

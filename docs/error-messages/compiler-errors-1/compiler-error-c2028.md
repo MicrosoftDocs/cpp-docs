@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2028
-struct/union member must be inside a struct/union  
-  
- Structure or union members must be declared within the structure or union.
+
+struct/union member must be inside a struct/union
+
+Structure or union members must be declared within the structure or union.

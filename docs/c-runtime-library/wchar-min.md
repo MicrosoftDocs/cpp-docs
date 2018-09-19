@@ -13,13 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # WCHAR_MIN
-Minimum value for type `wchar_t`.  
-  
-## Syntax  
-  
-```  
-#include <wchar.h>  
-```  
-  
-## See Also  
- [Global Constants](../c-runtime-library/global-constants.md)
+
+Minimum value for type `wchar_t`.
+
+## Syntax
+
+```
+#include <wchar.h>
+```
+
+## See Also
+
+[Global Constants](../c-runtime-library/global-constants.md)

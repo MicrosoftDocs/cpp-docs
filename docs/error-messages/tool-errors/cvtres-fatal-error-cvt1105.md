@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # CVTRES Fatal Error CVT1105
-cannot seek in file  
-  
- CVTRES could not go to a location in the file.  
-  
- This error can be caused by file corruption.
+
+cannot seek in file
+
+CVTRES could not go to a location in the file.
+
+This error can be caused by file corruption.

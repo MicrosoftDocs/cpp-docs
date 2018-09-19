@@ -193,5 +193,5 @@ Exchanges the content of two `shared_lock` objects. Effectively the same as `x.s
 
 ## See Also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
 [&lt;mutex>](../standard-library/mutex.md)

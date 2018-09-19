@@ -13,27 +13,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # omp_set_nest_lock
-Blocks thread execution until a lock is available.  
-  
-## Syntax  
-  
-```  
-void omp_set_nest_lock(  
-   omp_nest_lock_t *lock  
-);  
-```  
-  
-## Remarks  
- where,  
-  
- `lock`  
- A variable of type [omp_nest_lock_t](../../../parallel/openmp/reference/omp-nest-lock-t.md) that was initialized with [omp_init_nest_lock](../../../parallel/openmp/reference/omp-init-nest-lock.md).  
-  
-## Remarks  
- For more information, see [3.2.3 omp_set_lock and omp_set_nest_lock Functions](../../../parallel/openmp/3-2-3-omp-set-lock-and-omp-set-nest-lock-functions.md).  
-  
-## Examples  
- See [omp_init_nest_lock](../../../parallel/openmp/reference/omp-init-nest-lock.md) for an example of using `omp_set_nest_lock`.  
-  
-## See Also  
- [Functions](../../../parallel/openmp/reference/openmp-functions.md)
+
+Blocks thread execution until a lock is available.
+
+## Syntax
+
+```
+void omp_set_nest_lock(
+   omp_nest_lock_t *lock
+);
+```
+
+### Parameters
+
+*lock*<br/>
+A variable of type [omp_nest_lock_t](../../../parallel/openmp/reference/omp-nest-lock-t.md) that was initialized with [omp_init_nest_lock](../../../parallel/openmp/reference/omp-init-nest-lock.md).
+
+## Remarks
+
+For more information, see [3.2.3 omp_set_lock and omp_set_nest_lock Functions](../../../parallel/openmp/3-2-3-omp-set-lock-and-omp-set-nest-lock-functions.md).
+
+## Examples
+
+See [omp_init_nest_lock](../../../parallel/openmp/reference/omp-init-nest-lock.md) for an example of using `omp_set_nest_lock`.
+
+## See Also
+
+[Functions](../../../parallel/openmp/reference/openmp-functions.md)

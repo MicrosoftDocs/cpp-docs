@@ -31,19 +31,20 @@ To create and load a verifiable assembly into SQL Server, use the Transact-SQL c
 CREATE ASSEMBLY <assemblyName> FROM <'Assembly UNC Path'> WITH
   PERMISSION_SET <permissions>
 DROP ASSEMBLY <assemblyName>
-```  
+```
 
 The PERMISSION_SET command specifies the security context, and can have the values UNRESTRICTED, SAFE, or EXTENDED.
 
 In addition, you can use the CREATE FUNCTION command to bind to method names in a class:
 
 ```sql
-CREATE FUNCTION <FunctionName>(<FunctionParams>)  
+CREATE FUNCTION <FunctionName>(<FunctionParams>)
 RETURNS returnType
 [EXTERNAL NAME <AssemblyName>:<ClassName>::<StaticMethodName>]
-```  
+```
 
 ## Example
+
 The following SQL script (for example, named "MyScript.sql") loads an assembly into SQL Server and makes a method of a class available:
 
 ```sql
@@ -58,23 +59,23 @@ with permission_set safe
 -- Create function on assembly with no external access
 drop function GetQuoteNoEA
 go
-create function GetQuoteNoEA(@sym nvarchar(10))  
+create function GetQuoteNoEA(@sym nvarchar(10))
 returns real
 external name stockNoEA:StockQuotes::GetQuote
 go
 
 -- To call the function
-select dbo.GetQuoteNoEA('MSFT')  
+select dbo.GetQuoteNoEA('MSFT')
 go
-```  
+```
 
 SQL scripts can be executed interactively in SQL Query Analyzer or at the command line with the sqlcmd.exe utility. The following command line connects to MyServer, uses the default database, uses a trusted connection, inputs MyScript.sql, and outputs MyResult.txt.
 
 ```cmd
 sqlcmd -S MyServer -E -i myScript.sql -o myResult.txt
-```  
+```
 
 ## See Also
 
-[How to: Migrate to /clr:safe (C++/CLI)](../dotnet/how-to-migrate-to-clr-safe-cpp-cli.md)   
+[How to: Migrate to /clr:safe (C++/CLI)](../dotnet/how-to-migrate-to-clr-safe-cpp-cli.md)<br/>
 [Classes and Structs](../cpp/classes-and-structs-cpp.md)

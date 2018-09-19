@@ -27,8 +27,8 @@ Win32
 
 ## See Also
 
-[Resource Includes Dialog Box](../windows/resource-includes-dialog-box.md)  
-[TN035: Using Multiple Resource Files and Header Files with Visual C++](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)  
-[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)  
-[Resource Files](../windows/resource-files-visual-studio.md)  
+[Resource Includes Dialog Box](../windows/resource-includes-dialog-box.md)<br/>
+[TN035: Using Multiple Resource Files and Header Files with Visual C++](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)<br/>
+[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)<br/>
+[Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [Resource Editors](../windows/resource-editors.md)

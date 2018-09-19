@@ -16,49 +16,54 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _heapadd
-Adds memory to the heap.  
-  
+
+Adds memory to the heap.
+
 > [!IMPORTANT]
->  This function is obsolete. Beginning in Visual Studio 2015, it is not available in the CRT.  
-  
-## Syntax  
-  
-```  
-int _heapadd(   
-   void *memblock,  
-   size_t size   
-);  
-```  
-  
-#### Parameters  
- `memblock`  
- Pointer to the heap memory.  
-  
- `size`  
- Size of memory to add, in bytes.  
-  
-## Return Value  
- If successful, `_heapadd` returns 0; otherwise, the function returns -1 and sets `errno` to `ENOSYS`.  
-  
- For more information about this and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
-  
-## Remarks  
- Beginning with Visual C++ version 4.0, the underlying heap structure was moved to the C run-time libraries to support the new debugging features. As a result, `_heapadd` is no longer supported on any platform that is based on the Win32 API.  
-  
-## Requirements  
-  
-|Routine|Required header|Optional header|  
-|-------------|---------------------|---------------------|  
-|`_heapadd`|\<malloc.h>|\<errno.h>|  
-  
- For more compatibility information, see [Compatibility](../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
- [Memory Allocation](../c-runtime-library/memory-allocation.md)   
- [free](../c-runtime-library/reference/free.md)   
- [_heapchk](../c-runtime-library/reference/heapchk.md)   
- [_heapmin](../c-runtime-library/reference/heapmin.md)   
- [_heapset](../c-runtime-library/heapset.md)   
- [_heapwalk](../c-runtime-library/reference/heapwalk.md)   
- [malloc](../c-runtime-library/reference/malloc.md)   
- [realloc](../c-runtime-library/reference/realloc.md)
+>  This function is obsolete. Beginning in Visual Studio 2015, it is not available in the CRT.
+
+## Syntax
+
+```
+int _heapadd(
+   void *memblock,
+   size_t size
+);
+```
+
+#### Parameters
+
+*memblock*<br/>
+Pointer to the heap memory.
+
+*size*<br/>
+Size of memory to add, in bytes.
+
+## Return Value
+
+If successful, `_heapadd` returns 0; otherwise, the function returns -1 and sets `errno` to `ENOSYS`.
+
+For more information about this and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+
+## Remarks
+
+Beginning with Visual C++ version 4.0, the underlying heap structure was moved to the C run-time libraries to support the new debugging features. As a result, `_heapadd` is no longer supported on any platform that is based on the Win32 API.
+
+## Requirements
+
+|Routine|Required header|Optional header|
+|-------------|---------------------|---------------------|
+|`_heapadd`|\<malloc.h>|\<errno.h>|
+
+For more compatibility information, see [Compatibility](../c-runtime-library/compatibility.md) in the Introduction.
+
+## See Also
+
+[Memory Allocation](../c-runtime-library/memory-allocation.md)<br/>
+[free](../c-runtime-library/reference/free.md)<br/>
+[_heapchk](../c-runtime-library/reference/heapchk.md)<br/>
+[_heapmin](../c-runtime-library/reference/heapmin.md)<br/>
+[_heapset](../c-runtime-library/heapset.md)<br/>
+[_heapwalk](../c-runtime-library/reference/heapwalk.md)<br/>
+[malloc](../c-runtime-library/reference/malloc.md)<br/>
+[realloc](../c-runtime-library/reference/realloc.md)

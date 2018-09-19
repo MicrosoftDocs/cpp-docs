@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2205
-'identifier' : cannot initialize extern variables with block scope  
-  
- An `extern` variable cannot be initialized in a function.
+
+'identifier' : cannot initialize extern variables with block scope
+
+An `extern` variable cannot be initialized in a function.

@@ -22,13 +22,13 @@ This class implements [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown)
 ## Syntax
 
 ```
-template<class Base>  
+template<class Base>
 class CComContainedObject : public Base
 ```
 
 #### Parameters
 
-*Base*  
+*Base*<br/>
 Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md).
 
 ## Members
@@ -85,7 +85,7 @@ CComContainedObject(void* pv);
 
 ### Parameters
 
-*pv*  
+*pv*<br/>
 [in] The owner object's `IUnknown`.
 
 ### Remarks
@@ -132,13 +132,13 @@ HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] The identifier of the interface being requested.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] A pointer to the interface pointer identified by *iid*. If the object does not support this interface, *ppvObject* is set to NULL.
 
-*pp*  
+*pp*<br/>
 [out] A pointer to the interface pointer identified by type `Q`. If the object does not support this interface, *pp* is set to NULL.
 
 ### Return Value

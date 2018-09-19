@@ -174,6 +174,6 @@ Call [IAtlStringMgr::Free](#free) to free the memory allocated by this method.
 
 ## See Also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)   
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
 

@@ -35,10 +35,10 @@ extern void AtlHiMetricToPixel(
 
 ### Parameters
 
-*lpSizeInHiMetric*  
+*lpSizeInHiMetric*<br/>
 [in] Pointer to the size of the object in HIMETRIC units.
 
-*lpSizeInPix*  
+*lpSizeInPix*<br/>
 [out] Pointer to where the object's size in pixels is to be returned.
 
 ### Example
@@ -61,10 +61,10 @@ extern void AtlPixelToHiMetric(
 
 ### Parameters
 
-*lpSizeInPix*  
+*lpSizeInPix*<br/>
 [in] Pointer to the object's size in pixels.
 
-*lpSizeInHiMetric*  
+*lpSizeInHiMetric*<br/>
 [out] Pointer to where the object's size in HIMETRIC units is to be returned.
 
 ### Example

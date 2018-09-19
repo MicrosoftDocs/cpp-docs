@@ -13,29 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Frame Window Classes (Windows)
-Frame windows are windows that frame an application or a part of an application. Frame windows usually contain other windows, such as views, tool bars, and status bars. In the case of `CMDIFrameWnd`, they may contain `CMDIChildWnd` objects indirectly.  
-  
- [CFrameWnd](../mfc/reference/cframewnd-class.md)  
- The base class for an SDI application's main frame window. Also the base class for all other frame window classes.  
-  
- [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md)  
- The base class for an MDI application's main frame window.  
-  
- [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md)  
- The base class for an MDI application's document frame windows.  
-  
- [CMiniFrameWnd](../mfc/reference/cminiframewnd-class.md)  
- A half-height frame window typically seen around floating toolbars.  
-  
- [COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md)  
- Provides the frame window for a view when a server document is being edited in place.  
-  
-## Related Class  
- Class `CMenu` provides an interface through which to access your application's menus. It is useful for manipulating menus dynamically at run time; for example, when adding or deleting menu items according to context. Although menus are most often used with frame windows, they can also be used with dialog boxes and other nonchild windows.  
-  
- [CMenu](../mfc/reference/cmenu-class.md)  
- Encapsulates an `HMENU` handle to the application's menu bar and pop-up menus.  
-  
-## See Also  
- [Class Overview](../mfc/class-library-overview.md)
+
+Frame windows are windows that frame an application or a part of an application. Frame windows usually contain other windows, such as views, tool bars, and status bars. In the case of `CMDIFrameWnd`, they may contain `CMDIChildWnd` objects indirectly.
+
+[CFrameWnd](../mfc/reference/cframewnd-class.md)<br/>
+The base class for an SDI application's main frame window. Also the base class for all other frame window classes.
+
+[CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md)<br/>
+The base class for an MDI application's main frame window.
+
+[CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md)<br/>
+The base class for an MDI application's document frame windows.
+
+[CMiniFrameWnd](../mfc/reference/cminiframewnd-class.md)<br/>
+A half-height frame window typically seen around floating toolbars.
+
+[COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md)<br/>
+Provides the frame window for a view when a server document is being edited in place.
+
+## Related Class
+
+Class `CMenu` provides an interface through which to access your application's menus. It is useful for manipulating menus dynamically at run time; for example, when adding or deleting menu items according to context. Although menus are most often used with frame windows, they can also be used with dialog boxes and other nonchild windows.
+
+[CMenu](../mfc/reference/cmenu-class.md)<br/>
+Encapsulates an `HMENU` handle to the application's menu bar and pop-up menus.
+
+## See Also
+
+[Class Overview](../mfc/class-library-overview.md)
 

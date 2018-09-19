@@ -25,10 +25,10 @@ inline INT32 CompareStringOrdinal(
 
 ### Parameters
 
-*lhs*  
+*lhs*<br/>
 The first HSTRING to compare.
 
-*rhs*  
+*rhs*<br/>
 The second HSTRING to compare.
 
 ## Return Value

@@ -12,39 +12,41 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Convert char \* String to System::Byte Array
-The most efficient way to convert a `char *` string to a <xref:System.Byte> array is to use <xref:System.Runtime.InteropServices.Marshal> class.  
-  
-## Example  
-  
-```  
-// convert_native_string_to_Byte_array.cpp  
-// compile with: /clr  
-#include <string.h>  
-  
-using namespace System;  
-using namespace System::Runtime::InteropServices;  
-  
-int main() {  
-   char buf[] = "Native String";  
-   int len = strlen(buf);  
-  
-   array< Byte >^ byteArray = gcnew array< Byte >(len + 2);  
-  
-   // convert native pointer to System::IntPtr with C-Style cast  
-   Marshal::Copy((IntPtr)buf,byteArray, 0, len);  
-  
-   for ( int i = byteArray->GetLowerBound(0); i <= byteArray->GetUpperBound(0); i++ ) {  
-      char dc =  *(Byte^)   byteArray->GetValue(i);  
-      Console::Write((Char)dc);  
-   }  
-  
-   Console::WriteLine();  
-}  
-```  
-  
-```  
-Native String  
-```  
-  
-## See Also  
- [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+
+The most efficient way to convert a `char *` string to a <xref:System.Byte> array is to use <xref:System.Runtime.InteropServices.Marshal> class.
+
+## Example
+
+```
+// convert_native_string_to_Byte_array.cpp
+// compile with: /clr
+#include <string.h>
+
+using namespace System;
+using namespace System::Runtime::InteropServices;
+
+int main() {
+   char buf[] = "Native String";
+   int len = strlen(buf);
+
+   array< Byte >^ byteArray = gcnew array< Byte >(len + 2);
+
+   // convert native pointer to System::IntPtr with C-Style cast
+   Marshal::Copy((IntPtr)buf,byteArray, 0, len);
+
+   for ( int i = byteArray->GetLowerBound(0); i <= byteArray->GetUpperBound(0); i++ ) {
+      char dc =  *(Byte^)   byteArray->GetValue(i);
+      Console::Write((Char)dc);
+   }
+
+   Console::WriteLine();
+}
+```
+
+```Output
+Native String
+```
+
+## See Also
+
+[Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

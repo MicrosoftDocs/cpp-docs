@@ -34,7 +34,7 @@ long double acos( long double x );   // C++ only
 
 ### Parameters
 
-*x*  
+*x*<br/>
 Value between -1 and 1, for which to calculate the arccosine (the inverse cosine).
 
 ## Return Value
@@ -111,10 +111,10 @@ Arccosine of 0.000000 = 1.570796
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)  
-[asin, asinf, asinl](asin-asinf-asinl.md)  
-[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)  
-[cos, cosf, cosl](cos-cosf-cosl.md)  
-[_matherr](matherr.md)  
-[sin, sinf, sinl](sin-sinf-sinl.md)  
-[tan, tanf, tanl](tan-tanf-tanl.md)  
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+[asin, asinf, asinl](asin-asinf-asinl.md)<br/>
+[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
+[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
+[_matherr](matherr.md)<br/>
+[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
+[tan, tanf, tanl](tan-tanf-tanl.md)

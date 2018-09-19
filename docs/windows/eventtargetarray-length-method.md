@@ -38,5 +38,5 @@ Gets the current number of elements in the internal array of event handlers.
 
 ## See Also
 
-[EventTargetArray Class](../windows/eventtargetarray-class.md)  
+[EventTargetArray Class](../windows/eventtargetarray-class.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

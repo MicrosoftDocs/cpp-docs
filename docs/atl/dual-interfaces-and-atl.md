@@ -17,21 +17,21 @@ A dual interface allows its methods to be accessed as dispinterface methods or a
 
 ## In This Section
 
-[Implementing a Dual Interface](../atl/implementing-a-dual-interface.md)  
+[Implementing a Dual Interface](../atl/implementing-a-dual-interface.md)<br/>
 Discusses the classes and wizards involved in implementing a dual interface.
 
-[Multiple Dual Interfaces](../atl/multiple-dual-interfaces.md)  
+[Multiple Dual Interfaces](../atl/multiple-dual-interfaces.md)<br/>
 Discusses how to expose multiple dual interfaces on a single object.
 
-[The nonextensible Attribute](../atl/nonextensible-attribute.md)  
+[The nonextensible Attribute](../atl/nonextensible-attribute.md)<br/>
 Discusses when to use the **nonextensible** attribute on your interface definition.
 
-[Dual Interfaces and Events](../atl/dual-interfaces-and-events.md)  
+[Dual Interfaces and Events](../atl/dual-interfaces-and-events.md)<br/>
 Discusses design reasons for not making an event interface a dual interface.
 
 ## Related Sections
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Provides links to conceptual topics on how to program using the Active Template Library.
 
 ## See Also

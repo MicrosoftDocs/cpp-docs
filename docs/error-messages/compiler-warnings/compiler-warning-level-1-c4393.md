@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4393
-'var' : const has no effect on literal data member; ignored  
-  
- A [literal](../../windows/literal-cpp-component-extensions.md) data member was also specified as const.  Since a literal data member implies const, you do not need to add const to the declaration.  
-  
- The following sample generates C4393:  
-  
-```  
-// C4393.cpp  
-// compile with: /clr /W1 /c  
-ref struct Y1 {  
-   literal const int staticConst = 10;   // C4393  
-   literal int staticConst2 = 10;   // OK  
-};  
+
+'var' : const has no effect on literal data member; ignored
+
+A [literal](../../windows/literal-cpp-component-extensions.md) data member was also specified as const.  Since a literal data member implies const, you do not need to add const to the declaration.
+
+The following sample generates C4393:
+
+```
+// C4393.cpp
+// compile with: /clr /W1 /c
+ref struct Y1 {
+   literal const int staticConst = 10;   // C4393
+   literal int staticConst2 = 10;   // OK
+};
 ```

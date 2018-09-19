@@ -33,7 +33,7 @@ Win32
 
 ## See Also
 
-[Viewing Resource Symbols](../windows/viewing-resource-symbols.md)  
-[Symbol Name Restrictions](../windows/symbol-name-restrictions.md)  
-[Symbol Value Restrictions](../windows/symbol-value-restrictions.md)  
+[Viewing Resource Symbols](../windows/viewing-resource-symbols.md)<br/>
+[Symbol Name Restrictions](../windows/symbol-name-restrictions.md)<br/>
+[Symbol Value Restrictions](../windows/symbol-value-restrictions.md)<br/>
 [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)

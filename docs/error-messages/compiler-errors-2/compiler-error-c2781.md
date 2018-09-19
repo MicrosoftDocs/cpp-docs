@@ -13,21 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2781
-'declaration' : expects at least value1 argument - value2 provided  
-  
- A function template with a variable parameter list has too few arguments.  
-  
- The following sample generates C2781:  
-  
-```  
-// C2781.cpp  
-template<typename T>  
-void f(T, T, ...){}  
-  
-int main() {  
-   f(1);   // C2781  
-  
-   // try the following line instead  
-   f(1,1);  
-}  
+
+'declaration' : expects at least value1 argument - value2 provided
+
+A function template with a variable parameter list has too few arguments.
+
+The following sample generates C2781:
+
+```
+// C2781.cpp
+template<typename T>
+void f(T, T, ...){}
+
+int main() {
+   f(1);   // C2781
+
+   // try the following line instead
+   f(1,1);
+}
 ```

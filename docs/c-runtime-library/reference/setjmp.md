@@ -29,7 +29,7 @@ int setjmp(
 
 ### Parameters
 
-*env*  
+*env*<br/>
 Variable in which environment is stored.
 
 ## Return Value
@@ -50,7 +50,7 @@ In Microsoft C++ code on Windows, **longjmp** uses the same stack-unwinding sema
 
 **END Microsoft Specific**
 
-> [!NOTE]  
+> [!NOTE]
 > In portable C++ code, you can't assume `setjmp` and `longjmp` support C++ object semantics. Specifically, a `setjmp`/`longjmp` call pair has undefined behavior if replacing the `setjmp` and `longjmp` by **catch**
 and **throw** would invoke any non-trivial destructors for any automatic objects. In C++ programs, we recommend you use the C++ exception-handling mechanism.
 
@@ -70,5 +70,5 @@ See the example for [_fpreset](fpreset.md).
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)  
-[longjmp](longjmp.md)  
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
+[longjmp](longjmp.md)

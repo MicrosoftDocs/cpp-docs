@@ -21,7 +21,7 @@ If the current source file has the [/Yu \(Use precompiled header file)](../../bu
 ## Example
 
 This sample demonstrates how the error can occur, and shows how to fix it:
- 
+
 ```cpp
 // c4627.cpp
 #include <iostream>       // C4627 - iostream not included by pch.h
@@ -32,7 +32,7 @@ int main()
     std::cout << "std::cout is defined!\n";
 }
 ```
-  
+
 ## See Also
 
 [Creating Precompiled Header Files](../../build/reference/creating-precompiled-header-files.md)

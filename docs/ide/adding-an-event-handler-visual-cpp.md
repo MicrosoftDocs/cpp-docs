@@ -13,32 +13,34 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Adding an Event Handler (Visual C++)
-From the resource editor, you can add a new event handler, or edit an existing event handler, for a dialog box control using the [Event Handler Wizard](../ide/event-handler-wizard.md).  
-  
- You can add an event to the class implementing the dialog box using the [Properties window](/visualstudio/ide/reference/properties-window). If you want to add the event to a class other than the dialog box class, use the Event Handler Wizard.  
-  
-### To add an event handler to a dialog box control  
-  
-1.  Double-click the dialog box resource in [Resource View](../windows/resource-view-window.md) to open the dialog box resource that contains the control in the [dialog editor](../windows/dialog-editor.md).  
-  
-2.  Right-click the control for which you want to handle the notification event.  
-  
-3.  On the shortcut menu, click **Add Event Handler** to display the Event Handler Wizard.  
-  
-4.  Select the event in the **Message type** box to add to the class selected in the **Class list** box.  
-  
-5.  Accept the default name in the **Function handler name** box, or provide the name of your choice.  
-  
-6.  Click **Add and edit** to add the event handler to the project and open the text editor at the new function to add the appropriate event handler code.  
-  
-     If the selected message type already has an event handler for the selected class, **Add and edit** is unavailable, and **Edit code** is available. Click **Edit code** to open the text editor at the existing function.  
-  
- Alternately, you can add event handlers from the [Properties window](/visualstudio/ide/reference/properties-window). See [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md) for more information.  
-  
-## See Also  
- [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)   
- [Adding a Class](../ide/adding-a-class-visual-cpp.md)   
- [Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)   
- [Adding a Member Function](../ide/adding-a-member-function-visual-cpp.md)   
- [MFC Message Handler](../mfc/reference/adding-an-mfc-message-handler.md)   
- [Navigating the Class Structure](../ide/navigating-the-class-structure-visual-cpp.md)
+
+From the resource editor, you can add a new event handler, or edit an existing event handler, for a dialog box control using the [Event Handler Wizard](../ide/event-handler-wizard.md).
+
+You can add an event to the class implementing the dialog box using the [Properties window](/visualstudio/ide/reference/properties-window). If you want to add the event to a class other than the dialog box class, use the Event Handler Wizard.
+
+### To add an event handler to a dialog box control
+
+1. Double-click the dialog box resource in [Resource View](../windows/resource-view-window.md) to open the dialog box resource that contains the control in the [dialog editor](../windows/dialog-editor.md).
+
+1. Right-click the control for which you want to handle the notification event.
+
+1. On the shortcut menu, click **Add Event Handler** to display the Event Handler Wizard.
+
+1. Select the event in the **Message type** box to add to the class selected in the **Class list** box.
+
+1. Accept the default name in the **Function handler name** box, or provide the name of your choice.
+
+1. Click **Add and edit** to add the event handler to the project and open the text editor at the new function to add the appropriate event handler code.
+
+   If the selected message type already has an event handler for the selected class, **Add and edit** is unavailable, and **Edit code** is available. Click **Edit code** to open the text editor at the existing function.
+
+Alternately, you can add event handlers from the [Properties window](/visualstudio/ide/reference/properties-window). See [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md) for more information.
+
+## See Also
+
+[Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)<br>
+[Adding a Class](../ide/adding-a-class-visual-cpp.md)<br>
+[Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)<br>
+[Adding a Member Function](../ide/adding-a-member-function-visual-cpp.md)<br>
+[MFC Message Handler](../mfc/reference/adding-an-mfc-message-handler.md)<br>
+[Navigating the Class Structure](../ide/navigating-the-class-structure-visual-cpp.md)

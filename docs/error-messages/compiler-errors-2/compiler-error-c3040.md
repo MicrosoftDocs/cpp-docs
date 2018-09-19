@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3040
-'var' : type of variable in 'reduction' clause is incompatible with reduction operator 'operator'  
-  
- A variable in a [reduction](../../parallel/openmp/reference/reduction.md) clause cannot be used with the reduction operator.  
-  
- The following sample generates C3040:  
-  
-```  
-// C3040.cpp  
-// compile with: /openmp /c  
-#include "omp.h"  
-double d;  
-  
-int main() {  
-   #pragma omp parallel reduction(&:d)   // C3040  
-      ;  
-  
-   #pragma omp parallel reduction(-:d)  // OK  
-      ;  
-}  
+
+'var' : type of variable in 'reduction' clause is incompatible with reduction operator 'operator'
+
+A variable in a [reduction](../../parallel/openmp/reference/reduction.md) clause cannot be used with the reduction operator.
+
+The following sample generates C3040:
+
+```
+// C3040.cpp
+// compile with: /openmp /c
+#include "omp.h"
+double d;
+
+int main() {
+   #pragma omp parallel reduction(&:d)   // C3040
+      ;
+
+   #pragma omp parallel reduction(-:d)  // OK
+      ;
+}
 ```

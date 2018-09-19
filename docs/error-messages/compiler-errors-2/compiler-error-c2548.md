@@ -13,19 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2548
-'class::member' : missing default parameter for parameter parameter  
-  
- The default parameter list is missing a parameter. If you supply a default parameter anywhere in a parameter list, you must define default parameters for all subsequent parameters.  
-  
-## Example  
- The following sample generates C2548:  
-  
-```  
-// C2548.cpp  
-// compile with: /c  
-void func( int = 1, int, int = 3);  // C2548  
-  
-// OK  
-void func2( int, int, int = 3);  
-void func3( int, int = 2, int = 3);  
+
+'class::member' : missing default parameter for parameter parameter
+
+The default parameter list is missing a parameter. If you supply a default parameter anywhere in a parameter list, you must define default parameters for all subsequent parameters.
+
+## Example
+
+The following sample generates C2548:
+
+```
+// C2548.cpp
+// compile with: /c
+void func( int = 1, int, int = 3);  // C2548
+
+// OK
+void func2( int, int, int = 3);
+void func3( int, int = 2, int = 3);
 ```

@@ -13,27 +13,30 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3755
-'delegate': a delegate may not be defined  
-  
- A [delegate  (C++ Component Extensions)](../../windows/delegate-cpp-component-extensions.md) can be declared but not defined.  
-  
-## Example  
- The following sample generates C3755.  
-  
-```  
-// C3755.cpp  
-// compile with: /clr /c  
-delegate void MyDel() {};   // C3755  
-```  
-  
-## Example  
- C3755 can also occur if you attempt to create a delegate template. The following sample generates C3755.  
-  
-```  
-// C3755_b.cpp  
-// compile with: /clr /c  
-ref struct R {  
-   template<class T>  
-   delegate void D(int) {}   // C3755  
-};  
+
+'delegate': a delegate may not be defined
+
+A [delegate  (C++ Component Extensions)](../../windows/delegate-cpp-component-extensions.md) can be declared but not defined.
+
+## Example
+
+The following sample generates C3755.
+
+```
+// C3755.cpp
+// compile with: /clr /c
+delegate void MyDel() {};   // C3755
+```
+
+## Example
+
+C3755 can also occur if you attempt to create a delegate template. The following sample generates C3755.
+
+```
+// C3755_b.cpp
+// compile with: /clr /c
+ref struct R {
+   template<class T>
+   delegate void D(int) {}   // C3755
+};
 ```

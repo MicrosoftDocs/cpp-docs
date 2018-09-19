@@ -31,7 +31,7 @@ HandleT(
 
 ### Parameters
 
-*h*  
+*h*<br/>
 A handle.
 
 ## Remarks

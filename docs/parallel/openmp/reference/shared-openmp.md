@@ -13,35 +13,38 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # shared (OpenMP)
-Specifies that one or more variables should be shared among all threads.  
-  
-## Syntax  
-  
-```  
-shared(var)  
-```  
-  
-## Remarks  
- where,  
-  
- `var`  
- One or more variables to share. If more than one variable is specified, separate variable names with a comma.  
-  
-## Remarks  
- Another way to share variables among threads is with the [copyprivate](../../../parallel/openmp/reference/copyprivate.md) clause.  
-  
- `shared` applies to the following directives:  
-  
--   [for](../../../parallel/openmp/reference/for-openmp.md)  
-  
--   [parallel](../../../parallel/openmp/reference/parallel.md)  
-  
--   [sections](../../../parallel/openmp/reference/sections-openmp.md)  
-  
- For more information, see [2.7.2.4 shared](../../../parallel/openmp/2-7-2-4-shared.md).  
-  
-## Example  
- See [private](../../../parallel/openmp/reference/private-openmp.md) for an example of using `shared`.  
-  
-## See Also  
- [Clauses](../../../parallel/openmp/reference/openmp-clauses.md)
+
+Specifies that one or more variables should be shared among all threads.
+
+## Syntax
+
+```
+shared(var)
+```
+
+### Parameters
+
+*var*<br/>
+One or more variables to share. If more than one variable is specified, separate variable names with a comma.
+
+## Remarks
+
+Another way to share variables among threads is with the [copyprivate](../../../parallel/openmp/reference/copyprivate.md) clause.
+
+`shared` applies to the following directives:
+
+- [for](../../../parallel/openmp/reference/for-openmp.md)
+
+- [parallel](../../../parallel/openmp/reference/parallel.md)
+
+- [sections](../../../parallel/openmp/reference/sections-openmp.md)
+
+For more information, see [2.7.2.4 shared](../../../parallel/openmp/2-7-2-4-shared.md).
+
+## Example
+
+See [private](../../../parallel/openmp/reference/private-openmp.md) for an example of using `shared`.
+
+## See Also
+
+[Clauses](../../../parallel/openmp/reference/openmp-clauses.md)

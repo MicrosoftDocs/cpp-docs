@@ -39,4 +39,4 @@ These routines read and write on your console or on the specified port. The cons
 ## See Also
 
 [Input and Output](../c-runtime-library/input-and-output.md)<br/>
- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

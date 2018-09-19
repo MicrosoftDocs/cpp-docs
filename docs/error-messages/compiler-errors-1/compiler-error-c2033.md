@@ -13,25 +13,26 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2033
-'identifier' : bit field cannot have indirection  
-  
- The bit field was declared as a pointer, which is not allowed.  
-  
- The following sample generates C2033:  
-  
-```  
-// C2033.cpp  
-struct S {  
-   int *b : 1;  // C2033  
-};  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2033b.cpp  
-// compile with: /c  
-struct S {  
-   int b : 1;  
-};  
+
+'identifier' : bit field cannot have indirection
+
+The bit field was declared as a pointer, which is not allowed.
+
+The following sample generates C2033:
+
+```
+// C2033.cpp
+struct S {
+   int *b : 1;  // C2033
+};
+```
+
+Possible resolution:
+
+```
+// C2033b.cpp
+// compile with: /c
+struct S {
+   int b : 1;
+};
 ```

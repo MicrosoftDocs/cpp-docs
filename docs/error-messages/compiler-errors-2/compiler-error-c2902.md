@@ -13,39 +13,40 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2902
-'token' : unexpected token following 'template', identifier expected  
-  
- The token following the keyword `template` was not an identifier.  
-  
- The following sample generates C2902:  
-  
-```  
-// C2902.cpp  
-// compile with: /c  
-namespace N {  
-   template<class T> class X {};  
-   class Y {};  
-}  
-void g() {  
-   N::template + 1;   // C2902  
-}  
-  
-void f() {  
-   N::template X<int> x1;   // OK  
-}  
-```  
-  
- C2902 can also occur when using generics:  
-  
-```  
-// C2902b.cpp  
-// compile with: /clr /c  
-namespace N {  
-   generic<class T> ref class GC {};  
-}  
-  
-void f() {  
-   N::generic + 1;   // C2902  
-   N::generic GC<int>^ x;  
-}  
+
+'token' : unexpected token following 'template', identifier expected
+
+The token following the keyword `template` was not an identifier.
+
+The following sample generates C2902:
+
+```
+// C2902.cpp
+// compile with: /c
+namespace N {
+   template<class T> class X {};
+   class Y {};
+}
+void g() {
+   N::template + 1;   // C2902
+}
+
+void f() {
+   N::template X<int> x1;   // OK
+}
+```
+
+C2902 can also occur when using generics:
+
+```
+// C2902b.cpp
+// compile with: /clr /c
+namespace N {
+   generic<class T> ref class GC {};
+}
+
+void f() {
+   N::generic + 1;   // C2902
+   N::generic GC<int>^ x;
+}
 ```
