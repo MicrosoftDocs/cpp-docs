@@ -37,19 +37,19 @@ modifiereventdelegate^ event_name
 
 ### Parameters
 
-*modifier*  
+*modifier*<br/>
 A modifier that can be used on either the event declaration or an event accessor method.  Possible values are **static** and **virtual**.
 
-*delegate*  
+*delegate*<br/>
 The [delegate](../windows/delegate-cpp-component-extensions.md), whose signature the event handler must match.
 
-*event_name*  
+*event_name*<br/>
 The name of the event.
 
-*return_value*  
+*return_value*<br/>
 The return value of the event accessor method.  To be verifiable, the return type must be **void**.
 
-*parameters*  
+*parameters*<br/>
 (optional) Parameters for the `raise` method, which match the signature of the *delegate* parameter.
 
 ### Remarks
@@ -58,10 +58,10 @@ An event is an association between a delegate and a member function (event handl
 
 There are two kinds of events declarations:
 
-*event data member*  
+*event data member*<br/>
 The compiler automatically creates storage for the event in the form of a member of the delegate type, and creates internal `add()`, `remove()`, and `raise()` member functions. An event data member must be declared inside a class. The return type of the return type of the delegate must match the return type of the event handler.
 
-*event block*  
+*event block*<br/>
 An event block enables you to explicitly declare and customize the behavior of the `add()`, `remove()`, and `raise()` methods.
 
 You can use **operators+=** and **operator-=** to add and remove an event handler, or call the `add()` and `remove()` methods explicitly.
@@ -101,19 +101,19 @@ modifiereventdelegate^ event_name
 
 ### Parameters
 
-*modifier*  
+*modifier*<br/>
 A modifier that can be used on either the event declaration or an event accessor method.  Possible values are **static** and **virtual**.
 
-*delegate*  
+*delegate*<br/>
 The [delegate](../windows/delegate-cpp-component-extensions.md), whose signature the event handler must match.
 
-*event_name*  
+*event_name*<br/>
 The name of the event.
 
-*return_value*  
+*return_value*<br/>
 The return value of the event accessor method.  To be verifiable, the return type must be **void**.
 
-*parameters*  
+*parameters*<br/>
 (optional) Parameters for the `raise` method, which match the signature of the *delegate* parameter.
 
 ### Remarks
@@ -124,10 +124,10 @@ The delegate can have one or more associated methods that will be called when yo
 
 There are two kinds of events declarations:
 
-*event data members*  
+*event data members*<br/>
 Storage for the event, in the form of a member of the delegate type, is created by the compiler for data member events.  An event data member must be declared inside a class. This is also known as a trivial event (see code sample below.)
 
-*event blocks*  
+*event blocks*<br/>
 Event blocks let you customize the behavior of the add, remove, and raise methods, by implementing add, remove, and raise methods. The signature of the add, remove, and raise methods must match the signature of the delegate.  Event block events are not data members and any use as a data member will generate a compiler error.
 
 The return type of the event handler must match the return type of the delegate.

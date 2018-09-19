@@ -30,7 +30,7 @@ WRL_NOTHROW Semaphore(
 
 ### Parameters
 
-*h*  
+*h*<br/>
 A handle or an rvalue-reference to a **Semaphore** object.
 
 ## Requirements
@@ -40,4 +40,5 @@ A handle or an rvalue-reference to a **Semaphore** object.
 **Namespace:** Microsoft::WRL::Wrappers
 
 ## See Also
+
 [Semaphore Class](../windows/semaphore-class.md)

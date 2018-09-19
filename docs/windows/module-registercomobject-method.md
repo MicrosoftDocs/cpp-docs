@@ -30,19 +30,19 @@ WRL_NOTHROW virtual HRESULT RegisterCOMObject(
 
 ### Parameters
 
-*serverName*  
+*serverName*<br/>
 Fully-qualified name of a server.
 
-*clsids*  
+*clsids*<br/>
 An array of CLSIDs to register.
 
-*factories*  
+*factories*<br/>
 An array of IUnknown interfaces of the class objects whose availability is being published.
 
-*cookies*  
+*cookies*<br/>
 When the operation completes, an array of pointers to values that identify the class objects that were registered. These values are later used revoke the registration.
 
-*count*  
+*count*<br/>
 The number of CLSIDs to register.
 
 ## Return Value
@@ -62,4 +62,5 @@ The type of connection to the registered objects is specified by a combination o
 **Namespace:** Microsoft::WRL
 
 ## See Also
+
 [Module Class](../windows/module-class.md)

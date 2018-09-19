@@ -46,5 +46,5 @@ Prevents using operator **new** in `RuntimeClass`. Consequently, you must use th
 
 ## See Also
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)<br/>
 [Make Function](../windows/make-function.md)

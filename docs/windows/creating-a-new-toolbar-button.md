@@ -56,6 +56,6 @@ MFC or ATL
 
 ## See Also
 
-[Toolbar Button Properties](../windows/toolbar-button-properties.md)  
-[Creating, Moving, and Editing Toolbar Buttons](../windows/creating-moving-and-editing-toolbar-buttons.md)  
+[Toolbar Button Properties](../windows/toolbar-button-properties.md)<br/>
+[Creating, Moving, and Editing Toolbar Buttons](../windows/creating-moving-and-editing-toolbar-buttons.md)<br/>
 [Toolbar Editor](../windows/toolbar-editor.md)

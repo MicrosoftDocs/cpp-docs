@@ -66,4 +66,5 @@ The following tables list primary Windows Runtime C++ Template Library classes, 
 |[InspectableClass Macro](../windows/inspectableclass-macro.md)|Sets the runtime class name and trust level.|
   
 ## See Also
- [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)
+
+[Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)

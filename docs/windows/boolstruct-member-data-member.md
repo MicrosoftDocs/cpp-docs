@@ -34,5 +34,5 @@ Specifies that a [ComPtr](../windows/comptr-class.md) is, or is not, managing th
 
 ## See Also
 
-[BoolStruct Structure](../windows/boolstruct-structure.md)  
+[BoolStruct Structure](../windows/boolstruct-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

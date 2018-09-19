@@ -26,7 +26,7 @@ inline static void Unlock(
 
 ### Parameters
 
-*h*  
+*h*<br/>
 Handle to a **Semaphore** object.
 
 ## Remarks

@@ -26,10 +26,10 @@ WRL_NOTHROW inline void Swap(
 
 ### Parameters
 
-*left*  
+*left*<br/>
 The first argument.
 
-*right*  
+*right*<br/>
 The second argument.
 
 ## Return Value

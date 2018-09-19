@@ -32,7 +32,7 @@ struct DerefHelper<T*>;
 
 ### Parameters
 
-*T*  
+*T*<br/>
 A template parameter.
 
 ## Remarks

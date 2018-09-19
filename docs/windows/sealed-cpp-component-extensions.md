@@ -30,10 +30,10 @@ virtual return-type identifier() sealed {...};
 
 ### Parameters
 
-*identifier*  
+*identifier*<br/>
 The name of the function or class.
 
-*return-type*  
+*return-type*<br/>
 The type that's returned by a function.
 
 ## Remarks

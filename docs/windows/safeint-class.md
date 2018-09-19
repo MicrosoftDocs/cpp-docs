@@ -219,5 +219,5 @@ There are two options to customize the error policy. The first option is to set 
 
 ## See Also
 
-[SafeInt Library](../windows/safeint-library.md)  
+[SafeInt Library](../windows/safeint-library.md)<br/>
 [SafeIntException Class](../windows/safeintexception-class.md)

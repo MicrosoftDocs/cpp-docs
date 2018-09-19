@@ -25,7 +25,7 @@ class MethodReleaseNotifier : public ReleaseNotifier;
 
 ### Parameters
 
-*T*  
+*T*<br/>
 The type of the object whose member function is the event handler.
 
 ## Members
@@ -62,4 +62,5 @@ The type of the object whose member function is the event handler.
 **Namespace:** Microsoft::WRL
 
 ## See Also
+
 [Module Class](../windows/module-class.md)

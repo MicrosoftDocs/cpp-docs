@@ -26,7 +26,7 @@ Causes an .idl or .h file to be included in the generated .idl file.
 
 ### Parameters
 
-*name.idl*  
+*name.idl*<br/>
 The name of the .idl file that you want included as part of the generated .idl file.
 
 ## Remarks
@@ -59,9 +59,9 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Stand-Alone Attributes](../windows/stand-alone-attributes.md)  
-[import](../windows/import.md)  
-[importidl](../windows/importidl.md)  
-[include](../windows/include-cpp.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Stand-Alone Attributes](../windows/stand-alone-attributes.md)<br/>
+[import](../windows/import.md)<br/>
+[importidl](../windows/importidl.md)<br/>
+[include](../windows/include-cpp.md)<br/>
 [importlib](../windows/importlib.md)  

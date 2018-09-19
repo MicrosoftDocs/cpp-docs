@@ -21,17 +21,21 @@ inline Details::ModuleBase* GetModuleBase() throw()
 ```
   
 ## Return Value
- A pointer to a `ModuleBase` object.
+
+A pointer to a `ModuleBase` object.
   
 ## Remarks
- This function is used internally to increment and decrement object reference counts.
+
+This function is used internally to increment and decrement object reference counts.
   
- You can use this function to control reference counts by calling [ModuleBase::IncrementObjectCount](../windows/modulebase-incrementobjectcount-method.md) and [ModuleBase::DecrementObjectCount](../windows/modulebase-decrementobjectcount-method.md).
+You can use this function to control reference counts by calling [ModuleBase::IncrementObjectCount](../windows/modulebase-incrementobjectcount-method.md) and [ModuleBase::DecrementObjectCount](../windows/modulebase-decrementobjectcount-method.md).
   
 ## Requirements
- **Header:** implements.h
+
+**Header:** implements.h
   
- **Namespace:** Microsoft::WRL
+**Namespace:** Microsoft::WRL
   
 ## See Also
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+
+[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

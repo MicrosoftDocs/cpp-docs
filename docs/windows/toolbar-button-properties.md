@@ -32,5 +32,5 @@ MFC or ATL
 
 ## See Also
 
-[Changing the Properties of a Toolbar Button](../windows/changing-the-properties-of-a-toolbar-button.md)  
+[Changing the Properties of a Toolbar Button](../windows/changing-the-properties-of-a-toolbar-button.md)<br/>
 [Toolbar Editor](../windows/toolbar-editor.md)

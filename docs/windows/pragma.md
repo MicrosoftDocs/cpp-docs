@@ -26,7 +26,7 @@ Emits the specified string into the generated .idl file without the use of quota
 
 ### Parameters
 
-*pragma_statement*  
+*pragma_statement*<br/>
 The pragma that you want to go into the generated .idl file.
 
 ## Remarks
@@ -64,6 +64,6 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Stand-Alone Attributes](../windows/stand-alone-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Stand-Alone Attributes](../windows/stand-alone-attributes.md)<br/>
 [pack](../preprocessor/pack.md)  

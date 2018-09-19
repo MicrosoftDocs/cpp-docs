@@ -27,10 +27,12 @@ class AgileActivationFactory :
 ```
   
 ## Requirements
- **Header:** module.h
+
+**Header:** module.h
   
- **Namespace:** Microsoft::WRL
+**Namespace:** Microsoft::WRL
   
 ## See Also
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)  
- [ActivationFactory Class](../windows/activationfactory-class.md)
+
+[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)<br/>
+[ActivationFactory Class](../windows/activationfactory-class.md)

@@ -19,27 +19,27 @@ While attributes eliminate some of the detailed coding needed to write COM objec
 
 ## In This Section
 
-[Purpose of Attributes](../windows/purpose-of-attributes.md)  
+[Purpose of Attributes](../windows/purpose-of-attributes.md)<br/>
 Presents an overview of attributed programming.
 
-[Basic Mechanics of Attributes](../windows/basic-mechanics-of-attributes.md)  
+[Basic Mechanics of Attributes](../windows/basic-mechanics-of-attributes.md)<br/>
 Describes how attributes work in your project.
 
-[Building an Attributed Program](../windows/building-an-attributed-program.md)  
+[Building an Attributed Program](../windows/building-an-attributed-program.md)<br/>
 Provides information about using C++ compiler options in your project.
 
-[Attribute Categories](../windows/attribute-categories.md)  
+[Attribute Categories](../windows/attribute-categories.md)<br/>
 Provides links to the categories of attributes used in Visual C++.
 
-[Attribute Programmming FAQ](../windows/attribute-programming-faq.md)  
+[Attribute Programmming FAQ](../windows/attribute-programming-faq.md)<br/>
 Answers frequently asked questions about attributed programming.
 
 ## Related Sections
 
-[Attributes Reference](../windows/cpp-attributes-reference.md)  
+[Attributes Reference](../windows/cpp-attributes-reference.md)<br/>
 Provides links to reference topic describing the individual attributes and their use.
 
-[Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code)  
+[Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code)<br/>
 Describes debugging attributed programs.
 
 [__super](../cpp/super.md)and [__interface](../cpp/interface.md)  

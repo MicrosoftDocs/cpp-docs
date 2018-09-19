@@ -26,7 +26,7 @@ Specifies one or more header files to be included in the generated .idl file.
 
 ### Parameters
 
-*header_file*  
+*header_file*<br/>
 The name of a file that you want included in the generated .idl file.
 
 ## Remarks
@@ -61,9 +61,9 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Stand-Alone Attributes](../windows/stand-alone-attributes.md)  
-[import](../windows/import.md)  
-[importidl](../windows/importidl.md)  
-[includelib](../windows/includelib-cpp.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Stand-Alone Attributes](../windows/stand-alone-attributes.md)<br/>
+[import](../windows/import.md)<br/>
+[importidl](../windows/importidl.md)<br/>
+[includelib](../windows/includelib-cpp.md)<br/>
 [importlib](../windows/importlib.md)  

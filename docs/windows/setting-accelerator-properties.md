@@ -32,6 +32,6 @@ Win32
 
 ## See Also
 
-[Predefined Accelerator Keys](../windows/predefined-accelerator-keys.md)  
-[Resource Editors](../windows/resource-editors.md)  
+[Predefined Accelerator Keys](../windows/predefined-accelerator-keys.md)<br/>
+[Resource Editors](../windows/resource-editors.md)<br/>
 [Accelerator Editor](../windows/accelerator-editor.md)

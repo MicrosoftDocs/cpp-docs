@@ -27,7 +27,7 @@ struct RuntimeClassFlags;
 
 ### Parameters
 
-*flags*  
+*flags*<br/>
 A [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) value.
 
 ## Members

@@ -141,8 +141,8 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[COM Attributes](../windows/com-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)  
-[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[COM Attributes](../windows/com-attributes.md)<br/>
+[Class Attributes](../windows/class-attributes.md)<br/>
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
 [appobject](../windows/appobject.md)

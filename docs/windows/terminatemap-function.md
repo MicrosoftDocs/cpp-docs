@@ -27,13 +27,13 @@ inline bool TerminateMap(
 
 ### Parameters
 
-*module*  
+*module*<br/>
 A [module](../windows/module-class.md).
 
-*serverName*  
+*serverName*<br/>
 The name of a subset of class factories in the module specified by parameter *module*.
 
-*forceTerminate*  
+*forceTerminate*<br/>
 **true** to terminate the class factories regardless of they are active; **false** to not terminate the class factories if any factory is active.
 
 ## Return Value

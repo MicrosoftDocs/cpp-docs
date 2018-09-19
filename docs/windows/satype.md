@@ -26,7 +26,7 @@ Specifies the data type of the `SAFEARRAY` structure.
 
 ### Parameters
 
-*data_type*  
+*data_type*<br/>
 The data type for the `SAFEARRAY` data structure that is being passed as a parameter to an interface method.
 
 ## Requirements
@@ -62,7 +62,7 @@ __interface A {
 
 ## See Also
 
-[Compiler Attributes](../windows/compiler-attributes.md)  
-[Parameter Attributes](../windows/parameter-attributes.md)  
-[Method Attributes](../windows/method-attributes.md)  
+[Compiler Attributes](../windows/compiler-attributes.md)<br/>
+[Parameter Attributes](../windows/parameter-attributes.md)<br/>
+[Method Attributes](../windows/method-attributes.md)<br/>
 [id](../windows/id.md)  

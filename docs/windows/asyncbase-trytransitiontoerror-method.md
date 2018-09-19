@@ -26,7 +26,7 @@ bool TryTransitionToError(
 
 ### Parameters
 
-*error*  
+*error*<br/>
 An error HRESULT.
 
 ## Return Value

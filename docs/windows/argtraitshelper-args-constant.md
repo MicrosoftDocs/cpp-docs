@@ -34,5 +34,5 @@ Helps [ArgTraitsHelper::args](../windows/argtraitshelper-args-constant.md) keep 
 
 ## See Also
 
-[ArgTraitsHelper Structure](../windows/argtraitshelper-structure.md)  
+[ArgTraitsHelper Structure](../windows/argtraitshelper-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

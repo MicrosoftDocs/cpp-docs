@@ -25,7 +25,7 @@ class SimpleClassFactory : public ClassFactory<>;
 
 ### Parameters
 
-*Base*  
+*Base*<br/>
 A base class.
 
 ## Remarks
@@ -88,15 +88,15 @@ STDMETHOD( CreateInstance )(
 
 #### Parameters
 
-*pUnkOuter*  
+*pUnkOuter*<br/>
 Must be `nullptr`; otherwise, the return value is CLASS_E_NOAGGREGATION.
 
 SimpleClassFactory doesn't support aggregation. If aggregation were supported and the object being created was part of an aggregate, *pUnkOuter* would be a pointer to the controlling `IUnknown` interface of the aggregate.
 
-*riid*  
+*riid*<br/>
 Interface ID of the object to create.
 
-*ppvObject*  
+*ppvObject*<br/>
 When this operation completes, pointer to an instance of the object specified by the *riid* parameter.
 
 ### Return Value

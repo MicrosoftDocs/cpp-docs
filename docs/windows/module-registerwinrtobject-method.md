@@ -27,16 +27,16 @@ HRESULT RegisterWinRTObject(const wchar_t* serverName,
 
 ### Parameters
 
-*serverName*  
+*serverName*<br/>
 A name that specifies a subset of objects affected by this operation.
 
-*activatableClassIds*  
+*activatableClassIds*<br/>
 An array of activatable CLSIDs to register.
 
-*cookie*  
+*cookie*<br/>
 A value that identifies the class objects that were registered. This value is used later to revoke the registration.
 
-*count*  
+*count*<br/>
 The number of objects to register.
 
 ## Return Value
@@ -50,4 +50,5 @@ S_OK if successful; otherwise, an error HRESULT such as CO_E_OBJISREG that indic
 **Namespace:** Microsoft::WRL
 
 ## See Also
+
 [Module Class](../windows/module-class.md)

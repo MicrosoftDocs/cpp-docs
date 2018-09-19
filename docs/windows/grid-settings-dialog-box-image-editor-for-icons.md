@@ -38,5 +38,5 @@ None
 
 ## See Also
 
-[Resizing an Image](../windows/resizing-an-image-image-editor-for-icons.md)  
+[Resizing an Image](../windows/resizing-an-image-image-editor-for-icons.md)<br/>
 [Image Editor for Icons](../windows/image-editor-for-icons.md)

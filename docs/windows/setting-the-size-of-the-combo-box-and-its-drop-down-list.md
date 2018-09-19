@@ -48,6 +48,6 @@ Win32
 
 ## See Also
 
-[Adding Values to a Combo Box Control](../windows/adding-values-to-a-combo-box-control.md)  
-[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)  
+[Adding Values to a Combo Box Control](../windows/adding-values-to-a-combo-box-control.md)<br/>
+[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)<br/>
 [Controls](../mfc/controls-mfc.md)

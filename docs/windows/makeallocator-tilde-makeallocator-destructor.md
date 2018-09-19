@@ -36,5 +36,5 @@ This destructor also deletes the underlying allocated memory if necessary.
 
 ## See Also
 
-[MakeAllocator Class](../windows/makeallocator-class.md)  
+[MakeAllocator Class](../windows/makeallocator-class.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
