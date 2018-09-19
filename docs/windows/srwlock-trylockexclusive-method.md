@@ -28,7 +28,7 @@ static SyncLockExclusive TryLockExclusive(
 
 ### Parameters
 
-*lock*  
+*lock*<br/>
 Pointer to an **SRWLock** object.
 
 ## Return Value

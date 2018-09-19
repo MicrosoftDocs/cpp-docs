@@ -26,7 +26,7 @@ Indicates that the class supports aggregation.
 
 ### Parameters
 
-*value*  
+*value*<br/>
 (Optional) A parameter to indicate when the COM object can be aggregated:
 
 - `never` The COM object cannot be aggregated.
@@ -82,7 +82,7 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)  
-[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Class Attributes](../windows/class-attributes.md)<br/>
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
 [Aggregation](/windows/desktop/com/aggregation)  

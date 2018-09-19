@@ -60,6 +60,6 @@ More information on issues related to the DATE and `COleDateTime` types can be f
 
 ## See Also
 
-[Date and Time](../atl-mfc-shared/date-and-time.md)   
+[Date and Time](../atl-mfc-shared/date-and-time.md)<br/>
 [COleDateTime Class](../atl-mfc-shared/reference/coledatetime-class.md)
 

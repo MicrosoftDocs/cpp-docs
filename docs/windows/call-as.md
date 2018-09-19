@@ -26,7 +26,7 @@ Enables a [local](../windows/local-cpp.md) function to be mapped to a remote fun
 
 ### Parameters
 
-*function*  
+*function*<br/>
 The local function that you want to be called when a remote function is invoked.
 
 ## Remarks
@@ -64,6 +64,6 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Method Attributes](../windows/method-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Method Attributes](../windows/method-attributes.md)<br/>
 [local](../windows/local-cpp.md)  

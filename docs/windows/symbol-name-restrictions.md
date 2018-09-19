@@ -46,6 +46,6 @@ Win32
 
 ## See Also
 
-[Changing a Symbol or Symbol Name (ID)](../windows/changing-a-symbol-or-symbol-name-id.md)  
-[Symbol Value Restrictions](../windows/symbol-value-restrictions.md)  
+[Changing a Symbol or Symbol Name (ID)](../windows/changing-a-symbol-or-symbol-name-id.md)<br/>
+[Symbol Value Restrictions](../windows/symbol-value-restrictions.md)<br/>
 [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)

@@ -13,59 +13,63 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_handle::operator-&gt;
-The member access operator.  
-  
-## Syntax  
-  
-```  
-_element_type ^ operator->();  
-```  
-  
-## Return Value  
- The object that is wrapped by `auto_handle`.  
-  
-## Example  
-  
-```  
-// msl_auto_handle_op_arrow.cpp  
-// compile with: /clr  
-#include <msclr\auto_handle.h>  
-  
-using namespace System;  
-using namespace msclr;  
-  
-ref class ClassA {  
-protected:     
-   String^ m_s;  
-public:  
-   ClassA( String^ s ) : m_s( s ) {}  
-  
-   virtual void PrintHello() {  
-      Console::WriteLine( "Hello from {0} A!", m_s );  
-   }  
-  
-   int m_i;  
-};  
-  
-int main() {  
-   auto_handle<ClassA> a( gcnew ClassA( "first" ) );  
-   a->PrintHello();  
-  
-   a->m_i = 5;  
-   Console::WriteLine( "a->m_i = {0}", a->m_i );  
-}  
-```  
-  
-```Output  
-Hello from first A!  
-a->m_i = 5  
-```  
-  
-## Requirements  
- **Header file** \<msclr\auto_handle.h>  
-  
- **Namespace** msclr  
-  
-## See Also  
- [auto_handle Members](../dotnet/auto-handle-members.md)   
- [auto_handle::get](../dotnet/auto-handle-get.md)
+
+The member access operator.
+
+## Syntax
+
+```
+_element_type ^ operator->();
+```
+
+## Return Value
+
+The object that is wrapped by `auto_handle`.
+
+## Example
+
+```
+// msl_auto_handle_op_arrow.cpp
+// compile with: /clr
+#include <msclr\auto_handle.h>
+
+using namespace System;
+using namespace msclr;
+
+ref class ClassA {
+protected:
+   String^ m_s;
+public:
+   ClassA( String^ s ) : m_s( s ) {}
+
+   virtual void PrintHello() {
+      Console::WriteLine( "Hello from {0} A!", m_s );
+   }
+
+   int m_i;
+};
+
+int main() {
+   auto_handle<ClassA> a( gcnew ClassA( "first" ) );
+   a->PrintHello();
+
+   a->m_i = 5;
+   Console::WriteLine( "a->m_i = {0}", a->m_i );
+}
+```
+
+```Output
+Hello from first A!
+a->m_i = 5
+```
+
+## Requirements
+
+**Header file** \<msclr\auto_handle.h>
+
+**Namespace** msclr
+
+## See Also
+
+[auto_handle Members](../dotnet/auto-handle-members.md)<br/>
+[auto_handle::get](../dotnet/auto-handle-get.md)

@@ -26,7 +26,7 @@ STDMETHOD(
 
 ### Parameters
 
-*id*  
+*id*<br/>
 A nonzero handle.
 
 ## Return Value

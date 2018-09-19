@@ -37,6 +37,6 @@ Win32
 
 ## See Also
 
-[How to: Create a Resource](../windows/how-to-create-a-resource.md)  
-[Resource Files](../windows/resource-files-visual-studio.md)  
+[How to: Create a Resource](../windows/how-to-create-a-resource.md)<br/>
+[Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [Dialog Editor](../windows/dialog-editor.md)

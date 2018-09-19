@@ -27,6 +27,6 @@ MFC
 
 ## See Also
 
-[Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)  
-[Adding Commands to a Menu](../windows/adding-commands-to-a-menu.md)  
+[Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
+[Adding Commands to a Menu](../windows/adding-commands-to-a-menu.md)<br/>
 [Menu Editor](../windows/menu-editor.md)

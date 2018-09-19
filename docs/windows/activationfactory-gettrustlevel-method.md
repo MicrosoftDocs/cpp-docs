@@ -26,7 +26,7 @@ STDMETHOD(
 
 ### Parameters
 
-*trustLvl*  
+*trustLvl*<br/>
 When this operation completes, the trust level of the runtime class that the **ActivationFactory** instantiates.
 
 ## Return Value

@@ -34,5 +34,5 @@ Deinitializes the current **EventTargetArray** class.
 
 ## See Also
 
-[EventTargetArray Class](../windows/eventtargetarray-class.md)  
+[EventTargetArray Class](../windows/eventtargetarray-class.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

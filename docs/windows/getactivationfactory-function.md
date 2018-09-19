@@ -28,13 +28,13 @@ inline HRESULT GetActivationFactory(
 
 ### Parameters
 
-*T*  
+*T*<br/>
 A template parameter that specifies the type of the activation factory.
 
-*activatableClassId*  
+*activatableClassId*<br/>
 The name of the class that the activation factory can produce.
 
-*factory*  
+*factory*<br/>
 When this operation completes, a reference to the activation factory for type *T*.
 
 ## Return Value

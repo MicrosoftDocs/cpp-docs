@@ -33,4 +33,5 @@ A stand-alone attribute does not operate on a C++ keyword but is more like a lin
 |[pragma](../windows/pragma.md)|Emits the specified string, without the quote characters, into the generated .idl file.|
   
 ## See Also
- [Attributes by Usage](../windows/attributes-by-usage.md)
+
+[Attributes by Usage](../windows/attributes-by-usage.md)

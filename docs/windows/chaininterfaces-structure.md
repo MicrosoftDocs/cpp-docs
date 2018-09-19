@@ -51,43 +51,43 @@ struct ChainInterfaces<MixIn<DerivedType, BaseType, hasImplements>, I1, I2, I3, 
 
 ### Parameters
 
-*I0*  
+*I0*<br/>
 (Required) Interface ID 0.
 
-*I1*  
+*I1*<br/>
 (Required) Interface ID 1.
 
-*I2*  
+*I2*<br/>
 (Optional) Interface ID 2.
 
-*I3*  
+*I3*<br/>
 (Optional) Interface ID 3.
 
-*I4*  
+*I4*<br/>
 (Optional) Interface ID 4.
 
-*I5*  
+*I5*<br/>
 (Optional) Interface ID 5.
 
-*I6*  
+*I6*<br/>
 (Optional) Interface ID 6.
 
-*I7*  
+*I7*<br/>
 (Optional) Interface ID 7.
 
-*I8*  
+*I8*<br/>
 (Optional) Interface ID 8.
 
-*I9*  
+*I9*<br/>
 (Optional) Interface ID 9.
 
-*DerivedType*  
+*DerivedType*<br/>
 A derived type.
 
-*BaseType*  
+*BaseType*<br/>
 The base type of a derived type.
 
-*hasImplements*  
+*hasImplements*<br/>
 A Boolean value that if **true**, means you can't use a [MixIn](../windows/mixin-structure.md) structure with a class that does not derive from the [Implements](../windows/implements-structure.md) stucture.
 
 ## Members

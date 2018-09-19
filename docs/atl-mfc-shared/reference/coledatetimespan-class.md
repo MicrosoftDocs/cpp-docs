@@ -732,9 +732,9 @@ For a brief description of these status values, see the following list:
 
 ## See Also
 
-[COleDateTime Class](../../atl-mfc-shared/reference/coledatetime-class.md)   
-[CTime Class](../../atl-mfc-shared/reference/ctime-class.md)   
-[CTimeSpan Class](../../atl-mfc-shared/reference/ctimespan-class.md)   
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)   
+[COleDateTime Class](../../atl-mfc-shared/reference/coledatetime-class.md)<br/>
+[CTime Class](../../atl-mfc-shared/reference/ctime-class.md)<br/>
+[CTimeSpan Class](../../atl-mfc-shared/reference/ctimespan-class.md)<br/>
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
 

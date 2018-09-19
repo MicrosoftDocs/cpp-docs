@@ -38,5 +38,5 @@ Retrieves the address of a pointer to the interface represented by the current *
 
 ## See Also
 
-[ComPtrRef Class](../windows/comptrref-class.md)  
+[ComPtrRef Class](../windows/comptrref-class.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

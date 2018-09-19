@@ -13,25 +13,27 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __int2c
-**Microsoft Specific**  
-  
- Generates the `int 2c` instruction, which triggers the `2c` interrupt.  
-  
-## Syntax  
-  
-```  
-void __int2c(void);  
-```  
-  
-## Requirements  
-  
-|Intrinsic|Architecture|  
-|---------------|------------------|  
-|`__int2c`|x86, x64|  
-  
- **Header file** \<intrin.h>  
-  
-**END Microsoft Specific**  
-  
-## See Also  
- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+
+**Microsoft Specific**
+
+Generates the `int 2c` instruction, which triggers the `2c` interrupt.
+
+## Syntax
+
+```
+void __int2c(void);
+```
+
+## Requirements
+
+|Intrinsic|Architecture|
+|---------------|------------------|
+|`__int2c`|x86, x64|
+
+**Header file** \<intrin.h>
+
+**END Microsoft Specific**
+
+## See Also
+
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

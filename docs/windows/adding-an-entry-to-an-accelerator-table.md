@@ -39,5 +39,5 @@ Win32
 
 ## See Also
 
-[Editing Accelerator Tables](../windows/editing-accelerator-tables.md)  
+[Editing Accelerator Tables](../windows/editing-accelerator-tables.md)<br/>
 [Accelerator Editor](../windows/accelerator-editor.md)

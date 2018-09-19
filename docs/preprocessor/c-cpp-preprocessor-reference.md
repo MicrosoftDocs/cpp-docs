@@ -16,28 +16,28 @@ The *C/C++ Preprocessor Reference* explains the preprocessor as it is implemente
   
 ## In This Section  
  
-[Preprocessor Directives](../preprocessor/preprocessor-directives.md)  
+[Preprocessor Directives](../preprocessor/preprocessor-directives.md)<br/>
 Describes directives, typically used to make source programs easy to change and easy to compile in different execution environments.  
   
-[Preprocessor Operators](../preprocessor/preprocessor-operators.md)  
+[Preprocessor Operators](../preprocessor/preprocessor-operators.md)<br/>
 Discusses the four preprocessor-specific operators used in the context of the `#define` directive.  
   
-[Predefined Macros](../preprocessor/predefined-macros.md)  
+[Predefined Macros](../preprocessor/predefined-macros.md)<br/>
 Discusses predefined macros as specified by ANSI and Microsoft C++.  
   
-[Pragmas](../preprocessor/pragma-directives-and-the-pragma-keyword.md)  
+[Pragmas](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 Discusses pragmas, which offer a way for each compiler to offer machine- and operating system-specific features while retaining overall compatibility with the C and C++ languages.  
   
 ## Related Sections  
  
-[C++ Language Reference](../cpp/cpp-language-reference.md)  
+[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 Provides reference material for the Microsoft implementation of the C++ language.  
   
-[C Language Reference](../c-language/c-language-reference.md)  
+[C Language Reference](../c-language/c-language-reference.md)<br/>
 Provides reference material for the Microsoft implementation of the C language.  
   
-[Building a C/C++ Program](../build/reference/c-cpp-building-reference.md)  
+[Building a C/C++ Program](../build/reference/c-cpp-building-reference.md)<br/>
 Provides links to topics discussing compiler and linker options.  
   
-[Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)  
+[Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)<br/>
 Describes the user interface in Visual Studio that enables you to specify the directories that the project system will search to locate files for your C++ project.

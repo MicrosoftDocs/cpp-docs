@@ -117,10 +117,10 @@ HRESULT As(
 
 ### Parameters
 
-*U*  
+*U*<br/>
 An interface ID.
 
-*ptr*  
+*ptr*<br/>
 When this operation completes, an object that represents parameter *U*.
 
 ### Return Value
@@ -152,10 +152,10 @@ HRESULT AsIID(
 
 ### Parameters
 
-*riid*  
+*riid*<br/>
 An interface ID.
 
-*ptr*  
+*ptr*<br/>
 When this operation completes, an object that represents parameter *riid*.
 
 ### Return Value
@@ -196,13 +196,13 @@ HRESULT CopyTo(
 
 ### Parameters
 
-*U*  
+*U*<br/>
 Pointer an `IInspectable` interface. An error is emitted if *U* is not derived from `IInspectable`.
 
-*riid*  
+*riid*<br/>
 An interface ID. An error is emitted if *riid* is not derived from `IWeakReference`.
 
-*ptr*  
+*ptr*<br/>
 A doubly-indirect pointer to `IInspectable` or `IWeakReference`.
 
 ### Return Value
@@ -260,7 +260,7 @@ WeakRef(
 
 ### Parameters
 
-*ptr*  
+*ptr*<br/>
 A pointer, reference, or rvalue-reference to an existing object that initializes the current `WeakRef` object.
 
 ### Remarks

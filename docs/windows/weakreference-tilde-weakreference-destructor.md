@@ -36,5 +36,5 @@ Deinitializes the current instance of the **WeakReference** class.
 
 ## See Also
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)<br/>
 [WeakReference Class](../windows/weakreference-class1.md)

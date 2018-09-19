@@ -35,13 +35,13 @@ class AsyncBase<TComplete, Details::Nil, resultType> : public Microsoft::WRL::Im
 
 ### Parameters
 
-*TComplete*  
+*TComplete*<br/>
 An event handler that is called when an asynchronous operation completes.
 
-*TProgress*  
+*TProgress*<br/>
 An event handler that is called when a running asynchronous operation reports the current progress of the operation.
 
-*resultType*  
+*resultType*<br/>
 One of the [AsyncResultType](../windows/asyncresulttype-enumeration.md) enumeration values. By default, `SingleResult`.
 
 ## Members

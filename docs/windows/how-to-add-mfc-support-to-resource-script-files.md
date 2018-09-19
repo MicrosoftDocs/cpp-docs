@@ -46,5 +46,5 @@ MFC
 
 ## See Also
 
-[Resource Files](../windows/resource-files-visual-studio.md)  
+[Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [Resource Editors](../windows/resource-editors.md)

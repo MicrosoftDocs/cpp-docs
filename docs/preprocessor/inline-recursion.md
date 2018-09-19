@@ -29,6 +29,6 @@ The **inline_recursion** pragma controls how recursive functions are expanded. I
   
 ## See Also  
  
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)   
-[inline_depth](../preprocessor/inline-depth.md)   
+[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
+[inline_depth](../preprocessor/inline-depth.md)<br/>
 [/Ob (Inline Function Expansion)](../build/reference/ob-inline-function-expansion.md)

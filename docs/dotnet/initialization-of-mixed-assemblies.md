@@ -16,7 +16,7 @@ ms.workload: ["cplusplus", "dotnet"]
 Windows developers must always be wary of loader lock when running code during `DllMain`. However, there are some additional considerations that come into play when dealing with C++/clr mixed-mode assemblies.
 
 Code within [DllMain](/windows/desktop/Dlls/dllmain) must not access the CLR. This means that `DllMain` should make no calls to managed functions, directly or indirectly; no managed code should be declared or implemented in `DllMain`; and no garbage collection or automatic library loading should take place within `DllMain`.
-  
+
 ## Causes of Loader Lock
 
 With the introduction of the .NET platform there are two distinct mechanisms for loading an execution module (EXE or DLL): one for Windows, which is used for unmanaged modules, and one for the .NET Common Language Runtime (CLR) which loads .NET assemblies. The mixed DLL loading problem centers around the Microsoft Windows OS loader.
@@ -113,7 +113,7 @@ Because the same header may be included both by C++ files with **/clr** enabled 
 As a convenience for users dealing with loader lock, the linker will choose the native implementation over the managed when presented with both. This avoids the above issues. However, there are two exceptions to this rule in this release due to two unresolved issues with the compiler:
 
 - The call is to an inline function is through a global static function pointer. This scenario is particularly notable because virtual functions are called through global function pointers. For example,
-  
+
 ```cpp
 #include "definesmyObject.h"
 #include "definesclassC.h"
@@ -153,15 +153,15 @@ To identify the specific MSIL function that was called under loader lock, develo
    To do this, open the **Properties** grid for the startup project in the solution. Select **Configuration Properties** > **Debugging**. Set the **Debugger Type** to **Native-Only**.
 
 1. Start the debugger (F5).
-  
+
 1. When the **/clr** diagnostic is generated, choose **Retry** and then choose **Break**.
-  
+
 1. Open the call stack window. (On the menu bar, choose **Debug** > **Windows** > **Call Stack**.) The offending `DllMain` or static initializer is identified with a green arrow. If the offending function is not identified, the following steps must be taken to find it.
 
 1. Open the **Immediate** window (On the menu bar, choose **Debug** > **Windows** > **Immediate**.)
 
 1. Type .load sos.dll into the **Immediate** window to load the SOS debugging service.
-  
+
 1. Type !dumpstack into the **Immediate** window to obtain a complete listing of the internal **/clr** stack.
 
 1. Look for the first instance (closest to the bottom of the stack) of either _CorDllMain (if `DllMain` causes the issue) or _VTableBootstrapThunkInitHelperStub or GetTargetForVTableEntry (if a static initializer causes the issue). The stack entry just below this call is the invocation of the MSIL implemented function that attempted to execute under loader lock.

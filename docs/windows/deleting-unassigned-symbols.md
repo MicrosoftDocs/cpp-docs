@@ -26,7 +26,7 @@ Win32
 
 ## See Also
 
-[Changing Unassigned Symbols](../windows/changing-unassigned-symbols.md)  
-[Symbol Name Restrictions](../windows/symbol-name-restrictions.md)  
-[Symbol Value Restrictions](../windows/symbol-value-restrictions.md)  
+[Changing Unassigned Symbols](../windows/changing-unassigned-symbols.md)<br/>
+[Symbol Name Restrictions](../windows/symbol-name-restrictions.md)<br/>
+[Symbol Value Restrictions](../windows/symbol-value-restrictions.md)<br/>
 [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)

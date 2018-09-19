@@ -35,7 +35,9 @@ Although these differences can affect your source code or other build artifacts,
 
 ### <a name="VS_RTM"></a> Conformance Improvements in Visual Studio 2015
 
-- **/Zc:forScope- option** The compiler option `/Zc:forScope-` is deprecated and will be removed in a future release.
+- **/Zc:forScope- option**
+
+   The compiler option `/Zc:forScope-` is deprecated and will be removed in a future release.
 
    ```output
     Command line warning  D9035: option 'Zc:forScope-' has been deprecated and will be removed in a future release
@@ -56,11 +58,15 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
-- **Zg compiler option.** The `/Zg` compiler option (Generate Function Prototypes) is no longer available. This compiler option was previously deprecated.
+- **Zg compiler option.**
+
+   The `/Zg` compiler option (Generate Function Prototypes) is no longer available. This compiler option was previously deprecated.
 
 - You can no longer run unit tests with C++/CLI from the command-line with mstest.exe. Instead, use vstest.console.exe
 
-- **mutable keyword.** The **mutable** storage class specifier is no longer allowed in places where previously it compiled without error. Now, the compiler gives error C2071 (illegal storage class). According to the standard, the mutable specifier can be applied only to names of class data members, and cannot be applied to names declared const or static, and cannot be applied to reference members.
+- **mutable keyword.**
+
+   The **mutable** storage class specifier is no longer allowed in places where previously it compiled without error. Now, the compiler gives error C2071 (illegal storage class). According to the standard, the mutable specifier can be applied only to names of class data members, and cannot be applied to names declared const or static, and cannot be applied to reference members.
 
    For example, consider the following code:
 
@@ -78,7 +84,9 @@ Although these differences can affect your source code or other build artifacts,
 
    To fix the error, simply remove the redundant **mutable** keyword.
 
-- **char_16_t and char32_t** You can no longer use `char16_t` or `char32_t` as aliases in a typedef, because these types are now treated as built-in. It was common for users and library authors to define `char16_t` and `char32_t` as aliases of `uint16_t` and `uint32_t`, respectively.
+- **char_16_t and char32_t**
+
+   You can no longer use `char16_t` or `char32_t` as aliases in a typedef, because these types are now treated as built-in. It was common for users and library authors to define `char16_t` and `char32_t` as aliases of `uint16_t` and `uint32_t`, respectively.
 
    ```cpp
     #include <cstdint>
@@ -97,7 +105,9 @@ Although these differences can affect your source code or other build artifacts,
 
    To update your code, remove the **typedef** declarations and rename any other identifiers that collide with these names.
 
-- **Non-type template parameters** Certain code that involves non-type template parameters is now correctly checked for type compatibility when you provide explicit template arguments. For example, the following code compiled without error in previous versions of Visual C++.
+- **Non-type template parameters**
+
+   Certain code that involves non-type template parameters is now correctly checked for type compatibility when you provide explicit template arguments. For example, the following code compiled without error in previous versions of Visual C++.
 
    ```cpp
     struct S1
@@ -126,7 +136,9 @@ Although these differences can affect your source code or other build artifacts,
 
    To address this error in your code, make sure that the type of the template argument you use matches the declared type of the template parameter.
 
-- **__declspec(align)** The compiler no longer accepts `__declspec(align)` on functions. This was always ignored, but now it produces a compiler error.
+- **__declspec(align)**
+
+   The compiler no longer accepts `__declspec(align)` on functions. This was always ignored, but now it produces a compiler error.
 
    ```cpp
     error C3323: 'alignas' and '__declspec(align)' are not allowed on function declarations
@@ -134,7 +146,9 @@ Although these differences can affect your source code or other build artifacts,
 
    To fix this problem, remove `__declspec(align)` from the function declaration. Since it had no effect, removing it does not change anything.
 
-- **Exception handling** There are a couple of changes to exception handling. First, exception objects have to be either copyable or movable. The following code compiled in Visual Studio 2013, but does not compile in Visual Studio 2015:
+- **Exception handling**
+
+   There are a couple of changes to exception handling. First, exception objects have to be either copyable or movable. The following code compiled in Visual Studio 2013, but does not compile in Visual Studio 2015:
 
    ```cpp
     struct S {
@@ -198,7 +212,9 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
-- **String literals followed by macros** The compiler now supports user defined literals. As a consequence, string literals followed by macros without any intervening whitespace are interpreted as user-defined literals, which might produce errors or unexpected results. For example, in previous compilers the following code compiled successfully:
+- **String literals followed by macros**
+
+   The compiler now supports user defined literals. As a consequence, string literals followed by macros without any intervening whitespace are interpreted as user-defined literals, which might produce errors or unexpected results. For example, in previous compilers the following code compiled successfully:
 
    ```cpp
     #define _x "there"
@@ -222,7 +238,9 @@ Although these differences can affect your source code or other build artifacts,
 
    To fix this problem, add a space between the string literal and the macro.
 
-- **Adjacent string literals** Similarly to the previous, due to related changes in string parsing, adjacent string literals (either wide or narrow character string literals) without any whitespace were interpreted as a single concatenated string in previous releases of Visaul C++. In Visual Studio 2015, you must now add whitespace between the two strings. For example, the following code must be changed:
+- **Adjacent string literals**
+
+   Similarly to the previous, due to related changes in string parsing, adjacent string literals (either wide or narrow character string literals) without any whitespace were interpreted as a single concatenated string in previous releases of Visaul C++. In Visual Studio 2015, you must now add whitespace between the two strings. For example, the following code must be changed:
 
    ```cpp
     char * str = "abc""def";
@@ -234,7 +252,9 @@ Although these differences can affect your source code or other build artifacts,
     char * str = "abc" "def";
    ```
 
-- **Placement new and delete** A change has been made to the **delete** operator in order to bring it into conformance with C++14 standard. Details of the standards change can be found at [C++ Sized Deallocation](http://isocpp.org/files/papers/n3778.html). The changes add a form of the global **delete** operator that takes a size parameter. The breaking change is that if you were previously using an operator **delete** with the same signature (to correspond with a **placement new** operator), you will receive a compiler error (C2956, which occurs at the point where the **placement new** is used, since that's the position in code where the compiler tries to identify an appropriate matching **delete** operator).
+- **Placement new and delete**
+
+   A change has been made to the **delete** operator in order to bring it into conformance with C++14 standard. Details of the standards change can be found at [C++ Sized Deallocation](http://isocpp.org/files/papers/n3778.html). The changes add a form of the global **delete** operator that takes a size parameter. The breaking change is that if you were previously using an operator **delete** with the same signature (to correspond with a **placement new** operator), you will receive a compiler error (C2956, which occurs at the point where the **placement new** is used, since that's the position in code where the compiler tries to identify an appropriate matching **delete** operator).
 
    The function `void operator delete(void *, size_t)` was a **placement delete** operator corresponding to the **placement new** function `void * operator new(size_t, size_t)` in C++11. With C++14 sized deallocation, this **delete** function is now a *usual deallocation function* (global **delete** operator). The standard requires that if the use of a **placement new** looks up a corresponding **delete** function and finds a usual deallocation function, the program is ill-formed.
 
@@ -282,7 +302,9 @@ Although these differences can affect your source code or other build artifacts,
 
    To address this issue, change reference types either to a pointer or a value. Changing the type to a pointer requires changes in the code that uses the union field. Changing the code to a value would change the data stored in the union, which affects other fields since fields in union types share the same memory. Depending on the size of the value, it might also change the size of the union.
 
-- **Anonymous unions** are now more conformant to the standard. Previous versions of the compiler generated an explicit constructor and destructor for anonymous unions. These are deleted in Visual Studio 2015.
+- **Anonymous unions**
+
+   are now more conformant to the standard. Previous versions of the compiler generated an explicit constructor and destructor for anonymous unions. These are deleted in Visual Studio 2015.
 
    ```cpp
     struct S {
@@ -318,7 +340,9 @@ Although these differences can affect your source code or other build artifacts,
     } u;
    ```
 
-- **Unions with anonymous structs** In order to conform with the standard, the runtime behavior has changed for members of anonymous structures in unions. The constructor for anonymous structure members in a union is no longer implicitly called when such a union is created. Also, the destructor for anonymous structure members in a union is no longer implicitly called when the union goes out of scope. Consider the following code, in which a union U contains an anonymous structure that contains a member which is a named structure S that has a destructor.
+- **Unions with anonymous structs**
+
+   In order to conform with the standard, the runtime behavior has changed for members of anonymous structures in unions. The constructor for anonymous structure members in a union is no longer implicitly called when such a union is created. Also, the destructor for anonymous structure members in a union is no longer implicitly called when the union goes out of scope. Consider the following code, in which a union U contains an anonymous structure that contains a member which is a named structure S that has a destructor.
 
    ```cpp
     #include <stdio.h>
@@ -423,7 +447,9 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
-- **Template resolution** Changes have been made to name resolution for templates. In C++, when considering candidates for the resolution of a name, it can be the case that one or more names under consideration as potential matches produces an invalid template instantiation. These invalid instantiations do not normally cause compiler errors, a principle which is known as SFINAE (Substitution Failure Is Not An Error).
+- **Template resolution**
+
+   Changes have been made to name resolution for templates. In C++, when considering candidates for the resolution of a name, it can be the case that one or more names under consideration as potential matches produces an invalid template instantiation. These invalid instantiations do not normally cause compiler errors, a principle which is known as SFINAE (Substitution Failure Is Not An Error).
 
    Now, if SFINAE requires the compiler to instantiate the specialization of a class template, then any errors that occur during this process are compiler errors. In previous versions, the compiler would ignore such errors. For example, consider the following code:
 
@@ -481,11 +507,15 @@ Although these differences can affect your source code or other build artifacts,
 
    In this case, the fix is not to use such type traits until the class has been defined. If you move the definitions of B and D to the beginning of the code file, the error is resolved. If the definitions are in header files, check the order of the include statements for the header files to make sure that any class definitions are compiled before the problematic templates are used.
 
-- **Copy constructors** In both Visual Studio 2013 and Visual Studio 2015, the compiler generates a copy constructor for a class if that class has a user-defined move constructor but no user-defined copy constructor. In Dev14, this implicitly generated copy constructor is also marked "= delete".
+- **Copy constructors**
+
+   In both Visual Studio 2013 and Visual Studio 2015, the compiler generates a copy constructor for a class if that class has a user-defined move constructor but no user-defined copy constructor. In Dev14, this implicitly generated copy constructor is also marked "= delete".
 
 ### <a name="VS_Update1"></a> Conformance Improvements in Visual Studio 2015 Update 1
 
-- **Private virtual base classes and indirect inheritance** Previous versions of the compiler allowed a derived class to call member functions of its *indirectly-derived*`private virtual` base classes. This old behavior was incorrect and does not conform to the C++ standard. The compiler no longer accepts code written in this way and issues compiler error C2280 as a result.
+- **Private virtual base classes and indirect inheritance**
+
+   Previous versions of the compiler allowed a derived class to call member functions of its *indirectly-derived*`private virtual` base classes. This old behavior was incorrect and does not conform to the C++ standard. The compiler no longer accepts code written in this way and issues compiler error C2280 as a result.
 
    ```Output
     error C2280: 'void *S3::__delDtor(unsigned int)': attempting to reference a deleted function
@@ -537,7 +567,9 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
-- **Overloaded operator new and operator delete** Previous versions of the compiler allowed non-member **operator new** and non-member **operator delete** to be declared static, and to be declared in namespaces other than the global namespace.  This old behavior created a risk that the program would not call the **new** or **delete** operator implementation that the programmer intended, resulting in silent bad runtime behavior. The compiler no longer accepts code written in this way and issues compiler error C2323 instead.
+- **Overloaded operator new and operator delete**
+
+   Previous versions of the compiler allowed non-member **operator new** and non-member **operator delete** to be declared static, and to be declared in namespaces other than the global namespace.  This old behavior created a risk that the program would not call the **new** or **delete** operator implementation that the programmer intended, resulting in silent bad runtime behavior. The compiler no longer accepts code written in this way and issues compiler error C2323 instead.
 
    ```Output
     error C2323: 'operator new': non-member operator new or delete functions may not be declared static or in a namespace other than the global namespace.
@@ -693,7 +725,9 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
-- **Restoration of switch statement warnings** A Previous version of the compiler removed previously-existing warnings related to **switch** statements; these warnings have now been restored. The compiler now issues the restored warnings, and warnings related to specific cases (including the default case) are now issued on the line containing the offending case, rather than on the last line of the switch statement. As a result of now issuing those warnings on different lines than in the past, warnings previously suppressed by using `#pragma warning(disable:####)` may no longer be suppressed as intended. To suppress these warnings as intended, it might be necessary to move the `#pragma warning(disable:####)` directive to a line above the first potentially-offending case. The following are the restored warnings.
+- **Restoration of switch statement warnings**
+
+   A Previous version of the compiler removed previously-existing warnings related to **switch** statements; these warnings have now been restored. The compiler now issues the restored warnings, and warnings related to specific cases (including the default case) are now issued on the line containing the offending case, rather than on the last line of the switch statement. As a result of now issuing those warnings on different lines than in the past, warnings previously suppressed by using `#pragma warning(disable:####)` may no longer be suppressed as intended. To suppress these warnings as intended, it might be necessary to move the `#pragma warning(disable:####)` directive to a line above the first potentially-offending case. The following are the restored warnings.
 
    ```Output
     warning C4060: switch statement contains no 'case' or 'default' labels
@@ -899,7 +933,9 @@ Although these differences can affect your source code or other build artifacts,
 
    Though uncommon, code written in this way is sometimes intentional. Code written in this way is sensitive to changes in `#include` order; when possible, we recommend that source code files manage warning state in a self-contained way.
 
-- **Unmatched #pragma warning(push)** (only affects `/Wall` `/WX`) Previous versions of the compiler did not detect unmatched `#pragma warning(push)` state changes at the end of a translation unit. The compiler now detects and notifies the programmer of code written in this way and issues an optional compiler warning C5032 at the location of the unmatched `#pragma warning(push)`, if enabled. This warning is only issued if there are no compilation errors in the translation unit.
+- **Unmatched #pragma warning(push)** (only affects `/Wall` `/WX`)
+
+   Previous versions of the compiler did not detect unmatched `#pragma warning(push)` state changes at the end of a translation unit. The compiler now detects and notifies the programmer of code written in this way and issues an optional compiler warning C5032 at the location of the unmatched `#pragma warning(push)`, if enabled. This warning is only issued if there are no compilation errors in the translation unit.
 
    ```Output
     warning C5032: detected #pragma warning(push) with no corresponding #pragma warning(pop)
@@ -936,11 +972,15 @@ Although these differences can affect your source code or other build artifacts,
     // C5032.cpp ends -- the translation unit is completed without unmatched #pragma warning(push)
    ```
 
-- **Additional warnings might be issued as a result of improved #pragma warning state tracking** Previous versions of the compiler tracked `#pragma warning` state changes insufficiently well to issue all intended warnings. This behavior created a risk that certain warnings would be effectively suppressed in circumstances different than the programmer intended. The compiler now tracks `#pragma warning` state more robustly -- especially related to `#pragma warning` state changes inside of templates -- and optionally issues new warnings C5031 and C5032 which are intended to help the programmer locate unintended uses of `#pragma warning(push)` and `#pragma warning(pop)`.
+- **Additional warnings might be issued as a result of improved #pragma warning state tracking**
+
+   Previous versions of the compiler tracked `#pragma warning` state changes insufficiently well to issue all intended warnings. This behavior created a risk that certain warnings would be effectively suppressed in circumstances different than the programmer intended. The compiler now tracks `#pragma warning` state more robustly -- especially related to `#pragma warning` state changes inside of templates -- and optionally issues new warnings C5031 and C5032 which are intended to help the programmer locate unintended uses of `#pragma warning(push)` and `#pragma warning(pop)`.
 
    As a result of improved `#pragma warning` state change tracking, warnings formerly incorrectly suppressed or warnings related to issues formerly misdiagnosed might now be issued.
 
-- **Improved identification of unreachable code** C++ Standard Library changes and improved ability to inline function calls over previous versions of the compiler might allow the compiler to prove that certain code is now unreachable. This new behavior can result in new and more-frequently issued instances of warning C4720.
+- **Improved identification of unreachable code**
+
+   C++ Standard Library changes and improved ability to inline function calls over previous versions of the compiler might allow the compiler to prove that certain code is now unreachable. This new behavior can result in new and more-frequently issued instances of warning C4720.
 
    ```Output
     warning C4720: unreachable code
@@ -976,7 +1016,9 @@ Although these differences can affect your source code or other build artifacts,
 
 ### <a name="VS_Update2"></a> Conformance Improvements in Visual Studio 2015 Update 2
 
-- **Additional warnings and errors might be issued as a result of partial support for expression SFINAE** Previous versions of the compiler did not parse certain kinds of expressions inside **decltype** specifiers due to lack of  support for expression SFINAE. This old behavior was incorrect and does not conform to the C++ standard. The compiler now parses these expressions and has partial support for expression SFINAE due to  ongoing conformance improvements. As a result, the compiler now issues warnings and errors found in  expressions that previous versions of the compiler did not parse.
+- **Additional warnings and errors might be issued as a result of partial support for expression SFINAE**
+
+   Previous versions of the compiler did not parse certain kinds of expressions inside **decltype** specifiers due to lack of  support for expression SFINAE. This old behavior was incorrect and does not conform to the C++ standard. The compiler now parses these expressions and has partial support for expression SFINAE due to  ongoing conformance improvements. As a result, the compiler now issues warnings and errors found in  expressions that previous versions of the compiler did not parse.
 
    When this new behavior parses a **decltype** expression that includes a type that has not yet been declared, the compiler issues compiler error C2039 as a result.
 
@@ -1117,7 +1159,9 @@ Although these differences can affect your source code or other build artifacts,
     B b2 (b1);  // error C2280
    ```
 
-- **Static member functions do not support cv-qualifiers.** Previous versions of Visual C++ 2015 allowed static member functions to have cv-qualifiers. This behavior is due to a regression in Visual C++ 2015 and Visual C++ 2015 Update 1; Visual C++ 2013 and previous versions of Visual C++ reject code written in this way. The behavior of Visual C++ 2015 and Visual C++ 2015 Update 1 is incorrect and does not conform to the C++ standard.  Visual Studio 2015 Update 2 rejects code written in this way and issues compiler error C2511 instead.
+- **Static member functions do not support cv-qualifiers.**
+
+   Previous versions of Visual C++ 2015 allowed static member functions to have cv-qualifiers. This behavior is due to a regression in Visual C++ 2015 and Visual C++ 2015 Update 1; Visual C++ 2013 and previous versions of Visual C++ reject code written in this way. The behavior of Visual C++ 2015 and Visual C++ 2015 Update 1 is incorrect and does not conform to the C++ standard.  Visual Studio 2015 Update 2 rejects code written in this way and issues compiler error C2511 instead.
 
    ```Output
     error C2511: 'void A::func(void) const': overloaded member function not found in 'A'
@@ -1145,7 +1189,9 @@ Although these differences can affect your source code or other build artifacts,
     void A::func() {}  // removed const
    ```
 
-- **Forward declaration of enum is not allowed in WinRT code** (affects `/ZW` only) Code compiled for the Windows Runtime (WinRT) doesn't allow **enum** types to be forward declared, similarly to when managed C++ code is compiled for the .Net Framework using the `/clr` compiler switch. This behavior is ensures that the size of an enumeration is always known and can be correctly projected to the WinRT type system. The compiler rejects code written in this way and  issues compiler error C2599 together with compiler error C3197.
+- **Forward declaration of enum is not allowed in WinRT code** (affects `/ZW` only)
+
+   Code compiled for the Windows Runtime (WinRT) doesn't allow **enum** types to be forward declared, similarly to when managed C++ code is compiled for the .Net Framework using the `/clr` compiler switch. This behavior is ensures that the size of an enumeration is always known and can be correctly projected to the WinRT type system. The compiler rejects code written in this way and  issues compiler error C2599 together with compiler error C3197.
 
    ```Output
     error C2599: 'CustomEnum': the forward declaration of a WinRT enum is not allowed
@@ -1200,7 +1246,9 @@ Although these differences can affect your source code or other build artifacts,
     };
    ```
 
-- **Overloaded non-member operator new and operator delete may not be declared inline** (Level 1 (`/W1`) on-by-default) Previous versions of the compiler do not issue a warning when non-member **operator new** and **operator delete** functions are declared inline. Code written in this way is ill-formed (no diagnostic required) and can cause memory issues resulting from mismatched new and delete operators (especially when used together with sized deallocation) that can be difficult to diagnose. The compiler now issues compiler warning C4595 to help identify code written in this way.
+- **Overloaded non-member operator new and operator delete may not be declared inline** (Level 1 (`/W1`) on-by-default)
+
+   Previous versions of the compiler do not issue a warning when non-member **operator new** and **operator delete** functions are declared inline. Code written in this way is ill-formed (no diagnostic required) and can cause memory issues resulting from mismatched new and delete operators (especially when used together with sized deallocation) that can be difficult to diagnose. The compiler now issues compiler warning C4595 to help identify code written in this way.
 
    ```Output
     warning C4595: 'operator new': non-member operator new or delete functions may not be declared inline
@@ -1254,7 +1302,9 @@ Although these differences can affect your source code or other build artifacts,
 
    In previous versions of Visual C++, the static assertions at the bottom of this example pass because `std::is_convertable<>::value` was incorrectly set to **true**. Now, `std::is_convertable<>::value` is correctly set to **false**, causing the static assertions to fail.
 
-- **Defaulted or deleted trivial copy and move constructors respect access specifiers** Previous versions of the compiler did not check the access specifier of defaulted or deleted trivial copy and move constructors before allowing them to be called. This old behavior was incorrect and does not conform to the C++ standard. In some cases, this old behavior created a risk of silent bad code generation, resulting in unpredictable runtime behavior. The compiler now checks the access specifier of defaulted or deleted trivial copy and move constructors to determine whether it can be called, and if not, issues compiler warning C2248 as a result.
+- **Defaulted or deleted trivial copy and move constructors respect access specifiers**
+
+   Previous versions of the compiler did not check the access specifier of defaulted or deleted trivial copy and move constructors before allowing them to be called. This old behavior was incorrect and does not conform to the C++ standard. In some cases, this old behavior created a risk of silent bad code generation, resulting in unpredictable runtime behavior. The compiler now checks the access specifier of defaulted or deleted trivial copy and move constructors to determine whether it can be called, and if not, issues compiler warning C2248 as a result.
 
    ```Output
     error C2248: 'S::S' cannot access private member declared in class 'S'
@@ -1298,7 +1348,9 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
-- **Deprecation of attributed ATL code support** (Level 1 (`/W1`) on-by-default) Previous versions of the compiler supported attributed ATL code. As the next phase of removing support for attributed ATL code that [began in Visual C++ 2008](https://msdn.microsoft.com/library/bb384632\(v=vs.90\).aspx), attributed ATL code has been deprecated. The compiler now issues compiler warning C4467 to help identify this kind of deprecated code.
+- **Deprecation of attributed ATL code support** (Level 1 (`/W1`) on-by-default)
+
+   Previous versions of the compiler supported attributed ATL code. As the next phase of removing support for attributed ATL code that [began in Visual C++ 2008](https://msdn.microsoft.com/library/bb384632\(v=vs.90\).aspx), attributed ATL code has been deprecated. The compiler now issues compiler warning C4467 to help identify this kind of deprecated code.
 
    ```Output
     warning C4467: Usage of ATL attributes is deprecated
@@ -1393,7 +1445,9 @@ Although these differences can affect your source code or other build artifacts,
     };
    ```
 
-- **Precompiled header (PCH) files and mismatched #include directives** (only affects `/Wall` `/WX`) Previous versions of the compiler accepted mismatched `#include` directives in source files between `-Yc` and `-Yu` compilations when using precompiled header (PCH)  files. Code written in this way is no longer accepted by the compiler. The compiler now issues compiler warning CC4598 to help identify mismatched `#include` directives when using PCH files.
+- **Precompiled header (PCH) files and mismatched #include directives** (only affects `/Wall` `/WX`)
+
+   Previous versions of the compiler accepted mismatched `#include` directives in source files between `-Yc` and `-Yu` compilations when using precompiled header (PCH)  files. Code written in this way is no longer accepted by the compiler. The compiler now issues compiler warning CC4598 to help identify mismatched `#include` directives when using PCH files.
 
    ```Output
     warning C4598: 'b.h': included header file specified for Ycc.h at position 2 does not match Yuc.h at that position
@@ -1435,7 +1489,9 @@ Although these differences can affect your source code or other build artifacts,
     #include "c.h"
    ```
 
-- **Precompiled header (PCH) files and mismatched include directories** (only affects `/Wall` `/WX`) Previous versions of the compiler accepted mismatched include directory (`-I`) command line arguments to the compiler between `-Yc` and `-Yu` compilations when using precompiled header (PCH)  files. Code written in this way is no longer accepted by the compiler.   The compiler now issues compiler warning CC4599 to help identify mismatched include directory (`-I`) command line arguments when using PCH files.
+- **Precompiled header (PCH) files and mismatched include directories** (only affects `/Wall` `/WX`)
+
+   Previous versions of the compiler accepted mismatched include directory (`-I`) command line arguments to the compiler between `-Yc` and `-Yu` compilations when using precompiled header (PCH)  files. Code written in this way is no longer accepted by the compiler.   The compiler now issues compiler warning CC4599 to help identify mismatched include directory (`-I`) command line arguments when using PCH files.
 
    ```Output
     warning C4599: '-I..' : specified for Ycc.h at position 1 does not match Yuc.h at that position
@@ -1525,11 +1581,25 @@ This improved support for ISO C/C++ standards may require changes to existing co
 
 ### Windows Runtime App Development Support
 
-- **Support For Boxed Types In Value structs.** You can now define value types by using fields that can be null—for example, `IBox<int>^` as opposed to **int**. This means that the fields can either have a value, or be equal to **nullptr**.
-- **Richer Exception Information.** C++/CX supports the new Windows error model that enables the capture and propagation of rich exception information across the application binary interface (ABI); this includes call stacks and custom message strings.
-- **Object::ToString() Is Now Virtual.** You can now override ToString in user-defined Windows Runtime ref types.
-- **Support For Deprecated APIs.** Public Windows Runtime APIs can now be marked as deprecated and given a custom message that appears as a build warning and can provide migration guidance.
-- **Debugger Improvements.** Support for native/JavaScript interop debugging, Windows Runtime exception diagnosis, and async code debugging (both Windows Runtime and PPL).
+- **Support For Boxed Types In Value structs.**
+
+   You can now define value types by using fields that can be null—for example, `IBox<int>^` as opposed to **int**. This means that the fields can either have a value, or be equal to **nullptr**.
+
+- **Richer Exception Information.**
+
+   C++/CX supports the new Windows error model that enables the capture and propagation of rich exception information across the application binary interface (ABI); this includes call stacks and custom message strings.
+
+- **Object::ToString() Is Now Virtual.**
+
+   You can now override ToString in user-defined Windows Runtime ref types.
+
+- **Support For Deprecated APIs.**
+
+   Public Windows Runtime APIs can now be marked as deprecated and given a custom message that appears as a build warning and can provide migration guidance.
+
+- **Debugger Improvements.**
+
+   Support for native/JavaScript interop debugging, Windows Runtime exception diagnosis, and async code debugging (both Windows Runtime and PPL).
 
 > [!NOTE]
 > In addition to the C++-specific features and enhancements that are described in this section, other enhancements in Visual Studio also can help you write better Windows Runtime apps.

@@ -25,7 +25,7 @@ void Attach(
 
 ### Parameters
 
-*hstr*  
+*hstr*<br/>
 An existing **HString** object.
 
 ## Requirements

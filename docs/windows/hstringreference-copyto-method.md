@@ -24,7 +24,7 @@ HRESULT CopyTo(
 
 ### Parameters
 
-*str*  
+*str*<br/>
 The HSTRING that receives the copy.
 
 ## Remarks

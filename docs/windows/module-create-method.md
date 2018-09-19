@@ -33,16 +33,16 @@ WRL_NOTHROW static Module& Create(
 
 ### Parameters
 
-*T*  
+*T*<br/>
 Module type.
 
-*callback*  
+*callback*<br/>
 Called when the last instance object of the module is released.
 
-*object*  
+*object*<br/>
 The *object* and *method* parameters are used in combination. Points to the last instance object when the last instance object in the module is released.
 
-*method*  
+*method*<br/>
 The *object* and *method* parameters are used in combination. Points to the method of the last instance object when the last instance object in the module is released.
 
 ## Return Value

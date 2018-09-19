@@ -40,5 +40,5 @@ Win32
 
 ## See Also
 
-[Viewing Resource Symbols](../windows/viewing-resource-symbols.md)  
+[Viewing Resource Symbols](../windows/viewing-resource-symbols.md)<br/>
 [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)

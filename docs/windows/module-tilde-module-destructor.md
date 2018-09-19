@@ -29,4 +29,5 @@ virtual ~Module();
 **Namespace:** Microsoft::WRL
 
 ## See Also
+
 [Module Class](../windows/module-class.md)

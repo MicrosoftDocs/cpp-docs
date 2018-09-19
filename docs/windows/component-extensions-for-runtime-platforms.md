@@ -126,5 +126,5 @@ This section lists additional programming constructs, and topics that pertain to
 
 ## See Also
 
-[.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)  
+[.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
 [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md)

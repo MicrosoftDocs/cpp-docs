@@ -70,7 +70,7 @@ Information about samples.
 [IDE and Development Tools](ide/ide-and-tools-for-visual-cpp-development.md).
 How to use the Visual Studio IDE to create projects, work with source code files, link to libraries, compile, debug, create unit tests, do static analysis, deploy, and more.
 
-[Compilers and Build Tools](build/building-c-cpp-programs.md)
+[Compilers and Build Tools](build/building-c-cpp-programs.md)<br/>
 Microsoft C++ compiler and linker options, error messages, command-line examples, configurating for different platforms, and build reference topics. 
 
 ## Write applications in C++
@@ -81,10 +81,10 @@ Find guides and reference content on the Windows Developer Center. For informati
 [Desktop Applications (C++)](windows/desktop-applications-visual-cpp.md)<br/>
 Learn how to create traditional native C++ desktop applications for Windows.
 
-[.NET Programming with C++/CLI](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+[.NET Programming with C++/CLI](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
 Learn how to create DLLs that enable interoperability between native C++ and .NET programs written in languages such as C# or Visual Basic.
 
-[Linux Programming](linux/index.md)
+[Linux Programming](linux/index.md)<br/>
 Use the Visual Studio IDE to code and deploy to a remote Linux machine for compilation with GCC.
 
 [DLLs in Visual C++](build/dlls-in-visual-cpp.md)<br/>

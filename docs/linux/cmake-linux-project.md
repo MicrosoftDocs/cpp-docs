@@ -156,5 +156,5 @@ cmake -E capabilities
 
 ## See Also
 
-[Working with Project Properties](../ide/working-with-project-properties.md)  
+[Working with Project Properties](../ide/working-with-project-properties.md)<br/>
 [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md)  

@@ -26,7 +26,7 @@ Specifies a context ID that lets the user view information about this element in
 
 ### Parameters
 
-*id*  
+*id*<br/>
 The context ID of the help topic. See [HTML Help: Context-Sensitive Help for Your Programs](../mfc/html-help-context-sensitive-help-for-your-programs.md) for more information on context IDs.
 
 ## Remarks
@@ -52,10 +52,10 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Interface Attributes](../windows/interface-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)  
-[Method Attributes](../windows/method-attributes.md)  
-[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
-[helpfile](../windows/helpfile.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Interface Attributes](../windows/interface-attributes.md)<br/>
+[Class Attributes](../windows/class-attributes.md)<br/>
+[Method Attributes](../windows/method-attributes.md)<br/>
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[helpfile](../windows/helpfile.md)<br/>
 [helpstring](../windows/helpstring.md)  

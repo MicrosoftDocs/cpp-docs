@@ -29,16 +29,16 @@ Opens an OLE DB table.
 
 #### Parameters
 
-*db_table*  
+*db_table*<br/>
 A string specifying the name of a database table (such as "Products").
 
-*name*  
+*name*<br/>
 (Optional) The name of the handle you use to work with the table. You must specify this parameter if you want to return more than one row of results. **db_table** generates a variable with the specified *name* that can be used to traverse the rowset or execute multiple action queries.
 
-*source_name*  
+*source_name*<br/>
 (Optional) The `CSession` variable or instance of a class that has the `db_source` attribute applied to it on which the command executes. See [db_source](../windows/db-source.md).
 
-*hresult*  
+*hresult*<br/>
 (Optional) Identifies the variable that will receive the HRESULT of this database command. If the variable does not exist, it will be automatically injected by the attribute.
 
 ## Remarks

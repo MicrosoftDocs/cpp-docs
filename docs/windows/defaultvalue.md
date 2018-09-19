@@ -24,7 +24,7 @@ Allows specification of a default value for a typed optional parameter.
 
 ### Parameters
 
-*value*  
+*value*<br/>
 The default value for the parameter.
 
 ## Remarks
@@ -72,10 +72,10 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Parameter Attributes](../windows/parameter-attributes.md)  
-[out](../windows/out-cpp.md)  
-[retval](../windows/retval.md)  
-[in](../windows/in-cpp.md)  
-[pointer_default](../windows/pointer-default.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Parameter Attributes](../windows/parameter-attributes.md)<br/>
+[out](../windows/out-cpp.md)<br/>
+[retval](../windows/retval.md)<br/>
+[in](../windows/in-cpp.md)<br/>
+[pointer_default](../windows/pointer-default.md)<br/>
 [unique](../windows/unique-cpp.md)  

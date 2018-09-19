@@ -32,19 +32,19 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
 
 ### Parameters
 
-*class_access*  
+*class_access*<br/>
 (Optional) The accessibility of the class or struct outside the assembly. Possible values are **public** and **private** (**private** is the default). Nested classes or structs cannot have a *class_access* specifier.
 
-*name*  
+*name*<br/>
 The name of the class or struct.
 
-*modifier*  
+*modifier*<br/>
 (Optional) [abstract](../windows/abstract-cpp-component-extensions.md) and [sealed](../windows/sealed-cpp-component-extensions.md) are valid modifiers.
 
-*inherit_access*  
+*inherit_access*<br/>
 (Optional) The accessibility of *base_type*. The only permitted accessibility is **public** (**public** is the default).
 
-*base_type*  
+*base_type*<br/>
 (Optional) A base type. However, a value type cannot act as a base type.
 
 For more information, see the language-specific descriptions of this parameter in the Windows Runtime and Common Language Runtimesections.
@@ -83,7 +83,7 @@ See [Ref classes and structs](../cppcx/ref-classes-and-structs-c-cx.md) and [Val
 
 ### Parameters
 
-*base_type*  
+*base_type*<br/>
 (Optional) A base type. A **ref class** or **ref struct** can inherit from zero or more interfaces and zero or one **ref** types. A **value class** or **value struct** can only inherit from zero or more interfaces.
 
 When you declare an object by using the **ref class** or **ref struct** keywords, the object is accessed by a handle to an object; that is, a reference-counter pointer to the object. When the declared variable goes out of scope, the compiler automatically deletes the underlying object. When the object is  used as a parameter in a call or is stored in a variable, a handle to the object is actually passed or stored.
@@ -102,7 +102,7 @@ The following table lists differences from the syntax shown in the **All Runtime
 
 ### Parameters
 
-*base_type*  
+*base_type*<br/>
 (Optional) A base type. A **ref class** or **ref struct** can inherit from zero or more managed interfaces and zero or one ref types. A **value class** or **value struct** can only inherit from zero or more managed interfaces.
 
 The **ref class** and **ref struct** keywords tell the compiler that the class or structure is to be allocated on the heap. When the object is  used as a parameter in a call or is stored in a variable, a reference to the object is actually passed or stored.

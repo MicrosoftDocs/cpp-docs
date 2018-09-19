@@ -25,7 +25,7 @@ struct CloakedIid : T;
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The interface that is hidden (cloaked).
 
 ## Remarks

@@ -28,10 +28,10 @@ struct InterfaceList;
 
 ### Parameters
 
-*T*  
+*T*<br/>
 An interface name; the first interface in the recursive list.
 
-*U*  
+*U*<br/>
 An interface name; the remaining interfaces in the recursive list.
 
 ## Remarks
