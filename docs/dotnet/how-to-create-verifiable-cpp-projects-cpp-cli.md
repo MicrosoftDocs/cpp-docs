@@ -22,7 +22,7 @@ However, if you are using an older version of the Visual C++ compiler toolset th
 
 ## Compiler and linker settings
 
- By default, .NET projects use the /clr compiler flag and configure the linker to target x86 hardware. For verifiable code, you must use the /clr:safe flag, and you must instruct the linker to generate MSIL instead of native machine instructions.
+By default, .NET projects use the /clr compiler flag and configure the linker to target x86 hardware. For verifiable code, you must use the /clr:safe flag, and you must instruct the linker to generate MSIL instead of native machine instructions.
 
 ### To change the compiler and linker settings
 

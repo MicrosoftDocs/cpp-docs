@@ -12,27 +12,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Managed Types (C++/CL)
-The syntax for the declaration of managed types and the creation and use of objects of these types has been significantly altered from Managed Extensions for C++ to Visual C++. This was done to promote their integration within the ISO-C++ type system. These changes are presented in detail in the following subsections.  
-  
-## In This Section  
- [Declaration of a Managed Class Type](../dotnet/declaration-of-a-managed-class-type.md)  
- Discusses how to declare a managed `class`, `struct`, or `interface`.  
-  
- [Declaration of a CLR Reference Class Object](../dotnet/declaration-of-a-clr-reference-class-object.md)  
- Discusses how to declare a reference class type object using a tracking handle.  
-  
- [Declaration of a CLR Array](../dotnet/declaration-of-a-clr-array.md)  
- Explains how to declare and initialize an array.  
-  
- [Changes in Constructor Initialization Order](../dotnet/changes-in-constructor-initialization-order.md)  
- Discusses key changes in class constructor initialization order.  
-  
- [Changes in Destructor Semantics](../dotnet/changes-in-destructor-semantics.md)  
- Discusses non-deterministic finalization, `Finalize` versus `Dispose`, ramifications for reference objects, and use of an explicit `Finalize`.  
-  
- **Note:** The discussion of delegates is deferred until [Delegates and Events](../dotnet/delegates-and-events.md) in order to present them with event members within a class, the general topic of [Member Declarations within a Class or Interface (C++/CLI)](../dotnet/member-declarations-within-a-class-or-interface-cpp-cli.md).  
-  
-## See Also  
- [C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md)   
- [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md)   
- [Arrays](../windows/arrays-cpp-component-extensions.md)
+
+The syntax for the declaration of managed types and the creation and use of objects of these types has been significantly altered from Managed Extensions for C++ to Visual C++. This was done to promote their integration within the ISO-C++ type system. These changes are presented in detail in the following subsections.
+
+## In This Section
+
+[Declaration of a Managed Class Type](../dotnet/declaration-of-a-managed-class-type.md)<br/>
+Discusses how to declare a managed `class`, `struct`, or `interface`.
+
+[Declaration of a CLR Reference Class Object](../dotnet/declaration-of-a-clr-reference-class-object.md)<br/>
+Discusses how to declare a reference class type object using a tracking handle.
+
+[Declaration of a CLR Array](../dotnet/declaration-of-a-clr-array.md)<br/>
+Explains how to declare and initialize an array.
+
+[Changes in Constructor Initialization Order](../dotnet/changes-in-constructor-initialization-order.md)<br/>
+Discusses key changes in class constructor initialization order.
+
+[Changes in Destructor Semantics](../dotnet/changes-in-destructor-semantics.md)<br/>
+Discusses non-deterministic finalization, `Finalize` versus `Dispose`, ramifications for reference objects, and use of an explicit `Finalize`.
+
+**Note:** The discussion of delegates is deferred until [Delegates and Events](../dotnet/delegates-and-events.md) in order to present them with event members within a class, the general topic of [Member Declarations within a Class or Interface (C++/CLI)](../dotnet/member-declarations-within-a-class-or-interface-cpp-cli.md).
+
+## See Also
+
+[C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md)<br/>
+[Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md)<br/>
+[Arrays](../windows/arrays-cpp-component-extensions.md)

@@ -13,20 +13,23 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # lock
-Defines the `lock` class that automates synchronization of access to an object.  
-  
-## Syntax  
-  
-```  
-#include <msclr\lock.h>  
-```  
-  
-## Remarks  
- In this header file:  
-  
- [lock Class](../dotnet/lock-class.md)  
-  
- [lock_when Enum](../dotnet/lock-when-enum.md)  
-  
-## See Also  
- [C++ Support Library](../dotnet/cpp-support-library.md)
+
+Defines the `lock` class that automates synchronization of access to an object.
+
+## Syntax
+
+```
+#include <msclr\lock.h>
+```
+
+## Remarks
+
+In this header file:
+
+[lock Class](../dotnet/lock-class.md)
+
+[lock_when Enum](../dotnet/lock-when-enum.md)
+
+## See Also
+
+[C++ Support Library](../dotnet/cpp-support-library.md)

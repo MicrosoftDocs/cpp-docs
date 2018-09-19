@@ -12,35 +12,37 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Convert Standard String to System::String
-This topic shows how convert a C++ Standard Library string ([\<string>](../standard-library/string.md)) to a <xref:System.String>.  
-  
-## Example  
-  
-```  
-// convert_standard_string_to_system_string.cpp  
-// compile with: /clr  
-#include <string>  
-#include <iostream>  
-using namespace System;  
-using namespace std;  
-  
-int main() {  
-   string str = "test";  
-   cout << str << endl;  
-   String^ str2 = gcnew String(str.c_str());  
-   Console::WriteLine(str2);  
-  
-   // alternatively  
-   String^ str3 = gcnew String(str.c_str());  
-   Console::WriteLine(str3);  
-}  
-```  
-  
-```Output  
-test  
-test  
-test  
-```  
-  
-## See Also  
- [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+
+This topic shows how convert a C++ Standard Library string ([\<string>](../standard-library/string.md)) to a <xref:System.String>.
+
+## Example
+
+```
+// convert_standard_string_to_system_string.cpp
+// compile with: /clr
+#include <string>
+#include <iostream>
+using namespace System;
+using namespace std;
+
+int main() {
+   string str = "test";
+   cout << str << endl;
+   String^ str2 = gcnew String(str.c_str());
+   Console::WriteLine(str2);
+
+   // alternatively
+   String^ str3 = gcnew String(str.c_str());
+   Console::WriteLine(str3);
+}
+```
+
+```Output
+test
+test
+test
+```
+
+## See Also
+
+[Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
