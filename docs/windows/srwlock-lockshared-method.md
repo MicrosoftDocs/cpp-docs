@@ -28,7 +28,7 @@ static SyncLockShared LockShared(
 
 ### Parameters
 
-*lock*  
+*lock*<br/>
 Pointer to an **SRWLock** object.
 
 ## Return Value

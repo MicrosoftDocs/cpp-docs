@@ -26,7 +26,7 @@ type
 
 ### Parameters
 
-*type*  
+*type*<br/>
 The switch type, can be an integer, character, Boolean, or enumeration type.
 
 ## Remarks

@@ -48,28 +48,28 @@ return-type identifier<type-parameter identifier(s)>
 
 ### Parameters
 
-*attributes*  
+*attributes*<br/>
 (Optional) Additional declarative information. For more information on attributes and attribute classes, see attributes.
 
-*modifiers*  
+*modifiers*<br/>
 (Optional) A modifier for the function, such as static.  **virtual** is not allowed since virtual methods may not be generic.
 
-*return-type*  
+*return-type*<br/>
 The type returned by the method. If the return type is void, no return value is required.
 
-*identifier*  
+*identifier*<br/>
 The function name.
 
-*type-parameter identifier(s)*  
+*type-parameter identifier(s)*<br/>
 Comma-separated identifiers list.
 
-*formal-parameters*  
+*formal-parameters*<br/>
 (Optional) Parameter list.
 
-*type-parameter-constraints-clauses*  
+*type-parameter-constraints-clauses*<br/>
 This specifies restrictions on the types that may be used as type arguments, and takes the form specified in [Constraints on Generic Type Parameters (C++/CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md).
 
-*function-body*  
+*function-body*<br/>
 The body of the method, which may refer to the type parameter identifiers.
 
 ### Remarks

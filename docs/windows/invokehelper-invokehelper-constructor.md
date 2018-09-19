@@ -26,7 +26,7 @@ explicit InvokeHelper(
 
 ### Parameters
 
-*callback*  
+*callback*<br/>
 An event handler.
 
 ## Remarks

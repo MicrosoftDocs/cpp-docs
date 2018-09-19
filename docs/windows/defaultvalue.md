@@ -24,7 +24,7 @@ Allows specification of a default value for a typed optional parameter.
 
 ### Parameters
 
-*value*  
+*value*<br/>
 The default value for the parameter.
 
 ## Remarks

@@ -26,7 +26,7 @@ Specifies the required component categories of the target class.
 
 ### Parameters
 
-*requires_category*  
+*requires_category*<br/>
 The ID of the required category.
 
 ## Remarks

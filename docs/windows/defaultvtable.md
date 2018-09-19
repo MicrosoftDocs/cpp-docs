@@ -26,7 +26,7 @@ Defines an interface as the default vtable interface for a COM object.
 
 ### Parameters
 
-*interface*  
+*interface*<br/>
 The designated interface that you want to have the default vtable for the COM object.
 
 ## Remarks

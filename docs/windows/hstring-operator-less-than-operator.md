@@ -25,10 +25,10 @@ inline bool operator<(
 
 ### Parameters
 
-*lhs*  
+*lhs*<br/>
 The first parameter to compare. *lhs* can be a reference to an **HString**.
 
-*rhs*  
+*rhs*<br/>
 The second parameter to compare. *rhs* can be a reference to an **HString**.
 
 ## Return Value

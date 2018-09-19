@@ -26,7 +26,7 @@ Specifies the default pointer attribute for all pointers, except top-level point
 
 ### Parameters
 
-*value*  
+*value*<br/>
 A value that describes the pointer type: **ptr**, **ref**, or **unique**.
 
 ## Remarks

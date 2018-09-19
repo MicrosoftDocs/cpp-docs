@@ -26,7 +26,7 @@ Instructs the compiler to associate a presented type that client and server appl
 
 ### Parameters
 
-*type*  
+*type*<br/>
 Specifies the data type that is transmitted between client and server.
 
 ## Remarks

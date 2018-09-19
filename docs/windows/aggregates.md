@@ -27,10 +27,10 @@ Indicates that the object aggregates the object specified by the CLSID.
 
 ### Parameters
 
-*clsid*  
+*clsid*<br/>
 Specifies the CLSID of the aggregatable object.
 
-*variable_name*  
+*variable_name*<br/>
 The name of the variable that is to be inserted. This variable contains the `IUnknown` of the object being aggregated.
 
 ## Remarks

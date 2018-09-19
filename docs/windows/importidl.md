@@ -26,7 +26,7 @@ Inserts the specified .idl file into the generated .idl file.
 
 ### Parameters
 
-*idl_file*  
+*idl_file*<br/>
 Identifies the name of the .idl file that you want to merge with the .idl file that will be generated for your application.
 
 ## Remarks

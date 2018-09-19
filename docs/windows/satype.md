@@ -26,7 +26,7 @@ Specifies the data type of the `SAFEARRAY` structure.
 
 ### Parameters
 
-*data_type*  
+*data_type*<br/>
 The data type for the `SAFEARRAY` data structure that is being passed as a parameter to an interface method.
 
 ## Requirements

@@ -26,7 +26,7 @@ Causes an .idl or .h file to be included in the generated .idl file.
 
 ### Parameters
 
-*name.idl*  
+*name.idl*<br/>
 The name of the .idl file that you want included as part of the generated .idl file.
 
 ## Remarks

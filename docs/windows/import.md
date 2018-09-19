@@ -26,7 +26,7 @@ Specifies another .idl, .odl, or header file containing definitions you want to 
 
 ### Parameters
 
-*idl_file*  
+*idl_file*<br/>
 The name of an .idl file that you want imported into the type library of the current project.
 
 ## Remarks

@@ -24,7 +24,7 @@ Specifies whether all subsequent IDL attributes are processed and placed in the 
 
 ### Parameters
 
-*state*  
+*state*<br/>
 One of these possible values: `true`, `false`, `forced`, `restricted`, `push`, or `pop`.
 
 - If `true`, any IDL category attributes encountered in a source code file are placed in the generated .idl file. This is the default setting for **emitidl**.

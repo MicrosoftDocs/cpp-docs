@@ -26,7 +26,7 @@ void SetUnknown(
 
 ### Parameters
 
-*unk*  
+*unk*<br/>
 A pointer to the `IUnknown` interface of an object.
 
 ## Remarks

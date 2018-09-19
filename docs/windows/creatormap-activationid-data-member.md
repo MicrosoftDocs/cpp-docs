@@ -27,10 +27,10 @@ union {
 
 ### Parameters
 
-*clsid*  
+*clsid*<br/>
 An interface ID.
 
-*getRuntimeName*  
+*getRuntimeName*<br/>
 A function that retrieves the Windows runtime name of an object.
 
 ## Remarks

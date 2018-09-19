@@ -27,10 +27,10 @@ Specifies a range of allowable values for arguments or fields whose values are s
 
 ### Parameters
 
-*low*  
+*low*<br/>
 The low range value.
 
-*high*  
+*high*<br/>
 The high range value.
 
 ## Remarks

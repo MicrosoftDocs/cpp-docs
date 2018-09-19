@@ -26,7 +26,7 @@ Specifies the name of the DLL to use to perform document string lookup (localiza
 
 ### Parameters
 
-*string*  
+*string*<br/>
 The DLL to use to perform document string lookup.
 
 ## Remarks

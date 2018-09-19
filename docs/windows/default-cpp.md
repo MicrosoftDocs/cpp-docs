@@ -27,7 +27,7 @@ Indicates that the custom or dispinterface defined within a coclass represents t
 
 ### Parameters
 
-*interface1*  
+*interface1*<br/>
 The default interface that will be made available to scripting environments that create an object based on the class defined with the **default** attribute.
 
 If no default interface is specified, the first occurrence of a nonsource interface is used as the default.

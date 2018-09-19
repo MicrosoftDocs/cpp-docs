@@ -27,10 +27,10 @@ Defines metadata for an object in the type library.
 
 ### Parameters
 
-*uuid*  
+*uuid*<br/>
 A unique ID.
 
-*value*  
+*value*<br/>
 A value that can be put into a variant.
 
 ## Remarks

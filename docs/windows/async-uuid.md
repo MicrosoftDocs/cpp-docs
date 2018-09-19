@@ -26,7 +26,7 @@ Specifies the UUID that directs the MIDL compiler to define both synchronous and
 
 ### Parameters
 
-*uuid*  
+*uuid*<br/>
 A UUID that identifies the version of the interface.
 
 ## Remarks

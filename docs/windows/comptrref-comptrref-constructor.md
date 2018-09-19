@@ -26,7 +26,7 @@ ComPtrRef(
 
 ### Parameters
 
-*ptr*  
+*ptr*<br/>
 The underlying value of another **ComPtrRef** object.
 
 ## Remarks

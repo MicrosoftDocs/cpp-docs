@@ -26,7 +26,7 @@ Identifies a particular version among multiple versions of a class.
 
 ### Parameters
 
-*version*  
+*version*<br/>
 The version number of the `coclass`. If not specified, 1.0 will be placed in the .idl file.
 
 ## Remarks

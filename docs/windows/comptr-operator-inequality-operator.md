@@ -36,10 +36,10 @@ bool operator!=(
 
 ### Parameters
 
-*a*  
+*a*<br/>
 A reference to a **ComPtr** object.
 
-*b*  
+*b*<br/>
 A reference to another **ComPtr** object.
 
 ## Return Value

@@ -31,13 +31,13 @@ HRESULT Set(
 
 ### Parameters
 
-*str*  
+*str*<br/>
 A wide-character string.
 
-*len*  
+*len*<br/>
 The maximum length of the *str* parameter that is assigned to the current **HString** object.
 
-*hstr*  
+*hstr*<br/>
 An existing **HString** object.
 
 ## Requirements

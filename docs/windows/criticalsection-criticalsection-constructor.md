@@ -26,7 +26,7 @@ explicit CriticalSection(
 
 ### Parameters
 
-*spincount*  
+*spincount*<br/>
 The spin count for the critical section object. The default value is 0.
 
 ## Remarks

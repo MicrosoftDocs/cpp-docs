@@ -26,7 +26,7 @@ Specifies the component categories implemented by the target class.
 
 ### Parameters
 
-*implements_category*  
+*implements_category*<br/>
 The ID of the implemented category.
 
 ## Remarks

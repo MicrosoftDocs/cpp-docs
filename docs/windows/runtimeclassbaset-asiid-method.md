@@ -29,16 +29,16 @@ __forceinline static HRESULT AsIID(
 
 ### Parameters
 
-*T*  
+*T*<br/>
 A type that implements the interface ID specified by parameter *riid*.
 
-*implements*  
+*implements*<br/>
 A variable of the type specified by template parameter *T*.
 
-*riid*  
+*riid*<br/>
 The interface ID to retrieve.
 
-*ppvObject*  
+*ppvObject*<br/>
 If this operation is successful, a pointer-to-a-pointer to the interface specified by parameter *riid*.
 
 ## Return Value

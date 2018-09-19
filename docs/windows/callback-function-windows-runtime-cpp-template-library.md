@@ -190,49 +190,49 @@ ComPtr<TDelegateInterface> Callback(
 
 ### Parameters
 
-*TDelegateInterface*  
+*TDelegateInterface*<br/>
 A template parameter that specifies the interface of the delegate to call when an event occurs.
 
-*TCallback*  
+*TCallback*<br/>
 A template parameter that specifies the type of an object that represents an object and its callback member function.
 
-*TCallbackObject*  
+*TCallbackObject*<br/>
 A template parameter that specifies the object whose member function is the method to call when an event occurs.
 
-*TArg1*  
+*TArg1*<br/>
 A template parameter that specifies the type of the first callback method argument.
 
-*TArg2*  
+*TArg2*<br/>
 A template parameter that specifies the type of the second callback method argument.
 
-*TArg3*  
+*TArg3*<br/>
 A template parameter that specifies the type of the third callback method argument.
 
-*TArg4*  
+*TArg4*<br/>
 A template parameter that specifies the type of the fourth callback method argument.
 
-*TArg5*  
+*TArg5*<br/>
 A template parameter that specifies the type of the fifth callback method argument.
 
-*TArg6*  
+*TArg6*<br/>
 A template parameter that specifies the type of the sixth callback method argument.
 
-*TArg7*  
+*TArg7*<br/>
 A template parameter that specifies the type of the seventh callback method argument.
 
-*TArg8*  
+*TArg8*<br/>
 A template parameter that specifies the type of the eigth callback method argument.
 
-*TArg9*  
+*TArg9*<br/>
 A template parameter that specifies the type of the ninth callback method argument.
 
-*callback*  
+*callback*<br/>
 An object that represents the callback object and its member function.
 
-*object*  
+*object*<br/>
 The object whose member function is called when an event occurs.
 
-*method*  
+*method*<br/>
 The member function to call when an event occurs.
 
 ## Return Value

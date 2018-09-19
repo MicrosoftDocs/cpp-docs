@@ -31,7 +31,7 @@ Creates an OLE DB command.
 
 ### Parameters
 
-*command*  
+*command*<br/>
 A command string containing the text of an OLE DB command. A simple example is:
 
 ```cpp
@@ -57,15 +57,15 @@ where:
 
 - **\[** *bindtype* **]** is one of the following case-insensitive strings:
 
-  -   **\[db_column]** binds each of the member variables to a column in a rowset.
+  - **\[db_column]** binds each of the member variables to a column in a rowset.
 
-  -   **\[bindto]** (same as **\[db_column]**).
+  - **\[bindto]** (same as **\[db_column]**).
 
-  -   **\[in]** binds member variables as input parameters.
+  - **\[in]** binds member variables as input parameters.
 
-  -   **\[out]** binds member variables as output parameters.
+  - **\[out]** binds member variables as output parameters.
 
-  -   **\[in,out]** binds member variables as input/output parameters.
+  - **\[in,out]** binds member variables as input/output parameters.
 
 - *szVarX*, *nVarX* resolves to a member variable within the current scope.
 
@@ -92,25 +92,25 @@ TCHAR m_state[3] = 'CA';
 ]
 ```
 
-*name*  
+*name*<br/>
 (Optional) The name of the handle you use to work with the rowset. If you specify *name*, **db_command** generates a class with the specified *name*, which can be used to traverse the rowset or to execute multiple action queries. If you do not specify *name*, it will not be possible to return more than one row of results to the user.
 
-*source_name*  
+*source_name*<br/>
 (Optional) The `CSession` variable or instance of a class that has the `db_source` attribute applied to it on which the command executes. See [db_source](../windows/db-source.md).
 
 **db_command** checks to ensure that the variable used for *source_name* is valid, so the specified variable should be in function or global scope.
 
-*hresult*  
+*hresult*<br/>
 (Optional) Identifies the variable that will receive the HRESULT of this database command. If the variable does not exist, it will be automatically injected by the attribute.
 
-*bindings*  
+*bindings*<br/>
 (Optional) Allows you to separate the binding parameters from the OLE DB command.
 
 If you specify a value for *bindings*, **db_command** will parse the associated value and will not parse the \[*bindtype*] parameter. This usage allows you to use OLE DB provider syntax. To disable parsing, without binding parameters, specify `Bindings=""`.
 
 If you do not specify a value for *bindings*, **db_command** will parse the binding parameter block, looking for '**(**', followed by **\[**_bindtype_**]** in brackets, followed by one or more previously declared C++ member variables, followed by '**)**'. All text between the parentheses will be stripped from the resulting command, and these parameters will be used to construct column and parameter bindings for this command.
 
-*bulk_fetch*  
+*bulk_fetch*<br/>
 (Optional) An integer value that specifies the number of rows to fetch.
 
 The default value is 1, which specifies single row fetching (the rowset will be of type [CRowset](../data/oledb/crowset-class.md)).

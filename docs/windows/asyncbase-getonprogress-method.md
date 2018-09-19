@@ -26,7 +26,7 @@ STDMETHOD(
 
 ### Parameters
 
-*progressHandler*  
+*progressHandler*<br/>
 The location where the address of the current progress event handler is stored.
 
 ## Return Value

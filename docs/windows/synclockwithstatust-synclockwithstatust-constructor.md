@@ -31,13 +31,13 @@ explicit SyncLockWithStatusT(
 
 ### Parameters
 
-*other*  
+*other*<br/>
 An rvalue-reference to another **SyncLockWithStatusT** object.
 
-*sync*  
+*sync*<br/>
 A reference to another **SyncLockWithStatusT** object.
 
-*status*  
+*status*<br/>
 The value of the [status_](../windows/synclockwithstatust-status-data-member.md) data member of the *other* parameter or the *sync* parameter.
 
 ## Remarks

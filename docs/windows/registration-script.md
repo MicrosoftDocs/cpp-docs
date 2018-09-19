@@ -26,7 +26,7 @@ Executes the specified custom registration script.
 
 ### Parameters
 
-*script*  
+*script*<br/>
 The full path to a custom registration script (.rgs) file. A value of **none**, such as `script = "none"`, indicates that the coclass has no registration requirements.
 
 ## Remarks

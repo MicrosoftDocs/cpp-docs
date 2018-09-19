@@ -11,12 +11,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # WRL Reference
+
 This section contains reference information for the Windows Runtime C++ Template Library (WRL).
   
 > [!NOTE]
 > The Windows Runtime C++ Template Library defines functionality that supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code. Such functionality is noted in this documentation.
   
 ## In This Section
+
 [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)<br/>
 Defines the fundamental types that make up the Windows Runtime C++ Template Library.
   
@@ -30,5 +32,6 @@ Describes characteristics of common handle-based resource types.
 Enables fundamental Windows Runtime functionality, such as object and factory creation.
   
 ## Related Sections
+
 [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)<br/>
 Introduces Windows Runtime C++ Template Library, a COM-based template library that provides a low-level way to author and use Windows Runtime components.

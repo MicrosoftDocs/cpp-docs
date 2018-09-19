@@ -16,7 +16,7 @@ ms.workload: ["cplusplus", "uwp"]
 Microsoft defines a set of attributes that simplify COM programming and .NET Framework common language runtime development. When you include attributes in your source files, the compiler works with provider DLLs to insert code or modify the code in the generated object files.
 
 > [!NOTE] 
- > If you are looking for C++ standard attributes, see [Attributes](../cpp/attributes.md).
+> If you are looking for C++ standard attributes, see [Attributes](../cpp/attributes.md).
 
 ## In This Section
 

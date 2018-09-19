@@ -31,10 +31,10 @@ static SyncLock Lock(
 
 ### Parameters
 
-*milliseconds*  
+*milliseconds*<br/>
 The time-out interval, in milliseconds. The default value is INFINITE, which waits indefinitely.
 
-*h*  
+*h*<br/>
 The handle of a **Mutex** object.
 
 ## Return Value
@@ -46,4 +46,5 @@ The handle of a **Mutex** object.
 **Namespace:** Microsoft::WRL::Wrappers
 
 ## See Also
+
 [Mutex Class](../windows/mutex-class1.md)

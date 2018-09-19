@@ -27,10 +27,10 @@ inline typename RemoveReference<T>::Type&& Move(
 
 ### Parameters
 
-*T*  
+*T*<br/>
 The type of the argument.
 
-*arg*  
+*arg*<br/>
 An argument to move.
 
 ## Return Value

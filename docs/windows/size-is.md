@@ -26,7 +26,7 @@ Specify the size of memory allocated for sized pointers, sized pointers to sized
 
 ### Parameters
 
-*expression*  
+*expression*<br/>
 The size of memory allocated for sized pointers.
 
 ## Remarks

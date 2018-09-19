@@ -26,7 +26,7 @@ void Attach(
 
 #### Parameters
 
-*h*  
+*h*<br/>
 A handle.
 
 ## Requirements

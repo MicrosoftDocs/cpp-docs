@@ -26,7 +26,7 @@ Enables a [local](../windows/local-cpp.md) function to be mapped to a remote fun
 
 ### Parameters
 
-*function*  
+*function*<br/>
 The local function that you want to be called when a remote function is invoked.
 
 ## Remarks

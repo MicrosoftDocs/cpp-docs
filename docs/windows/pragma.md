@@ -26,7 +26,7 @@ Emits the specified string into the generated .idl file without the use of quota
 
 ### Parameters
 
-*pragma_statement*  
+*pragma_statement*<br/>
 The pragma that you want to go into the generated .idl file.
 
 ## Remarks

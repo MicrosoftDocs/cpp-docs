@@ -23,7 +23,7 @@ HString& operator=(HString&& other) throw()
 
 ### Parameters
 
-*other*  
+*other*<br/>
 An existing **HString** object.
 
 ## Remarks

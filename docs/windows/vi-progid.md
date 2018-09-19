@@ -26,7 +26,7 @@ Specifies a version-independent form of the ProgID.
 
 ### Parameters
 
-*name*  
+*name*<br/>
 The version-independent ProgID representing the object.
 
 ProgIDs present a human-readable version of the class identifier (CLSID) used to identify COM/ActiveX objects.

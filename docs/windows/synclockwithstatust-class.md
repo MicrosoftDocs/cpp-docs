@@ -27,7 +27,7 @@ class SyncLockWithStatusT : public SyncLockT<SyncTraits>;
 
 ### Parameters
 
-*SyncTraits*  
+*SyncTraits*<br/>
 A type that can take exclusive or shared ownership of a resource.
 
 ## Remarks

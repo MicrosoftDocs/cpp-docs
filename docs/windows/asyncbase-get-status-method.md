@@ -26,7 +26,7 @@ STDMETHOD(
 
 ### Parameters
 
-*status*  
+*status*<br/>
 The location where the status is to be stored. For more information, see `Windows::Foundation::AsyncStatus` enumeration.
 
 ## Return Value

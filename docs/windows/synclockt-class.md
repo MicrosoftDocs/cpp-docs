@@ -27,7 +27,7 @@ class SyncLockT;
 
 ### Parameters
 
-*SyncTraits*  
+*SyncTraits*<br/>
 The type that can take ownership of a resource.
 
 ## Remarks

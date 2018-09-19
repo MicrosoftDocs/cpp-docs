@@ -28,13 +28,13 @@ Creates a registry key or modifies an existing registry key.
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The name of the key to be created or opened.
 
-*valuename*  
+*valuename*<br/>
 (Optional) Specifies the value field to be set. If a value field with this name does not already exist in the key, it is added.
 
-*regtype*  
+*regtype*<br/>
 The type of registry key being added. Can be one of the following: `text`, `dword`, `binary`, or `CString`.
 
 ## Remarks

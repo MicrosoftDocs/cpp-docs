@@ -26,7 +26,7 @@ Sets the name of the Help file for a type library.
 
 ### Parameters
 
-*filename*  
+*filename*<br/>
 The name of the file that contains the help topics.
 
 ## Remarks

@@ -26,7 +26,7 @@ Emits the specified string, without the quote characters, into the generated .id
 
 ### Parameters
 
-*statement*  
+*statement*<br/>
 A C instruction.
 
 ## Remarks

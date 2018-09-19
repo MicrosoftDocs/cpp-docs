@@ -26,7 +26,7 @@ Specifies that a member of a module, interface, or dispinterface cannot be calle
 
 ### Parameters
 
-*interfaces*  
+*interfaces*<br/>
 One or more interfaces that may not be called arbitrarily on a COM object. This parameter is only valid when applied to a class.
 
 ## Remarks

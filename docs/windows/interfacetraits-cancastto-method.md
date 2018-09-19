@@ -29,13 +29,13 @@ static __forceinline bool CanCastTo(
 
 ### Parameters
 
-*ptr*  
+*ptr*<br/>
 The name of a pointer to a type.
 
-*riid*  
+*riid*<br/>
 The interface ID of `Base`.
 
-*ppv*  
+*ppv*<br/>
 If this operation is successful, *ppv* points to the interface specified by `Base`. Otherwise, *ppv* is set to **nullptr**.
 
 ## Return Value

@@ -53,31 +53,31 @@ STDMETHOD(
 
 ### Parameters
 
-*arg1*  
+*arg1*<br/>
 Argument 1.
 
-*arg2*  
+*arg2*<br/>
 Argument 2.
 
-*arg3*  
+*arg3*<br/>
 Argument 3.
 
-*arg4*  
+*arg4*<br/>
 Argument 4.
 
-*arg5*  
+*arg5*<br/>
 Argument 5.
 
-*arg6*  
+*arg6*<br/>
 Argument 6.
 
-*arg7*  
+*arg7*<br/>
 Argument 7.
 
-*arg8*  
+*arg8*<br/>
 Argument 8.
 
-*arg9*  
+*arg9*<br/>
 Argument 9.
 
 ## Return Value

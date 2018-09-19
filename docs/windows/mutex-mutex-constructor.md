@@ -30,7 +30,7 @@ Mutex(
 
 ### Parameters
 
-*h*  
+*h*<br/>
 A handle, or an rvalue-reference to a handle, to a **Mutex** object.
 
 ## Remarks
@@ -44,4 +44,5 @@ The first constructor initializes a **Mutex** object from the specified handle. 
 **Namespace:** Microsoft::WRL::Wrappers
 
 ## See Also
+
 [Mutex Class](../windows/mutex-class1.md)

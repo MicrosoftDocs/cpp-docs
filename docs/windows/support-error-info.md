@@ -26,7 +26,7 @@ Implements support for returning detailed errors.
 
 ### Parameters
 
-*error_interface*  
+*error_interface*<br/>
 The identifier of the interface implementing `IErrorInfo`.
 
 ## Remarks

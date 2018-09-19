@@ -26,7 +26,7 @@ Specifies one or more header files to be included in the generated .idl file.
 
 ### Parameters
 
-*header_file*  
+*header_file*<br/>
 The name of a file that you want included in the generated .idl file.
 
 ## Remarks

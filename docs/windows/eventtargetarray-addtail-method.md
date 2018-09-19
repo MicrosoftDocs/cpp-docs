@@ -26,7 +26,7 @@ void AddTail(
 
 ### Parameters
 
-*element*  
+*element*<br/>
 Pointer to the event handler to append.
 
 ## Remarks

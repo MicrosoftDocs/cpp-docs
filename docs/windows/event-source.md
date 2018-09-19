@@ -28,7 +28,7 @@ Creates an event source.
 
 ### Parameters
 
-*type*  
+*type*<br/>
 An enumeration of one of the following values:
 
 - `native` for unmanaged C/C++ code (default for unmanaged classes).
@@ -41,10 +41,10 @@ An enumeration of one of the following values:
     #include <atlcom.h>
     ```
 
-*optimize*  
+*optimize*<br/>
 When *type* is `native`, you can specify `optimize=size`, to indicate that there is 4 bytes of storage (minimum) for all events in a class or `optimize=speed` (the default) to indicate that there is 4 * (# of events) bytes of storage.
 
-*decorate*  
+*decorate*<br/>
 When *type* is `native`, you can specify `decorate=false`, to indicate that the expanded name in the merged (.mrg) file should not include the enclosing class name. [/Fx](../build/reference/fx-merge-injected-code.md) lets you generate .mrg files. `decorate=false`, which is the default, results in fully-qualified type names in the merged file.
 
 ## Remarks

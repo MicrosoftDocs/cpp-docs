@@ -46,7 +46,7 @@ __interface IFireTabCtrl {
       double dMcCovey;
    [default]
       int x;
- };
+};
 
 [public] typedef _WILLIE_UNION_TYPE WILLIE_UNION_TYPE;
 

@@ -26,7 +26,7 @@ Makes types that have already been compiled into another type library available 
 
 ### Parameters
 
-*tlb_file*  
+*tlb_file*<br/>
 The name of a .tlb file, in quotes, that you want imported into the type library of the current project.
 
 ## Remarks

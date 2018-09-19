@@ -26,7 +26,7 @@ Specifies the ID of a help topic in an .hlp or .chm file.
 
 ### Parameters
 
-*contextID*  
+*contextID*<br/>
 A 32-bit Help context identifier in the **Help** file.
 
 ## Remarks

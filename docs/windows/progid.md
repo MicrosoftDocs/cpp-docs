@@ -26,7 +26,7 @@ Specifies the ProgID for a COM object.
 
 ### Parameters
 
-*name*  
+*name*<br/>
 The ProgID representing the object.
 
 ProgIDs present a human-readable version of the class identifier (CLSID) used to identify COM/ActiveX objects.

@@ -26,7 +26,7 @@ STDMETHOD(
 
 ### Parameters
 
-*errorCode*  
+*errorCode*<br/>
 The location where the current error code is stored.
 
 ## Return Value

@@ -32,13 +32,13 @@ HRESULT CanCastTo(
 
 ### Parameters
 
-*riid*  
+*riid*<br/>
 Reference to an interface ID.
 
-*ppv*  
+*ppv*<br/>
 If this operation is successful, a pointer to the interface specified by *riid* or *iid*.
 
-*iid*  
+*iid*<br/>
 Reference to an interface ID.
 
 ## Return Value

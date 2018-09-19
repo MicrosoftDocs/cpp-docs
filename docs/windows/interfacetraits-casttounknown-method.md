@@ -27,10 +27,10 @@ static __forceinline IUnknown* CastToUnknown(
 
 ### Parameters
 
-*T*  
+*T*<br/>
 The type of parameter *ptr*.
 
-*ptr*  
+*ptr*<br/>
 Pointer to type *T*.
 
 ## Return Value

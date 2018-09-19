@@ -26,7 +26,7 @@ On a class, specifies the COM object's source interfaces for connection points. 
 
 ### Parameters
 
-*interfaces*  
+*interfaces*<br/>
 One or more interfaces that you specify when you apply the source attribute to a class. This parameter is not used when source is applied to a property or method.
 
 ## Remarks

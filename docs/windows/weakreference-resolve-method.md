@@ -27,10 +27,10 @@ STDMETHOD(Resolve)
 
 ### Parameters
 
-*riid*  
+*riid*<br/>
 An interface ID.
 
-*ppvObject*  
+*ppvObject*<br/>
 When this operation completes, a copy of the current strong reference if the strong reference count is nonzero.
 
 ## Return Value

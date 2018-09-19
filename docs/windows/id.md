@@ -26,7 +26,7 @@ Specifies a *dispid* parameter for a member function (either a property or a met
 
 ### Parameters
 
-*dispid*  
+*dispid*<br/>
 The dispatch ID for the interface method.
 
 ## Remarks

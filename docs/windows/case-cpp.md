@@ -26,7 +26,7 @@ Used with the [switch_type](../windows/switch-type.md) attribute in a **union**.
 
 #### Parameters
 
-*value*  
+*value*<br/>
 A possible input value for which you want to provide processing. The type of **value** can be one of the following types:
 
 - `int`

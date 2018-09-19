@@ -26,7 +26,7 @@ inline void CurrentStatus(
 
 ### Parameters
 
-*status*  
+*status*<br/>
 The location where this operation stores the current status.
 
 ## Remarks
