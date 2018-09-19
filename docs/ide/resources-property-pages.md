@@ -13,11 +13,13 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Resources Property Pages
-For more information on using the resource compiler, see [Using RC (The RC Command Line)](/windows/desktop/menurc/using-rc-the-rc-command-line-).  
-  
- For information on how to access the **Resources** property pages, see [Working with Project Properties](../ide/working-with-project-properties.md).  
-  
- To programmatically access these properties, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCResourceCompilerTool>.  
-  
-## See Also  
- [Property Pages](../ide/property-pages-visual-cpp.md)
+
+For more information on using the resource compiler, see [Using RC (The RC Command Line)](/windows/desktop/menurc/using-rc-the-rc-command-line-).
+
+For information on how to access the **Resources** property pages, see [Working with Project Properties](../ide/working-with-project-properties.md).
+
+To programmatically access these properties, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCResourceCompilerTool>.
+
+## See Also
+
+[Property Pages](../ide/property-pages-visual-cpp.md)

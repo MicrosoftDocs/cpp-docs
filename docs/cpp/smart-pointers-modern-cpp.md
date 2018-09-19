@@ -80,38 +80,38 @@ Use these smart pointers as a first choice for encapsulating pointers to plain o
 
 When you work with COM objects, wrap the interface pointers in an appropriate smart pointer type. The Active Template Library (ATL) defines several smart pointers for various purposes. You can also use the `_com_ptr_t` smart pointer type, which the compiler uses when it creates wrapper classes from .tlb files. It's the best choice when you do not want to include the ATL header files.
 
-[CComPtr Class](../atl/reference/ccomptr-class.md)
+[CComPtr Class](../atl/reference/ccomptr-class.md)<br/>
 Use this unless you cannot use ATL. Performs reference counting by using the `AddRef` and `Release` methods. For more information, see [How to: Create and Use CComPtr and CComQIPtr Instances](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md).
 
-[CComQIPtr Class](../atl/reference/ccomqiptr-class.md)
+[CComQIPtr Class](../atl/reference/ccomqiptr-class.md)<br/>
 Resembles `CComPtr` but also provides simplified syntax for calling `QueryInterface` on COM objects. For more information, see [How to: Create and Use CComPtr and CComQIPtr Instances](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md).
 
-[CComHeapPtr Class](../atl/reference/ccomheapptr-class.md)
+[CComHeapPtr Class](../atl/reference/ccomheapptr-class.md)<br/>
 Smart pointer to objects that use `CoTaskMemFree` to free memory.
 
-[CComGITPtr Class](../atl/reference/ccomgitptr-class.md)
+[CComGITPtr Class](../atl/reference/ccomgitptr-class.md)<br/>
 Smart pointer for interfaces that are obtained from the global interface table (GIT).
 
-[_com_ptr_t Class](../cpp/com-ptr-t-class.md)
+[_com_ptr_t Class](../cpp/com-ptr-t-class.md)<br/>
 Resembles `CComQIPtr` in functionality but does not depend on ATL headers.
 
 ### ATL Smart Pointers for POCO Objects
 
 In addition to smart pointers for COM objects, ATL also defines smart pointers, and collections of smart pointers, for plain old C++ objects. In classic Windows programming, these types are useful alternatives to the C++ Standard Library collections, especially when code portability is not required or when you do not want to mix the programming models of the C++ Standard Library and ATL.
 
-[CAutoPtr Class](../atl/reference/cautoptr-class.md)
+[CAutoPtr Class](../atl/reference/cautoptr-class.md)<br/>
 Smart pointer that enforces unique ownership by transferring ownership on copy. Comparable to the deprecated `std::auto_ptr` Class.
 
-[CHeapPtr Class](../atl/reference/cheapptr-class.md)
+[CHeapPtr Class](../atl/reference/cheapptr-class.md)<br/>
 Smart pointer for objects that are allocated by using the C [malloc](../c-runtime-library/reference/malloc.md) function.
 
-[CAutoVectorPtr Class](../atl/reference/cautovectorptr-class.md)
+[CAutoVectorPtr Class](../atl/reference/cautovectorptr-class.md)<br/>
 Smart pointer for arrays that are allocated by using `new[]`.
 
-[CAutoPtrArray Class](../atl/reference/cautoptrarray-class.md)
+[CAutoPtrArray Class](../atl/reference/cautoptrarray-class.md)<br/>
 Class that encapsulates an array of `CAutoPtr` elements.
 
-[CAutoPtrList Class](../atl/reference/cautoptrlist-class.md)
+[CAutoPtrList Class](../atl/reference/cautoptrlist-class.md)<br/>
 Class that encapsulates methods for manipulating a list of `CAutoPtr` nodes.
 
 ## See also

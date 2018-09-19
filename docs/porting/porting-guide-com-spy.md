@@ -11,6 +11,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Porting Guide: COM Spy
+
 This topic is the second in a series of articles that demonstrates the process of upgrading older Visual C++ projects to the latest version of Visual Studio. The example code in this topic was last compiled with Visual Studio 2005.  
   
 ## COMSpy  
@@ -166,6 +167,6 @@ This ran without problems, and with COM Spy up and running and configured to mon
   
 ## See Also  
 
-[Porting and Upgrading: Examples and Case Studies](../porting/porting-and-upgrading-examples-and-case-studies.md)   
-[Next Example: Spy++](../porting/porting-guide-spy-increment.md)   
+[Porting and Upgrading: Examples and Case Studies](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
+[Next Example: Spy++](../porting/porting-guide-spy-increment.md)<br/>
 [Previous Example: MFC Scribble](../porting/porting-guide-mfc-scribble.md)

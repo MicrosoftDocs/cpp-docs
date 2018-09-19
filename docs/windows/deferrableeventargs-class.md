@@ -28,10 +28,10 @@ class DeferrableEventArgs : public TEventArgsInterface
 
 ### Parameters
 
-*TEventArgsInterface*  
+*TEventArgsInterface*<br/>
 The interface type that declares the arguments for a deferred event.
 
-*TEventArgsClass*  
+*TEventArgsClass*<br/>
 The class that implements *TEventArgsInterface*.
 
 ## Members
@@ -65,7 +65,7 @@ HRESULT GetDeferral([out, retval] Windows::Foundation::IDeferral** result)
 
 ### Parameters
 
-*result*  
+*result*<br/>
 A pointer that will reference the [Deferral](http://go.microsoft.com/fwlink/p/?linkid=526520) object when the call completes.
 
 ### Return Value

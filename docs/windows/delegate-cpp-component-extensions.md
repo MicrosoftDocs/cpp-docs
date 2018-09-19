@@ -44,16 +44,16 @@ delegate-type-identifier
 
 ### Parameters
 
-*access*  
+*access*<br/>
 (optional) The accessibility of the delegate, which can be **public** (the default) or **private**. The function prototype can also be qualified with the **const** or **volatile** keywords.
 
-*return-type*  
+*return-type*<br/>
 The return type of the function prototype.
 
-*delegate-type-identifier*  
+*delegate-type-identifier*<br/>
 The name of the declared delegate type.
 
-*parameters*  
+*parameters*<br/>
 (Optional) The types and identifiers of the function prototype.
 
 ### Remarks
@@ -78,10 +78,10 @@ function_declaration
 
 ### Parameters
 
-*access*  
+*access*<br/>
 (optional) The accessibility of the delegate outside of the assembly can be public or private.  The default is private.  Inside a class, a delegate can have any accessibility.
 
-*function_declaration*  
+*function_declaration*<br/>
 The signature of the function that can be bound to the delegate. The return type of a delegate can be any managed type. For interoperability reasons, it is recommended that the return type of a delegate be a CLS type.
 
 To define an unbound delegate, the first parameter in *function_declaration* should be the type of the **this** pointer for the object.

@@ -26,7 +26,7 @@ Instructs the compiler to associate a presented type that client and server appl
 
 ### Parameters
 
-*type*  
+*type*<br/>
 Specifies the data type that is transmitted between client and server.
 
 ## Remarks
@@ -80,6 +80,6 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
 [export](../windows/export.md)  

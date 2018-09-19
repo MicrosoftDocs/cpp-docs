@@ -37,5 +37,5 @@ Contains a value that identifies a registered Windows Runtime or COM class objec
 
 ## See Also
 
-[FactoryCache Structure](../windows/factorycache-structure.md)  
+[FactoryCache Structure](../windows/factorycache-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

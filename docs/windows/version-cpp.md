@@ -26,7 +26,7 @@ Identifies a particular version among multiple versions of a class.
 
 ### Parameters
 
-*version*  
+*version*<br/>
 The version number of the `coclass`. If not specified, 1.0 will be placed in the .idl file.
 
 ## Remarks
@@ -52,5 +52,5 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[Compiler Attributes](../windows/compiler-attributes.md)  
+[Compiler Attributes](../windows/compiler-attributes.md)<br/>
 [Class Attributes](../windows/class-attributes.md)  

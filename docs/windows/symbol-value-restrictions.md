@@ -55,6 +55,6 @@ Win32
 
 ## See Also
 
-[Changing a Symbol's Numeric Value](../windows/changing-a-symbol-s-numeric-value.md)  
-[Symbol Name Restrictions](../windows/symbol-name-restrictions.md)  
+[Changing a Symbol's Numeric Value](../windows/changing-a-symbol-s-numeric-value.md)<br/>
+[Symbol Name Restrictions](../windows/symbol-name-restrictions.md)<br/>
 [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)

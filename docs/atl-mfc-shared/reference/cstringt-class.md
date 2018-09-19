@@ -1659,7 +1659,7 @@ The `CStringT& TrimRight()` version requires no parameters. It trims any trailin
 
 ## See Also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)   
-[ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)   
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
+[ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)<br/>
 [CSimpleStringT Class](../../atl-mfc-shared/reference/csimplestringt-class.md)
 

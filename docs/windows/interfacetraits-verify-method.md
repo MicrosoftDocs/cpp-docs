@@ -36,5 +36,5 @@ For more information about `Base`, see the **Public Typedefs** section in [Inter
 
 ## See Also
 
-[InterfaceTraits Structure](../windows/interfacetraits-structure.md)  
+[InterfaceTraits Structure](../windows/interfacetraits-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

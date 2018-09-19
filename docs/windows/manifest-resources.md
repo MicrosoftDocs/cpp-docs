@@ -47,5 +47,5 @@ Win32
 
 ## See Also
 
-[Controls](../mfc/controls-mfc.md)  
+[Controls](../mfc/controls-mfc.md)<br/>
 [Working with Resource Files](../windows/working-with-resource-files.md)

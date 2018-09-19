@@ -26,7 +26,7 @@ friend struct Details::RuntimeClassBaseT;
 
 ### Parameters
 
-*RuntimeClassTypeT*  
+*RuntimeClassTypeT*<br/>
 A field of flags that specifies one or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumerators.
 
 ## Remarks

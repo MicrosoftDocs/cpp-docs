@@ -13,20 +13,23 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot
-Defines the `auto_gcroot` class and `swap` function.  
-  
-## Syntax  
-  
-```  
-#include <msclr\auto_gcroot.h>  
-```  
-  
-## Remarks  
- In this header file:  
-  
- [auto_gcroot Class](../dotnet/auto-gcroot-class.md)  
-  
- [swap Function (auto_gcroot)](../dotnet/swap-function-auto-gcroot.md)  
-  
-## See Also  
- [C++ Support Library](../dotnet/cpp-support-library.md)
+
+Defines the `auto_gcroot` class and `swap` function.
+
+## Syntax
+
+```
+#include <msclr\auto_gcroot.h>
+```
+
+## Remarks
+
+In this header file:
+
+[auto_gcroot Class](../dotnet/auto-gcroot-class.md)
+
+[swap Function (auto_gcroot)](../dotnet/swap-function-auto-gcroot.md)
+
+## See Also
+
+[C++ Support Library](../dotnet/cpp-support-library.md)

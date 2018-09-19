@@ -34,5 +34,5 @@ Initializes an instance of the `Module` class.
 
 ## See Also
 
-[ModuleBase Class](../windows/modulebase-class.md)  
+[ModuleBase Class](../windows/modulebase-class.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

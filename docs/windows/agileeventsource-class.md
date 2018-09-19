@@ -70,10 +70,10 @@ HRESULT Add(
 
 ### Parameters
 
-*delegateInterface*  
+*delegateInterface*<br/>
 The interface to a delegate object, which represents an event handler.
 
-*token*  
+*token*<br/>
 When this operation completes, a handle that represents the event. Use this token as the parameter to the `Remove()` method to discard the event handler.
 
 ### Return Value

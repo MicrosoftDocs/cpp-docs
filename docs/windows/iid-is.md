@@ -26,7 +26,7 @@ Specifies the IID of the COM interface pointed to by an interface pointer.
 
 ### Parameters
 
-*expression*  
+*expression*<br/>
 A C language expression that specifies an IID of a COM interface pointed to by an interface pointer.
 
 ## Remarks
@@ -67,5 +67,5 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
 [Parameter Attributes](../windows/parameter-attributes.md)  

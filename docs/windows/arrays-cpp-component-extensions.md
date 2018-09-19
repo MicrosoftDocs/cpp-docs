@@ -19,7 +19,7 @@ The `Platform::Array<T>` type in C++/CX, or the **array** keyword in C++/CLI, de
 ## All Platforms
 
 The array must be declared by using the handle-to-object (^) modifier after the closing angle bracket (>) in the declaration.
- The number of elements of the array is not part of the type. One array variable can refer to arrays of different sizes.
+The number of elements of the array is not part of the type. One array variable can refer to arrays of different sizes.
 
 Unlike standard C++, subscripting is not a synonym for pointer arithmetic and is not commutative.
 
@@ -48,16 +48,16 @@ The first example of the syntax uses the **ref new** aggregate keyword to alloca
 *qualifiers*<br/>
 (Optional) One or more of these storage class specifiers: [mutable](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [static](../cpp/static-members-cpp.md).
 
-*array-type*  
+*array-type*<br/>
 The type of the array variable. Valid types are Windows Runtime classes and fundamental types, ref classes and structs, value classes and structs, and native pointers (`type*`).
 
 *rank*<br/>
 (Optional) The number of dimensions of the array. Must be 1.
 
-*identifier*  
+*identifier*<br/>
 The name of the array variable.
 
-*initialization-type*  
+*initialization-type*<br/>
 The type of the values that initialize the array. Typically, *array-type* and *initialization-type* are the same type. However, the types can be different if there is a conversion from *initialization-type* to *array-type*—for example, if *initialization-type* is derived from *array-type*.
 
 *initialization-list*<br/>
@@ -104,19 +104,19 @@ The first example of the syntax uses the **gcnew** keyword to allocate an array.
 *qualifiers*<br/>
 (Optional) One or more of these storage class specifiers: [mutable](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [static](../cpp/static-members-cpp.md).
 
-*array-type*  
+*array-type*<br/>
 The type of the array variable. Valid types are Windows Runtime classes and fundamental types, ref classes and structs, value classes and structs, native pointers (`type*`), and native POD (plain old data) types.
 
 *rank*<br/>
 (Optional) The number of dimensions of the array. The default is 1; the maximum is 32. Each dimension of the array is itself an array.
 
-*identifier*  
+*identifier*<br/>
 The name of the array variable.
 
-*initialization-type*  
+*initialization-type*<br/>
 The type of the values that initialize the array. Typically, *array-type* and *initialization-type* are the same type. However, the types can be different if there is a conversion from *initialization-type* to *array-type*—for example, if *initialization-type* is derived from *array-type*.
 
-*rank-size-list*  
+*rank-size-list*<br/>
 A comma-delimited list of the size of each dimension in the array. Alternatively, if the *initialization-list* parameter is specified, the compiler can deduce the size of each dimension and *rank-size-list* can be omitted.
 
 *initialization-list*<br/>

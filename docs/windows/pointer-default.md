@@ -26,7 +26,7 @@ Specifies the default pointer attribute for all pointers, except top-level point
 
 ### Parameters
 
-*value*  
+*value*<br/>
 A value that describes the pointer type: **ptr**, **ref**, or **unique**.
 
 ## Remarks
@@ -52,5 +52,5 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
 [Interface Attributes](../windows/interface-attributes.md)  

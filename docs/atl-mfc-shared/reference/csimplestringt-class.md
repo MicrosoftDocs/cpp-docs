@@ -1133,5 +1133,5 @@ Call this method to destroy the `CSimpleStringT` object.
 
 ## See Also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)   
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

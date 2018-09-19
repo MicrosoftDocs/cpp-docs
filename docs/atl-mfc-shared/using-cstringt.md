@@ -17,10 +17,10 @@ The topics in this section describe programming using the template class [CStrin
 
 ## In This Section
 
-[Memory Management with CStringT](../atl-mfc-shared/memory-management-with-cstringt.md)  
+[Memory Management with CStringT](../atl-mfc-shared/memory-management-with-cstringt.md)<br/>
 Discusses memory management with `CStringT`, a template class used to manipulate variable-length character strings.
 
-[Exporting String Classes Using CStringT](../atl-mfc-shared/exporting-string-classes-using-cstringt.md)  
+[Exporting String Classes Using CStringT](../atl-mfc-shared/exporting-string-classes-using-cstringt.md)<br/>
 Explains how to export your own string class from a DLL using the CStringT<> template class.
 
 ## Reference

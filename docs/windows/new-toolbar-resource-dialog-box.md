@@ -34,6 +34,6 @@ MFC or ATL
 
 ## See Also
 
-[Toolbar Button Properties](../windows/toolbar-button-properties.md)  
-[Converting Bitmaps to Toolbars](../windows/converting-bitmaps-to-toolbars.md)  
+[Toolbar Button Properties](../windows/toolbar-button-properties.md)<br/>
+[Converting Bitmaps to Toolbars](../windows/converting-bitmaps-to-toolbars.md)<br/>
 [Toolbar Editor](../windows/toolbar-editor.md)

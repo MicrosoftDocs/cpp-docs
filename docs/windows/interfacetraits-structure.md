@@ -32,10 +32,10 @@ struct __declspec(novtable) InterfaceTraits<Nil>;
 
 ### Parameters
 
-*I0*  
+*I0*<br/>
 The name of an interface.
 
-*CloakedType*  
+*CloakedType*<br/>
 For `RuntimeClass`, `Implements` and `ChainInterfaces`, an interface that won't be in the list of supported interface IDs.
 
 ## Remarks

@@ -237,6 +237,6 @@ Locking and unlocking is used when the developer must ensure that the string dat
 
 ## See Also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)   
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
 

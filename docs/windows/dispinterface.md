@@ -56,10 +56,10 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Attributes by Usage](../windows/attributes-by-usage.md)  
-[uuid](../windows/uuid-cpp-attributes.md)  
-[dual](../windows/dual.md)  
-[custom](../windows/custom-cpp.md)  
-[object](../windows/object-cpp.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Attributes by Usage](../windows/attributes-by-usage.md)<br/>
+[uuid](../windows/uuid-cpp-attributes.md)<br/>
+[dual](../windows/dual.md)<br/>
+[custom](../windows/custom-cpp.md)<br/>
+[object](../windows/object-cpp.md)<br/>
 [__interface](../cpp/interface.md)  

@@ -31,7 +31,7 @@ class Module<OutOfProc> : public Module<InProc>;
 
 ### Parameters
 
-*moduleType*  
+*moduleType*<br/>
 A combination of one or more [ModuleType](../windows/moduletype-enumeration.md) enumeration values.
 
 ## Members

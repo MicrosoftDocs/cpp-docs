@@ -33,10 +33,10 @@ struct IsBaseOfStrict<Base, Base>;
 
 ### Parameters
 
-*Base*  
+*Base*<br/>
 The base type.
 
-*Derived*  
+*Derived*<br/>
 The derived type.
 
 ## Remarks

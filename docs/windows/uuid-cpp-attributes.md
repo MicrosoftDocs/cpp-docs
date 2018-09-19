@@ -26,7 +26,7 @@ Specifies the unique ID for a class or interface.
 
 ### Parameters
 
-*uuid*  
+*uuid*<br/>
 A 128-bit, unique identifier.
 
 ## Remarks
@@ -58,8 +58,8 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Interface Attributes](../windows/interface-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)  
-[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Interface Attributes](../windows/interface-attributes.md)<br/>
+[Class Attributes](../windows/class-attributes.md)<br/>
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
 [uuid](/windows/desktop/Midl/uuid)  

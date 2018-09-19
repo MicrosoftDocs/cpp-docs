@@ -26,10 +26,10 @@ STDMETHOD(
 
 ### Parameters
 
-*iidCount*  
+*iidCount*<br/>
 When this operation completes, the number of interace IDs in the *iids* array.
 
-*iids*  
+*iids*<br/>
 When this operation completes, an array of implemented interface IDs.
 
 ## Return Value

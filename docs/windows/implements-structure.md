@@ -49,37 +49,37 @@ struct __declspec(novtable) Implements<RuntimeClassFlags<flags>, I0, I1, I2, I3,
 
 ### Parameters
 
-*I0*  
+*I0*<br/>
 The zeroth interface ID. (Mandatory)
 
-*I1*  
+*I1*<br/>
 The first interface ID. (Optional)
 
-*I2*  
+*I2*<br/>
 The second interface ID. (Optional)
 
-*I3*  
+*I3*<br/>
 The third interface ID. (Optional)
 
-*I4*  
+*I4*<br/>
 The fourth interface ID. (Optional)
 
-*I5*  
+*I5*<br/>
 The fifth interface ID. (Optional)
 
-*I6*  
+*I6*<br/>
 The sixth interface ID. (Optional)
 
-*I7*  
+*I7*<br/>
 The seventh interface ID. (Optional)
 
-*I8*  
+*I8*<br/>
 The eigth interface ID. (Optional)
 
-*I9*  
+*I9*<br/>
 The ninth interface ID. (Optional)
 
-*flags*  
+*flags*<br/>
 Configuration flags for the class. One or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumerations that are specified in a [RuntimeClassFlags](../windows/runtimeclassflags-structure.md) structure.
 
 ## Remarks
@@ -143,10 +143,10 @@ __forceinline HRESULT CanCastTo(
 
 ### Parameters
 
-*riid*  
+*riid*<br/>
 A reference to an interface ID.
 
-*ppv*  
+*ppv*<br/>
 If successful, a pointer to the interface specified by *riid*.
 
 ### Return Value
@@ -186,10 +186,10 @@ __forceinline static void FillArrayWithIid(
 
 ### Parameters
 
-*index*  
+*index*<br/>
 A zero-based index that indicates the starting array element for this operation. When this operation completes, *index* is incremented by 1.
 
-*iids*  
+*iids*<br/>
 An array of type IID.
 
 ### Remarks

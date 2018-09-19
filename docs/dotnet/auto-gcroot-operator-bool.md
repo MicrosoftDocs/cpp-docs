@@ -13,54 +13,59 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot::operator bool
-Operator for using `auto_gcroot` in a conditional expression.  
-  
-## Syntax  
-  
-```  
-operator bool() const;  
-```  
-  
-## Return Value  
- `true` if the wrapped object is valid; `false` otherwise.  
-  
-## Remarks  
- This operator actually converts to `_detail_class::_safe_bool` which is safer than `bool` because it cannot be converted to an integral type.  
-  
-## Example  
-  
-```  
-// msl_auto_gcroot_operator_bool.cpp  
-// compile with: /clr  
-#include <msclr\auto_gcroot.h>  
-  
-using namespace System;  
-using namespace msclr;  
-  
-int main() {  
-   auto_gcroot<String^> s;  
-   if ( s ) Console::WriteLine( "s is valid" );  
-   if ( !s ) Console::WriteLine( "s is invalid" );  
-   s = "something";  
-   if ( s ) Console::WriteLine( "now s is valid" );  
-   if ( !s ) Console::WriteLine( "now s is invalid" );  
-   s.reset();  
-   if ( s ) Console::WriteLine( "now s is valid" );  
-   if ( !s ) Console::WriteLine( "now s is invalid" );  
-}  
-```  
-  
-```Output  
-s is invalid  
-now s is valid  
-now s is invalid  
-```  
-  
-## Requirements  
- **Header file** \<msclr\auto_gcroot.h>  
-  
- **Namespace** msclr  
-  
-## See Also  
- [auto_gcroot Members](../dotnet/auto-gcroot-members.md)   
- [auto_gcroot::operator!](../dotnet/auto-gcroot-operator-logical-not.md)
+
+Operator for using `auto_gcroot` in a conditional expression.
+
+## Syntax
+
+```
+operator bool() const;
+```
+
+## Return Value
+
+`true` if the wrapped object is valid; `false` otherwise.
+
+## Remarks
+
+This operator actually converts to `_detail_class::_safe_bool` which is safer than `bool` because it cannot be converted to an integral type.
+
+## Example
+
+```
+// msl_auto_gcroot_operator_bool.cpp
+// compile with: /clr
+#include <msclr\auto_gcroot.h>
+
+using namespace System;
+using namespace msclr;
+
+int main() {
+   auto_gcroot<String^> s;
+   if ( s ) Console::WriteLine( "s is valid" );
+   if ( !s ) Console::WriteLine( "s is invalid" );
+   s = "something";
+   if ( s ) Console::WriteLine( "now s is valid" );
+   if ( !s ) Console::WriteLine( "now s is invalid" );
+   s.reset();
+   if ( s ) Console::WriteLine( "now s is valid" );
+   if ( !s ) Console::WriteLine( "now s is invalid" );
+}
+```
+
+```Output
+s is invalid
+now s is valid
+now s is invalid
+```
+
+## Requirements
+
+**Header file** \<msclr\auto_gcroot.h>
+
+**Namespace** msclr
+
+## See Also
+
+[auto_gcroot Members](../dotnet/auto-gcroot-members.md)<br/>
+[auto_gcroot::operator!](../dotnet/auto-gcroot-operator-logical-not.md)

@@ -46,5 +46,5 @@ Indicates whether one type is the same as another.
 
 ## See Also
 
-[IsSame Structure](../windows/issame-structure.md)  
+[IsSame Structure](../windows/issame-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

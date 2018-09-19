@@ -26,7 +26,7 @@ On a class, specifies the COM object's source interfaces for connection points. 
 
 ### Parameters
 
-*interfaces*  
+*interfaces*<br/>
 One or more interfaces that you specify when you apply the source attribute to a class. This parameter is not used when source is applied to a property or method.
 
 ## Remarks
@@ -84,7 +84,7 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)  
-[Method Attributes](../windows/method-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Class Attributes](../windows/class-attributes.md)<br/>
+[Method Attributes](../windows/method-attributes.md)<br/>
 [coclass](../windows/coclass.md)  

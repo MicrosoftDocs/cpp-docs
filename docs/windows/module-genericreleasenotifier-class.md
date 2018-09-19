@@ -25,7 +25,7 @@ class GenericReleaseNotifier : public ReleaseNotifier;
 
 ### Parameters
 
-*T*  
+*T*<br/>
 The type of the data member that contains the location of the event handler.
 
 ## Members
@@ -61,4 +61,5 @@ The type of the data member that contains the location of the event handler.
 **Namespace:** Microsoft::WRL
 
 ## See Also
+
 [Module Class](../windows/module-class.md)

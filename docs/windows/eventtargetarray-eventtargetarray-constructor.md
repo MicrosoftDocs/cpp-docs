@@ -27,19 +27,19 @@ EventTargetArray(
 
 ### Parameters
 
-*hr*  
+*hr*<br/>
 After this constructor operations, parameter *hr* indicates whether allocation of the array succeeded or failed. The following table lists the possible values for *hr*.
 
 S_OK
- The operation succeeded.
+The operation succeeded.
 
 E_OUTOFMEMORY
- Memory couldn't be allocated for the array.
+Memory couldn't be allocated for the array.
 
 S_FALSE
- Parameter *items* is less than or equal to zero.
+Parameter *items* is less than or equal to zero.
 
-*items*  
+*items*<br/>
 The number of array elements to allocate.
 
 ## Remarks
@@ -56,5 +56,5 @@ Initializes a new instance of the **EventTargetArray** class.
 
 ## See Also
 
-[EventTargetArray Class](../windows/eventtargetarray-class.md)  
+[EventTargetArray Class](../windows/eventtargetarray-class.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

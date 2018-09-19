@@ -13,35 +13,40 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __readdr
-Reads the value of the specified debug register.  
-  
-## Syntax  
-  
-```  
-unsigned         __readdr(unsigned int DebugRegister);  
-unsigned __int64 __readdr(unsigned int DebugRegister);  
-```  
-  
-#### Parameters  
+
+Reads the value of the specified debug register.
+
+## Syntax
+
+```
+unsigned         __readdr(unsigned int DebugRegister);
+unsigned __int64 __readdr(unsigned int DebugRegister);
+```
+
+#### Parameters
+
 *DebugRegister*<br/>
-[in] A constant from 0 through 7 that identifies the debug register.  
-  
-## Return Value  
- The value of the specified debug register.  
-  
-## Remarks  
- These intrinsics are available only in kernel mode, and the routines are available only as intrinsics.  
-  
-## Requirements  
-  
-|Intrinsic|Architecture|  
-|---------------|------------------|  
-|`__readdr`|x86, x64|  
-  
- **Header file** \<intrin.h>  
-  
-**END Microsoft Specific**  
-  
-## See Also  
- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   
- [__readeflags](../intrinsics/readeflags.md)
+[in] A constant from 0 through 7 that identifies the debug register.
+
+## Return Value
+
+The value of the specified debug register.
+
+## Remarks
+
+These intrinsics are available only in kernel mode, and the routines are available only as intrinsics.
+
+## Requirements
+
+|Intrinsic|Architecture|
+|---------------|------------------|
+|`__readdr`|x86, x64|
+
+**Header file** \<intrin.h>
+
+**END Microsoft Specific**
+
+## See Also
+
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[__readeflags](../intrinsics/readeflags.md)

@@ -26,7 +26,7 @@ Defines an interface as the default vtable interface for a COM object.
 
 ### Parameters
 
-*interface*  
+*interface*<br/>
 The designated interface that you want to have the default vtable for the COM object.
 
 ## Remarks
@@ -78,5 +78,5 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
 [Class Attributes](../windows/class-attributes.md)  

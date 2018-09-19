@@ -26,7 +26,7 @@ STDMETHOD(
 
 ### Parameters
 
-*id*  
+*id*<br/>
 The location where the handle is to be stored.
 
 ## Return Value

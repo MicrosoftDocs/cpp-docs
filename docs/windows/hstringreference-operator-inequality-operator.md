@@ -37,10 +37,10 @@ inline bool operator!=(
 
 ### Parameters
 
-*lhs*  
+*lhs*<br/>
 The first parameter to compare. *lhs* can be an **HStringReference** object or an HSTRING handle.
 
-*rhs*  
+*rhs*<br/>
 The second parameter to compare.  *rhs* can be an **HStringReference** object or an HSTRING handle.
 
 ## Return Value

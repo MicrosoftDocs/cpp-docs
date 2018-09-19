@@ -40,16 +40,16 @@ cli::interior_ptr<cv_qualifier type> var = &initializer;
 
 ### Parameters
 
-*cv_qualifier*  
+*cv_qualifier*<br/>
 **const** or **volatile** qualifiers.
 
-*type*  
+*type*<br/>
 The type of *initializer*.
 
-*var*  
+*var*<br/>
 The name of the **interior_ptr** variable.
 
-*initializer*  
+*initializer*<br/>
 A member of a reference type, element of a managed array, or any other object that you can assign to a native pointer.
 
 ### Remarks

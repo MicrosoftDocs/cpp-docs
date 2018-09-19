@@ -26,10 +26,10 @@ void FillArrayWithIid(
 
 ### Parameters
 
-*index*  
+*index*<br/>
 A zero-based index that indicates the starting array element for this operation. When this operation completes, *index* is incremented by 1.
 
-*iids*  
+*iids*<br/>
 An array of type IIDs.
 
 ## Remarks
@@ -44,5 +44,5 @@ Inserts the interface ID specified by the current zeroth template parameter into
 
 ## See Also
 
-[ImplementsHelper Structure](../windows/implementshelper-structure.md)  
+[ImplementsHelper Structure](../windows/implementshelper-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

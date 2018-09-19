@@ -43,6 +43,6 @@ Win32
 
 ## See Also
 
-[Setting Accelerator Properties](../windows/setting-accelerator-properties.md)  
-[Editing in an Accelerator Table](../windows/editing-in-an-accelerator-table.md)  
+[Setting Accelerator Properties](../windows/setting-accelerator-properties.md)<br/>
+[Editing in an Accelerator Table](../windows/editing-in-an-accelerator-table.md)<br/>
 [Accelerator Editor](../windows/accelerator-editor.md)

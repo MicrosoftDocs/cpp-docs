@@ -27,10 +27,10 @@ WRL_NOTHROW HRESULT AsIID(
 
 ### Parameters
 
-*riid*  
+*riid*<br/>
 An interface ID.
 
-*p*  
+*p*<br/>
 If the object has an interface whose ID equals *riid*, a doubly-indirect pointer to the interface specified by the *riid* parameter; otherwise, a pointer to `IUnknown`.
 
 ## Return Value

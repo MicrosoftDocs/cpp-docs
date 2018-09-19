@@ -34,23 +34,23 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
 
 ### Parameters
 
-*access*  
+*access*<br/>
 The accessibility of the enumeration, which can be **public** or **private**.
 
-*enumeration-identifier*  
+*enumeration-identifier*<br/>
 The name of the enumeration.
 
-*underlying-type*  
+*underlying-type*<br/>
 (Optional) The underlying type of the enumeration.
 
 (Optional. Windows Runtime only) The underlying type of the enumeration, which can be **bool**, **char**, `char16`, `int16`, `uint16`, **int**, `uint32`, `int64`, or `uint64`.
 
-*enumerator-list*  
+*enumerator-list*<br/>
 A comma-delimited list of enumerator names.
 
 The value of each enumerator is a constant expression that is either defined implicitly by the compiler, or explicitly by the notation, *enumerator*`=`*constant-expression*. By default, the value of the first enumerator is zero if it is implicitly defined. The value of each subsequent implicitly-defined enumerator is the value of the previous enumerator + 1.
 
-*var*  
+*var*<br/>
 (Optional) The name of a variable of the enumeration type.
 
 ### Remarks
@@ -82,19 +82,19 @@ accessenum structname [:type] { enumerator-list } var;
 
 ### Parameters
 
-*access*  
+*access*<br/>
 The accessibility of the enum. Can be either **public** or **private**.
 
-*enumerator-list*  
+*enumerator-list*<br/>
 A comma-separated list of the identifiers (enumerators) in the enumeration.
 
-*name*  
+*name*<br/>
 The name of the enumeration. Anonymous managed enumerations are not allowed.
 
-*type*  
+*type*<br/>
 (Optional) The underlying type of the *identifiers*. This can be any scalar type, such as signed or unsigned versions of **int**, **short**, or **long**.  **bool** or **char** is also allowed.
 
-*var*  
+*var*<br/>
 (Optional) The name of a variable of the enumeration type.
 
 ### Remarks

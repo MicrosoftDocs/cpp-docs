@@ -33,7 +33,7 @@ struct VerifyInterfaceHelper<false, I>;
 
 ### Parameters
 
-*I*  
+*I*<br/>
 An interface to verify.
 
 *isWinRTInterface*

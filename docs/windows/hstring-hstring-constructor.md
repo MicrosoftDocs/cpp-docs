@@ -24,10 +24,10 @@ HString(HString&& other) throw();
 
 #### Parameters
 
-*hstr*  
+*hstr*<br/>
 An HSTRING handle.
 
-*other*  
+*other*<br/>
 An existing **HString** object.
 
 ## Remarks

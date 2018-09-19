@@ -26,7 +26,7 @@ Specifies the UUID that directs the MIDL compiler to define both synchronous and
 
 ### Parameters
 
-*uuid*  
+*uuid*<br/>
 A UUID that identifies the version of the interface.
 
 ## Remarks
@@ -62,5 +62,5 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
 [Interface Attributes](../windows/interface-attributes.md)  
