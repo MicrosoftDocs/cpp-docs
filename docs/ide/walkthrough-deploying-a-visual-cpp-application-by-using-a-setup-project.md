@@ -30,7 +30,9 @@ You need the following components to complete this walkthrough:
 1. Use the **MFC ApplicationWizard** to create a new Visual Studio solution. To find the wizard, from the **New Project** dialog box, expand the **Visual C++** node, select **MFC**, select **MFC Application**, enter a name for the project, and then click **OK**. Click **Finish**.
 
    > [!NOTE]
-   > If the **MFC Application** type is missing, select **Open Visual Studio Installer** in the left pane of the **New Project** dialog box. Install the option located under **Desktop development with C++** in the **Optional** components section, named **Visual C++ MFC for x86 and x64**.
+   > If the **MFC Application** type is missing:
+   > **Visual Studio 2017**: Select **Open Visual Studio Installer** in the left pane of the **New Project** dialog box. Install the option located under **Desktop development with C++** in the **Optional** components section, named **Visual C++ MFC for x86 and x64**.
+   > **Visual Studio 2015**: Click on the Windows Start button and type **Add Remove Programs**. Open the program from the results list and then find your Microsoft Visual Studio 2015 installation in the list of installed programs. Double-click it, then choose **Modify** and select the **Microsoft Foundation Classes** component under **Visual C++**.
   
 1. Change the active solution configuration to **Release**. From the **Build** menu, select **Configuration Manger**. From the **Configuration Manager** dialog box, select **Release** from the **Active solution configuration** drop-down box. Click **Close**.
   
