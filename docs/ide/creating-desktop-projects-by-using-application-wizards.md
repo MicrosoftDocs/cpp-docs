@@ -13,25 +13,27 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Creating Desktop Projects By Using Application Wizards
-Every type of Visual C++ project has an application wizard that helps you generate new projects quickly and easily, modeled from the project template.  To open an application wizard, use the **New Project** dialog box to specify project properties such as the name of the project, or the directory and solution where your project will reside.  
-  
-#### To open a Visual C++ application wizard  
-  
-1.  On the **File** menu, click **New**, and then click **Project**.  
-  
-     The **New Project** dialog box appears.  
-  
-2.  In the Project Types pane, select the **Visual C++ Projects** folder. An icon for every type of C++ project appears in the Templates pane.  
-  
-3.  In the Templates pane, select an icon to choose a project type. A message appears under both panes indicating the type of project you are going to create.  
-  
-4.  Specify your project properties, or skip this step to use Visual Studio default project properties. See [Working with Project Properties](../ide/working-with-project-properties.md) for details.  
-  
-5.  Click **OK**, and the wizard for your project type opens. If you want to read the help topic for the wizard, press **F1**.  
-  
- When you create a project you can either create a new solution or you can add the project to an existing solution. For more information, see [How to: Create a C++ Project from Existing Code](../ide/how-to-create-a-cpp-project-from-existing-code.md).  
-  
-## See Also  
- [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)   
- [MFC Wizards and Dialog Boxes](../mfc/reference/mfc-wizards-and-dialog-boxes.md)   
- [ATL Wizards and Dialog Boxes](../atl/reference/atl-wizards-and-dialog-boxes.md)
+
+Every type of Visual C++ project has an application wizard that helps you generate new projects quickly and easily, modeled from the project template.  To open an application wizard, use the **New Project** dialog box to specify project properties such as the name of the project, or the directory and solution where your project will reside.
+
+#### To open a Visual C++ application wizard
+
+1. On the **File** menu, click **New**, and then click **Project**.
+
+   The **New Project** dialog box appears.
+
+1. In the Project Types pane, select the **Visual C++ Projects** folder. An icon for every type of C++ project appears in the Templates pane.
+
+1. In the Templates pane, select an icon to choose a project type. A message appears under both panes indicating the type of project you are going to create.
+
+1. Specify your project properties, or skip this step to use Visual Studio default project properties. See [Working with Project Properties](../ide/working-with-project-properties.md) for details.
+
+1. Click **OK**, and the wizard for your project type opens. If you want to read the help topic for the wizard, press **F1**.
+
+When you create a project you can either create a new solution or you can add the project to an existing solution. For more information, see [How to: Create a C++ Project from Existing Code](../ide/how-to-create-a-cpp-project-from-existing-code.md).
+
+## See Also
+
+[Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)<br>
+[MFC Wizards and Dialog Boxes](../mfc/reference/mfc-wizards-and-dialog-boxes.md)<br>
+[ATL Wizards and Dialog Boxes](../atl/reference/atl-wizards-and-dialog-boxes.md)

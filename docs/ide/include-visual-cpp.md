@@ -18,9 +18,9 @@ The \<include> tag lets you refer to comments in another file that describe the 
 
 ## Syntax
 
-```  
+```
 <include file='filename' path='tagpath' />
-```  
+```
 
 #### Parameters
 
@@ -62,7 +62,7 @@ public ref class Test2 {
    void Test() {
    }
 };
-```  
+```
 
 The second file, xml_include_tag.doc, contains the following documentation comments:
 
@@ -82,7 +82,7 @@ The summary for this other type.
 </MyMembers>
 
 </MyDocs>
-```  
+```
 
 ## Program Output
 

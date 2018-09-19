@@ -12,13 +12,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Running a C++ /clr Application on a Previous Runtime Version
-Unless otherwise specified, a C++ .NET Framework application is built to run on the common language runtime (CLR) version that the compiler uses to build the application. However, it is possible for an .exe application that is built for one version of the runtime to run on any other version that provides the required functionality.  
-  
- To accomplish this, provide an app.config file that contains runtime version information in the `supportedRuntime` tag.  
-  
- At run time, the app.config file must have a name of the form *filename.ext*.config, where *filename.ext* is the name of the executable that started the application, and it must be in the same directory as the executable. For example, if your application is named TestApp.exe, the app.config file would be named TestApp.exe.config.  
-  
- If you specify more than one runtime version and the application runs on a computer that has more than one installed runtime version, the application uses the first version that is specified in the config file and is installed.  
-  
-## See Also  
- [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)
+
+Unless otherwise specified, a C++ .NET Framework application is built to run on the common language runtime (CLR) version that the compiler uses to build the application. However, it is possible for an .exe application that is built for one version of the runtime to run on any other version that provides the required functionality.
+
+To accomplish this, provide an app.config file that contains runtime version information in the `supportedRuntime` tag.
+
+At run time, the app.config file must have a name of the form *filename.ext*.config, where *filename.ext* is the name of the executable that started the application, and it must be in the same directory as the executable. For example, if your application is named TestApp.exe, the app.config file would be named TestApp.exe.config.
+
+If you specify more than one runtime version and the application runs on a computer that has more than one installed runtime version, the application uses the first version that is specified in the config file and is installed.
+
+## See Also
+
+[Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)

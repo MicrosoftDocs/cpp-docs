@@ -69,5 +69,5 @@ When you build the project, the build system compares the timestamps of parser.l
 
 ## See also
 
-[Common Macros for Build Commands and Properties](../ide/common-macros-for-build-commands-and-properties.md)  
-[Troubleshooting Build Customizations](../ide/troubleshooting-build-customizations.md)  
+[Common Macros for Build Commands and Properties](../ide/common-macros-for-build-commands-and-properties.md)<br>
+[Troubleshooting Build Customizations](../ide/troubleshooting-build-customizations.md)
