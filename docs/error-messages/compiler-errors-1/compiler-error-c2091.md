@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2091
-function returns function  
-  
- A function cannot return a function. Return a pointer to a function instead.
+
+function returns function
+
+A function cannot return a function. Return a pointer to a function instead.

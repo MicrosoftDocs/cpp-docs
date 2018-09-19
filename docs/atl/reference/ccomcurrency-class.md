@@ -98,45 +98,45 @@ CComCurrency() throw();
 CComCurrency(const CComCurrency& curSrc) throw();
 CComCurrency(CURRENCY cySrc) throw();
 CComCurrency(DECIMAL dSrc);
-CComCurrency(ULONG ulSrc);  
-CComCurrency(USHORT usSrc);  
-CComCurrency(CHAR cSrc);  
-CComCurrency(DOUBLE dSrc);  
-CComCurrency(FLOAT fSrc);  
-CComCurrency(LONG lSrc);  
-CComCurrency(SHORT sSrc);  
-CComCurrency(BYTE bSrc);  
-CComCurrency(LONGLONG nInteger, SHORT nFraction);  
-explicit CComCurrency(LPDISPATCH pDispSrc);  
-explicit CComCurrency(const VARIANT& varSrc);  
-explicit CComCurrency(LPCWSTR szSrc);  
+CComCurrency(ULONG ulSrc);
+CComCurrency(USHORT usSrc);
+CComCurrency(CHAR cSrc);
+CComCurrency(DOUBLE dSrc);
+CComCurrency(FLOAT fSrc);
+CComCurrency(LONG lSrc);
+CComCurrency(SHORT sSrc);
+CComCurrency(BYTE bSrc);
+CComCurrency(LONGLONG nInteger, SHORT nFraction);
+explicit CComCurrency(LPDISPATCH pDispSrc);
+explicit CComCurrency(const VARIANT& varSrc);
+explicit CComCurrency(LPCWSTR szSrc);
 explicit CComCurrency(LPCSTR szSrc);
 ```
 
 ### Parameters
 
-*curSrc*  
+*curSrc*<br/>
 An existing `CComCurrency` object.
 
-*cySrc*  
+*cySrc*<br/>
 A variable of type CURRENCY.
 
-*bSrc*, *dSrc*, *fSrc*, *lSrc*, *sSrc*, *ulSrc, usSrc*  
+*bSrc*, *dSrc*, *fSrc*, *lSrc*, *sSrc*, *ulSrc, usSrc*<br/>
 The initial value given to the member variable `m_currency`.
 
-*cSrc*  
+*cSrc*<br/>
 A character containing the initial value given to the member variable `m_currency`.
 
-*nInteger*, *nFraction*  
+*nInteger*, *nFraction*<br/>
 The integer and fractional components of the initial monetary value. See the [CComCurrency](../../atl/reference/ccomcurrency-class.md) overview for more information.
 
-*pDispSrc*  
+*pDispSrc*<br/>
 An `IDispatch` pointer.
 
-*varSrc*  
+*varSrc*<br/>
 A variable of type VARIANT. The locale of the current thread is used to perform the conversion.
 
-*szSrc*  
+*szSrc*<br/>
 A Unicode or ANSI string containing the initial value. The locale of the current thread is used to perform the conversion.
 
 ### Remarks
@@ -218,7 +218,7 @@ CComCurrency operator-(const CComCurrency& cur) const;
 
 ### Parameters
 
-*cur*  
+*cur*<br/>
 A `CComCurrency` object.
 
 ### Return Value
@@ -239,7 +239,7 @@ bool operator!= (const CComCurrency& cur) const;
 
 ### Parameters
 
-*cur*  
+*cur*<br/>
 The `CComCurrency` object to be compared.
 
 ### Return Value
@@ -261,10 +261,10 @@ CComCurrency operator*(const CComCurrency& cur) const;
 
 ### Parameters
 
-*nOperand*  
+*nOperand*<br/>
 The multiplier.
 
-*cur*  
+*cur*<br/>
 The `CComCurrency` object used as the multiplier.
 
 ### Return Value
@@ -286,10 +286,10 @@ const CComCurrency& operator*= (const CComCurrency& cur);
 
 ### Parameters
 
-*nOperand*  
+*nOperand*<br/>
 The multiplier.
 
-*cur*  
+*cur*<br/>
 The `CComCurrency` object used as the multiplier.
 
 ### Return Value
@@ -310,7 +310,7 @@ CComCurrency operator/(long nOperand) const;
 
 ### Parameters
 
-*nOperand*  
+*nOperand*<br/>
 The divisor.
 
 ### Return Value
@@ -331,7 +331,7 @@ const CComCurrency& operator/= (long nOperand);
 
 ### Parameters
 
-*nOperand*  
+*nOperand*<br/>
 The divisor.
 
 ### Return Value
@@ -352,7 +352,7 @@ CComCurrency operator+(const CComCurrency& cur) const;
 
 ### Parameters
 
-*cur*  
+*cur*<br/>
 The `CComCurrency` object to be added to the original object.
 
 ### Return Value
@@ -373,7 +373,7 @@ const CComCurrency& operator+= (const CComCurrency& cur);
 
 ### Parameters
 
-*cur*  
+*cur*<br/>
 The `CComCurrency` object.
 
 ### Return Value
@@ -394,7 +394,7 @@ bool operator<(const CComCurrency& cur) const;
 
 ### Parameters
 
-*cur*  
+*cur*<br/>
 A `CComCurrency` object.
 
 ### Return Value
@@ -415,7 +415,7 @@ bool operator<= (const CComCurrency& cur) const;
 
 ### Parameters
 
-*cur*  
+*cur*<br/>
 A `CComCurrency` object.
 
 ### Return Value
@@ -446,13 +446,13 @@ const CComCurrency& operator= (DECIMAL dSrc);
 
 ### Parameters
 
-*curSrc*  
+*curSrc*<br/>
 A `CComCurrency` object.
 
-*cySrc*  
+*cySrc*<br/>
 A variable of type CURRENCY.
 
-*sSrc*, *fSrc*, *lSrc*, *bSrc*, *usSrc*, *dSrc*, *cSrc*, *ulSrc*, *dSrc*  
+*sSrc*, *fSrc*, *lSrc*, *bSrc*, *usSrc*, *dSrc*, *cSrc*, *ulSrc*, *dSrc*<br/>
 The numeric value to assign to the `CComCurrency` object.
 
 ### Return Value
@@ -473,7 +473,7 @@ const CComCurrency& operator-= (const CComCurrency& cur);
 
 ### Parameters
 
-*cur*  
+*cur*<br/>
 A `CComCurrency` object.
 
 ### Return Value
@@ -494,7 +494,7 @@ bool operator== (const CComCurrency& cur) const;
 
 ### Parameters
 
-*cur*  
+*cur*<br/>
 The `CComCurrency` object to compare.
 
 ### Return Value
@@ -515,7 +515,7 @@ bool operator>(const CComCurrency& cur) const;
 
 ### Parameters
 
-*cur*  
+*cur*<br/>
 A `CComCurrency` object.
 
 ### Return Value
@@ -536,7 +536,7 @@ bool operator>= (const CComCurrency& cur) const;
 
 ### Parameters
 
-*cur*  
+*cur*<br/>
 A `CComCurrency` object.
 
 ### Return Value
@@ -551,7 +551,7 @@ Returns TRUE if the first object is greater than or equal to the second, FALSE o
 
 These operators are used to cast a `CComCurrency` object to a CURRENCY data type.
 
-```  
+```
 operator CURRENCY&() throw();
 operator const CURRENCY&() const throw();
 ```
@@ -574,7 +574,7 @@ HRESULT Roundint nDecimals);
 
 ### Parameters
 
-*nDecimals*  
+*nDecimals*<br/>
 The number of digits to which `m_currency` will be rounded, in the range 0 to 4.
 
 ### Return Value
@@ -595,7 +595,7 @@ HRESULT SetFraction(SHORT nFraction);
 
 ### Parameters
 
-*nFraction*  
+*nFraction*<br/>
 The value to be assigned to the fractional component of the `m_currency` data member. The sign of the fractional component must the same as the integer component, and the value must be in range -9999 (CY_MIN_FRACTION) to +9999 (CY_MAX_FRACTION).
 
 ### Return Value
@@ -616,7 +616,7 @@ HRESULT SetInteger(LONGLONG nInteger);
 
 ### Parameters
 
-*nInteger*  
+*nInteger*<br/>
 The value to be assigned to the integer component of the `m_currency` data member. The sign of the integer component must match the sign of the existing fractional component.
 
 *nInteger* must be in the range CY_MIN_INTEGER to CY_MAX_INTEGER inclusive. These values are defined in atlcur.h.
@@ -631,6 +631,6 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ## See Also
 
-[COleCurrency Class](../../mfc/reference/colecurrency-class.md)   
-[CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy)   
+[COleCurrency Class](../../mfc/reference/colecurrency-class.md)<br/>
+[CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

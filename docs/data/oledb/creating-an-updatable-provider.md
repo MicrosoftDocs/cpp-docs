@@ -15,24 +15,24 @@ ms.workload: ["cplusplus", "data-storage"]
 
 Visual C++ supports updatable providers or providers that can update (write to) the data store. This topic discusses how to create updatable providers using OLE DB templates.  
   
- This topic assumes that you are starting with a workable provider. There are two steps to creating an updatable provider. You must first decide how the provider will make changes to the data store; specifically, whether changes are to be done immediately or deferred until an update command is issued. The section "[Making Providers Updatable](#vchowmakingprovidersupdatable)" describes the changes and settings you need to do in the provider code.  
+This topic assumes that you are starting with a workable provider. There are two steps to creating an updatable provider. You must first decide how the provider will make changes to the data store; specifically, whether changes are to be done immediately or deferred until an update command is issued. The section "[Making Providers Updatable](#vchowmakingprovidersupdatable)" describes the changes and settings you need to do in the provider code.  
   
- Next, you must make sure your provider contains all the functionality to support anything the consumer might request of it. If the consumer wants to update the data store, the provider has to contain code that persists data to the data store. For example, you might use the C Run-Time Library or MFC to perform such operations on your data source. The section "[Writing to the Data Source](#vchowwritingtothedatasource)" describes how to write to the data source, deal with NULL and default values, and set column flags.  
+Next, you must make sure your provider contains all the functionality to support anything the consumer might request of it. If the consumer wants to update the data store, the provider has to contain code that persists data to the data store. For example, you might use the C Run-Time Library or MFC to perform such operations on your data source. The section "[Writing to the Data Source](#vchowwritingtothedatasource)" describes how to write to the data source, deal with NULL and default values, and set column flags.  
   
 > [!NOTE]
 >  [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) is an example of an updatable provider. UpdatePV is the same as MyProv but with updatable support.  
   
 ##  <a name="vchowmakingprovidersupdatable"></a> Making Providers Updatable  
 
- The key to making a provider updatable is understanding what operations you want your provider to perform on the data store and how you want the provider to carry out those operations. Specifically, the major issue is whether updates to the data store are to be done immediately or deferred (batched) until an update command is issued.  
+The key to making a provider updatable is understanding what operations you want your provider to perform on the data store and how you want the provider to carry out those operations. Specifically, the major issue is whether updates to the data store are to be done immediately or deferred (batched) until an update command is issued.  
   
- You must first decide whether to inherit from `IRowsetChangeImpl` or `IRowsetUpdateImpl` in your rowset class. Depending on which of these you choose to implement, the functionality of three methods will be affected: `SetData`, `InsertRows`, and `DeleteRows`.  
+You must first decide whether to inherit from `IRowsetChangeImpl` or `IRowsetUpdateImpl` in your rowset class. Depending on which of these you choose to implement, the functionality of three methods will be affected: `SetData`, `InsertRows`, and `DeleteRows`.  
   
 - If you inherit from [IRowsetChangeImpl](../../data/oledb/irowsetchangeimpl-class.md), calling these three methods immediately changes the data store.  
   
 - If you inherit from [IRowsetUpdateImpl](../../data/oledb/irowsetupdateimpl-class.md), the methods defer changes to the data store until you call `Update`, `GetOriginalData`, or `Undo`. If the update involves several changes, they are performed in batch mode (note that batching changes can add considerable memory overhead).  
   
- Note that `IRowsetUpdateImpl` derives from `IRowsetChangeImpl`. Thus, `IRowsetUpdateImpl` gives you change capability plus batch capability.  
+Note that `IRowsetUpdateImpl` derives from `IRowsetChangeImpl`. Thus, `IRowsetUpdateImpl` gives you change capability plus batch capability.  
   
 #### To support updatability in your provider  
   
@@ -59,21 +59,21 @@ Visual C++ supports updatable providers or providers that can update (write to) 
     > [!NOTE]
     >  You should remove the `IRowsetChangeImpl` line from your inheritance chain. This one exception to the directive previously mentioned must include the code for `IRowsetChangeImpl`.  
   
-2.  Add the following to your COM map (`BEGIN_COM_MAP ... END_COM_MAP`):  
+1. Add the following to your COM map (`BEGIN_COM_MAP ... END_COM_MAP`):  
   
     |If you implement|Add to COM map|  
     |----------------------|--------------------|  
     |`IRowsetChangeImpl`|`COM_INTERFACE_ENTRY(IRowsetChange)`|  
     |`IRowsetUpdateImpl`|`COM_INTERFACE_ENTRY(IRowsetChange)COM_INTERFACE_ENTRY(IRowsetUpdate)`|  
   
-3.  In your command, add the following to your property set map (`BEGIN_PROPSET_MAP ... END_PROPSET_MAP`):  
+1. In your command, add the following to your property set map (`BEGIN_PROPSET_MAP ... END_PROPSET_MAP`):  
   
     |If you implement|Add to property set map|  
     |----------------------|-----------------------------|  
     |`IRowsetChangeImpl`|`PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)`|  
     |`IRowsetUpdateImpl`|`PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)PROPERTY_INFO_ENTRY_VALUE(IRowsetUpdate, VARIANT_FALSE)`|  
   
-4.  In your property set map, you should also include all of the following settings as they appear below:  
+1. In your property set map, you should also include all of the following settings as they appear below:  
   
     ```cpp  
     PROPERTY_INFO_ENTRY_VALUE(UPDATABILITY, DBPROPVAL_UP_CHANGE |   
@@ -132,7 +132,8 @@ Visual C++ supports updatable providers or providers that can update (write to) 
         >  If you support notifications, you might also have some other properties as well; see the section on `IRowsetNotifyCP` for this list.  
   
 ##  <a name="vchowwritingtothedatasource"></a> Writing to the Data Source  
- To read from the data source, call the `Execute` function. To write to the data source, call the `FlushData` function. (In a general sense, flush means to save modifications you make to a table or index to disk.)  
+
+To read from the data source, call the `Execute` function. To write to the data source, call the `FlushData` function. (In a general sense, flush means to save modifications you make to a table or index to disk.)  
 
 ```cpp
 
@@ -145,6 +146,7 @@ The row handle (HROW) and accessor handle (HACCESSOR) arguments allow you to spe
 The `FlushData` method writes data in the format in which it was originally stored. If you do not override this function, your provider will function correctly but changes will not be flushed to the data store.
 
 ### When to Flush
+
 The provider templates call FlushData whenever data needs to be written to the data store; this usually (but not always) occurs as a result of calls to the following functions:
 
 - `IRowsetChange::DeleteRows`
@@ -299,6 +301,7 @@ As the provider developer, you have to consider how you will store that data, ho
 Look at the code in the UpdatePV sample; it illustrates how a provider can handle NULL data. In UpdatePV, the provider stores NULL data by writing the string "NULL" in the data store. When it reads NULL data from the data store, it sees that string and then empties the buffer, creating a NULL string. It also has an override of `IRowsetImpl::GetDBStatus` in which it returns DBSTATUS_S_ISNULL if that data value is empty.
 
 ### Marking Nullable Columns
+
 If you also implement schema rowsets (see `IDBSchemaRowsetImpl`), your implementation should specify in the DBSCHEMA_COLUMNS rowset (usually marked in your provider by CxxxSchemaColSchemaRowset) that the column is nullable.
 
 You also need to specify that all nullable columns contain the DBCOLUMNFLAGS_ISNULLABLE value in your version of the `GetColumnInfo`.
@@ -428,4 +431,5 @@ m_rgRowData.Add(trData[0]);
 This code specifies, among other things, that the column supports a default value of 0, that it be writeable, and that all data in the column have the same length. If you want the data in a column to have variable length, you would not set this flag.
 
 ## See Also
+
 [Creating an OLE DB Provider](creating-an-ole-db-provider.md)

@@ -11,12 +11,13 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # 2.2 Conditional Compilation
-The _**OPENMP** macro name is defined by OpenMP-compliant implementations as the decimal constant *yyyymm*, which will be the year and month of the approved specification. This macro must not be the subject of a **#define** or a **#undef** preprocessing directive.  
-  
-```  
-#ifdef _OPENMP  
-iam = omp_get_thread_num() + index;  
-#endif  
-```  
-  
- If vendors define extensions to OpenMP, they may specify additional predefined macros.
+
+The _**OPENMP** macro name is defined by OpenMP-compliant implementations as the decimal constant *yyyymm*, which will be the year and month of the approved specification. This macro must not be the subject of a **#define** or a **#undef** preprocessing directive.
+
+```
+#ifdef _OPENMP
+iam = omp_get_thread_num() + index;
+#endif
+```
+
+If vendors define extensions to OpenMP, they may specify additional predefined macros.

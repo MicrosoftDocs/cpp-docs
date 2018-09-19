@@ -13,26 +13,27 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3041
-'var' : variable in 'copyprivate' clause must be private in enclosing context  
-  
- A variable passed to [copyprivate](../../parallel/openmp/reference/copyprivate.md) cannot be shared in the enclosing context.  
-  
- The following sample generates C3041:  
-  
-```  
-// C3041.cpp  
-// compile with: /openmp /c  
-#include "omp.h"  
-double d;  
-int main() {  
-   #pragma omp parallel shared(d)  
-   // try the following line instead  
-   // #pragma omp parallel private(d)  
-   {  
-      // or don't make d copyprivate  
-      #pragma omp single copyprivate(d)   // C3041  
-      {  
-      }  
-   }  
-}  
+
+'var' : variable in 'copyprivate' clause must be private in enclosing context
+
+A variable passed to [copyprivate](../../parallel/openmp/reference/copyprivate.md) cannot be shared in the enclosing context.
+
+The following sample generates C3041:
+
+```
+// C3041.cpp
+// compile with: /openmp /c
+#include "omp.h"
+double d;
+int main() {
+   #pragma omp parallel shared(d)
+   // try the following line instead
+   // #pragma omp parallel private(d)
+   {
+      // or don't make d copyprivate
+      #pragma omp single copyprivate(d)   // C3041
+      {
+      }
+   }
+}
 ```

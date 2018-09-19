@@ -24,7 +24,7 @@ The topic [Linking to the CRT in Your ATL Project](../atl/linking-to-the-crt-in-
 
 ## See Also
 
-[Programming with ATL and C Run-Time Code](../atl/programming-with-atl-and-c-run-time-code.md)   
-[DLLs and Visual C++ run-time library behavior](../build/run-time-library-behavior.md)   
+[Programming with ATL and C Run-Time Code](../atl/programming-with-atl-and-c-run-time-code.md)<br/>
+[DLLs and Visual C++ run-time library behavior](../build/run-time-library-behavior.md)<br/>
 [CRT Library Features](../c-runtime-library/crt-library-features.md)
 

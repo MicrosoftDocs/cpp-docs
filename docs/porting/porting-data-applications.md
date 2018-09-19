@@ -29,6 +29,6 @@ For more information about the history of data access technologies on Microsoft 
 
 ## See Also  
  
-[Data Access in Visual C++](../data/data-access-in-cpp.md)  
-[Microsoft Open Database Connectivity (ODBC)](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc)  
+[Data Access in Visual C++](../data/data-access-in-cpp.md)<br/>
+[Microsoft Open Database Connectivity (ODBC)](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc)<br/>
 [Data Access Technologies Road Map](https://msdn.microsoft.com/library/ms810810.aspx)  

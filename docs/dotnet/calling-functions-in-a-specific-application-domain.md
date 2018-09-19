@@ -12,10 +12,13 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Calling Functions in a Specific Application Domain
-Supports calling functions in a specific application domain.  
-  
-## In This Section  
- [call_in_appdomain Function](../dotnet/call-in-appdomain-function.md)  
-  
-## See Also  
- [C++ Support Library](../dotnet/cpp-support-library.md)
+
+Supports calling functions in a specific application domain.
+
+## In This Section
+
+[call_in_appdomain Function](../dotnet/call-in-appdomain-function.md)
+
+## See Also
+
+[C++ Support Library](../dotnet/cpp-support-library.md)

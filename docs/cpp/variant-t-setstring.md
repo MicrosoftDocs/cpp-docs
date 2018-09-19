@@ -13,24 +13,28 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # _variant_t::SetString
-**Microsoft Specific**  
-  
- Assigns a string to this `_variant_t` object.  
-  
-## Syntax  
-  
-```  
-void SetString(const char* pSrc);  
-```  
-  
-#### Parameters  
- *pSrc*  
- Pointer to the character string.  
-  
-## Remarks  
- Converts an ANSI character string to a Unicode `BSTR` string and assigns it to this `_variant_t` object.  
-  
- **END Microsoft Specific**  
-  
-## See also  
- [_variant_t Class](../cpp/variant-t-class.md)
+
+**Microsoft Specific**
+
+Assigns a string to this `_variant_t` object.
+
+## Syntax
+
+```
+void SetString(const char* pSrc);
+```
+
+#### Parameters
+
+*pSrc*<br/>
+Pointer to the character string.
+
+## Remarks
+
+Converts an ANSI character string to a Unicode `BSTR` string and assigns it to this `_variant_t` object.
+
+**END Microsoft Specific**
+
+## See also
+
+[_variant_t Class](../cpp/variant-t-class.md)

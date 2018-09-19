@@ -12,13 +12,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Determining Which Type of Accessor to Use
+
 You can determine data types on a rowset at compile time or at run time.  
   
- If you need to determine data types at compile time, use a static accessor (such as `CAccessor`). You can determine the data types manually or by using the ATL OLE DB Consumer Wizard.  
+If you need to determine data types at compile time, use a static accessor (such as `CAccessor`). You can determine the data types manually or by using the ATL OLE DB Consumer Wizard.  
   
- If you need to determine the data types at run time, use a dynamic (`CDynamicAccessor` or its children) or manual accessor (`CManualAccessor`). In these cases, you can call `GetColumnInfo` on the rowset to return the column binding information, from which you can determine types.  
+If you need to determine the data types at run time, use a dynamic (`CDynamicAccessor` or its children) or manual accessor (`CManualAccessor`). In these cases, you can call `GetColumnInfo` on the rowset to return the column binding information, from which you can determine types.  
   
- The following table lists the types of accessors provided in the consumer templates. Each accessor has advantages and disadvantages. Depending on your situation, one accessor type should suit your needs.  
+The following table lists the types of accessors provided in the consumer templates. Each accessor has advantages and disadvantages. Depending on your situation, one accessor type should suit your needs.  
   
 |Accessor class|Binding|Parameter|Comment|  
 |--------------------|-------------|---------------|-------------|  
@@ -30,4 +31,5 @@ You can determine data types on a rowset at compile time or at run time.
 |`CXMLAccessor`|Automatic.|No.|Retrieves data accessed from the data store as string data and formats it as XML-tagged data.|  
   
 ## See Also  
- [Using Accessors](../../data/oledb/using-accessors.md)
+
+[Using Accessors](../../data/oledb/using-accessors.md)

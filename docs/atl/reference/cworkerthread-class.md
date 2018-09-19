@@ -22,13 +22,13 @@ This class creates a worker thread or uses an existing one, waits on one or more
 ## Syntax
 
 ```
-template <class ThreadTraits = DefaultThreadTraits>  
+template <class ThreadTraits = DefaultThreadTraits>
 class CWorkerThread
 ```
 
 #### Parameters
 
-*ThreadTraits*  
+*ThreadTraits*<br/>
 The class providing the thread creation function, such as [CRTThreadTraits](../../atl/reference/crtthreadtraits-class.md) or [Win32ThreadTraits](../../atl/reference/win32threadtraits-class.md).
 
 ## Members
@@ -95,13 +95,13 @@ HRESULT AddHandle(
 
 ### Parameters
 
-*hObject*  
+*hObject*<br/>
 The handle to a waitable object.
 
-*pClient*  
+*pClient*<br/>
 The pointer to the [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md) interface on the object to be called when the handle is signaled.
 
-*dwParam*  
+*dwParam*<br/>
 The parameter to be passed to [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) when the handle is signaled.
 
 ### Return Value
@@ -126,16 +126,16 @@ HRESULT AddTimer(
 
 ### Parameters
 
-*dwInterval*  
+*dwInterval*<br/>
 Specifies the period of the timer in milliseconds.
 
-*pClient*  
+*pClient*<br/>
 The pointer to the [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md) interface on the object to be called when the handle is signaled.
 
-*dwParam*  
+*dwParam*<br/>
 The parameter to be passed to [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) when the handle is signaled.
 
-*phTimer*  
+*phTimer*<br/>
 [out] Address of the HANDLE variable that, on success, receives the handle to the newly created timer.
 
 ### Return Value
@@ -204,7 +204,7 @@ HRESULT Initialize(CWorkerThread<ThreadTraits>* pThread) throw();
 
 ### Parameters
 
-*pThread*  
+*pThread*<br/>
 An existing worker thread.
 
 ### Return Value
@@ -229,7 +229,7 @@ HRESULT RemoveHandle(HANDLE hObject) throw();
 
 ### Parameters
 
-*hObject*  
+*hObject*<br/>
 The handle to remove.
 
 ### Return Value
@@ -250,7 +250,7 @@ HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();
 
 ### Parameters
 
-*dwWait*  
+*dwWait*<br/>
 The time in milliseconds to wait for the worker thread to shut down. ATL_WORKER_THREAD_WAIT defaults to 10 seconds. If necessary, you can define your own value for this symbol before including atlutil.h.
 
 ### Return Value
@@ -265,7 +265,7 @@ Note that calling `Shutdown` on an object initialized with a pointer to another 
 
 ## See Also
 
-[DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)   
-[Classes](../../atl/reference/atl-classes.md)   
-[Multithreading: Creating Worker Threads](../../parallel/multithreading-creating-worker-threads.md)   
+[DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)<br/>
+[Classes](../../atl/reference/atl-classes.md)<br/>
+[Multithreading: Creating Worker Threads](../../parallel/multithreading-creating-worker-threads.md)<br/>
 [IWorkerThreadClient Interface](../../atl/reference/iworkerthreadclient-interface.md)

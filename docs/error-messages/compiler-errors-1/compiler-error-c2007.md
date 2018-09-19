@@ -13,21 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2007
-\#define syntax  
-  
- No identifier appears after a `#define`. To resolve the error, use an identifier.  
-  
- The following sample generates C2007:  
-  
-```  
-// C2007.cpp  
-#define   // C2007  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2007b.cpp  
-// compile with: /c  
-#define true 1  
+
+\#define syntax
+
+No identifier appears after a `#define`. To resolve the error, use an identifier.
+
+The following sample generates C2007:
+
+```
+// C2007.cpp
+#define   // C2007
+```
+
+Possible resolution:
+
+```
+// C2007b.cpp
+// compile with: /c
+#define true 1
 ```

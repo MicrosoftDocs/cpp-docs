@@ -23,18 +23,18 @@ For more information, see [Property Sheets and Property Pages](/windows/desktop/
 
 ## In This Section
 
-[Specifying Property Pages](../atl/specifying-property-pages.md)  
+[Specifying Property Pages](../atl/specifying-property-pages.md)<br/>
 Lists the steps for specifying property pages for you control and shows an example class.
 
-[Implementing Property Pages](../atl/implementing-property-pages.md)  
+[Implementing Property Pages](../atl/implementing-property-pages.md)<br/>
 Lists the steps for implementing property pages, including methods to override. Walks you through a complete example based on the ATLPages sample program.
 
 ## Related Sections
 
-[ATLPages Sample](../visual-cpp-samples.md)  
+[ATLPages Sample](../visual-cpp-samples.md)<br/>
 The sample abstract for the ATLPages sample, which implements a property page using `IPropertyPageImpl`.
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Provides links to conceptual topics on how to program using the Active Template Library.
 
 ## See Also

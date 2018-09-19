@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 # Rename
 **What:** Lets you rename identifiers for code symbols, such as fields, local variables, methods, namespaces, properties and types.
 
-**When:** You want to safely rename something without having to find all instances, and copy/paste the new name.  
+**When:** You want to safely rename something without having to find all instances, and copy/paste the new name.
 
 **Why:** Copy and pasting the new name across an entire project would likely result in errors.  This refactoring tool will accurately perform the renaming action.
 

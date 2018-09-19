@@ -52,7 +52,7 @@ The following classes provide support for windows:
 
 ## See Also
 
-[Class Overview](../atl/atl-class-overview.md)   
-[Message Map Macros](../atl/reference/message-map-macros-atl.md)   
+[Class Overview](../atl/atl-class-overview.md)<br/>
+[Message Map Macros](../atl/reference/message-map-macros-atl.md)<br/>
 [Window Class Macros](../atl/reference/window-class-macros.md)
 

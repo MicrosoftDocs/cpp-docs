@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IColumnsInfoImpl Class
+
 Provides an implementation of the [IColumnsInfo](/previous-versions/windows/desktop/ms724541\(v=vs.85\)) interface.  
   
 ## Syntax
@@ -25,11 +26,13 @@ class ATL_NO_VTABLE IColumnsInfoImpl :
 ```  
   
 ### Parameters  
- *T*  
- Your class, derived from `IColumnsInfoImpl`.  
+
+*T*<br/>
+Your class, derived from `IColumnsInfoImpl`.  
 
 ## Requirements  
- **Header:** atldb.h  
+
+**Header:** atldb.h  
   
 ## Members  
   
@@ -41,9 +44,11 @@ class ATL_NO_VTABLE IColumnsInfoImpl :
 |[MapColumnIDs](#mapcolumnids)|Returns an array of ordinals of the columns in a rowset that are identified by the specified column IDs.|  
   
 ## Remarks  
- A mandatory interface on rowsets and commands. To modify the behavior of your provider's `IColumnsInfo` implementation, you need to modify the provider column map.  
+
+A mandatory interface on rowsets and commands. To modify the behavior of your provider's `IColumnsInfo` implementation, you need to modify the provider column map.  
 
 ## <a name="getcolumninfo"></a> IColumnsInfoImpl::GetColumnInfo
+
 Returns the column metadata needed by most consumers.  
   
 ### Syntax  
@@ -55,9 +60,11 @@ STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,
 ```  
   
 #### Parameters  
- See [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="mapcolumnids"></a> IColumnsInfoImpl::MapColumnIDs
+
 Returns an array of ordinals of the columns in a rowset that are identified by the specified column IDs.  
   
 ### Syntax  
@@ -69,8 +76,10 @@ STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,
 ```  
   
 #### Parameters  
- See [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ## See Also  
- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

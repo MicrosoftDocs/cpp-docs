@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 
 **Microsoft Specific**
 
-The following table lists the limits on the values of floating-point constants. These limits are also defined in the standard header file \<float.h>.  
+The following table lists the limits on the values of floating-point constants. These limits are also defined in the standard header file \<float.h>.
 
 ## Limits on Floating-Point Constants
 
@@ -42,4 +42,4 @@ The following table lists the limits on the values of floating-point constants. 
 
 ## See also
 
-[Integer Limits](../cpp/integer-limits.md)  
+[Integer Limits](../cpp/integer-limits.md)

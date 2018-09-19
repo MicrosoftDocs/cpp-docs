@@ -20,7 +20,7 @@ The **thread** extended storage-class modifier is used to declare a thread local
 
 ## Syntax
 
-> **__declspec( thread )** *declarator*  
+> **__declspec( thread )** *declarator*
 
 ## Remarks
 
@@ -82,6 +82,7 @@ Additionally, you must observe these guidelines when declaring thread local obje
 **END Microsoft Specific**
 
 ## See also
- [__declspec](../cpp/declspec.md)  
- [Keywords](../cpp/keywords-cpp.md)  
- [Thread Local Storage (TLS)](../parallel/thread-local-storage-tls.md)  
+
+[__declspec](../cpp/declspec.md)<br/>
+[Keywords](../cpp/keywords-cpp.md)<br/>
+[Thread Local Storage (TLS)](../parallel/thread-local-storage-tls.md)

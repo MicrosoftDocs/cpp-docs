@@ -13,21 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3370
-'idl_module name': idl_module not yet defined  
-  
- Before you can use [idl_module](../../windows/idl-module.md) to specify an entry point in a DLL, you must first use `idl_module` to specify the DLL name.  
-  
- The following sample generates C3370:  
-  
-```  
-// C3370.cpp  
-[module(name=MyLibrary)];  
-// uncomment the following line to resolve the error  
-// [idl_module(name="name1", dllname=x.dll)];  
-[idl_module(name="name1"), entry(100)] // C3370  
-int f1();  
-  
-int main()  
-{  
-}  
+
+'idl_module name': idl_module not yet defined
+
+Before you can use [idl_module](../../windows/idl-module.md) to specify an entry point in a DLL, you must first use `idl_module` to specify the DLL name.
+
+The following sample generates C3370:
+
+```
+// C3370.cpp
+[module(name=MyLibrary)];
+// uncomment the following line to resolve the error
+// [idl_module(name="name1", dllname=x.dll)];
+[idl_module(name="name1"), entry(100)] // C3370
+int f1();
+
+int main()
+{
+}
 ```

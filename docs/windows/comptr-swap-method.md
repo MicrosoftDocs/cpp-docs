@@ -30,7 +30,7 @@ void Swap(
 
 ### Parameters
 
-*r*  
+*r*<br/>
 A **ComPtr**.
 
 ## Requirements

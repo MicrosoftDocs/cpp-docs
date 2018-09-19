@@ -13,10 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2829
-'operator operator' cannot have a variable parameter list  
-  
- Only two operators can take variable parameter lists:  
-  
--   Function call `()`  
-  
--   `new`
+
+'operator operator' cannot have a variable parameter list
+
+Only two operators can take variable parameter lists:
+
+- Function call `()`
+
+- `new`

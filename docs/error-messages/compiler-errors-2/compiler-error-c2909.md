@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2909
-'identifier': explicit instantiation of function template requires return type  
-  
- An explicit instantiation of a function template requires explicit specification of its return type. Implicit return type specification does not work.  
-  
- The following sample generates C2909:  
-  
-```  
-// C2909.cpp  
-// compile with: /c  
-template<class T> int f(T);  
-template f<int>(int);         // C2909  
-template int f<int>(int);   // OK  
+
+'identifier': explicit instantiation of function template requires return type
+
+An explicit instantiation of a function template requires explicit specification of its return type. Implicit return type specification does not work.
+
+The following sample generates C2909:
+
+```
+// C2909.cpp
+// compile with: /c
+template<class T> int f(T);
+template f<int>(int);         // C2909
+template int f<int>(int);   // OK
 ```

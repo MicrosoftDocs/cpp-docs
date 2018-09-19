@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2934
-'class' : type-class-id redefined as a nested 'item' of 'identifier'  
-  
- You cannot use a generic or template class as a nested item.
+
+'class' : type-class-id redefined as a nested 'item' of 'identifier'
+
+You cannot use a generic or template class as a nested item.

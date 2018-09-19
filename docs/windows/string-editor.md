@@ -45,7 +45,7 @@ Win32
 
 ## See Also
 
-[Resource Editors](../windows/resource-editors.md)  
-[Strings](https://msdn.microsoft.com/library/windows/desktop/ms646979.aspx)  
+[Resource Editors](../windows/resource-editors.md)<br/>
+[Strings](https://msdn.microsoft.com/library/windows/desktop/ms646979.aspx)<br/>
 [About Strings](/windows/desktop/menurc/about-strings)
 

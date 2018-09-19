@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2495
-'identifier' : 'nothrow' can only be applied to function declarations or definitions  
-  
- The [nothrow](../../cpp/nothrow-cpp.md) extended attribute can be applied to function declarations or definitions only.  
-  
- The following sample generates C2495:  
-  
-```  
-// C2495.cpp  
-// compile with: /c  
-__declspec(nothrow) class X {   // C2495  
-   int m_data;  
-} x;  
-  
-__declspec(nothrow) void test();   // OK  
+
+'identifier' : 'nothrow' can only be applied to function declarations or definitions
+
+The [nothrow](../../cpp/nothrow-cpp.md) extended attribute can be applied to function declarations or definitions only.
+
+The following sample generates C2495:
+
+```
+// C2495.cpp
+// compile with: /c
+__declspec(nothrow) class X {   // C2495
+   int m_data;
+} x;
+
+__declspec(nothrow) void test();   // OK
 ```

@@ -11,6 +11,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # C.1 Notation
+
 The grammar rules consist of the name for a non-terminal, followed by a colon, followed by replacement alternatives on separate lines.
 
 The syntactic expression term<sub>opt</sub> indicates that the term is optional within the replacement.

@@ -13,9 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # TN046: Commenting Conventions for the MFC Classes
-This technical note originally described the conventions used to comment the MFC classes. This information is now covered in [MFC: Using the MFC Source Files](../mfc/using-the-mfc-source-files.md).  
-  
-## See Also  
- [Technical Notes by Number](../mfc/technical-notes-by-number.md)   
- [Technical Notes by Category](../mfc/technical-notes-by-category.md)
+
+This technical note originally described the conventions used to comment the MFC classes. This information is now covered in [MFC: Using the MFC Source Files](../mfc/using-the-mfc-source-files.md).
+
+## See Also
+
+[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
+[Technical Notes by Category](../mfc/technical-notes-by-category.md)
 

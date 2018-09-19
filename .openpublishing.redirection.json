@@ -6236,6 +6236,41 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/classfactory-addref-method.md",
+            "redirect_url": "/cpp/windows/classfactory-class#addref",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/classfactory-classfactory-constructor.md",
+            "redirect_url": "/cpp/windows/classfactory-class#classfactory",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/classfactory-lockserver-method.md",
+            "redirect_url": "/cpp/windows/classfactory-class#lockserver",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/classfactory-queryinterface-method.md",
+            "redirect_url": "/cpp/windows/classfactory-class#queryinterface",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/classfactory-release-method.md",
+            "redirect_url": "/cpp/windows/classfactory-class#release",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deferrableeventargs-getdeferral-method.md",
+            "redirect_url": "/cpp/windows/deferrableeventargs-class#getdeferral",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deferrableeventargs-invokeallfinished-method.md",
+            "redirect_url": "/cpp/windows/deferrableeventargs-class#invokeallfinished",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/eventsource-add-method.md",
             "redirect_url": "/cpp/windows/eventsource-class#add",
             "redirect_document_id": false

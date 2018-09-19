@@ -40,8 +40,8 @@ ms.workload: ["cplusplus"]
 &nbsp;&nbsp;&nbsp;&nbsp;*statement-list* *statement*
 
 *expression-statement*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*expression*<sub>opt</sub> **;**  
-  
+&nbsp;&nbsp;&nbsp;&nbsp;*expression*<sub>opt</sub> **;**
+
 *iteration-statement*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**while (**  *expression*  **)**  *statement*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**do**  *statement*  **while (**  *expression*  **) ;**<br/>
@@ -58,10 +58,11 @@ ms.workload: ["cplusplus"]
 &nbsp;&nbsp;&nbsp;&nbsp;**default :**  *statement*
 
 *try-except-statement*:   /\* Microsoft Specific \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__try**  *compound-statement* **__except (**  *expression*  **)**  *compound-statement*  
-  
+&nbsp;&nbsp;&nbsp;&nbsp;**__try**  *compound-statement* **__except (**  *expression*  **)**  *compound-statement*
+
 *try-finally-statement*:   /\* Microsoft Specific \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**__try**  *compound-statement* **__finally**  *compound-statement*
 
-## See Also  
+## See Also
+
 [Phrase Structure Grammar](../c-language/phrase-structure-grammar.md)

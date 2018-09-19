@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2066
-cast to function type is illegal  
-  
- In ANSI C, it is not legal to cast between a function pointer and a data pointer.
+
+cast to function type is illegal
+
+In ANSI C, it is not legal to cast between a function pointer and a data pointer.

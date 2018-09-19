@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4076
-invalid incremental status file 'filename'; linking nonincrementally  
-  
- LINK cannot write to the incremental status (.ilk) file. Either `filename` is corrupt or it is not an incremental linking database. Remove the file and relink.
+
+invalid incremental status file 'filename'; linking nonincrementally
+
+LINK cannot write to the incremental status (.ilk) file. Either `filename` is corrupt or it is not an incremental linking database. Remove the file and relink.

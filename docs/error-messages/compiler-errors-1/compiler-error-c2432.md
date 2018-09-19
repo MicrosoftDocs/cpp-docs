@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2432
-illegal reference to 16-bit data in 'identifier'  
-  
- A 16-bit register is used as an index or base register. The compiler does not support referencing 16-bit data. 16-bit registers cannot be used as index or base registers when compiling for 32-bit code.  
-  
- The following sample generates C2432:  
-  
-```  
-// C2432.cpp  
-// processor: x86  
-int main() {  
-   _asm mov eax, DWORD PTR [bx]   // C2432  
-}  
+
+illegal reference to 16-bit data in 'identifier'
+
+A 16-bit register is used as an index or base register. The compiler does not support referencing 16-bit data. 16-bit registers cannot be used as index or base registers when compiling for 32-bit code.
+
+The following sample generates C2432:
+
+```
+// C2432.cpp
+// processor: x86
+int main() {
+   _asm mov eax, DWORD PTR [bx]   // C2432
+}
 ```

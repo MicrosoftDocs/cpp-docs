@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4200
-corrupt line number information in object file; ignored  
-  
- The line number information in the object file is corrupt. Rebuild.
+
+corrupt line number information in object file; ignored
+
+The line number information in the object file is corrupt. Rebuild.

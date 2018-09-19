@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2251
-namespace 'namespace' does not have a member 'member' - Did you mean 'member'?  
-  
- The compiler was not able to find an identifier in the specified namespace.  
-  
- The following sample generates C2251:  
-  
-```  
-// C2251.cpp  
-// compile with: /c  
-namespace A {  
-   namespace B {  
-      void f1();  
-   }  
-  
-   using namespace B;  
-}  
-  
-void A::f1() {}   // C2251  
-void A::B::f1() {}   // OK  
+
+namespace 'namespace' does not have a member 'member' - Did you mean 'member'?
+
+The compiler was not able to find an identifier in the specified namespace.
+
+The following sample generates C2251:
+
+```
+// C2251.cpp
+// compile with: /c
+namespace A {
+   namespace B {
+      void f1();
+   }
+
+   using namespace B;
+}
+
+void A::f1() {}   // C2251
+void A::B::f1() {}   // OK
 ```

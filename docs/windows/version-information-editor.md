@@ -42,5 +42,5 @@ Win32
 
 ## See Also
 
-[Resource Editors](../windows/resource-editors.md)  
+[Resource Editors](../windows/resource-editors.md)<br/>
 [Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

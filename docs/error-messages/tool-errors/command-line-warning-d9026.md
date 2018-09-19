@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Command-Line Warning D9026
-options apply to entire command line  
-  
- An option was specified on a command after a filename was specified. The option was applied to the file that preceded it.  
-  
- For example, in the command  
-  
-```  
-CL verdi.c /G5 puccini.c  
-```  
-  
- the file VERDI.c will be compiled using the /G5 option, not the /G4 default.  
-  
- This behavior is different from that of some previous versions, which applied only the options specified before the filename, resulting in VERDI.c being compiled using /G4 and PUCCINI.c being compiled using /G5.
+
+options apply to entire command line
+
+An option was specified on a command after a filename was specified. The option was applied to the file that preceded it.
+
+For example, in the command
+
+```
+CL verdi.c /G5 puccini.c
+```
+
+the file VERDI.c will be compiled using the /G5 option, not the /G4 default.
+
+This behavior is different from that of some previous versions, which applied only the options specified before the filename, resulting in VERDI.c being compiled using /G4 and PUCCINI.c being compiled using /G5.

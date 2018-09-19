@@ -36,7 +36,7 @@ _ATLCATCH(e)
 
 ### Parameters
 
-*e*  
+*e*<br/>
 The exception to catch.
 
 ### Remarks

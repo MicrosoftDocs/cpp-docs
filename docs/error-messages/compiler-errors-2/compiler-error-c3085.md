@@ -13,23 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3085
-'constructor': a constructor cannot be 'keyword'  
-  
- A constructor was declared incorrectly. See [Override Specifiers](../../windows/override-specifiers-cpp-component-extensions.md) for more information.  
-  
-## Example  
- The following sample generates C3085.  
-  
-```  
-// C3085.cpp  
-// compile with: /c /clr  
-ref struct S {  
-   S() abstract;   // C3085  
-   S(S%) abstract;   // C3085  
-};  
-  
-ref struct T {  
-   T() sealed {}   // C3085  
-   T(T%) sealed {}   // C3085  
-};  
+
+'constructor': a constructor cannot be 'keyword'
+
+A constructor was declared incorrectly. See [Override Specifiers](../../windows/override-specifiers-cpp-component-extensions.md) for more information.
+
+## Example
+
+The following sample generates C3085.
+
+```
+// C3085.cpp
+// compile with: /c /clr
+ref struct S {
+   S() abstract;   // C3085
+   S(S%) abstract;   // C3085
+};
+
+ref struct T {
+   T() sealed {}   // C3085
+   T(T%) sealed {}   // C3085
+};
 ```

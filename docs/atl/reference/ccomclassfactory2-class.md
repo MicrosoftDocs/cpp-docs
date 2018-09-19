@@ -19,7 +19,7 @@ This class implements the [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-i
 ## Syntax
 
 ```
-template <class license>  
+template <class license>
 class CComClassFactory2 : public IClassFactory2,
     public CComObjectRootEx<CComGlobalsThreadModel>,
     public license
@@ -27,7 +27,7 @@ class CComClassFactory2 : public IClassFactory2,
 
 #### Parameters
 
-*license*  
+*license*<br/>
 A class that implements the following static functions:
 
 - `static BOOL VerifyLicenseKey( BSTR bstr );`
@@ -88,13 +88,13 @@ STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 
 ### Parameters
 
-*pUnkOuter*  
+*pUnkOuter*<br/>
 [in] If the object is being created as part of an aggregate, then *pUnkOuter* must be the outer unknown. Otherwise, *pUnkOuter* must be NULL.
 
-*riid*  
+*riid*<br/>
 [in] The IID of the requested interface. If *pUnkOuter* is non- NULL, *riid* must be `IID_IUnknown`.
 
-*ppvObj*  
+*ppvObj*<br/>
 [out] A pointer to the interface pointer identified by *riid*. If the object does not support this interface, *ppvObj* is set to NULL.
 
 ### Return Value
@@ -121,19 +121,19 @@ STDMETHOD(CreateInstanceLic)(
 
 ### Parameters
 
-*pUnkOuter*  
+*pUnkOuter*<br/>
 [in] If the object is being created as part of an aggregate, then *pUnkOuter* must be the outer unknown. Otherwise, *pUnkOuter* must be NULL.
 
-*pUnkReserved*  
+*pUnkReserved*<br/>
 [in] Not used. Must be NULL.
 
-*riid*  
+*riid*<br/>
 [in] The IID of the requested interface. If *pUnkOuter* is non- NULL, *riid* must be `IID_IUnknown`.
 
-*bstrKey*  
+*bstrKey*<br/>
 [in] The run-time license key previously obtained from a call to `RequestLicKey`. This key is required to create the object.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] A pointer to the interface pointer specified by *riid*. If the object does not support this interface, *ppvObject* is set to NULL.
 
 ### Return Value
@@ -154,7 +154,7 @@ STDMETHOD(GetLicInfo)(LICINFO* pLicInfo);
 
 ### Parameters
 
-*pLicInfo*  
+*pLicInfo*<br/>
 [out] Pointer to a `LICINFO` structure.
 
 ### Return Value
@@ -175,7 +175,7 @@ STDMETHOD(LockServer)(BOOL fLock);
 
 ### Parameters
 
-*fLock*  
+*fLock*<br/>
 [in] If TRUE, the lock count is incremented; otherwise, the lock count is decremented.
 
 ### Return Value
@@ -198,10 +198,10 @@ STDMETHOD(RequestLicKey)(DWORD dwReserved, BSTR* pbstrKey);
 
 ### Parameters
 
-*dwReserved*  
+*dwReserved*<br/>
 [in] Not used. Must be zero.
 
-*pbstrKey*  
+*pbstrKey*<br/>
 [out] Pointer to the license key.
 
 ### Return Value
@@ -216,8 +216,8 @@ Call [GetLicInfo](#getlicinfo) to retrieve the value of `fRuntimeKeyAvail`.
 
 ## See Also
 
-[CComClassFactoryAutoThread Class](../../atl/reference/ccomclassfactoryautothread-class.md)   
-[CComClassFactorySingleton Class](../../atl/reference/ccomclassfactorysingleton-class.md)   
-[CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
-[CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)   
+[CComClassFactoryAutoThread Class](../../atl/reference/ccomclassfactoryautothread-class.md)<br/>
+[CComClassFactorySingleton Class](../../atl/reference/ccomclassfactorysingleton-class.md)<br/>
+[CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)<br/>
+[CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

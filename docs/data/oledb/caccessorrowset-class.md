@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CAccessorRowset Class
+
 Encapsulates a rowset and its associated accessors in a single class.  
   
 ## Syntax
@@ -24,14 +25,16 @@ class CAccessorRowset : public TAccessor, public TRowset<TAccessor>
 ```  
   
 ### Parameters  
- *TAccessor*  
- An accessor class.  
+
+*TAccessor*<br/>
+An accessor class.  
   
- *TRowset*  
- A rowset class.  
+*TRowset*<br/>
+A rowset class.  
 
 ## Requirements  
- **Header:** atldbcli.h  
+
+**Header:** atldbcli.h  
   
 ## Members  
   
@@ -46,9 +49,11 @@ class CAccessorRowset : public TAccessor, public TRowset<TAccessor>
 |[GetColumnInfo](#getcolumninfo)|Implements [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)).|  
   
 ## Remarks  
- Class `TAccessor` manages the accessor. Class *TRowset* manages the rowset.  
+
+Class `TAccessor` manages the accessor. Class *TRowset* manages the rowset.  
 
 ## <a name="bind"></a> CAccessorRowset::Bind
+
 Creates the bindings if you specified `bBind` as **false** in [CCommand::Open](../../data/oledb/ccommand-open.md).  
   
 ### Syntax  
@@ -58,9 +63,11 @@ HRESULT Bind();
 ```  
   
 ### Return Value  
- A standard HRESULT.  
+
+A standard HRESULT.  
 
 ## <a name="caccessorrowset"></a> CAccessorRowset::CAccessorRowset
+
 Initializes the `CAccessorRowset` object.  
   
 ### Syntax  
@@ -70,6 +77,7 @@ CAccessorRowset();
 ```  
 
 ## <a name="close"></a> CAccessorRowset::Close
+
 Releases any active accessors and the rowset.  
   
 ### Syntax  
@@ -79,9 +87,11 @@ void Close();
 ```  
   
 ### Remarks  
- Releases any associated memory.  
+
+Releases any associated memory.  
 
 ## <a name="freerecordmemory"></a> CAccessorRowset::FreeRecordMemory
+
 Frees any columns in the current record that need to be freed.  
   
 ### Syntax  
@@ -91,6 +101,7 @@ void FreeRecordMemory();
 ```  
 
 ## <a name="getcolumninfo"></a> CAccessorRowset::GetColumnInfo
+
 Gets column information from the opened rowset.  
   
 ### Syntax  
@@ -105,16 +116,20 @@ HRESULT GetColumnInfo(DBORDINAL* pColumns,
 ```  
   
 #### Parameters  
- See [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
- A standard HRESULT.  
+
+A standard HRESULT.  
   
 ### Remarks  
- The user must free the returned column information and string buffer. Use the second version of this method when you use [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) and need to override the bindings.  
+
+The user must free the returned column information and string buffer. Use the second version of this method when you use [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) and need to override the bindings.  
   
- For more information, see [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+For more information, see [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ## See Also  
- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
+
+[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

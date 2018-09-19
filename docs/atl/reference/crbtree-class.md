@@ -22,22 +22,22 @@ This class provides methods for creating and utilizing a Red-Black tree.
 template <typename K,
           typename V, 
           class KTraits = CElementTraits<K>, 
-          class VTraits = CElementTraits<V>> 
+          class VTraits = CElementTraits<V>>
 class CRBTree
 ```
 
 #### Parameters
 
-*K*  
+*K*<br/>
 The key element type.
 
-*V*  
+*V*<br/>
 The value element type.
 
-*KTraits*  
+*KTraits*<br/>
 The code used to copy or move key elements. See [CElementTraits Class](../../atl/reference/celementtraits-class.md) for more details.
 
-*VTraits*  
+*VTraits*<br/>
 The code used to copy or move value elements.
 
 ## Members
@@ -137,7 +137,7 @@ POSITION FindFirstKeyAfter(KINARGTYPE key) const throw();
 
 ### Parameters
 
-*key*  
+*key*<br/>
 A key value.
 
 ### Return Value
@@ -160,13 +160,13 @@ void GetAt(POSITION pos, KOUTARGTYPE key, VOUTARGTYPE value) const;
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position value.
 
-*key*  
+*key*<br/>
 The variable that receives the key.
 
-*value*  
+*value*<br/>
 The variable that receives the value.
 
 ### Return Value
@@ -217,7 +217,7 @@ const K& GetKeyAt(POSITION pos) const throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position value.
 
 ### Return Value
@@ -239,7 +239,7 @@ CPair* GetNext(POSITION& pos) throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position counter, returned by a previous call to methods such as [CRBTree::GetHeadPosition](#getheadposition) or [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).
 
 ### Return Value
@@ -263,13 +263,13 @@ void GetNextAssoc(
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position counter, returned by a previous call to methods such as [CRBTree::GetHeadPosition](#getheadposition) or [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).
 
-*key*  
+*key*<br/>
 Template parameter specifying the type of the tree's key.
 
-*value*  
+*value*<br/>
 Template parameter specifying the type of the tree's value.
 
 ### Remarks
@@ -286,7 +286,7 @@ const K& GetNextKey(POSITION& pos) const throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position counter, returned by a previous call to methods such as [CRBTree::GetHeadPosition](#getheadposition) or [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).
 
 ### Return Value
@@ -308,7 +308,7 @@ V& GetNextValue(POSITION& pos) throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position counter, returned by a previous call to methods such as [CRBTree::GetHeadPosition](#getheadposition) or [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).
 
 ### Return Value
@@ -330,7 +330,7 @@ CPair* GetPrev(POSITION& pos) throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position counter, returned by a previous call to methods such as [CRBTree::GetHeadPosition](#getheadposition) or [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).
 
 ### Return Value
@@ -368,7 +368,7 @@ V& GetValueAt(POSITION pos) throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position counter, returned by a previous call to methods such as [CRBTree::GetHeadPosition](#getheadposition) or [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).
 
 ### Return Value
@@ -425,7 +425,7 @@ void RemoveAt(POSITION pos) throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position counter, returned by a previous call to methods such as [CRBTree::GetHeadPosition](#getheadposition) or [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).
 
 ### Remarks
@@ -442,10 +442,10 @@ void SetValueAt(POSITION pos, VINARGTYPE value);
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position counter, returned by a previous call to methods such as [CRBTree::GetHeadPosition](#getheadposition) or [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).
 
-*value*  
+*value*<br/>
 The value to add to the `CRBTree` object.
 
 ### Remarks

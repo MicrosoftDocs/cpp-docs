@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3805
-'token' : unexpected token, expected either '}' or an identifier  
-  
- When defining a property, an invalid token was encountered. Remove the invalid token.
+
+'token' : unexpected token, expected either '}' or an identifier
+
+When defining a property, an invalid token was encountered. Remove the invalid token.

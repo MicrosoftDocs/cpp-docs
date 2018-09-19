@@ -20,7 +20,7 @@ This class defines a COM enumerator object based on a C++ Standard Library colle
 
 ```
 template <class Base,
-    const IID* piid, class T, class Copy, class CollType, class ThreadModel = CComObjectThreadModel>  
+    const IID* piid, class T, class Copy, class CollType, class ThreadModel = CComObjectThreadModel>
 class ATL_NO_VTABLE CComEnumOnSTL : public IEnumOnSTLImpl<Base, piid,
 T,
     Copy,
@@ -30,19 +30,19 @@ CollType>,
 
 #### Parameters
 
-*Base*  
+*Base*<br/>
 A COM enumerator. See [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) for an example.
 
-*piid*  
+*piid*<br/>
 A pointer to the interface ID of the enumerator interface.
 
-*T*  
+*T*<br/>
 The type of item exposed by the enumerator interface.
 
-*Copy*  
+*Copy*<br/>
 A [copy policy](../../atl/atl-copy-policy-classes.md) class.
 
-*CollType*  
+*CollType*<br/>
 A C++ Standard Library container class.
 
 ## Remarks
@@ -99,9 +99,9 @@ This code creates a **typedef** for `CComEnumOnSTL` that exposes a vector of `CC
 
 ## See Also
 
-[IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)   
-[ATLCollections Sample: Demonstrates ICollectionOnSTLImpl, CComEnumOnSTL, and Custom Copy Policy Classes](../../visual-cpp-samples.md)   
-[Class Overview](../../atl/atl-class-overview.md)   
-[CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
-[CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)   
+[IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)<br/>
+[ATLCollections Sample: Demonstrates ICollectionOnSTLImpl, CComEnumOnSTL, and Custom Copy Policy Classes](../../visual-cpp-samples.md)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
+[CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)<br/>
+[CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)<br/>
 [IEnumOnSTLImpl Class](../../atl/reference/ienumonstlimpl-class.md)

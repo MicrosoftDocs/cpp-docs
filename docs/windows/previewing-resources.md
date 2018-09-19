@@ -55,5 +55,5 @@ Win32
 
 ## See Also
 
-[How to: Open a Resource Script File Outside of a Project (Standalone)](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)  
+[How to: Open a Resource Script File Outside of a Project (Standalone)](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)<br/>
 [Resource Editors](../windows/resource-editors.md)

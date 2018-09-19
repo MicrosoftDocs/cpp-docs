@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2018
-unknown character 'hexnumber'  
-  
- The source file contains an unexpected ASCII character, which is identified by its hex number. To resolve the error, remove the character.
+
+unknown character 'hexnumber'
+
+The source file contains an unexpected ASCII character, which is identified by its hex number. To resolve the error, remove the character.

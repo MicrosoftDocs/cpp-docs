@@ -36,13 +36,13 @@ HRESULT CopyTo(
 
 ### Parameters
 
-*U*  
+*U*<br/>
 A type name.
 
-*ptr*  
+*ptr*<br/>
 When this operation completes, a pointer to the requested interface.
 
-*riid*  
+*riid*<br/>
 An interface ID.
 
 ## Return Value

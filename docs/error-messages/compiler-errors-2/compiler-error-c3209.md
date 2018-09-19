@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3209
-'class' : generic class must be a managed or WinRTclass  
-  
- A generic class must be a managed class or a Windows Runtime class.  
-  
- The following sample generates C3209 and shows how to fix it:  
-  
-```  
-// C3209.cpp  
-// compile with: /clr  
-generic <class T>  
-class C {};   // C3209  
-  
-// OK - ref class can be generic  
-generic <class T>  
-ref class D {};  
+
+'class' : generic class must be a managed or WinRTclass
+
+A generic class must be a managed class or a Windows Runtime class.
+
+The following sample generates C3209 and shows how to fix it:
+
+```
+// C3209.cpp
+// compile with: /clr
+generic <class T>
+class C {};   // C3209
+
+// OK - ref class can be generic
+generic <class T>
+ref class D {};
 ```

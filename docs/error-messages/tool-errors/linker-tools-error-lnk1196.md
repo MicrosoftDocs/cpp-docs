@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1196
-invalid or corrupt import object: unknown version  
-  
- The import library is corrupted. Rebuild the library.
+
+invalid or corrupt import object: unknown version
+
+The import library is corrupted. Rebuild the library.

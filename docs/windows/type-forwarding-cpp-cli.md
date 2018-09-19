@@ -40,10 +40,10 @@ The following code example demonstrates how to use type forwarding.
 
 ### Parameters
 
-*new*  
+*new*<br/>
 The assembly into which you are moving the type definition.
 
-*type*  
+*type*<br/>
 The type whose definition you are moving into another assembly.
 
 ### Remarks

@@ -50,5 +50,5 @@ For information about how to access the **General** linker property page, see [W
 
 ## See also
 
-[VC++ Project Settings, Projects and Solutions, Options Dialog Box](/visualstudio/ide/reference/vcpp-project-settings-projects-and-solutions-options-dialog-box)  
-[Property Pages](../ide/property-pages-visual-cpp.md)  
+[VC++ Project Settings, Projects and Solutions, Options Dialog Box](/visualstudio/ide/reference/vcpp-project-settings-projects-and-solutions-options-dialog-box)<br>
+[Property Pages](../ide/property-pages-visual-cpp.md)

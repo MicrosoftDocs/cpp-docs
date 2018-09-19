@@ -40,6 +40,6 @@ The following classes provide support for a COM module:
 
 ## See Also
 
-[Class Overview](../atl/atl-class-overview.md)   
+[Class Overview](../atl/atl-class-overview.md)<br/>
 [Module Classes](../atl/atl-module-classes.md)
 

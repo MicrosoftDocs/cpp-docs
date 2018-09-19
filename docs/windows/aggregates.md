@@ -27,10 +27,10 @@ Indicates that the object aggregates the object specified by the CLSID.
 
 ### Parameters
 
-*clsid*  
+*clsid*<br/>
 Specifies the CLSID of the aggregatable object.
 
-*variable_name*  
+*variable_name*<br/>
 The name of the variable that is to be inserted. This variable contains the `IUnknown` of the object being aggregated.
 
 ## Remarks
@@ -91,9 +91,9 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[COM Attributes](../windows/com-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)  
-[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
-[Aggregation](/windows/desktop/com/aggregation)  
-[Aggregatable](/windows/desktop/Midl/aggregatable)  
+[COM Attributes](../windows/com-attributes.md)<br/>
+[Class Attributes](../windows/class-attributes.md)<br/>
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[Aggregation](/windows/desktop/com/aggregation)<br/>
+[Aggregatable](/windows/desktop/Midl/aggregatable)<br/>
 [COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../atl/reference/com-interface-entry-macros.md#com_interface_entry_autoaggregate_blind)  

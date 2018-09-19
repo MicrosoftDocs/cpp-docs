@@ -13,14 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2516
-'name' : is not a legal base class  
-  
- The class is derived from a type name defined by a `typedef` statement.  
-  
- The following sample generates C2516:  
-  
-```  
-// C2516.cpp  
-typedef unsigned long ulong;  
-class C : public ulong {}; // C2516  
+
+'name' : is not a legal base class
+
+The class is derived from a type name defined by a `typedef` statement.
+
+The following sample generates C2516:
+
+```
+// C2516.cpp
+typedef unsigned long ulong;
+class C : public ulong {}; // C2516
 ```

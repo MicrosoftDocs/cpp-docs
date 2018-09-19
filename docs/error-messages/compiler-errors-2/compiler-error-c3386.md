@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3386
-'type' : __declspec(dllexport)/\__declspec(dllimport) cannot be applied to a managed or WinRTtype  
-  
- The `dllimport` and [dllexport](../../cpp/dllexport-dllimport.md) `__declspec` modifiers are not valid on a managed or Windows Runtime type.  
-  
- The following sample generates C3386 and shows how to fix it:  
-  
-```  
-// C3386.cpp  
-// compile with: /clr /c  
-ref class __declspec(dllimport) X1 {   // C3386  
-// try the following line instead  
-// ref class X1 {  
-};  
+
+'type' : __declspec(dllexport)/\__declspec(dllimport) cannot be applied to a managed or WinRTtype
+
+The `dllimport` and [dllexport](../../cpp/dllexport-dllimport.md) `__declspec` modifiers are not valid on a managed or Windows Runtime type.
+
+The following sample generates C3386 and shows how to fix it:
+
+```
+// C3386.cpp
+// compile with: /clr /c
+ref class __declspec(dllimport) X1 {   // C3386
+// try the following line instead
+// ref class X1 {
+};
 ```

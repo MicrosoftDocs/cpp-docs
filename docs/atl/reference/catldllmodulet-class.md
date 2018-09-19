@@ -19,13 +19,13 @@ This class represents the module for a DLL.
 ## Syntax
 
 ```
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class derived from `CAtlDllModuleT`.
 
 ## Members
@@ -109,13 +109,13 @@ HRESULT DllGetClassObject(
 
 ### Parameters
 
-*rclsid*  
+*rclsid*<br/>
 The CLSID of the object to be created.
 
-*riid*  
+*riid*<br/>
 The IID of the requested interface.
 
-*ppv*  
+*ppv*<br/>
 A pointer to the interface pointer identified by *riid*. If the object does not support this interface, *ppv* is set to NULL.
 
 ### Return Value
@@ -132,10 +132,10 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID /* lpReserved*/) throw();
 
 ### Parameters
 
-*dwReason*  
+*dwReason*<br/>
 If set to DLL_PROCESS_ATTACH, the DLL_THREAD_ATTACH and DLL_THREAD_DETACH notification calls are disabled.
 
-*lpReserved*  
+*lpReserved*<br/>
 Reserved.
 
 ### Return Value
@@ -156,7 +156,7 @@ HRESULT DllRegisterServer(BOOL bRegTypeLib = TRUE) throw();
 
 ### Parameters
 
-*bRegTypeLib*  
+*bRegTypeLib*<br/>
 TRUE if the type library is to be registered. The default value is TRUE.
 
 ### Return Value
@@ -173,7 +173,7 @@ HRESULT DllUnregisterServer(BOOL bUnRegTypeLib = TRUE) throw();
 
 ### Parameters
 
-*bUnRegTypeLib*  
+*bUnRegTypeLib*<br/>
 TRUE if the type library is to be removed from the registry. The default value is TRUE.
 
 ### Return Value
@@ -193,13 +193,13 @@ HRESULT GetClassObject(
 
 ### Parameters
 
-*rclsid*  
+*rclsid*<br/>
 The CLSID of the object to be created.
 
-*riid*  
+*riid*<br/>
 The IID of the requested interface.
 
-*ppv*  
+*ppv*<br/>
 A pointer to the interface pointer identified by *riid*. If the object does not support this interface, *ppv* is set to NULL.
 
 ### Return Value
@@ -212,7 +212,7 @@ This method is called by [CAtlDllModuleT::DllGetClassObject](#dllgetclassobject)
 
 ## See Also
 
-[CAtlModuleT Class](../../atl/reference/catlmodulet-class.md)   
-[CAtlExeModuleT Class](../../atl/reference/catlexemodulet-class.md)   
-[Class Overview](../../atl/atl-class-overview.md)   
+[CAtlModuleT Class](../../atl/reference/catlmodulet-class.md)<br/>
+[CAtlExeModuleT Class](../../atl/reference/catlexemodulet-class.md)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [Module Classes](../../atl/atl-module-classes.md)

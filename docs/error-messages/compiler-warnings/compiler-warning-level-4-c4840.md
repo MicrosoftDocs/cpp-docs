@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 # Compiler Warning (level 4) C4840
 
 > non-portable use of class '*type*' as an argument to a variadic function
-  
+
 ## Remarks
 
 Classes or structs that are passed to a variadic function must be trivially copyable. When passing such objects, the compiler simply makes a bitwise copy and does not call the constructor or destructor.

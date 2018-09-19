@@ -39,6 +39,7 @@ Don’t use C-style arrays. For older APIs that need direct access to the data, 
 For more information about containers, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
 
 ## See also
- [Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)  
- [C++ Language Reference](../cpp/cpp-language-reference.md)  
- [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)  
+
+[Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
+[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

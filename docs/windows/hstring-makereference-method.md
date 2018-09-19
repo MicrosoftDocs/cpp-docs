@@ -30,13 +30,13 @@ template<unsigned int sizeDest>
 
 ### Parameters
 
-*sizeDest*  
+*sizeDest*<br/>
 A template parameter that specifies the size of the destination `HStringReference` buffer.
 
-*str*  
+*str*<br/>
 A reference to a wide-character string.
 
-*len*  
+*len*<br/>
 The maximum length of the *str* parameter buffer to use in this operation. If the *len* parameter isn't specified, the entire *str* parameter is used.
 
 ## Return Value

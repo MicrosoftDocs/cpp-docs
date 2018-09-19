@@ -13,26 +13,27 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2133
-'identifier' : unknown size  
-  
- An unsized array is declared as a member of a class, structure, union, or enumeration. The /Za (ANSI C) option does not allow unsized member arrays.  
-  
- The following sample generates C2133:  
-  
-```  
-// C2133.cpp  
-// compile with: /Za  
-struct X {  
-   int a[0];   // C2133 unsized array  
-};  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2133b.cpp  
-// compile with: /c  
-struct X {  
-   int a[0];   // no /Za  
-};  
+
+'identifier' : unknown size
+
+An unsized array is declared as a member of a class, structure, union, or enumeration. The /Za (ANSI C) option does not allow unsized member arrays.
+
+The following sample generates C2133:
+
+```
+// C2133.cpp
+// compile with: /Za
+struct X {
+   int a[0];   // C2133 unsized array
+};
+```
+
+Possible resolution:
+
+```
+// C2133b.cpp
+// compile with: /c
+struct X {
+   int a[0];   // no /Za
+};
 ```

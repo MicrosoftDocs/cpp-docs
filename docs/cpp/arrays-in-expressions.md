@@ -12,18 +12,20 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Arrays in Expressions
-When an identifier of an array type appears in an expression other than `sizeof`, address-of (**&**), or initialization of a reference, it is converted to a pointer to the first array element. For example:  
-  
-```cpp 
-char szError1[] = "Error: Disk drive not ready.";  
-char *psz = szError1;  
-```  
-  
- The pointer `psz` points to the first element of the array `szError1`. Note that arrays, unlike pointers, are not modifiable l-values. Therefore, the following assignment is illegal:  
-  
-```cpp 
-szError1 = psz;  
-```  
-  
-## See also  
- [Arrays](../cpp/arrays-cpp.md)
+
+When an identifier of an array type appears in an expression other than `sizeof`, address-of (**&**), or initialization of a reference, it is converted to a pointer to the first array element. For example:
+
+```cpp
+char szError1[] = "Error: Disk drive not ready.";
+char *psz = szError1;
+```
+
+The pointer `psz` points to the first element of the array `szError1`. Note that arrays, unlike pointers, are not modifiable l-values. Therefore, the following assignment is illegal:
+
+```cpp
+szError1 = psz;
+```
+
+## See also
+
+[Arrays](../cpp/arrays-cpp.md)

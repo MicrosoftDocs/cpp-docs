@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2190
-first parameter list longer than second  
-  
- A C function was declared a second time with a shorter parameter list. C does not support overloaded functions.  
-  
- The following sample generates C2190:  
-  
-```  
-// C2190.c  
-// compile with: /Za /c  
-void func( int, float );  
-void func( int  );   // C2190, different parameter list  
-void func2( int  );   // OK  
+
+first parameter list longer than second
+
+A C function was declared a second time with a shorter parameter list. C does not support overloaded functions.
+
+The following sample generates C2190:
+
+```
+// C2190.c
+// compile with: /Za /c
+void func( int, float );
+void func( int  );   // C2190, different parameter list
+void func2( int  );   // OK
 ```

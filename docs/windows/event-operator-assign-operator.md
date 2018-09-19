@@ -26,7 +26,7 @@ WRL_NOTHROW Event& operator=(
 
 ### Parameters
 
-*h*  
+*h*<br/>
 An rvalue-reference to an **Event** instance.
 
 ## Return Value

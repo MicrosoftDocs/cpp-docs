@@ -41,7 +41,7 @@ Win32
 
 ## See Also
 
-[How to: Specify Include Directories for Resources](../windows/how-to-specify-include-directories-for-resources.md)  
-[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)  
-[Resource Files](../windows/resource-files-visual-studio.md)  
+[How to: Specify Include Directories for Resources](../windows/how-to-specify-include-directories-for-resources.md)<br/>
+[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)<br/>
+[Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [Resource Editors](../windows/resource-editors.md)

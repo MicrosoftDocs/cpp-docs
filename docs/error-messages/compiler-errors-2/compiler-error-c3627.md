@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3627
-Only a value type can be boxed  
-  
-Only value classes can be boxed.  
+
+Only a value type can be boxed
+
+Only value classes can be boxed.

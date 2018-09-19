@@ -28,7 +28,7 @@ The following sample generates C2483 in Visual Studio 2013 and earlier versions.
 __declspec(thread) struct A {
    A(){}
    ~A(){}
-} aa;   // C2483 error  
+} aa;   // C2483 error
 
 __declspec(thread) struct B {} b;   // OK
 ```

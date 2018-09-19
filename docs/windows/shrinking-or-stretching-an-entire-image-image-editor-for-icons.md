@@ -29,5 +29,5 @@ None
 
 ## See Also
 
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)  
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [Resizing an Image](../windows/resizing-an-image-image-editor-for-icons.md)

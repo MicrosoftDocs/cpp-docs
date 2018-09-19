@@ -13,17 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2262
-'attribute_specifiers' : InternalsVisibleTo declarations cannot have a version, culture, or processor architecture specified  
-  
- The <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute was not specified correctly.  
-  
-## Example  
- The following sample generates C2262.  
-  
-```  
-// C2262.cpp  
-// compile with: /clr /c  
-using namespace System::Runtime::CompilerServices;  
-[assembly: InternalsVisibleTo("assembly_name, version=1.2.3.7")];   // C2262  
-[assembly: InternalsVisibleTo("assembly_name ")];   // OK  
+
+'attribute_specifiers' : InternalsVisibleTo declarations cannot have a version, culture, or processor architecture specified
+
+The <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute was not specified correctly.
+
+## Example
+
+The following sample generates C2262.
+
+```
+// C2262.cpp
+// compile with: /clr /c
+using namespace System::Runtime::CompilerServices;
+[assembly: InternalsVisibleTo("assembly_name, version=1.2.3.7")];   // C2262
+[assembly: InternalsVisibleTo("assembly_name ")];   // OK
 ```

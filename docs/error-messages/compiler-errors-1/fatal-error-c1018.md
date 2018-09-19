@@ -13,27 +13,28 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1018
-unexpected #elif  
-  
- The `#elif` directive appears outside an `#if`, `#ifdef`, or `#ifndef` construct. Use `#elif` only within one of these constructs.  
-  
- The following sample generates C1018:  
-  
-```  
-// C1018.cpp  
-#elif      // C1018  
-#endif  
-  
-int main() {}  
-```  
-  
- Possible resolution:  
-  
-```  
-// C1018b.cpp  
-#if 1  
-#elif  
-#endif  
-  
-int main() {}  
+
+unexpected #elif
+
+The `#elif` directive appears outside an `#if`, `#ifdef`, or `#ifndef` construct. Use `#elif` only within one of these constructs.
+
+The following sample generates C1018:
+
+```
+// C1018.cpp
+#elif      // C1018
+#endif
+
+int main() {}
+```
+
+Possible resolution:
+
+```
+// C1018b.cpp
+#if 1
+#elif
+#endif
+
+int main() {}
 ```

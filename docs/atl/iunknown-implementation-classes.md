@@ -44,8 +44,8 @@ The following classes implement `IUnknown` and related methods:
 
 ## See Also
 
-[Class Overview](../atl/atl-class-overview.md)   
-[Aggregation and Class Factory Macros](../atl/reference/aggregation-and-class-factory-macros.md)   
-[COM Map Macros](../atl/reference/com-map-macros.md)   
+[Class Overview](../atl/atl-class-overview.md)<br/>
+[Aggregation and Class Factory Macros](../atl/reference/aggregation-and-class-factory-macros.md)<br/>
+[COM Map Macros](../atl/reference/com-map-macros.md)<br/>
 [COM Map Global Functions](../atl/reference/com-map-global-functions.md)
 

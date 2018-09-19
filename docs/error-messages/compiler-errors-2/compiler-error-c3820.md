@@ -13,14 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3820
-'name': initializers must be managed  
-  
- The *name* initializer for a managed type must also be managed.  
-  
-### To correct this error  
-  
-1.  Specify a managed initializer method.  
-  
-## See Also  
- [Initializers](../../cpp/initializers.md)   
- [Additional Startup Considerations](../../cpp/additional-startup-considerations.md)
+
+'name': initializers must be managed
+
+The *name* initializer for a managed type must also be managed.
+
+### To correct this error
+
+1. Specify a managed initializer method.
+
+## See Also
+
+[Initializers](../../cpp/initializers.md)<br/>
+[Additional Startup Considerations](../../cpp/additional-startup-considerations.md)

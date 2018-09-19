@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # barrier
-Synchronizes all threads in a team; all threads pause at the barrier, until all threads execute the barrier.  
-  
-## Syntax  
-  
-```  
-#pragma omp barrier  
-```  
-  
-## Remarks  
- The `barrier` directive supports no OpenMP clauses.  
-  
- For more information, see [2.6.3 barrier Directive](../../../parallel/openmp/2-6-3-barrier-directive.md).  
-  
-## Example  
- For a sample of how to use `barrier`, see [master](../../../parallel/openmp/reference/master.md).  
-  
-## See Also  
- [Directives](../../../parallel/openmp/reference/openmp-directives.md)
+
+Synchronizes all threads in a team; all threads pause at the barrier, until all threads execute the barrier.
+
+## Syntax
+
+```
+#pragma omp barrier
+```
+
+## Remarks
+
+The `barrier` directive supports no OpenMP clauses.
+
+For more information, see [2.6.3 barrier Directive](../../../parallel/openmp/2-6-3-barrier-directive.md).
+
+## Example
+
+For a sample of how to use `barrier`, see [master](../../../parallel/openmp/reference/master.md).
+
+## See Also
+
+[Directives](../../../parallel/openmp/reference/openmp-directives.md)

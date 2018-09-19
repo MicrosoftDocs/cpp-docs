@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1100
-unable to initialize OLE : system error message  
-  
- The compiler cannot initialize the Component Object Model (COM) library. See [CoInitialize](/windows/desktop/api/objbase/nf-objbase-coinitialize).
+
+unable to initialize OLE : system error message
+
+The compiler cannot initialize the Component Object Model (COM) library. See [CoInitialize](/windows/desktop/api/objbase/nf-objbase-coinitialize).

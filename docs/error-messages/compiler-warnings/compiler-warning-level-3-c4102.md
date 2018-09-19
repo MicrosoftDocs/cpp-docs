@@ -13,20 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4102
-'label' : unreferenced label  
-  
- The label is defined but never referenced. The compiler ignores the label.  
-  
- The following sample generates C4102:  
-  
-```  
-// C4102.cpp  
-// compile with: /W3  
-int main() {  
-   int a;  
-  
-   test:   // C4102, remove the unreferenced label to resolve  
-  
-   a = 1;  
-}  
+
+'label' : unreferenced label
+
+The label is defined but never referenced. The compiler ignores the label.
+
+The following sample generates C4102:
+
+```
+// C4102.cpp
+// compile with: /W3
+int main() {
+   int a;
+
+   test:   // C4102, remove the unreferenced label to resolve
+
+   a = 1;
+}
 ```

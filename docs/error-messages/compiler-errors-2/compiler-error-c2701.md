@@ -13,21 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2701
-'function' : a function template cannot be a friend of a local class  
-  
- A local class cannot have a template function as a friend function.  
-  
- The following sample generates C2701:  
-  
-```  
-// C2701.cpp  
-// compile with: /c  
-template<typename T>   // OK  
-void f1(const T &);  
-  
-void MyFunction() {  
-   class MyClass {  
-      template<typename T> friend void f2(const T &);   // C2701  
-   };  
-}  
+
+'function' : a function template cannot be a friend of a local class
+
+A local class cannot have a template function as a friend function.
+
+The following sample generates C2701:
+
+```
+// C2701.cpp
+// compile with: /c
+template<typename T>   // OK
+void f1(const T &);
+
+void MyFunction() {
+   class MyClass {
+      template<typename T> friend void f2(const T &);   // C2701
+   };
+}
 ```

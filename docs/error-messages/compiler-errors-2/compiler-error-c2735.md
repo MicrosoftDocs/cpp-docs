@@ -13,13 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2735
-'keyword' keyword is not permitted in formal parameter type specifier  
-  
- The keyword is invalid in this context.  
-  
- The following sample generates C2735:  
-  
-```  
-// C2735.cpp  
-void f(inline int){}   // C2735  
+
+'keyword' keyword is not permitted in formal parameter type specifier
+
+The keyword is invalid in this context.
+
+The following sample generates C2735:
+
+```
+// C2735.cpp
+void f(inline int){}   // C2735
 ```

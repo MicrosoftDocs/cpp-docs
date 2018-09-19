@@ -32,7 +32,7 @@ Once you create a property page for a control, you must provide the [PROP_PAGE](
 
 ## See Also
 
-[Property Pages](../../atl/atl-com-property-pages.md)   
-[Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)   
+[Property Pages](../../atl/atl-com-property-pages.md)<br/>
+[Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Example: Implementing a Property Page](../../atl/example-implementing-a-property-page.md)
 

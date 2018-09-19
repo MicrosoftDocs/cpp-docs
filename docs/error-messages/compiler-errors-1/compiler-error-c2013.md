@@ -13,21 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2013
-missing '>'  
-  
- An `#include` directive lacks a closing angle bracket. Add the closing bracket to resolve the error.  
-  
- The following sample generates C2013:  
-  
-```  
-// C2013.cpp  
-#include <stdio.h    // C2013  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2013b.cpp  
-// compile with: /c  
-#include <stdio.h>  
+
+missing '>'
+
+An `#include` directive lacks a closing angle bracket. Add the closing bracket to resolve the error.
+
+The following sample generates C2013:
+
+```
+// C2013.cpp
+#include <stdio.h    // C2013
+```
+
+Possible resolution:
+
+```
+// C2013b.cpp
+// compile with: /c
+#include <stdio.h>
 ```

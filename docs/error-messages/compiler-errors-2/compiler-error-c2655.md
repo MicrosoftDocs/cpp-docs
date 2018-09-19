@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2655
-'identifier' : definition or redeclaration illegal in current scope  
-  
- An identifier can be redeclared only at global scope.  
-  
- The following sample generates C2655:  
-  
-```  
-// C2655.cpp  
-class A {};  
-class B {  
-public:  
-   static int i;  
-};  
-  
-int B::i;  // OK  
-  
-int main() {  
-   A B::i;  // C2655  
-}  
+
+'identifier' : definition or redeclaration illegal in current scope
+
+An identifier can be redeclared only at global scope.
+
+The following sample generates C2655:
+
+```
+// C2655.cpp
+class A {};
+class B {
+public:
+   static int i;
+};
+
+int B::i;  // OK
+
+int main() {
+   A B::i;  // C2655
+}
 ```

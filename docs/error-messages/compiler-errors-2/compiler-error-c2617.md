@@ -13,31 +13,32 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2617
-'function' : inconsistent return statement  
-  
- The specified function does not have a declared return type, and a previous return statement did not supply a value.  
-  
- The following sample generates C2617:  
-  
-```  
-// C2617.cpp  
-int i;  
-func() {   // no return type prototype  
-   if( i ) return;   // no return value  
-   else return( 1 );   // C2617 detected on this line  
-}  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2617b.cpp  
-// compile with: /c  
-int i;  
-int MyF() {  
-   if (i)  
-      return 0;  
-   else   
-      return (1);  
-}  
+
+'function' : inconsistent return statement
+
+The specified function does not have a declared return type, and a previous return statement did not supply a value.
+
+The following sample generates C2617:
+
+```
+// C2617.cpp
+int i;
+func() {   // no return type prototype
+   if( i ) return;   // no return value
+   else return( 1 );   // C2617 detected on this line
+}
+```
+
+Possible resolution:
+
+```
+// C2617b.cpp
+// compile with: /c
+int i;
+int MyF() {
+   if (i)
+      return 0;
+   else
+      return (1);
+}
 ```

@@ -32,4 +32,4 @@ Most multibyte-character routines in the Microsoft run-time library recognize mu
 ## See Also
 
 [Internationalization](../c-runtime-library/internationalization.md)<br/>
- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (levels 1 and 4) C4223
-nonstandard extension used : non-lvalue array converted to pointer  
-  
- In standard C, you cannot convert a non-lvalue array to a pointer. With the default Microsoft extensions ([/Ze](../../build/reference/za-ze-disable-language-extensions.md)), you can.
+
+nonstandard extension used : non-lvalue array converted to pointer
+
+In standard C, you cannot convert a non-lvalue array to a pointer. With the default Microsoft extensions ([/Ze](../../build/reference/za-ze-disable-language-extensions.md)), you can.

@@ -22,14 +22,14 @@ This class provides methods useful when constructing a list of smart pointers.
 ## Syntax
 
 ```
-template<typename E>  
-class CAutoPtrList : 
+template<typename E>
+class CAutoPtrList :
    public CAtlList<ATL::CAutoPtr<E>, CAutoPtrElementTraits<E>>
 ```
 
 #### Parameters
 
-*E*  
+*E*<br/>
 The pointer type.
 
 ## Members
@@ -66,7 +66,7 @@ CAutoPtrList(UINT nBlockSize = 10) throw();
 
 ### Parameters
 
-*nBlockSize*  
+*nBlockSize*<br/>
 The block size, with a default of 10.
 
 ### Remarks
@@ -75,6 +75,6 @@ The block size is a measure of the amount of memory allocated when a new element
 
 ## See Also
 
-[CAtlList Class](../../atl/reference/catllist-class.md)   
-[CAutoPtrElementTraits Class](../../atl/reference/cautoptrelementtraits-class.md)   
+[CAtlList Class](../../atl/reference/catllist-class.md)<br/>
+[CAutoPtrElementTraits Class](../../atl/reference/cautoptrelementtraits-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

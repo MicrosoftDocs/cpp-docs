@@ -26,7 +26,7 @@ Inserts the specified .idl file into the generated .idl file.
 
 ### Parameters
 
-*idl_file*  
+*idl_file*<br/>
 Identifies the name of the .idl file that you want to merge with the .idl file that will be generated for your application.
 
 ## Remarks
@@ -59,9 +59,9 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[Compiler Attributes](../windows/compiler-attributes.md)  
-[Stand-Alone Attributes](../windows/stand-alone-attributes.md)  
-[import](../windows/import.md)  
-[importlib](../windows/importlib.md)  
-[include](../windows/include-cpp.md)  
+[Compiler Attributes](../windows/compiler-attributes.md)<br/>
+[Stand-Alone Attributes](../windows/stand-alone-attributes.md)<br/>
+[import](../windows/import.md)<br/>
+[importlib](../windows/importlib.md)<br/>
+[include](../windows/include-cpp.md)<br/>
 [includelib](../windows/includelib-cpp.md)  

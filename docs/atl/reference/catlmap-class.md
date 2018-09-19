@@ -28,16 +28,16 @@ class CAtlMap
 
 #### Parameters
 
-*K*  
+*K*<br/>
 The key element type.
 
-*V* 
+*V*<br/>
 The value element type.
 
-*KTraits*  
+*KTraits*<br/>
 The code used to copy or move key elements. See [CElementTraits Class](../../atl/reference/celementtraits-class.md) for more details.
 
-*VTraits*  
+*VTraits*<br/>
 The code used to copy or move value elements.
 
 ## Members
@@ -154,19 +154,19 @@ CAtlMap(
 
 ### Parameters
 
-*nBins*  
+*nBins*<br/>
 The number of bins providing pointers to the stored elements. See Remarks later in this topic for an explanation of bins.
 
-*fOptimalLoad*  
+*fOptimalLoad*<br/>
 The optimal load ratio.
 
-*fLoThreshold*  
+*fLoThreshold*<br/>
 The lower threshold for the load ratio.
 
-*fHiThreshold*  
+*fHiThreshold*<br/>
 The upper threshold for the load ratio.
 
-*nBlockSize*  
+*nBlockSize*<br/>
 The block size.
 
 ### Remarks
@@ -256,13 +256,13 @@ CPair* GetAt(POSITION& pos) throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#getnextassoc) or [CAtlMap::GetStartPosition](#getstartposition).
 
-*key*  
+*key*<br/>
 Template parameter specifying the type of the map's key.
 
-*value*  
+*value*<br/>
 Template parameter specifying the type of the map's value.
 
 ### Return Value
@@ -311,7 +311,7 @@ const K& GetKeyAt(POSITION pos) const throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#getnextassoc) or [CAtlMap::GetStartPosition](#getstartposition).
 
 ### Return Value
@@ -333,7 +333,7 @@ const CPair* GetNext(POSITION& pos) const throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#getnextassoc) or [CAtlMap::GetStartPosition](#getstartposition).
 
 ### Return Value
@@ -353,13 +353,13 @@ void GetNextAssoc(
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#getnextassoc) or [CAtlMap::GetStartPosition](#getstartposition).
 
-*key*  
+*key*<br/>
 Template parameter specifying the type of the map's key.
 
-*value*  
+*value*<br/>
 Template parameter specifying the type of the map's value.
 
 ### Remarks
@@ -376,7 +376,7 @@ const K& GetNextKey(POSITION& pos) const throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#getnextassoc) or [CAtlMap::GetStartPosition](#getstartposition).
 
 ### Return Value
@@ -398,7 +398,7 @@ const V& GetNextValue(POSITION& pos) const throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#getnextassoc) or [CAtlMap::GetStartPosition](#getstartposition).
 
 ### Return Value
@@ -447,7 +447,7 @@ const V& GetValueAt(POSITION pos) const throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#getnextassoc) or [CAtlMap::GetStartPosition](#getstartposition).
 
 ### Return Value
@@ -466,10 +466,10 @@ bool InitHashTable(
 
 ### Parameters
 
-*nBins*  
+*nBins*<br/>
 The number of bins used by the hash table. See [CAtlMap::CAtlMap](#catlmap) for an explanation.
 
-*bAllocNow*  
+*bAllocNow*<br/>
 A flag indication when memory should be allocated.
 
 ### Return Value
@@ -526,10 +526,10 @@ CPair* Lookup(KINARGTYPE key) throw();
 
 ### Parameters
 
-*key*  
+*key*<br/>
 Specifies the key that identifies the element to be looked up.
 
-*value*  
+*value*<br/>
 Variable that receives the looked-up value.
 
 ### Return Value
@@ -550,7 +550,7 @@ V& operator[](kinargtype key) throw();
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key of the element to add or replace.
 
 ### Return Value
@@ -571,7 +571,7 @@ void Rehash(UINT nBins = 0);
 
 ### Parameters
 
-*nBins*  
+*nBins*<br/>
 The new number of bins to use in the hash table. See [CAtlMap::CAtlMap](#catlmap) for an explanation.
 
 ### Remarks
@@ -600,7 +600,7 @@ void RemoveAtPos(POSITION pos) throw();
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#getnextassoc) or [CAtlMap::GetStartPosition](#getstartposition).
 
 ### Remarks
@@ -617,7 +617,7 @@ bool RemoveKey(KINARGTYPE key) throw();
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key corresponding to the element pair you want to remove.
 
 ### Return Value
@@ -640,10 +640,10 @@ POSITION SetAt(
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key value to add to the `CAtlMap` object.
 
-*value*  
+*value*<br/>
 The value to add to the `CAtlMap` object.
 
 ### Return Value
@@ -668,16 +668,16 @@ void SetOptimalLoad(
 
 ### Parameters
 
-*fOptimalLoad*  
+*fOptimalLoad*<br/>
 The optimal load ratio.
 
-*fLoThreshold*  
+*fLoThreshold*<br/>
 The lower threshold for the load ratio.
 
-*fHiThreshold*  
+*fHiThreshold*<br/>
 The upper threshold for the load ratio.
 
-*bRehashNow*  
+*bRehashNow*<br/>
 Flag indicating if the hash table should be recalculated.
 
 ### Remarks
@@ -696,10 +696,10 @@ void SetValueAt(
 
 ### Parameters
 
-*pos*  
+*pos*<br/>
 The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#getnextassoc) or [CAtlMap::GetStartPosition](#getstartposition).
 
-*value*  
+*value*<br/>
 The value to add to the `CAtlMap` object.
 
 ### Remarks
@@ -732,7 +732,7 @@ const K m_key;
 
 ### Parameters
 
-*K*  
+*K*<br/>
 The key element type.
 
 ##  <a name="m_value"></a>  CAtlMap::CPair::m_value
@@ -745,11 +745,11 @@ V  m_value;
 
 ### Parameters
 
-*V*  
+*V*<br/>
 The value element type.
 
 ## See Also
 
-[Marquee Sample](../../visual-cpp-samples.md)   
-[UpdatePV Sample](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)   
+[Marquee Sample](../../visual-cpp-samples.md)<br/>
+[UpdatePV Sample](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

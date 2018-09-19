@@ -13,38 +13,42 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __outbyte
-**Microsoft Specific**  
-  
- Generates the `out` instruction, which sends 1 byte specified by `Data` out the I/O port specified by `Port`.  
-  
-## Syntax  
-  
-```  
-void __outbyte(   
-   unsigned short Port,   
-   unsigned char Data   
-);  
-```  
-  
-#### Parameters  
+
+**Microsoft Specific**
+
+Generates the `out` instruction, which sends 1 byte specified by `Data` out the I/O port specified by `Port`.
+
+## Syntax
+
+```
+void __outbyte( 
+   unsigned short Port, 
+   unsigned char Data 
+);
+```
+
+#### Parameters
+
 *Port*<br/>
-[in] The port to send the data to.  
-  
+[in] The port to send the data to.
+
 *Data*<br/>
-[in] The byte to be sent out the specified port.  
-  
-## Requirements  
-  
-|Intrinsic|Architecture|  
-|---------------|------------------|  
-|`__outbyte`|x86, x64|  
-  
- **Header file** \<intrin.h>  
-  
-## Remarks  
- This routine is only available as an intrinsic.  
-  
-**END Microsoft Specific**  
-  
-## See Also  
- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[in] The byte to be sent out the specified port.
+
+## Requirements
+
+|Intrinsic|Architecture|
+|---------------|------------------|
+|`__outbyte`|x86, x64|
+
+**Header file** \<intrin.h>
+
+## Remarks
+
+This routine is only available as an intrinsic.
+
+**END Microsoft Specific**
+
+## See Also
+
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

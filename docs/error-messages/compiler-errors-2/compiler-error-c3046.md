@@ -13,35 +13,36 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3046
-Missing structured block in an OpenMP '#pragma omp sections' region  
-  
- A [sections](../../parallel/openmp/reference/sections-openmp.md) directive has an empty code block.  
-  
- The following sample generates C3046:  
-  
-```  
-// C3046.cpp  
-// compile with: /openmp /c  
-#include "omp.h"  
-  
-int main() {  
-   int n2 = 2, n3 = 3;  
-  
-   #pragma omp parallel  
-   {  
-      ++n2;  
-  
-      #pragma omp sections  
-      {  
-/*  
-         ++n2;  
-  
-         #pragma omp section  
-         {  
-            ++n3;  
-         }  
-*/  
-       }   // C3046 uncomment code to resolve this C3046  
-   }  
-}  
+
+Missing structured block in an OpenMP '#pragma omp sections' region
+
+A [sections](../../parallel/openmp/reference/sections-openmp.md) directive has an empty code block.
+
+The following sample generates C3046:
+
+```
+// C3046.cpp
+// compile with: /openmp /c
+#include "omp.h"
+
+int main() {
+   int n2 = 2, n3 = 3;
+
+   #pragma omp parallel
+   {
+      ++n2;
+
+      #pragma omp sections
+      {
+/*
+         ++n2;
+
+         #pragma omp section
+         {
+            ++n3;
+         }
+*/
+       }   // C3046 uncomment code to resolve this C3046
+   }
+}
 ```

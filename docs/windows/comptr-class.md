@@ -28,10 +28,10 @@ friend class ComPtr;
 
 ### Parameters
 
-*T*  
+*T*<br/>
 The interface that the **ComPtr** represents.
 
-*U*  
+*U*<br/>
 A class to which the current **ComPtr** is a friend. (The template that uses this parameter is protected.)
 
 ## Remarks

@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2809
-'operator operator' has no formal parameters  
-  
- The operator lacks required parameters.  
-  
- The following sample generates C2809:  
-  
-```  
-// C2809.cpp  
-// compile with: /c  
-class A{};  
-int operator+ ();   // C2809  
-int operator+ (A);   // OK  
+
+'operator operator' has no formal parameters
+
+The operator lacks required parameters.
+
+The following sample generates C2809:
+
+```
+// C2809.cpp
+// compile with: /c
+class A{};
+int operator+ ();   // C2809
+int operator+ (A);   // OK
 ```

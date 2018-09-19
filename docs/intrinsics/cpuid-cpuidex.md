@@ -390,7 +390,6 @@ SYSCALL supported
 TBM not supported
 XOP not supported
 XSAVE supported
-
 ```
 
 **END Microsoft Specific**

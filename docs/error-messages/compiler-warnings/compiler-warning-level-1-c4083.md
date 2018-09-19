@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4083
-expected 'token'; found identifier 'identifier'  
-  
- An identifier occurs in the wrong place in a **#pragma** statement.  
-  
-## Example  
-  
-```  
-// C4083.cpp  
-// compile with: /W1 /LD  
-#pragma warning disable:4083    // C4083  
-#pragma warning(disable:4083)   //correct  
-```  
-  
- Check the syntax of the [#pragma](../../preprocessor/pragma-directives-and-the-pragma-keyword.md) directives.
+
+expected 'token'; found identifier 'identifier'
+
+An identifier occurs in the wrong place in a **#pragma** statement.
+
+## Example
+
+```
+// C4083.cpp
+// compile with: /W1 /LD
+#pragma warning disable:4083    // C4083
+#pragma warning(disable:4083)   //correct
+```
+
+Check the syntax of the [#pragma](../../preprocessor/pragma-directives-and-the-pragma-keyword.md) directives.

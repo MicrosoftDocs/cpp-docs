@@ -23,21 +23,21 @@ You can learn more about enumerator interfaces by reading reference content such
 
 ## In This Section
 
-[ATL Collection and Enumerator Classes](../atl/atl-collection-and-enumerator-classes.md)  
+[ATL Collection and Enumerator Classes](../atl/atl-collection-and-enumerator-classes.md)<br/>
 Briefly describes and provides links to the ATL classes that will help you implement collections and enumerators.
 
-[Design Principles for Collection and Enumerator Interfaces](../atl/design-principles-for-collection-and-enumerator-interfaces.md)  
+[Design Principles for Collection and Enumerator Interfaces](../atl/design-principles-for-collection-and-enumerator-interfaces.md)<br/>
 Discusses the different design principles behind each type of interface.
 
-[Implementing a C++ Standard Library-Based Collection](../atl/implementing-an-stl-based-collection.md)  
+[Implementing a C++ Standard Library-Based Collection](../atl/implementing-an-stl-based-collection.md)<br/>
 An extended example that walks you through the implementation of a C++ Standard Library-based collection.
 
 ## Related Sections
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Provides links to conceptual topics on how to program using the Active Template Library.
 
-[ATLCollections Sample](../visual-cpp-samples.md)  
+[ATLCollections Sample](../visual-cpp-samples.md)<br/>
 A sample that demonstrates the use of `ICollectionOnSTLImpl` and `CComEnumOnSTL`, and the implementation of custom copy policy classes.
 
 ## See Also

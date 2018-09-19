@@ -50,7 +50,7 @@ COM_INTERFACE_ENTRY( x )
 ```
 ### Parameters
 
-x
+*x*<br/>
 [in] The name of an interface your class object derives from directly.
 
 ### Remarks
@@ -80,10 +80,10 @@ COM_INTERFACE_ENTRY2(x, x2)
 
 ### Parameters
 
-*x*  
+*x*<br/>
 [in] The name of an interface you want to expose from your object.
 
-*x2*  
+*x2*<br/>
 [in] The name of the inheritance branch from which *x* is exposed.
 
 ### Remarks
@@ -104,10 +104,10 @@ COM_INTERFACE_ENTRY_IID(iid, x)
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] The GUID of the interface exposed.
 
-*x*  
+*x*<br/>
 [in] The name of the class whose vtable will be exposed as the interface identified by *iid*.
 
 ### Example
@@ -124,13 +124,13 @@ COM_INTERFACE_ENTRY2_IID(iid, x, x2)
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] The GUID you are specifying for the interface.
 
-*x*  
+*x*<br/>
 [in] The name of an interface that your class object derives from directly.
 
-*x2*  
+*x2*<br/>
 [in] The name of a second interface that your class object derives from directly.
 
 ##  <a name="com_interface_entry_aggregate"></a>  COM_INTERFACE_ENTRY_AGGREGATE
@@ -143,10 +143,10 @@ COM_INTERFACE_ENTRY_AGGREGATE(iid, punk)
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] The GUID of the interface queried for.
 
-*punk*  
+*punk*<br/>
 [in] The name of an `IUnknown` pointer.
 
 ### Remarks
@@ -167,7 +167,7 @@ COM_INTERFACE_ENTRY_AGGREGATE_BLIND(punk)
 
 ### Parameters
 
-*punk*  
+*punk*<br/>
 [in] The name of an `IUnknown` pointer.
 
 ### Remarks
@@ -188,13 +188,13 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid, punk, clsid)
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] The GUID of the interface queried for.
 
-*punk*  
+*punk*<br/>
 [in] The name of an `IUnknown` pointer. Must be a member of the class containing the COM map.
 
-*clsid*  
+*clsid*<br/>
 [in] The identifier of the aggregate that will be created if *punk* is NULL.
 
 ### Remarks
@@ -213,10 +213,10 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(punk, clsid)
 
 ### Parameters
 
-*punk*  
+*punk*<br/>
 [in] The name of an `IUnknown` pointer. Must be a member of the class containing the COM map.
 
-*clsid*  
+*clsid*<br/>
 [in] The identifier of the aggregate that will be created if *punk* is NULL.
 
 ### Remarks
@@ -237,7 +237,7 @@ COM_INTERFACE_ENTRY_BREAK(x)
 
 ### Parameters
 
-*x*  
+*x*<br/>
 [in] Text used to construct the interface identifier.
 
 ### Remarks
@@ -254,13 +254,13 @@ COM_INTERFACE_ENTRY_CACHED_TEAR_OFF(iid, x, punk)
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] The GUID of the tear-off interface.
 
-*x*  
+*x*<br/>
 [in] The name of the class implementing the interface.
 
-*punk*  
+*punk*<br/>
 [in] The name of an `IUnknown` pointer. Must be a member of the class containing the COM map. Should be initialized to NULL in the class object's constructor.
 
 ### Remarks
@@ -281,10 +281,10 @@ COM_INTERFACE_ENTRY_TEAR_OFF(iid, x)
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] The GUID of the tear-off interface.
 
-*x*  
+*x*<br/>
 [in] The name of the class implementing the interface.
 
 ### Remarks
@@ -305,7 +305,7 @@ COM_INTERFACE_ENTRY_CHAIN(classname)
 
 ### Parameters
 
-*classname*  
+*classname*<br/>
 [in] A base class of the current object.
 
 ### Remarks
@@ -328,13 +328,13 @@ COM_INTERFACE_ENTRY_FUNC(iid, dw, func)
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] The GUID of the interface exposed.
 
-*dw*  
+*dw*<br/>
 [in] A parameter passed through to the *func*.
 
-*func*  
+*func*<br/>
 [in] The function pointer that will return *iid*.
 
 ### Remarks
@@ -355,10 +355,10 @@ COM_INTERFACE_ENTRY_FUNC_BLIND(dw, func)
 
 ### Parameters
 
-*dw*  
+*dw*<br/>
 [in] A parameter passed through to the *func*.
 
-*func*  
+*func*<br/>
 [in] The function that gets called when this entry in the COM map is processed.
 
 ### Remarks
@@ -375,7 +375,7 @@ COM_INTERFACE_ENTRY_NOINTERFACE(x)
 
 ### Parameters
 
-*x*  
+*x*<br/>
 [in] Text used to construct the interface identifier.
 
 ### Remarks

@@ -108,37 +108,37 @@ struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2,
 
 ### Parameters
 
-*TMemberFunction*  
+*TMemberFunction*<br/>
 Typename parameter for an ArgTraits structure that cannot match any `Invoke` method signature.
 
-*TDelegateInterface*  
+*TDelegateInterface*<br/>
 A delegate interface.
 
-*TArg1*  
+*TArg1*<br/>
 The type of the first argument of the `Invoke` method.
 
-*TArg2*  
+*TArg2*<br/>
 The type of the second argument of the `Invoke` method.
 
-*TArg3*  
+*TArg3*<br/>
 The type of the third argument of the `Invoke` method.
 
-*TArg4*  
+*TArg4*<br/>
 The type of the fourth argument of the `Invoke` method.
 
-*TArg5*  
+*TArg5*<br/>
 The type of the fifth argument of the `Invoke` method.
 
-*TArg6*  
+*TArg6*<br/>
 The type of the sixth argument of the `Invoke` method.
 
-*TArg7*  
+*TArg7*<br/>
 The type of the seventh argument of the `Invoke` method.
 
-*TArg8*  
+*TArg8*<br/>
 The type of the eigth argument of the `Invoke` method.
 
-*TArg9*  
+*TArg9*<br/>
 The type of the ninth argument of the `Invoke` method.
 
 ## Remarks

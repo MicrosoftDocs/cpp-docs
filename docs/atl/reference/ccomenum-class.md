@@ -20,7 +20,7 @@ This class defines a COM enumerator object based on an array.
 
 ```
 template <class Base,
-    const IID* piid, class T, class Copy, class ThreadModel = CcomObjectThreadModel>  
+    const IID* piid, class T, class Copy, class ThreadModel = CcomObjectThreadModel>
 class ATL_NO_VTABLE CComEnum : public CComEnumImpl<Base, piid,
 T,
     Copy>,
@@ -29,19 +29,19 @@ public CComObjectRootEx<ThreadModel>
 
 #### Parameters
 
-*Base*  
+*Base*<br/>
 A COM enumerator interface. See [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) for an example.
 
-*piid*  
+*piid*<br/>
 A pointer to the interface ID of the enumerator interface.
 
-*T*  
+*T*<br/>
 The type of item exposed by the enumerator interface.
 
-*Copy*  
+*Copy*<br/>
 A homogeneous [copy policy class](../../atl/atl-copy-policy-classes.md).
 
-*ThreadModel*  
+*ThreadModel*<br/>
 The threading model of the class. This parameter defaults to the global object thread model used in your project.
 
 ## Remarks
@@ -90,7 +90,7 @@ This code creates a **typedef** for `CComEnum` that exposes a vector of VARIANTs
 
 ## See Also
 
-[Class Overview](../../atl/atl-class-overview.md)   
-[CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)   
-[CComEnumImpl Class](../../atl/reference/ccomenumimpl-class.md)   
+[Class Overview](../../atl/atl-class-overview.md)<br/>
+[CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)<br/>
+[CComEnumImpl Class](../../atl/reference/ccomenumimpl-class.md)<br/>
 [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)

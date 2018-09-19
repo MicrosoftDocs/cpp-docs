@@ -13,26 +13,27 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3283
-'type' : an interface cannot have an instance constructor  
-  
- A CLR [interface](../../windows/interface-class-cpp-component-extensions.md) cannot have an instance constructor.  A static constructor is allowed.  
-  
- The following sample generates C3283:  
-  
-```  
-// C3283.cpp  
-// compile with: /clr  
-interface class I {  
-   I();   // C3283  
-};  
-```  
-  
- Possible resolution:  
-  
-```  
-// C3283b.cpp  
-// compile with: /clr /c  
-interface class I {  
-   static I(){}  
-};  
+
+'type' : an interface cannot have an instance constructor
+
+A CLR [interface](../../windows/interface-class-cpp-component-extensions.md) cannot have an instance constructor.  A static constructor is allowed.
+
+The following sample generates C3283:
+
+```
+// C3283.cpp
+// compile with: /clr
+interface class I {
+   I();   // C3283
+};
+```
+
+Possible resolution:
+
+```
+// C3283b.cpp
+// compile with: /clr /c
+interface class I {
+   static I(){}
+};
 ```

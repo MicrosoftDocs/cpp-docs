@@ -26,7 +26,7 @@ Specifies another .idl, .odl, or header file containing definitions you want to 
 
 ### Parameters
 
-*idl_file*  
+*idl_file*<br/>
 The name of an .idl file that you want imported into the type library of the current project.
 
 ## Remarks
@@ -74,9 +74,9 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Stand-Alone Attributes](../windows/stand-alone-attributes.md)  
-[importidl](../windows/importidl.md)  
-[importlib](../windows/importlib.md)  
-[include](../windows/include-cpp.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Stand-Alone Attributes](../windows/stand-alone-attributes.md)<br/>
+[importidl](../windows/importidl.md)<br/>
+[importlib](../windows/importlib.md)<br/>
+[include](../windows/include-cpp.md)<br/>
 [includelib](../windows/includelib-cpp.md)  

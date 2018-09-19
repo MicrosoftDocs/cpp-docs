@@ -27,10 +27,10 @@ __forceinline bool CanCastTo(
 
 ### Parameters
 
-*riid*  
+*riid*<br/>
 An interface ID.
 
-*ppv*  
+*ppv*<br/>
 A pointer to the last interface ID that was cast successfully.
 
 ## Return Value

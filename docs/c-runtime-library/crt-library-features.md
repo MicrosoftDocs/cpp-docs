@@ -42,7 +42,7 @@ This table lists the libraries that implement the vcruntime library.
 |vcruntime.lib|vcruntime\<version>.dll|DLL import library for the vcruntime.|**/MD**|_MT, _DLL|
 |vcruntimed.lib|vcruntime\<version>d.dll|DLL import library for the Debug vcruntime. Not redistributable.|**/MDd**|_DEBUG, _MT, _DLL|
 
-> [!NOTE] 
+> [!NOTE]
 > When the UCRT refactoring occurred, the Concurrency Runtime functions were moved into
 concrt140.dll, which was added to the C++ redistributable package. This DLL is required for C++ parallel containers and algorithms such as `concurrency::parallel_for`. In addition, the C++ Standard Library requires this DLL on Windows XP to support synchronization primitives, because Windows XP does not have condition variables.
 

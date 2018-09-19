@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2200
-'function' : function has already been defined  
-  
- An `alloc_text` pragma uses a function name already defined.
+
+'function' : function has already been defined
+
+An `alloc_text` pragma uses a function name already defined.

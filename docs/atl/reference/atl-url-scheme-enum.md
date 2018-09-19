@@ -11,26 +11,24 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-
-# ATL_URL_SCHEME  
+# ATL_URL_SCHEME
 
 The members of this enumeration provide constants for the schemes understood by [CUrl](curl-class.md).
 
 ## Syntax
 
 ```
-
-      enum ATL_URL_SCHEME{  
-   ATL_URL_SCHEME_UNKNOWN = -1,  
-   ATL_URL_SCHEME_FTP     = 0,  
-   ATL_URL_SCHEME_GOPHER  = 1,  
-   ATL_URL_SCHEME_HTTP    = 2,  
-   ATL_URL_SCHEME_HTTPS   = 3,  
-   ATL_URL_SCHEME_FILE    = 4,  
-   ATL_URL_SCHEME_NEWS    = 5,  
-   ATL_URL_SCHEME_MAILTO  = 6,  
-   ATL_URL_SCHEME_SOCKS   = 7  
-};  
+enum ATL_URL_SCHEME{
+   ATL_URL_SCHEME_UNKNOWN = -1,
+   ATL_URL_SCHEME_FTP     = 0,
+   ATL_URL_SCHEME_GOPHER  = 1,
+   ATL_URL_SCHEME_HTTP    = 2,
+   ATL_URL_SCHEME_HTTPS   = 3,
+   ATL_URL_SCHEME_FILE    = 4,
+   ATL_URL_SCHEME_NEWS    = 5,
+   ATL_URL_SCHEME_MAILTO  = 6,
+   ATL_URL_SCHEME_SOCKS   = 7
+};
 ```
 
 ## Requirements
@@ -39,6 +37,6 @@ The members of this enumeration provide constants for the schemes understood by 
 
 ## See Also
 
-[Concepts](../active-template-library-atl-concepts.md)   
-[CUrl::SetScheme](curl-class.md#setscheme)   
+[Concepts](../active-template-library-atl-concepts.md)<br/>
+[CUrl::SetScheme](curl-class.md#setscheme)<br/>
 [CUrl::GetScheme](curl-class.md#getscheme)

@@ -12,11 +12,12 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Supporting Free Threading in Your Provider
+
 All the OLE DB provider classes are thread-safe, and registry entries are set accordingly. It is a good idea to support free threading to help provide a high level of performance in multiuser situations. To help keep your provider thread-safe, you must verify that your code is blocked properly. Whenever you write or store data, you must block the access with critical sections.  
   
- Each OLE DB provider template object has its own critical section. To make blocking easier, each new class you create should be a template class taking the parent class name as an argument.  
+Each OLE DB provider template object has its own critical section. To make blocking easier, each new class you create should be a template class taking the parent class name as an argument.  
   
- The following example shows how to block your code:  
+The following example shows how to block your code:  
   
 ```cpp  
 template <class T>  
@@ -35,9 +36,10 @@ HRESULT MyObject::MyMethod(void)
 }  
 ```  
   
- For more information about how to protect critical sections with `Lock` and `Unlock`, see [Multithreading: How To Use the Synchronization Classes](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).  
+For more information about how to protect critical sections with `Lock` and `Unlock`, see [Multithreading: How To Use the Synchronization Classes](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).  
   
- You must also verify that any methods you override (such as `Execute`) are thread-safe.  
+You must also verify that any methods you override (such as `Execute`) are thread-safe.  
   
 ## See Also  
- [Working with OLE DB Provider Templates](../../data/oledb/working-with-ole-db-provider-templates.md)
+
+[Working with OLE DB Provider Templates](../../data/oledb/working-with-ole-db-provider-templates.md)

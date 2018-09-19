@@ -103,7 +103,7 @@ void Attach(HANDLE hToken) throw();
 
 ### Parameters
 
-*hToken*  
+*hToken*<br/>
 A handle to the access token.
 
 ### Remarks
@@ -134,10 +134,10 @@ bool CheckTokenMembership(
 
 ### Parameters
 
-*rSid*  
+*rSid*<br/>
 Reference to a [CSid Class](../../atl/reference/csid-class.md) object.
 
-*pbIsMember*  
+*pbIsMember*<br/>
 Pointer to a variable that receives the results of the check.
 
 ### Return Value
@@ -165,10 +165,10 @@ bool CreateImpersonationToken(
 
 ### Parameters
 
-*pImp*  
+*pImp*<br/>
 Pointer to the new `CAccessToken` object.
 
-*sil*  
+*sil*<br/>
 Specifies a [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-_security_impersonation_level) enumerated type that supplies the impersonation level of the new token.
 
 ### Return Value
@@ -192,13 +192,13 @@ bool CreatePrimaryToken(
 
 ### Parameters
 
-*pPri*  
+*pPri*<br/>
 Pointer to the new `CAccessToken` object.
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 Specifies the requested access rights for the new token. The default, MAXIMUM_ALLOWED, requests all access rights that are valid for the caller. See [Access Rights and Access Masks](/windows/desktop/SecAuthZ/access-rights-and-access-masks) for more on access rights.
 
-*pTokenAttributes*  
+*pTokenAttributes*<br/>
 Pointer to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies a security descriptor for the new token and determines whether child processes can inherit the token. If *pTokenAttributes* is NULL, the token gets a default security descriptor and the handle cannot be inherited.
 
 ### Return Value
@@ -229,34 +229,34 @@ bool CreateProcessAsUser(
 
 ### Parameters
 
-*pApplicationName*  
+*pApplicationName*<br/>
 Pointer to a null-terminated string that specifies the module to execute. This parameter may not be NULL.
 
-*pCommandLine*  
+*pCommandLine*<br/>
 Pointer to a null-terminated string that specifies the command line to execute.
 
-*pProcessInformation*  
+*pProcessInformation*<br/>
 Pointer to a [PROCESS_INFORMATION](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-_process_information) structure that receives identification information about the new process.
 
-*pStartupInfo*  
+*pStartupInfo*<br/>
 Pointer to a [STARTUPINFO](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-_startupinfoa) structure that specifies how the main window for the new process should appear.
 
-*dwCreationFlags*  
+*dwCreationFlags*<br/>
 Specifies additional flags that control the priority class and the creation of the process. See the Win32 function [CreateProcessAsUser](https://msdn.microsoft.com/library/windows/desktop/ms682429) for a list of flags.
 
-*bLoadProfile*  
+*bLoadProfile*<br/>
 If TRUE, the user's profile is loaded with [LoadUserProfile](/windows/desktop/api/userenv/nf-userenv-loaduserprofilea).
 
-*pProcessAttributes*  
+*pProcessAttributes*<br/>
 Pointer to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies a security descriptor for the new process and determines whether child processes can inherit the returned handle. If *pProcessAttributes* is NULL, the process gets a default security descriptor and the handle cannot be inherited.
 
-*pThreadAttributes*  
+*pThreadAttributes*<br/>
 Pointer to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies a security descriptor for the new thread and determines whether child processes can inherit the returned handle. If *pThreadAttributes* is NULL, the thread gets a default security descriptor and the handle cannot be inherited.
 
-*bInherit*  
+*bInherit*<br/>
 Indicates whether the new process inherits handles from the calling process. If TRUE, each inheritable open handle in the calling process is inherited by the new process. Inherited handles have the same value and access privileges as the original handles.
 
-*pCurrentDirectory*  
+*pCurrentDirectory*<br/>
 Pointer to a null-terminated string that specifies the current drive and directory for the new process. The string must be a full path that includes a drive letter. If this parameter is NULL, the new process will have the same current drive and directory as the calling process.
 
 ### Return Value
@@ -283,16 +283,16 @@ bool CreateRestrictedToken(
 
 ### Parameters
 
-*pRestrictedToken*  
+*pRestrictedToken*<br/>
 The new, restricted `CAccessToken` object.
 
-*SidsToDisable*  
+*SidsToDisable*<br/>
 A `CTokenGroups` object that specifies the deny-only SIDs.
 
-*SidsToRestrict*  
+*SidsToRestrict*<br/>
 A `CTokenGroups` object that specifies the restricting SIDs.
 
-*PrivilegesToDelete*  
+*PrivilegesToDelete*<br/>
 A `CTokenPrivileges` object that specifies the privileges to delete in the restricted token. The default creates an empty object.
 
 ### Return Value
@@ -334,10 +334,10 @@ bool DisablePrivilege(
 
 ### Parameters
 
-*pszPrivilege*  
+*pszPrivilege*<br/>
 Pointer to a string containing the privilege to disable in the `CAccessToken` object.
 
-*pPreviousState*  
+*pPreviousState*<br/>
 Pointer to a `CTokenPrivileges` object which will contain the previous state of the privileges.
 
 ### Return Value
@@ -356,10 +356,10 @@ bool DisablePrivileges(
 
 ### Parameters
 
-*rPrivileges*  
+*rPrivileges*<br/>
 Pointer to an array of strings containing the privileges to disable in the `CAccessToken` object.
 
-*pPreviousState*  
+*pPreviousState*<br/>
 Pointer to a `CTokenPrivileges` object which will contain the previous state of the privileges.
 
 ### Return Value
@@ -378,10 +378,10 @@ bool EnablePrivilege(
 
 ### Parameters
 
-*pszPrivilege*  
+*pszPrivilege*<br/>
 Pointer to a string containing the privilege to enable in the `CAccessToken` object.
 
-*pPreviousState*  
+*pPreviousState*<br/>
 Pointer to a `CTokenPrivileges` object which will contain the previous state of the privileges.
 
 ### Return Value
@@ -400,10 +400,10 @@ bool EnablePrivileges(
 
 ### Parameters
 
-*rPrivileges*  
+*rPrivileges*<br/>
 Pointer to an array of strings containing the privileges to enable in the `CAccessToken` object.
 
-*pPreviousState*  
+*pPreviousState*<br/>
 Pointer to a `CTokenPrivileges` object which will contain the previous state of the privileges.
 
 ### Return Value
@@ -420,7 +420,7 @@ bool GetDefaultDacl(CDacl* pDacl) const throw(...);
 
 ### Parameters
 
-*pDacl*  
+*pDacl*<br/>
 Pointer to the [CDacl Class](../../atl/reference/cdacl-class.md) object which will receive the `CAccessToken` object's default DACL.
 
 ### Return Value
@@ -437,7 +437,7 @@ bool GetEffectiveToken(DWORD dwDesiredAccess) throw();
 
 ### Parameters
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 Specifies an access mask that specifies the requested types of access to the access token. These requested access types are compared with the token's DACL to determine which accesses are granted or denied.
 
 ### Return Value
@@ -454,7 +454,7 @@ bool GetGroups(CTokenGroups* pGroups) const throw(...);
 
 ### Parameters
 
-*pGroups*  
+*pGroups*<br/>
 Pointer to the [CTokenGroups Class](../../atl/reference/ctokengroups-class.md) object which will receive the group information.
 
 ### Return Value
@@ -484,7 +484,7 @@ bool GetImpersonationLevel(
 
 ### Parameters
 
-*pImpersonationLevel*  
+*pImpersonationLevel*<br/>
 Pointer to a [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-_security_impersonation_level) enumeration type which will receive the impersonation level information.
 
 ### Return Value
@@ -501,7 +501,7 @@ bool GetLogonSessionId(LUID* pluid) const throw(...);
 
 ### Parameters
 
-*pluid*  
+*pluid*<br/>
 Pointer to a [LUID](/windows/desktop/api/winnt/ns-winnt-_luid) which will receive the Logon Session ID.
 
 ### Return Value
@@ -522,7 +522,7 @@ bool GetLogonSid(CSid* pSid) const throw(...);
 
 ### Parameters
 
-*pSid*  
+*pSid*<br/>
 Pointer to a [CSid Class](../../atl/reference/csid-class.md) object.
 
 ### Return Value
@@ -543,7 +543,7 @@ bool GetOwner(CSid* pSid) const throw(...);
 
 ### Parameters
 
-*pSid*  
+*pSid*<br/>
 Pointer to a [CSid Class](../../atl/reference/csid-class.md) object.
 
 ### Return Value
@@ -564,7 +564,7 @@ bool GetPrimaryGroup(CSid* pSid) const throw(...);
 
 ### Parameters
 
-*pSid*  
+*pSid*<br/>
 Pointer to a [CSid Class](../../atl/reference/csid-class.md) object.
 
 ### Return Value
@@ -585,7 +585,7 @@ bool GetPrivileges(CTokenPrivileges* pPrivileges) const throw(...);
 
 ### Parameters
 
-*pPrivileges*  
+*pPrivileges*<br/>
 Pointer to a [CTokenPrivileges Class](../../atl/reference/ctokenprivileges-class.md) object which will receive the privileges.
 
 ### Return Value
@@ -602,10 +602,10 @@ bool GetProcessToken(DWORD dwDesiredAccess, HANDLE hProcess = NULL) throw();
 
 ### Parameters
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 Specifies an access mask that specifies the requested types of access to the access token. These requested access types are compared with the token's DACL to determine which accesses are granted or denied.
 
-*hProcess*  
+*hProcess*<br/>
 Handle to the process whose access token is opened. If the default value of NULL is used, the current process is used.
 
 ### Return Value
@@ -638,7 +638,7 @@ bool GetSource(TOKEN_SOURCE* pSource) const throw(...);
 
 ### Parameters
 
-*pSource*  
+*pSource*<br/>
 Pointer to a [TOKEN_SOURCE](/windows/desktop/api/winnt/ns-winnt-_token_source) structure.
 
 ### Return Value
@@ -655,7 +655,7 @@ bool GetStatistics(TOKEN_STATISTICS* pStatistics) const throw(...);
 
 ### Parameters
 
-*pStatistics*  
+*pStatistics*<br/>
 Pointer to a [TOKEN_STATISTICS](/windows/desktop/api/winnt/ns-winnt-_token_statistics) structure.
 
 ### Return Value
@@ -672,7 +672,7 @@ bool GetTerminalServicesSessionId(DWORD* pdwSessionId) const throw(...);
 
 ### Parameters
 
-*pdwSessionId*  
+*pdwSessionId*<br/>
 The Terminal Services Session ID.
 
 ### Return Value
@@ -692,13 +692,13 @@ bool GetThreadToken(
 
 ### Parameters
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 Specifies an access mask that specifies the requested types of access to the access token. These requested access types are compared with the token's DACL to determine which accesses are granted or denied.
 
-*hThread*  
+*hThread*<br/>
 Handle to the thread whose access token is opened.
 
-*bOpenAsSelf*  
+*bOpenAsSelf*<br/>
 Indicates whether the access check is to be made against the security context of the thread calling the `GetThreadToken` method or against the security context of the process for the calling thread.
 
 If this parameter is FALSE, the access check is performed using the security context for the calling thread. If the thread is impersonating a client, this security context can be that of a client process. If this parameter is TRUE, the access check is made using the security context of the process for the calling thread.
@@ -717,7 +717,7 @@ bool GetTokenId(LUID* pluid) const throw(...);
 
 ### Parameters
 
-*pluid*  
+*pluid*<br/>
 Pointer to a [LUID](/windows/desktop/api/winnt/ns-winnt-_luid) which will receive the Token ID.
 
 ### Return Value
@@ -734,7 +734,7 @@ bool GetType(TOKEN_TYPE* pType) const throw(...);
 
 ### Parameters
 
-*pType*  
+*pType*<br/>
 Address of the [TOKEN_TYPE](/windows/desktop/api/winnt/ne-winnt-_token_type) variable that, on success, receives the type of the token.
 
 ### Return Value
@@ -755,7 +755,7 @@ bool GetUser(CSid* pSid) const throw(...);
 
 ### Parameters
 
-*pSid*  
+*pSid*<br/>
 Pointer to a [CSid Class](../../atl/reference/csid-class.md) object.
 
 ### Return Value
@@ -784,7 +784,7 @@ bool Impersonate(HANDLE hThread = NULL) const throw(...);
 
 ### Parameters
 
-*hThread*  
+*hThread*<br/>
 Handle to the thread to assign the impersonation token to. This handle must have been opened with TOKEN_IMPERSONATE access rights. If *hThread* is NULL, the method causes the thread to stop using an impersonation token.
 
 ### Return Value
@@ -857,19 +857,19 @@ bool LogonUser(
 
 ### Parameters
 
-*pszUserName*  
+*pszUserName*<br/>
 Pointer to a null-terminated string that specifies the user name. This is the name of the user account to log on to.
 
-*pszDomain*  
+*pszDomain*<br/>
 Pointer to a null-terminated string that specifies the name of the domain or server whose account database contains the *pszUserName* account.
 
-*pszPassword*  
+*pszPassword*<br/>
 Pointer to a null-terminated string that specifies the clear-text password for the user account specified by *pszUserName*.
 
-*dwLogonType*  
+*dwLogonType*<br/>
 Specifies the type of logon operation to perform. See [LogonUser](/windows/desktop/api/winbase/nf-winbase-logonusera) for more details.
 
-*dwLogonProvider*  
+*dwLogonProvider*<br/>
 Specifies the logon provider. See [LogonUser](/windows/desktop/api/winbase/nf-winbase-logonusera) for more details.
 
 ### Return Value
@@ -893,13 +893,13 @@ bool OpenCOMClientToken(
 
 ### Parameters
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 Specifies an access mask that specifies the requested types of access to the access token. These requested access types are compared with the token's DACL to determine which accesses are granted or denied.
 
-*bImpersonate*  
+*bImpersonate*<br/>
 If TRUE, the current thread will impersonate the calling COM client if this call completes successfully. If FALSE, the access token will be opened, but the thread will not have an impersonation token when this call completes.
 
-*bOpenAsSelf*  
+*bOpenAsSelf*<br/>
 Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) method or against the security context of the process for the calling thread.
 
 If this parameter is FALSE, the access check is performed using the security context for the calling thread. If the thread is impersonating a client, this security context can be that of a client process. If this parameter is TRUE, the access check is made using the security context of the process for the calling thread.
@@ -926,16 +926,16 @@ bool OpenNamedPipeClientToken(
 
 ### Parameters
 
-*hPipe*  
+*hPipe*<br/>
 Handle to a named pipe.
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 Specifies an access mask that specifies the requested types of access to the access token. These requested access types are compared with the token's DACL to determine which accesses are granted or denied.
 
-*bImpersonate*  
+*bImpersonate*<br/>
 If TRUE, the current thread will impersonate the calling pipe client if this call completes successfully. If FALSE, the access token will be opened, but the thread will not have an impersonation token when this call completes.
 
-*bOpenAsSelf*  
+*bOpenAsSelf*<br/>
 Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) method or against the security context of the process for the calling thread.
 
 If this parameter is FALSE, the access check is performed using the security context for the calling thread. If the thread is impersonating a client, this security context can be that of a client process. If this parameter is TRUE, the access check is made using the security context of the process for the calling thread.
@@ -962,16 +962,16 @@ bool OpenRPCClientToken(
 
 ### Parameters
 
-*BindingHandle*  
+*BindingHandle*<br/>
 Binding handle on the server that represents a binding to a client.
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 Specifies an access mask that specifies the requested types of access to the access token. These requested access types are compared with the token's DACL to determine which accesses are granted or denied.
 
-*bImpersonate*  
+*bImpersonate*<br/>
 If TRUE, the current thread will impersonate the calling RPC client if this call completes successfully. If FALSE, the access token will be opened, but the thread will not have an impersonation token when this call completes.
 
-*bOpenAsSelf*  
+*bOpenAsSelf*<br/>
 Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) method or against the security context of the process for the calling thread.
 
 If this parameter is FALSE, the access check is performed using the security context for the calling thread. If the thread is impersonating a client, this security context can be that of a client process. If this parameter is TRUE, the access check is made using the security context of the process for the calling thread.
@@ -998,18 +998,18 @@ bool OpenThreadToken(
 
 ### Parameters
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 Specifies an access mask that specifies the requested types of access to the access token. These requested access types are compared with the token's DACL to determine which accesses are granted or denied.
 
-*bImpersonate*  
+*bImpersonate*<br/>
 If TRUE, the thread will be left at the requested impersonation level after this method completes. If FALSE, the thread will revert to its original impersonation level.
 
-*bOpenAsSelf*  
+*bOpenAsSelf*<br/>
 Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) method or against the security context of the process for the calling thread.
 
 If this parameter is FALSE, the access check is performed using the security context for the calling thread. If the thread is impersonating a client, this security context can be that of a client process. If this parameter is TRUE, the access check is made using the security context of the process for the calling thread.
 
-*sil*  
+*sil*<br/>
 Specifies a [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-_security_impersonation_level) enumerated type that supplies the impersonation level of the token.
 
 ### Return Value
@@ -1034,10 +1034,10 @@ bool PrivilegeCheck(
 
 ### Parameters
 
-*RequiredPrivileges*  
+*RequiredPrivileges*<br/>
 Pointer to a [PRIVILEGE_SET](/windows/desktop/api/winnt/ns-winnt-_privilege_set) structure.
 
-*pbResult*  
+*pbResult*<br/>
 Pointer to a value the method sets to indicate whether any or all of the specified privilege are enabled in the `CAccessToken` object.
 
 ### Return Value
@@ -1058,7 +1058,7 @@ bool Revert(HANDLE hThread = NULL) const throw();
 
 ### Parameters
 
-*hThread*  
+*hThread*<br/>
 Handle to the thread to revert from impersonation. If *hThread* is NULL, the current thread is assumed.
 
 ### Return Value
@@ -1079,7 +1079,7 @@ bool SetDefaultDacl(const CDacl& rDacl) throw(...);
 
 ### Parameters
 
-*rDacl*  
+*rDacl*<br/>
 The new default [CDacl Class](../../atl/reference/cdacl-class.md) information.
 
 ### Return Value
@@ -1100,7 +1100,7 @@ bool SetOwner(const CSid& rSid) throw(...);
 
 ### Parameters
 
-*rSid*  
+*rSid*<br/>
 The [CSid Class](../../atl/reference/csid-class.md) object containing the owner information.
 
 ### Return Value
@@ -1121,7 +1121,7 @@ bool SetPrimaryGroup(const CSid& rSid) throw(...);
 
 ### Parameters
 
-*rSid*  
+*rSid*<br/>
 The [CSid Class](../../atl/reference/csid-class.md) object containing the primary group information.
 
 ### Return Value
@@ -1134,6 +1134,6 @@ The primary group is the default group for new objects created while this access
 
 ## See Also
 
-[ATLSecurity Sample](../../visual-cpp-samples.md)   
-[Access Tokens](/windows/desktop/SecAuthZ/access-tokens)   
+[ATLSecurity Sample](../../visual-cpp-samples.md)<br/>
+[Access Tokens](/windows/desktop/SecAuthZ/access-tokens)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

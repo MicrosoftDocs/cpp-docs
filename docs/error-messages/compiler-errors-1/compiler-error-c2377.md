@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2377
-'identifier' : redefinition; typedef cannot be overloaded with any other symbol  
-  
- A `typedef` identifier is redefined.  
-  
- The following sample generates C2377:  
-  
-```  
-// C2377.cpp  
-// compile with: /c  
-typedef int i;  
-int i;   // C2377  
-int j;   // OK  
+
+'identifier' : redefinition; typedef cannot be overloaded with any other symbol
+
+A `typedef` identifier is redefined.
+
+The following sample generates C2377:
+
+```
+// C2377.cpp
+// compile with: /c
+typedef int i;
+int i;   // C2377
+int j;   // OK
 ```

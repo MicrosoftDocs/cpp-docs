@@ -73,15 +73,16 @@ int main() {
    f(cpi); // Calls even more specialized function.
    // Without partial ordering, these calls would be ambiguous.
 }
-```  
-  
-### Output  
-  
-```Output  
-Less specialized function called  
-More specialized function called  
-Even more specialized function for const T*  
-```  
-  
+```
+
+### Output
+
+```Output
+Less specialized function called
+More specialized function called
+Even more specialized function for const T*
+```
+
 ## See also
- [Function Templates](../cpp/function-templates.md)
+
+[Function Templates](../cpp/function-templates.md)

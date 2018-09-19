@@ -26,10 +26,10 @@ STDMETHOD(
 
 ### Parameters
 
-*riid*  
+*riid*<br/>
 An interface ID.
 
-*ppvObject*  
+*ppvObject*<br/>
 When this operation is complete, a pointer to the interface specified by parameter *riid*.
 
 ## Return Value

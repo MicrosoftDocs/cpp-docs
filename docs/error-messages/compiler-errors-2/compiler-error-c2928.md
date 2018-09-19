@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2928
-explicit instantiation; 'identifier' is not a function or static data member of template-class 'class'  
-  
- You cannot explicitly instantiate a member of `class` that is not a function or `static` variable.
+
+explicit instantiation; 'identifier' is not a function or static data member of template-class 'class'
+
+You cannot explicitly instantiate a member of `class` that is not a function or `static` variable.

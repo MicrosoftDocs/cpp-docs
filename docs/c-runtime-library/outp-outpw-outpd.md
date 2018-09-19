@@ -16,60 +16,65 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _outp, _outpw, _outpd
-Outputs, at a port, a byte (`_outp`), a word (`_outpw`), or a double word (`_outpd`).  
-  
+
+Outputs, at a port, a byte (`_outp`), a word (`_outpw`), or a double word (`_outpd`).
+
 > [!IMPORTANT]
->  These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT.  
-  
+>  These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT.
+
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
-  
-## Syntax  
-  
-```  
-  
-      int _outp(  
-unsigned short port,  
-int databyte   
-);  
-unsigned short _outpw(  
-unsigned short port,  
-unsigned short dataword   
-);  
-unsigned long _outpd(  
-unsigned short port,  
-unsigned long dataword   
-);  
-```  
-  
-#### Parameters  
- *port*  
- Port number.  
-  
- *databyte, dataword*  
- Output values.  
-  
-## Return Value  
- The functions return the data output. There is no error return.  
-  
-## Remarks  
- The `_outp`, `_outpw`, and `_outpd` functions write a byte, a word, and a double word, respectively, to the specified output port. The *port* argument can be any unsigned integer in the range 0 - 65,535; *databyte* can be any integer in the range 0 - 255; and *dataword* can be any value in the range of an integer, an unsigned short integer, and an unsigned long integer, respectively.  
-  
- Because these functions write directly to an I/O port, they cannot be used in user code. For information about using I/O ports in these operating systems, search for "Serial Communications in Win32" at MSDN.  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_outp`|\<conio.h>|  
-|`_outpw`|\<conio.h>|  
-|`_outpd`|\<conio.h>|  
-  
- For more compatibility information, see [Compatibility](../c-runtime-library/compatibility.md).  
-  
-## Libraries  
- All versions of the [C run-time libraries](../c-runtime-library/crt-library-features.md).  
-  
-## See Also  
- [Console and Port I/O](../c-runtime-library/console-and-port-i-o.md)   
- [_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+
+## Syntax
+
+```
+
+      int _outp(
+unsigned short port,
+int databyte
+);
+unsigned short _outpw(
+unsigned short port,
+unsigned short dataword
+);
+unsigned long _outpd(
+unsigned short port,
+unsigned long dataword
+);
+```
+
+#### Parameters
+*port*<br/>
+Port number.
+
+*databyte, dataword*<br/>
+Output values.
+
+## Return Value
+
+The functions return the data output. There is no error return.
+
+## Remarks
+
+The `_outp`, `_outpw`, and `_outpd` functions write a byte, a word, and a double word, respectively, to the specified output port. The *port* argument can be any unsigned integer in the range 0 - 65,535; *databyte* can be any integer in the range 0 - 255; and *dataword* can be any value in the range of an integer, an unsigned short integer, and an unsigned long integer, respectively.
+
+Because these functions write directly to an I/O port, they cannot be used in user code. For information about using I/O ports in these operating systems, search for "Serial Communications in Win32" at MSDN.
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`_outp`|\<conio.h>|
+|`_outpw`|\<conio.h>|
+|`_outpd`|\<conio.h>|
+
+For more compatibility information, see [Compatibility](../c-runtime-library/compatibility.md).
+
+## Libraries
+
+All versions of the [C run-time libraries](../c-runtime-library/crt-library-features.md).
+
+## See Also
+
+[Console and Port I/O](../c-runtime-library/console-and-port-i-o.md)<br/>
+[_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)

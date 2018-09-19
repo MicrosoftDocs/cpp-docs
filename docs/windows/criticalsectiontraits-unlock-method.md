@@ -26,7 +26,7 @@ inline static void Unlock(
 
 ### Parameters
 
-*cs*  
+*cs*<br/>
 A pointer to a critical section object.
 
 ## Remarks

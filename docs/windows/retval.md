@@ -47,6 +47,6 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Parameter Attributes](../windows/parameter-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Parameter Attributes](../windows/parameter-attributes.md)<br/>
 [Method Attributes](../windows/method-attributes.md)  

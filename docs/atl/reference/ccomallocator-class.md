@@ -50,7 +50,7 @@ static void* Allocate(size_t nBytes) throw();
 
 ### Parameters
 
-*nBytes*  
+*nBytes*<br/>
 The number of bytes to allocate.
 
 ### Return Value
@@ -71,7 +71,7 @@ static void Free(void* p) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 Pointer to the allocated memory.
 
 ### Remarks
@@ -88,10 +88,10 @@ static void* Reallocate(void* p, size_t nBytes) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 Pointer to the allocated memory.
 
-*nBytes*  
+*nBytes*<br/>
 The number of bytes to reallocate.
 
 ### Return Value
@@ -104,6 +104,6 @@ Resizes the amount of allocated memory. See [CoTaskMemRealloc](/windows/desktop/
 
 ## See Also
 
-[CComHeapPtr Class](../../atl/reference/ccomheapptr-class.md)   
-[CCRTAllocator Class](../../atl/reference/ccrtallocator-class.md)   
+[CComHeapPtr Class](../../atl/reference/ccomheapptr-class.md)<br/>
+[CCRTAllocator Class](../../atl/reference/ccrtallocator-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

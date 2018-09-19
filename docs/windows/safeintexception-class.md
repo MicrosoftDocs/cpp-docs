@@ -26,7 +26,7 @@ class SafeIntException;
 
 ### Public Constructors
 
-[SafeIntException::SafeIntException](../windows/safeintexception-safeintexception.md)  
+[SafeIntException::SafeIntException](../windows/safeintexception-safeintexception.md)<br/>
 Creates a **SafeIntException** object.
 
 ## Remarks
@@ -45,5 +45,5 @@ The [SafeInt Class](../windows/safeint-class.md) is the only class that uses the
 
 ## See Also
 
-[SafeInt Library](../windows/safeint-library.md)  
+[SafeInt Library](../windows/safeint-library.md)<br/>
 [SafeInt Class](../windows/safeint-class.md)

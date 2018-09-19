@@ -120,7 +120,7 @@ TRY
     pItem->Invalidate();
 }
 CATCH (CException, e)
-{ 
+{
     // clean up item
     if (pItem != NULL)
         GetDocument()->DeleteItem(pItem);
@@ -680,5 +680,5 @@ The HIERSVR sample in MFC 3.0 also uses a slightly different design for its serv
 
 ## See also
 
-[Technical Notes by Number](../mfc/technical-notes-by-number.md)  
-[Technical Notes by Category](../mfc/technical-notes-by-category.md)  
+[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
+[Technical Notes by Category](../mfc/technical-notes-by-category.md)

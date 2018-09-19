@@ -38,6 +38,6 @@ The /GUARD:CF option must be specified to both the compiler and linker to create
 
 ## See Also
 
-[/guard (Enable Control Flow Guard)](../../build/reference/guard-enable-control-flow-guard.md)
+[/guard (Enable Control Flow Guard)](../../build/reference/guard-enable-control-flow-guard.md)<br/>
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

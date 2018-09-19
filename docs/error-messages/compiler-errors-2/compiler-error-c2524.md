@@ -13,34 +13,37 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2524
-'destructor' : a destructor/finalizer must have a 'void' parameter list  
-  
- The destructor or finalizer had a parameter list that is not [void](../../cpp/void-cpp.md). Other parameter types are not allowed.  
-  
-## Example  
- The following code reproduces C2524.  
-  
-```  
-// C2524.cpp  
-// compile with: /c  
-class A {  
-   A() {}  
-   ~A(int i) {}    // C2524  
-   // try the following line instead  
-   // ~A() {}  
-};  
-```  
-  
-## Example  
- The following code reproduces C2524.  
-  
-```  
-// C2524_b.cpp  
-// compile with: /clr /c  
-ref struct I1 {  
-protected:  
-   !I1(int i);   // C2524  
-   // try the following line instead  
-   // !I1();  
-};  
+
+'destructor' : a destructor/finalizer must have a 'void' parameter list
+
+The destructor or finalizer had a parameter list that is not [void](../../cpp/void-cpp.md). Other parameter types are not allowed.
+
+## Example
+
+The following code reproduces C2524.
+
+```
+// C2524.cpp
+// compile with: /c
+class A {
+   A() {}
+   ~A(int i) {}    // C2524
+   // try the following line instead
+   // ~A() {}
+};
+```
+
+## Example
+
+The following code reproduces C2524.
+
+```
+// C2524_b.cpp
+// compile with: /clr /c
+ref struct I1 {
+protected:
+   !I1(int i);   // C2524
+   // try the following line instead
+   // !I1();
+};
 ```

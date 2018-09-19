@@ -18,16 +18,16 @@ These utility classes can be used in any native C++ project without requiring an
 
 ## In This Section
 
-[Classes Shared Between MFC and ATL](../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md)  
+[Classes Shared Between MFC and ATL](../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md)<br/>
 Provides links to the classes shared between MFC and ATL.
 
 ## Related Sections
 
-[Active Template Library (ATL) Reference](../atl/atl-com-desktop-components.md)  
+[Active Template Library (ATL) Reference](../atl/atl-com-desktop-components.md)<br/>
 Provides reference material for the ATL Library, a set of template-based C++ classes that simplify the programming of COM objects.
 
-[Microsoft Foundation Class Library (MFC) Reference](../mfc/mfc-desktop-applications.md)  
+[Microsoft Foundation Class Library (MFC) Reference](../mfc/mfc-desktop-applications.md)<br/>
 Provides reference material for the MFC Library, a set of classes in that constitute an application framework, which is the framework of an application written for the Windows API.
 
-[Debugging](/visualstudio/debugger/debugging-in-visual-studio)  
+[Debugging](/visualstudio/debugger/debugging-in-visual-studio)<br/>
 Provides links to using the Visual Studio debugger to correct logic errors in your application or stored procedures.

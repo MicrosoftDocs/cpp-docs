@@ -32,61 +32,61 @@ typename TArg9> HRESULT MakeAndInitialize(_Outptr_result_nullonfailure_ I** ppv
 
 ### Parameters
 
-*T*  
+*T*<br/>
 A user-specified class that inherits from `WRL::RuntimeClass`.
 
-*TArg1*  
+*TArg1*<br/>
 Type of argument 1 that is passed to the specified runtime class.
 
-*TArg2*  
+*TArg2*<br/>
 Type of argument 2 that is passed to the specified runtime class.
 
-*TArg3*  
+*TArg3*<br/>
 Type of argument 3 that is passed to the specified runtime class.
 
-*TArg4*  
+*TArg4*<br/>
 Type of argument 4 that is passed to the specified runtime class.
 
-*TArg5*  
+*TArg5*<br/>
 Type of argument 5 that is passed to the specified runtime class.
 
-*TArg6*  
+*TArg6*<br/>
 Type of argument 6 that is passed to the specified runtime class.
 
-*TArg7*  
+*TArg7*<br/>
 Type of argument 7 that is passed to the specified runtime class.
 
-*TArg8*  
+*TArg8*<br/>
 Type of argument 8 that is passed to the specified runtime class.
 
-*TArg9*  
+*TArg9*<br/>
 Type of argument 9 that is passed to the specified runtime class.
 
-*arg1*  
+*arg1*<br/>
 Argument 1 that is passed to the specified runtime class.
 
-*arg2*  
+*arg2*<br/>
 Argument 2 that is passed to the specified runtime class.
 
-*arg3*  
+*arg3*<br/>
 Argument 3 that is passed to the specified runtime class.
 
-*arg4*  
+*arg4*<br/>
 Argument 4 that is passed to the specified runtime class.
 
-*arg5*  
+*arg5*<br/>
 Argument 5 that is passed to the specified runtime class.
 
-*arg6*  
+*arg6*<br/>
 Argument 6 that is passed to the specified runtime class.
 
-*arg7*  
+*arg7*<br/>
 Argument 7 that is passed to the specified runtime class.
 
-*arg8*  
+*arg8*<br/>
 Argument 8 that is passed to the specified runtime class.
 
-*arg9*  
+*arg9*<br/>
 Argument 9 that is passed to the specified runtime class.
 
 ## Return Value

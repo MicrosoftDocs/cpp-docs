@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3033
-'var' : variable in 'clause' clause cannot have const-qualified type  
-  
- Values passed to certain clauses cannot be `const` variables.  
-  
- The following sample generates C3033:  
-  
-```  
-// C3033.cpp  
-// compile with: /openmp /link vcomps.lib  
-int main() {  
-   const int val = 1;  
-   int val2 = 1;  
-  
-   #pragma omp parallel reduction(+ : val)   // C3033  
-   ;  
-  
-   #pragma omp parallel reduction(+ : val2)   // OK  
-   ;  
-}  
+
+'var' : variable in 'clause' clause cannot have const-qualified type
+
+Values passed to certain clauses cannot be `const` variables.
+
+The following sample generates C3033:
+
+```
+// C3033.cpp
+// compile with: /openmp /link vcomps.lib
+int main() {
+   const int val = 1;
+   int val2 = 1;
+
+   #pragma omp parallel reduction(+ : val)   // C3033
+   ;
+
+   #pragma omp parallel reduction(+ : val2)   // OK
+   ;
+}
 ```

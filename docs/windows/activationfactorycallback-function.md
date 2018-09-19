@@ -27,10 +27,10 @@ inline HRESULT STDAPICALLTYPE ActivationFactoryCallback(
 
 ### Parameters
 
-*activationId*  
+*activationId*<br/>
 Handle to a string that specifies a runtime class name.
 
-*ppFactory*  
+*ppFactory*<br/>
 When this operation completes, an activation factory that corresponds to  parameter *activationId*.
 
 ## Return Value

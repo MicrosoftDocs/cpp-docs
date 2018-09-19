@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2927
-'function' : a function template must be called with at least one argument  
-  
- You cannot call a template function without arguments. The type of the template arguments determines what version of the function to generate.
+
+'function' : a function template must be called with at least one argument
+
+You cannot call a template function without arguments. The type of the template arguments determines what version of the function to generate.

@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2275
-'identifier' : illegal use of this type as an expression  
-  
- An expression uses the `->` operator with a `typedef` identifier.  
-  
- The following sample generates C2275:  
-  
-```  
-// C2275.cpp  
-typedef struct S {  
-    int mem;  
-} *S_t;  
-void func1( int *parm );  
-void func2() {  
-    func1( &S_t->mem );   // C2275, S_t is a typedef  
-}  
+
+'identifier' : illegal use of this type as an expression
+
+An expression uses the `->` operator with a `typedef` identifier.
+
+The following sample generates C2275:
+
+```
+// C2275.cpp
+typedef struct S {
+    int mem;
+} *S_t;
+void func1( int *parm );
+void func2() {
+    func1( &S_t->mem );   // C2275, S_t is a typedef
+}
 ```

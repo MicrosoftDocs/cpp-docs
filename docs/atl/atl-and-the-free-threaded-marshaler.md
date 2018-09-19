@@ -23,9 +23,9 @@ When using this option, classes must take responsibility for the thread-safety o
 
 ## See Also
 
-[Concepts](../atl/active-template-library-atl-concepts.md)   
-[CoCreateFreeThreadedMarshaler](/windows/desktop/api/combaseapi/nf-combaseapi-cocreatefreethreadedmarshaler)   
-[IMarshal](/windows/desktop/api/objidlbase/nn-objidlbase-imarshal)   
-[When to Use the Global Interface Table](/windows/desktop/com/when-to-use-the-global-interface-table)   
+[Concepts](../atl/active-template-library-atl-concepts.md)<br/>
+[CoCreateFreeThreadedMarshaler](/windows/desktop/api/combaseapi/nf-combaseapi-cocreatefreethreadedmarshaler)<br/>
+[IMarshal](/windows/desktop/api/objidlbase/nn-objidlbase-imarshal)<br/>
+[When to Use the Global Interface Table](/windows/desktop/com/when-to-use-the-global-interface-table)<br/>
 [In-Process Server Threading Issues](/windows/desktop/com/in-process-server-threading-issues)
 

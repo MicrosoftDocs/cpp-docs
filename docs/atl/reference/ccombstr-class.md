@@ -107,16 +107,16 @@ HRESULT Append(LPCOLESTR lpsz, int nLen) throw();
 
 ### Parameters
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] A `CComBSTR` object to append.
 
-*ch*  
+*ch*<br/>
 [in] A character to append.
 
-*lpsz*  
+*lpsz*<br/>
 [in] A zero-terminated character string to append. You can pass a Unicode string via the LPCOLESTR overload or an ANSI string via the LPCSTR version.
 
-*nLen*  
+*nLen*<br/>
 [in] The number of characters from *lpsz* to append.
 
 ### Return Value
@@ -141,7 +141,7 @@ HRESULT AppendBSTR(BSTR p) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 [in] A BSTR to append.
 
 ### Return Value
@@ -166,10 +166,10 @@ HRESULT AppendBytes(const char* lpsz, int nLen) throw();
 
 ### Parameters
 
-*lpsz*  
+*lpsz*<br/>
 [in] A pointer to an array of bytes to append.
 
-*p*  
+*p*<br/>
 [in] The number of bytes to append.
 
 ### Return Value
@@ -190,7 +190,7 @@ HRESULT ArrayToBSTR(const SAFEARRAY* pSrc) throw();
 
 ### Parameters
 
-*pSrc*  
+*pSrc*<br/>
 [in] The safearray containing the elements used to create the string.
 
 ### Return Value
@@ -207,7 +207,7 @@ HRESULT AssignBSTR(const BSTR bstrSrc) throw();
 
 ### Parameters
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] A BSTR to assign to the current `CComBSTR` object.
 
 ### Return Value
@@ -224,7 +224,7 @@ void Attach(BSTR src) throw();
 
 ### Parameters
 
-*src*  
+*src*<br/>
 [in] The BSTR to attach to the object.
 
 ### Remarks
@@ -248,7 +248,7 @@ HRESULT BSTRToArray(LPSAFEARRAY* ppArray) throw();
 
 ### Parameters
 
-*ppArray*  
+*ppArray*<br/>
 [out] The pointer to the safearray used to hold the results of the function.
 
 ### Return Value
@@ -281,31 +281,31 @@ The constructor. The default constructor sets the [m_str](#m_str) member to NULL
 
 ```
 CComBSTR() throw();
-CComBSTR(const CComBSTR& src);  
-CComBSTR(REFGUID  guid);  
-CComBSTR(int nSize);  
-CComBSTR(int nSize, LPCOLESTR sz);  
-CComBSTR(int nSize, LPCSTR sz);  
-CComBSTR(LPCOLESTR pSrc);  
-CComBSTR(LPCSTR pSrc);  
+CComBSTR(const CComBSTR& src);
+CComBSTR(REFGUID  guid);
+CComBSTR(int nSize);
+CComBSTR(int nSize, LPCOLESTR sz);
+CComBSTR(int nSize, LPCSTR sz);
+CComBSTR(LPCOLESTR pSrc);
+CComBSTR(LPCSTR pSrc);
 CComBSTR(CComBSTR&& src) throw(); // (Visual Studio 2017)
 ```
 
 ### Parameters
 
-*nSize*  
+*nSize*<br/>
 [in] The number of characters to copy from *sz* or the initial size in characters for the `CComBSTR`.
 
-*sz*  
+*sz*<br/>
 [in] A string to copy. The Unicode version specifies an LPCOLESTR; the ANSI version specifies an LPCSTR.
 
-*pSrc*  
+*pSrc*<br/>
 [in] A string to copy. The Unicode version specifies an LPCOLESTR; the ANSI version specifies an LPCSTR.
 
-*src*  
+*src*<br/>
 [in] A `CComBSTR` object.
 
-*guid*  
+*guid*<br/>
 [in] A reference to a `GUID` structure.
 
 ### Remarks
@@ -362,10 +362,10 @@ HRESULT CopyTo(VARIANT* pvarDest) throw();
 
 ### Parameters
 
-*pbstr*  
+*pbstr*<br/>
 [out] The address of a BSTR in which to return the string allocated by this method.
 
-*pvarDest*  
+*pvarDest*<br/>
 [out] The address of a VARIANT in which to return the string allocated by this method.
 
 ### Return Value
@@ -465,7 +465,7 @@ BSTR m_str;
 
 Casts a `CComBSTR` object to a BSTR.
 
-```  
+```
 operator BSTR() const throw();
 ```
 
@@ -510,13 +510,13 @@ bool operator!= (int nNull) const throw();
 
 ### Parameters
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] A `CComBSTR` object.
 
-*pszSrc*  
+*pszSrc*<br/>
 [in] A zero-terminated string.
 
-*nNull*  
+*nNull*<br/>
 [in] Must be NULL.
 
 ### Return Value
@@ -552,16 +552,16 @@ This assertion is not enabled by default. Define ATL_CCOMBSTR_ADDRESS_OF_ASSERT 
 Appends a string to the `CComBSTR` object.
 
 ```
-CComBSTR& operator+= (const CComBSTR& bstrSrc);  
+CComBSTR& operator+= (const CComBSTR& bstrSrc);
 CComBSTR& operator+= (const LPCOLESTR pszSrc);
 ```
 
 ### Parameters
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] A `CComBSTR` object to append.
 
-*pszSrc*  
+*pszSrc*<br/>
 [in] A zero-terminated string to append.
 
 ### Remarks
@@ -595,8 +595,8 @@ The comparison is performed using the user's default locale.
 Sets the [m_str](#m_str) member to a copy of *pSrc* or to a copy of the BSTR member of *src*. The move assignment operator moves `src` without copying it.
 
 ```
-CComBSTR& operator= (const CComBSTR& src);  
-CComBSTR& operator= (LPCOLESTR pSrc);  
+CComBSTR& operator= (const CComBSTR& src);
+CComBSTR& operator= (LPCOLESTR pSrc);
 CComBSTR& operator= (LPCSTR pSrc);
 CComBSTR& operator= (CComBSTR&& src) throw(); // (Visual Studio 2017)
 ```
@@ -622,13 +622,13 @@ bool operator== (int nNull) const throw();
 
 ### Parameters
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] A `CComBSTR` object.
 
-*pszSrc*  
+*pszSrc*<br/>
 [in] A zero-terminated string.
 
-*nNull*  
+*nNull*<br/>
 [in] Must be NULL.
 
 ### Return Value
@@ -665,7 +665,7 @@ HRESULT ReadFromStream(IStream* pStream) throw();
 
 ### Parameters
 
-*pStream*  
+*pStream*<br/>
 [in] A pointer to the [IStream](/windows/desktop/api/objidl/nn-objidl-istream) interface on the stream containing the data.
 
 ### Return Value
@@ -722,7 +722,7 @@ HRESULT WriteToStream(IStream* pStream) throw();
 
 ### Parameters
 
-*pStream*  
+*pStream*<br/>
 [in] A pointer to the [IStream](/windows/desktop/api/objidl/nn-objidl-istream) interface on a stream.
 
 ### Return Value
@@ -739,5 +739,5 @@ You can recreate a BSTR from the contents of the stream using the [ReadFromStrea
 
 ## See Also
 
-[Class Overview](../../atl/atl-class-overview.md)   
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [ATL and MFC String Conversion Macros](string-conversion-macros.md)

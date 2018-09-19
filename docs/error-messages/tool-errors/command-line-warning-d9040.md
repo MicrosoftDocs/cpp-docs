@@ -13,10 +13,12 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Command-Line Warning D9040
-ignoring option '/analyze'; Code Analysis warnings are not available in this edition of the compiler  
-  
- The **/analyze** command line option is not available in all editions of Visual Studio. To remedy this warning, either switch to a supported edition of Visual Studio, or remove the command line option.  
-  
-## See Also  
- [Command-Line Errors D8000 Through D9999](../../error-messages/tool-errors/command-line-errors-d8000-through-d9999.md)   
- [Compiler Options](../../build/reference/compiler-options.md)
+
+ignoring option '/analyze'; Code Analysis warnings are not available in this edition of the compiler
+
+The **/analyze** command line option is not available in all editions of Visual Studio. To remedy this warning, either switch to a supported edition of Visual Studio, or remove the command line option.
+
+## See Also
+
+[Command-Line Errors D8000 Through D9999](../../error-messages/tool-errors/command-line-errors-d8000-through-d9999.md)<br/>
+[Compiler Options](../../build/reference/compiler-options.md)

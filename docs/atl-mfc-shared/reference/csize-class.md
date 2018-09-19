@@ -206,8 +206,8 @@ The fourth operator, the unary minus, changes the sign of the `CSize` value. See
 
 ## See Also
 
-[MFC Sample MDI](../../visual-cpp-samples.md)   
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)   
-[CRect Class](../../atl-mfc-shared/reference/crect-class.md)   
+[MFC Sample MDI](../../visual-cpp-samples.md)<br/>
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
+[CRect Class](../../atl-mfc-shared/reference/crect-class.md)<br/>
 [CPoint Class](../../atl-mfc-shared/reference/cpoint-class.md)
 

@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3096
-'attribute': attribute is allowed on data members of attribute classes only  
-  
- An attribute was applied incorrectly.  
-  
- For more information, see [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md).
+
+'attribute': attribute is allowed on data members of attribute classes only
+
+An attribute was applied incorrectly.
+
+For more information, see [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md).

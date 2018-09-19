@@ -11,9 +11,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Interactive Devices
-**ANSI 2.1.2.3** What constitutes an interactive device  
-  
- Microsoft C defines the keyboard and the display as interactive devices.  
-  
-## See Also  
- [Environment](../c-language/environment.md)
+
+**ANSI 2.1.2.3** What constitutes an interactive device
+
+Microsoft C defines the keyboard and the display as interactive devices.
+
+## See Also
+
+[Environment](../c-language/environment.md)

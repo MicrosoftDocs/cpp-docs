@@ -13,24 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2391
-'identifier' : 'friend' cannot be used during type definition  
-  
- The `friend` declaration includes a complete class declaration. A `friend` declaration can specify a member function or an elaborated type specifier, but not a complete class declaration.  
-  
- The following sample generates C2326:  
-  
-```  
-// C2391.cpp  
-// compile with: /c  
-class D {   
-   void func( int );   
-};  
-  
-class A {  
-   friend class B { int i; };   // C2391  
-  
-   // OK  
-   friend class C;  
-   friend void D::func(int);  
-};  
+
+'identifier' : 'friend' cannot be used during type definition
+
+The `friend` declaration includes a complete class declaration. A `friend` declaration can specify a member function or an elaborated type specifier, but not a complete class declaration.
+
+The following sample generates C2326:
+
+```
+// C2391.cpp
+// compile with: /c
+class D {
+   void func( int );
+};
+
+class A {
+   friend class B { int i; };   // C2391
+
+   // OK
+   friend class C;
+   friend void D::func(int);
+};
 ```

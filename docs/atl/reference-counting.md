@@ -30,6 +30,6 @@ Reference counting can also be implemented so that each reference to the object 
 
 ## See Also
 
-[Introduction to COM](../atl/introduction-to-com.md)   
+[Introduction to COM](../atl/introduction-to-com.md)<br/>
 [Managing Object Lifetimes through Reference Counting](/windows/desktop/com/managing-object-lifetimes-through-reference-counting)
 

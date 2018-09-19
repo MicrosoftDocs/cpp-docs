@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2172
-'function' : actual parameter is not a pointer : parameter number  
-  
- Parameter `number` is not a pointer. The function expects a pointer.
+
+'function' : actual parameter is not a pointer : parameter number
+
+Parameter `number` is not a pointer. The function expects a pointer.

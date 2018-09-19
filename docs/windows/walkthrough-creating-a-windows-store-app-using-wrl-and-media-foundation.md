@@ -121,6 +121,6 @@ The example shows how to capture photos from the default webcam one at a time. T
 
 ## See Also
 
-[Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)  
-[Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk)  
+[Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)<br/>
+[Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk)<br/>
 [Media extensions sample](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)

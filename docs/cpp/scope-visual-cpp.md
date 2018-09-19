@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 
 When you declare a program element such as a class, function, or variable, its name can only be "seen" and used in certain parts of your program. The context in which a name is visible is called its *scope*. For example, if you declare a variable `x` within a function, `x` is only visible within that function body. It has *local scope*. You may have other variables by the same name in your program; as long as they are in different scopes, they do not violate the One Definition Rule and no error is raised.
 
-For automatic non-static variables, scope also determines when they are created and destroyed in program memory. 
+For automatic non-static variables, scope also determines when they are created and destroyed in program memory.
 
 There are six kinds of scope:
 
@@ -35,10 +35,10 @@ There are six kinds of scope:
 
 You can hide a name by declaring it in an enclosed block. In the following figure, `i` is redeclared within the inner block, thereby hiding the variable associated with `i` in the outer block scope.
 
- ![Block&#45;scope name hiding](../cpp/media/vc38sf1.png "vc38SF1")
+![Block&#45;scope name hiding](../cpp/media/vc38sf1.png "vc38SF1")
 Block Scope and Name Hiding
 
- The output from the program shown in the figure is:
+The output from the program shown in the figure is:
 
 ```cpp
 i = 0
@@ -52,7 +52,7 @@ i = 0
 
 ## Hiding class names
 
- You can hide class names by declaring a function, object or variable, or enumerator in the same scope. However, the class name can still be accessed when prefixed by the keyword **class**.
+You can hide class names by declaring a function, object or variable, or enumerator in the same scope. However, the class name can still be accessed when prefixed by the keyword **class**.
 
 ```cpp
 // hiding_class_names.cpp
@@ -76,7 +76,7 @@ double Account = 15.37;            // Hides class name Account
 
 int main()
 {
-    class Account Checking( Account ); // Qualifies Account as 
+    class Account Checking( Account ); // Qualifies Account as
                                        //  class name
 
     cout << "Opening account with balance of: "
@@ -88,13 +88,13 @@ int main()
 > [!NOTE]
 > Any place the class name (`Account`) is called for, the keyword class must be used to differentiate it from the global-scoped variable Account. This rule does not apply when the class name occurs on the left side of the scope-resolution operator (::). Names on the left side of the scope-resolution operator are always considered class names.
 
- The following example demonstrates how to declare a pointer to an object of type `Account` using the **class** keyword:
+The following example demonstrates how to declare a pointer to an object of type `Account` using the **class** keyword:
 
 ```cpp
 class Account *Checking = new class Account( Account );
 ```
 
- The `Account` in the initializer (in parentheses) in the preceding statement has global scope; it is of type **double**.
+The `Account` in the initializer (in parentheses) in the preceding statement has global scope; it is of type **double**.
 
 > [!NOTE]
 > The reuse of identifier names as shown in this example is considered poor programming style.
@@ -103,7 +103,7 @@ For information about declaration and initialization of class objects, see [Clas
 
 ## Hiding names with global scope
 
- You can hide names with global scope by explicitly declaring the same name in block scope. However, global-scope names can be accessed using the scope-resolution operator (`::`).
+You can hide names with global scope by explicitly declaring the same name in block scope. However, global-scope names can be accessed using the scope-resolution operator (`::`).
 
 ```cpp
 #include <iostream>
@@ -124,4 +124,5 @@ Global-scoped i has the value: 7
 ```
 
 ## See also
- [Basic Concepts](../cpp/basic-concepts-cpp.md)
+
+[Basic Concepts](../cpp/basic-concepts-cpp.md)

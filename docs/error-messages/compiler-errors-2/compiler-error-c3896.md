@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3896
-'member' : improper initializer: this literal data member can only be initialized with 'nullptr'  
-  
- A [literal](../../windows/literal-cpp-component-extensions.md) data member was initialized incorrectly.  See [nullptr](../../windows/nullptr-cpp-component-extensions.md) for more information.  
-  
- The following sample generates C3896:  
-  
-```  
-// C3896.cpp  
-// compile with: /clr /c  
-ref class R{};  
-  
-value class V {  
-   literal R ^ r = "test";   // C3896  
-   literal R ^ r2 = nullptr;   // OK  
-};  
+
+'member' : improper initializer: this literal data member can only be initialized with 'nullptr'
+
+A [literal](../../windows/literal-cpp-component-extensions.md) data member was initialized incorrectly.  See [nullptr](../../windows/nullptr-cpp-component-extensions.md) for more information.
+
+The following sample generates C3896:
+
+```
+// C3896.cpp
+// compile with: /clr /c
+ref class R{};
+
+value class V {
+   literal R ^ r = "test";   // C3896
+   literal R ^ r2 = nullptr;   // OK
+};
 ```

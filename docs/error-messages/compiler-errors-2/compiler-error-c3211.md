@@ -13,20 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3211
-'explicit specialization' : explicit specialization is using partial specialization syntax, use template <> instead  
-  
- An explicit specialization was ill formed.  
-  
- The following sample generates C3211:  
-  
-```  
-// C3211.cpp  
-// compile with: /LD  
-template<class T>  
-struct s;  
-  
-template<class T>  
-// use the following line instead  
-// template<>  
-struct s<int>{};   // C3211  
+
+'explicit specialization' : explicit specialization is using partial specialization syntax, use template <> instead
+
+An explicit specialization was ill formed.
+
+The following sample generates C3211:
+
+```
+// C3211.cpp
+// compile with: /LD
+template<class T>
+struct s;
+
+template<class T>
+// use the following line instead
+// template<>
+struct s<int>{};   // C3211
 ```

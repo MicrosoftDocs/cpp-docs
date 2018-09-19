@@ -27,10 +27,10 @@ If the controlling expression of a `while` loop is a constant because the loop e
 The following sample shows two ways C4127 is generated, and shows how to use a for loop to avoid the warning:
 
 ```cpp
-// C4127.cpp  
-// compile with: /W4  
-#include <stdio.h>  
-int main() {  
+// C4127.cpp
+// compile with: /W4
+#include <stdio.h>
+int main() {
    if (true) {}           // OK in VS2015 update 3 and later
    if (1 == 1) {}         // C4127
    while (42) { break; }  // C4127

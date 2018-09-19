@@ -18,6 +18,6 @@ ms.workload: ["cplusplus"]
 
 ## See Also
 
-[Introduction to COM](../atl/introduction-to-com.md)   
+[Introduction to COM](../atl/introduction-to-com.md)<br/>
 [IUnknown and Interface Inheritance](/windows/desktop/com/iunknown-and-interface-inheritance)
 

@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2389
-'operator' : illegal operand 'nullptr'  
-  
- `nullptr` cannot be an operand.  
-  
- The following sample generates C2389:  
-  
-```  
-// C2389.cpp  
-// compile with: /clr  
-int main() {  
-   throw nullptr;   // C2389  
-}  
+
+'operator' : illegal operand 'nullptr'
+
+`nullptr` cannot be an operand.
+
+The following sample generates C2389:
+
+```
+// C2389.cpp
+// compile with: /clr
+int main() {
+   throw nullptr;   // C2389
+}
 ```

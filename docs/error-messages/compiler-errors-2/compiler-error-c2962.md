@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2962
-syntax error : 'token' : expected template-class member function definition to end with '}'  
-  
- The token caused a syntax error in a template declaration.  
-  
- This error can be caused by mismatched delimiters
+
+syntax error : 'token' : expected template-class member function definition to end with '}'
+
+The token caused a syntax error in a template declaration.
+
+This error can be caused by mismatched delimiters

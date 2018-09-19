@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2160
-'##' cannot occur at the beginning of a macro definition  
-  
- A macro definition began with a token-pasting operator (##).  
-  
- The following sample generates C2160:  
-  
-```  
-// C2160.cpp  
-// compile with: /c  
-#define mac(a,b) #a   // OK  
-#define mac(a,b) ##a   // C2160  
+
+'##' cannot occur at the beginning of a macro definition
+
+A macro definition began with a token-pasting operator (##).
+
+The following sample generates C2160:
+
+```
+// C2160.cpp
+// compile with: /c
+#define mac(a,b) #a   // OK
+#define mac(a,b) ##a   // C2160
 ```

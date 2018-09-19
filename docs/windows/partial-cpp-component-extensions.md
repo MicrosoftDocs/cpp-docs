@@ -40,10 +40,10 @@ class-key identifier {
 
 ### Parameters
 
-*class-key*  
+*class-key*<br/>
 A keyword that declares a class or struct that is supported by the Windows Runtime. Either **ref class**, **value class**, **ref struct**, or **value struct**.
 
-*identifier*  
+*identifier*<br/>
 The name of the defined type.
 
 ### Remarks

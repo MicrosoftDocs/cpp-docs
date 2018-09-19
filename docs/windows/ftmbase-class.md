@@ -76,7 +76,7 @@ static HRESULT CreateGlobalInterfaceTable(
 
 ### Parameters
 
-*git*  
+*git*<br/>
 When this operation completes, a pointer to a global interface table.
 
 ### Return Value
@@ -99,7 +99,7 @@ STDMETHODIMP DisconnectObject(
 
 ### Parameters
 
-*dwReserved*  
+*dwReserved*<br/>
 Reserved for future use; must be zero.
 
 ### Return Value
@@ -131,26 +131,26 @@ STDMETHODIMP GetMarshalSizeMax(
 
 ### Parameters
 
-*riid*  
+*riid*<br/>
 Reference to the identifier of the interface to be marshaled.
 
-*pv*  
+*pv*<br/>
 Interface pointer to be marshaled; can be NULL.
 
-*dwDestContext*  
+*dwDestContext*<br/>
 Destination context where the specified interface is to be unmarshaled.
 
 Specify one or more MSHCTX enumeration values.
 
 Currently, unmarshaling can occur either in another apartment of the current process (MSHCTX_INPROC) or in another process on the same computer as the current process (MSHCTX_LOCAL).
 
-*pvDestContext*  
+*pvDestContext*<br/>
 Reserved for future use; must be NULL.
 
-*mshlflags*  
+*mshlflags*<br/>
 Flag indicating whether the data to be marshaled is to be transmitted back to the client process — the typical case — or written to a global table, where it can be retrieved by multiple clients. Specify one or more MSHLFLAGS enumeration values.
 
-*pSize*  
+*pSize*<br/>
 When this operation completes, pointer to the upper bound on the amount of data to be written to the marshaling stream.
 
 ### Return Value
@@ -174,23 +174,23 @@ STDMETHODIMP GetUnmarshalClass(
 
 ### Parameters
 
-*riid*  
+*riid*<br/>
 Reference to the identifier of the interface to be marshaled.
 
-*pv*  
+*pv*<br/>
 Pointer to the interface to be marshaled; can be NULL if the caller does not have a pointer to the desired interface.
 
-*dwDestContext*  
+*dwDestContext*<br/>
 Destination context where the specified interface is to be unmarshaled.
 
 Specify one or more MSHCTX enumeration values.
 
 Unmarshaling can occur either in another apartment of the current process (MSHCTX_INPROC) or in another process on the same computer as the current process (MSHCTX_LOCAL).
 
-*pvDestContext*  
+*pvDestContext*<br/>
 Reserved for future use; must be NULL.
 
-*mshlflags*  
+*mshlflags*<br/>
 When this operation completes, pointer to the CLSID to be used to create a proxy in the client process.
 
 *pCid*
@@ -216,41 +216,41 @@ STDMETHODIMP MarshalInterface(
 
 ### Parameters
 
-*pStm*  
+*pStm*<br/>
 Pointer to the stream to be used during marshaling.
 
-*riid*  
+*riid*<br/>
 Reference to the identifier of the interface to be marshaled. This interface must be derived from the `IUnknown` interface.
 
-*pv*  
+*pv*<br/>
 Pointer to the interface pointer to be marshaled; can be NULL if the caller does not have a pointer to the desired interface.
 
-*dwDestContext*  
+*dwDestContext*<br/>
 Destination context where the specified interface is to be unmarshaled.
 
 Specify one or more MSHCTX enumeration values.
 
 Unmarshaling can occur in another apartment of the current process (MSHCTX_INPROC) or in another process on the same computer as the current process (MSHCTX_LOCAL).
 
-*pvDestContext*  
+*pvDestContext*<br/>
 Reserved for future use; must be zero.
 
-*mshlflags*  
+*mshlflags*<br/>
 Specifies whether the data to be marshaled is to be transmitted back to the client process — the typical case — or written to a global table, where it can be retrieved by multiple clients.
 
 ### Return Value
 
 S_OK
- The interface pointer was marshaled successfully.
+The interface pointer was marshaled successfully.
 
 E_NOINTERFACE
- The specified interface is not supported.
+The specified interface is not supported.
 
 STG_E_MEDIUMFULL
- The stream is full.
+The stream is full.
 
 E_FAIL
- The operation failed.
+The operation failed.
 
 ## <a name="marshaller"></a>FtmBase::marshaller_
 
@@ -272,7 +272,7 @@ STDMETHODIMP ReleaseMarshalData(
 
 ### Parameters
 
-*pStm*  
+*pStm*<br/>
 Pointer to a stream that contains the data packet to be destroyed.
 
 ### Return Value
@@ -293,13 +293,13 @@ STDMETHODIMP UnmarshalInterface(
 
 ### Parameters
 
-*pStm*  
+*pStm*<br/>
 Pointer to the stream from which the interface pointer is to be unmarshaled.
 
-*riid*  
+*riid*<br/>
 Reference to the identifier of the interface to be unmarshaled.
 
-*ppv*  
+*ppv*<br/>
 When this operation completes, the address of a pointer variable that receives the interface pointer requested in *riid*. If this operation is successful, **ppv* contains the requested interface pointer of the interface to be unmarshaled.
 
 ### Return Value

@@ -12,17 +12,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Manifest Tool Property Pages
-Use the **Manifest Tool** property pages to set build options for mt.exe.  
-  
- For more information on the manifest tool, see [Mt.exe](https://msdn.microsoft.com/library/aa375649).  
-  
- [General, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/general-manifest-tool-configuration-properties.md)  
-  
- [Input and Output, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/input-and-output-manifest-tool.md)  
-  
- [Isolated COM, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/isolated-com-manifest-tool.md)  
-  
- [Advanced, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/advanced-manifest-tool.md)  
-  
-## See Also  
- [Property Pages](../ide/property-pages-visual-cpp.md)
+
+Use the **Manifest Tool** property pages to set build options for mt.exe.
+
+For more information on the manifest tool, see [Mt.exe](https://msdn.microsoft.com/library/aa375649).
+
+[General, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/general-manifest-tool-configuration-properties.md)
+
+[Input and Output, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/input-and-output-manifest-tool.md)
+
+[Isolated COM, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/isolated-com-manifest-tool.md)
+
+[Advanced, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/advanced-manifest-tool.md)
+
+## See Also
+
+[Property Pages](../ide/property-pages-visual-cpp.md)

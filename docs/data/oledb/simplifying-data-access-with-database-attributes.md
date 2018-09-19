@@ -13,36 +13,38 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Simplifying Data Access with Database Attributes
+
 This topic demonstrates the use of database attributes to simplify database operations.  
   
- The basic way to access information from a database is to create a command (or table) class and a user record class for a particular table in the database. The database attributes simplify some of the template declarations that you previously had to do.  
+The basic way to access information from a database is to create a command (or table) class and a user record class for a particular table in the database. The database attributes simplify some of the template declarations that you previously had to do.  
   
- To demonstrate the use of database attributes, the following sections show two equivalent table and user record class declarations: the first uses attributes and the second uses OLE DB Templates. Such declaration code is typically placed in a header file named for the table or command object, for example, Authors.h.  
+To demonstrate the use of database attributes, the following sections show two equivalent table and user record class declarations: the first uses attributes and the second uses OLE DB Templates. Such declaration code is typically placed in a header file named for the table or command object, for example, Authors.h.  
   
- By comparing the two files, you can see how much simpler it is to use attributes. Among the differences are:  
+By comparing the two files, you can see how much simpler it is to use attributes. Among the differences are:  
   
--   Using attributes, you only have to declare one class: `CAuthors`, while with templates you have to declare two: `CAuthorsNoAttrAccessor` and `CAuthorsNoAttr`.  
+- Using attributes, you only have to declare one class: `CAuthors`, while with templates you have to declare two: `CAuthorsNoAttrAccessor` and `CAuthorsNoAttr`.  
   
--   The `db_source` call in the attributed version is equivalent to the `OpenDataSource()` call in the template declaration.  
+- The `db_source` call in the attributed version is equivalent to the `OpenDataSource()` call in the template declaration.  
   
--   The `db_table` call in the attributed version is equivalent to the following template declaration:  
+- The `db_table` call in the attributed version is equivalent to the following template declaration:  
   
     ```  
     class CAuthorsNoAttr : public CTable<CAccessor<CAuthorsNoAttrAccessor>>  
     ```  
   
--   The `db_column` calls in the attributed version are equivalent to the column map (see `BEGIN_COLUMN_MAP ... END_COLUMN_MAP`) in the template declaration.  
+- The `db_column` calls in the attributed version are equivalent to the column map (see `BEGIN_COLUMN_MAP ... END_COLUMN_MAP`) in the template declaration.  
   
- The attributes inject a user record class declaration for you. The user record class is equivalent to `CAuthorsNoAttrAccessor` in the template declaration. If your table class is `CAuthors`, the injected user record class is named `CAuthorsAccessor`, and you can only view its declaration in injected code. For more information, see "Attribute-Injected User Record Classes" in [User Records](../../data/oledb/user-records.md).  
+The attributes inject a user record class declaration for you. The user record class is equivalent to `CAuthorsNoAttrAccessor` in the template declaration. If your table class is `CAuthors`, the injected user record class is named `CAuthorsAccessor`, and you can only view its declaration in injected code. For more information, see "Attribute-Injected User Record Classes" in [User Records](../../data/oledb/user-records.md).  
   
- Note that in both the attributed and the templated code, you must set rowset properties using `CDBPropSet::AddProperty`.  
+Note that in both the attributed and the templated code, you must set rowset properties using `CDBPropSet::AddProperty`.  
   
- For information about the attributes discussed in this topic, see [OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md).  
+For information about the attributes discussed in this topic, see [OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md).  
   
 ## Table and Accessor Declaration Using Attributes  
- The following code calls `db_source` and `db_table` on the table class. `db_source` specifies the data source and connection to be used. `db_table` injects the appropriate template code to declare a table class. `db_column` specify the column map and inject the accessor declaration. You can use OLE DB consumer attributes in any project that supports ATL.  
+
+The following code calls `db_source` and `db_table` on the table class. `db_source` specifies the data source and connection to be used. `db_table` injects the appropriate template code to declare a table class. `db_column` specify the column map and inject the accessor declaration. You can use OLE DB consumer attributes in any project that supports ATL.  
   
- Here is the table and accessor declaration using attributes:  
+Here is the table and accessor declaration using attributes:  
   
 ```cpp
 //////////////////////////////////////////////////////////////////////  
@@ -78,7 +80,8 @@ public:
 ```  
   
 ## Table and Accessor Declaration Using Templates  
- Here is the table and accessor declaration using templates.  
+
+Here is the table and accessor declaration using templates.  
   
 ```cpp
 //////////////////////////////////////////////////////////////////////  
@@ -183,4 +186,5 @@ HRESULT hr = Open(m_session, "Authors", pPropSet);
 ```  
   
 ## See Also  
- [OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md)   
+
+[OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md)   

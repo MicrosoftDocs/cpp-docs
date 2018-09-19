@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4900
-intermediate language mismatch between 'tool1' version 'version1' and 'tool2' version 'version2'  
-  
- The intermediate language used in *tool1* and *tool2* did not match. Check that the most current version of each tool has been installed.
+
+intermediate language mismatch between 'tool1' version 'version1' and 'tool2' version 'version2'
+
+The intermediate language used in *tool1* and *tool2* did not match. Check that the most current version of each tool has been installed.

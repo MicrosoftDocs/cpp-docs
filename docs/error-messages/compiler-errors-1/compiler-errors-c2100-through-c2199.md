@@ -121,4 +121,4 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler Error C2196](compiler-error-c2196.md)|case value '*value*' already used|
 |[Compiler Error C2197](compiler-error-c2197.md)|'*function*': too many arguments for call|
 |[Compiler Error C2198](compiler-error-c2198.md)|'*function*': too few arguments for call|
-|[Compiler Error C2199](compiler-error-c2199.md)|syntax error: found '*identifier* (' at global scope (was a declaration intended?)|  
+|[Compiler Error C2199](compiler-error-c2199.md)|syntax error: found '*identifier* (' at global scope (was a declaration intended?)|

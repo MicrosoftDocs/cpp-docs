@@ -24,7 +24,7 @@ ReleaseNotifier(bool release) throw();
 
 ### Parameters
 
-*release*  
+*release*<br/>
 **true** to delete this instance when the `Release` method is called; **false** to not delete this instance.
 
 ## Exceptions

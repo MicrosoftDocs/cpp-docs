@@ -13,20 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2648
-'identifier' : use of member as default parameter requires static member  
-  
- A non-static member is used as a default parameter.  
-  
- The following sample generates C2648:  
-  
-```  
-// C2648.cpp  
-// compile with: /c  
-class C {  
-public:  
-   int i;  
-   static int j;  
-   void func1( int i = i );  // C2648  i is not static  
-   void func2( int i = j );  // OK  
-};  
+
+'identifier' : use of member as default parameter requires static member
+
+A non-static member is used as a default parameter.
+
+The following sample generates C2648:
+
+```
+// C2648.cpp
+// compile with: /c
+class C {
+public:
+   int i;
+   static int j;
+   void func1( int i = i );  // C2648  i is not static
+   void func2( int i = j );  // OK
+};
 ```

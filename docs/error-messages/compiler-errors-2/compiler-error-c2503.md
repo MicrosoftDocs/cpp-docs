@@ -13,26 +13,27 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2503
-'class' : base classes cannot contain zero-sized arrays  
-  
- A base class or structure contains a zero-sized array. An array in a class must have at least one element.  
-  
- The following sample generates C2503:  
-  
-```  
-// C2503.cpp  
-// compile with: /c  
-class A {  
-   public:  
-   int array [];  
-};  
-  
-class B : A {};    // C2503  
-  
-class C {  
-public:  
-   int array [10];  
-};  
-  
-class D : C {};  
+
+'class' : base classes cannot contain zero-sized arrays
+
+A base class or structure contains a zero-sized array. An array in a class must have at least one element.
+
+The following sample generates C2503:
+
+```
+// C2503.cpp
+// compile with: /c
+class A {
+   public:
+   int array [];
+};
+
+class B : A {};    // C2503
+
+class C {
+public:
+   int array [10];
+};
+
+class D : C {};
 ```

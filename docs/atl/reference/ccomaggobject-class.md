@@ -19,14 +19,14 @@ This class implements the [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunkn
 ## Syntax
 
 ```
-template<class contained>  
-class CComAggObject : public IUnknown, 
+template<class contained>
+class CComAggObject : public IUnknown,
    public CComObjectRootEx<contained::_ThreadModel::ThreadModelNoCS>
 ```
 
 #### Parameters
 
-*contained*  
+*contained*<br/>
 Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), as well as from any other interfaces you want to support on the object.
 
 ## Members
@@ -97,7 +97,7 @@ CComAggObject(void* pv);
 
 ### Parameters
 
-*pv*  
+*pv*<br/>
 [in] The outer unknown.
 
 ### Remarks
@@ -130,7 +130,7 @@ static HRESULT WINAPI CreateInstance(
 
 ### Parameters
 
-*pp*  
+*pp*<br/>
 [out] A pointer to a **CComAggObject\<**<em>contained</em>**>** pointer. If `CreateInstance` is unsuccessful, *pp* is set to NULL.
 
 ### Return Value
@@ -173,7 +173,7 @@ CComContainedObject<contained> m_contained;
 
 ### Parameters
 
-*contained*  
+*contained*<br/>
 [in] Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), as well as from any other interfaces you want to support on the object.
 
 ### Remarks
@@ -192,13 +192,13 @@ HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] The identifier of the interface being requested.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] A pointer to the interface pointer identified by *iid*. If the object does not support this interface, *ppvObject* is set to NULL.
 
-*pp*  
+*pp*<br/>
 [out] A pointer to the interface pointer identified by type `Q`. If the object does not support this interface, *pp* is set to NULL.
 
 ### Return Value
@@ -223,9 +223,9 @@ In debug builds, `Release` returns a value that may be useful for diagnostics or
 
 ## See Also
 
-[CComObject Class](../../atl/reference/ccomobject-class.md)   
-[CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)   
-[DECLARE_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_aggregatable)   
-[DECLARE_ONLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_only_aggregatable)   
-[DECLARE_NOT_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_not_aggregatable)   
+[CComObject Class](../../atl/reference/ccomobject-class.md)<br/>
+[CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)<br/>
+[DECLARE_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_aggregatable)<br/>
+[DECLARE_ONLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_only_aggregatable)<br/>
+[DECLARE_NOT_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_not_aggregatable)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

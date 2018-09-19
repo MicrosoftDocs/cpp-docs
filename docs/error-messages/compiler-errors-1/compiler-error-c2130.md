@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2130
-\#line expected a string containing the filename, found 'token'  
-  
- The optional file name token following [#line](../../preprocessor/hash-line-directive-c-cpp.md) `linenumber` must be a string.  
-  
- The following sample generates C2130:  
-  
-```  
-// C2130.cpp  
-int main() {  
-   #line 1000 test   // C2130  
-   #line 1000 "test"   // OK  
-}  
+
+\#line expected a string containing the filename, found 'token'
+
+The optional file name token following [#line](../../preprocessor/hash-line-directive-c-cpp.md) `linenumber` must be a string.
+
+The following sample generates C2130:
+
+```
+// C2130.cpp
+int main() {
+   #line 1000 test   // C2130
+   #line 1000 "test"   // OK
+}
 ```

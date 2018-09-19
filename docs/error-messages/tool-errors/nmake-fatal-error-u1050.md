@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # NMAKE Fatal Error U1050
-message  
-  
- The message specified with the **!ERROR** directive was displayed.
+
+message
+
+The message specified with the **!ERROR** directive was displayed.

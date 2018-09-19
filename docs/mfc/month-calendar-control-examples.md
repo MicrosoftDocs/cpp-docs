@@ -12,9 +12,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Month Calendar Control Examples
-The [CMNCTRL1](../visual-cpp-samples.md) sample application demonstrates the various attributes of the `CMonthCalCtrl` class. The control, found on a separate tab in the sample, demonstrates basic functionality and allows the user to dynamically modify certain attributes.  
-  
-## See Also  
- [Using CMonthCalCtrl](../mfc/using-cmonthcalctrl.md)   
- [Controls](../mfc/controls-mfc.md)
+
+The [CMNCTRL1](../visual-cpp-samples.md) sample application demonstrates the various attributes of the `CMonthCalCtrl` class. The control, found on a separate tab in the sample, demonstrates basic functionality and allows the user to dynamically modify certain attributes.
+
+## See Also
+
+[Using CMonthCalCtrl](../mfc/using-cmonthcalctrl.md)<br/>
+[Controls](../mfc/controls-mfc.md)
 

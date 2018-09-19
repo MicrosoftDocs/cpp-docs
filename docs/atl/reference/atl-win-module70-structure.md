@@ -29,16 +29,16 @@ struct _ATL_WIN_MODULE70 {
 
 ## Members
 
-`cbSize`  
+`cbSize`<br/>
 The size of the structure, used for versioning.
 
-`m_csWindowCreate`  
+`m_csWindowCreate`<br/>
 Used to serialize access to window registration code. Used internally by ATL.
 
-`m_pCreateWndList`  
+`m_pCreateWndList`<br/>
 Used to bind windows to their objects. Used internally by ATL.
 
-`m_rgWindowClassAtoms`  
+`m_rgWindowClassAtoms`<br/>
 Used to track window class registrations so that they can be properly unregistered at termination. Used internally by ATL.
 
 ## Remarks

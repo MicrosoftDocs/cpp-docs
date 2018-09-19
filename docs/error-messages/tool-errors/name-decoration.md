@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 Name decoration usually refers to C++ naming conventions, but can apply to a number of C cases as well. By default, C++ uses the function name, parameters, and return type to create a linker name for the function. Consider the following function:
 
 ```
-void CALLTYPE test(void)  
+void CALLTYPE test(void)
 ```
 
 The following table shows the linker name for various calling conventions.

@@ -12,7 +12,8 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Postfix Operators
-The postfix operators have the highest precedence (the tightest binding) in expression evaluation.  
+
+The postfix operators have the highest precedence (the tightest binding) in expression evaluation.
 
 ## Syntax
 

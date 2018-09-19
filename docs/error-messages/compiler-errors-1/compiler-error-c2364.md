@@ -13,23 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2364
-'type': illegal type for custom attribute  
-  
- Named arguments for custom attributes are limited to compile time constants. For example, integral types (int, char, etc.), System::Type^, and System::Object^.  
-  
-## Example  
- The following sample generates C2364.  
-  
-```  
-// c2364.cpp  
-// compile with: /clr /c  
-using namespace System;  
-  
-[attribute(AttributeTargets::All)]  
-public ref struct ABC {  
-public:  
-   // Delete the following line to resolve.  
-   ABC( Enum^ ) {}   // C2364  
-   ABC( int ) {}   // OK  
-};  
+
+'type': illegal type for custom attribute
+
+Named arguments for custom attributes are limited to compile time constants. For example, integral types (int, char, etc.), System::Type^, and System::Object^.
+
+## Example
+
+The following sample generates C2364.
+
+```
+// c2364.cpp
+// compile with: /clr /c
+using namespace System;
+
+[attribute(AttributeTargets::All)]
+public ref struct ABC {
+public:
+   // Delete the following line to resolve.
+   ABC( Enum^ ) {}   // C2364
+   ABC( int ) {}   // OK
+};
 ```

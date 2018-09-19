@@ -11,19 +11,20 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Microsoft-Specific Modifiers
-This section describes Microsoft-specific extensions to C++ in the following areas:  
-  
--   [Based addressing](based-addressing.md), the practice of using a pointer as a base from which other pointers can be offset  
-  
--   [Function calling conventions](calling-conventions.md)  
-  
--   Extended storage-class attributes declared with the [__declspec](declspec.md) keyword  
-  
--   The [__w64](w64.md) keyword  
 
-### Microsoft-Specific Keywords  
+This section describes Microsoft-specific extensions to C++ in the following areas:
 
-Many of the Microsoft-specific keywords can be used to modify declarators to form derived types. For more information about declarators, see [Declarators](overview-of-declarators.md).  
+- [Based addressing](based-addressing.md), the practice of using a pointer as a base from which other pointers can be offset
+
+- [Function calling conventions](calling-conventions.md)
+
+- Extended storage-class attributes declared with the [__declspec](declspec.md) keyword
+
+- The [__w64](w64.md) keyword
+
+### Microsoft-Specific Keywords
+
+Many of the Microsoft-specific keywords can be used to modify declarators to form derived types. For more information about declarators, see [Declarators](overview-of-declarators.md).
 
 |Keyword|Meaning|Used to Form Derived Types?|  	
 |-------------|-------------|---------------------------------|
@@ -38,4 +39,5 @@ Many of the Microsoft-specific keywords can be used to modify declarators to for
 |[__vectorcall](vectorcall.md)|The name that follows declares a function that uses registers, including SSE registers, when available, instead of the stack for argument passing.|Yes|  	
   	
 ## See Also  	
- [C++ Language Reference](cpp-language-reference.md)
+
+[C++ Language Reference](cpp-language-reference.md)

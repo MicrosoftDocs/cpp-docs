@@ -35,6 +35,6 @@ Additionally, you can reduce the size of the control and remove interfaces that 
 
 ## See Also
 
-[Adding Functionality to the Composite Control](../../atl/adding-functionality-to-the-composite-control.md)   
+[Adding Functionality to the Composite Control](../../atl/adding-functionality-to-the-composite-control.md)<br/>
 [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)   
 

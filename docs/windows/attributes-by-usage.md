@@ -32,7 +32,7 @@ If an attribute precedes a Visual C++ element that is not in the attribute's sco
 
 ## See Also
 
-[C++ Attributes Reference](../windows/cpp-attributes-reference.md)  
-[Concepts](../windows/attributed-programming-concepts.md)  
-[Attributes by Group](../windows/attributes-by-group.md)  
+[C++ Attributes Reference](../windows/cpp-attributes-reference.md)<br/>
+[Concepts](../windows/attributed-programming-concepts.md)<br/>
+[Attributes by Group](../windows/attributes-by-group.md)<br/>
 [Attributes Alphabetical Reference](../windows/attributes-alphabetical-reference.md)

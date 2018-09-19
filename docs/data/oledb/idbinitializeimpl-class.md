@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBInitializeImpl Class
+
 Provides an implementation for the [IDBInitialize](/previous-versions/windows/desktop/ms713706\(v=vs.85\)) interface.  
   
 ## Syntax
@@ -23,11 +24,13 @@ class ATL_NO_VTABLE IDBInitializeImpl : public IDBInitialize
 ```  
   
 ### Parameters  
- *T*  
- Your class, derived from `IDBInitializeImpl`.  
+
+*T*<br/>
+Your class, derived from `IDBInitializeImpl`.  
 
 ## Requirements  
- **Header:** atldb.h  
+
+**Header:** atldb.h  
   
 ## Members  
   
@@ -52,9 +55,11 @@ class ATL_NO_VTABLE IDBInitializeImpl : public IDBInitialize
 |[m_pCUtlPropInfo](#pcutlpropinfo)|A pointer to implementation of DB Properties information.|  
   
 ## Remarks  
- A mandatory interface on data source objects and optional interface on enumerators.  
+
+A mandatory interface on data source objects and optional interface on enumerators.  
 
 ## <a name="idbinitializeimpl"></a> IDBInitializeImpl::IDBInitializeImpl
+
 The constructor.  
   
 ### Syntax  
@@ -64,9 +69,11 @@ IDBInitializeImpl();
 ```  
   
 ### Remarks  
- Initializes all data members. 
+
+Initializes all data members. 
   
 ## <a name="initialize"></a> IDBInitializeImpl::Initialize
+
 Initializes the data source object by preparing its property support.  
   
 ### Syntax  
@@ -76,9 +83,11 @@ STDMETHOD(Initialize)(void);
 ```  
   
 ### Remarks  
- See [IDBInitialize::Initialize](/previous-versions/windows/desktop/ms718026\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
+
+See [IDBInitialize::Initialize](/previous-versions/windows/desktop/ms718026\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="uninitialize"></a> IDBInitializeImpl::Uninitialize
+
 Places the data source object in an uninitialized state by freeing internal resources such as the property support.  
   
 ### Syntax  
@@ -88,9 +97,11 @@ STDMETHOD(Uninitialize)(void);
 ```  
   
 ### Remarks  
- See [IDBInitialize::Uninitialize](/previous-versions/windows/desktop/ms719648\(v=vs.85\)) in the *OLE DB Programmer's Reference*.
+
+See [IDBInitialize::Uninitialize](/previous-versions/windows/desktop/ms719648\(v=vs.85\)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="dwstatus"></a> IDBInitializeImpl::m_dwStatus
+
 Data source flags.  
   
 ### Syntax  
@@ -100,7 +111,8 @@ DWORD m_dwStatus;
 ```  
   
 ### Remarks  
- These flags specify or indicate the status of various attributes for the data source object. Contains one or more of the following **enum** values:  
+
+These flags specify or indicate the status of various attributes for the data source object. Contains one or more of the following **enum** values:  
   
 ```cpp  
 enum DATASOURCE_FLAGS {  
@@ -117,6 +129,7 @@ enum DATASOURCE_FLAGS {
 |`DSF_INITIALIZED`|Set if data source has been initialized.|  
 
 ## <a name="pcutlpropinfo"></a> IDBInitializeImpl::m_pCUtlPropInfo
+
 A pointer to implementation object for DB Properties information.  
   
 ### Syntax  
@@ -126,5 +139,6 @@ CUtlPropInfo< T >* m_pCUtlPropInfo;
 ```  
   
 ## See Also  
- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

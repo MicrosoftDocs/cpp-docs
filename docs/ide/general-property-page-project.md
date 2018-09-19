@@ -96,7 +96,7 @@ The properties in the Project Default section represent default properties that 
       Displays linker toolset (C/C++ Compiler, MIDL, Resource Compiler, Linker, BSCMake, XML Web Service Proxy Generator, custom build, prebuild, prelink, postbuild events).
 
    - **Dynamic Library (.dll)**
-   
+
       Displays linker toolset, specifies /DLL linker option, and adds the _WINDLL define to CL.
 
    - **Makefile**
@@ -108,7 +108,7 @@ The properties in the Project Default section represent default properties that 
       Displays librarian toolset (same as linker toolset except substitute librarian for linker and omit XML Web Service Proxy Generator).
 
    - **Utility**
-   
+
       Displays utility toolset (MIDL, custom build, prebuild, postbuild events).
 
    To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ConfigurationType%2A>.
@@ -151,4 +151,4 @@ The properties in the Project Default section represent default properties that 
 
 ## See also
 
-[Property Pages](../ide/property-pages-visual-cpp.md)  
+[Property Pages](../ide/property-pages-visual-cpp.md)

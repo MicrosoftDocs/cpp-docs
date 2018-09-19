@@ -13,49 +13,52 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # message_not_found Class
-This class describes an exception thrown when a messaging block is unable to find a requested message.  
-  
-## Syntax  
-  
+
+This class describes an exception thrown when a messaging block is unable to find a requested message.
+
+## Syntax
+
 ```
 class message_not_found : public std::exception;
-```  
-  
-## Members  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[message_not_found](#ctor)|Overloaded. Constructs a `message_not_found` object.|  
-  
-## Inheritance Hierarchy  
- `exception`  
-  
- `message_not_found`  
-  
-## Requirements  
- **Header:** concrt.h  
-  
- **Namespace:** concurrency  
-  
-##  <a name="ctor"></a> message_not_found 
+```
 
- Constructs a `message_not_found` object.  
-  
+## Members
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[message_not_found](#ctor)|Overloaded. Constructs a `message_not_found` object.|
+
+## Inheritance Hierarchy
+
+`exception`
+
+`message_not_found`
+
+## Requirements
+
+**Header:** concrt.h
+
+**Namespace:** concurrency
+
+##  <a name="ctor"></a> message_not_found
+
+Constructs a `message_not_found` object.
+
 ```
 explicit _CRTIMP message_not_found(_In_z_ const char* _Message) throw();
 
 message_not_found() throw();
-```  
-  
-### Parameters  
- `_Message`  
- A descriptive message of the error.  
-  
-## See Also  
- [concurrency Namespace](concurrency-namespace.md)   
- [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md)
+```
 
+### Parameters
 
+*_Message*<br/>
+A descriptive message of the error.
+
+## See Also
+
+[concurrency Namespace](concurrency-namespace.md)<br/>
+[Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md)
 

@@ -39,5 +39,5 @@ Win32
 
 ## See Also
 
-[Symbol Value Restrictions](../windows/symbol-value-restrictions.md)  
+[Symbol Value Restrictions](../windows/symbol-value-restrictions.md)<br/>
 [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)

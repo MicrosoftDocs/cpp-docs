@@ -29,26 +29,26 @@ You can view the ATL DHTML control in a Web browser or other container, such as 
 
 ## In This Section
 
-[Identifying the Elements of the DHTML Control Project](../atl/identifying-the-elements-of-the-dhtml-control-project.md)  
+[Identifying the Elements of the DHTML Control Project](../atl/identifying-the-elements-of-the-dhtml-control-project.md)<br/>
 Describes the elements of a DHTML control project.
 
-[Calling C++ Code from DHTML](../atl/calling-cpp-code-from-dhtml.md)  
+[Calling C++ Code from DHTML](../atl/calling-cpp-code-from-dhtml.md)<br/>
 Provides an example of calling C++ code from a DHTML control.
 
-[Creating an ATL DHTML Control](../atl/creating-an-atl-dhtml-control.md)  
+[Creating an ATL DHTML Control](../atl/creating-an-atl-dhtml-control.md)<br/>
 Lists the steps for creating a DHTML control.
 
-[Testing the ATL DHTML Control](../atl/testing-the-atl-dhtml-control.md)  
+[Testing the ATL DHTML Control](../atl/testing-the-atl-dhtml-control.md)<br/>
 Shows how to build and test the initial DHTML control project.
 
-[Modifying the ATL DHTML Control](../atl/modifying-the-atl-dhtml-control.md)  
+[Modifying the ATL DHTML Control](../atl/modifying-the-atl-dhtml-control.md)<br/>
 Shows how to add some functionality to the control.
 
-[Testing the Altered ATL DHTML Control](../atl/testing-the-modified-atl-dhtml-control.md)  
+[Testing the Altered ATL DHTML Control](../atl/testing-the-modified-atl-dhtml-control.md)<br/>
 Shows how to build and test the control's added functionality.
 
 ## Related Sections
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Provides links to conceptual topics on how to program using the Active Template Library.
 

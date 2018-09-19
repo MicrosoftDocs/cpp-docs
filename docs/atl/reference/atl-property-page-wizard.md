@@ -61,7 +61,7 @@ Provides information about the COM functionality for the object.
 
 ## See Also
 
-[Options, ATL Property Page Wizard](../../atl/reference/options-atl-property-page-wizard.md)   
-[Strings, ATL Property Page Wizard](../../atl/reference/strings-atl-property-page-wizard.md)   
+[Options, ATL Property Page Wizard](../../atl/reference/options-atl-property-page-wizard.md)<br/>
+[Strings, ATL Property Page Wizard](../../atl/reference/strings-atl-property-page-wizard.md)<br/>
 [Example: Implementing a Property Page](../../atl/example-implementing-a-property-page.md)
 

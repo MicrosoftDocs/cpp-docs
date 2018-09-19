@@ -13,16 +13,18 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Data Types (MFC)
-This topic lists the data types most commonly used in the Microsoft Foundation Class Library. Most of the data types are the same as those in the Platform Software Development Kit (SDK), while others are unique to MFC.  
-  
- For information about the data types used in both the             Windows SDK and MFC, see             [Windows Data Types](/windows/desktop/WinProg/windows-data-types).  
-  
- Data types unique to the Microsoft Foundation Class Library include the following:  
-  
--   POSITION A value used to denote the position of an element in a collection; used by MFC collection classes.  
-  
--   LPCRECT A 32-bit pointer to a constant (nonmodifiable)                     `RECT` structure.  
-  
-## See Also  
- [Class Overview](../../mfc/class-library-overview.md)   
- [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+
+This topic lists the data types most commonly used in the Microsoft Foundation Class Library. Most of the data types are the same as those in the Platform Software Development Kit (SDK), while others are unique to MFC.
+
+For information about the data types used in both the             Windows SDK and MFC, see             [Windows Data Types](/windows/desktop/WinProg/windows-data-types).
+
+Data types unique to the Microsoft Foundation Class Library include the following:
+
+- POSITION A value used to denote the position of an element in a collection; used by MFC collection classes.
+
+- LPCRECT A 32-bit pointer to a constant (nonmodifiable)                     `RECT` structure.
+
+## See Also
+
+[Class Overview](../../mfc/class-library-overview.md)<br/>
+[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

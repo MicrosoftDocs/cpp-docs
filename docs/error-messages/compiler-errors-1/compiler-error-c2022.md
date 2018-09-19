@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2022
-'number' : too big for character  
-  
- The octal number following a backslash (\\) in a character or string constant is too big to represent a character.
+
+'number' : too big for character
+
+The octal number following a backslash (\\) in a character or string constant is too big to represent a character.

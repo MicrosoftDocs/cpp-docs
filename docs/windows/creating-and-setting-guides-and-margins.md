@@ -49,5 +49,5 @@ Win32
 
 ## See Also
 
-[Dialog Editor States (Guides and Grids)](../windows/dialog-editor-states-guides-and-grids.md)  
+[Dialog Editor States (Guides and Grids)](../windows/dialog-editor-states-guides-and-grids.md)<br/>
 [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)

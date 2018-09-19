@@ -1526,11 +1526,11 @@ Unlike the CRT tokenize functions like [strtok_s, _strtok_s_l, wcstok_s, _wcstok
 
 The output from this example is as follows:
 
-`Resulting Token: First`
-
-`Resulting Token: Second`
-
-`Resulting Token: Third`
+```Output
+Resulting Token: First
+Resulting Token: Second
+Resulting Token: Third
+```
 
 ##  <a name="trim"></a>  CStringT::Trim
 
@@ -1572,9 +1572,10 @@ Removes all leading and trailing occurrences of one of the following:
 
 The output from this example is as follows:
 
-`Before: "******Soccer is best, but liquor is quicker!!!!!"`
-
-`After : "Soccer is best, but liquor is quicker"`
+```Output
+Before: "******Soccer is best, but liquor is quicker!!!!!"
+After : "Soccer is best, but liquor is quicker"
+```
 
 ##  <a name="trimleft"></a>  CStringT::TrimLeft
 
@@ -1658,7 +1659,7 @@ The `CStringT& TrimRight()` version requires no parameters. It trims any trailin
 
 ## See Also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)   
-[ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)   
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
+[ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)<br/>
 [CSimpleStringT Class](../../atl-mfc-shared/reference/csimplestringt-class.md)
 

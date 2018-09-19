@@ -26,7 +26,7 @@ Used with the [switch_type](../windows/switch-type.md) attribute in a **union**.
 
 #### Parameters
 
-*value*  
+*value*<br/>
 A possible input value for which you want to provide processing. The type of **value** can be one of the following types:
 
 - `int`
@@ -79,6 +79,6 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
 [Class Attributes](../windows/class-attributes.md)  
