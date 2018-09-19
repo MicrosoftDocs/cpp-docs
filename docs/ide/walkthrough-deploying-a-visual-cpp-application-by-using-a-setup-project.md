@@ -38,7 +38,7 @@ You need the following components to complete this walkthrough:
   
 1. Press **Ctrl**+**Shift**+**B** to build the application. Or, on the **Build** menu, click **Build Solution**. This enables the setup project to use the output of this MFC application project.   
 
-1. If you haven’t already done so, download the Microsoft Visual Studio Installer Projects extension. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio. When you are connected to the Internet, in Visual Studio, choose **Tools** > **Extensions and Updates**. Under **Extensions and Updates**, select the **Online** tab and type *Microsoft Visual Studio Installer Projects* in the search box. Hit **Enter**, select **Microsoft Visual Studio 2017 Installer Projects**, and click **Download**. Choose to install the extension, then restart Visual Studio. 
+1. If you haven’t already done so, download the Microsoft Visual Studio Installer Projects extension. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio. When you are connected to the Internet, in Visual Studio, choose **Tools** > **Extensions and Updates**. Under the **Extensions and Updates** dialog, select the **Online** tab and type *Microsoft Visual Studio Installer Projects* in the search box. Hit **Enter**, select **Microsoft Visual Studio \<version> Installer Projects**, and click **Download**. Choose to run and install the extension, then restart Visual Studio. 
   
 1. On the menu bar, choose **File** > **Recent Projects and Solutions**, and then choose to reopen your project.   
   
