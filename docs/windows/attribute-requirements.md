@@ -17,14 +17,18 @@ The requirements listed for C++ attributes describe the project types, compiler 
 > Using attributes on a class that derives from a class that also uses attributes is not supported.
   
 ## Header
- This field lists the header files that must be included before an attribute can be used.
+
+This field lists the header files that must be included before an attribute can be used.
   
 ## Project
- This field describes the project types in which an attribute can be used.
+
+This field describes the project types in which an attribute can be used.
   
 ## Compiler
- This field provides the compiler options that must be present for this attribute to be used.
+
+This field provides the compiler options that must be present for this attribute to be used.
   
 ## See Also
- [Attribute Contexts](../windows/attribute-contexts.md)  
- [Attributes by Group](../windows/attributes-by-group.md)
+
+[Attribute Contexts](../windows/attribute-contexts.md)<br/>
+[Attributes by Group](../windows/attributes-by-group.md)

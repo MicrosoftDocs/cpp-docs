@@ -30,10 +30,10 @@ void** IID_PPV_ARGS_Helper(
 
 ### Parameters
 
-*T*  
+*T*<br/>
 The type of argument *pp*.
 
-*pp*  
+*pp*<br/>
 A doubly-indirect pointer.
 
 ## Return Value

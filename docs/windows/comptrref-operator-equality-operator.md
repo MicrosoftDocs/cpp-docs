@@ -46,10 +46,10 @@ bool operator==(
 
 ### Parameters
 
-*a*  
+*a*<br/>
 A reference to a **ComPtrRef** object.
 
-*b*  
+*b*<br/>
 A reference to another **ComPtrRef** object, or a pointer to an anonymous type (`void*`).
 
 ## Return Value
@@ -72,5 +72,5 @@ Indicates whether two **ComPtrRef** objects are equal.
 
 ## See Also
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)<br/>
 [ComPtrRef Class](../windows/comptrref-class.md)

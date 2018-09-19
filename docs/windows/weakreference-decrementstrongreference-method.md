@@ -40,5 +40,5 @@ The decremented strong reference count.
 
 ## See Also
 
-[WeakReference Class](../windows/weakreference-class1.md)  
+[WeakReference Class](../windows/weakreference-class1.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

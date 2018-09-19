@@ -28,7 +28,7 @@ T::typeid
 
 ### Parameters
 
-*T*  
+*T*<br/>
 A type name.
 
 ## Windows Runtime
@@ -41,7 +41,7 @@ Platform::Type^ type = T::typeid;
 
 ### Parameters
 
-*T*  
+*T*<br/>
 A type name.
 
 ### Remarks
@@ -62,7 +62,7 @@ type::typeid
 
 ### Parameters
 
-*type*  
+*type*<br/>
 The name of a type (abstract declarator) for which you want the `System::Type` object.
 
 ### Remarks

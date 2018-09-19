@@ -19,7 +19,7 @@ Retreives a cache of class factories.
 ## Syntax
 
 ```cpp
- HRESULT GetClassObject(
+HRESULT GetClassObject(
    REFCLSID clsid,
    REFIID riid,
    _Deref_out_ void **ppv,
@@ -29,16 +29,16 @@ Retreives a cache of class factories.
 
 ### Parameters
 
-*clsid*  
+*clsid*<br/>
 Class ID.
 
-*riid*  
+*riid*<br/>
 Interface ID that you request.
 
-*ppv*  
+*ppv*<br/>
 Pointer to returned object.
 
-*serverName*  
+*serverName*<br/>
 The server name that is specified in either the `ActivatableClassWithFactory`, `ActivatableClassWithFactoryEx`, or `ActivatableClass` macro; or **nullptr** to get the default server name.
 
 ## Return Value
@@ -54,4 +54,5 @@ Use this method only for COM, not the Windows Runtime. This method exposes only 
 **Namespace:** Microsoft::WRL
 
 ## See Also
+
 [Module Class](../windows/module-class.md)

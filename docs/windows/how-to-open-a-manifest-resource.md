@@ -37,6 +37,6 @@ Win32
 
 ## See Also
 
-[Manifest Resources](../windows/manifest-resources.md)  
-[Controls](../mfc/controls-mfc.md)  
+[Manifest Resources](../windows/manifest-resources.md)<br/>
+[Controls](../mfc/controls-mfc.md)<br/>
 [Working with Resource Files](../windows/working-with-resource-files.md)

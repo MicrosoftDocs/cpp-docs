@@ -32,13 +32,13 @@ HRESULT CanCastTo(
 
 ### Parameters
 
-*riid*  
+*riid*<br/>
 Reference to an interface ID.
 
-*ppv*  
+*ppv*<br/>
 If this operation is successful, a pointer to the interface specified by *riid* or *iid*.
 
-*iid*  
+*iid*<br/>
 Reference to an interface ID.
 
 ## Return Value
@@ -57,5 +57,5 @@ Gets a pointer to the specified interface ID.
 
 ## See Also
 
-[ImplementsHelper Structure](../windows/implementshelper-structure.md)  
+[ImplementsHelper Structure](../windows/implementshelper-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

@@ -27,7 +27,7 @@ virtual HRESULT UnregisterWinRTObject(
 
 ### Parameters
 
-*cookie*  
+*cookie*<br/>
 A pointer to a value that identifies the class object whose registration is to be revoked.
 
 ## Requirements
@@ -37,4 +37,5 @@ A pointer to a value that identifies the class object whose registration is to b
 **Namespace:** Microsoft::WRL
 
 ## See Also
+
 [Module Class](../windows/module-class.md)

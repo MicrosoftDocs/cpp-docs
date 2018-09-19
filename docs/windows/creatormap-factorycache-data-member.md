@@ -34,5 +34,5 @@ Stores the pointer to the factory cache for the **CreatorMap**.
 
 ## See Also
 
-[CreatorMap Structure](../windows/creatormap-structure.md)  
+[CreatorMap Structure](../windows/creatormap-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

@@ -35,5 +35,5 @@ Win32
 
 ## See Also
 
-[Version Information Editor](../windows/version-information-editor.md)  
+[Version Information Editor](../windows/version-information-editor.md)<br/>
 [Version Information (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)

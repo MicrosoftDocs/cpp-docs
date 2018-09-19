@@ -23,7 +23,7 @@ template<
    typename T,
    bool hasWeakReferenceSupport =
          !__is_base_of(RuntimeClassFlags<InhibitWeakReference>, T)>
- class MakeAllocator;
+class MakeAllocator;
 
 template<typename T>
 class MakeAllocator<T, false>;
@@ -34,10 +34,10 @@ class MakeAllocator<T, true>;
 
 ### Parameters
 
-*T*  
+*T*<br/>
 A type name.
 
-*hasWeakReferenceSupport*  
+*hasWeakReferenceSupport*<br/>
 **true** to allocate memory for an object that supports weak references; **false** to allocate memory for an object that doesn't support weak references.
 
 ## Remarks

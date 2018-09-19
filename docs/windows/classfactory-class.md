@@ -36,13 +36,13 @@ class ClassFactory : public Details::RuntimeClass<
 
 ### Parameters
 
-*I0*  
+*I0*<br/>
 The zeroth interface.
 
-*I1*  
+*I1*<br/>
 The first interface.
 
-*I2*  
+*I2*<br/>
 The second interface.
 
 ## Remarks
@@ -131,7 +131,7 @@ STDMETHOD(
 
 ### Parameters
 
-*fLock*  
+*fLock*<br/>
 `true` to increment the number of tracked objects. `false` to decrement the number of tracked objects.
 
 ### Return Value
@@ -154,10 +154,10 @@ STDMETHOD(
 
 ### Parameters
 
-*riid*  
+*riid*<br/>
 An interface ID.
 
-*ppvObject*  
+*ppvObject*<br/>
 When this operation completes, a pointer to the interface specified by parameter *riid*.
 
 ### Return Value

@@ -34,31 +34,31 @@ function declaration
 
 ### Parameters
 
-*name*  
+*name*<br/>
 A user-defined name for the code block that will appear in the .idl file.
 
-*dllname*  
+*dllname*<br/>
 (Optional) The .dll file that contains the export.
 
-*uuid*  
+*uuid*<br/>
 (Optional) A unique ID.
 
-*helpstring*  
+*helpstring*<br/>
 (Optional) A character string used to describe the type library.
 
-*helpstringcontext*  
+*helpstringcontext*<br/>
 (Optional) The ID of a help topic in an .hlp or .chm file.
 
-*helpcontext*  
+*helpcontext*<br/>
 (Optional) The Help ID for this type library.
 
-*hidden*  
+*hidden*<br/>
 (Optional) A parameter that prevents the library from being displayed. See the [hidden](/windows/desktop/Midl/hidden) MIDL attribute for more information.
 
-*restricted*  
+*restricted*<br/>
 (Optional) Members of the library cannot be arbitrarily called. See the [restricted](/windows/desktop/Midl/restricted) MIDL attribute for more information.
 
-*function declaration*  
+*function declaration*<br/>
 The function that you will define.
 
 ## Remarks
@@ -99,6 +99,6 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Stand-Alone Attributes](../windows/stand-alone-attributes.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Stand-Alone Attributes](../windows/stand-alone-attributes.md)<br/>
 [entry](../windows/entry.md)  

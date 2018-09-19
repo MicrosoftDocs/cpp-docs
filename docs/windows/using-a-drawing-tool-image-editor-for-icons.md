@@ -62,7 +62,7 @@ None
 
 ## See Also
 
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)  
-[Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)  
-[Image Editor for Icons](../windows/image-editor-for-icons.md)  
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+[Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
+[Image Editor for Icons](../windows/image-editor-for-icons.md)<br/>
 [Working with Color](../windows/working-with-color-image-editor-for-icons.md)

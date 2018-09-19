@@ -47,6 +47,6 @@ This document shows two examples. The first example uses the `Make` function to 
 
 ## See Also
 
-[Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)  
-[Microsoft::WRL::Make](../windows/make-function.md)  
+[Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)<br/>
+[Microsoft::WRL::Make](../windows/make-function.md)<br/>
 [Microsoft::WRL::Details::MakeAndInitialize](../windows/makeandinitialize-function.md)

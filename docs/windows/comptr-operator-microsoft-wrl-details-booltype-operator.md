@@ -32,5 +32,5 @@ If an interface is associated with this **ComPtr**, the address of the [BoolStru
 
 ## See Also
 
-[ComPtr Class](../windows/comptr-class.md)  
+[ComPtr Class](../windows/comptr-class.md)<br/>
 [ComPtr::Get Method](../windows/comptr-get-method.md)

@@ -59,5 +59,5 @@ MFC
 
 ## See Also
 
-[MFC Predefined Symbols](../windows/mfc-predefined-symbols.md)  
+[MFC Predefined Symbols](../windows/mfc-predefined-symbols.md)<br/>
 [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)

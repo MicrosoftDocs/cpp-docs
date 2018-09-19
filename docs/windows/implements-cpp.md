@@ -27,10 +27,10 @@ Specifies dispatch interfaces that are forced to be members of the IDL coclass.
 
 ### Parameters
 
-*interfaces*  
+*interfaces*<br/>
 A comma separated list of the interfaces that will be a member of the IDL coclass. A shorthand method for specifying a single interface is **implements(** *interface_name* **)**.
 
-*dispinterfaces*  
+*dispinterfaces*<br/>
 A comma separated list of the dispinterface that will be a member of the IDL coclass. A shorthand method for specifying a single dispinterface is **implements(dispinterfaces =** *dispinterface_name* **)**.
 
 ## Remarks
@@ -546,5 +546,5 @@ public:
 
 ## See Also
 
-[Compiler Attributes](../windows/compiler-attributes.md)  
+[Compiler Attributes](../windows/compiler-attributes.md)<br/>
 [Class Attributes](../windows/class-attributes.md)  

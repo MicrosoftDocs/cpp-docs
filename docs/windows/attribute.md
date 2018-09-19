@@ -28,13 +28,13 @@ Allows you to create a custom attribute.
 
 ### Parameters
 
-*AllowOn*  
+*AllowOn*<br/>
 Specifies the language elements to which the custom attribute can be applied. Default is `System::AttributeTargets::All` (see [System::AttributeTargets](https://msdn.microsoft.com/library/system.attributetargets.aspx)).
 
-*AllowMultiple*  
+*AllowMultiple*<br/>
 Specifies whether the custom attribute can be applied repeatedly to a construct. Default is FALSE.
 
-*Inherited*  
+*Inherited*<br/>
 Indicates if the attribute is to be inherited by subclasses. The compiler provides no special support for this functionality; it is the job of the attribute consumers (`Reflection`, for example) to respect this information. If *Inherited* is TRUE, the attribute is inherited. If *AllowMultiple* is TRUE, the attribute will accumulate on the derived member; if *AllowMultiple* is FALSE, the attribute will override (or replace) in inheritance. If *Inherited* is FALSE, the attribute will not be inherited. Default is TRUE.
 
 ## Remarks

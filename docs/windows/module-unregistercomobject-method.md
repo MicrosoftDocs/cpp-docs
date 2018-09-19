@@ -27,13 +27,13 @@ virtual HRESULT UnregisterCOMObject(
 
 ### Parameters
 
-*serverName*  
+*serverName*<br/>
 (Unused)
 
-*cookies*  
+*cookies*<br/>
 An array of pointers to values that identify the class objects to be unregistered. The array was created by the [RegisterCOMObject](../windows/module-registercomobject-method.md) method.
 
-*count*  
+*count*<br/>
 The number of classes to unregister.
 
 ## Return Value
@@ -47,4 +47,5 @@ S_OK if this operation is successful; otherwise, an error HRESULT that indicates
 **Namespace:** Microsoft::WRL
 
 ## See Also
+
 [Module Class](../windows/module-class.md)

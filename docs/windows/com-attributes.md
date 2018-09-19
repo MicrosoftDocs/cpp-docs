@@ -31,4 +31,5 @@ The COM attributes inject code to support numerous areas of COM development and 
 |[vi_progid](../windows/vi-progid.md)|Defines a version-independent ProgID for a control.|
   
 ## See Also
- [Attributes by Group](../windows/attributes-by-group.md)
+
+[Attributes by Group](../windows/attributes-by-group.md)

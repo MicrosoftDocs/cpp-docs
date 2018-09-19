@@ -27,10 +27,10 @@ union {
 
 ### Parameters
 
-*clsid*  
+*clsid*<br/>
 An interface ID.
 
-*getRuntimeName*  
+*getRuntimeName*<br/>
 A function that retrieves the Windows runtime name of an object.
 
 ## Remarks
@@ -45,5 +45,5 @@ Represents an object ID that is identified either by a classic COM class ID or a
 
 ## See Also
 
-[CreatorMap Structure](../windows/creatormap-structure.md)  
+[CreatorMap Structure](../windows/creatormap-structure.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

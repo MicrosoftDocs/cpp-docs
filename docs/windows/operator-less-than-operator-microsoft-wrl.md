@@ -26,10 +26,10 @@ bool operator<(const Details::ComPtrRef<ComPtr<T>>& a, const Details::ComPtrRef<
 
 ### Parameters
 
-*a*  
+*a*<br/>
 The left object.
 
-*b*  
+*b*<br/>
 The right object.
 
 ## Return Value

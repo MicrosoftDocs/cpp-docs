@@ -42,5 +42,5 @@ A developer needs to override only the **Allocate()** method to implement a diff
 
 ## See Also
 
-[MakeAllocator Class](../windows/makeallocator-class.md)  
+[MakeAllocator Class](../windows/makeallocator-class.md)<br/>
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
