@@ -1,7 +1,7 @@
 ---
 title: "-clr (Common Language Runtime Compilation) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/18/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 f1_keywords: ["/CLR", "VC.Project.VCNMakeTool.CompileAsManaged", "VC.Project.VCCLCompilerTool.CompileAsManaged"]
@@ -27,15 +27,15 @@ One or more of the following switches, comma-separated.
 
 - none
 
-   With no options, **/clr** creates metadata for the application. The metadata can be consumed by other CLR applications, and enables the application to consume types and data in the metadata of other CLR components. For more information, see [Mixed (Native and Managed) Assemblies](../../dotnet/mixed-native-and-managed-assemblies.md) and [How to: Migrate to /clr](../../dotnet/how-to-migrate-to-clr.md).
+   With no options, **/clr** creates metadata for the application. The metadata can be consumed by other CLR applications, and enables the application to consume types and data in the metadata of other CLR components. For more information, see [Mixed (Native and Managed) Assemblies](../../dotnet/mixed-native-and-managed-assemblies.md).
 
 - **pure**
 
-   **/clr:pure is deprecated**. A future version of the compiler may not support this option. We recommend that you port code that must be pure MSIL to C#.
+   **/clr:pure is deprecated**. The option is removed in Visual Studio 2017. We recommend that you port code that must be pure MSIL to C#.
 
 - **safe**
 
-   **/clr:safe is deprecated**. A future version of the compiler may not support this option. We recommend that you port code that must be safe MSIL to C#.
+   **/clr:safe is deprecated**. The option is removed in Visual Studio 2017. We recommend that you port code that must be safe MSIL to C#.
 
 - **noAssembly**
 
@@ -94,31 +94,6 @@ class {} x;
 ```
 
 Use ildasm.exe to view metadata.
-
-## Managed Extensions for C++
-
-Visual C++ no longer supports the **/clr:oldsyntax** option. This option was deprecated in Visual Studio 2005. The supported syntax for writing managed code in C++ is C++/CLI. For more information, see [Component Extensions for Runtime Platforms](../../windows/component-extensions-for-runtime-platforms.md).
-
-If you have code that uses Managed Extensions for C++, we recommend that you port it to use C++/CLI syntax. For information on how to port your code, see [C++/CLI Migration Primer](../../dotnet/cpp-cli-migration-primer.md).
-
-#### To set this compiler option in Visual Studio
-
-1. In **Solution Explorer**, right-click the project name, and then click **Properties** to open the project **Property Pages** dialog box.
-
-1. Select the **Configuration Properties** > **General** property page.
-
-1. Modify the **Common Language Runtime support** property.
-
-   > [!NOTE]
-   > When **/clr** is enabled in the **Property Pages** dialog box, compiler option properties that are not compatible with **/clr** are also adjusted, as required. For example, if **/RTC** is set and then **/clr** is enabled, **/RTC** will be turned off.
-   >
-   >  Also, when you debug a **/clr** application, set the **Debugger Type** property to **Mixed** or **Managed only**. For more information, see [Project Settings for a C++ Debug Configuration](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration).
-
-   For information about how the create a module, see [/NOASSEMBLY (Create a MSIL Module)](../../build/reference/noassembly-create-a-msil-module.md).
-
-#### To set this compiler option programmatically
-
-- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.CompileAsManaged%2A>.
 
 ## See Also
 

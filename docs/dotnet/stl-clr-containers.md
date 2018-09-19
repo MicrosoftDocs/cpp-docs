@@ -1,7 +1,7 @@
 ---
 title: "STL/CLR Containers | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/18/2018"
 ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -13,13 +13,13 @@ ms.workload: ["cplusplus", "dotnet"]
 ---
 # STL/CLR Containers
 
-The STL/CLR Library has the same containers that are found in the C++ Standard Library, but it runs within the managed environment of the .NET Framework. If you are already familiar with the C++ Standard Library, STL/CLR is the best way to continue to use the skills that you have already developed while upgrading your code to target the common language runtime (CLR).
+The STL/CLR Library consists of containers that are similar to those found in the C++ Standard Library, but it runs within the managed environment of the .NET Framework. It is not kept up-to-date with the actual C++ Standard Library and is maintained for legacy support.
 
 This document provides an overview of the containers in STL/CLR, such as the requirements for container elements, the types of elements that you can insert into the containers, and ownership issues with the elements in the containers. Where appropriate, differences between the native C++ Standard Library and STL/CLR are mentioned.
 
 ## Requirements for Container Elements
 
-All elements inserted into C++ Standard Library containers must obey certain guidelines. For more information, see [Requirements for STL/CLR Container Elements](../dotnet/requirements-for-stl-clr-container-elements.md).
+All elements inserted into STL/CLR containers must obey certain guidelines. For more information, see [Requirements for STL/CLR Container Elements](../dotnet/requirements-for-stl-clr-container-elements.md).
 
 ## Valid Container Elements
 
@@ -53,18 +53,18 @@ using namespace System;
 ref class Employee
 {
 public:
-    // C++ Standard Library containers might require a public constructor, so it
+    // STL/CLR containers might require a public constructor, so it
     // is a good idea to define one.
     Employee() :
         name(nullptr),
         employeeNumber(0) { }
 
-    // All C++ Standard Library containers require a public copy constructor.
+    // All STL/CLR containers require a public copy constructor.
     Employee(const Employee% orig) :
         name(orig.name),
         employeeNumber(orig.employeeNumber) { }
 
-    // All C++ Standard Library containers require a public assignment operator.
+    // All STL/CLR containers require a public assignment operator.
     Employee% operator=(const Employee% orig)
     {
         if (this != %orig)
@@ -76,7 +76,7 @@ public:
         return *this;
     }
 
-    // All C++ Standard Library containers require a public destructor.
+    // All STL/CLR containers require a public destructor.
     ~Employee() { }
 
     // Associative containers such as maps and sets
@@ -148,18 +148,18 @@ using namespace System;
 ref class Employee
 {
 public:
-    // C++ Standard Library containers might require a public constructor, so it
+    // STL/CLR containers might require a public constructor, so it
     // is a good idea to define one.
     Employee() :
         name(nullptr),
         employeeNumber(0) { }
 
-    // All C++ Standard Library containers require a public copy constructor.
+    // All STL/CLR containers require a public copy constructor.
     Employee(const Employee% orig) :
         name(orig.name),
         employeeNumber(orig.employeeNumber) { }
 
-    // All C++ Standard Library containers require a public assignment operator.
+    // All STL/CLR containers require a public assignment operator.
     Employee% operator=(const Employee% orig)
     {
         if (this != %orig)
@@ -171,7 +171,7 @@ public:
         return *this;
     }
 
-    // All C++ Standard Library containers require a public destructor.
+    // All STL/CLR containers require a public destructor.
     ~Employee() { }
 
     // Associative containers such as maps and sets
