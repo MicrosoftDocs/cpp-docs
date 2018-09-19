@@ -127,7 +127,7 @@ You should be aware that memory exceptions may occur whenever you use the assign
 
 ## See Also
 
-[CStringT Class](../../atl-mfc-shared/reference/cstringt-class.md)   
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)   
+[CStringT Class](../../atl-mfc-shared/reference/cstringt-class.md)<br/>
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
 

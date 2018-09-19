@@ -54,6 +54,6 @@ If you want to set both the source character set and the execution character set
 
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/execution-charset (Set Execution Character Set)](../../build/reference/execution-charset-set-execution-character-set.md)
-[/utf-8 (Set Source and Executable character sets to UTF-8)](../../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)
+[/execution-charset (Set Execution Character Set)](../../build/reference/execution-charset-set-execution-character-set.md)<br/>
+[/utf-8 (Set Source and Executable character sets to UTF-8)](../../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)<br/>
 [/validate-charset (Validate for compatible characters)](../../build/reference/validate-charset-validate-for-compatible-characters.md)

@@ -35,6 +35,6 @@ Use the value that is specified in `filename` to override the default .winmd fil
 
 ## See Also
 
-[/WINMD (Generate Windows Metadata)](../../build/reference/winmd-generate-windows-metadata.md)
+[/WINMD (Generate Windows Metadata)](../../build/reference/winmd-generate-windows-metadata.md)<br/>
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

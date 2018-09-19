@@ -11,6 +11,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # WRL Reference
+
 This section contains reference information for the Windows Runtime C++ Template Library (WRL).
   
 > [!NOTE]

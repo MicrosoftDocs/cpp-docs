@@ -99,6 +99,6 @@ return _hr; \
   
 ## See Also  
  
-[C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)   
-[C Pragmas](../c-language/c-pragmas.md)   
+[C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
+[C Pragmas](../c-language/c-pragmas.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)

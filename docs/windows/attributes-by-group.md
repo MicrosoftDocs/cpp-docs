@@ -12,6 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Attributes by Group
+
 The C++ attributes are organized into the following functional groups.
   
 |Attribute|Description|

@@ -12,6 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Attribute Categories
+
 The attributes reference describes the various types of attributes you can use in Visual C++.
   
 ## Related Sections

@@ -31,6 +31,6 @@ MFC supports several different ways of working with dates and times. These inclu
 
 ## See Also
 
-[Concepts](../mfc/mfc-concepts.md)   
+[Concepts](../mfc/mfc-concepts.md)<br/>
 [General MFC Topics](../mfc/general-mfc-topics.md)
 

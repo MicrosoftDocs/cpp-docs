@@ -460,8 +460,8 @@ See the example for [CFileTime::Millisecond](#millisecond).
 
 ## See Also
 
-[FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)   
-[CFileTimeSpan Class](../../atl-mfc-shared/reference/cfiletimespan-class.md)   
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)   
+[FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)<br/>
+[CFileTimeSpan Class](../../atl-mfc-shared/reference/cfiletimespan-class.md)<br/>
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
 

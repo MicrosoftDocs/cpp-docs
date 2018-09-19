@@ -12,6 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # MFC Database Programming Symbols
+
 The symbols in this table only appear in an MFC project when database support has been added. They support the MFC connection to SQL servers and database programming.
   
 |||

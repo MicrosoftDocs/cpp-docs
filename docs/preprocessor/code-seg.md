@@ -83,5 +83,5 @@ You can also specify sections for initialized data ([data_seg](../preprocessor/d
   
 ## See Also  
  
-[code_seg (__declspec)](../cpp/code-seg-declspec.md)   
+[code_seg (__declspec)](../cpp/code-seg-declspec.md)<br/>
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

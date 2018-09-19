@@ -11,6 +11,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Attribute Requirements
+
 The requirements listed for C++ attributes describe the project types, compiler settings, and other information necessary for an attribute to work. The categories of information are described below.
   
 > [!NOTE]
