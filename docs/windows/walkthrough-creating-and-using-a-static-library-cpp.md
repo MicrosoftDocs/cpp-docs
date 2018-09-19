@@ -37,17 +37,26 @@ An understanding of the fundamentals of the C++ language.
 
 1. On the menu bar, choose **File** > **New** > **Project**.
 
-1. In the left pane of the **New Project** dialog box, expand **Installed** > **Visual C++**, and then select **Windows Desktop**.
+1. In the left pane of the **New Project** dialog box, expand **Installed** > **Visual C++**, and then select **Windows Desktop**. In the center pane, select **Windows Desktop Wizard**.
 
-1. In the center pane, select **Windows Desktop Wizard**.
+   > [!NOTE]
+   > For versions of Visual Studio older than 2017, in the **New Project** dialog box, expand **Installed** > **Templates** > **Visual C++**, and then select **Win32**. In the center pane, select **Win32 Console Application**.
 
 1. Specify a name for the project—for example, *MathFuncsLib*—in the **Name** box. Specify a name for the solution—for example, *StaticLibrary*—in the **Solution Name** box. Choose the **OK** button.
 
-1. Under **Application type**, select Static Library (.lib).
+    - For Visual Studio 2017,
 
-1. Under **Additional Options**, un-check the **Precompiled header** check box.
+        1. Under **Application type**, select **Static Library (.lib)**.
 
-1. Choose **OK** to create the project.
+        1. Under **Additioal Options**, un-check the **Precompiled header** check box.
+
+        1. Choose **OK** to create the project.
+
+    - For versions of Visual Studio older than 2017,
+
+        1. Click **Next**.
+
+        1. Under **Application type**, select **Static library**. Then uncheck the **Precompiled header** box and choose **Finish**.
 
 ##  <a name="AddClassToLib"></a> Adding a class to the static library
 
@@ -76,17 +85,26 @@ An understanding of the fundamentals of the C++ language.
 
 1. On the menu bar, choose **File** > **New** > **Project**.
 
-1. In the left pane of the **New Project** dialog box, expand **Installed** > **Visual C++**, and then select **Windows Desktop**.
+1. In the left pane of the **New Project** dialog box, expand **Installed** > **Visual C++**, and then select **Windows Desktop**. In the center pane, select **Windows Desktop Wizard**. 
 
-1. In the center pane, select **Windows Desktop Wizard**.
+   > [!NOTE]
+   > For versions of Visual Studio older than 2017, in the **New Project** dialog box, expand **Installed** > **Templates** > **Visual C++**, and then select **Win32**. In the center pane, select **Win32 Console Application**.
 
 1. Specify a name for the project—for example, *MyExecRefsLib*—in the **Name** box. In the drop-down list next to **Solution**, select **Add to Solution**. This adds the new project to the solution that contains the static library. Choose the **OK** button.
 
-1. Under **Application type**, select **Console Application (.exe)**.
+    - For Visual Studio 2017,
 
-1. Under **Additioal Options**, un-check the **Precompiled header** check box.
+        1. Under **Application type**, select **Console Application (.exe)**.
 
-1. Choose **OK** to create the project.
+        1. Under **Additioal Options**, un-check the **Precompiled header** check box.
+
+        1. Choose **OK** to create the project.
+
+    - For versions of Visual Studio older than 2017,
+
+        1. Click **Next**.
+
+        1. Make sure **Console application** is selected. Then check the **Empty Project** box and choose **Finish**.
 
 ##  <a name="UseLibInApp"></a> Using the functionality from the static library in the app
 
