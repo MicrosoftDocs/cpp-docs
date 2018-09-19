@@ -90,11 +90,11 @@ Name                                         | Description
 
 ### Macros
 
-Name                                                         | Description
------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-[ActivatableClass](../windows/activatableclass)              | Populates an internal cache that contains a factory that can create an instance of the specified class. This macro specifies default factory and group ID parameters.
-[ActivatableClassWithFactory](../windows/activatableclass)   | Populates an internal cache that contains a factory that can create an instance of the specified class. This macro enables you to specify a particular factory parameter.
-[ActivatableClassWithFactoryEx](../windows/activatableclass) | Populates an internal cache that contains a factory that can create an instance of the specified class. This macro enables you to specify particular factory and group ID parameters.
+Name                                                               | Description
+------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[ActivatableClass](../windows/activatableclass-macro)              | Populates an internal cache that contains a factory that can create an instance of the specified class. This macro specifies default factory and group ID parameters.
+[ActivatableClassWithFactory](../windows/activatableclass-macro)   | Populates an internal cache that contains a factory that can create an instance of the specified class. This macro enables you to specify a particular factory parameter.
+[ActivatableClassWithFactoryEx](../windows/activatableclass-macro) | Populates an internal cache that contains a factory that can create an instance of the specified class. This macro enables you to specify particular factory and group ID parameters.
 
 ## Inheritance Hierarchy
 
