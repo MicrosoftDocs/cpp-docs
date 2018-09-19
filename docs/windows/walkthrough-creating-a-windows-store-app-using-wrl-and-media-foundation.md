@@ -64,7 +64,7 @@ In most cases, you can use C++/CX to create Windows Runtime. However, sometimes 
 
    [!code-cpp[wrl-media-capture#2](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_2.h)]
 
-1. Add a new header file to the project, name it `BufferLock.h`, and then add this code:
+1. Add a new header file to the project, name it `BufferLock.h`, and then replace the contents with this code:
 
    [!code-cpp[wrl-media-capture#3](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_3.h)]
 
