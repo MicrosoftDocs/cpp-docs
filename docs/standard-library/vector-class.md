@@ -352,7 +352,7 @@ int main()
 
     cout << "The vector c1 now contains elements:";
     c1_Iter = c1.begin();
- *c1_Iter = 20;
+    *c1_Iter = 20;
     for (; c1_Iter != c1.end(); c1_Iter++)
     {
         cout << " " << *c1_Iter;
@@ -734,7 +734,7 @@ int main()
 
     cout << "The vector c1 now contains elements:";
     c1 ptr = c1.data();
- *c1 ptr = 20;
+    *c1 ptr = 20;
     for (size_t n = c1.size(); 0 < n; --n, c1 ptr++)
     {
         cout << " " << *c1 ptr;
@@ -1425,17 +1425,17 @@ A type **pointer** can be used to modify the value of an element.
 
 int main( )
 {
-   using namespace std;
-   vector<int> v;
-   v.push_back( 11 );
-   v.push_back( 22 );
+    using namespace std;
+    vector<int> v;
+    v.push_back( 11 );
+    v.push_back( 22 );
 
-   vector<int>::pointer ptr = &v[0];
-   cout << *ptr << endl;
-   ptr++;
-   cout << *ptr << endl;
- *ptr = 44;
-   cout << *ptr << endl;
+    vector<int>::pointer ptr = &v[0];
+    cout << *ptr << endl;
+    ptr++;
+    cout << *ptr << endl;
+    *ptr = 44;
+    cout << *ptr << endl;
 }
 ```
 

@@ -15,19 +15,16 @@ ms.workload: ["cplusplus"]
 
 An iterator is an object that can iterate over elements in a C++ Standard Library container and provide access to individual elements. The C++ Standard Library containers all provide iterators so that algorithms can access their elements in a standard way without having to be concerned with the type of container the elements are stored in.
 
-You can use iterators explicitly using member and global functions such as begin() and end() and operators such as ++ and -- to move forward or backward. You can also use iterators implicitly with a range-for loop or (for some iterator types) the subscript operator [].
+You can use iterators explicitly using member and global functions such as `begin()` and `end()` and operators such as **++** and **--** to move forward or backward. You can also use iterators implicitly with a range-for loop or (for some iterator types) the subscript operator **\[]**.
 
-In the C++ Standard Library, the beginning of a sequence or range is the first element. The end of a sequence or range is always defined as one past the last element. The global functions begin and end return iterators to a specified container. The typical explicit iterator loop over all elements in a container looks like this:
+In the C++ Standard Library, the beginning of a sequence or range is the first element. The end of a sequence or range is always defined as one past the last element. The global functions `begin` and `end` return iterators to a specified container. The typical explicit iterator loop over all elements in a container looks like this:
 
 ```cpp
 vector<int> vec{ 0,1,2,3,4 };
-for (auto it = begin(vec);
-
-it != end(vec);
-
-it++)
-{  // Access element using dereference operator
-    cout <<*it <<" ";
+for (auto it = begin(vec); it != end(vec); it++)
+{
+    // Access element using dereference operator
+    cout << *it << " ";
 }
 ```
 
@@ -35,22 +32,23 @@ The same thing can be accomplished more simply with a range-for loop:
 
 ```cpp
 for (auto num : vec)
- {  // no deference operator
-    cout <<num <<" ";
- }
+{
+    // no deference operator
+    cout << num << " ";
+}
 ```
 
 There are five categories of iterators. In order of increasing power, the categories are:
 
-- **Output**. An output iterator `X` can iterate forward over a sequence by using the ++ operator, and can write an element only once, by using the \* operator.
+- **Output**. An *output iterator* `X` can iterate forward over a sequence by using the **++** operator, and can write an element only once, by using the **&ast;** operator.
 
-- **Input**. An input iterator `X` can iterate forward over a sequence by using the ++ operator, and can read an element any number of times by using the \* operator. You can compare input iterators by using the ++ and != operators. After you increment any copy of an input iterator, none of the other copies can safely be compared, dereferenced, or incremented thereafter.
+- **Input**. An *input iterator* `X` can iterate forward over a sequence by using the ++ operator, and can read an element any number of times by using the **&ast;** operator. You can compare input iterators by using the **++** and **!=** operators. After you increment any copy of an input iterator, none of the other copies can safely be compared, dereferenced, or incremented thereafter.
 
-- **Forward**. A forward iterator `X` can iterate forward over a sequence using the ++ operator and can read any element or write non-const elements any number of times by using the \* operator. You can access element members by using the -> operator and compare forward iterators by using the == and != operators. You can make multiple copies of a forward iterator, each of which can be dereferenced and incremented independently. A forward iterator that is initialized without reference to any container is called a null forward iterator. Null forward iterators always compare equal.
+- **Forward**. A *forward iterator* `X` can iterate forward over a sequence using the ++ operator and can read any element or write non-const elements any number of times by using the **&ast;** operator. You can access element members by using the **->** operator and compare forward iterators by using the **==** and **!=** operators. You can make multiple copies of a forward iterator, each of which can be dereferenced and incremented independently. A forward iterator that is initialized without reference to any container is called a *null forward iterator*. Null forward iterators always compare equal.
 
-- Bidirectional. A bidirectional iterator `X` can take the place of a forward iterator. You can, however, also decrement a bidirectional iterator, as in --`X`, `X`--, or (`V` = \*`X`--). You can access element members and compare bidirectional iterators in the same way as forward iterators.
+- **Bidirectional**. A *bidirectional iterator* `X` can take the place of a forward iterator. You can, however, also decrement a bidirectional iterator, as in `--X`, `X--`, or `(V = *X--)`. You can access element members and compare bidirectional iterators in the same way as forward iterators.
 
-- **Random access**. A random-access iterator `X` can take the place of a bidirectional iterator. With a random access iterator you can use the subscript operator [] to access elements. You can use the +, -, += and -= operators to move forward or backward a specified number of elements and to calculate the distance between iterators. You can compare bidirectional iterators by using ==, !=, \<, >, \<=, and >=.
+- **Random access**. A *random-access iterator* `X` can take the place of a bidirectional iterator. With a random access iterator you can use the subscript operator **\[]** to access elements. You can use the **+**, **-**, **+=** and **-=** operators to move forward or backward a specified number of elements and to calculate the distance between iterators. You can compare bidirectional iterators by using **==**, **!=**, **\<**, **>**, **\<=**, and **>=**.
 
 All iterators can be assigned or copied. They are assumed to be lightweight objects and are often passed and returned by value, not by reference. Note also that none of the operations previously described can throw an exception when performed on a valid iterator.
 
