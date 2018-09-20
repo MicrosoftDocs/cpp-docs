@@ -1,7 +1,7 @@
 ---
 title: "Library Support for Mixed Assemblies | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/18/2018"
 ms.technology: ["cpp-cli"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -38,7 +38,6 @@ In addition, this support presents the following limitations:
 
 - Only the CRT DLL model is supported for code compiled with **/clr**. There are no static CRT libraries that support **/clr** builds.
 
-You should update your common language runtime (CLR) to the current version as it is not guaranteed to work with earlier versions. Code built with these changes will not run on CLR version 1.x.
 
 ## See also
 

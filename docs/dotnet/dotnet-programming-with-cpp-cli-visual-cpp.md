@@ -1,7 +1,7 @@
 ---
 title: ".NET Programming with C++/CLI (Visual C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/18/2018"
 ms.technology: ["cpp-cli"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -13,9 +13,9 @@ ms.workload: ["cplusplus", "dotnet"]
 ---
 # .NET Programming with C++/CLI (Visual C++)
 
-The following topics describe how Visual C++ can target the .NET platform.
+**Visual Studio 2015**: By default, CLR projects created with Visual Studio 2015 target .NET Framework 4.5.2. To target .NET Framework 4.6 when you create a new project, in the **New Project** dialog, change the target framework in the dropdown at the top middle of the dialog. To change the target framework for an existing project, close the project, edit the project file (.vcxproj), and change the value of the Target Framework Version to 4.6. Next time you open the project, the settings will take effect. 
 
-By default, CLR projects created with Visual Studio 2015 target .NET Framework 4.5.2. To target .NET Framework 4.6 when you create a new project, in the **New Project** dialog, change the target framework in the dropdown at the top middle of the dialog. To change the target framework for an existing project, close the project, edit the project file (.vcxproj), and change the value of the Target Framework Version to 4.6. Next time you open the project, the settings will take effect.
+**Visual Studio 2017**: In Visual Studio 2017, the default framework is 4.6.1 and the Framework version selector is at the bottom of the **New Project Dialog**. C++/CLI itself is not installed by default. To install the component, open the Visual Studio Installer and choose the C++/CLI component under Visual C++. 
 
 ## In This Section
 

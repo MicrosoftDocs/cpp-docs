@@ -1,7 +1,7 @@
 ---
 title: "How to: Migrate to -clr | Microsoft Docs"
 ms.custom: "get-started-article"
-ms.date: "11/04/2016"
+ms.date: "09/18/2018"
 ms.technology: ["cpp-cli"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Migrate to /clr
 
-This topic discusses issues that arise when compiling native code with **/clr** (see [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) for more information). **/clr** allows Visual C++ modules to invoke and be invoked from .NET assemblies while retaining compatibility with unmanaged modules. See [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md) and [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md) for more information on the advantages of compiling with **/clr**.
+This topic discusses issues that arise when compiling native code with **/clr** (see [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) for more information). **/clr** allows native C++ code to invoke and be invoked from .NET assemblies in addition to other native C++ code. See [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md) and [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md) for more information on the advantages of compiling with **/clr**.
 
 ## Known Issues Compiling Library Projects with /clr
 
@@ -116,7 +116,7 @@ Differing versions of data types can cause the linker to fail because the metada
 
 ### Loader Lock Deadlock
 
-In Visual Studio 2010 and later, the "loader lock deadlock" can still occur as in earlier versions, but is deterministic and is detected and reported at runtime. See [Initialization of Mixed Assemblies](../dotnet/initialization-of-mixed-assemblies.md) for detailed background, guidance, and solutions.
+The "loader lock deadlock" can occur, but is deterministic and is detected and reported at runtime. See [Initialization of Mixed Assemblies](../dotnet/initialization-of-mixed-assemblies.md) for detailed background, guidance, and solutions.
 
 ### Data Exports
 

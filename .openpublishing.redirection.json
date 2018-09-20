@@ -2421,6 +2421,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/how-to-migrate-to-clr-safe-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/pure-and-verifiable-code-cpp-cli",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/greater-equal-stl-clr.md",
             "redirect_url": "/cpp/dotnet/functional-stl-clr#greater_equal",
             "redirect_document_id": false
@@ -5956,6 +5961,176 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/cpp-cli-migration-primer.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/outline-of-changes-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/language-keywords-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/managed-types-cpp-cl.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/declaration-of-a-managed-class-type.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/declaration-of-a-clr-reference-class-object.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/declaration-of-a-clr-array.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/changes-in-constructor-initialization-order.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/changes-in-destructor-semantics.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/member-declarations-within-a-class-or-interface-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/property-declaration.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/property-index-declaration.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/delegates-and-events.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/sealing-a-virtual-function.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/overloaded-operators.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/changes-to-conversion-operators.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/explicit-override-of-an-interface-member.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/iterating-over-stl-collection-by-using-for-each.md",
+            "redirect_url": "/cpp/dotnet/for-each-in",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-iterate-over-arrays-with-for-each.md",
+            "redirect_url": "/cpp/dotnet/for-each-in",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md",
+            "redirect_url": "/cpp/dotnet/for-each-in",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-iterate-over-a-user-defined-collection-with-for-each.md",
+            "redirect_url": "/cpp/dotnet/for-each-in",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/private-virtual-functions.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/static-const-int-linkage-is-no-longer-literal.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/value-types-and-their-behaviors-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/clr-enum-type.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/implicit-boxing-of-value-types.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/a-tracking-handle-to-a-boxed-value.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/value-type-semantics.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/general-language-changes-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/string-literal.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/param-array-and-ellipsis.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/typeof-goes-to-t-typeid.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/initializer-lists.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/cast-notation-and-introduction-of-safe-cast-angles.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
@@ -6373,6 +6548,151 @@
         {
             "source_path": "docs/windows/implements-iidcount-constant.md",
             "redirect_url": "/cpp/windows/implements-structure#iidcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-tilde-module-destructor.md",
+            "redirect_url": "/cpp/windows/module-class#tilde-module",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-create-method.md",
+            "redirect_url": "/cpp/windows/module-class#create",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-decrementobjectcount-method.md",
+            "redirect_url": "/cpp/windows/module-class#decrementobjectcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-getactivationfactory-method.md",
+            "redirect_url": "/cpp/windows/module-class#getactivationfactory",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-getclassobject-method.md",
+            "redirect_url": "/cpp/windows/module-class#getclassobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-getmodule-method.md",
+            "redirect_url": "/cpp/windows/module-class#getmodule",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-getobjectcount-method.md",
+            "redirect_url": "/cpp/windows/module-class#getobjectcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-incrementobjectcount-method.md",
+            "redirect_url": "/cpp/windows/module-class#incrementobjectcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-module-constructor.md",
+            "redirect_url": "/cpp/windows/module-class#module",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-objectcount-data-member.md",
+            "redirect_url": "/cpp/windows/module-class#objectcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-registercomobject-method.md",
+            "redirect_url": "/cpp/windows/module-class#registercomobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-registerobjects-method.md",
+            "redirect_url": "/cpp/windows/module-class#registerobjects",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-registerwinrtobject-method.md",
+            "redirect_url": "/cpp/windows/module-class#registerwinrtobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-releasenotifier-data-member.md",
+            "redirect_url": "/cpp/windows/module-class#releasenotifier",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-terminate-method.md",
+            "redirect_url": "/cpp/windows/module-class#terminate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-unregistercomobject-method.md",
+            "redirect_url": "/cpp/windows/module-class#unregistercomobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-unregisterobjects-method.md",
+            "redirect_url": "/cpp/windows/module-class#unregisterobjects",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-unregisterwinrtobject-method.md",
+            "redirect_url": "/cpp/windows/module-class#unregisterwinrtobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-genericreleasenotifier-callback-data-member.md",
+            "redirect_url": "/cpp/windows/module-genericreleasenotifier-class#genericreleasenotifier-callback",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-genericreleasenotifier-genericreleasenotifier-constructor.md",
+            "redirect_url": "/cpp/windows/module-genericreleasenotifier-class#genericreleasenotifier-genericreleasenotifier",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-genericreleasenotifier-invoke-method.md",
+            "redirect_url": "/cpp/windows/module-genericreleasenotifier-class#genericreleasenotifier-invoke",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-methodreleasenotifier-invoke-method.md",
+            "redirect_url": "/cpp/windows/module-methodreleasenotifier-class#methodreleasenotifier-invoke",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-methodreleasenotifier-method-data-member.md",
+            "redirect_url": "/cpp/windows/module-methodreleasenotifier-class#methodreleasenotifier-method",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-methodreleasenotifier-methodreleasenotifier-constructor.md",
+            "redirect_url": "/cpp/windows/module-methodreleasenotifier-class#methodreleasenotifier-methodreleasenotifier",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-methodreleasenotifier-object-data-member.md",
+            "redirect_url": "/cpp/windows/module-methodreleasenotifier-class#methodreleasenotifier-object",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-releasenotifier-invoke-method.md",
+            "redirect_url": "/cpp/windows/module-releasenotifier-class#releasenotifier-invoke",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-releasenotifier-release.md",
+            "redirect_url": "/cpp/windows/module-releasenotifier-class#releasenotifier-release",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-releasenotifier-releasenotifier-constructor.md",
+            "redirect_url": "/cpp/windows/module-releasenotifier-class#releasenotifier-releasenotifier",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-releasenotifier-tilde-releasenotifier-destructor.md",
+            "redirect_url": "/cpp/windows/module-releasenotifier-class#releasenotifier-tilde-releasenotifier",
             "redirect_document_id": false
         },
         {
