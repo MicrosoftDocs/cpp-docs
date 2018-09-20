@@ -53,10 +53,10 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 |[switch](switch-statement-cpp.md)|[template](templates-cpp.md)|[this](this-pointer.md)|[thread](thread.md) <sup>1</sup>|
 |[throw](try-throw-and-catch-statements-cpp.md)|[true](true-cpp.md)|[try](try-throw-and-catch-statements-cpp.md)|[typedef](aliases-and-typedefs-cpp.md)|
 |[typeid](typeid-operator.md)|[typeid](../windows/typeid-cpp-component-extensions.md)|[typename](typename.md)|[union](unions.md)|
-|[unsigned](fundamental-types-cpp.md)|[using](using-declaration.md) declaration|
-|[using](namespaces-cpp.md#using_directives) directive|[uuid](uuid-cpp.md) <sup>1</sup>|
-|[value class](../windows/classes-and-structs-cpp-component-extensions.md)|[value struct](../windows/classes-and-structs-cpp-component-extensions.md)|[virtual](virtual-cpp.md)|[void](void-cpp.md)|
-|[volatile](volatile-cpp.md)|[while](while-statement-cpp.md)|
+|[unsigned](fundamental-types-cpp.md)|[using](using-declaration.md) declaration|[using](namespaces-cpp.md#using_directives) directive|
+|[uuid](uuid-cpp.md) <sup>1</sup>|[value class](../windows/classes-and-structs-cpp-component-extensions.md)|[value struct](../windows/classes-and-structs-cpp-component-extensions.md)|
+|[virtual](virtual-cpp.md)|[void](void-cpp.md)|[volatile](volatile-cpp.md)|
+|[while](while-statement-cpp.md)|
 
 1   Extended attributes for the **__declspec** keyword.
 
