@@ -4,7 +4,7 @@ description: "Build and run a Hello World console app in Visual C++"
 ms.custom: "mvc"
 ms.date: 12/12/2017
 ms.topic: "tutorial"
-ms.technology: ["devlang-C++"]
+ms.technology: ["cpp-tools"]
 ms.devlang: "C++"
 dev_langs: ["C++"]
 ms.assetid: 45138d71-719d-42dc-90d7-1d0ca31a2f55
@@ -36,7 +36,7 @@ If Visual Studio looks like this, you're ready to build and run your app:
 
    ![Start the project](../build/media/vscpp-start-without-debugging.gif "Start the project")
 
-    A console window opens and then runs your app. When you start a console app in Visual Studio, it runs your code, then prints "Press any key to continue . . ." to give you a chance to see the output.
+   A console window opens and then runs your app. When you start a console app in Visual Studio, it runs your code, then prints "Press any key to continue . . ." to give you a chance to see the output.
 
 Congratulations! You've created your first "Hello, world!" console app in Visual Studio! Press a key to dismiss the console window and return to Visual Studio.
 

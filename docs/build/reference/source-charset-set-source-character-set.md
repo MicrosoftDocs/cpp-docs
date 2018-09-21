@@ -2,7 +2,7 @@
 title: "-source-charset (Set Source Character Set) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
+ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 f1_keywords: ["source-charset", "/source-charset"]
 dev_langs: ["C++"]
