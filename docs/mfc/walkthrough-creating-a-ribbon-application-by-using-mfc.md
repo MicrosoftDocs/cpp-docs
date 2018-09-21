@@ -25,21 +25,21 @@ This walkthrough assumes that you have set Visual Studio to use **General Develo
 
 1. In the **New Project** dialog box, expand the **Visual C++** node under **Installed Templates**, select **MFC**, and then select **MFC Application**. Type a name for the project, for example, *MFCRibbonApp*, and then click **OK**.
 
-1. On the first page of the **MFC Application Wizard**, click **Next**.
+1. Set the following options in the **MFC Application Wizard**:
 
-1. On the **Application Type** page, under **Visual style and colors**, select **Office 2007 (Blue theme)**. Leave the other settings as they are. Click **Next**.
+    1. In the **Application Type** section, under **Visual style and colors**, select **Office 2007 (Blue theme)**. 
 
-1. On the **Compound Document Support** page, make sure that **None** is selected and then click **Next**.
+    1. In the **Compound Document Support** section, make sure that **None** is selected.
 
-1. On the **Document Template Properties** page, in the **File extension** box, type a file name extension for documents that this application creates, for example, *mfcrbnapp*. Click **Next**.
+    1. In the **Document Template Properties** section, in the **File extension** box, type a file name extension for documents that this application creates, for example, *mfcrbnapp*.
 
-1. On the **Database Support** page, make sure that **None** is selected and then click **Next**.
+    1. In the **Database Support** section, make sure that **None** is selected.
 
-1. On the **User Interface Features** page, make sure that **Use a ribbon** is selected. Click **Next**.
+    1. In the **User Interface Features** section, make sure that **Use a ribbon** is selected. 
 
-1. By default, the **MFC Application Wizard** adds support for several docking panes. Because this walkthrough just teaches about the ribbon, you can remove these options from the application. On the **Advanced Features** page, clear all options. Click **Next**.
+    1. By default, the **MFC Application Wizard** adds support for several docking panes. Because this walkthrough just teaches about the ribbon, you can remove these options from the application. In the **Advanced Features** section, clear all options.
 
-1. On the **Generated Classes** page, click **Finish** to create the MFC application.
+1. Click **Finish** to create the MFC application.
 
 1. To verify that the application was created successfully, build it and run it. To build the application, on the **Build** menu, click **Build Solution**. If the application builds successfully, run it by clicking **Start Debugging** on the **Debug** menu.
 

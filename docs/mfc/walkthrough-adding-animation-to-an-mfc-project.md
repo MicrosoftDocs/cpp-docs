@@ -41,13 +41,13 @@ To complete this walkthrough, you must have Visual Studio.
 
 1. In the **New Project** dialog box, in the left pane under **Installed Templates**, expand **Visual C++** and then select **MFC**. In the middle pane, select **MFC Application**. In the **Name** box, type *MFCAnimationWalkthrough*. Click **OK**.
 
-1. In the **MFC Application Wizard** dialog box, verify that **Application Type** is **Multiple Documents**, **Project Style** is **Visual Studio**, and the **Document/View Architecture support** option is selected. Click **Finish**.
+1. In the **MFC Application Wizard** dialog box, verify that **Application Type** is **Multiple Documents**, **Project Style** is **Visual Studio**, and the **Document/View architecture support** option is selected. Click **Finish**.
 
 ### To add a menu and then add commands to start and stop an animation
 
 1. On the **View** menu, point to **Other Windows** and then click **Resource View**.
 
-1. In **Resource View**, navigate to the **Menu** folder and open it. Double-click the **IDR_MFCAnimationWalTYPE** resource to open it for modification.
+1. In **Resource View**, navigate to the **Menu** folder and open it. Double-click the **IDR_MFCAnimationWalkthroughTYPE** resource to open it for modification.
 
 1. On the menu bar, in the **Type Here** box, type *A&nimation* to create an Animation menu.
 
@@ -208,9 +208,9 @@ To complete this walkthrough, you must have Visual Studio.
         static BYTE nStartColor = 50;
         static BYTE nEndColor = 255;
 
-        BYTE nRedColorFinal = bDirection  nStartColor : nEndColor;
-        BYTE nGreenColorFinal = bDirection  nStartColor : nEndColor;
-        BYTE nBlueColorFinal = bDirection  nStartColor : nEndColor;
+        BYTE nRedColorFinal = bDirection ? nStartColor : nEndColor;
+        BYTE nGreenColorFinal = bDirection ? nStartColor : nEndColor;
+        BYTE nBlueColorFinal = bDirection ? nStartColor : nEndColor;
 
         CLinearTransition* pRedTransition =
             new CLinearTransition(duration, (DOUBLE)nRedColorFinal);

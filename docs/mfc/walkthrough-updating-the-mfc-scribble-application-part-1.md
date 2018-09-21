@@ -17,9 +17,9 @@ This walkthrough demonstrates how to modify an existing MFC application to use t
 
 This walkthrough modifies the classic Scribble 1.0 MFC sample that lets you use the mouse to create line drawings. This part of the walkthrough shows how to modify the Scribble sample so that it displays a ribbon bar. [Part 2](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md) adds more buttons to the ribbon bar.
 
-## Prerequisites
+## Prerequisites 
 
-[Visual C++ Samples](../visual-cpp-samples.md)
+The [Scribble 1.0 MFC sample](http://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe). For help on converting to Visual Studio 2017, see [Porting Guide: MFC Scribble](../porting/porting-guide-mfc-scribble.md).
 
 ##  <a name="top"></a> Sections
 
@@ -88,7 +88,7 @@ To convert an application that supports a menu to an application that supports a
 
     1. Replace `DockControlBar(&m_wndToolBar)` with `DockPane(&m_wndToolBar)`
 
-9. In the ipframe.cpp file, comment out the following three lines of code.
+1. In the ipframe.cpp file, comment out the following three lines of code.
 
     ```cpp
     m_wndToolBar.EnableDocking(CBRS_ALIGN_ANY);
@@ -96,41 +96,31 @@ To convert an application that supports a menu to an application that supports a
     pWndFrame->DockPane(&m_wndToolBar);
     ```
 
-10. If you intend to link your application statically, add the following code to the start of the project resource (.rc) file.
-
-    ```cpp
-    #include "afxribbon.rc"
-    ```
-
-    The afxribbon.rc file contains resources that are required at run time. The [MFC Application Wizard](../mfc/reference/mfc-application-wizard.md) includes this file automatically when you create an application.
-
-11. Save the changes and then build and run the application.
-
-[[Sections](#top)]
+1. Save the changes and then build and run the application.
 
 ##  <a name="addbitmap"></a> Adding Bitmaps to the Project
 
 The next four steps of this walkthrough require bitmap resources. You can obtain appropriate bitmaps in various ways:
 
-- Use the [Resource Editors](../windows/resource-editors.md) to invent your own bitmaps. Or use the resource editors to assemble bitmaps from the portable network graphics (.png) images that are included with Visual Studio. These images are in the `VS2008ImageLibrary` directory.
+- Use the [Resource Editors](../windows/resource-editors.md) to invent your own bitmaps. Or use the resource editors to assemble bitmaps from the portable network graphics (.png) images that are included with Visual Studio and can downloaded from the [Visual Studio image library](https://docs.microsoft.com/visualstudio/designers/the-visual-studio-image-library).
 
-     However, the **Ribbon** user interface requires that certain bitmaps support transparent images. Transparent bitmaps use 32-bit pixels, where 24 bits specify the red, green, and blue components of the color, and 8 bits define an *alpha channel* that specifies the transparency of the color. The current resource editors can view, but not modify bitmaps with 32-bit pixels. Consequently, use an external image editor instead of the resource editors to manipulate transparent bitmaps.
+    However, the **Ribbon** user interface requires that certain bitmaps support transparent images. Transparent bitmaps use 32-bit pixels, where 24 bits specify the red, green, and blue components of the color, and 8 bits define an *alpha channel* that specifies the transparency of the color. The current resource editors can view, but not modify bitmaps with 32-bit pixels. Consequently, use an external image editor instead of the resource editors to manipulate transparent bitmaps.
 
 - Copy an appropriate resource file from another application to your project and then import bitmaps from that file.
 
-This walkthrough copies resource files from an application in the Samples directory.
+This walkthrough copies resource files from the example created in [Walkthrough: Creating a Ribbon Application By Using MFC](../mfc/walkthrough-creating-a-ribbon-application-by-using-mfc.md).
 
 ### To add bitmaps to the Project
 
-1. Use File Explorer to copy the following .bmp files from the resources directory (`res`) of the RibbonGadgets sample:
+1. Use File Explorer to copy the following .bmp files from the resources directory (`res`) of the Ribbon example to the resource directory (`res`) of the Scribble project:
 
    1. Copy main.bmp to your Scribble project.
 
    1. Copy filesmall.bmp and filelarge.bmp to your Scribble project.
 
-   1. Make new copies of the filelarge.bmp and filesmall.bmp files, but save the copies in the RibbonGadgets sample. Rename the copies homesmall.bmp and homelarge.bmp and then move the copies to your Scribble project.
+   1. Make new copies of the filelarge.bmp and filesmall.bmp files, but save the copies in the Ribbon example. Rename the copies homesmall.bmp and homelarge.bmp and then move the copies to your Scribble project.
 
-   1. Make a copy of the toolbar.bmp file, but save the copy in the RibbonGadgets sample. Rename the copy panelicons.bmp and then move the copy to your Scribble project.
+   1. Make a copy of the toolbar.bmp file, but save the copy in the Ribbon example. Rename the copy panelicons.bmp and then move the copy to your Scribble project.
 
 1. Import the bitmap for an MFC application. In **Resource View**, double-click the **scribble.rc** node, double-click the **Bitmap** node, and then click **Add resource**. On the dialog box that appears, click **Import**. Browse to the `res` directory, select the main.bmp file, and then click **Open**.
 
@@ -138,21 +128,25 @@ This walkthrough copies resource files from an application in the Samples direct
 
 1. Import the bitmaps for the file menu that is attached to the **Application** button.
 
-   1. Import the filesmall.bmp file, which contains ten 16x16 (16x160) images. Because we need only eight 16x16 images (16x128), use the **Resource View** to change the width of that bitmap from 160 to 128. Change the ID of the bitmap to `IDB_RIBBON_FILESMALL`.
+   1. Import the filesmall.bmp file, which contains eleven 16x16 (16x176) images. Change the ID of the bitmap to `IDB_RIBBON_FILESMALL`.
 
-   1. Import the filelarge.bmp, which contains eight 32x32 (32x256) images. Change the ID of the bitmap to `IDB_RIBBON_FILELARGE`.
+   > [!NOTE]
+   > Because we need only the first eight 16x16 images (16x128), you may optionally crop the right-side width of this bitmap from 176 to 128. 
+
+   1. Import the filelarge.bmp, which contains nine 32x32 (32x288) images. Change the ID of the bitmap to `IDB_RIBBON_FILELARGE`.
 
 1. Import the bitmaps for the ribbon categories and panels. Each tab on the ribbon bar is a category, and consists of a text label and an optional image.
 
-   1. Import the homesmall.bmp bitmap, which contains eight 16x16 images for small button bitmaps. Change the ID of the bitmap to `IDB_RIBBON_HOMESMALL`.
+   1. Import the homesmall.bmp bitmap, which contains eleven 16x16 images for small button bitmaps. Change the ID of the bitmap to `IDB_RIBBON_HOMESMALL`.
 
-   1. Import the homelarge.bmp bitmap, which contains eight 32x32 images for large button bitmaps. Change the ID of the bitmap to `IDB_RIBBON_HOMELARGE`.
+   1. Import the homelarge.bmp bitmap, which contains nine 32x32 images for large button bitmaps. Change the ID of the bitmap to `IDB_RIBBON_HOMELARGE`.
 
 1. Import bitmaps for the resized ribbon panels. These bitmaps, or panel icons, are used after a resize operation if the ribbon is too small to display the entire panel.
 
    1. Import the panelicons.bmp bitmap, which contains eight 16x16 images. In the **Properties** window of the **Bitmap Editor**, adjust the width of the bitmap to 64 (16x64). Change the ID of the bitmap to `IDB_PANEL_ICONS`.
 
-[[Sections](#top)]
+   > [!NOTE]
+   > Because we need only the first four 16x16 images (16x64), you may optionally crop the right-side width of this bitmap from 128 to 64. 
 
 ##  <a name="addribbon"></a> Adding a Ribbon Resource to the Project
 
@@ -162,7 +156,7 @@ A ribbon consists of the **Application** button, which is the large button on th
 
 ### To add a ribbon resource to the project
 
-1. On the **Project** menu, click **Add Resource**.
+1. With the Scribble project selected in **Solution Explorer**, in the **Project** menu, click **Add Resource**.
 
 1. In the **Add Resource** dialog box, select **Ribbon** and then click **New**.
 
@@ -174,13 +168,13 @@ A ribbon consists of the **Application** button, which is the large button on th
 
 1. The following modifications create the menu that appears when the user clicks the **Application** button. Click the ellipsis (**...**) next to **Main Items** to open the **Items Editor**.
 
-   1. Click **Add** to add a button. Change **Caption** to `&New`, **ID** to `ID_FILE_NEW`, **Image** to `0`, **Image Large** to `0`.
+   1. With the **Item** type **Button** selected, click **Add** to add a button. Change **Caption** to `&New`, **ID** to `ID_FILE_NEW`, **Image** to `0`, **Image Large** to `0`.
 
-   1. Click **Add** to add a second button. Change **Caption** to `&Save`, **ID** to `ID_FILE_SAVE`, **Image** to `2`, and **Image Large** to `2`.
+   1. Click **Add** to add a button. Change **Caption** to `&Save`, **ID** to `ID_FILE_SAVE`, **Image** to `2`, and **Image Large** to `2`.
 
-   1. Click **Add** to add a third button. Change **Caption** to `Save &As`, **ID** to `ID_FILE_SAVE_AS`, **Image** to `3`, and **Image Large** to `3`.
+   1. Click **Add** to add a button. Change **Caption** to `Save &As`, **ID** to `ID_FILE_SAVE_AS`, **Image** to `3`, and **Image Large** to `3`.
 
-   1. Click **Add** to add a fourth  button. Change **Caption** to `&Print`, **ID** to `ID_FILE_PRINT`, **Image** to `4`, and **Image Large** to `4`.
+   1. Click **Add** to add a button. Change **Caption** to `&Print`, **ID** to `ID_FILE_PRINT`, **Image** to `4`, and **Image Large** to `4`.
 
    1. Change the **Item** type to **Separator** and then click **Add**.
 
@@ -202,9 +196,9 @@ A ribbon consists of the **Application** button, which is the large button on th
 
    1. In the **Properties** window, click the ellipsis (**...**) next to **Button** to open the **Items Editor**.
 
-   2. Click **Add** to add a button. Change **Caption** to `E&xit`, **ID** to `ID_APP_EXIT`, **Image** to `8`.
+   1. With the **Item** type **Button** selected, click **Add** to add a button. Change **Caption** to `E&xit`, **ID** to `ID_APP_EXIT`, **Image** to `8`.
 
-[[Sections](#top)]
+   1. You have modified the **Buttons**. Click **Close** to exit the **Items Editor**.
 
 ##  <a name="createinstance"></a> Creating an Instance of the Ribbon Bar
 
@@ -230,8 +224,6 @@ The following steps show how to create an instance of the ribbon bar when your a
     m_wndRibbonBar.LoadFromResource(IDR_RIBBON1);
     ```
 
-[[Sections](#top)]
-
 ##  <a name="addcategory"></a> Customizing the Ribbon Resource
 
 Now that you have created the **Application** button, you can add elements to the ribbon.
@@ -241,15 +233,13 @@ Now that you have created the **Application** button, you can add elements to th
 
 ### To add a Home category and Edit panel
 
-1. The Scribble program requires only one category. In the design view, click **Category** to display its properties. Change property values as follows: **Caption** to `&Home`, **Large Images** to `IDB_RIBBON_HOMELARGE`, **Small Images** to `IDB_RIBBON_HOMESMALL`.
+1. The Scribble program requires only one category. In the design view, in the **Toolbox**, double-click **Category** to add one and display its properties. Change property values as follows: **Caption** to `&Home`, **Large Images** to `IDB_RIBBON_HOMELARGE`, **Small Images** to `IDB_RIBBON_HOMESMALL`.
 
-1. Each ribbon category is organized into named panels. Each panel contains a set of controls that perform related operations. This category has one panel. Click **Panel**, and then change **Caption** to `Edit` and **Image Index** to `0`.
+1. Each ribbon category is organized into named panels. Each panel contains a set of controls that perform related operations. This category has one panel. Click **Panel**, and then change **Caption** to `Edit`.
 
-1. To the **Edit** panel, add a button that is responsible for clearing the contents of the document. The message ID for this button has already been defined in the `IDR_SCRIBBTYPE` menu resource. Specify `Clear All` as the button text and the index of the bitmap that decorates the button. Open the **Toolbox**, and then drag a **Button** to the **Edit** panel. Click the button  and then change **Caption** to `Clear All`, **ID** to `ID_EDIT_CLEAR_ALL`, **Image Index** to `0`, **Large Image Index** to `0`.
+1. To the **Edit** panel, add a button that is responsible for clearing the contents of the document. The message ID for this button has already been defined in the `IDR_SCRIBBTYPE` menu resource. Specify `Clear All` as the button text and the index of the bitmap that decorates the button. Open the **Toolbox**, and then drag a **Button** to the **Edit** panel. Click the button and then change **Caption** to `Clear All`, **ID** to `ID_EDIT_CLEAR_ALL`, **Image Index** to `0`, **Large Image Index** to `0`.
 
 1. Save the changes, and then build and run the application. The Scribble application should be displayed, and it should have a ribbon bar at the top of the window instead of a menu bar. The ribbon bar should have one category, **Home**, and **Home** should have one panel, **Edit**. The ribbon buttons that you added should be associated with the existing event handlers, and the **Open**, **Close**, **Save**, **Print**, and **Clear All** buttons should work as expected.
-
-[[Sections](#top)]
 
 ##  <a name="setlook"></a> Setting the Look of the Application
 
@@ -257,7 +247,7 @@ A *visual manager* is a global object that controls all drawing for an applicati
 
 ### To set the look of the application
 
-1. In the `CMainFrame::OnCreate` function, type the following code to change the default visual manager and style.
+1. In the `CMainFrame::OnCreate` function, type the following code before the `return 0;` statement to change the default visual manager and style.
 
     ```cpp
     // Set the default manager to Office 2007
@@ -266,8 +256,6 @@ A *visual manager* is a global object that controls all drawing for an applicati
     ```
 
 1. Save the changes, and then build and run the application. The application UI should resemble the Office 2007 UI.
-
-[[Sections](#top)]
 
 ## Next Steps
 
