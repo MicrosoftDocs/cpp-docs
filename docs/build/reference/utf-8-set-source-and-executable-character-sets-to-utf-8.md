@@ -2,7 +2,7 @@
 title: "-utf-8 (Set Source and Executable character sets to UTF-8) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
+ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 f1_keywords: ["/utf-8"]
 dev_langs: ["C++"]

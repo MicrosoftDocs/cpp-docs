@@ -1,7 +1,7 @@
 ---
 title: "MFC ActiveX Controls: Using Data Binding in an ActiveX Control | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/09/2018"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 f1_keywords: ["bindable", "requestedit", "defaultbind", "displaybind", "dispid"]
