@@ -49,11 +49,11 @@ This template traverses a list of interfaces and adds them as base classes, and 
 ### Protected Methods
 
 Name                                                    | Description
-------------------------------------------------------- | ---------------------------------------------------------------------------------------
-[ImplementsHelper::CanCastTo](#cancastto)               | Supports the WRL infrastructure and is not intended to be used directly from your code.
-[ImplementsHelper::CastToUnknown](#casttounknown)       | Supports the WRL infrastructure and is not intended to be used directly from your code.
-[ImplementsHelper::FillArrayWithIid](#fillarraywithiid) | Supports the WRL infrastructure and is not intended to be used directly from your code.
-[ImplementsHelper::IidCount](#iidcount)                 | Supports the WRL infrastructure and is not intended to be used directly from your code.
+------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------
+[ImplementsHelper::CanCastTo](#cancastto)               | Gets a pointer to the specified interface ID.
+[ImplementsHelper::CastToUnknown](#casttounknown)       | Gets a pointer to the underlying `IUnknown` interface for the current `Implements` structure.
+[ImplementsHelper::FillArrayWithIid](#fillarraywithiid) | Inserts the interface ID specified by the current zeroth template parameter into the specified array element.
+[ImplementsHelper::IidCount](#iidcount)                 | Holds the number of implemented interface IDs in the current `Implements` object.
 
 ## Inheritance Hierarchy
 
