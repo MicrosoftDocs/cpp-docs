@@ -1,7 +1,7 @@
 ---
 title: "Walkthroughs (MFC) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/20/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -32,4 +32,3 @@ Demonstrates how to add a graphical object to a project and introduces how to an
 ## See Also
 
 [MFC Desktop Applications](../mfc/mfc-desktop-applications.md)
-
