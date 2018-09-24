@@ -23,23 +23,21 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
 
 1. Use the **MFC Application Wizard** to create a new MFC application. To run the wizard, from the **File** menu select **New**, and then select **Project**. The **New Project** dialog box will be displayed.
 
-1. In the **New Project** dialog box, expand the **Visual C++** node in the **Project types** pane and select **MFC**. Then, in the **Templates** pane, select **MFC Application**. Type a name for the project, such as `MFCShellControls` and click **OK**. The **MFC Application Wizard** will be displayed.
+1. In the **New Project** dialog box, expand the **Visual C++** node in the **Project types** pane and select **MFC**. Then, in the **Templates** pane, select **MFC Application**. Type a name for the project, such as `MFCShellControls` and click **OK**. After **MFC Application Wizard** displays, use the following options:
 
-1. In the **MFC Application Wizard** dialog box, click **Next**. The **Application Type** pane will be displayed.
+    1. On the **Application Type** pane, under **Application type**, clear the **Tabbed documents** option. Next, select **Single document** and select **Document/View architecture support**. Under **Project style**, select **Visual Studio**, and from the **Visual style and colors** drop down list select **Office 2007 (Blue theme)**. 
 
-1. On the **Application Type** pane, under **Application type**, clear the **Tabbed documents** option. Next, select **Single document** and select **Document/View architecture support**. Under **Project style**, select **Visual Studio**, and from the **Visual style and colors** drop down list select **Office 2007 (Blue theme)**. Leave all other options as they are. Click **Next** to display the **Compound Document Support** pane.
+    1. On the **Compound Document Support** pane, select **None**.
 
-1. On the **Compound Document Support** pane, select **None**. Click **Next** to display the **Document Template Strings** pane.
+    1. Do not make any changes to the **Document Template Strings** pane.
 
-1. Do not make any changes to the **Document Template Strings** pane. Click **Next** to display the **Database Support** pane.
+    1. On the **Database Support** pane (Visual Studio 2015 and older), select **None** because this application does not use a database. 
 
-1. On the **Database Support** pane, select **None** because this application does not use a database. Click **Next** to display the **User Interface Features** pane.
+    1. On the **User Interface Features** pane, make sure that the **Use a menu bar and toolbar** option is selected. Leave all other options as they are. 
 
-1. On the **User Interface Features** pane, make sure that the **Use a menu bar and toolbar** option is selected. Leave all other options as they are. Click **Next** to display the **Advanced Features** pane.
+    1. On the **Advanced Features** pane, under **Advanced features**, select only **ActiveX controls** and **Common Control Manifest**. Under **Advanced frame panes**, select only the **Navigation pane** option. This will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded. 
 
-1. On the **Advanced Features** pane, under **Advanced features**, select only **ActiveX controls** and **Common Control Manifest**. Under **Advanced frame panes**, select only the **Navigation pane** option. This will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded. Click **Next** to display the **Generated Classes** pane.
-
-1. We are not going to make any changes to the **Generated Classes** pane. Therefore, click **Finish** to create your new MFC project.
+    1. We are not going to make any changes to the **Generated Classes** pane. Therefore, click **Finish** to create your new MFC project.
 
 1. Verify that the application was created successfully by building and running it. To build the application, from the **Build** menu select **Build Solution**. If the application builds successfully, run the application by selecting **Start Debugging** from the **Debug** menu.
 
@@ -90,13 +88,9 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
    }
    ```
 
-1. Now we update the `CMFCShellControlsView` class to handle the `WM_CREATE` windows message. Open the MFCShellControlsView.h header file and click on this line of code:
+1. Now we update the `CMFCShellControlsView` class to handle the `WM_CREATE` windows message. Open the **Class View** window and select the `CMFCShellControlsView` class. Right-click and select **Properties**.
 
-    ```cpp
-    class CMFCShellControlsView : public CView
-    ```
-
-   Next, in the **Properties** window, click the **Messages** icon. Scroll down until you find the `WM_CREATE` message. From the drop down list next to `WM_CREATE`, select **\<Add> OnCreate**. This creates a message handler for us and automatically updates the MFC message map.
+    Next, in the **Properties** window, click the **Messages** icon. Scroll down until you find the `WM_CREATE` message. From the drop down list next to `WM_CREATE`, select **\<Add> OnCreate**. This creates a message handler for us and automatically updates the MFC message map.
 
    In the `OnCreate` method we will now create our `CMFCShellListCtrl` object. Find the `OnCreate` method definition in the MFCShellControlsView.cpp source file, and replace its implementation with the following code:
 

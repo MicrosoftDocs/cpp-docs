@@ -69,8 +69,6 @@ These steps show how to add a **View** panel that contains two check boxes that 
 
 1. Save the changes, and then build and run the application. The **View** and **Window** panels should be displayed. Click the buttons to confirm that they function correctly.
 
-[[Sections](#top)]
-
 ##  <a name="addhelppanel"></a> Adding a Help Panel to the Ribbon
 
 Now, you can assign two menu items that are defined in the Scribble application to ribbon buttons that are named **Help Topics** and **About Scribble**. The buttons are added to a new panel named **Help**.
@@ -90,8 +88,6 @@ Now, you can assign two menu items that are defined in the Scribble application 
    > [!IMPORTANT]
    > When you click the **Help Topics** button, the Scribble application opens a compressed HTML (.chm) help file named *your_project_name*.chm. Consequently, if your project is not named Scribble, you must rename the help file to your project name.
 
-[[Sections](#top)]
-
 ##  <a name="addpenpanel"></a> Adding a Pen Panel to the Ribbon
 
 Now, add a panel to display buttons that control the thickness and the color of the pen. This panel contains a check box that toggles between thick and thin pens. Its functionality resembles that of the **Thick Line** menu item in the Scribble application.
@@ -106,15 +102,15 @@ The original Scribble application lets the user select pen widths from a dialog 
 
 1. Click the check box. Change **Caption** to `Use Thick`, and **ID** to `ID_PEN_THICK_OR_THIN`.
 
-1. Click the first combo box. Change **Caption** to `Thin Pen`, **ID** to `ID_PEN_THIN_WIDTH`, **Text** to `2`, **Type** to `Drop List`, and **Data** to `1;2;3;4;5;6;7;8;9;`.
+1. Click the first combo box. Change **Caption** to `Thin Pen`, **ID** to `ID_PEN_THIN_WIDTH`, **Type** to `Drop List`, **Data** to `1;2;3;4;5;6;7;8;9;`, and **Text** to `2`.
 
-1. Click the second combo box. Change **Caption** to `Thick Pen`, **ID** to `ID_PEN_THICK_WIDTH`, **Text** to `5`, **Type** to `Drop List`, and **Data** to `5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;`.
+1. Click the second combo box. Change **Caption** to `Thick Pen`, **ID** to `ID_PEN_THICK_WIDTH`, **Type** to `Drop List`, **Data** to `5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;`, and **Text** to `5`.
 
 1. The new combo boxes do not correspond to any existing menu items. Therefore, you must create a menu item for every pen option.
 
    1. In the **Resource View** window, open the **IDR_SCRIBBTYPE** menu resource.
 
-   1. Click **Pen** to open the p**en** menu. Then click **Type Here** and type `Thi&n Pen`.
+   1. Click **Pen** to open the pen menu. Then click **Type Here** and type `Thi&n Pen`.
 
    1. Right-click the text that you just typed to open the **Properties** window, and then change the ID property to `ID_PEN_THIN_WIDTH`.
 
@@ -137,7 +133,7 @@ The original Scribble application lets the user select pen widths from a dialog 
     int nCurSel = pThinComboBox->GetCurSel();
     if (nCurSel>= 0)
     {
-        m_nThinWidth = atoi(pThinComboBox->GetItem(nCurSel));
+        m_nThinWidth = atoi(CStringA(pThinComboBox->GetItem(nCurSel)));
     }
 
     // Create a new pen using the selected width
@@ -169,7 +165,7 @@ The original Scribble application lets the user select pen widths from a dialog 
       int nCurSel = pThickComboBox->GetCurSel();
       if (nCurSel>= 0)
       {
-          m_nThickWidth = atoi(pThickComboBox->GetItem(nCurSel));
+          m_nThickWidth = atoi(CStringA(pThickComboBox->GetItem(nCurSel)));
       }
 
       // Create a new pen using the selected width
@@ -177,8 +173,6 @@ The original Scribble application lets the user select pen widths from a dialog 
       ```
 
 1. Save the changes, and then build and run the application. New buttons and combo boxes should be displayed. Try using different pen widths to scribble.
-
-[[Sections](#top)]
 
 ##  <a name="addcolorbutton"></a> Adding a Color Button to the Pen Panel
 
@@ -190,11 +184,9 @@ Next, add a [CMFCRibbonColorButton](../mfc/reference/cmfcribboncolorbutton-class
 
 1. Now add the color button. From the **Toolbox**, drag a **Color Button** to the **Pen** panel.
 
-1. Click the color button. Change **Caption** to `Color`, **ID** to `ID_PEN_COLOR`, **SimpleLook** to `True`, **Large Image Index** to `1`, and **Split Mode** to `False`.
+1. Click the color button. Change **Caption** to `Color`, **ID** to `ID_PEN_COLOR`, **Simple Look** to `True`, **Large Image Index** to `1`, and **Split Mode** to `False`.
 
 1. Save the changes, and then build and run the application. The new color button should be displayed on the **Pen** panel. However, it cannot be used because it does not yet have an event handler. The next steps show how to add an event handler for the color button.
-
-[[Sections](#top)]
 
 ##  <a name="addcolormember"></a> Adding a Color Member to the Document Class
 
@@ -287,8 +279,6 @@ Because the original Scribble application does not have color pens, you must wri
 
 1. Save the changes and then build and run the application. You should be able to press the color button and change the pen's color.
 
-[[Sections](#top)]
-
 ##  <a name="initpensave"></a> Initializing Pens and Saving Preferences
 
 Next, initialize the color and width of the pens. Finally, save and load a color drawing from a file.
@@ -340,8 +330,6 @@ Next, initialize the color and width of the pens. Finally, save and load a color
    ```
 
 1. Now scribble in color and save your drawing to a file.
-
-[[Sections](#top)]
 
 ## Conclusion
 
