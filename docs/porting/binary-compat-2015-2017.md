@@ -19,7 +19,7 @@ There are two exceptions to this rule. Binary compatibility is not guaranteed in
 
 1. When static libraries or object files are compiled with the `/GL` compiler switch.  
 
-2. When consuming libraries built with a toolset whose version is greater than the toolset used to compile and link the application. For example, a program that is compiled and linked with compiler version 19.12 can consume libraries that are compiled with 19.0 up through 19.12. Also, binary compatibility only exists between Visual Studio 2015 and Visual Studo 2017; linking 19.x programs with libraries produced by Visual Studio 2013 or earlier is not supported.
+2. When consuming libraries built with a toolset whose version is greater than the toolset used to compile and link the application. For example, a program that is compiled and linked with compiler version 19.12 can consume libraries that are compiled with 19.0 up through 19.12. Also, binary compatibility only exists between Visual Studio 2015 and Visual Studio 2017; linking 19.x programs with libraries produced by Visual Studio 2013 or earlier is not supported.
 
 ## See Also  
 
