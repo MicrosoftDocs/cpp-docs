@@ -1,7 +1,7 @@
 ---
 title: "/Qspectre | Microsoft Docs"
 ms.custom: ""
-ms.date: "1/23/2018"
+ms.date: "09/24/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -21,11 +21,13 @@ Specifies compiler generation of instructions to mitigate certain Spectre varian
 
 ## Remarks
 
-The **/Qspectre** option is available in Visual Studio 2017 version 15.7 and later. It causes the compiler to insert instructions to mitigate certain [Spectre security vulnerabilities](https://spectreattack.com/spectre.pdf). These vulnerabilities, called *speculative execution side-channel attacks*, affect many operating systems and modern processors, including processors from Intel, AMD, and ARM.
+The **/Qspectre** option is available in Visual Studio 2017 version 15.7 and later and in Visual Studio 2015 Update 3 through [KB 4338871](https://support.microsoft.com/en-us/help/4338871/visual-studio-2015-update-3-spectre-variant-1-toolset-qspectre). It causes the compiler to insert instructions to mitigate certain [Spectre security vulnerabilities](https://spectreattack.com/spectre.pdf). These vulnerabilities, called *speculative execution side-channel attacks*, affect many operating systems and modern processors, including processors from Intel, AMD, and ARM.
 
 The **/Qspectre** option is off by default.
 
-In its initial release, the **/Qspectre** option only works on optimized code. You should make sure to compile your code with any of the optimization options (for example, [/O2 or /O1](o1-o2-minimize-size-maximize-speed.md) but not [/Od](od-disable-debug.md)) to make sure the mitigation is applied. Similarly, inspect any code that uses [#pragma optimize("stg", off)](../../preprocessor/optimize.md).
+In its initial release, the **/Qspectre** option only works on optimized code. In Visual Studio 2017 version 15.7 Preview 3 and later, the option is supported on all optimization levels, and all Microsoft Visual C++ libraries are available in versions with Spectre mitigation. The Spectre-mitigated libraries for Visual Studio 2017 can be downloaded in the Visual Studio Installer. They are found under **Individual Components**.
+
+Visual Studio 2017 version 15.7 Preview 3 includes DLL and static runtime libraries with mitigation enabled for a subset of the Visual C++ runtimes: VC++ start-up code, vcruntime140, msvcp140, concrt140, and vcamp140. The DLLs are supported for App Local deployment only; the contents of the Visual C++ 2017 Runtime Libraries Redistributable have not been modified.
 
 ### Applicability
 
