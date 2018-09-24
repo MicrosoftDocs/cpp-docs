@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Compile a C program on the command line | Microsoft Docs"
 ms.custom: "conceptual"
-ms.date: "06/21/2018"
+ms.date: "09/24/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "conceptual"
 helpviewer_keywords: ["command-line applications [C++], C programs", "Visual C, compiling", "compiling programs [C++]", "C program compiling [C++]"]
@@ -37,7 +37,7 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
    If you are using a different version of Visual Studio or are running a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
 
-2. Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:
+1. Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:
 
    ```Output
    C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise>cl
@@ -61,11 +61,11 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
 ## Create a C source file and compile it on the command line
 
-1. In the developer command prompt window, enter **cd c:\\** to change the current working directory to the root of your C: drive. Next, enter **md c:\simple** to create a directory, and then enter **cd c:\simple** to change to that directory. This is the directory that will contain your source file and the compiled program.
+1. In the developer command prompt window, enter `cd c:\` to change the current working directory to the root of your C: drive. Next, enter `md c:\simple` to create a directory, and then enter `cd c:\simple` to change to that directory. This is the directory that will contain your source file and the compiled program.
 
-2. Enter **notepad simple.c** at the developer command prompt. In the Notepad alert dialog that pops up, choose **Yes** to create a new simple.c file in your working directory.
+1. Enter `notepad simple.c` at the developer command prompt. In the Notepad alert dialog that pops up, choose **Yes** to create a new simple.c file in your working directory.
 
-3. In Notepad, enter the following lines of code:
+1. In Notepad, enter the following lines of code:
 
     ```C
     #include <stdio.h>
@@ -77,9 +77,9 @@ Before you can build a C or C++ program on the command line, you must verify tha
     }
     ```
 
-4. On the Notepad menu bar, choose **File**, **Save** to save simple.c in your working directory.
+1. On the Notepad menu bar, choose **File** > **Save** to save simple.c in your working directory.
 
-5. Switch back to the developer command prompt window. Enter **dir** at the command prompt to list the contents of the c:\simple directory. You should see the source file simple.c in the directory listing, which looks something like this:
+1. Switch back to the developer command prompt window. Enter `dir` at the command prompt to list the contents of the c:\simple directory. You should see the source file simple.c in the directory listing, which looks something like this:
 
     ```Output
     C:\simple>dir
@@ -98,7 +98,7 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
    The dates and other details will differ on your computer. If you don't see your source code file, simple.c, make sure you've changed to the c:\simple directory you created, and in Notepad, make sure that you saved your source file in this directory. Also make sure that you saved the source code with a .c file name extension, not a .txt extension.
 
-6. To compile your program, enter **cl simple.c** at the developer command prompt.
+1. To compile your program, enter `cl simple.c` at the developer command prompt.
 
    You can see the executable program name, simple.exe, in the lines of output information that the compiler displays:
 
@@ -121,7 +121,7 @@ Before you can build a C or C++ program on the command line, you must verify tha
    > [!NOTE]
    > If you get a different compiler or linker error or warning, review your source code to correct any errors, then save it and run the compiler again. For information about specific errors, use the search box at the top of this page to look for the error number.
 
-7. To run your program, enter **simple** at the command prompt.
+1. To run your program, enter `simple` at the command prompt.
 
    The program displays this text and then exits:
 
@@ -147,7 +147,7 @@ And to catch more programming mistakes automatically, we recommend you compile b
 
 `cl /W4 file1.c file2.c file3.c /link /out:program1.exe`
 
-The compiler, cl.exe, has many more options you can apply to build, optimize, debug, and analyze your code. For a quick list, enter **cl /?** at the developer command prompt. You can also compile and link separately and apply linker options in more complex build scenarios. For more information on compiler and linker options and usage, see  [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md).
+The compiler, cl.exe, has many more options you can apply to build, optimize, debug, and analyze your code. For a quick list, enter `cl /?` at the developer command prompt. You can also compile and link separately and apply linker options in more complex build scenarios. For more information on compiler and linker options and usage, see  [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md).
 
 You can use NMAKE and makefiles, or MSBuild and project files to configure and build more complex projects on the command line. For more information on using these tools, see [NMAKE Reference](../build/nmake-reference.md) and [MSBuild](../build/msbuild-visual-cpp.md).
 

@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Create and use your own Dynamic Link Library (C++) | Microsoft Docs"
 ms.custom: "conceptual"
-ms.date: "11/04/2016"
+ms.date: "09/24/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -53,7 +53,7 @@ In this set of tasks, you create a project for your DLL, add code, and build it.
 
 ### To create a DLL project in Visual Studio 2017 version 15.3 or later
 
-1. On the menu bar, choose **File**, **New**, **Project** to open the **New Project** dialog box.
+1. On the menu bar, choose **File** > **New** > **Project** to open the **New Project** dialog box.
 
 1. In the left pane of the **New Project** dialog box, expand **Installed** and **Visual C++** if required, and then choose **Windows Desktop**. In the center pane, select **Windows Desktop Wizard**. Enter `MathLibrary` in the **Name** box to specify a name for the project.
 
@@ -72,7 +72,7 @@ In this set of tasks, you create a project for your DLL, add code, and build it.
 >
 >1. In **Solution Explorer**, if it is not already selected, select the **MathLibrary** project under **Solution 'MathLibrary'**.
 >
->1. On the menu bar, choose **Project**, **Properties**.
+>1. On the menu bar, choose **Project** > **Properties**.
 >
 >1. In the left pane of the **Property Pages** dialog box, select **Preprocessor** under **Configuration Properties**, **C/C++**. Check the contents of the **Preprocessor Definitions** property.<br/><br/>![Check the Preprocessor Definitions property](media/mathlibrary-153bug-preprocessor-definitions-check.png "Check the Preprocessor Definitions property")<br/><br/>If you see **MATHLIBRARY&#95;EXPORTS** in the **Preprocessor Definitions** list, then you do not need to change anything. If you see **MathLibrary&#95;EXPORTS** instead, then continue to follow these steps.
 >
@@ -86,9 +86,9 @@ In this set of tasks, you create a project for your DLL, add code, and build it.
 
 ### To create a DLL project in older versions of Visual Studio
 
-1. On the menu bar, choose **File**, **New**, **Project**.
+1. On the menu bar, choose **File** > **New** > **Project**.
 
-1. In the left pane of the **New Project** dialog box, expand **Installed**, **Templates**, and select **Visual C++**, and then in the center pane, select **Win32 Console Application**. Enter `MathLibrary` in the **Name** edit box to specify a name for the project.
+1. In the left pane of the **New Project** dialog box, expand **Installed** > **Templates**, and select **Visual C++**, and then in the center pane, select **Win32 Console Application**. Enter `MathLibrary` in the **Name** edit box to specify a name for the project.
 
    ![Name the MathLibrary project](media/mathlibrary-project-name.png "Name the MathLibrary project")
 
@@ -110,7 +110,7 @@ Right now, this DLL doesn't do very much. Next, you create a header file to decl
 
 ### To add a header file to the DLL
 
-1. To create a header file for your functions, on the menu bar, choose **Project**, **Add New Item**.
+1. To create a header file for your functions, on the menu bar, choose **Project** > **Add New Item**.
 
 1. In the **Add New Item** dialog box, in the left pane, select **Visual C++**. In the center pane, select **Header File (.h)**. Specify `MathLibrary.h` as the name for the header file.
 
@@ -230,7 +230,7 @@ When the **MATHLIBRARY&#95;EXPORTS** macro is defined, the **MATHLIBRARY&#95;API
    }
    ```
 
-To verify that everything works so far, compile the dynamic link library. To compile, choose **Build**, **Build Solution** on the menu bar. The output should look something like this:
+To verify that everything works so far, compile the dynamic link library. To compile, choose **Build** > **Build Solution** on the menu bar. The output should look something like this:
 
 ```Output
 1>------ Build started: Project: MathLibrary, Configuration: Debug Win32 ------
@@ -254,9 +254,9 @@ To make use of a DLL, whether your own or a third-party DLL, your client app pro
 
 ### To create a client app in Visual Studio 2017 version 15.3 or later
 
-1. To create a C++ app that uses the DLL that you just created, on the menu bar, choose **File**, **New**, **Project**.
+1. To create a C++ app that uses the DLL that you just created, on the menu bar, choose **File** > **New** > **Project**.
 
-1. In the left pane of the **New Project** dialog, select **Windows Desktop** under **Installed**, **Visual C++**. In the center pane, select **Windows Desktop Wizard**. Specify the name for the project, `MathClient`, in the **Name** edit box.
+1. In the left pane of the **New Project** dialog, select **Windows Desktop** under **Installed** > **Visual C++**. In the center pane, select **Windows Desktop Wizard**. Specify the name for the project, `MathClient`, in the **Name** edit box.
 
    ![Name the client project](media/mathclient-new-project-name-153.png "Name the client project")
 
@@ -264,9 +264,9 @@ To make use of a DLL, whether your own or a third-party DLL, your client app pro
 
 ### To create a client app in older versions of Visual Studio 2017
 
-1. To create a C++ app that uses the DLL that you just created, on the menu bar, choose **File**, **New**, **Project**.
+1. To create a C++ app that uses the DLL that you just created, on the menu bar, choose **File** > **New** > **Project**.
 
-1. In the left pane of the **New Project** dialog, select **Win32** under **Installed**, **Templates**, **Visual C++**. In the center pane, select **Win32 Console Application**. Specify the name for the project, `MathClient`, in the **Name** edit box.
+1. In the left pane of the **New Project** dialog, select **Win32** under **Installed** > **Templates** > **Visual C++**. In the center pane, select **Win32 Console Application**. Specify the name for the project, `MathClient`, in the **Name** edit box.
 
    ![Name the client project](media/mathclient-project-name.png "Name the client project")
 
@@ -286,7 +286,7 @@ Next, to call the MathLibrary functions in your source code, your project must i
 
 1. In the **Configuration** drop-down box, select **All Configurations** if it is not already selected.
 
-1. In the left pane, select **General** under **Configuration Properties**, **C/C++**.
+1. In the left pane, select **General** under **Configuration Properties** > **C/C++**.
 
 1. In the property pane, select the drop-down control next to the **Additional Include Directories** edit box, and then choose **Edit**.
 
@@ -334,7 +334,7 @@ This code can be compiled, but not linked, because the linker can't find the imp
 
 1. In the **Configuration** drop-down box, select **All Configurations** if it is not already selected.
 
-1. In the left pane, select **Input** under **Configuration Properties**, **Linker**. In the property pane, select the drop-down control next to the **Additional Dependencies** edit box, and then choose **Edit**.
+1. In the left pane, select **Input** under **Configuration Properties** > **Linker**. In the property pane, select the drop-down control next to the **Additional Dependencies** edit box, and then choose **Edit**.
 
    ![Edit the Additional Dependencies property](media/mathclient-additional-dependencies-property.png "Edit the Additional Dependencies property")
 
@@ -344,7 +344,7 @@ This code can be compiled, but not linked, because the linker can't find the imp
 
 1. Choose **OK** to go back to the **Property Pages** dialog box.
 
-1. In the left pane, select **General** under **Configuration Properties**, **Linker**. In the property pane, select the drop-down control next to the **Additional Library Directories** edit box, and then choose **Edit**.
+1. In the left pane, select **General** under **Configuration Properties** > **Linker**. In the property pane, select the drop-down control next to the **Additional Library Directories** edit box, and then choose **Edit**.
 
    ![Edit the Additional Library Directories property](media/mathclient-additional-library-directories-property.png "Edit the Additional Library Directories property")
 
@@ -364,7 +364,7 @@ Your client app can now compile and link successfully, but it still does not hav
 
 1. In the Configuration drop-down box, select **All Configurations** if it is not already selected.
 
-1. In the left pane, select **Post-Build Event** under **Configuration Properties**, **Build Events**.
+1. In the left pane, select **Post-Build Event** under **Configuration Properties** > **Build Events**.
 
 1. In the property pane, select the edit control in the **Command Line** field, and then enter this command:
 
@@ -374,7 +374,7 @@ Your client app can now compile and link successfully, but it still does not hav
 
 1. Choose the **OK** button to save your changes to the project properties.
 
-Now your client app has everything it needs to build and run. Build the application by choosing **Build**, **Build Solution** on the menu bar. The **Output** window in Visual Studio should contain something like this:
+Now your client app has everything it needs to build and run. Build the application by choosing **Build** > **Build Solution** on the menu bar. The **Output** window in Visual Studio should contain something like this:
 
 ```Output
 1>------ Build started: Project: MathClient, Configuration: Debug Win32 ------
@@ -386,7 +386,7 @@ Now your client app has everything it needs to build and run. Build the applicat
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-Congratulations, you've created an application that calls functions in your DLL. Now run your application to see what it does. On the menu bar, choose **Debug**, **Start Without Debugging**. Visual Studio opens a command window for the program to run in. The last part of the output should look like this:
+Congratulations, you've created an application that calls functions in your DLL. Now run your application to see what it does. On the menu bar, choose **Debug** > **Start Without Debugging**. Visual Studio opens a command window for the program to run in. The last part of the output should look like this:
 
 ![Start the client app without debugging](media/mathclient-run-without-debugging.png "Start the client app without debugging")
 

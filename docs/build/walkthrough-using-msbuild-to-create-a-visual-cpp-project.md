@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Using MSBuild to Create a Visual C++ Project | Microsoft Docs"
 ms.custom: ""
-ms.date: "06/25/2018"
+ms.date: "09/24/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "conceptual"
 f1_keywords: ["msbuild.cpp.walkthrough.createproject"]
@@ -48,7 +48,7 @@ In this walkthrough you will create a project that has a source file and a heade
 
 1. Create a directory for your project.
 
-2. Create a file that is named main.cpp and add the following code to this file:
+1. Create a file that is named main.cpp and add the following code to this file:
 
     ```cpp
     // main.cpp : the application source code.
@@ -61,7 +61,7 @@ In this walkthrough you will create a project that has a source file and a heade
     }
     ```
 
-3. Create a file that is named main.h and add the following code to this file:
+1. Create a file that is named main.h and add the following code to this file:
 
     ```cpp
     // main.h: the application header code.
@@ -70,24 +70,24 @@ In this walkthrough you will create a project that has a source file and a heade
 
 ## Creating the XML MSBuild Project File
 
-An MSBuild project file is an XML file that contains a project root element (\<Project>). In the following example project, the \<Project> element contains seven child elements:
+An MSBuild project file is an XML file that contains a project root element (`<Project>`). In the following example project, the `<Project>` element contains seven child elements:
 
-- Three item group tags (\<ItemGroup>) that specify project configuration and platform, source file name, and header file name.
+- Three item group tags (`<ItemGroup>`) that specify project configuration and platform, source file name, and header file name.
 
-- Three import tags (\<Import>) that specify the location of Microsoft Visual C++ settings.
+- Three import tags (`<Import>`) that specify the location of Microsoft Visual C++ settings.
 
-- A property group tag (\<PropertyGroup>) that specifies project settings.
+- A property group tag (`<PropertyGroup>`) that specifies project settings.
 
 ### To create the MSBuild project file
 
-1. Use a text editor to create a project file that is named `myproject.vcxproj`, and then add the following root \<Project> element. Insert the elements in the following procedure steps between the root \<Project> tags:
+1. Use a text editor to create a project file that is named `myproject.vcxproj`, and then add the following root `<Project>` element. Insert the elements in the following procedure steps between the root `<Project>` tags:
 
     ```xml
     <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     </Project>
     ```
 
-2. Add the following two \<ProjectConfiguration> child elements in an \<ItemGroup> element. The child element specifies debug and release configurations for a 32-bit Windows operating system:
+1. Add the following two `<ProjectConfiguration>` child elements in an `<ItemGroup>` element. The child element specifies debug and release configurations for a 32-bit Windows operating system:
 
     ```xml
     <ItemGroup>
@@ -102,13 +102,13 @@ An MSBuild project file is an XML file that contains a project root element (\<P
     </ItemGroup>
     ```
 
-3. Add the following \<Import/> element that specifies the path of the default C++ settings for this project:
+1. Add the following `<Import>` element that specifies the path of the default C++ settings for this project:
 
     ```xml
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.default.props" />
     ```
 
-4. Add the following property group element (\<PropertyGroup>) that specifies two project properties:
+1. Add the following property group element (`<PropertyGroup>`) that specifies two project properties:
 
     ```xml
     <PropertyGroup>
@@ -117,13 +117,13 @@ An MSBuild project file is an XML file that contains a project root element (\<P
     </PropertyGroup>
     ```
 
-5. Add the following \<Import/> element that specifies the path of the current C++ settings for this project:
+1. Add the following `<Import>` element that specifies the path of the current C++ settings for this project:
 
     ```xml
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
     ```
 
-6. Add the following \<ClCompile> child element in an \<ItemGroup> element. The child element specifies the name of the C/C++ source file to compile:
+1. Add the following `<ClCompile>` child element in an `<ItemGroup>` element. The child element specifies the name of the C/C++ source file to compile:
 
     ```xml
     <ItemGroup>
@@ -132,9 +132,9 @@ An MSBuild project file is an XML file that contains a project root element (\<P
     ```
 
    > [!NOTE]
-   > \<ClCompile> is a *build target* and is defined in the **VCTargets** directory.
+   > `<ClCompile>` is a *build target* and is defined in the **VCTargets** directory.
 
-7. Add the following \<ClInclude> child element in an \<ItemGroup> element. The child element specifies the name of the header file for the C/C++ source file:
+1. Add the following `<ClInclude>` child element in an `<ItemGroup>` element. The child element specifies the name of the header file for the C/C++ source file:
 
     ```xml
     <ItemGroup>
@@ -142,7 +142,7 @@ An MSBuild project file is an XML file that contains a project root element (\<P
     </ItemGroup>
     ```
 
-8. Add the following \<Import> element that specifies the path of the file that defines the target for this project:
+1. Add the following `<Import>` element that specifies the path of the file that defines the target for this project:
 
     ```xml
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Targets" />
@@ -208,7 +208,7 @@ MSBuild enables you to execute predefined build targets, apply user-defined prop
 
 ### Using MSBuild with Build Targets
 
-A *build target* is a named set of predefined or user-defined commands that can be executed during the build. Use the target command-line option (**/t**) to specify a build target. In the case of the `myproject` example project, the predefined **clean** target deletes all files in the debug folder and creates a new log file.
+A *build target* is a named set of predefined or user-defined commands that can be executed during the build. Use the target command-line option (`/t`) to specify a build target. In the case of the `myproject` example project, the predefined **clean** target deletes all files in the debug folder and creates a new log file.
 
 At the command prompt, type the following command to clean `myproject`.
 
@@ -216,7 +216,7 @@ At the command prompt, type the following command to clean `myproject`.
 
 ### Using MSBuild with Build Properties
 
-The property command-line option (**/p**) enables you to override a property in your project build file. In the `myproject` example project, the release or debug build configuration is specified by the `Configuration` property. And the operating system that is intended to run the built application is specified by the `Platform` property.
+The property command-line option (`/p` enables you to override a property in your project build file. In the `myproject` example project, the release or debug build configuration is specified by the `Configuration` property. And the operating system that is intended to run the built application is specified by the `Platform` property.
 
 At the command prompt, type the following command to create a debug build of the `myproject` application that is intended to run on 32-bit Windows.
 
@@ -248,7 +248,7 @@ At the command prompt, type the following command to use the 64-bit tools to bui
 
 ### Using MSBuild with a different toolset
 
-If you have the toolsets and libraries for other versions of Visual C++ installed, MSBuild can build applications for either the current Visual C++ version or for the other installed versions. For example, if you have installed Visual Studio 2012, to specify the Visual C++ 11.0 toolset for Windows XP, add the following property group element to the Myproject.vcxproj project file after the Microsoft.Cpp.props `<Import />` element:
+If you have the toolsets and libraries for other versions of Visual C++ installed, MSBuild can build applications for either the current Visual C++ version or for the other installed versions. For example, if you have installed Visual Studio 2012, to specify the Visual C++ 11.0 toolset for Windows XP, add the following property group element to the Myproject.vcxproj project file after the `Microsoft.Cpp.props` \<Import /> element:
 
 ```xml
 <PropertyGroup>

@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Compiling a C++/CX Program on the Command Line | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/24/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -46,10 +46,9 @@ To enable compilation for C++/CX, you must use the [/ZW](../build/reference/zw-w
     {
         Platform::Details::Console::WriteLine("This is a C++/CX program.");
     }
-
     ```
 
-1. On the menu bar, choose **File**, **Save**.
+1. On the menu bar, choose **File** > **Save**.
 
    You have created a Visual C++ source file that uses the Windows Runtime [Platform namespace](../cppcx/platform-namespace-c-cx.md) namespace.
 

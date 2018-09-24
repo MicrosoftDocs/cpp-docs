@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Compiling a Native C++ Program on the Command Line | Microsoft Docs"
 ms.custom: "conceptual"
-ms.date: "06/21/2018"
+ms.date: "09/24/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -30,7 +30,7 @@ The Build Tools for Visual Studio installs only the command-line compilers, tool
 Before you can build a C or C++ program on the command line, you must verify that the tools are installed, and that you can access them from the command line. Visual C++ has complex requirements for the command-line environment in order to find the tools, headers, and libraries it uses. **You can't use Visual C++ in a plain command prompt window** without doing some preparation. Fortunately, Visual C++ installs shortcuts for you to launch a developer command prompt that has the environment set up for command line builds. Unfortunately, the names of the developer command prompt shortcuts and where they are located are different in almost every version of Visual C++ and on different versions of Windows. Your first walkthrough task is finding the right one to use.
 
 > [!NOTE]
-> A developer command prompt shortcut automatically sets the correct paths for the compiler and tools, and for any required headers and libraries. You must set these environment values yourself if you use a regular Command Prompt window. For more information, see [Set the Path and Environment Variables for Command-Line Builds](../build/setting-the-path-and-environment-variables-for-command-line-builds.md). We recommend you use a developer command prompt shortcut instead of building your own.
+> A developer command prompt shortcut automatically sets the correct paths for the compiler and tools, and for any required headers and libraries. You must set these environment values yourself if you use a regular **Command Prompt** window. For more information, see [Set the Path and Environment Variables for Command-Line Builds](../build/setting-the-path-and-environment-variables-for-command-line-builds.md). We recommend you use a developer command prompt shortcut instead of building your own.
 
 ### Open a developer command prompt
 
@@ -40,7 +40,7 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
    If you are using a different version of Visual Studio or are running a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
 
-2. Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:
+1. Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:
 
    ```Output
    C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise>cl
@@ -62,13 +62,13 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
 ### Create a Visual C++ source file and compile it on the command line
 
-1. In the developer command prompt window, enter **md c:\hello** to create a directory, and then enter **cd c:\hello** to change to that directory. This is the directory that your source file and the compiled program are created in.
+1. In the developer command prompt window, enter `md c:\hello` to create a directory, and then enter `cd c:\hello` to change to that directory. This is the directory that your source file and the compiled program are created in.
 
-2. Enter **notepad hello.cpp** in the command prompt window.
+1. Enter `notepad hello.cpp` in the command prompt window.
 
    Choose **Yes** when Notepad prompts you to create a file. This opens a blank Notepad window, ready for you to enter your code in a file named hello.cpp.
 
-3. In Notepad, enter the following lines of code:
+1. In Notepad, enter the following lines of code:
 
    ```cpp
    #include <iostream>
@@ -81,11 +81,11 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
    This is a very simple program that will write one line of text on the screen and then exit. To minimize errors, copy this code and paste it into Notepad.
 
-4. Save your work! In Notepad, on the **File** menu, choose **Save**.
+1. Save your work! In Notepad, on the **File** menu, choose **Save**.
 
    Congratulations, you have created a Visual C++ source file, hello.cpp, that is ready to compile.
 
-5. Switch back to the developer command prompt window. Enter **dir** at the command prompt to list the contents of the c:\hello directory. You should see the source file hello.cpp in the directory listing, which looks something like this:
+1. Switch back to the developer command prompt window. Enter `dir` at the command prompt to list the contents of the c:\hello directory. You should see the source file hello.cpp in the directory listing, which looks something like this:
 
    ```Output
    c:\hello>dir
@@ -104,7 +104,7 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
    The dates and other details will differ on your computer. If you don't see your source code file, hello.cpp, make sure you've changed to the c:\hello directory you created, and in Notepad, make sure that you saved your source file in this directory. Also make sure that you saved the source code with a .cpp file name extension, not a .txt extension.
 
-6. At the developer command prompt, enter `cl /EHsc hello.cpp` to compile your program.
+1. At the developer command prompt, enter `cl /EHsc hello.cpp` to compile your program.
 
    The cl.exe compiler generates an .obj file that contains the compiled code, and then runs the linker to create an executable program named hello.exe. This name appears in the lines of output information that the compiler displays. The output of the compiler should look something like this:
 
@@ -147,7 +147,7 @@ To compile a program that has multiple source code files, enter them all on the 
 
 `cl /EHsc file1.cpp file2.cpp file3.cpp`
 
-The **/EHsc** command-line option instructs the compiler to enable C++ exception handling. For more information, see [/EH (Exception Handling Model)](../build/reference/eh-exception-handling-model.md).
+The `/EHsc` command-line option instructs the compiler to enable C++ exception handling. For more information, see [/EH (Exception Handling Model)](../build/reference/eh-exception-handling-model.md).
 
 When you supply multiple source files like this, the compiler uses the first input file to create the program name. In this case, it outputs a program called file1.exe. To change the name to program1.exe, add an [/out](../build/reference/out-output-file-name.md) linker option:
 
@@ -157,7 +157,7 @@ And to catch more programming mistakes automatically, we recommend you compile b
 
 `cl /W4 /EHsc file1.cpp file2.cpp file3.cpp /link /out:program1.exe`
 
-The compiler, cl.exe, has many more options you can apply to build, optimize, debug, and analyze your code. For a quick list, enter **cl /?** at the developer command prompt. You can also compile and link separately and apply linker options in more complex build scenarios. For more information on compiler and linker options and usage, see  [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md).
+The compiler, cl.exe, has many more options you can apply to build, optimize, debug, and analyze your code. For a quick list, enter `cl /?` at the developer command prompt. You can also compile and link separately and apply linker options in more complex build scenarios. For more information on compiler and linker options and usage, see  [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md).
 
 You can use NMAKE and makefiles, or MSBuild and project files to configure and build more complex projects on the command line. For more information on using these tools, see [NMAKE Reference](../build/nmake-reference.md) and [MSBuild](../build/msbuild-visual-cpp.md).
 
