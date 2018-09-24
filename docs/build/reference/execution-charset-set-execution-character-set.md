@@ -2,7 +2,7 @@
 title: "-execution-charset (Set Execution Character Set) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
+ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 f1_keywords: ["execution-charset", "/execution-charset"]
 dev_langs: ["C++"]
@@ -24,10 +24,10 @@ Lets you specify the execution character set for your executable.
 
 ## Arguments
 
-**IANA_name**<br/>
+*IANA_name*<br/>
 The IANA-defined character set name.
 
-**CPID**<br/>
+*CPID*<br/>
 The code page identifier.
 
 ## Remarks
