@@ -6756,6 +6756,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/runtimeclassbaset-asiid-method.md",
+            "redirect_url": "/cpp/windows/runtimeclassbaset-structure#asiid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/runtimeclassbaset-getimplementediids-method.md",
+            "redirect_url": "/cpp/windows/runtimeclassbaset-structure#getimplementediids",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/simpleactivationfactory-activateinstance-method.md",
             "redirect_url": "/cpp/windows/simpleactivationfactory-class#activateinstance",
             "redirect_document_id": false
@@ -6773,6 +6783,16 @@
         {
             "source_path": "docs/windows/simpleclassfactory-createinstance-method.md",
             "redirect_url": "/cpp/windows/simpleclassfactory-class#createinstance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/verifyinheritancehelper-verify-method.md",
+            "redirect_url": "/cpp/windows/verifyinheritancehelper-structure#verify",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/verifyinterfacehelper-verify-method.md",
+            "redirect_url": "/cpp/windows/verifyinterfacehelper-structure#verify",
             "redirect_document_id": false
         },
         {
@@ -6813,6 +6833,36 @@
         {
             "source_path": "docs/windows/walkthrough-creating-a-basic-windows-runtime-component-using-wrl.md",
             "redirect_url": "/cpp/windows/windows-runtime-cpp-template-library-wrl",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-tilde-weakreference-destructor.md",
+            "redirect_url": "/cpp/windows/weakreference-class1#tilde-weakreference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-decrementstrongreference-method.md",
+            "redirect_url": "/cpp/windows/weakreference-class1#decrementstrongreference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-incrementstrongreference-method.md",
+            "redirect_url": "/cpp/windows/weakreference-class1#incrementstrongreference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-resolve-method.md",
+            "redirect_url": "/cpp/windows/weakreference-class1#resolve",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-setunknown-method.md",
+            "redirect_url": "/cpp/windows/weakreference-class1#setunknown",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-weakreference-constructor.md",
+            "redirect_url": "/cpp/windows/weakreference-class1#weakreference",
             "redirect_document_id": false
         }
     ]
