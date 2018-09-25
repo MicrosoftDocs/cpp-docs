@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Using MSBuild to Create a Visual C++ Project
 
-This walkthrough demonstrates how to use MSBuild to build a Visual C++ project at a command prompt. You will learn how to create the C++ source files and an XML-based project file for a Visual C++ console application. After building the project, you will learn how to customize the build process.
+This walkthrough demonstrates how to use MSBuild to build a Visual C++ project at a command prompt. You'll learn how to create the C++ source files and an XML-based project file for a Visual C++ console application. After building the project, you'll learn how to customize the build process.
 
 This walkthrough illustrates the following tasks:
 
@@ -42,7 +42,7 @@ You need the following to complete this walkthrough:
 
 ## Creating the C++ Source Files
 
-In this walkthrough you will create a project that has a source file and a header file. The source file main.cpp contains the main function for the console application. The header file main.h contains code to include the iostream header file. You can create these C++ files by using Visual Studio or a text editor such as Visual Studio Code.
+In this walkthrough, you'll create a project that has a source file and a header file. The source file main.cpp contains the main function for the console application. The header file main.h contains code to include the iostream header file. You can create these C++ files by using Visual Studio or a text editor such as Visual Studio Code.
 
 ### To create the C++ source files for your project
 
@@ -208,7 +208,7 @@ MSBuild enables you to execute predefined build targets, apply user-defined prop
 
 ### Using MSBuild with Build Targets
 
-A *build target* is a named set of predefined or user-defined commands that can be executed during the build. Use the target command-line option (`/t`) to specify a build target. In the case of the `myproject` example project, the predefined **clean** target deletes all files in the debug folder and creates a new log file.
+A *build target* is a named set of predefined or user-defined commands that can be executed during the build. Use the target command-line option (`/t`) to specify a build target. For the `myproject` example project, the predefined **clean** target deletes all files in the debug folder and creates a new log file.
 
 At the command prompt, type the following command to clean `myproject`.
 
@@ -234,7 +234,7 @@ At the command prompt, type the following command to create a release build for 
 
 ### Using MSBuild with the 64-bit Compiler and Tools
 
-If you have installed Visual C++ on 64-bit Windows, by default, the 64-bit x64 native and cross tools are installed. You can configure MSBuild to use the 64-bit compiler and tools to build your application by setting the `PreferredToolArchitecture` property. This property does not affect the project configuration or platform properties. By default, the 32-bit version of the tools is used. To specify the 64-bit version of the compiler and tools, add the following property group element to the Myproject.vcxproj project file after the `Microsoft.Cpp.default.props` \<Import /> element:
+If you have installed Visual C++ on 64-bit Windows, by default, the 64-bit x64 native and cross tools are installed. You can configure MSBuild to use the 64-bit compiler and tools to build your application by setting the `PreferredToolArchitecture` property. This property doesn't affect the project configuration or platform properties. By default, the 32-bit version of the tools is used. To specify the 64-bit version of the compiler and tools, add the following property group element to the Myproject.vcxproj project file after the `Microsoft.Cpp.default.props` \<Import /> element:
 
 ```xml
 <PropertyGroup>
