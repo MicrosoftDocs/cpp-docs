@@ -1,7 +1,7 @@
 ---
 title: "CMake Projects in Visual C++ | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/17/2018"
+ms.date: "09/26/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-ide"]
@@ -393,3 +393,11 @@ If you need more information about the state of the CMake cache to diagnose a pr
 **Visual Studio 2017 version 15.7 and later**: To build a single file in a CMake project, right-click on the file in **Solution Explorer** and choose **Compile**. You can also build the file that is currently open in the editor by using the main CMake menu:
 
 ![CMake single file compilation](media/cmake-single-file-compile.png)
+
+## Run CMake from the command line
+If you have installed CMake from the Visual Studio Installer, you can run it from the command line by following these steps:
+
+1. Run the appropriate vsdevcmd.bat (x86/x64). See [Building on the Command Line](building-on-the-command-line.md) for more information.
+1. Switch to your output folder.
+1. Run CMake to build/configure your app.
+
