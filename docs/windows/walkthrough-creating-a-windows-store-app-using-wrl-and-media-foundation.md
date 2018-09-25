@@ -68,7 +68,7 @@ In most cases, you can use C++/CX to create Windows Runtime. However, sometimes 
 
    [!code-cpp[wrl-media-capture#3](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_3.h)]
 
-1. `GrayscaleTransform.h` is not used in this example. You can remove it from the project if you want to.
+1. `GrayscaleTransform.h` isn't used in this example. You can remove it from the project if you want to.
 
 1. Use the following code to replace the contents of `GrayscaleTransform.cpp`:
 

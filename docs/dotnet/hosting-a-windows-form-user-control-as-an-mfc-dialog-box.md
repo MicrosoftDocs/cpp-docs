@@ -43,7 +43,7 @@ For a sample application that shows Windows Forms used with MFC, see [MFC and Wi
 
 1. Add a new class that subclasses `CDialog`.
 
-     Right click on project name and add an MFC class (called CHostForWinForm) that subclasses `CDialog`. Since you do not need the dialog box resource, you can delete the resource ID (select the Resource View, expand the Dialog folder and delete IDD_HOSTFORWINFORM resource.  Then, remove any references to the ID in code.).
+     Right click on project name and add an MFC class (called CHostForWinForm) that subclasses `CDialog`. Since you do not need the dialog box resource, you can delete the resource ID (select Resource View, expand the Dialog folder and delete IDD_HOSTFORWINFORM resource.  Then, remove any references to the ID in code.).
 
 1. Replace `CDialog` in CHostForWinForm.h and CHostForWinForm.cpp files with `CWinFormsDialog<WindowsControlLibrary1::UserControl1>`.
 

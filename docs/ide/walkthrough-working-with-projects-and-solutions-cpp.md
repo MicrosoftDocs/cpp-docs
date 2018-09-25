@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 
 Here's how to create a C++ project in Visual Studio, add code, and then build and run the project. The project in this walkthrough is a program that tracks how many players are playing different card games.
 
-In Visual Studio, work is organized in projects and solutions. A solution can contain more than one project—for example, a DLL and an executable that references that DLL. For more information, see [Solutions and Projects](/visualstudio/ide/solutions-and-projects-in-visual-studio).
+In Visual Studio, work is organized in projects and solutions. A solution can have more than one project—for example, a DLL and an executable that references that DLL. For more information, see [Solutions and Projects](/visualstudio/ide/solutions-and-projects-in-visual-studio).
 
 ## Before you start
 
@@ -52,11 +52,11 @@ To create a project, first choose a project-type template. For each project type
 
 You can use **Solution Explorer** to organize and manage the projects, files, and other resources in your solution.
 
-This part of the walkthrough shows how add a class to the project. When you add the class, Visual Studio adds the corresponding .h and .cpp files. You can see the results in **Solution Explorer**.
+This part of the walkthrough shows how to add a class to the project. When you add the class, Visual Studio adds the corresponding .h and .cpp files. You can see the results in **Solution Explorer**.
 
 ### To add a class to a project
 
-1. If the **Solution Explorer** window is not displayed in Visual Studio, on the menu bar, choose **View** > **Solution Explorer**.
+1. If the **Solution Explorer** window isn't displayed in Visual Studio, on the menu bar, choose **View** > **Solution Explorer**.
 
 1. In **Solution Explorer**, select the **Game** project. On the menu bar, choose **Project** > **Add Class**.
 
@@ -74,11 +74,11 @@ This part of the walkthrough shows how add a class to the project. When you add 
       static int totalParticipants;
       ```
 
-   - Modify the default constructor that Visual Studio generated. After the `public:` access specifier, find the line that looks like this:
+   - Modify the default constructor that Visual Studio generated. After the `public:` access specifier, find the line that looks like:
 
       `Cardgame();`
 
-      Modify this constructor to take one parameter of type `int`, named *players*.
+      Modify the constructor to take one parameter of type `int`, named *players*.
 
       <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#101](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_2.h)]-->
       `Cardgame(int players);`
@@ -88,7 +88,7 @@ This part of the walkthrough shows how add a class to the project. When you add 
       <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#102](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_3.h)]-->
       `static int GetParticipants() { return totalParticipants; }`
 
-   The Cardgame.h file should resemble this after you change it:
+   The Cardgame.h file should resemble the code below after you change it:
 
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#103](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_4.h)]-->
    ```cpp
@@ -104,11 +104,11 @@ This part of the walkthrough shows how add a class to the project. When you add 
    };
    ```
 
-   The line `#pragma once` tells the compiler to include the header file only one time. For more information, see [once](../preprocessor/once.md). For information about other C++ keywords in this header file, see [class](../cpp/class-cpp.md), [int](../cpp/fundamental-types-cpp.md), [static](../cpp/storage-classes-cpp.md), and [public](../cpp/public-cpp.md).
+   The line `#pragma once` tells the compiler to include the header file only one time. For more information, see [once](../preprocessor/once.md). For information about other C++ keywords in the header file above, see [class](../cpp/class-cpp.md), [int](../cpp/fundamental-types-cpp.md), [static](../cpp/storage-classes-cpp.md), and [public](../cpp/public-cpp.md).
 
 1. Choose the **Cardgame.cpp** tab at the top of the editing pane to open it for editing.
 
-1. Delete everything in the file and replace it with this code:
+1. Delete everything in the file and replace it with the code:
 
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#111](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_5.cpp)]-->
    ```cpp
@@ -142,7 +142,7 @@ Add some code to your app that tests the new functions.
 
 ### To add test code to the project
 
-1. In the **Game.cpp** editor window, replace the existing code with this:
+1. In the **Game.cpp** editor window, replace the existing code with:
 
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#120](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_6.cpp)]-->
    ```cpp
@@ -169,7 +169,7 @@ Add some code to your app that tests the new functions.
        return 0;
    }
    ```
-This code adds a test function, `PlayGames`, to the source code, and calls it in `main`.
+The code adds a test function, `PlayGames`, to the source code, and calls it in `main`.
 
 ## Build and run your app project
 
@@ -179,7 +179,7 @@ Next, build the project and run the app.
 
 1. On the menu bar, choose **Build** > **Build Solution**.
 
-   Output from a build is displayed in the **Output** window. If your build is successful, the output should resemble this:
+   Output from a build is displayed in the **Output** window. If your build is successful, the output should resemble:
 
    ```Output
    1>------ Build started: Project: Game, Configuration: Debug Win32 ------
@@ -193,9 +193,9 @@ Next, build the project and run the app.
 
    The **Output** window can show different steps, depending on the build configuration, but if the project build succeeds, the last line should resemble the output shown.
 
-   If your build did not succeed, compare your code to the code that is shown in the earlier steps.
+   If your build didn't succeed, compare your code to the code that is shown in the earlier steps.
 
-1. To run the project, on the menu bar, choose **Debug** > **Start Without Debugging**. A console window should appear, and the output should resemble this:
+1. To run the project, on the menu bar, choose **Debug** > **Start Without Debugging**. A console window should appear, and the output should resemble:
 
    ```Output
    4 players have started a new game.  There are now 4 players in total.

@@ -13,23 +13,23 @@ ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Deploying Your Program (C++)
 
-Now that you've created your application by completing the earlier related walkthroughs, which are listed in [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md), the last step is to create an installer so that other users can install the program on their computers. To do this, you'll add a new project to your existing solution. The output of this new project is a setup.exe file that will install your app on another computer.
+Now that you've created your application by completing the earlier related walkthroughs, which are listed in [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md), the last step is to create an installer so that other users can install the program on their computers. For the installer, you'll add a new project to your existing solution. The output of this new project is a setup.exe file that will install your app on another computer.
 
-This walkthrough shows how to use Windows Installer to deploy your application. You can also use ClickOnce to deploy an application. For more information, see [ClickOnce Deployment for Visual C++ Applications](../ide/clickonce-deployment-for-visual-cpp-applications.md). For more information about deployment in general, see [Deploying Applications, Services, and Components](/visualstudio/deployment/deploying-applications-services-and-components).
+The walkthrough shows how to use Windows Installer to deploy your application. You can also use ClickOnce to deploy an application. For more information, see [ClickOnce Deployment for Visual C++ Applications](../ide/clickonce-deployment-for-visual-cpp-applications.md). For more information about deployment in general, see [Deploying Applications, Services, and Components](/visualstudio/deployment/deploying-applications-services-and-components).
 
 ## Prerequisites
 
-- This walkthrough assumes that you understand the fundamentals of the C++ language.
+- The walkthrough assumes that you understand the fundamentals of the C++ language.
 
-- It also assumes that you have completed the earlier related walkthroughs that are listed in [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
+- It also assumes that you've completed the earlier related walkthroughs that are listed in [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
 
-- This walkthrough cannot be completed in Express editions of Visual Studio.
+- The walkthrough can't be completed in Express editions of Visual Studio.
 
-- If you haven’t already done so, download the Microsoft Visual Studio Installer Projects extension, as described in the steps later in this article. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio.
+- If you haven’t already done so, download the Microsoft Visual Studio Installer Projects extension, as described in the further steps later. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio.
 
 ### To install the Visual Studio setup and deployment project template
 
-1. When you are connected to the Internet, in Visual Studio, choose **Tools** > **Extensions and Updates**.
+1. When you're connected to the Internet, in Visual Studio, choose **Tools** > **Extensions and Updates**.
 
 1. Under **Extensions and Updates**, select the **Online** tab and type *Microsoft Visual Studio Installer Projects* in the search box. Hit **Enter**, select **Microsoft Visual Studio \<version> Installer Projects**, and click **Download**.
 
@@ -55,7 +55,7 @@ This walkthrough shows how to use Windows Installer to deploy your application. 
 
 1. Rename the shortcut item to *Game*, then drag and drop the item into the **User's Programs Menu** node on the left side of the window.
 
-1. In **Solution Explorer** select the **Game Installer** project and choose **View** > **Properties Window** or hit **F4** to open the **Properties** window.
+1. In **Solution Explorer**, select the **Game Installer** project and choose **View** > **Properties Window** or hit **F4** to open the **Properties** window.
 
 1. Specify additional details as you want them to appear in the installer.  For example, use *Contoso* for **Manufacturer**, *Game Installer* for **Product Name**, and *http://www.contoso.com* for **SupportUrl**.
 

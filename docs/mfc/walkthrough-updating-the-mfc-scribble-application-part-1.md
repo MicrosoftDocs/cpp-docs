@@ -39,7 +39,7 @@ This part of the walkthrough has the following sections:
 
 ##  <a name="replaceclass"></a> Replacing the Base Classes
 
-To convert an application that supports a menu to an application that supports a ribbon, you must derive the application, frame window, and toolbar classes from updated base classes. (We suggest that you do not modify the original Scribble sample; instead, clean the Scribble project, copy it to another directory, and then modify the copy.)
+To convert an application that supports a menu to an application that supports a ribbon, you must derive the application, frame window, and toolbar classes from updated base classes. (We suggest that you don't modify the original Scribble sample. Instead, clean the Scribble project, copy it to another directory, and then modify the copy.)
 
 ### To replace the base classes in the Scribble application
 
@@ -51,7 +51,7 @@ To convert an application that supports a menu to an application that supports a
     #include <afxcontrolbars.h>
     ```
 
-1. In scribble.h, modify the definition for the `CScribbleApp` class so that it is derived from [CWinAppEx Class](../mfc/reference/cwinappex-class.md).
+1. In scribble.h, modify the definition for the `CScribbleApp` class so that it's derived from [CWinAppEx Class](../mfc/reference/cwinappex-class.md).
 
     ```cpp
     class CScribbleApp: public CWinAppEx
@@ -64,7 +64,7 @@ To convert an application that supports a menu to an application that supports a
     SetRegistryBase(_T("Settings"));
     ```
 
-1. The main frame for a multiple document interface (MDI) application is no longer derived from the `CMDIFrameWnd` class. Instead, it is derived from the [CMDIFrameWndEx](../mfc/reference/cmdiframewndex-class.md) class.
+1. The main frame for a multiple document interface (MDI) application is no longer derived from the `CMDIFrameWnd` class. Instead, it's derived from the [CMDIFrameWndEx](../mfc/reference/cmdiframewndex-class.md) class.
 
     In the mainfrm.h and mainfrm.cpp files, replace all references to `CMDIFrameWnd` with `CMDIFrameWndEx`.
 
@@ -100,9 +100,9 @@ To convert an application that supports a menu to an application that supports a
 
 ##  <a name="addbitmap"></a> Adding Bitmaps to the Project
 
-The next four steps of this walkthrough require bitmap resources. You can obtain appropriate bitmaps in various ways:
+The next four steps of this walkthrough require bitmap resources. You can get the appropriate bitmaps in various ways:
 
-- Use the [Resource Editors](../windows/resource-editors.md) to invent your own bitmaps. Or use the resource editors to assemble bitmaps from the portable network graphics (.png) images that are included with Visual Studio and can downloaded from the [Visual Studio image library](https://docs.microsoft.com/visualstudio/designers/the-visual-studio-image-library).
+- Use the [Resource Editors](../windows/resource-editors.md) to invent your own bitmaps. Or use the resource editors to assemble bitmaps from the portable network graphics (.png) images that are included with Visual Studio and can be downloaded from the [Visual Studio image library](https://docs.microsoft.com/visualstudio/designers/the-visual-studio-image-library).
 
     However, the **Ribbon** user interface requires that certain bitmaps support transparent images. Transparent bitmaps use 32-bit pixels, where 24 bits specify the red, green, and blue components of the color, and 8 bits define an *alpha channel* that specifies the transparency of the color. The current resource editors can view, but not modify bitmaps with 32-bit pixels. Consequently, use an external image editor instead of the resource editors to manipulate transparent bitmaps.
 
@@ -150,7 +150,7 @@ This walkthrough copies resource files from the example created in [Walkthrough:
 
 ##  <a name="addribbon"></a> Adding a Ribbon Resource to the Project
 
-When you convert an application that uses menus to an application that uses a ribbon, you do not have to remove or disable the existing menus. Instead, you create a ribbon resource, add ribbon buttons, and then associate the new buttons with the existing menu items. Although the menus are no longer visible, messages from the ribbon bar are routed through the menus. In addition, menu shortcuts continue to work.
+When you convert an application that uses menus to an application that uses a ribbon, you don't have to remove or disable the existing menus. Just create a ribbon resource, add ribbon buttons, and then associate the new buttons with the existing menu items. Although the menus are no longer visible, messages from the ribbon bar are routed through the menus and menu shortcuts continue to work.
 
 A ribbon consists of the **Application** button, which is the large button on the upper-left side of the ribbon, and one or more category tabs. Each category tab contains one or more panels that act as containers for ribbon buttons and controls. The following procedure shows how to create a ribbon resource and then customize the **Application** button.
 
@@ -190,7 +190,7 @@ A ribbon consists of the **Application** button, which is the large button on th
 
    1. Click the **Print** button and then click **Insert** to add another button. Change **Caption** to `Print Pre&view`, **ID** to `ID_FILE_PRINT_PREVIEW`, **Image** to `6`, and **Image Large** to `6`.
 
-   1. You have now modified the **Main Items**. Click **Close** to exit the **Items Editor**.
+   1. You've now modified the **Main Items**. Click **Close** to exit the **Items Editor**.
 
 1. The following modification creates an exit button that appears at the bottom of the **Application** button menu.
 
@@ -198,7 +198,7 @@ A ribbon consists of the **Application** button, which is the large button on th
 
    1. With the **Item** type **Button** selected, click **Add** to add a button. Change **Caption** to `E&xit`, **ID** to `ID_APP_EXIT`, **Image** to `8`.
 
-   1. You have modified the **Buttons**. Click **Close** to exit the **Items Editor**.
+   1. You've modified the **Buttons**. Click **Close** to exit the **Items Editor**.
 
 ##  <a name="createinstance"></a> Creating an Instance of the Ribbon Bar
 
@@ -206,14 +206,14 @@ The following steps show how to create an instance of the ribbon bar when your a
 
 ### To create an instance of the ribbon bar
 
-1. In the mainfrm.h file, add a data member to the protected section of `CMainFrame`, the class definition for the main frame. This member represents the ribbon bar.
+1. In the mainfrm.h file, add a data member to the protected section of `CMainFrame`, the class definition for the main frame. This member is for the ribbon bar.
 
     ```cpp
     // Ribbon bar for the application
     CMFCRibbonBar m_wndRibbonBar;
     ```
 
-2. In the mainfrm.cpp file, add the following code before the final `return` statement at the end of the `CMainFrame::OnCreate` function. This creates an instance of the ribbon bar.
+2. In the mainfrm.cpp file, add the following code before the final `return` statement at the end of the `CMainFrame::OnCreate` function. It creates an instance of the ribbon bar.
 
     ```cpp
     // Create the ribbon bar
@@ -226,7 +226,7 @@ The following steps show how to create an instance of the ribbon bar when your a
 
 ##  <a name="addcategory"></a> Customizing the Ribbon Resource
 
-Now that you have created the **Application** button, you can add elements to the ribbon.
+Now that you've created the **Application** button, you can add elements to the ribbon.
 
 > [!NOTE]
 > This walkthrough uses the same panel icon for all panels. However, you can use other image list indexes to display other icons.
@@ -235,9 +235,9 @@ Now that you have created the **Application** button, you can add elements to th
 
 1. The Scribble program requires only one category. In the design view, in the **Toolbox**, double-click **Category** to add one and display its properties. Change property values as follows: **Caption** to `&Home`, **Large Images** to `IDB_RIBBON_HOMELARGE`, **Small Images** to `IDB_RIBBON_HOMESMALL`.
 
-1. Each ribbon category is organized into named panels. Each panel contains a set of controls that perform related operations. This category has one panel. Click **Panel**, and then change **Caption** to `Edit`.
+1. Each ribbon category is organized into named panels. Each panel contains a set of controls that complete related operations. This category has one panel. Click **Panel**, and then change **Caption** to `Edit`.
 
-1. To the **Edit** panel, add a button that is responsible for clearing the contents of the document. The message ID for this button has already been defined in the `IDR_SCRIBBTYPE` menu resource. Specify `Clear All` as the button text and the index of the bitmap that decorates the button. Open the **Toolbox**, and then drag a **Button** to the **Edit** panel. Click the button and then change **Caption** to `Clear All`, **ID** to `ID_EDIT_CLEAR_ALL`, **Image Index** to `0`, **Large Image Index** to `0`.
+1. To the **Edit** panel, add a button responsible for clearing the contents of the document. The message ID for this button has already been defined in the `IDR_SCRIBBTYPE` menu resource. Specify `Clear All` as the button text and the index of the bitmap that decorates the button. Open the **Toolbox**, and then drag a **Button** to the **Edit** panel. Click the button and then change **Caption** to `Clear All`, **ID** to `ID_EDIT_CLEAR_ALL`, **Image Index** to `0`, **Large Image Index** to `0`.
 
 1. Save the changes, and then build and run the application. The Scribble application should be displayed, and it should have a ribbon bar at the top of the window instead of a menu bar. The ribbon bar should have one category, **Home**, and **Home** should have one panel, **Edit**. The ribbon buttons that you added should be associated with the existing event handlers, and the **Open**, **Close**, **Save**, **Print**, and **Clear All** buttons should work as expected.
 
@@ -259,7 +259,7 @@ A *visual manager* is a global object that controls all drawing for an applicati
 
 ## Next Steps
 
-You have modified the classic Scribble 1.0 MFC sample to use the **Ribbon Designer**. Now go to [Part 2](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md).
+You've modified the classic Scribble 1.0 MFC sample to use the **Ribbon Designer**. Now go to [Part 2](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md).
 
 ## See Also
 
