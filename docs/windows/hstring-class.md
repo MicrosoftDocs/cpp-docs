@@ -24,37 +24,38 @@ class HString;
 
 ## Remarks
 
-The Windows Runtime provides access to strings through HSTRING handles. The **HString** class provides convenience functions and operators to simplify using HSTRING handles. This class can handle the lifetime of the HSTRING it owns through an RAII pattern.
+The Windows Runtime provides access to strings through HSTRING handles. The `HString` class provides convenience functions and operators to simplify using HSTRING handles. This class can handle the lifetime of the HSTRING it owns through an RAII pattern.
 
 ## Members
 
 ### Public Constructors
 
-|Name|Description|
-|----------|-----------------|
-|[HString::HString Constructor](../windows/hstring-hstring-constructor.md)|Initializes a new instance of the **HString** class.|
-|[HString::~HString Destructor](../windows/hstring-tilde-hstring-destructor.md)|Destroys the current instance of the **HString** class.|
+Name                                | Description
+----------------------------------- | -----------------------------------------------------
+[HString::HString](#hstring)        | Initializes a new instance of the `HString` class.
+[HString::~HString](#tilde-hstring) | Destroys the current instance of the `HString` class.
 
-### Members
+### Public Methods
 
-|Name|Description|
-|----------|-----------------|
-|[HString::Set Method](../windows/hstring-set-method.md)|Sets the value of the current **HString** object to the specified wide-character string or **HString** parameter.|
-|[HString::Attach Method](../windows/hstring-attach-method.md)|Associates the specified **HString** object with the current **HString** object.|
-|[HString::CopyTo Method](../windows/hstring-copyto-method.md)|Copies the current **HString** object to an HSTRING object.|
-|[HString::Detach Method](../windows/hstring-detach-method.md)|Disassociates the specified **HString** object from its underlying value.|
-|[HString::GetAddressOf Method](../windows/hstring-getaddressof-method.md)|Retrieves a pointer to the underlying HSTRING handle.|
-|[HString::Get Method](../windows/hstring-get-method.md)|Retrieves the value of the underlying HSTRING handle.|
-|[HString::Release Method](../windows/hstring-release-method.md)|Deletes the underlying string value and intializes the current **HString** object to an empty value.|
-|[HString::MakeReference Method](../windows/hstring-makereference-method.md)|Creates an `HStringReference` object from a specified string parameter.|
+Name                                     | Description
+---------------------------------------- | -------------------------------------------------------------------------------------------------------------
+[HString::Attach](#attach)               | Associates the specified `HString` object with the current `HString` object.
+[HString::CopyTo](#copyto)               | Copies the current `HString` object to an HSTRING object.
+[HString::Detach](#detach)               | Disassociates the specified `HString` object from its underlying value.
+[HString::Get](#get)                     | Retrieves the value of the underlying HSTRING handle.
+[HString::GetAddressOf](#getaddressof)   | Retrieves a pointer to the underlying HSTRING handle.
+[HString::MakeReference](#makereference) | Creates an `HStringReference` object from a specified string parameter.
+[HString::Release](#release)             | Deletes the underlying string value and intializes the current `HString` object to an empty value.
+[HString::Set](#set)                     | Sets the value of the current `HString` object to the specified wide-character string or `HString` parameter.
 
 ### Public Operators
 
-|Name|Description|
-|----------|-----------------|
-|[HString::Operator= Operator](../windows/hstring-operator-assign-operator.md)|Moves the value of another **HString** object to the current **HString** object.|
-|[HString::Operator== Operator](../windows/hstring-operator-equality-operator.md)|Indicates whether the two parameters are equal.|
-|[HString::Operator!= Operator](../windows/hstring-operator-inequality-operator.md)|Indicates whether the two parameters are not equal.|
+Name                                         | Description
+-------------------------------------------- | ----------------------------------------------------------------------------
+[HString::operator=](#operator-assign)       | Moves the value of another `HString` object to the current `HString` object.
+[HString::operator==](#operator-equality)    | Indicates whether the two parameters are equal.
+[HString::operator!=](#operator-inequality)  | Indicates whether the two parameters are not equal.
+[HString::operator&lt;](#operator-less-than) | Indicates whether the first parameter is less than the second parameter.
 
 ## Inheritance Hierarchy
 
@@ -66,21 +67,17 @@ The Windows Runtime provides access to strings through HSTRING handles. The **HS
 
 **Namespace:** Microsoft::WRL::Wrappers
 
-# HString::~HString Destructor
+## <a name="tilde-hstring"></a>HString::~HString
 
-Destroys the current instance of the **HString** class.
-
-## Syntax
+Destroys the current instance of the `HString` class.
 
 ```cpp
 ~HString() throw()  
 ```
 
-# HString::Attach Method
+## <a name="attach"></a>HString::Attach
 
-Associates the specified **HString** object with the current **HString** object.
-
-## Syntax
+Associates the specified `HString` object with the current `HString` object.
 
 ```cpp
 void Attach(
@@ -91,13 +88,11 @@ void Attach(
 ### Parameters
 
 *hstr*<br/>
-An existing **HString** object.
+An existing `HString` object.
 
-# HString::CopyTo Method
+## <a name="copyto"></a>HString::CopyTo
 
-Copies the current **HString** object to an HSTRING object.
-
-## Syntax
+Copies the current `HString` object to an HSTRING object.
 
 ```cpp
 HRESULT CopyTo(
@@ -110,86 +105,76 @@ HRESULT CopyTo(
 *str*<br/>
 The HSTRING that receives the copy.
 
-## Remarks
+### Remarks
 
 This method calls the [WindowsDuplicateString](https://msdn.microsoft.com/library/br224634.aspx) function.
 
-# HString::Detach Method
+## <a name="detach"></a>HString::Detach
 
-Disassociates the specified **HString** object from its underlying value.
-
-## Syntax
+Disassociates the specified `HString` object from its underlying value.
 
 ```cpp
 HSTRING Detach() throw()  
 ```
 
-## Return Value
+### Return Value
 
-The underlying **HString** value before the detach operation started.
+The underlying `HString` value before the detach operation started.
 
-# HString::Get Method
+## <a name="get"></a>HString::Get
 
 Retrieves the value of the underlying HSTRING handle.
-
-## Syntax
 
 ```cpp
 HSTRING Get() const throw()  
 ```
 
-## Return Value
+### Return Value
 
 The value of the underlying HSTRING handle
 
-# HString::GetAddressOf Method
+## <a name="getaddressof"></a>HString::GetAddressOf
 
 Retrieves a pointer to the underlying HSTRING handle.
-
-## Syntax
 
 ```cpp
 HSTRING* GetAddressOf() throw()  
 ```
 
-## Return Value
+### Return Value
 
 A pointer to the underlying HSTRING handle.
 
-## Remarks
+### Remarks
 
 After this operation, the string value of the underlying HSTRING handle is destroyed.
 
-# HString::HString Constructor
+## <a name="hstring"></a>HString::HString
 
-Initializes a new instance of the **HString** class.
-
-## Syntax
+Initializes a new instance of the `HString` class.
 
 ```cpp
 HString(HSTRING hstr = nullptr) throw();
 HString(HString&& other) throw();
 ```
 
-#### Parameters
+### Parameters
 
 *hstr*<br/>
 An HSTRING handle.
 
 *other*<br/>
-An existing **HString** object.
+An existing `HString` object.
 
-## Remarks
+### Remarks
 
-The first constructor initializes a new **HString** object that is empty.
+The first constructor initializes a new `HString` object that is empty.
 
-The second constructor initializes a new **HString** object to the value of the existing *other* parameter, and then destroys the *other* parameter.
+The second constructor initializes a new `HString` object to the value of the existing *other* parameter, and then destroys the *other* parameter.
 
-# HString::IsValid Method
+## <a name="IsValid"></a>HString::IsValid
 
-Indicates whether the current **HString** object is empty or not.
-
-## Syntax
+Indicates whether the current `HString` object is empty or not.
 
 ```cpp
 bool IsValid() const throw()  
@@ -197,13 +182,11 @@ bool IsValid() const throw()
 
 ### Parameters
 
-**true** if the current **HString** object is not empty; otherwise, **false**.
+`true` if the current `HString` object is not empty; otherwise, `false`.
 
-# HString::MakeReference Method
+## <a name="makereference"></a>HString::MakeReference
 
 Creates an `HStringReference` object from a specified string parameter.
-
-## Syntax
 
 ```cpp
 template<unsigned int sizeDest>
@@ -227,15 +210,13 @@ A reference to a wide-character string.
 *len*<br/>
 The maximum length of the *str* parameter buffer to use in this operation. If the *len* parameter isn't specified, the entire *str* parameter is used.
 
-## Return Value
+### Return Value
 
 An `HStringReference` object whose value is the same as the specified *str* parameter.
 
-# HString::Operator= Operator
+## <a name="operator-assign"></a>HString::operator= Operator
 
-Moves the value of another **HString** object to the current **HString** object.
-
-## Syntax
+Moves the value of another `HString` object to the current `HString` object.
 
 ```cpp
 HString& operator=(HString&& other) throw()  
@@ -244,17 +225,15 @@ HString& operator=(HString&& other) throw()
 ### Parameters
 
 *other*<br/>
-An existing **HString** object.
+An existing `HString` object.
 
-## Remarks
+### Remarks
 
-The value of the existing *other* object is copied to the current **HString** object, and then the *other* object is destroyed.
+The value of the existing *other* object is copied to the current `HString` object, and then the *other* object is destroyed.
 
-# HString::Operator== Operator
+## <a name="operator-equality"></a>HString::operator== Operator
 
 Indicates whether the two parameters are equal.
-
-## Syntax
 
 ```cpp
 inline bool operator==(
@@ -281,20 +260,18 @@ inline bool operator==(
 ### Parameters
 
 *lhs*<br/>
-The first parameter to compare. *lhs* can be an **HString** or `HStringReference` object, or an HSTRING handle.
+The first parameter to compare. *lhs* can be an `HString` or `HStringReference` object, or an HSTRING handle.
 
 *rhs*<br/>
-The second parameter to compare.*rhs* can be an **HString** or `HStringReference` object, or an HSTRING handle.
+The second parameter to compare.*rhs* can be an `HString` or `HStringReference` object, or an HSTRING handle.
 
-## Return Value
+### Return Value
 
-**true** if the *lhs* and *rhs* parameters are equal; otherwise, **false**.
+`true` if the *lhs* and *rhs* parameters are equal; otherwise, `false`.
 
-# HString::Operator!= Operator
+## <a name="operator-inequality"></a>HString::operator!= Operator
 
 Indicates whether the two parameters are not equal.
-
-## Syntax
 
 ```cpp
 inline bool operator!=( const HString& lhs,
@@ -316,20 +293,18 @@ inline bool operator!=( const HString& lhs,
 ### Parameters
 
 *lhs*<br/>
-The first parameter to compare. *lhs* can be an **HString** or `HStringReference` object, or an HSTRING handle.
+The first parameter to compare. *lhs* can be an `HString` or `HStringReference` object, or an HSTRING handle.
 
 *rhs*<br/>
-The second parameter to compare.*rhs* can be an **HString** or `HStringReference` object, or an HSTRING handle.
+The second parameter to compare.*rhs* can be an `HString` or `HStringReference` object, or an HSTRING handle.
 
-## Return Value
+### Return Value
 
-**true** if the *lhs* and *rhs* parameters are not equal; otherwise, **false**.
+`true` if the *lhs* and *rhs* parameters are not equal; otherwise, `false`.
 
-# HString::Operator&lt; Operator
+## <a name="operator-less-than"></a>HString::operator&lt; Operator
 
 Indicates whether the first parameter is less than the second parameter.
-
-## Syntax
 
 ```cpp
 inline bool operator<(
@@ -340,30 +315,26 @@ inline bool operator<(
 ### Parameters
 
 *lhs*<br/>
-The first parameter to compare. *lhs* can be a reference to an **HString**.
+The first parameter to compare. *lhs* can be a reference to an `HString`.
 
 *rhs*<br/>
-The second parameter to compare. *rhs* can be a reference to an **HString**.
+The second parameter to compare. *rhs* can be a reference to an `HString`.
 
-## Return Value
+### Return Value
 
-**true** if the *lhs* parameter is less than the *rhs* parameter; otherwise, **false**.
+`true` if the *lhs* parameter is less than the *rhs* parameter; otherwise, `false`.
 
-# HString::Release Method
+## <a name="release"></a>HString::Release
 
-Deletes the underlying string value and intializes the current **HString** object to an empty value.
-
-## Syntax
+Deletes the underlying string value and intializes the current `HString` object to an empty value.
 
 ```cpp
 void Release() throw()  
 ```
 
-# HString::Set Method
+## <a name="set"></a>HString::Set
 
-Sets the value of the current **HString** object to the specified wide-character string or **HString** parameter.
-
-## Syntax
+Sets the value of the current `HString` object to the specified wide-character string or `HString` parameter.
 
 ```cpp
 HRESULT Set(
@@ -383,7 +354,7 @@ HRESULT Set(
 A wide-character string.
 
 *len*<br/>
-The maximum length of the *str* parameter that is assigned to the current **HString** object.
+The maximum length of the *str* parameter that is assigned to the current `HString` object.
 
 *hstr*<br/>
-An existing **HString** object.
+An existing `HString` object.
