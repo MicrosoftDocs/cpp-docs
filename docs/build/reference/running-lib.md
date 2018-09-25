@@ -49,7 +49,7 @@ For more information about /ERRORREPORT, see [/errorReport (Report Internal Comp
 
 > **/LTCG**
 
-Causes the library to include a list of all public symbols, which can be viewed by running **dumpbin /linkermember**. Note that LIB.exe does not support [/LTCG](../../build/reference/ltcg-link-time-code-generation.md) options such as /LTCG:PGI, /LTCG:PGO, and so on.
+Use this option to tell LIB.exe that the inputs include object files that were generated with link-time code generation enabled (cl.exe /GL). If LIB.exe encounters such inputs and /LTCG is not specified, it will restart after displaying this message: *LINK : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance*. Note that the /LTCG option here is not the same as the /LTCG linker option. 
 
 > **/MACHINE**
 
