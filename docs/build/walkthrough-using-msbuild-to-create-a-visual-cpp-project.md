@@ -186,7 +186,7 @@ Type the following command at the command prompt to build your console applicati
 
 `msbuild myproject.vcxproj /p:configuration=debug`
 
-MSBuild creates a directory for the output files, and then compiles and links your project to generate the Myproject.exe program. After the build process finishes, use the following command to run the application:
+MSBuild creates a directory for the output files, and then compiles and links your project to generate the Myproject.exe program. After the build process finishes, use the following command to run the application from the debug folder:
 
 `myproject`
 
@@ -216,7 +216,7 @@ At the command prompt, type the following command to clean `myproject`.
 
 ### Using MSBuild with Build Properties
 
-The property command-line option (`/p` enables you to override a property in your project build file. In the `myproject` example project, the release or debug build configuration is specified by the `Configuration` property. And the operating system that is intended to run the built application is specified by the `Platform` property.
+The property command-line option (`/p`) enables you to override a property in your project build file. In the `myproject` example project, the release or debug build configuration is specified by the `Configuration` property. And the operating system that is intended to run the built application is specified by the `Platform` property.
 
 At the command prompt, type the following command to create a debug build of the `myproject` application that is intended to run on 32-bit Windows.
 
@@ -256,11 +256,9 @@ If you have the toolsets and libraries for other versions of Visual C++ installe
 </PropertyGroup>
 ```
 
-To rebuild your project with the Visual C++ 11.0 Windows XP toolset, type either of the following commands:
+To rebuild your project with the Visual C++ 11.0 Windows XP toolset, type the following commands:
 
 `msbuild myproject.vcxproj /p:PlatformToolset=v110_xp /t:rebuild`
-
-`msbuild myproject.vcxproj /t:rebuild`
 
 ### Adding MSBuild customizations
 

@@ -74,7 +74,7 @@ In this set of tasks, you create a project for your DLL, add code, and build it.
 >
 >1. On the menu bar, choose **Project** > **Properties**.
 >
->1. In the left pane of the **Property Pages** dialog box, select **Preprocessor** under **Configuration Properties**, **C/C++**. Check the contents of the **Preprocessor Definitions** property.<br/><br/>![Check the Preprocessor Definitions property](media/mathlibrary-153bug-preprocessor-definitions-check.png "Check the Preprocessor Definitions property")<br/><br/>If you see **MATHLIBRARY&#95;EXPORTS** in the **Preprocessor Definitions** list, then you do not need to change anything. If you see **MathLibrary&#95;EXPORTS** instead, then continue to follow these steps.
+>1. In the left pane of the **Property Pages** dialog box, select **Preprocessor** under **Configuration Properties** > **C/C++**. Check the contents of the **Preprocessor Definitions** property.<br/><br/>![Check the Preprocessor Definitions property](media/mathlibrary-153bug-preprocessor-definitions-check.png "Check the Preprocessor Definitions property")<br/><br/>If you see **MATHLIBRARY&#95;EXPORTS** in the **Preprocessor Definitions** list, then you do not need to change anything. If you see **MathLibrary&#95;EXPORTS** instead, then continue to follow these steps.
 >
 >1. At the top of the **Property Pages** dialog, change the **Configuration** drop-down to **All Configurations**.
 >
@@ -306,7 +306,7 @@ You can now include the **MathLibrary.h** file and use the functions it declares
 
 ```cpp
 // MathClient.cpp : Client app for MathLibrary DLL.
-#include "stdafx.h"
+#include "pch.h"
 #include <iostream>
 #include "MathLibrary.h"
 
@@ -378,7 +378,7 @@ Now your client app has everything it needs to build and run. Build the applicat
 
 ```Output
 1>------ Build started: Project: MathClient, Configuration: Debug Win32 ------
-1>stdafx.cpp
+1>pch.cpp
 1>MathClient.cpp
 1>MathClient.vcxproj -> C:\Users\username\Source\Repos\MathClient\Debug\MathClient.exe
 1>MathClient.vcxproj -> C:\Users\username\Source\Repos\MathClient\Debug\MathClient.pdb (Partial PDB)
