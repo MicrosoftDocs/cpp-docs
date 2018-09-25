@@ -93,7 +93,7 @@ To complete this walkthrough, you must have Visual Studio.
 
 ### To add an animated object to the project
 
-1. In Solution Explorer, double-click MFCAnimationWalkthroughView.h to open it for modification. Just before the definition of the `CMFCAnimationWalkthroughView` class, add the following code to create a custom animation controller that will handle scheduling conflicts with the animation object.
+1. In **Solution Explorer**, double-click MFCAnimationWalkthroughView.h to open it for modification. Just before the definition of the `CMFCAnimationWalkthroughView` class, add the following code to create a custom animation controller that will handle scheduling conflicts with the animation object.
 
     ```cpp
     class CCustomAnimationController : public CAnimationController
