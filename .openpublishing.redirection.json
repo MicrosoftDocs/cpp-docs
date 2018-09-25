@@ -6531,6 +6531,81 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/hstring-hstring-constructor.md",
+            "redirect_url": "/cpp/windows/hstring-class#hstring",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-tilde-hstring-destructor.md",
+            "redirect_url": "/cpp/windows/hstring-class#tilde-hstring",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-attach-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#attach",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-copyto-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#copyto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-detach-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#detach",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-get-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#get",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-getaddressof-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#getaddressof",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-isvalid-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#isvalid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-makereference-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#makereference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-release-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#release",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-set-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#set",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-operator-assign-operator.md",
+            "redirect_url": "/cpp/windows/hstring-class#operator-assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-operator-less-than-operator.md",
+            "redirect_url": "/cpp/windows/hstring-class#operator-less-than",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-operator-equality-operator.md",
+            "redirect_url": "/cpp/windows/hstring-class#operator-equality",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-operator-inequality-operator.md",
+            "redirect_url": "/cpp/windows/hstring-class#operator-inequality",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/implements-cancastto-method.md",
             "redirect_url": "/cpp/windows/implements-structure#cancastto",
             "redirect_document_id": false
