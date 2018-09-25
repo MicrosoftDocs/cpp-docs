@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Putting Controls On Toolbars | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/20/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -19,11 +19,11 @@ This topic describes how to add a toolbar button that contains a Windows control
 
 To add a control to a toolbar, follow these steps:
 
-1. Reserve a dummy resource ID for the button in the parent toolbar resource. For more information about how to create buttons by using the Toolbar Editor in Visual Studio, see the [Toolbar Editor](../windows/toolbar-editor.md) topic.
+1. Reserve a dummy resource ID for the button in the parent toolbar resource. For more information about how to create buttons by using the **Toolbar Editor** in Visual Studio, see the [Toolbar Editor](../windows/toolbar-editor.md) topic.
 
 1. Reserve a toolbar image (button icon) for the button in all bitmaps of the parent toolbar.
 
-1. In the message handler that processes the AFX_WM_RESETTOOLBAR message, do the following:
+1. In the message handler that processes the `AFX_WM_RESETTOOLBAR` message, do the following:
 
    1. Construct the button control by using a `CMFCToolbarButton`-derived class.
 
@@ -44,22 +44,22 @@ This section describes how to create a **Find** combo box control that appears o
 
 ### Creating the Find Control
 
-First, create the `Find` combo box control:
+First, create the **Find** combo box control:
 
 1. Add the button and its commands to the application resources:
 
    1. In the application resources, add a new button with an `ID_EDIT_FIND` command ID to a toolbar in your application and to any bitmaps associated with the toolbar.
 
-   1. Create a new menu item with the ID_EDIT_FIND command ID.
+   1. Create a new menu item with the `ID_EDIT_FIND` command ID.
 
-   1. Add a new string "Find the text\nFind" to the string table and assign it an `ID_EDIT_FIND_COMBO` command ID. This ID will be used as the command ID of the `Find` combo box button.
+   1. Add a new string "Find the text\nFind" to the string table and assign it an `ID_EDIT_FIND_COMBO` command ID. This ID will be used as the command ID of the **Find** combo box button.
 
         > [!NOTE]
-        >  Because `ID_EDIT_FIND` is a standard command that is processed by `CEditView`, you are not required to implement a special handler for this command.  However, you must implement a handler for the new command `ID_EDIT_FIND_COMBO`.
+        > Because `ID_EDIT_FIND` is a standard command that is processed by `CEditView`, you are not required to implement a special handler for this command.  However, you must implement a handler for the new command `ID_EDIT_FIND_COMBO`.
 
 1. Create a new class, `CFindComboBox`, derived from [CComboBox Class](../mfc/reference/ccombobox-class.md).
 
-1. In the `CFindComboBox` class, override the `PreTranslateMessage` virtual method. This method will enable the combo box to process the [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) message. If the user hits the escape key (`VK_ESCAPE`), return the focus to the main frame window. If the user hits the Enter key (`VK_ENTER`), post to the main frame window a WM_COMMAND message that contains the `ID_EDIT_FIND_COMBO` command ID.
+1. In the `CFindComboBox` class, override the `PreTranslateMessage` virtual method. This method will enable the combo box to process the [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) message. If the user hits the escape key (`VK_ESCAPE`), return the focus to the main frame window. If the user hits the Enter key (`VK_ENTER`), post to the main frame window a `WM_COMMAND` message that contains the `ID_EDIT_FIND_COMBO` command ID.
 
 1. Create a class for the **Find** combo box button, derived from [CMFCToolBarComboBoxButton Class](../mfc/reference/cmfctoolbarcomboboxbutton-class.md). In this example, it is named `CFindComboButton`.
 
@@ -77,7 +77,7 @@ First, create the `Find` combo box control:
 
 1. Implement the `ID_EDIT_FIND_COMBO` handler in your document view. Use [CMFCToolBar::GetCommandButtons](../mfc/reference/cmfctoolbar-class.md#getcommandbuttons) with `ID_EDIT_FIND_COMBO` to retrieve all **Find** combo box buttons. There can be several copies of a button with the same command ID because of customization.
 
-9. In the ID_EDIT_FIND message handler `OnFind`, use [CMFCToolBar::IsLastCommandFromButton](../mfc/reference/cmfctoolbar-class.md#islastcommandfrombutton) to determine whether the find command was sent from the **Find** combo box button. If so, find the text and add the search string to the combo box.
+1. In the `ID_EDIT_FIND` message handler `OnFind`, use [CMFCToolBar::IsLastCommandFromButton](../mfc/reference/cmfctoolbar-class.md#islastcommandfrombutton) to determine whether the find command was sent from the **Find** combo box button. If so, find the text and add the search string to the combo box.
 
 ### Adding the Find Control to the Main Toolbar
 
@@ -86,16 +86,16 @@ To add the combo box button to the toolbar, follow these steps:
 1. Implement the `AFX_WM_RESETTOOLBAR` message handler `OnToolbarReset` in the main frame window.
 
     > [!NOTE]
-    >  The framework sends this message to the main frame window when a toolbar is initialized during application startup, or when a toolbar is reset during customization. In either case, you must replace the standard toolbar button with the custom **Find** combo box button.
+    > The framework sends this message to the main frame window when a toolbar is initialized during application startup, or when a toolbar is reset during customization. In either case, you must replace the standard toolbar button with the custom **Find** combo box button.
 
 1. In the `AFX_WM_RESETTOOLBAR` handler, examine the toolbar ID, that is, the *WPARAM* of the AFX_WM_RESETTOOLBAR message. If the toolbar ID is equal to that of the toolbar that contains the **Find** combo box button, call [CMFCToolBar::ReplaceButton](../mfc/reference/cmfctoolbar-class.md#replacebutton) to replace the **Find** button (that is, the button with the command ID `ID_EDIT_FIND)` with a `CFindComboButton` object.
 
     > [!NOTE]
-    >  You can construct a `CFindComboBox` object on the stack, because `ReplaceButton` copies the button object and maintains the copy.
+    > You can construct a `CFindComboBox` object on the stack, because `ReplaceButton` copies the button object and maintains the copy.
 
 ### Adding the Find Control to the Customize Dialog Box
 
-In the customization handler `OnViewCustomize`, call [CMFCToolBarsCustomizeDialog::ReplaceButton](../mfc/reference/cmfctoolbarscustomizedialog-class.md#replacebutton) to replace the **Find** button (that is, the button with the command ID `ID_EDIT_FIND)` with a `CFindComboButton` object.
+In the customization handler `OnViewCustomize`, call [CMFCToolBarsCustomizeDialog::ReplaceButton](../mfc/reference/cmfctoolbarscustomizedialog-class.md#replacebutton) to replace the **Find** button (that is, the button with the command ID `ID_EDIT_FIND`) with a `CFindComboButton` object.
 
 ## See Also
 
