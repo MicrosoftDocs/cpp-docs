@@ -6551,6 +6551,51 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/invokehelper-callback-data-member.md",
+            "redirect_url": "/cpp/windows/invokehelper-structure#callback",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/invokehelper-invoke-method.md",
+            "redirect_url": "/cpp/windows/invokehelper-structure#invoke",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/invokehelper-invokehelper-constructor.md",
+            "redirect_url": "/cpp/windows/invokehelper-structure#invokehelper",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/isbaseofstrict-value-constant.md",
+            "redirect_url": "/cpp/windows/isbaseofstrict-structure#value",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/issame-value-constant.md",
+            "redirect_url": "/cpp/windows/issame-structure#value",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/makeallocator-tilde-makeallocator-destructor.md",
+            "redirect_url": "/cpp/windows/makeallocator-class#tilde-makeallocator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/makeallocator-allocate-method.md",
+            "redirect_url": "/cpp/windows/makeallocator-class#allocate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/makeallocator-detach-method.md",
+            "redirect_url": "/cpp/windows/makeallocator-class#detach",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/makeallocator-makeallocator-constructor.md",
+            "redirect_url": "/cpp/windows/makeallocator-class#makeallocator",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/module-tilde-module-destructor.md",
             "redirect_url": "/cpp/windows/module-class#tilde-module",
             "redirect_document_id": false
@@ -6696,6 +6741,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/modulebase-tilde-modulebase-destructor.md",
+            "redirect_url": "/cpp/windows/modulebase-class#tilde-modulebase",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/modulebase-decrementobjectcount-method.md",
+            "redirect_url": "/cpp/windows/modulebase-class#decrementobjectcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/modulebase-incrementobjectcount-method.md",
+            "redirect_url": "/cpp/windows/modulebase-class#incrementobjectcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/modulebase-modulebase-constructor.md",
+            "redirect_url": "/cpp/windows/modulebase-class#modulebase",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/runtimeclass-tilde-runtimeclass-destructor.md",
             "redirect_url": "/cpp/windows/runtimeclass-class#tilde-runtimeclass",
             "redirect_document_id": false
@@ -6756,6 +6821,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/runtimeclassbaset-asiid-method.md",
+            "redirect_url": "/cpp/windows/runtimeclassbaset-structure#asiid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/runtimeclassbaset-getimplementediids-method.md",
+            "redirect_url": "/cpp/windows/runtimeclassbaset-structure#getimplementediids",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/simpleactivationfactory-activateinstance-method.md",
             "redirect_url": "/cpp/windows/simpleactivationfactory-class#activateinstance",
             "redirect_document_id": false
@@ -6773,6 +6848,16 @@
         {
             "source_path": "docs/windows/simpleclassfactory-createinstance-method.md",
             "redirect_url": "/cpp/windows/simpleclassfactory-class#createinstance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/verifyinheritancehelper-verify-method.md",
+            "redirect_url": "/cpp/windows/verifyinheritancehelper-structure#verify",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/verifyinterfacehelper-verify-method.md",
+            "redirect_url": "/cpp/windows/verifyinterfacehelper-structure#verify",
             "redirect_document_id": false
         },
         {
@@ -6813,6 +6898,36 @@
         {
             "source_path": "docs/windows/walkthrough-creating-a-basic-windows-runtime-component-using-wrl.md",
             "redirect_url": "/cpp/windows/windows-runtime-cpp-template-library-wrl",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-tilde-weakreference-destructor.md",
+            "redirect_url": "/cpp/windows/weakreference-class1#tilde-weakreference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-decrementstrongreference-method.md",
+            "redirect_url": "/cpp/windows/weakreference-class1#decrementstrongreference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-incrementstrongreference-method.md",
+            "redirect_url": "/cpp/windows/weakreference-class1#incrementstrongreference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-resolve-method.md",
+            "redirect_url": "/cpp/windows/weakreference-class1#resolve",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-setunknown-method.md",
+            "redirect_url": "/cpp/windows/weakreference-class1#setunknown",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-weakreference-constructor.md",
+            "redirect_url": "/cpp/windows/weakreference-class1#weakreference",
             "redirect_document_id": false
         }
     ]
