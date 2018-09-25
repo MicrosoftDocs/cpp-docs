@@ -120,7 +120,7 @@ An understanding of the fundamentals of the C++ language.
 
    To browse for the directory path, open the property value drop-down list, and then choose **Edit**. In the **Additional Include Directories** dialog box, in the text box, select a blank line and then choose the ellipsis button (**...**) at the end of the line. In the **Select Directory** dialog box, select the **MathFuncsLib** directory and then choose **Select Folder** button to save your selection and close the dialog box. In the **Additional Include Directories** dialog box, choose the **OK** button, and then in the **Property Pages** dialog box, choose the **OK** button to save your changes to the project.
 
-1. You can now use the `MyMathFuncs` class in this app. Replace the contents of `MyExecRefsLib.cpp` with this code:
+1. You can now use the `MyMathFuncs` class in this app by including the `#include "MathFuncsLib.h"` header in your code. Replace the contents of `MyExecRefsLib.cpp` with this code:
 
    [!code-cpp[NVC_Walkthrough_Create_Static_Lib#120](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_3.cpp)]
 
