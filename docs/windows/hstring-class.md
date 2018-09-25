@@ -44,6 +44,7 @@ Name                                     | Description
 [HString::Detach](#detach)               | Disassociates the specified `HString` object from its underlying value.
 [HString::Get](#get)                     | Retrieves the value of the underlying HSTRING handle.
 [HString::GetAddressOf](#getaddressof)   | Retrieves a pointer to the underlying HSTRING handle.
+[HString::IsValid](#isvalid)             | Indicates whether the current `HString` object is valid.
 [HString::MakeReference](#makereference) | Creates an `HStringReference` object from a specified string parameter.
 [HString::Release](#release)             | Deletes the underlying string value and intializes the current `HString` object to an empty value.
 [HString::Set](#set)                     | Sets the value of the current `HString` object to the specified wide-character string or `HString` parameter.
@@ -172,7 +173,7 @@ The first constructor initializes a new `HString` object that is empty.
 
 The second constructor initializes a new `HString` object to the value of the existing *other* parameter, and then destroys the *other* parameter.
 
-## <a name="IsValid"></a>HString::IsValid
+## <a name="isvalid"></a>HString::IsValid
 
 Indicates whether the current `HString` object is empty or not.
 
