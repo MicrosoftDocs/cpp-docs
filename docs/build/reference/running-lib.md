@@ -1,7 +1,7 @@
 ---
 title: "Running LIB | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/05/2018"
+ms.date: "09/24/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLibrarianTool.TargetMachine", "Lib", "VC.Project.VCLibrarianTool.PrintProgress", "VC.Project.VCLibrarianTool.SuppressStartupBanner"]
@@ -49,7 +49,7 @@ For more information about /ERRORREPORT, see [/errorReport (Report Internal Comp
 
 > **/LTCG**
 
-Causes the library to be built using link-time code generation.  For more information, see [/LTCG](../../build/reference/ltcg-link-time-code-generation.md).
+Causes the library to include a list of all public symbols, which can be viewed by running **dumpbin /linkermember**. Note that LIB.exe does not support [/LTCG](../../build/reference/ltcg-link-time-code-generation.md) options such as /LTCG:PGI, /LTCG:PGO, and so on.
 
 > **/MACHINE**
 
