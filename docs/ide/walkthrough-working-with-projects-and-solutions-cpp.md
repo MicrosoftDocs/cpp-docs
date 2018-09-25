@@ -35,6 +35,9 @@ To create a project, first choose a project-type template. For each project type
 
 1. In the list of installed templates in the center pane, select **Windows Console Application**.
 
+   > [!NOTE]
+   > In previous versions of Visual Studio the installed template is called **Win32 Console Application**.
+
 1. Enter a name for the project in the **Name** box. For this example, enter *Game*.
 
    You can accept the default location in the **Location** drop-down list, enter a different location, or choose the **Browse** button to browse to a directory where you want to save the project.

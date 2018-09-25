@@ -31,7 +31,7 @@ This walkthrough shows how to use Windows Installer to deploy your application. 
 
 1. When you are connected to the Internet, in Visual Studio, choose **Tools** > **Extensions and Updates**.
 
-1. Under **Extensions and Updates**, select the **Online** tab and type *Microsoft Visual Studio Installer Projects* in the search box. Hit **Enter**, select **Microsoft Visual Studio 2017 Installer Projects**, and click **Download**.
+1. Under **Extensions and Updates**, select the **Online** tab and type *Microsoft Visual Studio Installer Projects* in the search box. Hit **Enter**, select **Microsoft Visual Studio \<version> Installer Projects**, and click **Download**.
 
 1. Choose to install the extension, then restart Visual Studio.
 
