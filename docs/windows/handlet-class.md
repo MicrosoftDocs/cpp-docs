@@ -208,7 +208,7 @@ bool IsValid() const;
 
 `true` if the `HandleT` represents a handle; otherwise, `false`.
 
-## <a name="operator-assign"></a>HandleT::operator= Operator
+## <a name="operator-assign"></a>HandleT::operator=
 
 Moves the value of the specified `HandleT` object to the current `HandleT` object.
 
