@@ -13,13 +13,13 @@ ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Debugging a Project (C++)
 
-In this walkthrough, you modify the program to fix the problem that you discovered when you tested the project.
+In this walkthrough, you modify the program to fix the problem that you found when you tested the project.
 
 ## Prerequisites
 
 - This walkthrough assumes that you understand the fundamentals of the C++ language.
 
-- It also assumes that you have completed the earlier related walkthroughs that are listed in [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
+- It also assumes that you've completed the earlier related walkthroughs that are listed in [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
 
 ### To fix a program that has a bug
 
@@ -31,11 +31,11 @@ In this walkthrough, you modify the program to fix the problem that you discover
 
    Open the shortcut menu for the **~Cardgame(void)** destructor and then choose **Go To Definition**.
 
-1. To decrease the `totalParticipants` when a Cardgame terminates, add the following code between the opening and closing braces of the `Cardgame::~Cardgame` destructor.
+1. To decrease the `totalParticipants` when a Cardgame ends, add the following code between the opening and closing braces of the `Cardgame::~Cardgame` destructor.
 
      [!code-cpp[NVC_Walkthrough_Debugging_A_Project#110](../ide/codesnippet/CPP/walkthrough-debugging-a-project-cpp_1.cpp)]
 
-1. The Cardgame.cpp file should resemble this after you change it:
+1. The Cardgame.cpp file should resemble the code below after you change it:
 
      [!code-cpp[NVC_Walkthrough_Debugging_A_Project#111](../ide/codesnippet/CPP/walkthrough-debugging-a-project-cpp_2.cpp)]
 

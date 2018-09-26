@@ -106,17 +106,17 @@ The original Scribble application lets the user select pen widths from a dialog 
 
 1. Click the second combo box. Change **Caption** to `Thick Pen`, **ID** to `ID_PEN_THICK_WIDTH`, **Type** to `Drop List`, **Data** to `5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;`, and **Text** to `5`.
 
-1. The new combo boxes do not correspond to any existing menu items. Therefore, you must create a menu item for every pen option.
+1. The new combo boxes don't correspond to any existing menu items, so you must create a menu item for every pen option.
 
    1. In the **Resource View** window, open the **IDR_SCRIBBTYPE** menu resource.
 
    1. Click **Pen** to open the pen menu. Then click **Type Here** and type `Thi&n Pen`.
 
-   1. Right-click the text that you just typed to open the **Properties** window, and then change the ID property to `ID_PEN_THIN_WIDTH`.
+   1. Right-click the text that you typed to open the **Properties** window, and then change the ID property to `ID_PEN_THIN_WIDTH`.
 
-   1. You must also create an event handler for every pen menu item. Right-click the **Thi&n Pen** menu item that you just created and then click **Add Event Handler**. The **Event Handler Wizard** is displayed.
+   1. Create an event handler for every pen menu item. Right-click the **Thi&n Pen** menu item that you created and then click **Add Event Handler**. The **Event Handler Wizard** is displayed.
 
-   1. In the **Class list** box in the wizard, select **CScribbleDoc** and then click **Add and Edit**. This creates an event handler named `CScribbleDoc::OnPenThinWidth`.
+   1. In the **Class list** box in the wizard, select **CScribbleDoc** and then click **Add and Edit**. The command creates an event handler named `CScribbleDoc::OnPenThinWidth`.
 
    1. Add the following code to `CScribbleDoc::OnPenThinWidth`.
 
@@ -146,11 +146,11 @@ The original Scribble application lets the user select pen widths from a dialog 
 
    1. Click **Pen** to open the pen menu. Then click **Type Here** and type `Thic&k Pen`.
 
-   1. Right-click the text that you just typed to display the **Properties** window. Change the ID property to `ID_PEN_THICK_WIDTH`.
+   1. Right-click the text that you typed to display the **Properties** window. Change the ID property to `ID_PEN_THICK_WIDTH`.
 
-   1. Right-click the **Thick Pen** menu item that you just created and then click **Add Event Handler**. The **Event Handler Wizard** is displayed.
+   1. Right-click the **Thick Pen** menu item that you created and then click **Add Event Handler**. The **Event Handler Wizard** is displayed.
 
-   1. In the **Class list** box of the wizard, select **CScribbleDoc** and then click **Add and Edit**. This creates an event handler named `CScribbleDoc::OnPenThickWidth`.
+   1. In the **Class list** box of the wizard, select **CScribbleDoc** and then click **Add and Edit**. The command creates an event handler named `CScribbleDoc::OnPenThickWidth`.
 
    1. Add the following code to `CScribbleDoc::OnPenThickWidth`.
 
@@ -180,17 +180,17 @@ Next, add a [CMFCRibbonColorButton](../mfc/reference/cmfcribboncolorbutton-class
 
 ### To add a color button to the Pen panel
 
-1. Before you add the color button, create a menu item for it. In the **Resource View** window, open the **IDR_SCRIBBTYPE** menu resource. Click the **Pen** menu item to open the pen menu. Then click **Type Here** and type `&Color`. Right-click the text that you just typed to display the **Properties** window. Change the ID to `ID_PEN_COLOR`.
+1. Before you add the color button, create a menu item for it. In the **Resource View** window, open the **IDR_SCRIBBTYPE** menu resource. Click the **Pen** menu item to open the pen menu. Then click **Type Here** and type `&Color`. Right-click the text that you typed to display the **Properties** window. Change the ID to `ID_PEN_COLOR`.
 
 1. Now add the color button. From the **Toolbox**, drag a **Color Button** to the **Pen** panel.
 
 1. Click the color button. Change **Caption** to `Color`, **ID** to `ID_PEN_COLOR`, **Simple Look** to `True`, **Large Image Index** to `1`, and **Split Mode** to `False`.
 
-1. Save the changes, and then build and run the application. The new color button should be displayed on the **Pen** panel. However, it cannot be used because it does not yet have an event handler. The next steps show how to add an event handler for the color button.
+1. Save the changes, and then build and run the application. The new color button should be displayed on the **Pen** panel. However, it can't be used because it doesn't yet have an event handler. The next steps show how to add an event handler for the color button.
 
 ##  <a name="addcolormember"></a> Adding a Color Member to the Document Class
 
-Because the original Scribble application does not have color pens, you must write an implementation for them. To store the pen color of the document, add a new member to the document class, `CscribbleDoc`.
+Because the original Scribble application doesn't have color pens, you must write an implementation for them. To store the pen color of the document, add a new member to the document class, `CscribbleDoc`.
 
 ### To add a color member to the document class
 
@@ -201,7 +201,7 @@ Because the original Scribble application does not have color pens, you must wri
    COLORREF m_penColor;
    ```
 
-1. Every document contains a list of stokes that the user has already drawn. Every stroke is defined by a `CStroke` object. The `CStroke` class does not include information about pen color. Therefore, you must modify the class. In scribdoc.h, in the `CStroke` class, add the following lines of code after the definition of the `m_nPenWidth` data member.
+1. Every document contains a list of stokes that the user has already drawn. Every stroke is defined by a `CStroke` object. The `CStroke` class doesn't include information about pen color, so you must modify the class. In scribdoc.h, in the `CStroke` class, add the following lines of code after the definition of the `m_nPenWidth` data member.
 
    ```cpp
    // Pen color for the stroke
@@ -257,7 +257,7 @@ Because the original Scribble application does not have color pens, you must wri
 
    1. Right-click the **Color** menu item and click **Add Event Handler**. The **Event Handler Wizard** appears.
 
-   1. In the **Class list** box in the wizard, select **CScribbleDoc** and then click the **Add and Edit** button. This creates the `CScribbleDoc::OnPenColor` event handler stub.
+   1. In the **Class list** box in the wizard, select **CScribbleDoc** and then click the **Add and Edit** button. The command creates the `CScribbleDoc::OnPenColor` event handler stub.
 
 1. Replace the stub for the `CScribbleDoc::OnPenColor` event handler with the following code.
 
@@ -277,7 +277,7 @@ Because the original Scribble application does not have color pens, you must wri
    }
    ```
 
-1. Save the changes and then build and run the application. You should be able to press the color button and change the pen's color.
+1. Save the changes and then build and run the application. You can now press the color button and change the pen's color.
 
 ##  <a name="initpensave"></a> Initializing Pens and Saving Preferences
 
@@ -333,7 +333,7 @@ Next, initialize the color and width of the pens. Finally, save and load a color
 
 ## Conclusion
 
-You have updated the MFC Scribble application. Use this walkthrough as a guide when you modify your existing applications.
+You've updated the MFC Scribble application. Use this walkthrough as a guide when you modify your existing applications.
 
 ## See Also
 

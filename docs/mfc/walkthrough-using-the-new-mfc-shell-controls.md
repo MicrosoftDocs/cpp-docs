@@ -13,11 +13,11 @@ ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Using the New MFC Shell Controls
 
-In this walkthrough, you will create an application that resembles File Explorer. You will create a window that contains two panes. The left pane will contain a [CMFCShellTreeCtrl](../mfc/reference/cmfcshelltreectrl-class.md) object that displays your Desktop in a hierarchical view. The right pane will contain a [CMFCShellListCtrl](../mfc/reference/cmfcshelllistctrl-class.md) that shows the files in the folder that is selected in the left pane.
+In this walkthrough, you'll create an application that resembles File Explorer. You'll create a window that has two panes. The left pane will hold a [CMFCShellTreeCtrl](../mfc/reference/cmfcshelltreectrl-class.md) object that displays your Desktop in a hierarchical view. The right pane will hold a [CMFCShellListCtrl](../mfc/reference/cmfcshelllistctrl-class.md) that shows the files in the folder that is selected in the left pane.
 
 ## Prerequisites
 
-This walkthrough assumes that you have set up Visual Studio to use **General Development Settings**. If you are using a different development setting, some Visual Studio windows that we use in this walkthrough might not be displayed by default.
+This walkthrough assumes that you have set up Visual Studio to use **General Development Settings**. If you're using a different development setting, some Visual Studio windows that we use in this walkthrough might not be displayed by default.
 
 ### To create a new MFC application by using the MFC Application Wizard
 
@@ -29,15 +29,15 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
 
     1. On the **Compound Document Support** pane, select **None**.
 
-    1. Do not make any changes to the **Document Template Strings** pane.
+    1. Don't make any changes to the **Document Template Strings** pane.
 
-    1. On the **Database Support** pane (Visual Studio 2015 and older), select **None** because this application does not use a database. 
+    1. On the **Database Support** pane (Visual Studio 2015 and older), select **None** because the application doesn't use a database. 
 
-    1. On the **User Interface Features** pane, make sure that the **Use a menu bar and toolbar** option is selected. Leave all other options as they are. 
+    1. On the **User Interface Features** pane, make sure the **Use a menu bar and toolbar** option is selected. Leave all other options as they are. 
 
-    1. On the **Advanced Features** pane, under **Advanced features**, select only **ActiveX controls** and **Common Control Manifest**. Under **Advanced frame panes**, select only the **Navigation pane** option. This will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded. 
+    1. On the **Advanced Features** pane, under **Advanced features**, select only **ActiveX controls** and **Common Control Manifest**. Under **Advanced frame panes**, select only the **Navigation pane** option. It will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded. 
 
-    1. We are not going to make any changes to the **Generated Classes** pane. Therefore, click **Finish** to create your new MFC project.
+    1. We aren't going to make any changes to the **Generated Classes** pane, so click **Finish** to create your new MFC project.
 
 1. Verify that the application was created successfully by building and running it. To build the application, from the **Build** menu select **Build Solution**. If the application builds successfully, run the application by selecting **Start Debugging** from the **Debug** menu.
 
@@ -45,7 +45,7 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
 
 ### To add the shell list control to the document view
 
-1. In this section, you will add an instance of `CMFCShellListCtrl` to the view that the wizard created. Open the view header file by double-clicking **MFCShellControlsView.h** in the **Solution Explorer**.
+1. In this section, you'll add an instance of `CMFCShellListCtrl` to the view that the wizard created. Open the view header file by double-clicking **MFCShellControlsView.h** in the **Solution Explorer**.
 
    Locate the `#pragma once` directive near the top of the header file. Immediately underneath it add this code to include the header file for `CMFCShellListCtrl`:
 
@@ -59,14 +59,14 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
    // Generated message map functions
    ```
 
-   Immediately above that comment add this code:
+   Immediately above that comment, add this code:
 
    ```cpp
    private:
    CMFCShellListCtrl m_wndList;
    ```
 
-1. The **MFC Application Wizard** already created a `CMFCShellTreeCtrl` object in the `CMainFrame` class, but it is a protected member. We will access this object later. Therefore, create an accessor for it now. Open the MainFrm.h header file by double-clicking it in the **Solution Explorer**. Locate the following comment:
+1. The **MFC Application Wizard** already created a `CMFCShellTreeCtrl` object in the `CMainFrame` class, but it's a protected member. We'll access the object later, so create an accessor for it now. Open the MainFrm.h header file by double-clicking it in the **Solution Explorer**. Locate the following comment:
 
    ```cpp
    // Attributes
@@ -90,9 +90,9 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
 
 1. Now we update the `CMFCShellControlsView` class to handle the `WM_CREATE` windows message. Open the **Class View** window and select the `CMFCShellControlsView` class. Right-click and select **Properties**.
 
-    Next, in the **Properties** window, click the **Messages** icon. Scroll down until you find the `WM_CREATE` message. From the drop down list next to `WM_CREATE`, select **\<Add> OnCreate**. This creates a message handler for us and automatically updates the MFC message map.
+    Next, in the **Properties** window, click the **Messages** icon. Scroll down until you find the `WM_CREATE` message. From the drop-down list next to `WM_CREATE`, select **\<Add> OnCreate**. The command creates a message handler for us and automatically updates the MFC message map.
 
-   In the `OnCreate` method we will now create our `CMFCShellListCtrl` object. Find the `OnCreate` method definition in the MFCShellControlsView.cpp source file, and replace its implementation with the following code:
+   In the `OnCreate` method, we'll now create our `CMFCShellListCtrl` object. Find the `OnCreate` method definition in the MFCShellControlsView.cpp source file, and replace its implementation with the following code:
 
     ```cpp
     int CMFCShellControlsView::OnCreate(LPCREATESTRUCT lpCreateStruct)
@@ -109,7 +109,7 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
     }
     ```
 
-1. Repeat the previous step but for the `WM_SIZE` message. This will cause your applications view to be redrawn whenever a user changes the size of the application window. Replace the definition for the `OnSize` method with the following code:
+1. Repeat the previous step but for the `WM_SIZE` message. It will cause your applications view to be redrawn whenever a user changes the size of the application window. Replace the definition for the `OnSize` method with the following code:
 
     ```cpp
     void CMFCShellControlsView::OnSize(UINT nType, int cx, int cy)
@@ -121,7 +121,7 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
     }
     ```
 
-1. The last step is to connect the `CMFCShellTreeCtrl` and `CMFCShellListCtrl` objects by using the [CMFCShellTreeCtrl::SetRelatedList](../mfc/reference/cmfcshelltreectrl-class.md#setrelatedlist) method. After you call this method, the `CMFCShellListCtrl` will automatically display the contents of the item selected in the `CMFCShellTreeCtrl`. We will do this in the `OnActivateView` method, which is overridden from [CView::OnActivateView](../mfc/reference/cview-class.md#onactivateview).
+1. The last step is to connect the `CMFCShellTreeCtrl` and `CMFCShellListCtrl` objects by using the [CMFCShellTreeCtrl::SetRelatedList](../mfc/reference/cmfcshelltreectrl-class.md#setrelatedlist) method. After you call `CMFCShellTreeCtrl::SetRelatedList`, the `CMFCShellListCtrl` will automatically display the contents of the item selected in the `CMFCShellTreeCtrl`. We connect the objects in the `OnActivateView` method, which is overridden from [CView::OnActivateView](../mfc/reference/cview-class.md#onactivateview).
 
    In the MFCShellControlsView.h header file, inside the `CMFCShellControlsView` class declaration, add the following method declaration:
 
@@ -132,7 +132,7 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
         CView* pDeactiveView);
     ```
 
-   Next, add the definition for this method to the MFCShellControlsView.cpp source file:
+   Next, add the definition for the method to the MFCShellControlsView.cpp source file:
 
     ```cpp
     void CMFCShellControlsView::OnActivateView(BOOL bActivate,
@@ -150,7 +150,7 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
     }
     ```
 
-   Because we are calling methods from the `CMainFrame` class, we must add an `#include` directive at the top of the MFCShellControlsView.cpp source file:
+   Because we're calling methods from the `CMainFrame` class, we must add an `#include` directive at the top of the MFCShellControlsView.cpp source file:
 
     ```cpp
     #include "MainFrm.h"
@@ -160,11 +160,11 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
 
    You should now see the details for the item selected in the `CMFCShellTreeCtrl` in the view pane. When you click a node in the `CMFCShellTreeCtrl`, the `CMFCShellListCtrl` will be automatically updated. Likewise, if you double-click a folder in the `CMFCShellListCtrl`, the `CMFCShellTreeCtrl` should be automatically updated.
 
-   Right click any item in the tree control or in the list control. Note that you get the same context menu as if you were using the real **File Explorer**.
+   Right-click any item in the tree control or in the list control. You get the same context menu as if you were using the real **File Explorer**.
 
 ## Next Steps
 
-- The wizard created an Outlook bar with both a **Folders** pane and a **Calendar** pane. It probably does not make sense to have a **Calendar** pane in an **Explorer** window. Therefore, remove that pane now.
+- The wizard created an Outlook bar with both a **Folders** pane and a **Calendar** pane. It probably doesn't make sense to have a **Calendar** pane in an **Explorer** window, so remove that pane now.
 
 - The `CMFCShellListCtrl` supports viewing files in different modes, such as **Large Icons**, **Small Icons**, **List**, and **Details**. Update your application to implement this functionality. Hint: see [Visual C++ Samples](../visual-cpp-samples.md).
 
