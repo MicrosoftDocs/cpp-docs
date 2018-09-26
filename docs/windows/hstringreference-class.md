@@ -180,10 +180,6 @@ The second parameter to compare.  *rhs* can be an `HStringReference` object or a
 Indicates whether the two parameters are not equal.
 
 ```cpp
-inline bool operator==(
-               const HStringReference& lhs,
-               const HSTRING& rhs) throw()
-
 inline bool operator!=(
                const HStringReference& lhs,
                const HStringReference& rhs) throw()
