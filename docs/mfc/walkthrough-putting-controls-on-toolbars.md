@@ -13,17 +13,17 @@ ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Putting Controls On Toolbars
 
-This topic describes how to add a toolbar button that contains a Windows control to a toolbar. In MFC, a toolbar button must be a [CMFCToolBarButton Class](../mfc/reference/cmfctoolbarbutton-class.md)-derived class, for example [CMFCToolBarComboBoxButton Class](../mfc/reference/cmfctoolbarcomboboxbutton-class.md), [CMFCToolBarEditBoxButton Class](../mfc/reference/cmfctoolbareditboxbutton-class.md), [CMFCDropDownToolbarButton Class](../mfc/reference/cmfcdropdowntoolbarbutton-class.md), or [CMFCToolBarMenuButton Class](../mfc/reference/cmfctoolbarmenubutton-class.md).
+This article describes how to add a toolbar button that contains a Windows control to a toolbar. In MFC, a toolbar button must be a [CMFCToolBarButton Class](../mfc/reference/cmfctoolbarbutton-class.md)-derived class, for example [CMFCToolBarComboBoxButton Class](../mfc/reference/cmfctoolbarcomboboxbutton-class.md), [CMFCToolBarEditBoxButton Class](../mfc/reference/cmfctoolbareditboxbutton-class.md), [CMFCDropDownToolbarButton Class](../mfc/reference/cmfcdropdowntoolbarbutton-class.md), or [CMFCToolBarMenuButton Class](../mfc/reference/cmfctoolbarmenubutton-class.md).
 
 ## Adding Controls to Toolbars
 
 To add a control to a toolbar, follow these steps:
 
-1. Reserve a dummy resource ID for the button in the parent toolbar resource. For more information about how to create buttons by using the **Toolbar Editor** in Visual Studio, see the [Toolbar Editor](../windows/toolbar-editor.md) topic.
+1. Reserve a dummy resource ID for the button in the parent toolbar resource. For more information about how to create buttons by using the **Toolbar Editor** in Visual Studio, see the [Toolbar Editor](../windows/toolbar-editor.md) article.
 
 1. Reserve a toolbar image (button icon) for the button in all bitmaps of the parent toolbar.
 
-1. In the message handler that processes the `AFX_WM_RESETTOOLBAR` message, do the following:
+1. In the message handler that processes the `AFX_WM_RESETTOOLBAR` message, do the following steps:
 
    1. Construct the button control by using a `CMFCToolbarButton`-derived class.
 
@@ -34,13 +34,13 @@ To add a control to a toolbar, follow these steps:
 
 ## Toolbar Controls and Customization
 
-The **Commands** tab of the **Customize** dialog box contains a list of commands that are available in the application. By default, the **Customize** dialog box processes the application menus and builds a list of standard toolbar buttons in each menu category. To retain the extended functionality that the toolbar controls provide, you must replace the standard toolbar button with the custom control in the **Customize** dialog box.
+The **Commands** tab of the **Customize** dialog box contains a list of commands that are available in the application. By default, the **Customize** dialog box processes the application menus and builds a list of standard toolbar buttons in each menu category. To keep the extended functionality that the toolbar controls provide, you must replace the standard toolbar button with the custom control in the **Customize** dialog box.
 
 When you enable customization, you create the **Customize** dialog box in the customization handler `OnViewCustomize` by using the [CMFCToolBarsCustomizeDialog Class](../mfc/reference/cmfctoolbarscustomizedialog-class.md) class. Before you display the **Customize** dialog box by calling [CMFCToolBarsCustomizeDialog::Create](../mfc/reference/cmfctoolbarscustomizedialog-class.md#create), call [CMFCToolBarsCustomizeDialog::ReplaceButton](../mfc/reference/cmfctoolbarscustomizedialog-class.md#replacebutton) to replace the standard button with the new control.
 
 ## Example: Creating a Find Combo Box
 
-This section describes how to create a **Find** combo box control that appears on a toolbar and contains recently-used search strings. The user can type a string in the control and then press the enter key to search a document, or press the escape key to return the focus to the main frame. This example assumes that the document is displayed in a [CEditView Class](../mfc/reference/ceditview-class.md)-derived view.
+This section describes how to create a **Find** combo box control that appears on a toolbar and contains recent-used search strings. The user can type a string in the control and then press the enter key to search a document, or press the escape key to return the focus to the main frame. This example assumes that the document is displayed in a [CEditView Class](../mfc/reference/ceditview-class.md)-derived view.
 
 ### Creating the Find Control
 
@@ -61,13 +61,13 @@ First, create the **Find** combo box control:
 
 1. In the `CFindComboBox` class, override the `PreTranslateMessage` virtual method. This method will enable the combo box to process the [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) message. If the user hits the escape key (`VK_ESCAPE`), return the focus to the main frame window. If the user hits the Enter key (`VK_ENTER`), post to the main frame window a `WM_COMMAND` message that contains the `ID_EDIT_FIND_COMBO` command ID.
 
-1. Create a class for the **Find** combo box button, derived from [CMFCToolBarComboBoxButton Class](../mfc/reference/cmfctoolbarcomboboxbutton-class.md). In this example, it is named `CFindComboButton`.
+1. Create a class for the **Find** combo box button, derived from [CMFCToolBarComboBoxButton Class](../mfc/reference/cmfctoolbarcomboboxbutton-class.md). In this example, it's named `CFindComboButton`.
 
 1. The constructor of `CMFCToolbarComboBoxButton` takes three parameters: the command ID of the button, the button image index, and the style of the combo box. Set these parameters as follows:
 
    1. Pass the `ID_EDIT_FIND_COMBO` as the command ID.
 
-   1. Use [CCommandManager::GetCmdImage](reference/internal-classes.md) with `ID_EDIT_FIND` to obtain the image index.
+   1. Use [CCommandManager::GetCmdImage](reference/internal-classes.md) with `ID_EDIT_FIND` to get the image index.
 
    1. For a list of available combo box styles, see [Combo-Box Styles](../mfc/reference/styles-used-by-mfc.md#combo-box-styles).
 

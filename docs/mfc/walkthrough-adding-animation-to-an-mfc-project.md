@@ -89,11 +89,11 @@ To complete this walkthrough, you must have Visual Studio.
 
 1. In the **MFC Class Wizard**, click **OK**.
 
-1. Save MFCAnimationWalkthroughView.cpp, which is open in the editor, but do not close it.
+1. Save MFCAnimationWalkthroughView.cpp, which is open in the editor, but don't close it.
 
 ### To add an animated object to the project
 
-1. In Solution Explorer, double-click MFCAnimationWalkthroughView.h to open it for modification. Just before the definition of the `CMFCAnimationWalkthroughView` class, add the following code to create a custom animation controller that will handle scheduling conflicts with the animation object.
+1. In **Solution Explorer**, double-click MFCAnimationWalkthroughView.h to open it for modification. Just before the definition of the `CMFCAnimationWalkthroughView` class, add the following code to create a custom animation controller that will handle scheduling conflicts with the animation object.
 
     ```cpp
     class CCustomAnimationController : public CAnimationController
@@ -273,7 +273,7 @@ To complete this walkthrough, you must have Visual Studio.
 
 1. On the **Messages** tab, in the **Messages** box, select **WM_ERASEBKGND**, click **Add Handler**, and then click **OK**.
 
-1. In MFCAnimationWalkthroughView.cpp, replace the implementation of `OnEraseBkgnd` with the following code to reduce flickering in the animated object when it is redrawn.
+1. In MFCAnimationWalkthroughView.cpp, replace the implementation of `OnEraseBkgnd` with the following code to reduce flickering in the animated object when it's redrawn.
 
     ```cpp
     BOOL CMFCAnimationWalkthroughView::OnEraseBkgnd(CDC* /*pDC*/)
