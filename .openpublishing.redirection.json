@@ -6706,6 +6706,41 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/hstringreference-hstringreference-constructor.md",
+            "redirect_url": "/cpp/windows/hstringreference-class#hstringreference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstringreference-copyto-method.md",
+            "redirect_url": "/cpp/windows/hstringreference-class#copyto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstringreference-get-method.md",
+            "redirect_url": "/cpp/windows/hstringreference-class#get",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstringreference-operator-assign-operator.md",
+            "redirect_url": "/cpp/windows/hstringreference-class#operator-assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstringreference-operator-less-than-operator.md",
+            "redirect_url": "/cpp/windows/hstringreference-class#operator-less-than",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstringreference-operator-equality-operator.md",
+            "redirect_url": "/cpp/windows/hstringreference-class#operator-equality",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstringreference-operator-inequality-operator.md",
+            "redirect_url": "/cpp/windows/hstringreference-class#operator-inequality",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/implements-cancastto-method.md",
             "redirect_url": "/cpp/windows/implements-structure#cancastto",
             "redirect_document_id": false
@@ -7118,6 +7153,41 @@
         {
             "source_path": "docs/windows/simpleclassfactory-createinstance-method.md",
             "redirect_url": "/cpp/windows/simpleclassfactory-class#createinstance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlock-tilde-srwlock-destructor.md",
+            "redirect_url": "/cpp/windows/srwlock-class#tilde-srwlock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlock-lockexclusive-method.md",
+            "redirect_url": "/cpp/windows/srwlock-class#lockexclusive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlock-lockshared-method.md",
+            "redirect_url": "/cpp/windows/srwlock-class#lockshared",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlock-srwlock-constructor.md",
+            "redirect_url": "/cpp/windows/srwlock-class#srwlock-constructor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlock-srwlock-data-member.md",
+            "redirect_url": "/cpp/windows/srwlock-class#srwlock-data-member",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlock-trylockexclusive-method.md",
+            "redirect_url": "/cpp/windows/srwlock-class#trylockexclusive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlock-trylockshared-method.md",
+            "redirect_url": "/cpp/windows/srwlock-class#trylockshared",
             "redirect_document_id": false
         },
         {
