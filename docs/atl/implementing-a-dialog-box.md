@@ -17,7 +17,7 @@ There are two ways to add a dialog box to your ATL project: use the ATL Dialog W
 
 ## Adding a Dialog Box with the ATL Dialog Wizard
 
-In the [Add Class dialog box](../ide/add-class-dialog-box.md), select the ATL Dialog object to add a dialog box to your ATL project. Fill in the ATL Dialog Wizard as appropriate and click **Finish**. The wizard adds a class derived from [CAxDialogImpl](../atl/reference/caxdialogimpl-class.md) to your project. Open the Resource View from the **View** menu, locate your dialog, and double-click it to open it in the resource editor.
+In the [Add Class dialog box](../ide/add-class-dialog-box.md), select the ATL Dialog object to add a dialog box to your ATL project. Fill in the ATL Dialog Wizard as appropriate and click **Finish**. The wizard adds a class derived from [CAxDialogImpl](../atl/reference/caxdialogimpl-class.md) to your project. Open **Resource View** from the **View** menu, locate your dialog, and double-click it to open it in the resource editor.
 
 > [!NOTE]
 >  If your dialog box is derived from `CAxDialogImpl`, it can host both ActiveX and Windows controls. If you don't want the overhead of ActiveX control support in your dialog box class, use [CSimpleDialog](../atl/reference/csimpledialog-class.md) or [CDialogImpl](../atl/reference/cdialogimpl-class.md) instead.
