@@ -2,7 +2,7 @@
 title: "-validate-charset (Validate for compatible characters) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
+ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 f1_keywords: ["/validate-charset", "validate-charset"]
 dev_langs: ["C++"]

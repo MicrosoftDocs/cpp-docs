@@ -19,7 +19,7 @@ Describes how to deploy a Visual C++ application by copying files to its folder.
   
 - A computer that has Visual Studio installed.  
   
-- Another computer that does not have the Visual C++ libraries.  
+- Another computer that doesn't have the Visual C++ libraries.  
   
 ### To deploy an application to an application-local folder  
   
@@ -27,7 +27,7 @@ Describes how to deploy a Visual C++ application by copying files to its folder.
   
 1. Copy the appropriate MFC and C Run-Time (CRT) library files from the Visual Studio installation directory in the \\VC\\redist\\*version* folder, and then paste them in the \Release\ folder of your MFC project. For more information about other files that you might have to copy, see [Determining Which DLLs to Redistribute](determining-which-dlls-to-redistribute.md).  
   
-1. Run the MFC application on a second computer that does not have the Visual C++ libraries.  
+1. Run the MFC application on a second computer that doesn't have the Visual C++ libraries.  
   
    1. Copy the contents of the \Release\ folder and paste them in the application folder on the second computer.  
   

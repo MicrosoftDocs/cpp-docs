@@ -6436,6 +6436,36 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/criticalsection-tilde-criticalsection-destructor.md",
+            "redirect_url": "/cpp/windows/criticalsection-class#tilde-criticalsection",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/criticalsection-criticalsection-constructor.md",
+            "redirect_url": "/cpp/windows/criticalsection-class#criticalsection",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/criticalsection-cs-data-member.md",
+            "redirect_url": "/cpp/windows/criticalsection-class#cs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/criticalsection-isvalid-method.md",
+            "redirect_url": "/cpp/windows/criticalsection-class#isvalid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/criticalsection-lock-method.md",
+            "redirect_url": "/cpp/windows/criticalsection-class#lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/criticalsection-trylock-method.md",
+            "redirect_url": "/cpp/windows/criticalsection-class#trylock",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/deferrableeventargs-getdeferral-method.md",
             "redirect_url": "/cpp/windows/deferrableeventargs-class#getdeferral",
             "redirect_document_id": false
@@ -6443,6 +6473,16 @@
         {
             "source_path": "docs/windows/deferrableeventargs-invokeallfinished-method.md",
             "redirect_url": "/cpp/windows/deferrableeventargs-class#invokeallfinished",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/event-event-constructor-windows-runtime-cpp-template-library.md",
+            "redirect_url": "/cpp/windows/event-class-windows-runtime-cpp-template-library#event",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/event-operator-assign-operator.md",
+            "redirect_url": "/cpp/windows/event-class-windows-runtime-cpp-template-library#operator-assign",
             "redirect_document_id": false
         },
         {
@@ -6483,6 +6523,16 @@
         {
             "source_path": "docs/windows/eventsource-targetspointerlock-data-member.md",
             "redirect_url": "/cpp/windows/eventsource-class#targetspointerlock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/factorycache-cookie-data-member.md",
+            "redirect_url": "/cpp/windows/factorycache-structure#cookie",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/factorycache-factory-data-member.md",
+            "redirect_url": "/cpp/windows/factorycache-structure#factory",
             "redirect_document_id": false
         },
         {
@@ -6531,6 +6581,131 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/handlet-tilde-handlet-destructor.md",
+            "redirect_url": "/cpp/windows/handlet-class#tilde-handlet",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-attach-method.md",
+            "redirect_url": "/cpp/windows/handlet-class#attach",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-close-method.md",
+            "redirect_url": "/cpp/windows/handlet-class#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-detach-method.md",
+            "redirect_url": "/cpp/windows/handlet-class#detach",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-get-method.md",
+            "redirect_url": "/cpp/windows/handlet-class#get",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-handle-data-member.md",
+            "redirect_url": "/cpp/windows/handlet-class#handle",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-handlet-constructor.md",
+            "redirect_url": "/cpp/windows/handlet-class#handlet",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-internalclose-method.md",
+            "redirect_url": "/cpp/windows/handlet-class#internalclose",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-isvalid-method.md",
+            "redirect_url": "/cpp/windows/handlet-class#isvalid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-operator-assign-operator.md",
+            "redirect_url": "/cpp/windows/handlet-class#operator-assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-hstring-constructor.md",
+            "redirect_url": "/cpp/windows/hstring-class#hstring",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-tilde-hstring-destructor.md",
+            "redirect_url": "/cpp/windows/hstring-class#tilde-hstring",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-attach-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#attach",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-copyto-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#copyto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-detach-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#detach",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-get-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#get",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-getaddressof-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#getaddressof",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-isvalid-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#isvalid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-makereference-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#makereference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-release-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#release",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-set-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#set",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-operator-assign-operator.md",
+            "redirect_url": "/cpp/windows/hstring-class#operator-assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-operator-less-than-operator.md",
+            "redirect_url": "/cpp/windows/hstring-class#operator-less-than",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-operator-equality-operator.md",
+            "redirect_url": "/cpp/windows/hstring-class#operator-equality",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-operator-inequality-operator.md",
+            "redirect_url": "/cpp/windows/hstring-class#operator-inequality",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/implements-cancastto-method.md",
             "redirect_url": "/cpp/windows/implements-structure#cancastto",
             "redirect_document_id": false
@@ -6548,6 +6723,101 @@
         {
             "source_path": "docs/windows/implements-iidcount-constant.md",
             "redirect_url": "/cpp/windows/implements-structure#iidcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implementshelper-cancastto-method.md",
+            "redirect_url": "/cpp/windows/implementshelper-structure#cancastto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implementshelper-casttounknown-method.md",
+            "redirect_url": "/cpp/windows/implementshelper-structure#casttounknown",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implementshelper-fillarraywithiid-method.md",
+            "redirect_url": "/cpp/windows/implementshelper-structure#fillarraywithiid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implementshelper-iidcount-constant.md",
+            "redirect_url": "/cpp/windows/implementshelper-structure#iidcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-cancastto-method.md",
+            "redirect_url": "/cpp/windows/interfacetraits-structure#cancastto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-casttobase-method.md",
+            "redirect_url": "/cpp/windows/interfacetraits-structure#casttobase",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-casttounknown-method.md",
+            "redirect_url": "/cpp/windows/interfacetraits-structure#casttounknown",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-fillarraywithiid-method.md",
+            "redirect_url": "/cpp/windows/interfacetraits-structure#fillarraywithiid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-iidcount-constant.md",
+            "redirect_url": "/cpp/windows/interfacetraits-structure#iidcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-verify-method.md",
+            "redirect_url": "/cpp/windows/interfacetraits-structure#verify",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/invokehelper-callback-data-member.md",
+            "redirect_url": "/cpp/windows/invokehelper-structure#callback",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/invokehelper-invoke-method.md",
+            "redirect_url": "/cpp/windows/invokehelper-structure#invoke",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/invokehelper-invokehelper-constructor.md",
+            "redirect_url": "/cpp/windows/invokehelper-structure#invokehelper",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/isbaseofstrict-value-constant.md",
+            "redirect_url": "/cpp/windows/isbaseofstrict-structure#value",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/issame-value-constant.md",
+            "redirect_url": "/cpp/windows/issame-structure#value",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/makeallocator-tilde-makeallocator-destructor.md",
+            "redirect_url": "/cpp/windows/makeallocator-class#tilde-makeallocator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/makeallocator-allocate-method.md",
+            "redirect_url": "/cpp/windows/makeallocator-class#allocate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/makeallocator-detach-method.md",
+            "redirect_url": "/cpp/windows/makeallocator-class#detach",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/makeallocator-makeallocator-constructor.md",
+            "redirect_url": "/cpp/windows/makeallocator-class#makeallocator",
             "redirect_document_id": false
         },
         {
@@ -6696,6 +6966,56 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/modulebase-tilde-modulebase-destructor.md",
+            "redirect_url": "/cpp/windows/modulebase-class#tilde-modulebase",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/modulebase-decrementobjectcount-method.md",
+            "redirect_url": "/cpp/windows/modulebase-class#decrementobjectcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/modulebase-incrementobjectcount-method.md",
+            "redirect_url": "/cpp/windows/modulebase-class#incrementobjectcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/modulebase-modulebase-constructor.md",
+            "redirect_url": "/cpp/windows/modulebase-class#modulebase",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/mutex-lock-method.md",
+            "redirect_url": "/cpp/windows/mutex-class1#lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/mutex-mutex-constructor.md",
+            "redirect_url": "/cpp/windows/mutex-class1#mutex",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/mutex-operator-assign-operator.md",
+            "redirect_url": "/cpp/windows/mutex-class1#operator-assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/roinitializewrapper-roinitializewrapper-constructor.md",
+            "redirect_url": "/cpp/windows/roinitializewrapper-class#roinitializewrapper",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/roinitializewrapper-tilde-roinitializewrapper-destructor.md",
+            "redirect_url": "/cpp/windows/roinitializewrapper-class#tilde-roinitializewrapper",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/roinitializewrapper-hresult-parens-operator.md",
+            "redirect_url": "/cpp/windows/roinitializewrapper-class#hresult",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/runtimeclass-tilde-runtimeclass-destructor.md",
             "redirect_url": "/cpp/windows/runtimeclass-class#tilde-runtimeclass",
             "redirect_document_id": false
@@ -6756,6 +7076,31 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/runtimeclassbaset-asiid-method.md",
+            "redirect_url": "/cpp/windows/runtimeclassbaset-structure#asiid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/runtimeclassbaset-getimplementediids-method.md",
+            "redirect_url": "/cpp/windows/runtimeclassbaset-structure#getimplementediids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/semaphore-lock-method.md",
+            "redirect_url": "/cpp/windows/semaphore-class#lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/semaphore-operator-assign-operator.md",
+            "redirect_url": "/cpp/windows/semaphore-class#operator-assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/semaphore-semaphore-constructor.md",
+            "redirect_url": "/cpp/windows/semaphore-class#semaphore",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/simpleactivationfactory-activateinstance-method.md",
             "redirect_url": "/cpp/windows/simpleactivationfactory-class#activateinstance",
             "redirect_document_id": false
@@ -6773,6 +7118,16 @@
         {
             "source_path": "docs/windows/simpleclassfactory-createinstance-method.md",
             "redirect_url": "/cpp/windows/simpleclassfactory-class#createinstance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/verifyinheritancehelper-verify-method.md",
+            "redirect_url": "/cpp/windows/verifyinheritancehelper-structure#verify",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/verifyinterfacehelper-verify-method.md",
+            "redirect_url": "/cpp/windows/verifyinterfacehelper-structure#verify",
             "redirect_document_id": false
         },
         {
@@ -6813,6 +7168,36 @@
         {
             "source_path": "docs/windows/walkthrough-creating-a-basic-windows-runtime-component-using-wrl.md",
             "redirect_url": "/cpp/windows/windows-runtime-cpp-template-library-wrl",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-tilde-weakreference-destructor.md",
+            "redirect_url": "/cpp/windows/weakreference-class1#tilde-weakreference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-decrementstrongreference-method.md",
+            "redirect_url": "/cpp/windows/weakreference-class1#decrementstrongreference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-incrementstrongreference-method.md",
+            "redirect_url": "/cpp/windows/weakreference-class1#incrementstrongreference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-resolve-method.md",
+            "redirect_url": "/cpp/windows/weakreference-class1#resolve",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-setunknown-method.md",
+            "redirect_url": "/cpp/windows/weakreference-class1#setunknown",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-weakreference-constructor.md",
+            "redirect_url": "/cpp/windows/weakreference-class1#weakreference",
             "redirect_document_id": false
         }
     ]
