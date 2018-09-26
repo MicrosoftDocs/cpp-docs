@@ -6486,6 +6486,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/factorycache-cookie-data-member.md",
+            "redirect_url": "/cpp/windows/factorycache-structure#cookie",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/factorycache-factory-data-member.md",
+            "redirect_url": "/cpp/windows/factorycache-structure#factory",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/ftmbase-createglobalinterfacetable-method.md",
             "redirect_url": "/cpp/windows/ftmbase-class#createglobalinterfacetable",
             "redirect_document_id": false
@@ -6623,6 +6633,56 @@
         {
             "source_path": "docs/windows/implements-iidcount-constant.md",
             "redirect_url": "/cpp/windows/implements-structure#iidcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implementshelper-cancastto-method.md",
+            "redirect_url": "/cpp/windows/implementshelper-structure#cancastto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implementshelper-casttounknown-method.md",
+            "redirect_url": "/cpp/windows/implementshelper-structure#casttounknown",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implementshelper-fillarraywithiid-method.md",
+            "redirect_url": "/cpp/windows/implementshelper-structure#fillarraywithiid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implementshelper-iidcount-constant.md",
+            "redirect_url": "/cpp/windows/implementshelper-structure#iidcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-cancastto-method.md",
+            "redirect_url": "/cpp/windows/interfacetraits-structure#cancastto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-casttobase-method.md",
+            "redirect_url": "/cpp/windows/interfacetraits-structure#casttobase",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-casttounknown-method.md",
+            "redirect_url": "/cpp/windows/interfacetraits-structure#casttounknown",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-fillarraywithiid-method.md",
+            "redirect_url": "/cpp/windows/interfacetraits-structure#fillarraywithiid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-iidcount-constant.md",
+            "redirect_url": "/cpp/windows/interfacetraits-structure#iidcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-verify-method.md",
+            "redirect_url": "/cpp/windows/interfacetraits-structure#verify",
             "redirect_document_id": false
         },
         {
