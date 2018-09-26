@@ -34,7 +34,7 @@ Name                                                    | Description
 ------------------------------------------------------- | -----------------------------------------------------------
 [HStringReference::HStringReference](#hstringreference) | Initializes a new instance of the `HStringReference` class.
 
-### Methods
+### Public Methods
 
 Member                              | Description
 ----------------------------------- | ------------------------------------------------------------------
