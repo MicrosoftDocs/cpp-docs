@@ -1,12 +1,12 @@
 ---
 title: "BoolStruct Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/21/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["internal/Microsoft::WRL::Details::BoolStruct"]
+f1_keywords: ["internal/Microsoft::WRL::Details::BoolStruct", "internal/Microsoft::WRL::Details::BoolStruct::Member"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["BoolStruct structure"]
+helpviewer_keywords: ["Microsoft::WRL::Details::BoolStruct structure", "Microsoft::WRL::Details::BoolStruct::Member data member"]
 ms.assetid: 666eae78-e81d-4fb7-a9e4-1ba617d6d4cd
 author: "mikeblome"
 ms.author: "mblome"
@@ -24,15 +24,15 @@ struct BoolStruct;
 
 ## Remarks
 
-The **BoolStruct** structure defines whether a `ComPtr` is managing the object lifetime of an interface. **BoolStruct** is used internally by the [BoolType()](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md) operator.
+The `BoolStruct` structure defines whether a `ComPtr` is managing the object lifetime of an interface. `BoolStruct` is used internally by the [BoolType()](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md) operator.
 
 ## Members
 
 ### Public Data Members
 
-|Name|Description|
-|----------|-----------------|
-|[BoolStruct::Member Data Member](../windows/boolstruct-member-data-member.md)|Specifies that a [ComPtr](../windows/comptr-class.md) is, or is not, managing the object lifetime of an interface.|
+Name                          | Description
+----------------------------- | ------------------------------------------------------------------------------------------------------------------
+[BoolStruct::Member](#member) | Specifies that a [ComPtr](../windows/comptr-class.md) is, or is not, managing the object lifetime of an interface.
 
 ## Inheritance Hierarchy
 
@@ -44,7 +44,14 @@ The **BoolStruct** structure defines whether a `ComPtr` is managing the object l
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## <a name="member"></a>BoolStruct::Member
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)<br/>
-[ComPtr::operator Microsoft::WRL::Details::BoolType Operator](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md)
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+```cpp
+int Member;
+```
+
+### Remarks
+
+Specifies that a [ComPtr](../windows/comptr-class.md) is, or is not, managing the object lifetime of an interface.

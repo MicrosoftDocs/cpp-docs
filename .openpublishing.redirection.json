@@ -6411,6 +6411,21 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/argtraits-args-constant.md",
+            "redirect_url": "/cpp/windows/argtraits-structure#args",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/argtraitshelper-args-constant.md",
+            "redirect_url": "/cpp/windows/argtraitshelper-structure#args",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/boolstruct-member-data-member.md",
+            "redirect_url": "/cpp/windows/boolstruct-structure#member",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/classfactory-addref-method.md",
             "redirect_url": "/cpp/windows/classfactory-class#addref",
             "redirect_document_id": false
@@ -6433,6 +6448,51 @@
         {
             "source_path": "docs/windows/classfactory-release-method.md",
             "redirect_url": "/cpp/windows/classfactory-class#release",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrref-comptrref-constructor.md",
+            "redirect_url": "/cpp/windows/comptrref-class#comptrref",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrref-getaddressof-method.md",
+            "redirect_url": "/cpp/windows/comptrref-class#getaddressof",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrref-operator-interfacetype-star-star-operator.md",
+            "redirect_url": "/cpp/windows/comptrref-class#operator-interfacetype-star-star",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrref-operator-t-star-operator.md",
+            "redirect_url": "/cpp/windows/comptrref-class#operator-t-star",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrref-operator-void-star-star-operator.md",
+            "redirect_url": "/cpp/windows/comptrref-class#operator-void-star-star",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrref-operator-star-operator.md",
+            "redirect_url": "/cpp/windows/comptrref-class#operator-star",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrref-operator-equality-operator.md",
+            "redirect_url": "/cpp/windows/comptrref-class#operator-equality",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrref-operator-inequality-operator.md",
+            "redirect_url": "/cpp/windows/comptrref-class#operator-inequality",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrref-releaseandgetaddressof-method.md",
+            "redirect_url": "/cpp/windows/comptrref-class#releaseandgetaddressof",
             "redirect_document_id": false
         },
         {

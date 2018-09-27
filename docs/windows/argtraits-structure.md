@@ -1,12 +1,12 @@
 ---
 title: "ArgTraits Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/21/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["event/Microsoft::WRL::Details::ArgTraits"]
+f1_keywords: ["event/Microsoft::WRL::Details::ArgTraits", "event/Microsoft::WRL::Details::ArgTraits::args"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["ArgTraits structure"]
+helpviewer_keywords: ["Microsoft::WRL::Details::ArgTraits structure", "Microsoft::WRL::Details::ArgTraits::args constant"]
 ms.assetid: 58ae4115-c1bc-48c8-b01b-e60554841c30
 author: "mikeblome"
 ms.author: "mblome"
@@ -143,29 +143,29 @@ The type of the ninth argument of the `Invoke` method.
 
 ## Remarks
 
-The **ArgTraits** structure declares a specified delegate interface and an anonymous member function that has a specified number of parameters.
+The `ArgTraits` structure declares a specified delegate interface and an anonymous member function that has a specified number of parameters.
 
 ## Members
 
 ### Public Typedefs
 
-|Name|Description|
-|----------|-----------------|
-|`Arg1Type`|The typedef for TArg1.|
-|`Arg2Type`|The typedef for TArg2.|
-|`Arg3Type`|The typedef for TArg3.|
-|`Arg4Type`|The typedef for TArg4.|
-|`Arg5Type`|The typedef for TArg5.|
-|`Arg6Type`|The typedef for TArg6.|
-|`Arg7Type`|The typedef for TArg7.|
-|`Arg8Type`|The typedef for TArg8.|
-|`Arg9Type`|The typedef for TArg9.|
+Name       | Description
+---------- | ----------------------
+`Arg1Type` | The typedef for TArg1.
+`Arg2Type` | The typedef for TArg2.
+`Arg3Type` | The typedef for TArg3.
+`Arg4Type` | The typedef for TArg4.
+`Arg5Type` | The typedef for TArg5.
+`Arg6Type` | The typedef for TArg6.
+`Arg7Type` | The typedef for TArg7.
+`Arg8Type` | The typedef for TArg8.
+`Arg9Type` | The typedef for TArg9.
 
 ### Public Constants
 
-|Name|Description|
-|----------|-----------------|
-|[ArgTraits::args Constant](../windows/argtraits-args-constant.md)|Keeps count of the number of parameters on the `Invoke` method of a delegate interface.|
+Name                     | Description
+------------------------ | ---------------------------------------------------------------------------------------
+[ArgTraits::args](#args) | Keeps count of the number of parameters on the `Invoke` method of a delegate interface.
 
 ## Inheritance Hierarchy
 
@@ -177,6 +177,14 @@ The **ArgTraits** structure declares a specified delegate interface and an anony
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## <a name="args"></a>ArgTraits::args
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+```cpp
+static const int args = -1;
+```
+
+### Remarks
+
+Keeps count of the number of parameters on the `Invoke` method of a delegate interface. When `args` equals -1, there can be no match for the `Invoke` method signature.
