@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # path Class
 
-The **path** class stores an object of type `string_type`, called `myname` here for the purposes of exposition, suitable for use as a pathname. `string_type` is a synonym for `basic_string<value_type>`, where `value_type` is a synonym for **wchar_t**.
+The **path** class stores an object of type `string_type`, called `myname` here for the purposes of exposition, suitable for use as a pathname. `string_type` is a synonym for `basic_string<value_type>`, where `value_type` is a synonym for **wchar_t** on Windows or **char** on POSIX.
 
 For more information, and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).
 
