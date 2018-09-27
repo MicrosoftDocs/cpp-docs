@@ -1,7 +1,7 @@
 ---
 title: "Adding a Property Page (ATL Tutorial, Part 6) | Microsoft Docs"
 ms.custom: "get-started-article"
-ms.date: "11/04/2016"
+ms.date: "09/27/2018"
 ms.technology: ["cpp-atl"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -22,23 +22,23 @@ Property pages are implemented as separate COM objects, which allow them to be s
 
 ## Creating the Property Page Resource
 
-To add a property page to your control, use the ATL Add Class Wizard.
+To add a property page to your control, use the ATL Property Page template.
 
-#### To add a Property Page
+### To add a Property Page
 
-1. In Solution Explorer, right-click Polygon.
+1. In **Solution Explorer**, right-click `Polygon`.
 
-2. On the shortcut menu, click **Add**, and then click **Add Class**.
+1. On the shortcut menu, click **Add** > **New Item**.
 
-3. From the list of templates, select **ATL Property Page** and click **Add**.
+1. From the list of templates, select **ATL** > **ATL Property Page** and click **Add**.
 
-4. When the ATL Property Page Wizard appears, enter *PolyProp* as the **Short** name.
+1. When the **ATL Property Page Wizard** appears, enter *PolyProp* as the **Short** name.
 
-5. Click **Strings** to open the **Strings** page and enter **&Polygon** as the **Title**.
+1. Click **Strings** to open the **Strings** page and enter **&Polygon** as the **Title**.
 
      The **Title** of the property page is the string that appears in the tab for that page. The **Doc string** is a description that a property frame uses to put in a status line or tool tip. Note that the standard property frame currently does not use this string, so you can leave it with the default contents. You will not generate a **Help file** at the moment, so delete the entry in that text box.
 
-6. Click **Finish**, and the property page object will be created.
+1. Click **Finish**, and the property page object will be created.
 
 The following three files are created:
 
@@ -62,19 +62,19 @@ The following code changes are also made:
 
 Now add the fields that you want to appear on the property page.
 
-#### To add fields to the Property Page
+### To add fields to the Property Page
 
-1. In Solution Explorer, double-click the Polygon.rc resource file. This will open Resource View.
+1. In **Solution Explorer**, double-click the Polygon.rc resource file. This will open **Resource View**.
 
-2. In Resource View, expand the Dialog node and double-click IDD_POLYPROP. Note that the dialog box that appears is empty except for a label that tells you to insert your controls here.
+1. In **Resource View**, expand the `Dialog` node and double-click `IDD_POLYPROP`. Note that the dialog box that appears is empty except for a label that tells you to insert your controls here.
 
-3. Select that label and change it to read `Sides:` by altering the **Caption** text in the **Properties** window.
+1. Select that label and change it to read `Sides:` by altering the **Caption** text in the **Properties** window.
 
-4. Resize the label box so that it fits the size of the text.
+1. Resize the label box so that it fits the size of the text.
 
-5. Drag an Edit control from the Toolbox to the right of the label.
+1. Drag an Edit control from the Toolbox to the right of the label.
 
-6. Finally, change the **ID** of the Edit control to `IDC_SIDES` using the Properties window.
+1. Finally, change the **ID** of the Edit control to `IDC_SIDES` using the **Properties** window.
 
 This completes the process of creating the property page resource.
 
@@ -84,11 +84,11 @@ Now that you have created the property page resource, you need to write the impl
 
 First, enable the `CPolyProp` class to set the number of sides in your object when the **Apply** button is pressed.
 
-#### To modify the Apply function to set the number of sides
+### To modify the Apply function to set the number of sides
 
 1. Replace the `Apply` function in PolyProp.h with the following code:
 
-     [!code-cpp[NVC_ATL_Windowing#58](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_1.h)]
+    [!code-cpp[NVC_ATL_Windowing#58](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_1.h)]
 
 A property page can have more than one client attached to it at a time, so the `Apply` function loops around and calls `put_Sides` on each client with the value retrieved from the edit box. You are using the [CComQIPtr](../atl/reference/ccomqiptr-class.md) class, which performs the `QueryInterface` on each object to obtain the `IPolyCtl` interface from the `IUnknown` interface (stored in the `m_ppUnk` array).
 
@@ -98,47 +98,47 @@ The code now checks that setting the `Sides` property actually worked. If it fai
 
 You also need to set the property page's dirty flag to indicate that the **Apply** button should be enabled. This occurs when the user changes the value in the **Sides** edit box.
 
-#### To handle the Apply button
+### To handle the Apply button
 
-1. In Class View, right-click CPolyProp and click **Properties** on the shortcut menu.
+1. In **Class View**, right-click `CPolyProp` and click **Properties** on the shortcut menu.
 
-2. In the Properties window, click the **Events** icon.
+1. In the **Properties** window, click the **Events** icon.
 
-3. Expand the `IDC_SIDES` node in the event list.
+1. Expand the `IDC_SIDES` node in the event list.
 
-4. Select `EN_CHANGE`, and from the drop-down menu to the right, click **\<Add> OnEnChangeSides**. The `OnEnChangeSides` handler declaration will be added to Polyprop.h, and the handler implementation to Polyprop.cpp.
+1. Select `EN_CHANGE`, and from the drop-down menu to the right, click **\<Add> OnEnChangeSides**. The `OnEnChangeSides` handler declaration will be added to Polyprop.h, and the handler implementation to Polyprop.cpp.
 
 Next, you will modify the handler.
 
-#### To modify the OnEnChangeSides method
+### To modify the OnEnChangeSides method
 
 1. Add the following code in Polyprop.cpp to the `OnEnChangeSides` method (deleting any code that the wizard put there):
 
-     [!code-cpp[NVC_ATL_Windowing#59](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_2.cpp)]
+    [!code-cpp[NVC_ATL_Windowing#59](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_2.cpp)]
 
-`OnEnChangeSides` will be called when a WM_COMMAND message is sent with the EN_CHANGE notification for the `IDC_SIDES` control. `OnEnChangeSides` then calls `SetDirty` and passes TRUE to indicate the property page is now dirty and the **Apply** button should be enabled.
+`OnEnChangeSides` will be called when a `WM_COMMAND` message is sent with the `EN_CHANGE` notification for the `IDC_SIDES` control. `OnEnChangeSides` then calls `SetDirty` and passes TRUE to indicate the property page is now dirty and the **Apply** button should be enabled.
 
 ## Adding the Property Page to the Control
 
-The ATL Add Class Wizard and the ATL Property Page Wizard do not add the property page to your control for you automatically, because there could be multiple controls in your project. You will need to add an entry to the control's property map.
+The ATL Property Page template and wizard do not add the property page to your control for you automatically, because there could be multiple controls in your project. You will need to add an entry to the control's property map.
 
-#### To add the property page
+### To add the property page
 
 1. Open PolyCtl.h and add this line to the property map:
 
-     [!code-cpp[NVC_ATL_Windowing#60](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_3.h)]
+    [!code-cpp[NVC_ATL_Windowing#60](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_3.h)]
 
 The control's property map now looks like this:
 
 [!code-cpp[NVC_ATL_Windowing#61](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_4.h)]
 
-You could have added a PROP_PAGE macro with the CLSID of your property page, but if you use the PROP_ENTRY macro as shown, the `Sides` property value is also saved when the control is saved.
+You could have added a `PROP_PAGE` macro with the CLSID of your property page, but if you use the `PROP_ENTRY` macro as shown, the `Sides` property value is also saved when the control is saved.
 
 The three parameters to the macro are the property description, the DISPID of the property, and the CLSID of the property page that has the property on it. This is useful if, for example, you load the control into Visual Basic and set the number of Sides at design time. Because the number of Sides is saved, when you reload your Visual Basic project, the number of Sides will be restored.
 
 ## Building and Testing the Control
 
-Now build that control and insert it into ActiveX Control Test Container. In Test Container, on the **Edit** menu, click **PolyCtl Class Object**. The property page appears; click the **Polygon** tab.
+Now build that control and insert it into ActiveX Control Test Container. In **Test Container**, on the **Edit** menu, click **PolyCtl Class Object**. The property page appears; click the **Polygon** tab.
 
 The **Apply** button is initially disabled. Start typing a value in the **Sides** box and the **Apply** button will become enabled. After you have finished entering the value, click the **Apply** button. The control display changes, and the **Apply** button is again disabled. Try entering an invalid value. You will see a message box containing the error description that you set from the `put_Sides` function.
 
@@ -149,4 +149,3 @@ Next, you will put your control on a Web page.
 ## See Also
 
 [Tutorial](../atl/active-template-library-atl-tutorial.md)
-
