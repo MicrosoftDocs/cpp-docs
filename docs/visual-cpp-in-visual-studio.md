@@ -68,17 +68,20 @@ Information about samples.
 
 ## C++ development tools
 
-[IDE and Development Tools](ide/ide-and-tools-for-visual-cpp-development.md).
-How to use the Visual Studio IDE to create projects, work with source code files, link to libraries, compile, debug, create unit tests, do static analysis, deploy, and more.
+[IDE and Development Tools](ide/ide-and-tools-for-visual-cpp-development.md)<br/>
+How to use the Visual Studio IDE to create projects, edit code, link to libraries, compile, debug, create unit tests, do static analysis, deploy, and more.
 
 [Compilers and Build Tools](build/building-c-cpp-programs.md)<br/>
-Microsoft C++ compiler and linker options, error messages, command-line examples, configurating for different platforms, and build reference topics. 
+Microsoft C++ compiler and linker options, error messages, command-line examples, configurating for different platforms, and build reference topics.
 
-[Debugging Native Code](/visualstudio/debugger/debugging-native-code) Use the Visual Studio debugger with C++ projects.
+[Debugging Native Code](/visualstudio/debugger/debugging-native-code)<br/>
+Use the Visual Studio debugger with C++ projects.
 
-[Code analysis for C/C++ overview](/visualstudio/code-quality/code-analysis-for-c-cpp-overview) Use SAL annotations or the C++ Core Guidelines checkers to perform static analysis.
+[Code analysis for C/C++ overview](/visualstudio/code-quality/code-analysis-for-c-cpp-overview)<br/>
+Use SAL annotations or the C++ Core Guidelines checkers to perform static analysis.
 
-[Write unit tests for C/C++ in Visual Studio](/visualstudio/test/writing-unit-tests-for-c-cpp)
+[Write unit tests for C/C++ in Visual Studio](/visualstudio/test/writing-unit-tests-for-c-cpp)<br/>
+Create unit tests using the Microsoft Unit Testing Framework for C++, Google Test, Boost.Test, or CTest.
 
 ## Write applications in C++
 
