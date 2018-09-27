@@ -6496,6 +6496,41 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/comptrrefbase-operator-iinspectable-star-star-operator.md",
+            "redirect_url": "/cpp/windows/comptrrefbase-class#operator-iinspectable-star-star",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrrefbase-operator-iunknown-star-star-operator.md",
+            "redirect_url": "/cpp/windows/comptrrefbase-class#operator-iunknown-star-star",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrrefbase-ptr-data-member.md",
+            "redirect_url": "/cpp/windows/comptrrefbase-class#ptr",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creatormap-activationid-data-member.md",
+            "redirect_url": "/cpp/windows/creatormap-structure#activationid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creatormap-factorycache-data-member.md",
+            "redirect_url": "/cpp/windows/creatormap-structure#factorycache",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creatormap-factorycreator-data-member.md",
+            "redirect_url": "/cpp/windows/creatormap-structure#factorycreator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creatormap-servername-data-member.md",
+            "redirect_url": "/cpp/windows/creatormap-structure#servername",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/criticalsection-tilde-criticalsection-destructor.md",
             "redirect_url": "/cpp/windows/criticalsection-class#tilde-criticalsection",
             "redirect_document_id": false
@@ -6533,6 +6568,11 @@
         {
             "source_path": "docs/windows/deferrableeventargs-invokeallfinished-method.md",
             "redirect_url": "/cpp/windows/deferrableeventargs-class#invokeallfinished",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/dontusenewusemake-operator-new-operator.md",
+            "redirect_url": "/cpp/windows/dontusenewusemake-class#operator-new",
             "redirect_document_id": false
         },
         {
@@ -6583,6 +6623,36 @@
         {
             "source_path": "docs/windows/eventsource-targetspointerlock-data-member.md",
             "redirect_url": "/cpp/windows/eventsource-class#targetspointerlock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventtargetarray-tilde-eventtargetarray-destructor.md",
+            "redirect_url": "/cpp/windows/eventtargetarray-class#tilde-eventtargetarray",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventtargetarray-addtail-method.md",
+            "redirect_url": "/cpp/windows/eventtargetarray-class#addtail",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventtargetarray-begin-method.md",
+            "redirect_url": "/cpp/windows/eventtargetarray-class#begin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventtargetarray-end-method.md",
+            "redirect_url": "/cpp/windows/eventtargetarray-class#end",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventtargetarray-eventtargetarray-constructor.md",
+            "redirect_url": "/cpp/windows/eventtargetarray-class#eventtargetarray",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventtargetarray-length-method.md",
+            "redirect_url": "/cpp/windows/eventtargetarray-class#length",
             "redirect_document_id": false
         },
         {
