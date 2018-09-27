@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits", "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::Close", "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::GetInvalidValue"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Microsoft::WRL::Wrappers::HANDLENullTraits structure", "Microsoft::WRL::Wrappers::HANDLENullTraits::Close method", "Microsoft::WRL::Wrappers::HANDLENullTraits::GetInvalidValue method"]
+helpviewer_keywords: ["Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits structure", "Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::Close method", "Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::GetInvalidValue method"]
 ms.assetid: 88a29a14-c516-40cb-a0ca-ee897a668623
 author: "mikeblome"
 ms.author: "mblome"
