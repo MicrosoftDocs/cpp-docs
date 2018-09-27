@@ -1,11 +1,12 @@
 ---
 title: "Event Class (Windows Runtime C++ Template Library) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/24/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Event"]
+f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Event", "corewrappers/Microsoft::WRL::Wrappers::Event::Event", "corewrappers/Microsoft::WRL::Wrappers::Event::operator="]
 dev_langs: ["C++"]
+helpviewer_keywords: ["Microsoft::WRL::Wrappers::Event class", "Microsoft::WRL::Wrappers::Event::Event, constructor", "Microsoft::WRL::Wrappers::Event::operator= operator"]
 ms.assetid: 55dfc9fc-62d4-4bb2-9d85-5b6dd88569e8
 author: "mikeblome"
 ms.author: "mblome"
@@ -25,15 +26,15 @@ class Event : public HandleT<HandleTraits::EventTraits>;
 
 ### Public Constructors
 
-|Name|Description|
-|----------|-----------------|
-|[Event::Event Constructor (Windows Runtime C++ Template Library)](../windows/event-event-constructor-windows-runtime-cpp-template-library.md)|Initializes a new instance of the **Event** class.|
+Name                   | Description
+---------------------- | ------------------------------------------------
+[Event::Event](#event) | Initializes a new instance of the `Event` class.
 
 ### Public Operators
 
-|Name|Description|
-|----------|-----------------|
-|[Event::operator= Operator](../windows/event-operator-assign-operator.md)|Assigns the specified **Event** reference to the current **Event** instance.|
+Name                                 | Description
+------------------------------------ | ------------------------------------------------------------------------
+[Event::operator=](#operator-assign) | Assigns the specified `Event` reference to the current `Event` instance.
 
 ## Inheritance Hierarchy
 
@@ -47,6 +48,39 @@ class Event : public HandleT<HandleTraits::EventTraits>;
 
 **Namespace:** Microsoft::WRL::Wrappers
 
-## See Also
+## <a name="event"></a>Event::Event
 
-[Microsoft::WRL::Wrappers Namespace](../windows/microsoft-wrl-wrappers-namespace.md)
+Initializes a new instance of the `Event` class.
+
+```cpp
+explicit Event(
+   HANDLE h = HandleT::Traits::GetInvalidValue()  
+);
+WRL_NOTHROW Event(
+   _Inout_ Event&& h
+);
+```
+
+### Parameters
+
+*h*<br/>
+Handle to an event. By default, *h* is initialized to `nullptr`.
+
+## <a name="operator-assign"></a>Event::operator=
+
+Assigns the specified `Event` reference to the current `Event` instance.
+
+```cpp
+WRL_NOTHROW Event& operator=(
+   _Inout_ Event&& h
+);
+```
+
+### Parameters
+
+*h*<br/>
+An rvalue-reference to an `Event` instance.
+
+### Return Value
+
+A pointer to the current `Event` instance.

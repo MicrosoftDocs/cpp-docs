@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Adding a CTaskDialog to an Application | Microsoft Docs"
 ms.custom: ""
-ms.date: "06/28/2018"
+ms.date: "09/19/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -32,17 +32,17 @@ You need the following components to complete this walkthrough:
 
 ## Replacing a Windows Message Box with a CTaskDialog
 
-The following procedure demonstrates the most basic use of the `CTaskDialog`, which is to replace the Windows message box. This example also changes the icon associated with the task dialog box. Changing the icon makes the `CTaskDialog` appear identical to the Windows message box.
+The following procedure demonstrates the most basic use of the `CTaskDialog`, which is to replace the Windows message box. This example also changes the icon associated with the task dialog box. Changing the icon makes the `CTaskDialog` appear same to the Windows message box.
 
 ### To Replace a Windows Message Box with a CTaskDialog
 
 1. Create a new MFC Application project with the default settings. Call it *MyProject*.
 
-2. Use the **Solution Explorer** to open the file MyProject.cpp.
+1. Use the **Solution Explorer** to open the file MyProject.cpp.
 
-3. Add `#include "afxtaskdialog.h"` after the list of includes.
+1. Add `#include "afxtaskdialog.h"` after the list of includes.
 
-4. Find the method `CMyProjectApp::InitInstance`. Insert the following lines of code before the `return TRUE;` statement. This code creates the strings that we use in either the Windows message box or in the `CTaskDialog`.
+1. Find the method `CMyProjectApp::InitInstance`. Insert the following lines of code before the `return TRUE;` statement. This code creates the strings that we use in either the Windows message box or in the `CTaskDialog`.
 
     ```cpp
     CString message("My message to the user");
@@ -50,7 +50,7 @@ The following procedure demonstrates the most basic use of the `CTaskDialog`, wh
     CString emptyString;
     ```
 
-5. Add the following code after the code from step 4. This code guarantees that the user's computer supports the `CTaskDialog`. If the dialog is not supported, the application displays a Windows message box instead.
+1. Add the following code after the code from step 4. This code guarantees that the user's computer supports the `CTaskDialog`. If the dialog isn't supported, the application displays a Windows message box instead.
 
     ```cpp
     if (CTaskDialog::IsSupported())
@@ -63,25 +63,25 @@ The following procedure demonstrates the most basic use of the `CTaskDialog`, wh
     }
     ```
 
-6. Insert the following code between the brackets after the `if` statement from step 5. This code creates the `CTaskDialog`.
+1. Insert the following code between the brackets after the `if` statement from step 5. This code creates the `CTaskDialog`.
 
     ```cpp
     CTaskDialog taskDialog(message, emptyString, dialogTitle, TDCBF_OK_BUTTON);
     ```
 
-7. On the next line, add the following code. This code sets the warning icon.
+1. On the next line, add the following code. This code sets the warning icon.
 
     ```cpp
     taskDialog.SetMainIcon(TD_WARNING_ICON);
     ```
 
-8. On the next line, add the following code. This code displays the task dialog box.
+1. On the next line, add the following code. This code displays the task dialog box.
 
     ```cpp
     taskDialog.DoModal();
     ```
 
-You can omit step 7 if you do not want the `CTaskDialog` to display the same icon as the Windows message box. If you omit that step, the `CTaskDialog` has no icon when the application displays it.
+You can avoid step 7 if you don't want the `CTaskDialog` to display the same icon as the Windows message box. If you avoid that step, the `CTaskDialog` has no icon when the application displays it.
 
 Compile and run the application. The application displays the task dialog box after it starts.
 
@@ -91,17 +91,17 @@ The following procedure shows you how to add functionality to the `CTaskDialog` 
 
 ### To Add Functionality to the CTaskDialog
 
-1. Navigate to the **Resource View**. If you cannot see the **Resource View**, you can open it from the **View** menu.
+1. Navigate to the **Resource View**. If you can't see the **Resource View**, you can open it from the **View** menu.
 
-2. Expand the **Resource View** until you can select the **String Table** folder. Expand it and double-click the **String Table** entry.
+1. Expand the **Resource View** until you can select the **String Table** folder. Expand it and double-click the **String Table** entry.
 
-3. Scroll to the bottom of the string table and add a new entry. Change the ID to `TEMP_LINE1`. Set the caption to **Command Line 1**.
+1. Scroll to the bottom of the string table and add a new entry. Change the ID to `TEMP_LINE1`. Set the caption to **Command Line 1**.
 
-4. Add another new entry. Change the ID to `TEMP_LINE2`. Set the caption to **Command Line 2**.
+1. Add another new entry. Change the ID to `TEMP_LINE2`. Set the caption to **Command Line 2**.
 
-5. Navigate back to MyProject.cpp.
+1. Navigate back to MyProject.cpp.
 
-6. After `CString emptyString;`, add the following code:
+1. After `CString emptyString;`, add the following code:
 
     ```cpp
     CString expandedLabel("Hide extra information");
@@ -109,7 +109,7 @@ The following procedure shows you how to add functionality to the `CTaskDialog` 
     CString expansionInfo("This is the additional information to the user,\nextended over two lines.");
     ```
 
-7. Find the `taskDialog.DoModal()` statement and replace that statement with the following code. This code updates the task dialog box and adds new controls:
+1. Find the `taskDialog.DoModal()` statement and replace that statement with the following code. This code updates the task dialog box and adds new controls:
 
     ```cpp
     taskDialog.SetMainInstruction(L"Warning");
@@ -122,13 +122,13 @@ The following procedure shows you how to add functionality to the `CTaskDialog` 
     taskDialog.SetVerificationCheckboxText(L"Remember your selection");
     ```
 
-8. Add the following line of code that displays the task dialog box to the user and retrieves the user's selection:
+1. Add the following line of code that displays the task dialog box to the user and retrieves the user's selection:
 
     ```cpp
     INT_PTR result = taskDialog.DoModal();
     ```
 
-9. Insert the following code after the call to `taskDialog.DoModal()`. This section of code processes the user's input:
+1. Insert the following code after the call to `taskDialog.DoModal()`. This section of code processes the user's input:
 
     ```cpp
     if (taskDialog.GetVerificationCheckboxState())
@@ -160,7 +160,7 @@ The following procedure shows you how to add functionality to the `CTaskDialog` 
     }
     ```
 
-In the code in step 9, replace the comments that start with PROCESS IF with the code that you want to execute under the specified conditions.
+In the code in step 9, replace the comments that start with `PROCESS IF` with the code that you want to execute under the specified conditions.
 
 Compile and run the application. The application displays the task dialog box that uses the new controls and additional information.
 
@@ -170,11 +170,11 @@ The following procedure shows you how to display a `CTaskDialog` without first c
 
 ### To Display a CTaskDialog Without Creating a CTaskDialog Object
 
-1. Open the MyProject.cpp file if it is not already open.
+1. Open the MyProject.cpp file if it isn't already open.
 
-2. Navigate to the closing bracket for the `if (CTaskDialog::IsSupported())` statement.
+1. Navigate to the closing bracket for the `if (CTaskDialog::IsSupported())` statement.
 
-3. Insert the following code immediately before the closing bracket of the `if` statement (before the `else` block):
+1. Insert the following code immediately before the closing bracket of the `if` statement (before the `else` block):
 
     ```cpp
     HRESULT result2 = CTaskDialog::ShowDialog(L"My error message",
@@ -184,9 +184,9 @@ The following procedure shows you how to display a `CTaskDialog` without first c
         TEMP_LINE2);
     ```
 
-Compile and run the application. The application displays two task dialog boxes. The first dialog box is from the To Add Functionality to the CTaskDialog procedure; the second dialog box is from the last procedure.
+Compile and run the application. The application displays two task dialog boxes. The first dialog box is from the **To Add Functionality to the CTaskDialog** procedure; the second dialog box is from the last procedure.
 
-These examples do not demonstrate all the available options for a `CTaskDialog`, but should help you get started. See [CTaskDialog Class](../mfc/reference/ctaskdialog-class.md) for a full description of the class.
+These examples don't demonstrate all the available options for a `CTaskDialog`, but should help you get started. See [CTaskDialog Class](../mfc/reference/ctaskdialog-class.md) for a full description of the class.
 
 ## See also
 

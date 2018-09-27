@@ -1,12 +1,12 @@
 ---
 title: "VerifyInterfaceHelper Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/24/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["implements/Microsoft::WRL::Details::VerifyInterfaceHelper"]
+f1_keywords: ["implements/Microsoft::WRL::Details::VerifyInterfaceHelper", "implements/Microsoft::WRL::Details::VerifyInterfaceHelper::Verify"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["VerifyInterfaceHelper structure"]
+helpviewer_keywords: ["Microsoft::WRL::Details::VerifyInterfaceHelper structure", "Microsoft::WRL::Details::VerifyInterfaceHelper::Verify method"]
 ms.assetid: ea95b641-199a-4fdf-964b-186b40cb3ba7
 author: "mikeblome"
 ms.author: "mblome"
@@ -46,9 +46,9 @@ Verifies that the interface specified by the template parameter meets certain re
 
 ### Public Methods
 
-|Name|Description|
-|----------|-----------------|
-|[VerifyInterfaceHelper::Verify Method](../windows/verifyinterfacehelper-verify-method.md)||
+Name                                            | Description
+----------------------------------------------- | ---------------------------------------------------------------------------------------------------
+[VerifyInterfaceHelper::Verify Method](#verify) | Verifies that the interface specified by the current template parameter meets certain requirements.
 
 ## Inheritance Hierarchy
 
@@ -60,6 +60,14 @@ Verifies that the interface specified by the template parameter meets certain re
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## <a name="verify"></a>VerifyInterfaceHelper::Verify
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+```cpp
+static void Verify();
+```
+
+### Remarks
+
+Verifies that the interface specified by the current template parameter meets certain requirements.
