@@ -74,6 +74,20 @@ Name                      | Description
 
 **Namespace:** Microsoft::WRL::Wrappers::Details
 
+## <a name="tilde-synclockt"></a>SyncLockT::~SyncLockT
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+```cpp
+~SyncLockT();
+```
+
+### Remarks
+
+Deinitializes an instance of the `SyncLockT` class.
+
+This destructor also unlocks the current `SyncLockT` instance.
+
 ## <a name="islocked"></a>SyncLockT::IsLocked
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
@@ -129,20 +143,6 @@ A reference to another `SyncLockWithStatusT` object.
 Initializes a new instance of the `SyncLockT` class.
 
 The first constructor initializes the current `SyncLockT` object from another `SyncLockT` object specified by parameter *other*, and then invalidates the other `SyncLockT` object. The second constructor is `protected`, and initializes the current `SyncLockT` object to an invalid state.
-
-## <a name="tilde-synclockt"></a>SyncLockT::~SyncLockT
-
-Supports the WRL infrastructure and is not intended to be used directly from your code.
-
-```cpp
-~SyncLockT();
-```
-
-### Remarks
-
-Deinitializes an instance of the `SyncLockT` class.
-
-This destructor also unlocks the current `SyncLockT` instance.
 
 ## <a name="unlock"></a>SyncLockT::Unlock
 
