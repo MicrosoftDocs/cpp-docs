@@ -1,7 +1,7 @@
 ---
 title: "/CLRUNMANAGEDCODECHECK (Add SupressUnmanagedCodeSecurityAttribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/27/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 f1_keywords: ["/CLRUNMANAGEDCODECHECK"]
@@ -21,6 +21,12 @@ ms.workload: ["cplusplus"]
 > **/CLRUNMANAGEDCODECHECK**[**:NO**]
 
 ## Remarks
+
+The relation between the linker option and the attribute is as follows:
+
+- **/CLRUNMANAGEDCODECHECK** is off by default, which means **SupressUnmanagedCodeSecurityAttribute** is on by default.
+- Specifying **/CLRUNMANAGEDCODECHECK** turns off **SupressUnmanagedCodeSecurityAttribute**.
+- Specifying **/CLRUNMANAGEDCODECHECK** turns on **SupressUnmanagedCodeSecurityAttribute**.
 
 By default, the linker applies the **SuppressUnmanagedCodeSecurityAttribute** to linker-generated `PInvoke` calls. When **/CLRUNMANAGEDCODECHECK** is in effect, **SuppressUnmanagedCodeSecurityAttribute** is not applied.
 
