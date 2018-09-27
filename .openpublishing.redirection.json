@@ -7251,6 +7251,51 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/synclockt-tilde-synclockt-destructor.md",
+            "redirect_url": "/cpp/windows/synclockt-class#tilde-synclockt",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/synclockt-islocked-method.md",
+            "redirect_url": "/cpp/windows/synclockt-class#islocked",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/synclockt-sync-data-member.md",
+            "redirect_url": "/cpp/windows/synclockt-class#sync",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/synclockt-synclockt-constructor.md",
+            "redirect_url": "/cpp/windows/synclockt-class#synclockt",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/synclockt-unlock-method.md",
+            "redirect_url": "/cpp/windows/synclockt-class#unlock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/synclockwithstatust-getstatus-method.md",
+            "redirect_url": "/cpp/windows/synclockwithstatust-class#getstatus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/synclockwithstatust-islocked-method.md",
+            "redirect_url": "/cpp/windows/synclockwithstatust-class#islocked",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/synclockwithstatust-status-data-member.md",
+            "redirect_url": "/cpp/windows/synclockwithstatust-class#status",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/synclockwithstatust-synclockwithstatust-constructor.md",
+            "redirect_url": "/cpp/windows/synclockwithstatust-class#synclockwithstatust",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/verifyinheritancehelper-verify-method.md",
             "redirect_url": "/cpp/windows/verifyinheritancehelper-structure#verify",
             "redirect_document_id": false
