@@ -67,4 +67,4 @@ static const int args = Traits::args;
 
 ### Remarks
 
-Helps [ArgTraitsHelper::args](#args) keep count of the number of parameters on the `Invoke` method of a delegate interface.
+Helps `ArgTraitsHelper::args` keep count of the number of parameters on the `Invoke` method of a delegate interface.

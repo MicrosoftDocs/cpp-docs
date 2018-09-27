@@ -107,7 +107,7 @@ Address of a pointer to the interface represented by the current `ComPtrRef` obj
 
 Retrieves the address of a pointer to the interface represented by the current `ComPtrRef` object.
 
-## <a name="operator-equality"></a>ComPtrRef::operator== Operator
+## <a name="operator-equality"></a>ComPtrRef::operator==
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -158,7 +158,7 @@ The fourth and fifth operators yield `true` if object *a* is equal to object *b*
 
 Indicates whether two `ComPtrRef` objects are equal.
 
-## <a name="operator-inequality"></a>ComPtrRef::operator!= Operator
+## <a name="operator-inequality"></a>ComPtrRef::operator!=
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -209,7 +209,7 @@ The fourth and fifth operators yield `true` if object *a* is not equal to object
 
 Indicates whether two `ComPtrRef` objects are not equal.
 
-## <a name="operator-interfacetype-star-star"></a>ComPtrRef::operator InterfaceType** Operator
+## <a name="operator-interfacetype-star-star"></a>ComPtrRef::operator InterfaceType**
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -221,7 +221,7 @@ operator InterfaceType**();
 
 Deletes the current `ComPtrRef` object and returns a pointer-to-a-pointer to the interface that was represented by the `ComPtrRef` object.
 
-## <a name="operator-star"></a>ComPtrRef::operator* Operator
+## <a name="operator-star"></a>ComPtrRef::operator*
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -237,7 +237,7 @@ Pointer to the interface represented by the current `ComPtrRef` object.
 
 Retrieves the pointer to the interface represented by the current `ComPtrRef` object.
 
-## <a name="operator-t-star"></a>ComPtrRef::operator T* Operator
+## <a name="operator-t-star"></a>ComPtrRef::operator T*
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -249,7 +249,7 @@ operator T*();
 
 Returns the value of the [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member of the current `ComPtrRef` object.
 
-## <a name="operator-void-star-star"></a>ComPtrRef::operator void\*\* Operator
+## <a name="operator-void-star-star"></a>ComPtrRef::operator void\*\*
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
