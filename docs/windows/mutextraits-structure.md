@@ -56,5 +56,3 @@ inline static void Unlock(
 
 *h*<br/>
 Handle to a mutex object.
-
-### Return Value
