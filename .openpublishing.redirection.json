@@ -7286,6 +7286,76 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/safeint-safeint.md",
+            "redirect_url": "/cpp/windows/safeint-class#safeint",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safeadd.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safeadd",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safecast.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safecast",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safedivide.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safedivide",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safeequals.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safeequals",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safegreaterthan.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safegreaterthan",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safegreaterthanequals.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safegreaterthanequals",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safelessthan.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safelessthan",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safelessthanequals.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safelessthanequals",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safemodulus.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safemodulus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safemultiply.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safemultiply",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safenotequals.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safenotequals",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safesubtract.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safesubtract",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safeintexception-safeintexception.md",
+            "redirect_url": "/cpp/windows/safeintexception-class#safeintexception",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/semaphore-lock-method.md",
             "redirect_url": "/cpp/windows/semaphore-class#lock",
             "redirect_document_id": false
