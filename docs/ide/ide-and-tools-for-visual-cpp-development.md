@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 
 As part of the Visual Studio Integrated Development Environment (IDE), Microsoft Visual C++ (MSVC) shares many windows and tools in common with other languages. Many of those, including **Solution Explorer**, the code editor, and the debugger, are documented under [Visual Studio IDE](/visualstudio/ide/visual-studio-ide). Often, a shared tool or window has a slightly different set of features for C++ than for the .NET languages or JavaScript. A few windows or tools are only available in Visual Studio Professional or Visual Studio Enterprise editions.
 
-In addition to shared tools in the Visual Studio IDE, MSVC has several tools specifically for native code development. These tools are also listed in this article. For a list of which tools are available in each edition of Visual Studio, see [Visual C++ Tools and Features in Visual Studio Editions](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md).
+In addition to shared tools in the Visual Studio IDE, MSVC has several tools specifically for native code development. These tools are also listed in this article. For a list of which tools are available in each edition of Visual Studio, see [Visual C++ Tools and Features in Visual Studio Editions](visual-cpp-tools-and-features-in-visual-studio-editions.md).
 
 ## Create projects
 
@@ -28,7 +28,7 @@ Visual Studio 2017 provides support for any build system or custom build tools t
 
 - MSBuild is the native build system for Visual Studio. When you select **File** > **New** > **Project** from the main menu, you see many kinds of MSBuild *project templates* that get you started quickly developing different kinds of C++ applications.
 
-    ![Project Templates](../ide/media/vs2017-new-project.png "Visual Studio 2017 New Project Dialog")
+    ![Project Templates](media/vs2017-new-project.png "Visual Studio 2017 New Project Dialog")
 
     In general, you should use these templates for new projects unless you have a specific reason to use CMake or another project system. Some projects have a *wizard* that guides you step-by-step through the process of creating a new project. For more information, see [Creating and managing MSBuild-based projects](creating-and-managing-visual-cpp-projects.md).
 
@@ -39,7 +39,7 @@ Visual Studio 2017 provides support for any build system or custom build tools t
 
 If your program has a user interface, you can use a designer to quickly populate it with controls such as buttons, list boxes and so on. When you drag a control from the toolbox window and drop it onto the design surface, Visual Studio generates the resources and code required to make it all work. You then write the code to customize the appearance and behavior.
 
-![Designer and Toolbox](../ide/media/vs2017-toolbox-designer.png "Visual Studio 2017 Toolbox and designer")
+![Designer and Toolbox](media/vs2017-toolbox-designer.png "Visual Studio 2017 Toolbox and designer")
 
 For more information about designing a user interface for a Universal Windows Platform app, see  [Design and UI](https://developer.microsoft.com/en-us/windows/design).
 
@@ -49,7 +49,7 @@ For more information about creating a user interface for an MFC application, see
 
 After you create a project, all the project files are displayed in the **Solution Explorer** window. (A *solution* is a logical container for one or more related projects.) When you click on a .h or .cpp file in **Solution Explorer**, the file opens up in the code editor. 
 
-![Solution Explorer and code editor](../ide/media/vs2017-solution-explorer-code-editor.png "Visual Studio 2017 Solution Explorer and code editor")
+![Solution Explorer and code editor](media/vs2017-solution-explorer-code-editor.png "Visual Studio 2017 Solution Explorer and code editor")
 
 The code editor is a specialized word processor for C++ source code. It color-codes language keywords, method and variable names, and other elements of your code to make the code more readable and easier to understand.
 
@@ -65,8 +65,8 @@ For more information on adding and editing resources in native desktop C++ proje
 
 Choose **Build** > **Build Solution** on the menu bar, or enter the Ctrl+Shift+B key combination to compile and link a project. Build errors and warnings are reported in the Error List (Ctrl+\\, E). The **Output** Window (Alt+2) shows information about the build process.
 
-![Output Window and Error List](../ide/media/vs2017-output-error-list.png "Visual Studio 2017 Output window and Error List")
-For more information about MSBuild configurations, see [Working with Project Properties](../ide/working-with-project-properties.md) and [Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md).
+![Output Window and Error List](media/vs2017-output-error-list.png "Visual Studio 2017 Output window and Error List")
+For more information about MSBuild configurations, see [Working with Project Properties](working-with-project-properties.md) and [Building C++ Projects in Visual Studio](building-cpp-projects-in-visual-studio.md).
 
 You can also use the compiler (cl.exe) and many other build-related standalone tools such as NMAKE and LIB directly from the command line. For more information, see [Build C/C++ code on the command line](../build/building-on-the-command-line.md) and [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md).
 
@@ -74,7 +74,7 @@ You can also use the compiler (cl.exe) and many other build-related standalone t
 
 You can start debugging by pressing **F5**. Execution pauses on any breakpoints you have set. You can also step through code one line at a time, view the values of variables or registers, and even in some cases make changes in code and continue debugging without re-compiling. The following illustration shows a debugging session in which execution is stopped on a breakpoint and the values of the data structure are visible in the **Watch Window**.
 
-![Debugging session](../ide/media/vs2017-debug-watch.png "Visual Studio 2017 debugging session")
+![Debugging session](media/vs2017-debug-watch.png "Visual Studio 2017 debugging session")
 
 For more information, see [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio).
 
@@ -90,7 +90,7 @@ Visual Studio includes static code analysis tools that can detect potential prob
 
 You can deploy both traditional desktop applications and UWP apps to customers through the Microsoft Store. Deployment of the CRT is handled automatically behind the scenes. For more information, see [Publish Windows apps and games](/windows/uwp/publish/).
 
-You can also deploy a native C++ desktop to another computer  For more information, see [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md).
+You can also deploy a native C++ desktop to another computer  For more information, see [Deploying Desktop Applications](deploying-native-desktop-applications-visual-cpp.md).
 
 For more information about deploying a C++/CLI program, see [Deployment Guide for Developers](/dotnet/framework/deployment/deployment-guide-for-developers),
 
@@ -98,10 +98,10 @@ For more information about deploying a C++/CLI program, see [Deployment Guide fo
 
 |||
 |-|-|
-|[Visual C++ Tools and Features in Visual Studio Editions](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)|Shows which features are available in the various editions of Visual Studio.|
-|[Creating and managing MSBuild-based projects](../ide/creating-and-managing-visual-cpp-projects.md)|Provides an overview of C++ MSBuild-based projects in Visual Studio and links to other articles that explain how to create and manage them.|
+|[Visual C++ Tools and Features in Visual Studio Editions](visual-cpp-tools-and-features-in-visual-studio-editions.md)|Shows which features are available in the various editions of Visual Studio.|
+|[Creating and managing MSBuild-based projects](creating-and-managing-visual-cpp-projects.md)|Provides an overview of C++ MSBuild-based projects in Visual Studio and links to other articles that explain how to create and manage them.|
 |[CMake projects in Visual C++](cmake-tools-for-visual-cpp.md).|Describes how to build CMake or other non-MSBuild projects in Visual C++.|
 |[Building C/C++ Programs](../build/building-c-cpp-programs.md)|Describes how to build C++ projects.|
-|[Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)|Provides an overview of deployment for C++ apps and links to other articles that describe deployment in detail.|
+|[Deploying Desktop Applications](deploying-native-desktop-applications-visual-cpp.md)|Provides an overview of deployment for C++ apps and links to other articles that describe deployment in detail.|
 |[Visual C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md)|Detailed information about how to upgrade C++ applications that were created in earlier versions of Visual Studio, and also how to migrate applications that were created by using tools other than Visual Studio.|
 |[Visual C++](../visual-cpp-in-visual-studio.md)|Describes key features of Visual C++ in Visual Studio and links to the rest of the Visual C++ documentation.|
