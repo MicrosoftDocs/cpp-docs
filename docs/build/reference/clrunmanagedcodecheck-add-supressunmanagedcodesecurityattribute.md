@@ -1,5 +1,5 @@
 ---
-title: "/CLRUNMANAGEDCODECHECK (Add SupressUnmanagedCodeSecurityAttribute) | Microsoft Docs"
+title: "/CLRUNMANAGEDCODECHECK (Add SuppressUnmanagedCodeSecurityAttribute) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-tools"]
@@ -12,7 +12,7 @@ author: "corob-msft"
 ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
-# /CLRUNMANAGEDCODECHECK (Add SupressUnmanagedCodeSecurityAttribute)
+# /CLRUNMANAGEDCODECHECK (Add SuppressUnmanagedCodeSecurityAttribute)
 
 **/CLRUNMANAGEDCODECHECK** specifies whether the linker will apply <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> to linker-generated `PInvoke` calls from managed code into native DLLs.
 
