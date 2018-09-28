@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "09/27/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["SafeInt", "SafeInt.SafeInt"]
+f1_keywords: ["SafeInt", "SafeInt::SafeInt", "SafeInt.SafeInt"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SafeInt class", "SafeInt class, constructor"]
 ms.assetid: 27a8f087-2511-46f9-8d76-2aeb66ca272f
@@ -210,6 +210,10 @@ There are two options to customize the error policy. The first option is to set 
 
 > [!NOTE]
 > A customized class that handles errors from the SafeInt library should not return control to the code that called the error handler. After the error handler is called, the result of the `SafeInt` operation cannot be trusted.
+
+## Inheritance Hierarchy
+
+`SafeInt`
 
 ## Requirements
 
