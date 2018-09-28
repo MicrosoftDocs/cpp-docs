@@ -51,6 +51,16 @@ You have to make several additional settings in the **ATL Control** wizard.
 
 1. Select the **Connection points** check box. This will create support for an outgoing interface in the IDL file.
 
+You can also add interfaces to extend the control's functionality.
+
+### To extend the control's functionality
+
+1. Click **Interfaces** to open the **Interfaces** page.
+
+1. Select `IProvideClassInfo2` and click the **Up** arrow to move it to the **Supported** list.
+
+1. Select `ISpecifyPropertyPages` and click the **Up** arrow to move it to the **Supported** list.
+
 You can also make the control insertable, which means it can be embedded into applications that support embedded objects, such as Excel or Word.
 
 ### To make the control insertable

@@ -16,11 +16,30 @@ ms.workload: ["cplusplus"]
 
 ### To add the property definitions to your project
 
-1. From **Solution Explorer**, open Polygon.idl and add the following lines to the end of the `IPolyCtl : IDispatch` interface:
+1. In **Class View**, expand the `Polygon` branch.
+
+1. Right-click `IPolyCtl`.
+
+1. On the shortcut menu, click **Add**, and then click **Add Property**. The **Add Property** wizard will appear.
+
+1. Type `Sides` as the **Property Name**.
+
+1. In the drop-down list of **Property Type**, select `short`.
+
+1. Click **OK** to finish adding the property.
+
+1. From **Solution Explorer**, open Polygon.idl and replace the following lines at the end of the `IPolyCtl : IDispatch` interface:
 
     ```cpp
-    HRESULT get_Sides(short* pval);
-	HRESULT put_Sides(short newval);
+    short get_Sides();
+	void set_Sides(short value);
+    ```
+
+    with
+
+    ```cpp
+    [propget, id(1), helpstring("property Sides")] HRESULT Sides([out, retval] short *pVal);
+	[propput, id(1), helpstring("property Sides")] HRESULT Sides([in] short newVal);
     ```
 
 1. From **Solution Explorer**, open PolyCtl.h and add the following lines after the definition of `m_clrFillColor`:

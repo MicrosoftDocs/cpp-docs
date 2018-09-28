@@ -1,3 +1,3 @@
    short m_nSides;
-   STDMETHODIMP get_Sides(short* pval);
-   STDMETHODIMP put_Sides(short newval);
+   STDMETHOD(get_Sides)(short* pval);
+   STDMETHOD(put_Sides)(short newval);

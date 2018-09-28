@@ -33,7 +33,27 @@ Start by adding support for the math functions `sin` and `cos`, which will be us
 
     [!code-cpp[NVC_ATL_Windowing#47](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_1.cpp)]
 
-1. Once the polygon points are calculated, they will be stored in an array of type `POINT`, so add the array after the definition of `m_nSides` in PolyCtl.h:
+1. Implement the `IProvideClassInfo` interface to provide method information for the control, by adding the following code to PolyCtl.h. In the `CPolyCtl` class, replace line:
+
+    ```cpp
+    public CComControl<CPolyCtl>
+    ```
+
+    with
+
+    ```cpp
+    public CComControl<CPolyCtl>,
+	public IProvideClassInfo2Impl<&CLSID_PolyCtl, &DIID__IPolyCtlEvents, &LIBID_PolygonLib>
+    ```
+
+    and in `BEGIN_COM_MAP(CPolyCtl)`, add the lines:
+
+    ```cpp
+    COM_INTERFACE_ENTRY(IProvideClassInfo)
+	COM_INTERFACE_ENTRY(IProvideClassInfo2)
+    ```
+
+1. Once the polygon points are calculated, they will be stored in an array of type `POINT`, so add the array after the definition statement `short m_nSides;` in PolyCtl.h:
 
     [!code-cpp[NVC_ATL_Windowing#48](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_2.h)]
 
@@ -88,11 +108,24 @@ Rebuild the control. Make sure the PolyCtl.htm file is closed if it is still ope
 1. Build and start the ActiveX Control Test Container. The [TSTCON Sample: ActiveX Control Test Container](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/ole/TstCon) can be found on GitHub.
 
     > [!NOTE]
-    > For errors involving `ATL::CW2AEX`, replace line `TRACE( "XActiveScriptSite::GetItemInfo( %s )\n", pszNameT );` with `TRACE( "XActiveScriptSite::GetItemInfo( %s )\n", pszNameT.m_psz );`, and line `TRACE( "Source Text: %s\n", COLE2CT( bstrSourceLineText ) );` with `TRACE( "Source Text: %s\n", bstrSourceLineText );`.
+    > For errors involving `ATL::CW2AEX`, in Script.Cpp, replace line `TRACE( "XActiveScriptSite::GetItemInfo( %s )\n", pszNameT );` with `TRACE( "XActiveScriptSite::GetItemInfo( %s )\n", pszNameT.m_psz );`, and line `TRACE( "Source Text: %s\n", COLE2CT( bstrSourceLineText ) );` with `TRACE( "Source Text: %s\n", bstrSourceLineText );`.
+    > For errors involving `HMONITOR`, open StdAfx.h in the `TCProps` project and replace:
+    > ```
+    > #ifndef WINVER  
+    > #define WINVER 0x0400   
+    > #endif
+    > ```
+    > with
+    > ```
+    > #ifndef WINVER  
+    > #define WINVER 0x0500
+    > #define _WIN32_WINNT 0x0500
+    > #endif
+    > ```
 
 1. In **Test Container**, on the **Edit** menu, click **Insert New Control**.
 
-1. Locate your control, which will be called `PolyCtl Class`, and click **OK**. You will see a green triangle within a circle.
+1. Locate your control, which will be called `PolyCtl class`, and click **OK**. You will see a green triangle within a circle.
 
 Try changing the number of sides by following the next procedure. To modify properties on a dual interface from within **Test Container**, use **Invoke Methods**.
 
@@ -102,7 +135,7 @@ Try changing the number of sides by following the next procedure. To modify prop
 
     The **Invoke Method** dialog box is displayed.
 
-1. Select the **PropPut** version of the **Sides** property from the **Method Name** drop-down list box.
+1. Select the **PropPut** **put_Sides** version of the **Sides** property from the **Method Name** drop-down list box.
 
 1. Type `5` in the **Parameter Value** box, click **Set Value**, and click **Invoke**.
 

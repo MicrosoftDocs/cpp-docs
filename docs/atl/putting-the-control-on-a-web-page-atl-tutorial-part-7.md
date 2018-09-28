@@ -14,7 +14,38 @@ ms.workload: ["cplusplus"]
 
 Your control is now finished. To see your control work in a real-world situation, put it on a Web page. An HTML file that contains the control was created when you defined your control. Open the PolyCtl.htm file from **Solution Explorer**, and you can see your control on a Web page.
 
-In this step, you will script the Web page to respond to events. You will also modify the control to let Internet Explorer know that the control is safe for scripting.
+In this step, you will add functionality to the control and script the Web page to respond to events. You will also modify the control to let Internet Explorer know that the control is safe for scripting.
+
+## Adding new functionality
+
+### To add control features
+
+1. Open PolyCtl.cpp and replace the following code:
+
+    ```cpp
+    if (PtInRegion(hRgn, xPos, yPos))
+        Fire_ClickIn(xPos, yPos);
+    else
+        Fire_ClickOut(xPos, yPos);
+    ```
+
+    with
+
+    ```cpp
+    short temp = m_nSides;
+    if (PtInRegion(hRgn, xPos, yPos))
+    {
+        Fire_ClickIn(xPos, yPos);
+        put_Sides(++temp);
+    }
+    else
+    {
+        Fire_ClickOut(xPos, yPos);
+        put_Sides(--temp);
+    }
+    ```
+
+The shape will now add or remove sides depending on where you click.
 
 ## Scripting the Web Page
 
@@ -28,10 +59,10 @@ The control does not do anything yet, so change the Web page to respond to the e
     <SCRIPT LANGUAGE="VBScript">
     <!--
         Sub PolyCtl_ClickIn(x, y)
-            PolyCtl.Sides = PolyCtl.Sides + 1
+            MsgBox("Clicked (" & x & ", " & y & ") - adding side")
         End Sub
         Sub PolyCtl_ClickOut(x, y)
-            PolyCtl.Sides = PolyCtl.Sides - 1
+            MsgBox("Clicked (" & x & ", " & y & ") - removing side")
         End Sub
     -->
     </SCRIPT>
@@ -59,15 +90,15 @@ You can programmatically alert Internet Explorer that it does not need to displa
 
 1. Add the following line to the end of the list of inherited classes in PolyCtl.h and add a comma to the previous line:
 
-[!code-cpp[NVC_ATL_Windowing#62](../atl/codesnippet/cpp/putting-the-control-on-a-web-page-atl-tutorial-part-7_1.h)]
+    [!code-cpp[NVC_ATL_Windowing#62](../atl/codesnippet/cpp/putting-the-control-on-a-web-page-atl-tutorial-part-7_1.h)]
 
 1. Add the following line to the COM map in PolyCtl.h:
 
-[!code-cpp[NVC_ATL_Windowing#63](../atl/codesnippet/cpp/putting-the-control-on-a-web-page-atl-tutorial-part-7_2.h)]
+    [!code-cpp[NVC_ATL_Windowing#63](../atl/codesnippet/cpp/putting-the-control-on-a-web-page-atl-tutorial-part-7_2.h)]
 
 ## Building and Testing the Control
 
-Build the control. Once the build has finished, open PolyCtl.htm in browser view again. This time, the Web page should be displayed directly without the Safety Alert dialog box. Click inside the polygon; the number of sides increases by one. Click outside the polygon to reduce the number of sides. If you try to reduce the number of sides below three, you will see the error message that you set.
+Build the control. Once the build has finished, open PolyCtl.htm in browser view again. This time, the Web page should be displayed directly without the **Safety Alert** dialog box. Click inside the polygon; the number of sides increases by one. Click outside the polygon to reduce the number of sides.
 
 [Back to Step 6](../atl/adding-a-property-page-atl-tutorial-part-6.md)
 

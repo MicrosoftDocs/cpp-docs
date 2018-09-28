@@ -32,23 +32,12 @@ Now add the `ClickIn` and `ClickOut` methods to the `_IPolyCtlEvents` interface.
 
 ### To add the ClickIn and ClickOut methods
 
-1. In **Solution Explorer**, open Polygon.idl and add the following code under `importlib("stdole2.tlb");` in the PolygonLib library:
+1. In **Solution Explorer**, open Polygon.idl and add the following code under `methods:` in the `dispInterface_IPolyCtlEvents` declaration of the PolygonLib library:
 
     ```cpp
-    [
-		uuid(4a0e6fd4-8d96-4f69-906d-7ec7700c9a24)
-	]
-	dispinterface _IPolyCtlEvents
-	{
-	   properties:
-	   methods:
-		  [id(1), helpstring("method ClickIn")] void ClickIn([in] LONG x,[in] LONG y);
-		  [id(2), helpstring("method ClickOut")] void ClickOut([in] LONG x,[in] LONG y);
-	};
+   [id(1), helpstring("method ClickIn")] void ClickIn([in] LONG x,[in] LONG y);
+   [id(2), helpstring("method ClickOut")] void ClickOut([in] LONG x,[in] LONG y);
     ```
-
-    > [!NOTE]
-    > It is best practice to use your own UUIDs. For more information, see [uuid (C++ Attributes)](https://docs.microsoft.com/cpp/windows/uuid-cpp-attributes).
 
 The `ClickIn` and `ClickOut` methods take the x and y coordinates of the clicked point as parameters.
 
@@ -76,59 +65,60 @@ To help implement `IConnectionPoint`, you will use the Implement Connection Poin
 
 ### To implement the connection points
 
-1. In **Solution Explorer**, open _IPolyCtlEvents_CP.h and add the following code under the `public:` statement:
+1. In **Solution Explorer**, open _IPolyCtlEvents_CP.h and add the following code under the `public:` statement in the `CProxy_IPolyCtlEvents` class:
 
     ```cpp
-    VOID Fire_ClickIn(WORD xPos, WORD yPos)
+    VOID Fire_ClickIn(LONG x, LONG y)
 	{
 		T* pT = static_cast<T*>(this);
 		int nConnectionIndex;
+		CComVariant* pvars = new CComVariant[2];
 		int nConnections = m_vec.GetSize();
 
-		for (nConnectionIndex = 0;
-			nConnectionIndex < nConnections;
-			nConnectionIndex++)
+		for (nConnectionIndex = 0; nConnectionIndex < nConnections; nConnectionIndex++)
 		{
 			pT->Lock();
 			CComPtr<IUnknown> sp = m_vec.GetAt(nConnectionIndex);
 			pT->Unlock();
-			IDispatch* pDispatch =
-				reinterpret_cast<IDispatch*>(sp.p);
+			IDispatch* pDispatch = reinterpret_cast<IDispatch*>(sp.p);
 			if (pDispatch != NULL)
 			{
-				DISPPARAMS disp = { NULL, NULL, 0, 0 };
-				pDispatch->Invoke(0x1, IID_NULL,
-					LOCALE_USER_DEFAULT,
-					DISPATCH_METHOD, &disp,
-					NULL, NULL, NULL);
+				pvars[1].vt = VT_I4;
+				pvars[1].lVal = x;
+				pvars[0].vt = VT_I4;
+				pvars[0].lVal = y;
+				DISPPARAMS disp = { pvars, NULL, 2, 0 };
+				pDispatch->Invoke(0x1, IID_NULL, LOCALE_USER_DEFAULT, DISPATCH_METHOD, &disp, NULL, NULL, NULL);
 			}
 		}
+		delete[] pvars;
+
 	}
-
-	VOID Fire_ClickOut(WORD xPos, WORD yPos)
+	VOID Fire_ClickOut(LONG x, LONG y)
 	{
 		T* pT = static_cast<T*>(this);
 		int nConnectionIndex;
+		CComVariant* pvars = new CComVariant[2];
 		int nConnections = m_vec.GetSize();
 
-		for (nConnectionIndex = 0;
-			nConnectionIndex < nConnections;
-			nConnectionIndex++)
+		for (nConnectionIndex = 0; nConnectionIndex < nConnections; nConnectionIndex++)
 		{
 			pT->Lock();
 			CComPtr<IUnknown> sp = m_vec.GetAt(nConnectionIndex);
 			pT->Unlock();
-			IDispatch* pDispatch =
-				reinterpret_cast<IDispatch*>(sp.p);
+			IDispatch* pDispatch = reinterpret_cast<IDispatch*>(sp.p);
 			if (pDispatch != NULL)
 			{
-				DISPPARAMS disp = { NULL, NULL, 0, 0 };
-				pDispatch->Invoke(0x2, IID_NULL,
-					LOCALE_USER_DEFAULT,
-					DISPATCH_METHOD, &disp,
-					NULL, NULL, NULL);
+				pvars[1].vt = VT_I4;
+				pvars[1].lVal = x;
+				pvars[0].vt = VT_I4;
+				pvars[0].lVal = y;
+				DISPPARAMS disp = { pvars, NULL, 2, 0 };
+				pDispatch->Invoke(0x2, IID_NULL, LOCALE_USER_DEFAULT, DISPATCH_METHOD, &disp, NULL, NULL, NULL);
 			}
 		}
+		delete[] pvars;
+
 	}
     ```
 

@@ -72,9 +72,9 @@ Now add the fields that you want to appear on the property page.
 
 1. Resize the label box so that it fits the size of the text.
 
-1. Drag an Edit control from the Toolbox to the right of the label.
+1. Drag an **Edit Control** from the **Toolbox** to the right of the label.
 
-1. Finally, change the **ID** of the Edit control to `IDC_SIDES` using the **Properties** window.
+1. Finally, change the **ID** of the edit control to `IDC_SIDES` using the **Properties** window.
 
 This completes the process of creating the property page resource.
 

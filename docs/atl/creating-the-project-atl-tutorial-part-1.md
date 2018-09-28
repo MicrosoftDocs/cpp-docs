@@ -19,16 +19,30 @@ This tutorial walks you step-by-step through a nonattributed ATL project that cr
 
 > [!NOTE]
 > This tutorial creates the same source code as the Polygon sample. If you want to avoid entering the source code manually, you can download it from the [Polygon sample abstract](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/Polygon). You can then refer to the Polygon source code as you work through the tutorial, or use it to check for errors in your own project.
+> To compile, open stdafx.h and replace:
+> ```
+> #ifndef WINVER  
+> #define WINVER 0x0400   
+> #endif
+> ```
+> with
+> ```
+> #ifndef WINVER  
+> #define WINVER 0x0500
+> #define _WIN32_WINNT 0x0500
+> #endif
+> ```
+> The compiler will still complain about `regsvr32` not exiting correctly, but you should still have the control's DLL built and available for use.
 
 ### To create the initial ATL project using the ATL Project Wizard
 
 1. In the Visual Studio development environment, click **New** on the **File** menu, and then click **Project**.
 
-1. Click the **Visual C++ Projects** folder and select **ATL Project**.
+1. Open the **Visual C++** tab and select **MFC/ATL**. Select **ATL Project**.
 
 1. Type *Polygon* as the project name.
 
-    The location for the source code will usually default to \Users\\<username>\source\repos, and a new folder will be created automatically.
+    The location for the source code will usually default to \Users\\\<username>\source\repos, and a new folder will be created automatically.
 
 1. Click **OK** and the **ATL Project** wizard opens.
 
