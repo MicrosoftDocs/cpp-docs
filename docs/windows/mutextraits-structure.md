@@ -1,12 +1,12 @@
 ---
 title: "MutexTraits Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/27/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::MutexTraits"]
+f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::MutexTraits", "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::MutexTraits::Unlock"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["MutexTraits structure"]
+helpviewer_keywords: ["Microsoft::WRL::Wrappers::HandleTraits::MutexTraits structure", "Microsoft::WRL::Wrappers::HandleTraits::MutexTraits::Unlock method"]
 ms.assetid: 6582df80-b9ba-4892-948f-d572a3b23d54
 author: "mikeblome"
 ms.author: "mblome"
@@ -26,9 +26,9 @@ struct MutexTraits : HANDLENullTraits;
 
 ### Public Methods
 
-|Name|Description|
-|----------|-----------------|
-|[MutexTraits::Unlock Method](../windows/mutextraits-unlock-method.md)|Releases exclusive control of a shared resource.|
+Name                           | Description
+------------------------------ | ------------------------------------------------
+[MutexTraits::Unlock](#unlock) | Releases exclusive control of a shared resource.
 
 ## Inheritance Hierarchy
 
@@ -42,6 +42,17 @@ struct MutexTraits : HANDLENullTraits;
 
 **Namespace:** Microsoft::WRL::Wrappers::HandleTraits
 
-## See Also
+## <a name="unlock"></a>MutexTraits::Unlock Method
 
-[Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+Releases exclusive control of a shared resource.
+
+```cpp
+inline static void Unlock(
+   _In_ Type h
+);
+```
+
+### Parameters
+
+*h*<br/>
+Handle to a mutex object.

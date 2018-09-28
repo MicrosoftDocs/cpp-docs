@@ -6561,6 +6561,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/criticalsectiontraits-getinvalidvalue-method.md",
+            "redirect_url": "/cpp/windows/criticalsectiontraits-structure#getinvalidvalue",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/criticalsectiontraits-unlock-method.md",
+            "redirect_url": "/cpp/windows/criticalsectiontraits-structure#unlock",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/deferrableeventargs-getdeferral-method.md",
             "redirect_url": "/cpp/windows/deferrableeventargs-class#getdeferral",
             "redirect_document_id": false
@@ -6711,6 +6721,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/handlenulltraits-close-method.md",
+            "redirect_url": "/cpp/windows/handlenulltraits-structure#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlenulltraits-getinvalidvalue-method.md",
+            "redirect_url": "/cpp/windows/handlenulltraits-structure#getinvalidvalue",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/handlet-tilde-handlet-destructor.md",
             "redirect_url": "/cpp/windows/handlet-class#tilde-handlet",
             "redirect_document_id": false
@@ -6758,6 +6778,16 @@
         {
             "source_path": "docs/windows/handlet-operator-assign-operator.md",
             "redirect_url": "/cpp/windows/handlet-class#operator-assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handletraits-close-method.md",
+            "redirect_url": "/cpp/windows/handletraits-structure#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handletraits-getinvalidvalue-method.md",
+            "redirect_url": "/cpp/windows/handletraits-structure#getinvalidvalue",
             "redirect_document_id": false
         },
         {
@@ -7166,6 +7196,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/mutextraits-unlock-method.md",
+            "redirect_url": "/cpp/windows/mutextraits-structure#unlock",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/roinitializewrapper-roinitializewrapper-constructor.md",
             "redirect_url": "/cpp/windows/roinitializewrapper-class#roinitializewrapper",
             "redirect_document_id": false
@@ -7266,6 +7301,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/semaphoretraits-unlock-method.md",
+            "redirect_url": "/cpp/windows/semaphoretraits-structure#unlock",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/simpleactivationfactory-activateinstance-method.md",
             "redirect_url": "/cpp/windows/simpleactivationfactory-class#activateinstance",
             "redirect_document_id": false
@@ -7318,6 +7358,26 @@
         {
             "source_path": "docs/windows/srwlock-trylockshared-method.md",
             "redirect_url": "/cpp/windows/srwlock-class#trylockshared",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlockexclusivetraits-getinvalidvalue-method.md",
+            "redirect_url": "/cpp/windows/srwlockexclusivetraits-structure#getinvalidvalue",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlockexclusivetraits-unlock-method.md",
+            "redirect_url": "/cpp/windows/srwlockexclusivetraits-structure#unlock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlocksharedtraits-getinvalidvalue-method.md",
+            "redirect_url": "/cpp/windows/srwlocksharedtraits-structure#getinvalidvalue",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlocksharedtraits-unlock-method.md",
+            "redirect_url": "/cpp/windows/srwlocksharedtraits-structure#unlock",
             "redirect_document_id": false
         },
         {
