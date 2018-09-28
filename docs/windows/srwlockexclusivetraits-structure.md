@@ -1,12 +1,12 @@
 ---
 title: "SRWLockExclusiveTraits Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/27/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits"]
+f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits", "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits::GetInvalidValue", "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits::Unlock"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["SRWLockExclusiveTraits structure"]
+helpviewer_keywords: ["Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits structure","Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits::GetInvalidValue method", "Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits::Unlock method"]
 ms.assetid: 38a996ef-c2d7-4886-b413-a426ecee8f05
 author: "mikeblome"
 ms.author: "mblome"
@@ -26,16 +26,16 @@ struct SRWLockExclusiveTraits;
 
 ### Public Typedefs
 
-|Name|Description|
-|----------|-----------------|
-|`Type`|Synonym for a pointer to the [SRWLOCK](../windows/srwlock-class.md) class.|
+Name   | Description
+------ | --------------------------------------------------------------------------
+`Type` | Synonym for a pointer to the [SRWLOCK](../windows/srwlock-class.md) class.
 
 ### Public Methods
 
-|Name|Description|
-|----------|-----------------|
-|[SRWLockExclusiveTraits::GetInvalidValue Method](../windows/srwlockexclusivetraits-getinvalidvalue-method.md)|Retrieves an **SRWLockExclusiveTraits** object that is always invalid.|
-|[SRWLockExclusiveTraits::Unlock Method](../windows/srwlockexclusivetraits-unlock-method.md)|Releases exclusive control of the specified `SRWLock` object.|
+Name                                                        | Description
+----------------------------------------------------------- | --------------------------------------------------------------------
+[SRWLockExclusiveTraits::GetInvalidValue](#getinvalidvalue) | Retrieves an `SRWLockExclusiveTraits` object that is always invalid.
+[SRWLockExclusiveTraits::Unlock](#unlock)                   | Releases exclusive control of the specified `SRWLock` object.
 
 ## Inheritance Hierarchy
 
@@ -47,6 +47,29 @@ struct SRWLockExclusiveTraits;
 
 **Namespace:** Microsoft::WRL::Wrappers::HandleTraits
 
-## See Also
+## <a name="getinvalidvalue"></a>SRWLockExclusiveTraits::GetInvalidValue
 
-[Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+Retrieves an `SRWLockExclusiveTraits` object that is always invalid.
+
+```cpp
+inline static Type GetInvalidValue();
+```
+
+### Return Value
+
+An empty `SRWLockExclusiveTraits` object.
+
+## <a name="unlock"></a>SRWLockExclusiveTraits::Unlock
+
+Releases exclusive control of the specified `SRWLock` object.
+
+```cpp
+inline static void Unlock(
+   _In_ Type srwlock
+);
+```
+
+### Parameters
+
+*srwlock*<br/>
+Handle to an `SRWLock` object.
