@@ -6411,6 +6411,41 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
+            "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/activationfactory-addref-method.md",
+            "redirect_url": "/cpp/windows/activationfactory-class#addref",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/activationfactory-getiids-method.md",
+            "redirect_url": "/cpp/windows/activationfactory-class#getiids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/activationfactory-getruntimeclassname-method.md",
+            "redirect_url": "/cpp/windows/activationfactory-class#getruntimeclassname",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/activationfactory-gettrustlevel-method.md",
+            "redirect_url": "/cpp/windows/activationfactory-class#gettrustlevel",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/activationfactory-queryinterface-method.md",
+            "redirect_url": "/cpp/windows/activationfactory-class#queryinterface",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/activationfactory-release-method.md",
+            "redirect_url": "/cpp/windows/activationfactory-class#release",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/argtraits-args-constant.md",
             "redirect_url": "/cpp/windows/argtraits-structure#args",
             "redirect_document_id": false
@@ -6423,6 +6458,31 @@
         {
             "source_path": "docs/windows/boolstruct-member-data-member.md",
             "redirect_url": "/cpp/windows/boolstruct-structure#member",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/chaininterfaces-cancastto-method.md",
+            "redirect_url": "/cpp/windows/chaininterfaces-structure#cancastto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/chaininterfaces-casttounknown-method.md",
+            "redirect_url": "/cpp/windows/chaininterfaces-structure#casttounknown",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/chaininterfaces-fillarraywithiid-method.md",
+            "redirect_url": "/cpp/windows/chaininterfaces-structure#fillarraywithiid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/chaininterfaces-iidcount-constant.md",
+            "redirect_url": "/cpp/windows/chaininterfaces-structure#iidcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/chaininterfaces-verify-method.md",
+            "redirect_url": "/cpp/windows/chaininterfaces-structure#verify",
             "redirect_document_id": false
         },
         {
