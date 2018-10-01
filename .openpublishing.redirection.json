@@ -6631,6 +6631,116 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/comptr-tilde-comptr-destructor.md",
+            "redirect_url": "/cpp/windows/comptr-class#tilde-comptr",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-as-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#as",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-asiid-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#asiid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-asweak-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#asweak",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-attach-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#attach",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-comptr-constructor.md",
+            "redirect_url": "/cpp/windows/comptr-class#comptr",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-copyto-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#copyto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-detach-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#detach",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-get-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#get",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-getaddressof-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#getaddressof",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-internaladdref-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#internaladdref",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-internalrelease-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#internalrelease",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-operator-microsoft-wrl-details-booltype-operator.md",
+            "redirect_url": "/cpp/windows/comptr-class#operator-microsoft-wrl-details-booltype",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-operator-ampersand-operator.md",
+            "redirect_url": "/cpp/windows/comptr-class#operator-ampersand",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-operator-assign-operator.md",
+            "redirect_url": "/cpp/windows/comptr-class#operator-assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-operator-arrow-operator.md",
+            "redirect_url": "/cpp/windows/comptr-class#operator-arrow",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-ptr-data-member.md",
+            "redirect_url": "/cpp/windows/comptr-class#ptr",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-releaseandgetaddressof-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#releaseandgetaddressof",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-reset.md",
+            "redirect_url": "/cpp/windows/comptr-class#reset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-swap-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#swap",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-operator-equality-operator.md",
+            "redirect_url": "/cpp/windows/comptr-class#operator-equality",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-operator-inequality-operator.md",
+            "redirect_url": "/cpp/windows/comptr-class#operator-inequality",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/comptrref-comptrref-constructor.md",
             "redirect_url": "/cpp/windows/comptrref-class#comptrref",
             "redirect_document_id": false
