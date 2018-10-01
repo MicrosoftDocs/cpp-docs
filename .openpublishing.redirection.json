@@ -6456,6 +6456,126 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/asyncbase-asyncbase-constructor.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#asyncbase",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-cancel-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#cancel",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-checkvalidstatefordelegatecall-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#checkvalidstatefordelegatecall",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-checkvalidstateforresultscall-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#checkvalidstateforresultscall",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-close-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-continueasyncoperation-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#continueasyncoperation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-currentstatus-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#currentstatus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-errorcode-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#errorcode",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-firecompletion-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#firecompletion",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-fireprogress-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#fireprogress",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-get-errorcode-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#get-errorcode",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-get-id-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#get-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-get-status-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#get-status",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-getoncomplete-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#getoncomplete",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-getonprogress-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#getonprogress",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-oncancel-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#oncancel",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-onclose-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#onclose",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-onstart-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#onstart",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-put-id-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#put-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-putoncomplete-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#putoncomplete",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-putonprogress-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#putonprogress",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-start-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#start",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-trytransitiontocompleted-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#trytransitiontocompleted",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-trytransitiontoerror-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#trytransitiontoerror",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/boolstruct-member-data-member.md",
             "redirect_url": "/cpp/windows/boolstruct-structure#member",
             "redirect_document_id": false
