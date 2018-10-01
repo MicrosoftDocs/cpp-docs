@@ -35,6 +35,14 @@ Visual Studio 2017 provides support for any build system or custom build tools t
 - **CMake** is a cross-platform build system that is integrated into the Visual Studio IDE when you install the Desktop development with C++ workload. For more information, see [CMake projects in Visual C++](cmake-tools-for-visual-cpp.md).
 - Any other C++ build system, including a loose collection of files, is supported via the **Open Folder** feature. You create simple JSON files to invoke your build program and configure debugging sessions. For more information, see [Open Folder projects in Visual C++](non-msbuild-projects.md).
 
+## Add to source control
+
+Source control enables you to coordinate work among multiple developers, isolate in-progress work from production code, and backup your source code. Visual Studio supports Git and [Team Foundation Version Control \(TFVC\)](/azure/devops/repos/tfvc/) through its **Team Explorer** window.
+
+![Team Explorer](media/vs2017-team-explorer.png "Visual Studio 2017 Team Explorer")
+
+For more information about Git integration with repos in Azure, see [Share your code with Visual Studio 2017 and Azure Repos Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017). For information about about Git integration with GitHub, see [GitHub Extension for Visual Studio](https://visualstudio.github.com/).
+
 ## Create user interfaces with designers
 
 If your program has a user interface, you can use a designer to quickly populate it with controls such as buttons, list boxes and so on. When you drag a control from the toolbox window and drop it onto the design surface, Visual Studio generates the resources and code required to make it all work. You then write the code to customize the appearance and behavior.
