@@ -19,4 +19,4 @@ cannot open program database pdb
 This error can be caused by disk error.
 
 
-For more information, see [http://support.microsoft.com/default.aspx?scid=kb;en-us;246007](http://support.microsoft.com/default.aspx?scid=kb;en-us;246007).
+For more information, see [http://support.microsoft.com/default.aspx?scid=kb;246007](http://support.microsoft.com/default.aspx?scid=kb;246007).
