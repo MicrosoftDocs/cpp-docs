@@ -124,7 +124,7 @@ The ATL Property Page template and wizard do not add the property page to your c
 
 ### To add the property page
 
-1. Open PolyCtl.h and add this line to the property map:
+1. Open PolyCtl.h and add these lines to the property map:
 
     [!code-cpp[NVC_ATL_Windowing#60](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_3.h)]
 
@@ -138,7 +138,7 @@ The three parameters to the macro are the property description, the DISPID of th
 
 ## Building and Testing the Control
 
-Now build that control and insert it into ActiveX Control Test Container. In **Test Container**, on the **Edit** menu, click **PolyCtl Class Object**. The property page appears; click the **Polygon** tab.
+Now build that control and insert it into ActiveX Control Test Container. In **Test Container**, on the **Edit** menu, click **PolyCtl Class Object**. The property page appears with the information you added.
 
 The **Apply** button is initially disabled. Start typing a value in the **Sides** box and the **Apply** button will become enabled. After you have finished entering the value, click the **Apply** button. The control display changes, and the **Apply** button is again disabled. Try entering an invalid value. You will see a message box containing the error description that you set from the `put_Sides` function.
 

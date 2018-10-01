@@ -107,7 +107,7 @@ Now you can build the control to see it in action.
     Once the control finishes building, right-click PolyCtl.htm in **Solution Explorer** and select **View in Browser**. The HTML Web page containing the control will be displayed. You should see a page with the title “ATL 8.0 test page for object PolyCtl” and the text PolyCtl. This is your control.
 
 > [!NOTE]
-> If the control isn't visible, note that some browsers require settings adjustments to run ActiveX controls. Please refer to the browser's documentation on how to enable ActiveX controls.
+> If the control isn't visible, know that some browsers require settings adjustments to run ActiveX controls. Please refer to the browser's documentation on how to enable ActiveX controls.
 
 > [!NOTE]
 > When completing this tutorial, if you receive an error message where the DLL file cannot be created, close the PolyCtl.htm file and the ActiveX Control Test container and build the solution again. If you still cannot create the DLL, reboot the computer or log off (if you are using Terminal Services).

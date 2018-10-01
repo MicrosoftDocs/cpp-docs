@@ -108,7 +108,7 @@ Rebuild the control. Make sure the PolyCtl.htm file is closed if it is still ope
 1. Build and start the ActiveX Control Test Container. The [TSTCON Sample: ActiveX Control Test Container](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/ole/TstCon) can be found on GitHub.
 
     > [!NOTE]
-    > For errors involving `ATL::CW2AEX`, in Script.Cpp, replace line `TRACE( "XActiveScriptSite::GetItemInfo( %s )\n", pszNameT );` with `TRACE( "XActiveScriptSite::GetItemInfo( %s )\n", pszNameT.m_psz );`, and line `TRACE( "Source Text: %s\n", COLE2CT( bstrSourceLineText ) );` with `TRACE( "Source Text: %s\n", bstrSourceLineText );`.
+    > For errors involving `ATL::CW2AEX`, in Script.Cpp, replace line `TRACE( "XActiveScriptSite::GetItemInfo( %s )\n", pszNameT );` with `TRACE( "XActiveScriptSite::GetItemInfo( %s )\n", pszNameT.m_psz );`, and line `TRACE( "Source Text: %s\n", COLE2CT( bstrSourceLineText ) );` with `TRACE( "Source Text: %s\n", bstrSourceLineText );`.<br/>
     > For errors involving `HMONITOR`, open StdAfx.h in the `TCProps` project and replace:
     > ```
     > #ifndef WINVER  
@@ -135,7 +135,7 @@ Try changing the number of sides by following the next procedure. To modify prop
 
     The **Invoke Method** dialog box is displayed.
 
-1. Select the **PropPut** **put_Sides** version of the **Sides** property from the **Method Name** drop-down list box.
+1. Select the **PropPut** version of the **Sides** property from the **Method Name** drop-down list box.
 
 1. Type `5` in the **Parameter Value** box, click **Set Value**, and click **Invoke**.
 

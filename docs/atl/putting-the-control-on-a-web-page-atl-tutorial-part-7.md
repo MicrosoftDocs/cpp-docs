@@ -77,7 +77,7 @@ You have added some VBScript code that gets the Sides property from the control 
 You can view the Web page with the control in Internet Explorer or, more conveniently, use the Web browser view built into Visual C++. To see your control in the Web browser view, right-click PolyCtl.htm, and click **View in Browser**.
 
 > [!NOTE]
-> If the control isn't visible, note that some browsers require settings adjustments to run ActiveX controls. Please refer to the browser's documentation on how to enable ActiveX controls.
+> If the control isn't visible, know that some browsers require settings adjustments to run ActiveX controls. Please refer to the browser's documentation on how to enable ActiveX controls.
 
 Based on your current Internet Explorer security settings, you may receive a Security Alert dialog box stating that the control may not be safe to script and could potentially do damage. For example, if you had a control that displayed a file but also had a `Delete` method that deleted a file, it would be safe if you just viewed it on a page. It would be not safe to script, however, because someone could call the `Delete` method.
 
