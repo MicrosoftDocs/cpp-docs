@@ -25,11 +25,11 @@ class stack
 
 ### Parameters
 
-*Type*
- The element data type to be stored in the stack.
+*Type*<br/>
+The element data type to be stored in the stack.
 
-*Container*
- The type of the underlying container used to implement the stack. The default value is the class `deque`*\<Type>*.
+*Container*<br/>
+The type of the underlying container used to implement the stack. The default value is the class `deque`*\<Type>*.
 
 ## Remarks
 
@@ -204,8 +204,8 @@ void push(const Type& val);
 
 ### Parameters
 
-*val*
- The element added to the top of the stack.
+*val*<br/>
+The element added to the top of the stack.
 
 ### Remarks
 
@@ -312,8 +312,8 @@ explicit stack(const container_type& right);
 
 ### Parameters
 
-*right*
- The container of which the constructed stack is to be a copy.
+*right*<br/>
+The container of which the constructed stack is to be a copy.
 
 ### Example
 

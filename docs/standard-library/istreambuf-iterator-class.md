@@ -26,11 +26,11 @@ class istreambuf_iterator
 
 ### Parameters
 
-*CharType*
- The type that represents the character type for the istreambuf_iterator.
+*CharType*<br/>
+The type that represents the character type for the istreambuf_iterator.
 
-*Traits*
- The type that represents the character type for the istreambuf_iterator. This argument is optional and the default value is `char_traits`\< *CharType>.*
+*Traits*<br/>
+The type that represents the character type for the istreambuf_iterator. This argument is optional and the default value is `char_traits`\< *CharType>.*
 
 ## Remarks
 
@@ -129,8 +129,8 @@ bool equal(const istreambuf_iterator<CharType, Traits>& right) const;
 
 ### Parameters
 
-*right*
- The iterator for which to check for equality.
+*right*<br/>
+The iterator for which to check for equality.
 
 ### Return Value
 
@@ -194,9 +194,9 @@ int main( )
    istreambuf_iterator<char>::int_type inttype1 = 100;
    cout << "The inttype1 = " << inttype1 << "." << endl;
 }
-\* Output:
+/* Output:
 The inttype1 = 100.
-*\
+*/
 ```
 
 ## <a name="istream_type"></a>  istreambuf_iterator::istream_type
@@ -226,11 +226,11 @@ istreambuf_iterator(istream_type& _Istr) throw();
 
 ### Parameters
 
-*strbuf*
- The input stream buffer to which the `istreambuf_iterator` is being attached.
+*strbuf*<br/>
+The input stream buffer to which the `istreambuf_iterator` is being attached.
 
-*_Istr*
- The input stream to which the `istreambuf_iterator` is being attached.
+*_Istr*<br/>
+The input stream to which the `istreambuf_iterator` is being attached.
 
 ### Remarks
 
@@ -301,7 +301,7 @@ int main( )
    ostreambuf_iterator<char> outpos ( cout );
    while ( inpos != endpos )
    {
- *outpos = *inpos;   //Put value of outpos equal to inpos
+*outpos = *inpos;   //Put value of outpos equal to inpos
       ++inpos;
       ++outpos;
    }
@@ -346,7 +346,7 @@ int main( )
    ostreambuf_iterator<char> outpos ( cout );
    while ( inpos != endpos )
    {
- *outpos = *inpos;
+*outpos = *inpos;
       ++inpos;   //Increment istreambuf_iterator
       ++outpos;
    }

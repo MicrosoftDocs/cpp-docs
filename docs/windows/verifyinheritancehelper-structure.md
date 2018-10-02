@@ -1,12 +1,12 @@
 ---
 title: "VerifyInheritanceHelper Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/24/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["implements/Microsoft::WRL::Details::VerifyInheritanceHelper"]
+f1_keywords: ["implements/Microsoft::WRL::Details::VerifyInheritanceHelper", "implements/Microsoft::WRL::Details::VerifyInheritanceHelper::Verify"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["VerifyInheritanceHelper structure"]
+helpviewer_keywords: ["Microsoft::WRL::Details::VerifyInheritanceHelper structure", "Microsoft::WRL::Details::VerifyInheritanceHelper::Verify method"]
 ms.assetid: 8a48a702-0f71-4807-935b-8311f0a7a8b6
 author: "mikeblome"
 ms.author: "mblome"
@@ -32,10 +32,10 @@ struct VerifyInheritanceHelper<I, Nil>;
 
 ### Parameters
 
-*I*  
+*I*<br/>
 A type.
 
-*Base*  
+*Base*<br/>
 Another type.
 
 ## Remarks
@@ -46,9 +46,9 @@ Tests whether one interface is derived from another interface.
 
 ### Public Methods
 
-|Name|Description|
-|----------|-----------------|
-|[VerifyInheritanceHelper::Verify Method](../windows/verifyinheritancehelper-verify-method.md)|Tests the two interfaces specified by the current template parameters and determines whether one interface is derived from the other.|
+Name                                       | Description
+------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------
+[VerifyInheritanceHelper::Verify](#verify) | Tests the two interfaces specified by the current template parameters and determines whether one interface is derived from the other.
 
 ## Inheritance Hierarchy
 
@@ -60,6 +60,16 @@ Tests whether one interface is derived from another interface.
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## <a name="verify"></a>VerifyInheritanceHelper::Verify
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+```cpp
+static void Verify();
+```
+
+### Remarks
+
+Tests the two interfaces specified by the current template parameters and determines whether one interface is derived from the other.
+
+An error is emitted if one interface is not derived from the other.

@@ -31,6 +31,6 @@ The advantage of using `CComPolyObject` is that you avoid having both `CComAggOb
 
 ## See Also
 
-[Fundamentals of ATL COM Objects](../atl/fundamentals-of-atl-com-objects.md)   
+[Fundamentals of ATL COM Objects](../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Aggregation and Class Factory Macros](../atl/reference/aggregation-and-class-factory-macros.md)
 

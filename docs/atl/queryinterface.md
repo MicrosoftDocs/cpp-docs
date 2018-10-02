@@ -22,6 +22,6 @@ Note that you must obey [Reference Counting](../atl/reference-counting.md) rules
 
 ## See Also
 
-[Introduction to COM](../atl/introduction-to-com.md)   
+[Introduction to COM](../atl/introduction-to-com.md)<br/>
 [QueryInterface: Navigating in an Object](/windows/desktop/com/queryinterface--navigating-in-an-object)
 

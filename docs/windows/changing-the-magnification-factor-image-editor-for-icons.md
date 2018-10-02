@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["images [C++], magnification in Image editor", "magnification, Image editor", "Image editor [C++], magnification"]
+helpviewer_keywords: ["Image editor [C++], magnification"]
 ms.assetid: d1b0c9e0-fe54-4b2a-b75e-ffa0fa7c8cd9
 author: "mikeblome"
 ms.author: "mblome"
@@ -32,5 +32,5 @@ None
 
 ## See Also
 
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)  
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [Window Panes](../windows/window-panes-image-editor-for-icons.md)

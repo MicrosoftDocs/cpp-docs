@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0013
-missing operator  
-  
- An operator was expected in the expression but was not found. Check the syntax of the expression.  
-  
- This error is identical to CAN0013.
+
+missing operator
+
+An operator was expected in the expression but was not found. Check the syntax of the expression.
+
+This error is identical to CAN0013.

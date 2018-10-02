@@ -1,4 +1,4 @@
----
+)---
 title: "_strdec, _wcsdec, _mbsdec, _mbsdec_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"

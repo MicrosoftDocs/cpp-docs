@@ -13,19 +13,23 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # omp_get_wtick
-Returns the number of seconds between processor clock ticks.  
-  
-## Syntax  
-  
-```  
-double omp_get_wtick( );  
-```  
-  
-## Remarks  
- For more information, see [3.3.2 omp_get_wtick Function](../../../parallel/openmp/3-3-2-omp-get-wtick-function.md).  
-  
-## Example  
- See [omp_get_wtime](../../../parallel/openmp/reference/omp-get-wtime.md) for an example of using `omp_get_wtick`.  
-  
-## See Also  
- [Functions](../../../parallel/openmp/reference/openmp-functions.md)
+
+Returns the number of seconds between processor clock ticks.
+
+## Syntax
+
+```
+double omp_get_wtick( );
+```
+
+## Remarks
+
+For more information, see [3.3.2 omp_get_wtick Function](../../../parallel/openmp/3-3-2-omp-get-wtick-function.md).
+
+## Example
+
+See [omp_get_wtime](../../../parallel/openmp/reference/omp-get-wtime.md) for an example of using `omp_get_wtick`.
+
+## See Also
+
+[Functions](../../../parallel/openmp/reference/openmp-functions.md)

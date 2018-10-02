@@ -13,17 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3669
-'member' : override specifier 'override' not allowed on static member functions or constructors  
-  
- An override was specified incorrectly. For more information, see [Explicit Overrides](../../windows/explicit-overrides-cpp-component-extensions.md).  
-  
-## Example  
- The following sample generates C3669.  
-  
-```  
-// C3669.cpp  
-// compile with: /clr  
-public ref struct R {  
-   R() override {}   // C3669  
-};  
+
+'member' : override specifier 'override' not allowed on static member functions or constructors
+
+An override was specified incorrectly. For more information, see [Explicit Overrides](../../windows/explicit-overrides-cpp-component-extensions.md).
+
+## Example
+
+The following sample generates C3669.
+
+```
+// C3669.cpp
+// compile with: /clr
+public ref struct R {
+   R() override {}   // C3669
+};
 ```

@@ -1,18 +1,18 @@
 ---
-title: "Dialog Editor | Microsoft Docs"
+title: "Dialog Editor (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.dialog.dialog", "vc.editors.dialog.F1"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["resource editors, Dialog editor", "editors, dialog boxes", "Dialog editor", "dialog boxes, editing"]
+helpviewer_keywords: ["resource editors [C++], Dialog editor", "editors, dialog boxes", "Dialog editor", "dialog boxes [C++], editing"]
 ms.assetid: d94884ef-2cca-49d8-9b58-775f34848134
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Dialog Editor
+# Dialog Editor (C++)
 
 The **Dialog** editor allows you to create or edit dialog box resources. You open the dialog editor by double-clicking on a dialog’s .rc file in the **Resource View** window (**View** > **Resource View**). Note that **Resource View** is not available in Express editions.
 
@@ -55,8 +55,8 @@ Win32
 
 ## See Also
 
-[Resource Editors](../windows/resource-editors.md)  
-[Controls](../mfc/controls-mfc.md)  
-[Control Classes](../mfc/control-classes.md)  
-[Dialog Box Classes](../mfc/dialog-box-classes.md)  
+[Resource Editors](../windows/resource-editors.md)<br/>
+[Controls](../mfc/controls-mfc.md)<br/>
+[Control Classes](../mfc/control-classes.md)<br/>
+[Dialog Box Classes](../mfc/dialog-box-classes.md)<br/>
 [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)

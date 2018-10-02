@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2386
-'symbol' : a symbol with this name already exists in the current scope  
-  
- You tried to create a namespace alias, but the name you chose already exists.  
-  
- The following sample generates C2386:  
-  
-```  
-// C2386.cpp  
-namespace A {  
-   int k;  
-}  
-  
-int i;  
-namespace i = A;   // C2386, i already exists  
+
+'symbol' : a symbol with this name already exists in the current scope
+
+You tried to create a namespace alias, but the name you chose already exists.
+
+The following sample generates C2386:
+
+```
+// C2386.cpp
+namespace A {
+   int k;
+}
+
+int i;
+namespace i = A;   // C2386, i already exists
 ```

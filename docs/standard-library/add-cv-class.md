@@ -28,7 +28,7 @@ using add_cv_t = typename add_cv<T>::type;
 
 ### Parameters
 
-*T*
+*T*<br/>
 The type to modify.
 
 ## Remarks
@@ -85,6 +85,7 @@ invoked const volatile S.f()
 ## Requirements
 
 **Header:** \<type_traits>
+
 **Namespace:** std
 
 ## See also

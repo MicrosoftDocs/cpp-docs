@@ -12,30 +12,32 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # How to: Build Isolated Applications to Consume COM Components
-Isolated applications are applications that have manifests built into the program. You can create isolated applications to consume COM components.  
-  
-### To add COM references to manifests of isolated applications  
-  
-1.  Open the project property pages for the isolated application.  
-  
-2.  Expand the **Configuration Properties** node, and then expand the **Manifest Tool** node.  
-  
-3.  Select the **Isolated COM** property page, and then set the **Component File Name** property to the name of the COM component that you want the isolated application to consume.  
-  
-4.  Click **OK**.  
-  
-### To build manifests into isolated applications  
-  
-1.  Open the project property pages for the isolated application.  
-  
-2.  Expand the **Configuration Properties** node, and then expand the **Manifest Tool** node.  
-  
-3.  Select the **Input and Output** property page, and then set the **Embed Manifest** property equal to **Yes**.  
-  
-4.  Click **OK**.  
-  
-5.  Build the solution.  
-  
-## See Also  
- [Isolated Applications](/windows/desktop/SbsCs/isolated-applications)   
- [About Side-by-Side Assemblies](/windows/desktop/SbsCs/about-side-by-side-assemblies-)
+
+Isolated applications are applications that have manifests built into the program. You can create isolated applications to consume COM components.
+
+### To add COM references to manifests of isolated applications
+
+1. Open the project property pages for the isolated application.
+
+1. Expand the **Configuration Properties** node, and then expand the **Manifest Tool** node.
+
+1. Select the **Isolated COM** property page, and then set the **Component File Name** property to the name of the COM component that you want the isolated application to consume.
+
+1. Click **OK**.
+
+### To build manifests into isolated applications
+
+1. Open the project property pages for the isolated application.
+
+1. Expand the **Configuration Properties** node, and then expand the **Manifest Tool** node.
+
+1. Select the **Input and Output** property page, and then set the **Embed Manifest** property equal to **Yes**.
+
+1. Click **OK**.
+
+1. Build the solution.
+
+## See Also
+
+[Isolated Applications](/windows/desktop/SbsCs/isolated-applications)<br/>
+[About Side-by-Side Assemblies](/windows/desktop/SbsCs/about-side-by-side-assemblies-)

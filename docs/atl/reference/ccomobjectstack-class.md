@@ -19,13 +19,13 @@ This class creates a temporary COM object and provides it with a skeletal implem
 ## Syntax
 
 ```
-template <class  Base>  
+template <class  Base>
 class CComObjectStack : public Base
 ```
 
 #### Parameters
 
-*Base*  
+*Base*<br/>
 Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), as well as from any other interface you want to support on the object.
 
 ## Members
@@ -153,7 +153,7 @@ In debug mode, calls `_ASSERTE`.
 
 ## See Also
 
-[CComAggObject Class](../../atl/reference/ccomaggobject-class.md)   
-[CComObject Class](../../atl/reference/ccomobject-class.md)   
-[CComObjectGlobal Class](../../atl/reference/ccomobjectglobal-class.md)   
+[CComAggObject Class](../../atl/reference/ccomaggobject-class.md)<br/>
+[CComObject Class](../../atl/reference/ccomobject-class.md)<br/>
+[CComObjectGlobal Class](../../atl/reference/ccomobjectglobal-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

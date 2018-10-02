@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["attributes [C++], database", "attributes [C++], data access", "databases [C++], attributes", "OLE DB consumers [C++], attributes", "database attributes [C++]", "attributes [C++], OLE DB consumer"]
+helpviewer_keywords: ["attributes [C++/CLI], database", "attributes [C++/CLI], data access", "databases [C++], attributes", "OLE DB consumers [C++], attributes", "database attributes [C++/CLI]", "attributes [C++/CLI], OLE DB consumer"]
 ms.assetid: 017b591f-8f9a-42b4-84d5-cc42a21ab0cc
 author: "mikeblome"
 ms.author: "mblome"
@@ -24,4 +24,5 @@ The OLE DB consumer attributes inject code, based on the [OLE DB Consumer Templa
 |[db_table](../windows/db-table.md)|Opens an OLE DB table.|
   
 ## See Also
- [Attributes by Group](../windows/attributes-by-group.md)
+
+[Attributes by Group](../windows/attributes-by-group.md)

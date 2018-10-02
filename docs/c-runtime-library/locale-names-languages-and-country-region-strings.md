@@ -16,12 +16,12 @@ ms.workload: ["cplusplus"]
 
 The *locale* argument to the `setlocale` and `_create_locale` functions can be set by using the locale names, languages, country/region codes, and code pages that are supported by the Windows NLS API. The *locale* argument takes the following form:
 
-> *locale* :: "*locale_name*"  
-&nbsp;&nbsp;&nbsp;&nbsp;| "*language*\[\_*country-region*]\[.*code_page*]]"  
-&nbsp;&nbsp;&nbsp;&nbsp;| ".*code_page*"  
-&nbsp;&nbsp;&nbsp;&nbsp;| "C"  
-&nbsp;&nbsp;&nbsp;&nbsp;| ""  
-&nbsp;&nbsp;&nbsp;&nbsp;| NULL  
+> *locale* :: "*locale_name*"
+&nbsp;&nbsp;&nbsp;&nbsp;| "*language*\[\_*country-region*]\[.*code_page*]]"
+&nbsp;&nbsp;&nbsp;&nbsp;| ".*code_page*"
+&nbsp;&nbsp;&nbsp;&nbsp;| "C"
+&nbsp;&nbsp;&nbsp;&nbsp;| ""
+&nbsp;&nbsp;&nbsp;&nbsp;| NULL
 
 The locale name form is preferred; for example, use `en-US` for English (United States) or `bs-Cyrl-BA` for Bosnian (Cyrillic, Bosnia and Herzegovina). The set of locale names is described in [Locale Names](/windows/desktop/Intl/locale-names). For a list of supported locale names by Windows operating system version, see the **Language tag** column of the table in [Appendix A: Product Behavior](https://msdn.microsoft.com/library/cc233982.aspx) in [MS-LCID]: Windows Language Code Identifier (LCID) Reference. This resource lists the supported language, script, and region parts of the locale names. For information about the supported locale names that have non-default sort orders, see the **Locale name** column in [Sort Order Identifiers](/windows/desktop/Intl/sort-order-identifiers). Under Windows 10 or later, locale names that correspond to valid BCP-47 language tags are allowed. For example, `jp-US` is a valid BCP-47 tag, but it is effectively only `US` for locale functionality.
 
@@ -35,7 +35,7 @@ A *locale* argument value of `C` specifies the minimal ANSI conforming environme
 
 You can specify all of the locale categories at the same time for the `setlocale` and `_wsetlocale` functions by using the `LC_ALL` category. The categories can all be set to the same locale, or you can set each category individually by using a locale argument that has this form:
 
-> LC_ALL_specifier :: locale  
+> LC_ALL_specifier :: locale
 &nbsp;&nbsp;&nbsp;&nbsp;| [LC_COLLATE=locale][;LC_CTYPE=locale][;LC_MONETARY=locale][;LC_NUMERIC=locale][;LC_TIME=locale]
 
 You can specify multiple category types, separated by semicolons. Category types that are not specified use the current locale setting. For example, this code snippet sets the current locale for all categories to `de-DE`, and then sets the categories `LC_MONETARY` to `en-GB` and `LC_TIME` to `es-ES`:
@@ -47,9 +47,9 @@ _wsetlocale(LC_ALL, L"LC_MONETARY=en-GB;LC_TIME=es-ES");
 
 ## See also
 
-[C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)  
-[_get_current_locale](../c-runtime-library/reference/get-current-locale.md)  
-[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)  
-[_create_locale, _wcreate_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md)  
-[Language Strings](../c-runtime-library/language-strings.md)  
-[Country/Region Strings](../c-runtime-library/country-region-strings.md)  
+[C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)<br/>
+[_get_current_locale](../c-runtime-library/reference/get-current-locale.md)<br/>
+[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
+[_create_locale, _wcreate_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md)<br/>
+[Language Strings](../c-runtime-library/language-strings.md)<br/>
+[Country/Region Strings](../c-runtime-library/country-region-strings.md)

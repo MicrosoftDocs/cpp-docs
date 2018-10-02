@@ -1,18 +1,18 @@
 ---
-title: "Creating a New Toolbar Button | Microsoft Docs"
+title: "Creating a New Toolbar Button (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.toolbar"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Toolbar editor, creating buttons", "toolbar buttons (in Toolbar editor), button image", "toolbar buttons (in Toolbar editor), creating", "toolbar buttons (in Toolbar editor)"]
+helpviewer_keywords: ["Toolbar editor [C++], creating buttons", "toolbar buttons [C++], button image", "toolbar buttons [C++], creating", "toolbar buttons (in Toolbar editor)"]
 ms.assetid: 46c120fe-4f2a-4887-a08f-bd1fea04b3f4
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Creating a New Toolbar Button
+# Creating a New Toolbar Button (C++)
 
 ### To create a new toolbar button
 
@@ -56,6 +56,6 @@ MFC or ATL
 
 ## See Also
 
-[Toolbar Button Properties](../windows/toolbar-button-properties.md)  
-[Creating, Moving, and Editing Toolbar Buttons](../windows/creating-moving-and-editing-toolbar-buttons.md)  
+[Toolbar Button Properties](../windows/toolbar-button-properties.md)<br/>
+[Creating, Moving, and Editing Toolbar Buttons](../windows/creating-moving-and-editing-toolbar-buttons.md)<br/>
 [Toolbar Editor](../windows/toolbar-editor.md)

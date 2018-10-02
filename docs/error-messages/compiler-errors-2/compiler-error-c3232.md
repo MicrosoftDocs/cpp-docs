@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3232
-'param' : a generic type parameter cannot be used in a qualified name  
-  
- A generic type parameter was used incorrectly.  
-  
- The following sample generates C3232:  
-  
-```  
-// C3232.cpp  
-// compile with: /clr  
-generic <class T>  
-ref class C {  
-   typename T::TYPE t;   // C3232  
-};  
+
+'param' : a generic type parameter cannot be used in a qualified name
+
+A generic type parameter was used incorrectly.
+
+The following sample generates C3232:
+
+```
+// C3232.cpp
+// compile with: /clr
+generic <class T>
+ref class C {
+   typename T::TYPE t;   // C3232
+};
 ```

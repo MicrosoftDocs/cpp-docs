@@ -37,13 +37,13 @@ void CMyDialog::DoDataExchange(CDataExchange* pDX)
 
 The special format AFX comments allow ClassWizard to locate and edit the code within this function. Code that is not compatible with ClassWizard should be placed outside of the special format comments.
 
-In the above example, <data_exchange_function_call> is in the form:
+In the above example, \<data_exchange_function_call> is in the form:
 
 ```cpp
 DDX_Custom(pDX, nIDC, field);
 ```
 
-and <data_validation_function_call> is optional and is in the form:
+and \<data_validation_function_call> is optional and is in the form:
 
 ```cpp
 DDV_Custom(pDX, field, ...);
@@ -192,7 +192,7 @@ Each field is delimited by a ';' character. The fields and their purpose are des
 
 - *DDX_Proc*
 
-  Single identifier for the DDX_ procedure. The C++ function name must start with "DDX_," but don't include "DDX_" in the <DDX_Proc> identifier. In the example above, the <DDX_Proc> identifier would be Time. When ClassWizard writes the function call to the implementation file in the {{AFX_DATA_MAP section, it appends this name to DDX_, thus arriving at DDX_Time.
+  Single identifier for the DDX_ procedure. The C++ function name must start with "DDX_," but don't include "DDX_" in the \<DDX_Proc> identifier. In the example above, the \<DDX_Proc> identifier would be Time. When ClassWizard writes the function call to the implementation file in the {{AFX_DATA_MAP section, it appends this name to DDX_, thus arriving at DDX_Time.
 
 - *comment*
 
@@ -204,7 +204,7 @@ Each field is delimited by a ';' character. The fields and their purpose are des
 
 - *arg*
 
-  Single identifier for the DDV_ procedure. The C++ function name must start with "DDV_", but do not include "DDX_" in the <DDX_Proc> identifier.
+  Single identifier for the DDV_ procedure. The C++ function name must start with "DDV_", but do not include "DDX_" in the \<DDX_Proc> identifier.
 
   *arg* is followed by 1 or 2 DDV args:
 
@@ -228,5 +228,5 @@ Each field is delimited by a ';' character. The fields and their purpose are des
 
 ## See also
 
-[Technical Notes by Number](../mfc/technical-notes-by-number.md)  
-[Technical Notes by Category](../mfc/technical-notes-by-category.md)  
+[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
+[Technical Notes by Category](../mfc/technical-notes-by-category.md)

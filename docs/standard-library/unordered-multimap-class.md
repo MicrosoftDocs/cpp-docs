@@ -227,8 +227,8 @@ size_type bucket(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*  
- The key value to map.
+*keyval*<br/>
+The key value to map.
 
 ### Remarks
 
@@ -269,7 +269,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 bucket('a') == 7
 bucket_size(7) == 1
 ```
@@ -344,7 +344,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 bucket_count() == 8
 load_factor() == 0.375
 max_bucket_count() == 8
@@ -372,8 +372,8 @@ size_type bucket_size(size_type nbucket) const;
 
 ### Parameters
 
-*nbucket*  
- The bucket number.
+*nbucket*<br/>
+The bucket number.
 
 ### Remarks
 
@@ -414,7 +414,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 bucket('a') == 7
 bucket_size(7) == 1
 ```
@@ -532,7 +532,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 size == 0
 empty() == true
 
@@ -738,8 +738,8 @@ size_type count(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*  
- Key value to search for.
+*keyval*<br/>
+Key value to search for.
 
 ### Remarks
 
@@ -778,7 +778,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 count('A') == 0
 count('b') == 1
 count('C') == 0
@@ -839,7 +839,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 end()-begin() == 3
 begin()-end() == -3
 ```
@@ -964,7 +964,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 size == 0
 empty() == true
 
@@ -1059,8 +1059,8 @@ std::pair<const_iterator, const_iterator>
 
 ### Parameters
 
-*keyval*  
- Key value to search for.
+*keyval*<br/>
+Key value to search for.
 
 ### Remarks
 
@@ -1112,7 +1112,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 equal_range('x'):
 equal_range('b'): [b, 2]
 ```
@@ -1135,17 +1135,17 @@ size_type erase(
 
 ### Parameters
 
-*Where*  
- Position of the element to be removed.
+*Where*<br/>
+Position of the element to be removed.
 
-*First*  
- Position of the first element to be removed.
+*First*<br/>
+Position of the first element to be removed.
 
-*Last*  
- Position just beyond the last element to be removed.
+*Last*<br/>
+Position just beyond the last element to be removed.
 
-*Key*  
- The key value of the elements to be removed.
+*Key*<br/>
+The key value of the elements to be removed.
 
 ### Return Value
 
@@ -1167,8 +1167,8 @@ const_iterator find(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*  
- Key value to search for.
+*keyval*<br/>
+Key value to search for.
 
 ### Remarks
 
@@ -1213,7 +1213,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 find('A') == false
 find('b') == true: [b, 2]
 ```
@@ -1838,7 +1838,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 bucket_count() == 8
 load_factor() == 0.375
 max_bucket_count() == 8
@@ -1869,8 +1869,8 @@ void max_load_factor(float factor);
 
 ### Parameters
 
-*factor*  
- The new maximum load factor.
+*factor*<br/>
+The new maximum load factor.
 
 ### Remarks
 
@@ -1934,7 +1934,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 bucket_count() == 8
 load_factor() == 0.375
 max_bucket_count() == 8
@@ -2149,8 +2149,8 @@ void rehash(size_type nbuckets);
 
 ### Parameters
 
-*nbuckets*  
- The requested number of buckets.
+*nbuckets*<br/>
+The requested number of buckets.
 
 ### Remarks
 
@@ -2204,7 +2204,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 bucket_count() == 8
 load_factor() == 0.375
 max_load_factor() == 4
@@ -2277,7 +2277,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 size == 0
 empty() == true
 
@@ -2333,8 +2333,8 @@ void swap(unordered_multimap& right);
 
 ### Parameters
 
-*right*
- The container to swap with.
+*right*<br/>
+The container to swap with.
 
 ### Remarks
 
@@ -2440,7 +2440,7 @@ unordered_multimap(
 
 template <class InputIterator>
 unordered_multimap(
- InputIterator first, InputIterator last,
+InputIterator first, InputIterator last,
     size_type Bucket_count = N0,
     const Hash& Hash = Hash(),
     const Comp& Comp = Pred(),
@@ -2592,9 +2592,9 @@ int main()
 
 ```Output
 [a, 1] [b, 2] [c, 3] [d, 4] [e, 5] [f, 6] [a, 1] [b, 2] [c, 3] [a, 1] [b, 2] [c, 3] [5, g] [6, h] [7, i] [8, j] [a, 1] [b, 2] [c, 3] [a, 1] [b, 2] [c, 3] [a, 1] [b, 2] [c, 3] [a, 1] [b, 2] [c, 3] [c, 3] [b, 2] [a, 1]
- [f, 6] [e, 5] [d, 4]
- [c, 3] [b, 2] [a, 1]
- [c, 3] [b, 2] [a, 1]
+[f, 6] [e, 5] [d, 4]
+[c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 ```
 
 ## <a name="value_type"></a>  unordered_multimap::value_type

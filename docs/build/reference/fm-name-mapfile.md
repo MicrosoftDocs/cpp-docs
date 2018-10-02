@@ -13,39 +13,42 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /Fm (Name Mapfile)
-Tells the linker to produce a mapfile containing a list of segments in the order in which they appear in the corresponding .exe file or DLL.  
-  
-## Syntax  
-  
-```  
-/Fmpathname  
-```  
-  
-## Remarks  
- By default, the mapfile is given the base name of the corresponding C or C++ source file with a .MAP extension.  
-  
- Specifying **/Fm** has the same effect as if you had specified the [/MAP (Generate Mapfile)](../../build/reference/map-generate-mapfile.md) linker option.  
-  
- If you specify [/c (Compile Without Linking)](../../build/reference/c-compile-without-linking.md) to suppress linking, **/Fm** has no effect.  
-  
- Global symbols in a mapfile usually have one or more leading underscores because the compiler adds a leading underscore to variable names. Many global symbols that appear in the mapfile are used internally by the compiler and the standard libraries.  
-  
-### To set this compiler option in the Visual Studio development environment  
-  
-1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Click the **C/C++** folder.  
-  
-3.  Click the **Command Line** property page.  
-  
-4.  Type the compiler option in the **Additional Options** box.  
-  
-### To set this compiler option programmatically  
-  
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
-  
-## See Also  
- [Output-File (/F) Options](../../build/reference/output-file-f-options.md)   
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
- [Specifying the Pathname](../../build/reference/specifying-the-pathname.md)
+
+Tells the linker to produce a mapfile containing a list of segments in the order in which they appear in the corresponding .exe file or DLL.
+
+## Syntax
+
+```
+/Fmpathname
+```
+
+## Remarks
+
+By default, the mapfile is given the base name of the corresponding C or C++ source file with a .MAP extension.
+
+Specifying **/Fm** has the same effect as if you had specified the [/MAP (Generate Mapfile)](../../build/reference/map-generate-mapfile.md) linker option.
+
+If you specify [/c (Compile Without Linking)](../../build/reference/c-compile-without-linking.md) to suppress linking, **/Fm** has no effect.
+
+Global symbols in a mapfile usually have one or more leading underscores because the compiler adds a leading underscore to variable names. Many global symbols that appear in the mapfile are used internally by the compiler and the standard libraries.
+
+### To set this compiler option in the Visual Studio development environment
+
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Click the **C/C++** folder.
+
+1. Click the **Command Line** property page.
+
+1. Type the compiler option in the **Additional Options** box.
+
+### To set this compiler option programmatically
+
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+
+## See Also
+
+[Output-File (/F) Options](../../build/reference/output-file-f-options.md)<br/>
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
+[Specifying the Pathname](../../build/reference/specifying-the-pathname.md)

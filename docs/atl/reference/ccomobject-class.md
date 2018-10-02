@@ -19,13 +19,13 @@ This class implements `IUnknown` for a nonaggregated object.
 ## Syntax
 
 ```
-template<class Base>  
+template<class Base>
 class CComObject : public Base
 ```
 
 #### Parameters
 
-*Base*  
+*Base*<br/>
 Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), as well as from any other interfaces you want to support on the object.
 
 ## Members
@@ -84,7 +84,7 @@ CComObject(void* = NULL);
 
 ### Parameters
 
-<em>void\*</em>  
+<em>void\*</em><br/>
 [in] This unnamed parameter is not used. It exists for symmetry with other `CComXXXObjectXXX` constructors.
 
 ### Remarks
@@ -115,7 +115,7 @@ static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);
 
 ### Parameters
 
-*pp*  
+*pp*<br/>
 [out] A pointer to a **CComObject<**`Base`**>** pointer. If `CreateInstance` is unsuccessful, *pp* is set to NULL.
 
 ### Return Value
@@ -140,19 +140,19 @@ Retrieves a pointer to the requested interface.
 
 ```
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
-template <class Q>  
+template <class Q>
 HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 ```
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] The identifier of the interface being requested.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] A pointer to the interface pointer identified by *iid*. If the object does not support this interface, *ppvObject* is set to NULL.
 
-*pp*  
+*pp*<br/>
 [out] A pointer to the interface pointer identified by type `Q`. If the object does not support this interface, *pp* is set to NULL.
 
 ### Return Value
@@ -173,8 +173,8 @@ This function returns the new decremented reference count on the object. In debu
 
 ## See Also
 
-[CComAggObject Class](../../atl/reference/ccomaggobject-class.md)   
-[CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)   
-[DECLARE_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_aggregatable)   
-[DECLARE_NOT_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_not_aggregatable)   
+[CComAggObject Class](../../atl/reference/ccomaggobject-class.md)<br/>
+[CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)<br/>
+[DECLARE_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_aggregatable)<br/>
+[DECLARE_NOT_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_not_aggregatable)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

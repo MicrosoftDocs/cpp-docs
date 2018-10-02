@@ -1,17 +1,17 @@
 ---
-title: "Dialog Editor Tab, Toolbox | Microsoft Docs"
+title: "Dialog Editor Tab, Toolbox (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["Toolbox [C++], Dialog Editor tab", "controls [C++], types", "syslink controls ino dialog boxes", "custom controls [Visual Studio], dialog boxes", "controls [C++], standard", "Dialog editor, creating controls", "controls [C++], adding to dialog boxes"]
+helpviewer_keywords: ["Toolbox [C++], Dialog Editor tab", "controls [C++], types", "syslink controls in dialog boxes", "custom controls [C++], dialog boxes", "controls [C++], standard", "Dialog Editor [C++], creating controls", "controls [C++], adding to dialog boxes"]
 ms.assetid: 253885c2-dcb9-4d8e-ac9b-805ea31cbf5e
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Dialog Editor Tab, Toolbox
+# Dialog Editor Tab, Toolbox (C++)
 
 The **Dialog Editor** tab appears in the [Toolbox window](/visualstudio/ide/reference/toolbox) when you're working in the **Dialog** editor. To add controls to your new dialog box, drag controls from the **Toolbox** to the dialog box you are creating (for more information, see [Adding a Control to a Dialog Box](adding-a-control-to-a-dialog-box.md)). You can then move the controls around or change their size and shape.
 
@@ -83,10 +83,10 @@ Win32
 
 ## See Also
 
-[Controls](../mfc/controls-mfc.md)  
-[Control Classes](../mfc/control-classes.md)  
-[Dialog Box Classes](../mfc/dialog-box-classes.md)  
-[Scroll-Bar Styles](../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles)  
-[Rich Edit Control Examples](../mfc/rich-edit-control-examples.md)  
-[Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)  
+[Controls](../mfc/controls-mfc.md)<br/>
+[Control Classes](../mfc/control-classes.md)<br/>
+[Dialog Box Classes](../mfc/dialog-box-classes.md)<br/>
+[Scroll-Bar Styles](../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles)<br/>
+[Rich Edit Control Examples](../mfc/rich-edit-control-examples.md)<br/>
+[Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>
 [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)

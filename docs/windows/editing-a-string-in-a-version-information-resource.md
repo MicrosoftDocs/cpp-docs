@@ -1,18 +1,18 @@
 ---
-title: "Editing a String in a Version Information Resource | Microsoft Docs"
+title: "Editing a String in a Version Information Resource (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.version"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["version information resources", "resources [Visual Studio], editing version information"]
+helpviewer_keywords: ["version information resources [C++]", "resources [C++], editing version information"]
 ms.assetid: d3a7d4e4-7d31-47c2-902c-f50b8404ba4f
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Editing a String in a Version Information Resource
+# Editing a String in a Version Information Resource (C++)
 
 ### To edit a string in a version information resource
 
@@ -35,5 +35,5 @@ Win32
 
 ## See Also
 
-[Version Information Editor](../windows/version-information-editor.md)  
+[Version Information Editor](../windows/version-information-editor.md)<br/>
 [Version Information (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)

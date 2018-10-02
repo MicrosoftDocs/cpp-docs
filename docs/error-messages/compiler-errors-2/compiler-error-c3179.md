@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3179
-an unnamed managed or WinRT type is not allowed  
-  
-All CLR and WinRT classes and structs must have names.  
-  
-The following sample generates C3179 and shows how to fix it:  
-  
-```  
-// C3179a.cpp  
-// compile with: /clr /c  
-typedef value struct { // C3179  
-// try the following line instead  
-// typedef value struct MyStruct {  
-   int i;  
-} V;  
-```  
+
+an unnamed managed or WinRT type is not allowed
+
+All CLR and WinRT classes and structs must have names.
+
+The following sample generates C3179 and shows how to fix it:
+
+```
+// C3179a.cpp
+// compile with: /clr /c
+typedef value struct { // C3179
+// try the following line instead
+// typedef value struct MyStruct {
+   int i;
+} V;
+```

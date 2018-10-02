@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4120
-based/unbased mismatch  
-  
- The compiler cannot convert between the two pointers because one is based and the other is not.
+
+based/unbased mismatch
+
+The compiler cannot convert between the two pointers because one is based and the other is not.

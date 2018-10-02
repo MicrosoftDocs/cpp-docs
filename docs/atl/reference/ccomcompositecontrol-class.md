@@ -22,13 +22,13 @@ This class provides the methods required to implement a composite control.
 ## Syntax
 
 ```
-template <class T>  
+template <class T>
 class CComCompositeControl : public CComControl<T,CAxDialogImpl<T>>
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), as well as from any other interfaces you want to support for your composite control.
 
 ## Members
@@ -101,28 +101,19 @@ HRESULT AdviseSinkMap(bool bAdvise);
 
 ### Parameters
 
-*bAdvise*  
+*bAdvise*<br/>
 True if all controls are to be advised; otherwise false.
 
 ### Return Value
 
-S_OK  
-All controls in the event sink map were connected or disconnected from their event source successfully.
-
-E_FAIL  
-Not all controls in the event sink map could be connected or disconnected from their event source successfully.
-
-E_POINTER  
-This error usually indicates a problem with an entry in the control's event sink map or a problem with a template argument used in an `IDispEventImpl` or `IDispEventSimpleImpl` base class.
-
-CONNECT_E_ADVISELIMIT  
-The connection point has already reached its limit of connections and cannot accept any more.
-
-CONNECT_E_CANNOTCONNECT  
-The sink does not support the interface required by this connection point.
-
-CONNECT_E_NOCONNECTION  
-The cookie value does not represent a valid connection. This error usually indicates a problem with an entry in the control's event sink map or a problem with a template argument used in an `IDispEventImpl` or `IDispEventSimpleImpl` base class.
+|||
+|-|-|
+|S_OK  |All controls in the event sink map were connected or disconnected from their event source successfully.|
+|E_FAIL  |Not all controls in the event sink map could be connected or disconnected from their event source successfully.|
+|E_POINTER  |This error usually indicates a problem with an entry in the control's event sink map or a problem with a template argument used in an `IDispEventImpl` or `IDispEventSimpleImpl` base class.|
+|CONNECT_E_ADVISELIMIT  |The connection point has already reached its limit of connections and cannot accept any more.|
+|CONNECT_E_CANNOTCONNECT  |The sink does not support the interface required by this connection point.|
+|CONNECT_E_NOCONNECTION  |The cookie value does not represent a valid connection. This error usually indicates a problem with an entry in the control's event sink map or a problem with a template argument used in an `IDispEventImpl` or `IDispEventSimpleImpl` base class.|
 
 ### Remarks
 
@@ -138,7 +129,7 @@ BOOL CalcExtent(SIZE& size);
 
 ### Parameters
 
-*size*  
+*size*<br/>
 A reference to a `SIZE` structure to be filled by this method.
 
 ### Return Value
@@ -162,13 +153,13 @@ HWND Create(
 
 ### Parameters
 
-*hWndParent*  
+*hWndParent*<br/>
 A handle to the parent window of the control.
 
-*rcPos*  
+*rcPos*<br/>
 Reserved.
 
-*dwInitParam*  
+*dwInitParam*<br/>
 Data to be passed to the control during control creation. The data passed as *dwInitParam* will show up as the LPARAM parameter of the [WM_INITDIALOG](/windows/desktop/dlgbox/wm-initdialog) message, which will be sent to the composite control when it gets created.
 
 ### Return Value
@@ -215,10 +206,10 @@ virtual HWND CreateControlWindow(
 
 ### Parameters
 
-*hWndParent*  
+*hWndParent*<br/>
 A handle to the parent window of the control.
 
-*rcPos*  
+*rcPos*<br/>
 The position rectangle of the composite control in client coordinates relative to *hWndParent*.
 
 ### Return Value
@@ -259,6 +250,6 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ## See Also
 
-[CComControl Class](../../atl/reference/ccomcontrol-class.md)   
-[Composite Control Fundamentals](../../atl/atl-composite-control-fundamentals.md)   
+[CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
+[Composite Control Fundamentals](../../atl/atl-composite-control-fundamentals.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

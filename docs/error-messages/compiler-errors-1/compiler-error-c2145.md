@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2145
-syntax error : missing 'token' before identifier  
-  
- The compiler expected `token` and found identifier instead.  
-  
- This error may be caused by a missing semicolon after the last declaration in a block.
+
+syntax error : missing 'token' before identifier
+
+The compiler expected `token` and found identifier instead.
+
+This error may be caused by a missing semicolon after the last declaration in a block.

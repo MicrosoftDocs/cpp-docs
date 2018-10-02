@@ -18,7 +18,7 @@ Selects a predefined set of options that affect the size and speed of generated 
 
 ## Syntax
 
-> /O1  
+> /O1
 > /O2
 
 ## Remarks
@@ -32,8 +32,8 @@ The **/O1** and **/O2** compiler options are a quick way to set several specific
 
 **/O1** and **/O2** are mutually exclusive.
 
-> [!NOTE]  
-> **x86 Specific**  
+> [!NOTE]
+> **x86 Specific**
 > These options imply the use of the Frame-Pointer Omission ([/Oy](../../build/reference/oy-frame-pointer-omission.md)) option.
 
 ### To set this compiler option in the Visual Studio development environment
@@ -50,7 +50,7 @@ The **/O1** and **/O2** compiler options are a quick way to set several specific
 
 ## See Also
 
-[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)  
-[Compiler Options](../../build/reference/compiler-options.md)  
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)  
+[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)<br/>
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
 [/EH (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md)

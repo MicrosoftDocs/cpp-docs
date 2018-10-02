@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2060
-syntax error : end of file found  
-  
- At least one more token was expected.
+
+syntax error : end of file found
+
+At least one more token was expected.

@@ -25,11 +25,11 @@ class raw_storage_iterator
 
 ### Parameters
 
-*OutputIterator*
- Specifies the output iterator for the object being stored.
+*OutputIterator*<br/>
+Specifies the output iterator for the object being stored.
 
-*Type*
- The type of object for which storage is being allocated.
+*Type*<br/>
+The type of object for which storage is being allocated.
 
 ## Remarks
 
@@ -146,15 +146,15 @@ int main( void)
 {
    Int *pInt = ( Int* ) malloc( sizeof( Int ) );
    memset( pInt, 0, sizeof( Int ) ); // Set bIsConstructed to false;
- *pInt = 5;
+*pInt = 5;
    raw_storage_iterator< Int*, Int > it( pInt );
- *it = 5;
+*it = 5;
 }
-\* Output:
+/* Output:
 Not constructed.
 Copying 5
 Constructing 5
-*\
+*/
 ```
 
 ## <a name="op_eq"></a>  raw_storage_iterator::operator=
@@ -168,8 +168,8 @@ raw_storage_iterator<ForwardIterator, Type>& operator=(
 
 ### Parameters
 
-`val`
- The value of the object of type `Type` to be inserted into memory.
+*val*<br/>
+The value of the object of type `Type` to be inserted into memory.
 
 ### Return Value
 
@@ -221,13 +221,13 @@ int main( void )
 *pInt = 5;
 
    raw_storage_iterator<Int*, Int> it( pInt );
- *it = 5;
+*it = 5;
 }
-\* Output:
+/* Output:
 Not constructed.
 Copying 5
 Constructing 5
-*\
+*/
 ```
 
 ## <a name="op_add_add"></a>  raw_storage_iterator::operator++
@@ -270,20 +270,20 @@ int main( void )
    int *pInt = new int[5];
    std::raw_storage_iterator<int*,int> it( pInt );
    for ( int i = 0; i < 5; i++, it++ ) {
- *it = 2 * i;
-};
+      *it = 2 * i;
+   };
 
    for ( int i = 0; i < 5; i++ ) cout << "array " << i << " = " << pInt[i] << endl;;
 
    delete[] pInt;
 }
-\* Output:
+/* Output:
 array 0 = 0
 array 1 = 2
 array 2 = 4
 array 3 = 6
 array 4 = 8
-*\
+*/
 ```
 
 ## <a name="raw_storage_iterator"></a>  raw_storage_iterator::raw_storage_iterator
@@ -296,8 +296,8 @@ explicit raw_storage_iterator(ForwardIterator first);
 
 ### Parameters
 
-*first*
- The forward iterator that is to underlie the `raw_storage_iterator` object being constructed.
+*first*<br/>
+The forward iterator that is to underlie the `raw_storage_iterator` object being constructed.
 
 ### Example
 
@@ -355,7 +355,7 @@ int main( void )
 
    free(pInt);
 }
-\* Output:
+/* Output:
 Error! I'm not constructed!
 Copying 1
 Error! I'm not constructed!
@@ -376,7 +376,7 @@ array 0 = 1
 array 1 = 2
 array 2 = 3
 array 3 = 4
-*\
+*/
 ```
 
 ## See also

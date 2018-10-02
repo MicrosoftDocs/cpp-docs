@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # COleControl Class
+
 A powerful base class for developing OLE controls.
 
 ## Syntax
@@ -1101,20 +1102,13 @@ void FireReadyStateChange();
 
 The ready state can be one of the following values:
 
-READYSTATE_UNINITIALIZED
-Default initialization state
-
-READYSTATE_LOADING
-Control is currently loading its properties
-
-READYSTATE_LOADED
-Control has been initialized
-
-READYSTATE_INTERACTIVE
-Control has enough data to be interactive but not all asynchronous data is yet loaded
-
-READYSTATE_COMPLETE
-Control has all its data
+|||
+|-|-|
+|READYSTATE_UNINITIALIZED|Default initialization state|
+|READYSTATE_LOADING|Control is currently loading its properties|
+|READYSTATE_LOADED|Control has been initialized|
+|READYSTATE_INTERACTIVE|Control has enough data to be interactive but not all asynchronous data is yet loaded|
+|READYSTATE_COMPLETE|Control has all its data|
 
 Use [GetReadyState](#getreadystate) to determine the control's current readiness.
 
@@ -1132,14 +1126,11 @@ virtual DWORD GetActivationPolicy();
 
 A combination of flags from the POINTERINACTIVE enumeration. Possible flags are:
 
-POINTERINACTIVE_ACTIVATEONENTRY
-The object should be in-place activated when the mouse enters it during a mouse move operation.
-
-POINTERINACTIVE_DEACTIVATEONLEAVE
-The object should be deactivated when the mouse leaves the object during a mouse move operation.
-
-POINTERINACTIVE_ACTIVATEONDRAG
-The object should be in-place activated when the mouse is dragged over it during a drag and drop operation.
+|||
+|-|-|
+|POINTERINACTIVE_ACTIVATEONENTRY|The object should be in-place activated when the mouse enters it during a mouse move operation.|
+|POINTERINACTIVE_DEACTIVATEONLEAVE|The object should be deactivated when the mouse leaves the object during a mouse move operation.|
+|POINTERINACTIVE_ACTIVATEONDRAG|The object should be in-place activated when the mouse is dragged over it during a drag and drop operation.|
 
 ### Remarks
 
@@ -1361,23 +1352,14 @@ enum ControlFlags {
 
 By default, `GetControlFlags` returns `fastBeginPaint | clipPaintDC`.
 
-`fastBeginPaint`
-If set, uses a begin-paint function tailored for OLE controls instead of the [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) API (set by default).
-
-`clipPaintDC`
-If not set, disables the call to `IntersectClipRect` made by `COleControl` and gains a small speed advantage. If you are using windowless activation, the flag has no effect.
-
-`pointerInactive`
-If set, provides mouse interaction while your control is inactive by enabling `COleControl`'s implementation of the `IPointerInactive` interface, which is disabled by default.
-
-`noFlickerActivate`
-If set, eliminates extra drawing operations and the accompanying visual flicker. Use when your control draws itself identically in the inactive and active states. If you are using windowless activation, the flag has no effect.
-
-`windowlessActivate`
-If set, indicates your control uses windowless activation.
-
-`canOptimizeDraw`
-If set, indicates that the control will perform optimized drawing, if the container supports it.
+|||
+|-|-|
+|`fastBeginPaint`|If set, uses a begin-paint function tailored for OLE controls instead of the [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) API (set by default).|
+|`clipPaintDC`|If not set, disables the call to `IntersectClipRect` made by `COleControl` and gains a small speed advantage. If you are using windowless activation, the flag has no effect.|
+|`pointerInactive`|If set, provides mouse interaction while your control is inactive by enabling `COleControl`'s implementation of the `IPointerInactive` interface, which is disabled by default.|
+|`noFlickerActivate`|If set, eliminates extra drawing operations and the accompanying visual flicker. Use when your control draws itself identically in the inactive and active states. If you are using windowless activation, the flag has no effect.|
+|`windowlessActivate`|If set, indicates your control uses windowless activation.|
+|`canOptimizeDraw`|If set, indicates that the control will perform optimized drawing, if the container supports it.|
 
 For more information about `GetControlFlags` and other optimizations of OLE controls, see [ActiveX Controls: Optimization](../../mfc/mfc-activex-controls-optimization.md).
 
@@ -1593,20 +1575,13 @@ long GetReadyState();
 
 The readiness state of the control, one of the following values:
 
-READYSTATE_UNINITIALIZED
-Default initialization state
-
-READYSTATE_LOADING
-Control is currently loading its properties
-
-READYSTATE_LOADED
-Control has been initialized
-
-READYSTATE_INTERACTIVE
-Control has enough data to be interactive but not all asynchronous data is yet loaded
-
-READYSTATE_COMPLETE
-Control has all its data
+|||
+|-|-|
+|READYSTATE_UNINITIALIZED|Default initialization state|
+|READYSTATE_LOADING|Control is currently loading its properties|
+|READYSTATE_LOADED|Control has been initialized|
+|READYSTATE_INTERACTIVE|Control has enough data to be interactive but not all asynchronous data is yet loaded|
+|READYSTATE_COMPLETE|Control has all its data|
 
 ### Remarks
 
@@ -1748,20 +1723,13 @@ void InternalSetReadyState(long lNewReadyState);
 *lNewReadyState*<br/>
 The readiness state to set for the control, one of the following values:
 
-READYSTATE_UNINITIALIZED
-Default initialization state
-
-READYSTATE_LOADING
-Control is currently loading its properties
-
-READYSTATE_LOADED
-Control has been initialized
-
-READYSTATE_INTERACTIVE
-Control has enough data to be interactive but not all asynchronous data is yet loaded
-
-READYSTATE_COMPLETE
-Control has all its data
+|||
+|-|-|
+|READYSTATE_UNINITIALIZED|Default initialization state|
+|READYSTATE_LOADING|Control is currently loading its properties|
+|READYSTATE_LOADED|Control has been initialized|
+|READYSTATE_INTERACTIVE|Control has enough data to be interactive but not all asynchronous data is yet loaded|
+|READYSTATE_COMPLETE|Control has all its data|
 
 ### Remarks
 
@@ -2536,17 +2504,12 @@ virtual DWORD OnGetViewStatus();
 
 One of the values of the VIEWSTATUS enumeration if successful; otherwise 0. Possible values are any combination of the following:
 
-VIEWSTATUS_OPAQUE
-Object is completely opaque. If this bit is not set, the object contains transparent parts. This bit applies only to content-related aspects and not to DVASPECT_ICON or DVASPECT_DOCPRINT.
-
-VIEWSTATUS_SOLIDBKGND
-Object has a solid background (consisting in a solid color, not a brush pattern). This bit is meaningful only if VIEWSTATUS_OPAQUE is set and applies only to content-related aspects and not to DVASPECT_ICON or DVASPECT_DOCPRINT.
-
-VIEWSTATUS_DVASPECTOPAQUE
-Object supports DVASPECT_OPAQUE. All IViewObjectEx methods that take a drawing aspect as a parameter can be called with this aspect.
-
-VIEWSTATUS_DVASPECTTRANSPARENT
-Object supports DVASPECT_TRANSPARENT. All `IViewObjectEx` methods that take a drawing aspect as a parameter can be called with this aspect.
+|||
+|-|-|
+|VIEWSTATUS_OPAQUE|Object is completely opaque. If this bit is not set, the object contains transparent parts. This bit applies only to content-related aspects and not to DVASPECT_ICON or DVASPECT_DOCPRINT.|
+|VIEWSTATUS_SOLIDBKGND|Object has a solid background (consisting in a solid color, not a brush pattern). This bit is meaningful only if VIEWSTATUS_OPAQUE is set and applies only to content-related aspects and not to DVASPECT_ICON or DVASPECT_DOCPRINT.|
+|VIEWSTATUS_DVASPECTOPAQUE|Object supports DVASPECT_OPAQUE. All IViewObjectEx methods that take a drawing aspect as a parameter can be called with this aspect.|
+|VIEWSTATUS_DVASPECTTRANSPARENT|Object supports DVASPECT_TRANSPARENT. All `IViewObjectEx` methods that take a drawing aspect as a parameter can be called with this aspect.|
 
 ### Remarks
 

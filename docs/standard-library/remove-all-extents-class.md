@@ -28,8 +28,8 @@ using remove_all_extents_t = typename remove_all_extents<T>::type;
 
 ### Parameters
 
-*T*
- The type to modify.
+*T*<br/>
+The type to modify.
 
 ## Remarks
 

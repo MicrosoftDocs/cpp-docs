@@ -23,11 +23,11 @@ bool operator!=(const unordered_set <Key, Hash, Pred, Allocator>& left, const un
 
 ### Parameters
 
-*left*  
- An object of type `unordered_set`.
+*left*<br/>
+An object of type `unordered_set`.
 
-*right*  
- An object of type `unordered_set`.
+*right*<br/>
+An object of type `unordered_set`.
 
 ### Return Value
 
@@ -92,11 +92,11 @@ bool operator==(const unordered_set <Key, Hash, Pred, Allocator>& left, const un
 
 ### Parameters
 
-*left*  
- An object of type `unordered_set`.
+*left*<br/>
+An object of type `unordered_set`.
 
-*right*  
- An object of type `unordered_set`.
+*right*<br/>
+An object of type `unordered_set`.
 
 ### Return Value
 
@@ -161,11 +161,11 @@ bool operator!=(const unordered_multiset <Key, Hash, Pred, Allocator>& left, con
 
 ### Parameters
 
-*left*  
- An object of type `unordered_multiset`.
+*left*<br/>
+An object of type `unordered_multiset`.
 
-*right*  
- An object of type `unordered_multiset`.
+*right*<br/>
+An object of type `unordered_multiset`.
 
 ### Return Value
 
@@ -233,11 +233,11 @@ bool operator==(const unordered_multiset <Key, Hash, Pred, Allocator>& left, con
 
 ### Parameters
 
-*left*  
- An object of type `unordered_multiset`.
+*left*<br/>
+An object of type `unordered_multiset`.
 
-*right*  
- An object of type `unordered_multiset`.
+*right*<br/>
+An object of type `unordered_multiset`.
 
 ### Return Value
 

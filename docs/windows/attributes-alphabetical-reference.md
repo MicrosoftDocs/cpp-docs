@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.attributes"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["attributes [C++]"]
+helpviewer_keywords: ["attributes [C++/CLI]"]
 ms.assetid: fb2216ef-9fbd-44f4-afed-732aa99450e2
 author: "mikeblome"
 ms.author: "mblome"
@@ -126,7 +126,7 @@ The following attributes are available in Visual C++.
 
 ## See Also
 
-[C++ Attributes Reference](../windows/cpp-attributes-reference.md)  
-[Concepts](../windows/attributed-programming-concepts.md)  
-[Attributes by Group](../windows/attributes-by-group.md)  
+[C++ Attributes Reference](../windows/cpp-attributes-reference.md)<br/>
+[Concepts](../windows/attributed-programming-concepts.md)<br/>
+[Attributes by Group](../windows/attributes-by-group.md)<br/>
 [Attributes by Usage](../windows/attributes-by-usage.md)

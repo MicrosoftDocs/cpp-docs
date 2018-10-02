@@ -12,17 +12,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Pragmas
-**ANSI 3.8.6** The behavior on each recognized #pragma directive.  
-  
- The following [C Pragmas](../c-language/c-pragmas.md) are defined for the Microsoft C compiler:  
-  
-|||||  
-|-|-|-|-|  
-|**alloc_text**|**data_seg**|**include_alias**|`setlocale`|  
-|**auto_inline**|**function**|**intrinsic**|**warning**|  
-|**check_stack**|**hdrstop**|**message**||  
-|**code_seg**|**inline_depth**|**optimize**||  
-|**comment**|**inline_recursion**|`pack`||  
-  
-## See Also  
- [Preprocessing Directives](../c-language/preprocessing-directives.md)
+
+**ANSI 3.8.6** The behavior on each recognized #pragma directive.
+
+The following [C Pragmas](../c-language/c-pragmas.md) are defined for the Microsoft C compiler:
+
+|||||
+|-|-|-|-|
+|**alloc_text**|**data_seg**|**include_alias**|`setlocale`|
+|**auto_inline**|**function**|**intrinsic**|**warning**|
+|**check_stack**|**hdrstop**|**message**||
+|**code_seg**|**inline_depth**|**optimize**||
+|**comment**|**inline_recursion**|`pack`||
+
+## See Also
+
+[Preprocessing Directives](../c-language/preprocessing-directives.md)

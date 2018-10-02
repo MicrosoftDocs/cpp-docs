@@ -13,29 +13,30 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4820
-'bytes' bytes padding added after construct 'member_name'  
-  
- The type and order of elements caused the compiler to add padding to the end of a struct. See [align](../../cpp/align-cpp.md) for more information on padding in a struct.  
-  
- This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.  
-  
- The following sample generates C4820:  
-  
-```  
-// C4820.cpp  
-// compile with: /W4 /c  
-#pragma warning(default : 4820)   
-  
-// Delete the following 4 lines to resolve.  
-__declspec(align(2)) struct MyStruct {  
-   char a;  
-   int i;   // C4820  
-};  
-  
-// OK  
-#pragma pack(1)  
-__declspec(align(1)) struct MyStruct2 {  
-   char a;  
-   int i;  
-};  
+
+'bytes' bytes padding added after construct 'member_name'
+
+The type and order of elements caused the compiler to add padding to the end of a struct. See [align](../../cpp/align-cpp.md) for more information on padding in a struct.
+
+This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+
+The following sample generates C4820:
+
+```
+// C4820.cpp
+// compile with: /W4 /c
+#pragma warning(default : 4820)
+
+// Delete the following 4 lines to resolve.
+__declspec(align(2)) struct MyStruct {
+   char a;
+   int i;   // C4820
+};
+
+// OK
+#pragma pack(1)
+__declspec(align(1)) struct MyStruct2 {
+   char a;
+   int i;
+};
 ```

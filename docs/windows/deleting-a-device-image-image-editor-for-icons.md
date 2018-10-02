@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["cursors, deleting", "display devices, deleting device image", "icons, erasing", "icons, deleting", "cursors, undoing changes", "icons, undoing changes"]
+helpviewer_keywords: ["cursors [C++], deleting", "display devices [C++], deleting device image", "icons, erasing", "icons, deleting", "cursors [C++], undoing changes", "icons, undoing changes"]
 ms.assetid: aab1031c-da95-49cf-aabc-46e127b11399
 author: "mikeblome"
 ms.author: "mblome"
@@ -28,6 +28,6 @@ None
 
 ## See Also
 
-[Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)  
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)  
+[Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)<br/>
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)

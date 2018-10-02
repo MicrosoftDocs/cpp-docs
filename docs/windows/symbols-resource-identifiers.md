@@ -1,18 +1,18 @@
 ---
-title: "Symbols: Resource Identifiers | Microsoft Docs"
+title: "Symbols: Resource Identifiers (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.symbol.identifiers"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["symbols, resource identifiers", "symbols, creating", "resource symbols", "symbols, editing", "resource editors, resource symbols"]
+helpviewer_keywords: ["symbols [C++], resource identifiers", "symbols [C++], creating", "resource symbols", "symbols [C++], editing", "resource editors [C++], resource symbols"]
 ms.assetid: 8fccc09a-0237-4a65-b9c4-57d60c59e324
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Symbols: Resource Identifiers
+# Symbols: Resource Identifiers (C++)
 
 A symbol is a resource identifier (ID) that consists of two parts: a text string (symbol name) mapped to an integer value (symbol value). For example:
 
@@ -59,6 +59,6 @@ Win32
 
 ## See Also
 
-[How to: Search for Symbols in Resources](../windows/how-to-search-for-symbols-in-resources.md)  
-[Resource Editors](../windows/resource-editors.md)  
+[How to: Search for Symbols in Resources](../windows/how-to-search-for-symbols-in-resources.md)<br/>
+[Resource Editors](../windows/resource-editors.md)<br/>
 [Resource Files](../windows/resource-files-visual-studio.md)

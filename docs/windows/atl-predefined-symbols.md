@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["symbols, ATL predefined", "ATL symbols"]
+helpviewer_keywords: ["symbols [C++], ATL predefined", "ATL symbols"]
 ms.assetid: 60d8f4e6-6ed9-47f3-9051-e4bf34384456
 author: "mikeblome"
 ms.author: "mblome"
@@ -34,5 +34,5 @@ ATL
 
 ## See Also
 
-[Predefined Symbol IDs](../windows/predefined-symbol-ids.md)  
+[Predefined Symbol IDs](../windows/predefined-symbol-ids.md)<br/>
 [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)

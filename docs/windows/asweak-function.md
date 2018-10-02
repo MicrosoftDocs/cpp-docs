@@ -28,13 +28,13 @@ HRESULT AsWeak(
 
 ### Parameters
 
-*T*  
+*T*<br/>
 A pointer to the type of parameter *p*.
 
-*p*  
+*p*<br/>
 An instance of a type.
 
-*pWeak*  
+*pWeak*<br/>
 When this operation completes, a pointer to a weak reference to parameter *p*.
 
 ## Return Value

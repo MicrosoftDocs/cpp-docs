@@ -33,6 +33,6 @@ These classes provide support for strings and text string conversions.
 
 ## See Also
 
-[Class Overview](../atl/atl-class-overview.md)   
+[Class Overview](../atl/atl-class-overview.md)<br/>
 [ATL and MFC String Conversion Macros](reference/string-conversion-macros.md)
 

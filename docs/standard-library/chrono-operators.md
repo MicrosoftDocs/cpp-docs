@@ -42,17 +42,17 @@ constexpr typename common_type<Duration1, Duration2>::type
 
 ### Parameters
 
-*Left*
- The left `duration` or `time_point` object.
+*Left*<br/>
+The left `duration` or `time_point` object.
 
-*Right*
- The right `duration` or `time_point` object.
+*Right*<br/>
+The right `duration` or `time_point` object.
 
-*Time*
- A `time_point` object.
+*Time*<br/>
+A `time_point` object.
 
-*Dur*
- A `duration` object.
+*Dur*<br/>
+A `duration` object.
 
 ### Return Value
 
@@ -81,11 +81,11 @@ constexpr bool operator!=(
 
 ### Parameters
 
-`Left`
- The left `duration` or `time_point` object.
+*Left*<br/>
+The left `duration` or `time_point` object.
 
-`Right`
- The right `duration` or `time_point` object.
+*Right*<br/>
+The right `duration` or `time_point` object.
 
 ### Return Value
 
@@ -113,11 +113,11 @@ constexpr duration<typename common_type<Rep1, Rep2>::type, Period2>
 
 ### Parameters
 
-*Dur*
- A `duration` object.
+*Dur*<br/>
+A `duration` object.
 
-*Mult*
- An integral value.
+*Mult*<br/>
+An integral value.
 
 ### Return Value
 
@@ -148,17 +148,17 @@ constexpr typename common_type<Rep1, Rep2>::type
 
 ### Parameters
 
-*Dur*
- A `duration` object.
+*Dur*<br/>
+A `duration` object.
 
-*Div*
- An integral value.
+*Div*<br/>
+An integral value.
 
-*Left*
- The left `duration` object.
+*Left*<br/>
+The left `duration` object.
 
-*Right*
- The right `duration` object.
+*Right*<br/>
+The right `duration` object.
 
 ### Return Value
 
@@ -196,17 +196,17 @@ time_point<Clock, constexpr typename common_type<duration<Rep1, Period1>, Durati
 
 ### Parameters
 
-*Left*
- The left `duration` or `time_point` object.
+*Left*<br/>
+The left `duration` or `time_point` object.
 
-*Right*
- The right `duration` or `time_point` object.
+*Right*<br/>
+The right `duration` or `time_point` object.
 
-*Time*
- A `time_point` object.
+*Time*<br/>
+A `time_point` object.
 
-*Dur*
- A `duration` object.
+*Dur*<br/>
+A `duration` object.
 
 ### Return Value
 
@@ -233,11 +233,11 @@ constexpr bool operator<(
 
 ### Parameters
 
-*Left*
- The left `duration` or `time_point` object.
+*Left*<br/>
+The left `duration` or `time_point` object.
 
-*Right*
- The right `duration` or `time_point` object.
+*Right*<br/>
+The right `duration` or `time_point` object.
 
 ### Return Value
 
@@ -263,11 +263,11 @@ constexpr bool operator<=(
 
 ### Parameters
 
-*Left*
- The left `duration` or `time_point` object.
+*Left*<br/>
+The left `duration` or `time_point` object.
 
-*Right*
- The right `duration` or `time_point` object.
+*Right*<br/>
+The right `duration` or `time_point` object.
 
 ### Return Value
 
@@ -291,11 +291,11 @@ constexpr bool operator==(
 
 ### Parameters
 
-*Left*
- The left `duration` or `time_point` object.
+*Left*<br/>
+The left `duration` or `time_point` object.
 
-*Right*
- The right `duration` or `time_point` object.
+*Right*<br/>
+The right `duration` or `time_point` object.
 
 ### Return Value
 
@@ -321,11 +321,11 @@ constexpr bool operator>(
 
 ### Parameters
 
-*Left*
- The left `duration` or `time_point` object.
+*Left*<br/>
+The left `duration` or `time_point` object.
 
-*Right*
- The right `duration` or `time_point` object.
+*Right*<br/>
+The right `duration` or `time_point` object.
 
 ### Return Value
 
@@ -349,11 +349,11 @@ constexpr bool operator>=(
 
 ### Parameters
 
-*Left*
- The left `duration` or `time_point` object.
+*Left*<br/>
+The left `duration` or `time_point` object.
 
-*Right*
- The right `duration` or `time_point` object.
+*Right*<br/>
+The right `duration` or `time_point` object.
 
 ### Return Value
 
@@ -379,17 +379,17 @@ constexpr typename common_type<duration<Rep1, _Period1>, duration<Rep2, Period2>
 
 ### Parameters
 
-*Dur*
- A `duration` object.
+*Dur*<br/>
+A `duration` object.
 
-*Div*
- An integral value.
+*Div*<br/>
+An integral value.
 
-*Left*
- The left `duration` object.
+*Left*<br/>
+The left `duration` object.
 
-*Right*
- The right `duration` object.
+*Right*<br/>
+The right `duration` object.
 
 ### Return Value
 

@@ -1,5 +1,5 @@
 ---
-title: "Toolbar (Image Editor for Icons) | Microsoft Docs"
+title: "Toolbar (C++ Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Toolbar (Image Editor for Icons)
+# Toolbar (C++ Image Editor for Icons)
 
 The **Image Editor** toolbar contains tools for drawing, painting, entering text, erasing, and manipulating views. It also contains an option selector, with which you can select options for using each tool. For example, you can choose from various brush widths, magnification factors, and line styles.
 
@@ -40,6 +40,6 @@ None
 
 ## See Also
 
-[Displaying or Hiding the Toolbar](displaying-or-hiding-the-toolbar-image-editor-for-icons.md)  
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)  
+[Displaying or Hiding the Toolbar](displaying-or-hiding-the-toolbar-image-editor-for-icons.md)<br/>
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [Image Editor for Icons](../windows/image-editor-for-icons.md)

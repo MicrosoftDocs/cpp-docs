@@ -26,7 +26,7 @@ template <class T>
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IObjectWithSiteImpl`.
 
 ## Members
@@ -101,7 +101,7 @@ HRESULT SetChildSite(IUnknown* pUnkSite);
 
 ### Parameters
 
-*pUnkSite*  
+*pUnkSite*<br/>
 [in] Pointer to the `IUnknown` interface pointer of the site managing this object. If NULL, the object should call `IUnknown::Release` on any existing site at which point the object no longer knows its site.
 
 ### Return Value

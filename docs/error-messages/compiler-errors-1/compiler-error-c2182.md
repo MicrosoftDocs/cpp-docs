@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2182
-'identifier' : illegal use of type 'void'  
-  
- A variable is declared type `void`.  
-  
- The following sample generates C2182:  
-  
-```  
-// C2182.cpp  
-// compile with: /c  
-int main() {  
-   int i = 10;  
-   void &ir = i;   // C2182 cannot have a reference to type void  
-   int &ir = i;   // OK  
-}  
+
+'identifier' : illegal use of type 'void'
+
+A variable is declared type `void`.
+
+The following sample generates C2182:
+
+```
+// C2182.cpp
+// compile with: /c
+int main() {
+   int i = 10;
+   void &ir = i;   // C2182 cannot have a reference to type void
+   int &ir = i;   // OK
+}
 ```

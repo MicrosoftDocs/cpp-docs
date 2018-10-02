@@ -29,7 +29,7 @@ void _aligned_free_dbg(
 
 ### Parameters
 
-*memblock*
+*memblock*<br/>
 A pointer to the memory block that was returned to the [_aligned_malloc](aligned-malloc.md) or [_aligned_offset_malloc](aligned-offset-malloc.md) function.
 
 ## Remarks
@@ -52,4 +52,4 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)  
+[Debug Routines](../../c-runtime-library/debug-routines.md)

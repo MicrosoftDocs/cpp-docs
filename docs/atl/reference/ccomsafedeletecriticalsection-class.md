@@ -147,5 +147,5 @@ It is safe to call this method even if the internal `CRITICAL_SECTION` object is
 
 ## See Also
 
-[CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md)   
+[CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

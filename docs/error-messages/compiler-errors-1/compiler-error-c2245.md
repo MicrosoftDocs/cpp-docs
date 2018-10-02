@@ -13,28 +13,29 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2245
-non-existent member function 'function' specified as friend (member function signature does not match any overload)  
-  
- A function specified as a friend was not found by the compiler.  
-  
- The following sample generates C2245:  
-  
-```  
-// C2245.cpp  
-// compile with: /c  
-class B {  
-   void f(int i);  
-};  
-  
-class A {  
-   int m_i;  
-   friend void B::f(char);   // C2245  
-   // try the following line instead  
-   // friend void B::f(int);  
-};  
-  
-void B::f(int i) {  
-   A a;  
-   a.m_i = 0;  
-}  
+
+non-existent member function 'function' specified as friend (member function signature does not match any overload)
+
+A function specified as a friend was not found by the compiler.
+
+The following sample generates C2245:
+
+```
+// C2245.cpp
+// compile with: /c
+class B {
+   void f(int i);
+};
+
+class A {
+   int m_i;
+   friend void B::f(char);   // C2245
+   // try the following line instead
+   // friend void B::f(int);
+};
+
+void B::f(int i) {
+   A a;
+   a.m_i = 0;
+}
 ```

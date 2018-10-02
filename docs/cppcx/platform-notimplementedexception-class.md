@@ -13,25 +13,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::NotImplementedException Class
-Thrown when an interface member is not been implemented in a derived type.  
-  
-## Syntax  
-  
-```cpp  
-public ref class NotImplementedException : COMException,    IException,    IPrintable,    IEquatable  
-```  
-  
-### Remarks  
- For more information, see the [COMException](../cppcx/platform-comexception-class.md) class.  
-  
-### Requirements  
- **Minimum supported client:** Windows 8  
-  
- **Minimum supported server:** Windows Server 2012  
-  
- **Namespace:** Platform  
-  
- **Metadata:** platform.winmd  
-  
-## See Also  
- [Platform::COMException Class](../cppcx/platform-comexception-class.md)
+
+Thrown when an interface member is not been implemented in a derived type.
+
+## Syntax
+
+```cpp
+public ref class NotImplementedException : COMException,    IException,    IPrintable,    IEquatable
+```
+
+### Remarks
+
+For more information, see the [COMException](../cppcx/platform-comexception-class.md) class.
+
+### Requirements
+
+**Minimum supported client:** Windows 8
+
+**Minimum supported server:** Windows Server 2012
+
+**Namespace:** Platform
+
+**Metadata:** platform.winmd
+
+## See Also
+
+[Platform::COMException Class](../cppcx/platform-comexception-class.md)

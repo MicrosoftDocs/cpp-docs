@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.symbol.changing.header"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["resource files, multiple", "Resource Includes dialog box", "symbol header files, changing names", "symbol header files", "header files, changing names", "names [C++], symbol header files", "symbols, symbol header files", "Resource.h"]
+helpviewer_keywords: ["resource files [C++], multiple", "Resource Includes dialog box [C++]", "symbol header files [C++], changing names", "symbols [C++], symbol header files", "Resource.h"]
 ms.assetid: b948284a-7899-402e-ab12-9f2c8480ca9d
 author: "mikeblome"
 ms.author: "mblome"
@@ -33,5 +33,5 @@ Win32
 
 ## See Also
 
-[Viewing Resource Symbols](../windows/viewing-resource-symbols.md)  
+[Viewing Resource Symbols](../windows/viewing-resource-symbols.md)<br/>
 [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)

@@ -36,7 +36,7 @@ Win32
 
 ## See Also
 
-[Viewing and Adding ActiveX Controls to a Dialog Box](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md)  
-[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)  
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)  
+[Viewing and Adding ActiveX Controls to a Dialog Box](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md)<br/>
+[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)<br/>
+[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
 [ActiveX Control Containers](../mfc/activex-control-containers.md)

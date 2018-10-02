@@ -31,11 +31,11 @@ class mem_fun_ref_t : public unary_function<Type, Result> {
 
 ### Parameters
 
-*_Pm*
- A pointer to the member function of class `Type` to be converted to a function object.
+*_Pm*<br/>
+A pointer to the member function of class `Type` to be converted to a function object.
 
-*left*
- The object that the *_Pm* member function is called on.
+*left*<br/>
+The object that the *_Pm* member function is called on.
 
 ## Return Value
 

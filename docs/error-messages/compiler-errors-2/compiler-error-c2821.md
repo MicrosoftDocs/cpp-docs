@@ -13,16 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2821
-first formal parameter to 'operator new' must be 'unsigned int'  
-  
-The first formal parameter of the [operator new](../../standard-library/new-operators.md#op_new) must be an unsigned `int`.  
-  
-## Example  
- The following sample generates C2821:  
-  
-```cpp  
-// C2821.cpp  
-// compile with: /c  
-void * operator new( /* unsigned int,*/ void * );   // C2821  
-void * operator new( unsigned int, void * );  
+
+first formal parameter to 'operator new' must be 'unsigned int'
+
+The first formal parameter of the [operator new](../../standard-library/new-operators.md#op_new) must be an unsigned `int`.
+
+## Example
+
+The following sample generates C2821:
+
+```cpp
+// C2821.cpp
+// compile with: /c
+void * operator new( /* unsigned int,*/ void * );   // C2821
+void * operator new( unsigned int, void * );
 ```

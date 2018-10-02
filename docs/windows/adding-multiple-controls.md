@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["controls [Visual Studio], adding multiple", "dialog box controls, adding to dialog boxes"]
+helpviewer_keywords: ["controls [C++], adding multiple"]
 ms.assetid: cc100201-0669-4e74-bb08-f7134ddd03aa
 author: "mikeblome"
 ms.author: "mblome"
@@ -29,6 +29,6 @@ Win32
 
 ## See Also
 
-[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)  
-[Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)  
+[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)<br/>
+[Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>
 [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)

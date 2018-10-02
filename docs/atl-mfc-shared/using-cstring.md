@@ -42,41 +42,41 @@ int main() {
 
 ## In This Section
 
-[Basic CString Operations](../atl-mfc-shared/basic-cstring-operations.md)  
+[Basic CString Operations](../atl-mfc-shared/basic-cstring-operations.md)<br/>
 Describes basic `CString` operations, including creating objects from C literal strings, accessing individual characters in a `CString`, concatenating two objects, and comparing `CString` objects.
 
-[String Data Management](../atl-mfc-shared/string-data-management.md)  
+[String Data Management](../atl-mfc-shared/string-data-management.md)<br/>
 Discusses using Unicode and MBCS with `CString`.
 
-[CString Semantics](../atl-mfc-shared/cstring-semantics.md)  
+[CString Semantics](../atl-mfc-shared/cstring-semantics.md)<br/>
 Explains how `CString` objects are used.
 
-[CString Operations Relating to C-Style Strings](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)  
+[CString Operations Relating to C-Style Strings](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)<br/>
 Describes manipulating the contents of a `CString` object like a C-style null-terminated string.
 
-[Allocating and Releasing Memory for a BSTR](../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md)  
+[Allocating and Releasing Memory for a BSTR](../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md)<br/>
 Discusses using memory for a BSTR and COM objects.
 
-[CString Exception Cleanup](../atl-mfc-shared/cstring-exception-cleanup.md)  
+[CString Exception Cleanup](../atl-mfc-shared/cstring-exception-cleanup.md)<br/>
 Explains that explicit cleanup in MFC 3.0 and later is no longer necessary.
 
-[CString Argument Passing](../atl-mfc-shared/cstring-argument-passing.md)  
+[CString Argument Passing](../atl-mfc-shared/cstring-argument-passing.md)<br/>
 Explains how to pass CString objects to functions and how to return `CString` objects from functions.
 
-[Unicode and Multibyte Character Set (MBCS) Support](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)  
+[Unicode and Multibyte Character Set (MBCS) Support](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)<br/>
 Discusses how MFC is enabled for Unicode and MBCS support.
 
 ## Reference
 
-[CStringT](../atl-mfc-shared/reference/cstringt-class.md)  
+[CStringT](../atl-mfc-shared/reference/cstringt-class.md)<br/>
 Provides reference information about the `CStringT` class.
 
-[CSimpleStringT Class](../atl-mfc-shared/reference/csimplestringt-class.md)  
+[CSimpleStringT Class](../atl-mfc-shared/reference/csimplestringt-class.md)<br/>
 Provides reference information about the `CSimpleStringT` class.
 
 ## Related Sections
 
-[Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)  
+[Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 Contains links to topics that describe several ways to manage string data.
 
 [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)

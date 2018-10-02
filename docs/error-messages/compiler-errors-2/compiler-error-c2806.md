@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2806
-'operator operator' has too many formal parameters  
-  
- An overloaded operator has too many parameters.  
-  
- The following sample generates C2806:  
-  
-```  
-// C2806.cpp  
-// compile with: /c  
-class X {  
-public:  
-   X operator++ ( int, int );   // C2806 more than 1 parameter  
-   X operator++ ( int );   // OK  
-} ;  
+
+'operator operator' has too many formal parameters
+
+An overloaded operator has too many parameters.
+
+The following sample generates C2806:
+
+```
+// C2806.cpp
+// compile with: /c
+class X {
+public:
+   X operator++ ( int, int );   // C2806 more than 1 parameter
+   X operator++ ( int );   // OK
+} ;
 ```

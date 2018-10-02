@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2892
-local class shall not have member templates  
-  
- Templated member functions are not valid in a class that is defined in a function.  
-  
- The following sample generates C2892:  
-  
-```  
-// C2892.cpp  
-int main() {  
-   struct local {  
-      template<class T>   // C2892  
-      void f() {}  
-   };  
-}  
+
+local class shall not have member templates
+
+Templated member functions are not valid in a class that is defined in a function.
+
+The following sample generates C2892:
+
+```
+// C2892.cpp
+int main() {
+   struct local {
+      template<class T>   // C2892
+      void f() {}
+   };
+}
 ```

@@ -16,9 +16,9 @@ ms.workload: ["cplusplus"]
 
 A *code page* is a character set, which can include numbers, punctuation marks, and other glyphs. Different languages and locales may use different code pages. For example, ANSI code page 1252 is used for English and most European languages; OEM code page 932 is used for Japanese Kanji.
 
- A code page can be represented in a table as a mapping of characters to single-byte values or multibyte values. Many code pages share the ASCII character set for characters in the range 0x00 - 0x7F.
+A code page can be represented in a table as a mapping of characters to single-byte values or multibyte values. Many code pages share the ASCII character set for characters in the range 0x00 - 0x7F.
 
- The Microsoft run-time library uses the following types of code pages:
+The Microsoft run-time library uses the following types of code pages:
 
 - System-default ANSI code page. By default, at startup the run-time system automatically sets the multibyte code page to the system-default ANSI code page, which is obtained from the operating system. The call:
 
@@ -37,4 +37,4 @@ A *code page* is a character set, which can include numbers, punctuation marks, 
 ## See Also
 
 [Internationalization](../c-runtime-library/internationalization.md)<br/>
- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

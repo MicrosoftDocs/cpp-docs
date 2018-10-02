@@ -13,43 +13,47 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3699
-'operator' : cannot use this indirection on type 'type'  
-  
- An attempt was made to use indirection that is not allowed on `type`.  
-  
-## Example  
- The following sample generates C3699.  
-  
-```  
-// C3699.cpp  
-// compile with: /clr /c  
-using namespace System;  
-int main() {  
-   String * s;   // C3699  
-   // try the following line instead  
-   // String ^ s2;  
-}  
-```  
-  
-## Example  
- A trivial property cannot have reference type. See [property](../../windows/property-cpp-component-extensions.md) for more information. The following sample generates C3699.  
-  
-```  
-// C3699_b.cpp  
-// compile with: /clr /c  
-ref struct C {  
-   property System::String % x;   // C3699  
-   property System::String ^ y;   // OK  
-};  
-```  
-  
-## Example  
- The equivalent of a "pointer to a pointer" syntax is a handle to a tracking reference. The following sample generates C3699.  
-  
-```  
-// C3699_c.cpp  
-// compile with: /clr /c  
-using namespace System;  
-void Test(String ^^ i);   // C3699  
-void Test2(String ^% i);  
+
+'operator' : cannot use this indirection on type 'type'
+
+An attempt was made to use indirection that is not allowed on `type`.
+
+## Example
+
+The following sample generates C3699.
+
+```
+// C3699.cpp
+// compile with: /clr /c
+using namespace System;
+int main() {
+   String * s;   // C3699
+   // try the following line instead
+   // String ^ s2;
+}
+```
+
+## Example
+
+A trivial property cannot have reference type. See [property](../../windows/property-cpp-component-extensions.md) for more information. The following sample generates C3699.
+
+```
+// C3699_b.cpp
+// compile with: /clr /c
+ref struct C {
+   property System::String % x;   // C3699
+   property System::String ^ y;   // OK
+};
+```
+
+## Example
+
+The equivalent of a "pointer to a pointer" syntax is a handle to a tracking reference. The following sample generates C3699.
+
+```
+// C3699_c.cpp
+// compile with: /clr /c
+using namespace System;
+void Test(String ^^ i);   // C3699
+void Test2(String ^% i);
 ```

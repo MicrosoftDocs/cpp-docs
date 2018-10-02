@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4408
-anonymousstruct or union did not declare any data members  
-  
- An anonymous struct or union must have at least one data member.  
-  
- The following sample generates C4408:  
-  
-```  
-// C4408.cpp  
-// compile with: /W4 /LD  
-static union  
-{  
-   // int i;  
-};  
-// a named union can have no data members  
-// } MyUnion;  
+
+anonymousstruct or union did not declare any data members
+
+An anonymous struct or union must have at least one data member.
+
+The following sample generates C4408:
+
+```
+// C4408.cpp
+// compile with: /W4 /LD
+static union
+{
+   // int i;
+};
+// a named union can have no data members
+// } MyUnion;
 ```

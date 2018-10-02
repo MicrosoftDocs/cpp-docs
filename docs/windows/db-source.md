@@ -28,14 +28,14 @@ Creates a connection to a data source.
 
 ### Parameters
 
-*db_source*  
+*db_source*<br/>
 The connection string used to connect to the data source. For the format of the connection string, see [Connection Strings and Data Links](/previous-versions/windows/desktop/ms718376\(v=vs.85\)) in the Microsoft Data Access Components (MDAC) SDK.
 
-*name* (optional)  
-When you use **db_source** on a class, *name* is an instance of a data source object that has the **db_source** attribute applied to it (see example 1). When you use **db_source** inline in a method implementation, *name* is a variable (local to the method) that can be used to access the data source (see example 2). You pass this *name* to the *source_name* parameter of `db_command` to associate the data source with a command.
+*name*<br/>
+(Optional) When you use **db_source** on a class, *name* is an instance of a data source object that has the **db_source** attribute applied to it (see example 1). When you use **db_source** inline in a method implementation, *name* is a variable (local to the method) that can be used to access the data source (see example 2). You pass this *name* to the *source_name* parameter of `db_command` to associate the data source with a command.
 
-*hresult* (optional)  
-Identifies the variable that will receive the HRESULT of this database command. If the variable does not exist, it will be automatically injected by the attribute.
+*hresult*<br/>
+(Optional) Identifies the variable that will receive the HRESULT of this database command. If the variable does not exist, it will be automatically injected by the attribute.
 
 ## Remarks
 

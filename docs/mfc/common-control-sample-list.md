@@ -12,14 +12,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Common Control Sample List
-See the following sample programs that illustrate common controls:  
-  
--   [CMNCTRL1](../visual-cpp-samples.md)  
-  
--   [CMNCTRL2](../visual-cpp-samples.md)  
-  
--   [CTRLTEST](../visual-cpp-samples.md)  
-  
-## See Also  
- [Controls](../mfc/controls-mfc.md)
+
+See the following sample programs that illustrate common controls:
+
+- [CMNCTRL1](../visual-cpp-samples.md)
+
+- [CMNCTRL2](../visual-cpp-samples.md)
+
+- [CTRLTEST](../visual-cpp-samples.md)
+
+## See Also
+
+[Controls](../mfc/controls-mfc.md)
 

@@ -1,17 +1,17 @@
 ---
-title: "Adding Event Handlers for Dialog Box Controls | Microsoft Docs"
+title: "Adding Event Handlers for Dialog Box Controls (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "06/28/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["Dialog editor, adding event handlers to controls", "controls [C++], event handlers", "dialog box controls, events", "event handlers, for dialog box controls"]
+helpviewer_keywords: ["Dialog Editor [C++], adding event handlers to controls", "controls [C++], event handlers", "dialog box controls [C++], events", "event handlers, for dialog box controls"]
 ms.assetid: f9c70f24-ea6f-44df-82eb-78a2deaee769
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Adding Event Handlers for Dialog Box Controls
+# Adding Event Handlers for Dialog Box Controls (C++)
 
 For project dialog boxes that are already associated with a class, you can take advantage of some shortcuts when you create event handlers. You can quickly create a handler either for the default control notification event or for any applicable Windows message.
 
@@ -62,11 +62,11 @@ Win32
 
 ## See Also
 
-[Default Control Events](../windows/default-control-events.md)  
-[Defining Member Variables for Dialog Controls](../windows/defining-member-variables-for-dialog-controls.md)  
-[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)  
-[Adding a Class](../ide/adding-a-class-visual-cpp.md)  
-[Adding a Member Function](../ide/adding-a-member-function-visual-cpp.md)  
-[Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)  
-[Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)  
+[Default Control Events](../windows/default-control-events.md)<br/>
+[Defining Member Variables for Dialog Controls](../windows/defining-member-variables-for-dialog-controls.md)<br/>
+[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)<br/>
+[Adding a Class](../ide/adding-a-class-visual-cpp.md)<br/>
+[Adding a Member Function](../ide/adding-a-member-function-visual-cpp.md)<br/>
+[Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)<br/>
+[Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
 [MFC Message Handler](../mfc/reference/adding-an-mfc-message-handler.md)  

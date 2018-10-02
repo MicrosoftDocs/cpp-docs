@@ -69,8 +69,8 @@ future(future&& Other) noexcept;
 
 ### Parameters
 
-*Other*
- A `future` object.
+*Other*<br/>
+A `future` object.
 
 ### Remarks
 
@@ -110,8 +110,8 @@ future& operator=(future&& Right) noexcept;
 
 ### Parameters
 
-*Right*
- A `future` object.
+*Right*<br/>
+A `future` object.
 
 ### Return Value
 
@@ -168,8 +168,8 @@ future_status wait_for(const chrono::duration<Rep, Period>& Rel_time) const;
 
 ### Parameters
 
-*Rel_time*
- A [chrono::duration](../standard-library/duration-class.md) object that specifies a maximum time interval that the thread blocks.
+*Rel_time*<br/>
+A [chrono::duration](../standard-library/duration-class.md) object that specifies a maximum time interval that the thread blocks.
 
 ### Return Value
 
@@ -190,8 +190,8 @@ future_status wait_until(const chrono::time_point<Clock, Duration>& Abs_time) co
 
 ### Parameters
 
-*Abs_time*
- A [chrono::time_point](../standard-library/time-point-class.md) object that specifies a time after which the thread can unblock.
+*Abs_time*<br/>
+A [chrono::time_point](../standard-library/time-point-class.md) object that specifies a time after which the thread can unblock.
 
 ### Return Value
 

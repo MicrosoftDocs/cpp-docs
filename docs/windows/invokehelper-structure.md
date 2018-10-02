@@ -1,12 +1,12 @@
 ---
 title: "InvokeHelper Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/21/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["event/Microsoft::WRL::Details::InvokeHelper"]
+f1_keywords: ["event/Microsoft::WRL::Details::InvokeHelper", "event/Microsoft::WRL::Details::InvokeHelper::callback_", "event/Microsoft::WRL::Details::InvokeHelper::Invoke", "event/Microsoft::WRL::Details::InvokeHelper::InvokeHelper"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["InvokeHelper structure"]
+helpviewer_keywords: ["Microsoft::WRL::Details::InvokeHelper structure", "Microsoft::WRL::Details::callback_ data member", "Microsoft::WRL::Details::Invoke method", "Microsoft::WRL::Details::InvokeHelper, constructor"]
 ms.assetid: 555ad2bc-4dd6-4e65-a2e2-1242c395f0e5
 author: "mikeblome"
 ms.author: "mblome"
@@ -79,12 +79,12 @@ struct InvokeHelper<TDelegateInterface, TCallback, 9> : Microsoft::WRL::RuntimeC
 
 ### Parameters
 
-*TDelegateInterface*  
+*TDelegateInterface*<br/>
 *TCallback*  
 The type of the event handler function.
 
-*argCount*  
-The number of arguments in an **InvokeHelper** specialization.
+*argCount*<br/>
+The number of arguments in an `InvokeHelper` specialization.
 
 ## Remarks
 
@@ -94,27 +94,27 @@ Provides an implementation of the `Invoke()` method based on the specified numbe
 
 ### Public Typedefs
 
-|Name|Description|
-|----------|-----------------|
-|`Traits`|A synonym for the class that defines the type of each event handler argument.|
+Name     | Description
+-------- | -----------------------------------------------------------------------------
+`Traits` | A synonym for the class that defines the type of each event handler argument.
 
 ### Public Constructors
 
-|Name|Description|
-|----------|-----------------|
-|[InvokeHelper::InvokeHelper Constructor](../windows/invokehelper-invokehelper-constructor.md)|Initializes a new instance of the **InvokeHelper** class.|
+Name                                        | Description
+------------------------------------------- | -------------------------------------------------------
+[InvokeHelper::InvokeHelper](#invokehelper) | Initializes a new instance of the `InvokeHelper` class.
 
 ### Public Methods
 
-|Name|Description|
-|----------|-----------------|
-|[InvokeHelper::Invoke Method](../windows/invokehelper-invoke-method.md)|Calls the event handler whose signature contains the specified number of arguments.|
+Name                            | Description
+------------------------------- | -----------------------------------------------------------------------------------
+[InvokeHelper::Invoke](#invoke) | Calls the event handler whose signature contains the specified number of arguments.
 
 ### Public Data Members
 
-|Name|Description|
-|----------|-----------------|
-|[InvokeHelper::callback_ Data Member](../windows/invokehelper-callback-data-member.md)|Represents the event handler to call when an event occurs.|
+Name                                 | Description
+------------------------------------ | ----------------------------------------------------------
+[InvokeHelper::callback_](#callback) | Represents the event handler to call when an event occurs.
 
 ## Inheritance Hierarchy
 
@@ -126,6 +126,111 @@ Provides an implementation of the `Invoke()` method based on the specified numbe
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## <a name="callback"></a>InvokeHelper::callback_
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+```cpp
+TCallback callback_;
+```
+
+### Remarks
+
+Represents the event handler to call when an event occurs.
+
+The `TCallback` template parameter specifies the type of the event handler.
+
+## <a name="invoke"></a>InvokeHelper::Invoke
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+```cpp
+STDMETHOD(
+   Invoke
+)();
+STDMETHOD(
+   Invoke
+)(typename Traits;
+STDMETHOD(
+   Invoke
+)( typename Traits;
+STDMETHOD(
+   Invoke
+)( typename Traits;
+STDMETHOD(
+   Invoke
+)( typename Traits;
+STDMETHOD(
+   Invoke
+)( typename Traits;
+STDMETHOD(
+   Invoke
+)( typename Traits;
+STDMETHOD(
+   Invoke
+)( typename Traits;
+STDMETHOD(
+   Invoke
+)( typename Traits;
+STDMETHOD(
+   Invoke
+)( typename Traits;
+```
+
+### Parameters
+
+*arg1*<br/>
+Argument 1.
+
+*arg2*<br/>
+Argument 2.
+
+*arg3*<br/>
+Argument 3.
+
+*arg4*<br/>
+Argument 4.
+
+*arg5*<br/>
+Argument 5.
+
+*arg6*<br/>
+Argument 6.
+
+*arg7*<br/>
+Argument 7.
+
+*arg8*<br/>
+Argument 8.
+
+*arg9*<br/>
+Argument 9.
+
+### Return Value
+
+S_OK if successful; otherwise, an HRESULT that describes the error.
+
+### Remarks
+
+Calls the event handler whose signature contains the specified number of arguments.
+
+## <a name="invokehelper"></a>InvokeHelper::InvokeHelper
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+```cpp
+explicit InvokeHelper(
+   TCallback callback
+);
+```
+
+### Parameters
+
+*callback*<br/>
+An event handler.
+
+### Remarks
+
+Initializes a new instance of the `InvokeHelper` class.
+
+The `TCallback` template parameter specifies the type of the event handler.

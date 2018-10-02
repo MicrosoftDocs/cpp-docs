@@ -17,7 +17,7 @@ ms.workload: ["cplusplus"]
 This class implements a thread-pooled, apartment-model COM server.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -34,7 +34,7 @@ You must use the [DECLARE_CLASSFACTORY_AUTO_THREAD](aggregation-and-class-factor
 `CAtlAutoThreadModule _AtlAutoModule; // name is immaterial.`
 
 > [!NOTE]
->  This class replaces the obsolete [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md) class.
+> This class replaces the obsolete [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md) class.
 
 ## Inheritance Hierarchy
 
@@ -50,7 +50,7 @@ You must use the [DECLARE_CLASSFACTORY_AUTO_THREAD](aggregation-and-class-factor
 
 ## See Also
 
-[CAtlAutoThreadModuleT Class](../../atl/reference/catlautothreadmodulet-class.md)   
-[IAtlAutoThreadModule Class](../../atl/reference/iatlautothreadmodule-class.md)   
-[Class Overview](../../atl/atl-class-overview.md)   
+[CAtlAutoThreadModuleT Class](../../atl/reference/catlautothreadmodulet-class.md)<br/>
+[IAtlAutoThreadModule Class](../../atl/reference/iatlautothreadmodule-class.md)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [Module Classes](../../atl/atl-module-classes.md)

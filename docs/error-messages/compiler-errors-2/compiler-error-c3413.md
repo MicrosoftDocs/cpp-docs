@@ -13,26 +13,27 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3413
-'name' : invalid explicit instantiation  
-  
- The compiler detected an ill-formed explicit instantiation.  
-  
- The following sample generates C3413:  
-  
-```  
-// C3413.cpp  
-template  
-class MyClass {};   // C3413  
-```  
-  
- Possible resolution:  
-  
-```  
-// C3413b.cpp  
-// compile with: /c  
-template <class T>  
-class MyClass {};  
-  
-template <>  
-class MyClass<int> {};  
+
+'name' : invalid explicit instantiation
+
+The compiler detected an ill-formed explicit instantiation.
+
+The following sample generates C3413:
+
+```
+// C3413.cpp
+template
+class MyClass {};   // C3413
+```
+
+Possible resolution:
+
+```
+// C3413b.cpp
+// compile with: /c
+template <class T>
+class MyClass {};
+
+template <>
+class MyClass<int> {};
 ```

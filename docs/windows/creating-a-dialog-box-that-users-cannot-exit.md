@@ -1,17 +1,17 @@
 ---
-title: "Creating a Dialog Box That Users Cannot Exit | Microsoft Docs"
+title: "Creating a Dialog Box (C++) That Users Cannot Exit | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["dialog boxes, creating", "modal dialog boxes, logon screens", "logon screens"]
+helpviewer_keywords: ["dialog boxes [C++], creating", "modal dialog boxes [C++], logon screens", "logon screens"]
 ms.assetid: 54823c27-1658-4388-bd12-0a1ce8f3899e
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Creating a Dialog Box That Users Cannot Exit
+# Creating a Dialog Box (C++) That Users Cannot Exit
 
 You can create a runtime dialog box that a user cannot exit. This kind of dialog box is useful for logons, and for application or document locks.
 
@@ -38,6 +38,6 @@ Win32
 
 ## See Also
 
-[How to: Create a Resource](../windows/how-to-create-a-resource.md)  
-[Resource Files](../windows/resource-files-visual-studio.md)  
+[How to: Create a Resource](../windows/how-to-create-a-resource.md)<br/>
+[Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [Dialog Editor](../windows/dialog-editor.md)

@@ -1,12 +1,12 @@
 ---
-title: "Previewing Resources | Microsoft Docs"
+title: "Previewing Resources (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.resvw.resource.previewing", "vs.resvw.resource.previewing"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["resources [Visual Studio], viewing", "resource previews", "code, viewing"]
+helpviewer_keywords: ["resources [C++], viewing"]
 ms.assetid: d6abda66-0e2b-4ac3-a59a-a57b8c6fb70b
 author: "mikeblome"
 ms.author: "mblome"
@@ -55,5 +55,5 @@ Win32
 
 ## See Also
 
-[How to: Open a Resource Script File Outside of a Project (Standalone)](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)  
+[How to: Open a Resource Script File Outside of a Project (Standalone)](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)<br/>
 [Resource Editors](../windows/resource-editors.md)

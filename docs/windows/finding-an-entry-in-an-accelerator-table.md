@@ -1,5 +1,5 @@
 ---
-title: "Finding an Entry in an Accelerator Table | Microsoft Docs"
+title: "Finding an Entry in an Accelerator Table (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -32,5 +32,5 @@ Win32
 
 ## See Also
 
-[Editing Accelerator Tables](../windows/editing-accelerator-tables.md)  
+[Editing Accelerator Tables](../windows/editing-accelerator-tables.md)<br/>
 [Accelerator Editor](../windows/accelerator-editor.md)

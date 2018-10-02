@@ -1,18 +1,18 @@
 ---
-title: "Creating a New Dialog Box | Microsoft Docs"
+title: "Creating a New Dialog Box (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.dialog"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["dialog boxes, creating", "Dialog editor, creating dialog boxes"]
+helpviewer_keywords: ["dialog boxes [C++], creating", "Dialog Editor [C++], creating dialog boxes"]
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Creating a New Dialog Box
+# Creating a New Dialog Box (C++)
 
 ### To create a new dialog box
 
@@ -37,6 +37,6 @@ Win32
 
 ## See Also
 
-[How to: Create a Resource](../windows/how-to-create-a-resource.md)  
-[Resource Files](../windows/resource-files-visual-studio.md)  
+[How to: Create a Resource](../windows/how-to-create-a-resource.md)<br/>
+[Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [Dialog Editor](../windows/dialog-editor.md)

@@ -13,31 +13,32 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4555
-expression has no effect; expected expression with side-effect  
-  
- This warning informs you when an expression has no effect.  
-  
- This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.  
-  
- For example:  
-  
-```  
-// C4555.cpp  
-// compile with: /W1  
-#pragma warning(default:4555)  
-  
-void func1()  
-{  
-   1;   // C4555  
-}  
-  
-void func2()  
-{  
-   int x;  
-   x;   // C4555  
-}  
-  
-int main()  
-{  
-}  
+
+expression has no effect; expected expression with side-effect
+
+This warning informs you when an expression has no effect.
+
+This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+
+For example:
+
+```
+// C4555.cpp
+// compile with: /W1
+#pragma warning(default:4555)
+
+void func1()
+{
+   1;   // C4555
+}
+
+void func2()
+{
+   int x;
+   x;   // C4555
+}
+
+int main()
+{
+}
 ```

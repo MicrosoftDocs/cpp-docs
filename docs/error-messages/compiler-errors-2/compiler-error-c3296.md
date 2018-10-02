@@ -13,24 +13,26 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3296
-'property' : a property with this name already exists  
-  
- The compiler encountered more than one property with the same name. Each property in a type must have a unique name.  
-  
- For more information, see [property](../../windows/property-cpp-component-extensions.md).  
-  
-## Example  
- The following sample generates C3296.  
-  
-```  
-// C3296.cpp  
-// compile with: /clr /c  
-using namespace System;  
-  
-ref class R {  
-public:  
-   property int MyProp[int] { int get(int); }  
-  
-   property String^ MyProp[int] { void set(int, String^); }   // C3296  
-};  
+
+'property' : a property with this name already exists
+
+The compiler encountered more than one property with the same name. Each property in a type must have a unique name.
+
+For more information, see [property](../../windows/property-cpp-component-extensions.md).
+
+## Example
+
+The following sample generates C3296.
+
+```
+// C3296.cpp
+// compile with: /clr /c
+using namespace System;
+
+ref class R {
+public:
+   property int MyProp[int] { int get(int); }
+
+   property String^ MyProp[int] { void set(int, String^); }   // C3296
+};
 ```

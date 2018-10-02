@@ -14,17 +14,17 @@ ms.workload: ["cplusplus"]
 ---
 # while Statement (C)
 
-The `while` statement lets you repeat a statement until a specified expression becomes false.  
-  
+The `while` statement lets you repeat a statement until a specified expression becomes false.
+
 ## Syntax
 
 *iteration-statement*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**while (**  *expression*  **)**  *statement*
-  
-The *expression* must have arithmetic or pointer type. Execution proceeds as follows:  
-  
-1. The *expression* is evaluated.  
-  
+
+The *expression* must have arithmetic or pointer type. Execution proceeds as follows:
+
+1. The *expression* is evaluated.
+
 2. If *expression* is initially false, the body of the `while` statement is never executed, and control passes from the `while` statement to the next statement in the program.
 
    If *expression* is true (nonzero), the body of the statement is executed and the process is repeated beginning at step 1.

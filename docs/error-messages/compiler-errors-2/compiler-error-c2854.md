@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2854
-syntax error in #pragma hdrstop  
-  
- The `#pragma hdrstop` gives an invalid filename. The pragma can be followed by an optional filename in parentheses and quotation marks:  
-  
- The following sample generates C2854:  
-  
-```  
-// C2854.cpp  
-// compile with: /c  
-#pragma hdrstop( "\\source\\pchfiles\\myheader.pch" ]   // C2854  
-// try the following line instead  
-// #pragma hdrstop( "\\source\\pchfiles\\myheader.pch" )  
+
+syntax error in #pragma hdrstop
+
+The `#pragma hdrstop` gives an invalid filename. The pragma can be followed by an optional filename in parentheses and quotation marks:
+
+The following sample generates C2854:
+
+```
+// C2854.cpp
+// compile with: /c
+#pragma hdrstop( "\\source\\pchfiles\\myheader.pch" ]   // C2854
+// try the following line instead
+// #pragma hdrstop( "\\source\\pchfiles\\myheader.pch" )
 ```

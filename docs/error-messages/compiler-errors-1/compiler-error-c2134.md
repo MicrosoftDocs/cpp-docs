@@ -12,33 +12,34 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2134
-'function' : call does not result in a constant expression  
-  
- A function declared as constexpr can only call other functions declared as constexpr.  
-  
- The following sample generates C2134:  
-  
-```  
-// C2134.cpp  
-// compile with: /c  
-int A() {  
-    return 42;  
-};  
-  
-constexpr int B() {  
-    return A();  // Error C2134: 'A': call does not result in a constant expression.  
-}  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2134b.cpp  
-constexpr int A() {  // add constexpr to A, since it meets the requirements of constexpr.  
-    return 42;  
-};  
-  
-constexpr int B() {  
-    return A();  // No error  
-}  
+
+'function' : call does not result in a constant expression
+
+A function declared as constexpr can only call other functions declared as constexpr.
+
+The following sample generates C2134:
+
+```
+// C2134.cpp
+// compile with: /c
+int A() {
+    return 42;
+};
+
+constexpr int B() {
+    return A();  // Error C2134: 'A': call does not result in a constant expression.
+}
+```
+
+Possible resolution:
+
+```
+// C2134b.cpp
+constexpr int A() {  // add constexpr to A, since it meets the requirements of constexpr.
+    return 42;
+};
+
+constexpr int B() {
+    return A();  // No error
+}
 ```

@@ -1,18 +1,18 @@
 ---
-title: "Grouping Radio Buttons on a Dialog Box | Microsoft Docs"
+title: "Grouping Radio Buttons on a Dialog Box (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.dialog.grouping"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["member variables, adding to radio button groups", "variables, dialog box control member variables", "dialog box controls, grouping radio buttons", "grouping controls", "radio buttons, grouping on dialog boxes"]
+helpviewer_keywords: ["member variables, adding to radio button groups", "variables, dialog box control member variables", "dialog box controls [C++], grouping radio buttons", "grouping controls", "radio buttons [C++], grouping on dialog boxes"]
 ms.assetid: 3cc43f9e-56c8-4faa-9930-ce81733c69de
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Grouping Radio Buttons on a Dialog Box
+# Grouping Radio Buttons on a Dialog Box (C++)
 
 When you add radio buttons to a dialog box, treat them as a group by setting a **Group** property in the **Properties** window for the first button in the group. A control ID for that radio button then appears in the [Add Member Variable Wizard](../ide/add-member-variable-wizard.md), allowing you to add a member variable for the group of radio buttons.
 
@@ -53,6 +53,6 @@ Win32
 
 ## See Also
 
-[Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)  
-[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)  
+[Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)<br/>
+[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)<br/>
 [Controls](../mfc/controls-mfc.md)

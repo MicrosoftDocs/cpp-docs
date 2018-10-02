@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2528
-'name' : pointer to reference is illegal  
-  
- You cannot declare a pointer to a reference. Dereference the variable before declaring a pointer to it.  
-  
- The following sample generates C2528:  
-  
-```  
-// C2528.cpp  
-int i;  
-int &ir = i;  
-int & (*irptr) = ir;    // C2528  
+
+'name' : pointer to reference is illegal
+
+You cannot declare a pointer to a reference. Dereference the variable before declaring a pointer to it.
+
+The following sample generates C2528:
+
+```
+// C2528.cpp
+int i;
+int &ir = i;
+int & (*irptr) = ir;    // C2528
 ```

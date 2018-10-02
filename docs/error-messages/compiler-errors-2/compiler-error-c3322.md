@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3322
-'property': is not a valid property for attribute 'attribute'  
-  
- An invalid or unrecognized property (or parameter) was passed to an attribute. Check the documentation for the attribute.
+
+'property': is not a valid property for attribute 'attribute'
+
+An invalid or unrecognized property (or parameter) was passed to an attribute. Check the documentation for the attribute.

@@ -29,7 +29,7 @@ struct RemoveReference<T&&>;
 
 ### Parameters
 
-*T*  
+*T*<br/>
 A class.
 
 ## Remarks

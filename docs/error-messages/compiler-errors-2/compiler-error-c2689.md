@@ -13,20 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2689
-'function' : a friend function cannot be defined within a local class  
-  
- You can declare but not define a friend function in a local class.  
-  
- The following sample generates C2689:  
-  
-```  
-// C2689.cpp  
-// compile with: /c  
-void g() {  
-   void f2();  
-   class X {  
-      friend void f2(){}   // C2689  
-      friend void f2();   // OK  
-   };  
-}  
+
+'function' : a friend function cannot be defined within a local class
+
+You can declare but not define a friend function in a local class.
+
+The following sample generates C2689:
+
+```
+// C2689.cpp
+// compile with: /c
+void g() {
+   void f2();
+   class X {
+      friend void f2(){}   // C2689
+      friend void f2();   // OK
+   };
+}
 ```

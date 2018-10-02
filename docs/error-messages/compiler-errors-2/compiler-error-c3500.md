@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3500
-invalid ProgID 'progid'  
-  
- An invalid progid was specified with the `#import` statement. Check the Windows registry to ensure that you are specifying a valid progid.
+
+invalid ProgID 'progid'
+
+An invalid progid was specified with the `#import` statement. Check the Windows registry to ensure that you are specifying a valid progid.

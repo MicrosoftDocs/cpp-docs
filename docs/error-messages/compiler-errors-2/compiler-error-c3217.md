@@ -13,36 +13,37 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3217
-'param' : generic parameter cannot be constrained in this declaration  
-  
- A constraint was ill formed; the constraint generic parameter must agree with the generic class template parameter.  
-  
- The following sample generates C3217:  
-  
-```  
-// C3217.cpp  
-// compile with: /clr  
-interface struct A {};  
-  
-generic <class T>  
-ref class C {  
-   generic <class T1>  
-   where T : A   // C3217  
-   void f();  
-};  
-```  
-  
- The following sample demonstrates a possible resolution:  
-  
-```  
-// C3217b.cpp  
-// compile with: /clr /c  
-interface struct A {};  
-  
-generic <class T>  
-ref class C {  
-   generic <class T1>  
-   where T1 : A  
-   void f();  
-};  
+
+'param' : generic parameter cannot be constrained in this declaration
+
+A constraint was ill formed; the constraint generic parameter must agree with the generic class template parameter.
+
+The following sample generates C3217:
+
+```
+// C3217.cpp
+// compile with: /clr
+interface struct A {};
+
+generic <class T>
+ref class C {
+   generic <class T1>
+   where T : A   // C3217
+   void f();
+};
+```
+
+The following sample demonstrates a possible resolution:
+
+```
+// C3217b.cpp
+// compile with: /clr /c
+interface struct A {};
+
+generic <class T>
+ref class C {
+   generic <class T1>
+   where T1 : A
+   void f();
+};
 ```

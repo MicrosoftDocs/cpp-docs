@@ -1,17 +1,17 @@
 ---
-title: "Resource Files (Visual Studio) | Microsoft Docs"
+title: "Resource Files (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["resources [Visual Studio]", ".rc files", "resource files", "resource script files", "resource script files, Win-32 based applications", "resource script files, files updated when editing resources", "resources [Visual Studio], types of resource files", "rct files", "resources [C++]", "rc files", "resource files, types of", ".rct files", "resource script files, unsupported types"]
+helpviewer_keywords: ["resources [C++]", ".rc files [C++]", "resource files [C++]", "resource script files [C++]", "resource script files [C++], Win-32 based applications", "resource script files [C++], files updated when editing resources", "resources [C++], types of resource files", "rct files [C++]", "rc files [C++]", "resource files [C++], types of", ".rct files [C++]", "resource script files [C++], unsupported types"]
 ms.assetid: 4d2b6fcc-07cf-4289-be87-83a60f69533c
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Resource Files (Visual Studio)
+# Resource Files (C++)
 
 > [!NOTE]
 > This material applies to Windows desktop applications. For information about resources in Universal Windows Platform apps, see [Defining App Resources](/windows/uwp/app-resources/).
@@ -72,6 +72,6 @@ Win32
 
 ## See Also
 
-[Resource Editors](../windows/resource-editors.md)  
-[Working with Resource Files](../windows/working-with-resource-files.md)  
+[Resource Editors](../windows/resource-editors.md)<br/>
+[Working with Resource Files](../windows/working-with-resource-files.md)<br/>
 [Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

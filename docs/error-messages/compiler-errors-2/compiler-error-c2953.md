@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2953
-'identifier' : class template has already been defined  
-  
- Check the source file and include files for other definitions.  
-  
- The following sample generates C2953:  
-  
-```  
-// C2953.cpp  
-// compile with: /c  
-template <class T>  class A {};  
-template <class T>  class A {};   // C2953  
-template <class T>  class B {};   // OK  
+
+'identifier' : class template has already been defined
+
+Check the source file and include files for other definitions.
+
+The following sample generates C2953:
+
+```
+// C2953.cpp
+// compile with: /c
+template <class T>  class A {};
+template <class T>  class A {};   // C2953
+template <class T>  class B {};   // OK
 ```

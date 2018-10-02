@@ -11,4 +11,5 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # 2. Directives
+
 Directives are based on **#pragma** directives defined in the C and C++ standards.  Compilers that support the OpenMP C and C++ API will include a command-line option that activates and allows interpretation of all OpenMP compiler directives.

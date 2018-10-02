@@ -23,22 +23,22 @@ Declares an interface.  For information on native interfaces, see [__interface](
 ```cpp
 interface_access
 interface class
- name :  inherit_accessbase_interface{};interface_accessinterface structname :  inherit_accessbase_interface{};
+name :  inherit_accessbase_interface{};interface_accessinterface structname :  inherit_accessbase_interface{};
 ```
 
 ### Parameters
 
-*interface_access*  
+*interface_access*<br/>
 The accessibility of an interface outside the assembly.  Possible values are **public** and **private**.  **private** is the default. Nested interfaces cannot have an *interface_access* specifier.
 
-*name*  
+*name*<br/>
 The name of the interface.
 
-*inherit_access*  
+*inherit_access*<br/>
 The accessibility of *base_interface*.  The only permitted accessibility for a base interface is **public** (the default).
 
-*base_interface* (optional)  
-A base interface for interface *name*.
+*base_interface*<br/>
+(Optional) A base interface for interface *name*.
 
 ### Remarks
 

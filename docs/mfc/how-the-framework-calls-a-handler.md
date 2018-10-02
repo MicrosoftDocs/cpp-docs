@@ -12,20 +12,22 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # How the Framework Calls a Handler
-The following topics first examine how the framework routes commands, then examine how other messages and control notifications are sent to windows:  
-  
--   [Message sending and receiving](../mfc/message-sending-and-receiving.md)  
-  
--   [How noncommand messages reach their handlers](../mfc/how-noncommand-messages-reach-their-handlers.md)  
-  
--   [Command routing](../mfc/command-routing.md)  
-  
--   [Command Routing Illustration](../mfc/command-routing-illustration.md)  
-  
--   [The OnCmdMsg Handler](../mfc/oncmdmsg-handler.md)  
-  
--   [Overriding the Standard Command Routing](../mfc/overriding-the-standard-command-routing.md)  
-  
-## See Also  
- [Message Handling and Mapping](../mfc/message-handling-and-mapping.md)
+
+The following topics first examine how the framework routes commands, then examine how other messages and control notifications are sent to windows:
+
+- [Message sending and receiving](../mfc/message-sending-and-receiving.md)
+
+- [How noncommand messages reach their handlers](../mfc/how-noncommand-messages-reach-their-handlers.md)
+
+- [Command routing](../mfc/command-routing.md)
+
+- [Command Routing Illustration](../mfc/command-routing-illustration.md)
+
+- [The OnCmdMsg Handler](../mfc/oncmdmsg-handler.md)
+
+- [Overriding the Standard Command Routing](../mfc/overriding-the-standard-command-routing.md)
+
+## See Also
+
+[Message Handling and Mapping](../mfc/message-handling-and-mapping.md)
 

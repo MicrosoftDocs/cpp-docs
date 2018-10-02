@@ -1,17 +1,17 @@
 ---
-title: "How to: Specify Include Directories for Resources | Microsoft Docs"
+title: "How to: Specify Include Directories for Resources (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["directories [C++], specifying include paths for resources", "include files, specifying for resources", "resources [Visual Studio], including in projects"]
+helpviewer_keywords: ["directories [C++], specifying include paths for resources", "include files [C++], specifying for resources", "resources [C++], including in projects"]
 ms.assetid: d6a7c0f6-4810-4bb0-b4b7-7d2476a20ca2
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# How to: Specify Include Directories for Resources
+# How to: Specify Include Directories for Resources (C++)
 
 ### To specify include directories for a specific .rc file
 
@@ -27,8 +27,8 @@ Win32
 
 ## See Also
 
-[Resource Includes Dialog Box](../windows/resource-includes-dialog-box.md)  
-[TN035: Using Multiple Resource Files and Header Files with Visual C++](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)  
-[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)  
-[Resource Files](../windows/resource-files-visual-studio.md)  
+[Resource Includes Dialog Box](../windows/resource-includes-dialog-box.md)<br/>
+[TN035: Using Multiple Resource Files and Header Files with Visual C++](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)<br/>
+[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)<br/>
+[Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [Resource Editors](../windows/resource-editors.md)

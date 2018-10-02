@@ -33,11 +33,11 @@ void swap(
 
 ### Parameters
 
-*left*
- A stream.
+*left*<br/>
+A stream.
 
-*right*
- A stream.
+*right*<br/>
+A stream.
 
 ## <a name="ws"></a>  ws
 
@@ -49,8 +49,8 @@ template class<Elem, Tr> basic_istream<Elem, Tr>& ws(basic_istream<Elem, Tr>& _I
 
 ### Parameters
 
-*_Istr*
- A stream.
+*_Istr*<br/>
+A stream.
 
 ### Return Value
 

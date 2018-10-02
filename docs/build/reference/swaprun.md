@@ -13,20 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /SWAPRUN
-```  
-/SWAPRUN:{[!]NET|[!]CD}  
-```  
-  
-## Remarks  
- This option edits the image to tell the operating system to copy the image to a swap file and run it from there. Use this option for images that reside on networks or removable media.  
-  
- You can add or remove the NET or CD qualifiers:  
-  
--   NET indicates that the image resides on a network.  
-  
--   CD indicates that the image resides on a CD-ROM or similar removable medium.  
-  
--   Use !NET and !CD to reverse the effects of NET and CD.  
-  
-## See Also  
- [EDITBIN Options](../../build/reference/editbin-options.md)
+
+```
+/SWAPRUN:{[!]NET|[!]CD}
+```
+
+## Remarks
+
+This option edits the image to tell the operating system to copy the image to a swap file and run it from there. Use this option for images that reside on networks or removable media.
+
+You can add or remove the NET or CD qualifiers:
+
+- NET indicates that the image resides on a network.
+
+- CD indicates that the image resides on a CD-ROM or similar removable medium.
+
+- Use !NET and !CD to reverse the effects of NET and CD.
+
+## See Also
+
+[EDITBIN Options](../../build/reference/editbin-options.md)

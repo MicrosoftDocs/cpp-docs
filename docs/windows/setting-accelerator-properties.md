@@ -1,5 +1,5 @@
 ---
-title: "Setting Accelerator Properties | Microsoft Docs"
+title: "Setting Accelerator Properties (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -32,6 +32,6 @@ Win32
 
 ## See Also
 
-[Predefined Accelerator Keys](../windows/predefined-accelerator-keys.md)  
-[Resource Editors](../windows/resource-editors.md)  
+[Predefined Accelerator Keys](../windows/predefined-accelerator-keys.md)<br/>
+[Resource Editors](../windows/resource-editors.md)<br/>
 [Accelerator Editor](../windows/accelerator-editor.md)

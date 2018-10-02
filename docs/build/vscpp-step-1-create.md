@@ -4,7 +4,7 @@ description: "Create a Hello World console app in Visual C++"
 ms.custom: "mvc"
 ms.date: 12/12/2017
 ms.topic: "tutorial"
-ms.technology: ["devlang-C++"]
+ms.technology: ["cpp-tools"]
 ms.devlang: "C++"
 dev_langs: ["C++"]
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54

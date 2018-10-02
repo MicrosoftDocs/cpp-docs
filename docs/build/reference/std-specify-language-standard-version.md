@@ -35,27 +35,27 @@ The default **/std:c++14** option enables the set of C++14 features implemented 
 - [u8 character literals](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4267.html)
 
 For additional information on which C++14 and C++17 features are enabled when **/std:c++14** is specified, see the notes in [Visual C++ Language Conformance](../../visual-cpp-language-conformance.md).
-  
-The **/std:c++17** option enables the full set of C++17 features implemented by the Visual C++ compiler. This option disables compiler and standard library support for features that are changed or new in versions of the Working Draft and defect updates of the C++ Standard after C++17.  
-  
-The **/std:c++latest** option enables the set of C++ language and library features implemented by Visual C++ to track the most recent C++20 Working Draft and defect updates of the C++ Standard that are not included in C++17. Use this switch to get the post-C++17 language features supported by the compiler and standard library. For a list of supported language and library features, see [What's New for Visual C++](../../what-s-new-for-visual-cpp-in-visual-studio.md). The **/std:c++latest** option does not enable features guarded by the **/experimental** switch.  
-  
+
+The **/std:c++17** option enables the full set of C++17 features implemented by the Visual C++ compiler. This option disables compiler and standard library support for features that are changed or new in versions of the Working Draft and defect updates of the C++ Standard after C++17.
+
+The **/std:c++latest** option enables the set of C++ language and library features implemented by Visual C++ to track the most recent C++20 Working Draft and defect updates of the C++ Standard that are not included in C++17. Use this switch to get the post-C++17 language features supported by the compiler and standard library. For a list of supported language and library features, see [What's New for Visual C++](../../what-s-new-for-visual-cpp-in-visual-studio.md). The **/std:c++latest** option does not enable features guarded by the **/experimental** switch.
+
 The **/std** option in effect during a C++ compilation can be detected by use of the [\_MSVC\_LANG](../../preprocessor/predefined-macros.md) preprocessor macro. For more information, see [Preprocessor Macros](../../preprocessor/predefined-macros.md).
 
 The **/std:c++14** and **/std:c++latest** options are available beginning in Visual C++ 2015 Update 3. The **/std:c++17** option is available beginning in Visual C++ 2017 version 15.3. As noted above, some C++17 standard behavior is enabled by the **/std:c++14** option, but all other C++17 features are enabled by **/std:c++17**.
-  
+
 > [!NOTE]
-> Depending on the Visual C++ compiler version or update level, certain C++14 or C++17 features may not be fully implemented or fully conformant when you specify the **/std:c++14** or **/std:c++17** options. For example, the Visual C++ 2017 RTM compiler does not fully support C++14-conformant `constexpr`, expression SFINAE, or 2-phase name lookup. For an overview of C++ language conformance in Visual C++ by release version, see [Visual C++ Language Conformance](../../visual-cpp-language-conformance.md). 
-  
-### To set this compiler option in the Visual Studio development environment  
-  
-1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Select **Configuration Properties**, **C/C++**, **Language**.  
-  
-3.  In **C++ Language Standard**, choose the language standard to support from the dropdown control, then choose **OK** or **Apply** to save your changes.  
-  
-## See also  
-  
-[Compiler Options](../../build/reference/compiler-options.md)   
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
+> Depending on the Visual C++ compiler version or update level, certain C++14 or C++17 features may not be fully implemented or fully conformant when you specify the **/std:c++14** or **/std:c++17** options. For example, the Visual C++ 2017 RTM compiler does not fully support C++14-conformant `constexpr`, expression SFINAE, or 2-phase name lookup. For an overview of C++ language conformance in Visual C++ by release version, see [Visual C++ Language Conformance](../../visual-cpp-language-conformance.md).
+
+### To set this compiler option in the Visual Studio development environment
+
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Select **Configuration Properties**, **C/C++**, **Language**.
+
+1. In **C++ Language Standard**, choose the language standard to support from the dropdown control, then choose **OK** or **Apply** to save your changes.
+
+## See also
+
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

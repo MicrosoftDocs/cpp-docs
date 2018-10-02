@@ -220,9 +220,9 @@ The Active Template Library (ATL) includes the following classes and structs. To
 
 ## See Also
 
-[ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)   
-[Functions](../../atl/reference/atl-functions.md)   
-[Global Variables](../../atl/reference/atl-global-variables.md)   
-[Typedefs](../../atl/reference/atl-typedefs.md)   
+[ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)<br/>
+[Functions](../../atl/reference/atl-functions.md)<br/>
+[Global Variables](../../atl/reference/atl-global-variables.md)<br/>
+[Typedefs](../../atl/reference/atl-typedefs.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)
 

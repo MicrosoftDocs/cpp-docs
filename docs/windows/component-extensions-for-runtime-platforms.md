@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["what's new [C++], keywords", "what's new [C++], language features", "Visual C++, keywords", "keywords [C++]", "Managed Extensions for C++, replacement syntax"]
+helpviewer_keywords: ["what's new [C++], keywords", "what's new [C++], language features", "C++, keywords", "keywords [C++]", "Managed Extensions for C++, replacement syntax"]
 ms.assetid: 1e400ee6-3ac9-4910-a608-9d3d5993e423
 author: "mikeblome"
 ms.author: "mblome"
@@ -126,5 +126,5 @@ This section lists additional programming constructs, and topics that pertain to
 
 ## See Also
 
-[.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)  
+[.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
 [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md)

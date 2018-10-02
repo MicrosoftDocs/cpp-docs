@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2403
-'identifier' : register must be base/index in 'context'  
-  
- The register used in an indirect memory operand must be a base or index register in this context.
+
+'identifier' : register must be base/index in 'context'
+
+The register used in an indirect memory operand must be a base or index register in this context.

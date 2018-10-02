@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["dithered color, Image editor", "Custom Color Selector dialog box", "Image editor [C++], Colors Palette", "colors [C++], image", "bitmaps [C++], colors", "images [C++], colors", "HSL values", "luminosity", "Colors Palette, Image editor", "RGB color values", "Adjust Colors command", "Image editor [C++], dithered color"]
+helpviewer_keywords: ["dithered color, Image editor", "Custom Color Selector dialog box [C++]", "Image editor [C++], Colors Palette", "colors [C++], image", "bitmaps [C++], colors", "images [C++], colors", "HSL values", "Colors Palette, Image editor", "RGB color values", "Adjust Colors command [C++]", "Image editor [C++], dithered color"]
 ms.assetid: e58f6b32-f435-4d9a-a570-7569433661ae
 author: "mikeblome"
 ms.author: "mblome"
@@ -35,5 +35,5 @@ None
 
 ## See Also
 
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)  
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [Working with Color](../windows/working-with-color-image-editor-for-icons.md)

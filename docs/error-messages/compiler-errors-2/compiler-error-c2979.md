@@ -13,19 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2979
-explicit specializations are not supported in generics  
-  
- A generic class was declared incorrectly.  See [Generics](../../windows/generics-cpp-component-extensions.md) for more information.  
-  
-## Example  
- The following sample generates C2979.  
-  
-```  
-// C2979.cpp  
-// compile with: /clr /c  
-generic <>   
-ref class Utils {};   // C2979 error  
-  
-generic <class T>  
-ref class Utils2 {};   // OK  
+
+explicit specializations are not supported in generics
+
+A generic class was declared incorrectly.  See [Generics](../../windows/generics-cpp-component-extensions.md) for more information.
+
+## Example
+
+The following sample generates C2979.
+
+```
+// C2979.cpp
+// compile with: /clr /c
+generic <>
+ref class Utils {};   // C2979 error
+
+generic <class T>
+ref class Utils2 {};   // OK
 ```

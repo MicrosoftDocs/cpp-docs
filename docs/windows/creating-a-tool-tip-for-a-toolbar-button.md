@@ -1,17 +1,17 @@
 ---
-title: "Creating a Tool Tip for a Toolbar Button | Microsoft Docs"
+title: "Creating a Tool Tip for a Toolbar Button (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["tool tips [C++], adding to toolbar buttons", "\n in tool tip", "toolbar buttons [C++], tool tips", "buttons [C++], tool tips", "Toolbar editor, creating tool tips"]
+helpviewer_keywords: ["tool tips [C++], adding to toolbar buttons", "\n in tool tip", "toolbar buttons [C++], tool tips", "buttons [C++], tool tips", "Toolbar editor [C++], creating tool tips"]
 ms.assetid: 0af65342-fd78-4e78-8d0d-dc68f7fc462e
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Creating a Tool Tip for a Toolbar Button
+# Creating a Tool Tip for a Toolbar Button (C++)
 
 ### To create a tool tip
 
@@ -44,5 +44,5 @@ MFC or ATL
 
 ## See Also
 
-[Creating, Moving, and Editing Toolbar Buttons](../windows/creating-moving-and-editing-toolbar-buttons.md)  
+[Creating, Moving, and Editing Toolbar Buttons](../windows/creating-moving-and-editing-toolbar-buttons.md)<br/>
 [Toolbar Editor](../windows/toolbar-editor.md)

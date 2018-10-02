@@ -28,16 +28,16 @@ template<typename Factory>
 
 ### Parameters
 
-*flags*  
+*flags*<br/>
 A combination of one or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration values.
 
-*entry*  
+*entry*<br/>
 Pointer to a [CreatorMap](../windows/creatormap-structure.md) that contains initialization and registration information about parameter *riid*.
 
-*riid*  
+*riid*<br/>
 Reference to an interface ID.
 
-*ppFactory*  
+*ppFactory*<br/>
 If this operation completes successfully, a pointer to an activation factory.
 
 ## Return Value

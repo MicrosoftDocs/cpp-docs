@@ -12,9 +12,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # NULL Macro
-**ANSI 4.1.5** The null pointer constant to which the macro NULL expands  
-  
- Several include files define the NULL macro as `((void *)0)`.  
-  
-## See Also  
- [Library Functions](../c-language/library-functions.md)
+
+**ANSI 4.1.5** The null pointer constant to which the macro NULL expands
+
+Several include files define the NULL macro as `((void *)0)`.
+
+## See Also
+
+[Library Functions](../c-language/library-functions.md)

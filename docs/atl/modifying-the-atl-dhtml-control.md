@@ -39,7 +39,7 @@ The ATL Control Wizard provides starter code so you can build and run the contro
 
    You can use the **IWebBrowser2** methods because ATL provides a pointer to that interface for you in your .h file.
 
-Next, modify the HTML resource to invoke the methods you created. You will add three buttons for invoking these methods.  
+Next, modify the HTML resource to invoke the methods you created. You will add three buttons for invoking these methods.
 
 #### To modify the HTML resource
 
@@ -60,9 +60,9 @@ Next, modify the HTML resource to invoke the methods you created. You will add t
 3. Add the call to the `HelloHTML` method you created. For example:
 
     ```html
-    <br>  
-    <br>  
-    <BUTTON onclick='window.external.HelloHTML();'>HelloHTML</BUTTON>  
+    <br>
+    <br>
+    <BUTTON onclick='window.external.HelloHTML();'>HelloHTML</BUTTON>
     ```
 
    This method will create a button, labeled **HelloHTML**, that the user can click to display the `HelloHTML` message box.

@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3049
-'arg' : invalid argument in OpenMP 'default' clause  
-  
- An incorrect value was passed to a [default](../../parallel/openmp/reference/default-openmp.md) clause.  
-  
- The following sample generates C3049:  
-  
-```  
-// C3049.cpp  
-// compile with: /openmp /c  
-int main() {  
-   int n1 = 1;  
-  
-   #pragma omp parallel default(private)   // C3049   
-   // try the following line instead  
-   // #pragma omp parallel default(shared)  
-   {  
-      ++n1;  
-   }  
-}  
+
+'arg' : invalid argument in OpenMP 'default' clause
+
+An incorrect value was passed to a [default](../../parallel/openmp/reference/default-openmp.md) clause.
+
+The following sample generates C3049:
+
+```
+// C3049.cpp
+// compile with: /openmp /c
+int main() {
+   int n1 = 1;
+
+   #pragma omp parallel default(private)   // C3049
+   // try the following line instead
+   // #pragma omp parallel default(shared)
+   {
+      ++n1;
+   }
+}
 ```

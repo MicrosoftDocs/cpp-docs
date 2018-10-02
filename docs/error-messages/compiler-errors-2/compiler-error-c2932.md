@@ -13,34 +13,35 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2932
-'class' : type-class-id redefined as a data member of 'identifier'  
-  
- You cannot use a generic or template class as a data member.  
-  
- The following sample generates C2932:  
-  
-```  
-// C2932.cpp  
-// compile with: /c  
-template<class T>   
-struct TC {};   
-  
-struct MyStruct {  
-   int TC<int>;   // C2932  
-   int TC;   // OK  
-};  
-```  
-  
- C2932 can also occur when using generics:  
-  
-```  
-// C2932b.cpp  
-// compile with: /clr /c  
-generic<class T>  
-ref struct GC {};  
-  
-struct MyStruct {  
-   int GC<int>;   // C2932  
-   int GC;   // OK  
-};  
+
+'class' : type-class-id redefined as a data member of 'identifier'
+
+You cannot use a generic or template class as a data member.
+
+The following sample generates C2932:
+
+```
+// C2932.cpp
+// compile with: /c
+template<class T>
+struct TC {};
+
+struct MyStruct {
+   int TC<int>;   // C2932
+   int TC;   // OK
+};
+```
+
+C2932 can also occur when using generics:
+
+```
+// C2932b.cpp
+// compile with: /clr /c
+generic<class T>
+ref struct GC {};
+
+struct MyStruct {
+   int GC<int>;   // C2932
+   int GC;   // OK
+};
 ```

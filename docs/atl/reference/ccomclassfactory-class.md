@@ -65,13 +65,13 @@ STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 
 ### Parameters
 
-*pUnkOuter*  
+*pUnkOuter*<br/>
 [in] If the object is being created as part of an aggregate, then *pUnkOuter* must be the outer unknown. Otherwise, *pUnkOuter* must be NULL.
 
-*riid*  
+*riid*<br/>
 [in] The IID of the requested interface. If *pUnkOuter* is non- NULL, *riid* must be `IID_IUnknown`.
 
-*ppvObj*  
+*ppvObj*<br/>
 [out] A pointer to the interface pointer identified by *riid*. If the object does not support this interface, *ppvObj* is set to NULL.
 
 ### Return Value
@@ -88,7 +88,7 @@ STDMETHOD(LockServer)(BOOL fLock);
 
 ### Parameters
 
-*fLock*  
+*fLock*<br/>
 [in] If TRUE, the lock count is incremented; otherwise, the lock count is decremented.
 
 ### Return Value
@@ -103,6 +103,6 @@ Calling `LockServer` allows a client to hold onto a class factory so that multip
 
 ## See Also
 
-[CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
-[CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)   
+[CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)<br/>
+[CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

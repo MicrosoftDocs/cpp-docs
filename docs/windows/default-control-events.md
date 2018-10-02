@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["Dialog editor, default control events", "controls [C++], default control events", "events [C++], controls", "dialog box controls, events"]
+helpviewer_keywords: ["Dialog Editor [C++], default control events", "controls [C++], default control events", "events [C++], controls", "dialog box controls [C++], events"]
 ms.assetid: 75556b23-18f5-4390-97a4-2ecad3309741
 author: "mikeblome"
 ms.author: "mblome"
@@ -49,9 +49,9 @@ Win32
 
 ## See Also
 
-[Defining Member Variables for Dialog Controls](../windows/defining-member-variables-for-dialog-controls.md)  
-[Message Types Associated with User-Interface Objects](../mfc/reference/message-types-associated-with-user-interface-objects.md)  
-[Editing a Message Handler](../mfc/reference/editing-a-message-handler.md)  
-[Defining a Message Handler for a Reflected Message](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md)  
-[Declaring a Variable Based on Your New Control Class](../mfc/reference/declaring-a-variable-based-on-your-new-control-class.md)  
+[Defining Member Variables for Dialog Controls](../windows/defining-member-variables-for-dialog-controls.md)<br/>
+[Message Types Associated with User-Interface Objects](../mfc/reference/message-types-associated-with-user-interface-objects.md)<br/>
+[Editing a Message Handler](../mfc/reference/editing-a-message-handler.md)<br/>
+[Defining a Message Handler for a Reflected Message](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md)<br/>
+[Declaring a Variable Based on Your New Control Class](../mfc/reference/declaring-a-variable-based-on-your-new-control-class.md)<br/>
 [Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)

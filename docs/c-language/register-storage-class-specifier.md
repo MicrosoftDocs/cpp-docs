@@ -12,11 +12,13 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # register Storage-Class Specifier
-**Microsoft Specific**  
-  
- The Microsoft C/C++ compiler does not honor user requests for register variables. However, for portability all other semantics associated with the **register** keyword are honored by the compiler. For example, you cannot apply the unary address-of operator (**&**) to a register object nor can the **register** keyword be used on arrays.  
-  
- **END Microsoft Specific**  
-  
-## See Also  
- [Storage-Class Specifiers for Internal-Level Declarations](../c-language/storage-class-specifiers-for-internal-level-declarations.md)
+
+**Microsoft Specific**
+
+The Microsoft C/C++ compiler does not honor user requests for register variables. However, for portability all other semantics associated with the **register** keyword are honored by the compiler. For example, you cannot apply the unary address-of operator (**&**) to a register object nor can the **register** keyword be used on arrays.
+
+**END Microsoft Specific**
+
+## See Also
+
+[Storage-Class Specifiers for Internal-Level Declarations](../c-language/storage-class-specifiers-for-internal-level-declarations.md)

@@ -13,33 +13,34 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2923
-'type' : 'identifier' is not a valid template type argument for parameter 'param'  
-  
- The argument list is missing a type needed to instantiate the template or generic. Check the template or generic declaration.  
-  
- The following sample generates C2923:  
-  
-```  
-// C2923.cpp  
-template <class T> struct TC {};  
-int x;  
-int main() {  
-   TC<x>* tc2;   // C2923  
-   TC<int>* tc2;   // OK  
-}  
-```  
-  
- C2923 can also occur when using generics:  
-  
-```  
-// C2923b.cpp  
-// compile with: /clr /c  
-generic <class T> ref struct GC {};  
-  
-int x;  
-  
-int main() {  
-   GC<x>^ gc2;   // C2923  
-   GC<int>^ gc2;   // OK  
-}  
+
+'type' : 'identifier' is not a valid template type argument for parameter 'param'
+
+The argument list is missing a type needed to instantiate the template or generic. Check the template or generic declaration.
+
+The following sample generates C2923:
+
+```
+// C2923.cpp
+template <class T> struct TC {};
+int x;
+int main() {
+   TC<x>* tc2;   // C2923
+   TC<int>* tc2;   // OK
+}
+```
+
+C2923 can also occur when using generics:
+
+```
+// C2923b.cpp
+// compile with: /clr /c
+generic <class T> ref struct GC {};
+
+int x;
+
+int main() {
+   GC<x>^ gc2;   // C2923
+   GC<int>^ gc2;   // OK
+}
 ```

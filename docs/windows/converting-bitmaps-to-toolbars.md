@@ -1,19 +1,19 @@
 ---
-title: "Converting Bitmaps to Toolbars | Microsoft Docs"
+title: "Converting Bitmaps to Toolbars (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["bitmaps [C++], converting to toolbars", "Toolbar editor, converting bitmaps", "toolbars [C++], converting bitmaps"]
+helpviewer_keywords: ["bitmaps [C++], converting to toolbars", "Toolbar editor [C++], converting bitmaps", "toolbars [C++], converting bitmaps"]
 ms.assetid: 971c181b-40f5-44be-843d-677a7c235667
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Converting Bitmaps to Toolbars
+# Converting Bitmaps to Toolbars (C++)
 
-You can create a new toolbar by converting a bitmap. The graphic from the bitmap converts to the button images for a toolbar. Usually the bitmap contains several button images on a single bitmap, with one image for each button. Images can be any size; the default is 16 pixels wide and the height of the image. You can specify the size of the button images in the [New Toolbar Resource dialog box](../windows/new-toolbar-resource-dialog-box.md) when you choose **Toolbar Editor** from the **Image** menu while in the Image editor.
+You can create a new toolbar in a C++ project by converting a bitmap. The graphic from the bitmap converts to the button images for a toolbar. Usually the bitmap contains several button images on a single bitmap, with one image for each button. Images can be any size; the default is 16 pixels wide and the height of the image. You can specify the size of the button images in the [New Toolbar Resource dialog box](../windows/new-toolbar-resource-dialog-box.md) when you choose **Toolbar Editor** from the **Image** menu while in the Image editor.
 
 ### To convert bitmaps to a toolbar
 
@@ -38,5 +38,5 @@ MFC or ATL
 
 ## See Also
 
-[Creating New Toolbars](../windows/creating-new-toolbars.md)  
+[Creating New Toolbars](../windows/creating-new-toolbars.md)<br/>
 [Toolbar Editor](../windows/toolbar-editor.md)

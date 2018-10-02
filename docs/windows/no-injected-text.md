@@ -26,8 +26,8 @@ Prevents the compiler from injecting code as a result of attribute use.
 
 ### Parameters
 
-*boolean* (optional)  
-**true** if you want no code injected, **false** to allow code to be injected. **true** is the default.
+*boolean*<br/>
+(Optional) **true** if you want no code injected, **false** to allow code to be injected. **true** is the default.
 
 ## Remarks
 

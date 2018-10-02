@@ -13,35 +13,37 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /TLBID (Specify Resource ID for TypeLib)
-```  
-/TLBID:id  
-```  
-  
-## Remarks  
- where:  
-  
- `id`  
- A user-specified value for a linker-created type library. It overrides the default resource ID of 1.  
-  
-## Remarks  
- When compiling a program that uses attributes, the linker will create a type library. The linker will assign a resource ID of 1 to the type library.  
-  
- If this resource ID conflicts with one of your existing resources, you can specify another ID with /TLBID. The range of values that you can pass to `id` is 1 to 65535.  
-  
-### To set this linker option in the Visual Studio development environment  
-  
-1.  Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Click the **Linker** folder.  
-  
-3.  Click the **Embedded IDL** property page.  
-  
-4.  Modify the **TypeLib Resource ID** property.  
-  
-### To set this linker option programmatically  
-  
-1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TypeLibraryResourceID%2A>.  
-  
-## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+
+```
+/TLBID:id
+```
+
+## Arguments
+
+*id*<br/>
+A user-specified value for a linker-created type library. It overrides the default resource ID of 1.
+
+## Remarks
+
+When compiling a program that uses attributes, the linker will create a type library. The linker will assign a resource ID of 1 to the type library.
+
+If this resource ID conflicts with one of your existing resources, you can specify another ID with /TLBID. The range of values that you can pass to `id` is 1 to 65535.
+
+### To set this linker option in the Visual Studio development environment
+
+1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+
+1. Click the **Linker** folder.
+
+1. Click the **Embedded IDL** property page.
+
+1. Modify the **TypeLib Resource ID** property.
+
+### To set this linker option programmatically
+
+1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TypeLibraryResourceID%2A>.
+
+## See Also
+
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

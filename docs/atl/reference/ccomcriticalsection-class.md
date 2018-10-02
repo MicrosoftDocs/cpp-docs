@@ -139,6 +139,6 @@ To first obtain ownership, the thread must call the [Lock](#lock) method. Each c
 
 ## See Also
 
-[CComFakeCriticalSection Class](../../atl/reference/ccomfakecriticalsection-class.md)   
-[Class Overview](../../atl/atl-class-overview.md)   
+[CComFakeCriticalSection Class](../../atl/reference/ccomfakecriticalsection-class.md)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [CComCritSecLock Class](../../atl/reference/ccomcritseclock-class.md)

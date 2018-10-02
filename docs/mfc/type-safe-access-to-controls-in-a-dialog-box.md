@@ -12,14 +12,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Type-Safe Access to Controls in a Dialog Box
-The controls in a dialog box can use the interfaces of MFC control classes such as `CListBox` and `CEdit`. You can create a control object and attach it to a dialog control. Then you can access the control through its class interface, calling member functions to operate on the control. The methods described here are designed to give you type-safe access to a control. This is especially useful for controls such as edit boxes and list boxes.  
-  
- There are two approaches to making a connection between a control in a dialog box and a C++ control member variable in a `CDialog`-derived class:  
-  
--   [Without Code Wizards](../mfc/type-safe-access-to-controls-without-code-wizards.md)  
-  
--   [With Code Wizards](../mfc/type-safe-access-to-controls-with-code-wizards.md)  
-  
-## See Also  
- [Dialog Boxes](../mfc/dialog-boxes.md)
+
+The controls in a dialog box can use the interfaces of MFC control classes such as `CListBox` and `CEdit`. You can create a control object and attach it to a dialog control. Then you can access the control through its class interface, calling member functions to operate on the control. The methods described here are designed to give you type-safe access to a control. This is especially useful for controls such as edit boxes and list boxes.
+
+There are two approaches to making a connection between a control in a dialog box and a C++ control member variable in a `CDialog`-derived class:
+
+- [Without Code Wizards](../mfc/type-safe-access-to-controls-without-code-wizards.md)
+
+- [With Code Wizards](../mfc/type-safe-access-to-controls-with-code-wizards.md)
+
+## See Also
+
+[Dialog Boxes](../mfc/dialog-boxes.md)
 

@@ -1,17 +1,17 @@
 ---
-title: "Adding Controls to a Dialog Causes the Dialog to No Longer Function | Microsoft Docs"
+title: "Adding Controls to a Dialog Causes the Dialog to No Longer Function (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["controls [C++], troubleshooting", "common controls, troubleshooting", "troubleshooting controls", "dialog boxes, troubleshooting", "dialog box controls, troubleshooting", "InitCommonControls"]
+helpviewer_keywords: ["controls [C++], troubleshooting", "dialog boxes [C++], troubleshooting", "InitCommonControls"]
 ms.assetid: b2dd4574-ea59-4343-8d65-b387cead5da6
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Adding Controls to a Dialog Causes the Dialog to No Longer Function
+# Adding Controls to a Dialog Causes the Dialog to No Longer Function (C++)
 
 After adding a common control or rich edit control to a dialog box, it will not appear when you test the dialog box or the dialog itself will not appear.
 
@@ -57,5 +57,5 @@ Win32
 
 ## See Also
 
-[Troubleshooting the Dialog Editor](../windows/troubleshooting-the-dialog-editor.md)  
+[Troubleshooting the Dialog Editor](../windows/troubleshooting-the-dialog-editor.md)<br/>
 [Dialog Editor](../windows/dialog-editor.md)

@@ -16,14 +16,14 @@ Print the disassembly of code sections in the DUMPBIN output.
 
 ## Syntax
 
-> **/DISASM**{**:**\[**BYTES**|**NOBYTES**]}  
+> **/DISASM**{**:**\[**BYTES**|**NOBYTES**]}
 
 ### Arguments
 
-**BYTES**  
+**BYTES**<br/>
 Includes the instruction bytes together with the interpreted opcodes and arguments in the disassembly output. This is the default option.
 
-**NOBYTES**  
+**NOBYTES**<br/>
 Does not include the instruction bytes in the disassembly output.
 
 ## Remarks
@@ -36,4 +36,4 @@ Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is availabl
 
 ## See also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)  
+[DUMPBIN Options](../../build/reference/dumpbin-options.md)

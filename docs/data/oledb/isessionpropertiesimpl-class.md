@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # ISessionPropertiesImpl Class
+
 Provides an implementation of the [ISessionProperties](/previous-versions/windows/desktop/ms713721\(v=vs.85\)) interface.  
   
 ## Syntax
@@ -25,14 +26,16 @@ class ATL_NO_VTABLE ISessionPropertiesImpl :
 ```  
   
 ### Parameters  
- *T*  
- Your class, derived from `ISessionPropertiesImpl`.  
+
+*T*<br/>
+Your class, derived from `ISessionPropertiesImpl`.  
   
- *PropClass*  
- A user-definable property class that defaults to *T*.  
+*PropClass*<br/>
+A user-definable property class that defaults to *T*.  
 
 ## Requirements  
- **Header:** atldb.h  
+
+**Header:** atldb.h  
   
 ## Members  
   
@@ -44,9 +47,11 @@ class ATL_NO_VTABLE ISessionPropertiesImpl :
 |[SetProperties](#setproperties)|Sets properties in the Session property group.|  
   
 ## Remarks  
- A mandatory interface on sessions. This class implements session properties by calling a static function defined by the [property set map](../../data/oledb/begin-propset-map.md). The property set map should be specified in your session class.  
+
+A mandatory interface on sessions. This class implements session properties by calling a static function defined by the [property set map](../../data/oledb/begin-propset-map.md). The property set map should be specified in your session class.  
   
 ## <a name="getproperties"></a> ISessionPropertiesImpl::GetProperties
+
 Returns the list of properties in the `DBPROPSET_SESSION` property group that are currently set on the session.  
   
 ### Syntax  
@@ -59,9 +64,11 @@ STDMETHOD(GetProperties)(ULONG cPropertyIDSets, 
 ```  
   
 #### Parameters  
- See [ISessionProperties::GetProperties](/previous-versions/windows/desktop/ms723643\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
+
+See [ISessionProperties::GetProperties](/previous-versions/windows/desktop/ms723643\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="setproperties"></a> ISessionPropertiesImpl::SetProperties
+
 Sets properties in the `DBPROPSET_SESSION` property group.  
   
 ### Syntax  
@@ -72,8 +79,10 @@ STDMETHOD(SetProperties)(ULONG cPropertySets, 
 ```  
   
 #### Parameters  
- See [ISessionProperties::SetProperties](/previous-versions/windows/desktop/ms714405\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [ISessionProperties::SetProperties](/previous-versions/windows/desktop/ms714405\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ## See Also  
- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

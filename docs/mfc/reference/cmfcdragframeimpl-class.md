@@ -13,102 +13,112 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CMFCDragFrameImpl Class
-The `CMFCDragFrameImpl` class draws the drag rectangle that appears when the user drags a pane in the standard dock mode.  
-   For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
-   
-## Syntax  
-  
-```  
-class CMFCDragFrameImpl  
-```  
-  
-## Remarks  
- An object of this class is embedded in each [CPane Class](../../mfc/reference/cpane-class.md) object. Thus, each pane that uses the `CanFloat` method displays a drag rectangle when the user drags it.  
-  
- You can control the thickness of the drag rectangle by using [AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat](afx-global-data-structure.md#m_ndragframethicknessfloat) and [AFX_GLOBAL_DATA::m_nDragFrameThicknessDock](afx-global-data-structure.md#m_ndragframethicknessdock).  
-  
-## Inheritance Hierarchy  
- [CMFCDragFrameImpl](../../mfc/reference/cmfcdragframeimpl-class.md)  
-  
-## Requirements  
- **Header:** afxdragframeimpl.h  
-  
-##  <a name="enddrawdragframe"></a>  CMFCDragFrameImpl::EndDrawDragFrame  
 
-  
-```  
+The `CMFCDragFrameImpl` class draws the drag rectangle that appears when the user drags a pane in the standard dock mode.
+   For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
+
+## Syntax
+
+```
+class CMFCDragFrameImpl
+```
+
+## Remarks
+
+An object of this class is embedded in each [CPane Class](../../mfc/reference/cpane-class.md) object. Thus, each pane that uses the `CanFloat` method displays a drag rectangle when the user drags it.
+
+You can control the thickness of the drag rectangle by using [AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat](afx-global-data-structure.md#m_ndragframethicknessfloat) and [AFX_GLOBAL_DATA::m_nDragFrameThicknessDock](afx-global-data-structure.md#m_ndragframethicknessdock).
+
+## Inheritance Hierarchy
+
+[CMFCDragFrameImpl](../../mfc/reference/cmfcdragframeimpl-class.md)
+
+## Requirements
+
+**Header:** afxdragframeimpl.h
+
+##  <a name="enddrawdragframe"></a>  CMFCDragFrameImpl::EndDrawDragFrame
+
+
+```
 void EndDrawDragFrame(BOOL bClearInternalRects = TRUE);
-```  
-  
-### Parameters  
- [in] *bClearInternalRects*  
-  
-### Remarks  
-  
-##  <a name="init"></a>  CMFCDragFrameImpl::Init  
+```
 
-  
-```  
+### Parameters
+
+[in] *bClearInternalRects*
+
+### Remarks
+
+##  <a name="init"></a>  CMFCDragFrameImpl::Init
+
+
+```
 void Init(CWnd* pDraggedWnd);
-```  
-  
-### Parameters  
- [in] *pDraggedWnd*  
-  
-### Remarks  
-  
-##  <a name="movedragframe"></a>  CMFCDragFrameImpl::MoveDragFrame  
+```
 
-  
-```  
+### Parameters
+
+[in] *pDraggedWnd*
+
+### Remarks
+
+##  <a name="movedragframe"></a>  CMFCDragFrameImpl::MoveDragFrame
+
+
+```
 void MoveDragFrame(BOOL bForceMove = FALSE);
-```  
-  
-### Parameters  
- [in] *bForceMove*  
-  
-### Remarks  
-  
-##  <a name="placetabpredocking"></a>  CMFCDragFrameImpl::PlaceTabPreDocking  
+```
 
-  
-```  
+### Parameters
+
+[in] *bForceMove*
+
+### Remarks
+
+##  <a name="placetabpredocking"></a>  CMFCDragFrameImpl::PlaceTabPreDocking
+
+
+```
 void PlaceTabPreDocking(
-    CBaseTabbedPane* pTabbedBar,  
-    BOOL bFirstTime);  
-  
+    CBaseTabbedPane* pTabbedBar,
+    BOOL bFirstTime);
+
 void PlaceTabPreDocking(CWnd* pCBarToPlaceOn);
-```  
-  
-### Parameters  
- [in] *pTabbedBar*  
- [in] *bFirstTime*  
- [in] *pCBarToPlaceOn*  
-  
-### Remarks  
-  
-##  <a name="removetabpredocking"></a>  CMFCDragFrameImpl::RemoveTabPreDocking  
+```
 
-  
-```  
+### Parameters
+
+*pTabbedBar*<br/>
+[in] [in] *bFirstTime*
+[in] *pCBarToPlaceOn*
+
+### Remarks
+
+##  <a name="removetabpredocking"></a>  CMFCDragFrameImpl::RemoveTabPreDocking
+
+
+```
 void RemoveTabPreDocking(CDockablePane* pOldTargetBar = NULL);
-```  
-  
-### Parameters  
- [in] *pOldTargetBar*  
-  
-### Remarks  
-  
-##  <a name="resetstate"></a>  CMFCDragFrameImpl::ResetState  
+```
 
-  
-```  
+### Parameters
+
+[in] *pOldTargetBar*
+
+### Remarks
+
+##  <a name="resetstate"></a>  CMFCDragFrameImpl::ResetState
+
+
+```
 void ResetState();
-```  
-  
-### Remarks  
-  
-## See Also  
- [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
- [Classes](../../mfc/reference/mfc-classes.md)   
- [CPane Class](../../mfc/reference/cpane-class.md)
+```
+
+### Remarks
+
+## See Also
+
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
+[Classes](../../mfc/reference/mfc-classes.md)<br/>
+[CPane Class](../../mfc/reference/cpane-class.md)

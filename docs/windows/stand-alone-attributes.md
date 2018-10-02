@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["standalone attributes", "attributes [C++], standalone"]
+helpviewer_keywords: ["standalone attributes", "attributes [C++/CLI], standalone"]
 ms.assetid: 0d72e84e-236c-43b3-ac9a-d9b91fcd6794
 author: "mikeblome"
 ms.author: "mblome"
@@ -33,4 +33,5 @@ A stand-alone attribute does not operate on a C++ keyword but is more like a lin
 |[pragma](../windows/pragma.md)|Emits the specified string, without the quote characters, into the generated .idl file.|
   
 ## See Also
- [Attributes by Usage](../windows/attributes-by-usage.md)
+
+[Attributes by Usage](../windows/attributes-by-usage.md)

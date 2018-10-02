@@ -37,7 +37,7 @@ BEGIN_CONNECTION_POINT_MAP(x)
 
 ### Parameters
 
-*x*  
+*x*<br/>
 [in] The name of the class containing the connection points.
 
 ### Remarks
@@ -61,10 +61,10 @@ CONNECTION_POINT_ENTRY_P(piid) // (Visual Studio 2017)
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] The GUID of the interface being added to the connection point map. 
 
-*piid*  
+*piid*<br/>
 [in] Pointer to the GUID of the interface being adde.
 
 ### Remarks
@@ -99,5 +99,5 @@ For more information about connection points in ATL, see the article [Connection
 
 ## See Also
 
-[Macros](../../atl/reference/atl-macros.md)   
+[Macros](../../atl/reference/atl-macros.md)<br/>
 [Connection Point Global Functions](../../atl/reference/connection-point-global-functions.md)

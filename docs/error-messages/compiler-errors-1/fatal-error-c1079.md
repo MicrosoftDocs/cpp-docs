@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1079
-compiler limit : PCH file size limit exceeded  
-  
- The PCH file exceeds the 4 GB size limit.
+
+compiler limit : PCH file size limit exceeded
+
+The PCH file exceeds the 4 GB size limit.

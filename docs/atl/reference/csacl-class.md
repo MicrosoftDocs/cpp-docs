@@ -93,25 +93,25 @@ bool AddAuditAce(
 
 ### Parameters
 
-*rSid*  
+*rSid*<br/>
 The [CSid](../../atl/reference/csid-class.md) object.
 
-*AccessMask*  
+*AccessMask*<br/>
 Specifies the mask of access rights to be audited for the specified `CSid` object.
 
-*bSuccess*  
+*bSuccess*<br/>
 Specifies whether allowed access attempts are to be audited. Set this flag to true to enable auditing; otherwise, set it to false.
 
-*bFailure*  
+*bFailure*<br/>
 Specifies whether denied access attempts are to be audited. Set this flag to true to enable auditing; otherwise, set it to false.
 
-*AceFlags*  
+*AceFlags*<br/>
 A set of bit flags that control ACE inheritance.
 
-*pObjectType*  
+*pObjectType*<br/>
 The object type.
 
-*pInheritedObjectType*  
+*pInheritedObjectType*<br/>
 The inherited object type.
 
 ### Return Value
@@ -135,7 +135,7 @@ CSacl(const ACL& rhs) throw(...);
 
 ### Parameters
 
-*rhs*  
+*rhs*<br/>
 An existing `ACL` (access-control list) structure.
 
 ### Remarks
@@ -176,7 +176,7 @@ CSacl& operator=(const ACL& rhs) throw(...);
 
 ### Parameters
 
-*rhs*  
+*rhs*<br/>
 The `ACL` (access-control list) to assign to the existing object.
 
 ### Return Value
@@ -193,7 +193,7 @@ void RemoveAce(UINT nIndex) throw();
 
 ### Parameters
 
-*nIndex*  
+*nIndex*<br/>
 Index to the ACE entry to remove.
 
 ### Remarks
@@ -214,8 +214,8 @@ Removes every `ACE` structure (if any) in the `CSacl` object.
 
 ## See Also
 
-[CAcl Class](../../atl/reference/cacl-class.md)   
-[ACLs](/windows/desktop/SecAuthZ/access-control-lists)   
-[ACEs](/windows/desktop/SecAuthZ/access-control-entries)   
-[Class Overview](../../atl/atl-class-overview.md)   
+[CAcl Class](../../atl/reference/cacl-class.md)<br/>
+[ACLs](/windows/desktop/SecAuthZ/access-control-lists)<br/>
+[ACEs](/windows/desktop/SecAuthZ/access-control-entries)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)

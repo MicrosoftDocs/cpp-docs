@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CColumnAccessor Class
+
 Generates injected consumer code.  
   
 ## Syntax
@@ -22,29 +23,32 @@ class CColumnAccessor : public CAccessorBase
 ```  
   
 ## Remarks  
- In the injected code, every column is bound as a separate accessor. You should be aware that this class is used in the injected code (for example, you might encounter it when debugging), but you typically never have to use it or its methods directly.  
+
+In the injected code, every column is bound as a separate accessor. You should be aware that this class is used in the injected code (for example, you might encounter it when debugging), but you typically never have to use it or its methods directly.  
   
- `CColumnAccessor` implements the following stub methods, each of which correspond in functionality to other accessor class methods:  
+`CColumnAccessor` implements the following stub methods, each of which correspond in functionality to other accessor class methods:  
   
--   `CColumnAccessor` The constructor; instantiates and initializes the `CColumnAccessor` object.  
+- `CColumnAccessor` The constructor; instantiates and initializes the `CColumnAccessor` object.  
   
--   `CreateAccessor` Allocates memory for the column binding structures and initializes the column data members.  
+- `CreateAccessor` Allocates memory for the column binding structures and initializes the column data members.  
   
--   `BindColumns` Binds columns to accessors.  
+- `BindColumns` Binds columns to accessors.  
   
--   `SetParameterBuffer` Allocates buffers for parameters.  
+- `SetParameterBuffer` Allocates buffers for parameters.  
   
--   `AddParameter` Adds a parameter entry to the parameter entry structures.  
+- `AddParameter` Adds a parameter entry to the parameter entry structures.  
   
--   `HasOutputColumns` Determines whether the accessor has output columns  
+- `HasOutputColumns` Determines whether the accessor has output columns  
   
--   `HasParameters` Determines whether the accessor has parameters.  
+- `HasParameters` Determines whether the accessor has parameters.  
   
--   `BindParameters` Binds the created parameters to columns.  
+- `BindParameters` Binds the created parameters to columns.  
   
 ## Requirements  
- **Header:** atldbcli.h  
+
+**Header:** atldbcli.h  
   
 ## See Also  
- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
+
+[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

@@ -1,7 +1,7 @@
 ---
-title: "Creating a Makefile Project | Microsoft Docs"
+title: "Creating a C++ Makefile Project | Microsoft Docs"
 ms.custom: ""
-ms.date: "02/28/2018"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.appwiz.makefile.project"]
@@ -12,21 +12,27 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# Creating a Makefile Project
+# Creating a C++ Makefile Project
 
-If you have an existing source code project that you build from the command line by using a makefile, the Visual Studio development environment has several ways of turning it into a project that can take full advantage of Visual Studio IDE features. This article describes how to create a Makefile Project in Visual Studio that uses your existing makefile to build your code in the IDE. Alternatively, you can use the **Create New Project from Existing Code Files** wizard to create a native MSBuild project from your source code. For more information, see [How to: Create a C++ Project from Existing Code](how-to-create-a-cpp-project-from-existing-code.md). Starting in Visual Studio 2017, you can also use the **Open Folder** feature, which can use several existing build systems as if they were native Visual Studio projects. For more information, see [Open Folder projects in Visual C++](non-msbuild-projects.md).
+A *makefile* is a text file that contains instructions for how to compile and link (or *build*) a set of C++ source code files. A *make* program reads the makefile and invokes a compiler, linker and possibly other programs to make an executable file. Microsoft's implementation of the *make* program is called **NMAKE**. (Visual Studio by default uses the MSBuild system based on .vcsproj files; this is what is created by **File | New | Project**.)
 
-To use Visual Studio to open and build your source code by using your existing makefile, you first create a new project by selecting the MakeFile project template. A wizard helps you specify the commands and environment used by your makefile. You can then use this project to build your code in the Visual Studio development environment.
+If you have an existing makefile project, you have these choices if you want to code and/or debug it in the Visual Studio IDE:
+
+- Create a Makefile Project in Visual Studio that uses your existing makefile to build your code in the IDE. (You will not have all the IDE features that you get with a native MSBuild project.) See [To create a makefile project](#create_a_makefile_project) below.
+- Use the **Create New Project from Existing Code Files** wizard to create a native MSBuild project from your source code. For more information, see [How to: Create a C++ Project from Existing Code](how-to-create-a-cpp-project-from-existing-code.md).
+- **Visual Studio 2017 and later**: Use the **Open Folder** feature to open a makefile. For more information, see [Open Folder projects in Visual C++](non-msbuild-projects.md).
+
+## <a name="create_a_makefile_project"> To create a Makefile project with the makefile project template
+
+In Visual Studio 2017 and later, the Makefile project template is available when the C++ Desktop Development workload is installed.
+
+Follow the wizard to specify the commands and environment used by your makefile. You can then use this project to build your code in the Visual Studio development environment.
 
 By default, the makefile project displays no files in Solution Explorer. The makefile project specifies the build settings, which are reflected in the project's property page.
 
 The output file that you specify in the project has no effect on the name that the build script generates; it declares only an intention. Your makefile still controls the build process and specifies the build targets.
 
-## To create a Makefile project
-
-1. Follow the instructions in the help topic [Creating a Project with a Visual C++ Application Wizard](../ide/creating-desktop-projects-by-using-application-wizards.md).
-
-1. In the **New Project** dialog box, expand **Visual C++** > **General** and then select **Makefile Project** in the Templates pane to open the project wizard.
+1. From the Visual Studio start page, type "makefile" in the **New Project** search box. Or, in the **New Project** dialog box, expand **Visual C++** > **General** (Visual Studio 2015) or **Other** (Visual Studio 2017) and then select **Makefile Project** in the Templates pane to open the project wizard.
 
 1. In the [Application Settings](../ide/application-settings-makefile-project-wizard.md) page, provide the command, output, clean, and rebuild information for debug and retail builds.
 

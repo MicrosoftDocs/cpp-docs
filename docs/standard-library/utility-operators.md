@@ -29,11 +29,11 @@ constexpr bool operator!=(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-*left*  
- An object of type `pair`.
+*left*<br/>
+An object of type `pair`.
 
-*right*  
- An object of type `pair`.
+*right*<br/>
+An object of type `pair`.
 
 ### Return Value
 
@@ -101,11 +101,11 @@ constexpr bool operator==(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-*left*
- An object of type `pair`.
+*left*<br/>
+An object of type `pair`.
 
-*right*
- An object of type `pair`.
+*right*<br/>
+An object of type `pair`.
 
 ### Return Value
 
@@ -164,11 +164,11 @@ constexpr bool operator<(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-*left*  
- An object of type `pair` on the left side of the operator.
+*left*<br/>
+An object of type `pair` on the left side of the operator.
 
-*right*  
- An object of type `pair` on the right side of the operator.
+*right*<br/>
+An object of type `pair` on the right side of the operator.
 
 ### Return Value
 
@@ -241,11 +241,11 @@ constexpr bool operator<=(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-*left*  
- An object of type `pair` on the left side of the operator.
+*left*<br/>
+An object of type `pair` on the left side of the operator.
 
-*right*  
- An object of type `pair` on the right side of the operator.
+*right*<br/>
+An object of type `pair` on the right side of the operator.
 
 ### Return Value
 
@@ -326,11 +326,11 @@ constexpr bool operator>(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-*left*  
- An object of type `pair` on the left side of the operator.
+*left*<br/>
+An object of type `pair` on the left side of the operator.
 
-*right*  
- An object of type `pair` on the right side of the operator.
+*right*<br/>
+An object of type `pair` on the right side of the operator.
 
 ### Return Value
 
@@ -413,11 +413,11 @@ constexpr bool operator>=(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-*left*  
- An object of type `pair` on the left side of the operator.
+*left*<br/>
+An object of type `pair` on the left side of the operator.
 
-*right*  
- An object of type `pair` on the right side of the operator.
+*right*<br/>
+An object of type `pair` on the right side of the operator.
 
 ### Return Value
 

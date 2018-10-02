@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2657
-'class::*' found at the start of a statement (did you forget to specify a type?)  
-  
- The line began with a pointer-to-member identifier.  
-  
- This error can be caused by a missing type specifier in the declaration of a pointer to a member.  
-  
- The following sample generates C2657:  
-  
-```  
-// C2657.cpp  
-class C {};  
-int main() {  
-   C::* pmc1;        // C2657  
-   int C::* pmc2;   // OK  
-}  
+
+'class::*' found at the start of a statement (did you forget to specify a type?)
+
+The line began with a pointer-to-member identifier.
+
+This error can be caused by a missing type specifier in the declaration of a pointer to a member.
+
+The following sample generates C2657:
+
+```
+// C2657.cpp
+class C {};
+int main() {
+   C::* pmc1;        // C2657
+   int C::* pmc2;   // OK
+}
 ```

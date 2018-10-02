@@ -13,18 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3666
-'constructor' : override specifier 'keyword' not allowed on a constructor  
-  
- An override specifier was used on a constructor, and that is not allowed. For more information, see [Override Specifiers](../../windows/override-specifiers-cpp-component-extensions.md).  
-  
-## Example  
- The following sample generates C3666.  
-  
-```  
-// C3666.cpp  
-// compile with: /clr /c  
-ref struct R {  
-   R() new {}   // C3666  
-   R(int i) {}   // OK  
-};  
+
+'constructor' : override specifier 'keyword' not allowed on a constructor
+
+An override specifier was used on a constructor, and that is not allowed. For more information, see [Override Specifiers](../../windows/override-specifiers-cpp-component-extensions.md).
+
+## Example
+
+The following sample generates C3666.
+
+```
+// C3666.cpp
+// compile with: /clr /c
+ref struct R {
+   R() new {}   // C3666
+   R(int i) {}   // OK
+};
 ```

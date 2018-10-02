@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3626
-'keyword': '__event' keyword can only be used on COM interfaces, member functions and data members that are pointers to delegates  
-  
- A keyword was used incorrectly.  
-  
- The following sample generates C3626:  
-  
-```  
-// C3626.cpp  
-// compile with: /c  
-struct A {  
-   __event int i;   // C3626  
-// try the following line instead  
-// __event int i();  
-};  
+
+'keyword': '__event' keyword can only be used on COM interfaces, member functions and data members that are pointers to delegates
+
+A keyword was used incorrectly.
+
+The following sample generates C3626:
+
+```
+// C3626.cpp
+// compile with: /c
+struct A {
+   __event int i;   // C3626
+// try the following line instead
+// __event int i();
+};
 ```

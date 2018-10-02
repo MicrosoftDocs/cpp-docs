@@ -26,11 +26,11 @@ class basic_ios : public ios_base
 
 ### Parameters
 
-*Elem*
- A type.
+*Elem*<br/>
+A type.
 
-*Traits*
- A variable of type `char_traits`.
+*Traits*<br/>
+A variable of type `char_traits`.
 
 ## Remarks
 
@@ -144,8 +144,8 @@ basic_ios();
 
 ### Parameters
 
-*sb*
- Standard buffer to store input or output elements.
+*sb*<br/>
+Standard buffer to store input or output elements.
 
 ### Remarks
 
@@ -170,11 +170,11 @@ void clear(io_state state);
 
 ### Parameters
 
-*state* (optional)
- The flags you want to set after clearing all flags. Defaults to `goodbit`.
+*state*<br/>
+(Optional) The flags you want to set after clearing all flags. Defaults to `goodbit`.
 
-*reraise* (optional)
- Specifies whether the exception should be re-raised. Defaults to **false** (will not re-raise the exception).
+*reraise*<br/>
+(Optional) Specifies whether the exception should be re-raised. Defaults to **false** (will not re-raise the exception).
 
 ### Remarks
 
@@ -201,8 +201,8 @@ const basic_ios<Elem, Traits>& right);
 
 ### Parameters
 
-*right*
- The stream whose flags you want to copy.
+*right*<br/>
+The stream whose flags you want to copy.
 
 ### Return Value
 
@@ -284,8 +284,8 @@ void exceptions(io_state Newexcept);
 
 ### Parameters
 
-*Newexcept*
- The flags that you want to throw an exception.
+*Newexcept*<br/>
+The flags that you want to throw an exception.
 
 ### Return Value
 
@@ -373,8 +373,8 @@ char_type fill(char_type Char);
 
 ### Parameters
 
-*Char*
- The character you want as the fill character.
+*Char*<br/>
+The character you want as the fill character.
 
 ### Return Value
 
@@ -437,8 +437,8 @@ locale imbue(const locale& Loc);
 
 ### Parameters
 
-*Loc*
- A locale string.
+*Loc*<br/>
+A locale string.
 
 ### Return Value
 
@@ -480,11 +480,11 @@ void init(basic_streambuf<Elem,Traits>* _Sb, bool _Isstd = false);
 
 ### Parameters
 
-*_Sb*
- Standard buffer to store input or output elements.
+*_Sb*<br/>
+Standard buffer to store input or output elements.
 
-*_Isstd*
- Specifies whether this is a standard stream.
+*_Isstd*<br/>
+Specifies whether this is a standard stream.
 
 ### Remarks
 
@@ -528,8 +528,8 @@ void move(basic_ios&& right);
 
 ### Parameters
 
-*right*
- The `ios_base` object to move values from.
+*right*<br/>
+The `ios_base` object to move values from.
 
 ### Remarks
 
@@ -545,11 +545,11 @@ char narrow(char_type Char, char Default = '\0') const;
 
 ### Parameters
 
-*Char*
- The **char** to convert.
+*Char*<br/>
+The **char** to convert.
 
-*Default*
- The **char** that you want returned if no equivalent is found.
+*Default*<br/>
+The **char** that you want returned if no equivalent is found.
 
 ### Return Value
 
@@ -680,8 +680,8 @@ basic_streambuf<Elem, Traits>* _Sb);
 
 ### Parameters
 
-*_Sb*
- A stream.
+*_Sb*<br/>
+A stream.
 
 ### Remarks
 
@@ -772,8 +772,8 @@ void setstate(iostate _State);
 
 ### Parameters
 
-*_State*
- Additional flags to set.
+*_State*<br/>
+Additional flags to set.
 
 ### Remarks
 
@@ -822,8 +822,8 @@ basic_streambuf<Elem, Tr>* strbuf)
 
 ### Parameters
 
-*strbuf*
- The stream buffer to become the read buffer.
+*strbuf*<br/>
+The stream buffer to become the read buffer.
 
 ### Remarks
 
@@ -841,8 +841,8 @@ basic_ostream<Elem, Traits>* str);
 
 ### Parameters
 
-*str*
- A stream.
+*str*<br/>
+A stream.
 
 ### Return Value
 
@@ -888,8 +888,8 @@ char_type widen(char Char) const;
 
 ### Parameters
 
-*Char*
- The character to convert.
+*Char*<br/>
+The character to convert.
 
 ### Return Value
 
@@ -930,8 +930,8 @@ void swap(basic_ios&& right);
 
 ### Parameters
 
-*right*
- The `basic_ios` object that is used to exchange values.
+*right*<br/>
+The `basic_ios` object that is used to exchange values.
 
 ### Remarks
 

@@ -16,26 +16,28 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __setusermatherr
-Specifies a user-supplied rountine to handle math errors, instead of the [_matherr](../c-runtime-library/reference/matherr.md) routine.  
-  
-## Syntax  
-  
-```cpp  
-void __setusermatherr(  
-   _HANDLE_MATH_ERROR pf   
-   )  
-```  
-  
-#### Parameters  
- `pf`  
- Pointer to an implementation of `_matherr` that is supplied by the user.  
-  
- The type of the `pf` parameter is declared as `typedef int (__cdecl * _HANDLE_MATH_ERROR)(struct _exception *)`.  
-  
-## Remarks  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
+
+Specifies a user-supplied rountine to handle math errors, instead of the [_matherr](../c-runtime-library/reference/matherr.md) routine.
+
+## Syntax
+
+```cpp
+void __setusermatherr(
+   _HANDLE_MATH_ERROR pf
+   )
+```
+
+#### Parameters
+
+*pf*<br/>
+Pointer to an implementation of `_matherr` that is supplied by the user.
+
+The type of the *pf* parameter is declared as `typedef int (__cdecl * _HANDLE_MATH_ERROR)(struct _exception *)`.
+
+## Remarks
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
 |__setusermatherr|matherr.c|

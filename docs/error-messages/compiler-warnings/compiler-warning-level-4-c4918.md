@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4918
-'character' : invalid character in pragma optimization list  
-  
- An unknown character was found in the optimization list of an [optimize](../../preprocessor/optimize.md) pragma statement.  
-  
- For example, the following statement generates C4918:  
-  
-```  
-// C4918.cpp  
-// compile with: /W4  
-#pragma optimize("X", on) // C4918 expected  
-int main()  
-{  
-}  
+
+'character' : invalid character in pragma optimization list
+
+An unknown character was found in the optimization list of an [optimize](../../preprocessor/optimize.md) pragma statement.
+
+For example, the following statement generates C4918:
+
+```
+// C4918.cpp
+// compile with: /W4
+#pragma optimize("X", on) // C4918 expected
+int main()
+{
+}
 ```

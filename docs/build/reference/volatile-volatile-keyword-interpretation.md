@@ -18,14 +18,14 @@ Specifies how the [volatile](../../cpp/volatile-cpp.md) keyword is to be interpr
 
 ## Syntax
 
-> **/volatile:**{**iso**|**ms**}  
+> **/volatile:**{**iso**|**ms**}
 
 ## Arguments
 
-**/volatile:iso**  
+**/volatile:iso**<br/>
 Selects strict `volatile` semantics as defined by the ISO-standard C++ language. Acquire/release semantics are not guaranteed on volatile accesses. If the compiler targets ARM, this is the default interpretation of `volatile`.
 
-**/volatile:ms**  
+**/volatile:ms**<br/>
 Selects Microsoft extended `volatile` semantics, which add memory ordering guarantees beyond the ISO-standard C++ language. Acquire/release semantics are guaranteed on volatile accesses. However, this option also forces the compiler to generate hardware memory barriers, which might add significant overhead on ARM and other weak memory-ordering architectures. If the compiler targets any platform except ARM, this is default interpretation of `volatile`.
 
 ## Remarks
@@ -46,6 +46,6 @@ There is no `#pragma` equivalent to control this option.
 
 ## See also
 
-[volatile](../../cpp/volatile-cpp.md)  
-[Compiler Options](../../build/reference/compiler-options.md)  
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)  
+[volatile](../../cpp/volatile-cpp.md)<br/>
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

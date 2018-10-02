@@ -25,14 +25,14 @@ class codecvt : public locale::facet, codecvt_base;
 
 ### Parameters
 
-*CharType*
- The type used within a program to encode characters.
+*CharType*<br/>
+The type used within a program to encode characters.
 
-*Byte*
- A type used to encode characters outside a program.
+*Byte*<br/>
+A type used to encode characters outside a program.
 
-*StateType*
- A type that can be used to represent intermediate states of a conversion between internal and external types of character representations.
+*StateType*<br/>
+A type that can be used to represent intermediate states of a conversion between internal and external types of character representations.
 
 ## Remarks
 
@@ -46,21 +46,24 @@ The template versions of [do_in](#do_in) and [do_out](#do_out) always return `co
 
 The C++ Standard Library defines several explicit specializations:
 
-`template<>`
-
-`codecvt<wchar_t, char, mbstate_t>`
+```cpp
+template<>
+codecvt<wchar_t, char, mbstate_t>
+```
 
 converts between **wchar_t** and **char** sequences.
 
-`template<>`
-
-`codecvt<char16_t, char, mbstate_t>`
+```cpp
+template<>
+codecvt<char16_t, char, mbstate_t>
+```
 
 converts between `char16_t` sequences encoded as UTF-16 and **char** sequences encoded as UTF-8.
 
-`template<>`
-
-`codecvt<char32_t, char, mbstate_t>`
+```cpp
+template<>
+codecvt<char32_t, char, mbstate_t>
+```
 
 converts between `char32_t` sequences encoded as UTF-32 (UCS-4) and **char** sequences encoded as UTF-8.
 
@@ -164,8 +167,8 @@ explicit codecvt(size_t _Refs = 0);
 
 ### Parameters
 
-*_Refs*
- Integer value used to specify the type of memory management for the object.
+*_Refs*<br/>
+Integer value used to specify the type of memory management for the object.
 
 ### Remarks
 
@@ -175,7 +178,7 @@ The possible values for the *_Refs* parameter and their significance are:
 
 - 1: The lifetime of the object must be manually managed.
 
-- \> 1: These values are not defined.
+- 2: These values are not defined.
 
 The constructor initializes its `locale::facet` base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)(`_Refs`).
 
@@ -236,26 +239,26 @@ virtual result do_in(
 
 ### Parameters
 
-*_State*
- The conversion state that is maintained between calls to the member function.
+*_State*<br/>
+The conversion state that is maintained between calls to the member function.
 
-*first1*
- Pointer to the beginning of the sequence to be converted.
+*first1*<br/>
+Pointer to the beginning of the sequence to be converted.
 
-*last1*
- Pointer to the end of the sequence to be converted.
+*last1*<br/>
+Pointer to the end of the sequence to be converted.
 
-*next1*
- Pointer beyond the end of the converted sequence, to the first unconverted character.
+*next1*<br/>
+Pointer beyond the end of the converted sequence, to the first unconverted character.
 
-*first2*
- Pointer to the beginning of the converted sequence.
+*first2*<br/>
+Pointer to the beginning of the converted sequence.
 
-*last2*
- Pointer to the end of the converted sequence.
+*last2*<br/>
+Pointer to the end of the converted sequence.
 
-*next2*
- Pointer to the `CharType` that comes after the last converted `CharType`, to the first unaltered character in the destination sequence.
+*next2*<br/>
+Pointer to the `CharType` that comes after the last converted `CharType`, to the first unaltered character in the destination sequence.
 
 ### Return Value
 
@@ -291,17 +294,17 @@ virtual int do_length(
 
 ### Parameters
 
-*_State*
- The conversion state that is maintained between calls to the member function.
+*_State*<br/>
+The conversion state that is maintained between calls to the member function.
 
-*first1*
- Pointer to the beginning of the external sequence.
+*first1*<br/>
+Pointer to the beginning of the external sequence.
 
-*last1*
- Pointer to the end of the external sequence.
+*last1*<br/>
+Pointer to the end of the external sequence.
 
-*_Len2*
- The maximum number of `Byte`s that can be returned by the member function.
+*_Len2*<br/>
+The maximum number of `Byte`s that can be returned by the member function.
 
 ### Return Value
 
@@ -356,26 +359,26 @@ virtual result do_out(
 
 ### Parameters
 
-*_State*
- The conversion state that is maintained between calls to the member function.
+*_State*<br/>
+The conversion state that is maintained between calls to the member function.
 
-*first1*
- Pointer to the beginning of the sequence to be converted.
+*first1*<br/>
+Pointer to the beginning of the sequence to be converted.
 
-*last1*
- Pointer to the end of the sequence to be converted.
+*last1*<br/>
+Pointer to the end of the sequence to be converted.
 
-*next1*
- Reference to a pointer to the first unconverted `CharType`, after the last `CharType` converted.
+*next1*<br/>
+Reference to a pointer to the first unconverted `CharType`, after the last `CharType` converted.
 
-*first2*
- Pointer to the beginning of the converted sequence.
+*first2*<br/>
+Pointer to the beginning of the converted sequence.
 
-*last2*
- Pointer to the end of the converted sequence.
+*last2*<br/>
+Pointer to the end of the converted sequence.
 
-*next2*
- Reference to a pointer to the first unconverted `Byte`, after the last `Byte` converted.
+*next2*<br/>
+Reference to a pointer to the first unconverted `Byte`, after the last `Byte` converted.
 
 ### Return Value
 
@@ -411,17 +414,17 @@ virtual result do_unshift(
 
 ### Parameters
 
-*_State*
- The conversion state that is maintained between calls to the member function.
+*_State*<br/>
+The conversion state that is maintained between calls to the member function.
 
-*first2*
- Pointer to the first position in the destination range.
+*first2*<br/>
+Pointer to the first position in the destination range.
 
-*last2*
- Pointer to the last position in the destination range.
+*last2*<br/>
+Pointer to the last position in the destination range.
 
-*next2*
- Pointer to the first unaltered element in the destination sequence.
+*next2*<br/>
+Pointer to the first unaltered element in the destination sequence.
 
 ### Return Value
 
@@ -525,26 +528,26 @@ result in(
 
 ### Parameters
 
-*_State*
- The conversion state that is maintained between calls to the member function.
+*_State*<br/>
+The conversion state that is maintained between calls to the member function.
 
-*first1*
- Pointer to the beginning of the sequence to be converted.
+*first1*<br/>
+Pointer to the beginning of the sequence to be converted.
 
-*last1*
- Pointer to the end of the sequence to be converted.
+*last1*<br/>
+Pointer to the end of the sequence to be converted.
 
-*next1*
- Pointer beyond the end of the converted sequence to the first unconverted character.
+*next1*<br/>
+Pointer beyond the end of the converted sequence to the first unconverted character.
 
-*first2*
- Pointer to the beginning of the converted sequence.
+*first2*<br/>
+Pointer to the beginning of the converted sequence.
 
-*last2*
- Pointer to the end of the converted sequence.
+*last2*<br/>
+Pointer to the end of the converted sequence.
 
-*next2*
- Pointer to the `CharType` that comes after the last converted `Chartype` to the first unaltered character in the destination sequence.
+*next2*<br/>
+Pointer to the `CharType` that comes after the last converted `Chartype` to the first unaltered character in the destination sequence.
 
 ### Return Value
 
@@ -598,7 +601,7 @@ int main( )
 
 ```Output
 It worked! The converted string is:
- [This is the string to be converted!]
+[This is the string to be converted!]
 ```
 
 ## <a name="intern_type"></a>  codecvt::intern_type
@@ -627,17 +630,17 @@ int length(
 
 ### Parameters
 
-*_State*
- The conversion state that is maintained between calls to the member function.
+*_State*<br/>
+The conversion state that is maintained between calls to the member function.
 
-*first1*
- Pointer to the beginning of the external sequence.
+*first1*<br/>
+Pointer to the beginning of the external sequence.
 
-*last1*
- Pointer to the end of the external sequence.
+*last1*<br/>
+Pointer to the end of the external sequence.
 
-*_Len2*
- The maximum number of Bytes that can be returned by the member function.
+*_Len2*<br/>
+The maximum number of Bytes that can be returned by the member function.
 
 ### Return Value
 
@@ -732,26 +735,26 @@ result out(
 
 ### Parameters
 
-*_State*
- The conversion state that is maintained between calls to the member function.
+*_State*<br/>
+The conversion state that is maintained between calls to the member function.
 
-*first1*
- Pointer to the beginning of the sequence to be converted.
+*first1*<br/>
+Pointer to the beginning of the sequence to be converted.
 
-*last1*
- Pointer to the end of the sequence to be converted.
+*last1*<br/>
+Pointer to the end of the sequence to be converted.
 
-*next1*
- Reference to a pointer to the first unconverted `CharType` after the last `CharType` converted.
+*next1*<br/>
+Reference to a pointer to the first unconverted `CharType` after the last `CharType` converted.
 
-*first2*
- Pointer to the beginning of the converted sequence.
+*first2*<br/>
+Pointer to the beginning of the converted sequence.
 
-*last2*
- Pointer to the end of the converted sequence.
+*last2*<br/>
+Pointer to the end of the converted sequence.
 
-*next2*
- Reference to a pointer to the first unconverted `Byte` after the last converted `Byte`.
+*next2*<br/>
+Reference to a pointer to the first unconverted `Byte` after the last converted `Byte`.
 
 ### Return Value
 
@@ -795,7 +798,7 @@ int main( )
 
 ```Output
 It worked: The converted string is:
- [This is the wchar_t string to be converted.]
+[This is the wchar_t string to be converted.]
 ```
 
 ## <a name="state_type"></a>  codecvt::state_type
@@ -824,17 +827,17 @@ result unshift(
 
 ### Parameters
 
-*_State*
- The conversion state that is maintained between calls to the member function.
+*_State*<br/>
+The conversion state that is maintained between calls to the member function.
 
-*first2*
- Pointer to the first position in the destination range.
+*first2*<br/>
+Pointer to the first position in the destination range.
 
-*last2*
- Pointer to the last position in the destination range.
+*last2*<br/>
+Pointer to the last position in the destination range.
 
-*next2*
- Pointer to the first unaltered element in the destination sequence.
+*next2*<br/>
+Pointer to the first unaltered element in the destination sequence.
 
 ### Return Value
 

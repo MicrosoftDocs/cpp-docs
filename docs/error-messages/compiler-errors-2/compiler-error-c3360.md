@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3360
-'string': cannot create name  
-  
- The value that was passed to the [uuid](../../windows/uuid-cpp-attributes.md) attribute was not valid.  
-  
- The following sample generates C3360:  
-  
-```  
-// C3360.cpp  
-[ uuid("1") ]  
-// try this line instead  
-// [ uuid("12341234-1234-1234-1234-123412341234") ]  
-struct A   // C3360  
-{  
-};  
-  
-int main()  
-{  
-}  
+
+'string': cannot create name
+
+The value that was passed to the [uuid](../../windows/uuid-cpp-attributes.md) attribute was not valid.
+
+The following sample generates C3360:
+
+```
+// C3360.cpp
+[ uuid("1") ]
+// try this line instead
+// [ uuid("12341234-1234-1234-1234-123412341234") ]
+struct A   // C3360
+{
+};
+
+int main()
+{
+}
 ```

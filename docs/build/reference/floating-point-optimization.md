@@ -749,7 +749,6 @@ This kind of additional rounding may result from using a lower precision floatin
 
 If fp:fast optimization is particularly problematic for a specific function, the floating-point mode can be locally switched to fp:precise using the `float_control` compiler pragma.
 
-
 ### Algebraic transformations under fp:fast
 
 The fp:fast mode enables the compiler to perform certain, unsafe algebraic transformations to floating point expressions. For example, the following unsafe optimizations may be employed under fp:fast.

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2167
-'function' : too many actual parameters for intrinsic function  
-  
- A reference to an `intrinsic` function has too many parameters.
+
+'function' : too many actual parameters for intrinsic function
+
+A reference to an `intrinsic` function has too many parameters.

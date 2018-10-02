@@ -26,7 +26,7 @@ Implements support for returning detailed errors.
 
 ### Parameters
 
-*error_interface*  
+*error_interface*<br/>
 The identifier of the interface implementing `IErrorInfo`.
 
 ## Remarks
@@ -74,5 +74,5 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[COM Attributes](../windows/com-attributes.md)  
+[COM Attributes](../windows/com-attributes.md)<br/>
 [Class Attributes](../windows/class-attributes.md)  

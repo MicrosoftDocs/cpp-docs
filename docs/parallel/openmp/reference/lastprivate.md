@@ -13,31 +13,34 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # lastprivate
-Specifies that the enclosing context's version of the variable is set equal to the private version of whichever thread executes the final iteration (for-loop construct) or last section (#pragma sections).  
-  
-## Syntax  
-  
-```  
-lastprivate(var)  
-```  
-  
-## Remarks  
- where,  
-  
- `var`  
- The variable that is set equal to the private version of whichever thread executes the final iteration (for-loop construct) or last section (#pragma sections).  
-  
-## Remarks  
- `lastprivate` applies to the following directives:  
-  
--   [for](../../../parallel/openmp/reference/for-openmp.md)  
-  
--   [sections](../../../parallel/openmp/reference/sections-openmp.md)  
-  
- For more information, see [2.7.2.3 lastprivate](../../../parallel/openmp/2-7-2-3-lastprivate.md).  
-  
-## Example  
- See [schedule](../../../parallel/openmp/reference/schedule.md) for an example of using `lastprivate` clause.  
-  
-## See Also  
- [Clauses](../../../parallel/openmp/reference/openmp-clauses.md)
+
+Specifies that the enclosing context's version of the variable is set equal to the private version of whichever thread executes the final iteration (for-loop construct) or last section (#pragma sections).
+
+## Syntax
+
+```
+lastprivate(var)
+```
+
+### Parameters
+
+*var*<br/>
+The variable that is set equal to the private version of whichever thread executes the final iteration (for-loop construct) or last section (#pragma sections).
+
+## Remarks
+
+`lastprivate` applies to the following directives:
+
+- [for](../../../parallel/openmp/reference/for-openmp.md)
+
+- [sections](../../../parallel/openmp/reference/sections-openmp.md)
+
+For more information, see [2.7.2.3 lastprivate](../../../parallel/openmp/2-7-2-3-lastprivate.md).
+
+## Example
+
+See [schedule](../../../parallel/openmp/reference/schedule.md) for an example of using `lastprivate` clause.
+
+## See Also
+
+[Clauses](../../../parallel/openmp/reference/openmp-clauses.md)

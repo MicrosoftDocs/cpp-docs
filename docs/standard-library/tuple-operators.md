@@ -27,8 +27,8 @@ bool operator!=(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### Parameters
 
-*TN*  
- The type of the Nth tuple element.
+*TN*<br/>
+The type of the Nth tuple element.
 
 ### Remarks
 
@@ -92,8 +92,8 @@ bool operator<(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### Parameters
 
-*TN*  
- The type of the Nth tuple element.
+*TN*<br/>
+The type of the Nth tuple element.
 
 ### Remarks
 
@@ -157,8 +157,8 @@ bool operator<=(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### Parameters
 
-*TN*  
- The type of the Nth tuple element.
+*TN*<br/>
+The type of the Nth tuple element.
 
 ### Remarks
 
@@ -222,8 +222,8 @@ bool operator==(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### Parameters
 
-*TN*  
- The type of the Nth tuple element.
+*TN*<br/>
+The type of the Nth tuple element.
 
 ### Remarks
 
@@ -287,8 +287,8 @@ bool operator>(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### Parameters
 
-*TN*  
- The type of the Nth tuple element.
+*TN*<br/>
+The type of the Nth tuple element.
 
 ### Remarks
 
@@ -352,8 +352,8 @@ bool operator>=(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### Parameters
 
-*TN*  
- The type of the Nth tuple element.
+*TN*<br/>
+The type of the Nth tuple element.
 
 ### Remarks
 

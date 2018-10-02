@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["controls [C++], tab order", "focus, tab order", "tab controls, tab order", "Tabstop property for controls", "controls [C++], focus", "dialog box controls, tab order"]
+helpviewer_keywords: ["controls [C++], tab order", "focus, tab order", "tab controls [C++], tab order", "Tabstop property for controls", "controls [C++], focus", "dialog box controls [C++], tab order"]
 ms.assetid: e2cee764-4367-42d7-9563-65a68f76f5ff
 author: "mikeblome"
 ms.author: "mblome"
@@ -68,6 +68,6 @@ Win32
 
 ## See Also
 
-[Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)  
-[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)  
+[Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)<br/>
+[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)<br/>
 [Controls](../mfc/controls-mfc.md)

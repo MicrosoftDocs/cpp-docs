@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["images [C++], properties", "Image editor [C++], Properties window", "Image editor [C++], image properties", "Properties window, image editor"]
+helpviewer_keywords: ["images [C++], properties", "Image editor [C++], Properties window", "Properties window, image editor"]
 ms.assetid: f6172bf1-08c4-4dfd-b542-dd8749e83fe6
 author: "mikeblome"
 ms.author: "mblome"
@@ -39,6 +39,6 @@ None
 
 ## See Also
 
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)  
-[Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)  
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+[Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
 [Image Editor for Icons](../windows/image-editor-for-icons.md)

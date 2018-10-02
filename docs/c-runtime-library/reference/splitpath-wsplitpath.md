@@ -40,19 +40,19 @@ void _wsplitpath(
 
 ### Parameters
 
-*path*
+*path*<br/>
 Full path.
 
-*drive*
+*drive*<br/>
 Drive letter, followed by a colon (**:**). You can pass **NULL** for this parameter if you do not need the drive letter.
 
-*dir*
+*dir*<br/>
 Directory path, including trailing slash. Forward slashes ( **/** ), backslashes ( **\\** ), or both may be used. You can pass **NULL** for this parameter if you do not need the directory path.
 
-*fname*
+*fname*<br/>
 Base filename (no extension). You can pass **NULL** for this parameter if you do not need the filename.
 
-*ext*
+*ext*<br/>
 Filename extension, including leading period (**.**). You can pass **NULL** for this parameter if you do not need the filename extension.
 
 ## Remarks

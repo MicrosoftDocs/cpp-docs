@@ -13,31 +13,32 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3414
-'member' : imported member function can't be defined  
-  
- A member was defined in code that is also defined in a referenced assembly.  
-  
- The following sample generates C3414:  
-  
-```  
-// C3414a2.cpp  
-// compile with: /clr /LD  
-public ref class MyClass {  
-public:  
-   void Test(){}  
-};  
-```  
-  
- and then:  
-  
-```  
-// C3414b2.cpp  
-// compile with: /clr  
-#using <C3414a2.dll>  
-  
-void MyClass::Test() {    // C3414  
-}  
-  
-System::Object::Object() {    // C3414  
-}  
-```  
+
+'member' : imported member function can't be defined
+
+A member was defined in code that is also defined in a referenced assembly.
+
+The following sample generates C3414:
+
+```
+// C3414a2.cpp
+// compile with: /clr /LD
+public ref class MyClass {
+public:
+   void Test(){}
+};
+```
+
+and then:
+
+```
+// C3414b2.cpp
+// compile with: /clr
+#using <C3414a2.dll>
+
+void MyClass::Test() {    // C3414
+}
+
+System::Object::Object() {    // C3414
+}
+```

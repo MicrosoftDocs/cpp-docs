@@ -26,8 +26,8 @@ Specifies the threading model for a COM object.
 
 ### Parameters
 
-*model* (optional)  
-One of the following threading models:
+*model*<br/>
+(Optional) One of the following threading models:
 
 - `apartment` (apartment threading)
 
@@ -68,8 +68,8 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 
 ## See Also
 
-[COM Attributes](../windows/com-attributes.md)  
-[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)  
-[Multithreading Support for Older Code (Visual C++)](../parallel/multithreading-support-for-older-code-visual-cpp.md)  
+[COM Attributes](../windows/com-attributes.md)<br/>
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[Class Attributes](../windows/class-attributes.md)<br/>
+[Multithreading Support for Older Code (Visual C++)](../parallel/multithreading-support-for-older-code-visual-cpp.md)<br/>
 [Neutral Apartments](/windows/desktop/cossdk/neutral-apartments)  

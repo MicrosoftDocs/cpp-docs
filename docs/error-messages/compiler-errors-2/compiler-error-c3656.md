@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3656
-'override' : override specifier cannot be repeated  
-  
- An explicit override keyword can only be specified once. For more information, see [Explicit Overrides](../../windows/explicit-overrides-cpp-component-extensions.md).  
-  
- The following sample generates C3656:  
-  
-```  
-// C3656.cpp  
-// compile with: /clr /c  
-public interface struct O {  
-   int f();  
-};  
-  
-public ref struct V : O {  
-   int f() override override { return 0; }   // C3656  
-   // try the following line instead  
-   // int f() override { return 0; }  
-};  
+
+'override' : override specifier cannot be repeated
+
+An explicit override keyword can only be specified once. For more information, see [Explicit Overrides](../../windows/explicit-overrides-cpp-component-extensions.md).
+
+The following sample generates C3656:
+
+```
+// C3656.cpp
+// compile with: /clr /c
+public interface struct O {
+   int f();
+};
+
+public ref struct V : O {
+   int f() override override { return 0; }   // C3656
+   // try the following line instead
+   // int f() override { return 0; }
+};
 ```

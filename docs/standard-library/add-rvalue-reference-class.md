@@ -28,8 +28,8 @@ using add_rvalue_reference_t = typename add_rvalue_reference<T>::type;
 
 ### Parameters
 
-*T*
- The type to modify.
+*T*<br/>
+The type to modify.
 
 ## Remarks
 
@@ -70,7 +70,9 @@ All static_assert tests of add_rvalue_reference passed.
 
 ## Requirements
 
-Header: <type_traits> Namespace: std
+Header: \<type_traits>
+
+Namespace: std
 
 ## See also
 

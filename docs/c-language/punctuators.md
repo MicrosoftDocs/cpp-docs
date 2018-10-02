@@ -12,8 +12,10 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Punctuators
-`punctuator`: one of  
- **[ ]   ( )   { }   \*   ,   :   =   ;   ...   #**  
-  
-## See Also  
- [Lexical Grammar](../c-language/lexical-grammar.md)
+
+`punctuator`: one of
+**[ ]   ( )   { }   \*   ,   :   =   ;   ...   #**
+
+## See Also
+
+[Lexical Grammar](../c-language/lexical-grammar.md)

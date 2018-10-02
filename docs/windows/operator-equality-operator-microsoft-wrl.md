@@ -54,10 +54,10 @@ WRL_NOTHROW bool operator==(
 
 ### Parameters
 
-*a*  
+*a*<br/>
 The left object.
 
-*b*  
+*b*<br/>
 The right object.
 
 ## Return Value

@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBCreateCommandImpl Class
+
 Provides an implementation of the [IDBCreateCommand](/previous-versions/windows/desktop/ms711625\(v=vs.85\)) interface.  
   
 ## Syntax
@@ -24,14 +25,16 @@ class ATL_NO_VTABLE IDBCreateCommandImpl
 ```  
   
 ### Parameters  
- *T*  
- The session object derived from `IDBCreateCommandImpl`.  
+
+*T*<br/>
+The session object derived from `IDBCreateCommandImpl`.  
   
- *CommandClass*  
- Your command class.  
+*CommandClass*<br/>
+Your command class.  
 
 ## Requirements  
- **Header:** atldb.h  
+
+**Header:** atldb.h  
   
 ## Members  
   
@@ -42,9 +45,11 @@ class ATL_NO_VTABLE IDBCreateCommandImpl
 |[CreateCommand](#createcommand)|Creates a new command.|  
   
 ## Remarks  
- An optional interface on the session object to obtain a new command.  
+
+An optional interface on the session object to obtain a new command.  
 
 ## <a name="createcommand"></a> IDBCreateCommandImpl::CreateCommand
+
 Creates a new command and returns the requested interface.  
   
 ### Syntax  
@@ -56,14 +61,16 @@ STDMETHOD(CreateCommand)(IUnknown * pUnkOuter, 
 ```  
   
 #### Parameters  
- See [IDBCreateCommand::CreateCommand](/previous-versions/windows/desktop/ms709772\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+See [IDBCreateCommand::CreateCommand](/previous-versions/windows/desktop/ms709772\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
- Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IDBCreateCommand::CreateCommand`:  
+Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IDBCreateCommand::CreateCommand`:  
   
 |OLE DB Template parameters|*OLE DB Programmer's Reference* parameters|  
 |--------------------------------|------------------------------------------------|  
 |*ppvCommand*|*ppCommand*|  
   
 ## See Also  
- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2102
-'&' requires l-value  
-  
- The address-of operator ( `&` ) must have an l-value as operand.
+
+'&' requires l-value
+
+The address-of operator ( `&` ) must have an l-value as operand.

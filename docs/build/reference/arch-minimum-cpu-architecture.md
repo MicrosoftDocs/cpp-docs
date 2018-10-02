@@ -13,14 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /arch (Minimum CPU Architecture)
-The architecture options specify the architecture for code generation. Select the base hardware architecture you are working with to see /arch options for that target platform.  
-  
--   [/arch (x86)](../../build/reference/arch-x86.md)  
-  
--   [/arch (x64)](../../build/reference/arch-x64.md)  
-  
--   [/arch (ARM)](../../build/reference/arch-arm.md)  
-  
-## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+
+The architecture options specify the architecture for code generation. Select the base hardware architecture you are working with to see /arch options for that target platform.
+
+- [/arch (x86)](../../build/reference/arch-x86.md)
+
+- [/arch (x64)](../../build/reference/arch-x64.md)
+
+- [/arch (ARM)](../../build/reference/arch-arm.md)
+
+## See Also
+
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

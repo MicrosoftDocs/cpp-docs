@@ -13,42 +13,45 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # omp_in_parallel
-Returns nonzero if called from within a parallel region.  
-  
-## Syntax  
-  
-```  
-int omp_in_parallel( );  
-```  
-  
-## Remarks  
- For more information, see [3.1.6 omp_in_parallel Function](../../../parallel/openmp/3-1-6-omp-in-parallel-function.md).  
-  
-## Example  
-  
-```  
-// omp_in_parallel.cpp  
-// compile with: /openmp  
-#include <stdio.h>  
-#include <omp.h>  
-  
-int main( )   
-{  
-    omp_set_num_threads(4);  
-    printf_s("%d\n", omp_in_parallel( ));  
-  
-    #pragma omp parallel  
-        #pragma omp master  
-        {  
-            printf_s("%d\n", omp_in_parallel( ));  
-        }  
-}  
-```  
-  
-```Output  
-0  
-1  
-```  
-  
-## See Also  
- [Functions](../../../parallel/openmp/reference/openmp-functions.md)
+
+Returns nonzero if called from within a parallel region.
+
+## Syntax
+
+```
+int omp_in_parallel( );
+```
+
+## Remarks
+
+For more information, see [3.1.6 omp_in_parallel Function](../../../parallel/openmp/3-1-6-omp-in-parallel-function.md).
+
+## Example
+
+```
+// omp_in_parallel.cpp
+// compile with: /openmp
+#include <stdio.h>
+#include <omp.h>
+
+int main( )
+{
+    omp_set_num_threads(4);
+    printf_s("%d\n", omp_in_parallel( ));
+
+    #pragma omp parallel
+        #pragma omp master
+        {
+            printf_s("%d\n", omp_in_parallel( ));
+        }
+}
+```
+
+```Output
+0
+1
+```
+
+## See Also
+
+[Functions](../../../parallel/openmp/reference/openmp-functions.md)

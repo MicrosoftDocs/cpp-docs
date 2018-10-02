@@ -12,26 +12,28 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Byte Indices
-Use the following tips:  
-  
--   Working with a bytewise index into a string presents problems similar to those posed by pointer manipulation. Consider this example, which scans a string for a backslash character:  
-  
-    ```  
-    while ( rgch[ i ] != '\\' )  
-        i++;  
-    ```  
-  
-     This might index a trail byte, not a lead byte, and thus it might not point to a `character`.  
-  
--   Use the [_mbclen](../c-runtime-library/reference/mbclen-mblen-mblen-l.md) function to solve the preceding problem:  
-  
-    ```  
-    while ( rgch[ i ] != '\\' )  
-        i += _mbclen ( rgch + i );  
-    ```  
-  
-     This correctly indexes to a lead byte, hence to a `character`. The `_mbclen` function determines the size of a character (1 or 2 bytes).  
-  
-## See Also  
- [MBCS Programming Tips](../text/mbcs-programming-tips.md)   
- [Last Character in a String](../text/last-character-in-a-string.md)
+
+Use the following tips:
+
+- Working with a bytewise index into a string presents problems similar to those posed by pointer manipulation. Consider this example, which scans a string for a backslash character:
+
+    ```cpp
+    while ( rgch[ i ] != '\\' )
+        i++;
+    ```
+
+   This might index a trail byte, not a lead byte, and thus it might not point to a `character`.
+
+- Use the [_mbclen](../c-runtime-library/reference/mbclen-mblen-mblen-l.md) function to solve the preceding problem:
+
+    ```cpp
+    while ( rgch[ i ] != '\\' )
+        i += _mbclen ( rgch + i );
+    ```
+
+   This correctly indexes to a lead byte, hence to a `character`. The `_mbclen` function determines the size of a character (1 or 2 bytes).
+
+## See Also
+
+[MBCS Programming Tips](../text/mbcs-programming-tips.md)<br/>
+[Last Character in a String](../text/last-character-in-a-string.md)

@@ -13,15 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # TZNAME_MAX
-The maximum permissible string length for a time zone name variable.  
-  
-## Syntax  
-  
-```  
-#include <limits.h>  
-```  
-  
-## See Also  
- [Environmental Constants](../c-runtime-library/environmental-constants.md)   
- [Global Constants](../c-runtime-library/global-constants.md)   
- [_get_tzname](../c-runtime-library/reference/get-tzname.md)
+
+The maximum permissible string length for a time zone name variable.
+
+## Syntax
+
+```
+#include <limits.h>
+```
+
+## See Also
+
+[Environmental Constants](../c-runtime-library/environmental-constants.md)<br/>
+[Global Constants](../c-runtime-library/global-constants.md)<br/>
+[_get_tzname](../c-runtime-library/reference/get-tzname.md)

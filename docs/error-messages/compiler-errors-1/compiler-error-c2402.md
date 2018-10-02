@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2402
-'identifier' : register must be index in 'context'  
-  
- The register used in an indirect memory operand must be an index register in this context.
+
+'identifier' : register must be index in 'context'
+
+The register used in an indirect memory operand must be an index register in this context.

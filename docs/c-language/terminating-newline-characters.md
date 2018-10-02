@@ -11,9 +11,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Terminating Newline Characters
-**ANSI 4.9.2** Whether the last line of a text stream requires a terminating newline character  
-  
- Stream functions recognize either new line or end of file as the terminating character for a line.  
-  
-## See Also  
- [Library Functions](../c-language/library-functions.md)
+
+**ANSI 4.9.2** Whether the last line of a text stream requires a terminating newline character
+
+Stream functions recognize either new line or end of file as the terminating character for a line.
+
+## See Also
+
+[Library Functions](../c-language/library-functions.md)

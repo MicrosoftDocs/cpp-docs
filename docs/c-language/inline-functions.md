@@ -33,7 +33,7 @@ The use of inline functions generates faster code and can sometimes generate sma
 
 Functions using `__inline` should not be confused with inline assembler code. See [Inline Assembler](../c-language/inline-assembler-c.md) for more information.
 
-**END Microsoft Specific**  
+**END Microsoft Specific**
 
 ## See Also
 

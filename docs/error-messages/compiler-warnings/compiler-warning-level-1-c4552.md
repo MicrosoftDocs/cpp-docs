@@ -13,21 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4552
-'operator' : operator has no effect; expected operator with side-effect  
-  
- If an expression statement has an operator with no side effect as the top of the expression, it's probably a mistake.  
-  
- To override this warning, put the expression in parentheses.  
-  
- The following sample generates C4552:  
-  
-```  
-// C4552.cpp  
-// compile with: /W1  
-int main() {  
-   int i, j;  
-   i + j;   // C4552  
-   // try the following line instead  
-   // (i + j);  
-}  
+
+'operator' : operator has no effect; expected operator with side-effect
+
+If an expression statement has an operator with no side effect as the top of the expression, it's probably a mistake.
+
+To override this warning, put the expression in parentheses.
+
+The following sample generates C4552:
+
+```
+// C4552.cpp
+// compile with: /W1
+int main() {
+   int i, j;
+   i + j;   // C4552
+   // try the following line instead
+   // (i + j);
+}
 ```

@@ -19,16 +19,16 @@ A smart pointer class for managing COM interface pointers.
 ## Syntax
 
 ```
-template<class T, const IID* piid= &__uuidof(T)>  
+template<class T, const IID* piid= &__uuidof(T)>
 class CComQIPtr: public CComPtr<T>
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 A COM interface specifying the type of pointer to be stored.
 
-*piid*  
+*piid*<br/>
 A pointer to the IID of *T*.
 
 ## Members
@@ -74,13 +74,13 @@ CComQIPtr(const CComQIPtr<T, piid>& lp) throw();
 
 ### Parameters
 
-*lp*  
+*lp*<br/>
 Used to initialize the interface pointer.
 
-*T*  
+*T*<br/>
 A COM interface.
 
-*piid*  
+*piid*<br/>
 A pointer to the IID of *T*.
 
 ##  <a name="operator_eq"></a>  CComQIPtr::operator =
@@ -95,13 +95,13 @@ T* operator= (IUnknown* lp) throw();
 
 ### Parameters
 
-*lp*  
+*lp*<br/>
 Used to initialize the interface pointer.
 
-*T*  
+*T*<br/>
 A COM interface.
 
-*piid*  
+*piid*<br/>
 A pointer to the IID of *T*.
 
 ### Return Value
@@ -110,8 +110,8 @@ Returns a pointer to the updated `CComQIPtr` object.
 
 ## See Also
 
-[CComPtr::CComPtr](../../atl/reference/ccomptr-class.md#ccomptr)   
-[CComQIPtr::CComQIPtr](#ccomqiptr)   
-[CComPtrBase Class](../../atl/reference/ccomptrbase-class.md)   
-[Class Overview](../../atl/atl-class-overview.md)   
+[CComPtr::CComPtr](../../atl/reference/ccomptr-class.md#ccomptr)<br/>
+[CComQIPtr::CComQIPtr](#ccomqiptr)<br/>
+[CComPtrBase Class](../../atl/reference/ccomptrbase-class.md)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [CComQIPtrElementTraits Class](../../atl/reference/ccomqiptrelementtraits-class.md)

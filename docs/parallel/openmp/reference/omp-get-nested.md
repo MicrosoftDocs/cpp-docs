@@ -13,24 +13,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # omp_get_nested
-Returns a value that indicates if nested parallelism is enabled.  
-  
-## Syntax  
-  
-```  
-int omp_get_nested( );  
-```  
-  
-## Return Value  
- If nonzero, nested parallelism is enabled.  
-  
-## Remarks  
- Nested parallelism is specified with [omp_set_nested](../../../parallel/openmp/reference/omp-set-nested.md) and [OMP_NESTED](../../../parallel/openmp/reference/omp-nested.md).  
-  
- For more information, see [3.1.10 omp_get_nested Function](../../../parallel/openmp/3-1-10-omp-get-nested-function.md).  
-  
-## Example  
- See [omp_set_nested](../../../parallel/openmp/reference/omp-set-nested.md) for an example of using `omp_get_nested`.  
-  
-## See Also  
- [Functions](../../../parallel/openmp/reference/openmp-functions.md)
+
+Returns a value that indicates if nested parallelism is enabled.
+
+## Syntax
+
+```
+int omp_get_nested( );
+```
+
+## Return Value
+
+If nonzero, nested parallelism is enabled.
+
+## Remarks
+
+Nested parallelism is specified with [omp_set_nested](../../../parallel/openmp/reference/omp-set-nested.md) and [OMP_NESTED](../../../parallel/openmp/reference/omp-nested.md).
+
+For more information, see [3.1.10 omp_get_nested Function](../../../parallel/openmp/3-1-10-omp-get-nested-function.md).
+
+## Example
+
+See [omp_set_nested](../../../parallel/openmp/reference/omp-set-nested.md) for an example of using `omp_get_nested`.
+
+## See Also
+
+[Functions](../../../parallel/openmp/reference/openmp-functions.md)

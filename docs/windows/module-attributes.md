@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["module attributes", "attributes [C++], reference topics"]
+helpviewer_keywords: ["module attributes", "attributes [C++/CLI], reference topics"]
 ms.assetid: 46d135dc-613f-4810-90a4-e155ab8ed91a
 author: "mikeblome"
 ms.author: "mblome"
@@ -19,4 +19,5 @@ The following attribute can only be applied to the [module](../windows/module-cp
 |[helpstringdll](../windows/helpstringdll.md)|Specifies the name of the DLL to use to perform document string lookup (localization).|
   
 ## See Also
- [Attributes by Usage](../windows/attributes-by-usage.md)
+
+[Attributes by Usage](../windows/attributes-by-usage.md)

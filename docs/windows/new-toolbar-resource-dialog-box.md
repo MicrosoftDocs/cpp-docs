@@ -1,20 +1,20 @@
 ---
-title: "New Toolbar Resource Dialog Box | Microsoft Docs"
+title: "New Toolbar Resource Dialog Box (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.newtoolbarresource"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["New Toolbar Resource dialog box"]
+helpviewer_keywords: ["New Toolbar Resource dialog box [C++]"]
 ms.assetid: 52dd01ad-e748-4ab2-b3eb-59f5df990ca6
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# New Toolbar Resource Dialog Box
+# New Toolbar Resource Dialog Box (C++)
 
-The **New Toolbar Resource** dialog box allows you to specify the width and height of the buttons you are adding to a toolbar resource. The default is 16 × 15 pixels.
+The **New Toolbar Resource** dialog box allows you to specify the width and height of the buttons you are adding to a toolbar resource in a C++ project. The default is 16 × 15 pixels.
 
 A bitmap that is used to create a toolbar has a maximum width of 2048. So if you set the **Button Width** to 512, you can only have four buttons. If you set the width to 513, you can only have three buttons.
 
@@ -34,6 +34,6 @@ MFC or ATL
 
 ## See Also
 
-[Toolbar Button Properties](../windows/toolbar-button-properties.md)  
-[Converting Bitmaps to Toolbars](../windows/converting-bitmaps-to-toolbars.md)  
+[Toolbar Button Properties](../windows/toolbar-button-properties.md)<br/>
+[Converting Bitmaps to Toolbars](../windows/converting-bitmaps-to-toolbars.md)<br/>
 [Toolbar Editor](../windows/toolbar-editor.md)

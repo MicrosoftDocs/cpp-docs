@@ -53,13 +53,12 @@ In order for the event notifications to be handled by the proper function, your 
 
 ATL provides several macros, [BEGIN_SINK_MAP](reference/composite-control-macros.md#begin_sink_map), [END_SINK_MAP](reference/composite-control-macros.md#end_sink_map), and [SINK_ENTRY_EX](reference/composite-control-macros.md#sink_entry_ex), that make this mapping easier. The standard format is as follows:
 
-`BEGIN_SINK_MAP(comClass)`
-
-`SINK_ENTRY_EX(id, iid, dispid, func)`
-
-`. . . //additional external event entries`
-
-`END_SINK_MAP()`
+```cpp
+BEGIN_SINK_MAP(comClass)
+  SINK_ENTRY_EX(id, iid, dispid, func)
+  . . . //additional external event entries
+END_SINK_MAP()
+```
 
 The following example declares an event sink map with two event handlers:
 

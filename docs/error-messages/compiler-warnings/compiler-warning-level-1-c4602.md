@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4602
-\#pragma pop_macro : 'macro name' no previous #pragma push_macro for this identifier  
-  
- If you use [pop_macro](../../preprocessor/pop-macro.md) for a particular macro, you must first have passed that macro name to [push_macro](../../preprocessor/push-macro.md). For example, the following sample generates C4602:  
-  
-```  
-// C4602.cpp  
-// compile with: /W1  
-int main()  
-{  
-   #pragma pop_macro("x")   // C4602 x is not on the stack  
-}  
+
+\#pragma pop_macro : 'macro name' no previous #pragma push_macro for this identifier
+
+If you use [pop_macro](../../preprocessor/pop-macro.md) for a particular macro, you must first have passed that macro name to [push_macro](../../preprocessor/push-macro.md). For example, the following sample generates C4602:
+
+```
+// C4602.cpp
+// compile with: /W1
+int main()
+{
+   #pragma pop_macro("x")   // C4602 x is not on the stack
+}
 ```

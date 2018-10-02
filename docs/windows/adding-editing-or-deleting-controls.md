@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["Dialog editor, creating controls", "dialog box controls, adding to dialog boxes", "controls [C++], adding to dialog boxes"]
+helpviewer_keywords: ["Dialog Editor [C++], creating controls"]
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
 author: "mikeblome"
 ms.author: "mblome"
@@ -39,6 +39,6 @@ Win32
 
 ## See Also
 
-[Controls in Dialog Boxes](controls-in-dialog-boxes.md)  
-[Adding Event Handlers for Dialog Box Controls](adding-event-handlers-for-dialog-box-controls.md)  
+[Controls in Dialog Boxes](controls-in-dialog-boxes.md)<br/>
+[Adding Event Handlers for Dialog Box Controls](adding-event-handlers-for-dialog-box-controls.md)<br/>
 [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)

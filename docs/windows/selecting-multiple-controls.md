@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["Dialog editor, selecting controls", "dialog box controls, selecting in editor", "controls [C++], selecting", "controls [C++], removing from groups"]
+helpviewer_keywords: ["Dialog Editor [C++], selecting controls", "dialog box controls [C++], selecting in editor", "controls [C++], selecting", "controls [C++], removing from groups"]
 ms.assetid: efbdbade-0a3a-4328-b36e-a6376c06e8de
 author: "mikeblome"
 ms.author: "mblome"
@@ -44,5 +44,5 @@ Win32
 
 ## See Also
 
-[Selecting Controls](../windows/selecting-controls.md)  
+[Selecting Controls](../windows/selecting-controls.md)<br/>
 [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)

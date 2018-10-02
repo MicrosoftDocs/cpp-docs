@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Fatal Error RW1004
-Unexpected end of file  
-  
- This error can be caused by missing linefeed and carriage-return characters on the last line of a text file.
+
+Unexpected end of file
+
+This error can be caused by missing linefeed and carriage-return characters on the last line of a text file.

@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 
 The C run-time library contains the functions that support run-time error checks (RTC). Run-time error checking allows you to build your program such that certain kinds of run-time errors are reported. You specify how the errors are reported and which kinds of errors are reported. For more information, see [How to: Use Native Run-Time Checks](/visualstudio/debugger/how-to-use-native-run-time-checks).
 
- Use the following functions to customize the way your program does run-time error checking.
+Use the following functions to customize the way your program does run-time error checking.
 
 ## Run-Time Error Checking Functions
 
@@ -30,6 +30,6 @@ The C run-time library contains the functions that support run-time error checks
 ## See Also
 
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
- [/RTC (Run-Time Error Checks)](../build/reference/rtc-run-time-error-checks.md)<br/>
- [runtime_checks](../preprocessor/runtime-checks.md)<br/>
- [Debug Routines](../c-runtime-library/debug-routines.md)<br/>
+[/RTC (Run-Time Error Checks)](../build/reference/rtc-run-time-error-checks.md)<br/>
+[runtime_checks](../preprocessor/runtime-checks.md)<br/>
+[Debug Routines](../c-runtime-library/debug-routines.md)<br/>

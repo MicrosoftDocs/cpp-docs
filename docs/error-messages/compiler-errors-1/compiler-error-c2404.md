@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2404
-'identifier' : illegal register in 'context'  
-  
- This register is invalid in this context.
+
+'identifier' : illegal register in 'context'
+
+This register is invalid in this context.

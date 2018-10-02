@@ -1,17 +1,17 @@
 ---
-title: "Copying Buttons from a Toolbar | Microsoft Docs"
+title: "Copying Buttons from a Toolbar (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["Toolbar editor, copying buttons", "toolbars [C++], copying buttons", "toolbar buttons [C++], copying"]
+helpviewer_keywords: ["Toolbar editor [C++], copying buttons", "toolbars [C++], copying buttons", "toolbar buttons [C++], copying"]
 ms.assetid: 3a31e428-f125-44c6-8966-a8a3fac5b117
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Copying Buttons from a Toolbar
+# Copying Buttons from a Toolbar (C++)
 
 ### To copy buttons from a toolbar
 
@@ -27,5 +27,5 @@ MFC or ATL
 
 ## See Also
 
-[Creating, Moving, and Editing Toolbar Buttons](../windows/creating-moving-and-editing-toolbar-buttons.md)  
+[Creating, Moving, and Editing Toolbar Buttons](../windows/creating-moving-and-editing-toolbar-buttons.md)<br/>
 [Toolbar Editor](../windows/toolbar-editor.md)

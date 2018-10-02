@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2285
-pointers to members representation has already been determined - pragma ignored  
-  
- Two different representations exist for class.
+
+pointers to members representation has already been determined - pragma ignored
+
+Two different representations exist for class.

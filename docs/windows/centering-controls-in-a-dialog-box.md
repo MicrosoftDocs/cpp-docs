@@ -1,17 +1,17 @@
 ---
-title: "Centering Controls in a Dialog Box | Microsoft Docs"
+title: "Centering Controls in a Dialog Box (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["controls [C++], aligning", "dialog box controls, placement", "Center in Dialog command"]
+helpviewer_keywords: ["controls [C++], aligning", "dialog box controls [C++], placement", "Center in Dialog command"]
 ms.assetid: 501fed94-af47-4845-9faa-a6642d7eb786
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Centering Controls in a Dialog Box
+# Centering Controls in a Dialog Box (C++)
 
 ### To center controls in a dialog box
 
@@ -31,6 +31,6 @@ Win32
 
 ## See Also
 
-[Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)  
-[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)  
+[Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)<br/>
+[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)<br/>
 [Controls](../mfc/controls-mfc.md)

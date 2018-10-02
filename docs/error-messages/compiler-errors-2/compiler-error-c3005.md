@@ -13,30 +13,31 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3005
-'error_text' : unexpected token encountered on OpenMP 'directive' directive  
-  
- An OpenMP directive was ill formed.  
-  
- The following sample generates C3005:  
-  
-```  
-// C3005.c  
-// compile with: /openmp  
-int main()  
-{  
-   #pragma omp parallel + for   // C3005  
-}  
-```  
-  
- C3005 can also occur if you put an open brace on the same line as the pragma.  
-  
-```  
-// C3005b.c  
-// compile with: /openmp  
-int main() {  
-   #pragma omp parallel {   // C3005 put open brace on next line  
-   lbl2:;  
-   }  
-   goto lbl2;  
-}  
+
+'error_text' : unexpected token encountered on OpenMP 'directive' directive
+
+An OpenMP directive was ill formed.
+
+The following sample generates C3005:
+
+```
+// C3005.c
+// compile with: /openmp
+int main()
+{
+   #pragma omp parallel + for   // C3005
+}
+```
+
+C3005 can also occur if you put an open brace on the same line as the pragma.
+
+```
+// C3005b.c
+// compile with: /openmp
+int main() {
+   #pragma omp parallel {   // C3005 put open brace on next line
+   lbl2:;
+   }
+   goto lbl2;
+}
 ```

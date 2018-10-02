@@ -1,5 +1,5 @@
 ---
-title: "Changing the Properties of Multiple Accelerator Keys | Microsoft Docs"
+title: "Changing the Properties of Multiple Accelerator Keys (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Changing the Properties of Multiple Accelerator Keys
+# Changing the Properties of Multiple Accelerator Keys (C++)
 
 ### To change the properties of multiple accelerator keys
 
@@ -35,5 +35,5 @@ Win32
 
 ## See Also
 
-[Editing Accelerator Tables](../windows/editing-accelerator-tables.md)  
+[Editing Accelerator Tables](../windows/editing-accelerator-tables.md)<br/>
 [Accelerator Editor](../windows/accelerator-editor.md)

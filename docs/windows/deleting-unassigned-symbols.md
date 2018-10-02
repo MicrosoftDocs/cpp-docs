@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["symbols, deleting", "symbols, unassigned", "unassigned symbols"]
+helpviewer_keywords: ["symbols [C++], deleting", "symbols [C++], unassigned", "unassigned symbols"]
 ms.assetid: 47641c46-1bad-44fb-8f85-79ae36919f13
 author: "mikeblome"
 ms.author: "mblome"
@@ -26,7 +26,7 @@ Win32
 
 ## See Also
 
-[Changing Unassigned Symbols](../windows/changing-unassigned-symbols.md)  
-[Symbol Name Restrictions](../windows/symbol-name-restrictions.md)  
-[Symbol Value Restrictions](../windows/symbol-value-restrictions.md)  
+[Changing Unassigned Symbols](../windows/changing-unassigned-symbols.md)<br/>
+[Symbol Name Restrictions](../windows/symbol-name-restrictions.md)<br/>
+[Symbol Value Restrictions](../windows/symbol-value-restrictions.md)<br/>
 [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)

@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2443
-operand size conflict  
-  
- The instruction requires operands to be the same size.  
-  
- The following sample generates C2443:  
-  
-```  
-// C2443.cpp  
-// processor: x86  
-short var;  
-int main() {  
-   __asm xchg ax,bl   // C2443  
-   __asm mov al,red   // C2443  
-   __asm mov al,BYTE PTR var   // OK  
-}  
+
+operand size conflict
+
+The instruction requires operands to be the same size.
+
+The following sample generates C2443:
+
+```
+// C2443.cpp
+// processor: x86
+short var;
+int main() {
+   __asm xchg ax,bl   // C2443
+   __asm mov al,red   // C2443
+   __asm mov al,BYTE PTR var   // OK
+}
 ```

@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["attributes [C++]"]
+helpviewer_keywords: ["attributes [C++/CLI]"]
 ms.assetid: 8be2de10-b1ff-4ca4-a114-75318408593c
 author: "mikeblome"
 ms.author: "mblome"
@@ -32,7 +32,7 @@ If an attribute precedes a Visual C++ element that is not in the attribute's sco
 
 ## See Also
 
-[C++ Attributes Reference](../windows/cpp-attributes-reference.md)  
-[Concepts](../windows/attributed-programming-concepts.md)  
-[Attributes by Group](../windows/attributes-by-group.md)  
+[C++ Attributes Reference](../windows/cpp-attributes-reference.md)<br/>
+[Concepts](../windows/attributed-programming-concepts.md)<br/>
+[Attributes by Group](../windows/attributes-by-group.md)<br/>
 [Attributes Alphabetical Reference](../windows/attributes-alphabetical-reference.md)

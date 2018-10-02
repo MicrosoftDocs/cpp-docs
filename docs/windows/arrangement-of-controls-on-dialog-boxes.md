@@ -1,17 +1,17 @@
 ---
-title: "Arrangement of Controls on Dialog Boxes | Microsoft Docs"
+title: "Arrangement of Controls on Dialog Boxes (C++)| Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["controls [C++], positioning", "dialog box controls, placement", "Dialog editor, arranging controls"]
+helpviewer_keywords: ["controls [C++], positioning", "dialog box controls [C++], placement", "Dialog Editor [C++], arranging controls"]
 ms.assetid: 832491cf-98af-42e5-a854-2cb135fd45c6
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Arrangement of Controls on Dialog Boxes
+# Arrangement of Controls on Dialog Box (C++)es
 
 The **Dialog** editor provides layout tools that align and size controls automatically. For most tasks, you can use the [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md). All **Dialog Editor** toolbar commands are also available on the **Format** menu, and most have [shortcut keys](../windows/accelerator-keys-for-the-dialog-editor.md).
 
@@ -41,5 +41,5 @@ Win32
 
 ## See Also
 
-[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)  
+[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)<br/>
 [Controls](../mfc/controls-mfc.md)

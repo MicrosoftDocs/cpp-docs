@@ -13,29 +13,31 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Ready-to-Use Map Classes
-The following classes are ready-to-use map classes.  
-  
- [CMapPtrToPtr](../mfc/reference/cmapptrtoptr-class.md)  
- Uses **void** pointers as keys for finding other **void** pointers.  
-  
- [CMapPtrToWord](../mfc/reference/cmapptrtoword-class.md)  
- Uses **void** pointers as keys for finding data of type **WORD**.  
-  
- [CMapStringToOb](../mfc/reference/cmapstringtoob-class.md)  
- Uses `CString` objects as keys for finding `CObject` pointers.  
-  
- [CMapStringToPtr](../mfc/reference/cmapstringtoptr-class.md)  
- Uses `CString` objects as keys for finding **void** pointers.  
-  
- [CMapStringToString](../mfc/reference/cmapstringtostring-class.md)  
- Uses `CString` objects as keys for finding other `CString` objects.  
-  
- [CMapWordToOb](../mfc/reference/cmapwordtoob-class.md)  
- Uses data of type **WORD** to find `CObject` pointers.  
-  
- [CMapWordToPtr](../mfc/reference/cmapwordtoptr-class.md)  
- Uses data of type **WORD** to find **void** pointers.  
-  
-## See Also  
- [Class Overview](../mfc/class-library-overview.md)
+
+The following classes are ready-to-use map classes.
+
+[CMapPtrToPtr](../mfc/reference/cmapptrtoptr-class.md)<br/>
+Uses **void** pointers as keys for finding other **void** pointers.
+
+[CMapPtrToWord](../mfc/reference/cmapptrtoword-class.md)<br/>
+Uses **void** pointers as keys for finding data of type **WORD**.
+
+[CMapStringToOb](../mfc/reference/cmapstringtoob-class.md)<br/>
+Uses `CString` objects as keys for finding `CObject` pointers.
+
+[CMapStringToPtr](../mfc/reference/cmapstringtoptr-class.md)<br/>
+Uses `CString` objects as keys for finding **void** pointers.
+
+[CMapStringToString](../mfc/reference/cmapstringtostring-class.md)<br/>
+Uses `CString` objects as keys for finding other `CString` objects.
+
+[CMapWordToOb](../mfc/reference/cmapwordtoob-class.md)<br/>
+Uses data of type **WORD** to find `CObject` pointers.
+
+[CMapWordToPtr](../mfc/reference/cmapwordtoptr-class.md)<br/>
+Uses data of type **WORD** to find **void** pointers.
+
+## See Also
+
+[Class Overview](../mfc/class-library-overview.md)
 

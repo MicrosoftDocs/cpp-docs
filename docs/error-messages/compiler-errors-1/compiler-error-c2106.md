@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2106
-'operator' : left operand must be l-value  
-  
- The operator must have an l-value as its left operand.  
-  
- The following sample generates C2106:  
-  
-```  
-// C2106.cpp  
-int main() {  
-   int a;  
-   1 = a;   // C2106  
-   a = 1;   // OK  
-}  
+
+'operator' : left operand must be l-value
+
+The operator must have an l-value as its left operand.
+
+The following sample generates C2106:
+
+```
+// C2106.cpp
+int main() {
+   int a;
+   1 = a;   // C2106
+   a = 1;   // OK
+}
 ```

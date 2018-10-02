@@ -48,10 +48,10 @@ public:
 
 ### Parameters
 
-*RealType*
+*RealType*<br/>
 The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
-*URNG*
+*URNG*<br/>
 The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -228,14 +228,14 @@ explicit fisher_f_distribution(const param_type& parm);
 
 ### Parameters
 
-*m*
- The `m` distribution parameter.
+*m*<br/>
+The `m` distribution parameter.
 
-*n*
- The `n` distribution parameter.
+*n*<br/>
+The `n` distribution parameter.
 
-*parm*
- The `param_type` structure used to construct the distribution.
+*parm*<br/>
+The `param_type` structure used to construct the distribution.
 
 ### Remarks
 
@@ -263,13 +263,13 @@ struct param_type {
 
 ### Parameters
 
-*m*
- The `m` distribution parameter.
+*m*<br/>
+The `m` distribution parameter.
 
-*n*
- The `n` distribution parameter.
+*n*<br/>
+The `n` distribution parameter.
 
-*right*
+*right*<br/>
 The `param_type` object to compare to this.
 
 ### Remarks

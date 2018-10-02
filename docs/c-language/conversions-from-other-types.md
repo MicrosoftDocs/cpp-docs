@@ -27,4 +27,4 @@ The **void** type has no value, by definition. Therefore, it cannot be converted
 
 ## See also
 
-[Assignment Conversions](../c-language/assignment-conversions.md)  
+[Assignment Conversions](../c-language/assignment-conversions.md)

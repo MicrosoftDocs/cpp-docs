@@ -19,13 +19,13 @@ This class provides default methods and functions for a collection class compose
 ## Syntax
 
 ```
-template <typename T>  
+template <typename T>
 class CPrimitiveElementTraits : public CDefaultElementTraits<T>
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The type of data to be stored in the collection class object.
 
 ## Members
@@ -77,5 +77,5 @@ typedef T& OUTARGTYPE;
 
 ## See Also
 
-[CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)   
+[CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

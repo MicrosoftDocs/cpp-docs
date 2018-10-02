@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Math Error M6107
-unemulated  
-  
- An attempt was made to execute a coprocessor instruction that is invalid or is not supported by the emulator.  
-  
- Program terminates with exit code 135.
+
+unemulated
+
+An attempt was made to execute a coprocessor instruction that is invalid or is not supported by the emulator.
+
+Program terminates with exit code 135.

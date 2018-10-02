@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2890
-'class' : a ref class can only have one non-interface base class  
-  
- A reference class can only have one base class.  
-  
- The following sample generates C2890:  
-  
-```  
-// C2890.cpp  
-// compile with: /clr /c  
-ref class A {};  
-ref class B {};  
-ref class C : public A, public B {};   // C2890  
-ref class D : public A {};   // OK  
-```  
+
+'class' : a ref class can only have one non-interface base class
+
+A reference class can only have one base class.
+
+The following sample generates C2890:
+
+```
+// C2890.cpp
+// compile with: /clr /c
+ref class A {};
+ref class B {};
+ref class C : public A, public B {};   // C2890
+ref class D : public A {};   // OK
+```

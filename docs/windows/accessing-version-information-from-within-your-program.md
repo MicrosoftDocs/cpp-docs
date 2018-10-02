@@ -1,5 +1,5 @@
 ---
-title: "Accessing Version Information from Within Your Program | Microsoft Docs"
+title: "Accessing Version Information from Within Your Program (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Accessing Version Information from Within Your Program
+# Accessing Version Information from Within Your Program (C++)
 
 ### To access version information from within your program
 
@@ -26,5 +26,5 @@ Win32
 
 ## See Also
 
-[Version Information Editor](../windows/version-information-editor.md)  
+[Version Information Editor](../windows/version-information-editor.md)<br/>
 [Version Information (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)

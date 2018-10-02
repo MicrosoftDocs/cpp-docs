@@ -1,12 +1,12 @@
 ---
 title: "Implements Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/11/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["implements/Microsoft::WRL::Implements"]
+f1_keywords: ["implements/Microsoft::WRL::Implements", "implements/Microsoft::WRL::Implements::CanCastTo", "implements/Microsoft::WRL::Implements::CastToUnknown", "implements/Microsoft::WRL::Implements::FillArrayWithIid", "implements/Microsoft::WRL::Implements::IidCount"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Implements structure"]
+helpviewer_keywords: ["Microsoft::WRL::Implements structure", "Microsoft::WRL::Implements::CanCastTo method", "Microsoft::WRL::Implements::CastToUnknown method", "Microsoft::WRL::Implements::FillArrayWithIid method", "Microsoft::WRL::Implements::IidCount method"]
 ms.assetid: 29b13e90-34d4-4a0b-babd-5187c9eb0c36
 author: "mikeblome"
 ms.author: "mblome"
@@ -49,37 +49,37 @@ struct __declspec(novtable) Implements<RuntimeClassFlags<flags>, I0, I1, I2, I3,
 
 ### Parameters
 
-*I0*  
+*I0*<br/>
 The zeroth interface ID. (Mandatory)
 
-*I1*  
+*I1*<br/>
 The first interface ID. (Optional)
 
-*I2*  
+*I2*<br/>
 The second interface ID. (Optional)
 
-*I3*  
+*I3*<br/>
 The third interface ID. (Optional)
 
-*I4*  
+*I4*<br/>
 The fourth interface ID. (Optional)
 
-*I5*  
+*I5*<br/>
 The fifth interface ID. (Optional)
 
-*I6*  
+*I6*<br/>
 The sixth interface ID. (Optional)
 
-*I7*  
+*I7*<br/>
 The seventh interface ID. (Optional)
 
-*I8*  
+*I8*<br/>
 The eigth interface ID. (Optional)
 
-*I9*  
+*I9*<br/>
 The ninth interface ID. (Optional)
 
-*flags*  
+*flags*<br/>
 Configuration flags for the class. One or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumerations that are specified in a [RuntimeClassFlags](../windows/runtimeclassflags-structure.md) structure.
 
 ## Remarks
@@ -92,23 +92,23 @@ Each *I0* through *I9* interface parameter must derive from either `IUnknown`, `
 
 ### Public Typedefs
 
-|Name|Description|
-|----------|-----------------|
-|`ClassFlags`|A synonym for `RuntimeClassFlags<WinRt>`.|
+| Name        | Description                               |
+| ----------- | ----------------------------------------- |
+| `ClassFlags`| A synonym for `RuntimeClassFlags<WinRt>`. |
 
 ### Protected Methods
 
-|Name|Description|
-|----------|-----------------|
-|[Implements::CanCastTo Method](../windows/implements-cancastto-method.md)|Gets a pointer to the specified interface.|
-|[Implements::CastToUnknown Method](../windows/implements-casttounknown-method.md)|Gets a pointer to the underlying `IUnknown` interface.|
-|[Implements::FillArrayWithIid Method](../windows/implements-fillarraywithiid-method.md)|Inserts the interface ID specified by the current zeroth template parameter into the specified array element.|
+| Name                                              | Description                                                                                                   |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| [Implements::CanCastTo](#cancastto)               | Gets a pointer to the specified interface.                                                                    |
+| [Implements::CastToUnknown](#casttounknown)       | Gets a pointer to the underlying `IUnknown` interface.                                                        |
+| [Implements::FillArrayWithIid](#fillarraywithiid) | Inserts the interface ID specified by the current zeroth template parameter into the specified array element. |
 
 ### Protected Constants
 
-|Name|Description|
-|----------|-----------------|
-|[Implements::IidCount Constant](../windows/implements-iidcount-constant.md)|Holds the number of implemented interface IDs.|
+| Name                              | Description                                    |
+| --------------------------------- | ---------------------------------------------- |
+| [Implements::IidCount](#iidcount) | Holds the number of implemented interface IDs. |
 
 ## Inheritance Hierarchy
 
@@ -130,6 +130,76 @@ Each *I0* through *I9* interface parameter must derive from either `IUnknown`, `
 
 **Namespace:** Microsoft::WRL
 
-## See Also
+## <a name="cancastto"></a>Implements::CanCastTo
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+Gets a pointer to the specified interface.
+
+```cpp
+__forceinline HRESULT CanCastTo(
+   REFIID riid,
+   _Deref_out_ void **ppv
+);
+```
+
+### Parameters
+
+*riid*<br/>
+A reference to an interface ID.
+
+*ppv*<br/>
+If successful, a pointer to the interface specified by *riid*.
+
+### Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error, such as E_NOINTERFACE.
+
+### Remarks
+
+This is an internal helper function that performs a QueryInterface operation.
+
+## <a name="casttounknown"></a>Implements::CastToUnknown
+
+Gets a pointer to the underlying `IUnknown` interface.
+
+```cpp
+__forceinline IUnknown* CastToUnknown();
+```
+
+### Return Value
+
+This operation always succeeds and returns the `IUnknown` pointer.
+
+### Remarks
+
+Internal helper function.
+
+## <a name="fillarraywithiid"></a>Implements::FillArrayWithIid
+
+Inserts the interface ID specified by the current zeroth template parameter into the specified array element.
+
+```cpp
+__forceinline static void FillArrayWithIid(
+   unsigned long &index,
+   _In_ IID* iids
+);
+```
+
+### Parameters
+
+*index*<br/>
+A zero-based index that indicates the starting array element for this operation. When this operation completes, *index* is incremented by 1.
+
+*iids*<br/>
+An array of type IID.
+
+### Remarks
+
+Internal helper function.
+
+## <a name="iidcount"></a>Implements::IidCount
+
+Holds the number of implemented interface IDs.
+
+```cpp
+static const unsigned long IidCount;
+```

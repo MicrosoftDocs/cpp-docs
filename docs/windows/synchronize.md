@@ -44,10 +44,10 @@ The following code provides synchronization for the `UpdateBalance` method of th
 [module(name="SYNC")];
 
 [coclass,
- threading(both),
- vi_progid("MyProject.MyClass"),
- progid("MyProject.MyClass.1"),
- uuid("7a7baa0d-59b8-4576-b754-79d07e1d1cc3")  
+threading(both),
+vi_progid("MyProject.MyClass"),
+progid("MyProject.MyClass.1"),
+uuid("7a7baa0d-59b8-4576-b754-79d07e1d1cc3")  
 ]
 class CMyClass {
    float m_nBalance;

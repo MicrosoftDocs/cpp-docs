@@ -13,16 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # FOPEN_MAX, _SYS_OPEN
-## Syntax  
-  
-```  
-  
-#include <stdio.h>  
-  
-```  
-  
-## Remarks  
- This is the maximum number of files that can be opened simultaneously. `FOPEN_MAX` is the ANSI-compatible name. `_SYS_OPEN` is provided for compatibility with existing code.  
-  
-## See Also  
- [Global Constants](../c-runtime-library/global-constants.md)
+
+## Syntax
+
+```
+
+#include <stdio.h>
+
+```
+
+## Remarks
+
+This is the maximum number of files that can be opened simultaneously. `FOPEN_MAX` is the ANSI-compatible name. `_SYS_OPEN` is provided for compatibility with existing code.
+
+## See Also
+
+[Global Constants](../c-runtime-library/global-constants.md)

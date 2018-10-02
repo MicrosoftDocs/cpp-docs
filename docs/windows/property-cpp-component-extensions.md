@@ -20,15 +20,15 @@ Declares a *property*, which is a member function that behaves and is accessed l
 
 You can declare one of the following types of properties.
 
-*simple property*  
+*simple property*<br/>
 By default, creates a *set accessor* that assigns the property value, a *get accessor* that retrieves the property value, and a compiler-generated private data member that contains the property value.
 
-*property block*  
+*property block*<br/>
 Use this to create user-defined get and/or set accessors. The property is read/write if both the get and set accessors are defined, read-only if only the get accessor is defined, and write-only if only the set accessor is defined.
 
 You must explicitly declare a data member to contain the property value.
 
-*indexed property*  
+*indexed property*<br/>
 A property block that you can use to get and set a property value that is specified by one or more indexes.
 
 You can create an indexed property that has either a user-defined property name or a *default* property name. The name of a default index property is the name of the class in which the property is defined. To declare a default property, specify the **default** keyword instead of a property name.
@@ -58,27 +58,27 @@ property type default[index_list] {
 
 ### Parameters
 
-*type*  
+*type*<br/>
 The data type of the property value, and consequently the property itself.
 
-*property_name*  
+*property_name*<br/>
 The name of the property.
 
-*access-modifier*  
+*access-modifier*<br/>
 An access qualifier. Valid qualifiers are **static** and **virtual**.
 
 The get or set accessors need not agree on the **virtual** qualifier, but they must agree on the **static** qualifier.
 
-*inheritance-modifier*  
+*inheritance-modifier*<br/>
 An inheritance qualifier. Valid qualifiers are **abstract** and **sealed**.
 
-*index_list*  
+*index_list*<br/>
 A comma-delimited list of one or more indexes. Each index consists of an index type, and an optional identifier that can be used in the property method body.
 
-*value*  
+*value*<br/>
 The value to assign to the property in a set operation, or retrieve in a get operation.
 
-*property_body*  
+*property_body*<br/>
 The property method body of the set or get accessor. The *property_body* can use the *index_list* to access the underlying property data member, or as parameters in user-defined processing.
 
 ## Windows Runtime
@@ -110,16 +110,16 @@ modifier property type default[index];
 
 ### Parameters
 
-*modifier*  
+*modifier*<br/>
 A modifier that can be used on either a property declaration or a get/set accessor method. Possible values are **static** and **virtual**.
 
-*type*  
+*type*<br/>
 The type of the value that is represented by the property.
 
-*property_name*  
+*property_name*<br/>
 Parameter(s) for the raise method; must match the signature of the delegate.
 
-*index_list*  
+*index_list*<br/>
 A comma-delimited list of one or more indexes, specified in square brackets (the subscript operator, ([])). For each index, specify a type and optionally an identifier that can be used in the property method body.
 
 ### Remarks

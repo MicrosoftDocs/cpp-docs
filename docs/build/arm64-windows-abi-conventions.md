@@ -164,7 +164,7 @@ For each argument in the list the following rules are applied in turn until the 
 
 11. The NGRN is set to 8.
 
-12. The NSAA is rounded up to the larger of 8 or the Natural Alignment of the argument’s type.. 
+12. The NSAA is rounded up to the larger of 8 or the Natural Alignment of the argument’s type..
 
 13. If the argument is a composite type then the argument is copied to memory at the adjusted NSAA. The NSAA is incremented by the size of the argument. The argument has now been allocated.
 
@@ -180,7 +180,7 @@ Functions that take a variable number of arguments are handled differently than 
 
 2. SIMD and Floating-point Registers are not used.
 
-Effectively this equates to following rules C.12–C.15 to allocate arguments to an imaginary stack, where the first 64 bytes of the stack are loaded into x0-x7, and any remaining stack arguments are placed normally. 
+Effectively this equates to following rules C.12–C.15 to allocate arguments to an imaginary stack, where the first 64 bytes of the stack are loaded into x0-x7, and any remaining stack arguments are placed normally.
 
 ## Return values
 
@@ -222,5 +222,5 @@ Note that the cycle counter here is a true cycle counter, not a wall clock, and 
 
 ## See also
 
-[Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md)  
-[ARM64 exception handling](../build/arm64-exception-handling.md)  
+[Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md)<br/>
+[ARM64 exception handling](../build/arm64-exception-handling.md)

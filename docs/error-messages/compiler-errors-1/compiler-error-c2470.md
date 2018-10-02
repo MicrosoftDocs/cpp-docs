@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2470
-'function' : looks like a function definition, but there is no parameter list; skipping apparent body  
-  
- A function definition is missing its argument list.  
-  
- The following sample generates C2470:  
-  
-```  
-// C2470.cpp  
-int MyFunc {};  // C2470  
-void MyFunc2() {};  //OK  
-  
-int main(){  
-   MyFunc();  
-   MyFunc2();  
-}  
+
+'function' : looks like a function definition, but there is no parameter list; skipping apparent body
+
+A function definition is missing its argument list.
+
+The following sample generates C2470:
+
+```
+// C2470.cpp
+int MyFunc {};  // C2470
+void MyFunc2() {};  //OK
+
+int main(){
+   MyFunc();
+   MyFunc2();
+}
 ```

@@ -21,8 +21,8 @@ As in all addition that involves pointer types, scaling is performed automatical
 
 Similarly, for multidimensional arrays, the address is derived using the following method:
 
-((*array-name*) + (*subscript*1 \* *max*2 \* *max*3 \* ... \* *max*n) + (*subscript*2 \* *max*3 \* ... \* *max*n) + ... + *subscript*n))  
-  
+((*array-name*) + (*subscript*1 \* *max*2 \* *max*3 \* ... \* *max*n) + (*subscript*2 \* *max*3 \* ... \* *max*n) + ... + *subscript*n))
+
 ## See also
 
 [Arrays](../cpp/arrays-cpp.md)<br/>

@@ -13,14 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4235
-nonstandard extension used : 'keyword' keyword not supported on this architecture  
-  
- The compiler does not support the keyword you used.  
-  
- This warning is automatically promoted to an error. If you wish to modify this behavior, use [#pragma warning](../../preprocessor/warning.md). For example, to make C4235 into a level 2 warning, use the following line of code  
-  
-```  
-#pragma warning(2:4235)  
-```  
-  
- in your source code file.
+
+nonstandard extension used : 'keyword' keyword not supported on this architecture
+
+The compiler does not support the keyword you used.
+
+This warning is automatically promoted to an error. If you wish to modify this behavior, use [#pragma warning](../../preprocessor/warning.md). For example, to make C4235 into a level 2 warning, use the following line of code
+
+```
+#pragma warning(2:4235)
+```
+
+in your source code file.

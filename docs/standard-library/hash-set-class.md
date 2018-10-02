@@ -31,13 +31,13 @@ class hash_set
 ### Parameters
 
 *Key*<br/>
- The element data type to be stored in the hash_set.
+The element data type to be stored in the hash_set.
 
 *Traits*<br/>
- The type which includes two function objects, one of class compare that is a binary predicate able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type `size_t`. This argument is optional, and the `hash_compare<Key, less<Key> >` is the default value.
+The type which includes two function objects, one of class compare that is a binary predicate able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type `size_t`. This argument is optional, and the `hash_compare<Key, less<Key> >` is the default value.
 
 *Allocator*<br/>
- The type that represents the stored allocator object that encapsulates details about the hash_set's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<Key>`.
+The type that represents the stored allocator object that encapsulates details about the hash_set's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<Key>`.
 
 ## Remarks
 
@@ -472,7 +472,7 @@ size_type count(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The key of the elements to be matched from the hash_set.
+The key of the elements to be matched from the hash_set.
 
 ### Return Value
 
@@ -939,7 +939,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### Parameters
 
 *key*<br/>
- The argument key to be compared with the sort key of an element from the hash_set being searched.
+The argument key to be compared with the sort key of an element from the hash_set being searched.
 
 ### Return Value
 
@@ -1026,16 +1026,16 @@ size_type erase(const key_type& key);
 ### Parameters
 
 *_Where*<br/>
- Position of the element to be removed from the hash_set.
+Position of the element to be removed from the hash_set.
 
 *first*<br/>
- Position of the first element removed from the hash_set.
+Position of the first element removed from the hash_set.
 
 *last*<br/>
- Position just beyond the last element removed from the hash_set.
+Position just beyond the last element removed from the hash_set.
 
 *key*<br/>
- The key of the elements to be removed from the hash_set.
+The key of the elements to be removed from the hash_set.
 
 ### Return Value
 
@@ -1144,7 +1144,7 @@ const_iterator find(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The argument key to be matched by the sort key of an element from the hash_set being searched.
+The argument key to be matched by the sort key of an element from the hash_set being searched.
 
 ### Return Value
 
@@ -1570,7 +1570,7 @@ iterator lower_bound(const Key& key);
 ### Parameters
 
 *key*<br/>
- The argument key to be compared with the sort key of an element from the hash_set being searched.
+The argument key to be compared with the sort key of an element from the hash_set being searched.
 
 ### Return Value
 
@@ -2060,7 +2060,7 @@ void swap(hash_set& right);
 ### Parameters
 
 *right*<br/>
- The argument hash_set providing the elements to be swapped with the target hash_set.
+The argument hash_set providing the elements to be swapped with the target hash_set.
 
 ### Remarks
 
@@ -2136,7 +2136,7 @@ iterator upper_bound(const Key& key);
 ### Parameters
 
 *key*<br/>
- The argument key to be compared with the sort key of an element from the hash_set being searched.
+The argument key to be compared with the sort key of an element from the hash_set being searched.
 
 ### Return Value
 

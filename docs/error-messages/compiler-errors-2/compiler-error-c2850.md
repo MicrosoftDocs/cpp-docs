@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2850
-'construct' : only allowed at file scope; may not be in a nested construct  
-  
- Constructs, such as some pragmas, can only appear at global scope.  
-  
- The following sample generates C2850:  
-  
-```  
-// C2850.cpp  
-// compile with: /c /Yc  
-// try the following line instead  
-// #pragma hdrstop  
-namespace X {  
-   #pragma hdrstop   // C2850  
-};  
+
+'construct' : only allowed at file scope; may not be in a nested construct
+
+Constructs, such as some pragmas, can only appear at global scope.
+
+The following sample generates C2850:
+
+```
+// C2850.cpp
+// compile with: /c /Yc
+// try the following line instead
+// #pragma hdrstop
+namespace X {
+   #pragma hdrstop   // C2850
+};
 ```

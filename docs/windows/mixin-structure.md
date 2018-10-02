@@ -30,13 +30,13 @@ struct MixIn;
 
 ### Parameters
 
-*Derived*  
+*Derived*<br/>
 A type derived from the [Implements](../windows/implements-structure.md) structure.
 
-*MixInType*  
+*MixInType*<br/>
 A base type.
 
-*hasImplements*  
+*hasImplements*<br/>
 **true** if *MixInType* is derived from the current implementation the base type; **false** otherwise.
 
 ## Remarks

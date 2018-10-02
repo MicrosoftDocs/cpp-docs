@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2238
-unexpected token(s) preceding 'token'  
-  
- An incorrect token was found.  
-  
- The following sample generates C2238:  
-  
-```  
-// C2238.cpp  
-// compile with: /c  
-class v {  
-virtual: int vvv;   // C2238  
-};  
+
+unexpected token(s) preceding 'token'
+
+An incorrect token was found.
+
+The following sample generates C2238:
+
+```
+// C2238.cpp
+// compile with: /c
+class v {
+virtual: int vvv;   // C2238
+};
 ```

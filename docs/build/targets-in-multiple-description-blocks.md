@@ -12,16 +12,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Targets in Multiple Description Blocks
-To update a target in more than one description block using different commands, specify two consecutive colons (::) between targets and dependents.  
-  
-```  
-target.lib :: one.asm two.asm three.asm  
-    ml one.asm two.asm three.asm  
-    lib target one.obj two.obj three.obj  
-target.lib :: four.c five.c  
-    cl /c four.c five.c  
-    lib target four.obj five.obj  
-```  
-  
-## See Also  
- [Targets](../build/targets.md)
+
+To update a target in more than one description block using different commands, specify two consecutive colons (::) between targets and dependents.
+
+```
+target.lib :: one.asm two.asm three.asm
+    ml one.asm two.asm three.asm
+    lib target one.obj two.obj three.obj
+target.lib :: four.c five.c
+    cl /c four.c five.c
+    lib target four.obj five.obj
+```
+
+## See Also
+
+[Targets](../build/targets.md)

@@ -20,8 +20,7 @@ Manages a list of memory blocks.
 
 ```cpp
 template <std::size_t Sz, class Max>
-class freelist
- : public Max
+class freelist : public Max
 ```
 
 ### Parameters

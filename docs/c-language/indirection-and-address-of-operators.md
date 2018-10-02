@@ -31,7 +31,6 @@ The unary address-of operator (**&**) gives the address of its operand. The oper
 
 If the operand is the result of a unary __&#42;__ operator, neither operator is evaluated and the result is as if both were omitted. The result is not an lvalue, and the constraints on the operators still apply. If the operand is the result of a __&#91;&#93;__ operator, neither the __&__ operator nor the unary __&#42;__ implied by the __&#91;&#93;__ operator is evaluated. The result has the same effect as removing the __&__ operator and changing the __&#91;&#93;__ operator to a __+__ operator. Otherwise, the result is a pointer to the object or function designated by the operand.
 
-
 ## Examples
 
 The following examples use these common declarations:
@@ -44,7 +43,7 @@ double d;
 
 This statement uses the address-of operator (**&**) to take the address of the sixth element of the array `a`. The result is stored in the pointer variable `pa`:
 
-```C  
+```C
 pa = &a[5];
 ```
 
@@ -68,11 +67,11 @@ int roundup( void );     /* Function declaration */
 int  *proundup  = roundup;
 int  *pround  = &roundup;
 assert( pround == proundup );
-```  
+```
 
 Once the function `roundup` is declared, two pointers to `roundup` are declared and initialized. The first pointer, `proundup`, is initialized using only the name of the function, while the second, `pround`, uses the address-of operator in the initialization. The initializations are equivalent.
 
 ## See also
 
-[Indirection Operator: &#42;](../cpp/indirection-operator-star.md)  
-[Address-of Operator: &](../cpp/address-of-operator-amp.md)  
+[Indirection Operator: &#42;](../cpp/indirection-operator-star.md)<br/>
+[Address-of Operator: &](../cpp/address-of-operator-amp.md)

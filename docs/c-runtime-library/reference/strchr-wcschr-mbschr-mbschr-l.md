@@ -16,6 +16,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # strchr, wcschr, _mbschr, _mbschr_l
+
 Finds a character in a string, by using the current locale or a specified LC_CTYPE conversion-state category.
 
 > [!IMPORTANT]

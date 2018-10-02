@@ -13,45 +13,50 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # operation_timed_out Class
-This class describes an exception thrown when an operation has timed out.  
-  
-## Syntax  
-  
+
+This class describes an exception thrown when an operation has timed out.
+
+## Syntax
+
 ```
 class operation_timed_out : public std::exception;
-```  
-  
-## Members  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[operation_timed_out](#ctor)|Overloaded. Constructs an `operation_timed_out` object.|  
-  
-## Inheritance Hierarchy  
- `exception`  
-  
- `operation_timed_out`  
-  
-## Requirements  
- **Header:** concrt.h  
-  
- **Namespace:** concurrency  
-  
-##  <a name="ctor"></a> operation_timed_out 
+```
 
- Constructs an `operation_timed_out` object.  
-  
+## Members
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[operation_timed_out](#ctor)|Overloaded. Constructs an `operation_timed_out` object.|
+
+## Inheritance Hierarchy
+
+`exception`
+
+`operation_timed_out`
+
+## Requirements
+
+**Header:** concrt.h
+
+**Namespace:** concurrency
+
+##  <a name="ctor"></a> operation_timed_out
+
+Constructs an `operation_timed_out` object.
+
 ```
 explicit _CRTIMP operation_timed_out(_In_z_ const char* _Message) throw();
 
 operation_timed_out() throw();
-```  
-  
-### Parameters  
- `_Message`  
- A descriptive message of the error.  
-  
-## See Also  
- [concurrency Namespace](concurrency-namespace.md)
+```
+
+### Parameters
+
+*_Message*<br/>
+A descriptive message of the error.
+
+## See Also
+
+[concurrency Namespace](concurrency-namespace.md)

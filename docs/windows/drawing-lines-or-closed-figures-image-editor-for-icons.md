@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["closed figures, drawing", "lines [C++], painting", "lines [C++], drawing", "Image editor [C++], drawing lines", "shapes, drawing"]
+helpviewer_keywords: ["Image editor [C++], drawing lines", "shapes, drawing"]
 ms.assetid: 7edd86db-77b1-451f-8001-bbfed9c6304f
 author: "mikeblome"
 ms.author: "mblome"
@@ -51,7 +51,7 @@ None
 
 ## See Also
 
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)  
-[Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)  
-[Image Editor for Icons](../windows/image-editor-for-icons.md)  
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+[Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
+[Image Editor for Icons](../windows/image-editor-for-icons.md)<br/>
 [Working with Color](../windows/working-with-color-image-editor-for-icons.md)

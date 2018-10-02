@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1089
-Cannot truncate filetype file: 'file': message  
-  
- The compiler cannot shrink a file to zero length.
+
+Cannot truncate filetype file: 'file': message
+
+The compiler cannot shrink a file to zero length.

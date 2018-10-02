@@ -41,21 +41,21 @@ We use the generic prefix "ID_" for command IDs. Command IDs are >= 0x8000. The 
 
 In the resources of your application, a command ID can appears in several places:
 
--   In one STRINGTABLE resource that has the same ID as the message-line prompt.
+- In one STRINGTABLE resource that has the same ID as the message-line prompt.
 
--   In possibly many MENU resources that are attached to menu items that invoke the same command.
+- In possibly many MENU resources that are attached to menu items that invoke the same command.
 
--   (ADVANCED) in a dialog button for a GOSUB command.
+- (ADVANCED) in a dialog button for a GOSUB command.
 
 In the source code of your application, a command ID can appears in several places:
 
--   In your RESOURCE.H (or other main symbol header file) to define application-specific command IDs.
+- In your RESOURCE.H (or other main symbol header file) to define application-specific command IDs.
 
--   PERHAPS In an ID array used to create a toolbar.
+- PERHAPS In an ID array used to create a toolbar.
 
--   In an ON_COMMAND macro.
+- In an ON_COMMAND macro.
 
--   PERHAPS In an ON_UPDATE_COMMAND_UI macro.
+- PERHAPS In an ON_UPDATE_COMMAND_UI macro.
 
 Currently, the only implementation in MFC that requires command IDs be >= 0x8000 is the implementation of GOSUB dialogs/commands.
 
@@ -112,7 +112,7 @@ void CMyApp::OnUpdateNewSheet(CCmdUI* pCmdUI)
         // CCmdUI::Enable is a no-op for this case, so we
         // must do what it would have done.
         pCmdUI->m_pMenu->EnableMenuItem(pCmdUI->m_nIndex,
-            MF_BYPOSITION | 
+            MF_BYPOSITION |
             (bEnable  MF_ENABLED : (MF_DISABLED | MF_GRAYED)));
 
         return;
@@ -202,5 +202,5 @@ For **CSplitterWnd** the scroll bar styles apply to the special shared scroll ba
 
 ## See Also
 
-[Technical Notes by Number](../mfc/technical-notes-by-number.md)  
-[Technical Notes by Category](../mfc/technical-notes-by-category.md)  
+[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
+[Technical Notes by Category](../mfc/technical-notes-by-category.md)

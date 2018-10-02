@@ -13,20 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3634
-'function' : cannot define an abstract method of a managed or WinRTclass  
-  
- An abstract method can be declared in a managed or WinRT class, but it cannot be defined.  
-  
-## Example  
-The following sample generates C3634:  
-  
-```  
-// C3634.cpp  
-// compile with: /clr  
-ref class C {  
-   virtual void f() = 0;  
-};  
-  
-void C::f() {   // C3634 - don't define managed class' pure virtual method  
-}  
-```  
+
+'function' : cannot define an abstract method of a managed or WinRTclass
+
+An abstract method can be declared in a managed or WinRT class, but it cannot be defined.
+
+## Example
+
+The following sample generates C3634:
+
+```
+// C3634.cpp
+// compile with: /clr
+ref class C {
+   virtual void f() = 0;
+};
+
+void C::f() {   // C3634 - don't define managed class' pure virtual method
+}
+```

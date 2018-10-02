@@ -14,19 +14,20 @@ ms.workload: ["cplusplus"]
 ---
 # try-except Statement
 
-**Microsoft Specific**  
-The **try-except** statement is a Microsoft extension to the C and C++ languages that supports structured exception handling.  
+**Microsoft Specific**
 
-## Syntax  
-  
-> **__try**   
-> {  
->    // guarded code  
-> }  
-> **__except** ( *expression* )  
-> {  
->    // exception handler code  
-> }  
+The **try-except** statement is a Microsoft extension to the C and C++ languages that supports structured exception handling.
+
+## Syntax
+
+> **__try** 
+> {
+>    // guarded code
+> }
+> **__except** ( *expression* )
+> {
+>    // exception handler code
+> }
 
 ## Remarks
 
@@ -43,7 +44,7 @@ The compound statement after the **__try** clause is the body or guarded section
 
 1. The guarded section is executed.
 
-2. If no exception occurs during execution of the guarded section, execution continues at the statement after the **__except** clause.  
+2. If no exception occurs during execution of the guarded section, execution continues at the statement after the **__except** clause.
 
 3. If an exception occurs during execution of the guarded section or in any routine the guarded section calls, the **__except** *expression* (called the *filter* expression) is evaluated and the value determines how the exception is handled. There are three values:
 
@@ -57,10 +58,10 @@ Because the **__except** expression is evaluated as a C expression, it is limite
 
 Each application can have its own exception handler.
 
-It is not valid to jump into a **__try** statement, but valid to jump out of one. The exception handler is not called if a process is terminated in the middle of executing a **try-except** statement.  
-  
-For more information, see Knowledge Base article Q315937 : HOW TO: Trap Stack Overflow in a Visual C++ Application.  
-  
+It is not valid to jump into a **__try** statement, but valid to jump out of one. The exception handler is not called if a process is terminated in the middle of executing a **try-except** statement.
+
+For more information, see Knowledge Base article Q315937 : HOW TO: Trap Stack Overflow in a Visual C++ Application.
+
 ## The __leave Keyword
 
 The **__leave** keyword is valid only within the guarded section of a **try-except** statement, and its effect is to jump to the end of the guarded section. Execution continues at the first statement after the exception handler.
@@ -75,12 +76,12 @@ Structured exception handling provides two intrinsic functions that are availabl
 
 The intrinsic function `GetExceptionInformation` returns a pointer to a structure containing additional information about the exception. Through this pointer, you can access the machine state that existed at the time of a hardware exception. The structure is as follows:
 
-```cpp  
+```cpp
 typedef struct _EXCEPTION_POINTERS {
     PEXCEPTION_RECORD ExceptionRecord;
     PCONTEXT ContextRecord;
-} EXCEPTION_POINTERS, *PEXCEPTION_POINTERS; 
-```  
+} EXCEPTION_POINTERS, *PEXCEPTION_POINTERS;
+```
 
 The pointer types `PEXCEPTION_RECORD` and `PCONTEXT` are defined in the include file \<winnt.h>, and `_EXCEPTION_RECORD` and `_CONTEXT` are defined in the include file \<excpt.h>
 
@@ -92,10 +93,10 @@ excpt.h defines some alternate names for these intrinsics:
 
 `GetExceptionCode` is equivalent to `_exception_code`
 
- `GetExceptionInformation` is equivalent to `_exception_info`
+`GetExceptionInformation` is equivalent to `_exception_info`
 
- `AbnormalTermination` is equivalent to `_abnormal_termination`
-  
+`AbnormalTermination` is equivalent to `_abnormal_termination`
+
 ## Example
 
 ```cpp
@@ -145,24 +146,25 @@ int main()
     puts("world");
 }
 ```
-  
-## Output  
-  
-```Output 
-hello  
-in try  
-in try  
-in filter.  
-caught AV as expected.  
-in finally. termination:  
-        abnormal  
-in except  
-world  
-```  
 
-**END Microsoft Specific**  
+## Output
+
+```Output
+hello
+in try
+in try
+in filter.
+caught AV as expected.
+in finally. termination:
+        abnormal
+in except
+world
+```
+
+**END Microsoft Specific**
 
 ## See also
- [Writing an Exception Handler](../cpp/writing-an-exception-handler.md)   
- [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)   
- [Keywords](../cpp/keywords-cpp.md)
+
+[Writing an Exception Handler](../cpp/writing-an-exception-handler.md)<br/>
+[Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)<br/>
+[Keywords](../cpp/keywords-cpp.md)

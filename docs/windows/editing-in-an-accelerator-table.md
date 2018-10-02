@@ -1,5 +1,5 @@
 ---
-title: "Editing in an Accelerator Table | Microsoft Docs"
+title: "Editing in an Accelerator Table (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Editing in an Accelerator Table
+# Editing in an Accelerator Table (C++)
 
 ### To edit in an accelerator table
 
@@ -40,5 +40,5 @@ Win32
 
 ## See Also
 
-[Editing Accelerator Tables](../windows/editing-accelerator-tables.md)  
+[Editing Accelerator Tables](../windows/editing-accelerator-tables.md)<br/>
 [Accelerator Editor](../windows/accelerator-editor.md)

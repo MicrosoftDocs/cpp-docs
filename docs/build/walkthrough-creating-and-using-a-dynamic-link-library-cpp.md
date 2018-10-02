@@ -398,7 +398,7 @@ When you deploy your app, you must also deploy the DLLs it uses. The simplest wa
 
 ## See Also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)  
-[Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)  
-[Walkthrough: Deploying Your Program (C++)](../ide/walkthrough-deploying-your-program-cpp.md)  
+[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)<br/>
+[Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)<br/>
+[Walkthrough: Deploying Your Program (C++)](../ide/walkthrough-deploying-your-program-cpp.md)<br/>
 [Calling DLL Functions from Visual Basic Applications](../build/calling-dll-functions-from-visual-basic-applications.md)

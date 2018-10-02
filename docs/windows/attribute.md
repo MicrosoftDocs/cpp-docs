@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.attribute"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["__typeof keyword", "custom attributes, creating", "attribute attribute", "attributes [C++], custom"]
+helpviewer_keywords: ["__typeof keyword", "custom attributes, creating", "attribute attribute", "attributes [C++/CLI], custom"]
 ms.assetid: 8cb3489f-65c4-44ea-b0aa-3c3c6b15741d
 author: "mikeblome"
 ms.author: "mblome"
@@ -28,13 +28,13 @@ Allows you to create a custom attribute.
 
 ### Parameters
 
-*AllowOn*  
+*AllowOn*<br/>
 Specifies the language elements to which the custom attribute can be applied. Default is `System::AttributeTargets::All` (see [System::AttributeTargets](https://msdn.microsoft.com/library/system.attributetargets.aspx)).
 
-*AllowMultiple*  
+*AllowMultiple*<br/>
 Specifies whether the custom attribute can be applied repeatedly to a construct. Default is FALSE.
 
-*Inherited*  
+*Inherited*<br/>
 Indicates if the attribute is to be inherited by subclasses. The compiler provides no special support for this functionality; it is the job of the attribute consumers (`Reflection`, for example) to respect this information. If *Inherited* is TRUE, the attribute is inherited. If *AllowMultiple* is TRUE, the attribute will accumulate on the derived member; if *AllowMultiple* is FALSE, the attribute will override (or replace) in inheritance. If *Inherited* is FALSE, the attribute will not be inherited. Default is TRUE.
 
 ## Remarks

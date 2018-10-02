@@ -13,45 +13,46 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3044
-'section' : only allowed directly nested under an OpenMP 'sections' directive  
-  
- The compiler found a `section` directive was used incorrectly. For more information, see [sections](../../parallel/openmp/reference/sections-openmp.md).  
-  
- The following sample generates C3044:  
-  
-```  
-// C3044.cpp  
-// compile with: /openmp /c  
-#include "omp.h"  
-int main() {  
-   int n2 = 2, n3 = 3;  
-  
-   #pragma omp parallel  
-   {  
-      ++n2;  
-  
-      #pragma omp sections  
-      {  
-         ++n2;  
-      }  
-  
-      #pragma omp section   // C3044  
-      {  
-         ++n3;  
-      }  
-   }  
-  
-   #pragma omp parallel  
-   {  
-      ++n2;  
-  
-      #pragma omp sections  
-      {  
-         #pragma omp section   // OK  
-         {  
-            ++n3;  
-         }  
-      }  
-   }  
-}  
+
+'section' : only allowed directly nested under an OpenMP 'sections' directive
+
+The compiler found a `section` directive was used incorrectly. For more information, see [sections](../../parallel/openmp/reference/sections-openmp.md).
+
+The following sample generates C3044:
+
+```
+// C3044.cpp
+// compile with: /openmp /c
+#include "omp.h"
+int main() {
+   int n2 = 2, n3 = 3;
+
+   #pragma omp parallel
+   {
+      ++n2;
+
+      #pragma omp sections
+      {
+         ++n2;
+      }
+
+      #pragma omp section   // C3044
+      {
+         ++n3;
+      }
+   }
+
+   #pragma omp parallel
+   {
+      ++n2;
+
+      #pragma omp sections
+      {
+         #pragma omp section   // OK
+         {
+            ++n3;
+         }
+      }
+   }
+}
 ```

@@ -25,6 +25,6 @@ This wizard adds an object to your project that supports COM+ 1.0 services, incl
 
 ## See Also
 
-[Adding a Class](../../ide/adding-a-class-visual-cpp.md)   
+[Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
 [Adding a Method](../../ide/adding-a-method-visual-cpp.md)
 

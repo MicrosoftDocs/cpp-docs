@@ -81,7 +81,7 @@ virtual HRESULT AddCommonRGSReplacements(IRegistrarBase* /* pRegistrar*/) throw(
 
 ### Parameters
 
-*pRegistrar*  
+*pRegistrar*<br/>
 Reserved.
 
 ### Return Value
@@ -104,10 +104,10 @@ HRESULT AddTermFunc(_ATL_TERMFUNC* pFunc, DWORD_PTR dw) throw();
 
 ### Parameters
 
-*pFunc*  
+*pFunc*<br/>
 Pointer to the function to add.
 
-*dw*  
+*dw*<br/>
 User-defined data, passed to the function.
 
 ### Return Value
@@ -148,7 +148,7 @@ virtual HRESULT GetGITPtr(IGlobalInterfaceTable** ppGIT) throw();
 
 ### Parameters
 
-*ppGIT*  
+*ppGIT*<br/>
 Pointer to the variable which will receive the pointer to the Global Interface Table.
 
 ### Return Value
@@ -245,16 +245,16 @@ HRESULT WINAPI UpdateRegistryFromResourceD(
 
 ### Parameters
 
-*lpszRes*  
+*lpszRes*<br/>
 A resource name.
 
-*nResID*  
+*nResID*<br/>
 A resource ID.
 
-*bRegister*  
+*bRegister*<br/>
 TRUE if the object should be registered; FALSE otherwise.
 
-*pMapEntries*  
+*pMapEntries*<br/>
 A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses %MODULE%. To use additional replaceable parameters, see [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Otherwise, use the NULL default value.
 
 ### Return Value
@@ -282,13 +282,13 @@ inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(
 
 ### Parameters
 
-*lpszRes*  
+*lpszRes*<br/>
 A resource name.
 
-*bRegister*  
+*bRegister*<br/>
 Indicates whether the object should be registered.
 
-*pMapEntries*  
+*pMapEntries*<br/>
 A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses %MODULE%. To use additional replaceable parameters, see [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Otherwise, use the NULL default value.
 
 ### Return Value
@@ -317,16 +317,16 @@ HRESULT WINAPI UpdateRegistryFromResourceS(
 
 ### Parameters
 
-*nResID*  
+*nResID*<br/>
 A resource ID.
 
-*lpszRes*  
+*lpszRes*<br/>
 A resource name.
 
-*bRegister*  
+*bRegister*<br/>
 Indicates whether the resource script should be registered.
 
-*pMapEntries*  
+*pMapEntries*<br/>
 A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses %MODULE%. To use additional replaceable parameters, see [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Otherwise, use the NULL default value.
 
 ### Return Value
@@ -339,7 +339,7 @@ Similar to [CAtlModule::UpdateRegistryFromResourceD](#updateregistryfromresource
 
 ## See Also
 
-[_ATL_MODULE](atl-typedefs.md#_atl_module)   
-[Class Overview](../../atl/atl-class-overview.md)   
-[Module Classes](../../atl/atl-module-classes.md)   
+[_ATL_MODULE](atl-typedefs.md#_atl_module)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
+[Module Classes](../../atl/atl-module-classes.md)<br/>
 [Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md)  

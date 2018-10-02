@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.image.editing"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["cursors, hot spots", "hot spots"]
+helpviewer_keywords: ["cursors [C++], hot spots", "hot spots"]
 ms.assetid: a610388a-45c8-43cd-98a2-fd31f29238b8
 author: "mikeblome"
 ms.author: "mblome"
@@ -35,5 +35,5 @@ None
 
 ## See Also
 
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)  
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)

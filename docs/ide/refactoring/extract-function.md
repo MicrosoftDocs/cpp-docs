@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 # Extract Function
 **What:** Lets you turn a fragment of code into its own function.
 
-**When:** You have a fragment of existing code in some function that needs to be called from another function.  
+**When:** You have a fragment of existing code in some function that needs to be called from another function.
 
 **Why:** You could copy/paste that code, but that would lead to duplication.  A better solution is to refactor that fragment into its own function which can be called freely by any other function.
 
@@ -32,7 +32,7 @@ ms.workload: ["cplusplus"]
      * Right-click the code, select the **Quick Actions and Refactorings** menu and select **Extract Function (Experimental)** from the context menu.
      * Click the ![Lightbulb](images/bulb.png) icon which appears in the left margin and select **Extract Function (Experimental)** from the context menu.
 
-1. In the **Extract Function/Method (Experimental)** window, enter the new function name, select where you want the code to be placed, and click the **OK** button.  
+1. In the **Extract Function/Method (Experimental)** window, enter the new function name, select where you want the code to be placed, and click the **OK** button.
 
    ![Extract function function](images/extractfunction_dialog.png)
 

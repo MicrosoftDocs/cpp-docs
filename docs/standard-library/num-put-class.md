@@ -26,11 +26,11 @@ class num_put : public locale::facet;
 
 ### Parameters
 
-*CharType*
- The type used within a program to encode characters in a locale.
+*CharType*<br/>
+The type used within a program to encode characters in a locale.
 
-*OutputIterator*
- The type of iterator to which the numeric put functions write their output.
+*OutputIterator*<br/>
+The type of iterator to which the numeric put functions write their output.
 
 ## Remarks
 
@@ -136,17 +136,17 @@ virtual iter_type do_put(
 
 ### Parameters
 
-*next*
- An iterator addressing the first element of the inserted string.
+*next*<br/>
+An iterator addressing the first element of the inserted string.
 
-*_Iosbase*
- Specified the stream which contains locale with the numpunct facet used to punctuate the output and flags for formatting the output.
+*_Iosbase*<br/>
+Specified the stream which contains locale with the numpunct facet used to punctuate the output and flags for formatting the output.
 
-*_Fill*
- A character that is used for spacing.
+*_Fill*<br/>
+A character that is used for spacing.
 
-*val*
- The number or Boolean type that is to be output.
+*val*<br/>
+The number or Boolean type that is to be output.
 
 ### Return Value
 
@@ -305,8 +305,8 @@ explicit num_put(size_t _Refs = 0);
 
 ### Parameters
 
-*_Refs*
- Integer value used to specify the type of memory management for the object.
+*_Refs*<br/>
+Integer value used to specify the type of memory management for the object.
 
 ### Remarks
 
@@ -385,17 +385,17 @@ iter_type put(
 
 ### Parameters
 
-*dest*
- An iterator addressing the first element of the inserted string.
+*dest*<br/>
+An iterator addressing the first element of the inserted string.
 
-*_Iosbase*
- Specified the stream that contains locale with the numpunct facet used to punctuate the output and flags for formatting the output.
+*_Iosbase*<br/>
+Specified the stream that contains locale with the numpunct facet used to punctuate the output and flags for formatting the output.
 
-*_Fill*
- A character that is used for spacing.
+*_Fill*<br/>
+A character that is used for spacing.
 
-*val*
- The number or Boolean type that is to be output.
+*val*<br/>
+The number or Boolean type that is to be output.
 
 ### Return Value
 

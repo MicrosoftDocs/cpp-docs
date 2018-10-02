@@ -1,18 +1,18 @@
 ---
-title: "String Editor | Microsoft Docs"
+title: "String Editor (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.string.F1"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["String editor", "string tables", "string tables, String editor", "string editing", "string editing, string tables", "resource editors, String editor", "strings [C++], editing"]
+helpviewer_keywords: ["String editor", "string tables", "string tables [C++], String editor", "string editing", "string editing, string tables", "resource editors [C++], String editor", "strings [C++], editing"]
 ms.assetid: f71ab8de-3068-4e29-8e28-5a33d18dd416
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# String Editor
+# String Editor (C++)
 
 A string table is a Windows resource that contains a list of IDs, values, and captions for all the strings of your application. For example, the status-bar prompts are located in the string table.
 
@@ -45,7 +45,7 @@ Win32
 
 ## See Also
 
-[Resource Editors](../windows/resource-editors.md)  
-[Strings](https://msdn.microsoft.com/library/windows/desktop/ms646979.aspx)  
+[Resource Editors](../windows/resource-editors.md)<br/>
+[Strings](https://msdn.microsoft.com/library/windows/desktop/ms646979.aspx)<br/>
 [About Strings](/windows/desktop/menurc/about-strings)
 

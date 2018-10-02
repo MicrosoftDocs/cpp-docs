@@ -22,7 +22,7 @@ Specifies a response file for MIDL command line options
 
 ## Arguments
 
-*file*  
+*file*<br/>
 The name of the file that contains [MIDL command line options](/windows/desktop/Midl/general-midl-command-line-syntax).
 
 ## Remarks
@@ -45,9 +45,9 @@ The file should contain one MIDL command-line option per line.
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)   
-[Linker Options](../../build/reference/linker-options.md)   
-[/IDLOUT (Name MIDL Output Files)](../../build/reference/idlout-name-midl-output-files.md)   
-[/IGNOREIDL (Don't Process Attributes into MIDL)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)   
-[/TLBOUT (Name .TLB File)](../../build/reference/tlbout-name-dot-tlb-file.md)   
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)<br/>
+[/IDLOUT (Name MIDL Output Files)](../../build/reference/idlout-name-midl-output-files.md)<br/>
+[/IGNOREIDL (Don't Process Attributes into MIDL)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)<br/>
+[/TLBOUT (Name .TLB File)](../../build/reference/tlbout-name-dot-tlb-file.md)<br/>
 [Building an Attributed Program](../../windows/building-an-attributed-program.md)

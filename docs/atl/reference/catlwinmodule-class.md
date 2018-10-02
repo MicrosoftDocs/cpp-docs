@@ -65,10 +65,10 @@ void AddCreateWndData(_AtlCreateWndData* pData, void* pObject);
 
 ### Parameters
 
-*pData*  
+*pData*<br/>
 Pointer to the `_AtlCreateWndData` structure to be initialized and added to the current module.
 
-*pObject*  
+*pObject*<br/>
 Pointer to an object's **this** pointer.
 
 ### Remarks
@@ -113,6 +113,6 @@ Returns a pointer to the `_AtlCreateWndData` structure previously added with [CA
 
 ## See Also
 
-[_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module)   
-[Class Overview](../../atl/atl-class-overview.md)   
+[_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [Module Classes](../../atl/atl-module-classes.md)

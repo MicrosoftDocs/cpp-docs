@@ -31,18 +31,18 @@ class map;
 ### Parameters
 
 *Key*<br/>
- The key data type to be stored in the map.
+The key data type to be stored in the map.
 
 *Type*<br/>
- The element data type to be stored in the map.
+The element data type to be stored in the map.
 
 *Traits*<br/>
- The type that provides a function object that can compare two element values as sort keys to determine their relative order in the map. This argument is optional and the binary predicate `less<Key>` is the default value.
+The type that provides a function object that can compare two element values as sort keys to determine their relative order in the map. This argument is optional and the binary predicate `less<Key>` is the default value.
 
 In C++14 you can enable heterogeneous lookup by specifying the std::less<> predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
 
 *Allocator*<br/>
- The type that represents the stored allocator object that encapsulates details about the map's allocation and deallocation of memory. This argument is optional and the default value is `allocator<pair<const Key, Type> >`.
+The type that represents the stored allocator object that encapsulates details about the map's allocation and deallocation of memory. This argument is optional and the default value is `allocator<pair<const Key, Type> >`.
 
 ## Remarks
 
@@ -484,7 +484,7 @@ size_type count(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The key value of the elements to be matched from the map.
+The key value of the elements to be matched from the map.
 
 ### Return Value
 
@@ -948,7 +948,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### Parameters
 
 *key*<br/>
- The argument key value to be compared with the sort key of an element from the map being searched.
+The argument key value to be compared with the sort key of an element from the map being searched.
 
 ### Return Value
 
@@ -1035,16 +1035,16 @@ size_type erase(
 ### Parameters
 
 *Where*<br/>
- Position of the element to be removed.
+Position of the element to be removed.
 
 *First*<br/>
- Position of the first element to be removed.
+Position of the first element to be removed.
 
 *Last*<br/>
- Position just beyond the last element to be removed.
+Position just beyond the last element to be removed.
 
 *Key*<br/>
- The key value of the elements to be removed.
+The key value of the elements to be removed.
 
 ### Return Value
 
@@ -1147,7 +1147,7 @@ const_iterator find(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The key value to be matched by the sort key of an element from the map being searched.
+The key value to be matched by the sort key of an element from the map being searched.
 
 ### Return Value
 
@@ -1609,7 +1609,7 @@ const_iterator lower_bound(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The argument key value to be compared with the sort key of an element from the map being searched.
+The argument key value to be compared with the sort key of an element from the map being searched.
 
 ### Return Value
 
@@ -2399,7 +2399,7 @@ void swap(
 ### Parameters
 
 *right*<br/>
- The argument map providing the elements to be swapped with the target map.
+The argument map providing the elements to be swapped with the target map.
 
 ### Remarks
 
@@ -2470,7 +2470,7 @@ const_iterator upper_bound(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The argument key value to be compared with the sort key value of an element from the map being searched.
+The argument key value to be compared with the sort key value of an element from the map being searched.
 
 ### Return Value
 

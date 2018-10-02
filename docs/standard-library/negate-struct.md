@@ -32,16 +32,16 @@ struct negate<void>
   template <class Type>
   auto operator()(Type&& Left) const`
     -> decltype(-std::forward<Type>(Left));
- };
+};
 ```
 
 ### Parameters
 
-*Type*
- Any type that supports an `operator-` that takes an operand of the specified or inferred type.
+*Type*<br/>
+Any type that supports an `operator-` that takes an operand of the specified or inferred type.
 
-*Left*
- The operand to be negated. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *Type*.
+*Left*<br/>
+The operand to be negated. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *Type*.
 
 ## Return Value
 
@@ -83,10 +83,10 @@ int main( )
       cout << *Iter2 << " ";
    cout << ")" << endl;
 }
-\* Output:
+/* Output:
 The vector v1 = ( -10 -5 0 5 10 15 20 25 )
 The negated elements of the vector = ( 10 5 0 -5 -10 -15 -20 -25 )
-*\
+*/
 ```
 
 ## Requirements

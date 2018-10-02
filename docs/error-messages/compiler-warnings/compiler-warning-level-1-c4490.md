@@ -13,26 +13,28 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4490
-'override' : incorrect use of override specifier; 'function' does not match a base ref class method  
-  
- An override specifier was used incorrectly. For example, you do not override an interface function, you implement it.  
-  
- For more information, see [Override Specifiers](../../windows/override-specifiers-cpp-component-extensions.md).  
-  
-## Example  
- The following sample generates C4490.  
-  
-```  
-// C4490.cpp  
-// compile with: /clr /c /W1  
-  
-interface struct IFace {  
-   void Test();  
-};  
-  
-ref struct Class1 : public IFace {  
-   virtual void Test() override {}   // C4490  
-   // try the following line instead  
-   // virtual void Test() {}  
-};  
+
+'override' : incorrect use of override specifier; 'function' does not match a base ref class method
+
+An override specifier was used incorrectly. For example, you do not override an interface function, you implement it.
+
+For more information, see [Override Specifiers](../../windows/override-specifiers-cpp-component-extensions.md).
+
+## Example
+
+The following sample generates C4490.
+
+```
+// C4490.cpp
+// compile with: /clr /c /W1
+
+interface struct IFace {
+   void Test();
+};
+
+ref struct Class1 : public IFace {
+   virtual void Test() override {}   // C4490
+   // try the following line instead
+   // virtual void Test() {}
+};
 ```

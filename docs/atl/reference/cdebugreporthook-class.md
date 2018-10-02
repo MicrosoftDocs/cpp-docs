@@ -66,13 +66,13 @@ CDebugReportHook(
 
 ### Parameters
 
-*szMachineName*  
+*szMachineName*<br/>
 The name of the machine to which the debug output should be sent. Defaults to the local machine.
 
-*szPipeName*  
+*szPipeName*<br/>
 The name of the named pipe to which the debug output should be sent.
 
-*dwTimeout*  
+*dwTimeout*<br/>
 The time in milliseconds that this class will wait for the named pipe to become available.
 
 ##  <a name="dtor"></a>  CDebugReportHook::~CDebugReportHook
@@ -96,13 +96,13 @@ static int __cdecl CDebugReportHookProc(
 
 ### Parameters
 
-*reportType*  
+*reportType*<br/>
 The type of the report (_CRT_WARN, _CRT_ERROR, or _CRT_ASSERT).
 
-*message*  
+*message*<br/>
 The message string.
 
-*returnValue*  
+*returnValue*<br/>
 The value that should be returned by [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md).
 
 ### Return Value
@@ -151,10 +151,10 @@ BOOL SetPipeName(
 
 ### Parameters
 
-*szMachineName*  
+*szMachineName*<br/>
 The name of the machine to which the debug output should be sent.
 
-*szPipeName*  
+*szPipeName*<br/>
 The name of the named pipe to which the debug output should be sent.
 
 ### Return Value
@@ -171,7 +171,7 @@ void SetTimeout(DWORD dwTimeout);
 
 ### Parameters
 
-*dwTimeout*  
+*dwTimeout*<br/>
 The time in milliseconds that this class will wait for the named pipe to become available.
 
 ## See Also

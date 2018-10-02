@@ -13,323 +13,343 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CGlobalUtils Class
-For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
-  
-## Syntax  
-  
-```  
-class CGlobalUtils  
-```  
-  
-## Members  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[CGlobalUtils::AdjustRectToWorkArea](#adjustrecttoworkarea)||  
-|[CGlobalUtils::CalcExpectedDockedRect](#calcexpecteddockedrect)||  
-|[CGlobalUtils::CanBeAttached](#canbeattached)||  
-|[CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd](#canpanebeinfloatingmultipaneframewnd)||  
-|[CGlobalUtils::CheckAlignment](#checkalignment)||  
-|[CGlobalUtils::CyFromString](#cyfromstring)||  
-|[CGlobalUtils::DecimalFromString](#decimalfromstring)||  
-|[CGlobalUtils::FlipRect](#fliprect)||  
-|[CGlobalUtils::ForceAdjustLayout](#forceadjustlayout)||  
-|[CGlobalUtils::GetDockingManager](#getdockingmanager)||  
-|[CGlobalUtils::GetOppositeAlignment](#getoppositealignment)||  
-|[CGlobalUtils::GetPaneAndAlignFromPoint](#getpaneandalignfrompoint)||  
-|[CGlobalUtils::GetWndIcon](#getwndicon)||  
-|[CGlobalUtils::SetNewParent](#setnewparent)||  
-|[CGlobalUtils::StringFromCy](#stringfromcy)||  
-|[CGlobalUtils::StringFromDecimal](#stringfromdecimal)||  
-  
-## Remarks  
-  
-## Inheritance Hierarchy  
- [CGlobalUtils](../../mfc/reference/cglobalutils-class.md)  
-  
-## Requirements  
- **Header:** afxglobalutils.h  
-  
-##  <a name="adjustrecttoworkarea"></a>  CGlobalUtils::AdjustRectToWorkArea  
-  
-```  
+
+For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
+
+## Syntax
+
+```
+class CGlobalUtils
+```
+
+## Members
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[CGlobalUtils::AdjustRectToWorkArea](#adjustrecttoworkarea)||
+|[CGlobalUtils::CalcExpectedDockedRect](#calcexpecteddockedrect)||
+|[CGlobalUtils::CanBeAttached](#canbeattached)||
+|[CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd](#canpanebeinfloatingmultipaneframewnd)||
+|[CGlobalUtils::CheckAlignment](#checkalignment)||
+|[CGlobalUtils::CyFromString](#cyfromstring)||
+|[CGlobalUtils::DecimalFromString](#decimalfromstring)||
+|[CGlobalUtils::FlipRect](#fliprect)||
+|[CGlobalUtils::ForceAdjustLayout](#forceadjustlayout)||
+|[CGlobalUtils::GetDockingManager](#getdockingmanager)||
+|[CGlobalUtils::GetOppositeAlignment](#getoppositealignment)||
+|[CGlobalUtils::GetPaneAndAlignFromPoint](#getpaneandalignfrompoint)||
+|[CGlobalUtils::GetWndIcon](#getwndicon)||
+|[CGlobalUtils::SetNewParent](#setnewparent)||
+|[CGlobalUtils::StringFromCy](#stringfromcy)||
+|[CGlobalUtils::StringFromDecimal](#stringfromdecimal)||
+
+## Remarks
+
+## Inheritance Hierarchy
+
+[CGlobalUtils](../../mfc/reference/cglobalutils-class.md)
+
+## Requirements
+
+**Header:** afxglobalutils.h
+
+##  <a name="adjustrecttoworkarea"></a>  CGlobalUtils::AdjustRectToWorkArea
+
+```
 void AdjustRectToworkArea(
-    CRect& rect,  
+    CRect& rect,
     CRect* pRectDelta = NULL);
-```  
-  
-### Parameters  
- [in, out] *rect*  
- [in] *pRectDelta*  
-  
-### Remarks  
-  
-##  <a name="calcexpecteddockedrect"></a>  CGlobalUtils::CalcExpectedDockedRect  
+```
 
-  
-```  
+### Parameters
+
+*rect*<br/>
+[in, out] [in] *pRectDelta*
+
+### Remarks
+
+##  <a name="calcexpecteddockedrect"></a>  CGlobalUtils::CalcExpectedDockedRect
+
+
+```
 void CalcExpectedDockedRect(
-    CPaneContainerManager& barContainerManager,  
-    CWnd* pWndTodock,  
-    CPoint ptMouse,  
-    CRect& rectResult,  
-    BOOL& bDrawTab,  
+    CPaneContainerManager& barContainerManager,
+    CWnd* pWndTodock,
+    CPoint ptMouse,
+    CRect& rectResult,
+    BOOL& bDrawTab,
     CDockablePane** ppTargetBar);
-```  
-  
-### Parameters  
- [in] *barContainerManager*  
- [in] *pWndTodock*  
- [in] *ptMouse*  
- [out] *rectResult*  
- [out] *bDrawTab*  
- [out] *ppTargetBar*  
-  
-### Remarks  
-  
-##  <a name="canbeattached"></a>  CGlobalUtils::CanBeAttached  
+```
 
-  
-```  
-BOOL CanBeAttached(CWnd* pWnd) const;  
-```  
-  
-### Parameters  
- [in] *pWnd*  
-  
-### Return Value  
-  
-### Remarks  
-  
-##  <a name="canpanebeinfloatingmultipaneframewnd"></a>  CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd  
+### Parameters
 
-  
-```  
-BOOL CanPaneBeInFloatingMultiPaneFrameWnd(CWnd* pWnd) const;  
-```  
-  
-### Parameters  
- [in] *pWnd*  
-  
-### Return Value  
-  
-### Remarks  
-  
-##  <a name="checkalignment"></a>  CGlobalUtils::CheckAlignment  
+*barContainerManager*<br/>
+[in] [in] *pWndTodock*
+*ptMouse*<br/>
+[in] [out] *rectResult*
+*bDrawTab*<br/>
+[out] [out] *ppTargetBar*
 
-  
-```  
+### Remarks
+
+##  <a name="canbeattached"></a>  CGlobalUtils::CanBeAttached
+
+
+```
+BOOL CanBeAttached(CWnd* pWnd) const;
+```
+
+### Parameters
+
+[in] *pWnd*
+
+### Return Value
+
+### Remarks
+
+##  <a name="canpanebeinfloatingmultipaneframewnd"></a>  CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd
+
+
+```
+BOOL CanPaneBeInFloatingMultiPaneFrameWnd(CWnd* pWnd) const;
+```
+
+### Parameters
+
+[in] *pWnd*
+
+### Return Value
+
+### Remarks
+
+##  <a name="checkalignment"></a>  CGlobalUtils::CheckAlignment
+
+
+```
 BOOL CheckAlignment(
-    CPoint point,  
-    CBasePane* pBar,  
-    int nSensitivity,  
-    const CDockingManager* pDockManager,  
-    BOOL bOuterEdge,  
-    DWORD& dwAlignment,  
-    DWORD dwEnabledDockBars = CBRS_ALIGN_ANY,  
-    LPCRECT lpRectBounds = NULL) const;  
-```  
-  
-### Parameters  
- [in] *point*  
- [in] *pBar*  
- [in] *nSensitivity*  
- [in] *pDockManager*  
- [in] *bOuterEdge*  
- [out] *dwAlignment*  
- [in] *dwEnabledDockBars*  
- [in] *lpRectBounds*  
-  
-### Return Value  
-  
-### Remarks  
-  
-##  <a name="cyfromstring"></a>  CGlobalUtils::CyFromString  
+    CPoint point,
+    CBasePane* pBar,
+    int nSensitivity,
+    const CDockingManager* pDockManager,
+    BOOL bOuterEdge,
+    DWORD& dwAlignment,
+    DWORD dwEnabledDockBars = CBRS_ALIGN_ANY,
+    LPCRECT lpRectBounds = NULL) const;
+```
 
-  
-```  
+### Parameters
+
+*point*<br/>
+[in] [in] *pBar*
+*nSensitivity*<br/>
+[in] [in] *pDockManager*
+*bOuterEdge*<br/>
+[in] [out] *dwAlignment*
+*dwEnabledDockBars*<br/>
+[in] [in] *lpRectBounds*
+
+### Return Value
+
+### Remarks
+
+##  <a name="cyfromstring"></a>  CGlobalUtils::CyFromString
+
+
+```
 BOOL CyFromString(
-    CY& cy,  
+    CY& cy,
     LPCTSTR psz);
-```  
-  
-### Parameters  
- [out] *cy*  
- [in] *psz*  
-  
-### Return Value  
-  
-### Remarks  
-  
-##  <a name="decimalfromstring"></a>  CGlobalUtils::DecimalFromString  
+```
 
-  
-```  
+### Parameters
+
+*cy*<br/>
+[out] [in] *psz*
+
+### Return Value
+
+### Remarks
+
+##  <a name="decimalfromstring"></a>  CGlobalUtils::DecimalFromString
+
+
+```
 BOOL DecimalFromString(
-    DECIMAL& decimal,  
+    DECIMAL& decimal,
     LPCTSTR psz);
-```  
-  
-### Parameters  
- [out] *decimal*  
- [in] *psz*  
-  
-### Return Value  
-  
-### Remarks  
-  
-##  <a name="fliprect"></a>  CGlobalUtils::FlipRect  
+```
 
-  
-```  
+### Parameters
+
+*decimal*<br/>
+[out] [in] *psz*
+
+### Return Value
+
+### Remarks
+
+##  <a name="fliprect"></a>  CGlobalUtils::FlipRect
+
+
+```
 void FlipRect(
-    CRect& rect,  
+    CRect& rect,
     int nDegrees);
-```  
-  
-### Parameters  
- [in, out] *rect*  
- [in] *nDegrees*  
-  
-### Remarks  
-  
-##  <a name="forceadjustlayout"></a>  CGlobalUtils::ForceAdjustLayout  
+```
 
-  
-```  
+### Parameters
+
+*rect*<br/>
+[in, out] [in] *nDegrees*
+
+### Remarks
+
+##  <a name="forceadjustlayout"></a>  CGlobalUtils::ForceAdjustLayout
+
+
+```
 void ForceAdjustLayout(
-    CDockingManager* pDockManager,  
-    BOOL bForce = FALSE,  
+    CDockingManager* pDockManager,
+    BOOL bForce = FALSE,
     BOOL bForceInvisible = FALSE);
-```  
-  
-### Parameters  
- [in, out] *pDockManager*  
- [in] *bForce*  
- [in] *bForceInvisible*  
-  
-### Remarks  
-  
-##  <a name="getdockingmanager"></a>  CGlobalUtils::GetDockingManager  
+```
 
-  
-```  
+### Parameters
+
+*pDockManager*<br/>
+[in, out] [in] *bForce*
+[in] *bForceInvisible*
+
+### Remarks
+
+##  <a name="getdockingmanager"></a>  CGlobalUtils::GetDockingManager
+
+
+```
 CDockingManager* GetDockingManager(CWnd* pWnd);
-```  
-  
-### Parameters  
- [in] *pWnd*  
-  
-### Return Value  
-  
-### Remarks  
-  
-##  <a name="getoppositealignment"></a>  CGlobalUtils::GetOppositeAlignment  
+```
 
-  
-```  
+### Parameters
+
+[in] *pWnd*
+
+### Return Value
+
+### Remarks
+
+##  <a name="getoppositealignment"></a>  CGlobalUtils::GetOppositeAlignment
+
+
+```
 DWORD GetOppositeAlignment(DWORD dwAlign);
-```  
-  
-### Parameters  
- [in] *dwAlign*  
-  
-### Return Value  
-  
-### Remarks  
-  
-##  <a name="getpaneandalignfrompoint"></a>  CGlobalUtils::GetPaneAndAlignFromPoint  
+```
 
-  
-```  
+### Parameters
+
+[in] *dwAlign*
+
+### Return Value
+
+### Remarks
+
+##  <a name="getpaneandalignfrompoint"></a>  CGlobalUtils::GetPaneAndAlignFromPoint
+
+
+```
 BOOL GetPaneAndAlignFromPoint(
-    CPaneContainerManager& barContainerManager,  
-    CPoint pt,  
-    CDockablePane** ppTargetControlBar,  
-    DWORD& dwAlignment,  
-    BOOL& bTabArea,  
+    CPaneContainerManager& barContainerManager,
+    CPoint pt,
+    CDockablePane** ppTargetControlBar,
+    DWORD& dwAlignment,
+    BOOL& bTabArea,
     BOOL& bCaption);
-```  
-  
-### Parameters  
- [in] *barContainerManager*  
- [in] *pt*  
- [out] *ppTargetControlBar*  
- [out] *dwAlignment*  
- [out] *bTabArea*  
- [out] *bCaption*  
-  
-### Return Value  
-  
-### Remarks  
-  
-##  <a name="getwndicon"></a>  CGlobalUtils::GetWndIcon  
+```
 
-  
-```  
+### Parameters
+
+*barContainerManager*<br/>
+[in] [in] *pt*
+*ppTargetControlBar*<br/>
+[out] [out] *dwAlignment*
+*bTabArea*<br/>
+[out] [out] *bCaption*
+
+### Return Value
+
+### Remarks
+
+##  <a name="getwndicon"></a>  CGlobalUtils::GetWndIcon
+
+
+```
 HICON GetWndIcon(CWnd* pWnd);
-```  
-  
-### Parameters  
- [in] *pWnd*  
-  
-### Return Value  
-  
-### Remarks  
-  
-##  <a name="setnewparent"></a>  CGlobalUtils::SetNewParent  
+```
 
-  
-```  
+### Parameters
+
+[in] *pWnd*
+
+### Return Value
+
+### Remarks
+
+##  <a name="setnewparent"></a>  CGlobalUtils::SetNewParent
+
+
+```
 void SetNewParent(
-    CObList& lstControlBars,  
-    CWnd* pNewParent,  
+    CObList& lstControlBars,
+    CWnd* pNewParent,
     BOOL bCheckVisibility = TRUE);
-```  
-  
-### Parameters  
- [in] *lstControlBars*  
- [in] *pNewParent*  
- [in] *bCheckVisibility*  
-  
-### Remarks  
-  
-##  <a name="stringfromcy"></a>  CGlobalUtils::StringFromCy  
+```
 
-  
-```  
+### Parameters
+
+*lstControlBars*<br/>
+[in] [in] *pNewParent*
+[in] *bCheckVisibility*
+
+### Remarks
+
+##  <a name="stringfromcy"></a>  CGlobalUtils::StringFromCy
+
+
+```
 BOOL StringFromCy(
-    CString& str,  
+    CString& str,
     CY& cy);
-```  
-  
-### Parameters  
- [out] *str*  
- [in] *cy*  
-  
-### Return Value  
-  
-### Remarks  
-  
-##  <a name="stringfromdecimal"></a>  CGlobalUtils::StringFromDecimal  
+```
 
-  
-```  
+### Parameters
+
+*str*<br/>
+[out] [in] *cy*
+
+### Return Value
+
+### Remarks
+
+##  <a name="stringfromdecimal"></a>  CGlobalUtils::StringFromDecimal
+
+
+```
 BOOL StringFromDecimal(
-    CString& str,  
+    CString& str,
     DECIMAL& decimal);
-```  
-  
-### Parameters  
- [out] *str*  
- [in] *decimal*  
-  
-### Return Value  
-  
-### Remarks  
-  
-## See Also  
- [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
- [Classes](../../mfc/reference/mfc-classes.md)
+```
+
+### Parameters
+
+*str*<br/>
+[out] [in] *decimal*
+
+### Return Value
+
+### Remarks
+
+## See Also
+
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
+[Classes](../../mfc/reference/mfc-classes.md)

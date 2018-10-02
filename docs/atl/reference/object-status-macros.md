@@ -33,7 +33,7 @@ DECLARE_OLEMISC_STATUS( miscstatus )
 
 ### Parameters
 
-*miscstatus*  
+*miscstatus*<br/>
 All applicable OLEMISC flags.
 
 ### Remarks

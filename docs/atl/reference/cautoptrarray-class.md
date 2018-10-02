@@ -30,7 +30,7 @@ class CAutoPtrArray : public CAtlArray<
 
 #### Parameters
 
-`E`  
+*E*<br/>
 The pointer type.
 
 ## Members
@@ -71,7 +71,7 @@ Initializes the smart pointer array.
 
 ## See Also
 
-[CAtlArray Class](../../atl/reference/catlarray-class.md)   
-[CAutoPtrElementTraits Class](../../atl/reference/cautoptrelementtraits-class.md)   
-[CAutoPtrList Class](../../atl/reference/cautoptrlist-class.md)   
+[CAtlArray Class](../../atl/reference/catlarray-class.md)<br/>
+[CAutoPtrElementTraits Class](../../atl/reference/cautoptrelementtraits-class.md)<br/>
+[CAutoPtrList Class](../../atl/reference/cautoptrlist-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.colorswindow"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Image editor [C++], Colors Palette", "Colors Palette", "colors [C++], image", "Image editor [C++], Colors window", "Screen-Color Selector", "Colors Palette, Image editor", "Colors window", "colors [C++], inverting", "colors [C++]", "Color Indicator"]
+helpviewer_keywords: ["Image editor [C++], Colors Palette", "Colors Palette, Image editor", "colors [C++], inverting", "colors [C++]", "Color Indicator"]
 ms.assetid: 1d9b6c16-bf1d-4488-a19b-5d6fe601846a
 author: "mikeblome"
 ms.author: "mblome"
@@ -34,8 +34,8 @@ None
 
 ## See Also
 
-[Displaying or Hiding the Colors Window](../windows/displaying-or-hiding-the-colors-window-image-editor-for-icons.md)  
-[Creating Transparent or Inverse Regions in Device Images](../windows/creating-transparent-or-inverse-regions-in-device-images.md)  
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)  
-[Custom Color Selector Dialog Box](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md)  
+[Displaying or Hiding the Colors Window](../windows/displaying-or-hiding-the-colors-window-image-editor-for-icons.md)<br/>
+[Creating Transparent or Inverse Regions in Device Images](../windows/creating-transparent-or-inverse-regions-in-device-images.md)<br/>
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+[Custom Color Selector Dialog Box](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md)<br/>
 [Image Editor for Icons](../windows/image-editor-for-icons.md)

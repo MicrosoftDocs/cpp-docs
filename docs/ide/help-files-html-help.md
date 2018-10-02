@@ -12,17 +12,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Help Files (HTML Help)
-The following files are created when you add the HTML Help type of Help support to your application by selecting the **Context-sensitive help** check box and then selecting **HTML Help format** in the [Advanced Features](../mfc/reference/advanced-features-mfc-application-wizard.md) page of the MFC Application Wizard.  
-  
-|File name|Directory location|Solution Explorer location|Description|  
-|---------------|------------------------|--------------------------------|-----------------|  
-|*Projname*.hhp|*Projname*\hlp|HTML Help files|The help project file. It contains the data needed to compile the help files into an .hxs file or a .chm file.|  
-|*Projname*.hhk|*Projname*\hlp|HTML Help files|Contains an index of the help topics.|  
-|*Projname*.hhc|*Projname*\hlp|HTML Help files|The contents of the help project.|  
-|Makehtmlhelp.bat|*Projname*|Source Files|Used by the system to build the Help project when the project is compiled.|  
-|Afxcore.htm|*Projname*\hlp|HTML Help Topics|Contains the standard help topics for standard MFC commands and screen objects. Add your own help topics to this file.|  
-|Afxprint.htm|*Projname*\hlp|HTML Help Topics|Contains the help topics for the printing commands.|  
-|*.jpg; \*.gif|*Projname*\hlp\Images|Resource Files|Contain images for the different generated help file topics.|  
-  
-## See Also  
- [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)
+
+The following files are created when you add the HTML Help type of Help support to your application by selecting the **Context-sensitive help** check box and then selecting **HTML Help format** in the [Advanced Features](../mfc/reference/advanced-features-mfc-application-wizard.md) page of the MFC Application Wizard.
+
+|File name|Directory location|Solution Explorer location|Description|
+|---------------|------------------------|--------------------------------|-----------------|
+|*Projname*.hhp|*Projname*\hlp|HTML Help files|The help project file. It contains the data needed to compile the help files into an .hxs file or a .chm file.|
+|*Projname*.hhk|*Projname*\hlp|HTML Help files|Contains an index of the help topics.|
+|*Projname*.hhc|*Projname*\hlp|HTML Help files|The contents of the help project.|
+|Makehtmlhelp.bat|*Projname*|Source Files|Used by the system to build the Help project when the project is compiled.|
+|Afxcore.htm|*Projname*\hlp|HTML Help Topics|Contains the standard help topics for standard MFC commands and screen objects. Add your own help topics to this file.|
+|Afxprint.htm|*Projname*\hlp|HTML Help Topics|Contains the help topics for the printing commands.|
+|*.jpg; \*.gif|*Projname*\hlp\Images|Resource Files|Contain images for the different generated help file topics.|
+
+## See Also
+
+[File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)

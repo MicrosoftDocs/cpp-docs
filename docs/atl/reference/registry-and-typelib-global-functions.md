@@ -50,14 +50,14 @@ Use this function to determine whether the application redirects registry access
 
 ### Syntax
 
-```  
-ATLINLINE ATLAPI AtlGetPerUserRegistration(bool* pEnabled);  
+```
+ATLINLINE ATLAPI AtlGetPerUserRegistration(bool* pEnabled);
 ```
 
 ### Parameters
 
-[out] *pEnabled*  
-TRUE indicates that the registry information is directed to the **HKCU** node; FALSE indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** (**HKCR**).
+*pEnabled*<br/>
+[out] TRUE indicates that the registry information is directed to the **HKCU** node; FALSE indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** (**HKCR**).
 
 ### Return Value
 
@@ -79,22 +79,22 @@ Creates the specified registry key.
 
 ### Syntax
 
-```  
-LONG AFXAPI AfxRegCreateKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTransactionManager* pTM = NULL);  
+```
+LONG AFXAPI AfxRegCreateKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTransactionManager* pTM = NULL);
 ```
 
 ### Parameters
 
-*hKey*  
+*hKey*<br/>
 A handle to an open registry key.
 
-*lpSubKey*  
+*lpSubKey*<br/>
 The name of a key that this function opens or creates.
 
-*phkResult*  
+*phkResult*<br/>
 A pointer to a variable that receives a handle to the opened or created key.
 
-*pTM*  
+*pTM*<br/>
 Pointer to a `CAtlTransactionManager` object.
 
 ### Return Value
@@ -111,19 +111,19 @@ Deletes the specified registry key.
 
 ### Syntax
 
-```  
-LONG AFXAPI AfxRegDeleteKey(HKEY hKey, LPCTSTR lpSubKey, CAtlTransactionManager* pTM = NULL);  
+```
+LONG AFXAPI AfxRegDeleteKey(HKEY hKey, LPCTSTR lpSubKey, CAtlTransactionManager* pTM = NULL);
 ```
 
 ### Parameters
 
-*hKey*  
+*hKey*<br/>
 A handle to an open registry key.
 
-*lpSubKey*  
+*lpSubKey*<br/>
 The name of the key to be deleted.
 
-*pTM*  
+*pTM*<br/>
 Pointer to a `CAtlTransactionManager` object.
 
 ### Return Value
@@ -140,19 +140,19 @@ A helper to register a preview handler.
 
 ### Syntax
 
-```  
-BOOL AFXAPI AfxRegisterPreviewHandler(LPCTSTR lpszCLSID, LPCTSTR lpszShortTypeName, LPCTSTR lpszFilterExt);  
+```
+BOOL AFXAPI AfxRegisterPreviewHandler(LPCTSTR lpszCLSID, LPCTSTR lpszShortTypeName, LPCTSTR lpszFilterExt);
 ```
 
 ### Parameters
 
-*lpszCLSID*  
+*lpszCLSID*<br/>
 Specifies the CLSID of handler.
 
-*lpszShortTypeName*  
+*lpszShortTypeName*<br/>
 Specifies the ProgID of handler.
 
-*lpszFilterExt*  
+*lpszFilterExt*<br/>
 Specifies the file extension registered with this handler.
 
 ### Requirements
@@ -169,10 +169,10 @@ ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
 
 ### Parameters
 
-*hInstTypeLib*  
+*hInstTypeLib*<br/>
 The handle to the module instance.
 
-*lpszIndex*  
+*lpszIndex*<br/>
 String in the format "\\\N", where N is the integer index of the type library resource. Can be NULL if no index is required.
 
 ### Return Value
@@ -181,7 +181,8 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This helper function is utilized by [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver) and [CAtlComModule::RegisterTypeLib](../../atl/reference/catlcommodule-class.md#registertypelib).  
+This helper function is utilized by [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver) and [CAtlComModule::RegisterTypeLib](../../atl/reference/catlcommodule-class.md#registertypelib).
+
 ### Requirements
 
 **Header:** atlbase.h
@@ -192,22 +193,22 @@ Opens the specified registry key.
 
 ### Syntax
 
-```  
-LONG AFXAPI AfxRegOpenKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTransactionManager* pTM = NULL);  
+```
+LONG AFXAPI AfxRegOpenKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTransactionManager* pTM = NULL);
 ```
 
 ### Parameters
 
-*hKey*  
+*hKey*<br/>
 A handle to an open registry key.
 
-*lpSubKey*  
+*lpSubKey*<br/>
 The name of a key that this function opens or creates.
 
-*phkResult*  
+*phkResult*<br/>
 A pointer to a variable that receives a handle to the created key.
 
-*pTM*  
+*pTM*<br/>
 Pointer to a `CAtlTransactionManager` object.
 
 ### Return Value
@@ -224,28 +225,28 @@ Opens the specified registry key.
 
 ### Syntax
 
-```  
-LONG AFXAPI AfxRegOpenKeyEx(HKEY hKey, LPCTSTR lpSubKey, DWORD ulOptions, REGSAM samDesired, PHKEY phkResult, CAtlTransactionManager* pTM = NULL);  
+```
+LONG AFXAPI AfxRegOpenKeyEx(HKEY hKey, LPCTSTR lpSubKey, DWORD ulOptions, REGSAM samDesired, PHKEY phkResult, CAtlTransactionManager* pTM = NULL);
 ```
 
 ### Parameters
 
-*hKey*  
+*hKey*<br/>
 A handle to an open registry key.
 
-*lpSubKey*  
+*lpSubKey*<br/>
 The name of a key that this function opens or creates.
 
-*ulOptions*  
+*ulOptions*<br/>
 This parameter is reserved and must be zero.
 
-*samDesired*  
+*samDesired*<br/>
 A mask that specifies the desired access rights to the key.
 
-*phkResult*  
+*phkResult*<br/>
 A pointer to a variable that receives a handle to the opened key.
 
-*pTM*  
+*pTM*<br/>
 Pointer to a `CAtlTransactionManager` object.
 
 ### Return Value
@@ -262,13 +263,13 @@ A helper to unregister a preview handler.
 
 ### Syntax
 
-```  
-BOOL AFXAPI AfxUnRegisterPreviewHandler(LPCTSTR lpszCLSID);  
+```
+BOOL AFXAPI AfxUnRegisterPreviewHandler(LPCTSTR lpszCLSID);
 ```
 
 ### Parameters
 
-*lpszCLSID*  
+*lpszCLSID*<br/>
 Specifies the CLSID of the handler to be unregistered.
 
 ### Requirements
@@ -281,14 +282,14 @@ Sets whether the application redirects registry access to the **HKEY_CURRENT_USE
 
 ### Syntax
 
-```  
-ATLINLINE ATLAPI AtlSetPerUserRegistration(bool bEnable);  
+```
+ATLINLINE ATLAPI AtlSetPerUserRegistration(bool bEnable);
 ```
 
 ### Parameters
 
-[in] *bEnable*  
-TRUE indicates that the registry information is directed to the **HKCU** node; FALSE indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** (**HKCR**).
+*bEnable*<br/>
+[in] TRUE indicates that the registry information is directed to the **HKCU** node; FALSE indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** (**HKCR**).
 
 ### Return Value
 
@@ -299,6 +300,7 @@ S_OK if the method is successful, otherwise the HRESULT error code if an error o
 Registry redirection is not enabled by default. If you enable this option, registry access is redirected to **HKEY_CURRENT_USER\Software\Classes**.
 
 The redirection is not global. Only the MFC and ATL frameworks are affected by this registry redirection.  
+
 ### Requirements
 
 **Header:** atlbase.h  
@@ -317,10 +319,10 @@ ATLAPI AtlUnRegisterTypeLib(
 
 ### Parameters
 
-*hInstTypeLib*  
+*hInstTypeLib*<br/>
 The handle to the module instance.
 
-*lpszIndex*  
+*lpszIndex*<br/>
 String in the format "\\\N", where N is the integer index of the type library resource. Can be NULL if no index is required.
 
 ### Return Value
@@ -330,6 +332,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 ### Remarks
 
 This helper function is utilized by [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) and [AtlComModuleUnregisterServer](#atlcommoduleunregisterserver).  
+
 ### Requirements
 
 **Header:** atlbase.h
@@ -350,16 +353,16 @@ ATLINLINE ATLAPI AtlLoadTypeLib(
 
 ### Parameters
 
-*hInstTypeLib*  
+*hInstTypeLib*<br/>
 Handle to the module associated with the type library.
 
-*lpszIndex*  
+*lpszIndex*<br/>
 String in the format "\\\N", where N is the integer index of the type library resource. Can be NULL if no index is required.
 
-*pbstrPath*  
+*pbstrPath*<br/>
 On successful return, contains the full path of the module associated with the type library.
 
-*ppTypeLib*  
+*ppTypeLib*<br/>
 On successful return, contains a pointer to a pointer to the loaded type library.
 
 ### Return Value
@@ -393,13 +396,13 @@ HRESULT RegistryDataExchange(
 
 ### Parameters
 
-*pT*  
+*pT*<br/>
 A pointer to the current object.
 
-*rdxOp*  
+*rdxOp*<br/>
 An enum value that indicates which operation the function should perform. See the table in the Remarks section for the allowed values.
 
-*pItem*  
+*pItem*<br/>
 Pointer to the data that is to be read from, or written to, the registry. The data can also represent a key to be deleted from the registry. The default value is NULL.
 
 ### Return Value
@@ -424,5 +427,5 @@ The possible enum values that indicate the operation the function should perform
 
 ## See Also
 
-[Functions](atl-functions.md)   
+[Functions](atl-functions.md)<br/>
 [Registry Data Exchange Macros](registry-data-exchange-macros.md)

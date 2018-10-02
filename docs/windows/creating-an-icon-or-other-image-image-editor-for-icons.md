@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.bitmap"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["bitmaps [C++]", "images [C++], creating", "resource toolbars", "resources [Visual Studio], creating images", "bitmaps [C++], creating", "graphics [C++], creating", "Image editor [C++], creating images"]
+helpviewer_keywords: ["bitmaps [C++]", "images [C++], creating", "resources [C++], creating images", "bitmaps [C++], creating", "graphics [C++], creating", "Image editor [C++], creating images"]
 ms.assetid: 66db3fb2-cfc1-48a2-9bdd-53f61eb7ee30
 author: "mikeblome"
 ms.author: "mblome"
@@ -50,8 +50,8 @@ None
 
 ## See Also
 
-[Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)  
-[Converting Bitmaps to Toolbars](../windows/converting-bitmaps-to-toolbars.md)  
-[Creating New Toolbars](../windows/creating-new-toolbars.md)  
-[Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)  
+[Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)<br/>
+[Converting Bitmaps to Toolbars](../windows/converting-bitmaps-to-toolbars.md)<br/>
+[Creating New Toolbars](../windows/creating-new-toolbars.md)<br/>
+[Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
 [Image Editor for Icons](../windows/image-editor-for-icons.md)

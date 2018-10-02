@@ -26,10 +26,10 @@ class basic_filebuf : public basic_streambuf<Elem, Tr>
 ### Parameters
 
 *Elem*<br/>
- The basic element of the file buffer.
+The basic element of the file buffer.
 
 *Tr*<br/>
- The traits of the basic element of the file buffer (usually `char_traits`< `Elem`>).
+The traits of the basic element of the file buffer (usually `char_traits`< `Elem`>).
 
 ## Remarks
 
@@ -368,13 +368,13 @@ basic_filebuf<Elem, Tr> *open(
 ### Parameters
 
 *_Filename*<br/>
- The name of the file to open.
+The name of the file to open.
 
 *_Mode*<br/>
- One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
 *_Prot*<br/>
- The default file opening protection, equivalent to the *shflag* parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
+The default file opening protection, equivalent to the *shflag* parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### Return Value
 
@@ -417,7 +417,7 @@ basic_filebuf& operator=(basic_filebuf&& right);
 ### Parameters
 
 *right*<br/>
- An rvalue reference to a [basic_filebuf](../standard-library/basic-filebuf-class.md) object.
+An rvalue reference to a [basic_filebuf](../standard-library/basic-filebuf-class.md) object.
 
 ### Return Value
 
@@ -438,7 +438,7 @@ virtual int_type overflow(int_type _Meta = traits_type::eof);
 ### Parameters
 
 *_Meta*<br/>
- The character to insert into the buffer or `traits_type::eof`.
+The character to insert into the buffer or `traits_type::eof`.
 
 ### Return Value
 
@@ -465,7 +465,7 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof);
 ### Parameters
 
 *_Meta*<br/>
- The character to insert into the buffer, or `traits_type::eof`.
+The character to insert into the buffer, or `traits_type::eof`.
 
 ### Return Value
 
@@ -502,13 +502,13 @@ virtual pos_type seekoff(off_type _Off,
 ### Parameters
 
 *_Off*<br/>
- The position to seek for relative to *_Way*.
+The position to seek for relative to *_Way*.
 
 *_Way*<br/>
- The starting point for offset operations. See [seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
+The starting point for offset operations. See [seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
 
 *_Which*<br/>
- Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
+Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
 
@@ -533,10 +533,10 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in 
 ### Parameters
 
 *_Sp*<br/>
- The position to seek for.
+The position to seek for.
 
 *_Which*<br/>
- Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
+Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
 
@@ -563,10 +563,10 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
 ### Parameters
 
 *_Buffer*<br/>
- Pointer to a buffer.
+Pointer to a buffer.
 
 *count*<br/>
- Size of the buffer.
+Size of the buffer.
 
 ### Return Value
 
@@ -587,7 +587,7 @@ void swap(basic_filebuf& right);
 ### Parameters
 
 *right*<br/>
- An `lvalue` reference to another `basic_filebuf`.
+An `lvalue` reference to another `basic_filebuf`.
 
 ## <a name="sync"></a>  basic_filebuf::sync
 

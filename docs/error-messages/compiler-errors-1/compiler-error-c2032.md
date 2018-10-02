@@ -13,26 +13,27 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2032
-'identifier' : function cannot be member of struct/union 'structorunion'  
-  
- The structure or union has a member function, which is allowed in C++ but not in C. To resolve the error, either compile as a C++ program or remove the member function.  
-  
- The following sample generates C2032:  
-  
-```  
-// C2032.c  
-struct z {  
-   int i;  
-   void func();   // C2032  
-};  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2032b.c  
-// compile with: /c  
-struct z {  
-   int i;  
-};  
+
+'identifier' : function cannot be member of struct/union 'structorunion'
+
+The structure or union has a member function, which is allowed in C++ but not in C. To resolve the error, either compile as a C++ program or remove the member function.
+
+The following sample generates C2032:
+
+```
+// C2032.c
+struct z {
+   int i;
+   void func();   // C2032
+};
+```
+
+Possible resolution:
+
+```
+// C2032b.c
+// compile with: /c
+struct z {
+   int i;
+};
 ```

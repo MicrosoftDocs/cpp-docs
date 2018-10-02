@@ -13,101 +13,106 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot::operator=
-Assignment operator.  
-  
-## Syntax  
-  
-```  
-auto_gcroot<_element_type> & operator=(  
-   _element_type _right  
-);  
-auto_gcroot<_element_type> & operator=(  
-   auto_gcroot<_element_type> & _right  
-);  
-template<typename _other_type>  
-auto_gcroot<_element_type> & operator=(  
-   auto_gcroot<_other_type> & _right  
-);  
-```  
-  
-#### Parameters  
- `_right`  
- The object or `auto_gcroot` to be assigned to the current `auto_gcroot`.  
-  
-## Return Value  
- The current `auto_gcroot`, now owning `_right`.  
-  
-## Example  
-  
-```  
-// msl_auto_gcroot_operator_equals.cpp  
-// compile with: /clr  
-#include <msclr\auto_gcroot.h>  
-  
-using namespace System;  
-using namespace msclr;  
-  
-ref class ClassA {  
-protected:  
-   String^ m_s;     
-public:  
-   ClassA(String^ s) : m_s(s) {  
-      Console::WriteLine( "in ClassA constructor: " + m_s );  
-   }  
-   ~ClassA() {  
-      Console::WriteLine( "in ClassA destructor: " + m_s );  
-   }  
-  
-   virtual void PrintHello() {  
-      Console::WriteLine( "Hello from {0} A!", m_s );  
-   }  
-};  
-  
-ref class ClassB : ClassA {  
-public:     
-   ClassB( String^ s ) : ClassA( s ) {}  
-   virtual void PrintHello() new {  
-      Console::WriteLine( "Hello from {0} B!", m_s );  
-   }  
-};  
-  
-int main()  
-{  
-   auto_gcroot<ClassA^> a;  
-   auto_gcroot<ClassA^> a2(gcnew ClassA( "first" ) );  
-   a = a2; // assign from same type  
-   a->PrintHello();  
-  
-   ClassA^ ha = gcnew ClassA( "second" );  
-   a = ha; // assign from raw handle  
-  
-   auto_gcroot<ClassB^> b(gcnew ClassB( "third" ) );     
-   b->PrintHello();  
-   a = b; // assign from derived type     
-   a->PrintHello();  
-  
-   Console::WriteLine("done");  
-}  
-```  
-  
-```Output  
-in ClassA constructor: first  
-Hello from first A!  
-in ClassA constructor: second  
-in ClassA destructor: first  
-in ClassA constructor: third  
-Hello from third B!  
-in ClassA destructor: second  
-Hello from third A!  
-done  
-in ClassA destructor: third  
-```  
-  
-## Requirements  
- **Header file** \<msclr\auto_gcroot.h>  
-  
- **Namespace** msclr  
-  
-## See Also  
- [auto_gcroot Members](../dotnet/auto-gcroot-members.md)   
- [auto_gcroot::attach](../dotnet/auto-gcroot-attach.md)
+
+Assignment operator.
+
+## Syntax
+
+```
+auto_gcroot<_element_type> & operator=(
+   _element_type _right
+);
+auto_gcroot<_element_type> & operator=(
+   auto_gcroot<_element_type> & _right
+);
+template<typename _other_type>
+auto_gcroot<_element_type> & operator=(
+   auto_gcroot<_other_type> & _right
+);
+```
+
+#### Parameters
+
+*_right*<br/>
+The object or `auto_gcroot` to be assigned to the current `auto_gcroot`.
+
+## Return Value
+
+The current `auto_gcroot`, now owning `_right`.
+
+## Example
+
+```cpp
+// msl_auto_gcroot_operator_equals.cpp
+// compile with: /clr
+#include <msclr\auto_gcroot.h>
+
+using namespace System;
+using namespace msclr;
+
+ref class ClassA {
+protected:
+   String^ m_s;
+public:
+   ClassA(String^ s) : m_s(s) {
+      Console::WriteLine( "in ClassA constructor: " + m_s );
+   }
+   ~ClassA() {
+      Console::WriteLine( "in ClassA destructor: " + m_s );
+   }
+
+   virtual void PrintHello() {
+      Console::WriteLine( "Hello from {0} A!", m_s );
+   }
+};
+
+ref class ClassB : ClassA {
+public:
+   ClassB( String^ s ) : ClassA( s ) {}
+   virtual void PrintHello() new {
+      Console::WriteLine( "Hello from {0} B!", m_s );
+   }
+};
+
+int main()
+{
+   auto_gcroot<ClassA^> a;
+   auto_gcroot<ClassA^> a2(gcnew ClassA( "first" ) );
+   a = a2; // assign from same type
+   a->PrintHello();
+
+   ClassA^ ha = gcnew ClassA( "second" );
+   a = ha; // assign from raw handle
+
+   auto_gcroot<ClassB^> b(gcnew ClassB( "third" ) );
+   b->PrintHello();
+   a = b; // assign from derived type
+   a->PrintHello();
+
+   Console::WriteLine("done");
+}
+```
+
+```Output
+in ClassA constructor: first
+Hello from first A!
+in ClassA constructor: second
+in ClassA destructor: first
+in ClassA constructor: third
+Hello from third B!
+in ClassA destructor: second
+Hello from third A!
+done
+in ClassA destructor: third
+```
+
+## Requirements
+
+**Header file** \<msclr\auto_gcroot.h>
+
+**Namespace** msclr
+
+## See Also
+
+[auto_gcroot Members](../dotnet/auto-gcroot-members.md)<br/>
+[auto_gcroot::attach](../dotnet/auto-gcroot-attach.md)

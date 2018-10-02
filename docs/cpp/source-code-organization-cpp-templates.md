@@ -2,10 +2,10 @@
 title: "Source code organization (C++ Templates) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: 
+ms.technology:
   - "cpp-language"
 ms.topic: "language-reference"
-dev_langs: 
+dev_langs:
   - "C++"
 ms.assetid: 50569c5d-0219-4966-9bcf-a8689074ad1d
 author: "mikeblome"
@@ -46,7 +46,7 @@ public:
     T& operator[](int i)
    {
        return arr[i];
-   } 
+   }
 };
 #endif
 ```

@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2118
-negative subscript  
-  
- The value defining the array size is larger than the maximum array size or smaller than zero.  
-  
- The following sample generates C2118:  
-  
-```  
-// C2118.cpp  
-int main() {  
-   int array1[-1];   // C2118  
-   int array2[3];   // OK  
-}  
+
+negative subscript
+
+The value defining the array size is larger than the maximum array size or smaller than zero.
+
+The following sample generates C2118:
+
+```
+// C2118.cpp
+int main() {
+   int array1[-1];   // C2118
+   int array2[3];   // OK
+}
 ```

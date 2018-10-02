@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2419
-mod by zero in 'context'  
-  
- The parameter to the right of the `MOD` operator is zero in this context.
+
+mod by zero in 'context'
+
+The parameter to the right of the `MOD` operator is zero in this context.

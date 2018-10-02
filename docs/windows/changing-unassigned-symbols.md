@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.symbol.changing.unassigned"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["symbols, unassigned", "Change Symbol dialog box", "unassigned symbols"]
+helpviewer_keywords: ["symbols [C++], unassigned", "Change Symbol dialog box [C++]", "unassigned symbols"]
 ms.assetid: b6abee4a-3c24-4697-a166-fe6a86cad35f
 author: "mikeblome"
 ms.author: "mblome"
@@ -33,7 +33,7 @@ Win32
 
 ## See Also
 
-[Viewing Resource Symbols](../windows/viewing-resource-symbols.md)  
-[Symbol Name Restrictions](../windows/symbol-name-restrictions.md)  
-[Symbol Value Restrictions](../windows/symbol-value-restrictions.md)  
+[Viewing Resource Symbols](../windows/viewing-resource-symbols.md)<br/>
+[Symbol Name Restrictions](../windows/symbol-name-restrictions.md)<br/>
+[Symbol Value Restrictions](../windows/symbol-value-restrictions.md)<br/>
 [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)

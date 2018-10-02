@@ -48,17 +48,17 @@ template <class T, class... Types>
 
 ### Parameters
 
-*Index*  
- The index of the element to get.
+*Index*<br/>
+The index of the element to get.
 
-*Types*  
- The sequence of types declared in the tuple, in declaration order.
+*Types*<br/>
+The sequence of types declared in the tuple, in declaration order.
 
-*T*  
- The type of the element to get.
+*T*<br/>
+The type of the element to get.
 
-*Tuple*  
- A std::tuple that contains any number of elements.
+*Tuple*<br/>
+A std::tuple that contains any number of elements.
 
 ### Remarks
 
@@ -106,11 +106,11 @@ template <class T1, class T2, ..., class TN>
 
 ### Parameters
 
-*TN*  
- The type of the Nth function parameter.
+*TN*<br/>
+The type of the Nth function parameter.
 
-*tN*  
- The value of the Nth function parameter.
+*tN*<br/>
+The value of the Nth function parameter.
 
 ### Remarks
 
@@ -164,8 +164,8 @@ tuple<T1&, T2&, ..., TN&> tie(T1& t1, T2& t2, ..., TN& tN);
 
 ### Parameters
 
-*TN*  
- The base type of the Nth tuple element.
+*TN*<br/>
+The base type of the Nth tuple element.
 
 ### Remarks
 

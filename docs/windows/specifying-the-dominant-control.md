@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["dominant controls", "Dialog editor, dominant control", "controls [C++], dominant"]
+helpviewer_keywords: ["dominant controls", "Dialog Editor [C++], dominant control", "controls [C++], dominant"]
 ms.assetid: 42b523a7-192a-417b-9512-d4af795e002f
 author: "mikeblome"
 ms.author: "mblome"
@@ -35,6 +35,6 @@ Win32
 
 ## See Also
 
-[Selecting Multiple Controls](../windows/selecting-multiple-controls.md)  
-[Selecting Controls](../windows/selecting-controls.md)  
+[Selecting Multiple Controls](../windows/selecting-multiple-controls.md)<br/>
+[Selecting Controls](../windows/selecting-controls.md)<br/>
 [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)

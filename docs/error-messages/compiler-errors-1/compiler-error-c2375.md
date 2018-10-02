@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2375
-'function' : redefinition; different linkage  
-  
- The function is already declared with a different linkage specifier.  
-  
- The following sample generates C2375:  
-  
-```  
-// C2375.cpp  
-// compile with: /Za /c  
-extern void func( void );  
-static void func( void );   // C2375  
-static void func2( void );   // OK  
+
+'function' : redefinition; different linkage
+
+The function is already declared with a different linkage specifier.
+
+The following sample generates C2375:
+
+```
+// C2375.cpp
+// compile with: /Za /c
+extern void func( void );
+static void func( void );   // C2375
+static void func2( void );   // OK
 ```

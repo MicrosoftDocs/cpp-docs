@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3275
-'enum member' : cannot use this symbol without qualifier  
-  
-When using managed code and when two or more enumerations contain an identifier with the same name, you must explicitly qualify references to the identifier.  
-  
-C3275 is only reachable using the obsolete compiler option **/clr:oldSyntax**.  
+
+'enum member' : cannot use this symbol without qualifier
+
+When using managed code and when two or more enumerations contain an identifier with the same name, you must explicitly qualify references to the identifier.
+
+C3275 is only reachable using the obsolete compiler option **/clr:oldSyntax**.

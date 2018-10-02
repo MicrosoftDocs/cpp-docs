@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.icon"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["cursors [C++], creating", "icons [C++], creating", "display devices", "display devices, creating image", "images [C++], creating for display devices", "icons [C++], inserting"]
+helpviewer_keywords: ["cursors [C++], creating", "icons [C++], creating", "display devices [C++], creating image", "images [C++], creating for display devices", "icons [C++], inserting"]
 ms.assetid: 5a536928-32df-4ace-beb1-1521ce3b871f
 author: "mikeblome"
 ms.author: "mblome"
@@ -37,6 +37,6 @@ None
 
 ## See Also
 
-[Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)  
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)  
+[Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)<br/>
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)

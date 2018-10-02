@@ -28,13 +28,13 @@ basic_ostream<Elem, Tr>& endl(
 
 ### Parameters
 
-*Elem*
+*Elem*<br/>
 The element type.
 
-*Ostr*
+*Ostr*<br/>
 An object of type **basic_ostream**.
 
-*Tr*
+*Tr*<br/>
 Character traits.
 
 ### Return Value
@@ -75,13 +75,13 @@ basic_ostream<Elem, Tr>& ends(
 
 ### Parameters
 
-*Elem*
+*Elem*<br/>
 The element type.
 
-*Ostr*
+*Ostr*<br/>
 An object of type `basic_ostream`.
 
-*Tr*
+*Tr*<br/>
 Character traits.
 
 ### Return Value
@@ -124,13 +124,13 @@ basic_ostream<Elem, Tr>& flush(
 
 ### Parameters
 
-*Elem*
+*Elem*<br/>
 The element type.
 
-*Ostr*
+*Ostr*<br/>
 An object of type `basic_ostream`.
 
-*Tr*
+*Tr*<br/>
 Character traits.
 
 ### Return Value
@@ -172,16 +172,16 @@ void swap(
 
 ### Parameters
 
-*Elem*
+*Elem*<br/>
 The element type.
 
-*Tr*
+*Tr*<br/>
 Character traits.
 
-*left*
+*left*<br/>
 An lvalue reference to a `basic_ostream` object.
 
-*right*
+*right*<br/>
 An lvalue reference to a `basic_ostream` object.
 
 ### Remarks

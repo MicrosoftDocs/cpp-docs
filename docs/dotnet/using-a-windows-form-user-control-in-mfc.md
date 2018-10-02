@@ -69,5 +69,5 @@ If your MFC application uses Windows Forms, you need to redistribute mfcmifc80.d
 
 ## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)  
-[Form Views](../mfc/form-views-mfc.md)  
+[User Interface Elements](../mfc/user-interface-elements-mfc.md)<br/>
+[Form Views](../mfc/form-views-mfc.md)

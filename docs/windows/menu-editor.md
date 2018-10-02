@@ -1,12 +1,12 @@
 ---
-title: "Menu Editor | Microsoft Docs"
+title: "Menu Editor (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.menu.F1"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["resource editors, Menu editor", "editors, menus", "Menu editor", "menus, Menu editor"]
+helpviewer_keywords: ["resource editors [C++], Menu editor", "editors, menus", "Menu editor", "menus [C++], Menu editor"]
 ms.assetid: 421fb215-6e12-4ec9-a3af-82d77f87bfa6
 author: "mikeblome"
 ms.author: "mblome"
@@ -58,8 +58,8 @@ Win32
 
 ## See Also
 
-[Working with Resource Files](../windows/working-with-resource-files.md)  
-[Resource Editors](../windows/resource-editors.md)  
-[User-Interface Objects and Command IDs](../mfc/user-interface-objects-and-command-ids.md)  
-[Menus](../mfc/menus-mfc.md)  
+[Working with Resource Files](../windows/working-with-resource-files.md)<br/>
+[Resource Editors](../windows/resource-editors.md)<br/>
+[User-Interface Objects and Command IDs](../mfc/user-interface-objects-and-command-ids.md)<br/>
+[Menus](../mfc/menus-mfc.md)<br/>
 [Menus](https://msdn.microsoft.com/library/windows/desktop/ms646977.aspx)

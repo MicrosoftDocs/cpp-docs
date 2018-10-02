@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2382
-'function' : redefinition; different exception specifications  
-  
- Under [/Za](../../build/reference/za-ze-disable-language-extensions.md), this error indicates that a function overload was attempted only on the [exception specification](../../cpp/exception-specifications-throw-cpp.md).  
-  
- The following sample generates C2382:  
-  
-```  
-// C2382.cpp  
-// compile with: /Za /c  
-void f1(void) throw(int) {}  
-void f1(void) throw(char) {}   // C2382  
-void f2(void) throw(char) {}   // OK  
+
+'function' : redefinition; different exception specifications
+
+Under [/Za](../../build/reference/za-ze-disable-language-extensions.md), this error indicates that a function overload was attempted only on the [exception specification](../../cpp/exception-specifications-throw-cpp.md).
+
+The following sample generates C2382:
+
+```
+// C2382.cpp
+// compile with: /Za /c
+void f1(void) throw(int) {}
+void f1(void) throw(char) {}   // C2382
+void f2(void) throw(char) {}   // OK
 ```

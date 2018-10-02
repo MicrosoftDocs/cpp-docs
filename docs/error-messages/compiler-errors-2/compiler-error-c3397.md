@@ -13,21 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3397
-Aggregate initialization is not allowed in default arguments  
-  
- An array was declared incorrectly.  See [Arrays](../../windows/arrays-cpp-component-extensions.md) for more information.  
-  
-## Example  
- The following sample generates C3397.  
-  
-```  
-// C3397.cpp  
-// compile with: /clr  
-// /clr /c  
-void Func(array<int> ^p = gcnew array<int> { 1, 2, 3 });   // C3397  
-void Func2(array<int> ^p = gcnew array<int> (3));   // OK  
-  
-int main() {  
-   array<int> ^p = gcnew array<int> { 1, 2, 3};   // OK  
-}  
+
+Aggregate initialization is not allowed in default arguments
+
+An array was declared incorrectly.  See [Arrays](../../windows/arrays-cpp-component-extensions.md) for more information.
+
+## Example
+
+The following sample generates C3397.
+
+```
+// C3397.cpp
+// compile with: /clr
+// /clr /c
+void Func(array<int> ^p = gcnew array<int> { 1, 2, 3 });   // C3397
+void Func2(array<int> ^p = gcnew array<int> (3));   // OK
+
+int main() {
+   array<int> ^p = gcnew array<int> { 1, 2, 3};   // OK
+}
 ```

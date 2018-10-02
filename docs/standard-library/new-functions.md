@@ -38,7 +38,7 @@ new_handler set_new_handler(new_handler Pnew) throw();
 
 ### Parameters
 
-*Pnew*  
+*Pnew*<br/>
 The `new_handler` to be installed.
 
 ### Return Value

@@ -1,17 +1,17 @@
 ---
-title: "Testing a Dialog Box | Microsoft Docs"
+title: "Testing a Dialog Box (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["Test Dialog command", "testing, dialog boxes", "dialog boxes, testing"]
+helpviewer_keywords: ["Test Dialog command", "testing, dialog boxes", "dialog boxes [C++], testing"]
 ms.assetid: 45034ee9-c554-4f4b-8c46-6ddefdee8951
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Testing a Dialog Box
+# Testing a Dialog Box (C++)
 
 When you're designing a dialog box, you can simulate and test its run-time behavior without compiling your program. In this mode, you can:
 
@@ -42,6 +42,6 @@ Win32
 
 ## See Also
 
-[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)  
-[Dialog Editor](../windows/dialog-editor.md)  
+[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)<br/>
+[Dialog Editor](../windows/dialog-editor.md)<br/>
 [Showing or Hiding the Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)

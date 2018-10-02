@@ -36,15 +36,15 @@ This error commonly occurs when the identifier name is misspelled, or the identi
 
 ```cpp
 // C2065_spell.cpp
-// compile with: cl /EHsc C2065_spell.cpp 
-#include <iostream> 
-using namespace std; 
-int main() { 
-    int someIdentifier = 42; 
-    cout << "Some Identifier: " << SomeIdentifier << endl; 
-    // C2065: 'SomeIdentifier': undeclared identifier 
+// compile with: cl /EHsc C2065_spell.cpp
+#include <iostream>
+using namespace std;
+int main() {
+    int someIdentifier = 42;
+    cout << "Some Identifier: " << SomeIdentifier << endl;
+    // C2065: 'SomeIdentifier': undeclared identifier
     // To fix, correct the spelling:
-    // cout << "Some Identifier: " << someIdentifier << endl; 
+    // cout << "Some Identifier: " << someIdentifier << endl;
 }
 ```
 
@@ -61,7 +61,7 @@ This example fails to compile because `cout` and `endl` are defined in the `std`
 // using namespace std;   // Uncomment this line to fix
 
 int main() {
-    cout << "Hello" << endl;   // C2065 'cout': undeclared identifier 
+    cout << "Hello" << endl;   // C2065 'cout': undeclared identifier
                                // C2065 'endl': undeclared identifier
     // Or try the following line instead
     std::cout << "Hello" << std::endl;
@@ -108,48 +108,48 @@ You have not included the header file that declares the identifier. Make sure th
 
 ```cpp
 // C2065_header.cpp
-// compile with: cl /EHsc C2065_header.cpp 
+// compile with: cl /EHsc C2065_header.cpp
 
-//#include <stdio.h> 
-int main() { 
-    fpos_t file_position = 42; // C2065: 'fpos_t': undeclared identifier 
+//#include <stdio.h>
+int main() {
+    fpos_t file_position = 42; // C2065: 'fpos_t': undeclared identifier
     // To fix, uncomment the #include <stdio.h> line
     // to include the header where fpos_t is defined
-} 
+}
 ```
 
 Another possible cause is if you use an initializer list without including the \<initializer_list> header.
 
 ```cpp
 // C2065_initializer.cpp
-// compile with: cl /EHsc C2065_initializer.cpp 
+// compile with: cl /EHsc C2065_initializer.cpp
 
-// #include <initializer_list> 
-int main() { 
+// #include <initializer_list>
+int main() {
     for (auto strList : {"hello", "world"})
-        if (strList == "hello") // C2065: 'strList': undeclared identifier 
-            return 1; 
+        if (strList == "hello") // C2065: 'strList': undeclared identifier
+            return 1;
     // To fix, uncomment the #include <initializer_list> line
-} 
+}
 ```
 
 You may see this error in Windows Desktop app source files if you define `VC_EXTRALEAN`, `WIN32_LEAN_AND_MEAN`, or `WIN32_EXTRA_LEAN`. These preprocessor macros exclude some header files from windows.h and afxv\_w32.h to speed compiles. Look in windows.h and afxv_w32.h for an up-to-date description of what's excluded.
 
 ## Example: missing closing quote
 
-This error can occur if you are missing a closing quote after a string constant. This is an easy way to confuse the compiler. Note that the missing closing quote may be several lines before the reported error location. 
+This error can occur if you are missing a closing quote after a string constant. This is an easy way to confuse the compiler. Note that the missing closing quote may be several lines before the reported error location.
 
 ```cpp
 // C2065_quote.cpp
-// compile with: cl /EHsc C2065_quote.cpp 
+// compile with: cl /EHsc C2065_quote.cpp
 #include <iostream>
 
-int main() { 
+int main() {
     // Fix this issue by adding the closing quote to "Aaaa"
-    char * first = "Aaaa, * last = "Zeee"; 
-    std::cout << "Name: " << first 
-        << " " << last << std::endl; // C2065: 'last': undeclared identifier 
-} 
+    char * first = "Aaaa, * last = "Zeee";
+    std::cout << "Name: " << first
+        << " " << last << std::endl; // C2065: 'last': undeclared identifier
+}
 ```
 
 ## Example: use iterator outside for loop scope
@@ -158,13 +158,13 @@ This error can occur if you declare an iterator variable in a `for` loop, and th
 
 ```cpp
 // C2065_iter.cpp
-// compile with: cl /EHsc C2065_iter.cpp 
-#include <iostream> 
-#include <string> 
+// compile with: cl /EHsc C2065_iter.cpp
+#include <iostream>
+#include <string>
 
 int main() {
-    // char last = '!'; 
-    std::string letters{ "ABCDEFGHIJKLMNOPQRSTUVWXYZ" }; 
+    // char last = '!';
+    std::string letters{ "ABCDEFGHIJKLMNOPQRSTUVWXYZ" };
     for (const char& c : letters) {
         if ('Q' == c) {
             std::cout << "Found Q!" << std::endl;
@@ -175,7 +175,7 @@ int main() {
     // Fix by using a variable declared in an outer scope.
     // Uncomment the lines that declare and use 'last' for an example.
     // std::cout << "Last letter was " << last << std::endl; // C2065
-} 
+}
 ```
 
 ## Example: preprocessor removed declaration
@@ -193,7 +193,7 @@ This is an example of code that works when you build in Debug, but not Retail:
     _CrtMemState oldstate;
 #endif
 int main() {
-    _CrtMemDumpStatistics(&oldstate); 
+    _CrtMemDumpStatistics(&oldstate);
     std::cout << "Total count " << oldstate.lTotalCount; // C2065
     // Fix by guarding references the same way as the declaration:
     // #ifdef _DEBUG
@@ -208,7 +208,7 @@ This error can occur when calling a generic function, if the intended type argum
 
 ```cpp
 // C2065_b.cpp
-// compile with: cl /clr C2065_b.cpp 
+// compile with: cl /clr C2065_b.cpp
 generic <typename ItemType>
 void G(int i) {}
 

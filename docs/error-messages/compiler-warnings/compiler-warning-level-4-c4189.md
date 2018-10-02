@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4189
-'identifier' : local variable is initialized but not referenced  
-  
- A variable is declared and initialized but not used.  
-  
- The following sample generates C4189:  
-  
-```  
-// C4189.cpp  
-// compile with: /W4  
-int main() {  
-   int a = 1;   // C4189, remove declaration to resolve  
-}  
+
+'identifier' : local variable is initialized but not referenced
+
+A variable is declared and initialized but not used.
+
+The following sample generates C4189:
+
+```
+// C4189.cpp
+// compile with: /W4
+int main() {
+   int a = 1;   // C4189, remove declaration to resolve
+}
 ```

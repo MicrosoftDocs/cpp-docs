@@ -29,7 +29,7 @@ public CComObjectRootEx<contained
 
 #### Parameters
 
-`contained`  
+*contained*<br/>
 Your tear-off class, derived from `CComTearOffObjectBase` and the interfaces you want your tear-off object to support.
 
 ## Members
@@ -101,7 +101,7 @@ CComCachedTearOffObject(void* pv);
 
 ### Parameters
 
-*pv*  
+*pv*<br/>
 [in] Pointer to the `IUnknown` of the `CComCachedTearOffObject`.
 
 ### Remarks
@@ -150,7 +150,7 @@ CcomContainedObject <contained> m_contained;
 
 ### Parameters
 
-*contained*  
+*contained*<br/>
 [in] Your tear-off class, derived from `CComTearOffObjectBase` and the interfaces you want your tear-off object to support.
 
 ### Remarks
@@ -167,10 +167,10 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] The GUID of the interface being requested.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] A pointer to the interface pointer identified by *iid*, or NULL if the interface is not found.
 
 ### Return Value
@@ -195,6 +195,6 @@ In non-debug builds, always returns 0. In debug builds, returns a value that may
 
 ## See Also
 
-[CComTearOffObject Class](../../atl/reference/ccomtearoffobject-class.md)   
-[CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
+[CComTearOffObject Class](../../atl/reference/ccomtearoffobject-class.md)<br/>
+[CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2169
-'function' : intrinsic function, cannot be defined  
-  
- A function definition appears for a function already declared `intrinsic`.
+
+'function' : intrinsic function, cannot be defined
+
+A function definition appears for a function already declared `intrinsic`.

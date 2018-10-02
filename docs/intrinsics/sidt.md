@@ -13,36 +13,38 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __sidt
-**Microsoft Specific**  
-  
- Stores the value of the interrupt descriptor table register (IDTR) in the specified memory location.  
-  
-## Syntax  
-  
-```  
-void __sidt(  
-     void *Destination);  
-```  
-  
-#### Parameters  
-  
-|Parameter|Description|  
-|---------------|-----------------|  
-|[in] `Destination`|A pointer to the memory location where the IDTR is stored.|  
-  
-## Requirements  
-  
-|Intrinsic|Architecture|  
-|---------------|------------------|  
-|`__sidt`|x86, x64|  
-  
- **Header file** \<intrin.h>  
-  
-## Remarks  
- The `__sidt` function is equivalent to the `SIDT` machine instruction. For more information, search for the document, "Intel Architecture Software Developer's Manual, Volume 2: Instruction Set Reference," at the [Intel Corporation](https://software.intel.com/en-us/articles/intel-sdm) site.  
-  
-**END Microsoft Specific**  
-  
-## See Also  
- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   
- [__lidt](../intrinsics/lidt.md)
+
+**Microsoft Specific**
+
+Stores the value of the interrupt descriptor table register (IDTR) in the specified memory location.
+
+## Syntax
+
+```
+void __sidt(void * Destination);
+```
+
+#### Parameters
+
+|Parameter|Description|
+|---------------|-----------------|
+|*Destination*|[in] A pointer to the memory location where the IDTR is stored.|
+
+## Requirements
+
+|Intrinsic|Architecture|
+|---------------|------------------|
+|`__sidt`|x86, x64|
+
+**Header file** \<intrin.h>
+
+## Remarks
+
+The `__sidt` function is equivalent to the `SIDT` machine instruction. For more information, search for the document, "Intel Architecture Software Developer's Manual, Volume 2: Instruction Set Reference," at the [Intel Corporation](https://software.intel.com/en-us/articles/intel-sdm) site.
+
+**END Microsoft Specific**
+
+## See Also
+
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[__lidt](../intrinsics/lidt.md)

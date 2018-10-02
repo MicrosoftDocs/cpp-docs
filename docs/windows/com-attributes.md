@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["attributes [C++], reference topics", "attributes [COM]", "COM, attributes"]
+helpviewer_keywords: ["attributes [C++/CLI], reference topics", "attributes [COM]", "COM, attributes"]
 ms.assetid: 52a5dd70-e8be-4bba-afd6-daf90fe689a0
 author: "mikeblome"
 ms.author: "mblome"
@@ -31,4 +31,5 @@ The COM attributes inject code to support numerous areas of COM development and 
 |[vi_progid](../windows/vi-progid.md)|Defines a version-independent ProgID for a control.|
   
 ## See Also
- [Attributes by Group](../windows/attributes-by-group.md)
+
+[Attributes by Group](../windows/attributes-by-group.md)

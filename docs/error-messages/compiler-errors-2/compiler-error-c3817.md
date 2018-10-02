@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3817
-'declaration' : property can only be applied to a function  
-  
- The `property` keyword can only be a applied to a function definition.  
-  
- C3817 is only reachable using the obsolete compiler option **/clr:oldSyntax**.  
+
+'declaration' : property can only be applied to a function
+
+The `property` keyword can only be a applied to a function definition.
+
+C3817 is only reachable using the obsolete compiler option **/clr:oldSyntax**.

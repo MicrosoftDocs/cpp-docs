@@ -1,18 +1,18 @@
 ---
-title: "How to: Open a Resource Script File Outside of a Project (Standalone) | Microsoft Docs"
+title: "How to: Open a Resource Script File Outside of a C++ Project (Standalone) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.resource"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["resources [Visual Studio], viewing", "rc files, viewing resources", ".rc files, viewing resources", "resource script files, viewing resources"]
+helpviewer_keywords: ["resources [C++], viewing", "rc files [C++], viewing resources", ".rc files [C++], viewing resources", "resource script files [C++], viewing resources"]
 ms.assetid: bc350c60-178d-4c5d-9a7e-6576b0c936e4
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# How to: Open a Resource Script File Outside of a Project (Standalone)
+# How to: Open a Resource Script File Outside of a C++ Project (Standalone)
 
 You can view resources in an .rc file without having a project open. The .rc file will open in a document window as opposed to opening in the [Resource View](../windows/resource-view-window.md) window (as it does when the file is open inside a project).
 
@@ -59,5 +59,5 @@ Win32
 
 ## See Also
 
-[Resource Files](../windows/resource-files-visual-studio.md)  
+[Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [Resource Editors](../windows/resource-editors.md)

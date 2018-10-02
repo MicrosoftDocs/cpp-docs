@@ -1,11 +1,11 @@
 ---
-title: "How to: Create a Resource | Microsoft Docs"
+title: "How to: Create a Resource (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["toolbars [C++], resources", "resource toolbars", "resources [Visual Studio], creating"]
+helpviewer_keywords: ["toolbars [C++], resources", "resource toolbars", "resources [C++], creating"]
 ms.assetid: aad44914-9145-45a3-a7d8-9de89b366716
 author: "mikeblome"
 ms.author: "mblome"
@@ -55,6 +55,6 @@ Win32
 
 ## See Also
 
-[Resource Files](../windows/resource-files-visual-studio.md)  
-[Resource Editors](../windows/resource-editors.md)  
+[Resource Files](../windows/resource-files-visual-studio.md)<br/>
+[Resource Editors](../windows/resource-editors.md)<br/>
 [Add Resource Dialog Box](../windows/add-resource-dialog-box.md)

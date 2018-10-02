@@ -27,11 +27,11 @@ bool operator!=(const hash_set <Key, Traits, Allocator>& left, const hash_set <K
 
 ### Parameters
 
-*left*
- An object of type `hash_set`.
+*left*<br/>
+An object of type `hash_set`.
 
-*right*
- An object of type `hash_set`.
+*right*<br/>
+An object of type `hash_set`.
 
 ### Return Value
 
@@ -95,11 +95,11 @@ bool operator!==(const hash_set <Key, Traits, Allocator>& left, const hash_set <
 
 ### Parameters
 
-*left*
- An object of type `hash_set`.
+*left*<br/>
+An object of type `hash_set`.
 
-*right*
- An object of type `hash_set`.
+*right*<br/>
+An object of type `hash_set`.
 
 ### Return Value
 
@@ -161,11 +161,11 @@ bool operator!=(const hash_multiset <Key, Traits, Allocator>& left, const hash_m
 
 ### Parameters
 
-*left*
- An object of type `hash_multiset`.
+*left*<br/>
+An object of type `hash_multiset`.
 
-*right*
- An object of type `hash_multiset`.
+*right*<br/>
+An object of type `hash_multiset`.
 
 ### Return Value
 
@@ -227,11 +227,11 @@ bool operator!==(const hash_multiset <Key, Traits, Allocator>& left, const hash_
 
 ### Parameters
 
-*left*
- An object of type `hash_multiset`.
+*left*<br/>
+An object of type `hash_multiset`.
 
-*right*
- An object of type `hash_multiset`.
+*right*<br/>
+An object of type `hash_multiset`.
 
 ### Return Value
 

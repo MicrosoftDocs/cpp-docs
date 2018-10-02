@@ -53,22 +53,22 @@ template <class Tuple>
 
 ### Parameters
 
-*Tuple*  
+*Tuple*<br/>
 The type of the tuple.
 
-*Elem*  
+*Elem*<br/>
 The type of the array elements.
 
-*Size*  
+*Size*<br/>
 The size of the array.
 
-*T1*  
+*T1*<br/>
 The type of the first member of the pair.
 
-*T2*  
+*T2*<br/>
 The type of the second member of the pair.
 
-*Types*  
+*Types*<br/>
 The types of the tuple elements.
 
 ## Remarks
@@ -110,7 +110,7 @@ int main()
 ## Requirements
 
 **Header:** \<tuple>
- **Header:** \<array> (for array specialization)
+**Header:** \<array> (for array specialization)
  **Header:** \<utility> (for pair specialization)
 
 **Namespace:** std

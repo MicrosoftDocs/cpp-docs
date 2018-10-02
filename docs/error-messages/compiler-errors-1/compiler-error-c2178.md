@@ -12,19 +12,19 @@ author: "corob-msft"
 ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
-# Compiler Error C2178  
-  
-'*identifier*' cannot be declared with '*specifier*' specifier  
-  
-A `mutable` specifier was used in a declaration, but the specifier is not allowed in this context.  
-  
-The `mutable` specifier can be applied only to names of class data members, and cannot be applied to names declared `const` or `static`, and cannot be applied to reference members.  
-  
-## Example  
-  
-The following sample shows how C2178 may occur, and how to fix it.  
-  
-```  
+# Compiler Error C2178
+
+'*identifier*' cannot be declared with '*specifier*' specifier
+
+A `mutable` specifier was used in a declaration, but the specifier is not allowed in this context.
+
+The `mutable` specifier can be applied only to names of class data members, and cannot be applied to names declared `const` or `static`, and cannot be applied to reference members.
+
+## Example
+
+The following sample shows how C2178 may occur, and how to fix it.
+
+```
 // C2178.cpp
 // compile with: cl /c /W4 C2178.cpp
 
@@ -35,4 +35,4 @@ class S {
 
 mutable int x = 4; // C2178
 // To fix, remove mutable keyword
-```  
+```

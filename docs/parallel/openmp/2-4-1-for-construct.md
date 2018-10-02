@@ -106,28 +106,28 @@ There is an implicit barrier at the end of a **for** construct unless a **nowait
 
 Restrictions to the **for** directive are as follows:
 
--   The **for** loop must be a structured block, and, in addition, its execution must not be terminated by a **break** statement.
+- The **for** loop must be a structured block, and, in addition, its execution must not be terminated by a **break** statement.
 
--   The values of the loop control expressions of the **for** loop associated with a **for** directive must be the same for all the threads in the team.
+- The values of the loop control expressions of the **for** loop associated with a **for** directive must be the same for all the threads in the team.
 
--   The **for** loop iteration variable must have a signed integer type.
+- The **for** loop iteration variable must have a signed integer type.
 
--   Only a single **schedule** clause can appear on a **for** directive.
+- Only a single **schedule** clause can appear on a **for** directive.
 
--   Only a single **ordered** clause can appear on a **for** directive.
+- Only a single **ordered** clause can appear on a **for** directive.
 
--   Only a single **nowait** clause can appear on a **for** directive.
+- Only a single **nowait** clause can appear on a **for** directive.
 
--   It is unspecified if or how often any side effects within the *chunk_size*, *lb*, *b*, or *incr* expressions occur.
+- It is unspecified if or how often any side effects within the *chunk_size*, *lb*, *b*, or *incr* expressions occur.
 
--   The value of the *chunk_size* expression must be the same for all threads in the team.
+- The value of the *chunk_size* expression must be the same for all threads in the team.
 
 ## Cross References:
 
--   **private**, **firstprivate**, **lastprivate**, and **reduction** clauses, see [Section 2.7.2](../../parallel/openmp/2-7-2-data-sharing-attribute-clauses.md) on page 25.
+- **private**, **firstprivate**, **lastprivate**, and **reduction** clauses, see [Section 2.7.2](../../parallel/openmp/2-7-2-data-sharing-attribute-clauses.md) on page 25.
 
--   **OMP_SCHEDULE** environment variable, see [Section 4.1](../../parallel/openmp/4-1-omp-schedule.md) on page 48.
+- **OMP_SCHEDULE** environment variable, see [Section 4.1](../../parallel/openmp/4-1-omp-schedule.md) on page 48.
 
--   **ordered** construct, see [Section 2.6.6](../../parallel/openmp/2-6-6-ordered-construct.md) on page 22.
+- **ordered** construct, see [Section 2.6.6](../../parallel/openmp/2-6-6-ordered-construct.md) on page 22.
 
--   [Appendix D](../../parallel/openmp/d-using-the-schedule-clause.md), page 93, gives more information on using the schedule clause.
+- [Appendix D](../../parallel/openmp/d-using-the-schedule-clause.md), page 93, gives more information on using the schedule clause.

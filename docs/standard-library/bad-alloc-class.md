@@ -69,5 +69,5 @@ bad allocation
 
 ## See Also
 
-[exception Class](../standard-library/exception-class.md)
- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[exception Class](../standard-library/exception-class.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

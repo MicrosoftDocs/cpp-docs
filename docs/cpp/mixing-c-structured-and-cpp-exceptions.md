@@ -39,4 +39,4 @@ If you mix structured and C++ exceptions, be aware of these potential issues:
 
 ## See also
 
-[C++ Exception Handling](../cpp/cpp-exception-handling.md)  
+[C++ Exception Handling](../cpp/cpp-exception-handling.md)

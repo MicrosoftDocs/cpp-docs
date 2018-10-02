@@ -1610,11 +1610,11 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage,
 
 ## See Also
 
-[MMXSwarm Sample](../../visual-cpp-samples.md)   
-[SimpleImage Sample](../../visual-cpp-samples.md)   
-[Device-Independent Bitmaps](/windows/desktop/gdi/device-independent-bitmaps)   
-[CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibsection)   
-[ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)
-[Device-Independent Bitmaps](/windows/desktop/gdi/device-independent-bitmaps)   
+[MMXSwarm Sample](../../visual-cpp-samples.md)<br/>
+[SimpleImage Sample](../../visual-cpp-samples.md)<br/>
+[Device-Independent Bitmaps](/windows/desktop/gdi/device-independent-bitmaps)<br/>
+[CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibsection)<br/>
+[ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)<br/>
+[Device-Independent Bitmaps](/windows/desktop/gdi/device-independent-bitmaps)<br/>
 [CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibsection)   
 

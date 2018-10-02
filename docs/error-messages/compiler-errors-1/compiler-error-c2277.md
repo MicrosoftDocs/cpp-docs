@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2277
-'identifier' : cannot take address of this member function  
-  
- You cannot take the address of a member function.  
-  
- The following sample generates C2277:  
-  
-```  
-// C2277.cpp  
-class A {  
-public:  
-   A();  
-};  
-(*pctor)() = &A::A;   // C2277   
+
+'identifier' : cannot take address of this member function
+
+You cannot take the address of a member function.
+
+The following sample generates C2277:
+
+```
+// C2277.cpp
+class A {
+public:
+   A();
+};
+(*pctor)() = &A::A;   // C2277
 ```

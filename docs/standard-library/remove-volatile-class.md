@@ -28,8 +28,8 @@ using remove_volatile_t = typename remove_volatile<T>::type;
 
 ### Parameters
 
-*T*
- The type to modify.
+*T*<br/>
+The type to modify.
 
 ## Remarks
 

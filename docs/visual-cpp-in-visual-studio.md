@@ -1,11 +1,12 @@
 ---
 title: "Visual C++ in Visual Studio | Microsoft Docs"
+description: "Visual C++ is the name for the Microsoft C++ compiler, code editor, and related tools in the Visual Studio IDE. Use Visual C++ to develop programs for Windows, Linux, Android and iOS."
 ms.custom: ""
-ms.date: "08/22/2018"
+ms.date: "09/26/2018"
 ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["unmanaged code, C++", "development environment, Visual C++", "unmanaged code", "Visual C++", "Visual C++, reference"]
+helpviewer_keywords: ["Visual C++, home page"]
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
@@ -67,11 +68,20 @@ Information about samples.
 
 ## C++ development tools
 
-[IDE and Development Tools](ide/ide-and-tools-for-visual-cpp-development.md).
-How to use the Visual Studio IDE to create projects, work with source code files, link to libraries, compile, debug, create unit tests, do static analysis, deploy, and more.
+[IDE and Development Tools](ide/ide-and-tools-for-visual-cpp-development.md)<br/>
+How to use the Visual Studio IDE to create projects, edit code, link to libraries, compile, debug, create unit tests, do static analysis, deploy, and more.
 
-[Compilers and Build Tools](build/building-c-cpp-programs.md)
-Microsoft C++ compiler and linker options, error messages, command-line examples, configurating for different platforms, and build reference topics. 
+[Compilers and Build Tools](build/building-c-cpp-programs.md)<br/>
+Microsoft C++ compiler and linker options, error messages, command-line examples, configurating for different platforms, and build reference topics.
+
+[Debugging Native Code](/visualstudio/debugger/debugging-native-code)<br/>
+Use the Visual Studio debugger with C++ projects.
+
+[Code analysis for C/C++ overview](/visualstudio/code-quality/code-analysis-for-c-cpp-overview)<br/>
+Use SAL annotations or the C++ Core Guidelines checkers to perform static analysis.
+
+[Write unit tests for C/C++ in Visual Studio](/visualstudio/test/writing-unit-tests-for-c-cpp)<br/>
+Create unit tests using the Microsoft Unit Testing Framework for C++, Google Test, Boost.Test, or CTest.
 
 ## Write applications in C++
 
@@ -81,10 +91,10 @@ Find guides and reference content on the Windows Developer Center. For informati
 [Desktop Applications (C++)](windows/desktop-applications-visual-cpp.md)<br/>
 Learn how to create traditional native C++ desktop applications for Windows.
 
-[.NET Programming with C++/CLI](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+[.NET Programming with C++/CLI](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
 Learn how to create DLLs that enable interoperability between native C++ and .NET programs written in languages such as C# or Visual Basic.
 
-[Linux Programming](linux/index.md)
+[Linux Programming](linux/index.md)<br/>
 Use the Visual Studio IDE to code and deploy to a remote Linux machine for compilation with GCC.
 
 [DLLs in Visual C++](build/dlls-in-visual-cpp.md)<br/>
@@ -105,11 +115,15 @@ Connect to databases using ODBC and other database access technologies.
 [Text and Strings](text/text-and-strings-in-visual-cpp.md)<br/>
 Learn about working with different text and string formats and encodings for local and international development.
 
-## C++ language reference
+## Languages reference
 
-For information about the C++ language, see [C++ Language Reference](cpp/cpp-language-reference.md).
+[C++ Language Reference](cpp/cpp-language-reference.md)
 
-For information about the C++ preprocessor, see [C/C++ Preprocessor Reference](preprocessor/c-cpp-preprocessor-reference.md).
+[C/C++ Preprocessor Reference](preprocessor/c-cpp-preprocessor-reference.md)
+
+[C Language Reference](c-language/c-language-reference.md)
+
+[Compiler Intrinsics and Assembly Language](intrinsics/compiler-intrinsics-and-assembly-language.md)
 
 ## C++ Libraries in Visual Studio
 

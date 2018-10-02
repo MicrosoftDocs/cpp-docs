@@ -13,21 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2702
-__except may not appear in termination block  
-  
- An exception handler (`__try`/`__except`) cannot be nested inside a `__finally` block.  
-  
- The following sample generates C2702:  
-  
-```  
-// C2702.cpp  
-// processor: x86 IPF  
-int Counter;  
-int main() {  
-   __try {}  
-   __finally {  
-      __try {}   // C2702  
-      __except( Counter ) {}   // C2702  
-   }  
-}  
+
+__except may not appear in termination block
+
+An exception handler (`__try`/`__except`) cannot be nested inside a `__finally` block.
+
+The following sample generates C2702:
+
+```
+// C2702.cpp
+// processor: x86 IPF
+int Counter;
+int main() {
+   __try {}
+   __finally {
+      __try {}   // C2702
+      __except( Counter ) {}   // C2702
+   }
+}
 ```

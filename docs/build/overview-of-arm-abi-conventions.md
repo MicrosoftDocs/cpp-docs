@@ -55,16 +55,16 @@ The use of IT instructions in Thumb-2 code is disallowed except for these specif
 - The target instruction must be one of these:
 
    |16-Bit Opcodes|Class|Restrictions|
-    |---------------------|-----------|------------------|
-    |MOV, MVN|Move|Rm != PC, Rd != PC|
-    |LDR, LDR[S]B, LDR[S]H|Load from memory|But not LDR literal forms|
-    |STR, STRB, STRH|Store to memory||
-    |ADD, ADC, RSB, SBC, SUB|Add or subtract|But not ADD/SUB SP, SP, imm7 forms<br /><br /> Rm != PC, Rdn != PC, Rdm != PC|
-    |CMP, CMN|Compare|Rm != PC, Rn != PC|
-    |MUL|Multiply||
-    |ASR, LSL, LSR, ROR|Bit shift||
-    |AND, BIC, EOR, ORR, TST|Bitwise arithmetic||
-    |BX|Branch to register|Rm != PC|
+   |---------------------|-----------|------------------|
+   |MOV, MVN|Move|Rm != PC, Rd != PC|
+   |LDR, LDR[S]B, LDR[S]H|Load from memory|But not LDR literal forms|
+   |STR, STRB, STRH|Store to memory||
+   |ADD, ADC, RSB, SBC, SUB|Add or subtract|But not ADD/SUB SP, SP, imm7 forms<br /><br /> Rm != PC, Rdn != PC, Rdm != PC|
+   |CMP, CMN|Compare|Rm != PC, Rn != PC|
+   |MUL|Multiply||
+   |ASR, LSL, LSR, ROR|Bit shift||
+   |AND, BIC, EOR, ORR, TST|Bitwise arithmetic||
+   |BX|Branch to register|Rm != PC|
 
 Although current ARMv7 CPUs cannot report the use of disallowed instruction forms, future generations are expected to. If these forms are detected, any program that uses them may be terminated with an undefined instruction exception.
 
@@ -224,5 +224,5 @@ The counter is a true cycle counter, not a clock; therefore, the counting freque
 
 ## See also
 
-[Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md)  
-[ARM Exception Handling](../build/arm-exception-handling.md)  
+[Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md)<br/>
+[ARM Exception Handling](../build/arm-exception-handling.md)

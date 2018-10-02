@@ -40,8 +40,8 @@ Defines the library block in the .idl file.
 
 ### Parameters
 
-*type* (optional)  
-Can be one of the following:
+*type*<br/>
+(Optional) Can be one of the following:
 
 - `dll` Adds functions and classes that allow the resulting DLL to function as a in-process COM server. This is the default value.
 
@@ -51,50 +51,50 @@ Can be one of the following:
 
 - `unspecified` Disables injection of ATL code related to the module attribute: the injection of ATL Module class, global instance _AtlModule and entry point functions. Does not disable injection of ATL code due to other attributes in the project.
 
-*name* (optional)  
-The name of the library block.
+*name*<br/>
+(Optional) The name of the library block.
 
-*version* (optional)  
-The version number you want to assign to the library block. The default value is 1.0.
+*version*<br/>
+(Optional) The version number you want to assign to the library block. The default value is 1.0.
 
-*uuid*  
+*uuid*<br/>
 The unique ID for the library. If you omit this parameter, an ID will be automatically generated for the library. You may need to retrieve the *uuid* of your library block, which you can do by using the identifier **__uuidof(** *libraryname* **)**.
 
-*lcid*  
+*lcid*<br/>
 The localization parameter. See [lcid](/windows/desktop/Midl/lcid) for more information.
 
-*control* (optional)  
-Specifies that all coclasses in the library are controls.
+*control*<br/>
+(Optional) Specifies that all coclasses in the library are controls.
 
-*helpstring*  
+*helpstring*<br/>
 Specifies the type library.
 
-*helpstringdll*  (optional)  
-Sets the name of the .dll file to use to perform a document string lookup. See [helpstringdll](/windows/desktop/Midl/helpstringdll) for more information.
+*helpstringdll*<br/>
+(Optional) Sets the name of the .dll file to use to perform a document string lookup. See [helpstringdll](/windows/desktop/Midl/helpstringdll) for more information.
 
-*helpfile* (optional)  
-The name of the **Help** file for the type library.
+*helpfile*<br/>
+(Optional) The name of the **Help** file for the type library.
 
-*helpcontext* (optional)  
-The **Help ID** for this type library.
+*helpcontext*<br/>
+(Optional) The **Help ID** for this type library.
 
-*helpstringcontext* (optional)  
-See [helpstringcontext](../windows/helpstringcontext.md) for more information.
+*helpstringcontext*<br/>
+(Optional) See [helpstringcontext](../windows/helpstringcontext.md) for more information.
 
-*hidden* (optional)  
-Prevents the entire library from being displayed. This usage is intended for use with controls. Hosts need to create a new type library that wraps the control with extended properties. See the [hidden](/windows/desktop/Midl/hidden) MIDL attribute for more information.
+*hidden*<br/>
+(Optional) Prevents the entire library from being displayed. This usage is intended for use with controls. Hosts need to create a new type library that wraps the control with extended properties. See the [hidden](/windows/desktop/Midl/hidden) MIDL attribute for more information.
 
-*restricted* (optional)  
-Members of the library cannot be called arbitrarily. See the [restricted](/windows/desktop/Midl/restricted) MIDL attribute for more information.
+*restricted*<br/>
+(Optional) Members of the library cannot be called arbitrarily. See the [restricted](/windows/desktop/Midl/restricted) MIDL attribute for more information.
 
-*custom*  (optional)  
-One or more attributes; this is similar to the [custom](../windows/custom-cpp.md) attribute. The first parameter to *custom* is the GUID of the attribute. For example:
+*custom*<br/>
+(Optional) One or more attributes; this is similar to the [custom](../windows/custom-cpp.md) attribute. The first parameter to *custom* is the GUID of the attribute. For example:
 
 ```
 [module(custom={guid,1}, custom={guid1,2})]
 ```
 
-*resource_name*  
+*resource_name*<br/>
 The string resource ID of the .rgs file used to register the APP ID of the DLL, executable, or service. When the module is of type service, this argument is also used to obtain the ID of the string containing the service name.
 
 > [!NOTE]
@@ -176,13 +176,13 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)  
-[Stand-Alone Attributes](../windows/stand-alone-attributes.md)  
-[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
-[usesgetlasterror](../windows/usesgetlasterror.md)  
-[library](/windows/desktop/Midl/library)  
-[helpcontext](../windows/helpcontext.md)  
-[helpstring](../windows/helpstring.md)  
-[helpfile](../windows/helpfile.md)  
+[IDL Attributes](../windows/idl-attributes.md)<br/>
+[Class Attributes](../windows/class-attributes.md)<br/>
+[Stand-Alone Attributes](../windows/stand-alone-attributes.md)<br/>
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[usesgetlasterror](../windows/usesgetlasterror.md)<br/>
+[library](/windows/desktop/Midl/library)<br/>
+[helpcontext](../windows/helpcontext.md)<br/>
+[helpstring](../windows/helpstring.md)<br/>
+[helpfile](../windows/helpfile.md)<br/>
 [version](../windows/version-cpp.md)  

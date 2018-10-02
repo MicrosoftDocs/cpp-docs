@@ -22,14 +22,14 @@ This class implements `IUnknown` and provides a default implementation of the [I
 ## Syntax
 
 ```
-template<class T>  
+template<class T>
 class ATL_NO_VTABLE ISpecifyPropertyPagesImpl 
    : public ISpecifyPropertyPages
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `ISpecifyPropertyPagesImpl`.
 
 ## Members
@@ -75,6 +75,6 @@ See [ISpecifyPropertyPages::GetPages](/windows/desktop/api/ocidl/nf-ocidl-ispeci
 
 ## See Also
 
-[IPropertyPageImpl Class](../../atl/reference/ipropertypageimpl-class.md)   
-[IPerPropertyBrowsingImpl Class](../../atl/reference/iperpropertybrowsingimpl-class.md)   
+[IPropertyPageImpl Class](../../atl/reference/ipropertypageimpl-class.md)<br/>
+[IPerPropertyBrowsingImpl Class](../../atl/reference/iperpropertybrowsingimpl-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

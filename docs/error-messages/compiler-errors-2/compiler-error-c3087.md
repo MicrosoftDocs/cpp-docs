@@ -13,17 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3087
-'named_argument': call of 'attribute' already initializes this member  
-  
- A named argument was specified in the same attribute block as an unnamed argument for the same value. Specify only a named or unnamed argument.  
-  
-## Example  
- The following sample generates C3087.  
-  
-```  
-// C3087.cpp  
-// compile with: /c  
-[idl_quote("quote1", text="quote2")];   // C3087  
-[idl_quote(text="quote3")];   // OK  
-[idl_quote("quote4")];   // OK  
+
+'named_argument': call of 'attribute' already initializes this member
+
+A named argument was specified in the same attribute block as an unnamed argument for the same value. Specify only a named or unnamed argument.
+
+## Example
+
+The following sample generates C3087.
+
+```
+// C3087.cpp
+// compile with: /c
+[idl_quote("quote1", text="quote2")];   // C3087
+[idl_quote(text="quote3")];   // OK
+[idl_quote("quote4")];   // OK
 ```

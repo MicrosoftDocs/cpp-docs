@@ -82,13 +82,13 @@ explicit CAtlFile(HANDLE hFile) throw();
 
 ### Parameters
 
-*file*  
+*file*<br/>
 The file object.
 
-*hFile*  
+*hFile*<br/>
 The file handle.
 
-*pTM*  
+*pTM*<br/>
 Pointer to CAtlTransactionManager object
 
 ### Remarks
@@ -112,25 +112,25 @@ HRESULT Create(
 
 ### Parameters
 
-*szFilename*  
+*szFilename*<br/>
 The file name.
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 The desired access. See *dwDesiredAccess* in [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea) in the Windows SDK.
 
-*dwShareMode*  
+*dwShareMode*<br/>
 The share mode. See *dwShareMode* in `CreateFile`.
 
-*dwCreationDisposition*  
+*dwCreationDisposition*<br/>
 The creation disposition. See *dwCreationDisposition* in `CreateFile`.
 
-*dwFlagsAndAttributes*  
+*dwFlagsAndAttributes*<br/>
 The flags and attributes. See *dwFlagsAndAttributes* in `CreateFile`.
 
-*lpsa*  
+*lpsa*<br/>
 The security attributes. See *lpSecurityAttributes* in `CreateFile`.
 
-*hTemplateFile*  
+*hTemplateFile*<br/>
 The template file. See *hTemplateFile* in `CreateFile`.
 
 ### Return Value
@@ -170,13 +170,13 @@ HRESULT GetOverlappedResult(
 
 ### Parameters
 
-*pOverlapped*  
+*pOverlapped*<br/>
 The overlapped structure. See *lpOverlapped* in [GetOverlappedResult](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) in the Windows SDK.
 
-*dwBytesTransferred*  
+*dwBytesTransferred*<br/>
 The bytes transferred. See *lpNumberOfBytesTransferred* in `GetOverlappedResult`.
 
-*bWait*  
+*bWait*<br/>
 The wait option. See *bWait* in `GetOverlappedResult`.
 
 ### Return Value
@@ -197,7 +197,7 @@ HRESULT GetPosition(ULONGLONG& nPos) const throw();
 
 ### Parameters
 
-*nPos*  
+*nPos*<br/>
 The position in bytes.
 
 ### Return Value
@@ -218,7 +218,7 @@ HRESULT GetSize(ULONGLONG& nLen) const throw();
 
 ### Parameters
 
-*nLen*  
+*nLen*<br/>
 The number of bytes in the file.
 
 ### Return Value
@@ -239,10 +239,10 @@ HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 
 ### Parameters
 
-*nPos*  
+*nPos*<br/>
 The position in the file where the lock should begin.
 
-*nCount*  
+*nCount*<br/>
 The length of the byte range to be locked.
 
 ### Return Value
@@ -291,19 +291,19 @@ HRESULT Read(
 
 ### Parameters
 
-*pBuffer*  
+*pBuffer*<br/>
 Pointer to the buffer that will receive the data read from the file.
 
-*nBufSize*  
+*nBufSize*<br/>
 The buffer size in bytes.
 
-*nBytesRead*  
+*nBytesRead*<br/>
 The number of bytes read.
 
-*pOverlapped*  
+*pOverlapped*<br/>
 The overlapped structure. See *lpOverlapped* in [ReadFile](/windows/desktop/api/fileapi/nf-fileapi-readfile) in the Windows SDK.
 
-*pfnCompletionRoutine*  
+*pfnCompletionRoutine*<br/>
 The completion routine. See *lpCompletionRoutine* in [ReadFileEx](/windows/desktop/api/fileapi/nf-fileapi-readfileex) in the Windows SDK.
 
 ### Return Value
@@ -326,10 +326,10 @@ HRESULT Seek(
 
 ### Parameters
 
-*nOffset*  
+*nOffset*<br/>
 The offset from the starting point given by *dwFrom*.
 
-*dwFrom*  
+*dwFrom*<br/>
 The starting point (FILE_BEGIN, FILE_CURRENT, or FILE_END).
 
 ### Return Value
@@ -350,7 +350,7 @@ HRESULT SetSize(ULONGLONG nNewLen) throw();
 
 ### Parameters
 
-*nNewLen*  
+*nNewLen*<br/>
 The new length of the file in bytes.
 
 ### Return Value
@@ -371,10 +371,10 @@ HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 
 ### Parameters
 
-*nPos*  
+*nPos*<br/>
 The position in the file where the unlock should begin.
 
-*nCount*  
+*nCount*<br/>
 The length of the byte range to be unlocked.
 
 ### Return Value
@@ -409,19 +409,19 @@ HRESULT Write(
 
 ### Parameters
 
-*pBuffer*  
+*pBuffer*<br/>
 The buffer containing the data to be written to the file.
 
-*nBufSize*  
+*nBufSize*<br/>
 The number of bytes to be transferred from the buffer.
 
-*pOverlapped*  
+*pOverlapped*<br/>
 The overlapped structure. See *lpOverlapped* in [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-writefile) in the Windows SDK.
 
-*pfnCompletionRoutine*  
+*pfnCompletionRoutine*<br/>
 The completion routine. See *lpCompletionRoutine* in [WriteFileEx](/windows/desktop/api/fileapi/nf-fileapi-writefileex) in the Windows SDK.
 
-*pnBytesWritten*  
+*pnBytesWritten*<br/>
 The bytes written.
 
 ### Return Value
@@ -434,6 +434,6 @@ The first three forms call [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-w
 
 ## See Also
 
-[Marquee Sample](../../visual-cpp-samples.md)   
-[Class Overview](../../atl/atl-class-overview.md)   
+[Marquee Sample](../../visual-cpp-samples.md)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [CHandle Class](../../atl/reference/chandle-class.md)

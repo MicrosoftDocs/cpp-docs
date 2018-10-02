@@ -27,7 +27,7 @@ Creates an event receiver (sink).
 
 ### Parameters
 
-*type*  
+*type*<br/>
 An enumeration of one of the following values:
 
 - `native` for unmanaged C/C++ code (default for native classes).
@@ -40,7 +40,7 @@ An enumeration of one of the following values:
     #include <atlcom.h>
     ```
 
-*layout_dependent*  
+*layout_dependent*<br/>
 Specify *layout_dependent* only if `type`=**com**. *layout_dependent* is a Boolean:
 
 - **true** means that the signature of the delegates in the event receiver must exactly match those to which they are hooked in the event source. The event receiver handler names must match the names specified in the relevant event source interface. You must use `coclass` when *layout_dependent* is **true**. It is slightly more efficient to specify **true**.
@@ -73,9 +73,9 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 
 ## See Also
 
-[Compiler Attributes](../windows/compiler-attributes.md)  
-[event_source](../windows/event-source.md)  
-[__event](../cpp/event.md)  
-[__hook](../cpp/hook.md)  
-[__unhook](../cpp/unhook.md)  
+[Compiler Attributes](../windows/compiler-attributes.md)<br/>
+[event_source](../windows/event-source.md)<br/>
+[__event](../cpp/event.md)<br/>
+[__hook](../cpp/hook.md)<br/>
+[__unhook](../cpp/unhook.md)<br/>
 [Class Attributes](../windows/class-attributes.md)  

@@ -20,6 +20,6 @@ To handle more instructions, you need to change the `m_status` data member initi
 
 ## See Also
 
-[Services](../atl/atl-services.md)   
+[Services](../atl/atl-services.md)<br/>
 [CAtlServiceModuleT::Handler](../atl/reference/catlservicemodulet-class.md#handler)
 

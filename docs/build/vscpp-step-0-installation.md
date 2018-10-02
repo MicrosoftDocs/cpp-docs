@@ -2,9 +2,9 @@
 title: Install C++ support in Visual Studio 2017 | Microsoft Docs
 description: "Install Visual Studio support for Visual C++"
 ms.custom: "mvc"
-ms.date: "06/21/2018"
+ms.date: "09/17/2018"
 ms.topic: "tutorial"
-ms.technology: ["devlang-C++"]
+ms.technology: ["cpp-tools"]
 ms.devlang: "C++"
 dev_langs: ["C++"]
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
@@ -28,9 +28,9 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
 ## Visual Studio 2015 Installation
 
- To install Visual Studio 2015, go to [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Run the setup program and choose **Custom installation** and then choose the C++ component. 
+To install Visual Studio 2015, go to [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Run the setup program and choose **Custom installation** and then choose the C++ component. To add C++ support to an existing Visual Studio 2015 installation, click on the Windows Start button and type **Add Remove Programs**. Open the program from the results list and then find your Visual Studio 2015 installation in the list of installed programs. Double-click it, then choose **Modify** and select the Visual C++ components to install.
 
- In general, we highly recommend that you use Visual Studio 2017 even if you need to compile your code using the Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
+In general, we highly recommend that you use Visual Studio 2017 even if you need to compile your code using the Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
 
 ## Visual Studio 2017 Installation
 
@@ -50,13 +50,13 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
    ![Desktop development with C++](../build/media/desktop-development-with-cpp.png "Desktop development with C++")
 
-    For C++, select the **Desktop development with C++** workload and then choose **Install**.
+   For C++, select the **Desktop development with C++** workload and then choose **Install**.
 
    ![Install the Desktop development with C++ workload](../build/media/vscpp-concierge-choose-workload.gif "Install the Desktop development with C++ workload")
 
 1. When the installation completes, choose the **Launch** button to start Visual Studio.
 
-   The first time you run Visual Studio, you are asked to sign in with a Microsoft Account. If you don't have one, you can create one for free. You must also choose a theme. Don't worry, you can change it later if you want to. 
+   The first time you run Visual Studio, you are asked to sign in with a Microsoft Account. If you don't have one, you can create one for free. You must also choose a theme. Don't worry, you can change it later if you want to.
 
    It may take Visual Studio several minutes to get ready for use the first time you run it. Here's what it looks like in a quick time-lapse:
 

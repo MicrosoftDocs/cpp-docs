@@ -34,14 +34,14 @@ void call_once(once_flag& Flag,
 
 ### Parameters
 
-*Flag*
- A [once_flag](../standard-library/once-flag-structure.md) object that ensures that the callable object is only called once.
+*Flag*<br/>
+A [once_flag](../standard-library/once-flag-structure.md) object that ensures that the callable object is only called once.
 
-*F*
- A callable object.
+*F*<br/>
+A callable object.
 
-*A*
- An argument list.
+*A*<br/>
+An argument list.
 
 ### Remarks
 

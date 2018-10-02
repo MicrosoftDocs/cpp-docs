@@ -1,17 +1,17 @@
 ---
-title: "Deleting a Toolbar Button | Microsoft Docs"
+title: "Deleting a Toolbar Button (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["toolbar buttons (in Toolbar editor), deleting", "Toolbar editor, deleting buttons"]
+helpviewer_keywords: ["toolbar buttons [C++], deleting", "Toolbar editor [C++], deleting buttons"]
 ms.assetid: 0888cb9b-6804-4717-93d0-3437bbc6241c
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Deleting a Toolbar Button
+# Deleting a Toolbar Button (C++)
 
 ### To delete a toolbar button
 
@@ -25,5 +25,5 @@ MFC or ATL
 
 ## See Also
 
-[Creating, Moving, and Editing Toolbar Buttons](../windows/creating-moving-and-editing-toolbar-buttons.md)  
+[Creating, Moving, and Editing Toolbar Buttons](../windows/creating-moving-and-editing-toolbar-buttons.md)<br/>
 [Toolbar Editor](../windows/toolbar-editor.md)

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1087
-Cannot tell filetype file: 'file': message  
-  
- The compiler cannot complete an I/O operation.
+
+Cannot tell filetype file: 'file': message
+
+The compiler cannot complete an I/O operation.

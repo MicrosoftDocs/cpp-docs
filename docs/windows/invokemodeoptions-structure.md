@@ -38,5 +38,5 @@ struct InvokeModeOptions
 
 ## See Also
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)<br/>
 [Microsoft::WRL::AgileEventSource Class](../windows/agileeventsource-class.md)

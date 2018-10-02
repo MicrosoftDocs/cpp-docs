@@ -90,7 +90,7 @@ STDMETHOD(get_AllowContextMenu)(VARIANT_BOOL* pbAllowContextMenu);
 
 ### Parameters
 
-*pbAllowContextMenu*  
+*pbAllowContextMenu*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -111,7 +111,7 @@ STDMETHOD(get_AllowShowUI)(VARIANT_BOOL* pbAllowShowUI);
 
 ### Parameters
 
-*pbAllowShowUI*  
+*pbAllowShowUI*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -132,7 +132,7 @@ STDMETHOD(get_AllowWindowlessActivation)(VARIANT_BOOL* pbAllowWindowless);
 
 ### Parameters
 
-*pbAllowWindowless*  
+*pbAllowWindowless*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -153,7 +153,7 @@ STDMETHOD(get_BackColor)(OLE_COLOR* pclrBackground);
 
 ### Parameters
 
-*pclrBackground*  
+*pclrBackground*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -174,7 +174,7 @@ STDMETHOD(get_DisplayAsDefault)(VARIANT_BOOL* pbDisplayAsDefault);
 
 ### Parameters
 
-*pbDisplayAsDefault*  
+*pbDisplayAsDefault*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -195,7 +195,7 @@ STDMETHOD(get_DocHostDoubleClickFlags)(DWORD* pdwDocHostDoubleClickFlags);
 
 ### Parameters
 
-*pdwDocHostDoubleClickFlags*  
+*pdwDocHostDoubleClickFlags*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -216,7 +216,7 @@ STDMETHOD(get_DocHostFlags)(DWORD* pdwDocHostFlags);
 
 ### Parameters
 
-*pdwDocHostFlags*  
+*pdwDocHostFlags*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -237,7 +237,7 @@ STDMETHOD(get_Font)(IFontDisp** pFont);
 
 ### Parameters
 
-*pFont*  
+*pFont*<br/>
 [out] The address of an `IFontDisp` interface pointer used to receive the current value of this property.
 
 ### Return Value
@@ -258,7 +258,7 @@ STDMETHOD(get_ForeColor)(OLE_COLOR* pclrForeground);
 
 ### Parameters
 
-*pclrForeground*  
+*pclrForeground*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -279,7 +279,7 @@ STDMETHOD(get_LocaleID)(LCID* plcidLocaleID);
 
 ### Parameters
 
-*plcidLocaleID*  
+*plcidLocaleID*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -302,7 +302,7 @@ STDMETHOD(get_MessageReflect)(VARIANT_BOOL* pbMessageReflect);
 
 ### Parameters
 
-*pbMessageReflect*  
+*pbMessageReflect*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -323,7 +323,7 @@ STDMETHOD(get_OptionKeyPath)(BSTR* pbstrOptionKeyPath);
 
 ### Parameters
 
-*pbstrOptionKeyPath*  
+*pbstrOptionKeyPath*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -340,7 +340,7 @@ STDMETHOD(get_ShowGrabHandles)(VARIANT_BOOL* pbShowGrabHandles);
 
 ### Parameters
 
-*pbShowGrabHandles*  
+*pbShowGrabHandles*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -361,7 +361,7 @@ STDMETHOD(get_ShowHatching)(VARIANT_BOOL* pbShowHatching);
 
 ### Parameters
 
-*pbShowHatching*  
+*pbShowHatching*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -382,7 +382,7 @@ STDMETHOD(get_UserMode)(VARIANT_BOOL* pbUserMode);
 
 ### Parameters
 
-*pbUserMode*  
+*pbUserMode*<br/>
 [out] The address of a variable to receive the current value of this property.
 
 ### Return Value
@@ -403,7 +403,7 @@ STDMETHOD(put_AllowContextMenu)(VARIANT_BOOL bAllowContextMenu);
 
 ### Parameters
 
-*bAllowContextMenu*  
+*bAllowContextMenu*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -424,7 +424,7 @@ STDMETHOD(put_AllowShowUI)(VARIANT_BOOL bAllowShowUI);
 
 ### Parameters
 
-*bAllowShowUI*  
+*bAllowShowUI*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -445,7 +445,7 @@ STDMETHOD(put_AllowWindowlessActivation)(VARIANT_BOOL bAllowWindowless);
 
 ### Parameters
 
-*bAllowWindowless*  
+*bAllowWindowless*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -466,7 +466,7 @@ STDMETHOD(put_BackColor)(OLE_COLOR clrBackground);
 
 ### Parameters
 
-*clrBackground*  
+*clrBackground*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -487,7 +487,7 @@ STDMETHOD(put_DisplayAsDefault)(VARIANT_BOOL bDisplayAsDefault);
 
 ### Parameters
 
-*bDisplayAsDefault*  
+*bDisplayAsDefault*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -508,7 +508,7 @@ STDMETHOD(put_DocHostDoubleClickFlags)(DWORD dwDocHostDoubleClickFlags);
 
 ### Parameters
 
-*dwDocHostDoubleClickFlags*  
+*dwDocHostDoubleClickFlags*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -529,7 +529,7 @@ STDMETHOD(put_DocHostFlags)(DWORD dwDocHostFlags);
 
 ### Parameters
 
-*dwDocHostFlags*  
+*dwDocHostFlags*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -550,7 +550,7 @@ STDMETHOD(put_Font)(IFontDisp* pFont);
 
 ### Parameters
 
-*pFont*  
+*pFont*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -571,7 +571,7 @@ STDMETHOD(put_ForeColor)(OLE_COLOR clrForeground);
 
 ### Parameters
 
-*clrForeground*  
+*clrForeground*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -592,7 +592,7 @@ STDMETHOD(put_LocaleID)(LCID lcidLocaleID);
 
 ### Parameters
 
-*lcidLocaleID*  
+*lcidLocaleID*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -613,7 +613,7 @@ STDMETHOD(put_MessageReflect)(VARIANT_BOOL bMessageReflect);
 
 ### Parameters
 
-*bMessageReflect*  
+*bMessageReflect*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -634,7 +634,7 @@ STDMETHOD(put_OptionKeyPath)(BSTR bstrOptionKeyPath);
 
 ### Parameters
 
-*bstrOptionKeyPath*  
+*bstrOptionKeyPath*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -651,7 +651,7 @@ STDMETHOD(put_UserMode)(VARIANT_BOOL bUserMode);
 
 ### Parameters
 
-*bUserMode*  
+*bUserMode*<br/>
 [in] The new value of this property.
 
 ### Return Value
@@ -664,8 +664,8 @@ The ATL host object implementation uses VARIANT_TRUE as the default value of thi
 
 ## See Also
 
-[IAxWinAmbientDispatchEx Interface](../../atl/reference/iaxwinambientdispatchex-interface.md)   
-[IAxWinHostWindow Interface](../../atl/reference/iaxwinhostwindow-interface.md)   
-[CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)   
+[IAxWinAmbientDispatchEx Interface](../../atl/reference/iaxwinambientdispatchex-interface.md)<br/>
+[IAxWinHostWindow Interface](../../atl/reference/iaxwinhostwindow-interface.md)<br/>
+[CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)<br/>
 [AtlAxGetHost](composite-control-global-functions.md#atlaxgethost)
 

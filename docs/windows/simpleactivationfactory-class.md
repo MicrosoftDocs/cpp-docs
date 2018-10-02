@@ -1,12 +1,12 @@
 ---
 title: "SimpleActivationFactory Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/07/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["module/Microsoft::WRL::SimpleActivationFactory"]
+f1_keywords: ["module/Microsoft::WRL::SimpleActivationFactory", "module/Microsoft::WRL::SimpleActivationFactory::ActivateInstance", "module/Microsoft::WRL::SimpleActivationFactory::GetRuntimeClassName", "module/Microsoft::WRL::SimpleActivationFactory::GetTrustLevel"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["SimpleActivationFactory class"]
+helpviewer_keywords: ["Microsoft::WRL::SimpleActivationFactory class", "Microsoft::WRL::SimpleActivationFactory::ActivateInstance method", "Microsoft::WRL::SimpleActivationFactory::GetRuntimeClassName method", "Microsoft::WRL::SimpleActivationFactory::GetTrustLevel method"]
 ms.assetid: aff768e0-0038-4fd7-95d2-ad7d308da41c
 author: "mikeblome"
 ms.author: "mblome"
@@ -25,7 +25,7 @@ class SimpleActivationFactory : public ActivationFactory<>;
 
 ### Parameters
 
-*Base*  
+*Base*<br/>
 A base class.
 
 ## Remarks
@@ -42,9 +42,9 @@ The following code example demonstrates how to use SimpleActivationFactory with 
 
 |Name|Description|
 |----------|-----------------|
-|[SimpleActivationFactory::ActivateInstance Method](../windows/simpleactivationfactory-activateinstance-method.md)|Creates an instance of the specified interface.|
-|[SimpleActivationFactory::GetRuntimeClassName Method](../windows/simpleactivationfactory-getruntimeclassname-method.md)|Gets the runtime class name of an instance of the class specified by the *Base* class template parameter.|
-|[SimpleActivationFactory::GetTrustLevel Method](../windows/simpleactivationfactory-gettrustlevel-method.md)|Gets the trust level of an instance of the class specified by the *Base* class template parameter.|
+|[SimpleActivationFactory::ActivateInstance Method](#activateinstance)|Creates an instance of the specified interface.|
+|[SimpleActivationFactory::GetRuntimeClassName Method](#getruntimeclassname)|Gets the runtime class name of an instance of the class specified by the *Base* class template parameter.|
+|[SimpleActivationFactory::GetTrustLevel Method](#gettrustlevel)|Gets the trust level of an instance of the class specified by the *Base* class template parameter.|
 
 ## Inheritance Hierarchy
 
@@ -76,6 +76,67 @@ The following code example demonstrates how to use SimpleActivationFactory with 
 
 **Namespace:** Microsoft::WRL
 
-## See Also
+## <a name="activateinstance"></a>SimpleActivationFactory::ActivateInstance Method
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+Creates an instance of the specified interface.
+
+```cpp
+STDMETHOD( ActivateInstance )(
+    _Deref_out_ IInspectable **ppvObject
+);
+```
+
+#### Parameters
+
+*ppvObject*<br/>
+When this operation completes, pointer to an instance of the object specified by the `Base` class template parameter.
+
+### Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+### Remarks
+
+If `__WRL_STRICT__` is defined, an assert error is emitted if the base class specified in the class template parameter isn't derived from [RuntimeClass](../windows/runtimeclass-class.md), or isn't configured with the WinRt or WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration value.
+
+## <a name="getruntimeclassname"></a>SimpleActivationFactory::GetRuntimeClassName Method
+
+Gets the runtime class name of an instance of the class specified by the `Base` class template parameter.
+
+```cpp
+STDMETHOD( GetRuntimeClassName )(
+    _Out_ HSTRING* runtimeName
+);
+```
+
+#### Parameters
+
+*runtimeName*<br/>
+When this operation completes, the runtime class name.
+
+### Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+### Remarks
+
+If `__WRL_STRICT__` is defined, an assert error is emitted if the class specified by the `Base` class template parameter isn't derived from [RuntimeClass](../windows/runtimeclass-class.md), or isn't configured with the WinRt or WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration value.
+
+## <a name="gettrustlevel"></a>SimpleActivationFactory::GetTrustLevel Method
+
+Gets the trust level of an instance of the class specified by the `Base` class template parameter.
+
+```cpp
+STDMETHOD(
+   GetTrustLevel
+)(_Out_ TrustLevel* trustLvl);
+```
+
+#### Parameters
+
+*trustLvl*<br/>
+When this operation completes, the trust level of the current class object.
+
+### Return Value
+
+Always S_OK.

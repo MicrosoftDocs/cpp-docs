@@ -33,19 +33,19 @@ void qsort_s(
 
 ### Parameters
 
-*base*
+*base*<br/>
 Start of target array.
 
-*number*
+*number*<br/>
 Array size in elements.
 
-*width*
+*width*<br/>
 Element size in bytes.
 
-*compare*
+*compare*<br/>
 Comparison function. The first argument is the *context* pointer. The second argument is a pointer to the *key* for the search. The third argument is a pointer to the array element to be compared with *key*.
 
-*context*
+*context*<br/>
 A pointer to a context, which can be any object that the *compare* routine needs to access.
 
 ## Remarks

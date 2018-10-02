@@ -28,19 +28,19 @@ Specifies a mapping between internal enumerations for the state of asynchronous 
 
 ## Members
 
-`_Created`  
+`_Created`<br/>
 Equivalent to `::Windows::Foundation::AsyncStatus::Created`
 
-`_Started`  
+`_Started`<br/>
 Equivalent to `::Windows::Foundation::AsyncStatus::Started`
 
-`_Completed`  
+`_Completed`<br/>
 Equivalent to `::Windows::Foundation::AsyncStatus::Completed`
 
-`_Cancelled`  
+`_Cancelled`<br/>
 Equivalent to `::Windows::Foundation::AsyncStatus::Cancelled`
 
-`_Error`  
+`_Error`<br/>
 Equivalent to `::Windows::Foundation::AsyncStatus::Error`
 
 ## Requirements
