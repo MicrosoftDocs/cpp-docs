@@ -17,7 +17,7 @@ This walkthrough shows how to use the **MFC Application Wizard** to create an ap
 
 ## Prerequisites
 
-This walkthrough assumes that you have set Visual Studio to use **General Development Settings**. If you are using different settings, some of the user interface (UI) elements that are referenced in the following instructions might not be displayed.
+This walkthrough assumes that you have set Visual Studio to use **General Development Settings**. If you're using different settings, some of the user interface (UI) elements that are referenced in the following instructions might not be displayed.
 
 ### To create an MFC application that has a ribbon
 
@@ -62,7 +62,7 @@ This walkthrough assumes that you have set Visual Studio to use **General Develo
 
 1. Next, customize the panel. Panels are used to group items that are logically related to one another. For example, on the **Home** tab of this application, the **Cut**, **Copy**, and **Paste** commands are all located on the **Clipboard** panel. To customize the panel, right-click **Panel1** and then click **Properties**. In the **Properties** window, change **Caption** to *Favorites*.
 
-    You can specify the **Image Index** for the panel. This number specifies the icon that is displayed if the ribbon panel is added to the **Quick Access Toolbar**. The icon is not displayed on the ribbon panel itself.
+    You can specify the **Image Index** for the panel. This number specifies the icon that is displayed if the ribbon panel is added to the **Quick Access Toolbar**. The icon isn't displayed on the ribbon panel itself.
 
 1. To verify that the ribbon category and panel were created successfully, preview the ribbon control. On the **Ribbon Editor Toolbar**, click the **Test Ribbon** button. A **Custom** tab and **Favorites** panel should be displayed on the ribbon.
 
@@ -70,7 +70,7 @@ This walkthrough assumes that you have set Visual Studio to use **General Develo
 
 1. To add elements to the panel that you created in the previous procedure, drag controls from the **Ribbon Editor** section of the **Toolbox** to the panel in the design view.
 
-1. First, add a **Print** button. The **Print** button will have a submenu that contains a **Quick Print** command that prints by using the default printer. Both of these commands are already defined for this application. They are located on the application menu.
+1. First, add a **Print** button. The **Print** button will have a submenu that contains a **Quick Print** command that prints by using the default printer. Both of these commands are already defined for this application. They're located on the application menu.
 
     To create the **Print** button, drag a Button tool to the panel.
 

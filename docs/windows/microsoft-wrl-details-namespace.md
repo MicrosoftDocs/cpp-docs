@@ -33,7 +33,7 @@ namespace Microsoft::WRL::Details;
 |[MakeAllocator Class](../windows/makeallocator-class.md)|Allocates memory for an activatable class, with or without weak reference support.|
 |[ModuleBase Class](../windows/modulebase-class.md)|Represents the base class of the [Module](../windows/module-class.md) classes.|
 |[RemoveIUnknown Class](../windows/removeiunknown-class.md)|Makes a type that is equivalent to an `IUnknown`-based type, but has non-virtual `QueryInterface`, `AddRef`, and `Release` methods.|
-|[WeakReference Class](../windows/weakreference-class1.md)|Represents a *weak reference* that can be used with the Windows Runtime or classic COM. A weak reference represents an object that might or might not be accessible.|
+|[WeakReference Class](../windows/weakreference-class.md)|Represents a *weak reference* that can be used with the Windows Runtime or classic COM. A weak reference represents an object that might or might not be accessible.|
 
 ### Structures
 
