@@ -618,12 +618,12 @@ basic_string(
 
 template <class InputIterator>
 basic_string(
-InputIterator first,
+    InputIterator first,
     InputIterator last);
 
 template <class InputIterator>
 basic_string(
-InputIterator first,
+    InputIterator first,
     InputIterator last,
     const allocator_type& _Al);
 

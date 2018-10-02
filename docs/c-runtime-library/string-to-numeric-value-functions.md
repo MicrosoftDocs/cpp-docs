@@ -75,7 +75,7 @@ When the value returned by these functions would cause an overflow or underflow,
 |`_strtoui64`|Overflow|**_UI64_MAX**|
 |`_strtoui64`|No conversion|0|
 
- **_I64_MAX**, _**I64_MIN**, and **_UI64_MAX** are defined in LIMITS.H.
+**_I64_MAX**, _**I64_MIN**, and **_UI64_MAX** are defined in LIMITS.H.
 
 `wcstod`, `wcstol`, `wcstoul`, `_wcstoi64`, and `_wcstoui64` are wide-character versions of `strtod`, `strtol`, `strtoul`, `_strtoi64`, and `_strtoui64`, respectively; the pointer to an end-of-conversion argument to each of these wide-character functions is a wide-character string. Otherwise, each of these wide-character functions behaves identically to its single-byte-character counterpart.
 

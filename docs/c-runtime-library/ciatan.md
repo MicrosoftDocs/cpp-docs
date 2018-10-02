@@ -32,7 +32,8 @@ This version of the `atan` function has a specialized calling convention that th
 The resulting value is pushed onto the top of the stack.
 
 ## Requirements
- **Platform:** x86
+
+**Platform:** x86
 
 ## See Also
 

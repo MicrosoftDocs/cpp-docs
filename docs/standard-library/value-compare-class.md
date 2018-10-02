@@ -20,16 +20,16 @@ Provides a function object that can compare the elements of a hash_map by compar
 
 ```cpp
 class value_compare
- : std::public binary_function<value_type, value_type, bool>
+    : std::public binary_function<value_type, value_type, bool>
 {
 public:
     bool operator()(
-    const value_type& left,
-    const value_type& right) const
- {
-    return (comp(left.first, right.first));
+        const value_type& left,
+        const value_type& right) const
+    {
+        return (comp(left.first, right.first));
+    }
 
-}
 protected:
     value_compare(const key_compare& c) : comp (c) { }
     key_compare comp;
