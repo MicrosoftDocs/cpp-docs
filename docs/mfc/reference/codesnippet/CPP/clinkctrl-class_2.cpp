@@ -3,7 +3,7 @@
 	SIZE sz = {0};
 	PTCHAR url = 
 		_T("Link 2)  ")
-		_T("<A HREF=\"http://msdn2.microsoft.com/visualc/default.aspx\">")
+		_T("<A HREF=\"https://visualstudio.microsoft.com\">")
 		_T("Microsoft VC++ Home")
 		_T("</A>");
 	m_Link1.GetWindowRect( &rect1 );
