@@ -29,9 +29,9 @@ The identifier of the interface implementing `IErrorInfo`.
 
 ## Remarks
 
-The **support_error_info** C++ attribute implements support for returning detailed, contextual errors encountered by the target object to the client. For the object to support errors, the methods of the `IErrorInfo` interface must be implemented by the object. For more information, see [Supporting IDispatch and IErrorInfo](../atl/supporting-idispatch-and-ierrorinfo.md).
+The **support_error_info** C++ attribute implements support for returning detailed, contextual errors encountered by the target object to the client. For the object to support errors, the methods of the `IErrorInfo` interface must be implemented by the object. For more information, see [Supporting IDispatch and IErrorInfo](../../atl/supporting-idispatch-and-ierrorinfo.md).
 
-This attribute adds the [ISupportErrorInfoImpl](../atl/reference/isupporterrorinfoimpl-class.md) class as a base class to the target object. This results in a default implementation of `ISupportErrorInfo` and can be used when a single interface generates errors on an object.
+This attribute adds the [ISupportErrorInfoImpl](../../atl/reference/isupporterrorinfoimpl-class.md) class as a base class to the target object. This results in a default implementation of `ISupportErrorInfo` and can be used when a single interface generates errors on an object.
 
 ## Example
 

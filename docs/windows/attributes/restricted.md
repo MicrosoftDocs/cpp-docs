@@ -1,7 +1,7 @@
 ---
-title: "restricted | Microsoft Docs"
+title: "restricted (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.restricted"]
@@ -71,10 +71,10 @@ class c : public a, public b
 |**Required attributes**|**coclass** (when applied to **class** or **struct**)|
 |**Invalid attributes**|None|
 
-For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](attribute-contexts.md).
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)<br/>
-[Interface Attributes](../windows/interface-attributes.md)<br/>
-[Method Attributes](../windows/method-attributes.md)  
+[IDL Attributes](idl-attributes.md)<br/>
+[Interface Attributes](interface-attributes.md)<br/>
+[Method Attributes](method-attributes.md)  

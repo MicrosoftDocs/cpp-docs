@@ -50,14 +50,14 @@ The **custom** attribute has the same functionality as the [custom](/windows/des
 |**Required attributes**|**coclass** (when used on class)|
 |**Invalid attributes**|None|
 
-For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](attribute-contexts.md).
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)<br/>
-[Stand-Alone Attributes](../windows/stand-alone-attributes.md)<br/>
-[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
-[Parameter Attributes](../windows/parameter-attributes.md)<br/>
-[Method Attributes](../windows/method-attributes.md)<br/>
-[Class Attributes](../windows/class-attributes.md)<br/>
-[Interface Attributes](../windows/interface-attributes.md)  
+[IDL Attributes](idl-attributes.md)<br/>
+[Stand-Alone Attributes](stand-alone-attributes.md)<br/>
+[Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
+[Parameter Attributes](parameter-attributes.md)<br/>
+[Method Attributes](method-attributes.md)<br/>
+[Class Attributes](class-attributes.md)<br/>
+[Interface Attributes](interface-attributes.md)  

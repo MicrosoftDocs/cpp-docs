@@ -30,7 +30,7 @@ The ID of the required category.
 
 ## Remarks
 
-The **requires_category** C++ attribute specifies the component categories required by the target class. For more information, see [REQUIRED_CATEGORY](../atl/reference/category-macros.md#required_category).
+The **requires_category** C++ attribute specifies the component categories required by the target class. For more information, see [REQUIRED_CATEGORY](../../atl/reference/category-macros.md#required_category).
 
 This attribute requires that the [coclass](coclass.md), [progid](progid.md), or [vi_progid](vi-progid.md) attribute (or another attribute that implies one of these) also be applied to the same element.
 

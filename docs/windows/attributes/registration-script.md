@@ -29,7 +29,7 @@ The full path to a custom registration script (.rgs) file. A value of **none**, 
 
 ## Remarks
 
-The **registration_script** C++ attribute executes the custom registration script specified by *script*. If this attribute is not specified, a standard .rgs file (containing information for registering the component) is used. For more information on .rgs files, see [The ATL Registry Component (Registrar)](../atl/atl-registry-component-registrar.md).
+The **registration_script** C++ attribute executes the custom registration script specified by *script*. If this attribute is not specified, a standard .rgs file (containing information for registering the component) is used. For more information on .rgs files, see [The ATL Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md).
 
 This attribute requires that the [coclass](coclass.md), [progid](progid.md), or [vi_progid](vi-progid.md) attribute (or another attribute that implies one of these) also be applied to the same element.
 

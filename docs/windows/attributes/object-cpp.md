@@ -52,4 +52,4 @@ For more information about the attribute contexts, see [Attribute Contexts](attr
 [dual](dual.md)<br/>
 [dispinterface](dispinterface.md)<br/>
 [custom](custom-cpp.md)<br/>
-[__interface](../cpp/interface.md)  
+[__interface](../../cpp/interface.md)  

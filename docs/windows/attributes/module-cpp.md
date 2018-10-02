@@ -96,15 +96,15 @@ If this attribute is used within a project that uses ATL, the behavior of the at
 
 - `type` = **dll**
 
-   [CAtlDllModuleT](../atl/reference/catldllmodulet-class.md) is used as the base class and the standard DLL entry points required for a COM server. These entry points are [DllMain](/windows/desktop/Dlls/dllmain), [DllRegisterServer](https://msdn.microsoft.com/library/windows/desktop/ms682162), [DllUnRegisterServer](https://msdn.microsoft.com/library/windows/desktop/ms691457), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), and [DllGetClassObject](https://msdn.microsoft.com/library/windows/desktop/dd797891).
+   [CAtlDllModuleT](../../atl/reference/catldllmodulet-class.md) is used as the base class and the standard DLL entry points required for a COM server. These entry points are [DllMain](/windows/desktop/Dlls/dllmain), [DllRegisterServer](https://msdn.microsoft.com/library/windows/desktop/ms682162), [DllUnRegisterServer](https://msdn.microsoft.com/library/windows/desktop/ms691457), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), and [DllGetClassObject](https://msdn.microsoft.com/library/windows/desktop/dd797891).
 
 - `type` = **exe**
 
-   [CAtlExeModuleT](../atl/reference/catlexemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559).
+   [CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559).
 
 - `type` = **service**
 
-   [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559).
+   [CAtlServiceModuleT](../../atl/reference/catlservicemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559).
 
 - `type` = **unspecified**
 
@@ -120,7 +120,7 @@ The following code shows how to create a library block in the generated .idl fil
 [module(name="MyLibrary", version="1.2", helpfile="MyHelpFile")];
 ```
 
-The following code shows that you can provide your own implementation of a function that would appear in the code that was injected as a result of using **module**. See [/Fx](../build/reference/fx-merge-injected-code.md) for more information on viewing injected code. In order to override one of the functions inserted by the **module** attribute, make a class that will contain your implementation of the function and make the **module** attribute apply to that class.
+The following code shows that you can provide your own implementation of a function that would appear in the code that was injected as a result of using **module**. See [/Fx](../../build/reference/fx-merge-injected-code.md) for more information on viewing injected code. In order to override one of the functions inserted by the **module** attribute, make a class that will contain your implementation of the function and make the **module** attribute apply to that class.
 
 ```cpp
 // cpp_attr_ref_module2.cpp

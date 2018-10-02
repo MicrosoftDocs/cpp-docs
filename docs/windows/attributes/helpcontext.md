@@ -25,7 +25,7 @@ Specifies a context ID that lets the user view information about this element in
 ### Parameters
 
 *id*<br/>
-The context ID of the help topic. See [HTML Help: Context-Sensitive Help for Your Programs](../mfc/html-help-context-sensitive-help-for-your-programs.md) for more information on context IDs.
+The context ID of the help topic. See [HTML Help: Context-Sensitive Help for Your Programs](../../mfc/html-help-context-sensitive-help-for-your-programs.md) for more information on context IDs.
 
 ## Remarks
 

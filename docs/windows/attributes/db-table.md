@@ -38,7 +38,7 @@ A string specifying the name of a database table (such as "Products").
 
 ## Remarks
 
-**db_table** creates a [CTable](../data/oledb/ctable-class.md) object, which is used by an OLE DB consumer to open a table. You can use this attribute only at the class level; you cannot use it inline. Use `db_column` to bind table columns to variables; use `db_param` to delimit (set the parameter type and so on) of parameters.
+**db_table** creates a [CTable](../../data/oledb/ctable-class.md) object, which is used by an OLE DB consumer to open a table. You can use this attribute only at the class level; you cannot use it inline. Use `db_column` to bind table columns to variables; use `db_param` to delimit (set the parameter type and so on) of parameters.
 
 When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to \_*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName*, which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.
 

@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # Class Attributes
 
-The following attributes apply to the [class](../cpp/class-cpp.md) C++ keyword.
+The following attributes apply to the [class](../../cpp/class-cpp.md) C++ keyword.
 
 |Attribute|Description|
 |---------------|-----------------|

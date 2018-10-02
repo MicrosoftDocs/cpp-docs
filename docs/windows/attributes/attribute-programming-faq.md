@@ -53,7 +53,7 @@ An HRESULT is a simple data type that is often used as a return value by attribu
 
 ##  <a name="vcconattributeprogrammmingfaqanchor2"></a> When do I have to specify the parameter name for an attribute?
 
-In most cases, if the attribute has a single parameter, that parameter is named. This name is not required when inserting the attribute in your code. For example, the following usage of the [aggregatable](../windows/aggregatable.md) attribute:
+In most cases, if the attribute has a single parameter, that parameter is named. This name is not required when inserting the attribute in your code. For example, the following usage of the [aggregatable](aggregatable.md) attribute:
 
 ```cpp
 [coclass, aggregatable(value=allowed)]
@@ -77,17 +77,17 @@ However, the following attributes have single, unnamed parameters:
 
 ||||
 |-|-|-|
-|[call_as](../windows/call-as.md)|[case](../windows/case-cpp.md)|[cpp_quote](../windows/cpp-quote.md)|
-|[default](../windows/default-cpp.md)|[defaultvalue](../windows/defaultvalue.md)|[defaultvtable](../windows/defaultvtable.md)|
-|[emitidl](../windows/emitidl.md)|[entry](../windows/entry.md)|[first_is](../windows/first-is.md)|
-|[helpcontext](../windows/helpcontext.md)|[helpfile](../windows/helpfile.md)|[helpstring](../windows/helpstring.md)|
-|[helpstringcontext](../windows/helpstringcontext.md)|[helpstringdll](../windows/helpstringdll.md)|[id](../windows/id.md)|
-|[iid_is](../windows/iid-is.md)|[import](../windows/import.md)|[importlib](../windows/importlib.md)|
-|[include](../windows/include-cpp.md)|[includelib](../windows/includelib-cpp.md)|[last_is](../windows/last-is.md)|
-|[length_is](../windows/length-is.md)|[max_is](../windows/max-is.md)|[no_injected_text](../windows/no-injected-text.md)|
-|[pointer_default](../windows/pointer-default.md)|[pragma](../windows/pragma.md)|[restricted](../windows/restricted.md)|
-|[size_is](../windows/size-is.md)|[source](../windows/source-cpp.md)|[switch_is](../windows/switch-is.md)|
-|[switch_type](../windows/switch-type.md)|[transmit_as](../windows/transmit-as.md)|[wire_marshal](../windows/wire-marshal.md)|
+|[call_as](call-as.md)|[case](case-cpp.md)|[cpp_quote](cpp-quote.md)|
+|[default](default-cpp.md)|[defaultvalue](defaultvalue.md)|[defaultvtable](defaultvtable.md)|
+|[emitidl](emitidl.md)|[entry](entry.md)|[first_is](first-is.md)|
+|[helpcontext](helpcontext.md)|[helpfile](helpfile.md)|[helpstring](helpstring.md)|
+|[helpstringcontext](helpstringcontext.md)|[helpstringdll](helpstringdll.md)|[id](id.md)|
+|[iid_is](iid-is.md)|[import](import.md)|[importlib](importlib.md)|
+|[include](include-cpp.md)|[includelib](includelib-cpp.md)|[last_is](last-is.md)|
+|[length_is](length-is.md)|[max_is](max-is.md)|[no_injected_text](no-injected-text.md)|
+|[pointer_default](pointer-default.md)|[pragma](pragma.md)|[restricted](restricted.md)|
+|[size_is](size-is.md)|[source](source-cpp.md)|[switch_is](switch-is.md)|
+|[switch_type](switch-type.md)|[transmit_as](transmit-as.md)|[wire_marshal](wire-marshal.md)|
 
 ##  <a name="vcconattributeprogrammmingfaqanchor3"></a> Can I use comments in an attribute block?
 
@@ -119,11 +119,11 @@ You may have a nonattributed ATL project, which has an .idl file, and you may wa
 
 ##  <a name="vcconattributeprogrammmingfaqanchor6"></a> How can I use an .idl file in an attributed project?
 
-You may have a .idl file that you want to use in your ATL attributed project. In this case, you would use the [importidl](../windows/importidl.md) attribute, compile the .idl file to a .h file (see the [MIDL Property Pages](../ide/midl-property-pages.md) in the project's **Property Pages** dialog box), and then include the .h file in your project.
+You may have a .idl file that you want to use in your ATL attributed project. In this case, you would use the [importidl](importidl.md) attribute, compile the .idl file to a .h file (see the [MIDL Property Pages](../../ide/midl-property-pages.md) in the project's **Property Pages** dialog box), and then include the .h file in your project.
 
 ##  <a name="vcconattributeprogrammmingfaqanchor7"></a> Can I modify code that is injected by an attribute?
 
-Some attributes inject code into your project. You can see the injected code by using the [/Fx](../build/reference/fx-merge-injected-code.md) compiler option. It is also possible to copy code from the injected file and paste it into your source code. This allows you to modify the behavior of the attribute. However, you may have to modify other parts of your code as well.
+Some attributes inject code into your project. You can see the injected code by using the [/Fx](../../build/reference/fx-merge-injected-code.md) compiler option. It is also possible to copy code from the injected file and paste it into your source code. This allows you to modify the behavior of the attribute. However, you may have to modify other parts of your code as well.
 
 The following sample is the result of copying injected code into a source code file:
 
@@ -233,7 +233,7 @@ int main() {}
 
 ##  <a name="vcconattributeprogrammmingfaqhowcaniforwarddeclareanattributedinterface"></a> How can I forward declare an attributed interface?
 
-If you are going to make a forward declaration of an attributed interface, you must apply the same attributes to the forward declaration that you apply to the actual interface declaration. You must also apply the [export](../windows/export.md) attribute to your forward declaration.
+If you are going to make a forward declaration of an attributed interface, you must apply the same attributes to the forward declaration that you apply to the actual interface declaration. You must also apply the [export](export.md) attribute to your forward declaration.
 
 ##  <a name="vcconcaniuseattributesonclassderivedfromclassthatalsousesattributesanchor"></a> Can I use attributes on a class derived from a class that also uses attributes?
 
@@ -241,4 +241,4 @@ No, using attributes on a class derived from a class that also uses attributes i
 
 ## See Also
 
-[Concepts](../windows/attributed-programming-concepts.md)
+[Concepts](attributed-programming-concepts.md)

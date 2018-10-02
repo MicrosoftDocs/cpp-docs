@@ -18,7 +18,7 @@ C++ attributes can be described using four basic fields: the target they can be 
 
 This field describes the different C++ language elements that are legal targets for the specified attribute. For instance, if an attribute specifies "class" in the **Applies To** field, this indicates that the attribute can only be applied to a legal C++ class. If the attribute is applied to a member function of a class, a syntax error would result.
   
-For more information, see [Attributes by Usage](../windows/attributes-by-usage.md).
+For more information, see [Attributes by Usage](attributes-by-usage.md).
   
 ## Repeatable
 
@@ -34,4 +34,4 @@ This field lists other attributes that are incompatible with the specified attri
   
 ## See Also
 
-[C++ Attributes Reference](../windows/cpp-attributes-reference.md)
+[C++ Attributes Reference](cpp-attributes-com-net.md)

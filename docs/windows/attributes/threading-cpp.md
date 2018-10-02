@@ -43,7 +43,7 @@ The default value is `apartment`.
 
 The **threading** C++ attribute does not appear in the generated .idl file but will be used in the implementation of your COM object.
 
-In ATL projects, If the [coclass](coclass.md) attribute is also present, the threading model specified by *model* is passed as the template parameter to the [CComObjectRootEx](../atl/reference/ccomobjectrootex-class.md) class, inserted by the `coclass` attribute.
+In ATL projects, If the [coclass](coclass.md) attribute is also present, the threading model specified by *model* is passed as the template parameter to the [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md) class, inserted by the `coclass` attribute.
 
 The **threading** attribute also guards access to an [event_source](event-source.md).
 
@@ -69,5 +69,5 @@ For more information about the attribute contexts, see [Attribute Contexts](attr
 [COM Attributes](com-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>
-[Multithreading Support for Older Code (Visual C++)](../parallel/multithreading-support-for-older-code-visual-cpp.md)<br/>
+[Multithreading Support for Older Code (Visual C++)](../../parallel/multithreading-support-for-older-code-visual-cpp.md)<br/>
 [Neutral Apartments](/windows/desktop/cossdk/neutral-apartments)  

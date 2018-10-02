@@ -47,7 +47,7 @@ For more information, see,
 
 - [Attribute Parameter Types](attribute-parameter-types-cpp-component-extensions.md)
 
-For information on signing assemblies in Visual C++, see [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
+For information on signing assemblies in Visual C++, see [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
 
 ### Requirements
 

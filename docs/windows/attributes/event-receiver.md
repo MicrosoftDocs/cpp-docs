@@ -49,7 +49,7 @@ Specify *layout_dependent* only if `type`=**com**. *layout_dependent* is a Boole
 
 The **event_receiver** C++ attribute specifies that the class or structure to which it is applied will be an event receiver, using the Visual C++ unified event model.
 
-**event_receiver** is used with the [event_source](event-source.md) attribute and the [__hook](../cpp/hook.md) and [__unhook](../cpp/unhook.md) keywords. Use `event_source` to create event sources. Use **__hook** within an event receiver's methods to associate ("hook") event receiver methods to the events of an event source. Use **__unhook** to dissociate them.
+**event_receiver** is used with the [event_source](event-source.md) attribute and the [__hook](../../cpp/hook.md) and [__unhook](../../cpp/unhook.md) keywords. Use `event_source` to create event sources. Use **__hook** within an event receiver's methods to associate ("hook") event receiver methods to the events of an event source. Use **__unhook** to dissociate them.
 
 *layout_dependent* is only specified for COM event receivers (`type`=**com**). The default for *layout_dependent* is **false**.
 
@@ -73,7 +73,7 @@ For more information, see [Attribute Contexts](attribute-contexts.md).
 
 [Compiler Attributes](compiler-attributes.md)<br/>
 [event_source](event-source.md)<br/>
-[__event](../cpp/event.md)<br/>
-[__hook](../cpp/hook.md)<br/>
-[__unhook](../cpp/unhook.md)<br/>
+[__event](../../cpp/event.md)<br/>
+[__hook](../../cpp/hook.md)<br/>
+[__unhook](../../cpp/unhook.md)<br/>
 [Class Attributes](class-attributes.md)  

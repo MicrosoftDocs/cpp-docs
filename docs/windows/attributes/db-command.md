@@ -106,15 +106,15 @@ If you do not specify a value for *bindings*, **db_command** will parse the bind
 *bulk_fetch*<br/>
 (Optional) An integer value that specifies the number of rows to fetch.
 
-The default value is 1, which specifies single row fetching (the rowset will be of type [CRowset](../data/oledb/crowset-class.md)).
+The default value is 1, which specifies single row fetching (the rowset will be of type [CRowset](../../data/oledb/crowset-class.md)).
 
-A value greater than 1 specifies bulk row fetching. Bulk row fetching refers to the ability of bulk rowsets to fetch multiple row handles (the rowset will be of type [CBulkRowset](../data/oledb/cbulkrowset-class.md) and will call `SetRows` with the specified number of rows).
+A value greater than 1 specifies bulk row fetching. Bulk row fetching refers to the ability of bulk rowsets to fetch multiple row handles (the rowset will be of type [CBulkRowset](../../data/oledb/cbulkrowset-class.md) and will call `SetRows` with the specified number of rows).
 
 If *bulk_fetch* is less than one, `SetRows` will return zero.
 
 ## Remarks
 
-**db_command** creates a [CCommand](../data/oledb/ccommand-class.md) object, which is used by an OLE DB consumer to execute a command.
+**db_command** creates a [CCommand](../../data/oledb/ccommand-class.md) object, which is used by an OLE DB consumer to execute a command.
 
 You can use **db_command** with either class or function scope; the main difference is the scope of the `CCommand` object. With function scope, data such as bindings terminate at function end. Both class and function scope usages involve the OLE DB Consumer Template class `CCommand<>`, but the template arguments differ for the function and class cases. In the function case, bindings will be made to an `Accessor` that comprises local variables, while the class usage will infer a `CAccessor`-derived class as the argument. When used as a class attribute, **db_command** works in conjunction with **db_column**.
 
@@ -124,7 +124,7 @@ When the consumer attribute provider applies this attribute to a class, the comp
 
 ## Example
 
-This sample defines a command that selects the first and last names from a table where the state column matches 'CA'. **db_command** creates and reads a rowset on which you can call wizard-generated functions such as [OpenAll and CloseAll](../data/oledb/consumer-wizard-generated-methods.md), as well as `CRowset` member functions such as [MoveNext](../data/oledb/crowset-movenext.md).
+This sample defines a command that selects the first and last names from a table where the state column matches 'CA'. **db_command** creates and reads a rowset on which you can call wizard-generated functions such as [OpenAll and CloseAll](../../data/oledb/consumer-wizard-generated-methods.md), as well as `CRowset` member functions such as [MoveNext](../../data/oledb/crowset-movenext.md).
 
 Note that this code requires you to provide your own connection string that connects to the pubs database. For information on how to do this in the development environment, see [How to: Connect to a Database and Browse Existing Objects](/sql/ssdt/how-to-connect-to-a-database-and-browse-existing-objects) and [Add new connections](/visualstudio/data-tools/add-new-connections).
 

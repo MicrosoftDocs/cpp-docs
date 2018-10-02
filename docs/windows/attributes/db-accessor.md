@@ -32,11 +32,11 @@ A Boolean value that specifies whether the accessor is automatically retrieved (
 
 ## Remarks
 
-**db_accessor** defines the underlying OLE DB accessor for subsequent `db_column` and `db_param` attributes within the same class or function. **db_accessor** is usable at member level and is used to group `db_column` attributes that participate in OLE DB `IAccessor`-based binding. It is used in conjunction with either the `db_table` or `db_command` attributes. Calling this attribute is similar to calling the [BEGIN_ACCESSOR](../data/oledb/begin-accessor.md) and [END_ACCESSOR](../data/oledb/end-accessor.md) macros.
+**db_accessor** defines the underlying OLE DB accessor for subsequent `db_column` and `db_param` attributes within the same class or function. **db_accessor** is usable at member level and is used to group `db_column` attributes that participate in OLE DB `IAccessor`-based binding. It is used in conjunction with either the `db_table` or `db_command` attributes. Calling this attribute is similar to calling the [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) and [END_ACCESSOR](../../data/oledb/end-accessor.md) macros.
 
 **db_accessor** generates a rowset and binds it to the corresponding accessor maps. If you do not call **db_accessor**, accessor 0 will automatically be generated, and all column bindings will be mapped to this accessor block.
 
-**db_accessor** groups database column bindings into one or more accessors. For a discussion of the scenarios in which you need to use multiple accessors, see [Using Multiple Accessors on a Rowset](../data/oledb/using-multiple-accessors-on-a-rowset.md). Also see "User Record Support for Multiple Accessors" in [User Records](../data/oledb/user-records.md).
+**db_accessor** groups database column bindings into one or more accessors. For a discussion of the scenarios in which you need to use multiple accessors, see [Using Multiple Accessors on a Rowset](../../data/oledb/using-multiple-accessors-on-a-rowset.md). Also see "User Record Support for Multiple Accessors" in [User Records](../../data/oledb/user-records.md).
 
 When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to \_*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName*, which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.
 

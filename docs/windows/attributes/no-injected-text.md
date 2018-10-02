@@ -29,7 +29,7 @@ Prevents the compiler from injecting code as a result of attribute use.
 
 ## Remarks
 
-The most common use of the **no_injected_text** C++ attribute is by the [/Fx](../build/reference/fx-merge-injected-code.md) compiler option, which inserts the **no_injected_text** attribute into the .mrg file.
+The most common use of the **no_injected_text** C++ attribute is by the [/Fx](../../build/reference/fx-merge-injected-code.md) compiler option, which inserts the **no_injected_text** attribute into the .mrg file.
 
 ## Requirements
 

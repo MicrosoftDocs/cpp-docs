@@ -37,7 +37,7 @@ If you do not specify **uuid**, then the compiler will generate the same GUID fo
 
 You can use Uuidgen.exe or Guidgen.exe to generate your own unique IDs. (To run either of these tools, click **Start** and click **Run** on the menu. Then enter the name of the required tool.)
 
-When used in a project that does not also use ATL, specifying the **uuid** attribute is the same as specifying the [uuid](../cpp/uuid-cpp.md) **__declspec** modifier. To retrieve the **uuid** of a class, you can use [__uuidof](../cpp/uuidof-operator.md)
+When used in a project that does not also use ATL, specifying the **uuid** attribute is the same as specifying the [uuid](../../cpp/uuid-cpp.md) **__declspec** modifier. To retrieve the **uuid** of a class, you can use [__uuidof](../../cpp/uuidof-operator.md)
 
 ## Example
 

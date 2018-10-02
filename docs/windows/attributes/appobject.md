@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # appobject
 
-Identifies the coclass as an application object, which is associated with a full .exe application, and indicates that the functions and properties of the coclass are globally available in this [type library](../mfc/automation-clients-using-type-libraries.md).
+Identifies the coclass as an application object, which is associated with a full .exe application, and indicates that the functions and properties of the coclass are globally available in this [type library](../../mfc/automation-clients-using-type-libraries.md).
 
 ## Syntax
 

@@ -18,7 +18,7 @@ Microsoft defines a set of C++ attributes that simplify COM programming and .NET
 While attributes eliminate some of the detailed coding needed to write COM objects, you need a background in [COM fundamentals](/windows/desktop/com/the-component-object-model) to best use them.
 
 > [!NOTE]
-> If you are looking for C++ standard attributes, see [Attributes](../cpp/attributes.md).
+> If you are looking for C++ standard attributes, see [Attributes](../../cpp/attributes.md).
 
 ## Purpose of Attributes
 
@@ -32,7 +32,7 @@ Attributes extend C++ in directions not currently possible without breaking the 
 
 - Replaces the large amount of IDL code required by a COM component with a few concise attributes.
 
-For example, to implement a simple event sink for a generic ATL class, you could apply the [event_receiver](../windows/event-receiver.md) attribute to a specific class such as `CMyReceiver`. The `event_receiver` attribute is then compiled by the Visual C++ compiler, which inserts the proper code into the object file.
+For example, to implement a simple event sink for a generic ATL class, you could apply the [event_receiver](event-receiver.md) attribute to a specific class such as `CMyReceiver`. The `event_receiver` attribute is then compiled by the Visual C++ compiler, which inserts the proper code into the object file.
 
 ```cpp
 [event_receiver(com)]
@@ -43,34 +43,34 @@ class CMyReceiver
 }
 ```
 
-You can then set up the `CMyReceiver` methods `handler1` and `handler2` to handle events (using the intrinsic function [__hook](../cpp/hook.md)) from an event source, which you can create using [event_source](../windows/event-source.md).
+You can then set up the `CMyReceiver` methods `handler1` and `handler2` to handle events (using the intrinsic function [__hook](../../cpp/hook.md)) from an event source, which you can create using [event_source](event-source.md).
 
 ## Basic Mechanics of Attributes
 
-There are three ways to insert attributes into your project. First, you can insert them manually into your source code. Second, you can insert them using the property grid of an object in your project. Finally, you can insert them using the various wizards. For more information on using the **Properties** window and the various wizards, see [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md).
+There are three ways to insert attributes into your project. First, you can insert them manually into your source code. Second, you can insert them using the property grid of an object in your project. Finally, you can insert them using the various wizards. For more information on using the **Properties** window and the various wizards, see [Creating and Managing Visual C++ Projects](../../ide/creating-and-managing-visual-cpp-projects.md).
 
 As before, when the project is built, the compiler parses each C++ source file, producing an object file. However, when the compiler encounters an attribute, it is parsed and syntactically verified. The compiler then dynamically calls an attribute provider to insert code or make other modifications at compile time. The implementation of the provider differs depending on the type of attribute. For example, ATL-related attributes are implemented by Atlprov.dll.
 
 The following figure demonstrates the relationship between the compiler and the attribute provider.
 
-![Component attribute communication](../windows/media/vccompattrcomm.gif "vcCompAttrComm")
+![Component attribute communication](media/vccompattrcomm.gif "vcCompAttrComm")
 
 > [!NOTE]
-> Attribute usage does not alter the contents of the source file. The only time the generated attribute code is visible is during debugging sessions. In addition, for each source file in the project, you can generate a text file that displays the results of the attribute substitution. For more information on this procedure, see [/Fx (Merge Injected Code)](../build/reference/fx-merge-injected-code.md) and [Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code).
+> Attribute usage does not alter the contents of the source file. The only time the generated attribute code is visible is during debugging sessions. In addition, for each source file in the project, you can generate a text file that displays the results of the attribute substitution. For more information on this procedure, see [/Fx (Merge Injected Code)](../../build/reference/fx-merge-injected-code.md) and [Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code).
 
-Like most C++ constructs, attributes have a set of characteristics that defines their proper usage. This is referred to as the context of the attribute and is addressed in the attribute context table for each attribute reference topic. For example, the [coclass](../windows/coclass.md) attribute can only be applied to an existing class or structure, as opposed to the [cpp_quote](../windows/cpp-quote.md) attribute, which can be inserted anywhere within a C++ source file.
+Like most C++ constructs, attributes have a set of characteristics that defines their proper usage. This is referred to as the context of the attribute and is addressed in the attribute context table for each attribute reference topic. For example, the [coclass](coclass.md) attribute can only be applied to an existing class or structure, as opposed to the [cpp_quote](cpp-quote.md) attribute, which can be inserted anywhere within a C++ source file.
 
 ## Building an Attributed Program
 
 After you put Visual C++ attributes into your source code, you may want the Visual C++ compiler to produce a type library and .idl file for you. The following linker options help you build .tlb and .idl files:
 
-- [/IDLOUT](../build/reference/idlout-name-midl-output-files.md)
+- [/IDLOUT](../../build/reference/idlout-name-midl-output-files.md)
 
-- [/IGNOREIDL](../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)
+- [/IGNOREIDL](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)
 
-- [/MIDL](../build/reference/midl-specify-midl-command-line-options.md)
+- [/MIDL](../../build/reference/midl-specify-midl-command-line-options.md)
 
-- [/TLBOUT](../build/reference/tlbout-name-dot-tlb-file.md)
+- [/TLBOUT](../../build/reference/tlbout-name-dot-tlb-file.md)
 
 Some projects contain multiple independent .idl files. These are used to produce two or more .tlb files and optionally bind them into the resource block. This scenario is not currently supported in Visual C++.
 
@@ -84,7 +84,7 @@ C++ attributes can be described using four basic fields: the target they can be 
 
 This field describes the different C++ language elements that are legal targets for the specified attribute. For instance, if an attribute specifies "class" in the **Applies To** field, this indicates that the attribute can only be applied to a legal C++ class. If the attribute is applied to a member function of a class, a syntax error would result.
   
-For more information, see [Attributes by Usage](../windows/attributes-by-usage.md).
+For more information, see [Attributes by Usage](attributes-by-usage.md).
   
 ### Repeatable
 
@@ -102,19 +102,19 @@ This field lists other attributes that are incompatible with the specified attri
 ## See Also
 ## In This Section
 
-[Concepts](../windows/attributed-programming-concepts.md)<br/>
+[Concepts](attributed-programming-concepts.md)<br/>
 Describes the various concepts that are related to attributes.
 
-[Attributes by Group](../windows/attributes-by-group.md)<br/>
+[Attributes by Group](attributes-by-group.md)<br/>
 Provides links to attribute reference topics, grouped by function.
 
-[Attributes by Usage](../windows/attributes-by-usage.md)<br/>
+[Attributes by Usage](attributes-by-usage.md)<br/>
 Provides links to attribute reference topics, grouped by usage.
 
-[Attributes Alphabetical Reference](../windows/attributes-alphabetical-reference.md)<br/>
+[Attributes Alphabetical Reference](attributes-alphabetical-reference.md)<br/>
 Provides links to all attribute reference topics.
 
 ## Related Sections
 
-[Attributed Programming](../windows/attributed-programming-concepts.md)<br/>
+[Attributed Programming](attributed-programming-concepts.md)<br/>
 Provides a conceptual overview of attributes.

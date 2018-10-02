@@ -26,7 +26,7 @@ Adds an interface entry into the COM map of the target class.
 ### Parameters
 
 *com_interface_entry*<br/>
-A string containing the actual text of the entry. For a list of possible values, see [COM_INTERFACE_ENTRY Macros](../atl/reference/com-interface-entry-macros.md).
+A string containing the actual text of the entry. For a list of possible values, see [COM_INTERFACE_ENTRY Macros](../../atl/reference/com-interface-entry-macros.md).
 
 ## Remarks
 

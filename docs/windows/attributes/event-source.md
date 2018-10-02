@@ -41,13 +41,13 @@ An enumeration of one of the following values:
 When *type* is `native`, you can specify `optimize=size`, to indicate that there is 4 bytes of storage (minimum) for all events in a class or `optimize=speed` (the default) to indicate that there is 4 * (# of events) bytes of storage.
 
 *decorate*<br/>
-When *type* is `native`, you can specify `decorate=false`, to indicate that the expanded name in the merged (.mrg) file should not include the enclosing class name. [/Fx](../build/reference/fx-merge-injected-code.md) lets you generate .mrg files. `decorate=false`, which is the default, results in fully-qualified type names in the merged file.
+When *type* is `native`, you can specify `decorate=false`, to indicate that the expanded name in the merged (.mrg) file should not include the enclosing class name. [/Fx](../../build/reference/fx-merge-injected-code.md) lets you generate .mrg files. `decorate=false`, which is the default, results in fully-qualified type names in the merged file.
 
 ## Remarks
 
 The **event_source** C++ attribute specifies that the class or structure to which it is applied will be an event source.
 
-**event_source** is used in conjunction with the [event_receiver](event-receiver.md) attribute and the [__event](../cpp/event.md) keyword. Use `event_receiver` to create event receivers. Use **__event** on methods within the event source to specify those methods as events.
+**event_source** is used in conjunction with the [event_receiver](event-receiver.md) attribute and the [__event](../../cpp/event.md) keyword. Use `event_receiver` to create event receivers. Use **__event** on methods within the event source to specify those methods as events.
 
 > [!NOTE]
 > A templated class or struct cannot contain events.
@@ -69,7 +69,7 @@ For more information, see [Attribute Contexts](attribute-contexts.md).
 
 [Compiler Attributes](compiler-attributes.md)<br/>
 [event_receiver](event-receiver.md)<br/>
-[__event](../cpp/event.md)<br/>
-[__hook](../cpp/hook.md)<br/>
-[__unhook](../cpp/unhook.md)<br/>
+[__event](../../cpp/event.md)<br/>
+[__hook](../../cpp/hook.md)<br/>
+[__unhook](../../cpp/unhook.md)<br/>
 [Class Attributes](class-attributes.md)  

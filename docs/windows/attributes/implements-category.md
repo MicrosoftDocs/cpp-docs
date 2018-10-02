@@ -67,4 +67,4 @@ For more information, see [Attribute Contexts](attribute-contexts.md).
 
 [COM Attributes](com-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>
-[IMPLEMENTED_CATEGORY](../atl/reference/category-macros.md#implemented_category)  
+[IMPLEMENTED_CATEGORY](../../atl/reference/category-macros.md#implemented_category)  

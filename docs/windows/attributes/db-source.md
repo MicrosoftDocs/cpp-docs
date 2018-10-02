@@ -35,7 +35,7 @@ The connection string used to connect to the data source. For the format of the 
 
 ## Remarks
 
-**db_source** creates a [CDataSource](../data/oledb/cdatasource-class.md) and a [CSession](../data/oledb/csession-class.md) object, which together represent a connection with an OLE DB consumer data source.
+**db_source** creates a [CDataSource](../../data/oledb/cdatasource-class.md) and a [CSession](../../data/oledb/csession-class.md) object, which together represent a connection with an OLE DB consumer data source.
 
 When you use **db_source** on a class, the `CSession` object becomes a member of the class.
 
