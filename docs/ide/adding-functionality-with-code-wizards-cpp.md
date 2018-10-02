@@ -1,7 +1,7 @@
 ---
 title: "Adding Functionality with Code Wizards (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/07/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.classes"]

@@ -1,7 +1,7 @@
 ---
 title: "Add Class from Typelib Wizard | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/07/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.typelib"]

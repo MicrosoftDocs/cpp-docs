@@ -2,7 +2,7 @@
 title: "MFC ODBC Consumer Wizard | Microsoft Docs"
 ms.custom: ""
 <<<<<<< HEAD
-ms.date: "09/07/2018"
+ms.date: "10/03/2018"
 =======
 ms.date: "09/17/2018"
 >>>>>>> master

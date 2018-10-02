@@ -1,7 +1,7 @@
 ---
 title: "ATL OLE DB Provider Wizard | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/07/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.provider.overview"]
