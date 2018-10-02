@@ -27,7 +27,7 @@ The *expression* must have arithmetic or pointer type. Execution proceeds as fol
 
 1. The statement body is executed.
 
-2. Next, *expression* is evaluated. If *expression* is false, the *do-while* statement terminates and control passes to the next statement in the program. If *expression* is true (nonzero), the process is repeated, beginning with step 1.
+1. Next, *expression* is evaluated. If *expression* is false, the *do-while* statement terminates and control passes to the next statement in the program. If *expression* is true (nonzero), the process is repeated, beginning with step 1.
 
 The *do-while* statement can also terminate when a **break**, **goto**, or **return** statement is executed within the statement body.
 

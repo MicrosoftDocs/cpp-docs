@@ -44,7 +44,7 @@ The following keywords and special identifiers are recognized by the Microsoft C
 
 1. The **__based** keyword has limited uses for 32-bit and 64-bit target compilations.
 
-2. These are special identifiers when used with **__declspec**; their use in other contexts is not restricted.
+1. These are special identifiers when used with **__declspec**; their use in other contexts is not restricted.
 
 Microsoft extensions are enabled by default. To ensure that your programs are fully portable, you can disable Microsoft extensions by specifying the /Za option (compile for ANSI compatibility) during compilation. When you do this, Microsoft-specific keywords are disabled.
 

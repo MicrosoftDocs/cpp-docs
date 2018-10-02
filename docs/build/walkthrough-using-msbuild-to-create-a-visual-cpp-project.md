@@ -48,7 +48,7 @@ In this walkthrough you will create a project that has a source file and a heade
 
 1. Create a directory for your project.
 
-2. Create a file that is named main.cpp and add the following code to this file:
+1. Create a file that is named main.cpp and add the following code to this file:
 
     ```cpp
     // main.cpp : the application source code.
@@ -61,7 +61,7 @@ In this walkthrough you will create a project that has a source file and a heade
     }
     ```
 
-3. Create a file that is named main.h and add the following code to this file:
+1. Create a file that is named main.h and add the following code to this file:
 
     ```cpp
     // main.h: the application header code.
@@ -87,7 +87,7 @@ An MSBuild project file is an XML file that contains a project root element (\<P
     </Project>
     ```
 
-2. Add the following two \<ProjectConfiguration> child elements in an \<ItemGroup> element. The child element specifies debug and release configurations for a 32-bit Windows operating system:
+1. Add the following two \<ProjectConfiguration> child elements in an \<ItemGroup> element. The child element specifies debug and release configurations for a 32-bit Windows operating system:
 
     ```xml
     <ItemGroup>
@@ -102,13 +102,13 @@ An MSBuild project file is an XML file that contains a project root element (\<P
     </ItemGroup>
     ```
 
-3. Add the following \<Import/> element that specifies the path of the default C++ settings for this project:
+1. Add the following \<Import/> element that specifies the path of the default C++ settings for this project:
 
     ```xml
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.default.props" />
     ```
 
-4. Add the following property group element (\<PropertyGroup>) that specifies two project properties:
+1. Add the following property group element (\<PropertyGroup>) that specifies two project properties:
 
     ```xml
     <PropertyGroup>
@@ -117,13 +117,13 @@ An MSBuild project file is an XML file that contains a project root element (\<P
     </PropertyGroup>
     ```
 
-5. Add the following \<Import/> element that specifies the path of the current C++ settings for this project:
+1. Add the following \<Import/> element that specifies the path of the current C++ settings for this project:
 
     ```xml
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
     ```
 
-6. Add the following \<ClCompile> child element in an \<ItemGroup> element. The child element specifies the name of the C/C++ source file to compile:
+1. Add the following \<ClCompile> child element in an \<ItemGroup> element. The child element specifies the name of the C/C++ source file to compile:
 
     ```xml
     <ItemGroup>
@@ -134,7 +134,7 @@ An MSBuild project file is an XML file that contains a project root element (\<P
    > [!NOTE]
    > \<ClCompile> is a *build target* and is defined in the **VCTargets** directory.
 
-7. Add the following \<ClInclude> child element in an \<ItemGroup> element. The child element specifies the name of the header file for the C/C++ source file:
+1. Add the following \<ClInclude> child element in an \<ItemGroup> element. The child element specifies the name of the header file for the C/C++ source file:
 
     ```xml
     <ItemGroup>
@@ -142,7 +142,7 @@ An MSBuild project file is an XML file that contains a project root element (\<P
     </ItemGroup>
     ```
 
-8. Add the following \<Import> element that specifies the path of the file that defines the target for this project:
+1. Add the following \<Import> element that specifies the path of the file that defines the target for this project:
 
     ```xml
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Targets" />

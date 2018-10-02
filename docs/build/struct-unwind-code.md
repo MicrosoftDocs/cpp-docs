@@ -103,17 +103,17 @@ This unwind code will always appear in a dummy prolog, which is never actually e
 
 1. Pop RIP return address from top of stack into *Temp*
 
-2. Push SS
+1. Push SS
 
-3. Push old RSP
+1. Push old RSP
 
-4. Push EFLAGS
+1. Push EFLAGS
 
-5. Push CS
+1. Push CS
 
-6. Push *Temp*
+1. Push *Temp*
 
-7. Push Error Code (if op info equals 1)
+1. Push Error Code (if op info equals 1)
 
 The simulated `UWOP_PUSH_MACHFRAME` operation decrements RSP by 40 (op info equals 0) or 48 (op info equals 1).
 

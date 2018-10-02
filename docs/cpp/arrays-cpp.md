@@ -31,7 +31,7 @@ decl-specifier identifier [ constant-expression ]
 
 - The type name of the elements of the array.
 
-2. The declarator:
+1. The declarator:
 
 - The identifier.
 
@@ -39,7 +39,7 @@ decl-specifier identifier [ constant-expression ]
 
 - Optional additional brackets enclosing constant expressions.
 
-3. An optional initializer.  See [Initializers](../cpp/initializers.md).
+1. An optional initializer.  See [Initializers](../cpp/initializers.md).
 
 The number of elements in the array is given by the constant expression. The first element in the array is the 0th element, and the last element is the (*n*-1) element, where *n* is the number of elements the array can contain. The *constant-expression* must be of an integral type and must be greater than 0. A zero-sized array is legal only when the array is the last field in a **struct** or **union** and when the Microsoft extensions (/Ze) are enabled.
 

@@ -34,7 +34,7 @@ where any valid pointer declarator may be used for `declarator`. The syntax for 
 
     - The type specifier: the name of a type representing the type of the object to be pointed to.
 
-2. The declarator:
+1. The declarator:
 
     - An optional Microsoft specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).
 

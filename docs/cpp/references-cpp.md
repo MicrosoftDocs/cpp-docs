@@ -39,7 +39,7 @@ References are declared using the following sequence:
 
 - The type specifier: the name of a type.
 
-- 2. The declarator:
+- 1. The declarator:
 
 - An optional Microsoft specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).
 
@@ -49,7 +49,7 @@ References are declared using the following sequence:
 
 - The identifier.
 
-3. An optional initializer.
+1. An optional initializer.
 
 The more complex declarator forms for pointers to arrays and functions also apply to references to arrays and functions, see [pointers](../cpp/pointers-cpp.md).
 
@@ -105,4 +105,3 @@ int main() {
 [Reference-Type Function Arguments](../cpp/reference-type-function-arguments.md)<br/>
 [Reference-Type Function Returns](../cpp/reference-type-function-returns.md)<br/>
 [References to Pointers](../cpp/references-to-pointers.md)
-

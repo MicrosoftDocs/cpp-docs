@@ -67,9 +67,9 @@ A listing file named *filename.extension* is placed in the specified *directory*
 
 1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-2. Select the **Configuration Properties** > **C/C++** > **Output Files** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Output Files** property page.
 
-3. Modify the **Assembler Output** property to set the **/FAc** and **/FAs** options for assembler, machine, and source code. Modify the **Use Unicode For Assembler Listing** property to set the **/FAu** option for ANSI or UTF-8 output. Modify the **ASM List Location** to set the **/Fa** option for listing file name and location.
+1. Modify the **Assembler Output** property to set the **/FAc** and **/FAs** options for assembler, machine, and source code. Modify the **Use Unicode For Assembler Listing** property to set the **/FAu** option for ANSI or UTF-8 output. Modify the **ASM List Location** to set the **/Fa** option for listing file name and location.
 
 Note that setting both **Assembler Output** and **Use Unicode For Assembler Listing** properties can cause [Command-Line Warning D9025](../../error-messages/tool-errors/command-line-warning-d9025.md). To combine these options in the IDE, use the **Additional Options** field in the **Command Line** property page instead.
 

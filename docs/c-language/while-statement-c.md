@@ -25,7 +25,7 @@ The *expression* must have arithmetic or pointer type. Execution proceeds as fol
 
 1. The *expression* is evaluated.
 
-2. If *expression* is initially false, the body of the `while` statement is never executed, and control passes from the `while` statement to the next statement in the program.
+1. If *expression* is initially false, the body of the `while` statement is never executed, and control passes from the `while` statement to the next statement in the program.
 
    If *expression* is true (nonzero), the body of the statement is executed and the process is repeated beginning at step 1.
 

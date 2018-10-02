@@ -40,7 +40,7 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
    If you are using a different version of Visual Studio or are running a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
 
-2. Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:
+1. Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:
 
    ```Output
    C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise>cl
@@ -64,11 +64,11 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
 1. In the developer command prompt window, enter **md c:\hello** to create a directory, and then enter **cd c:\hello** to change to that directory. This is the directory that your source file and the compiled program are created in.
 
-2. Enter **notepad hello.cpp** in the command prompt window.
+1. Enter **notepad hello.cpp** in the command prompt window.
 
    Choose **Yes** when Notepad prompts you to create a file. This opens a blank Notepad window, ready for you to enter your code in a file named hello.cpp.
 
-3. In Notepad, enter the following lines of code:
+1. In Notepad, enter the following lines of code:
 
    ```cpp
    #include <iostream>
@@ -81,11 +81,11 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
    This is a very simple program that will write one line of text on the screen and then exit. To minimize errors, copy this code and paste it into Notepad.
 
-4. Save your work! In Notepad, on the **File** menu, choose **Save**.
+1. Save your work! In Notepad, on the **File** menu, choose **Save**.
 
    Congratulations, you have created a Visual C++ source file, hello.cpp, that is ready to compile.
 
-5. Switch back to the developer command prompt window. Enter **dir** at the command prompt to list the contents of the c:\hello directory. You should see the source file hello.cpp in the directory listing, which looks something like this:
+1. Switch back to the developer command prompt window. Enter **dir** at the command prompt to list the contents of the c:\hello directory. You should see the source file hello.cpp in the directory listing, which looks something like this:
 
    ```Output
    c:\hello>dir
@@ -104,7 +104,7 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
    The dates and other details will differ on your computer. If you don't see your source code file, hello.cpp, make sure you've changed to the c:\hello directory you created, and in Notepad, make sure that you saved your source file in this directory. Also make sure that you saved the source code with a .cpp file name extension, not a .txt extension.
 
-6. At the developer command prompt, enter `cl /EHsc hello.cpp` to compile your program.
+1. At the developer command prompt, enter `cl /EHsc hello.cpp` to compile your program.
 
    The cl.exe compiler generates an .obj file that contains the compiled code, and then runs the linker to create an executable program named hello.exe. This name appears in the lines of output information that the compiler displays. The output of the compiler should look something like this:
 
@@ -127,7 +127,7 @@ Before you can build a C or C++ program on the command line, you must verify tha
    > [!NOTE]
    > If you get a different compiler or linker error or warning, review your source code to correct any errors, then save it and run the compiler again. For information about specific errors, use the search box on this MSDN page to look for the error number.
 
-7. To run the hello.exe program, at the command prompt, enter `hello`.
+1. To run the hello.exe program, at the command prompt, enter `hello`.
 
    The program displays this text and exits:
 
