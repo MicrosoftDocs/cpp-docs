@@ -1,7 +1,7 @@
 ---
-title: "requires_category | Microsoft Docs"
+title: "requires_category (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.requires_category"]
@@ -20,8 +20,7 @@ Specifies the required component categories of the target class.
 
 ```cpp
 [ requires_category(
-  requires_category
-) ]
+  requires_category) ]
 ```
 
 ### Parameters

@@ -1,7 +1,7 @@
 ---
-title: "threading (C++) | Microsoft Docs"
+title: "threading  (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.threading"]
@@ -19,9 +19,7 @@ Specifies the threading model for a COM object.
 ## Syntax
 
 ```cpp
-[ threading(
-   model=enumeration
-) ]
+[ threading(model=enumeration) ]
 ```
 
 ### Parameters

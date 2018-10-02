@@ -1,7 +1,7 @@
 ---
 title: "Attribute Programming FAQ | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -96,8 +96,7 @@ You can use both single-line and multiple-line comments within an attribute bloc
 The following is allowed:
 
 ```cpp
-[ coclass,
-   progid("MyClass.CMyClass.1"), /* Multiple-line
+[ coclass, progid("MyClass.CMyClass.1"), /* Multiple-line
                                        comment */
    threading("both") // Single-line comment
 ]
@@ -106,9 +105,7 @@ The following is allowed:
 The following is disallowed:
 
 ```cpp
-[ coclass,
-   progid("MyClass.CMyClass.1" /* Multiple-line comment */ ),
-   threading("both" // Single-line comment)  
+[ coclass, progid("MyClass.CMyClass.1" /* Multiple-line comment */ ), threading("both" // Single-line comment)  
 ]
 ```
 
@@ -141,11 +138,7 @@ The following sample is the result of copying injected code into a source code f
 
 // ITestTest
 [
-   object,
-   uuid("DADECE00-0FD2-46F1-BFD3-6A0579CA1BC4"),
-   dual,
-   helpstring("ITestTest Interface"),
-   pointer_default(unique)  
+   object, uuid("DADECE00-0FD2-46F1-BFD3-6A0579CA1BC4"), dual, helpstring("ITestTest Interface"), pointer_default(unique)  
 ]
 
 __interface ITestTest : IDispatch {
@@ -155,9 +148,7 @@ __interface ITestTest : IDispatch {
 
 // _ITestTestEvents
 [
-   uuid("12753B9F-DEF4-49b0-9D52-A79C371F2909"),
-   dispinterface,
-   helpstring("_ITestTestEvents Interface")  
+   uuid("12753B9F-DEF4-49b0-9D52-A79C371F2909"), dispinterface, helpstring("_ITestTestEvents Interface")  
 ]
 
 __interface _ITestTestEvents {
@@ -166,17 +157,9 @@ __interface _ITestTestEvents {
 
 // CTestTest
 [
-   coclass,
-   threading(apartment),
-   vi_progid("TestATL1.TestTest"),
-   progid("TestATL1.TestTest.1"),
-   version(1.0),
-   uuid("D9632007-14FA-4679-9E1C-28C9A949E784"),
-   // this line would be commented out from original file
-   // event_source("com"),
-   // this line would be added to support injected code
-   source(_ITestTestEvents),
-   helpstring("TestTest Class")  
+   coclass, threading(apartment), vi_progid("TestATL1.TestTest"), progid("TestATL1.TestTest.1"), version(1.0), uuid("D9632007-14FA-4679-9E1C-28C9A949E784"), // this line would be commented out from original file
+   // event_source("com"), // this line would be added to support injected code
+   source(_ITestTestEvents), helpstring("TestTest Class")  
 ]
 
 class ATL_NO_VTABLE CTestTest : public ITestTest,

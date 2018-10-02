@@ -1,5 +1,5 @@
 ---
-title: "db_command | Microsoft Docs"
+title: "db_command (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
 ms.date: "07/10/2018"
 ms.technology: ["cpp-windows"]
@@ -19,13 +19,7 @@ Creates an OLE DB command.
 ## Syntax
 
 ```cpp
-[ db_command(
-   command,
-   name,
-   source_name,
-   hresult,
-   bindings,
-   bulk_fetch)  
+[ db_command(command, name, source_name, hresult, bindings, bulk_fetch)  
 ]
 ```
 
@@ -85,8 +79,7 @@ TCHAR m_au_fname[21];
 TCHAR m_au_lname[41];
 TCHAR m_state[3] = 'CA';
 
-[db_command (
-   command = "SELECT au_fname([bindto]m_au_fname), au_lname([bindto]m_au_lname) " \
+[db_command (command = "SELECT au_fname([bindto]m_au_fname), au_lname([bindto]m_au_lname) " \
    "FROM dbo.authors " \
    "WHERE state = ?([in]m_state)")  
 ]
@@ -143,8 +136,7 @@ Note that this code requires you to provide your own connection string that conn
 
 #pragma once
 
-[  db_source(L"your connection string"),
-   db_command(L" \
+[  db_source(L"your connection string"), db_command(L" \
       SELECT au_lname, au_fname \
       FROM dbo.authors \
       WHERE state = 'CA'")  ]
@@ -212,8 +204,7 @@ This sample uses `db_source` on a data source class `CMySource`, and `db_command
 #include <atldbcli.h>
 // class usage for both db_source and db_command
 
-[  db_source(L"your connection string"),
-   db_command(L" \
+[  db_source(L"your connection string"), db_command(L" \
       SELECT au_lname, au_fname \
       FROM dbo.authors \
       WHERE state = 'CA'")  ]

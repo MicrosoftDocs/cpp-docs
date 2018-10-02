@@ -1,7 +1,7 @@
 ---
-title: "helpstringcontext | Microsoft Docs"
+title: "helpstringcontext (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.helpstringcontext"]
@@ -19,9 +19,7 @@ Specifies the ID of a help topic in an .hlp or .chm file.
 ## Syntax
 
 ```cpp
-[ helpstringcontext(
-   contextID
-) ]
+[ helpstringcontext(contextID) ]
 ```
 
 ### Parameters
@@ -41,10 +39,7 @@ The **helpstringcontext** C++ attribute has the same functionality as the [helps
 #include <unknwn.h>
 [module(name="MyLib")];
 
-[   object,
-   helpstring("help string"),
-   helpstringcontext(1),
-   uuid="11111111-1111-1111-1111-111111111111"
+[   object, helpstring("help string"), helpstringcontext(1), uuid="11111111-1111-1111-1111-111111111111"
 ]
 __interface IMyI
 {

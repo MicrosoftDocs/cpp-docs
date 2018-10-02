@@ -1,7 +1,7 @@
 ---
 title: "Attributes by Group | Microsoft Docs"
 ms.custom: "index-page"
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]

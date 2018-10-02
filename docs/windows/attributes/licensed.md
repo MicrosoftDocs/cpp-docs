@@ -1,7 +1,7 @@
 ---
-title: "licensed | Microsoft Docs"
+title: "licensed (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.licensed"]

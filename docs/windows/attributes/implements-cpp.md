@@ -1,7 +1,7 @@
 ---
-title: "implements (C++) | Microsoft Docs"
+title: "implements  (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.implements"]
@@ -20,9 +20,7 @@ Specifies dispatch interfaces that are forced to be members of the IDL coclass.
 
 ```cpp
 [ implements( 
-   interfaces={interfaces},
-   dispinterfaces={dispinterfaces}
-)]
+   interfaces={interfaces}, dispinterfaces={dispinterfaces})]
 ```
 
 ### Parameters
@@ -66,16 +64,14 @@ library odod
    importlib("olepro32.dll");
 
    [
-      object,
-      uuid(1AECC9BB-2104-3723-98B8-7CC54722C7DD)  
+      object,    uuid(1AECC9BB-2104-3723-98B8-7CC54722C7DD)  
    ]
    interface IBar1 {
       [id(1)] HRESULT bar1();
    };
 
    [
-      dual,
-      uuid(1AECCABB-2104-3723-98B8-7CC54722C7DD)  
+      dual,    uuid(1AECCABB-2104-3723-98B8-7CC54722C7DD)  
    ]
    interface IBar2 {
       [id(1)] HRESULT bar2();
@@ -92,8 +88,7 @@ library odod
    };
 
    [
-      uuid(159A9BBB-E5F1-33F6-BEF5-6CFAD7A5933F),
-      version(1.0)  
+      uuid(159A9BBB-E5F1-33F6-BEF5-6CFAD7A5933F),    version(1.0)  
    ]
    coclass CBar {
       interface IBar1;
@@ -216,8 +211,7 @@ EXTERN_C const IID IID_IBar1;
     {
         BEGIN_INTERFACE
 
-        /* [id] */ HRESULT ( STDMETHODCALLTYPE *bar1 )(
-            IBar1 * This);
+        /* [id] */ HRESULT ( STDMETHODCALLTYPE *bar1 )(         IBar1 * This);
 
         END_INTERFACE
     } IBar1Vtbl;
@@ -236,14 +230,9 @@ EXTERN_C const IID IID_IBar1;
 
 #endif /* C style interface */
 
-/* [id] */ HRESULT STDMETHODCALLTYPE IBar1_bar1_Proxy(
-    IBar1 * This);
+/* [id] */ HRESULT STDMETHODCALLTYPE IBar1_bar1_Proxy( IBar1 * This);
 
-void __RPC_STUB IBar1_bar1_Stub(
-    IRpcStubBuffer *This,
-    IRpcChannelBuffer *_pRpcChannelBuffer,
-    PRPC_MESSAGE _pRpcMessage,
-    DWORD *_pdwStubPhase);
+void __RPC_STUB IBar1_bar1_Stub( IRpcStubBuffer *This,  IRpcChannelBuffer *_pRpcChannelBuffer,  PRPC_MESSAGE _pRpcMessage,  DWORD *_pdwStubPhase);
 
 #endif /* __IBar1_INTERFACE_DEFINED__ */
 
@@ -273,8 +262,7 @@ EXTERN_C const IID IID_IBar2;
     {
         BEGIN_INTERFACE
 
-        /* [id] */ HRESULT ( STDMETHODCALLTYPE *bar2 )(
-            IBar2 * This);
+        /* [id] */ HRESULT ( STDMETHODCALLTYPE *bar2 )(         IBar2 * This);
 
         END_INTERFACE
     } IBar2Vtbl;
@@ -293,14 +281,9 @@ EXTERN_C const IID IID_IBar2;
 
 #endif /* C style interface */
 
-/* [id] */ HRESULT STDMETHODCALLTYPE IBar2_bar2_Proxy(
-    IBar2 * This);
+/* [id] */ HRESULT STDMETHODCALLTYPE IBar2_bar2_Proxy( IBar2 * This);
 
-void __RPC_STUB IBar2_bar2_Stub(
-    IRpcStubBuffer *This,
-    IRpcChannelBuffer *_pRpcChannelBuffer,
-    PRPC_MESSAGE _pRpcMessage,
-    DWORD *_pdwStubPhase);
+void __RPC_STUB IBar2_bar2_Stub( IRpcStubBuffer *This,  IRpcChannelBuffer *_pRpcChannelBuffer,  PRPC_MESSAGE _pRpcMessage,  DWORD *_pdwStubPhase);
 
 #endif /* __IBar2_INTERFACE_DEFINED__ */
 
@@ -325,45 +308,19 @@ EXTERN_C const IID DIID_ISna;
     {
         BEGIN_INTERFACE
 
-        HRESULT ( STDMETHODCALLTYPE *QueryInterface )(
-            ISna * This,
-            /* [in] */ REFIID riid,
-            /* [iid_is][out] */ void **ppvObject);
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )(         ISna * This,          /* [in] */ REFIID riid,          /* [iid_is][out] */ void **ppvObject);
 
-        ULONG ( STDMETHODCALLTYPE *AddRef )(
-            ISna * This);
+        ULONG ( STDMETHODCALLTYPE *AddRef )(         ISna * This);
 
-        ULONG ( STDMETHODCALLTYPE *Release )(
-            ISna * This);
+        ULONG ( STDMETHODCALLTYPE *Release )(         ISna * This);
 
-        HRESULT ( STDMETHODCALLTYPE *GetTypeInfoCount )(
-            ISna * This,
-            /* [out] */ UINT *pctinfo);
+        HRESULT ( STDMETHODCALLTYPE *GetTypeInfoCount )(         ISna * This,          /* [out] */ UINT *pctinfo);
 
-        HRESULT ( STDMETHODCALLTYPE *GetTypeInfo )(
-            ISna * This,
-            /* [in] */ UINT iTInfo,
-            /* [in] */ LCID lcid,
-            /* [out] */ ITypeInfo **ppTInfo);
+        HRESULT ( STDMETHODCALLTYPE *GetTypeInfo )(         ISna * This,          /* [in] */ UINT iTInfo,          /* [in] */ LCID lcid,          /* [out] */ ITypeInfo **ppTInfo);
 
-        HRESULT ( STDMETHODCALLTYPE *GetIDsOfNames )(
-            ISna * This,
-            /* [in] */ REFIID riid,
-            /* [size_is][in] */ LPOLESTR *rgszNames,
-            /* [in] */ UINT cNames,
-            /* [in] */ LCID lcid,
-            /* [size_is][out] */ DISPID *rgDispId);
+        HRESULT ( STDMETHODCALLTYPE *GetIDsOfNames )(         ISna * This,          /* [in] */ REFIID riid,          /* [size_is][in] */ LPOLESTR *rgszNames,          /* [in] */ UINT cNames,          /* [in] */ LCID lcid,          /* [size_is][out] */ DISPID *rgDispId);
 
-        /* [local] */ HRESULT ( STDMETHODCALLTYPE *Invoke )(
-            ISna * This,
-            /* [in] */ DISPID dispIdMember,
-            /* [in] */ REFIID riid,
-            /* [in] */ LCID lcid,
-            /* [in] */ WORD wFlags,
-            /* [out][in] */ DISPPARAMS *pDispParams,
-            /* [out] */ VARIANT *pVarResult,
-            /* [out] */ EXCEPINFO *pExcepInfo,
-            /* [out] */ UINT *puArgErr);
+        /* [local] */ HRESULT ( STDMETHODCALLTYPE *Invoke )(         ISna * This,          /* [in] */ DISPID dispIdMember,          /* [in] */ REFIID riid,          /* [in] */ LCID lcid,          /* [in] */ WORD wFlags,          /* [out][in] */ DISPPARAMS *pDispParams,          /* [out] */ VARIANT *pVarResult,          /* [out] */ EXCEPINFO *pExcepInfo,          /* [out] */ UINT *puArgErr);
 
         END_INTERFACE
     } ISnaVtbl;
@@ -443,14 +400,9 @@ __interface IMyInterface
 };
 
 [
-   coclass,
-   uuid("00000000-0000-0000-0000-000000000002"),
-   implements(interfaces={IBar1,IBar2}, dispinterfaces=ISna)  
+   coclass, uuid("00000000-0000-0000-0000-000000000002"), implements(interfaces={IBar1,IBar2}, dispinterfaces=ISna)  
 ]
-class CMyClass : public IMyInterface,
-   public IBar1,
-      public IDispatchImpl<IBar2, &__uuidof(IBar2)>,
-   public ISna
+class CMyClass : public IMyInterface, public IBar1,    public IDispatchImpl<IBar2, &__uuidof(IBar2)>, public ISna
 {
    long _x;
 public:
@@ -461,15 +413,7 @@ public:
    HRESULT __stdcall bar2() { return S_OK; }
    HRESULT __stdcall sna() { return S_OK; }
 
-   virtual HRESULT STDMETHODCALLTYPE ISna::Invoke(
-            /* [in] */ DISPID dispIdMember,
-            /* [in] */ REFIID riid,
-            /* [in] */ LCID lcid,
-            /* [in] */ WORD wFlags,
-            /* [out][in] */ DISPPARAMS *pDispParams,
-            /* [out] */ VARIANT *pVarResult,
-            /* [out] */ EXCEPINFO *pExcepInfo,
-            /* [out] */ UINT *puArgErr)  
+   virtual HRESULT STDMETHODCALLTYPE ISna::Invoke(         /* [in] */ DISPID dispIdMember,          /* [in] */ REFIID riid,          /* [in] */ LCID lcid,          /* [in] */ WORD wFlags,          /* [out][in] */ DISPPARAMS *pDispParams,          /* [out] */ VARIANT *pVarResult,          /* [out] */ EXCEPINFO *pExcepInfo,          /* [out] */ UINT *puArgErr)  
    {
       HRESULT hr = S_OK;
       if (pDispParams == 0) {
@@ -495,12 +439,7 @@ public:
       }
       return hr;
    }
-   virtual HRESULT STDMETHODCALLTYPE ISna::GetIDsOfNames(
-            /* [in] */ REFIID riid,
-            /* [size_is][in] */ LPOLESTR *rgszNames,
-            /* [in] */ UINT cNames,
-            /* [in] */ LCID lcid,
-            /* [size_is][out] */ DISPID *rgDispId)  
+   virtual HRESULT STDMETHODCALLTYPE ISna::GetIDsOfNames(         /* [in] */ REFIID riid,          /* [size_is][in] */ LPOLESTR *rgszNames,          /* [in] */ UINT cNames,          /* [in] */ LCID lcid,          /* [size_is][out] */ DISPID *rgDispId)  
    {
       static LPOLESTR names[] = { L"sna" };
       static DISPID dids[] = { 1 };

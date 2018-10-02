@@ -1,7 +1,7 @@
 ---
-title: "module (C++) | Microsoft Docs"
+title: "module  (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.module"]
@@ -19,23 +19,7 @@ Defines the library block in the .idl file.
 ## Syntax
 
 ```cpp
-[ module (
-   type=dll,
-   name=string,
-   version=1.0,
-   uuid=uuid,
-   lcid=integer,
-   control=boolean,
-   helpstring=string,
-   helpstringdll=string,
-   helpfile=string,
-   helpcontext=integer,
-   helpstringcontext=integer,
-   hidden=boolean,
-   restricted=boolean,
-   custom=string,
-   resource_name=string,
-) ];
+[ module (type=dll, name=string, version=1.0, uuid=uuid, lcid=integer, control=boolean, helpstring=string, helpstringdll=string, helpfile=string, helpcontext=integer, helpstringcontext=integer, hidden=boolean, restricted=boolean, custom=string, resource_name=string,) ];
 ```
 
 ### Parameters

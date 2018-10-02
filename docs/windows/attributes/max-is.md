@@ -1,7 +1,7 @@
 ---
-title: "max_is | Microsoft Docs"
+title: "max_is (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.max_is"]
@@ -19,9 +19,7 @@ Designates the maximum value for a valid array index.
 ## Syntax
 
 ```cpp
-[ max_is(
-   "expression"
-) ]
+[ max_is("expression") ]
 ```
 
 ### Parameters

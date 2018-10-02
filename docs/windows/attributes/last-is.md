@@ -1,7 +1,7 @@
 ---
-title: "last_is | Microsoft Docs"
+title: "last_is (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.last_is"]
@@ -19,9 +19,7 @@ Specifies the index of the last array element to be transmitted.
 ## Syntax
 
 ```cpp
-[ last_is(
-   "expression"
-) ]
+[ last_is("expression") ]
 ```
 
 ### Parameters

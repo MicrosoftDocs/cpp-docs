@@ -1,7 +1,7 @@
 ---
-title: "cpp_quote | Microsoft Docs"
+title: "cpp_quote (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.cpp_quote"]
@@ -19,9 +19,7 @@ Emits the specified string, without the quote characters, into the generated .id
 ## Syntax
 
 ```cpp
-[ cpp_quote(
-   "statement"
-) ];
+[ cpp_quote("statement") ];
 ```
 
 ### Parameters

@@ -1,7 +1,7 @@
 ---
-title: "pragma | Microsoft Docs"
+title: "pragma (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.pragma"]
@@ -19,9 +19,7 @@ Emits the specified string into the generated .idl file without the use of quota
 ## Syntax
 
 ```cpp
-[ pragma(
-   pragma_statement
-) ];
+[ pragma(pragma_statement) ];
 ```
 
 ### Parameters

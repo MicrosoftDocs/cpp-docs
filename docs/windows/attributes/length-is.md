@@ -1,7 +1,7 @@
 ---
-title: "length_is | Microsoft Docs"
+title: "length_is (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.length_is"]
@@ -19,9 +19,7 @@ Specifies the number of array elements to be transmitted.
 ## Syntax
 
 ```cpp
-[ length_is(
-   "expression"
-) ]
+[ length_is("expression") ]
 ```
 
 ### Parameters

@@ -1,7 +1,7 @@
 ---
-title: "entry | Microsoft Docs"
+title: "entry (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.entry"]
@@ -19,9 +19,7 @@ Specifies an exported function or constant in a module by identifying the entry 
 ## Syntax
 
 ```cpp
-[ entry(
-   id
-) ]
+[ entry(id) ]
 ```
 
 ### Parameters

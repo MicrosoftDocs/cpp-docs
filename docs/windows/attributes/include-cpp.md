@@ -1,7 +1,7 @@
 ---
-title: "include (C++) | Microsoft Docs"
+title: "include  (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.include"]
@@ -19,9 +19,7 @@ Specifies one or more header files to be included in the generated .idl file.
 ## Syntax
 
 ```cpp
-[ include(
-   header_file
-) ];
+[ include(header_file) ];
 ```
 
 ### Parameters

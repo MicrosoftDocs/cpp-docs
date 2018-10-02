@@ -1,7 +1,7 @@
 ---
-title: "pointer_default | Microsoft Docs"
+title: "pointer_default (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.pointer_default"]
@@ -19,9 +19,7 @@ Specifies the default pointer attribute for all pointers, except top-level point
 ## Syntax
 
 ```cpp
-[ pointer_default(
-   value
-) ]
+[ pointer_default(value) ]
 ```
 
 ### Parameters

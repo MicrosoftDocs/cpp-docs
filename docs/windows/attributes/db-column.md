@@ -1,7 +1,7 @@
 ---
-title: "db_column | Microsoft Docs"
+title: "db_column (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.db_column"]
@@ -19,14 +19,7 @@ Binds a specified column to a variable in the rowset.
 ## Syntax
 
 ```cpp
-[ db_column(
-   ordinal,
-   dbtype,
-   precision,
-   scale,
-   status,
-   length
-) ]
+[ db_column(ordinal, dbtype, precision, scale, status, length) ]
 ```
 
 #### Parameters

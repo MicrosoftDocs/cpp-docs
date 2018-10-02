@@ -1,7 +1,7 @@
 ---
-title: "idl_quote | Microsoft Docs"
+title: "idl_quote (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.idl_quote"]
@@ -19,9 +19,7 @@ Allows you to use IDL constructs that are not supported in the current version o
 ## Syntax
 
 ```cpp
-[ idl_quote(
-   text
-) ]
+[ idl_quote(text) ]
 ```
 
 ### Parameters

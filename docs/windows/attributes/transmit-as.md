@@ -1,7 +1,7 @@
 ---
-title: "transmit_as | Microsoft Docs"
+title: "transmit_as (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.transmit_as"]
@@ -19,9 +19,7 @@ Instructs the compiler to associate a presented type that client and server appl
 ## Syntax
 
 ```cpp
-[ transmit_as(
-   type
-) ]
+[ transmit_as(type) ]
 ```
 
 ### Parameters

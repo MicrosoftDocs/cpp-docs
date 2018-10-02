@@ -1,7 +1,7 @@
 ---
-title: "event_source | Microsoft Docs"
+title: "event_source (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.event_source"]
@@ -19,11 +19,7 @@ Creates an event source.
 ## Syntax
 
 ```cpp
-[ event_source(
-   type,
-   optimize=[speed | size],
-   decorate=[true | false]
-) ]
+[ event_source(type, optimize=[speed | size], decorate=[true | false]) ]
 ```
 
 ### Parameters

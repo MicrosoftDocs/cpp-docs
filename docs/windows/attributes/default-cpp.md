@@ -1,7 +1,7 @@
 ---
-title: "default (C++) | Microsoft Docs"
+title: "default  (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.default"]
@@ -19,10 +19,7 @@ Indicates that the custom or dispinterface defined within a coclass represents t
 ## Syntax
 
 ```cpp
-[ default(
-   interface1,
-   interface2
-) ]
+[ default(interface1, interface2) ]
 ```
 
 ### Parameters
@@ -66,10 +63,7 @@ __interface ICustomDispatch : public IDispatch {
    HRESULT Dispatch([in] long l, [out, retval] long *pLong);
 };
 
-[   coclass,
-   default(ICustomDispatch),
-   source(IDual),
-   uuid("9E66A294-4365-11D2-A997-00C04FA37DDB")  
+[   coclass, default(ICustomDispatch), source(IDual), uuid("9E66A294-4365-11D2-A997-00C04FA37DDB")  
 ]
 class CClass : public ICustom, public IDual, public ICustomDispatch {
    HRESULT Custom(long l, long *pLong) { return(S_OK); }

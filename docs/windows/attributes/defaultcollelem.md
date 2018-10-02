@@ -1,7 +1,7 @@
 ---
 title: "defaultcollelem | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.defaultcollelem"]
@@ -38,10 +38,8 @@ The following code shows an interface method using the **defaultcollelem** attri
 [object, uuid("00000000-0000-0000-0000-000000000001")]
 __interface IMyForm
 {
-   [propget, id(1), bindable, defaultcollelem, displaybind,
-   defaultbind, requestedit] HRESULT P1([out, retval] long *nSize);
-   [propput, id(1), bindable, defaultcollelem, displaybind,
-   defaultbind, requestedit] HRESULT P1([in] long nSize);
+   [propget, id(1), bindable, defaultcollelem, displaybind, defaultbind, requestedit] HRESULT P1([out, retval] long *nSize);
+   [propput, id(1), bindable, defaultcollelem, displaybind, defaultbind, requestedit] HRESULT P1([in] long nSize);
 };
 ```
 

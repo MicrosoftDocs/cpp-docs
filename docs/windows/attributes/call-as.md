@@ -1,7 +1,7 @@
 ---
-title: "call_as | Microsoft Docs"
+title: "call_as (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.call_as"]
@@ -19,9 +19,7 @@ Enables a [local](local-cpp.md) function to be mapped to a remote function so th
 ## Syntax
 
 ```cpp
-[ call_as(
-   function
-) ]
+[ call_as(function) ]
 ```
 
 ### Parameters

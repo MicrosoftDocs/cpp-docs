@@ -1,7 +1,7 @@
 ---
-title: "defaultvtable | Microsoft Docs"
+title: "defaultvtable (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.defaultvtable"]
@@ -19,9 +19,7 @@ Defines an interface as the default vtable interface for a COM object.
 ## Syntax
 
 ```cpp
-[ defaultvtable(
-   interface
-) ]
+[ defaultvtable(interface) ]
 ```
 
 ### Parameters

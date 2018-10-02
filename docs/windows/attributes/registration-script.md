@@ -1,7 +1,7 @@
 ---
-title: "registration_script | Microsoft Docs"
+title: "registration_script (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.registration_script"]
@@ -19,9 +19,7 @@ Executes the specified custom registration script.
 ## Syntax
 
 ```cpp
-[ registration_script(
-   script
-) ]
+[ registration_script(script) ]
 ```
 
 ### Parameters

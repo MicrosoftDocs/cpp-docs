@@ -1,7 +1,7 @@
 ---
-title: "satype | Microsoft Docs"
+title: "satype (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.satype"]
@@ -19,9 +19,7 @@ Specifies the data type of the `SAFEARRAY` structure.
 ## Syntax
 
 ```cpp
-[ satype(
-   data_type
-) ]
+[ satype(data_type) ]
 ```
 
 ### Parameters

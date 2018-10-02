@@ -1,7 +1,7 @@
 ---
-title: "defaultvalue | Microsoft Docs"
+title: "defaultvalue (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.defaultvalue"]
@@ -43,18 +43,14 @@ The following code shows an interface method using the **defaultvalue** attribut
 [export] typedef long HRESULT;
 [export, ptr, string] typedef unsigned char * MY_STRING_TYPE;
 
-[  uuid("479B29EE-9A2C-11D0-B696-00A0C903487A"),
-   dual, oleautomation,
-   helpstring("IFireTabCtrl Interface"),
-   helpcontext(122), pointer_default(unique) ]
+[  uuid("479B29EE-9A2C-11D0-B696-00A0C903487A"), dual, oleautomation, helpstring("IFireTabCtrl Interface"), helpcontext(122), pointer_default(unique) ]
 
 __interface IFireTabCtrl : IDispatch {
    [bindable, propget] HRESULT get_Size([out, retval, defaultvalue("33")] long *nSize);
    [bindable, propput] HRESULT put_Size([in] int nSize);
 };
 
-[ module(name="ATLFIRELib", uuid="479B29E1-9A2C-11D0-B696-00A0C903487A",
-      version="1.0", helpstring="ATLFire 1.0 Type Library") ];
+[ module(name="ATLFIRELib", uuid="479B29E1-9A2C-11D0-B696-00A0C903487A",    version="1.0", helpstring="ATLFire 1.0 Type Library") ];
 ```
 
 ## Requirements

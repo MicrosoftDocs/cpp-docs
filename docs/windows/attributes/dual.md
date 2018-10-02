@@ -1,7 +1,7 @@
 ---
-title: "dual | Microsoft Docs"
+title: "dual (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.dual"]
@@ -41,20 +41,10 @@ The following code is an attribute block that uses **dual** before an interface 
 __interface IStatic : IDispatch
 {
    HRESULT Func1(int i);
-   [   propget,
-      id(1),
-      bindable,
-      displaybind,
-      defaultbind,
-      requestedit
+   [   propget,    id(1),    bindable,    displaybind,    defaultbind,    requestedit
    ]
    HRESULT P1([out, retval] long *nSize);
-   [   propput,
-      id(1),
-      bindable,
-      displaybind,
-      defaultbind,
-      requestedit
+   [   propput,    id(1),    bindable,    displaybind,    defaultbind,    requestedit
    ]
    HRESULT P1([in] long nSize); 
 };

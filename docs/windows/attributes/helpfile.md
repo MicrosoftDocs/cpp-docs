@@ -1,7 +1,7 @@
 ---
-title: "helpfile | Microsoft Docs"
+title: "helpfile (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.helpfile"]
@@ -19,9 +19,7 @@ Sets the name of the Help file for a type library.
 ## Syntax
 
 ```cpp
-[ helpfile(
-   "filename"
-) ]
+[ helpfile("filename") ]
 ```
 
 ### Parameters

@@ -1,7 +1,7 @@
 ---
-title: "id | Microsoft Docs"
+title: "id (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.id"]
@@ -19,9 +19,7 @@ Specifies a *dispid* parameter for a member function (either a property or a met
 ## Syntax
 
 ```cpp
-[ id(
-   dispid
-) ]
+[ id(dispid) ]
 ```
 
 ### Parameters

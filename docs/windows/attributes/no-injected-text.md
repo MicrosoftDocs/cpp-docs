@@ -1,7 +1,7 @@
 ---
-title: "no_injected_text | Microsoft Docs"
+title: "no_injected_text (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.no_injected_text"]
@@ -19,9 +19,7 @@ Prevents the compiler from injecting code as a result of attribute use.
 ## Syntax
 
 ```cpp
-[ no_injected_text(
-   boolean
-) ];
+[ no_injected_text(boolean) ];
 ```
 
 ### Parameters

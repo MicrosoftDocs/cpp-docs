@@ -1,7 +1,7 @@
 ---
-title: "importidl | Microsoft Docs"
+title: "importidl (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.importidl"]
@@ -19,9 +19,7 @@ Inserts the specified .idl file into the generated .idl file.
 ## Syntax
 
 ```cpp
-[ importidl(
-   idl_file
-) ];
+[ importidl(idl_file) ];
 ```
 
 ### Parameters

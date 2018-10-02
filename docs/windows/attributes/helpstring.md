@@ -1,7 +1,7 @@
 ---
-title: "helpstring | Microsoft Docs"
+title: "helpstring (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.helpstring"]
@@ -19,9 +19,7 @@ Specifies a character string that is used to describe the element to which it ap
 ## Syntax
 
 ```cpp
-[ helpstring(
-   "string"
-) ]
+[ helpstring("string") ]
 ```
 
 ### Parameters

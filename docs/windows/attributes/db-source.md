@@ -1,7 +1,7 @@
 ---
-title: "db_source | Microsoft Docs"
+title: "db_source (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.db_source"]
@@ -19,11 +19,7 @@ Creates a connection to a data source.
 ## Syntax
 
 ```cpp
-[ db_source(
-   db_source,
-   name,
-   hresult
-) ]
+[ db_source(db_source, name, hresult) ]
 ```
 
 ### Parameters

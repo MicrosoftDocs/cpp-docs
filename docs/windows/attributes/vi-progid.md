@@ -1,7 +1,7 @@
 ---
-title: "vi_progid | Microsoft Docs"
+title: "vi_progid (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.vi_progid"]
@@ -19,9 +19,7 @@ Specifies a version-independent form of the ProgID.
 ## Syntax
 
 ```cpp
-[ vi_progid(
-   name
-) ];
+[ vi_progid(name) ];
 ```
 
 ### Parameters

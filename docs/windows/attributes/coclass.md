@@ -1,7 +1,7 @@
 ---
-title: "coclass | Microsoft Docs"
+title: "coclass (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.coclass"]
@@ -111,8 +111,7 @@ __interface bb {};
 [coclass, uuid("00000000-0000-0000-0000-000000000001")]
 class CMyClass : public bb {
 public:
-   // by adding the definition of UpdateRegistry to your code,
-   // the function will not be included in the injected code
+   // by adding the definition of UpdateRegistry to your code, // the function will not be included in the injected code
    static HRESULT WINAPI UpdateRegistry(BOOL bRegister) {
       // you can add to the default implementation
       CRegistryVirtualMachine rvm;
@@ -120,8 +119,7 @@ public:
       if (FAILED(hr = rvm.AddStandardReplacements()))  
          return hr;
       rvm.AddReplacement(_T("FriendlyName"), GetObjectFriendlyName());
-      return rvm.VMUpdateRegistry(GetOpCodes(), GetOpcodeStringVals(),
-         GetOpcodeDWORDVals(), GetOpcodeBinaryVals(), bRegister);
+      return rvm.VMUpdateRegistry(GetOpCodes(), GetOpcodeStringVals(),       GetOpcodeDWORDVals(), GetOpcodeBinaryVals(), bRegister);
    }
 };
 ```

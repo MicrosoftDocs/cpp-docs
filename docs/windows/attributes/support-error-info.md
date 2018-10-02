@@ -1,7 +1,7 @@
 ---
-title: "support_error_info | Microsoft Docs"
+title: "support_error_info (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.support_error_info"]
@@ -19,9 +19,7 @@ Implements support for returning detailed errors.
 ## Syntax
 
 ```cpp
-[ support_error_info(
-   error_interface=uuid
-) ]
+[ support_error_info(error_interface=uuid) ]
 ```
 
 ### Parameters

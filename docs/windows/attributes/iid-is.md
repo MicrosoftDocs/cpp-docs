@@ -1,7 +1,7 @@
 ---
-title: "iid_is | Microsoft Docs"
+title: "iid_is (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.iid_is"]
@@ -19,9 +19,7 @@ Specifies the IID of the COM interface pointed to by an interface pointer.
 ## Syntax
 
 ```cpp
-[ iid_is(
-   "expression"
-) ]
+[ iid_is("expression") ]
 ```
 
 ### Parameters

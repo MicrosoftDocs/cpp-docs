@@ -1,7 +1,7 @@
 ---
-title: "db_param | Microsoft Docs"
+title: "db_param (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.db_param"]
@@ -19,15 +19,7 @@ Associates the specified member variable with an input or output parameter and d
 ## Syntax
 
 ```cpp
-[ db_param(
-   ordinal,
-   paramtype="DBPARAMIO_INPUT",
-   dbtype,
-   precision,
-   scale,
-   status,
-   length
-) ]
+[ db_param(ordinal, paramtype="DBPARAMIO_INPUT", dbtype, precision, scale, status, length) ]
 ```
 
 ### Parameters

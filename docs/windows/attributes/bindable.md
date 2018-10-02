@@ -1,7 +1,7 @@
 ---
-title: "bindable | Microsoft Docs"
+title: "bindable (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.bindable"]
@@ -43,9 +43,7 @@ The following code shows how you can use **bindable** on a property:
 // compile with: /LD
 #include <windows.h>
 [
-   uuid("479B29E3-9A2C-11D0-B696-00A0C903487A"),
-   dispinterface,
-   helpstring("property demo Interface")  
+   uuid("479B29E3-9A2C-11D0-B696-00A0C903487A"), dispinterface, helpstring("property demo Interface")  
 ]
 __interface IPropDemo : IDispatch {
 

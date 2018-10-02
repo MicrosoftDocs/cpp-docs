@@ -1,7 +1,7 @@
 ---
-title: "db_table | Microsoft Docs"
+title: "db_table (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.db_table"]
@@ -19,12 +19,7 @@ Opens an OLE DB table.
 ## Syntax
 
 ```cpp
-[ db_table(
-   db_table,
-   name,
-   source_name,
-   hresult
-) ]
+[ db_table(db_table, name, source_name, hresult) ]
 ```
 
 #### Parameters

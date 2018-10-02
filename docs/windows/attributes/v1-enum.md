@@ -1,7 +1,7 @@
 ---
-title: "v1_enum | Microsoft Docs"
+title: "v1_enum (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.v1_enum"]
@@ -37,8 +37,7 @@ The following code shows a use of **v1_enum**:
 
 [export, v1_enum]
 enum eList {
-   e1 = 1,
-   e2 = 2
+   e1 = 1, e2 = 2
 };
 ```
 

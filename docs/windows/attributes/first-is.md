@@ -1,7 +1,7 @@
 ---
-title: "first_is | Microsoft Docs"
+title: "first_is (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.first_is"]
@@ -19,9 +19,7 @@ Specifies the index of the first array element to be transmitted.
 ## Syntax
 
 ```cpp
-[ first_is(
-   "expression"
-) ]
+[ first_is("expression") ]
 ```
 
 ### Parameters

@@ -1,7 +1,7 @@
 ---
-title: "event_receiver | Microsoft Docs"
+title: "event_receiver (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.event_receiver"]
@@ -19,10 +19,8 @@ Creates an event receiver (sink).
 ## Syntax
 
 ```cpp
-[ event_receiver(
-   type
-   [, layout_dependent=false]
-) ]
+[ event_receiver(type
+   [, layout_dependent=false]) ]
 ```
 
 ### Parameters

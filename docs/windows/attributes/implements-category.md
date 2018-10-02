@@ -1,7 +1,7 @@
 ---
-title: "implements_category | Microsoft Docs"
+title: "implements_category (C++ COM Attribute) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.implements_category"]
@@ -19,9 +19,7 @@ Specifies the component categories implemented by the target class.
 ## Syntax
 
 ```cpp
-[ implements_category(
-   implements_category="uuid"
-) ]
+[ implements_category(implements_category="uuid") ]
 ```
 
 ### Parameters
