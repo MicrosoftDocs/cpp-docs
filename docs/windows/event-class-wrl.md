@@ -1,5 +1,5 @@
 ---
-title: "Event Class (Windows Runtime C++ Template Library) | Microsoft Docs"
+title: "Event Class (WRL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "09/24/2018"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Event Class (Windows Runtime C++ Template Library)
+# Event Class (WRL)
 
 Represents an event.
 
