@@ -18,7 +18,7 @@ ms.workload: ["cplusplus"]
 
 A class must be defined for it to be an attribute.
 
-For more information, see [attribute](../../windows/attribute.md).
+For more information, see [attribute](../../windows/attributes/attribute.md).
 
 ## Example
 

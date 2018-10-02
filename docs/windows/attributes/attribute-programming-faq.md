@@ -241,4 +241,4 @@ No, using attributes on a class derived from a class that also uses attributes i
 
 ## See Also
 
-[Concepts](attributed-programming-concepts.md)
+[C++ Attributes for COM and .NET](cpp-attributes-com-net.md)

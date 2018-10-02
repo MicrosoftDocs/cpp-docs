@@ -78,7 +78,6 @@ When not specifying the [uuid](uuid-cpp-attributes.md) attribute and using the s
 
 ## See Also
 
-[C++ Attributes Reference](cpp-attributes-com-net.md)<br/>
-[Concepts](attributed-programming-concepts.md)<br/>
+[C++ Attributes for COM and .NET](cpp-attributes-com-net.md)<br/>
 [Attributes by Group](attributes-by-group.md)<br/>
 [Attributes Alphabetical Reference](attributes-alphabetical-reference.md)

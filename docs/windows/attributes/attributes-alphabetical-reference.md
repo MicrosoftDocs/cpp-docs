@@ -126,7 +126,6 @@ The following attributes are available in Visual C++.
 
 ## See Also
 
-[C++ Attributes Reference](cpp-attributes-reference.md)<br/>
-[Concepts](attributed-programming-concepts.md)<br/>
+[C++ Attributes for COM and .NET](cpp-attributes-com-net.md)<br/>
 [Attributes by Group](attributes-by-group.md)<br/>
 [Attributes by Usage](attributes-by-usage.md)

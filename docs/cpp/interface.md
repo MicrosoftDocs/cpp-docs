@@ -146,4 +146,4 @@ bstr_data = Testing
 ## See also
 
 [Keywords](../cpp/keywords-cpp.md)<br/>
-[Interface Attributes](../windows/interface-attributes.md)
+[Interface Attributes](../windows/attributes/interface-attributes.md)

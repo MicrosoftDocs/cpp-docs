@@ -7868,7 +7868,7 @@
         {
             "source_path": "docs/windows/cpp-attributes-reference.md",
             "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
-            "redirect_document_id": false
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/windows/attributed-programming-concepts.md",
@@ -7896,13 +7896,24 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/attribute-contexts.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/attributes-requirements.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/attribute-programming-faq.md",
             "redirect_url": "/cpp/windows/attributes/attribute-programming-faq",
             "redirect_document_id": true
         },
         {
             "source_path": "docs/windows/aggregatable.md",
-            "redirect_url": "/cpp/windows/attributes/aggregatable"
+            "redirect_url": "/cpp/windows/attributes/aggregatable",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/windows/aggregates.md",
@@ -7982,6 +7993,11 @@
         {
             "source_path": "docs/windows/custom-attributes-cpp.md",
             "redirect_url": "/cpp/windows/attributes/custom-attributes-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/custom-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/custom-cpp",
             "redirect_document_id": true
         },
         {
@@ -8157,6 +8173,11 @@
         {
             "source_path": "docs/windows/implements-cpp.md",
             "redirect_url": "/cpp/windows/attributes/implements-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/import.md",
+            "redirect_url": "/cpp/windows/attributes/import",
             "redirect_document_id": true
         },
         {
@@ -8365,6 +8386,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/windows/restricted.md",
+            "redirect_url": "/cpp/windows/attributes/restricted",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/windows/retval.md",
             "redirect_url": "/cpp/windows/attributes/retval",
             "redirect_document_id": true
@@ -8456,7 +8482,7 @@
         },
         {
             "source_path": "docs/windows/v1-enum.md",
-            "redirect_url": "/cpp/windows/attributes/vararg",
+            "redirect_url": "/cpp/windows/attributes/v1-enum",
             "redirect_document_id": true
         },
         {

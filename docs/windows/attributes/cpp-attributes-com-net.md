@@ -1,7 +1,7 @@
 ---
 title: "C++ Attributes for COM and .NET | Microsoft Docs"
 ms.custom: "index-page"
-ms.date: "10/2/2018"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -97,24 +97,10 @@ This field lists other attributes that need to be present (that is, applied to t
 ### Invalid Attributes
 
 This field lists other attributes that are incompatible with the specified attribute. It is uncommon for an attribute to have any entries for this field.
-  
 
-## See Also
 ## In This Section
 
-[Concepts](attributed-programming-concepts.md)<br/>
-Describes the various concepts that are related to attributes.
-
-[Attributes by Group](attributes-by-group.md)<br/>
-Provides links to attribute reference topics, grouped by function.
-
-[Attributes by Usage](attributes-by-usage.md)<br/>
-Provides links to attribute reference topics, grouped by usage.
-
-[Attributes Alphabetical Reference](attributes-alphabetical-reference.md)<br/>
-Provides links to all attribute reference topics.
-
-## Related Sections
-
-[Attributed Programming](attributed-programming-concepts.md)<br/>
-Provides a conceptual overview of attributes.
+[Attribute Programming FAQ](attributes/attribute-programming-faq.md)<br/>
+[Attributes by Group](attributes/attributes-by-group.md)<br/>
+[Attributes by Usage](attributes/attributes-by-usage.md)<br/>
+[Attributes Alphabetical Reference](attributes/attributes-alphabetical-reference.md)
