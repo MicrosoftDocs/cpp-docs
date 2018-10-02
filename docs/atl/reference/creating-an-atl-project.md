@@ -14,20 +14,20 @@ ms.workload: ["cplusplus"]
 ---
 # Creating an ATL Project
 
-The easiest way to create an ATL project is to use the ATL Project Wizard, located in the Win32 Projects folder of the **New Project dialog box**.
+The easiest way to create an ATL project is to use the ATL Project Wizard, located in the **Win32 Projects** folder of the **New Project** dialog box.
 
-### To create an ATL project using the ATL Project Wizard
+## To create an ATL project using the ATL Project Wizard
 
 1. Follow the instructions in the topic [Creating a Project with a Visual C++ Application Wizard](../../ide/creating-desktop-projects-by-using-application-wizards.md).
 
-2. Select the **ATL Project** icon in the Templates pane to open the ATL Project Wizard.
+1. Select the **ATL Project** icon in the **Templates** pane to open the **ATL Project Wizard**.
 
-3. Define your application settings using the [Application Settings](../../atl/reference/application-settings-atl-project-wizard.md) page of the `ATL Project Wizard`.
+1. Define your application settings using the [Application Settings](../../atl/reference/application-settings-atl-project-wizard.md) page of the **ATL Project Wizard**.
 
    > [!NOTE]
    > Skip this step to keep the wizard default settings.
 
-4. Click **Finish** to close the wizard and open your new project in the development environment.
+1. Click **Finish** to close the wizard and open your new project in the development environment.
 
 Once your project is created, you can view the files created in **Solution Explorer**. For more information about the files the wizard creates for your project, see the project-generated file ReadMe.txt. For more information about the file types, see [File Types Created for Visual C++ Projects](../../ide/file-types-created-for-visual-cpp-projects.md). For more information about the configurations for the new ATL project, and how to change them, see [Default ATL Project Configurations](../../atl/reference/default-atl-project-configurations.md).
 
@@ -35,4 +35,3 @@ Once your project is created, you can view the files created in **Solution Explo
 
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Property Pages](../../ide/property-pages-visual-cpp.md)   
-
