@@ -1,5 +1,5 @@
 ---
-title: "Stand-Alone Attributes | Microsoft Docs"
+title: "Stand-Alone Attributes (C++ COM) | Microsoft Docs"
 ms.custom: ""
 ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]

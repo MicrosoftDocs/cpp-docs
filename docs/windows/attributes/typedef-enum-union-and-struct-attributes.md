@@ -1,5 +1,5 @@
 ---
-title: "Typedef, Enum, Union, and Struct Attributes | Microsoft Docs"
+title: "Typedef, Enum, Union, and Struct Attributes (C++ COM) | Microsoft Docs"
 ms.custom: ""
 ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]

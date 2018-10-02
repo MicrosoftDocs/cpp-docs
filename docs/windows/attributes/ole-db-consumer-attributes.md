@@ -1,5 +1,5 @@
 ---
-title: "OLE DB Consumer Attributes | Microsoft Docs"
+title: "OLE DB Consumer Attributes (C++ COM) | Microsoft Docs"
 ms.custom: ""
 ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]

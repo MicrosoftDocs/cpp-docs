@@ -1,5 +1,5 @@
 ---
-title: "Compiler Attributes | Microsoft Docs"
+title: "Compiler Attributes (C++ COM) | Microsoft Docs"
 ms.custom: ""
 ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
