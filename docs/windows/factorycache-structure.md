@@ -1,12 +1,12 @@
 ---
 title: "FactoryCache Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/21/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["module/Microsoft::WRL::Details::FactoryCache"]
+f1_keywords: ["module/Microsoft::WRL::Details::FactoryCache", "module/Microsoft::WRL::Details::FactoryCache::cookie", "module/Microsoft::WRL::Details::FactoryCache::factory"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["FactoryCache structure"]
+helpviewer_keywords: ["Microsoft::WRL::Details::FactoryCache structure", "Microsoft::WRL::Details::FactoryCache::cookie data member", "Microsoft::WRL::Details::FactoryCache::factory data member"]
 ms.assetid: 624544e6-0989-47f6-a3e9-edb60e1ee6d4
 author: "mikeblome"
 ms.author: "mblome"
@@ -30,10 +30,10 @@ Contains the location of a class factory and a value that identifies a registere
 
 ### Public Data Members
 
-|Name|Description|
-|----------|-----------------|
-|[FactoryCache::cookie Data Member](../windows/factorycache-cookie-data-member.md)|Contains a value that identifies a registered Windows Runtime or COM class object, and is later used to unregister the object.|
-|[FactoryCache::factory Data Member](../windows/factorycache-factory-data-member.md)|Points to a Windows Runtime or COM class factory.|
+Name                              | Description
+--------------------------------- | ------------------------------------------------------------------------------------------------------------------------------
+[FactoryCache::cookie](#cookie)   | Contains a value that identifies a registered Windows Runtime or COM class object, and is later used to unregister the object.
+[FactoryCache::factory](#factory) | Points to a Windows Runtime or COM class factory.
 
 ## Inheritance Hierarchy
 
@@ -45,6 +45,29 @@ Contains the location of a class factory and a value that identifies a registere
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## <a name="cookie"></a>FactoryCache::cookie
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.
+
+```cpp
+union {
+   WINRT_REGISTRATION_COOKIE winrt;
+   DWORD com;
+} cookie;
+```
+
+### Remarks
+
+Contains a value that identifies a registered Windows Runtime or COM class object, and is later used to unregister the object.
+
+## <a name="factory"></a>FactoryCache::factory
+
+Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.
+
+```cpp
+IUnknown* factory;
+```
+
+### Remarks
+
+Points to a Windows Runtime or COM class factory.

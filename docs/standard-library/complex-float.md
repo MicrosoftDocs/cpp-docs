@@ -82,7 +82,7 @@ int main( )
    complex <double> c2double ( 1.0 , 3.0 );
    complex <float> c2float ( c2double );
    cout << "Implicit conversion from type double to type float,"
-        << "\n gives c2float = " << c2float << endl;
+        << endl << "gives c2float = " << c2float << endl;
 
    // The third constructor initializes values of the real &
    // imaginary parts using those of a complex number
@@ -90,27 +90,28 @@ int main( )
    complex <long double> c3longdouble ( 3.0 , 4.0 );
    complex <float> c3float ( c3longdouble );
    cout << "Explicit conversion from type long double to type float,"
-        << "\n gives c3float = " << c3float << endl;
+        << endl << "gives c3float = " << c3float << endl;
 
    // The modulus and argument of a complex number can be recovered
    double absc3 = abs ( c3float);
    double argc3 = arg ( c3float);
    cout << "The modulus of c3 is recovered from c3 using: abs ( c3 ) = "
         << absc3 << endl;
-   cout << "Argument of c3 is recovered from c3 using:\n arg ( c3 ) = "
+   cout << "Argument of c3 is recovered from c3 using:"
+        << endl << "arg ( c3 ) = "
         << argc3 << " radians, which is " << argc3 * 180 / pi
         << " degrees." << endl;
 }
 /* Output:
 Specifying initial real & imaginary parts,
- as type float gives c1 = (4,5)
+as type float gives c1 = (4,5)
 Implicit conversion from type double to type float,
- gives c2float = (1,3)
+gives c2float = (1,3)
 Explicit conversion from type long double to type float,
- gives c3float = (3,4)
+gives c3float = (3,4)
 The modulus of c3 is recovered from c3 using: abs ( c3 ) = 5
 Argument of c3 is recovered from c3 using:
- arg ( c3 ) = 0.927295 radians, which is 53.1301 degrees.
+arg ( c3 ) = 0.927295 radians, which is 53.1301 degrees.
 */
 ```
 

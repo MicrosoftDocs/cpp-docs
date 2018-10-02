@@ -18,7 +18,7 @@ This section contains articles that walk you through various tasks associated wi
 ## In This Section
 
 [Walkthrough: Using the New MFC Shell Controls](../mfc/walkthrough-using-the-new-mfc-shell-controls.md)<br/>
-In this walkthrough, you will create an application that resembles File Explorer. You will create a window that contains two panes. The left pane will contain a [CMFCShellTreeCtrl](../mfc/reference/cmfcshelltreectrl-class.md) object that will display your Desktop in a hierarchical view. The right pane will contain a [CMFCShellListCtrl](../mfc/reference/cmfcshelllistctrl-class.md) that will show the files in the folder that is selected in the left pane.
+In this walkthrough, you'll create an application that resembles File Explorer. You'll create a window that contains two panes. The left pane has a [CMFCShellTreeCtrl](../mfc/reference/cmfcshelltreectrl-class.md) object that will display your Desktop in a hierarchical view. The right pane has a [CMFCShellListCtrl](../mfc/reference/cmfcshelllistctrl-class.md) that will show the files in the folder that is selected in the left pane.
 
 [Walkthrough: Putting Controls On Toolbars](../mfc/walkthrough-putting-controls-on-toolbars.md)<br/>
 Modern MFC toolbars can host controls other than simple buttons. This article explains how to do it.

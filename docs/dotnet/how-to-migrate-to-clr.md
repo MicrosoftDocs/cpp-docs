@@ -102,7 +102,7 @@ Precompiled headers are supported under **/clr**. However, if you only compile s
 
 The easiest way to compile a project where some modules are compiled **/clr** is to disable precompiled headers entirely. (In the project Property Pages dialog, open the C/C++ node, and select Precompiled Headers. Then change the Create/Use Precompiled Headers property to "Not Using Precompiled Headers".)
 
-However, particularly for large projects, precompiled headers provide much better compilation speed, so disabling this feature is not desirable. In this case it's best to configure the **/clr** and non **/clr** files to use separate precompiled headers. This can be done in one step by multi-selecting the modules to be compiled **/clr** using the Solution Explorer, right-clicking on the group, and selecting Properties. Then change both the Create/Use PCH Through File and Precompiled Header File properties to use a different header file name and PCH file respectively.
+However, particularly for large projects, precompiled headers provide much better compilation speed, so disabling this feature is not desirable. In this case it's best to configure the **/clr** and non **/clr** files to use separate precompiled headers. This can be done in one step by multi-selecting the modules to be compiled **/clr** using **Solution Explorer**, right-clicking on the group, and selecting Properties. Then change both the Create/Use PCH Through File and Precompiled Header File properties to use a different header file name and PCH file respectively.
 
 ## Fixing Errors
 
