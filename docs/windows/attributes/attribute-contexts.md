@@ -1,7 +1,7 @@
 ---
-title: "Attribute Contexts | Microsoft Docs"
+title: "Attribute Contexts (C++ COM Attributes) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
