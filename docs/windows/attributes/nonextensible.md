@@ -58,7 +58,7 @@ __interface IFireTabCtrl
 |**Required attributes**|`dual` and `oleautomation`, or `dispinterface`|
 |**Invalid attributes**|None|
 
-For more information about the attribute contexts, see [Attribute Contexts](attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
 ## See Also
 

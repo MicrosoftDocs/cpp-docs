@@ -67,7 +67,7 @@ The **event_receiver** C++ attribute specifies that the class or structure to wh
 |**Required attributes**|`coclass` when *layout_dependent*=**true**|
 |**Invalid attributes**|None|
 
-For more information, see [Attribute Contexts](attribute-contexts.md).
+For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
 ## See Also
 

@@ -42,7 +42,7 @@ The **max_is** C++ attribute has the same functionality as the [max_is](/windows
 |**Required attributes**|None|
 |**Invalid attributes**|**size_is**|
 
-For more information, see [Attribute Contexts](attribute-contexts.md).
+For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
 ## Example
 

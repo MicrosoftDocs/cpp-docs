@@ -50,7 +50,7 @@ This attribute can be used in conjunction with the [coclass](coclass.md), [progi
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
-For more information about the attribute contexts, see [Attribute Contexts](attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
 ## Example
 

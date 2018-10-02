@@ -54,7 +54,7 @@ See the [coclass](coclass.md) example for a sample use of **vi_progid**.
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
-For more information about the attribute contexts, see [Attribute Contexts](attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
 ## See Also
 

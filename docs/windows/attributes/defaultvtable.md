@@ -72,7 +72,7 @@ class CMyC3 : public IMyI3 {};
 |**Required attributes**|**coclass**|
 |**Invalid attributes**|None|
 
-For more information, see [Attribute Contexts](attribute-contexts.md).
+For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
 ## See Also
 

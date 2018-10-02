@@ -144,7 +144,7 @@ ref class MyAttr : System::Attribute   // OK, but redundant.
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
-For more information about the attribute contexts, see [Attribute Contexts](attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
 ## Example
 

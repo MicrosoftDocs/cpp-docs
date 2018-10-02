@@ -61,7 +61,7 @@ __interface IFireTabCtrl : IDispatch
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
-For more information, see [Attribute Contexts](attribute-contexts.md).
+For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
 ## See Also
 

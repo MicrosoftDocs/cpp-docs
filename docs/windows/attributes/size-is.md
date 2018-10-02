@@ -46,7 +46,7 @@ See the example for [first_is](first-is.md) for a sample of how to specify a sec
 |**Required attributes**|None|
 |**Invalid attributes**|`max_is`|
 
-For more information about the attribute contexts, see [Attribute Contexts](attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
 ## See Also
 

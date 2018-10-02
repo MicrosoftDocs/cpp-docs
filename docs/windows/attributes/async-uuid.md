@@ -56,7 +56,7 @@ __interface ICustom {
 |**Required attributes**|None|
 |**Invalid attributes**|**dual**, **dispinterface**|
 
-For more information about the attribute contexts, see [Attribute Contexts](attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
 ## See Also
 

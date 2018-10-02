@@ -101,7 +101,7 @@ The [source](source-cpp.md) attribute also has an example of how to use **defaul
 |**Required attributes**|**coclass** (when applied to **class** or **struct**)|
 |**Invalid attributes**|None|
 
-For more information, see [Attribute Contexts](attribute-contexts.md).
+For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
 ## See Also
 

@@ -41,7 +41,7 @@ See the examples for [defaultvalue](defaultvalue.md) and [nonextensible](nonexte
 |**Required attributes**|None|
 |**Invalid attributes**|**dispinterface**|
 
-For more information about the attribute contexts, see [Attribute Contexts](attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
 ## See Also
 

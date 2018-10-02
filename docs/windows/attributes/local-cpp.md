@@ -41,7 +41,7 @@ See [call_as](call-as.md) for an example of how to use **local**.
 |**Required attributes**|None|
 |**Invalid attributes**|`dispinterface`|
 
-For more information, see [Attribute Contexts](attribute-contexts.md).
+For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
 ## See Also
 

@@ -43,7 +43,7 @@ See the example for [bindable](bindable.md) for a sample use of **retval**.
 |**Required attributes**|**out**|
 |**Invalid attributes**|**in**|
 
-For more information about the attribute contexts, see [Attribute Contexts](attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
 ## See Also
 

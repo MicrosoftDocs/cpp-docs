@@ -81,7 +81,7 @@ This code causes `MYFLOT` and `MYDUB` and the *text* entry to be placed in the g
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
-For more information, see [Attribute Contexts](attribute-contexts.md).
+For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
 ## See Also
 
