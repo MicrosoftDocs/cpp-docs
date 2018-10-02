@@ -41,4 +41,3 @@ You most likely will not use `CTime` `FILETIME` initialization directly. If you 
 ## See Also
 
 [Date and Time](../atl-mfc-shared/date-and-time.md)
-

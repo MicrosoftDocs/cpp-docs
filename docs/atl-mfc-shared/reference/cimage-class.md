@@ -17,7 +17,7 @@ ms.workload: ["cplusplus"]
 `CImage` provides enhanced bitmap support, including the ability to load and save images in JPEG, GIF, BMP, and Portable Network Graphics (PNG) formats.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -104,10 +104,10 @@ class CImage
 To determine if an attached bitmap is a DIB section, call [IsDibSection](#isdibsection).
 
 > [!NOTE]
-> **Note** In Visual Studio .NET 2003, this class keeps a count of the number of `CImage` objects created. Whenever the count goes to 0, the function `GdiplusShutdown` is automatically called to release resources used by GDI+. This ensures that any `CImage` objects created directly or indirectly by DLLs are always destroyed properly and that `GdiplusShutdown` is not called from `DllMain`.
+> In Visual Studio .NET 2003, this class keeps a count of the number of `CImage` objects created. Whenever the count goes to 0, the function `GdiplusShutdown` is automatically called to release resources used by GDI+. This ensures that any `CImage` objects created directly or indirectly by DLLs are always destroyed properly and that `GdiplusShutdown` is not called from `DllMain`.
 
 > [!NOTE]
->  Using global `CImage` objects in a DLL is not recommended. If you need to use a global `CImage` object in a DLL, call [CImage::ReleaseGDIPlus](#releasegdiplus) to explicitly release resources used by GDI+.
+> Using global `CImage` objects in a DLL is not recommended. If you need to use a global `CImage` object in a DLL, call [CImage::ReleaseGDIPlus](#releasegdiplus) to explicitly release resources used by GDI+.
 
 `CImage` cannot be selected into a new [CDC](../../mfc/reference/cdc-class.md). `CImage` creates its own HDC for the image. Because an HBITMAP can only be selected into one HDC at a time, the HBITMAP associated with the `CImage` cannot be selected into another HDC. If you need a CDC, retrieve the HDC from the `CImage` and give it to [CDC::FromHandle](../../mfc/reference/cdc-class.md#cdc__fromhandle.
 
@@ -124,7 +124,6 @@ m_myImage.ReleaseDC();
 
 When you use `CImage` in an MFC project, note which member functions in your project expect a pointer to a [CBitmap](../../mfc/reference/cbitmap-class.md) object. If you want to use `CImage` with such a function, like [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#appendmenu), use [CBitmap::FromHandle](../../mfc/reference/cbitmap-class.md#fromhandle), pass it your `CImage` HBITMAP, and use the returned `CBitmap*`.  
 
-
 ## Example
 
 ```cpp  
@@ -140,15 +139,14 @@ void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
 }
 ```
 
-
 Through `CImage`, you have access to the actual bits of a DIB section. You can use a `CImage` object anywhere you previously used a Win32 HBITMAP or DIB section.
 
 You can use `CImage` from either MFC or ATL.
 
 > [!NOTE]
->  When you create a project using `CImage`, you must define `CString` before you include `atlimage.h`. If your project uses ATL without MFC, include `atlstr.h` before you include `atlimage.h`. If your project uses MFC (or if it is an ATL project with MFC support), include `afxstr.h` before you include `atlimage.h`.  
+> When you create a project using `CImage`, you must define `CString` before you include `atlimage.h`. If your project uses ATL without MFC, include `atlstr.h` before you include `atlimage.h`. If your project uses MFC (or if it is an ATL project with MFC support), include `afxstr.h` before you include `atlimage.h`.  
 >   
->  Likewise, you must include `atlimage.h` before you include `atlimpl.cpp`. To accomplish this easily, include `atlimage.h` in your `stdafx.h`.
+> Likewise, you must include `atlimage.h` before you include `atlimpl.cpp`. To accomplish this easily, include `atlimage.h` in your `stdafx.h`.
 
 ## Requirements
 
@@ -195,46 +193,46 @@ BYTE bBlendOp = AC_SRC_OVER);
 
 ### Parameters
 
-*hDestDC*  
+*hDestDC*<br/>
 Handle to the destination device context.
 
-*xDest*  
+*xDest*<br/>
 The x-coordinate, in logical units, of the upper left corner of the destination rectangle.
 
-*yDest*  
+*yDest*<br/>
 The y-coordinate, in logical units, of the upper left corner of the destination rectangle.
 
-*bSrcAlpha*  
+*bSrcAlpha*<br/>
 An alpha transparency value to be used on the entire source bitmap. The default 0xff (255) assumes that your image is opaque, and that you want to use per-pixel alpha values only.
 
-*bBlendOp*  
+*bBlendOp*<br/>
 The alpha-blending function for source and destination bitmaps, a global alpha value to be applied to the entire source bitmap, and format information for the source bitmap. The source and destination blend functions are currently limited to AC_SRC_OVER.
 
-*pointDest*  
+*pointDest*<br/>
 A reference to a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure that identifies the upper left corner of the destination rectangle, in logical units.
 
-*nDestWidth*  
+*nDestWidth*<br/>
 The width, in logical units, of the destination rectangle.
 
-*nDestHeight*  
+*nDestHeight*<br/>
 The height, in logical units, of the destination rectangle.
 
-*xSrc*  
+*xSrc*<br/>
 The logical x-coordinate of the upper left corner of the source rectangle.
 
-*ySrc*  
+*ySrc*<br/>
 The logical y-coordinate of the upper left corner of the source rectangle.
 
-*nSrcWidth*  
+*nSrcWidth*<br/>
 The width, in logical units, of the source rectangle.
 
-*nSrcHeight*  
+*nSrcHeight*<br/>
 The height, in logical units, of the source rectangle.
 
-*rectDest*  
+*rectDest*<br/>
 A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure, identifying the destination.
 
-*rectSrc*  
+*rectSrc*<br/>
 A reference to a `RECT` structure, identifying the source.
 
 ### Return Value
@@ -257,10 +255,10 @@ void Attach(HBITMAP hBitmap, DIBOrientation eOrientation = DIBOR_DEFAULT) throw(
 
 ### Parameters
 
-*hBitmap*  
+*hBitmap*<br/>
 A handle to an HBITMAP.
 
-*eOrientation*  
+*eOrientation*<br/>
 Specifies the orientation of the bitmap. Can be one of the following:
 
 - DIBOR_DEFAULT The orientation of the bitmap is determined by the operating system. However, this may not always have the intended results on all operating systems. For more information on this, see the following Knowledge Base article (**Q186586**): PRB: GetObject() Always Returns Positive Height For DIB Sections.
@@ -520,40 +518,40 @@ const RECT& rectDest) const throw();
 
 ### Parameters
 
-*hDestDC*  
+*hDestDC*<br/>
 A handle to the destination device context.
 
-*xDest*  
+*xDest*<br/>
 The x-coordinate, in logical units, of the upper left corner of the destination rectangle.
 
-*yDest*  
+*yDest*<br/>
 The y-coordinate, in logical units, of the upper left corner of the destination rectangle.
 
-*nDestWidth*  
+*nDestWidth*<br/>
 The width, in logical units, of the destination rectangle.
 
-*nDestHeight*  
+*nDestHeight*<br/>
 The height, in logical units, of the destination rectangle.
 
-*xSrc*  
+*xSrc*<br/>
 The x-coordinate, in logical units, of the upper left corner of the source rectangle.
 
-*ySrc*  
+*ySrc*<br/>
 The y-coordinate, in logical units, of the upper left corner of the source rectangle.
 
-*nSrcWidth*  
+*nSrcWidth*<br/>
 The width, in logical units, of the source rectangle.
 
-*nSrcHeight*  
+*nSrcHeight*<br/>
 The height, in logical units, of the source rectangle.
 
-*rectDest*  
+*rectDest*<br/>
 A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure, identifying the destination.
 
-*rectSrc*  
+*rectSrc*<br/>
 A reference to a `RECT` structure, identifying the source.
 
-*pointDest*  
+*pointDest*<br/>
 A reference to a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure that identifies the upper left corner of the destination rectangle, in logical units.
 
 ### Return Value
@@ -583,7 +581,7 @@ A pointer to the bitmap buffer. If the bitmap is a bottom-up DIB, the pointer po
 Using this pointer, along with the value returned by [GetPitch](#getpitch), you can locate and change individual pixels in an image.
 
 > [!NOTE]
->  This method supports only DIB section bitmaps; consequently, you access the pixels of a `CImage` object the same way you would the pixels of a DIB section. The returned pointer points to the pixel at the location (0, 0).
+> This method supports only DIB section bitmaps; consequently, you access the pixels of a `CImage` object the same way you would the pixels of a DIB section. The returned pointer points to the pixel at the location (0, 0).
 
 ##  <a name="getbpp"></a>  CImage::GetBPP
 
@@ -615,13 +613,13 @@ RGBQUAD* prgbColors) const throw();
 
 ### Parameters
 
-*iFirstColor*  
+*iFirstColor*<br/>
 The color table index of the first entry to retrieve.
 
-*nColors*  
+*nColors*<br/>
 The number of color table entries to retrieve.
 
-*prgbColors*  
+*prgbColors*<br/>
 A pointer to the array of [RGBQUAD](/windows/desktop/api/wingdi/ns-wingdi-tagrgbquad) structures to retrieve the color table entries.
 
 ##  <a name="getdc"></a>  CImage::GetDC
@@ -654,16 +652,16 @@ TCHAR chSeparator = _T('|'));
 
 ### Parameters
 
-*strExporters*  
+*strExporters*<br/>
 A reference to a `CSimpleString` object. See **Remarks** for more information.
 
-*aguidFileTypes*  
+*aguidFileTypes*<br/>
 An array of GUIDs, with each element corresponding to one of the file types in the string. In the example in *pszAllFilesDescription* below, *aguidFileTypes*[0] is GUID_NULL and the remaining array values are the image file formats supported by the current operating system.
 
 > [!NOTE]
->  For a complete list of constants, see **Image File Format Constants** in the Windows SDK.
+> For a complete list of constants, see **Image File Format Constants** in the Windows SDK.
 
-*pszAllFilesDescription*  
+*pszAllFilesDescription*<br/>
 If this parameter is not NULL, the filter string will have one additional filter at the beginning of the list. This filter will have the current value of *pszAllFilesDescription* for its description, and accepts files of any extension supported by any other exporter in the list.
 
 For example:  
@@ -677,7 +675,7 @@ _T("All Image Files"));
 ```
 
 
-*dwExclude*  
+*dwExclude*<br/>
 Set of bit flags specifying which file types to exclude from the list. Allowable flags are:
 
 - `excludeGIF` = 0x01   Excludes GIF files.
@@ -702,7 +700,7 @@ Set of bit flags specifying which file types to exclude from the list. Allowable
 
 - `excludeDefaultSave` = `excludeIcon &#124; excludeEMF &#124; excludeWMF` For saving, these files are excluded by default because they usually have special requirements.
 
-*chSeparator*  
+*chSeparator*<br/>
 The separator used between the image formats. See **Remarks** for more information.
 
 ### Return Value
@@ -749,16 +747,16 @@ TCHAR chSeparator = _T('|'));
 
 ### Parameters
 
-*strImporters*  
+*strImporters*<br/>
 A reference to a `CSimpleString` object. See **Remarks** for more information.
 
-*aguidFileTypes*  
+*aguidFileTypes*<br/>
 An array of GUIDs, with each element corresponding to one of the file types in the string. In the example in *pszAllFilesDescription* below, *aguidFileTypes*[0] is GUID_NULL with the remaining array values are the image file formats supported by the current operating system.
 
 > [!NOTE]
->  For a complete list of constants, see **Image File Format Constants** in the Windows SDK.
+> For a complete list of constants, see **Image File Format Constants** in the Windows SDK.
 
-*pszAllFilesDescription*  
+*pszAllFilesDescription*<br/>
 If this parameter is not NULL, the filter string will have one additional filter at the beginning of the list. This filter will have the current value of *pszAllFilesDescription* for its description, and accepts files of any extension supported by any other exporter in the list.
 
 For example:  
@@ -772,7 +770,7 @@ _T("All Image Files"));
 ```
 
 
-*dwExclude*  
+*dwExclude*<br/>
 Set of bit flags specifying which file types to exclude from the list. Allowable flags are:
 
 - `excludeGIF` = 0x01   Excludes GIF files.
@@ -797,7 +795,7 @@ Set of bit flags specifying which file types to exclude from the list. Allowable
 
 - `excludeDefaultSave` = `excludeIcon &#124; excludeEMF &#124; excludeWMF` For saving, these files are excluded by default because they usually have special requirements.
 
-*chSeparator*  
+*chSeparator*<br/>
 The separator used between the image formats. See **Remarks** for more information.
 
 ### Remarks
@@ -849,7 +847,7 @@ The pitch is the distance, in bytes, between two memory addresses that represent
 Use `GetPitch` with [GetBits](#getbits) to find individual pixels of an image.
 
 > [!NOTE]
->  This method supports only DIB section bitmaps.
+> This method supports only DIB section bitmaps.
 
 ##  <a name="getpixel"></a>  CImage::GetPixel
 
@@ -861,10 +859,10 @@ COLORREF GetPixel(int x,int y) const throw();
 
 ### Parameters
 
-*x*  
+*x*<br/>
 The x-coordinate of the pixel.
 
-*y*  
+*y*<br/>
 The y-coordinate of the pixel.
 
 ### Return Value
@@ -881,10 +879,10 @@ void* GetPixelAddress(int x,int y) throw();
 
 ### Parameters
 
-*x*  
+*x*<br/>
 The x-coordinate of the pixel.
 
-*y*  
+*y*<br/>
 The y-coordinate of the pixel.
 
 ### Remarks
@@ -894,7 +892,7 @@ The address is determined according to the coordinates of a pixel, the pitch of 
 For formats that have less than 8 bits per pixel, this method returns the address of the byte containing the pixel. For example, if your image format has 4 bits per pixel, `GetPixelAddress` returns the address of the first pixel in the byte, and you must calculate for 2 pixels per byte.
 
 > [!NOTE]
->  This method supports only DIB section bitmaps.
+> This method supports only DIB section bitmaps.
 
 ##  <a name="gettransparentcolor"></a>  CImage::GetTransparentColor
 
@@ -967,7 +965,7 @@ TRUE if indexed; otherwise FALSE.
 This method returns TRUE only if the bitmap is 8-bit (256 colors) or less.
 
 > [!NOTE]
->  This method supports only DIB section bitmaps.
+> This method supports only DIB section bitmaps.
 
 ##  <a name="isnull"></a>  CImage::IsNull
 
@@ -1008,10 +1006,10 @@ HRESULT Load(IStream* pStream) throw();
 
 ### Parameters
 
-*pszFileName*  
+*pszFileName*<br/>
 A pointer to a string containing the name of the image file to load.
 
-*pStream*  
+*pStream*<br/>
 A pointer to a stream containing the name of the image file to load.
 
 ### Return Value
@@ -1040,13 +1038,13 @@ UINT nIDResource) throw();
 
 ### Parameters
 
-*hInstance*  
+*hInstance*<br/>
 Handle to an instance of the module that contains the image to be loaded.
 
-*pszResourceName*  
+*pszResourceName*<br/>
 A pointer to the string containing the name of the resource containing the image to load.
 
-*nIDResource*  
+*nIDResource*<br/>
 The ID of the resource to load.
 
 ### Remarks
@@ -1095,49 +1093,49 @@ DWORD dwROP = SRCCOPY) const throw();
 
 ### Parameters
 
-*hDestDC*  
+*hDestDC*<br/>
 The handle to the module whose executable contains the resource.
 
-*xDest*  
+*xDest*<br/>
 The x-coordinate, in logical units, of the upper left corner of the destination rectangle.
 
-*yDest*  
+*yDest*<br/>
 The y-coordinate, in logical units, of the upper left corner of the destination rectangle.
 
-*nDestWidth*  
+*nDestWidth*<br/>
 The width, in logical units, of the destination rectangle and source bitmap.
 
-*nDestHeight*  
+*nDestHeight*<br/>
 The height, in logical units, of the destination rectangle and source bitmap.
 
-*xSrc*  
+*xSrc*<br/>
 The logical x-coordinate of the upper left corner of the source bitmap.
 
-*ySrc*  
+*ySrc*<br/>
 The logical y-coordinate of the upper left corner of the source bitmap.
 
-*hbmMask*  
+*hbmMask*<br/>
 Handle to the monochrome mask bitmap combined with the color bitmap in the source device context.
 
-*xMask*  
+*xMask*<br/>
 The horizontal pixel offset for the mask bitmap specified by the *hbmMask* parameter.
 
-*yMask*  
+*yMask*<br/>
 The vertical pixel offset for the mask bitmap specified by the *hbmMask* parameter.
 
-*dwROP*  
+*dwROP*<br/>
 Specifies both foreground and background ternary raster operation codes that the method uses to control the combination of source and destination data. The background raster operation code is stored in the high-order byte of the high-order word of this value; the foreground raster operation code is stored in the low-order byte of the high-order word of this value; the low-order word of this value is ignored, and should be zero. For a discussion of foreground and background in the context of this method, see `MaskBlt` in the Windows SDK. For a list of common raster operation codes, see `BitBlt` in the Windows SDK.
 
-*rectDest*  
+*rectDest*<br/>
 A reference to a `RECT` structure, identifying the destination.
 
-*pointSrc*  
+*pointSrc*<br/>
 A `POINT` structure indicating the upper left corner of the source rectangle.
 
-*pointMask*  
+*pointMask*<br/>
 A `POINT` structure indicating the upper left corner of the mask bitmap.
 
-*pointDest*  
+*pointDest*<br/>
 A reference to a `POINT` structure that identifies the upper left corner of the destination rectangle, in logical units.
 
 ### Return Value
@@ -1183,37 +1181,37 @@ const POINT& pointMask = CPoint(0, 0)) const throw();
 
 ### Parameters
 
-*hDestDC*  
+*hDestDC*<br/>
 A handle to the destination device context.
 
-*pPoints*  
+*pPoints*<br/>
 A pointer to an array of three points in logical space that identify three corners of the destination parallelogram. The upper left corner of the source rectangle is mapped to the first point in this array, the upper-right corner to the second point in this array, and the lower left corner to the third point. The lower-right corner of the source rectangle is mapped to the implicit fourth point in the parallelogram.
 
-*hbmMask*  
+*hbmMask*<br/>
 A handle to an optional monochrome bitmap that is used to mask the colors of the source rectangle.
 
-*xSrc*  
+*xSrc*<br/>
 The x-coordinate, in logical units, of the upper left corner of the source rectangle.
 
-*ySrc*  
+*ySrc*<br/>
 The y-coordinate, in logical units, of the upper left corner of the source rectangle.
 
-*nSrcWidth*  
+*nSrcWidth*<br/>
 The width, in logical units, of the source rectangle.
 
-*nSrcHeight*  
+*nSrcHeight*<br/>
 The height, in logical units, of the source rectangle.
 
-*xMask*  
+*xMask*<br/>
 The x-coordinate of the upper left corner of the monochrome bitmap.
 
-*yMask*  
+*yMask*<br/>
 The y-coordinate of the upper left corner of the monochrome bitmap.
 
-*rectSrc*  
+*rectSrc*<br/>
 A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the coordinates of the source rectangle.
 
-*pointMask*  
+*pointMask*<br/>
 A [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure indicating the upper left corner of the mask bitmap.
 
 ### Return Value
@@ -1264,13 +1262,13 @@ REFGUID guidFileType= GUID_NULL) const throw();
 
 ### Parameters
 
-*pStream*  
+*pStream*<br/>
 A pointer to a COM IStream object containing the file image data.
 
-*pszFileName*  
+*pszFileName*<br/>
 A pointer to the file name for the image.
 
-*guidFileType*  
+*guidFileType*<br/>
 The file type to save the image as. Can be one of the following:
 
 - `ImageFormatBMP` An uncompressed bitmap image.
@@ -1282,7 +1280,7 @@ The file type to save the image as. Can be one of the following:
 - `ImageFormatGIF` A GIF compressed image.
 
 > [!NOTE]
->  For a complete list of constants, see **Image File Format Constants** in the Windows SDK.
+> For a complete list of constants, see **Image File Format Constants** in the Windows SDK.
 
 ### Return Value
 
@@ -1305,13 +1303,13 @@ void SetColorTable(
 
 ### Parameters
 
-*iFirstColor*  
+*iFirstColor*<br/>
 The color table index of the first entry to set.
 
-*nColors*  
+*nColors*<br/>
 The number of color table entries to set.
 
-*prgbColors*  
+*prgbColors*<br/>
 A pointer to the array of [RGBQUAD](/windows/desktop/api/wingdi/ns-wingdi-tagrgbquad) structures to set the color table entries.
 
 ### Remarks
@@ -1328,13 +1326,13 @@ void SetPixel(int x, int y, COLORREF color) throw();
 
 ### Parameters
 
-*x*  
+*x*<br/>
 The horizontal location of the pixel to set.
 
-*y*  
+*y*<br/>
 The vertical location of the pixel to set.
 
-*color*  
+*color*<br/>
 The color to which you set the pixel.
 
 ### Remarks
@@ -1351,13 +1349,13 @@ void SetPixelIndexed(int x, int y, int iIndex) throw();
 
 ### Parameters
 
-*x*  
+*x*<br/>
 The horizontal location of the pixel to set.
 
-*y*  
+*y*<br/>
 The vertical location of the pixel to set.
 
-*iIndex*  
+*iIndex*<br/>
 The index of a color in the color palette.
 
 ##  <a name="setpixelrgb"></a>  CImage::SetPixelRGB
@@ -1375,19 +1373,19 @@ BYTE b) throw();
 
 ### Parameters
 
-*x*  
+*x*<br/>
 The horizontal location of the pixel to set.
 
-*y*  
+*y*<br/>
 The vertical location of the pixel to set.
 
-*r*  
+*r*<br/>
 The intensity of the red color.
 
-*g*  
+*g*<br/>
 The intensity of the green color.
 
-*b*  
+*b*<br/>
 The intensity of the blue color.
 
 ### Remarks
@@ -1404,7 +1402,7 @@ LONG SetTransparentColor(LONG iTransparentColor) throw();
 
 ### Parameters
 
-*iTransparentColor*  
+*iTransparentColor*<br/>
 The index, in a color palette, of the color to set to transparent. If -1, no color is set to transparent.
 
 ### Return Value
@@ -1450,40 +1448,40 @@ DWORD dwROP = SRCCOPY) const throw();
 
 ### Parameters
 
-*hDestDC*  
+*hDestDC*<br/>
 A handle to the destination device context.
 
-*xDest*  
+*xDest*<br/>
 The x-coordinate, in logical units, of the upper left corner of the destination rectangle.
 
-*yDest*  
+*yDest*<br/>
 The y-coordinate, in logical units, of the upper left corner of the destination rectangle.
 
-*nDestWidth*  
+*nDestWidth*<br/>
 The width, in logical units, of the destination rectangle.
 
-*nDestHeight*  
+*nDestHeight*<br/>
 The height, in logical units, of the destination rectangle.
 
-*dwROP*  
+*dwROP*<br/>
 The raster operation to be performed. Raster-operation codes define exactly how to combine the bits of the source, the destination, and the pattern (as defined by the currently selected brush) to form the destination. See [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) in the Windows SDK for a list of other raster-operation codes and their descriptions.
 
-*rectDest*  
+*rectDest*<br/>
 A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure, identifying the destination.
 
-*xSrc*  
+*xSrc*<br/>
 The x-coordinate, in logical units, of the upper left corner of the source rectangle.
 
-*ySrc*  
+*ySrc*<br/>
 The y-coordinate, in logical units, of the upper left corner of the source rectangle.
 
-*nSrcWidth*  
+*nSrcWidth*<br/>
 The width, in logical units, of the source rectangle.
 
-*nSrcHeight*  
+*nSrcHeight*<br/>
 The height, in logical units, of the source rectangle.
 
-*rectSrc*  
+*rectSrc*<br/>
 A reference to a `RECT` structure, identifying the source.
 
 ### Return Value
@@ -1533,40 +1531,40 @@ UINT crTransparent = CLR_INVALID) const throw();
 
 ### Parameters
 
-*hDestDC*  
+*hDestDC*<br/>
 A handle to the destination device context.
 
-*xDest*  
+*xDest*<br/>
 The x-coordinate, in logical units, of the upper left corner of the destination rectangle.
 
-*yDest*  
+*yDest*<br/>
 The y-coordinate, in logical units, of the upper left corner of the destination rectangle.
 
-*nDestWidth*  
+*nDestWidth*<br/>
 The width, in logical units, of the destination rectangle.
 
-*nDestHeight*  
+*nDestHeight*<br/>
 The height, in logical units, of the destination rectangle.
 
-*crTransparent*  
+*crTransparent*<br/>
 The color in the source bitmap to treat as transparent. By default, CLR_INVALID, indicating that the color currently set as the transparent color of the image should be used.
 
-*rectDest*  
+*rectDest*<br/>
 A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure, identifying the destination.
 
-*xSrc*  
+*xSrc*<br/>
 The x-coordinate, in logical units, of the upper left corner of the source rectangle.
 
-*ySrc*  
+*ySrc*<br/>
 The y-coordinate, in logical units, of the upper left corner of the source rectangle.
 
-*nSrcWidth*  
+*nSrcWidth*<br/>
 The width, in logical units, of the source rectangle.
 
-*nSrcHeight*  
+*nSrcHeight*<br/>
 The height, in logical units, of the source rectangle.
 
-*rectSrc*  
+*rectSrc*<br/>
 A reference to a `RECT` structure, identifying the source.
 
 ### Return Value
@@ -1576,7 +1574,6 @@ TRUE if successful, otherwise FALSE.
 ### Remarks
 
 `TransparentBlt` is supported for source bitmaps of 4 bits per pixel and 8 bits per pixel. Use [CImage::AlphaBlend](#alphablend) to specify 32 bits-per-pixel bitmaps with transparency.
-
 
 ### Example  
 
@@ -1607,7 +1604,6 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage,
 }
 ```
 
-
 ## See Also
 
 [MMXSwarm Sample](../../visual-cpp-samples.md)<br/>
@@ -1617,4 +1613,3 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage,
 [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)<br/>
 [Device-Independent Bitmaps](/windows/desktop/gdi/device-independent-bitmaps)<br/>
 [CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibsection)   
-

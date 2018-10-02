@@ -33,9 +33,9 @@ Only one directory can be passed to an **/AI** invocation. Specify one **/AI** o
 
 1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-2. Select the **Configuration Properties** > **C/C++** > **General** property page.
+1. Select the **Configuration Properties** > **C/C++** > **General** property page.
 
-3. Modify the **Additional #using Directories** property.
+1. Modify the **Additional #using Directories** property.
 
 ### To set this compiler option programmatically
 

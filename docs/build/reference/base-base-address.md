@@ -53,9 +53,9 @@ Another way to set the base address is by using the *BASE* argument in a [NAME](
 
 1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
 
-2. Select the **Configuration Properties** > **Linker** > **Advanced** property page.
+1. Select the **Configuration Properties** > **Linker** > **Advanced** property page.
 
-3. Modify the **Base Address** property.
+1. Modify the **Base Address** property.
 
 ### To set this linker option programmatically
 

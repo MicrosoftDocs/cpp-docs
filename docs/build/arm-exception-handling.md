@@ -178,7 +178,7 @@ When the packed unwind format is insufficient to describe the unwinding of a fun
    |1|16-23|*Extended Code Words* is an 8-bit field that provides more space for encoding an unusually large number of unwind code words. The extension word that contains this field is only present if the *Epilogue Count* and *Code Words* fields in the first header word are both set to 0.|
    |1|24-31|Reserved|
 
-2. After the exception data (if the *E* bit in the header was set to 0) is a list of information about epilogue scopes, which are packed one to a word and stored in order of increasing starting offset. Each scope contains these fields:
+1. After the exception data (if the *E* bit in the header was set to 0) is a list of information about epilogue scopes, which are packed one to a word and stored in order of increasing starting offset. Each scope contains these fields:
 
    |Bits|Purpose|
    |----------|-------------|
@@ -187,9 +187,9 @@ When the packed unwind format is insufficient to describe the unwinding of a fun
    |20-23|*Condition* is a 4-bit field that gives the condition under which the epilogue is executed. For unconditional epilogues, it should be set to 0xE, which indicates "always". (An epilogue must be entirely conditional or entirely unconditional, and in Thumb-2 mode, the epilogue begins with the first instruction after the IT opcode.)|
    |24-31|*Epilogue Start Index* is an 8-bit field that indicates the byte index of the first unwind code that describes this epilogue.|
 
-3. After the list of epilogue scopes comes an array of bytes that contain unwind codes, which are described in detail in the Unwind Codes section in this article. This array is padded at the end to the nearest full word boundary. The bytes are stored in little-endian order so that they can be directly fetched in little-endian mode.
+1. After the list of epilogue scopes comes an array of bytes that contain unwind codes, which are described in detail in the Unwind Codes section in this article. This array is padded at the end to the nearest full word boundary. The bytes are stored in little-endian order so that they can be directly fetched in little-endian mode.
 
-4. If the *X* field in the header is 1, the unwind code bytes are followed by the exception handler information. This consists of one *Exception Handler RVA* that contains the address of the exception handler, followed immediately by the (variable-length) amount of data required by the exception handler.
+1. If the *X* field in the header is 1, the unwind code bytes are followed by the exception handler information. This consists of one *Exception Handler RVA* that contains the address of the exception handler, followed immediately by the (variable-length) amount of data required by the exception handler.
 
 The .xdata record is designed so that it is possible to fetch the first 8 bytes and compute the full size of the record, not including the length of the variable-sized exception data that follows. This code snippet computes the record size:
 

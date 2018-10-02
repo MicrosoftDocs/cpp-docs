@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 
 The following procedure shows how to create a `CTime` object and initialize it with the current time.
 
-#### To get the current time
+## To get the current time
 
 1. Allocate a `CTime` object, as follows:
 
@@ -24,7 +24,7 @@ The following procedure shows how to create a `CTime` object and initialize it w
    > [!NOTE]
    > Uninitialized `CTime` objects are not initialized to a valid time.
 
-2. Call the `CTime::GetCurrentTime` function to get the current time from the operating system. This function returns a `CTime` object that can be used to set the value of `CTime`, as follows:
+1. Call the `CTime::GetCurrentTime` function to get the current time from the operating system. This function returns a `CTime` object that can be used to set the value of `CTime`, as follows:
 
    [!code-cpp[NVC_ATLMFC_Utilities#172](../atl-mfc-shared/codesnippet/cpp/current-time-general-purpose-classes_2.cpp)]
 
