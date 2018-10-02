@@ -88,13 +88,13 @@ One way to find the keynames and values for the *lpszAttributes* parameter is to
   
 1. Find the ODBC data sources information using one of the following:  
   
-    -   For 32 bit, find the key **HKEY_CURRENT_USER\Software\ODBC\ODBC.INI\ODBC Data Sources** in the left pane.  
+    - For 32 bit, find the key **HKEY_CURRENT_USER\Software\ODBC\ODBC.INI\ODBC Data Sources** in the left pane.  
   
-         The right pane lists entries of the form: "pub: REG_SZ:*<data source name>*", where *<data source name>* is a data source that has already been configured with the desired settings for the driver you intend to use. Select the data source you want, for example, SQL Server. The items following the string "pub:" are, in order, the keyname and value to use in your *lpszAttributes* parameter.  
+        The right pane lists entries of the form: "pub: REG_SZ:*<data source name>*", where *<data source name>* is a data source that has already been configured with the desired settings for the driver you intend to use. Select the data source you want, for example, SQL Server. The items following the string "pub:" are, in order, the keyname and value to use in your *lpszAttributes* parameter.  
   
-    -   For 16 bit, find the section in the Odbc.ini file marked by [*\<data source name>*].  
+    - For 16 bit, find the section in the Odbc.ini file marked by [*\<data source name>*].  
   
-         The lines following this line are of the form "keyname=value". These are exactly the entries to use in your *lpszAttributes* parameter.  
+        The lines following this line are of the form "keyname=value". These are exactly the entries to use in your *lpszAttributes* parameter.  
   
 You might also want to examine the documentation for the specific driver you are going to use. You can find useful information in the online Help for the driver, which you can access by running ODBC Administrator. These Help files are usually placed in the WINDOWS\SYSTEM directory for Windows NT, Windows 3.1, or Windows 95.  
   

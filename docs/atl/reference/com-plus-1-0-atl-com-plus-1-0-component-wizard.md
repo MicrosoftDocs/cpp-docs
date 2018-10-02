@@ -24,7 +24,7 @@ For more information on ATL projects and ATL COM classes, see [ATL COM Desktop C
    |Option|Description|
    |------------|-----------------|
    |**Dual**|Specifies that the object supports a dual interface (its vtable has custom interface functions and late-binding `IDispatch` methods). Allows both COM clients and Automation controllers to access the object.|
-   |**Custom**|Specifies that the object supports a custom interface (its vtable has custom interface functions). A custom interface can be faster than a dual interface, especially across process boundaries.<br /><br /> -   **Automation compatible** Adds automation support to the custom interface. For attributed projects, sets the **oleautomation** attribute in the coclass.|
+   |**Custom**|Specifies that the object supports a custom interface (its vtable has custom interface functions). A custom interface can be faster than a dual interface, especially across process boundaries.<br /><br /> - **Automation compatible** Adds automation support to the custom interface. For attributed projects, sets the **oleautomation** attribute in the coclass.|
 
 - **Queueable**
 

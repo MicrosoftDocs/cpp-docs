@@ -25,11 +25,11 @@ ms.workload: ["cplusplus", "data-storage"]
   
 1. Edit the other name boxes, if needed. In addition to the object and file names, you can edit the following:  
   
-    -   **Coclass**: The name that COM uses to create the provider.  
+    - **Coclass**: The name that COM uses to create the provider.  
   
-    -   **ProgID**: The programmatic identifier, which is a text string that can be used instead of a GUID.  
+    - **ProgID**: The programmatic identifier, which is a text string that can be used instead of a GUID.  
   
-    -   **Version**: Used with the ProgID and coclass to generate a version-dependent programmatic ID.  
+    - **Version**: Used with the ProgID and coclass to generate a version-dependent programmatic ID.  
   
 1. Click **Finish**.  
   

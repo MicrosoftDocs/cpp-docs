@@ -17,13 +17,13 @@ ms.workload: ["cplusplus"]
 pure virtual function call
 
 > [!NOTE]
->  If you encounter this error message while running an app, the app was shut down because it has an internal problem. The most common reason for this error is a bug in the app, or a corrupted installation.
+> If you encounter this error message while running an app, the app was shut down because it has an internal problem. The most common reason for this error is a bug in the app, or a corrupted installation.
 >
->  You can try these steps to fix this error:
+> You can try these steps to fix this error:
 >
->  -   Use the **Apps and Features** or **Programs and Features** page in the **Control Panel** to repair or reinstall the program.
-> -   Check **Windows Update** in the **Control Panel** for software updates.
-> -   Check for an updated version of the app. Contact the app vendor if the problem persists.
+> - Use the **Apps and Features** or **Programs and Features** page in the **Control Panel** to repair or reinstall the program.
+> - Check **Windows Update** in the **Control Panel** for software updates.
+> - Check for an updated version of the app. Contact the app vendor if the problem persists.
 
 **Information for Programmers**
 

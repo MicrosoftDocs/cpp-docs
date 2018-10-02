@@ -17,17 +17,17 @@ There are three basic scenarios in which you need to use multiple accessors:
   
 - **Multiple read/write rowsets.** In this scenario, you have a table with a primary key. You want to be able to read all the columns in the row, including the primary key. You also want to be able to write data to all the columns except the primary key (because you cannot write to the primary key column). In this case, you set up two accessors:  
   
-    -   Accessor 0 contains all columns.  
+    - Accessor 0 contains all columns.  
   
-    -   Accessor 1 contains all columns except the primary key.  
+    - Accessor 1 contains all columns except the primary key.  
   
 - **Performance.** In this scenario, one or more columns contain a large amount of data, for example, graphics, sound, or video files. Every time you move to a row, you probably do not want to retrieve the column with the large data file, because doing so would slow down your application's performance.  
   
      You can set up separate accessors in which the first accessor contains all columns except the one with large data, and it retrieves data from these columns automatically; this is the auto accessor. The second accessor retrieves only the column containing large data, but it does not retrieve data from this column automatically. You can have other methods update or fetch the large data on demand.  
   
-    -   Accessor 0 is an automatic accessor; it retrieves all the columns except the one with large data.  
+    - Accessor 0 is an automatic accessor; it retrieves all the columns except the one with large data.  
   
-    -   Accessor 1 is not an automatic accessor; it retrieves the column with large data.  
+    - Accessor 1 is not an automatic accessor; it retrieves the column with large data.  
   
      Use the auto argument to specify whether the accessor is an auto accessor.  
   

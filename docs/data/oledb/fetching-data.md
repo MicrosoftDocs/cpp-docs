@@ -48,7 +48,7 @@ After you open the data source, session, and rowset objects, you can fetch data.
   
 1. Within the `while` loop, you can fetch the data according to your accessor type.  
   
-    -   If you use the [CAccessor](../../data/oledb/caccessor-class.md) class, you should have a user record that contains data members. You can access your data using those data members, as shown in the following example:  
+    - If you use the [CAccessor](../../data/oledb/caccessor-class.md) class, you should have a user record that contains data members. You can access your data using those data members, as shown in the following example:  
   
         ```cpp  
         while (rs.MoveNext() == S_OK)  
@@ -60,7 +60,7 @@ After you open the data source, session, and rowset objects, you can fetch data.
         }  
         ```  
   
-    -   If you use the `CDynamicAccessor` or `CDynamicParameterAccessor` class, you can fetch data by using the accessing functions `GetValue` and `GetColumn`, as shown in the following example. If you want to determine the type of data you are using, use `GetType`.  
+    - If you use the `CDynamicAccessor` or `CDynamicParameterAccessor` class, you can fetch data by using the accessing functions `GetValue` and `GetColumn`, as shown in the following example. If you want to determine the type of data you are using, use `GetType`.  
   
         ```cpp  
         while (rs.MoveNext() == S_OK)  
@@ -75,7 +75,7 @@ After you open the data source, session, and rowset objects, you can fetch data.
         }  
         ```  
   
-    -   If you use `CManualAccessor`, you must specify your own data members, bind them yourself, and access them directly, as shown in the following example:  
+    - If you use `CManualAccessor`, you must specify your own data members, bind them yourself, and access them directly, as shown in the following example:  
   
         ```cpp  
         while (rs.MoveNext() == S_OK)  
