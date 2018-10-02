@@ -17,14 +17,14 @@ ms.workload: ["cplusplus"]
 CRT not initialized
 
 > [!NOTE]
->  If you encounter this error message while running an app, the app was shut down because it has an internal problem. This problem is most often caused by certain security software programs, or rarely, by a bug in the program.
+> If you encounter this error message while running an app, the app was shut down because it has an internal problem. This problem is most often caused by certain security software programs, or rarely, by a bug in the program.
 >
->  You can try these steps to fix this error:
+> You can try these steps to fix this error:
 >
->  -   Your security software may have specific instructions for mitigating this issue. Check your security software vendor's website for details. Alternatively, check for updated versions of your security software, or try different security software.
-> -   Use the **Apps and Features** or **Programs and Features** page in the **Control Panel** to repair or reinstall the program.
-> -   Check **Windows Update** in the **Control Panel** for software updates.
-> -   Check for an updated version of the app. Contact the app vendor if the problem persists.
+> - Your security software may have specific instructions for mitigating this issue. Check your security software vendor's website for details. Alternatively, check for updated versions of your security software, or try different security software.
+> - Use the **Apps and Features** or **Programs and Features** page in the **Control Panel** to repair or reinstall the program.
+> - Check **Windows Update** in the **Control Panel** for software updates.
+> - Check for an updated version of the app. Contact the app vendor if the problem persists.
 
 **Information for Programmers**
 

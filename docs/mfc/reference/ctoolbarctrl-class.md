@@ -253,11 +253,11 @@ The members are as follows:
 
    Zero-based index of button image, -1 if no image for this button.
 
--  `idCommand`
+- `idCommand`
 
    Command identifier associated with the button. This identifier is sent in a WM_COMMAND message when the button is chosen. If the `fsStyle` member has the TBSTYLE_SEP value, this member must be zero.
 
--  `fsState`
+- `fsState`
 
    Button state flags. It can be a combination of the values listed below:
 

@@ -48,15 +48,15 @@ An element can be one of the following things:
 
      The expression `expr` can contain any combination of the following things:
 
-    -   An individual character. Adds that character to the set defined by `expr`.
+    - An individual character. Adds that character to the set defined by `expr`.
 
-    -   A *character range* of the form "`ch1`-`ch2`". Adds the characters that are represented by values in the closed range [`ch1`, `ch2`] to the set defined by `expr`.
+    - A *character range* of the form "`ch1`-`ch2`". Adds the characters that are represented by values in the closed range [`ch1`, `ch2`] to the set defined by `expr`.
 
-    -   A *character class* of the form "[:`name`:]". Adds the characters in the named class to the set defined by `expr`.
+    - A *character class* of the form "[:`name`:]". Adds the characters in the named class to the set defined by `expr`.
 
-    -   An *equivalence class* of the form "[=`elt`=]". Adds the collating elements that are equivalent to `elt` to the set defined by `expr`.
+    - An *equivalence class* of the form "[=`elt`=]". Adds the collating elements that are equivalent to `elt` to the set defined by `expr`.
 
-    -   A *collating symbol* of the form "[.`elt`.]". Adds the collation element `elt` to the set defined by `expr`.
+    - A *collating symbol* of the form "[.`elt`.]". Adds the collation element `elt` to the set defined by `expr`.
 
 - An *anchor*. Anchor '^' matches the beginning of the target sequence; anchor '$' matches the end of the target sequence.
 
