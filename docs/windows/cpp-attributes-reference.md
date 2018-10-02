@@ -1,7 +1,7 @@
 ---
-title: "C++ Attributes Reference | Microsoft Docs"
+title: "C++ Attributes for COM and .NET | Microsoft Docs"
 ms.custom: "index-page"
-ms.date: "11/04/2016"
+ms.date: "10/2/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # C++ Attributes Reference
 
-Microsoft defines a set of attributes that simplify COM programming and .NET Framework common language runtime development. When you include attributes in your source files, the compiler works with provider DLLs to insert code or modify the code in the generated object files.
+Microsoft defines a set of C++ attributes that simplify COM programming and .NET Framework common language runtime development. When you include attributes in your source files, the compiler works with provider DLLs to insert code or modify the code in the generated object files.
 
 > [!NOTE] 
 > If you are looking for C++ standard attributes, see [Attributes](../cpp/attributes.md).

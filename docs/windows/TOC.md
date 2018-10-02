@@ -401,7 +401,7 @@
 ## [SafeInt Class](safeint-class.md)
 ## [SafeInt Functions](safeint-functions.md)
 ## [SafeIntException Class](safeintexception-class.md)
-# [C++ Attributes Reference](cpp-attributes-reference.md)
+# [C++ Attributes for COM and .NET](cpp-attributes-reference.md)
 ## [Attributed Programming Concepts](attributed-programming-concepts.md)
 ### [Purpose of Attributes](purpose-of-attributes.md)
 ### [Basic Mechanics of Attributes](basic-mechanics-of-attributes.md)
