@@ -16,27 +16,27 @@ ms.workload: ["cplusplus"]
 Writing manipulators that do not use arguments requires neither class derivation nor use of complex macros. Suppose your printer requires the pair \<ESC>[ to enter bold mode. You can insert this pair directly into the stream:
 
 ```cpp
-cout <<"regular " <<'\033' <<'[' <<"boldface" <<endl;
+cout << "regular " << '\033' << '[' << "boldface" << endl;
 ```
 
 Or you can define the `bold` manipulator, which inserts the characters:
 
 ```cpp
 ostream& bold(ostream& os) {
-    return os <<'\033' <<'[';
+    return os << '\033' << '[';
 }
-cout <<"regular " <<bold <<"boldface" <<endl;
+cout << "regular " << bold << "boldface" << endl;
 ```
 
 The globally defined `bold` function takes an `ostream` reference argument and returns the `ostream` reference. It is not a member function or a friend because it does not need access to any private class elements. The `bold` function connects to the stream because the stream's `<<` operator is overloaded to accept that type of function, using a declaration that looks something like this:
 
 ```cpp
 _Myt& operator<<(ios_base& (__cdecl *_Pfn)(ios_base&))
-{     // call ios_base manipulator
- (*_Pfn)(*(ios_base *)this);
+{
+    // call ios_base manipulator
+    (*_Pfn)(*(ios_base *)this);
 
     return (*this);
-
 }
 ```
 

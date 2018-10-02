@@ -21,7 +21,7 @@ Describes a [synchronization filter](../standard-library/allocators-header.md) t
 ```cpp
 template <class Cache>
 class sync_per_container
- : public Cache
+    : public Cache
 ```
 
 ### Parameters

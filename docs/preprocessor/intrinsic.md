@@ -73,7 +73,7 @@ The floating-point functions listed below do not have true intrinsic forms. Inst
 |[acos](../c-runtime-library/reference/acos-acosf-acosl.md)|[cosh](../c-runtime-library/reference/cosh-coshf-coshl.md)|[pow](../c-runtime-library/reference/pow-powf-powl.md)|[tanh](../c-runtime-library/reference/tanh-tanhf-tanhl.md)|
 |[asin](../c-runtime-library/reference/asin-asinf-asinl.md)|[fmod](../c-runtime-library/reference/fmod-fmodf.md)|[sinh](../c-runtime-library/reference/sinh-sinhf-sinhl.md)||
 
- The floating-point functions listed below have true intrinsic forms when you specify [/Oi](../build/reference/oi-generate-intrinsic-functions.md), [/Og](../build/reference/og-global-optimizations.md), and [/fp:fast](../build/reference/fp-specify-floating-point-behavior.md) (or any option that includes /Og: [/Ox](../build/reference/ox-full-optimization.md), [/O1](../build/reference/o1-o2-minimize-size-maximize-speed.md), and /O2):
+The floating-point functions listed below have true intrinsic forms when you specify [/Oi](../build/reference/oi-generate-intrinsic-functions.md), [/Og](../build/reference/og-global-optimizations.md), and [/fp:fast](../build/reference/fp-specify-floating-point-behavior.md) (or any option that includes /Og: [/Ox](../build/reference/ox-full-optimization.md), [/O1](../build/reference/o1-o2-minimize-size-maximize-speed.md), and /O2):
 
 |||||
 |-|-|-|-|
