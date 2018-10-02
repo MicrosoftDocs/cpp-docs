@@ -39,7 +39,7 @@ namespace Microsoft::WRL::Wrappers;
 |[HandleT Class](../windows/handlet-class.md)|Represents a handle to an object.|
 |[HString Class](../windows/hstring-class.md)|Provides support for manipulating HSTRING handles.|
 |[HStringReference Class](../windows/hstringreference-class.md)|Represents an HSTRING that is created from an existing string.|
-|[Mutex Class](../windows/mutex-class1.md)|Represents a synchronization object that exclusively controls a shared resource.|
+|[Mutex Class](../windows/mutex-class.md)|Represents a synchronization object that exclusively controls a shared resource.|
 |[RoInitializeWrapper Class](../windows/roinitializewrapper-class.md)|Initializes the Windows Runtime.|
 |[Semaphore Class](../windows/semaphore-class.md)|Represents a synchronization object that controls a shared resource that can support a limited number of users.|
 |[SRWLock Class](../windows/srwlock-class.md)|Represents a slim reader/writer lock.|
