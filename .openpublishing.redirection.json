@@ -7471,18 +7471,23 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/mutex-class1.md",
+            "redirect_url": "/cpp/windows/mutex-class",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/mutex-lock-method.md",
-            "redirect_url": "/cpp/windows/mutex-class1#lock",
+            "redirect_url": "/cpp/windows/mutex-class#lock",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/mutex-mutex-constructor.md",
-            "redirect_url": "/cpp/windows/mutex-class1#mutex",
+            "redirect_url": "/cpp/windows/mutex-class#mutex",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/mutex-operator-assign-operator.md",
-            "redirect_url": "/cpp/windows/mutex-class1#operator-assign",
+            "redirect_url": "/cpp/windows/mutex-class#operator-assign",
             "redirect_document_id": false
         },
         {
@@ -7836,33 +7841,38 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/weakreference-class1.md",
+            "redirect_url": "/cpp/windows/weakreference-class",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/weakreference-tilde-weakreference-destructor.md",
-            "redirect_url": "/cpp/windows/weakreference-class1#tilde-weakreference",
+            "redirect_url": "/cpp/windows/weakreference-class#tilde-weakreference",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/weakreference-decrementstrongreference-method.md",
-            "redirect_url": "/cpp/windows/weakreference-class1#decrementstrongreference",
+            "redirect_url": "/cpp/windows/weakreference-class#decrementstrongreference",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/weakreference-incrementstrongreference-method.md",
-            "redirect_url": "/cpp/windows/weakreference-class1#incrementstrongreference",
+            "redirect_url": "/cpp/windows/weakreference-class#incrementstrongreference",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/weakreference-resolve-method.md",
-            "redirect_url": "/cpp/windows/weakreference-class1#resolve",
+            "redirect_url": "/cpp/windows/weakreference-class#resolve",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/weakreference-setunknown-method.md",
-            "redirect_url": "/cpp/windows/weakreference-class1#setunknown",
+            "redirect_url": "/cpp/windows/weakreference-class#setunknown",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/weakreference-weakreference-constructor.md",
-            "redirect_url": "/cpp/windows/weakreference-class1#weakreference",
+            "redirect_url": "/cpp/windows/weakreference-class#weakreference",
             "redirect_document_id": false
         }
     ]

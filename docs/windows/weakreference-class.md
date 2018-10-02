@@ -1,5 +1,5 @@
 ---
-title: "WeakReference Class1 | Microsoft Docs"
+title: "WeakReference Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "09/24/2018"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# WeakReference Class1
+# WeakReference Class
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

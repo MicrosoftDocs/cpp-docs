@@ -1,5 +1,5 @@
 ---
-title: "Mutex Class1 | Microsoft Docs"
+title: "Mutex Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "09/24/2018"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Mutex Class1
+# Mutex Class
 
 Represents a synchronization object that exclusively controls a shared resource.
 
