@@ -1,11 +1,7 @@
 ---
 title: "MFC ODBC Consumer Wizard | Microsoft Docs"
 ms.custom: ""
-<<<<<<< HEAD
 ms.date: "10/03/2018"
-=======
-ms.date: "09/17/2018"
->>>>>>> master
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.mfc.consumer.overview"]
