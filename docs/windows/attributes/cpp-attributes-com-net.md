@@ -76,8 +76,8 @@ Some projects contain multiple independent .idl files. These are used to produce
 
 In addition, the Visual C++ linker will output all IDL-related attribute information to a single MIDL file. There will be no way to generate two type libraries from a single project.
 
+## <a name="contexts"></a> Attribute Contexts
 
-## Attribute Contexts
 C++ attributes can be described using four basic fields: the target they can be applied to (**Applies To**), if they are repeatable or not (**Repeatable**), the required presence of other attributes (**Required Attributes**), and incompatibilities with other attributes (**Invalid Attributes**). These fields are listed in an accompanying table in each attribute's reference topic. Each of these fields is described below.
   
 ### Applies To
