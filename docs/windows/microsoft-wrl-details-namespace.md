@@ -74,7 +74,7 @@ namespace Microsoft::WRL::Details;
 |[ActivationFactoryCallback Function](../windows/activationfactorycallback-function.md)|Gets the activation factory for the specified activation ID.|
 |[Move Function](../windows/move-function.md)|Moves the specified argument from one location to another.|
 |[RaiseException Function](../windows/raiseexception-function.md)|Raises an exception in the calling thread.|
-|[Swap Function (Windows Runtime C++ Template Library)](../windows/swap-function-windows-runtime-cpp-template-library.md)|Exchanges the values of the two specified arguments.|
+|[Swap Function (WRL)](../windows/swap-function-wrl.md)|Exchanges the values of the two specified arguments.|
 |[TerminateMap Function](../windows/terminatemap-function.md)|Shuts down the class factories in the specified module.|
 
 ## Requirements

@@ -1,5 +1,5 @@
 ---
-title: "Callback Function (Windows Runtime C++ Template Library) | Microsoft Docs"
+title: "Callback Function (WRL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Callback Function (Windows Runtime C++ Template Library)
+# Callback Function (WRL)
 
 Creates an object whose member function is a callback method.
 

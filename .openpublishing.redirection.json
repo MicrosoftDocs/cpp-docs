@@ -6581,6 +6581,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/callback-function-windows-runtime-cpp-template-library.md",
+            "redirect_url": "/cpp/windows/callback-function-wrl",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/chaininterfaces-cancastto-method.md",
             "redirect_url": "/cpp/windows/chaininterfaces-structure#cancastto",
             "redirect_document_id": false
@@ -6876,13 +6881,18 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/event-class-windows-runtime-cpp-template-library.md",
+            "redirect_url": "/cpp/windows/event-class-wrl",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/event-event-constructor-windows-runtime-cpp-template-library.md",
-            "redirect_url": "/cpp/windows/event-class-windows-runtime-cpp-template-library#event",
+            "redirect_url": "/cpp/windows/event-class-wrl#event",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/windows/event-operator-assign-operator.md",
-            "redirect_url": "/cpp/windows/event-class-windows-runtime-cpp-template-library#operator-assign",
+            "redirect_url": "/cpp/windows/event-class-wrl#operator-assign",
             "redirect_document_id": false
         },
         {
@@ -7743,6 +7753,11 @@
         {
             "source_path": "docs/windows/srwlocksharedtraits-unlock-method.md",
             "redirect_url": "/cpp/windows/srwlocksharedtraits-structure#unlock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/swap-function-windows-runtime-cpp-template-library.md",
+            "redirect_url": "/cpp/windows/swap-function-wrl",
             "redirect_document_id": false
         },
         {
