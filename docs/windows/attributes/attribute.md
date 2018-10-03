@@ -40,7 +40,7 @@ Indicates if the attribute is to be inherited by subclasses. The compiler provid
 ## Remarks
 
 > [!NOTE]
-> The **attribute** attribute is now deprecated.  Use the common language runtime attribute `System.Attribute` to directly to create user-defined attirbutes. For more information, see [User-Defined Attributes](user-defined-attributes-cpp-component-extensions.md).
+> The **attribute** attribute is now deprecated.  Use the common language runtime attribute `System.Attribute` to directly to create user-defined attirbutes. For more information, see [User-Defined Attributes](../user-defined-attributes-cpp-component-extensions.md).
 
 You define a [custom attribute](custom-attributes-cpp.md) by placing the **attribute** attribute on a managed class or struct definition. The name of the class is the custom attribute. For example:
 
@@ -100,7 +100,7 @@ ref class ClassC {};
 
 For a list of possible attribute parameter types, see [Custom Attributes](custom-attributes-cpp.md).
 
-See [User-Defined Attributes](user-defined-attributes-cpp-component-extensions.md) for a discussion on attribute targets.
+See [User-Defined Attributes](../user-defined-attributes-cpp-component-extensions.md) for a discussion on attribute targets.
 
 The **attribute** attribute has an *AllowMultiple* parameter that specifies whether the custom attribute is single use or multiuse (can appear more than once on the same entity).
 

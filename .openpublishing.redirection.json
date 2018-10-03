@@ -8466,11 +8466,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "docs/windows/user-defined-attributes-cpp-component-extensions.md",
-            "redirect_url": "/cpp/windows/attributes/user-defined-attributes-cpp-component-extensions",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "docs/windows/usesgetlasterror.md",
             "redirect_url": "/cpp/windows/attributes/usesgetlasterror",
             "redirect_document_id": true
