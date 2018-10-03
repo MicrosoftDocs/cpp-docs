@@ -1,7 +1,7 @@
 ---
 title: "ChainInterfaces Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/28/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::ChainInterfaces", "implements/Microsoft::WRL::ChainInterfaces::CanCastTo", "implements/Microsoft::WRL::ChainInterfaces::CastToUnknown", "implements/Microsoft::WRL::ChainInterfaces::FillArrayWithIid", "implements/Microsoft::WRL::ChainInterfaces::IidCount", "implements/Microsoft::WRL::ChainInterfaces::Verify"]

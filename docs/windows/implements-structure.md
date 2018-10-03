@@ -1,7 +1,7 @@
 ---
 title: "Implements Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/11/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Implements", "implements/Microsoft::WRL::Implements::CanCastTo", "implements/Microsoft::WRL::Implements::CastToUnknown", "implements/Microsoft::WRL::Implements::FillArrayWithIid", "implements/Microsoft::WRL::Implements::IidCount"]
