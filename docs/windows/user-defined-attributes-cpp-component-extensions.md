@@ -35,7 +35,7 @@ Custom attributes let you extend the metadata of a managed element. For more inf
 
 ### Remarks
 
-The information and syntax presented in this topic is meant to supersede the information presented in [attribute](attribute.md).
+The information and syntax presented in this topic is meant to supersede the information presented in [attribute](attributes/attribute.md).
 
 You can define a custom attribute by defining a type and making <xref:System.Attribute> a base class for the type and optionally applying the <xref:System.AttributeUsageAttribute> attribute.
 
@@ -47,7 +47,7 @@ For more information, see,
 
 - [Attribute Parameter Types](attribute-parameter-types-cpp-component-extensions.md)
 
-For information on signing assemblies in Visual C++, see [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
+For information on signing assemblies in Visual C++, see [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
 
 ### Requirements
 
