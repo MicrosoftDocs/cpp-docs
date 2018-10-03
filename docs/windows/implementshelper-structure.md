@@ -1,7 +1,7 @@
 ---
 title: "ImplementsHelper Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/21/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::ImplementsHelper", "implements/Microsoft::WRL::Details::ImplementsHelper::CanCastTo", "implements/Microsoft::WRL::Details::ImplementsHelper::CastToUnknown", "implements/Microsoft::WRL::Details::ImplementsHelper::FillArrayWithIid", "implements/Microsoft::WRL::Details::ImplementsHelper::IidCount"]
@@ -19,11 +19,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax
 
 ```cpp
-template <
-   typename RuntimeClassFlagsT,
-   typename ILst,
-   bool IsDelegateToClass
->
+template <typename RuntimeClassFlagsT, typename ILst, bool IsDelegateToClass>
 friend struct Details::ImplementsHelper;
 ```
 

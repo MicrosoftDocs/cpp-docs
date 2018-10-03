@@ -1,7 +1,7 @@
 ---
 title: "ComPtrRefBase Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/21/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::Details::ComPtrRefBase", "client/Microsoft::WRL::Details::ComPtrRefBase::operator IInspectable**", "client/Microsoft::WRL::Details::ComPtrRefBase::operator IUnknown**", "client/Microsoft::WRL::Details::ComPtrRefBase::ptr_"]
@@ -19,9 +19,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax
 
 ```cpp
-template <
-   typename T
->
+template <typename T>
 class ComPtrRefBase;
 ```
 
