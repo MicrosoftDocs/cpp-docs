@@ -21,7 +21,7 @@ Describes a submatch.
 ```cpp
 template <class BidIt>
 class sub_match
- : public std::pair<BidIt, BidIt>
+    : public std::pair<BidIt, BidIt>
 ```
 
 ## Parameters

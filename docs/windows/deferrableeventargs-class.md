@@ -1,7 +1,7 @@
 ---
 title: "DeferrableEventArgs Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/12/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::DeferrableEventArgs", "event/Microsoft::WRL::DeferrableEventArgs::GetDeferral", "event/Microsoft::WRL::DeferrableEventArgs::InvokeAllFinished"]
@@ -19,11 +19,8 @@ A template class used for the event argument types for deferrals.
 ## Syntax
 
 ```cpp
-template <
-typename TEventArgsInterface,
-typename TEventArgsClass
->
-class DeferrableEventArgs : public TEventArgsInterface
+template <typename TEventArgsInterface, typename TEventArgsClass>
+class DeferrableEventArgs : public TEventArgsInterface;
 ```
 
 ### Parameters

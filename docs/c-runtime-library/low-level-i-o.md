@@ -44,7 +44,7 @@ Low-level I/O routines set the [errno](../c-runtime-library/errno-doserrno-sys-e
 |[_umask](../c-runtime-library/reference/umask.md), [_umask_s](../c-runtime-library/reference/umask-s.md)|Set file-permission mask|
 |[_write](../c-runtime-library/reference/write.md)|Write data to file|
 
- **_dup** and **_dup2** are typically used to associate the predefined file descriptors with different files.
+**_dup** and **_dup2** are typically used to associate the predefined file descriptors with different files.
 
 ## See Also
 

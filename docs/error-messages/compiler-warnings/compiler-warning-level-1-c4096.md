@@ -18,7 +18,7 @@ ms.workload: ["cplusplus"]
 
 An interface definition that you may have intended as a COM interface was not defined as a COM interface and therefore will not be emitted to the IDL file.
 
-See [Interface Attributes](../../windows/interface-attributes.md) for a list attributes that indicate an interface is a COM interface.
+See [Interface Attributes](../../windows/attributes/interface-attributes.md) for a list attributes that indicate an interface is a COM interface.
 
 The following sample generates C4096:
 

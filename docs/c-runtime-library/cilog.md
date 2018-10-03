@@ -32,7 +32,8 @@ This version of the `log` function has a specialized calling convention that the
 The resulting value is pushed onto the top of the stack.
 
 ## Requirements
- **Platform:** x86
+
+**Platform:** x86
 
 ## See Also
 

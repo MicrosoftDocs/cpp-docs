@@ -1,12 +1,12 @@
 ---
 title: "HANDLENullTraits Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/27/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits"]
+f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits", "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::Close", "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::GetInvalidValue"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["HANDLENullTraits structure"]
+helpviewer_keywords: ["Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits structure", "Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::Close method", "Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::GetInvalidValue method"]
 ms.assetid: 88a29a14-c516-40cb-a0ca-ee897a668623
 author: "mikeblome"
 ms.author: "mblome"
@@ -26,16 +26,16 @@ struct HANDLENullTraits;
 
 ### Public Typedefs
 
-|Name|Description|
-|----------|-----------------|
-|`Type`|A synonym for HANDLE.|
+Name   | Description
+------ | ---------------------
+`Type` | A synonym for HANDLE.
 
 ### Public Methods
 
-|Name|Description|
-|----------|-----------------|
-|[HANDLENullTraits::Close Method](../windows/handlenulltraits-close-method.md)|Closes the specified handle.|
-|[HANDLENullTraits::GetInvalidValue Method](../windows/handlenulltraits-getinvalidvalue-method.md)|Represents an invalid handle.|
+Name                                                  | Description
+----------------------------------------------------- | -----------------------------
+[HANDLENullTraits::Close](#close)                     | Closes the specified handle.
+[HANDLENullTraits::GetInvalidValue](#getinvalidvalue) | Represents an invalid handle.
 
 ## Inheritance Hierarchy
 
@@ -47,6 +47,33 @@ struct HANDLENullTraits;
 
 **Namespace:** Microsoft::WRL::Wrappers::HandleTraits
 
-## See Also
+## <a name="close"></a>HANDLENullTraits::Close
 
-[Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+Closes the specified handle.
+
+```cpp
+inline static bool Close(
+   _In_ Type h
+);
+```
+
+### Parameters
+
+*h*<br/>
+The handle to close.
+
+### Return Value
+
+`true` if handle *h* closed successfully; otherwise, `false`.
+
+## <a name="getinvalidvalue"></a>HANDLENullTraits::GetInvalidValue
+
+Represents an invalid handle.
+
+```cpp
+inline static Type GetInvalidValue();
+```
+
+### Return Value
+
+Always returns `nullptr`.

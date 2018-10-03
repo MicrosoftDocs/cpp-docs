@@ -869,8 +869,8 @@ int main( )
 
    cout << "A direct call of upper_bound( 2 ) gives "
         << m1_RcIter -> second << "," << endl
-        << " matching the 2nd element of the pair"
-        << " returned by equal_range( 2 )." << endl;
+        << "matching the 2nd element of the pair "
+        << "returned by equal_range( 2 )." << endl;
 
    p2 = m1.equal_range( 4 );
 
@@ -889,7 +889,7 @@ int main( )
 The lower bound of the element with a key of 2 in the multimap m1 is: 20.
 The upper bound of the element with a key of 2 in the multimap m1 is: 30.
 A direct call of upper_bound( 2 ) gives 30,
- matching the 2nd element of the pair returned by equal_range( 2 ).
+matching the 2nd element of the pair returned by equal_range( 2 ).
 The multimap m1 doesn't have an element with a key less than 4.
 ```
 
@@ -1561,18 +1561,18 @@ multimap(
 
 template <class InputIterator>
 multimap(
- InputIterator First,
+    InputIterator First,
     InputIterator Last);
 
 template <class InputIterator>
 multimap(
- InputIterator First,
+    InputIterator First,
     InputIterator Last,
     const Traits& Comp);
 
 template <class InputIterator>
 multimap(
- InputIterator First,
+    InputIterator First,
     InputIterator Last,
     const Traits& Comp,
     const Allocator& Al);

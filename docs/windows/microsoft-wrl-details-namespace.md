@@ -33,7 +33,7 @@ namespace Microsoft::WRL::Details;
 |[MakeAllocator Class](../windows/makeallocator-class.md)|Allocates memory for an activatable class, with or without weak reference support.|
 |[ModuleBase Class](../windows/modulebase-class.md)|Represents the base class of the [Module](../windows/module-class.md) classes.|
 |[RemoveIUnknown Class](../windows/removeiunknown-class.md)|Makes a type that is equivalent to an `IUnknown`-based type, but has non-virtual `QueryInterface`, `AddRef`, and `Release` methods.|
-|[WeakReference Class](../windows/weakreference-class1.md)|Represents a *weak reference* that can be used with the Windows Runtime or classic COM. A weak reference represents an object that might or might not be accessible.|
+|[WeakReference Class](../windows/weakreference-class.md)|Represents a *weak reference* that can be used with the Windows Runtime or classic COM. A weak reference represents an object that might or might not be accessible.|
 
 ### Structures
 
@@ -74,7 +74,7 @@ namespace Microsoft::WRL::Details;
 |[ActivationFactoryCallback Function](../windows/activationfactorycallback-function.md)|Gets the activation factory for the specified activation ID.|
 |[Move Function](../windows/move-function.md)|Moves the specified argument from one location to another.|
 |[RaiseException Function](../windows/raiseexception-function.md)|Raises an exception in the calling thread.|
-|[Swap Function (Windows Runtime C++ Template Library)](../windows/swap-function-windows-runtime-cpp-template-library.md)|Exchanges the values of the two specified arguments.|
+|[Swap Function (WRL)](../windows/swap-function-wrl.md)|Exchanges the values of the two specified arguments.|
 |[TerminateMap Function](../windows/terminatemap-function.md)|Shuts down the class factories in the specified module.|
 
 ## Requirements
