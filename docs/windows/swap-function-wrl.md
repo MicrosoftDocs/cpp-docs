@@ -1,5 +1,5 @@
 ---
-title: "Swap Function (Windows Runtime C++ Template Library) | Microsoft Docs"
+title: "Swap Function (WRL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Swap Function (Windows Runtime C++ Template Library)
+# Swap Function (WRL)
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 

@@ -70,7 +70,7 @@ namespace Microsoft::WRL;
 |Name|Description|
 |----------|-----------------|
 |[AsWeak Function](../windows/asweak-function.md)|Retrieves a weak reference to a specified instance.|
-|[Callback Function](../windows/callback-function-windows-runtime-cpp-template-library.md)|Creates an object whose member function is a callback method.|
+|[Callback Function (WRL)](../windows/callback-function-wrl.md)|Creates an object whose member function is a callback method.|
 |[CreateActivationFactory Function](../windows/createactivationfactory-function.md)|Creates a factory that produces instances of the specified class that can be activated by the Windows Runtime.|
 |[CreateClassFactory Function](../windows/createclassfactory-function.md)|Creates a factory that produces instances of the specified class.|
 |[Make Function](../windows/make-function.md)|Initializes the specified Windows Runtime class.|

@@ -35,7 +35,7 @@ namespace Microsoft::WRL::Wrappers;
 |Name|Description|
 |----------|-----------------|
 |[CriticalSection Class](../windows/criticalsection-class.md)|Represents a critical section object.|
-|[Event Class (Windows Runtime C++ Template Library)](../windows/event-class-windows-runtime-cpp-template-library.md)|Represents an event.|
+|[Event Class (WRL)](../windows/event-class-wrl.md)|Represents an event.|
 |[HandleT Class](../windows/handlet-class.md)|Represents a handle to an object.|
 |[HString Class](../windows/hstring-class.md)|Provides support for manipulating HSTRING handles.|
 |[HStringReference Class](../windows/hstringreference-class.md)|Represents an HSTRING that is created from an existing string.|
