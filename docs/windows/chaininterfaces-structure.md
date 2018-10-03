@@ -1,7 +1,7 @@
 ---
 title: "ChainInterfaces Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/28/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::ChainInterfaces", "implements/Microsoft::WRL::ChainInterfaces::CanCastTo", "implements/Microsoft::WRL::ChainInterfaces::CastToUnknown", "implements/Microsoft::WRL::ChainInterfaces::FillArrayWithIid", "implements/Microsoft::WRL::ChainInterfaces::IidCount", "implements/Microsoft::WRL::ChainInterfaces::Verify"]
@@ -20,33 +20,40 @@ Specifies verification and initialization functions that can be applied to a set
 
 ```cpp
 template <
-   typename I0,
-   typename I1,
-   typename I2 = Details::Nil,
-   typename I3 = Details::Nil,
-   typename I4 = Details::Nil,
-   typename I5 = Details::Nil,
-   typename I6 = Details::Nil,
-   typename I7 = Details::Nil,
-   typename I8 = Details::Nil,
-   typename I9 = Details::Nil
+    typename I0,
+    typename I1,
+    typename I2 = Details::Nil,
+    typename I3 = Details::Nil,
+    typename I4 = Details::Nil,
+    typename I5 = Details::Nil,
+    typename I6 = Details::Nil,
+    typename I7 = Details::Nil,
+    typename I8 = Details::Nil,
+    typename I9 = Details::Nil
 >
 struct ChainInterfaces : I0;
+
 template <
-   typename DerivedType,
-   typename BaseType,
-   bool hasImplements,
-   typename I1,
-   typename I2,
-   typename I3,
-   typename I4,
-   typename I5,
-   typename I6,
-   typename I7,
-   typename I8,
-   typename I9
+    typename DerivedType,
+    typename BaseType,
+    bool hasImplements,
+    typename I1,
+    typename I2,
+    typename I3,
+    typename I4,
+    typename I5,
+    typename I6,
+    typename I7,
+    typename I8,
+    typename I9
 >
-struct ChainInterfaces<MixIn<DerivedType, BaseType, hasImplements>, I1, I2, I3, I4, I5, I6, I7, I8, I9>;
+struct ChainInterfaces<
+    MixIn<
+        DerivedType,
+        BaseType,
+        hasImplements
+    >, I1, I2, I3, I4, I5, I6, I7, I8, I9
+>;
 ```
 
 ### Parameters

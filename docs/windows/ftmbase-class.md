@@ -1,7 +1,7 @@
 ---
 title: "FtmBase Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/12/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["ftm/Microsoft::WRL::FtmBase", "ftm/Microsoft::WRL::FtmBaseCreateGlobalInterfaceTable", "ftm/Microsoft::WRL::FtmBase::DisconnectObject", "ftm/Microsoft::WRL::FtmBase::FtmBase", "ftm/Microsoft::WRL::FtmBase::GetMarshalSizeMax", "ftm/Microsoft::WRL::FtmBase::GetUnmarshalClass", "ftm/Microsoft::WRL::FtmBase::MarshalInterface", "ftm/Microsoft::WRL::FtmBase::marshaller_", "ftm/Microsoft::WRL::FtmBase::ReleaseMarshalData", "ftm/Microsoft::WRL::FtmBase::UnmarshalInterface"]
@@ -19,9 +19,11 @@ Represents a free-threaded marshaler object.
 ## Syntax
 
 ```cpp
-class FtmBase : public Microsoft::WRL::Implements<
-   Microsoft::WRL::RuntimeClassFlags<WinRtClassicComMix>,
-   Microsoft::WRL::CloakedIid<IMarshal> >;
+class FtmBase :
+    public Microsoft::WRL::Implements<
+        Microsoft::WRL::RuntimeClassFlags<WinRtClassicComMix>,
+        Microsoft::WRL::CloakedIid<IMarshal>
+    >;
 ```
 
 ## Remarks

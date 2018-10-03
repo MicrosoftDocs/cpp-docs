@@ -1,7 +1,7 @@
 ---
 title: "AgileEventSource Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/22/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::AgileEventSource", "event/Microsoft::WRL::InvokeModeOptions"]
@@ -18,9 +18,13 @@ Represents an event that is raised by a agile component, which is a component th
 ## Syntax
 
 ```cpp
-template<typename TDelegateInterface, typename TEventSourceOptions = Microsoft::WRL::InvokeModeOptions<FireAll>>
-class AgileEventSource
-    : public Microsoft::WRL::EventSource<TDelegateInterface, TEventSourceOptions>;
+template<
+    typename TDelegateInterface,
+    typename TEventSourceOptions = Microsoft::WRL::InvokeModeOptions<FireAll>
+>
+class AgileEventSource :
+    public Microsoft::WRL::EventSource<
+        TDelegateInterface, TEventSourceOptions>;
 ```
 
 ## Parameters

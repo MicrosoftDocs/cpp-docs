@@ -1,7 +1,7 @@
 ---
 title: "ActivationFactory Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/28/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::ActivationFactory", "module/Microsoft::WRL::ActivationFactory::ActivationFactory", "module/Microsoft::WRL::ActivationFactory::AddRef", "module/Microsoft::WRL::ActivationFactory::GetIids", "module/Microsoft::WRL::ActivationFactory::GetRuntimeClassName", "module/Microsoft::WRL::ActivationFactory::GetTrustLevel", "module/Microsoft::WRL::ActivationFactory::QueryInterface", "module/Microsoft::WRL::ActivationFactory::Release"]
@@ -20,11 +20,22 @@ Enables one or more classes to be activated by the Windows Runtime.
 
 ```cpp
 template <
-   typename I0 = Details::Nil,
-   typename I1 = Details::Nil,
-   typename I2 = Details::Nil
+    typename I0 = Details::Nil,
+    typename I1 = Details::Nil,
+    typename I2 = Details::Nil
 >
-class ActivationFactory : public Details::RuntimeClass<typename Details::InterfaceListHelper<IActivationFactory, I0, I1, I2, Details::Nil>::TypeT, RuntimeClassFlags<WinRt | InhibitWeakReference>, false>;
+class ActivationFactory :
+    public Details::RuntimeClass<
+        typename Details::InterfaceListHelper<
+            IActivationFactory,
+            I0,
+            I1,
+            I2,
+            Details::Nil
+        >::TypeT,
+        RuntimeClassFlags<WinRt | InhibitWeakReference>,
+        false
+    >;
 ```
 
 ### Parameters
