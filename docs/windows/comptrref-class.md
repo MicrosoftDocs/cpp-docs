@@ -1,7 +1,7 @@
 ---
 title: "ComPtrRef Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/21/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::Details::ComPtrRef", "client/Microsoft::WRL::Details::ComPtrRef::ComPtrRef", "client/Microsoft::WRL::Details::ComPtrRef::GetAddressOf", "client/Microsoft::WRL::Details::ComPtrRef::operator==", "client/Microsoft::WRL::Details::ComPtrRef::operator!=", "client/Microsoft::WRL::Details::ComPtrRef::operator InterfaceType**", "client/Microsoft::WRL::Details::ComPtrRef::operator*", "client/Microsoft::WRL::Details::ComPtrRef::operator T*", "client/Microsoft::WRL::Details::ComPtrRef::operator void**", "client/Microsoft::WRL::Details::ComPtrRef::ReleaseAndGetAddressOf"]
@@ -19,9 +19,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax
 
 ```cpp
-template <
-   typename T
->
+template <typename T>
 class ComPtrRef : public ComPtrRefBase<T>;
 ```
 
