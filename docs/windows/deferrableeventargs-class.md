@@ -19,11 +19,8 @@ A template class used for the event argument types for deferrals.
 ## Syntax
 
 ```cpp
-template <
-typename TEventArgsInterface,
-typename TEventArgsClass
->
-class DeferrableEventArgs : public TEventArgsInterface
+template <typename TEventArgsInterface, typename TEventArgsClass>
+class DeferrableEventArgs : public TEventArgsInterface;
 ```
 
 ### Parameters

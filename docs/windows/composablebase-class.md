@@ -16,9 +16,7 @@ ms.workload: ["cplusplus", "uwp"]
 ## Syntax
 
 ```cpp
-template<
-   typename FactoryInterface = IInspectable
->
+template<typename FactoryInterface = IInspectable>
 class ComposableBase;
 ```
 

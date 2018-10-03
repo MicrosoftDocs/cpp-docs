@@ -20,17 +20,15 @@ Implements the Windows Runtime asynchronous state machine.
 
 ```cpp
 template <
-   typename TComplete,
-   typename TProgress = Details::Nil,
-   AsyncResultType resultType = SingleResult
+    typename TComplete,
+    typename TProgress = Details::Nil,
+    AsyncResultType resultType = SingleResult
 >
 class AsyncBase : public AsyncBase<TComplete, Details::Nil, resultType>;
 
-template <
-   typename TComplete,
-   AsyncResultType resultType
->
-class AsyncBase<TComplete, Details::Nil, resultType> : public Microsoft::WRL::Implements<IAsyncInfo>;
+template <typename TComplete, AsyncResultType resultType>
+class AsyncBase<TComplete, Details::Nil, resultType> :
+    public Microsoft::WRL::Implements<IAsyncInfo>;
 ```
 
 ### Parameters

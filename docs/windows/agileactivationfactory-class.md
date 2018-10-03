@@ -14,17 +14,23 @@ ms.workload: ["cplusplus", "uwp"]
 # AgileActivationFactory Class
 
 Represents an apartment-friendly activation factory that implements [FtmBase](../windows/ftmbase-class.md).
-  
+
 ## Syntax
-  
+
 ```cpp
 template <
-   typename I0 = Details::Nil,
-   typename I1 = Details::Nil,
-   typename I2 = Details::Nil,
-FactoryCacheFlags cacheFlagValue = FactoryCacheDefault>
+    typename I0 = Details::Nil,
+    typename I1 = Details::Nil,
+    typename I2 = Details::Nil,
+    FactoryCacheFlags cacheFlagValue = FactoryCacheDefault
+>
 class AgileActivationFactory :
-   public ActivationFactory<Implements<FtmBase, I0>, I1, I2, cacheFlagValue>{};
+    public ActivationFactory<
+        Implements<FtmBase, I0>,
+        I1,
+        I2,
+        cacheFlagValue
+    >;
 ```
   
 ## Requirements

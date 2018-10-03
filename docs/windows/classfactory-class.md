@@ -20,18 +20,22 @@ Implements the basic functionality of the `IClassFactory` interface.
 
 ```cpp
 template <
-   typename I0 = Details::Nil,
-   typename I1 = Details::Nil,
-   typename I2 = Details::Nil
+    typename I0 = Details::Nil,
+    typename I1 = Details::Nil,
+    typename I2 = Details::Nil
 >
-class ClassFactory : public Details::RuntimeClass<
-   typename Details::InterfaceListHelper<IClassFactory,
-   I0,
-   I1,
-   I2,
-   Details::Nil>::TypeT,
-   RuntimeClassFlags<ClassicCom | InhibitWeakReference>,
-      false>;
+class ClassFactory :
+    public Details::RuntimeClass<
+        typename Details::InterfaceListHelper<
+            IClassFactory,
+            I0,
+            I1,
+            I2,
+            Details::Nil
+        >::TypeT,
+        RuntimeClassFlags<ClassicCom | InhibitWeakReference>,
+        false
+    >;
 ```
 
 ### Parameters

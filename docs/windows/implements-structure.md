@@ -20,31 +20,48 @@ Implements `QueryInterface` and `GetIid` for the specified interfaces.
 
 ```cpp
 template <
-   typename I0,
-   typename I1 = Details::Nil,
-   typename I2 = Details::Nil,
-   typename I3 = Details::Nil,
-   typename I4 = Details::Nil,
-   typename I5 = Details::Nil,
-   typename I6 = Details::Nil,
-   typename I7 = Details::Nil,
-   typename I8 = Details::Nil,
-   typename I9 = Details::Nil
+    typename I0,
+    typename I1 = Details::Nil,
+    typename I2 = Details::Nil,
+    typename I3 = Details::Nil,
+    typename I4 = Details::Nil,
+    typename I5 = Details::Nil,
+    typename I6 = Details::Nil,
+    typename I7 = Details::Nil,
+    typename I8 = Details::Nil,
+    typename I9 = Details::Nil
 >
-struct __declspec(novtable) Implements : Details::ImplementsHelper<RuntimeClassFlags<WinRt>, typename Details::InterfaceListHelper<I0, I1, I2, I3, I4, I5, I6, I7, I8, I9>::TypeT>, Details::ImplementsBase;
+struct __declspec(novtable) Implements :
+    Details::ImplementsHelper<
+        RuntimeClassFlags<WinRt>,
+        typename Details::InterfaceListHelper<
+            I0, I1, I2, I3, I4, I5, I6, I7, I8, I9
+        >::TypeT
+    >,
+    Details::ImplementsBase;
+
 template <
-   int flags,
-   typename I0,
-   typename I1,
-   typename I2,
-   typename I3,
-   typename I4,
-   typename I5,
-   typename I6,
-   typename I7,
-   typename I8
+    int flags,
+    typename I0,
+    typename I1,
+    typename I2,
+    typename I3,
+    typename I4,
+    typename I5,
+    typename I6,
+    typename I7,
+    typename I8
 >
-struct __declspec(novtable) Implements<RuntimeClassFlags<flags>, I0, I1, I2, I3, I4, I5, I6, I7, I8> : Details::ImplementsHelper<RuntimeClassFlags<flags>, typename Details::InterfaceListHelper<I0, I1, I2, I3, I4, I5, I6, I7, I8>::TypeT>, Details::ImplementsBase;
+struct __declspec(novtable) Implements<
+        RuntimeClassFlags<flags>,
+        I0, I1, I2, I3, I4, I5, I6, I7, I8> :
+    Details::ImplementsHelper<
+        RuntimeClassFlags<flags>,
+        typename Details::InterfaceListHelper<
+            I0, I1, I2, I3, I4, I5, I6, I7, I8
+        >::TypeT
+    >,
+    Details::ImplementsBase;
 ```
 
 ### Parameters
