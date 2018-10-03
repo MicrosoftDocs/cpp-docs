@@ -1,4 +1,4 @@
-{ 
+{
     "redirections": [
         {
             "source_path": "docs/assembler/arm/index.md",
@@ -4962,7 +4962,7 @@
         },
         {
             "source_path": "docs/dotnet/priority-queue-value-type-stl-clr.md",
-	        "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#value_type",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#value_type",
             "redirect_document_id": false
         },
         {
@@ -7889,6 +7889,641 @@
             "source_path": "docs/windows/weakreference-weakreference-constructor.md",
             "redirect_url": "/cpp/windows/weakreference-class#weakreference",
             "redirect_document_id": false
-        }
-    ]
+        },
+        {
+            "source_path": "docs/windows/cpp-attributes-reference.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/attributed-programming-concepts.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/purpose-of-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/basic-mechanics-of-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/building-an-attributed-program.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/attribute-categories.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/attribute-contexts.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/attributes-requirements.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/attribute-programming-faq.md",
+            "redirect_url": "/cpp/windows/attributes/attribute-programming-faq",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/aggregatable.md",
+            "redirect_url": "/cpp/windows/attributes/aggregatable",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/aggregates.md",
+            "redirect_url": "/cpp/windows/attributes/aggregates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/appobject.md",
+            "redirect_url": "/cpp/windows/attributes/appobject",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/array-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/array-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/async-uuid.md",
+            "redirect_url": "/cpp/windows/attributes/async-uuid",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/attributes-alphabetical-reference.md",
+            "redirect_url": "/cpp/windows/attributes/attributes-alphabetical-reference",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/attributes-by-group.md",
+            "redirect_url": "/cpp/windows/attributes/attributes-by-group",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/bindable.md",
+            "redirect_url": "/cpp/windows/attributes/bindable",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/call-as.md",
+            "redirect_url": "/cpp/windows/attributes/call-as",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/case-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/case-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/class-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/class-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/coclass.md",
+            "redirect_url": "/cpp/windows/attributes/coclass",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/com-interface-entry-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/com-interface-entry-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/compiler-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/compiler-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/control.md",
+            "redirect_url": "/cpp/windows/attributes/control",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/cpp-quote.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-quote",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/custom-attributes-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/custom-attributes-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/custom-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/custom-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/data-member-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/data-member-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/db-accessor.md",
+            "redirect_url": "/cpp/windows/attributes/db-accessor",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/db-column.md",
+            "redirect_url": "/cpp/windows/attributes/db-column",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/db-command.md",
+            "redirect_url": "/cpp/windows/attributes/db-command",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/db-param.md",
+            "redirect_url": "/cpp/windows/attributes/db-param",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/db-source.md",
+            "redirect_url": "/cpp/windows/attributes/db-source",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/db-table.md",
+            "redirect_url": "/cpp/windows/attributes/db-table",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/default-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/default-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/defaultbind.md",
+            "redirect_url": "/cpp/windows/attributes/defaultbind",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/defaultcollelem.md",
+            "redirect_url": "/cpp/windows/attributes/defaultcollelem",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/defaultvalue.md",
+            "redirect_url": "/cpp/windows/attributes/defaultvalue",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/defaultvtable.md",
+            "redirect_url": "/cpp/windows/attributes/defaultvtable",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/dispinterface.md",
+            "redirect_url": "/cpp/windows/attributes/dispinterface",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/displaybind.md",
+            "redirect_url": "/cpp/windows/attributes/displaybind",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/dual.md",
+            "redirect_url": "/cpp/windows/attributes/dual",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/emitidl.md",
+            "redirect_url": "/cpp/windows/attributes/emitidl",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/entry.md",
+            "redirect_url": "/cpp/windows/attributes/entry",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/event-receiver.md",
+            "redirect_url": "/cpp/windows/attributes/event-receiver",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/event-source.md",
+            "redirect_url": "/cpp/windows/attributes/event-source",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/export.md",
+            "redirect_url": "/cpp/windows/attributes/export",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/first-is.md",
+            "redirect_url": "/cpp/windows/attributes/first-is",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/helpcontext.md",
+            "redirect_url": "/cpp/windows/attributes/helpcontext",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/helpfile.md",
+            "redirect_url": "/cpp/windows/attributes/helpfile",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/helpstring.md",
+            "redirect_url": "/cpp/windows/attributes/helpstring",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/helpstringcontext.md",
+            "redirect_url": "/cpp/windows/attributes/helpstringcontext",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/helpstringdll.md",
+            "redirect_url": "/cpp/windows/attributes/helpstringdll",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/hidden.md",
+            "redirect_url": "/cpp/windows/attributes/hidden",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/id.md",
+            "redirect_url": "/cpp/windows/attributes/id",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/idl-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/idl-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/idl-module.md",
+            "redirect_url": "/cpp/windows/attributes/idl-module",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/idl-quote.md",
+            "redirect_url": "/cpp/windows/attributes/idl-quote",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/iid-is.md",
+            "redirect_url": "/cpp/windows/attributes/iid-is",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/immediatebind.md",
+            "redirect_url": "/cpp/windows/attributes/immediatebind",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/implements-category.md",
+            "redirect_url": "/cpp/windows/attributes/implements-category",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/implements-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/implements-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/import.md",
+            "redirect_url": "/cpp/windows/attributes/import",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/importidl.md",
+            "redirect_url": "/cpp/windows/attributes/importidl",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/importlib.md",
+            "redirect_url": "/cpp/windows/attributes/importlib",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/in-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/in-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/include-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/include-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/includelib-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/includelib-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/last-is.md",
+            "redirect_url": "/cpp/windows/attributes/last-is",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/lcid.md",
+            "redirect_url": "/cpp/windows/attributes/lcid",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/length-is.md",
+            "redirect_url": "/cpp/windows/attributes/length-is",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/library-block.md",
+            "redirect_url": "/cpp/windows/attributes/library-block",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/licensed.md",
+            "redirect_url": "/cpp/windows/attributes/licensed",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/local-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/local-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/max-is.md",
+            "redirect_url": "/cpp/windows/attributes/max-is",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/method-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/method-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/module-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/module-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/ms-union.md",
+            "redirect_url": "/cpp/windows/attributes/ms-union",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/no-injected-text.md",
+            "redirect_url": "/cpp/windows/attributes/no-injected-text",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/nonbrowsable.md",
+            "redirect_url": "/cpp/windows/attributes/nonbrowsable",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/noncreatable.md",
+            "redirect_url": "/cpp/windows/attributes/noncreatable",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/nonextensible.md",
+            "redirect_url": "/cpp/windows/attributes/nonextensible",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/object-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/object-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/odl.md",
+            "redirect_url": "/cpp/windows/attributes/odl",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/ole-db-consumer-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/ole-db-consumer-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/oleautomation.md",
+            "redirect_url": "/cpp/windows/attributes/oleautomation",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/optional-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/optional-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/out-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/out-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/parameter-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/parameter-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/pointer-default.md",
+            "redirect_url": "/cpp/windows/attributes/pointer-default",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/pragma.md",
+            "redirect_url": "/cpp/windows/attributes/pragma",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/progid.md",
+            "redirect_url": "/cpp/windows/attributes/progid",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/propget.md",
+            "redirect_url": "/cpp/windows/attributes/propget",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/propput.md",
+            "redirect_url": "/cpp/windows/attributes/propput",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/propputref.md",
+            "redirect_url": "/cpp/windows/attributes/propputref",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/ptr.md",
+            "redirect_url": "/cpp/windows/attributes/ptr",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/public-cpp-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/public-cpp-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/range-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/range-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/rdx.md",
+            "redirect_url": "/cpp/windows/attributes/rdx",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/readonly-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/readonly-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/ref-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/ref-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/registration-script.md",
+            "redirect_url": "/cpp/windows/attributes/registration-script",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/requestedit.md",
+            "redirect_url": "/cpp/windows/attributes/requestedit",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/requires-category.md",
+            "redirect_url": "/cpp/windows/attributes/requires-category",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/restricted.md",
+            "redirect_url": "/cpp/windows/attributes/restricted",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/retval.md",
+            "redirect_url": "/cpp/windows/attributes/retval",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/satype.md",
+            "redirect_url": "/cpp/windows/attributes/satype",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/size-is.md",
+            "redirect_url": "/cpp/windows/attributes/size-is",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/source-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/source-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/stand-alone-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/stand-alone-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/string-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/string-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/support-error-info.md",
+            "redirect_url": "/cpp/windows/attributes/support-error-info",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/switch-is.md",
+            "redirect_url": "/cpp/windows/attributes/switch-is",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/switch-type.md",
+            "redirect_url": "/cpp/windows/attributes/switch-type",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/synchronize.md",
+            "redirect_url": "/cpp/windows/attributes/synchronize",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/threading-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/threading-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/transmit-as.md",
+            "redirect_url": "/cpp/windows/attributes/transmit-as",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/typedef-enum-union-and-struct-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/typedef-enum-union-and-struct-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/uidefault.md",
+            "redirect_url": "/cpp/windows/attributes/uidefault",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/unique-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/unique-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/usesgetlasterror.md",
+            "redirect_url": "/cpp/windows/attributes/usesgetlasterror",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/uuid-cpp-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/uuid-cpp-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/v1-enum.md",
+            "redirect_url": "/cpp/windows/attributes/v1-enum",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/vararg.md",
+            "redirect_url": "/cpp/windows/attributes/vararg",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/version-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/version-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/vi-progid.md",
+            "redirect_url": "/cpp/windows/attributes/vi-progid",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/wire-marshal.md",
+            "redirect_url": "/cpp/windows/attributes/wire-marshal",
+            "redirect_document_id": true
+}
+]
 }

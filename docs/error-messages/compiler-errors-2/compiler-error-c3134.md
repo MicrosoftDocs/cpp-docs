@@ -20,4 +20,4 @@ A syntax error was detected when a value was assigned to an attribute.
 
 ## See Also
 
-[Attributes by Usage](../../windows/attributes-by-usage.md)
+[Attributes by Usage](../../windows/attributes/attributes-by-usage.md)
