@@ -70,7 +70,7 @@ The driver description. This is the name presented to users rather than the phys
 *lpszAttributes*<br/>
 List of attributes in the form "keyname=value". These strings are separated by null terminators with two consecutive null terminators at the end of the list. These attributes are primarily default driver-specific entries, which go into the registry for the new data source. One important key that is not mentioned in the ODBC API reference for this function is "DSN" ("data source name"), which specifies the name of the new data source. The rest of the entries are specific to the driver for the new data source. Often it is not necessary to supply all of the entries because the driver can prompt the user with dialog boxes for the new values. (Set *hwndParent* to NULL to cause this.) You might want to explicitly supply default values so that the user is not prompted.  
   
-###### To determine the description of a driver for the lpszDriver parameter using ODBC Administrator  
+#### To determine the description of a driver for the lpszDriver parameter using ODBC Administrator  
   
 1. Run ODBC Administrator.  
   
@@ -82,23 +82,23 @@ As an alternative, you can examine the registry (or, for 16 bit, the file Odbcin
   
 One way to find the keynames and values for the *lpszAttributes* parameter is to examine the Odbc.ini file for an already configured data source (perhaps one that has been configured by ODBC Administrator).  
   
-###### To find keynames and values for the lpszAttributes parameter  
+#### To find keynames and values for the lpszAttributes parameter  
   
 1. Run the Windows registry editor (or, for 16 bit, open the Odbc.ini file).  
   
 1. Find the ODBC data sources information using one of the following:  
   
-    - For 32 bit, find the key **HKEY_CURRENT_USER\Software\ODBC\ODBC.INI\ODBC Data Sources** in the left pane.  
+   - For 32 bit, find the key **HKEY_CURRENT_USER\Software\ODBC\ODBC.INI\ODBC Data Sources** in the left pane.  
   
-        The right pane lists entries of the form: "pub: REG_SZ:*<data source name>*", where *<data source name>* is a data source that has already been configured with the desired settings for the driver you intend to use. Select the data source you want, for example, SQL Server. The items following the string "pub:" are, in order, the keyname and value to use in your *lpszAttributes* parameter.  
+      The right pane lists entries of the form: "pub: REG_SZ:*<data source name>*", where *<data source name>* is a data source that has already been configured with the desired settings for the driver you intend to use. Select the data source you want, for example, SQL Server. The items following the string "pub:" are, in order, the keyname and value to use in your *lpszAttributes* parameter.  
   
-    - For 16 bit, find the section in the Odbc.ini file marked by [*\<data source name>*].  
+   - For 16 bit, find the section in the Odbc.ini file marked by [*\<data source name>*].  
   
-        The lines following this line are of the form "keyname=value". These are exactly the entries to use in your *lpszAttributes* parameter.  
+      The lines following this line are of the form "keyname=value". These are exactly the entries to use in your *lpszAttributes* parameter.  
   
 You might also want to examine the documentation for the specific driver you are going to use. You can find useful information in the online Help for the driver, which you can access by running ODBC Administrator. These Help files are usually placed in the WINDOWS\SYSTEM directory for Windows NT, Windows 3.1, or Windows 95.  
   
-###### To obtain online Help for your ODBC driver  
+#### To obtain online Help for your ODBC driver  
   
 1. Run ODBC Administrator.  
   
