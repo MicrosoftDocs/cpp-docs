@@ -78,40 +78,40 @@ In the above example, `capa` is incremented if `c` is an uppercase `A`. The **br
 ```cpp
 int main()
 {
-	int n = 5;
-	switch (n)
-	{
+    int n = 5;
+    switch (n)
+    {
 
-	case 1:
-		a();
-		break;
-	case 2:
-		b();
-		d();
-		[[fallthrough]]; // I meant to do this!
-	case 3:
-		c();
-		break;
-	default:
-		d();
-		break;
-	}
+    case 1:
+        a();
+        break;
+    case 2:
+        b();
+        d();
+        [[fallthrough]]; // I meant to do this!
+    case 3:
+        c();
+        break;
+    default:
+        d();
+        break;
+    }
 
-	return 0;
+    return 0;
 }
 ```
 
 **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)):  A switch statement may introduce and initialize a variable whose scope is limited to the block of the switch statement:
 
 ```cpp
-switch (Gadget gadget(args); auto s = gadget.get_status())
-		{
-		case status::good:
-			gadget.zip();
-			break;
-		case status::bad:
-			throw BadGadget();
-		};
+    switch (Gadget gadget(args); auto s = gadget.get_status())
+    {
+    case status::good:
+        gadget.zip();
+        break;
+    case status::bad:
+        throw BadGadget();
+    };
 ```
 
 An inner block of a **switch** statement can contain definitions with initializations as long as they are reachable — that is, not bypassed by all possible execution paths. Names introduced using these declarations have local scope. For example:
@@ -123,35 +123,35 @@ An inner block of a **switch** statement can contain definitions with initializa
 using namespace std;
 int main(int argc, char *argv[])
 {
-   switch( tolower( *argv[1] ) )
-   {
-       // Error. Unreachable declaration.
-       char szChEntered[] = "Character entered was: ";
+    switch( tolower( *argv[1] ) )
+    {
+        // Error. Unreachable declaration.
+        char szChEntered[] = "Character entered was: ";
 
-   case 'a' :
-       {
-       // Declaration of szChEntered OK. Local scope.
-       char szChEntered[] = "Character entered was: ";
-       cout << szChEntered << "a\n";
-       }
-       break;
+    case 'a' :
+        {
+        // Declaration of szChEntered OK. Local scope.
+        char szChEntered[] = "Character entered was: ";
+        cout << szChEntered << "a\n";
+        }
+        break;
 
-   case 'b' :
-       // Value of szChEntered undefined.
-       cout << szChEntered << "b\n";
-       break;
+    case 'b' :
+        // Value of szChEntered undefined.
+        cout << szChEntered << "b\n";
+        break;
 
-   default:
-       // Value of szChEntered undefined.
-       cout << szChEntered << "neither a nor b\n";
-       break;
-   }
+    default:
+        // Value of szChEntered undefined.
+        cout << szChEntered << "neither a nor b\n";
+        break;
+    }
 }
 ```
 
 A **switch** statement can be nested. In such cases, **case** or **default** labels associate with the closest **switch** statement that encloses them.
 
-## Microsoft Specific
+**Microsoft Specific**
 
 Microsoft C does not limit the number of case values in a **switch** statement. The number is limited only by the available memory. ANSI C requires at least 257 case labels be allowed in a **switch** statement.
 

@@ -18,11 +18,12 @@ Holds information about a volume.
 ## Syntax
 
 ```cpp
-struct space_info	{
-	uintmax_t capacity;
-	uintmax_t free;
-	uintmax_t available;
-	};
+struct space_info
+{
+    uintmax_t capacity;
+    uintmax_t free;
+    uintmax_t available;
+};
 ```
 
 ## Members
@@ -31,9 +32,9 @@ struct space_info	{
 
 |Name|Description|
 |----------|-----------------|
-|`unsigned long long available`|Represents the number of bytes that are available to represent data on the volume.|
 |`unsigned long long capacity`|Represents the total number of bytes that the volume can represent.|
 |`unsigned long long free`|Represents the number of bytes that are not used to represent data on the volume.|
+|`unsigned long long available`|Represents the number of bytes that are available to represent data on the volume.|
 
 ## Requirements
 

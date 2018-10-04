@@ -49,7 +49,6 @@ To support message maps, MFC supplies the following macros:
 
 For more information on message maps, the message-map declaration and demarcation macros, and the message-mapping macros, see [Message Maps](../../mfc/reference/message-maps-mfc.md) and [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md). For more information about message-map ranges, see [Handlers for Message-Map Ranges](../../mfc/handlers-for-message-map-ranges.md).
 
-
 ## <a name="begin_message_map"></a> BEGIN_MESSAGE_MAP
 
 Begins the definition of your message map.
@@ -92,15 +91,18 @@ Begins the definition of a message map on a class type containing a single templ
 
 ### Syntax
 
-  ```
+```
 BEGIN_TEMPLATE_MESSAGE_MAP( theClass, type_name, baseClass )
 ```
+
 ### Parameters
 
 *theClass*<br/>
 Specifies the name of the class whose message map this is.
+
 *type_name*<br/>
 The name of the template parameter specified for the class.
+
 *baseClass*<br/>
 Specifies the name of the base class of *theClass*.
 
@@ -148,7 +150,6 @@ class CMainFrame : public CMDIFrameWnd
 ### Requirements
 
 **Header:** afxwin.h
-
 
 ## <a name="end_message_map"></a>  END_MESSAGE_MAP
 
@@ -212,9 +213,10 @@ Extended command-handler member function.
 
 ### Syntax
 
-  ```
+```
 ON_COMMAND_EX(id, memberFxn);
 ```
+
 ### Parameters
 
 *id*<br/>
@@ -234,6 +236,7 @@ This macro maps a command message to an extended command-handler member function
 ```
 ON_COMMAND_EX(id,  memberFxn);
 ```
+
 ### Parameters
 
 *id*<br/>
@@ -254,8 +257,7 @@ Header file: afxmsg_.h
 ### See Also
 
 [ON_COMMAND](message-map-macros-mfc.md#on_command)<br/>
-[TN006: Message Maps]tm006-message-maps.md)
-
+[TN006: Message Maps](../tn006-message-maps.md)
 
 ## <a name="on_control"></a>  ON_CONTROL
 
@@ -289,7 +291,6 @@ For more information and examples, see [Message Handling and Mapping Topics](../
 ### Requirements
 
 **Header:** afxmsg_.h
-
 
 ## <a name="on_message"></a>  ON_MESSAGE
 
@@ -349,7 +350,7 @@ LRESULT CMyWnd2::OnMyMessage(WPARAM wParam, LPARAM lParam)
 
 **Header:** afxmsg_.h
 
-## <a name="on_olecmd"></a>  ON_OLECMD	
+## <a name="on_olecmd"></a>  ON_OLECMD
 
 Routes commands through the command dispatch interface `IOleCommandTarget`.
 
@@ -512,7 +513,6 @@ For more information and examples, see [Message Handling and Mapping Topics](../
 ```cpp
 static UINT NEAR WM_FIND = RegisterWindowMessage(_T("COMMDLG_FIND"));
 
-
 BEGIN_MESSAGE_MAP(CMyWnd3, CWnd)
    ON_REGISTERED_MESSAGE(WM_FIND, OnFind)
 END_MESSAGE_MAP()
@@ -527,7 +527,7 @@ END_MESSAGE_MAP()
 [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947)<br/>
 [User-Defined Handlers](user-defined-handlers.md)
 
-## <a name="on_registered_thread_message"></a>  ON_REGISTERED_THREAD_MESSAGE	
+## <a name="on_registered_thread_message"></a>  ON_REGISTERED_THREAD_MESSAGE
 
 Indicates which function will handle the message registered by the Windows RegisterWindowMessage function.
 
@@ -553,7 +553,7 @@ RegisterWindowMessage is used to define a new window message that is guaranteed 
 
 **Header:** afxmsg_.h
 
-## <a name="on_thread_message"></a>  ON_THREAD_MESSAGE	
+## <a name="on_thread_message"></a>  ON_THREAD_MESSAGE
 
 Indicates which function will handle a user-defined message.
 
@@ -579,7 +579,7 @@ ON_THREAD_MESSAGE must be used instead of ON_MESSAGE when you have a `CWinThread
 
 **Header:** afxole.h
 
-## <a name="on_update_command_ui"></a>  ON_UPDATE_COMMAND_UI	
+## <a name="on_update_command_ui"></a>  ON_UPDATE_COMMAND_UI
 
 This macro indicates which function will handle a user-interface update command message.
 
@@ -666,7 +666,7 @@ void CChildFrame::OnRangeCmds(UINT nID)
 
 **Header:** afxmsg_.h
 
-## <a name="on_update_command_ui_range"></a>  ON_UPDATE_COMMAND_UI_RANGE	
+## <a name="on_update_command_ui_range"></a>  ON_UPDATE_COMMAND_UI_RANGE
 
 Maps a contiguous range of command IDs to a single update message handler function.
 
@@ -697,7 +697,7 @@ There is no automatic support for message map ranges, so you must place the macr
 
 **Header:** afxmsg_.h
 
-## <a name="on_control_range"></a>  ON_CONTROL_RANGE	
+## <a name="on_control_range"></a>  ON_CONTROL_RANGE
 
 Use this macro to map a contiguous range of control IDs to a single message handler function for a specified Windows notification message, such as BN_CLICKED.
 
