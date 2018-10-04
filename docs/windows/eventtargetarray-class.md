@@ -1,7 +1,7 @@
 ---
 title: "EventTargetArray Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/21/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::Details::EventTargetArray", "event/Microsoft::WRL::Details::EventTargetArray::AddTail", "event/Microsoft::WRL::Details::EventTargetArray::Begin", "event/Microsoft::WRL::Details::EventTargetArray::End", "event/Microsoft::WRL::Details::EventTargetArray::EventTargetArray", "event/Microsoft::WRL::Details::EventTargetArray::Length", "event/Microsoft::WRL::Details::EventTargetArray::~EventTargetArray"]
@@ -19,7 +19,11 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax
 
 ```cpp
-class EventTargetArray : public Microsoft::WRL::RuntimeClass<Microsoft::WRL::RuntimeClassFlags<ClassicCom>, IUnknown>;
+class EventTargetArray :
+    public Microsoft::WRL::RuntimeClass<
+        Microsoft::WRL::RuntimeClassFlags<ClassicCom>,
+        IUnknown
+    >;
 ```
 
 ## Remarks

@@ -1,7 +1,7 @@
 ---
 title: "MakeAllocator Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/21/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::MakeAllocator", "implements/Microsoft::WRL::Details::MakeAllocator::Allocate", "implements/Microsoft::WRL::Details::MakeAllocator::Detach", "implements/Microsoft::WRL::Details::MakeAllocator::MakeAllocator", "implements/Microsoft::WRL::Details::MakeAllocator::~MakeAllocator"]
@@ -20,9 +20,11 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ```cpp
 template<
-   typename T,
-   bool hasWeakReferenceSupport =
-         !__is_base_of(RuntimeClassFlags<InhibitWeakReference>, T)>
+    typename T,
+    bool hasWeakReferenceSupport =
+          !__is_base_of(RuntimeClassFlags<InhibitWeakReference>,
+                        T)
+>
 class MakeAllocator;
 
 template<typename T>

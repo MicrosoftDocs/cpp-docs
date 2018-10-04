@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 
 'attribute': none of the attribute constructors matched the arguments
 
-An invalid value was used to declare an attribute.  See [attribute](../../windows/attribute.md) for more information.
+An invalid value was used to declare an attribute.  See [attribute](../../windows/attributes/attribute.md) for more information.
 
 ## Example
 

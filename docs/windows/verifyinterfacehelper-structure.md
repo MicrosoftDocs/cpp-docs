@@ -1,7 +1,7 @@
 ---
 title: "VerifyInterfaceHelper Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/24/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::VerifyInterfaceHelper", "implements/Microsoft::WRL::Details::VerifyInterfaceHelper::Verify"]
@@ -19,15 +19,10 @@ Supports the Windows Runtime C++ Template Library infrastructure and is not inte
 ## Syntax
 
 ```cpp
-template <
-   bool isWinRTInterface,
-   typename I
->
+template <bool isWinRTInterface, typename I>
 struct VerifyInterfaceHelper;
 
-template <
-   typename I
->
+template <typename I>
 struct VerifyInterfaceHelper<false, I>;
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "RuntimeClassFlags Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/07/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::RuntimeClassFlags", "implements/Microsoft::WRL::RuntimeClassFlags::value"]
@@ -19,9 +19,7 @@ Contains the type for an instance of a [RuntimeClass](../windows/runtimeclass-cl
 ## Syntax
 
 ```cpp
-template <
-   unsigned int flags
->
+template <unsigned int flags>
 struct RuntimeClassFlags;
 ```
 

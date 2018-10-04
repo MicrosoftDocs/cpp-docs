@@ -1,7 +1,7 @@
 ---
 title: "Semaphore Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/25/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Semaphore", "corewrappers/Microsoft::WRL::Wrappers::Semaphore::Lock", "corewrappers/Microsoft::WRL::Wrappers::Semaphore::operator=", "corewrappers/Microsoft::WRL::Wrappers::Semaphore::Semaphore"]
@@ -19,7 +19,7 @@ Represents a synchronization object that controls a shared resource that can sup
 ## Syntax
 
 ```cpp
-class Semaphore : public HandleT<HandleTraits::SemaphoreTraits>
+class Semaphore : public HandleT<HandleTraits::SemaphoreTraits>;
 ```
 
 ## Members

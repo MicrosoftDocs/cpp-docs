@@ -1,7 +1,7 @@
 ---
 title: "InterfaceListHelper Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::InterfaceListHelper"]
@@ -20,22 +20,20 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ```cpp
 template <
-   typename T0,
-   typename T1 = Nil,
-   typename T2 = Nil,
-   typename T3 = Nil,
-   typename T4 = Nil,
-   typename T5 = Nil,
-   typename T6 = Nil,
-   typename T7 = Nil,
-   typename T8 = Nil,
-   typename T9 = Nil
+    typename T0,
+    typename T1 = Nil,
+    typename T2 = Nil,
+    typename T3 = Nil,
+    typename T4 = Nil,
+    typename T5 = Nil,
+    typename T6 = Nil,
+    typename T7 = Nil,
+    typename T8 = Nil,
+    typename T9 = Nil
 >
 struct InterfaceListHelper;
 
-template <
-   typename T0
->
+template <typename T0>
 struct InterfaceListHelper<T0, Nil, Nil, Nil, Nil, Nil, Nil, Nil, Nil>;
 ```
 

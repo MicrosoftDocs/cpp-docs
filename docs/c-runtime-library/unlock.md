@@ -36,7 +36,8 @@ void __cdecl _unlock(
 [in] The identifier of the lock to release.
 
 ## Requirements
- **Source:** mlock.c
+
+**Source:** mlock.c
 
 ## See Also
 

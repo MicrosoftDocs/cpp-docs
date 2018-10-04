@@ -406,7 +406,8 @@ int main( )
 
    vaNOT = !vaL;
    cout << "The element-by-element result of "
-        << "the logical NOT operator! is the\n valarray: ( ";
+        << "the logical NOT operator! is the"
+        << endl << "valarray: ( ";
       for ( i = 0 ; i < 10 ; i++ )
          cout << vaNOT [ i ] << " ";
    cout << ")." << endl;
@@ -414,7 +415,7 @@ int main( )
 /* Output:
 The initial valarray is:  ( 0 0 0 2 0 4 0 6 0 8 ).
 The element-by-element result of the logical NOT operator! is the
- valarray: ( 1 1 1 0 1 0 1 0 1 0 ).
+valarray: ( 1 1 1 0 1 0 1 0 1 0 ).
 */
 ```
 
@@ -470,7 +471,8 @@ int main( )
 
    vaL %= vaR;
    cout << "The remainders from the element-by-element "
-        << "division is the\n valarray: ( ";
+        << "division is the"
+        << endl << "valarray: ( ";
       for ( i = 0 ; i < 6 ; i++ )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
@@ -479,7 +481,7 @@ int main( )
 The initial valarray is: ( 53 -67 53 -67 53 -67 ).
 The initial  right valarray is: ( 1 4 7 10 13 16 ).
 The remainders from the element-by-element division is the
- valarray: ( 0 -3 4 -7 1 -3 ).
+valarray: ( 0 -3 4 -7 1 -3 ).
 */
 ```
 
@@ -541,7 +543,8 @@ int main( )
 
    vaL &= vaR;
    cout << "The element-by-element result of "
-        << "the logical AND operator&= is the\n valarray: ( ";
+        << "the logical AND operator&= is the"
+        << endl << "valarray: ( ";
       for ( i = 0 ; i < 10 ; i++ )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
@@ -550,7 +553,7 @@ int main( )
 The initial valarray is:  ( 0 0 0 2 0 4 0 6 0 8 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The element-by-element result of the logical AND operator&= is the
- valarray: ( 0 0 0 2 0 4 0 6 0 8 ).
+valarray: ( 0 0 0 2 0 4 0 6 0 8 ).
 */
 ```
 
@@ -610,7 +613,8 @@ int main( )
 
    vaL >>= vaR;
    cout << "The element-by-element result of "
-        << "the right shift is the\n valarray: ( ";
+        << "the right shift is the"
+        << endl << "valarray: ( ";
       for ( i = 0 ; i < 8 ; i++ )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
@@ -619,7 +623,7 @@ int main( )
 The initial operand valarray is: ( 64 -64 64 -64 64 -64 64 -64 ).
 The  right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the right shift is the
- valarray: ( 64 -32 16 -8 4 -2 1 -1 ).
+valarray: ( 64 -32 16 -8 4 -2 1 -1 ).
 */
 ```
 
@@ -679,7 +683,9 @@ int main( )
 
    vaL <<= vaR;
    cout << "The element-by-element result of "
-        << "the left shift\n on the operand array is the valarray:\n ( ";
+        << "the left shift"
+        << endl << "on the operand array is the valarray:"
+        << endl << "( ";
       for ( i = 0 ; i < 8 ; i++ )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
@@ -688,8 +694,8 @@ int main( )
 The initial operand valarray is: ( 1 -1 1 -1 1 -1 1 -1 ).
 The  right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the left shift
- on the operand array is the valarray:
- ( 1 -2 4 -8 16 -32 64 -128 ).
+on the operand array is the valarray:
+( 1 -2 4 -8 16 -32 64 -128 ).
 */
 ```
 
@@ -745,7 +751,8 @@ int main( )
 
    vaL *= vaR;
    cout << "The element-by-element result of "
-        << "the multiplication is the\n valarray: ( ";
+        << "the multiplication is the"
+        << endl << "valarray: ( ";
       for ( i = 0 ; i < 8 ; i++ )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
@@ -754,7 +761,7 @@ int main( )
 The initial valarray is: ( 2 -1 2 -1 2 -1 2 -1 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the multiplication is the
- valarray: ( 0 -1 4 -3 8 -5 12 -7 ).
+valarray: ( 0 -1 4 -3 8 -5 12 -7 ).
 */
 ```
 
@@ -797,7 +804,8 @@ int main( )
 
    vaPLUS = +vaL;
    cout << "The element-by-element result of "
-        << "the operator+ is the\n valarray: ( ";
+        << "the operator+ is the"
+        << endl << "valarray: ( ";
       for ( i = 0 ; i < 10 ; i++ )
          cout << vaPLUS [ i ] << " ";
    cout << ")." << endl;
@@ -805,7 +813,7 @@ int main( )
 /* Output:
 The initial valarray is:  ( 0 0 -2 2 -4 4 -6 6 -8 8 ).
 The element-by-element result of the operator+ is the
- valarray: ( 0 0 -2 2 -4 4 -6 6 -8 8 ).
+valarray: ( 0 0 -2 2 -4 4 -6 6 -8 8 ).
 */
 ```
 
@@ -861,7 +869,8 @@ int main( )
 
    vaL += vaR;
    cout << "The element-by-element result of "
-        << "the sum is the\n valarray: ( ";
+        << "the sum is the"
+        << endl << "valarray: ( ";
       for (i = 0 ; i < 8 ; i++ )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
@@ -870,7 +879,7 @@ int main( )
 The initial valarray is: ( 2 -1 2 -1 2 -1 2 -1 ).
 The initial  right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the sum is the
- valarray: ( 2 0 4 2 6 4 8 6 ).
+valarray: ( 2 0 4 2 6 4 8 6 ).
 */
 ```
 
@@ -913,7 +922,8 @@ int main( )
 
    vaMINUS = -vaL;
    cout << "The element-by-element result of "
-        << "the operator+ is the\n valarray: ( ";
+        << "the operator+ is the"
+        << endl << "valarray: ( ";
       for ( i = 0 ; i < 10 ; i++ )
          cout << vaMINUS [ i ] << " ";
    cout << ")." << endl;
@@ -921,7 +931,7 @@ int main( )
 /* Output:
 The initial valarray is:  ( 0 0 -2 2 -4 4 -6 6 -8 8 ).
 The element-by-element result of the operator+ is the
- valarray: ( 0 0 2 -2 4 -4 6 -6 8 -8 ).
+valarray: ( 0 0 2 -2 4 -4 6 -6 8 -8 ).
 */
 ```
 
@@ -977,7 +987,8 @@ int main( )
 
    vaL -= vaR;
    cout << "The element-by-element result of "
-        << "the difference is the\n valarray: ( ";
+        << "the difference is the"
+        << endl << "valarray: ( ";
       for ( i = 0 ; i < 8 ; i++ )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
@@ -986,7 +997,7 @@ int main( )
 The initial valarray is: ( 10 0 10 0 10 0 10 0 ).
 The initial  right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the difference is the
- valarray: ( 10 -1 8 -3 6 -5 4 -7 ).
+valarray: ( 10 -1 8 -3 6 -5 4 -7 ).
 */
 ```
 
@@ -1042,7 +1053,8 @@ int main( )
 
    vaL /= vaR;
    cout << "The element-by-element result of "
-        << "the quotient is the\n valarray: ( ";
+        << "the quotient is the"
+        << endl << "valarray: ( ";
       for (i = 0 ; i < 6 ; i++ )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
@@ -1051,7 +1063,7 @@ int main( )
 The initial valarray is: ( 100 -100 100 -100 100 -100 ).
 The initial Right valarray is: ( 0 2 4 6 8 10 ).
 The element-by-element result of the quotient is the
- valarray: ( inf -50 25 -16.6667 12.5 -10 ).
+valarray: ( inf -50 25 -16.6667 12.5 -10 ).
 */
 ```
 
@@ -1180,15 +1192,11 @@ indirect_array<Type> operator[](const valarray<size_t>& _Indarray);
 
 Type operator[](size_t _Off) const;
 
-
 valarray<Type> operator[](slice _Slice) const;
-
 
 valarray<Type> operator[](const gslice& _Gslicearray) const;
 
-
 valarray<Type> operator[](const valarray<bool>& _Boolarray) const;
-
 
 valarray<Type> operator[](const valarray<size_t>& _Indarray) const;
 ```
@@ -1257,43 +1265,44 @@ The exclusive logical or, referred to as **XOR**, has the following semantics: G
 
 int main( )
 {
-   using namespace std;
-   int i;
+    using namespace std;
+    int i;
 
-   valarray<int> vaL ( 10 ), vaR ( 10 );
-   for ( i = 0 ; i < 10 ; i += 2 )
-      vaL [ i ] =  1;
-   for ( i = 1 ; i < 10 ; i += 2 )
-      vaL [ i ] =  0;
-   for ( i = 0 ; i < 10 ; i += 3 )
-      vaR [ i ] =  i;
-   for ( i = 1 ; i < 10 ; i += 3 )
-      vaR [ i ] =  i-1;
-   for ( i = 2 ; i < 10 ; i += 3 )
-      vaR [ i ] =  i-1;
+    valarray<int> vaL ( 10 ), vaR ( 10 );
+    for ( i = 0 ; i < 10 ; i += 2 )
+        vaL [ i ] =  1;
+    for ( i = 1 ; i < 10 ; i += 2 )
+        vaL [ i ] =  0;
+    for ( i = 0 ; i < 10 ; i += 3 )
+        vaR [ i ] =  i;
+    for ( i = 1 ; i < 10 ; i += 3 )
+        vaR [ i ] =  i-1;
+    for ( i = 2 ; i < 10 ; i += 3 )
+        vaR [ i ] =  i-1;
 
-   cout << "The initial operand valarray is:  ( ";
-      for (i = 0 ; i < 10 ; i++ )
-         cout << vaL [ i ] << " ";
-   cout << ")." << endl;
+    cout << "The initial operand valarray is:  ( ";
+        for (i = 0 ; i < 10 ; i++ )
+            cout << vaL [ i ] << " ";
+    cout << ")." << endl;
 
-   cout << "The  right valarray is: ( ";
-      for ( i = 0 ; i < 10 ; i++ )
-         cout << vaR [ i ] << " ";
-   cout << ")." << endl;
+    cout << "The  right valarray is: ( ";
+        for ( i = 0 ; i < 10 ; i++ )
+            cout << vaR [ i ] << " ";
+    cout << ")." << endl;
 
-   vaL ^= vaR;
-   cout << "The element-by-element result of "
-        << "the bitwise XOR operator^= is the\n valarray: ( ";
-      for (i = 0 ; i < 10 ; i++ )
-         cout << vaL [ i ] << " ";
-   cout << ")." << endl;
+    vaL ^= vaR;
+    cout << "The element-by-element result of "
+        << "the bitwise XOR operator^= is the"
+        << endl << "valarray: ( ";
+        for (i = 0 ; i < 10 ; i++ )
+            cout << vaL [ i ] << " ";
+    cout << ")." << endl;
 }
 /* Output:
 The initial operand valarray is:  ( 1 0 1 0 1 0 1 0 1 0 ).
 The  right valarray is: ( 0 0 1 3 3 4 6 6 7 9 ).
 The element-by-element result of the bitwise XOR operator^= is the
- valarray: ( 1 0 0 3 2 4 7 6 6 9 ).
+valarray: ( 1 0 0 3 2 4 7 6 6 9 ).
 */
 ```
 
@@ -1347,31 +1356,35 @@ int main( )
    for ( i = 2 ; i < 10 ; i += 3 )
       vaR [ i ] =  i-1;
 
-   cout << "The initial operand valarray is:\n ( ";
+   cout << "The initial operand valarray is:"
+        << endl << "( ";
       for ( i = 0 ; i < 10 ; i++ )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
 
-   cout << "The  right valarray is:\n ( ";
+   cout << "The  right valarray is:"
+        << endl << "( ";
       for ( i = 0 ; i < 10 ; i++ )
          cout << vaR [ i ] << " ";
    cout << ")." << endl;
 
    vaL |= vaR;
    cout << "The element-by-element result of "
-        << "the logical OR\n operator|= is the valarray:\n ( ";
+        << "the logical OR"
+        << endl << "operator|= is the valarray:"
+        << endl << "( ";
       for (i = 0 ; i < 10 ; i++ )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
 }
 /* Output:
 The initial operand valarray is:
- ( 1 0 1 0 1 0 1 0 1 0 ).
+( 1 0 1 0 1 0 1 0 1 0 ).
 The  right valarray is:
- ( 0 0 1 3 3 4 6 6 7 9 ).
+( 0 0 1 3 3 4 6 6 7 9 ).
 The element-by-element result of the logical OR
- operator|= is the valarray:
- ( 1 0 1 3 3 4 7 6 7 9 ).
+operator|= is the valarray:
+( 1 0 1 3 3 4 7 6 7 9 ).
 */
 ```
 
@@ -1403,70 +1416,74 @@ The bitwise `NOT` has the same truth table as the logical `NOT` but applies to t
 
 int main( )
 {
-   using namespace std;
-   int i;
+    using namespace std;
+    int i;
 
-   valarray<unsigned short int> vaL1 ( 10 );
-   valarray<unsigned short int> vaNOT1 ( 10 );
-   for ( i = 0 ; i < 10 ; i += 2 )
-      vaL1 [ i ] =  i;
-   for ( i = 1 ; i < 10 ; i += 2 )
-      vaL1 [ i ] =  5*i;
+    valarray<unsigned short int> vaL1 ( 10 );
+    valarray<unsigned short int> vaNOT1 ( 10 );
+    for ( i = 0 ; i < 10 ; i += 2 )
+        vaL1 [ i ] =  i;
+    for ( i = 1 ; i < 10 ; i += 2 )
+        vaL1 [ i ] =  5*i;
 
-   cout << "The initial valarray <unsigned short int> is:  ( ";
-      for ( i = 0 ; i < 10 ; i++ )
-         cout << vaL1 [ i ] << " ";
-   cout << ")." << endl;
+    cout << "The initial valarray <unsigned short int> is:  ( ";
+        for ( i = 0 ; i < 10 ; i++ )
+            cout << vaL1 [ i ] << " ";
+    cout << ")." << endl;
 
-   vaNOT1 = ~vaL1;
-   cout << "The element-by-element result of "
-        << "the bitwise NOT operator~ is the\n valarray: ( ";
-      for ( i = 0 ; i < 10 ; i++ )
-         cout << vaNOT1 [ i ] << " ";
-   cout << ")." << endl << endl;
+    vaNOT1 = ~vaL1;
+    cout << "The element-by-element result of "
+        << "the bitwise NOT operator~ is the"
+        << endl << "valarray: ( ";
+        for ( i = 0 ; i < 10 ; i++ )
+            cout << vaNOT1 [ i ] << " ";
+    cout << ")." << endl << endl;
 
-   valarray<int> vaL2 ( 10 );
-   valarray<int> vaNOT2 ( 10 );
-   for ( i = 0 ; i < 10 ; i += 2 )
-      vaL2 [ i ] =  i;
-   for ( i = 1 ; i < 10 ; i += 2 )
-      vaL2 [ i ] =  -2 * i;
+    valarray<int> vaL2 ( 10 );
+    valarray<int> vaNOT2 ( 10 );
+    for ( i = 0 ; i < 10 ; i += 2 )
+        vaL2 [ i ] =  i;
+    for ( i = 1 ; i < 10 ; i += 2 )
+        vaL2 [ i ] =  -2 * i;
 
-   cout << "The initial valarray <int> is:  ( ";
-      for ( i = 0 ; i < 10 ; i++ )
-         cout << vaL2 [ i ] << " ";
-   cout << ")." << endl;
+    cout << "The initial valarray <int> is:  ( ";
+        for ( i = 0 ; i < 10 ; i++ )
+            cout << vaL2 [ i ] << " ";
+    cout << ")." << endl;
 
-   vaNOT2 = ~vaL2;
-   cout << "The element-by-element result of "
-        << "the bitwise NOT operator~ is the\n valarray: ( ";
-      for ( i = 0 ; i < 10 ; i++ )
-         cout << vaNOT2 [ i ] << " ";
-   cout << ")." << endl;
+    vaNOT2 = ~vaL2;
+    cout << "The element-by-element result of "
+        << "the bitwise NOT operator~ is the"
+        << endl << "valarray: ( ";
+        for ( i = 0 ; i < 10 ; i++ )
+            cout << vaNOT2 [ i ] << " ";
+    cout << ")." << endl;
 
-   // The negative numbers are represented using
-   // the two's complement approach, so adding one
-   // to the flipped bits returns the negative elements
-   vaNOT2 = vaNOT2 + 1;
-   cout << "The element-by-element result of "
-        << "adding one\n is the negative of the "
-        << "original elements the\n valarray: ( ";
-      for ( i = 0 ; i < 10 ; i++ )
-         cout << vaNOT2 [ i ] << " ";
-   cout << ")." << endl;
+    // The negative numbers are represented using
+    // the two's complement approach, so adding one
+    // to the flipped bits returns the negative elements
+    vaNOT2 = vaNOT2 + 1;
+    cout << "The element-by-element result of "
+        << "adding one"
+        << endl << "is the negative of the "
+        << "original elements the"
+        << endl << "valarray: ( ";
+        for ( i = 0 ; i < 10 ; i++ )
+            cout << vaNOT2 [ i ] << " ";
+    cout << ")." << endl;
 }
 
 /* Output:
 The initial valarray <unsigned short int> is:  ( 0 5 2 15 4 25 6 35 8 45 ).
 The element-by-element result of the bitwise NOT operator~ is the
- valarray: ( 65535 65530 65533 65520 65531 65510 65529 65500 65527 65490 ).
+valarray: ( 65535 65530 65533 65520 65531 65510 65529 65500 65527 65490 ).
 
 The initial valarray <int> is:  ( 0 -2 2 -6 4 -10 6 -14 8 -18 ).
 The element-by-element result of the bitwise NOT operator~ is the
- valarray: ( -1 1 -3 5 -5 9 -7 13 -9 17 ).
+valarray: ( -1 1 -3 5 -5 9 -7 13 -9 17 ).
 The element-by-element result of adding one
- is the negative of the original elements the
- valarray: ( 0 2 -2 6 -4 10 -6 14 -8 18 ).
+is the negative of the original elements the
+valarray: ( 0 2 -2 6 -4 10 -6 14 -8 18 ).
 */
 ```
 
@@ -1675,7 +1692,7 @@ int main()
     // Initializing two more elements to va2
     va2[10] = 10;
     va2[11] = 11;
-    cout << "After initializing two more elements,\n "
+    cout << "After initializing two more elements,\n"
          << "the operand valarray va2(12) is now: ( ";
         for (i = 0; i < 12; i++)
             cout << va2[i] << " ";
@@ -1693,7 +1710,7 @@ The operand valarray va2(12) is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The number of elements in the valarray va2 is: va2.size = 12.
 
 After initializing two more elements,
- the operand valarray va2(12) is now: ( 0 1 2 3 4 5 6 7 8 9 10 11 ).
+the operand valarray va2(12) is now: ( 0 1 2 3 4 5 6 7 8 9 10 11 ).
 The number of elements in the valarray va2 is still: 12.
 ```
 
@@ -1723,21 +1740,21 @@ If the length is greater than one, the member function adds values to the sum by
 
 int main( )
 {
-   using namespace std;
-   int i;
-   int sumva = 0;
+    using namespace std;
+    int i;
+    int sumva = 0;
 
-   valarray<int> va ( 10 );
-   for ( i = 0 ; i < 10 ; i+=1 )
-      va [ i ] =  i;
+    valarray<int> va ( 10 );
+    for ( i = 0 ; i < 10 ; i+=1 )
+        va [ i ] =  i;
 
-   cout << "The operand valarray va (10) is: ( ";
-      for ( i = 0 ; i < 10 ; i++ )
-         cout << va [ i ] << " ";
-   cout << ")." << endl;
+    cout << "The operand valarray va (10) is: ( ";
+        for ( i = 0 ; i < 10 ; i++ )
+            cout << va [ i ] << " ";
+    cout << ")." << endl;
 
-   sumva = va.sum ( );
-   cout << "The sum of elements in the valarray is: "
+    sumva = va.sum ( );
+    cout << "The sum of elements in the valarray is: "
         << sumva  << "." <<endl;
 }
 /* Output:
@@ -1877,15 +1894,15 @@ int main()
     // The fifth member function
     valarray<int> vaSlice = va[Slice];
 
-    cout << "The new valarray initialized from the slice is vaSlice ="
-        << "\nva[slice( 2, 4, 3)] = (";
+    cout << "The new valarray initialized from the slice is vaSlice =\n"
+        << "va[slice( 2, 4, 3)] = (";
     for (int i = 0; i < 3; i++) {
         cout << " " << vaSlice[i];
     }
     cout << " )" << endl;
 
     valarray<int> va2{{ 1, 2, 3, 4 }};
-    for (auto& v : va2){
+    for (auto& v : va2) {
         cout << v << " ";
     }
     cout << endl;
@@ -1894,7 +1911,11 @@ int main()
 ```
 
 ```Output
-The operand valarray va is:( 0 2 2 2 2 2 2 2 2 2 )The new valarray initialized from the slice is vaSlice =va[slice( 2, 4, 3)] = ( 0 0 0 )1 2 3 4
+The operand valarray va is:
+( 0 2 2 2 2 2 2 2 2 2 )
+The new valarray initialized from the slice is vaSlice =
+va[slice( 2, 4, 3)] = ( 0 0 0 )
+1 2 3 4
 ```
 
 ## <a name="value_type"></a>  valarray::value_type
@@ -1919,29 +1940,29 @@ The type is a synonym for the template parameter `Type`.
 
 int main( )
 {
-   using namespace std;
-   int i;
-   valarray<int> va ( 10 );
-   for ( i = 0 ; i < 10 ; i += 2 )
-      va [ i ] =  i;
-   for ( i = 1 ; i < 10 ; i += 2 )
-      va [ i ] =  -1;
+    using namespace std;
+    int i;
+    valarray<int> va ( 10 );
+    for ( i = 0 ; i < 10 ; i += 2 )
+        va [ i ] =  i;
+    for ( i = 1 ; i < 10 ; i += 2 )
+        va [ i ] =  -1;
 
-   cout << "The initial operand valarray is:  ( ";
-      for ( i = 0 ; i < 10 ; i++ )
-         cout << va [ i ] << " ";
-   cout << ")." << endl;
+    cout << "The initial operand valarray is:  ( ";
+        for ( i = 0 ; i < 10 ; i++ )
+            cout << va [ i ] << " ";
+    cout << ")." << endl;
 
-   // value_type declaration and initialization:
-   valarray<int>::value_type Right = 10;
+    // value_type declaration and initialization:
+    valarray<int>::value_type Right = 10;
 
-   cout << "The decalared value_type Right is: "
-           << Right << endl;
-   va *= Right;
-   cout << "The resulting valarray is:  ( ";
-      for ( i = 0 ; i < 10 ; i++ )
-         cout << va [ i ] << " ";
-   cout << ")." << endl;
+    cout << "The decalared value_type Right is: "
+            << Right << endl;
+    va *= Right;
+    cout << "The resulting valarray is:  ( ";
+        for ( i = 0 ; i < 10 ; i++ )
+            cout << va [ i ] << " ";
+    cout << ")." << endl;
 }
 /* Output:
 The initial operand valarray is:  ( 0 -1 2 -1 4 -1 6 -1 8 -1 ).

@@ -1,7 +1,7 @@
 ---
 title: "IsBaseOfStrict Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/21/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal/Microsoft::WRL::Details::IsBaseOfStrict", "internal/Microsoft::WRL::Details::IsBaseOfStrict::value"]
@@ -19,15 +19,10 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax
 
 ```cpp
-template <
-   typename Base,
-   typename Derived
->
-
+template <typename Base, typename Derived>
 struct IsBaseOfStrict;
-template <
-   typename Base
->
+
+template <typename Base>
 struct IsBaseOfStrict<Base, Base>;
 ```
 

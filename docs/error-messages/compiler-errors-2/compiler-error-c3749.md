@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 
 'attribute': a custom attribute may not be used inside a function
 
-A custom attribute cannot be used inside a function. For more information on custom attributes, see the topic [attribute](../../windows/attribute.md).
+A custom attribute cannot be used inside a function. For more information on custom attributes, see the topic [attribute](../../windows/attributes/attribute.md).
 
 ## Example
 

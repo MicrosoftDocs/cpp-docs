@@ -97,10 +97,10 @@ int print(double dvalue, int prec)
     const int iPowZero = 6;
 
     // If precision out of range, just print the number.
-	if (prec < -6 || prec > 7)
-	{
-		return print(dvalue);
-	}
+    if (prec < -6 || prec > 7)
+    {
+        return print(dvalue);
+    }
     // Scale, truncate, then rescale.
     dvalue = floor(dvalue / rgPow10[iPowZero - prec]) *
         rgPow10[iPowZero - prec];

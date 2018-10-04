@@ -1,7 +1,7 @@
 ---
 title: "User-Defined Attributes  (C++ Component Extensions) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/02/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -35,7 +35,7 @@ Custom attributes let you extend the metadata of a managed element. For more inf
 
 ### Remarks
 
-The information and syntax presented in this topic is meant to supersede the information presented in [attribute](../windows/attribute.md).
+The information and syntax presented in this topic is meant to supersede the information presented in [attribute](attributes/attribute.md).
 
 You can define a custom attribute by defining a type and making <xref:System.Attribute> a base class for the type and optionally applying the <xref:System.AttributeUsageAttribute> attribute.
 
@@ -43,9 +43,9 @@ For example, in Microsoft Transaction Server (MTS) 1.0, behavior with respect to
 
 For more information, see,
 
-- [Attribute Targets](../windows/attribute-targets-cpp-component-extensions.md)
+- [Attribute Targets](attribute-targets-cpp-component-extensions.md)
 
-- [Attribute Parameter Types](../windows/attribute-parameter-types-cpp-component-extensions.md)
+- [Attribute Parameter Types](attribute-parameter-types-cpp-component-extensions.md)
 
 For information on signing assemblies in Visual C++, see [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
 
@@ -165,7 +165,7 @@ The `Object^` type replaces the variant data type. The following example defines
 
 Attribute arguments must be compile-time constants; in most cases, they should be constant literals.
 
-See [typeid](../windows/typeid-cpp-component-extensions.md) for information on how to return a value of System::Type from a custom attribute block.
+See [typeid](typeid-cpp-component-extensions.md) for information on how to return a value of System::Type from a custom attribute block.
 
 ```cpp
 // extending_metadata_e.cpp
@@ -204,4 +204,4 @@ ref struct B {};
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for Runtime Platforms](component-extensions-for-runtime-platforms.md)

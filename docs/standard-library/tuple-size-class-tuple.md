@@ -92,26 +92,29 @@ int main()
 {
     MyTuple c0(0, 1.5, 2, 3.7);
 
-    // display contents " 0 1 2 3"
-    cout << " " << get<0>(c0);
+    // display contents "0 1 2 3"
+    cout << get<0>(c0);
     cout << " " << get<1>(c0);
     cout << " " << get<2>(c0);
     cout << " " << get<3>(c0) << endl;
 
-    // display size " 4"
+    // display size "4"
     cout << " " << tuple_size<MyTuple>::value << endl;
 }
 ```
 
 ```Output
- 0 1.5 2 3.7
+0 1.5 2 3.7
+4
 ```
 
 ## Requirements
 
 **Header:** \<tuple>
+
 **Header:** \<array> (for array specialization)
- **Header:** \<utility> (for pair specialization)
+
+**Header:** \<utility> (for pair specialization)
 
 **Namespace:** std
 
