@@ -170,7 +170,7 @@ See [CWinApp: The Application Class](../../mfc/cwinapp-the-application-class.md)
 
 - `CWinApp`'s key overridables.
 
-The `m_hPrevInstance` data member no longer exists. For information on detecting a previous instance of `CWinApp`, see the Knowledge Base article "How To Identify a Previous Instance of an Application" (KB106385) at [http://support.microsoft.com/default.aspxscid=kb;en-us;106385](http://support.microsoft.com/default.aspxscid=kb;en-us;106385).
+The `m_hPrevInstance` data member no longer exists. For information on detecting a previous instance of `CWinApp`, see the Knowledge Base article "How To Identify a Previous Instance of an Application" (KB106385) at [http://support.microsoft.com/default.aspxscid=kb;106385](http://support.microsoft.com/default.aspxscid=kb;106385).
 
 ## Inheritance Hierarchy
 
@@ -876,7 +876,7 @@ Application initialization is conceptually divided into two sections: one-time a
 Override `InitInstance` to initialize each new instance of your application running under Windows. Typically, you override `InitInstance` to construct your main window object and set the `CWinThread::m_pMainWnd` data member to point to that window. For more information on overriding this member function, see [CWinApp: The Application Class](../../mfc/cwinapp-the-application-class.md).
 
 > [!NOTE]
-> MFC applications must be initialized as single threaded apartment (STA). If you call [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) in your `InitInstance` override, specify COINIT_APARTMENTTHREADED (rather than COINIT_MULTITHREADED). For more information, see PRB: MFC Application Stops Responding When You Initialize the Application as a Multithreaded Apartment (828643) at [http://support.microsoft.com/default.aspxscid=kb;en-us;828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643).
+> MFC applications must be initialized as single threaded apartment (STA). If you call [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) in your `InitInstance` override, specify COINIT_APARTMENTTHREADED (rather than COINIT_MULTITHREADED). For more information, see PRB: MFC Application Stops Responding When You Initialize the Application as a Multithreaded Apartment (828643) at [http://support.microsoft.com/default.aspxscid=kb;828643](http://support.microsoft.com/default.aspxscid=kb;828643).
 
 ### Example
 

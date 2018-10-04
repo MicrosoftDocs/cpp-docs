@@ -35,7 +35,7 @@ Given the possible combinations of technologies (such as using ADO components wi
 
 - [Microsoft Help and Support](https://support.microsoft.com/)
 
-- [Microsoft Data Access Technical Articles Overview](https://msdn.microsoft.com/en-us/library/ms810811.aspx)
+- [Microsoft Data Access Technical Articles Overview](https://msdn.microsoft.com/library/ms810811.aspx)
 
 ## See Also
 

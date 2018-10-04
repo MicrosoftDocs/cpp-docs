@@ -57,7 +57,7 @@ Additional improvements to diagnostics in the compiler. For more information, se
 
 **Visual Studio 2017 version 15.5**:
 
-Visual C++ runtime performance continues to improve due to better generated code quality. This means that you can simply recompile your code, and your app runs faster. Some of the compiler optimizations are brand new, such as the vectorization of conditional scalar stores, the combining of calls `sin(x)` and `cos(x)` into a new `sincos(x)`, and the elimination of redundant instructions from the SSA Optimizer. Other compiler optimizations are improvements to existing functionality such as vectorizer heuristics for conditional expressions, better loop optimizations, and float min/max codegen. The linker has a new and faster **/OPT:ICF** implementation which can result in up to 9% link time speedups, and there are other perf fixes in incremental linking. For more information, see [/OPT (Optimizations)](https://docs.microsoft.com/en-us/cpp/build/reference/opt-optimizations) and [/INCREMENTAL (Link Incrementally)](https://docs.microsoft.com/en-us/cpp/build/reference/incremental-link-incrementally).
+Visual C++ runtime performance continues to improve due to better generated code quality. This means that you can simply recompile your code, and your app runs faster. Some of the compiler optimizations are brand new, such as the vectorization of conditional scalar stores, the combining of calls `sin(x)` and `cos(x)` into a new `sincos(x)`, and the elimination of redundant instructions from the SSA Optimizer. Other compiler optimizations are improvements to existing functionality such as vectorizer heuristics for conditional expressions, better loop optimizations, and float min/max codegen. The linker has a new and faster **/OPT:ICF** implementation which can result in up to 9% link time speedups, and there are other perf fixes in incremental linking. For more information, see [/OPT (Optimizations)](build/reference/opt-optimizations.md) and [/INCREMENTAL (Link Incrementally)](build/reference/incremental-link-incrementally.md).
 
 Visual C++ supports Intel's AVX-512, including the Vector Length instructions that bring new functions in AVX-512 to 128- and 256-bit wide registers.
 
@@ -434,7 +434,7 @@ For more information, see [Boost.Test Unit Testing: Dynamic Library support and 
 
 **Visual Studio 2017 version 15.7**:
 
-[CodeLens](https://docs.microsoft.com/en-us/visualstudio/ide/find-code-changes-and-other-history-with-codelens) supported added for C++ unit test projects. For more information, see [Announcing CodeLens for C++ Unit Testing](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/announcing-codelens-for-c-unit-testing/).
+[CodeLens](/visualstudio/ide/find-code-changes-and-other-history-with-codelens) supported added for C++ unit test projects. For more information, see [Announcing CodeLens for C++ Unit Testing](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/announcing-codelens-for-c-unit-testing/).
 
 ## Visual Studio graphics diagnostics
 

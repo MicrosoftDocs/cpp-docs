@@ -28,9 +28,9 @@ Visual Studio 2017 provides support for any build system or custom build tools t
 
 - **MSBuild** is the native build system for Visual Studio. When you select **File** > **New** > **Project** from the main menu, you see many kinds of MSBuild *project templates* that get you started quickly developing different kinds of C++ applications.
 
-    ![Project Templates](media/vs2017-new-project.png "Visual Studio 2017 New Project Dialog")
+   ![Project Templates](media/vs2017-new-project.png "Visual Studio 2017 New Project Dialog")
 
-    In general, you should use these templates for new projects unless you have a specific reason to use CMake or another project system. Some projects have a *wizard* that guides you step-by-step through the process of creating a new project. For more information, see [Creating and managing MSBuild-based projects](creating-and-managing-visual-cpp-projects.md).
+   In general, you should use these templates for new projects unless you have a specific reason to use CMake or another project system. Some projects have a *wizard* that guides you step-by-step through the process of creating a new project. For more information, see [Creating and managing MSBuild-based projects](creating-and-managing-visual-cpp-projects.md).
 
 - **CMake** is a cross-platform build system that is integrated into the Visual Studio IDE when you install the Desktop development with C++ workload. For more information, see [CMake projects in Visual C++](cmake-tools-for-visual-cpp.md).
 - Any other C++ build system, including a loose collection of files, is supported via the **Open Folder** feature. You create simple JSON files to invoke your build program and configure debugging sessions. For more information, see [Open Folder projects in Visual C++](non-msbuild-projects.md).

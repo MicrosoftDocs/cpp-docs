@@ -64,7 +64,7 @@ To provide IntelliSense support for remote headers, Visual Studio automatically 
 
 To debug your code on the remote system, set a breakpoint, select the CMake target as the startup item in the toolbar menu next to the project setting, and choose **&#x23f5; Start** on the toolbar, or press F5.
 
-To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This opens or creates a launch.vs.json configuration file that contains information about your program. To specify additional arguments, add them in the `args` JSON array. For more information, see [Open Folder projects in Visual C++](https://docs.microsoft.com/en-us/cpp/ide/non-msbuild-projects).
+To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This opens or creates a launch.vs.json configuration file that contains information about your program. To specify additional arguments, add them in the `args` JSON array. For more information, see [Open Folder projects in Visual C++](../ide/non-msbuild-projects.md).
 
 ## Configure CMake settings for Linux
 
