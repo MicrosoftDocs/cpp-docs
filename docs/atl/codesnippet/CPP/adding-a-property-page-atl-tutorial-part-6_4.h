@@ -5,6 +5,7 @@ BEGIN_PROP_MAP(CPolyCtl)
    PROP_ENTRY_TYPE("FillColor", DISPID_FILLCOLOR, CLSID_StockColorPage, VT_UI4)
 #endif
    PROP_ENTRY_TYPE("Sides", 1, CLSID_PolyProp, VT_INT)
+   PROP_PAGE(CLSID_PolyProp)
    // Example entries
    // PROP_ENTRY("Property Description", dispid, clsid)
    // PROP_PAGE(CLSID_StockColorPage)
