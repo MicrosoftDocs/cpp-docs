@@ -73,7 +73,7 @@ RetVal = strrev(szString);
 
 Thus you can write, maintain, and compile a single source code file to run with routines that are specific to any of the three kinds of character sets.
 
- **END Microsoft Specific**
+**END Microsoft Specific**
 
 ## See Also
 

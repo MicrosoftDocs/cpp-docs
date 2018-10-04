@@ -1,7 +1,7 @@
 ---
 title: "RoInitializeWrapper Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/24/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::RoInitializeWrapper", "corewrappers/Microsoft::WRL::Wrappers::RoInitializeWrapper::HRESULT", "corewrappers/Microsoft::WRL::Wrappers::RoInitializeWrapper::RoInitializeWrapper", "corewrappers/Microsoft::WRL::Wrappers::RoInitializeWrapper::~RoInitializeWrapper"]
@@ -19,7 +19,7 @@ Initializes the Windows Runtime.
 ## Syntax
 
 ```cpp
-class RoInitializeWrapper
+class RoInitializeWrapper;
 ```
 
 ## Remarks

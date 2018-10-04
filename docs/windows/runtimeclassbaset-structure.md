@@ -1,7 +1,7 @@
 ---
 title: "RuntimeClassBaseT Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/24/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::RuntimeClassBaseT", "implements/Microsoft::WRL::Details::RuntimeClassBaseT::AsIID", "implements/Microsoft::WRL::Details::RuntimeClassBaseT::GetImplementedIIDS"]
@@ -19,9 +19,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax
 
 ```cpp
-template <
-   unsigned int RuntimeClassTypeT
->
+template <unsigned int RuntimeClassTypeT>
 friend struct Details::RuntimeClassBaseT;
 ```
 

@@ -40,7 +40,8 @@ void __cdecl _lock
 If the lock has already been acquired, this method acquires the lock anyway and causes an internal C run-time (CRT) error. If the method cannot acquire a lock, it exits with a fatal error and sets the error code to `_RT_LOCK`.
 
 ## Requirements
- **Source:** mlock.c
+
+**Source:** mlock.c
 
 ## See Also
 

@@ -141,7 +141,7 @@ int main()
 
     bool found = regex_match(first, last, narrowMatch, rx);
     if (found)
-		wcout << L"Regex found in abc" << endl;
+        wcout << L"Regex found in abc" << endl;
 
     // (2) with std::wstring
     // Note how wstring requires wsmatch and wregex.
@@ -159,7 +159,7 @@ int main()
 
     found = regex_match(target2.cbegin(), target2.cend(), rx2);
     if (found)
-		wcout << L"Regex found in Drizzle" << endl;
+        wcout << L"Regex found in Drizzle" << endl;
 
     // (4) with wchar_t*
     const wchar_t* target3 = L"2014-04-02";

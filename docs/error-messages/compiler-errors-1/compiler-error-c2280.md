@@ -26,18 +26,18 @@ A call to an explicitly `deleted` function causes this error. An explicitly `del
 // C2280_explicit.cpp
 // compile with: cl /c /W4 C2280_explicit.cpp
 struct A {
-	A();
-	A(int) = delete;
+    A();
+    A(int) = delete;
 };
 
 struct B {
-	A a1;
-	A a2 = A(3); // C2280, calls deleted A::A(int)
-	// To fix, remove the call to A(int)
+    A a1;
+    A a2 = A(3); // C2280, calls deleted A::A(int)
+    // To fix, remove the call to A(int)
 };
 
 void f() {
-	B b;    // calls implicit B::B(void)
+    B b;    // calls implicit B::B(void)
 }
 ```
 
@@ -49,7 +49,7 @@ An uninitialized reference type data member or `const` data member causes the co
 // C2280_uninit.cpp
 // compile with: cl /c C2280_uninit.cpp
 struct A {
-	const int i; // uninitialized const-qualified data
+    const int i; // uninitialized const-qualified data
     // members or reference type data members cause
     // the implicit default constructor to be deleted.
     // To fix, initialize the value in the declaration:
@@ -67,7 +67,7 @@ A `const` or reference type data member causes the compiler to declare a `delete
 extern int k;
 struct A {
     A();
-	int& ri = k; // a const or reference data member causes
+    int& ri = k; // a const or reference data member causes
     // implicit copy assignment operator to be deleted.
 };
 

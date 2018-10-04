@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 
 'attribute': this attribute is not allowed on 'construct'
 
-An attribute was applied to a construct for which it was not intended.  See [Attributes by Usage](../../windows/attributes-by-usage.md) for more information.
+An attribute was applied to a construct for which it was not intended.  See [Attributes by Usage](../../windows/attributes/attributes-by-usage.md) for more information.
 
 ## Example
 

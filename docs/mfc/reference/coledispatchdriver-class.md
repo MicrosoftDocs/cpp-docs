@@ -84,8 +84,8 @@ Call the `AttachDispatch` member function to attach an `IDispatch` pointer to th
 
 ```
 void AttachDispatch(
-		LPDISPATCH lpDispatch,
-		BOOL bAutoRelease = TRUE);
+    LPDISPATCH lpDispatch,
+    BOOL bAutoRelease = TRUE);
 ```
 
 ### Parameters
@@ -111,7 +111,7 @@ Constructs a `COleDispatchDriver` object.
 ```
 COleDispatchDriver();
 COleDispatchDriver(LPDISPATCH lpDispatch, BOOL bAutoRelease = TRUE);
-  COleDispatchDriver(const COleDispatchDriver& dispatchSrc);
+COleDispatchDriver(const COleDispatchDriver& dispatchSrc);
 ```
 
 ### Parameters
@@ -143,9 +143,8 @@ Creates an [IDispatch](/previous-versions/windows/desktop/automat/implementing-t
 
 ```
 BOOL CreateDispatch(
-		REFCLSID clsid,
-		COleException* pError = NULL);
-
+    REFCLSID clsid,
+    COleException* pError = NULL);
 
 BOOL CreateDispatch(
     LPCTSTR lpszProgID,
@@ -225,11 +224,11 @@ Calls the object method or property specified by *dwDispID*, in the context spec
 
 ```
 void AFX_CDECL InvokeHelper(
-		DISPID dwDispID,
-		WORD wFlags,
-		VARTYPE vtRet,
-		void* pvRet,
-		const BYTE* pbParamInfo, ...);
+    DISPID dwDispID,
+    WORD wFlags,
+    VARTYPE vtRet,
+    void* pvRet,
+    const BYTE* pbParamInfo, ...);
 ```
 
 ### Parameters

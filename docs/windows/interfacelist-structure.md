@@ -1,7 +1,7 @@
 ---
 title: "InterfaceList Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::InterfaceList"]
@@ -19,10 +19,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax
 
 ```cpp
-template <
-   typename T,
-   typename U
->
+template <typename T, typename U>
 struct InterfaceList;
 ```
 
