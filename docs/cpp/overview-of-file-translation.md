@@ -30,7 +30,7 @@ C++ programs, like C programs, consist of one or more files. Each of these files
 
 1. Code generation. This translation phase uses the tokens generated in the preprocessing phase to generate object code.
 
-    During this phase, syntactic and semantic checking of the source code is performed.
+     During this phase, syntactic and semantic checking of the source code is performed.
 
 See [Phases of Translation](../preprocessor/phases-of-translation.md) in the *Preprocessor Reference* for more information.
 
