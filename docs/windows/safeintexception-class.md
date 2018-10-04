@@ -1,12 +1,12 @@
 ---
 title: "SafeIntException Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/27/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["SafeIntException Class"]
+f1_keywords: ["SafeIntException Class", "SafeIntException", "SafeIntException.SafeIntException", "SafeIntException::SafeIntException"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["SafeIntException class"]
+helpviewer_keywords: ["SafeIntException class", "SafeIntException, constructor"]
 ms.assetid: 88bef958-1f48-4d55-ad4f-d1f9581a293a
 author: "mikeblome"
 ms.author: "mblome"
@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeIntException Class
 
-The `SafeInt` class uses **SafeIntException** to identify why a mathematical operation cannot be completed.
+The `SafeInt` class uses `SafeIntException` to identify why a mathematical operation cannot be completed.
 
 ## Syntax
 
@@ -26,16 +26,17 @@ class SafeIntException;
 
 ### Public Constructors
 
-[SafeIntException::SafeIntException](../windows/safeintexception-safeintexception.md)<br/>
-Creates a **SafeIntException** object.
+Name                                                    | Description
+------------------------------------------------------- | ------------------------------------
+[SafeIntException::SafeIntException](#safeintexception) | Creates a `SafeIntException` object.
 
 ## Remarks
 
-The [SafeInt Class](../windows/safeint-class.md) is the only class that uses the **SafeIntException** class.
+The [SafeInt class](../windows/safeint-class.md) is the only class that uses the `SafeIntException` class.
 
 ## Inheritance Hierarchy
 
-[SafeIntException Class](../windows/safeintexception-class.md)
+`SafeIntException`
 
 ## Requirements
 
@@ -43,7 +44,27 @@ The [SafeInt Class](../windows/safeint-class.md) is the only class that uses the
 
 **Namespace:** msl::utilities
 
-## See Also
+## <a name="safeintexception"></a>SafeIntException::SafeIntException
 
-[SafeInt Library](../windows/safeint-library.md)<br/>
-[SafeInt Class](../windows/safeint-class.md)
+Creates a `SafeIntException` object.
+
+```cpp
+SafeIntException();
+
+SafeIntException(
+   SafeIntError code
+);
+```
+
+### Parameters
+
+*code*<br/>
+[in] An enumerated data value that describes the error that occurred.
+
+### Remarks
+
+The possible values for *code* are defined in the file Safeint.h. For convenience, the possible values are also listed here.
+
+- `SafeIntNoError`
+- `SafeIntArithmeticOverflow`
+- `SafeIntDivideByZero`

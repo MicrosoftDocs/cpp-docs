@@ -2440,7 +2440,8 @@ unordered_multimap(
 
 template <class InputIterator>
 unordered_multimap(
-InputIterator first, InputIterator last,
+    InputIterator first,
+    InputIterator last,
     size_type Bucket_count = N0,
     const Hash& Hash = Hash(),
     const Comp& Comp = Pred(),

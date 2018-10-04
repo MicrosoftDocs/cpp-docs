@@ -21,7 +21,7 @@ Describes a stream buffer that controls the transmission of elements to and from
 ```cpp
 template <class Codecvt, class Elem = wchar_t, class Traits = std::char_traits<Elem>>
 class wbuffer_convert
- : public std::basic_streambuf<Elem, Traits>
+    : public std::basic_streambuf<Elem, Traits>
 ```
 
 ### Parameters

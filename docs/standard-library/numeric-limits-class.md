@@ -107,15 +107,15 @@ using namespace std;
 
 int main( )
 {
-   cout << "The smallest nonzero denormalized value\n for float "
-        << "objects is: " << numeric_limits<float>::denorm_min( )
-        << endl;
-   cout << "The smallest nonzero denormalized value\n for double "
-        << "objects is: " << numeric_limits<double>::denorm_min( )
-        << endl;
-   cout << "The smallest nonzero denormalized value\n for long double "
-        << "objects is: " << numeric_limits<long double>::denorm_min( )
-        << endl;
+   cout << "The smallest nonzero denormalized value" << endl
+        << "for float objects is: "
+        << numeric_limits<float>::denorm_min( ) << endl;
+   cout << "The smallest nonzero denormalized value" << endl
+        << "for double objects is: "
+        << numeric_limits<double>::denorm_min( ) << endl;
+   cout << "The smallest nonzero denormalized value" << endl
+        << "for long double objects is: "
+        << numeric_limits<long double>::denorm_min( ) << endl;
 
    // A smaller value will round to zero
    cout << numeric_limits<float>::denorm_min( )/2 <<endl;
@@ -126,11 +126,11 @@ int main( )
 
 ```Output
 The smallest nonzero denormalized value
- for float objects is: 1.4013e-045
+for float objects is: 1.4013e-045
 The smallest nonzero denormalized value
- for double objects is: 4.94066e-324
+for double objects is: 4.94066e-324
 The smallest nonzero denormalized value
- for long double objects is: 4.94066e-324
+for long double objects is: 4.94066e-324
 0
 0
 0
@@ -253,27 +253,27 @@ using namespace std;
 int main( )
 {
    cout << "The difference between 1 and the smallest "
-        << "value greater than 1\n for float objects is: "
-        << numeric_limits<float>::epsilon( )
-        << endl;
+        << "value greater than 1" << endl
+        << "for float objects is: "
+        << numeric_limits<float>::epsilon( ) << endl;
    cout << "The difference between 1 and the smallest "
-        << "value greater than 1\n for double objects is: "
-        << numeric_limits<double>::epsilon( )
-        << endl;
+        << "value greater than 1" << endl
+        << "for double objects is: "
+        << numeric_limits<double>::epsilon( ) << endl;
    cout << "The difference between 1 and the smallest "
-        << "value greater than 1\n for long double objects is: "
-        << numeric_limits<long double>::epsilon( )
-        << endl;
+        << "value greater than 1" << endl
+        << "for long double objects is: "
+        << numeric_limits<long double>::epsilon( ) << endl;
 }
 ```
 
 ```Output
 The difference between 1 and the smallest value greater than 1
- for float objects is: 1.19209e-007
+for float objects is: 1.19209e-007
 The difference between 1 and the smallest value greater than 1
- for double objects is: 2.22045e-016
+for double objects is: 2.22045e-016
 The difference between 1 and the smallest value greater than 1
- for long double objects is: 2.22045e-016
+for long double objects is: 2.22045e-016
 ```
 
 ## <a name="has_denorm"></a>  numeric_limits::has_denorm

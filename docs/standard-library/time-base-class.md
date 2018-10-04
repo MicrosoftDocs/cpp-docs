@@ -21,15 +21,15 @@ The class serves as a base class for facets of template class time_get, defining
 ```cpp
 class time_base : public locale::facet {
 public:
-    enum dateorder {no_order,
-    dmy,
- mdy,
-    ymd,
- ydm};
-    time_base(
- size_t _Refs = 0)
- ~time_base();
-
+    enum dateorder {
+        no_order,
+        dmy,
+        mdy,
+        ymd,
+        ydm
+    };
+    time_base(size_t _Refs = 0)
+    ~time_base();
 };
 ```
 

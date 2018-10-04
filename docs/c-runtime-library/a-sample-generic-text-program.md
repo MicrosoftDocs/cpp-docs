@@ -17,7 +17,7 @@ ms.workload: ["cplusplus"]
 
 The following program, GENTEXT.C, provides a more detailed illustration of the use of generic-text mappings defined in TCHAR.H:
 
-```
+```C
 // GENTEXT.C
 // use of generic-text mappings defined in TCHAR.H
 
@@ -53,12 +53,11 @@ int __cdecl _tmain(int argc, _TCHAR **argv, _TCHAR **envp)
    _tprintf(_T("'%s'\n"), _tcsrev(_tcsdup(str)));
    return 0;
 }
-
 ```
 
 If `_MBCS` has been defined, GENTEXT.C maps to the following MBCS program:
 
-```
+```C
 // crt_mbcsgtxt.c
 
 /*
@@ -96,7 +95,7 @@ int __cdecl main(int argc, char **argv, char **envp)
 
 If `_UNICODE` has been defined, GENTEXT.C maps to the following Unicode version of the program. For more information about using `wmain` in Unicode programs as a replacement for `main`, see [Using wmain](../c-language/using-wmain.md) in *C Language Reference*.
 
-```
+```C
 // crt_unicgtxt.c
 
 /*
@@ -134,7 +133,7 @@ int __cdecl wmain(int argc, wchar_t **argv, wchar_t **envp)
 
 If neither `_MBCS` nor `_UNICODE` has been defined, GENTEXT.C maps to single-byte ASCII code, as follows:
 
-```
+```C
 // crt_sbcsgtxt.c
 /*
  * Use of generic-text mappings defined in TCHAR.H
@@ -169,7 +168,7 @@ int __cdecl main(int argc, char **argv, char **envp)
 }
 ```
 
- **END Microsoft Specific**
+**END Microsoft Specific**
 
 ## See Also
 

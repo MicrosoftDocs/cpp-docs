@@ -1,7 +1,7 @@
 ---
 title: "Adding Functionality with Code Wizards (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.classes"]
@@ -15,6 +15,9 @@ ms.workload: ["cplusplus"]
 # Adding Functionality with Code Wizards (C++)
 
 Once you have created a project, you will want to change or add to that project's functionality. Such tasks include creating new classes, adding new member functions and variables, and adding Automation methods and properties. The code wizards are designed to let you do all these things.
+
+> [!WARNING]
+> Several ATL and MFC code wizards are now deprecated and will be removed in a future version of Visual Studio. These wizards are rarely used. General support for ATL and MFC is not impacted by the removal of these wizards. If you would like to share your feedback about this deprecation, please complete [this survey](https://www.surveymonkey.com/r/QDWKKCN). Your feedback matters to us.
 
 > [!NOTE]
 >  You can now add message handlers and map messages to them and override MFC virtual functions using the [Properties window](/visualstudio/ide/reference/properties-window).

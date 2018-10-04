@@ -48,7 +48,7 @@ An understanding of the fundamentals of the C++ language.
 
         1. Under **Application type**, select **Static Library (.lib)**.
 
-        1. Under **Additional Options**, uncheck the **Precompiled header** check box.
+        1. Under **Additional Options**, un-check the **Precompiled header** check box.
 
         1. Choose **OK** to create the project.
 
@@ -96,7 +96,7 @@ An understanding of the fundamentals of the C++ language.
 
         1. Under **Application type**, select **Console Application (.exe)**.
 
-        1. Under **Additional Options**, uncheck the **Precompiled header** check box.
+        1. Under **Additional Options**, un-check the **Precompiled header** check box.
 
         1. Choose **OK** to create the project.
 

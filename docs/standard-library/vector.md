@@ -31,7 +31,8 @@ class vector<bool>;
 
 template <class Allocator>
 struct hash<vector<bool, Allocator>>;
- // TEMPLATE FUNCTIONS
+
+// TEMPLATE FUNCTIONS
 template <class Type, class Allocator>
 bool operator== (
     const vector<Type, Allocator>& left,
