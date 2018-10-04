@@ -1,7 +1,7 @@
 ---
 title: "InterfaceTraits Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/21/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::InterfaceTraits", "implements/Microsoft::WRL::Details::InterfaceTraits::CanCastTo", "implements/Microsoft::WRL::Details::InterfaceTraits::CastToBase", "implements/Microsoft::WRL::Details::InterfaceTraits::CastToUnknown", "implements/Microsoft::WRL::Details::InterfaceTraits::FillArrayWithIid", "implements/Microsoft::WRL::Details::InterfaceTraits::IidCount", "implements/Microsoft::WRL::Details::InterfaceTraits::Verify"]
@@ -19,12 +19,13 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax
 
 ```cpp
-template<
-   typename I0
->
+template<typename I0>
 struct __declspec(novtable) InterfaceTraits;
+
 template<typename CloakedType>
-struct __declspec(novtable) InterfaceTraits<CloakedIid<CloakedType>>;
+struct __declspec(novtable) InterfaceTraits<
+    CloakedIid<CloakedType>
+>;
 
 template<>
 struct __declspec(novtable) InterfaceTraits<Nil>;
