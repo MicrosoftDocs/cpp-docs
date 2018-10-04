@@ -1,7 +1,7 @@
 ---
 title: "RemoveReference Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal/Microsoft::WRL::Details::RemoveReference"]
@@ -21,8 +21,10 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ```cpp
 template<class T>
 struct RemoveReference;
+
 template<class T>
 struct RemoveReference<T&>;
+
 template<class T>
 struct RemoveReference<T&&>;
 ```

@@ -1,7 +1,7 @@
 ---
 title: "HandleT Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/25/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleT", "corewrappers/Microsoft::WRL::Wrappers::HandleT::Attach", "corewrappers/Microsoft::WRL::Wrappers::HandleT::Close", "corewrappers/Microsoft::WRL::Wrappers::HandleT::Detach", "corewrappers/Microsoft::WRL::Wrappers::HandleT::Get", "corewrappers/Microsoft::WRL::Wrappers::HandleT::handle_", "corewrappers/Microsoft::WRL::Wrappers::HandleT::HandleT", "corewrappers/Microsoft::WRL::Wrappers::HandleT::InternalClose", "corewrappers/Microsoft::WRL::Wrappers::HandleT::IsValid", "corewrappers/Microsoft::WRL::Wrappers::HandleT::operator=", "corewrappers/Microsoft::WRL::Wrappers::HandleT::~HandleT"]
@@ -19,9 +19,7 @@ Represents a handle to an object.
 ## Syntax
 
 ```cpp
-template <
-   typename HandleTraits
->
+template <typename HandleTraits>
 class HandleT;
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "Mutex Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/24/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Mutex", "corewrappers/Microsoft::WRL::Wrappers::Mutex::Lock", "corewrappers/Microsoft::WRL::Wrappers::Mutex::Mutex", "corewrappers/Microsoft::WRL::Wrappers::Mutex::operator="]
@@ -19,7 +19,7 @@ Represents a synchronization object that exclusively controls a shared resource.
 ## Syntax
 
 ```cpp
-class Mutex : public HandleT<HandleTraits::MutexTraits>
+class Mutex : public HandleT<HandleTraits::MutexTraits>;
 ```
 
 ## Members
