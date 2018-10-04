@@ -1,7 +1,7 @@
 ---
 title: "IsSame Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/21/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal/Microsoft::WRL::Details::IsSame", "internal/Microsoft::WRL::Details::IsSame::value"]
@@ -19,14 +19,10 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax
 
 ```cpp
-template <
-   typename T1,
-   typename T2
->
+template <typename T1, typename T2>
 struct IsSame;
-template <
-   typename T1
->
+
+template <typename T1>
 struct IsSame<T1, T1>;
 ```
 
