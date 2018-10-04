@@ -15,6 +15,7 @@ ms.workload: ["cplusplus"]
 # if-else Statement (C++)
 
 Controls conditional branching. Statements in the *if-block* are executed only if the *if-expression* evaluates to a non-zero value (or TRUE). If the value of *expression* is nonzero, *statement1* and any other statements in the block are executed and the else-block, if present, is skipped. If the value of *expression* is zero, then the if-block is skipped and the else-block, if present, is executed. Expressions that evaluate to non-zero are
+
 - TRUE
 - a non-null pointer,
 - any non-zero arithmetic value, or
@@ -22,7 +23,7 @@ Controls conditional branching. Statements in the *if-block* are executed only i
 
 ## Syntax
 
-```
+```cpp
 if ( expression )
 {
    statement1;
@@ -70,7 +71,7 @@ using namespace std;
 class C
 {
     public:
-    void do_somthing(){}
+    void do_something(){}
 };
 void init(C){}
 bool is_true() { return true; }
@@ -78,41 +79,41 @@ int x = 10;
 
 int main()
 {
-	if (is_true())
-	{
-		cout << "b is true!\n";  // executed
-	}
-	else
-	{
-		cout << "b is false!\n";
-	}
+    if (is_true())
+    {
+        cout << "b is true!\n";  // executed
+    }
+    else
+    {
+        cout << "b is false!\n";
+    }
 
-  // no else statement
-	if (x == 10)
-	{
-		x = 0;
-	}
-	
+    // no else statement
+    if (x == 10)
+    {
+        x = 0;
+    }
 
-	C* c;
-  init(c);
-	if (c)
-	{
-		c->do_something();
-	}
-	else
-	{
-		cout << "c is null!\n";
-	}
+    C* c;
+    init(c);
+    if (c)
+    {
+        c->do_something();
+    }
+    else
+    {
+        cout << "c is null!\n";
+    }
 }
 ```
+
 ## <a name="if_with_init"></a> if statement with an initializer
 
 **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): An **if** statement may also contain an expression that declares and initializes a named variable. Use this form of the if-statement when the variable is only needed within the scope of the if-block.
 
-```cpp
 ## Example
 
+```cpp
 #include <iostream>
 #include <mutex>
 #include <map>
@@ -129,28 +130,28 @@ void unsafe_operation() {}
 int main()
 {
 
-	if (auto it = m.find(10); it != m.end())
-	{
-		cout << it->second;
-		return 0;
-	}
+    if (auto it = m.find(10); it != m.end())
+    {
+        cout << it->second;
+        return 0;
+    }
 
-	if (char buf[10]; fgets(buf, 10, stdin))
-	{
-		m[0] += buf;
-	}
+    if (char buf[10]; fgets(buf, 10, stdin))
+    {
+        m[0] += buf;
+    }
 
-	if (lock_guard<mutex> lock(mx); shared_flag)
-	{
-		unsafe_operation();
-		shared_flag = false;
-	}
+    if (lock_guard<mutex> lock(mx); shared_flag)
+    {
+        unsafe_operation();
+        shared_flag = false;
+    }
 
-	string s{ "if" };
+    string s{ "if" };
     if (auto keywords = { "if", "for", "while" }; any_of(keywords.begin(), keywords.end(), [&s](const char* kw) { return s == kw; }))
-	{
-		cout << "Error! Token must not be a keyword\n";
-	}
+    {
+        cout << "Error! Token must not be a keyword\n";
+    }
 }
 ```
 
@@ -166,18 +167,18 @@ The **else** clause of an `if...else` statement is associated with the closest p
 template <class T, class... Rest>
 void f(T&& t, Rest&&... r)
 {
-// handle t
-   do_something(t);
+    // handle t
+    do_something(t);
 
-   // handle r conditionally
-   if constexpr (sizeof...(r))
-   {
-      f(r...);
-   }
-   else
-   {
-       g(r...);
-   }
+    // handle r conditionally
+    if constexpr (sizeof...(r))
+    {
+        f(r...);
+    }
+    else
+    {
+        g(r...);
+    }
 }
 ```
 
