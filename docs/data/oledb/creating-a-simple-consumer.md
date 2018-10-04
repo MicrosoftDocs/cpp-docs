@@ -19,13 +19,13 @@ Use the ATL Project Wizard and ATL OLE DB Consumer Wizard to generate an OLE DB 
   
 1. On the **File** menu, click **New**, and then click **Project**.  
   
-    The **New Project** dialog box appears.  
+     The **New Project** dialog box appears.  
   
 1. In the Project Types pane, click the **Visual C++ Projects** folder, and then click the **Win32 Project** icon in the Templates pane. In the **Name** box, enter the name of your project, for example, **MyCons**.  
   
 1. Click **OK**.  
   
-    The Win32 Project Wizard appears.  
+     The Win32 Project Wizard appears.  
   
 1. On the **Application Settings** page, select **Console application**, and then select **Add support for ATL**.  
   
@@ -39,15 +39,15 @@ Next, use the ATL OLE DB Consumer Wizard to add an OLE DB consumer object.
   
 1. On the shortcut menu, click **Add**, and then click **Add Class**.  
   
-    The **Add Class** dialog box appears.  
+     The **Add Class** dialog box appears.  
   
 1. In the Categories pane, click **Visual C++**, click the **ATL OLE DB Consumer** icon in the Templates pane, and then click **Open**.  
   
-    The ATL OLE DB Consumer Wizard appears.  
+     The ATL OLE DB Consumer Wizard appears.  
   
 1. Click the **Data Source** button.  
   
-    The **Data Link Properties** dialog box appears.  
+     The **Data Link Properties** dialog box appears.  
   
 1. In the **Data Link Properties** dialog box, do the following:  
   
