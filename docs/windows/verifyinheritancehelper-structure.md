@@ -1,7 +1,7 @@
 ---
 title: "VerifyInheritanceHelper Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/24/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::VerifyInheritanceHelper", "implements/Microsoft::WRL::Details::VerifyInheritanceHelper::Verify"]
@@ -19,14 +19,10 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax
 
 ```cpp
-template <
-   typename I,
-   typename Base
->
+template <typename I, typename Base>
 struct VerifyInheritanceHelper;
-template <
-   typename I
->
+
+template <typename I>
 struct VerifyInheritanceHelper<I, Nil>;
 ```
 

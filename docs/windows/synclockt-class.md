@@ -1,7 +1,7 @@
 ---
 title: "SyncLockT Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/26/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT", "corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::IsLocked", "corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::sync_", "corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::SyncLockT", "corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::~SyncLockT", "corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::Unlock"]
@@ -19,9 +19,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax
 
 ```cpp
-template <
-   typename SyncTraits
->
+template <typename SyncTraits>
 class SyncLockT;
 ```
 
