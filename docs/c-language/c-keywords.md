@@ -36,15 +36,15 @@ The following keywords and special identifiers are recognized by the Microsoft C
 
 |||||
 |-|-|-|-|
-|**__asm**|**dllimport**2|**__int8**|**naked**2|
-|**__based**1|**__except**|**__int16**|**__stdcall**|
-|**__cdecl**|**__fastcall**|**__int32**|**thread**2|
+|**__asm**|**dllimport**<sup>2</sup>|**__int8**|**naked**<sup>2</sup>|
+|**__based**<sup>1</sup>|**__except**|**__int16**|**__stdcall**|
+|**__cdecl**|**__fastcall**|**__int32**|**thread**<sup>2</sup>|
 |**__declspec**|**__finally**|**__int64**|**__try**|
-|**dllexport**2|**__inline**|**__leave**||
+|**dllexport**<sup>2</sup>|**__inline**|**__leave**||
 
-1. The **__based** keyword has limited uses for 32-bit and 64-bit target compilations.
+<sup>1</sup> The **__based** keyword has limited uses for 32-bit and 64-bit target compilations.
 
-1. These are special identifiers when used with **__declspec**; their use in other contexts is not restricted.
+<sup>2</sup> These are special identifiers when used with **__declspec**; their use in other contexts is not restricted.
 
 Microsoft extensions are enabled by default. To ensure that your programs are fully portable, you can disable Microsoft extensions by specifying the /Za option (compile for ANSI compatibility) during compilation. When you do this, Microsoft-specific keywords are disabled.
 
