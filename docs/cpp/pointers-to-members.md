@@ -42,7 +42,7 @@ Declarations of pointers to members are special cases of pointer declarations.  
   - The qualified name of the class.
   - The `::` operator.
   - The name of a nonstatic member of the class of the appropriate type.
-  -  As always, multiple declarators (and any associated initializers) are allowed in a single declaration.
+  - As always, multiple declarators (and any associated initializers) are allowed in a single declaration.
 
 A pointer to a member of a class differs from a normal pointer because it has type information for the type of the member and for the class to which the member belongs. A normal pointer identifies (has the address of) only a single object in memory. A pointer to a member of a class identifies that member in any instance of the class. The following example declares a class, `Window`, and some pointers to member data.
 

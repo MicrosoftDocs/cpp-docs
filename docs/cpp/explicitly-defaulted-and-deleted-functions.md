@@ -39,8 +39,8 @@ This is convenient for simple types, but complex types often define one or more 
 > [!NOTE]
 >  Additionally, the C++11 standard specifies the following additional rules:
 >
->  -   If a copy constructor or destructor is explicitly declared, then automatic generation of the copy-assignment operator is deprecated.
-> -   If a copy-assignment operator or destructor is explicitly declared, then automatic generation of the copy constructor is deprecated.
+> - If a copy constructor or destructor is explicitly declared, then automatic generation of the copy-assignment operator is deprecated.
+> - If a copy-assignment operator or destructor is explicitly declared, then automatic generation of the copy constructor is deprecated.
 >
 >  In both cases, Visual Studio continues to automatically generate the necessary functions implicitly, and does not emit a warning.
 

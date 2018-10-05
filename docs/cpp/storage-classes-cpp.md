@@ -206,13 +206,13 @@ Things to note about the `thread_local` specifier:
 
 - Dynamically initialized thread-local variables in DLLs may not be correctly initialized on all calling threads. For more information, see [thread](thread.md).
 
--  The `thread_local` specifier may be combined with **static** or **extern**.
+- The `thread_local` specifier may be combined with **static** or **extern**.
 
--  You can apply `thread_local` only to data declarations and definitions; `thread_local` cannot be used on function declarations or definitions.
+- You can apply `thread_local` only to data declarations and definitions; `thread_local` cannot be used on function declarations or definitions.
 
--  You can specify `thread_local` only on data items with static storage duration. This includes global data objects (both **static** and **extern**), local static objects, and static data members of classes. Any local variable declared `thread_local` is implicitly static if no other storage class is provided; in other words, at block scope `thread_local` is equivalent to `thread_local static`.
+- You can specify `thread_local` only on data items with static storage duration. This includes global data objects (both **static** and **extern**), local static objects, and static data members of classes. Any local variable declared `thread_local` is implicitly static if no other storage class is provided; in other words, at block scope `thread_local` is equivalent to `thread_local static`.
 
--  You must specify `thread_local` for both the declaration and the definition of a thread local object, whether the declaration and definition occur in the same file or separate files.
+- You must specify `thread_local` for both the declaration and the definition of a thread local object, whether the declaration and definition occur in the same file or separate files.
 
 On Windows, `thread_local` is functionally equivalent to  [__declspec(thread)](../cpp/thread.md) except that **__declspec(thread)** can be applied to a type definition and is valid in C code. Whenever possible, use `thread_local` because it is part of the C++ standard and is therefore more portable.
 
