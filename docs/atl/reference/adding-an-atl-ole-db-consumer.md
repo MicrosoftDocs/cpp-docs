@@ -24,7 +24,7 @@ Use this wizard to add an ATL OLE DB consumer to a project. An ATL OLE DB consum
 
 1. In the Visual C++ folder, double-click the **ATL OLE DB Consumer** icon or select it and click **Open**.
 
-    The ATL OLE DB Consumer Wizard opens.
+   The ATL OLE DB Consumer Wizard opens.
 
 1. Define settings as described in [ATL OLE DB Consumer Wizard](../../atl/reference/atl-ole-db-consumer-wizard.md).
 
