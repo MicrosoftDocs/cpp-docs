@@ -47,15 +47,15 @@ This is the standard form for a read-only collection interface designed with Aut
 
 1. Collection interfaces are usually dual because Automation clients accesses the `_NewEnum` property via `IDispatch::Invoke`. However, Automation clients can access the remaining methods via the vtable, so dual interfaces are preferable to dispinterfaces.
 
-2. If a dual interface or dispinterface will not be extended at run time (that is, you won't provide extra methods or properties via `IDispatch::Invoke`), you should apply the **nonextensible** attribute to your definition. This attribute enables Automation clients to perform full code verification at compile time. In this case, the interface should not be extended.
+1. If a dual interface or dispinterface will not be extended at run time (that is, you won't provide extra methods or properties via `IDispatch::Invoke`), you should apply the **nonextensible** attribute to your definition. This attribute enables Automation clients to perform full code verification at compile time. In this case, the interface should not be extended.
 
-3. The correct DISPID is important if you want Automation clients to be able to use this property. (Note that there is only one underscore in DISPID_NEWENUM.)
+1. The correct DISPID is important if you want Automation clients to be able to use this property. (Note that there is only one underscore in DISPID_NEWENUM.)
 
-4. You can supply any value as the DISPID of the `Item` property. However, `Item` typically uses DISPID_VALUE to make it the default property of the collection. This allows Automation clients to refer to the property without naming it explicitly.
+1. You can supply any value as the DISPID of the `Item` property. However, `Item` typically uses DISPID_VALUE to make it the default property of the collection. This allows Automation clients to refer to the property without naming it explicitly.
 
-5. The data type used for the return value of the `Item` property is the type of the item stored in the collection as far as COM clients are concerned. The interface returns strings, so you should use the standard COM string type, BSTR. You can store the data in a different format internally as you'll see shortly.
+1. The data type used for the return value of the `Item` property is the type of the item stored in the collection as far as COM clients are concerned. The interface returns strings, so you should use the standard COM string type, BSTR. You can store the data in a different format internally as you'll see shortly.
 
-6. The value used for the DISPID of the `Count` property is completely arbitrary. There's no standard DISPID for this property.
+1. The value used for the DISPID of the `Count` property is completely arbitrary. There's no standard DISPID for this property.
 
 ##  <a name="vcconstorage_and_exposure_typedefs"></a> Creating Typedefs for Storage and Exposure
 
@@ -104,4 +104,3 @@ Now, you can test the code with the client of your choice.
 [Collections and Enumerators](../atl/atl-collections-and-enumerators.md)<br/>
 [ATLCollections Sample](../visual-cpp-samples.md)<br/>
 [ATL Copy Policy Classes](../atl/atl-copy-policy-classes.md)
-

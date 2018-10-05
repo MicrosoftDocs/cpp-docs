@@ -25,16 +25,16 @@ You can use one of the ATL code wizards to add an object or a control to your AT
 > [!NOTE]
 > Before adding an ATL object to your project, you should review the details and requirements for the object in its related Help topics.
 
-### To add an object or a control using the ATL Control Wizard
+## To add an object or a control using the ATL Control Wizard
 
-1. In Solution Explorer, right-click the project node and click **Add** from the shortcut menu. Click **Add Class**.
+1. In **Solution Explorer**, right-click the project node and click **Add** from the shortcut menu. Click **Add Class**.
 
    The [Add Class](../../ide/add-class-dialog-box.md) dialog box appears.
 
-2. With the ATL folder selected in the Categories pane, select an object to insert from the Templates pane. Click **Open**. The code wizard for the selected object appears.
+1. With the **ATL** folder selected in the **Categories** pane, select an object to insert from the **Templates** pane. Click **Open**. The code wizard for the selected object appears.
 
    > [!NOTE]
-   >  If you want to add an ATL object to an MFC project, you must add ATL support to the existing project. You can do this by following the instructions in [Adding ATL Support to Your MFC Project](../../mfc/reference/adding-atl-support-to-your-mfc-project.md).
+   > If you want to add an ATL object to an MFC project, you must add ATL support to the existing project. You can do this by following the instructions in [Adding ATL Support to Your MFC Project](../../mfc/reference/adding-atl-support-to-your-mfc-project.md).
 
    Alternately, if you attempt to add an ATL object to your MFC project without previously adding ATL support, Visual Studio prompts you to specify whether you want ATL support added to your project. Click **Yes** to add ATL support to the project and open the selected ATL wizard.
 
@@ -46,4 +46,3 @@ You can use one of the ATL code wizards to add an object or a control to your AT
 [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Programming with ATL and C Run-Time Code](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [Default ATL Project Configurations](../../atl/reference/default-atl-project-configurations.md)
-
