@@ -19,7 +19,7 @@ Try out your new control to see how it works now.
 
 1. Rebuild the project and open it in **Test Container**. See [Testing Properties and Events with Test Container](../mfc/testing-properties-and-events-with-test-container.md) for information on how to access **Test Container**.
 
-    Resize the control to show all of the buttons you added.
+   Resize the control to show all of the buttons you added.
 
 1. Examine the two buttons that you inserted by altering the HTML. Each button bears the label you identified in [Modifying the ATL DHTML Control](../atl/modifying-the-atl-dhtml-control.md): **Refresh** and **HelloHTML**.
 
