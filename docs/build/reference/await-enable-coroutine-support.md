@@ -30,9 +30,9 @@ The **/await** option is available beginning in Visual Studio 2015.
 
 1. Open your project's **Property Pages** dialog box.
 
-2. Under **Configuration Properties**, expand the **C/C++** folder and choose the **Command Line** property page.
+1. Under **Configuration Properties**, expand the **C/C++** folder and choose the **Command Line** property page.
 
-3. Enter the **/await** compiler option in the **Additional Options** box. Choose **OK** or **Apply** to save your changes.
+1. Enter the **/await** compiler option in the **Additional Options** box. Choose **OK** or **Apply** to save your changes.
 
 ### To set this compiler option programmatically
 

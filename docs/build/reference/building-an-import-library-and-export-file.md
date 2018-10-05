@@ -22,9 +22,9 @@ When /DEF is specified, LIB creates the output files from export specifications 
 
 1. A **__declspec(dllexport)** definition in one of the *objfiles* or *libraries*
 
-2. A specification of /EXPORT:*name* on the LIB command line
+1. A specification of /EXPORT:*name* on the LIB command line
 
-3. A definition in an **EXPORTS** statement in a *deffile*
+1. A definition in an **EXPORTS** statement in a *deffile*
 
 These are the same methods you use to specify exports when linking an exporting program. A program can use more than one method. You can specify parts of the LIB command (such as multiple *objfiles* or /EXPORT specifications) in a command file in the LIB command, just as you can in a LINK command.
 

@@ -144,11 +144,11 @@ Initialization is performed exactly once, before argument processing begins:
 
 1. The Next Core Register Number (NCRN) is set to r0.
 
-2. The VFP registers are marked as unallocated.
+1. The VFP registers are marked as unallocated.
 
-3. The Next Stacked Argument Address (NSAA) is set to the current SP.
+1. The Next Stacked Argument Address (NSAA) is set to the current SP.
 
-4. If a function that returns a result in memory is called, then the address for the result is placed in r0 and the NCRN is set to r1.
+1. If a function that returns a result in memory is called, then the address for the result is placed in r0 and the NCRN is set to r1.
 
 ### Stage B: Pre-padding and extension of arguments
 
@@ -156,9 +156,9 @@ For each argument in the list, the first matching rule from the following list i
 
 1. If the argument is a composite type whose size cannot be statically determined by both the caller and the callee, the argument is copied to memory and replaced by a pointer to the copy.
 
-2. If the argument is a byte or 16-bit half-word, then it is zero-extended or sign-extended to a 32-bit full word and treated as a 4-byte argument.
+1. If the argument is a byte or 16-bit half-word, then it is zero-extended or sign-extended to a 32-bit full word and treated as a 4-byte argument.
 
-3. If the argument is a composite type, its size is rounded up to the nearest multiple of 4.
+1. If the argument is a composite type, its size is rounded up to the nearest multiple of 4.
 
 ### Stage C: Assignment of arguments to registers and stack
 
@@ -166,17 +166,17 @@ For each argument in the list, the following rules are applied in turn until the
 
 1. If the argument is a VFP type and there are enough consecutive unallocated VFP registers of the appropriate type, then the argument is allocated to the lowest-numbered sequence of such registers.
 
-2. If the argument is a VFP type, all remaining unallocated registers are marked as unavailable. The NSAA is adjusted upwards until it is correctly aligned for the argument type and the argument is copied to the stack at the adjusted NSAA. The NSAA is then incremented by the size of the argument.
+1. If the argument is a VFP type, all remaining unallocated registers are marked as unavailable. The NSAA is adjusted upwards until it is correctly aligned for the argument type and the argument is copied to the stack at the adjusted NSAA. The NSAA is then incremented by the size of the argument.
 
-3. If the argument requires 8-byte alignment, the NCRN is rounded up to the next even register number.
+1. If the argument requires 8-byte alignment, the NCRN is rounded up to the next even register number.
 
-4. If the size of the argument in 32-bit words is not more than r4 minus NCRN, the argument is copied into core registers, starting at the NCRN, with the least significant bits occupying the lower-numbered registers. The NCRN is incremented by the number of registers used.
+1. If the size of the argument in 32-bit words is not more than r4 minus NCRN, the argument is copied into core registers, starting at the NCRN, with the least significant bits occupying the lower-numbered registers. The NCRN is incremented by the number of registers used.
 
-5. If the NCRN is less than r4 and the NSAA is equal to the SP, the argument is split between core registers and the stack. The first part of the argument is copied into the core registers, starting at the NCRN, up to and including r3. The remainder of the argument is copied onto the stack, starting at the NSAA. The NCRN is set to r4 and the NSAA is incremented by the size of the argument minus the amount passed in registers.
+1. If the NCRN is less than r4 and the NSAA is equal to the SP, the argument is split between core registers and the stack. The first part of the argument is copied into the core registers, starting at the NCRN, up to and including r3. The remainder of the argument is copied onto the stack, starting at the NSAA. The NCRN is set to r4 and the NSAA is incremented by the size of the argument minus the amount passed in registers.
 
-6. If the argument requires 8-byte alignment, the NSAA is rounded up to the next 8-byte aligned address.
+1. If the argument requires 8-byte alignment, the NSAA is rounded up to the next 8-byte aligned address.
 
-7. The argument is copied into memory at the NSAA. The NSAA is incremented by the size of the argument.
+1. The argument is copied into memory at the NSAA. The NSAA is incremented by the size of the argument.
 
 The VFP registers are not used for variadic functions, and Stage C rules 1 and 2 are ignored. This means that a variadic function can begin with an optional push {r0-r3} to prepend the register arguments to any additional arguments passed by the caller, and then access the entire argument list directly from the stack.
 
