@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 
 The following procedure shows how to create a `CTime` object and initialize it with the current time.
 
-## To get the current time
+### To get the current time
 
 1. Allocate a `CTime` object, as follows:
 
