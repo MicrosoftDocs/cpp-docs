@@ -20,14 +20,14 @@ The **try-except** statement is a Microsoft extension to the C and C++ languages
 
 ## Syntax
 
-> **__try** 
-> {
->    // guarded code
-> }
-> **__except** ( *expression* )
-> {
->    // exception handler code
-> }
+> **__try** <br/>
+> {<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp;// guarded code<br/>
+> }<br/>
+> **__except** ( *expression* )<br/>
+> {<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp;// exception handler code<br/>
+> }<br/>
 
 ## Remarks
 
