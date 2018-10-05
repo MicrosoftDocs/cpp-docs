@@ -1,7 +1,7 @@
 ---
 title: "try-except Statement | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/05/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
 f1_keywords: ["_abnormal_termination_cpp", "_exception_code_cpp", "EXCEPTION_CONTINUE_SEARCH", "_exception_info", "__except", "EXCEPTION_CONTINUE_EXECUTION", "_exception_code", "__except_cpp", "_exception_info_cpp", "EXCEPTION_EXECUTE_HANDLER", "_abnormal_termination"]
@@ -59,8 +59,6 @@ Because the **__except** expression is evaluated as a C expression, it is limite
 Each application can have its own exception handler.
 
 It is not valid to jump into a **__try** statement, but valid to jump out of one. The exception handler is not called if a process is terminated in the middle of executing a **try-except** statement.
-
-For more information, see Knowledge Base article Q315937 : HOW TO: Trap Stack Overflow in a Visual C++ Application.
 
 ### The __leave Keyword
 
