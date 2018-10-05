@@ -21,7 +21,7 @@ Use this wizard to add an ATL OLE DB provider to a project. An ATL OLE DB provid
 
 1. In the **Visual C++** folder, double-click the **ATL OLE DB Provider** icon or select it and click **Open**.
 
-    The ATL OLE DB Provider Wizard opens.
+   The ATL OLE DB Provider Wizard opens.
 
 1. Define settings as described in [ATL OLE DB Provider Wizard](../../atl/reference/atl-ole-db-provider-wizard.md).
 
