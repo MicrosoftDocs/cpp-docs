@@ -58,7 +58,7 @@ The above steps provide an example of using a technique known as FLUSH+RELOAD in
 
 ## What software scenarios can be impacted?
 
-Developing secure software using a process like the [Security Development Lifecycle](https://www.microsoft.com/en-us/sdl/) (SDL) typically requires developers to identify the trust boundaries that exist in their application. A trust boundary exists in places where an application may interact with data provided by a less-trusted context, such as another process on the system or a non-administrative user mode process in the case of a kernel-mode device driver. The new class of vulnerabilities involving speculative execution side channels is relevant to many of the trust boundaries in existing software security models that isolate code and data on a device.
+Developing secure software using a process like the [Security Development Lifecycle](https://www.microsoft.com/sdl/) (SDL) typically requires developers to identify the trust boundaries that exist in their application. A trust boundary exists in places where an application may interact with data provided by a less-trusted context, such as another process on the system or a non-administrative user mode process in the case of a kernel-mode device driver. The new class of vulnerabilities involving speculative execution side channels is relevant to many of the trust boundaries in existing software security models that isolate code and data on a device.
 
 The following table provides a summary of the software security models where developers may need to be concerned about these vulnerabilities occurring:
 
@@ -326,7 +326,7 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 
 ### Speculation barrier via compiler-time instrumentation
 
-The Visual C++ compiler in Visual Studio 2017 (starting with version 15.5.5) includes support for the `/Qspectre` switch which automatically inserts a speculation barrier for a limited set of potentially vulnerable coding patterns related to CVE-2017-5753. The documentation for the [/Qspectre](https://docs.microsoft.com/en-us/cpp/build/reference/qspectre) flag provides more information on its effects and usage. It is important to note that this flag does not cover all of the potentially vulnerable coding patterns and as such developers should not rely on it as a comprehensive mitigation for this class of vulnerabilities.
+The Visual C++ compiler in Visual Studio 2017 (starting with version 15.5.5) includes support for the `/Qspectre` switch which automatically inserts a speculation barrier for a limited set of potentially vulnerable coding patterns related to CVE-2017-5753. The documentation for the [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) flag provides more information on its effects and usage. It is important to note that this flag does not cover all of the potentially vulnerable coding patterns and as such developers should not rely on it as a comprehensive mitigation for this class of vulnerabilities.
 
 ### Masking array indices
 

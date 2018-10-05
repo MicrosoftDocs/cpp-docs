@@ -47,4 +47,4 @@ See the examples in [C Runtime Error R6035](../../error-messages/tool-errors/c-r
 
 ## See also
 
-[Microsoft Security Response Center](https://www.microsoft.com/en-us/msrc?rtc=1)
+[Microsoft Security Response Center](https://www.microsoft.com/msrc?rtc=1)

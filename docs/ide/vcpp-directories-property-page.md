@@ -58,11 +58,13 @@ Note: The list is populated as you type. Don't press **Enter**.
 
 For more information about macros and why you should use them instead of hard-coded paths whenever possible, see [Working with Project Properties](../ide/working-with-project-properties.md#bkmkPropertiesVersusMacros).
 
-For a list of commonly used macros, see [Common Macros for Build Commands and Properties](https://docs.microsoft.com/en-us/cpp/ide/common-macros-for-build-commands-and-properties).
+For a list of commonly used macros, see [Common Macros for Build Commands and Properties](https://docs.microsoft.com/cpp/ide/common-macros-for-build-commands-and-properties).
 
 You can define your own macros in two ways:
--	Set environment variables in a developer command prompt. All environment variables are treated as MSBuild properties/macros.
--	Define user macros in a .props file. For more information, see [Property page macros](working-with-project-properties.md#bkmkPropertiesVersusMacros).
+
+- Set environment variables in a developer command prompt. All environment variables are treated as MSBuild properties/macros.
+
+- Define user macros in a .props file. For more information, see [Property page macros](working-with-project-properties.md#bkmkPropertiesVersusMacros).
 
 For more information, see these blog posts: [VC++ Directories](http://blogs.msdn.com/b/vsproject/archive/2009/07/07/vc-directories.aspx), [Inherited Properties and Property Sheets](http://blogs.msdn.com/b/vsproject/archive/2009/06/23/inherited-properties-and-property-sheets.aspx), and [Visual Studio 2010 C++ Project Upgrade Guide](http://blogs.msdn.com/b/vcblog/archive/2010/03/02/visual-studio-2010-c-project-upgrade-guide.aspx).
 

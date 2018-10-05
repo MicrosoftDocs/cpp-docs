@@ -326,35 +326,38 @@ For more information, see [generate_n](../standard-library/algorithm-functions.m
 
 ```cpp
     int y = 32;
-	auto answer = [y]() constexpr
-	{
-		int x = 10;
-		return y + x;
-	};
+    auto answer = [y]() constexpr
+    {
+        int x = 10;
+        return y + x;
+    };
 
     constexpr int Increment(int n)
     {
-	    return [n] { return n + 1; }();
+        return [n] { return n + 1; }();
     }
 ```
-A lambda is implicitly `constexpr` if its result satisfies the requirements of a `constexpr` function:
-```cpp
-	auto answer = [](int n)
-	{
-		return 32 + n;
-	};
 
-	constexpr int response = answer(10);
+A lambda is implicitly `constexpr` if its result satisfies the requirements of a `constexpr` function:
+
+```cpp
+    auto answer = [](int n)
+    {
+        return 32 + n;
+    };
+
+    constexpr int response = answer(10);
 ```
+
 If a lambda is implicitly or explicitly `constexpr`, conversion to a function pointer produces a `constexpr` function:
 
 ```cpp
-	auto Increment = [](int n)
-	{
-		return n + 1;
-	};
+    auto Increment = [](int n)
+    {
+        return n + 1;
+    };
 
-	constexpr int(*inc)(int) = Increment;
+    constexpr int(*inc)(int) = Increment;
 ```
 
 ## Microsoft-Specific
