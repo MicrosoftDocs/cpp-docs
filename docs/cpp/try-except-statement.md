@@ -62,7 +62,7 @@ It is not valid to jump into a **__try** statement, but valid to jump out of one
 
 For more information, see Knowledge Base article Q315937 : HOW TO: Trap Stack Overflow in a Visual C++ Application.
 
-## The __leave Keyword
+### The __leave Keyword
 
 The **__leave** keyword is valid only within the guarded section of a **try-except** statement, and its effect is to jump to the end of the guarded section. Execution continues at the first statement after the exception handler.
 
@@ -147,7 +147,7 @@ int main()
 }
 ```
 
-## Output
+### Output
 
 ```Output
 hello
