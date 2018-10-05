@@ -22,23 +22,23 @@ Use the following process to determine if one function template candidate is mor
 
 1. Consider two function templates, T1 and T2.
 
-2. Replace the parameters in T1 with a hypothetical unique type X.
+1. Replace the parameters in T1 with a hypothetical unique type X.
 
-3. With the parameter list in T1, see if T2 is a valid template for that parameter list. Ignore any implicit conversions.
+1. With the parameter list in T1, see if T2 is a valid template for that parameter list. Ignore any implicit conversions.
 
-4. Repeat the same process with T1 and T2 reversed.
+1. Repeat the same process with T1 and T2 reversed.
 
-5. If one template is a valid template argument list for the other template, but the converse is not true, then that template is considered to be less specialized than the other template. If both templates using the previous step form valid arguments for each other, then they are considered to be equally specialized, and an ambiguous call results when you attempt to use them.
+1. If one template is a valid template argument list for the other template, but the converse is not true, then that template is considered to be less specialized than the other template. If both templates using the previous step form valid arguments for each other, then they are considered to be equally specialized, and an ambiguous call results when you attempt to use them.
 
-6. Using these rules:
+1. Using these rules:
 
-     1. A template specialization for a specific type is more specialized than one taking a generic type argument.
+   1. A template specialization for a specific type is more specialized than one taking a generic type argument.
 
-     2. A template taking only __T\*__ is more specialized than one taking only __T__, because a hypothetical type __X\*__ is a valid argument for a __T__ template argument, but __X__ is not a valid argument for a __T\*__ template argument.
+   1. A template taking only __T\*__ is more specialized than one taking only __T__, because a hypothetical type __X\*__ is a valid argument for a __T__ template argument, but __X__ is not a valid argument for a __T\*__ template argument.
 
-     3. __const T__ is more specialized than __T__, because __const X__ is a valid argument for a __T__ template argument, but __X__ is not a valid argument for a __const T__ template argument.
+   1. __const T__ is more specialized than __T__, because __const X__ is a valid argument for a __T__ template argument, but __X__ is not a valid argument for a __const T__ template argument.
 
-     4. __const T\*__ is more specialized than __T\*__, because __const X\*__ is a valid argument for a __T\*__ template argument, but __X\*__ is not a valid argument for a __const T\*__ template argument.
+   1. __const T\*__ is more specialized than __T\*__, because __const X\*__ is a valid argument for a __T\*__ template argument, but __X\*__ is not a valid argument for a __const T\*__ template argument.
 
 ## Example
 

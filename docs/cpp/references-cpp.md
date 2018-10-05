@@ -17,41 +17,35 @@ A reference, like a pointer, stores the address of an object that is located els
 
 References may be declared using the following syntax:
 
-```
-[storage-class-specifiers] [cv-qualifiers] type-specifiers 
-[ms-modifier] declarator [= expression];
-```
+> \[*storage-class-specifiers*] \[*cv-qualifiers*] *type-specifiers* \[*ms-modifier*] *declarator* \[**=** *expression*]**;**
 
 Any valid declarator specifying a reference may be used. Unless the reference is a reference to function or array type, the following simplified syntax applies:
 
-```
-[storage-class-specifiers] [cv-qualifiers] type-specifiers [& or &&] 
-[cv-qualifiers] identifier [= expression];
-```
+> \[*storage-class-specifiers*] \[*cv-qualifiers*] *type-specifiers* \[**&** or **&&**] \[*cv-qualifiers*] *identifier* \[**=** *expression*]**;**
 
 References are declared using the following sequence:
 
 1. The declaration specifiers:
 
-- An optional storage class specifier.
+   - An optional storage class specifier.
 
-- Optional **const** and/or **volatile** qualifiers.
+   - Optional **const** and/or **volatile** qualifiers.
 
-- The type specifier: the name of a type.
+   - The type specifier: the name of a type.
 
-- 2. The declarator:
+1. The declarator:
 
-- An optional Microsoft specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).
+   - An optional Microsoft specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).
 
-- The & operator or && operator.
+   - The **&** operator or **&&** operator.
 
-- Optional **const** and/or **volatile** qualifers.
+   - Optional **const** and/or **volatile** qualifers.
 
-- The identifier.
+   - The identifier.
 
-3. An optional initializer.
+1. An optional initializer.
 
-The more complex declarator forms for pointers to arrays and functions also apply to references to arrays and functions, see [pointers](../cpp/pointers-cpp.md).
+The more complex declarator forms for pointers to arrays and functions also apply to references to arrays and functions. For more information, see [pointers](../cpp/pointers-cpp.md).
 
 Multiple declarators and initializers may appear in a comma-separated list following a single declaration specifier. For example:
 
@@ -68,7 +62,7 @@ int &ref, *ptr, k;
 
 A reference holds the address of an object, but behaves syntactically like an object.
 
-In the following program, notice that the name of the object, `Today`, and the reference to the object, `TodayRef`, can be used identically in programs:
+In the following program, notice that the name of the object, `s`, and the reference to the object, `SRef`, can be used identically in programs:
 
 ## Example
 
@@ -105,4 +99,3 @@ int main() {
 [Reference-Type Function Arguments](../cpp/reference-type-function-arguments.md)<br/>
 [Reference-Type Function Returns](../cpp/reference-type-function-returns.md)<br/>
 [References to Pointers](../cpp/references-to-pointers.md)
-
