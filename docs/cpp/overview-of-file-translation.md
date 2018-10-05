@@ -19,7 +19,7 @@ C++ programs, like C programs, consist of one or more files. Each of these files
 
 1. Preprocessing. This translation phase brings in ancillary source files referenced by `#include` directives, handles "stringizing" and "charizing" directives, and performs token pasting and macro expansion (see [Preprocessor Directives](../preprocessor/preprocessor-directives.md) in the *Preprocessor Reference* for more information). The result of the preprocessing phase is a sequence of tokens that, taken together, define a "translation unit."
 
-     Preprocessor directives always begin with the number-sign (**#**) character (that is, the first nonwhite-space character on the line must be a number sign). Only one preprocessor directive can appear on a given line. For example:
+   Preprocessor directives always begin with the number-sign (**#**) character (that is, the first nonwhite-space character on the line must be a number sign). Only one preprocessor directive can appear on a given line. For example:
 
     ```cpp
     #include <iostream>  // Include text of iostream in
@@ -30,7 +30,7 @@ C++ programs, like C programs, consist of one or more files. Each of these files
 
 1. Code generation. This translation phase uses the tokens generated in the preprocessing phase to generate object code.
 
-     During this phase, syntactic and semantic checking of the source code is performed.
+   During this phase, syntactic and semantic checking of the source code is performed.
 
 See [Phases of Translation](../preprocessor/phases-of-translation.md) in the *Preprocessor Reference* for more information.
 
