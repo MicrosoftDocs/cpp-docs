@@ -158,37 +158,37 @@ Displays bitmaps that have transparent or semitransparent pixels.
 
 ```
 BOOL AlphaBlend(
-HDC hDestDC,
-int xDest,
-int yDest,
-BYTE bSrcAlpha = 0xff,
-BYTE bBlendOp = AC_SRC_OVER) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    BYTE bSrcAlpha = 0xff,
+    BYTE bBlendOp = AC_SRC_OVER) const throw();
 
 BOOL AlphaBlend(
-HDC hDestDC,
-const POINT& pointDest,
-BYTE bSrcAlpha = 0xff,
-BYTE bBlendOp = AC_SRC_OVER) const throw();
+    HDC hDestDC,
+    const POINT& pointDest,
+    BYTE bSrcAlpha = 0xff,
+    BYTE bBlendOp = AC_SRC_OVER) const throw();
 
 BOOL AlphaBlend(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-int xSrc,
-int ySrc,
-int nSrcWidth,
-int nSrcHeight,
-BYTE bSrcAlpha = 0xff,
-BYTE bBlendOp = AC_SRC_OVER);
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    int xSrc,
+    int ySrc,
+    int nSrcWidth,
+    int nSrcHeight,
+    BYTE bSrcAlpha = 0xff,
+    BYTE bBlendOp = AC_SRC_OVER);
 
 BOOL AlphaBlend(
-HDC hDestDC,
-const RECT& rectDest,
-const RECT& rectSrc,
-BYTE bSrcAlpha = 0xff,
-BYTE bBlendOp = AC_SRC_OVER);
+    HDC hDestDC,
+    const RECT& rectDest,
+    const RECT& rectSrc,
+    BYTE bSrcAlpha = 0xff,
+    BYTE bBlendOp = AC_SRC_OVER);
 ```
 
 ### Parameters
@@ -277,66 +277,66 @@ Copies a bitmap from the source device context to this current device context.
 
 ```
 BOOL BitBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL BitBlt(
-HDC hDestDC,
-const POINT& pointDest,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    const POINT& pointDest,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL BitBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-int xSrc,
-int ySrc,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    int xSrc,
+    int ySrc,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL BitBlt(
-HDC hDestDC,
-const RECT& rectDest,
-const POINT& pointSrc,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    const POINT& pointSrc,
+    DWORD dwROP = SRCCOPY) const throw();
 ```
 
 ### Parameters
 
-*hDestDC*  
+*hDestDC*<br/>
 The destination HDC.
 
-*xDest*  
+*xDest*<br/>
 The logical x-coordinate of the upper left corner of the destination rectangle.
 
-*yDest*  
+*yDest*<br/>
 The logical y-coordinate of the upper left corner of the destination rectangle.
 
-*dwROP*  
+*dwROP*<br/>
 The raster operation to be performed. Raster-operation codes define exactly how to combine the bits of the source, the destination, and the pattern (as defined by the currently selected brush) to form the destination. See [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) in the Windows SDK for a list of other raster-operation codes and their descriptions.
 
-*pointDest*  
+*pointDest*<br/>
 A [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure indicating the upper left corner of the destination rectangle.
 
-*nDestWidth*  
+*nDestWidth*<br/>
 The width, in logical units, of the destination rectangle.
 
-*nDestHeight*  
+*nDestHeight*<br/>
 The height, in logical units, of the destination rectangle.
 
-*xSrc*  
+*xSrc*<br/>
 The logical x-coordinate of the upper left corner of the source rectangle.
 
-*ySrc*  
+*ySrc*<br/>
 The logical y-coordinate of the upper left corner of the source rectangle.
 
-*rectDest*  
+*rectDest*<br/>
 A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure indicating the destination rectangle.
 
-*pointSrc*  
+*pointSrc*<br/>
 A `POINT` structure indicating the upper left corner of the source rectangle.
 
 ### Return Value
@@ -369,30 +369,30 @@ Creates a `CImage` bitmap and attach it to the previously constructed `CImage` o
 
 ```
 BOOL Create(
-int nWidth,
-int nHeight,
-int nBPP,
-DWORD dwFlags = 0) throw();
+    int nWidth,
+    int nHeight,
+    int nBPP,
+    DWORD dwFlags = 0) throw();
 ```
 
 ### Parameters
 
-*nWidth*  
+*nWidth*<br/>
 The width of the `CImage` bitmap, in pixels.
 
-*nHeight*  
+*nHeight*<br/>
 The height of the `CImage` bitmap, in pixels. If *nHeight* is positive, the bitmap is a bottom-up DIB and its origin is the lower left corner. If *nHeight* is negative, the bitmap is a top-down DIB and its origin is the upper left corner.
 
-*nBPP*  
+*nBPP*<br/>
 The numbers of bits per pixel in the bitmap. Usually 4, 8, 16, 24, or 32. Can be 1 for monochrome bitmaps or masks.
 
-*dwFlags*  
+*dwFlags*<br/>
 Specifies if the bitmap object has an alpha channel. Can be a combination of zero or more of the following values:
 
 - *createAlphaChannel* Can only be used if *nBPP* is 32, and *eCompression* is BI_RGB. If specified, the created image has an alpha (transparency) value for each pixel, stored in the 4th byte of each pixel (unused in a non-alpha 32-bit image). This alpha channel is automatically used when calling [CImage::AlphaBlend](#alphablend).
 
 > [!NOTE]
->  In calls to [CImage::Draw](#draw), images with an alpha channel are automatically alpha blended to the destination.
+> In calls to [CImage::Draw](#draw), images with an alpha channel are automatically alpha blended to the destination.
 
 ### Return Value
 
@@ -404,36 +404,36 @@ Creates a `CImage` bitmap and attach it to the previously constructed `CImage` o
 
 ```
 BOOL CreateEx(
-int nWidth,
-int nHeight,
-int nBPP,
-DWORD eCompression,
-const DWORD* pdwBitmasks = NULL,
-DWORD dwFlags = 0) throw();
+    int nWidth,
+    int nHeight,
+    int nBPP,
+    DWORD eCompression,
+    const DWORD* pdwBitmasks = NULL,
+    DWORD dwFlags = 0) throw();
 ```
 
 ### Parameters
 
-*nWidth*  
+*nWidth*<br/>
 The width of the `CImage` bitmap, in pixels.
 
-*nHeight*  
+*nHeight*<br/>
 The height of the `CImage` bitmap, in pixels. If *nHeight* is positive, the bitmap is a bottom-up DIB and its origin is the lower left corner. If *nHeight* is negative, the bitmap is a top-down DIB and its origin is the upper left corner.
 
-*nBPP*  
+*nBPP*<br/>
 The numbers of bits per pixel in the bitmap. Usually 4, 8, 16, 24, or 32. Can be 1 for monochrome bitmaps or masks.
 
-*eCompression*  
+*eCompression*<br/>
 Specifies the type of compression for a compressed bottom-up bitmap (top-down DIBs cannot be compressed). Can be one of the following values:
 
 - BI_RGB The format is uncompressed. Specifying this value when calling `CImage::CreateEx` is equivalent to calling `CImage::Create`.
 
 - BI_BITFIELDS The format is uncompressed and the color table consists of three DWORD color masks that specify the red, green, and blue components, respectively, of each pixel. This is valid when used with 16- and 32-bpp bitmaps.
 
-*pdwBitfields*  
+*pdwBitfields*<br/>
 Only used if *eCompression* is set to BI_BITFIELDS, otherwise it must be NULL. A pointer to an array of three DWORD bitmasks, specifying which bits of each pixel are used for the red, green, and blue components of the color, respectively. For information on restrictions for the bitfields, see [BITMAPINFOHEADER](https://msdn.microsoft.com/library/windows/desktop/dd183376) in the Windows SDK.
 
-*dwFlags*  
+*dwFlags*<br/>
 Specifies if the bitmap object has an alpha channel. Can be a combination of zero or more of the following values:
 
 - *createAlphaChannel* Can only be used if *nBPP* is 32, and *eCompression* is BI_RGB. If specified, the created image has an alpha (transparency) value for each pixel, stored in the 4th byte of each pixel (unused in a non-alpha 32-bit image). This alpha channel is automatically used when calling [CImage::AlphaBlend](#alphablend).
@@ -480,40 +480,40 @@ Copies a bitmap from the source device context to the current device context.
 
 ```
 BOOL Draw(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-int xSrc,
-int ySrc,
-int nSrcWidth,
-int nSrcHeight) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    int xSrc,
+    int ySrc,
+    int nSrcWidth,
+    int nSrcHeight) const throw();
 
 BOOL Draw(
-HDC hDestDC,
-const RECT& rectDest,
-const RECT& rectSrc) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    const RECT& rectSrc) const throw();
 
 BOOL Draw(
-HDC hDestDC,
-int xDest,
-int yDest) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest) const throw();
 
 BOOL Draw(
-HDC hDestDC,
-const POINT& pointDest) const throw();
+    HDC hDestDC,
+    const POINT& pointDest) const throw();
 
 BOOL Draw(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight) const throw();
 
 BOOL Draw(
-HDC hDestDC,
-const RECT& rectDest) const throw();
+    HDC hDestDC,
+    const RECT& rectDest) const throw();
 ```
 
 ### Parameters
@@ -606,9 +606,10 @@ The bits per pixel is usually 1, 4, 8, 16, 24, or 32. See the `biBitCount` membe
 Retrieves red, green, blue (RGB) color values from a range of entries in the palette of the DIB section.
 
 ```
-void GetColorTable(UINT iFirstColor,
-UINT nColors,
-RGBQUAD* prgbColors) const throw();
+void GetColorTable(
+    UINT iFirstColor,
+    UINT nColors,
+    RGBQUAD* prgbColors) const throw();
 ```
 
 ### Parameters
@@ -643,11 +644,12 @@ For each call to `GetDC`, you must have a subsequent call to [ReleaseDC](#releas
 Finds image formats available for saving images.
 
 ```
-static HRESULT GetExporterFilterString(CSimpleString& strExporters,
-CSimpleArray<GUID>& aguidFileTypes,
-LPCTSTR pszAllFilesDescription = NULL,
-DWORD dwExclude = excludeDefaultSave,
-TCHAR chSeparator = _T('|'));
+static HRESULT GetExporterFilterString(
+    CSimpleString& strExporters,
+    CSimpleArray<GUID>& aguidFileTypes,
+    LPCTSTR pszAllFilesDescription = NULL,
+    DWORD dwExclude = excludeDefaultSave,
+    TCHAR chSeparator = _T('|'));
 ```
 
 ### Parameters
@@ -738,11 +740,12 @@ The height, in pixels, of an image.
 Finds image formats available for loading images.
 
 ```
-static HRESULT GetImporterFilterString(CSimpleString& strImporters,
-CSimpleArray<GUID>& aguidFileTypes,
-LPCTSTR pszAllFilesDescription = NULL,
-DWORD dwExclude = excludeDefaultLoad,
-TCHAR chSeparator = _T('|'));
+static HRESULT GetImporterFilterString(
+    CSimpleString& strImporters,
+    CSimpleArray<GUID>& aguidFileTypes,
+    LPCTSTR pszAllFilesDescription = NULL,
+    DWORD dwExclude = excludeDefaultLoad,
+    TCHAR chSeparator = _T('|'));
 ```
 
 ### Parameters
@@ -854,7 +857,7 @@ Use `GetPitch` with [GetBits](#getbits) to find individual pixels of an image.
 Retrieves the color of the pixel at the location specified by *x* and *y*.
 
 ```
-COLORREF GetPixel(int x,int y) const throw();
+COLORREF GetPixel(int x, int y) const throw();
 ```
 
 ### Parameters
@@ -874,7 +877,7 @@ The red, green, blue (RGB) value of the pixel. If the pixel is outside of the cu
 Retrieves the exact address of a pixel.
 
 ```
-void* GetPixelAddress(int x,int y) throw();
+void* GetPixelAddress(int x, int y) throw();
 ```
 
 ### Parameters
@@ -1028,12 +1031,12 @@ Loads an image from a BITMAP resource.
 
 ```
 void LoadFromResource(
-HINSTANCE hInstance,
-LPCTSTR pszResourceName) throw();
+    HINSTANCE hInstance,
+    LPCTSTR pszResourceName) throw();
 
 void LoadFromResource(
-HINSTANCE hInstance,
-UINT nIDResource) throw();
+    HINSTANCE hInstance,
+    UINT nIDResource) throw();
 ```
 
 ### Parameters
@@ -1057,38 +1060,38 @@ Combines the color data for the source and destination bitmaps using the specifi
 
 ```
 BOOL MaskBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-int xSrc,
-int ySrc,
-HBITMAP hbmMask,
-int xMask,
-int yMask,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    int xSrc,
+    int ySrc,
+    HBITMAP hbmMask,
+    int xMask,
+    int yMask,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL MaskBlt(
-HDC hDestDC,
-const RECT& rectDest,
-const POINT& pointSrc,
-HBITMAP hbmMask,
-const POINT& pointMask,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    const POINT& pointSrc,
+    HBITMAP hbmMask,
+    const POINT& pointMask,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL MaskBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-HBITMAP hbmMask,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    HBITMAP hbmMask,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL MaskBlt(
-HDC hDestDC,
-const POINT& pointDest,
-HBITMAP hbmMask,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    const POINT& pointDest,
+    HBITMAP hbmMask,
+    DWORD dwROP = SRCCOPY) const throw();
 ```
 
 ### Parameters
@@ -1156,27 +1159,27 @@ Performs a bit-block transfer from a rectangle in a source device context into a
 
 ```
 BOOL PlgBlt(
-HDC hDestDC,
-const POINT* pPoints,
-HBITMAP hbmMask = NULL) const throw();
+    HDC hDestDC,
+    const POINT* pPoints,
+    HBITMAP hbmMask = NULL) const throw();
 
 BOOL PlgBlt(
-HDC hDestDC,
-const POINT* pPoints,
-int xSrc,
-int ySrc,
-int nSrcWidth,
-int nSrcHeight,
-HBITMAP hbmMask = NULL,
-int xMask = 0,
-int yMask = 0) const throw();
+    HDC hDestDC,
+    const POINT* pPoints,
+    int xSrc,
+    int ySrc,
+    int nSrcWidth,
+    int nSrcHeight,
+    HBITMAP hbmMask = NULL,
+    int xMask = 0,
+    int yMask = 0) const throw();
 
 BOOL PlgBlt(
-HDC hDestDC,
-const POINT* pPoints,
-const RECT& rectSrc,
-HBITMAP hbmMask = NULL,
-const POINT& pointMask = CPoint(0, 0)) const throw();
+    HDC hDestDC,
+    const POINT* pPoints,
+    const RECT& rectSrc,
+    HBITMAP hbmMask = NULL,
+    const POINT& pointMask = CPoint(0, 0)) const throw();
 ```
 
 ### Parameters
@@ -1253,11 +1256,13 @@ This method must be called to free resources allocated by a global `CImage` obje
 Saves an image to the specified stream or file on disk.
 
 ```
-HRESULT Save(IStream* pStream,
-REFGUID guidFileType) const throw();
+HRESULT Save(
+    IStream* pStream,
+    REFGUID guidFileType) const throw();
 
-HRESULT Save(LPCTSTR pszFileName,
-REFGUID guidFileType= GUID_NULL) const throw();
+HRESULT Save(
+    LPCTSTR pszFileName,
+    REFGUID guidFileType = GUID_NULL) const throw();
 ```
 
 ### Parameters
@@ -1364,11 +1369,11 @@ Sets the pixel at the locations specified by *x* and *y* to the colors indicated
 
 ```
 void SetPixelRGB(  
-int x,
-int y,
-BYTE r,
-BYTE g,
-BYTE b) throw();
+    int x,
+    int y,
+    BYTE r,
+    BYTE g,
+    BYTE b) throw();
 ```
 
 ### Parameters
@@ -1415,35 +1420,35 @@ Copies a bitmap from the source device context to this current device context.
 
 ```
 BOOL StretchBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL StretchBlt(
-HDC hDestDC,
-const RECT& rectDest,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL StretchBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-int xSrc,
-int ySrc,
-int nSrcWidth,
-int nSrcHeight,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    int xSrc,
+    int ySrc,
+    int nSrcWidth,
+    int nSrcHeight,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL StretchBlt(
-HDC hDestDC,
-const RECT& rectDest,
-const RECT& rectSrc,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    const RECT& rectSrc,
+    DWORD dwROP = SRCCOPY) const throw();
 ```
 
 ### Parameters
@@ -1498,35 +1503,35 @@ Copies a bitmap from the source device context to this current device context.
 
 ```
 BOOL TransparentBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-UINT crTransparent = CLR_INVALID) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    UINT crTransparent = CLR_INVALID) const throw();
 
 BOOL TransparentBlt(
-HDC hDestDC,
-const RECT& rectDest,
-UINT crTransparent = CLR_INVALID) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    UINT crTransparent = CLR_INVALID) const throw();
 
 BOOL TransparentBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-int xSrc,
-int ySrc,
-int nSrcWidth,
-int nSrcHeight,
-UINT crTransparent = CLR_INVALID) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    int xSrc,
+    int ySrc,
+    int nSrcWidth,
+    int nSrcHeight,
+    UINT crTransparent = CLR_INVALID) const throw();
 
 BOOL TransparentBlt(
-HDC hDestDC,
-const RECT& rectDest,
-const RECT& rectSrc,
-UINT crTransparent = CLR_INVALID) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    const RECT& rectSrc,
+    UINT crTransparent = CLR_INVALID) const throw();
 ```
 
 ### Parameters
