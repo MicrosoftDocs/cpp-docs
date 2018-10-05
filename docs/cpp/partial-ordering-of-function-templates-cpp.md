@@ -32,13 +32,13 @@ Use the following process to determine if one function template candidate is mor
 
 1. Using these rules:
 
-    1. A template specialization for a specific type is more specialized than one taking a generic type argument.
+   1. A template specialization for a specific type is more specialized than one taking a generic type argument.
 
-    1. A template taking only __T\*__ is more specialized than one taking only __T__, because a hypothetical type __X\*__ is a valid argument for a __T__ template argument, but __X__ is not a valid argument for a __T\*__ template argument.
+   1. A template taking only __T\*__ is more specialized than one taking only __T__, because a hypothetical type __X\*__ is a valid argument for a __T__ template argument, but __X__ is not a valid argument for a __T\*__ template argument.
 
-    1. __const T__ is more specialized than __T__, because __const X__ is a valid argument for a __T__ template argument, but __X__ is not a valid argument for a __const T__ template argument.
+   1. __const T__ is more specialized than __T__, because __const X__ is a valid argument for a __T__ template argument, but __X__ is not a valid argument for a __const T__ template argument.
 
-    1. __const T\*__ is more specialized than __T\*__, because __const X\*__ is a valid argument for a __T\*__ template argument, but __X\*__ is not a valid argument for a __const T\*__ template argument.
+   1. __const T\*__ is more specialized than __T\*__, because __const X\*__ is a valid argument for a __T\*__ template argument, but __X\*__ is not a valid argument for a __const T\*__ template argument.
 
 ## Example
 
