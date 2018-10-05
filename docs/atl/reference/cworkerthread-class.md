@@ -68,9 +68,9 @@ The class providing the thread creation function, such as [CRTThreadTraits](../.
 
 1. Call [CWorkerThread::AddHandle](#addhandle) with the handle of a kernel object and a pointer to an implementation of [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md).
 
-     - or -
+   \- or -
 
-     Call [CWorkerThread::AddTimer](#addtimer) with a pointer to an implementation of [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md).
+   Call [CWorkerThread::AddTimer](#addtimer) with a pointer to an implementation of [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md).
 
 1. Implement [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) to take some action when the handle or timer is signaled.
 
