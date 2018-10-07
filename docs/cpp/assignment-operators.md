@@ -4,9 +4,9 @@ ms.custom: ""
 ms.date: "03/05/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
-f1_keywords: ["=", "*=", "/=", "%=", "+=", "-=", "<<=", ">>=", "&=", "^=", "|=", "&&="]
+f1_keywords: ["=", "*=", "/=", "%=", "+=", "-=", "<<=", ">>=", "&=", "^=", "|="]
 dev_langs: ["C++"]
-helpviewer_keywords: ["operators [C++], assignment", "assignment operators [C++], C++", "&= operator", "&&= operator", "^= operator", "+= operator", ">>= operator", "|= operator", "operator>>=", "*= operator", "%= operator", "^= operator", "operator >>=", "= operator", "-= operator", "/= operator", "<<= operator"]
+helpviewer_keywords: ["operators [C++], assignment", "assignment operators [C++], C++", "&= operator", "^= operator", "+= operator", ">>= operator", "|= operator", "operator>>=", "*= operator", "%= operator", "^= operator", "operator >>=", "= operator", "-= operator", "/= operator", "<<= operator"]
 ms.assetid: b028cf35-2ff1-4f14-9027-fd53ebec8aa0
 author: "mikeblome"
 ms.author: "mblome"
@@ -19,18 +19,17 @@ ms.workload: ["cplusplus"]
 ```
 expression assignment-operator expression 
 assignment-operator : one of
-   =   *=   /=   %=   +=   -=   <<=   >>=   &=   ^=   |=  &&=
+   =   *=   /=   %=   +=   -=   <<=   >>=   &=   ^=   |=
 ```
 
 ## Remarks
 
-Assignment operators store a value in the object designated by the left operand. There are three kinds of assignment operations:
+Assignment operators store a value in the object designated by the left operand. There are two kinds of assignment operations:
 
-1. simple assignment, in which the value of the second operand is stored in the object specified by the first operand. 1. compound assignment, in which an arithmetic, shift, or bitwise operation is performed prior to storing the result.
-1. move assignment (for class types) in which resources are transferred without copying.
+1. simple assignment, in which the value of the second operand is stored in the object specified by the first operand.
+1. compound assignment, in which an arithmetic, shift, or bitwise operation is performed prior to storing the result.
 
-
-All assignment operators in the following table except the = and &&= operators are compound assignment operators.
+All assignment operators in the following table except the = operator are compound assignment operators.
 
 ### Assignment Operators
 
@@ -47,7 +46,6 @@ All assignment operators in the following table except the = and &&= operators a
 |**&=**|Obtain the bitwise AND of the first and second operands; store the result in the object specified by the first operand.|
 |**^=**|Obtain the bitwise exclusive OR of the first and second operands; store the result in the object specified by the first operand.|
 |**\|=**|Obtain the bitwise inclusive OR of the first and second operands; store the result in the object specified by the first operand.|
-|**&&=**| Move assignment operator (for class types only). If the second operand is an rvalue, move its resources to the first operand (without copying them). See [Move constructors and move assignment operators](move-constructors-and-move-assignment-operators-cpp.md) for more information.|
 
 **Operator Keywords**
 
