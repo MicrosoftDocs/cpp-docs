@@ -34,7 +34,7 @@ The following terms are used in this document:
 
    Statements lexically contained within a *structured block*.
 
--  master thread
+- master thread
 
    The thread that creates a team when a *parallel region* is entered.
 
@@ -66,7 +66,7 @@ The following terms are used in this document:
 
    A structured block is a statement (single or compound) that has a single entry and a single exit. No statement is a structured block if there is a jump into or out of that statement (including a call to **longjmp**(3C) or the use of **throw**, but a call to **exit** is permitted). A compound statement is a structured block if its execution always begins at the opening **{** and always ends at the closing **}**. An expression statement, selection statement, iteration statement, or **try** block is a structured block if the corresponding compound statement obtained by enclosing it in **{** and **}**would be a structured block. A jump statement, labeled statement, or declaration statement is not a structured block.
 
--  team
+- team
 
    One or more threads cooperating in the execution of a construct.
 

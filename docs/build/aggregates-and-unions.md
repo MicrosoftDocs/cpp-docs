@@ -19,7 +19,7 @@ Other types, such as arrays, structs, and unions, have stricter alignment requir
 
    Contains an ordered group of adjacent data objects. Each object is called an element. All elements within an array have the same size and data type.
 
--  Structure
+- Structure
 
    Contains an ordered group of data objects. Unlike the elements of an array, the data objects within a structure can have different data types and sizes. Each data object in a structure is called a member.
 

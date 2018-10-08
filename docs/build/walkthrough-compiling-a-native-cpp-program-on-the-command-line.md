@@ -40,7 +40,7 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
    If you're using a different version of Visual Studio or are running a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
 
-1. Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like:
+1. Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:
 
    ```Output
    C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise>cl
@@ -127,7 +127,7 @@ Before you can build a C or C++ program on the command line, you must verify tha
    > [!NOTE]
    > If you get a different compiler or linker error or warning, review your source code to correct any errors, then save it and run the compiler again. For information about specific errors, use the search box on this MSDN page to look for the error number.
 
-7. To run the hello.exe program, at the command prompt, enter `hello`.
+1. To run the hello.exe program, at the command prompt, enter `hello`.
 
    The program displays this text and exits:
 

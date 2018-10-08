@@ -49,7 +49,7 @@ For more information on ATL projects and ATL COM classes, see [ATL COM Desktop C
    |Option|Description|
    |------------|-----------------|
    |**Dual**|Specifies that the object supports a dual interface (its vtable has custom interface functions plus late-binding `IDispatch` methods). Allows both COM clients and [Automation controllers](../../mfc/automation-clients.md) to access the object. The default.|
-   |**Custom**|Specifies that the object supports a custom interface (its vtable has custom interface functions). A custom interface can be faster than a dual interface, especially across process boundaries.<br /><br /> -   **Automation compatible** Allows Automation controllers to access an object that has the custom interface support.|
+   |**Custom**|Specifies that the object supports a custom interface (its vtable has custom interface functions). A custom interface can be faster than a dual interface, especially across process boundaries.<br /><br /> - **Automation compatible** Allows Automation controllers to access an object that has the custom interface support.|
 
 - **Support**
 

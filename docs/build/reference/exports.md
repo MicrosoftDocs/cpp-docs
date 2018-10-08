@@ -71,11 +71,11 @@ There are four ways to export a definition, listed in recommended order:
 
 1. The [__declspec(dllexport)](../../cpp/dllexport-dllimport.md) keyword in the source code
 
-2. An `EXPORTS` statement in a .DEF file
+1. An `EXPORTS` statement in a .DEF file
 
-3. An [/EXPORT](../../build/reference/export-exports-a-function.md) specification in a LINK command
+1. An [/EXPORT](../../build/reference/export-exports-a-function.md) specification in a LINK command
 
-4. A [comment](../../preprocessor/comment-c-cpp.md) directive in the source code, of the form `#pragma comment(linker, "/export: definition ")`. The following example shows a #pragma comment directive before a function declaration, where `PlainFuncName` is the undecorated name, and `_PlainFuncName@4` is the decorated name of the function:
+1. A [comment](../../preprocessor/comment-c-cpp.md) directive in the source code, of the form `#pragma comment(linker, "/export: definition ")`. The following example shows a #pragma comment directive before a function declaration, where `PlainFuncName` is the undecorated name, and `_PlainFuncName@4` is the decorated name of the function:
 
     ```cpp
     #pragma comment(linker, "/export:PlainFuncName=_PlainFuncName@4")

@@ -46,7 +46,7 @@ Sometimes you may require a copy of `CString` data to modify directly. Use the m
 [!code-cpp[NVC_ATLMFC_Utilities#189](../atl-mfc-shared/codesnippet/cpp/cstring-operations-relating-to-c-style-strings_1.cpp)]
 
 > [!NOTE]
->  The third argument to `strcpy_s` (or the Unicode/MBCS-portable `_tcscpy_s`) is either a `const wchar_t*` (Unicode) or a `const char*` (ANSI). The example above passes a `CString` for this argument. The C++ compiler automatically applies the conversion function defined for the `CString` class that converts a `CString` to an `LPCTSTR`. The ability to define casting operations from one type to another is one of the most useful features of C++.
+> The third argument to `strcpy_s` (or the Unicode/MBCS-portable `_tcscpy_s`) is either a `const wchar_t*` (Unicode) or a `const char*` (ANSI). The example above passes a `CString` for this argument. The C++ compiler automatically applies the conversion function defined for the `CString` class that converts a `CString` to an `LPCTSTR`. The ability to define casting operations from one type to another is one of the most useful features of C++.
 
 ##  <a name="_core_working_with_standard_run.2d.time_library_string_functions"></a> Working with Standard Run-Time Library String Functions
 
@@ -62,13 +62,13 @@ There are some situations where it makes sense to directly modify the `CString` 
 
 The `GetBuffer` and `ReleaseBuffer` methods offer access to the internal character buffer of a `CString` object and let you modify it directly. The following steps show how to use these functions for this purpose.
 
-#### To use GetBuffer and ReleaseBuffer to access the internal character buffer of a CString object
+### To use GetBuffer and ReleaseBuffer to access the internal character buffer of a CString object
 
 1. Call `GetBuffer` for a `CString` object and specify the length of the buffer you require.
 
-2. Use the pointer returned by `GetBuffer` to write characters directly into the `CString` object.
+1. Use the pointer returned by `GetBuffer` to write characters directly into the `CString` object.
 
-3. Call `ReleaseBuffer` for the `CString` object to update all the internal `CString` state information, for example, the length of the string. After you modify the contents of a `CString` object directly, you must call `ReleaseBuffer` before you call any other `CString` member functions.
+1. Call `ReleaseBuffer` for the `CString` object to update all the internal `CString` state information, for example, the length of the string. After you modify the contents of a `CString` object directly, you must call `ReleaseBuffer` before you call any other `CString` member functions.
 
 ##  <a name="_core_using_cstring_objects_with_variable_argument_functions"></a> Using CString Objects with Variable Argument Functions
 
@@ -92,4 +92,3 @@ For most function results, you can simply return a `CString` object by value.
 
 [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [CString Argument Passing](../atl-mfc-shared/cstring-argument-passing.md)
-

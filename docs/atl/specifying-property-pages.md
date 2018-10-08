@@ -20,12 +20,12 @@ To implement `ISpecifyPropertyPages` using ATL, take the following steps:
 
 1. Derive your class from [ISpecifyPropertyPagesImpl](../atl/reference/ispecifypropertypagesimpl-class.md).
 
-2. Add an entry for `ISpecifyPropertyPages` to your class's COM map.
+1. Add an entry for `ISpecifyPropertyPages` to your class's COM map.
 
-3. Add a [PROP_PAGE](reference/property-map-macros.md#prop_page) entry to the property map for each page associated with your control.
+1. Add a [PROP_PAGE](reference/property-map-macros.md#prop_page) entry to the property map for each page associated with your control.
 
 > [!NOTE]
->  When generating a standard control using the [ATL Control Wizard](../atl/reference/atl-control-wizard.md), you will only have to add the PROP_PAGE entries to the property map. The wizard generates the necessary code for the other steps.
+> When generating a standard control using the [ATL Control Wizard](../atl/reference/atl-control-wizard.md), you will only have to add the PROP_PAGE entries to the property map. The wizard generates the necessary code for the other steps.
 
 Well-behaved containers will display the specified property pages in the same order as the PROP_PAGE entries in the property map. Generally, you should put standard property page entries after the entries for your custom pages in the property map, so that users see the pages specific to your control first.
 
@@ -39,4 +39,3 @@ The following class for a calendar control uses the `ISpecifyPropertyPages` inte
 
 [Property Pages](../atl/atl-com-property-pages.md)<br/>
 [ATLPages Sample](../visual-cpp-samples.md)
-

@@ -1,7 +1,7 @@
 ---
 title: "try-except Statement | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/05/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
 f1_keywords: ["_abnormal_termination_cpp", "_exception_code_cpp", "EXCEPTION_CONTINUE_SEARCH", "_exception_info", "__except", "EXCEPTION_CONTINUE_EXECUTION", "_exception_code", "__except_cpp", "_exception_info_cpp", "EXCEPTION_EXECUTE_HANDLER", "_abnormal_termination"]
@@ -20,14 +20,14 @@ The **try-except** statement is a Microsoft extension to the C and C++ languages
 
 ## Syntax
 
-> **__try** 
-> {
->    // guarded code
-> }
-> **__except** ( *expression* )
-> {
->    // exception handler code
-> }
+> **__try** <br/>
+> {<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp;// guarded code<br/>
+> }<br/>
+> **__except** ( *expression* )<br/>
+> {<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp;// exception handler code<br/>
+> }<br/>
 
 ## Remarks
 
@@ -44,15 +44,15 @@ The compound statement after the **__try** clause is the body or guarded section
 
 1. The guarded section is executed.
 
-2. If no exception occurs during execution of the guarded section, execution continues at the statement after the **__except** clause.
+1. If no exception occurs during execution of the guarded section, execution continues at the statement after the **__except** clause.
 
-3. If an exception occurs during execution of the guarded section or in any routine the guarded section calls, the **__except** *expression* (called the *filter* expression) is evaluated and the value determines how the exception is handled. There are three values:
+1. If an exception occurs during execution of the guarded section or in any routine the guarded section calls, the **__except** *expression* (called the *filter* expression) is evaluated and the value determines how the exception is handled. There are three possible values:
 
-   EXCEPTION_CONTINUE_EXECUTION (-1) Exception is dismissed. Continue execution at the point where the exception occurred.
+   - EXCEPTION_CONTINUE_EXECUTION (-1) Exception is dismissed. Continue execution at the point where the exception occurred.
 
-   EXCEPTION_CONTINUE_SEARCH (0) Exception is not recognized. Continue to search up the stack for a handler, first for containing **try-except** statements, then for handlers with the next highest precedence.
+   - EXCEPTION_CONTINUE_SEARCH (0) Exception is not recognized. Continue to search up the stack for a handler, first for containing **try-except** statements, then for handlers with the next highest precedence.
 
-   EXCEPTION_EXECUTE_HANDLER (1) Exception is recognized. Transfer control to the exception handler by executing the **__except** compound statement, then continue execution after the **__except** block.
+   - EXCEPTION_EXECUTE_HANDLER (1) Exception is recognized. Transfer control to the exception handler by executing the **__except** compound statement, then continue execution after the **__except** block.
 
 Because the **__except** expression is evaluated as a C expression, it is limited to a single value, the conditional-expression operator, or the comma operator. If more extensive processing is required, the expression can call a routine that returns one of the three values listed above.
 
@@ -60,9 +60,7 @@ Each application can have its own exception handler.
 
 It is not valid to jump into a **__try** statement, but valid to jump out of one. The exception handler is not called if a process is terminated in the middle of executing a **try-except** statement.
 
-For more information, see Knowledge Base article Q315937 : HOW TO: Trap Stack Overflow in a Visual C++ Application.
-
-## The __leave Keyword
+### The __leave Keyword
 
 The **__leave** keyword is valid only within the guarded section of a **try-except** statement, and its effect is to jump to the end of the guarded section. Execution continues at the first statement after the exception handler.
 
@@ -147,7 +145,7 @@ int main()
 }
 ```
 
-## Output
+### Output
 
 ```Output
 hello

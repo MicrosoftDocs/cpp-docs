@@ -17,7 +17,7 @@ ms.workload: ["cplusplus"]
 This class creates a worker thread or uses an existing one, waits on one or more kernel object handles, and executes a specified client function when one of the handles is signaled.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -26,7 +26,7 @@ template <class ThreadTraits = DefaultThreadTraits>
 class CWorkerThread
 ```
 
-#### Parameters
+### Parameters
 
 *ThreadTraits*<br/>
 The class providing the thread creation function, such as [CRTThreadTraits](../../atl/reference/crtthreadtraits-class.md) or [Win32ThreadTraits](../../atl/reference/win32threadtraits-class.md).
@@ -64,19 +64,19 @@ The class providing the thread creation function, such as [CRTThreadTraits](../.
 
 1. Create an instance of this class.
 
-2. Call [CWorkerThread::Initialize](#initialize).
+1. Call [CWorkerThread::Initialize](#initialize).
 
-3. Call [CWorkerThread::AddHandle](#addhandle) with the handle of a kernel object and a pointer to an implementation of [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md).
+1. Call [CWorkerThread::AddHandle](#addhandle) with the handle of a kernel object and a pointer to an implementation of [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md).
 
-     - or -
+   \- or -
 
-     Call [CWorkerThread::AddTimer](#addtimer) with a pointer to an implementation of [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md).
+   Call [CWorkerThread::AddTimer](#addtimer) with a pointer to an implementation of [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md).
 
-4. Implement [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) to take some action when the handle or timer is signaled.
+1. Implement [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) to take some action when the handle or timer is signaled.
 
-5. To remove an object from the list of waitable objects, call [CWorkerThread::RemoveHandle](#removehandle).
+1. To remove an object from the list of waitable objects, call [CWorkerThread::RemoveHandle](#removehandle).
 
-6. To terminate the thread, call [CWorkerThread::Shutdown](#shutdown).
+1. To terminate the thread, call [CWorkerThread::Shutdown](#shutdown).
 
 ## Requirements
 

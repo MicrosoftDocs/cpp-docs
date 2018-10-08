@@ -376,11 +376,11 @@ A constructor performs its work in this order:
 
 1. It calls base class and member constructors in the order of declaration.
 
-2. If the class is derived from virtual base classes, it initializes the object's virtual base pointers.
+1. If the class is derived from virtual base classes, it initializes the object's virtual base pointers.
 
-3. If the class has or inherits virtual functions, it initializes the object's virtual function pointers. Virtual function pointers point to the class's virtual function table to enable correct binding of virtual function calls to code.
+1. If the class has or inherits virtual functions, it initializes the object's virtual function pointers. Virtual function pointers point to the class's virtual function table to enable correct binding of virtual function calls to code.
 
-4. It executes any code in its function body.
+1. It executes any code in its function body.
 
 The following example shows the order in which base class and member constructors are called in the constructor for a derived class. First, the base constructor is called, then the base-class members are initialized in the order in which they appear in the class declaration, and then the derived constructor is called.
 
@@ -581,7 +581,6 @@ public:
     //... rest of class as before
 };
 ```
-
 
 The object created by the constructors is fully initialized as soon as any constructor is finished. For more information, see [Uniform Initialization and Delegating Constructors](../cpp/uniform-initialization-and-delegating-constructors.md).
 

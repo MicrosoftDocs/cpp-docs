@@ -1110,7 +1110,7 @@ virtual void OnDblClk(CWnd* pWnd);
 ### Parameters
 
 *pWnd*<br/>
-[in] -   The parent window of the button.
+[in] - The parent window of the button.
 
 ### Remarks
 

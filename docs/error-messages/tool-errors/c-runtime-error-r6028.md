@@ -17,15 +17,15 @@ ms.workload: ["cplusplus"]
 unable to initialize heap
 
 > [!NOTE]
->  If you encounter this error message while running an app, the app was shut down because it has an internal memory problem. There are many possible reasons for this error, but often it's caused by an extremely low memory condition, a bug in the program, or by defective hardware drivers.
+> If you encounter this error message while running an app, the app was shut down because it has an internal memory problem. There are many possible reasons for this error, but often it's caused by an extremely low memory condition, a bug in the program, or by defective hardware drivers.
 >
->  You can try these steps to fix this error:
+> You can try these steps to fix this error:
 >
->  -   Close other running applications or restart your computer to free up memory.
-> -   Use the **Apps and Features** or **Programs and Features** page in the **Control Panel** to repair or reinstall the program.
-> -   If the app was working before a recent installation of another app or driver, use the **Apps and Features** or **Programs and Features** page in the **Control Panel** to remove the new app or driver, and try your app again.
-> -   Check your hardware vendor's website or **Windows Update** in the **Control Panel** for software and driver updates.
-> -   Check for an updated version of the app. Contact the app vendor if the problem persists.
+> - Close other running applications or restart your computer to free up memory.
+> - Use the **Apps and Features** or **Programs and Features** page in the **Control Panel** to repair or reinstall the program.
+> - If the app was working before a recent installation of another app or driver, use the **Apps and Features** or **Programs and Features** page in the **Control Panel** to remove the new app or driver, and try your app again.
+> - Check your hardware vendor's website or **Windows Update** in the **Control Panel** for software and driver updates.
+> - Check for an updated version of the app. Contact the app vendor if the problem persists.
 
 **Information for Programmers**
 

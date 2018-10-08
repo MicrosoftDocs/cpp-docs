@@ -21,7 +21,7 @@ The following table shows the types of objects with which you work, and the type
 |Object ID|Messages|
 |---------------|--------------|
 |Class name, representing the containing window|Windows messages appropriate to a [CWnd](../../mfc/reference/cwnd-class.md)-derived class: a dialog box, window, child window, MDI child window, or topmost frame window.|
-|Menu or accelerator identifier|-   COMMAND message (executes the program function).<br />-   UPDATE_COMMAND_UI message (dynamically updates the menu item).|
+|Menu or accelerator identifier|- COMMAND message (executes the program function).<br />- UPDATE_COMMAND_UI message (dynamically updates the menu item).|
 |Control identifier|Control notification messages for the selected control type.|
 
 ## See Also

@@ -35,9 +35,9 @@ The file should contain one MIDL command-line option per line.
 
 1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
 
-2. Select the **Configuration Properties** > **Linker** > **Embedded IDL** property page.
+1. Select the **Configuration Properties** > **Linker** > **Embedded IDL** property page.
 
-3. Modify the **MIDL Commands** property.
+1. Modify the **MIDL Commands** property.
 
 ### To set this linker option programmatically
 

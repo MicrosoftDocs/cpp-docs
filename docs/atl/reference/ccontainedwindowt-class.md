@@ -91,7 +91,7 @@ When you use the **Add control based on** option in the ATL Project Wizard, the 
 |Creating controls|[ATL Tutorial](../../atl/active-template-library-atl-tutorial.md)|
 |Using windows in ATL|[ATL Window Classes](../../atl/atl-window-classes.md)|
 |ATL Project Wizard|[Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)|
-|Windows|[Windows](https://msdn.microsoft.com/library/windows/desktop/ms632595) and subsequent topics in the Windows SDK|
+|Windows|[Windows](/windows/desktop/winmsg/windows) and subsequent topics in the Windows SDK|
 
 ## Inheritance Hierarchy
 

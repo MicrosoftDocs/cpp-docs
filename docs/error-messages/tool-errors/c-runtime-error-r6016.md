@@ -17,15 +17,15 @@ ms.workload: ["cplusplus"]
 not enough space for thread data
 
 > [!NOTE]
->  If you encounter this error message while running an app, the app was shut down because it has an internal memory problem. There are many possible reasons for this error, but often it's caused by an extremely low memory condition, a bug in the app, or by a bug in an add-in or extension used by the app.
+> If you encounter this error message while running an app, the app was shut down because it has an internal memory problem. There are many possible reasons for this error, but often it's caused by an extremely low memory condition, a bug in the app, or by a bug in an add-in or extension used by the app.
 >
->  You can try these steps to fix this error:
+> You can try these steps to fix this error:
 >
->  -   Close other running applications or restart your computer to free up memory.
-> -   Use the **Apps and Features** or **Programs and Features** page in the **Control Panel** to repair or reinstall the app.
-> -   Use the **Apps and Features** or **Programs and Features** page in the **Control Panel** to remove, repair or reinstall add-ins or extensions used by the app.
-> -   Check **Windows Update** in the **Control Panel** for software updates.
-> -   Check for an updated version of the app. Contact the app vendor if the problem persists.
+> - Close other running applications or restart your computer to free up memory.
+> - Use the **Apps and Features** or **Programs and Features** page in the **Control Panel** to repair or reinstall the app.
+> - Use the **Apps and Features** or **Programs and Features** page in the **Control Panel** to remove, repair or reinstall add-ins or extensions used by the app.
+> - Check **Windows Update** in the **Control Panel** for software updates.
+> - Check for an updated version of the app. Contact the app vendor if the problem persists.
 
 **Information for Programmers**
 

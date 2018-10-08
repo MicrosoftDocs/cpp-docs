@@ -61,7 +61,7 @@ If you want to create a window based on an existing window class, derive your cl
 
 [!code-cpp[NVC_ATL_Windowing#43](../../atl/codesnippet/cpp/cwndclassinfo-class_1.h)]
 
-For more information about window classes, see [Window Classes](https://msdn.microsoft.com/library/windows/desktop/ms632596) in the Windows SDK.
+For more information about window classes, see [Window Classes](/windows/desktop/winmsg/window-classes) in the Windows SDK.
 
 For more information about using windows in ATL, see the article [ATL Window Classes](../../atl/atl-window-classes.md).
 

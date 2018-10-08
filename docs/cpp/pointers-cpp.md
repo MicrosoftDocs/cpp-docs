@@ -15,51 +15,41 @@ ms.workload: ["cplusplus"]
 
 Pointers are declared using the following sequence.
 
-```
-[storage-class-specifiers] [cv-qualifiers] type-specifiers 
-[ms-modifier] declarator ;
-```
+> \[*storage-class-specifiers*] \[*cv-qualifiers*] *type-specifiers* \[*ms-modifier*] *declarator* **;**
 
-where any valid pointer declarator may be used for `declarator`. The syntax for a simple pointer declarator is as follows:
+where any valid pointer declarator may be used for *declarator*. The syntax for a simple pointer declarator is as follows:
 
-```
-* [cv-qualifiers] identifier [= expression]
-```
+> __\*__ \[*cv-qualifiers*] *identifier* \[**=** *expression*]
 
 1. The declaration specifiers:
 
-    - An optional storage class specifier. For more information, see [Specifiers](../cpp/specifiers.md).
+   - An optional storage class specifier. For more information, see [Specifiers](../cpp/specifiers.md).
 
-    - An optional **const** or **volatile** keyword applying to the type of the object to be pointed to.
+   - An optional **const** or **volatile** keyword applying to the type of the object to be pointed to.
 
-    - The type specifier: the name of a type representing the type of the object to be pointed to.
+   - The type specifier: the name of a type representing the type of the object to be pointed to.
 
-2. The declarator:
+1. The declarator:
 
-    - An optional Microsoft specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).
+   - An optional Microsoft-specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).
 
-    - The `*` operator.
+   - The __\*__ operator.
 
-    - An optional **const** or **volatile** keyword applying to the pointer itself.
+   - An optional **const** or **volatile** keyword applying to the pointer itself.
 
-    - The identifier.
+   - The identifier.
 
-    - An optional initializer.
+   - An optional initializer.
 
-     The declarator for a pointer to function looks like this:
+The declarator for a pointer to function looks like this:
 
-```
-(* [cv-qualifiers] identifier )( argument-list ) [cv-qualifers]
-[exception specification] [= expression];
-```
+> __(\*__ \[*cv-qualifiers*] *identifier* **)(** *argument-list* **)** \[*cv-qualifers*] \[*exception-specification*] \[**=** *expression*] **;**
 
-- For an array of pointers, the syntax looks like this:
+For an array of pointers, the syntax looks like this:
 
-```
-* identifier [ [ constant-expression ] ]
-```
+> __\*__ *identifier* **\[** \[*constant-expression*] **]**
 
-- Multiple declarators and their initializers may appear together in a single declaration in a comma separated list following the declaration specifier.
+Multiple declarators and their initializers may appear together in a single declaration in a comma separated list following the declaration specifier.
 
 A simple example of a pointer declaration is:
 

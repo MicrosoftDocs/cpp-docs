@@ -15,33 +15,30 @@ ms.workload: ["cplusplus"]
 
 An array is a collection of like objects. The simplest case of an array is a vector, which may be declared by the following sequence:
 
-```
-decl-specifier identifier [ constant-expression ]
-decl-specifier identifier []
-decl-specifier identifer [][ constant-expression] . . .
-decl-specifier identifier [ constant-expression ]
-[ constant-expression ] . . .
-```
+> *decl-specifier* *identifier* **\[** *constant-expression* **]**<br/>
+> *decl-specifier* *identifier* **\[]**<br/>
+> *decl-specifier* *identifer* **\[]\[** *constant-expression* **]** . . .<br/>
+> *decl-specifier* *identifier* **\[** *constant-expression* **]** **\[** *constant-expression* **]** . . .
 
 1. The declaration specifier:
 
-- An optional storage class specifier.
+   - An optional storage class specifier.
 
-- Optional **const** and/or **volatile** specifiers.
+   - Optional **const** and/or **volatile** specifiers.
 
-- The type name of the elements of the array.
+   - The type name of the elements of the array.
 
-2. The declarator:
+1. The declarator:
 
-- The identifier.
+   - The identifier.
 
-- A constant expression of integral type enclosed in brackets, **[]**. If multiple dimensions are declared using additional brackets, the constant expression may be omitted on the first set of brackets.
+   - A constant expression of integral type enclosed in brackets, **\[]**. If multiple dimensions are declared using additional brackets, the constant expression may be omitted on the first set of brackets.
 
-- Optional additional brackets enclosing constant expressions.
+   - Optional additional brackets enclosing constant expressions.
 
-3. An optional initializer.  See [Initializers](../cpp/initializers.md).
+1. An optional initializer. For more information, see [Initializers](../cpp/initializers.md).
 
-The number of elements in the array is given by the constant expression. The first element in the array is the 0th element, and the last element is the (*n*-1) element, where *n* is the number of elements the array can contain. The *constant-expression* must be of an integral type and must be greater than 0. A zero-sized array is legal only when the array is the last field in a **struct** or **union** and when the Microsoft extensions (/Ze) are enabled.
+The number of elements in the array is given by the *constant-expression*. The first element in the array is the 0th element, and the last element is the (*n*-1) element, where *n* is the number of elements the array can contain. The *constant-expression* must be of an integral type and must be greater than 0. A zero-sized array is legal only when the array is the last field in a **struct** or **union** and when the Microsoft extensions (/Ze) are enabled.
 
 The following example shows how to define an array at run time:
 

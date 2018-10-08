@@ -40,7 +40,7 @@ The following table summarizes the precedence and associativity (the order in wh
 
 1. Operators are listed in descending order of precedence. If several operators appear on the same line or in a group, they have equal precedence.
 
-2. All simple and compound-assignment operators have equal precedence.
+1. All simple and compound-assignment operators have equal precedence.
 
 An expression can contain several operators with equal precedence. When several such operators appear at the same level in an expression, evaluation proceeds according to the associativity of the operator, either from right to left or from left to right. The direction of evaluation does not affect the results of expressions that include more than one multiplication (<strong>\*</strong>), addition (**+**), or binary-bitwise (**&**, **&#124;**, or **^**) operator at the same level. Order of operations is not defined by the language. The compiler is free to evaluate such expressions in any order, if the compiler can guarantee a consistent result.
 

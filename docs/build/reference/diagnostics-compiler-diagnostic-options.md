@@ -42,9 +42,9 @@ The **/diagnostics** option is available starting in Visual Studio 2017.
 
 1. Open your project's **Property Pages** dialog box.
 
-2. Under **Configuration Properties**, expand the **C/C++** folder and choose the **General** property page.
+1. Under **Configuration Properties**, expand the **C/C++** folder and choose the **General** property page.
 
-3. Use the dropdown control in the **Diagnostics Format** field to select a diagnostics display option. Choose **OK** or **Apply** to save your changes.
+1. Use the dropdown control in the **Diagnostics Format** field to select a diagnostics display option. Choose **OK** or **Apply** to save your changes.
 
 ## See Also
 

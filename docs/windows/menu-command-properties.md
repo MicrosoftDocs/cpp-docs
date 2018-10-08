@@ -17,7 +17,7 @@ The information below is organized according to the **Menu** properties that app
 
 |Property|Description|
 |--------------|-----------------|
-|**Break**|Can be one of these values:<br /><br /> -   **None** (Default): No break.<br />-   **Column**: For static menus, this value places the menu command on a new line. For pop-up menus, this value places the menu command in a new column with no dividing line between the columns. Setting this property affects the appearance of the menu only at run time, not in the menu editor.<br />-   **Bar**: Same as **Column** except, for pop-up menus, this value separates the new column from the old column with a vertical line. Setting this property affects the appearance of the menu only at run time, not in the **Menu** editor.|
+|**Break**|Can be one of these values:<br /><br />- **None** (Default): No break.<br />- **Column**: For static menus, this value places the menu command on a new line. For pop-up menus, this value places the menu command in a new column with no dividing line between the columns. Setting this property affects the appearance of the menu only at run time, not in the menu editor.<br />- **Bar**: Same as **Column** except, for pop-up menus, this value separates the new column from the old column with a vertical line. Setting this property affects the appearance of the menu only at run time, not in the **Menu** editor.|
 |**Caption**|The text that labels the menu command (the menu name). To make one of the letters in the caption of a menu command the mnemonic key, precede it with an ampersand (&).|
 |**Checked**|If **True**, the menu command is initially checked. Type: **Bool**. Default: **False**.|
 |**Enabled**|If **False**, the menu item is disabled.|
