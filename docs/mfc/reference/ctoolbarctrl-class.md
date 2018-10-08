@@ -545,8 +545,6 @@ void Customize();
 
 This dialog box allows the user to customize the toolbar by adding and deleting buttons. To support customization, your toolbar's parent window must handle the customization notification messages as described in [Handling Customization Notifications](../../mfc/handling-customization-notifications.md). Your toolbar must also have been created with the CCS_ADJUSTABLE style, as described in [CToolBarCtrl::Create](#create).
 
-For more information, see Knowledge Base article Q241850 : PRB: Call to CToolBarCtrl::Customize Does Not Keep the Customize Dialog Visible.
-
 ##  <a name="deletebutton"></a>  CToolBarCtrl::DeleteButton
 
 Deletes a button from the toolbar control.

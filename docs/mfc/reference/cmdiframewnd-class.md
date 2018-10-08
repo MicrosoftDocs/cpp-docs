@@ -182,8 +182,6 @@ Use this function to create child windows of an MDI frame window.
 
 [!code-cpp[NVC_MFCWindowing#15](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_3.cpp)]
 
-This example is an excerpt from Knowledge Base article Q201045, "HOWTO: Add Multiple Window Types to a Non-Document/View MDI App." Knowledge Base articles are available at [http://support.microsoft.com](http://support.microsoft.com/).
-
 ##  <a name="getwindowmenupopup"></a>  CMDIFrameWnd::GetWindowMenuPopup
 
 Call this member function to obtain a handle to the current pop-up menu named "Window" (the pop-up menu with menu items for MDI window management).

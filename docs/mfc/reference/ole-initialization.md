@@ -67,7 +67,7 @@ Call this function to initialize the OLE support for an MFC application. When th
 >  If **AfxOleInit** is called from an MFC DLL, the call will fail. The failure occurs because the function assumes that, if it is called from a DLL, the OLE system was previously initialized by the calling application.
 
 > [!NOTE]
->  MFC applications must be initialized as single threaded apartment (STA). If you call [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) in your `InitInstance` override, specify COINIT_APARTMENTTHREADED (rather than COINIT_MULTITHREADED). For more information, see PRB: MFC Application Stops Responding When You Initialize the Application as a Multithreaded Apartment (828643) at [http://support.microsoft.com/default.aspxscid=kb;828643](http://support.microsoft.com/default.aspxscid=kb;828643).
+>  MFC applications must be initialized as single threaded apartment (STA). If you call [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) in your `InitInstance` override, specify COINIT_APARTMENTTHREADED (rather than COINIT_MULTITHREADED).
 
 ### Requirements
 

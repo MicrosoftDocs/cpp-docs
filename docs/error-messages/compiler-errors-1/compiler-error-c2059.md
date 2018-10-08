@@ -66,8 +66,6 @@ void func(ag_type arg = {5, 7.0});   // C2059
 void func(ag_type arg = ag_type(5, 7.0));   // OK
 ```
 
-You can also get C2059 if you define a member template class or function outside the class. For information, see [Knowledge Base article 241949](http://support.microsoft.com/kb/241949).
-
 C2059 can occur for an ill-formed cast.
 
 The following sample generates C2059:

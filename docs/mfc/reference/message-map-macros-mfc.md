@@ -319,7 +319,7 @@ User-defined messages are any messages that are not standard Windows WM_MESSAGE 
 There should be exactly one ON_MESSAGE macro statement in your message map for every user-defined message that must be mapped to a message-handler function.
 
 > [!NOTE]
->  In addition to user-defined messages, ON_MESSAGE handles less common Windows messages. For more information, see Knowledge Base article [99848: INFO: Use ON_MESSAGE() Macro to Map Less-Common Messages](http://go.microsoft.com/fwlink/p/?linkid=192022).
+>  In addition to user-defined messages, ON_MESSAGE handles less common Windows messages. For more information, see [Message Maps](../../mfc/tn006-message-maps.md).
 
 For more information and examples, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md) and [User-Defined Handlers](user-defined-handlers.md)
 

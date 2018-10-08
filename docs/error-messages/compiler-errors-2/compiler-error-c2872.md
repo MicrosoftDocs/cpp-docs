@@ -20,7 +20,11 @@ The compiler cannot determine which symbol you are referring to. More than one s
 
 C2872 can occur if a header file includes a [using directive](../../cpp/namespaces-cpp.md#using_directives), and a subsequent header file is included that contains a type that is also in the namespace specified in the `using` directive. Specify a `using` directive only after all your header files are specified with `#include`.
 
-For more information about C2872, see Knowledge Base articles [PRB: Compiler Errors When You Use #import with XML in Visual C++ .NET](http://support.microsoft.com/kb/316317) and ["Error C2872: 'Platform' : ambiguous symbol" error message when you use the Windows::Foundation::Metadata namespace in Visual Studio 2013](https://support.microsoft.com/kb/2890859).
+C2872 can occur in Visual Studio 2013 due to a conflict between the the `Windows::Foundation::Metadata::Platform` enum type and the C++/CX-defined `Platform` namespace. To work around this problem, follow these steps:
+
+- Remove the "using namespace Windows::Foundation::Metadata" clause from the project files.
+
+- Specify the fully qualified name for any type that is included in this namespace.
 
 ## Example
 

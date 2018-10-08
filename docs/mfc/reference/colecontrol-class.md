@@ -1819,7 +1819,7 @@ Nonzero if the control has been initialized; otherwise 0.
 
 ### Remarks
 
-The framework's implementation of `IDispatch::Invoke` calls `IsInvokeAllowed` to determine if a given function (identified by `dispid`) may be invoked. The default behavior for an OLE control is to allow automation methods to be invoked only if the control has been initialized; however, `IsInvokeAllowed` is a virtual function and may be overridden if necessary (for example, when the control is being used as an automation server). For more information, see Knowledge Base article Q166472, "HOWTO: Use an OLE Control as an Automation Server." Knowledge Base articles are available at [http://support.microsoft.com](http://support.microsoft.com/).
+The framework's implementation of `IDispatch::Invoke` calls `IsInvokeAllowed` to determine if a given function (identified by `dispid`) may be invoked. The default behavior for an OLE control is to allow automation methods to be invoked only if the control has been initialized; however, `IsInvokeAllowed` is a virtual function and may be overridden if necessary (for example, when the control is being used as an automation server).
 
 ##  <a name="ismodified"></a>  COleControl::IsModified
 

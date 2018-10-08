@@ -18,11 +18,9 @@ ms.workload: ["cplusplus"]
 
 The class generic or template redefines a non-template or non-generic class. Check header files for conflicts.
 
-If you are using class template partial specializations, see Knowledge Base article Q240866.
-
 The following sample generates C2989:
 
-```
+```cpp
 // C2989.cpp
 // compile with: /c
 class C{};
@@ -34,7 +32,7 @@ class C2{};
 
 C2989 can also occur when using generics:
 
-```
+```cpp
 // C2989b.cpp
 // compile with: /clr /c
 ref class GC1;

@@ -143,7 +143,7 @@ If you create a `CComboBox` object within a dialog box (through a dialog resourc
 
 If you embed a `CComboBox` object within another window object, you do not need to destroy it. If you create the `CComboBox` object on the stack, it is destroyed automatically. If you create the `CComboBox` object on the heap by using the **new** function, you must call **delete** on the object to destroy it when the Windows combo box is destroyed.
 
-**Note** If you want to handle WM_KEYDOWN and WM_CHAR messages, you have to subclass the combo box's edit and list box controls, derive classes from `CEdit` and `CListBox`, and add handlers for those messages to the derived classes. For more information, see [http://support.microsoft.com/default.aspxscid=kb;Q174667](http://support.microsoft.com/default.aspxscid=kb;q174667) and [CWnd::SubclassWindow](../../mfc/reference/cwnd-class.md#subclasswindow).
+**Note** If you want to handle WM_KEYDOWN and WM_CHAR messages, you have to subclass the combo box's edit and list box controls, derive classes from `CEdit` and `CListBox`, and add handlers for those messages to the derived classes. For more information, see [CWnd::SubclassWindow](../../mfc/reference/cwnd-class.md#subclasswindow).
 
 ## Inheritance Hierarchy
 

@@ -122,8 +122,6 @@ For more information on using `CRichEditCtrl`, see:
 
 - [Using CRichEditCtrl](../../mfc/using-cricheditctrl.md)
 
-- Knowledge Base article Q259949 : INFO: SetCaretPos() Is Not Appropriate with CEdit or CRichEditCtrl Controls
-
 For an example of using a rich edit control in an MFC application, see the [WORDPAD](../../visual-cpp-samples.md) sample application.
 
 ## Inheritance Hierarchy

@@ -27,10 +27,8 @@ To subclass a Windows control, complete the following tasks:
 
 - [Handle any ActiveX control messages (OCM) reflected to the control](#_core_handling_reflected_window_messages)
 
-    > [!NOTE]
-    >  Much of this work is done for you by the ActiveX Control Wizard if you select control to be subclassed using the **Select Parent Window Class** drop-down list on the **Control Settings** page.
-
-See Knowledge Base article Q243454 for more information on subclassing a control.
+   > [!NOTE]
+   > Much of this work is done for you by the ActiveX Control Wizard if you select control to be subclassed using the **Select Parent Window Class** drop-down list on the **Control Settings** page.
 
 ##  <a name="_core_overriding_issubclassedcontrol_and_precreatewindow"></a> Overriding IsSubclassedControl and PreCreateWindow
 

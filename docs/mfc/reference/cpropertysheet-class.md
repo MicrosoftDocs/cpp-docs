@@ -98,7 +98,7 @@ You can create a type of tab dialog box called a wizard, which consists of a pro
 
 To create a wizard-type dialog box, follow the same steps that you would follow to create a standard property sheet, but call [SetWizardMode](#setwizardmode) before you call [DoModal](#domodal). To enable the wizard buttons, call [SetWizardButtons](#setwizardbuttons), using flags to customize their function and appearance. To enable the **Finish** button, call [SetFinishText](#setfinishtext) after the user has taken action on the last page of the wizard.
 
-For more information about how to use `CPropertySheet` objects, see the article [Property Sheets and Property Pages](../../mfc/property-sheets-and-property-pages-in-mfc.md). Also, see Knowledge Base article Q146916 : HOWTO: Create a Modeless CPropertySheet with Standard Buttons and article Q300606 : HOWTO: Design a Resizable MFC Property Sheet.
+For more information about how to use `CPropertySheet` objects, see the article [Property Sheets and Property Pages](../../mfc/property-sheets-and-property-pages-in-mfc.md).
 
 ## Inheritance Hierarchy
 

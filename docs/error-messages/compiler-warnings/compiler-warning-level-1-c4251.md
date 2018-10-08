@@ -28,11 +28,9 @@ To minimize the possibility of data corruption when exporting a class with [__de
 
 You can avoid exporting classes by defining a DLL that defines a class with virtual functions, and functions you can call to instantiate and delete objects of the type.  You can then just call virtual functions on the type.
 
-For more information on exporting templates, see [http://support.microsoft.com/default.aspx?scid=KB;EN-US;168958](http://support.microsoft.com/default.aspx?scid=KB;EN-US;168958).
-
 C4251 can be ignored if you are deriving from a type in the C++ Standard Library, compiling a debug release (**/MTd**) and where the compiler error message refers to _Container_base.
 
-```
+```cpp
 // C4251.cpp
 // compile with: /EHsc /MTd /W2 /c
 #include <vector>
