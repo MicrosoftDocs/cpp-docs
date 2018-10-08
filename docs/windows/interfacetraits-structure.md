@@ -105,7 +105,7 @@ If this operation is successful, *ppv* points to the interface specified by `Bas
 
 ### Return Value
 
-`true` if this operation is successful and *ptr* is cast to a pointer to `Base`; otherwise, `false` .
+**true** if this operation is successful and *ptr* is cast to a pointer to `Base`; otherwise, **false**.
 
 ### Remarks
 

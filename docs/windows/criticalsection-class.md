@@ -104,7 +104,7 @@ bool IsValid() const;
 
 ### Return Value
 
-By default, always returns `true`.
+By default, always returns **true**.
 
 ## <a name="lock"></a>CriticalSection::Lock
 

@@ -65,7 +65,7 @@ inline bool SafeAdd (
 
 ### Return Value
 
-`true` if no error occurs; `false` if an error occurs.
+**true** if no error occurs; **false** if an error occurs.
 
 ## <a name="safecast"></a>SafeCast
 
@@ -89,7 +89,7 @@ inline bool SafeCast (
 
 ### Return Value
 
-`true` if no error occurs; `false` if an error occurs.
+**true** if no error occurs; **false** if an error occurs.
 
 ## <a name="safedivide"></a>SafeDivide
 
@@ -117,7 +117,7 @@ inline bool SafeDivide (
 
 ### Return Value
 
-`true` if no error occurs; `false` if an error occurs.
+**true** if no error occurs; **false** if an error occurs.
 
 ## <a name="safeequals"></a>SafeEquals
 
@@ -141,7 +141,7 @@ inline bool SafeEquals (
 
 ### Return Value
 
-`true` if *t* and *u* are equal; otherwise `false`.
+**true** if *t* and *u* are equal; otherwise **false**.
 
 ### Remarks
 
@@ -169,7 +169,7 @@ inline bool SafeGreaterThan (
 
 ### Return Value
 
-`true` if *t* is greater than *u*; otherwise `false`.
+**true** if *t* is greater than *u*; otherwise **false**.
 
 ### Remarks
 
@@ -197,7 +197,7 @@ inline bool SafeGreaterThanEquals (
 
 ### Return Value
 
-`true` if *t* is greater than or equal to *u*; otherwise `false`.
+**true** if *t* is greater than or equal to *u*; otherwise **false**.
 
 ### Remarks
 
@@ -225,7 +225,7 @@ inline bool SafeLessThan (
 
 ### Return Value
 
-`true` if *t* is less than *u*; otherwise `false`.
+**true** if *t* is less than *u*; otherwise **false**.
 
 ### Remarks
 
@@ -253,7 +253,7 @@ inline bool SafeLessThanEquals (
 
 ### Return Value
 
-`true` if *t* is less than or equal to *u*; otherwise `false`.
+**true** if *t* is less than or equal to *u*; otherwise **false**.
 
 ### Remarks
 
@@ -285,7 +285,7 @@ inline bool SafeModulus (
 
 ### Return Value
 
-`true` if no error occurs; `false` if an error occurs.
+**true** if no error occurs; **false** if an error occurs.
 
 ## <a name="safemultiply"></a>SafeMultiply
 
@@ -337,7 +337,7 @@ inline bool SafeNotEquals (
 
 ### Return Value
 
-`true` if *t* and *u* are not equal; otherwise `false`.
+**true** if *t* and *u* are not equal; otherwise **false**.
 
 ### Remarks
 
@@ -369,4 +369,4 @@ inline bool SafeSubtract (
 
 ### Return Value
 
-`true` if no error occurs; `false` if an error occurs.
+**true** if no error occurs; **false** if an error occurs.

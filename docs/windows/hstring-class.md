@@ -183,7 +183,7 @@ bool IsValid() const throw()
 
 ### Parameters
 
-`true` if the current `HString` object is not empty; otherwise, `false`.
+**true** if the current `HString` object is not empty; otherwise, **false**.
 
 ## <a name="makereference"></a>HString::MakeReference
 
@@ -268,7 +268,7 @@ The second parameter to compare.*rhs* can be an `HString` or `HStringReference` 
 
 ### Return Value
 
-`true` if the *lhs* and *rhs* parameters are equal; otherwise, `false`.
+**true** if the *lhs* and *rhs* parameters are equal; otherwise, **false**.
 
 ## <a name="operator-inequality"></a>HString::operator!= Operator
 
@@ -301,7 +301,7 @@ The second parameter to compare.*rhs* can be an `HString` or `HStringReference` 
 
 ### Return Value
 
-`true` if the *lhs* and *rhs* parameters are not equal; otherwise, `false`.
+**true** if the *lhs* and *rhs* parameters are not equal; otherwise, **false**.
 
 ## <a name="operator-less-than"></a>HString::operator&lt; Operator
 
@@ -323,7 +323,7 @@ The second parameter to compare. *rhs* can be a reference to an `HString`.
 
 ### Return Value
 
-`true` if the *lhs* parameter is less than the *rhs* parameter; otherwise, `false`.
+**true** if the *lhs* parameter is less than the *rhs* parameter; otherwise, **false**.
 
 ## <a name="release"></a>HString::Release
 

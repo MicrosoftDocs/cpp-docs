@@ -64,7 +64,7 @@ The handle to close.
 
 ### Return Value
 
-`true` if handle *h* closed successfully; otherwise, `false`.
+**true** if handle *h* closed successfully; otherwise, **false**.
 
 ## <a name="getinvalidvalue"></a>HANDLETraits::GetInvalidValue
 
