@@ -224,7 +224,7 @@ class CWindow
 
 [CDialogImpl](../../atl/reference/cdialogimpl-class.md) Allows you to create a modal or modeless dialog box.
 
-For more information about windows, see [Windows](https://msdn.microsoft.com/library/windows/desktop/ms632595) and subsequent topics in the Windows SDK. For more information about using windows in ATL, see the article [ATL Window Classes](../../atl/atl-window-classes.md).
+For more information about windows, see [Windows](/windows/desktop/winmsg/windows) and subsequent topics in the Windows SDK. For more information about using windows in ATL, see the article [ATL Window Classes](../../atl/atl-window-classes.md).
 
 ## Requirements
 
