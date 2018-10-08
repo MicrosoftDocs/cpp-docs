@@ -1,7 +1,7 @@
 ---
 title: "AsyncBase Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/03/2018"
+ms.date: "10/08/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase", "async/Microsoft::WRL::AsyncBase::AsyncBase", "async/Microsoft::WRL::AsyncBase::Cancel", "async/Microsoft::WRL::AsyncBase::CheckValidStateForDelegateCall", "async/Microsoft::WRL::AsyncBase::CheckValidStateForResultsCall", "async/Microsoft::WRL::AsyncBase::Close", "async/Microsoft::WRL::AsyncBase::ContinueAsyncOperation", "async/Microsoft::WRL::AsyncBase::CurrentStatus", "async/Microsoft::WRL::AsyncBase::ErrorCode", "async/Microsoft::WRL::AsyncBase::FireCompletion", "async/Microsoft::WRL::AsyncBase::FireProgress", "async/Microsoft::WRL::AsyncBase::get_ErrorCode", "async/Microsoft::WRL::AsyncBase::get_Id", "async/Microsoft::WRL::AsyncBase::get_Status", "async/Microsoft::WRL::AsyncBase::GetOnComplete", "async/Microsoft::WRL::AsyncBase::GetOnProgress", "async/Microsoft::WRL::AsyncBase::OnCancel", "async/Microsoft::WRL::AsyncBase::OnClose", "async/Microsoft::WRL::AsyncBase::OnStart", "async/Microsoft::WRL::AsyncBase::put_Id", "async/Microsoft::WRL::AsyncBase::PutOnComplete", "async/Microsoft::WRL::AsyncBase::PutOnProgress", "async/Microsoft::WRL::AsyncBase::Start", "async/Microsoft::WRL::AsyncBase::TryTransitionToCompleted", "async/Microsoft::WRL::AsyncBase::TryTransitionToError"]
@@ -376,7 +376,7 @@ virtual void OnClose(
 When overridden in a derived class, starts an asynchronous operation.
 
 ```cpp
-virtual void OnStart(
+virtual HRESULT OnStart(
    void
 ) = 0;
 ```
