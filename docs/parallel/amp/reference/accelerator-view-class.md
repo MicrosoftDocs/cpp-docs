@@ -48,9 +48,9 @@ class accelerator_view;
 
 |Name|Description|
 |----------|-----------------|
-|[operator!=](#operator_neq)|Compares this `accelerator_view` object with another and returns `false` if they are the same; otherwise, returns `true`.|
+|[operator!=](#operator_neq)|Compares this `accelerator_view` object with another and returns **false** if they are the same; otherwise, returns **true**.|
 |[operator=](#operator_eq)|Copies the contents of the specified `accelerator_view` object into this one.|
-|[operator==](#operator_eq_eq)|Compares this `accelerator_view` object with another and returns `true` if they are the same; otherwise, returns `false`.|
+|[operator==](#operator_eq_eq)|Compares this `accelerator_view` object with another and returns **true** if they are the same; otherwise, returns **false**.|
 
 ### Public Data Members
 
@@ -157,7 +157,7 @@ bool get_is_auto_selection() const;
 
 ### Return Value
 
-`true` if the runtime will automatically select an appropriate accelerator; otherwise, `false`.
+**true** if the runtime will automatically select an appropriate accelerator; otherwise, **false**.
 
 ## <a name="accelerator_view__get_is_debug"></a> get_is_debug
 
@@ -223,7 +223,7 @@ __declspec(property(get= get_is_debug)) bool is_debug;
 
 ## <a name="accelerator_view__operator_neq"></a> operator!=
 
-Compares this accelerator_view object with another and returns `false` if they are the same; otherwise, returns `true`.
+Compares this accelerator_view object with another and returns **false** if they are the same; otherwise, returns **true**.
 
 ### Syntax
 
@@ -238,7 +238,7 @@ The `accelerator_view` object to compare with this one.
 
 ### Return Value
 
-`false` if the two objects are the same; otherwise, `true`.
+**false** if the two objects are the same; otherwise, **true**.
 
 ## <a name="accelerator_view__operator_eq"></a> operator=
 
@@ -261,7 +261,7 @@ A reference to the modified `accelerator_view` object.
 
 ## <a name="accelerator_view__operator_eq_eq"></a> operator==
 
-Compares this accelerator_view object with another and returns `true` if they are the same; otherwise, returns `false`.
+Compares this accelerator_view object with another and returns **true** if they are the same; otherwise, returns **false**.
 
 ### Syntax
 
@@ -276,7 +276,7 @@ The `accelerator_view` object to compare with this one.
 
 ### Return Value
 
-`true` if the two objects are the same; otherwise, `false`.
+**true** if the two objects are the same; otherwise, **false**.
 
 ## <a name="accelerator_view__queuing_mode"></a> queuing_mode
 

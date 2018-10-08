@@ -31,11 +31,11 @@ The object to compare for equality.
 
 ## Return Value
 
-Returns `true` if `t` is the same as the lock's object, `false` otherwise.
+Returns **true** if `t` is the same as the lock's object, **false** otherwise.
 
 ## Example
 
-```
+```cpp
 // msl_lock_op_eq.cpp
 // compile with: /clr
 #include <msclr/lock.h>

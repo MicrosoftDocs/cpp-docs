@@ -31,11 +31,11 @@ The object to compare for inequality.
 
 ## Return Value
 
-Returns `true` if `t` differs from the lock's object, `false` otherwise.
+Returns **true** if `t` differs from the lock's object, **false** otherwise.
 
 ## Example
 
-```
+```cpp
 // msl_lock_op_ineq.cpp
 // compile with: /clr
 #include <msclr/lock.h>

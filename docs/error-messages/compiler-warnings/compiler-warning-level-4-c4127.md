@@ -18,9 +18,9 @@ ms.workload: ["cplusplus"]
 
 ## Remarks
 
-The controlling expression of an `if` statement or `while` loop evaluates to a constant. Because of their common idiomatic usage, beginning in Visual Studio 2015 update 3, trivial constants such as 1 or `true` do not trigger the warning, unless they are the result of an operation in an expression.
+The controlling expression of an **if** statement or **while** loop evaluates to a constant. Because of their common idiomatic usage, beginning in Visual Studio 2015 update 3, trivial constants such as 1 or **true** do not trigger the warning, unless they are the result of an operation in an expression.
 
-If the controlling expression of a `while` loop is a constant because the loop exits in the middle, consider replacing the `while` loop with a `for` loop. You can omit the initialization, termination test and loop increment of a `for` loop, which causes the loop to be infinite, just like `while(1)`, and you can exit the loop from the body of the `for` statement.
+If the controlling expression of a **while** loop is a constant because the loop exits in the middle, consider replacing the **while** loop with a **for** loop. You can omit the initialization, termination test and loop increment of a **for** loop, which causes the loop to be infinite, just like `while(1)`, and you can exit the loop from the body of the **for** statement.
 
 ## Example
 

@@ -31,7 +31,7 @@ This topic describes the following message-passing functions:
 
 The [concurrency::send](reference/concurrency-namespace-functions.md#send) function sends a message to the specified target synchronously and the [concurrency::asend](reference/concurrency-namespace-functions.md#asend) function sends a message to the specified target asynchronously. Both the `send` and `asend` functions wait until the target indicates that it will eventually accept or decline the message.
 
-The `send` function waits until the target accepts or declines the message before it returns. The `send` function returns `true` if the message was delivered and `false` otherwise. Because the `send` function works synchronously, the `send` function waits for the target to receive the message before it returns.
+The `send` function waits until the target accepts or declines the message before it returns. The `send` function returns **true** if the message was delivered and **false** otherwise. Because the `send` function works synchronously, the `send` function waits for the target to receive the message before it returns.
 
 Conversely, the `asend` function does not wait for the target to accept or decline the message before it returns. Instead, the `asend` function returns `true` if the target accepts the message and will eventually take it. Otherwise, `asend` returns `false` to indicate that the target either declined the message or postponed the decision about whether to take the message.
 

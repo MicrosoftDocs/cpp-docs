@@ -218,7 +218,7 @@ The object to compare.
 
 ### Return Value
 
-`true` if `str` is equal to the current object; otherwise, `false`.
+**true** if `str` is equal to the current object; otherwise, **false**.
 
 ### Remarks
 
@@ -250,7 +250,7 @@ bool IsEmpty();
 
 ### Return Value
 
-`true` if the current String object is `null` or the empty string (L""); otherwise, `false`.
+**true** if the current `String` object is **null** or the empty string (L""); otherwise, **false**.
 
 ## <a name="isfastpass"></a>  String::IsFastPass Method
 
@@ -264,7 +264,7 @@ bool IsFastPass();
 
 ### Return Value
 
-`true` if the current String object is fast-past; otherwise, `false`.
+**true** if the current `String` object is fast-past; otherwise, **false**.
 
 ### Remarks
 
@@ -272,7 +272,7 @@ In a call to a function where a reference-counted object is a parameter, and the
 
 ## <a name="length"></a>  String::Length Method
 
-Retrieves the number of characters in the current String object.
+Retrieves the number of characters in the current `String` object.
 
 ### Syntax
 
@@ -282,7 +282,7 @@ unsigned int Length();
 
 ### Return Value
 
-The number of characters in the current String object.
+The number of characters in the current `String` object.
 
 ### Remarks
 
@@ -315,7 +315,7 @@ The second `String` object, whose contents will be appended to `str1`.
 
 ### Return Value
 
-`true` if `str1` is equal to `str2`; otherwise, `false`.
+**true** if `str1` is equal to `str2`; otherwise, **false**.
 
 ### Remarks
 
@@ -334,14 +334,14 @@ bool String::operator==( String^ str1, String^ str2);
 ### Parameters
 
 *str1*<br/>
-The first String object to compare.
+The first `String` object to compare.
 
 *str2*<br/>
-The second String object to compare.
+The second `String` object to compare.
 
 ### Return Value
 
-`true` if the contents of `str1` are equal to `str2`; otherwise, `false`.
+**true** if the contents of `str1` are equal to `str2`; otherwise, **false**.
 
 ### Remarks
 
@@ -349,7 +349,7 @@ This operator is equivalent to [String::CompareOrdinal](#compareordinal).
 
 ##  <a name="operator-greater-than"></a>  String::operator&gt;
 
-Indicates whether the value of one String object is greater than the value of a second String object.
+Indicates whether the value of one `String` object is greater than the value of a second `String` object.
 
 ### Syntax
 
@@ -360,14 +360,14 @@ bool String::operator>( String^ str1, String^ str2);
 ### Parameters
 
 *str1*<br/>
-The first String object.
+The first `String` object.
 
 *str2*<br/>
-The second String object.
+The second `String` object.
 
 ### Return Value
 
-`true` if the value of `str1` is greater than the value of `str2`; otherwise, `false`.
+**true** if the value of `str1` is greater than the value of `str2`; otherwise, **false**.
 
 ### Remarks
 
@@ -375,7 +375,7 @@ This operator is equivalent to explicitly calling [String::CompareOrdinal](#comp
 
 ## <a name="operator-greater-than-or-equals"></a> String::operator&gt;=
 
-Indicates whether the value of one String object is greater than or equal to the value of a second String object.
+Indicates whether the value of one `String` object is greater than or equal to the value of a second `String` object.
 
 ### Syntax
 
@@ -386,18 +386,18 @@ bool String::operator>=( String^ str1, String^ str2);
 ### Parameters
 
 *str1*<br/>
-The first String object.
+The first `String` object.
 
 *str2*<br/>
-The second String object.
+The second `String` object.
 
 ### Return Value
 
-`true` if the value of `str1` is greater than or equal to the value of `str2`; otherwise, `false`.
+**true** if the value of `str1` is greater than or equal to the value of `str2`; otherwise, **false**.
 
 ## <a name="operator-inequality"></a> String::operator!=
 
-Indicates whether two specifed String objects have different values.
+Indicates whether two specifed `String` objects have different values.
 
 ### Syntax
 
@@ -408,18 +408,18 @@ bool String::operator!=( String^ str1, String^ str2);
 ### Parameters
 
 *str1*<br/>
-The first String object to compare.
+The first `String` object to compare.
 
 *str2*<br/>
-The second String object to compare.
+The second `String` object to compare.
 
 ### Return Value
 
-`true` if `str1` is not equal to `str2`; otherwise, `false`.
+**true** if `str1` is not equal to `str2`; otherwise, **false**.
 
 ## <a name="operator-less-than"></a> String::operator&lt;
 
-Indicates whether the value of one String object is less than the value of a second String object.
+Indicates whether the value of one `String` object is less than the value of a second `String` object.
 
 ### Syntax
 
@@ -430,18 +430,18 @@ bool String::operator<( String^ str1, String^ str2);
 ### Parameters
 
 *str1*<br/>
-The first String object.
+The first `String` object.
 
 *str2*<br/>
-The second String object.
+The second `String` object.
 
 ### Return Value
 
-`true` if the value of `str1` is less than the value of `str2`; otherwise, `false`.
+**true** if the value of *str1* is less than the value of *str2*; otherwise, **false**.
 
 ## <a name="ctor"></a> String::String Constructor
 
-Initializes a new instance of the String class with a copy of the input string data.
+Initializes a new instance of the `String` class with a copy of the input string data.
 
 ### Syntax
 
@@ -470,7 +470,7 @@ String^ s = L"Hello!";
 
 ## <a name="tostring"></a> String::ToString
 
-Returns a String object whose value is the same as the current string.
+Returns a `String` object whose value is the same as the current string.
 
 ### Syntax
 
@@ -480,7 +480,7 @@ String^ String::ToString();
 
 ### Return Value
 
-A String object whose value is the same as the current string.
+A `String` object whose value is the same as the current string.
 
 ## See Also
 

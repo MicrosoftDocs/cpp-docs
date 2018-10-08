@@ -93,7 +93,7 @@ The `index` value to test.
 
 ### Return Value
 
-`true` if the specified `index` value is contained in the `extent` object; otherwise, `false`.
+**true** if the specified *index* value is contained in the `extent` object; otherwise, **false**.
 
 ##  <a name="ctor"></a> extent
 

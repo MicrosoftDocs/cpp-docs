@@ -68,7 +68,7 @@ NewFunc2 = (MYPROC)GetProcAddress( hLib, "Func2" );
 
 C++ also requires that functions either be prototyped or fully defined before they can be referenced or invoked.
 
-Identifiers used in C code that happen to be keywords in C++ (such as `virtual`, `new`, `delete`, `bool`, `true`, `false`, etc.) must be renamed. This can generally be done with simple search-and-replace operations.
+Identifiers used in C code that happen to be keywords in C++ (such as **virtual**, **new**, **delete**, **bool**, **true**, **false**, etc.) must be renamed. This can generally be done with simple search-and-replace operations.
 
 ```
 COMObj1->lpVtbl->Method(COMObj, args);  // C code

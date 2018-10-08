@@ -74,7 +74,7 @@ The value to be stored to the memory location specified in by `_Dest` if `_Dest`
 
 ### Return Value
 
-`true` if the operation is successful; otherwise, `false`.
+**true** if the operation is successful; otherwise, **false**.
 
 ##  <a name="atomic_exchange"></a>  atomic_exchange Function (C++ AMP)
 
