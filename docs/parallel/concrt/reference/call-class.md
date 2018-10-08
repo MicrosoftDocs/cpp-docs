@@ -209,7 +209,7 @@ virtual bool supports_anonymous_source();
 
 ### Return Value
 
-`true` because the block does not postpone offered messages.
+**true** because the block does not postpone offered messages.
 
 ## See Also
 

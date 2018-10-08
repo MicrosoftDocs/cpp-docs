@@ -80,7 +80,7 @@ A reference to the data to be sent.
 
 ### Return Value
 
-`true` if the message was accepted before the method returned, `false` otherwise.
+**true** if the message was accepted before the method returned, **false** otherwise.
 
 ### Remarks
 
@@ -386,7 +386,7 @@ bool __cdecl is_current_task_group_canceling();
 
 ### Return Value
 
-`true` if the task group which is currently executing is canceling, `false` otherwise.
+**true** if the task group which is currently executing is canceling, **false** otherwise.
 
 ### Remarks
 
@@ -649,7 +649,7 @@ A random-access iterator addressing the position one past the final element in t
 An instance of a C++ Standard Library compatible memory allocator.
 
 *_Func*<br/>
-A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns `true` when satisfied and `false` when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.
+A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.
 
 *_Chunk_size*<br/>
 The mimimum size of a chunk that will be split into two for parallel execution.
@@ -1179,7 +1179,7 @@ A random-access iterator addressing the position of the first element in the ran
 A random-access iterator addressing the position one past the final element in the range to be sorted.
 
 *_Func*<br/>
-A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns `true` when satisfied and `false` when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.
+A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.
 
 *_Chunk_size*<br/>
 The mimimum size of a chunk that will be split into two for parallel execution.
@@ -1422,7 +1422,7 @@ A reference to the data to be sent.
 
 ### Return Value
 
-`true` if the message was accepted, `false` otherwise.
+**true** if the message was accepted, **false** otherwise.
 
 ### Remarks
 
@@ -1575,7 +1575,7 @@ The name for the given object.
 
 ##  <a name="try_receive"></a>  try_receive
 
-A general try-receive implementation, allowing a context to look for data from exactly one source and filter the values that are accepted. If the data is not ready, the method will return false.
+A general try-receive implementation, allowing a context to look for data from exactly one source and filter the values that are accepted. If the data is not ready, the method will return **false**.
 
 ```
 template <class T>

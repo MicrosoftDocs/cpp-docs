@@ -136,7 +136,7 @@ STDMETHOD(
 ### Parameters
 
 *fLock*<br/>
-`true` to increment the number of tracked objects. `false` to decrement the number of tracked objects.
+**true** to increment the number of tracked objects. **false** to decrement the number of tracked objects.
 
 ### Return Value
 

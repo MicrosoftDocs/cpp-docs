@@ -106,7 +106,7 @@ Whether to subscribe the current thread and account for it during resource alloc
 
 ### Return Value
 
-The `IExecutionResource` interface for the current thread, if the parameter `doSubscribeCurrentThread` has the value `true`. If the value is `false`, the method returns `NULL`.
+The `IExecutionResource` interface for the current thread, if the parameter `doSubscribeCurrentThread` has the value **true**. If the value is **false**, the method returns NULL.
 
 ### Remarks
 
@@ -114,7 +114,7 @@ Before a scheduler executes any work, it should use this method to request virtu
 
 The Resource Manager grants resources to a scheduler by calling the method [IScheduler::AddVirtualProcessors](ischeduler-structure.md#addvirtualprocessors) with a list of virtual processor roots. The method is invoked as a callback into the scheduler before this method returns.
 
-If the scheduler requested subscription for the current thread by setting the parameter `doSubscribeCurrentThread` to `true`, the method returns an `IExecutionResource` interface. The subscription must be terminated at a later point by using the [IExecutionResource::Remove](iexecutionresource-structure.md#remove) method.
+If the scheduler requested subscription for the current thread by setting the parameter `doSubscribeCurrentThread` to **true**, the method returns an `IExecutionResource` interface. The subscription must be terminated at a later point by using the [IExecutionResource::Remove](iexecutionresource-structure.md#remove) method.
 
 When determining which hardware threads are selected, the Resource Manager will attempt to optimize for processor node affinity. If subscription is requested for the current thread, it is an indication that the current thread intends to participate in the work assigned to this scheduler. In such a case, the allocated virtual processors roots are located on the processor node the current thread is executing on, if possible.
 

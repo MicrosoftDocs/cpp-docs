@@ -191,7 +191,7 @@ A pointer to the `message` object that the caller now has ownership of.
 
 ### Remarks
 
-The `consume` method is similar to `accept`, but must always be preceded by a call to `reserve` that returned `true`.
+The `consume` method is similar to `accept`, but must always be preceded by a call to `reserve` that returned **true**.
 
 ##  <a name="has_value"></a> has_value
 
@@ -204,7 +204,7 @@ bool has_value() const;
 
 ### Return Value
 
-`true` if the block has received a value, `false` otherwise.
+**true** if the block has received a value, **false** otherwise.
 
 ##  <a name="index"></a> index
 
@@ -290,7 +290,7 @@ A pointer to the target block that is calling the `reserve` method.
 
 ### Return Value
 
-`true` if the message was successfully reserved, `false` otherwise. Reservations can fail for many reasons, including: the message was already reserved or accepted by another target, the source could deny reservations, and so forth.
+**true** if the message was successfully reserved, **false** otherwise. Reservations can fail for many reasons, including: the message was already reserved or accepted by another target, the source could deny reservations, and so forth.
 
 ### Remarks
 

@@ -251,7 +251,7 @@ bool empty() const;
 
 ### Return Value
 
-`true` if the concurrent container is empty, `false` otherwise.
+**true** if the concurrent container is empty, **false** otherwise.
 
 ### Remarks
 

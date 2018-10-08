@@ -156,7 +156,7 @@ bool empty() const;
 
 ### Return Value
 
-`true` if the concurrent queue was empty at the moment we looked, `false` otherwise.
+**true** if the concurrent queue was empty at the moment we looked, **false** otherwise.
 
 ### Remarks
 
@@ -208,11 +208,11 @@ A reference to a location to store the dequeued item.
 
 ### Return Value
 
-`true` if an item was successfully dequeued, `false` otherwise.
+**true** if an item was successfully dequeued, **false** otherwise.
 
 ### Remarks
 
-If an item was successfully dequeued, the parameter `_Dest` receives the dequeued value, the original value held in the queue is destroyed, and this function returns `true`. If there was no item to dequeue, this function returns `false` without blocking, and the contents of the `_Dest` parameter are undefined.
+If an item was successfully dequeued, the parameter `_Dest` receives the dequeued value, the original value held in the queue is destroyed, and this function returns **true**. If there was no item to dequeue, this function returns `false` without blocking, and the contents of the `_Dest` parameter are undefined.
 
 `try_pop` is concurrency-safe with respect to calls to the methods `push`, `try_pop`, and `empty`.
 

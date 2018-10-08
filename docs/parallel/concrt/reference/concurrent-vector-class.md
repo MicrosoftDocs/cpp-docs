@@ -372,7 +372,7 @@ bool empty() const;
 
 ### Return Value
 
-`true` if the vector was empty at the moment the function was called, `false` otherwise.
+**true** if the vector was empty at the moment the function was called, **false** otherwise.
 
 ##  <a name="end"></a> end
 

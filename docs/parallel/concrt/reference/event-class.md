@@ -150,7 +150,7 @@ An array of events to wait on. The number of events within the array is indicate
 The count of events within the array supplied in the `_PPEvents` parameter.
 
 *_FWaitAll*<br/>
-If set to the value `true`, the parameter specifies that all events within the array supplied in the `_PPEvents` parameter must become signaled in order to satisfy the wait. If set to the value `false`, it specifies that any event within the array supplied in the `_PPEvents` parameter becoming signaled will satisfy the wait.
+If set to the value **true**, the parameter specifies that all events within the array supplied in the `_PPEvents` parameter must become signaled in order to satisfy the wait. If set to the value **false**, it specifies that any event within the array supplied in the `_PPEvents` parameter becoming signaled will satisfy the wait.
 
 *_Timeout*<br/>
 Indicates the number of milliseconds before the wait times out. The value `COOPERATIVE_TIMEOUT_INFINITE` signifies that there is no timeout.
@@ -164,7 +164,7 @@ If the wait was satisfied, the index within the array supplied in the `_PPEvents
 If the parameter `_FWaitAll` is set to the value `true` to indicate that all events must become signaled to satisfy the wait, the index returned by the function carries no special significance other than the fact that it is not the value `COOPERATIVE_WAIT_TIMEOUT`.
 
 > [!IMPORTANT]
->  In a Universal Windows Platform (UWP) app, do not call `wait_for_multiple` on the ASTA thread because this call can block the current thread and can cause the app to become unresponsive.
+> In a Universal Windows Platform (UWP) app, do not call `wait_for_multiple` on the ASTA thread because this call can block the current thread and can cause the app to become unresponsive.
 
 ## See Also
 

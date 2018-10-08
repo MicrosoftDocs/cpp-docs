@@ -142,7 +142,7 @@ A pointer to the `message` object that the caller now has ownership of.
 
 ### Remarks
 
-The `consume` method is similar to `accept`, but must always be preceded by a call to `reserve` that returned `true`.
+The `consume` method is similar to `accept`, but must always be preceded by a call to `reserve` that returned **true**.
 
 ##  <a name="link_target"></a> link_target
 
