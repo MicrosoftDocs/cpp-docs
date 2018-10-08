@@ -196,7 +196,7 @@ After a pop, the element at the top of the stack is 20.
 
 ## <a name="push"></a>  stack::push
 
-Adds an element to the top end of the stack.
+Adds an element to the top of the stack.
 
 ```cpp
 void push(const Type& val);
