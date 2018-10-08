@@ -102,11 +102,11 @@ bool HasKey(K key);
 ### Parameters
 
 *key*<br/>
-The key used to locate the MapView element. The type of `key` is typename *K*.
+The key used to locate the MapView element. The type of *key* is typename *K*.
 
 ### Return Value
 
-`true` if the key is found; otherwise, `false`.
+**true** if the key is found; otherwise, **false**.
 
 ##  <a name="lookup"></a> MapView::Lookup Method
 

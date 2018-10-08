@@ -127,7 +127,7 @@ Another InputIterator.
 
 ### Return Value
 
-`true` if the current InputIterator is equal to `other`; otherwise, `false`.
+**true** if the current InputIterator is equal to *other*; otherwise, **false**.
 
 ## <a name="operator-increment"></a>  InputIterator::operator++ Operator
 
@@ -167,7 +167,7 @@ Another InputIterator.
 
 ### Return Value
 
-`true` if the current InputIterator is not equal to `other`; otherwise, `false`.
+**true** if the current InputIterator is not equal to *other*; otherwise, **false**.
 
 ## See Also
 

@@ -35,7 +35,7 @@ A string that contains the `level` and `uiAccess` values. For more information, 
 One of *asInvoker*, *highestAvailable*, or *requireAdministrator*. Defaults to asInvoker. For more information, see the Remarks section later in this topic.
 
 *_uiAccess*<br/>
-`true` if you want the application to bypass user interface protection levels and drive input to higher-permission windows on the desktop; otherwise, `false`. Defaults to `false`. Set to `true` only for user interface accessibility applications.
+**true** if you want the application to bypass user interface protection levels and drive input to higher-permission windows on the desktop; otherwise, **false**. Defaults to **false**. Set to **true** only for user interface accessibility applications.
 
 ## Remarks
 

@@ -45,7 +45,7 @@ The operator names in the previous example are placeholders for whatever name yo
 
 ## Cooked literals
 
-In source code any literal whether user-defined or not is essentially a sequence of alphanumeric characters, such as `101`, or `54.7`, or `"hello"` or `true`. The compiler interprets the sequence as an integer, float, const char\* string, and so on. A user-defined literal that accepts as input whatever type the compiler assigned to the literal value is informally known as a *cooked literal*. All the operators above except `_r` and `_t` are cooked literals. For example, a literal `42.0_km` would bind to an operator named _km that had a signature similar to _b and the literal `42_km` would bind to an operator with a signature similar to _a.
+In source code any literal whether user-defined or not is essentially a sequence of alphanumeric characters, such as `101`, or `54.7`, or `"hello"` or **true**. The compiler interprets the sequence as an integer, float, const char\* string, and so on. A user-defined literal that accepts as input whatever type the compiler assigned to the literal value is informally known as a *cooked literal*. All the operators above except `_r` and `_t` are cooked literals. For example, a literal `42.0_km` would bind to an operator named _km that had a signature similar to _b and the literal `42_km` would bind to an operator with a signature similar to _a.
 
 The following example shows how user-defined literals can encourage callers to be explicit about their input. To construct a `Distance`, the user must explicitly specify kilometers or miles by using the appropriate user-defined literal. Of course you can also achieve the same result in other ways, but user-defined literals are less verbose than the alternatives.
 
