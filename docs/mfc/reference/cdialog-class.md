@@ -88,11 +88,7 @@ A modal dialog box closes automatically when the user presses the OK or Cancel b
 
 When you implement a modeless dialog box, always override the `OnCancel` member function and call `DestroyWindow` from within it. Don't call the base class `CDialog::OnCancel`, because it calls `EndDialog`, which will make the dialog box invisible but will not destroy it. You should also override `PostNcDestroy` for modeless dialog boxes in order to delete **this**, since modeless dialog boxes are usually allocated with **new**. Modal dialog boxes are usually constructed on the frame and do not need `PostNcDestroy` cleanup.
 
-For more information on `CDialog`, see:
-
-- [Dialog Boxes](../../mfc/dialog-boxes.md)
-
-- Knowledge Base article Q262954 : HOWTO: Create a Resizeable Dialog Box with Scroll Bars
+For more information on `CDialog`, see [Dialog Boxes](../../mfc/dialog-boxes.md).
 
 ## Inheritance Hierarchy
 
@@ -236,7 +232,7 @@ Use the WS_VISIBLE style in the dialog-box template if the dialog box should app
 
 Use the `CWnd::DestroyWindow` function to destroy a dialog box created by the `CreateIndirect` function.
 
-Dialog boxes that contain ActiveX controls require additional information provided in a DLGINIT resource. For more information, see Knowledge Base article Q231591, " HOWTO: Use a Dialog Template to Create a MFC Dialog with an ActiveX Control." Knowledge Base articles are available at [http://support.microsoft.com](http://support.microsoft.com/).
+Dialog boxes that contain ActiveX controls require additional information provided in a DLGINIT resource.
 
 ##  <a name="domodal"></a>  CDialog::DoModal
 
@@ -365,7 +361,7 @@ Nonzero if the dialog object was created and initialized successfully; otherwise
 
 To create a modal dialog box indirectly, first allocate a global block of memory and fill it with the dialog box template. Then call the empty `CDialog` constructor to construct the dialog-box object. Next, call `InitModalIndirect` to store your handle to the in-memory dialog-box template. The Windows dialog box is created and displayed later, when the [DoModal](#domodal) member function is called.
 
-Dialog boxes that contain ActiveX controls require additional information provided in a DLGINIT resource. For more information, see Knowledge Base article Q231591, " HOWTO: Use a Dialog Template to Create a MFC Dialog with an ActiveX Control." Knowledge Base articles are available at [http://support.microsoft.com](http://support.microsoft.com/).
+Dialog boxes that contain ActiveX controls require additional information provided in a DLGINIT resource.
 
 ##  <a name="mapdialogrect"></a>  CDialog::MapDialogRect
 

@@ -42,8 +42,6 @@ Active technologies include both client and server technologies, including the f
 
 For a discussion of what is still called OLE versus what is now called active technology, see the topics on [OLE](../mfc/ole-in-mfc.md).
 
-Also, see Knowledge Base article Q248019 : HOWTO: Prevent Server Busy Dialog Box From Appearing During a Lengthy COM Operation.
-
 ## In This Section
 
 [Active Document Containment](../mfc/active-document-containment.md)

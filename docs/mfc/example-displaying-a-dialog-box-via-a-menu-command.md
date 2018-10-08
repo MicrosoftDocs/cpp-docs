@@ -82,12 +82,7 @@ The procedures use the following names and values:
 
          [!code-cpp[NVC_MFCControlLadenDialog#48](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_7.cpp)]
 
-Also, see the following Knowledge Base article:
-
-- Q251059 : HOWTO: Provide Your Own Window Class Name for an MFC Dialog Box
-
 ## See Also
 
 [Dialog Boxes](../mfc/dialog-boxes.md)<br/>
 [Modal and Modeless Dialog Boxes](../mfc/modal-and-modeless-dialog-boxes.md)
-

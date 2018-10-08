@@ -172,7 +172,7 @@ void EnableTypeLib();
 
 ### Remarks
 
-Call this member function in the constructor of your `CCmdTarget`-derived object if it provides type information. For more information, see Knowledge Base article Q185720, "HOWTO: Provide Type Information From an MFC Automation Server." Knowledge Base articles are available at [http://support.microsoft.com](http://support.microsoft.com/).
+Call this member function in the constructor of your `CCmdTarget`-derived object if it provides type information.
 
 ##  <a name="endwaitcursor"></a>  CCmdTarget::EndWaitCursor
 
@@ -252,8 +252,6 @@ TRUE if successful, otherwise FALSE. If successful, \* *pIID* is set to the prim
 ### Remarks
 
 Derived classes should override this member function (if not overridden, `GetDispatchIID` returns FALSE). See [COleControl](../../mfc/reference/colecontrol-class.md).
-
-For more information, see Knowledge Base article Q185720, "HOWTO: Provide Type Information From an MFC Automation Server." Knowledge Base articles are available at [http://support.microsoft.com](http://support.microsoft.com/).
 
 ##  <a name="getidispatch"></a>  CCmdTarget::GetIDispatch
 

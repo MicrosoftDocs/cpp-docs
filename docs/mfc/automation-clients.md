@@ -33,7 +33,7 @@ You then specify the type-library file describing the properties and functions o
 
 ### Handling Events in Automation Clients
 
-If you want to handle events in your automation client, you need to add a sink interface. MFC provides wizard support to add sink interfaces for ActiveX controls, but not support for other COM servers. For information on how to add a sink interface in an MFC client for source interfaces described by COM servers, see HOWTO: Create a Sink Interface in MFC-Based COM Client (KB 181845) at [http://support.microsoft.com/default.aspxscid=kb;181845](http://support.microsoft.com/default.aspxscid=kb;181845).
+If you want to handle events in your automation client, you need to add a sink interface. MFC provides wizard support to add sink interfaces for ActiveX controls, but not support for other COM servers.
 
 ## See Also
 

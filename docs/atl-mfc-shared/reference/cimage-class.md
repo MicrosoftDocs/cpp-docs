@@ -261,7 +261,7 @@ A handle to an HBITMAP.
 *eOrientation*<br/>
 Specifies the orientation of the bitmap. Can be one of the following:
 
-- DIBOR_DEFAULT The orientation of the bitmap is determined by the operating system. However, this may not always have the intended results on all operating systems. For more information on this, see the following Knowledge Base article (**Q186586**): PRB: GetObject() Always Returns Positive Height For DIB Sections.
+- DIBOR_DEFAULT The orientation of the bitmap is determined by the operating system.
 
 - DIBOR_BOTTOMUP The lines of the bitmap are in reverse order. This causes [CImage::GetBits](#getbits) to return a pointer near the end of the bitmap buffer and [CImage::GetPitch](#getpitch) to return a negative number.
 

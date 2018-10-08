@@ -27,7 +27,3 @@ If the file is locked by an anti-virus program, you can fix this issue by exclud
 If the file is locked by a search indexing service, you can fix this issue by excluding your build output directories from automatic indexing. Consult the documentation for the indexing service for more information. To change the Windows search indexing service, use **Indexing Options** in the Windows **Control Panel**. For more information, see [Improve Windows searches using the index: frequently asked questions](http://windows.microsoft.com/windows/improve-windows-searches-using-index-faq#1TC=windows-7).
 
 If your executable can’t be overwritten by the build process, it may be locked by File Explorer. If the **Application Experience** service has been disabled, File Explorer may hold on to an executable file handle lock for an extended time. To fix this issue, run **services.msc** and then open the **Properties** dialog box for the **Application Experience** service. Change the **Startup type** from **Disabled** to **Manual**.
-
-## See Also
-
-[You may receive an "error PRJ0008" or "Fatal error LNK1168" error message when you try to build a solution or an ActiveX project in Visual C++](http://support.microsoft.com/kb/308358)

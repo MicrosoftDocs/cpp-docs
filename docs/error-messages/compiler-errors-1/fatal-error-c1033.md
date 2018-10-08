@@ -16,7 +16,4 @@ ms.workload: ["cplusplus"]
 
 cannot open program database pdb
 
-This error can be caused by disk error.
-
-
-For more information, see [http://support.microsoft.com/default.aspx?scid=kb;246007](http://support.microsoft.com/default.aspx?scid=kb;246007).
+This error can be caused by a disk error, a temporary lock created by an anti-virus program, a previous debugger instance that has not fully shut down, or parallel build mspdbsrv.exe processes that attempt to access the same file, among other possible causes.

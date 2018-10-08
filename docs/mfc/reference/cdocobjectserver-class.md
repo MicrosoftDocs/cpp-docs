@@ -54,10 +54,6 @@ To customize your DocObject server, derive your own class from `CDocObjectServer
 
 For further information on DocObjects, see [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md) and [COleCmdUI](../../mfc/reference/colecmdui-class.md) in the *MFC Reference*.
 
-Also see the following Knowledge Base article:
-
-- Q247382 : PRB: ToolTips for Controls in ActiveX Document Server Are Hidden by the ActiveX Document Container
-
 ## Inheritance Hierarchy
 
 [CObject](../../mfc/reference/cobject-class.md)

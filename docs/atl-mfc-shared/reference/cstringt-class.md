@@ -139,7 +139,7 @@ If using in an ATL application:
 `CString`, `CStringA`, and `CStringW` are exported from the MFC DLL (MFC90.DLL), never from user DLLs. This is done to prevent `CStringT` from being multiply defined.
 
 > [!NOTE]
->  If your code contains the workaround for linker errors that is described in [Linking Errors When You Import CString-Derived Classes" (Q309801)](https://support.microsoft.com/help/309801/you-may-receive-an-lnk2019-error-message-when-you-build-a-visual-c-200), you should remove that code. It is no longer needed.
+>  If your code contains the workaround for linker errors that is described in [Exporting String Classes Using CStringT](../../atl-mfc-shared/exporting-string-classes-using-cstringt.md), you should remove that code. It is no longer needed.
 
 The following string types are available within MFC-based applications:
 
