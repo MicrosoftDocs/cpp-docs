@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["frame windows [MFC], about frame widows", "frame windows [MFC], tasks", "MFC, frame windows"]
+helpviewer_keywords: ["frame windows [MFC], about frame windows", "frame windows [MFC], tasks", "MFC, frame windows"]
 ms.assetid: 1148a952-6786-4622-b5a8-68a2d7eae584
 author: "mikeblome"
 ms.author: "mblome"
