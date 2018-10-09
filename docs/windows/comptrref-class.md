@@ -148,7 +148,7 @@ A reference to another `ComPtrRef` object, or a pointer to an anonymous type (`v
 
 The first operator yields **true** if object *a* is equal to object *b*; otherwise, **false**.
 
-The second and third operators yield **true** if object *a* is equal to `nullptr`; otherwise, **false**.
+The second and third operators yield **true** if object *a* is equal to **nullptr**; otherwise, **false**.
 
 The fourth and fifth operators yield **true** if object *a* is equal to object *b*; otherwise, **false**.
 

@@ -92,13 +92,13 @@ MethodReleaseNotifier(
 
 ### Parameters
 
-*object*  
+*object*<br/>
 An object whose member function is an event handler.
 
-*method*  
+*method*<br/>
 The member function of parameter *object* that is the event handler.
 
-*release*  
+*release*<br/>
 Specify **true** to enable calling the underlying [Module::ReleaseNotifier::Release()](../windows/module-releasenotifier-class.md#releasenotifier-release) method; otherwise, specify **false**.
 
 ## <a name="methodreleasenotifier-object"></a>Module::MethodReleaseNotifier::object_
