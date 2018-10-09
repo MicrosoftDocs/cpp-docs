@@ -6171,11 +6171,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/ide/building-external-projects.md",
-            "redirect_url": "/cpp/ide/non-msbuild-projects",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "docs/intrinsics/index.md",
             "redirect_url": "/cpp/intrinsics/compiler-intrinsics-and-assembly-language",
             "redirect_document_id": false
