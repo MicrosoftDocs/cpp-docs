@@ -13,17 +13,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Active Document Classes
-Active documents can be displayed either in the entire client window of a Web browser, such as Internet Explorer 5.5, or in an Active container, such as the Microsoft Office Binder, that supports Active documents.  
-  
- [CDocObjectServer](../mfc/reference/cdocobjectserver-class.md)  
- Maps the Active document interfaces, and initializes and activates an Active document object.  
-  
- [CDocObjectServerItem](../mfc/reference/cdocobjectserveritem-class.md)  
- Implements OLE server verbs specifically for Active document servers.  
-  
- [COleDocObjectItem](../mfc/reference/coledocobjectitem-class.md)  
- Implements Active document containment.  
-  
-## See Also  
- [Class Overview](../mfc/class-library-overview.md)
+
+Active documents can be displayed either in the entire client window of a Web browser, such as Internet Explorer 5.5, or in an Active container, such as the Microsoft Office Binder, that supports Active documents.
+
+[CDocObjectServer](../mfc/reference/cdocobjectserver-class.md)<br/>
+Maps the Active document interfaces, and initializes and activates an Active document object.
+
+[CDocObjectServerItem](../mfc/reference/cdocobjectserveritem-class.md)<br/>
+Implements OLE server verbs specifically for Active document servers.
+
+[COleDocObjectItem](../mfc/reference/coledocobjectitem-class.md)<br/>
+Implements Active document containment.
+
+## See Also
+
+[Class Overview](../mfc/class-library-overview.md)
 

@@ -13,14 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /ERRORREPORT (editbin.exe)
-```  
-/ERRORREPORT[NONE | PROMPT | QUEUE | SEND ]  
-```  
-  
-## Remarks  
- If editbin.exe fails at runtime, you can use **/ERRORREPORT** to send information to Microsoft about these internal errors.  
-  
- For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](../../build/reference/errorreport-report-internal-compiler-errors.md).  
-  
-## See Also  
- [EDITBIN Options](../../build/reference/editbin-options.md)
+
+```
+/ERRORREPORT[NONE | PROMPT | QUEUE | SEND ]
+```
+
+## Remarks
+
+If editbin.exe fails at runtime, you can use **/ERRORREPORT** to send information to Microsoft about these internal errors.
+
+For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](../../build/reference/errorreport-report-internal-compiler-errors.md).
+
+## See Also
+
+[EDITBIN Options](../../build/reference/editbin-options.md)

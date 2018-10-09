@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4305
 
-> '*context*' : truncation from '*type1*' to '*type2*'  
+> '*context*' : truncation from '*type1*' to '*type2*'
 
 ## Remarks
 

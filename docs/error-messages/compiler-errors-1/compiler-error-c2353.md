@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2353
-exception specification is not allowed  
-  
- Exception specifications are not allowed on member functions of managed classes.  
-  
- The following sample generates C2353:  
-  
-```  
-// C2353.cpp  
-// compile with: /clr /c  
-ref class X {  
-   void f() throw(int);   // C2353  
-   void f();   // OK  
-};  
+
+exception specification is not allowed
+
+Exception specifications are not allowed on member functions of managed classes.
+
+The following sample generates C2353:
+
+```
+// C2353.cpp
+// compile with: /clr /c
+ref class X {
+   void f() throw(int);   // C2353
+   void f();   // OK
+};
 ```

@@ -22,15 +22,15 @@ When /DEF is specified, LIB creates the output files from export specifications 
 
 1. A **__declspec(dllexport)** definition in one of the *objfiles* or *libraries*
 
-2. A specification of /EXPORT:*name* on the LIB command line
+1. A specification of /EXPORT:*name* on the LIB command line
 
-3. A definition in an **EXPORTS** statement in a *deffile*
+1. A definition in an **EXPORTS** statement in a *deffile*
 
 These are the same methods you use to specify exports when linking an exporting program. A program can use more than one method. You can specify parts of the LIB command (such as multiple *objfiles* or /EXPORT specifications) in a command file in the LIB command, just as you can in a LINK command.
 
 The following options apply to building an import library and export file:
 
-> **/OUT:** *import*  
+> **/OUT:** *import*
 
 Overrides the default output file name for the *import* library being created. When /OUT is not specified, the default name is the base name of the first object file or library in the LIB command and the extension .lib. The export file is given the same base name as the import library and the extension .exp.
 

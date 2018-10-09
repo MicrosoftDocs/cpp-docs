@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2526
-'identifier1' : C linkage function cannot return C++ class 'identifier2'  
-  
- A function defined with C linkage cannot return a user-defined type.
+
+'identifier1' : C linkage function cannot return C++ class 'identifier2'
+
+A function defined with C linkage cannot return a user-defined type.

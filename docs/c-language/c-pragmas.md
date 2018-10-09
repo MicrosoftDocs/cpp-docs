@@ -27,8 +27,8 @@ A *pragma* instructs the compiler to perform a particular action at compile time
 
 See [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md) for a description of the Microsoft C compiler pragmas.
 
- **END Microsoft Specific**
+**END Microsoft Specific**
 
 ## See also
 
-[Source Files and Source Programs](../c-language/source-files-and-source-programs.md)  
+[Source Files and Source Programs](../c-language/source-files-and-source-programs.md)

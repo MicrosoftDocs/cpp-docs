@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2791
-illegal use of 'super': 'class' does not have any base classes  
-  
- The keyword [super](../../cpp/super.md) was used within the context of a member function of a class that does not have any base classes.  
-  
- The following sample generates C2791:  
-  
-```  
-// C2791.cpp  
-struct D {  
-   void mf() {  
-      __super::mf();   // C2791  
-   }  
-};  
+
+illegal use of 'super': 'class' does not have any base classes
+
+The keyword [super](../../cpp/super.md) was used within the context of a member function of a class that does not have any base classes.
+
+The following sample generates C2791:
+
+```
+// C2791.cpp
+struct D {
+   void mf() {
+      __super::mf();   // C2791
+   }
+};
 ```

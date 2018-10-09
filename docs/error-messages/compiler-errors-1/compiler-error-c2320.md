@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2320
-expected ':' to follow access specifier 'specifier'  
-  
- The keyword `public`, `protected`, or `private` must be followed by a colon.
+
+expected ':' to follow access specifier 'specifier'
+
+The keyword `public`, `protected`, or `private` must be followed by a colon.

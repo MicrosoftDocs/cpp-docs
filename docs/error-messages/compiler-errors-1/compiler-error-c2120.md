@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2120
-'void' illegal with all types  
-  
- The `void` type is used in a declaration with another type.  
-  
- The following sample generates C2120:  
-  
-```  
-// C2120.cpp  
-int main() {  
-   void int i;   // C2120  
-   int j;   // OK  
-}  
+
+'void' illegal with all types
+
+The `void` type is used in a declaration with another type.
+
+The following sample generates C2120:
+
+```
+// C2120.cpp
+int main() {
+   void int i;   // C2120
+   int j;   // OK
+}
 ```

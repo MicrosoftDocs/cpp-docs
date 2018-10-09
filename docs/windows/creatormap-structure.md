@@ -1,12 +1,12 @@
 ---
 title: "CreatorMap Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/21/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["module/Microsoft::WRL::Details::CreatorMap", "implements/Microsoft::WRL::Details::CreatorMap"]
+f1_keywords: ["module/Microsoft::WRL::Details::CreatorMap", "implements/Microsoft::WRL::Details::CreatorMap", "module/Microsoft::WRL::Details::CreatorMap::activationId", "module/Microsoft::WRL::Details::CreatorMap::factoryCache", "module/Microsoft::WRL::Details::CreatorMap::factoryCreator", "module/Microsoft::WRL::Details::CreatorMap::serverName"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CreatorMap structure"]
+helpviewer_keywords: ["Microsoft::WRL::Details::CreatorMap structure", "Microsoft::WRL::Details::CreatorMap::activationId data member", "Microsoft::WRL::Details::CreatorMap::factoryCache data member", "Microsoft::WRL::Details::CreatorMap::factoryCreator data member", "Microsoft::WRL::Details::CreatorMap::serverName data member"]
 ms.assetid: 94e40927-90c3-4107-bca3-3ad2dc4beda9
 author: "mikeblome"
 ms.author: "mblome"
@@ -26,7 +26,7 @@ struct CreatorMap;
 
 Contains information about how to initialize, register, and unregister objects.
 
-**CreatorMap** contains the following information:
+`CreatorMap` contains the following information:
 
 - How to initialize, register, and unregister objects.
 
@@ -38,12 +38,12 @@ Contains information about how to initialize, register, and unregister objects.
 
 ### Public Data Members
 
-|Name|Description|
-|----------|-----------------|
-|[CreatorMap::activationId Data Member](../windows/creatormap-activationid-data-member.md)|Represents an object ID that is identified either by a classic COM class ID or a Windows Runtime name.|
-|[CreatorMap::factoryCache Data Member](../windows/creatormap-factorycache-data-member.md)|Stores the pointer to the factory cache for the **CreatorMap**.|
-|[CreatorMap::factoryCreator Data Member](../windows/creatormap-factorycreator-data-member.md)|Creates a factory for the specified **CreatorMap**.|
-|[CreatorMap::serverName Data Member](../windows/creatormap-servername-data-member.md)|Stores the server name for the **CreatorMap**.|
+Name                                          | Description
+--------------------------------------------- | ------------------------------------------------------------------------------------------------------
+[CreatorMap::activationId](#activationid)     | Represents an object ID that is identified either by a classic COM class ID or a Windows Runtime name.
+[CreatorMap::factoryCache](#factorycache)     | Stores the pointer to the factory cache for the `CreatorMap`.
+[CreatorMap::factoryCreator](#factorycreator) | Creates a factory for the specified `CreatorMap`.
+[CreatorMap::serverName](#servername)         | Stores the server name for the `CreatorMap`.
 
 ## Inheritance Hierarchy
 
@@ -55,6 +55,83 @@ Contains information about how to initialize, register, and unregister objects.
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## <a name="activationid"></a>CreatorMap::activationId
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+```cpp
+union {
+   const IID* clsid;
+   const wchar_t* (*getRuntimeName)();
+} activationId;
+```
+
+### Parameters
+
+*clsid*<br/>
+An interface ID.
+
+*getRuntimeName*<br/>
+A function that retrieves the Windows runtime name of an object.
+
+### Remarks
+
+Represents an object ID that is identified either by a classic COM class ID or a Windows runtime name.
+
+## <a name="factorycache"></a>CreatorMap::factoryCache
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+```cpp
+FactoryCache* factoryCache;
+```
+
+### Remarks
+
+Stores the pointer to the factory cache for the `CreatorMap`.
+
+## <a name="factorycreator"></a>CreatorMap::factoryCreator
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+```cpp
+HRESULT (*factoryCreator)(
+   unsigned int* currentflags,
+   const CreatorMap* entry,
+   REFIID iidClassFactory,
+IUnknown** factory);
+```
+
+### Parameters
+
+*currentflags*<br/>
+One of the [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumerators.
+
+*entry*<br/>
+A CreatorMap.
+
+*iidClassFactory*<br/>
+The interface ID of a class factory.
+
+*factory*<br/>
+When the operation completes, the address of a class factory.
+
+### Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+### Remarks
+
+Creates a factory for the specified CreatorMap.
+
+## <a name="servername"></a>CreatorMap::serverName
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+```cpp
+const wchar_t* serverName;
+```
+
+### Remarks
+
+Stores the server name for the CreatorMap.

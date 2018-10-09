@@ -19,7 +19,7 @@ Introduces a section of one or more export definitions that specify the exported
 ```DEF
 EXPORTS
    definition
-```  
+```
 
 ## Remarks
 
@@ -65,17 +65,17 @@ The optional keyword **DATA** specifies that an export is data, not code. This e
 ```DEF
 EXPORTS
    exported_global DATA
-```  
+```
 
 There are four ways to export a definition, listed in recommended order:
 
 1. The [__declspec(dllexport)](../../cpp/dllexport-dllimport.md) keyword in the source code
 
-2. An `EXPORTS` statement in a .DEF file
+1. An `EXPORTS` statement in a .DEF file
 
-3. An [/EXPORT](../../build/reference/export-exports-a-function.md) specification in a LINK command
+1. An [/EXPORT](../../build/reference/export-exports-a-function.md) specification in a LINK command
 
-4. A [comment](../../preprocessor/comment-c-cpp.md) directive in the source code, of the form `#pragma comment(linker, "/export: definition ")`. The following example shows a #pragma comment directive before a function declaration, where `PlainFuncName` is the undecorated name, and `_PlainFuncName@4` is the decorated name of the function:
+1. A [comment](../../preprocessor/comment-c-cpp.md) directive in the source code, of the form `#pragma comment(linker, "/export: definition ")`. The following example shows a #pragma comment directive before a function declaration, where `PlainFuncName` is the undecorated name, and `_PlainFuncName@4` is the decorated name of the function:
 
     ```cpp
     #pragma comment(linker, "/export:PlainFuncName=_PlainFuncName@4")
@@ -84,7 +84,7 @@ There are four ways to export a definition, listed in recommended order:
 
 The #pragma directive is useful if you need to export an undecorated function name, and have different exports depending on the build configuration (for example, in 32-bit or 64-bit builds).
 
-All four methods can be used in the same program. When LINK builds a program that contains exports, it also creates an import library, unless an .EXP file is used in the build. 
+All four methods can be used in the same program. When LINK builds a program that contains exports, it also creates an import library, unless an .EXP file is used in the build.
 
 Here's an example of an EXPORTS section:
 
@@ -95,7 +95,7 @@ EXPORTS
    DllGetClassObject    @4 NONAME   PRIVATE
    DllRegisterServer    @7
    DllUnregisterServer
-```  
+```
 
 When you export a variable from a DLL by using a .DEF file, you do not have to specify `__declspec(dllexport)` on the variable. However, in any file that uses the DLL, you must still use `__declspec(dllimport)` on the declaration of data.
 

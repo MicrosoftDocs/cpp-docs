@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2543
-expected ']' for operator '[]'  
-  
- The subscripting operator is missing a left bracket.  
-  
- This error can be caused by macro expansion.
+
+expected ']' for operator '[]'
+
+The subscripting operator is missing a left bracket.
+
+This error can be caused by macro expansion.

@@ -1,7 +1,7 @@
 ---
 title: "WeakRef Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/07/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::WeakRef", "client/Microsoft::WRL::WeakRef::~WeakRef", "client/Microsoft::WRL::WeakRef::As", "client/Microsoft::WRL::WeakRef::AsIID", "client/Microsoft::WRL::WeakRef::CopyTo", "client/Microsoft::WRL::WeakRef::operator&", "client/Microsoft::WRL::WeakRef::WeakRef"]
@@ -19,7 +19,7 @@ Represents a *weak reference* that can be used by only the Windows Runtime, not 
 ## Syntax
 
 ```cpp
-class WeakRef : public ComPtr<IWeakReference>
+class WeakRef : public ComPtr<IWeakReference>;
 ```
 
 ## Members
@@ -117,10 +117,10 @@ HRESULT As(
 
 ### Parameters
 
-*U*  
+*U*<br/>
 An interface ID.
 
-*ptr*  
+*ptr*<br/>
 When this operation completes, an object that represents parameter *U*.
 
 ### Return Value
@@ -152,10 +152,10 @@ HRESULT AsIID(
 
 ### Parameters
 
-*riid*  
+*riid*<br/>
 An interface ID.
 
-*ptr*  
+*ptr*<br/>
 When this operation completes, an object that represents parameter *riid*.
 
 ### Return Value
@@ -196,13 +196,13 @@ HRESULT CopyTo(
 
 ### Parameters
 
-*U*  
+*U*<br/>
 Pointer an `IInspectable` interface. An error is emitted if *U* is not derived from `IInspectable`.
 
-*riid*  
+*riid*<br/>
 An interface ID. An error is emitted if *riid* is not derived from `IWeakReference`.
 
-*ptr*  
+*ptr*<br/>
 A doubly-indirect pointer to `IInspectable` or `IWeakReference`.
 
 ### Return Value
@@ -260,7 +260,7 @@ WeakRef(
 
 ### Parameters
 
-*ptr*  
+*ptr*<br/>
 A pointer, reference, or rvalue-reference to an existing object that initializes the current `WeakRef` object.
 
 ### Remarks

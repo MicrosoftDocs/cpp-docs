@@ -25,10 +25,10 @@ InspectableClass(
 
 ### Parameters
 
-*runtimeClassName*  
+*runtimeClassName*<br/>
 The full textual name of the runtime class.
 
-*trustLevel*  
+*trustLevel*<br/>
 One of the [TrustLevel](https://msdn.microsoft.com/library/br224625.aspx) enumerated values.
 
 ## Remarks

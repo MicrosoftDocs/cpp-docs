@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1065
-compiler limit : out of tags  
-  
- The source file contains more than 65,523 classes, structs, unions, namespaces, or enums.  
-  
- Split the file into smaller files.
+
+compiler limit : out of tags
+
+The source file contains more than 65,523 classes, structs, unions, namespaces, or enums.
+
+Split the file into smaller files.

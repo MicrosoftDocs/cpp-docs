@@ -13,32 +13,33 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2046
-illegal case  
-  
- The keyword `case` can appear only in a `switch` statement.  
-  
- The following sample generates C2046:  
-  
-```  
-// C2046.cpp  
-int main() {  
-   case 0:   // C2046  
-}  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2046b.cpp  
-int main() {  
-   int i = 0;  
-  
-   switch(i) {  
-      case 0:  
-      break;  
-  
-      default:  
-      break;  
-   }  
-}  
+
+illegal case
+
+The keyword `case` can appear only in a `switch` statement.
+
+The following sample generates C2046:
+
+```
+// C2046.cpp
+int main() {
+   case 0:   // C2046
+}
+```
+
+Possible resolution:
+
+```
+// C2046b.cpp
+int main() {
+   int i = 0;
+
+   switch(i) {
+      case 0:
+      break;
+
+      default:
+      break;
+   }
+}
 ```

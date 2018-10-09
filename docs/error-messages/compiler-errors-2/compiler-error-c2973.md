@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2973
-invalid template argument 'number'  
-  
- Check the template definition to find the correct types.
+
+invalid template argument 'number'
+
+Check the template definition to find the correct types.

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1086
-Cannot seek filetype file: 'file': message  
-  
- The compiler cannot complete an I/O operation.
+
+Cannot seek filetype file: 'file': message
+
+The compiler cannot complete an I/O operation.

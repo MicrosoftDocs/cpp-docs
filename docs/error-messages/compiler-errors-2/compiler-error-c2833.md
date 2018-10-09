@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2833
-'operator operator' is not a recognized operator or type  
-  
- The word `operator` must be followed by an operator that you want to override or a type you want to convert.  
-  
- For a list of the operators that you can define in a managed type, see [User-defined Operators](../../dotnet/user-defined-operators-cpp-cli.md).  
-  
- The following sample generates C2833:  
-  
-```  
-// C2833.cpp  
-// compile with: /c  
-class A {};  
-  
-void operator ::* ();   // C2833  
-void operator :: ();   // OK  
+
+'operator operator' is not a recognized operator or type
+
+The word `operator` must be followed by an operator that you want to override or a type you want to convert.
+
+For a list of the operators that you can define in a managed type, see [User-defined Operators](../../dotnet/user-defined-operators-cpp-cli.md).
+
+The following sample generates C2833:
+
+```
+// C2833.cpp
+// compile with: /c
+class A {};
+
+void operator ::* ();   // C2833
+void operator :: ();   // OK
 ```

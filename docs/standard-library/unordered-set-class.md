@@ -190,38 +190,38 @@ int main()
 
     // display contents using range-based for
     for (auto it : c1) {
-    cout << " [" << it << "]";
+    cout << "[" << it << "] ";
     }
 
     cout << endl;
 
     // display contents using explicit for
     for (MySet::const_iterator it = c1.begin(); it != c1.end(); ++it) {
-        cout << " [" << *it << "]";
+        cout << "[" << *it << "] ";
     }
 
     cout << std::endl;
 
     // display first two items
     MySet::iterator it2 = c1.begin();
-    cout << " [" << *it2 << "]";
+    cout << "[" << *it2 << "] ";
     ++it2;
-    cout << " [" << *it2 << "]";
+    cout << "[" << *it2 << "] ";
     cout << endl;
 
     // display bucket containing 'a'
     MySet::const_local_iterator lit = c1.begin(c1.bucket('a'));
-    cout << " [" << *lit << "]";
+    cout << "[" << *lit << "] ";
 
     return (0);
 }
 ```
 
 ```Output
- [a] [b] [c]
- [a] [b] [c]
- [a] [b]
- [a]
+[a] [b] [c]
+[a] [b] [c]
+[a] [b]
+[a]
 ```
 
 ## <a name="bucket"></a>  unordered_set::bucket
@@ -234,8 +234,8 @@ size_type bucket(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*  
- The key value to map.
+*keyval*<br/>
+The key value to map.
 
 ### Remarks
 
@@ -258,9 +258,9 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     // display buckets for keys
@@ -274,7 +274,7 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 bucket('a') == 7
 bucket_size(7) == 1
 ```
@@ -308,9 +308,9 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     // inspect current parameters
@@ -347,7 +347,7 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 bucket_count() == 8
 load_factor() == 0.375
 max_bucket_count() == 8
@@ -374,8 +374,8 @@ size_type bucket_size(size_type nbucket) const;
 
 ### Parameters
 
-*nbucket*  
- The bucket number.
+*nbucket*<br/>
+The bucket number.
 
 ### Remarks
 
@@ -398,9 +398,9 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     // display buckets for keys
@@ -414,7 +414,7 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 bucket('a') == 7
 bucket_size(7) == 1
 ```
@@ -502,9 +502,9 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     // clear the container and reinspect
@@ -516,9 +516,9 @@ int main()
     c1.insert('d');
     c1.insert('e');
 
-    // display contents " [e] [d]"
+    // display contents "[e] [d] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     std::cout << "size == " << c1.size() << std::endl;
@@ -529,10 +529,10 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 size == 0
 empty() == true
- [e] [d]
+[e] [d]
 size == 2
 empty() == false
 ```
@@ -566,9 +566,9 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-    std::cout << " [" << *it << "]";
+    std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     return (0);
@@ -576,7 +576,7 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 ```
 
 ## <a name="const_local_iterator"></a>  unordered_set::const_local_iterator
@@ -608,22 +608,22 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     // inspect bucket containing 'a'
     Myset::const_local_iterator lit = c1.begin(c1.bucket('a'));
-    std::cout << " [" << *lit << "]";
+    std::cout << "[" << *lit << "] ";
 
     return (0);
 }
 ```
 
 ```Output
- [c] [b] [a]
- [a]
+[c] [b] [a]
+[a]
 ```
 
 ## <a name="const_pointer"></a>  unordered_set::const_pointer
@@ -655,11 +655,11 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::iterator it = c1.begin(); it != c1.end(); ++it)
     {
         Myset::const_pointer p = &*it;
-        std::cout << " [" << *p << "]";
+        std::cout << "[" << *p << "] ";
     }
     std::cout << std::endl;
 
@@ -668,7 +668,7 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 ```
 
 ## <a name="const_reference"></a>  unordered_set::const_reference
@@ -700,11 +700,11 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::iterator it = c1.begin(); it != c1.end(); ++it)
     {
         Myset::const_reference ref = *it;
-        std::cout << " [" << ref << "]";
+        std::cout << "[" << ref << "] ";
     }
     std::cout << std::endl;
 
@@ -713,7 +713,7 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 ```
 
 ## <a name="count"></a>  unordered_set::count
@@ -726,8 +726,8 @@ size_type count(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*  
- Key value to search for.
+*keyval*<br/>
+Key value to search for.
 
 ### Remarks
 
@@ -750,9 +750,9 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     std::cout << "count('A') == " << c1.count('A') << std::endl;
@@ -764,7 +764,7 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 count('A') == 0
 count('b') == 1
 count('C') == 0
@@ -799,9 +799,9 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     // compute positive difference
@@ -821,7 +821,7 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 end()-begin() == 3
 begin()-end() == -3
 ```
@@ -918,9 +918,9 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     // clear the container and reinspect
@@ -932,9 +932,9 @@ int main()
     c1.insert('d');
     c1.insert('e');
 
-    // display contents " [e] [d]"
+    // display contents "[e] [d] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     std::cout << "size == " << c1.size() << std::endl;
@@ -945,10 +945,10 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 size == 0
 empty() == true
- [e] [d]
+[e] [d]
 size == 2
 empty() == false
 ```
@@ -994,32 +994,32 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
-    // inspect last two items " [a] [b]"
+    // inspect last two items "[a] [b] "
     Myset::iterator it2 = c1.end();
     --it2;
-    std::cout << " [" << *it2 << "]";
+    std::cout << "[" << *it2 << "] ";
     --it2;
-    std::cout << " [" << *it2 << "]";
+    std::cout << "[" << *it2 << "] ";
     std::cout << std::endl;
 
     // inspect bucket containing 'a'
     Myset::const_local_iterator lit = c1.end(c1.bucket('a'));
     --lit;
-    std::cout << " [" << *lit << "]";
+    std::cout << "[" << *lit << "] ";
 
     return (0);
 }
 ```
 
 ```Output
- [c] [b] [a]
- [a] [b]
- [a]
+[c] [b] [a]
+[a] [b]
+[a]
 ```
 
 ## <a name="equal_range"></a>  unordered_set::equal_range
@@ -1036,8 +1036,8 @@ equal_range(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*  
- Key value to search for.
+*keyval*<br/>
+Key value to search for.
 
 ### Remarks
 
@@ -1060,9 +1060,9 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     // display results of failed search
@@ -1070,14 +1070,14 @@ int main()
     c1.equal_range('x');
     std::cout << "equal_range('x'):";
     for (; pair1.first != pair1.second; ++pair1.first)
-        std::cout << " [" << *pair1.first << "]";
+        std::cout << "[" << *pair1.first << "] ";
     std::cout << std::endl;
 
     // display results of successful search
     pair1 = c1.equal_range('b');
     std::cout << "equal_range('b'):";
     for (; pair1.first != pair1.second; ++pair1.first)
-        std::cout << " [" << *pair1.first << "]";
+        std::cout << "[" << *pair1.first << "] ";
     std::cout << std::endl;
 
     return (0);
@@ -1085,7 +1085,7 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 equal_range('x'):
 equal_range('b'): [b]
 ```
@@ -1104,17 +1104,17 @@ size_type erase(const key_type& Key);
 
 ### Parameters
 
-*Where*  
- Position of the element to be removed.
+*Where*<br/>
+Position of the element to be removed.
 
-*First*  
- Position of the first element to be removed.
+*First*<br/>
+Position of the first element to be removed.
 
-*Last*  
- Position just beyond the last element to be removed.
+*Last*<br/>
+Position just beyond the last element to be removed.
 
-*Key*  
- The key value of the elements to be removed.
+*Key*<br/>
+The key value of the elements to be removed.
 
 ### Return Value
 
@@ -1136,8 +1136,8 @@ const_iterator find(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*  
- Key value to search for.
+*keyval*<br/>
+Key value to search for.
 
 ### Remarks
 
@@ -1160,9 +1160,9 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     // try to find and fail
@@ -1173,14 +1173,14 @@ int main()
     Myset::iterator it = c1.find('b');
     std::cout << "find('b') == "
     << std::boolalpha << (it != c1.end())
-    << ": [" << *it << "]" << std::endl;
+    << ": [" << *it << "] " << std::endl;
 
     return (0);
 }
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 find('A') == false
 find('b') == true: [b]
 ```
@@ -1483,9 +1483,9 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     // add a value and reinspect
@@ -1494,7 +1494,7 @@ int main()
     c1.insert(val);
 
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     return (0);
@@ -1502,8 +1502,8 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
- [d] [c] [b] [a]
+[c] [b] [a]
+[d] [c] [b] [a]
 ```
 
 ## <a name="load_factor"></a>  unordered_set::load_factor
@@ -1535,9 +1535,9 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     // inspect current parameters
@@ -1574,7 +1574,7 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 bucket_count() == 8
 load_factor() == 0.375
 max_bucket_count() == 8
@@ -1620,22 +1620,22 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     // inspect bucket containing 'a'
     Myset::local_iterator lit = c1.begin(c1.bucket('a'));
-    std::cout << " [" << *lit << "]";
+    std::cout << "[" << *lit << "] ";
 
     return (0);
 }
 ```
 
 ```Output
- [c] [b] [a]
- [a]
+[c] [b] [a]
+[a]
 ```
 
 ## <a name="max_bucket_count"></a>  unordered_set::max_bucket_count
@@ -1667,9 +1667,9 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     // inspect current parameters
@@ -1706,7 +1706,7 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 bucket_count() == 8
 load_factor() == 0.375
 max_bucket_count() == 8
@@ -1735,8 +1735,8 @@ void max_load_factor(float factor);
 
 ### Parameters
 
-*factor*  
- The new maximum load factor.
+*factor*<br/>
+The new maximum load factor.
 
 ### Remarks
 
@@ -1759,9 +1759,9 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     // inspect current parameters
@@ -1798,7 +1798,7 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 bucket_count() == 8
 load_factor() == 0.375
 max_bucket_count() == 8
@@ -1936,12 +1936,12 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::iterator it = c1.begin(); it != c1.end(); ++it)
     {
         Myset::key_type key = *it;
         Myset::pointer p = &key;
-        std::cout << " [" << *p << "]";
+        std::cout << "[" << *p << "] ";
     }
     std::cout << std::endl;
 
@@ -1950,7 +1950,7 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 ```
 
 ## <a name="reference"></a>  unordered_set::reference
@@ -1982,12 +1982,12 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::iterator it = c1.begin(); it != c1.end(); ++it)
     {
         Myset::key_type key = *it;
         Myset::reference ref = key;
-        std::cout << " [" << ref << "]";
+        std::cout << "[" << ref << "] ";
     }
     std::cout << std::endl;
 
@@ -1996,7 +1996,7 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 ```
 
 ## <a name="rehash"></a>  unordered_set::rehash
@@ -2009,8 +2009,8 @@ void rehash(size_type nbuckets);
 
 ### Parameters
 
-*nbuckets*  
- The requested number of buckets.
+*nbuckets*<br/>
+The requested number of buckets.
 
 ### Remarks
 
@@ -2033,9 +2033,9 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     // inspect current parameters
@@ -2062,7 +2062,7 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 bucket_count() == 8
 load_factor() == 0.375
 max_load_factor() == 4
@@ -2105,9 +2105,9 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     // clear the container and reinspect
@@ -2119,9 +2119,9 @@ int main()
     c1.insert('d');
     c1.insert('e');
 
-    // display contents " [e] [d]"
+    // display contents "[e] [d] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     std::cout << "size == " << c1.size() << std::endl;
@@ -2132,7 +2132,7 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
+[c] [b] [a]
 size == 0
 empty() == true
 
@@ -2187,8 +2187,8 @@ void swap(unordered_set& right);
 
 ### Parameters
 
-*right*  
- The container to swap with.
+*right*<br/>
+The container to swap with.
 
 ### Remarks
 
@@ -2211,9 +2211,9 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     Myset c2;
@@ -2224,16 +2224,16 @@ int main()
 
     c1.swap(c2);
 
-    // display contents " [f] [e] [d]"
+    // display contents "[f] [e] [d] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     swap(c1, c2);
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     return (0);
@@ -2241,9 +2241,9 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
- [f] [e] [d]
- [c] [b] [a]
+[c] [b] [a]
+[f] [e] [d]
+[c] [b] [a]
 ```
 
 ## <a name="unordered_set"></a>  unordered_set::unordered_set
@@ -2348,9 +2348,9 @@ int main()
     c1.insert('b');
     c1.insert('c');
 
-    // display contents " [c] [b] [a]"
+    // display contents "[c] [b] [a] "
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     // add a value and reinspect
@@ -2359,7 +2359,7 @@ int main()
     c1.insert(val);
 
     for (Myset::const_iterator it = c1.begin(); it != c1.end(); ++it)
-        std::cout << " [" << *it << "]";
+        std::cout << "[" << *it << "] ";
     std::cout << std::endl;
 
     return (0);
@@ -2367,8 +2367,8 @@ int main()
 ```
 
 ```Output
- [c] [b] [a]
- [d] [c] [b] [a]
+[c] [b] [a]
+[d] [c] [b] [a]
 ```
 
 ## See also

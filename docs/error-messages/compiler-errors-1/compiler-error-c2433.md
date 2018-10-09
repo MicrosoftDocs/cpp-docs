@@ -13,18 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2433
-'identifier' : 'modifier' not permitted on data declarations  
-  
- The `friend`, `virtual`, and `inline` modifiers cannot be used for data declarations.  
-  
-## Example  
- The following sample generates C2433.  
-  
-```  
-// C2433.cpp  
-class C{};  
-  
-int main() {  
-   inline C c;   // C2433  
-}  
+
+'identifier' : 'modifier' not permitted on data declarations
+
+The `friend`, `virtual`, and `inline` modifiers cannot be used for data declarations.
+
+## Example
+
+The following sample generates C2433.
+
+```
+// C2433.cpp
+class C{};
+
+int main() {
+   inline C c;   // C2433
+}
 ```

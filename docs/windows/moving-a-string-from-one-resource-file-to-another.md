@@ -37,6 +37,6 @@ Win32
 
 ## See Also
 
-[String Editor](../windows/string-editor.md)  
-[Resource Files](../windows/resource-files-visual-studio.md)  
+[String Editor](../windows/string-editor.md)<br/>
+[Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [Customizing window layouts](/visualstudio/ide/customizing-window-layouts-in-visual-studio)  

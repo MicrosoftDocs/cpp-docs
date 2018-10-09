@@ -30,16 +30,16 @@ constexpr ctor (params);
 
 ## Parameters
 
- *params*  
+*params*<br/>
 One or more parameters which must be a literal type and must itself be a constant expression.
 
 ## Return Value
 
- A constexpr variable or function must return a [literal type](trivial-standard-layout-and-pod-types.md#literal_types).
+A constexpr variable or function must return a [literal type](trivial-standard-layout-and-pod-types.md#literal_types).
 
 ## constexpr variables
 
- The primary difference between const and constexpr variables is that the initialization of a const variable can be deferred until run time whereas a constexpr variable must be initialized at compile time.  All constexpr variables are const.
+The primary difference between const and constexpr variables is that the initialization of a const variable can be deferred until run time whereas a constexpr variable must be initialized at compile time.  All constexpr variables are const.
 
 - A variable can be declared with **constexpr**, if it has a literal type and is initialized. If the initialization is performed by a constructor, the constructor must be declared as **constexpr**.
 
@@ -81,7 +81,7 @@ The following rules apply to constexpr functions:
 The following rules apply to **constexpr** functions in Visual Studio 2017 and later:
 
 - It may contain **if** and **switch** statements, and all looping statements including **for**, range-based for, **while**, and **do-while**.
- 
+
 - It may contain local variable declarations, but the variable must be initialized, must be a literal type, and cannot be static or thread-local. The locally-declared variable is not required to be const and may mutate.
 
 - A constexpr non-static member function is not required to be implicitly const.
@@ -105,7 +105,7 @@ The [/Zc:externConstexpr](../build/reference/zc-externconstexpr.md) compiler opt
 
 ## Example
 
- The following example shows **constexpr** variables, functions and a user-defined type. Note that in the last statement in main(), the **constexpr** member function GetValue() is a run-time call because the value is not required to be known at compile time.
+The following example shows **constexpr** variables, functions and a user-defined type. Note that in the last statement in main(), the **constexpr** member function GetValue() is a run-time call because the value is not required to be known at compile time.
 
 ```cpp
 #include <iostream>
@@ -179,5 +179,6 @@ int main()
 Visual Studio 2015
 
 ## See also
- [Declarations and Definitions](../cpp/declarations-and-definitions-cpp.md)  
- [const](../cpp/const-cpp.md)
+
+[Declarations and Definitions](../cpp/declarations-and-definitions-cpp.md)<br/>
+[const](../cpp/const-cpp.md)

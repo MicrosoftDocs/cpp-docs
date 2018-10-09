@@ -13,74 +13,78 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_handle::release
-Releases the object from `auto_handle` management.  
-  
-## Syntax  
-  
-```  
-_element_type ^ release();  
-```  
-  
-## Return Value  
- The released object.  
-  
-## Example  
-  
-```  
-// msl_auto_handle_release.cpp  
-// compile with: /clr  
-#include <msclr\auto_handle.h>  
-  
-using namespace System;  
-using namespace msclr;  
-  
-ref class ClassA {  
-   String^ m_s;  
-public:  
-   ClassA( String^ s ) : m_s( s ) {  
-      Console::WriteLine( "ClassA constructor: " + m_s );  
-   }  
-   ~ClassA() {  
-      Console::WriteLine( "ClassA destructor: " + m_s );  
-   }  
-  
-   void PrintHello() {  
-      Console::WriteLine( "Hello from {0} A!", m_s );     
-   }  
-};  
-  
-int main()  
-{  
-   ClassA^ a;  
-  
-   // create a new scope:  
-   {  
-      auto_handle<ClassA> agc1 = gcnew ClassA( "first" );  
-      auto_handle<ClassA> agc2 = gcnew ClassA( "second" );  
-      a = agc1.release();  
-   }  
-   // agc1 and agc2 go out of scope here  
-  
-   a->PrintHello();  
-  
-   Console::WriteLine( "done" );  
-}  
-```  
-  
-```Output  
-ClassA constructor: first  
-ClassA constructor: second  
-ClassA destructor: second  
-Hello from first A!  
-done  
-```  
-  
-## Requirements  
- **Header file** \<msclr\auto_handle.h>  
-  
- **Namespace** msclr  
-  
-## See Also  
- [auto_handle Members](../dotnet/auto-handle-members.md)   
- [auto_handle::~auto_handle](../dotnet/auto-handle-tilde-auto-handle.md)   
- [auto_handle::reset](../dotnet/auto-handle-reset.md)
+
+Releases the object from `auto_handle` management.
+
+## Syntax
+
+```
+_element_type ^ release();
+```
+
+## Return Value
+
+The released object.
+
+## Example
+
+```
+// msl_auto_handle_release.cpp
+// compile with: /clr
+#include <msclr\auto_handle.h>
+
+using namespace System;
+using namespace msclr;
+
+ref class ClassA {
+   String^ m_s;
+public:
+   ClassA( String^ s ) : m_s( s ) {
+      Console::WriteLine( "ClassA constructor: " + m_s );
+   }
+   ~ClassA() {
+      Console::WriteLine( "ClassA destructor: " + m_s );
+   }
+
+   void PrintHello() {
+      Console::WriteLine( "Hello from {0} A!", m_s );
+   }
+};
+
+int main()
+{
+   ClassA^ a;
+
+   // create a new scope:
+   {
+      auto_handle<ClassA> agc1 = gcnew ClassA( "first" );
+      auto_handle<ClassA> agc2 = gcnew ClassA( "second" );
+      a = agc1.release();
+   }
+   // agc1 and agc2 go out of scope here
+
+   a->PrintHello();
+
+   Console::WriteLine( "done" );
+}
+```
+
+```Output
+ClassA constructor: first
+ClassA constructor: second
+ClassA destructor: second
+Hello from first A!
+done
+```
+
+## Requirements
+
+**Header file** \<msclr\auto_handle.h>
+
+**Namespace** msclr
+
+## See Also
+
+[auto_handle Members](../dotnet/auto-handle-members.md)<br/>
+[auto_handle::~auto_handle](../dotnet/auto-handle-tilde-auto-handle.md)<br/>
+[auto_handle::reset](../dotnet/auto-handle-reset.md)

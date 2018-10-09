@@ -12,49 +12,50 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Initializing Arrays
-If a class has a constructor, arrays of that class are initialized by a constructor. If there are fewer items in the initializer list than elements in the array, the default constructor is used for the remaining elements. If no default constructor is defined for the class, the initializer list must be complete — that is, there must be one initializer for each element in the array.  
-  
- Consider the `Point` class that defines two constructors:  
-  
-```cpp 
-// initializing_arrays1.cpp  
-class Point  
-{  
-public:  
-   Point()   // Default constructor.  
-   {  
-   }  
-   Point( int, int )   // Construct from two ints  
-   {  
-   }  
-};  
-  
-// An array of Point objects can be declared as follows:  
-Point aPoint[3] = {  
-   Point( 3, 3 )     // Use int, int constructor.  
-};  
-  
-int main()  
-{  
-}  
-```  
-  
- The first element of `aPoint` is constructed using the constructor `Point( int, int )`; the remaining two elements are constructed using the default constructor.  
-  
- Static member arrays (whether **const** or not) can be initialized in their definitions (outside the class declaration). For example:  
-  
-```cpp 
-// initializing_arrays2.cpp  
-class WindowColors  
-{  
-public:  
-    static const char *rgszWindowPartList[7];  
-};  
-  
-const char *WindowColors::rgszWindowPartList[7] = {  
-    "Active Title Bar", "Inactive Title Bar", "Title Bar Text",  
-    "Menu Bar", "Menu Bar Text", "Window Background", "Frame"   };  
-int main()  
-{  
-}  
-```  
+
+If a class has a constructor, arrays of that class are initialized by a constructor. If there are fewer items in the initializer list than elements in the array, the default constructor is used for the remaining elements. If no default constructor is defined for the class, the initializer list must be complete — that is, there must be one initializer for each element in the array.
+
+Consider the `Point` class that defines two constructors:
+
+```cpp
+// initializing_arrays1.cpp
+class Point
+{
+public:
+   Point()   // Default constructor.
+   {
+   }
+   Point( int, int )   // Construct from two ints
+   {
+   }
+};
+
+// An array of Point objects can be declared as follows:
+Point aPoint[3] = {
+   Point( 3, 3 )     // Use int, int constructor.
+};
+
+int main()
+{
+}
+```
+
+The first element of `aPoint` is constructed using the constructor `Point( int, int )`; the remaining two elements are constructed using the default constructor.
+
+Static member arrays (whether **const** or not) can be initialized in their definitions (outside the class declaration). For example:
+
+```cpp
+// initializing_arrays2.cpp
+class WindowColors
+{
+public:
+    static const char *rgszWindowPartList[7];
+};
+
+const char *WindowColors::rgszWindowPartList[7] = {
+    "Active Title Bar", "Inactive Title Bar", "Title Bar Text",
+    "Menu Bar", "Menu Bar Text", "Window Background", "Frame"   };
+int main()
+{
+}
+```

@@ -13,21 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2838
-'member' : illegal qualified name in member declaration  
-  
- A class, structure, or union uses a fully qualified name to redeclare a member of another class, structure, or union.  
-  
- The following sample generates C2838:  
-  
-```  
-// C2838.cpp  
-// compile with: /c  
-class Bellini {  
-public:  
-    void Norma();  
-};  
-  
-class Bottesini {  
-   Bellini::Norma();  // C2838  
-};  
+
+'member' : illegal qualified name in member declaration
+
+A class, structure, or union uses a fully qualified name to redeclare a member of another class, structure, or union.
+
+The following sample generates C2838:
+
+```
+// C2838.cpp
+// compile with: /c
+class Bellini {
+public:
+    void Norma();
+};
+
+class Bottesini {
+   Bellini::Norma();  // C2838
+};
 ```

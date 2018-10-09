@@ -40,8 +40,8 @@ public:
 
 ### Parameters
 
-*TN*  
- The type of the Nth tuple element.
+*TN*<br/>
+The type of the Nth tuple element.
 
 ## Remarks
 
@@ -142,11 +142,11 @@ template <class U1, class U2>
 
 ### Parameters
 
-*UN*  
- The type of the Nth copied tuple element.
+*UN*<br/>
+The type of the Nth copied tuple element.
 
-*right*  
- The tuple to copy from.
+*right*<br/>
+The tuple to copy from.
 
 ### Remarks
 
@@ -251,11 +251,11 @@ template <class U1, class U2>
 
 ### Parameters
 
-*UN*  
- The type of the Nth copied tuple element.
+*UN*<br/>
+The type of the Nth copied tuple element.
 
-*right*  
- The tuple to copy from.
+*right*<br/>
+The tuple to copy from.
 
 ### Remarks
 
@@ -280,62 +280,62 @@ The remaining constructors are analogs to earlier ones, but with [Rvalue Referen
 
 typedef std::tuple<int, double, int, double> Mytuple;
 int main()
-    {
+{
     Mytuple c0(0, 1, 2, 3);
 
-// display contents " 0 1 2 3"
-    std::cout << " " << std::get<0>(c0);
-    std::cout << " " << std::get<1>(c0);
-    std::cout << " " << std::get<2>(c0);
-    std::cout << " " << std::get<3>(c0);
+    // display contents "0 1 2 3"
+    std::cout << std::get<0>(c0) << " ";
+    std::cout << std::get<1>(c0) << " ";
+    std::cout << std::get<2>(c0) << " ";
+    std::cout << std::get<3>(c0);
     std::cout << std::endl;
 
     Mytuple c1;
     c1 = c0;
 
-// display contents " 0 1 2 3"
-    std::cout << " " << std::get<0>(c1);
-    std::cout << " " << std::get<1>(c1);
-    std::cout << " " << std::get<2>(c1);
-    std::cout << " " << std::get<3>(c1);
+    // display contents "0 1 2 3"
+    std::cout << std::get<0>(c1) << " ";
+    std::cout << std::get<1>(c1) << " ";
+    std::cout << std::get<2>(c1) << " ";
+    std::cout << std::get<3>(c1);
     std::cout << std::endl;
 
     std::tuple<char, int> c2(std::make_pair('x', 4));
 
-// display contents " x 4"
-    std::cout << " " << std::get<0>(c2);
-    std::cout << " " << std::get<1>(c2);
+    // display contents "x 4"
+    std::cout << std::get<0>(c2) << " ";
+    std::cout << std::get<1>(c2);
     std::cout << std::endl;
 
     Mytuple c3(c0);
 
-// display contents " 0 1 2 3"
-    std::cout << " " << std::get<0>(c3);
-    std::cout << " " << std::get<1>(c3);
-    std::cout << " " << std::get<2>(c3);
-    std::cout << " " << std::get<3>(c3);
+    // display contents "0 1 2 3"
+    std::cout << std::get<0>(c3) << " ";
+    std::cout << std::get<1>(c3) << " ";
+    std::cout << std::get<2>(c3) << " ";
+    std::cout << std::get<3>(c3);
     std::cout << std::endl;
 
     typedef std::tuple<int, float, int, float> Mytuple2;
     Mytuple c4(Mytuple2(4, 5, 6, 7));
 
-// display contents " 4 5 6 7"
-    std::cout << " " << std::get<0>(c4);
-    std::cout << " " << std::get<1>(c4);
-    std::cout << " " << std::get<2>(c4);
-    std::cout << " " << std::get<3>(c4);
+    // display contents "4 5 6 7"
+    std::cout << std::get<0>(c4) << " ";
+    std::cout << std::get<1>(c4) << " ";
+    std::cout << std::get<2>(c4) << " ";
+    std::cout << std::get<3>(c4);
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
- 0 1 2 3
- 0 1 2 3
- x 4
- 0 1 2 3
- 4 5 6 7
+0 1 2 3
+0 1 2 3
+x 4
+0 1 2 3
+4 5 6 7
 ```
 
 ## See also

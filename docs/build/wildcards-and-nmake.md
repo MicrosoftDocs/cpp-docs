@@ -12,7 +12,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Wildcards and NMAKE
-NMAKE expands filename wildcards (\* and ?) in dependency lines. A wildcard specified in a command is passed to the command; NMAKE does not expand it.  
-  
-## See Also  
- [Contents of a Makefile](../build/contents-of-a-makefile.md)
+
+NMAKE expands filename wildcards (\* and ?) in dependency lines. A wildcard specified in a command is passed to the command; NMAKE does not expand it.
+
+## See Also
+
+[Contents of a Makefile](../build/contents-of-a-makefile.md)

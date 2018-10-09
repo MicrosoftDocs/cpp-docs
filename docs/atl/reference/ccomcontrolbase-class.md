@@ -153,7 +153,7 @@ CComControlBase(HWND& h);
 
 ### Parameters
 
-*h*  
+*h*<br/>
 The handle to the window associated with the control.
 
 ### Remarks
@@ -183,10 +183,10 @@ virtual HRESULT ControlQueryInterface(const IID& iid,
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 The GUID of the interface being requested.
 
-*ppv*  
+*ppv*<br/>
 A pointer to the interface pointer identified by *iid*, or NULL if the interface is not found.
 
 ### Remarks
@@ -207,7 +207,7 @@ BOOL DoesVerbActivate(LONG iVerb);
 
 ### Parameters
 
-*iVerb*  
+*iVerb*<br/>
 Value indicating the action to be performed by `DoVerb`.
 
 ### Return Value
@@ -228,7 +228,7 @@ BOOL DoesVerbUIActivate(LONG iVerb);
 
 ### Parameters
 
-*iVerb*  
+*iVerb*<br/>
 Value indicating the action to be performed by `DoVerb`.
 
 ### Return Value
@@ -245,10 +245,10 @@ HRESULT DoVerbProperties(LPCRECT /* prcPosRect */, HWND hwndParent);
 
 ### Parameters
 
-*prcPosRec*  
+*prcPosRec*<br/>
 Reserved.
 
-*hwndParent*  
+*hwndParent*<br/>
 Handle of the window containing the control.
 
 ### Return Value
@@ -291,7 +291,7 @@ HRESULT GetAmbientAppearance(short& nAppearance);
 
 ### Parameters
 
-*nAppearance*  
+*nAppearance*<br/>
 The property DISPID_AMBIENT_APPEARANCE.
 
 ### Return Value
@@ -312,7 +312,7 @@ HRESULT GetAmbientAutoClip(BOOL& bAutoClip);
 
 ### Parameters
 
-*bAutoClip*  
+*bAutoClip*<br/>
 The property DISPID_AMBIENT_AUTOCLIP.
 
 ### Return Value
@@ -329,7 +329,7 @@ HRESULT GetAmbientBackColor(OLE_COLOR& BackColor);
 
 ### Parameters
 
-*BackColor*  
+*BackColor*<br/>
 The property DISPID_AMBIENT_BACKCOLOR.
 
 ### Return Value
@@ -346,7 +346,7 @@ HRESULT GetAmbientCharSet(BSTR& bstrCharSet);
 
 ### Parameters
 
-*bstrCharSet*  
+*bstrCharSet*<br/>
 The property DISPID_AMBIENT_CHARSET.
 
 ### Return Value
@@ -363,7 +363,7 @@ HRESULT GetAmbientCodePage(ULONG& ulCodePage);
 
 ### Parameters
 
-*ulCodePage*  
+*ulCodePage*<br/>
 The property DISPID_AMBIENT_CODEPAGE.
 
 ### Return Value
@@ -380,7 +380,7 @@ HRESULT GetAmbientDisplayAsDefault(BOOL& bDisplayAsDefault);
 
 ### Parameters
 
-*bDisplayAsDefault*  
+*bDisplayAsDefault*<br/>
 The property DISPID_AMBIENT_DISPLAYASDEFAULT.
 
 ### Return Value
@@ -397,7 +397,7 @@ HRESULT GetAmbientDisplayName(BSTR& bstrDisplayName);
 
 ### Parameters
 
-*bstrDisplayName*  
+*bstrDisplayName*<br/>
 The property DISPID_AMBIENT_DISPLAYNAME.
 
 ### Return Value
@@ -414,7 +414,7 @@ HRESULT GetAmbientFont(IFont** ppFont);
 
 ### Parameters
 
-*ppFont*  
+*ppFont*<br/>
 A pointer to the container's ambient [IFont](/windows/desktop/api/ocidl/nn-ocidl-ifont) interface.
 
 ### Return Value
@@ -435,7 +435,7 @@ HRESULT GetAmbientFontDisp(IFontDisp** ppFont);
 
 ### Parameters
 
-*ppFont*  
+*ppFont*<br/>
 A pointer to the container's ambient [IFontDisp](https://msdn.microsoft.com/library/windows/desktop/ms692695) dispatch interface.
 
 ### Return Value
@@ -456,7 +456,7 @@ HRESULT GetAmbientForeColor(OLE_COLOR& ForeColor);
 
 ### Parameters
 
-*ForeColor*  
+*ForeColor*<br/>
 The property DISPID_AMBIENT_FORECOLOR.
 
 ### Return Value
@@ -473,7 +473,7 @@ HRESULT GetAmbientLocaleID(LCID& lcid);
 
 ### Parameters
 
-*lcid*  
+*lcid*<br/>
 The property DISPID_AMBIENT_LOCALEID.
 
 ### Return Value
@@ -494,7 +494,7 @@ HRESULT GetAmbientMessageReflect(BOOL& bMessageReflect);
 
 ### Parameters
 
-*bMessageReflect*  
+*bMessageReflect*<br/>
 The property DISPID_AMBIENT_MESSAGEREFLECT.
 
 ### Return Value
@@ -511,7 +511,7 @@ HRESULT GetAmbientPalette(HPALETTE& hPalette);
 
 ### Parameters
 
-*hPalette*  
+*hPalette*<br/>
 The property DISPID_AMBIENT_PALETTE.
 
 ### Return Value
@@ -528,10 +528,10 @@ HRESULT GetAmbientProperty(DISPID dispid, VARIANT& var);
 
 ### Parameters
 
-*dispid*  
+*dispid*<br/>
 Identifier of the container property to be retrieved.
 
-*var*  
+*var*<br/>
 Variable to receive the property.
 
 ### Return Value
@@ -552,7 +552,7 @@ HRESULT GetAmbientRightToLeft(BOOL& bRightToLeft);
 
 ### Parameters
 
-*bRightToLeft*  
+*bRightToLeft*<br/>
 The property DISPID_AMBIENT_RIGHTTOLEFT. Set to TRUE if content is displayed right to left, FALSE if it is displayed left to right.
 
 ### Return Value
@@ -569,7 +569,7 @@ HRESULT GetAmbientScaleUnits(BSTR& bstrScaleUnits);
 
 ### Parameters
 
-*bstrScaleUnits*  
+*bstrScaleUnits*<br/>
 The property DISPID_AMBIENT_SCALEUNITS.
 
 ### Return Value
@@ -586,7 +586,7 @@ HRESULT GetAmbientShowGrabHandles(BOOL& bShowGrabHandles);
 
 ### Parameters
 
-*bShowGrabHandles*  
+*bShowGrabHandles*<br/>
 The property DISPID_AMBIENT_SHOWGRABHANDLES.
 
 ### Return Value
@@ -603,7 +603,7 @@ HRESULT GetAmbientShowHatching(BOOL& bShowHatching);
 
 ### Parameters
 
-*bShowHatching*  
+*bShowHatching*<br/>
 The property DISPID_AMBIENT_SHOWHATCHING.
 
 ### Return Value
@@ -620,7 +620,7 @@ HRESULT GetAmbientSupportsMnemonics(BOOL& bSupportsMnemonics);
 
 ### Parameters
 
-*bSupportsMnemonics*  
+*bSupportsMnemonics*<br/>
 The property DISPID_AMBIENT_SUPPORTSMNEMONICS.
 
 ### Return Value
@@ -637,7 +637,7 @@ HRESULT GetAmbientTextAlign(short& nTextAlign);
 
 ### Parameters
 
-*nTextAlign*  
+*nTextAlign*<br/>
 The property DISPID_AMBIENT_TEXTALIGN.
 
 ### Return Value
@@ -654,7 +654,7 @@ HRESULT GetAmbientTopToBottom(BOOL& bTopToBottom);
 
 ### Parameters
 
-*bTopToBottom*  
+*bTopToBottom*<br/>
 The property DISPID_AMBIENT_TOPTOBOTTOM. Set to TRUE if text is displayed top to bottom, FALSE if it is displayed bottom to top.
 
 ### Return Value
@@ -671,7 +671,7 @@ HRESULT GetAmbientUIDead(BOOL& bUIDead);
 
 ### Parameters
 
-*bUIDead*  
+*bUIDead*<br/>
 The property DISPID_AMBIENT_UIDEAD.
 
 ### Return Value
@@ -692,7 +692,7 @@ HRESULT GetAmbientUserMode(BOOL& bUserMode);
 
 ### Parameters
 
-*bUserMode*  
+*bUserMode*<br/>
 The property DISPID_AMBIENT_USERMODE.
 
 ### Return Value
@@ -725,7 +725,7 @@ void GetZoomInfo(ATL_DRAWINFO& di);
 
 ### Parameters
 
-*di*  
+*di*<br/>
 The structure that will hold the zoom factor's numerator and denominator. For more information, see [ATL_DRAWINFO](../../atl/reference/atl-drawinfo-structure.md).
 
 ### Remarks
@@ -742,10 +742,10 @@ HRESULT InPlaceActivate(LONG iVerb, const RECT* prcPosRect = NULL);
 
 ### Parameters
 
-*iVerb*  
+*iVerb*<br/>
 Value indicating the action to be performed by [IOleObjectImpl::DoVerb](../../atl/reference/ioleobjectimpl-class.md#doverb).
 
-*prcPosRect*  
+*prcPosRect*<br/>
 Pointer to the position of the in-place control.
 
 ### Return Value
@@ -768,10 +768,10 @@ HRESULT InternalGetSite(REFIID riid, void** ppUnkSite);
 
 ### Parameters
 
-*riid*  
+*riid*<br/>
 The IID of the interface pointer that should be returned in *ppUnkSite*.
 
-*ppUnkSite*  
+*ppUnkSite*<br/>
 Address of the pointer variable that receives the interface pointer requested in *riid*.
 
 ### Return Value
@@ -1174,7 +1174,7 @@ virtual HRESULT OnDraw(ATL_DRAWINFO& di);
 
 ### Parameters
 
-*di*  
+*di*<br/>
 A reference to the [ATL_DRAWINFO](../../atl/reference/atl-drawinfo-structure.md) structure that contains drawing information such as the draw aspect, the control bounds, and whether the drawing is optimized or not.
 
 ### Return Value
@@ -1201,7 +1201,7 @@ virtual HRESULT OnDrawAdvanced(ATL_DRAWINFO& di);
 
 ### Parameters
 
-*di*  
+*di*<br/>
 A reference to the [ATL_DRAWINFO](../../atl/reference/atl-drawinfo-structure.md) structure that contains drawing information such as the draw aspect, the control bounds, and whether the drawing is optimized or not.
 
 ### Return Value
@@ -1227,16 +1227,16 @@ LRESULT OnKillFocus(UINT /* nMsg */,
 
 ### Parameters
 
-*nMsg*  
+*nMsg*<br/>
 Reserved.
 
-*wParam*  
+*wParam*<br/>
 Reserved.
 
-*lParam*  
+*lParam*<br/>
 Reserved.
 
-*bHandled*  
+*bHandled*<br/>
 Flag that indicates whether the window message was successfully handled. The default is FALSE.
 
 ### Return Value
@@ -1256,16 +1256,16 @@ LRESULT OnMouseActivate(UINT /* nMsg */,
 
 ### Parameters
 
-*nMsg*  
+*nMsg*<br/>
 Reserved.
 
-*wParam*  
+*wParam*<br/>
 Reserved.
 
-*lParam*  
+*lParam*<br/>
 Reserved.
 
-*bHandled*  
+*bHandled*<br/>
 Flag that indicates whether the window message was successfully handled. The default is FALSE.
 
 ### Return Value
@@ -1285,16 +1285,16 @@ LRESULT OnPaint(UINT /* nMsg */,
 
 ### Parameters
 
-*nMsg*  
+*nMsg*<br/>
 Reserved.
 
-*wParam*  
+*wParam*<br/>
 An existing HDC.
 
-*lParam*  
+*lParam*<br/>
 Reserved.
 
-*lResult*  
+*lResult*<br/>
 Reserved.
 
 ### Return Value
@@ -1318,16 +1318,16 @@ LRESULT OnSetFocus(UINT /* nMsg */,
 
 ### Parameters
 
-*nMsg*  
+*nMsg*<br/>
 Reserved.
 
-*wParam*  
+*wParam*<br/>
 Reserved.
 
-*lParam*  
+*lParam*<br/>
 Reserved.
 
-*bHandled*  
+*bHandled*<br/>
 Flag that indicates whether the window message was successfully handled. The default is FALSE.
 
 ### Return Value
@@ -1349,10 +1349,10 @@ BOOL PreTranslateAccelerator(LPMSG /* pMsg */,
 
 ### Parameters
 
-*pMsg*  
+*pMsg*<br/>
 Reserved.
 
-*hRet*  
+*hRet*<br/>
 Reserved.
 
 ### Return Value
@@ -1385,7 +1385,7 @@ HRESULT SendOnDataChange(DWORD advf = 0);
 
 ### Parameters
 
-*advf*  
+*advf*<br/>
 Advise flags that specify how the call to [IAdviseSink::OnDataChange](/windows/desktop/api/objidl/nf-objidl-iadvisesink-ondatachange) is made. Values are from the [ADVF](/windows/desktop/api/objidl/ne-objidl-tagadvf) enumeration.
 
 ### Return Value
@@ -1402,7 +1402,7 @@ HRESULT SendOnRename(IMoniker* pmk);
 
 ### Parameters
 
-*pmk*  
+*pmk*<br/>
 Pointer to the new moniker of the control.
 
 ### Return Value
@@ -1439,10 +1439,10 @@ HRESULT SendOnViewChange(DWORD dwAspect, LONG lindex = -1);
 
 ### Parameters
 
-*dwAspect*  
+*dwAspect*<br/>
 The aspect or view of the control.
 
-*lindex*  
+*lindex*<br/>
 The portion of the view that has changed. Only -1 is valid.
 
 ### Return Value
@@ -1463,7 +1463,7 @@ BOOL SetControlFocus(BOOL bGrab);
 
 ### Parameters
 
-*bGrab*  
+*bGrab*<br/>
 If TRUE, sets the keyboard focus to the calling control. If FALSE, removes the keyboard focus from the calling control, provided it has the focus.
 
 ### Return Value
@@ -1484,7 +1484,7 @@ void SetDirty(BOOL bDirty);
 
 ### Parameters
 
-*bDirty*  
+*bDirty*<br/>
 Value of the data member [CComControlBase::m_bRequiresSave](#m_brequiressave).
 
 ### Remarks
@@ -1493,5 +1493,5 @@ Value of the data member [CComControlBase::m_bRequiresSave](#m_brequiressave).
 
 ## See Also
 
-[CComControl Class](../../atl/reference/ccomcontrol-class.md)   
+[CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2003
-expected 'defined id'  
-  
- An identifier must follow the preprocessor keyword.
+
+expected 'defined id'
+
+An identifier must follow the preprocessor keyword.

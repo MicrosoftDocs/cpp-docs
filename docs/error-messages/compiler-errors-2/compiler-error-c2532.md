@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2532
-'identifier' : illegal modifier for reference  
-  
- The reference was changed. References cannot be modified to refer to another object. Use a pointer instead.
+
+'identifier' : illegal modifier for reference
+
+The reference was changed. References cannot be modified to refer to another object. Use a pointer instead.

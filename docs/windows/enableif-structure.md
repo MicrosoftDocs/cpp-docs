@@ -1,7 +1,7 @@
 ---
 title: "EnableIf Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal/Microsoft::WRL::Details::EnableIf"]
@@ -19,24 +19,19 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax
 
 ```cpp
-template <
-   bool b,
-   typename T = void
->
-
+template <bool b, typename T = void>
 struct EnableIf;
-template <
-   typename T
->
+
+template <typename T>
 struct EnableIf<true, T>;
 ```
 
 ### Parameters
 
-*T*  
+*T*<br/>
 A type.
 
-*b*  
+*b*<br/>
 A Boolean expression.
 
 ## Remarks

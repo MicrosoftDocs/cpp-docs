@@ -1,7 +1,7 @@
 ---
 title: "path Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/10/2018"
+ms.date: "09/27/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 f1_keywords: ["filesystem/std::experimental::filesystem::path"]
@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # path Class
 
-The **path** class stores an object of type `string_type`, called `myname` here for the purposes of exposition, suitable for use as a pathname. `string_type` is a synonym for `basic_string<value_type>`, where `value_type` is a synonym for **char** under Windows or **wchar_t** under Posix.
+The **path** class stores an object of type `string_type`, called `myname` here for the purposes of exposition, suitable for use as a pathname. `string_type` is a synonym for `basic_string<value_type>`, where `value_type` is a synonym for **wchar_t** on Windows or **char** on POSIX.
 
 For more information, and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).
 
@@ -628,7 +628,7 @@ For `template<class InIt> path(InIt first, InIt last, const locale& loc)` it is 
 
 ## <a name="preferred_separator"></a> path::preferred_separator
 
-The constant object gives the preferred character for separating path components, depending on the host operating system. 
+The constant object gives the preferred character for separating path components, depending on the host operating system.
 
 ```cpp
 #if _WIN32_C_LIB
@@ -644,7 +644,7 @@ Note that it is equally permissible in most contexts under Windows to use L'/' i
 
 ## <a name="relative_path"></a> path::relative_path
 
-Returns the relative path component of `myname`. 
+Returns the relative path component of `myname`.
 
 ```cpp
 path relative_path() const;
@@ -664,7 +664,7 @@ path& remove_filename();
 
 ## <a name="replace_extension"></a> path::replace_extension
 
-Replaces the extension of `myname`. 
+Replaces the extension of `myname`.
 
 ```cpp
 path& replace_extension(const path& newext = path());
@@ -705,7 +705,7 @@ return (*this);
 
 ## <a name="root_directory"></a> path::root_directory
 
-Returns the root directory component of `myname`. 
+Returns the root directory component of `myname`.
 
 ```cpp
 path root_directory() const;
@@ -717,7 +717,7 @@ The component may be empty.
 
 ## <a name="root_name"></a> path::root_name
 
-Returns the root name component of `myname`. 
+Returns the root name component of `myname`.
 
 ```cpp
 path root_name() const;

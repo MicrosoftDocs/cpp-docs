@@ -13,26 +13,27 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3910
-'event': must define member 'method'  
-  
- An event was defined, but did not contain the specified, required accessor method.  
-  
- For more information, see [event](../../windows/event-cpp-component-extensions.md).  
-  
- The following sample generates C3910:  
-  
-```  
-// C3910.cpp  
-// compile with: /clr /c  
-delegate void H();  
-ref class X {  
-   event H^ E {  
-      // uncomment the following lines  
-      // void add(H^) {}  
-      // void remove( H^ h ) {}  
-      // void raise( ) {}  
-   };   // C3910  
-  
-   event H^ E2; // OK data member  
-};  
+
+'event': must define member 'method'
+
+An event was defined, but did not contain the specified, required accessor method.
+
+For more information, see [event](../../windows/event-cpp-component-extensions.md).
+
+The following sample generates C3910:
+
+```
+// C3910.cpp
+// compile with: /clr /c
+delegate void H();
+ref class X {
+   event H^ E {
+      // uncomment the following lines
+      // void add(H^) {}
+      // void remove( H^ h ) {}
+      // void raise( ) {}
+   };   // C3910
+
+   event H^ E2; // OK data member
+};
 ```

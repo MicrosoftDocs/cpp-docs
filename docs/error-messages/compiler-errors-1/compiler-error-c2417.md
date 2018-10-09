@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2417
-divide by zero in 'context'  
-  
- The parameter to the right of the division operator is zero in this context.
+
+divide by zero in 'context'
+
+The parameter to the right of the division operator is zero in this context.

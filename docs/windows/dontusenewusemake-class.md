@@ -1,12 +1,12 @@
 ---
 title: "DontUseNewUseMake Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/21/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["implements/Microsoft::WRL::Details::DontUseNewUseMake"]
+f1_keywords: ["implements/Microsoft::WRL::Details::DontUseNewUseMake", "implements/Microsoft::WRL::Details::DontUseNewUseMake::operator new"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["DontUseNewUseMake class"]
+helpviewer_keywords: ["Microsoft::WRL::Details::DontUseNewUseMake class", "Microsoft::WRL::Details::DontUseNewUseMake::operator new operator"]
 ms.assetid: 8b38d07b-fc14-4cea-afb9-4c1a7dde0093
 author: "mikeblome"
 ms.author: "mblome"
@@ -24,15 +24,15 @@ class DontUseNewUseMake;
 
 ## Remarks
 
-Prevents using operator **new** in `RuntimeClass`. Consequently, you must use the [Make function](../windows/make-function.md) instead.
+Prevents using operator `new` in `RuntimeClass`. Consequently, you must use the [Make function](../windows/make-function.md) instead.
 
 ## Members
 
 ### Public Operators
 
-|Name|Description|
-|----------|-----------------|
-|[DontUseNewUseMake::operator new Operator](../windows/dontusenewusemake-operator-new-operator.md)|Overloads operator **new** and prevents it from being used in `RuntimeClass`.|
+Name                                             | Description
+------------------------------------------------ | ---------------------------------------------------------------------------
+[DontUseNewUseMake::operator new](#operator-new) | Overloads operator `new` and prevents it from being used in `RuntimeClass`.
 
 ## Inheritance Hierarchy
 
@@ -44,7 +44,29 @@ Prevents using operator **new** in `RuntimeClass`. Consequently, you must use th
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## <a name="operator-new"></a>DontUseNewUseMake::operator new
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)  
-[Make Function](../windows/make-function.md)
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+```cpp
+void* operator new(
+   size_t,
+   _In_ void* placement
+);
+```
+
+### Parameters
+
+*__unnamed0*<br/>
+An unnamed parameter that specifies the number of bytes of memory to allocate.
+
+*placement*<br/>
+The type to be allocated.
+
+### Return Value
+
+Provides a way to pass additional arguments if you overload operator `new`.
+
+### Remarks
+
+Overloads operator `new` and prevents it from being used in `RuntimeClass`.

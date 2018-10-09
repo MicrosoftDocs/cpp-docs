@@ -13,20 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Command-Line Error D8027
-cannot execute 'component'  
-  
- The compiler could not run the given compiler component or linker.  
-  
-### To fix by checking the following possible causes  
-  
-1.  Not enough memory to load the component. If NMAKE invoked the compiler, run the compiler outside of the makefile.  
-  
-2.  The current operating system could not run the component. Make sure the path points to the executable files appropriate to your operating system.  
-  
-3.  The component was corrupted. Recopy the component from the distribution disks, using the SETUP program.  
-  
-4.  An option was specified incorrectly. For example:  
-  
-    ```  
-    cl /B1 file1.c  
+
+cannot execute 'component'
+
+The compiler could not run the given compiler component or linker.
+
+### To fix by checking the following possible causes
+
+1. Not enough memory to load the component. If NMAKE invoked the compiler, run the compiler outside of the makefile.
+
+1. The current operating system could not run the component. Make sure the path points to the executable files appropriate to your operating system.
+
+1. The component was corrupted. Recopy the component from the distribution disks, using the SETUP program.
+
+1. An option was specified incorrectly. For example:
+
+    ```
+    cl /B1 file1.c
     ```

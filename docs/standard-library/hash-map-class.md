@@ -32,16 +32,16 @@ class hash_map
 ### Parameters
 
 *Key*<br/>
- The key data type to be stored in the hash_map.
+The key data type to be stored in the hash_map.
 
 *Type*<br/>
- The element data type to be stored in the hash_map.
+The element data type to be stored in the hash_map.
 
 *Traits*<br/>
- The type which includes two function objects, one of class compare able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type `size_t`. This argument is optional, and hash_compare<`Key`, less<`Key`> > is the default value.
+The type which includes two function objects, one of class compare able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type `size_t`. This argument is optional, and hash_compare<`Key`, less<`Key`> > is the default value.
 
 *Allocator*<br/>
- The type that represents the stored allocator object that encapsulates details about the hash_map's allocation and deallocation of memory. This argument is optional, and the default value is allocator<pair <const `Key`, `Type`>>.
+The type that represents the stored allocator object that encapsulates details about the hash_map's allocation and deallocation of memory. This argument is optional, and the default value is allocator<pair <const `Key`, `Type`>>.
 
 ## Remarks
 
@@ -556,7 +556,7 @@ size_type count(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The key value of the elements to be matched from the hash_map.
+The key value of the elements to be matched from the hash_map.
 
 ### Return Value
 
@@ -847,7 +847,7 @@ int main()
 
 ```Output
 After the emplace insertion, hm1 contains:
- 1 => a
+1 => a
 ```
 
 ## <a name="emplace_hint"></a>  hash_map::emplace_hint
@@ -907,7 +907,7 @@ int main()
 
 ```Output
 After the emplace insertion, hm1 contains:
- 1 => a
+1 => a
 ```
 
 ## <a name="empty"></a>  hash_map::empty
@@ -1048,7 +1048,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### Parameters
 
 *key*<br/>
- The argument key value to be compared with the sort key of an element from the hash_map being searched.
+The argument key value to be compared with the sort key of an element from the hash_map being searched.
 
 ### Return Value
 
@@ -1095,7 +1095,7 @@ int main( )
 
    cout << "A direct call of upper_bound( 2 ) gives "
         << hm1_RcIter -> second << "," << endl
-        << " matching the 2nd element of the pair"
+        << "matching the 2nd element of the pair"
         << " returned by equal_range( 2 )." << endl;
 
    p2 = hm1.equal_range( 4 );
@@ -1115,7 +1115,7 @@ int main( )
 The lower bound of the element with a key of 2 in the hash_map hm1 is: 20.
 The upper bound of the element with a key of 2 in the hash_map hm1 is: 30.
 A direct call of upper_bound( 2 ) gives 30,
- matching the 2nd element of the pair returned by equal_range( 2 ).
+matching the 2nd element of the pair returned by equal_range( 2 ).
 The hash_map hm1 doesn't have an element with a key less than 40.
 ```
 
@@ -1137,16 +1137,16 @@ size_type erase(const key_type& key);
 ### Parameters
 
 *_Where*<br/>
- Position of the element to be removed from the hash_map.
+Position of the element to be removed from the hash_map.
 
 *first*<br/>
- Position of the first element removed from the hash_map.
+Position of the first element removed from the hash_map.
 
 *last*<br/>
- Position just beyond the last element removed from the hash_map.
+Position just beyond the last element removed from the hash_map.
 
 *key*<br/>
- The key value of the elements to be removed from the hash_map.
+The key value of the elements to be removed from the hash_map.
 
 ### Return Value
 
@@ -1259,7 +1259,7 @@ const_iterator find(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The key value to be matched by the sort key of an element from the hash_map being searched.
+The key value to be matched by the sort key of an element from the hash_map being searched.
 
 ### Return Value
 
@@ -1432,18 +1432,18 @@ hash_map(
 
 template <class InputIterator>
 hash_map(
- InputIterator First,
+    InputIterator First,
     InputIterator Last);
 
 template <class InputIterator>
 hash_map(
- InputIterator First,
+    InputIterator First,
     InputIterator Last,
     const Traits& Comp);
 
 template <class InputIterator>
 hash_map(
- InputIterator First,
+    InputIterator First,
     InputIterator Last,
     const Traits& Comp,
     const Allocator& Al
@@ -1557,7 +1557,7 @@ int main()
     hm1.insert(Int_Pair(3, 30));
     hm1.insert(Int_Pair(4, 40));
 
-    cout<< "The original elements (Key => Value) of hm1 are:";
+    cout << "The original elements (Key => Value) of hm1 are:";
     for (hm1_pIter = hm1.begin(); hm1_pIter != hm1.end(); hm1_pIter++)
         cout << endl << " " << hm1_pIter -> first << " => "
              << hm1_pIter->second;
@@ -1568,22 +1568,23 @@ int main()
 
     if (pr.second == true)
     {
-        cout<< "The element 10 was inserted in hm1 successfully."
+        cout << "The element 10 was inserted in hm1 successfully."
             << endl;
     }
     else
     {
-        cout<< "The element 10 already exists in hm1\n with a key value of"
-            << "((pr.first) -> first)= "<<(pr.first)-> first
-            << "."<< endl;
+        cout << "The element 10 already exists in hm1\n"
+            << "with a key value of "
+            << "((pr.first) -> first) = " << (pr.first)->first
+            << "." << endl;
     }
 
     // The hint version of insert
     hm1.insert(--hm1.end(), Int_Pair(5, 50));
 
-    cout<< "After the insertions, the elements of hm1 are:";
+    cout << "After the insertions, the elements of hm1 are:";
     for (hm1_pIter = hm1.begin(); hm1_pIter != hm1.end(); hm1_pIter++)
-        cout << endl << " " << hm1_pIter -> first << " => "
+        cout << endl << hm1_pIter -> first << " => "
              << hm1_pIter->second;
     cout << endl;
 
@@ -1592,9 +1593,9 @@ int main()
     // The templatized version inserting a range
     hm2.insert( ++hm1.begin(), --hm1.end() );
 
-    cout<< "After the insertions, the elements of hm2 are:";
+    cout << "After the insertions, the elements of hm2 are:";
     for (hm2_pIter = hm2.begin(); hm2_pIter != hm2.end(); hm2_pIter++)
-        cout << endl << " " << hm2_pIter -> first << " => "
+        cout << endl << hm2_pIter -> first << " => "
              << hm2_pIter->second;
     cout << endl;
 
@@ -1604,13 +1605,13 @@ int main()
 
     hm3.insert(move(is1));
     cout << "After the move insertion, hm3 contains:" << endl
-      << " " << hm3.begin()->first
+      << hm3.begin()->first
       << " => " << hm3.begin()->second
       << endl;
 
     hm4.insert(hm4.begin(), move(is2));
     cout << "After the move insertion, hm4 contains:" << endl
-      << " " << hm4.begin()->first
+      << hm4.begin()->first
       << " => " << hm4.begin()->second
       << endl;
 }
@@ -1618,27 +1619,27 @@ int main()
 
 ```Output
 The original elements (Key => Value) of hm1 are:
- 1 => 10
- 2 => 20
- 3 => 30
- 4 => 40
+1 => 10
+2 => 20
+3 => 30
+4 => 40
 The element 10 already exists in hm1
- with a key value of((pr.first) -> first)= 1.
+with a key value of ((pr.first) -> first) = 1.
 After the insertions, the elements of hm1 are:
- 1 => 10
- 2 => 20
- 3 => 30
- 4 => 40
- 5 => 50
+1 => 10
+2 => 20
+3 => 30
+4 => 40
+5 => 50
 After the insertions, the elements of hm2 are:
- 2 => 20
- 10 => 100
- 3 => 30
- 4 => 40
+2 => 20
+10 => 100
+3 => 30
+4 => 40
 After the move insertion, hm3 contains:
- 1 => a
+1 => a
 After the move insertion, hm4 contains:
- 2 => b
+2 => b
 ```
 
 ## <a name="iterator"></a>  hash_map::iterator
@@ -1800,7 +1801,7 @@ const_iterator lower_bound(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The argument key value to be compared with the sort key of an element from the hash_map being searched.
+The argument key value to be compared with the sort key of an element from the hash_map being searched.
 
 ### Return Value
 
@@ -2439,7 +2440,7 @@ void swap(hash_map& right);
 ### Parameters
 
 *right*<br/>
- The argument hash_map providing the elements to be swapped with the target hash_map.
+The argument hash_map providing the elements to be swapped with the target hash_map.
 
 ### Remarks
 
@@ -2515,7 +2516,7 @@ const_iterator upper_bound(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The argument key value to be compared with the sort key value of an element from the hash_map being searched.
+The argument key value to be compared with the sort key value of an element from the hash_map being searched.
 
 ### Return Value
 
@@ -2564,8 +2565,8 @@ int main( )
    // using a dereferenced iterator addressing the location
    hm1_AcIter = hm1.begin( );
    hm1_RcIter = hm1. upper_bound ( hm1_AcIter -> first );
-   cout << "The 1st element of hm1 with a key greater than "
-        << "that\n of the initial element of hm1 is: "
+   cout << "The 1st element of hm1 with a key greater than that\n"
+        << "of the initial element of hm1 is: "
         << hm1_RcIter -> second << "." << endl;
 }
 ```
@@ -2574,7 +2575,7 @@ int main( )
 The first element of hash_map hm1 with a key greater than 2 is: 30.
 The hash_map hm1 doesn't have an element with a key greater than 4.
 The 1st element of hm1 with a key greater than that
- of the initial element of hm1 is: 20.
+of the initial element of hm1 is: 20.
 ```
 
 ## <a name="value_comp"></a>  hash_map::value_comp

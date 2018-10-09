@@ -11,18 +11,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # A.9   Using single Directives
-The following example demonstrates the `single` directive ([Section 2.4.3](../../parallel/openmp/2-4-3-single-construct.md) on page 15). In the example, only one thread (usually the first thread that encounters the `single` directive) prints the progress message. The user must not make any assumptions as to which thread will execute the `single` section. All other threads will skip the `single` section and stop at the barrier at the end of the `single` construct. If other threads can proceed without waiting for the thread executing the `single` section, a `nowait` clause can be specified on the `single` directive.  
-  
-```  
-#pragma omp parallel  
-{  
-    #pragma omp single  
-        printf_s("Beginning work1.\n");  
-    work1();  
-    #pragma omp single  
-        printf_s("Finishing work1.\n");  
-    #pragma omp single nowait  
-        printf_s("Finished work1 and beginning work2.\n");  
-    work2();  
-}  
+
+The following example demonstrates the `single` directive ([Section 2.4.3](../../parallel/openmp/2-4-3-single-construct.md) on page 15). In the example, only one thread (usually the first thread that encounters the `single` directive) prints the progress message. The user must not make any assumptions as to which thread will execute the `single` section. All other threads will skip the `single` section and stop at the barrier at the end of the `single` construct. If other threads can proceed without waiting for the thread executing the `single` section, a `nowait` clause can be specified on the `single` directive.
+
+```
+#pragma omp parallel
+{
+    #pragma omp single
+        printf_s("Beginning work1.\n");
+    work1();
+    #pragma omp single
+        printf_s("Finishing work1.\n");
+    #pragma omp single nowait
+        printf_s("Finished work1 and beginning work2.\n");
+    work2();
+}
 ```

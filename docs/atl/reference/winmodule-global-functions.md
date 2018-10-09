@@ -40,13 +40,13 @@ ATLINLINE ATLAPI_(void) AtlWinModuleAddCreateWndData(
 
 ### Parameters
 
-*pWinModule*  
+*pWinModule*<br/>
 Pointer to a module's [_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md) structure.
 
-*pData*  
+*pData*<br/>
 Pointer to the [_AtlCreateWndData](../../atl/reference/atlcreatewnddata-structure.md) structure to be initialized and added to the current module.
 
-*pObject*  
+*pObject*<br/>
 Pointer to an object's **this** pointer.
 
 ### Remarks
@@ -63,7 +63,7 @@ ATLINLINE ATLAPI_(void*) AtlWinModuleExtractCreateWndData(_ATL_WIN_MODULE* pWinM
 
 ### Parameters
 
-*pWinModule*  
+*pWinModule*<br/>
 Pointer to a module's [_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md) structure.
 
 ### Return Value

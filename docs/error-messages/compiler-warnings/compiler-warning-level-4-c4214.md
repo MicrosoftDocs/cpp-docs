@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4214
-nonstandard extension used : bit field types other than int  
-  
- With the default Microsoft extensions (/Ze), bitfield structure members can be of any integer type.  
-  
-## Example  
-  
-```  
-// C4214.c  
-// compile with: /W4  
-struct bitfields  
-{  
-   unsigned short j:4;  // C4214  
-};  
-  
-int main()  
-{  
-}  
-```  
-  
- Such bit fields are invalid under ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
+
+nonstandard extension used : bit field types other than int
+
+With the default Microsoft extensions (/Ze), bitfield structure members can be of any integer type.
+
+## Example
+
+```
+// C4214.c
+// compile with: /W4
+struct bitfields
+{
+   unsigned short j:4;  // C4214
+};
+
+int main()
+{
+}
+```
+
+Such bit fields are invalid under ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).

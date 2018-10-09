@@ -16,22 +16,26 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _CIfmod
-Calculates the floating-point remainder of the top two values on the stack.  
-  
-## Syntax  
-  
-```  
-void __cdecl _CIfmod();  
-```  
-  
-## Remarks  
- This version of the `fmod` function has a specialized calling convention that the compiler understands. It speeds up the execution because it prevents copies from being generated and helps with register allocation.  
-  
- The resulting value is pushed onto the top of the stack.  
-  
-## Requirements  
- **Platform:** x86  
-  
-## See Also  
- [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [fmod, fmodf](../c-runtime-library/reference/fmod-fmodf.md)
+
+Calculates the floating-point remainder of the top two values on the stack.
+
+## Syntax
+
+```
+void __cdecl _CIfmod();
+```
+
+## Remarks
+
+This version of the `fmod` function has a specialized calling convention that the compiler understands. It speeds up the execution because it prevents copies from being generated and helps with register allocation.
+
+The resulting value is pushed onto the top of the stack.
+
+## Requirements
+
+**Platform:** x86
+
+## See Also
+
+[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[fmod, fmodf](../c-runtime-library/reference/fmod-fmodf.md)

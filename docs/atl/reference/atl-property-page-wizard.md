@@ -1,7 +1,7 @@
 ---
 title: "ATL Property Page Wizard | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.ppg.overview"]
@@ -15,6 +15,9 @@ ms.workload: ["cplusplus"]
 # ATL Property Page Wizard
 
 This wizard [adds a property page into an ATL project](../../atl/reference/adding-an-atl-property-page.md) or to an MFC project with ATL support. An ATL property page provides a user interface for setting the properties (or calling the methods) of one or more COM objects.
+
+> [!WARNING]
+> In Visual Studio 2017 version 15.9 this code wizard is deprecated and will be removed in a future version of Visual Studio. This wizard is rarely used. General support for ATL and MFC is not impacted by the removal of this wizard. If you would like to share your feedback about this deprecation, please complete [this survey](https://www.surveymonkey.com/r/QDWKKCN). Your feedback matters to us.
 
 ## Remarks
 
@@ -44,21 +47,24 @@ Provides information for the C++ class created to implement the object.
 
 Provides information about the COM functionality for the object.
 
-**Coclass**  
-Sets the name of the component class that contains a list of interfaces supported by the object.
+- **Coclass**
 
-> [!NOTE]
->  If you create your project using attributes, or if you indicate on this wizard page that the property page uses attributes, you cannot change this option because ATL does not include the `coclass` attribute.
+   Sets the name of the component class that contains a list of interfaces supported by the object.
 
-**Type**  
-Sets the object description that will appear in the registry
+   > [!NOTE]
+   > If you create your project using attributes, or if you indicate on this wizard page that the property page uses attributes, you cannot change this option because ATL does not include the `coclass` attribute.
 
-**ProgID**  
-Sets the name that containers can use instead of the CLSID of the object.
+- **Type**
+
+   Sets the object description that will appear in the registry
+
+- **ProgID**
+
+   Sets the name that containers can use instead of the CLSID of the object.
 
 ## See Also
 
-[Options, ATL Property Page Wizard](../../atl/reference/options-atl-property-page-wizard.md)   
-[Strings, ATL Property Page Wizard](../../atl/reference/strings-atl-property-page-wizard.md)   
+[Options, ATL Property Page Wizard](../../atl/reference/options-atl-property-page-wizard.md)<br/>
+[Strings, ATL Property Page Wizard](../../atl/reference/strings-atl-property-page-wizard.md)<br/>
 [Example: Implementing a Property Page](../../atl/example-implementing-a-property-page.md)
 

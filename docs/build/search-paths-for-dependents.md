@@ -12,16 +12,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Search Paths for Dependents
-Each dependent has an optional search path, specified as follows:  
-  
-## Syntax  
-  
-```  
-{directory[;directory...]}dependent  
-```  
-  
-## Remarks  
- NMAKE looks for a dependent first in the current directory, and then in directories in the order specified. A macro can specify part or all of a search path. Enclose directory names in braces ({ }); separate multiple directories with a semicolon (;). No spaces or tabs are allowed.  
-  
-## See Also  
- [Dependents](../build/dependents.md)
+
+Each dependent has an optional search path, specified as follows:
+
+## Syntax
+
+```
+{directory[;directory...]}dependent
+```
+
+## Remarks
+
+NMAKE looks for a dependent first in the current directory, and then in directories in the order specified. A macro can specify part or all of a search path. Enclose directory names in braces ({ }); separate multiple directories with a semicolon (;). No spaces or tabs are allowed.
+
+## See Also
+
+[Dependents](../build/dependents.md)

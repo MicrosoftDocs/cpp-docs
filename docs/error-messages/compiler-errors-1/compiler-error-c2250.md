@@ -13,30 +13,31 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2250
-'identifier' : ambiguous inheritance of 'class::member'  
-  
- The derived class inherits more than one override of a virtual function of a virtual base class. These overrides are ambiguous in the derived class.  
-  
- The following sample generates C2286:  
-  
-```  
-// C2250.cpp  
-// compile with: /c  
-// C2250 expected  
-struct V {  
-   virtual void vf();  
-};  
-  
-struct A : virtual V {  
-   void vf();  
-};  
-  
-struct B : virtual V {  
-   void vf();  
-};  
-  
-struct D : A, B {  
-   // Uncomment the following line to resolve.  
-   // void vf();  
-};  
+
+'identifier' : ambiguous inheritance of 'class::member'
+
+The derived class inherits more than one override of a virtual function of a virtual base class. These overrides are ambiguous in the derived class.
+
+The following sample generates C2286:
+
+```
+// C2250.cpp
+// compile with: /c
+// C2250 expected
+struct V {
+   virtual void vf();
+};
+
+struct A : virtual V {
+   void vf();
+};
+
+struct B : virtual V {
+   void vf();
+};
+
+struct D : A, B {
+   // Uncomment the following line to resolve.
+   // void vf();
+};
 ```

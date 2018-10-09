@@ -23,20 +23,19 @@ Active Server Pages components are part of the Internet Information Services arc
 
 - You can use the ASP error-handling capabilities for your Web-based applications.
 
-### To add an ATL Active Server Pages component to your project
+## To add an ATL Active Server Pages component to your project
 
 1. In **Solution Explorer** right-click the name of the project to which you want to add the ATL Active Server Pages component.
 
-2. From the shortcut menu, click **Add**, and then click **Add Class**.
+1. From the shortcut menu, click **Add**, and then click **Add Class**.
 
-3. In the [Add Class](../../ide/add-class-dialog-box.md) dialog box, in the Templates pane, click **ATL Active Server Page Component**, and then click **Open** to display the [ATL Active Server Page Component Wizard](../../atl/reference/atl-active-server-page-component-wizard.md).
+1. In the [Add Class](../../ide/add-class-dialog-box.md) dialog box, in the **Templates** pane, click **ATL Active Server Page Component**, and then click **Open** to display the [ATL Active Server Page Component Wizard](../../atl/reference/atl-active-server-page-component-wizard.md).
 
 ## See Also
 
-[Adding a Class](../../ide/adding-a-class-visual-cpp.md)   
-[Adding a New Interface in an ATL Project](../../atl/reference/adding-a-new-interface-in-an-atl-project.md)   
-[Adding Connection Points to an Object](../../atl/adding-connection-points-to-an-object.md)   
-[Adding a Method](../../ide/adding-a-method-visual-cpp.md)   
-[MFC Class](../../mfc/reference/adding-an-mfc-class.md)   
+[Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
+[Adding a New Interface in an ATL Project](../../atl/reference/adding-a-new-interface-in-an-atl-project.md)<br/>
+[Adding Connection Points to an Object](../../atl/adding-connection-points-to-an-object.md)<br/>
+[Adding a Method](../../ide/adding-a-method-visual-cpp.md)<br/>
+[MFC Class](../../mfc/reference/adding-an-mfc-class.md)<br/>
 [Adding a Generic C++ Class](../../ide/adding-a-generic-cpp-class.md)
-

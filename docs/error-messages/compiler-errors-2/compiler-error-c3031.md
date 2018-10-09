@@ -13,30 +13,31 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3031
-'var' : variable in 'reduction' clause must have scalar arithmetic type  
-  
- A variable of the wrong type was passed to a reduction clause.  
-  
- The following sample generates C3031:  
-  
-```  
-// C3031.cpp  
-// compile with: /openmp /link vcomps.lib  
-#include <stdio.h>  
-#include "omp.h"  
-  
-typedef struct {  
-   int n;  
-} Incomplete;  
-  
-extern Incomplete inc;  
-int i = 9;  
-  
-int main() {  
-   #pragma omp parallel reduction(+: inc)   // C3031   
-      ;  
-  
-   #pragma omp parallel reduction(+: i)     // OK  
-      ;  
-}  
+
+'var' : variable in 'reduction' clause must have scalar arithmetic type
+
+A variable of the wrong type was passed to a reduction clause.
+
+The following sample generates C3031:
+
+```
+// C3031.cpp
+// compile with: /openmp /link vcomps.lib
+#include <stdio.h>
+#include "omp.h"
+
+typedef struct {
+   int n;
+} Incomplete;
+
+extern Incomplete inc;
+int i = 9;
+
+int main() {
+   #pragma omp parallel reduction(+: inc)   // C3031
+      ;
+
+   #pragma omp parallel reduction(+: i)     // OK
+      ;
+}
 ```

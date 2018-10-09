@@ -344,11 +344,11 @@ _tprintf_s(_T("Alloc length is %d, String length is %d\n"),
 
 The output from this example is as follows:
 
-`Alloc length is 1031, String length is 1024`
-
-`Alloc length is 1031, String length is 15`
-
-`Alloc length is 15, String length is 15`
+```Output
+Alloc length is 1031, String length is 1024
+Alloc length is 1031, String length is 15
+Alloc length is 15, String length is 15
+```
 
 ##  <a name="getalloclength"></a>  CSimpleStringT::GetAllocLength
 
@@ -1133,5 +1133,5 @@ Call this method to destroy the `CSimpleStringT` object.
 
 ## See Also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)   
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

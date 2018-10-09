@@ -16,6 +16,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # strstr, wcsstr, _mbsstr, _mbsstr_l
+
 Returns a pointer to the first occurrence of a search string in a string.
 
 > [!IMPORTANT]

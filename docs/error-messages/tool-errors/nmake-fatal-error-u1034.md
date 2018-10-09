@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # NMAKE Fatal Error U1034
-syntax error : separator missing  
-  
- The colon (**:**) that separates targets and dependents is missing.
+
+syntax error : separator missing
+
+The colon (**:**) that separates targets and dependents is missing.

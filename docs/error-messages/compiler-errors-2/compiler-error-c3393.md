@@ -13,22 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3393
-syntax error in constraint clause: 'identifier' is not a type  
-  
- The identifier passed to a constraint, which must be a type, was not a type.  For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).  
-  
-## Example  
- The following sample generates C3393:  
-  
-```  
-// C3393.cpp  
-// compile with: /clr /c  
-void MyInterface() {}  
-interface class MyInterface2 {};  
-  
-generic<typename T>  
-where T : MyInterface   // C3393  
-// try the following line instead  
-// where T : MyInterface2  
-ref class R {};  
+
+syntax error in constraint clause: 'identifier' is not a type
+
+The identifier passed to a constraint, which must be a type, was not a type.  For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).
+
+## Example
+
+The following sample generates C3393:
+
+```
+// C3393.cpp
+// compile with: /clr /c
+void MyInterface() {}
+interface class MyInterface2 {};
+
+generic<typename T>
+where T : MyInterface   // C3393
+// try the following line instead
+// where T : MyInterface2
+ref class R {};
 ```

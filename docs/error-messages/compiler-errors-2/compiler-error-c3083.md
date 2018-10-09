@@ -13,24 +13,26 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3083
-'function': the symbol to the left of a '::' must be a type  
-  
- A function was called incorrectly.  
-  
-## Example  
- The following sample generates C3083.  
-  
-```  
-// C3083.cpp  
-// compile with: /c  
-struct N {  
-   ~N();  
-};  
-  
-struct N1 {  
-   ~N1();  
-};  
-  
-N::N::~N() {}   // C3083  
-N1::~N1() {}   // OK  
+
+'function': the symbol to the left of a '::' must be a type
+
+A function was called incorrectly.
+
+## Example
+
+The following sample generates C3083.
+
+```
+// C3083.cpp
+// compile with: /c
+struct N {
+   ~N();
+};
+
+struct N1 {
+   ~N1();
+};
+
+N::N::~N() {}   // C3083
+N1::~N1() {}   // OK
 ```

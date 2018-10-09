@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2171
-unknown DIB header format  
-  
- The bitmap header is not a **BITMAPCOREHEADER** or **BITMAPINFOHEADER** structure.
+
+unknown DIB header format
+
+The bitmap header is not a **BITMAPCOREHEADER** or **BITMAPINFOHEADER** structure.

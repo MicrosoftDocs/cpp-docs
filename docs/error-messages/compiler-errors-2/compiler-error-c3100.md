@@ -13,26 +13,28 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3100
-'target' : unknown attribute qualifier  
-  
- An invalid attribute target was specified.  
-  
- For more information, see [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md).  
-  
-## Example  
- The following sample generates C3100.  
-  
-```  
-// C3100.cpp  
-// compile with: /clr /c  
-using namespace System;  
-[AttributeUsage(AttributeTargets::All)]  
-public ref class Attr : public Attribute {  
-public:  
-   Attr(int t) : m_t(t) {}  
-   int m_t;  
-};  
-  
-[invalid_target:Attr(10)];   // C3100  
-[assembly:Attr(10)];   // OK  
+
+'target' : unknown attribute qualifier
+
+An invalid attribute target was specified.
+
+For more information, see [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md).
+
+## Example
+
+The following sample generates C3100.
+
+```
+// C3100.cpp
+// compile with: /clr /c
+using namespace System;
+[AttributeUsage(AttributeTargets::All)]
+public ref class Attr : public Attribute {
+public:
+   Attr(int t) : m_t(t) {}
+   int m_t;
+};
+
+[invalid_target:Attr(10)];   // C3100
+[assembly:Attr(10)];   // OK
 ```

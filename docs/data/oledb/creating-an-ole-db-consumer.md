@@ -12,13 +12,15 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating an OLE DB Consumer
+
 You can create an OLE DB Templates consumer with or without the ATL OLE DB Consumer Wizard, though using the wizard is the recommended method. A consumer can operate in any application that supports ATL.  
   
- This section covers the following topics:  
+This section covers the following topics:  
   
--   [Creating an OLE DB Consumer Using a Wizard](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)  
+- [Creating an OLE DB Consumer Using a Wizard](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)  
   
--   [Creating an OLE DB Consumer Without Using a Wizard](../../data/oledb/creating-a-consumer-without-using-a-wizard.md)  
+- [Creating an OLE DB Consumer Without Using a Wizard](../../data/oledb/creating-a-consumer-without-using-a-wizard.md)  
   
 ## See Also  
- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)
+
+[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)

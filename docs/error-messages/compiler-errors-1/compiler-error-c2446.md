@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2446
-'operator' : no conversion from 'type1' to 'type2'  
-  
- The compiler cannot convert `type1` to `type2`. The conversion may not make sense because it violates C/C++ semantics.
+
+'operator' : no conversion from 'type1' to 'type2'
+
+The compiler cannot convert `type1` to `type2`. The conversion may not make sense because it violates C/C++ semantics.

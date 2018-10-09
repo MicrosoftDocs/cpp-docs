@@ -17,21 +17,21 @@ This section discusses the benefits of using the C Run-Time Library (CRT) with e
 
 ## In This Section
 
-[Benefits and Tradeoffs of the Method Used to Link to the CRT](../atl/benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt.md)  
+[Benefits and Tradeoffs of the Method Used to Link to the CRT](../atl/benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt.md)<br/>
 Summarizes the benefits and tradeoffs involved in linking statically to the CRT or linking dynamically.
 
-[Linking to the CRT in Your ATL Project](../atl/linking-to-the-crt-in-your-atl-project.md)  
+[Linking to the CRT in Your ATL Project](../atl/linking-to-the-crt-in-your-atl-project.md)<br/>
 Discusses the project settings and linker options for linking to the CRT; also provides details on how linking to the CRT affects your program image.
 
 ## Related Sections
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Provides links to conceptual topics on how to program using the Active Template Library.
 
-[DLLs and Visual C++ run-time library behavior](../build/run-time-library-behavior.md)  
+[DLLs and Visual C++ run-time library behavior](../build/run-time-library-behavior.md)<br/>
 Provides details on how the VCRuntime and CRT startup code works.
 
-[C Run-Time Libraries](../c-runtime-library/crt-library-features.md)  
+[C Run-Time Libraries](../c-runtime-library/crt-library-features.md)<br/>
 Discusses the various .lib files that comprise the C run-time libraries and lists their associated compiler options and preprocessor directives.
 
 ## See Also

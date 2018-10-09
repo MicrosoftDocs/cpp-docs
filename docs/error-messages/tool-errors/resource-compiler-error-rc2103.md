@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2103
-unexpected end of file in string literal  
-  
- An end of file was found before the end of a string. The string is probably missing a closing double quotation mark (**"**).
+
+unexpected end of file in string literal
+
+An end of file was found before the end of a string. The string is probably missing a closing double quotation mark (**"**).

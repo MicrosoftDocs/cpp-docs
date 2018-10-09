@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2159
-more than one storage class specified  
-  
- A declaration contains more than one storage class.  
-  
- The following sample generates C2159:  
-  
-```  
-// C2159.cpp  
-// compile with: /c  
-static int i;   // OK  
-extern static int i;   // C2159  
+
+more than one storage class specified
+
+A declaration contains more than one storage class.
+
+The following sample generates C2159:
+
+```
+// C2159.cpp
+// compile with: /c
+static int i;   // OK
+extern static int i;   // C2159
 ```

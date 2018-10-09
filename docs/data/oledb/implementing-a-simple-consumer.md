@@ -12,13 +12,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Implementing a Simple Consumer
+
 The following topics show how to edit the files created by the MFC Application Wizard and ATL OLE DB Consumer Wizard to create a simple consumer. This example has the following parts:  
   
--   "Retrieving Data with the Consumer" shows how to implement code in the consumer that reads all the data, row by row, from a database table.  
+- "Retrieving Data with the Consumer" shows how to implement code in the consumer that reads all the data, row by row, from a database table.  
   
--   "Adding Bookmark Support to the Consumer" shows how to add bookmark support to the consumer.  
+- "Adding Bookmark Support to the Consumer" shows how to add bookmark support to the consumer.  
   
--   "Adding XML Support to the Consumer" shows how to modify the consumer code to output the retrieved rowset data as XML data.  
+- "Adding XML Support to the Consumer" shows how to modify the consumer code to output the retrieved rowset data as XML data.  
   
 > [!NOTE]
 >  You can use the consumer application described in this section to test the MyProv and Provider sample providers.  
@@ -33,7 +34,7 @@ The following topics show how to edit the files created by the MFC Application W
   
 #### To modify the console application to use the OLE DB consumer  
   
-1.  In MyCons.cpp, change the main code by inserting the bold text as follows:  
+1. In MyCons.cpp, change the main code by inserting the bold text as follows:  
   
     ```cpp  
     // MyCons.cpp : Defines the entry point for the console application.  
@@ -61,30 +62,31 @@ The following topics show how to edit the files created by the MFC Application W
     ```  
   
 ## Adding Bookmark Support to the Consumer  
- A bookmark is a column that uniquely identifies rows in the table. Typically it is the key column, but not always; it is provider-specific. This section shows you how to add bookmark support. To do so, you need to do the following in the user record class:  
+
+A bookmark is a column that uniquely identifies rows in the table. Typically it is the key column, but not always; it is provider-specific. This section shows you how to add bookmark support. To do so, you need to do the following in the user record class:  
   
--   Instantiate the bookmarks. These are objects of type [CBookmark](../../data/oledb/cbookmark-class.md).  
+- Instantiate the bookmarks. These are objects of type [CBookmark](../../data/oledb/cbookmark-class.md).  
   
--   Request a bookmark column from the provider by setting the `DBPROP_IRowsetLocate` property.  
+- Request a bookmark column from the provider by setting the `DBPROP_IRowsetLocate` property.  
   
--   Add a bookmark entry to the column map by using the [BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md) macro.  
+- Add a bookmark entry to the column map by using the [BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md) macro.  
   
- The previous steps give you bookmark support and a bookmark object with which to work. This code example demonstrates a bookmark as follows:  
+The previous steps give you bookmark support and a bookmark object with which to work. This code example demonstrates a bookmark as follows:  
   
--   Open a file for writing.  
+- Open a file for writing.  
   
--   Output rowset data to the file row by row.  
+- Output rowset data to the file row by row.  
   
--   Move the rowset cursor to the bookmark by calling [MoveToBookmark](../../data/oledb/crowset-movetobookmark.md).  
+- Move the rowset cursor to the bookmark by calling [MoveToBookmark](../../data/oledb/crowset-movetobookmark.md).  
   
--   Output the bookmarked row, appending it to the end of the file.  
+- Output the bookmarked row, appending it to the end of the file.  
   
 > [!NOTE]
 >  If you use this consumer application to test the Provider sample provider application, leave out the bookmark support described in this section.  
   
 #### To instantiate the bookmark  
   
-1.  The accessor needs to contain an object of type [CBookmark](../../data/oledb/cbookmark-class.md). The *nSize* parameter specifies the size of the bookmark buffer in bytes (typically 4 for 32-bit platforms and 8 for 64-bit platforms). Add the following declaration to the column data members in the user record class:  
+1. The accessor needs to contain an object of type [CBookmark](../../data/oledb/cbookmark-class.md). The *nSize* parameter specifies the size of the bookmark buffer in bytes (typically 4 for 32-bit platforms and 8 for 64-bit platforms). Add the following declaration to the column data members in the user record class:  
   
     ```cpp  
     //////////////////////////////////////////////////////////////////////  
@@ -99,7 +101,7 @@ The following topics show how to edit the files created by the MFC Application W
   
 #### To request a bookmark column from the provider  
   
-1.  Add the following code in the `GetRowsetProperties` method in the user record class:  
+1. Add the following code in the `GetRowsetProperties` method in the user record class:  
   
     ```cpp  
     // Set the DBPROP_IRowsetLocate property.  
@@ -113,7 +115,7 @@ The following topics show how to edit the files created by the MFC Application W
   
 #### To add a bookmark entry to the column map  
   
-1.  Add the following entry to the column map in the user record class:  
+1. Add the following entry to the column map in the user record class:  
   
     ```cpp  
     // Set a bookmark entry in the column map.  
@@ -127,7 +129,7 @@ The following topics show how to edit the files created by the MFC Application W
   
 #### To use a bookmark in your main code  
   
-1.  In the MyCons.cpp file from the console application you previously created, change the main code to read as follows. To use bookmarks, the main code needs to instantiate its own bookmark object (`myBookmark`); this is a different bookmark from the one in the accessor (`m_bookmark`).  
+1. In the MyCons.cpp file from the console application you previously created, change the main code to read as follows. To use bookmarks, the main code needs to instantiate its own bookmark object (`myBookmark`); this is a different bookmark from the one in the accessor (`m_bookmark`).  
   
     ```cpp  
     ///////////////////////////////////////////////////////////////////////  
@@ -196,14 +198,15 @@ The following topics show how to edit the files created by the MFC Application W
     }  
     ```  
   
- For more information about bookmarks, see [Using Bookmarks](../../data/oledb/using-bookmarks.md). Examples of bookmarks are also shown in [Updating Rowsets](../../data/oledb/updating-rowsets.md).  
+For more information about bookmarks, see [Using Bookmarks](../../data/oledb/using-bookmarks.md). Examples of bookmarks are also shown in [Updating Rowsets](../../data/oledb/updating-rowsets.md).  
   
 ## Adding XML Support to the Consumer  
- As discussed in [Accessing XML Data](../../data/oledb/accessing-xml-data.md), there are two ways to retrieve XML data from a data source: using [CStreamRowset](../../data/oledb/cstreamrowset-class.md) or using [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md). This example uses `CStreamRowset`, which is more efficient, but requires you to have SQL Server 2000 running on the computer on which you execute this sample application.  
+
+As discussed in [Accessing XML Data](../../data/oledb/accessing-xml-data.md), there are two ways to retrieve XML data from a data source: using [CStreamRowset](../../data/oledb/cstreamrowset-class.md) or using [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md). This example uses `CStreamRowset`, which is more efficient, but requires you to have SQL Server 2000 running on the computer on which you execute this sample application.  
   
 #### To modify the command class to inherit from CStreamRowset  
   
-1.  In the consumer application you previously created, change your `CCommand` declaration to specify `CStreamRowset` as the rowset class as follows:  
+1. In the consumer application you previously created, change your `CCommand` declaration to specify `CStreamRowset` as the rowset class as follows:  
   
     ```cpp  
     class CProducts : public CCommand<CAccessor<CProductsAccessor>, CStreamRowset >  
@@ -211,7 +214,7 @@ The following topics show how to edit the files created by the MFC Application W
   
 #### To modify the main code to retrieve and output the XML data  
   
-1.  In the MyCons.cpp file from the console application you previously created, change the main code to read as follows:  
+1. In the MyCons.cpp file from the console application you previously created, change the main code to read as follows:  
   
     ```cpp  
     ///////////////////////////////////////////////////////////////////////  
@@ -267,4 +270,5 @@ The following topics show how to edit the files created by the MFC Application W
     ```  
   
 ## See Also  
- [Creating an OLE DB Consumer Using a Wizard](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)
+
+[Creating an OLE DB Consumer Using a Wizard](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

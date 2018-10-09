@@ -76,7 +76,7 @@ Using a member intializer list is preferred over assigning values in the body of
     {}
 ```
 
-The identifier must refer to a class member; it is initialized with the value of the argument. The argument can be one of the constructor parameters, a function call or a [std::initializer_list\<T>](../standard-library/initializer-list-class.md). 
+The identifier must refer to a class member; it is initialized with the value of the argument. The argument can be one of the constructor parameters, a function call or a [std::initializer_list\<T>](../standard-library/initializer-list-class.md).
 
 **const** members and members of reference type must be initialized in the member initializer list.
 
@@ -84,7 +84,7 @@ Calls to parameterized base class constructors should be made in the initializer
 
 ## <a name="default_constructors"></a> Default constructors
 
- *Default constructors* typically have no parameters, but they can have parameters with default values.
+*Default constructors* typically have no parameters, but they can have parameters with default values.
 
 ```cpp
 class Box {
@@ -204,6 +204,7 @@ You can prevent your object from being copied by defining the copy constructor a
 Attempting to copy the object produces error *C2280: attempting to reference a deleted function*.
 
 ## <a name="move_constructors"></a> Move constructors
+
 A *move constructor* is a special member function that moves ownership of an existing object's data to a new variable without copying the original data. It takes an rvalue reference as its first parameter, and any additional parameters must have default values. Move constructors can significantly increase your program's efficiency when passing around large objects. A move constructor takes an rvalue reference as its first parameter. Any other parameters must have default values.
 
 ```cpp
@@ -375,11 +376,11 @@ A constructor performs its work in this order:
 
 1. It calls base class and member constructors in the order of declaration.
 
-2. If the class is derived from virtual base classes, it initializes the object's virtual base pointers.
+1. If the class is derived from virtual base classes, it initializes the object's virtual base pointers.
 
-3. If the class has or inherits virtual functions, it initializes the object's virtual function pointers. Virtual function pointers point to the class's virtual function table to enable correct binding of virtual function calls to code.
+1. If the class has or inherits virtual functions, it initializes the object's virtual function pointers. Virtual function pointers point to the class's virtual function table to enable correct binding of virtual function calls to code.
 
-4. It executes any code in its function body.
+1. It executes any code in its function body.
 
 The following example shows the order in which base class and member constructors are called in the constructor for a derived class. First, the base constructor is called, then the base-class members are initialized in the order in which they appear in the class declaration, and then the derived constructor is called.
 
@@ -580,7 +581,6 @@ public:
     //... rest of class as before
 };
 ```
-
 
 The object created by the constructors is fully initialized as soon as any constructor is finished. For more information, see [Uniform Initialization and Delegating Constructors](../cpp/uniform-initialization-and-delegating-constructors.md).
 

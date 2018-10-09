@@ -35,11 +35,11 @@ On the command line, another way to specify the base address is by using a base 
 
 The *key* is a string of alphanumeric characters and is not case sensitive. It is usually the name of a DLL, but it need not be. The *key* is followed by a base *address* in C-language, hexadecimal, or decimal notation and an optional maximum *size*. All three arguments are separated by spaces or tabs. The linker issues a warning if the specified *size* is less than the virtual address space required by the program. A *comment* is specified by a semicolon (**;**) and can be on the same or a separate line. The linker ignores all text from the semicolon to the end of the line. This example shows part of such a file:
 
-```  
+```
 main   0x00010000    0x08000000    ; for PROJECT.exe
 one    0x28000000    0x00100000    ; for DLLONE.DLL
 two    0x28100000    0x00300000    ; for DLLTWO.DLL
-```  
+```
 
 If the file that contains these lines is called DLLS.txt, the following example command applies this information:
 
@@ -53,9 +53,9 @@ Another way to set the base address is by using the *BASE* argument in a [NAME](
 
 1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
 
-2. Select the **Configuration Properties** > **Linker** > **Advanced** property page.
+1. Select the **Configuration Properties** > **Linker** > **Advanced** property page.
 
-3. Modify the **Base Address** property.
+1. Modify the **Base Address** property.
 
 ### To set this linker option programmatically
 
@@ -63,5 +63,5 @@ Another way to set the base address is by using the *BASE* argument in a [NAME](
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)  
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

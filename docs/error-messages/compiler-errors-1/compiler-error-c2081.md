@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2081
-'identifier' : name in formal parameter list illegal  
-  
- The identifier caused a syntax error.  
-  
- This error can be caused by using the old style for the formal parameter list. You must specify the type of formal parameters in the formal parameter list.  
-  
- The following sample generates C2081:  
-  
-```  
-// C2081.c  
-void func( int i, j ) {}  // C2081, no type specified for j  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2081b.c  
-// compile with: /c  
-void func( int i, int j ) {}  
+
+'identifier' : name in formal parameter list illegal
+
+The identifier caused a syntax error.
+
+This error can be caused by using the old style for the formal parameter list. You must specify the type of formal parameters in the formal parameter list.
+
+The following sample generates C2081:
+
+```
+// C2081.c
+void func( int i, j ) {}  // C2081, no type specified for j
+```
+
+Possible resolution:
+
+```
+// C2081b.c
+// compile with: /c
+void func( int i, int j ) {}
 ```

@@ -16,16 +16,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _iob
-The array of stdio control structures.  
-  
-## Syntax  
-  
-```  
-FILE _iob[_IOB_ENTRIES];  
-```  
-  
-## Remarks  
- `IOB_ENTRIES` is defined as 20 in stdio.h.  
-  
-## See Also  
- [Global Variables](../c-runtime-library/global-variables.md)
+
+The array of stdio control structures.
+
+## Syntax
+
+```
+FILE _iob[_IOB_ENTRIES];
+```
+
+## Remarks
+
+`IOB_ENTRIES` is defined as 20 in stdio.h.
+
+## See Also
+
+[Global Variables](../c-runtime-library/global-variables.md)

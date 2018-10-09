@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3189
-'typeid\<type abstract declarator>': this syntax is no longer supported, use ::typeid instead  
-  
- An obsolete form of [typeid](../../windows/typeid-cpp-component-extensions.md) was used, use the new form.  
-  
- The following sample generates C3189:  
-  
-```  
-// C3189.cpp  
-// compile with: /clr  
-int main() {  
-   System::Type^ t  = typeid<System::Object>;   // C3189  
-   System::Type^ t2  = System::Object::typeid;   // OK  
-}  
+
+'typeid\<type abstract declarator>': this syntax is no longer supported, use ::typeid instead
+
+An obsolete form of [typeid](../../windows/typeid-cpp-component-extensions.md) was used, use the new form.
+
+The following sample generates C3189:
+
+```
+// C3189.cpp
+// compile with: /clr
+int main() {
+   System::Type^ t  = typeid<System::Object>;   // C3189
+   System::Type^ t2  = System::Object::typeid;   // OK
+}
 ```

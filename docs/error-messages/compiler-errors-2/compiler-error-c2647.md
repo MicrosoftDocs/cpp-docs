@@ -13,26 +13,27 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2647
-'operator': cannot dereference a 'type1' on a 'type2'  
-  
- The left operand of a pointer-to-member operator ( `->*` or `.*` ) cannot be implicitly converted to a type related to the right operator.  
-  
- The following sample generates C2647:  
-  
-```  
-// C2647.cpp  
-class C {};  
-class D {};  
-  
-int main() {  
-   D d, *pd;  
-   C c, *pc = 0;  
-   int C::*pmc = 0;  
-   pd->*pmc = 0;   // C2647  
-   d.*pmc = 0;   // C2647  
-  
-   // OK  
-   pc->*pmc = 0;  
-   c.*pmc = 0;  
-}  
+
+'operator': cannot dereference a 'type1' on a 'type2'
+
+The left operand of a pointer-to-member operator ( `->*` or `.*` ) cannot be implicitly converted to a type related to the right operator.
+
+The following sample generates C2647:
+
+```
+// C2647.cpp
+class C {};
+class D {};
+
+int main() {
+   D d, *pd;
+   C c, *pc = 0;
+   int C::*pmc = 0;
+   pd->*pmc = 0;   // C2647
+   d.*pmc = 0;   // C2647
+
+   // OK
+   pc->*pmc = 0;
+   c.*pmc = 0;
+}
 ```

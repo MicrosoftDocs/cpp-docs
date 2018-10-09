@@ -49,5 +49,5 @@ None
 
 ## See Also
 
-[Resource Editors](../windows/resource-editors.md)  
+[Resource Editors](../windows/resource-editors.md)<br/>
 [Icons](https://msdn.microsoft.com/library/windows/desktop/ms646973.aspx)

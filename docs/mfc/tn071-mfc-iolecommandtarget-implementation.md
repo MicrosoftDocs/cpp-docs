@@ -47,11 +47,11 @@ This macro goes in the class declaration (typically in the header file) of the c
 BEGIN_OLECMD_MAP(theClass, baseClass)
 ```
 
-*theClass*  
- Name of the class that contains the command map.
+*theClass*<br/>
+Name of the class that contains the command map.
 
-*baseClass*  
- Name of the base class of the class that contains the command map.
+*baseClass*<br/>
+Name of the base class of the class that contains the command map.
 
 This macro marks the beginning of the command map. Use this macro in the implementation file for the class that contains the command map.
 
@@ -65,14 +65,14 @@ This macro marks the end of the command map. Use this macro in the implementatio
 ON_OLECMD(pguid, olecmdid, id)
 ```
 
-*pguid*  
- Pointer to the GUID of the OLE command's command group. This parameter is **NULL** for the standard OLE command group.
+*pguid*<br/>
+Pointer to the GUID of the OLE command's command group. This parameter is **NULL** for the standard OLE command group.
 
-*olecmdid*  
- OLE command ID of the command to be invoked.
+*olecmdid*<br/>
+OLE command ID of the command to be invoked.
 
-*id*  
- ID of the WM_COMMAND message to be sent to the application containing the command map when this OLE command is invoked.
+*id*<br/>
+ID of the WM_COMMAND message to be sent to the application containing the command map when this OLE command is invoked.
 
 Use the ON_OLECMD macro in the command map to add entries for the OLE commands you want to handle. When the OLE commands are received, they will be converted to the specified WM_COMMAND message and routed through the application's message map using the standard MFC command-routing architecture.
 
@@ -146,5 +146,5 @@ void CContainerCntrItem::DoOleCmd()
 
 ## See also
 
-[Technical Notes by Number](../mfc/technical-notes-by-number.md)  
-[Technical Notes by Category](../mfc/technical-notes-by-category.md)  
+[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
+[Technical Notes by Category](../mfc/technical-notes-by-category.md)

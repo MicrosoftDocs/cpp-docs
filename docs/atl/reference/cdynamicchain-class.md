@@ -86,22 +86,22 @@ BOOL CallChain(
 
 ### Parameters
 
-*dwChainID*  
+*dwChainID*<br/>
 [in] The unique identifier associated with the chained object and its message map.
 
-*hWnd*  
+*hWnd*<br/>
 [in] The handle to the window receiving the message.
 
-*uMsg*  
+*uMsg*<br/>
 [in] The message sent to the window.
 
-*wParam*  
+*wParam*<br/>
 [in] Additional message-specific information.
 
-*lParam*  
+*lParam*<br/>
 [in] Additional message-specific information.
 
-*lResult*  
+*lResult*<br/>
 [out] The result of the message processing.
 
 ### Return Value
@@ -144,7 +144,7 @@ BOOL RemoveChainEntry(DWORD dwChainID);
 
 ### Parameters
 
-*dwChainID*  
+*dwChainID*<br/>
 [in] The unique identifier associated with the chained object and its message map. You originally define this value through a call to [SetChainEntry](#setchainentry).
 
 ### Return Value
@@ -164,13 +164,13 @@ BOOL SetChainEntry(
 
 ### Parameters
 
-*dwChainID*  
+*dwChainID*<br/>
 [in] The unique identifier associated with the chained object and its message map.
 
-*pObject*  
+*pObject*<br/>
 [in] A pointer to the chained object declaring the message map. This object must derive from [CMessageMap](../../atl/reference/cmessagemap-class.md).
 
-*dwMsgMapID*  
+*dwMsgMapID*<br/>
 [in] The identifier of the message map in the chained object. The default value is 0, which identifies the default message map declared with [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map). To specify an alternate message map declared with [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), pass `msgMapID`.
 
 ### Return Value
@@ -183,5 +183,5 @@ If the *dwChainID* value already exists in the collection, its associated object
 
 ## See Also
 
-[CWindowImpl Class](../../atl/reference/cwindowimpl-class.md)   
+[CWindowImpl Class](../../atl/reference/cwindowimpl-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

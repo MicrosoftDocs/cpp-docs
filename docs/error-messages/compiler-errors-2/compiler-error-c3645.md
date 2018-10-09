@@ -13,16 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3645
-'function' : __clrcall cannot be used on functions compiled to native code  
-  
- The presence of some keywords in a function will cause the function to be compiled to native.  
-  
-## Example  
- The following sample generates C3645.  
-  
-```  
-// C3645.cpp  
-// compile with: /clr /c  
-#pragma unmanaged   
-int __clrcall dog() {}   // C3645  
+
+'function' : __clrcall cannot be used on functions compiled to native code
+
+The presence of some keywords in a function will cause the function to be compiled to native.
+
+## Example
+
+The following sample generates C3645.
+
+```
+// C3645.cpp
+// compile with: /clr /c
+#pragma unmanaged
+int __clrcall dog() {}   // C3645
 ```

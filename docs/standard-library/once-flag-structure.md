@@ -1,7 +1,7 @@
 ---
 title: "once_flag Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/17/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 f1_keywords: ["mutex/std::once_flag"]
@@ -20,8 +20,6 @@ Represents a **struct** that is used with the template function [call_once](../s
 struct once_flag
    {
    constexpr once_flag() noexcept;
-   once_flag(const once_flag&);
-   once_flag& operator=(const once_flag&);
    };
 
 ## Remarks

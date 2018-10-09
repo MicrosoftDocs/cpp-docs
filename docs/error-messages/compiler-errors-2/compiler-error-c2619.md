@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2619
-'identifier': a static data member is not allowed in an anonymous struct or union  
-  
- A member of an anonymous struct or union is declared `static`.  
-  
- The following sample generates C2619, and demonstrates how to fix it by removing the static keyword.  
-  
-```  
-// C2619.cpp  
-int main() {  
-   union { static int j; };  // C2619  
-   union { int j; };  // OK  
-}  
+
+'identifier': a static data member is not allowed in an anonymous struct or union
+
+A member of an anonymous struct or union is declared `static`.
+
+The following sample generates C2619, and demonstrates how to fix it by removing the static keyword.
+
+```
+// C2619.cpp
+int main() {
+   union { static int j; };  // C2619
+   union { int j; };  // OK
+}
 ```

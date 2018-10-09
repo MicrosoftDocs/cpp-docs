@@ -43,5 +43,5 @@ Win32
 
 ## See Also
 
-[Adding Commands to a Menu](../windows/adding-commands-to-a-menu.md)  
+[Adding Commands to a Menu](../windows/adding-commands-to-a-menu.md)<br/>
 [Menu Editor](../windows/menu-editor.md)

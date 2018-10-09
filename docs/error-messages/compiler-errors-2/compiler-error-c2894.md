@@ -13,27 +13,28 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2894
-templates cannot be declared to have 'C' linkage  
-  
- This error can be caused by a template defined inside an `extern` "C" block.  
-  
- The following sample generates C2894:  
-  
-```  
-// C2894.cpp  
-extern "C" {  
-   template<class T> class stack {};   // C2894 fail  
-  
-   template<class T> void f(const T &aT) {}   // C2894  
-}  
-```  
-  
- The following sample generates C2894:  
-  
-```  
-// C2894b.cpp  
-// compile with: /c  
-extern "C" template<class T> void f(const T &aT) {}   // C2894  
-  
-template<class T> void f2(const T &aT) {}   // OK  
+
+templates cannot be declared to have 'C' linkage
+
+This error can be caused by a template defined inside an `extern` "C" block.
+
+The following sample generates C2894:
+
+```
+// C2894.cpp
+extern "C" {
+   template<class T> class stack {};   // C2894 fail
+
+   template<class T> void f(const T &aT) {}   // C2894
+}
+```
+
+The following sample generates C2894:
+
+```
+// C2894b.cpp
+// compile with: /c
+extern "C" template<class T> void f(const T &aT) {}   // C2894
+
+template<class T> void f2(const T &aT) {}   // OK
 ```

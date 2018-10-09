@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3895
-'var' : type data members cannot be 'volatile'  
-  
- Certain kinds of data members, for example [literal](../../windows/literal-cpp-component-extensions.md) or [initonly](../../dotnet/initonly-cpp-cli.md), cannot be [volatile](../../cpp/volatile-cpp.md).  
-  
- The following sample generates C3895:  
-  
-```  
-// C3895.cpp  
-// compile with: /clr  
-ref struct Y1 {  
-   initonly  
-   volatile int data_var2;   // C3895  
-};  
+
+'var' : type data members cannot be 'volatile'
+
+Certain kinds of data members, for example [literal](../../windows/literal-cpp-component-extensions.md) or [initonly](../../dotnet/initonly-cpp-cli.md), cannot be [volatile](../../cpp/volatile-cpp.md).
+
+The following sample generates C3895:
+
+```
+// C3895.cpp
+// compile with: /clr
+ref struct Y1 {
+   initonly
+   volatile int data_var2;   // C3895
+};
 ```

@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2378
-'identifier' : redefinition; symbol cannot be overloaded with a typedef  
-  
- The identifier was redefined as a `typedef`.  
-  
- The following sample generates C2378:  
-  
-```  
-// C2378.cpp  
-// compile with: /c  
-int i;  
-typedef int i;   // C2378  
-typedef int b;   // OK  
+
+'identifier' : redefinition; symbol cannot be overloaded with a typedef
+
+The identifier was redefined as a `typedef`.
+
+The following sample generates C2378:
+
+```
+// C2378.cpp
+// compile with: /c
+int i;
+typedef int i;   // C2378
+typedef int b;   // OK
 ```

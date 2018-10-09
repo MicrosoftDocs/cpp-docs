@@ -13,20 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2883
-'name' : function declaration conflicts with 'identifier' introduced by using-declaration  
-  
- You tried to define a function more than once. The first definition was made from a namespace with a `using` declaration. The second was a local definition.  
-  
- The following sample generates C2883:  
-  
-```  
-// C2883.cpp  
-namespace A {  
-   void z(int);  
-}  
-  
-int main() {  
-   using A::z;  
-   void z(int);   // C2883  z is already defined  
-}  
+
+'name' : function declaration conflicts with 'identifier' introduced by using-declaration
+
+You tried to define a function more than once. The first definition was made from a namespace with a `using` declaration. The second was a local definition.
+
+The following sample generates C2883:
+
+```
+// C2883.cpp
+namespace A {
+   void z(int);
+}
+
+int main() {
+   using A::z;
+   void z(int);   // C2883  z is already defined
+}
 ```

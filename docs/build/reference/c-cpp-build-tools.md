@@ -13,22 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # C/C++ Build Tools
-Visual C++ provides the following command-line tools for viewing or manipulating build output:  
-  
--   [BSCMAKE.EXE](../../build/reference/bscmake-reference.md) builds a browse information file (.bsc) that contains information about the symbols (classes, functions, data, macros, and types) in your program. You view this information in browse windows within the development environment. (A .bsc file can also be built in the development environment.)  
-  
--   [LIB.EXE](../../build/reference/lib-reference.md) is used to create and manage a library of Common Object File Format (COFF) object files. It can also be used to create export files and import libraries to reference exported definitions.  
-  
--   [EDITBIN.EXE](../../build/reference/editbin-reference.md) is used to modify COFF binary files.  
-  
--   [DUMPBIN.EXE](../../build/reference/dumpbin-reference.md) displays information (such as a symbol table) about COFF binary files.  
-  
--   [NMAKE](../../build/nmake-reference.md) reads and executes makefiles.  
-  
--   [ERRLOOK](../../build/reference/value-edit-control.md), the Error Lookup utility, retrieves a system error message or module error message based on the value entered.  
-  
-## See Also  
- [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)   
- [Decorated Names](../../build/reference/decorated-names.md)   
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+
+Visual C++ provides the following command-line tools for viewing or manipulating build output:
+
+- [BSCMAKE.EXE](../../build/reference/bscmake-reference.md) builds a browse information file (.bsc) that contains information about the symbols (classes, functions, data, macros, and types) in your program. You view this information in browse windows within the development environment. (A .bsc file can also be built in the development environment.)
+
+- [LIB.EXE](../../build/reference/lib-reference.md) is used to create and manage a library of Common Object File Format (COFF) object files. It can also be used to create export files and import libraries to reference exported definitions.
+
+- [EDITBIN.EXE](../../build/reference/editbin-reference.md) is used to modify COFF binary files.
+
+- [DUMPBIN.EXE](../../build/reference/dumpbin-reference.md) displays information (such as a symbol table) about COFF binary files.
+
+- [NMAKE](../../build/nmake-reference.md) reads and executes makefiles.
+
+- [ERRLOOK](../../build/reference/value-edit-control.md), the Error Lookup utility, retrieves a system error message or module error message based on the value entered.
+
+## See Also
+
+[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)<br/>
+[Decorated Names](../../build/reference/decorated-names.md)<br/>
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

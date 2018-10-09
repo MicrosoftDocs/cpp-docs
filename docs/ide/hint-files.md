@@ -36,9 +36,9 @@ The following macro definitions are in a separate header file.
 
 ```cpp
 // Header file.
-#define STDMETHOD(method) HRESULT (STDMETHODCALLTYPE * method)  
+#define STDMETHOD(method) HRESULT (STDMETHODCALLTYPE * method)
 #define STDMETHODCALLTYPE __stdcall
-#define HRESULT void*  
+#define HRESULT void*
 ```
 
 The parsing system cannot interpret the source code because a function named `STDMETHOD` appears to be declared, and that declaration is syntactically incorrect because it has two parameter lists. The parsing system does not open the header file to discover the definitions for the `STDMETHOD`, `STDMETHODCALLTYPE`, and `HRESULT` macros. Because the parsing system cannot interpret the `STDMETHOD` macro, it ignores the whole statement and then continues parsing.
@@ -111,21 +111,21 @@ Some macros cause the parsing system to misinterpret source code, but can be ign
 
 In the following source code, the parameter type for the `FormatWindowClassName()` function is `PXSTR`, and the parameter name is `szBuffer`. However, the parsing system mistakes the `_Pre_notnull_` and `_Post_z_` SAL annotations for either the parameter type or the parameter name.
 
-**Source Code:**  
+**Source Code:**
 
-```  
-static void FormatWindowClassName(_Pre_notnull__Post_z_ PXSTR szBuffer)  
-```  
+```cpp
+static void FormatWindowClassName(_Pre_notnull__Post_z_ PXSTR szBuffer)
+```
 
 **Strategy:** Null definition
 
-The strategy in this situation is to treat the SAL annotations as if they did not exist. To do this, specify a hint whose replacement string is null. Consequently, the parsing system ignores the annotations, and the **Class View** browser does not display them. (Visual C++ includes a built-in hint file that hides SAL annotation.)  
+The strategy in this situation is to treat the SAL annotations as if they did not exist. To do this, specify a hint whose replacement string is null. Consequently, the parsing system ignores the annotations, and the **Class View** browser does not display them. (Visual C++ includes a built-in hint file that hides SAL annotation.)
 
-**Hint file:**  
+**Hint file:**
 
-```  
+```cpp.hint
 #define _Pre_notnull_
-```  
+```
 
 ### Concealed C/C++ Language Elements
 
@@ -133,11 +133,11 @@ A typical reason that the parsing system misinterprets source code is if a macro
 
 In the following source code, the `START_NAMESPACE` macro hides an unpaired left brace (`{`).
 
-**Source Code:**  
+**Source Code:**
 
-```  
+```cpp
 #define START_NAMESPACE namespace MyProject {
-```  
+```
 
 **Strategy:** Direct copy
 
@@ -145,11 +145,11 @@ If the semantics of a macro are critical to the browsing experience, create a hi
 
 Note that if the macro in the source file contains other macros, those macros are interpreted only if they are already in the set of effective hints.
 
-**Hint File:**  
+**Hint File:**
 
-```  
+```cpp.hint
 #define START_NAMESPACE namespace MyProject {
-```  
+```
 
 ### Maps
 
@@ -157,9 +157,9 @@ A map consists of macros that designate a starting element, ending element, and 
 
 The following source code defines the `BEGIN_CATEGORY_MAP`, `IMPLEMENTED_CATEGORY`, and `END_CATEGORY_MAP` macros.
 
-**Source Code:**  
+**Source Code:**
 
-```  
+```cpp
 #define BEGIN_CATEGORY_MAP(x)\
 static const struct ATL::_ATL_CATMAP_ENTRY* GetCategoryMap() throw() {\
 static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
@@ -167,15 +167,15 @@ static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
 #define END_CATEGORY_MAP()\
    { _ATL_CATMAP_ENTRY_END, NULL } };\
    return( pMap ); }
-```  
+```
 
 **Strategy:** Identify map elements
 
 Specify hints for the start, middle (if any), and end elements of a map. Use the special map replacement strings, `@<`, `@=`, and `@>`. For more information, see the `Syntax` section in this topic.
 
-**Hint File:**  
+**Hint File:**
 
-```  
+```cpp.hint
 // Start of the map.
 #define BEGIN_CATEGORY_MAP(x) @<
 // Intermediate map element.
@@ -184,7 +184,7 @@ Specify hints for the start, middle (if any), and end elements of a map. Use the
 #define REQUIRED_CATEGORY( catid ) @=
 // End of the map.
 #define END_CATEGORY_MAP() @>
-```  
+```
 
 ### Composite Macros
 
@@ -192,11 +192,11 @@ Composite macros contain one or more of the types of macro that confuse the pars
 
 The following source code contains the `START_NAMESPACE` macro, which specifies the start of a namespace scope, and the `BEGIN_CATEGORY_MAP` macro, which specifies the start of a map.
 
-**Source Code:**  
+**Source Code:**
 
-```  
+```cpp
 #define NSandMAP START_NAMESPACE BEGIN_CATEGORY_MAP
-```  
+```
 
 **Strategy:** Direct copy
 
@@ -204,31 +204,31 @@ Create hints for the `START_NAMESPACE` and `BEGIN_CATEGORY_MAP` macros, and then
 
 In this example, assume `START_NAMESPACE` already has a hint as described in this topic in the `Concealed C/C++ Language Elements` subheading. And assume `BEGIN_CATEGORY_MAP` has a hint as described earlier in `Maps`.
 
-**Hint File:**  
+**Hint File:**
 
-```  
+```cpp.hint
 #define NSandMAP START_NAMESPACE BEGIN_CATEGORY_MAP
-```  
+```
 
 ### Inconvenient Macros
 
 Some macros can be interpreted by the parsing system, but the source code is difficult to read because the macro is long or complex. For the sake of readability, you can provide a hint that simplifies the display of the macro.
 
-**Source Code:**  
+**Source Code:**
 
-```  
-#define STDMETHOD(methodName) HRESULT (STDMETHODCALLTYPE * methodName)  
-```  
+```cpp
+#define STDMETHOD(methodName) HRESULT (STDMETHODCALLTYPE * methodName)
+```
 
 **Strategy:** Simplification
 
 Create a hint that displays a simpler macro definition.
 
-**Hint File:**  
+**Hint File:**
 
-```  
+```cpp.hint
 #define STDMETHOD(methodName) void* methodName
-```  
+```
 
 ## Example
 
@@ -238,7 +238,7 @@ The following illustration depicts some of the physical directories in a Visual 
 
 ### Hint File Directories
 
-![Common and project&#45;specific hint file directories.](../ide/media/hintfile.png "HintFile")  
+![Common and project&#45;specific hint file directories.](../ide/media/hintfile.png "HintFile")
 
 ### Directories and Hint File Contents
 
@@ -246,41 +246,41 @@ The following list shows the directories in this project that contain hint files
 
 - vcpackages
 
-    ```  
-    // vcpackages (partial list)  
+    ```cpp.hint
+    // vcpackages (partial list)
     #define _In_
     #define _In_opt_
     #define _In_z_
     #define _In_opt_z_
-    #define _In_count_(size)  
-    ```  
+    #define _In_count_(size)
+    ```
 
 - Debug
 
-    ```  
+    ```cpp.hint
     // Debug
     #undef _In_
     #define OBRACE {
     #define CBRACE }
-    #define RAISE_EXCEPTION(x) throw (x)  
+    #define RAISE_EXCEPTION(x) throw (x)
     #define START_NAMESPACE namespace MyProject {
     #define END_NAMESPACE }
-    ```  
+    ```
 
 - A1
 
-    ```  
+    ```cpp.hint
     // A1
     #define START_NAMESPACE namespace A1Namespace {
-    ```  
+    ```
 
 - A2
 
-    ```  
+    ```cpp.hint
     // A2
     #undef OBRACE
     #undef CBRACE
-    ```  
+    ```
 
 ### Effective Hints
 
@@ -290,19 +290,19 @@ The following table lists the effective hints for the source files in this proje
 
 - Effective hints:
 
-    ```  
-    // vcpackages (partial list)  
+    ```cpp.hint
+    // vcpackages (partial list)
     #define _In_opt_
     #define _In_z_
     #define _In_opt_z_
-    #define _In_count_(size)  
+    #define _In_count_(size)
     // Debug...
-    #define RAISE_EXCEPTION(x) throw (x)  
+    #define RAISE_EXCEPTION(x) throw (x)
     // A1
     #define START_NAMESPACE namespace A1Namespace {
     // ...Debug
     #define END_NAMESPACE }
-    ```  
+    ```
 
 The following notes apply to the preceding list.
 
@@ -316,10 +316,10 @@ The following notes apply to the preceding list.
 
 ## See Also
 
-[File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)    
-[#define Directive (C/C++)](../preprocessor/hash-define-directive-c-cpp.md)   
-[#undef Directive (C/C++)](../preprocessor/hash-undef-directive-c-cpp.md)   
-[SAL Annotations](../c-runtime-library/sal-annotations.md)   
-[Message Maps](../mfc/reference/message-maps-mfc.md)   
-[Message Map Macros](../atl/reference/message-map-macros-atl.md)   
+[File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)<br>
+[#define Directive (C/C++)](../preprocessor/hash-define-directive-c-cpp.md)<br>
+[#undef Directive (C/C++)](../preprocessor/hash-undef-directive-c-cpp.md)<br>
+[SAL Annotations](../c-runtime-library/sal-annotations.md)<br>
+[Message Maps](../mfc/reference/message-maps-mfc.md)<br>
+[Message Map Macros](../atl/reference/message-map-macros-atl.md)<br>
 [Object Map Macros](../atl/reference/object-map-macros.md)

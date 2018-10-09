@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1037
-cannot open object file filename  
-  
- The object file specified by [/Fo](../../build/reference/fo-object-file-name.md) cannot be opened.  
-  
-### To fix by checking the following possible causes  
-  
-1.  Invalid filename.  
-  
-2.  Insufficient memory to open the file.  
-  
-3.  Another process is using the file.  
-  
-4.  A read-only file has the same name.  
-  
+
+cannot open object file filename
+
+The object file specified by [/Fo](../../build/reference/fo-object-file-name.md) cannot be opened.
+
+### To fix by checking the following possible causes
+
+1. Invalid filename.
+
+1. Insufficient memory to open the file.
+
+1. Another process is using the file.
+
+1. A read-only file has the same name.
+

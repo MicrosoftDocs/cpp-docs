@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2882
-'name' : illegal use of namespace identifier in expression  
-  
- You tried to use the name of a namespace in an expression.  
-  
- The following sample generates C2882:  
-  
-```  
-// C2882.cpp  
-// compile with: /c  
-namespace A {  
-   int k;  
-}  
-  
-int i = A;   // C2882, can't assign A to i  
+
+'name' : illegal use of namespace identifier in expression
+
+You tried to use the name of a namespace in an expression.
+
+The following sample generates C2882:
+
+```
+// C2882.cpp
+// compile with: /c
+namespace A {
+   int k;
+}
+
+int i = A;   // C2882, can't assign A to i
 ```

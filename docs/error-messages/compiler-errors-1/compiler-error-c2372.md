@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2372
-'identifier' : redefinition; different types of indirection  
-  
- The identifier is already defined with a different derived type.  
-  
- The following sample generates C2326:  
-  
-```  
-// C2372.cpp  
-// compile with: /c  
-extern int *fp;  
-extern int fp[];   // C2372  
-extern int fp2[];   // OK  
+
+'identifier' : redefinition; different types of indirection
+
+The identifier is already defined with a different derived type.
+
+The following sample generates C2326:
+
+```
+// C2372.cpp
+// compile with: /c
+extern int *fp;
+extern int fp[];   // C2372
+extern int fp2[];   // OK
 ```

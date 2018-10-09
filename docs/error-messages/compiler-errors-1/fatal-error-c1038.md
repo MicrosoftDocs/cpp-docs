@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1038
-compiler limit : function : control flow state too complex; simplify function  
-  
- The function has more control-flow states than the compiler can handle. Simplify control flow or split the function into smaller functions.
+
+compiler limit : function : control flow state too complex; simplify function
+
+The function has more control-flow states than the compiler can handle. Simplify control flow or split the function into smaller functions.

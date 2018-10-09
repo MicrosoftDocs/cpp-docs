@@ -18,7 +18,7 @@ When **/Zc:trigraphs** is specified, the compiler replaces a trigraph character 
 
 ## Syntax
 
-> **/Zc:trigraphs**[**-**]  
+> **/Zc:trigraphs**[**-**]
 
 ## Remarks
 

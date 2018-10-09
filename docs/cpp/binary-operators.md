@@ -68,4 +68,5 @@ where *ret-type* and *op* are as described for member operator functions and *ar
 > There is no restriction on the return types of the binary operators; however, most user-defined binary operators return either a class type or a reference to a class type.
 
 ## See also
- [Operator Overloading](../cpp/operator-overloading.md)
+
+[Operator Overloading](../cpp/operator-overloading.md)

@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3619
-a template cannot be declared within a managed or WinRT type  
-  
-Class templates are not allowed in a managed or WinRT class or interface.  
-  
-C3619 is only reachable using the obsolete compiler option **/clr:oldSyntax**.  
+
+a template cannot be declared within a managed or WinRT type
+
+Class templates are not allowed in a managed or WinRT class or interface.
+
+C3619 is only reachable using the obsolete compiler option **/clr:oldSyntax**.

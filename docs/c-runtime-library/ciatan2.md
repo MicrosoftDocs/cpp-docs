@@ -16,22 +16,26 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _CIatan2
-Calculates the arctangent of *x* / *y* where *x* and *y* are values on the top of the stack.  
-  
-## Syntax  
-  
-```  
-void __cdecl _CIatan2();  
-```  
-  
-## Remarks  
- This version of the `atan2` function has a specialized calling convention that the compiler understands. It speeds up the execution because it prevents copies from being generated and helps with register allocation.  
-  
- The resulting value is pushed onto the top of the stack.  
-  
-## Requirements  
- **Platform:** x86  
-  
-## See Also  
- [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [atan, atanf, atanl, atan2, atan2f, atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)
+
+Calculates the arctangent of *x* / *y* where *x* and *y* are values on the top of the stack.
+
+## Syntax
+
+```
+void __cdecl _CIatan2();
+```
+
+## Remarks
+
+This version of the `atan2` function has a specialized calling convention that the compiler understands. It speeds up the execution because it prevents copies from being generated and helps with register allocation.
+
+The resulting value is pushed onto the top of the stack.
+
+## Requirements
+
+**Platform:** x86
+
+## See Also
+
+[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[atan, atanf, atanl, atan2, atan2f, atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)

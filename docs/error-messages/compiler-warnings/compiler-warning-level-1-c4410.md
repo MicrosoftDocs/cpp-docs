@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4410
-illegal size for operand  
-  
- One of the operands on the instruction had an incorrect size. The smallest legal size for the operand was used.
+
+illegal size for operand
+
+One of the operands on the instruction had an incorrect size. The smallest legal size for the operand was used.

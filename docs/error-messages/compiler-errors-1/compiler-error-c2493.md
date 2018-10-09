@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2493
-illegal form of __based  
-  
- A `__based` expression must be based on a pointer.  
-  
- The following sample generates C2493:  
-  
-```  
-// C2493.cpp  
-// compile with: /c  
-char mybase;  
-int __based(mybase) ptr;   // C2493  
-  
-// OK  
-char * mybase;  
-int __based(mybase) * ptr;  
+
+illegal form of __based
+
+A `__based` expression must be based on a pointer.
+
+The following sample generates C2493:
+
+```
+// C2493.cpp
+// compile with: /c
+char mybase;
+int __based(mybase) ptr;   // C2493
+
+// OK
+char * mybase;
+int __based(mybase) * ptr;
 ```

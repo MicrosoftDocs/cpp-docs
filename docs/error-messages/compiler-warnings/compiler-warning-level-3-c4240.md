@@ -13,26 +13,27 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4240
-nonstandard extension used : access to 'classname' now defined to be 'access specifier', previously it was defined to be 'access specifier'  
-  
- Under ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-extensions.md)), you cannot change the access to a nested class. Under the default Microsoft extensions (/Ze), you can, with this warning.  
-  
-## Example  
-  
-```  
-// C4240.cpp  
-// compile with: /W3  
-class X  
-{  
-private:  
-   class N;  
-public:  
-   class N  
-   {   // C4240  
-   };  
-};  
-  
-int main()  
-{  
-}  
+
+nonstandard extension used : access to 'classname' now defined to be 'access specifier', previously it was defined to be 'access specifier'
+
+Under ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-extensions.md)), you cannot change the access to a nested class. Under the default Microsoft extensions (/Ze), you can, with this warning.
+
+## Example
+
+```
+// C4240.cpp
+// compile with: /W3
+class X
+{
+private:
+   class N;
+public:
+   class N
+   {   // C4240
+   };
+};
+
+int main()
+{
+}
 ```

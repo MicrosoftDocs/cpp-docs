@@ -25,7 +25,7 @@ class CComTearOffObject : public Base
 
 #### Parameters
 
-*Base*  
+*Base*<br/>
 Your tear-off class, derived from `CComTearOffObjectBase` and the interfaces you want your tear-off object to support.
 
 ATL implements its tear-off interfaces in two phases — the `CComTearOffObjectBase` methods handle the reference count and `QueryInterface`, while `CComTearOffObject` implements [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown).
@@ -103,7 +103,7 @@ CComTearOffObject(void* pv);
 
 ### Parameters
 
-*pv*  
+*pv*<br/>
 [in] Pointer that will be converted to a pointer to a `CComObject<Owner>` object.
 
 ### Remarks
@@ -144,7 +144,7 @@ CComObject<Owner>* m_pOwner;
 
 ### Parameters
 
-*Owner*  
+*Owner*<br/>
 [in] The class for which a tear-off is being implemented.
 
 ### Remarks
@@ -161,10 +161,10 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] The IID of the interface being requested.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] A pointer to the interface pointer identified by *iid*, or NULL if the interface is not found.
 
 ### Return Value
@@ -189,5 +189,5 @@ In non-debug builds, always returns zero. In debug builds, returns a value that 
 
 ## See Also
 
-[CComCachedTearOffObject Class](../../atl/reference/ccomcachedtearoffobject-class.md)   
+[CComCachedTearOffObject Class](../../atl/reference/ccomcachedtearoffobject-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

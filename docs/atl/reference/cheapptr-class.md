@@ -22,16 +22,16 @@ A smart pointer class for managing heap pointers.
 ## Syntax
 
 ```
-template<typename T, class Allocator=CCRTAllocator>  
+template<typename T, class Allocator=CCRTAllocator>
 class CHeapPtr : public CHeapPtrBase<T, Allocator>
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The object type to be stored on the heap.
 
-*Allocator*  
+*Allocator*<br/>
 The memory allocation class to use.
 
 ## Members
@@ -79,7 +79,7 @@ bool Allocate(size_t nElements = 1) throw();
 
 ### Parameters
 
-*nElements*  
+*nElements*<br/>
 The number of elements used to calculate the amount of memory to allocate. The default value is 1.
 
 ### Return Value
@@ -106,7 +106,7 @@ CHeapPtr(CHeapPtr<T, Allocator>& p) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 An existing heap pointer or `CHeapPtr`.
 
 ### Remarks
@@ -128,7 +128,7 @@ CHeapPtr<T, Allocator>& operator=(
 
 ### Parameters
 
-*p*  
+*p*<br/>
 An existing `CHeapPtr` object.
 
 ### Return Value
@@ -149,7 +149,7 @@ bool Reallocate(size_t nElements) throw();
 
 ### Parameters
 
-*nElements*  
+*nElements*<br/>
 The new number of elements used to calculate the amount of memory to allocate.
 
 ### Return Value
@@ -162,6 +162,6 @@ Returns true if the memory was successfully allocated, false on failure.
 
 ## See Also
 
-[CHeapPtrBase Class](../../atl/reference/cheapptrbase-class.md)   
-[CCRTAllocator Class](../../atl/reference/ccrtallocator-class.md)   
+[CHeapPtrBase Class](../../atl/reference/cheapptrbase-class.md)<br/>
+[CCRTAllocator Class](../../atl/reference/ccrtallocator-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -37,6 +37,6 @@ These classes are wrappers for common Win32 security classes and objects.
 
 ## See Also
 
-[Class Overview](../atl/atl-class-overview.md)   
+[Class Overview](../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../atl/reference/security-global-functions.md)
 

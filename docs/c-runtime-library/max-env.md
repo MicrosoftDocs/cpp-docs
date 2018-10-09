@@ -13,16 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _MAX_ENV
-The maximum permissible string length of an environmental variable.  
-  
-## Syntax  
-  
-```  
-  
-#include <stdio.h>  
-  
-```  
-  
-## See Also  
- [Environmental Constants](../c-runtime-library/environmental-constants.md)   
- [Global Constants](../c-runtime-library/global-constants.md)
+
+The maximum permissible string length of an environmental variable.
+
+## Syntax
+
+```
+
+#include <stdio.h>
+
+```
+
+## See Also
+
+[Environmental Constants](../c-runtime-library/environmental-constants.md)<br/>
+[Global Constants](../c-runtime-library/global-constants.md)

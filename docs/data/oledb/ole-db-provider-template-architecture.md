@@ -12,29 +12,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Provider Template Architecture
+
 ## Data Sources and Sessions  
- The OLE DB provider architecture includes a data source object and one or more sessions. The data source object is the initial object that every provider must instantiate. When a consumer application needs data, it co-creates the data source object to start the provider. The data source object creates a session object (using the `IDBCreateSession` interface) through which the consumer connects to the data source object. ODBC programmers can think of the data source object as being equivalent to the `HENV` and the session object as equivalent to the `HDBC`.  
+
+The OLE DB provider architecture includes a data source object and one or more sessions. The data source object is the initial object that every provider must instantiate. When a consumer application needs data, it co-creates the data source object to start the provider. The data source object creates a session object (using the `IDBCreateSession` interface) through which the consumer connects to the data source object. ODBC programmers can think of the data source object as being equivalent to the `HENV` and the session object as equivalent to the `HDBC`.  
   
- ![Provider architecture](../../data/oledb/media/vc4twb1.gif "vc4twb1")  
+![Provider architecture](../../data/oledb/media/vc4twb1.gif "vc4twb1")  
   
- Together with the source files created by the OLE DB Provider Wizard, the OLE DB templates implement a data source object. A session is an object that corresponds to the OLE DB `TSession`.  
+Together with the source files created by the OLE DB Provider Wizard, the OLE DB templates implement a data source object. A session is an object that corresponds to the OLE DB `TSession`.  
   
 ## Mandatory and Optional Interfaces  
- The OLE DB provider templates give you prepackaged implementations for all the required interfaces. Mandatory and optional interfaces are defined by OLE DB for several types of objects:  
+
+The OLE DB provider templates give you prepackaged implementations for all the required interfaces. Mandatory and optional interfaces are defined by OLE DB for several types of objects:  
   
--   [Data source](../../data/oledb/data-source-object-interfaces.md)  
+- [Data source](../../data/oledb/data-source-object-interfaces.md)  
   
--   [Session](../../data/oledb/session-object-interfaces.md)  
+- [Session](../../data/oledb/session-object-interfaces.md)  
   
--   [Rowset](../../data/oledb/rowset-object-interfaces.md)  
+- [Rowset](../../data/oledb/rowset-object-interfaces.md)  
   
--   [Command](../../data/oledb/command-object-interfaces.md)  
+- [Command](../../data/oledb/command-object-interfaces.md)  
   
--   [Transaction](../../data/oledb/transaction-object-interfaces.md)  
+- [Transaction](../../data/oledb/transaction-object-interfaces.md)  
   
- Note that the OLE DB provider templates do not implement the row and storage objects.  
+Note that the OLE DB provider templates do not implement the row and storage objects.  
   
- The following table lists mandatory and optional interfaces for the objects listed above, according to the [OLE DB 2.6 SDK Documentation](/previous-versions/windows/desktop/ms722784\(v=vs.85\)).  
+The following table lists mandatory and optional interfaces for the objects listed above, according to the [OLE DB 2.6 SDK Documentation](/previous-versions/windows/desktop/ms722784\(v=vs.85\)).  
   
 |Component|Interface|Comment|  
 |---------------|---------------|-------------|  
@@ -44,12 +47,13 @@ ms.workload: ["cplusplus", "data-storage"]
 |[Command](../../data/oledb/command-object-interfaces.md) ([CCommand](ccommand-class.md))|[mandatory] `IAccessor`<br /><br /> [mandatory] `IColumnsInfo`<br /><br /> [mandatory] `ICommand`<br /><br /> [mandatory] `ICommandProperties`<br /><br /> [mandatory] `ICommandText`<br /><br /> [mandatory] `IConvertType`<br /><br /> [optional] `IColumnsRowset`<br /><br /> [optional] `ICommandPersist`<br /><br /> [optional] `ICommandPrepare`<br /><br /> [optional] `ICommandWithParameters`<br /><br /> [optional] `ISupportErrorInfo`<br /><br /> [optional] `ICommandStream`|The command object handles operations on data such as queries. It can handle parameterized or non-parameterized statements.<br /><br /> The command object is also responsible for handling bindings for parameters and output columns. A binding is a structure that contains information about how a column, in a rowset, should be retrieved. It contains information such as ordinal, data type, length, and status.|  
 |[Transaction](../../data/oledb/transaction-object-interfaces.md) (optional)|[mandatory] `IConnectionPointContainer`<br /><br /> [mandatory] `ITransaction`<br /><br /> [optional] `ISupportErrorInfo`|The transaction object defines an atomic unit of work on a data source and determines how those units of work relate to each other. This object is not directly supported by the OLE DB provider templates (that is, you create your own object).|  
   
- For more information, see the following topics:  
+For more information, see the following topics:  
   
--   [Property Maps](../../data/oledb/property-maps.md)  
+- [Property Maps](../../data/oledb/property-maps.md)  
   
--   [The User Record](../../data/oledb/user-record.md)  
+- [The User Record](../../data/oledb/user-record.md)  
   
 ## See Also  
- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Interfaces](/previous-versions/windows/desktop/ms709709\(v=vs.85\))
+
+[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Interfaces](/previous-versions/windows/desktop/ms709709\(v=vs.85\))

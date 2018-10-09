@@ -22,7 +22,7 @@ Deprecated. Restricts the length of external names.
 
 ## Arguments
 
-*number*  
+*number*<br/>
 Specifies the maximum length of external names allowed in a program.
 
 ## Remarks
@@ -71,9 +71,9 @@ The **/H** option is deprecated since Visual Studio 2005; the maximum length lim
 
 1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-2. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-3. Enter the compiler option in the **Additional Options** box.
+1. Enter the compiler option in the **Additional Options** box.
 
 ### To set this compiler option programmatically
 
@@ -81,5 +81,5 @@ The **/H** option is deprecated since Visual Studio 2005; the maximum length lim
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)   
+[Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

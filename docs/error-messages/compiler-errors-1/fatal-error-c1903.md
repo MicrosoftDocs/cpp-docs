@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1903
-unable to recover from previous error(s); stopping compilation  
-  
- The compiler found too many errors to continue. Fix the errors and recompile.
+
+unable to recover from previous error(s); stopping compilation
+
+The compiler found too many errors to continue. Fix the errors and recompile.

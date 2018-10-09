@@ -50,7 +50,7 @@ AtlHresultFromWin32(DWORD error);
 
 ### Parameters
 
-*error*  
+*error*<br/>
 The error value to convert.
 
 ### Remarks
@@ -116,28 +116,28 @@ HRESULT WINAPI AtlReportError(
 
 ### Parameters
 
-*clsid*  
+*clsid*<br/>
 [in] The CLSID of the object reporting the error.
 
-*lpszDesc*  
+*lpszDesc*<br/>
 [in] The string describing the error. The Unicode versions specify that *lpszDesc* is of type LPCOLESTR; the ANSI version specifies a type of LPCSTR.
 
-*iid*  
+*iid*<br/>
 [in] The IID of the interface defining the error or GUID_NULL if the error is defined by the operating system.
 
-*hRes*  
+*hRes*<br/>
 [in] The HRESULT you want returned to the caller.
 
-*nID*  
+*nID*<br/>
 [in] The resource identifier where the error description string is stored. This value should lie between 0x0200 and 0xFFFF, inclusively. In debug builds, an **ASSERT** will result if *nID* does not index a valid string. In release builds, the error description string will be set to "Unknown Error."
 
-*dwHelpID*  
+*dwHelpID*<br/>
 [in] The help context identifier for the error.
 
-*lpszHelpFile*  
+*lpszHelpFile*<br/>
 [in] The path and name of the help file describing the error.
 
-*hInst*  
+*hInst*<br/>
 [in] The handle to the resource. By default, this parameter is `__AtlBaseModuleModule::GetResourceInstance`, where `__AtlBaseModuleModule` is the global instance of [CAtlBaseModule](../../atl/reference/catlbasemodule-class.md) or a class derived from it.
 
 ### Return Value
@@ -169,7 +169,7 @@ __declspec(noreturn) inline void AtlThrow(HRESULT hr);
 
 ### Parameters
 
-*hr*  
+*hr*<br/>
 Standard HRESULT value.
 
 ### Remarks
@@ -220,6 +220,6 @@ If _ATL_NO_EXCEPTIONS is defined, the function causes an assertion failure inste
 
 ## See Also
 
-[Functions](../../atl/reference/atl-functions.md)   
+[Functions](../../atl/reference/atl-functions.md)<br/>
 [Debugging and Error Reporting Macros](../../atl/reference/debugging-and-error-reporting-macros.md)
 

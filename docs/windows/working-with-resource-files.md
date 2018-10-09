@@ -26,24 +26,24 @@ For information on adding resources to managed projects, please see [Resources i
 
 ## In This Section
 
-[Resource Files](../windows/resource-files-visual-studio.md)  
+[Resource Files](../windows/resource-files-visual-studio.md)<br/>
 Describes resource files and how they are used in Windows desktop applications. Also provides links to topics that describe how to use resource files.
 
-[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)  
+[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)<br/>
 Describes symbols and provides information on using the **Resource Symbols** dialog box to manage symbols in your projects.
 
-[Resource Editors](../windows/resource-editors.md)  
+[Resource Editors](../windows/resource-editors.md)<br/>
 Describes the resource editors provided in Visual Studio, the types of resources you can modify with each editor, and provides links to detailed information on using each editor.
 
 ## Related Sections
 
-[Visual C++](../visual-cpp-in-visual-studio.md)  
+[Visual C++](../visual-cpp-in-visual-studio.md)<br/>
 Provides links into the Visual C++ documentation.
 
-[Talk to Us](/visualstudio/ide/talk-to-us)  
+[Talk to Us](/visualstudio/ide/talk-to-us)<br/>
 Provides links to information on using the documentation set, contacting product support, and employing accessibility features.
 
 ## See Also
 
-[Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md)  
+[Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md)<br/>
 [Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

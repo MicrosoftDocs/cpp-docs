@@ -38,6 +38,6 @@ The following classes support properties and property pages:
 
 ## See Also
 
-[Class Overview](../atl/atl-class-overview.md)   
+[Class Overview](../atl/atl-class-overview.md)<br/>
 [Property Map Macros](../atl/reference/property-map-macros.md)
 

@@ -1255,7 +1255,8 @@ extern "C" __declspec(noinline) HRESULT __stdcall
 This new warning C4768 is given on some Windows SDK headers that were shipped with Visual Studio 2017 15.3 or older (for example: version 10.0.15063.0, also known as RS2 SDK). However, later versions of Windows SDK headers (specifically, ShlObj.h and ShlObj_core.h) have been fixed so that they do not produce this warning. When you see this warning coming from Windows SDK headers, you can take these actions:
 
 1. Switch to the latest Windows SDK that came with Visual Studio 2017 version 15.5 release.
-2. Turn off the warning around the #include of the Windows SDK header statement:
+
+1. Turn off the warning around the #include of the Windows SDK header statement:
 
 ```cpp
    #pragma warning (push)

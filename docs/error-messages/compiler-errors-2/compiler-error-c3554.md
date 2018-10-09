@@ -13,11 +13,12 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3554
-'decltype' cannot be combined with any other type-specifier  
-  
- You cannot qualify the `decltype()` keyword with any type specifier. For example, the following code fragment yields error C3554.  
-  
-```  
-int x;  
-unsigned decltype(x); // C3554  
+
+'decltype' cannot be combined with any other type-specifier
+
+You cannot qualify the `decltype()` keyword with any type specifier. For example, the following code fragment yields error C3554.
+
+```
+int x;
+unsigned decltype(x); // C3554
 ```

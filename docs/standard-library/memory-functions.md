@@ -232,7 +232,7 @@ struct default_delete {
 *Ptr*<br/>
 Pointer to the object to delete.
 
-Other
+*Other*<br/>
 The type of elements in the array to be deleted.
 
 ### Remarks

@@ -12,8 +12,10 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Orchestrating Other Window Actions
-The frame window orchestrates semimodal states such as context-sensitive help and print preview. For a description of the frame window's role in print preview, see [Printing and Print Preview](../mfc/printing-and-print-preview.md).  
-  
-## See Also  
- [Using Frame Windows](../mfc/using-frame-windows.md)
+
+The frame window orchestrates semimodal states such as context-sensitive help and print preview. For a description of the frame window's role in print preview, see [Printing and Print Preview](../mfc/printing-and-print-preview.md).
+
+## See Also
+
+[Using Frame Windows](../mfc/using-frame-windows.md)
 

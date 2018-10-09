@@ -19,13 +19,13 @@ This class represents the module for an application.
 ## Syntax
 
 ```
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE CAtlExeModuleT : public CAtlModuleT<T>
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class derived from `CAtlExeModuleT`.
 
 ## Members
@@ -73,7 +73,7 @@ For more information on modules in ATL, see [ATL Module Classes](../../atl/atl-m
 
 ## Inheritance Hierarchy
 
-[_ATL_MODULE](atl-typedefs.md#_atl_module)  
+[_ATL_MODULE](atl-typedefs.md#_atl_module)
 
 [CAtlModule](../../atl/reference/catlmodule-class.md)
 
@@ -173,10 +173,10 @@ bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
 
 ### Parameters
 
-*lpCmdLine*  
+*lpCmdLine*<br/>
 The command line passed to the application.
 
-*pnRetCode*  
+*pnRetCode*<br/>
 The HRESULT corresponding to the registration (if it took place).
 
 ### Return Value
@@ -213,7 +213,7 @@ HRESULT PreMessageLoop(int nShowCmd) throw();
 
 ### Parameters
 
-*nShowCmd*  
+*nShowCmd*<br/>
 The value passed as the *nShowCmd* parameter in WinMain.
 
 ### Return Value
@@ -234,10 +234,10 @@ HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
 
 ### Parameters
 
-*dwClsContext*  
+*dwClsContext*<br/>
 Specifies the context in which the class object is to be run. Possible values are CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER, or CLSCTX_LOCAL_SERVER.
 
-*dwFlags*  
+*dwFlags*<br/>
 Determines the connection types to the class object. Possible values are REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE, or REGCLS_MULTI_SEPARATE.
 
 ### Return Value
@@ -266,7 +266,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 
 ### Parameters
 
-*nShowCmd*  
+*nShowCmd*<br/>
 Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) section. Defaults to SW_HIDE.
 
 ### Return Value
@@ -323,7 +323,7 @@ int WinMain(int nShowCmd) throw();
 
 ### Parameters
 
-*nShowCmd*  
+*nShowCmd*<br/>
 Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) section.
 
 ### Return Value
@@ -336,7 +336,7 @@ This method can be overridden. If overriding [CAtlExeModuleT::PreMessageLoop](#p
 
 ## See Also
 
-[ATLDuck Sample](../../visual-cpp-samples.md)   
-[CAtlModuleT Class](../../atl/reference/catlmodulet-class.md)   
-[CAtlDllModuleT Class](../../atl/reference/catldllmodulet-class.md)   
+[ATLDuck Sample](../../visual-cpp-samples.md)<br/>
+[CAtlModuleT Class](../../atl/reference/catlmodulet-class.md)<br/>
+[CAtlDllModuleT Class](../../atl/reference/catldllmodulet-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

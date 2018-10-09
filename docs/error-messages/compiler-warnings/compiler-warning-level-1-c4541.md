@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4541
-'identifier' used on polymorphic type 'type' with /GR-; unpredictable behavior may result  
-  
- You tried to use a feature that requires run-time type information without enabling run-time type information. Recompile with [/GR](../../build/reference/gr-enable-run-time-type-information.md).
+
+'identifier' used on polymorphic type 'type' with /GR-; unpredictable behavior may result
+
+You tried to use a feature that requires run-time type information without enabling run-time type information. Recompile with [/GR](../../build/reference/gr-enable-run-time-type-information.md).

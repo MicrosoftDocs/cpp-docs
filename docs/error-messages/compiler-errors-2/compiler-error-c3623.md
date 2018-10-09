@@ -13,24 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3623
-'variable': bit fields are not supported in managed or WinRT types  
-  
- The use of bit fields is not permitted on variables in a managed or WinRT class.  
-  
- The following sample generates C3623:  
-  
-```  
-// C3623.cpp  
-// compile with: /clr  
-using namespace System;  
-ref class CMyClass {  
-public:  
-   int i : 1;   // C3623  
-};  
-  
-int main() {  
-   CMyClass^ pMyClass = gcnew CMyClass();  
-   pMyClass->i = 3;  
-   Console::Out->WriteLine(pMyClass->i);  
-}  
-```  
+
+'variable': bit fields are not supported in managed or WinRT types
+
+The use of bit fields is not permitted on variables in a managed or WinRT class.
+
+The following sample generates C3623:
+
+```
+// C3623.cpp
+// compile with: /clr
+using namespace System;
+ref class CMyClass {
+public:
+   int i : 1;   // C3623
+};
+
+int main() {
+   CMyClass^ pMyClass = gcnew CMyClass();
+   pMyClass->i = 3;
+   Console::Out->WriteLine(pMyClass->i);
+}
+```

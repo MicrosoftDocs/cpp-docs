@@ -75,6 +75,6 @@ The destructor calls [DeleteCriticalSection](/windows/desktop/api/synchapi/nf-sy
 
 ## See Also
 
-[CComFakeCriticalSection Class](../../atl/reference/ccomfakecriticalsection-class.md)   
-[Class Overview](../../atl/atl-class-overview.md)   
+[CComFakeCriticalSection Class](../../atl/reference/ccomfakecriticalsection-class.md)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md)

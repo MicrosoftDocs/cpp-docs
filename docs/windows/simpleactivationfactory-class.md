@@ -25,7 +25,7 @@ class SimpleActivationFactory : public ActivationFactory<>;
 
 ### Parameters
 
-*Base*  
+*Base*<br/>
 A base class.
 
 ## Remarks
@@ -88,7 +88,7 @@ STDMETHOD( ActivateInstance )(
 
 #### Parameters
 
-*ppvObject*  
+*ppvObject*<br/>
 When this operation completes, pointer to an instance of the object specified by the `Base` class template parameter.
 
 ### Return Value
@@ -111,7 +111,7 @@ STDMETHOD( GetRuntimeClassName )(
 
 #### Parameters
 
-*runtimeName*  
+*runtimeName*<br/>
 When this operation completes, the runtime class name.
 
 ### Return Value
@@ -134,7 +134,7 @@ STDMETHOD(
 
 #### Parameters
 
-*trustLvl*  
+*trustLvl*<br/>
 When this operation completes, the trust level of the current class object.
 
 ### Return Value

@@ -23,28 +23,28 @@ template <const CLSID* pcoclsid,
     const IID* psrcid,
     const GUID* plibid = &CAtlModule::m_libid,
     WORD wMajor = 1,
-    WORD wMinor = 0, class tihclass = CComTypeInfoHolder>  
+    WORD wMinor = 0, class tihclass = CComTypeInfoHolder>
 class ATL_NO_VTABLE IProvideClassInfo2Impl : public IProvideClassInfo2
 ```
 
 #### Parameters
 
-*pcoclsid*  
+*pcoclsid*<br/>
 A pointer to the coclass' identifier.
 
-*psrcid*  
+*psrcid*<br/>
 A pointer to the identifier for the coclass' default outgoing dispinterface.
 
-*plibid*  
+*plibid*<br/>
 A pointer to the LIBID of the type library that contains information about the interface. By default, the server-level type library is passed.
 
-*wMajor*  
+*wMajor*<br/>
 The major version of the type library. The default value is 1.
 
-*wMinor*  
+*wMinor*<br/>
 The minor version of the type library. The default value is 0.
 
-*tihclass*  
+*tihclass*<br/>
 The class used to manage the coclass' type information. The default value is `CComTypeInfoHolder`.
 
 ## Members

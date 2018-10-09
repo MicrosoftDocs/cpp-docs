@@ -19,24 +19,24 @@ For information on how to fire events and implement connection points, read [ATL
 
 ## In This Section
 
-[Event Handling Principles](../atl/event-handling-principles.md)  
+[Event Handling Principles](../atl/event-handling-principles.md)<br/>
 Discusses the steps common to all event handing.
 
-[Implementing the Event Handling Interface](../atl/implementing-the-event-handling-interface.md)  
+[Implementing the Event Handling Interface](../atl/implementing-the-event-handling-interface.md)<br/>
 Discusses the classes to use for implementing the event interface.
 
-[Using IDispEventImpl](../atl/using-idispeventimpl.md)  
+[Using IDispEventImpl](../atl/using-idispeventimpl.md)<br/>
 Lists the steps for using `IDispEventImpl` and shows a code sample.
 
-[Using IDispEventSimpleImpl](../atl/using-idispeventsimpleimpl.md)  
+[Using IDispEventSimpleImpl](../atl/using-idispeventsimpleimpl.md)<br/>
 Lists the steps for using `IDispEventSimpleImpl` and shows a code sample.
 
-[ATL Event Handling Summary](../atl/atl-event-handling-summary.md)  
+[ATL Event Handling Summary](../atl/atl-event-handling-summary.md)<br/>
 Summarizes, using tables, the main ways for implementing an event interface and for advising and unadvising the event source using ATL.
 
 ## Related Sections
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Provides links to conceptual topics on how to program using the Active Template Library.
 
 ## See Also

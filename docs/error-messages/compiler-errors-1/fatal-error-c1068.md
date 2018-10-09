@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1068
-cannot open file 'file'  
-  
- Ensure that `file` is not in use by another program.
+
+cannot open file 'file'
+
+Ensure that `file` is not in use by another program.

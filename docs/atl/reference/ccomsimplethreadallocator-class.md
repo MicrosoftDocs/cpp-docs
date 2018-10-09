@@ -48,10 +48,10 @@ int GetThread(CComApartment* /* pApt */, int nThreads);
 
 ### Parameters
 
-*pApt*  
+*pApt*<br/>
 Not used in ATL's default implementation.
 
-*nThreads*  
+*nThreads*<br/>
 The maximum number of threads in the EXE module.
 
 ### Return Value
@@ -66,5 +66,5 @@ You can override `GetThread` to provide a different method of selection or to ma
 
 ## See Also
 
-[CComApartment Class](../../atl/reference/ccomapartment-class.md)   
+[CComApartment Class](../../atl/reference/ccomapartment-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

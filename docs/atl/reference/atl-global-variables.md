@@ -18,19 +18,20 @@ ms.workload: ["cplusplus"]
 
 A global variable storing a pointer to the current module.  
 
-```cpp  
-__declspec(selectany) CAtlModule * _pAtlModule  
-```  
+```cpp
+__declspec(selectany) CAtlModule * _pAtlModule
+```
+
 ### Remarks
 
 Methods on this global variable can be used to provide the functionality that the (now obsolete) class CComModule provided in Visual C++ 6.0.
 
 ### Example
 
-```cpp  
-LONG lLocks = _pAtlModule->GetLockCount();  
-```  
+```cpp
+LONG lLocks = _pAtlModule->GetLockCount();
+```
+
 ### Requirements
 
-**Header:** atlbase.h  
-
+**Header:** atlbase.h

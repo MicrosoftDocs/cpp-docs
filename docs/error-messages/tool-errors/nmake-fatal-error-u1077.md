@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # NMAKE Fatal Error U1077
-'program' : return code 'value'  
-  
- The given command or program called by NMAKE failed and returned the given exit code.  
-  
- To suppress this error and continue the NMAKE session, use the /I option, the **.IGNORE** dot directive, or the dash (**-**) command modifier. To continue the NMAKE session for unrelated parts of the dependency tree, use the /K option.
+
+'program' : return code 'value'
+
+The given command or program called by NMAKE failed and returned the given exit code.
+
+To suppress this error and continue the NMAKE session, use the /I option, the **.IGNORE** dot directive, or the dash (**-**) command modifier. To continue the NMAKE session for unrelated parts of the dependency tree, use the /K option.

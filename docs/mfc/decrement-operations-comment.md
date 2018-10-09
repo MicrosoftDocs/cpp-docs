@@ -12,17 +12,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # // Operations Comment
-The `// Operations` section of an MFC class declaration contains member functions that you can call on the object to make it do things or perform actions (perform operations). These functions are typically non-**const** because they usually have side effects. They may be virtual or nonvirtual depending on the needs of the class. Typically, these members are public.  
-  
- In the sample listing from class `CStdioFile`, in [An Example of the Comments](../mfc/an-example-of-the-comments.md), the list includes two member functions under this comment: `ReadString` and `WriteString`.  
-  
- As with attributes, operations can be further subdivided.  
-  
-## See Also  
- [Using the MFC Source Files](../mfc/using-the-mfc-source-files.md)   
- [An Example of the Comments](../mfc/an-example-of-the-comments.md)   
- [// Implementation Comment](../mfc/decrement-implementation-comment.md)   
- [// Constructors Comment](../mfc/decrement-constructors-comment.md)   
- [// Attributes Comment](../mfc/decrement-attributes-comment.md)   
- [// Overridables Comment](../mfc/decrement-overridables-comment.md)
+
+The `// Operations` section of an MFC class declaration contains member functions that you can call on the object to make it do things or perform actions (perform operations). These functions are typically non-**const** because they usually have side effects. They may be virtual or nonvirtual depending on the needs of the class. Typically, these members are public.
+
+In the sample listing from class `CStdioFile`, in [An Example of the Comments](../mfc/an-example-of-the-comments.md), the list includes two member functions under this comment: `ReadString` and `WriteString`.
+
+As with attributes, operations can be further subdivided.
+
+## See Also
+
+[Using the MFC Source Files](../mfc/using-the-mfc-source-files.md)<br/>
+[An Example of the Comments](../mfc/an-example-of-the-comments.md)<br/>
+[// Implementation Comment](../mfc/decrement-implementation-comment.md)<br/>
+[// Constructors Comment](../mfc/decrement-constructors-comment.md)<br/>
+[// Attributes Comment](../mfc/decrement-attributes-comment.md)<br/>
+[// Overridables Comment](../mfc/decrement-overridables-comment.md)
 

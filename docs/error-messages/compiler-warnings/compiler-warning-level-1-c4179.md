@@ -14,6 +14,6 @@ ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4179
 
-> '//*' : parsed as '/' and '/\*': confusion with standard '//' comments  
-  
+> '//*' : parsed as '/' and '/\*': confusion with standard '//' comments
+
 __//\*__ is an incorrect comment delimiter. Use __//__ or __/\*__ instead.

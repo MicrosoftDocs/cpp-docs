@@ -12,26 +12,26 @@ ms.workload: ["cplusplus"]
 ---
 # Configure Visual C++ for ARM processors
 
-This section of the documentation contains information about how to use the Visual C++ build tools to target ARM hardware.  
-  
-## In This Section  
+This section of the documentation contains information about how to use the Visual C++ build tools to target ARM hardware.
 
-[Overview of ARM ABI Conventions](../build/overview-of-arm-abi-conventions.md)  
-Describes the application binary interface used by Windows on ARM for register usage, calling conventions and exception handling.  
-  
-[Overview of ARM64 ABI Conventions](../build/arm64-windows-abi-conventions.md)  
-Describes the application binary interface used by Windows on ARM64 for register usage, calling conventions and exception handling.  
-  
-[Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md)  
-Describes C++ code elements that are commonly assumed to be portable across architectures, but which produce different results for ARM than for x86 and x64.  
-  
-[ARM Exception Handling](../build/arm-exception-handling.md)  
-Describes the encoding scheme for stack unwinding during structured exception handling in Windows on ARM.  
+## In This Section
 
-[ARM64 Exception Handling](../build/arm64-exception-handling.md)  
-Describes the encoding scheme for stack unwinding during structured exception handling in Windows on ARM64.  
+[Overview of ARM ABI Conventions](../build/overview-of-arm-abi-conventions.md)<br/>
+Describes the application binary interface used by Windows on ARM for register usage, calling conventions and exception handling.
 
-## Related Sections  
-  
-[ARM Intrinsics](../intrinsics/arm-intrinsics.md)  
-Describes compiler intrinsics for processors that use the ARM architecture.  
+[Overview of ARM64 ABI Conventions](../build/arm64-windows-abi-conventions.md)<br/>
+Describes the application binary interface used by Windows on ARM64 for register usage, calling conventions and exception handling.
+
+[Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md)<br/>
+Describes C++ code elements that are commonly assumed to be portable across architectures, but which produce different results for ARM than for x86 and x64.
+
+[ARM Exception Handling](../build/arm-exception-handling.md)<br/>
+Describes the encoding scheme for stack unwinding during structured exception handling in Windows on ARM.
+
+[ARM64 Exception Handling](../build/arm64-exception-handling.md)<br/>
+Describes the encoding scheme for stack unwinding during structured exception handling in Windows on ARM64.
+
+## Related Sections
+
+[ARM Intrinsics](../intrinsics/arm-intrinsics.md)<br/>
+Describes compiler intrinsics for processors that use the ARM architecture.

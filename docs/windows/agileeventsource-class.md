@@ -1,7 +1,7 @@
 ---
 title: "AgileEventSource Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/22/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::AgileEventSource", "event/Microsoft::WRL::InvokeModeOptions"]
@@ -18,17 +18,21 @@ Represents an event that is raised by a agile component, which is a component th
 ## Syntax
 
 ```cpp
-template<typename TDelegateInterface, typename TEventSourceOptions = Microsoft::WRL::InvokeModeOptions<FireAll>>
-class AgileEventSource
-    : public Microsoft::WRL::EventSource<TDelegateInterface, TEventSourceOptions>;
+template<
+    typename TDelegateInterface,
+    typename TEventSourceOptions = Microsoft::WRL::InvokeModeOptions<FireAll>
+>
+class AgileEventSource :
+    public Microsoft::WRL::EventSource<
+        TDelegateInterface, TEventSourceOptions>;
 ```
 
 ## Parameters
 
-*TDelegateInterface*  
+*TDelegateInterface*<br/>
 The interface to a delegate that represents an event handler.
 
-*TEventSourceOptions*  
+*TEventSourceOptions*<br/>
 An [InvokeModeOptions](invokemodeoptions-structure.md) stucture whose invokeMode field is set to `InvokeMode::StopOnFirstError` or `InvokeMode::FireAll`.
 
 ## Remarks
@@ -38,6 +42,7 @@ The vast majority of components in the Windows Runtime are agile components. For
 ## Inheritance Hierarchy
 
 `EventSource`
+
 `AgileEventSource`
 
 ## Requirements
@@ -69,10 +74,10 @@ HRESULT Add(
 
 ### Parameters
 
-*delegateInterface*  
+*delegateInterface*<br/>
 The interface to a delegate object, which represents an event handler.
 
-*token*  
+*token*<br/>
 When this operation completes, a handle that represents the event. Use this token as the parameter to the `Remove()` method to discard the event handler.
 
 ### Return Value

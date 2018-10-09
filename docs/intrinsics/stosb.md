@@ -30,14 +30,14 @@ void __stosb(
 
 #### Parameters
 
-[out] `Dest`  
-The destination of the operation.
+*Dest*<br/>
+[out] The destination of the operation.
 
-[in] `Data`  
-The data to store.
+*Data*<br/>
+[in] The data to store.
 
-[in] `Count`  
-The length of the block of bytes to write.
+*Count*<br/>
+[in] The length of the block of bytes to write.
 
 ## Requirements
 
@@ -61,9 +61,9 @@ This routine is only available as an intrinsic.
 #include <stdio.h>
 #include <intrin.h>
 
-#pragma intrinsic(__stosb)  
+#pragma intrinsic(__stosb)
 
-int main()  
+int main()
 {
     unsigned char c = 0x40; /* '@' character */
     unsigned char s[] = "*********************************";
@@ -73,12 +73,12 @@ int main()
     printf_s("%s\n", s);
 
 }
-```  
+```
 
 ```Output
-*********************************  
-*@@@@@@**************************  
-```  
+*********************************
+*@@@@@@**************************
+```
 
 **END Microsoft Specific**
 

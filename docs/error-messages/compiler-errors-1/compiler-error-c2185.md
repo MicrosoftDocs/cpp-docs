@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2185
-'identifier' : illegal based allocation  
-  
- A register variable or automatic (local) variable is declared `__based`. Only global variables can be declared `__based`.
+
+'identifier' : illegal based allocation
+
+A register variable or automatic (local) variable is declared `__based`. Only global variables can be declared `__based`.

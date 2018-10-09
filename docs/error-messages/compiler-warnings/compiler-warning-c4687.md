@@ -13,23 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4687
-'class': a sealed abstract class cannot implement an interface 'interface'  
-  
- A sealed, abstract type is typically only useful to hold static member functions.  
-  
- For more information, see [abstract](../../windows/abstract-cpp-component-extensions.md)and [sealed](../../windows/sealed-cpp-component-extensions.md).  
-  
- C4687 is issued as an error by default. You can suppress C4687 with the [warning](../../preprocessor/warning.md) pragma. If you are certain that you want to implement an interface in a sealed, abstract type, you can suppress C4687.  
-  
-## Example  
- The following sample generates C4687.  
-  
-```  
-// C4687.cpp  
-// compile with: /clr /c  
-interface class A {};  
-  
-ref struct B sealed abstract : A {};   // C4687  
-ref struct C sealed : A {};   // OK  
-ref struct D abstract : A {};   // OK  
+
+'class': a sealed abstract class cannot implement an interface 'interface'
+
+A sealed, abstract type is typically only useful to hold static member functions.
+
+For more information, see [abstract](../../windows/abstract-cpp-component-extensions.md)and [sealed](../../windows/sealed-cpp-component-extensions.md).
+
+C4687 is issued as an error by default. You can suppress C4687 with the [warning](../../preprocessor/warning.md) pragma. If you are certain that you want to implement an interface in a sealed, abstract type, you can suppress C4687.
+
+## Example
+
+The following sample generates C4687.
+
+```
+// C4687.cpp
+// compile with: /clr /c
+interface class A {};
+
+ref struct B sealed abstract : A {};   // C4687
+ref struct C sealed : A {};   // OK
+ref struct D abstract : A {};   // OK
 ```

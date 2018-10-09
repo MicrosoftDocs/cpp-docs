@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3874
-return type of 'function' should be 'int' instead of 'type'  
-  
- A function does not have the return type that was expected by the compiler.  
-  
- The following sample generates C3874:  
-  
-```  
-// C3874b.cpp  
-double main()  
-{   // C3874  
-}  
+
+return type of 'function' should be 'int' instead of 'type'
+
+A function does not have the return type that was expected by the compiler.
+
+The following sample generates C3874:
+
+```
+// C3874b.cpp
+double main()
+{   // C3874
+}
 ```

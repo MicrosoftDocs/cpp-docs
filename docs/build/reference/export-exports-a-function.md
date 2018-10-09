@@ -56,9 +56,9 @@ BOOL CALLBACK PlainFuncName( Things * lpParams)
 
 1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
 
-2. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
+1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
-3. Enter the option into the **Additional Options** box.
+1. Enter the option into the **Additional Options** box.
 
 ### To set this linker option programmatically
 
@@ -66,5 +66,5 @@ BOOL CALLBACK PlainFuncName( Things * lpParams)
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)   
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

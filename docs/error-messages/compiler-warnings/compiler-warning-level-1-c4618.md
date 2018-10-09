@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4618
-pragma parameters included an empty string; pragma ignored  
-  
- A null string was given as an argument to a **#pragma**.  
-  
- The pragma was processed without the argument.  
-  
- The following sample generates C4618:  
-  
-```  
-// C4618.cpp  
-// compile with: /W1 /LD  
-#pragma code_seg("")   // C4618  
+
+pragma parameters included an empty string; pragma ignored
+
+A null string was given as an argument to a **#pragma**.
+
+The pragma was processed without the argument.
+
+The following sample generates C4618:
+
+```
+// C4618.cpp
+// compile with: /W1 /LD
+#pragma code_seg("")   // C4618
 ```

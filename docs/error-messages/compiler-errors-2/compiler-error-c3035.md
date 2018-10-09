@@ -13,25 +13,26 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3035
-OpenMP 'ordered' directive must bind directly to a 'for' or 'parallel for' directive with the 'ordered' clause  
-  
- An ordered clause was ill formed.  
-  
- The following sample generates C3035:  
-  
-```  
-// C3035.cpp  
-// compile with: /openmp /link vcomps.lib  
-int main() {  
-   int n = 0, x, i;  
-  
-   #pragma omp parallel private(n)  
-   {  
-      #pragma omp ordered   // C3035  
-      // Try the following line instead:  
-      // #pragma omp for ordered  
-       for (i = 0 ; i < 10 ; ++i)  
-         ;  
-   }  
-}  
+
+OpenMP 'ordered' directive must bind directly to a 'for' or 'parallel for' directive with the 'ordered' clause
+
+An ordered clause was ill formed.
+
+The following sample generates C3035:
+
+```
+// C3035.cpp
+// compile with: /openmp /link vcomps.lib
+int main() {
+   int n = 0, x, i;
+
+   #pragma omp parallel private(n)
+   {
+      #pragma omp ordered   // C3035
+      // Try the following line instead:
+      // #pragma omp for ordered
+       for (i = 0 ; i < 10 ; ++i)
+         ;
+   }
+}
 ```

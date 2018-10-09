@@ -62,11 +62,11 @@ Win32
 
 ## See Also
 
-[Default Control Events](../windows/default-control-events.md)  
-[Defining Member Variables for Dialog Controls](../windows/defining-member-variables-for-dialog-controls.md)  
-[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)  
-[Adding a Class](../ide/adding-a-class-visual-cpp.md)  
-[Adding a Member Function](../ide/adding-a-member-function-visual-cpp.md)  
-[Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)  
-[Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)  
+[Default Control Events](../windows/default-control-events.md)<br/>
+[Defining Member Variables for Dialog Controls](../windows/defining-member-variables-for-dialog-controls.md)<br/>
+[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)<br/>
+[Adding a Class](../ide/adding-a-class-visual-cpp.md)<br/>
+[Adding a Member Function](../ide/adding-a-member-function-visual-cpp.md)<br/>
+[Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)<br/>
+[Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
 [MFC Message Handler](../mfc/reference/adding-an-mfc-message-handler.md)  

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2649
-'identifier' : is not a 'class-key'  
-  
- A class, structure, or union declaration uses an incorrect tag.
+
+'identifier' : is not a 'class-key'
+
+A class, structure, or union declaration uses an incorrect tag.

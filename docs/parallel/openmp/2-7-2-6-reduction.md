@@ -18,42 +18,42 @@ This clause performs a reduction on the scalar variables that appear in *variabl
 
 A reduction is typically specified for a statement with one of the following forms:
 
-> *x* = *x* *op* *expr*  
-> *x* *binop* = *expr*  
-> *x* = *expr* *op* *x*  (except for subtraction)  
-> *x*++  
-> ++*x*  
-> *x*--  
-> --*x*  
+> *x* = *x* *op* *expr*
+> *x* *binop* = *expr*
+> *x* = *expr* *op* *x*  (except for subtraction)
+> *x*++
+> ++*x*
+> *x*--
+> --*x*
 
 where:
 
-*x*  
+*x*<br/>
 One of the reduction variables specified in the `list`.
 
-*variable-list*  
+*variable-list*<br/>
 A comma-separated list of scalar reduction variables.
 
-*expr*  
+*expr*<br/>
 An expression with scalar type that does not reference *x*.
 
-*op*  
+*op*<br/>
 Not an overloaded operator but one of +, &#42;, -, &amp;, ^, &#124;, &amp;&amp;, or &#124;&#124;.
 
-*binop*  
+*binop*<br/>
 Not an overloaded operator but one of +, &#42;, -, &amp;, ^, or &#124;.
 
-The following is an example of the `reduction` clause:  
-  
-```cpp  
-#pragma omp parallel for reduction(+: a, y) reduction(||: am)  
-for (i=0; i<n; i++) {  
-   a += b[i];  
-   y = sum(y, c[i]);  
-   am = am || b[i] == c[i];  
-}  
-```  
-  
+The following is an example of the `reduction` clause:
+
+```cpp
+#pragma omp parallel for reduction(+: a, y) reduction(||: am)
+for (i=0; i<n; i++) {
+   a += b[i];
+   y = sum(y, c[i]);
+   am = am || b[i] == c[i];
+}
+```
+
 As shown in the example, an operator may be hidden inside a function call. The user should be careful that the operator specified in the `reduction` clause matches the reduction operation.
 
 Although the right operand of the &#124;&#124; operator has no side effects in this example, they are permitted, but should be used with care. In this context, a side effect that is guaranteed not to occur during sequential execution of the loop may occur during parallel execution. This difference can occur because the order of execution of the iterations is indeterminate.
@@ -95,7 +95,7 @@ The restrictions to the `reduction` clause are as follows:
       for (i=0; i<n; i++)
          y += b[i];
    }
-   
+
    /* ERROR - variable x cannot be specified in both
               a shared and a reduction clause */
    #pragma omp parallel for shared(x) reduction(+: x)

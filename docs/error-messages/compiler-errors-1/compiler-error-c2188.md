@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2188
-'number' : too big for wide character  
-  
- The number exceeds the size limit for the wide-character type. Choose a larger type.
+
+'number' : too big for wide character
+
+The number exceeds the size limit for the wide-character type. Choose a larger type.

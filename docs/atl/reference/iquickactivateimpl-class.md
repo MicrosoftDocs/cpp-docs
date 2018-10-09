@@ -22,13 +22,13 @@ This class combines containers' control initialization into a single call.
 ## Syntax
 
 ```
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE IQuickActivateImpl : public IQuickActivate
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IQuickActivateImpl`.
 
 ## Members
@@ -103,5 +103,5 @@ See [IQuickActivate::SetContentExtent](/windows/desktop/api/ocidl/nf-ocidl-iquic
 
 ## See Also
 
-[CComControl Class](../../atl/reference/ccomcontrol-class.md)   
+[CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

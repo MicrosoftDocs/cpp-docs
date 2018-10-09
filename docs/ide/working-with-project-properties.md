@@ -128,11 +128,11 @@ A user-defined macro is stored in a property sheet. If your project does not alr
 
 ##### To create a user-defined macro
 
-1.  In the **Property Manager** window (on the menu bar, choose **View**, **Property Manager**), open the shortcut menu for a property sheet (its name ends in .user) and then choose Properties. The **Property Pages** dialog box for that property sheet opens.
+1. In the **Property Manager** window (on the menu bar, choose **View**, **Property Manager**), open the shortcut menu for a property sheet (its name ends in .user) and then choose Properties. The **Property Pages** dialog box for that property sheet opens.
 
-2.  In the left pane of the dialog box, select **User Macros**. In the right pane, choose the **Add Macro** button to open the **Add User Macro** dialog box.
+1. In the left pane of the dialog box, select **User Macros**. In the right pane, choose the **Add Macro** button to open the **Add User Macro** dialog box.
 
-3.  In the dialog box, specify a name and value for the macro. Optionally, select the **Set this macro as an environment variable in the build environment** check box.
+1. In the dialog box, specify a name and value for the macro. Optionally, select the **Set this macro as an environment variable in the build environment** check box.
 
 ## Property Editor
 
@@ -237,7 +237,7 @@ In the right pane, modify the **Environment** or **Merge Environment** project s
 
 ## Modifying properties and targets without changing the project file
 
-You can override project properties and targets from the MSBuild command prompt without changing the project file. This is useful when you want to apply some properties temporarily or occasionally. It assumes some knowledge of MSBuild. For more information, see [MSBUild](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild).
+You can override project properties and targets from the MSBuild command prompt without changing the project file. This is useful when you want to apply some properties temporarily or occasionally. It assumes some knowledge of MSBuild. For more information, see [MSBUild](https://docs.microsoft.com/visualstudio/msbuild/msbuild).
 
 > [!IMPORTANT]
 > You can use the XML Editor in Visual Studio, or any text editor, to create the .props or .targets file. Don't use the **Property Manager** in this scenario because it adds the properties to the project file.

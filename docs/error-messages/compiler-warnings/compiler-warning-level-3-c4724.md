@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4724
-potential mod by 0  
-  
- The second operand in a remainder operation evaluated to zero at compile time, giving undefined results.
+
+potential mod by 0
+
+The second operand in a remainder operation evaluated to zero at compile time, giving undefined results.

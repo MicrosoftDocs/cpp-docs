@@ -1,12 +1,12 @@
 ---
 title: "HANDLETraits Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/27/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits"]
+f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits", "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits::Close", "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits::GetInvalidValue"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["HANDLETraits structure"]
+helpviewer_keywords: ["Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits structure", "Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits::Close method", "Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits::GetInvalidValue method"]
 ms.assetid: 22963e88-d857-4624-9182-7c986daff722
 author: "mikeblome"
 ms.author: "mblome"
@@ -26,16 +26,16 @@ struct HANDLETraits;
 
 ### Public Typedefs
 
-|Name|Description|
-|----------|-----------------|
-|`Type`|A synonym for HANDLE.|
+Name   | Description
+------ | ---------------------
+`Type` | A synonym for HANDLE.
 
 ### Public Methods
 
-|Name|Description|
-|----------|-----------------|
-|[HANDLETraits::Close Method](../windows/handletraits-close-method.md)|Closes the specified handle.|
-|[HANDLETraits::GetInvalidValue Method](../windows/handletraits-getinvalidvalue-method.md)|Represents an invalid handle.|
+Name                                              | Description
+------------------------------------------------- | -----------------------------
+[HANDLETraits::Close](#close)                     | Closes the specified handle.
+[HANDLETraits::GetInvalidValue](#getinvalidvalue) | Represents an invalid handle.
 
 ## Inheritance Hierarchy
 
@@ -47,6 +47,33 @@ struct HANDLETraits;
 
 **Namespace:** Microsoft::WRL::Wrappers::HandleTraits
 
-## See Also
+## <a name="close"></a>HANDLETraits::Close
 
-[Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+Closes the specified handle.
+
+```cpp
+inline static bool Close(
+   _In_ Type h
+);
+```
+
+### Parameters
+
+*h*<br/>
+The handle to close.
+
+### Return Value
+
+`true` if handle *h* closed successfully; otherwise, `false`.
+
+## <a name="getinvalidvalue"></a>HANDLETraits::GetInvalidValue
+
+Represents an invalid handle.
+
+```cpp
+inline static HANDLE GetInvalidValue();
+```
+
+### Return Value
+
+Always returns INVALID_HANDLE_VALUE. (INVALID_HANDLE_VALUE is defined by Windows.)

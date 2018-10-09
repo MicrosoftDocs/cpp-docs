@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4348
-'type' : redefinition of default parameter : parameter number  
-  
- A template parameter was redefined.  
-  
- The following sample generates C4348:  
-  
-```  
-// C4348.cpp  
-// compile with: /LD /W1  
-template <class T=int> struct A;   // forward declaration  
-  
-template <class T=int> struct A { };   
-// C4348, redefinition of default parameter  
-// try the following line instead  
-// template <class T> struct A { };  
+
+'type' : redefinition of default parameter : parameter number
+
+A template parameter was redefined.
+
+The following sample generates C4348:
+
+```
+// C4348.cpp
+// compile with: /LD /W1
+template <class T=int> struct A;   // forward declaration
+
+template <class T=int> struct A { };
+// C4348, redefinition of default parameter
+// try the following line instead
+// template <class T> struct A { };
 ```

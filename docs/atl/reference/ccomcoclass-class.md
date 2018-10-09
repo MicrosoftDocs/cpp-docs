@@ -19,16 +19,16 @@ This class provides methods for creating instances of a class, and obtaining its
 ## Syntax
 
 ```
-template <class T, const CLSID* pclsid = &CLSID_NULL>  
+template <class T, const CLSID* pclsid = &CLSID_NULL>
 class CComCoClass
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `CComCoClass`.
 
-*pclsid*  
+*pclsid*<br/>
 A pointer to the CLSID of the object.
 
 ## Members
@@ -74,13 +74,13 @@ static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
 
 ### Parameters
 
-*Q*  
+*Q*<br/>
 The COM interface that should be returned via *pp*.
 
-*punkOuter*  
+*punkOuter*<br/>
 [in] The outer unknown or controlling unknown of the aggregate.
 
-*pp*  
+*pp*<br/>
 [out] The address of a pointer variable that receives the requested interface pointer if creation succeeds.
 
 ### Return Value
@@ -149,24 +149,25 @@ static HRESULT Error(
 
 ### Parameters
 
-*lpszDesc*  
-[in] The string describing the error. The Unicode version of `Error` specifies that *lpszDesc* is of type LPCOLESTR; the ANSI version specifies a type of LPCSTR.  
-*iid*  
+*lpszDesc*<br/>
+[in] The string describing the error. The Unicode version of `Error` specifies that *lpszDesc* is of type LPCOLESTR; the ANSI version specifies a type of LPCSTR.
+
+*iid*<br/>
 [in] The IID of the interface defining the error or GUID_NULL (the default value) if the error is defined by the operating system.
 
-*hRes*  
+*hRes*<br/>
 [in] The HRESULT you want returned to the caller. The default value is 0. For more details about *hRes*, see Remarks.
 
-*nID*  
+*nID*<br/>
 [in] The resource identifier where the error description string is stored. This value should lie between 0x0200 and 0xFFFF, inclusively. In debug builds, an **ASSERT** will result if *nID* does not index a valid string. In release builds, the error description string will be set to "Unknown Error."
 
-*dwHelpID*  
+*dwHelpID*<br/>
 [in] The help context identifier for the error.
 
-*lpszHelpFile*  
+*lpszHelpFile*<br/>
 [in] The path and name of the help file describing the error.
 
-*hInst*  
+*hInst*<br/>
 [in] The handle to the resource. By default, this parameter is `_AtlModule::GetResourceInstance`, where `_AtlModule` is the global instance of [CAtlModule](../../atl/reference/catlmodule-class.md).
 
 ### Return Value

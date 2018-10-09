@@ -169,13 +169,13 @@ explicit uniform_real_distribution(const param_type& parm);
 
 ### Parameters
 
-*a*  
+*a*<br/>
 The lower bound for random values, inclusive.
 
-*b*  
+*b*<br/>
 The upper bound for random values, exclusive.
 
-*parm*  
+*parm*<br/>
 The `param_type` structure used to construct the distribution.
 
 ### Remarks
@@ -204,13 +204,13 @@ struct param_type {
 
 ### Parameters
 
-*a*  
+*a*<br/>
 The lower bound for random values, inclusive.
 
-*b*  
+*b*<br/>
 The upper bound for random values, exclusive.
 
-*right*  
+*right*<br/>
 The `param_type` object to compare to this.
 
 ### Remarks

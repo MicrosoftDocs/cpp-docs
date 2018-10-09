@@ -1,7 +1,7 @@
 ---
 title: "Configure a C++ Linux project in Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/05/2018"
+ms.date: "09/18/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-linux"]
@@ -24,9 +24,11 @@ A variety of options can be configured for a Linux project with Visual Studio.  
 
 By default, an executable (.out) is built with the tool.  To build a static or dynamic library, or to use an existing Makefile, use the **Configuration Type** selection.
 
+For more information about the options in the property pages, see [Linux Project Property Page Reference](prop-pages-linux.md).
+
 ## Remote settings
 
-To change settings pertaining to the remote Linux computer, configure the remote options that appear in the **General** settings:
+To change settings pertaining to the remote Linux computer, configure the remote options that appear in the [General](prop-pages/general-linux.md) settings:
 
 - To change the target Linux computer, use the **Remote Build Machine** entry.  This will allow you to select one of the connections created previously.  To create a new entry, please see the [Connecting to Your Remote Linux Computer](connect-to-your-remote-linux-computer.md) section.
 
@@ -35,11 +37,11 @@ To change settings pertaining to the remote Linux computer, configure the remote
 - The **Remote Build Project Directory** is where this specific project will be built on the remote Linux computer.  This will default to **$(RemoteRootDir)/$(ProjectName)**, which will expand to a directory named after the current project, under the root directory set above.
 
 > [!NOTE]
-> To change the default C and C++ compilers, or the Linker and Archiver used to build the project, use the appropriate entries in the **C/C++ > General** section and the **Linker > General** section.  These could be set to use a certain version of GCC, or even the Clang compiler, for example.
+> To change the default C and C++ compilers, or the Linker and Archiver used to build the project, use the appropriate entries in the **C/C++ > General** section and the **Linker > General** section.  These could be set to use a certain version of GCC, or even the Clang compiler, for example. For more information see [C/C++ Properties (Linux C++)](prop-pages/c-cpp-linux.md) and [Linker Properties (Linux C++)](prop-pages/linker-linux.md).
 
 ## Include directories and IntelliSense support
 
-**Visual Studio 2017 version 15.6 and earlier:**
+**Visual Studio 2017 version 15.6 and earlier:**<br/>
 By default, Visual Studio does not include any system-level include files from the Linux computer.  For example, items in the **/usr/include** directory are not present in Visual Studio.
 For full [IntelliSense](/visualstudio/ide/using-intellisense) support, you will need to copy those files to some location on your development computer and point Visual Studio to this location.  One option is to use scp (Secure Copy) to copy the files.  On Windows 10, you can use [Bash on Windows](https://msdn.microsoft.com/commandline/wsl/about) to run scp.  For previous versions of Windows, you could use something like [PSCP (PuTTY Secure Copy)](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 
@@ -53,7 +55,7 @@ Once the files are copied, use the **VC++ Directories** item in Project properti
 
 ![VC++ Directories](media/settings_directories.png)
 
-**Visual Studio 2017 version 15.7 and later:**
+**Visual Studio 2017 version 15.7 and later:**<br/>
 See [Manage Remote Headers for IntelliSense](#remote_intellisense).
 
 ## Copy sources
@@ -90,8 +92,8 @@ To manage your header cache, navigate to **Tools > Options, Cross Platform > Con
 
 ## See Also
 
-[Working with Project Properties](../ide/working-with-project-properties.md)  
-[C++ General Properties (Linux C++)](../linux/prop-pages/general-linux.md)  
-[VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md)  
-[Copy Sources Project Properties (Linux C++)](../linux/prop-pages/copy-sources-project.md)  
+[Working with Project Properties](../ide/working-with-project-properties.md)<br/>
+[C++ General Properties (Linux C++)](../linux/prop-pages/general-linux.md)<br/>
+[VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md)<br/>
+[Copy Sources Project Properties (Linux C++)](../linux/prop-pages/copy-sources-project.md)<br/>
 [Build Event Properties (Linux C++)](../linux/prop-pages/build-events-linux.md)

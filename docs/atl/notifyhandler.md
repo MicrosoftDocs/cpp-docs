@@ -18,22 +18,22 @@ The name of the function identified by the third parameter of the NOTIFY_HANDLER
 
 ## Syntax
 
-```  
+```cpp
 LRESULT NotifyHandler(
-    int idCtrl,  
-    LPNMHDR pnmh,  
+    int idCtrl,
+    LPNMHDR pnmh,
     BOOL& bHandled);
 ```
 
 #### Parameters
 
-*idCtrl*  
+*idCtrl*<br/>
 The identifier of the control sending the message.
 
-*pnmh*  
+*pnmh*<br/>
 Address of an [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) structure that contains the notification code and additional information. For some notification messages, this parameter points to a larger structure that has the `NMHDR` structure as its first member.
 
-*bHandled*  
+*bHandled*<br/>
 The message map sets *bHandled* to TRUE before *NotifyHandler* is called. If *NotifyHandler* does not fully handle the message, it should set *bHandled* to **FALSE** to indicate the message needs further processing.
 
 ## Return Value
@@ -46,6 +46,6 @@ For an example of using this message handler in a message map, see [NOTIFY_HANDL
 
 ## See Also
 
-[Implementing a Window](../atl/implementing-a-window.md)   
-[Message Maps](../atl/message-maps-atl.md)   
+[Implementing a Window](../atl/implementing-a-window.md)<br/>
+[Message Maps](../atl/message-maps-atl.md)<br/>
 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)

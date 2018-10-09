@@ -1,7 +1,7 @@
 ---
 title: "MixIn Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::MixIn"]
@@ -20,23 +20,22 @@ Ensures that a runtime class derives from Windows Runtime interfaces, if any, an
 
 ```cpp
 template<
-   typename Derived,
-   typename MixInType,
-   bool hasImplements = __is_base_of(Details::ImplementsBase,
-   MixInType)  
+    typename Derived,
+    typename MixInType,
+    bool hasImplements = __is_base_of(Details::ImplementsBase, MixInType)
 >
 struct MixIn;
 ```
 
 ### Parameters
 
-*Derived*  
+*Derived*<br/>
 A type derived from the [Implements](../windows/implements-structure.md) structure.
 
-*MixInType*  
+*MixInType*<br/>
 A base type.
 
-*hasImplements*  
+*hasImplements*<br/>
 **true** if *MixInType* is derived from the current implementation the base type; **false** otherwise.
 
 ## Remarks

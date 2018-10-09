@@ -13,38 +13,42 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __writemsr
-**Microsoft Specific**  
-  
- Generates the Write to Model Specific Register (`wrmsr`) instruction.  
-  
-## Syntax  
-  
-```  
-void __writemsr(   
-   unsigned long Register,   
-   unsigned __int64 Value   
-);  
-```  
-  
-#### Parameters  
- [in] `Register`  
- The model specific register.  
-  
- [in] `Value`  
- The value to write.  
-  
-## Requirements  
-  
-|Intrinsic|Architecture|  
-|---------------|------------------|  
-|`__writemsr`|x86, x64|  
-  
- **Header file** \<intrin.h>  
-  
-## Remarks  
- This function may only be used in kernel mode, and this routine is only available as an intrinsic.  
-  
-**END Microsoft Specific**  
-  
-## See Also  
- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+
+**Microsoft Specific**
+
+Generates the Write to Model Specific Register (`wrmsr`) instruction.
+
+## Syntax
+
+```
+void __writemsr( 
+   unsigned long Register, 
+   unsigned __int64 Value 
+);
+```
+
+#### Parameters
+
+*Register*<br/>
+[in] The model specific register.
+
+*Value*<br/>
+[in] The value to write.
+
+## Requirements
+
+|Intrinsic|Architecture|
+|---------------|------------------|
+|`__writemsr`|x86, x64|
+
+**Header file** \<intrin.h>
+
+## Remarks
+
+This function may only be used in kernel mode, and this routine is only available as an intrinsic.
+
+**END Microsoft Specific**
+
+## See Also
+
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

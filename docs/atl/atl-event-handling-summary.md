@@ -47,6 +47,6 @@ There are three main ways of advising and unadvising an event source using ATL.
 
 ## See Also
 
-[Event Handling](../atl/event-handling-and-atl.md)   
+[Event Handling](../atl/event-handling-and-atl.md)<br/>
 [Supporting IDispEventImpl](../atl/supporting-idispeventimpl.md)
 

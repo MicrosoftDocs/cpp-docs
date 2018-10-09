@@ -21,13 +21,13 @@ Describes a submatch.
 ```cpp
 template <class BidIt>
 class sub_match
- : public std::pair<BidIt, BidIt>
+    : public std::pair<BidIt, BidIt>
 ```
 
 ## Parameters
 
-*BidIt*  
- The iterator type for submatches.
+*BidIt*<br/>
+The iterator type for submatches.
 
 ## Remarks
 
@@ -134,14 +134,14 @@ int compare(const value_type *ptr) const;
 
 ### Parameters
 
-*right*  
- The submatch to compare to.
+*right*<br/>
+The submatch to compare to.
 
-*str*  
- The string to compare to.
+*str*<br/>
+The string to compare to.
 
-*ptr*  
- The null-terminated sequence to compare to.
+*ptr*<br/>
+The null-terminated sequence to compare to.
 
 ### Remarks
 

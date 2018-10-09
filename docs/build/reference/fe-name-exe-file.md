@@ -18,8 +18,8 @@ Specifies a name and a directory for the .exe file or DLL created by the compile
 
 ## Syntax
 
-> **/Fe**[_pathname_]  
-> **/Fe:** _pathname_  
+> **/Fe**[_pathname_]
+> **/Fe:** _pathname_
 
 ### Arguments
 

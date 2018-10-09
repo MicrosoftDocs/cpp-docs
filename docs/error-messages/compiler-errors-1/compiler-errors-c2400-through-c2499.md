@@ -117,4 +117,4 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler Error C2496](compiler-error-c2496.md)|'*identifier*': 'selectany' can only be applied to data items with external linkage|
 |Compiler Error C2497|'*identifier*': 'implementation_key' can only be applied to function declarations|
 |[Compiler Error C2498](compiler-error-c2498.md)|'*function*': 'novtable' can only be applied to class declarations or definitions|
-|[Compiler Error C2499](compiler-error-c2499.md)|'*class*': a class cannot be its own base class|  
+|[Compiler Error C2499](compiler-error-c2499.md)|'*class*': a class cannot be its own base class|

@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2802
-static member 'operator operator' has no formal parameters  
-  
- An operator declared by a `static` member function must have at least one parameter.  
-  
- The following sample generates C2802:  
-  
-```  
-// C2802.cpp  
-// compile with: /clr /c  
-ref class A {  
-   static operator+ ();   // C2802  
-   static operator+ (A^, A^);   // OK  
-};  
+
+static member 'operator operator' has no formal parameters
+
+An operator declared by a `static` member function must have at least one parameter.
+
+The following sample generates C2802:
+
+```
+// C2802.cpp
+// compile with: /clr /c
+ref class A {
+   static operator+ ();   // C2802
+   static operator+ (A^, A^);   // OK
+};
 ```

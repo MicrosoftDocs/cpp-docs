@@ -12,23 +12,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Multiple Targets
-NMAKE evaluates multiple targets in a single dependency as if each were specified in a separate description block.  
-  
- For example, this...  
-  
-```Output  
-bounce.exe leap.exe : jump.obj  
-   echo Building...  
-```  
-  
- ...is evaluated as this:  
-  
-```Output  
-bounce.exe : jump.obj  
-   echo Building...  
-leap.exe : jump.obj  
-   echo Building...  
-```  
-  
-## See Also  
- [Targets](../build/targets.md)
+
+NMAKE evaluates multiple targets in a single dependency as if each were specified in a separate description block.
+
+For example, this...
+
+```Output
+bounce.exe leap.exe : jump.obj
+   echo Building...
+```
+
+...is evaluated as this:
+
+```Output
+bounce.exe : jump.obj
+   echo Building...
+leap.exe : jump.obj
+   echo Building...
+```
+
+## See Also
+
+[Targets](../build/targets.md)

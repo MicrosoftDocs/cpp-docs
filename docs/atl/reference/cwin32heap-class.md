@@ -80,7 +80,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 ### Parameters
 
-*nBytes*  
+*nBytes*<br/>
 The requested number of bytes in the new memory block.
 
 ### Return Value
@@ -103,10 +103,10 @@ void Attach(HANDLE hHeap, bool bTakeOwnership) throw();
 
 ### Parameters
 
-*hHeap*  
+*hHeap*<br/>
 An existing heap handle.
 
-*bTakeOwnership*  
+*bTakeOwnership*<br/>
 A flag indicating if the `CWin32Heap` object is to take ownership over the resources of the heap.
 
 ### Remarks
@@ -128,16 +128,16 @@ CWin32Heap(
 
 ### Parameters
 
-*hHeap*  
+*hHeap*<br/>
 An existing heap object.
 
-*dwFlags*  
+*dwFlags*<br/>
 Flags used in creating the heap.
 
-*nInitialSize*  
+*nInitialSize*<br/>
 The initial size of the heap.
 
-*nMaxSize*  
+*nMaxSize*<br/>
 The maximum size of the heap.
 
 ### Remarks
@@ -192,7 +192,7 @@ virtual void Free(void* p) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 Pointer to the block of memory to free. NULL is a valid value and does nothing.
 
 ##  <a name="getsize"></a>  CWin32Heap::GetSize
@@ -205,7 +205,7 @@ virtual size_t GetSize(void* p) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 Pointer to the memory block whose size the method will obtain. This is a pointer returned by [CWin32Heap::Allocate](#allocate) or [CWin32Heap::Reallocate](#reallocate).
 
 ### Return Value
@@ -242,10 +242,10 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 Pointer to the block of memory to reallocate.
 
-*nBytes*  
+*nBytes*<br/>
 The new size in bytes of the allocated block. The block can be made larger or smaller.
 
 ### Return Value
@@ -258,9 +258,9 @@ If *p* is NULL, it's assumed that the memory block has not yet been allocated an
 
 ## See Also
 
-[Class Overview](../../atl/atl-class-overview.md)   
-[IAtlMemMgr Class](../../atl/reference/iatlmemmgr-class.md)   
-[CLocalHeap Class](../../atl/reference/clocalheap-class.md)   
-[CGlobalHeap Class](../../atl/reference/cglobalheap-class.md)   
-[CCRTHeap Class](../../atl/reference/ccrtheap-class.md)   
+[Class Overview](../../atl/atl-class-overview.md)<br/>
+[IAtlMemMgr Class](../../atl/reference/iatlmemmgr-class.md)<br/>
+[CLocalHeap Class](../../atl/reference/clocalheap-class.md)<br/>
+[CGlobalHeap Class](../../atl/reference/cglobalheap-class.md)<br/>
+[CCRTHeap Class](../../atl/reference/ccrtheap-class.md)<br/>
 [CComHeap Class](../../atl/reference/ccomheap-class.md)

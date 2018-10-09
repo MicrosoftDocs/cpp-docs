@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1020
-unexpected #endif  
-  
- The `#endif` directive has no matching `#if`, `#ifdef`, or `#ifndef` directive. Be sure each `#endif` has a matching directive.  
-  
- The following sample generates C1020:  
-  
-```  
-// C1020.cpp  
-#endif     // C1020  
-```  
-  
- Possible resolution:  
-  
-```  
-// C1020b.cpp  
-// compile with: /c  
-#if 1  
-#endif  
+
+unexpected #endif
+
+The `#endif` directive has no matching `#if`, `#ifdef`, or `#ifndef` directive. Be sure each `#endif` has a matching directive.
+
+The following sample generates C1020:
+
+```
+// C1020.cpp
+#endif     // C1020
+```
+
+Possible resolution:
+
+```
+// C1020b.cpp
+// compile with: /c
+#if 1
+#endif
 ```

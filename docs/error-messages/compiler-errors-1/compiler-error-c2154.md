@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2154
-'type' : only enumeration type is allowed as an argument to compiler intrinsic type trait '__underlying_type'  
-  
- You can only get the underlying type of an enumeration type.  
-  
- For more information, see [Compiler Support for Type Traits](../../windows/compiler-support-for-type-traits-cpp-component-extensions.md).
+
+'type' : only enumeration type is allowed as an argument to compiler intrinsic type trait '__underlying_type'
+
+You can only get the underlying type of an enumeration type.
+
+For more information, see [Compiler Support for Type Traits](../../windows/compiler-support-for-type-traits-cpp-component-extensions.md).

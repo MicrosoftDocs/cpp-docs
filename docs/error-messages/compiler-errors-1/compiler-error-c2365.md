@@ -13,20 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2365
-'class member' : redefinition; previous definition was 'class member'  
-  
- You attempted to redefine a class member.  
-  
- The following sample generates C2365.  
-  
-```  
-// C2365.cpp  
-// compile with: /c  
-class C1 {  
-   int CFunc();  
-   char *CFunc;   // C2365, already exists as a member function  
-  
-   int CMem;  
-   char *CMem();   // C2365, already exists as a data member  
-};  
+
+'class member' : redefinition; previous definition was 'class member'
+
+You attempted to redefine a class member.
+
+The following sample generates C2365.
+
+```
+// C2365.cpp
+// compile with: /c
+class C1 {
+   int CFunc();
+   char *CFunc;   // C2365, already exists as a member function
+
+   int CMem;
+   char *CMem();   // C2365, already exists as a data member
+};
 ```

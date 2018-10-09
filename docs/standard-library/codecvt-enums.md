@@ -18,7 +18,7 @@ enum codecvt_mode {
     consume_header = 4,
     generate_header = 2,
     little_endian = 1
- };
+};
 ```
 
 ### Remarks

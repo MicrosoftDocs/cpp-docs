@@ -58,7 +58,7 @@ These template parameters expect the class to conform to this archetype:
 
 Called to process a work item.
 
-```  
+```
 void Execute(
     RequestType request,  
     void* pvWorkerParam,  
@@ -67,25 +67,25 @@ void Execute(
 
 #### Parameters
 
-*request*  
+*request*<br/>
 The work item to be processed. The work item is of the same type as `RequestType`.
 
-*pvWorkerParam*  
+*pvWorkerParam*<br/>
 A custom parameter understood by the worker class. Also passed to `WorkerArchetype::Initialize` and `Terminate`.
 
-*pOverlapped*  
+*pOverlapped*<br/>
 A pointer to the [OVERLAPPED](/windows/desktop/api/minwinbase/ns-minwinbase-_overlapped) structure used to create the queue on which work items were queued.
 
 ## <a name="initialize"></a> WorkerArchetype::Initialize
 
-Called to initialize the worker object before any requests are passed to `WorkerArchetype::Execute`.  
+Called to initialize the worker object before any requests are passed to `WorkerArchetype::Execute`.
 ```
 BOOL Initialize(void* pvParam) throw();
 ```
 
 #### Parameters
 
-*pvParam*  
+*pvParam*<br/>
 A custom parameter understood by the worker class. Also passed to `WorkerArchetype::Terminate` and `WorkerArchetype::Execute`.
 
 ### Return Value
@@ -96,8 +96,8 @@ Return TRUE on success, FALSE on failure.
 
 A typedef for the type of work item that can be processed by the worker class.
 
-```  
-typedef MyRequestType RequestType;    
+```
+typedef MyRequestType RequestType;
 ```
 
 ### Remarks
@@ -108,17 +108,17 @@ This type must be used as the first parameter of `WorkerArchetype::Execute` and 
 
 Called to uninitialize the worker object after all requests have been passed to `WorkerArchetype::Execute`).
 
-``` 
+```
 void Terminate(void* pvParam) throw();
 ```
 
 #### Parameters
 
-*pvParam*  
+*pvParam*<br/>
 A custom parameter understood by the worker class. Also passed to `WorkerArchetype::Initialize` and `WorkerArchetype::Execute`.
 
 ## See Also
 
-[Concepts](../../atl/active-template-library-atl-concepts.md)   
+[Concepts](../../atl/active-template-library-atl-concepts.md)<br/>
 [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)
 

@@ -35,5 +35,5 @@ Win32
 
 ## See Also
 
-[Symbol Name Restrictions](../windows/symbol-name-restrictions.md)  
+[Symbol Name Restrictions](../windows/symbol-name-restrictions.md)<br/>
 [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)

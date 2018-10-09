@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Fatal Error RC1116
-RC terminating after preprocessor errors  
-  
- The Resource Compiler halted due to other errors. Fix the other errors and recompile.
+
+RC terminating after preprocessor errors
+
+The Resource Compiler halted due to other errors. Fix the other errors and recompile.

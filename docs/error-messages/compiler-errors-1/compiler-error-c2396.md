@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2396
-'your_type::operator'type'' : CLR or WinRT user-defined conversion functionnot valid. Must either convert from or convert to: 'T^', 'T^%', 'T^&', where T = 'your_type'  
-  
- A conversion function in a Windows Runtime or managed type did not have at least one parameter whose type is the same as the type containing the conversion function.  
-  
- The following sample generates C2396 and shows how to fix it:  
-  
-```  
-// C2396.cpp  
-// compile with: /clr /c  
-  
-ref struct Y {  
-   static operator int(char c);   // C2396  
-  
-   // OK  
-   static operator int(Y^ hY);  
-   // or  
-   static operator Y^(char c);  
-};  
+
+'your_type::operator'type'' : CLR or WinRT user-defined conversion functionnot valid. Must either convert from or convert to: 'T^', 'T^%', 'T^&', where T = 'your_type'
+
+A conversion function in a Windows Runtime or managed type did not have at least one parameter whose type is the same as the type containing the conversion function.
+
+The following sample generates C2396 and shows how to fix it:
+
+```
+// C2396.cpp
+// compile with: /clr /c
+
+ref struct Y {
+   static operator int(char c);   // C2396
+
+   // OK
+   static operator int(Y^ hY);
+   // or
+   static operator Y^(char c);
+};
 ```

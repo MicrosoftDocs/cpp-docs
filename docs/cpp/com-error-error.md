@@ -13,23 +13,27 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # _com_error::Error
-**Microsoft Specific**  
-  
- Retrieves the HRESULT passed to the constructor.  
-  
-## Syntax  
-  
-```  
-HRESULT Error( ) const throw( );  
-```  
-  
-## Return Value  
- Raw HRESULT item passed into the constructor.  
-  
-## Remarks  
- Retrieves the encapsulated HRESULT item in a `_com_error` object.  
-  
- **END Microsoft Specific**  
-  
-## See also  
- [_com_error Class](../cpp/com-error-class.md)
+
+**Microsoft Specific**
+
+Retrieves the HRESULT passed to the constructor.
+
+## Syntax
+
+```
+HRESULT Error( ) const throw( );
+```
+
+## Return Value
+
+Raw HRESULT item passed into the constructor.
+
+## Remarks
+
+Retrieves the encapsulated HRESULT item in a `_com_error` object.
+
+**END Microsoft Specific**
+
+## See also
+
+[_com_error Class](../cpp/com-error-class.md)

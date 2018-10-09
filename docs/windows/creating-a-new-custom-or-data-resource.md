@@ -26,9 +26,9 @@ You can create a new custom or data resource by placing the resource in a separa
 
 3. In the **Compile-Time Directives** box, type a `#include` statement that gives the name of the file containing your custom resource. For example:
 
-```cpp
+    ```cpp
     #include mydata.rc
- ```
+    ```
 
    Make sure the syntax and spelling of what you type are correct. The contents of the **Compile-Time Directives** box are inserted into the resource script file exactly as you typed them.
 

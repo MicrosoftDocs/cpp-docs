@@ -38,8 +38,8 @@ inline void sleep_for(const chrono::duration<Rep, Period>& Rel_time);
 
 ### Parameters
 
-*Rel_time*  
- A [duration](../standard-library/duration-class.md) object that specifies a time interval.
+*Rel_time*<br/>
+A [duration](../standard-library/duration-class.md) object that specifies a time interval.
 
 ### Remarks
 
@@ -58,8 +58,8 @@ void sleep_until(const xtime *Abs_time);
 
 ### Parameters
 
-*Abs_time*  
- Represents a point in time.
+*Abs_time*<br/>
+Represents a point in time.
 
 ### Remarks
 
@@ -75,11 +75,11 @@ void swap(thread& Left, thread& Right) noexcept;
 
 ### Parameters
 
-*Left*  
- The left **thread** object.
+*Left*<br/>
+The left **thread** object.
 
-*Right*  
- The right **thread** object.
+*Right*<br/>
+The right **thread** object.
 
 ### Remarks
 

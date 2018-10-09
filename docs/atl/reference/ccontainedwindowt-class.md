@@ -22,16 +22,16 @@ This class implements a window contained within another object.
 ## Syntax
 
 ```
-template <class TBase = CWindow, class TWinTraits = CControlWinTraits>  
+template <class TBase = CWindow, class TWinTraits = CControlWinTraits>
 class CContainedWindowT : public TBase
 ```
 
 #### Parameters
 
-*TBase*  
+*TBase*<br/>
 The base class of your new class. The default base class is `CWindow`.
 
-*TWinTraits*  
+*TWinTraits*<br/>
 A traits class that defines styles for your window. The default is `CControlWinTraits`.
 
 > [!NOTE]
@@ -91,7 +91,7 @@ When you use the **Add control based on** option in the ATL Project Wizard, the 
 |Creating controls|[ATL Tutorial](../../atl/active-template-library-atl-tutorial.md)|
 |Using windows in ATL|[ATL Window Classes](../../atl/atl-window-classes.md)|
 |ATL Project Wizard|[Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)|
-|Windows|[Windows](https://msdn.microsoft.com/library/windows/desktop/ms632595) and subsequent topics in the Windows SDK|
+|Windows|[Windows](/windows/desktop/winmsg/windows) and subsequent topics in the Windows SDK|
 
 ## Inheritance Hierarchy
 
@@ -121,13 +121,13 @@ CContainedWindowT(
 
 ### Parameters
 
-*lpszClassName*  
+*lpszClassName*<br/>
 [in] The name of an existing window class on which the contained window will be based.
 
-*pObject*  
+*pObject*<br/>
 [in] A pointer to the containing object that declares the message map. This object's class must derive from [CMessageMap](../../atl/reference/cmessagemap-class.md).
 
-*dwMsgMapID*  
+*dwMsgMapID*<br/>
 [in] Identifies the message map that will process the contained window's messages. The default value, 0, specifies the default message map declared with [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map). To use an alternate message map declared with [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), pass `msgMapID`.
 
 ### Remarks
@@ -184,34 +184,34 @@ HWND Create(
 
 ### Parameters
 
-*lpszClassName*  
+*lpszClassName*<br/>
 [in] The name of an existing window class on which the contained window will be based.
 
-*pObject*  
+*pObject*<br/>
 [in] A pointer to the containing object that declares the message map. This object's class must derive from [CMessageMap](../../atl/reference/cmessagemap-class.md).
 
-*dwMsgMapID*  
+*dwMsgMapID*<br/>
 [in] Identifies the message map that will process the contained window's messages. The default value, 0, specifies the default message map declared with [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map). To use an alternate message map declared with [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), pass `msgMapID`.
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] The handle to the parent or owner window.
 
-*rect*  
+*rect*<br/>
 [in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the position of the window. The `RECT` can be passed by pointer or by reference.
 
-*szWindowName*  
+*szWindowName*<br/>
 [in] Specifies the name of the window. The default value is NULL.
 
-*dwStyle*  
+*dwStyle*<br/>
 [in] The style of the window. The default value is WS_CHILD &#124; WS_VISIBLE. For a list of possible values, see [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK.
 
-*dwExStyle*  
+*dwExStyle*<br/>
 [in] The extended window style. The default value is 0, meaning no extended style. For a list of possible values, see [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.
 
-*MenuOrID*  
+*MenuOrID*<br/>
 [in] For a child window, the window identifier. For a top-level window, a menu handle for the window. The default value is **0U**.
 
-*lpCreateParam*  
+*lpCreateParam*<br/>
 [in] A pointer to window-creation data. For a full description, see the description for the final parameter to [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa).
 
 ### Return Value
@@ -242,13 +242,13 @@ LRESULT DefWindowProc(
 
 ### Parameters
 
-*uMsg*  
+*uMsg*<br/>
 [in] The message sent to the window.
 
-*wParam*  
+*wParam*<br/>
 [in] Additional message-specific information.
 
-*lParam*  
+*lParam*<br/>
 [in] Additional message-specific information.
 
 ### Return Value
@@ -355,7 +355,7 @@ BOOL SubclassWindow(HWND hWnd);
 
 ### Parameters
 
-*hWnd*  
+*hWnd*<br/>
 [in] The handle to the window being subclassed.
 
 ### Return Value
@@ -379,7 +379,7 @@ void SwitchMessageMap(DWORD dwMsgMapID);
 
 ### Parameters
 
-*dwMsgMapID*  
+*dwMsgMapID*<br/>
 [in] The message map identifier. To use the default message map declared with [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map), pass zero. To use an alternate message map declared with [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), pass `msgMapID`.
 
 ### Remarks
@@ -398,7 +398,7 @@ HWND UnsubclassWindow(BOOL bForce = FALSE);
 
 ### Parameters
 
-*bForce*  
+*bForce*<br/>
 [in] Set to TRUE to force the original window procedure to be restored even if the window procedure for this `CContainedWindowT` object is not currently active. If *bForce* is set to FALSE and the window procedure for this `CContainedWindowT` object is not currently active, the original window procedure will not be restored.
 
 ### Return Value
@@ -423,16 +423,16 @@ static LRESULT CALLBACK WindowProc(
 
 ### Parameters
 
-*hWnd*  
+*hWnd*<br/>
 [in] The handle to the window.
 
-*uMsg*  
+*uMsg*<br/>
 [in] The message sent to the window.
 
-*wParam*  
+*wParam*<br/>
 [in] Additional message-specific information.
 
-*lParam*  
+*lParam*<br/>
 [in] Additional message-specific information.
 
 ### Return Value
@@ -445,9 +445,9 @@ The result of the message processing.
 
 ## See Also
 
-[CWindow Class](../../atl/reference/cwindow-class.md)   
-[CWindowImpl Class](../../atl/reference/cwindowimpl-class.md)   
-[CMessageMap Class](../../atl/reference/cmessagemap-class.md)   
-[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)   
-[ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)   
+[CWindow Class](../../atl/reference/cwindow-class.md)<br/>
+[CWindowImpl Class](../../atl/reference/cwindowimpl-class.md)<br/>
+[CMessageMap Class](../../atl/reference/cmessagemap-class.md)<br/>
+[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
+[ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -28,11 +28,11 @@ bool operator>= (
 
 ### Parameters
 
-*Left*  
- The left `thread::id` object.
+*Left*<br/>
+The left `thread::id` object.
 
-*Right*  
- The right `thread::id` object.
+*Right*<br/>
+The right `thread::id` object.
 
 ### Return Value
 
@@ -54,11 +54,11 @@ bool operator> (
 
 ### Parameters
 
-*Left*  
- The left `thread::id` object.
+*Left*<br/>
+The left `thread::id` object.
 
-*Right*  
- The right `thread::id` object.
+*Right*<br/>
+The right `thread::id` object.
 
 ### Return Value
 
@@ -80,11 +80,11 @@ bool operator<= (
 
 ### Parameters
 
-*Left*  
- The left `thread::id` object.
+*Left*<br/>
+The left `thread::id` object.
 
-*Right*  
- The right `thread::id` object.
+*Right*<br/>
+The right `thread::id` object.
 
 ### Return Value
 
@@ -106,11 +106,11 @@ bool operator<(
 
 ### Parameters
 
-*Left*  
- The left `thread::id` object.
+*Left*<br/>
+The left `thread::id` object.
 
-*Right*  
- The right `thread::id` object.
+*Right*<br/>
+The right `thread::id` object.
 
 ### Return Value
 
@@ -134,11 +134,11 @@ bool operator!= (
 
 ### Parameters
 
-*Left*  
- The left `thread::id` object.
+*Left*<br/>
+The left `thread::id` object.
 
-*Right*  
- The right `thread::id` object.
+*Right*<br/>
+The right `thread::id` object.
 
 ### Return Value
 
@@ -159,12 +159,12 @@ bool operator== (
 ```
 
 ### Parameters
- 
-*Left*  
- The left `thread::id` object.
 
-*Right*  
- The right `thread::id` object.
+*Left*<br/>
+The left `thread::id` object.
+
+*Right*<br/>
+The right `thread::id` object.
 
 ### Return Value
 
@@ -186,11 +186,11 @@ basic_ostream<Elem, Tr>& operator<<(
 
 ### Parameters
 
-*Ostr*  
- A [basic_ostream](../standard-library/basic-ostream-class.md) object.
+*Ostr*<br/>
+A [basic_ostream](../standard-library/basic-ostream-class.md) object.
 
-*Id*  
- A `thread::id` object.
+*Id*<br/>
+A `thread::id` object.
 
 ### Return Value
 

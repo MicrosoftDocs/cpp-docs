@@ -43,6 +43,6 @@ Encoding in a range of common Internet standards such as uuencode, hexadecimal, 
 
 ## See Also
 
-[Concepts](../atl/active-template-library-atl-concepts.md)   
+[Concepts](../atl/active-template-library-atl-concepts.md)<br/>
 [ATL COM Desktop Components](../atl/atl-com-desktop-components.md)
 

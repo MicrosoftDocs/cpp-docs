@@ -16,89 +16,113 @@ For the most part, the Microsoft ARM assembler uses the ARM assembly language, w
 
 ## Microsoft Implementations of ARM Assembly Directives
 
-`AREA`<br/>
-The Microsoft ARM assembler supports these `AREA` attributes: `ALIGN`, `CODE`, `CODEALIGN`, `DATA`, `NOINIT`, `READONLY`, `READWRITE`, `THUMB`, `ARM`.
+- AREA
 
-All except `THUMB` and `ARM` work as documented in the [ARM Compiler armasm Reference Guide](http://infocenter.arm.com/help/topic/com.arm.doc.dui0802b/index.html).
+   The Microsoft ARM assembler supports these `AREA` attributes: `ALIGN`, `CODE`, `CODEALIGN`, `DATA`, `NOINIT`, `READONLY`, `READWRITE`, `THUMB`, `ARM`.
 
-In the Microsoft ARM assembler, `THUMB` indicates that a `CODE` section contains Thumb code, and is the default for `CODE` sections.  `ARM` indicates that the section contains ARM code.
+   All except `THUMB` and `ARM` work as documented in the [ARM Compiler armasm Reference Guide](http://infocenter.arm.com/help/topic/com.arm.doc.dui0802b/index.html).
 
-`ATTR`<br/>
-Not supported.
+   In the Microsoft ARM assembler, `THUMB` indicates that a `CODE` section contains Thumb code, and is the default for `CODE` sections.  `ARM` indicates that the section contains ARM code.
 
-`CODE16`<br/>
-Not supported because it implies pre-UAL Thumb syntax, which the Microsoft ARM assembler does not allow.  Use the `THUMB` directive instead, along with UAL syntax.
+- ATTR
 
-`COMMON`<br/>
-Specification of an alignment for the common region is not supported.
+   Not supported.
 
-`DCDO`<br/>
-Not supported.
+- CODE16
 
-`DN`, `QN`, `SN`<br/>
-Specification of a type or a lane on the register alias is not supported.
+   Not supported because it implies pre-UAL Thumb syntax, which the Microsoft ARM assembler does not allow.  Use the `THUMB` directive instead, along with UAL syntax.
 
-`ENTRY`<br/>
-Not supported.
+- COMMON
 
-`EQU`<br/>
-Specification of a type for the defined symbol is not supported.
+   Specification of an alignment for the common region is not supported.
 
-`EXPORT` and `GLOBAL`
+- DCDO
 
-> **EXPORT** <em>sym</em>{**[**<em>type</em>**]**}
+   Not supported.
 
-*sym* is the symbol to be exported.  [*type*], if specified, can be either `[DATA]` to indicate that the symbol points to data or `[FUNC]` to indicate that the symbol points to code.
+- `DN`, `QN`, `SN`
 
-`GLOBAL` is a synonym for `EXPORT`.
+   Specification of a type or a lane on the register alias is not supported.
 
-`EXPORTAS`<br/>
-Not supported.
+- ENTRY
 
-`FRAME`<br/>
-Not supported.
+   Not supported.
 
-`FUNCTION` and `PROC`<br/>
-Although the assembly syntax supports the specification of a custom calling convention on procedures by listing the registers that are caller-save and those that are callee-save, the Microsoft ARM assembler accepts the syntax but ignores the register lists.  The debug information that is produced by the assembler supports only the default calling convention.
+- EQU
 
-`IMPORT` and `EXTERN`
+   Specification of a type for the defined symbol is not supported.
 
-> **IMPORT** *sym*{**, WEAK** *alias*{**, TYPE** *t*}}
+- `EXPORT` and `GLOBAL`
 
-*sym* is the name of the symbol to be imported.
+   Specifies exports using this syntax:
 
-If `WEAK` *alias* is specified, it indicates that *sym* is a weak external. If no definition for it is found at link time, then all references to it bind instead to *alias*.
+   > **EXPORT**|**GLOBAL** <em>sym</em>{**[**<em>type</em>**]**}
 
-If `TYPE` *t* is specified, then *t* indicates how the linker should attempt to resolve *sym*.  These values for *t* are possible:<br/>
-1—Do not perform a library search for *sym*<br/>
-2—Perform a library search for *sym*<br/>
-3—*sym* is an alias for *alias* (default)
+   *sym* is the symbol to be exported.  [*type*], if specified, can be either `[DATA]` to indicate that the symbol points to data or `[FUNC]` to indicate that the symbol points to code. `GLOBAL` is a synonym for `EXPORT`.
 
-`EXTERN` is a synonym for `IMPORT`, except that *sym* is imported only if there are references to it in the current assembly.
+- EXPORTAS
 
-`MACRO`<br/>
-The use of a variable to hold the condition code of a macro is not supported. Default values for macro parameters are not supported.
+   Not supported.
 
-`NOFP`<br/>
-Not supported.
+- FRAME
 
-`OPT`, `TTL`, `SUBT`<br/>
-Not supported because the Microsoft ARM assembler does not produce listings.
+   Not supported.
 
-`PRESERVE8`<br/>
-Not supported.
+- `FUNCTION` and `PROC`
 
-`RELOC`<br/>
-`RELOC n` can only follow an instruction or a data definition directive. There is no "anonymous symbol" that can be relocated.
+   Although the assembly syntax supports the specification of a custom calling convention on procedures by listing the registers that are caller-save and those that are callee-save, the Microsoft ARM assembler accepts the syntax but ignores the register lists.  The debug information that is produced by the assembler supports only the default calling convention.
 
-`REQUIRE`<br/>
-Not supported.
+- `IMPORT` and `EXTERN`
 
-`REQUIRE8`<br/>
-Not supported.
+   Specifies imports using this syntax:
 
-`THUMBX`<br/>
-Not supported because the Microsoft ARM assembler does not support the Thumb-2EE instruction set.
+   > **IMPORT**|**EXTERN** *sym*{**, WEAK** *alias*{**, TYPE** *t*}}
+
+   *sym* is the name of the symbol to be imported.
+
+   If `WEAK` *alias* is specified, it indicates that *sym* is a weak external. If no definition for it is found at link time, then all references to it bind instead to *alias*.
+
+   If `TYPE` *t* is specified, then *t* indicates how the linker should attempt to resolve *sym*.  These values for *t* are possible:
+
+   |Value|Description|
+   |-|-|
+   |1|Do not perform a library search for *sym*|
+   |2|Perform a library search for *sym*|
+   |3|*sym* is an alias for *alias* (default)|
+
+   `EXTERN` is a synonym for `IMPORT`, except that *sym* is imported only if there are references to it in the current assembly.
+
+- MACRO
+
+   The use of a variable to hold the condition code of a macro is not supported. Default values for macro parameters are not supported.
+
+- NOFP
+
+   Not supported.
+
+- `OPT`, `TTL`, `SUBT`
+
+   Not supported because the Microsoft ARM assembler does not produce listings.
+
+- PRESERVE8
+
+   Not supported.
+
+- RELOC
+
+   `RELOC n` can only follow an instruction or a data definition directive. There is no "anonymous symbol" that can be relocated.
+
+- REQUIRE
+
+   Not supported.
+
+- REQUIRE8
+
+   Not supported.
+
+- THUMBX
+
+   Not supported because the Microsoft ARM assembler does not support the Thumb-2EE instruction set.
 
 ## See also
 

@@ -106,7 +106,7 @@ void Attach(HKEY hKey) throw();
 
 ### Parameters
 
-*hKey*  
+*hKey*<br/>
 The handle of a registry key.
 
 ### Remarks
@@ -142,25 +142,25 @@ LONG Create(
 
 ### Parameters
 
-*hKeyParent*  
+*hKeyParent*<br/>
 The handle of an open key.
 
-*lpszKeyName*  
+*lpszKeyName*<br/>
 Specifies the name of a key to be created or opened. This name must be a subkey of *hKeyParent*.
 
-*lpszClass*  
+*lpszClass*<br/>
 Specifies the class of the key to be created or opened. The default value is REG_NONE.
 
-*dwOptions*  
+*dwOptions*<br/>
 Options for the key. The default value is REG_OPTION_NON_VOLATILE. For a list of possible values and descriptions, see [RegCreateKeyEx](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) in the Windows SDK.
 
-*samDesired*  
+*samDesired*<br/>
 The security access for the key. The default value is KEY_READ &#124; KEY_WRITE. For a list of possible values and descriptions, see `RegCreateKeyEx`.
 
-*lpSecAttr*  
+*lpSecAttr*<br/>
 A pointer to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that indicates whether the handle of the key can be inherited by a child process. By default, this parameter is NULL (meaning the handle cannot be inherited).
 
-*lpdwDisposition*  
+*lpdwDisposition*<br/>
 [out] If non-NULL, retrieves either REG_CREATED_NEW_KEY (if the key did not exist and was created) or REG_OPENED_EXISTING_KEY (if the key existed and was opened).
 
 ### Return Value
@@ -184,13 +184,13 @@ CRegKey(CAtlTransactionManager* pTM) throw();
 
 ### Parameters
 
-*key*  
+*key*<br/>
 A reference to a `CRegKey` object.
 
-*hKey*  
+*hKey*<br/>
 A handle to a registry key.
 
-*pTM*  
+*pTM*<br/>
 Pointer to CAtlTransactionManager object
 
 ### Remarks
@@ -219,7 +219,7 @@ LONG DeleteSubKey(LPCTSTR lpszSubKey) throw();
 
 ### Parameters
 
-*lpszSubKey*  
+*lpszSubKey*<br/>
 Specifies the name of the key to delete. This name must be a subkey of [m_hKey](#m_hkey).
 
 ### Return Value
@@ -240,7 +240,7 @@ LONG DeleteValue(LPCTSTR lpszValue) throw();
 
 ### Parameters
 
-*lpszValue*  
+*lpszValue*<br/>
 Specifies the value field to remove.
 
 ### Return Value
@@ -273,16 +273,16 @@ LONG EnumKey(
 
 ### Parameters
 
-*iIndex*  
+*iIndex*<br/>
 The subkey index. This parameter should be zero for the first call and then incremented for subsequent calls
 
-*pszName*  
+*pszName*<br/>
 Pointer to a buffer that receives the name of the subkey, including the terminating null character. Only the name of the subkey is copied to the buffer, not the full key hierarchy.
 
-*pnNameLength*  
+*pnNameLength*<br/>
 Pointer to a variable that specifies the size, in TCHARs, of the buffer specified by the *pszName* parameter. This size should include the terminating null character. When the method returns, the variable pointed to by *pnNameLength* contains the number of characters stored in the buffer. The count returned does not include the terminating null character.
 
-*pftLastWriteTime*  
+*pftLastWriteTime*<br/>
 Pointer to a variable that receives the time the enumerated subkey was last written to.
 
 ### Return Value
@@ -322,13 +322,13 @@ LONG GetKeySecurity(
 
 ### Parameters
 
-*si*  
+*si*<br/>
 The [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) value that indicates the requested security information.
 
-*psd*  
+*psd*<br/>
 A pointer to a buffer that receives a copy of the requested security descriptor.
 
-*pnBytes*  
+*pnBytes*<br/>
 The size, in bytes, of the buffer pointed to by *psd*.
 
 ### Return Value
@@ -371,10 +371,10 @@ LONG NotifyChangeKeyValue(
 
 ### Parameters
 
-*bWatchSubtree*  
+*bWatchSubtree*<br/>
 Specifies a flag that indicates whether to report changes in the specified key and all of its subkeys or only in the specified key. If this parameter is TRUE, the method reports changes in the key and its subkeys. If the parameter is FALSE, the method reports changes only in the key.
 
-*dwNotifyFilter*  
+*dwNotifyFilter*<br/>
 Specifies a set of flags that control which changes should be reported. This parameter can be a combination of the following values:
 
 |Value|Meaning|
@@ -384,10 +384,10 @@ Specifies a set of flags that control which changes should be reported. This par
 |REG_NOTIFY_CHANGE_LAST_SET|Notify the caller of changes to a value of the key. This can include adding or deleting a value, or changing an existing value.|
 |REG_NOTIFY_CHANGE_SECURITY|Notify the caller of changes to the security descriptor of the key.|
 
-*hEvent*  
+*hEvent*<br/>
 Handle to an event. If the *bAsync* parameter is TRUE, the method returns immediately and changes are reported by signaling this event. If *bAsync* is FALSE, *hEvent* is ignored.
 
-*bAsync*  
+*bAsync*<br/>
 Specifies a flag that indicates how the method reports changes. If this parameter is TRUE, the method returns immediately and reports changes by signaling the specified event. When this parameter is FALSE, the method does not return until a change has occurred. If *hEvent* does not specify a valid event, the *bAsync* parameter cannot be TRUE.
 
 ### Return Value
@@ -414,13 +414,13 @@ LONG Open(
 
 ### Parameters
 
-*hKeyParent*  
+*hKeyParent*<br/>
 The handle of an open key.
 
-*lpszKeyName*  
+*lpszKeyName*<br/>
 Specifies the name of a key to be created or opened. This name must be a subkey of *hKeyParent*.
 
-*samDesired*  
+*samDesired*<br/>
 The security access for the key. The default value is KEY_ALL_ACCESS. For a list of possible values and descriptions, see [RegCreateKeyEx](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) in the Windows SDK.
 
 ### Return Value
@@ -437,7 +437,7 @@ Unlike [CRegKey::Create](#create), `Open` will not create the specified key if i
 
 Converts a `CRegKey` object to an HKEY.
 
-```  
+```
 operator HKEY() const throw();
 ```
 
@@ -451,7 +451,7 @@ CRegKey& operator= (CRegKey& key) throw();
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key to copy.
 
 ### Return Value
@@ -475,13 +475,13 @@ LONG QueryBinaryValue(
 
 ### Parameters
 
-*pszValueName*  
+*pszValueName*<br/>
 Pointer to a null-terminated string containing the name of the value to query.
 
-*pValue*  
+*pValue*<br/>
 Pointer to a buffer that receives the value's data.
 
-*pnBytes*  
+*pnBytes*<br/>
 Pointer to a variable that specifies the size, in bytes, of the buffer pointed to by the *pValue* parameter. When the method returns, this variable contains the size of the data copied to the buffer.
 
 ### Return Value
@@ -507,10 +507,10 @@ LONG QueryDWORDValue(
 
 ### Parameters
 
-*pszValueName*  
+*pszValueName*<br/>
 Pointer to a null-terminated string containing the name of the value to query.
 
-*dwValue*  
+*dwValue*<br/>
 Pointer to a buffer that receives the DWORD.
 
 ### Return Value
@@ -536,10 +536,10 @@ LONG QueryGUIDValue(
 
 ### Parameters
 
-*pszValueName*  
+*pszValueName*<br/>
 Pointer to a null-terminated string containing the name of the value to query.
 
-*guidValue*  
+*guidValue*<br/>
 Pointer to a variable that receives the GUID.
 
 ### Return Value
@@ -566,13 +566,13 @@ LONG QueryMultiStringValue(
 
 ### Parameters
 
-*pszValueName*  
+*pszValueName*<br/>
 Pointer to a null-terminated string containing the name of the value to query.
 
-*pszValue*  
+*pszValue*<br/>
 Pointer to a buffer that receives the multistring data. A multistring is an array of null-terminated strings, terminated by two null characters.
 
-*pnChars*  
+*pnChars*<br/>
 The size, in TCHARs, of the buffer pointed to by *pszValue*. When the method returns, *pnChars* contains the size, in TCHARs, of the multistring retrieved, including a terminating null character.
 
 ### Return Value
@@ -598,10 +598,10 @@ LONG QueryQWORDValue(
 
 ### Parameters
 
-*pszValueName*  
+*pszValueName*<br/>
 Pointer to a null-terminated string containing the name of the value to query.
 
-*qwValue*  
+*qwValue*<br/>
 Pointer to a buffer that receives the QWORD.
 
 ### Return Value
@@ -628,13 +628,13 @@ LONG QueryStringValue(
 
 ### Parameters
 
-*pszValueName*  
+*pszValueName*<br/>
 Pointer to a null-terminated string containing the name of the value to query.
 
-*pszValue*  
+*pszValue*<br/>
 Pointer to a buffer that receives the string data.
 
-*pnChars*  
+*pnChars*<br/>
 The size, in TCHARs, of the buffer pointed to by *pszValue*. When the method returns, *pnChars* contains the size, in TCHARs, of the string retrieved, including a terminating null character.
 
 ### Return Value
@@ -671,28 +671,28 @@ ATL_DEPRECATED LONG QueryValue(
 
 ### Parameters
 
-*pszValueName*  
+*pszValueName*<br/>
 Pointer to a null-terminated string containing the name of the value to query. If *pszValueName* is NULL or an empty string, "", the method retrieves the type and data for the key's unnamed or default value, if any.
 
-*pdwType*  
+*pdwType*<br/>
 Pointer to a variable that receives a code indicating the type of data stored in the specified value. The *pdwType* parameter can be NULL if the type code is not required.
 
-*pData*  
+*pData*<br/>
 Pointer to a buffer that receives the value's data. This parameter can be NULL if the data is not required.
 
-*pnBytes*  
+*pnBytes*<br/>
 Pointer to a variable that specifies the size, in bytes, of the buffer pointed to by the *pData* parameter. When the method returns, this variable contains the size of the data copied to *pData.*
 
-*dwValue*  
+*dwValue*<br/>
 The value field's numerical data.
 
-*lpszValueName*  
+*lpszValueName*<br/>
 Specifies the value field to be queried.
 
-*szValue*  
+*szValue*<br/>
 The value field's string data.
 
-*pdwCount*  
+*pdwCount*<br/>
 The size of the string data. Its value is initially set to the size of the *szValue* buffer.
 
 ### Return Value
@@ -718,7 +718,7 @@ LONG RecurseDeleteKey(LPCTSTR lpszKey) throw();
 
 ### Parameters
 
-*lpszKey*  
+*lpszKey*<br/>
 Specifies the name of the key to delete. This name must be a subkey of [m_hKey](#m_hkey).
 
 ### Return Value
@@ -742,13 +742,13 @@ LONG SetBinaryValue(
 
 ### Parameters
 
-*pszValueName*  
+*pszValueName*<br/>
 Pointer to a string containing the name of the value to set. If a value with this name is not already present, the method adds it to the key.
 
-*pValue*  
+*pValue*<br/>
 Pointer to a buffer containing the data to be stored with the specified value name.
 
-*nBytes*  
+*nBytes*<br/>
 Specifies the size, in bytes, of the information pointed to by the *pValue* parameter.
 
 ### Return Value
@@ -769,10 +769,10 @@ LONG SetDWORDValue(LPCTSTR pszValueName, DWORD dwValue) throw();
 
 ### Parameters
 
-*pszValueName*  
+*pszValueName*<br/>
 Pointer to a string containing the name of the value to set. If a value with this name is not already present, the method adds it to the key.
 
-*dwValue*  
+*dwValue*<br/>
 The DWORD data to be stored with the specified value name.
 
 ### Return Value
@@ -793,10 +793,10 @@ LONG SetGUIDValue(LPCTSTR pszValueName, REFGUID guidValue) throw();
 
 ### Parameters
 
-*pszValueName*  
+*pszValueName*<br/>
 Pointer to a string containing the name of the value to set. If a value with this name is not already present, the method adds it to the key.
 
-*guidValue*  
+*guidValue*<br/>
 Reference to the GUID to be stored with the specified value name.
 
 ### Return Value
@@ -820,13 +820,13 @@ LONG SetKeyValue(
 
 ### Parameters
 
-*lpszKeyName*  
+*lpszKeyName*<br/>
 Specifies the name of the key to be created or opened. This name must be a subkey of [m_hKey](#m_hkey).
 
-*lpszValue*  
+*lpszValue*<br/>
 Specifies the data to be stored. This parameter must be non-NULL.
 
-*lpszValueName*  
+*lpszValueName*<br/>
 Specifies the value field to be set. If a value field with this name does not already exist in the key, it is added.
 
 ### Return Value
@@ -847,7 +847,7 @@ LONG SetKeySecurity(SECURITY_INFORMATION si, PSECURITY_DESCRIPTOR psd) throw();
 
 ### Parameters
 
-*si*  
+*si*<br/>
 Specifies the components of the security descriptor to set. The value can be a combination of the following values:
 
 |Value|Meaning|
@@ -857,7 +857,7 @@ Specifies the components of the security descriptor to set. The value can be a c
 |OWNER_SECURITY_INFORMATION|Sets the key's owner SID. The key must have WRITE_OWNER access, or the calling process must be the object's owner or have the SE_TAKE_OWNERSHIP_NAME privilege enabled.|
 |SACL_SECURITY_INFORMATION|Sets the key's system access-control list (SACL). The key must have ACCESS_SYSTEM_SECURITY access. The proper way to get this access is to enable the SE_SECURITY_NAME [privilege](https://msdn.microsoft.com/library/windows/desktop/aa379306) in the caller's current access token, open the handle for ACCESS_SYSTEM_SECURITY access, and then disable the privilege.|
 
-*psd*  
+*psd*<br/>
 Pointer to a [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) structure that specifies the security attributes to set for the specified key.
 
 ### Return Value
@@ -878,10 +878,10 @@ LONG SetMultiStringValue(LPCTSTR pszValueName, LPCTSTR pszValue) throw();
 
 ### Parameters
 
-*pszValueName*  
+*pszValueName*<br/>
 Pointer to a string containing the name of the value to set. If a value with this name is not already present, the method adds it to the key.
 
-*pszValue*  
+*pszValue*<br/>
 Pointer to the multistring data to be stored with the specified value name. A multistring is an array of null-terminated strings, terminated by two null characters.
 
 ### Return Value
@@ -902,10 +902,10 @@ LONG SetQWORDValue(LPCTSTR pszValueName, ULONGLONG qwValue) throw();
 
 ### Parameters
 
-*pszValueName*  
+*pszValueName*<br/>
 Pointer to a string containing the name of the value to set. If a value with this name is not already present, the method adds it to the key.
 
-*qwValue*  
+*qwValue*<br/>
 The QWORD data to be stored with the specified value name.
 
 ### Return Value
@@ -929,13 +929,13 @@ LONG SetStringValue(
 
 ### Parameters
 
-*pszValueName*  
+*pszValueName*<br/>
 Pointer to a string containing the name of the value to set. If a value with this name is not already present, the method adds it to the key.
 
-*pszValue*  
+*pszValue*<br/>
 Pointer to the string data to be stored with the specified value name.
 
-*dwType*  
+*dwType*<br/>
 The type of the string to write to the registry: either REG_SZ (the default) or REG_EXPAND_SZ (for multistrings).
 
 ### Return Value
@@ -976,37 +976,37 @@ ATL_DEPRECATED LONG SetValue(
 
 ### Parameters
 
-*pszValueName*  
+*pszValueName*<br/>
 Pointer to a string containing the name of the value to set. If a value with this name is not already present in the key, the method adds it to the key. If *pszValueName* is NULL or an empty string, "", the method sets the type and data for the key's unnamed or default value.
 
-*dwType*  
+*dwType*<br/>
 Specifies a code indicating the type of data pointed to by the *pValue* parameter.
 
-*pValue*  
+*pValue*<br/>
 Pointer to a buffer containing the data to be stored with the specified value name.
 
-*nBytes*  
+*nBytes*<br/>
 Specifies the size, in bytes, of the information pointed to by the *pValue* parameter. If the data is of type REG_SZ, REG_EXPAND_SZ, or REG_MULTI_SZ, *nBytes* must include the size of the terminating null character.
 
-*hKeyParent*  
+*hKeyParent*<br/>
 The handle of an open key.
 
-*lpszKeyName*  
+*lpszKeyName*<br/>
 Specifies the name of a key to be created or opened. This name must be a subkey of *hKeyParent*.
 
-*lpszValue*  
+*lpszValue*<br/>
 Specifies the data to be stored. This parameter must be non-NULL.
 
-*lpszValueName*  
+*lpszValueName*<br/>
 Specifies the value field to be set. If a value field with this name does not already exist in the key, it is added.
 
-*dwValue*  
+*dwValue*<br/>
 Specifies the data to be stored.
 
-*bMulti*  
+*bMulti*<br/>
 If false, indicates the string is of type REG_SZ. If true, indicates the string is a multistring of type REG_MULTI_SZ.
 
-*nValueLen*  
+*nValueLen*<br/>
 If *bMulti* is true, *nValueLen* is the length of the *lpszValue* string in characters. If *bMulti* is false, a value of -1 indicates that the method will calculate the length automatically.
 
 ### Return Value
@@ -1021,5 +1021,5 @@ The third method calls [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-reg
 
 ## See Also
 
-[DCOM Sample](../../visual-cpp-samples.md)   
+[DCOM Sample](../../visual-cpp-samples.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

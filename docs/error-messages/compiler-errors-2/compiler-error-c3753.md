@@ -13,20 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3753
-a generic property is not allowed  
-  
- Generic parameter lists can only appear on managed classes, structs, or functions.  
-  
- For more information, see [Generics](../../windows/generics-cpp-component-extensions.md) and [property](../../windows/property-cpp-component-extensions.md).  
-  
-## Example  
- The following sample generates C3753.  
-  
-```  
-// C3753.cpp  
-// compile with: /clr /c  
-ref struct A {  
-   generic <typename T>  
-   property int i;   // C3753 error  
-};  
+
+a generic property is not allowed
+
+Generic parameter lists can only appear on managed classes, structs, or functions.
+
+For more information, see [Generics](../../windows/generics-cpp-component-extensions.md) and [property](../../windows/property-cpp-component-extensions.md).
+
+## Example
+
+The following sample generates C3753.
+
+```
+// C3753.cpp
+// compile with: /clr /c
+ref struct A {
+   generic <typename T>
+   property int i;   // C3753 error
+};
 ```

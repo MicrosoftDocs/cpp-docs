@@ -95,7 +95,7 @@ CSnapInPropertyPageImpl(LPCTSTR lpszTitle = NULL);
 
 ### Parameters
 
-*lpszTitle*  
+*lpszTitle*<br/>
 [in] The title of the property page.
 
 ### Remarks
@@ -296,10 +296,10 @@ LRESULT QuerySiblings(WPARAM wParam, LPARAM lParam);
 
 ### Parameters
 
-*wParam*  
+*wParam*<br/>
 [in] Specifies additional message-dependent information.
 
-*lParam*  
+*lParam*<br/>
 [in] Specifies additional message-dependent information.
 
 ### Return Value
@@ -320,7 +320,7 @@ void SetModified(BOOL bChanged = TRUE);
 
 ### Parameters
 
-*bChanged*  
+*bChanged*<br/>
 [in] TRUE to indicate that the property page settings have been modified since the last time they were applied; FALSE to indicate that the property page settings have been applied, or should be ignored.
 
 ### Remarks

@@ -12,197 +12,202 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # int_3 Class
-Represents a short vector of three integers.  
-  
-## Syntax  
-  
-```  
-class int_3;  
-```  
-  
-## Members  
-  
-### Public Typedefs  
-  
-|Name|Description|  
-|----------|-----------------|  
-|`value_type`||  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[int_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|int_3::get_x||  
-|int_3::get_xy||  
-|int_3::get_xyz||  
-|int_3::get_xz||  
-|int_3::get_xzy||  
-|int_3::get_y||  
-|int_3::get_yx||  
-|int_3::get_yxz||  
-|int_3::get_yz||  
-|int_3::get_yzx||  
-|int_3::get_z||  
-|int_3::get_zx||  
-|int_3::get_zxy||  
-|int_3::get_zy||  
-|int_3::get_zyx||  
-|int_3::ref_b||  
-|int_3::ref_g||  
-|int_3::ref_r||  
-|int_3::ref_x||  
-|int_3::ref_y||  
-|int_3::ref_z||  
-|int_3::set_x||  
-|int_3::set_xy||  
-|int_3::set_xyz||  
-|int_3::set_xz||  
-|int_3::set_xzy||  
-|int_3::set_y||  
-|int_3::set_yx||  
-|int_3::set_yxz||  
-|int_3::set_yz||  
-|int_3::set_yzx||  
-|int_3::set_z||  
-|int_3::set_zx||  
-|int_3::set_zxy||  
-|int_3::set_zy||  
-|int_3::set_zyx||  
-  
-### Public Operators  
-  
-|Name|Description|  
-|----------|-----------------|  
-|int_3::operator-||  
-|int_3::operator--||  
-|int_3::operator%=||  
-|int_3::operator&=||  
-|int_3::operator*=||  
-|int_3::operator/=||  
-|int_3::operator^=||  
-|int_3::operator&#124;=||  
-|int_3::operator~||  
-|int_3::operator++||  
-|int_3::operator+=||  
-|int_3::operator<\<=||  
-|int_3::operator=||  
-|int_3::operator-=||  
-|int_3::operator>>=||  
-  
-### Public Constants  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[size Constant](#size)||  
-  
-### Public Data Members  
-  
-|Name|Description|  
-|----------|-----------------|  
-|int_3::b||  
-|int_3::bg||  
-|int_3::bgr||  
-|int_3::br||  
-|int_3::brg||  
-|int_3::g||  
-|int_3::gb||  
-|int_3::gbr||  
-|int_3::gr||  
-|int_3::grb||  
-|int_3::r||  
-|int_3::rb||  
-|int_3::rbg||  
-|int_3::rg||  
-|int_3::rgb||  
-|int_3::x||  
-|int_3::xy||  
-|int_3::xyz||  
-|int_3::xz||  
-|int_3::xzy||  
-|int_3::y||  
-|int_3::yx||  
-|int_3::yxz||  
-|int_3::yz||  
-|int_3::yzx||  
-|int_3::z||  
-|int_3::zx||  
-|int_3::zxy||  
-|int_3::zy||  
-|int_3::zyx||  
-  
-## Inheritance Hierarchy  
- `int_3`  
-  
-## Requirements  
- **Header:** amp_short_vectors.h  
-  
- **Namespace:** Concurrency::graphics  
 
-## <a name="ctor"></a> int_3 
+Represents a short vector of three integers.
 
-Default constructor, initializes all elements with 0.  
-  
-## Syntax  
-  
-```  
-int_3() restrict(amp,cpu);  
-int_3(  
-   int _V0,  
-   int _V1,  
-   int _V2  
-) restrict(amp,cpu);  
-int_3(  
-   int _V  
-) restrict(amp,cpu);  
-int_3(  
-   const int_3& _Other  
-) restrict(amp,cpu);  
-explicit inline int_3(  
-   const uint_3& _Other  
-) restrict(amp,cpu);  
-explicit inline int_3(  
-   const float_3& _Other  
-) restrict(amp,cpu);  
-explicit inline int_3(  
-   const unorm_3& _Other  
-) restrict(amp,cpu);  
-explicit inline int_3(  
-   const norm_3& _Other  
-) restrict(amp,cpu);  
-explicit inline int_3(  
-   const double_3& _Other  
-) restrict(amp,cpu);  
-```  
-  
-### Parameters  
- `_V0`  
- The value to initialize element 0.  
-  
- `_V1`  
- The value to initialize element 1.  
-  
- `_V2`  
- The value to initialize element 2.  
-  
- `_V`  
- The value for initialization.  
-  
- `_Other`  
- The object used to initialize.  
-  
-## <a name="size"></a> size 
+## Syntax
 
-## Syntax  
-  
-```  
-static const int size = 3;  
-```  
-  
-## See Also  
- [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)
+```
+class int_3;
+```
+
+## Members
+
+### Public Typedefs
+
+|Name|Description|
+|----------|-----------------|
+|`value_type`||
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[int_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|int_3::get_x||
+|int_3::get_xy||
+|int_3::get_xyz||
+|int_3::get_xz||
+|int_3::get_xzy||
+|int_3::get_y||
+|int_3::get_yx||
+|int_3::get_yxz||
+|int_3::get_yz||
+|int_3::get_yzx||
+|int_3::get_z||
+|int_3::get_zx||
+|int_3::get_zxy||
+|int_3::get_zy||
+|int_3::get_zyx||
+|int_3::ref_b||
+|int_3::ref_g||
+|int_3::ref_r||
+|int_3::ref_x||
+|int_3::ref_y||
+|int_3::ref_z||
+|int_3::set_x||
+|int_3::set_xy||
+|int_3::set_xyz||
+|int_3::set_xz||
+|int_3::set_xzy||
+|int_3::set_y||
+|int_3::set_yx||
+|int_3::set_yxz||
+|int_3::set_yz||
+|int_3::set_yzx||
+|int_3::set_z||
+|int_3::set_zx||
+|int_3::set_zxy||
+|int_3::set_zy||
+|int_3::set_zyx||
+
+### Public Operators
+
+|Name|Description|
+|----------|-----------------|
+|int_3::operator-||
+|int_3::operator--||
+|int_3::operator%=||
+|int_3::operator&=||
+|int_3::operator*=||
+|int_3::operator/=||
+|int_3::operator^=||
+|int_3::operator&#124;=||
+|int_3::operator~||
+|int_3::operator++||
+|int_3::operator+=||
+|int_3::operator<\<=||
+|int_3::operator=||
+|int_3::operator-=||
+|int_3::operator>>=||
+
+### Public Constants
+
+|Name|Description|
+|----------|-----------------|
+|[size Constant](#size)||
+
+### Public Data Members
+
+|Name|Description|
+|----------|-----------------|
+|int_3::b||
+|int_3::bg||
+|int_3::bgr||
+|int_3::br||
+|int_3::brg||
+|int_3::g||
+|int_3::gb||
+|int_3::gbr||
+|int_3::gr||
+|int_3::grb||
+|int_3::r||
+|int_3::rb||
+|int_3::rbg||
+|int_3::rg||
+|int_3::rgb||
+|int_3::x||
+|int_3::xy||
+|int_3::xyz||
+|int_3::xz||
+|int_3::xzy||
+|int_3::y||
+|int_3::yx||
+|int_3::yxz||
+|int_3::yz||
+|int_3::yzx||
+|int_3::z||
+|int_3::zx||
+|int_3::zxy||
+|int_3::zy||
+|int_3::zyx||
+
+## Inheritance Hierarchy
+
+`int_3`
+
+## Requirements
+
+**Header:** amp_short_vectors.h
+
+**Namespace:** Concurrency::graphics
+
+## <a name="ctor"></a> int_3
+
+Default constructor, initializes all elements with 0.
+
+## Syntax
+
+```
+int_3() restrict(amp,cpu);
+int_3(
+   int _V0,
+   int _V1,
+   int _V2
+) restrict(amp,cpu);
+int_3(
+   int _V
+) restrict(amp,cpu);
+int_3(
+   const int_3& _Other
+) restrict(amp,cpu);
+explicit inline int_3(
+   const uint_3& _Other
+) restrict(amp,cpu);
+explicit inline int_3(
+   const float_3& _Other
+) restrict(amp,cpu);
+explicit inline int_3(
+   const unorm_3& _Other
+) restrict(amp,cpu);
+explicit inline int_3(
+   const norm_3& _Other
+) restrict(amp,cpu);
+explicit inline int_3(
+   const double_3& _Other
+) restrict(amp,cpu);
+```
+
+### Parameters
+
+*_V0*<br/>
+The value to initialize element 0.
+
+*_V1*<br/>
+The value to initialize element 1.
+
+*_V2*<br/>
+The value to initialize element 2.
+
+*_V*<br/>
+The value for initialization.
+
+*_Other*<br/>
+The object used to initialize.
+
+## <a name="size"></a> size
+
+## Syntax
+
+```
+static const int size = 3;
+```
+
+## See Also
+
+[Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

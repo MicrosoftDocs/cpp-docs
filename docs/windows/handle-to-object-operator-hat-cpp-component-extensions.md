@@ -224,5 +224,5 @@ Compiler option: `/clr`
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)  
+[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)<br/>
 [Tracking Reference Operator](../windows/tracking-reference-operator-cpp-component-extensions.md)

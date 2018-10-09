@@ -13,25 +13,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_handle Class
-Automatic resource management which can be used to embed a virtual handle into a managed type.  
-  
-## Syntax  
-  
-```  
-template<typename _element_type>  
-ref class auto_handle;  
-```  
-  
-#### Parameters  
- `_element_type`  
- The managed type to be embedded.  
-  
-## Requirements  
- **Header file** \<msclr\auto_handle.h>  
-  
- **Namespace** msclr  
-  
-## See Also  
- [auto_handle](../dotnet/auto-handle.md)   
- [auto_handle Members](../dotnet/auto-handle-members.md)   
- [auto_gcroot Class](../dotnet/auto-gcroot-class.md)
+
+Automatic resource management which can be used to embed a virtual handle into a managed type.
+
+## Syntax
+
+```
+template<typename _element_type>
+ref class auto_handle;
+```
+
+#### Parameters
+
+*_element_type*<br/>
+The managed type to be embedded.
+
+## Requirements
+
+**Header file** \<msclr\auto_handle.h>
+
+**Namespace** msclr
+
+## See Also
+
+[auto_handle](../dotnet/auto-handle.md)<br/>
+[auto_handle Members](../dotnet/auto-handle-members.md)<br/>
+[auto_gcroot Class](../dotnet/auto-gcroot-class.md)

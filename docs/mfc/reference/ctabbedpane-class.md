@@ -150,9 +150,9 @@ virtual BOOL DetachPane(
 
 ### Parameters
 
-[in] *pBar*  
+[in] *pBar*
 
-[in] *bHide*  
+[in] *bHide*
 
 ### Return Value
 
@@ -168,8 +168,8 @@ static void EnableTabAutoColor(BOOL bEnable = TRUE);
 
 ### Parameters
 
-[in] *bEnable*  
-TRUE to enable auto coloring of tabs; otherwise, FALSE.
+*bEnable*<br/>
+[in] TRUE to enable auto coloring of tabs; otherwise, FALSE.
 
 ### Remarks
 
@@ -191,10 +191,10 @@ virtual BOOL FloatTab(
 
 ### Parameters
 
-[in] *pBar*  
-[in] *nTabID*  
-[in] *dockMethod*  
-[in] *bHide*  
+*pBar*<br/>
+[in] [in] *nTabID*
+*dockMethod*<br/>
+[in] [in] *bHide*
 
 ### Return Value
 
@@ -212,11 +212,11 @@ virtual void GetTabArea(
 
 ### Parameters
 
-[out] *rectTabAreaTop*  
-Contains the size and position, in screen coordinates, of the top tab area.
+*rectTabAreaTop*<br/>
+[out] Contains the size and position, in screen coordinates, of the top tab area.
 
-[out] *rectTabAreaBottom*  
-Contains the size and position, in screen coordinates, of the bottom tab area.
+*rectTabAreaBottom*<br/>
+[out] Contains the size and position, in screen coordinates, of the bottom tab area.
 
 ### Remarks
 
@@ -275,6 +275,7 @@ You must set this value before a tabbed pane has been created.
 The default value is FALSE.
 
 ##  <a name="m_ptabwndrtc"></a>  CTabbedPane::m_pTabWndRTC
+
 Runtime class information for a custom `CMFCTabCtrl`-derived object.
 
 ```
@@ -307,8 +308,8 @@ static void SetTabAutoColors(const CArray<COLORREF, COLORREF>& arColors);
 
 ### Parameters
 
-[in] *arColors*  
-Contains the array of colors to set.
+*arColors*<br/>
+[in] Contains the array of colors to set.
 
 ### Remarks
 
@@ -318,8 +319,8 @@ Use [CTabbedPane::EnableTabAutoColor](#enabletabautocolor) to enable or disable 
 
 ## See Also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)  
-[Classes](../../mfc/reference/mfc-classes.md)  
-[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)  
-[CBaseTabbedPane Class](../../mfc/reference/cbasetabbedpane-class.md)  
-[CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md)  
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
+[Classes](../../mfc/reference/mfc-classes.md)<br/>
+[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
+[CBaseTabbedPane Class](../../mfc/reference/cbasetabbedpane-class.md)<br/>
+[CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md)

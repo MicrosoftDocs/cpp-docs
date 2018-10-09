@@ -13,20 +13,22 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Using CComboBoxEx
-The extended combo box control is an extension of the standard combo box control that provides native support for item images. These images can be used to indicate the status of individual items in the combo box, such as the currently selected and unselected items. To make item images easily accessible, the control provides image list support.  
-  
- Use this control to provide the functionality of a combo box without having to manually draw item graphics.  
-  
-## What do you want to know more about  
-  
--   [Creating an Extended Combo Box Control](../mfc/creating-an-extended-combo-box-control.md)  
-  
--   [Using Image Lists in an Extended Combo Box Control](../mfc/using-image-lists-in-an-extended-combo-box-control.md)  
-  
--   [Setting the Images for an Individual Item](../mfc/setting-the-images-for-an-individual-item.md)  
-  
--   [Processing Notification Messages in Extended Combo Box Controls](../mfc/processing-notification-messages-in-extended-combo-box-controls.md)  
-  
-## See Also  
- [Controls](../mfc/controls-mfc.md)
+
+The extended combo box control is an extension of the standard combo box control that provides native support for item images. These images can be used to indicate the status of individual items in the combo box, such as the currently selected and unselected items. To make item images easily accessible, the control provides image list support.
+
+Use this control to provide the functionality of a combo box without having to manually draw item graphics.
+
+## What do you want to know more about
+
+- [Creating an Extended Combo Box Control](../mfc/creating-an-extended-combo-box-control.md)
+
+- [Using Image Lists in an Extended Combo Box Control](../mfc/using-image-lists-in-an-extended-combo-box-control.md)
+
+- [Setting the Images for an Individual Item](../mfc/setting-the-images-for-an-individual-item.md)
+
+- [Processing Notification Messages in Extended Combo Box Controls](../mfc/processing-notification-messages-in-extended-combo-box-controls.md)
+
+## See Also
+
+[Controls](../mfc/controls-mfc.md)
 

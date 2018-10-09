@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2518
-keyword 'keyword' illegal in base class list; ignored  
-  
- The keywords `class` and `struct` should not appear in a base class list.  
-  
- The following sample generates C2518:  
-  
-```  
-// C2518.cpp  
-// compile with: /c  
-class B {};  
-class C : public class B {};   // C2518  
-class D: public B {};   // OK  
+
+keyword 'keyword' illegal in base class list; ignored
+
+The keywords `class` and `struct` should not appear in a base class list.
+
+The following sample generates C2518:
+
+```
+// C2518.cpp
+// compile with: /c
+class B {};
+class C : public class B {};   // C2518
+class D: public B {};   // OK
 ```

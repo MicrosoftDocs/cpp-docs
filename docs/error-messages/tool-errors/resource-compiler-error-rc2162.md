@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2162
-expected macro formal parameter  
-  
- The token following a stringizing operator (**#**) was not a formal parameter name.
+
+expected macro formal parameter
+
+The token following a stringizing operator (**#**) was not a formal parameter name.

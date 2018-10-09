@@ -30,6 +30,6 @@ Using the linker option /OPT:NOWIN98 can further reduce a default ATL control by
 
 ## See Also
 
-[Programming with ATL and C Run-Time Code](../atl/programming-with-atl-and-c-run-time-code.md)   
+[Programming with ATL and C Run-Time Code](../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [DLLs and Visual C++ run-time library behavior](../build/run-time-library-behavior.md)
 

@@ -183,7 +183,7 @@ next submatch: matched == true
   3 chars, value == aaa
 next submatch: matched == false
   0 chars, value ==
-  
+
 empty == false
 ```
 

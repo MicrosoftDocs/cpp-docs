@@ -13,9 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4603
-'\<identifier>' : macro is not defined or definition is different after precompiled header use  
-  
- The macro specified by the *identifier* placeholder is either different or no longer defined after the precompiler header is used.  
-  
-## See Also  
- [Creating Precompiled Header Files](../../build/reference/creating-precompiled-header-files.md)
+
+'\<identifier>' : macro is not defined or definition is different after precompiled header use
+
+The macro specified by the *identifier* placeholder is either different or no longer defined after the precompiler header is used.
+
+## See Also
+
+[Creating Precompiled Header Files](../../build/reference/creating-precompiled-header-files.md)

@@ -94,10 +94,10 @@ CAtlTransactionManager(BOOL bFallback = TRUE, BOOL bAutoCreateTransaction = TRUE
 
 ### Parameters
 
-*bFallback*  
+*bFallback*<br/>
 TRUE indicates support fallback. If transacted function fails, the class automatically calls the "non-transacted" function. FALSE indicates no "fallback" calls.
 
-*bAutoCreateTransaction*  
+*bAutoCreateTransaction*<br/>
 TRUE indicates that the transaction handler is created automatically in the constructor. FALSE indicates that it is not.
 
 ### Remarks
@@ -167,25 +167,25 @@ inline HANDLE CreateFile(
 
 ### Parameters
 
-*lpFileName*  
+*lpFileName*<br/>
 The name of an object to be created or opened.
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 The access to the object, which can be summarized as read, write, both, or neither (zero). The most commonly used values are GENERIC_READ, GENERIC_WRITE, or both: GENERIC_READ &#124; GENERIC_WRITE.
 
-*dwShareMode*  
+*dwShareMode*<br/>
 The sharing mode of an object, which can be read, write, both, delete, all of these, or none: 0, FILE_SHARE_DELETE, FILE_SHARE_READ, FILE_SHARE_WRITE.
 
-*lpSecurityAttributes*  
+*lpSecurityAttributes*<br/>
 A pointer to a SECURITY_ATTRIBUTES structure that contains an optional security descriptor and also determines whether or not the returned handle can be inherited by child processes. The parameter can be NULL.
 
-*dwCreationDisposition*  
+*dwCreationDisposition*<br/>
 An action to take on files that exist and do not exist. This parameter must be one of the following values, which cannot be combined: CREATE_ALWAYS, CREATE_NEW, OPEN_ALWAYS, OPEN_EXISTING, or TRUNCATE_EXISTING.
 
-*dwFlagsAndAttributes*  
+*dwFlagsAndAttributes*<br/>
 The file attributes and flags. This parameter can include any combination of the available file attributes (FILE_ATTRIBUTE_*). All other file attributes override FILE_ATTRIBUTE_NORMAL. This parameter can also contain combinations of flags (FILE_FLAG_\*) for control of buffering behavior, access modes, and other special-purpose flags. These combine with any FILE_ATTRIBUTE_\* values.
 
-*hTemplateFile*  
+*hTemplateFile*<br/>
 A valid handle to a template file with the GENERIC_READ access right. The template file supplies file attributes and extended attributes for the file that is being created. This parameter can be NULL.
 
 ### Return Value
@@ -206,7 +206,7 @@ inline BOOL DeleteFile(LPCTSTR lpFileName);
 
 ### Parameters
 
-*lpFileName*  
+*lpFileName*<br/>
 The name of the file to be deleted.
 
 ### Remarks
@@ -225,10 +225,10 @@ inline HANDLE FindFirstFile(
 
 ### Parameters
 
-*lpFileName*  
+*lpFileName*<br/>
 The directory or path, and the file name to search for. This parameter can include wildcard characters, such as an asterisk (*) or a question mark ().
 
-*pNextInfo*  
+*pNextInfo*<br/>
 A pointer to the WIN32_FIND_DATA structure that receives information about a found file or subdirectory.
 
 ### Return Value
@@ -249,7 +249,7 @@ inline DWORD GetFileAttributes(LPCTSTR lpFileName);
 
 ### Parameters
 
-*lpFileName*  
+*lpFileName*<br/>
 The name of the file or directory.
 
 ### Remarks
@@ -269,13 +269,13 @@ inline BOOL GetFileAttributesEx(
 
 ### Parameters
 
-*lpFileName*  
+*lpFileName*<br/>
 The name of the file or directory.
 
-*fInfoLevelId*  
+*fInfoLevelId*<br/>
 The level of attribute information to retrieve.
 
-*lpFileInformation*  
+*lpFileInformation*<br/>
 A pointer to a buffer that receives the attribute information. The type of attribute information that is stored into this buffer is determined by the value of *fInfoLevelId*. If the *fInfoLevelId* parameter is GetFileExInfoStandard then this parameter points to a WIN32_FILE_ATTRIBUTE_DATA structure.
 
 ### Remarks
@@ -340,10 +340,10 @@ inline BOOL MoveFile(LPCTSTR lpOldFileName, LPCTSTR lpNewFileName);
 
 ### Parameters
 
-*lpOldFileName*  
+*lpOldFileName*<br/>
 The current name of the existing file or directory on the local computer.
 
-*lpNewFileName*  
+*lpNewFileName*<br/>
 The new name for the file or directory. This name must not already exist. A new file may be on a different file system or drive. A new directory must be on the same drive.
 
 ### Remarks
@@ -369,31 +369,31 @@ inline LSTATUS RegCreateKeyEx(
 
 ### Parameters
 
-*hKey*  
+*hKey*<br/>
 A handle to an open registry key.
 
-*lpSubKey*  
+*lpSubKey*<br/>
 The name of a subkey that this function opens or creates.
 
-*dwReserved*  
+*dwReserved*<br/>
 This parameter is reserved and must be zero.
 
-*lpClass*  
+*lpClass*<br/>
 The user-defined class of this key. This parameter may be ignored. This parameter can be NULL.
 
-*dwOptions*  
+*dwOptions*<br/>
 This parameter can be one of the following values: REG_OPTION_BACKUP_RESTORE, REG_OPTION_NON_VOLATILE, or REG_OPTION_VOLATILE.
 
-*samDesired*  
+*samDesired*<br/>
 A mask that specifies the access rights for the key.
 
-*lpSecurityAttributes*  
+*lpSecurityAttributes*<br/>
 Pointer to a SECURITY_ATTRIBUTES structure that determines whether the returned handle can be inherited by child processes. If *lpSecurityAttributes* is NULL, the handle cannot be inherited.
 
-*phkResult*  
+*phkResult*<br/>
 A pointer to a variable that receives a handle to the opened or created key. If the key is not one of the predefined registry keys, call the `RegCloseKey` function after you have finished using the handle.
 
-*lpdwDisposition*  
+*lpdwDisposition*<br/>
 A pointer to a variable that receives one of the following disposition values: REG_CREATED_NEW_KEY or REG_OPENED_EXISTING_KEY.
 
 ### Return Value
@@ -442,19 +442,19 @@ inline LSTATUS RegOpenKeyEx(
 
 ### Parameters
 
-*hKey*  
+*hKey*<br/>
 A handle to an open registry key.
 
-*lpSubKey*  
+*lpSubKey*<br/>
 The name of the registry subkey to be opened.
 
-*ulOptions*  
+*ulOptions*<br/>
 This parameter is reserved and must be zero.
 
-*samDesired*  
+*samDesired*<br/>
 A mask that specifies the access rights for the key.
 
-*phkResult*  
+*phkResult*<br/>
 A pointer to a variable that receives a handle to the opened or created key. If the key is not one of the predefined registry keys, call the `RegCloseKey` function after you have finished using the handle.
 
 ### Return Value
@@ -491,10 +491,10 @@ inline BOOL SetFileAttributes(LPCTSTR lpFileName, DWORD dwAttributes);
 
 ### Parameters
 
-*lpFileName*  
+*lpFileName*<br/>
 The name of the file or directory.
 
-*dwAttributes*  
+*dwAttributes*<br/>
 The file attributes to set for the file. For more information, see [SetFileAttributesTransacted](/windows/desktop/api/winbase/nf-winbase-setfileattributestransacteda).
 
 ### Remarks

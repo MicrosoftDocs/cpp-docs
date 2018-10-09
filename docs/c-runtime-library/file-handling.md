@@ -73,7 +73,7 @@ These routines provide a way to change the representation of the file between a 
 |[_get_osfhandle](../c-runtime-library/reference/get-osfhandle.md)|Return operating-system file handle associated with existing C run-time file descriptor|
 |[_open_osfhandle](../c-runtime-library/reference/open-osfhandle.md)|Associates C run-time file descriptor with an existing operating-system file handle.|
 
- The following Win32 functions also open files and pipes:
+The following Win32 functions also open files and pipes:
 
 - [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea)
 

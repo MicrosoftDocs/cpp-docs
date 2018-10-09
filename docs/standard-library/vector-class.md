@@ -25,11 +25,11 @@ class vector
 
 ### Parameters
 
-*Type*  
- The element data type to be stored in the vector
+*Type*<br/>
+The element data type to be stored in the vector
 
-*Allocator*  
- The type that represents the stored allocator object that encapsulates details about the vector's allocation and deallocation of memory. This argument is optional and the default value is `allocator<Type>`.
+*Allocator*<br/>
+The type that represents the stored allocator object that encapsulates details about the vector's allocation and deallocation of memory. This argument is optional and the default value is `allocator<Type>`.
 
 ## Remarks
 
@@ -143,20 +143,20 @@ void assign(InputIterator First, InputIterator Last);
 
 ### Parameters
 
-*First*  
- Position of the first element in the range of elements to be copied.
+*First*<br/>
+Position of the first element in the range of elements to be copied.
 
-*Last*  
- Position of the first element beyond the range of elements to be copied.
+*Last*<br/>
+Position of the first element beyond the range of elements to be copied.
 
-*Count*  
- The number of copies of an element being inserted into the vector.
+*Count*<br/>
+The number of copies of an element being inserted into the vector.
 
-*Val*  
- The value of the element being inserted into the vector.
+*Val*<br/>
+The value of the element being inserted into the vector.
 
-*IList*  
- The initializer_list containing the elements to insert.
+*IList*<br/>
+The initializer_list containing the elements to insert.
 
 ### Remarks
 
@@ -222,8 +222,8 @@ const_reference at(size_type _Pos) const;
 
 ### Parameters
 
-*_Pos*  
- The subscript or position number of the element to reference in the vector.
+*_Pos*<br/>
+The subscript or position number of the element to reference in the vector.
 
 ### Return Value
 
@@ -352,7 +352,7 @@ int main()
 
     cout << "The vector c1 now contains elements:";
     c1_Iter = c1.begin();
- *c1_Iter = 20;
+    *c1_Iter = 20;
     for (; c1_Iter != c1.end(); c1_Iter++)
     {
         cout << " " << *c1_Iter;
@@ -734,7 +734,7 @@ int main()
 
     cout << "The vector c1 now contains elements:";
     c1 ptr = c1.data();
- *c1 ptr = 20;
+    *c1 ptr = 20;
     for (size_t n = c1.size(); 0 < n; --n, c1 ptr++)
     {
         cout << " " << *c1 ptr;
@@ -1425,17 +1425,17 @@ A type **pointer** can be used to modify the value of an element.
 
 int main( )
 {
-   using namespace std;
-   vector<int> v;
-   v.push_back( 11 );
-   v.push_back( 22 );
+    using namespace std;
+    vector<int> v;
+    v.push_back( 11 );
+    v.push_back( 22 );
 
-   vector<int>::pointer ptr = &v[0];
-   cout << *ptr << endl;
-   ptr++;
-   cout << *ptr << endl;
- *ptr = 44;
-   cout << *ptr << endl;
+    vector<int>::pointer ptr = &v[0];
+    cout << *ptr << endl;
+    ptr++;
+    cout << *ptr << endl;
+    *ptr = 44;
+    cout << *ptr << endl;
 }
 ```
 
@@ -1471,7 +1471,7 @@ void push_back(T&& Val);
 ### Parameters
 
 *Val*<br/>
- The value to assign to the element added to the end of the vector.
+The value to assign to the element added to the end of the vector.
 
 ### Example
 
@@ -1635,8 +1635,8 @@ void reserve(size_type count);
 
 ### Parameters
 
-*count*  
- The minimum length of storage to be allocated for the vector.
+*count*<br/>
+The minimum length of storage to be allocated for the vector.
 
 ### Example
 
@@ -1677,11 +1677,11 @@ void resize(size_type Newsize, Type Val);
 
 ### Parameters
 
-*Newsize*  
- The new size of the vector.
+*Newsize*<br/>
+The new size of the vector.
 
-*Val*  
- The initialization value of new elements added to the vector if the new size is larger that the original size. If the value is omitted, the new objects use their default constructor.
+*Val*<br/>
+The initialization value of new elements added to the vector if the new size is larger that the original size. If the value is omitted, the new objects use their default constructor.
 
 ### Remarks
 
@@ -1919,11 +1919,11 @@ friend void swap(
 
 ### Parameters
 
-*right*  
- A vector providing the elements to be swapped, or a vector whose elements are to be exchanged with those of the vector *left*.
+*right*<br/>
+A vector providing the elements to be swapped, or a vector whose elements are to be exchanged with those of the vector *left*.
 
-*left*  
- A vector whose elements are to be exchanged with those of the vector *right*.
+*left*<br/>
+A vector whose elements are to be exchanged with those of the vector *right*.
 
 ### Example
 

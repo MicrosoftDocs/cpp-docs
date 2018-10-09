@@ -13,27 +13,28 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4245
-'conversion' : conversion from 'type1' to 'type2', signed/unsigned mismatch  
-  
- You tried to convert a signed **const** that has a negative value to an `unsigned`.  
-  
- The following sample generates C4245:  
-  
-```  
-// C4245.cpp  
-// compile with: /W4 /c  
-const int i = -1;  
-unsigned int j = i; // C4245  
-  
-const int k = 1;  
-unsigned int l = k; // okay  
-  
-int m = -1;  
-unsigned int n = m; // okay  
-  
-void Test(size_t i) {}  
-  
-int main() {  
-   Test( -19 );   // C4245  
-}  
+
+'conversion' : conversion from 'type1' to 'type2', signed/unsigned mismatch
+
+You tried to convert a signed **const** that has a negative value to an `unsigned`.
+
+The following sample generates C4245:
+
+```
+// C4245.cpp
+// compile with: /W4 /c
+const int i = -1;
+unsigned int j = i; // C4245
+
+const int k = 1;
+unsigned int l = k; // okay
+
+int m = -1;
+unsigned int n = m; // okay
+
+void Test(size_t i) {}
+
+int main() {
+   Test( -19 );   // C4245
+}
 ```

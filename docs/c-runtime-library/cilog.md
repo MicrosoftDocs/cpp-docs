@@ -16,22 +16,26 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _CIlog
-Calculates the natural logarithm of the top value in the stack.  
-  
-## Syntax  
-  
-```  
-void __cdecl _CIlog();  
-```  
-  
-## Remarks  
- This version of the `log` function has a specialized calling convention that the compiler understands. It speeds up the execution because it prevents copies from being generated and helps with register allocation.  
-  
- The resulting value is pushed onto the top of the stack.  
-  
-## Requirements  
- **Platform:** x86  
-  
-## See Also  
- [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [log, logf, log10, log10f](../c-runtime-library/reference/log-logf-log10-log10f.md)
+
+Calculates the natural logarithm of the top value in the stack.
+
+## Syntax
+
+```
+void __cdecl _CIlog();
+```
+
+## Remarks
+
+This version of the `log` function has a specialized calling convention that the compiler understands. It speeds up the execution because it prevents copies from being generated and helps with register allocation.
+
+The resulting value is pushed onto the top of the stack.
+
+## Requirements
+
+**Platform:** x86
+
+## See Also
+
+[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[log, logf, log10, log10f](../c-runtime-library/reference/log-logf-log10-log10f.md)

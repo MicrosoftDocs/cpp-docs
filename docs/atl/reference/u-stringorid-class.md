@@ -62,16 +62,16 @@ LPCTSTR m_lpstr;
 The UINT constructor converts its argument to a resource type compatible with Windows resource-management functions using the MAKEINTRESOURCE macro and the result is stored in the class's single data member, [m_lpstr](#_u_stringorid__m_lpstr).
 
 ```
-_U_STRINGorID(UINT nID);  
+_U_STRINGorID(UINT nID);
 _U_STRINGorID(LPCTSTR lpString);
 ```
 
 ### Parameters
 
-*nID*  
+*nID*<br/>
 A resource ID.
 
-*lpString*  
+*lpString*<br/>
 A resource name.
 
 ### Remarks

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2183
-syntax error: translation unit is empty  
-  
- Preprocessing produced an empty source file.
+
+syntax error: translation unit is empty
+
+Preprocessing produced an empty source file.

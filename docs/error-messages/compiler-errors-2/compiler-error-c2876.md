@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2876
-'class::symbol' : not all overloads are accessible  
-  
- All overloaded forms of a function in a base class must be accessible to the derived class.  
-  
- The following sample generates C2876:  
-  
-```  
-// C2876.cpp  
-// compile with: /c  
-class A {  
-public:     
-   double a(double);  
-private:  
-   int a(int);  
-};  
-  
-class B : public A {  
-   using A::a;   // C2876 one overload is private in base class  
-};  
+
+'class::symbol' : not all overloads are accessible
+
+All overloaded forms of a function in a base class must be accessible to the derived class.
+
+The following sample generates C2876:
+
+```
+// C2876.cpp
+// compile with: /c
+class A {
+public:
+   double a(double);
+private:
+   int a(int);
+};
+
+class B : public A {
+   using A::a;   // C2876 one overload is private in base class
+};
 ```

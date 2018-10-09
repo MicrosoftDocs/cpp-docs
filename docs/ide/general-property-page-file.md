@@ -15,15 +15,17 @@ ms.workload: ["cplusplus"]
 
 When a file is selected in **Solution Explorer**, the **General** property page under the **Configuration Properties** node contains the following properties:
 
-**Exclude From Build**  
-Specifies whether the file should be in the build for the current configuration.
+- **Exclude From Build**
 
-To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.ExcludedFromBuild%2A>.
+   Specifies whether the file should be in the build for the current configuration.
 
-**Tool**  
-The tool that will be used to build this file. See [Specifying Custom Build Tools](../ide/specifying-custom-build-tools.md) for more information.
+   To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.ExcludedFromBuild%2A>.
 
-To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.Tool%2A>.
+- **Tool**
+
+   The tool that will be used to build this file. See [Specifying Custom Build Tools](../ide/specifying-custom-build-tools.md) for more information.
+
+   To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.Tool%2A>.
 
 For information on how to access the **General** property page under the **Configuration Properties** node, see [Working with Project Properties](../ide/working-with-project-properties.md).
 
@@ -31,4 +33,4 @@ For non-Windows projects, see [Linux C++ Property Page Reference](../linux/prop-
 
 ## See also
 
-[Property Pages](../ide/property-pages-visual-cpp.md)  
+[Property Pages](../ide/property-pages-visual-cpp.md)

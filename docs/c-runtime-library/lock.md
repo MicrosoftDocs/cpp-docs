@@ -16,29 +16,34 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _lock
-Acquires a multi-thread lock.  
-  
+
+Acquires a multi-thread lock.
+
 > [!IMPORTANT]
->  This function is obsolete. Beginning in Visual Studio 2015, it is not available in the CRT.  
-  
-## Syntax  
-  
-```  
-void __cdecl _lock  
-   int locknum  
-);  
-```  
-  
-#### Parameters  
- [in] `locknum`  
- The identifier of the lock to acquire.  
-  
-## Remarks  
- If the lock has already been acquired, this method acquires the lock anyway and causes an internal C run-time (CRT) error. If the method cannot acquire a lock, it exits with a fatal error and sets the error code to `_RT_LOCK`.  
-  
-## Requirements  
- **Source:** mlock.c  
-  
-## See Also  
- [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [_unlock](../c-runtime-library/unlock.md)
+>  This function is obsolete. Beginning in Visual Studio 2015, it is not available in the CRT.
+
+## Syntax
+
+```
+void __cdecl _lock
+   int locknum
+);
+```
+
+#### Parameters
+
+*locknum*<br/>
+[in] The identifier of the lock to acquire.
+
+## Remarks
+
+If the lock has already been acquired, this method acquires the lock anyway and causes an internal C run-time (CRT) error. If the method cannot acquire a lock, it exits with a fatal error and sets the error code to `_RT_LOCK`.
+
+## Requirements
+
+**Source:** mlock.c
+
+## See Also
+
+[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[_unlock](../c-runtime-library/unlock.md)

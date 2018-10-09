@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2406
-'identifier' : name undefined in 'context'  
-  
- An undefined identifier is used with the `SIZE`, `LENGTH`, or member-selection (.) operator.
+
+'identifier' : name undefined in 'context'
+
+An undefined identifier is used with the `SIZE`, `LENGTH`, or member-selection (.) operator.

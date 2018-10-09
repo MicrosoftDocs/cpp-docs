@@ -51,13 +51,13 @@ inline bool AtlGetDacl(
 
 ### Parameters
 
-*hObject*  
+*hObject*<br/>
 Handle to the object for which to retrieve the security information.
 
-*ObjectType*  
+*ObjectType*<br/>
 Specifies a value from the [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) enumeration that indicates the type of object identified by the *hObject* parameter.
 
-*pDacl*  
+*pDacl*<br/>
 Pointer to a DACL object which will contain the retrieved security information.
 
 ### Return Value
@@ -85,16 +85,16 @@ inline bool AtlSetDacl(
 
 ### Parameters
 
-*hObject*  
+*hObject*<br/>
 Handle to the object for which to set security information.
 
-*ObjectType*  
+*ObjectType*<br/>
 Specifies a value from the [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) enumeration that indicates the type of object identified by the *hObject* parameter.
 
-*rDacl*  
+*rDacl*<br/>
 The DACL containing the new security information.
 
-*dwInheritanceFlowControl*  
+*dwInheritanceFlowControl*<br/>
 The inheritance flow control. This value can be 0 (the default), PROTECTED_DACL_SECURITY_INFORMATION or UNPROTECTED_DACL_SECURITY_INFORMATION.
 
 ### Return Value
@@ -103,7 +103,7 @@ Returns true on success, false on failure.
 
 ### Remarks
 
-In debug builds, an assertion error will occur if *hObject* is invalid, or if *dwInheritanceFlowControl* is not one of the three permitted values.  
+In debug builds, an assertion error will occur if *hObject* is invalid, or if *dwInheritanceFlowControl* is not one of the three permitted values.
 ### Requirements
 
 **Header:** atlsecurity.h 
@@ -124,13 +124,13 @@ inline bool AtlGetGroupSid(
 
 ### Parameters
 
-*hObject*  
+*hObject*<br/>
 Handle to the object from which to retrieve security information.
 
-*ObjectType*  
+*ObjectType*<br/>
 Specifies a value from the [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) enumeration that indicates the type of object identified by the *hObject* parameter.
 
-*pSid*  
+*pSid*<br/>
 Pointer to a `CSid` object which will contain the new security information.
 
 ### Return Value
@@ -157,13 +157,13 @@ inline bool AtlSetGroupSid(
 
 ### Parameters
 
-*hObject*  
+*hObject*<br/>
 Handle to the object for which to set security information.
 
-*ObjectType*  
+*ObjectType*<br/>
 Specifies a value from the [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) enumeration that indicates the type of object identified by the *hObject* parameter.
 
-*rSid*  
+*rSid*<br/>
 The `CSid` object containing the new security information.
 
 ### Return Value
@@ -190,13 +190,13 @@ inline bool AtlGetOwnerSid(
 
 ### Parameters
 
-*hObject*  
+*hObject*<br/>
 Handle to the object from which to retrieve security information.
 
-*ObjectType*  
+*ObjectType*<br/>
 Specifies a value from the [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) enumeration that indicates the type of object identified by the *hObject* parameter.
 
-*pSid*  
+*pSid*<br/>
 Pointer to a `CSid` object which will contain the new security information.
 
 ### Return Value
@@ -223,13 +223,13 @@ inline bool AtlSetOwnerSid(
 
 ### Parameters
 
-*hObject*  
+*hObject*<br/>
 Handle to the object for which to set security information.
 
-*ObjectType*  
+*ObjectType*<br/>
 Specifies a value from the [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) enumeration that indicates the type of object identified by the *hObject* parameter.
 
-*rSid*  
+*rSid*<br/>
 The `CSid` object containing the new security information.
 
 ### Return Value
@@ -257,16 +257,16 @@ inline bool AtlGetSacl(
 
 ### Parameters
 
-*hObject*  
+*hObject*<br/>
 Handle to the object from which to retrieve the security information.
 
-*ObjectType*  
+*ObjectType*<br/>
 Specifies a value from the [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) enumeration that indicates the type of object identified by the *hObject* parameter.
 
-*pSacl*  
+*pSacl*<br/>
 Pointer to a SACL object which will contain the retrieved security information.
 
-*bRequestNeededPrivileges*  
+*bRequestNeededPrivileges*<br/>
 If true, the function will attempt to enable the SE_SECURITY_NAME privilege, and restore it on completion.
 
 ### Return Value
@@ -299,19 +299,19 @@ inline bool AtlSetSacl(
 
 ### Parameters
 
-*hObject*  
+*hObject*<br/>
 Handle to the object for which to set security information.
 
-*ObjectType*  
+*ObjectType*<br/>
 Specifies a value from the [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) enumeration that indicates the type of object identified by the *hObject* parameter.
 
-*rSacl*  
+*rSacl*<br/>
 The SACL containing the new security information.
 
-*dwInheritanceFlowControl*  
+*dwInheritanceFlowControl*<br/>
 The inheritance flow control. This value can be 0 (the default), PROTECTED_SACL_SECURITY_INFORMATION or UNPROTECTED_SACL_SECURITY_INFORMATION.
 
-*bRequestNeededPrivileges*  
+*bRequestNeededPrivileges*<br/>
 If true, the function will attempt to enable the SE_SECURITY_NAME privilege, and restore it on completion.
 
 ### Return Value
@@ -348,19 +348,19 @@ bool bRequestNeededPrivileges = true) throw(...);
 
 ### Parameters
 
-*pszObjectName*  
+*pszObjectName*<br/>
 Pointer to a null-terminated string that specifies the name of the object from which to retrieve security information.
 
-*ObjectType*  
+*ObjectType*<br/>
 Specifies a value from the [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) enumeration that indicates the type of object identified by the *pszObjectName* parameter.
 
-*pSecurityDescriptor*  
+*pSecurityDescriptor*<br/>
 The object which receives the requested security descriptor.
 
-*requestedInfo*  
+*requestedInfo*<br/>
 A set of [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) bit flags that indicate the type of security information to retrieve. This parameter can be a combination of the following values.
 
-*bRequestNeededPrivileges*  
+*bRequestNeededPrivileges*<br/>
 If true, the function will attempt to enable the SE_SECURITY_NAME privilege, and restore it on completion.
 
 ### Return Value

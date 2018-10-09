@@ -248,9 +248,9 @@ The value of a member, if any.
 
 ### Remarks
 
-*i* -> is equivalent to (\* *i*). *m*
+`i->m` is equivalent to `(*i).m`
 
-The operator returns **&\*\*this**.
+The operator returns `&*this`.
 
 ### Example
 

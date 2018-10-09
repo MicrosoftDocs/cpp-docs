@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2295
-escaped 'character' : is illegal in macro definition  
-  
- A macro definition cannot contain an escape sequence with the specified character.
+
+escaped 'character' : is illegal in macro definition
+
+A macro definition cannot contain an escape sequence with the specified character.

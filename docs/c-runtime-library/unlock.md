@@ -16,26 +16,30 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # _unlock
-Releases a multi-thread lock.  
-  
+
+Releases a multi-thread lock.
+
 > [!IMPORTANT]
->  This function is obsolete. Beginning in Visual Studio 2015, it is not available in the CRT.  
-  
-## Syntax  
-  
-```  
-void __cdecl _unlock(  
-   int locknum  
-);  
-```  
-  
-#### Parameters  
- [in] `locknum`  
- The identifier of the lock to release.  
-  
-## Requirements  
- **Source:** mlock.c  
-  
-## See Also  
- [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [_lock](../c-runtime-library/lock.md)
+>  This function is obsolete. Beginning in Visual Studio 2015, it is not available in the CRT.
+
+## Syntax
+
+```
+void __cdecl _unlock(
+   int locknum
+);
+```
+
+#### Parameters
+
+*locknum*<br/>
+[in] The identifier of the lock to release.
+
+## Requirements
+
+**Source:** mlock.c
+
+## See Also
+
+[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[_lock](../c-runtime-library/lock.md)

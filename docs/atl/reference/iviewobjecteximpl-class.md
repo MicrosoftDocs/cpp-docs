@@ -22,14 +22,14 @@ This class implements `IUnknown` and provides default implementations of the [IV
 ## Syntax
 
 ```
-template<class T>  
+template<class T>
 class ATL_NO_VTABLE IViewObjectExImpl 
    : public IViewObjectEx
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IViewObjectExImpl`.
 
 ## Members
@@ -282,7 +282,7 @@ HRESULT CloseHandle(HANDLE hHandle);
 
 ### Parameters
 
-*hHandle*  
+*hHandle*<br/>
 The handle to be closed.
 
 ### Return Value
@@ -309,10 +309,10 @@ HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
 
 ### Parameters
 
-*dwParam*  
+*dwParam*<br/>
 The user parameter.
 
-*hObject*  
+*hObject*<br/>
 The handle that has become signaled.
 
 ### Return Value
@@ -331,8 +331,8 @@ The following code shows a simple implementation of `IWorkerThreadClient::Execut
 
 ## See Also
 
-[CComControl Class](../../atl/reference/ccomcontrol-class.md)   
-[ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)   
-[Tutorial](../../atl/active-template-library-atl-tutorial.md)   
-[Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)   
+[CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
+[ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)<br/>
+[Tutorial](../../atl/active-template-library-atl-tutorial.md)<br/>
+[Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

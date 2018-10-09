@@ -13,34 +13,38 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __writecr8
-**Microsoft Specific**  
-  
- Writes the value `Data` to the CR8 register.  
-  
-## Syntax  
-  
-```  
-void writecr8(   
-   unsigned __int64 Data   
-);  
-```  
-  
-#### Parameters  
- [in] `Data`  
- The value to write to the CR8 register.  
-  
-## Requirements  
-  
-|Intrinsic|Architecture|  
-|---------------|------------------|  
-|`__writecr8`|x64|  
-  
- **Header file** \<intrin.h>  
-  
-## Remarks  
- This intrinsic is only available in kernel mode, and the routine is only available as an intrinsic.  
-  
-**END Microsoft Specific**  
-  
-## See Also  
- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+
+**Microsoft Specific**
+
+Writes the value `Data` to the CR8 register.
+
+## Syntax
+
+```
+void writecr8( 
+   unsigned __int64 Data 
+);
+```
+
+#### Parameters
+
+*Data*<br/>
+[in] The value to write to the CR8 register.
+
+## Requirements
+
+|Intrinsic|Architecture|
+|---------------|------------------|
+|`__writecr8`|x64|
+
+**Header file** \<intrin.h>
+
+## Remarks
+
+This intrinsic is only available in kernel mode, and the routine is only available as an intrinsic.
+
+**END Microsoft Specific**
+
+## See Also
+
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

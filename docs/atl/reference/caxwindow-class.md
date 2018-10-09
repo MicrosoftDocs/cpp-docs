@@ -73,10 +73,10 @@ HRESULT AttachControl(
 
 ### Parameters
 
-*pControl*  
+*pControl*<br/>
 [in] A pointer to the `IUnknown` of the control.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 [out] A pointer to the `IUnknown` of the host (the `AxWin` object).
 
 ### Return Value
@@ -97,7 +97,7 @@ CAxWindow(HWND hWnd = NULL);
 
 ### Parameters
 
-*hWnd*  
+*hWnd*<br/>
 A handle to an existing window object.
 
 ##  <a name="createcontrol"></a>  CAxWindow::CreateControl
@@ -118,7 +118,7 @@ HRESULT CreateControl(
 
 ### Parameters
 
-*lpszName*  
+*lpszName*<br/>
 A pointer to a string to create the control. Must be formatted in one of the following ways:
 
 - A ProgID such as "MSCAL.Calendar.7"
@@ -134,13 +134,13 @@ A pointer to a string to create the control. Must be formatted in one of the fol
    > [!NOTE]
    > "MSHTML:" must precede the HTML fragment so that it is designated as being an MSHTML stream. Only the ProgID and CLSID are supported in Windows Mobile platforms. Windows CE embedded platforms, other than Windows Mobile with support for CE IE support all types including ProgID, CLSID, URL, reference to active document, and fragment of HTML.
 
-*pStream*  
+*pStream*<br/>
 [in] A pointer to a stream that is used to initialize the properties of the control. Can be NULL.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 [out] The address of a pointer that will receive the `IUnknown` of the container. Can be NULL.
 
-*dwResID*  
+*dwResID*<br/>
 The resource ID of an HTML resource. The WebBrowser control will be created and loaded with the specified resource.
 
 ### Return Value
@@ -185,7 +185,7 @@ HRESULT CreateControlEx(
 
 ### Parameters
 
-*lpszName*  
+*lpszName*<br/>
 A pointer to a string to create the control. Must be formatted in one of the following ways:
 
 - A ProgID such as "MSCAL.Calendar.7"
@@ -201,22 +201,22 @@ A pointer to a string to create the control. Must be formatted in one of the fol
    > [!NOTE]
    > "MSHTML:" must precede the HTML fragment so that it is designated as being an MSHTML stream. Only the ProgID and CLSID are supported in Windows Mobile platforms. Windows CE embedded platforms, other than Windows Mobile with support for CE IE support all types including ProgID, CLSID, URL, reference to active document, and fragment of HTML.
 
-*pStream*  
+*pStream*<br/>
 [in] A pointer to a stream that is used to initialize the properties of the control. Can be NULL.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 [out] The address of a pointer that will receive the `IUnknown` of the container. Can be NULL.
 
-*ppUnkControl*  
+*ppUnkControl*<br/>
 [out] The address of a pointer that will receive the `IUnknown` of the control. Can be NULL.
 
-*iidSink*  
+*iidSink*<br/>
 [in] The interface identifier of an outgoing interface on the contained object. Can be IID_NULL.
 
-*punkSink*  
+*punkSink*<br/>
 [in] A pointer to the `IUnknown` interface of the sink object to be connected to the connection point on the contained object specified by *iidSink*.
 
-*dwResID*  
+*dwResID*<br/>
 [in] The resource ID of an HTML resource. The WebBrowser control will be created and loaded with the specified resource.
 
 ### Return Value
@@ -255,7 +255,7 @@ CAxWindow<TBase>& operator=(HWND hWnd);
 
 ### Parameters
 
-*hWnd*  
+*hWnd*<br/>
 A handle to an existing window.
 
 ### Return Value
@@ -274,13 +274,13 @@ HRESULT QueryControl(Q** ppUnk);
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] Specifies the IID of the control's interface.
 
-*ppUnk*  
+*ppUnk*<br/>
 [out] A pointer to the interface of the control. In the template version of this method, there is no need for a reference ID as long as a typed interface with an associated UUID is passed.
 
-*Q*  
+*Q*<br/>
 [in] The interface that is being queried for.
 
 ### Return Value
@@ -299,13 +299,13 @@ HRESULT QueryHost(Q** ppUnk);
 
 ### Parameters
 
-*iid*  
+*iid*<br/>
 [in] Specifies the IID of the control's interface.
 
-*ppUnk*  
+*ppUnk*<br/>
 [out] A pointer to the interface on the host. In the template version of this method, there is no need for a reference ID as long as a typed interface with an associated UUID is passed.
 
-*Q*  
+*Q*<br/>
 [in] The interface that is being queried for.
 
 ### Return Value
@@ -326,7 +326,7 @@ HRESULT SetExternalDispatch(IDispatch* pDisp);
 
 ### Parameters
 
-*pDisp*  
+*pDisp*<br/>
 [in] A pointer to an `IDispatch` interface.
 
 ### Return Value
@@ -343,7 +343,7 @@ HRESULT SetExternalUIHandler(IDocHostUIHandlerDispatch* pUIHandler);
 
 ### Parameters
 
-*pUIHandler*  
+*pUIHandler*<br/>
 [in] A pointer to an `IDocHostUIHandlerDispatch` interface.
 
 ### Return Value
@@ -356,9 +356,9 @@ The external `IDocHostUIHandlerDispatch` interface is used by controls that quer
 
 ## See Also
 
-[ATLCON Sample](../../visual-cpp-samples.md)   
-[CWindow Class](../../atl/reference/cwindow-class.md)   
-[Composite Control Fundamentals](../../atl/atl-composite-control-fundamentals.md)   
-[Class Overview](../../atl/atl-class-overview.md)   
+[ATLCON Sample](../../visual-cpp-samples.md)<br/>
+[CWindow Class](../../atl/reference/cwindow-class.md)<br/>
+[Composite Control Fundamentals](../../atl/atl-composite-control-fundamentals.md)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [Control Containment FAQ](../../atl/atl-control-containment-faq.md)
 

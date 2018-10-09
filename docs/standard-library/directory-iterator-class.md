@@ -82,7 +82,7 @@ directory_iterator(directory_iterator&&) noexcept = default;
 The stored file name path.
 
 *ec*<br/>
-The status error code. 
+The status error code.
 
 *directory_iterator*<br/>
 The stored object.

@@ -12,18 +12,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Field Exchange: Using RFX
+
 This topic explains what you do to use RFX in relation to what the framework does.  
   
 > [!NOTE]
 >  This topic applies to classes derived from [CRecordset](../../mfc/reference/crecordset-class.md) in which bulk row fetching has not been implemented. If you are using bulk row fetching, bulk record field exchange (Bulk RFX) is implemented. Bulk RFX is similar to RFX. To understand the differences, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
- The following topics contain related information:  
+The following topics contain related information:  
   
--   [Record Field Exchange: Working with the Wizard Code](../../data/odbc/record-field-exchange-working-with-the-wizard-code.md) introduces the main components of RFX and explains the code that the MFC Application Wizard and **Add Class** (as described in [Adding an MFC ODBC Consumer](../../mfc/reference/adding-an-mfc-odbc-consumer.md)) write to support RFX and how you might want to modify the wizard code.  
+- [Record Field Exchange: Working with the Wizard Code](../../data/odbc/record-field-exchange-working-with-the-wizard-code.md) introduces the main components of RFX and explains the code that the MFC Application Wizard and **Add Class** (as described in [Adding an MFC ODBC Consumer](../../mfc/reference/adding-an-mfc-odbc-consumer.md)) write to support RFX and how you might want to modify the wizard code.  
   
--   [Record Field Exchange: Using the RFX Functions](../../data/odbc/record-field-exchange-using-the-rfx-functions.md) explains writing calls to the RFX functions in your `DoFieldExchange` override.  
+- [Record Field Exchange: Using the RFX Functions](../../data/odbc/record-field-exchange-using-the-rfx-functions.md) explains writing calls to the RFX functions in your `DoFieldExchange` override.  
   
- The following table shows your role in relation to what the framework does for you.  
+The following table shows your role in relation to what the framework does for you.  
   
 ### Using RFX: You and the Framework  
   
@@ -40,10 +41,11 @@ This topic explains what you do to use RFX in relation to what the framework doe
 |Add, update, and delete records.|Calls `DoFieldExchange` to transfer data to the data source.|  
   
 ## See Also  
- [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)   
- [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md)   
- [Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)   
- [CRecordset Class](../../mfc/reference/crecordset-class.md)   
- [CFieldExchange Class](../../mfc/reference/cfieldexchange-class.md)   
- [Macros, Global Functions, and Global Variables](../../mfc/reference/mfc-macros-and-globals.md)
+
+[Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)<br/>
+[Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md)<br/>
+[Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)<br/>
+[CRecordset Class](../../mfc/reference/crecordset-class.md)<br/>
+[CFieldExchange Class](../../mfc/reference/cfieldexchange-class.md)<br/>
+[Macros, Global Functions, and Global Variables](../../mfc/reference/mfc-macros-and-globals.md)
 

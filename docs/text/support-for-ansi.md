@@ -12,9 +12,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Support for ANSI
-Most MFC classes and methods support the ANSI character set, although the MFC framework as a whole is gradually evolving toward supporting only the Unicode character set. Because of the ongoing enhancements in Windows Vista and Windows Common Controls version 6.1, support for several ANSI classes and methods is deprecated.  For more information, see [Deprecated ANSI APIs](../mfc/deprecated-ansi-apis.md) and [Support for Unicode](../text/support-for-unicode.md).  
-  
-## See Also  
- [Support for Unicode](../text/support-for-unicode.md)   
- [Deprecated ANSI APIs](../mfc/deprecated-ansi-apis.md)   
- [Shell And Common Controls Versions](https://msdn.microsoft.com/library/windows/desktop/bb776779)
+
+Most MFC classes and methods support the ANSI character set, although the MFC framework as a whole is gradually evolving toward supporting only the Unicode character set. Because of the ongoing enhancements in Windows Vista and Windows Common Controls version 6.1, support for several ANSI classes and methods is deprecated.  For more information, see [Deprecated ANSI APIs](../mfc/deprecated-ansi-apis.md) and [Support for Unicode](../text/support-for-unicode.md).
+
+## See Also
+
+[Support for Unicode](../text/support-for-unicode.md)<br/>
+[Deprecated ANSI APIs](../mfc/deprecated-ansi-apis.md)<br/>
+[Shell And Common Controls Versions](https://msdn.microsoft.com/library/windows/desktop/bb776779)

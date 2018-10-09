@@ -19,13 +19,13 @@ This class provides a basis for smart pointer classes using COM-based memory rou
 ## Syntax
 
 ```
-template <class T>  
+template <class T>
 class CComPtrBase
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The object type to be referenced by the smart pointer.
 
 ## Members
@@ -89,13 +89,13 @@ HRESULT Advise(
 
 ### Parameters
 
-*pUnk*  
+*pUnk*<br/>
 A pointer to the client's `IUnknown`.
 
-*iid*  
+*iid*<br/>
 The GUID of the connection point. Typically, this is the same as the outgoing interface managed by the connection point.
 
-*pdw*  
+*pdw*<br/>
 A pointer to the cookie that uniquely identifies the connection.
 
 ### Return Value
@@ -116,7 +116,7 @@ void Attach(T* p2) throw();
 
 ### Parameters
 
-*p2*  
+*p2*<br/>
 The `CComPtrBase` object will take ownership of this pointer.
 
 ### Remarks
@@ -153,16 +153,16 @@ HRESULT CoCreateInstance(
 
 ### Parameters
 
-*szProgID*  
+*szProgID*<br/>
 Pointer to a ProgID, used to recover the CLSID.
 
-*pUnkOuter*  
+*pUnkOuter*<br/>
 If NULL, indicates that the object is not being created as part of an aggregate. If non- NULL, is a pointer to the aggregate object's `IUnknown` interface (the controlling `IUnknown`).
 
-*dwClsContext*  
+*dwClsContext*<br/>
 Context in which the code that manages the newly created object will run.
 
-*rclsid*  
+*rclsid*<br/>
 CLSID associated with the data and code that will be used to create the object.
 
 ### Return Value
@@ -185,7 +185,7 @@ HRESULT CopyTo(T** ppT) throw();
 
 ### Parameters
 
-*ppT*  
+*ppT*<br/>
 Address of the variable which will receive the `CComPtrBase` pointer.
 
 ### Return Value
@@ -224,7 +224,7 @@ bool IsEqualObject(IUnknown* pOther) throw();
 
 ### Parameters
 
-*pOther*  
+*pOther*<br/>
 The `IUnknown *` to compare.
 
 ### Return Value
@@ -279,7 +279,7 @@ bool operator== (T* pT) const throw();
 
 ### Parameters
 
-*pT*  
+*pT*<br/>
 A pointer to an object.
 
 ### Return Value
@@ -312,7 +312,7 @@ bool operator<(T* pT) const throw();
 
 ### Parameters
 
-*pT*  
+*pT*<br/>
 A pointer to an object.
 
 ### Return Value
@@ -323,7 +323,7 @@ Returns true if the pointer managed by current object is less than the pointer t
 
 The cast operator.
 
-```  
+```
 operator T*() const throw();
 ```
 
@@ -354,10 +354,10 @@ template <class Q> HRESULT QueryInterface(Q
 
 ### Parameters
 
-*Q*  
+*Q*<br/>
 The object type whose interface pointer is required.
 
-*pp*  
+*pp*<br/>
 Address of output variable that receives the requested interface pointer.
 
 ### Return Value
@@ -392,7 +392,7 @@ HRESULT SetSite(IUnknown* punkParent) throw();
 
 ### Parameters
 
-*punkParent*  
+*punkParent*<br/>
 A pointer to the `IUnknown` interface of the parent.
 
 ### Return Value

@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2425
-'token' :non-constant expression in 'context'  
-  
- The token forms part of a non-constant expression in this context.  
-  
- To fix this issue, replace the token with a constant literal or with a calculation.  
-  
- The following sample generates C2425:  
-  
-```  
-// C2425.cpp  
-// processor: x86  
-int main() {  
-   int i = 3;  
-   __asm {  
-      mov eax, [ebp - i]   // C2425  
-      mov eax, [ebp - 3]   // OK  
-   }  
-}  
+
+'token' :non-constant expression in 'context'
+
+The token forms part of a non-constant expression in this context.
+
+To fix this issue, replace the token with a constant literal or with a calculation.
+
+The following sample generates C2425:
+
+```
+// C2425.cpp
+// processor: x86
+int main() {
+   int i = 3;
+   __asm {
+      mov eax, [ebp - i]   // C2425
+      mov eax, [ebp - 3]   // OK
+   }
+}
 ```

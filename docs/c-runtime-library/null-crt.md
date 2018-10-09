@@ -13,7 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # NULL (CRT)
-**NULL** is the null-pointer value used with many pointer operations and functions. It is equivalent to 0. **NULL** is defined in the following header files: CRTDBG.H, LOCALE.H, STDDEF.H, STDIO.H, STDLIB.H, STRING.H, TCHAR.H, TIME.H and WCHAR.H.  
-  
-## See Also  
- [Global Constants](../c-runtime-library/global-constants.md)
+
+**NULL** is the null-pointer value used with many pointer operations and functions. It is equivalent to 0. **NULL** is defined in the following header files: CRTDBG.H, LOCALE.H, STDDEF.H, STDIO.H, STDLIB.H, STRING.H, TCHAR.H, TIME.H and WCHAR.H.
+
+## See Also
+
+[Global Constants](../c-runtime-library/global-constants.md)

@@ -15,19 +15,19 @@ ms.workload: ["cplusplus"]
 
 The visual manager is an object that controls the appearance of a whole application. It acts as a single class where you can put all the drawing code for your application. The MFC Library includes several visual managers. You can also create your own visual manager if you want to create a custom view for your application. The following images show the same application when different visual managers are enabled:
 
- ![MyApp as rendered by CMFCVisualManagerWindows](../mfc/media/vmwindows.png "vmwindows")
+![MyApp as rendered by CMFCVisualManagerWindows](../mfc/media/vmwindows.png "vmwindows")
 MyApp that uses the CMFCVisualManagerWindows visual manager
 
- ![MyApp as rendered by CMFCVisualManagerVS2005](../mfc/media/vmvs2005.png "vmvs2005")
+![MyApp as rendered by CMFCVisualManagerVS2005](../mfc/media/vmvs2005.png "vmvs2005")
 MyApp that uses the CMFCVisualManagerVS2005 visual manager
 
- ![MyApp as rendered by CMFCVisualManagerOfficeXP](../mfc/media/vmofficexp.png "vmofficexp")
+![MyApp as rendered by CMFCVisualManagerOfficeXP](../mfc/media/vmofficexp.png "vmofficexp")
 MyApp that uses the CMFCVisualManagerOfficeXP visual manager
 
- ![MyApp as rendered by CMFCVisualManagerOffice2003](../mfc/media/vmoffice2003.png "vmoffice2003")
+![MyApp as rendered by CMFCVisualManagerOffice2003](../mfc/media/vmoffice2003.png "vmoffice2003")
 MyApp that uses the CMFCVisualManagerOffice2003 visual manager
 
- ![MyApp as rendered by CMFCVisualManagerOffice2007](../mfc/media/msoffice2007.png "msoffice2007")
+![MyApp as rendered by CMFCVisualManagerOffice2007](../mfc/media/msoffice2007.png "msoffice2007")
 MyApp that uses the CMFCVisualManagerOffice2007 visual manager
 
 By default, the visual manager maintains the drawing code for several GUI elements. To provide custom UI elements, you need to override the related drawing methods of the visual manager. For the list of these methods, see [CMFCVisualManager Class](../mfc/reference/cmfcvisualmanager-class.md). The methods that you can override to provide a custom appearance are all the methods that start with `OnDraw`.
@@ -54,7 +54,7 @@ void CMyApp::SetSkin (int index)
 
     switch (index)
     {
-    case DEFAULT_STYLE: 
+    case DEFAULT_STYLE:
         // The following statement creates a new CMFCVisualManager
         CMFCVisualManager::GetInstance();
         break;
@@ -74,5 +74,5 @@ void CMyApp::SetSkin (int index)
 
 ## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)  
-[CMFCVisualManager Class](../mfc/reference/cmfcvisualmanager-class.md)  
+[User Interface Elements](../mfc/user-interface-elements-mfc.md)<br/>
+[CMFCVisualManager Class](../mfc/reference/cmfcvisualmanager-class.md)

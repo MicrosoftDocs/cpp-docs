@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1103
-fatal error importing progid: 'message'  
-  
- The compiler detected a problem importing a type library.  For example, you cannot specify a type library with progid and also specify `no_registry`.  
-  
- For more information, see [#import Directive](../../preprocessor/hash-import-directive-cpp.md).  
-  
- The following sample will generate C1103:  
-  
-```  
-// C1103.cpp  
-#import "progid:a.b.id.1.5" no_registry auto_search   // C1103  
+
+fatal error importing progid: 'message'
+
+The compiler detected a problem importing a type library.  For example, you cannot specify a type library with progid and also specify `no_registry`.
+
+For more information, see [#import Directive](../../preprocessor/hash-import-directive-cpp.md).
+
+The following sample will generate C1103:
+
+```
+// C1103.cpp
+#import "progid:a.b.id.1.5" no_registry auto_search   // C1103
 ```

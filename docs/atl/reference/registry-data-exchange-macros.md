@@ -73,19 +73,19 @@ RDX_BINARY(
 
 ### Parameters
 
-*rootkey*  
+*rootkey*<br/>
 The registry key root.
 
-*subkey*  
+*subkey*<br/>
 The registry subkey.
 
-*valuename*  
+*valuename*<br/>
 The registry key.
 
-*member*  
+*member*<br/>
 The member variable to associate with the specified registry entry.
 
-*member_size*  
+*member_size*<br/>
 The size, in bytes, of the member variable.
 
 ### Remarks
@@ -107,19 +107,19 @@ RDX_CSTRING_TEXT(
 
 ### Parameters
 
-*rootkey*  
+*rootkey*<br/>
 The registry key root.
 
-*subkey*  
+*subkey*<br/>
 The registry subkey.
 
-*valuename*  
+*valuename*<br/>
 The registry key.
 
-*member*  
+*member*<br/>
 The member variable to associate with the specified registry entry.
 
-*member_size*  
+*member_size*<br/>
 The size, in bytes, of the member variable.
 
 ### Remarks
@@ -141,19 +141,19 @@ RDX_DWORD(
 
 ### Parameters
 
-*rootkey*  
+*rootkey*<br/>
 The registry key root.
 
-*subkey*  
+*subkey*<br/>
 The registry subkey.
 
-*valuename*  
+*valuename*<br/>
 The registry key.
 
-*member*  
+*member*<br/>
 The member variable to associate with the specified registry entry.
 
-*member_size*  
+*member_size*<br/>
 The size, in bytes, of the member variable.
 
 ### Remarks
@@ -175,19 +175,19 @@ RDX_TEXT(
 
 ### Parameters
 
-*rootkey*  
+*rootkey*<br/>
 The registry key root.
 
-*subkey*  
+*subkey*<br/>
 The registry subkey.
 
-*valuename*  
+*valuename*<br/>
 The registry key.
 
-*member*  
+*member*<br/>
 The member variable to associate with the specified registry entry.
 
-*member_size*  
+*member_size*<br/>
 The size, in bytes, of the member variable.
 
 ### Remarks
@@ -196,6 +196,6 @@ This macro is used in conjunction with the BEGIN_RDX_MAP and END_RDX_MAP macros 
 
 ## See Also
 
-[Macros](../../atl/reference/atl-macros.md)   
+[Macros](../../atl/reference/atl-macros.md)<br/>
 [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange)
 

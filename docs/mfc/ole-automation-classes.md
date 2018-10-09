@@ -13,14 +13,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # OLE Automation Classes
-These classes support automation clients (applications that control other applications). Automation servers (applications that can be controlled by other applications) are supported through [dispatch maps](../mfc/reference/dispatch-maps.md).  
-  
- [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md)  
- Used to call automation servers from your automation client. When adding a class, this class is used to create type-safe classes for automation servers that provide a type library.  
-  
- [COleDispatchException](../mfc/reference/coledispatchexception-class.md)  
- An exception resulting from an error during OLE automation. Automation exceptions are thrown by automation servers and caught by automation clients.  
-  
-## See Also  
- [Class Overview](../mfc/class-library-overview.md)
+
+These classes support automation clients (applications that control other applications). Automation servers (applications that can be controlled by other applications) are supported through [dispatch maps](../mfc/reference/dispatch-maps.md).
+
+[COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md)<br/>
+Used to call automation servers from your automation client. When adding a class, this class is used to create type-safe classes for automation servers that provide a type library.
+
+[COleDispatchException](../mfc/reference/coledispatchexception-class.md)<br/>
+An exception resulting from an error during OLE automation. Automation exceptions are thrown by automation servers and caught by automation clients.
+
+## See Also
+
+[Class Overview](../mfc/class-library-overview.md)
 

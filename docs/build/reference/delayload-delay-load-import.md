@@ -31,9 +31,9 @@ The [/DELAY](../../build/reference/delay-delay-load-import-settings.md) option s
 
 1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-2. In the **Linker** folder, select the **Input** property page.
+1. In the **Linker** folder, select the **Input** property page.
 
-3. Modify the **Delay Loaded DLLs** property.
+1. Modify the **Delay Loaded DLLs** property.
 
 ### To set this linker option programmatically
 
@@ -41,5 +41,5 @@ The [/DELAY](../../build/reference/delay-delay-load-import-settings.md) option s
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)   
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

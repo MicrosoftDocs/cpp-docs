@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CAccessorBase Class
+
 All accessors in the OLE DB Templates derive from this class. `CAccessorBase` allows one rowset to manage multiple accessors. It also provides binding for both parameters and output columns.  
   
 ## Syntax
@@ -34,9 +35,11 @@ All accessors in the OLE DB Templates derive from this class. `CAccessorBase` al
 |[ReleaseAccessors](#release)|Releases the accessors.|  
 
 ## Requirements  
- **Header:** atldbcli.h  
+
+**Header:** atldbcli.h  
 
 ## <a name="close"></a> CAccessorBase::Close
+
 Closes the accessors.  
   
 ### Syntax  
@@ -46,9 +49,11 @@ void Close();
 ```  
   
 ### Remarks  
- You must call [ReleaseAccessors](../../data/oledb/caccessorbase-releaseaccessors.md) first.  
+
+You must call [ReleaseAccessors](../../data/oledb/caccessorbase-releaseaccessors.md) first.  
 
 ## <a name="geth"></a> CAccessorBase::GetHAccessor
+
 Retrieves the accessor handle of a specified accessor.  
   
 ### Syntax  
@@ -58,13 +63,16 @@ HACCESSOR GetHAccessor(ULONG nAccessor) const;
 ```  
   
 #### Parameters  
- *nAccessor*  
- [in] The zero-offset number for the accessor.  
+
+*nAccessor*<br/>
+[in] The zero-offset number for the accessor.  
   
 ### Return Value  
- The accessor handle.  
+
+The accessor handle.  
 
 ## <a name="getnum"></a> CAccessorBase::GetNumAccessors
+
 Retrieves the number of accessors created by the class.  
   
 ### Syntax  
@@ -74,9 +82,11 @@ ULONG GetNumAccessors() const;
 ```  
   
 ### Return Value  
- The number of accessors created by the class.  
+
+The number of accessors created by the class.  
 
 ## <a name="isauto"></a> CAccessorBase::IsAutoAccessor
+
 Returns true if data is automatically retrieved for the accessor during a Move operation.  
   
 ### Syntax  
@@ -86,13 +96,16 @@ bool IsAutoAccessor(ULONG nAccessor) const;
 ```  
   
 #### Parameters  
- *nAccessor*  
- [in] The zero-offset number for the accessor.  
+
+*nAccessor*<br/>
+[in] The zero-offset number for the accessor.  
   
 ### Return Value  
- Returns **true** if the accessor is an autoaccessor. Otherwise, it returns **false**.  
+
+Returns **true** if the accessor is an autoaccessor. Otherwise, it returns **false**.  
 
 ## <a name="release"></a> CAccessorBase::ReleaseAccessors
+
 Releases the accessors created by the class.  
   
 ### Syntax  
@@ -102,16 +115,20 @@ HRESULT ReleaseAccessors(IUnknown* pUnk);
 ```  
   
 #### Parameters  
- *pUnk*  
- [in] A pointer to an `IUnknown` interface for the COM object for which the accessors have been created.  
+
+*pUnk*<br/>
+[in] A pointer to an `IUnknown` interface for the COM object for which the accessors have been created.  
   
 ### Return Value  
- A standard HRESULT.  
+
+A standard HRESULT.  
   
 ### Remarks  
- Called from [CAccessorRowset::Close](../../data/oledb/caccessorrowset-close.md). 
+
+Called from [CAccessorRowset::Close](../../data/oledb/caccessorrowset-close.md). 
   
 ## See Also  
- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)   
- [CAccessorBase Class](../../data/oledb/caccessorbase-class.md)
+
+[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
+[CAccessorBase Class](../../data/oledb/caccessorbase-class.md)
