@@ -13,28 +13,31 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3467
-'type' : this type has already been forwarded  
-  
- The compiler found more than one forward type declaration for the same type. Only one declaration per type is allowed.  
-  
- For more information, see [Type Forwarding (C++/CLI)](../../windows/type-forwarding-cpp-cli.md).  
-  
-## Example  
- The following sample creates a component.  
-  
-```  
-// C3467.cpp  
-// compile with: /LD /clr  
-public ref class R {};  
-```  
-  
-## Example  
- The following sample generates C3467.  
-  
-```  
-// C3467_b.cpp  
-// compile with: /clr /c  
-#using "C3467.dll"  
-[ assembly:TypeForwardedTo(R::typeid) ];  
-[ assembly:TypeForwardedTo(R::typeid) ];   // C3467  
+
+'type' : this type has already been forwarded
+
+The compiler found more than one forward type declaration for the same type. Only one declaration per type is allowed.
+
+For more information, see [Type Forwarding (C++/CLI)](../../windows/type-forwarding-cpp-cli.md).
+
+## Example
+
+The following sample creates a component.
+
+```
+// C3467.cpp
+// compile with: /LD /clr
+public ref class R {};
+```
+
+## Example
+
+The following sample generates C3467.
+
+```
+// C3467_b.cpp
+// compile with: /clr /c
+#using "C3467.dll"
+[ assembly:TypeForwardedTo(R::typeid) ];
+[ assembly:TypeForwardedTo(R::typeid) ];   // C3467
 ```

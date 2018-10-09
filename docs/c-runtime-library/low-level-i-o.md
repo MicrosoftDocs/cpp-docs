@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 
 These functions invoke the operating system directly for lower-level operation than that provided by stream I/O. Low-level input and output calls do not buffer or format data.
 
- Low-level routines can access the standard streams opened at program startup using the following predefined file descriptors.
+Low-level routines can access the standard streams opened at program startup using the following predefined file descriptors.
 
 |Stream|File Descriptor|
 |------------|---------------------|
@@ -24,7 +24,7 @@ These functions invoke the operating system directly for lower-level operation t
 |**stdout**|1|
 |**stderr**|2|
 
- Low-level I/O routines set the [errno](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) global variable when an error occurs. You must include STDIO.H when you use low-level functions only if your program requires a constant that is defined in STDIO.H, such as the end-of-file indicator (**EOF**).
+Low-level I/O routines set the [errno](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) global variable when an error occurs. You must include STDIO.H when you use low-level functions only if your program requires a constant that is defined in STDIO.H, such as the end-of-file indicator (**EOF**).
 
 ## Low-Level I/O Functions
 
@@ -44,10 +44,10 @@ These functions invoke the operating system directly for lower-level operation t
 |[_umask](../c-runtime-library/reference/umask.md), [_umask_s](../c-runtime-library/reference/umask-s.md)|Set file-permission mask|
 |[_write](../c-runtime-library/reference/write.md)|Write data to file|
 
- **_dup** and **_dup2** are typically used to associate the predefined file descriptors with different files.
+**_dup** and **_dup2** are typically used to associate the predefined file descriptors with different files.
 
 ## See Also
 
 [Input and Output](../c-runtime-library/input-and-output.md)<br/>
- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
- [System Calls](../c-runtime-library/system-calls.md)<br/>
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[System Calls](../c-runtime-library/system-calls.md)<br/>

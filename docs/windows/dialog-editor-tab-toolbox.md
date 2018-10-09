@@ -83,10 +83,10 @@ Win32
 
 ## See Also
 
-[Controls](../mfc/controls-mfc.md)  
-[Control Classes](../mfc/control-classes.md)  
-[Dialog Box Classes](../mfc/dialog-box-classes.md)  
-[Scroll-Bar Styles](../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles)  
-[Rich Edit Control Examples](../mfc/rich-edit-control-examples.md)  
-[Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)  
+[Controls](../mfc/controls-mfc.md)<br/>
+[Control Classes](../mfc/control-classes.md)<br/>
+[Dialog Box Classes](../mfc/dialog-box-classes.md)<br/>
+[Scroll-Bar Styles](../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles)<br/>
+[Rich Edit Control Examples](../mfc/rich-edit-control-examples.md)<br/>
+[Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>
 [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)

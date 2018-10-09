@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3734
-'class': a managed or WinRT class cannot be a coclass  
-  
- The [coclass](../../windows/coclass.md) attribute cannot be used with managed or WinRT classes.  
-  
- The following sample generates C3734 and shows how to fix it:  
-  
-```  
-// C3734.cpp  
-// compile with: /clr /c  
-[module(name="x")];  
-  
-[coclass]  
-ref class CMyClass {   // C3734 remove the ref keyword to resolve  
-};  
-```  
+
+'class': a managed or WinRT class cannot be a coclass
+
+The [coclass](../../windows/coclass.md) attribute cannot be used with managed or WinRT classes.
+
+The following sample generates C3734 and shows how to fix it:
+
+```
+// C3734.cpp
+// compile with: /clr /c
+[module(name="x")];
+
+[coclass]
+ref class CMyClass {   // C3734 remove the ref keyword to resolve
+};
+```

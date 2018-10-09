@@ -26,16 +26,16 @@ overriding-function-declarator = function { overriding-function-definition }
 
 ### Parameters
 
-*overriding-function-declarator*  
+*overriding-function-declarator*<br/>
 The return type, name, and argument list of the overriding function.  Note that the overriding function does not have to have the same name as the function being overridden.
 
-*type*  
+*type*<br/>
 The base type that contains a function to override.
 
-*function*  
+*function*<br/>
 A comma-delimited list of one or more function names to override.
 
-*overriding-function-definition*  
+*overriding-function-definition*<br/>
 The function body statements that define the overriding function.
 
 ### Remarks

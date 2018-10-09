@@ -13,16 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2814
-'member' : a native type cannot be nested within a managed or WinRT type 'type'  
-  
-## Example  
- A native type cannot be nested in a CLR or WinRT type. The following sample generates C2814 and shows how to fix it.  
-  
-```  
-// C2814.cpp  
-// compile with: /clr /c  
-ref class A {  
-   class B {};   // C2814  
-   ref class C {};   // OK  
-};  
-```  
+
+'member' : a native type cannot be nested within a managed or WinRT type 'type'
+
+## Example
+
+A native type cannot be nested in a CLR or WinRT type. The following sample generates C2814 and shows how to fix it.
+
+```
+// C2814.cpp
+// compile with: /clr /c
+ref class A {
+   class B {};   // C2814
+   ref class C {};   // OK
+};
+```

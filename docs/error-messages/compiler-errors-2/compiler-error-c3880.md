@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3880
-'var' : cannot be a literal data member  
-  
- The type of a [literal](../../windows/literal-cpp-component-extensions.md) attribute must be, or compile-time convertible to, one of the following types:  
-  
--   integral type  
-  
--   string  
-  
--   enum with an integral or underlying type  
-  
- The following sample generates C3880:  
-  
-```  
-// C3880.cpp  
-// compile with: /clr /c  
-ref struct Y1 {  
-   literal System::Decimal staticConst1 = 10;   // C3880  
-   literal int staticConst2 = 10;   // OK  
-};  
+
+'var' : cannot be a literal data member
+
+The type of a [literal](../../windows/literal-cpp-component-extensions.md) attribute must be, or compile-time convertible to, one of the following types:
+
+- integral type
+
+- string
+
+- enum with an integral or underlying type
+
+The following sample generates C3880:
+
+```
+// C3880.cpp
+// compile with: /clr /c
+ref struct Y1 {
+   literal System::Decimal staticConst1 = 10;   // C3880
+   literal int staticConst2 = 10;   // OK
+};
 ```

@@ -13,25 +13,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # &lt;code&gt; (Visual C++)
-The \<code> tag gives you a way to indicate one or more lines as code.  
-  
-## Syntax  
-  
-```  
-<code>content</code>  
-```  
-  
-#### Parameters  
- `content`  
- The text you want marked as code.  
-  
-## Remarks  
- Use [\<c>](../ide/c-visual-cpp.md) to indicate a portion of text should be marked as code.  
-  
- Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.  
-  
-## Example  
- See the [\<example>](../ide/example-visual-cpp.md) topic for an example of how to use the \<code> tag.  
-  
-## See Also  
- [XML Documentation](../ide/xml-documentation-visual-cpp.md)
+
+The \<code> tag gives you a way to indicate one or more lines as code.
+
+## Syntax
+
+```
+<code>content</code>
+```
+
+#### Parameters
+
+*content*<br/>
+The text you want marked as code.
+
+## Remarks
+
+Use [\<c>](../ide/c-visual-cpp.md) to indicate a portion of text should be marked as code.
+
+Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+
+## Example
+
+See the [\<example>](../ide/example-visual-cpp.md) topic for an example of how to use the \<code> tag.
+
+## See Also
+
+[XML Documentation](../ide/xml-documentation-visual-cpp.md)

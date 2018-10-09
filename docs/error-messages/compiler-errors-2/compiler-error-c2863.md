@@ -13,26 +13,27 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2863
-'interface' : an interface cannot have friends  
-  
- Declaring friends on an interface is not allowed.  
-  
- The following sample generates C2863:  
-  
-```  
-// C2863.cpp  
-// compile with: /c  
-#include <unknwn.h>  
-  
-class CMyClass {  
-   void *f();  
-};   
-  
-__interface IMyInterface {  
-   void g();  
-  
-   friend int h();   // 2863  
-   friend interface IMyInterface1;  // C2863  
-   friend void *CMyClass::f();  // C2863  
-};  
+
+'interface' : an interface cannot have friends
+
+Declaring friends on an interface is not allowed.
+
+The following sample generates C2863:
+
+```
+// C2863.cpp
+// compile with: /c
+#include <unknwn.h>
+
+class CMyClass {
+   void *f();
+};
+
+__interface IMyInterface {
+   void g();
+
+   friend int h();   // 2863
+   friend interface IMyInterface1;  // C2863
+   friend void *CMyClass::f();  // C2863
+};
 ```

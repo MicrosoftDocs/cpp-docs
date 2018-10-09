@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2661
-'function' : no overloaded function takes number parameters  
-  
- Possible causes:  
-  
-1.  Incorrect actual parameters in function call.  
-  
-2.  Missing function declaration.  
-  
- The following sample generates C2661:  
-  
-```  
-// C2661.cpp  
-void func( int ){}  
-void func( int, int ){}  
-int main() {  
-   func( );   // C2661 func( void ) was not declared  
-   func( 1 );   // OK func( int ) was declared  
-}  
+
+'function' : no overloaded function takes number parameters
+
+Possible causes:
+
+1. Incorrect actual parameters in function call.
+
+1. Missing function declaration.
+
+The following sample generates C2661:
+
+```
+// C2661.cpp
+void func( int ){}
+void func( int, int ){}
+int main() {
+   func( );   // C2661 func( void ) was not declared
+   func( 1 );   // OK func( int ) was declared
+}
 ```

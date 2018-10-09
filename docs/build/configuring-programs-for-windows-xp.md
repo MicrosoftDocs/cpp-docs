@@ -15,6 +15,7 @@ ms.workload: ["cplusplus"]
 Because Visual Studio supports multiple platform toolsets, you can target operating systems and runtime libraries that are not supported by the default toolset. For example, by switching the platform toolset, you can use the C++11, C++14, and C++17 language enhancements supported by the Visual C++ compiler in Visual Studio to create apps that target Windows XP and Windows Server 2003. You can also use older platform toolsets to maintain binary-compatible legacy code and still take advantage of the latest features of the Visual Studio IDE.
 
 ## Install the Windows XP platform toolset
+
 To get the platform toolset and components to target Windows XP and Windows Server 2003 in Visual Studio 2017, run the Visual Studio Installer. When you initially install Visual Studio or when you choose **Modify** to modify an existing installation, make sure that the **Desktop development with C++** workload is selected. In the list of optional components for this workload, choose **Windows XP support for C++**, and then choose **Install** or **Modify**.
 
 ## Windows XP targeting experience
@@ -63,7 +64,7 @@ Due to differences in platform and library support, the development experience f
 
 - **Debugging of DirectX graphics**
 
-     Because the Graphics Debugger does not support the Direct3D 9 API, it cannot be used to debug apps that use Direct3D on Windows XP or Windows Server 2003. However, if the app implements an alternative renderer that uses the Direct3D 10 or Direct3D 11 APIs, the Graphics Debugger can be used to diagnose problems with the use of those APIs.
+   Because the Graphics Debugger does not support the Direct3D 9 API, it cannot be used to debug apps that use Direct3D on Windows XP or Windows Server 2003. However, if the app implements an alternative renderer that uses the Direct3D 10 or Direct3D 11 APIs, the Graphics Debugger can be used to diagnose problems with the use of those APIs.
 
 - **Building HLSL**
 

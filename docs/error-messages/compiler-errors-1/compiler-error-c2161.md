@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2161
-'##' cannot occur at the end of a macro definition  
-  
- A macro definition ended with a token-pasting operator (##).  
-  
- The following sample generates C2161:  
-  
-```  
-// C2161.cpp  
-// compile with: /c  
-#define mac(a,b) a   // OK  
-#define mac(a,b) a##   // C2161  
+
+'##' cannot occur at the end of a macro definition
+
+A macro definition ended with a token-pasting operator (##).
+
+The following sample generates C2161:
+
+```
+// C2161.cpp
+// compile with: /c
+#define mac(a,b) a   // OK
+#define mac(a,b) a##   // C2161
 ```

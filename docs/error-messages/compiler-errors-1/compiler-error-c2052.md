@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2052
-'type' : illegal type for case expression  
-  
- Case expressions must be integer constants.  
-  
- The following sample generates C2052:  
-  
-```  
-// C2052.cpp  
-int main() {  
-   int index = 0;  
-   switch (index) {  
-      case 1:  
-         return 24;  
-      case 1.0:   // C2052  
-      // try the following line instead  
-      // case 2:  
-         return 23;  
-   }  
-}  
+
+'type' : illegal type for case expression
+
+Case expressions must be integer constants.
+
+The following sample generates C2052:
+
+```
+// C2052.cpp
+int main() {
+   int index = 0;
+   switch (index) {
+      case 1:
+         return 24;
+      case 1.0:   // C2052
+      // try the following line instead
+      // case 2:
+         return 23;
+   }
+}
 ```

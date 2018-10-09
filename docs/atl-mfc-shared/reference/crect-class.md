@@ -1547,7 +1547,7 @@ int nWid = rect.Width();
 ```
 ## See Also
 
-[CPoint Class](cpoint-class.md)   
-[CSize Class](csize-class.md)   
+[CPoint Class](cpoint-class.md)<br/>
+[CSize Class](csize-class.md)<br/>
 [RECT](../../mfc/reference/rect-structure1.md)
 

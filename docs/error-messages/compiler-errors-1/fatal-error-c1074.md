@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1074
-'IDB' is illegal extension for PDB file: filename  
-  
- The compiler expects program databases to have the .pdb extension.
+
+'IDB' is illegal extension for PDB file: filename
+
+The compiler expects program databases to have the .pdb extension.

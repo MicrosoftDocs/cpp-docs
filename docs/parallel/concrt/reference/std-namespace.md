@@ -12,27 +12,26 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # std Namespace
-## Syntax  
-  
+
+## Syntax
+
 ```
 namespace std;
-```  
-  
-## Members  
-  
-### Functions  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[make_exception_ptr Function](make-exception-ptr-function.md)||  
-  
-## Requirements  
- **Header:** ppltasks.h  
-  
-## See Also  
- [Reference](reference-concurrency-runtime.md)
+```
 
+## Members
 
+### Functions
 
+|Name|Description|
+|----------|-----------------|
+|[make_exception_ptr Function](make-exception-ptr-function.md)||
 
+## Requirements
+
+**Header:** ppltasks.h
+
+## See Also
+
+[Reference](reference-concurrency-runtime.md)
 

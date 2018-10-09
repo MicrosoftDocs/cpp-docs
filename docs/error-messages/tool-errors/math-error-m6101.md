@@ -13,10 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Math Error M6101
-invalid  
-  
- Invalid operation.  
-  
- This error can be caused when an operand is NaN (not a number) or infinity.  
-  
- Program terminates with exit code 129.
+
+invalid
+
+Invalid operation.
+
+This error can be caused when an operand is NaN (not a number) or infinity.
+
+Program terminates with exit code 129.

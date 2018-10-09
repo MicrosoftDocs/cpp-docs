@@ -13,24 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4637
-XML document comment target: \<include> tag discarded.  reason  
-  
- The syntax of an [\<include>](../../ide/include-visual-cpp.md) tag was not correct.  
-  
- The following sample generates C4637:  
-  
-```  
-// C4637.cpp  
-// compile with: /clr /doc /LD /W3  
-using namespace System;  
-  
-/// Text for class MyClass.  
-public ref class MyClass {   
-public:  
-   /// <include file="c:\davedata\jtest\xml_include.doc"/>  
-   // Try the following line instead:  
-   // /// <include file='xml_include.doc' path='MyDocs/MyMembers/*' />  
-   void MyMethod() {  
-   }  
-};   // C4637  
+
+XML document comment target: \<include> tag discarded.  reason
+
+The syntax of an [\<include>](../../ide/include-visual-cpp.md) tag was not correct.
+
+The following sample generates C4637:
+
+```
+// C4637.cpp
+// compile with: /clr /doc /LD /W3
+using namespace System;
+
+/// Text for class MyClass.
+public ref class MyClass {
+public:
+   /// <include file="c:\davedata\jtest\xml_include.doc"/>
+   // Try the following line instead:
+   // /// <include file='xml_include.doc' path='MyDocs/MyMembers/*' />
+   void MyMethod() {
+   }
+};   // C4637
 ```

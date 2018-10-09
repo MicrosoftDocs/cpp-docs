@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3356
-'attribute': cannot call a multicast attribute with a fully qualified name  
-  
- An attribute that is processed by more than one process, for example, the compiler and ATL provider, was specified incorrectly.
+
+'attribute': cannot call a multicast attribute with a fully qualified name
+
+An attribute that is processed by more than one process, for example, the compiler and ATL provider, was specified incorrectly.

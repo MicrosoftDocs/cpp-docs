@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3266
-'class' : a class-constructor must have a 'void' parameter list  
-  
-Class-constructors in a class using /clr programming cannot take parameters.  
-  
-The following sample generates C3266:  
-  
-```  
-// C3266.cpp  
-// compile with: /clr  
-  
-ref class X {  
-   static X(int i) { // C3266  
-   // try the following line instead  
-   // static X() {  
-   }  
-};  
-  
-int main() {  
-}  
-```  
+
+'class' : a class-constructor must have a 'void' parameter list
+
+Class-constructors in a class using /clr programming cannot take parameters.
+
+The following sample generates C3266:
+
+```
+// C3266.cpp
+// compile with: /clr
+
+ref class X {
+   static X(int i) { // C3266
+   // try the following line instead
+   // static X() {
+   }
+};
+
+int main() {
+}
+```

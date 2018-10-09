@@ -32,25 +32,25 @@ By default in [Windows 8.1, winmdidl.exe and midlrt.exe are located in  C:\Progr
 Winmdidl.exe [/nologo] [/supressversioncheck] [/time] [/outdir:dir] [/banner:file] [/utf8] Winmdfile
 ```
 
-`/nologo`  
+**/nologo**<br/>
 Prevents console display of the winmdidl copyright message and version number.
 
-`/supressversioncheck`  
+**/supressversioncheck**<br/>
 Not used.
 
-`/time`  
+**/time**<br/>
 Displays the total execution time in the console output.
 
-/outdir:\<dir>
- Specifies an output directory. If the path contains spaces, use quotation marks. The default output directory is *\<drive>*:\Users\\*\<username>*\AppData\Local\VirtualStore\Program Files (x86)\Microsoft Visual Studio 12.0\\.
+**/outdir:**<em>dir</em><br/>
+Specifies an output directory. If the path contains spaces, use quotation marks. The default output directory is *\<drive>*:\Users\\*\<username>*\AppData\Local\VirtualStore\Program Files (x86)\Microsoft Visual Studio 12.0\\.
 
-`/banner:<file>`  
+**/banner:**<em>file</em><br/>
 Specifies a file that contains custom text to prepend to the default copyright message and winmdidl version number at the top of the generated .idl file. If the path contains spaces, use quotation marks.
 
-`/utf8`  
+**/utf8**<br/>
 Causes the file to be formatted as UTF-8.
 
-`Winmdfile`  
+*Winmdfile*<br/>
 The name of the .winmd file to parse. If the path contains spaces, use quotation marks.
 
 ## Midlrt command-line arguments

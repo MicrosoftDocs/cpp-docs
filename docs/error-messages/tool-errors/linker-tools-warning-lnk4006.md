@@ -13,20 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4006
-symbol already defined in object; second definition ignored  
-  
- The given `symbol`, displayed in its decorated form, was multiply defined. When this warning is encountered, `symbol` will be added twice, but only its first form will be used.  
-  
- You can get this warning if you try to merge two import libs into one.  
-  
- If you are rebuilding the C run-time library, you can ignore this message.  
-  
-### To fix by using the following possible solutions  
-  
-1.  The given `symbol` may be a packaged function, created by compiling with [/Gy](../../build/reference/gy-enable-function-level-linking.md). This symbol was included in more than one file but was changed between compilations. Recompile all files that include the `symbol`.  
-  
-2.  The given `symbol` may have been defined differently in two member objects in different libraries.  
-  
-3.  An absolute may have been defined twice, with a different value in each definition.  
-  
-4.  If the error message is received when combining libraries, `symbol` already exists in the library being added to.
+
+symbol already defined in object; second definition ignored
+
+The given `symbol`, displayed in its decorated form, was multiply defined. When this warning is encountered, `symbol` will be added twice, but only its first form will be used.
+
+You can get this warning if you try to merge two import libs into one.
+
+If you are rebuilding the C run-time library, you can ignore this message.
+
+### To fix by using the following possible solutions
+
+1. The given `symbol` may be a packaged function, created by compiling with [/Gy](../../build/reference/gy-enable-function-level-linking.md). This symbol was included in more than one file but was changed between compilations. Recompile all files that include the `symbol`.
+
+1. The given `symbol` may have been defined differently in two member objects in different libraries.
+
+1. An absolute may have been defined twice, with a different value in each definition.
+
+1. If the error message is received when combining libraries, `symbol` already exists in the library being added to.

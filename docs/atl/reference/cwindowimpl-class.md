@@ -22,19 +22,19 @@ Provides methods for creating or subclassing a window.
 ## Syntax
 
 ```
-template <class T, class TBase = CWindow, class TWinTraits = CControlWinTraits>  
+template <class T, class TBase = CWindow, class TWinTraits = CControlWinTraits>
 class ATL_NO_VTABLE CWindowImpl : public CWindowImplBaseT<TBase, TWinTraits>
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your new class, derived from `CWindowImpl`.
 
-*TBase*  
+*TBase*<br/>
 The base class of your class. By default, the base class is [CWindow](../../atl/reference/cwindow-class.md).
 
-*TWinTraits*  
+*TWinTraits*<br/>
 A [traits class](../../atl/understanding-window-traits.md) that defines styles for your window. The default is `CControlWinTraits`.
 
 ## Members
@@ -130,25 +130,25 @@ HWND Create(
 
 ### Parameters
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] The handle to the parent or owner window.
 
-*rect*  
+*rect*<br/>
 [in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the position of the window. The `RECT` can be passed by pointer or by reference.
 
-*szWindowName*  
+*szWindowName*<br/>
 [in] Specifies the name of the window. The default value is NULL.
 
-*dwStyle*  
+*dwStyle*<br/>
 [in] The style of the window. This value is combined with the style provided by the traits class for the window. The default value gives the traits class full control over the style. For a list of possible values, see [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK.
 
-*dwExStyle*  
+*dwExStyle*<br/>
 [in] The extended window style. This value is combined with the style provided by the traits class for the window. The default value gives the traits class full control over the style. For a list of possible values, see [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.
 
-*MenuOrID*  
+*MenuOrID*<br/>
 [in] For a child window, the window identifier. For a top-level window, a menu handle for the window. The default value is **0U**.
 
-*lpCreateParam*  
+*lpCreateParam*<br/>
 [in] A pointer to window-creation data. For a full description, see the description for the final parameter to [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa).
 
 ### Return Value
@@ -182,13 +182,13 @@ LRESULT DefWindowProc();
 
 ### Parameters
 
-*uMsg*  
+*uMsg*<br/>
 [in] The message sent to the window.
 
-*wParam*  
+*wParam*<br/>
 [in] Additional message-specific information.
 
-*lParam*  
+*lParam*<br/>
 [in] Additional message-specific information.
 
 ### Return Value
@@ -277,7 +277,7 @@ virtual void OnFinalMessage(HWND hWnd);
 
 ### Parameters
 
-*hWnd*  
+*hWnd*<br/>
 [in] A handle to the window being destroyed.
 
 ### Remarks
@@ -294,7 +294,7 @@ BOOL SubclassWindow(HWND hWnd);
 
 ### Parameters
 
-*hWnd*  
+*hWnd*<br/>
 [in] The handle to the window being subclassed.
 
 ### Return Value
@@ -334,16 +334,16 @@ static LRESULT CALLBACK WindowProc(
 
 ### Parameters
 
-*hWnd*  
+*hWnd*<br/>
 [in] The handle to the window.
 
-*uMsg*  
+*uMsg*<br/>
 [in] The message sent to the window.
 
-*wParam*  
+*wParam*<br/>
 [in] Additional message-specific information.
 
-*lParam*  
+*lParam*<br/>
 [in] Additional message-specific information.
 
 ### Return Value
@@ -364,6 +364,6 @@ You can override `WindowProc` to provide a different mechanism for handling mess
 
 ## See Also
 
-[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)   
-[CComControl Class](../../atl/reference/ccomcontrol-class.md)   
+[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
+[CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

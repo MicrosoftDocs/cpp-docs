@@ -90,7 +90,7 @@ A command-line utility that writes all profile data to the .pgc file, closes the
 [pgomgr](../../build/reference/pgomgr.md)<br/>
 A command-line utility that adds profile data from one or more .pgc files to the .pgd file.
 
-[How to: Merge Multiple PGO Profiles into a Single Profile](../../build/reference/how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)
+[How to: Merge Multiple PGO Profiles into a Single Profile](../../build/reference/how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)<br/>
 Examples of **pgomgr** usage.
 
 ## See also

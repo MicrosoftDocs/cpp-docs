@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2300
-'identifier' : class does not have a destructor called '~identifier'  
-  
- The class does not have a destructor with the required name.
+
+'identifier' : class does not have a destructor called '~identifier'
+
+The class does not have a destructor with the required name.

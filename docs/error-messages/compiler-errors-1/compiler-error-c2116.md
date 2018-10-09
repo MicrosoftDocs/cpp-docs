@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2116
-function parameter lists differed  
-  
- The parameters in the default parameter list do not match the formal parameter list.
+
+function parameter lists differed
+
+The parameters in the default parameter list do not match the formal parameter list.

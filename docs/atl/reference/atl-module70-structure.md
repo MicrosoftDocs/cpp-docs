@@ -29,16 +29,16 @@ struct _ATL_MODULE70 {
 
 ## Members
 
-`cbSize`  
+`cbSize`<br/>
 The size of the structure, used for versioning.
 
-`m_nLockCnt`  
+`m_nLockCnt`<br/>
 Reference count to determine how long the module should stay alive.
 
-`m_pTermFuncs`  
+`m_pTermFuncs`<br/>
 Tracks functions that have been registered to be called when ATL shuts down.
 
-`m_csStaticDataInitAndTypeInfo`  
+`m_csStaticDataInitAndTypeInfo`<br/>
 Used to coordinate access to internal data in multithreaded situations.
 
 ## Remarks

@@ -89,6 +89,6 @@ The following classes provide support for arrays, lists, maps, and also traits m
 
 ## See Also
 
-[Class Overview](../atl/atl-class-overview.md)   
+[Class Overview](../atl/atl-class-overview.md)<br/>
 [Collection Classes](../atl/atl-collection-classes.md)
 

@@ -13,21 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2877
-'symbol' is not accessible from 'class'  
-  
- All members derived from a base class must be accessible in the derived class.  
-  
- The following sample generates C2877:  
-  
-```  
-// C2877.cpp  
-// compile with: /c  
-class A {  
-private:  
-   int a;  
-};  
-  
-class B : public A {  
-   using A::a;   // C2877  
-};  
+
+'symbol' is not accessible from 'class'
+
+All members derived from a base class must be accessible in the derived class.
+
+The following sample generates C2877:
+
+```
+// C2877.cpp
+// compile with: /c
+class A {
+private:
+   int a;
+};
+
+class B : public A {
+   using A::a;   // C2877
+};
 ```

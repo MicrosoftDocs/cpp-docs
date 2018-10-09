@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2971
-'class' : template parameter 'param' : 'arg' : a local variable cannot be used as a non-type argument  
-  
- You cannot use the name or address of a local variable as a template argument.  
-  
- The following sample generates C2971:  
-  
-```  
-// C2971.cpp  
-template <int *pi>   
-class Y {};  
-  
-int global_var = 0;  
-  
-int main() {  
-   int local_var = 0;  
-   Y<&local_var> aY;   // C2971  
-   // try the following line instead  
-   // Y<&global_var> aY;  
-}  
+
+'class' : template parameter 'param' : 'arg' : a local variable cannot be used as a non-type argument
+
+You cannot use the name or address of a local variable as a template argument.
+
+The following sample generates C2971:
+
+```
+// C2971.cpp
+template <int *pi>
+class Y {};
+
+int global_var = 0;
+
+int main() {
+   int local_var = 0;
+   Y<&local_var> aY;   // C2971
+   // try the following line instead
+   // Y<&global_var> aY;
+}
 ```

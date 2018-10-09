@@ -12,9 +12,10 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using an Existing ADO Recordset
+
 To mix OLE DB consumer templates and Active Data Objects (ADO), use ADO to open a recordset (corresponding to a rowset in the OLE DB Consumer Templates). When you have a recordset, do the following to connect to an OLE DB rowset:  
   
-1.  Call `QueryInterface` for the `IRowset` and `IAccessor` pointers.  
+1. Call `QueryInterface` for the `IRowset` and `IAccessor` pointers.  
   
     ```cpp  
     IRowset* lpRowset = NULL;  
@@ -26,7 +27,7 @@ To mix OLE DB consumer templates and Active Data Objects (ADO), use ADO to open 
     > [!NOTE]
     >  *lpUnk* points to the `IUnknown` object of the ADO recordset.  
   
-2.  Attach the accessor and rowset to their appropriate OLE DB consumer template classes.  
+1. Attach the accessor and rowset to their appropriate OLE DB consumer template classes.  
   
     ```cpp  
     CRowset rs;  
@@ -38,4 +39,5 @@ To mix OLE DB consumer templates and Active Data Objects (ADO), use ADO to open 
     ```  
   
 ## See Also  
- [Using Accessors](../../data/oledb/using-accessors.md)
+
+[Using Accessors](../../data/oledb/using-accessors.md)

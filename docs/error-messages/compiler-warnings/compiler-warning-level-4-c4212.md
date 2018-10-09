@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4212
-nonstandard extension used : function declaration used ellipsis  
-  
- The function prototype has a variable number of arguments. The function definition does not.  
-  
- The following sample generates C4212:  
-  
-```  
-// C4212.c  
-// compile with: /W4 /Ze /c  
-void f(int , ...);  
-void f(int i, int j) {}  
+
+nonstandard extension used : function declaration used ellipsis
+
+The function prototype has a variable number of arguments. The function definition does not.
+
+The following sample generates C4212:
+
+```
+// C4212.c
+// compile with: /W4 /Ze /c
+void f(int , ...);
+void f(int i, int j) {}
 ```

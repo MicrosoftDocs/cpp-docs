@@ -18,7 +18,8 @@ This topic documents the enums in the filesystem header.
 ## Requirements
 
 **Header:** \<experimental/filesystem>
- **Namespace:** std::experimental::filesystem
+
+**Namespace:** std::experimental::filesystem
 
 ## <a name="copy_options"></a>  copy_options
 

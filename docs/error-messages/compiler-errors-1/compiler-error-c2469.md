@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2469
-'operator': cannot allocate 'type' object  
-  
- An operator was passed an invalid type.  
-  
- The following sample generates C2469:  
-  
-```  
-// C2469.cpp  
-int main() {  
-   int *i = new void;   // C2469  
-   int *i = new int;   // OK  
-}  
+
+'operator': cannot allocate 'type' object
+
+An operator was passed an invalid type.
+
+The following sample generates C2469:
+
+```
+// C2469.cpp
+int main() {
+   int *i = new void;   // C2469
+   int *i = new int;   // OK
+}
 ```

@@ -73,15 +73,15 @@ This table shows the format of a .pdata record that has packed unwind data:
 |Word Offset|Bits|Purpose|
 |-----------------|----------|-------------|
 |0|0-31|*Function Start RVA* is the 32-bit RVA of the start of the function. If the function contains thumb code, the low bit of this address must be set.|
-|1|0-1|*Flag* is a 2-bit field that has these meanings:<br /><br /> -   00 = packed unwind data not used; remaining bits point to .xdata record.<br />-   01 = packed unwind data.<br />-   10 = packed unwind data where the function is assumed to have no prologue. This is useful for describing function fragments that are discontiguous with the start of the function.<br />-   11 = reserved.|
+|1|0-1|*Flag* is a 2-bit field that has these meanings:<br /><br />- 00 = packed unwind data not used; remaining bits point to .xdata record.<br />- 01 = packed unwind data.<br />- 10 = packed unwind data where the function is assumed to have no prologue. This is useful for describing function fragments that are discontiguous with the start of the function.<br />- 11 = reserved.|
 |1|2-12|*Function Length* is an 11-bit field that provides the length of the entire function in bytes divided by 2. If the function is larger than 4K bytes, a full .xdata record must be used instead.|
-|1|13-14|*Ret* is a 2-bit field that indicates how the function returns:<br /><br /> -   00 = return via pop {pc} (the *L* flag bit must be set to 1 in this case).<br />-   01 = return by using a 16-bit branch.<br />-   10 = return by using a 32-bit branch.<br />-   11 = no epilogue at all. This is useful for describing a discontiguous function fragment that may only contain a prologue, but whose epilogue is elsewhere.|
+|1|13-14|*Ret* is a 2-bit field that indicates how the function returns:<br /><br />- 00 = return via pop {pc} (the *L* flag bit must be set to 1 in this case).<br />- 01 = return by using a 16-bit branch.<br />- 10 = return by using a 32-bit branch.<br />- 11 = no epilogue at all. This is useful for describing a discontiguous function fragment that may only contain a prologue, but whose epilogue is elsewhere.|
 |1|15|*H* is a 1-bit flag that indicates whether the function "homes" the integer parameter registers (r0-r3) by pushing them at the start of the function, and deallocates the 16 bytes of stack before returning. (0 = does not home registers, 1 = homes registers.)|
 |1|16-18|*Reg* is a 3-bit field that indicates the index of the last saved non-volatile register. If the *R* bit is 0, then only integer registers are being saved, and are assumed to be in the range of r4-rN, where N is equal to 4 + *Reg*. If the *R* bit is 1, then only floating-point registers are being saved, and are assumed to be in the range of d8-dN, where N is equal to 8 + *Reg*. The special combination of *R* = 1 and *Reg* = 7 indicates that no registers are saved.|
 |1|19|*R* is a 1-bit flag that indicates whether the saved non-volatile registers are integer registers (0) or floating-point registers (1). If *R* is set to 1 and the *Reg* field is set to 7, no non-volatile registers were pushed.|
 |1|20|*L* is a 1-bit flag that indicates whether the function saves/restores LR, along with other registers indicated by the *Reg* field. (0 = does not save/restore, 1 = does save/restore.)|
 |1|21|*C* is a 1-bit flag that indicates whether the function includes extra instructions to set up a frame chain for fast stack walking (1) or not (0). If this bit is set, r11 is implicitly added to the list of integer non-volatile registers saved. (See restrictions below if the *C* flag is used.)|
-|1|22-31|*Stack Adjust* is a 10-bit field that indicates the number of bytes of stack that are allocated for this function, divided by 4. However, only values between 0x000-0x3F3 can be directly encoded. Functions that allocate more than 4044 bytes of stack must use a full .xdata record. If the *Stack Adjust* field is 0x3F4 or larger, then the low 4 bits have special meaning:<br /><br /> -   Bits 0-1 indicate the number of words of stack adjustment (1-4) minus 1.<br />-   Bit 2 is set to 1 if the prologue combined this adjustment into its push operation.<br />-   Bit 3 is set to 1 if the epilogue combined this adjustment into its pop operation.|
+|1|22-31|*Stack Adjust* is a 10-bit field that indicates the number of bytes of stack that are allocated for this function, divided by 4. However, only values between 0x000-0x3F3 can be directly encoded. Functions that allocate more than 4044 bytes of stack must use a full .xdata record. If the *Stack Adjust* field is 0x3F4 or larger, then the low 4 bits have special meaning:<br /><br />- Bits 0-1 indicate the number of words of stack adjustment (1-4) minus 1.<br />- Bit 2 is set to 1 if the prologue combined this adjustment into its push operation.<br />- Bit 3 is set to 1 if the epilogue combined this adjustment into its pop operation.|
 
 Due to possible redundancies in the encodings above, these restrictions apply:
 
@@ -166,30 +166,30 @@ When the packed unwind format is insufficient to describe the unwinding of a fun
 1. A 1 or 2-word header that describes the overall size of the .xdata structure and provides key function data. The second word is only present if the *Epilogue Count* and *Code Words* fields are both set to 0. The fields are broken out in this table:
 
    |Word|Bits|Purpose|
-    |----------|----------|-------------|
-    |0|0-17|*Function Length* is an 18-bit field that indicates the total length of the function in bytes, divided by 2. If a function is larger than 512 KB, then multiple .pdata and .xdata records must be used to describe the function. For details, see the Large Functions section in this document.|
-    |0|18-19|*Vers* is a 2-bit field that describes the version of the remaining xdata. Only version 0 is currently defined; values of 1-3 are reserved.|
-    |0|20|*X* is a 1-bit field that indicates the presence (1) or absence (0) of exception data.|
-    |0|21|*E* is a 1-bit field that indicates that information that describes a single epilogue is packed into the header (1) rather than requiring additional scope words later (0).|
-    |0|22|*F* is a 1-bit field that indicates that this record describes a function fragment (1) or a full function (0). A fragment implies that there is no prologue and that all prologue processing should be ignored.|
-    |0|23-27|*Epilogue Count* is a 5-bit field that has two meanings, depending on the state of the *E* bit:<br /><br /> -   If *E* is 0, this field is a count of the total number of exception scopes described in section 3. If more than 31 scopes exist in the function, then this field and the *Code Words* field must both be set to 0 to indicate that an extension word is required.<br />-   If *E* is 1, this field specifies the index of the first unwind code that describes the only epilogue.|
-    |0|28-31|*Code Words* is a 4-bit field that specifies the number of 32-bit words required to contain all of the unwind codes in section 4. If more than 15 words are required for more than 63 unwind code bytes, this field and the *Epilogue Count* field must both be set to 0 to indicate that an extension word is required.|
-    |1|0-15|*Extended Epilogue Count* is a 16-bit field that provides more space for encoding an unusually large number of epilogues. The extension word that contains this field is only present if the *Epilogue Count* and *Code Words* fields in the first header word are both set to 0.|
-    |1|16-23|*Extended Code Words* is an 8-bit field that provides more space for encoding an unusually large number of unwind code words. The extension word that contains this field is only present if the *Epilogue Count* and *Code Words* fields in the first header word are both set to 0.|
-    |1|24-31|Reserved|
+   |----------|----------|-------------|
+   |0|0-17|*Function Length* is an 18-bit field that indicates the total length of the function in bytes, divided by 2. If a function is larger than 512 KB, then multiple .pdata and .xdata records must be used to describe the function. For details, see the Large Functions section in this document.|
+   |0|18-19|*Vers* is a 2-bit field that describes the version of the remaining xdata. Only version 0 is currently defined; values of 1-3 are reserved.|
+   |0|20|*X* is a 1-bit field that indicates the presence (1) or absence (0) of exception data.|
+   |0|21|*E* is a 1-bit field that indicates that information that describes a single epilogue is packed into the header (1) rather than requiring additional scope words later (0).|
+   |0|22|*F* is a 1-bit field that indicates that this record describes a function fragment (1) or a full function (0). A fragment implies that there is no prologue and that all prologue processing should be ignored.|
+   |0|23-27|*Epilogue Count* is a 5-bit field that has two meanings, depending on the state of the *E* bit:<br /><br /> -   If *E* is 0, this field is a count of the total number of exception scopes described in section 3. If more than 31 scopes exist in the function, then this field and the *Code Words* field must both be set to 0 to indicate that an extension word is required.<br />-   If *E* is 1, this field specifies the index of the first unwind code that describes the only epilogue.|
+   |0|28-31|*Code Words* is a 4-bit field that specifies the number of 32-bit words required to contain all of the unwind codes in section 4. If more than 15 words are required for more than 63 unwind code bytes, this field and the *Epilogue Count* field must both be set to 0 to indicate that an extension word is required.|
+   |1|0-15|*Extended Epilogue Count* is a 16-bit field that provides more space for encoding an unusually large number of epilogues. The extension word that contains this field is only present if the *Epilogue Count* and *Code Words* fields in the first header word are both set to 0.|
+   |1|16-23|*Extended Code Words* is an 8-bit field that provides more space for encoding an unusually large number of unwind code words. The extension word that contains this field is only present if the *Epilogue Count* and *Code Words* fields in the first header word are both set to 0.|
+   |1|24-31|Reserved|
 
-2. After the exception data (if the *E* bit in the header was set to 0) is a list of information about epilogue scopes, which are packed one to a word and stored in order of increasing starting offset. Each scope contains these fields:
+1. After the exception data (if the *E* bit in the header was set to 0) is a list of information about epilogue scopes, which are packed one to a word and stored in order of increasing starting offset. Each scope contains these fields:
 
    |Bits|Purpose|
-    |----------|-------------|
-    |0-17|*Epilogue Start Offset* is an 18-bit field that describes the offset of the epilogue, in bytes divided by 2, relative to the start of the function.|
-    |18-19|*Res* is a 2-bit field reserved for future expansion. Its value must be 0.|
-    |20-23|*Condition* is a 4-bit field that gives the condition under which the epilogue is executed. For unconditional epilogues, it should be set to 0xE, which indicates "always". (An epilogue must be entirely conditional or entirely unconditional, and in Thumb-2 mode, the epilogue begins with the first instruction after the IT opcode.)|
-    |24-31|*Epilogue Start Index* is an 8-bit field that indicates the byte index of the first unwind code that describes this epilogue.|
+   |----------|-------------|
+   |0-17|*Epilogue Start Offset* is an 18-bit field that describes the offset of the epilogue, in bytes divided by 2, relative to the start of the function.|
+   |18-19|*Res* is a 2-bit field reserved for future expansion. Its value must be 0.|
+   |20-23|*Condition* is a 4-bit field that gives the condition under which the epilogue is executed. For unconditional epilogues, it should be set to 0xE, which indicates "always". (An epilogue must be entirely conditional or entirely unconditional, and in Thumb-2 mode, the epilogue begins with the first instruction after the IT opcode.)|
+   |24-31|*Epilogue Start Index* is an 8-bit field that indicates the byte index of the first unwind code that describes this epilogue.|
 
-3. After the list of epilogue scopes comes an array of bytes that contain unwind codes, which are described in detail in the Unwind Codes section in this article. This array is padded at the end to the nearest full word boundary. The bytes are stored in little-endian order so that they can be directly fetched in little-endian mode.
+1. After the list of epilogue scopes comes an array of bytes that contain unwind codes, which are described in detail in the Unwind Codes section in this article. This array is padded at the end to the nearest full word boundary. The bytes are stored in little-endian order so that they can be directly fetched in little-endian mode.
 
-4. If the *X* field in the header is 1, the unwind code bytes are followed by the exception handler information. This consists of one *Exception Handler RVA* that contains the address of the exception handler, followed immediately by the (variable-length) amount of data required by the exception handler.
+1. If the *X* field in the header is 1, the unwind code bytes are followed by the exception handler information. This consists of one *Exception Handler RVA* that contains the address of the exception handler, followed immediately by the (variable-length) amount of data required by the exception handler.
 
 The .xdata record is designed so that it is possible to fetch the first 8 bytes and compute the full size of the record, not including the length of the variable-sized exception data that follows. This code snippet computes the record size:
 
@@ -349,16 +349,16 @@ A more complex special case of function fragments is *shrink-wrapping*, a techni
 
 ```asm
 ShrinkWrappedFunction
-     push   {r4, lr}          ; A: save minimal non-volatiles
-     sub    sp, sp, #0x100    ; A: allocate all stack space up front
-     ...                     ; A:
-     add    r0, sp, #0xE4     ; A: prepare to do the inner save
-     stm    r0, {r5-r11}      ; A: save remaining non-volatiles
-     ...                     ; B:
-     add    r0, sp, #0xE4     ; B: prepare to do the inner restore
-     ldm    r0, {r5-r11}      ; B: restore remaining non-volatiles
-     ...                     ; C:
-     pop    {r4, pc}          ; C:
+    push   {r4, lr}          ; A: save minimal non-volatiles
+    sub    sp, sp, #0x100    ; A: allocate all stack space up front
+    ...                      ; A:
+    add    r0, sp, #0xE4     ; A: prepare to do the inner save
+    stm    r0, {r5-r11}      ; A: save remaining non-volatiles
+    ...                      ; B:
+    add    r0, sp, #0xE4     ; B: prepare to do the inner restore
+    ldm    r0, {r5-r11}      ; B: restore remaining non-volatiles
+    ...                      ; C:
+    pop    {r4, pc}          ; C:
 ```
 
 Shrink-wrapped functions are typically expected to pre-allocate the space for the extra register saves in the regular prologue, and then perform the register saves by using `str` or `stm` instead of `push`. This keeps all stack-pointer manipulation in the function’s original prologue.
@@ -377,14 +377,14 @@ An alternative approach can also work if the stack manipulation done before ente
 
 ```asm
 ShrinkWrappedFunction
-     push   {r4, lr}          ; A: save minimal non-volatile registers
-     sub    sp, sp, #0xE0     ; A: allocate minimal stack space up front
-     ...                     ; A:
-     push   {r4-r9}           ; A: save remaining non-volatiles
-     ...                     ; B:
-     pop    {r4-r9}           ; B: restore remaining non-volatiles
-     ...                     ; C:
-     pop    {r4, pc}          ; C: restore non-volatile registers
+    push   {r4, lr}          ; A: save minimal non-volatile registers
+    sub    sp, sp, #0xE0     ; A: allocate minimal stack space up front
+    ...                      ; A:
+    push   {r4-r9}           ; A: save remaining non-volatiles
+    ...                      ; B:
+    pop    {r4-r9}           ; B: restore remaining non-volatiles
+    ...                      ; C:
+    pop    {r4, pc}          ; C: restore non-volatile registers
 ```
 
 The key here is that on each instruction boundary, the stack is fully consistent with the unwind codes for the region. If an unwind occurs before the inner push in this example, it is considered part of region A, and only the region A prologue is unwound. If the unwind occurs after the inner push, it is considered part of region B, which has no prologue, but has unwind codes that describe both the inner push and the original prologue from region A. Similar logic holds for the inner pop.
@@ -740,6 +740,5 @@ Function:
 
 ## See also
 
-[Overview of ARM ABI Conventions](../build/overview-of-arm-abi-conventions.md)  
-[Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md)  
-
+[Overview of ARM ABI Conventions](../build/overview-of-arm-abi-conventions.md)<br/>
+[Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md)

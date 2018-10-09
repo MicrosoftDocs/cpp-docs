@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2918
-'name': Indexed properties cannot be used on the published surface of a WinRT type  
-  
- Indexed properties are not supported on the published surface of a WinRT type.
+
+'name': Indexed properties cannot be used on the published surface of a WinRT type
+
+Indexed properties are not supported on the published surface of a WinRT type.

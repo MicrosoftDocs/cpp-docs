@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2400
-inline assembler syntax error in 'context'; found 'token'  
-  
- The token caused a syntax error in the specified context.  
-  
- The following sample generates C2400:  
-  
-```  
-// C2400.cpp  
-// processor: x86  
-int main() {  
-   __asm {  
-      heh ax,bx;   // C2400, heh is not a valid x86 instruction  
-      mov ax,bx;   // OK  
-   }  
-}  
+
+inline assembler syntax error in 'context'; found 'token'
+
+The token caused a syntax error in the specified context.
+
+The following sample generates C2400:
+
+```
+// C2400.cpp
+// processor: x86
+int main() {
+   __asm {
+      heh ax,bx;   // C2400, heh is not a valid x86 instruction
+      mov ax,bx;   // OK
+   }
+}
 ```

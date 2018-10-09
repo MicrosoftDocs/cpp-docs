@@ -13,24 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3809
-'class' : a managed or WinRT type cannot have any friend functions/classes/interfaces  
-  
- Managed types and Windows Runtime types do not allow friends. To fix this error, do not declare friends inside managed or Windows Runtime types.  
-  
- The following sample generates C3809:  
-  
-```  
-// C3809a.cpp  
-// compile with: /clr  
-ref class A {};  
-  
-ref class B  
-{  
-public:  
-   friend ref class A;   // C3809  
-};  
-  
-int main()  
-{  
-}  
+
+'class' : a managed or WinRT type cannot have any friend functions/classes/interfaces
+
+Managed types and Windows Runtime types do not allow friends. To fix this error, do not declare friends inside managed or Windows Runtime types.
+
+The following sample generates C3809:
+
+```
+// C3809a.cpp
+// compile with: /clr
+ref class A {};
+
+ref class B
+{
+public:
+   friend ref class A;   // C3809
+};
+
+int main()
+{
+}
 ```

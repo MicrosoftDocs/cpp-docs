@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3002
-'name1 name2' : multiple OpenMP directive names  
-  
- Multiple directive names are not allowed.  
-  
- The following sample generates C3002:  
-  
-```  
-// C3002.c  
-// compile with: /openmp  
-int main()  
-{  
-   #pragma omp parallel single   // C3002  
-}  
+
+'name1 name2' : multiple OpenMP directive names
+
+Multiple directive names are not allowed.
+
+The following sample generates C3002:
+
+```
+// C3002.c
+// compile with: /openmp
+int main()
+{
+   #pragma omp parallel single   // C3002
+}
 ```

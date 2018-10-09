@@ -29,7 +29,7 @@ template <class TBase = CWindow>
 
 #### Parameters
 
-*TBase*  
+*TBase*<br/>
 The class from which `CAxWindowT` derives.
 
 ## Members
@@ -90,7 +90,7 @@ CAxWindow2T(HWND  hWnd = NULL) : CAxWindowT<TBase>(hWnd)
 
 ### Parameters
 
-*hWnd*  
+*hWnd*<br/>
 A handle of an existing window.
 
 ##  <a name="create"></a>  CAxWindow2T::Create
@@ -140,7 +140,7 @@ HRESULT CreateControlLic(
 
 ### Parameters
 
-*bstrLicKey*  
+*bstrLicKey*<br/>
 The license key for the control; NULL if creating a nonlicensed control.
 
 ### Remarks
@@ -177,7 +177,7 @@ HRESULT CreateControlLicEx(
 
 ### Parameters
 
-*bstrLicKey*  
+*bstrLicKey*<br/>
 The license key for the control; NULL if creating a nonlicensed control.
 
 ### Remarks
@@ -210,10 +210,10 @@ CAxWindow2T<TBase>& operator= (HWND hWnd);
 
 ### Parameters
 
-*hWnd*  
+*hWnd*<br/>
 A handle of an existing window.
 
 ## See Also
 
-[Class Overview](../../atl/atl-class-overview.md)   
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [Control Containment FAQ](../../atl/atl-control-containment-faq.md)

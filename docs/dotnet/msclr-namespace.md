@@ -13,7 +13,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # msclr namespace
-The `msclr` namespace contains all the classes of the C++ Support Library. For more information on those classes, see [C++ Support Library](../dotnet/cpp-support-library.md).  
-  
-## See Also  
- [C++ Support Library](../dotnet/cpp-support-library.md)
+
+The `msclr` namespace contains all the classes of the C++ Support Library. For more information on those classes, see [C++ Support Library](../dotnet/cpp-support-library.md).
+
+## See Also
+
+[C++ Support Library](../dotnet/cpp-support-library.md)

@@ -12,15 +12,17 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Communicating with a Tree Control
-You use different methods for calling member functions in a [CTreeCtrl](../mfc/reference/ctreectrl-class.md) object depending on how the object was created:  
-  
--   If the tree control is in a dialog box, use a member variable of type `CTreeCtrl` that you create in the dialog box class.  
-  
--   If the tree control is a child window, use the `CTreeCtrl` object (or pointer) you used to construct the object.  
-  
--   If you're using a `CTreeView` object, use the function [CTreeView::GetTreeCtrl](../mfc/reference/ctreeview-class.md#gettreectrl) to get a reference to the tree control. You can initialize another reference with this value or assign the address of the reference to a `CTreeCtrl` pointer.  
-  
-## See Also  
- [Using CTreeCtrl](../mfc/using-ctreectrl.md)   
- [Controls](../mfc/controls-mfc.md)
+
+You use different methods for calling member functions in a [CTreeCtrl](../mfc/reference/ctreectrl-class.md) object depending on how the object was created:
+
+- If the tree control is in a dialog box, use a member variable of type `CTreeCtrl` that you create in the dialog box class.
+
+- If the tree control is a child window, use the `CTreeCtrl` object (or pointer) you used to construct the object.
+
+- If you're using a `CTreeView` object, use the function [CTreeView::GetTreeCtrl](../mfc/reference/ctreeview-class.md#gettreectrl) to get a reference to the tree control. You can initialize another reference with this value or assign the address of the reference to a `CTreeCtrl` pointer.
+
+## See Also
+
+[Using CTreeCtrl](../mfc/using-ctreectrl.md)<br/>
+[Controls](../mfc/controls-mfc.md)
 

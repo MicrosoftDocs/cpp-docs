@@ -13,30 +13,31 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2318
-no try block associated with this catch handler  
-  
- A `catch` handler is defined but not preceded by a `try` block.  
-  
- The following sample generates C2318:  
-  
-```  
-// C2318.cpp  
-// compile with: /EHsc  
-#include <eh.h>  
-int main() {  
-   // no try block  
-   catch( int ) {}   // C2318  
-}  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2318b.cpp  
-// compile with: /EHsc  
-#include <eh.h>  
-int main() {  
-   try{}  
-   catch( int ) {}  
-}  
+
+no try block associated with this catch handler
+
+A `catch` handler is defined but not preceded by a `try` block.
+
+The following sample generates C2318:
+
+```
+// C2318.cpp
+// compile with: /EHsc
+#include <eh.h>
+int main() {
+   // no try block
+   catch( int ) {}   // C2318
+}
+```
+
+Possible resolution:
+
+```
+// C2318b.cpp
+// compile with: /EHsc
+#include <eh.h>
+int main() {
+   try{}
+   catch( int ) {}
+}
 ```

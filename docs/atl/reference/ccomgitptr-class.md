@@ -19,13 +19,13 @@ This class provides methods for dealing with interface pointers and the global i
 ## Syntax
 
 ```
-template <class T>  
+template <class T>
 class CComGITPtr
 ```
 
 #### Parameters
 
-`T`  
+*T*<br/>
 The type of the interface pointer to be stored in the GIT.
 
 ## Members
@@ -83,10 +83,10 @@ HRESULT Attach(DWORD dwCookie) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 The interface pointer to be added to the GIT.
 
-*dwCookie*  
+*dwCookie*<br/>
 The cookie used to identify the interface pointer.
 
 ### Return Value
@@ -111,17 +111,17 @@ CComGITPtr(CComGITPtr&& rv);
 
 ### Parameters
 
-[in] *p*  
-An interface pointer to be stored in the global interface table (GIT).
+*p*<br/>
+[in] An interface pointer to be stored in the global interface table (GIT).
 
-[in] *git*  
-A reference to an existing `CComGITPtr` object.
+*git*<br/>
+[in] A reference to an existing `CComGITPtr` object.
 
-[in] *dwCookie*  
-A cookie used to identify the interface pointer.
+*dwCookie*<br/>
+[in] A cookie used to identify the interface pointer.
 
-[in] *rv*  
-The source `CComGITPtr` object to move data from.
+*rv*<br/>
+[in] The source `CComGITPtr` object to move data from.
 
 ### Remarks
 
@@ -151,7 +151,7 @@ HRESULT CopyTo(T** pp) const throw();
 
 ### Parameters
 
-*pp*  
+*pp*<br/>
 The pointer which is to receive the interface.
 
 ### Return Value
@@ -219,17 +219,17 @@ CComGITPtr& operator= (CComGITPtr&& rv);
 
 ### Parameters
 
-[in] *p*  
-A pointer to an interface.
+*p*<br/>
+[in] A pointer to an interface.
 
-[in] *git*  
-A reference to a `CComGITPtr` object.
+*git*<br/>
+[in] A reference to a `CComGITPtr` object.
 
-[in] *dwCookie*  
-A cookie used to identify the interface pointer.
+*dwCookie*<br/>
+[in] A cookie used to identify the interface pointer.
 
-[in] *rv*  
-The `CComGITPtr` to move data from.
+*rv*<br/>
+[in] The `CComGITPtr` to move data from.
 
 ### Return Value
 
@@ -243,7 +243,7 @@ Assigns a new value to a `CComGITPtr` object, either from an existing object or 
 
 Returns the cookie associated with the `CComGITPtr` object.
 
-```  
+```
 operator DWORD() const;
 ```
 
@@ -269,7 +269,7 @@ Removes the interface from the GIT.
 
 ## See Also
 
-[Free Threaded Marshaler](../../atl/atl-and-the-free-threaded-marshaler.md)   
-[Accessing Interfaces Across Apartments](/windows/desktop/com/accessing-interfaces-across-apartments)   
-[When to Use the Global Interface Table](/windows/desktop/com/when-to-use-the-global-interface-table)   
+[Free Threaded Marshaler](../../atl/atl-and-the-free-threaded-marshaler.md)<br/>
+[Accessing Interfaces Across Apartments](/windows/desktop/com/accessing-interfaces-across-apartments)<br/>
+[When to Use the Global Interface Table](/windows/desktop/com/when-to-use-the-global-interface-table)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

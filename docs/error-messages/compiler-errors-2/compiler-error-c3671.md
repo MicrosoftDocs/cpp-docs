@@ -13,22 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3671
-'function_1' : function does not override 'function_2'  
-  
- When using explicit override syntax, the compiler generates an error if a function is not overridden.  See [Explicit Overrides](../../windows/explicit-overrides-cpp-component-extensions.md) for more information.  
-  
-## Example  
- The following sample generates C3671.  
-  
-```  
-// C3671.cpp  
-// compile with: /clr /c  
-ref struct S {  
-   virtual void f();  
-};  
-  
-ref struct S1 : S {  
-   virtual void f(int) new sealed = S::f;   // C3671  
-   virtual void f() new sealed = S::f;  
-};  
+
+'function_1' : function does not override 'function_2'
+
+When using explicit override syntax, the compiler generates an error if a function is not overridden.  See [Explicit Overrides](../../windows/explicit-overrides-cpp-component-extensions.md) for more information.
+
+## Example
+
+The following sample generates C3671.
+
+```
+// C3671.cpp
+// compile with: /clr /c
+ref struct S {
+   virtual void f();
+};
+
+ref struct S1 : S {
+   virtual void f(int) new sealed = S::f;   // C3671
+   virtual void f() new sealed = S::f;
+};
 ```

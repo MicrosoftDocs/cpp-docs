@@ -34,5 +34,5 @@ These routines access, modify, and obtain information about the directory struct
 ## See Also
 
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
- [File Handling](../c-runtime-library/file-handling.md)<br/>
- [System Calls](../c-runtime-library/system-calls.md)<br/>
+[File Handling](../c-runtime-library/file-handling.md)<br/>
+[System Calls](../c-runtime-library/system-calls.md)<br/>

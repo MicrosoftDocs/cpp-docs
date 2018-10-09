@@ -12,6 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Typedef Declarations
+
 A typedef declaration is a declaration with typedef as the storage class. The declarator becomes a new type. You can use typedef declarations to construct shorter or more meaningful names for types already defined by C or for types that you have declared. Typedef names allow you to encapsulate implementation details that may change.
 
 A typedef declaration is interpreted in the same way as a variable or function declaration, but the identifier, instead of assuming the type specified by the declaration, becomes a synonym for the type.
@@ -101,6 +102,7 @@ pfv signal( int, pfv );    /* Uses typedef type */
 ```
 
 ## Examples
+
 The following examples illustrate typedef declarations:
 
 ```C

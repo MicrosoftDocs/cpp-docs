@@ -28,7 +28,7 @@ class IOleControlImpl
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IOleControlImpl`.
 
 ## Members
@@ -122,6 +122,6 @@ See [IOleControl::OnMnemonic](/windows/desktop/api/ocidl/nf-ocidl-iolecontrol-on
 
 ## See Also
 
-[IOleObjectImpl Class](../../atl/reference/ioleobjectimpl-class.md)   
-[ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)   
+[IOleObjectImpl Class](../../atl/reference/ioleobjectimpl-class.md)<br/>
+[ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

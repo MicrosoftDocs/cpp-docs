@@ -12,7 +12,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # _bstr_t Operators
-For information about the `_bstr_t` operators, see [_bstr_t Class](../cpp/bstr-t-class.md).  
-  
-## See also  
- [_bstr_t Class](../cpp/bstr-t-class.md)
+
+For information about the `_bstr_t` operators, see [_bstr_t Class](../cpp/bstr-t-class.md).
+
+## See also
+
+[_bstr_t Class](../cpp/bstr-t-class.md)

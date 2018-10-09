@@ -13,14 +13,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Debugging Support Classes
-MFC provides the following classes to help you debug dynamic memory allocation problems.  
-  
- [CDumpContext](../mfc/reference/cdumpcontext-class.md)  
- Provides a destination for diagnostic dumps.  
-  
- [CMemoryState](../mfc/reference/cmemorystate-structure.md)  
- Structure that provides snapshots of memory use. Also used to compare earlier and later memory snapshots.  
-  
-## See Also  
- [Class Overview](../mfc/class-library-overview.md)
+
+MFC provides the following classes to help you debug dynamic memory allocation problems.
+
+[CDumpContext](../mfc/reference/cdumpcontext-class.md)<br/>
+Provides a destination for diagnostic dumps.
+
+[CMemoryState](../mfc/reference/cmemorystate-structure.md)<br/>
+Structure that provides snapshots of memory use. Also used to compare earlier and later memory snapshots.
+
+## See Also
+
+[Class Overview](../mfc/class-library-overview.md)
 

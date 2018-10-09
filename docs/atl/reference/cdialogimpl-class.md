@@ -29,10 +29,10 @@ template <class T,
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `CDialogImpl`.
 
-*TBase*  
+*TBase*<br/>
 The base class of your new class. The default base class is [CWindow](../../atl/reference/cwindow-class.md).
 
 ## Members
@@ -91,7 +91,7 @@ where `MyDlg` is the **Short name** entered in the wizard's **Names** page.
 
 Creates a modeless dialog box.
 
-```  
+```
 HWND Create(
     HWND hWndParent,  
     LPARAM dwInitParam = NULL );  
@@ -99,18 +99,18 @@ HWND Create(
 HWND Create(
     HWND hWndParent,  
     RECT&, 
-    LPARAM dwInitParam = NULL); 
+    LPARAM dwInitParam = NULL);
 ```
 
 ### Parameters
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] The handle to the owner window.
 
-**RECT&** *rect*  
+**RECT&** *rect*
 [in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the dialog's size and position.
 
-*dwInitParam*  
+*dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.
 
 ### Return Value
@@ -151,16 +151,16 @@ static LRESULT CALLBACK DialogProc(
 
 ### Parameters
 
-*hWnd*  
+*hWnd*<br/>
 [in] The handle to the dialog box.
 
-*uMsg*  
+*uMsg*<br/>
 [in] The message sent to the dialog box.
 
-*wParam*  
+*wParam*<br/>
 [in] Additional message-specific information.
 
-*lParam*  
+*lParam*<br/>
 [in] Additional message-specific information.
 
 ### Return Value
@@ -177,18 +177,18 @@ You can override `DialogProc` to provide a different mechanism for handling mess
 
 Creates a modal dialog box.
 
-```   
+```
 INT_PTR DoModal(  
     HWND hWndParent = ::GetActiveWindow(),   
-    LPARAM dwInitParam = NULL); 
+    LPARAM dwInitParam = NULL);
 ```
 
 ### Parameters
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] The handle to the owner window. The default value is the return value of the [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 function.
 
-*dwInitParam*  
+*dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.
 
 ### Return Value
@@ -205,13 +205,13 @@ To create a modeless dialog box, call [Create](#create).
 
 Destroys a modal dialog box.
 
-```   
-BOOL EndDialog(int nRetCode); 
+```
+BOOL EndDialog(int nRetCode);
 ```
 
 ### Parameters
 
-*nRetCode*  
+*nRetCode*<br/>
 [in] The value to be returned by [CDialogImpl::DoModal](#domodal).
 
 ### Return Value
@@ -229,8 +229,8 @@ TRUE if the dialog box is destroyed; otherwise, FALSE.
 
 Returns `DialogProc`, the current dialog box procedure.
 
-```   
-virtual WNDPROC GetDialogProc(); 
+```
+virtual WNDPROC GetDialogProc();
 ```
 
 ### Return Value
@@ -245,13 +245,13 @@ Override this method to replace the dialog procedure with your own.
 
 Converts (maps) the dialog-box units of the specified rectangle to screen units (pixels).
 
-```   
-BOOL MapDialogRect(LPRECT lpRect); 
+```
+BOOL MapDialogRect(LPRECT lpRect);
 ```
 
 ### Parameters
 
-*lpRect*  
+*lpRect*<br/>
 Points to a `CRect` object or [RECT](../../mfc/reference/rect-structure1.md) structure that is to receive the client coordinates of the update that encloses the update region.
 
 ### Return Value
@@ -266,13 +266,13 @@ The function replaces the coordinates in the specified `RECT` structure with the
 
 Called after receiving the last message (typically `WM_NCDESTROY`).
 
-```   
-virtual void OnFinalMessage(HWND hWnd); 
+```
+virtual void OnFinalMessage(HWND hWnd);
 ```
 
 ### Parameters
 
-*hWnd*  
+*hWnd*<br/>
 [in] A handle to the window being destroyed.
 
 ### Remarks
@@ -283,26 +283,26 @@ Note that if you want to automatically delete your object upon the window destru
 
 Called only once, when the first message is received, to process messages sent to the dialog box.
 
-```   
+```
 static LRESULT CALLBACK StartDialogProc(
     HWND hWnd,  
     UINT uMsg,  
     WPARAM wParam,  
-    LPARAM lParam); 
+    LPARAM lParam);
 ```
 
 ### Parameters
 
-*hWnd*  
+*hWnd*<br/>
 [in] The handle to the dialog box.
 
-*uMsg*  
+*uMsg*<br/>
 [in] The message sent to the dialog box.
 
-*wParam*  
+*wParam*<br/>
 [in] Additional message-specific information.
 
-*lParam*  
+*lParam*<br/>
 [in] Additional message-specific information.
 
 ### Return Value
@@ -315,5 +315,5 @@ After the initial call to `StartDialogProc`, `DialogProc` is set as a dialog pro
 
 ## See Also
 
-[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)   
+[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

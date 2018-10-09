@@ -30,32 +30,32 @@ For more information on interfaces, see [interface class](../windows/interface-c
 
 ## Remarks
 
-*attributes* (optional)  
-Additional declarative information. For more information on attributes and attribute classes, see **Attributes**.
+*attributes*<br/>
+(Optional) Additional declarative information. For more information on attributes and attribute classes, see **Attributes**.
 
-*class-key*  
+*class-key*<br/>
 **class** or **typename**
 
-*type-parameter-identifier(s)*  
+*type-parameter-identifier(s)*<br/>
 Comma-separated identifiers list.
 
-*type-parameter-constraints-clauses*  
+*type-parameter-constraints-clauses*<br/>
 Takes the form specified in [Constraints on Generic Type Parameters (C++/CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)
 
-*accessibility-modifiers* (optional)  
-Accessibility modifiers (e.g. **public, private**).
+*accessibility-modifiers*<br/>
+(Optional) Accessibility modifiers (e.g. **public, private**).
 
-*identifier*  
+*identifier*<br/>
 The interface name.
 
-*base-list* (optional)  
-A list that contains one or more explicit base interfaces separated by commas.
+*base-list*<br/>
+(Optional) A list that contains one or more explicit base interfaces separated by commas.
 
-*interface-body*  
+*interface-body*<br/>
 Declarations of the interface members.
 
-*declarators* (optional)  
-Declarations of variables based on this type.
+*declarators*<br/>
+(Optional) Declarations of variables based on this type.
 
 ## Example
 

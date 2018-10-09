@@ -19,14 +19,14 @@ This class implements a connection point container to manage a collection of [IC
 ## Syntax
 
 ```
-template<class T>  
+template<class T>
 class ATL_NO_VTABLE IConnectionPointContainerImpl 
    : public IConnectionPointContainer
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IConnectionPointContainerImpl`.
 
 ## Members
@@ -84,5 +84,5 @@ See [IConnectionPointContainer::FindConnectionPoint](/windows/desktop/api/ocidl/
 
 ## See Also
 
-[IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)   
+[IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

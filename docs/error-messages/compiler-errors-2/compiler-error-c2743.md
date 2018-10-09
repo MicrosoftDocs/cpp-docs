@@ -13,35 +13,37 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2743
-'type' : cannot catch a native type with __clrcall destructor or copy constructor  
-  
- A module compiled with **/clr** attempted to catch an exception of native type and where the type's destructor or copy constructor uses `__clrcall` calling convention.  
-  
- When compiled with **/clr**, exception handling expects the member functions in a native type to be [__cdecl](../../cpp/cdecl.md) and not [__clrcall](../../cpp/clrcall.md). Native types with member functions using `__clrcall` calling convention cannot be caught in a module compiled with **/clr**.  
-  
- For more information, see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md).  
-  
-## Example  
- The following sample generates C2743.  
-  
-```  
-// C2743.cpp  
-// compile with: /clr  
-public struct S {  
-   __clrcall ~S() {}  
-};  
-  
-public struct T {  
-   ~T() {}  
-};  
-  
-int main() {  
-   try {}  
-   catch(S) {}   // C2743  
-   // try the following line instead  
-   // catch(T) {}  
-  
-   try {}  
-   catch(S*) {}   // OK  
-}  
+
+'type' : cannot catch a native type with __clrcall destructor or copy constructor
+
+A module compiled with **/clr** attempted to catch an exception of native type and where the type's destructor or copy constructor uses `__clrcall` calling convention.
+
+When compiled with **/clr**, exception handling expects the member functions in a native type to be [__cdecl](../../cpp/cdecl.md) and not [__clrcall](../../cpp/clrcall.md). Native types with member functions using `__clrcall` calling convention cannot be caught in a module compiled with **/clr**.
+
+For more information, see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md).
+
+## Example
+
+The following sample generates C2743.
+
+```
+// C2743.cpp
+// compile with: /clr
+public struct S {
+   __clrcall ~S() {}
+};
+
+public struct T {
+   ~T() {}
+};
+
+int main() {
+   try {}
+   catch(S) {}   // C2743
+   // try the following line instead
+   // catch(T) {}
+
+   try {}
+   catch(S*) {}   // OK
+}
 ```

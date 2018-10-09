@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1064
-compiler limit : token overflowed internal buffer  
-  
- An identifier exceeds the length of the internal buffer used for identifiers. Shorten the name.
+
+compiler limit : token overflowed internal buffer
+
+An identifier exceeds the length of the internal buffer used for identifiers. Shorten the name.

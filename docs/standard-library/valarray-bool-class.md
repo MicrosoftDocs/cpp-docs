@@ -56,7 +56,7 @@ int main( )
 
    vaBool = ( vaL < vaR );
    cout << "The result of the less-than comparison "
-   << "test is the\n valarray<bool>: ( ";
+   << "test is the\nvalarray<bool>: ( ";
    for ( i = 0 ; i < 10 ; i++ )
       cout << vaBool [ i ] << " ";
    cout << ")." << endl;
@@ -65,7 +65,7 @@ int main( )
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The result of the less-than comparison test is the
- valarray<bool>: ( 0 0 1 0 1 0 1 0 1 0 ).
+valarray<bool>: ( 0 0 1 0 1 0 1 0 1 0 ).
 */
 ```
 

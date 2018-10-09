@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2067
-cast to array type is illegal  
-  
- An object was cast to an array type.
+
+cast to array type is illegal
+
+An object was cast to an array type.

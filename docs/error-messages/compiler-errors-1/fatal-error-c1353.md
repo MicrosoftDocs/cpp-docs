@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1353
-metadata operation failed: runtime not installed or version mismatch  
-  
- Reinstall your CLR or Visual Studio.
+
+metadata operation failed: runtime not installed or version mismatch
+
+Reinstall your CLR or Visual Studio.

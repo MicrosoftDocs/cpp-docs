@@ -172,8 +172,8 @@ thread& operator=(thread&& Other) noexcept;
 
 ### Parameters
 
-*Other*  
- A **thread** object.
+*Other*<br/>
+A **thread** object.
 
 ### Return Value
 
@@ -195,8 +195,8 @@ void swap(thread& Other) noexcept;
 
 ### Parameters
 
-*Other*  
- A **thread** object.
+*Other*<br/>
+A **thread** object.
 
 ## <a name="thread"></a>  thread::thread Constructor
 
@@ -212,14 +212,14 @@ thread(thread&& Other) noexcept;
 
 ### Parameters
 
-*F*  
- An application-defined function to be executed by the thread.
+*F*<br/>
+An application-defined function to be executed by the thread.
 
-*A*  
- A list of arguments to be passed to *F*.
+*A*<br/>
+A list of arguments to be passed to *F*.
 
-*Other*  
- An existing **thread** object.
+*Other*<br/>
+An existing **thread** object.
 
 ### Remarks
 

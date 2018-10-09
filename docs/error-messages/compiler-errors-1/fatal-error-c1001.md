@@ -14,9 +14,9 @@ ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1001
 
-> INTERNAL COMPILER ERROR(compiler file *file*, line *number*)  
-  
-The compiler cannot generate correct code for a construct, often due to the combination of a particular expression and an optimization option, or an issue in parsing. If the compiler file listed has a utc or C2 path segment, it is probably an optimization error. If the file has a cxxfe or c1xx path segment, or is msc1.cpp, it is probably a parser error. If the file named is cl.exe, there is no other information available.  
+> INTERNAL COMPILER ERROR(compiler file *file*, line *number*)
+
+The compiler cannot generate correct code for a construct, often due to the combination of a particular expression and an optimization option, or an issue in parsing. If the compiler file listed has a utc or C2 path segment, it is probably an optimization error. If the file has a cxxfe or c1xx path segment, or is msc1.cpp, it is probably a parser error. If the file named is cl.exe, there is no other information available.
 
 You can often fix an optimization problem by removing one or more optimization options. To determine which option is at fault, remove options one at a time and recompile until the error message goes away. The options most commonly responsible are [/Og (Global optimizations)](../../build/reference/og-global-optimizations.md) and [/Oi (Generate Intrinsic Functions)](../../build/reference/oi-generate-intrinsic-functions.md). Once you determine which optimization option is responsible, you can disable it around the function where the error occurs by using the [optimize](../../preprocessor/optimize.md) pragma, and continue to use the option for the rest of the module. For more information about optimization options, see [Optimization best practices](../../build/reference/optimization-best-practices.md).
 

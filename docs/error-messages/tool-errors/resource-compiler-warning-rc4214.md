@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Warning RC4214
-Codepage not valid : ignored  
-  
- The .rc file contained a codepage argument and the codepage specified is invalid. See [IsValidCodePage](/windows/desktop/api/winnls/nf-winnls-isvalidcodepage) for more information.
+
+Codepage not valid : ignored
+
+The .rc file contained a codepage argument and the codepage specified is invalid. See [IsValidCodePage](/windows/desktop/api/winnls/nf-winnls-isvalidcodepage) for more information.

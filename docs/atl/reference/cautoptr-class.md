@@ -22,13 +22,13 @@ This class represents a smart pointer object.
 ## Syntax
 
 ```
-template <typename T>  
+template <typename T>
 class CAutoPtr
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The pointer type.
 
 ## Members
@@ -92,7 +92,7 @@ void Attach(T* p) throw();
 
 ### Parameters
 
-*p*  
+*p*<br/>
 The `CAutoPtr` object will take ownership of this pointer.
 
 ### Remarks
@@ -116,16 +116,16 @@ explicit CAutoPtr(T* p) throw();
 template<typename TSrc>
 CAutoPtr(CAutoPtr<TSrc>& p) throw();
 
-template<> 
+template<>
 CAutoPtr(CAutoPtr<T>& p) throw();
 ```
 
 ### Parameters
 
-*p*  
+*p*<br/>
 An existing pointer.
 
-*TSrc*  
+*TSrc*<br/>
 The type being managed by another `CAutoPtr`, used to initialize the current object.
 
 ### Remarks
@@ -206,10 +206,10 @@ CAutoPtr<T>& operator= (CAutoPtr<TSrc>& p);
 
 ### Parameters
 
-*p*  
+*p*<br/>
 A pointer.
 
-*TSrc*  
+*TSrc*<br/>
 A class type.
 
 ### Return Value
@@ -248,7 +248,7 @@ See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md
 
 The cast operator.
 
-```  
+```
 operator T* () const throw();
 ```
 
@@ -262,6 +262,6 @@ See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md
 
 ## See Also
 
-[CHeapPtr Class](../../atl/reference/cheapptr-class.md)   
-[CAutoVectorPtr Class](../../atl/reference/cautovectorptr-class.md)   
+[CHeapPtr Class](../../atl/reference/cheapptr-class.md)<br/>
+[CAutoVectorPtr Class](../../atl/reference/cautovectorptr-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

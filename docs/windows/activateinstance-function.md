@@ -28,13 +28,13 @@ inline HRESULT ActivateInstance(
 
 ### Parameters
 
-*T*  
+*T*<br/>
 A type to activate.
 
-*activatableClassId*  
+*activatableClassId*<br/>
 The name of the class ID that defines parameter *T*.
 
-*instance*  
+*instance*<br/>
 When this operation completes, a reference to an instance of *T*.
 
 ## Return Value

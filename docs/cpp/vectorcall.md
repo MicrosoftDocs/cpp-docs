@@ -37,7 +37,7 @@ typedef struct {
    __m256 y;
    __m256 z;
 } hva3;    // 3 element HVA type on __m256
-```  
+```
 
 Declare your functions explicitly with the **__vectorcall** keyword in header files to allow separately compiled code to link without errors. Functions must be prototyped to use **__vectorcall**, and can’t use a `vararg` variable length argument list.
 
@@ -51,25 +51,25 @@ For non-static class member functions, if the function is defined out-of-line, t
 struct MyClass {
    void __vectorcall mymethod();
 };
-```  
+```
 
 this:
 
 ```cpp
 void MyClass::mymethod() { return; }
-```  
+```
 
 is equivalent to this:
 
 ```cpp
 void __vectorcall MyClass::mymethod() { return; }
-```  
+```
 
 The **__vectorcall** calling convention modifier must be specified when a pointer to a **__vectorcall** function is created. The next example creates a **typedef** for a pointer to a **__vectorcall** function that takes four **double** arguments and returns an **__m256** value:
 
 ```cpp
 typedef __m256 (__vectorcall * vcfnptr)(double, double, double, double);
-```  
+```
 
 ## __vectorcall convention on x64
 
@@ -158,7 +158,7 @@ hva4 __vectorcall example6(hva2 a, hva4 b, __m256 c, hva2 d) {
    return b;
 }
 
-int __cdecl main( void )  
+int __cdecl main( void )
 {
    hva4 h4;
    hva2 h2;
@@ -179,7 +179,7 @@ int __cdecl main( void )
    i = example5(1, h2, 3, h4, 5);
    h4 = example6(h2, h4, c, h2);
 }
-```  
+```
 
 ## __vectorcall convention on x86
 
@@ -264,7 +264,7 @@ hva4 __vectorcall example6(hva2 a, hva4 b, __m256 c, hva2 d) {
    return b;
 }
 
-int __cdecl main( void )  
+int __cdecl main( void )
 {
    hva4 h4;
    hva2 h2;
@@ -285,11 +285,11 @@ int __cdecl main( void )
    i = example5(1, h2, 3, h4, 5);
    h4 = example6(h2, h4, c, h2);
 }
-```  
+```
 
 **End Microsoft Specific**
 
 ## See also
 
-[Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md)   
+[Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)

@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1127
-library is corrupt  
-  
- The library file is corrupt. Rebuild the library.
+
+library is corrupt
+
+The library file is corrupt. Rebuild the library.

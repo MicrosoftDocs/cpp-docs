@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2533
-'identifier' : constructors not allowed a return type  
-  
- A constructor cannot have a return type (not even a `void` return type).  
-  
- A common source of this error is a missing semicolon between the end of a class definition and the first constructor implementation. The compiler sees the class as a definition of the return type for the constructor function, and generates C2533.  
-  
- The following sample generates C2533, and shows how to fix it:  
-  
-```  
-// C2533.cpp  
-// compile with: /c  
-class X {  
-public:  
-   X();     
-};  
-  
-int X::X() {}   // C2533 - constructor return type not allowed  
-X::X() {}   // OK - fix by using no return type  
+
+'identifier' : constructors not allowed a return type
+
+A constructor cannot have a return type (not even a `void` return type).
+
+A common source of this error is a missing semicolon between the end of a class definition and the first constructor implementation. The compiler sees the class as a definition of the return type for the constructor function, and generates C2533.
+
+The following sample generates C2533, and shows how to fix it:
+
+```
+// C2533.cpp
+// compile with: /c
+class X {
+public:
+   X();
+};
+
+int X::X() {}   // C2533 - constructor return type not allowed
+X::X() {}   // OK - fix by using no return type
 ```

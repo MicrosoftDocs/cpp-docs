@@ -13,9 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # TN060: The New Windows Common Controls
-Technical Note 60, describing the new Windows common controls and how to use them, has been incorporated into [Controls](../mfc/controls-mfc.md).  
-  
-## See Also  
- [Technical Notes by Number](../mfc/technical-notes-by-number.md)   
- [Technical Notes by Category](../mfc/technical-notes-by-category.md)
+
+Technical Note 60, describing the new Windows common controls and how to use them, has been incorporated into [Controls](../mfc/controls-mfc.md).
+
+## See Also
+
+[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
+[Technical Notes by Category](../mfc/technical-notes-by-category.md)
 

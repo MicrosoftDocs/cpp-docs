@@ -19,13 +19,13 @@ This class provides a default implementation of the `IServiceProvider` interface
 ## Syntax
 
 ```
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE IServiceProviderImpl : public IServiceProvider
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 Your class, derived from `IServiceProviderImpl`.
 
 ## Members
@@ -69,14 +69,14 @@ STDMETHOD(QueryService)(
 
 ### Parameters
 
-[IN] *guidService*  
-Pointer to a service identifier (SID).
+*guidService*<br/>
+[in] Pointer to a service identifier (SID).
 
-[IN] *riid*  
-Identifier of the interface to which the caller is to gain access.
+*riid*<br/>
+[in] Identifier of the interface to which the caller is to gain access.
 
-[OUT] *ppvObj*  
-Indirect pointer to the requested interface.
+*ppvObj*<br/>
+[out] Indirect pointer to the requested interface.
 
 ### Return Value
 

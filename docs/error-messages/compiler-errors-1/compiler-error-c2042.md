@@ -13,22 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2042
-signed/unsigned keywords mutually exclusive  
-  
- The keywords `signed` and `unsigned` are used in a single declaration.  
-  
- The following sample generates C2042:  
-  
-```  
-// C2042.cpp  
-unsigned signed int i;   // C2042  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2042b.cpp  
-// compile with: /c  
-unsigned int i;  
-signed int ii;  
+
+signed/unsigned keywords mutually exclusive
+
+The keywords `signed` and `unsigned` are used in a single declaration.
+
+The following sample generates C2042:
+
+```
+// C2042.cpp
+unsigned signed int i;   // C2042
+```
+
+Possible resolution:
+
+```
+// C2042b.cpp
+// compile with: /c
+unsigned int i;
+signed int ii;
 ```

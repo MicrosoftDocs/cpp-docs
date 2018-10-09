@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2996
-'function' : recursive function template definition  
-  
- A function definition attempts to instantiate its root templated class. Recursive template instantiations are not allowed.
+
+'function' : recursive function template definition
+
+A function definition attempts to instantiate its root templated class. Recursive template instantiations are not allowed.

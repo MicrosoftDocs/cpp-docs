@@ -35,5 +35,5 @@ None
 
 ## See Also
 
-[Colors Window](../windows/colors-window-image-editor-for-icons.md)  
+[Colors Window](../windows/colors-window-image-editor-for-icons.md)<br/>
 [Image Editor for Icons](../windows/image-editor-for-icons.md)

@@ -1,12 +1,12 @@
 ---
 title: "ModuleBase Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/21/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["implements/Microsoft::WRL::Details::ModuleBase"]
+f1_keywords: ["implements/Microsoft::WRL::Details::ModuleBase", "implements/Microsoft::WRL::Details::ModuleBase::DecrementObjectCount", "implements/Microsoft::WRL::Details::ModuleBase::IncrementObjectCount", "implements/Microsoft::WRL::Details::ModuleBase::ModuleBase", "implements/Microsoft::WRL::Details::ModuleBase::~ModuleBase"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["ModuleBase class"]
+helpviewer_keywords: ["ModuleBase class", "Microsoft::WRL::Details::ModuleBase::DecrementObjectCount method", "Microsoft::WRL::Details::ModuleBase::IncrementObjectCount method", "Microsoft::WRL::Details::ModuleBase::ModuleBase, constructor", "Microsoft::WRL::Details::ModuleBase::~ModuleBase, destructor"]
 ms.assetid: edce7591-6893-46f7-94a7-382827775548
 author: "mikeblome"
 ms.author: "mblome"
@@ -30,17 +30,17 @@ Represents the base class of the [Module](../windows/module-class.md) classes.
 
 ### Public Constructors
 
-|Name|Description|
-|----------|-----------------|
-|[ModuleBase::ModuleBase Constructor](../windows/modulebase-modulebase-constructor.md)|Initializes an instance of the `Module` class.|
-|[ModuleBase::~ModuleBase Destructor](../windows/modulebase-tilde-modulebase-destructor.md)|Deinitializes the current instance of the `Module` class.|
+Name                                         | Description
+-------------------------------------------- | ---------------------------------------------------------
+[ModuleBase::ModuleBase](#modulebase)        | Initializes an instance of the `Module` class.
+[ModuleBase::~ModuleBase](#tilde-modulebase) | Deinitializes the current instance of the `Module` class.
 
 ### Public Methods
 
-|Name|Description|
-|----------|-----------------|
-|[ModuleBase::DecrementObjectCount Method](../windows/modulebase-decrementobjectcount-method.md)|When implemented, decrements the number of objects tracked by the module.|
-|[ModuleBase::IncrementObjectCount Method](../windows/modulebase-incrementobjectcount-method.md)|When implemented, increments the number of objects tracked by the module.|
+Name                                                      | Description
+--------------------------------------------------------- | -------------------------------------------------------------------------
+[ModuleBase::DecrementObjectCount](#decrementobjectcount) | When implemented, decrements the number of objects tracked by the module.
+[ModuleBase::IncrementObjectCount](#incrementobjectcount) | When implemented, increments the number of objects tracked by the module.
 
 ## Inheritance Hierarchy
 
@@ -52,6 +52,58 @@ Represents the base class of the [Module](../windows/module-class.md) classes.
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## <a name="tilde-modulebase"></a>ModuleBase::~ModuleBase
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+```cpp
+virtual ~ModuleBase();
+```
+
+### Remarks
+
+Deinitializes the current instance of the `ModuleBase` class.
+
+## <a name="decrementobjectcount"></a>ModuleBase::DecrementObjectCount
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+```cpp
+virtual long DecrementObjectCount() = 0;
+```
+
+### Return Value
+
+The count before the decrement operation.
+
+### Remarks
+
+When implemented, decrements the number of objects tracked by the module.
+
+## <a name="incrementobjectcount"></a>ModuleBase::IncrementObjectCount
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+```cpp
+virtual long IncrementObjectCount() = 0;
+```
+
+### Return Value
+
+The count before the increment operation.
+
+### Remarks
+
+When implemented, increments the number of objects tracked by the module.
+
+## <a name="modulebase"></a>ModuleBase::ModuleBase
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+```cpp
+ModuleBase();
+```
+
+### Remarks
+
+Initializes an instance of the `Module` class.

@@ -13,17 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # RAND_MAX
-## Syntax  
-  
-```  
-  
-#include <stdlib.h>  
-  
-```  
-  
-## Remarks  
- The constant `RAND_MAX` is the maximum value that can be returned by the `rand` function. `RAND_MAX` is defined as the value 0x7fff.  
-  
-## See Also  
- [rand](../c-runtime-library/reference/rand.md)   
- [Global Constants](../c-runtime-library/global-constants.md)
+
+## Syntax
+
+```
+
+#include <stdlib.h>
+
+```
+
+## Remarks
+
+The constant `RAND_MAX` is the maximum value that can be returned by the `rand` function. `RAND_MAX` is defined as the value 0x7fff.
+
+## See Also
+
+[rand](../c-runtime-library/reference/rand.md)<br/>
+[Global Constants](../c-runtime-library/global-constants.md)

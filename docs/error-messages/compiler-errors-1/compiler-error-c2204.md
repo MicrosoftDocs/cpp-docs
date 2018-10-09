@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2204
-'type' : type definition found within parentheses  
-  
- The type is defined as an operand or in prototype scope.
+
+'type' : type definition found within parentheses
+
+The type is defined as an operand or in prototype scope.

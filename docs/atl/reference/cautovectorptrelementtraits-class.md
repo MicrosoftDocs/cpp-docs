@@ -22,14 +22,14 @@ This class provides methods, static functions, and typedefs useful when creating
 ## Syntax
 
 ```
-template <typename T>  
-class CAutoVectorPtrElementTraits : 
+template <typename T>
+class CAutoVectorPtrElementTraits :
    public CDefaultElementTraits<ATL::CAutoVectorPtr<T>>
 ```
 
 #### Parameters
 
-`T`  
+*T*<br/>
 The pointer type.
 
 ## Members
@@ -79,6 +79,6 @@ typedef T*& OUTARGTYPE;
 
 ## See Also
 
-[CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)   
-[CAutoVectorPtr Class](../../atl/reference/cautovectorptr-class.md)   
+[CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)<br/>
+[CAutoVectorPtr Class](../../atl/reference/cautovectorptr-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

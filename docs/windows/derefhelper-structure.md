@@ -1,7 +1,7 @@
 ---
 title: "DerefHelper Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::Details::DerefHelper"]
@@ -19,20 +19,16 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax
 
 ```cpp
-template <
-   typename T
->
+template <typename T>
 struct DerefHelper;
 
-template <
-   typename T
->
+template <typename T>
 struct DerefHelper<T*>;
 ```
 
 ### Parameters
 
-*T*  
+*T*<br/>
 A template parameter.
 
 ## Remarks

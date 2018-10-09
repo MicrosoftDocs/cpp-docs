@@ -13,14 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4230
-anachronism used : modifiers/qualifiers interspersed; qualifier ignored  
-  
- Using a qualifier before a Microsoft modifier such as `__cdecl` is an outdated practice.  
-  
-## Example  
-  
-```  
-// C4230.cpp  
-// compile with: /W1 /LD  
-int __cdecl const function1();   // C4230 const ignored  
+
+anachronism used : modifiers/qualifiers interspersed; qualifier ignored
+
+Using a qualifier before a Microsoft modifier such as `__cdecl` is an outdated practice.
+
+## Example
+
+```
+// C4230.cpp
+// compile with: /W1 /LD
+int __cdecl const function1();   // C4230 const ignored
 ```

@@ -21,31 +21,33 @@ Specifies the data segment where initialized variables are stored in the .obj fi
 #pragma data_seg( [ [ { push | pop }, ] [ identifier, ] ] [ "segment-name" [, "segment-class" ] )  
 ```  
   
+### Parameters
+
+**push**<br/>
+(Optional) Puts a record on the internal compiler stack. A **push** can have an *identifier* and *segment-name*.  
+
+**pop**<br/>
+(Optional) Removes a record from the top of the internal compiler stack.  
+  
+*identifier*<br/>
+(Optional) When used with **push**, assigns a name to the record on the internal compiler stack. When used with **pop**, pops records off the internal stack until *identifier* is removed; if *identifier* is not found on the internal stack, nothing is popped.  
+  
+*identifier* enables multiple records to be popped with a single **pop** command.  
+  
+*"segment-name"*<br/>
+(Optional) The name of a segment. When used with **pop**, the stack is popped and *segment-name* becomes the active segment name.  
+  
+*"segment-class"*<br/>
+(Optional) Included for compatibility with C++ prior to version 2.0. It is ignored.  
+  
 ## Remarks 
 
 The meaning of the terms *segment* and *section* are interchangeable in this topic.  
   
 OBJ files can be viewed with the [dumpbin](../build/reference/dumpbin-command-line.md) application. The default segment in the .obj file for initialized variables is .data. Variables that are uninitialized are considered to be initialized to zero and are stored in .bss.  
   
-**data_seg** with no parameters resets the segment to .data.  
-  
-*push* (optional)  
-Puts a record on the internal compiler stack. A *push* can have an *identifier* and *segment-name*.  
-  
-*pop* (optional)  
-Removes a record from the top of the internal compiler stack.  
-  
-*identifier* (optional)  
-When used with *push*, assigns a name to the record on the internal compiler stack. When used with *pop*, pops records off the internal stack until *identifier* is removed; if *identifier* is not found on the internal stack, nothing is popped.  
-  
-*identifier* enables multiple records to be popped with a single *pop* command.  
-  
-*"segment-name"*(optional)  
-The name of a segment. When used with *pop*, the stack is popped and *segment-name* becomes the active segment name.  
-  
-*"segment-class"* (optional)  
-Included for compatibility with C++ prior to version 2.0. It is ignored.  
-  
+**data_seg** with no parameters resets the segment to .data.
+
 ## Example  
   
 ```cpp  

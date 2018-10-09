@@ -13,24 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2087
-'identifier' : missing subscript  
-  
- The definition of an array with multiple subscripts is missing a subscript value for a dimension higher than one.  
-  
- The following sample generates C2087:  
-  
-```  
-// C2087.cpp  
-int main() {  
-   char a[10][];   // C2087  
-}  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2087b.cpp  
-int main() {  
-   char b[4][5];  
-}  
+
+'identifier' : missing subscript
+
+The definition of an array with multiple subscripts is missing a subscript value for a dimension higher than one.
+
+The following sample generates C2087:
+
+```
+// C2087.cpp
+int main() {
+   char a[10][];   // C2087
+}
+```
+
+Possible resolution:
+
+```
+// C2087b.cpp
+int main() {
+   char b[4][5];
+}
 ```

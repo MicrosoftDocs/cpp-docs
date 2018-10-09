@@ -13,24 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2054
-expected '(' to follow 'identifier'  
-  
- The function identifier is used in a context that requires trailing parentheses.  
-  
- This error can be caused by omitting an equal sign (=) on a complex initialization.  
-  
- The following sample generates C2054:  
-  
-```  
-// C2054.c  
-int array1[] { 1, 2, 3 };   // C2054, missing =  
-```  
-  
- Possible resolution:  
-  
-```  
-// C2054b.c  
-int main() {  
-   int array2[] = { 1, 2, 3 };  
-}  
+
+expected '(' to follow 'identifier'
+
+The function identifier is used in a context that requires trailing parentheses.
+
+This error can be caused by omitting an equal sign (=) on a complex initialization.
+
+The following sample generates C2054:
+
+```
+// C2054.c
+int array1[] { 1, 2, 3 };   // C2054, missing =
+```
+
+Possible resolution:
+
+```
+// C2054b.c
+int main() {
+   int array2[] = { 1, 2, 3 };
+}
 ```

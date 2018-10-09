@@ -11,9 +11,9 @@ ms.workload: ["cplusplus"]
 ---
 
 # Implement Pure Virtuals
-**What:** Lets you immediately generate the code required to implement all pure virtual methods in a class. 
+**What:** Lets you immediately generate the code required to implement all pure virtual methods in a class.
 
-**When:** You want to inherit from a class with pure virtual functions.  
+**When:** You want to inherit from a class with pure virtual functions.
 
 **Why:** You could manually implement all pure virtual functions one-by-one, however this feature will generate all method signatures automatically.
 

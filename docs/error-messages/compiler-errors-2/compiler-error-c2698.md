@@ -13,24 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2698
-the using-declaration for 'declaration 1' cannot co-exist with the existing using-declaration for 'declaration 2'  
-  
- Once you have a [using declaration](../../cpp/using-declaration.md) for a data member, any using declaration in the same scope that uses the same name is not permitted, as only functions can be overloaded.  
-  
- The following sample generates C2698:  
-  
-```  
-// C2698.cpp  
-struct A {  
-   int x;  
-};  
-  
-struct B {  
-   int x;  
-};  
-  
-struct C : A, B {  
-   using A::x;  
-   using B::x;   // C2698  
-}  
+
+the using-declaration for 'declaration 1' cannot co-exist with the existing using-declaration for 'declaration 2'
+
+Once you have a [using declaration](../../cpp/using-declaration.md) for a data member, any using declaration in the same scope that uses the same name is not permitted, as only functions can be overloaded.
+
+The following sample generates C2698:
+
+```
+// C2698.cpp
+struct A {
+   int x;
+};
+
+struct B {
+   int x;
+};
+
+struct C : A, B {
+   using A::x;
+   using B::x;   // C2698
+}
 ```

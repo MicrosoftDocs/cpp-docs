@@ -28,6 +28,6 @@ The following classes implement or support a class factory:
 
 ## See Also
 
-[Class Overview](../atl/atl-class-overview.md)   
+[Class Overview](../atl/atl-class-overview.md)<br/>
 [Aggregation and Class Factory Macros](../atl/reference/aggregation-and-class-factory-macros.md)
 

@@ -36,6 +36,6 @@ Input files must have the Common Object File Format (COFF) format. If an input f
 
 ## See also
 
-[.Obj Files as Linker Input](../../build/reference/dot-obj-files-as-linker-input.md)  
-[EDITBIN Reference](../../build/reference/editbin-reference.md)  
-[DUMPBIN Reference](../../build/reference/dumpbin-reference.md)  
+[.Obj Files as Linker Input](../../build/reference/dot-obj-files-as-linker-input.md)<br/>
+[EDITBIN Reference](../../build/reference/editbin-reference.md)<br/>
+[DUMPBIN Reference](../../build/reference/dumpbin-reference.md)

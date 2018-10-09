@@ -24,6 +24,6 @@ The following class provides registry support:
 
 ## See Also
 
-[Class Overview](../atl/atl-class-overview.md)   
+[Class Overview](../atl/atl-class-overview.md)<br/>
 [Registry Macros](../atl/reference/registry-macros.md)
 

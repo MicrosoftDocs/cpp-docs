@@ -11,17 +11,18 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # A.28   Use of num_threads Clause
-The following example demonstrates the `num_threads` clause ([Section 2.3](../../parallel/openmp/2-3-parallel-construct.md) on page 8). The parallel region is executed with a maximum of 10 threads.  
-  
-```  
-#include <omp.h>  
-main()  
-{  
-    omp_set_dynamic(1);  
-    ...  
-    #pragma omp parallel num_threads(10)  
-    {  
-        ... parallel region ...  
-    }  
-}  
+
+The following example demonstrates the `num_threads` clause ([Section 2.3](../../parallel/openmp/2-3-parallel-construct.md) on page 8). The parallel region is executed with a maximum of 10 threads.
+
+```
+#include <omp.h>
+main()
+{
+    omp_set_dynamic(1);
+    ...
+    #pragma omp parallel num_threads(10)
+    {
+        ... parallel region ...
+    }
+}
 ```

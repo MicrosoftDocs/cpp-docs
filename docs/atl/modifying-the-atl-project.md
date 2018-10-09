@@ -21,6 +21,6 @@ To handle any necessary events from the ActiveX controls, see [Adding Functional
 
 ## See Also
 
-[Composite Control Fundamentals](../atl/atl-composite-control-fundamentals.md)   
+[Composite Control Fundamentals](../atl/atl-composite-control-fundamentals.md)<br/>
 [How to: Create a Resource Script File](../windows/how-to-create-a-resource-script-file.md)
 

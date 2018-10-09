@@ -288,7 +288,7 @@ Microsoft Visual C++ supports these additional predefined macros.
 
 - **&#95;WINRT&#95;DLL** Defined as 1 when compiled as C++ and both [/ZW (Windows Runtime Compilation)](../build/reference/zw-windows-runtime-compilation.md) and [/LD or /LDd](../build/reference/md-mt-ld-use-run-time-library.md) compiler options are set. Otherwise, undefined.
 
- Preprocessor macros used to determine the ATL or MFC library version are not predefined by the compiler. These macros are defined in the headers for the library, so they are undefined in preprocessor directives before the required header is included.
+Preprocessor macros used to determine the ATL or MFC library version are not predefined by the compiler. These macros are defined in the headers for the library, so they are undefined in preprocessor directives before the required header is included.
 
 - **&#95;ATL&#95;VER** Defined in \<atldef.h> as an integer literal that encodes the ATL version number.
 
@@ -296,6 +296,6 @@ Microsoft Visual C++ supports these additional predefined macros.
 
 ## See Also
 
-[Macros (C/C++)](../preprocessor/macros-c-cpp.md)   
-[Preprocessor Operators](../preprocessor/preprocessor-operators.md)   
+[Macros (C/C++)](../preprocessor/macros-c-cpp.md)<br/>
+[Preprocessor Operators](../preprocessor/preprocessor-operators.md)<br/>
 [Preprocessor Directives](../preprocessor/preprocessor-directives.md)

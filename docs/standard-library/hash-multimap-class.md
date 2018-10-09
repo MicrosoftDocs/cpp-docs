@@ -32,16 +32,16 @@ class hash_multimap
 ### Parameters
 
 *Key*<br/>
- The key data type to be stored in the hash_multimap.
+The key data type to be stored in the hash_multimap.
 
 *Type*<br/>
- The element data type to be stored in the hash_multimap.
+The element data type to be stored in the hash_multimap.
 
 *Traits*<br/>
- The type that includes two function objects, one of class *Traits* that is able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type `size_t`. This argument is optional, and the `hash_compare<Key, less<Key>>` is the default value.
+The type that includes two function objects, one of class *Traits* that is able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type `size_t`. This argument is optional, and the `hash_compare<Key, less<Key>>` is the default value.
 
 *Allocator*<br/>
- The type that represents the stored allocator object that encapsulates details about the hash_multimap's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<pair <const Key, Type>>`.
+The type that represents the stored allocator object that encapsulates details about the hash_multimap's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<pair <const Key, Type>>`.
 
 ## Remarks
 
@@ -509,7 +509,7 @@ size_type count(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The key of the elements to be matched from the hash_multimap.
+The key of the elements to be matched from the hash_multimap.
 
 ### Return Value
 
@@ -804,7 +804,7 @@ int main()
 
 ```Output
 After the emplace insertion, hm1 contains:
- 1 => a
+1 => a
 ```
 
 ## <a name="emplace_hint"></a>  hash_multimap::emplace_hint
@@ -864,7 +864,7 @@ int main()
 
 ```Output
 After the emplace insertion, hm1 contains:
- 1 => a
+1 => a
 ```
 
 ## <a name="empty"></a>  hash_multimap::empty
@@ -1005,7 +1005,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### Parameters
 
 *key*<br/>
- The argument key to be compared with the sort key of an element from the hash_multimap being searched.
+The argument key to be compared with the sort key of an element from the hash_multimap being searched.
 
 ### Return Value
 
@@ -1039,12 +1039,12 @@ int main( )
    pair <IntMMap::const_iterator, IntMMap::const_iterator> p1, p2;
    p1 = hm1.equal_range( 2 );
 
-   cout << "The lower bound of the element with "
-        << "a key of 2\n in the hash_multimap hm1 is: "
+   cout << "The lower bound of the element with a key of 2\n"
+        << "in the hash_multimap hm1 is: "
         << p1.first -> second << "." << endl;
 
-   cout << "The upper bound of the element with "
-        << "a key of 2\n in the hash_multimap hm1 is: "
+   cout << "The upper bound of the element with a key of 2\n"
+        << "in the hash_multimap hm1 is: "
         << p1.second -> second << "." << endl;
 
    // Compare the upper_bound called directly
@@ -1052,8 +1052,8 @@ int main( )
 
    cout << "A direct call of upper_bound( 2 ) gives "
         << hm1_RcIter -> second << "," << endl
-        << " matching the 2nd element of the pair"
-        << " returned by equal_range( 2 )." << endl;
+        << "matching the 2nd element of the pair "
+        << "returned by equal_range( 2 )." << endl;
 
    p2 = hm1.equal_range( 4 );
 
@@ -1070,11 +1070,11 @@ int main( )
 
 ```Output
 The lower bound of the element with a key of 2
- in the hash_multimap hm1 is: 20.
+in the hash_multimap hm1 is: 20.
 The upper bound of the element with a key of 2
- in the hash_multimap hm1 is: 30.
+in the hash_multimap hm1 is: 30.
 A direct call of upper_bound( 2 ) gives 30,
- matching the 2nd element of the pair returned by equal_range( 2 ).
+matching the 2nd element of the pair returned by equal_range( 2 ).
 The hash_multimap hm1 doesn't have an element with a key less than 4.
 ```
 
@@ -1096,16 +1096,16 @@ size_type erase(const key_type& key);
 ### Parameters
 
 *_Where*<br/>
- Position of the element to be removed from the hash_multimap.
+Position of the element to be removed from the hash_multimap.
 
 *first*<br/>
- Position of the first element removed from the hash_multimap.
+Position of the first element removed from the hash_multimap.
 
 *last*<br/>
- Position just beyond the last element removed from the hash_multimap.
+Position just beyond the last element removed from the hash_multimap.
 
 *key*<br/>
- The key of the elements to be removed from the hash_multimap.
+The key of the elements to be removed from the hash_multimap.
 
 ### Return Value
 
@@ -1171,7 +1171,7 @@ int main()
     n = hm3.erase(2);
 
     cout << "After the element with a key of 2 is deleted,\n"
-         << " the hash_multimap hm3 is:";
+         << "the hash_multimap hm3 is:";
     for (pIter = hm3.begin(); pIter != hm3.end(); pIter++)
         cout << " " << pIter -> second;
     cout << "." << endl;
@@ -1186,7 +1186,7 @@ int main()
 
     cout << "After another element with a key equal to that of the"
          << endl;
-    cout  << " 2nd element is deleted, "
+    cout  << "2nd element is deleted, "
           << "the hash_multimap hm3 is:";
     for (pIter = hm3.begin(); pIter != hm3.end(); pIter++)
         cout << " " << pIter -> second;
@@ -1198,10 +1198,10 @@ int main()
 After the 2nd element is deleted, the hash_multimap hm1 is: 1 3 4.
 After the middle two elements are deleted, the hash_multimap hm2 is: 1 16.
 After the element with a key of 2 is deleted,
- the hash_multimap hm3 is: 0 2 3.
+the hash_multimap hm3 is: 0 2 3.
 The number of elements removed from hm3 is: 2.
 After another element with a key equal to that of the
- 2nd element is deleted, the hash_multimap hm3 is: 0 3.
+2nd element is deleted, the hash_multimap hm3 is: 0 3.
 ```
 
 ## <a name="find"></a>  hash_multimap::find
@@ -1220,7 +1220,7 @@ const_iterator find(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The key to be matched by the sort key of an element from the hash_multimap being searched.
+The key to be matched by the sort key of an element from the hash_multimap being searched.
 
 ### Return Value
 
@@ -1414,18 +1414,18 @@ hash_multimap(
 
 template <class InputIterator>
 hash_multimap(
- InputIterator First,
+    InputIterator First,
     InputIterator Last);
 
 template <class InputIterator>
 hash_multimap(
- InputIterator First,
+    InputIterator First,
     InputIterator Last,
     const Compare& Comp);
 
 template <class InputIterator>
 hash_multimap(
- InputIterator First,
+    InputIterator First,
     InputIterator Last,
     const Compare& Comp,
     const Allocator& Al);
@@ -1671,7 +1671,7 @@ const_iterator lower_bound(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The argument key to be compared with the sort key of an element from the hash_multimap being searched.
+The argument key to be compared with the sort key of an element from the hash_multimap being searched.
 
 ### Return Value
 
@@ -1727,7 +1727,7 @@ int main( )
    hm1_AcIter--;
    hm1_RcIter = hm1.lower_bound( hm1_AcIter -> first );
    cout << "The first element of hm1 with a key matching"
-        << endl << " that of the last element is: "
+        << endl << "that of the last element is: "
         << hm1_RcIter -> second << "." << endl;
 
    // Note that the first element with a key equal to
@@ -1746,7 +1746,7 @@ The element of hash_multimap hm1 with a key of 2 is: 20.
 The first element of hash_multimap hm1 with a key of 3 is: 20.
 The hash_multimap hm1 doesn't have an element with a key of 4.
 The first element of hm1 with a key matching
- that of the last element is: 20.
+that of the last element is: 20.
 This is not the last element of hash_multimap hm1.
 ```
 
@@ -1958,8 +1958,8 @@ int main( )
    hm1.erase ( hm1_rIter -> first );
 
    hm1_rIter = hm1.rbegin( );
-   cout << "After the erasure, the first element"
-        << "\n in the reversed hash_multimap is "
+   cout << "After the erasure, the first element\n"
+        << "in the reversed hash_multimap is "
         << hm1_rIter -> first << "." << endl;
 }
 ```
@@ -1969,7 +1969,7 @@ The first element of the reversed hash_multimap hm1 is 3.
 The hash_multimap is: 1 2 3 .
 The reversed hash_multimap is: 3 2 1 .
 After the erasure, the first element
- in the reversed hash_multimap is 2.
+in the reversed hash_multimap is 2.
 ```
 
 ## <a name="reference"></a>  hash_multimap::reference
@@ -2225,7 +2225,7 @@ void swap(hash_multimap& right);
 ### Parameters
 
 *right*<br/>
- The hash_multimap providing the elements to be swapped or the hash_multimap whose elements are to be exchanged with those of the hash_multimap.
+The hash_multimap providing the elements to be swapped or the hash_multimap whose elements are to be exchanged with those of the hash_multimap.
 
 ### Remarks
 
@@ -2299,7 +2299,7 @@ const_iterator upper_bound(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The argument key to be compared with the sort key of an element from the hash_multimap being searched.
+The argument key to be compared with the sort key of an element from the hash_multimap being searched.
 
 ### Return Value
 
@@ -2336,8 +2336,8 @@ int main( )
         << hm1_RcIter -> second << "." << endl;
 
    hm1_RcIter = hm1.upper_bound( 2 );
-   cout << "The first element of hash_multimap hm1\n with a key "
-        << " greater than 2 is: "
+   cout << "The first element of hash_multimap hm1\n"
+        << "with a key greater than 2 is: "
         << hm1_RcIter -> second << "." << endl;
 
    // If no match is found for the key, end( ) is returned
@@ -2355,7 +2355,7 @@ int main( )
    hm1_AcIter = hm1.begin( );
    hm1_RcIter = hm1.upper_bound( hm1_AcIter -> first );
    cout << "The first element of hm1 with a key greater than"
-        << endl << " that of the initial element of hm1 is: "
+        << endl << "that of the initial element of hm1 is: "
         << hm1_RcIter -> second << "." << endl;
 }
 ```
@@ -2363,10 +2363,10 @@ int main( )
 ```Output
 The 1st element of hash_multimap hm1 with a key greater than 1 is: 20.
 The first element of hash_multimap hm1
- with a key  greater than 2 is: 30.
+with a key  greater than 2 is: 30.
 The hash_multimap hm1 doesn't have an element with a key of 4.
 The first element of hm1 with a key greater than
- that of the initial element of hm1 is: 20.
+that of the initial element of hm1 is: 20.
 ```
 
 ## <a name="value_comp"></a>  hash_multimap::value_comp

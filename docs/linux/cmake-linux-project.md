@@ -16,7 +16,7 @@ ms.workload: ["cplusplus", "linux"]
 
 # Configure a Linux CMake project
 
-**Visual Studio 2017 version 15.4 and later**  
+**Visual Studio 2017 version 15.4 and later**<br/>
 When you install the Linux C++ workload for Visual Studio, CMake support for Linux is selected by default. You can now work on your existing code base that uses CMake without having to convert it to a Visual Studio project. If your code base is cross-platform, you can target both Windows and Linux from within Visual Studio.
 
 This topic assumes you have basic familiarity with CMake support in Visual Studio. For more information, see [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md). For more information about CMake itself, see [Build, Test and Package Your Software With CMake](https://cmake.org/).
@@ -57,14 +57,14 @@ After you specify a Linux target, your source is copied to your Linux machine. T
 
 ![Generate CMake cache on Linux](media/cmake-linux-1.png "Generate the CMake cache on Linux")
 
-**Visual Studio 2017 version 15.7 and later:**  
+**Visual Studio 2017 version 15.7 and later:**<br/>
 To provide IntelliSense support for remote headers, Visual Studio automatically copies them to a directory on your local Windows machine. For more information, see [IntelliSense for remote headers](configure-a-linux-project.md#remote_intellisense).
 
 ## Debug the project
 
 To debug your code on the remote system, set a breakpoint, select the CMake target as the startup item in the toolbar menu next to the project setting, and choose **&#x23f5; Start** on the toolbar, or press F5.
 
-To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This opens or creates a launch.vs.json configuration file that contains information about your program. To specify additional arguments, add them in the `args` JSON array. For more information, see [Open Folder projects in Visual C++](https://docs.microsoft.com/en-us/cpp/ide/non-msbuild-projects).
+To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This opens or creates a launch.vs.json configuration file that contains information about your program. To specify additional arguments, add them in the `args` JSON array. For more information, see [Open Folder projects in Visual C++](../ide/non-msbuild-projects.md).
 
 ## Configure CMake settings for Linux
 
@@ -156,5 +156,5 @@ cmake -E capabilities
 
 ## See Also
 
-[Working with Project Properties](../ide/working-with-project-properties.md)  
+[Working with Project Properties](../ide/working-with-project-properties.md)<br/>
 [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md)  

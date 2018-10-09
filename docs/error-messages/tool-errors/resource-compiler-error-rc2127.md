@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2127
-version WORDs separated by commas expected  
-  
- Version numbers in a version resource should be of type **WORD**, and separated by commas.
+
+version WORDs separated by commas expected
+
+Version numbers in a version resource should be of type **WORD**, and separated by commas.

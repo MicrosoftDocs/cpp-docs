@@ -13,17 +13,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # main Function Restrictions
-Several restrictions apply to the **main** function that do not apply to any other C++ functions. The **main** function:  
-  
--   Cannot be overloaded (see [Function Overloading](function-overloading.md)).  
-  
--   Cannot be declared as **inline**.  
-  
--   Cannot be declared as **static**.  
-  
--   Cannot have its address taken.  
-  
--   Cannot be called.  
-  
-## See also  
- [main: Program Startup](../cpp/main-program-startup.md)
+
+Several restrictions apply to the **main** function that do not apply to any other C++ functions. The **main** function:
+
+- Cannot be overloaded (see [Function Overloading](function-overloading.md)).
+
+- Cannot be declared as **inline**.
+
+- Cannot be declared as **static**.
+
+- Cannot have its address taken.
+
+- Cannot be called.
+
+## See also
+
+[main: Program Startup](../cpp/main-program-startup.md)

@@ -13,13 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1021
-invalid preprocessor command 'string'  
-  
- `string` is not a valid [preprocessor directive](../../preprocessor/preprocessor-directives.md). To resolve the error, use a valid preprocessor name for `string`.  
-  
- The following sample generates C1021:  
-  
-```  
-// C1021.cpp  
-#BadPreProcName    // C1021 delete line  
+
+invalid preprocessor command 'string'
+
+`string` is not a valid [preprocessor directive](../../preprocessor/preprocessor-directives.md). To resolve the error, use a valid preprocessor name for `string`.
+
+The following sample generates C1021:
+
+```
+// C1021.cpp
+#BadPreProcName    // C1021 delete line
 ```

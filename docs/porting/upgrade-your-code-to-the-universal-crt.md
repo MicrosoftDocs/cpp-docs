@@ -44,8 +44,8 @@ Many functions were added or updated in the UCRT to improve ISO C99 conformance,
   
 ## See Also  
 
-[Visual C++ Porting and Upgrading Guide](visual-cpp-porting-and-upgrading-guide.md)  
-[Overview of potential upgrade issues (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)  
-[Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
-[Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md)  
+[Visual C++ Porting and Upgrading Guide](visual-cpp-porting-and-upgrading-guide.md)<br/>
+[Overview of potential upgrade issues (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>
+[Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
+[Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md)<br/>
 [C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md)  

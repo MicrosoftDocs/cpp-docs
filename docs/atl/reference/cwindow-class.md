@@ -224,7 +224,7 @@ class CWindow
 
 [CDialogImpl](../../atl/reference/cdialogimpl-class.md) Allows you to create a modal or modeless dialog box.
 
-For more information about windows, see [Windows](https://msdn.microsoft.com/library/windows/desktop/ms632595) and subsequent topics in the Windows SDK. For more information about using windows in ATL, see the article [ATL Window Classes](../../atl/atl-window-classes.md).
+For more information about windows, see [Windows](/windows/desktop/winmsg/windows) and subsequent topics in the Windows SDK. For more information about using windows in ATL, see the article [ATL Window Classes](../../atl/atl-window-classes.md).
 
 ## Requirements
 
@@ -252,7 +252,7 @@ void Attach(HWND hWndNew) throw();
 
 ### Parameters
 
-*hWndNew*  
+*hWndNew*<br/>
 [in] The handle to a window.
 
 ### Example
@@ -301,7 +301,7 @@ BOOL CenterWindow(HWND hWndCenter = NULL) throw();
 
 ### Parameters
 
-*hWndCenter*  
+*hWndCenter*<br/>
 [in] The handle to the window against which to center. If this parameter is NULL (the default value), the method will set *hWndCenter* to the window's parent window if it is a child window. Otherwise, it will set *hWndCenter* to the window's owner window.
 
 ### Return Value
@@ -408,28 +408,28 @@ HWND Create(
 
 ### Parameters
 
-*lpstrWndClass*  
+*lpstrWndClass*<br/>
 [in] A pointer to the window's class.
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] The handle to the parent or owner window.
 
-*rect*  
+*rect*<br/>
 [in] A variable of type [_U_RECT](../../atl/reference/u-rect-class.md) specifying the position of the window. The default value is NULL. When this parameter is NULL, the value of `CWindow::rcDefault` is used.
 
-*szWindowName*  
+*szWindowName*<br/>
 [in] Specifies the name of the window. The default value is NULL.
 
-*dwStyle*  
+*dwStyle*<br/>
 [in] The style of the window. The default value is 0, meaning no style is specified. For a list of possible values, see [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK.
 
-*dwExStyle*  
+*dwExStyle*<br/>
 [in] The extended window style. The default value is 0, meaning no extended style is specified. For a list of possible values, see [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.
 
-*MenuOrID*  
+*MenuOrID*<br/>
 [in] A variable of type [_U_MENUorID](../../atl/reference/u-menuorid-class.md) specifying a handle to a menu or a window identifier. The default value is 0U.
 
-*lpCreateParam*  
+*lpCreateParam*<br/>
 A pointer to the window-creation data contained in a [CREATESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632603) structure.
 
 ### Return Value
@@ -494,7 +494,7 @@ CWindow(HWND hWnd = NULL) throw();
 
 ### Parameters
 
-*hWnd*  
+*hWnd*<br/>
 [in] The handle to a window.
 
 ### Remarks
@@ -753,7 +753,7 @@ HWND GetDescendantWindow(int nID) const throw();
 
 ### Parameters
 
-*nID*  
+*nID*<br/>
 [in] The identifier of the descendant window to be retrieved.
 
 ### Return Value
@@ -777,13 +777,13 @@ HRESULT GetDlgControl(
 
 ### Parameters
 
-*nID*  
+*nID*<br/>
 [in] The resource ID of the control being retrieved.
 
-*iid*  
+*iid*<br/>
 [in] The ID of the interface you would like to get from the control.
 
-*ppCtrl*  
+*ppCtrl*<br/>
 [out] The pointer to the interface.
 
 ### Return Value
@@ -819,13 +819,13 @@ HRESULT GetDlgHost(
 
 ### Parameters
 
-*nID*  
+*nID*<br/>
 [in] The resource ID of the control being retrieved.
 
-*iid*  
+*iid*<br/>
 [in] The ID of the interface you would like to get from the control.
 
-*ppHost*  
+*ppHost*<br/>
 [out] The pointer to the interface.
 
 ### Return Value
@@ -940,7 +940,7 @@ HICON GetIcon(BOOL bBigIcon = TRUE) const;
 
 ### Parameters
 
-*bBigIcon*  
+*bBigIcon*<br/>
 [in] If TRUE (the default value) the method returns the large icon. Otherwise, it returns the small icon.
 
 ### Return Value
@@ -1290,16 +1290,16 @@ int GetWindowText(CSimpleString& strText) const;
 
 ### Parameters
 
-*lpszStringBuf*  
+*lpszStringBuf*<br/>
 A buffer to which to write the window text.
 
-*nMaxCount*  
+*nMaxCount*<br/>
 The size of the buffer in characters; also the maximum number of characters to write.
 
-*bstrText*  
+*bstrText*<br/>
 A BSTR in which to store the window text.
 
-*strText*  
+*strText*<br/>
 A `CString` in which to store the window text.
 
 ### Return Value
@@ -1603,7 +1603,7 @@ BOOL LockWindowUpdate(BOOL bLock = TRUE) throw();
 
 ### Parameters
 
-*bLock*  
+*bLock*<br/>
 [in] If TRUE (the default value), the window will be locked. Otherwise, it will be unlocked.
 
 ### Return Value
@@ -1675,13 +1675,13 @@ BOOL ModifyStyle(
 
 ### Parameters
 
-*dwRemove*  
+*dwRemove*<br/>
 [in] Specifies the window styles to be removed during style modification.
 
-*dwAdd*  
+*dwAdd*<br/>
 [in] Specifies the window styles to be added during style modification.
 
-*nFlags*  
+*nFlags*<br/>
 [in] Window-positioning flags. For a list of possible values, see the [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) function in the Windows SDK.
 
 ### Return Value
@@ -1721,13 +1721,13 @@ BOOL ModifyStyleEx(
 
 ### Parameters
 
-*dwRemove*  
+*dwRemove*<br/>
 [in] Specifies the extended styles to be removed during style modification.
 
-*dwAdd*  
+*dwAdd*<br/>
 [in] Specifies the extended styles to be added during style modification.
 
-*nFlags*  
+*nFlags*<br/>
 [in] Window-positioning flags. For a list of possible values, see the [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) function in the Windows SDK.
 
 ### Return Value
@@ -1805,7 +1805,7 @@ See [OpenClipboard](/windows/desktop/api/winuser/nf-winuser-openclipboard) in th
 
 Converts a `CWindow` object to an HWND.
 
-```  
+```
 operator HWND() const throw();
 ```
 
@@ -1860,10 +1860,10 @@ void Print(HDC hDC, DWORD dwFlags) const throw();
 
 ### Parameters
 
-*hDC*  
+*hDC*<br/>
 [in] The handle to a device context.
 
-*dwFlags*  
+*dwFlags*<br/>
 [in] Specifies the drawing options. You can combine one or more of the following flags:
 
 - PRF_CHECKVISIBLE Draw the window only if it is visible.
@@ -1888,10 +1888,10 @@ void PrintClient(HDC hDC, DWORD dwFlags) const throw();
 
 ### Parameters
 
-*hDC*  
+*hDC*<br/>
 [in] The handle to a device context.
 
-*dwFlags*  
+*dwFlags*<br/>
 [in] Specifies drawing options. You can combine one or more of the following flags:
 
 - PRF_CHECKVISIBLE Draw the window only if it is visible.
@@ -1964,13 +1964,13 @@ BOOL ResizeClient(
 
 ### Parameters
 
-*nWidth*  
+*nWidth*<br/>
 New width of the window in pixels.
 
-*nHeight*  
+*nHeight*<br/>
 New height of the window in pixels.
 
-*bRedraw*  
+*bRedraw*<br/>
 A flag indicating whether to redraw changes. Default is FALSE, indicating the window does not redraw changes.
 
 ##  <a name="screentoclient"></a>  CWindow::ScreenToClient
@@ -2078,16 +2078,16 @@ void SendMessageToDescendants(
 
 ### Parameters
 
-*message*  
+*message*<br/>
 [in] The message to be sent.
 
-*wParam*  
+*wParam*<br/>
 [in] Additional message-specific information.
 
-*lParam*  
+*lParam*<br/>
 [in] Additional message-specific information.
 
-*bDeep*  
+*bDeep*<br/>
 [in] If TRUE (the default value), the message will be sent to all descendant windows; otherwise, it will be sent only to the immediate child windows.
 
 ### Remarks
@@ -2161,7 +2161,7 @@ int SetDlgCtrlID(int nID) throw();
 
 ### Parameters
 
-*nID*  
+*nID*<br/>
 [in] The new value to set for the window's identifier.
 
 ### Return Value
@@ -2221,10 +2221,10 @@ void SetFont(HFONT hFont, BOOL bRedraw = TRUE) throw();
 
 ### Parameters
 
-*hFont*  
+*hFont*<br/>
 [in] The handle to the new font.
 
-*bRedraw*  
+*bRedraw*<br/>
 [in] If TRUE (the default value), the window is redrawn. Otherwise, it is not.
 
 ##  <a name="sethotkey"></a>  CWindow::SetHotKey
@@ -2237,10 +2237,10 @@ int SetHotKey(WORD wVirtualKeyCode, WORD wModifiers) throw();
 
 ### Parameters
 
-*wVirtualKeyCode*  
+*wVirtualKeyCode*<br/>
 [in] The virtual key code of the hot key. For a list of standard virtual key codes, see Winuser.h.
 
-*wModifiers*  
+*wModifiers*<br/>
 [in] The modifiers of the hot key. For a list of possible values, see WM_SETHOTKEY in the Windows SDK.
 
 ### Return Value
@@ -2257,10 +2257,10 @@ HICON SetIcon(HICON hIcon, BOOL bBigIcon = TRUE) throw();
 
 ### Parameters
 
-*hIcon*  
+*hIcon*<br/>
 [in] The handle to a new icon.
 
-*bBigIcon*  
+*bBigIcon*<br/>
 [in] If TRUE (the default value), the method sets a large icon. Otherwise, it sets a small icon.
 
 ### Return Value
@@ -2309,7 +2309,7 @@ void SetRedraw(BOOL bRedraw = TRUE) throw();
 
 ### Parameters
 
-*bRedraw*  
+*bRedraw*<br/>
 [in] Specifies the state of the redraw flag. If TRUE (the default value), the redraw flag is set; if FALSE, the flag is cleared.
 
 ### Remarks

@@ -13,12 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /LARGEADDRESSAWARE
-```  
-/LARGEADDRESSAWARE  
-```  
-  
-## Remarks  
- This option edits the image to indicate that the application can handle addresses larger than 2 gigabytes.  
-  
-## See Also  
- [EDITBIN Options](../../build/reference/editbin-options.md)
+
+```
+/LARGEADDRESSAWARE
+```
+
+## Remarks
+
+This option edits the image to indicate that the application can handle addresses larger than 2 gigabytes.
+
+## See Also
+
+[EDITBIN Options](../../build/reference/editbin-options.md)

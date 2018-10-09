@@ -19,7 +19,7 @@ This class is a helper for the [CSimpleMap](../../atl/reference/csimplemap-class
 ## Syntax
 
 ```
-template <class TKey, class TVal>  
+template <class TKey, class TVal>
 class CSimpleMapEqualHelperFalse
 ```
 
@@ -52,10 +52,10 @@ static bool IsEqualKey(const TKey& k1, const TKey& k2);
 
 ### Parameters
 
-*k1*  
+*k1*<br/>
 The first key.
 
-*k2*  
+*k2*<br/>
 The second key.
 
 ### Return Value
@@ -84,5 +84,5 @@ This method always returns false, and will call `ATLASSERT` with an argument of 
 
 ## See Also
 
-[CSimpleMapEqualHelper Class](../../atl/reference/csimplemapequalhelper-class.md)   
+[CSimpleMapEqualHelper Class](../../atl/reference/csimplemapequalhelper-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

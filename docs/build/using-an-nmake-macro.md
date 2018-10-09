@@ -12,19 +12,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Using an NMAKE Macro
-To use a macro, enclose its name in parentheses preceded by a dollar sign ($) as follows.  
-  
-## Syntax  
-  
-```  
-$(macroname)  
-```  
-  
-## Remarks  
- No spaces are allowed. The parentheses are optional if *macroname* is a single character. The definition string replaces $(*macroname*); an undefined macro is replaced by a null string.  
-  
-## What do you want to know more about?  
- [Macro substitution](../build/macro-substitution.md)  
-  
-## See Also  
- [Macros and NMAKE](../build/macros-and-nmake.md)
+
+To use a macro, enclose its name in parentheses preceded by a dollar sign ($) as follows.
+
+## Syntax
+
+```
+$(macroname)
+```
+
+## Remarks
+
+No spaces are allowed. The parentheses are optional if *macroname* is a single character. The definition string replaces $(*macroname*); an undefined macro is replaced by a null string.
+
+## What do you want to know more about?
+
+[Macro substitution](../build/macro-substitution.md)
+
+## See Also
+
+[Macros and NMAKE](../build/macros-and-nmake.md)

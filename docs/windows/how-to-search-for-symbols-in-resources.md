@@ -37,6 +37,6 @@ Win32
 
 ## See Also
 
-[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)  
-[Resource Files](../windows/resource-files-visual-studio.md)  
+[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)<br/>
+[Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [Resource Editors](../windows/resource-editors.md)

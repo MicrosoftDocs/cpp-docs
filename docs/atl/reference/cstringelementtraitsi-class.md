@@ -19,13 +19,13 @@ This class provides static functions related to strings stored in collection cla
 ## Syntax
 
 ```
-template <typename T, class CharTraits = CDefaultCharTraits<T ::XCHAR>>  
+template <typename T, class CharTraits = CDefaultCharTraits<T ::XCHAR>>
 class CStringElementTraitsI : public CElementTraitsBase<T>
 ```
 
 #### Parameters
 
-*T*  
+*T*<br/>
 The type of data to be stored in the collection.
 
 ## Members
@@ -71,10 +71,10 @@ static bool CompareElements(INARGTYPE str1, INARGTYPE str2) throw();
 
 ### Parameters
 
-*str1*  
+*str1*<br/>
 The first string element.
 
-*str2*  
+*str2*<br/>
 The second string element.
 
 ### Return Value
@@ -95,10 +95,10 @@ static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2) throw();
 
 ### Parameters
 
-*str1*  
+*str1*<br/>
 The first string element.
 
-*str2*  
+*str2*<br/>
 The second string element.
 
 ### Return Value
@@ -119,7 +119,7 @@ static ULONG Hash(INARGTYPE str) throw();
 
 ### Parameters
 
-*str*  
+*str*<br/>
 The string element.
 
 ### Return Value
@@ -144,6 +144,6 @@ typedef T& OUTARGTYPE;
 
 ## See Also
 
-[CElementTraitsBase Class](../../atl/reference/celementtraitsbase-class.md)   
-[Class Overview](../../atl/atl-class-overview.md)   
+[CElementTraitsBase Class](../../atl/reference/celementtraitsbase-class.md)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [CStringElementTraits Class](../../atl/reference/cstringelementtraits-class.md)

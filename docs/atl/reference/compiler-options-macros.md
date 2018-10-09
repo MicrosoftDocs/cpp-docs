@@ -190,7 +190,7 @@ A symbol that indicates a function should not be inlined.
 
 ### Parameters
 
-*myfunction*  
+*myfunction*<br/>
 The function that should not be inlined.
 
 ### Remarks

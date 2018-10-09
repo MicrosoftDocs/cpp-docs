@@ -1,4 +1,4 @@
-{ 
+{
     "redirections": [
         {
             "source_path": "docs/assembler/arm/index.md",
@@ -2418,6 +2418,11 @@
         {
             "source_path": "docs/dotnet/greater-stl-clr.md",
             "redirect_url": "/cpp/dotnet/functional-stl-clr#greater",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-migrate-to-clr-safe-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/pure-and-verifiable-code-cpp-cli",
             "redirect_document_id": false
         },
         {
@@ -4957,7 +4962,7 @@
         },
         {
             "source_path": "docs/dotnet/priority-queue-value-type-stl-clr.md",
-	        "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#value_type",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#value_type",
             "redirect_document_id": false
         },
         {
@@ -5956,6 +5961,176 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/cpp-cli-migration-primer.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/outline-of-changes-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/language-keywords-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/managed-types-cpp-cl.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/declaration-of-a-managed-class-type.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/declaration-of-a-clr-reference-class-object.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/declaration-of-a-clr-array.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/changes-in-constructor-initialization-order.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/changes-in-destructor-semantics.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/member-declarations-within-a-class-or-interface-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/property-declaration.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/property-index-declaration.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/delegates-and-events.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/sealing-a-virtual-function.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/overloaded-operators.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/changes-to-conversion-operators.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/explicit-override-of-an-interface-member.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/iterating-over-stl-collection-by-using-for-each.md",
+            "redirect_url": "/cpp/dotnet/for-each-in",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-iterate-over-arrays-with-for-each.md",
+            "redirect_url": "/cpp/dotnet/for-each-in",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md",
+            "redirect_url": "/cpp/dotnet/for-each-in",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-iterate-over-a-user-defined-collection-with-for-each.md",
+            "redirect_url": "/cpp/dotnet/for-each-in",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/private-virtual-functions.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/static-const-int-linkage-is-no-longer-literal.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/value-types-and-their-behaviors-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/clr-enum-type.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/implicit-boxing-of-value-types.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/a-tracking-handle-to-a-boxed-value.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/value-type-semantics.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/general-language-changes-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/string-literal.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/param-array-and-ellipsis.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/typeof-goes-to-t-typeid.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/initializer-lists.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/cast-notation-and-introduction-of-safe-cast-angles.md",
+            "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
@@ -5983,6 +6158,11 @@
         {
             "source_path": "docs/ide/index.md",
             "redirect_url": "/cpp/ide/ide_and_tools_for_visual_cpp_development",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/building-external-projects.md",
+            "redirect_url": "/cpp/ide/non-msbuild-projects",
             "redirect_document_id": false
         },
         {
@@ -6236,6 +6416,491 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
+            "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/activationfactory-addref-method.md",
+            "redirect_url": "/cpp/windows/activationfactory-class#addref",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/activationfactory-getiids-method.md",
+            "redirect_url": "/cpp/windows/activationfactory-class#getiids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/activationfactory-getruntimeclassname-method.md",
+            "redirect_url": "/cpp/windows/activationfactory-class#getruntimeclassname",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/activationfactory-gettrustlevel-method.md",
+            "redirect_url": "/cpp/windows/activationfactory-class#gettrustlevel",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/activationfactory-queryinterface-method.md",
+            "redirect_url": "/cpp/windows/activationfactory-class#queryinterface",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/activationfactory-release-method.md",
+            "redirect_url": "/cpp/windows/activationfactory-class#release",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/argtraits-args-constant.md",
+            "redirect_url": "/cpp/windows/argtraits-structure#args",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/argtraitshelper-args-constant.md",
+            "redirect_url": "/cpp/windows/argtraitshelper-structure#args",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-asyncbase-constructor.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#asyncbase",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-cancel-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#cancel",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-checkvalidstatefordelegatecall-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#checkvalidstatefordelegatecall",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-checkvalidstateforresultscall-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#checkvalidstateforresultscall",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-close-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-continueasyncoperation-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#continueasyncoperation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-currentstatus-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#currentstatus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-errorcode-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#errorcode",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-firecompletion-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#firecompletion",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-fireprogress-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#fireprogress",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-get-errorcode-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#get-errorcode",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-get-id-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#get-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-get-status-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#get-status",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-getoncomplete-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#getoncomplete",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-getonprogress-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#getonprogress",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-oncancel-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#oncancel",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-onclose-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#onclose",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-onstart-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#onstart",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-put-id-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#put-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-putoncomplete-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#putoncomplete",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-putonprogress-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#putonprogress",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-start-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#start",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-trytransitiontocompleted-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#trytransitiontocompleted",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/asyncbase-trytransitiontoerror-method.md",
+            "redirect_url": "/cpp/windows/asyncbase-class#trytransitiontoerror",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/boolstruct-member-data-member.md",
+            "redirect_url": "/cpp/windows/boolstruct-structure#member",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/callback-function-windows-runtime-cpp-template-library.md",
+            "redirect_url": "/cpp/windows/callback-function-wrl",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/chaininterfaces-cancastto-method.md",
+            "redirect_url": "/cpp/windows/chaininterfaces-structure#cancastto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/chaininterfaces-casttounknown-method.md",
+            "redirect_url": "/cpp/windows/chaininterfaces-structure#casttounknown",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/chaininterfaces-fillarraywithiid-method.md",
+            "redirect_url": "/cpp/windows/chaininterfaces-structure#fillarraywithiid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/chaininterfaces-iidcount-constant.md",
+            "redirect_url": "/cpp/windows/chaininterfaces-structure#iidcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/chaininterfaces-verify-method.md",
+            "redirect_url": "/cpp/windows/chaininterfaces-structure#verify",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/classfactory-addref-method.md",
+            "redirect_url": "/cpp/windows/classfactory-class#addref",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/classfactory-classfactory-constructor.md",
+            "redirect_url": "/cpp/windows/classfactory-class#classfactory",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/classfactory-lockserver-method.md",
+            "redirect_url": "/cpp/windows/classfactory-class#lockserver",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/classfactory-queryinterface-method.md",
+            "redirect_url": "/cpp/windows/classfactory-class#queryinterface",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/classfactory-release-method.md",
+            "redirect_url": "/cpp/windows/classfactory-class#release",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-tilde-comptr-destructor.md",
+            "redirect_url": "/cpp/windows/comptr-class#tilde-comptr",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-as-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#as",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-asiid-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#asiid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-asweak-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#asweak",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-attach-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#attach",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-comptr-constructor.md",
+            "redirect_url": "/cpp/windows/comptr-class#comptr",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-copyto-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#copyto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-detach-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#detach",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-get-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#get",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-getaddressof-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#getaddressof",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-internaladdref-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#internaladdref",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-internalrelease-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#internalrelease",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-operator-microsoft-wrl-details-booltype-operator.md",
+            "redirect_url": "/cpp/windows/comptr-class#operator-microsoft-wrl-details-booltype",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-operator-ampersand-operator.md",
+            "redirect_url": "/cpp/windows/comptr-class#operator-ampersand",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-operator-assign-operator.md",
+            "redirect_url": "/cpp/windows/comptr-class#operator-assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-operator-arrow-operator.md",
+            "redirect_url": "/cpp/windows/comptr-class#operator-arrow",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-ptr-data-member.md",
+            "redirect_url": "/cpp/windows/comptr-class#ptr",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-releaseandgetaddressof-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#releaseandgetaddressof",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-reset.md",
+            "redirect_url": "/cpp/windows/comptr-class#reset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-swap-method.md",
+            "redirect_url": "/cpp/windows/comptr-class#swap",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-operator-equality-operator.md",
+            "redirect_url": "/cpp/windows/comptr-class#operator-equality",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptr-operator-inequality-operator.md",
+            "redirect_url": "/cpp/windows/comptr-class#operator-inequality",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrref-comptrref-constructor.md",
+            "redirect_url": "/cpp/windows/comptrref-class#comptrref",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrref-getaddressof-method.md",
+            "redirect_url": "/cpp/windows/comptrref-class#getaddressof",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrref-operator-interfacetype-star-star-operator.md",
+            "redirect_url": "/cpp/windows/comptrref-class#operator-interfacetype-star-star",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrref-operator-t-star-operator.md",
+            "redirect_url": "/cpp/windows/comptrref-class#operator-t-star",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrref-operator-void-star-star-operator.md",
+            "redirect_url": "/cpp/windows/comptrref-class#operator-void-star-star",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrref-operator-star-operator.md",
+            "redirect_url": "/cpp/windows/comptrref-class#operator-star",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrref-operator-equality-operator.md",
+            "redirect_url": "/cpp/windows/comptrref-class#operator-equality",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrref-operator-inequality-operator.md",
+            "redirect_url": "/cpp/windows/comptrref-class#operator-inequality",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrref-releaseandgetaddressof-method.md",
+            "redirect_url": "/cpp/windows/comptrref-class#releaseandgetaddressof",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrrefbase-operator-iinspectable-star-star-operator.md",
+            "redirect_url": "/cpp/windows/comptrrefbase-class#operator-iinspectable-star-star",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrrefbase-operator-iunknown-star-star-operator.md",
+            "redirect_url": "/cpp/windows/comptrrefbase-class#operator-iunknown-star-star",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/comptrrefbase-ptr-data-member.md",
+            "redirect_url": "/cpp/windows/comptrrefbase-class#ptr",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creatormap-activationid-data-member.md",
+            "redirect_url": "/cpp/windows/creatormap-structure#activationid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creatormap-factorycache-data-member.md",
+            "redirect_url": "/cpp/windows/creatormap-structure#factorycache",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creatormap-factorycreator-data-member.md",
+            "redirect_url": "/cpp/windows/creatormap-structure#factorycreator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creatormap-servername-data-member.md",
+            "redirect_url": "/cpp/windows/creatormap-structure#servername",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/criticalsection-tilde-criticalsection-destructor.md",
+            "redirect_url": "/cpp/windows/criticalsection-class#tilde-criticalsection",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/criticalsection-criticalsection-constructor.md",
+            "redirect_url": "/cpp/windows/criticalsection-class#criticalsection",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/criticalsection-cs-data-member.md",
+            "redirect_url": "/cpp/windows/criticalsection-class#cs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/criticalsection-isvalid-method.md",
+            "redirect_url": "/cpp/windows/criticalsection-class#isvalid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/criticalsection-lock-method.md",
+            "redirect_url": "/cpp/windows/criticalsection-class#lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/criticalsection-trylock-method.md",
+            "redirect_url": "/cpp/windows/criticalsection-class#trylock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/criticalsectiontraits-getinvalidvalue-method.md",
+            "redirect_url": "/cpp/windows/criticalsectiontraits-structure#getinvalidvalue",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/criticalsectiontraits-unlock-method.md",
+            "redirect_url": "/cpp/windows/criticalsectiontraits-structure#unlock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deferrableeventargs-getdeferral-method.md",
+            "redirect_url": "/cpp/windows/deferrableeventargs-class#getdeferral",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deferrableeventargs-invokeallfinished-method.md",
+            "redirect_url": "/cpp/windows/deferrableeventargs-class#invokeallfinished",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/dontusenewusemake-operator-new-operator.md",
+            "redirect_url": "/cpp/windows/dontusenewusemake-class#operator-new",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/event-class-windows-runtime-cpp-template-library.md",
+            "redirect_url": "/cpp/windows/event-class-wrl",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/event-event-constructor-windows-runtime-cpp-template-library.md",
+            "redirect_url": "/cpp/windows/event-class-wrl#event",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/event-operator-assign-operator.md",
+            "redirect_url": "/cpp/windows/event-class-wrl#operator-assign",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/eventsource-add-method.md",
             "redirect_url": "/cpp/windows/eventsource-class#add",
             "redirect_document_id": false
@@ -6273,6 +6938,46 @@
         {
             "source_path": "docs/windows/eventsource-targetspointerlock-data-member.md",
             "redirect_url": "/cpp/windows/eventsource-class#targetspointerlock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventtargetarray-tilde-eventtargetarray-destructor.md",
+            "redirect_url": "/cpp/windows/eventtargetarray-class#tilde-eventtargetarray",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventtargetarray-addtail-method.md",
+            "redirect_url": "/cpp/windows/eventtargetarray-class#addtail",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventtargetarray-begin-method.md",
+            "redirect_url": "/cpp/windows/eventtargetarray-class#begin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventtargetarray-end-method.md",
+            "redirect_url": "/cpp/windows/eventtargetarray-class#end",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventtargetarray-eventtargetarray-constructor.md",
+            "redirect_url": "/cpp/windows/eventtargetarray-class#eventtargetarray",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/eventtargetarray-length-method.md",
+            "redirect_url": "/cpp/windows/eventtargetarray-class#length",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/factorycache-cookie-data-member.md",
+            "redirect_url": "/cpp/windows/factorycache-structure#cookie",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/factorycache-factory-data-member.md",
+            "redirect_url": "/cpp/windows/factorycache-structure#factory",
             "redirect_document_id": false
         },
         {
@@ -6321,6 +7026,186 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/handlenulltraits-close-method.md",
+            "redirect_url": "/cpp/windows/handlenulltraits-structure#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlenulltraits-getinvalidvalue-method.md",
+            "redirect_url": "/cpp/windows/handlenulltraits-structure#getinvalidvalue",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-tilde-handlet-destructor.md",
+            "redirect_url": "/cpp/windows/handlet-class#tilde-handlet",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-attach-method.md",
+            "redirect_url": "/cpp/windows/handlet-class#attach",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-close-method.md",
+            "redirect_url": "/cpp/windows/handlet-class#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-detach-method.md",
+            "redirect_url": "/cpp/windows/handlet-class#detach",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-get-method.md",
+            "redirect_url": "/cpp/windows/handlet-class#get",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-handle-data-member.md",
+            "redirect_url": "/cpp/windows/handlet-class#handle",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-handlet-constructor.md",
+            "redirect_url": "/cpp/windows/handlet-class#handlet",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-internalclose-method.md",
+            "redirect_url": "/cpp/windows/handlet-class#internalclose",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-isvalid-method.md",
+            "redirect_url": "/cpp/windows/handlet-class#isvalid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handlet-operator-assign-operator.md",
+            "redirect_url": "/cpp/windows/handlet-class#operator-assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handletraits-close-method.md",
+            "redirect_url": "/cpp/windows/handletraits-structure#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/handletraits-getinvalidvalue-method.md",
+            "redirect_url": "/cpp/windows/handletraits-structure#getinvalidvalue",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-hstring-constructor.md",
+            "redirect_url": "/cpp/windows/hstring-class#hstring",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-tilde-hstring-destructor.md",
+            "redirect_url": "/cpp/windows/hstring-class#tilde-hstring",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-attach-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#attach",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-copyto-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#copyto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-detach-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#detach",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-get-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#get",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-getaddressof-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#getaddressof",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-isvalid-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#isvalid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-makereference-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#makereference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-release-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#release",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-set-method.md",
+            "redirect_url": "/cpp/windows/hstring-class#set",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-operator-assign-operator.md",
+            "redirect_url": "/cpp/windows/hstring-class#operator-assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-operator-less-than-operator.md",
+            "redirect_url": "/cpp/windows/hstring-class#operator-less-than",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-operator-equality-operator.md",
+            "redirect_url": "/cpp/windows/hstring-class#operator-equality",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstring-operator-inequality-operator.md",
+            "redirect_url": "/cpp/windows/hstring-class#operator-inequality",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstringreference-hstringreference-constructor.md",
+            "redirect_url": "/cpp/windows/hstringreference-class#hstringreference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstringreference-copyto-method.md",
+            "redirect_url": "/cpp/windows/hstringreference-class#copyto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstringreference-get-method.md",
+            "redirect_url": "/cpp/windows/hstringreference-class#get",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstringreference-operator-assign-operator.md",
+            "redirect_url": "/cpp/windows/hstringreference-class#operator-assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstringreference-operator-less-than-operator.md",
+            "redirect_url": "/cpp/windows/hstringreference-class#operator-less-than",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstringreference-operator-equality-operator.md",
+            "redirect_url": "/cpp/windows/hstringreference-class#operator-equality",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/hstringreference-operator-inequality-operator.md",
+            "redirect_url": "/cpp/windows/hstringreference-class#operator-inequality",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/implements-cancastto-method.md",
             "redirect_url": "/cpp/windows/implements-structure#cancastto",
             "redirect_document_id": false
@@ -6338,6 +7223,306 @@
         {
             "source_path": "docs/windows/implements-iidcount-constant.md",
             "redirect_url": "/cpp/windows/implements-structure#iidcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implementshelper-cancastto-method.md",
+            "redirect_url": "/cpp/windows/implementshelper-structure#cancastto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implementshelper-casttounknown-method.md",
+            "redirect_url": "/cpp/windows/implementshelper-structure#casttounknown",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implementshelper-fillarraywithiid-method.md",
+            "redirect_url": "/cpp/windows/implementshelper-structure#fillarraywithiid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implementshelper-iidcount-constant.md",
+            "redirect_url": "/cpp/windows/implementshelper-structure#iidcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-cancastto-method.md",
+            "redirect_url": "/cpp/windows/interfacetraits-structure#cancastto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-casttobase-method.md",
+            "redirect_url": "/cpp/windows/interfacetraits-structure#casttobase",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-casttounknown-method.md",
+            "redirect_url": "/cpp/windows/interfacetraits-structure#casttounknown",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-fillarraywithiid-method.md",
+            "redirect_url": "/cpp/windows/interfacetraits-structure#fillarraywithiid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-iidcount-constant.md",
+            "redirect_url": "/cpp/windows/interfacetraits-structure#iidcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-verify-method.md",
+            "redirect_url": "/cpp/windows/interfacetraits-structure#verify",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/invokehelper-callback-data-member.md",
+            "redirect_url": "/cpp/windows/invokehelper-structure#callback",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/invokehelper-invoke-method.md",
+            "redirect_url": "/cpp/windows/invokehelper-structure#invoke",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/invokehelper-invokehelper-constructor.md",
+            "redirect_url": "/cpp/windows/invokehelper-structure#invokehelper",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/isbaseofstrict-value-constant.md",
+            "redirect_url": "/cpp/windows/isbaseofstrict-structure#value",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/issame-value-constant.md",
+            "redirect_url": "/cpp/windows/issame-structure#value",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/makeallocator-tilde-makeallocator-destructor.md",
+            "redirect_url": "/cpp/windows/makeallocator-class#tilde-makeallocator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/makeallocator-allocate-method.md",
+            "redirect_url": "/cpp/windows/makeallocator-class#allocate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/makeallocator-detach-method.md",
+            "redirect_url": "/cpp/windows/makeallocator-class#detach",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/makeallocator-makeallocator-constructor.md",
+            "redirect_url": "/cpp/windows/makeallocator-class#makeallocator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-tilde-module-destructor.md",
+            "redirect_url": "/cpp/windows/module-class#tilde-module",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-create-method.md",
+            "redirect_url": "/cpp/windows/module-class#create",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-decrementobjectcount-method.md",
+            "redirect_url": "/cpp/windows/module-class#decrementobjectcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-getactivationfactory-method.md",
+            "redirect_url": "/cpp/windows/module-class#getactivationfactory",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-getclassobject-method.md",
+            "redirect_url": "/cpp/windows/module-class#getclassobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-getmodule-method.md",
+            "redirect_url": "/cpp/windows/module-class#getmodule",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-getobjectcount-method.md",
+            "redirect_url": "/cpp/windows/module-class#getobjectcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-incrementobjectcount-method.md",
+            "redirect_url": "/cpp/windows/module-class#incrementobjectcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-module-constructor.md",
+            "redirect_url": "/cpp/windows/module-class#module",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-objectcount-data-member.md",
+            "redirect_url": "/cpp/windows/module-class#objectcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-registercomobject-method.md",
+            "redirect_url": "/cpp/windows/module-class#registercomobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-registerobjects-method.md",
+            "redirect_url": "/cpp/windows/module-class#registerobjects",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-registerwinrtobject-method.md",
+            "redirect_url": "/cpp/windows/module-class#registerwinrtobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-releasenotifier-data-member.md",
+            "redirect_url": "/cpp/windows/module-class#releasenotifier",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-terminate-method.md",
+            "redirect_url": "/cpp/windows/module-class#terminate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-unregistercomobject-method.md",
+            "redirect_url": "/cpp/windows/module-class#unregistercomobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-unregisterobjects-method.md",
+            "redirect_url": "/cpp/windows/module-class#unregisterobjects",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-unregisterwinrtobject-method.md",
+            "redirect_url": "/cpp/windows/module-class#unregisterwinrtobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-genericreleasenotifier-callback-data-member.md",
+            "redirect_url": "/cpp/windows/module-genericreleasenotifier-class#genericreleasenotifier-callback",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-genericreleasenotifier-genericreleasenotifier-constructor.md",
+            "redirect_url": "/cpp/windows/module-genericreleasenotifier-class#genericreleasenotifier-genericreleasenotifier",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-genericreleasenotifier-invoke-method.md",
+            "redirect_url": "/cpp/windows/module-genericreleasenotifier-class#genericreleasenotifier-invoke",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-methodreleasenotifier-invoke-method.md",
+            "redirect_url": "/cpp/windows/module-methodreleasenotifier-class#methodreleasenotifier-invoke",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-methodreleasenotifier-method-data-member.md",
+            "redirect_url": "/cpp/windows/module-methodreleasenotifier-class#methodreleasenotifier-method",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-methodreleasenotifier-methodreleasenotifier-constructor.md",
+            "redirect_url": "/cpp/windows/module-methodreleasenotifier-class#methodreleasenotifier-methodreleasenotifier",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-methodreleasenotifier-object-data-member.md",
+            "redirect_url": "/cpp/windows/module-methodreleasenotifier-class#methodreleasenotifier-object",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-releasenotifier-invoke-method.md",
+            "redirect_url": "/cpp/windows/module-releasenotifier-class#releasenotifier-invoke",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-releasenotifier-release.md",
+            "redirect_url": "/cpp/windows/module-releasenotifier-class#releasenotifier-release",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-releasenotifier-releasenotifier-constructor.md",
+            "redirect_url": "/cpp/windows/module-releasenotifier-class#releasenotifier-releasenotifier",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/module-releasenotifier-tilde-releasenotifier-destructor.md",
+            "redirect_url": "/cpp/windows/module-releasenotifier-class#releasenotifier-tilde-releasenotifier",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/modulebase-tilde-modulebase-destructor.md",
+            "redirect_url": "/cpp/windows/modulebase-class#tilde-modulebase",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/modulebase-decrementobjectcount-method.md",
+            "redirect_url": "/cpp/windows/modulebase-class#decrementobjectcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/modulebase-incrementobjectcount-method.md",
+            "redirect_url": "/cpp/windows/modulebase-class#incrementobjectcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/modulebase-modulebase-constructor.md",
+            "redirect_url": "/cpp/windows/modulebase-class#modulebase",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/mutex-class1.md",
+            "redirect_url": "/cpp/windows/mutex-class",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/mutex-lock-method.md",
+            "redirect_url": "/cpp/windows/mutex-class#lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/mutex-mutex-constructor.md",
+            "redirect_url": "/cpp/windows/mutex-class#mutex",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/mutex-operator-assign-operator.md",
+            "redirect_url": "/cpp/windows/mutex-class#operator-assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/mutextraits-unlock-method.md",
+            "redirect_url": "/cpp/windows/mutextraits-structure#unlock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/roinitializewrapper-roinitializewrapper-constructor.md",
+            "redirect_url": "/cpp/windows/roinitializewrapper-class#roinitializewrapper",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/roinitializewrapper-tilde-roinitializewrapper-destructor.md",
+            "redirect_url": "/cpp/windows/roinitializewrapper-class#tilde-roinitializewrapper",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/roinitializewrapper-hresult-parens-operator.md",
+            "redirect_url": "/cpp/windows/roinitializewrapper-class#hresult",
             "redirect_document_id": false
         },
         {
@@ -6401,6 +7586,106 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/runtimeclassbaset-asiid-method.md",
+            "redirect_url": "/cpp/windows/runtimeclassbaset-structure#asiid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/runtimeclassbaset-getimplementediids-method.md",
+            "redirect_url": "/cpp/windows/runtimeclassbaset-structure#getimplementediids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safeint-safeint.md",
+            "redirect_url": "/cpp/windows/safeint-class#safeint",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safeadd.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safeadd",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safecast.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safecast",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safedivide.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safedivide",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safeequals.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safeequals",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safegreaterthan.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safegreaterthan",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safegreaterthanequals.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safegreaterthanequals",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safelessthan.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safelessthan",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safelessthanequals.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safelessthanequals",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safemodulus.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safemodulus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safemultiply.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safemultiply",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safenotequals.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safenotequals",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safesubtract.md",
+            "redirect_url": "/cpp/windows/safeint-functions#safesubtract",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/safeintexception-safeintexception.md",
+            "redirect_url": "/cpp/windows/safeintexception-class#safeintexception",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/semaphore-lock-method.md",
+            "redirect_url": "/cpp/windows/semaphore-class#lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/semaphore-operator-assign-operator.md",
+            "redirect_url": "/cpp/windows/semaphore-class#operator-assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/semaphore-semaphore-constructor.md",
+            "redirect_url": "/cpp/windows/semaphore-class#semaphore",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/semaphoretraits-unlock-method.md",
+            "redirect_url": "/cpp/windows/semaphoretraits-structure#unlock",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/simpleactivationfactory-activateinstance-method.md",
             "redirect_url": "/cpp/windows/simpleactivationfactory-class#activateinstance",
             "redirect_document_id": false
@@ -6418,6 +7703,121 @@
         {
             "source_path": "docs/windows/simpleclassfactory-createinstance-method.md",
             "redirect_url": "/cpp/windows/simpleclassfactory-class#createinstance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlock-tilde-srwlock-destructor.md",
+            "redirect_url": "/cpp/windows/srwlock-class#tilde-srwlock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlock-lockexclusive-method.md",
+            "redirect_url": "/cpp/windows/srwlock-class#lockexclusive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlock-lockshared-method.md",
+            "redirect_url": "/cpp/windows/srwlock-class#lockshared",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlock-srwlock-constructor.md",
+            "redirect_url": "/cpp/windows/srwlock-class#srwlock-constructor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlock-srwlock-data-member.md",
+            "redirect_url": "/cpp/windows/srwlock-class#srwlock-data-member",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlock-trylockexclusive-method.md",
+            "redirect_url": "/cpp/windows/srwlock-class#trylockexclusive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlock-trylockshared-method.md",
+            "redirect_url": "/cpp/windows/srwlock-class#trylockshared",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlockexclusivetraits-getinvalidvalue-method.md",
+            "redirect_url": "/cpp/windows/srwlockexclusivetraits-structure#getinvalidvalue",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlockexclusivetraits-unlock-method.md",
+            "redirect_url": "/cpp/windows/srwlockexclusivetraits-structure#unlock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlocksharedtraits-getinvalidvalue-method.md",
+            "redirect_url": "/cpp/windows/srwlocksharedtraits-structure#getinvalidvalue",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/srwlocksharedtraits-unlock-method.md",
+            "redirect_url": "/cpp/windows/srwlocksharedtraits-structure#unlock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/swap-function-windows-runtime-cpp-template-library.md",
+            "redirect_url": "/cpp/windows/swap-function-wrl",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/synclockt-tilde-synclockt-destructor.md",
+            "redirect_url": "/cpp/windows/synclockt-class#tilde-synclockt",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/synclockt-islocked-method.md",
+            "redirect_url": "/cpp/windows/synclockt-class#islocked",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/synclockt-sync-data-member.md",
+            "redirect_url": "/cpp/windows/synclockt-class#sync",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/synclockt-synclockt-constructor.md",
+            "redirect_url": "/cpp/windows/synclockt-class#synclockt",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/synclockt-unlock-method.md",
+            "redirect_url": "/cpp/windows/synclockt-class#unlock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/synclockwithstatust-getstatus-method.md",
+            "redirect_url": "/cpp/windows/synclockwithstatust-class#getstatus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/synclockwithstatust-islocked-method.md",
+            "redirect_url": "/cpp/windows/synclockwithstatust-class#islocked",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/synclockwithstatust-status-data-member.md",
+            "redirect_url": "/cpp/windows/synclockwithstatust-class#status",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/synclockwithstatust-synclockwithstatust-constructor.md",
+            "redirect_url": "/cpp/windows/synclockwithstatust-class#synclockwithstatust",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/verifyinheritancehelper-verify-method.md",
+            "redirect_url": "/cpp/windows/verifyinheritancehelper-structure#verify",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/verifyinterfacehelper-verify-method.md",
+            "redirect_url": "/cpp/windows/verifyinterfacehelper-structure#verify",
             "redirect_document_id": false
         },
         {
@@ -6459,6 +7859,676 @@
             "source_path": "docs/windows/walkthrough-creating-a-basic-windows-runtime-component-using-wrl.md",
             "redirect_url": "/cpp/windows/windows-runtime-cpp-template-library-wrl",
             "redirect_document_id": false
-        }
-    ]
+        },
+        {
+            "source_path": "docs/windows/weakreference-class1.md",
+            "redirect_url": "/cpp/windows/weakreference-class",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-tilde-weakreference-destructor.md",
+            "redirect_url": "/cpp/windows/weakreference-class#tilde-weakreference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-decrementstrongreference-method.md",
+            "redirect_url": "/cpp/windows/weakreference-class#decrementstrongreference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-incrementstrongreference-method.md",
+            "redirect_url": "/cpp/windows/weakreference-class#incrementstrongreference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-resolve-method.md",
+            "redirect_url": "/cpp/windows/weakreference-class#resolve",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-setunknown-method.md",
+            "redirect_url": "/cpp/windows/weakreference-class#setunknown",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakreference-weakreference-constructor.md",
+            "redirect_url": "/cpp/windows/weakreference-class#weakreference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/cpp-attributes-reference.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/attributed-programming-concepts.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/purpose-of-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/basic-mechanics-of-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/building-an-attributed-program.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/attribute-categories.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/attribute-contexts.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/attributes-requirements.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-attributes-com-net",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/attribute-programming-faq.md",
+            "redirect_url": "/cpp/windows/attributes/attribute-programming-faq",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/aggregatable.md",
+            "redirect_url": "/cpp/windows/attributes/aggregatable",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/aggregates.md",
+            "redirect_url": "/cpp/windows/attributes/aggregates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/appobject.md",
+            "redirect_url": "/cpp/windows/attributes/appobject",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/array-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/array-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/async-uuid.md",
+            "redirect_url": "/cpp/windows/attributes/async-uuid",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/attributes-alphabetical-reference.md",
+            "redirect_url": "/cpp/windows/attributes/attributes-alphabetical-reference",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/attributes-by-group.md",
+            "redirect_url": "/cpp/windows/attributes/attributes-by-group",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/bindable.md",
+            "redirect_url": "/cpp/windows/attributes/bindable",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/call-as.md",
+            "redirect_url": "/cpp/windows/attributes/call-as",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/case-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/case-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/class-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/class-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/coclass.md",
+            "redirect_url": "/cpp/windows/attributes/coclass",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/com-interface-entry-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/com-interface-entry-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/compiler-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/compiler-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/control.md",
+            "redirect_url": "/cpp/windows/attributes/control",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/cpp-quote.md",
+            "redirect_url": "/cpp/windows/attributes/cpp-quote",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/custom-attributes-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/custom-attributes-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/custom-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/custom-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/data-member-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/data-member-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/db-accessor.md",
+            "redirect_url": "/cpp/windows/attributes/db-accessor",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/db-column.md",
+            "redirect_url": "/cpp/windows/attributes/db-column",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/db-command.md",
+            "redirect_url": "/cpp/windows/attributes/db-command",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/db-param.md",
+            "redirect_url": "/cpp/windows/attributes/db-param",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/db-source.md",
+            "redirect_url": "/cpp/windows/attributes/db-source",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/db-table.md",
+            "redirect_url": "/cpp/windows/attributes/db-table",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/default-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/default-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/defaultbind.md",
+            "redirect_url": "/cpp/windows/attributes/defaultbind",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/defaultcollelem.md",
+            "redirect_url": "/cpp/windows/attributes/defaultcollelem",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/defaultvalue.md",
+            "redirect_url": "/cpp/windows/attributes/defaultvalue",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/defaultvtable.md",
+            "redirect_url": "/cpp/windows/attributes/defaultvtable",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/dispinterface.md",
+            "redirect_url": "/cpp/windows/attributes/dispinterface",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/displaybind.md",
+            "redirect_url": "/cpp/windows/attributes/displaybind",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/dual.md",
+            "redirect_url": "/cpp/windows/attributes/dual",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/emitidl.md",
+            "redirect_url": "/cpp/windows/attributes/emitidl",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/entry.md",
+            "redirect_url": "/cpp/windows/attributes/entry",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/event-receiver.md",
+            "redirect_url": "/cpp/windows/attributes/event-receiver",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/event-source.md",
+            "redirect_url": "/cpp/windows/attributes/event-source",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/export.md",
+            "redirect_url": "/cpp/windows/attributes/export",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/first-is.md",
+            "redirect_url": "/cpp/windows/attributes/first-is",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/helpcontext.md",
+            "redirect_url": "/cpp/windows/attributes/helpcontext",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/helpfile.md",
+            "redirect_url": "/cpp/windows/attributes/helpfile",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/helpstring.md",
+            "redirect_url": "/cpp/windows/attributes/helpstring",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/helpstringcontext.md",
+            "redirect_url": "/cpp/windows/attributes/helpstringcontext",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/helpstringdll.md",
+            "redirect_url": "/cpp/windows/attributes/helpstringdll",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/hidden.md",
+            "redirect_url": "/cpp/windows/attributes/hidden",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/id.md",
+            "redirect_url": "/cpp/windows/attributes/id",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/idl-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/idl-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/idl-module.md",
+            "redirect_url": "/cpp/windows/attributes/idl-module",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/idl-quote.md",
+            "redirect_url": "/cpp/windows/attributes/idl-quote",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/iid-is.md",
+            "redirect_url": "/cpp/windows/attributes/iid-is",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/immediatebind.md",
+            "redirect_url": "/cpp/windows/attributes/immediatebind",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/implements-category.md",
+            "redirect_url": "/cpp/windows/attributes/implements-category",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/implements-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/implements-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/import.md",
+            "redirect_url": "/cpp/windows/attributes/import",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/importidl.md",
+            "redirect_url": "/cpp/windows/attributes/importidl",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/importlib.md",
+            "redirect_url": "/cpp/windows/attributes/importlib",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/in-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/in-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/include-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/include-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/includelib-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/includelib-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/last-is.md",
+            "redirect_url": "/cpp/windows/attributes/last-is",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/lcid.md",
+            "redirect_url": "/cpp/windows/attributes/lcid",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/length-is.md",
+            "redirect_url": "/cpp/windows/attributes/length-is",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/library-block.md",
+            "redirect_url": "/cpp/windows/attributes/library-block",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/licensed.md",
+            "redirect_url": "/cpp/windows/attributes/licensed",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/local-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/local-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/max-is.md",
+            "redirect_url": "/cpp/windows/attributes/max-is",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/method-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/method-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/module-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/module-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/ms-union.md",
+            "redirect_url": "/cpp/windows/attributes/ms-union",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/no-injected-text.md",
+            "redirect_url": "/cpp/windows/attributes/no-injected-text",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/nonbrowsable.md",
+            "redirect_url": "/cpp/windows/attributes/nonbrowsable",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/noncreatable.md",
+            "redirect_url": "/cpp/windows/attributes/noncreatable",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/nonextensible.md",
+            "redirect_url": "/cpp/windows/attributes/nonextensible",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/object-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/object-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/odl.md",
+            "redirect_url": "/cpp/windows/attributes/odl",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/ole-db-consumer-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/ole-db-consumer-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/oleautomation.md",
+            "redirect_url": "/cpp/windows/attributes/oleautomation",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/optional-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/optional-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/out-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/out-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/parameter-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/parameter-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/pointer-default.md",
+            "redirect_url": "/cpp/windows/attributes/pointer-default",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/pragma.md",
+            "redirect_url": "/cpp/windows/attributes/pragma",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/progid.md",
+            "redirect_url": "/cpp/windows/attributes/progid",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/propget.md",
+            "redirect_url": "/cpp/windows/attributes/propget",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/propput.md",
+            "redirect_url": "/cpp/windows/attributes/propput",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/propputref.md",
+            "redirect_url": "/cpp/windows/attributes/propputref",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/ptr.md",
+            "redirect_url": "/cpp/windows/attributes/ptr",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/public-cpp-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/public-cpp-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/range-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/range-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/rdx.md",
+            "redirect_url": "/cpp/windows/attributes/rdx",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/readonly-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/readonly-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/ref-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/ref-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/registration-script.md",
+            "redirect_url": "/cpp/windows/attributes/registration-script",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/requestedit.md",
+            "redirect_url": "/cpp/windows/attributes/requestedit",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/requires-category.md",
+            "redirect_url": "/cpp/windows/attributes/requires-category",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/restricted.md",
+            "redirect_url": "/cpp/windows/attributes/restricted",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/retval.md",
+            "redirect_url": "/cpp/windows/attributes/retval",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/satype.md",
+            "redirect_url": "/cpp/windows/attributes/satype",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/size-is.md",
+            "redirect_url": "/cpp/windows/attributes/size-is",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/source-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/source-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/stand-alone-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/stand-alone-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/string-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/string-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/support-error-info.md",
+            "redirect_url": "/cpp/windows/attributes/support-error-info",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/switch-is.md",
+            "redirect_url": "/cpp/windows/attributes/switch-is",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/switch-type.md",
+            "redirect_url": "/cpp/windows/attributes/switch-type",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/synchronize.md",
+            "redirect_url": "/cpp/windows/attributes/synchronize",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/threading-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/threading-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/transmit-as.md",
+            "redirect_url": "/cpp/windows/attributes/transmit-as",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/typedef-enum-union-and-struct-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/typedef-enum-union-and-struct-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/uidefault.md",
+            "redirect_url": "/cpp/windows/attributes/uidefault",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/unique-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/unique-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/usesgetlasterror.md",
+            "redirect_url": "/cpp/windows/attributes/usesgetlasterror",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/uuid-cpp-attributes.md",
+            "redirect_url": "/cpp/windows/attributes/uuid-cpp-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/v1-enum.md",
+            "redirect_url": "/cpp/windows/attributes/v1-enum",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/vararg.md",
+            "redirect_url": "/cpp/windows/attributes/vararg",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/version-cpp.md",
+            "redirect_url": "/cpp/windows/attributes/version-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/vi-progid.md",
+            "redirect_url": "/cpp/windows/attributes/vi-progid",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/wire-marshal.md",
+            "redirect_url": "/cpp/windows/attributes/wire-marshal",
+            "redirect_document_id": true
+}
+]
 }

@@ -32,39 +32,39 @@ class-body
 
 In the above syntax, the following terms are used:
 
-*attributes* (optional)  
-Additional declarative information. For more information on attributes and attribute classes, see Attributes.
+*attributes*<br/>
+(Optional) Additional declarative information. For more information on attributes and attribute classes, see Attributes.
 
-*class-key*  
+*class-key*<br/>
 Either **class** or **typename**
 
 *type-parameter-identifier(s)*,
- Comma-separated list of identifiers specifying the names of the type parameters.
+Comma-separated list of identifiers specifying the names of the type parameters.
 
-*constraint-clauses*  
+*constraint-clauses*<br/>
 A list (not comma-separated) of **where** clauses specifying the constraints for the type parameters. Takes the form:
 
-`where`  *type-parameter-identifier*  `:`  *constraint-list*  `...`
+> **where** *type-parameter-identifier* **:** *constraint-list*  **...**
 
-*constraint-list*  
+*constraint-list*<br/>
 *class-or-interface*[`,` *...*]
 
-*accessibility-modifiers*  
+*accessibility-modifiers*<br/>
 Accessibility modifiers for the generic class. For the Windows Runtime, the only allowed modifier is **private**. For the common language runtime, the allowed modifiers are **private** and **public**.
 
-*identifier*  
+*identifier*<br/>
 The name of the generic class, any valid C++ identifier.
 
-*modifiers* (optional)  
-Allowed modifiers include **sealed** and **abstract**.
+*modifiers*<br/>
+(Optional) Allowed modifiers include **sealed** and **abstract**.
 
-*base-list*  
+*base-list*<br/>
 A list that contains the one base class and any implemented interfaces, all separated by commas.
 
-*class-body*  
+*class-body*<br/>
 The body of the class, containing fields, member functions, etc.
 
-*declarators*  
+*declarators*<br/>
 Declarations of any variables of this type. For example: `^`*identifier*[`,` ...]
 
 You can declare generic classes such as these (note that the keyword **class** may be used instead of **typename**). In this example, `ItemType`, `KeyType` and `ValueType` are unknown types that are specified at the point where the type. `HashTable<int, int>` is a constructed type of the generic type `HashTable<KeyType, ValueType>`. A number of different constructed types can be constructed from a single generic type. Constructed types constructed from generic classes are treated like any other ref class type.

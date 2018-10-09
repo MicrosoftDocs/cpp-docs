@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2151
-more than one language attribute  
-  
- A function has more than one keyword ( `__cdecl`, `__stdcall`, or `__fastcall`) specifying a calling convention.
+
+more than one language attribute
+
+A function has more than one keyword ( `__cdecl`, `__stdcall`, or `__fastcall`) specifying a calling convention.

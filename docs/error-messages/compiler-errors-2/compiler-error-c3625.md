@@ -13,16 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3625
-'native_type': a native type cannot derive from a managed or WinRT type 'type'  
-  
-A native class cannot inherit from a managed or WinRT class. For more information, see [Classes and Structs](../../windows/classes-and-structs-cpp-component-extensions.md).  
-  
-## Example  
-The following sample generates C3625:  
-  
-```  
-// C3625.cpp  
-// compile with: /clr /c  
-ref class B {};  
-class D : public B {};   // C3625 cannot inherit from a managed class  
-```  
+
+'native_type': a native type cannot derive from a managed or WinRT type 'type'
+
+A native class cannot inherit from a managed or WinRT class. For more information, see [Classes and Structs](../../windows/classes-and-structs-cpp-component-extensions.md).
+
+## Example
+
+The following sample generates C3625:
+
+```
+// C3625.cpp
+// compile with: /clr /c
+ref class B {};
+class D : public B {};   // C3625 cannot inherit from a managed class
+```

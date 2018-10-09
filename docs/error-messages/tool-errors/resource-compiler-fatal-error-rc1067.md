@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Fatal Error RC1067
-compiler limit : identifier overflowed internal buffer  
-  
- An internal compiler limit was exceeded.
+
+compiler limit : identifier overflowed internal buffer
+
+An internal compiler limit was exceeded.

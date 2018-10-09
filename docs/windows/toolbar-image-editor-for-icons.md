@@ -40,6 +40,6 @@ None
 
 ## See Also
 
-[Displaying or Hiding the Toolbar](displaying-or-hiding-the-toolbar-image-editor-for-icons.md)  
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)  
+[Displaying or Hiding the Toolbar](displaying-or-hiding-the-toolbar-image-editor-for-icons.md)<br/>
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [Image Editor for Icons](../windows/image-editor-for-icons.md)

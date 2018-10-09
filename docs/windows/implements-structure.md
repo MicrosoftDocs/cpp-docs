@@ -1,7 +1,7 @@
 ---
 title: "Implements Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/11/2018"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Implements", "implements/Microsoft::WRL::Implements::CanCastTo", "implements/Microsoft::WRL::Implements::CastToUnknown", "implements/Microsoft::WRL::Implements::FillArrayWithIid", "implements/Microsoft::WRL::Implements::IidCount"]
@@ -20,66 +20,83 @@ Implements `QueryInterface` and `GetIid` for the specified interfaces.
 
 ```cpp
 template <
-   typename I0,
-   typename I1 = Details::Nil,
-   typename I2 = Details::Nil,
-   typename I3 = Details::Nil,
-   typename I4 = Details::Nil,
-   typename I5 = Details::Nil,
-   typename I6 = Details::Nil,
-   typename I7 = Details::Nil,
-   typename I8 = Details::Nil,
-   typename I9 = Details::Nil
+    typename I0,
+    typename I1 = Details::Nil,
+    typename I2 = Details::Nil,
+    typename I3 = Details::Nil,
+    typename I4 = Details::Nil,
+    typename I5 = Details::Nil,
+    typename I6 = Details::Nil,
+    typename I7 = Details::Nil,
+    typename I8 = Details::Nil,
+    typename I9 = Details::Nil
 >
-struct __declspec(novtable) Implements : Details::ImplementsHelper<RuntimeClassFlags<WinRt>, typename Details::InterfaceListHelper<I0, I1, I2, I3, I4, I5, I6, I7, I8, I9>::TypeT>, Details::ImplementsBase;
+struct __declspec(novtable) Implements :
+    Details::ImplementsHelper<
+        RuntimeClassFlags<WinRt>,
+        typename Details::InterfaceListHelper<
+            I0, I1, I2, I3, I4, I5, I6, I7, I8, I9
+        >::TypeT
+    >,
+    Details::ImplementsBase;
+
 template <
-   int flags,
-   typename I0,
-   typename I1,
-   typename I2,
-   typename I3,
-   typename I4,
-   typename I5,
-   typename I6,
-   typename I7,
-   typename I8
+    int flags,
+    typename I0,
+    typename I1,
+    typename I2,
+    typename I3,
+    typename I4,
+    typename I5,
+    typename I6,
+    typename I7,
+    typename I8
 >
-struct __declspec(novtable) Implements<RuntimeClassFlags<flags>, I0, I1, I2, I3, I4, I5, I6, I7, I8> : Details::ImplementsHelper<RuntimeClassFlags<flags>, typename Details::InterfaceListHelper<I0, I1, I2, I3, I4, I5, I6, I7, I8>::TypeT>, Details::ImplementsBase;
+struct __declspec(novtable) Implements<
+        RuntimeClassFlags<flags>,
+        I0, I1, I2, I3, I4, I5, I6, I7, I8> :
+    Details::ImplementsHelper<
+        RuntimeClassFlags<flags>,
+        typename Details::InterfaceListHelper<
+            I0, I1, I2, I3, I4, I5, I6, I7, I8
+        >::TypeT
+    >,
+    Details::ImplementsBase;
 ```
 
 ### Parameters
 
-*I0*  
+*I0*<br/>
 The zeroth interface ID. (Mandatory)
 
-*I1*  
+*I1*<br/>
 The first interface ID. (Optional)
 
-*I2*  
+*I2*<br/>
 The second interface ID. (Optional)
 
-*I3*  
+*I3*<br/>
 The third interface ID. (Optional)
 
-*I4*  
+*I4*<br/>
 The fourth interface ID. (Optional)
 
-*I5*  
+*I5*<br/>
 The fifth interface ID. (Optional)
 
-*I6*  
+*I6*<br/>
 The sixth interface ID. (Optional)
 
-*I7*  
+*I7*<br/>
 The seventh interface ID. (Optional)
 
-*I8*  
+*I8*<br/>
 The eigth interface ID. (Optional)
 
-*I9*  
+*I9*<br/>
 The ninth interface ID. (Optional)
 
-*flags*  
+*flags*<br/>
 Configuration flags for the class. One or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumerations that are specified in a [RuntimeClassFlags](../windows/runtimeclassflags-structure.md) structure.
 
 ## Remarks
@@ -143,10 +160,10 @@ __forceinline HRESULT CanCastTo(
 
 ### Parameters
 
-*riid*  
+*riid*<br/>
 A reference to an interface ID.
 
-*ppv*  
+*ppv*<br/>
 If successful, a pointer to the interface specified by *riid*.
 
 ### Return Value
@@ -186,10 +203,10 @@ __forceinline static void FillArrayWithIid(
 
 ### Parameters
 
-*index*  
+*index*<br/>
 A zero-based index that indicates the starting array element for this operation. When this operation completes, *index* is incremented by 1.
 
-*iids*  
+*iids*<br/>
 An array of type IID.
 
 ### Remarks

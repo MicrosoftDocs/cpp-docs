@@ -55,22 +55,22 @@ template <class T1, class T2>
 
 ### Parameters
 
-*Index*  
+*Index*<br/>
 The index of the designated element.
 
-*Tuple*  
+*Tuple*<br/>
 The type of the tuple.
 
-*Elem*  
+*Elem*<br/>
 The type of an array element.
 
-*Size*  
+*Size*<br/>
 The size of the array.
 
-*T1*  
+*T1*<br/>
 The type of the first element in a pair.
 
-*T2*  
+*T2*<br/>
 The type of the second element in a pair.
 
 ## Remarks
@@ -125,19 +125,19 @@ int main()
 
     for (const auto& e : c0)
     {
-        cout << " " << e;
+        cout << e << " ";
     }
     cout << endl;
 
-    // display first element " 0"
+    // display first element "0"
     tuple_element<0, MyArray>::type val = c0.front();
-    cout << " " << val << endl;
+    cout << val << endl;
 }
 ```
 
 ```Output
- 0 1 2 3
- 0
+0 1 2 3
+0
 ```
 
 ## Example
@@ -152,31 +152,34 @@ typedef pair<int, double> MyPair;
 int main() {
     MyPair c0(0, 1.333);
 
-    // display contents " 0 1"
-    cout << " " << get<0>(c0);
-    cout << " " << get<1>(c0) << endl;
+    // display contents "0 1"
+    cout << get<0>(c0) << " ";
+    cout << get<1>(c0) << endl;
 
-    // display first element " 0" by index
+    // display first element "0 " by index
     tuple_element<0, MyPair>::type val = get<0>(c0);
-    cout << " " << val;
+    cout << val << " ";
 
     // display second element by type
     tuple_element<1, MyPair>::type val2 = get<double>(c0);
-    cout << " " << val2 << endl;
+    cout << val2 << endl;
 }
 ```
 
 ```Output
- 0 1.333
- 0 1.333
+0 1.333
+0 1.333
 ```
 
 ## Requirements
 
 **Header:** \<tuple>
- **Header:** \<array> (for array specialization)
- **Header:** \<utility> (for pair specializations)
- **Namespace:** std
+
+**Header:** \<array> (for array specialization)
+
+**Header:** \<utility> (for pair specializations)
+
+**Namespace:** std
 
 ## See also
 

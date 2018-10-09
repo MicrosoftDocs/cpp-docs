@@ -57,7 +57,7 @@ Additional improvements to diagnostics in the compiler. For more information, se
 
 **Visual Studio 2017 version 15.5**:
 
-Visual C++ runtime performance continues to improve due to better generated code quality. This means that you can simply recompile your code, and your app runs faster. Some of the compiler optimizations are brand new, such as the vectorization of conditional scalar stores, the combining of calls `sin(x)` and `cos(x)` into a new `sincos(x)`, and the elimination of redundant instructions from the SSA Optimizer. Other compiler optimizations are improvements to existing functionality such as vectorizer heuristics for conditional expressions, better loop optimizations, and float min/max codegen. The linker has a new and faster **/OPT:ICF** implementation which can result in up to 9% link time speedups, and there are other perf fixes in incremental linking. For more information, see [/OPT (Optimizations)](https://docs.microsoft.com/en-us/cpp/build/reference/opt-optimizations) and [/INCREMENTAL (Link Incrementally)](https://docs.microsoft.com/en-us/cpp/build/reference/incremental-link-incrementally).
+Visual C++ runtime performance continues to improve due to better generated code quality. This means that you can simply recompile your code, and your app runs faster. Some of the compiler optimizations are brand new, such as the vectorization of conditional scalar stores, the combining of calls `sin(x)` and `cos(x)` into a new `sincos(x)`, and the elimination of redundant instructions from the SSA Optimizer. Other compiler optimizations are improvements to existing functionality such as vectorizer heuristics for conditional expressions, better loop optimizations, and float min/max codegen. The linker has a new and faster **/OPT:ICF** implementation which can result in up to 9% link time speedups, and there are other perf fixes in incremental linking. For more information, see [/OPT (Optimizations)](build/reference/opt-optimizations.md) and [/INCREMENTAL (Link Incrementally)](build/reference/incremental-link-incrementally.md).
 
 Visual C++ supports Intel's AVX-512, including the Vector Length instructions that bring new functions in AVX-512 to 128- and 256-bit wide registers.
 
@@ -387,8 +387,7 @@ C++ comes as an optional component for the Universal Windows App workload.  Upgr
 You now have new options for writing and packaging C++ applications for the Universal Windows Platform and the Windows Store:
 You can use the Desktop Bridge infrastructure to package your existing desktop application or COM object for deployment through the Windows Store or through your existing channels via side-loading. New capabilities in Windows 10 enable you to add UWP functionality to your desktop application in various ways. For more information, see [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root).
 
-**Visual Studio 2017 version 15.5**  
-A **Windows Application Packaging Project** project template is added which greatly simplifies the work of packaging desktop applications with using Desktop Bridge. It is available under **File | New | Project | Installed | Visual C++ | Universal Windows Platform**. For more information, see [Package an app by using Visual Studio (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+**Visual Studio 2017 version 15.5**: A **Windows Application Packaging Project** project template is added which greatly simplifies the work of packaging desktop applications with using Desktop Bridge. It is available under **File | New | Project | Installed | Visual C++ | Universal Windows Platform**. For more information, see [Package an app by using Visual Studio (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
 When writing new code, you can now use C++/WinRT, a standard C++ language projection for the Windows Runtime implemented solely in header files. It allows you to both author and consume Windows Runtime APIs using any standards-compliant C++ compiler. C++/WinRT is designed to provide C++ developers with first-class access to the modern Windows API. For more information, see [C++/WinRT Available on GitHub](https://moderncpp.com/).
 
@@ -435,7 +434,7 @@ For more information, see [Boost.Test Unit Testing: Dynamic Library support and 
 
 **Visual Studio 2017 version 15.7**:
 
-[CodeLens](https://docs.microsoft.com/en-us/visualstudio/ide/find-code-changes-and-other-history-with-codelens) supported added for C++ unit test projects. For more information, see [Announcing CodeLens for C++ Unit Testing](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/announcing-codelens-for-c-unit-testing/).
+[CodeLens](/visualstudio/ide/find-code-changes-and-other-history-with-codelens) supported added for C++ unit test projects. For more information, see [Announcing CodeLens for C++ Unit Testing](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/announcing-codelens-for-c-unit-testing/).
 
 ## Visual Studio graphics diagnostics
 

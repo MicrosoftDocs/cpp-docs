@@ -25,8 +25,8 @@ struct underlying_type;
 
 ### Parameters
 
-*T*  
- The type to modify.
+*T*<br/>
+The type to modify.
 
 ## Remarks
 

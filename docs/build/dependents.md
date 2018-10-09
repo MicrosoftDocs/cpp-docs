@@ -12,12 +12,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Dependents
-In a dependency line, specify zero or more dependents after the colon (:) or double colon (::), using any valid filename or [pseudotarget](../build/pseudotargets.md). Separate multiple dependents with one or more spaces or tabs. Dependents are not case sensitive. Paths are permitted with filenames.  
-  
-## What do you want to know more about?  
- [Inferred dependents](../build/inferred-dependents.md)  
-  
- [Search paths for dependents](../build/search-paths-for-dependents.md)  
-  
-## See Also  
- [Description Blocks](../build/description-blocks.md)
+
+In a dependency line, specify zero or more dependents after the colon (:) or double colon (::), using any valid filename or [pseudotarget](../build/pseudotargets.md). Separate multiple dependents with one or more spaces or tabs. Dependents are not case sensitive. Paths are permitted with filenames.
+
+## What do you want to know more about?
+
+[Inferred dependents](../build/inferred-dependents.md)
+
+[Search paths for dependents](../build/search-paths-for-dependents.md)
+
+## See Also
+
+[Description Blocks](../build/description-blocks.md)

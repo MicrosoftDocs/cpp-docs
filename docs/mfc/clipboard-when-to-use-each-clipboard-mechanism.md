@@ -12,20 +12,22 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Clipboard: When to Use Each Clipboard Mechanism
-Follow these guidelines in using the Clipboard:  
-  
--   Use the OLE Clipboard mechanism now to enable new capabilities in the future. While the standard Clipboard API will be maintained, the OLE mechanism is the future of data transfer.  
-  
--   Use the OLE Clipboard mechanism if you are writing an OLE application or you want any of the OLE features, such as drag and drop.  
-  
--   Use the OLE Clipboard mechanism if you are providing OLE formats.  
-  
-## What do you want to do  
-  
--   [Use the OLE Clipboard mechanism](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)  
-  
--   [Use the Windows Clipboard mechanism](../mfc/clipboard-using-the-windows-clipboard.md)  
-  
-## See Also  
- [Clipboard](../mfc/clipboard.md)
+
+Follow these guidelines in using the Clipboard:
+
+- Use the OLE Clipboard mechanism now to enable new capabilities in the future. While the standard Clipboard API will be maintained, the OLE mechanism is the future of data transfer.
+
+- Use the OLE Clipboard mechanism if you are writing an OLE application or you want any of the OLE features, such as drag and drop.
+
+- Use the OLE Clipboard mechanism if you are providing OLE formats.
+
+## What do you want to do
+
+- [Use the OLE Clipboard mechanism](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
+
+- [Use the Windows Clipboard mechanism](../mfc/clipboard-using-the-windows-clipboard.md)
+
+## See Also
+
+[Clipboard](../mfc/clipboard.md)
 

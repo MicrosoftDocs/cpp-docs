@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2945
-explicit instantiation does not refer to a template-class specialization  
-  
- You cannot explicitly instantiate something that is not templated.
+
+explicit instantiation does not refer to a template-class specialization
+
+You cannot explicitly instantiate something that is not templated.

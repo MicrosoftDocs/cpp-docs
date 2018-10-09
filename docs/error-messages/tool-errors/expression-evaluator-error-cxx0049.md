@@ -13,10 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0049
-obsolete OMF - please relink program  
-  
- The program used an old OMF (Object Module Format).  
-  
- Relink the program using the current linker version.  
-  
- This error is identical to CAN0049.
+
+obsolete OMF - please relink program
+
+The program used an old OMF (Object Module Format).
+
+Relink the program using the current linker version.
+
+This error is identical to CAN0049.

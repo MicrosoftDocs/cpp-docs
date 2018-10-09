@@ -230,7 +230,7 @@ template <class _Enum>
 error_condition(_Enum error,
     typename enable_if<is_error_condition_enum<_Enum>::value,
     error_condition>::type&
- operator=(Enum _Errcode);
+    operator=(Enum _Errcode);
 ```
 
 ### Parameters

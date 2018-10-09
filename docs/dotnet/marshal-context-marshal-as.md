@@ -13,59 +13,66 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # marshal_context::marshal_as
-Performs the marshaling on a specific data object to convert it between a managed and a native data type.  
-  
-## Syntax  
-  
-```  
-To_Type marshal_as<To_Type>(  
-   From_Type input   
-);  
-```  
-  
-#### Parameters  
- [in] `input`  
- The value that you want to marshal to a `To_Type` variable.  
-  
-## Return Value  
- A variable of type `To_Type` that is the converted value of `input`.  
-  
-## Remarks  
- This function performs the marshaling on a specific data object. Use this function only with the conversions indicated by the table in [Overview of Marshaling in C++](../dotnet/overview-of-marshaling-in-cpp.md).  
-  
- If you try to marshal a pair of data types that are not supported, `marshal_as` will generate an error [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) at compile time. Read the message supplied with this error for more information. The `C4996` error can be generated for more than just deprecated functions. Two conditions that will generate this error are trying to marshal a pair of data types that are not supported and trying to use `marshal_as` for a conversion that requires a context.  
-  
- The marshaling library consists of several header files. Any conversion requires only one file, but you can include additional files if you need to for other conversions. The table in `Marshaling Overview in C++` indicates which marshaling file should be included for each conversion.  
-  
-## Example  
- This example creates a context for marshaling from a `System::String` to a `const char *` variable type. The converted data will not be valid after the line that deletes the context.  
-  
-```  
-// marshal_context_test.cpp  
-// compile with: /clr  
-#include <stdlib.h>  
-#include <string.h>  
-#include <msclr\marshal.h>  
-  
-using namespace System;  
-using namespace msclr::interop;  
-  
-int main() {  
-   marshal_context^ context = gcnew marshal_context();  
-   String^ message = gcnew String("Test String to Marshal");  
-   const char* result;  
-   result = context->marshal_as<const char*>( message );  
-   delete context;  
-   return 0;  
-}  
-```  
-  
-## Requirements  
- **Header file:** \<msclr\marshal.h>, \<msclr\marshal_windows.h>, \<msclr\marshal_cppstd.h>, or \<msclr\marshal_atl.h>  
-  
- **Namespace:** msclr::interop  
-  
-## See Also  
- [Overview of Marshaling in C++](../dotnet/overview-of-marshaling-in-cpp.md)   
- [marshal_as](../dotnet/marshal-as.md)   
- [marshal_context Class](../dotnet/marshal-context-class.md)
+
+Performs the marshaling on a specific data object to convert it between a managed and a native data type.
+
+## Syntax
+
+```
+To_Type marshal_as<To_Type>(
+   From_Type input
+);
+```
+
+#### Parameters
+
+*input*<br/>
+[in] The value that you want to marshal to a `To_Type` variable.
+
+## Return Value
+
+A variable of type `To_Type` that is the converted value of `input`.
+
+## Remarks
+
+This function performs the marshaling on a specific data object. Use this function only with the conversions indicated by the table in [Overview of Marshaling in C++](../dotnet/overview-of-marshaling-in-cpp.md).
+
+If you try to marshal a pair of data types that are not supported, `marshal_as` will generate an error [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) at compile time. Read the message supplied with this error for more information. The `C4996` error can be generated for more than just deprecated functions. Two conditions that will generate this error are trying to marshal a pair of data types that are not supported and trying to use `marshal_as` for a conversion that requires a context.
+
+The marshaling library consists of several header files. Any conversion requires only one file, but you can include additional files if you need to for other conversions. The table in `Marshaling Overview in C++` indicates which marshaling file should be included for each conversion.
+
+## Example
+
+This example creates a context for marshaling from a `System::String` to a `const char *` variable type. The converted data will not be valid after the line that deletes the context.
+
+```
+// marshal_context_test.cpp
+// compile with: /clr
+#include <stdlib.h>
+#include <string.h>
+#include <msclr\marshal.h>
+
+using namespace System;
+using namespace msclr::interop;
+
+int main() {
+   marshal_context^ context = gcnew marshal_context();
+   String^ message = gcnew String("Test String to Marshal");
+   const char* result;
+   result = context->marshal_as<const char*>( message );
+   delete context;
+   return 0;
+}
+```
+
+## Requirements
+
+**Header file:** \<msclr\marshal.h>, \<msclr\marshal_windows.h>, \<msclr\marshal_cppstd.h>, or \<msclr\marshal_atl.h>
+
+**Namespace:** msclr::interop
+
+## See Also
+
+[Overview of Marshaling in C++](../dotnet/overview-of-marshaling-in-cpp.md)<br/>
+[marshal_as](../dotnet/marshal-as.md)<br/>
+[marshal_context Class](../dotnet/marshal-context-class.md)

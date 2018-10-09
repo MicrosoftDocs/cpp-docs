@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2488
-'identifier' : 'naked' can only be applied to non-member function definitions  
-  
- The [naked](../../cpp/naked-cpp.md) attribute was applied to a function declaration.  
-  
- The following sample generates C2488:  
-  
-```  
-// C2488.cpp  
-// compile with: /c  
-// processor: x86  
-__declspec( naked ) void func();   // C2488  declaration, not definition  
-__declspec( naked ) void i;   // C2488  i is not a function  
-  
-__declspec( naked ) void func() {}   // OK  
+
+'identifier' : 'naked' can only be applied to non-member function definitions
+
+The [naked](../../cpp/naked-cpp.md) attribute was applied to a function declaration.
+
+The following sample generates C2488:
+
+```
+// C2488.cpp
+// compile with: /c
+// processor: x86
+__declspec( naked ) void func();   // C2488  declaration, not definition
+__declspec( naked ) void i;   // C2488  i is not a function
+
+__declspec( naked ) void func() {}   // OK
 ```

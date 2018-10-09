@@ -25,7 +25,7 @@ class CComUnkArray
 
 #### Parameters
 
-*nMaxSize*  
+*nMaxSize*<br/>
 The maximum number of `IUnknown` pointers that can be held in the static array.
 
 ## Members
@@ -72,7 +72,7 @@ DWORD Add(IUnknown* pUnk);
 
 ### Parameters
 
-*pUnk*  
+*pUnk*<br/>
 Call this method to add an `IUnknown` pointer to the array.
 
 ### Return Value
@@ -139,7 +139,7 @@ DWORD WINAPI GetCookie(IUnknown** ppFind);
 
 ### Parameters
 
-*ppFind*  
+*ppFind*<br/>
 The `IUnknown` pointer for which the associated cookie is required.
 
 ### Return Value
@@ -160,7 +160,7 @@ IUnknown* WINAPI GetUnknown(DWORD dwCookie);
 
 ### Parameters
 
-*dwCookie*  
+*dwCookie*<br/>
 The cookie for which the associated `IUnknown` pointer is required.
 
 ### Return Value
@@ -177,7 +177,7 @@ BOOL Remove(DWORD dwCookie);
 
 ### Parameters
 
-*dwCookie*  
+*dwCookie*<br/>
 The cookie referencing the `IUnknown` pointer to be removed from the array.
 
 ### Return Value
@@ -186,5 +186,5 @@ Returns TRUE if the pointer is removed, FALSE otherwise.
 
 ## See Also
 
-[CComDynamicUnkArray Class](../../atl/reference/ccomdynamicunkarray-class.md)   
+[CComDynamicUnkArray Class](../../atl/reference/ccomdynamicunkarray-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

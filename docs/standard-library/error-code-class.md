@@ -240,9 +240,8 @@ Assigns a new enumeration value to the `error_code` object.
 
 ```cpp
 template <class _Enum>
-typename enable_if<is_error_code_enum<_Enum>::value,
-    error_code>::type&
- operator=(_Enum _Errcode);
+typename enable_if<is_error_code_enum<_Enum>::value, error_code>::type&
+    operator=(_Enum _Errcode);
 ```
 
 ### Parameters

@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CTable Class
+
 Provides a means to directly access a simple rowset (one with no parameters).  
   
 ## Syntax
@@ -25,14 +26,16 @@ class CTable :
 ```  
   
 ### Parameters  
- *TAccessor*  
- An accessor class.  
+
+*TAccessor*<br/>
+An accessor class.  
   
- *TRowset*  
- A rowset class.  
+*TRowset*<br/>
+A rowset class.  
 
 ## Requirements  
- **Header:** atldbcli.h  
+
+**Header:** atldbcli.h  
   
 ## Members  
   
@@ -43,9 +46,11 @@ class CTable :
 |[Open](#open)|Opens the table.|  
   
 ## Remarks  
- See [CCommand](../../data/oledb/ccommand-class.md) for information on how to execute a command to access a rowset.  
+
+See [CCommand](../../data/oledb/ccommand-class.md) for information on how to execute a command to access a rowset.  
 
 ## <a name="open"></a> CTable::Open
+
 Opens the table.  
   
 ### Syntax  
@@ -68,30 +73,34 @@ HRESULT Open(const CSession& session,
 ```  
   
 #### Parameters  
- *session*  
- [in] The session for which the table is opened.  
+
+*session*<br/>
+[in] The session for which the table is opened.  
   
- *wszTableName*  
- [in] The name of the table to open, passed as a Unicode string.  
+*wszTableName*<br/>
+[in] The name of the table to open, passed as a Unicode string.  
   
- *szTableName*  
- [in] The name of the table to open, passed as an ANSI string.  
+*szTableName*<br/>
+[in] The name of the table to open, passed as an ANSI string.  
   
- *dbid*  
- [in] The `DBID` of the table to open.  
+*dbid*<br/>
+[in] The `DBID` of the table to open.  
   
- *pPropSet*  
- [in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) in the *OLE DB Programmer's Reference* in the Windows SDK. The default value of NULL specifies no properties.  
+*pPropSet*<br/>
+[in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) in the *OLE DB Programmer's Reference* in the Windows SDK. The default value of NULL specifies no properties.  
   
- *ulPropSets*  
- [in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures passed in the *pPropSet* argument.  
+*ulPropSets*<br/>
+[in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures passed in the *pPropSet* argument.  
   
 ### Return Value  
- A standard HRESULT.  
+
+A standard HRESULT.  
   
 ### Remarks  
- For more details, see [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+
+For more details, see [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ## See Also  
- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)   
+
+[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)   

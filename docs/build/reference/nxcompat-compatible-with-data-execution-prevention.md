@@ -27,7 +27,7 @@ By default, **/NXCOMPAT** is on.
 
 For more information about Data Execution Prevention, see these articles:
 
-- [A detailed description of the Data Execution Prevention (DEP) feature](https://support.microsoft.com/en-us/help/875352/a-detailed-description-of-the-data-execution-prevention-dep-feature-in)
+- [A detailed description of the Data Execution Prevention (DEP) feature](https://support.microsoft.com/help/875352/a-detailed-description-of-the-data-execution-prevention-dep-feature-in)
 
 - [Data Execution Prevention](/windows/desktop/Memory/data-execution-prevention)
 
@@ -47,5 +47,5 @@ For more information about Data Execution Prevention, see these articles:
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)  
-[Linker Options](../../build/reference/linker-options.md)  
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

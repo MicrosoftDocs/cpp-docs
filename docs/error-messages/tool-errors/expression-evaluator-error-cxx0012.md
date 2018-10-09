@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0012
-missing left curly brace  
-  
- The expression contains an unbalanced curly brace. Retype the expression with balanced curly braces.  
-  
- This error is identical to CAN0012.
+
+missing left curly brace
+
+The expression contains an unbalanced curly brace. Retype the expression with balanced curly braces.
+
+This error is identical to CAN0012.

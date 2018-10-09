@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4310
-cast truncates constant value  
-  
- A constant value is cast to a smaller type. The compiler performs the cast, which truncates data. The following sample generates C4310:  
-  
-```  
-// C4310.cpp  
-// compile with: /W4  
-int main() {  
-   long int a;  
-   a = (char) 128;   // C4310, use value 0-127 to resolve  
-}  
+
+cast truncates constant value
+
+A constant value is cast to a smaller type. The compiler performs the cast, which truncates data. The following sample generates C4310:
+
+```
+// C4310.cpp
+// compile with: /W4
+int main() {
+   long int a;
+   a = (char) 128;   // C4310, use value 0-127 to resolve
+}
 ```

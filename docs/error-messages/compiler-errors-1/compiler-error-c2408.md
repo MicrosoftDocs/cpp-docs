@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2408
-illegal type on PTR operator in 'context'  
-  
- The first parameter of the `PTR` operator is not a legal type specification.
+
+illegal type on PTR operator in 'context'
+
+The first parameter of the `PTR` operator is not a legal type specification.

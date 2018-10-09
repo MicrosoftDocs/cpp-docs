@@ -19,7 +19,7 @@ This class provides methods useful when constructing an array of COM interface p
 ## Syntax
 
 ```
-template <class I, const IID* piid=& __uuidof(I)>  
+template <class I, const IID* piid=& __uuidof(I)>
 class CInterfaceArray : 
    public CAtlArray<ATL::CComQIPtr<I, piid>,
                     CComQIPtrElementTraits<I, piid>>
@@ -27,10 +27,10 @@ class CInterfaceArray :
 
 #### Parameters
 
-*I*  
+*I*<br/>
 A COM interface specifying the type of pointer to be stored.
 
-*piid*  
+*piid*<br/>
 A pointer to the IID of *I*.
 
 ## Members
@@ -71,7 +71,7 @@ Initializes the smart pointer array.
 
 ## See Also
 
-[CAtlArray Class](../../atl/reference/catlarray-class.md)   
-[CComQIPtr Class](../../atl/reference/ccomqiptr-class.md)   
-[CComQIPtrElementTraits Class](../../atl/reference/ccomqiptrelementtraits-class.md)   
+[CAtlArray Class](../../atl/reference/catlarray-class.md)<br/>
+[CComQIPtr Class](../../atl/reference/ccomqiptr-class.md)<br/>
+[CComQIPtrElementTraits Class](../../atl/reference/ccomqiptrelementtraits-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

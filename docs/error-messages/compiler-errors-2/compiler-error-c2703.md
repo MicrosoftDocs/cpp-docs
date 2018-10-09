@@ -13,20 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2703
-illegal __leave statement  
-  
- A `__leave` statement must be inside a `__try` block.  
-  
- The following sample generates C2703:  
-  
-```  
-// C2703.cpp  
-int main() {  
-   __leave;   // C2703  
-   __try {  
-      // try the following line instead  
-      __leave;  
-   }  
-   __finally {}  
-}  
+
+illegal __leave statement
+
+A `__leave` statement must be inside a `__try` block.
+
+The following sample generates C2703:
+
+```
+// C2703.cpp
+int main() {
+   __leave;   // C2703
+   __try {
+      // try the following line instead
+      __leave;
+   }
+   __finally {}
+}
 ```

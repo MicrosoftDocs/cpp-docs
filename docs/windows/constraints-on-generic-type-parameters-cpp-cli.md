@@ -26,10 +26,10 @@ where type-parameter: constraint list
 
 ### Parameters
 
-*type-parameter*  
+*type-parameter*<br/>
 One of the type parameters, to be constrained.
 
-*constraint list*  
+*constraint list*<br/>
 *constraint list* is a comma-separated list of constraint specifications. The list can include interfaces to be implemented by the type parameter.
 
 The list can also include a class. For the type argument to satisfy a base class constraint, it must be the same class as the constraint or derive from the constraint.

@@ -61,7 +61,7 @@ void Attach(const CAccessToken* pAT) throw();
 
 ### Parameters
 
-*pAT*  
+*pAT*<br/>
 The address of the [CAccessToken](../../atl/reference/caccesstoken-class.md) object to be reverted automatically
 
 ### Remarks
@@ -78,7 +78,7 @@ CAutoRevertImpersonation(const CAccessToken* pAT) throw();
 
 ### Parameters
 
-*pAT*  
+*pAT*<br/>
 The address of the [CAccessToken](../../atl/reference/caccesstoken-class.md) object to be reverted automatically.
 
 ### Remarks
@@ -131,6 +131,6 @@ If this method is called for the purposes that include the reversion of an imper
 
 ## See Also
 
-[ATLSecurity Sample](../../visual-cpp-samples.md)   
-[Access Tokens](/windows/desktop/SecAuthZ/access-tokens)   
+[ATLSecurity Sample](../../visual-cpp-samples.md)<br/>
+[Access Tokens](/windows/desktop/SecAuthZ/access-tokens)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

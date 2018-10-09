@@ -12,17 +12,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Requirements for STL/CLR Container Elements
-All reference types that are inserted into STL/CLR containers must have, at a minimum, the following elements:  
-  
--   A public copy constructor.  
-  
--   A public assignment operator.  
-  
--   A public destructor.  
-  
- Furthermore, associative containers such as [set](../dotnet/set-stl-clr.md) and [map](../dotnet/map-stl-clr.md) must have a public comparison operator defined, which is `operator<` by default. Some operations on containers might also require a public default constructor and a public equivalence operator to be defined.  
-  
- Like reference types, value types and handles to reference types that are to be inserted into an associative container must have a comparison operator such as `operator<` defined. The requirements for a public copy constructor, public assignment operator, and a public destructor do not exist for value types or handles to reference types.  
-  
-## See Also  
- [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
+
+All reference types that are inserted into STL/CLR containers must have, at a minimum, the following elements:
+
+- A public copy constructor.
+
+- A public assignment operator.
+
+- A public destructor.
+
+Furthermore, associative containers such as [set](../dotnet/set-stl-clr.md) and [map](../dotnet/map-stl-clr.md) must have a public comparison operator defined, which is `operator<` by default. Some operations on containers might also require a public default constructor and a public equivalence operator to be defined.
+
+Like reference types, value types and handles to reference types that are to be inserted into an associative container must have a comparison operator such as `operator<` defined. The requirements for a public copy constructor, public assignment operator, and a public destructor do not exist for value types or handles to reference types.
+
+## See Also
+
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

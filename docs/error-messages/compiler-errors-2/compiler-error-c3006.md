@@ -13,20 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3006
-'clause' : clause on OpenMP 'directive' directive is missing an expected argument  
-  
- An OpenMP directive did not have an expected argument.  
-  
- The following sample generates C3006:  
-  
-```  
-// C3006.c  
-// compile with: /openmp  
-int main()  
-{  
-   #pragma omp parallel shared   // C3006  
-   // Try the following line instead:  
-   // #pragma omp parallel shared(x) {}  
-  
-}  
+
+'clause' : clause on OpenMP 'directive' directive is missing an expected argument
+
+An OpenMP directive did not have an expected argument.
+
+The following sample generates C3006:
+
+```
+// C3006.c
+// compile with: /openmp
+int main()
+{
+   #pragma omp parallel shared   // C3006
+   // Try the following line instead:
+   // #pragma omp parallel shared(x) {}
+
+}
 ```

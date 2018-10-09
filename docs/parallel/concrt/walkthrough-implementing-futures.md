@@ -12,85 +12,85 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Implementing Futures
-This topic shows how to implement futures in your application. The topic demonstrates how to combine existing functionality in the Concurrency Runtime into something that does more.  
-  
+
+This topic shows how to implement futures in your application. The topic demonstrates how to combine existing functionality in the Concurrency Runtime into something that does more.
+
 > [!IMPORTANT]
->  This topic illustrates the concept of futures for demonstration purposes. We recommend that you use [std::future](../../standard-library/future-class.md) or [concurrency::task](../../parallel/concrt/reference/task-class.md) when you require an asynchronous task that computes a value for later use.  
-  
- A *task* is a computation that can be decomposed into additional, more fine-grained, computations. A *future* is an asynchronous task that computes a value for later use.  
-  
- To implement futures, this topic defines the `async_future` class. The `async_future` class uses these components of the Concurrency Runtime: the [concurrency::task_group](reference/task-group-class.md) class and the [concurrency::single_assignment](../../parallel/concrt/reference/single-assignment-class.md) class. The `async_future` class uses the `task_group` class to compute a value asynchronously and the `single_assignment` class to store the result of the computation. The constructor of the `async_future` class takes a work function that computes the result, and the `get` method retrieves the result.  
-  
-### To implement the async_future class  
-  
-1.  Declare a template class named `async_future` that is parameterized on the type of the resulting computation. Add `public` and `private` sections to this class.  
-  
- [!code-cpp[concrt-futures#2](../../parallel/concrt/codesnippet/cpp/walkthrough-implementing-futures_1.cpp)]  
-  
-2.  In the `private` section of the `async_future` class, declare a `task_group` and a `single_assignment` data member.  
-  
- [!code-cpp[concrt-futures#3](../../parallel/concrt/codesnippet/cpp/walkthrough-implementing-futures_2.cpp)]  
-  
+>  This topic illustrates the concept of futures for demonstration purposes. We recommend that you use [std::future](../../standard-library/future-class.md) or [concurrency::task](../../parallel/concrt/reference/task-class.md) when you require an asynchronous task that computes a value for later use.
 
-3.  In the `public` section of the `async_future` class, implement the constructor. The constructor is a template that is parameterized on the work function that computes the result. The constructor asynchronously executes the work function in the `task_group` data member and uses the [concurrency::send](reference/concurrency-namespace-functions.md#send) function to write the result to the `single_assignment` data member.  
-  
- [!code-cpp[concrt-futures#4](../../parallel/concrt/codesnippet/cpp/walkthrough-implementing-futures_3.cpp)]  
-  
-4.  In the `public` section of the `async_future` class, implement the destructor. The destructor waits for the task to finish.  
-  
- [!code-cpp[concrt-futures#5](../../parallel/concrt/codesnippet/cpp/walkthrough-implementing-futures_4.cpp)]  
-  
+A *task* is a computation that can be decomposed into additional, more fine-grained, computations. A *future* is an asynchronous task that computes a value for later use.
 
-5.  In the `public` section of the `async_future` class, implement the `get` method. This method uses the [concurrency::receive](reference/concurrency-namespace-functions.md#receive) function to retrieve the result of the work function.  
+To implement futures, this topic defines the `async_future` class. The `async_future` class uses these components of the Concurrency Runtime: the [concurrency::task_group](reference/task-group-class.md) class and the [concurrency::single_assignment](../../parallel/concrt/reference/single-assignment-class.md) class. The `async_future` class uses the `task_group` class to compute a value asynchronously and the `single_assignment` class to store the result of the computation. The constructor of the `async_future` class takes a work function that computes the result, and the `get` method retrieves the result.
 
-  
- [!code-cpp[concrt-futures#6](../../parallel/concrt/codesnippet/cpp/walkthrough-implementing-futures_5.cpp)]  
-  
-## Example  
-  
-### Description  
- The following example shows the complete `async_future` class and an example of its usage. The `wmain` function creates a std::[vector](../../standard-library/vector-class.md) object that contains 10,000 random integer values. It then uses `async_future` objects to find the smallest and largest values that are contained in the `vector` object.  
-  
-### Code  
- [!code-cpp[concrt-futures#1](../../parallel/concrt/codesnippet/cpp/walkthrough-implementing-futures_6.cpp)]  
-  
-### Comments  
- This example produces the following output:  
-  
-```Output  
-smallest: 0  
-largest:  9999  
-average:  4981  
-```  
-  
- The example uses the `async_future::get` method to retrieve the results of the computation. The `async_future::get` method waits for the computation to finish if the computation is still active.  
-  
-## Robust Programming  
+### To implement the async_future class
 
+1. Declare a template class named `async_future` that is parameterized on the type of the resulting computation. Add `public` and `private` sections to this class.
 
- To extend the `async_future` class to handle exceptions that are thrown by the work function, modify the `async_future::get` method to call the [concurrency::task_group::wait](reference/task-group-class.md#wait) method. The `task_group::wait` method throws any exceptions that were generated by the work function.  
+[!code-cpp[concrt-futures#2](../../parallel/concrt/codesnippet/cpp/walkthrough-implementing-futures_1.cpp)]
 
+1. In the `private` section of the `async_future` class, declare a `task_group` and a `single_assignment` data member.
 
-  
- The following example shows the modified version of the `async_future` class. The `wmain` function uses a `try`-`catch` block to print the result of the `async_future` object or to print the value of the exception that is generated by the work function.  
-  
- [!code-cpp[concrt-futures-with-eh#1](../../parallel/concrt/codesnippet/cpp/walkthrough-implementing-futures_7.cpp)]  
-  
- This example produces the following output:  
-  
-```Output  
-caught exception: error  
-```  
-  
- For more information about the exception handling model in the Concurrency Runtime, see [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).  
-  
-## Compiling the Code  
- Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `futures.cpp` and then run the following command in a Visual Studio Command Prompt window.  
-  
- **cl.exe /EHsc futures.cpp**  
-  
-## See Also  
- [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)   
- [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)   
- [task_group Class](reference/task-group-class.md)   
- [single_assignment Class](../../parallel/concrt/reference/single-assignment-class.md)
+[!code-cpp[concrt-futures#3](../../parallel/concrt/codesnippet/cpp/walkthrough-implementing-futures_2.cpp)]
+
+1. In the `public` section of the `async_future` class, implement the constructor. The constructor is a template that is parameterized on the work function that computes the result. The constructor asynchronously executes the work function in the `task_group` data member and uses the [concurrency::send](reference/concurrency-namespace-functions.md#send) function to write the result to the `single_assignment` data member.
+
+[!code-cpp[concrt-futures#4](../../parallel/concrt/codesnippet/cpp/walkthrough-implementing-futures_3.cpp)]
+
+1. In the `public` section of the `async_future` class, implement the destructor. The destructor waits for the task to finish.
+
+[!code-cpp[concrt-futures#5](../../parallel/concrt/codesnippet/cpp/walkthrough-implementing-futures_4.cpp)]
+
+1. In the `public` section of the `async_future` class, implement the `get` method. This method uses the [concurrency::receive](reference/concurrency-namespace-functions.md#receive) function to retrieve the result of the work function.
+
+[!code-cpp[concrt-futures#6](../../parallel/concrt/codesnippet/cpp/walkthrough-implementing-futures_5.cpp)]
+
+## Example
+
+### Description
+
+The following example shows the complete `async_future` class and an example of its usage. The `wmain` function creates a std::[vector](../../standard-library/vector-class.md) object that contains 10,000 random integer values. It then uses `async_future` objects to find the smallest and largest values that are contained in the `vector` object.
+
+### Code
+
+[!code-cpp[concrt-futures#1](../../parallel/concrt/codesnippet/cpp/walkthrough-implementing-futures_6.cpp)]
+
+### Comments
+
+This example produces the following output:
+
+```Output
+smallest: 0
+largest:  9999
+average:  4981
+```
+
+The example uses the `async_future::get` method to retrieve the results of the computation. The `async_future::get` method waits for the computation to finish if the computation is still active.
+
+## Robust Programming
+
+To extend the `async_future` class to handle exceptions that are thrown by the work function, modify the `async_future::get` method to call the [concurrency::task_group::wait](reference/task-group-class.md#wait) method. The `task_group::wait` method throws any exceptions that were generated by the work function.
+
+The following example shows the modified version of the `async_future` class. The `wmain` function uses a `try`-`catch` block to print the result of the `async_future` object or to print the value of the exception that is generated by the work function.
+
+[!code-cpp[concrt-futures-with-eh#1](../../parallel/concrt/codesnippet/cpp/walkthrough-implementing-futures_7.cpp)]
+
+This example produces the following output:
+
+```Output
+caught exception: error
+```
+
+For more information about the exception handling model in the Concurrency Runtime, see [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).
+
+## Compiling the Code
+
+Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `futures.cpp` and then run the following command in a Visual Studio Command Prompt window.
+
+**cl.exe /EHsc futures.cpp**
+
+## See Also
+
+[Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
+[Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
+[task_group Class](reference/task-group-class.md)<br/>
+[single_assignment Class](../../parallel/concrt/reference/single-assignment-class.md)

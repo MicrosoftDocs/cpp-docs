@@ -11,11 +11,12 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # 3.1.6 omp_in_parallel Function
-The **omp_in_parallel** function returns a nonzero value if it is called within the dynamic extent of a parallel region executing in parallel; otherwise, it returns 0. The format is as follows:  
-  
-```  
-#include <omp.h>  
-int omp_in_parallel(void);  
-```  
-  
- This function returns a nonzero value when called from within a region executing in parallel, including nested regions that are serialized.
+
+The **omp_in_parallel** function returns a nonzero value if it is called within the dynamic extent of a parallel region executing in parallel; otherwise, it returns 0. The format is as follows:
+
+```
+#include <omp.h>
+int omp_in_parallel(void);
+```
+
+This function returns a nonzero value when called from within a region executing in parallel, including nested regions that are serialized.

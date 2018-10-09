@@ -1,12 +1,12 @@
 ---
 title: "IsSame Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["internal/Microsoft::WRL::Details::IsSame"]
+f1_keywords: ["internal/Microsoft::WRL::Details::IsSame", "internal/Microsoft::WRL::Details::IsSame::value"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["IsSame structure"]
+helpviewer_keywords: ["Microsoft::WRL::Details::IsSame structure", "Microsoft::WRL::Details::IsSame::value constant"]
 ms.assetid: 1eddbc3f-3cc5-434f-8495-e4477e1f868e
 author: "mikeblome"
 ms.author: "mblome"
@@ -19,23 +19,19 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax
 
 ```cpp
-template <
-   typename T1,
-   typename T2
->
+template <typename T1, typename T2>
 struct IsSame;
-template <
-   typename T1
->
+
+template <typename T1>
 struct IsSame<T1, T1>;
 ```
 
 ### Parameters
 
-*T1*  
+*T1*<br/>
 A type.
 
-*T2*  
+*T2*<br/>
 Another type.
 
 ## Remarks
@@ -46,9 +42,9 @@ Tests whether one specified type is the same as another specified type.
 
 ### Public Constants
 
-|Name|Description|
-|----------|-----------------|
-|[IsSame::value Constant](../windows/issame-value-constant.md)|Indicates whether one type is the same as another.|
+Name                    | Description
+----------------------- | --------------------------------------------------
+[IsSame::value](#value) | Indicates whether one type is the same as another.
 
 ## Inheritance Hierarchy
 
@@ -60,6 +56,26 @@ Tests whether one specified type is the same as another specified type.
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## <a name="value"></a>IsSame::value
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+```cpp
+template <typename T1, typename T2>
+struct IsSame
+{
+    static const bool value = false;
+};
+
+template <typename T1>
+struct IsSame<T1, T1>
+{
+    static const bool value = true;
+};
+```
+
+### Remarks
+
+Indicates whether one type is the same as another.
+
+`value` is `true` if the template parameters are the same, and `false` if the template parameters are different.

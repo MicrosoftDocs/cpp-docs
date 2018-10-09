@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2213
-'modifier' : illegal argument to __based  
-  
- The argument modifying `__based` is invalid.  
-  
- The following sample generates C2213:  
-  
-```  
-// C2213.cpp  
-// compile with: /c  
-int i;  
-int *j;  
-char __based(i) *p;   // C2213  
-char __based(j) *p2;   // OK  
+
+'modifier' : illegal argument to __based
+
+The argument modifying `__based` is invalid.
+
+The following sample generates C2213:
+
+```
+// C2213.cpp
+// compile with: /c
+int i;
+int *j;
+char __based(i) *p;   // C2213
+char __based(j) *p2;   // OK
 ```

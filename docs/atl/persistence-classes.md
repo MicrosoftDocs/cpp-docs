@@ -28,6 +28,6 @@ The following classes implement object persistence:
 
 ## See Also
 
-[Class Overview](../atl/atl-class-overview.md)   
+[Class Overview](../atl/atl-class-overview.md)<br/>
 [Property Map Macros](../atl/reference/property-map-macros.md)
 

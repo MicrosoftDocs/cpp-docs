@@ -13,21 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4324
-'struct_name' : structure was padded due to __declspec(align())  
-  
- Padding was added at the end of a structure because you specified a [__declspec(align)](../../cpp/align-cpp.md) value.  
-  
- For example, the following code generates C4324:  
-  
-```  
-// C4324.cpp  
-// compile with: /W4  
-struct __declspec(align(32)) A  
-{  
-   char a;  
-};   // C4324  
-  
-int main()  
-{  
-}  
+
+'struct_name' : structure was padded due to __declspec(align())
+
+Padding was added at the end of a structure because you specified a [__declspec(align)](../../cpp/align-cpp.md) value.
+
+For example, the following code generates C4324:
+
+```
+// C4324.cpp
+// compile with: /W4
+struct __declspec(align(32)) A
+{
+   char a;
+};   // C4324
+
+int main()
+{
+}
 ```

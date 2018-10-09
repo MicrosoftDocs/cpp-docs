@@ -13,37 +13,39 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /OUT (Output File Name)
-```  
-/OUT:filename  
-```  
-  
-## Remarks  
- where:  
-  
- *filename*  
- A user-specified name for the output file. It replaces the default name.  
-  
-## Remarks  
- The /OUT option overrides the default name and location of the program that the linker creates.  
-  
- By default, the linker forms the file name using the base name of the first .obj file specified and the appropriate extension (.exe or .dll).  
-  
- This option the default base name for a .mapfile or import library. For details, see [Generate Mapfile](../../build/reference/map-generate-mapfile.md) (/MAP) and [/IMPLIB](../../build/reference/implib-name-import-library.md).  
-  
-### To set this linker option in the Visual Studio development environment  
-  
-1.  Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Click the **Linker** folder.  
-  
-3.  Click the **General** property page.  
-  
-4.  Modify the **Output File** property.  
-  
-### To set this linker option programmatically  
-  
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.OutputFile%2A>.  
-  
-## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+
+```
+/OUT:filename
+```
+
+## Arguments
+
+*filename*<br/>
+A user-specified name for the output file. It replaces the default name.
+
+## Remarks
+
+The /OUT option overrides the default name and location of the program that the linker creates.
+
+By default, the linker forms the file name using the base name of the first .obj file specified and the appropriate extension (.exe or .dll).
+
+This option the default base name for a .mapfile or import library. For details, see [Generate Mapfile](../../build/reference/map-generate-mapfile.md) (/MAP) and [/IMPLIB](../../build/reference/implib-name-import-library.md).
+
+### To set this linker option in the Visual Studio development environment
+
+1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+
+1. Click the **Linker** folder.
+
+1. Click the **General** property page.
+
+1. Modify the **Output File** property.
+
+### To set this linker option programmatically
+
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.OutputFile%2A>.
+
+## See Also
+
+[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Linker Options](../../build/reference/linker-options.md)

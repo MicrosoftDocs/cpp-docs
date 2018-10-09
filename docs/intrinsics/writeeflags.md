@@ -13,34 +13,37 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __writeeflags
-Writes the specified value to the program status and control (EFLAGS) register.  
-  
-## Syntax  
-  
-```  
-void __writeeflags(unsigned Value);  
-void __writeeflags(unsigned __int64 Value);  
-```  
-  
-#### Parameters  
-  
-|Parameter|Description|  
-|---------------|-----------------|  
-|[in] `Value`|The value to write to the EFLAGS register. The `Value` parameter is 32 bits long for a 32-bit platform and 64 bits long for a 64-bit platform.|  
-  
-## Remarks  
- These routines are available only as intrinsics.  
-  
-## Requirements  
-  
-|Intrinsic|Architecture|  
-|---------------|------------------|  
-|`__writeeflags`|x86, x64|  
-  
- **Header file** \<intrin.h>  
-  
-**END Microsoft Specific**  
-  
-## See Also  
- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   
- [__readeflags](../intrinsics/readeflags.md)
+
+Writes the specified value to the program status and control (EFLAGS) register.
+
+## Syntax
+
+```
+void __writeeflags(unsigned Value);
+void __writeeflags(unsigned __int64 Value);
+```
+
+#### Parameters
+
+|Parameter|Description|
+|---------------|-----------------|
+|*Value*|[in] The value to write to the EFLAGS register. The `Value` parameter is 32 bits long for a 32-bit platform and 64 bits long for a 64-bit platform.|
+
+## Remarks
+
+These routines are available only as intrinsics.
+
+## Requirements
+
+|Intrinsic|Architecture|
+|---------------|------------------|
+|`__writeeflags`|x86, x64|
+
+**Header file** \<intrin.h>
+
+**END Microsoft Specific**
+
+## See Also
+
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[__readeflags](../intrinsics/readeflags.md)

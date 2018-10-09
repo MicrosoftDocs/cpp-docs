@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1023
-'file' : unexpected error with pch, try rebuilding the pch  
-  
- C1023 could be caused by one of several problems, the solution to which is a rebuild of the precompiled header file.  
-  
- C1023 may be caused if you attempt to use a precompiled header file on a machine other than the one on which it was built.
+
+'file' : unexpected error with pch, try rebuilding the pch
+
+C1023 could be caused by one of several problems, the solution to which is a rebuild of the precompiled header file.
+
+C1023 may be caused if you attempt to use a precompiled header file on a machine other than the one on which it was built.

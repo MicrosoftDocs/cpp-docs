@@ -13,33 +13,34 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2935
-'class' : type-class-id redefined as a global function  
-  
- You cannot use a generic or template class as a global function.  
-  
- This error can be caused if braces are improperly matched.  
-  
- The following sample generates C2935:  
-  
-```  
-// C2935.cpp  
-// compile with: /c  
-template<class T>  
-struct TC {};   
-void TC<int>() {}   // C2935  
-  
-// OK  
-struct TC2 {};   
-void TC2() {}  
-```  
-  
- C2935 can also occur when using generics:  
-  
-```  
-// C2935b.cpp  
-// compile with: /clr /c  
-generic<class T>   
-ref struct GC { };  
-void GC<int>() {}   // C2935  
-void GC() {}   // OK  
+
+'class' : type-class-id redefined as a global function
+
+You cannot use a generic or template class as a global function.
+
+This error can be caused if braces are improperly matched.
+
+The following sample generates C2935:
+
+```
+// C2935.cpp
+// compile with: /c
+template<class T>
+struct TC {};
+void TC<int>() {}   // C2935
+
+// OK
+struct TC2 {};
+void TC2() {}
+```
+
+C2935 can also occur when using generics:
+
+```
+// C2935b.cpp
+// compile with: /clr /c
+generic<class T>
+ref struct GC { };
+void GC<int>() {}   // C2935
+void GC() {}   // OK
 ```

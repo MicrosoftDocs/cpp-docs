@@ -29,13 +29,13 @@ class hash_multiset
 ### Parameters
 
 *Key*<br/>
- The element data type to be stored in the hash_multiset.
+The element data type to be stored in the hash_multiset.
 
 *Traits*<br/>
- The type which includes two function objects, one of class compare that is a binary predicate able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type `size_t`. This argument is optional, and the `hash_compare<Key, less<Key> >` is the default value.
+The type which includes two function objects, one of class compare that is a binary predicate able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type `size_t`. This argument is optional, and the `hash_compare<Key, less<Key> >` is the default value.
 
 *Allocator*<br/>
- The type that represents the stored allocator object that encapsulates details about the hash_multiset's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<Key>`.
+The type that represents the stored allocator object that encapsulates details about the hash_multiset's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<Key>`.
 
 ## Remarks
 
@@ -464,7 +464,7 @@ size_type count(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The key of the elements to be matched from the hash_multiset.
+The key of the elements to be matched from the hash_multiset.
 
 ### Return Value
 
@@ -931,7 +931,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### Parameters
 
 *key*<br/>
- The argument key to be compared with the sort key of an element from the hash_multiset being searched.
+The argument key to be compared with the sort key of an element from the hash_multiset being searched.
 
 ### Return Value
 
@@ -1020,16 +1020,16 @@ size_type erase(const key_type& key);
 ### Parameters
 
 *_Where*<br/>
- Position of the element to be removed from the hash_multiset.
+Position of the element to be removed from the hash_multiset.
 
 *first*<br/>
- Position of the first element removed from the hash_multiset.
+Position of the first element removed from the hash_multiset.
 
 *last*<br/>
- Position just beyond the last element removed from the hash_multiset.
+Position just beyond the last element removed from the hash_multiset.
 
 *key*<br/>
- The key of the elements to be removed from the hash_multiset.
+The key of the elements to be removed from the hash_multiset.
 
 ### Return Value
 
@@ -1069,7 +1069,7 @@ int main()
     Iter1 = ++hms1.begin();
     hms1.erase(Iter1);
 
-    cout << "After the 2nd element is deleted,\n "
+    cout << "After the 2nd element is deleted,\n"
          << "the hash_multiset hms1 is:" ;
     for (pIter = hms1.begin(); pIter != hms1.end(); pIter++)
         cout << " " << *pIter;
@@ -1081,7 +1081,7 @@ int main()
     Iter2 = --hms2.end();
     hms2.erase(Iter1, Iter2);
 
-    cout << "After the middle two elements are deleted,\n "
+    cout << "After the middle two elements are deleted,\n"
          << "the hash_multiset hms2 is:" ;
     for (pIter = hms2.begin(); pIter != hms2.end(); pIter++)
         cout << " " << *pIter;
@@ -1090,7 +1090,7 @@ int main()
     // The 3rd member function removes elements with a given  key
     n = hms3.erase(2);
 
-    cout << "After the element with a key of 2 is deleted,\n "
+    cout << "After the element with a key of 2 is deleted,\n"
          << "the hash_multiset hms3 is:" ;
     for (pIter = hms3.begin(); pIter != hms3.end(); pIter++)
         cout << " " << *pIter;
@@ -1105,8 +1105,8 @@ int main()
     hms3.erase(Iter1);
 
     cout << "After another element with a key "
-         << "equal to that of the 2nd element\n is deleted, "
-         << "the hash_multiset hms3 is:" ;
+         << "equal to that of the 2nd element\n"
+         << "is deleted, the hash_multiset hms3 is:" ;
     for (pIter = hms3.begin(); pIter != hms3.end(); pIter++)
         cout << " " << *pIter;
     cout << "." << endl;
@@ -1115,14 +1115,14 @@ int main()
 
 ```Output
 After the 2nd element is deleted,
- the hash_multiset hms1 is: 1 3 4.
+the hash_multiset hms1 is: 1 3 4.
 After the middle two elements are deleted,
- the hash_multiset hms2 is: 16 4.
+the hash_multiset hms2 is: 16 4.
 After the element with a key of 2 is deleted,
- the hash_multiset hms3 is: 0 1 3.
+the hash_multiset hms3 is: 0 1 3.
 The number of elements removed from hms3 is: 1.
 After another element with a key equal to that of the 2nd element
- is deleted, the hash_multiset hms3 is: 0 3.
+is deleted, the hash_multiset hms3 is: 0 3.
 ```
 
 ## <a name="find"></a>  hash_multiset::find
@@ -1141,7 +1141,7 @@ const_iterator find(const Key& key) const;
 ### Parameters
 
 *key*<br/>
- The argument key to be matched by the sort key of an element from the hash_multiset being searched.
+The argument key to be matched by the sort key of an element from the hash_multiset being searched.
 
 ### Return Value
 
@@ -1311,18 +1311,18 @@ hash_multiset(
 
 template <class InputIterator>
 hash_multiset(
- InputIterator First,
+    InputIterator First,
     InputIterator Last);
 
 template <class InputIterator>
 hash_multiset(
- InputIterator First,
+    InputIterator First,
     InputIterator Last,
     const Traits& Comp);
 
 template <class InputIterator>
 hash_multiset(
- InputIterator First,
+    InputIterator First,
     InputIterator Last,
     const Traits& Comp,
     const Allocator& Al);
@@ -1576,7 +1576,7 @@ iterator lower_bound(const Key& key);
 ### Parameters
 
 *key*<br/>
- The argument key to be compared with the sort key of an element from the hash_multiset being searched.
+The argument key to be compared with the sort key of an element from the hash_multiset being searched.
 
 ### Return Value
 
@@ -2059,7 +2059,7 @@ void swap(hash_multiset& right);
 ### Parameters
 
 *right*<br/>
- The argument hash_multiset providing the elements to be swapped with the target hash_multiset.
+The argument hash_multiset providing the elements to be swapped with the target hash_multiset.
 
 ### Remarks
 
@@ -2135,7 +2135,7 @@ iterator upper_bound(const Key& key);
 ### Parameters
 
 *key*<br/>
- The argument key to be compared with the sort key of an element from the hash_multiset being searched.
+The argument key to be compared with the sort key of an element from the hash_multiset being searched.
 
 ### Return Value
 
@@ -2164,15 +2164,15 @@ int main( )
 
    hms1_RcIter = hms1.upper_bound( 20 );
    cout << "The first element of hash_multiset hms1" << endl
-        << " with a key greater than 20 is: "
+        << "with a key greater than 20 is: "
         << *hms1_RcIter << "." << endl;
 
    hms1_RcIter = hms1.upper_bound( 30 );
 
    // If no match is found for the key, end( ) is returned
    if ( hms1_RcIter == hms1.end( ) )
-      cout << "The hash_multiset hms1 doesn't have an element "
-           << "\n with a key greater than 30." << endl;
+      cout << "The hash_multiset hms1 doesn't have an element\n"
+           << "with a key greater than 30." << endl;
    else
       cout << "The element of hash_multiset hms1"
            << "with a key > 40 is: "
@@ -2182,7 +2182,7 @@ int main( )
    // found by using a dereferenced iterator addressing the location
    hms1_AcIter = hms1.begin( );
    hms1_RcIter = hms1.upper_bound( *hms1_AcIter );
-   cout << "The first element of hms1\n with a key greater than "
+   cout << "The first element of hms1 with a key greater than "
         << endl << "that of the initial element of hms1 is: "
         << *hms1_RcIter << "." << endl;
 }
@@ -2190,11 +2190,10 @@ int main( )
 
 ```Output
 The first element of hash_multiset hms1
- with a key greater than 20 is: 30.
+with a key greater than 20 is: 30.
 The hash_multiset hms1 doesn't have an element
- with a key greater than 30.
-The first element of hms1
- with a key greater than
+with a key greater than 30.
+The first element of hms1 with a key greater than
 that of the initial element of hms1 is: 20.
 ```
 

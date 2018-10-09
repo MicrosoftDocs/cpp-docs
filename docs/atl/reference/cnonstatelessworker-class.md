@@ -22,13 +22,13 @@ Receives requests from a thread pool and passes them on to a worker object that 
 ## Syntax
 
 ```
-template <class Worker>  
+template <class Worker>
 class CNonStatelessWorker
 ```
 
 #### Parameters
 
-*Worker*  
+*Worker*<br/>
 A worker thread class conforming to the [worker archetype](../../atl/reference/worker-archetype.md) suitable for handling requests queued on [CThreadPool](../../atl/reference/cthreadpool-class.md).
 
 ## Members
@@ -114,6 +114,6 @@ This class does not do any cleanup in `Terminate`.
 
 ## See Also
 
-[CThreadPool Class](../../atl/reference/cthreadpool-class.md)   
-[Worker Archetype](../../atl/reference/worker-archetype.md)   
+[CThreadPool Class](../../atl/reference/cthreadpool-class.md)<br/>
+[Worker Archetype](../../atl/reference/worker-archetype.md)<br/>
 [Classes](../../atl/reference/atl-classes.md)

@@ -74,9 +74,9 @@ extern constexpr __declspec(selectany) int x = 10;
 
 ## extern "C" and extern "C++" function declarations
 
- In C++, when used with a string, **extern** specifies that the linkage conventions of another language are being used for the declarator(s). C functions and data can be accessed only if they are previously declared as having C linkage. However, they must be defined in a separately compiled translation unit.
+In C++, when used with a string, **extern** specifies that the linkage conventions of another language are being used for the declarator(s). C functions and data can be accessed only if they are previously declared as having C linkage. However, they must be defined in a separately compiled translation unit.
 
- Microsoft C++ supports the strings **"C"** and **"C++"** in the *string-literal* field. All of the standard include files use the **extern** "C" syntax to allow the run-time library functions to be used in C++ programs.
+Microsoft C++ supports the strings **"C"** and **"C++"** in the *string-literal* field. All of the standard include files use the **extern** "C" syntax to allow the run-time library functions to be used in C++ programs.
 
 ## Example
 
@@ -100,7 +100,7 @@ extern "C" {
     char GetChar(void);
 }
 
-//  Define the two functions 
+//  Define the two functions
 //  ShowChar and GetChar with C linkage.
 extern "C" char ShowChar(char ch) {
     putchar(ch);
@@ -117,7 +117,7 @@ extern "C" char GetChar(void) {
 extern "C" int errno;
 ```
 
- If a function has more than one linkage specification, they must agree; it is an error to declare functions as having both C and C++ linkage. Furthermore, if two declarations for a function occur in a program — one with a linkage specification and one without — the declaration with the linkage specification must be first. Any redundant declarations of functions that already have linkage specification are given the linkage specified in the first declaration. For example:
+If a function has more than one linkage specification, they must agree; it is an error to declare functions as having both C and C++ linkage. Furthermore, if two declarations for a function occur in a program — one with a linkage specification and one without — the declaration with the linkage specification must be first. Any redundant declarations of functions that already have linkage specification are given the linkage specified in the first declaration. For example:
 
 ```cpp
 extern "C" int CFunc1();
@@ -133,8 +133,9 @@ extern "C" int CFunc2(); // Error: not the first declaration of
 ```
 
 ## See also
- [Keywords](../cpp/keywords-cpp.md)  
- [Program and linkage](program-and-linkage-cpp.md)  
- [extern Storage-Class Specifier in C](../c-language/extern-storage-class-specifier.md)  
- [Behavior of Identifiers in C](../c-language/behavior-of-identifiers.md)  
- [Linkage in C](../c-language/linkage.md)
+
+[Keywords](../cpp/keywords-cpp.md)<br/>
+[Program and linkage](program-and-linkage-cpp.md)<br/>
+[extern Storage-Class Specifier in C](../c-language/extern-storage-class-specifier.md)<br/>
+[Behavior of Identifiers in C](../c-language/behavior-of-identifiers.md)<br/>
+[Linkage in C](../c-language/linkage.md)

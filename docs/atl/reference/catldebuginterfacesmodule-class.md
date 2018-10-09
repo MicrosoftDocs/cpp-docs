@@ -32,5 +32,5 @@ class CAtlDebugInterfacesModule
 
 ## See Also
 
-[Class Overview](../../atl/atl-class-overview.md)   
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [Module Classes](../../atl/atl-module-classes.md)

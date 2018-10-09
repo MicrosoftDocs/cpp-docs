@@ -19,16 +19,16 @@ This class provides a pool of worker threads that process a queue of work items.
 ## Syntax
 
 ```
-template <class Worker, class ThreadTraits = DefaultThreadTraits>  
+template <class Worker, class ThreadTraits = DefaultThreadTraits>
 class CThreadPool : public IThreadPoolConfig
 ```
 
 #### Parameters
 
-*Worker*  
+*Worker*<br/>
 The class conforming to the [worker archetype](../../atl/reference/worker-archetype.md) providing the code used to process work items queued on the thread pool.
 
-*ThreadTraits*  
+*ThreadTraits*<br/>
 The class providing the function used to create the threads in the pool.
 
 ## Members
@@ -155,7 +155,7 @@ HRESULT STDMETHODCALLTYPE GetSize(int* pnNumThreads) throw();
 
 ### Parameters
 
-*pnNumThreads*  
+*pnNumThreads*<br/>
 [out] Address of the variable that, on success, receives the number of threads in the pool.
 
 ### Return Value
@@ -172,7 +172,7 @@ HRESULT STDMETHODCALLTYPE GetTimeout(DWORD* pdwMaxWait) throw();
 
 ### Parameters
 
-*pdwMaxWait*  
+*pdwMaxWait*<br/>
 [out] Address of the variable that, on success, receives the maximum time in milliseconds that the thread pool will wait for a thread to shut down.
 
 ### Return Value
@@ -197,20 +197,20 @@ HRESULT Initialize(
 
 ### Parameters
 
-*pvWorkerParam*  
+*pvWorkerParam*<br/>
 The worker parameter to be passed to the worker thread object's `Initialize`, `Execute`, and `Terminate` methods.
 
-*nNumThreads*  
+*nNumThreads*<br/>
 The requested number of threads in the pool.
 
 If *nNumThreads* is negative, its absolute value will be multiplied by the number of processors in the machine to get the total number of threads.
 
 If *nNumThreads* is zero, ATLS_DEFAULT_THREADSPERPROC will be multiplied by the number of processors in the machine to get the total number of threads.  The default is 2 threads per processor. If necessary, you can define your own positive integer value for this symbol before including atlutil.h.
 
-*dwStackSize*  
+*dwStackSize*<br/>
 The stack size for each thread in the pool.
 
-*hCompletion*  
+*hCompletion*<br/>
 The handle of an object to associate with the completion port.
 
 ### Return Value
@@ -239,7 +239,7 @@ BOOL QueueRequest(Worker::RequestType request) throw();
 
 ### Parameters
 
-*request*  
+*request*<br/>
 The request to be queued.
 
 ### Return Value
@@ -276,7 +276,7 @@ HRESULT STDMETHODCALLTYPE SetSizeint nNumThreads) throw();
 
 ### Parameters
 
-*nNumThreads*  
+*nNumThreads*<br/>
 The requested number of threads in the pool.
 
 If *nNumThreads* is negative, its absolute value will be multiplied by the number of processors in the machine to get the total number of threads.
@@ -301,7 +301,7 @@ HRESULT STDMETHODCALLTYPE SetTimeout(DWORD dwMaxWait) throw();
 
 ### Parameters
 
-*dwMaxWait*  
+*dwMaxWait*<br/>
 The requested maximum time in milliseconds that the thread pool will wait for a thread to shut down.
 
 ### Return Value
@@ -324,7 +324,7 @@ void Shutdown(DWORD dwMaxWait = 0) throw();
 
 ### Parameters
 
-*dwMaxWait*  
+*dwMaxWait*<br/>
 The requested maximum time in milliseconds that the thread pool will wait for a thread to shut down. If 0 or no value is supplied, this method will use the timeout set by [CThreadPool::SetTimeout](#settimeout).
 
 ### Remarks
@@ -333,6 +333,6 @@ This method posts a shutdown request to all threads in the pool. If the timeout 
 
 ## See Also
 
-[IThreadPoolConfig Interface](../../atl/reference/ithreadpoolconfig-interface.md)   
-[DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)   
+[IThreadPoolConfig Interface](../../atl/reference/ithreadpoolconfig-interface.md)<br/>
+[DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)<br/>
 [Classes](../../atl/reference/atl-classes.md)

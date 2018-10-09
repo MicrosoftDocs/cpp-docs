@@ -36,5 +36,5 @@ Win32
 
 ## See Also
 
-[Connecting a Pop-up Menu to Your Application](../windows/connecting-a-pop-up-menu-to-your-application.md)  
+[Connecting a Pop-up Menu to Your Application](../windows/connecting-a-pop-up-menu-to-your-application.md)<br/>
 [Menu Editor](../windows/menu-editor.md)

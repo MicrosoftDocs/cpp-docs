@@ -13,33 +13,36 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # copyin
-Allows threads to access the master thread's value, for a [threadprivate](../../../parallel/openmp/reference/threadprivate.md) variable.  
-  
-## Syntax  
-  
-```  
-copyin(var)  
-```  
-  
-## Remarks  
- where,  
-  
- `var`  
- The `threadprivate` variable that will be initialized with the value of the variable in the master thread, as it exists before the parallel construct.  
-  
-## Remarks  
- `copyin` applies to the following directives:  
-  
--   [parallel](../../../parallel/openmp/reference/parallel.md)  
-  
--   [for](../../../parallel/openmp/reference/for-openmp.md)  
-  
--   [sections](../../../parallel/openmp/reference/sections-openmp.md)  
-  
- For more information, see [2.7.2.7 copyin](../../../parallel/openmp/2-7-2-7-copyin.md).  
-  
-## Example  
- See [threadprivate](../../../parallel/openmp/reference/threadprivate.md) for an example of using `copyin`.  
-  
-## See Also  
- [Clauses](../../../parallel/openmp/reference/openmp-clauses.md)
+
+Allows threads to access the master thread's value, for a [threadprivate](../../../parallel/openmp/reference/threadprivate.md) variable.
+
+## Syntax
+
+```
+copyin(var)
+```
+
+## Parameters
+
+*var*<br/>
+The `threadprivate` variable that will be initialized with the value of the variable in the master thread, as it exists before the parallel construct.
+
+## Remarks
+
+`copyin` applies to the following directives:
+
+- [parallel](../../../parallel/openmp/reference/parallel.md)
+
+- [for](../../../parallel/openmp/reference/for-openmp.md)
+
+- [sections](../../../parallel/openmp/reference/sections-openmp.md)
+
+For more information, see [2.7.2.7 copyin](../../../parallel/openmp/2-7-2-7-copyin.md).
+
+## Example
+
+See [threadprivate](../../../parallel/openmp/reference/threadprivate.md) for an example of using `copyin`.
+
+## See Also
+
+[Clauses](../../../parallel/openmp/reference/openmp-clauses.md)

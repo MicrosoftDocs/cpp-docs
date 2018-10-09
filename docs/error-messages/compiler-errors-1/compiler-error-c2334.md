@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2334
-unexpected token(s) preceding ': or {'; skipping apparent function body  
-  
- The following sample generates C2334. This error occurs after error C2059:  
-  
-```  
-// C2334.cpp  
-// compile with: /c  
-// C2059 expected  
-struct s1 {  
-   s1   {}   // C2334  
-   s1() {}   // OK  
-};  
+
+unexpected token(s) preceding ': or {'; skipping apparent function body
+
+The following sample generates C2334. This error occurs after error C2059:
+
+```
+// C2334.cpp
+// compile with: /c
+// C2059 expected
+struct s1 {
+   s1   {}   // C2334
+   s1() {}   // OK
+};
 ```

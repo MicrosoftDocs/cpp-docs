@@ -13,16 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /PDATA
-```  
-/PDATA  
-```  
-  
-## Remarks  
- RISC processors only.  
-  
- This option dumps the exception tables (.pdata) from an image or object.  
-  
- Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.  
-  
-## See Also  
- [DUMPBIN Options](../../build/reference/dumpbin-options.md)
+
+```
+/PDATA
+```
+
+## Remarks
+
+RISC processors only.
+
+This option dumps the exception tables (.pdata) from an image or object.
+
+Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.
+
+## See Also
+
+[DUMPBIN Options](../../build/reference/dumpbin-options.md)

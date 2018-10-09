@@ -39,7 +39,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
 
       1. **Select or enter a server name:** Click the drop-down list menu to display all registered data servers on the network, and select one.
 
-      2. **Enter information to log on to the server:** Enter a user name and password to log on to the data server.
+      1. **Enter information to log on to the server:** Enter a user name and password to log on to the data server.
 
          > [!NOTE]
          > There is a security problem with the "Allow saving of password" feature of the Data Link Properties dialog box. In "Enter information to log on to the server," there are two radio buttons:
@@ -50,7 +50,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
          > If you select **Use a specific user name and password**, you have the option of saving the password (using the check box for "Allow saving password"); however, this option is not secure. It is recommended that you select **Use Windows NT integrated security**; this option is secure because it encrypts the password.
          > There might be situations in which you want to select "Allow saving password." For example, if you are releasing a library with a private database solution, you should not access the database directly but instead use a middle-tier application to verify the user (through whatever authentication scheme you choose) and then limit the sort of data available to the user.
 
-      3. **Select the database on the server:** Click the drop-down list menu to display all registered databases on the data server, and select one.
+      1. **Select the database on the server:** Click the drop-down list menu to display all registered databases on the data server, and select one.
 
          \- or -
 
@@ -67,13 +67,13 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
          **Use connection string:** Either enter a connection string you have already obtained, or click the **Build** button; the **Select Data Source** dialog box appears. Select a file or machine data source and click **OK**.
 
          > [!NOTE]
-         > You can obtain a connection string by viewing the properties of an existing connection in Server Explorer, or you can create a connection by double-clicking **Add Connection** in Server Explorer.
+         > You can obtain a connection string by viewing the properties of an existing connection in **Server Explorer**, or you can create a connection by double-clicking **Add Connection** in **Server Explorer**.
 
-      2. **Enter information to log on to the server:** Enter a user name and password to log on to the data server.
+      1. **Enter information to log on to the server:** Enter a user name and password to log on to the data server.
 
-      3. Enter the initial catalog to use.
+      1. Enter the initial catalog to use.
 
-      4. Click **Test Connection**; if the test succeeds, click **OK**. If not, check your logon information, try another database, or try another data server.
+      1. Click **Test Connection**; if the test succeeds, click **OK**. If not, check your logon information, try another database, or try another data server.
 
    - **Advanced** tab
 
@@ -180,6 +180,6 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
 
 ## See also
 
-[ATL OLE DB Consumer](../../atl/reference/adding-an-atl-ole-db-consumer.md)
-[Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)
+[ATL OLE DB Consumer](../../atl/reference/adding-an-atl-ole-db-consumer.md)<br/>
+[Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Connection Strings and Data Links (OLE DB)](/previous-versions/windows/desktop/ms718376\(v=vs.85\))

@@ -13,10 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4723
-potential divide by 0  
-  
- The second operand in a divide operation evaluated to zero at compile time, giving undefined results.  
-  
- This warning is issued only when using [/Og](../../build/reference/og-global-optimizations.md) or an optimization option that implies /Og.  
-  
- The compiler may have generated the zero operand.
+
+potential divide by 0
+
+The second operand in a divide operation evaluated to zero at compile time, giving undefined results.
+
+This warning is issued only when using [/Og](../../build/reference/og-global-optimizations.md) or an optimization option that implies /Og.
+
+The compiler may have generated the zero operand.

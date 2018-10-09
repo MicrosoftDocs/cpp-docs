@@ -14,9 +14,9 @@ ms.workload: ["cplusplus"]
 ---
 # /SYMBOLS
 
-```  
+```
 /SYMBOLS
-```  
+```
 
 This option displays the COFF symbol table. Symbol tables exist in all object files. A COFF symbol table appears in an image file only if it is linked with /DEBUG.
 
@@ -24,7 +24,7 @@ The following is a description of the output for /SYMBOLS. Additional informatio
 
 Given the following sample dump:
 
-```  
+```
 Dump of file main.obj
 File Type: COFF OBJECT
 
@@ -35,9 +35,9 @@ COFF SYMBOL TABLE
 003 00000000 SECT1    notype       Static       | .drectve
     Section length     26, #relocs    0, #linenums    0, checksum 722C964F
 005 00000000 SECT2    notype       Static       | .text
-    Section length     23, #relocs    1, #linenums    0, checksum 459FF65F, selection    1 (pick no duplicates)  
+    Section length     23, #relocs    1, #linenums    0, checksum 459FF65F, selection    1 (pick no duplicates)
 007 00000000 SECT2    notype ()    External     | _main
-008 00000000 UNDEF    notype ()    External     | ?MyDump@@YAXXZ (void __cdecl MyDump(void))  
+008 00000000 UNDEF    notype ()    External     | ?MyDump@@YAXXZ (void __cdecl MyDump(void))
 
 String Table Size = 0x10 bytes
 
@@ -45,7 +45,7 @@ String Table Size = 0x10 bytes
 
          26 .drectve
          23 .text
-```  
+```
 
 ## Remarks
 

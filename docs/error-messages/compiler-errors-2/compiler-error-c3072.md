@@ -13,23 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3072
-operator 'operator' cannot be applied to an instance of a ref class  
-  
- use the unary '`operator` ' operator to convert an instance of a ref class to a handle type  
-  
- A CLR type requires CLR operators, not native (or standard) operators.  For more information, see [Tracking Reference Operator](../../windows/tracking-reference-operator-cpp-component-extensions.md).  
-  
-## Example  
- The following sample generates C3072.  
-  
-```  
-// C3072.cpp  
-// compile with: /clr  
-ref class R {};  
-  
-int main() {  
-   R r1;  
-   R^ r2 = &r1;   // C3072  
-   R^ r3 = %r1;   // OK  
-}  
+
+operator 'operator' cannot be applied to an instance of a ref class
+
+use the unary '`operator` ' operator to convert an instance of a ref class to a handle type
+
+A CLR type requires CLR operators, not native (or standard) operators.  For more information, see [Tracking Reference Operator](../../windows/tracking-reference-operator-cpp-component-extensions.md).
+
+## Example
+
+The following sample generates C3072.
+
+```
+// C3072.cpp
+// compile with: /clr
+ref class R {};
+
+int main() {
+   R r1;
+   R^ r2 = &r1;   // C3072
+   R^ r3 = %r1;   // OK
+}
 ```

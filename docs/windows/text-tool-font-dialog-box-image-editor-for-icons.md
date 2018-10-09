@@ -21,20 +21,25 @@ Use this dialog box for:
 
 To access this dialog box, click the **Font** button in the **Text Tool** dialog box.
 
-**Font**  
-Lists the available fonts.
+- **Font**
 
-**Font Style**  
-Lists the available styles for the specified font.
+   Lists the available fonts.
 
-**Size**  
-Lists the available point sizes for the specified font.
+- **Font Style**
 
-**Sample**  
-Shows a sample of how text will appear with the specified font settings.
+   Lists the available styles for the specified font.
 
-**Script**  
-Lists the available language scripts for the specified font. When you select a different language script, the character set for that language becomes available for creating multilingual documents.
+- **Size**
+
+   Lists the available point sizes for the specified font.
+
+- **Sample**
+
+   Shows a sample of how text will appear with the specified font settings.
+
+- **Script**
+
+   Lists the available language scripts for the specified font. When you select a different language script, the character set for that language becomes available for creating multilingual documents.
 
 ## Requirements
 

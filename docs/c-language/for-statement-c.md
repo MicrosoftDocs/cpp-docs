@@ -24,7 +24,7 @@ Execution of a **for** statement proceeds as follows:
 
 1. The *init-expression*, if any, is evaluated. This specifies the initialization for the loop. There is no restriction on the type of *init-expression*.
 
-2. The *cond-expression*, if any, is evaluated. This expression must have arithmetic or pointer type. It is evaluated before each iteration. Three results are possible:
+1. The *cond-expression*, if any, is evaluated. This expression must have arithmetic or pointer type. It is evaluated before each iteration. Three results are possible:
 
    - If *cond-expression* is **true** (nonzero), *statement* is executed; then *loop-expression*, if any, is evaluated. The *loop-expression* is evaluated after each iteration. There is no restriction on its type. Side effects will execute in order. The process then begins again with the evaluation of *cond-expression*.
 
@@ -71,8 +71,8 @@ int main()
 }
 ```
 
-## Output  
-  
+## Output
+
 ```Output
 Number of spaces: 4
 Number of tabs: 2

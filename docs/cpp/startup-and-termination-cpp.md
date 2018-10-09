@@ -11,7 +11,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Startup and Termination (C++)
-Program startup and termination are facilitated by using two functions: [main](../cpp/main-program-startup.md) and [exit](../cpp/program-termination.md). Other startup and termination code may be executed.  
-  
-## See also  
- [Basic Concepts](../cpp/basic-concepts-cpp.md)
+
+Program startup and termination are facilitated by using two functions: [main](../cpp/main-program-startup.md) and [exit](../cpp/program-termination.md). Other startup and termination code may be executed.
+
+## See also
+
+[Basic Concepts](../cpp/basic-concepts-cpp.md)

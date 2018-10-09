@@ -76,6 +76,6 @@ VCUE_Copy.h also contains the following specializations of this class: `GenericC
 
 ## See Also
 
-[Implementing a C++ Standard Library-Based Collection](../atl/implementing-an-stl-based-collection.md)   
+[Implementing a C++ Standard Library-Based Collection](../atl/implementing-an-stl-based-collection.md)<br/>
 [ATLCollections Sample](../visual-cpp-samples.md)
 

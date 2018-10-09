@@ -13,29 +13,30 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3887
-'var' : the initializer for a literal data member must be a constant expression  
-  
- A [literal](../../windows/literal-cpp-component-extensions.md) data member can only be initialized with a constant expresion.  
-  
- The following sample generates C3887:  
-  
-```  
-// C3887.cpp  
-// compile with: /clr  
-ref struct Y1 {  
-   static int i = 9;  
-   literal  
-   int staticConst = i;   // C3887  
-};  
-```  
-  
- Possible resolution:  
-  
-```  
-// C3887b.cpp  
-// compile with: /clr /c  
-ref struct Y1 {  
-   literal  
-   int staticConst = 9;  
-};  
+
+'var' : the initializer for a literal data member must be a constant expression
+
+A [literal](../../windows/literal-cpp-component-extensions.md) data member can only be initialized with a constant expresion.
+
+The following sample generates C3887:
+
+```
+// C3887.cpp
+// compile with: /clr
+ref struct Y1 {
+   static int i = 9;
+   literal
+   int staticConst = i;   // C3887
+};
+```
+
+Possible resolution:
+
+```
+// C3887b.cpp
+// compile with: /clr /c
+ref struct Y1 {
+   literal
+   int staticConst = 9;
+};
 ```

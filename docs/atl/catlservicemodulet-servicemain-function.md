@@ -26,6 +26,6 @@ Now, `CAtlServiceModuleT::Run` is called to perform the main work of the service
 
 ## See Also
 
-[Services](../atl/atl-services.md)   
+[Services](../atl/atl-services.md)<br/>
 [CAtlServiceModuleT::ServiceMain](../atl/reference/catlservicemodulet-class.md#servicemain)
 

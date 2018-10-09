@@ -46,21 +46,24 @@ The template versions of [do_in](#do_in) and [do_out](#do_out) always return `co
 
 The C++ Standard Library defines several explicit specializations:
 
-`template<>`
-
-`codecvt<wchar_t, char, mbstate_t>`
+```cpp
+template<>
+codecvt<wchar_t, char, mbstate_t>
+```
 
 converts between **wchar_t** and **char** sequences.
 
-`template<>`
-
-`codecvt<char16_t, char, mbstate_t>`
+```cpp
+template<>
+codecvt<char16_t, char, mbstate_t>
+```
 
 converts between `char16_t` sequences encoded as UTF-16 and **char** sequences encoded as UTF-8.
 
-`template<>`
-
-`codecvt<char32_t, char, mbstate_t>`
+```cpp
+template<>
+codecvt<char32_t, char, mbstate_t>
+```
 
 converts between `char32_t` sequences encoded as UTF-32 (UCS-4) and **char** sequences encoded as UTF-8.
 

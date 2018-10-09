@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2428
-'operation' : not allowed on operand of type 'bool'  
-  
- You cannot apply a decrement operator to objects of type `bool`.  
-  
- The following sample generates C2428:  
-  
-```  
-// C2428.cpp  
-void g(bool fFlag) {  
-   --fFlag;   // C2428  
-   fFlag--;   // C2428  
-}  
+
+'operation' : not allowed on operand of type 'bool'
+
+You cannot apply a decrement operator to objects of type `bool`.
+
+The following sample generates C2428:
+
+```
+// C2428.cpp
+void g(bool fFlag) {
+   --fFlag;   // C2428
+   fFlag--;   // C2428
+}
 ```

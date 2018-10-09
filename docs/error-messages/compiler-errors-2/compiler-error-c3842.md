@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3842
-'function': 'const' and 'volatile' qualifiers on member functions of WinRT or managed types are not supported  
-  
- [const](../../cpp/const-cpp.md) and [volatile](../../cpp/volatile-cpp.md) are not supported on member functions of Windows Runtime or managed types.  
-  
- The following sample generates C3842:  
-  
-```  
-// C3842a.cpp  
-// compile with: /clr /c  
-public ref struct A {  
-   void f() const {}   // C3842  
-   void f() volatile {}   // C3842  
-  
-   void f() {}  
-};  
+
+'function': 'const' and 'volatile' qualifiers on member functions of WinRT or managed types are not supported
+
+[const](../../cpp/const-cpp.md) and [volatile](../../cpp/volatile-cpp.md) are not supported on member functions of Windows Runtime or managed types.
+
+The following sample generates C3842:
+
+```
+// C3842a.cpp
+// compile with: /clr /c
+public ref struct A {
+   void f() const {}   // C3842
+   void f() volatile {}   // C3842
+
+   void f() {}
+};
 ```

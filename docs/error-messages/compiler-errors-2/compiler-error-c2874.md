@@ -13,20 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2874
-using-declaration causes a multiple declaration of 'symbol'  
-  
- The declaration causes the same item to be defined twice.  
-  
- The following sample generates C2874:  
-  
-```  
-// C2874.cpp  
-namespace Z {  
-   int i;  
-}  
-  
-int main() {  
-   int i;  
-   using Z::i;   // C2874, i already declared  
-}  
+
+using-declaration causes a multiple declaration of 'symbol'
+
+The declaration causes the same item to be defined twice.
+
+The following sample generates C2874:
+
+```
+// C2874.cpp
+namespace Z {
+   int i;
+}
+
+int main() {
+   int i;
+   using Z::i;   // C2874, i already declared
+}
 ```

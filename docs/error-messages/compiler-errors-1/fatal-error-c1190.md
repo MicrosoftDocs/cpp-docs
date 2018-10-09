@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1190
-managed targeted code requires a '/clr' option  
-  
- You are using CLR constructs but you did not specify **/clr**.  
-  
- For more information, see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md).  
-  
- The following sample generates C1190:  
-  
-```  
-// C1190.cpp  
-// compile with: /c  
-__gc class A {};   // C1190  
-ref class A {};  
+
+managed targeted code requires a '/clr' option
+
+You are using CLR constructs but you did not specify **/clr**.
+
+For more information, see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md).
+
+The following sample generates C1190:
+
+```
+// C1190.cpp
+// compile with: /c
+__gc class A {};   // C1190
+ref class A {};
 ```

@@ -71,14 +71,12 @@ sampler() restrict(cpu);    // [1] default constructor
 sampler(                    // [2] constructor
     filter_mode _Filter_mode) restrict(cpu);
 
-
 sampler(                    // [3] constructor
     address_mode _Address_mode,
     float_4 _Border_color = float_4(0.0f,
     0.0f,
     0.0f,
     0.0f)) restrict(cpu);
-
 
 sampler(                    // [4] constructor
     filter_mode _Filter_mode,
@@ -88,11 +86,9 @@ sampler(                    // [4] constructor
     0.0f,
     0.0f)) restrict(cpu);
 
-
 sampler(                    // [5] copy constructor
     const sampler& _Other) restrict(amp,
     cpu);
-
 
 sampler(                    // [6] move constructor
     sampler&& _Other) restrict(amp,
@@ -101,20 +97,20 @@ sampler(                    // [6] move constructor
 
 ### Parameters
 
-*_Filter_mode*  
- The filter mode to be used in sampling.
+*_Filter_mode*<br/>
+The filter mode to be used in sampling.
 
-*_Address_mode*  
- The addressing mode to be used in sampling for all dimensions.
+*_Address_mode*<br/>
+The addressing mode to be used in sampling for all dimensions.
 
-*_Border_color*  
- The border color to be used if the address mode is address_border. The default value is `float_4(0.0f, 0.0f, 0.0f, 0.0f)`.
+*_Border_color*<br/>
+The border color to be used if the address mode is address_border. The default value is `float_4(0.0f, 0.0f, 0.0f, 0.0f)`.
 
-*_Other*  
-[5] Copy Constructor  
+*_Other*<br/>
+[5] Copy Constructor
 The `sampler` object to copy into the new `sampler` instance.
 
-[6] Move Constructor  
+[6] Move Constructor
 The `sampler` object to move into the new `sampler` instance.
 
 ##  <a name="address_mode"></a> address_mode
@@ -185,17 +181,17 @@ Assigns the value of another sampler object to an existing sampler.
 sampler& operator= (    // [1] copy assignment operator
     const sampler& _Other) restrict(amp, cpu);
 
-sampler& operator= (    // [2] move assignment operator 
+sampler& operator= (    // [2] move assignment operator
     sampler&& _Other) restrict(amp, cpu);
 ```
 
 ### Parameters
 
-*_Other*  
-[1] Copy Assignment Operator  
+*_Other*<br/>
+[1] Copy Assignment Operator
 The `sampler` object to copy into this `sampler`.
 
-[2] Move Assignment Operator  
+[2] Move Assignment Operator
 The `sampler` object to move into this `sampler`.
 
 ### Return Value
@@ -204,4 +200,4 @@ A reference to this sampler instance.
 
 ## See also
 
-[Concurrency::graphics Namespace](concurrency-graphics-namespace.md)  
+[Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

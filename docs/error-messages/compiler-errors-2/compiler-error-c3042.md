@@ -13,26 +13,27 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3042
-'copyprivate' and 'nowait' clauses cannot appear together on OpenMP 'directive' directive  
-  
- The [copyprivate](../../parallel/openmp/reference/copyprivate.md) and [nowait](../../parallel/openmp/reference/nowait.md) clauses are mutually exclusive on the specified directive. To fix this error, remove one or both of the `copyprivate` or `nowait` clauses.  
-  
- The following sample generates C3042:  
-  
-```  
-// C3042.cpp  
-// compile with: /openmp /c  
-#include <stdio.h>  
-#include "omp.h"  
-  
-double d;  
-  
-int main() {  
-    #pragma omp parallel private(d)  
-   {  
-      #pragma omp single copyprivate(d) nowait   // C3042  
-      {  
-      }  
-   }  
-}  
+
+'copyprivate' and 'nowait' clauses cannot appear together on OpenMP 'directive' directive
+
+The [copyprivate](../../parallel/openmp/reference/copyprivate.md) and [nowait](../../parallel/openmp/reference/nowait.md) clauses are mutually exclusive on the specified directive. To fix this error, remove one or both of the `copyprivate` or `nowait` clauses.
+
+The following sample generates C3042:
+
+```
+// C3042.cpp
+// compile with: /openmp /c
+#include <stdio.h>
+#include "omp.h"
+
+double d;
+
+int main() {
+    #pragma omp parallel private(d)
+   {
+      #pragma omp single copyprivate(d) nowait   // C3042
+      {
+      }
+   }
+}
 ```

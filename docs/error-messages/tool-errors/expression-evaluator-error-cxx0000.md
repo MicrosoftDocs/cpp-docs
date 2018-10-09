@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0000
-no error condition  
-  
- No error has occurred. You can continue debugging normally.  
-  
- Note the circumstances and notify Microsoft Product Support Services.
+
+no error condition
+
+No error has occurred. You can continue debugging normally.
+
+Note the circumstances and notify Microsoft Product Support Services.

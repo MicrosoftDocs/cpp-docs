@@ -13,16 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2640
-'identifier' : __based modifier illegal on reference  
-  
- The `__based` modifier can be used on pointers only.  
-  
- The following sample generates C2640:  
-  
-```  
-// C2640.cpp  
-void f(int i) {  
-    void *vp;  
-    int _based(vp) &vr = I;  // C2640  
-}  
+
+'identifier' : __based modifier illegal on reference
+
+The `__based` modifier can be used on pointers only.
+
+The following sample generates C2640:
+
+```
+// C2640.cpp
+void f(int i) {
+    void *vp;
+    int _based(vp) &vr = I;  // C2640
+}
 ```

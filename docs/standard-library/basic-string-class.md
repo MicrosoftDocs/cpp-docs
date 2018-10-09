@@ -618,12 +618,12 @@ basic_string(
 
 template <class InputIterator>
 basic_string(
-InputIterator first,
+    InputIterator first,
     InputIterator last);
 
 template <class InputIterator>
 basic_string(
-InputIterator first,
+    InputIterator first,
     InputIterator last,
     const allocator_type& _Al);
 
@@ -3860,10 +3860,10 @@ The C-string that is to be a source of characters for the operand string.
 *_Ch*<br/>
 The character to be copied into the operand string.
 
-* first0*
+*first0*<br/>
 An iterator addressing the first character to be removed in the operand string.
 
-* last0*
+*last0*<br/>
 An iterator addressing the last character to be removed in the operand string.
 
 *first*<br/>

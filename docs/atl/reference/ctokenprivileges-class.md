@@ -75,19 +75,19 @@ For an introduction to the access control model in Windows, see [Access Control]
 Adds one or more privileges to the `CTokenPrivileges` access token object.
 
 ```
-bool Add(LPCTSTR pszPrivilege, bool bEnable) throw(...);  
+bool Add(LPCTSTR pszPrivilege, bool bEnable) throw(...);
 void Add(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 ```
 
 ### Parameters
 
-*pszPrivilege*  
+*pszPrivilege*<br/>
 Pointer to a null-terminated string that specifies the name of the privilege, as defined in the WINNT.H header file.
 
-*bEnable*  
+*bEnable*<br/>
 If true, the privilege is enabled. If false, the privilege is disabled.
 
-*rPrivileges*  
+*rPrivileges*<br/>
 Reference to a [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) structure. The privileges and attributes are copied from this structure and added to the `CTokenPrivileges` object.
 
 ### Return Value
@@ -100,16 +100,16 @@ The constructor.
 
 ```
 CTokenPrivileges() throw();
-CTokenPrivileges(const CTokenPrivileges& rhs) throw(... );  
+CTokenPrivileges(const CTokenPrivileges& rhs) throw(... );
 CTokenPrivileges(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 ```
 
 ### Parameters
 
-*rhs*  
+*rhs*<br/>
 The `CTokenPrivileges` object to assign to the new object.
 
-*rPrivileges*  
+*rPrivileges*<br/>
 The [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) structure to assign to the new `CTokenPrivileges` object.
 
 ### Remarks
@@ -138,7 +138,7 @@ bool Delete(LPCTSTR pszPrivilege) throw();
 
 ### Parameters
 
-*pszPrivilege*  
+*pszPrivilege*<br/>
 Pointer to a null-terminated string that specifies the name of the privilege, as defined in the WINNT.H header file. For example, this parameter could specify the constant SE_SECURITY_NAME, or its corresponding string, "SeSecurityPrivilege."
 
 ### Return Value
@@ -171,7 +171,7 @@ void GetDisplayNames(CNames* pDisplayNames) const throw(...);
 
 ### Parameters
 
-*pDisplayNames*  
+*pDisplayNames*<br/>
 A pointer to an array of `CString` objects. `CNames` is defined as a typedef: `CTokenPrivileges::CAtlArray<CString>`.
 
 ### Remarks
@@ -216,10 +216,10 @@ void GetLuidsAndAttributes(
 
 ### Parameters
 
-*pPrivileges*  
+*pPrivileges*<br/>
 Pointer to an array of [LUID](/windows/desktop/api/winnt/ns-winnt-_luid) objects. `CLUIDArray` is a typedef defined as `CAtlArray<LUID> CLUIDArray`.
 
-*pAttributes*  
+*pAttributes*<br/>
 Pointer to an array of DWORD objects. If this parameter is omitted or NULL, the attributes are not retrieved. `CAttributes` is a typedef defined as `CAtlArray <DWORD> CAttributes`.
 
 ### Remarks
@@ -238,10 +238,10 @@ void GetNamesAndAttributes(
 
 ### Parameters
 
-*pNames*  
+*pNames*<br/>
 Pointer to an array of `CString` objects. `CNames` is a typedef defined as `CAtlArray <CString> CNames`.
 
-*pAttributes*  
+*pAttributes*<br/>
 Pointer to an array of DWORD objects. If this parameter is omitted or NULL, the attributes are not retrieved. `CAttributes` is a typedef defined as `CAtlArray <DWORD> CAttributes`.
 
 ### Remarks
@@ -274,10 +274,10 @@ bool LookupPrivilege(
 
 ### Parameters
 
-*pszPrivilege*  
+*pszPrivilege*<br/>
 Pointer to a null-terminated string that specifies the name of the privilege, as defined in the WINNT.H header file. For example, this parameter could specify the constant SE_SECURITY_NAME, or its corresponding string, "SeSecurityPrivilege."
 
-*pdwAttributes*  
+*pdwAttributes*<br/>
 Pointer to a variable that receives the attributes.
 
 ### Return Value
@@ -289,16 +289,16 @@ Returns true if the attribute is successfully retrieved, false otherwise.
 Assignment operator.
 
 ```
-CTokenPrivileges& operator= (const TOKEN_PRIVILEGES& rPrivileges) throw(...);  
+CTokenPrivileges& operator= (const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 CTokenPrivileges& operator= (const CTokenPrivileges& rhs) throw(...);
 ```
 
 ### Parameters
 
-*rPrivileges*  
+*rPrivileges*<br/>
 The [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) structure to assign to the `CTokenPrivileges` object.
 
-*rhs*  
+*rhs*<br/>
 The `CTokenPrivileges` object to assign to the object.
 
 ### Return Value
@@ -309,7 +309,7 @@ Returns the updated `CTokenPrivileges` object.
 
 Casts a value to a pointer to the `TOKEN_PRIVILEGES` structure.
 
-```  
+```
 operator const TOKEN_PRIVILEGES *() const throw(...);
 ```
 
@@ -319,9 +319,9 @@ Casts a value to a pointer to the [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/
 
 ## See Also
 
-[Security Sample](../../visual-cpp-samples.md)   
-[TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges)   
-[LUID](/windows/desktop/api/winnt/ns-winnt-_luid)   
-[LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes)   
-[Class Overview](../../atl/atl-class-overview.md)   
+[Security Sample](../../visual-cpp-samples.md)<br/>
+[TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges)<br/>
+[LUID](/windows/desktop/api/winnt/ns-winnt-_luid)<br/>
+[LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes)<br/>
+[Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)

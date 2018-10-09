@@ -32,16 +32,16 @@ void * _aligned_malloc_dbg(
 
 ### Parameters
 
-*size*  
+*size*<br/>
 Size of the requested memory allocation.
 
-*alignment*  
+*alignment*<br/>
 The alignment value, which must be an integer power of 2.
 
-*filename*  
+*filename*<br/>
 Pointer to the name of the source file that requested the allocation operation or NULL.
 
-*linenumber*  
+*linenumber*<br/>
 Line number in the source file where the allocation operation was requested or NULL.
 
 ## Return Value
@@ -72,4 +72,4 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)  
+[Debug Routines](../../c-runtime-library/debug-routines.md)

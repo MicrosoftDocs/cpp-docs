@@ -31,7 +31,8 @@ class vector<bool>;
 
 template <class Allocator>
 struct hash<vector<bool, Allocator>>;
- // TEMPLATE FUNCTIONS
+
+// TEMPLATE FUNCTIONS
 template <class Type, class Allocator>
 bool operator== (
     const vector<Type, Allocator>& left,
@@ -72,17 +73,17 @@ void swap (
 
 ### Parameters
 
-*Type*  
- The template parameter for the type of data stored in the vector.
+*Type*<br/>
+The template parameter for the type of data stored in the vector.
 
-*Allocator*  
- The template parameter for the stored allocator object responsible for memory allocation and deallocation.
+*Allocator*<br/>
+The template parameter for the stored allocator object responsible for memory allocation and deallocation.
 
-*left*  
- The first (left) vector in a compare operation
+*left*<br/>
+The first (left) vector in a compare operation
 
-*right*  
- The second (right) vector in a compare operation.
+*right*<br/>
+The second (right) vector in a compare operation.
 
 ### Operators
 

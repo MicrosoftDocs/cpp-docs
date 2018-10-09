@@ -108,13 +108,13 @@ HRESULT GetClassObject(
 
 ### Parameters
 
-*rclsid*  
+*rclsid*<br/>
 [in] The CLSID of the object to be created.
 
-*riid*  
+*riid*<br/>
 [in] The IID of the requested interface.
 
-*ppv*  
+*ppv*<br/>
 [out] A pointer to the interface pointer identified by *riid*. If the object does not support this interface, *ppv* is set to NULL.
 
 ### Return Value
@@ -188,13 +188,13 @@ HRESULT Init(
 
 ### Parameters
 
-*p*  
+*p*<br/>
 [in] A pointer to an array of object map entries.
 
-*h*  
+*h*<br/>
 [in] The HINSTANCE passed to `DLLMain` or `WinMain`.
 
-*plibid*  
+*plibid*<br/>
 [in] A pointer to the LIBID of the type library associated with the project.
 
 ### Return Value
@@ -314,19 +314,19 @@ ATL_DEPRECATED HRESULT RegisterClassHelper(
 
 ### Parameters
 
-*clsid*  
+*clsid*<br/>
 [in] The CLSID of the object to be registered.
 
-*lpszProgID*  
+*lpszProgID*<br/>
 [in] The ProgID associated with the object.
 
-*lpszVerIndProgID*  
+*lpszVerIndProgID*<br/>
 [in] The version-independent ProgID associated with the object.
 
-*nDescID*  
+*nDescID*<br/>
 [in] The identifier of a string resource for the object's description.
 
-*dwFlags*  
+*dwFlags*<br/>
 [in] Specifies the threading model to enter in the registry. Possible values are THREADFLAGS_APARTMENT, THREADFLAGS_BOTH, or AUTPRXFLAG.
 
 ### Return Value
@@ -349,10 +349,10 @@ HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
 
 ### Parameters
 
-*dwClsContext*  
+*dwClsContext*<br/>
 [in] Specifies the context in which the class object is to be run. Possible values are CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER, or CLSCTX_LOCAL_SERVER. For a description of these values, see [CLSCTX](https://msdn.microsoft.com/library/windows/desktop/ms693716) in the Windows SDK.
 
-*dwFlags*  
+*dwFlags*<br/>
 [in] Determines the connection types to the class object. Possible values are REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE, or REGCLS_MULTI_SEPARATE. For a description of these values, see [REGCLS](/windows/desktop/api/combaseapi/ne-combaseapi-tagregcls) in the Windows SDK.
 
 ### Return Value
@@ -375,10 +375,10 @@ HRESULT RegisterServer(
 
 ### Parameters
 
-*bRegTypeLib*  
+*bRegTypeLib*<br/>
 [in] Indicates whether the type library will be registered. The default value is FALSE.
 
-*pCLSID*  
+*pCLSID*<br/>
 [in] Points to the CLSID of the object to be registered. If NULL (the default value), all objects in the object map will be registered.
 
 ### Return Value
@@ -406,7 +406,7 @@ HRESULT RegisterTypeLib(LPCTSTR lpszIndex) throw();
 
 ### Parameters
 
-*lpszIndex*  
+*lpszIndex*<br/>
 [in] String in the format `"\\N"`, where `N` is the integer index of the TYPELIB resource.
 
 ### Return Value
@@ -460,13 +460,13 @@ ATL_DEPRECATED HRESULT UnregisterClassHelper(
 
 ### Parameters
 
-*clsid*  
+*clsid*<br/>
 [in] The CLSID of the object to be unregistered.
 
-*lpszProgID*  
+*lpszProgID*<br/>
 [in] The ProgID associated with the object.
 
-*lpszVerIndProgID*  
+*lpszVerIndProgID*<br/>
 [in] The version-independent ProgID associated with the object.
 
 ### Return Value
@@ -490,10 +490,10 @@ inline HRESULT UnregisterServer(BOOL bUnRegTypeLib, const CLSID* pCLSID = NULL) 
 
 ### Parameters
 
-*bUnRegTypeLib*  
+*bUnRegTypeLib*<br/>
 If TRUE, the type library is also unregistered.
 
-*pCLSID*  
+*pCLSID*<br/>
 Points to the CLSID of the object to be unregistered. If NULL (the default value), all objects in the object map will be unregistered.
 
 ### Return Value
@@ -532,25 +532,25 @@ ATL_DEPRECATED HRESULT UpdateRegistryClass(
 
 ### Parameters
 
-*clsid*  
+*clsid*<br/>
 The CLSID of the object to be registered or unregistered.
 
-*lpszProgID*  
+*lpszProgID*<br/>
 The ProgID associated with the object.
 
-*lpszVerIndProgID*  
+*lpszVerIndProgID*<br/>
 The version-independent ProgID associated with the object.
 
-*nDescID*  
+*nDescID*<br/>
 The identifier of the string resource for the object's description.
 
-*szDesc*  
+*szDesc*<br/>
 A string containing the object's description.
 
-*dwFlags*  
+*dwFlags*<br/>
 Specifies the threading model to enter in the registry. Possible values are THREADFLAGS_APARTMENT, THREADFLAGS_BOTH, or AUTPRXFLAG.
 
-*bRegister*  
+*bRegister*<br/>
 Indicates whether the object should be registered.
 
 ### Return Value
@@ -585,16 +585,16 @@ virtual HRESULT UpdateRegistryFromResourceD(
 
 ### Parameters
 
-*lpszRes*  
+*lpszRes*<br/>
 [in] A resource name.
 
-*nResID*  
+*nResID*<br/>
 [in] A resource ID.
 
-*bRegister*  
+*bRegister*<br/>
 [in] Indicates whether the object should be registered.
 
-*pMapEntries*  
+*pMapEntries*<br/>
 [in] A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses `%MODULE%`. To use additional replaceable parameters, see the Remarks for details. Otherwise, use the NULL default value.
 
 ### Return Value
@@ -635,16 +635,16 @@ virtual HRESULT UpdateRegistryFromResourceS(
 
 ### Parameters
 
-*lpszRes*  
+*lpszRes*<br/>
 [in] A resource name.
 
-*nResID*  
+*nResID*<br/>
 [in] A resource ID.
 
-*bRegister*  
+*bRegister*<br/>
 [in] Indicates whether the resource script should be registered.
 
-*pMapEntries*  
+*pMapEntries*<br/>
 [in] A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses `%MODULE%`. To use additional replaceable parameters, see the Remarks for details. Otherwise, use the NULL default value.
 
 ### Return Value

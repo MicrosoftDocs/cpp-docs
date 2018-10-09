@@ -13,19 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2423
-'number' : illegal scale  
-  
- Inline assembly code uses a number other than 1, 2, 4, or 8 to scale a register.  
-  
- The following sample generates C2423:  
-  
-```  
-// C2423.cpp  
-// processor: x86  
-int main() {  
-   _asm {  
-      lea EAX, [EAX*3]   // C2423  
-      lea EAX, [EAX+EAX*2]   // OK  
-   }  
-}  
+
+'number' : illegal scale
+
+Inline assembly code uses a number other than 1, 2, 4, or 8 to scale a register.
+
+The following sample generates C2423:
+
+```
+// C2423.cpp
+// processor: x86
+int main() {
+   _asm {
+      lea EAX, [EAX*3]   // C2423
+      lea EAX, [EAX+EAX*2]   // OK
+   }
+}
 ```

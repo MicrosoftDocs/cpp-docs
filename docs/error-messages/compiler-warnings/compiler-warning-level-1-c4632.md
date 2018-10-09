@@ -13,17 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4632
-XML document comment: file - access denied: reason  
-  
- The path to .xdc file (`file`) was not valid, and no .xdc file created.  
-  
- The following sample generates C4632:  
-  
-```  
-// C4632.cpp  
-// compile with: /clr /docv:\\falsedir /LD /W1  
-// C4632 expected  
-  
-/// Text for class MyClass.  
-public ref class MyClass {};  
+
+XML document comment: file - access denied: reason
+
+The path to .xdc file (`file`) was not valid, and no .xdc file created.
+
+The following sample generates C4632:
+
+```
+// C4632.cpp
+// compile with: /clr /docv:\\falsedir /LD /W1
+// C4632 expected
+
+/// Text for class MyClass.
+public ref class MyClass {};
 ```

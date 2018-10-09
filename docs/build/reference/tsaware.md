@@ -13,12 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /TSAWARE
-```  
-/TSAWARE[:NO]  
-```  
-  
-## Remarks  
- The /TSAWARE option to the EDITBIN utility allows you to modify a program image the same way as if you had used the [/TSAWARE](../../build/reference/tsaware-create-terminal-server-aware-application.md) linker option.  
-  
-## See Also  
- [EDITBIN Options](../../build/reference/editbin-options.md)
+
+```
+/TSAWARE[:NO]
+```
+
+## Remarks
+
+The /TSAWARE option to the EDITBIN utility allows you to modify a program image the same way as if you had used the [/TSAWARE](../../build/reference/tsaware-create-terminal-server-aware-application.md) linker option.
+
+## See Also
+
+[EDITBIN Options](../../build/reference/editbin-options.md)

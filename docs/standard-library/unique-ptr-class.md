@@ -77,17 +77,17 @@ public:
 
 ### Parameters
 
-*Right*  
- A `unique_ptr`.
+*Right*<br/>
+A `unique_ptr`.
 
-*Nptr*  
- An `rvalue` of type `std::nullptr_t`.
+*Nptr*<br/>
+An `rvalue` of type `std::nullptr_t`.
 
-*Ptr*  
- A `pointer`.
+*Ptr*<br/>
+A `pointer`.
 
-*Deleter*  
- A `deleter` function that is bound to a `unique_ptr`.
+*Deleter*<br/>
+A `deleter` function that is bound to a `unique_ptr`.
 
 ## Exceptions
 
@@ -321,8 +321,8 @@ void swap(unique_ptr& right);
 
 ### Parameters
 
-*right*  
- A `unique_ptr` used to swap pointers.
+*right*<br/>
+A `unique_ptr` used to swap pointers.
 
 ### Remarks
 

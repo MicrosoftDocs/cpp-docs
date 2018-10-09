@@ -25,7 +25,7 @@ class EventSource;
 
 ### Parameters
 
-*TDelegateInterface*  
+*TDelegateInterface*<br/>
 The interface to a delegate that represents an event handler.
 
 ## Members
@@ -76,10 +76,10 @@ HRESULT Add(
 
 ### Parameters
 
-*delegateInterface*  
+*delegateInterface*<br/>
 The interface to a delegate object, which represents an event handler.
 
-*token*  
+*token*<br/>
 When this operation completes, a handle that represents the event. Use this token as the parameter to the [Remove()](#remove) method to discard the event handler.
 
 ### Return Value
@@ -274,64 +274,64 @@ void InvokeAll(
 
 ### Parameters
 
-*T0*  
+*T0*<br/>
 The type of the zeroth event handler argument.
 
-*T1*  
+*T1*<br/>
 The type of the first event handler argument.
 
-*T2*  
+*T2*<br/>
 The type of the second event handler argument.
 
-*T3*  
+*T3*<br/>
 The type of the third event handler argument.
 
-*T4*  
+*T4*<br/>
 The type of the fourth event handler argument.
 
-*T5*  
+*T5*<br/>
 The type of the fifth event handler argument.
 
-*T6*  
+*T6*<br/>
 The type of the sixth event handler argument.
 
-*T7*  
+*T7*<br/>
 The type of the seventh event handler argument.
 
-*T8*  
+*T8*<br/>
 The type of the eigth event handler argument.
 
-*T9*  
+*T9*<br/>
 The type of the ninth event handler argument.
 
-*arg0*  
+*arg0*<br/>
 The zeroth event handler argument.
 
-*arg1*  
+*arg1*<br/>
 The first event handler argument.
 
-*arg2*  
+*arg2*<br/>
 The second event handler argument.
 
-*arg3*  
+*arg3*<br/>
 The third event handler argument.
 
-*arg4*  
+*arg4*<br/>
 The fourth event handler argument.
 
-*arg5*  
+*arg5*<br/>
 The fifth event handler argument.
 
-*arg6*  
+*arg6*<br/>
 The sixth event handler argument.
 
-*arg7*  
+*arg7*<br/>
 The seventh event handler argument.
 
-*arg8*  
+*arg8*<br/>
 The eigth event handler argument.
 
-*arg9*  
+*arg9*<br/>
 The ninth event handler argument.
 
 ## <a name="remove"></a>EventSource::Remove
@@ -346,7 +346,7 @@ HRESULT Remove(
 
 ### Parameters
 
-*token*  
+*token*<br/>
 A handle that represents an event handler. This token was returned when the event handler was registered by the [Add()](#add) method.
 
 ### Return Value

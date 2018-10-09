@@ -16,25 +16,28 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __p__commode
-Points to the `_commode` global variable, which specifies the default *file commit mode* for file I/O operations.  
-  
-## Syntax  
-  
-```cpp  
-int * __p__commode(  
-   );  
-```  
-  
-## Return Value  
- Pointer to the `_commode` global variable.  
-  
-## Remarks  
- The `__p__commode` function is for internal use only, and should not be called from user code.  
-  
- File commit mode specifies when critical data is written to disk. For more information, see [fflush](../c-runtime-library/reference/fflush.md).  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
+
+Points to the `_commode` global variable, which specifies the default *file commit mode* for file I/O operations.
+
+## Syntax
+
+```cpp
+int * __p__commode(
+   );
+```
+
+## Return Value
+
+Pointer to the `_commode` global variable.
+
+## Remarks
+
+The `__p__commode` function is for internal use only, and should not be called from user code.
+
+File commit mode specifies when critical data is written to disk. For more information, see [fflush](../c-runtime-library/reference/fflush.md).
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
 |__p\__commode|internal.h|

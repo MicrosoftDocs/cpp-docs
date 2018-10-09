@@ -1,7 +1,7 @@
 ---
 title: "InterfaceListHelper Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/03/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::InterfaceListHelper"]
@@ -20,55 +20,53 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ```cpp
 template <
-   typename T0,
-   typename T1 = Nil,
-   typename T2 = Nil,
-   typename T3 = Nil,
-   typename T4 = Nil,
-   typename T5 = Nil,
-   typename T6 = Nil,
-   typename T7 = Nil,
-   typename T8 = Nil,
-   typename T9 = Nil
+    typename T0,
+    typename T1 = Nil,
+    typename T2 = Nil,
+    typename T3 = Nil,
+    typename T4 = Nil,
+    typename T5 = Nil,
+    typename T6 = Nil,
+    typename T7 = Nil,
+    typename T8 = Nil,
+    typename T9 = Nil
 >
 struct InterfaceListHelper;
 
-template <
-   typename T0
->
+template <typename T0>
 struct InterfaceListHelper<T0, Nil, Nil, Nil, Nil, Nil, Nil, Nil, Nil>;
 ```
 
 ### Parameters
 
-*T0*  
+*T0*<br/>
 Template parameter 0, which is required.
 
-*T1*  
+*T1*<br/>
 Template parameter 1, which by default is unspecified.
 
-*T2*  
+*T2*<br/>
 Template parameter 2, which by default is unspecified.The third template parameter.
 
-*T3*  
+*T3*<br/>
 Template parameter 3, which by default is unspecified.
 
-*T4*  
+*T4*<br/>
 Template parameter 4, which by default is unspecified.
 
-*T5*  
+*T5*<br/>
 Template parameter 5, which by default is unspecified.
 
-*T6*  
+*T6*<br/>
 Template parameter 6, which by default is unspecified.
 
-*T7*  
+*T7*<br/>
 Template parameter 7, which by default is unspecified.
 
-*T8*  
+*T8*<br/>
 Template parameter 8, which by default is unspecified.
 
-*T9*  
+*T9*<br/>
 Template parameter 9, which by default is unspecified.
 
 ## Remarks

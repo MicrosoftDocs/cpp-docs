@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2845
-'operator' : pointer arithmetic not allowed on this type  
-  
- You cannot increment the pointer to a managed class.  
+
+'operator' : pointer arithmetic not allowed on this type
+
+You cannot increment the pointer to a managed class.

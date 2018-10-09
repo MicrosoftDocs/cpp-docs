@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Fatal Error RW1009
-Error creating resource-name  
-  
- Could not create specified .res file. Make sure it is not being created on a read-only drive. Use /V to find out whether the file is being created.
+
+Error creating resource-name
+
+Could not create specified .res file. Make sure it is not being created on a read-only drive. Use /V to find out whether the file is being created.

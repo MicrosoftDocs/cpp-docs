@@ -12,13 +12,15 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Program Termination
-In C++, there are several ways to exit a program:  
-  
--   Call the [exit](../cpp/exit-function.md) function.  
-  
--   Call the [abort](../cpp/abort-function.md) function.  
-  
--   Execute a [return](../cpp/return-statement-in-program-termination-cpp.md) statement from `main`.  
-  
-## See also  
- [main: Program Startup](../cpp/main-program-startup.md)
+
+In C++, there are several ways to exit a program:
+
+- Call the [exit](../cpp/exit-function.md) function.
+
+- Call the [abort](../cpp/abort-function.md) function.
+
+- Execute a [return](../cpp/return-statement-in-program-termination-cpp.md) statement from `main`.
+
+## See also
+
+[main: Program Startup](../cpp/main-program-startup.md)

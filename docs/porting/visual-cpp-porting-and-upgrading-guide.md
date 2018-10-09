@@ -1,7 +1,7 @@
 ---
 title: "Visual C++ Porting and Upgrading Guide | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/18/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -11,6 +11,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Visual C++ Porting and Upgrading Guide
+
 This topic provides a guide for upgrading Visual C++ code. This includes getting the code to compile and run correctly on a newer release of the tools, as well as taking advantage of new language and Visual Studio features. This topic also includes information about migrating legacy apps to more modern platforms.  
   
 ## Reasons to Upgrade Visual C++ Code  
@@ -83,7 +84,6 @@ Alternatively, perhaps you now have new requirements, or you can foresee the nee
 |[Porting to the Universal Windows Platform](porting-to-the-universal-windows-platform-cpp.md)|Contains information about porting code to Windows 10|  
 |[Introduction to Visual C++ for UNIX Users](introduction-to-visual-cpp-for-unix-users.md)|Provides information for UNIX users who are new to Visual C++ and want to become productive with it.|  
 |[Porting from UNIX to Win32](porting-from-unix-to-win32.md)|Discusses options for migrating UNIX applications to Windows.|  
-|[C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md)|Shows in detail how to upgrade your Managed Extensions for C++ syntax to use the new syntax. For more information, see [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md).|  
   
 ## See Also  
 

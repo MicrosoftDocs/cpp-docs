@@ -12,22 +12,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # C Primary Expressions
-The operands in expressions are called "primary expressions."  
-  
-## Syntax  
- *primary-expression*:  
- *identifier*  
-  
- *constant*  
-  
- *string-literal*  
-  
- **(**  *expression*  **)**  
-  
- *expression*:  
- *assignment-expression*  
-  
- *expression*  **,**  *assignment-expression*  
-  
-## See Also  
- [Operands and Expressions](../c-language/operands-and-expressions.md)
+
+The operands in expressions are called "primary expressions."
+
+## Syntax
+
+*primary-expression*:
+*identifier*
+
+*constant*
+
+*string-literal*
+
+**(**  *expression*  **)**
+
+*expression*:
+*assignment-expression*
+
+*expression*  **,**  *assignment-expression*
+
+## See Also
+
+[Operands and Expressions](../c-language/operands-and-expressions.md)

@@ -31,11 +31,11 @@ public:
 
 ### Parameters
 
-*Func*  
- The unary function to be negated.
+*Func*<br/>
+The unary function to be negated.
 
-*left*  
- The operand of the unary function to be negated.
+*left*<br/>
+The operand of the unary function to be negated.
 
 ## Return Value
 

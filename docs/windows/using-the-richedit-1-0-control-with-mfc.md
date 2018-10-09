@@ -23,5 +23,5 @@ MFC
 
 ## See Also
 
-[Troubleshooting the Dialog Editor](../windows/troubleshooting-the-dialog-editor.md)  
+[Troubleshooting the Dialog Editor](../windows/troubleshooting-the-dialog-editor.md)<br/>
 [Dialog Editor](../windows/dialog-editor.md)

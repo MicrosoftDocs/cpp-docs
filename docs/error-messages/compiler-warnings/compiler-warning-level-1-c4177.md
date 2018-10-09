@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4177
-\#pragma pragma should be at global scope  
-  
- The [pragma](../../preprocessor/pragma-directives-and-the-pragma-keyword.md) pragma should not be used within a local scope. The **pragma** will not be valid until global scope is encountered after the current scope.  
-  
- The following sample generates C4177:  
-  
-```  
-// C4177.cpp  
-// compile with: /W1  
-// #pragma bss_seg("global")   // OK  
-  
-int main() {  
-   #pragma bss_seg("local")    // C4177  
-}  
+
+\#pragma pragma should be at global scope
+
+The [pragma](../../preprocessor/pragma-directives-and-the-pragma-keyword.md) pragma should not be used within a local scope. The **pragma** will not be valid until global scope is encountered after the current scope.
+
+The following sample generates C4177:
+
+```
+// C4177.cpp
+// compile with: /W1
+// #pragma bss_seg("global")   // OK
+
+int main() {
+   #pragma bss_seg("local")    // C4177
+}
 ```

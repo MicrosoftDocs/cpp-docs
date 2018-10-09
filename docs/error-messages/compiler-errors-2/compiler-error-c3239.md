@@ -13,21 +13,22 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3239
-'type' : pointer to interior/pin pointer is disallowed by the common language runtime  
-  
- The compiler encountered an invalid type.  
-  
- The following sample generates C3229:  
-  
-```  
-// C3239.cpp  
-// compile with: /clr  
-int main() {  
-   interior_ptr<int>* pip0;   // C3239  
-  
-   // OK  
-   int * pip1;  
-   interior_ptr<int> pip2;  
-   int ** pip;  
-}  
+
+'type' : pointer to interior/pin pointer is disallowed by the common language runtime
+
+The compiler encountered an invalid type.
+
+The following sample generates C3229:
+
+```
+// C3239.cpp
+// compile with: /clr
+int main() {
+   interior_ptr<int>* pip0;   // C3239
+
+   // OK
+   int * pip1;
+   interior_ptr<int> pip2;
+   int ** pip;
+}
 ```

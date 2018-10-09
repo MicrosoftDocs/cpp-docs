@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2110
-'+' : cannot add two pointers  
-  
- An attempt was made to add two pointer values using the plus ( `+` ) operator.  
-  
- The following sample generates C2110:  
-  
-```  
-// C2110.cpp  
-int main() {  
-   int a = 0;  
-   int *pa;  
-   int *pb;  
-   a = pa + pb;   // C2110  
-}  
+
+'+' : cannot add two pointers
+
+An attempt was made to add two pointer values using the plus ( `+` ) operator.
+
+The following sample generates C2110:
+
+```
+// C2110.cpp
+int main() {
+   int a = 0;
+   int *pa;
+   int *pb;
+   a = pa + pb;   // C2110
+}
 ```

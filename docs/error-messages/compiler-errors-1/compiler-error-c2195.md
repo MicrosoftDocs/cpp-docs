@@ -13,15 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2195
-'identifier' : is a data segment  
-  
- The `code_seg` pragma uses a segment name used with the `data_seg` pragma.  
-  
- The following sample generates C2195:  
-  
-```  
-// C2195.cpp  
-#pragma data_seg("MYDATA")  
-#pragma code_seg("MYDATA")   // C2195  
-#pragma code_seg("MYDATA2")   // OK  
+
+'identifier' : is a data segment
+
+The `code_seg` pragma uses a segment name used with the `data_seg` pragma.
+
+The following sample generates C2195:
+
+```
+// C2195.cpp
+#pragma data_seg("MYDATA")
+#pragma code_seg("MYDATA")   // C2195
+#pragma code_seg("MYDATA2")   // OK
 ```

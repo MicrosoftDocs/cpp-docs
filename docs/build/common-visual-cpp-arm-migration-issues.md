@@ -101,4 +101,4 @@ On the x86 and x64 architectures, the default is **/volatile:ms** because much o
 
 ## See also
 
-[Configure Visual C++ for ARM processors](../build/configuring-programs-for-arm-processors-visual-cpp.md)  
+[Configure Visual C++ for ARM processors](../build/configuring-programs-for-arm-processors-visual-cpp.md)

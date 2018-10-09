@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1120
-call to GetProcAddress failed for 'function'  
-  
- This error indicates Visual C++ needs to be reinstalled.
+
+call to GetProcAddress failed for 'function'
+
+This error indicates Visual C++ needs to be reinstalled.

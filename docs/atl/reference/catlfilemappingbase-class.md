@@ -68,13 +68,13 @@ For more information, see [File Mapping](/windows/desktop/Memory/file-mapping) i
 The constructor.
 
 ```
-CAtlFileMappingBase(CAtlFileMappingBase& orig);  
+CAtlFileMappingBase(CAtlFileMappingBase& orig);
 CAtlFileMappingBase() throw();
 ```
 
 ### Parameters
 
-*orig*  
+*orig*<br/>
 The original file-mapping object to copy to create the new object.
 
 ### Remarks
@@ -107,7 +107,7 @@ HRESULT CopyFrom(CAtlFileMappingBase& orig) throw();
 
 ### Parameters
 
-*orig*  
+*orig*<br/>
 The original file-mapping object to copy from.
 
 ### Return Value
@@ -169,19 +169,19 @@ HRESULT MapFile(
 
 ### Parameters
 
-*hFile*  
+*hFile*<br/>
 Handle to the file from which to create a mapping object. *hFile* must be valid and cannot be set to INVALID_HANDLE_VALUE.
 
-*nMappingSize*  
+*nMappingSize*<br/>
 The mapping size. If 0, the maximum size of the file-mapping object is equal to the current size of the file identified by *hFile.*
 
-*nOffset*  
+*nOffset*<br/>
 The file offset where mapping is to begin. The offset value must be a multiple of the system's memory allocation granularity.
 
-*dwMappingProtection*  
+*dwMappingProtection*<br/>
 The protection desired for the file view when the file is mapped. See *flProtect* in [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) in the Windows SDK.
 
-*dwViewDesiredAccess*  
+*dwViewDesiredAccess*<br/>
 Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See *dwDesiredAccess* in [MapViewOfFileEx](https://msdn.microsoft.com/library/windows/desktop/aa366763) in the Windows SDK.
 
 ### Return Value
@@ -212,22 +212,22 @@ HRESULT MapSharedMem(
 
 ### Parameters
 
-*nMappingSize*  
+*nMappingSize*<br/>
 The mapping size. If 0, the maximum size of the file-mapping object is equal to the current size of the file-mapping object identified by *szName*.
 
-*szName*  
+*szName*<br/>
 The name of the mapping object.
 
-*pbAlreadyExisted*  
+*pbAlreadyExisted*<br/>
 Points to a BOOL value that is set to TRUE if the mapping object already existed.
 
-*lpsa*  
+*lpsa*<br/>
 The pointer to a `SECURITY_ATTRIBUTES` structure that determines whether the returned handle can be inherited by child processes. See *lpAttributes* in [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) in the Windows SDK.
 
-*dwMappingProtection*  
+*dwMappingProtection*<br/>
 The protection desired for the file view, when the file is mapped. See *flProtect* in `CreateFileMapping` in the Windows SDK.
 
-*dwViewDesiredAccess*  
+*dwViewDesiredAccess*<br/>
 Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See *dwDesiredAccess* in [MapViewOfFileEx](https://msdn.microsoft.com/library/windows/desktop/aa366763) in the Windows SDK.
 
 ### Return Value
@@ -252,16 +252,16 @@ HRESULT OpenMapping(
 
 ### Parameters
 
-*szName*  
+*szName*<br/>
 The name of the mapping object. If there is an open handle to a file-mapping object by this name and the security descriptor on the mapping object does not conflict with the *dwViewDesiredAccess* parameter, the open operation succeeds.
 
-*nMappingSize*  
+*nMappingSize*<br/>
 The mapping size. If 0, the maximum size of the file-mapping object is equal to the current size of the file-mapping object identified by *szName*.
 
-*nOffset*  
+*nOffset*<br/>
 The file offset where mapping is to begin. The offset value must be a multiple of the system's memory allocation granularity.
 
-*dwViewDesiredAccess*  
+*dwViewDesiredAccess*<br/>
 Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See *dwDesiredAccess* in [MapViewOfFileEx](https://msdn.microsoft.com/library/windows/desktop/aa366763) in the Windows SDK.
 
 ### Return Value
@@ -282,7 +282,7 @@ CAtlFileMappingBase& operator=(CAtlFileMappingBase& orig);
 
 ### Parameters
 
-*orig*  
+*orig*<br/>
 The current file-mapping object.
 
 ### Return Value
@@ -307,5 +307,5 @@ See [UnmapViewOfFile](https://msdn.microsoft.com/library/windows/desktop/aa36688
 
 ## See Also
 
-[CAtlFileMapping Class](../../atl/reference/catlfilemapping-class.md)   
+[CAtlFileMapping Class](../../atl/reference/catlfilemapping-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)
