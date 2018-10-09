@@ -189,12 +189,6 @@ List view controls can display their contents in four different ways, called "vi
 
      Each item appears on its own line, with additional information arranged in columns to the right. The leftmost column contains the small icon and label, and subsequent columns contain subitems as specified by the application. An embedded header control (class [CHeaderCtrl](../../mfc/reference/cheaderctrl-class.md)) implements these columns. For more information on the header control and columns in a report view, see [Using CListCtrl: Adding Columns to the Control (Report View)](../../mfc/adding-columns-to-the-control-report-view.md).
 
-Also see:
-
-- Knowledge Base article Q250614: HOWTO: Sort Items in a CListCtrl in Report View
-
-- Knowledge Base article Q200054: PRB: OnTimer() Is Not Called Repeatedly for a List Control
-
 The style of the control's current list view determines the current view. For more information on these styles and their usage, see [Using CListCtrl: Changing List Control Styles](../../mfc/changing-list-control-styles.md).
 
 ## Extended Styles

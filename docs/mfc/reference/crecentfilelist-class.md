@@ -52,10 +52,6 @@ class CRecentFileList
 
 Files can be added to or deleted from the MRU file list, the file list can be read from or written to the registry or an .INI file, and the menu displaying the MRU file list can be updated.
 
-For more information about MRU menu items, see
-
-- Knowledge Base article Q243751 : HOWTO: Add Command Handlers for MRU Menu Items in MFC Application
-
 ## Inheritance Hierarchy
 
 `CRecentFileList`

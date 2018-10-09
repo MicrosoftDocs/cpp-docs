@@ -110,14 +110,3 @@ Here are some common causes for this error.
     ```
 
    To fix this issue, add [/FORCE:MULTIPLE](../../build/reference/force-force-file-output.md) to the linker command line options, and make sure that uuid.lib is the first library referenced.
-
-## Additional information
-
-If you are using an older version of the toolset, see these Knowledge Base articles for more information about specific causes for this error:
-
-- [A LNK2005 error occurs when the CRT library and MFC libraries are linked in the wrong order in Visual C++](https://support.microsoft.com/kb/148652)
-
-- [FIX: Global Overloaded Delete Operator Causes LNK2005](https://support.microsoft.com/kb/140440)
-
-- [You receive LNK2005 errors when you compile an ATL executable (.exe) project in Visual C++](https://support.microsoft.com/kb/184235).
-

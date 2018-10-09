@@ -31,7 +31,7 @@ The standard `InitInstance` implementation created by the MFC Application Wizard
 You can add your own initialization code or modify the code written by the wizard.
 
 > [!NOTE]
->  MFC applications must be initialized as single threaded apartment (STA). If you call [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) in your `InitInstance` override, specify COINIT_APARTMENTTHREADED (rather than COINIT_MULTITHREADED). For more information, see PRB: MFC Application Stops Responding When You Initialize the Application as a Multithreaded Apartment (828643) at [http://support.microsoft.com/default.aspxscid=kb;828643](http://support.microsoft.com/default.aspxscid=kb;828643).
+>  MFC applications must be initialized as single threaded apartment (STA). If you call [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) in your `InitInstance` override, specify COINIT_APARTMENTTHREADED (rather than COINIT_MULTITHREADED).
 
 ## See Also
 

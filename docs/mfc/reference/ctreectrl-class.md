@@ -126,8 +126,6 @@ For more information on using `CTreeCtrl`, see:
 
 - [Tree View Control Reference](/windows/desktop/Controls/tree-view-control-reference) in the Windows SDK.
 
-- Knowledge Base article Q222905: HOWTO: Display a Context Menu for CTreeCtrl
-
 ## Inheritance Hierarchy
 
 [CObject](../../mfc/reference/cobject-class.md)

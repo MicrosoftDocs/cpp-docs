@@ -20,8 +20,6 @@ This error could be caused by using the same formal parameter list in more than 
 
 If you get C2535 because of the Dispose function, see [Destructors and finalizers](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) for more information.
 
-If you are compiling an ATL project, see Knowledge Base article Q241852.
-
 The following sample generates C2535:
 
 ```

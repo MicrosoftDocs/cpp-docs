@@ -26,8 +26,4 @@ To resolve this error, delete the RestrictRun key. If this registry key is neede
 
 Another cause for this error is that your Policy Setting does not include VCSpawn.exe under the registry key HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\RestrictRun as an allowed Window program for this user account.
 
-For additional information, see:
-
-- Knowledge Base article 324153, which is available on [http://support.microsoft.com/default.aspx?scid=kb;324153](http://support.microsoft.com/default.aspx?scid=kb;324153).
-
-- [Adhering to System Policy Settings](https://msdn.microsoft.com/library/aa372139), the section on "Run only allowed Windows applications".
+For additional information, see [Adhering to System Policy Settings](https://msdn.microsoft.com/library/aa372139), in the section on "Run only allowed Windows applications".

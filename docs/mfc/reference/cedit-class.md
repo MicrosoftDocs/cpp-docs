@@ -126,11 +126,7 @@ If you create a `CEdit` object within a window, you may also need to destroy it.
 
 To modify certain styles in an edit control (such as ES_READONLY) you must send specific messages to the control instead of using [ModifyStyle](cwnd-class.md#modifystyle). See [Edit Control Styles](/windows/desktop/Controls/edit-control-styles) in the Windows SDK.
 
-For more information on `CEdit`, see:
-
-- [Controls](../../mfc/controls-mfc.md)
-
-- Knowledge Base article Q259949 : INFO: SetCaretPos() Is Not Appropriate with CEdit or CRichEditCtrl Controls
+For more information on `CEdit`, see [Controls](../../mfc/controls-mfc.md).
 
 ## Inheritance Hierarchy
 

@@ -27,10 +27,7 @@ The toolbar family of articles describes MFC toolbars and how to create and use 
 
 - [Sample](../mfc/toolbar-sample-list.md)
 
-For more information about MFC toolbars, see article Q232017, "HOWTO: Add Text to Toolbar Buttons," in the Microsoft Knowledge Base at http://support.microsoft.com.
-
 ## See Also
 
 [User Interface Elements](../mfc/user-interface-elements-mfc.md)<br/>
 [Toolbar Editor](../windows/toolbar-editor.md)
-

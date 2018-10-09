@@ -70,8 +70,6 @@ For more information on `CControlBar`, see:
 
 - [Technical Note 31: Control Bars](../../mfc/tn031-control-bars.md).
 
-- Knowledge Base article Q242577 : PRB: Update Command UI Handlers Do Not Work for Menu Attached to a Dialog Box
-
 ## Inheritance Hierarchy
 
 [CObject](../../mfc/reference/cobject-class.md)

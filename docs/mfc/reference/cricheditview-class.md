@@ -366,8 +366,6 @@ The default implementation returns NULL. This is an advanced overridable.
 
 For more information, see [IRichEditOleCallback::GetContextMenu](/windows/desktop/api/richole/nf-richole-iricheditolecallback-getcontextmenu) and [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) in the Windows SDK.
 
-For more information on the `OLEOBJECT` type, see the OLE Data Structures and Structure Allocation article in the *OLE Knowledge Base*.
-
 ##  <a name="getdocument"></a>  CRichEditView::GetDocument
 
 Call this function to get a pointer to the `CRichEditDoc` associated with this view.

@@ -15,14 +15,6 @@ ms.workload: ["cplusplus"]
 
 A typical FTP client application creates a [CInternetSession](../mfc/reference/cinternetsession-class.md) and a [CFtpConnection](../mfc/reference/cftpconnection-class.md) object. Note that these MFC WinInet classes do not actually control the proxy type settings; IIS does.
 
-Also, see these Knowledge Base articles:
-
-- HOWTO: FTP with CERN-Based Proxy Using WinInet API (Article ID: Q166961)
-
-- SAMPLE: FTP with CERN-Based Password Protected Proxy (Article ID: Q216214)
-
-- Internet Services Manager Fails to Show Installed Proxy Services (Article ID: Q216802)
-
 The following table shows the steps you might perform in a typical FTP client application.
 
 |Your goal|Actions you take|Effects|

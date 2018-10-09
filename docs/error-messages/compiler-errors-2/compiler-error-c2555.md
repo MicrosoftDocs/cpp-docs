@@ -32,11 +32,9 @@ is
 Guid CheckSources(Guid sourceID, Guid carouselIDs[]) [];
 ```
 
-For more information on C2555, see Knowledge Base article Q240862.
-
 The following sample generates C2555:
 
-```
+```cpp
 // C2555.cpp
 // compile with: /c
 struct X {

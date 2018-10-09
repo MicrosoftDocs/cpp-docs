@@ -18,8 +18,6 @@ syntax error : missing 'token1' before 'token2'
 
 The compiler expected a specific token (that is, a language element other than white space) and found another token instead.
 
-For information about this error when it occurs when you are using a function-try block, see [Knowledge Base article 241706](http://support.microsoft.com/kb/241706).
-
 Check the [C++ Language Reference](../../cpp/cpp-language-reference.md) to determine where code is syntactically incorrect. Because the compiler may report this error after it encounters the line that causes the problem, check several lines of code that precede the error.
 
 C2143 can occur in different situations.

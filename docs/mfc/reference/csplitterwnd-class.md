@@ -104,11 +104,7 @@ A splitter window supports special scroll bars (apart from the scroll bars that 
 
 You create these special scroll bars when you create the splitter window. For example, a `CSplitterWnd` that has one row, two columns, and the WS_VSCROLL style will display a vertical scroll bar that is shared by the two panes. When the user moves the scroll bar, WM_VSCROLL messages are sent to both panes. When the panes set the scroll-bar position, the shared scroll bar is set.
 
-For further information on splitter windows, see:
-
-- [Technical Note 29](../../mfc/tn029-splitter-windows.md)
-
-- Knowledge Base article Q262024: HOWTO: Use CPropertySheet as a Child of CSplitterWnd
+For further information on splitter windows, see [Technical Note 29](../../mfc/tn029-splitter-windows.md).
 
 For more information on how to create dynamic splitter windows, see:
 

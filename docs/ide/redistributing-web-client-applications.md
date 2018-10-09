@@ -15,13 +15,7 @@ ms.workload: ["cplusplus"]
 
 If your application uses the MFC classes implementing the WebBrowser control (for example, `CHtmlView` or `CHtmlEditView`), Microsoft Internet Explorer 4.0 or later must at least be minimally installed on the target computer.
 
-Installing the latest version of Internet Explorer also ensures that the target computer has the latest common control files.
-
-Information about installing minimal Internet Explorer components is available in the following Knowledge Base article:
-
-- Q185375, HOWTO: Create a Single EXE Install of Internet Explorer ([http://support.microsoft.com/support/kb/articles/q185/3/75.asp](http://support.microsoft.com/support/kb/articles/q185/3/75.asp))
-
-You can find Knowledge Base articles in the MSDN Library or at [http://support.microsoft.com](http://support.microsoft.com).
+Installing the latest version of Internet Explorer also ensures that the target computer has the latest common control files. For more information, see [Install and Deploy Internet Explorer 11](/internet-explorer/ie11-deploy-guide/install-and-deploy-ie11).
 
 ## See Also
 

@@ -400,7 +400,7 @@ Nonzero if successful; otherwise 0.
 The posted message is mapped to the proper message handler by the message map macro ON_THREAD_MESSAGE.
 
 > [!NOTE]
->  When calling the Windows [PostThreadMessage](https://msdn.microsoft.com/library/windows/desktop/ms644946) function within an MFC application, the MFC message handlers are not called. For more information, see the Knowledge Base article, "PRB: MFC Message Handler Not Called with PostThreadMessage()" (Q142415).
+> When you call [PostThreadMessage](https://msdn.microsoft.com/library/windows/desktop/ms644946), the message is placed in the thread's message queue. However, because messages posted this way are not associated with a window, MFC will not dispatch them to message or command handlers. In order to handle these messages, override the `PreTranslateMessage()` function of your CWinApp-derived class, and handle the messages manually.
 
 ##  <a name="pretranslatemessage"></a>  CWinThread::PreTranslateMessage
 

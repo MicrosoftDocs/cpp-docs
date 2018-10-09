@@ -38,7 +38,7 @@ You can also add optimizations, as described in [ActiveX Controls: Optimization]
 
 ##  <a name="_core_packaging_code_for_downloading"></a> Packaging Code for Downloading
 
-For more information on this subject, see the Knowledge Base article "Packaging MFC Controls for Use Over the Internet" (Q167158). You can find Knowledge Base articles at [http://support.microsoft.com/support](http://support.microsoft.com/support).
+For more information on this subject, see [Packaging ActiveX Controls](https://docs.microsoft.com//previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa751974%28v%3dvs.85%29).
 
 ### The CODEBASE Tag
 
@@ -76,7 +76,7 @@ Cabinet files are the recommended way to package ActiveX controls that use MFC. 
 
 ### Creating CAB Files
 
-You can download the Cabinet Development Kit from the Knowledge Base article [310618: Microsoft Cabinet Software Development Kit](http://go.microsoft.com/fwlink/p/?linkid=148204). In this kit you will find the necessary tools to construct cabinet files.
+Tools to create cabinet files are now part of the [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk).
 
 The cabinet file pointed to by `CODEBASE` should contain the .ocx file for your ActiveX control and an .inf file to control its installation. You create the cabinet file by specifying the name of your control file and an .inf file. Do not include dependent DLLs that may already exist on the system in this cabinet file. For example, the MFC DLLs are packaged in a separate cabinet file and referred to by the controlling .inf file.
 

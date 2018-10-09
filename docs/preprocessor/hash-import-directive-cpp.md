@@ -168,11 +168,9 @@ If a type library includes references to types defined in other type libraries, 
 The actual filename in the **#import** comment is the full path of the cross-referenced type library, as stored in the registry. If you encounter errors that are due to missing type definitions, check the comments at the head of the .TLH to see which dependent type libraries may need to be imported first. Likely errors are syntax errors (for example, C2143, C2146, C2321), C2501 (missing decl-specifiers), or C2433 ('inline' not permitted on data declaration) while compiling the .TLI file.  
   
 You must determine which of the dependency comments are not otherwise provided for by system headers and then provide an **#import** directive at some point before the **#import** directive of the dependent type library to resolve the errors.  
-  
-For more information, see the Knowledge Base article "#import Wrapper Methods May Cause Access Violation" (Q242527) or "Compiler Errors When You Use #import with XML" (Q269194). You can find Knowledge Base articles on the MSDN Library media or at [Microsoft Support](https://support.microsoft.com/).  
-  
-##  <a name="_predir_the_23import_directive_import_attributes"></a> #import Attributes  
- 
+
+##  <a name="_predir_the_23import_directive_import_attributes"></a> #import Attributes
+
 **#import** can optionally include one or more attributes. These attributes tell the compiler to modify the contents of the type-library headers. A backslash (**\\**) symbol can be used to include additional lines in a single **#import** statement. For example:  
   
 ```  
