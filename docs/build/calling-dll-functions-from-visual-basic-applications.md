@@ -17,7 +17,7 @@ For Visual Basic applications (or applications in other languages such as Pascal
 
 `__stdcall` creates the correct calling convention for the function (the called function cleans up the stack and parameters are passed from right to left) but decorates the function name differently. So, when **__declspec(dllexport)** is used on an exported function in a DLL, the decorated name is exported.
 
-The `__stdcall` name decoration prefixes the symbol name with an underscore (_) and appends the symbol with an at sign (**\@**) character followed by the number of bytes in the argument list (the required stack space). As a result, the function when declared as:
+The `__stdcall` name decoration prefixes the symbol name with an underscore ( **\_** ) and appends the symbol with an at sign (**\@**) character followed by the number of bytes in the argument list (the required stack space). As a result, the function when declared as:
 
 ```C
 int __stdcall func (int a, double b)
@@ -29,7 +29,7 @@ The C calling convention (`__cdecl`) decorates the name as `_func`.
 
 To get the decorated name, use [/MAP](../build/reference/map-generate-mapfile.md). Use of **__declspec(dllexport)** does the following:
 
-- If the function is exported with the C calling convention (**_cdecl**), it strips the leading underscore (_) when the name is exported.
+- If the function is exported with the C calling convention (`__cdecl`), it strips the leading underscore ( **\_** ) when the name is exported.
 
 - If the function being exported does not use the C calling convention (for example, `__stdcall`), it exports the decorated name.
 

@@ -29,7 +29,7 @@ The `_pexit` function is not part of any library and it is up to you to provide 
 Unless you plan to explicitly call `_pexit`, you do not need to provide a prototype. The function must appear as if it had the following prototype, and it must push the content of all registers on entry and pop the unchanged content on exit:
 
 ```
-void __declspec(naked) _cdecl _pexit( void );
+void __declspec(naked) __cdecl _pexit( void );
 ```
 
 `_pexit` is similar to `_penter`; see [/Gh (Enable _penter Hook Function)](../../build/reference/gh-enable-penter-hook-function.md) for an example of how to write a `_pexit` function.

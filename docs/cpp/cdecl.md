@@ -1,10 +1,10 @@
 ---
 title: "__cdecl | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/09/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
-f1_keywords: ["__cdecl_cpp"]
+f1_keywords: ["__cdecl_cpp", "__cdecl", "_cdecl" ]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__cdecl keyword [C++]"]
 ms.assetid: 1ff1d03e-fb4e-4562-8be1-74f1ad6427f1
@@ -51,6 +51,8 @@ is equivalent to this:
 ```cpp
 void __cdecl CMyClass::mymethod() { return; }
 ```
+
+For compatibility with previous versions, **_cdecl** is a synonym for **__cdecl** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 ## Example
 
