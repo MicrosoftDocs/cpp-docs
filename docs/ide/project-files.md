@@ -1,11 +1,11 @@
 ---
-title: "Project Files | Microsoft Docs"
+title: "Example Project File | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/09/2018"
 ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: [".vcproj files", "Visual C++ projects, project file format", "VCPROJ (Visual C++ project file) format", "project files [C++], .vcproj file format"]
+helpviewer_keywords: [".vcxproj files", "C++ projects, project file format"]
 ms.assetid: 5261cf45-3136-40a6-899e-dc1339551401
 author: "corob-msft"
 ms.author: "corob"
@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # Project Files
 
-A Visual C++ project file is an XML-based file that has the .vcxproj file name extension and contains information that is required to build a Visual C++ project.
+A Visual C++ project file is an XML-based file that has the .vcxproj file name extension and contains information that is required to build a Visual C++ project. Note that the project file imports various project files that have the extension *.props* or *.targets*. These files contain additional build information, and might themselves refer to other *.props* or *.targets* files. The macros in the file path (for example `$(VCTargetsPath)`) are dependent on your Visual Studio installation. For more information about these macros and *.props* and *.targets* files, see [VC++ Directories Property Page](vcpp-directories-property-page.md), [Working with Project Properties](working-with-project-properties.md#bkmkPropertiesVersusMacros) and [Common Macros for Build Commands and Properties](common-macros-for-build-commands-and-properties.md).
 
 ## Example
 

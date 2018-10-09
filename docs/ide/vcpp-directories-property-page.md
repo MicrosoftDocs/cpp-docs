@@ -1,7 +1,7 @@
 ---
 title: "VC++ Directories Property Page | Microsoft Docs"
 ms.custom: ""
-ms.date: "04/26/2018"
+ms.date: "10/09/2018"
 ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCDirectories.IncludePath", "VC.Project.VCDirectories.ReferencePath", "VC.Project.VCDirectories.SourcePath", "VC.Project.VCDirectories.LibraryWPath", "VC.Project.VCDirectories.ExecutablePath", "VC.Project.VCDirectories.LibraryPath", "VS.ToolsOptionsPages.Projects.VCDirectories", "VC.Project.VCDirectories.ExcludePath"]
@@ -58,7 +58,7 @@ Note: The list is populated as you type. Don't press **Enter**.
 
 For more information about macros and why you should use them instead of hard-coded paths whenever possible, see [Working with Project Properties](../ide/working-with-project-properties.md#bkmkPropertiesVersusMacros).
 
-For a list of commonly used macros, see [Common Macros for Build Commands and Properties](https://docs.microsoft.com/cpp/ide/common-macros-for-build-commands-and-properties).
+For a list of commonly used macros, see [Common Macros for Build Commands and Properties](common-macros-for-build-commands-and-properties.md).
 
 You can define your own macros in two ways:
 
