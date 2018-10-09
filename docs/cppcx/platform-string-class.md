@@ -315,7 +315,7 @@ The second `String` object, whose contents will be appended to `str1`.
 
 ### Return Value
 
-**true** if `str1` is equal to `str2`; otherwise, **false**.
+**true** if *str1* is equal to *str2*; otherwise, **false**.
 
 ### Remarks
 
