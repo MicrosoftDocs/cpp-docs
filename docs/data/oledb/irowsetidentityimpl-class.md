@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetIdentityImpl Class
 
-Implements the OLE DB [IRowsetIdentity](/previous-versions/windows/desktop/ms715913\(v=vs.85\)) interface, which enables testing for row identity.  
+Implements the OLE DB [IRowsetIdentity](/previous-versions/windows/desktop/ms715913) interface, which enables testing for row identity.  
   
 ## Syntax
 
@@ -57,7 +57,7 @@ STDMETHOD(IsSameRow )(HROW hThisRow,
   
 #### Parameters  
 
-See [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+See [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
 

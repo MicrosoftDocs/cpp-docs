@@ -67,5 +67,5 @@ For more information, see:
 ## See Also  
 
 [Data Access](../data-access-in-cpp.md)<br/>
-[OLE DB SDK Documentation](/previous-versions/windows/desktop/ms722784\(v=vs.85\))   
-[OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643\(v=vs.85\))
+[OLE DB SDK Documentation](/previous-versions/windows/desktop/ms722784)   
+[OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643)

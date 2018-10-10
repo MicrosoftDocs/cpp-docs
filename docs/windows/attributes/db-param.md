@@ -37,16 +37,16 @@ The column number (DBCOLUMNINFO ordinal) corresponding to a field in the rowset 
 - DBPARAMIO_NOTPARAM The accessor has no parameters. Setting `eParamIO` to this value in row accessors reminds the user that parameters are ignored.
 
 *dbtype*<br/>
-(Optional) An OLE DB [Type Indicator](/previous-versions/windows/desktop/ms711251\(v=vs.85\)) for the column entry.
+(Optional) An OLE DB [Type Indicator](/previous-versions/windows/desktop/ms711251) for the column entry.
 
 *precision*<br/>
-(Optional) The precision to be used for the column entry. For details, see the description of `bPrecision` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
+(Optional) The precision to be used for the column entry. For details, see the description of `bPrecision` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845)
 
 *scale*<br/>
-(Optional) The scale to be used for the column entry. For details, see the description of `bScale` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
+(Optional) The scale to be used for the column entry. For details, see the description of `bScale` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845)
 
 *status*<br/>
-(Optional) A member variable used to hold the status of this column. The status indicates whether the column value is a data value or some other value, such as NULL. For possible values, see [Status](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) in the *OLE DB Programmer's Reference*.
+(Optional) A member variable used to hold the status of this column. The status indicates whether the column value is a data value or some other value, such as NULL. For possible values, see [Status](/previous-versions/windows/desktop/ms722617) in the *OLE DB Programmer's Reference*.
 
 *length*<br/>
 (Optional) A member variable used to hold the size of the column in bytes.

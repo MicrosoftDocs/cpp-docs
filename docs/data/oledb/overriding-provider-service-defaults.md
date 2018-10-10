@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Overriding Provider Service Defaults
 
-The provider's registry value for OLEDB_SERVICES is returned as the default value for the [DBPROP_INIT_OLEDBSERVICES](/previous-versions/windows/desktop/ms716898\(v=vs.85\)) initialization property on the data source object.  
+The provider's registry value for OLEDB_SERVICES is returned as the default value for the [DBPROP_INIT_OLEDBSERVICES](/previous-versions/windows/desktop/ms716898) initialization property on the data source object.  
   
 As long as the registry entry exists, the provider's objects is aggregated and the user can override the provider's default setting for enabled services by setting the `DBPROP_INIT_OLEDBSERVICES` property before initialization. To enable or disable a particular service, the user generally gets the current value of the `DBPROP_INIT_OLEDBSERVICES` property, sets or clears the bit for the particular property to be enabled or disabled, and resets the property. `DBPROP_INIT_OLEDBSERVICES` can be set directly in OLE DB or in the connection string passed to ADO or `IDataInitialize::GetDatasource`. The corresponding values to enable/disable individual services are listed in the following table.  
   
@@ -29,7 +29,7 @@ If the registry entry does not exist for the provider, the Component Managers wi
   
 ## See Also  
 
-[Resource Pooling](/previous-versions/windows/desktop/ms713655\(v=vs.85\))   
-[How Consumers Use Resource Pooling](/previous-versions/windows/desktop/ms715907\(v=vs.85\))   
-[How Providers Work Effectively with Resource Pooling](/previous-versions/windows/desktop/ms714906\(v=vs.85\))   
+[Resource Pooling](/previous-versions/windows/desktop/ms713655)   
+[How Consumers Use Resource Pooling](/previous-versions/windows/desktop/ms715907)   
+[How Providers Work Effectively with Resource Pooling](/previous-versions/windows/desktop/ms714906)   
 [Enabling and Disabling OLE DB Services](../../data/oledb/enabling-and-disabling-ole-db-services.md)

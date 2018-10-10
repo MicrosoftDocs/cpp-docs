@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandTextImpl Class
 
-Provides an implementation for the [ICommandText](/previous-versions/windows/desktop/ms714914\(v=vs.85\)) interface.  
+Provides an implementation for the [ICommandText](/previous-versions/windows/desktop/ms714914) interface.  
   
 ## Syntax
 
@@ -65,7 +65,7 @@ STDMETHOD(GetCommandText)(GUID * pguidDialect, 
   
 #### Parameters  
 
-See [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825\(v=vs.85\)) in the *OLE DB Programmer's Reference*. The *pguidDialect* parameter is ignored by default.  
+See [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825) in the *OLE DB Programmer's Reference*. The *pguidDialect* parameter is ignored by default.  
 
 ## <a name="setcommandtext"></a> ICommandTextImpl::SetCommandText
 
@@ -80,7 +80,7 @@ STDMETHOD(SetCommandText)(REFGUID rguidDialect, 
   
 #### Parameters  
 
-See [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
+See [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="strcommandtext"></a> ICommandTextImpl::m_strCommandText
 

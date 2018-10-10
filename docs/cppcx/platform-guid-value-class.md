@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # Platform::Guid value class
 
-Represents a [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx) type in the Windows Runtime type system.
+Represents a [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931) type in the Windows Runtime type system.
 
 ## Syntax
 
@@ -147,7 +147,7 @@ True if the two guids are not equal.
 
 ## <a name="operator-call"></a> Guid::operator() Operator
 
-Implicitly converts a [GUID structure](https://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx)GUID to a Platform::Guid.
+Implicitly converts a [GUID structure](https://msdn.microsoft.com/library/windows/desktop/aa373931)GUID to a Platform::Guid.
 
 ### Syntax
 

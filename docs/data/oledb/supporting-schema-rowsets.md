@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Supporting Schema Rowsets
 
-Schema rowsets allow consumers to obtain information about a data store without knowing its underlying structure, or schema. For example, a data store might have tables organized into a user-defined hierarchy, so there would be no way to ensure knowledge of the schema except by reading it. (As another example, note that the Visual C++ wizards use schema rowsets to generate accessors for the consumer.) To allow the consumer to do this, the provider's session object exposes methods on the [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) interface. In Visual C++ applications, you use the [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) class to implement `IDBSchemaRowset`.
+Schema rowsets allow consumers to obtain information about a data store without knowing its underlying structure, or schema. For example, a data store might have tables organized into a user-defined hierarchy, so there would be no way to ensure knowledge of the schema except by reading it. (As another example, note that the Visual C++ wizards use schema rowsets to generate accessors for the consumer.) To allow the consumer to do this, the provider's session object exposes methods on the [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686) interface. In Visual C++ applications, you use the [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) class to implement `IDBSchemaRowset`.
 
 `IDBSchemaRowsetImpl` supports the following methods:
 
@@ -83,7 +83,7 @@ class CUpdateSessionTRSchemaRowset :
 
 Note that `CUpdateSession` inherits from `IDBSchemaRowsetImpl`, so it has all the restriction handling methods. Using `CSchemaRowsetImpl`, declare three child classes (listed in the schema map above): `CUpdateSessionTRSchemaRowset`, `CUpdateSessionColSchemaRowset`, and `CUpdateSessionPTSchemaRowset`. Each of these child classes has an `Execute` method that handles its respective set of restrictions (search criteria). Each `Execute` method compares the values of the `cRestrictions` and `rgRestrictions` parameters. See the description of these parameters in [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md).
 
-For more information about which restrictions correspond to a particular schema rowset, consult the table of schema rowset GUIDs in [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) in the *OLE DB Programmer's Reference* in the Windows SDK.
+For more information about which restrictions correspond to a particular schema rowset, consult the table of schema rowset GUIDs in [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686) in the *OLE DB Programmer's Reference* in the Windows SDK.
 
 For example, if you supported the **TABLE_NAME** restriction on `DBSCHEMA_TABLES`, you would do the following:
 

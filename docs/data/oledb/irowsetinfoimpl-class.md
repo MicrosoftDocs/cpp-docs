@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetInfoImpl Class
 
-Provides an implementation for the [IRowsetInfo](/previous-versions/windows/desktop/ms724541\(v=vs.85\)) interface.  
+Provides an implementation for the [IRowsetInfo](/previous-versions/windows/desktop/ms724541) interface.  
   
 ## Syntax
 
@@ -66,7 +66,7 @@ STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,
   
 #### Parameters  
 
-See [IRowsetInfo::GetProperties](/previous-versions/windows/desktop/ms719611\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
+See [IRowsetInfo::GetProperties](/previous-versions/windows/desktop/ms719611) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="getreferencedrowset"></a> IRowsetInfoImpl::GetReferencedRowset
 
@@ -82,7 +82,7 @@ STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,
   
 #### Parameters  
 
-See [IRowsetInfo::GetReferencedRowset](/previous-versions/windows/desktop/ms721145\(v=vs.85\)) in the *OLE DB Programmer's Reference*. The *iOrdinal* parameter must be a bookmark column. 
+See [IRowsetInfo::GetReferencedRowset](/previous-versions/windows/desktop/ms721145) in the *OLE DB Programmer's Reference*. The *iOrdinal* parameter must be a bookmark column. 
 
 ## <a name="getspecification"></a> IRowsetInfoImpl::GetSpecification
 
@@ -97,7 +97,7 @@ STDMETHOD (GetSpecification )(REFIID riid,
   
 #### Parameters  
 
-See [IRowsetInfo::GetSpecification](/previous-versions/windows/desktop/ms716746\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+See [IRowsetInfo::GetSpecification](/previous-versions/windows/desktop/ms716746) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
 

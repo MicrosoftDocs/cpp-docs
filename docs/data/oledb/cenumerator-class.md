@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # CEnumerator Class
 
-Uses an OLE DB enumerator object, which exposes the [ISourcesRowset](/previous-versions/windows/desktop/ms715969\(v=vs.85\)) interface to return a rowset describing all data sources and enumerators.  
+Uses an OLE DB enumerator object, which exposes the [ISourcesRowset](/previous-versions/windows/desktop/ms715969) interface to return a rowset describing all data sources and enumerators.  
   
 ## Syntax
 
@@ -62,7 +62,7 @@ bool Find(TCHAR* szSearchName) throw();
   
 ### Remarks  
 
-This name maps to the `SOURCES_NAME` member of the [ISourcesRowset](/previous-versions/windows/desktop/ms715969\(v=vs.85\)) interface.  
+This name maps to the `SOURCES_NAME` member of the [ISourcesRowset](/previous-versions/windows/desktop/ms715969) interface.  
   
 ## <a name="getmoniker"></a> CEnumerator::GetMoniker
 
@@ -91,7 +91,7 @@ A standard HRESULT.
 
 ## <a name="open"></a> CEnumerator::Open
 
-Binds the moniker for the enumerator, if one is specified, then retrieves the rowset for the enumerator by calling [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)).  
+Binds the moniker for the enumerator, if one is specified, then retrieves the rowset for the enumerator by calling [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200).  
   
 ### Syntax  
   

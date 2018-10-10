@@ -43,11 +43,11 @@ Your class, derived from `IOpenRowsetImpl`.
   
 ## Remarks  
 
-The [IOpenRowset](/previous-versions/windows/desktop/ms716946\(v=vs.85\)) interface is mandatory for a session object. It opens and returns a rowset that includes all rows from a single base table or index.  
+The [IOpenRowset](/previous-versions/windows/desktop/ms716946) interface is mandatory for a session object. It opens and returns a rowset that includes all rows from a single base table or index.  
   
 ## <a name="createrowset"></a> IOpenRowsetImpl::CreateRowset
 
-Creates a rowset object. Not called directly by user. See [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) in the *OLE DB Programmer's Reference.*  
+Creates a rowset object. Not called directly by user. See [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724) in the *OLE DB Programmer's Reference.*  
   
 ### Syntax  
   
@@ -71,7 +71,7 @@ A template class member representing the user's rowset class. Usually generated 
 *pRowsetObj*<br/>
 [out] A pointer to a rowset object. Typically this parameter is not used, but it can be used if you must perform more work on the rowset before passing it to a COM object. The lifetime of *pRowsetObj* is bound by *ppRowset*.  
   
-For other parameters, see [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) in the *OLE DB Programmer's Reference.*  
+For other parameters, see [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724) in the *OLE DB Programmer's Reference.*  
 
 ## <a name="openrowset"></a> IOpenRowsetImpl::OpenRowset
 
@@ -91,7 +91,7 @@ HRESULT OpenRowset(IUnknown* pUnkOuter,
   
 #### Parameters  
 
-See [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+See [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
 

@@ -45,7 +45,7 @@ Your class, derived from `IDBPropertiesImpl`.
   
 ## Remarks  
 
-[IDBProperties](/previous-versions/windows/desktop/ms719607\(v=vs.85\)) is a mandatory interface for data source objects and an optional interface for enumerators. However, if an enumerator exposes [IDBInitialize](/previous-versions/windows/desktop/ms713706\(v=vs.85\)), it must expose `IDBProperties`. `IDBPropertiesImpl` implements `IDBProperties` by using a static function defined by [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).  
+[IDBProperties](/previous-versions/windows/desktop/ms719607) is a mandatory interface for data source objects and an optional interface for enumerators. However, if an enumerator exposes [IDBInitialize](/previous-versions/windows/desktop/ms713706), it must expose `IDBProperties`. `IDBPropertiesImpl` implements `IDBProperties` by using a static function defined by [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).  
 
 ## <a name="getproperties"></a> IDBPropertiesImpl::GetProperties
 
@@ -62,7 +62,7 @@ STDMETHOD(GetProperties)(ULONG cPropertySets, 
   
 #### Parameters  
 
-See [IDBProperties::GetProperties](/previous-versions/windows/desktop/ms714344\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+See [IDBProperties::GetProperties](/previous-versions/windows/desktop/ms714344) in the *OLE DB Programmer's Reference*.  
   
 Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IDBProperties::GetProperties`:  
   
@@ -93,7 +93,7 @@ STDMETHOD(GetPropertyInfo)(ULONG cPropertySets, 
   
 #### Parameters  
 
-See [IDBProperties::GetPropertyInfo](/previous-versions/windows/desktop/ms718175\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+See [IDBProperties::GetPropertyInfo](/previous-versions/windows/desktop/ms718175) in the *OLE DB Programmer's Reference*.  
   
 Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IDBProperties::GetPropertyInfo`:  
   
@@ -119,7 +119,7 @@ STDMETHOD(SetProperties)(ULONG cPropertySets, 
   
 #### Parameters  
 
-See [IDBProperties::SetProperties](/previous-versions/windows/desktop/ms723049\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+See [IDBProperties::SetProperties](/previous-versions/windows/desktop/ms723049) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
 

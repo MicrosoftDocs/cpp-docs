@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # ISessionPropertiesImpl Class
 
-Provides an implementation of the [ISessionProperties](/previous-versions/windows/desktop/ms713721\(v=vs.85\)) interface.  
+Provides an implementation of the [ISessionProperties](/previous-versions/windows/desktop/ms713721) interface.  
   
 ## Syntax
 
@@ -65,7 +65,7 @@ STDMETHOD(GetProperties)(ULONG cPropertyIDSets, 
   
 #### Parameters  
 
-See [ISessionProperties::GetProperties](/previous-versions/windows/desktop/ms723643\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
+See [ISessionProperties::GetProperties](/previous-versions/windows/desktop/ms723643) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="setproperties"></a> ISessionPropertiesImpl::SetProperties
 
@@ -80,7 +80,7 @@ STDMETHOD(SetProperties)(ULONG cPropertySets, 
   
 #### Parameters  
 
-See [ISessionProperties::SetProperties](/previous-versions/windows/desktop/ms714405\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+See [ISessionProperties::SetProperties](/previous-versions/windows/desktop/ms714405) in the *OLE DB Programmer's Reference*.  
   
 ## See Also  
 

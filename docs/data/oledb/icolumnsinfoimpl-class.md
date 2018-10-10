@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # IColumnsInfoImpl Class
 
-Provides an implementation of the [IColumnsInfo](/previous-versions/windows/desktop/ms724541\(v=vs.85\)) interface.  
+Provides an implementation of the [IColumnsInfo](/previous-versions/windows/desktop/ms724541) interface.  
   
 ## Syntax
 
@@ -61,7 +61,7 @@ STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,
   
 #### Parameters  
 
-See [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+See [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="mapcolumnids"></a> IColumnsInfoImpl::MapColumnIDs
 
@@ -77,7 +77,7 @@ STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,
   
 #### Parameters  
 
-See [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+See [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200) in the *OLE DB Programmer's Reference*.  
   
 ## See Also  
 

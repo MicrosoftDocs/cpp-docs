@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBInitializeImpl Class
 
-Provides an implementation for the [IDBInitialize](/previous-versions/windows/desktop/ms713706\(v=vs.85\)) interface.  
+Provides an implementation for the [IDBInitialize](/previous-versions/windows/desktop/ms713706) interface.  
   
 ## Syntax
 
@@ -84,7 +84,7 @@ STDMETHOD(Initialize)(void);
   
 ### Remarks  
 
-See [IDBInitialize::Initialize](/previous-versions/windows/desktop/ms718026\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
+See [IDBInitialize::Initialize](/previous-versions/windows/desktop/ms718026) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="uninitialize"></a> IDBInitializeImpl::Uninitialize
 
@@ -98,7 +98,7 @@ STDMETHOD(Uninitialize)(void);
   
 ### Remarks  
 
-See [IDBInitialize::Uninitialize](/previous-versions/windows/desktop/ms719648\(v=vs.85\)) in the *OLE DB Programmer's Reference*.
+See [IDBInitialize::Uninitialize](/previous-versions/windows/desktop/ms719648) in the *OLE DB Programmer's Reference*.
 
 ## <a name="dwstatus"></a> IDBInitializeImpl::m_dwStatus
 

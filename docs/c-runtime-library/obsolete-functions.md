@@ -21,14 +21,14 @@ Certain library functions are obsolete and have more recent equivalents. We reco
 |Obsolete function|Alternative|
 |-----------------------|-----------------|
 |`is_wctype`|[iswctype](../c-runtime-library/reference/isctype-iswctype-isctype-l-iswctype-l.md)|
-|`_loaddll`|[LoadLibrary](https://msdn.microsoft.com/library/windows/desktop/ms684175\(v=vs.85\).aspx), [LoadLibraryEx](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa), or [LoadPackagedLibrary](/windows/desktop/api/winbase/nf-winbase-loadpackagedlibrary)|
-|`_unloaddll`|[FreeLibrary](https://msdn.microsoft.com/library/windows/desktop/ms683152\(v=vs.85\).aspx)|
+|`_loaddll`|[LoadLibrary](https://msdn.microsoft.com/library/windows/desktop/ms684175), [LoadLibraryEx](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa), or [LoadPackagedLibrary](/windows/desktop/api/winbase/nf-winbase-loadpackagedlibrary)|
+|`_unloaddll`|[FreeLibrary](https://msdn.microsoft.com/library/windows/desktop/ms683152)|
 |`_getdllprocaddr`|[GetProcAddress](../build/getprocaddress.md)|
-|`_seterrormode`|[SetErrorMode](https://msdn.microsoft.com/library/windows/desktop/ms680621\(v=vs.85\).aspx)|
-|`_beep`|[Beep](https://msdn.microsoft.com/library/windows/desktop/ms679277\(v=vs.85\).aspx)|
+|`_seterrormode`|[SetErrorMode](https://msdn.microsoft.com/library/windows/desktop/ms680621)|
+|`_beep`|[Beep](https://msdn.microsoft.com/library/windows/desktop/ms679277)|
 |`_sleep`|[Sleep](/windows/desktop/api/synchapi/nf-synchapi-sleep)|
-|`_getsystime`|[GetLocalTime](https://msdn.microsoft.com/library/windows/desktop/ms724338\(v=vs.85\).aspx)|
-|`_setsystime`|[SetLocalTime](https://msdn.microsoft.com/library/windows/desktop/ms724936\(v=vs.85\).aspx)|
+|`_getsystime`|[GetLocalTime](https://msdn.microsoft.com/library/windows/desktop/ms724338)|
+|`_setsystime`|[SetLocalTime](https://msdn.microsoft.com/library/windows/desktop/ms724936)|
 
 ## Removed from the CRT in Visual Studio 2015
 
