@@ -75,7 +75,7 @@ A pointer to a `CSimpleRow` object.
   
 ### Return Value  
 
-An HRESULT value, usually S_OK, indicating the two rows are the same row instance, or S_FALSE, indicating the two rows are different. See [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629\(v=vs.85\)) in the *OLE DB Programmer's Reference* for other possible return values. 
+An HRESULT value, usually S_OK, indicating the two rows are the same row instance, or S_FALSE, indicating the two rows are different. See [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629) in the *OLE DB Programmer's Reference* for other possible return values. 
 
 ## <a name="csimplerow"></a> CSimpleRow::CSimpleRow
 

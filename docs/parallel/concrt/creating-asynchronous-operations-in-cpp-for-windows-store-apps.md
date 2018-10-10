@@ -102,7 +102,7 @@ Add the following code to the generated C++ source file (this example renames Cl
 
 [!code-cpp[concrt-windowsstore-primes#2](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_3.cpp)]
 
-Each method first performs validation to ensure that the input parameters are non-negative. If an input value is negative, the method throws [Platform::InvalidArgumentException](https://msdn.microsoft.com/library/windows/apps/hh755794\(v=vs.110\).aspx). Error handling is explained later in this section.
+Each method first performs validation to ensure that the input parameters are non-negative. If an input value is negative, the method throws [Platform::InvalidArgumentException](https://msdn.microsoft.com/library/windows/apps/hh755794.aspx). Error handling is explained later in this section.
 
 To consume these methods from a UWP app, use the Visual C# **Blank App (XAML)** template to add a second project to the Visual Studio solution. This example names the project `Primes`. Then, from the `Primes` project, add a reference to the `PrimesLibrary` project.
 
@@ -125,7 +125,7 @@ The following illustration shows the `Primes` app after each option has been cho
 
 ![Windows Runtime Primes app](../../parallel/concrt/media/concrt_windows_primes.png "concrt_windows_primes")
 
-For examples that use `create_async` to create asynchronous tasks that can be consumed by other languages, see [Using C++ in the Bing Maps Trip Optimizer sample](https://msdn.microsoft.com/library/windows/apps/hh699891\(v=vs.110\).aspx) and [Windows 8 Asynchronous Operations in C++ with PPL](http://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d).
+For examples that use `create_async` to create asynchronous tasks that can be consumed by other languages, see [Using C++ in the Bing Maps Trip Optimizer sample](https://msdn.microsoft.com/library/windows/apps/hh699891.aspx) and [Windows 8 Asynchronous Operations in C++ with PPL](http://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d).
 
 ##  <a name="exethread"></a> Controlling the Execution Thread
 

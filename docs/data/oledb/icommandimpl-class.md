@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandImpl Class
 
-Provides implementation for the [ICommand](/previous-versions/windows/desktop/ms709737\(v=vs.85\)) interface.  
+Provides implementation for the [ICommand](/previous-versions/windows/desktop/ms709737) interface.  
   
 ## Syntax
 
@@ -72,7 +72,7 @@ STDMETHOD(Cancel)();
   
 ### Remarks  
 
-See [ICommand::Cancel](/previous-versions/windows/desktop/ms714402\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+See [ICommand::Cancel](/previous-versions/windows/desktop/ms714402) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="cancelexecution"></a> ICommandImpl::CancelExecution
 
@@ -131,7 +131,7 @@ A standard HRESULT value. See `ICommand::Execute` for a list of typical values.
 
 To create more than one rowset, or to provide your own conditions for creating different rowsets, place different calls to `CreateRowset` from within `Execute`.  
   
-See [ICommand::Execute](/previous-versions/windows/desktop/ms718095\(v=vs.85\)) in the *OLE DB Programmer's Reference.*  
+See [ICommand::Execute](/previous-versions/windows/desktop/ms718095) in the *OLE DB Programmer's Reference.*  
 
 ## <a name="execute"></a> ICommandImpl::Execute
 
@@ -149,7 +149,7 @@ HRESULT Execute(IUnknown* pUnkOuter,
   
 #### Parameters  
 
-See [ICommand::Execute](/previous-versions/windows/desktop/ms718095\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+See [ICommand::Execute](/previous-versions/windows/desktop/ms718095) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
 
@@ -170,7 +170,7 @@ STDMETHOD (GetDBSession) (REFIID riid,
   
 #### Parameters  
 
-See [ICommand::GetDBSession](/previous-versions/windows/desktop/ms719622\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+See [ICommand::GetDBSession](/previous-versions/windows/desktop/ms719622) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
 

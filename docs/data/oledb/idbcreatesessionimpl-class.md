@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBCreateSessionImpl Class
 
-Provides an implementation for the [IDBCreateSession](/previous-versions/windows/desktop/ms724076\(v=vs.85\)) interface.  
+Provides an implementation for the [IDBCreateSession](/previous-versions/windows/desktop/ms724076) interface.  
   
 ## Syntax
 
@@ -62,7 +62,7 @@ STDMETHOD(CreateSession)(IUnknown * pUnkOuter, 
   
 #### Parameters  
 
-See [IDBCreateSession::CreateSession](/previous-versions/windows/desktop/ms714942\(v=vs.85\)) in the *OLE DB Programmer's Reference*.   
+See [IDBCreateSession::CreateSession](/previous-versions/windows/desktop/ms714942) in the *OLE DB Programmer's Reference*.   
   
 ## See Also  
 

@@ -23,7 +23,7 @@ For Windows 8.1 and later, the DirectX SDK is included in the Windows SDK. You d
 
 To create DirectX apps for Windows 7, Windows Vista, or Windows XP, you can download the stand-alone [DirectX SDK](http://www.microsoft.com/download/details.aspx?displaylang=en&id=6812).
 
-[DirectX Graphics and Gaming](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx) has information and samples to help you get started with DirectX programming.
+[DirectX Graphics and Gaming](https://msdn.microsoft.com/library/windows/desktop/ee663274) has information and samples to help you get started with DirectX programming.
 
 [Win32 Windows Applications](../windows/windows-desktop-applications-cpp.md) contains articles that describe how to create a basic Windows desktop app.
 
