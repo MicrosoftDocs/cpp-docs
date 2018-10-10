@@ -774,7 +774,7 @@ Should return TRUE if storyboard owned by pGroupNew has priority. Should return 
 
 ### Remarks
 
-This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_CANCEL. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about Conflict Management (https://msdn.microsoft.com/library/dd371759(VS.85).aspx).
+This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_CANCEL. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about [Conflict Management](https://msdn.microsoft.com/library/dd371759).
 
 ##  <a name="onhasprioritycompress"></a>  CAnimationController::OnHasPriorityCompress
 
@@ -804,7 +804,7 @@ Should return TRUE if storyboard owned by pGroupNew has priority. Should return 
 
 ### Remarks
 
-This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_COMPRESS. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about Conflict Management (https://msdn.microsoft.com/library/dd371759(VS.85).aspx).
+This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_COMPRESS. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about [Conflict Management](https://msdn.microsoft.com/library/dd371759).
 
 ##  <a name="onhaspriorityconclude"></a>  CAnimationController::OnHasPriorityConclude
 
@@ -834,7 +834,7 @@ Should return TRUE if storyboard owned by pGroupNew has priority. Should return 
 
 ### Remarks
 
-This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_CONCLUDE. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about Conflict Management (https://msdn.microsoft.com/library/dd371759(VS.85).aspx).
+This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_CONCLUDE. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about [Conflict Management](https://msdn.microsoft.com/library/dd371759).
 
 ##  <a name="onhasprioritytrim"></a>  CAnimationController::OnHasPriorityTrim
 
@@ -864,7 +864,7 @@ Should return TRUE if storyboard owned by pGroupNew has priority. Should return 
 
 ### Remarks
 
-This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_TRIM. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about Conflict Management (https://msdn.microsoft.com/library/dd371759(VS.85).aspx).
+This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_TRIM. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about [Conflict Management](https://msdn.microsoft.com/library/dd371759).
 
 ##  <a name="onstoryboardstatuschanged"></a>  CAnimationController::OnStoryboardStatusChanged
 

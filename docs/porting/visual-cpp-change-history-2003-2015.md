@@ -272,7 +272,7 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
 - **clock**
 
-   In previous versions, the [clock](../c-runtime-library/reference/clock.md) function was implemented using the Windows API [GetSystemTimeAsFileTime](https://msdn.microsoft.com/library/windows/desktop/ms724397.aspx). With this implementation, the clock function was sensitive to the system time, and was thus not necessarily monotonic. The clock function has been reimplemented in terms of [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) and is now monotonic.
+   In previous versions, the [clock](../c-runtime-library/reference/clock.md) function was implemented using the Windows API [GetSystemTimeAsFileTime](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemtimeasfiletime). With this implementation, the clock function was sensitive to the system time, and was thus not necessarily monotonic. The clock function has been reimplemented in terms of [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) and is now monotonic.
 
 - **fstat and _utime**
 

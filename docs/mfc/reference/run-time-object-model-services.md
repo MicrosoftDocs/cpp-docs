@@ -81,7 +81,7 @@ Pointer to a null-terminated string containing the function name, or specifies t
 
 ### Remarks
 
-Use this macro to determine whether the Common Controls library the function specified by *proc* (instead of calling [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212).
+Use this macro to determine whether the Common Controls library the function specified by *proc* (instead of calling [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress).
 
 ### Requirements
 
@@ -108,7 +108,7 @@ Pointer to a null-terminated string containing the function name, or specifies t
 
 ### Remarks
 
-Use this macro to determine whether the Common Controls library the function specified by *proc* (instead of calling [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212). This macro is the Unicode version of AFX_COMCTL32_IF_EXISTS.
+Use this macro to determine whether the Common Controls library the function specified by *proc* (instead of calling [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress). This macro is the Unicode version of AFX_COMCTL32_IF_EXISTS.
 
 ### Requirements
 
