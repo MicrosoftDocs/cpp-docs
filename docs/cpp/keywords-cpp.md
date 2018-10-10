@@ -1,7 +1,7 @@
 ---
 title: "Keywords (C++) | Microsoft Docs"
 ms.custom: "index-page"
-ms.date: "09/24/2018"
+ms.date: "10/10/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
 dev_langs: ["C++"]
@@ -62,8 +62,6 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 <sup>1</sup> Extended attributes for the **__declspec** keyword.
 
 <sup>2</sup> Applicable to Managed Extensions for C++ only. This syntax is now deprecated. See [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md) for more information.
-
-
 
 <sup>3</sup> Intrinsic function used in event handling.
 

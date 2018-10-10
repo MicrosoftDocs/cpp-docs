@@ -37,7 +37,7 @@ Use this keyword to extract the GUID attached to:
 - A library block created with the [module](../windows/module-cpp.md) attribute.
 
 > [!NOTE]
->  In a debug build, **__uuidof** always initializes an object dynamically (at runtime). In a release build, **__uuidof** can statically (at compile time) initialize an object.
+> In a debug build, **__uuidof** always initializes an object dynamically (at runtime). In a release build, **__uuidof** can statically (at compile time) initialize an object.
 
 For compatibility with previous versions, **_uuidof** is a synonym for **__uuidof** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
