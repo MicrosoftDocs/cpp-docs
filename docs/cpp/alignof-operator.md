@@ -1,10 +1,10 @@
 ---
 title: "__alignof Operator | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/09/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
-f1_keywords: ["alignas_cpp", "__alignof_cpp", "alignof_cpp"]
+f1_keywords: ["alignas_cpp", "__alignof_cpp", "alignof_cpp", "__alignof", "_alignof"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["alignas [C++]", "alignment of structures", "__alignof keyword [C++]", "alignof [C++]", "types [C++], alignment requirements"]
 ms.assetid: acb1eed7-6398-40bd-b0c5-684ceb64afbc
@@ -64,6 +64,8 @@ typedef __declspec(align(32)) struct { int a; double b; } S;
 int n = 50; // array size
 S* p = (S*)aligned_malloc(n * sizeof(S), __alignof(S));
 ```
+
+For compatibility with previous versions, **_alignof** is a synonym for **__alignof** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 For more information on modifying alignment, see:
 

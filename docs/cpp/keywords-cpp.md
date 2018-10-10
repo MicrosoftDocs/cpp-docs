@@ -17,7 +17,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 
 |||||
 |-|-|-|-|
-|[__abstract](../dotnet/declaration-of-a-managed-class-type.md) <sup>2</sup>|[__alignof Operator](alignof-operator.md) <sup>4</sup>|[__asm](../assembler/inline/asm.md)<sup>4</sup>|[__assume](../intrinsics/assume.md) <sup>4</sup>|
+|[__abstract](../dotnet/declaration-of-a-managed-class-type.md) <sup>2</sup>|[__alignof Operator](alignof-operator.md) <sup>4</sup>|[__asm](../assembler/inline/asm.md) <sup>4</sup>|[__assume](../intrinsics/assume.md) <sup>4</sup>|
 |[__based](based-pointers-cpp.md) <sup>4</sup>|[__box](../dotnet/value-type-semantics.md) <sup>2</sup>|[__cdecl](cdecl.md) <sup>4</sup>|[__declspec](declspec.md) <sup>4</sup>|
 |[__delegate](../dotnet/delegates-and-events.md) <sup>2</sup>|[__event](event.md)|[__except](try-except-statement.md) <sup>4</sup>|[__fastcall](fastcall.md) <sup>4</sup>|
 |[__finally](try-finally-statement.md) <sup>4</sup>|[__forceinline](inline-functions-cpp.md) <sup>4</sup>|[__gc](../dotnet/declaration-of-a-clr-reference-class-object.md) <sup>2</sup>|[__hook](hook.md) <sup>3</sup>|

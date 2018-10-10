@@ -1,10 +1,10 @@
 ---
 title: "__declspec | Microsoft Docs"
 ms.custom: ""
-ms.date: "1/23/2018"
+ms.date: "10/09/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
-f1_keywords: ["__declspec_cpp"]
+f1_keywords: ["__declspec_cpp", "__declspec", "_declspec"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec keyword [C++]"]
 author: "mikeblome"
@@ -55,6 +55,8 @@ White space separates the declaration modifier sequence. Examples appear in late
 Extended attribute grammar supports these Microsoft-specific storage-class attributes: [align](../cpp/align-cpp.md), [allocate](../cpp/allocate.md), [appdomain](../cpp/appdomain.md), [code_seg](../cpp/code-seg-declspec.md), [deprecated](../cpp/deprecated-cpp.md), [dllexport](../cpp/dllexport-dllimport.md), [dllimport](../cpp/dllexport-dllimport.md), [jitintrinsic](../cpp/jitintrinsic.md), [naked](../cpp/naked-cpp.md), [noalias](../cpp/noalias.md), [noinline](../cpp/noinline.md), [noreturn](../cpp/noreturn.md), [nothrow](../cpp/nothrow-cpp.md), [novtable](../cpp/novtable.md), [process](../cpp/process.md), [restrict](../cpp/restrict.md), [safebuffers](../cpp/safebuffers.md), [selectany](../cpp/selectany.md), [spectre](../cpp/spectre.md), and [thread](../cpp/thread.md). It also supports these COM-object attributes: [property](../cpp/property-cpp.md) and [uuid](../cpp/uuid-cpp.md).
 
 The **code_seg**, **dllexport**, **dllimport**, **naked**, **noalias**, **nothrow**, **property**, **restrict**, **selectany**, **thread**, and **uuid** storage-class attributes are properties only of the declaration of the object or function to which they are applied. The **thread** attribute affects data and objects only. The **naked** and **spectre** attributes affect functions only. The **dllimport** and **dllexport** attributes affect functions, data, and objects. The **property**, **selectany**, and **uuid** attributes affect COM objects.
+
+For compatibility with previous versions, **_declspec** is a synonym for **__declspec** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 The **__declspec** keywords should be placed at the beginning of a simple declaration. The compiler ignores, without warning, any **__declspec** keywords placed after * or & and in front of the variable identifier in a declaration.
 
