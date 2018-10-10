@@ -580,7 +580,7 @@ If the function succeeds, the return value is a handle to the module. If the fun
 
 ### Remarks
 
-It returns a handle that can be used in [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212) to get the address of a DLL function. `AfxLoadLibrary` can also be used to map other executable modules.
+It returns a handle that can be used in [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) to get the address of a DLL function. `AfxLoadLibrary` can also be used to map other executable modules.
 
 Each process maintains a reference count for each loaded library module. This reference count is incremented each time `AfxLoadLibrary` is called and is decremented each time `AfxFreeLibrary` is called. When the reference count reaches zero, the module is unmapped from the address space of the calling process and the handle is no longer valid.
 
