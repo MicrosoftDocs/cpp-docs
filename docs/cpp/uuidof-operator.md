@@ -1,10 +1,10 @@
 ---
 title: "__uuidof Operator | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/10/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
-f1_keywords: ["__LIBID_cpp", "__uuidof_cpp"]
+f1_keywords: ["__LIBID_cpp", "__uuidof_cpp", "__uuidof", "_uuidof"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__uuidof keyword [C++]", "__LIBID_ keyword [C++]"]
 ms.assetid: badfe709-809b-4b66-ad48-ee35039d25c6
@@ -38,6 +38,8 @@ Use this keyword to extract the GUID attached to:
 
 > [!NOTE]
 >  In a debug build, **__uuidof** always initializes an object dynamically (at runtime). In a release build, **__uuidof** can statically (at compile time) initialize an object.
+
+For compatibility with previous versions, **_uuidof** is a synonym for **__uuidof** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 ## Example
 

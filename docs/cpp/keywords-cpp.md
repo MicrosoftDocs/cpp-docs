@@ -28,10 +28,9 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 |[__noop](../intrinsics/noop.md)|**__pin** <sup>2</sup>|**__property** <sup>2</sup>|[__ptr32](ptr32-ptr64.md) <sup>4</sup>|
 |[__ptr64](ptr32-ptr64.md)<sup>4</sup>|[__raise](raise.md)|[__restrict](extension-restrict.md) <sup>4</sup>|**__sealed** <sup>2</sup>|
 |[__single_inheritance](inheritance-keywords.md)<sup>4</sup>|[__sptr](sptr-uptr.md)<sup>4</sup>|[__stdcall](stdcall.md) <sup>4</sup>|[__super](super.md)|
-|[__thiscall](thiscall.md)|[__try/\__except](try-except-statement.md) <sup>4</sup>|[__try/\__finally](try-finally-statement.md) <sup>4</sup>|[__try_cast](../dotnet/cast-notation-and-introduction-of-safe-cast-angles.md) <sup>2</sup>|
-|[__unaligned](unaligned.md) <sup>4</sup>|[__unhook](unhook.md) <sup>3</sup>|[__uptr](sptr-uptr.md) <sup>4</sup>|[__uuidof](uuidof-operator.md) <sup>4</sup>|
-|[__value](../dotnet/value-type-semantics.md) <sup>2</sup>|[__vectorcall](vectorcall.md) <sup>4</sup>|[__virtual_inheritance](inheritance-keywords.md) <sup>4</sup>|[__w64](w64.md) <sup>4</sup>|
-|[__wchar_t](fundamental-types-cpp.md)|||[abstract](../windows/abstract-cpp-component-extensions.md)|
+|[__thiscall](thiscall.md)|[__try_cast](../dotnet/cast-notation-and-introduction-of-safe-cast-angles.md) <sup>2</sup>|[__unaligned](unaligned.md) <sup>4</sup>|[__unhook](unhook.md) <sup>3</sup>|
+|[__uptr](sptr-uptr.md) <sup>4</sup>|[__uuidof](uuidof-operator.md) <sup>4</sup>|[__value](../dotnet/value-type-semantics.md) <sup>2</sup>|[__vectorcall](vectorcall.md) <sup>4</sup>|
+|[__virtual_inheritance](inheritance-keywords.md) <sup>4</sup>|[__w64](w64.md) <sup>4</sup>|[__wchar_t](fundamental-types-cpp.md)|[abstract](../windows/abstract-cpp-component-extensions.md)|
 |[alignas](align-cpp.md)|[array](../windows/arrays-cpp-component-extensions.md)|[auto](auto-keyword.md)|[bool](bool-cpp.md)|
 |[break](break-statement-cpp.md)|[case](switch-statement-cpp.md)|[catch](try-throw-and-catch-statements-cpp.md)|[char](fundamental-types-cpp.md)|
 |[char16_t](char-wchar-t-char16-t-char32-t.md)|[char32_t](char-wchar-t-char16-t-char32-t.md)|[class](class-cpp.md)|[const](const-cpp.md)|
