@@ -165,7 +165,7 @@ T& local(bool& _Exists);
 ### Parameters
 
 *_Exists*<br/>
-A reference to a boolean. The boolean value referenced by this argument will be set to `true` if the sub-computation already existed on this thread, and set to `false` if this was the first sub-computation on this thread.
+A reference to a boolean. The boolean value referenced by this argument will be set to **true** if the sub-computation already existed on this thread, and set to **false** if this was the first sub-computation on this thread.
 
 ### Return Value
 

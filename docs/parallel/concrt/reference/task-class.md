@@ -115,7 +115,7 @@ bool is_apartment_aware() const;
 
 ### Return Value
 
-`true` if the task unwraps an `IAsyncInfo` interface or is descended from such a task, `false` otherwise.
+**true** if the task unwraps an `IAsyncInfo` interface or is descended from such a task, **false** otherwise.
 
 ##  <a name="is_done"></a>  task::is_done Method (Concurrency Runtime)
 
@@ -150,7 +150,7 @@ The task to compare.
 
 ### Return Value
 
-`true` if the objects refer to different underlying tasks, and `false` otherwise.
+**true** if the objects refer to different underlying tasks, and **false** otherwise.
 
 ##  <a name="operator_eq"></a> operator=
 
@@ -190,7 +190,7 @@ The task to compare.
 
 ### Return Value
 
-`true` if the objects refer to the same underlying task, and `false` otherwise.
+**true** if the objects refer to the same underlying task, and **false** otherwise.
 
 ##  <a name="scheduler"></a>  task::scheduler Method (Concurrency Runtime)
 

@@ -142,7 +142,7 @@ Operand `location`.
 
 ### Return Value
 
-`true` if the two locations are different, `false` otherwise.
+**true** if the two locations are different, **false** otherwise.
 
 ##  <a name="operator_eq"></a> operator=
 
@@ -174,7 +174,7 @@ Operand `location`.
 
 ### Return Value
 
-`true` if the two locations are identical, and `false` otherwise.
+**true** if the two locations are identical, and **false** otherwise.
 
 ## See Also
 

@@ -107,7 +107,7 @@ A pointer to a block that is being searched for in the `network_link_registry` o
 
 ### Return Value
 
-`true` if the block was found, `false` otherwise.
+**true** if the block was found, **false** otherwise.
 
 ##  <a name="count"></a> count
 
@@ -136,7 +136,7 @@ A pointer to a block to be removed, if found.
 
 ### Return Value
 
-`true` if the link was found and removed, `false` otherwise.
+**true** if the link was found and removed, **false** otherwise.
 
 ## See Also
 

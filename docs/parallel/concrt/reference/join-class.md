@@ -240,11 +240,11 @@ The `runtime_object_identity` of the offered `message` object.
 
 ### Return Value
 
-`true` if the message was successfully reserved, `false` otherwise.
+**true** if the message was successfully reserved, **false** otherwise.
 
 ### Remarks
 
-After `reserve` is called, if it returns `true`, either `consume` or `release` must be called to either take or release ownership of the message.
+After `reserve` is called, if it returns **true**, either `consume` or `release` must be called to either take or release ownership of the message.
 
 ##  <a name="resume_propagation"></a> resume_propagation
 

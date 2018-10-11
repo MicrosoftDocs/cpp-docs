@@ -135,7 +135,7 @@ bool has_value() const;
 
 ### Return Value
 
-`true` if the block has received a value, `false` otherwise.
+**true** if the block has received a value, **false** otherwise.
 
 ##  <a name="link_target_notification"></a> link_target_notification
 
@@ -271,7 +271,7 @@ virtual bool supports_anonymous_source();
 
 ### Return Value
 
-`true` because the block does not postpone offered messages.
+**true** because the block does not postpone offered messages.
 
 ##  <a name="release_message"></a> release_message
 
@@ -301,11 +301,11 @@ The `runtime_object_identity` of the `message` object being reserved.
 
 ### Return Value
 
-`true` if the message was successfully reserved, `false` otherwise.
+**true** if the message was successfully reserved, **false** otherwise.
 
 ### Remarks
 
-After `reserve` is called, if it returns `true`, either `consume` or `release` must be called to either take or release ownership of the message.
+After `reserve` is called, if it returns **true**, either `consume` or `release` must be called to either take or release ownership of the message.
 
 ##  <a name="resume_propagation"></a> resume_propagation
 

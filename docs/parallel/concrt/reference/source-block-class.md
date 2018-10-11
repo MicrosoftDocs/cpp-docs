@@ -199,7 +199,7 @@ The method throws an [invalid_argument](../../../standard-library/invalid-argume
 
 The method throws a [bad_target](bad-target-class.md) exception if the parameter `_PTarget` does not represent the target that called `reserve`.
 
-The `consume` method is similar to `accept`, but must always be preceded by a call to `reserve` that returned `true`.
+The `consume` method is similar to `accept`, but must always be preceded by a call to `reserve` that returned **true**.
 
 ##  <a name="consume_message"></a> consume_message
 
@@ -389,7 +389,7 @@ A pointer to the target block that is calling the `reserve` method.
 
 ### Return Value
 
-`true` if the message was successfully reserved, `false` otherwise. Reservations can fail for many reasons, including: the message was already reserved or accepted by another target, the source could deny reservations, and so forth.
+**true** if the message was successfully reserved, **false** otherwise. Reservations can fail for many reasons, including: the message was already reserved or accepted by another target, the source could deny reservations, and so forth.
 
 ### Remarks
 
@@ -412,11 +412,11 @@ The `runtime_object_identity` of the `message` object being reserved.
 
 ### Return Value
 
-`true` if the message was successfully reserved, `false` otherwise.
+**true** if the message was successfully reserved, **false** otherwise.
 
 ### Remarks
 
-After `reserve` is called, if it returns `true`, either `consume` or `release` must be called to either take or release ownership of the message.
+After `reserve` is called, if it returns **true**, either `consume` or `release` must be called to either take or release ownership of the message.
 
 ##  <a name="resume_propagation"></a> resume_propagation
 

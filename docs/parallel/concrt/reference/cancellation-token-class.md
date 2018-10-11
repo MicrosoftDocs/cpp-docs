@@ -37,7 +37,7 @@ class cancellation_token;
 |----------|-----------------|
 |[deregister_callback](#deregister_callback)|Removes a callback previously registered via the `register` method based on the `cancellation_token_registration` object returned at the time of registration.|
 |[is_cancelable](#is_cancelable)|Returns an indication of whether this token can be canceled or not.|
-|[is_canceled](#is_canceled)|Returns `true` if the token has been canceled.|
+|[is_canceled](#is_canceled)|Returns **true** if the token has been canceled.|
 |[none](#none)|Returns a cancellation token which can never be subject to cancellation.|
 |[register_callback](#register_callback)|Registers a callback function with the token. If and when the token is canceled, the callback will be made. Note that if the token is already canceled at the point where this method is called, the callback will be made immediately and synchronously.|
 
@@ -105,7 +105,7 @@ An indication of whether this token can be canceled or not.
 
 ##  <a name="is_canceled"></a> is_canceled
 
-Returns `true` if the token has been canceled.
+Returns **true** if the token has been canceled.
 
 ```
 bool is_canceled() const;
@@ -113,7 +113,7 @@ bool is_canceled() const;
 
 ### Return Value
 
-The value `true` if the token has been canceled; otherwise, the value `false`.
+The value **true** if the token has been canceled; otherwise, the value **false**.
 
 ##  <a name="none"></a> none
 

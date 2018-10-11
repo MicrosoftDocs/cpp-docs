@@ -141,7 +141,7 @@ An object of type `concurrent_vector`.
 
 ### Return Value
 
-`true` if the concurrent vector on the left side of the operator is equal to the concurrent vector on the right side of the operator; otherwise `false`.
+**true** if the concurrent vector on the left side of the operator is equal to the concurrent vector on the right side of the operator; otherwise **false**.
 
 ### Remarks
 
@@ -179,7 +179,7 @@ An object of type `concurrent_vector`.
 
 ### Return Value
 
-`true` if the concurrent vectors are not equal; `false` if the concurrent vectors are equal.
+**true** if the concurrent vectors are not equal; **false** if the concurrent vectors are equal.
 
 ### Remarks
 
@@ -217,7 +217,7 @@ An object of type `concurrent_vector`.
 
 ### Return Value
 
-`true` if the concurrent vector on the left side of the operator is less than the concurrent vector on the right side of the operator; otherwise `false`.
+**true** if the concurrent vector on the left side of the operator is less than the concurrent vector on the right side of the operator; otherwise **false**.
 
 ### Remarks
 
@@ -255,7 +255,7 @@ An object of type `concurrent_vector`.
 
 ### Return Value
 
-`true` if the concurrent vector on the left side of the operator is less than or equal to the concurrent vector on the right side of the operator; otherwise `false`.
+**true** if the concurrent vector on the left side of the operator is less than or equal to the concurrent vector on the right side of the operator; otherwise **false**.
 
 ### Remarks
 
@@ -293,7 +293,7 @@ An object of type `concurrent_vector`.
 
 ### Return Value
 
-`true` if the concurrent vector on the left side of the operator is greater than the concurrent vector on the right side of the operator; otherwise `false`.
+**true** if the concurrent vector on the left side of the operator is greater than the concurrent vector on the right side of the operator; otherwise **false**.
 
 ### Remarks
 
@@ -331,7 +331,7 @@ An object of type `concurrent_vector`.
 
 ### Return Value
 
-`true` if the concurrent vector on the left side of the operator is greater than or equal to the concurrent vector on the right side of the operator; otherwise `false`.
+**true** if the concurrent vector on the left side of the operator is greater than or equal to the concurrent vector on the right side of the operator; otherwise **false**.
 
 ### Remarks
 

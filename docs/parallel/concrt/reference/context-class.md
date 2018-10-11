@@ -216,7 +216,7 @@ static void __cdecl Oversubscribe(bool _BeginOversubscription);
 ### Parameters
 
 *_BeginOversubscription*<br/>
-If `true`, an indication that an extra virtual processor should be added for the duration of the oversubscription. If `false`, an indication that the oversubscription should end and the previously added virtual processor should be removed.
+If **true**, an indication that an extra virtual processor should be added for the duration of the oversubscription. If **false**, an indication that the oversubscription should end and the previously added virtual processor should be removed.
 
 ##  <a name="schedulegroupid"></a> ScheduleGroupId
 
