@@ -179,7 +179,7 @@ When you perform a logical comparison with a SafeInt object, the comparison is s
 
 - `((uint)~0) > -1`
 
-The first statement resolves to `true`, but the second statement resolves to `false`. The bitwise negation of 0 is 0xFFFFFFFF. In the second statement, the default comparison operator compares 0xFFFFFFFF to 0xFFFFFFFF and considers them to be equal. The comparison operator for the `SafeInt` class realizes that the second parameter is negative whereas the first parameter is unsigned. Therefore, although the bit representation is identical, the `SafeInt` logical operator realizes that the unsigned integer is larger than -1.
+The first statement resolves to **true**, but the second statement resolves to `false`. The bitwise negation of 0 is 0xFFFFFFFF. In the second statement, the default comparison operator compares 0xFFFFFFFF to 0xFFFFFFFF and considers them to be equal. The comparison operator for the `SafeInt` class realizes that the second parameter is negative whereas the first parameter is unsigned. Therefore, although the bit representation is identical, the `SafeInt` logical operator realizes that the unsigned integer is larger than -1.
 
 Be careful when you use the `SafeInt` class together with the `?:` ternary operator. Consider the following line of code.
 

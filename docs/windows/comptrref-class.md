@@ -146,11 +146,11 @@ A reference to another `ComPtrRef` object, or a pointer to an anonymous type (`v
 
 ### Return Value
 
-The first operator yields `true` if object *a* is equal to object *b*; otherwise, `false`.
+The first operator yields **true** if object *a* is equal to object *b*; otherwise, **false**.
 
-The second and third operators yield `true` if object *a* is equal to `nullptr`; otherwise, `false`.
+The second and third operators yield **true** if object *a* is equal to **nullptr**; otherwise, **false**.
 
-The fourth and fifth operators yield `true` if object *a* is equal to object *b*; otherwise, `false`.
+The fourth and fifth operators yield **true** if object *a* is equal to object *b*; otherwise, **false**.
 
 ### Remarks
 
@@ -197,11 +197,11 @@ A reference to another `ComPtrRef` object, or a pointer to an anonymous object (
 
 ### Return Value
 
-The first operator yields `true` if object *a* is not equal to object *b*; otherwise, `false`.
+The first operator yields **true** if object *a* is not equal to object *b*; otherwise, **false**.
 
-The second and third operators yield `true` if object *a* is not equal to `nullptr`; otherwise, `false`.
+The second and third operators yield **true** if object *a* is not equal to **nullptr**; otherwise, **false**.
 
-The fourth and fifth operators yield `true` if object *a* is not equal to object *b*; otherwise, `false`.
+The fourth and fifth operators yield **true** if object *a* is not equal to object *b*; otherwise, **false**.
 
 ### Remarks
 
