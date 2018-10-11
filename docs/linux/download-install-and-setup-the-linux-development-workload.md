@@ -33,7 +33,7 @@ If you don't already have a Linux machine, you can create a Linux Virtual Machin
 
 Another option, on Windows 10, is to activate the Windows Subsystem for Linux. For more information, see [Windows 10 Installation Guide](/windows/wsl/install-win10).
 
-## Linux setup
+## Linux setup: Ubuntu
 
 The target Linux computer must have **openssh-server**, **g++**, **gdb**, and **gdbserver** installed, and the ssh daemon must be running. **zip** is required for automatic syncing of remote headers with your local machine for Intellisense support. If these applications are not already present, you can install them as follows:
 
@@ -43,8 +43,24 @@ The target Linux computer must have **openssh-server**, **g++**, **gdb**, and **
 
    You may be prompted for your root password due to the sudo command.  If so, enter it and continue.  Once complete, these services and tools will be installed.
 
-1. Ensure the ssh service is running on your Linux computer by running:
+2. Ensure the ssh service is running on your Linux computer by running:
 
    `sudo service ssh start`
 
    This will start the service and run it in the background, ready to accept connections.
+
+## Linux setup: Fedora
+The target machine running Fedora uses **dnf** package installer. To download **openssh-server**, **g++**, **gdb**, **gdbserver** and **zip**, and restart the ssh daemon, follow the instructions below:
+
+1. At a shell prompt on your Linux computer, run:
+
+   `sudo dnf install openssh-server g++ gdb gdbserver zip`
+
+   You may be prompted for your root password due to the sudo command.  If so, enter it and continue.  Once complete, these services and tools will be installed.
+
+2. Ensure the ssh service is running on your Linux computer by running:
+
+   `sudo systemctl start sshd`
+
+   This will start the service and run it in the background, ready to accept connections.
+
