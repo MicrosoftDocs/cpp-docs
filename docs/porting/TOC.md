@@ -15,6 +15,7 @@
 ### [Fix your dependencies on library internals](fix-your-dependencies-on-library-internals.md)
 ### [Floating-point migration issues](floating-point-migration-issues.md)
 ### [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md)
+### [Visual C++ features deprecated in Visual Studio 2019 preview](features-deprecated-in-visual-studio.md)
 ## [Introduction to Visual C++ for UNIX Users](introduction-to-visual-cpp-for-unix-users.md)
 ## [Porting from UNIX to Win32](porting-from-unix-to-win32.md)
 ## [Porting to the Universal Windows Platform (C++)](porting-to-the-universal-windows-platform-cpp.md)
