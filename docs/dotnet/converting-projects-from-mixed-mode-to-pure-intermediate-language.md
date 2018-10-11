@@ -70,26 +70,26 @@ If you are using an earlier version of the Visual C++ compiler toolset that supp
 
 3. Remove all unmanaged types:
 
-   Wherever appropriate, replace unmanaged types with references to structures from the [System](https://msdn.microsoft.com/library/system.appdomainmanager.appdomainmanager.aspx) namespace. Common managed types are listed in the following table:
+   Wherever appropriate, replace unmanaged types with references to structures from the [System](/dotnet/api/system) namespace. Common managed types are listed in the following table:
 
    |Structure|Description|
    |---------------|-----------------|
-   |[Boolean](https://msdn.microsoft.com/library/system.boolean\(v=vs.140\).aspx)|Represents a Boolean value.|
-   |[Byte](https://msdn.microsoft.com/library/system.byte\(v=vs.140\).aspx)|Represents an 8-bit unsigned integer.|
-   |[Char](https://msdn.microsoft.com/library/system.char\(v=vs.140\).aspx)|Represents a Unicode character.|
-   |[DateTime](https://msdn.microsoft.com/library/system.datetime.datetime.aspx)|Represents an instant in time, typically expressed as a date and time of day.|
-   |[Decimal](https://msdn.microsoft.com/library/system.decimal\(v=vs.140\).aspx)|Represents a decimal number.|
-   |[Double](https://msdn.microsoft.com/library/system.double\(v=vs.140\).aspx)|Represents a double-precision floating-point number.|
-   |[Guid](https://msdn.microsoft.com/library/system.guid\(v=vs.140\).aspx)|Represents a globally unique identifier (GUID).|
-   |[Int16](https://msdn.microsoft.com/library/system.int16\(v=vs.140\).aspx)|Represents a 16-bit signed integer.|
-   |[Int32](https://msdn.microsoft.com/library/system.int32\(v=vs.140\).aspx)|Represents a 32-bit signed integer.|
-   |[Int64](https://msdn.microsoft.com/library/system.int64\(v=vs.140\).aspx)|Represents a 64-bit signed integer.|
-   |[IntPtr](https://msdn.microsoft.com/library/system.intptr\(v=vs.140\).aspx)|A platform-specific type that is used to represent a pointer or a handle.|
-   |[SByte](https://msdn.microsoft.com/library/system.byte.aspx)|Represents an 8-bit signed integer.|
-   |[Single](https://msdn.microsoft.com/library/system.single.aspx)|Represents a single-precision floating-point number.|
-   |[TimeSpan](https://msdn.microsoft.com/library/system.timespan\(v=vs.140\).aspx)|Represents a time interval.|
-   |[UInt16](https://msdn.microsoft.com/library/system.uint16\(v=vs.140\).aspx)|Represents a 16-bit unsigned integer.|
-   |[UInt32](https://msdn.microsoft.com/library/system.uint32\(v=vs.140\).aspx)|Represents a 32-bit unsigned integer.|
-   |[UInt64](https://msdn.microsoft.com/library/system.uint64\(v=vs.140\).aspx)|Represents a 64-bit unsigned integer.|
-   |[UIntPtr](https://msdn.microsoft.com/library/system.uintptr\(v=vs.140\).aspx)|A platform-specific type that is used to represent a pointer or a handle.|
-   |[Void](https://msdn.microsoft.com/library/system.void\(v=vs.140\).aspx)|Indicates a method that does not return a value; that is, the method has the void return type.|
+   |[Boolean](/dotnet/api/system.boolean)|Represents a Boolean value.|
+   |[Byte](/dotnet/api/system.byte)|Represents an 8-bit unsigned integer.|
+   |[Char](/dotnet/api/system.char)|Represents a Unicode character.|
+   |[DateTime](/dotnet/api/system.datetime.datetime.aspx)|Represents an instant in time, typically expressed as a date and time of day.|
+   |[Decimal](/dotnet/api/system.decimal)|Represents a decimal number.|
+   |[Double](/dotnet/api/system.double)|Represents a double-precision floating-point number.|
+   |[Guid](/dotnet/api/system.guid)|Represents a globally unique identifier (GUID).|
+   |[Int16](/dotnet/api/system.int16)|Represents a 16-bit signed integer.|
+   |[Int32](/dotnet/api/system.int32)|Represents a 32-bit signed integer.|
+   |[Int64](/dotnet/api/system.int64)|Represents a 64-bit signed integer.|
+   |[IntPtr](/dotnet/api/system.intptr)|A platform-specific type that is used to represent a pointer or a handle.|
+   |[SByte](/dotnet/api/system.byte.aspx)|Represents an 8-bit signed integer.|
+   |[Single](/dotnet/api/system.single.aspx)|Represents a single-precision floating-point number.|
+   |[TimeSpan](/dotnet/api/system.timespan)|Represents a time interval.|
+   |[UInt16](/dotnet/api/system.uint16)|Represents a 16-bit unsigned integer.|
+   |[UInt32](/dotnet/api/system.uint32)|Represents a 32-bit unsigned integer.|
+   |[UInt64](/dotnet/api/system.uint64)|Represents a 64-bit unsigned integer.|
+   |[UIntPtr](/dotnet/api/system.uintptr)|A platform-specific type that is used to represent a pointer or a handle.|
+   |[Void](/dotnet/api/system.void)|Indicates a method that does not return a value; that is, the method has the void return type.|

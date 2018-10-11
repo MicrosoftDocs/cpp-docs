@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandPropertiesImpl Class
 
-Provides an implementation of the [ICommandProperties](/previous-versions/windows/desktop/ms723044\(v=vs.85\)) interface.  
+Provides an implementation of the [ICommandProperties](/previous-versions/windows/desktop/ms723044) interface.  
   
 ## Syntax
 
@@ -64,7 +64,7 @@ STDMETHOD(GetProperties)(const ULONG cPropertyIDSets, 
   
 #### Parameters  
 
-See [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723119\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+See [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723119) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
 
@@ -83,7 +83,7 @@ STDMETHOD(SetProperties)(ULONG cPropertySets, 
   
 #### Parameters  
 
-See [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+See [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497) in the *OLE DB Programmer's Reference*.  
   
 ## See Also  
 

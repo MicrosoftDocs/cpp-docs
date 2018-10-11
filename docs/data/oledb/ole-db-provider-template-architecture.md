@@ -37,7 +37,7 @@ The OLE DB provider templates give you prepackaged implementations for all the r
   
 Note that the OLE DB provider templates do not implement the row and storage objects.  
   
-The following table lists mandatory and optional interfaces for the objects listed above, according to the [OLE DB 2.6 SDK Documentation](/previous-versions/windows/desktop/ms722784\(v=vs.85\)).  
+The following table lists mandatory and optional interfaces for the objects listed above, according to the [OLE DB 2.6 SDK Documentation](/previous-versions/windows/desktop/ms722784).  
   
 |Component|Interface|Comment|  
 |---------------|---------------|-------------|  
@@ -56,4 +56,4 @@ For more information, see the following topics:
 ## See Also  
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Interfaces](/previous-versions/windows/desktop/ms709709\(v=vs.85\))
+[OLE DB Interfaces](/previous-versions/windows/desktop/ms709709)

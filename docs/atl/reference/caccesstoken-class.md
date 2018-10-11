@@ -614,7 +614,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-Calls the [OpenProcessToken](https://msdn.microsoft.com/library/aa379295\(vs.85\).aspx) Win32 function.
+Calls the [OpenProcessToken](https://msdn.microsoft.com/library/aa379295) Win32 function.
 
 ##  <a name="getprofile"></a>  CAccessToken::GetProfile
 

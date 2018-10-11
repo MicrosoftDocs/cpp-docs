@@ -26,7 +26,7 @@ ms.workload: ["cplusplus"]
 
 - [Create objects dynamically](../mfc/dynamic-object-creation.md)
 
-- [Dump the object's data for diagnostic purposes](/previous-versions/visualstudio/visual-studio-2010/sc15kz85\(v=vs.100\))
+- [Dump the object's data for diagnostic purposes](/previous-versions/visualstudio/visual-studio-2010/sc15kz85)
 
 - Validate the object's internal state (see [MFC ASSERT_VALID and CObject::AssertValid](reference/diagnostic-services.md#assert_valid))
 

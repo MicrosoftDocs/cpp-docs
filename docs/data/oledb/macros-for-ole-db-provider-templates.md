@@ -112,11 +112,11 @@ BEGIN_PROPSET_MAP(Class)
 *Class*<br/>
 [in] The class in which this property set is specified. A property set can be specified in the following OLE DB objects:  
   
-- [Data Source Objects](/previous-versions/windows/desktop/ms721278\(v=vs.85\))  
+- [Data Source Objects](/previous-versions/windows/desktop/ms721278)  
   
-- [Session Objects](/previous-versions/windows/desktop/ms711572\(v=vs.85\))  
+- [Session Objects](/previous-versions/windows/desktop/ms711572)  
   
-- [Commands](/previous-versions/windows/desktop/ms724608\(v=vs.85\))  
+- [Commands](/previous-versions/windows/desktop/ms724608)  
   
 #### Example  
 
@@ -192,11 +192,11 @@ PROPERTY_INFO_ENTRY(dwPropID)
 #### Parameters  
 
 *dwPropID*<br/>
-[in] A [DBPROPID](/previous-versions/windows/desktop/ms723882\(v=vs.85\)) value that can be used in conjunction with the property set GUID to identify a property.  
+[in] A [DBPROPID](/previous-versions/windows/desktop/ms723882) value that can be used in conjunction with the property set GUID to identify a property.  
   
 #### Remarks  
 
-This macro sets the property value of type `DWORD` to a default value defined in ATLDB.H. To set the property to a value of your choosing, use [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md). To set the `VARTYPE` and [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342\(v=vs.85\)) for the property at the same time, use [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md).  
+This macro sets the property value of type `DWORD` to a default value defined in ATLDB.H. To set the property to a value of your choosing, use [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md). To set the `VARTYPE` and [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342) for the property at the same time, use [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md).  
   
 #### Example  
 
@@ -215,13 +215,13 @@ PROPERTY_INFO_ENTRY_EX(dwPropID, vt, dwFlags, value, options)
 #### Parameters  
 
 *dwPropID*<br/>
-[in] A [DBPROPID](/previous-versions/windows/desktop/ms723882\(v=vs.85\)) value that can be used in conjunction with the property set GUID to identify a property.  
+[in] A [DBPROPID](/previous-versions/windows/desktop/ms723882) value that can be used in conjunction with the property set GUID to identify a property.  
   
 *vt*<br/>
 [in] The `VARTYPE` of this property entry. (Defined in wtypes.h)  
   
 *dwFlags*<br/>
-[in] A [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342\(v=vs.85\)) value describing this property entry.  
+[in] A [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342) value describing this property entry.  
   
 *value*<br/>
 [in] The property value of type `DWORD`.  
@@ -250,7 +250,7 @@ PROPERTY_INFO_ENTRY_VALUE(dwPropID, value)
 #### Parameters  
 
 *dwPropID*<br/>
-[in] A [DBPROPID](/previous-versions/windows/desktop/ms723882\(v=vs.85\)) value that can be used in conjunction with the property set GUID to identify a property.  
+[in] A [DBPROPID](/previous-versions/windows/desktop/ms723882) value that can be used in conjunction with the property set GUID to identify a property.  
   
 *value*<br/>
 [in] The property value of type `DWORD`.  
@@ -338,7 +338,7 @@ PROVIDER_COLUMN_ENTRY_FIXED(name, ordinal, dbtype, member)
 [in] The column number. Unless the column is a Bookmark column, the column number must not be 0.  
   
 *dbtype*<br/>
-[in] The data type in [DBTYPE](/previous-versions/windows/desktop/ms711251\(v=vs.85\)).  
+[in] The data type in [DBTYPE](/previous-versions/windows/desktop/ms711251).  
   
 *member*<br/>
 [in] The member variable in `dataClass` that stores the data.  
@@ -370,22 +370,22 @@ PROVIDER_COLUMN_ENTRY_GN (name, ordinal, flags, colSize, dbtype, precision, scal
 [in] The column number. Unless the column is a Bookmark column, the column number must not be 0.  
   
 *flags*<br/>
-[in] Specifies how data is returned. See the `dwFlags` description in [DBBINDING Structures](/previous-versions/windows/desktop/ms716845\(v=vs.85\)).  
+[in] Specifies how data is returned. See the `dwFlags` description in [DBBINDING Structures](/previous-versions/windows/desktop/ms716845).  
   
 *colSize*<br/>
 [in] The column size.  
   
 *dbtype*<br/>
-[in] Indicates the data type of the value. See the `wType` description in [DBBINDING Structures](/previous-versions/windows/desktop/ms716845\(v=vs.85\)).  
+[in] Indicates the data type of the value. See the `wType` description in [DBBINDING Structures](/previous-versions/windows/desktop/ms716845).  
   
 *precision*<br/>
-[in] Indicates the precision to use when getting data if *dbType* is DBTYPE_NUMERIC or DBTYPE_DECIMAL. See the `bPrecision` description in [DBBINDING Structures](/previous-versions/windows/desktop/ms716845\(v=vs.85\)).  
+[in] Indicates the precision to use when getting data if *dbType* is DBTYPE_NUMERIC or DBTYPE_DECIMAL. See the `bPrecision` description in [DBBINDING Structures](/previous-versions/windows/desktop/ms716845).  
   
 *scale*<br/>
-[in] Indicates the scale to use when getting data if dbType is DBTYPE_NUMERIC or DBTYPE_DECIMAL. See the `bScale` description in [DBBINDING Structures](/previous-versions/windows/desktop/ms716845\(v=vs.85\)).  
+[in] Indicates the scale to use when getting data if dbType is DBTYPE_NUMERIC or DBTYPE_DECIMAL. See the `bScale` description in [DBBINDING Structures](/previous-versions/windows/desktop/ms716845).  
   
 *guid*<br/>
-A schema rowset GUID. See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) in the *OLE DB Programmer's Reference* for a list of schema rowsets and their GUIDs.  
+A schema rowset GUID. See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686) in the *OLE DB Programmer's Reference* for a list of schema rowsets and their GUIDs.  
   
 #### Remarks  
 
@@ -446,7 +446,7 @@ PROVIDER_COLUMN_ENTRY_STR(name, ordinal, member)
   
 #### Remarks  
 
-Use this macro when the column data is assumed to be [DBTYPE_STR](/previous-versions/windows/desktop/ms711251\(v=vs.85\)).  
+Use this macro when the column data is assumed to be [DBTYPE_STR](/previous-versions/windows/desktop/ms711251).  
   
 #### Example  
 
@@ -471,7 +471,7 @@ PROVIDER_COLUMN_ENTRY_TYPE_LENGTH(name, ordinal, dbtype, size, member)
 [in] The column number. Unless the column is a Bookmark column, the column number must not be 0.  
   
 *dbtype*<br/>
-[in] The data type in [DBTYPE](/previous-versions/windows/desktop/ms711251\(v=vs.85\)).  
+[in] The data type in [DBTYPE](/previous-versions/windows/desktop/ms711251).  
   
 *size*<br/>
 [in] The column size in bytes.  
@@ -506,7 +506,7 @@ PROVIDER_COLUMN_ENTRY_WSTR(name, ordinal, member)
   
 #### Remarks  
 
-Use this macro when the column data is a null terminated Unicode character string, [DBTYPE_WSTR](/previous-versions/windows/desktop/ms711251\(v=vs.85\)).  
+Use this macro when the column data is a null terminated Unicode character string, [DBTYPE_WSTR](/previous-versions/windows/desktop/ms711251).  
 
 ### <a name="begin_schema_map"></a> BEGIN_SCHEMA_MAP
 
@@ -525,7 +525,7 @@ The class that contains the MAP. Typically this will be the session class.
   
 #### Remarks  
 
-See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) in the Windows SDK for more information about schema rowsets.  
+See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686) in the Windows SDK for more information about schema rowsets.  
 
 ### <a name="end_schema_map"></a> END_SCHEMA_MAP
 
@@ -555,7 +555,7 @@ SCHEMA_ENTRY(guid,
 #### Parameters  
 
 *guid*<br/>
-A schema rowset GUID. See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) in the *OLE DB Programmer's Reference* for a list of schema rowsets and their GUIDs.  
+A schema rowset GUID. See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686) in the *OLE DB Programmer's Reference* for a list of schema rowsets and their GUIDs.  
   
 *rowsetClass*<br/>
 The class that will be created to represent the schema rowset.  
@@ -570,7 +570,7 @@ HRESULT Execute (LONG* pcRowsAffected,
     const VARIANT* rgRestrictions);  
 ```  
   
-This `Execute` function populates the rowset's data. The ATL Project Wizard creates, as described in [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) in the *OLE DB Programmer's Reference*, three initial schema rowsets in the project for each of the three mandatory OLE DB schemas:  
+This `Execute` function populates the rowset's data. The ATL Project Wizard creates, as described in [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686) in the *OLE DB Programmer's Reference*, three initial schema rowsets in the project for each of the three mandatory OLE DB schemas:  
   
 - DBSCHEMA_TABLES  
   

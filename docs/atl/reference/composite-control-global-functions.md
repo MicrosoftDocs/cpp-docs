@@ -58,7 +58,7 @@ ATLAPI_(int) AtlAxDialogBox(
 [in] Identifies an instance of the module whose executable file contains the dialog box template.
 
 *lpTemplateName*<br/>
-[in] Identifies the dialog box template. This parameter is either the pointer to a null-terminated character string that specifies the name of the dialog box template or an integer value that specifies the resource identifier of the dialog box template. If the parameter specifies a resource identifier, its high-order word must be zero and its low-order word must contain the identifier. You can use the [MAKEINTRESOURCE](https://msdn.microsoft.com/library/windows/desktop/ms648029) macro to create this value.
+[in] Identifies the dialog box template. This parameter is either the pointer to a null-terminated character string that specifies the name of the dialog box template or an integer value that specifies the resource identifier of the dialog box template. If the parameter specifies a resource identifier, its high-order word must be zero and its low-order word must contain the identifier. You can use the [MAKEINTRESOURCE](/windows/desktop/api/winuser/nf-winuser-makeintresourcea) macro to create this value.
 
 *hWndParent*<br/>
 [in] Identifies the window that owns the dialog box.
@@ -105,7 +105,7 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 [in] Identifies an instance of the module whose executable file contains the dialog box template.
 
 *lpTemplateName*<br/>
-[in] Identifies the dialog box template. This parameter is either the pointer to a null-terminated character string that specifies the name of the dialog box template or an integer value that specifies the resource identifier of the dialog box template. If the parameter specifies a resource identifier, its high-order word must be zero and its low-order word must contain the identifier. You can use the [MAKEINTRESOURCE](https://msdn.microsoft.com/library/windows/desktop/ms648029) macro to create this value.
+[in] Identifies the dialog box template. This parameter is either the pointer to a null-terminated character string that specifies the name of the dialog box template or an integer value that specifies the resource identifier of the dialog box template. If the parameter specifies a resource identifier, its high-order word must be zero and its low-order word must contain the identifier. You can use the [MAKEINTRESOURCE](/windows/desktop/api/winuser/nf-winuser-makeintresourcea) macro to create this value.
 
 *hWndParent*<br/>
 [in] Identifies the window that owns the dialog box.

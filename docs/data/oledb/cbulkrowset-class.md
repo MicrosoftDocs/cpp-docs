@@ -57,7 +57,7 @@ The following example demonstrates use of the `CBulkRowset` class.
 
 ## <a name="addrefrows"></a> CBulkRowset::AddRefRows
 
-Calls [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) to increment the reference count for all rows currently retrieved from the bulk rowset.  
+Calls [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619) to increment the reference count for all rows currently retrieved from the bulk rowset.  
   
 ### Syntax  
   
@@ -156,7 +156,7 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
   
 ### Return Value  
 
-See [IRowset::GetData](/previous-versions/windows/desktop/ms716988\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
+See [IRowset::GetData](/previous-versions/windows/desktop/ms716988) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="movetoratio"></a> CBulkRowset::MoveToRatio
 
@@ -187,11 +187,11 @@ A standard HRESULT.
   
 `(nNumerator *  RowsetSize ) / nDenominator`  
   
-Where `RowsetSize` is the size of the rowset, measured in rows. The accuracy of this formula depends on the specific provider. For details, see [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602\(v=vs.85\)) in the *OLE DB Programmer's Reference*.   
+Where `RowsetSize` is the size of the rowset, measured in rows. The accuracy of this formula depends on the specific provider. For details, see [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602) in the *OLE DB Programmer's Reference*.   
 
 ## <a name="releaserows"></a> CBulkRowset::ReleaseRows
 
-Calls [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771\(v=vs.85\)) to decrement the reference count for all rows currently retrieved from the bulk rowset.  
+Calls [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771) to decrement the reference count for all rows currently retrieved from the bulk rowset.  
   
 ### Syntax  
   

@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBCreateCommandImpl Class
 
-Provides an implementation of the [IDBCreateCommand](/previous-versions/windows/desktop/ms711625\(v=vs.85\)) interface.  
+Provides an implementation of the [IDBCreateCommand](/previous-versions/windows/desktop/ms711625) interface.  
   
 ## Syntax
 
@@ -62,7 +62,7 @@ STDMETHOD(CreateCommand)(IUnknown * pUnkOuter, 
   
 #### Parameters  
 
-See [IDBCreateCommand::CreateCommand](/previous-versions/windows/desktop/ms709772\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
+See [IDBCreateCommand::CreateCommand](/previous-versions/windows/desktop/ms709772) in the *OLE DB Programmer's Reference*.  
   
 Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IDBCreateCommand::CreateCommand`:  
   
