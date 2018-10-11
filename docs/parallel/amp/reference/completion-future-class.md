@@ -184,7 +184,7 @@ bool valid() const;
 
 ### Return Value
 
-`true` if the object is associated with an asynchronous operation; otherwise, `false`.
+**true** if the object is associated with an asynchronous operation; otherwise, **false**.
 
 ## <a name="wait"></a> wait
 

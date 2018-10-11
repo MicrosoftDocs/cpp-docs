@@ -153,11 +153,11 @@ The item to find.
 *index*<br/>
 The zero-based index of the item if parameter `value` is found; otherwise, 0.
 
-The `index` parameter is 0 if either the item is the first element of the VectorView or the item was not found. If the return value is `true`, the item was found and it is the first element; otherwise, the item was not found.
+The *index* parameter is 0 if either the item is the first element of the `VectorView` or the item was not found. If the return value is **true**, the item was found and it is the first element; otherwise, the item was not found.
 
 ### Return Value
 
-`true` if the specified item is found; otherwise, `false`.
+**true** if the specified item is found; otherwise, **false**.
 
 ## <a name="size"></a>  VectorView::Size Method
 

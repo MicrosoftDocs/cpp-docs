@@ -24,15 +24,15 @@ operator bool() const;
 
 ## Return Value
 
-`true` if the wrapped object is valid; `false` otherwise.
+**true** if the wrapped object is valid; **false** otherwise.
 
 ## Remarks
 
-This operator actually converts to `_detail_class::_safe_bool` which is safer than `bool` because it cannot be converted to an integral type.
+This operator actually converts to `_detail_class::_safe_bool` which is safer than **bool** because it cannot be converted to an integral type.
 
 ## Example
 
-```
+```cpp
 // msl_auto_gcroot_operator_bool.cpp
 // compile with: /clr
 #include <msclr\auto_gcroot.h>

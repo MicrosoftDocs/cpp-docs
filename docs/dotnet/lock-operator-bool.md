@@ -24,17 +24,17 @@ operator bool();
 
 ## Return Value
 
-`true` if a lock is held, `false` otherwise.
+**true** if a lock is held, **false** otherwise.
 
 ## Remarks
 
-This operator actually converts to `_detail_class::_safe_bool` which is safer than `bool` because it cannot be converted to an integral type.
+This operator actually converts to `_detail_class::_safe_bool` which is safer than **bool** because it cannot be converted to an integral type.
 
 ## Example
 
 This example uses a single instance of a class across multiple threads.  The class uses a lock on itself to ensure that accesses to its internal data are consistent for each thread.  The main application thread uses a lock on the same instance of the class to periodically check to see if any worker threads still exist, and waits to exit until all worker threads have completed their tasks.
 
-```
+```cpp
 // msl_lock_op_bool.cpp
 // compile with: /clr
 #include <msclr/lock.h>

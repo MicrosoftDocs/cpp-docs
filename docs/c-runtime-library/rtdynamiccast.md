@@ -46,7 +46,7 @@ Static type of object pointed to by the `inptr` parameter.
 Intended result of cast.
 
 *isReference*<br/>
-`true` if input is a reference; `false` if input is a pointer.
+**true** if input is a reference; **false** if input is a pointer.
 
 ## Return Value
 

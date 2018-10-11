@@ -104,7 +104,7 @@ The key used to locate the element. The type of `key` is typename *K*.
 
 ### Return Value
 
-`true` if the key is found; otherwise, `false`.
+**true** if the key is found; otherwise, **false**.
 
 ## <a name="lookup"></a>  UnorderedMapView::Lookup Method
 

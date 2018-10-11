@@ -19,7 +19,7 @@ The following table lists the built-in Boolean and character types, and their st
 
 |Namespace|C++/CX name|Definition|Standard C++ name|Range of Values|
 |---------------|-----------------------------------------------------------------------|----------------|-------------------------|---------------------|
-|Platform|Boolean|An 8-bit Boolean value.|bool|`true` (nonzero) and `false` (zero)|
+|Platform|Boolean|An 8-bit Boolean value.|bool|**true** (nonzero) and **false** (zero)|
 |default|char16|A 16-bit non-numeric value that represents a Unicode (UTF-16) code point.|wchar_t<br /><br /> -or-<br /><br /> L'c'|(Specified by the Unicode standard)|
 
 ## Numeric types
