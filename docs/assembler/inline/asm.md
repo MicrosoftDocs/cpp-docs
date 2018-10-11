@@ -47,7 +47,7 @@ did not cause native code to be generated when compiled with **/clr**; the compi
 
 `__asm int 3` now results in native code generation for the function. If you want a function to cause a break point in your code and if you want that function compiled to MSIL, use [__debugbreak](../../intrinsics/debugbreak.md).
 
-For compatibility with previous versions, **_asm** is a synonym for **__asm** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
+For compatibility with previous versions, **_asm** is a synonym for **__asm** unless compiler option [/Za \(Disable language extensions)](../../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 ## Example
 
