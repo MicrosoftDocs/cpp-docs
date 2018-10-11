@@ -22,7 +22,7 @@ When you install the Linux C++ workload for Visual Studio, CMake support for Lin
 This topic assumes you have basic familiarity with CMake support in Visual Studio. For more information, see [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md). For more information about CMake itself, see [Build, Test and Package Your Software With CMake](https://cmake.org/).
 
 > [!NOTE]  
-> The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant that supports the [CMake Targets View](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) pane in Visual Studio, download the latest prebuilt binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases). If your package manager provides an older version than CMake 3.8, you can work around it by [building CMake from source](#build-a-supported-cmake-release-from-source), or you prefer to use standard CMake, you can download it from the official [CMake download page](https://cmake.org/download/). 
+> The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant download the latest prebuilt binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases). 
 
 ## Open a folder
 
@@ -110,49 +110,10 @@ There are also some optional settings you can use for more control:
 
 These options allow you to run commands on the remote box before and after building, and before CMake generation. They can be any valid command on the remote box. Output is piped back to Visual Studio.
 
-## Build a supported CMake release from source
+## Download prebuilt CMake binaries
 
-The minimum version of CMake required on your Linux machine is 3.8, and it must also support server mode. To verify this run this command:
+Your Linux distro may have an older version of CMake. The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant download the latest prebuilt binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases). 
 
-```cmd
-cmake --version
-```
-
-To verify that server mode is enabled, run:
-
-```cmd
-cmake -E capabilities
-```
-
-In the output, look for **"serverMode":true**. Note that even when you compile CMake from source as described below you should check the capabilities when done. Your Linux system may have limitations that prevent server mode from being enabled.
-
-To get started building CMake from source in the shell for your Linux system, make sure your package manager is up to date, and that you have git and cmake available.
-
-First, clone the CMake sources from the [Microsoft CMake repo](https://github.com/Microsoft/CMake) where we maintain a fork for Visual Studio's CMake support:
-
-```cmd
-sudo apt-get update
-sudo apt-get install -y git cmake
-git clone https://github.com/Microsoft/CMake.git
-cd CMake
-```
-
-Next, to build and install the current release of CMake to /usr/local/bin, run these commands:
-
-```cmd
-mkdir out
-cd out
-cmake ../
-make
-sudo make install
-```
-
-Next, run this command to verify the version is >= 3.8 and that server mode is enabled:
-
-```cmd
-/usr/local/bin/cmake –version
-cmake -E capabilities
-```
 
 ## See Also
 
