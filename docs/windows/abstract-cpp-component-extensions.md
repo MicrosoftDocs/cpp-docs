@@ -24,12 +24,9 @@ The **abstract** keyword declares either:
 
 ### Syntax
 
-```cpp
-      class-declaration
-      class-identifier
-      abstract {}
-      virtual return-typemember-function-identifier() abstract ;
-```
+*class-declaration* *class-identifier* **abstract {}**
+
+**virtual** *return-type* *member-function-identifier* **() abstract ;**
 
 ### Remarks
 
