@@ -175,7 +175,7 @@ bool empty() const;
 
 ### Return Value
 
-`true` if the priority queue was empty at the moment the function was called, `false` otherwise.
+**true** if the priority queue was empty at the moment the function was called, **false** otherwise.
 
 ##  <a name="get_allocator"></a> get_allocator
 
@@ -267,7 +267,7 @@ A reference to a variable that will be populated with the highest priority eleme
 
 ### Return Value
 
-`true` if a value was popped, `false` otherwise.
+**true** if a value was popped, **false** otherwise.
 
 ## See Also
 

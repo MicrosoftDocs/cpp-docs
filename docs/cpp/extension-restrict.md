@@ -1,10 +1,10 @@
 ---
 title: "__restrict | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/10/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
-f1_keywords: ["__restrict_cpp"]
+f1_keywords: ["__restrict_cpp", "__restrict", "_restrict"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__restrict keyword [C++]"]
 ms.assetid: 2d151b4d-f930-49df-bd16-d8757ec7fa83
@@ -23,6 +23,8 @@ Like the **__declspec ( [restrict](../cpp/restrict.md) )** modifier, the **__res
 - When **__restrict** is used, the compiler will not propagate the no-alias property of a variable. That is, if you assign a **__restrict** variable to a non-**__restrict** variable, the compiler will still allow the non-__restrict variable to be aliased. This is different from the behavior of the **restrict** keyword from the C99 specification.
 
 Generally, if you affect the behavior of an entire function, it is better to use `__declspec ( restrict )` than the keyword.
+
+For compatibility with previous versions, **_restrict** is a synonym for **__restrict** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 In Visual Studio 2015 and later, **__restrict** can be used on C++ references.
 

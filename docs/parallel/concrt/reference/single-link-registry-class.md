@@ -107,7 +107,7 @@ A pointer to a block that is to be searched for in the `single_link_registry` ob
 
 ### Return Value
 
-`true` if the link was found, `false` otherwise.
+**true** if the link was found, **false** otherwise.
 
 ##  <a name="count"></a> count
 
@@ -136,7 +136,7 @@ A pointer to a block to be removed, if found.
 
 ### Return Value
 
-`true` if the link was found and removed, `false` otherwise.
+**true** if the link was found and removed, **false** otherwise.
 
 ##  <a name="ctor"></a> single_link_registry
 

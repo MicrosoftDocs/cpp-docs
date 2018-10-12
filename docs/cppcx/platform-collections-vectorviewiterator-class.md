@@ -146,7 +146,7 @@ Another VectorViewIterator.
 
 ### Return Value
 
-`true` if the current VectorViewIterator is equal to `other`; otherwise, `false`.
+**true** if the current `VectorViewIterator` is equal to *other*; otherwise, **false**.
 
 ## <a name="operator-greater-than"></a>  VectorViewIterator::operator&gt; Operator
 
@@ -166,11 +166,11 @@ Another VectorViewIterator.
 
 ### Return Value
 
-`true` if the current VectorViewIterator is greater than `other`; otherwise, `false`.
+**true** if the current VectorViewIterator is greater than *other*; otherwise, **false**.
 
 ## <a name="operator-greater-than-or-equals"></a>  VectorViewIterator::operator&gt;= Operator
 
-Indicates whether the current VectorViewIterator is greater than or equal to the specified VectorViewIterator.
+Indicates whether the current `VectorViewIterator` is greater than or equal to the specified `VectorViewIterator`.
 
 ### Syntax
 
@@ -186,7 +186,7 @@ Another VectorViewIterator.
 
 ### Return Value
 
-`true` if the current VectorViewIterator is greater than or equal to `other`; otherwise, `false`.
+**true** if the current `VectorViewIterator` is greater than or equal to *other*; otherwise, **false**.
 
 ## <a name="operator-increment"></a>  VectorViewIterator::operator++ Operator
 
@@ -227,7 +227,7 @@ Another VectorViewIterator.
 
 ### Return Value
 
-`true` if the current VectorViewIterator is not equal to `other`; otherwise, `false`.
+**true** if the current `VectorViewIterator` is not equal to *other*; otherwise, **false**.
 
 ## <a name="operator-less-than"></a>  VectorViewIterator::operator&lt; Operator
 
@@ -242,15 +242,15 @@ bool operator<(const VectorViewIterator& other) const;
 ### Parameters
 
 *other*<br/>
-Another VectorIterator.
+Another `VectorIterator`.
 
 ### Return Value
 
-`true` if the current VectorIterator is less than `other`; otherwise, `false`.
+**true** if the current `VectorIterator` is less than *other*; otherwise, **false**.
 
 ## <a name="operator-less-than-or-equals"></a>  VectorViewIterator::operator&lt;= Operator
 
-Indicates whether the current VectorIterator is less than or equal to a specified VectorIterator.
+Indicates whether the current `VectorIterator` is less than or equal to a specified `VectorIterator`.
 
 ### Syntax
 
@@ -262,11 +262,11 @@ bool operator<=(const VectorViewIterator& other) const;
 ### Parameters
 
 *other*<br/>
-Another VectorIterator.
+Another `VectorIterator`.
 
 ### Return Value
 
-`true` if the current VectorIterator is less than or equal to `other`; otherwise, `false`.
+**true** if the current `VectorIterator` is less than or equal to *other*; otherwise, **false**.
 
 ## <a name="operator-minus"></a>  VectorViewIterator::operator- Operator
 

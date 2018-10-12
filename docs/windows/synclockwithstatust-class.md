@@ -105,7 +105,7 @@ Indicates whether the current `SyncLockWithStatusT` object owns a resource; that
 
 ### Return Value
 
-`true` if the `SyncLockWithStatusT` object is locked; otherwise, `false`.
+**true** if the `SyncLockWithStatusT` object is locked; otherwise, **false**.
 
 ## <a name="status"></a>SyncLockWithStatusT::status_
 

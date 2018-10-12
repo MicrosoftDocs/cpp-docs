@@ -167,7 +167,7 @@ When possible, do not perform blocking operations before you call the [concurren
 
 When a task performs a cooperative blocking operation, the runtime can perform other work while the first task waits for data. The runtime reschedules the waiting task when it unblocks. The runtime typically reschedules tasks that were more recently unblocked before it reschedules tasks that were less recently unblocked. Therefore, the runtime could schedule unnecessary work during the blocking operation, which leads to decreased performance. Accordingly, when you perform a blocking operation before you cancel parallel work, the blocking operation can delay the call to `cancel`. This causes other tasks to perform unnecessary work.
 
-Consider the following example that defines the `parallel_find_answer` function, which searches for an element of the provided array that satisfies the provided predicate function. When the predicate function returns `true`, the parallel work function creates an `Answer` object and cancels the overall task.
+Consider the following example that defines the `parallel_find_answer` function, which searches for an element of the provided array that satisfies the provided predicate function. When the predicate function returns **true**, the parallel work function creates an `Answer` object and cancels the overall task.
 
 [!code-cpp[concrt-blocking-cancel#1](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_13.cpp)]
 

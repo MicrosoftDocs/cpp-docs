@@ -36,7 +36,7 @@ Name                                                                            
 Name                                                         | Description
 ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------
 [Module::ReleaseNotifier::Invoke](#releasenotifier-invoke)   | When implemented, calls an event handler when the last object in a module is released.
-[Module::ReleaseNotifier::Release](#releasenotifier-release) | Deletes the current `Module::ReleaseNotifier` object if the object was constructed with a parameter of `true`.
+[Module::ReleaseNotifier::Release](#releasenotifier-release) | Deletes the current `Module::ReleaseNotifier` object if the object was constructed with a parameter of **true**.
 
 ## Inheritance Hierarchy
 
@@ -66,7 +66,7 @@ virtual void Invoke() = 0;
 
 ## <a name="releasenotifier-release"></a>Module::ReleaseNotifier::Release
 
-Deletes the current `Module::ReleaseNotifier` object if the object was constructed with a parameter of `true`.
+Deletes the current `Module::ReleaseNotifier` object if the object was constructed with a parameter of **true**.
 
 ```cpp
 void Release() throw();

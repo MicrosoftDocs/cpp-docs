@@ -106,7 +106,7 @@ For example, set the `PreferredToolArchitecture` property to `x64` to use the 64
 
 ### UseEnv Property
 
-By default, the platform-specific settings for the current project override the PATH, INCLUDE, LIB, LIBPATH, CONFIGURATION, and PLATFORM environment variables. Set the `UseEnv` property to `true` to guarantee that the environment variables are not overridden.
+By default, the platform-specific settings for the current project override the PATH, INCLUDE, LIB, LIBPATH, CONFIGURATION, and PLATFORM environment variables. Set the `UseEnv` property to **true** to guarantee that the environment variables are not overridden.
 
 `msbuild myProject.vcxproj /p:UseEnv=true`
 

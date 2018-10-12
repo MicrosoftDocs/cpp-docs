@@ -24,17 +24,17 @@ bool operator!();
 
 ## Return Value
 
-`true` if the owned COM object is invalid; `false` otherwise.
+**true** if the owned COM object is invalid; **false** otherwise.
 
 ## Remarks
 
-The owned COM object is valid if it is not `nullptr`.
+The owned COM object is valid if it is not **nullptr**.
 
 ## Example
 
 This example implements a CLR class that uses a `com::ptr` to wrap its private member `IXMLDOMDocument` object.  The `CreateInstance` member function uses `operator!` to determine if a document object is already owned, and only creates a new instance if the object is invalid.
 
-```
+```cpp
 // comptr_op_not.cpp
 // compile with: /clr /link msxml2.lib
 #include <msxml2.h>

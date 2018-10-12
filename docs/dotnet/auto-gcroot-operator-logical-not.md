@@ -24,11 +24,11 @@ bool operator!() const;
 
 ## Return Value
 
-`true` if the wrapped object is invalid; `false` otherwise.
+**true** if the wrapped object is invalid; **false** otherwise.
 
 ## Example
 
-```
+```cpp
 // msl_auto_gcroot_operator_not.cpp
 // compile with: /clr
 #include <msclr\auto_gcroot.h>

@@ -1,10 +1,10 @@
 ---
 title: "try-finally Statement | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/09/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
-f1_keywords: ["__try", "__leave_cpp", "__leave", "__finally_cpp", "__try_cpp", "__finally"]
+f1_keywords: ["__try", "_try", "__leave_cpp", "__leave", "__finally_cpp", "__try_cpp", "__finally", "_finally"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__try keyword [C++]", "__finally keyword [C++]", "__leave keyword [C++]", "try-catch keyword [C++], try-finally keyword", "try-finally keyword [C++]", "__finally keyword [C++], try-finally statement syntax", "__leave keyword [C++], try-finally statement", "structured exception handling [C++], try-finally"]
 ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
@@ -60,6 +60,8 @@ Order of Termination-Handler Execution
 
 > [!NOTE]
 >  The behavior of try-finally is different from some other languages that support the use of **finally**, such as C#.  A single **__try** may have either, but not both, of **__finally** and **__except**.  If both are to be used together, an outer try-except statement must enclose the inner try-finally statement.  The rules specifying when each block executes are also different.
+
+For compatibility with previous versions, **_try**, **_finally**, and **_leave** are synonyms for **__try**, **__finally**, and **__leave** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 ## The __leave Keyword
 

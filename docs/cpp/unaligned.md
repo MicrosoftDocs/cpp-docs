@@ -1,10 +1,10 @@
 ---
 title: "__unaligned | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/09/2018"
+ms.date: "10/10/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
-f1_keywords: ["__unaligned_cpp"]
+f1_keywords: ["__unaligned_cpp", "__unaligned", "_unaligned"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__unaligned keyword [C++]"]
 ms.assetid: 0cd83aad-1840-47e3-ad33-59bfcbe6375b
@@ -21,6 +21,8 @@ ms.workload: ["cplusplus"]
 This modifier describes the alignment of the data addressed by the pointer; the pointer itself is assumed to be aligned.
 
 The necessity for the **__unaligned** keyword varies by platform and environment. Failure to mark data appropriately can result in issues ranging from performance penalties to hardware faults. The **__unaligned** modifier is not valid for the x86 platform.
+
+For compatibility with previous versions, **_unaligned** is a synonym for **__unaligned** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 For more information about alignment, see:
 

@@ -38,7 +38,7 @@ The derived type.
 
 Tests whether one type is the base of another.
 
-The first template tests whether a type is derived from a base type, which might yield `true` or `false`. The second template tests whether a type is derived from itself, which always yields `false`.
+The first template tests whether a type is derived from a base type, which might yield **true** or **false**. The second template tests whether a type is derived from itself, which always yields **false**.
 
 ## Members
 
@@ -70,4 +70,4 @@ static const bool value = __is_base_of(Base, Derived);
 
 Indicates whether one type is the base of another.
 
-`value` is `true` if type `Base` is a base class of the type `Derived`, otherwise it is `false`.
+`value` is **true** if type `Base` is a base class of the type `Derived`, otherwise it is **false**.

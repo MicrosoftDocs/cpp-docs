@@ -81,11 +81,11 @@ The result to set this event with.
 
 ### Return Value
 
-The method returns `true` if it was successful in setting the event. It returns `false` if the event is already set.
+The method returns **true** if it was successful in setting the event. It returns **false** if the event is already set.
 
 ### Remarks
 
-In the presence of multiple or concurrent calls to `set`, only the first call will succeed and its result (if any) will be stored in the task completion event. The remaining sets are ignored and the method will return false. When you set a task completion event, all the tasks created from that event will immediately complete, and its continuations, if any, will be scheduled. Task completion objects that have a `_ResultType` other than `void` will pass the value                          to their continuations.
+In the presence of multiple or concurrent calls to `set`, only the first call will succeed and its result (if any) will be stored in the task completion event. The remaining sets are ignored and the method will return false. When you set a task completion event, all the tasks created from that event will immediately complete, and its continuations, if any, will be scheduled. Task completion objects that have a `_ResultType` other than **void** will pass the value to their continuations.
 
 ##  <a name="set_exception"></a> set_exception
 

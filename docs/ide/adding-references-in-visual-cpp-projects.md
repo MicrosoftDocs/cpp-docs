@@ -72,11 +72,11 @@ The following properties are available on various kinds of references. They enab
 
 - **Copy Local Satellite Assemblies**
 
-   Specifies whether to automatically copy the satellite assemblies of the referenced assembly to the target location during a build. Only used if **Copy Local** is `true`.
+   Specifies whether to automatically copy the satellite assemblies of the referenced assembly to the target location during a build. Only used if **Copy Local** is **true**.
 
 - **Reference Assembly Output**
 
-   Specifies that this assembly is used in the build process. If `true`, the assembly is used on the compiler command line during the build.
+   Specifies that this assembly is used in the build process. If **true**, the assembly is used on the compiler command line during the build.
 
 ### Project-to-project reference properties
 

@@ -22,17 +22,17 @@ The following topics show how to edit the files created by the MFC Application W
 - "Adding XML Support to the Consumer" shows how to modify the consumer code to output the retrieved rowset data as XML data.  
   
 > [!NOTE]
->  You can use the consumer application described in this section to test the MyProv and Provider sample providers.  
+> You can use the consumer application described in this section to test the MyProv and Provider sample providers.  
   
 > [!NOTE]
->  To build a consumer application to test MyProv (the same provider described in [Enhancing the Simple Read-Only Provider](../../data/oledb/enhancing-the-simple-read-only-provider.md)), you must include bookmark support as described in "Adding Bookmark Support to the Consumer."  
+> To build a consumer application to test MyProv (the same provider described in [Enhancing the Simple Read-Only Provider](../../data/oledb/enhancing-the-simple-read-only-provider.md)), you must include bookmark support as described in "Adding Bookmark Support to the Consumer."  
   
 > [!NOTE]
->  To build a consumer application to test Provider, leave out the bookmark support described in "Adding Bookmark Support to the Consumer" and skip to "Adding XML Support to the Consumer."  
+> To build a consumer application to test Provider, leave out the bookmark support described in "Adding Bookmark Support to the Consumer" and skip to "Adding XML Support to the Consumer."  
   
 ## Retrieving Data with the Consumer  
   
-#### To modify the console application to use the OLE DB consumer  
+### To modify the console application to use the OLE DB consumer  
   
 1. In MyCons.cpp, change the main code by inserting the bold text as follows:  
   
@@ -82,9 +82,9 @@ The previous steps give you bookmark support and a bookmark object with which to
 - Output the bookmarked row, appending it to the end of the file.  
   
 > [!NOTE]
->  If you use this consumer application to test the Provider sample provider application, leave out the bookmark support described in this section.  
+> If you use this consumer application to test the Provider sample provider application, leave out the bookmark support described in this section.  
   
-#### To instantiate the bookmark  
+### To instantiate the bookmark  
   
 1. The accessor needs to contain an object of type [CBookmark](../../data/oledb/cbookmark-class.md). The *nSize* parameter specifies the size of the bookmark buffer in bytes (typically 4 for 32-bit platforms and 8 for 64-bit platforms). Add the following declaration to the column data members in the user record class:  
   
@@ -99,7 +99,7 @@ The previous steps give you bookmark support and a bookmark object with which to
        ...  
     ```  
   
-#### To request a bookmark column from the provider  
+### To request a bookmark column from the provider  
   
 1. Add the following code in the `GetRowsetProperties` method in the user record class:  
   
@@ -113,7 +113,7 @@ The previous steps give you bookmark support and a bookmark object with which to
     }  
     ```  
   
-#### To add a bookmark entry to the column map  
+### To add a bookmark entry to the column map  
   
 1. Add the following entry to the column map in the user record class:  
   
@@ -127,7 +127,7 @@ The previous steps give you bookmark support and a bookmark object with which to
     END_COLUMN_MAP()  
     ```  
   
-#### To use a bookmark in your main code  
+### To use a bookmark in your main code  
   
 1. In the MyCons.cpp file from the console application you previously created, change the main code to read as follows. To use bookmarks, the main code needs to instantiate its own bookmark object (`myBookmark`); this is a different bookmark from the one in the accessor (`m_bookmark`).  
   
@@ -172,7 +172,7 @@ The previous steps give you bookmark support and a bookmark object with which to
        {  
           nCounter++;  
           if(nCounter == 5 )  
-             myBookmark = rs.bookmark;  
+             myBookmark = rs.m_bookmark;  
           // Output the column information for each row:  
           outfile << rs.m_ProductID << rs.m_ProductName << lPrice << rs.m_QuantityPerUnit << rs.m_UnitsInStock << rs.m_ReorderLevel << endl;  
           hr = rs.MoveNext();  
@@ -204,7 +204,7 @@ For more information about bookmarks, see [Using Bookmarks](../../data/oledb/usi
 
 As discussed in [Accessing XML Data](../../data/oledb/accessing-xml-data.md), there are two ways to retrieve XML data from a data source: using [CStreamRowset](../../data/oledb/cstreamrowset-class.md) or using [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md). This example uses `CStreamRowset`, which is more efficient, but requires you to have SQL Server 2000 running on the computer on which you execute this sample application.  
   
-#### To modify the command class to inherit from CStreamRowset  
+### To modify the command class to inherit from CStreamRowset  
   
 1. In the consumer application you previously created, change your `CCommand` declaration to specify `CStreamRowset` as the rowset class as follows:  
   
@@ -212,7 +212,7 @@ As discussed in [Accessing XML Data](../../data/oledb/accessing-xml-data.md), th
     class CProducts : public CCommand<CAccessor<CProductsAccessor>, CStreamRowset >  
     ```  
   
-#### To modify the main code to retrieve and output the XML data  
+### To modify the main code to retrieve and output the XML data  
   
 1. In the MyCons.cpp file from the console application you previously created, change the main code to read as follows:  
   

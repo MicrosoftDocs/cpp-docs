@@ -24,7 +24,7 @@ operator bool();
 
 ## Return Value
 
-`true` if the owned COM object is valid; `false` otherwise.
+**true** if the owned COM object is valid; **false** otherwise.
 
 ## Remarks
 

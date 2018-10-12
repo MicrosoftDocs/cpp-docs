@@ -95,7 +95,7 @@ The context which is currently being dispatched by this root.
 
 ### Return Value
 
-A boolean value. A value of `true` indicates that the thread proxy returned from the `Deactivate` method in response to a call to the `Activate` method. A value of `false` indicates that the thread proxy returned from the method in response to a notification event in the Resource Manager. On a user-mode schedulable (UMS) thread scheduler, this indicates that items have appeared on the scheduler's completion list, and the scheduler is required to handle them.
+A boolean value. A value of **true** indicates that the thread proxy returned from the `Deactivate` method in response to a call to the `Activate` method. A value of `false` indicates that the thread proxy returned from the method in response to a notification event in the Resource Manager. On a user-mode schedulable (UMS) thread scheduler, this indicates that items have appeared on the scheduler's completion list, and the scheduler is required to handle them.
 
 ### Remarks
 
@@ -103,9 +103,9 @@ Use this method to temporarily stop executing a virtual processor root when you 
 
 A deactivated virtual processor root may be woken up with a call to the `Activate` method, with the same argument that was passed in to the `Deactivate` method. The scheduler is responsible for ensuring that calls to the `Activate` and `Deactivate` methods are paired, but they are not required to be received in a specific order. The Resource Manager can handle receiving a call to the `Activate` method before it receives a call to the `Deactivate` method it was meant for.
 
-If a virtual processor root awakens and the return value from the `Deactivate` method is the value `false`, the scheduler should query the UMS completion list via the `IUMSCompletionList::GetUnblockNotifications` method, act on that information, and then subsequently call the `Deactivate` method again. This should be repeated until such time as the `Deactivate` method returns the value `true`.
+If a virtual processor root awakens and the return value from the `Deactivate` method is the value **false**, the scheduler should query the UMS completion list via the `IUMSCompletionList::GetUnblockNotifications` method, act on that information, and then subsequently call the `Deactivate` method again. This should be repeated until such time as the `Deactivate` method returns the value `true`.
 
-`invalid_argument` is thrown if the argument `pContext` has the value `NULL`.
+`invalid_argument` is thrown if the argument `pContext` has the value NULL.
 
 `invalid_operation` is thrown if the virtual processor root has never been activated, or the argument `pContext` does not represent the execution context that was most recently dispatched by this virtual processor root.
 

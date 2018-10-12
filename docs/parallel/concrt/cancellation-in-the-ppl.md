@@ -76,7 +76,7 @@ To initiate cancellation, call the [concurrency::cancellation_token_source::canc
 
 - For `task` objects, use the [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) function. `cancel_current_task` cancels the current task and any of its value-based continuations. (It does not cancel the cancellation *token* that is associated with the task or its continuations.)
 
-- For task groups and parallel algorithms, use the [concurrency::is_current_task_group_canceling](reference/concurrency-namespace-functions.md#is_current_task_group_canceling) function to detect cancellation and return as soon as possible from the task body when this function returns `true`. (Do not call `cancel_current_task` from a task group.)
+- For task groups and parallel algorithms, use the [concurrency::is_current_task_group_canceling](reference/concurrency-namespace-functions.md#is_current_task_group_canceling) function to detect cancellation and return as soon as possible from the task body when this function returns **true**. (Do not call `cancel_current_task` from a task group.)
 
 The following example shows the first basic pattern for task cancellation. The task body occasionally checks for cancellation inside a loop.
 

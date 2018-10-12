@@ -19,7 +19,7 @@ Several keywords and pragmas that you use in your C or C++ code affect optimizat
 
 - [__assume](../../intrinsics/assume.md)
 
-- [inline, _inline, or \__forceinline](../../cpp/inline-functions-cpp.md)
+- [inline, __inline, or \__forceinline](../../cpp/inline-functions-cpp.md)
 
 - [#pragma auto_inline](../../preprocessor/auto-inline.md)
 

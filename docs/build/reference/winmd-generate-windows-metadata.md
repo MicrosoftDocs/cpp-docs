@@ -15,11 +15,9 @@ ms.workload: ["cplusplus"]
 
 Enables generation of a Windows Runtime Metadata (.winmd) file.
 
-```
-/WINMD[:{NO|ONLY}]
-```
+> **/WINMD**\[**:**{**NO**\|**ONLY**}]
 
-## Remarks
+## Arguments
 
 **/WINMD**<br/>
 The default setting for Universal Windows Platform apps. The linker generates both the binary executable file and the .winmd metadata file.
@@ -30,19 +28,27 @@ The linker generates only the binary executable file, but not a .winmd file.
 **/WINMD:ONLY**<br/>
 The linker generates only the .winmd file, but not the binary executable file.
 
-By default, the output file name has the form `binaryname`.winmd. To specify a different file name, use the [/WINMDFILE](../../build/reference/winmdfile-specify-winmd-file.md) option.
+## Remarks
+
+The **/WINMD** linker option is used for UWP apps and Windows runtime components to control the creation of a Windows Runtime metadata (.winmd) file. A .winmd file is a kind of DLL that contains metadata for Windows runtime types and, in the case of runtime components, the implementations of those types. The metadata follows the [ECMA-335](http://www.ecma-international.org/publications/standards/Ecma-335.htm) standard.
+
+By default, the output file name has the form *binaryname*.winmd. To specify a different file name, use the [/WINMDFILE](../../build/reference/winmdfile-specify-winmd-file.md) option.
 
 ### To set this linker option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-1. Select the **Linker** folder.
-
-1. Select the **Windows Metadata** property page.
+1. Select the **Configuration Properties** > **Linker** > **Windows Metadata** property page.
 
 1. In the **Generate Windows Metadata** drop-down list box, select the option you want.
 
 ## See Also
 
+[Walkthrough: Creating a Simple Windows Runtime component and calling it from JavaScript](/windows/uwp/winrt-components/walkthrough-creating-a-simple-windows-runtime-component-and-calling-it-from-javascript)<br/>
+[Introduction to Microsoft Interface Definition Language 3.0](/uwp/midl-3/intro)<br/>
+[/WINMDFILE (Specify winmd File)](winmdfile-specify-winmd-file.md)<br/>
+[/WINMDKEYFILE (Specify winmd Key File)](winmdkeyfile-specify-winmd-key-file.md)<br/>
+[/WINMDKEYCONTAINER (Specify Key Container)](winmdkeycontainer-specify-key-container.md)<br/>
+[/WINMDDELAYSIGN (Partially Sign a winmd)](winmddelaysign-partially-sign-a-winmd.md)<br/>
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

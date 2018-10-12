@@ -1,10 +1,10 @@
 ---
 title: "Based Pointers (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/09/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
-f1_keywords: ["__based", "__based_cpp"]
+f1_keywords: ["__based", "_based", "__based_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__based keyword [C++]", "based pointers", "pointers, based"]
 ms.assetid: 1e5f2e96-c52e-4738-8e14-87278681205e
@@ -48,7 +48,7 @@ The pointer `vpBuffer` is assigned the address of memory allocated at some later
 
 When dereferencing a based pointer, the base must be either explicitly specified or implicitly known through the declaration.
 
-For compatibility with previous versions, **_based** is a synonym for **__based**.
+For compatibility with previous versions, **_based** is a synonym for **__based** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 ## Example
 

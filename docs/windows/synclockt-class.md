@@ -96,7 +96,7 @@ bool IsLocked() const;
 
 ### Return Value
 
-`true` if the `SyncLockT` object is locked; otherwise, `false`.
+**true** if the `SyncLockT` object is locked; otherwise, **false**.
 
 ### Remarks
 

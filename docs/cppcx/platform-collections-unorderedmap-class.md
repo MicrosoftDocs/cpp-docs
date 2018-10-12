@@ -155,7 +155,7 @@ The key used to locate the UnorderedMap element. The type of *key* is typename *
 
 ### Return Value
 
-`true` if the key is found; otherwise, `false`.
+**true** if the key is found; otherwise, **false**.
 
 ## <a name="insert"></a>  UnorderedMap::Insert Method
 
@@ -180,7 +180,7 @@ The value portion of the key-value pair. The type of *value* is typename *V*.
 
 ### Return Value
 
-`true` if the key of an existing element in the current Map matches *key* and the value portion of that element is set to *value*. `false` if no existing element in the current Map matches *key* and the *key* and *value* parameters are made into a key-value pair and then added to the current UnorderedMap.
+**true** if the key of an existing element in the current Map matches *key* and the value portion of that element is set to *value*. **false** if no existing element in the current Map matches *key* and the *key* and *value* parameters are made into a key-value pair and then added to the current UnorderedMap.
 
 ## <a name="lookup"></a>  UnorderedMap::Lookup Method
 

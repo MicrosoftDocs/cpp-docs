@@ -32,7 +32,7 @@ A field of flags that specifies one or more [RuntimeClassType](../windows/runtim
 A list of interface IDs.
 
 *IsDelegateToClass*<br/>
-Specify `true` if the current instance of `Implements` is a base class of the first interface ID in *ILst*; otherwise, `false`.
+Specify **true** if the current instance of `Implements` is a base class of the first interface ID in *ILst*; otherwise, **false**.
 
 ## Remarks
 

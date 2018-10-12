@@ -1,7 +1,7 @@
 ---
 title: "Creating a Simple Consumer | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/09/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -15,35 +15,35 @@ ms.workload: ["cplusplus", "data-storage"]
 
 Use the ATL Project Wizard and ATL OLE DB Consumer Wizard to generate an OLE DB Templates consumer.
 
-### To create a console application for an OLE DB consumer
+## To create a console application for an OLE DB consumer
 
 1. On the **File** menu, click **New**, and then click **Project**.
 
    The **New Project** dialog box appears.
 
-1. In the Project Types pane, click the **Visual C++ Projects** folder, and then click the **Win32 Project** icon in the Templates pane. In the **Name** box, enter the name of your project, for example, **MyCons**.
+1. In the **Project Types** pane, click the **Installed** > **Templates** > **Visual C++** folder, and then click the **Win32 Console Application** icon in the **Templates** pane. In the **Name** box, enter the name of your project, for example, *MyCons*.
 
 1. Click **OK**.
 
-   The Win32 Project Wizard appears.
+   The Win32 Application Wizard appears.
 
-1. On the **Application Settings** page, select **Console application**, and then select **Add support for ATL**.
+1. On the **Application Settings** page, select **Console application**, and then select **Add common header files for ATL**.
 
 1. Click **Finish** to close the wizard and generate the project.
 
 Next, use the ATL OLE DB Consumer Wizard to add an OLE DB consumer object.
 
-#### To create a consumer with the ATL OLE DB Consumer Wizard
+## To create a consumer with the ATL OLE DB Consumer Wizard
 
-1. In Class View, right-click the `MyCons` project.
+1. In **Solution Explorer**, right-click the `MyCons` project.
 
-1. On the shortcut menu, click **Add**, and then click **Add Class**.
+1. On the shortcut menu, click **Add**, and then click **Class**.
 
    The **Add Class** dialog box appears.
 
-1. In the Categories pane, click **Visual C++**, click the **ATL OLE DB Consumer** icon in the Templates pane, and then click **Open**.
+1. In the **Categories** pane, click **Installed** > **Visual C++** > **ATL**, click the **ATL OLEDB Consumer** icon in the **Templates** pane, and then click **Add**.
 
-   The ATL OLE DB Consumer Wizard appears.
+   The ATL OLEDB Consumer Wizard appears.
 
 1. Click the **Data Source** button.
 
@@ -53,10 +53,10 @@ Next, use the ATL OLE DB Consumer Wizard to add an OLE DB consumer object.
 
    - On the **Provider** tab, specify an OLE DB provider.
 
-   - On the **Connection** tab, specify the server name, logon ID, and password for your data source and database on the server.
+   - On the **Connection** tab, specify the required information, such as server name, logon ID, and password for your data source and database on the server.
 
    > [!NOTE]
-   > There is a security issue with the **Allow saving of password** feature of the **Data Link Properties** dialog box. In **Enter information to log on to the server**, there are two radio buttons: **Use Windows NT integrated security** and **Use a specific user name and password**.
+   > There is a security issue with the **Allow saving password** feature of the **Data Link Properties** dialog box. In **Enter information to log on to the server**, there are two radio buttons: **Use Windows NT integrated security** and **Use a specific user name and password**.
 
    > [!NOTE]
    > If you select **Use a specific user name and password**, you have the option of saving the password (using the **Allow saving password** check box); however, this option is not secure. It is recommended that you select **Use Windows NT integrated security**; this option uses Windows NT to verify your identity.
@@ -68,7 +68,7 @@ Next, use the ATL OLE DB Consumer Wizard to add an OLE DB consumer object.
 
    The **Select Database Object** dialog box appears.
 
-1. Use the tree control to select a table, view, or stored procedure. For the purpose of this procedure, select the Products table from the Northwind database.
+1. Use the tree control to select a table, view, or stored procedure. For the purpose of this procedure, select the `Products` table from the `Northwind` database.
 
 1. Click **OK**. This returns you to the ATL OLE DB Consumer Wizard.
 

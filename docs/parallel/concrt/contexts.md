@@ -57,7 +57,7 @@ For computationally intensive operations, oversubscription typically does not sc
 > [!NOTE]
 >  Enable oversubscription only from a thread that was created by the Concurrency Runtime. Oversubscription has no effect when it is called from a thread that was not created by the runtime (including the main thread).
 
-To enable oversubscription in the current context, call the [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) method with the `_BeginOversubscription` parameter set to `true`. When you enable oversubscription on a thread that was created by the Concurrency Runtime, it causes the runtime to create one additional thread. After all tasks that require oversubscription finish, call `Context::Oversubscribe` with the `_BeginOversubscription` parameter set to `false`.
+To enable oversubscription in the current context, call the [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) method with the `_BeginOversubscription` parameter set to **true**. When you enable oversubscription on a thread that was created by the Concurrency Runtime, it causes the runtime to create one additional thread. After all tasks that require oversubscription finish, call `Context::Oversubscribe` with the `_BeginOversubscription` parameter set to **false**.
 
 You can enable oversubscription multiple times from the current context, but you must disable it the same number of times that you enable it. Oversubscription can also be nested; that is, a task that is created by another task that uses oversubscription can also oversubscribe its context. However, if both a nested task and its parent belong to the same context, only the outermost call to `Context::Oversubscribe` causes the creation of an additional thread.
 

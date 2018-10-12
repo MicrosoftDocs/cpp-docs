@@ -1,10 +1,10 @@
 ---
 title: "Inline Functions (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/09/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
-f1_keywords: ["__forceinline_cpp", "__inline_cpp", "inline_cpp"]
+f1_keywords: ["__forceinline_cpp", "__inline_cpp", "inline_cpp", "__inline", "_inline", "__forceinline", "_forceinline"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["inline functions [C++], class members"]
 ms.assetid: 355f120c-2847-4608-ac04-8dda18ffe10c
@@ -71,7 +71,7 @@ Using inline functions can make your program faster because they eliminate the o
 
 The compiler treats the inline expansion options and keywords as suggestions. There is no guarantee that functions will be inlined. You cannot force the compiler to inline a particular function, even with the **__forceinline** keyword. When compiling with **/clr**, the compiler will not inline a function if there are security attributes applied to the function.
 
-The **inline** keyword is available only in C++. The **__inline** and **__forceinline** keywords are available in both C and C++. For compatibility with previous versions, **_inline** is a synonym for **__inline**.
+The **inline** keyword is available only in C++. The **__inline** and **__forceinline** keywords are available in both C and C++. For compatibility with previous versions, **_inline** and **_forceinline** are synonyms for **__inline**, and **__forceinline** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 The **inline** keyword tells the compiler that inline expansion is preferred. However, the compiler can create a separate instance of the function (instantiate) and create standard calling linkages instead of inserting the code inline. Two cases where this can happen are:
 

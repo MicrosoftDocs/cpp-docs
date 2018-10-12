@@ -156,7 +156,7 @@ The key used to locate the Map element. The type of *key* is typename *K*.
 
 ### Return Value
 
-`true` if the key is found; otherwise, `false`.
+**true** if the key is found; otherwise, **false**.
 
 ## <a name="insert"></a>  Map::Insert Method
 
@@ -178,7 +178,7 @@ The value portion of the key-value pair. The type of *value* is typename *V*.
 
 ### Return Value
 
-`true` if the key of an existing element in the current Map matches *key* and the value portion of that element is set to *value*. `false` if no existing element in the current Map matches *key* and the *key* and *value* parameters are made into a key-value pair and then added to the current Map.
+**true** if the key of an existing element in the current Map matches *key* and the value portion of that element is set to *value*. **false** if no existing element in the current Map matches *key* and the *key* and *value* parameters are made into a key-value pair and then added to the current Map.
 
 ## <a name="lookup"></a>  Map::Lookup Method
 

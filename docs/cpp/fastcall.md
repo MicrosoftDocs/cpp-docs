@@ -1,10 +1,10 @@
 ---
 title: "__fastcall | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/09/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
-f1_keywords: ["__fastcall_cpp"]
+f1_keywords: ["__fastcall_cpp", "__fastcall", "_fastcall"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__fastcall keyword [C++]"]
 ms.assetid: bb5b9c8a-dfad-450c-9119-0ac2bc59544f
@@ -51,6 +51,8 @@ is equivalent to this:
 ```cpp
 void __fastcall CMyClass::mymethod() { return; }
 ```
+
+For compatibility with previous versions, **_fastcall** is a synonym for **__fastcall** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 ## Example
 

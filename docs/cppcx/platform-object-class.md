@@ -71,7 +71,7 @@ The object to compare.
 
 ### Return Value
 
-`true` if the objects are equal, otherwise `false`.
+**true** if the objects are equal, otherwise **false**.
 
 ## <a name="gethashcode"></a>  Object::GetHashCode Method
 
@@ -153,7 +153,7 @@ The second object to compare.
 
 ### Return Value
 
-`true` if the two objects are the same; otherwise, `false`.
+**true** if the two objects are the same; otherwise, **false**.
 
 ## <a name="tostring"></a>  Object::ToString Method (C++/CX)
 
