@@ -84,7 +84,7 @@ Sets the `cy` member for the `CSize`.
 [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure or `CSize` object used to initialize `CSize`.
 
 *initPt*  
-[POINT](../../mfc/reference/point-structure1.md) structure or `CPoint` object used to initialize `CSize`.
+[POINT](../../mfc/reference/point-structure.md) structure or `CPoint` object used to initialize `CSize`.
 
 *dwSize*  
 DWORD used to initialize `CSize`. The low-order word is the `cx` member and the high-order word is the `cy` member.

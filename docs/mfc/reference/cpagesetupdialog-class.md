@@ -237,7 +237,7 @@ void GetMargins(
 ### Parameters
 
 *lpRectMargins*<br/>
-Pointer to a [RECT](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that describes (in 1/1000 inches or 1/100 mm) the print margins for the currently selected printer. Pass NULL for this parameter, if you are not interested in this rectangle.
+Pointer to a [RECT](rect-structure.md) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that describes (in 1/1000 inches or 1/100 mm) the print margins for the currently selected printer. Pass NULL for this parameter, if you are not interested in this rectangle.
 
 *lpRectMinMargins*<br/>
 Pointer to a `RECT` structure or `CRect` object that describes (in 1/1000 inches or 1/100 mm) the minimum print margins for the currently selected printer. Pass NULL for this parameter, if you are not interested in this rectangle.
@@ -316,7 +316,7 @@ Specifies a message, indicating the area of the page currently being drawn. Can 
 - WM_PSD_YAFULLPAGERECT Area for a return address representation. This area extends to the edges of the sample page area.
 
 *lpRect*<br/>
-Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us) object containing the coordinates of the drawing area.
+Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](rect-structure.md) object containing the coordinates of the drawing area.
 
 ### Return Value
 

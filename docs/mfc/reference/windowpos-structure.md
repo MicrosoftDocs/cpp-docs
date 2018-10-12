@@ -1,5 +1,5 @@
 ---
-title: "WINDOWPOS Structure1 | Microsoft Docs"
+title: "WINDOWPOS Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-mfc"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# WINDOWPOS Structure1
+# WINDOWPOS Structure
 
 The `WINDOWPOS` structure contains information about the size and position of a window.
 
