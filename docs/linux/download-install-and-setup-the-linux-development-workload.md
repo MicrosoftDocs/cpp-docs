@@ -2,7 +2,7 @@
 title: "Install the C++ Linux workload in Visual Studio | Microsoft Docs"
 description: "Describes how to download, install, and setup the Linux workload for C++ in Visual Studio."
 ms.custom: ""
-ms.date: "09/12/2018"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-linux"]
 ms.tgt_pltfrm: "Linux"
 ms.topic: "conceptual"
@@ -41,26 +41,27 @@ The target Linux computer must have **openssh-server**, **g++**, **gdb**, and **
 
    `sudo apt-get install openssh-server g++ gdb gdbserver zip`
 
-   You may be prompted for your root password due to the sudo command.  If so, enter it and continue.  Once complete, these services and tools will be installed.
+   You may be prompted for your root password due to the sudo command.  If so, enter it and continue. Once complete, the required services and tools are installed.
 
-2. Ensure the ssh service is running on your Linux computer by running:
+1. Ensure the ssh service is running on your Linux computer by running:
 
    `sudo service ssh start`
 
-   This will start the service and run it in the background, ready to accept connections.
+   This starts the service and runs it in the background, ready to accept connections.
 
 ## Linux setup: Fedora
-The target machine running Fedora uses **dnf** package installer. To download **openssh-server**, **g++**, **gdb**, **gdbserver** and **zip**, and restart the ssh daemon, follow the instructions below:
+
+The target machine running Fedora uses the **dnf** package installer. To download **openssh-server**, **g++**, **gdb**, **gdbserver** and **zip**, and restart the ssh daemon, follow these instructions:
 
 1. At a shell prompt on your Linux computer, run:
 
    `sudo dnf install openssh-server g++ gdb gdbserver zip`
 
-   You may be prompted for your root password due to the sudo command.  If so, enter it and continue.  Once complete, these services and tools will be installed.
+   You may be prompted for your root password due to the sudo command.  If so, enter it and continue. Once complete, the required services and tools are installed.
 
-2. Ensure the ssh service is running on your Linux computer by running:
+1. Ensure the ssh service is running on your Linux computer by running:
 
    `sudo systemctl start sshd`
 
-   This will start the service and run it in the background, ready to accept connections.
+   This starts the service and runs it in the background, ready to accept connections.
 
