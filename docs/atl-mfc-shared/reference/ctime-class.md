@@ -150,10 +150,10 @@ Indicates whether daylight savings time is in effect. Can have one of three valu
 MS-DOS date and time values to be converted to a date/time value and copied into the new `CTime` object.
 
 *st*  
-A [SYSTEMTIME](systemtime-structure.md) structure to be converted to a date/time value and copied into the new `CTime` object.
+A [SYSTEMTIME](../../mfc/reference/systemtime-structure.md) structure to be converted to a date/time value and copied into the new `CTime` object.
 
 *ft*  
-A [FILETIME](filetime-structure.md) structure to be converted to a date/time value and copied into the new `CTime` object.
+A [FILETIME](../../mfc/reference/filetime-structure.md) structure to be converted to a date/time value and copied into the new `CTime` object.
 
 dbts  
 A reference to a DBTIMESTAMP structure containing the current local time.
