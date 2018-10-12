@@ -23,7 +23,7 @@ The **safe_cast** operation returns the specified expression as the specified ty
 ### Syntax
 
 ```cpp
-[default]:: safe_cast<type-id>(expression)  
+[default]:: safe_cast< type-id >( expression )  
 ```
 
 ## Windows Runtime
@@ -33,7 +33,7 @@ The **safe_cast** operation returns the specified expression as the specified ty
 ### Syntax
 
 ```cpp
-[default]:: safe_cast<type-id>(expression)  
+[default]:: safe_cast< type-id >( expression )
 ```
 
 ### Parameters
@@ -93,11 +93,7 @@ Caught expected exception: InvalidCastException
 ### Syntax
 
 ```cpp
-[cli]:: safe_cast<
-type-id
->(
-expression
-)  
+[cli]:: safe_cast< type-id >( expression )  
 ```
 
 ### Parameters
@@ -110,7 +106,7 @@ An expression that evaluates to a handle to a reference or value type, a value t
 
 ### Remarks
 
-The expression `safe_cast<`*type-id*`>(`*expression*`)` converts the operand expression to an object of type type-id.
+The expression `safe_cast<`*type-id*`>(`*expression*`)` converts the operand *expression* to an object of type *type-id*.
 
 The compiler will accept a [static_cast](../cpp/static-cast-operator.md) in most places that it will accept a **safe_cast**.  However, **safe_cast** is guaranteed to produce verifiable MSIL, where as a **static_cast** could produce unverifiable MSIL.  See [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md) and [Peverify.exe (PEVerify Tool)](/dotnet/framework/tools/peverify-exe-peverify-tool) for more information on verifiable code.
 
