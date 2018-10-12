@@ -259,6 +259,6 @@ System.String
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)<br/>
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)<br/>
 [String and Character Literals](../cpp/string-and-character-literals-cpp.md)<br/>
 [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md)

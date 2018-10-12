@@ -93,5 +93,5 @@ int main() {
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)<br/>
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)<br/>
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

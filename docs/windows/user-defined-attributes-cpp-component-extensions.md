@@ -192,4 +192,4 @@ ref struct B {};
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](component-extensions-for-runtime-platforms.md)
+[Component Extensions for .NET and UWP](component-extensions-for-runtime-platforms.md)

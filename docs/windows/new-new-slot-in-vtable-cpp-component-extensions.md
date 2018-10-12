@@ -104,6 +104,6 @@ E::f() called
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)<br/>
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)<br/>
 
 [Override Specifiers](../windows/override-specifiers-cpp-component-extensions.md)

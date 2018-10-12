@@ -53,4 +53,4 @@ Using the [for each, in](../dotnet/for-each-in.md) keyword on a generic collecti
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)
