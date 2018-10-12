@@ -1,7 +1,7 @@
 ---
-title: "POINT Structure1 | Microsoft Docs"
+title: "POINT Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["POINT", "LPPOINT"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# POINT Structure1
+# POINT Structure
 
 The `POINT` structure defines the x*-* and y-coordinates of a point.
 
