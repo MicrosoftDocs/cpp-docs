@@ -1,7 +1,7 @@
 ---
-title: "Compiler Support for Type Traits (C++ Component Extensions) | Microsoft Docs"
+title: "Compiler Support for Type Traits (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["__is_simple_value_class", "__has_trivial_destructor", "__has_assign", "__is_union", "__is_class", "__is_abstract", "__has_trivial_assign", "__has_virtual_destructor", "__is_ref_array", "__is_base_of", "__has_copy", "__is_polymorphic", "__has_nothrow_constructor", "__is_ref_class", "__is_delegate", "__is_convertible_to", "__is_value_class", "__is_interface_class", "__has_nothrow_copy", "__is_sealed", "__has_trivial_constructor", "__has_trivial_copy", "__is_enum", "__has_nothrow_assign", "__has_finalizer", "__is_empty", "__is_pod", "__has_user_destructor"]
@@ -12,9 +12,9 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Compiler Support for Type Traits (C++ Component Extensions)
+# Compiler Support for Type Traits (C++/CLI and C++/CX)
 
-The compiler supports *type traits*, which indicate various characteristics of a type at compile time.
+The Microsoft C++ compiler supports *type traits* for C++/CLI and C++/CX extensions, which indicate various characteristics of a type at compile time.
 
 ## All Runtimes
 
@@ -24,9 +24,9 @@ Type traits are especially useful to programmers who write libraries.
 
 The following list contains the type traits that are supported by the compiler. All type traits return **false** if the condition specified by the name of the type trait is not met.
 
-(In the following list, code examples are written only in C++/CLI. But the corresponding type trait is also supported in Visual C++ component extensions unless stated otherwise. The term, "platform type" refers to either Windows Runtime types or common language runtime types.)
+(In the following list, code examples are written only in C++/CLI. But the corresponding type trait is also supported in C++/CX unless stated otherwise. The term, "platform type" refers to either Windows Runtime types or common language runtime types.)
 
-- `__has_assign(` `type` `)`
+- `__has_assign(` *type* `)`
 
    Returns **true** if the platform or native type has a copy assignment operator.
 
@@ -40,7 +40,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__has_copy(` `type` `)`
+- `__has_copy(` *type* `)`
 
    Returns **true** if the platform or native type has a copy constructor.
 
@@ -54,9 +54,9 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__has_finalizer(` `type` `)`
+- `__has_finalizer(` *type* `)`
 
-   (Not supported in Visual C++ component extensions.) Returns **true** if the CLR type has a finalizer. See [Destructors and finalizers in How to: Define and consume classes and structs (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) for more information.
+   (Not supported in C++/CX.) Returns **true** if the CLR type has a finalizer. See [Destructors and finalizers in How to: Define and consume classes and structs (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) for more information.
 
     ```cpp
     using namespace System;
@@ -71,7 +71,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__has_nothrow_assign(` `type` `)`
+- `__has_nothrow_assign(` *type* `)`
 
    Returns **true** if a copy assignment operator has an empty exception specification.
 
@@ -87,7 +87,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__has_nothrow_constructor(` `type` `)`
+- `__has_nothrow_constructor(` *type* `)`
 
    Returns **true** if the default constructor has an empty exception specification.
 
@@ -103,7 +103,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__has_nothrow_copy(` `type` `)`
+- `__has_nothrow_copy(` *type* `)`
 
    Returns **true** if the copy constructor has an empty exception specification.
 
@@ -119,7 +119,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__has_trivial_assign(` `type` `)`
+- `__has_trivial_assign(` *type* `)`
 
    Returns **true** if the type has a trivial, compiler-generated assignment operator.
 
@@ -133,7 +133,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__has_trivial_constructor(` `type` `)`
+- `__has_trivial_constructor(` *type* `)`
 
    Returns **true** if the type has a trivial, compiler-generated constructor.
 
@@ -147,7 +147,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__has_trivial_copy(` `type` `)`
+- `__has_trivial_copy(` *type* `)`
 
    Returns **true** if the type has a trivial, compiler-generated copy constructor.
 
@@ -161,7 +161,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__has_trivial_destructor(` `type` `)`
+- `__has_trivial_destructor(` *type* `)`
 
    Returns **true** if the type has a trivial, compiler-generated destructor.
 
@@ -176,7 +176,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__has_user_destructor(` `type` `)`
+- `__has_user_destructor(` *type* `)`
 
    Returns **true** if the platform or native type has a user-declared destructor.
 
@@ -193,7 +193,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__has_virtual_destructor(` `type` `)`
+- `__has_virtual_destructor(` *type* `)`
 
    Returns **true** if the type has a virtual destructor.
 
@@ -212,11 +212,11 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__is_abstract(` `type` `)`
+- `__is_abstract(` *type* `)`
 
-   Returns **true** if the type is an abstract type. For more information on native abstract types, see [abstract](../windows/abstract-cpp-component-extensions.md).
+   Returns **true** if the type is an abstract type. For more information on native abstract types, see [Abstract Classes](../cpp/abstract-classes-cpp.md).
 
-   `__is_abstract` also works for platform types. An interface with at least one member is an abstract type, as is a reference type with at least one abstract member. For more information on abstract platform types, see [Abstract Classes](../cpp/abstract-classes-cpp.md)
+   `__is_abstract` also works for platform types. An interface with at least one member is an abstract type, as is a reference type with at least one abstract member. For more information on abstract platform types, see [abstract](../windows/abstract-cpp-component-extensions.md).
 
     ```cpp
     // is_abstract.cpp
@@ -252,7 +252,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__is_class(` `type` `)`
+- `__is_class(` *type* `)`
 
    Returns **true** if the type is a native class or struct.
 
@@ -284,9 +284,9 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__is_delegate(` `type` `)`
+- `__is_delegate(` *type* `)`
 
-   Returns **true** if `type` is a delegate. For more information, see [delegate  (C++ Component Extensions)](../windows/delegate-cpp-component-extensions.md).
+   Returns **true** if `type` is a delegate. For more information, see [delegate  (C++/CLI and C++/CX)](../windows/delegate-cpp-component-extensions.md).
 
     ```cpp
     delegate void MyDel();
@@ -295,7 +295,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__is_empty(` `type` `)`
+- `__is_empty(` *type* `)`
 
    Returns **true** if the type has no instance data members.
 
@@ -311,7 +311,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__is_enum(` `type` `)`
+- `__is_enum(` *type* `)`
 
    Returns **true** if the type is a native enum.
 
@@ -333,7 +333,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__is_interface_class(` `type` `)`
+- `__is_interface_class(` *type* `)`
 
    Returns **true** if passed a platform interface. For more information, see [interface class](../windows/interface-class-cpp-component-extensions.md).
 
@@ -347,7 +347,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__is_pod(` `type` `)`
+- `__is_pod(` *type* `)`
 
    Returns **true** if the type is a class or union with no constructor or private or protected non-static members, no base classes, and no virtual functions. See the C++ standard, sections 8.5.1/1, 9/4, and 3.9/10 for more information on PODs.
 
@@ -363,7 +363,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__is_polymorphic(` `type` `)`
+- `__is_polymorphic(` *type* `)`
 
    Returns **true** if a native type has virtual functions.
 
@@ -379,7 +379,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__is_ref_array(` `type` `)`
+- `__is_ref_array(` *type* `)`
 
    Returns **true** if passed a platform array. For more information, see [Arrays](../windows/arrays-cpp-component-extensions.md).
 
@@ -391,7 +391,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__is_ref_class(` `type` `)`
+- `__is_ref_class(` *type* `)`
 
    Returns **true** if passed a reference class. For more information on user-defined reference types, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md).
 
@@ -404,7 +404,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__is_sealed(` `type` `)`
+- `__is_sealed(` *type* `)`
 
    Returns **true** if passed a platform or native type marked sealed. For more information, see [sealed](../windows/sealed-cpp-component-extensions.md).
 
@@ -415,7 +415,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__is_simple_value_class(` `type` `)`
+- `__is_simple_value_class(` *type* `)`
 
    Returns **true** if passed a value type that contains no references to the garbage-collected heap. For more information on user-defined value types, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md).
 
@@ -433,7 +433,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__is_union(` `type` `)`
+- `__is_union(` *type* `)`
 
    Returns **true** if a type is a union.
 
@@ -450,7 +450,7 @@ The following list contains the type traits that are supported by the compiler. 
     }
     ```
 
-- `__is_value_class(` `type` `)`
+- `__is_value_class(` *type* `)`
 
    Returns **true** if passed a value type. For more information on user-defined value types, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md).
 
@@ -514,4 +514,4 @@ R is a ref class
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

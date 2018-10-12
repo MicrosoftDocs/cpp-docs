@@ -1,7 +1,7 @@
 ---
-title: "User-Defined Attributes  (C++ Component Extensions) | Microsoft Docs"
+title: "User-Defined Attributes  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/02/2018"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,19 +11,13 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# User-Defined Attributes  (C++ Component Extensions)
+# User-Defined Attributes  (C++/CLI and C++/CX)
 
-Custom attributes enable you to extend the metadata of an interface, class or structure, method, parameter, or enumeration.
-
-## All Runtimes
-
-All Runtimes support custom attributes.
+C++/CLI and C++/CX enable you to create platform-specific attributes that extend the metadata of an interface, class or structure, method, parameter, or enumeration. These attributes are distinct from the [standard C++ attributes](../cpp/attributes.md).
 
 ## Windows Runtime
 
-C++/CX attributes support only properties, but not attribute constructors or methods.
-
-### Remarks
+You can apply C++/CX attributes to properties, but not to constructors or methods.
 
 ### Requirements
 
@@ -31,17 +25,11 @@ Compiler option: `/ZW`
 
 ## Common Language Runtime
 
-Custom attributes let you extend the metadata of a managed element. For more information, see [Attributes](/dotnet/standard/attributes/index).
-
-### Remarks
-
 The information and syntax presented in this topic is meant to supersede the information presented in [attribute](attributes/attribute.md).
 
 You can define a custom attribute by defining a type and making <xref:System.Attribute> a base class for the type and optionally applying the <xref:System.AttributeUsageAttribute> attribute.
 
-For example, in Microsoft Transaction Server (MTS) 1.0, behavior with respect to transactions, synchronization, load balancing, and so on was specified through custom GUIDs inserted into the type library by using the ODL custom attribute. Hence, a client of an MTS server could determine its characteristics by reading the type library. In the .NET Framework, the analog of the type library is metadata, and the analog of the ODL custom attribute is custom attributes. Also, reading the type library is analogous to using reflection on the types.
-
-For more information, see,
+For more information, see:
 
 - [Attribute Targets](attribute-targets-cpp-component-extensions.md)
 
@@ -204,4 +192,4 @@ ref struct B {};
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](component-extensions-for-runtime-platforms.md)
+[Component Extensions for .NET and UWP](component-extensions-for-runtime-platforms.md)

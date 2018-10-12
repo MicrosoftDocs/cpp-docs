@@ -1,7 +1,7 @@
 ---
 title: "interior_ptr (C++/CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["stdcli::language::interior_ptr", "interior_ptr_cpp", "interior_ptr"]
@@ -120,4 +120,4 @@ int main() {
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

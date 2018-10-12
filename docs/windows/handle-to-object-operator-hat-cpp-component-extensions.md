@@ -1,7 +1,7 @@
 ---
-title: "Handle to Object Operator (^)  (C++ Component Extensions) | Microsoft Docs"
+title: "Handle to Object Operator (^)  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Handle to Object Operator (^)  (C++ Component Extensions)
+# Handle to Object Operator (^)  (C++/CLI and C++/CX)
 
 The *handle declarator* (`^`, pronounced "hat"), modifies the type [specifier](../cpp/overview-of-declarators.md) to mean that the declared object should be automatically deleted when the system determines that the object is no longer accessible.
 
@@ -23,7 +23,7 @@ A variable that is declared with the handle declarator behaves like a pointer to
 
 The compiler uses the COM *reference counting* mechanism to determine if the object is no longer being used and can be deleted. This is possible because an object that is derived from a Windows Runtime interface is actually a COM object. The reference count is incremented when the object is created or copied, and decremented when the object is set to null or goes out of scope. If the reference count goes to zero, the object is automatically and immediately deleted.
 
-The advantage of the handle declarator is that in COM you must explicitly manage the reference count for an object, which is a tedious and error prone process. That is, to increment and decrement the reference count you must call the object's AddRef() and Release() methods. However, if you declare an object with the handle declarator, the Visual C++ compiler generates code that automatically adjusts the reference count.
+The advantage of the handle declarator is that in COM you must explicitly manage the reference count for an object, which is a tedious and error prone process. That is, to increment and decrement the reference count you must call the object's AddRef() and Release() methods. However, if you declare an object with the handle declarator, the compiler generates code that automatically adjusts the reference count.
 
 For information on how to instantiate an object, see [ref new](../windows/ref-new-gcnew-cpp-component-extensions.md).
 
@@ -36,8 +36,6 @@ Compiler option: `/ZW`
 The system uses the CLR *garbage collector* mechanism to determine if the object is no longer being used and can be deleted. The common language runtime maintains a heap on which it allocates objects, and uses managed references (variables) in your program indicate the location of objects on the heap. When an object is no longer used, the memory that it occupied on the heap is freed. Periodically, the garbage collector compacts the heap to better use the freed memory. Compacting the heap can move objects on the heap, which invalidates the locations refered to by managed references. However, the garbage collector is aware of the location of all managed references, and automatically updates them to indicate the current location of the objects on the heap.
 
 Because native C++ pointers (`*`) and references (`&`) are not managed references, the garbage collector cannot automatically update the addresses they point to. To solve this problem, use the handle declarator to specify a variable that the garbage collector is aware of and can update automatically.
-
-In Visual C++ 2002 and Visual C++ 2003, `__gc *` was used to declare an object on the managed heap.  The `^` replaces `__gc *` in the new syntax.
 
 For more information, see [How to: Declare Handles in Native Types](../dotnet/how-to-declare-handles-in-native-types.md).
 
@@ -224,5 +222,5 @@ Compiler option: `/clr`
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)<br/>
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)<br/>
 [Tracking Reference Operator](../windows/tracking-reference-operator-cpp-component-extensions.md)

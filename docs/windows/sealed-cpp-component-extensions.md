@@ -1,7 +1,7 @@
 ---
-title: "sealed  (C++ Component Extensions) | Microsoft Docs"
+title: "sealed  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["sealed_cpp", "sealed"]
@@ -12,12 +12,12 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# sealed  (C++ Component Extensions)
+# sealed  (C++/CLI and C++/CX)
 
 **sealed** is a context-sensitive keyword for ref classes that indicates that a virtual member cannot be overridden, or that a type cannot be used as a base type.
 
 > [!NOTE]
-> The ISO C++11 Standard language has the [final](../cpp/final-specifier.md) keyword, which is supported in Visual Studio. Use **final** on standard classes, and **sealed** on ref classes.
+> The ISO C++11 Standard language introduced the [final](../cpp/final-specifier.md) keyword. Use **final** on standard classes, and **sealed** on ref classes.
 
 ## All Runtimes
 
@@ -40,7 +40,7 @@ The type that's returned by a function.
 
 In the first syntax example, a class is sealed. In the second example, a virtual function is sealed.
 
-The **sealed** keyword is valid for native targets, and also for the Windows Runtime and the common language runtime (CLR). For more information, see [Override Specifiers and Native Compilations](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).
+Use the **sealed** keyword for ref classes and their virtual member functions. For more information, see [Override Specifiers and Native Compilations](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).
 
 You can detect at compile time whether a type is sealed by using the `__is_sealed(type)` type trait. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).
 
@@ -95,7 +95,7 @@ public:
    // the following override generates a compiler error
    virtual void g() override {
       System::Console::WriteLine("Y::g override of I1::g");
-   } 
+   }
    */
 };
 
@@ -137,4 +137,4 @@ public:
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

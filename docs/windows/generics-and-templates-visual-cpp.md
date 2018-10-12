@@ -1,7 +1,7 @@
 ---
-title: "Generics and Templates (Visual C++) | Microsoft Docs"
+title: "Generics and Templates (C++/CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Generics and Templates (Visual C++)
+# Generics and Templates (C++/CLI)
 
 Generics and templates are both language features that provide support for parameterized types. However, they are different and have different uses. This topic provides an overview of the many differences.
 
@@ -49,7 +49,7 @@ The basic difference in generics has implications for building applications that
 
 The following example shows a simple example of using templates and generics together. In this example, the template class passes its parameter through to the generic type. The reverse is not possible.
 
-This idiom could be used when you want to build on an existing generic API with template code that is local to a Visual C++ assembly, or when you need to add an extra layer of parameterization to a generic type, to take advantage of certain features of templates not supported by generics.
+This idiom could be used when you want to build on an existing generic API with template code that is local to a C++/CLI assembly, or when you need to add an extra layer of parameterization to a generic type, to take advantage of certain features of templates not supported by generics.
 
 ### Code
 

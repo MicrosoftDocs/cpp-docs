@@ -1,7 +1,7 @@
 ---
-title: "delegate  (C++ Component Extensions) | Microsoft Docs"
+title: "delegate  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["delegate_cpp", "delegate"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# delegate  (C++ Component Extensions)
+# delegate  (C++/CLI and C++/CX)
 
 Declares a type that represents a function pointer.
 
@@ -118,7 +118,7 @@ For more information on delegates, see
 
 - [How to: Define and Use Delegates (C++/CLI)](../dotnet/how-to-define-and-use-delegates-cpp-cli.md)
 
-- [Generic Delegates (Visual C++)](../windows/generic-delegates-visual-cpp.md)
+- [Generic Delegates (C++/CLI)](../windows/generic-delegates-visual-cpp.md)
 
 ### Requirements
 
@@ -199,4 +199,4 @@ in static func3 11
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

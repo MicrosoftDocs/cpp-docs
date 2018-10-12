@@ -1,7 +1,7 @@
 ---
-title: "property  (C++ Component Extensions) | Microsoft Docs"
+title: "property  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["property_cpp", "property"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# property  (C++ Component Extensions)
+# property  (C++/CLI and C++/CX)
 
 Declares a *property*, which is a member function that behaves and is accessed like a data member or an array element.
 
@@ -213,4 +213,4 @@ test
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

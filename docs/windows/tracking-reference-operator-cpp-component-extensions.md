@@ -1,7 +1,7 @@
 ---
-title: "Tracking Reference Operator (C++ Component Extensions) | Microsoft Docs"
+title: "Tracking Reference Operator (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["%"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Tracking Reference Operator (C++ Component Extensions)
+# Tracking Reference Operator (C++/CLI and C++/CX)
 
 A *tracking reference* (`%`) behaves like an ordinary C++ reference (`&`) except that when an object is assigned to a tracking reference, the object’s reference count is incremented.
 

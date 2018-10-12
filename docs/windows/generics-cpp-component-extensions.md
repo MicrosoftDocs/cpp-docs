@@ -1,7 +1,7 @@
 ---
-title: "Generics  (C++ Component Extensions) | Microsoft Docs"
+title: "Generics  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["generic_cpp", "generic"]
@@ -12,30 +12,30 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Generics  (C++ Component Extensions)
+# Generics  (C++/CLI and C++/CX)
 
-Generics are parameterized types and methods. In this section, find out which generic features are supported by both the Windows Runtime and the common language runtime, and which are supported by only the common language runtime. Also, find out how to author your own generic methods and types in Visual C++, and how to use generic types authored in a .NET Framework language in Visual C++. Finally, this section provides a comparison of generics and C++ templates.
+Generics are parameterized types and methods. In this section, find out which generic features are supported by both the Windows Runtime and the common language runtime, and which are supported by only the common language runtime. Also, find out how to author your own generic methods and types in C++/CLI, and how to use generic types authored in a .NET Framework language in C++/CLI. Finally, this section provides a comparison of generics and C++ templates.
 
 ## In This Section
 
 ### Supported by the Windows Runtime and the Common Language Runtime
 
-[Overview of Generics in Visual C++](../windows/overview-of-generics-in-visual-cpp.md)<br/>
+[Overview of Generics in C++/CLI](../windows/overview-of-generics-in-visual-cpp.md)<br/>
 Information about generics are, the motivation for the language feature, definitions of terms used to describe generics, and information about the use of reference types and value types as type parameters for generics.
 
-[Generic Interfaces (Visual C++)](../windows/generic-interfaces-visual-cpp.md)<br/>
+[Generic Interfaces (C++/CLI)](../windows/generic-interfaces-visual-cpp.md)<br/>
 Information about defining and using generic interfaces.
 
-[Generic Delegates (Visual C++)](../windows/generic-delegates-visual-cpp.md)<br/>
+[Generic Delegates (C++/CLI)](../windows/generic-delegates-visual-cpp.md)<br/>
 Information about defining and using generic delegates.
 
 [Constraints on Generic Type Parameters (C++/CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)<br/>
 Information about using constraints in generic types.
 
 [Consuming Generics (C++/CLI)](../windows/consuming-generics-cpp-cli.md)<br/>
-Information about using generics defined in .NET assemblies, possibly authored in other languages, in Visual C++.
+Information about using generics defined in .NET assemblies, possibly authored in other languages, in C++/CLI.
 
-[Generics and Templates (Visual C++)](../windows/generics-and-templates-visual-cpp.md)<br/>
+[Generics and Templates (C++/CLI)](../windows/generics-and-templates-visual-cpp.md)<br/>
 A comparison of generics and templates, when to use each, and how to combine them usefully.
 
 ### Supported by the Common Language Runtime
@@ -53,4 +53,4 @@ Using the [for each, in](../dotnet/for-each-in.md) keyword on a generic collecti
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

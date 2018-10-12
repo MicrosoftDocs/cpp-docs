@@ -1,7 +1,7 @@
 ---
 title: "Variable Argument Lists (...) (C++/CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # Variable Argument Lists (...) (C++/CLI)
 
-This example shows how you can use the `...` syntax in Visual C++ to implement functions that have a variable number of arguments.
+This example shows how you can use the `...` syntax in C++/CLI to implement functions that have a variable number of arguments.
 
 > [!NOTE]
 > This topic pertains to C++/CLI. For information about using the `...` in ISO Standard C++, see [Ellipses and Variadic Templates](../cpp/ellipses-and-variadic-templates.md) and Ellipses and Default Arguments in [Postfix expressions](../cpp/postfix-expressions.md).

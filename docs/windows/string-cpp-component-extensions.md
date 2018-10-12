@@ -1,7 +1,7 @@
 ---
-title: "String  (C++ Component Extensions) | Microsoft Docs"
+title: "String  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/08/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,17 +11,13 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# String  (C++ Component Extensions)
-
-The Visual C++ compiler supports *strings*, which are objects that represent text as a sequence of characters. Visual C++ supports string variables, whose value is implicit, and literals, whose value is an explicit quoted string.
-
-## All Runtimes
+# String  (C++/CLI and C++/CX)
 
 The Windows Runtime and common language runtime represent strings as objects whose allocated memory is managed automatically. That is, you are not required to explicitly discard the memory for a string when the string variable goes out of scope or your application ends. To indicate that the lifetime of a string object is to be managed automatically, declare the string type with the [handle-to-object (^)](../windows/handle-to-object-operator-hat-cpp-component-extensions.md) modifier.
 
 ## Windows Runtime
 
-The Windows Runtime architecture requires Visual C++ to implement the `String` data type in the `Platform` namespace. For your convenience, Visual C++ also provides the `string` data type, which is a synonym for `Platform::String`, in the `default` namespace.
+The Windows Runtime architecture requires that the `String` data type be located in the `Platform` namespace. For your convenience, Visual C++ also provides the `string` data type, which is a synonym for `Platform::String`, in the `default` namespace.
 
 ### Syntax
 
@@ -40,8 +36,6 @@ Compiler option: `/ZW`
 
 ## Common Language Runtime
 
-This topic discusses how the Visual C++ compiler processes string literals when you run it by using the `/clr` compiler option. To use `/clr`, you must also use the common language runtime (CLR), C++/CLI syntax and managed objects. For more information about `/clr`, see [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md).
-
 When compiling with `/clr`, the compiler will convert string literals to strings of type <xref:System.String>. To preserve backward compatibility with existing code there are two exceptions to this:
 
 - Exception handling. When a string literal is thrown, the compiler will catch it as a string literal.
@@ -50,11 +44,11 @@ When compiling with `/clr`, the compiler will convert string literals to strings
 
 The compiler also has built-in support for three operators, which you can override to customize their behavior:
 
-- System::String ^ operator +( System::String, System::String);
+- System::String^ operator +( System::String, System::String);
 
-- System::String ^ operator +( System::Object, System::String);
+- System::String^ operator +( System::Object, System::String);
 
-- System::String ^ operator +( System::String, System::Object);
+- System::String^ operator +( System::String, System::Object);
 
 When passed a <xref:System.String>, the compiler will box, if necessary, and then concatenate the object (with ToString) with the string.
 
@@ -79,9 +73,9 @@ The following code example demonstrates concatenating and comparing strings.
 using namespace System;
 
 int main() {
-   String ^ a = gcnew String("abc");
-   String ^ b = "def";   // same as gcnew form
-   Object ^ c = gcnew String("ghi");
+   String^ a = gcnew String("abc");
+   String^ b = "def";   // same as gcnew form
+   Object^ c = gcnew String("ghi");
 
    char d[100] = "abc";
 
@@ -99,12 +93,12 @@ int main() {
    // concatenation of a System::String and string literal
    Console::WriteLine(a + "zzz");
 
-   // you can append to a System::String ^
+   // you can append to a System::String^
    Console::WriteLine(a + 1);
    Console::WriteLine(a + 'a');
    Console::WriteLine(a + 3.1);
 
-   // test System::String ^ for equality
+   // test System::String^ for equality
    a += b;
    Console::WriteLine(a);
    a = b;
@@ -115,12 +109,12 @@ int main() {
    if (a != b)  
       Console::WriteLine("a and b are not equal");
 
-   // System:String ^ and tracking reference
+   // System:String^ and tracking reference
    String^% rstr1 = a;
    Console::WriteLine(rstr1);
 
-   // testing an empty System::String ^
-   String ^ n;
+   // testing an empty System::String^
+   String^ n;
    if (n == nullptr)  
       Console::WriteLine("n is empty");
 }
@@ -167,29 +161,29 @@ using namespace System;
 void Test_Overload(const char * a) {
    Console::WriteLine("const char * a");
 }
-void Test_Overload(String ^ a) {
-   Console::WriteLine("String ^ a");
+void Test_Overload(String^ a) {
+   Console::WriteLine("String^ a");
 }
 
 // overload will be called instead of compiler defined operator
-String ^ operator +(String ^ a, String ^ b) {
-   return ("overloaded +(String ^ a, String ^ b)");
+String^ operator +(String^ a, String^ b) {
+   return ("overloaded +(String^ a, String^ b)");
 }
 
 // overload will be called instead of compiler defined operator
-String ^ operator +(Object ^ a, String ^ b) {
-   return ("overloaded +(Object ^ a, String ^ b)");
+String^ operator +(Object^ a, String^ b) {
+   return ("overloaded +(Object^ a, String^ b)");
 }
 
 // overload will be called instead of compiler defined operator
-String ^ operator +(String ^ a, Object ^ b) {
-   return ("overloaded +(String ^ a, Object ^ b)");
+String^ operator +(String^ a, Object^ b) {
+   return ("overloaded +(String^ a, Object^ b)");
 }
 
 int main() {
-   String ^ a = gcnew String("abc");
-   String ^ b = "def";   // same as gcnew form
-   Object ^ c = gcnew String("ghi");
+   String^ a = gcnew String("abc");
+   String^ b = "def";   // same as gcnew form
+   Object^ c = gcnew String("ghi");
 
    char d[100] = "abc";
 
@@ -203,13 +197,13 @@ int main() {
 ```
 
 ```Output
-overloaded +(String ^ a, String ^ b)
+overloaded +(String^ a, String^ b)
 
-overloaded +(String ^ a, Object ^ b)
+overloaded +(String^ a, Object^ b)
 
-overloaded +(Object ^ a, String ^ b)
+overloaded +(Object^ a, String^ b)
 
-String ^ a
+String^ a
 
 const char * a
 ```
@@ -265,6 +259,6 @@ System.String
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)<br/>
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)<br/>
 [String and Character Literals](../cpp/string-and-character-literals-cpp.md)<br/>
 [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md)

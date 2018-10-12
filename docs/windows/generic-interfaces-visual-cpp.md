@@ -1,7 +1,7 @@
 ---
-title: "Generic Interfaces (Visual C++) | Microsoft Docs"
+title: "Generic Interfaces (C++/CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Generic Interfaces (Visual C++)
+# Generic Interfaces (C++/CLI)
 
 The restrictions that apply to type parameters on classes are the same as those that apply to type parameters on interfaces (see [Generic Classes (C++/CLI)](../windows/generic-classes-cpp-cli.md)).
 

@@ -1,7 +1,7 @@
 ---
-title: "enum class  (C++ Component Extensions) | Microsoft Docs"
+title: "enum class  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -10,7 +10,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# enum class  (C++ Component Extensions)
+# enum class  (C++/CLI and C++/CX)
 
 Declares an enumeration at namespace scope, which is a user-defined type consisting of a set of named constants called enumerators.
 
@@ -136,13 +136,13 @@ Managed enumerator names (*identifiers*) are not injected into the scope where t
 
 The enumerators of a standard enum are strongly injected into the enclosing scope.  That is, if there is another symbol with the same name as an enumerator in the enclosing scope, the compiler will generate an error.
 
-In Visual C++ 2002 and Visual C++ 2003, enumerators were weakly injected (visible in the enclosing scope unless there was another identifier with the same name).
+In Visual Studio 2002 and Visual Studio 2003, enumerators were weakly injected (visible in the enclosing scope unless there was another identifier with the same name).
 
-If a standard C++ enum is defined (without **class** or **struct**), compiling with `/clr` will cause the enumeration to be compiled as a managed enum.  The enumeration still has the semantics of an unmanaged enumeration.  Note, the compiler injects an attribute, `Microsoft::VisualC::NativeEnumAttribute`, which the Visual C++ compiler recognizes, to identify a programmer's intent for the enum to be a native enum.  Other compilers will simply see the standard enum as a managed enum.
+If a standard C++ enum is defined (without **class** or **struct**), compiling with `/clr` will cause the enumeration to be compiled as a managed enum.  The enumeration still has the semantics of an unmanaged enumeration.  Note, the compiler injects an attribute, `Microsoft::VisualC::NativeEnumAttribute` to identify a programmer's intent for the enum to be a native enum.  Other compilers will simply see the standard enum as a managed enum.
 
 A named, standard enum compiled with `/clr` will be visible in the assembly as a managed enum, and can be consumed by any other managed compiler.   However, an unnamed standard enum will not be publicly visible from the assembly.
 
-In Visual C++ 2002 and Visual C++ 2003, a standard enum used as the type in a function parameter:
+In Visual Studio 2002 and Visual Studio 2003, a standard enum used as the type in a function parameter:
 
 ```cpp
 // mcppv2_enum.cpp
@@ -221,4 +221,4 @@ convert to int: 1
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

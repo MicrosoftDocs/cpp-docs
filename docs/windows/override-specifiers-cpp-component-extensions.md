@@ -1,7 +1,7 @@
 ---
-title: "Override Specifiers  (C++ Component Extensions) | Microsoft Docs"
+title: "Override Specifiers  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Override Specifiers  (C++ Component Extensions)
+# Override Specifiers  (C++/CLI and C++/CX)
 
 *Override specifiers* modify how inherited types and members of inherited types behave in derived types.
 
@@ -53,4 +53,4 @@ Compiler option: `/clr`
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)
