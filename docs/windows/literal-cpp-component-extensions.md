@@ -1,7 +1,7 @@
 ---
-title: "literal (C++ Component Extensions) | Microsoft Docs"
+title: "literal (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["literal", "literal_cpp"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# literal (C++ Component Extensions)
+# literal (C++/CLI and C++/CX)
 
 A variable (data member) marked as **literal** in a **/clr** compilation is the native equivalent of a **static const** variable.
 

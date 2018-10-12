@@ -76,7 +76,7 @@ The body of the method, which may refer to the type parameter identifiers.
 
 Generic functions are functions declared with a generic type parameter. They may be methods in a class or struct, or standalone functions. A single generic declaration implicitly declares a family of functions that differ only in the substitution of a different actual type for the generic type parameter.
 
-In Visual C++, class or struct constructors may not be declared with generic type parameters.
+A class or struct constructor may not be declared with generic type parameters.
 
 When called, the generic type parameter is replaced by an actual type. The actual type may be explicitly specified in angled brackets using syntax similar to a template function call. If called without the type parameters, the compiler will attempt to deduce the actual type from the parameters supplied in the function call. If the intended type argument cannot be deduced from the parameters used, the compiler will report an error.
 

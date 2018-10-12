@@ -1,7 +1,7 @@
 ---
-title: "Platform, default, and cli Namespaces  (C++ Component Extensions) | Microsoft Docs"
+title: "Platform, default, and cli Namespaces  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["lang", "cli"]
@@ -12,13 +12,13 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Platform, default, and cli Namespaces  (C++ Component Extensions)
+# Platform, default, and cli Namespaces  (C++/CLI and C++/CX)
 
 A namespace qualifies the names of language elements so the names do not conflict with otherwise identical names elsewhere in the source code. For example, a name collision might prevent the compiler from recognizing [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md). Namespaces are used by the compiler but are not preserved in the compiled assembly.
 
 ## All Runtimes
 
-Visual C++ provides a default namespace for your project when you create the project. You can manually rename the namespace, although in Windows Runtime the name of the .winmd file must match the name of the root namespace.
+Visual Studio provides a default namespace for your project when you create the project. You can manually rename the namespace, although in C++/CX the name of the .winmd file must match the name of the root namespace.
 
 ## Windows Runtime
 

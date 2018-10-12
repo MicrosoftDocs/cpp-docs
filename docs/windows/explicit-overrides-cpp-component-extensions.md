@@ -1,7 +1,7 @@
 ---
-title: "Explicit Overrides  (C++ Component Extensions) | Microsoft Docs"
+title: "Explicit Overrides  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Explicit Overrides  (C++ Component Extensions)
+# Explicit Overrides  (C++/CLI and C++/CX)
 
 This topic discusses how to explicitly override a member of a base class or interface. A named (explicit) override should only be used to override a method with a derived method that has a different name.
 

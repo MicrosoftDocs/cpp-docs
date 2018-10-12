@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # Attributes Alphabetical Reference
 
-The following attributes are available in Visual C++.
+The following attributes are available in the Microsoft C++ compiler:
 
 |Attribute|Description|
 |---------------|-----------------|

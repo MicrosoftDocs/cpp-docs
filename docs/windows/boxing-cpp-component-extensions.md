@@ -1,7 +1,7 @@
 ---
-title: "Boxing  (C++ Component Extensions) | Microsoft Docs"
+title: "Boxing  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,9 +11,9 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Boxing  (C++ Component Extensions)
+# Boxing  (C++/CLI and C++/CX)
 
-The Visual C++ compiler can convert value types to objects in a process called *boxing*, and convert objects to value types in a process called *unboxing*.
+The conversion of value types to objects is called *boxing*, and the conversion of objects to value types is called *unboxing*.
 
 ## All Runtimes
 
@@ -75,7 +75,7 @@ For more information, see [Boxing (C++/CX)](https://msdn.microsoft.com/library/w
 
 ## Common Language Runtime
 
-The Visual C++ compiler now boxes value types to <xref:System.Object>. This is possible because of a compiler-defined conversion to convert value types to <xref:System.Object>.
+The compiler boxes value types to <xref:System.Object>. This is possible because of a compiler-defined conversion to convert value types to <xref:System.Object>.
 
 Boxing and unboxing enable value types to be treated as objects. Value types, including both struct types and built-in types such as int, can be converted to and from the type <xref:System.Object>.
 

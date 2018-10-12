@@ -1,7 +1,7 @@
 ---
-title: "Classes and Structs  (C++ Component Extensions) | Microsoft Docs"
+title: "ref class and ref struct (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,9 +11,9 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Classes and Structs  (C++ Component Extensions)
+# ref class and ref struct  (C++/CLI and C++/CX)
 
-Declares a class or struct whose *object lifetime* is administered automatically. When the object is no longer accessible or goes out of scope, Visual C++ automatically discards the memory that is allocated to the object.
+The **ref class** or **ref struct** extensions declare a class or struct whose *object lifetime* is administered automatically. When the object is no longer accessible or goes out of scope, the memory is released.
 
 ## All Runtimes
 
@@ -47,7 +47,7 @@ The name of the class or struct.
 *base_type*<br/>
 (Optional) A base type. However, a value type cannot act as a base type.
 
-For more information, see the language-specific descriptions of this parameter in the Windows Runtime and Common Language Runtimesections.
+For more information, see the language-specific descriptions of this parameter in the Windows Runtime and Common Language Runtime sections.
 
 ### Remarks
 

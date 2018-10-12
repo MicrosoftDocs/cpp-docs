@@ -1,7 +1,7 @@
 ---
-title: "new (new slot in vtable)  (C++ Component Extensions) | Microsoft Docs"
+title: "new (new slot in vtable)  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# new (new slot in vtable)  (C++ Component Extensions)
+# new (new slot in vtable)  (C++/CLI and C++/CX)
 
 The **new** keyword indicates that a virtual member will get a new slot in the vtable.
 
@@ -105,4 +105,5 @@ E::f() called
 ## See Also
 
 [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)<br/>
+
 [Override Specifiers](../windows/override-specifiers-cpp-component-extensions.md)

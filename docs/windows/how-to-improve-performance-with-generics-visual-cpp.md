@@ -1,7 +1,7 @@
 ---
-title: "How to: Improve Performance with Generics (Visual C++) | Microsoft Docs"
+title: "How to: Improve Performance with Generics (C++/CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# How to: Improve Performance with Generics (Visual C++)
+# How to: Improve Performance with Generics (C++/CLI)
 
 With generics, you can create reusable code based on a type parameter. The actual type of the type parameter is deferred until called by client code. For more information on generics, see [Generics](../windows/generics-cpp-component-extensions.md).
 

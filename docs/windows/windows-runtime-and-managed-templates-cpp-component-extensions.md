@@ -1,7 +1,7 @@
 ---
-title: "Windows Runtime and Managed Templates (C++ Component Extensions) | Microsoft Docs"
+title: "Windows Runtime and Managed Templates (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Windows Runtime and Managed Templates (C++ Component Extensions)
+# Windows Runtime and Managed Templates (C++/CLI and C++/CX)
 
 Templates enable you to define a prototype of a Windows Runtime or common language runtime type, and then instantiate variations of that type by using different template type parameters.
 
@@ -39,7 +39,7 @@ Compiler option: `/clr`
 
 ### Examples
 
-It is possible to instantiate a generic type with a managed type template parameter, but you cannot instantiate a managed template with a generic type template parameter. This is because generic types are resolved at runtime. For more information, see [Generics and Templates (Visual C++)](../windows/generics-and-templates-visual-cpp.md).
+It is possible to instantiate a generic type with a managed type template parameter, but you cannot instantiate a managed template with a generic type template parameter. This is because generic types are resolved at runtime. For more information, see [Generics and Templates (C++/CLI)](../windows/generics-and-templates-visual-cpp.md).
 
 ```cpp
 // managed_templates.cpp

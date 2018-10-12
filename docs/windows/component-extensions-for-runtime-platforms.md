@@ -1,7 +1,7 @@
 ---
-title: "Component Extensions for Runtime Platforms | Microsoft Docs"
+title: "Component Extensions for .NET and UWP | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,21 +11,22 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Component Extensions for Runtime Platforms
+# Component Extensions for .NET and UWP
 
-Visual C++ provides language extensions to help you program against runtime platforms. By using C++/CX, you can program Universal Windows Platform apps and components that compile to native code. Although you can create Universal Windows Platform apps by programming directly against the Windows Runtime COM interfaces, by using C++/CX, you can work with constructors, exceptions, and other modern C++ programming idioms. To enable C++ programming in a managed execution environment on the .NET platform, you can use C++/CLI.
+The C++ standard allows compiler vendors to provide non-standard extensions to the language. Microsoft provides extensions to help you connect native C++ code to code that runs on the .NET Framework or the Universal Windows Platform (UWP). The .NET extensions are called C++/CLI and produce code that executes in the .NET managed execution environment that is called the Common Language Runtime (CLR). The UWP extensions are called C++/CX and they produce native machine code.
+
+> [!NOTE]
+> For new applications, we recommend using C++/WinRT rather than C++/CX. C++/WinRT is a new, standard C++17 language projection for Windows Runtime APIs. We will continue to support C++/CX and WRL, but highly recommend that new applications use C++/WinRT. For more information, see [C++/WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index).
 
 ### Two runtimes, one set of extensions
 
-C++/CX is a subset of C++/CLI. For extensions that are common to C++/CX and C++/CLI, the semantics depend on whether you are targeting the common language runtime (CLR) or the Windows Runtime. To compile your app to run on the Windows Runtime, specify the `/ZW` compiler option. To compile it to run on the CLR, specify the `/clr` compiler option. These switches are set automatically when you use Visual Studio to create a project.
-
-For more information about how to create Universal Windows Platform apps in C++, see [Roadmap for Windows Runtime apps using C++](https://msdn.microsoft.com/library/windows/apps/hh700360.aspx).
-
 C++/CLI extends the ISO/ANSI C++ standard, and is defined under the Ecma C++/CLI Standard. For more information, see [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
+
+The C++/CX extensions are a subset of C++/CLI. Although the extension syntax is identical in most cases, the code that is generated depends on whether you specify the `/ZW` compiler option to target UWP, or the `/clr` option to target .NET. These switches are set automatically when you use Visual Studio to create a project.
 
 ## Data Type Keywords
 
-The language extensions include *aggregate keywords*, which are keywords that consist of two tokens separated by white space. The tokens might have one meaning when they are used separately, and another meaning when they are used together. For example, the word "ref" is an ordinary identifier, and the word "class" is a keyword that declares a native class. But when these words are combined to form **ref class**, the resulting aggregate keyword declares an entity that is known as a *runtime class*.
+The language extensions include *aggregate keywords*, which consist of two tokens separated by white space. The tokens might have one meaning when they are used separately, and another meaning when they are used together. For example, the word "ref" is an ordinary identifier, and the word "class" is a keyword that declares a native class. But when these words are combined to form **ref class**, the resulting aggregate keyword declares an entity that is known as a *runtime class*.
 
 The extensions also include *context-sensitive* keywords. A keyword is treated as context-sensitive depending on the kind of statement that contains it, and its placement in that statement. For example, the token "property" can be an identifier, or it can declare a special kind of public class member.
 
@@ -38,7 +39,7 @@ The following table lists keywords in the C++ language extension.
 |**interface class**<br /><br /> **interface struct**|No|Declares an interface.|[interface class](../windows/interface-class-cpp-component-extensions.md)|
 |**enum class**<br /><br /> **enum struct**|No|Declares an enumeration.|[enum class](../windows/enum-class-cpp-component-extensions.md)|
 |**property**|Yes|Declares a property.|[property](../windows/property-cpp-component-extensions.md)|
-|**delegate**|Yes|Declares a delegate.|[delegate  (C++ Component Extensions)](../windows/delegate-cpp-component-extensions.md)|
+|**delegate**|Yes|Declares a delegate.|[delegate  (C++/CLI and C++/CX)](../windows/delegate-cpp-component-extensions.md)|
 |**event**|Yes|Declares an event.|[event](../windows/event-cpp-component-extensions.md)|
 
 ## Override Specifiers

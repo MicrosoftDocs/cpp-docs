@@ -1,7 +1,7 @@
 ---
-title: "safe_cast (C++ Component Extensions) | Microsoft Docs"
+title: "safe_cast (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["safe_cast", "safe_cast_cpp", "stdcli::language::safe_cast"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# safe_cast (C++ Component Extensions)
+# safe_cast (C++/CLI and C++/CX)
 
 The **safe_cast** operation returns the specified expression as the specified type, if successful; otherwise, throws `InvalidCastException`.
 
@@ -23,11 +23,7 @@ The **safe_cast** operation returns the specified expression as the specified ty
 ### Syntax
 
 ```cpp
-[default]:: safe_cast<
-type-id
->(
-expression
-)  
+[default]:: safe_cast<type-id>(expression)  
 ```
 
 ## Windows Runtime
@@ -37,11 +33,7 @@ expression
 ### Syntax
 
 ```cpp
-[default]:: safe_cast<
-type-id
->(
-expression
-)  
+[default]:: safe_cast<type-id>(expression)  
 ```
 
 ### Parameters

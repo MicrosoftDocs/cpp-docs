@@ -1,7 +1,7 @@
 ---
 title: "Type Forwarding (C++/CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -15,17 +15,9 @@ ms.workload: ["cplusplus", "uwp"]
 
 *Type forwarding* allows you to move a type from one assembly (assembly A) into another assembly (assembly B), such that, it is not necessary to recompile clients that consume assembly A.
 
-## All Platforms
-
-This feature is not supported in all runtimes.
-
 ## Windows Runtime
 
 This feature is not supported in the Windows Runtime.
-
-### Requirements
-
-Compiler option: `/ZW`
 
 ## Common Language Runtime
 
@@ -33,7 +25,7 @@ The following code example demonstrates how to use type forwarding.
 
 ### Syntax
 
-```
+```cpp
 #using "new.dll"
 [assembly:TypeForwardedTo(type::typeid)];
 ```
@@ -86,7 +78,7 @@ So, if a source code file that is used to build assembly A.dll contains a type d
 
 3. Delete the `MyClass` type definition from the source code used to build A.dll, and replace it with the following:
 
-    ```
+    ```cpp
     #using "B.dll"
     [assembly:TypeForwardedTo(MyClass::typeid)];
     ```

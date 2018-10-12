@@ -1,5 +1,5 @@
 ---
-title: "Generic Delegates (Visual C++) | Microsoft Docs"
+title: "Generic Delegates (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,9 +11,9 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Generic Delegates (Visual C++)
+# Generic Delegates (C++/CLI)
 
-You can use generic type parameters with delegates. For more information on delegates, see [delegate  (C++ Component Extensions)](../windows/delegate-cpp-component-extensions.md).
+You can use generic type parameters with delegates. For more information on delegates, see [delegate  (C++/CLI and C++/CX)](../windows/delegate-cpp-component-extensions.md).
 
 ## Syntax
 

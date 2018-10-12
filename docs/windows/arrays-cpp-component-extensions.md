@@ -1,7 +1,7 @@
 ---
-title: "Arrays (C++ Component Extensions) | Microsoft Docs"
+title: "Arrays (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["cli::array", "details::array", "lang::array"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Arrays (C++ Component Extensions)
+# Arrays (C++/CLI and C++/CX)
 
 The `Platform::Array<T>` type in C++/CX, or the **array** keyword in C++/CLI, declares an array of a specified type and initial value.
 

@@ -1,7 +1,7 @@
 ---
 title: "Consuming Generics (C++/CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # Consuming Generics (C++/CLI)
 
-Generics authored in one .NET language may be used in other .NET languages. Unlike templates, a generic in a compiled assembly still remains generic. Thus, one may instantiate the generic type in a different assembly and even in a different language than the assembly in which the generic type was defined.
+Generics authored in one .NET (or UWP) language may be used in other languages. Unlike templates, a generic in a compiled assembly still remains generic. Thus, one may instantiate the generic type in a different assembly and even in a different language than the assembly in which the generic type was defined.
 
 ## Example
 

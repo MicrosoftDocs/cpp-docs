@@ -1,7 +1,7 @@
 ---
-title: "Attribute Targets (C++ Component Extensions) | Microsoft Docs"
+title: "Attribute Targets (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Attribute Targets (C++ Component Extensions)
+# Attribute Targets (C++/CLI and C++/CX)
 
 Attribute usage specifiers let you specify attribute targets.  Each attribute is defined to apply to certain language elements. For example, an attribute might be defined to apply only to classes and structs.  The following list shows the possible syntactic elements on which a custom attribute can be used. Combinations of these values (using logical or) may be used.
 

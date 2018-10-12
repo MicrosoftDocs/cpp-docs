@@ -1,7 +1,7 @@
 ---
 title: "pin_ptr (C++/CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["pin_ptr_cpp", "stdcli::language::pin_ptr", "pin_ptr"]

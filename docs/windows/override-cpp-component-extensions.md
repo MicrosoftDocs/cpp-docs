@@ -1,5 +1,5 @@
 ---
-title: "override  (C++ Component Extensions) | Microsoft Docs"
+title: "override  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# override  (C++ Component Extensions)
+# override  (C++/CLI and C++/CX)
 
 The **override** context-sensitive keyword indicates that a member of a type overrides a base class or a base interface member.
 

@@ -1,7 +1,7 @@
 ---
-title: "interface class  (C++ Component Extensions) | Microsoft Docs"
+title: "interface class  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["interface_CPP"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# interface class  (C++ Component Extensions)
+# interface class  (C++/CLI and C++/CX)
 
 Declares an interface.  For information on native interfaces, see [__interface](../cpp/interface.md).
 
@@ -54,7 +54,7 @@ For more information, see:
 
 - [Interface Static Constructor](../dotnet/how-to-define-an-interface-static-constructor-cpp-cli.md)
 
-- [Generic Interfaces (Visual C++)](../windows/generic-interfaces-visual-cpp.md)
+- [Generic Interfaces (C++/CLI)](../windows/generic-interfaces-visual-cpp.md)
 
 For information on other CLR types, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md).
 

@@ -1,7 +1,7 @@
 ---
-title: "nullptr  (C++ Component Extensions) | Microsoft Docs"
+title: "nullptr  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# nullptr  (C++ Component Extensions)
+# nullptr  (C++/CLI and C++/CX)
 
 The **nullptr** keyword represents a *null pointer value*. Use a null pointer value to indicate that an object handle, interior pointer, or native pointer type does not point to an object.
 

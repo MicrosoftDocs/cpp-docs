@@ -1,7 +1,7 @@
 ---
 title: "__identifier (C++/CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["__identifier", "__identifier_cpp"]
@@ -14,16 +14,14 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # __identifier (C++/CLI)
 
-Enables the use of Visual C++ keywords as identifiers.
+Enables the use of C++ keywords as identifiers.
 
 ## All Platforms
 
 ### Syntax
 
 ```cpp
-__identifier(
-Visual_C++_keyword
-)  
+__identifier(C++_keyword)  
 ```
 
 ### Remarks
@@ -40,7 +38,7 @@ Compiler option: `/ZW`
 
 **Example**
 
-In the following example, a class named **template** is created in C# and distributed as a DLL. In the Visual C++ program that uses the **template** class, the **__identifier** keyword conceals the fact that **template** is a standard C++ keyword.
+In the following example, a class named **template** is created in C# and distributed as a DLL. In the C++/CLI program that uses the **template** class, the **__identifier** keyword conceals the fact that **template** is a standard C++ keyword.
 
 ```cs
 // identifier_template.cs
@@ -72,7 +70,7 @@ Compiler option: `/clr`
 
 ### Examples
 
-In the following example, a class named **template** is created in C# and distributed as a DLL. In the Visual C++ program that uses the **template** class, the **__identifier** keyword conceals the fact that **template** is a standard C++ keyword.
+In the following example, a class named **template** is created in C# and distributed as a DLL. In the C++/CLI program that uses the **template** class, the **__identifier** keyword conceals the fact that **template** is a standard C++ keyword.
 
 ```cs
 // identifier_template.cs
