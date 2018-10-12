@@ -1,10 +1,10 @@
 ---
 title: "try-except Statement | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/05/2018"
+ms.date: "10/09/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
-f1_keywords: ["_abnormal_termination_cpp", "_exception_code_cpp", "EXCEPTION_CONTINUE_SEARCH", "_exception_info", "__except", "EXCEPTION_CONTINUE_EXECUTION", "_exception_code", "__except_cpp", "_exception_info_cpp", "EXCEPTION_EXECUTE_HANDLER", "_abnormal_termination"]
+f1_keywords: ["_abnormal_termination_cpp", "_exception_code_cpp", "EXCEPTION_CONTINUE_SEARCH", "_exception_info", "__except", "_except", "EXCEPTION_CONTINUE_EXECUTION", "_exception_code", "__except_cpp", "_exception_info_cpp", "EXCEPTION_EXECUTE_HANDLER", "_abnormal_termination"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__try keyword [C++]", "EXCEPTION_CONTINUE_EXECUTION macro", "EXCEPTION_CONTINUE_SEARCH macro", "EXCEPTION_EXECUTE_HANDLER macro", "GetExceptionCode function", "try-catch keyword [C++], try-except keyword [C++]", "_exception_code keyword [C++]", "try-except keyword [C++]", "_exception_info keyword [C++]", "_abnormal_termination keyword [C++]"]
 ms.assetid: 30d60071-ea49-4bfb-a8e6-7a420de66381
@@ -59,6 +59,8 @@ Because the **__except** expression is evaluated as a C expression, it is limite
 Each application can have its own exception handler.
 
 It is not valid to jump into a **__try** statement, but valid to jump out of one. The exception handler is not called if a process is terminated in the middle of executing a **try-except** statement.
+
+For compatibility with previous versions, **_try**, **_except**, and **_leave** are synonyms for **__try**, **__except**, and **__leave** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 ### The __leave Keyword
 

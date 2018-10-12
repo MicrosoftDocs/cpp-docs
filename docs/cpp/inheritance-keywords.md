@@ -61,6 +61,8 @@ regardless of command-line options or pragmas, pointers to members of `class S` 
 > [!NOTE]
 >  The same forward declaration of a class pointer-to-member representation should occur in every translation unit that declares pointers to members of that class, and the declaration should occur before the pointers to members are declared.
 
+For compatibility with previous versions, **_single_inheritance**, **_multiple_inheritance**, and **_virtual_inheritance** are synonyms for **__single_inheritance**, **__multiple_inheritance**, and **__virtual_inheritance** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
+
 **END Microsoft Specific**
 
 ## See also

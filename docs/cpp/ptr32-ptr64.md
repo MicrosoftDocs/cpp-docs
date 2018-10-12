@@ -1,10 +1,10 @@
 ---
 title: "__ptr32, __ptr64 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/09/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
-f1_keywords: ["__ptr32_cpp", "__ptr64_cpp"]
+f1_keywords: ["__ptr32_cpp", "__ptr64_cpp", "__ptr32", "__ptr64", "_ptr32", "_ptr64"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__ptr64 keyword [C++]", "_ptr32 keyword [C++]", "ptr32 keyword [C++]", "ptr64 keyword [C++]", "_ptr64 keyword [C++]", "__ptr32 keyword [C++]"]
 ms.assetid: afb563d8-7458-4fe7-9c30-bd4b5385a59f
@@ -29,6 +29,8 @@ On a 32-bit system, a pointer declared with **__ptr64** is truncated to a 32-bit
 
 > [!NOTE]
 > You cannot use **__ptr32** or **__ptr64** when compiling with **/clr:pure**. Otherwise, Compiler Error C2472 will be generated. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
+
+For compatibility with previous versions, **_ptr32** and **_ptr64** are synonyms for **__ptr32** and **__ptr64** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 ## Example
 

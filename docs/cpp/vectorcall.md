@@ -1,10 +1,12 @@
 ---
 title: "__vectorcall | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/10/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
+f1_keywords: ["__vectorcall_cpp", "__vectorcall", "_vectorcall"]
 dev_langs: ["C++"]
+helpviewer_keywords: ["__vectorcall keyword", "__vectorcall"]
 ms.assetid: 1c95ed59-86c6-4857-b4ed-10519193f851
 author: "mikeblome"
 ms.author: "mblome"
@@ -70,6 +72,8 @@ The **__vectorcall** calling convention modifier must be specified when a pointe
 ```cpp
 typedef __m256 (__vectorcall * vcfnptr)(double, double, double, double);
 ```
+
+For compatibility with previous versions, **_vectorcall** is a synonym for **__vectorcall** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 ## __vectorcall convention on x64
 

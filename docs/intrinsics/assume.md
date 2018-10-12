@@ -1,10 +1,10 @@
 ---
 title: "__assume | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/09/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
-f1_keywords: ["__assume", "__assume_cpp"]
+f1_keywords: ["__assume", "_assume", "__assume_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__assume keyword [C++]"]
 ms.assetid: d8565123-b132-44b1-8235-5a8c8bff85a7
@@ -45,6 +45,8 @@ If the `__assume` statement is written as a contradiction (an expression that al
 Use `__assume` in an [ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) only when the assert is not recoverable. Do not use `__assume` in an assert for which you have subsequent error recovery code because the compiler might optimize away the error-handling code.
 
 The `__assume(0)` statement is a special case. Use `__assume(0)` to indicate a code path that cannot be reached. The following example shows how to use `__assume(0)` to indicate that the default case of a switch statement cannot be reached. This shows the most typical use of `__assume(0)`.
+
+For compatibility with previous versions, **_assume** is a synonym for **__assume** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 ## Requirements
 

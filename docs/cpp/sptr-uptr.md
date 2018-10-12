@@ -1,10 +1,10 @@
 ---
 title: "__sptr, __uptr | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/10/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
-f1_keywords: ["__uptr_cpp", "__sptr_cpp"]
+f1_keywords: ["__uptr_cpp", "__sptr_cpp", "__uptr", "__sptr", "_uptr", "_sptr"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__sptr modifier", "__uptr modifier"]
 ms.assetid: c7f5f3b2-9106-4a0b-a6de-d1588ab153ed
@@ -31,6 +31,8 @@ void MyFunction(char * __uptr __ptr32 myValue);
 ```
 
 Use the **__sptr** and **__uptr** modifiers with pointer declarations. Use the modifiers in the position of a [pointer type qualifier](../c-language/pointer-declarations.md), which means the modifier must follow the asterisk. You cannot use the modifiers with [pointers to members](../cpp/pointers-to-members.md). The modifiers do not affect non-pointer declarations.
+
+For compatibility with previous versions, **_sptr** and **_uptr** are synonyms for **__sptr** and **__uptr** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 ## Example
 

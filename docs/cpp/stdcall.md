@@ -1,10 +1,10 @@
 ---
 title: "__stdcall | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/05/2018"
+ms.date: "10/10/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
-f1_keywords: ["__stdcall_cpp"]
+f1_keywords: ["__stdcall_cpp", "__stdcall", "_stdcall"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__stdcall keyword [C++]"]
 ms.assetid: e212594b-1827-4d07-9527-7d412b300df8
@@ -35,6 +35,8 @@ The following list shows the implementation of this calling convention.
 |Case-translation convention|None|
 
 The [/Gz](../build/reference/gd-gr-gv-gz-calling-convention.md) compiler option specifies **__stdcall** for all functions not explicitly declared with a different calling convention.
+
+For compatibility with previous versions, **_stdcall** is a synonym for **__stdcall** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 Functions declared using the **__stdcall** modifier return values the same way as functions declared using [__cdecl](../cpp/cdecl.md).
 

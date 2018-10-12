@@ -1,10 +1,10 @@
 ---
 title: "__asm | Microsoft Docs"
 ms.custom: ""
-ms.date: "08/30/2018"
+ms.date: "10/09/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
-f1_keywords: ["__asm", "__asm_cpp"]
+f1_keywords: ["__asm", "_asm", "__asm_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__asm keyword [C++], vs. asm blocks", "__asm keyword [C++]"]
 ms.assetid: 77ff3bc9-a492-4b5e-85e1-fa4e414e79cd
@@ -46,6 +46,8 @@ __asm int 3
 did not cause native code to be generated when compiled with **/clr**; the compiler translated the instruction to a CLR break instruction.
 
 `__asm int 3` now results in native code generation for the function. If you want a function to cause a break point in your code and if you want that function compiled to MSIL, use [__debugbreak](../../intrinsics/debugbreak.md).
+
+For compatibility with previous versions, **_asm** is a synonym for **__asm** unless compiler option [/Za \(Disable language extensions)](../../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 ## Example
 
