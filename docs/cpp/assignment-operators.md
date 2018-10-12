@@ -16,18 +16,18 @@ ms.workload: ["cplusplus"]
 
 ## Syntax
 
-```
-expression assignment-operator expression 
-assignment-operator : one of
-   =   *=   /=   %=   +=   -=   <<=   >>=   &=   ^=   |=
-```
+*expression* *assignment-operator* *expression*
+
+*assignment-operator* : one of<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>=   *=   /=   %=   +=   -=   \<\<=   >>=   &=   ^=   \|=</strong>
 
 ## Remarks
 
 Assignment operators store a value in the object designated by the left operand. There are two kinds of assignment operations:
 
-1. simple assignment, in which the value of the second operand is stored in the object specified by the first operand.
-1. compound assignment, in which an arithmetic, shift, or bitwise operation is performed prior to storing the result.
+1. *simple assignment*, in which the value of the second operand is stored in the object specified by the first operand.
+
+1. *compound assignment*, in which an arithmetic, shift, or bitwise operation is performed prior to storing the result.
 
 All assignment operators in the following table except the = operator are compound assignment operators.
 
@@ -85,11 +85,11 @@ int main() {
 
 ## Simple assignment
 
-The simple assignment operator (=) causes the value of the second operand to be stored in the object specified by the first operand. If both objects are of arithmetic types, the right operand is converted to the type of the left, prior to storing the value.
+The simple assignment operator (**=**) causes the value of the second operand to be stored in the object specified by the first operand. If both objects are of arithmetic types, the right operand is converted to the type of the left, prior to storing the value.
 
-Objects of const and volatile types can be assigned to l-values of types that are just volatile or that are neither const nor volatile.
+Objects of **const** and **volatile** types can be assigned to l-values of types that are just **volatile** or that are neither **const** nor **volatile**.
 
-Assignment to objects of class type (struct, union, and class types) is performed by a function named operator=. The default behavior of this operator function is to perform a bitwise copy; however, this behavior can be modified using overloaded operators. (See [Overloaded Operators](../cpp/operator-overloading.md) for more information.)
+Assignment to objects of class type (struct, union, and class types) is performed by a function named `operator=`. The default behavior of this operator function is to perform a bitwise copy; however, this behavior can be modified using overloaded operators. See [Operator overloading](../cpp/operator-overloading.md) for more information. In addition, class types can have *copy assignment* and *move assignment* operators. For more information, see [Copy constructors and copy assignment operators](copy-constructors-and-copy-assignment-operators-cpp.md) and [Move constructors and move assignment operators](move-constructors-and-move-assignment-operators-cpp.md).
 
 An object of any unambiguously derived class from a given base class can be assigned to an object of the base class. The reverse is not true because there is an implicit conversion from derived class to base class but not from base class to derived class. For example:
 
@@ -146,7 +146,7 @@ B = A;
 
 can have one of the following effects:
 
-- Call the function operator= for `UserType2`, provided operator= is provided with a `UserType1` argument.
+- Call the function `operator=` for `UserType2`, provided `operator=` is provided with a `UserType1` argument.
 
 - Call the explicit conversion function `UserType1::operator UserType2`, if such a function exists.
 
@@ -154,13 +154,13 @@ can have one of the following effects:
 
 ## Compound assignment
 
-The compound assignment operators, shown in the table in [Assignment Operators](../cpp/assignment-operators.md), are specified in the form *e1* `op`= *e2*, where *e1* is a modifiable l-value not of const type and *e2* is one of the following:
+The compound assignment operators, shown in the table in [Assignment Operators](#assignment-operators), are specified in the form *e1* *op*= *e2*, where *e1* is a modifiable l-value not of **const** type and *e2* is one of the following:
 
 - An arithmetic type
 
-- A pointer, if `op` is + or -
+- A pointer, if *op* is **+** or **-**
 
-The *e1* `op`= *e2* form behaves as *e1* *= e1* `op` *e2*, but *e1* is evaluated only once.
+The *e1* *op*= *e2* form behaves as *e1* **=** *e1* *op* *e2*, but *e1* is evaluated only once.
 
 Compound assignment to an enumerated type generates an error message. If the left operand is of a pointer type, the right operand must be of a pointer type or it must be a constant expression that evaluates to 0. If the left operand is of an integral type, the right operand must not be of a pointer type.
 
