@@ -1,7 +1,7 @@
 ---
 title: "/Qspectre | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/24/2018"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -21,7 +21,7 @@ Specifies compiler generation of instructions to mitigate certain Spectre varian
 
 ## Remarks
 
-The **/Qspectre** option is available in Visual Studio 2017 version 15.5.5 and later, and in Visual Studio 2015 Update 3 through [KB 4338871](https://support.microsoft.com/en-us/help/4338871/visual-studio-2015-update-3-spectre-variant-1-toolset-qspectre). It causes the compiler to insert instructions to mitigate certain [Spectre security vulnerabilities](https://spectreattack.com/spectre.pdf). These vulnerabilities, called *speculative execution side-channel attacks*, affect many operating systems and modern processors, including processors from Intel, AMD, and ARM.
+The **/Qspectre** option is available in Visual Studio 2017 version 15.5.5 and later, and in Visual Studio 2015 Update 3 through [KB 4338871](https://support.microsoft.com/help/4338871/visual-studio-2015-update-3-spectre-variant-1-toolset-qspectre). It causes the compiler to insert instructions to mitigate certain [Spectre security vulnerabilities](https://spectreattack.com/spectre.pdf). These vulnerabilities, called *speculative execution side-channel attacks*, affect many operating systems and modern processors, including processors from Intel, AMD, and ARM.
 
 The **/Qspectre** option is off by default.
 

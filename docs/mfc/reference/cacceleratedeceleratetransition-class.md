@@ -1,5 +1,5 @@
 ---
-title: "CAccelerateDecelerateTransition Class1 | Microsoft Docs"
+title: "CAccelerateDecelerateTransition Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-mfc"]

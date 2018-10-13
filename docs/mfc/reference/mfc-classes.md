@@ -23,7 +23,7 @@ The classes in the following list are included in the Microsoft Foundation Class
 
 ## In This Section
 
-[CAccelerateDecelerateTransition Class](../../mfc/reference/cacceleratedeceleratetransition-class1.md)<br/>
+[CAccelerateDecelerateTransition Class](../../mfc/reference/cacceleratedeceleratetransition-class.md)<br/>
 Implements an accelerate-decelerate transition.
 
 [CAnimateCtrl Class](../../mfc/reference/canimatectrl-class.md)<br/>
@@ -1098,7 +1098,7 @@ Represents a set of records selected from a data source.
 A view that displays database records in controls.
 
 [CRect Class](../../atl-mfc-shared/reference/crect-class.md)<br/>
-Similar to a Windows [RECT structure](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us).
+Similar to a Windows [RECT structure](rect-structure.md).
 
 [CRectTracker Class](../../mfc/reference/crecttracker-class.md)<br/>
 Enables an item to be displayed, moved, and resized in different fashions.

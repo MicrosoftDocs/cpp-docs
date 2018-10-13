@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 
 The [CTime](../atl-mfc-shared/reference/ctime-class.md) class has constructors that accept system and file times from Win32. If you use `CTime` objects for these purposes, you must modify their initialization accordingly, as described in this article.
 
-For information about the SYSTEMTIME structure, see [SYSTEMTIME](../mfc/reference/systemtime-structure1.md). For information about the FILETIME structure, see [FILETIME](../mfc/reference/filetime-structure.md).
+For information about the SYSTEMTIME structure, see [SYSTEMTIME](../mfc/reference/systemtime-structure.md). For information about the FILETIME structure, see [FILETIME](../mfc/reference/filetime-structure.md).
 
 MFC still provides `CTime` constructors that take time arguments in the MS-DOS style, but, starting in MFC version 3.0, the `CTime` class also supports a constructor that takes a Win32 `SYSTEMTIME` structure and another that takes a Win32 `FILETIME` structure.
 

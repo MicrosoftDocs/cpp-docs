@@ -1,5 +1,5 @@
 ---
-title: "SYSTEMTIME Structure1 | Microsoft Docs"
+title: "SYSTEMTIME Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-mfc"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# SYSTEMTIME Structure1
+# SYSTEMTIME Structure
 
 The `SYSTEMTIME` structure represents a date and time using individual members for the month, day, year, weekday, hour, minute, second, and millisecond.
 
