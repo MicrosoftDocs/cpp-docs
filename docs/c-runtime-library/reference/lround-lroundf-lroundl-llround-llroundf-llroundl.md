@@ -83,7 +83,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ```C
 // crt_lround.c
-// Build with: cl /W3 /Tc crt_lround.c
+// Build with: cl /W4 /Tc crt_lround.c
 // This example displays the rounded results of
 // the floating-point values 2.499999, -2.499999,
 // 2.8, -2.8, 3.5 and -3.5.
@@ -95,7 +95,7 @@ int main( void )
 {
    double x = 2.499999;
    float y = 2.8f;
-   long double z = 3.5;
+   long double z = 3.5L;
 
    printf("lround(%f) is %d\n", x, lround(x));
    printf("lround(%f) is %d\n", -x, lround(-x));
