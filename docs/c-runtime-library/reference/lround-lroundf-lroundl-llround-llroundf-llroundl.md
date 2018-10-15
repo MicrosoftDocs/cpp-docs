@@ -111,8 +111,8 @@ lround(2.499999) is 2
 lround(-2.499999) is -2
 lroundf(2.800000) is 3
 lroundf(-2.800000) is -3
-lroundl(2.500000) is 4
-lroundl(-2.500000) is -4
+lroundl(3.500000) is 4
+lroundl(-3.500000) is -4
 ```
 
 ## See also
