@@ -309,7 +309,7 @@ A integer displacement.
 
 The updated VectorIterator.
 
-## <a name="operator-plus"></a>  ectorIterator::operator+ Operator
+## <a name="operator-plus"></a>  VectorIterator::operator+ Operator
 
 Returns a VectorIterator that references the element at the specified displacement from the specified VectorIterator.
 
