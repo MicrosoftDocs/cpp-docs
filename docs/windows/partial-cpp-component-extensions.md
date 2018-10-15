@@ -1,7 +1,7 @@
 ---
-title: "partial  (C++ Component Extensions) | Microsoft Docs"
+title: "partial  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["partial_CPP"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# partial  (C++ Component Extensions)
+# partial  (C++/CLI and C++/CX)
 
 The **partial** keyword enables different parts of the same ref class to be authored independently and in different files.
 

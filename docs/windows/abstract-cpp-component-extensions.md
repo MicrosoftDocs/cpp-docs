@@ -1,7 +1,7 @@
 ---
-title: "abstract  (C++ Component Extensions) | Microsoft Docs"
+title: "abstract  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["abstract", "abstract_cpp"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# abstract  (C++ Component Extensions)
+# abstract  (C++/CLI and C++/CX)
 
 The **abstract** keyword declares either:
 
@@ -24,12 +24,9 @@ The **abstract** keyword declares either:
 
 ### Syntax
 
-```cpp
-      class-declaration
-      class-identifier
-      abstract {}
-virtualreturn-typemember-function-identifier() abstract ;
-```
+*class-declaration* *class-identifier* **abstract {}**
+
+**virtual** *return-type* *member-function-identifier* **() abstract ;**
 
 ### Remarks
 
@@ -102,4 +99,4 @@ public:
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

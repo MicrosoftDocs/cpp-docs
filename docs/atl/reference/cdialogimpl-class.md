@@ -252,7 +252,7 @@ BOOL MapDialogRect(LPRECT lpRect);
 ### Parameters
 
 *lpRect*<br/>
-Points to a `CRect` object or [RECT](../../mfc/reference/rect-structure1.md) structure that is to receive the client coordinates of the update that encloses the update region.
+Points to a `CRect` object or [RECT](../../mfc/reference/rect-structure.md) structure that is to receive the client coordinates of the update that encloses the update region.
 
 ### Return Value
 

@@ -1,7 +1,7 @@
 ---
-title: "event  (C++ Component Extensions) | Microsoft Docs"
+title: "event  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event", "event_cpp"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# event  (C++ Component Extensions)
+# event  (C++/CLI and C++/CX)
 
 The **event** keyword declares an *event*, which is a notification to registered subscribers (*event handlers*) that something of interest has occurred.
 
@@ -269,4 +269,4 @@ int main() {
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

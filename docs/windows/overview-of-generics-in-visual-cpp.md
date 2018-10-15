@@ -1,7 +1,7 @@
 ---
-title: "Overview of Generics in Visual C++ | Microsoft Docs"
+title: "Overview of Generics in C++/CLI | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,13 +11,13 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Overview of Generics in Visual C++
+# Overview of Generics in C++/CLI
 
 Generics are parameterized types supported by the common language runtime. A parameterized type is a type that is defined with an unknown type parameter that is specified when the generic is used.
 
 ## Why Generics?
 
-C++ supports templates and both templates and generics support parameterized types to create typed collection classes. However, templates provide compile-time parameterization. You cannot reference an assembly containing a template definition and create new specializations of the template. Once compiled, a specialized template looks like any other class or method. In contrast, generics are emitted in MSIL as a parameterized type known by the runtime to be a parameterized type; source code that references an assembly containing a generic type can create specializations of the generic type. For more information on the comparison of Visual C++ templates and generics, see [Generics and Templates (Visual C++)](../windows/generics-and-templates-visual-cpp.md).
+C++ supports templates and both templates and generics support parameterized types to create typed collection classes. However, templates provide compile-time parameterization. You cannot reference an assembly containing a template definition and create new specializations of the template. Once compiled, a specialized template looks like any other class or method. In contrast, generics are emitted in MSIL as a parameterized type known by the runtime to be a parameterized type; source code that references an assembly containing a generic type can create specializations of the generic type. For more information on the comparison of standard C++ templates and generics, see [Generics and Templates (C++/CLI)](../windows/generics-and-templates-visual-cpp.md).
 
 ## Generic Functions and Types
 

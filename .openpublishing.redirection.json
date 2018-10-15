@@ -6276,6 +6276,36 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/mfc/reference/rect-structure1.md",
+            "redirect_url": "/cpp/mfc/reference/rect-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/mfc/reference/windowpos-structure1.md",
+            "redirect_url": "/cpp/mfc/reference/windowpos-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/mfc/reference/systemtime-structure1.md",
+            "redirect_url": "/cpp/mfc/reference/systemtime-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/mfc/reference/point-structure1.md",
+            "redirect_url": "/cpp/mfc/reference/point-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/mfc/reference/msg-structure1.md",
+            "redirect_url": "/cpp/mfc/reference/msg-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/mfc/reference/cacceleratedeceleratetransition-class1.md",
+            "redirect_url": "/cpp/mfc/reference/cacceleratedeceleratetransition-class",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/mfc/unicode-in-mfc.md",
             "redirect_url": "/cpp/mfc/mfc-library-versions",
             "redirect_document_id": false

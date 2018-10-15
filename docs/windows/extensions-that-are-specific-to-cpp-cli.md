@@ -1,7 +1,7 @@
 ---
 title: "Extensions That Are Specific to C++/CLI | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,7 +11,8 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Extensions That Are Specific to C++/CLI
-The following language features, which are explained in this section of the documentation, apply only to C++/CLI.
+
+The following language features apply only to C++/CLI:
   
 [__identifier (C++/CLI)](../windows/identifier-cpp-cli.md)  
   
@@ -27,4 +28,4 @@ The following language features, which are explained in this section of the docu
   
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

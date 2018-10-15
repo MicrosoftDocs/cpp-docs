@@ -1,7 +1,7 @@
 ---
-title: "typeid  (C++ Component Extensions) | Microsoft Docs"
+title: "typeid  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,11 +11,11 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# typeid  (C++ Component Extensions)
+# typeid  (C++/CLI and C++/CX)
 
 Gets a value that indicates the type of an object.
 
-> [!WARNING]
+> [!NOTE]
 > This topic refers to the C++ Component Extensions version of typeid. For the ISO C++ version of this keyword, see [typeid Operator](../cpp/typeid-operator.md).
 
 ## All Runtimes
@@ -189,4 +189,4 @@ int::typeid == handle_to_int::typeid, as expected
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

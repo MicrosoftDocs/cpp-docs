@@ -1,7 +1,7 @@
 ---
-title: "Exception Handling  (C++ Component Extensions) | Microsoft Docs"
+title: "Exception Handling  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Exception Handling  (C++ Component Extensions)
+# Exception Handling  (C++/CLI and C++/CX)
 
 Applications compiled with the `/ZW` compiler option or `/clr` compiler option both use *exceptions* to handle unexpected errors during program execution. The following topics discuss exception handling in either C++/CX or C++/CLI applications.
 
@@ -20,7 +20,7 @@ Applications compiled with the `/ZW` compiler option or `/clr` compiler option b
 [Basic Concepts in Using Managed Exceptions](../dotnet/basic-concepts-in-using-managed-exceptions.md)<br/>
 Describes throwing exceptions and using **try**/**catch** blocks.
 
-[Differences in Exception Handling Behavior Under /CLR](../dotnet/differences-in-exception-handling-behavior-under-clr.md)<br/>
+[Differences in Exception Handling Behavior Under /clr](../dotnet/differences-in-exception-handling-behavior-under-clr.md)<br/>
 Discusses the differences from the standard behavior of C++ exception handling.
 
 [finally](../dotnet/finally.md)<br/>
@@ -38,8 +38,8 @@ Demonstrates how to catch all unhandled exceptions.
 ## Related Sections
 
 [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)<br/>
-Describes exception handling in C++.
+Describes exception handling in standard C++.
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

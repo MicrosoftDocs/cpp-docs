@@ -1,7 +1,7 @@
 ---
-title: "Attribute Parameter Types  (C++ Component Extensions) | Microsoft Docs"
+title: "Attribute Parameter Types  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Attribute Parameter Types  (C++ Component Extensions)
+# Attribute Parameter Types  (C++/CLI and C++/CX)
 
 Values passed to attributes must be known to the compiler at compile time.  Attribute parameters can be of the following types:
 

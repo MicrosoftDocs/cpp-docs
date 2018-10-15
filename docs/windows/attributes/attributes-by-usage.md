@@ -15,7 +15,7 @@ ms.workload: ["cplusplus", "uwp"]
 
 This topic lists attributes according to the C++ language elements to which they apply.
 
-If an attribute precedes a Visual C++ element that is not in the attribute's scope, the attribute block is treated as a comment.
+If an attribute precedes an element that is not in the attribute's scope, the attribute block is treated as a comment.
 
 |Attribute|Description|
 |---------------|-----------------|

@@ -1,5 +1,5 @@
 ---
-title: "MSG Structure1 | Microsoft Docs"
+title: "MSG Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-mfc"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# MSG Structure1
+# MSG Structure
 
 The `MSG` structure contains message information from a thread's message queue.
 

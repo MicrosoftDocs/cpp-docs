@@ -1,7 +1,7 @@
 ---
-title: "Context-Sensitive Keywords  (C++ Component Extensions) | Microsoft Docs"
+title: "Context-Sensitive Keywords  (C++/CLI and C++/CX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal_CPP"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Context-Sensitive Keywords  (C++ Component Extensions)
+# Context-Sensitive Keywords  (C++/CLI and C++/CX)
 
 *Context-sensitive keywords* are language elements that are recognized only in specific contexts. Outside the specific context, a context-sensitive keyword can be a user-defined symbol.
 
@@ -99,4 +99,4 @@ int main() {
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

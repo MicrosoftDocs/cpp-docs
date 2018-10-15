@@ -1,5 +1,5 @@
 ---
-title: "RECT Structure1 | Microsoft Docs"
+title: "RECT Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-mfc"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# RECT Structure1
+# RECT Structure
 
 The `RECT` structure defines the coordinates of the upper-left and lower-right corners of a rectangle.
 
