@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # HString Class
 
-A helper class for managing the lifetime of an HSTRING using the RAII pattern.
+A helper class for managing the lifetime of an [HSTRING](windows/desktop/WinRT/hstring) using the RAII pattern.
 
 ## Syntax
 
@@ -24,7 +24,7 @@ class HString;
 
 ## Remarks
 
-The Windows Runtime provides access to strings through HSTRING handles. The `HString` class provides convenience functions and operators to simplify using HSTRING handles. This class can handle the lifetime of the HSTRING it owns through an RAII pattern.
+The Windows Runtime provides access to strings through [HSTRING](windows/desktop/WinRT/hstring) handles. The `HString` class provides convenience functions and operators to simplify using HSTRING handles. This class can handle the lifetime of the HSTRING it owns through an RAII pattern.
 
 ## Members
 
