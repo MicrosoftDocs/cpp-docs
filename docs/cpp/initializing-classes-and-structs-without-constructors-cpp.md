@@ -48,7 +48,7 @@ int main()
     // Default initialization = {0,0,0,0,0}
     TempData td_default{};
 
-    //Error C4700 uninitialized local variable
+    // if used, generates warning C4700 uninitialized local variable used
     TempData td_noInit;
 
     // Member declaration (in order of ctor parameters)
