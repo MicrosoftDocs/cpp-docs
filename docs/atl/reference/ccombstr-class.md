@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # CComBSTR Class
 
-This class is a wrapper for BSTRs.
+This class is a wrapper for [BSTR](/previous-versions/windows/desktop/automat/bstr)s.
 
 ## Syntax
 
