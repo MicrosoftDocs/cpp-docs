@@ -1,7 +1,7 @@
 ---
 title: "Using Verifiable Assemblies with SQL Server (C++/CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/17/2019"
 ms.technology: ["cpp-cli"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -21,9 +21,10 @@ SQL Server provides extensions to Transact-SQL (T-SQL) to allow you to install v
 
 - Unrestricted mode: Run code at your own risk; code does not have to be verifiably type-safe.
 
-- Safe mode: Run verifiably typesafe code; compiled with /clr:safe.
+- Safe mode: Run verifiably typesafe code; compiled with /clr:safe. 
 
-Safe mode requires the executed assemblies to be verifiably typesafe.
+> [!IMPORTANT]
+> Visual Studio 2015 deprecated and Visual Studio 2017 does not support the **/clr:pure** and **/clr:safe** creation of verifiable projects. If you require verifiable code, we recommend you translate your code to C#.
 
 To create and load a verifiable assembly into SQL Server, use the Transact-SQL commands CREATE ASSEMBLY and DROP ASSEMBLY as follows:
 
@@ -77,5 +78,5 @@ sqlcmd -S MyServer -E -i myScript.sql -o myResult.txt
 
 ## See Also
 
-[How to: Migrate to /clr:safe (C++/CLI)](../dotnet/how-to-migrate-to-clr-safe-cpp-cli.md)<br/>
+
 [Classes and Structs](../cpp/classes-and-structs-cpp.md)

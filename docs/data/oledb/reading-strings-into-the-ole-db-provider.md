@@ -1,7 +1,7 @@
 ---
 title: "Reading Strings into the OLE DB Provider | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/13/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]

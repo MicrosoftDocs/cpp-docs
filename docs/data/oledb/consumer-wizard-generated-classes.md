@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Consumer Wizard-Generated Classes
 
-When you use the ATL OLE DB Consumer Wizard to generate a consumer, you have the choice of using OLE DB Templates or OLE DB attributes. In both cases, the wizard generates a command class and a user record class. The command class contains code to open the data source and rowset you specified in the wizard. The user record class contains a column map for the database table you selected. However, the generated code differs in each case:  
+When you use the **ATL OLE DB Consumer Wizard** to generate a consumer, you have the choice of using OLE DB Templates or OLE DB attributes. In both cases, the wizard generates a command class and a user record class. The command class contains code to open the data source and rowset you specified in the wizard. The user record class contains a column map for the database table you selected. However, the generated code differs in each case:  
   
 - If you select a templated consumer, the wizard generates a command class and a user record class. The command class will have the name that you enter in the **Class** box in the wizard (for example, `CProducts`), and the user record class will have a name of the form "*ClassName*Accessor" (for example, `CProductsAccessor`). Both classes are placed in the consumer's header file.  
   

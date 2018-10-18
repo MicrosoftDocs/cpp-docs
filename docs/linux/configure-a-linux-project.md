@@ -8,8 +8,8 @@ ms.technology: ["cpp-linux"]
 ms.tgt_pltfrm: "Linux"
 ms.topic: "conceptual"
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
-author: "corob-msft"
-ms.author: "corob"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus", "linux"]
 ---
 # Configure a Linux Project
