@@ -7,8 +7,8 @@ ms.technology: ["cpp-linux"]
 ms.tgt_pltfrm: "Linux"
 ms.topic: "conceptual"
 ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
-author: "corob-msft"
-ms.author: "corob"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus", "linux"]
 ---
 
