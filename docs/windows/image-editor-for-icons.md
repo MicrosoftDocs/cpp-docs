@@ -1,7 +1,7 @@
 ---
 title: "Image Editor for Icons | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/17/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.cursor.F1", "vc.editors.icon.F1", "vc.editors.cursor", "vc.editors.bitmap.F1"]
@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # Image Editor for Icons
 
-The Image editor has an extensive set of tools for creating and editing images, as well as features to help you create toolbar bitmaps. In addition to bitmaps, icons, and cursors, you can edit images in GIF or JPEG format using commands on the **Image** menu and tools on the **Image Editor** toolbar.
+When you click on an image file (such as .ico, .bmp, .png) in Solution Explorer, the image opens in the Image Editor in the same way that code files open in the Code Editor. When an Image Editor tab is active, you see toolbars with many tools for creating and editing images. In addition to bitmaps, icons, and cursors, you can edit images in GIF or JPEG format using commands on the **Image** menu and tools on the **Image Editor** toolbar.
 
 With the Image editor, you can:
 
