@@ -17,7 +17,7 @@ The following example assumes that you are adding OLE DB consumer support to an 
   
 To add OLE DB consumer support without using the ATL OLE DB Consumer Wizard:  
   
-- In your Stdafx.h file, append the following `#include` statements:  
+- In your pch.h file, append the following `#include` statements:  
   
     ```cpp  
     #include <atlbase.h>  
@@ -30,7 +30,7 @@ Programmatically, a consumer typically performs the following sequence of operat
 - Create a user record class that binds columns to local variables. In this example, `CMyTableNameAccessor` is the user record class (see [User Records](../../data/oledb/user-records.md)). This class contains the column map and parameter map. Declare a data member in the user record class for each field you specify in your column map; for each of these data members, also declare a status data member and a length data member. For more information, see [Field Status Data Members in Wizard-Generated Accessors](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md).  
   
     > [!NOTE]
-    >  If you write your own consumer, the data variables must come before the status and length variables.  
+    > If you write your own consumer, the data variables must come before the status and length variables.  
   
 - Instantiate a data source and a session. Decide what type of accessor and rowset to use and then instantiate a rowset using [CCommand](../../data/oledb/ccommand-class.md) or [CTable](../../data/oledb/ctable-class.md):  
   
@@ -56,7 +56,7 @@ Programmatically, a consumer typically performs the following sequence of operat
     hr = rs.Open();            // (Open also executes the command)  
     ```  
   
-- Optionally, set rowset properties using `CDBPropSet::AddProperty` and pass them as a parameter to `rs.Open`. For an example of how this is done, see GetRowsetProperties in [Consumer Wizard-Generated Methods](../../data/oledb/consumer-wizard-generated-methods.md).  
+- Optionally, set rowset properties using `CDBPropSet::AddProperty` and pass them as a parameter to `rs.Open`. For an example of how this is done, see `GetRowsetProperties` in [Consumer Wizard-Generated Methods](../../data/oledb/consumer-wizard-generated-methods.md).  
   
 - You can now use the rowset to retrieve/manipulate the data.  
   
