@@ -1,7 +1,7 @@
 ---
 title: "Creating a Consumer Without Using a Wizard | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/12/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -27,7 +27,7 @@ To add OLE DB consumer support without using the ATL OLE DB Consumer Wizard:
   
 Programmatically, a consumer typically performs the following sequence of operations:  
   
-- Create a user record class that binds columns to local variables. In this example, `CMyTableNameAccessor` is the user record class (see [User Records](../../data/oledb/user-records.md)). This class contains the column map and parameter map. Declare a data member in the user record class for each field you specify in your column map; for each of these data members, also declare a status data member and a length data member. For more information, see [Field Status Data Members in Wizard-Generated Accessors](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md).  
+1. Create a user record class that binds columns to local variables. In this example, `CMyTableNameAccessor` is the user record class (see [User Records](../../data/oledb/user-records.md)). This class contains the column map and parameter map. Declare a data member in the user record class for each field you specify in your column map; for each of these data members, also declare a status data member and a length data member. For more information, see [Field Status Data Members in Wizard-Generated Accessors](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md).  
   
     > [!NOTE]
     > If you write your own consumer, the data variables must come before the status and length variables.  
@@ -72,7 +72,7 @@ Programmatically, a consumer typically performs the following sequence of operat
   
 - Call `CoUnInitialize` to uninitialize COM. This is usually called in the main code.  
   
-    ```  
+    ```cpp  
     CoUninitialize();  
     ```  
   
