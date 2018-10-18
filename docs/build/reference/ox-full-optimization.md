@@ -1,10 +1,10 @@
 ---
 title: "-Ox (Enable Most Speed Optimizations) | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/25/2017"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
-f1_keywords: ["VC.Project.VCCLCompilerTool.ToolOptimization", "/ox"]
+f1_keywords: ["VC.Project.VCCLCompilerTool.ToolOptimization", "/Ox", "/Oxs"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Ox compiler option [C++]", "fast code [C++]", "/Ox compiler option [C++]", "-Ox compiler option [C++]"]
 ms.assetid: 3ad7c30b-c615-428c-b1d0-2e024f81c760
