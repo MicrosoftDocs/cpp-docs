@@ -83,7 +83,7 @@ HRESULT OpenRowset(const CSession& session, LPCWSTR szCommand = NULL);
   
 `OpenAll` calls this method to open the rowset or rowsets in the consumer. Typically, you do not need to call `OpenRowset` unless you want to work with multiple data sources/sessions/rowsets. `OpenRowset` is declared in the command or table class header file:  
   
-```  
+```cpp  
 // OLE DB Template version:  
 HRESULT OpenRowset(DBPROPSET *pPropSet = NULL)  
 {  

@@ -28,7 +28,7 @@ By comparing the two files, you can see how much simpler it's to use attributes.
   
 - The `db_table` call in the attributed version is equal to the following template declaration:  
   
-    ```  
+    ```cpp  
     class CAuthorsNoAttr : public CTable<CAccessor<CAuthorsNoAttrAccessor>>  
     ```  
   
