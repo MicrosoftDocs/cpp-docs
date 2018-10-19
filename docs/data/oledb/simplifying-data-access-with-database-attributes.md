@@ -38,8 +38,16 @@ The attributes inject a user record class declaration for you. The user record c
   
 In both the attributed and the templated code, you must set rowset properties using `CDBPropSet::AddProperty`.  
   
-For information about the attributes discussed in this topic, see [OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md).  
-  
+For information about the attributes discussed in this topic, see [OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md).
+
+> [!NOTE]
+> The following `include` statements are required to compile the examples below:
+> ```cpp
+> #include <atlbase.h>  
+> #include <atlplus.h>  
+> #include <atldbcli.h>    
+> ```
+
 ## Table and Accessor Declaration Using Attributes  
 
 The following code calls `db_source` and `db_table` on the table class. `db_source` specifies the data source and connection to be used. `db_table` injects the appropriate template code to declare a table class. `db_column` specify the column map and inject the accessor declaration. You can use OLE DB consumer attributes in any project that supports ATL.  
