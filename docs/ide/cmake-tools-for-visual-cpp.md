@@ -1,7 +1,7 @@
 ---
 title: "CMake Projects in Visual C++ | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/26/2018"
+ms.date: "10/18/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-ide"]
@@ -79,7 +79,7 @@ Not everything in the cache is imported.  Properties such as the generator and t
 To build a CMake project, you have these choices:
 
 1. Select the target in the **Debug** dropdown and press **F5**, or click the **Run** (green triangle) button. The project automatically builds first, just like a Visual Studio solution.
-1. Right click on the CMakeLists.txt and select **Build** from the context menu. If you have multiple targets in your folder structure, you can choose to build all or only one specific target, or
+1. Right click on the CMakeLists.txt and select **Build** from the context menu. If you have multiple targets in your folder structure, you can choose to build all or only one specific target.
 1. From the main menu, select **Build | Build Solution** (**F7** or **Ctrl+Shift+B**). Make sure that a CMake target is already selected in the **Startup Item** dropdown in the **General** toolbar.
 
 ![CMake build menu command](media/cmake-build-menu.png "CMake build command menu")
@@ -205,7 +205,7 @@ To specify a Visual Studio generator, open the CMakeSettings.json from the main 
 
 1. **buildRoot**: maps to **-DCMAKE_BINARY_DIR** switch and specifies where the CMake cache will be created. If the folder does not exist, it is created.
 
-1. **variables**: contains a name-value pair of CMake variables that will get passed as **-D**_name_**=**_value_ to CMake. If your CMake project build instructions specify the addition of any variables directly to the CMake cache file, it is recommended that you add them here instead. The following example shows how to specify the name-value pairs:
+1. **variables**: contains a name-value pair of CMake variables that will get passed as **-D** *_name_=_value_* to CMake. If your CMake project build instructions specify the addition of any variables directly to the CMake cache file, it is recommended that you add them here instead. The following example shows how to specify the name-value pairs:
 
 ```json
 "variables": [
@@ -275,7 +275,7 @@ CMakeSettings.json now supports inherited environments. This feature enables you
 
 The example above is the same as running the **Developer Command Prompt for VS 2017** with the **-arch=amd64 -host_arch=amd64** arguments.
 
-The following table shows the default values and their command line equivalents:
+The following table shows the default values:
 
 |Context Name|Description|
 |-----------|-----------------|
