@@ -12,21 +12,21 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
-# CMyProviderSource (MyProviderDS.H)
+# CCustomClassSource (CustomClassDS.h)
 
 The provider classes use multiple inheritance. The following code shows the inheritance chain for the data source object:  
   
 ```cpp
 /////////////////////////////////////////////////////////////////////////  
-// CMyProviderSource  
-class ATL_NO_VTABLE CMyProviderSource :   
+// CCustomClassSource  
+class ATL_NO_VTABLE CCustomClassSource :   
    public CComObjectRootEx<CComSingleThreadModel>,  
-   public CComCoClass<CMyProviderSource, &CLSID_MyProvider>,  
-   public IDBCreateSessionImpl<CMyProviderSource, CMyProviderSession>,  
-   public IDBInitializeImpl<CMyProviderSource>,  
-   public IDBPropertiesImpl<CMyProviderSource>,  
-   public IPersistImpl<CMyProviderSource>,  
-   public IInternalConnectionImpl<CMyProviderSource>  
+   public CComCoClass<CCustomClassSource, &CLSID_CustomClass>,  
+   public IDBCreateSessionImpl<CCustomClassSource, CCustomClassSession>,  
+   public IDBInitializeImpl<CCustomClassSource>,  
+   public IDBPropertiesImpl<CCustomClassSource>,  
+   public IPersistImpl<CCustomClassSource>,  
+   public IInternalConnectionImpl<CCustomClassSource>  
 ```  
   
 All the COM components derive from `CComObjectRootEx` and `CComCoClass`. `CComObjectRootEx` provides all the implementation for the `IUnknown` interface. It can handle any threading model. `CComCoClass` handles any error support required. If you want to send richer error information to the client, you can use some of the error APIs in `CComCoClass`.  
@@ -54,7 +54,7 @@ The COM_INTERFACE_ENTRY macros are from ATL and tell the implementation of `Quer
 The property map specifies all the properties designated by the provider:  
   
 ```  
-BEGIN_PROPSET_MAP(CMyProviderSource)  
+BEGIN_PROPSET_MAP(CCustomClassSource)  
    BEGIN_PROPERTY_SET(DBPROPSET_DATASOURCEINFO)  
       PROPERTY_INFO_ENTRY(ACTIVESESSIONS)  
       PROPERTY_INFO_ENTRY(ASYNCTXNABORT)  
@@ -117,7 +117,7 @@ BEGIN_PROPSET_MAP(CMyProviderSource)
    BEGIN_PROPERTY_SET(DBPROPSET_DATASOURCE)  
       PROPERTY_INFO_ENTRY(CURRENTCATALOG)  
    END_PROPERTY_SET(DBPROPSET_DATASOURCE)  
-   CHAIN_PROPERTY_SET(CMyProviderSession)  
+   CHAIN_PROPERTY_SET(CCustomClassSession)  
 END_PROPSET_MAP()  
 ```  
   
