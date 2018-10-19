@@ -1,7 +1,7 @@
 ---
 title: "Simplifying Data Access with Database Attributes | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/19/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.db_param", "vc-attr.db_column", "vc-attr.db_accessor", "vc-attr.db_command", "vc-attr.db_table", "vc-attr.db_source"]
@@ -20,13 +20,13 @@ The basic way to access information from a database is to create a command (or t
   
 To demonstrate the use of database attributes, the following sections show two equivalent table and user record class declarations: the first uses attributes and the second uses OLE DB Templates. Such declaration code is typically placed in a header file named for the table or command object, for example, Authors.h.  
   
-By comparing the two files, you can see how much simpler it is to use attributes. Among the differences are:  
+By comparing the two files, you can see how much simpler it's to use attributes. Among the differences are:  
   
 - Using attributes, you only have to declare one class: `CAuthors`, while with templates you have to declare two: `CAuthorsNoAttrAccessor` and `CAuthorsNoAttr`.  
   
-- The `db_source` call in the attributed version is equivalent to the `OpenDataSource()` call in the template declaration.  
+- The `db_source` call in the attributed version is equal to the `OpenDataSource()` call in the template declaration.  
   
-- The `db_table` call in the attributed version is equivalent to the following template declaration:  
+- The `db_table` call in the attributed version is equal to the following template declaration:  
   
     ```  
     class CAuthorsNoAttr : public CTable<CAccessor<CAuthorsNoAttrAccessor>>  
@@ -34,9 +34,9 @@ By comparing the two files, you can see how much simpler it is to use attributes
   
 - The `db_column` calls in the attributed version are equivalent to the column map (see `BEGIN_COLUMN_MAP ... END_COLUMN_MAP`) in the template declaration.  
   
-The attributes inject a user record class declaration for you. The user record class is equivalent to `CAuthorsNoAttrAccessor` in the template declaration. If your table class is `CAuthors`, the injected user record class is named `CAuthorsAccessor`, and you can only view its declaration in injected code. For more information, see "Attribute-Injected User Record Classes" in [User Records](../../data/oledb/user-records.md).  
+The attributes inject a user record class declaration for you. The user record class is equal to `CAuthorsNoAttrAccessor` in the template declaration. If your table class is `CAuthors`, the injected user record class is named `CAuthorsAccessor`, and you can only view its declaration in injected code. For more information, see "Attribute-Injected User Record Classes" in [User Records](../../data/oledb/user-records.md).  
   
-Note that in both the attributed and the templated code, you must set rowset properties using `CDBPropSet::AddProperty`.  
+In both the attributed and the templated code, you must set rowset properties using `CDBPropSet::AddProperty`.  
   
 For information about the attributes discussed in this topic, see [OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md).  
   
@@ -61,15 +61,15 @@ Here is the table and accessor declaration using attributes:
 class CAuthors  
 {  
 public:  
-   DWORD m_dwAuIDStatus;  
-   DWORD m_dwAuthorStatus;  
-   DWORD m_dwYearBornStatus;  
-   DWORD m_dwAuIDLength;  
-   DWORD m_dwAuthorLength;  
-   DWORD m_dwYearBornLength;  
-   [ db_column(1, status=m_dwAuIDStatus, length=m_dwAuIDLength) ] LONG m_AuID;  
-   [ db_column(2, status=m_dwAuthorStatus, length=m_dwAuthorLength) ] TCHAR m_Author[51];  
-   [ db_column(3, status=m_dwYearBornStatus, length=m_dwYearBornLength) ] SHORT m_YearBorn;  
+   DBSTATUS m_dwAuIDStatus;
+   DBSTATUS m_dwAuthorStatus;
+   DBSTATUS m_dwYearBornStatus;
+   DBLENGTH m_dwAuIDLength;
+   DBLENGTH m_dwAuthorLength;
+   DBLENGTH m_dwYearBornLength;
+   [db_column("1", status = "m_dwAuIDStatus", length = "m_dwAuIDLength")] LONG m_AuID;
+   [db_column("2", status = "m_dwAuthorStatus", length = "m_dwAuthorLength")] TCHAR m_Author[51];
+   [db_column("3", status = "m_dwYearBornStatus", length = "m_dwYearBornLength")] SHORT m_YearBorn;
    void GetRowsetProperties(CDBPropSet* pPropSet)  
    {  
       pPropSet->AddProperty(DBPROP_CANFETCHBACKWARDS, true);  
