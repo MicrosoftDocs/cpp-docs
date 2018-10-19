@@ -1,10 +1,10 @@
 ---
 title: "-Ox (Enable Most Speed Optimizations) | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/25/2017"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
-f1_keywords: ["VC.Project.VCCLCompilerTool.ToolOptimization", "/ox"]
+f1_keywords: ["VC.Project.VCCLCompilerTool.ToolOptimization", "/Ox", "/Oxs"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Ox compiler option [C++]", "fast code [C++]", "/Ox compiler option [C++]", "-Ox compiler option [C++]"]
 ms.assetid: 3ad7c30b-c615-428c-b1d0-2e024f81c760
@@ -18,7 +18,7 @@ The **/Ox** compiler option enables a combination of optimizations that favor sp
 
 ## Syntax
 
-> /Ox
+> **/Ox**
 
 ## Remarks
 
@@ -44,7 +44,7 @@ The **/Ox** compiler option is the same as using the following options in combin
 
 - [/Od (Disable (Debug))](../../build/reference/od-disable-debug.md)
 
-You can cancel the bias toward speed of the **/Ox** compiler option if you specify **/Oxs**, which combines the **/Ox** compiler option with [/Os (Favor Small Code)](../../build/reference/os-ot-favor-small-code-favor-fast-code.md). The combined options favor smaller code size.
+You can cancel the bias toward speed of the **/Ox** compiler option if you specify **/Oxs**, which combines the **/Ox** compiler option with [/Os (Favor Small Code)](../../build/reference/os-ot-favor-small-code-favor-fast-code.md). The combined options favor smaller code size.  The **/Oxs** option is exactly the same as specifying **/Ox** **/Os** when the options appear in that order.
 
 To apply all available file-level optimizations for release builds, we recommend you specify [/O2 (Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) instead of **/Ox**, and [/O1 (Minimize Size)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) instead of **/Oxs**. For even more optimization in release builds, also consider the [/GL (Whole Program Optimization)](../../build/reference/gl-whole-program-optimization.md) compiler option and [/LTCG (Link-time Code Generation)](../../build/reference/ltcg-link-time-code-generation.md) linker option.
 

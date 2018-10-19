@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 
 ||||
 |-|-|-|
-|[! (runtime logical not)](operator-logical-not-masm-run-time.md)|[!= (runtime not equal)](operator-not-equal-masm.md)|[&#124;&#124; (runtime logical or)](operator-logical-or.md)|
+|[\! (runtime logical not)](operator-logical-not-masm-run-time.md)|[\!= (runtime not equal)](operator-not-equal-masm.md)|[&#124;&#124; (runtime logical or)](operator-logical-or.md)|
 |[&& (runtime logical and)](operator-logical-and-masm-run-time.md)|[< (runtime less than)](operator-less-than-masm-run-time.md)|[\<= (runtime less or equal)](operator-less-or-equal-masm-run-time.md)|
 |[== (runtime equal)](operator-equal-masm-run-time.md)|[> (runtime greater than)](operator-greater-than-masm-run-time.md)|[>= (runtime greater or equal)](operator-greater-or-equal-masm-run-time.md)|
 |[& (runtime bitwise and)](operator-bitwise-and.md)|||
@@ -43,7 +43,7 @@ ms.workload: ["cplusplus"]
 
 ||||
 |-|-|-|
-|[! (character literal)](operator-logical-not-masm.md)|[% (treat as text)](operator-percent.md)||
+|[\! (character literal)](operator-logical-not-masm.md)|[% (treat as text)](operator-percent.md)||
 |[;; (treat as comment)](operator-semicolons.md)|[&lt; &gt; (treat as one literal)](operator-literal.md)|[& & (substitute parameter value)](operator-logical-and-masm.md)|
 
 ## Miscellaneous
