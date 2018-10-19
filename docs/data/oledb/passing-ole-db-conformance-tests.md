@@ -50,26 +50,6 @@ The code first checks to see whether the property is linked to another. If the p
   
 You might also want to add the `IsValidValue` routine to your code. The templates call `IsValidValue` when attempting to set a property. You would override this method if you require additional processing when setting a property value. You can have one of these methods for each property set.  
   
-## Threading Issues  
-
-By default, the OLE DB Provider Wizard in the ATL OLE DB Provider Wizard generates code for the provider to run in an apartment model. If you attempt to run this code with the conformance tests, you initially get failures. This is because Ltm.exe, the tool used to run the OLE DB conformance tests, defaults to free threaded. The OLE DB Provider Wizard code defaults to apartment model for performance and ease of use.  
-  
-To correct this problem, you can either change LTM or change the provider.  
-  
-### To change LTM to run in apartment threaded mode  
-  
-1. On the LTM main menu, click **Tools**, and then click **Options**.  
-  
-1. On the **General** tab, change the threading model from **Free Threaded** to **Apartment Threaded**.  
-  
-To change your provider to run in free threaded mode:  
-  
-- In your provider project, search for all instances of `CComSingleThreadModel` and replace it with `CComMultiThreadModel`, which should be in your data source, session, and rowset headers.  
-  
-- In your .rgs file, change the threading model from **Apartment** to **Both**.  
-  
-- Follow correct programming rules for free threaded programming (that is, lock on writes).  
-  
 ## See Also  
 
 [Advanced Provider Techniques](../../data/oledb/advanced-provider-techniques.md)
