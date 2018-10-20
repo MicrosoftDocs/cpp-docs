@@ -1,7 +1,7 @@
 ---
 title: "Creating a C++ Makefile Project | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/12/2018"
+ms.date: "10/19/2018"
 ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.appwiz.makefile.project"]
@@ -14,13 +14,13 @@ ms.workload: ["cplusplus"]
 ---
 # Creating a C++ Makefile Project
 
-A *makefile* is a text file that contains instructions for how to compile and link (or *build*) a set of C++ source code files. A *make* program reads the makefile and invokes a compiler, linker and possibly other programs to make an executable file. Microsoft's implementation of the *make* program is called **NMAKE**. (Visual Studio by default uses the MSBuild system based on .vcsproj files; this is what is created by **File | New | Project**.)
+A *makefile* is a text file that contains instructions for how to compile and link (or *build*) a set of C++ source code files. A *make* program reads the makefile and invokes a compiler, linker and possibly other programs to make an executable file. Microsoft's implementation of the *make* program is called **NMAKE**. (Visual Studio by default uses the MSBuild system based on .vcxproj files; this is what is created by **File | New | Project**.)
 
 If you have an existing makefile project, you have these choices if you want to code and/or debug it in the Visual Studio IDE:
 
 - Create a Makefile Project in Visual Studio that uses your existing makefile to build your code in the IDE. (You will not have all the IDE features that you get with a native MSBuild project.) See [To create a makefile project](#create_a_makefile_project) below.
 - Use the **Create New Project from Existing Code Files** wizard to create a native MSBuild project from your source code. For more information, see [How to: Create a C++ Project from Existing Code](how-to-create-a-cpp-project-from-existing-code.md).
-- **Visual Studio 2017 and later**: Use the **Open Folder** feature to open a makefile. For more information, see [Open Folder projects in Visual C++](non-msbuild-projects.md).
+- **Visual Studio 2017 and later**: Use the **Open Folder** feature to open a makefile project without converting it to MSBuild. For more information, see [Open Folder projects in Visual C++](non-msbuild-projects.md).
 
 ## <a name="create_a_makefile_project"> To create a Makefile project with the makefile project template
 
