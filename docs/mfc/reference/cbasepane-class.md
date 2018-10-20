@@ -1472,8 +1472,8 @@ virtual void OnMovePaneDivider(CPaneDivider*);
 
 ### Parameters
 
-[in] *CPaneDivider\**
-Not used.
+*CPaneDivider\**<br/>
+[in] Not used.
 
 ##  <a name="onpanecontextmenu"></a>  CBasePane::OnPaneContextMenu
 

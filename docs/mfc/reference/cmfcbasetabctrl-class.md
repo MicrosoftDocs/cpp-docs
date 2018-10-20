@@ -257,7 +257,7 @@ virtual void ApplyRestoredTabInfo(BOOL bUseTabIndexes = FALSE);
 
 ### Parameters
 
-[in] *bUseTabIndexes*
+[in] *bUseTabIndexes*<br/>
 
 ### Remarks
 
@@ -270,7 +270,7 @@ void AutoDestroyWindow(BOOL bAutoDestroy = TRUE);
 
 ### Parameters
 
-[in] *bAutoDestroy*
+[in] *bAutoDestroy*<br/>
 
 ### Remarks
 
@@ -283,7 +283,7 @@ virtual void CalcRectEdit(CRect& rectEdit);
 
 ### Parameters
 
-[in] *rectEdit*
+[in] *rectEdit*<br/>
 
 ### Remarks
 
@@ -378,7 +378,7 @@ void EnableActivateLastActive(BOOL bLastActive = TRUE);
 
 ### Parameters
 
-[in] *bLastActive*
+[in] *bLastActive*<br/>
 
 ### Remarks
 
@@ -544,7 +544,7 @@ virtual void FireChangeActiveTab(int nNewTab);
 
 ### Parameters
 
-[in] *nNewTab*
+[in] *nNewTab*<br/>
 
 ### Remarks
 
@@ -557,7 +557,7 @@ virtual BOOL FireChangingActiveTab(int nNewTab);
 
 ### Parameters
 
-[in] *nNewTab*
+[in] *nNewTab*<br/>
 
 ### Return Value
 
@@ -720,7 +720,7 @@ virtual CWnd* GetLastVisibleTab(int& iTabNum);
 
 ### Parameters
 
-[in] *iTabNum*
+[in] *iTabNum*<br/>
 
 ### Return Value
 
@@ -885,7 +885,7 @@ virtual int GetTabFullWidth(int iTab) const;
 
 ### Parameters
 
-[in] *iTab*
+[in] *iTab*<br/>
 
 ### Return Value
 
@@ -1028,7 +1028,7 @@ virtual void GetTabsRect(CRect& rect) const;
 
 ### Parameters
 
-[in] *rect*
+[in] *rect*<br/>
 
 ### Remarks
 
@@ -1128,7 +1128,7 @@ virtual BOOL HasImage(int iTab) const;
 
 ### Parameters
 
-[in] *iTab*
+[in] *iTab*<br/>
 
 ### Return Value
 
@@ -1205,7 +1205,7 @@ void InvalidateTab(int iTab);
 
 ### Parameters
 
-[in] *iTab*
+[in] *iTab*<br/>
 
 ### Remarks
 
@@ -1336,8 +1336,9 @@ BOOL IsIconAdded(
 
 ### Parameters
 
-*hIcon*<br/>
-[in] [in] *iIcon*
+[in] *hIcon*<br/>
+
+[in] *iIcon*<br/>
 
 ### Return Value
 
@@ -1563,8 +1564,9 @@ virtual void MoveTab(
 
 ### Parameters
 
-*nSource*<br/>
-[in] [in] *nDest*
+[in] *nSource*<br/>
+
+[in] *nDest*<br/>
 
 ### Remarks
 
@@ -1592,9 +1594,11 @@ virtual BOOL OnDrop(
 
 ### Parameters
 
-[in] *COleDataObject**
-*DROPEFFECT*<br/>
-[in] [in] *CPoint*
+[in] *COleDataObject\**<br/>
+
+[in] *DROPEFFECT*<br/>
+
+[in] *CPoint*<br/>
 
 ### Return Value
 
@@ -1612,9 +1616,11 @@ virtual DROPEFFECT OnDragOver(
 
 ### Parameters
 
-[in] *COleDataObject**
-*DWORD*<br/>
-[in] [in] *CPoint*
+[in] *COleDataObject\**<br/>
+
+[in] *DWORD*<br/>
+
+[in] *CPoint*<br/>
 
 ### Return Value
 
@@ -1641,9 +1647,11 @@ virtual DROPEFFECT OnDragEnter(
 
 ### Parameters
 
-[in] *COleDataObject**
-*DWORD*<br/>
-[in] [in] *CPoint*
+[in] *COleDataObject\**<br/>
+
+[in] *DWORD*<br/>
+
+[in] *CPoint*<br/>
 
 ### Return Value
 
@@ -1658,8 +1666,9 @@ virtual BOOL OnRenameTab(int, CString&);
 
 ### Parameters
 
-*int*<br/>
-[in] [in] *CString&*
+[in] *int*<br/>
+
+[in] *CString&*<br/>
 
 ### Return Value
 
@@ -1674,7 +1683,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ### Parameters
 
-[in] *pMsg*
+[in] *pMsg*<br/>
 
 ### Return Value
 
@@ -1758,7 +1767,7 @@ virtual void Serialize(CArchive& ar);
 
 ### Parameters
 
-[in] *ar*
+[in] *ar*<br/>
 
 ### Remarks
 
@@ -1923,7 +1932,7 @@ virtual void SetLocation(Location location);
 
 ### Parameters
 
-[in] *location*
+[in] *location*<br/>
 
 ### Remarks
 
@@ -2158,7 +2167,7 @@ virtual BOOL StartRenameTab(int iTab);
 
 ### Parameters
 
-[in] *iTab*
+[in] *iTab*<br/>
 
 ### Return Value
 
@@ -2175,8 +2184,9 @@ virtual void SwapTabs(
 
 ### Parameters
 
-*nFisrtTabID*<br/>
-[in] [in] *nSecondTabID*
+[in] *nFisrtTabID*<br/>
+
+[in] *nSecondTabID*<br/>
 
 ### Remarks
 

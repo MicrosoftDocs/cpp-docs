@@ -1,7 +1,7 @@
 ---
 title: "CMenuTearOffManager Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMenuTearOffManager", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::CMenuTearOffManager", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Build", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::GetRegPath", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Initialize", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::IsDynamicID", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Parse", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Reset", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetInUse", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetupTearOffMenus"]
@@ -76,8 +76,9 @@ void Build(
 
 ### Parameters
 
-*uiTearOffBarID*<br/>
-[in] [in] *strText*
+[in] *uiTearOffBarID*<br/>
+
+[in] *strText*<br/>
 
 ### Remarks
 
@@ -143,7 +144,7 @@ BOOL IsDynamicID(UINT uiID) const;
 
 ### Parameters
 
-[in] *uiID*
+[in] *uiID*<br/>
 
 ### Return Value
 
@@ -158,7 +159,7 @@ UINT Parse(CString& str);
 
 ### Parameters
 
-[in] *str*
+[in] *str*<br/>
 
 ### Return Value
 
@@ -173,7 +174,7 @@ void Reset(HMENU hmenu);
 
 ### Parameters
 
-[in] *hmenu*
+[in] *hmenu*<br/>
 
 ### Remarks
 
@@ -188,8 +189,9 @@ void SetInUse(
 
 ### Parameters
 
-*uiCmdId*<br/>
-[in] [in] *bUse*
+[in] *uiCmdId*<br/>
+
+[in] *bUse*<br/>
 
 ### Remarks
 
@@ -202,7 +204,7 @@ void SetupTearOffMenus(HMENU hMenu);
 
 ### Parameters
 
-[in] *hMenu*
+[in] *hMenu*<br/>
 
 ### Remarks
 
