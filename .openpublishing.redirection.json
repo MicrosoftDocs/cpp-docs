@@ -8554,6 +8554,11 @@
             "source_path": "docs/windows/wire-marshal.md",
             "redirect_url": "/cpp/windows/attributes/wire-marshal",
             "redirect_document_id": true
+},
+{
+    "source_path": "docs/windows/windows-desktop-applications-cpp.md",
+    "redirect_url": "/cpp/windows/desktop-applications-visual-cpp",
+    "redirect_document_id": true
 }
 ]
 }
