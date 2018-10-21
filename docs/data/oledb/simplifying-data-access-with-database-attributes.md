@@ -24,9 +24,9 @@ By comparing the two files, you can see how much simpler it's to use attributes.
   
 - Using attributes, you only have to declare one class: `CAuthors`, while with templates you have to declare two: `CAuthorsNoAttrAccessor` and `CAuthorsNoAttr`.  
   
-- The `db_source` call in the attributed version is equal to the `OpenDataSource()` call in the template declaration.  
+- The `db_source` call in the attributed version is equivalent to the `OpenDataSource()` call in the template declaration.  
   
-- The `db_table` call in the attributed version is equal to the following template declaration:  
+- The `db_table` call in the attributed version is equivalent to the following template declaration:  
   
     ```cpp  
     class CAuthorsNoAttr : public CTable<CAccessor<CAuthorsNoAttrAccessor>>  

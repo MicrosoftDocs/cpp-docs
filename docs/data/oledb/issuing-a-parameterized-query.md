@@ -51,7 +51,7 @@ int main()
 }  
 ```  
   
-The user record, `CArtists`, looks like the following:  
+The user record, `CArtists`, looks like this example:  
   
 ```cpp  
 class CArtists  
