@@ -1,7 +1,7 @@
 ---
 title: "C Additive Operators | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
 dev_langs: ["C++"]
@@ -17,15 +17,13 @@ The additive operators perform addition (**+**) and subtraction (**-**).
 
 ## Syntax
 
-*additive-expression*:
-*multiplicative-expression*
-
-*additive-expression*  **+**  *multiplicative-expression*
-
-*additive-expression*  **-**  *multiplicative-expression*
+*additive-expression*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*multiplicative-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression* **+** *multiplicative-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression* **-** *multiplicative-expression*
 
 > [!NOTE]
->  Although the syntax for *additive-expression* includes *multiplicative-expression*, this does not imply that expressions using multiplication are required. See the syntax in [C Language Syntax Summary](../c-language/c-language-syntax-summary.md), for *multiplicative-expression*, *cast-expression*, and *unary-expression*.
+> Although the syntax for *additive-expression* includes *multiplicative-expression*, this does not imply that expressions using multiplication are required. See the syntax in [C Language Syntax Summary](../c-language/c-language-syntax-summary.md), for *multiplicative-expression*, *cast-expression*, and *unary-expression*.
 
 The operands can be integral or floating values. Some additive operations can also be performed on pointer values, as outlined under the discussion of each operator.
 

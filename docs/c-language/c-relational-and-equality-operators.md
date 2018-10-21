@@ -1,7 +1,7 @@
 ---
 title: "C Relational and Equality Operators | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
 dev_langs: ["C++"]
@@ -17,34 +17,28 @@ The binary relational and equality operators compare their first operand to thei
 
 **Syntax**
 
-*relational-expression*:
-*shift-expression*
+*relational-expression*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **&lt;** *shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **>** *shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **&lt;=** *shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **>=** *shift-expression*<br/>
 
-*relational-expression*  **\<**  *shift-expression*
-
-*relational-expression*  **>**  *shift-expression*
-
-*relational-expression*  **\<=**  *shift-expression*
-
-*relational-expression*  **>=**  *shift-expression*
-
-*equality-expression*:
-*relational-expression*
-
-*equality-expression*  **==**  *relational-expression*
-
-*equality-expression*  **!=**  *relational-expression*
+*equality-expression*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*equality-expression* **==** *relational-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*equality-expression* **!=** *relational-expression*
 
 The relational and equality operators test the following relationships:
 
 |Operator|Relationship Tested|
 |--------------|-------------------------|
-|**\<**|First operand less than second operand|
+|**&lt;**|First operand less than second operand|
 |**>**|First operand greater than second operand|
-|**\<=**|First operand less than or equal to second operand|
+|**&lt;=**|First operand less than or equal to second operand|
 |**>=**|First operand greater than or equal to second operand|
-|`==`|First operand equal to second operand|
-|`!=`|First operand not equal to second operand|
+|**==**|First operand equal to second operand|
+|**!=**|First operand not equal to second operand|
 
 The first four operators in the list above have a higher precedence than the equality operators (`==` and `!=`). See the precedence information in the table [Precedence and Associativity of C Operators](../c-language/precedence-and-order-of-evaluation.md).
 
@@ -52,7 +46,7 @@ The operands can have integral, floating, or pointer type. The types of the oper
 
 - Both operands of any relational or equality operator can be pointers to the same type. For the equality (`==`) and inequality (`!=`) operators, the result of the comparison indicates whether the two pointers address the same memory location. For the other relational operators (**\<**, **>**, **\<**=, and **>**=), the result of the comparison indicates the relative position of the two memory addresses of the objects pointed to. Relational operators compare only offsets.
 
-     Pointer comparison is defined only for parts of the same object. If the pointers refer to members of an array, the comparison is equivalent to comparison of the corresponding subscripts. The address of the first array element is "less than" the address of the last element. In the case of structures, pointers to structure members declared later are "greater than" pointers to members declared earlier in the structure. Pointers to the members of the same union are equal.
+   Pointer comparison is defined only for parts of the same object. If the pointers refer to members of an array, the comparison is equivalent to comparison of the corresponding subscripts. The address of the first array element is "less than" the address of the last element. In the case of structures, pointers to structure members declared later are "greater than" pointers to members declared earlier in the structure. Pointers to the members of the same union are equal.
 
 - A pointer value can be compared to the constant value 0 for equality (`==`) or inequality (`!=`). A pointer with a value of 0 is called a "null" pointer; that is, it does not point to a valid memory location.
 
@@ -62,14 +56,14 @@ The operands can have integral, floating, or pointer type. The types of the oper
 
 The examples below illustrate relational and equality operators.
 
-```
+```C
 int x = 0, y = 0;
 if ( x < y )
 ```
 
 Because `x` and `y` are equal, the expression in this example yields the value 0.
 
-```
+```C
 char array[10];
 char *p;
 
@@ -79,7 +73,7 @@ for ( p = array; p < &array[10]; p++ )
 
 The fragment in this example sets each element of `array` to a null character constant.
 
-```
+```C
 enum color { red, white, green } col;
    .
    .

@@ -126,7 +126,7 @@ bool operator>=(const COleDateTime& date) const throw();
 
 ### Parameters
 
-*date*  
+*date*<br/>
 The `COleDateTime` object to be compared.
 
 ### Remarks
@@ -171,22 +171,22 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
 
 ### Parameters
 
-*dateSrc*  
+*dateSrc*<br/>
 An existing `COleDateTime` object to be copied into the new `COleDateTime` object.
 
-*varSrc*  
+*varSrc*<br/>
 An existing `VARIANT` data structure (possibly a `COleVariant` object) to be converted to a date/time value (VT_DATE) and copied into the new `COleDateTime` object.
 
-*dtSrc*  
+*dtSrc*<br/>
 A date/time (`DATE`) value to be copied into the new `COleDateTime` object.
 
-*timeSrc*  
+*timeSrc*<br/>
 A `time_t` or `__time64_t` value to be converted to a date/time value and copied into the new `COleDateTime` object.
 
-*systimeSrc*  
+*systimeSrc*<br/>
 A `SYSTEMTIME` structure to be converted to a date/time value and copied into the new `COleDateTime` object.
 
-*filetimeSrc*  
+*filetimeSrc*<br/>
 A `FILETIME` structure to be converted to a date/time value and copied into the new `COleDateTime` object. Note that `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. See [File Times](/windows/desktop/SysInfo/file-times) in the Windows SDK for more information.
 
 *nYear*, *nMonth*, *nDay*, *nHour*, *nMin*, *nSec*  
@@ -195,7 +195,7 @@ Indicate the date and time values to be copied into the new `COleDateTime` objec
 *wDosDate*, *wDosTime*  
 MS-DOS date and time values to be converted to a date/time value and copied into the new `COleDateTime` object.
 
-*dbts*  
+*dbts*<br/>
 A reference to a [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) structure containing the current local time.
 
 ### Remarks
@@ -258,7 +258,7 @@ CString Format(UINT nFormatID) const;
 
 ### Parameters
 
-*dwFlags*  
+*dwFlags*<br/>
 Indicates one of the following locale flags:
 
 - LOCALE_NOUSEROVERRIDE Use the system default locale settings, instead of custom user settings.
@@ -267,10 +267,10 @@ Indicates one of the following locale flags:
 
 - VAR_DATEVALUEONLY Ignore the time portion during parsing.
 
-*lcid*  
+*lcid*<br/>
 Indicates locale ID to use for the conversion. For more information about language identifiers, see [Language Identifiers](/windows/desktop/Intl/language-identifiers).
 
-*lpszFormat*  
+*lpszFormat*<br/>
 A formatting string similar to the `printf` formatting string. Each formatting code, preceded by a percent ( `%`) sign, is replaced by the corresponding `COleDateTime` component. Other characters in the formatting string are copied unchanged to the returned string. See the run-time function [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for more information. The value and meaning of the formatting codes for `Format` are:
 
 - `%H` Hours in the current day
@@ -281,7 +281,7 @@ A formatting string similar to the `printf` formatting string. Each formatting c
 
 - `%%` Percent sign
 
-*nFormatID*  
+*nFormatID*<br/>
 The resource ID for the format-control string.
 
 ### Return Value
@@ -317,7 +317,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
 
 ### Parameters
 
-*dbts*  
+*dbts*<br/>
 A reference to a [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) structure.
 
 ### Return Value
@@ -342,7 +342,7 @@ bool GetAsSystemTime(SYSTEMTIME& sysTime) const throw();
 
 ### Parameters
 
-*sysTime*  
+*sysTime*<br/>
 A reference to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure to receive the converted date/time value from the `COleDateTime` object.
 
 ### Return Value
@@ -365,7 +365,7 @@ bool GetAsUDATE(UDATE& udate) const throw();
 
 ### Parameters
 
-*udate*  
+*udate*<br/>
 A reference to a `UDATE` structure to receive the converted date/time value from the `COleDateTime` object.
 
 ### Return Value
@@ -899,10 +899,10 @@ LCID lcid = LANG_USER_DEFAULT) throw();
 
 ### Parameters
 
-*lpszDate*  
+*lpszDate*<br/>
 A pointer to the null-terminated string which is to be parsed. For details, see Remarks.
 
-*dwFlags*  
+*dwFlags*<br/>
 Indicates flags for locale settings and parsing. One or more of the following flags:
 
 - LOCALE_NOUSEROVERRIDE Use the system default locale settings, rather than custom user settings.
@@ -911,7 +911,7 @@ Indicates flags for locale settings and parsing. One or more of the following fl
 
 - VAR_DATEVALUEONLY Ignore the time portion during parsing.
 
-*lcid*  
+*lcid*<br/>
 Indicates locale ID to use for the conversion.
 
 ### Return Value
@@ -1112,7 +1112,7 @@ void SetStatus(DateTimeStatus status) throw();
 
 ### Parameters
 
-*status*  
+*status*<br/>
 The new status value for this `COleDateTime` object.
 
 ### Remarks
