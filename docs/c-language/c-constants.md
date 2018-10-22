@@ -17,7 +17,7 @@ A "constant" is a number, character, or character string that can be used as a v
 
 ## Syntax
 
-`constant`:
+`constant`:<br/>
 *floating-point-constant*
 
 *integer-constant*
