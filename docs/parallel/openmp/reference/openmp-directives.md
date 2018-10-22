@@ -44,7 +44,7 @@ Specifies that a memory location that will be updated atomically.
 ### Parameters
 
 *expression*<br/>
-The statement containing the lvalue whose memory location you want to protect against multiple writes. For more information about legal expression forms, see the OpenMP specification.
+The statement that has the lvalue, whose memory location you want to protect against more than one write. For more information about legal expression forms, see the OpenMP specification.
 
 ### Remarks
 
@@ -186,7 +186,7 @@ Specifies that all threads have the same view of memory for all shared objects.
 ### Parameters
 
 *var*<br/>
-(Optional) A comma-separated list of variables that represent objects you want to synchronize. If `var` is not specified, all memory is flushed.
+(Optional) A comma-separated list of variables that represent objects you want to synchronize. If `var` isn't specified, all memory is flushed.
 
 ### Remarks
 
@@ -280,7 +280,7 @@ The `for` directive supports the following OpenMP clauses:
 - [reduction](../../../parallel/openmp/reference/reduction.md)
 - [schedule](../../../parallel/openmp/reference/schedule.md)
 
-If `parallel` is also specified, `clause` can be any clause accepted by the `parallel` or `for` directives, except `nowait`.
+If `parallel` is also specified, `clauses` can be any clause accepted by the `parallel` or `for` directives, except `nowait`.
 
 For more information, see [2.4.1 for Construct](../../../parallel/openmp/2-4-1-for-construct.md).
 
@@ -516,7 +516,7 @@ For more information, see [2.3 parallel Construct](../../../parallel/openmp/2-3-
 
 ### Example
 
-The following sample shows how to set the number of threads and define a parallel region. By default, the number of threads is equal to the number of logical processors on the machine. For example, if you have a machine with one physical processor that has hyperthreading enabled, it will have two logical processors and, therefore, two threads.
+The following sample shows how to set the number of threads and define a parallel region. The number of threads is equal by default to the number of logical processors on the machine. For example, if you have a machine with one physical processor that has hyperthreading enabled, it will have two logical processors and two threads.
 
 ```
 // omp_parallel.cpp
@@ -575,7 +575,7 @@ The `sections` directive supports the following OpenMP clauses:
 - [private](../../../parallel/openmp/reference/private-openmp.md)
 - [reduction](../../../parallel/openmp/reference/reduction.md)
 
-If `parallel` is also specified, `clause` can be any clause accepted by the `parallel` or `sections` directives, except `nowait`.
+If `parallel` is also specified, `clauses` can be any clause accepted by the `parallel` or `sections` directives, except `nowait`.
 
 For more information, see [2.4.2 sections Construct](../../../parallel/openmp/2-4-2-sections-construct.md).
 
@@ -682,15 +682,15 @@ The `threadprivate` directive supports no OpenMP clauses.
 
 For more information, see [2.7.1 threadprivate Directive](../../../parallel/openmp/2-7-1-threadprivate-directive.md).
 
-The `threadprivate` directive is based on the [thread](../../../cpp/thread.md)`__declspec` attribute; limits on `__declspec(thread)` apply to `threadprivate`.
+The `threadprivate` directive is based on the [thread](../../../cpp/thread.md) attribute using the [__declspec](../../../cpp/declspec.md) keyword; limits on `__declspec(thread)` apply to `threadprivate`.
 
-You cannot use `threadprivate` in any DLL that will be loaded via [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya).  This includes DLLs that are loaded with [/DELAYLOAD (Delay Load Import)](../../../build/reference/delayload-delay-load-import.md), which also uses `LoadLibrary`.
+You can't use `threadprivate` in any DLL that will be loaded via [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya).  This prohibition includes DLLs that are loaded with [/DELAYLOAD (Delay Load Import)](../../../build/reference/delayload-delay-load-import.md), which also uses `LoadLibrary`.
 
 You can use `threadprivate` in a DLL that is statically loaded at process startup.
 
-Because `threadprivate` is based on `__declspec(thread)`, a `threadprivate` variable will exist in any thread started in the process, not just those threads that are part of a thread team spawned by a parallel region.  This is an implementation detail that you may want to be aware of, since you may notice, for example, constructors for a `threadprivate` user-defined type called more often then expected.
+Because `threadprivate` is based on `__declspec(thread)`, a `threadprivate` variable will exist in any thread started in the process, not just those threads that are part of a thread team spawned by a parallel region.  Be aware of this implementation detail; you may notice, for example, that constructors for a `threadprivate` user-defined type are called more often then expected.
 
-A `threadprivate` variable of a destructable type is not guaranteed to have its destructor called.  For example:
+A `threadprivate` variable of a destructable type isn't guaranteed to have its destructor called.  For example:
 
 ```
 struct MyType
@@ -707,7 +707,7 @@ int main()
 }
 ```
 
-Users have no control as to when the threads constituting the parallel region will terminate.  If those threads exist when the process exits, the threads will not be notified about the process exit, and the destructor will not be called for `threaded_var` on any thread except the one that exits (here, the primary thread).  So code should not count on proper destruction of `threadprivate` variables.
+Users have no control as to when the threads constituting the parallel region will terminate.  If those threads exist when the process exits, the threads won't be notified about the process exit, and the destructor won't be called for `threaded_var` on any thread except the one that exits (here, the primary thread).  So code shouldn't count on proper destruction of `threadprivate` variables.
 
 ### Example
 
