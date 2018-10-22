@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "10/22/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["cmyprovidercommand", "myproviderrs.h", "ccustomcommand", "customrs.h"]]
+f1_keywords: ["cmyprovidercommand", "myproviderrs.h", "ccustomcommand", "customrs.h"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, wizard-generated files", "CMyProviderCommand class in MyProviderRS.H",  "CCustomCommand class in CustomRS.H"]
 ms.assetid: b30b956e-cc91-4cf5-9fe6-f8b1ce9cc2a5
