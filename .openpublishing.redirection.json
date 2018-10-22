@@ -6351,6 +6351,61 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/parallel/openmp/reference/atomic.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-directives#atomic",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/barrier.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-directives#barrier",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/critical.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-directives#critical",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/flush-openmp.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-directives#flush-openmp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/for-openmp.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-directives#for-openmp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/master.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-directives#master",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/ordered-openmp-directives.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-directives#ordered-openmp-directives",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/parallel.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-directives#parallel",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/sections-openmp.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-directives#sections-openmp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/single.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-directives#single",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/threadprivate.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-directives#threadprivate",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/porting/index.md",
             "redirect_url": "/cpp/porting/visual-cpp-porting-and-upgrading-guide",
             "redirect_document_id": false
