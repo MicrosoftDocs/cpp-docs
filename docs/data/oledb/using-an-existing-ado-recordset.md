@@ -25,7 +25,7 @@ To mix OLE DB consumer templates and Active Data Objects (ADO), use ADO to open 
     ```  
   
     > [!NOTE]
-    >  *lpUnk* points to the `IUnknown` object of the ADO recordset.  
+    > *lpUnk* points to the `IUnknown` object of the ADO recordset.  
   
 1. Attach the accessor and rowset to their appropriate OLE DB consumer template classes.  
   

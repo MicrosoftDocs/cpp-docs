@@ -20,7 +20,7 @@ This topic assumes that you are starting with a workable provider. There are two
 Next, you must make sure your provider contains all the functionality to support anything the consumer might request of it. If the consumer wants to update the data store, the provider has to contain code that persists data to the data store. For example, you might use the C Run-Time Library or MFC to perform such operations on your data source. The section "[Writing to the Data Source](#vchowwritingtothedatasource)" describes how to write to the data source, deal with NULL and default values, and set column flags.  
   
 > [!NOTE]
->  [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) is an example of an updatable provider. UpdatePV is the same as MyProv but with updatable support.  
+> [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) is an example of an updatable provider. UpdatePV is the same as MyProv but with updatable support.  
   
 ##  <a name="vchowmakingprovidersupdatable"></a> Making Providers Updatable  
 
@@ -34,7 +34,7 @@ You must first decide whether to inherit from `IRowsetChangeImpl` or `IRowsetUpd
   
 Note that `IRowsetUpdateImpl` derives from `IRowsetChangeImpl`. Thus, `IRowsetUpdateImpl` gives you change capability plus batch capability.  
   
-#### To support updatability in your provider  
+### To support updatability in your provider  
   
 1. In your rowset class, inherit from `IRowsetChangeImpl` or `IRowsetUpdateImpl`. These classes provide appropriate interfaces for changing the data store:  
   
@@ -57,7 +57,7 @@ Note that `IRowsetUpdateImpl` derives from `IRowsetChangeImpl`. Thus, `IRowsetUp
     ```  
   
     > [!NOTE]
-    >  You should remove the `IRowsetChangeImpl` line from your inheritance chain. This one exception to the directive previously mentioned must include the code for `IRowsetChangeImpl`.  
+    > You should remove the `IRowsetChangeImpl` line from your inheritance chain. This one exception to the directive previously mentioned must include the code for `IRowsetChangeImpl`.  
   
 1. Add the following to your COM map (`BEGIN_COM_MAP ... END_COM_MAP`):  
   
@@ -96,7 +96,7 @@ Note that `IRowsetUpdateImpl` derives from `IRowsetChangeImpl`. Thus, `IRowsetUp
      You can find the values used in these macro calls by looking in Atldb.h for the property IDs and values (if Atldb.h differs from the online documentation, Atldb.h supersedes the documentation).  
   
     > [!NOTE]
-    >  Many of the `VARIANT_FALSE` and `VARIANT_TRUE` settings are required by the OLE DB templates; the OLE DB specification says they can be read/write, but the OLE DB templates can only support one value.  
+    > Many of the `VARIANT_FALSE` and `VARIANT_TRUE` settings are required by the OLE DB templates; the OLE DB specification says they can be read/write, but the OLE DB templates can only support one value.  
   
      **If you implement IRowsetChangeImpl**  
   
@@ -129,16 +129,14 @@ Note that `IRowsetUpdateImpl` derives from `IRowsetChangeImpl`. Thus, `IRowsetUp
     - `DBPROP_MAXPENDINGROWS`.  
   
         > [!NOTE]
-        >  If you support notifications, you might also have some other properties as well; see the section on `IRowsetNotifyCP` for this list.  
+        > If you support notifications, you might also have some other properties as well; see the section on `IRowsetNotifyCP` for this list.  
   
 ##  <a name="vchowwritingtothedatasource"></a> Writing to the Data Source  
 
 To read from the data source, call the `Execute` function. To write to the data source, call the `FlushData` function. (In a general sense, flush means to save modifications you make to a table or index to disk.)  
 
 ```cpp
-
 FlushData(HROW, HACCESSOR);  
-
 ```
 
 The row handle (HROW) and accessor handle (HACCESSOR) arguments allow you to specify the region to write. Typically, you write a single data field at a time.
@@ -179,7 +177,7 @@ Handling NULL values.
 
 ### Handling default values.
 
-To implement your own FlushData method, you need to:
+To implement your own `FlushData` method, you need to:
 
 - Go to your rowset class.
 
@@ -194,7 +192,7 @@ To implement your own FlushData method, you need to:
 
 - Provide an implementation of `FlushData`.
 
-A good implementation of FlushData stores only the rows and columns that are actually updated. You can use the HROW and HACCESSOR parameters to determine the current row and column being stored for optimization.
+A good implementation of `FlushData` stores only the rows and columns that are actually updated. You can use the HROW and HACCESSOR parameters to determine the current row and column being stored for optimization.
 
 Typically, the biggest challenge is working with your own native data store. If possible, try to:
 
@@ -206,7 +204,7 @@ Typically, the biggest challenge is working with your own native data store. If 
 
 The best thing to do is to have actual specified values in your data store for NULL and default values. It is best if you can extrapolate this data. If not, you are advised not to allow NULL and default values.
 
-The following example shows how `FlushData` is implemented in the RUpdateRowset class in the UpdatePV sample (see Rowset.h in the sample code):
+The following example shows how `FlushData` is implemented in the `RUpdateRowset` class in the `UpdatePV` sample (see Rowset.h in the sample code):
 
 ```cpp
 ///////////////////////////////////////////////////////////////////////////  
@@ -361,16 +359,15 @@ ATLCOLUMNINFO* CommonGetColInfo(IUnknown* pPropsUnk, ULONG* pcCols, bool bBookma
   
     return _rgColumns;  
 }  
-
 ```
 
 ### Default Values
 
 As with NULL data, you have the responsibility to deal with changing default values.
 
-The default of FlushData and Execute is to return S_OK. Therefore, if you do not override this function, the changes appear to succeed (S_OK will be returned), but they will not be transmitted to the data store.
+The default of `FlushData` and `Execute` is to return S_OK. Therefore, if you do not override this function, the changes appear to succeed (S_OK will be returned), but they will not be transmitted to the data store.
 
-In the UpdatePV sample (in Rowset.h), the `SetDBStatus` method handles default values as follows:
+In the `UpdatePV` sample (in Rowset.h), the `SetDBStatus` method handles default values as follows:
 
 ```cpp
 virtual HRESULT SetDBStatus(DBSTATUS* pdbStatus, CSimpleRow* pRow,  
@@ -409,11 +406,11 @@ virtual HRESULT SetDBStatus(DBSTATUS* pdbStatus, CSimpleRow* pRow,
 
 ### Column Flags
 
-If you support default values on your columns, you need to set it using metadata in the \<provider class\>SchemaRowset class. Set `m_bColumnHasDefault` = VARIANT_TRUE.
+If you support default values on your columns, you need to set it using metadata in the \<provider class\>SchemaRowset class. Set `m_bColumnHasDefault = VARIANT_TRUE`.
 
 You also have the responsibility to set the column flags, which are specified using the DBCOLUMNFLAGS enumerated type. The column flags describe column characteristics.
 
-For example, in the `CUpdateSessionColSchemaRowset` class in UpdatePV (in Session.h), the first column is set up this way:
+For example, in the `CUpdateSessionColSchemaRowset` class in `UpdatePV` (in Session.h), the first column is set up this way:
 
 ```cpp
 // Set up column 1  

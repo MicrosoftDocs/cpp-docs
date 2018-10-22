@@ -30,7 +30,6 @@ CDBPropSet propset(DBPROPSET_ROWSET);
 
 propset.AddProperty(DBPROP_BOOKMARKS, true);  
   
-
 CTable<CAccessor<CProducts>> product;  
 product.Open(session, "Products", &propset);  
 ```  
@@ -42,7 +41,6 @@ CTable<CDynamicAccessor> product;
 CBookmark<>              bookmark;  
 CDBPropSet propset(DBPROPSET_ROWSET);  
   
-
 propset.AddProperty(DBPROP_BOOKMARKS, true);  
 
 product.Open(session, "Products", &propset);  
