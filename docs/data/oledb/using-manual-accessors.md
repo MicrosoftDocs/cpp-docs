@@ -23,7 +23,7 @@ There are four things to do when handling an unknown command:
   
 - See if there are multiple return rowsets  
   
-To do this with the OLE DB Consumer Templates, use the `CManualAccessor` class and follow these steps:  
+To do these things with the OLE DB Consumer Templates, use the `CManualAccessor` class and follow these steps:  
   
 1. Open a `CCommand` object with `CManualAccessor` as a template parameter.  
   
@@ -31,7 +31,7 @@ To do this with the OLE DB Consumer Templates, use the `CManualAccessor` class a
     CCommand<CManualAccessor, CRowset, CMultipleResults> rs;  
     ```  
   
-1. Query the session for the `IDBSchemaRowset` interface and use the procedure parameters rowset. If the `IDBSchemaRowset` interface is not available, query for the `ICommandWithParameters` interface. Call `GetParameterInfo` for information. If neither interface is available, you can assume there are no parameters.  
+1. Query the session for the `IDBSchemaRowset` interface and use the procedure parameters rowset. If the `IDBSchemaRowset` interface isn't available, query for the `ICommandWithParameters` interface. Call `GetParameterInfo` for information. If neither interface is available, you can assume there are no parameters.  
   
 1. For each parameter, call `AddParameterEntry` to add the parameters and set them.  
   
