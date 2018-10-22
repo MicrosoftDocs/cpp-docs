@@ -85,4 +85,3 @@ When you add an item to a project, you add the item to all configurations for th
 
 [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)<br>
 [Visual C++ Project Types](../ide/visual-cpp-project-types.md)<br>
-[Wizard Support for Other Languages](../ide/wizard-support-for-other-languages.md)

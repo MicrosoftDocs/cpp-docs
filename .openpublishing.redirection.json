@@ -6171,6 +6171,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/ide/wizard-support-for-other-languages.md",
+            "redirect_url": "../ide/creating-desktop-projects-by-using-application-wizards",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/intrinsics/index.md",
             "redirect_url": "/cpp/intrinsics/compiler-intrinsics-and-assembly-language",
             "redirect_document_id": false
