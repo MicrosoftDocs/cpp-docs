@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # PROTO
 
-Prototypes a function or procedure. You can call the function prototyped by the PROTO directive by using the [INVOKE](https://docs.microsoft.com/en-us/cpp/assembler/masm/invoke?view=vs-2017) directive.
+Prototypes a function or procedure. You can call the function prototyped by the PROTO directive by using the [INVOKE](invoke.md) directive.
 
 ## Syntax
 
