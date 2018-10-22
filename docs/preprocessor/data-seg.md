@@ -61,7 +61,7 @@ int j = 1;                     // stored in "my_data1"
 int l = 2;                     // stored in "my_data2"  
   
 #pragma data_seg(pop, stack1)   // pop stack1 off the stack  
-int m = 3;                     // stored in "stack_data1"  
+int m = 3;                     // stored in "my_data1"  
   
 int main() {  
 }  
