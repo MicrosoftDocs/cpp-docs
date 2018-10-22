@@ -1,32 +1,32 @@
 ---
 title: "CMyProviderSource (MyProviderDS.H) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/22/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["myproviderds.h", "cmyprovidersource"]
+f1_keywords: ["myproviderds.h", "cmyprovidersource", "customds.h", "ccustomsource"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["OLE DB providers, wizard-generated files", "CMyProviderSource class in MyProviderDS.H"]
+helpviewer_keywords: ["OLE DB providers, wizard-generated files", "CMyProviderSource class in MyProviderDS.H", "CCustomSource class in CustomDS.H"]
 ms.assetid: c143d48e-59c8-4f67-9141-3aab51859b92
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
-# CMyProviderSource (MyProviderDS.H)
+# CCustomClassSource (CustomClassDS.h)
 
 The provider classes use multiple inheritance. The following code shows the inheritance chain for the data source object:  
   
 ```cpp
 /////////////////////////////////////////////////////////////////////////  
-// CMyProviderSource  
-class ATL_NO_VTABLE CMyProviderSource :   
+// CCustomSource  
+class ATL_NO_VTABLE CCustomSource :   
    public CComObjectRootEx<CComSingleThreadModel>,  
-   public CComCoClass<CMyProviderSource, &CLSID_MyProvider>,  
-   public IDBCreateSessionImpl<CMyProviderSource, CMyProviderSession>,  
-   public IDBInitializeImpl<CMyProviderSource>,  
-   public IDBPropertiesImpl<CMyProviderSource>,  
-   public IPersistImpl<CMyProviderSource>,  
-   public IInternalConnectionImpl<CMyProviderSource>  
+   public CComCoClass<CCustomSource, &CLSID_Custom>,  
+   public IDBCreateSessionImpl<CCustomSource, CCustomSession>,  
+   public IDBInitializeImpl<CCustomSource>,  
+   public IDBPropertiesImpl<CCustomSource>,  
+   public IPersistImpl<CCustomSource>,  
+   public IInternalConnectionImpl<CCustomSource>  
 ```  
   
 All the COM components derive from `CComObjectRootEx` and `CComCoClass`. `CComObjectRootEx` provides all the implementation for the `IUnknown` interface. It can handle any threading model. `CComCoClass` handles any error support required. If you want to send richer error information to the client, you can use some of the error APIs in `CComCoClass`.  
@@ -37,8 +37,8 @@ The data source object also inherits from several 'Impl' classes. Each class pro
 
 Whenever the client calls `QueryInterface` for an interface on the data source, it goes through the following COM map:  
   
-```  
-BEGIN_COM_MAP(CMyProviderSource)  
+```cpp  
+BEGIN_COM_MAP(CCustomSource)  
    COM_INTERFACE_ENTRY(IDBCreateSession)  
    COM_INTERFACE_ENTRY(IDBInitialize)  
    COM_INTERFACE_ENTRY(IDBProperties)  
@@ -53,8 +53,8 @@ The COM_INTERFACE_ENTRY macros are from ATL and tell the implementation of `Quer
 
 The property map specifies all the properties designated by the provider:  
   
-```  
-BEGIN_PROPSET_MAP(CMyProviderSource)  
+```cpp  
+BEGIN_PROPSET_MAP(CCustomSource)  
    BEGIN_PROPERTY_SET(DBPROPSET_DATASOURCEINFO)  
       PROPERTY_INFO_ENTRY(ACTIVESESSIONS)  
       PROPERTY_INFO_ENTRY(ASYNCTXNABORT)  
@@ -117,7 +117,7 @@ BEGIN_PROPSET_MAP(CMyProviderSource)
    BEGIN_PROPERTY_SET(DBPROPSET_DATASOURCE)  
       PROPERTY_INFO_ENTRY(CURRENTCATALOG)  
    END_PROPERTY_SET(DBPROPSET_DATASOURCE)  
-   CHAIN_PROPERTY_SET(CMyProviderSession)  
+   CHAIN_PROPERTY_SET(CCustomSession)  
 END_PROPSET_MAP()  
 ```  
   
