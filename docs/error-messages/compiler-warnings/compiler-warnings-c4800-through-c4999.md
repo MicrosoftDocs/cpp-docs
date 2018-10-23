@@ -3,7 +3,7 @@ title: "Compiler Warnings C4800 Through C5999 | Microsoft Docs"
 ms.date: "05/30/2018"
 ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
-f1_keywords: ["C4806", "C4807", "C4808", "C4809", "C4810", "C4811", "C4812", "C4813", "C4816", "C4817", "C4822", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4872", "C4880", "C4881", "C4882", "C4900", "C4910", "C4912", "C4913", "C4916", "C4918", "C4920", "C4921", "C4925", "C4926", "C4932", "C4934", "C4935", "C4936", "C4937", "C4938", "C4939", "C4944", "C4947", "C4950", "C4951", "C4952", "C4953", "C4954", "C4955", "C4956", "C4957", "C4958", "C4959", "C4960", "C4961", "C4962", "C4963", "C4966", "C4970", "C4971", "C4972", "C4973", "C4974", "C4981", "C4985", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4997", "C4998", "C4999", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044"]
+f1_keywords: ["C4806", "C4807", "C4808", "C4809", "C4810", "C4811", "C4812", "C4813", "C4816", "C4817", "C4822", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4872", "C4880", "C4881", "C4882", "C4900", "C4910", "C4912", "C4913", "C4916", "C4918", "C4920", "C4921", "C4925", "C4926", "C4932", "C4934", "C4935", "C4936", "C4937", "C4938", "C4939", "C4944", "C4947", "C4950", "C4951", "C4952", "C4953", "C4954", "C4955", "C4956", "C4957", "C4958", "C4959", "C4960", "C4961", "C4962", "C4963", "C4966", "C4970", "C4971", "C4972", "C4973", "C4974", "C4981", "C4985", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4997", "C4998", "C4999", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5045", "C5046" ]
 dev_langs: ["C++"]
 author: "corob-msft"
 ms.author: "corob"
@@ -148,3 +148,4 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 2) C5043|'*specification*': exception specification does not match previous declaration|
 |Compiler warning (level 4) C5044|An argument to command-line option *option* points to a path '*path*' that does not exist|
 |[Compiler warning C5045](c5045.md)|Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified|
+|[Compiler warning (level 2) C5046](c5046.md)|'*function*' : Symbol involving type with internal linkage not defined|
