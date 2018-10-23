@@ -34,10 +34,19 @@ These versions of the compiler introduced new warnings:
 | Visual C++ 2017 version 15.5 | 19.12.25830.0 |
 | Visual C++ 2017 version 15.6 | 19.13.26128.0 |
 | Visual C++ 2017 version 15.7 | 19.14.26428.0 |
+| Visual C++ 2017 version 15.8 | 19.15.26726.0 |
 
 You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the __/Wv__ option. The compiler reports all warnings which match versions that begin with the specified number, and suppresses all warnings for versions greater than the specified number. For example, __/Wv:17__ reports all warnings introduced in or before any version of Visual Studio 2012, and suppresses all warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use __/Wv:19.00.23506__. Use __/Wv:19.11__ to report all warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppresses warnings introduced in Visual Studio 2017 version 15.5 and later.
 
 The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the __/Wv__ compiler option. The __/Wv__ option can't suppress warnings that are not listed, which predate the specified versions of the compiler.
+
+## Warnings introduced in Visual C++ 2017 version 15.8 (compiler version 19.15.26726.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.14__.
+
+|||
+|-|-|
+C5046|'*function*' : Symbol involving type with internal linkage not defined|
 
 ## Warnings introduced in Visual C++ 2017 version 15.7 (compiler version 19.14.26428.0)
 
