@@ -71,7 +71,7 @@ void CtestProvDlg::OnRun()
    CDataSource source;  
    CSession   session;  
   
-   if (source.Open("MyProvider.MyProvider.1", NULL) != S_OK)  
+   if (source.Open("Custom.Custom.1", NULL) != S_OK)  
       return;  
   
    if (session.Open(source) != S_OK)  
@@ -91,7 +91,7 @@ void CtestProvDlg::OnRun()
 The `CCommand`, `CDataSource`, and `CSession` classes all belong to the OLE DB consumer templates. Each class mimics a COM object in the provider. The `CCommand` object takes the `CProvider` class, declared in the header file, as a template parameter. The `CProvider` parameter represents bindings that you use to access the data from the provider. Here is the `Open` code for the data source, session, and command:  
   
 ```cpp  
-if (source.Open("MyProvider.MyProvider.1", NULL) != S_OK)  
+if (source.Open("Custom.Custom.1", NULL) != S_OK)  
    return;  
   
 if (session.Open(source) != S_OK)  
@@ -101,7 +101,7 @@ if (table.Open(session, _T("c:\\samples\\myprov\\myData.txt")) != S_OK)
    return;  
 ```  
   
-The lines to open each of the classes create each COM object in the provider. To locate the provider, use the ProgID of the provider. You can get the ProgID from the system registry or by looking in the MyProvider.rgs file (open the provider's directory and search for the ProgID key).  
+The lines to open each of the classes create each COM object in the provider. To locate the provider, use the ProgID of the provider. You can get the ProgID from the system registry or by looking in the Custom.rgs file (open the provider's directory and search for the ProgID key).  
   
 The MyData.txt file is included with the MyProv sample. To create a file of your own, use an editor and type an even number of strings, pressing ENTER between each string. Change the path name if you move the file.  
   

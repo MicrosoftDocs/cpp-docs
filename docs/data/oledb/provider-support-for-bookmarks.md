@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Provider Support for Bookmarks
 
-The example in this topic adds the `IRowsetLocate` interface to the `CMyProviderRowset` class. In almost all cases, you start by adding an interface to an existing COM object. You can then test it by adding more calls from the consumer templates. The example demonstrates how to:  
+The example in this topic adds the `IRowsetLocate` interface to the `CCustomRowset` class. In almost all cases, you start by adding an interface to an existing COM object. You can then test it by adding more calls from the consumer templates. The example demonstrates how to:  
   
 - Add an interface to a provider.  
   
@@ -21,32 +21,32 @@ The example in this topic adds the `IRowsetLocate` interface to the `CMyProvider
   
 - Add bookmark support.  
   
-The `IRowsetLocate` interface inherits from the `IRowset` interface. To add the `IRowsetLocate` interface, inherit `CMyProviderRowset` from [IRowsetLocateImpl](../../data/oledb/irowsetlocateimpl-class.md).  
+The `IRowsetLocate` interface inherits from the `IRowset` interface. To add the `IRowsetLocate` interface, inherit `CCustomRowset` from [IRowsetLocateImpl](../../data/oledb/irowsetlocateimpl-class.md).  
   
 Adding the `IRowsetLocate` interface is a bit different from most interfaces. To make the VTABLEs line up, the OLE DB provider templates have a template parameter to handle the derived interface. The following code shows the new inheritance list:  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
-// MyProviderRS.h  
+// CustomRS.h  
   
-// CMyProviderRowset  
-class CMyProviderRowset : public CRowsetImpl< CMyProviderRowset,   
-      CTextData, CMyProviderCommand, CAtlArray<CTextData>,   
+// CCustomRowset  
+class CCustomRowset : public CRowsetImpl< CCustomRowset,   
+      CTextData, CCustomCommand, CAtlArray<CTextData>,   
       CSimpleRow,   
-          IRowsetLocateImpl<CMyProviderRowset, IRowsetLocate>>  
+          IRowsetLocateImpl<CCustomRowset, IRowsetLocate>>  
 ```  
   
-The fourth, fifth, and sixth parameters are all added. This example uses the defaults for the fourth and fifth parameters but specify `IRowsetLocateImpl` as the sixth parameter. `IRowsetLocateImpl` is an OLE DB template class that takes two template parameters: these hook up the `IRowsetLocate` interface to the `CMyProviderRowset` class. To add most interfaces, you can skip this step and move to the next one. Only the `IRowsetLocate` and `IRowsetScroll` interfaces need to be handled in this way.  
+The fourth, fifth, and sixth parameters are all added. This example uses the defaults for the fourth and fifth parameters but specify `IRowsetLocateImpl` as the sixth parameter. `IRowsetLocateImpl` is an OLE DB template class that takes two template parameters: these hook up the `IRowsetLocate` interface to the `CCustomRowset` class. To add most interfaces, you can skip this step and move to the next one. Only the `IRowsetLocate` and `IRowsetScroll` interfaces need to be handled in this way.  
   
-You then need to tell the `CMyProviderRowset` to call `QueryInterface` for the `IRowsetLocate` interface. Add the line `COM_INTERFACE_ENTRY(IRowsetLocate)` to the map. The interface map for `CMyProviderRowset` should appear as shown in the following code:  
+You then need to tell the `CCustomRowset` to call `QueryInterface` for the `IRowsetLocate` interface. Add the line `COM_INTERFACE_ENTRY(IRowsetLocate)` to the map. The interface map for `CCustomRowset` should appear as shown in the following code:  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
-// MyProviderRS.h  
+// CustomRS.h  
   
-typedef CRowsetImpl< CMyProviderRowset, CTextData, CMyProviderCommand, CAtlArray<CTextData>, CSimpleRow, IRowsetLocateImpl<CMyProviderRowset, IRowsetLocate>> _RowsetBaseClass;  
+typedef CRowsetImpl< CCustomRowset, CTextData, CCustomCommand, CAtlArray<CTextData>, CSimpleRow, IRowsetLocateImpl<CCustomRowset, IRowsetLocate>> _RowsetBaseClass;  
   
-BEGIN_COM_MAP(CMyProviderRowset)  
+BEGIN_COM_MAP(CCustomRowset)  
    COM_INTERFACE_ENTRY(IRowsetLocate)  
    COM_INTERFACE_ENTRY_CHAIN(_RowsetBaseClass)  
 END_COM_MAP()  
@@ -60,25 +60,25 @@ To handle the `IColumnsInfo::GetColumnsInfo` call, delete the `PROVIDER_COLUMN` 
   
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
-// MyProviderRS.H  
+// CustomRS.H  
   
 class CTextData  
 {  
    ...  
      // NOTE: Be sure you removed the PROVIDER_COLUMN_MAP!  
-   static ATLCOLUMNINFO* GetColumnInfo(CMyProviderRowset* pThis,   
+   static ATLCOLUMNINFO* GetColumnInfo(CCustomRowset* pThis,   
         ULONG* pcCols);  
-   static ATLCOLUMNINFO* GetColumnInfo(CMyProviderCommand* pThis,   
+   static ATLCOLUMNINFO* GetColumnInfo(CCustomCommand* pThis,   
         ULONG* pcCols);  
 ...  
 };  
 ```  
   
-Then, implement the `GetColumnInfo` function in the MyProviderRS.cpp file as follows:  
+Then, implement the `GetColumnInfo` function in the CustomRS.cpp file as follows:  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////  
-// MyProviderRS.cpp  
+// CustomRS.cpp  
   
 template <class TInterface>  
 ATLCOLUMNINFO* CommonGetColInfo(IUnknown* pPropsUnk, ULONG* pcCols)  
@@ -132,7 +132,7 @@ ATLCOLUMNINFO* CommonGetColInfo(IUnknown* pPropsUnk, ULONG* pcCols)
    return _rgColumns;  
 }  
   
-ATLCOLUMNINFO* CTextData::GetColumnInfo(CMyProviderCommand* pThis,   
+ATLCOLUMNINFO* CTextData::GetColumnInfo(CCustomCommand* pThis,   
      ULONG* pcCols)  
 {  
    return CommonGetColInfo<ICommandProperties>(pThis->GetUnknown(),  
@@ -149,11 +149,11 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(RUpdateRowset* pThis, ULONG* pcCols)
   
 In your implementation, you get the property by using the pointer to the command object. The `pThis` pointer represents the rowset or command class. Because you use templates here, you have to pass this in as a `void` pointer or the code does not compile.  
   
-Specify a static array to contain the column information. If the consumer does not want the bookmark column, an entry in the array is wasted. You can dynamically allocate this array, but you would need to make sure to destroy it properly. This example defines and uses the macros ADD_COLUMN_ENTRY and ADD_COLUMN_ENTRY_EX to insert the information into the array. You can add the macros to the MyProviderRS.H file as shown in the following code:  
+Specify a static array to contain the column information. If the consumer does not want the bookmark column, an entry in the array is wasted. You can dynamically allocate this array, but you would need to make sure to destroy it properly. This example defines and uses the macros ADD_COLUMN_ENTRY and ADD_COLUMN_ENTRY_EX to insert the information into the array. You can add the macros to the CustomRS.H file as shown in the following code:  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
-// MyProviderRS.h  
+// CustomRS.h  
   
 #define ADD_COLUMN_ENTRY(ulCols, name, ordinal, colSize, type, precision, scale, guid, dataClass, member) \  
    _rgColumns[ulCols].pwszName = (LPOLESTR)name; \  
@@ -192,7 +192,7 @@ void CTestProvDlg::OnRun()
    CDataSource source;  
    CSession   session;  
   
-   if (source.Open("MyProvider.MyProvider.1", NULL, NULL, NULL,   
+   if (source.Open("Custom.Custom.1", NULL, NULL, NULL,   
           NULL) != S_OK)  
       return;  
   

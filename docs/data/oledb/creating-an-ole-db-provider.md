@@ -22,11 +22,11 @@ The basic steps are as follows:
    > [!NOTE]
    > The project must include MFC support before adding a **ATL OLEDB Provider**.
   
-1. Modify the code in the `Execute` method in [CMyProviderRowset(MyProviderRS.h)](cmyproviderrowset-myproviderrs-h.md). For an example, see [Reading Strings Into an OLE DB Provider](../../data/oledb/reading-strings-into-the-ole-db-provider.md).  
+1. Modify the code in the `Execute` method in [CCustomRowset(CustomRS.h)](cmyproviderrowset-myproviderrs-h.md). For an example, see [Reading Strings Into an OLE DB Provider](../../data/oledb/reading-strings-into-the-ole-db-provider.md).  
   
-1. Edit the property maps in [MyProviderDS.h](cmyprovidersource-myproviderds-h.md), [MyProviderSess.h](cmyprovidersession-myprovidersess-h.md), and [MyProviderRS.h](cmyproviderrowset-myproviderrs-h.md). The wizard creates property maps that contain all properties that a provider might implement. Go through the property maps and remove or comment out properties that your provider does not need to support.  
+1. Edit the property maps in [CustomDS.h](cmyprovidersource-myproviderds-h.md), [CustomSess.h](cmyprovidersession-myprovidersess-h.md), and [CustomRS.h](cmyproviderrowset-myproviderrs-h.md). The wizard creates property maps that contain all properties that a provider might implement. Go through the property maps and remove or comment out properties that your provider does not need to support.  
   
-1. Update the PROVIDER_COLUMN_MAP, which can be found in [CMyProviderRowset(MyProviderRS.h)](cmyproviderrowset-myproviderrs-h.md). For an example, see [Storing Strings In the OLE DB Provider](../../data/oledb/storing-strings-in-the-ole-db-provider.md).  
+1. Update the PROVIDER_COLUMN_MAP, which can be found in [CCustomRowset(CustomRS.h)](cmyproviderrowset-myproviderrs-h.md). For an example, see [Storing Strings In the OLE DB Provider](../../data/oledb/storing-strings-in-the-ole-db-provider.md).  
   
 1. When you are ready to test your provider, you can test it by trying to find the provider in a provider enumeration. For examples of test code that finds a provider in an enumeration, see the [CATDB](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/catdb) and [DBVIEWER](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/dbviewer) samples or the example in [Implementing A Simple Consumer](../../data/oledb/implementing-a-simple-consumer.md).  
   
