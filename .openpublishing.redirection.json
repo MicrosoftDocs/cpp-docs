@@ -6351,68 +6351,68 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/parallel/openmp/copyin.md",
-            "redirect_url": "/cpp/parallel/reference/openmp-clauses#copyin",
+            "source_path": "docs/parallel/openmp/reference/copyin.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-clauses#copyin",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/parallel/openmp/copyprivate.md",
-            "redirect_url": "/cpp/parallel/reference/openmp-clauses#copyprivate",
+            "source_path": "docs/parallel/openmp/reference/copyprivate.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-clauses#copyprivate",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/parallel/openmp/default-openmp.md",
-            "redirect_url": "/cpp/parallel/reference/openmp-clauses#default-openmp",
+            "source_path": "docs/parallel/openmp/reference/default-openmp.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-clauses#default-openmp",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/parallel/openmp/firstprivate.md",
-            "redirect_url": "/cpp/parallel/reference/openmp-clauses#firstprivate",
+            "source_path": "docs/parallel/openmp/reference/firstprivate.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-clauses#firstprivate",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/parallel/openmp/if-openmp.md",
-            "redirect_url": "/cpp/parallel/reference/openmp-clauses#if-openmp",
+            "source_path": "docs/parallel/openmp/reference/if-openmp.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-clauses#if-openmp",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/parallel/openmp/lastprivate.md",
-            "redirect_url": "/cpp/parallel/reference/openmp-clauses#lastprivate",
+            "source_path": "docs/parallel/openmp/reference/lastprivate.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-clauses#lastprivate",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/parallel/openmp/nowait.md",
-            "redirect_url": "/cpp/parallel/reference/openmp-clauses#nowait",
+            "source_path": "docs/parallel/openmp/reference/nowait.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-clauses#nowait",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/parallel/openmp/num-threads.md",
-            "redirect_url": "/cpp/parallel/reference/openmp-clauses#num-threads",
+            "source_path": "docs/parallel/openmp/reference/num-threads.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-clauses#num-threads",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/parallel/openmp/ordered-openmp-clauses.md",
-            "redirect_url": "/cpp/parallel/reference/openmp-clauses#ordered-openmp-clauses",
+            "source_path": "docs/parallel/openmp/reference/ordered-openmp-clauses.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-clauses#ordered-openmp-clauses",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/parallel/openmp/private-openmp.md",
-            "redirect_url": "/cpp/parallel/reference/openmp-clauses#private-openmp",
+            "source_path": "docs/parallel/openmp/reference/private-openmp.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-clauses#private-openmp",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/parallel/openmp/reduction.md",
-            "redirect_url": "/cpp/parallel/reference/openmp-clauses#reduction",
+            "source_path": "docs/parallel/openmp/reference/reduction.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-clauses#reduction",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/parallel/openmp/schedule.md",
-            "redirect_url": "/cpp/parallel/reference/openmp-clauses#schedule",
+            "source_path": "docs/parallel/openmp/reference/schedule.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-clauses#schedule",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/parallel/openmp/shared-openmp.md",
-            "redirect_url": "/cpp/parallel/reference/openmp-clauses#shared-openmp",
+            "source_path": "docs/parallel/openmp/reference/shared-openmp.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-clauses#shared-openmp",
             "redirect_document_id": false
         },
         {
