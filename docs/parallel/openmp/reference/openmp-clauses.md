@@ -45,7 +45,7 @@ copyin(var)
 ### Parameters
 
 *var*<br/>
-The `threadprivate` variable that will be initialized with the value of the variable in the master thread, as it exists before the parallel construct.
+The `threadprivate` variable that will be initialized with the variable's value in the master thread, as it exists before the parallel construct.
 
 ### Remarks
 
@@ -156,7 +156,7 @@ default(shared | none)
 
 ### Remarks
 
-`shared`, which is in effect if the `default` clause is not specified, means that any variable in a parallel region will be treated as if it were specified with the [shared](#shared-openmp) clause. `none` means that any variables used in a parallel region that are not scoped with the [private](#private-openmp), [shared](#shared-openmp), [reduction](#reduction), [firstprivate](#firstprivate), or [lastprivate](#lastprivate) clause will cause a compiler error.
+`shared`, which is in effect if the `default` clause is unspecified, means that any variable in a parallel region will be treated as if it were specified with the [shared](#shared-openmp) clause. `none` means that any variables used in a parallel region that aren't scoped with the [private](#private-openmp), [shared](#shared-openmp), [reduction](#reduction), [firstprivate](#firstprivate), or [lastprivate](#lastprivate) clause will cause a compiler error.
 
 `default` applies to the following directives:
 
@@ -181,7 +181,7 @@ firstprivate(var)
 ### Parameters
 
 *var*<br/>
-The variable to have instances in each thread and that will be initialized with the value of the variable, because it exists before the parallel construct. If more than one variable is specified, separate variable names with a comma.
+The variable to have instances in each thread and that will be initialized with the variable's value, because it exists before the parallel construct. If more than one variable is specified, separate variable names with a comma.
 
 ### Remarks
 
@@ -608,10 +608,10 @@ reduction(operation:var)
 ### Parameters
 
 *operation*<br/>
-The operator for the operation to perform on the variables (`var`) at the end of the parallel region.
+The operator for the operation to do on the variables (`var`) at the end of the parallel region.
 
 *var*<br/>
-One or more variables on which to perform scalar reduction. If more than one variable is specified, separate variable names with a comma.
+One or more variables on which to do scalar reduction. If more than one variable is specified, separate variable names with a comma.
 
 ### Remarks
 
