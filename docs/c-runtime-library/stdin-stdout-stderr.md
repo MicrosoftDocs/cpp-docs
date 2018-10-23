@@ -18,7 +18,7 @@ ms.workload: ["cplusplus"]
 
 ```
 
-      FILE *stdin; 
+FILE *stdin; 
 FILE *stdout; 
 FILE *stderr; 
 #include <stdio.h>
@@ -38,7 +38,7 @@ The following stream pointers are available to access the standard streams:
 |**stdout**|Standard output|
 |`stderr`|Standard error|
 
-These pointers can be used as arguments to functions. Some functions, such as **getchar** and `putchar`, use `stdin` and **stdout** automatically.
+These pointers can be used as arguments to functions. Some functions, such as `getchar` and `putchar`, use `stdin` and `stdout` automatically.
 
 These pointers are constants, and cannot be assigned new values. The `freopen` function can be used to redirect the streams to disk files or to other devices. The operating system allows you to redirect a program's standard input and output at the command level.
 
