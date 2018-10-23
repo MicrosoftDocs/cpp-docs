@@ -232,7 +232,7 @@ HRESULT hr = table.Compare(table.dwBookmark, table.dwBookmark,
 }  
 ```  
   
-The while loop contains code to call the `Compare` method in the `IRowsetLocate` interface. The code you have should always pass because you are comparing the exact same bookmarks. Also, store one bookmark in a temporary variable so that you can use it after the while loop finishes to call the `MoveToBookmark` function in the consumer templates. The `MoveToBookmark` function calls the `GetRowsAt` method in `IRowsetLocate`.  
+The **while** loop contains code to call the `Compare` method in the `IRowsetLocate` interface. The code you have should always pass because you are comparing the exact same bookmarks. Also, store one bookmark in a temporary variable so that you can use it after the **while** loop finishes to call the `MoveToBookmark` function in the consumer templates. The `MoveToBookmark` function calls the `GetRowsAt` method in `IRowsetLocate`.  
   
 You also need to update the user record in the consumer. Add an entry in the class to handle a bookmark and an entry in the `COLUMN_MAP`:  
   

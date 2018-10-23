@@ -56,7 +56,7 @@ Programmatically, a consumer typically performs the following sequence of operat
     hr = rs.Open();            // (Open also executes the command)  
     ```  
   
-- Optionally, set rowset properties using `CDBPropSet::AddProperty` and pass them as a parameter to `rs.Open`. For an example of how this is done, see **GetRowsetProperties** in [Consumer Wizard-Generated Methods](../../data/oledb/consumer-wizard-generated-methods.md).  
+- Optionally, set rowset properties using `CDBPropSet::AddProperty` and pass them as a parameter to `rs.Open`. For an example of how this is done, see `GetRowsetProperties` in [Consumer Wizard-Generated Methods](../../data/oledb/consumer-wizard-generated-methods.md).  
   
 - You can now use the rowset to retrieve/manipulate the data.  
   

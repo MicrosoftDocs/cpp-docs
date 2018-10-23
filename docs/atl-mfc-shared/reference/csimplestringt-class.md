@@ -1,7 +1,7 @@
 ---
 title: "CSimpleStringT Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CSimpleStringT", "ATLSIMPSTR/ATL::CSimpleStringT", "ATLSIMPSTR/ATL::CSimpleStringT::PCXSTR", "ATLSIMPSTR/ATL::CSimpleStringT::PXSTR", "ATLSIMPSTR/ATL::CSimpleStringT::CSimpleStringT", "ATLSIMPSTR/ATL::CSimpleStringT::Append", "ATLSIMPSTR/ATL::CSimpleStringT::AppendChar", "ATLSIMPSTR/ATL::CSimpleStringT::CopyChars", "ATLSIMPSTR/ATL::CSimpleStringT::CopyCharsOverlapped", "ATLSIMPSTR/ATL::CSimpleStringT::Empty", "ATLSIMPSTR/ATL::CSimpleStringT::FreeExtra", "ATLSIMPSTR/ATL::CSimpleStringT::GetAllocLength", "ATLSIMPSTR/ATL::CSimpleStringT::GetAt", "ATLSIMPSTR/ATL::CSimpleStringT::GetBuffer", "ATLSIMPSTR/ATL::CSimpleStringT::GetBufferSetLength", "ATLSIMPSTR/ATL::CSimpleStringT::GetLength", "ATLSIMPSTR/ATL::CSimpleStringT::GetManager", "ATLSIMPSTR/ATL::CSimpleStringT::GetString", "ATLSIMPSTR/ATL::CSimpleStringT::IsEmpty", "ATLSIMPSTR/ATL::CSimpleStringT::LockBuffer", "ATLSIMPSTR/ATL::CSimpleStringT::Preallocate", "ATLSIMPSTR/ATL::CSimpleStringT::ReleaseBuffer", "ATLSIMPSTR/ATL::CSimpleStringT::ReleaseBufferSetLength", "ATLSIMPSTR/ATL::CSimpleStringT::SetAt", "ATLSIMPSTR/ATL::CSimpleStringT::SetManager", "ATLSIMPSTR/ATL::CSimpleStringT::SetString", "ATLSIMPSTR/ATL::CSimpleStringT::StringLength", "ATLSIMPSTR/ATL::CSimpleStringT::Truncate", "ATLSIMPSTR/ATL::CSimpleStringT::UnlockBuffer"]
@@ -25,7 +25,7 @@ class CSimpleStringT
 
 ### Parameters
 
-*BaseType*  
+*BaseType*<br/>
 The character type of the string class. Can be one of the following:
 
 - **char** (for ANSI character strings).
@@ -110,13 +110,13 @@ void Append(PCXSTR pszSrc);
 ```
 #### Parameters
 
-*strSrc*  
+*strSrc*<br/>
 The `CSimpleStringT` object to be appended.
 
-*pszSrc*  
+*pszSrc*<br/>
 A pointer to a string containing the characters to be appended.
 
-*nLength*  
+*nLength*<br/>
 The number of characters to append.
 
 ### Remarks
@@ -146,7 +146,7 @@ void AppendChar(XCHAR ch);
 ```
 #### Parameters
 
-*ch*  
+*ch*<br/>
 The character to be appended
 
 ### Remarks
@@ -168,13 +168,13 @@ static void CopyChars(
 
 #### Parameters
 
-*pchDest*  
+*pchDest*<br/>
 A pointer to a character string.
 
-*pchSrc*  
+*pchSrc*<br/>
 A pointer to a string containing the characters to be copied.
 
-*nChars*  
+*nChars*<br/>
 The number of *pchSrc* characters to be copied.
 
 ### Remarks
@@ -208,13 +208,13 @@ static void CopyCharsOverlapped(
 
 #### Parameters
 
-*pchDest*  
+*pchDest*<br/>
 A pointer to a character string.
 
-*pchSrc*  
+*pchSrc*<br/>
 A pointer to a string containing the characters to be copied.
 
-*nChars*  
+*nChars*<br/>
 The number of *pchSrc* characters to be copied.
 
 ### Remarks
@@ -239,19 +239,19 @@ explicit CSimpleStringT(IAtlStringMgr* pStringMgr) throw();
 ```
 #### Parameters
 
-*strSrc*  
+*strSrc*<br/>
 An existing `CSimpleStringT` object to be copied into this `CSimpleStringT` object.
 
-*pchSrc*  
+*pchSrc*<br/>
 A pointer to an array of characters of length *nLength*, not null terminated.
 
-*pszSrc*  
+*pszSrc*<br/>
 A null-terminated string to be copied into this `CSimpleStringT` object.
 
-*nLength*  
+*nLength*<br/>
 A count of the number of characters in `pch`.
 
-*pStringMgr*  
+*pStringMgr*<br/>
 A pointer to the memory manager of the `CSimpleStringT` object. For more information about `IAtlStringMgr` and memory management for `CSimpleStringT`, see [Memory Management and CStringT](../memory-management-with-cstringt.md).
 
 ### Remarks
@@ -378,7 +378,7 @@ XCHAR GetAt(int iChar) const;
 ```
 #### Parameters
 
-*iChar*  
+*iChar*<br/>
 Zero-based index of the character in the `CSimpleStringT` object. The *iChar* parameter must be greater than or equal to 0 and less than the value returned by [GetLength](#getlength). Otherwise, `GetAt` will generate an exception.
 
 ### Return Value
@@ -410,7 +410,7 @@ PXSTR GetBuffer();
 ```
 #### Parameters
 
-*nMinBufferLength*  
+*nMinBufferLength*<br/>
 The minimum number of characters that the character buffer can hold. This value does not include space for a null terminator.
 
 If *nMinBufferLength* is larger than the length of the current buffer, `GetBuffer` destroys the current buffer, replaces it with a buffer of the requested size, and resets the object reference count to zero. If you have previously called [LockBuffer](#lockbuffer) on this buffer, you lose the buffer lock.
@@ -457,7 +457,7 @@ PXSTR GetBufferSetLength(int nLength);
 ```
 #### Parameters
 
-*nLength*  
+*nLength*<br/>
 The exact size of the `CSimpleStringT` character buffer in characters.
 
 ### Return Value
@@ -655,7 +655,7 @@ XCHAR operator[](int iChar) const;
 ```
 #### Parameters
 
-*iChar*  
+*iChar*<br/>
 Zero-based index of a character in the string.
 
 ### Remarks
@@ -686,7 +686,7 @@ XCHAR operator[](int iChar) const;
 
 ### Parameters
 
-*iChar*  
+*iChar*<br/>
 Zero-based index of a character in the string.
 
 ### Remarks
@@ -714,13 +714,13 @@ CSimpleStringT& operator +=(wchar_t ch);
 ```
 #### Parameters
 
-*pszSrc*  
+*pszSrc*<br/>
 A pointer to a null-terminated string.
 
-*strSrc*  
+*strSrc*<br/>
 A pointer to an existing `CSimpleStringT` object.
 
-*ch*  
+*ch*<br/>
 The character to be appended.
 
 ### Remarks
@@ -748,10 +748,10 @@ CSimpleStringT& operator =(const CSimpleStringT& strSrc);
 ```
 #### Parameters
 
-*pszSrc*  
+*pszSrc*<br/>
 A pointer to a null-terminated string.
 
-*strSrc*  
+*strSrc*<br/>
 A pointer to an existing `CSimpleStringT` object.
 
 ### Remarks
@@ -853,7 +853,7 @@ void Preallocate( int nLength);
 ```
 #### Parameters
 
-*nLength*  
+*nLength*<br/>
 The exact size of the `CSimpleStringT` character buffer in characters.
 
 ### Remarks
@@ -893,7 +893,7 @@ void ReleaseBuffer(int nNewLength = -1);
 ```
 #### Parameters
 
-*nNewLength*  
+*nNewLength*<br/>
 The new length of the string in characters, not counting a null terminator. If the string is null terminated, the -1 default value sets the `CSimpleStringT` size to the current length of the string.
 
 ### Remarks
@@ -933,7 +933,7 @@ void ReleaseBufferSetLength(int nNewLength);
 ```
 #### Parameters
 
-*nNewLength*  
+*nNewLength*<br/>
 The length of the string being released
 
 ### Remarks
@@ -951,10 +951,10 @@ void SetAt(int iChar, XCHAR ch);
 ```
 #### Parameters
 
-*iChar*  
+*iChar*<br/>
 Zero-based index of the character in the `CSimpleStringT` object. The *iChar* parameter must be greater than or equal to 0 and less than the value returned by [GetLength](#getlength).
 
-*ch*  
+*ch*<br/>
 The new character.
 
 ### Remarks
@@ -982,7 +982,7 @@ void SetManager(IAtlStringMgr* pStringMgr);
 ```
 #### Parameters
 
-*pStringMgr*  
+*pStringMgr*<br/>
 A pointer to the new memory manager.
 
 ### Remarks
@@ -1010,10 +1010,10 @@ void SetString(PCXSTR pszSrc);
 ```
 #### Parameters
 
-*pszSrc*  
+*pszSrc*<br/>
 A pointer to a null-terminated string.
 
-*nLength*  
+*nLength*<br/>
 A count of the number of characters in *pszSrc*.
 
 ### Remarks
@@ -1050,7 +1050,7 @@ ATL_NOINLINE static int StringLength(PCXSTR psz) throw();
 ```
 #### Parameters
 
-*psz*  
+*psz*<br/>
 A pointer to a null-terminated string.
 
 ### Return Value
@@ -1080,7 +1080,7 @@ void Truncate(int nNewLength);
 ```
 #### Parameters
 
-*nNewLength*  
+*nNewLength*<br/>
 The new length of the string.
 
 ### Remarks

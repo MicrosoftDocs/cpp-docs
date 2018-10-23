@@ -1,7 +1,7 @@
 ---
 title: "CStrBufT Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CStrBufT", "ATLSIMPSTR/ATL::CStrBufT", "ATLSIMPSTR/ATL::CStrBufT::CStrBufT", "ATLSIMPSTR/ATL::CStrBufT::SetLength", "ATLSIMPSTR/ATL::CStrBufT::AUTO_LENGTH", "ATLSIMPSTR/ATL::CStrBufT::SET_LENGTH"]
@@ -25,7 +25,7 @@ class CStrBufT
 
 #### Parameters
 
-*TCharType*  
+*TCharType*<br/>
 The character type of the `CStrBufT` class. Can be one of the following:
 
 - **char** (for ANSI character strings)
@@ -103,13 +103,13 @@ explicit CStrBufT(StringType& str) throw(...);
 
 ### Parameters
 
-*str*  
+*str*<br/>
 The string object associated with the buffer. Typically, the developer will use the predefined typedefs of `CStrBuf` (TCHAR variant), `CStrBufA` (**char** variant) and `CStrBufW` (**wchar_t** variant).
 
-*nMinLength*  
+*nMinLength*<br/>
 The minimum length of the character buffer.
 
-*dwFlags*  
+*dwFlags*<br/>
 Determines if the string length is automatically determined. Can be one of the following:
 
 - AUTO_LENGTH String length is automatically determined when [CSimpleStringT::Release](../../atl-mfc-shared/reference/csimplestringt-class.md#releasebuffer) is called. The string must be null-terminated. Default value.
@@ -194,7 +194,7 @@ void SetLength(int nLength);
 
 ### Parameters
 
-*nLength*  
+*nLength*<br/>
 The new length of the character buffer of the string object.
 
 > [!NOTE]

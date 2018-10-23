@@ -1,7 +1,7 @@
 ---
 title: "Create Declaration / Definition | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/16/2016"
+ms.date: "10/19/2018"
 ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
 ms.assetid: 6b1cdcb2-765e-4b93-8cef-92b861f64eba
@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 # Create Declaration / Definition
 **What:** Lets you immediately generate the declaration or definition of a function.
 
-**When:** You have a function that needs a delcaration, or vice-versa.
+**When:** You have a function that needs a declaration, or vice-versa.
 
 **Why:** You could manually create the declaration/definition, but this will create it automatically, creating the header/code file if required.
 

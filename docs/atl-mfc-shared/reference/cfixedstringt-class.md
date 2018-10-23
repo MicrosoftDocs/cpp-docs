@@ -25,10 +25,10 @@ class CFixedStringT : private CFixedStringMgr, public StringType
 
 #### Parameters
 
-*StringType*  
+*StringType*<br/>
 Used as the base class for the fixed string object and can be any `CStringT`-based type. Some examples include `CString`, `CStringA`, and `CStringW`.
 
-*t_nChars*  
+*t_nChars*<br/>
 The number of characters stored in the buffer.
 
 ## Members
@@ -87,13 +87,13 @@ explicit CFixedStringT(const unsigned char* psz);
 
 ### Parameters
 
-*psz*  
+*psz*<br/>
 A null-terminated string to be copied into this `CFixedStringT` object.
 
-*str*  
+*str*<br/>
 An existing `CFixedStringT` object to be copied into this `CFixedStringT` object.
 
-*pStringMgr*  
+*pStringMgr*<br/>
 A pointer to the memory manager of the `CFixedStringT` object. For more information on `IAtlStringMgr` and memory management for `CFixedStringT`, see [Memory Management and CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
 ### Remarks
@@ -115,10 +115,10 @@ CFixedStringT<StringType, t_nChars>& operator=(const StringType& str);
 
 ### Parameters
 
-*str*  
+*str*<br/>
 A null-terminated string to be copied into this `CFixedStringT` object.
 
-*psz*  
+*psz*<br/>
 An existing `CFixedStringT` to be copied into this `CFixedStringT` object.
 
 ### Remarks
