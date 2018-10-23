@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 **ANSI 3.5.2.2** The integer type chosen to represent the values of an enumeration type
 
 A variable declared as `enum` is an `int`.
-Enumeration (or enum) is a user defined data type in C. It is mainly used to assign names to integral constants, the names make a program easy to read and maintain.
+Enumeration (or enum) is a user defined data type in C. It is mainly used to assign names to integral constants; the names make a program easy to read and maintain.
 
 ## See Also
 
