@@ -17,16 +17,18 @@ A "string literal" is a sequence of characters from the source character set enc
 
 ## Syntax
 
-*string-literal*:
-&nbsp;&nbsp;&nbsp;&nbsp;**"** *s-char-sequence*<sub>opt</sub> **"**
+*string-literal*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**"** *s-char-sequence*<sub>opt</sub> **"**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**L"** *s-char-sequence*<sub>opt</sub> **"**
 
-*s-char-sequence*:
+*s-char-sequence*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*s-char*
+
 &nbsp;&nbsp;&nbsp;&nbsp;*s-char-sequence* *s-char*
 
-*s-char*:
-&nbsp;&nbsp;&nbsp;&nbsp;any member of the source character set except the double quotation mark ("), backslash (\\), or newline character
+*s-char*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;any member of the source character set except the double quotation mark ("), backslash (\\), or newline character<br/>
+
 &nbsp;&nbsp;&nbsp;&nbsp;*escape-sequence*
 
 ## Remarks

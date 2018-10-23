@@ -1,7 +1,7 @@
 ---
 title: "Initializing classes and structs without constructors (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/17/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
 dev_langs: ["C++"]
@@ -15,14 +15,15 @@ ms.workload: ["cplusplus"]
 It is not always necessary to define a constructor for a class, especially ones that are relatively simple. Users can initialize objects of a class or struct by using uniform initialization, as shown in the following example:
 
 ```cpp
-#include "stdafx.h"
-#include <Windows.h>
+// no_constructor.cpp
+// Compile with: cl /EHsc no_constructor.cpp
+#include <time.h>
 
 // No constructor
 struct TempData
 {
     int StationId;
-    time_t time;
+    time_t timeSet;
     double current;
     double maxTemp;
     double minTemp;
@@ -32,9 +33,9 @@ struct TempData
 struct TempData2
 {
     TempData2(double minimum, double maximum, double cur, int id, time_t t) :
-       minTemp(minimum), maxTemp(maximum), current(cur), stationId(id), time(t) {}
+       stationId{id}, timeSet{t}, current{cur}, maxTemp{maximum}, minTemp{minimum} {}
     int stationId;
-    time_t time;
+    time_t timeSet;
     double current;
     double maxTemp;
     double minTemp;
@@ -42,17 +43,19 @@ struct TempData2
 
 int main()
 {
+    time_t time_to_set;
+
     // Member initialization (in order of declaration):
-    TempData td{ 45978, GetCurrentTime(), 28.9, 37.0, 16.7 };
+    TempData td{ 45978, time(&time_to_set), 28.9, 37.0, 16.7 };
 
     // Default initialization = {0,0,0,0,0}
     TempData td_default{};
 
-    //Error C4700 uninitialized local variable
+    // Uninitialized = if used, emits warning C4700 uninitialized local variable
     TempData td_noInit;
 
     // Member declaration (in order of ctor parameters)
-    TempData2 td2{ 16.7, 37.0, 28.9, 45978, GetCurrentTime() };
+    TempData2 td2{ 16.7, 37.0, 28.9, 45978, time(&time_to_set) };
 
     return 0;
 }
