@@ -6416,6 +6416,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/parallel/openmp/reference/omp-lock-t.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-data-types#omp-lock-t",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-nest-lock-t.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-data-types#omp-nest-lock-t",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/parallel/openmp/reference/atomic.md",
             "redirect_url": "/cpp/parallel/openmp/reference/openmp-directives#atomic",
             "redirect_document_id": false
@@ -6468,6 +6478,26 @@
         {
             "source_path": "docs/parallel/openmp/reference/threadprivate.md",
             "redirect_url": "/cpp/parallel/openmp/reference/openmp-directives#threadprivate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-dynamic.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-environment-variables#omp-dynamic",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-nested.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-environment-variables#omp-nested",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-num-threads.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-environment-variables#omp-num-threads",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-schedule.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-environment-variables#omp-schedule",
             "redirect_document_id": false
         },
         {
@@ -8679,11 +8709,11 @@
             "source_path": "docs/windows/wire-marshal.md",
             "redirect_url": "/cpp/windows/attributes/wire-marshal",
             "redirect_document_id": true
-},
-{
-    "source_path": "docs/windows/windows-desktop-applications-cpp.md",
-    "redirect_url": "/cpp/windows/desktop-applications-visual-cpp",
-    "redirect_document_id": true
-}
-]
+        },
+        {
+            "source_path": "docs/windows/windows-desktop-applications-cpp.md",
+            "redirect_url": "/cpp/windows/desktop-applications-visual-cpp",
+            "redirect_document_id": true
+        }
+    ]
 }
