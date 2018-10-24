@@ -1,7 +1,7 @@
 ---
 title: "Commands and Tables | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/22/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -18,7 +18,7 @@ Commands and tables allow you to access rowsets; that is, open rowsets, execute 
 ![CCommand and CTable](../../data/oledb/media/vccommandstables.gif "vccommandstables")  
 Command and Table Classes  
   
-In the previous table, `TAccessor` can be any accessor type listed in [Accessor Types](../../data/oledb/accessors-and-rowsets.md). *TRowset* can be any rowset type listed in [Rowset Types](../../data/oledb/accessors-and-rowsets.md). *TMultiple* specifies the result type (a single or multiple result set).  
+In the previous table, `TAccessor` can be any accessor type listed in [Accessor Types](../../data/oledb/accessors-and-rowsets.md). `TRowset` can be any rowset type listed in [Rowset Types](../../data/oledb/accessors-and-rowsets.md). `TMultiple` specifies the result type (a single or multiple result set).  
   
 The [ATL OLE DB Consumer Wizard](../../atl/reference/atl-ole-db-consumer-wizard.md) lets you specify whether you want a command or table object.  
   
