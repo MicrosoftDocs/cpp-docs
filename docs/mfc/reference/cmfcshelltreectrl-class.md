@@ -154,10 +154,10 @@ virtual BOOL OnChildNotify(
 
 ### Parameters
 
-*message*<br/>
-[in] [in] *wParam*
-*lParam*<br/>
-[in] [in] *pLResult*
+[in] *message*<br/>
+[in] *wParam*<br/>
+[in] *lParam*<br/>
+[in] *pLResult*<br/>
 
 ### Return Value
 
@@ -174,8 +174,8 @@ virtual int OnGetItemIcon(
 
 ### Parameters
 
-*pItem*<br/>
-[in] [in] *bSelected*
+[in] *pItem*<br/>
+[in] *bSelected*<br/>
 
 ### Return Value
 
@@ -190,7 +190,7 @@ virtual CString OnGetItemText(LPAFX_SHELLITEMINFO pItem);
 
 ### Parameters
 
-[in] *pItem*
+[in] *pItem*<br/>
 
 ### Return Value
 

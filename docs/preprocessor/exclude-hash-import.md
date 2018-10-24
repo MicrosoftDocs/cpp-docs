@@ -24,10 +24,10 @@ exclude("Name1"[, "Name2",...])
 ```  
   
 ### Parameters  
-*Name1*  
+*Name1*<br/>
 First item to be excluded.  
   
-*Name2*  
+*Name2*<br/>
 Second item to be excluded (if necessary).  
   
 ## Remarks  

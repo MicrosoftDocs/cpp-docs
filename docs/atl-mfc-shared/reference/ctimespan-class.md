@@ -86,7 +86,7 @@ bool operator>=(CTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 The object to compare.
 
 ### Return Value
@@ -114,10 +114,10 @@ int nSecs) throw();
 
 ### Parameters
 
-*timeSpanSrc*  
+*timeSpanSrc*<br/>
 A `CTimeSpan` object that already exists.
 
-*time*  
+*time*<br/>
 A **__time64_t** time value, which is the number of seconds in the time span.
 
 *lDays*, *nHours*, *nMins*, *nSecs*  
@@ -173,7 +173,7 @@ A formatting string similar to the `printf` formatting string. Formatting codes,
 
 - **%%** Percent sign
 
-*nID*  
+*nID*<br/>
 The ID of the string that identifies this format.
 
 ### Return Value
@@ -327,7 +327,7 @@ CTimeSpan operator-(CTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 The value to add to the `CTimeSpan` object.
 
 ### Return Value
@@ -353,7 +353,7 @@ CTimeSpan& operator-=(CTimeSpan span) throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 The value to add to the `CTimeSpan` object.
 
 ### Return Value
@@ -381,7 +381,7 @@ CArchive& Serialize64(CArchive& ar);
 
 ### Parameters
 
-*ar*  
+*ar*<br/>
 The `CArchive` object that you want to update.
 
 ### Return Value

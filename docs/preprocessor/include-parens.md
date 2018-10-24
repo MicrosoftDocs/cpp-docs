@@ -24,10 +24,10 @@ include("Name1"[,"Name2", ...])
 ```  
   
 ### Parameters  
-*Name1*  
+*Name1*<br/>
 First item to be forcibly included.  
   
-*Name2*  
+*Name2*<br/>
 Second item to be forcibly included (if necessary).  
   
 ## Remarks  

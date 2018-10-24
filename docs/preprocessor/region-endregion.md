@@ -23,10 +23,10 @@ ms.workload: ["cplusplus"]
 ```  
   
 ### Parameters  
-*comment*  
+*comment*<br/>
 (Optional) A comment that will display in the code editor.  
   
-*name*  
+*name*<br/>
 (Optional) The name of the region.  This name will display in the code editor.  
   
 ## Remarks  

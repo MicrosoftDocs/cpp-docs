@@ -54,10 +54,10 @@ CStringData* Allocate(int nAllocLength,int nCharSize) throw();
 
 ### Parameters
 
-*nAllocLength*  
+*nAllocLength*<br/>
 The number of characters in the new memory block.
 
-*nCharSize*  
+*nCharSize*<br/>
 The size (in bytes) of the character type used by the string manager.
 
 ### Return Value
@@ -105,7 +105,7 @@ void Free(CStringData* pData) throw();
 
 ### Parameters
 
-*pData*  
+*pData*<br/>
 A pointer to the memory block to be freed.
 
 ### Remarks
@@ -150,13 +150,13 @@ int nCharSize) throw();
 
 ### Parameters
 
-*pData*  
+*pData*<br/>
 Pointer to the memory previously allocated by this memory manager.
 
-*nAllocLength*  
+*nAllocLength*<br/>
 The number of characters in the new memory block.
 
-*nCharSize*  
+*nCharSize*<br/>
 The size (in bytes) of the character type used by the string manager.
 
 ### Return Value

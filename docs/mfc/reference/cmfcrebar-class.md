@@ -84,14 +84,14 @@ BOOL AddBar(
 
 ### Parameters
 
-[in] [out] *pBar*
-A pointer to the child window that is to be inserted into the rebar. The referenced object must have the **WS_CHILD** window style.
+*pBar*<br/>
+[in, out] A pointer to the child window that is to be inserted into the rebar. The referenced object must have the **WS_CHILD** window style.
 
 *pszText*<br/>
 [in] Specifies the text to appear on the rebar. The text is not part of the child window. Rather, it is displayed on the rebar itself.
 
-[in] [out] *pbmp*
-Specifies the bitmap to be displayed on the rebar background.
+*pbmp*<br/>
+[in, out] Specifies the bitmap to be displayed on the rebar background.
 
 *dwStyle*<br/>
 [in] Contains the style to apply to the band. For a complete list of band styles, see the description for `fStyle` in the [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) structure in the Windows SDK documentation.
@@ -120,8 +120,8 @@ BOOL Create(
 
 ### Parameters
 
-[in] [out] *pParentWnd*
-A pointer to the parent window of this rebar control.
+*pParentWnd*<br/>
+[in, out] A pointer to the parent window of this rebar control.
 
 *dwCtrlStyle*<br/>
 [in] Specifies the style for the rebar control. The default style value is **RBS_BANDBORDERS**, which displays narrow lines to separate adjacent bands on the rebar control. For a list of valid styles, see [Rebar Control Styles](/windows/desktop/Controls/rebar-control-styles) in the Windows SDK documentation.
@@ -165,8 +165,8 @@ virtual CSize CalcFixedLayout(
 
 ### Parameters
 
-*bStretch*<br/>
-[in] [in] *bHorz*
+[in] *bStretch*<br/>
+[in] *bHorz*<br/>
 
 ### Return Value
 
@@ -192,7 +192,7 @@ void EnableDocking(DWORD dwDockStyle);
 
 ### Parameters
 
-[in] *dwDockStyle*
+[in] *dwDockStyle*<br/>
 
 ### Remarks
 
@@ -216,7 +216,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 
 ### Parameters
 
-[in] *CPoint*
+[in] *CPoint*<br/>
 
 ### Return Value
 
@@ -233,8 +233,8 @@ virtual INT_PTR OnToolHitTest(
 
 ### Parameters
 
-*point*<br/>
-[in] [in] *pTI*
+[in] *point*<br/>
+[in] *pTI*<br/>
 
 ### Return Value
 
@@ -251,8 +251,8 @@ virtual void OnUpdateCmdUI(
 
 ### Parameters
 
-*pTarget*<br/>
-[in] [in] *bDisableIfNoHndler*
+[in] *pTarget*<br/>
+[in] *bDisableIfNoHndler*<br/>
 
 ### Remarks
 
@@ -265,7 +265,7 @@ virtual void SetPaneAlignment(DWORD dwAlignment);
 
 ### Parameters
 
-[in] *dwAlignment*
+[in] *dwAlignment*<br/>
 
 ### Remarks
 

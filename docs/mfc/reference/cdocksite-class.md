@@ -270,10 +270,10 @@ virtual BOOL DockPaneLeftOf(
 ### Parameters
 
 *pBarToDock*<br/>
-[in] [out] A pointer to the pane to be docked to the left of *pTargetBar*.
+[in, out] A pointer to the pane to be docked to the left of *pTargetBar*.
 
 *pTargetBar*<br/>
-[in] [out] A pointer to the target pane.
+[in, out] A pointer to the target pane.
 
 ### Return Value
 
@@ -723,7 +723,7 @@ virtual BOOL ShowPane(
 ### Parameters
 
 *pBar*<br/>
-[in] [out] A pointer to the pane to be shown or hidden.
+[in, out] A pointer to the pane to be shown or hidden.
 
 *bShow*<br/>
 [in] TRUE to specify that the pane is to be shown; FALSE to specify that the pane is to be hidden.

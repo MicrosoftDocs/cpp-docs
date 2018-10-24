@@ -27,19 +27,19 @@ Controls the addition of the hidden vtordisp construction/destruction displaceme
 ```  
   
 ### Parameters  
-*push*  
+*push*<br/>
 Pushes the current vtordisp setting on the internal compiler stack and sets the new vtordisp setting to *n*.  If *n* is not specified, the current vtordisp setting is not changed.  
   
-*pop*  
+*pop*<br/>
 Removes the top record from the internal compiler stack and restores the vtordisp setting to the removed value.  
   
-*n*  
+*n*<br/>
 Specifies the new value for the vtordisp setting. Possible values are 0, 1 or 2, corresponding to the `/vd0`, `/vd1`, and `/vd2` compiler options. For more information, see [/vd (Disable Construction Displacements)](../build/reference/vd-disable-construction-displacements.md).  
   
-*on*  
+*on*<br/>
 Equivalent to `#pragma vtordisp(1)`.  
   
-*off*  
+*off*<br/>
 Equivalent to `#pragma vtordisp(0)`.  
   
 ## Remarks  

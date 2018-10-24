@@ -111,7 +111,7 @@ virtual void AddPane(CDockablePane* pControlBarToAdd);
 
 ### Parameters
 
-[in] *pControlBarToAdd*
+[in] *pControlBarToAdd*<br/>
 
 ### Remarks
 
@@ -133,11 +133,11 @@ virtual BOOL AddPaneContainerManager(
 
 ### Parameters
 
-*srcManager*<br/>
-[in] [in] *bOuterEdge*
-*pTargetControlBar*<br/>
-[in] [in] *dwAlignment*
-[in] *bCopy*
+[in] *srcManager*<br/>
+[in] *bOuterEdge*<br/>
+[in] *pTargetControlBar*<br/>
+[in] *dwAlignment*<br/>
+[in] *bCopy*<br/>
 
 ### Return Value
 
@@ -154,8 +154,8 @@ virtual BOOL AddPaneContainerManagerToDockablePane(
 
 ### Parameters
 
-*pTargetControlBar*<br/>
-[in] [in] *srcManager*
+[in] *pTargetControlBar*<br/>
+[in] *srcManager*<br/>
 
 ### Return Value
 
@@ -172,8 +172,8 @@ void AddPanesToList(
 
 ### Parameters
 
-*plstControlBars*<br/>
-[in] [in] *plstSliders*
+[in] *plstControlBars*<br/>
+[in] *plstSliders*<br/>
 
 ### Remarks
 
@@ -186,7 +186,7 @@ void AddPaneToList(CDockablePane* pControlBarToAdd);
 
 ### Parameters
 
-[in] *pControlBarToAdd*
+[in] *pControlBarToAdd*<br/>
 
 ### Remarks
 
@@ -201,8 +201,8 @@ virtual CDockablePane* AddPaneToRecentPaneContainer(
 
 ### Parameters
 
-*pBarToAdd*<br/>
-[in] [in] *pRecentContainer*
+[in] *pBarToAdd*<br/>
+[in] *pRecentContainer*<br/>
 
 ### Return Value
 
@@ -224,13 +224,13 @@ void CalcRects(
 
 ### Parameters
 
-*rectOriginal*<br/>
-[in] [in] *rectInserted*
-*rectSlider*<br/>
-[in] [in] *dwSliderStyle*
-*dwAlignment*<br/>
-[in] [in] *sizeMinOriginal*
-[in] *sizeMinInserted*
+[in] *rectOriginal*<br/>
+[in] *rectInserted*<br/>
+[in] *rectSlider*<br/>
+[in] *dwSliderStyle*<br/>
+[in] *dwAlignment*<br/>
+[in] *sizeMinOriginal*<br/>
+[in] *sizeMinInserted*<br/>
 
 ### Remarks
 
@@ -254,7 +254,7 @@ BOOL CheckAndRemoveNonValidPane(CWnd* pWnd);
 
 ### Parameters
 
-[in] *pWnd*
+[in] *pWnd*<br/>
 
 ### Return Value
 
@@ -271,8 +271,8 @@ virtual BOOL CheckForMiniFrameAndCaption(
 
 ### Parameters
 
-*point*<br/>
-[in] [in] *ppTargetControlBar*
+[in] *point*<br/>
+[in] *ppTargetControlBar*<br/>
 
 ### Return Value
 
@@ -290,9 +290,9 @@ virtual BOOL Create(
 
 ### Parameters
 
-*pParentWnd*<br/>
-[in] [in] *pDefaultSlider*
-[in] *pContainerRTC*
+[in] *pParentWnd*<br/>
+[in] *pDefaultSlider*<br/>
+[in] *pContainerRTC*<br/>
 
 ### Return Value
 
@@ -329,7 +329,7 @@ virtual void EnableGrippers(BOOL bEnable);
 
 ### Parameters
 
-[in] *bEnable*
+[in] *bEnable*<br/>
 
 ### Remarks
 
@@ -344,8 +344,8 @@ virtual CPaneContainer* FindPaneContainer(
 
 ### Parameters
 
-*pBar*<br/>
-[in] [in] *bLeftBar*
+[in] *pBar*<br/>
+[in] *bLeftBar*<br/>
 
 ### Return Value
 
@@ -360,7 +360,7 @@ CDockablePane* FindTabbedPane(UINT nID);
 
 ### Parameters
 
-[in] *nID*
+[in] *nID*<br/>
 
 ### Return Value
 
@@ -375,7 +375,7 @@ virtual void GetAvailableSpace(CRect& rect) const;
 
 ### Parameters
 
-[in] *rect*
+[in] *rect*<br/>
 
 ### Remarks
 
@@ -436,10 +436,10 @@ virtual void GetMinMaxOffset(
 
 ### Parameters
 
-*pSlider*<br/>
-[in] [in] *nMinOffset*
-*nMaxOffset*<br/>
-[in] [in] *nStep*
+[in] *pSlider*<br/>
+[in] *nMinOffset*<br/>
+[in] *nMaxOffset*<br/>
+[in] *nStep*<br/>
 
 ### Remarks
 
@@ -452,7 +452,7 @@ virtual void GetMinSize(CSize& size);
 
 ### Parameters
 
-[in] *size*
+[in] *size*<br/>
 
 ### Remarks
 
@@ -520,7 +520,7 @@ virtual void GetWindowRect(CRect& rect) const;
 
 ### Parameters
 
-[in] *rect*
+[in] *rect*<br/>
 
 ### Remarks
 
@@ -547,11 +547,11 @@ virtual BOOL InsertPane(
 
 ### Parameters
 
-*pControlBarToInsert*<br/>
-[in] [in] *pTargetControlBar*
-*dwAlignment*<br/>
-[in] [in] *lpRect*
-[in] *dockMethod*
+[in] *pControlBarToInsert*<br/>
+[in] *pTargetControlBar*<br/>
+[in] *dwAlignment*<br/>
+[in] *lpRect*<br/>
+[in] *dockMethod*<br/>
 
 ### Return Value
 
@@ -612,10 +612,10 @@ virtual int OnPaneDividerMove(
 
 ### Parameters
 
-*pSlider*<br/>
-[in] [in] *uFlags*
-*nOffset*<br/>
-[in] [in] *hdwp*
+[in] *pSlider*<br/>
+[in] *uFlags*<br/>
+[in] *nOffset*<br/>
+[in] *hdwp*<br/>
 
 ### Return Value
 
@@ -632,8 +632,8 @@ virtual BOOL OnShowPane(
 
 ### Parameters
 
-*pBar*<br/>
-[in] [in] *bShow*
+[in] *pBar*<br/>
+[in] *bShow*<br/>
 
 ### Return Value
 
@@ -653,11 +653,11 @@ virtual CDockablePane* PaneFromPoint(
 
 ### Parameters
 
-*point*<br/>
-[in] [in] *nSensitivity*
-*bExactBar*<br/>
-[in] [in] *bIsTabArea*
-[in] *bCaption*
+[in] *point*<br/>
+[in] *nSensitivity*<br/>
+[in] *bExactBar*<br/>
+[in] *bIsTabArea*<br/>
+[in] *bCaption*<br/>
 
 ### Return Value
 
@@ -699,7 +699,7 @@ virtual void RemovePaneDivider(CPaneDivider* pSlider);
 
 ### Parameters
 
-[in] *pSlider*
+[in] *pSlider*<br/>
 
 ### Remarks
 
@@ -712,7 +712,7 @@ virtual BOOL RemovePaneFromPaneContainer(CDockablePane* pControlBar);
 
 ### Parameters
 
-[in] *pControlBar*
+[in] *pControlBar*<br/>
 
 ### Return Value
 
@@ -729,8 +729,8 @@ virtual BOOL ReplacePane(
 
 ### Parameters
 
-*pBarOld*<br/>
-[in] [in] *pBarNew*
+[in] *pBarOld*<br/>
+[in] *pBarNew*<br/>
 
 ### Return Value
 
@@ -754,11 +754,11 @@ virtual void ResizePaneContainers(
 
 ### Parameters
 
-*nSide*<br/>
-[in] [in] *bExpand*
-*nOffset*<br/>
-[in] [in] *hdwp*
-[in] *rect*
+[in] *nSide*<br/>
+[in] *bExpand*<br/>
+[in] *nOffset*<br/>
+[in] *hdwp*<br/>
+[in] *rect*<br/>
 
 ### Remarks
 
@@ -771,7 +771,7 @@ void Serialize(CArchive& ar);
 
 ### Parameters
 
-[in] *ar*
+[in] *ar*<br/>
 
 ### Remarks
 
@@ -784,7 +784,7 @@ void SetDefaultPaneDividerForPanes(CPaneDivider* pSlider);
 
 ### Parameters
 
-[in] *pSlider*
+[in] *pSlider*<br/>
 
 ### Remarks
 
@@ -797,7 +797,7 @@ void SetPaneContainerRTC(CRuntimeClass* pContainerRTC);
 
 ### Parameters
 
-[in] *pContainerRTC*
+[in] *pContainerRTC*<br/>
 
 ### Remarks
 
@@ -810,7 +810,7 @@ virtual void SetResizeMode(BOOL bResize);
 
 ### Parameters
 
-[in] *bResize*
+[in] *bResize*<br/>
 
 ### Remarks
 
@@ -823,7 +823,7 @@ virtual void StoreRecentDockSiteInfo(CDockablePane* pBar);
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Remarks
 

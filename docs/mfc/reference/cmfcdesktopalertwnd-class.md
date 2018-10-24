@@ -121,8 +121,8 @@ virtual BOOL Create(
 
 ### Parameters
 
-[in] [out] *pWndOwner*
-Specifies the owner of the alert window. That owner will then receive all notifications for the desktop alert window. This value cannot be NULL.
+*pWndOwner*<br/>
+[in, out] Specifies the owner of the alert window. That owner will then receive all notifications for the desktop alert window. This value cannot be NULL.
 
 *uiDlgResID*<br/>
 [in] Specifies the resource ID of the alert window.

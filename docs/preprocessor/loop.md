@@ -34,10 +34,10 @@ Hints to the compiler that this loop should be parallelized across *n* threads, 
   
 The compiler ignores this option unless the [/Qpar](../build/reference/qpar-auto-parallelizer.md) compiler switch is specified.  
   
-*no_vector*  
+*no_vector*<br/>
 By default, the auto-vectorizer is on and will attempt to vectorize all loops that it evaluates as benefitting from it. Specify this pragma to disable the auto-vectorizer for the loop that follows it.  
   
-*ivdep*  
+*ivdep*<br/>
 Hints to the compiler to ignore vector dependencies for this loop. Use this in conjunction with *hint_parallel*.  
   
 ## Remarks  

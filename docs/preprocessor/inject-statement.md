@@ -24,7 +24,7 @@ inject_statement("source_text")
 ```  
   
 ### Parameters  
-*source_text*  
+*source_text*<br/>
 Source text to be inserted into the type library header file.  
   
 ## Remarks  

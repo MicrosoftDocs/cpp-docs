@@ -77,10 +77,10 @@ CFileTimeSpan(LONGLONG nSpan) throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 An existing `CFileTimeSpan` object.
 
-*nSpan*  
+*nSpan*<br/>
 A period of time in milliseconds.
 
 ### Remarks
@@ -109,7 +109,7 @@ CFileTimeSpan operator-(CFileTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 A `CFileTimeSpan` object.
 
 ### Return Value
@@ -126,7 +126,7 @@ bool operator!=(CFileTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 The `CFileTimeSpan` object to be compared.
 
 ### Return Value
@@ -143,7 +143,7 @@ CFileTimeSpan operator+(CFileTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 A `CFileTimeSpan` object.
 
 ### Return Value
@@ -160,7 +160,7 @@ CFileTimeSpan& operator+=(CFileTimeSpan span) throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 A `CFileTimeSpan` object.
 
 ### Return Value
@@ -177,7 +177,7 @@ bool operator<(CFileTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 The `CFileTimeSpan` object to be compared.
 
 ### Return Value
@@ -194,7 +194,7 @@ bool operator<=(CFileTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 The `CFileTimeSpan` object to be compared.
 
 ### Return Value
@@ -211,7 +211,7 @@ CFileTimeSpan& operator=(const CFileTimeSpan& span) throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 A `CFileTimeSpan` object.
 
 ### Return Value
@@ -228,7 +228,7 @@ CFileTimeSpan& operator-=(CFileTimeSpan span) throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 A `CFileTimeSpan` object.
 
 ### Return Value
@@ -245,7 +245,7 @@ bool operator==(CFileTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 The `CFileTimeSpan` object to be compared.
 
 ### Return Value
@@ -262,7 +262,7 @@ bool operator>(CFileTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 The `CFileTimeSpan` object to be compared.
 
 ### Return Value
@@ -279,7 +279,7 @@ bool operator>=(CFileTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 The `CFileTimeSpan` object to be compared.
 
 ### Return Value
@@ -296,7 +296,7 @@ void SetTimeSpan(LONGLONG nSpan) throw();
 
 ### Parameters
 
-*nSpan*  
+*nSpan*<br/>
 The new value for the time span in milliseconds.
 
 ## See Also

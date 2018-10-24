@@ -74,19 +74,19 @@ CSize( DWORD dwSize) throw();
 
 ### Parameters
 
-*initCX*  
+*initCX*<br/>
 Sets the `cx` member for the `CSize`.
 
-*initCY*  
+*initCY*<br/>
 Sets the `cy` member for the `CSize`.
 
-*initSize*  
+*initSize*<br/>
 [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure or `CSize` object used to initialize `CSize`.
 
-*initPt*  
+*initPt*<br/>
 [POINT](../../mfc/reference/point-structure.md) structure or `CPoint` object used to initialize `CSize`.
 
-*dwSize*  
+*dwSize*<br/>
 DWORD used to initialize `CSize`. The low-order word is the `cx` member and the high-order word is the `cy` member.
 
 ### Remarks

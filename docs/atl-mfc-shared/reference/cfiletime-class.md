@@ -108,10 +108,10 @@ CFileTime(ULONGLONG nTime) throw();
 
 ### Parameters
 
-*ft*  
+*ft*<br/>
 A [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) structure.
 
-*nTime*  
+*nTime*<br/>
 The date and time expressed as a 64-bit value.
 
 ### Remarks
@@ -221,10 +221,10 @@ CFileTimeSpan operator-(CFileTime ft) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 A `CFileTimeSpan` object.
 
-*ft*  
+*ft*<br/>
 A `CFileTime` object.
 
 ### Return Value
@@ -241,7 +241,7 @@ bool operator!=(CFileTime ft) const throw();
 
 ### Parameters
 
-*ft*  
+*ft*<br/>
 The `CFileTime` object to be compared.
 
 ### Return Value
@@ -258,7 +258,7 @@ CFileTime operator+(CFileTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 A `CFileTimeSpan` object.
 
 ### Return Value
@@ -275,7 +275,7 @@ CFileTime& operator+=(CFileTimeSpan span) throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 A `CFileTimeSpan` object.
 
 ### Return Value
@@ -292,7 +292,7 @@ bool operator<(CFileTime ft) const throw();
 
 ### Parameters
 
-*ft*  
+*ft*<br/>
 The `CFileTime` object to be compared.
 
 ### Return Value
@@ -313,7 +313,7 @@ bool operator<=(CFileTime ft) const throw();
 
 ### Parameters
 
-*ft*  
+*ft*<br/>
 The `CFileTime` object to be compared.
 
 ### Return Value
@@ -330,7 +330,7 @@ CFileTime& operator=(const FILETIME& ft) throw();
 
 ### Parameters
 
-*ft*  
+*ft*<br/>
 A `CFileTime` object containing the new time and date.
 
 ### Return Value
@@ -347,7 +347,7 @@ CFileTime& operator-=(CFileTimeSpan span) throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 A `CFileTimeSpan` object containing the relative time to subtract.
 
 ### Return Value
@@ -364,7 +364,7 @@ bool operator==(CFileTime ft) const throw();
 
 ### Parameters
 
-*ft*  
+*ft*<br/>
 The `CFileTime` object to compare.
 
 ### Return Value
@@ -381,7 +381,7 @@ bool operator>(CFileTime ft) const throw();
 
 ### Parameters
 
-*ft*  
+*ft*<br/>
 The `CFileTime` object to be compared.
 
 ### Return Value
@@ -398,7 +398,7 @@ bool operator>=(CFileTime ft) const throw();
 
 ### Parameters
 
-*ft*  
+*ft*<br/>
 The `CFileTime` object to be compared.
 
 ### Return Value
@@ -427,7 +427,7 @@ void SetTime(ULONGLONG nTime) throw();
 
 ### Parameters
 
-*nTime*  
+*nTime*<br/>
 The 64-bit value representing the date and time, in either local or Coordinated Universal Time (UTC) format.
 
 ##  <a name="utctolocal"></a>  CFileTime::UTCToLocal

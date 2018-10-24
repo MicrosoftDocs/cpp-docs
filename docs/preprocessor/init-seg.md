@@ -31,13 +31,13 @@ Because initialization of global static objects can involve executing code, you 
   
 The options to the **init_seg** pragma are:  
   
-*compiler*  
+*compiler*<br/>
 Reserved for Microsoft C run-time library initialization. Objects in this group are constructed first.  
   
-*lib*  
+*lib*<br/>
 Available for third-party class-library vendors' initializations. Objects in this group are constructed after those marked as *compiler* but before any others.  
   
-*user*  
+*user*<br/>
 Available to any user. Objects in this group are constructed last.  
   
 *section-name*  

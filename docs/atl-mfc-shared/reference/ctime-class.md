@@ -99,7 +99,7 @@ bool operator>=(CTime time) const throw();
 
 ### Parameters
 
-*time*  
+*time*<br/>
 The `CTime` object to be compared.
 
 ### Return Value
@@ -127,17 +127,17 @@ CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
 
 ### Parameters
 
-*timeSrc*  
+*timeSrc*<br/>
 Indicates a `CTime` object that already exists.
 
-*time*  
+*time*<br/>
 A **__time64_t** time value, which is the number of seconds after January 1, 1970 UTC. Note that this will be adjusted to your local time. For example, if you are in New York and create a `CTime` object by passing a parameter of 0, [CTime::GetMonth](#getmonth) will return 12.  
 
 
 *nYear*, *nMonth*, *nDay*, *nHour*, *nMin*, *nSec*  
 Indicates the date and time values to be copied into the new `CTime` object.
 
-*nDST*  
+*nDST*<br/>
 Indicates whether daylight savings time is in effect. Can have one of three values:
 
 - *nDST* set to 0Standard time is in effect.
@@ -149,10 +149,10 @@ Indicates whether daylight savings time is in effect. Can have one of three valu
 *wDosDate*, *wDosTime*  
 MS-DOS date and time values to be converted to a date/time value and copied into the new `CTime` object.
 
-*st*  
+*st*<br/>
 A [SYSTEMTIME](../../mfc/reference/systemtime-structure.md) structure to be converted to a date/time value and copied into the new `CTime` object.
 
-*ft*  
+*ft*<br/>
 A [FILETIME](../../mfc/reference/filetime-structure.md) structure to be converted to a date/time value and copied into the new `CTime` object.
 
 dbts  
@@ -207,10 +207,10 @@ CString Format(UINT nFormatID) const;
 
 ### Parameters
 
-*pszFormat*  
+*pszFormat*<br/>
 A formatting string similar to the `printf` formatting string. Formatting codes, preceded by a percent (`%`) sign, are replaced by the corresponding `CTime` component. Other characters in the formatting string are copied unchanged to the returned string. See the run-time function [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for a list of formatting codes.
 
-*nFormatID*  
+*nFormatID*<br/>
 The ID of the string that identifies this format.
 
 ### Return Value
@@ -238,10 +238,10 @@ CString FormatGmt(UINT nFormatID) const;
 
 ### Parameters
 
-*pszFormat*  
+*pszFormat*<br/>
 Specifies a formatting string similar to the `printf` formatting string. See the run-time function [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for details.
 
-*nFormatID*  
+*nFormatID*<br/>
 The ID of the string that identifies this format.
 
 ### Return Value
@@ -268,7 +268,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
 
 ### Parameters
 
-*dbts*  
+*dbts*<br/>
 A reference to a DBTIMESTAMP structure containing the current local time.
 
 ### Return Value
@@ -293,7 +293,7 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
 
 ### Parameters
 
-*timeDest*  
+*timeDest*<br/>
 A reference to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure that will hold the converted date/time value of the `CTime` object.
 
 ### Return Value
@@ -374,7 +374,7 @@ struct tm* GetGmtTm(struct tm* ptm) const;
 
 ### Parameters
 
-*ptm*  
+*ptm*<br/>
 Points to a buffer that will receive the time data. If this pointer is NULL, an exception is thrown.
 
 ### Return Value
@@ -421,7 +421,7 @@ struct tm* GetLocalTm(struct tm* ptm) const;
 
 ### Parameters
 
-*ptm*  
+*ptm*<br/>
 Points to a buffer that will receive the time data. If this pointer is NULL, an exception is thrown.
 
 ### Return Value
@@ -544,7 +544,7 @@ CTime& operator=(__time64_t time) throw();
 
 ### Parameters
 
-*time*  
+*time*<br/>
 The new date/time value.
 
 ### Return Value
@@ -567,10 +567,10 @@ CTimeSpan operator-(CTime time) const throw();
 
 ### Parameters
 
-*timeSpan*  
+*timeSpan*<br/>
 The `CTimeSpan` object to be added or subtracted.
 
-*time*  
+*time*<br/>
 The `CTime` object to be subtracted.
 
 ### Return Value
@@ -596,7 +596,7 @@ CTime& operator-=(CTimeSpan span) throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 The `CTimeSpan` object to be added or subtracted.
 
 ### Return Value
@@ -624,7 +624,7 @@ CArchive& Serialize64(CArchive& ar);
 
 ### Parameters
 
-*ar*  
+*ar*<br/>
 The `CArchive` object that you want to update.
 
 ### Return Value

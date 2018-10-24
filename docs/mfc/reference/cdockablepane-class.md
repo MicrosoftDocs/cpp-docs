@@ -200,8 +200,8 @@ virtual CDockablePane* AttachToTabWnd(
 
 ### Parameters
 
-[in] [out] *pTabControlBarAttachTo*
-Specifies the target pane that the current pane attaches to. The target pane must be a dockable pane.
+*pTabControlBarAttachTo*<br/>
+[in, out] Specifies the target pane that the current pane attaches to. The target pane must be a dockable pane.
 
 *dockMethod*<br/>
 [in] Specifies the docking method.
@@ -466,8 +466,8 @@ virtual BOOL Create(
 *lpszCaption*<br/>
 [in] Specifies the window name.
 
-[in] [out] *pParentWnd*
-Specifies the parent window.
+*pParentWnd*<br/>
+[in, out] Specifies the parent window.
 
 *rect*<br/>
 [in] Specifies the size and position of the window, in client coordinates of *pParentWnd*.
@@ -487,8 +487,8 @@ Specifies the parent window.
 *dwControlBarStyle*<br/>
 [in] Specifies additional style attributes.
 
-[in] [out] *pContext*
-Specifies the create context of the window.
+*pContext*<br/>
+[in, out] Specifies the create context of the window.
 
 *lpszWindowName*<br/>
 [in] Specifies the window name.
@@ -571,8 +571,8 @@ virtual BOOL CreateEx(
 *lpszCaption*<br/>
 [in] Specifies the window name.
 
-[in] [out] *pParentWnd*
-Specifies the parent window.
+*pParentWnd*<br/>
+[in, out] Specifies the parent window.
 
 *rect*<br/>
 [in] Specifies the size and position of the window, in client coordinates of *pParentWnd*.
@@ -592,8 +592,8 @@ Specifies the parent window.
 *dwControlBarStyle*<br/>
 [in] Specifies the additional style attributes.
 
-[in] [out] *pContext*
-Specifies the create context of the window.
+*pContext*<br/>
+[in, out] Specifies the create context of the window.
 
 ### Return Value
 
@@ -710,8 +710,8 @@ virtual BOOL DockToWindow(
 
 ### Parameters
 
-[in] [out] *pTargetWindow*
-Specifies the dockable pane to dock this pane to.
+*pTargetWindow*<br/>
+[in, out] Specifies the dockable pane to dock this pane to.
 
 *dwAlignment*<br/>
 [in] Specifies the docking alignment for the pane. May be one of CBRS_ALIGN_LEFT, CBRS_ALIGN_TOP, CBRS_ALIGN_RIGHT, CBRS_ALIGN_BOTTOM or CBRS_ALIGN_ANY. (Defined in afxres.h.)
@@ -1378,8 +1378,8 @@ virtual CMFCAutoHideBar* SetAutoHideMode(
 *dwAlignment*<br/>
 [in] Specifies the alignment of the autohide pane to create.
 
-[in] [out] *pCurrAutoHideBar*
-A pointer to the current autohide toolbar. Can be NULL.
+*pCurrAutoHideBar*<br/>
+[in, out] A pointer to the current autohide toolbar. Can be NULL.
 
 *bUseTimer*<br/>
 [in] Specifies whether to use the autohide effect when the user switches the pane to autohide mode or to hide the pane immediately.

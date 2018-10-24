@@ -25,7 +25,7 @@ Used to incorporate information from a type library. The content of the type lib
 ```  
   
 ### Parameters  
-*filename*  
+*filename*<br/>
 Specifies the type library to import. *filename* can be one of the following:  
   
 - The name of a file that contains a type library, such as an .olb, .tlb, or .dll file. The keyword, **file:**, can precede each filename.  
@@ -56,7 +56,7 @@ Specifies the type library to import. *filename* can be one of the following:
   
 - Any other file format that can be understood by the **LoadTypeLib** API.  
   
-*attributes*  
+*attributes*<br/>
 One or more [#import attributes](#_predir_the_23import_directive_import_attributes). Separate attributes with either a space or comma. For example:  
   
 ```  

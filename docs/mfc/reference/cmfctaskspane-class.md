@@ -314,7 +314,7 @@ int AddSeparator(int nGroup);
 
 ### Parameters
 
-[in] *nGroup*
+[in] *nGroup*<br/>
 
 ### Return Value
 
@@ -414,8 +414,8 @@ void CollapseAllGroups(
 
 ### Parameters
 
-*bCollapse*<br/>
-[in] [in] *nPageIdx*
+[in] *bCollapse*<br/>
+[in] *nPageIdx*<br/>
 
 ### Remarks
 
@@ -462,7 +462,7 @@ virtual CPaneFrameWnd* CreateDefaultMiniframe(CRect rectInitial);
 
 ### Parameters
 
-[in] *rectInitial*
+[in] *rectInitial*<br/>
 
 ### Return Value
 
@@ -582,7 +582,7 @@ void EnableOffsetCustomControls(BOOL bEnable);
 
 ### Parameters
 
-[in] *bEnable*
+[in] *bEnable*<br/>
 
 ### Remarks
 
@@ -760,7 +760,7 @@ void GetNextPages(CStringList& lstNextPages) const;
 
 ### Parameters
 
-[in] *lstNextPages*
+[in] *lstNextPages*<br/>
 
 ### Remarks
 
@@ -807,7 +807,7 @@ void GetPreviousPages(CStringList& lstPrevPages) const;
 
 ### Parameters
 
-[in] *lstPrevPages*
+[in] *lstPrevPages*<br/>
 
 ### Remarks
 
@@ -820,7 +820,7 @@ virtual CScrollBar* GetScrollBarCtrl(int nBar) const;
 
 ### Parameters
 
-[in] *nBar*
+[in] *nBar*<br/>
 
 ### Return Value
 
@@ -1123,9 +1123,9 @@ virtual BOOL LoadState(
 
 ### Parameters
 
-*lpszProfileName*<br/>
-[in] [in] *nIndex*
-[in] *uiID*
+[in] *lpszProfileName*<br/>
+[in] *nIndex*<br/>
+[in] *uiID*<br/>
 
 ### Return Value
 
@@ -1246,8 +1246,8 @@ virtual void OnPressOtherButton(
 
 ### Parameters
 
-*pbtn*<br/>
-[in] [in] *pWndOwner*
+[in] *pbtn*<br/>
+[in] *pWndOwner*<br/>
 
 ### Remarks
 
@@ -1260,7 +1260,7 @@ virtual BOOL OnSetAccData(long lVal);
 
 ### Parameters
 
-[in] *lVal*
+[in] *lVal*<br/>
 
 ### Return Value
 
@@ -1277,8 +1277,8 @@ virtual void OnUpdateCmdUI(
 
 ### Parameters
 
-*pTarget*<br/>
-[in] [in] *bDisableIfNoHndler*
+[in] *pTarget*<br/>
+[in] *bDisableIfNoHndler*<br/>
 
 ### Remarks
 
@@ -1291,7 +1291,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ### Parameters
 
-[in] *pMsg*
+[in] *pMsg*<br/>
 
 ### Return Value
 
@@ -1306,7 +1306,7 @@ void RecalcLayout(BOOL bRedraw = TRUE);
 
 ### Parameters
 
-[in] *bRedraw*
+[in] *bRedraw*<br/>
 
 ### Remarks
 
@@ -1418,9 +1418,9 @@ virtual BOOL SaveState(
 
 ### Parameters
 
-*lpszProfileName*<br/>
-[in] [in] *nIndex*
-[in] *uiID*
+[in] *lpszProfileName*<br/>
+[in] *nIndex*<br/>
+[in] *uiID*<br/>
 
 ### Return Value
 
@@ -1435,7 +1435,7 @@ virtual void Serialize(CArchive& ar);
 
 ### Parameters
 
-[in] *ar*
+[in] *ar*<br/>
 
 ### Remarks
 
@@ -1715,7 +1715,7 @@ void SetTasksIconHorzOffset(int n = -1);
 
 ### Parameters
 
-[in] *n*
+[in] *n*<br/>
 
 ### Remarks
 
@@ -1728,7 +1728,7 @@ void SetTasksIconVertOffset(int n = -1);
 
 ### Parameters
 
-[in] *n*
+[in] *n*<br/>
 
 ### Remarks
 
@@ -1825,7 +1825,7 @@ virtual void ShowCommandMessageString(UINT uiCmdId);
 
 ### Parameters
 
-[in] *uiCmdId*
+[in] *uiCmdId*<br/>
 
 ### Remarks
 

@@ -24,10 +24,10 @@ rename("OldName","NewName")
 ```  
   
 ### Parameters  
-*OldName*  
+*OldName*<br/>
 Old name in the type library.  
   
-*NewName*  
+*NewName*<br/>
 Name to be used instead of the old name.  
   
 ## Remarks  

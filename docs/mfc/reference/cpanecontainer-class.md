@@ -123,7 +123,7 @@ CDockablePane* AddPane(CDockablePane* pBar);
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Return Value
 
@@ -149,8 +149,8 @@ BOOL AddSubPaneContainer(
 
 ### Parameters
 
-*pContainer*<br/>
-[in] [in] *bRightNodeNew*
+[in] *pContainer*<br/>
+[in] *bRightNodeNew*<br/>
 
 ### Return Value
 
@@ -169,10 +169,10 @@ virtual int CalcAvailablePaneSpace(
 
 ### Parameters
 
-*nRequiredOffset*<br/>
-[in] [in] *pBar*
-*pContainer*<br/>
-[in] [in] *bLeftBar*
+[in] *nRequiredOffset*<br/>
+[in] *pBar*<br/>
+[in] *pContainer*<br/>
+[in] *bLeftBar*<br/>
 
 ### Return Value
 
@@ -189,8 +189,8 @@ virtual CSize CalcAvailableSpace(
 
 ### Parameters
 
-*sizeStretch*<br/>
-[in] [in] *bLeftBar*
+[in] *sizeStretch*<br/>
+[in] *bLeftBar*<br/>
 
 ### Return Value
 
@@ -223,7 +223,7 @@ virtual CPaneContainer* Copy(CPaneContainer* pParentContainer);
 
 ### Parameters
 
-[in] *pParentContainer*
+[in] *pParentContainer*<br/>
 
 ### Return Value
 
@@ -242,10 +242,10 @@ CPaneContainer(
 
 ### Parameters
 
-*pManager*<br/>
-[in] [in] *pLeftBar*
-*pRightBar*<br/>
-[in] [in] *pSlider*
+[in] *pManager*<br/>
+[in] *pLeftBar*<br/>
+[in] *pRightBar*<br/>
+[in] *pSlider*<br/>
 
 ### Remarks
 
@@ -260,8 +260,8 @@ virtual void DeletePane(
 
 ### Parameters
 
-*pBar*<br/>
-[in] [in] *barType*
+[in] *pBar*<br/>
+[in] *barType*<br/>
 
 ### Remarks
 
@@ -276,8 +276,8 @@ CPaneContainer* FindSubPaneContainer(
 
 ### Parameters
 
-*pObject*<br/>
-[in] [in] *findCriteria*
+[in] *pObject*<br/>
+[in] *findCriteria*<br/>
 
 ### Return Value
 
@@ -292,7 +292,7 @@ CDockablePane* FindTabbedPane(UINT nID);
 
 ### Parameters
 
-[in] *nID*
+[in] *nID*<br/>
 
 ### Return Value
 
@@ -307,7 +307,7 @@ CList<UINT, UINT>* GetAssociatedSiblingPaneIDs(CDockablePane* pBar);
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Return Value
 
@@ -344,7 +344,7 @@ virtual void GetMinSize(CSize& size) const;
 
 ### Parameters
 
-[in] *size*
+[in] *size*<br/>
 
 ### Remarks
 
@@ -357,7 +357,7 @@ virtual void GetMinSizeLeft(CSize& size) const;
 
 ### Parameters
 
-[in] *size*
+[in] *size*<br/>
 
 ### Remarks
 
@@ -370,7 +370,7 @@ virtual void GetMinSizeRight(CSize& size) const;
 
 ### Parameters
 
-[in] *size*
+[in] *size*<br/>
 
 ### Remarks
 
@@ -506,8 +506,8 @@ virtual void GetWindowRect(
 
 ### Parameters
 
-*rect*<br/>
-[in] [in] *bIgnoreVisibility*
+[in] *rect*<br/>
+[in] *bIgnoreVisibility*<br/>
 
 ### Remarks
 
@@ -542,7 +542,7 @@ BOOL IsLeftPane(CDockablePane* pBar) const;
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Return Value
 
@@ -568,7 +568,7 @@ BOOL IsLeftPartEmpty(BOOL bCheckVisibility = FALSE) const;
 
 ### Parameters
 
-[in] *bCheckVisibility*
+[in] *bCheckVisibility*<br/>
 
 ### Return Value
 
@@ -583,7 +583,7 @@ BOOL IsRightPartEmpty(BOOL bCheckVisibility = FALSE) const;
 
 ### Parameters
 
-[in] *bCheckVisibility*
+[in] *bCheckVisibility*<br/>
 
 ### Return Value
 
@@ -609,7 +609,7 @@ virtual void Move(CPoint ptNewLeftTop);
 
 ### Parameters
 
-[in] *ptNewLeftTop*
+[in] *ptNewLeftTop*<br/>
 
 ### Remarks
 
@@ -624,8 +624,8 @@ void OnDeleteHidePane(
 
 ### Parameters
 
-*pBar*<br/>
-[in] [in] *bHide*
+[in] *pBar*<br/>
+[in] *bHide*<br/>
 
 ### Remarks
 
@@ -640,8 +640,8 @@ virtual int OnMoveInternalPaneDivider(
 
 ### Parameters
 
-*nOffset*<br/>
-[in] [in] *hdwp*
+[in] *nOffset*<br/>
+[in] *hdwp*<br/>
 
 ### Return Value
 
@@ -658,8 +658,8 @@ virtual void OnShowPane(
 
 ### Parameters
 
-*pBar*<br/>
-[in] [in] *bShow*
+[in] *pBar*<br/>
+[in] *bShow*<br/>
 
 ### Remarks
 
@@ -701,7 +701,7 @@ virtual void RemovePane(CDockablePane* pBar);
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Remarks
 
@@ -717,9 +717,9 @@ virtual void Resize(
 
 ### Parameters
 
-*rect*<br/>
-[in] [in] *hdwp*
-[in] *bRedraw*
+[in] *rect*<br/>
+[in] *hdwp*<br/>
+[in] *bRedraw*<br/>
 
 ### Remarks
 
@@ -738,12 +738,12 @@ virtual void ResizePane(
 
 ### Parameters
 
-*nOffset*<br/>
-[in] [in] *pBar*
-*pContainer*<br/>
-[in] [in] *bHorz*
-*bLeftBar*<br/>
-[in] [in] *hdwp*
+[in] *nOffset*<br/>
+[in] *pBar*<br/>
+[in] *pContainer*<br/>
+[in] *bHorz*<br/>
+[in] *bLeftBar*<br/>
+[in] *hdwp*<br/>
 
 ### Remarks
 
@@ -759,9 +759,9 @@ virtual void ResizePartOfPaneContainer(
 
 ### Parameters
 
-*nOffset*<br/>
-[in] [in] *bLeftPart*
-[in] *hdwp*
+[in] *nOffset*<br/>
+[in] *bLeftPart*<br/>
+[in] *hdwp*<br/>
 
 ### Remarks
 
@@ -774,7 +774,7 @@ void Serialize(CArchive& ar);
 
 ### Parameters
 
-[in] *ar*
+[in] *ar*<br/>
 
 ### Remarks
 
@@ -789,8 +789,8 @@ void SetPane(
 
 ### Parameters
 
-*pBar*<br/>
-[in] [in] *bLeft*
+[in] *pBar*<br/>
+[in] *bLeft*<br/>
 
 ### Remarks
 
@@ -805,8 +805,8 @@ void SetPaneContainer(
 
 ### Parameters
 
-*pContainer*<br/>
-[in] [in] *bLeft*
+[in] *pContainer*<br/>
+[in] *bLeft*<br/>
 
 ### Remarks
 
@@ -819,7 +819,7 @@ void SetPaneDivider(CPaneDivider* pSlider);
 
 ### Parameters
 
-[in] *pSlider*
+[in] *pSlider*<br/>
 
 ### Remarks
 
@@ -832,7 +832,7 @@ void SetParentPaneContainer(CPaneContainer* p);
 
 ### Parameters
 
-[in] *p*
+[in] *p*<br/>
 
 ### Remarks
 
@@ -845,7 +845,7 @@ void SetRecentPercent(int nRecentPercent);
 
 ### Parameters
 
-[in] *nRecentPercent*
+[in] *nRecentPercent*<br/>
 
 ### Remarks
 
@@ -860,8 +860,8 @@ BOOL SetUpByID(
 
 ### Parameters
 
-*nID*<br/>
-[in] [in] *pBar*
+[in] *nID*<br/>
+[in] *pBar*<br/>
 
 ### Return Value
 
@@ -876,7 +876,7 @@ virtual void StoreRecentDockSiteInfo(CDockablePane* pBar);
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Remarks
 
@@ -894,11 +894,11 @@ virtual int StretchPaneContainer(
 
 ### Parameters
 
-*nOffset*<br/>
-[in] [in] *bStretchHorz*
-*bLeftBar*<br/>
-[in] [in] *bMoveSlider*
-[in] *hdwp*
+[in] *nOffset*<br/>
+[in] *bStretchHorz*<br/>
+[in] *bLeftBar*<br/>
+[in] *bMoveSlider*<br/>
+[in] *hdwp*<br/>
 
 ### Return Value
 

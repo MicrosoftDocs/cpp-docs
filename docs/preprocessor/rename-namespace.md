@@ -24,7 +24,7 @@ rename_namespace("NewName")
 ```  
   
 ### Parameters  
-*NewName*  
+*NewName*<br/>
 The new name of the namespace.  
   
 ## Remarks  

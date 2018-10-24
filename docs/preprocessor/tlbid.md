@@ -24,7 +24,7 @@ tlbid(number)
 ```  
   
 ### Parameters  
-*number*  
+*number*<br/>
 The number of the type library in `filename`.  
   
 ## Remarks  

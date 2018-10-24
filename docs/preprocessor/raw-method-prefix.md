@@ -24,7 +24,7 @@ raw_method_prefix("Prefix")
 ```  
   
 ### Parameters  
-*Prefix*  
+*Prefix*<br/>
 The prefix to be used.  
   
 ## Remarks  

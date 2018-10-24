@@ -24,7 +24,7 @@ embedded_idl[("param")]
 ```  
   
 ### Parameters  
-*param*  
+*param*<br/>
 Can be one of two values:  
   
 - emitidl: Type information imported from the typelib will be present in the IDL generated for the attributed project.  This is the default and will be in effect if you do not specify a parameter to `embedded_idl`.  

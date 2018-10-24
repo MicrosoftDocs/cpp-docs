@@ -24,13 +24,13 @@ high_property_prefixes("GetPrefix","PutPrefix","PutRefPrefix")
 ```  
   
 ### Parameters  
-*GetPrefix*  
+*GetPrefix*<br/>
 Prefix to be used for the `propget` methods.  
   
-*PutPrefix*  
+*PutPrefix*<br/>
 Prefix to be used for the `propput` methods.  
   
-*PutRefPrefix*  
+*PutRefPrefix*<br/>
 Prefix to be used for the `propputref` methods.  
   
 ## Remarks  

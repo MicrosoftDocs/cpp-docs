@@ -36,10 +36,10 @@ Characters in the source file are mapped to the internal source representation. 
 *Line splicing*  
 All lines ending in a backslash (**\\**) and immediately followed by a newline character are joined with the next line in the source file forming logical lines from the physical lines. Unless it is empty, a source file must end in a newline character that is not preceded by a backslash.  
   
-*Tokenization*  
+*Tokenization*<br/>
 The source file is broken into preprocessing tokens and white-space characters. Comments in the source file are replaced with one space character each. Newline characters are retained.  
   
-*Preprocessing*  
+*Preprocessing*<br/>
 Preprocessing directives are executed and macros are expanded into the source file. The `#include` statement invokes translation starting with the preceding three translation steps on any included text.  
   
 *Character-set mapping*  
@@ -48,10 +48,10 @@ All source character set members and escape sequences are converted to their equ
 *String concatenation*  
 All adjacent string and wide-string literals are concatenated. For example, `"String " "concatenation"` becomes `"String concatenation"`.  
   
-*Translation*  
+*Translation*<br/>
 All tokens are analyzed syntactically and semantically; these tokens are converted into object code.  
   
-*Linkage*  
+*Linkage*<br/>
 All external references are resolved to create an executable program or a dynamic-link library.  
   
 The compiler issues warnings or errors during phases of translation in which it encounters syntax errors.  

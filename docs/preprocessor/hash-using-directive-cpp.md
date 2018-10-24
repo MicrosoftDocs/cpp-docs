@@ -22,12 +22,12 @@ Imports metadata into a program compiled with [/clr](../build/reference/clr-comm
 ```  
   
 ### Parameters  
-*file*  
+*file*<br/>
 An MSIL .dll, .exe, .netmodule, or .obj. For example,  
   
 `#using <MyComponent.dll>`  
   
-*as_friend*  
+*as_friend*<br/>
 Specifies that all types in *file* are accessible. For more information, see [Friend Assemblies (C++)](../dotnet/friend-assemblies-cpp.md).  
   
 ## Remarks  

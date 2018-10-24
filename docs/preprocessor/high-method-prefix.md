@@ -24,7 +24,7 @@ high_method_prefix("Prefix")
 ```  
   
 ### Parameters  
-*Prefix*  
+*Prefix*<br/>
 Prefix to be used.  
   
 ## Remarks  

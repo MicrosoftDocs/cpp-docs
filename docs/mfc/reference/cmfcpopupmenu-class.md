@@ -156,8 +156,8 @@ static BOOL __stdcall ActivatePopupMenu(
 
 ### Parameters
 
-*pTopFrame*<br/>
-[in] [in] *pPopupMenu*
+[in] *pTopFrame*<br/>
+[in] *pPopupMenu*<br/>
 
 ### Return Value
 
@@ -229,7 +229,7 @@ void CloseMenu(BOOL bSetFocusToBar = FALSE);
 
 ### Parameters
 
-[in] *bSetFocusToBar*
+[in] *bSetFocusToBar*<br/>
 
 ### Remarks
 
@@ -315,9 +315,9 @@ virtual CPane* CreateTearOffBar(
 
 ### Parameters
 
-*pWndMain*<br/>
-[in] [in] *uiID*
-[in] *lpszName*
+[in] *pWndMain*<br/>
+[in] *uiID*<br/>
+[in] *lpszName*<br/>
 
 ### Return Value
 
@@ -384,7 +384,7 @@ void EnableResize(CSize sizeMinResize);
 
 ### Parameters
 
-[in] *sizeMinResize*
+[in] *sizeMinResize*<br/>
 
 ### Remarks
 
@@ -397,7 +397,7 @@ void EnableScrolling(BOOL = TRUE);
 
 ### Parameters
 
-[in] *BOOL*
+[in] *BOOL*<br/>
 
 ### Remarks
 
@@ -410,7 +410,7 @@ void EnableVertResize(int nMinResize);
 
 ### Parameters
 
-[in] *nMinResize*
+[in] *nMinResize*<br/>
 
 ### Remarks
 
@@ -423,7 +423,7 @@ CMFCToolBarMenuButton* FindSubItemByCommand(UINT uiCmd) const;
 
 ### Parameters
 
-[in] *uiCmd*
+[in] *uiCmd*<br/>
 
 ### Return Value
 
@@ -611,7 +611,7 @@ virtual CWnd* GetParentArea(CRect& rectParentBtn);
 
 ### Parameters
 
-[in] *rectParentBtn*
+[in] *rectParentBtn*<br/>
 
 ### Return Value
 
@@ -963,7 +963,7 @@ void MoveTo(const CPoint& pt);
 
 ### Parameters
 
-[in] *pt*
+[in] *pt*<br/>
 
 ### Remarks
 
@@ -976,7 +976,7 @@ virtual void OnChangeHot(int nHot);
 
 ### Parameters
 
-[in] *nHot*
+[in] *nHot*<br/>
 
 ### Remarks
 
@@ -989,7 +989,7 @@ virtual void OnChooseItem(UINT uidCmdID);
 
 ### Parameters
 
-[in] *uidCmdID*
+[in] *uidCmdID*<br/>
 
 ### Remarks
 
@@ -1006,10 +1006,10 @@ virtual BOOL OnCmdMsg(
 
 ### Parameters
 
-*nID*<br/>
-[in] [in] *nCode*
-*pExtra*<br/>
-[in] [in] *pHandlerInfo*
+[in] *nID*<br/>
+[in] *nCode*<br/>
+[in] *pExtra*<br/>
+[in] *pHandlerInfo*<br/>
 
 ### Return Value
 
@@ -1024,7 +1024,7 @@ BOOL PostCommand(UINT uiCommandID);
 
 ### Parameters
 
-[in] *uiCommandID*
+[in] *uiCommandID*<br/>
 
 ### Return Value
 
@@ -1039,7 +1039,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ### Parameters
 
-[in] *pMsg*
+[in] *pMsg*<br/>
 
 ### Return Value
 
@@ -1054,7 +1054,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 
 ### Parameters
 
-[in] *bNotify*
+[in] *bNotify*<br/>
 
 ### Remarks
 
@@ -1141,7 +1141,7 @@ void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
 
 ### Parameters
 
-[in] *bAutoDestroy*
+[in] *bAutoDestroy*<br/>
 
 ### Remarks
 
@@ -1222,7 +1222,7 @@ void SetMessageWnd(CWnd* pMsgWnd);
 
 ### Parameters
 
-[in] *pMsgWnd*
+[in] *pMsgWnd*<br/>
 
 ### Remarks
 
@@ -1235,7 +1235,7 @@ void SetParentRibbonElement(CMFCRibbonBaseElement* pElem);
 
 ### Parameters
 
-[in] *pElem*
+[in] *pElem*<br/>
 
 ### Remarks
 
@@ -1248,7 +1248,7 @@ void SetQuickCustomizeType(QUICK_CUSTOMIZE_TYPE Type);
 
 ### Parameters
 
-[in] *Type*
+[in] *Type*<br/>
 
 ### Remarks
 

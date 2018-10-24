@@ -96,7 +96,7 @@ struct InvokeHelper<TDelegateInterface, TCallback, 9> :
 ### Parameters
 
 *TDelegateInterface*<br/>
-*TCallback*  
+*TCallback*<br/>
 The type of the event handler function.
 
 *argCount*<br/>

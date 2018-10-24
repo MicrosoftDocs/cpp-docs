@@ -143,8 +143,8 @@ void AdaptColors(
 
 ### Parameters
 
-*clrBase*<br/>
-[in] [in] *clrTone*
+[in] *clrBase*<br/>
+[in] *clrTone*<br/>
 
 ### Remarks
 
@@ -240,7 +240,7 @@ BOOL CopyImageToClipboard(int iImage);
 
 ### Parameters
 
-[in] *iImage*
+[in] *iImage*<br/>
 
 ### Return Value
 
@@ -255,7 +255,7 @@ BOOL CopyTo(CMFCToolBarImages& imageList);
 
 ### Parameters
 
-[in] *imageList*
+[in] *imageList*<br/>
 
 ### Return Value
 
@@ -293,8 +293,8 @@ static HRGN __stdcall CreateRegionFromImage(
 
 ### Parameters
 
-*bmp*<br/>
-[in] [in] *clrTransparent*
+[in] *bmp*<br/>
+[in] *clrTransparent*<br/>
 
 ### Return Value
 
@@ -373,7 +373,6 @@ TRUE if the specified image was displayed successfully; FALSE if the image index
 
 ##  <a name="drawex"></a>  CMFCToolBarImages::DrawEx
 
-
 ```
 BOOL DrawEx(
     CDC* pDC,
@@ -381,24 +380,19 @@ BOOL DrawEx(
     int iImageIndex,
     ImageAlignHorz horzAlign = ImageAlignHorzLeft,
     ImageAlignVert vertAlign = ImageAlignVertTop,
-    CRect rectSrc = CRect(0,
-    0,
-    0,
-    0),
+    CRect rectSrc = CRect(0, 0, 0, 0),
     BYTE alphaSrc = 255);
 ```
 
 ### Parameters
 
-*pDC*<br/>
-[in] [in] *rect*
-*iImageIndex*<br/>
-[in] [in] *horzAlign*
-*vertAlign*<br/>
-[in] [in] *rectSrc*
-*0*<br/>
-[in] [in] *0)*
-[in] *alphaSrc*
+[in] *pDC*<br/>
+[in] *rect*<br/>
+[in] *iImageIndex*<br/>
+[in] *horzAlign*<br/>
+[in] *vertAlign*<br/>
+[in] *rectSrc*<br/>
+[in] *alphaSrc*<br/>
 
 ### Return Value
 
@@ -413,7 +407,7 @@ static void __stdcall EnableRTL(BOOL bIsRTL = TRUE);
 
 ### Parameters
 
-[in] *bIsRTL*
+[in] *bIsRTL*<br/>
 
 ### Remarks
 
@@ -611,7 +605,7 @@ HBITMAP GetMask(int iImage);
 
 ### Parameters
 
-[in] *iImage*
+[in] *iImage*<br/>
 
 ### Return Value
 
@@ -808,9 +802,9 @@ BOOL LoadStr(
 
 ### Parameters
 
-*lpszResourceName*<br/>
-[in] [in] *hinstRes*
-[in] *bAdd*
+[in] *lpszResourceName*<br/>
+[in] *hinstRes*<br/>
+[in] *bAdd*<br/>
 
 ### Return Value
 
@@ -827,8 +821,8 @@ static COLORREF __stdcall MapFromSysColor(
 
 ### Parameters
 
-*color*<br/>
-[in] [in] *bUseRGBQUAD*
+[in] *color*<br/>
+[in] *bUseRGBQUAD*<br/>
 
 ### Return Value
 
@@ -846,9 +840,9 @@ BOOL MapTo3dColors(
 
 ### Parameters
 
-*bUseRGBQUAD*<br/>
-[in] [in] *clrSrc*
-[in] *clrDest*
+[in] *bUseRGBQUAD*<br/>
+[in] *clrSrc*<br/>
+[in] *clrDest*<br/>
 
 ### Return Value
 
@@ -865,8 +859,8 @@ static COLORREF __stdcall MapToSysColor(
 
 ### Parameters
 
-*color*<br/>
-[in] [in] *bUseRGBQUAD*
+[in] *color*<br/>
+[in] *bUseRGBQUAD*<br/>
 
 ### Return Value
 
@@ -881,7 +875,7 @@ static COLORREF __stdcall MapToSysColorAlpha(COLORREF color);
 
 ### Parameters
 
-[in] *color*
+[in] *color*<br/>
 
 ### Return Value
 
@@ -940,8 +934,8 @@ static BOOL __stdcall MirrorBitmapVert(
 
 ### Parameters
 
-*hbmp*<br/>
-[in] [in] *cyImage*
+[in] *hbmp*<br/>
+[in] *cyImage*<br/>
 
 ### Return Value
 
@@ -980,8 +974,8 @@ BOOL PreMultiplyAlpha(HBITMAP hbmp);
 
 ### Parameters
 
-*hbmp*<br/>
-[in] [in] *bAutoCheckPremlt*
+[in] *hbmp*<br/>
+[in] *bAutoCheckPremlt*<br/>
 
 ### Return Value
 
@@ -1062,7 +1056,7 @@ void SetAlwaysLight(BOOL bAlwaysLight = TRUE);
 
 ### Parameters
 
-[in] *bAlwaysLight*
+[in] *bAlwaysLight*<br/>
 
 ### Remarks
 
@@ -1092,7 +1086,7 @@ static void __stdcall SetFadedImageAlpha(BYTE nValue);
 
 ### Parameters
 
-[in] *nValue*
+[in] *nValue*<br/>
 
 ### Remarks
 
@@ -1124,7 +1118,7 @@ void SetLightPercentage(int nValue);
 
 ### Parameters
 
-[in] *nValue*
+[in] *nValue*<br/>
 
 ### Remarks
 
@@ -1137,7 +1131,7 @@ void SetMapTo3DColors(BOOL bMapTo3DColors);
 
 ### Parameters
 
-[in] *bMapTo3DColors*
+[in] *bMapTo3DColors*<br/>
 
 ### Remarks
 
@@ -1150,7 +1144,7 @@ void SetPreMultiplyAutoCheck(BOOL bAuto = TRUE);
 
 ### Parameters
 
-[in] *bAuto*
+[in] *bAuto*<br/>
 
 ### Remarks
 

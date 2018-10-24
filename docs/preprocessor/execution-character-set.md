@@ -22,7 +22,7 @@ Specifies the execution character set used for string and character literals. Th
 ```  
   
 ### Parameters  
-*target*  
+*target*<br/>
 Specifies the target execution character set. Currently the only target execution set supported is "utf-8".  
   
 ## Remarks  
