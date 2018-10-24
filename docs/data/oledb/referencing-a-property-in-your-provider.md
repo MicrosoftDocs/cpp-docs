@@ -51,7 +51,6 @@ HRESULT hr;
 if (spRowsetProps)  
    hr = spRowsetProps->GetProperties(1, &set, &ulPropSet, &pPropSet);  
   
-
 if (pPropSet)  
 {  
    CComVariant var = pPropSet->rgProperties[0].vValue;  

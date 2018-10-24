@@ -23,7 +23,7 @@ Note that you must also implement and register `IRowsetNotify` on the consumer (
   
 In addition, the class must also contain a map that defines the connection point entry, like this:  
   
-```  
+```cpp  
 BEGIN_CONNECTION_POINT_MAP  
    CONNECTIONPOINT_ENTRY (IID_IRowsetNotify)  
 END_CONNECTION_POINT_MAP  
@@ -36,7 +36,7 @@ To add `IRowsetNotify`, you need to add `IConnectionPointContainerImpl<rowset-na
 For example, here is the inheritance chain for `RUpdateRowset` in [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV):  
   
 > [!NOTE]
->  The sample code might differ from what is listed here; you should regard the sample code as the more up-to-date version.  
+> The sample code might differ from what is listed here; you should regard the sample code as the more up-to-date version.  
   
 ```cpp
 ///////////////////////////////////////////////////////////////////////////  
@@ -55,7 +55,7 @@ public CRowsetImpl< RUpdateRowset, CAgentMan, CUpdateCommand,
 
 You also need to add the following to the COM map in your rowset:  
   
-```  
+```cpp  
 COM_INTERFACE_ENTRY(IConnectionPointContainer)  
 COM_INTERFACE_ENTRY_IMPL(IConnectionPointContainer)  
 ```  
@@ -66,7 +66,7 @@ These macros allow anyone calling `QueryInterface` for your connection point con
 
 You also need to add a connection point map. It should look something like:  
   
-```  
+```cpp  
 BEGIN_CONNECTION_POINT_MAP(rowset-name)  
      CONNECTION_POINT_ENTRY(_uuidof(IRowsetNotify))  
 END_CONNECTION_POINT_MAP()  

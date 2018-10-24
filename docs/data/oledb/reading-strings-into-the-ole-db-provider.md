@@ -18,12 +18,8 @@ The `RCustomRowset::Execute` function opens a file and reads strings. The consum
 If the file cannot be opened, `Execute` must return DB_E_NOTABLE. If it returns E_FAIL instead, the provider will not work with many consumers and will not pass the OLE DB [conformance tests](../../data/oledb/testing-your-provider.md).  
   
 ## Example  
-  
-### Description  
 
 The edited `Execute` function looks like this:  
-  
-### Code  
   
 ```cpp
 /////////////////////////////////////////////////////////////////////////  

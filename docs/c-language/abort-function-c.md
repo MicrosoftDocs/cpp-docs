@@ -1,7 +1,7 @@
 ---
 title: "abort Function (C) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/24/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
 dev_langs: ["C++"]
@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 
 **ANSI 4.10.4.1** The behavior of the **abort** function with regard to open and temporary files
 
-The **abort** function does not close files that are open or temporary. It does not flush stream buffers.
+The **abort** function does not close files that are open or temporary. It does not flush stream buffers. For more information, see [abort](../c-runtime-library/reference/abort.md).
 
 ## See Also
 

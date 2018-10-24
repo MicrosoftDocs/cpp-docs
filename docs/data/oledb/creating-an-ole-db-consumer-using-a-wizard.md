@@ -1,7 +1,7 @@
 ---
 title: "Creating an OLE DB Consumer Using a Wizard | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/22/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating an OLE DB Consumer Using a Wizard
 
-This procedure demonstrates how you can use the ATL Project Wizard and ATL OLE DB Consumer Wizard to generate an OLE DB Templates consumer and then modify the main code of the console application to retrieve and display data from a database table.  
+This procedure demonstrates how you can use the **ATL Project Wizard** and **ATL OLE DB Consumer Wizard* to generate an OLE DB Templates consumer and then modify the main code of the console application to retrieve and display data from a database table.  
   
 The last two sections explain the wizard-generated OLE DB consumer code.  
   
