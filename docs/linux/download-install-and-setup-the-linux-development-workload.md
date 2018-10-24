@@ -4,7 +4,7 @@ description: "Describes how to download, install, and setup the Linux workload f
 ms.custom: ""
 ms.date: "10/12/2018"
 ms.technology: ["cpp-linux"]
-ms.tgt_pltfrm: "Linux"
+ms.tgt_pltfrm: "Linux
 ms.topic: "conceptual"
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
 author: "mikeblome"
