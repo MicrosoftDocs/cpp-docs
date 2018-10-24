@@ -1,5 +1,5 @@
 ---
-title: "OpenMP Environment Variables | Microsoft Docs"
+title: "OpenMP environment variables | Microsoft Docs"
 ms.custom: ""
 ms.date: "10/23/2018"
 ms.technology: ["cpp-parallel"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# OpenMP Environment Variables
+# OpenMP environment variables
 
 Provides links to environment variables used in the OpenMP API.
 
@@ -22,7 +22,7 @@ Environment variable                | Description
 ----------------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 [OMP_DYNAMIC](#omp-dynamic)         | Specifies whether the OpenMP run time can adjust the number of threads in a parallel region.
 [OMP_NESTED](#omp-nested)           | Specifies whether nested parallelism is enabled, unless nested parallelism is enabled or disabled with `omp_set_nested`.
-[OMP_NUM_THREADS](#omp-num-threads) | Sets the maximum number of threads in the parallel region, unless overridden by [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) or [num_threads](openmp-clauses.md#num-threads).
+[OMP_NUM_THREADS](#omp-num-threads) | Sets the maximum number of threads in the parallel region, unless overridden by [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) or [num_threads](openmp-clauses.md#num-threads).
 [OMP_SCHEDULE](#omp-schedule)       | Modifies the behavior of the [schedule](openmp-clauses.md#schedule) clause when `schedule(runtime)` is specified in a `for` or `parallel for` directive.
 
 ## <a name="omp-dynamic"></a>OMP_DYNAMIC
@@ -35,7 +35,7 @@ set OMP_DYNAMIC[=TRUE | =FALSE]
 
 ### Remarks
 
-The `OMP_DYNAMIC` environment variable can be overridden by the [omp_set_dynamic](../../../parallel/openmp/reference/omp-set-dynamic.md) function.
+The `OMP_DYNAMIC` environment variable can be overridden by the [omp_set_dynamic](openmp-functions.md#omp-set-dynamic) function.
 
 The default value in the Visual C++ implementation of the OpenMP standard is `OMP_DYNAMIC=FALSE`.
 
@@ -65,7 +65,7 @@ set OMP_NESTED[=TRUE | =FALSE]
 
 ### Remarks
 
-The `OMP_NESTED` environment variable can be overridden by the [omp_set_nested](../../../parallel/openmp/reference/omp-set-nested.md) function.
+The `OMP_NESTED` environment variable can be overridden by the [omp_set_nested](openmp-functions.md#omp-set-nested) function.
 
 The default value in the Visual C++ implementation of the OpenMP standard is `OMP_DYNAMIC=FALSE`.
 
@@ -87,7 +87,7 @@ set OMP_NESTED
 
 ## <a name="omp-num-threads"></a>OMP_NUM_THREADS
 
-Sets the maximum number of threads in the parallel region, unless overridden by [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) or [num_threads](openmp-clauses.md#num-threads).
+Sets the maximum number of threads in the parallel region, unless overridden by [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) or [num_threads](openmp-clauses.md#num-threads).
 
 ```
 set OMP_NUM_THREADS[=num]
@@ -100,7 +100,7 @@ The maximum number of threads you want in the parallel region, up to 64 in the V
 
 ### Remarks
 
-The `OMP_NUM_THREADS` environment variable can be overridden by the [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) function or by [num_threads](openmp-clauses.md#num-threads).
+The `OMP_NUM_THREADS` environment variable can be overridden by the [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) function or by [num_threads](openmp-clauses.md#num-threads).
 
 The default value of `num` in the Visual C++ implementation of the OpenMP standard is the number of virtual processors, including hyperthreading CPUs.
 

@@ -1,5 +1,5 @@
 ---
-title: "OpenMP Clauses | Microsoft Docs"
+title: "OpenMP clauses | Microsoft Docs"
 ms.custom: ""
 ms.date: "10/22/2018"
 ms.technology: ["cpp-parallel"]
@@ -219,7 +219,7 @@ An integral expression that, if it evaluates to true (nonzero), causes the code 
 - [for](openmp-directives.md#for-openmp)
 - [sections](openmp-directives.md#sections-openmp)
 
-For more information, see [2.3 parallel Construct](../../../parallel/openmp/2-3-parallel-construct.md).
+For more information, see [2.3 parallel construct](../../../parallel/openmp/2-3-parallel-construct.md).
 
 ### Example
 
@@ -299,7 +299,7 @@ nowait
 - [sections](openmp-directives.md#sections-openmp)
 - [single](openmp-directives.md#single)
 
-For more information, see [2.4.1 for Construct](../../../parallel/openmp/2-4-1-for-construct.md), [2.4.2 sections Construct](../../../parallel/openmp/2-4-2-sections-construct.md), and [2.4.3 single Construct](../../../parallel/openmp/2-4-3-single-construct.md).
+For more information, see [2.4.1 for construct](../../../parallel/openmp/2-4-1-for-construct.md), [2.4.2 sections construct](../../../parallel/openmp/2-4-2-sections-construct.md), and [2.4.3 single construct](../../../parallel/openmp/2-4-3-single-construct.md).
 
 ### Example
 
@@ -363,7 +363,7 @@ The number of threads
 
 ### Remarks
 
-The `num_threads` clause has the same functionality as the [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) function.
+The `num_threads` clause has the same functionality as the [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) function.
 
 `num_threads` applies to the following directives:
 
@@ -371,7 +371,7 @@ The `num_threads` clause has the same functionality as the [omp_set_num_threads]
 - [for](openmp-directives.md#for-openmp)
 - [sections](openmp-directives.md#sections-openmp)
 
-For more information, see [2.3 parallel Construct](../../../parallel/openmp/2-3-parallel-construct.md).
+For more information, see [2.3 parallel construct](../../../parallel/openmp/2-3-parallel-construct.md).
 
 ### Example
 
@@ -389,7 +389,7 @@ ordered
 
 `ordered` applies to the [for](openmp-directives.md#for-openmp) directive.
 
-For more information, see [2.4.1 for Construct](../../../parallel/openmp/2-4-1-for-construct.md).
+For more information, see [2.4.1 for construct](../../../parallel/openmp/2-4-1-for-construct.md).
 
 ### Example
 
@@ -759,7 +759,7 @@ The kind of scheduling:
 
 ### Remarks
 
-For more information, see [2.4.1 for Construct](../../../parallel/openmp/2-4-1-for-construct.md).
+For more information, see [2.4.1 for construct](../../../parallel/openmp/2-4-1-for-construct.md).
 
 ### Example
 
