@@ -35,7 +35,7 @@ The following functions use `omp_lock_t`:
 - [omp_unset_lock](openmp-functions.md#omp-unset-lock)
 - [omp_test_lock](openmp-functions.md#omp-test-lock)
 
-For more information, see [3.2 Lock Functions](../../../parallel/openmp/3-2-lock-functions.md).
+For more information, see [3.2 Lock functions](../../../parallel/openmp/3-2-lock-functions.md).
 
 ### Example
 
@@ -53,7 +53,7 @@ The following functions use `omp_nest_lock_t`:
 - [omp_unset_nest_lock](openmp-functions.md#omp-unset-nest-lock)
 - [omp_test_nest_lock](openmp-functions.md#omp-test-nest-lock)
 
-For more information, see [3.2 Lock Functions](../../../parallel/openmp/3-2-lock-functions.md).
+For more information, see [3.2 Lock functions](../../../parallel/openmp/3-2-lock-functions.md).
 
 ### Example
 
