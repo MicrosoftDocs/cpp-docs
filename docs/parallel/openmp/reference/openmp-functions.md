@@ -316,7 +316,7 @@ Returns a value in seconds of the time elapsed from some arbitrary, but consiste
 
 ### Remarks
 
-That point will remain consistent during program execution, making subsequent comparisons possible.
+That point will remain consistent during program execution, making upcoming comparisons possible.
 
 For more information, see [3.3.1 omp_get_wtime function](../../../parallel/openmp/3-3-1-omp-get-wtime-function.md).
 
