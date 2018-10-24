@@ -1764,7 +1764,7 @@ Use the new C++ unit test framework in Visual Studio to write C++ unit tests. Ad
 
 #### Architecture Dependency Graphs
 
-To understand your code better, you can now generate dependency graphs for the binary, class, namespace, and include files in a solution. On the menu bar, choose **Architecture** > **Generate Dependency Graph**, and then **For Solution** or **For Include File** to generate a dependency graph. When the graph generation is complete, you can explore it by expanding each node, learn dependency relationships by moving between nodes, and browse source code by choosing **View Content** on the shortcut menu for a node. To generate a dependency graph for include files, on the shortcut menu for a *.cpp source code file or *.h header file, choose **Generate Graph of Include Files**.
+To understand your code better, you can now generate dependency graphs for the binary, class, namespace, and include files in a solution. On the menu bar, choose **Architecture** > **Generate Dependency Graph**, and then **For Solution** or **For Include File** to generate a dependency graph. When the graph generation is complete, you can explore it by expanding each node, learn dependency relationships by moving between nodes, and browse source code by choosing **View Content** on the shortcut menu for a node. To generate a dependency graph for include files, on the shortcut menu for a \*.cpp source code file or \*.h header file, choose **Generate Graph of Include Files**.
 
 #### Architecture Explorer
 
