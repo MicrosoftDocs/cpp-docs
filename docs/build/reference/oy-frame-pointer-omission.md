@@ -22,7 +22,7 @@ Suppresses creation of frame pointers on the call stack.
 
 ## Remarks
 
-This option speeds function calls, because no frame pointers need to be set up and removed. It also frees one more register, (EBP on the Intel 386 or later) for storing frequently used variables and sub-expressions.
+This option speeds function calls, because no frame pointers need to be set up and removed. It also frees one more register for general usage.
 
 **/Oy** enables frame-pointer omission and **/Oy-** disables omission. **/Oy** is available only in x86 compilers.
 
