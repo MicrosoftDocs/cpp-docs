@@ -1,7 +1,7 @@
 ---
 title: "Algorithms | Microsoft Docs"
 ms.custom: ""
-ms.date: "10\18\2018"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 dev_langs: ["C++"]
