@@ -47,7 +47,7 @@ Use this page of the [MFC Application Wizard](../../mfc/reference/mfc-applicatio
 
 - **Resource language**
 
-   Sets the language of your resources. The list displays the languages available on your system, as installed by Visual Studio. If you want to select a language other than your system language, the appropriate template folder for that language must already be installed. For more information about installing language resources different from the defaults available in the **Resource language** list, see [Wizard Support for Other Languages](../../ide/wizard-support-for-other-languages.md).
+   Sets the language of your resources. The list displays the languages available on your system, as installed by Visual Studio. If you want to select a language other than your system language, the appropriate template folder for that language must already be installed.
 
    The language that you select is reflected in the **Localized strings** option of the [Document Template Strings, MFC Application Wizard](../../mfc/reference/document-template-strings-mfc-application-wizard.md) page of the wizard.
 

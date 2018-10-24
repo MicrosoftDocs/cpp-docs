@@ -1,7 +1,7 @@
 ---
 title: "Fetching Data | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/19/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -13,13 +13,13 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Fetching Data
 
-After you open the data source, session, and rowset objects, you can fetch data. Depending on the type of accessor you are using, you might need to bind columns.
+After you open the data source, session, and rowset objects, you can fetch data. Depending on the type of accessor you're using, you might need to bind columns.
 
-### To fetch data
+## To fetch data
 
 1. Open the rowset using the appropriate **Open** command.
 
-1. If you are using `CManualAccessor`, bind the output columns if you have not already done so. To bind the columns, call `GetColumnInfo`, and then create an accessor with the bindings, as shown in the following example:
+1. If you're using `CManualAccessor`, bind the output columns if you haven't already done so. The following example is taken from the [DBViewer](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/dbviewer) sample. To bind the columns, call `GetColumnInfo`, and then create an accessor with the bindings, as shown in the following example:
 
     ```cpp
     // From the DBViewer Sample CDBTreeView::OnQueryEdit
@@ -36,7 +36,7 @@ After you open the data source, session, and rowset objects, you can fetch data.
     rs.Bind();
     ```
 
-1. Write a `while` loop to retrieve the data. In the loop, call `MoveNext` to advance the cursor and test the return value against S_OK, as shown in the following example:
+1. Write a **while** loop to retrieve the data. In the loop, call `MoveNext` to advance the cursor and test the return value against S_OK, as shown in the following example:
 
     ```cpp
     while (rs.MoveNext() == S_OK)
@@ -46,7 +46,7 @@ After you open the data source, session, and rowset objects, you can fetch data.
     }
     ```
 
-1. Within the `while` loop, you can fetch the data according to your accessor type.
+1. Within the **while** loop, you can fetch the data according to your accessor type.
 
    - If you use the [CAccessor](../../data/oledb/caccessor-class.md) class, you should have a user record that contains data members. You can access your data using those data members, as shown in the following example:
 
@@ -60,7 +60,7 @@ After you open the data source, session, and rowset objects, you can fetch data.
         }
         ```
 
-   - If you use the `CDynamicAccessor` or `CDynamicParameterAccessor` class, you can fetch data by using the accessing functions `GetValue` and `GetColumn`, as shown in the following example. If you want to determine the type of data you are using, use `GetType`.
+   - If you use the `CDynamicAccessor` or `CDynamicParameterAccessor` class, you can fetch data by using the accessing functions `GetValue` and `GetColumn`, as shown in the following example. If you want to determine the type of data you're using, use `GetType`.
 
         ```cpp
         while (rs.MoveNext() == S_OK)
@@ -87,6 +87,6 @@ After you open the data source, session, and rowset objects, you can fetch data.
         }
         ```
 
-## See Also
+## See also
 
 [Working with OLE DB Consumer Templates](../../data/oledb/working-with-ole-db-consumer-templates.md)

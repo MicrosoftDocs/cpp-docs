@@ -212,7 +212,7 @@ ms.workload: ["cplusplus"]
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Develop</h3>
+                                                    <h3>Write code</h3>
                                                     <p>Write, refactor, explore and understand your code using the code editor.</p>
                                                 </div>
                                             </div>

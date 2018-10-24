@@ -1,7 +1,7 @@
 ---
 title: "CTime Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/12/2018"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CTime", "ATLTIME/ATL::CTime", "ATLTIME/ATL::CTime::CTime", "ATLTIME/ATL::CTime::Format", "ATLTIME/ATL::CTime::FormatGmt", "ATLTIME/ATL::CTime::GetAsDBTIMESTAMP", "ATLTIME/ATL::CTime::GetAsSystemTime", "ATLTIME/ATL::CTime::GetCurrentTime", "ATLTIME/ATL::CTime::GetDay", "ATLTIME/ATL::CTime::GetDayOfWeek", "ATLTIME/ATL::CTime::GetGmtTm", "ATLTIME/ATL::CTime::GetHour", "ATLTIME/ATL::CTime::GetLocalTm", "ATLTIME/ATL::CTime::GetMinute", "ATLTIME/ATL::CTime::GetMonth", "ATLTIME/ATL::CTime::GetSecond", "ATLTIME/ATL::CTime::GetTime", "ATLTIME/ATL::CTime::GetYear", "ATLTIME/ATL::CTime::Serialize64"]
@@ -19,7 +19,7 @@ Represents an absolute time and date.
 ## Syntax
 
 ```
-class CTime  
+class CTime
 ```
 
 ## Members
@@ -89,17 +89,17 @@ For more information about using `CTime`, see the articles [Date and Time](../..
 Comparison operators.
 
 ```
-bool operator==(CTime time) const throw(); 
+bool operator==(CTime time) const throw();
 bool operator!=(CTime time) const throw();
 bool operator<(CTime time) const throw();
 bool operator>(CTime time) const throw();
 bool operator<=(CTime time) const throw();
-bool operator>=(CTime time) const throw(); 
+bool operator>=(CTime time) const throw();
 ```
 
 ### Parameters
 
-*time*  
+*time*<br/>
 The `CTime` object to be compared.
 
 ### Return Value
@@ -122,22 +122,21 @@ CTime(int nYear, int nMonth, int nDay,
 CTime(WORD wDosDate, WORD wDosTime, int nDST = -1);
 CTime(const SYSTEMTIME& st, int nDST = - 1) throw();
 CTime(const FILETIME& ft, int nDST = - 1);
-CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
+CTime(const DBTIMESTAMP& dbts, int nDST = -1) throw();
 ```
 
 ### Parameters
 
-*timeSrc*  
+*timeSrc*<br/>
 Indicates a `CTime` object that already exists.
 
-*time*  
-A **__time64_t** time value, which is the number of seconds after January 1, 1970 UTC. Note that this will be adjusted to your local time. For example, if you are in New York and create a `CTime` object by passing a parameter of 0, [CTime::GetMonth](#getmonth) will return 12.  
+*time*<br/>
+A **__time64_t** time value, which is the number of seconds after January 1, 1970 UTC. Note that this will be adjusted to your local time. For example, if you are in New York and create a `CTime` object by passing a parameter of 0, [CTime::GetMonth](#getmonth) will return 12.
 
-
-*nYear*, *nMonth*, *nDay*, *nHour*, *nMin*, *nSec*  
+*nYear*, *nMonth*, *nDay*, *nHour*, *nMin*, *nSec*<br/>
 Indicates the date and time values to be copied into the new `CTime` object.
 
-*nDST*  
+*nDST*<br/>
 Indicates whether daylight savings time is in effect. Can have one of three values:
 
 - *nDST* set to 0Standard time is in effect.
@@ -146,16 +145,16 @@ Indicates whether daylight savings time is in effect. Can have one of three valu
 
 - *nDST* set to a value less than 0The default. Automatically computes whether standard time or daylight savings time is in effect.
 
-*wDosDate*, *wDosTime*  
+*wDosDate*, *wDosTime*<br/>
 MS-DOS date and time values to be converted to a date/time value and copied into the new `CTime` object.
 
-*st*  
+*st*<br/>
 A [SYSTEMTIME](../../mfc/reference/systemtime-structure.md) structure to be converted to a date/time value and copied into the new `CTime` object.
 
-*ft*  
+*ft*<br/>
 A [FILETIME](../../mfc/reference/filetime-structure.md) structure to be converted to a date/time value and copied into the new `CTime` object.
 
-dbts  
+*dbts*<br/>
 A reference to a DBTIMESTAMP structure containing the current local time.
 
 ### Remarks
@@ -170,13 +169,13 @@ Each constructor is described below:
 
 - `CTime( int, int, ...);` Constructs a `CTime` object from local time components with each component constrained to the following ranges:
 
-   |Component|Range|  
-   |---------------|-----------|  
-   |*nYear*|1970-3000|  
-   |*nMonth*|1-12|  
-   |*nDay*|1-31|  
-   |*nHour*|0-23|  
-   |*nMin*|0-59|  
+   |Component|Range|
+   |---------------|-----------|
+   |*nYear*|1970-3000|
+   |*nMonth*|1-12|
+   |*nDay*|1-31|
+   |*nHour*|0-23|
+   |*nMin*|0-59|
    |*nSec*|0-59|
 
    This constructor makes the appropriate conversion to UTC. The Debug version of the Microsoft Foundation Class Library asserts if one or more of the time components are out of range. You must validate the arguments before calling. This constructor expects a local time.
@@ -201,16 +200,16 @@ For more information, see the [SYSTEMTIME](https://msdn.microsoft.com/library/wi
 Call this member function to create a formatted representation of the date-time value.
 
 ```
-CString Format(LPCTSTR pszFormat) const; 
-CString Format(UINT nFormatID) const; 
+CString Format(LPCTSTR pszFormat) const;
+CString Format(UINT nFormatID) const;
 ```
 
 ### Parameters
 
-*pszFormat*  
+*pszFormat*<br/>
 A formatting string similar to the `printf` formatting string. Formatting codes, preceded by a percent (`%`) sign, are replaced by the corresponding `CTime` component. Other characters in the formatting string are copied unchanged to the returned string. See the run-time function [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for a list of formatting codes.
 
-*nFormatID*  
+*nFormatID*<br/>
 The ID of the string that identifies this format.
 
 ### Return Value
@@ -238,10 +237,10 @@ CString FormatGmt(UINT nFormatID) const;
 
 ### Parameters
 
-*pszFormat*  
+*pszFormat*<br/>
 Specifies a formatting string similar to the `printf` formatting string. See the run-time function [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for details.
 
-*nFormatID*  
+*nFormatID*<br/>
 The ID of the string that identifies this format.
 
 ### Return Value
@@ -268,7 +267,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
 
 ### Parameters
 
-*dbts*  
+*dbts*<br/>
 A reference to a DBTIMESTAMP structure containing the current local time.
 
 ### Return Value
@@ -293,7 +292,7 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
 
 ### Parameters
 
-*timeDest*  
+*timeDest*<br/>
 A reference to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure that will hold the converted date/time value of the `CTime` object.
 
 ### Return Value
@@ -329,7 +328,7 @@ Returns the current system date and time in Coordinated Universal Time (UTC).
 Returns the day represent by the `CTime` object.
 
 ```
-int GetDay() const throw(); 
+int GetDay() const throw();
 ```
 
 ### Return Value
@@ -374,7 +373,7 @@ struct tm* GetGmtTm(struct tm* ptm) const;
 
 ### Parameters
 
-*ptm*  
+*ptm*<br/>
 Points to a buffer that will receive the time data. If this pointer is NULL, an exception is thrown.
 
 ### Return Value
@@ -421,7 +420,7 @@ struct tm* GetLocalTm(struct tm* ptm) const;
 
 ### Parameters
 
-*ptm*  
+*ptm*<br/>
 Points to a buffer that will receive the time data. If this pointer is NULL, an exception is thrown.
 
 ### Return Value
@@ -544,7 +543,7 @@ CTime& operator=(__time64_t time) throw();
 
 ### Parameters
 
-*time*  
+*time*<br/>
 The new date/time value.
 
 ### Return Value
@@ -567,10 +566,10 @@ CTimeSpan operator-(CTime time) const throw();
 
 ### Parameters
 
-*timeSpan*  
+*timeSpan*<br/>
 The `CTimeSpan` object to be added or subtracted.
 
-*time*  
+*time*<br/>
 The `CTime` object to be subtracted.
 
 ### Return Value
@@ -596,7 +595,7 @@ CTime& operator-=(CTimeSpan span) throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 The `CTimeSpan` object to be added or subtracted.
 
 ### Return Value
@@ -624,7 +623,7 @@ CArchive& Serialize64(CArchive& ar);
 
 ### Parameters
 
-*ar*  
+*ar*<br/>
 The `CArchive` object that you want to update.
 
 ### Return Value

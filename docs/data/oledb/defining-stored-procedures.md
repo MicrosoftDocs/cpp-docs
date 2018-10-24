@@ -15,15 +15,15 @@ ms.workload: ["cplusplus", "data-storage"]
 
 Before calling a stored procedure, you must first define it, using the [DEFINE_COMMAND](../../data/oledb/define-command.md) macro. When you define the command, denote parameters with a question mark (?) as the parameter marker:  
   
-```  
+```cpp  
 DEFINE_COMMAND(CMySProcAccessor, _T("{INSERT {name, phone} into shippers  (?,?)}")  
 ```  
   
-Note that the syntax (the use of braces and so on) used in the code examples in this topic is specific to SQL Server. The syntax that you use in your stored procedures might vary according to the provider you use.  
+The syntax (the use of braces, and so on) used in the code examples in this topic is specific to SQL Server. The syntax that you use in your stored procedures might vary according to the provider you use.  
   
 Next, in the parameter map, specify the parameters that you used in the command, listing the parameters in the order that they occur in the command:  
   
-```  
+```cpp  
 BEGIN_PARAM_MAP(CMySProcAccessor)  
    SET_PARAM_TYPE(DBPARAMIO_INPUT)  
    COLUMN_ENTRY(1, m_Name)   // name corresponds to first '?' param  
@@ -32,9 +32,9 @@ BEGIN_PARAM_MAP(CMySProcAccessor)
 END_PARAM_MAP()  
 ```  
   
-The previous example defines a stored procedure as it goes. Typically, for efficient reuse of code, a database contains a set of predefined stored procedures with names such as "Sales by Year" or "dt_adduserobject." You can view their definitions using SQL Server Enterprise Manager. You call them as follows (the placement of the '?' parameters depends on the stored procedure's interface):  
+The previous example defines a stored procedure as it goes. Typically, for efficient reuse of code, a database contains a set of predefined stored procedures with names such as "Sales by Year" or "dt_adduserobject." You can view their definitions using SQL Server Enterprise Manager. You call them as follows (the placement of the '?' parameters depend on the stored procedure's interface):  
   
-```  
+```cpp  
 DEFINE_COMMAND(CMySProcAccessor, _T("{CALL \"Sales by Year\" (?,?) }")  
 DEFINE_COMMAND(CMySProcAccessor, _T("{CALL dbo.dt_adduserobject (?,?) }")  
 ```  

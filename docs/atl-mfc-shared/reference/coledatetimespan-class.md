@@ -93,7 +93,7 @@ bool operator>=(const COleDateTimeSpan& dateSpan) const throw();
 
 ### Parameters
 
-*dateSpan*  
+*dateSpan*<br/>
 The `COleDateTimeSpan` to compare.
 
 ### Return Value
@@ -123,7 +123,7 @@ COleDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 
 ### Parameters
 
-*dblSpanSrc*  
+*dblSpanSrc*<br/>
 The number of days to be copied into the new `COleDateTimeSpan` object.
 
 *lDays*, *nHours*, *nMins*, *nSecs*  
@@ -158,7 +158,7 @@ CString Format(UINT nID) const;
 
 ### Parameters
 
-*pFormat*  
+*pFormat*<br/>
 A formatting string similar to the `printf` formatting string. Formatting codes, preceded by a percent (`%`) sign, are replaced by the corresponding `COleDateTimeSpan` component. Other characters in the formatting string are copied unchanged to the returned string. The value and meaning of the formatting codes for `Format` are listed below:
 
 - **%H** Hours in the current day
@@ -173,7 +173,7 @@ The four format codes listed above are the only codes that Format will accept.
 
 -
 
-*nID*  
+*nID*<br/>
 The resource ID for the format-control string.
 
 ### Return Value
@@ -700,7 +700,7 @@ void SetStatus(DateTimeSpanStatus status) throw();
 
 ### Parameters
 
-*status*  
+*status*<br/>
 The new status value for this `COleDateTimeSpan` object.
 
 ### Remarks
