@@ -1,5 +1,5 @@
 ---
-title: "CMyProviderSource (MyProviderDS.H) | Microsoft Docs"
+title: "CCustomSource (CustomDS.H) | Microsoft Docs"
 ms.custom: ""
 ms.date: "10/22/2018"
 ms.technology: ["cpp-data"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
-# CCustomClassSource (CustomClassDS.h)
+# CCustomSource (CustomDS.h)
 
 The provider classes use multiple inheritance. The following code shows the inheritance chain for the data source object:  
   

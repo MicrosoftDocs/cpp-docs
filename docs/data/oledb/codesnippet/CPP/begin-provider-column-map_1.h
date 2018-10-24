@@ -1,4 +1,4 @@
-BEGIN_PROVIDER_COLUMN_MAP(CMyProviderWindowsFile)
+BEGIN_PROVIDER_COLUMN_MAP(CCustomWindowsFile)
 	PROVIDER_COLUMN_ENTRY("FileAttributes", 1, dwFileAttributes)
 	PROVIDER_COLUMN_ENTRY("FileSizeHigh", 2, nFileSizeHigh)
 	PROVIDER_COLUMN_ENTRY("FileSizeLow", 3, nFileSizeLow)

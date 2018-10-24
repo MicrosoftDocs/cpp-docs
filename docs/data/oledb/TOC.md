@@ -66,7 +66,7 @@
 ###### [Reading Strings into the OLE DB Provider](reading-strings-into-the-ole-db-provider.md)
 ###### [Storing Strings in the OLE DB Provider](storing-strings-in-the-ole-db-provider.md)
 ##### [Enhancing the Simple Read-Only Provider](enhancing-the-simple-read-only-provider.md)
-###### [Modifying the Inheritance of RMyProviderRowset](modifying-the-inheritance-of-rmyproviderrowset.md)
+###### [Modifying the Inheritance of RCustomRowset](modifying-the-inheritance-of-rmyproviderrowset.md)
 ###### [Dynamically Determining Columns Returned to the Consumer](dynamically-determining-columns-returned-to-the-consumer.md)
 ##### [Testing the Read-Only Provider](testing-the-read-only-provider.md)
 #### [Creating an Updatable Provider](creating-an-updatable-provider.md)

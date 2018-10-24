@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # User Record
 
-The user record provides the code and data structure that represents the column data for a rowset. A user record can be created at compile time or at run time. When you create a provider using the ATL OLE DB Provider Wizard, the wizard creates a default user record that looks like this (assuming you specified a provider name [short name] of "MyProvider"):  
+The user record provides the code and data structure that represents the column data for a rowset. A user record can be created at compile time or at run time. When you create a provider using the ATL OLE DB Provider Wizard, the wizard creates a default user record that looks like this (assuming you specified a provider name [short name] of *Custom*):  
   
 ```cpp  
 class CWindowsFile:  
@@ -21,7 +21,7 @@ class CWindowsFile:
 {  
 public:  
   
-BEGIN_PROVIDER_COLUMN_MAP(CMyProviderWindowsFile)  
+BEGIN_PROVIDER_COLUMN_MAP(CCustomWindowsFile)  
    PROVIDER_COLUMN_ENTRY("FileAttributes", 1, dwFileAttributes)  
    PROVIDER_COLUMN_ENTRY("FileSizeHigh", 2, nFileSizeHigh)  
    PROVIDER_COLUMN_ENTRY("FileSizeLow", 3, nFileSizeLow)  

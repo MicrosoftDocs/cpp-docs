@@ -19,7 +19,7 @@ When you have a working provider, you might want to enhance it to make the provi
   
 The example in the following topics enhances the row-fetching mechanism by adding the `IRowsetLocate` interface to `CAgentRowset`. The topics show you how to:  
   
-- [Make RMyProviderRowset inherit from IRowsetLocate](../../data/oledb/modifying-the-inheritance-of-rmyproviderrowset.md).  
+- [Make RCustomRowset inherit from IRowsetLocate](../../data/oledb/modifying-the-inheritance-of-rmyproviderrowset.md).  
   
 - [Dynamically determine the columns returned to the consumer](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md).  
   
