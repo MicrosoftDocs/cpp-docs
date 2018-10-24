@@ -25,7 +25,7 @@ Consumers can complete the following kinds of updates on rowset data: setting co
   
 ## Supporting Update Operations  
 
-When you create a consumer with the ATL OLE DB Consumer Wizard, you can support the update operations by selecting one or more of the three check boxes **Change**, **Insert**, and **Delete**. If you select these options, the wizard modifies the code appropriately to support the type of changes you choose. However, if you don't use the wizard, you need to set the following rowset properties to `VARIANT_TRUE` to support updates:  
+When you create a consumer with the **ATL OLE DB Consumer Wizard**, you can support the update operations by selecting one or more of the three check boxes **Change**, **Insert**, and **Delete**. If you select these options, the wizard modifies the code appropriately to support the type of changes you choose. However, if you don't use the wizard, you need to set the following rowset properties to `VARIANT_TRUE` to support updates:  
   
 - `DBPROPVAL_UP_CHANGE` allows you to change the data values in a row.  
   
@@ -46,7 +46,7 @@ Change, insert, or delete operations might fail if one or more columns isn't wri
   
 ## Setting Data in Rows  
 
-[CRowset::SetData](../../data/oledb/crowset-setdata.md) sets data values in one or more columns of the current row. The following code sets the values of data members bound to the columns "Name" and "Units in Stock" of the table `Products` and then calls `SetData` to write those values to the 100th row of the rowset:  
+[CRowset::SetData](../../data/oledb/crowset-setdata.md) sets data values in one or more columns of the current row. The following code sets the values of data members bound to the columns `Name` and `Units in Stock` of the table `Products` and then calls `SetData` to write those values to the 100th row of the rowset:  
   
 ```cpp  
 // Instantiate a rowset based on the user record class  
@@ -157,11 +157,11 @@ Unless you specify otherwise, calls to the `SetData`, `Insert`, and `Delete` met
   
 - [CRowset::UpdateAll](../../data/oledb/crowset-updateall.md) transfers any pending changes made to all rows since the last fetch or `Update` call on it.  
   
-Update, as used by the update methods, has the specific meaning of making changes on command and isn't to be confused with the SQL UPDATE command (`SetData` is equivalent to the SQL UPDATE command).  
+Update, as used by the update methods, has the specific meaning of making changes on command and isn't to be confused with the SQL **UPDATE** command (`SetData` is equivalent to the SQL **UPDATE** command).  
   
 Deferred updates are useful, for example, in situations such as a series of banking transactions; if one transaction is canceled, you can undo the change, because you don't send the series of changes until after the last one is committed. Also, the provider can bundle the changes into one network call, which is more efficient.  
   
-To support deferred updates, you must set the `DBPROP_IRowsetChange` property along with the properties described in "Supporting Update Operations":  
+To support deferred updates, you must set the `DBPROP_IRowsetChange` property along with the properties described in **Supporting Update Operations**:  
   
 ```cpp  
 pPropSet->AddProperty(DBPROP_IRowsetUpdate, true);  
