@@ -1,7 +1,7 @@
 ---
 title: "Output Parameters | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/24/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -18,7 +18,7 @@ Calling a stored procedure is similar to running a SQL command. The main differe
 In the following stored procedure, the first '?' is the return value (phone) and the second '?' is the input parameter (name):
 
 ```cpp  
-DEFINE_COMMAND(CMySProcAccessor, _T("{ ? = SELECT phone FROM shippers WHERE name = ? }")  
+DEFINE_COMMAND_EX(CMySProcAccessor, _T("{ ? = SELECT phone FROM shippers WHERE name = ? }"))
 ```  
 
 You specify the in and out parameters in the parameter map:

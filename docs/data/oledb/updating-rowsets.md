@@ -38,8 +38,8 @@ You set the properties as follows:
 ```cpp  
 CDBPropSet ps(DBPROPSET_ROWSET);  
 
-ps.AddProperty(DBPROP_IRowsetChange, true)  
-ps.AddProperty(DBPROP_UPDATABILITY, DBPROPVAL_UP_CHANGE | DBPROPVAL_UP_INSERT | DBPROPVAL_UP_DELETE)  
+ps.AddProperty(DBPROP_IRowsetChange, true);  
+ps.AddProperty(DBPROP_UPDATABILITY, DBPROPVAL_UP_CHANGE | DBPROPVAL_UP_INSERT | DBPROPVAL_UP_DELETE);  
 ```  
   
 Change, insert, or delete operations might fail if one or more columns isn't writable. Modify your cursor map to correct this issue.  
@@ -58,8 +58,7 @@ product.Open(session, "Product", &ps, 1);  // ps is the property set
 product.MoveToBookmark(&bookmark, 0);      // Assume that bookmark is set to 100th row  
   
 // Change the values of columns "Name" and "Units in Stock" in the current row of the Product table  
-_tcscpy_s(product.m_ProductName, product.m_sizeOfProductName,  
-           _T( "Candle" ) );  
+_tcscpy_s(product.m_ProductName, product.m_sizeOfProductName, _T( "Candle" ) );  
 
 product.m_UnitsInStock = 10000;  
   
@@ -92,13 +91,11 @@ product.MoveToBookmark(&bookmark, 0);      // Assume that bookmark is set to 100
   
 // Set the column values for a row of the Product table, then insert the row  
 product.m_ProductID = 101;  
-_tcscpy_s(product.m_ProductName, product.m_sizeOfProductName,  
-           _T( "Candle" ) );  
+_tcscpy_s(product.m_ProductName, product.m_sizeOfProductName, _T( "Candle" ) );  
 
 product.m_SupplierID = 27857;  
 product.m_CategoryID = 372;  
-_tcscpy_s(product.m_QuantityPerUnit, product.m_sizeOfQuantityPerUnit,  
-           _T( "Pack of 10" ) );  
+_tcscpy_s(product.m_QuantityPerUnit, product.m_sizeOfQuantityPerUnit, _T( "Pack of 10" ) );  
 
 product.m_UnitPrice = 20;  
 product.m_UnitsInStock = 10000;  
@@ -179,8 +176,7 @@ product.Open(session, "Product", &ps, 1);  // ps is the property set
 product.MoveToBookmark(&bookmark, 0);      // Assume that bookmark is set to 100th row  
   
 // Change the values of columns "Name" and "Units in Stock" in the 100th row of the Product table  
-_tcscpy_s(product.m_ProductName, product.m_sizeOfProductName,  
-           _T( "Wick" ) );  
+_tcscpy_s(product.m_ProductName, product.m_sizeOfProductName, _T( "Wick" ) );  
 
 product.m_UnitsInStock = 10000;  
 
@@ -190,8 +186,7 @@ product.Update();                 // Update row 100 now
 // Change the values of columns "Name" and "Units in Stock" in the 101st row of the Product table  
 product.MoveNext();  
 
-_tcscpy_s(product.m_ProductName, product.m_sizeOfProductName  
-           _T( "Wax" ) );  
+_tcscpy_s(product.m_ProductName, product.m_sizeOfProductName _T( "Wax" ) );  
 
 product.m_UnitsInStock = 500;  
 
@@ -209,4 +204,4 @@ Finally, one main reason to defer changes is to be able to undo them. Calling [C
 
 [Working with OLE DB Consumer Templates](../../data/oledb/working-with-ole-db-consumer-templates.md)<br/>
 [CRowset Class](../../data/oledb/crowset-class.md)<br/>
-[IRowsetChange](/previous-versions/windows/desktop/ms715790)
+[IRowsetChange](/previous-versions/windows/desktop/ms715790)<br/>

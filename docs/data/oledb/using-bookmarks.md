@@ -1,7 +1,7 @@
 ---
 title: "Using Bookmarks | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/24/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -19,18 +19,22 @@ Before you open the rowset, you must tell the provider that you want to use book
 class CProducts  
 {  
 public:  
-   CBookmark<4>   bookmark;  
+   CBookmark<4> bookmark;  
   
    BEGIN_COLUMN_MAP(CProducts)  
       BOOKMARK_ENTRY(bookmark)  
    END_COLUMN_MAP()  
 };  
-  
-CDBPropSet propset(DBPROPSET_ROWSET);  
+```
 
+Then, used by the following code:
+
+```cpp
+CDBPropSet propset(DBPROPSET_ROWSET);  
 propset.AddProperty(DBPROP_BOOKMARKS, true);  
   
 CTable<CAccessor<CProducts>> product;  
+CSession session;
 product.Open(session, "Products", &propset);  
 ```  
   
@@ -38,15 +42,13 @@ If you use `CDynamicAccessor`, the buffer is dynamically set at run time. In thi
   
 ```cpp  
 CTable<CDynamicAccessor> product;  
-CBookmark<>              bookmark;  
+CBookmark<> bookmark;  
 CDBPropSet propset(DBPROPSET_ROWSET);  
+CSession session;
   
 propset.AddProperty(DBPROP_BOOKMARKS, true);  
-
 product.Open(session, "Products", &propset);  
-
 product.MoveNext();  
-
 product.GetBookmark(&bookmark);  
 ```  
   

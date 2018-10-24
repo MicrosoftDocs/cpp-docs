@@ -1,7 +1,7 @@
 ---
 title: "Obtaining Metadata with Schema Rowsets | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/24/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -37,7 +37,7 @@ ANSI SQL defines a catalog/schema model for data stores; OLE DB uses this model.
 When you query for schema information, you can use restrictions to specify the type of information in which you're interested. You can think of restrictions as a filter or qualifier in a query. For example, in the query:  
   
 ```sql  
-SELECT * FROM authors where l_name = 'pivo'  
+SELECT * FROM authors WHERE l_name = 'pivo'  
 ```  
   
 `l_name` is a restriction. This is a simple example with only one restriction; the schema rowset classes support several restrictions.  
@@ -64,15 +64,15 @@ So, for example, if you want to restrict by table name, TABLE_NAME is the third 
     CDataSource ds;  
     ds.Open();  
     CSession ss;  
-    ss.Open();  
-    CColumns ColumnSchemaRowset;  
+    ss.Open(ds);  
+    CColumns columnSchemaRowset;  
     // TABLE_NAME is the third restriction column, so  
     // specify "authors" as the third restriction parameter:  
-    hr = ColumnSchemaRowset.Open(ss, NULL, NULL, "authors");  
-    hr = ColumnSchemaRowset.MoveFirst();  
+    HRESULT hr = columnSchemaRowset.Open(ss, NULL, NULL, L"authors");  
+    hr = columnSchemaRowset.MoveFirst();  
     while (hr == S_OK)  
     {  
-       hr = ColumnSchemaRowset.MoveNext();  
+       hr = columnSchemaRowset.MoveNext();  
     }  
     ```  
   

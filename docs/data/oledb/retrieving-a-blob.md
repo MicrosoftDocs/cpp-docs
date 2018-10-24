@@ -1,7 +1,7 @@
 ---
 title: "Retrieving a BLOB | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/24/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -21,16 +21,20 @@ The following code shows how to retrieve a BLOB using `ISequentialStream`. The m
 class CCategories  
 {  
 public:  
-   ISequentialStream*   pPicture;  
+   ISequentialStream* pPicture;  
   
 BEGIN_COLUMN_MAP(CCategories)  
    BLOB_ENTRY(4, IID_ISequentialStream, STGM_READ, pPicture)  
 END_COLUMN_MAP()  
 };  
-  
+```
+
+Then, used by the following code:
+
+```cpp  
 CTable<CAccessor<CCategories>> categories;  
-ULONG          cb;  
-BYTE            myBuffer[65536];  
+ULONG cb;  
+BYTE myBuffer[65536];  
   
 categories.Open(session, "Categories");  
 
@@ -50,4 +54,4 @@ For more information about macros that handle BLOB data, see **Column Map Macros
 ## See Also  
 
 [Using Accessors](../../data/oledb/using-accessors.md)<br/>
-[Macros and Global Functions for OLE DB Consumer Templates](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md)
+[Macros and Global Functions for OLE DB Consumer Templates](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md)<br/>

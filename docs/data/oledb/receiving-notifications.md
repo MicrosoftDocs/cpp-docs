@@ -1,7 +1,7 @@
 ---
 title: "Receiving Notifications | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/24/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -23,9 +23,12 @@ The following code shows how to open the rowset from an ATL object and use the `
   
 ```cpp  
 CDBPropSet propset(DBPROPSET_ROWSET);  
-
 propset.AddProperty(DBPROP_IConnectionPointContainer, true);  
-  
+```
+
+Then, used by the following code:
+
+```cpp
 product.Open(session, _T("Products"), &propset);  
   
 AtlAdvise(product.m_spRowset, GetUnknown(), IID_IRowsetNotify, &m_dwCookie);  

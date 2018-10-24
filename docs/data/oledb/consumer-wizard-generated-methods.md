@@ -68,7 +68,7 @@ int main(int argc, char* argv[])
 }  
 ```  
   
-## Remarks  
+### Remarks  
 
 If you define a `HasBookmark` method, the `OpenAll` code sets the `DBPROP_IRowsetLocate` property; make sure you only do this if your provider supports that property.  
   
@@ -133,7 +133,7 @@ void GetRowsetProperties(CDBPropSet* pPropSet)
 }  
 ```  
   
-## Remarks  
+### Remarks  
 
 You shouldn't define a global `GetRowsetProperties` method because it could conflict with the one defined by the wizard. This is a wizard-generated method that you get with templated and attributed projects; the attributes don't inject this code.  
   
@@ -145,7 +145,7 @@ HRESULT OpenDataSource(); 
 void CloseDataSource();  
 ```  
   
-## Remarks  
+### Remarks  
 
 The wizard defines the methods `OpenDataSource` and `CloseDataSource`; `OpenDataSource` calls [CDataSource::OpenFromInitializationString](../../data/oledb/cdatasource-openfrominitializationstring.md).  
   

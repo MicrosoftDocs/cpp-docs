@@ -1,7 +1,7 @@
 ---
 title: "Field Status Data Members in Wizard-Generated Accessors | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/24/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -19,52 +19,35 @@ For example, for a data member *m_OwnerID*, the wizard generates an additional d
   
 This is shown in the following code:  
   
-```cpp  
-[db_source("insert connection string")]  
-[db_command(" \  
-   SELECT \  
-      Au_ID, \  
-      Author, \  
-      `Year Born`, \  
-      FROM Authors")]  
-  
-class CAuthors  
+```cpp    
+class CAuthorsAccessor  
 {  
 public:  
+   LONG m_AuID;
+   TCHAR m_Author[53];
+   LONG m_YearBorn;
+
+   DBSTATUS m_dwAuIDStatus;
+   DBSTATUS m_dwAuthorStatus;
+   DBSTATUS m_dwYearBornStatus;  
   
-   // The following wizard-generated data members contain status   
-   // values for the corresponding fields in the column map. You   
-   // can use these values to hold NULL values that the database   
-   // returns or to hold error information when the compiler returns   
-   // errors. See "Field Status Data Members in Wizard-Generated   
-   // Accessors" in the Visual C++ documentation for more information   
-   // on using these fields.  
-   DWORD m_dwAuIDStatus;  
-   DWORD m_dwAuthorStatus;  
-   DWORD m_dwYearBornStatus;  
+   DBLENGTH m_dwAuIDLength;
+   DBLENGTH m_dwAuthorLength;
+   DBLENGTH m_dwYearBornLength; 
+
+    DEFINE_COMMAND_EX(CAuthorsAccessor, L" \
+	SELECT \
+		AuID, \
+		Author, \
+		YearBorn \
+		FROM dbo.Authors")
   
-   // The following wizard-generated data members contain length  
-   // values for the corresponding fields in the column map.  
-   DWORD m_dwAuIDLength;  
-   DWORD m_dwAuthorLength;  
-   DWORD m_dwYearBornLength;  
-  
-BEGIN_COLUMN_MAP(CAuthorsAccessor)  
-   COLUMN_ENTRY_LENGTH_STATUS(1, m_AuID, dwAuIDLength, dwAuIDStatus)  
-   COLUMN_ENTRY_LENGTH_STATUS(2, m_Author, dwAuthorLength, dwAuthorStatus)  
-   COLUMN_ENTRY_LENGTH_STATUS(3, m_YearBorn, dwYearBornLength, dwYearBornStatus)  
-END_COLUMN_MAP()  
-  
-   [ db_column(1, status=m_dwAuIDStatus, length=m_dwAuIDLength) ] LONG m_AuID;  
-   [ db_column(2, status=m_dwAuthorStatus, length=m_dwAuthorLength) ] TCHAR m_Author[51];  
-   [ db_column(3, status=m_dwYearBornStatus, length=m_dwYearBornLength) ] SHORT m_YearBorn;  
-  
-   void GetRowsetProperties(CDBPropSet* pPropSet)  
-   {  
-      pPropSet->AddProperty(DBPROP_IRowsetChange, true);  
-      pPropSet->AddProperty(DBPROP_UPDATABILITY, DBPROPVAL_UP_CHANGE | DBPROPVAL_UP_INSERT | DBPROPVAL_UP_DELETE);  
-   }  
-};  
+    BEGIN_COLUMN_MAP(CAuthorsAccessor)  
+       COLUMN_ENTRY_LENGTH_STATUS(1, m_AuID, dwAuIDLength, dwAuIDStatus)  
+       COLUMN_ENTRY_LENGTH_STATUS(2, m_Author, dwAuthorLength, dwAuthorStatus)  
+       COLUMN_ENTRY_LENGTH_STATUS(3, m_YearBorn, dwYearBornLength, dwYearBornStatus)  
+    END_COLUMN_MAP()  
+...
 ```  
   
 > [!NOTE]
@@ -84,34 +67,39 @@ You can retrieve the length of a variable-length column or the status of a colum
   
 - To get the status, use the COLUMN_ENTRY_STATUS macro.  
   
-- To get both, use COLUMN_ENTRY_LENGTH_STATUS, as shown below.  
+- To get both, use COLUMN_ENTRY_LENGTH_STATUS, as shown:  
   
-```cpp  
-class CProducts  
-{  
-public:  
-   char      szName[40];  
-   long      nNameLength;  
-   DBSTATUS   nNameStatus;  
-  
-BEGIN_COLUMN_MAP(CProducts)  
-// Bind the column to CProducts.m_ProductName.  
-// nOrdinal is zero-based, so the column number of m_ProductName is 1.  
-   COLUMN_ENTRY_LENGTH_STATUS(1, szName, nNameLength, nNameStatus)  
-END_COLUMN_MAP()  
-};  
-  
-CTable<CAccessor<CProducts >> product;  
-  
-product.Open(session, "Product");  
+    ```cpp  
+    class CProducts  
+    {  
+    public:  
+       char      szName[40];  
+       long      nNameLength;  
+       DBSTATUS   nNameStatus;  
+      
+    BEGIN_COLUMN_MAP(CProducts)  
+    // Bind the column to CProducts.m_ProductName.  
+    // nOrdinal is zero-based, so the column number of m_ProductName is 1.  
+       COLUMN_ENTRY_LENGTH_STATUS(1, szName, nNameLength, nNameStatus)  
+    END_COLUMN_MAP()  
+    };  
+    ```
 
-while (product.MoveNext() == S_OK)  
-{  
-   // Check the product name isn't NULL before tracing it  
-   if (product.nNameStatus == DBSTATUS_S_OK)  
-      ATLTRACE("%s is %d characters\n", szName, nNameLength);  
-}  
-```  
+- Then, access the length and/or status as shown:
+
+    ```cpp
+    CTable<CAccessor<CProducts >> product;  
+    CSession session;
+    
+    product.Open(session, "Product");  
+    
+    while (product.MoveNext() == S_OK)  
+    {  
+       // Check the product name isn't NULL before tracing it  
+       if (product.nNameStatus == DBSTATUS_S_OK)  
+          ATLTRACE("%s is %d characters\n", product.szName, product.nNameLength);  
+    }  
+    ```  
   
 When you use `CDynamicAccessor`, the length and status are bound for you automatically. To retrieve the length and status values, use the `GetLength` and `GetStatus` member functions.  
   
