@@ -1,7 +1,7 @@
 ---
 title: "Obtaining Metadata with Schema Rowsets | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/24/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -22,9 +22,9 @@ OLE DB Templates provide a set of classes to retrieve schema information; these 
   
 ## Catalog/Schema Model  
 
-ANSI SQL defines a catalog/schema model for data stores; OLE DB uses this model. In this model, catalogs (databases) contain schemas and schemas contain tables.  
+ANSI SQL defines a catalog/schema model for data stores; OLE DB uses this model. In this model, catalogs (databases) have schemas and schemas have tables.  
   
-- **Catalog** A catalog is another name for a database. It is a collection of related schemas. To list the catalogs (databases) belonging to a given data source, use [CCatalog](../../data/oledb/ccatalogs-ccataloginfo.md). Because many databases have only one catalog, metadata is sometimes called schema information.  
+- **Catalog** A catalog is another name for a database. It's a collection of related schemas. To list the catalogs (databases) belonging to a given data source, use [CCatalog](../../data/oledb/ccatalogs-ccataloginfo.md). Because many databases have only one catalog, metadata is sometimes called schema information.  
   
 - **Schema** A schema is a collection of database objects that are owned or have been created by a particular user. To list the schemas owned by a given user, use [CSchemata](../../data/oledb/cschemata-cschematainfo.md).  
   
@@ -37,10 +37,10 @@ ANSI SQL defines a catalog/schema model for data stores; OLE DB uses this model.
 When you query for schema information, you can use restrictions to specify the type of information in which you're interested. You can think of restrictions as a filter or qualifier in a query. For example, in the query:  
   
 ```sql  
-SELECT * FROM authors where l_name = 'pivo'  
+SELECT * FROM authors WHERE l_name = 'pivo'  
 ```  
   
-`l_name` is a restriction. This is a very simple example with only one restriction; the schema rowset classes support several restrictions.  
+`l_name` is a restriction. This is a simple example with only one restriction; the schema rowset classes support several restrictions.  
   
 The [schema rowset typedef classes](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) encapsulate all the OLE DB schema rowsets so that you can access a schema rowset just like any other rowset by instantiating and opening it. For example, the typedef class [CColumns](../../data/oledb/ccolumns-ccolumnsinfo.md) is defined as:  
   
@@ -52,11 +52,11 @@ The [CRestrictions](../../data/oledb/crestrictions-class.md) class supplies the 
   
 To specify restrictions, refer to [Appendix B: Schema Rowsets](/previous-versions/windows/desktop/ms712921) and look up the rowset that you're using. For example, `CColumns` corresponds to the [COLUMNS Rowset](/previous-versions/windows/desktop/ms723052\(v%3dvs.85\)); that topic lists the restriction columns in the COLUMNS rowset: TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME. You must follow that order in specifying your restrictions.  
   
-So, for example, if you want to restrict by table name, note that TABLE_NAME is the third restriction column, and then call `Open`, specifying the desired table name as the third restriction parameter, as shown in the following example.  
+So, for example, if you want to restrict by table name, TABLE_NAME is the third restriction column, and then call `Open`, specifying the wanted table name as the third restriction parameter, as shown in the following example.  
   
 ### To use schema rowsets  
   
-1. You must include the header file Atldbsch.h (of course, you need Atldbcli.h for consumer support as well).  
+1. Include the header file `Atldbsch.h` (you need `Atldbcli.h` for consumer support as well).  
   
 1. Instantiate a schema rowset object in the consumer's or the document's header file. If you want table information, declare a `CTables` object; if you want column information, declare a `CColumns` object. This example shows how to retrieve the columns in the authors table:  
   
@@ -64,15 +64,15 @@ So, for example, if you want to restrict by table name, note that TABLE_NAME is 
     CDataSource ds;  
     ds.Open();  
     CSession ss;  
-    ss.Open();  
-    CColumns ColumnSchemaRowset;  
+    ss.Open(ds);  
+    CColumns columnSchemaRowset;  
     // TABLE_NAME is the third restriction column, so  
     // specify "authors" as the third restriction parameter:  
-    hr = ColumnSchemaRowset.Open(ss, NULL, NULL, "authors");  
-    hr = ColumnSchemaRowset.MoveFirst();  
+    HRESULT hr = columnSchemaRowset.Open(ss, NULL, NULL, L"authors");  
+    hr = columnSchemaRowset.MoveFirst();  
     while (hr == S_OK)  
     {  
-       hr = ColumnSchemaRowset.MoveNext();  
+       hr = columnSchemaRowset.MoveNext();  
     }  
     ```  
   
@@ -80,7 +80,7 @@ So, for example, if you want to restrict by table name, note that TABLE_NAME is 
   
 For the reference of the schema rowset, typedef classes provided in the OLE DB Templates (see [Schema Rowset Classes and Typedef Classes](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)).  
   
-For more information about OLE DB schema rowsets, including restriction columns, see [Appendix B: Schema Rowsets](/previous-versions/windows/desktop/ms712921) in the OLE DB Programmer's Reference.  
+For more information about OLE DB schema rowsets, including restriction columns, see [Appendix B: Schema Rowsets](/previous-versions/windows/desktop/ms712921) in the **OLE DB Programmer's Reference**.  
   
 For more complex examples of how to use schema rowset classes, see the [CatDB](https://github.com/Microsoft/VCSamples) and [DBViewer](https://github.com/Microsoft/VCSamples) samples.  
   

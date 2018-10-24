@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating a Simple Consumer
 
-Use the ATL Project Wizard and ATL OLE DB Consumer Wizard to generate an OLE DB Templates consumer.
+Use the **ATL Project Wizard** and **ATL OLE DB Consumer Wizard** to generate an OLE DB Templates consumer.
 
 ## To create a console application for an OLE DB consumer
 
@@ -31,7 +31,7 @@ Use the ATL Project Wizard and ATL OLE DB Consumer Wizard to generate an OLE DB 
 
 1. Click **OK** to close the wizard and generate the project.
 
-Next, use the ATL OLE DB Consumer Wizard to add an OLE DB consumer object.
+Next, use the **ATL OLE DB Consumer Wizard** to add an OLE DB consumer object.
 
 ## To create a consumer with the ATL OLE DB Consumer Wizard
 
@@ -43,7 +43,7 @@ Next, use the ATL OLE DB Consumer Wizard to add an OLE DB consumer object.
 
 1. In the **Categories** pane, click **Installed** > **Visual C++** > **ATL**, click the **ATL OLEDB Consumer** icon in the **Templates** pane, and then click **Add**.
 
-   The ATL OLEDB Consumer Wizard appears.
+   The **ATL OLEDB Consumer Wizard** appears.
 
 1. Click the **Data Source** button.
 
@@ -51,26 +51,26 @@ Next, use the ATL OLE DB Consumer Wizard to add an OLE DB consumer object.
 
 1. In the **Data Link Properties** dialog box, do the following:
 
-   - On the **Provider** tab, specify an OLE DB provider.
+    1. On the **Provider** tab, specify an OLE DB provider.
 
-   - On the **Connection** tab, specify the required information, such as server name, logon ID, and password for your data source and database on the server.
+    1. On the **Connection** tab, specify the required information, such as server name, logon ID, and password for your data source and database on the server.
 
-   > [!NOTE]
-   > There is a security issue with the **Allow saving password** feature of the **Data Link Properties** dialog box. In **Enter information to log on to the server**, there are two radio buttons: **Use Windows NT integrated security** and **Use a specific user name and password**.
+       > [!NOTE]
+       > There is a security issue with the **Allow saving password** feature of the **Data Link Properties** dialog box. In **Enter information to log on to the server**, there are two radio buttons: **Use Windows NT integrated security** and **Use a specific user name and password**.
+    
+       > [!NOTE]
+       > If you select **Use a specific user name and password**, you have the option of saving the password (using the **Allow saving password** check box); however, this option is not secure. It is recommended that you select **Use Windows NT integrated security**; this option uses Windows NT to verify your identity.
+    
+       > [!NOTE]
+       > If you cannot use Windows NT integrated security, you should use a middle-tier application to prompt the user for the password or to store the password in a location with security mechanisms to help protect it (instead of in source code).
 
-   > [!NOTE]
-   > If you select **Use a specific user name and password**, you have the option of saving the password (using the **Allow saving password** check box); however, this option is not secure. It is recommended that you select **Use Windows NT integrated security**; this option uses Windows NT to verify your identity.
-
-   > [!NOTE]
-   > If you cannot use Windows NT integrated security, you should use a middle-tier application to prompt the user for the password or to store the password in a location with security mechanisms to help protect it (instead of in source code).
-
-   After selecting your provider and other settings, click **Test Connection** to verify the selections made on the previous dialog box pages. If the **Results** box reports `Test connection succeeded`, click **OK** to create the data link.
+   1. After selecting your provider and other settings, click **Test Connection** to verify the selections made on the previous dialog box pages. If the **Results** box reports `Test connection succeeded`, click **OK** to create the data link.
 
    The **Select Database Object** dialog box appears.
 
-1. Use the tree control to select a table, view, or stored procedure. For the purpose of this procedure, select the `Products` table from the `Northwind` database.
+1. Use the tree control to select a table, view, or stored procedure. For this example, select the `Products` table from the `Northwind` database.
 
-1. Click **OK**. This returns you to the ATL OLE DB Consumer Wizard.
+1. Click **OK**. This returns you to the **ATL OLE DB Consumer Wizard**.
 
 1. The wizard completes the names for `Class` and **.h file** based on the name of the table, view, or stored procedure that you selected. You can edit these names if you want.
 
@@ -82,14 +82,14 @@ Next, use the ATL OLE DB Consumer Wizard to add an OLE DB consumer object.
 
 1. Under **Support**, leave the **Change**, **Insert**, and **Delete** boxes cleared.
 
-   Select the **Change**, **Insert**, and **Delete** check boxes to support the changing, inserting, and deleting of records in the rowset, if required. For more information about writing data to the data store, see [Updating Rowsets](../../data/oledb/updating-rowsets.md).
+   Select the **Change**, **Insert**, and **Delete** check boxes to support the changing, inserting, and deleting of records in the rowset. For more information about writing data to the data store, see [Updating Rowsets](../../data/oledb/updating-rowsets.md).
 
 1. Click **Finish** to create the consumer.
 
 The wizard generates a command class and a user record class, as shown in [Consumer Wizard-Generated Classes](../../data/oledb/consumer-wizard-generated-classes.md). The command class will have the name that you entered in the `Class` box in the wizard (in this case, `CProducts`), and the user record class will have a name of the form "*ClassName*Accessor" (in this case, `CProductsAccessor`).
 
 > [!NOTE]
-> The wizard puts the following line into Products.h:
+> The wizard puts the following line into `Products.h`:
 
 ```cpp
 #error Security Issue: The connection string may contain a password

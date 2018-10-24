@@ -47,7 +47,7 @@ myCmd.m_spStream->Read()
   
 SQL Server 2000 does the XML formatting and returns all columns and all rows of the rowset as one XML string.  
   
-For an example using the `Read` method, see "Adding XML Support to the Consumer" in [Implementing a Simple Consumer](../../data/oledb/implementing-a-simple-consumer.md).  
+For an example using the `Read` method, see **Adding XML Support to the Consumer** in [Implementing a Simple Consumer](../../data/oledb/implementing-a-simple-consumer.md).  
   
 > [!NOTE]
 > XML support using `CStreamRowset` works with SQL Server 2000 only and requires that you have the OLE DB Provider for SQL Server 2000 (installed with MDAC).  

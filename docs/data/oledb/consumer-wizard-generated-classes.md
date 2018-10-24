@@ -17,7 +17,7 @@ When you use the **ATL OLE DB Consumer Wizard** to generate a consumer, you have
   
 - If you select a templated consumer, the wizard generates a command class and a user record class. The command class will have the name that you enter in the **Class** box in the wizard (for example, `CProducts`), and the user record class will have a name of the form "*ClassName*Accessor" (for example, `CProductsAccessor`). Both classes are placed in the consumer's header file.  
   
-- If you select an attributed consumer, the user record class will have a name of the form "_*ClassName*Accessor" and will be injected. That is, you will be able to view only the command class in the text editor; you can only view the user record class as injected code. For information about viewing injected code, see [Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code).  
+- If you select an attributed consumer, the user record class will have a name of the form "_*ClassName*Accessor" and will be injected. That is, you'll be able to view only the command class in the text editor; you can only view the user record class as injected code. For information about viewing injected code, see [Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code).  
   
 The following examples use a command class created on the `Products` table of the `Northwind` database to demonstrate the wizard-generated consumer code for the command class and user record class.  
   
@@ -144,9 +144,9 @@ class CProducts : public CCommand<CAccessor<CProductsAccessor>>
 
 If you create an OLE DB consumer using the database attributes ([db_command](../../windows/db-command.md) or [db_table](../../windows/db-table.md)), the attributes inject a user record class with a name of the form "_*ClassName*Accessor." For example, if you named your command class `COrders`, the user record class will be `_COrdersAccessor`. Although the user record class appears in **Class View**, double-clicking it navigates to the command or table class in the header file instead. In these cases, you can only view the actual declaration of the user record class by viewing the attribute-injected code.  
   
-There can be potential complications if you add or override methods in attributed consumers. For example, you could add a `_COrdersAccessor` constructor to the `COrders` declaration, but note that in reality this adds a constructor to the injected `COrdersAccessor` class. Such a constructor can initialize the columns/parameters, but you cannot create a copy constructor this way, because it cannot directly instantiate the `COrdersAccessor` object. If you need a constructor (or other method) directly on the `COrders` class, it is recommended that you define a new class deriving from `COrders` and add the necessary methods there.  
+There can be potential complications if you add or override methods in attributed consumers. For example, you could add a `_COrdersAccessor` constructor to the `COrders` declaration, but note that in reality this adds a constructor to the injected `COrdersAccessor` class. Such a constructor can initialize the columns/parameters, but you can't create a copy constructor this way, because it can't directly instantiate the `COrdersAccessor` object. If you need a constructor (or other method) directly on the `COrders` class, it's recommended that you define a new class deriving from `COrders` and add the necessary methods there.  
   
-In the following example, the wizard generates a declaration for the class `COrders`, but the user record class `COrdersAccessor` does not appear, because the attributes inject it.  
+In the following example, the wizard generates a declaration for the class `COrders`, but the user record class `COrdersAccessor` doesn't appear, because the attributes inject it.  
   
 ```cpp  
 #define _ATL_ATTRIBUTES  
