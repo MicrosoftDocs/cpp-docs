@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warnings by compiler version | Microsoft Docs"
 ms.custom: ""
-ms.date: "07/03/2018"
+ms.date: "10/24/2018"
 ms.technology: ["devlang-cpp"]
 ms.topic: "error-reference"
 dev_langs: ["C++"]
