@@ -18,12 +18,12 @@ Provides links to environment variables used in the OpenMP API.
 
 The Visual C++ implementation of the OpenMP standard includes the following environment variables. These environment variables are read at program startup and modifications to their values are ignored at runtime (for example, using [_putenv, _wputenv](../../../c-runtime-library/reference/putenv-wputenv.md)).
 
-Environment variable                | Description
------------------------------------ | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-[OMP_DYNAMIC](#omp-dynamic)         | Specifies whether the OpenMP run time can adjust the number of threads in a parallel region.
-[OMP_NESTED](#omp-nested)           | Specifies whether nested parallelism is enabled, unless nested parallelism is enabled or disabled with `omp_set_nested`.
-[OMP_NUM_THREADS](#omp-num-threads) | Sets the maximum number of threads in the parallel region, unless overridden by [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) or [num_threads](openmp-clauses.md#num-threads).
-[OMP_SCHEDULE](#omp-schedule)       | Modifies the behavior of the [schedule](openmp-clauses.md#schedule) clause when `schedule(runtime)` is specified in a `for` or `parallel for` directive.
+|Environment variable|Description|
+|--------------------|-----------|
+|[OMP_DYNAMIC](#omp-dynamic)|Specifies whether the OpenMP run time can adjust the number of threads in a parallel region.|
+|[OMP_NESTED](#omp-nested)|Specifies whether nested parallelism is enabled, unless nested parallelism is enabled or disabled with `omp_set_nested`.|
+|[OMP_NUM_THREADS](#omp-num-threads)|Sets the maximum number of threads in the parallel region, unless overridden by [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) or [num_threads](openmp-clauses.md#num-threads).|
+|[OMP_SCHEDULE](#omp-schedule)|Modifies the behavior of the [schedule](openmp-clauses.md#schedule) clause when `schedule(runtime)` is specified in a `for` or `parallel for` directive.|
 
 ## <a name="omp-dynamic"></a>OMP_DYNAMIC
 

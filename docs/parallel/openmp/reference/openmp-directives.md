@@ -18,19 +18,19 @@ Provides links to directives used in the OpenMP API.
 
 Visual C++ supports the following OpenMP directives:
 
-Directive                             | Description
-------------------------------------- | -----------------------------------------------------------------------------------------------------------------
-[atomic](#atomic)                     | Specifies that a memory location that will be updated atomically.
-[barrier](#barrier)                   | Synchronizes all threads in a team; all threads pause at the barrier, until all threads execute the barrier.
-[critical](#critical)                 | Specifies that code is only executed on one thread at a time.
-[flush](#flush-openmp)                | Specifies that all threads have the same view of memory for all shared objects.
-[for](#for-openmp)                    | Causes the work done in a `for` loop inside a parallel region to be divided among threads.
-[master](#master)                     | Specifies that only the master thread should execute a section of the program.
-[ordered](#ordered-openmp-directives) | Specifies that code under a parallelized `for` loop should be executed like a sequential loop.
-[parallel](#parallel)                 | Defines a parallel region, which is code that will be executed by multiple threads in parallel.
-[sections](#sections-openmp)          | Identifies code sections to be divided among all threads.
-[single](#single)                     | Lets you specify that a section of code should be executed on a single thread, not necessarily the master thread.
-[threadprivate](#threadprivate)       | Specifies that a variable is private to a thread.
+|Directive|Description|
+|---------|-----------|
+|[atomic](#atomic)|Specifies that a memory location that will be updated atomically.|
+|[barrier](#barrier)|Synchronizes all threads in a team; all threads pause at the barrier, until all threads execute the barrier.|
+|[critical](#critical)|Specifies that code is only executed on one thread at a time.|
+|[flush](#flush-openmp)|Specifies that all threads have the same view of memory for all shared objects.|
+|[for](#for-openmp)|Causes the work done in a `for` loop inside a parallel region to be divided among threads.|
+|[master](#master)|Specifies that only the master thread should execute a section of the program.|
+|[ordered](#ordered-openmp-directives)|Specifies that code under a parallelized `for` loop should be executed like a sequential loop.|
+|[parallel](#parallel)|Defines a parallel region, which is code that will be executed by multiple threads in parallel.|
+|[sections](#sections-openmp)|Identifies code sections to be divided among all threads.|
+|[single](#single)|Lets you specify that a section of code should be executed on a single thread, not necessarily the master thread.|
+|[threadprivate](#threadprivate)|Specifies that a variable is private to a thread.|
 
 ## <a name="atomic"></a>atomic
 

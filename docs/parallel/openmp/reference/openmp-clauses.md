@@ -18,21 +18,21 @@ Provides links to clauses used in the OpenMP API.
 
 Visual C++ supports the following OpenMP clauses:
 
-Clause                             | Description
----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-[copyin](#copyin)                  | Allows threads to access the master thread's value, for a [threadprivate](openmp-directives.md#threadprivate) variable.
-[copyprivate](#copyprivate)        | Specifies that one or more variables should be shared among all threads.
-[default](#default-openmp)         | Specifies the behavior of unscoped variables in a parallel region.
-[firstprivate](#firstprivate)      | Specifies that each thread should have its own instance of a variable, and that the variable should be initialized with the value of the variable, because it exists before the parallel construct.
-[if](#if-openmp)                   | Specifies whether a loop should be executed in parallel or in serial.
-[lastprivate](#lastprivate)        | Specifies that the enclosing context's version of the variable is set equal to the private version of whichever thread executes the final iteration (for-loop construct) or last section (#pragma sections).
-[nowait](#nowait)                  | Overrides the barrier implicit in a directive.
-[num_threads](#num-threads)        | Sets the number of threads in a thread team.
-[ordered](#ordered-openmp-clauses) | Required on a parallel [for](openmp-directives.md#for-openmp) statement if an [ordered](openmp-directives.md#ordered-openmp-directives) directive is to be used in the loop.
-[private](#private-openmp)         | Specifies that each thread should have its own instance of a variable.
-[reduction](#reduction)            | Specifies that one or more variables that are private to each thread are the subject of a reduction operation at the end of the parallel region.
-[schedule](#schedule)              | Applies to the [for](openmp-directives.md#for-openmp) directive.
-[shared](#shared-openmp)           | Specifies that one or more variables should be shared among all threads.
+|Clause|Description|
+|------|-----------|
+|[copyin](#copyin)|Allows threads to access the master thread's value, for a [threadprivate](openmp-directives.md#threadprivate) variable.|
+|[copyprivate](#copyprivate)|Specifies that one or more variables should be shared among all threads.|
+|[default](#default-openmp)|Specifies the behavior of unscoped variables in a parallel region.|
+|[firstprivate](#firstprivate)|Specifies that each thread should have its own instance of a variable, and that the variable should be initialized with the value of the variable, because it exists before the parallel construct.|
+|[if](#if-openmp)|Specifies whether a loop should be executed in parallel or in serial.|
+|[lastprivate](#lastprivate)|Specifies that the enclosing context's version of the variable is set equal to the private version of whichever thread executes the final iteration (for-loop construct) or last section (#pragma sections).|
+|[nowait](#nowait)|Overrides the barrier implicit in a directive.|
+|[num_threads](#num-threads)|Sets the number of threads in a thread team.|
+|[ordered](#ordered-openmp-clauses)|Required on a parallel [for](openmp-directives.md#for-openmp) statement if an [ordered](openmp-directives.md#ordered-openmp-directives) directive is to be used in the loop.|
+|[private](#private-openmp)|Specifies that each thread should have its own instance of a variable.|
+|[reduction](#reduction)|Specifies that one or more variables that are private to each thread are the subject of a reduction operation at the end of the parallel region.|
+|[schedule](#schedule)|Applies to the [for](openmp-directives.md#for-openmp) directive.|
+|[shared](#shared-openmp)|Specifies that one or more variables should be shared among all threads.|
 
 ## <a name="copyin"></a>copyin
 

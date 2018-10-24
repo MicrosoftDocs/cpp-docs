@@ -18,10 +18,10 @@ Provides links to data types used in the OpenMP API.
 
 The Visual C++ implementation of the OpenMP standard includes the following data types.
 
-Data type                           | Description
------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-[omp_lock_t](#omp-lock-t)           | A type that holds the status of a lock, whether the lock is available or if a thread owns a lock.
-[omp_nest_lock_t](#omp-nest-lock-t) | A type that holds one of the following pieces of information about a lock: whether the lock is available, and the identity of the thread that owns the lock and a nesting count.
+|Data type|Description|
+|---------|-----------|
+|[omp_lock_t](#omp-lock-t)|A type that holds the status of a lock, whether the lock is available or if a thread owns a lock.|
+|[omp_nest_lock_t](#omp-nest-lock-t)|A type that holds one of the following pieces of information about a lock: whether the lock is available, and the identity of the thread that owns the lock and a nesting count.|
 
 ## <a name="omp-lock-t"></a>omp_lock_t
 
