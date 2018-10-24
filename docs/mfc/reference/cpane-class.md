@@ -362,8 +362,8 @@ virtual BOOL Create(
 *rect*<br/>
 [in] Specifies the initial size and position of the *pParentWnd* window, in client coordinates.
 
-[in] [out] *pParentWnd*
-Specifies the parent window of this pane.
+*pParentWnd*<br/>
+[in, out] Specifies the parent window of this pane.
 
 *nID*<br/>
 [in] Specifies the ID of the pane.
@@ -371,8 +371,8 @@ Specifies the parent window of this pane.
 *dwControlBarStyle*<br/>
 [in] Specifies the style for the pane. For more information, see [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).
 
-[in] [out] *pContext*
-Specifies the create context of the pane.
+*pContext*<br/>
+[in, out] Specifies the create context of the pane.
 
 ### Return Value
 
@@ -437,8 +437,8 @@ virtual BOOL CreateEx(
 *rect*<br/>
 [in] Specifies the initial size and position of the *pParentWnd* window, in client coordinates.
 
-[in] [out] *pParentWnd*
-Specifies the parent window of this pane.
+*pParentWnd*<br/>
+[in, out] Specifies the parent window of this pane.
 
 *nID*<br/>
 [in] Specifies the ID of the pane.
@@ -446,8 +446,8 @@ Specifies the parent window of this pane.
 *dwControlBarStyle*<br/>
 [in] Specifies the style for the pane. For more information, see [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).
 
-[in] [out] *pContext*
-Specifies the create context for the pane.
+*pContext*<br/>
+[in, out] Specifies the create context for the pane.
 
 ### Return Value
 
@@ -489,8 +489,8 @@ virtual BOOL DockPane(
 
 ### Parameters
 
-[in] [out] *pDockBar*
-Specifies the base pane to dock this pane to.
+*pDockBar*<br/>
+[in, out] Specifies the base pane to dock this pane to.
 
 *lpRect*<br/>
 [in] Specifies the rectangle on the base pane where this pane is to be docked.
@@ -1028,8 +1028,8 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 
 ### Parameters
 
-[in] [out] *pWndOldParent*
-The pane's previous parent window.
+*pWndOldParent*<br/>
+[in, out] The pane's previous parent window.
 
 ### Remarks
 
@@ -1081,8 +1081,8 @@ virtual void OnBeforeChangeParent(
 
 ### Parameters
 
-[in] [out] *pWndNewParent*
-Specifies the new parent window.
+*pWndNewParent*<br/>
+[in, out] Specifies the new parent window.
 
 *bDelay*<br/>
 [in] TRUE to delay the global docking layout adjustment; otherwise, FALSE.
@@ -1106,8 +1106,8 @@ virtual BOOL OnBeforeDock(
 
 ### Parameters
 
-[in] [out] *ppDockBar*
-Specifies the pane that this pane is docking to.
+*ppDockBar*<br/>
+[in, out] Specifies the pane that this pane is docking to.
 
 *lpRect*<br/>
 [in] Specifies the docking rectangle.
@@ -1388,8 +1388,8 @@ void SetMiniFrameRTC(CRuntimeClass* pClass);
 
 ### Parameters
 
-[in] [out] *pClass*
-Specifies the runtime class information for the mini-frame window.
+*pClass*<br/>
+[in, out] Specifies the runtime class information for the mini-frame window.
 
 ### Remarks
 

@@ -1,7 +1,7 @@
 ---
 title: "CMFCOutlookBarTabCtrl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCOutlookBarTabCtrl", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::AddControl", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::CanShowFewerPageButtons", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::CanShowMorePageButtons", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::Create", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::EnableAnimation", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::EnableInPlaceEdit", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::EnableScrollButtons", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::GetBorderSize", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::GetVisiblePageButtons", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::IsAnimation", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::IsMode2003", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::OnShowFewerPageButtons", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::OnShowMorePageButtons", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::OnShowOptions", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::SetActiveTab", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::SetBorderSize", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::SetPageButtonTextAlign", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::SetToolbarImageList", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::SetVisiblePageButtons"]
@@ -463,7 +463,7 @@ void SetVisiblePageButtons(int nVisiblePageButtons);
 
 ### Parameters
 
-[in] *nVisiblePageButtons*
+[in] *nVisiblePageButtons*<br/>
 
 ### Remarks
 

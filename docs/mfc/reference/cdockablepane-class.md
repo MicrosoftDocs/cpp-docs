@@ -1,7 +1,7 @@
 ---
 title: "CDockablePane Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CDockablePane", "AFXDOCKABLEPANE/CDockablePane", "AFXDOCKABLEPANE/CDockablePane::CDockablePane", "AFXDOCKABLEPANE/CDockablePane::AttachToTabWnd", "AFXDOCKABLEPANE/CDockablePane::CalcFixedLayout", "AFXDOCKABLEPANE/CDockablePane::CanAcceptMiniFrame", "AFXDOCKABLEPANE/CDockablePane::CanAcceptPane", "AFXDOCKABLEPANE/CDockablePane::CanAutoHide", "AFXDOCKABLEPANE/CDockablePane::CanBeAttached", "AFXDOCKABLEPANE/CDockablePane::ConvertToTabbedDocument", "AFXDOCKABLEPANE/CDockablePane::CopyState", "AFXDOCKABLEPANE/CDockablePane::Create", "AFXDOCKABLEPANE/CDockablePane::CreateDefaultPaneDivider", "AFXDOCKABLEPANE/CDockablePane::CreateEx", "AFXDOCKABLEPANE/CDockablePane::CreateTabbedPane", "AFXDOCKABLEPANE/CDockablePane::DockPaneContainer", "AFXDOCKABLEPANE/CDockablePane::DockPaneStandard", "AFXDOCKABLEPANE/CDockablePane::DockToRecentPos", "AFXDOCKABLEPANE/CDockablePane::DockToWindow", "AFXDOCKABLEPANE/CDockablePane::EnableAutohideAll", "AFXDOCKABLEPANE/CDockablePane::EnableGripper", "AFXDOCKABLEPANE/CDockablePane::GetAHRestoredRect", "AFXDOCKABLEPANE/CDockablePane::GetAHSlideMode", "AFXDOCKABLEPANE/CDockablePane::GetCaptionHeight", "AFXDOCKABLEPANE/CDockablePane::GetDefaultPaneDivider", "AFXDOCKABLEPANE/CDockablePane::GetDockingStatus", "AFXDOCKABLEPANE/CDockablePane::GetDragSensitivity", "AFXDOCKABLEPANE/CDockablePane::GetLastPercentInPaneContainer", "AFXDOCKABLEPANE/CDockablePane::GetTabArea", "AFXDOCKABLEPANE/CDockablePane::GetTabbedPaneRTC", "AFXDOCKABLEPANE/CDockablePane::HasAutoHideMode", "AFXDOCKABLEPANE/CDockablePane::HitTest", "AFXDOCKABLEPANE/CDockablePane::IsAutohideAllEnabled", "AFXDOCKABLEPANE/CDockablePane::IsAutoHideMode", "AFXDOCKABLEPANE/CDockablePane::IsDocked", "AFXDOCKABLEPANE/CDockablePane::IsHideInAutoHideMode", "AFXDOCKABLEPANE/CDockablePane::IsInFloatingMultiPaneFrameWnd", "AFXDOCKABLEPANE/CDockablePane::IsResizable", "AFXDOCKABLEPANE/CDockablePane::IsTabLocationBottom", "AFXDOCKABLEPANE/CDockablePane::IsTracked", "AFXDOCKABLEPANE/CDockablePane::IsVisible", "AFXDOCKABLEPANE/CDockablePane::OnAfterChangeParent", "AFXDOCKABLEPANE/CDockablePane::OnAfterDockFromMiniFrame", "AFXDOCKABLEPANE/CDockablePane::OnBeforeChangeParent", "AFXDOCKABLEPANE/CDockablePane::OnBeforeFloat", "AFXDOCKABLEPANE/CDockablePane::RemoveFromDefaultPaneDividier", "AFXDOCKABLEPANE/CDockablePane::ReplacePane", "AFXDOCKABLEPANE/CDockablePane::RestoreDefaultPaneDivider", "AFXDOCKABLEPANE/CDockablePane::SetAutoHideMode", "AFXDOCKABLEPANE/CDockablePane::SetAutoHideParents", "AFXDOCKABLEPANE/CDockablePane::SetLastPercentInPaneContainer", "AFXDOCKABLEPANE/CDockablePane::SetRestoredDefaultPaneDivider", "AFXDOCKABLEPANE/CDockablePane::SetTabbedPaneRTC", "AFXDOCKABLEPANE/CDockablePane::ShowPane", "AFXDOCKABLEPANE/CDockablePane::Slide", "AFXDOCKABLEPANE/CDockablePane::ToggleAutoHide", "AFXDOCKABLEPANE/CDockablePane::UndockPane", "AFXDOCKABLEPANE/CDockablePane::CheckAutoHideCondition", "AFXDOCKABLEPANE/CDockablePane::CheckStopSlideCondition", "AFXDOCKABLEPANE/CDockablePane::DrawCaption", "AFXDOCKABLEPANE/CDockablePane::OnPressButtons", "AFXDOCKABLEPANE/CDockablePane::OnSlide", "AFXDOCKABLEPANE/CDockablePane::m_bDisableAnimation", "AFXDOCKABLEPANE/CDockablePane::m_bHideInAutoHideMode", "AFXDOCKABLEPANE/CDockablePane::m_nSlideSteps"]
@@ -200,8 +200,8 @@ virtual CDockablePane* AttachToTabWnd(
 
 ### Parameters
 
-[in] [out] *pTabControlBarAttachTo*
-Specifies the target pane that the current pane attaches to. The target pane must be a dockable pane.
+*pTabControlBarAttachTo*<br/>
+[in, out] Specifies the target pane that the current pane attaches to. The target pane must be a dockable pane.
 
 *dockMethod*<br/>
 [in] Specifies the docking method.
@@ -466,8 +466,8 @@ virtual BOOL Create(
 *lpszCaption*<br/>
 [in] Specifies the window name.
 
-[in] [out] *pParentWnd*
-Specifies the parent window.
+*pParentWnd*<br/>
+[in, out] Specifies the parent window.
 
 *rect*<br/>
 [in] Specifies the size and position of the window, in client coordinates of *pParentWnd*.
@@ -487,8 +487,8 @@ Specifies the parent window.
 *dwControlBarStyle*<br/>
 [in] Specifies additional style attributes.
 
-[in] [out] *pContext*
-Specifies the create context of the window.
+*pContext*<br/>
+[in, out] Specifies the create context of the window.
 
 *lpszWindowName*<br/>
 [in] Specifies the window name.
@@ -571,8 +571,8 @@ virtual BOOL CreateEx(
 *lpszCaption*<br/>
 [in] Specifies the window name.
 
-[in] [out] *pParentWnd*
-Specifies the parent window.
+*pParentWnd*<br/>
+[in, out] Specifies the parent window.
 
 *rect*<br/>
 [in] Specifies the size and position of the window, in client coordinates of *pParentWnd*.
@@ -592,8 +592,8 @@ Specifies the parent window.
 *dwControlBarStyle*<br/>
 [in] Specifies the additional style attributes.
 
-[in] [out] *pContext*
-Specifies the create context of the window.
+*pContext*<br/>
+[in, out] Specifies the create context of the window.
 
 ### Return Value
 
@@ -710,8 +710,8 @@ virtual BOOL DockToWindow(
 
 ### Parameters
 
-[in] [out] *pTargetWindow*
-Specifies the dockable pane to dock this pane to.
+*pTargetWindow*<br/>
+[in, out] Specifies the dockable pane to dock this pane to.
 
 *dwAlignment*<br/>
 [in] Specifies the docking alignment for the pane. May be one of CBRS_ALIGN_LEFT, CBRS_ALIGN_TOP, CBRS_ALIGN_RIGHT, CBRS_ALIGN_BOTTOM or CBRS_ALIGN_ANY. (Defined in afxres.h.)
@@ -1208,7 +1208,7 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 
 ### Parameters
 
-[in] *pWndOldParent*
+[in] *pWndOldParent*<br/>
 
 ### Remarks
 
@@ -1378,8 +1378,8 @@ virtual CMFCAutoHideBar* SetAutoHideMode(
 *dwAlignment*<br/>
 [in] Specifies the alignment of the autohide pane to create.
 
-[in] [out] *pCurrAutoHideBar*
-A pointer to the current autohide toolbar. Can be NULL.
+*pCurrAutoHideBar*<br/>
+[in, out] A pointer to the current autohide toolbar. Can be NULL.
 
 *bUseTimer*<br/>
 [in] Specifies whether to use the autohide effect when the user switches the pane to autohide mode or to hide the pane immediately.

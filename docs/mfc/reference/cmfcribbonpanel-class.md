@@ -729,7 +729,7 @@ virtual BOOL OnKey(UINT nChar);
 
 ### Parameters
 
-[in] *nChar*
+[in] *nChar*<br/>
 
 ### Return Value
 
@@ -810,8 +810,8 @@ CMFCRibbonBaseElement* pElem);
 *nIndex*<br/>
 [in] Specifies the zero-based index of the element to replace.
 
-[in] [out] *pElem*
-A valid pointer to the element that replaces the original element.
+*pElem*<br/>
+[in, out] A valid pointer to the element that replaces the original element.
 
 ### Return Value
 
@@ -836,8 +836,8 @@ CMFCRibbonBaseElement* pElem);
 *uiCmdID*<br/>
 [in] Specifies the command ID of the element to replace.
 
-[in] [out] *pElem*
-A valid pointer to the element that will replace the original element.
+*pElem*<br/>
+[in, out] A valid pointer to the element that will replace the original element.
 
 ### Return Value
 
@@ -938,8 +938,8 @@ CRuntimeClass* pRTC);
 *nIndex*<br/>
 [in] Specifies the zero-based index of the ribbon element to add.
 
-[in] [out] *pRTC*
-A pointer to the runtime class information for the ribbon element that is added to the ribbon panel.
+*pRTC*<br/>
+[in, out] A pointer to the runtime class information for the ribbon element that is added to the ribbon panel.
 
 ### Return Value
 
@@ -964,8 +964,8 @@ CRuntimeClass* pRTC);
 *uiCmdID*<br/>
 [in] Specifies the command ID of the ribbon element to add.
 
-[in] [out] *pRTC*
-A pointer to the runtime class information associated with the ribbon element that is added to the ribbon panel.
+*pRTC*<br/>
+[in, out] A pointer to the runtime class information associated with the ribbon element that is added to the ribbon panel.
 
 ### Return Value
 

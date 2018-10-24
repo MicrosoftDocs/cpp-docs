@@ -1,7 +1,7 @@
 ---
 title: "CMFCAutoHideButton Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCAutoHideButton", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::BringToTop", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::Create", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetAlignment", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetAutoHideWindow", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetParentToolBar", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetRect", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetSize", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetTextSize", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::HighlightButton", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsActive", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsHighlighted", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsHorizontal", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsTop", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsVisible", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::Move", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::OnDraw", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::OnDrawBorder", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::OnFillBackground", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::ReplacePane", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::ShowAttachedWindow", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::ShowButton", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::UnSetAutoHideMode"]
@@ -17,6 +17,7 @@ ms.workload: ["cplusplus"]
 A button that displays or hides a [CDockablePane Class](../../mfc/reference/cdockablepane-class.md) that is configured to hide.
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
+
 ## Syntax
 
 ```
@@ -368,7 +369,7 @@ void Move(int nOffset);
 
 ### Parameters
 
-[in] *nOffset*
+[in] *nOffset*<br/>
 
 ### Remarks
 
@@ -381,7 +382,7 @@ void ReplacePane(CDockablePane* pNewBar);
 
 ### Parameters
 
-[in] *pNewBar*
+[in] *pNewBar*<br/>
 
 ### Remarks
 

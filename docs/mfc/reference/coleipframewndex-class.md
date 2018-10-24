@@ -123,8 +123,8 @@ BOOL AddPane(
 
 ### Parameters
 
-*pControlBar*<br/>
-[in] [in] *bTail*
+[in] *pControlBar*<br/>
+[in] *bTail*<br/>
 
 ### Return Value
 
@@ -139,7 +139,7 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 
 ### Parameters
 
-[in] *hdwp*
+[in] *hdwp*<br/>
 
 ### Remarks
 
@@ -155,9 +155,9 @@ void DockPane(
 
 ### Parameters
 
-*pBar*<br/>
-[in] [in] *nDockBarID*
-[in] *lpRect*
+[in] *pBar*<br/>
+[in] *nDockBarID*<br/>
+[in] *lpRect*<br/>
 
 ### Remarks
 
@@ -196,7 +196,7 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 
 ### Parameters
 
-[in] *dwDockStyle*
+[in] *dwDockStyle*<br/>
 
 ### Return Value
 
@@ -211,7 +211,7 @@ BOOL EnableDocking(DWORD dwDockStyle);
 
 ### Parameters
 
-[in] *dwDockStyle*
+[in] *dwDockStyle*<br/>
 
 ### Return Value
 
@@ -232,12 +232,12 @@ void EnablePaneMenu(
 
 ### Parameters
 
-*bEnable*<br/>
-[in] [in] *uiCustomizeCmd*
-*strCustomizeLabel*<br/>
-[in] [in] *uiViewToolbarsMenuEntryID*
-*bContextMenuShowsToolbarsOnly*<br/>
-[in] [in] *bViewMenuShowsToolbarsOnly*
+[in] *bEnable*<br/>
+[in] *uiCustomizeCmd*<br/>
+[in] *strCustomizeLabel*<br/>
+[in] *uiViewToolbarsMenuEntryID*<br/>
+[in] *bContextMenuShowsToolbarsOnly*<br/>
+[in] *bViewMenuShowsToolbarsOnly*<br/>
 
 ### Remarks
 
@@ -342,7 +342,7 @@ CBasePane* GetPane(UINT nID);
 
 ### Parameters
 
-[in] *nID*
+[in] *nID*<br/>
 
 ### Return Value
 
@@ -428,9 +428,9 @@ BOOL InsertPane(
 
 ### Parameters
 
-*pControlBar*<br/>
-[in] [in] *pTarget*
-[in] *bAfter*
+[in] *pControlBar*<br/>
+[in] *pTarget*<br/>
+[in] *bAfter*<br/>
 
 ### Return Value
 
@@ -464,9 +464,9 @@ BOOL IsPointNearDockSite(
 
 ### Parameters
 
-*point*<br/>
-[in] [in] *dwBarAlignment*
-[in] *bOuterEdge*
+[in] *point*<br/>
+[in] *dwBarAlignment*<br/>
+[in] *bOuterEdge*<br/>
 
 ### Return Value
 
@@ -485,10 +485,10 @@ virtual BOOL LoadFrame(
 
 ### Parameters
 
-*nIDResource*<br/>
-[in] [in] *dwDefaultStyle*
-*pParentWnd*<br/>
-[in] [in] *pContext*
+[in] *nIDResource*<br/>
+[in] *dwDefaultStyle*<br/>
+[in] *pParentWnd*<br/>
+[in] *pContext*<br/>
 
 ### Return Value
 
@@ -503,7 +503,7 @@ virtual BOOL OnCloseDockingPane(CDockablePane*);
 
 ### Parameters
 
-[in] *CDockablePane**
+[in] *CDockablePane&#42;*<br/>
 
 ### Return Value
 
@@ -518,7 +518,7 @@ virtual BOOL OnCloseMiniFrame(CPaneFrameWnd*);
 
 ### Parameters
 
-[in] *CPaneFrameWnd\**
+[in] *CPaneFrameWnd&#42;*<br/>
 
 ### Return Value
 
@@ -554,10 +554,10 @@ virtual BOOL OnCmdMsg(
 
 ### Parameters
 
-*nID*<br/>
-[in] [in] *nCode*
-*pExtra*<br/>
-[in] [in] *pHandlerInfo*
+[in] *nID*<br/>
+[in] *nCode*<br/>
+[in] *pExtra*<br/>
+[in] *pHandlerInfo*<br/>
 
 ### Return Value
 
@@ -654,7 +654,7 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 
 ### Parameters
 
-[in] *pFrame*
+[in] *pFrame*<br/>
 
 ### Return Value
 
@@ -671,8 +671,8 @@ virtual void OnSetPreviewMode(
 
 ### Parameters
 
-*bPreview*<br/>
-[in] [in] *pState*
+[in] *bPreview*<br/>
+[in] *pState*<br/>
 
 ### Remarks
 
@@ -687,8 +687,8 @@ virtual BOOL OnShowCustomizePane(
 
 ### Parameters
 
-*pMenuPane*<br/>
-[in] [in] *uiToolbarID*
+[in] *pMenuPane*<br/>
+[in] *uiToolbarID*<br/>
 
 ### Return Value
 
@@ -703,7 +703,7 @@ virtual BOOL OnShowPanes(BOOL bShow);
 
 ### Parameters
 
-[in] *bShow*
+[in] *bShow*<br/>
 
 ### Return Value
 
@@ -775,11 +775,11 @@ CBasePane* PaneFromPoint(
 
 ### Parameters
 
-*point*<br/>
-[in] [in] *nSensitivity*
-*bExactBar*<br/>
-[in] [in] *pRTCBarType*
-[in] *dwAlignment*
+[in] *point*<br/>
+[in] *nSensitivity*<br/>
+[in] *bExactBar*<br/>
+[in] *pRTCBarType*<br/>
+[in] *dwAlignment*<br/>
 
 ### Return Value
 
@@ -794,7 +794,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ### Parameters
 
-[in] *pMsg*
+[in] *pMsg*<br/>
 
 ### Return Value
 
@@ -809,7 +809,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 
 ### Parameters
 
-[in] *bNotify*
+[in] *bNotify*<br/>
 
 ### Remarks
 
@@ -827,11 +827,11 @@ void RemovePaneFromDockManager(
 
 ### Parameters
 
-*pControlBar*<br/>
-[in] [in] *bDestroy*
-*bAdjustLayout*<br/>
-[in] [in] *bAutoHide*
-[in] *pBarReplacement*
+[in] *pControlBar*<br/>
+[in] *bDestroy*<br/>
+[in] *bAdjustLayout*<br/>
+[in] *bAutoHide*<br/>
+[in] *pBarReplacement*<br/>
 
 ### Remarks
 
@@ -889,10 +889,10 @@ void ShowPane(
 
 ### Parameters
 
-*pBar*<br/>
-[in] [in] *bShow*
-*bDelay*<br/>
-[in] [in] *bActivate*
+[in] *pBar*<br/>
+[in] *bShow*<br/>
+[in] *bDelay*<br/>
+[in] *bActivate*<br/>
 
 ### Remarks
 

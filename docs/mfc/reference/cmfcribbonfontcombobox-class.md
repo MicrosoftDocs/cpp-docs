@@ -140,7 +140,7 @@ const CMFCFontInfo* GetFontDesc(int iIndex = -1) const;
 
 ### Parameters
 
-[in] *iIndex*
+[in] *iIndex*<br/>
 
 ### Return Value
 

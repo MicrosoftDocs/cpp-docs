@@ -1,7 +1,7 @@
 ---
 title: "map Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 f1_keywords: ["map/std::map", "map/std::map::allocator_type", "map/std::map::const_iterator", "map/std::map::const_pointer", "map/std::map::const_reference", "map/std::map::const_reverse_iterator", "map/std::map::difference_type", "map/std::map::iterator", "map/std::map::key_compare", "map/std::map::key_type", "map/std::map::mapped_type", "map/std::map::pointer", "map/std::map::reference", "map/std::map::reverse_iterator", "map/std::map::size_type", "map/std::map::value_type", "map/std::map::at", "map/std::map::begin", "map/std::map::cbegin", "map/std::map::cend", "map/std::map::clear", "map/std::map::count", "map/std::map::crbegin", "map/std::map::crend", "map/std::map::emplace", "map/std::map::emplace_hint", "map/std::map::empty", "map/std::map::end", "map/std::map::equal_range", "map/std::map::erase", "map/std::map::find", "map/std::map::get_allocator", "map/std::map::insert", "map/std::map::key_comp", "map/std::map::lower_bound", "map/std::map::max_size", "map/std::map::rbegin", "map/std::map::rend", "map/std::map::size", "map/std::map::swap", "map/std::map::upper_bound", "map/std::map::value_comp"]
@@ -2543,9 +2543,9 @@ Returns the comparison function object that a map uses to order its elements.
 
 ### Remarks
 
-For a map *m*, if two elements *e*1( *k*1, *d*1) and *e*2( *k*2, `d`2) are objects of type `value_type`, where *k*1 and *k*2 are their keys of type `key_type` and `d`1 and `d`2 are their data of type `mapped_type`, then *m.*`value_comp`( *e*1, *e*2) is equivalent to *m.*`key_comp`*(k*1, *k*2). A stored object defines the member function
+For a map *m*, if two elements *e1*(*k1*, *d1*) and *e2*(*k2*, *d2*) are objects of type `value_type`, where *k1* and *k1* are their keys of type `key_type` and *d1* and *d2* are their data of type `mapped_type`, then `m.value_comp(e1, e2)` is equivalent to `m.key_comp(k1, k2)`. A stored object defines the member function
 
-**bool operator**( **value_type&**`left`, **value_type&**`right`);
+`bool operator( value_type& left, value_type& right);`
 
 which returns **true** if the key value of `left` precedes and is not equal to the key value of `right` in the sort order.
 

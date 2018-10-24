@@ -706,11 +706,11 @@ virtual BOOL OnDrawBrowseButton(
 
 ### Parameters
 
-*pDC*<br/>
-[in] [in] *rect*
-*pEdit*<br/>
-[in] [in] *state*
-[in] *clrText*
+[in] *pDC*<br/>
+[in] *rect*<br/>
+[in] *pEdit*<br/>
+[in] *state*<br/>
+[in] *clrText*<br/>
 
 ### Return Value
 
@@ -961,8 +961,8 @@ virtual void OnDrawHeaderCtrlBorder(
 *rect*<br/>
 [in] A rectangle that specifies the boundaries of the header control.
 
-*bIsPressed*<br/>
-[in] [in] *bIsHighlighted*
+[in] *bIsPressed*<br/>
+[in] *bIsHighlighted*<br/>
 A Boolean parameter that indicates whether the header control is pressed.
 
 ### Remarks
@@ -1622,9 +1622,9 @@ virtual void OnDrawStatusBarProgress(
 *clrBar*<br/>
 [in] The initial color for the progress bar. The value is either the start of a color gradient or the complete color of the progress bar.
 
-*clrProgressBarDest*<br/>
-[in] [in] *clrProgressText*
-[in] *bProgressText*
+[in] *clrProgressBarDest*<br/>
+[in] *clrProgressText*<br/>
+[in] *bProgressText*<br/>
 
 ### Remarks
 

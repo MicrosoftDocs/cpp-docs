@@ -1,7 +1,7 @@
 ---
 title: "CMFCMenuBar Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCMenuBar", "AFXMENUBAR/CMFCMenuBar", "AFXMENUBAR/CMFCMenuBar::AdjustLocations", "AFXMENUBAR/CMFCMenuBar::AllowChangeTextLabels", "AFXMENUBAR/CMFCMenuBar::AllowShowOnPaneMenu", "AFXMENUBAR/CMFCMenuBar::CalcFixedLayout", "AFXMENUBAR/CMFCMenuBar::CalcLayout", "AFXMENUBAR/CMFCMenuBar::CalcMaxButtonHeight", "AFXMENUBAR/CMFCMenuBar::CanBeClosed", "AFXMENUBAR/CMFCMenuBar::CanBeRestored", "AFXMENUBAR/CMFCMenuBar::Create", "AFXMENUBAR/CMFCMenuBar::CreateEx", "AFXMENUBAR/CMFCMenuBar::CreateFromMenu", "AFXMENUBAR/CMFCMenuBar::EnableHelpCombobox", "AFXMENUBAR/CMFCMenuBar::EnableMenuShadows", "AFXMENUBAR/CMFCMenuBar::GetAvailableExpandSize", "AFXMENUBAR/CMFCMenuBar::GetColumnWidth", "AFXMENUBAR/CMFCMenuBar::GetDefaultMenu", "AFXMENUBAR/CMFCMenuBar::GetDefaultMenuResId", "AFXMENUBAR/CMFCMenuBar::GetFloatPopupDirection", "AFXMENUBAR/CMFCMenuBar::GetForceDownArrows", "AFXMENUBAR/CMFCMenuBar::GetHelpCombobox", "AFXMENUBAR/CMFCMenuBar::GetHMenu", "AFXMENUBAR/CMFCMenuBar::GetMenuFont", "AFXMENUBAR/CMFCMenuBar::GetMenuItem", "AFXMENUBAR/CMFCMenuBar::GetRowHeight", "AFXMENUBAR/CMFCMenuBar::GetSystemButton", "AFXMENUBAR/CMFCMenuBar::GetSystemButtonsCount", "AFXMENUBAR/CMFCMenuBar::GetSystemMenu", "AFXMENUBAR/CMFCMenuBar::HighlightDisabledItems", "AFXMENUBAR/CMFCMenuBar::IsButtonExtraSizeAvailable", "AFXMENUBAR/CMFCMenuBar::IsHighlightDisabledItems", "AFXMENUBAR/CMFCMenuBar::IsMenuShadows", "AFXMENUBAR/CMFCMenuBar::IsRecentlyUsedMenus", "AFXMENUBAR/CMFCMenuBar::IsShowAllCommands", "AFXMENUBAR/CMFCMenuBar::IsShowAllCommandsDelay", "AFXMENUBAR/CMFCMenuBar::LoadState", "AFXMENUBAR/CMFCMenuBar::OnChangeHot", "AFXMENUBAR/CMFCMenuBar::OnDefaultMenuLoaded", "AFXMENUBAR/CMFCMenuBar::OnSendCommand", "AFXMENUBAR/CMFCMenuBar::OnSetDefaultButtonText", "AFXMENUBAR/CMFCMenuBar::OnToolHitTest", "AFXMENUBAR/CMFCMenuBar::PreTranslateMessage", "AFXMENUBAR/CMFCMenuBar::RestoreOriginalstate", "AFXMENUBAR/CMFCMenuBar::SaveState", "AFXMENUBAR/CMFCMenuBar::SetDefaultMenuResId", "AFXMENUBAR/CMFCMenuBar::SetForceDownArrows", "AFXMENUBAR/CMFCMenuBar::SetMaximizeMode", "AFXMENUBAR/CMFCMenuBar::SetMenuButtonRTC", "AFXMENUBAR/CMFCMenuBar::SetMenuFont", "AFXMENUBAR/CMFCMenuBar::SetRecentlyUsedMenus", "AFXMENUBAR/CMFCMenuBar::SetShowAllCommands"]
@@ -163,8 +163,9 @@ virtual CSize CalcFixedLayout(
 
 ### Parameters
 
-*bStretch*<br/>
-[in] [in] *bHorz*
+[in] *bStretch*<br/>
+
+[in] *bHorz*<br/>
 
 ### Return Value
 
@@ -181,8 +182,9 @@ virtual CSize CalcLayout(
 
 ### Parameters
 
-*dwMode*<br/>
-[in] [in] *nLength*
+[in] *dwMode*<br/>
+
+[in] *nLength*<br/>
 
 ### Return Value
 
@@ -437,7 +439,7 @@ int GetFloatPopupDirection(CMFCToolBarMenuButton* pButton);
 
 ### Parameters
 
-[in] *pButton*
+[in] *pButton*<br/>
 
 ### Return Value
 
@@ -538,8 +540,9 @@ CMFCToolBarMenuButtonsButton* GetSystemButton(
 
 ### Parameters
 
-*uiBtn*<br/>
-[in] [in] *bByCommand*
+[in] *uiBtn*<br/>
+
+[in] *bByCommand*<br/>
 
 ### Return Value
 
@@ -724,7 +727,7 @@ virtual void OnChangeHot(int iHot);
 
 ### Parameters
 
-[in] *iHot*
+[in] *iHot*<br/>
 
 ### Remarks
 
@@ -754,7 +757,7 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 
 ### Parameters
 
-[in] *pButton*
+[in] *pButton*<br/>
 
 ### Return Value
 
@@ -792,8 +795,9 @@ virtual INT_PTR OnToolHitTest(
 
 ### Parameters
 
-*point*<br/>
-[in] [in] *pTI*
+[in] *point*<br/>
+
+[in] *pTI*<br/>
 
 ### Return Value
 
@@ -808,7 +812,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ### Parameters
 
-[in] *pMsg*
+[in] *pMsg*<br/>
 
 ### Return Value
 
@@ -892,7 +896,7 @@ void SetForceDownArrows(BOOL bValue);
 
 ### Parameters
 
-[in] *bValue*
+[in] *bValue*<br/>
 
 ### Remarks
 

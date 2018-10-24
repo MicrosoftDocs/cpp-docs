@@ -20,4 +20,4 @@ The statement did not specify a valid include file.
 
 The **DLGINCLUDE** statement must use the following syntax:
 
-**DLGINCLUDE "*filename*.h"**
+**DLGINCLUDE "**<em>filename</em>**.h"**

@@ -185,8 +185,8 @@ virtual HRESULT accSelect(
 
 ### Parameters
 
-*flagsSelect*<br/>
-[in] [in] *varChild*
+[in] *flagsSelect*<br/>
+[in] *varChild*<br/>
 
 ### Return Value
 
@@ -243,7 +243,7 @@ void AlwaysShowUserToolTip(BOOL bShow = TRUE);
 
 ### Parameters
 
-[in] *bShow*
+[in] *bShow*<br/>
 
 ### Remarks
 
@@ -534,7 +534,7 @@ virtual HRESULT get_accChildCount(long* pcountChildren);
 
 ### Parameters
 
-[in] *pcountChildren*
+[in] *pcountChildren*<br/>
 
 ### Return Value
 
@@ -549,7 +549,7 @@ virtual HRESULT get_accFocus(VARIANT* pvarChild);
 
 ### Parameters
 
-[in] *pvarChild*
+[in] *pvarChild*<br/>
 
 ### Return Value
 
@@ -566,8 +566,8 @@ virtual HRESULT get_accHelp(
 
 ### Parameters
 
-*varChild*<br/>
-[in] [in] *pszHelp*
+[in] *varChild*<br/>
+[in] *pszHelp*<br/>
 
 ### Return Value
 
@@ -585,9 +585,9 @@ virtual HRESULT get_accHelpTopic(
 
 ### Parameters
 
-*pszHelpFile*<br/>
-[in] [in] *varChild*
-[in] *pidTopic*
+[in] *pszHelpFile*<br/>
+[in] *varChild*<br/>
+[in] *pidTopic*<br/>
 
 ### Return Value
 
@@ -604,8 +604,8 @@ virtual HRESULT get_accKeyboardShortcut(
 
 ### Parameters
 
-*varChild*<br/>
-[in] [in] *pszKeyboardShortcut*
+[in] *varChild*<br/>
+[in] *pszKeyboardShortcut*<br/>
 
 ### Return Value
 
@@ -620,7 +620,7 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
 
 ### Parameters
 
-[in] *pvarChildren*
+[in] *pvarChildren*<br/>
 
 ### Return Value
 

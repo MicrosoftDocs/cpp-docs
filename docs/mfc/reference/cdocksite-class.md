@@ -1,7 +1,7 @@
 ---
 title: "CDockSite Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CDockSite", "AFXDOCKSITE/CDockSite", "AFXDOCKSITE/CDockSite::AddRow", "AFXDOCKSITE/CDockSite::AdjustDockingLayout", "AFXDOCKSITE/CDockSite::AdjustLayout", "AFXDOCKSITE/CDockSite::AlignDockSite", "AFXDOCKSITE/CDockSite::CalcFixedLayout", "AFXDOCKSITE/CDockSite::CanAcceptPane", "AFXDOCKSITE/CDockSite::CreateEx", "AFXDOCKSITE/CDockSite::CreateRow", "AFXDOCKSITE/CDockSite::DockPane", "AFXDOCKSITE/CDockSite::DoesAllowDynInsertBefore", "AFXDOCKSITE/CDockSite::FindRowIndex", "AFXDOCKSITE/CDockSite::FixupVirtualRects", "AFXDOCKSITE/CDockSite::GetDockSiteID", "AFXDOCKSITE/CDockSite::GetDockSiteRowsList", "AFXDOCKSITE/CDockSite::IsAccessibilityCompatible", "AFXDOCKSITE/CDockSite::IsDragMode", "AFXDOCKSITE/CDockSite::IsLastRow", "AFXDOCKSITE/CDockSite::IsRectWithinDockSite", "AFXDOCKSITE/CDockSite::IsResizable", "AFXDOCKSITE/CDockSite::MovePane", "AFXDOCKSITE/CDockSite::OnInsertRow", "AFXDOCKSITE/CDockSite::OnRemoveRow", "AFXDOCKSITE/CDockSite::OnResizeRow", "AFXDOCKSITE/CDockSite::OnSetWindowPos", "AFXDOCKSITE/CDockSite::OnShowRow", "AFXDOCKSITE/CDockSite::OnSizeParent", "AFXDOCKSITE/CDockSite::PaneFromPoint", "AFXDOCKSITE/CDockSite::DockPaneLeftOf", "AFXDOCKSITE/CDockSite::FindPaneByID", "AFXDOCKSITE/CDockSite::GetPaneList", "AFXDOCKSITE/CDockSite::RectSideFromPoint", "AFXDOCKSITE/CDockSite::RemovePane", "AFXDOCKSITE/CDockSite::RemoveRow", "AFXDOCKSITE/CDockSite::ReplacePane", "AFXDOCKSITE/CDockSite::RepositionPanes", "AFXDOCKSITE/CDockSite::ResizeDockSite", "AFXDOCKSITE/CDockSite::ResizeRow", "AFXDOCKSITE/CDockSite::ShowPane", "AFXDOCKSITE/CDockSite::ShowRow", "AFXDOCKSITE/CDockSite::SwapRows"]
@@ -104,8 +104,9 @@ CDockingPanesRow* AddRow(
 
 ### Parameters
 
-*pos*<br/>
-[in] [in] *nHeight*
+[in] *pos*<br/>
+
+[in] *nHeight*<br/>
 
 ### Return Value
 
@@ -141,9 +142,11 @@ void AlignDockSite(
 
 ### Parameters
 
-*rectToAlignBy*<br/>
-[in] [in] *rectResult*
-[in] *bMoveImmediately*
+[in] *rectToAlignBy*<br/>
+
+[in] *rectResult*<br/>
+
+[in] *bMoveImmediately*<br/>
 
 ### Remarks
 
@@ -158,8 +161,9 @@ virtual CSize CalcFixedLayout(
 
 ### Parameters
 
-*bStretch*<br/>
-[in] [in] *bHorz*
+[in] *bStretch*<br/>
+
+[in] *bHorz*<br/>
 
 ### Return Value
 
@@ -174,7 +178,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Return Value
 
@@ -195,12 +199,17 @@ virtual BOOL CreateEx(
 
 ### Parameters
 
-*dwStyleEx*<br/>
-[in] [in] *dwStyle*
-*rect*<br/>
-[in] [in] *pParentWnd*
-*dwControlBarStyle*<br/>
-[in] [in] *pContext*
+[in] *dwStyleEx*<br/>
+
+[in] *dwStyle*<br/>
+
+[in] *rect*<br/>
+
+[in] *pParentWnd*<br/>
+
+[in] *dwControlBarStyle*<br/>
+
+[in] *pContext*<br/>
 
 ### Return Value
 
@@ -218,9 +227,11 @@ virtual CDockingPanesRow* CreateRow(
 
 ### Parameters
 
-*pParentDockBar*<br/>
-[in] [in] *nOffset*
-[in] *nRowHeight*
+[in] *pParentDockBar*<br/>
+
+[in] *nOffset*<br/>
+
+[in] *nRowHeight*<br/>
 
 ### Return Value
 
@@ -238,9 +249,11 @@ virtual void DockPane(
 
 ### Parameters
 
-*pWnd*<br/>
-[in] [in] *dockMethod*
-[in] *lpRect*
+[in] *pWnd*<br/>
+
+[in] *dockMethod*<br/>
+
+[in] *lpRect*<br/>
 
 ### Remarks
 
@@ -256,11 +269,11 @@ virtual BOOL DockPaneLeftOf(
 
 ### Parameters
 
-[in] [out] *pBarToDock*
-A pointer to the pane to be docked to the left of *pTargetBar*.
+*pBarToDock*<br/>
+[in, out] A pointer to the pane to be docked to the left of *pTargetBar*.
 
-[in] [out] *pTargetBar*
-A pointer to the target pane.
+*pTargetBar*<br/>
+[in, out] A pointer to the target pane.
 
 ### Return Value
 
@@ -307,7 +320,7 @@ int FindRowIndex(CDockingPanesRow* pRow);
 
 ### Parameters
 
-[in] *pRow*
+[in] *pRow*<br/>
 
 ### Return Value
 
@@ -387,7 +400,7 @@ bool IsLastRow(CDockingPanesRow* pRow) const;
 
 ### Parameters
 
-[in] *pRow*
+[in] *pRow*<br/>
 
 ### Return Value
 
@@ -404,8 +417,9 @@ BOOL IsRectWithinDockSite(
 
 ### Parameters
 
-*rect*<br/>
-[in] [in] *ptDelta*
+[in] *rect*<br/>
+
+[in] *ptDelta*<br/>
 
 ### Return Value
 
@@ -434,9 +448,11 @@ virtual BOOL MovePane(
 
 ### Parameters
 
-*pWnd*<br/>
-[in] [in] *nFlags*
-[in] *ptOffset*
+[in] *pWnd*<br/>
+
+[in] *nFlags*<br/>
+
+[in] *ptOffset*<br/>
 
 ### Return Value
 
@@ -451,7 +467,7 @@ virtual void OnInsertRow(POSITION pos);
 
 ### Parameters
 
-[in] *pos*
+[in] *pos*<br/>
 
 ### Remarks
 
@@ -466,8 +482,9 @@ virtual void OnRemoveRow(
 
 ### Parameters
 
-*pos*<br/>
-[in] [in] *bByShow*
+[in] *pos*<br/>
+
+[in] *bByShow*<br/>
 
 ### Remarks
 
@@ -482,8 +499,9 @@ virtual int OnResizeRow(
 
 ### Parameters
 
-*pRowToResize*<br/>
-[in] [in] *nOffset*
+[in] *pRowToResize*<br/>
+
+[in] *nOffset*<br/>
 
 ### Return Value
 
@@ -502,10 +520,13 @@ virtual void OnSizeParent(
 
 ### Parameters
 
-*rectAvailable*<br/>
-[in] [in] *nSide*
-*bExpand*<br/>
-[in] [in] *nOffset*
+[in] *rectAvailable*<br/>
+
+[in] *nSide*<br/>
+
+[in] *bExpand*<br/>
+
+[in] *nOffset*<br/>
 
 ### Remarks
 
@@ -521,9 +542,11 @@ virtual BOOL OnSetWindowPos(
 
 ### Parameters
 
-*pWndInsertAfter*<br/>
-[in] [in] *rectWnd*
-[in] *nFlags*
+[in] *pWndInsertAfter*<br/>
+
+[in] *rectWnd*<br/>
+
+[in] *nFlags*<br/>
 
 ### Return Value
 
@@ -540,8 +563,9 @@ virtual void OnShowRow(
 
 ### Parameters
 
-*pos*<br/>
-[in] [in] *bShow*
+[in] *pos*<br/>
+
+[in] *bShow*<br/>
 
 ### Remarks
 
@@ -575,8 +599,9 @@ static int __stdcall RectSideFromPoint(
 
 ### Parameters
 
-*rect*<br/>
-[in] [in] *point*
+[in] *rect*<br/>
+
+[in] *point*<br/>
 
 ### Return Value
 
@@ -593,8 +618,9 @@ virtual void RemovePane(
 
 ### Parameters
 
-*pWnd*<br/>
-[in] [in] *dockMethod*
+[in] *pWnd*<br/>
+
+[in] *dockMethod*<br/>
 
 ### Remarks
 
@@ -607,7 +633,7 @@ void RemoveRow(CDockingPanesRow* pRow);
 
 ### Parameters
 
-[in] *pRow*
+[in] *pRow*<br/>
 
 ### Remarks
 
@@ -622,8 +648,9 @@ BOOL ReplacePane(
 
 ### Parameters
 
-*pOldBar*<br/>
-[in] [in] *pNewBar*
+[in] *pOldBar*<br/>
+
+[in] *pNewBar*<br/>
 
 ### Return Value
 
@@ -638,7 +665,7 @@ virtual void RepositionPanes(CRect& rectNewClientArea);
 
 ### Parameters
 
-[in] *rectNewClientArea*
+[in] *rectNewClientArea*<br/>
 
 ### Remarks
 
@@ -653,8 +680,9 @@ void ResizeDockSite(
 
 ### Parameters
 
-*nNewWidth*<br/>
-[in] [in] *nNewHeight*
+[in] *nNewWidth*<br/>
+
+[in] *nNewHeight*<br/>
 
 ### Remarks
 
@@ -670,9 +698,11 @@ int ResizeRow(
 
 ### Parameters
 
-*pRow*<br/>
-[in] [in] *nNewSize*
-[in] *bAdjustLayout*
+[in] *pRow*<br/>
+
+[in] *nNewSize*<br/>
+
+[in] *bAdjustLayout*<br/>
 
 ### Return Value
 
@@ -692,8 +722,8 @@ virtual BOOL ShowPane(
 
 ### Parameters
 
-[in] [out] *pBar*
-A pointer to the pane to be shown or hidden.
+*pBar*<br/>
+[in, out] A pointer to the pane to be shown or hidden.
 
 *bShow*<br/>
 [in] TRUE to specify that the pane is to be shown; FALSE to specify that the pane is to be hidden.
@@ -724,9 +754,11 @@ void ShowRow(
 
 ### Parameters
 
-*pRow*<br/>
-[in] [in] *bShow*
-[in] *bAdjustLayout*
+[in] *pRow*<br/>
+
+[in] *bShow*<br/>
+
+[in] *bAdjustLayout*<br/>
 
 ### Remarks
 
@@ -741,8 +773,9 @@ void SwapRows(
 
 ### Parameters
 
-*pFirstRow*<br/>
-[in] [in] *pSecondRow*
+[in] *pFirstRow*<br/>
+
+[in] *pSecondRow*<br/>
 
 ### Remarks
 

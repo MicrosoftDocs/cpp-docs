@@ -197,7 +197,7 @@ S_OK if successful; otherwise, the HRESULT returned by GetActivationFactory.
 Retreives a cache of class factories.
 
 ```cpp
- HRESULT GetClassObject(
+HRESULT GetClassObject(
    REFCLSID clsid,
    REFIID riid,
    _Deref_out_ void **ppv,

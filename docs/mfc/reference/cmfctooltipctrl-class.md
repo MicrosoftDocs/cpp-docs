@@ -138,7 +138,7 @@ CMFCToolTipCtrl(CMFCToolTipInfo* pParams = NULL);
 
 ### Parameters
 
-[in] *pParams*
+[in] *pParams*<br/>
 
 ### Remarks
 
@@ -204,9 +204,9 @@ virtual CSize OnDrawDescription(
 
 ### Parameters
 
-*pDC*<br/>
-[in] [in] *rect*
-[in] *bCalcOnly*
+[in] *pDC*<br/>
+[in] *rect*<br/>
+[in] *bCalcOnly*<br/>
 
 ### Return Value
 
@@ -360,8 +360,8 @@ void SetFixedWidth(
 
 ### Parameters
 
-*nWidthRegular*<br/>
-[in] [in] *nWidthLargeImage*
+[in] *nWidthRegular*<br/>
+[in] *nWidthLargeImage*<br/>
 
 ### Remarks
 
@@ -374,7 +374,7 @@ void SetHotRibbonButton(CMFCRibbonButton* pRibbonButton);
 
 ### Parameters
 
-[in] *pRibbonButton*
+[in] *pRibbonButton*<br/>
 
 ### Remarks
 
@@ -387,7 +387,7 @@ void SetLocation(CPoint pt);
 
 ### Parameters
 
-[in] *pt*
+[in] *pt*<br/>
 
 ### Remarks
 

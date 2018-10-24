@@ -99,7 +99,7 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 
 ### Parameters
 
-[in] *src*
+[in] *src*<br/>
 
 ### Remarks
 
@@ -112,7 +112,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Return Value
 
@@ -141,7 +141,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Return Value
 
@@ -167,8 +167,8 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
 
 ### Parameters
 
-[in] *CDC**
-[in] *CRect*
+[in] *CDC&#42;*<br/>
+[in] *CRect*<br/>
 
 ### Return Value
 
@@ -194,7 +194,7 @@ virtual void OnDraw(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Remarks
 
@@ -207,7 +207,7 @@ virtual void OnMouseMove(CPoint point);
 
 ### Parameters
 
-[in] *point*
+[in] *point*<br/>
 
 ### Remarks
 

@@ -1,7 +1,7 @@
 ---
 title: "CMFCDropDownToolBar Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/188/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCDropDownToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::AllowShowOnPaneMenu", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::LoadBitmap", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::LoadToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnLButtonUp", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnMouseMove", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnSendCommand", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnUpdateCmdUI"]
@@ -159,13 +159,19 @@ virtual BOOL LoadToolBar(
 
 ### Parameters
 
-*uiResID*<br/>
-[in] [in] *uiColdResID*
-*uiMenuResID*<br/>
-[in] [in] *BOOL*
-*uiDisabledResID*<br/>
-[in] [in] *uiMenuDisabledResID*
-[in] *uiHotResID*
+[in] *uiResID*<br/>
+
+[in] *uiColdResID*<br/>
+
+[in] *uiMenuResID*<br/>
+
+[in] *BOOL*<br/>
+
+[in] *uiDisabledResID*<br/>
+
+[in] *uiMenuDisabledResID*<br/>
+
+[in] *uiHotResID*<br/>
 
 ### Return Value
 
@@ -182,8 +188,9 @@ afx_msg void OnLButtonUp(
 
 ### Parameters
 
-*nFlags*<br/>
-[in] [in] *point*
+[in] *nFlags*<br/>
+
+[in] *point*<br/>
 
 ### Remarks
 
@@ -198,8 +205,9 @@ afx_msg void OnMouseMove(
 
 ### Parameters
 
-*nFlags*<br/>
-[in] [in] *point*
+[in] *nFlags*<br/>
+
+[in] *point*<br/>
 
 ### Remarks
 
@@ -212,7 +220,7 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 
 ### Parameters
 
-[in] *pButton*
+[in] *pButton*<br/>
 
 ### Return Value
 
@@ -229,8 +237,9 @@ virtual void OnUpdateCmdUI(
 
 ### Parameters
 
-*pTarget*<br/>
-[in] [in] *bDisableIfNoHndler*
+[in] *pTarget*<br/>
+
+[in] *bDisableIfNoHndler*<br/>
 
 ### Remarks
 

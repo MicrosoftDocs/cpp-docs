@@ -234,8 +234,8 @@ CMFCRibbonBaseElement* FindByID(UINT uiCmdID, BOOL = TRUE);
 
 ### Parameters
 
-*uiCmdID*<br/>
-[in] [in] *BOOL*
+[in] *uiCmdID*<br/>
+[in] *BOOL*<br/>
 
 ### Return Value
 
@@ -330,7 +330,7 @@ virtual BOOL GetExtendedArea(CRect& rect) const;
 
 ### Parameters
 
-[in] *rect*
+[in] *rect*<br/>
 
 ### Return Value
 
@@ -370,7 +370,7 @@ BOOL IsExtendedElement(CMFCRibbonBaseElement* pElement) const;
 
 ### Parameters
 
-[in] *pElement*
+[in] *pElement*<br/>
 
 ### Return Value
 

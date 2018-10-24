@@ -1,7 +1,7 @@
 ---
 title: "multimap Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 f1_keywords: ["map/std::multimap", "map/std::multimap::allocator_type", "map/std::multimap::const_iterator", "map/std::multimap::const_pointer", "map/std::multimap::const_reference", "map/std::multimap::const_reverse_iterator", "map/std::multimap::difference_type", "map/std::multimap::iterator", "map/std::multimap::key_compare", "map/std::multimap::key_type", "map/std::multimap::mapped_type", "map/std::multimap::pointer", "map/std::multimap::reference", "map/std::multimap::reverse_iterator", "map/std::multimap::size_type", "map/std::multimap::value_type", "map/std::multimap::begin", "map/std::multimap::cbegin", "map/std::multimap::cend", "map/std::multimap::clear", "map/std::multimap::count", "map/std::multimap::crbegin", "map/std::multimap::crend", "map/std::multimap::emplace", "map/std::multimap::emplace_hint", "map/std::multimap::empty", "map/std::multimap::end", "map/std::multimap::equal_range", "map/std::multimap::erase", "map/std::multimap::find", "map/std::multimap::get_allocator", "map/std::multimap::insert", "map/std::multimap::key_comp", "map/std::multimap::lower_bound", "map/std::multimap::max_size", "map/std::multimap::rbegin", "map/std::multimap::rend", "map/std::multimap::size", "map/std::multimap::swap", "map/std::multimap::upper_bound", "map/std::multimap::value_comp"]
@@ -2248,7 +2248,7 @@ Returns the comparison function object that a multimap uses to order its element
 
 ### Remarks
 
-For a multimap *m*, if two elements *e*1( *k*1, *d*1) and *e*2( *k*2, `d`2) are objects of type `value_type`, where *k*1 and *k*2 are their keys of type `key_type` and `d`1 and `d`2 are their data of type `mapped_type`, then *m.*`value_comp`( *e*1, *e*2) is equivalent to *m.*`key_comp`( *k*1, *k*2).
+For a multimap *m*, if two elements *e1*(*k1*, *d1*) and *e2*(*k2*, *d2*) are objects of type `value_type`, where *k1* and *k2* are their keys of type `key_type` and *d1* and *d2* are their data of type `mapped_type`, then `m.value_comp(e1, e2)` is equivalent to `m.key_comp(k1, k2)`.
 
 ### Example
 
