@@ -1,7 +1,7 @@
 ---
 title: "CTimeSpan Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CTimeSpan", "ATLTIME/ATL::CTimeSpan", "ATLTIME/ATL::CTimeSpan::CTimeSpan", "ATLTIME/ATL::CTimeSpan::Format", "ATLTIME/ATL::CTimeSpan::GetDays", "ATLTIME/ATL::CTimeSpan::GetHours", "ATLTIME/ATL::CTimeSpan::GetMinutes", "ATLTIME/ATL::CTimeSpan::GetSeconds", "ATLTIME/ATL::CTimeSpan::GetTimeSpan", "ATLTIME/ATL::CTimeSpan::GetTotalHours", "ATLTIME/ATL::CTimeSpan::GetTotalMinutes", "ATLTIME/ATL::CTimeSpan::GetTotalSeconds", "ATLTIME/ATL::CTimeSpan::Serialize64"]
@@ -105,11 +105,11 @@ Constructs `CTimeSpan` objects in various ways.
 CTimeSpan() throw();
 CTimeSpan(__time64_t time) throw();
 
-CTimeSpan(  
-LONG lDays,
-int nHours,
-int nMins,
-int nSecs) throw();
+CTimeSpan(
+    LONG lDays,
+    int nHours,
+    int nMins,
+    int nSecs) throw();
 ```
 
 ### Parameters
@@ -120,7 +120,7 @@ A `CTimeSpan` object that already exists.
 *time*<br/>
 A **__time64_t** time value, which is the number of seconds in the time span.
 
-*lDays*, *nHours*, *nMins*, *nSecs*  
+*lDays*, *nHours*, *nMins*, *nSecs*<br/>
 Days, hours, minutes, and seconds, respectively.
 
 ### Remarks
@@ -135,12 +135,12 @@ All these constructors create a new `CTimeSpan` object initialized with the spec
 
 - `CTimeSpan( LONG, int, int, int );` Constructs a `CTimeSpan` object from components with each component constrained to the following ranges:
 
-    |Component|Range|  
-    |---------------|-----------|  
-    |*lDays*|0-25,000 (approximately)|  
-    |*nHours*|0-23|  
-    |*nMins*|0-59|  
-    |*nSecs*|0-59|
+   |Component|Range|
+   |---------------|-----------|
+   |*lDays*|0-25,000 (approximately)|
+   |*nHours*|0-23|
+   |*nMins*|0-59|
+   |*nSecs*|0-59|
 
 Note that the Debug version of the Microsoft Foundation Class Library asserts if one or more of the time-day components is out of range. It is your responsibility to validate the arguments prior to calling.
 
@@ -160,7 +160,7 @@ CString Format(UINT nID) const;
 
 ### Parameters
 
-*pFormat*, *pszFormat*  
+*pFormat*, *pszFormat*<br/>
 A formatting string similar to the `printf` formatting string. Formatting codes, preceded by a percent (`%`) sign, are replaced by the corresponding `CTimeSpan` component. Other characters in the formatting string are copied unchanged to the returned string. The value and meaning of the formatting codes for `Format` are listed below:
 
 - **%D** Total days in this `CTimeSpan`

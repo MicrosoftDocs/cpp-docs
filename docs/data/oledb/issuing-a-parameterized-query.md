@@ -1,7 +1,7 @@
 ---
 title: "Issuing a Parameterized Query | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/19/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -17,31 +17,41 @@ The following example issues a simple parameterized query that retrieves records
   
 ```cpp  
 #include <atldbcli.h>  
-  
-CDataSource connection;  
-CSession session;  
-CCommand<CAccessor<CArtists>> artists;  
-  
-// Open the connection, session, and table, specifying authentication   
-// using Windows NT integrated security. Hard-coding a password is a major   
-// security weakness.  
-connection.Open(CLSID_MSDASQL, "NWind", NULL, NULL, DBPROP_AUTH_INTEGRATED);  
+#include <iostream>
 
-session.Open(connection);  
+using namespace std;
+
+int main()
+{
+    CDataSource connection;  
+    CSession session;  
+    CCommand<CAccessor<CArtists>> artists;  
+    LPCSTR clsid; // Initialize CLSID_MSDASQL here
+	LPCTSTR pName = L"NWind";
   
-// Set the parameter for the query  
-artists.m_nAge = 30;  
-artists.Open(session, "select * from artists where age > ?");  
+    // Open the connection, session, and table, specifying authentication   
+    // using Windows NT integrated security. Hard-coding a password is a major   
+    // security weakness.  
+    connection.Open(clsid, pName, NULL, NULL, DBPROP_AUTH_INTEGRATED);  
+
+    session.Open(connection);  
   
-// Get data from the rowset  
-while (artists.MoveNext() == S_OK)  
-{  
-   cout << artists.m_szFirstName;  
-   cout << artists.m_szLastName;  
+    // Set the parameter for the query  
+    artists.m_nAge = 30;  
+    artists.Open(session, "select * from artists where age > ?");  
+  
+    // Get data from the rowset  
+    while (artists.MoveNext() == S_OK)  
+    {  
+        cout << artists.m_szFirstName;  
+        cout << artists.m_szLastName;  
+    }
+
+    return 0;
 }  
 ```  
   
-The user record, `CArtists`, looks like this:  
+The user record, `CArtists`, looks like this example:  
   
 ```cpp  
 class CArtists  

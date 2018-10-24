@@ -1,7 +1,7 @@
 ---
 title: "Accessors and Rowsets | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/22/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -26,7 +26,7 @@ Accessor Classes
   
 - [CAccessor](../../data/oledb/caccessor-class.md) Use this accessor when you know the structure of the database source at design time. `CAccessor` statically binds a database record, which contains the buffer, to the data source.  
   
-- [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) Use this accessor when you do not know the structure of the database at design time. `CDynamicAccessor` calls `IColumnsInfo::GetColumnInfo` to get the database column information. It creates and manages an accessor and the buffer.  
+- [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) Use this accessor when you don't know the structure of the database at design time. `CDynamicAccessor` calls `IColumnsInfo::GetColumnInfo` to get the database column information. It creates and manages an accessor and the buffer.  
   
 - [CDynamicParameterAccessor](../../data/oledb/cdynamicparameteraccessor-class.md) Use this accessor to handle unknown command types. When you prepare the commands, `CDynamicParameterAccessor` can get parameter information from the `ICommandWithParameters` interface, if the provider supports `ICommandWithParameters`.  
   
@@ -53,7 +53,7 @@ The following figure shows the rowset types.
 ![RowsetType graphic](../../data/oledb/media/vcrowsettypes.gif "vcrowsettypes")  
 Rowset Classes  
   
-[Schema rowsets](../../data/oledb/obtaining-metadata-with-schema-rowsets.md) do not access data in the data store but instead access information about the data store, called metadata. Schema rowsets are typically used in situations in which the database structure is not known at compile time and must be obtained at run time.  
+[Schema rowsets](../../data/oledb/obtaining-metadata-with-schema-rowsets.md) don't access data in the data store but instead access information about the data store, called metadata. Schema rowsets are typically used in situations in which the database structure isn't known at compile time and must be obtained at run time.  
   
 ## See Also  
 

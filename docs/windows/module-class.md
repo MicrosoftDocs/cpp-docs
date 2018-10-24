@@ -1,7 +1,7 @@
 ---
 title: "Module Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/17/2018"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module", "module/Microsoft::WRL::Module::Create", "module/Microsoft::WRL::Module::DecrementObjectCount", "module/Microsoft::WRL::Module::GetActivationFactory", "module/Microsoft::WRL::Module::GetClassObject", "module/Microsoft::WRL::Module::GetModule", "module/Microsoft::WRL::Module::GetObjectCount", "module/Microsoft::WRL::Module::IncrementObjectCount", "module/Microsoft::WRL::Module::Module", "module/Microsoft::WRL::Module::objectCount_Data", "module/Microsoft::WRL::Module::RegisterCOMObject", "module/Microsoft::WRL::Module::RegisterObjects", "module/Microsoft::WRL::Module::RegisterWinRTObject", "module/Microsoft::WRL::Module::releaseNotifier_", "module/Microsoft::WRL::Module::Terminate", "module/Microsoft::WRL::Module::~Module", "module/Microsoft::WRL::Module::UnregisterCOMObject", "module/Microsoft::WRL::Module::UnregisterObjects", "module/Microsoft::WRL::Module::UnregisterWinRTObject"]
@@ -131,7 +131,7 @@ WRL_NOTHROW static Module& Create(
 template<typename T>
 WRL_NOTHROW static Module& Create(
    _In_ T* object,
-   _In_ void (T::* method)()  
+   _In_ void (T::* method)()
 );
 ```
 
@@ -353,7 +353,7 @@ Registers one or more Windows Runtime objects so other applications can connect 
 HRESULT RegisterWinRTObject(const wchar_t* serverName,
    wchar_t** activatableClassIds,
    WINRT_REGISTRATION_COOKIE* cookie,
-   unsigned int count)  
+   unsigned int count)
 ```
 
 ### Parameters

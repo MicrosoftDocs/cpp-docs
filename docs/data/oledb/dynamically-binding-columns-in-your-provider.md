@@ -19,7 +19,7 @@ Make sure you really need dynamic column binding. You might need it because:
   
 - You support an element such as bookmarks that adds columns.  
   
-### To implement dynamic column binding  
+## To implement dynamic column binding  
   
 1. Remove any `PROVIDER_COLUMN_MAP`s from your code.  
   

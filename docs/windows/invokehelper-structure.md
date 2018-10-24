@@ -1,7 +1,7 @@
 ---
 title: "InvokeHelper Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/03/2018"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::Details::InvokeHelper", "event/Microsoft::WRL::Details::InvokeHelper::callback_", "event/Microsoft::WRL::Details::InvokeHelper::Invoke", "event/Microsoft::WRL::Details::InvokeHelper::InvokeHelper"]
@@ -96,6 +96,8 @@ struct InvokeHelper<TDelegateInterface, TCallback, 9> :
 ### Parameters
 
 *TDelegateInterface*<br/>
+The delegate interface type.
+
 *TCallback*<br/>
 The type of the event handler function.
 

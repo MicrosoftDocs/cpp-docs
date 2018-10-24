@@ -1,7 +1,7 @@
 ---
 title: "CTime Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/12/2018"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CTime", "ATLTIME/ATL::CTime", "ATLTIME/ATL::CTime::CTime", "ATLTIME/ATL::CTime::Format", "ATLTIME/ATL::CTime::FormatGmt", "ATLTIME/ATL::CTime::GetAsDBTIMESTAMP", "ATLTIME/ATL::CTime::GetAsSystemTime", "ATLTIME/ATL::CTime::GetCurrentTime", "ATLTIME/ATL::CTime::GetDay", "ATLTIME/ATL::CTime::GetDayOfWeek", "ATLTIME/ATL::CTime::GetGmtTm", "ATLTIME/ATL::CTime::GetHour", "ATLTIME/ATL::CTime::GetLocalTm", "ATLTIME/ATL::CTime::GetMinute", "ATLTIME/ATL::CTime::GetMonth", "ATLTIME/ATL::CTime::GetSecond", "ATLTIME/ATL::CTime::GetTime", "ATLTIME/ATL::CTime::GetYear", "ATLTIME/ATL::CTime::Serialize64"]
@@ -19,7 +19,7 @@ Represents an absolute time and date.
 ## Syntax
 
 ```
-class CTime  
+class CTime
 ```
 
 ## Members
@@ -89,12 +89,12 @@ For more information about using `CTime`, see the articles [Date and Time](../..
 Comparison operators.
 
 ```
-bool operator==(CTime time) const throw(); 
+bool operator==(CTime time) const throw();
 bool operator!=(CTime time) const throw();
 bool operator<(CTime time) const throw();
 bool operator>(CTime time) const throw();
 bool operator<=(CTime time) const throw();
-bool operator>=(CTime time) const throw(); 
+bool operator>=(CTime time) const throw();
 ```
 
 ### Parameters
@@ -122,7 +122,7 @@ CTime(int nYear, int nMonth, int nDay,
 CTime(WORD wDosDate, WORD wDosTime, int nDST = -1);
 CTime(const SYSTEMTIME& st, int nDST = - 1) throw();
 CTime(const FILETIME& ft, int nDST = - 1);
-CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
+CTime(const DBTIMESTAMP& dbts, int nDST = -1) throw();
 ```
 
 ### Parameters
@@ -131,10 +131,9 @@ CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
 Indicates a `CTime` object that already exists.
 
 *time*<br/>
-A **__time64_t** time value, which is the number of seconds after January 1, 1970 UTC. Note that this will be adjusted to your local time. For example, if you are in New York and create a `CTime` object by passing a parameter of 0, [CTime::GetMonth](#getmonth) will return 12.  
+A `__time64_t` time value, which is the number of seconds after January 1, 1970 UTC. Note that this will be adjusted to your local time. For example, if you are in New York and create a `CTime` object by passing a parameter of 0, [CTime::GetMonth](#getmonth) will return 12.
 
-
-*nYear*, *nMonth*, *nDay*, *nHour*, *nMin*, *nSec*  
+*nYear*, *nMonth*, *nDay*, *nHour*, *nMin*, *nSec*<br/>
 Indicates the date and time values to be copied into the new `CTime` object.
 
 *nDST*<br/>
@@ -146,7 +145,7 @@ Indicates whether daylight savings time is in effect. Can have one of three valu
 
 - *nDST* set to a value less than 0The default. Automatically computes whether standard time or daylight savings time is in effect.
 
-*wDosDate*, *wDosTime*  
+*wDosDate*, *wDosTime*<br/>
 MS-DOS date and time values to be converted to a date/time value and copied into the new `CTime` object.
 
 *st*<br/>
@@ -155,7 +154,7 @@ A [SYSTEMTIME](../../mfc/reference/systemtime-structure.md) structure to be conv
 *ft*<br/>
 A [FILETIME](../../mfc/reference/filetime-structure.md) structure to be converted to a date/time value and copied into the new `CTime` object.
 
-dbts  
+*dbts*<br/>
 A reference to a DBTIMESTAMP structure containing the current local time.
 
 ### Remarks
@@ -170,13 +169,13 @@ Each constructor is described below:
 
 - `CTime( int, int, ...);` Constructs a `CTime` object from local time components with each component constrained to the following ranges:
 
-   |Component|Range|  
-   |---------------|-----------|  
-   |*nYear*|1970-3000|  
-   |*nMonth*|1-12|  
-   |*nDay*|1-31|  
-   |*nHour*|0-23|  
-   |*nMin*|0-59|  
+   |Component|Range|
+   |---------------|-----------|
+   |*nYear*|1970-3000|
+   |*nMonth*|1-12|
+   |*nDay*|1-31|
+   |*nHour*|0-23|
+   |*nMin*|0-59|
    |*nSec*|0-59|
 
    This constructor makes the appropriate conversion to UTC. The Debug version of the Microsoft Foundation Class Library asserts if one or more of the time components are out of range. You must validate the arguments before calling. This constructor expects a local time.
@@ -201,8 +200,8 @@ For more information, see the [SYSTEMTIME](https://msdn.microsoft.com/library/wi
 Call this member function to create a formatted representation of the date-time value.
 
 ```
-CString Format(LPCTSTR pszFormat) const; 
-CString Format(UINT nFormatID) const; 
+CString Format(LPCTSTR pszFormat) const;
+CString Format(UINT nFormatID) const;
 ```
 
 ### Parameters
@@ -329,7 +328,7 @@ Returns the current system date and time in Coordinated Universal Time (UTC).
 Returns the day represent by the `CTime` object.
 
 ```
-int GetDay() const throw(); 
+int GetDay() const throw();
 ```
 
 ### Return Value

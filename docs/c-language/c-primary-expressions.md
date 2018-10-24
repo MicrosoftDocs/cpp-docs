@@ -1,7 +1,7 @@
 ---
 title: "C Primary Expressions | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/21/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
 dev_langs: ["C++"]
@@ -17,19 +17,15 @@ The operands in expressions are called "primary expressions."
 
 ## Syntax
 
-*primary-expression*:
-*identifier*
+*primary-expression*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*identifier*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*constant*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*string-literal*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**(** *expression* **)**<br/>
 
-*constant*
-
-*string-literal*
-
-**(**  *expression*  **)**
-
-*expression*:
-*assignment-expression*
-
-*expression*  **,**  *assignment-expression*
+*expression*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*assignment-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*expression* **,** *assignment-expression*<br/>
 
 ## See Also
 

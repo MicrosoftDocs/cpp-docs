@@ -40,5 +40,4 @@ You can perform the following tasks and types of enhancements to a basic MFC DLL
 [MFC Class](../../mfc/reference/adding-an-mfc-class.md)<br/>
 [Adding a Member Function](../../ide/adding-a-member-function-visual-cpp.md)<br/>
 [Implementing an Interface](../../ide/implementing-an-interface-visual-cpp.md)<br/>
-[Wizard Support for Other Languages](../../ide/wizard-support-for-other-languages.md)
 
