@@ -19,7 +19,7 @@ There are two ways to debug your provider:
   
 - You can use the ITEST utility that comes with Visual C++.  
   
-### To use the ITEST utility  
+## To use the ITEST utility  
   
 1. Open the provider project.  
   

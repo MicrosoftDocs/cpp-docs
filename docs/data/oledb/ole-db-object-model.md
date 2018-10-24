@@ -1,7 +1,7 @@
 ---
 title: "OLE DB Object Model | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/22/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Object Model
 
-The OLE DB object model comprises the following objects or components. The first four objects or components listed (data sources, sessions, commands, and rowsets) allow you to connect to a data source and view it. The rest, starting with accessors, relate to working with the data when it is displayed.  
+The OLE DB object model is made of the following objects or components. The first four objects or components listed (data sources, sessions, commands, and rowsets) allow you to connect to a data source and view it. The rest, starting with accessors, relate to working with the data when it's displayed.  
   
 ## Data Sources  
 
@@ -23,7 +23,7 @@ Data source objects allow you to connect to a data source such as a file or DBMS
 
 A session manages a particular interaction with the data source to query and retrieve data. Each session is a single transaction. A transaction is an indivisible work unit defined by the ACID test. For a definition of ACID, see [Transactions](#vcconoledbcomponents_transactions).  
   
-Sessions perform important tasks such as opening rowsets and returning the data source object that created it. Sessions can also return metadata, or information about the data source itself (such as table information).  
+Sessions do important tasks such as opening rowsets and returning the data source object that created it. Sessions can also return metadata, or information about the data source itself (such as table information).  
   
 A session can create one or more commands.  
   
@@ -35,41 +35,41 @@ A command is simply a container for a text command, which is a string (such as a
   
 ## Rowsets  
 
-Rowsets expose data in tabular format. An index is a special case of a rowset. You can create rowsets from the session or the command.  
+Rowsets show data in tabular format. An index is a special case of a rowset. You can create rowsets from the session or the command.  
   
 ### Schema Rowsets  
 
-Schemas contain metadata (structural information) about a database. Schema rowsets are rowsets that contain schema information. Some OLE DB providers for DBMS support schema rowset objects. For more information about schema rowsets, see [Obtaining Metadata with Schema Rowsets](../../data/oledb/obtaining-metadata-with-schema-rowsets.md) and [Schema Rowset Classes and Typedef Classes](../../data/oledb/schema-rowset-classes-and-typedef-classes.md).  
+Schemas have metadata (structural information) about a database. Schema rowsets are rowsets that have schema information. Some OLE DB providers for DBMS support schema rowset objects. For more information about schema rowsets, see [Obtaining Metadata with Schema Rowsets](../../data/oledb/obtaining-metadata-with-schema-rowsets.md) and [Schema Rowset Classes and Typedef Classes](../../data/oledb/schema-rowset-classes-and-typedef-classes.md).  
   
 ### View Objects  
 
-A view object defines a subset of the rows and columns from a rowset. It contains no data of its own. View objects cannot combine data from multiple rowsets.  
+A view object defines a subset of the rows and columns from a rowset. It has no data of its own. View objects can't combine data from multiple rowsets.  
   
 ## Accessors  
 
-Only OLE DB uses the concept of accessors. An accessor describes how data is stored in a consumer. It contains a set of bindings (called a column map) between rowset fields (columns) and data members that you declare in the consumer.  
+Only OLE DB uses the concept of accessors. An accessor describes how data is stored in a consumer. It has a set of bindings (called a column map) between rowset fields (columns) and data members that you declare in the consumer.  
   
 ##  <a name="vcconoledbcomponents_transactions"></a> Transactions  
 
 Transaction objects are used when committing or aborting nested transactions at other than the lowest level. A transaction is an indivisible work unit defined by the ACID test. ACID stands for:  
   
-- Atomicity: cannot be divided into smaller work units.  
+- Atomicity, can't be divided into smaller work units  
   
-- Concurrency: more than one transaction can occur at a time.  
+- Concurrency, more than one transaction can occur at a time  
   
-- Isolation: one transaction has limited knowledge about changes made by another.  
+- Isolation, one transaction has limited knowledge about changes made by another  
   
-- Durability: the transaction makes persistent changes.  
+- Durability, the transaction makes persistent changes 
   
 ## Enumerators  
 
-Enumerators search for available data sources and other enumerators. Consumers that are not customized for a particular data source use enumerators to search for a data source to use.  
+Enumerators search for available data sources and other enumerators. Consumers that aren't customized for a particular data source use enumerators to search for a data source to use.  
   
 A root enumerator, shipped in the Microsoft Data Access SDK, traverses the registry looking for data sources and other enumerators. Other enumerators traverse the registry or search in a provider-specific manner.  
   
 ## Errors  
 
-Any interface on any OLE DB object can generate errors. Errors contain additional information about an error, including an optional custom error object. This information is contained in an HRESULT.  
+Any interface on any OLE DB object can generate errors. Errors have additional information about an error, including an optional custom error object. This information is stored in an HRESULT.  
   
 ## Notifications  
 
