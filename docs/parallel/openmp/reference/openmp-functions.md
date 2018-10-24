@@ -22,7 +22,7 @@ Function                                        | Description
 ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 [omp_destroy_lock](#omp-destroy-lock)           | Uninitializes a lock.
 [omp_destroy_nest_lock](#omp-destroy-nest-lock) | Uninitializes a nestable lock.
-[omp_get_dynamic](#omp-get-dynamic)             | Returns a value that indicates if the number of threads available in following parallel regions can be adjusted by the run time.
+[omp_get_dynamic](#omp-get-dynamic)             | Returns a value that indicates if the number of threads available in upcoming parallel regions can be adjusted by the run time.
 [omp_get_max_threads](#omp-get-max-threads)     | Returns an integer that is equal to or greater than the number of threads that would be available if a parallel region without [num_threads](openmp-clauses.md#num-threads) were defined at that point in the code.
 [omp_get_nested](#omp-get-nested)               | Returns a value that indicates if nested parallelism is enabled.
 [omp_get_num_procs](#omp-get-num-procs)         | Returns the number of processors that are available when the function is called.
@@ -33,11 +33,11 @@ Function                                        | Description
 [omp_in_parallel](#omp-in-parallel)             | Returns nonzero if called from within a parallel region.
 [omp_init_lock](#omp-init-lock)                 | Initializes a simple lock.
 [omp_init_nest_lock](#omp-init-nest-lock)       | Initializes a lock.
-[omp_set_dynamic](#omp-set-dynamic)             | Indicates that the number of threads available in following parallel regions can be adjusted by the run time.
+[omp_set_dynamic](#omp-set-dynamic)             | Indicates that the number of threads available in upcoming parallel regions can be adjusted by the run time.
 [omp_set_lock](#omp-set-lock)                   | Blocks thread execution until a lock is available.
 [omp_set_nest_lock](#omp-set-nest-lock)         | Blocks thread execution until a lock is available.
 [omp_set_nested](#omp-set-nested)               | Enables nested parallelism.
-[omp_set_num_threads](#omp-set-num-threads)     | Sets the number of threads in following parallel regions, unless overridden by a [num_threads](openmp-clauses.md#num-threads) clause.
+[omp_set_num_threads](#omp-set-num-threads)     | Sets the number of threads in upcoming parallel regions, unless overridden by a [num_threads](openmp-clauses.md#num-threads) clause.
 [omp_test_lock](#omp-test-lock)                 | Attempts to set a lock but doesn't block thread execution.
 [omp_test_nest_lock](#omp-test-nest-lock)       | Attempts to set a nestable lock but doesn't block thread execution.
 [omp_unset_lock](#omp-unset-lock)               | Releases a lock.
@@ -91,7 +91,7 @@ See [omp_init_nest_lock](#omp-init-nest-lock) for an example of using `omp_destr
 
 ## <a name="omp-get-dynamic"></a>omp_get_dynamic
 
-Returns a value that indicates if the number of threads available in following parallel regions can be adjusted by the run time.
+Returns a value that indicates if the number of threads available in upcoming parallel regions can be adjusted by the run time.
 
 ```
 int omp_get_dynamic();
@@ -568,7 +568,7 @@ Thread 0 - ending nested locked region
 
 ## <a name="omp-set-dynamic"></a>omp_set_dynamic
 
-Indicates that the number of threads available in following parallel regions can be adjusted by the run time.
+Indicates that the number of threads available in upcoming parallel regions can be adjusted by the run time.
 
 ```
 void omp_set_dynamic(
@@ -579,7 +579,7 @@ void omp_set_dynamic(
 ### Parameters
 
 *val*<br/>
-A value that indicates if the number of threads available in following parallel regions can be adjusted by the runtime.  If nonzero, the runtime can adjust the number of threads, if zero, the runtime won't dynamically adjust the number of threads.
+A value that indicates if the number of threads available in upcoming parallel regions can be adjusted by the runtime.  If nonzero, the runtime can adjust the number of threads, if zero, the runtime won't dynamically adjust the number of threads.
 
 ### Remarks
 
@@ -718,7 +718,7 @@ int main( )
 
 ## <a name="omp-set-num-threads"></a>omp_set_num_threads
 
-Sets the number of threads in following parallel regions, unless overridden by a [num_threads](openmp-clauses.md#num-threads) clause.
+Sets the number of threads in upcoming parallel regions, unless overridden by a [num_threads](openmp-clauses.md#num-threads) clause.
 
 ```
 void omp_set_num_threads(
