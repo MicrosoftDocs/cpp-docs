@@ -16,7 +16,8 @@ ms.workload: ["cplusplus", "uwp"]
 
 Extends the integer primitives to help prevent integer overflow and lets you compare different types of integers.
 
-> [!NOTE] The latest version of this library is located at [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt).
+> [!NOTE] 
+> The latest version of this library is located at [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt).
 
 ## Syntax
 

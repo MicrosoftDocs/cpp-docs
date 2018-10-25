@@ -16,7 +16,8 @@ ms.workload: ["cplusplus", "uwp"]
 
 The `SafeInt` class uses `SafeIntException` to identify why a mathematical operation cannot be completed.
 
-> [!NOTE] The latest version of this library is located at [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt).
+> [!NOTE]
+> The latest version of this library is located at [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt).
 
 ## Syntax
 
