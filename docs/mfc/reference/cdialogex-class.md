@@ -71,7 +71,6 @@ CDialogEx(
     UINT nIDTemplate,
     CWnd* pParent=NULL);
 
-
 CDialogEx(
     LPCTSTR lpszTemplateName,
     CWnd* pParentWnd=NULL);
@@ -125,7 +124,6 @@ void SetBackgroundImage(
     BackgroundLocation location=BACKGR_TILE,
     BOOL bAutoDestroy=TRUE,
     BOOL bRepaint=TRUE);
-
 
 BOOL SetBackgroundImage(
     UINT uiBmpResId,

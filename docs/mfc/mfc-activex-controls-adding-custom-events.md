@@ -27,7 +27,7 @@ The following procedure adds a specific custom event, ClickIn. You can use this 
 
 1. From the shortcut menu, click **Add** and then click **Add Event**.
 
-     This opens the Add Event Wizard.
+   This opens the Add Event Wizard.
 
 1. In the **Event name** box, first select any existing event, then click on the **Custom** radio button, then type *ClickIn*.
 
@@ -73,7 +73,7 @@ Now that you have added the ClickIn custom event using the Add Event Wizard, you
 
 1. In the Properties window, click the **Messages** button.
 
-     The Properties window displays a list of messages that can be handled by the ActiveX control. Any message shown in bold already has a handler function assigned to it.
+   The Properties window displays a list of messages that can be handled by the ActiveX control. Any message shown in bold already has a handler function assigned to it.
 
 1. From the Properties window, select the message you want to handle. For this example, select WM_LBUTTONDOWN.
 
@@ -110,7 +110,7 @@ The following procedure adds a custom Click event.
 
 1. From the shortcut menu, click **Add** and then click **Add Event**.
 
-     This opens the Add Event Wizard.
+   This opens the Add Event Wizard.
 
 1. In the **Event Name** drop-down list, select a stock event name. For this example, select **Click**.
 

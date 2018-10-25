@@ -93,7 +93,7 @@ bool operator>=(const COleDateTimeSpan& dateSpan) const throw();
 
 ### Parameters
 
-*dateSpan*  
+*dateSpan*<br/>
 The `COleDateTimeSpan` to compare.
 
 ### Return Value
@@ -123,10 +123,10 @@ COleDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 
 ### Parameters
 
-*dblSpanSrc*  
+*dblSpanSrc*<br/>
 The number of days to be copied into the new `COleDateTimeSpan` object.
 
-*lDays*, *nHours*, *nMins*, *nSecs*  
+*lDays*, *nHours*, *nMins*, *nSecs*<br/>
 Indicate the day and time values to be copied into the new `COleDateTimeSpan` object.
 
 ### Remarks
@@ -158,7 +158,7 @@ CString Format(UINT nID) const;
 
 ### Parameters
 
-*pFormat*  
+*pFormat*<br/>
 A formatting string similar to the `printf` formatting string. Formatting codes, preceded by a percent (`%`) sign, are replaced by the corresponding `COleDateTimeSpan` component. Other characters in the formatting string are copied unchanged to the returned string. The value and meaning of the formatting codes for `Format` are listed below:
 
 - **%H** Hours in the current day
@@ -173,7 +173,7 @@ The four format codes listed above are the only codes that Format will accept.
 
 -
 
-*nID*  
+*nID*<br/>
 The resource ID for the format-control string.
 
 ### Return Value
@@ -186,10 +186,10 @@ Call these functions to create a formatted representation of the time-span value
 
 A brief description of the forms for this function follows:
 
-**Format(** *pFormat* **)**  
+**Format(** *pFormat* **)**<br/>
 This form formats the value using the format string that contains special formatting codes that are preceded by a percent sign (%), as in `printf`. The formatting string is passed as a parameter to the function.
 
-**Format(** *nID* **)**  
+**Format(** *nID* **)**<br/>
 This form formats the value using the format string that contains special formatting codes that are preceded by a percent sign (%), as in `printf`. The formatting string is a resource. The ID of this string resource is passed as the parameter.
 
 ### Example
@@ -357,11 +357,11 @@ The status of this `COleDateTimeSpan` value.
 The return value is defined by the `DateTimeSpanStatus` enumerated type, which is defined within the `COleDateTimeSpan` class.
 
 ```
-enum DateTimeSpanStatus{  
-   valid = 0,  
-   invalid = 1,  
-   null = 2,  
-};  
+enum DateTimeSpanStatus{
+   valid = 0,
+   invalid = 1,
+   null = 2,
+};
 ```
 
 For a brief description of these status values, see the following list:
@@ -554,11 +554,11 @@ DateTimeSpanStatus m_status;
 ### Remarks
 
 ```
-enum DateTimeSpanStatus{  
-   valid = 0,  
-   invalid = 1,  
-   null = 2,  
-   };  
+enum DateTimeSpanStatus{
+   valid = 0,
+   invalid = 1,
+   null = 2,
+   };
 ```
 
 For a brief description of these status values, see the following list:
@@ -663,7 +663,7 @@ void SetDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 
 ### Parameters
 
-*lDays*, *nHours*, *nMins*, *nSecs*  
+*lDays*, *nHours*, *nMins*, *nSecs*<br/>
 Indicate the date-span and time-span values to be copied into this `COleDateTimeSpan` object.
 
 ### Remarks
@@ -700,7 +700,7 @@ void SetStatus(DateTimeSpanStatus status) throw();
 
 ### Parameters
 
-*status*  
+*status*<br/>
 The new status value for this `COleDateTimeSpan` object.
 
 ### Remarks
@@ -708,11 +708,11 @@ The new status value for this `COleDateTimeSpan` object.
 The *Status* parameter value is defined by the `DateTimeSpanStatus` enumerated type, which is defined within the `COleDateTimeSpan` class.
 
 ```
-enum DateTimeSpanStatus{  
-   valid = 0,  
-   invalid = 1,  
-   null = 2,  
-   };  
+enum DateTimeSpanStatus{
+   valid = 0,
+   invalid = 1,
+   null = 2,
+   };
 ```
 
 For a brief description of these status values, see the following list:

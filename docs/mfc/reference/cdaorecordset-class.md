@@ -950,7 +950,6 @@ void GetFieldInfo(
     CDaoFieldInfo& fieldinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
 
-
 void GetFieldInfo(
     LPCTSTR lpszName,
     CDaoFieldInfo& fieldinfo,
@@ -993,7 +992,6 @@ Call this member function to retrieve data in a recordset.
 virtual void GetFieldValue(
     LPCTSTR lpszName,
     COleVariant& varValue);
-
 
 virtual void GetFieldValue(
     int nIndex,
@@ -1058,7 +1056,6 @@ void GetIndexInfo(
     int nIndex,
     CDaoIndexInfo& indexinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
-
 
 void GetIndexInfo(
     LPCTSTR lpszName,
@@ -1760,12 +1757,10 @@ virtual void Open(
     LPCTSTR lpszSQL = NULL,
     int nOptions = 0);
 
-
 virtual void Open(
     CDaoTableDef* pTableDef,
     int nOpenType = dbOpenTable,
     int nOptions = 0);
-
 
 virtual void Open(
     CDaoQueryDef* pQueryDef,
@@ -1915,7 +1910,6 @@ BOOL Seek(
     COleVariant* pKey1,
     COleVariant* pKey2 = NULL,
     COleVariant* pKey3 = NULL);
-
 
 BOOL Seek(
     LPCTSTR lpszComparison,
@@ -2185,16 +2179,13 @@ virtual void SetFieldValue(
     LPCTSTR lpszName,
     const COleVariant& varValue);
 
-
 virtual void SetFieldValue(
     int nIndex,
     const COleVariant& varValue);
 
-
 void SetFieldValue(
     LPCTSTR lpszName,
     LPCTSTR lpszValue);
-
 
 void SetFieldValue(
     int nIndex,
@@ -2279,7 +2270,6 @@ Call this member function to set the value of a parameter in the recordset at ru
 virtual void SetParamValue(
     int nIndex,
     const COleVariant& varValue);
-
 
 virtual void SetParamValue(
     LPCTSTR lpszName,

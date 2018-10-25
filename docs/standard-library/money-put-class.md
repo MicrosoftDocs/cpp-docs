@@ -87,7 +87,6 @@ virtual iter_type do_put(
     CharType _Fill,
     const string_type& val) const;
 
-
 virtual iter_type do_put(
     iter_type next,
     bool _Intl,
@@ -209,7 +208,6 @@ iter_type put(
     ios_base& _Iosbase,
     CharType _Fill,
     const string_type& val) const;
-
 
 iter_type put(
     iter_type next,

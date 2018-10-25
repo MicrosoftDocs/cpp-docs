@@ -26,7 +26,7 @@ The Microsoft run-time library uses the following types of code pages:
     setlocale ( LC_ALL, "" );
     ```
 
-     also sets the locale to the system-default ANSI code page.
+   also sets the locale to the system-default ANSI code page.
 
 - Locale code page. The behavior of a number of run-time routines is dependent on the current locale setting, which includes the locale code page. (For more information, see [Locale-Dependent Routines](../c-runtime-library/locale.md).) By default, all locale-dependent routines in the Microsoft run-time library use the code page that corresponds to the "C" locale. At run-time you can change or query the locale code page in use with a call to [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md).
 

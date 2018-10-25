@@ -32,4 +32,4 @@ The easiest way to create a Win32 console application is to use the **Win32 Appl
 
 [Console Projects](/visualstudio/debugger/debugging-preparation-console-projects)<br/>
 [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Property Pages](../ide/property-pages-visual-cpp.md)  
+[Property Pages](../ide/property-pages-visual-cpp.md)

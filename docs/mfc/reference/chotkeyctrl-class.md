@@ -307,5 +307,3 @@ When a user enters an invalid key combination, as defined by flags specified in 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

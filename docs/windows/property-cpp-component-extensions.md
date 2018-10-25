@@ -40,17 +40,17 @@ You must explicitly declare a data member to contain the property value. For an 
 ```cpp
 property type property_name;
 
-property type property_name { 
-   access-modifier type get() inheritance-modifier {property_body}; 
+property type property_name {
+   access-modifier type get() inheritance-modifier {property_body};
    access-modifier void set(type value) inheritance-modifier {property_body};
-} 
+}
 
-property type property_name[index_list] { 
-   access-modifier type get(index_list) inheritance-modifier {property_body}; 
+property type property_name[index_list] {
+   access-modifier type get(index_list) inheritance-modifier {property_body};
    access-modifier void set(index_list, value) inheritance-modifier {property_body};
-} 
+}
 
-property type default[index_list] { 
+property type default[index_list] {
    access-modifier type get(index_list) inheritance-modifier {property_body};
    access-modifier void set(index_list, value) inheritance-modifier {property_body};
 }
@@ -159,7 +159,6 @@ When a property data member is declared, the compiler injects a data member—so
 Different accessibility is allowed for the accessor methods in a property block.  That is, the set method can be public and the get method can be private.  However, it is an error for an accessor method to have a less restrictive accessibility than what is on the declaration of the property itself.
 
 **property** is a context-sensitive keyword.  For more information, see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md).
-
 
 ### Requirements
 

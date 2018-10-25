@@ -52,7 +52,7 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 |[AtlHexValue](../atl/reference/atl-text-encoding-functions.md#atlhexvalue)|Call this function to get the numeric value of a hexadecimal digit.|
 |[AtlIsUnsafeUrlChar](../atl/reference/atl-http-utility-functions.md#atlisunsafeurlchar)|Call this function to find out whether a character is safe for use in a URL.|
 |[AtlUnescapeUrl](../atl/reference/atl-http-utility-functions.md#atlunescapeurl)|Call this function to convert escaped characters back to their original values.|
-|[SystemTimeToHttpDate](../atl/reference/atl-http-utility-functions.md#systemtimetohttpdate)|Call this function to convert a system time to a string in a format suitable for using in HTTP headers.|  
+|[SystemTimeToHttpDate](../atl/reference/atl-http-utility-functions.md#systemtimetohttpdate)|Call this function to convert a system time to a string in a format suitable for using in HTTP headers.|
 
 |[ATLPath::AddBackslash](../atl/reference/atl-path-functions.md#addbackslash)|This function is an overloaded wrapper for [PathAddBackslash](/windows/desktop/api/shlwapi/nf-shlwapi-pathaddbackslasha
 ).|

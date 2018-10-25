@@ -37,7 +37,7 @@ The following procedure demonstrates adding the custom method PtInCircle to an A
 
 1. From the shortcut menu, click **Add** and then click **Add Method**.
 
-     This opens the Add Method Wizard.
+   This opens the Add Method Wizard.
 
 1. In the **Method Name** box, type *PtInCircle*.
 

@@ -60,8 +60,8 @@ Called to process a work item.
 
 ```
 void Execute(
-    RequestType request,  
-    void* pvWorkerParam,  
+    RequestType request,
+    void* pvWorkerParam,
     OVERLAPPED* pOverlapped);
 ```
 

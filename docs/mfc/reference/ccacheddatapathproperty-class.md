@@ -77,7 +77,6 @@ Constructs a `CCachedDataPathProperty` object.
 ```
 CCachedDataPathProperty(COleControl* pControl = NULL);
 
-
 CCachedDataPathProperty(
     LPCTSTR lpszPath,
     COleControl* pControl = NULL);

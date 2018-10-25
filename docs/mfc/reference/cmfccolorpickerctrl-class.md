@@ -221,7 +221,6 @@ void SelectCellHexagon(
     BYTE G,
     BYTE B);
 
-
 BOOL SelectCellHexagon(
     int x,
     int y);

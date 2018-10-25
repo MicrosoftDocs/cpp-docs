@@ -1,7 +1,7 @@
 ---
 title: "CMFCDesktopAlertDialog Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCDesktopAlertDialog", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::CreateFromParams", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::GetDlgSize", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::HasFocus", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::PreTranslateMessage"]
@@ -67,7 +67,6 @@ Perform the following steps to display a custom dialog in a popup window:
 
 ##  <a name="createfromparams"></a>  CMFCDesktopAlertDialog::CreateFromParams
 
-
 ```
 BOOL CreateFromParams(
     CMFCDesktopAlertWndInfo& params,
@@ -76,15 +75,15 @@ BOOL CreateFromParams(
 
 ### Parameters
 
-*params*<br/>
-[in] [in] *pParent*
+[in] *params*<br/>
+
+[in] *pParent*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="getdlgsize"></a>  CMFCDesktopAlertDialog::GetDlgSize
-
 
 ```
 CSize GetDlgSize();
@@ -96,7 +95,6 @@ CSize GetDlgSize();
 
 ##  <a name="hasfocus"></a>  CMFCDesktopAlertDialog::HasFocus
 
-
 ```
 BOOL HasFocus() const;
 ```
@@ -107,14 +105,13 @@ BOOL HasFocus() const;
 
 ##  <a name="pretranslatemessage"></a>  CMFCDesktopAlertDialog::PreTranslateMessage
 
-
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```
 
 ### Parameters
 
-[in] *pMsg*
+[in] *pMsg*<br/>
 
 ### Return Value
 

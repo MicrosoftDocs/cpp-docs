@@ -58,7 +58,7 @@ The memory allocation class to use. By default CRT routines are used to allocate
 |----------|-----------------|
 |[CHeapPtrBase::operator T*](#operator_t_star)|The cast operator.|
 |[CHeapPtrBase::operator &](#operator_amp)|The & operator.|
-|[CHeapPtrBase::operator ->](#operator_ptr)|The pointer-to-member operator.|  
+|[CHeapPtrBase::operator ->](#operator_ptr)|The pointer-to-member operator.|
 
 ### Public Data Members
 

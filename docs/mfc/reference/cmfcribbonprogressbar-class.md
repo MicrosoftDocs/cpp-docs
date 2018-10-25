@@ -73,7 +73,6 @@ Constructs and initializes a [CMFCRibbonProgressBar](../../mfc/reference/cmfcrib
 ```
 CMFCRibbonProgressBar();
 
-
 CMFCRibbonProgressBar(
     UINT nID,
     int nWidth = 90,
@@ -143,7 +142,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Return Value
 
@@ -175,7 +174,7 @@ virtual void OnDraw(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Remarks
 

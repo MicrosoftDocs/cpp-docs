@@ -74,7 +74,6 @@ BOOL AddBar(
     CBitmap* pbmp = NULL,
     DWORD dwStyle = RBBS_GRIPPERALWAYS | RBBS_FIXEDBMP);
 
-
 BOOL AddBar(
     CWnd* pBar,
     COLORREF clrFore,
@@ -172,6 +171,4 @@ For more information about using `CReBarCtrl` to customize your rebar, see [Usin
 [MFC Sample MFCIE](../../visual-cpp-samples.md)<br/>
 [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
-
 

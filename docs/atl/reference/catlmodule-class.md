@@ -237,7 +237,7 @@ HRESULT WINAPI UpdateRegistryFromResourceD(
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
 
-HRESULT WINAPI UpdateRegistryFromResourceD(  
+HRESULT WINAPI UpdateRegistryFromResourceD(
     LPCTSTR lpszRes,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
@@ -274,7 +274,7 @@ This method calls [CAtlModule::UpdateRegistryFromResourceDHelper](#updateregistr
 This method is called by `UpdateRegistryFromResourceD` to perform the registry update.
 
 ```
-inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(  
+inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(
     LPCOLESTR lpszRes,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
@@ -304,12 +304,12 @@ This method provides the implementation of [CAtlModule::UpdateRegistryFromResour
 Runs the script contained in a specified resource to register or unregister an object. This method statically links to the ATL Registry Component.
 
 ```
-HRESULT WINAPI UpdateRegistryFromResourceS(  
+HRESULT WINAPI UpdateRegistryFromResourceS(
     UINT nResID,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
 
-HRESULT WINAPI UpdateRegistryFromResourceS(  
+HRESULT WINAPI UpdateRegistryFromResourceS(
     LPCTSTR lpszRes,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
@@ -342,4 +342,4 @@ Similar to [CAtlModule::UpdateRegistryFromResourceD](#updateregistryfromresource
 [_ATL_MODULE](atl-typedefs.md#_atl_module)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Module Classes](../../atl/atl-module-classes.md)<br/>
-[Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md)  
+[Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md)

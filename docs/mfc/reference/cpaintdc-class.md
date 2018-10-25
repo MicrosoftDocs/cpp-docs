@@ -125,5 +125,3 @@ Note that you can access the device-context handle through the `PAINTSTRUCT`. Ho
 [CDC Class](../../mfc/reference/cdc-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

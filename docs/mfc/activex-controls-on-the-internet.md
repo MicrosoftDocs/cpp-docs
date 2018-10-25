@@ -52,7 +52,7 @@ To improve performance of your controls, follow these tips on efficiency conside
 
 - Download data in small blocks.
 
-     When downloading large streams such as bitmaps or video data, access a control's data asynchronously in cooperation with the container. Retrieve the data in an incremental or progressive fashion, working cooperatively with other controls that may also be retrieving data. Code can also be downloading asynchronously.
+   When downloading large streams such as bitmaps or video data, access a control's data asynchronously in cooperation with the container. Retrieve the data in an incremental or progressive fashion, working cooperatively with other controls that may also be retrieving data. Code can also be downloading asynchronously.
 
 - Download code and properties in the background.
 
@@ -60,15 +60,15 @@ To improve performance of your controls, follow these tips on efficiency conside
 
 - Consider how persistent data is stored, both properties and large data BLOBs (such as a bitmap image or video data).
 
-     Controls with significant amounts of persistent data, such as large bitmaps or AVI files, require careful attention to downloading method. A document or page can become visible as soon as possible, and allow the user to interact with the page while controls retrieve data in the background.
+   Controls with significant amounts of persistent data, such as large bitmaps or AVI files, require careful attention to downloading method. A document or page can become visible as soon as possible, and allow the user to interact with the page while controls retrieve data in the background.
 
 - Write efficient routines to keep code size and run time down.
 
-     Small button and label controls, with only a few bytes of persistent data, are suitable for use in the Internet environment and work well inside browsers.
+   Small button and label controls, with only a few bytes of persistent data, are suitable for use in the Internet environment and work well inside browsers.
 
 - Consider progress is communicated to the container.
 
-     Notify the container of progress in the asynchronous download, including when the user can start to interact with a page, and when the download is complete. The container can display progress (such as percent complete) to the user.
+   Notify the container of progress in the asynchronous download, including when the user can start to interact with a page, and when the download is complete. The container can display progress (such as percent complete) to the user.
 
 - Consider how controls are registered on the client computer.
 
@@ -84,7 +84,7 @@ When creating a new control using the Application Wizard, you can choose to enab
 
 1. On the **Control Settings** page, select **Loads properties asynchronously**. Selecting this option sets up the ready state property and the ready state changed event for you.
 
-     You can also select other optimizations, such as **Windowless activation**, which is described in [ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md).
+   You can also select other optimizations, such as **Windowless activation**, which is described in [ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md).
 
 1. Choose **Finish** to create the project.
 
@@ -96,15 +96,15 @@ When creating a new control using the Application Wizard, you can choose to enab
 
 1. In this class, override `OnDataAvailable`. This function is called whenever data is available for display. As data becomes available, you can handle it any way you choose, for example by progressively rendering it.
 
-     The code excerpt below is a simple example of progressively displaying data in an edit control. Note the use of flag **BSCF_FIRSTDATANOTIFICATION** to clear the edit control.
+   The code excerpt below is a simple example of progressively displaying data in an edit control. Note the use of flag **BSCF_FIRSTDATANOTIFICATION** to clear the edit control.
 
-     [!code-cpp[NVC_MFCActiveXControl#1](../mfc/codesnippet/cpp/activex-controls-on-the-internet_1.cpp)]
+   [!code-cpp[NVC_MFCActiveXControl#1](../mfc/codesnippet/cpp/activex-controls-on-the-internet_1.cpp)]
 
-     Note that you must include AFXCMN.H to use the `CListCtrl` class.
+   Note that you must include AFXCMN.H to use the `CListCtrl` class.
 
 1. When your control's overall state changes (for example, from loading to initialized or user interactive), call `COleControl::InternalSetReadyState`. If your control has only one data path property, you can add code on **BSCF_LASTDATANOTIFICATION** to notify the container that your download is complete. For example:
 
-     [!code-cpp[NVC_MFCActiveXControl#2](../mfc/codesnippet/cpp/activex-controls-on-the-internet_2.cpp)]
+   [!code-cpp[NVC_MFCActiveXControl#2](../mfc/codesnippet/cpp/activex-controls-on-the-internet_2.cpp)]
 
 1. Override `OnProgress`. In `OnProgress`, you are passed a number showing the maximum range and a number showing how far along the current download is. You can use these numbers to display status such as percent complete to the user.
 
@@ -120,19 +120,19 @@ The next procedure adds a property to the control to use the class just derived.
 
 1. Declare a member variable of your `CDataPathProperty`-derived class to your ActiveX control class.
 
-     [!code-cpp[NVC_MFCActiveXControl#3](../mfc/codesnippet/cpp/activex-controls-on-the-internet_3.h)]
+   [!code-cpp[NVC_MFCActiveXControl#3](../mfc/codesnippet/cpp/activex-controls-on-the-internet_3.h)]
 
 1. Implement the `Get/Set` methods. For `Get`, return the string. For `Set`, load the property and call `SetModifiedFlag`.
 
-     [!code-cpp[NVC_MFCActiveXControl#4](../mfc/codesnippet/cpp/activex-controls-on-the-internet_4.cpp)]
+   [!code-cpp[NVC_MFCActiveXControl#4](../mfc/codesnippet/cpp/activex-controls-on-the-internet_4.cpp)]
 
 1. In [DoPropExchange](../mfc/reference/colecontrol-class.md#dopropexchange), add the following line:
 
-     [!code-cpp[NVC_MFCActiveXControl#5](../mfc/codesnippet/cpp/activex-controls-on-the-internet_5.cpp)]
+   [!code-cpp[NVC_MFCActiveXControl#5](../mfc/codesnippet/cpp/activex-controls-on-the-internet_5.cpp)]
 
 1. Override [ResetData](../mfc/reference/cdatapathproperty-class.md#resetdata) to notify the property to reset its control by adding this line:
 
-     [!code-cpp[NVC_MFCActiveXControl#6](../mfc/codesnippet/cpp/activex-controls-on-the-internet_6.cpp)]
+   [!code-cpp[NVC_MFCActiveXControl#6](../mfc/codesnippet/cpp/activex-controls-on-the-internet_6.cpp)]
 
 ## Deciding Whether to Derive from CDataPathProperty or CCachedDataPathProperty
 
@@ -185,8 +185,6 @@ If you are adding asynchronous property support to an existing control, you will
 [!code-cpp[NVC_MFCActiveXControl#8](../mfc/codesnippet/cpp/activex-controls-on-the-internet_8.cpp)]
 
 You will update the ready state as your code is downloaded by calling [COleControl::InternalSetReadyState](../mfc/reference/colecontrol-class.md#internalsetreadystate). One place you could call `InternalSetReadyState` is from the `OnProgress` override of `CDataPathProperty`-derived class.
-
-
 
 ## See Also
 

@@ -28,7 +28,7 @@ With the **Toolbar** editor, you can:
 
 The **Toolbar** editor window shows two views of a button image, the same as the Image editor window. A split bar separates the two panes. You can drag the split bar from side to side to change the relative sizes of the panes. The active pane displays a selection border. Above the two views of the image is the subject toolbar.
 
-![Toolbar Editor](../mfc/media/vctoolbareditor.gif "vcToolbarEditor")  
+![Toolbar Editor](../mfc/media/vctoolbareditor.gif "vcToolbarEditor")
 Toolbar Editor
 
 The **Toolbar** editor is similar to the **Image** editor in functionality. The menu items, graphic tools, and bitmap grid are the same as those in the **Image** editor. There is a menu command on the **Image** menu to allow you to switch between the **Toolbar** editor and the **Image** editor. For more information on using the **Graphics** toolbar, **Colors** palette, or **Image** menu, see [Image Editor](../windows/image-editor-for-icons.md).

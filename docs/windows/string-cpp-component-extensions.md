@@ -102,11 +102,11 @@ int main() {
    a += b;
    Console::WriteLine(a);
    a = b;
-   if (a == b)  
+   if (a == b)
       Console::WriteLine("a and b are equal");
 
    a = "abc";
-   if (a != b)  
+   if (a != b)
       Console::WriteLine("a and b are not equal");
 
    // System:String^ and tracking reference
@@ -115,7 +115,7 @@ int main() {
 
    // testing an empty System::String^
    String^ n;
-   if (n == nullptr)  
+   if (n == nullptr)
       Console::WriteLine("n is empty");
 }
 ```
@@ -215,7 +215,7 @@ The following sample shows that the compiler distinguishes between native string
 // compile with: /clr
 using namespace System;
 int func() {
-   throw "simple string";   // const char *  
+   throw "simple string";   // const char *
 };
 
 int func2() {
@@ -242,7 +242,7 @@ int main() {
       Console::WriteLine("String^ str");
    }
 
-   func3("string");   // const char *  
+   func3("string");   // const char *
    func3("string" + "string");   // returns System::String
 }
 ```

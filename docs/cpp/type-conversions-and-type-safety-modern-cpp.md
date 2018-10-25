@@ -117,7 +117,7 @@ The C-style cast operator is identical to the call operator () and is therefore 
     Derived* d2 = static_cast<Derived*>(b);
     ```
 
-     For more information, see [static_cast](../cpp/static-cast-operator.md).
+   For more information, see [static_cast](../cpp/static-cast-operator.md).
 
 - **dynamic_cast**, for safe, runtime-checked casts of pointer-to-base to pointer-to-derived. A **dynamic_cast** is safer than a **static_cast** for downcasts, but the runtime check incurs some overhead.
 
@@ -142,7 +142,7 @@ The C-style cast operator is identical to the call operator () and is therefore 
     //Output: d3 is null;
     ```
 
-     For more information, see [dynamic_cast](../cpp/dynamic-cast-operator.md).
+   For more information, see [dynamic_cast](../cpp/dynamic-cast-operator.md).
 
 - **const_cast**, for casting away the **const**-ness of a variable, or converting a non-**const** variable to be **const**. Casting away **const**-ness by using this operator is just as error-prone as is using a C-style cast, except that with **const-cast** you are less likely to perform the cast accidentally. Sometimes you have to cast away the **const**-ness of a variable, for example, to pass a **const** variable to a function that takes a non-**const** parameter. The following example shows how to do this.
 
@@ -155,14 +155,14 @@ The C-style cast operator is identical to the call operator () and is therefore 
     }
     ```
 
-     For more information, see [const_cast](../cpp/const-cast-operator.md).
+   For more information, see [const_cast](../cpp/const-cast-operator.md).
 
 - **reinterpret_cast**, for casts between unrelated types such as **pointer** to **int**.
 
     > [!NOTE]
     >  This cast operator is not used as often as the others, and it's not guaranteed to be portable to other compilers.
 
-     The following example illustrates how **reinterpret_cast** differs from **static_cast**.
+   The following example illustrates how **reinterpret_cast** differs from **static_cast**.
 
     ```cpp
     const char* str = "hello";
@@ -174,7 +174,7 @@ The C-style cast operator is identical to the call operator () and is therefore 
                                        // However, it is not 64-bit safe.
     ```
 
-     For more information, see [reinterpret_cast Operator](../cpp/reinterpret-cast-operator.md).
+   For more information, see [reinterpret_cast Operator](../cpp/reinterpret-cast-operator.md).
 
 ## See also
 

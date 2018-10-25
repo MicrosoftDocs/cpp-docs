@@ -28,7 +28,6 @@ We further recommend that you never write code that depends on a particular layo
 
 Additionally, ongoing improvements to compiler conformance can sometimes change how the compiler understands your existing source code. When this happens, you might encounter new or different errors during your build, or even behavioral differences in code that previously built and seemed to run correctly. Although these are not breaking changes like the ones discussed in this document, source code changes might be needed to resolve these issues:
 
-
 - [C Runtime (CRT) Library Breaking Changes](#BK_CRT)
 
 - [Standard C++ and C++ Standard Library Breaking Changes](#BK_STL)
@@ -1695,7 +1694,7 @@ Although these differences can affect your source code or other build artifacts,
 
 - **Private virtual base classes and indirect inheritance**
 
-   Previous versions of the compiler allowed a derived class to call member functions of its *indirectly-derived*`private virtual` base classes. This old behavior was incorrect and does not conform to the C++ standard. The compiler no longer accepts code written in this way and issues compiler error C2280 as a result.
+   Previous versions of the compiler allowed a derived class to call member functions of its *indirectly-derived* `private virtual` base classes. This old behavior was incorrect and does not conform to the C++ standard. The compiler no longer accepts code written in this way and issues compiler error C2280 as a result.
 
     ```Output
     error C2280: 'void *S3::__delDtor(unsigned int)': attempting to reference a deleted function
@@ -1733,7 +1732,7 @@ Although these differences can affect your source code or other build artifacts,
     }
     ```
 
-   -or -
+   \- or -
 
     ```cpp
     class base;  // as above
@@ -1909,7 +1908,7 @@ Although these differences can affect your source code or other build artifacts,
 
 - **Restoration of switch statement warnings**
 
-   A Previous version of the compiler removed previously-existing warnings related to **switch** statements; these warnings have now been restored. The compiler now issues the restored warnings, and warnings related to specific cases (including the default case) are now issued on the line containing the offending case, rather than on the last line of the switch statement. As a result of now issuing those warnings on different lines than in the past, warnings previously suppressed by using `#pragma warning(disable:####)` may no longer be suppressed as intended. To suppress these warnings as intended, it might be necessary to move the `#pragma warning(disable:####)` directive to a line above the first potentially-offending case. The following are the restored warnings.
+   A previous version of the compiler removed previously-existing warnings related to **switch** statements; these warnings have now been restored. The compiler now issues the restored warnings, and warnings related to specific cases (including the default case) are now issued on the line containing the offending case, rather than on the last line of the switch statement. As a result of now issuing those warnings on different lines than in the past, warnings previously suppressed by using `#pragma warning(disable:####)` may no longer be suppressed as intended. To suppress these warnings as intended, it might be necessary to move the `#pragma warning(disable:####)` directive to a line above the first potentially-offending case. The following are the restored warnings.
 
     ```Output
     warning C4060: switch statement contains no 'case' or 'default' labels

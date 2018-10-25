@@ -1,7 +1,7 @@
 ---
 title: "CMFCAutoHideBar Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCAutoHideBar", "AFXAUTOHIDEBAR/CMFCAutoHideBar", "AFXAUTOHIDEBAR/CMFCAutoHideBar::CMFCAutoHideBar", "AFXAUTOHIDEBAR/CMFCAutoHideBar::AddAutoHideWindow", "AFXAUTOHIDEBAR/CMFCAutoHideBar::AllowShowOnPaneMenu", "AFXAUTOHIDEBAR/CMFCAutoHideBar::CalcFixedLayout", "AFXAUTOHIDEBAR/CMFCAutoHideBar::Create", "AFXAUTOHIDEBAR/CMFCAutoHideBar::GetFirstAHWindow", "AFXAUTOHIDEBAR/CMFCAutoHideBar::GetVisibleCount", "AFXAUTOHIDEBAR/CMFCAutoHideBar::OnShowControlBarMenu", "AFXAUTOHIDEBAR/CMFCAutoHideBar::RemoveAutoHideWindow", "AFXAUTOHIDEBAR/CMFCAutoHideBar::SetActiveInGroup", "AFXAUTOHIDEBAR/CMFCAutoHideBar::SetRecentVisibleState", "AFXAUTOHIDEBAR/CMFCAutoHideBar::ShowAutoHideWindow", "AFXAUTOHIDEBAR/CMFCAutoHideBar::StretchPane", "AFXAUTOHIDEBAR/CMFCAutoHideBar::UnSetAutoHideMode", "AFXAUTOHIDEBAR/CMFCAutoHideBar::UpdateVisibleState", "AFXAUTOHIDEBAR/CMFCAutoHideBar::m_nShowAHWndDelay"]
@@ -141,8 +141,9 @@ virtual CSize CalcFixedLayout(
 
 ### Parameters
 
-*bStretch*<br/>
-[in] [in] *bHorz*
+[in] *bStretch*<br/>
+
+[in] *bHorz*<br/>
 
 ### Return Value
 
@@ -239,7 +240,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 
 ### Parameters
 
-[in] *CPoint*
+[in] *CPoint*<br/>
 
 ### Return Value
 

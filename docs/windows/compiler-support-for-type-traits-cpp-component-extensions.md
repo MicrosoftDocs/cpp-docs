@@ -165,7 +165,7 @@ The following list contains the type traits that are supported by the compiler. 
 
    Returns **true** if the type has a trivial, compiler-generated destructor.
 
-    ``` cpp 
+    ``` cpp
     // has_trivial_destructor.cpp
     #include <stdio.h>
     struct S {};
@@ -501,7 +501,7 @@ ref struct is_class {
 ref class R {};
 
 int main () {
-   if (is_class<R>::value)  
+   if (is_class<R>::value)
       Console::WriteLine("R is a ref class");
    else
       Console::WriteLine("R is not a ref class");

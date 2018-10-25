@@ -371,7 +371,6 @@ This function is called when invalid arguments are used.
 [CInvalidArgException Class](cinvalidargexception-class.md)<br/>
 [THROW](#throw)
 
-
 ##  <a name="afxthrowmemoryexception"></a>  AfxThrowMemoryException
 
 Throws a memory exception.

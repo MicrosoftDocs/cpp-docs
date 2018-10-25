@@ -117,7 +117,7 @@ bool operator==(
 
 bool operator==(
    const Details::ComPtrRef<ComPtr<T>>& a,
-   decltype(__nullptr)  
+   decltype(__nullptr)
 );
 
 bool operator==(
@@ -168,7 +168,7 @@ bool operator!=(
 
 bool operator!=(
    const Details::ComPtrRef<ComPtr<T>>& a,
-   decltype(__nullptr)  
+   decltype(__nullptr)
 );
 
 bool operator!=(

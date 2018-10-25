@@ -150,7 +150,6 @@ Constructs a keyframe that depends on a transition.
 ```
 CKeyFrame(CBaseTransition* pTransition);
 
-
 CKeyFrame(
     CBaseKeyFrame* pKeyframe,
     UI_ANIMATION_SECONDS offset = 0.0);

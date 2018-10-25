@@ -257,7 +257,6 @@ CTaskDialog(
     int nTaskDialogOptions = TDF_ENABLE_HYPERLINKS | TDF_USE_COMMAND_LINKS,
     const CString& strFooter = _T(""));
 
-
 CTaskDialog(
     const CString& strContent,
     const CString& strMainInstruction,

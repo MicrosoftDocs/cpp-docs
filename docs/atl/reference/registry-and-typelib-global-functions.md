@@ -38,7 +38,7 @@ These functions control which node in the registry the program uses to store inf
 |||
 |-|-|
 |[AtlGetPerUserRegistration](#atlgetperuserregistration)|Retrieves whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.|
-|[AtlSetPerUserRegistration](#atlsetperuserregistration)|Sets whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.|  
+|[AtlSetPerUserRegistration](#atlsetperuserregistration)|Sets whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.|
 
 ### Requirements
 
@@ -71,7 +71,7 @@ The redirection is not global. Only the MFC and ATL frameworks are affected by t
 
 ### Requirements
 
-**Header:** atlbase.h  
+**Header:** atlbase.h
 
 ## <a name="afxregcreatekey"></a> AfxRegCreateKey
 
@@ -99,11 +99,11 @@ Pointer to a `CAtlTransactionManager` object.
 
 ### Return Value
 
-If the function succeeds, the return value is ERROR_SUCCESS. If the function fails, the return value is a nonzero error code defined in Winerror.h.  
+If the function succeeds, the return value is ERROR_SUCCESS. If the function fails, the return value is a nonzero error code defined in Winerror.h.
 
 ### Requirements
 
-**Header:** afxpriv.h  
+**Header:** afxpriv.h
 
 ## <a name="afxregdeletekey"></a> AfxRegDeleteKey
 
@@ -132,7 +132,7 @@ If the function succeeds, the return value is ERROR_SUCCESS. If the function fai
 
 ### Requirements
 
-**Header:** afxpriv.h  
+**Header:** afxpriv.h
 
 ## <a name="afxregisterpreviewhandler"></a>
 
@@ -157,7 +157,7 @@ Specifies the file extension registered with this handler.
 
 ### Requirements
 
-**Header:** afxdisp.h   
+**Header:** afxdisp.h
 
 ##  <a name="atlregistertypelib"></a>  AtlRegisterTypeLib
 
@@ -217,11 +217,11 @@ If the function succeeds, the return value is ERROR_SUCCESS. If the function fai
 
 ### Requirements
 
-**Header:** afxpriv.h  
+**Header:** afxpriv.h
 
 ## <a name="afxregopenkeyex"></a>  AfxRegOpenKeyEx
 
-Opens the specified registry key. 
+Opens the specified registry key.
 
 ### Syntax
 
@@ -255,7 +255,7 @@ If the function succeeds, the return value is ERROR_SUCCESS. If the function fai
 
 ### Requirements
 
-**Header:** afxpriv.h  
+**Header:** afxpriv.h
 
 ## <a name="afxunregisterpreviewhandler"></a> AfxUnregisterPreviewHandler
 
@@ -274,7 +274,7 @@ Specifies the CLSID of the handler to be unregistered.
 
 ### Requirements
 
-**Header:** afxdisp.h  
+**Header:** afxdisp.h
 
 ## <a name="atlsetperuserregistration"></a> AtlSetPerUserRegistration
 
@@ -299,11 +299,11 @@ S_OK if the method is successful, otherwise the HRESULT error code if an error o
 
 Registry redirection is not enabled by default. If you enable this option, registry access is redirected to **HKEY_CURRENT_USER\Software\Classes**.
 
-The redirection is not global. Only the MFC and ATL frameworks are affected by this registry redirection.  
+The redirection is not global. Only the MFC and ATL frameworks are affected by this registry redirection.
 
 ### Requirements
 
-**Header:** atlbase.h  
+**Header:** atlbase.h
 
 ##  <a name="atlunregistertypelib"></a>  AtlUnRegisterTypeLib
 
@@ -313,7 +313,7 @@ This function is called to unregister a type library.
 
 ```
 ATLAPI AtlUnRegisterTypeLib(
-    HINSTANCE hInstTypeLib, 
+    HINSTANCE hInstTypeLib,
     LPCOLESTR lpszIndex);
 ```
 
@@ -331,7 +331,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This helper function is utilized by [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) and [AtlComModuleUnregisterServer](#atlcommoduleunregisterserver).  
+This helper function is utilized by [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) and [AtlComModuleUnregisterServer](#atlcommoduleunregisterserver).
 
 ### Requirements
 
@@ -383,7 +383,7 @@ This function was deprecated in Visual Studio 2013 and is removed in Visual Stud
 
 ##  <a name="registrydataexchange"></a>  RegistryDataExchange
 
-This function is called to read from, or write to, the system registry.  
+This function is called to read from, or write to, the system registry.
 
 ### Syntax
 

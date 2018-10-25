@@ -319,7 +319,6 @@ BOOL UpdateAccelTable(
     int nSize,
     CFrameWnd* pDefaultFrame = NULL);
 
-
 BOOL UpdateAccelTable(
     CMultiDocTemplate* pTemplate,
     HACCEL hAccelNew,
@@ -358,6 +357,4 @@ Use this function to replace the existing shortcut table with new shortcut keys 
 [CWinAppEx Class](../../mfc/reference/cwinappex-class.md)<br/>
 [CWinAppEx::InitKeyboardManager](../../mfc/reference/cwinappex-class.md#initkeyboardmanager)<br/>
 [Keyboard and Mouse Customization](../../mfc/keyboard-and-mouse-customization.md)
-
-
 

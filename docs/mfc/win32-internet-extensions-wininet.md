@@ -48,5 +48,3 @@ The following topics provide steps for performing typical WinInet tasks:
 [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)<br/>
 [WinInet Basics](../mfc/wininet-basics.md)
 
-
-

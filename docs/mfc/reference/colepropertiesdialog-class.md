@@ -111,15 +111,15 @@ By default, the common OLE Object Properties dialog box has three default pages:
 
 - General
 
-     This page contains system information for the file represented by the selected document item. From this page, the user can convert the selected item to another type.
+   This page contains system information for the file represented by the selected document item. From this page, the user can convert the selected item to another type.
 
 - View
 
-     This page contains options for displaying the item, changing the icon, and changing the scaling of the image.
+   This page contains options for displaying the item, changing the icon, and changing the scaling of the image.
 
 - Link
 
-     This page contains options for changing the location of the linked item and updating the linked item. From this page, the user can break the link of the selected item.
+   This page contains options for changing the location of the linked item and updating the linked item. From this page, the user can break the link of the selected item.
 
 To add pages beyond those provided by default, modify the [m_psh](#m_psh) member variable before exiting the constructor of your `COlePropertiesDialog`-derived class. This is an advanced implementation of the `COlePropertiesDialog` constructor.
 

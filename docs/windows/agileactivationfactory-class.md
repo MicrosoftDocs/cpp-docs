@@ -32,13 +32,13 @@ class AgileActivationFactory :
         cacheFlagValue
     >;
 ```
-  
+
 ## Requirements
 
 **Header:** module.h
-  
+
 **Namespace:** Microsoft::WRL
-  
+
 ## See Also
 
 [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)<br/>

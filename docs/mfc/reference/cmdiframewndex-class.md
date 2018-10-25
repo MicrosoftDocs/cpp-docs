@@ -671,7 +671,6 @@ void EnableWindowsDialog(
     BOOL bShowAllways=FALSE,
     BOOL bShowHelpButton=FALSE);
 
-
 void EnableWindowsDialog(
     UINT uiMenuId,
     UINT uiMenuTextResId,

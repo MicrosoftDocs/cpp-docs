@@ -93,5 +93,3 @@ See the `DoModal` member function in the derived classes for information about s
 [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

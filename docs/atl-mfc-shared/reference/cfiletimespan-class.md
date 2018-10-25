@@ -1,7 +1,7 @@
 ---
 title: "CFileTimeSpan Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CFileTimeSpan", "ATLTIME/ATL::CFileTimeSpan", "ATLTIME/ATL::CFileTimeSpan::CFileTimeSpan", "ATLTIME/ATL::CFileTimeSpan::GetTimeSpan", "ATLTIME/ATL::CFileTimeSpan::SetTimeSpan"]
@@ -77,10 +77,10 @@ CFileTimeSpan(LONGLONG nSpan) throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 An existing `CFileTimeSpan` object.
 
-*nSpan*  
+*nSpan*<br/>
 A period of time in milliseconds.
 
 ### Remarks
@@ -109,7 +109,7 @@ CFileTimeSpan operator-(CFileTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 A `CFileTimeSpan` object.
 
 ### Return Value
@@ -126,7 +126,7 @@ bool operator!=(CFileTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 The `CFileTimeSpan` object to be compared.
 
 ### Return Value
@@ -143,7 +143,7 @@ CFileTimeSpan operator+(CFileTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 A `CFileTimeSpan` object.
 
 ### Return Value
@@ -160,7 +160,7 @@ CFileTimeSpan& operator+=(CFileTimeSpan span) throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 A `CFileTimeSpan` object.
 
 ### Return Value
@@ -177,7 +177,7 @@ bool operator<(CFileTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 The `CFileTimeSpan` object to be compared.
 
 ### Return Value
@@ -194,7 +194,7 @@ bool operator<=(CFileTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 The `CFileTimeSpan` object to be compared.
 
 ### Return Value
@@ -211,7 +211,7 @@ CFileTimeSpan& operator=(const CFileTimeSpan& span) throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 A `CFileTimeSpan` object.
 
 ### Return Value
@@ -228,7 +228,7 @@ CFileTimeSpan& operator-=(CFileTimeSpan span) throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 A `CFileTimeSpan` object.
 
 ### Return Value
@@ -245,7 +245,7 @@ bool operator==(CFileTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 The `CFileTimeSpan` object to be compared.
 
 ### Return Value
@@ -262,7 +262,7 @@ bool operator>(CFileTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 The `CFileTimeSpan` object to be compared.
 
 ### Return Value
@@ -279,7 +279,7 @@ bool operator>=(CFileTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 The `CFileTimeSpan` object to be compared.
 
 ### Return Value
@@ -296,7 +296,7 @@ void SetTimeSpan(LONGLONG nSpan) throw();
 
 ### Parameters
 
-*nSpan*  
+*nSpan*<br/>
 The new value for the time span in milliseconds.
 
 ## See Also
@@ -305,4 +305,3 @@ The new value for the time span in milliseconds.
 [CFileTime Class](../../atl-mfc-shared/reference/cfiletime-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-

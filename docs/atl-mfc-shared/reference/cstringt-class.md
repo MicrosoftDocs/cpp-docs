@@ -1,7 +1,7 @@
 ---
 title: "CStringT Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CStringT", "ATLSTR/ATL::CStringT", "ATLSTR/ATL::CStringT::CStringT", "ATLSTR/ATL::CStringT::AllocSysString", "ATLSTR/ATL::CStringT::AnsiToOem", "ATLSTR/ATL::CStringT::AppendFormat", "ATLSTR/ATL::CStringT::Collate", "ATLSTR/ATL::CStringT::CollateNoCase", "ATLSTR/ATL::CStringT::Compare", "ATLSTR/ATL::CStringT::CompareNoCase", "ATLSTR/ATL::CStringT::Delete", "ATLSTR/ATL::CStringT::Find", "ATLSTR/ATL::CStringT::FindOneOf", "ATLSTR/ATL::CStringT::Format", "ATLSTR/ATL::CStringT::FormatMessage", "ATLSTR/ATL::CStringT::FormatMessageV", "ATLSTR/ATL::CStringT::FormatV", "ATLSTR/ATL::CStringT::GetEnvironmentVariable", "ATLSTR/ATL::CStringT::Insert", "ATLSTR/ATL::CStringT::Left", "ATLSTR/ATL::CStringT::LoadString", "ATLSTR/ATL::CStringT::MakeLower", "ATLSTR/ATL::CStringT::MakeReverse", "ATLSTR/ATL::CStringT::MakeUpper", "ATLSTR/ATL::CStringT::Mid", "ATLSTR/ATL::CStringT::OemToAnsi", "ATLSTR/ATL::CStringT::Remove", "ATLSTR/ATL::CStringT::Replace", "ATLSTR/ATL::CStringT::ReverseFind", "ATLSTR/ATL::CStringT::Right", "ATLSTR/ATL::CStringT::SetSysString", "ATLSTR/ATL::CStringT::SpanExcluding", "ATLSTR/ATL::CStringT::SpanIncluding", "ATLSTR/ATL::CStringT::Tokenize", "ATLSTR/ATL::CStringT::Trim", "ATLSTR/ATL::CStringT::TrimLeft", "ATLSTR/ATL::CStringT::TrimRight", "CSTRINGT/CStringT", "CSTRINGT/CStringT::CStringT", "CSTRINGT/CStringT::AllocSysString", "CSTRINGT/CStringT::AnsiToOem", "CSTRINGT/CStringT::AppendFormat", "CSTRINGT/CStringT::Collate", "CSTRINGT/CStringT::CollateNoCase", "CSTRINGT/CStringT::Compare", "CSTRINGT/CStringT::CompareNoCase", "CSTRINGT/CStringT::Delete", "CSTRINGT/CStringT::Find", "CSTRINGT/CStringT::FindOneOf", "CSTRINGT/CStringT::Format", "CSTRINGT/CStringT::FormatMessage", "CSTRINGT/CStringT::FormatMessageV", "CSTRINGT/CStringT::FormatV", "CSTRINGT/CStringT::GetEnvironmentVariable", "CSTRINGT/CStringT::Insert", "CSTRINGT/CStringT::Left", "CSTRINGT/CStringT::LoadString", "CSTRINGT/CStringT::MakeLower", "CSTRINGT/CStringT::MakeReverse", "CSTRINGT/CStringT::MakeUpper", "CSTRINGT/CStringT::Mid", "CSTRINGT/CStringT::OemToAnsi", "CSTRINGT/CStringT::Remove", "CSTRINGT/CStringT::Replace", "CSTRINGT/CStringT::ReverseFind", "CSTRINGT/CStringT::Right", "CSTRINGT/CStringT::SetSysString", "CSTRINGT/CStringT::SpanExcluding", "CSTRINGT/CStringT::SpanIncluding", "CSTRINGT/CStringT::Tokenize", "CSTRINGT/CStringT::Trim", "CSTRINGT/CStringT::TrimLeft", "CSTRINGT/CStringT::TrimRight"]
@@ -20,8 +20,8 @@ This class represents a `CStringT` object.
 
 ```
 
-template<typename BaseType, class StringTraits>  
-class CStringT :   
+template<typename BaseType, class StringTraits>
+class CStringT :
 public CSimpleStringT<BaseType,
                       _CSTRING_IMPL_::_MFCDLLTraitsCheck<BaseType, StringTraits>
                       ::c_bIsMFCDLLTraits>
@@ -30,7 +30,7 @@ public CSimpleStringT<BaseType,
 
 #### Parameters
 
-*BaseType*  
+*BaseType*<br/>
 The character type of the string class. Can be one of the following:
 
 - **char** (for ANSI character strings).
@@ -39,7 +39,7 @@ The character type of the string class. Can be one of the following:
 
 - TCHAR (for both ANSI and Unicode character strings).
 
-*StringTraits*  
+*StringTraits*<br/>
 Determines if the string class needs C Run-Time (CRT) Library support and where string resources are located. Can be one of the following:
 
 - **StrTraitATL< wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsCRT< wchar_t** &#124; `char` &#124; **TCHAR > >**
@@ -209,7 +209,7 @@ Because `CStringT` uses a template argument to define the character type (either
 Allocates an Automation-compatible string of the type BSTR and copies the contents of the `CStringT` object into it, including the terminating null character.
 
 ```
-BSTR AllocSysString() const;  
+BSTR AllocSysString() const;
 ```
 
 ### Return Value
@@ -222,8 +222,7 @@ In MFC programs, a [CMemoryException Class](../../mfc/reference/cmemoryexception
 
 Commonly, if this string is passed to a COM function as an [in] parameter, then this requires the caller to free the string. This can be done by using [SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring), as described in the Windows SDK. For more information, see [Allocating and Releasing Memory for a BSTR](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md).
 
-For more information about OLE allocation functions in Windows, see [SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring) in the Windows SDK.  
-
+For more information about OLE allocation functions in Windows, see [SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring) in the Windows SDK.
 
 ### Example
 
@@ -258,13 +257,13 @@ void __cdecl AppendFormat(UINT nFormatID, [, argument] ...);
 
 ### Parameters
 
-*pszFormat*  
+*pszFormat*<br/>
 A format-control string.
 
-*nFormatID*  
+*nFormatID*<br/>
 The string resource identifier that contains the format-control string.
 
-*argument*  
+*argument*<br/>
 Optional arguments.
 
 ### Remarks
@@ -285,7 +284,7 @@ int Collate(PCXSTR psz) const throw();
 
 ### Parameters
 
-*psz*  
+*psz*<br/>
 The other string used for comparison.
 
 ### Return Value
@@ -306,7 +305,7 @@ int CollateNoCase(PCXSTR psz) const throw();
 
 ### Parameters
 
-*psz*  
+*psz*<br/>
 The other string used for comparison.
 
 ### Return Value
@@ -326,12 +325,12 @@ The generic-text function `_tcscoll`, which is defined in TCHAR.H, maps to eithe
 Compares two strings (case sensitive).
 
 ```
-int Compare(PCXSTR psz) const; 
+int Compare(PCXSTR psz) const;
 ```
 
 ### Parameters
 
-*psz*  
+*psz*<br/>
 The other string used for comparison.
 
 ### Return Value
@@ -360,7 +359,7 @@ int CompareNoCase(PCXSTR psz) const throw();
 
 ### Parameters
 
-*psz*  
+*psz*<br/>
 The other string used for comparison.
 
 ### Return Value
@@ -380,102 +379,102 @@ The generic-text function `_tcsicmp`, which is defined in TCHAR.H, maps to eithe
 Constructs a `CStringT` object.
 
 ```
-CStringT() throw() :   
+CStringT() throw() :
     CThisSimpleString(StringTraits::GetDefaultManager());
 
-explicit CStringT(IAtlStringMgr* pStringMgr) throw() :   
-    CThisSimpleString( pStringMgr); 
+explicit CStringT(IAtlStringMgr* pStringMgr) throw() :
+    CThisSimpleString( pStringMgr);
 
 CStringT(const VARIANT& varSrc);
 
 CStringT(const VARIANT& varSrc, IAtlStringMgr* pStringMgr);
 
-CStringT(const CStringT& strSrc) :   
+CStringT(const CStringT& strSrc) :
     CThisSimpleString( strSrc);
 
 operator CSimpleStringT<
-                    BaseType, 
+                    BaseType,
                     !_CSTRING_IMPL_::_MFCDLLTraitsCheck<BaseType, StringTraits>
                     :: c_bIsMFCDLLTraits> &()
 
-template <bool bMFCDLL>  
-CStringT(const CSimpleStringT<BaseType, bMFCDLL>& strSrc) :   
+template <bool bMFCDLL>
+CStringT(const CSimpleStringT<BaseType, bMFCDLL>& strSrc) :
     CThisSimpleString( strSrc);
 
-template <class SystemString>  
-CStringT(SystemString^ pString) :   
+template <class SystemString>
+CStringT(SystemString^ pString) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-CStringT(const XCHAR* pszSrc) :   
+CStringT(const XCHAR* pszSrc) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-CSTRING_EXPLICIT CStringT(const YCHAR* pszSrc) :   
+CSTRING_EXPLICIT CStringT(const YCHAR* pszSrc) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-CStringT(LPCSTR pszSrc, IAtlStringMgr* pStringMgr) :   
+CStringT(LPCSTR pszSrc, IAtlStringMgr* pStringMgr) :
     CThisSimpleString( pStringMgr);
 
-CStringT(LPCWSTR pszSrc, IAtlStringMgr* pStringMgr) :   
+CStringT(LPCWSTR pszSrc, IAtlStringMgr* pStringMgr) :
     CThisSimpleString( pStringMgr);
 
-CSTRING_EXPLICIT CStringT(const unsigned char* pszSrc) :   
+CSTRING_EXPLICIT CStringT(const unsigned char* pszSrc) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-/*CSTRING_EXPLICIT*/ CStringT(char* pszSrc) :   
+/*CSTRING_EXPLICIT*/ CStringT(char* pszSrc) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-CSTRING_EXPLICIT CStringT(unsigned char* pszSrc) :   
+CSTRING_EXPLICIT CStringT(unsigned char* pszSrc) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-CSTRING_EXPLICIT CStringT(wchar_t* pszSrc) :   
+CSTRING_EXPLICIT CStringT(wchar_t* pszSrc) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-CStringT(const unsigned char* pszSrc, IAtlStringMgr* pStringMgr) :   
+CStringT(const unsigned char* pszSrc, IAtlStringMgr* pStringMgr) :
     CThisSimpleString( pStringMgr);
 
-CSTRING_EXPLICIT CStringT(char ch, int nLength = 1) :   
+CSTRING_EXPLICIT CStringT(char ch, int nLength = 1) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-CSTRING_EXPLICIT CStringT(wchar_t ch, int nLength = 1) :   
+CSTRING_EXPLICIT CStringT(wchar_t ch, int nLength = 1) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-CStringT(const XCHAR* pch, int nLength) :   
+CStringT(const XCHAR* pch, int nLength) :
     CThisSimpleString( pch, nLength, StringTraits::GetDefaultManager());
 
-CStringT(const YCHAR* pch, int nLength) :   
+CStringT(const YCHAR* pch, int nLength) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-CStringT(const XCHAR* pch, int nLength, AtlStringMgr* pStringMgr) :   
+CStringT(const XCHAR* pch, int nLength, AtlStringMgr* pStringMgr) :
     CThisSimpleString( pch, nLength, pStringMgr);
 
-CStringT(const YCHAR* pch, int nLength, IAtlStringMgr* pStringMgr) :   
+CStringT(const YCHAR* pch, int nLength, IAtlStringMgr* pStringMgr) :
     CThisSimpleString( pStringMgr);
 ```
 
 ### Parameters
 
-*pch*  
+*pch*<br/>
 A pointer to an array of characters of length *nLength*, not null-terminated.
 
-*nLength*  
+*nLength*<br/>
 A count of the number of characters in *pch*.
 
-*ch*  
+*ch*<br/>
 A single character.
 
-*pszSrc*  
+*pszSrc*<br/>
 A null-terminated string to be copied into this `CStringT` object.
 
-*pStringMgr*  
+*pStringMgr*<br/>
 A pointer to the memory manager for the `CStringT` object. For more information on `IAtlStringMgr` and memory management for `CStringT`, see [Memory Management with CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
-*strSrc*  
+*strSrc*<br/>
 An existing `CStringT` object to be copied into this `CStringT` object. For more information on `CThisString` and `CThisSimpleString`, see the Remarks section.
 
-*varSrc*  
+*varSrc*<br/>
 A variant object to be copied into this `CStringT` object.
 
-*BaseType*  
+*BaseType*<br/>
 The character type of the string class. Can be one of the following:
 
 **char** (for ANSI character strings).
@@ -484,13 +483,13 @@ The character type of the string class. Can be one of the following:
 
 TCHAR (for both ANSI and Unicode character strings).
 
-*bMFCDLL*  
+*bMFCDLL*<br/>
 Boolean that specifies whether the project is an MFC DLL (TRUE) or not (FALSE).
 
-*SystemString*  
+*SystemString*<br/>
 Must be `System::String`, and the project must be compiled with /clr.
 
-*pString*  
+*pString*<br/>
 A handle for a `CStringT` object.
 
 ### Remarks
@@ -539,10 +538,10 @@ int Delete(int iIndex, int nCount = 1);
 
 ### Parameters
 
-*iIndex*  
+*iIndex*<br/>
 The zero-based index of the first character in the `CStringT` object to delete.
 
-*nCount*  
+*nCount*<br/>
 The number of characters to be removed.
 
 ### Return Value
@@ -557,11 +556,11 @@ If *nCount* is longer than the string, the rest of the string will be removed.
 
 [!code-cpp[NVC_ATLMFC_Utilities#113](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_8.cpp)]
 
-```Output  
+```Output
 Before: Soccer is best,
-    but hockey is quicker!  
+    but hockey is quicker!
 After: Soccer best,
-    but hockey is quicker!  
+    but hockey is quicker!
 ```
 
 ##  <a name="find"></a>  CStringT::Find
@@ -575,13 +574,13 @@ int Find(XCHAR ch, int iStart=0) const throw();
 
 ### Parameters
 
-*pszSub*  
+*pszSub*<br/>
 A substring to search for.
 
-*iStart*  
+*iStart*<br/>
 The index of the character in the string to begin the search with, or 0 to start from the beginning.
 
-*ch*  
+*ch*<br/>
 A single character to search for.
 
 ### Return Value
@@ -606,7 +605,7 @@ int FindOneOf(PCXSTR pszCharSet) const throw();
 
 ### Parameters
 
-*pszCharSet*  
+*pszCharSet*<br/>
 String containing characters for matching.
 
 ### Return Value
@@ -632,13 +631,13 @@ void __cdecl Format(PCXSTR pszFormat,  [, argument] ...);
 
 ### Parameters
 
-*nFormatID*  
+*nFormatID*<br/>
 The string resource identifier that contains the format-control string.
 
-*pszFormat*  
+*pszFormat*<br/>
 A format-control string.
 
-*argument*  
+*argument*<br/>
 Optional arguments.
 
 ### Remarks
@@ -666,13 +665,13 @@ void __cdecl FormatMessage(PCXSTR pszFormat, [, argument]...);
 
 ### Parameters
 
-*nFormatID*  
+*nFormatID*<br/>
 The string resource identifier that contains the unformatted message text.
 
-*pszFormat*  
+*pszFormat*<br/>
 Points to the format-control string. It will be scanned for inserts and formatted accordingly. The format string is similar to run-time function *printf*-style format strings, except it allows for the parameters to be inserted in an arbitrary order.
 
-*argument*  
+*argument*<br/>
 Optional arguments.
 
 ### Remarks
@@ -698,10 +697,10 @@ void FormatMessageV(PCXSTR pszFormat, va_list* pArgList);
 
 ### Parameters
 
-*pszFormat*  
+*pszFormat*<br/>
 Points to the format-control string. It will be scanned for inserts and formatted accordingly. The format string is similar to run-time function `printf`-style format strings, except it allows for the parameters to be inserted in an arbitrary order.
 
-*pArgList*  
+*pArgList*<br/>
 Pointer to a list of arguments.
 
 ### Remarks
@@ -723,10 +722,10 @@ void FormatV(PCXSTR pszFormat, va_list args);
 
 ### Parameters
 
-*pszFormat*  
+*pszFormat*<br/>
 Points to the format-control string. It will be scanned for inserts and formatted accordingly. The format string is similar to run-time function `printf`-style format strings, except it allows for the parameters to be inserted in an arbitrary order.
 
-*args*  
+*args*<br/>
 Pointer to a list of arguments.
 
 ### Remarks
@@ -749,7 +748,7 @@ BOOL GetEnvironmentVariable(PCXSTR pszVar);
 
 ### Parameters
 
-*pszVar*  
+*pszVar*<br/>
 Pointer to a null-terminated string that specifies the environment variable.
 
 ### Return Value
@@ -775,13 +774,13 @@ int Insert(int iIndex, XCHAR ch);
 
 ### Parameters
 
-*iIndex*  
+*iIndex*<br/>
 The index of the character before which the insertion will take place.
 
-*psz*  
+*psz*<br/>
 A pointer to the substring to be inserted.
 
-*ch*  
+*ch*<br/>
 The character to be inserted.
 
 ### Return Value
@@ -801,12 +800,12 @@ The *iIndex* parameter identifies the first character that will be moved to make
 Extracts the leftmost *nCount* characters from this `CStringT` object and returns a copy of the extracted substring.
 
 ```
-CStringT Left(int nCount) const; 
+CStringT Left(int nCount) const;
 ```
 
 ### Parameters
 
-*nCount*  
+*nCount*<br/>
 The number of characters to extract from this `CStringT` object.
 
 ### Return Value
@@ -835,13 +834,13 @@ BOOL LoadString(UINT nID);
 
 ### Parameters
 
-*hInstance*  
+*hInstance*<br/>
 A handle to the instance of the module.
 
-*nID*  
+*nID*<br/>
 A Windows string resource ID.
 
-*wLanguageID*  
+*wLanguageID*<br/>
 The language of the string resource.
 
 ### Return Value
@@ -912,15 +911,15 @@ Extracts a substring of length *nCount* characters from this `CStringT` object, 
 
 ```
 CStringT Mid(int iFirst, int nCount) const;
-CStringT Mid(int iFirst) const; 
+CStringT Mid(int iFirst) const;
 ```
 
 ### Parameters
 
-*iFirst*  
+*iFirst*<br/>
 The zero-based index of the first character in this `CStringT` object that is to be included in the extracted substring.
 
-*nCount*  
+*nCount*<br/>
 The number of characters to extract from this `CStringT` object. If this parameter is not supplied, then the remainder of the string is extracted.
 
 ### Return Value
@@ -969,22 +968,22 @@ friend CStringT operator+(wchar_t ch1, const CStringT& str2,);
 
 ### Parameters
 
-*ch1*  
+*ch1*<br/>
 An ANSI or Unicode character to concatenate with a string.
 
-*ch2*  
+*ch2*<br/>
 An ANSI or Unicode character to concatenate with a string.
 
-*str1*  
+*str1*<br/>
 A `CStringT` to concatenate with a string or character.
 
-*str2*  
+*str2*<br/>
 A `CStringT` to concatenate with a string or character.
 
-*psz1*  
+*psz1*<br/>
 A pointer to a null-terminated string to concatenate with a string or character.
 
-*psz2*  
+*psz2*<br/>
 A pointer to a string to concatenate with a string or character.
 
 ### Remarks
@@ -1005,10 +1004,10 @@ Concatenates characters to the end of the string.
 ```
 CStringT& operator+=(const CThisSimpleString& str);
 
-template<bool bMFCDLL>  
+template<bool bMFCDLL>
 CStringT& operator+=(const const CSimpleStringT<BaseType, bMFCDLL>& str);
 
-template<int t_nSize>  
+template<int t_nSize>
 CStringT& operator+=(const CStaticString<XCHAR, t_nSize>& strSrc);
 CStringT& operator+=(PCXSTR pszSrc);
 CStringT& operator+=(PCYSTR pszSrc);
@@ -1020,25 +1019,25 @@ CStringT& operator+=(const VARIANT& var);
 
 ### Parameters
 
-str  
+*str*<br/>
 A reference to a `CThisSimpleString` object.
 
-*bMFCDLL*  
+*bMFCDLL*<br/>
 A boolean specifying whether the project is an MFC DLL or not.
 
-*BaseType*  
+*BaseType*<br/>
 The string base type.
 
-*var*  
+*var*<br/>
 A variant object to concatenate to this string.
 
-*ch*  
+*ch*<br/>
 An ANSI or Unicode character to concatenate with a string.
 
-*pszSrc*  
+*pszSrc*<br/>
 A pointer to the original string being concatenated.
 
-*strSrc*  
+*strSrc*<br/>
 A `CStringT` to concatenate to this string.
 
 ### Remarks
@@ -1070,22 +1069,22 @@ friend bool operator==(XCHAR ch1, const CStringT& str2,) throw();
 
 ### Parameters
 
-*ch1*  
+*ch1*<br/>
 An ANSI or Unicode character for comparison.
 
-*ch2*  
+*ch2*<br/>
 An ANSI or Unicode character for comparison.
 
-*str1*  
+*str1*<br/>
 A `CStringT` for comparison.
 
-*str2*  
+*str2*<br/>
 A `CStringT` for comparison.
 
-*psz1*  
+*psz1*<br/>
 A pointer to a null-terminated string for comparison.
 
-*psz2*  
+*psz2*<br/>
 A pointer to a null-terminated string for comparison.
 
 ### Remarks
@@ -1112,22 +1111,22 @@ friend bool operator!=(XCHAR ch1, const CStringT& str2,) throw();
 
 ### Parameters
 
-*ch1*  
+*ch1*<br/>
 An ANSI or Unicode character to concatenate with a string.
 
-*ch2*  
+*ch2*<br/>
 An ANSI or Unicode character to concatenate with a string.
 
-*str1*  
+*str1*<br/>
 A `CStringT` for comparison.
 
-*str2*  
+*str2*<br/>
 A `CStringT` for comparison.
 
-*psz1*  
+*psz1*<br/>
 A pointer to a null-terminated string for comparison.
 
-*psz2*  
+*psz2*<br/>
 A pointer to a null-terminated string for comparison.
 
 ### Remarks
@@ -1150,16 +1149,16 @@ friend bool operator<(PCXSTR psz1, const CStringT& str2) throw();
 
 ### Parameters
 
-*str1*  
+*str1*<br/>
 A `CStringT` for comparison.
 
-*str2*  
+*str2*<br/>
 A `CStringT` for comparison.
 
-*psz1*  
+*psz1*<br/>
 A pointer to a null-terminated string for comparison.
 
-*psz2*  
+*psz2*<br/>
 A pointer to a null-terminated string for comparison.
 
 ### Remarks
@@ -1188,16 +1187,16 @@ friend bool operator>(PCXSTR psz1, const CStringT& str2) throw();
 
 ### Parameters
 
-*str1*  
+*str1*<br/>
 A `CStringT` for comparison.
 
-*str2*  
+*str2*<br/>
 A `CStringT` for comparison.
 
-*psz1*  
+*psz1*<br/>
 A pointer to a null-terminated string for comparison.
 
-*psz2*  
+*psz2*<br/>
 A pointer to a null-terminated string for comparison.
 
 ### Remarks
@@ -1226,16 +1225,16 @@ friend bool operator<=(PCXSTR psz1, const CStringT& str2) throw();
 
 ### Parameters
 
-*str1*  
+*str1*<br/>
 A `CStringT` for comparison.
 
-*str2*  
+*str2*<br/>
 A `CStringT` for comparison.
 
-*psz1*  
+*psz1*<br/>
 A pointer to a null-terminated string for comparison.
 
-*psz2*  
+*psz2*<br/>
 A pointer to a null-terminated string for comparison.
 
 ### Remarks
@@ -1264,16 +1263,16 @@ friend bool operator>=(PCXSTR psz1, const CStringT& str2) throw();
 
 ### Parameters
 
-*str1*  
+*str1*<br/>
 A `CStringT` for comparison.
 
-*str2*  
+*str2*<br/>
 A `CStringT` for comparison.
 
-*psz1*  
+*psz1*<br/>
 A pointer to a string for comparison.
 
-*psz2*  
+*psz2*<br/>
 A pointer to a string for comparison.
 
 ### Remarks
@@ -1300,7 +1299,7 @@ int Remove(XCHAR chRemove);
 
 ### Parameters
 
-*chRemove*  
+*chRemove*<br/>
 The character to be removed from a string.
 
 ### Return Value
@@ -1326,16 +1325,16 @@ int Replace(XCHAR chOld, XCHAR chNew);
 
 ### Parameters
 
-*pszOld*  
+*pszOld*<br/>
 A pointer to a null-terminated string to be replaced by *pszNew*.
 
-*pszNew*  
+*pszNew*<br/>
 A pointer to a null-terminated string that replaces *pszOld*.
 
-*chOld*  
+*chOld*<br/>
 The character to be replaced by *chNew*.
 
-*chNew*  
+*chNew*<br/>
 The character replacing *chOld*.
 
 ### Return Value
@@ -1373,7 +1372,7 @@ int ReverseFind(XCHAR ch) const throw();
 
 ### Parameters
 
-*ch*  
+*ch*<br/>
 The character to search for.
 
 ### Return Value
@@ -1393,12 +1392,12 @@ The function is similar to the run-time function `strrchr`.
 Extracts the last (that is, rightmost) *nCount* characters from this `CStringT` object and returns a copy of the extracted substring.
 
 ```
-CStringT Right(int nCount) const; 
+CStringT Right(int nCount) const;
 ```
 
 ### Parameters
 
-*nCount*  
+*nCount*<br/>
 The number of characters to extract from this `CStringT` object.
 
 ### Return Value
@@ -1420,12 +1419,12 @@ For multibyte character sets (MBCS), *nCount* refers to each 8-bit character; th
 Reallocates the BSTR pointed to by *pbstr* and copies the contents of the `CStringT` object into it, including the NULL character.
 
 ```
-BSTR SetSysString(BSTR* pbstr) const; 
+BSTR SetSysString(BSTR* pbstr) const;
 ```
 
 ### Parameters
 
-*pbstr*  
+*pbstr*<br/>
 A pointer to a character string.
 
 ### Return Value
@@ -1447,12 +1446,12 @@ This function is normally used to change the value of strings passed by referenc
 Extracts characters from the string, starting with the first character, that are not in the set of characters identified by *pszCharSet*.
 
 ```
-CStringT SpanExcluding(PCXSTR pszCharSet) const; 
+CStringT SpanExcluding(PCXSTR pszCharSet) const;
 ```
 
 ### Parameters
 
-*pszCharSet*  
+*pszCharSet*<br/>
 A string interpreted as a set of characters.
 
 ### Return Value
@@ -1472,12 +1471,12 @@ A substring that contains characters in the string that are not in *pszCharSet*,
 Extracts characters from the string, starting with the first character, that are in the set of characters identified by *pszCharSet*.
 
 ```
-CStringT SpanIncluding(PCXSTR pszCharSet) const; 
+CStringT SpanIncluding(PCXSTR pszCharSet) const;
 ```
 
 ### Parameters
 
-*pszCharSet*  
+*pszCharSet*<br/>
 A string interpreted as a set of characters.
 
 ### Return Value
@@ -1497,15 +1496,15 @@ If the first character of the string is not in the character set, then `SpanIncl
 Finds the next token in a target string
 
 ```
-CStringT Tokenize(PCXSTR pszTokens, int& iStart) const; 
+CStringT Tokenize(PCXSTR pszTokens, int& iStart) const;
 ```
 
 ### Parameters
 
-*pszTokens*  
+*pszTokens*<br/>
 A string containing token delimiters. The order of these delimiters is not important.
 
-*iStart*  
+*iStart*<br/>
 The zero-based index to begin the search.
 
 ### Return Value
@@ -1544,10 +1543,10 @@ CStringT& Trim();
 
 ### Parameters
 
-*chTarget*  
+*chTarget*<br/>
 The target character to be trimmed.
 
-*pszTargets*  
+*pszTargets*<br/>
 A pointer to a string containing the target characters to be trimmed. All leading and trailing occurrences of characters in *pszTarget* will be trimmed from the `CStringT` object.
 
 ### Return Value
@@ -1589,10 +1588,10 @@ CStringT& TrimLeft();
 
 ### Parameters
 
-*chTarget*  
+*chTarget*<br/>
 The target character to be trimmed.
 
-*pszTargets*  
+*pszTargets*<br/>
 A pointer to a string containing the target characters to be trimmed. All leading occurrences of characters in *pszTarget* will be trimmed from the `CStringT` object.
 
 ### Return Value
@@ -1625,10 +1624,10 @@ CStringT& TrimRight();
 
 ### Parameters
 
-*chTarget*  
+*chTarget*<br/>
 The target character to be trimmed.
 
-*pszTargets*  
+*pszTargets*<br/>
 A pointer to a string containing the target characters to be trimmed. All trailing occurrences of characters in *pszTarget* will be trimmed from the `CStringT` object.
 
 ### Return Value

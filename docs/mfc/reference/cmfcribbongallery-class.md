@@ -106,11 +106,9 @@ void AddGroup(
     UINT uiImagesPaletteResID,
     int cxPaletteImage);
 
-
 void AddGroup(
     LPCTSTR lpszGroupName,
     CMFCToolBarImages& imagesGroup);
-
 
 void AddGroup(
     LPCTSTR lpszGroupName,
@@ -193,7 +191,6 @@ CMFCRibbonGallery (
     int nLargeImageIndex,
     CMFCToolBarImages& imagesPalette);
 
-
 CMFCRibbonGallery (
     UINT nID,
     LPCTSTR lpszText,
@@ -201,7 +198,6 @@ CMFCRibbonGallery (
     int nLargeImageIndex,
     UINT uiImagesPaletteResID=0,
     int cxPaletteImage=0);
-
 
 CMFCRibbonGallery (
     UINT nID,
@@ -288,21 +284,19 @@ Call this method to enable or disable the Office XP-style side bar at the left s
 
 ##  <a name="getcompactsize"></a>  CMFCRibbonGallery::GetCompactSize
 
-
 ```
 virtual CSize GetCompactSize(CDC* pDC);
 ```
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="getdroppeddown"></a>  CMFCRibbonGallery::GetDroppedDown
-
 
 ```
 virtual CMFCRibbonBaseElement* GetDroppedDown();
@@ -332,7 +326,6 @@ The name of the group located at the specified index. Passing an invalid index w
 ### Remarks
 
 ##  <a name="getgroupoffset"></a>  CMFCRibbonGallery::GetGroupOffset
-
 
 ```
 virtual int GetGroupOffset() const;
@@ -410,21 +403,19 @@ The command ID of the currently selected palette.
 
 ##  <a name="getregularsize"></a>  CMFCRibbonGallery::GetRegularSize
 
-
 ```
 virtual CSize GetRegularSize(CDC* pDC);
 ```
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="getselecteditem"></a>  CMFCRibbonGallery::GetSelectedItem
-
 
 ```
 int GetSelectedItem() const;
@@ -435,7 +426,6 @@ int GetSelectedItem() const;
 ### Remarks
 
 ##  <a name="hasmenu"></a>  CMFCRibbonGallery::HasMenu
-
 
 ```
 virtual BOOL HasMenu() const;
@@ -475,7 +465,6 @@ TRUE if menu resizing has been enabled; otherwise, FALSE.
 
 ##  <a name="ismenuresizevertical"></a>  CMFCRibbonGallery::IsMenuResizeVertical
 
-
 ```
 BOOL IsMenuResizeVertical() const;
 ```
@@ -500,19 +489,17 @@ TRUE if the Office XP-style side bar is drawn at the left side of the popup menu
 
 ##  <a name="onafterchangerect"></a>  CMFCRibbonGallery::OnAfterChangeRect
 
-
 ```
 virtual void OnAfterChangeRect(CDC* pDC);
 ```
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Remarks
 
 ##  <a name="ondraw"></a>  CMFCRibbonGallery::OnDraw
-
 
 ```
 virtual void OnDraw(CDC* pDC);
@@ -520,7 +507,7 @@ virtual void OnDraw(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Remarks
 
@@ -560,19 +547,17 @@ You can override this method in a derived class to customize the appearance of a
 
 ##  <a name="onenable"></a>  CMFCRibbonGallery::OnEnable
 
-
 ```
 virtual void OnEnable(BOOL bEnable);
 ```
 
 ### Parameters
 
-[in] *bEnable*
+[in] *bEnable*<br/>
 
 ### Remarks
 
 ##  <a name="onrtlchanged"></a>  CMFCRibbonGallery::OnRTLChanged
-
 
 ```
 virtual void OnRTLChanged(BOOL bIsRTL);
@@ -580,7 +565,7 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 
 ### Parameters
 
-[in] *bIsRTL*
+[in] *bIsRTL*<br/>
 
 ### Remarks
 
@@ -608,14 +593,13 @@ void RemoveItemToolTips();
 
 ##  <a name="selectitem"></a>  CMFCRibbonGallery::SelectItem
 
-
 ```
 void SelectItem(int nItemIndex);
 ```
 
 ### Parameters
 
-[in] *nItemIndex*
+[in] *nItemIndex*<br/>
 
 ### Remarks
 
@@ -723,7 +707,6 @@ Attaches a palette to a ribbon gallery.
 
 ```
 void SetPalette(CMFCToolBarImages& imagesPalette);
-
 
 void SetPalette(
     UINT uiImagesPaletteResID,

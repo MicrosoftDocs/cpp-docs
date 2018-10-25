@@ -92,19 +92,19 @@ By default, the ActiveX control classes and tools are installed in the following
 
 - **\Common7\Tools**
 
-     Contains the Test Container files (TstCon32.exe, as well as its Help files).
+   Contains the Test Container files (TstCon32.exe, as well as its Help files).
 
 - **\Vc7\atlmfc\include**
 
-     Contains the include files needed to develop ActiveX controls with MFC
+   Contains the include files needed to develop ActiveX controls with MFC
 
 - **\Vc7\atlmfc\src\mfc**
 
-     Contains the source code for specific ActiveX control classes in MFC
+   Contains the source code for specific ActiveX control classes in MFC
 
 - **\Vc7\atlmfc\lib**
 
-     Contains the libraries required to develop ActiveX controls with MFC
+   Contains the libraries required to develop ActiveX controls with MFC
 
 There are also samples for MFC ActiveX controls. For more information about these samples, see [Controls Samples: MFC-Based ActiveX Controls](../visual-cpp-samples.md)
 

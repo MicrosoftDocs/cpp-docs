@@ -1,7 +1,7 @@
 ---
 title: "CFileTime Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CFileTime", "ATLTIME/ATL::CFileTime", "ATLTIME/ATL::CFileTime::CFileTime", "ATLTIME/ATL::CFileTime::GetCurrentTime", "ATLTIME/ATL::CFileTime::GetTime", "ATLTIME/ATL::CFileTime::LocalToUTC", "ATLTIME/ATL::CFileTime::SetTime", "ATLTIME/ATL::CFileTime::UTCToLocal", "ATLTIME/ATL::CFileTime::Day", "ATLTIME/ATL::CFileTime::Hour", "ATLTIME/ATL::CFileTime::Millisecond", "ATLTIME/ATL::CFileTime::Minute", "ATLTIME/ATL::CFileTime::Second", "ATLTIME/ATL::CFileTime::Week"]
@@ -108,10 +108,10 @@ CFileTime(ULONGLONG nTime) throw();
 
 ### Parameters
 
-*ft*  
+*ft*<br/>
 A [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) structure.
 
-*nTime*  
+*nTime*<br/>
 The date and time expressed as a 64-bit value.
 
 ### Remarks
@@ -221,10 +221,10 @@ CFileTimeSpan operator-(CFileTime ft) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 A `CFileTimeSpan` object.
 
-*ft*  
+*ft*<br/>
 A `CFileTime` object.
 
 ### Return Value
@@ -241,7 +241,7 @@ bool operator!=(CFileTime ft) const throw();
 
 ### Parameters
 
-*ft*  
+*ft*<br/>
 The `CFileTime` object to be compared.
 
 ### Return Value
@@ -258,7 +258,7 @@ CFileTime operator+(CFileTimeSpan span) const throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 A `CFileTimeSpan` object.
 
 ### Return Value
@@ -275,7 +275,7 @@ CFileTime& operator+=(CFileTimeSpan span) throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 A `CFileTimeSpan` object.
 
 ### Return Value
@@ -292,7 +292,7 @@ bool operator<(CFileTime ft) const throw();
 
 ### Parameters
 
-*ft*  
+*ft*<br/>
 The `CFileTime` object to be compared.
 
 ### Return Value
@@ -313,7 +313,7 @@ bool operator<=(CFileTime ft) const throw();
 
 ### Parameters
 
-*ft*  
+*ft*<br/>
 The `CFileTime` object to be compared.
 
 ### Return Value
@@ -330,7 +330,7 @@ CFileTime& operator=(const FILETIME& ft) throw();
 
 ### Parameters
 
-*ft*  
+*ft*<br/>
 A `CFileTime` object containing the new time and date.
 
 ### Return Value
@@ -347,7 +347,7 @@ CFileTime& operator-=(CFileTimeSpan span) throw();
 
 ### Parameters
 
-*span*  
+*span*<br/>
 A `CFileTimeSpan` object containing the relative time to subtract.
 
 ### Return Value
@@ -364,7 +364,7 @@ bool operator==(CFileTime ft) const throw();
 
 ### Parameters
 
-*ft*  
+*ft*<br/>
 The `CFileTime` object to compare.
 
 ### Return Value
@@ -381,7 +381,7 @@ bool operator>(CFileTime ft) const throw();
 
 ### Parameters
 
-*ft*  
+*ft*<br/>
 The `CFileTime` object to be compared.
 
 ### Return Value
@@ -398,7 +398,7 @@ bool operator>=(CFileTime ft) const throw();
 
 ### Parameters
 
-*ft*  
+*ft*<br/>
 The `CFileTime` object to be compared.
 
 ### Return Value
@@ -427,7 +427,7 @@ void SetTime(ULONGLONG nTime) throw();
 
 ### Parameters
 
-*nTime*  
+*nTime*<br/>
 The 64-bit value representing the date and time, in either local or Coordinated Universal Time (UTC) format.
 
 ##  <a name="utctolocal"></a>  CFileTime::UTCToLocal
@@ -464,4 +464,3 @@ See the example for [CFileTime::Millisecond](#millisecond).
 [CFileTimeSpan Class](../../atl-mfc-shared/reference/cfiletimespan-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-

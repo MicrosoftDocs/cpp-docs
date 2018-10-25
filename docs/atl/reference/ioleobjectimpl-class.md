@@ -346,7 +346,7 @@ See [IOleObject::GetClientSite](/windows/desktop/api/oleidl/nf-oleidl-ioleobject
 Retrieves data from the Clipboard.
 
 ```
-STDMETHOD(GetClipboardData)(    
+STDMETHOD(GetClipboardData)(
     DWORD /* dwReserved */,
     IDataObject** /* ppDataObject */);
 ```

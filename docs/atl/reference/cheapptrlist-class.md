@@ -23,7 +23,7 @@ This class provides methods useful when constructing a list of heap pointers.
 
 ```
 template<typename E, class Allocator = ATL::CCRTAllocator>
-class CHeapPtrList 
+class CHeapPtrList
    : public CAtlList<ATL::CHeapPtr<E, Allocator>,
                      CHeapPtrElementTraits<E, Allocator>>
 ```

@@ -13,9 +13,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 
-# COM_INTERFACE_ENTRY Macros  
+# COM_INTERFACE_ENTRY Macros
 
-These macros enter an object's interfaces into its COM map so that they can be accessed by `QueryInterface`. The order of entries in the COM map is the order interfaces will be checked for a matching IID during `QueryInterface`.  
+These macros enter an object's interfaces into its COM map so that they can be accessed by `QueryInterface`. The order of entries in the COM map is the order interfaces will be checked for a matching IID during `QueryInterface`.
 
 |||
 |-|-|
@@ -33,7 +33,7 @@ These macros enter an object's interfaces into its COM map so that they can be a
 |[COM_INTERFACE_ENTRY_CHAIN](#com_interface_entry_chain)|Processes the COM map of the base class when the processing reaches this entry in the COM map.|
 |[COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)|A general mechanism for hooking into ATL's `QueryInterface` logic.|
 |[COM_INTERFACE_ENTRY_FUNC_BLIND](#com_interface_entry_func_blind)|Same as [COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func), except that querying for any IID results in a call to *func*.|
-|[COM_INTERFACE_ENTRY_NOINTERFACE](#com_interface_entry_nointerface)|Returns E_NOINTERFACE and terminates COM map processing when the specified interface is queried for.|  
+|[COM_INTERFACE_ENTRY_NOINTERFACE](#com_interface_entry_nointerface)|Returns E_NOINTERFACE and terminates COM map processing when the specified interface is queried for.|
 
 ## Requirements
 
@@ -48,6 +48,7 @@ Enters interfaces into the COM interface map.
 ```
 COM_INTERFACE_ENTRY( x )
 ```
+
 ### Parameters
 
 *x*<br/>
@@ -66,6 +67,7 @@ BEGIN_COM_MAP(CThisExample)
    COM_INTERFACE_ENTRY(ISupportErrorInfo)
 END_COM_MAP()
 ```
+
 ### Requirements
 
 **Header:** atlcom.h
@@ -384,4 +386,3 @@ You can use this macro to prevent an interface from being used in a particular c
 
 The interface IID will be constructed by appending *x* to `IID_`. For example, if *x* is `IPersistStorage`, the IID will be `IID_IPersistStorage`.
 
-  

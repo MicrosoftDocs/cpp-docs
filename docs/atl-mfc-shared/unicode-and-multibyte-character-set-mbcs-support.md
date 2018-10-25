@@ -89,4 +89,4 @@ Similarly, `CString` methods are implemented by using generic data type mappings
 ## See Also
 
 [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
-[String Manipulation](../c-runtime-library/string-manipulation-crt.md)  
+[String Manipulation](../c-runtime-library/string-manipulation-crt.md)

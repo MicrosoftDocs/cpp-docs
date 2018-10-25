@@ -21,7 +21,7 @@ The following parse tree illustrates a simple script that adds a single key to t
 
 ```
 HKEY_CURRENT_USER
-{  
+{
     'MyVeryOwnKey' = s 'HowGoesIt'
 }
 ```
@@ -30,14 +30,14 @@ This script can easily be extended to define multiple subkeys as follows:
 
 ```
 HKCU
-{  
-    'MyVeryOwnKey' = s 'HowGoesIt'  
-    {  
-        'HasASubkey'  
-        {  
-            'PrettyCool' = d '55'  
-            val 'ANameValue' = s 'WithANamedValue'  
-        }  
+{
+    'MyVeryOwnKey' = s 'HowGoesIt'
+    {
+        'HasASubkey'
+        {
+            'PrettyCool' = d '55'
+            val 'ANameValue' = s 'WithANamedValue'
+        }
     }
 }
 ```
@@ -50,21 +50,21 @@ The following script registers the Registrar COM server itself.
 
 ```
 HKCR
-{  
-    ATL.Registrar = s 'ATL Registrar Class'  
-    {  
-        CLSID = s '{44EC053A-400F-11D0-9DCD-00A0C90391D3}'  
-    }  
-    NoRemove CLSID  
-    {  
-        ForceRemove {44EC053A-400F-11D0-9DCD-00A0C90391D3} = s 'ATL Registrar Class'  
-        {  
-            ProgID = s 'ATL.Registrar'  
-            InprocServer32 = s '%MODULE%'  
-            {  
-                val ThreadingModel = s 'Apartment'  
-            }  
-        }  
+{
+    ATL.Registrar = s 'ATL Registrar Class'
+    {
+        CLSID = s '{44EC053A-400F-11D0-9DCD-00A0C90391D3}'
+    }
+    NoRemove CLSID
+    {
+        ForceRemove {44EC053A-400F-11D0-9DCD-00A0C90391D3} = s 'ATL Registrar Class'
+        {
+            ProgID = s 'ATL.Registrar'
+            InprocServer32 = s '%MODULE%'
+            {
+                val ThreadingModel = s 'Apartment'
+            }
+        }
     }
 }
 ```
@@ -95,11 +95,11 @@ To specify more than one parse tree in a script, simply place one tree at the en
 
 ```
 HKCR
-{  
+{
     'MyVeryOwnKey' = s 'HowGoesIt'
 }
 HKEY_CURRENT_USER
-{  
+{
     'MyVeryOwnKey' = s 'HowGoesIt'
 }
 ```

@@ -41,7 +41,7 @@ This attribute requires that the [coclass](coclass.md), [progid](progid.md), or 
 If this attribute is used within a project that uses ATL, the behavior of the attribute changes. First, the following entry is added to the COM map of the target object:
 
 ```
-COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(_m_spAttrXXX, clsid)  
+COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(_m_spAttrXXX, clsid)
 ```
 
 Second, the [DECLARE_GET_CONTROLLING_UNKNOWN](../../atl/reference/aggregation-and-class-factory-macros.md#declare_get_controlling_unknown) macro is also added.
@@ -93,4 +93,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
 [Aggregation](/windows/desktop/com/aggregation)<br/>
 [Aggregatable](/windows/desktop/Midl/aggregatable)<br/>
-[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../../atl/reference/com-interface-entry-macros.md#com_interface_entry_autoaggregate_blind)  
+[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../../atl/reference/com-interface-entry-macros.md#com_interface_entry_autoaggregate_blind)

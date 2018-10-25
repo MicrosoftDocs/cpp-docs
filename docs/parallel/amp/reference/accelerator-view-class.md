@@ -141,6 +141,7 @@ Returns the accelerator object for the accelerator_view object.
 ```
 accelerator get_accelerator() const;
 ```
+
 ### Return Value
 
 The accelerator object for the accelerator_view object.

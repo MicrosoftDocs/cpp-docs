@@ -25,7 +25,7 @@ The server code that the application wizard provides falls into several categori
 
    - The menu and toolbar resources used when the server is active in place.
 
-     For more information on these resources, see [Menus and Resources: Server Additions](../mfc/menus-and-resources-server-additions.md).
+   For more information on these resources, see [Menus and Resources: Server Additions](../mfc/menus-and-resources-server-additions.md).
 
 - Defining an item class derived from `COleServerItem`. For further details on server items, see [Servers: Server Items](../mfc/servers-server-items.md).
 

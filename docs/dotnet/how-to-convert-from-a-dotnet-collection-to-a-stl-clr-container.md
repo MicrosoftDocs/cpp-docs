@@ -19,7 +19,7 @@ This topic shows how to convert .NET collections to their equivalent STL/CLR con
 
 1. To convert an entire collection, create a STL/CLR container and pass the collection to the constructor.
 
-     The first example demonstrates this procedure.
+   The first example demonstrates this procedure.
 
 -OR-
 
@@ -27,7 +27,7 @@ This topic shows how to convert .NET collections to their equivalent STL/CLR con
 
 1. Copy the contents of the .NET collection to the container. This can be done by using a STL/CLR [algorithm](../dotnet/algorithm-stl-clr.md), or by iterating over the .NET collection and inserting a copy of each element into the STL/CLR container.
 
-     The second example demonstrates this procedure.
+   The second example demonstrates this procedure.
 
 ## Example
 

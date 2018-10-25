@@ -26,8 +26,8 @@ The following fragment places the bytes 0x4A, 0x43, and 0x4B into the code:
 .
 .
 __asm {
-     randasm
-     }
+    randasm
+    }
 ```
 
 > [!CAUTION]

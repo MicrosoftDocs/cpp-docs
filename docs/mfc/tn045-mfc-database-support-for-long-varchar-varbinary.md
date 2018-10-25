@@ -52,7 +52,6 @@ void AFXAPI RFX_Text(CFieldExchange* pFX,
     int nColumnType =
     SQL_VARCHAR);
 
-
 void AFXAPI RFX_Binary(CFieldExchange* pFX,
     const char *szName,
     CByteArray& value,

@@ -122,7 +122,6 @@ Constructs an animation object.
 ```
 CAnimationBaseObject();
 
-
 CAnimationBaseObject(
     UINT32 nGroupID,
     UINT32 nObjectID = (UINT32)-1,

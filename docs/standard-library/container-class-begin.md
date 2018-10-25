@@ -24,7 +24,6 @@ Returns an iterator that points at the first element of the sequence (or just be
 
     const_iterator begin() const;
 
-
 iterator begin();
 ```
 

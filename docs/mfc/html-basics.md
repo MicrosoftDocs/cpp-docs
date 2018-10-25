@@ -37,9 +37,9 @@ The steps below use HTML tags to build a simple Web page. In these steps, you'll
 
 1. Switch to your browser, and from the **File** menu, choose **Open**, or type *file://C:/webpages/first.htm* in the browser's URL edit box. You should see a blank page with the window caption "Top HTML Tags."
 
-     Notice the tags are paired and are included in angle brackets. Tags are not case-sensitive, but capitalization is often used to make tags stand out.
+   Notice the tags are paired and are included in angle brackets. Tags are not case-sensitive, but capitalization is often used to make tags stand out.
 
-     The tag \<HTML> starts the document, and the tag \</HTML> ends it. Ending tags (not always required) are the same as the starting tag, but have a forward slash (/) in front of the tag. There should be no spaces between the angle bracket (<) and the start of your tag.
+   The tag \<HTML> starts the document, and the tag \</HTML> ends it. Ending tags (not always required) are the same as the starting tag, but have a forward slash (/) in front of the tag. There should be no spaces between the angle bracket (<) and the start of your tag.
 
 1. Switch back to Notepad, and after the \</HEAD> line, type:
 
@@ -54,9 +54,9 @@ The steps below use HTML tags to build a simple Web page. In these steps, you'll
 
 1. Switch back to your browser and refresh the page.
 
-     The words will appear in the client area of your browser's window. Notice that your carriage return is ignored. If you want to have a line break, you must include a `<BR>` tag after the first line.
+   The words will appear in the client area of your browser's window. Notice that your carriage return is ignored. If you want to have a line break, you must include a `<BR>` tag after the first line.
 
-     For all the steps that follow, insert the text anywhere between \<BODY> and \</BODY> to add to the body of your document.
+   For all the steps that follow, insert the text anywhere between \<BODY> and \</BODY> to add to the body of your document.
 
 9. Add a header:
 

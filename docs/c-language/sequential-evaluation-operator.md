@@ -17,10 +17,9 @@ The sequential-evaluation operator, also called the "comma operator," evaluates 
 
 ## Syntax
 
-*expression*:
-*assignment-expression*
-
-*expression*  **,**  *assignment-expression*
+*expression*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*assignment-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*expression* **,** *assignment-expression*
 
 The left operand of the sequential-evaluation operator is evaluated as a `void` expression. The result of the operation has the same value and type as the right operand. Each operand can be of any type. The sequential-evaluation operator does not perform type conversions between its operands, and it does not yield an l-value. There is a sequence point after the first operand, which means all side effects from the evaluation of the left operand are completed before beginning evaluation of the right operand. See [Sequence Points](../c-language/c-sequence-points.md) for more information.
 

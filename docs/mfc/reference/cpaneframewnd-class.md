@@ -175,7 +175,6 @@ virtual void AdjustLayout();
 
 ##  <a name="adjustpaneframes"></a>  CPaneFrameWnd::AdjustPaneFrames
 
-
 ```
 virtual void AdjustPaneFrames();
 ```
@@ -264,7 +263,6 @@ Nonzero if the mini-frame can be docked to *pDockingBar*; otherwise 0.
 
 ##  <a name="checkgrippervisibility"></a>  CPaneFrameWnd::CheckGripperVisibility
 
-
 ```
 virtual void CheckGripperVisibility();
 ```
@@ -303,11 +301,11 @@ virtual BOOL Create(
 *rect*<br/>
 [in] Specifies the initial size and position of the miniframe window.
 
-[in] [out] *pParentWnd*
-Specifies the parent frame of the miniframe window. This value must not be NULL.
+*pParentWnd*<br/>
+[in, out] Specifies the parent frame of the miniframe window. This value must not be NULL.
 
-[in] [out] *pContext*
-Specifies user-defined context.
+*pContext*<br/>
+[in, out] Specifies user-defined context.
 
 ### Return Value
 
@@ -345,11 +343,11 @@ virtual BOOL CreateEx(
 *rect*<br/>
 [in] Specifies the initial size and position of the miniframe window.
 
-[in] [out] *pParentWnd*
-Specifies the parent frame of the miniframe window. This value must not be NULL.
+*pParentWnd*<br/>
+[in, out] Specifies the parent frame of the miniframe window. This value must not be NULL.
 
-[in] [out] *pContext*
-Specifies user-defined context.
+*pContext*<br/>
+[in, out] Specifies user-defined context.
 
 ### Return Value
 
@@ -474,7 +472,6 @@ This method is called by the framework when it displays the caption text.
 
 ##  <a name="getdockingmanager"></a>  CPaneFrameWnd::GetDockingManager
 
-
 ```
 CDockingManager* GetDockingManager() const;
 ```
@@ -515,7 +512,6 @@ The first pane in the mini-frame window, or NULL if the mini-frame window contai
 
 ##  <a name="gethotpoint"></a>  CPaneFrameWnd::GetHotPoint
 
-
 ```
 CPoint GetHotPoint() const;
 ```
@@ -554,7 +550,6 @@ The number of panes in the mini-frame window. This value can be zero.
 
 ##  <a name="getparent"></a>  CPaneFrameWnd::GetParent
 
-
 ```
 CWnd* GetParent();
 ```
@@ -565,7 +560,6 @@ CWnd* GetParent();
 
 ##  <a name="getpinstate"></a>  CPaneFrameWnd::GetPinState
 
-
 ```
 BOOL GetPinState() const;
 ```
@@ -575,7 +569,6 @@ BOOL GetPinState() const;
 ### Remarks
 
 ##  <a name="getrecentfloatingrect"></a>  CPaneFrameWnd::GetRecentFloatingRect
-
 
 ```
 CRect GetRecentFloatingRect() const;
@@ -637,7 +630,6 @@ One of the following values:
 
 ##  <a name="iscaptured"></a>  CPaneFrameWnd::IsCaptured
 
-
 ```
 BOOL IsCaptured() const;
 ```
@@ -647,7 +639,6 @@ BOOL IsCaptured() const;
 ### Remarks
 
 ##  <a name="isdelayshow"></a>  CPaneFrameWnd::IsDelayShow
-
 
 ```
 BOOL IsDelayShow() const;
@@ -858,14 +849,13 @@ Called by the framework when a pane in the mini-frame window is shown or hidden.
 
 ##  <a name="pin"></a>  CPaneFrameWnd::Pin
 
-
 ```
 void Pin(BOOL bPin = TRUE);
 ```
 
 ### Parameters
 
-[in] *bPin*
+[in] *bPin*<br/>
 
 ### Remarks
 
@@ -1008,19 +998,17 @@ virtual void SetCaptionButtons(DWORD dwButtons);
 
 ##  <a name="setdelayshow"></a>  CPaneFrameWnd::SetDelayShow
 
-
 ```
 void SetDelayShow(BOOL bDelayShow);
 ```
 
 ### Parameters
 
-[in] *bDelayShow*
+[in] *bDelayShow*<br/>
 
 ### Remarks
 
 ##  <a name="setdockingmanager"></a>  CPaneFrameWnd::SetDockingManager
-
 
 ```
 void SetDockingManager(CDockingManager* pManager);
@@ -1028,7 +1016,7 @@ void SetDockingManager(CDockingManager* pManager);
 
 ### Parameters
 
-[in] *pManager*
+[in] *pManager*<br/>
 
 ### Remarks
 
@@ -1060,14 +1048,13 @@ virtual void SetDockState(CDockingManager* pDockManager);
 
 ##  <a name="sethotpoint"></a>  CPaneFrameWnd::SetHotPoint
 
-
 ```
 void SetHotPoint(CPoint& ptNew);
 ```
 
 ### Parameters
 
-[in] *ptNew*
+[in] *ptNew*<br/>
 
 ### Remarks
 
@@ -1134,19 +1121,17 @@ TRUE if the method was successful; otherwise, FALSE.
 
 ##  <a name="storerecentdocksiteinfo"></a>  CPaneFrameWnd::StoreRecentDockSiteInfo
 
-
 ```
 virtual void StoreRecentDockSiteInfo(CPane* pBar);
 ```
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Remarks
 
 ##  <a name="storerecenttabrelatedinfo"></a>  CPaneFrameWnd::StoreRecentTabRelatedInfo
-
 
 ```
 virtual void StoreRecentTabRelatedInfo(
@@ -1156,8 +1141,8 @@ virtual void StoreRecentTabRelatedInfo(
 
 ### Parameters
 
-*pDockingBar*<br/>
-[in] [in] *pTabbedBar*
+[in] *pDockingBar*<br/>
+[in] *pTabbedBar*<br/>
 
 ### Remarks
 

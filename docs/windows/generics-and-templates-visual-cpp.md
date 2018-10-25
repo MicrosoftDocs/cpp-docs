@@ -77,7 +77,7 @@ public:
    MyRef(T t) {
       ig = gcnew MyGeneric<T>(t);
       ig->F();
-    } 
+    }
 };
 
 int main() {

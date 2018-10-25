@@ -43,15 +43,15 @@ The functionality of `CComModule` was distributed into several new classes for t
 
 - Make the functionality in `CComModule` granular.
 
-     Support for COM, windowing, interface debugging, and application-specific (DLL or EXE) features is now in separate classes.
+   Support for COM, windowing, interface debugging, and application-specific (DLL or EXE) features is now in separate classes.
 
 - Automatically declare global instance of each of these modules.
 
-     A global instance of the required module classes is linked into the project.
+   A global instance of the required module classes is linked into the project.
 
 - Remove the necessity of calling Init and Term methods.
 
-     Init and Term methods have moved into the constructors and destructors for the module classes; there is no longer a need to call Init and Term.
+   Init and Term methods have moved into the constructors and destructors for the module classes; there is no longer a need to call Init and Term.
 
 ## See Also
 

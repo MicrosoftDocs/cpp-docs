@@ -84,7 +84,6 @@ When this operation completes, a handle that represents the event. Use this toke
 
 S_OK if successful; otherwise, an HRESULT that indicates the error.
 
-
 ## See Also
 
 [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

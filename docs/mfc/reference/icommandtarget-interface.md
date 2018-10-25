@@ -66,5 +66,3 @@ This method initializes the command target object and associates it with the spe
 [How to: Add Command Routing to the Windows Forms Control](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
 [ICommandSource Interface](../../mfc/reference/icommandsource-interface.md)
 
-
-

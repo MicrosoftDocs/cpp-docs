@@ -49,7 +49,7 @@ A [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) val
 ## <a name="value-constant"></a>RuntimeClassFlags::value Constant
 
 A field that contains a [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) value.
-  
+
 ```cpp
 static const unsigned int value = flags;
 ```

@@ -75,12 +75,12 @@ For an introduction to the access control model in Windows, see [Access Control]
 Adds an allowed ACE (access-control entry) to the `CDacl` object.
 
 ```
-bool AddAllowedAce(  
+bool AddAllowedAce(
     const CSid& rSid,
     ACCESS_MASK AccessMask,
     BYTE AceFlags = 0) throw(...);
 
-bool AddAllowedAce(  
+bool AddAllowedAce(
     const CSid& rSid,
     ACCESS_MASK AccessMask,
     BYTE AceFlags,
@@ -120,7 +120,7 @@ See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) for a descript
 Adds a denied ACE (access-control entry) to the `CDacl` object.
 
 ```
-bool AddDeniedAce(  
+bool AddDeniedAce(
     const CSid& rSid,
     ACCESS_MASK AccessMask,
     BYTE AceFlags = 0) throw(...);

@@ -463,7 +463,6 @@ void SetRange(
     short nLower,
     short nUpper);
 
-
 void SetRange32(
     int nLower,
     int nUpper);
@@ -571,5 +570,4 @@ The step increment is set by the `CProgressCtrl::SetStep` member function.
 [MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
 

@@ -60,7 +60,7 @@ This sample calls **db_source** on a class to create a connection to the data so
 
 [
   db_source(L"my_connection_string", name="ds"),
-  db_command(L"select * from Products")  
+  db_command(L"select * from Products")
 ]
 class CMyCommand {};
 ```
@@ -80,4 +80,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 
 ## See Also
 
-[OLE DB Consumer Attributes](ole-db-consumer-attributes.md)  
+[OLE DB Consumer Attributes](ole-db-consumer-attributes.md)

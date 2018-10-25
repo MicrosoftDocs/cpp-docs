@@ -31,6 +31,7 @@ Enumeration type use to denote filter modes supported for texture sampling.
 ```
 enum filter_mode;
 ```
+
 ## Requirements
 
 **Header:** amp_graphics.h

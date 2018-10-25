@@ -1,7 +1,7 @@
 ---
 title: "TN041: MFC-OLE1 Migration to MFC-OLE 2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "06/28/2018"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.ole"]
@@ -283,7 +283,7 @@ At this point, OCLIENT is a functional OLE container application. It is possible
 
 One of the most interesting features of OLE is in-place activation (or "Visual Editing"). This feature allows the server application to take over portions of the container's user interface to provided a more seamless editing interface for the user. To implement in-place activation to OCLIENT, some special resources need to be added, as well as some additional code. These resources and the code are normally provided by AppWizard — in fact, much of the code here was borrowed directly from a fresh AppWizard application with "Container" support.
 
-First of all, it is necessary to add a menu resource to be used when there is an item which is in-place active. You can create this extra menu resource in Visual C++ by copying the IDR_OCLITYPE resource and removing all but the File and Window pop-ups. Two separator bars are inserted between the File and Window pop-ups to indicate the separation of groups (it should look like: File &#124; &#124; Window). For more information on what these separators mean and how the server and container menus are merged see "Menus and Resources: Menu Merging" in *OLE 2 Classes*.
+First of all, it is necessary to add a menu resource to be used when there is an item which is in-place active. You can create this extra menu resource in Visual C++ by copying the IDR_OCLITYPE resource and removing all but the File and Window pop-ups. Two separator bars are inserted between the File and Window pop-ups to indicate the separation of groups (it should look like: File &#124;&#124; Window). For more information on what these separators mean and how the server and container menus are merged see [Menus and Resources: Menu Merging](../mfc/menus-and-resources-menu-merging.md).
 
 Once you have these menus created, you need to let the framework know about them. This is done by calling `CDocTemplate::SetContainerInfo` for the document template before you add it to the document template list in your InitInstance. The new code to register the document template looks like this:
 
@@ -600,7 +600,7 @@ There are many more errors in svritem.cpp that have not been addressed. They are
 \hiersvr\svrview.cpp(325) : error C2660: 'CopyToClipboard' : function does not take 2 parameters
 ```
 
-`COleServerItem::CopyToClipboard` no longer supports the 'bIncludeNative' flag. The native data (the data written out by the server item's Serialize function) is always copied, so you remove the first parameter. In addition, `CopyToClipboard` will throw an exception when an error happens instead of returning FALSE. Change the code for CServerView::OnEditCopy as follows:
+`COleServerItem::CopyToClipboard` no longer supports the `bIncludeNative` flag. The native data (the data written out by the server item's Serialize function) is always copied, so you remove the first parameter. In addition, `CopyToClipboard` will throw an exception when an error happens instead of returning FALSE. Change the code for CServerView::OnEditCopy as follows:
 
 ```cpp
 void CServerView::OnEditCopy()
@@ -636,7 +636,7 @@ To add "Visual Editing" (or in-place activation) to this server application, the
 
 - You need to tell the framework about these special resources and classes.
 
-The menu resource is easy to create. Run Visual C++, copy the menu resource IDR_HIERSVRTYPE to a menu resource called IDR_HIERSVRTYPE_SRVR_IP. Modify the menu so that only the Edit and Help menu popups are left. Add two separators to the menu in between the Edit and Help menus (it should look like: Edit &#124; &#124; Help). For more information on what these separators mean and how the server and container menus are merged, see "Menus and Resources: Menu Merging" in *OLE 2 Classes*.
+The menu resource is easy to create. Run Visual C++, copy the menu resource IDR_HIERSVRTYPE to a menu resource called IDR_HIERSVRTYPE_SRVR_IP. Modify the menu so that only the Edit and Help menu popups are left. Add two separators to the menu in between the Edit and Help menus (it should look like: Edit &#124;&#124; Help). For more information on what these separators mean and how the server and container menus are merged, see [Menus and Resources: Menu Merging](../mfc/menus-and-resources-menu-merging.md).
 
 The bitmap for the subset toolbar can be easily created by copying the one from a fresh AppWizard generated application with a "Server" option checked. This bitmap can then be imported into Visual C++. Be sure to give the bitmap an ID of IDR_HIERSVRTYPE_SRVR_IP.
 
@@ -659,7 +659,7 @@ pMenu->TrackPopupMenu(TPM_CENTERALIGN | TPM_RIGHTBUTTON,
     AfxGetApp()->m_pMainWnd);
 ```
 
-Notice the reference to *`AfxGetApp()->m_pMainWnd*`. When the server is in-place activated, it has a main window and m_pMainWnd is set, but it is usually invisible. Furthermore, this window refers to the *main* window of the application, the MDI frame window that appears when the server is fully open or run stand-alone. It does not refer to the active frame window — which when in-place activated is a frame window derived from `COleIPFrameWnd`. To get the correct active window even when in-place editing, this version of MFC adds a new function, `AfxGetMainWnd`. Generally, you should use this function instead of *`AfxGetApp()->m_pMainWnd*`. This code needs to change as follows:
+Notice the reference to `AfxGetApp()->m_pMainWnd`. When the server is in-place activated, it has a main window and m_pMainWnd is set, but it is usually invisible. Furthermore, this window refers to the *main* window of the application, the MDI frame window that appears when the server is fully open or run stand-alone. It does not refer to the active frame window — which when in-place activated is a frame window derived from `COleIPFrameWnd`. To get the correct active window even when in-place editing, this version of MFC adds a new function, `AfxGetMainWnd`. Generally, you should use this function instead of `AfxGetApp()->m_pMainWnd`. This code needs to change as follows:
 
 ```cpp
 pMenu->TrackPopupMenu(TPM_CENTERALIGN | TPM_RIGHTBUTTON,

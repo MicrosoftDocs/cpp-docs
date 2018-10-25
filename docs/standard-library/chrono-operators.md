@@ -32,7 +32,6 @@ constexpr time_point<Clock, typename common_type<Duration1, duration<Rep2, Perio
        const time_point<Clock, Duration1>& Time,
        const duration<Rep2, Period2>& Dur);
 
-
 template <class Clock, class Duration1, class Duration2>
 constexpr typename common_type<Duration1, Duration2>::type
    operator-(
@@ -72,7 +71,6 @@ constexpr bool operator!=(
     const duration<Rep1, Period1>& Left,
     const duration<Rep2, Period2>& Right);
 
-
 template <class Clock, class Duration1, class Duration2>
 constexpr bool operator!=(
     const time_point<Clock, Duration1>& Left,
@@ -101,7 +99,6 @@ constexpr duration<typename common_type<Rep1, Rep2>::type, Period1>
    operator*(
       const duration<Rep1, Period1>& Dur,
       const Rep2& Mult);
-
 
 template <class Rep1, class Rep2, class Period2>
 constexpr duration<typename common_type<Rep1, Rep2>::type, Period2>
@@ -137,7 +134,6 @@ constexpr duration<typename common_type<Rep1, Rep2>::type, Period1>
    operator/(
      const duration<Rep1, Period1>& Dur,
      const Rep2& Div);
-
 
 template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr typename common_type<Rep1, Rep2>::type
@@ -179,13 +175,11 @@ constexpr typename common_type<duration<Rep1, Period1>, duration<Rep2, Period2>>
       const duration<Rep1, Period1>& Left,
       const duration<Rep2, Period2>& Right);
 
-
 template <class Clock, class Duration1, class Rep2, class Period2>
 constexpr time_point<Clock, typename common_type<Duration1, duration<Rep2, Period2>>::type>
    operator+(
       const time_point<Clock, Duration1>& Time,
       const duration<Rep2, Period2>& Dur);
-
 
 template <class Rep1, class Period1, class Clock, class Duration2>
 time_point<Clock, constexpr typename common_type<duration<Rep1, Period1>, Duration2>::type>
@@ -223,7 +217,6 @@ template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr bool operator<(
     const duration<Rep1, Period1>& Left,
     const duration<Rep2, Period2>& Right);
-
 
 template <class Clock, class Duration1, class Duration2>
 constexpr bool operator<(

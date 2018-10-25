@@ -32,7 +32,7 @@ int main() {
    array<int>^ arr = gcnew array<int>(SIZE);
 
    // initialize the array
-   for (int i = 0 ; i < SIZE ; i++)  
+   for (int i = 0 ; i < SIZE ; i++)
       arr[i] = i + 1;
 
    // create an interior pointer into the array

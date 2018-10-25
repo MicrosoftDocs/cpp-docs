@@ -1340,7 +1340,6 @@ Sets the tab-stop positions in a list box.
 void SetTabStops();
 BOOL SetTabStops(const int& cxEachStop);
 
-
 BOOL SetTabStops(
     int nTabStops,
     LPINT rgTabStops);

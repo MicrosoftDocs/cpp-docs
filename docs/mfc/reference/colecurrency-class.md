@@ -87,7 +87,6 @@ COleCurrency(CURRENCY cySrc);
   COleCurrency(const COleCurrency& curSrc);
 COleCurrency(const VARIANT& varSrc);
 
-
 COleCurrency(
     long nUnits,
     long nFractionalUnits);

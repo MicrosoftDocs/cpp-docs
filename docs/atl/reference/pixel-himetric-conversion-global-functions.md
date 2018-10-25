@@ -29,7 +29,7 @@ Converts an object's size in HIMETRIC units (each unit is 0.01 millimeter) to a 
 
 ```
 extern void AtlHiMetricToPixel(
-    const SIZEL* lpSizeInHiMetric, 
+    const SIZEL* lpSizeInHiMetric,
     LPSIZEL lpSizeInPix);
 ```
 
@@ -43,7 +43,7 @@ extern void AtlHiMetricToPixel(
 
 ### Example
 
-[!code-cpp[NVC_ATL_COM#49](../../atl/codesnippet/cpp/pixel-himetric-conversion-global-functions_1.cpp)]  
+[!code-cpp[NVC_ATL_COM#49](../../atl/codesnippet/cpp/pixel-himetric-conversion-global-functions_1.cpp)]
 
 ### Requirements
 
@@ -55,7 +55,7 @@ Converts an object's size in pixels on the screen device to a size in HIMETRIC u
 
 ```
 extern void AtlPixelToHiMetric(
-    const SIZEL* lpSizeInPix, 
+    const SIZEL* lpSizeInPix,
     LPSIZEL lpSizeInHiMetric);
 ```
 
@@ -69,11 +69,11 @@ extern void AtlPixelToHiMetric(
 
 ### Example
 
-[!code-cpp[NVC_ATL_COM#51](../../atl/codesnippet/cpp/pixel-himetric-conversion-global-functions_2.cpp)]  
+[!code-cpp[NVC_ATL_COM#51](../../atl/codesnippet/cpp/pixel-himetric-conversion-global-functions_2.cpp)]
 
 ### Requirements
 
-**Header:** atlwin.h  
+**Header:** atlwin.h
 
 ## See Also
 

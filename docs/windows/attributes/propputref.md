@@ -48,4 +48,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 [IDL Attributes](idl-attributes.md)<br/>
 [Method Attributes](method-attributes.md)<br/>
 [propget](propget.md)<br/>
-[propput](propput.md)  
+[propput](propput.md)

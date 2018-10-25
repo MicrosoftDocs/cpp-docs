@@ -227,7 +227,6 @@ CKeyFrame* CreateKeyframe(
     UINT32 nGroupID,
     CBaseTransition* pTransition);
 
-
 CKeyFrame* CreateKeyframe(
     UINT32 nGroupID,
     CBaseKeyFrame* pKeyframe,

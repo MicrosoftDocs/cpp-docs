@@ -1,7 +1,7 @@
 ---
 title: "CMDIChildWndEx Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMDIChildWndEx", "AFXMDICHILDWNDEX/CMDIChildWndEx", "AFXMDICHILDWNDEX/CMDIChildWndEx::ActivateTopLevelFrame", "AFXMDICHILDWNDEX/CMDIChildWndEx::AddPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::AddTabbedPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::AdjustDockingLayout", "AFXMDICHILDWNDEX/CMDIChildWndEx::CanShowOnMDITabs", "AFXMDICHILDWNDEX/CMDIChildWndEx::CanShowOnTaskBarTabs", "AFXMDICHILDWNDEX/CMDIChildWndEx::CanShowOnWindowsList", "AFXMDICHILDWNDEX/CMDIChildWndEx::DockPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::DockPaneLeftOf", "AFXMDICHILDWNDEX/CMDIChildWndEx::EnableAutoHidePanes", "AFXMDICHILDWNDEX/CMDIChildWndEx::EnableDocking", "AFXMDICHILDWNDEX/CMDIChildWndEx::EnableTaskbarThumbnailClipRect", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetDockingManager", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetDocumentName", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetFrameIcon", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetFrameText", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetRelatedTabGroup", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetTabbedPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetTabProxyWnd", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetTaskbarPreviewWnd", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetTaskbarThumbnailClipRect", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetToolbarButtonToolTipText", "AFXMDICHILDWNDEX/CMDIChildWndEx::InsertPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::InvalidateIconicBitmaps", "AFXMDICHILDWNDEX/CMDIChildWndEx::IsPointNearDockSite", "AFXMDICHILDWNDEX/CMDIChildWndEx::IsReadOnly", "AFXMDICHILDWNDEX/CMDIChildWndEx::IsRegisteredWithTaskbarTabs", "AFXMDICHILDWNDEX/CMDIChildWndEx::IsTabbedPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::IsTaskbarTabsSupportEnabled", "AFXMDICHILDWNDEX/CMDIChildWndEx::IsTaskbarThumbnailClipRectEnabled", "AFXMDICHILDWNDEX/CMDIChildWndEx::m_dwDefaultTaskbarTabPropertyFlags", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnGetIconicLivePreviewBitmap", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnGetIconicThumbnail", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnMoveMiniFrame", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnPressTaskbarThmbnailCloseButton", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnSetPreviewMode", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnTaskbarTabThumbnailActivate", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnTaskbarTabThumbnailMouseActivate", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnTaskbarTabThumbnailStretch", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnUpdateFrameTitle", "AFXMDICHILDWNDEX/CMDIChildWndEx::PaneFromPoint", "AFXMDICHILDWNDEX/CMDIChildWndEx::RecalcLayout", "AFXMDICHILDWNDEX/CMDIChildWndEx::RegisterTaskbarTab", "AFXMDICHILDWNDEX/CMDIChildWndEx::RemovePaneFromDockManager", "AFXMDICHILDWNDEX/CMDIChildWndEx::SetRelatedTabGroup", "AFXMDICHILDWNDEX/CMDIChildWndEx::SetTaskbarTabActive", "AFXMDICHILDWNDEX/CMDIChildWndEx::SetTaskbarTabOrder", "AFXMDICHILDWNDEX/CMDIChildWndEx::SetTaskbarTabProperties", "AFXMDICHILDWNDEX/CMDIChildWndEx::SetTaskbarThumbnailClipRect", "AFXMDICHILDWNDEX/CMDIChildWndEx::ShowPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::UnregisterTaskbarTab", "AFXMDICHILDWNDEX/CMDIChildWndEx::UpdateTaskbarTabIcon"]
@@ -17,7 +17,6 @@ ms.workload: ["cplusplus"]
 The `CMDIChildWndEx` class provides the functionality of a Windows multiple document interface (MDI) child window. It extends the functionality of [CMDIChildWnd Class](../../mfc/reference/cmdichildwnd-class.md). The framework requires this class when an MDI application uses certain MFC classes.
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
-
 
 ## Syntax
 
@@ -167,7 +166,6 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 
 ##  <a name="canshowonmditabs"></a>  CMDIChildWndEx::CanShowOnMDITabs
 
-
 ```
 virtual BOOL CanShowOnMDITabs();
 ```
@@ -294,7 +292,6 @@ Call this method to enable docking alignment to the main frame. You can pass a c
 
 ##  <a name="getdockingmanager"></a>  CMDIChildWndEx::GetDockingManager
 
-
 ```
 CDockingManager* GetDockingManager();
 ```
@@ -385,7 +382,6 @@ CBasePane* GetPane(UINT nID);
 A pointer to the pane if found, otherwise NULL.
 
 ##  <a name="getrelatedtabgroup"></a>  CMDIChildWndEx::GetRelatedTabGroup
-
 
 ```
 CMFCTabCtrl* GetRelatedTabGroup();
@@ -653,19 +649,17 @@ void RemovePaneFromDockManager(
 
 ##  <a name="setrelatedtabgroup"></a>  CMDIChildWndEx::SetRelatedTabGroup
 
-
 ```
 void SetRelatedTabGroup(CMFCTabCtrl* p);
 ```
 
 ### Parameters
 
-[in] *p*
+[in] *p*<br/>
 
 ### Remarks
 
 ##  <a name="showpane"></a>  CMDIChildWndEx::ShowPane
-
 
 ```
 void ShowPane(
@@ -677,10 +671,13 @@ void ShowPane(
 
 ### Parameters
 
-*pBar*<br/>
-[in] [in] *bShow*
-*bDelay*<br/>
-[in] [in] *bActivate*
+[in] *pBar*<br/>
+
+[in] *bShow*<br/>
+
+[in] *bDelay*<br/>
+
+[in] *bActivate*<br/>
 
 ### Remarks
 

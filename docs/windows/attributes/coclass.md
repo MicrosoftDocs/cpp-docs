@@ -116,7 +116,7 @@ public:
       // you can add to the default implementation
       CRegistryVirtualMachine rvm;
       HRESULT hr;
-      if (FAILED(hr = rvm.AddStandardReplacements()))  
+      if (FAILED(hr = rvm.AddStandardReplacements()))
          return hr;
       rvm.AddReplacement(_T("FriendlyName"), GetObjectFriendlyName());
       return rvm.VMUpdateRegistry(GetOpCodes(), GetOpcodeStringVals(),       GetOpcodeDWORDVals(), GetOpcodeBinaryVals(), bRegister);

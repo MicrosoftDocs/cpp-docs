@@ -58,7 +58,6 @@ The MFC macros and globals offer functionality in the following categories.
 
 - [CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration](cmfcimagepaintarea-image-edit-mode-enumeration.md)
 
-
 ## Database
 
 - [Record Field Exchange (RFX) functions](record-field-exchange-functions.md) and [Bulk Record Field Exchange (bulk RFX) functions](record-field-exchange-functions.md) for the MFC ODBC classes
@@ -121,6 +120,4 @@ The first part of this section briefly discusses each of the previous categories
 ## See Also
 
 [Class Overview](../../mfc/class-library-overview.md)
-
-
 

@@ -31,7 +31,7 @@ template<
 >
 ComPtr<TDelegateInterface> Callback(
    _In_ TCallbackObject *object,
-   _In_ HRESULT (TCallbackObject::* method)()  
+   _In_ HRESULT (TCallbackObject::* method)()
 );
 template<
    typename TDelegateInterface,
@@ -40,7 +40,7 @@ template<
 >
 ComPtr<TDelegateInterface> Callback(
    _In_ TCallbackObject *object,
-   _In_ HRESULT (TCallbackObject::* method)(TArg1)  
+   _In_ HRESULT (TCallbackObject::* method)(TArg1)
 );
 template<
    typename TDelegateInterface,
@@ -51,7 +51,7 @@ template<
 ComPtr<TDelegateInterface> Callback(
    _In_ TCallbackObject *object,
    _In_ HRESULT (TCallbackObject::* method)(TArg1,
-   TArg2)  
+   TArg2)
 );
 template<
    typename TDelegateInterface,
@@ -64,7 +64,7 @@ ComPtr<TDelegateInterface> Callback(
    _In_ TCallbackObject *object,
    _In_ HRESULT (TCallbackObject::* method)(TArg1,
    TArg2,
-   TArg3)  
+   TArg3)
 );
 template<
    typename TDelegateInterface,
@@ -79,7 +79,7 @@ ComPtr<TDelegateInterface> Callback(
    _In_ HRESULT (TCallbackObject::* method)(TArg1,
    TArg2,
    TArg3,
-   TArg4)  
+   TArg4)
 );
 template<
    typename TDelegateInterface,
@@ -96,7 +96,7 @@ ComPtr<TDelegateInterface> Callback(
    TArg2,
    TArg3,
    TArg4,
-   TArg5)  
+   TArg5)
 );
 template<
    typename TDelegateInterface,
@@ -115,7 +115,7 @@ ComPtr<TDelegateInterface> Callback(
    TArg3,
    TArg4,
    TArg5,
-   TArg6)  
+   TArg6)
 );
 template<
    typename TDelegateInterface,
@@ -136,7 +136,7 @@ ComPtr<TDelegateInterface> Callback(
    TArg4,
    TArg5,
    TArg6,
-   TArg7)  
+   TArg7)
 );
 template<
    typename TDelegateInterface,
@@ -159,7 +159,7 @@ ComPtr<TDelegateInterface> Callback(
    TArg5,
    TArg6,
    TArg7,
-   TArg8)  
+   TArg8)
 );
 template<
    typename TDelegateInterface,
@@ -184,7 +184,7 @@ ComPtr<TDelegateInterface> Callback(
    TArg6,
    TArg7,
    TArg8,
-   TArg9)  
+   TArg9)
 );
 ```
 

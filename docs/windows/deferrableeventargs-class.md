@@ -57,7 +57,7 @@ The class appears as the first argument to an event handler for a deferred event
 Gets a reference to the [Deferral](http://go.microsoft.com/fwlink/p/?linkid=526520) object which represents a deferred event.
 
 ```cpp
-HRESULT GetDeferral([out, retval] Windows::Foundation::IDeferral** result)  
+HRESULT GetDeferral([out, retval] Windows::Foundation::IDeferral** result)
 ```
 
 ### Parameters
@@ -72,11 +72,11 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 ## <a name="invokeallfinished"></a>DeferrableEventArgs::InvokeAllFinished
 
 Called to indicate that all processing to handle a deferred event is complete.
-  
+
 ```cpp
-void InvokeAllFinished()  
+void InvokeAllFinished()
 ```
-  
+
 ### Remarks
 
 You should call this method after the event source calls [InvokeAll](../windows/eventsource-invokeall-method.md). Calling this method prevents further deferrals from being taken and forces the completion handler to execute if no deferrals were taken.

@@ -20,7 +20,7 @@ Sets the runtime class name and trust level.
 ```cpp
 InspectableClass(
    runtimeClassName,
-   trustLevel)  
+   trustLevel)
 ```
 
 ### Parameters

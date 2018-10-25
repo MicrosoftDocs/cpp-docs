@@ -81,7 +81,6 @@ BOOL AddMenu(
     UINT uiMenuNameResId,
     UINT uiMenuResId);
 
-
 BOOL AddMenu(
     LPCTSTR lpszName,
     UINT uiMenuResId);
@@ -265,7 +264,6 @@ virtual BOOL ShowPopupMenu(
     CWnd* pWndOwner,
     BOOL bOwnMessage = FALSE,
     BOOL bRightAlign = FALSE);
-
 
 virtual CMFCPopupMenu* ShowPopupMenu(
     HMENU hmenuPopup,

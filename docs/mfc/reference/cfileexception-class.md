@@ -295,5 +295,3 @@ A pointer to the string containing the name of the file that caused the exceptio
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Exception Processing](../../mfc/reference/exception-processing.md)
 
-
-

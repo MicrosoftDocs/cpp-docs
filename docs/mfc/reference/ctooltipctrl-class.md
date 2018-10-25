@@ -127,7 +127,6 @@ BOOL AddTool(
     LPCRECT lpRectTool = NULL,
     UINT_PTR nIDTool = 0);
 
-
 BOOL AddTool(
     CWnd* pWnd,
     LPCTSTR lpszText = LPSTR_TEXTCALLBACK,
@@ -650,7 +649,6 @@ Sets the delay time for a tool tip control.
 ```
 void SetDelayTime(UINT nDelay);
 
-
 void SetDelayTime(
     DWORD dwDuration,
     int iTime);
@@ -842,7 +840,6 @@ void UpdateTipText(
     LPCTSTR lpszText,
     CWnd* pWnd,
     UINT_PTR nIDTool = 0);
-
 
 void UpdateTipText(
     UINT nIDText,

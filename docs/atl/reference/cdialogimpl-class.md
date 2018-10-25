@@ -93,12 +93,12 @@ Creates a modeless dialog box.
 
 ```
 HWND Create(
-    HWND hWndParent,  
-    LPARAM dwInitParam = NULL );  
+    HWND hWndParent,
+    LPARAM dwInitParam = NULL );
 
 HWND Create(
-    HWND hWndParent,  
-    RECT&, 
+    HWND hWndParent,
+    RECT&,
     LPARAM dwInitParam = NULL);
 ```
 
@@ -123,7 +123,7 @@ This dialog box is automatically attached to the `CDialogImpl` object. To create
 
 ##  <a name="destroywindow"></a>  CDialogImpl::DestroyWindow
 
-Destroys a modeless dialog box.  
+Destroys a modeless dialog box.
 
 ```
 BOOL DestroyWindow();
@@ -139,13 +139,13 @@ Returns TRUE if the dialog box was successfully destroyed; otherwise FALSE.
 
 ##  <a name="dialogproc"></a>  CDialogImpl::DialogProc
 
-This static function implements the dialog box procedure.  
+This static function implements the dialog box procedure.
 
 ```
 static LRESULT CALLBACK DialogProc(
-    HWND hWnd,  
-    UINT uMsg,  
-    WPARAM wParam,  
+    HWND hWnd,
+    UINT uMsg,
+    WPARAM wParam,
     LPARAM lParam);
 ```
 
@@ -178,8 +178,8 @@ You can override `DialogProc` to provide a different mechanism for handling mess
 Creates a modal dialog box.
 
 ```
-INT_PTR DoModal(  
-    HWND hWndParent = ::GetActiveWindow(),   
+INT_PTR DoModal(
+    HWND hWndParent = ::GetActiveWindow(),
     LPARAM dwInitParam = NULL);
 ```
 
@@ -285,9 +285,9 @@ Called only once, when the first message is received, to process messages sent t
 
 ```
 static LRESULT CALLBACK StartDialogProc(
-    HWND hWnd,  
-    UINT uMsg,  
-    WPARAM wParam,  
+    HWND hWnd,
+    UINT uMsg,
+    WPARAM wParam,
     LPARAM lParam);
 ```
 

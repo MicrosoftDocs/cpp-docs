@@ -85,13 +85,11 @@ virtual iter_type do_put(
     _Elem _Fill,
     bool val) const;
 
-
 virtual iter_type do_put(
     iter_type dest,
     ios_base& _Iosbase,
     _Elem _Fill,
     long val) const;
-
 
 virtual iter_type do_put(
     iter_type dest,
@@ -99,13 +97,11 @@ virtual iter_type do_put(
     _Elem _Fill,
     unsigned long val) const;
 
-
 virtual iter_type do_put(
     iter_type dest,
     ios_base& _Iosbase,
     _Elem _Fill,
     double val) const;
-
 
 virtual iter_type do_put(
     iter_type dest,
@@ -113,13 +109,11 @@ virtual iter_type do_put(
     _Elem _Fill,
     long double val) const;
 
-
 virtual iter_type do_put(
     iter_type dest,
     ios_base& _Iosbase,
     _Elem _Fill,
     const void* val) const;
-
 
 virtual iter_type do_put(
     iter_type dest,
@@ -333,13 +327,11 @@ iter_type put(
     _Elem _Fill,
     bool val) const;
 
-
 iter_type put(
     iter_type dest,
     ios_base& _Iosbase,
     _Elem _Fill,
     long val) const;
-
 
 iter_type put(
     iter_type dest,
@@ -347,13 +339,11 @@ iter_type put(
     _Elem _Fill,
     unsigned long val) const;
 
-
 iter_type put(
     iter_type dest,
     ios_base& _Iosbase,
     _Elem _Fill,
     Long long val) const;
-
 
 iter_type put(
     iter_type dest,
@@ -361,20 +351,17 @@ iter_type put(
     _Elem _Fill,
     Unsigned long long val) const;
 
-
 iter_type put(
     iter_type dest,
     ios_base& _Iosbase,
     _Elem _Fill,
     double val) const;
 
-
 iter_type put(
     iter_type dest,
     ios_base& _Iosbase,
     _Elem _Fill,
     long double val) const;
-
 
 iter_type put(
     iter_type dest,

@@ -23,7 +23,7 @@ The **safe_cast** operation returns the specified expression as the specified ty
 ### Syntax
 
 ```cpp
-[default]:: safe_cast< type-id >( expression )  
+[default]:: safe_cast< type-id >( expression )
 ```
 
 ## Windows Runtime
@@ -93,7 +93,7 @@ Caught expected exception: InvalidCastException
 ### Syntax
 
 ```cpp
-[cli]:: safe_cast< type-id >( expression )  
+[cli]:: safe_cast< type-id >( expression )
 ```
 
 ### Parameters
@@ -122,7 +122,7 @@ For more information on **safe_cast**, see:
 
 - [C-Style Casts with /clr (C++/CLI)](../windows/c-style-casts-with-clr-cpp-cli.md)
 
-- [How to: Use safe_cast in C++/CLI](../dotnet/how-to-use-safe-cast-in-cpp-cli.md)  
+- [How to: Use safe_cast in C++/CLI](../dotnet/how-to-use-safe-cast-in-cpp-cli.md)
 
 ### Requirements
 

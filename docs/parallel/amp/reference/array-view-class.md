@@ -530,6 +530,7 @@ Notifies the `array_view` object that its bound memory has been modified outside
 ```
 void refresh() const restrict(cpu);
 ```
+
 ## <a name="reinterpret_as"></a> reinterpret_as
 
 Reinterprets the array_view through a one-dimensional array_view, which as an option can have a different value type than the source array_view.

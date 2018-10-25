@@ -244,5 +244,3 @@ This method calls [COleDropTarget::Register](../../mfc/reference/coledroptarget-
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
 [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md)
 
-
-

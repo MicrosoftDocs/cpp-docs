@@ -54,7 +54,7 @@ For more information about message maps, see [Message Maps](../../atl/message-ma
 Accesses the message map identified by *dwMsgMapID* in a `CMessageMap`-derived class.
 
 ```
-virtual BOOL ProcessWindowMessage(  
+virtual BOOL ProcessWindowMessage(
     HWND hWnd,
     UINT uMsg,
     WPARAM wParam,

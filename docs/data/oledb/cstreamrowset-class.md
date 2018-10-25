@@ -14,73 +14,73 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # CStreamRowset Class
 
-Used in a `CCommand` or `CTable` declaration.  
-  
+Used in a `CCommand` or `CTable` declaration.
+
 ## Syntax
 
 ```cpp
-template <class TAccessor = CAccessorBase>  
-class CStreamRowset  
-```  
-  
-### Parameters  
+template <class TAccessor = CAccessorBase>
+class CStreamRowset
+```
+
+### Parameters
 
 *TAccessor*<br/>
-An accessor class.  
+An accessor class.
 
-## Requirements  
+## Requirements
 
-**Header:** atldbcli.h  
-  
-## Members  
-  
-### Methods  
-  
-|||  
-|-|-|  
-|[CStreamRowset](#cstreamrowset)|Constructor. Instantiates and initializes the `CStreamRowset` object.|  
-|[Close](#close)|Releases the [ISequentialStream](/previous-versions/windows/desktop/ms718035) interface pointer in the class.|  
-  
-## Remarks  
+**Header:** atldbcli.h
 
-Use `CStreamRowset` in your `CCommand` or `CTable` declaration, for example:  
-  
-[!code-cpp[NVC_OLEDB_Consumer#11](../../data/oledb/codesnippet/cpp/cstreamrowset-class_1.cpp)]  
-  
-or  
-  
-[!code-cpp[NVC_OLEDB_Consumer#12](../../data/oledb/codesnippet/cpp/cstreamrowset-class_2.cpp)]  
-  
-`ICommand::Execute` returns an `ISequentialStream` pointer, which is stored in `m_spStream`. You then use the `Read` method to retrieve the (Unicode string) data in XML format. For example:  
-  
-[!code-cpp[NVC_OLEDB_Consumer#13](../../data/oledb/codesnippet/cpp/cstreamrowset-class_3.cpp)]  
-  
-SQL Server 2000 performs the XML formatting, and will return all columns and all rows of the rowset as one XML string.  
-  
+## Members
+
+### Methods
+
+|||
+|-|-|
+|[CStreamRowset](#cstreamrowset)|Constructor. Instantiates and initializes the `CStreamRowset` object.|
+|[Close](#close)|Releases the [ISequentialStream](/previous-versions/windows/desktop/ms718035) interface pointer in the class.|
+
+## Remarks
+
+Use `CStreamRowset` in your `CCommand` or `CTable` declaration, for example:
+
+[!code-cpp[NVC_OLEDB_Consumer#11](../../data/oledb/codesnippet/cpp/cstreamrowset-class_1.cpp)]
+
+or
+
+[!code-cpp[NVC_OLEDB_Consumer#12](../../data/oledb/codesnippet/cpp/cstreamrowset-class_2.cpp)]
+
+`ICommand::Execute` returns an `ISequentialStream` pointer, which is stored in `m_spStream`. You then use the `Read` method to retrieve the (Unicode string) data in XML format. For example:
+
+[!code-cpp[NVC_OLEDB_Consumer#13](../../data/oledb/codesnippet/cpp/cstreamrowset-class_3.cpp)]
+
+SQL Server 2000 performs the XML formatting, and will return all columns and all rows of the rowset as one XML string.
+
 > [!NOTE]
->  This feature works with SQL Server 2000 only.  
-  
+>  This feature works with SQL Server 2000 only.
+
 ## <a name="cstreamrowset"></a> CStreamRowset::CStreamRowset
 
-Instantiates and initializes the `CStreamRowset` object.  
-  
-### Syntax  
-  
+Instantiates and initializes the `CStreamRowset` object.
+
+### Syntax
+
 ```cpp
-CStreamRowset();  
-```  
+CStreamRowset();
+```
 
 ## <a name="close"></a> CStreamRowset::Close
 
-Releases the [ISequentialStream](/previous-versions/windows/desktop/ms718035) interface pointer in the class.  
-  
-### Syntax  
-  
+Releases the [ISequentialStream](/previous-versions/windows/desktop/ms718035) interface pointer in the class.
+
+### Syntax
+
 ```cpp
-void Close();   
-```  
-  
-## See Also  
+void Close();
+```
+
+## See Also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

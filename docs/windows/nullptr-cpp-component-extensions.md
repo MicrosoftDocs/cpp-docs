@@ -74,7 +74,7 @@ int main() {
    if (pV1 == nullptr) {}
    if (pV2 == nullptr) {}
 // nullptr can be used as a function argument.
-   f(nullptr);   // calls f(System::Object ^)  
+   f(nullptr);   // calls f(System::Object ^)
 }
 ```
 
@@ -92,17 +92,17 @@ public:
 
 int main() {
    MyClass * pMyClass = nullptr;
-   if ( pMyClass == nullptr)  
+   if ( pMyClass == nullptr)
       System::Console::WriteLine("pMyClass == nullptr");
 
-   if ( pMyClass == 0)  
+   if ( pMyClass == 0)
       System::Console::WriteLine("pMyClass == 0");
 
    pMyClass = 0;
-   if ( pMyClass == nullptr)  
+   if ( pMyClass == nullptr)
       System::Console::WriteLine("pMyClass == nullptr");
 
-   if ( pMyClass == 0)  
+   if ( pMyClass == 0)
       System::Console::WriteLine("pMyClass == 0");
 }
 ```
@@ -152,7 +152,7 @@ int main() {
    // Delete the following line to resolve.
    f(nullptr);
 
-   f(0);   // T = int, call f(int)  
+   f(0);   // T = int, call f(int)
 }
 ```
 
@@ -189,7 +189,7 @@ ref class MyClass {
 public:
    void Test() {
       MyClass ^pMyClass;   // gc type
-      if (pMyClass == nullptr)  
+      if (pMyClass == nullptr)
          Console::WriteLine("NULL");
    }
 };

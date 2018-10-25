@@ -152,7 +152,6 @@ iterator begin();
 
 const_iterator begin() const;
 
-
 local_iterator begin(size_type nbucket);
 
 const_local_iterator begin(size_type nbucket) const;
@@ -1727,7 +1726,6 @@ Gets or sets the maximum elements per bucket.
 
 ```cpp
 float max_load_factor() const;
-
 
 void max_load_factor(float factor);
 ```

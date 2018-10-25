@@ -35,4 +35,3 @@ Such redefinitions are invalid under ANSI compatibility ([/Za](../../build/refer
 
 ## See Also
 
-

@@ -48,13 +48,13 @@ The following example shows how to pass a ^ to a function that takes a %.
 ref class Foo sealed {};
 
     // internal or private
-    void UseFooHelper(Foo% f)  
+    void UseFooHelper(Foo% f)
     {
         auto x = %f;
     }
 
     // public method on ABI boundary
-    void UseFoo(Foo^ f)  
+    void UseFoo(Foo^ f)
     {
         if (f != nullptr) { UseFooHelper(*f); }
     }

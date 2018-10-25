@@ -131,14 +131,13 @@ The following example demonstrates how to construct a `CMFCToolTipCtrl` object, 
 
 ##  <a name="cmfctooltipctrl"></a>  CMFCToolTipCtrl::CMFCToolTipCtrl
 
-
 ```
 CMFCToolTipCtrl(CMFCToolTipInfo* pParams = NULL);
 ```
 
 ### Parameters
 
-[in] *pParams*
+[in] *pParams*<br/>
 
 ### Remarks
 
@@ -194,7 +193,6 @@ Override this method in a derived class to customize the appearance of the toolt
 
 ##  <a name="ondrawdescription"></a>  CMFCToolTipCtrl::OnDrawDescription
 
-
 ```
 virtual CSize OnDrawDescription(
     CDC* pDC,
@@ -204,9 +202,9 @@ virtual CSize OnDrawDescription(
 
 ### Parameters
 
-*pDC*<br/>
-[in] [in] *rect*
-[in] *bCalcOnly*
+[in] *pDC*<br/>
+[in] *rect*<br/>
+[in] *bCalcOnly*<br/>
 
 ### Return Value
 
@@ -351,7 +349,6 @@ The description text is displayed on the tooltip under the separator.
 
 ##  <a name="setfixedwidth"></a>  CMFCToolTipCtrl::SetFixedWidth
 
-
 ```
 void SetFixedWidth(
     int nWidthRegular,
@@ -360,13 +357,12 @@ void SetFixedWidth(
 
 ### Parameters
 
-*nWidthRegular*<br/>
-[in] [in] *nWidthLargeImage*
+[in] *nWidthRegular*<br/>
+[in] *nWidthLargeImage*<br/>
 
 ### Remarks
 
 ##  <a name="sethotribbonbutton"></a>  CMFCToolTipCtrl::SetHotRibbonButton
-
 
 ```
 void SetHotRibbonButton(CMFCRibbonButton* pRibbonButton);
@@ -374,12 +370,11 @@ void SetHotRibbonButton(CMFCRibbonButton* pRibbonButton);
 
 ### Parameters
 
-[in] *pRibbonButton*
+[in] *pRibbonButton*<br/>
 
 ### Remarks
 
 ##  <a name="setlocation"></a>  CMFCToolTipCtrl::SetLocation
-
 
 ```
 void SetLocation(CPoint pt);
@@ -387,7 +382,7 @@ void SetLocation(CPoint pt);
 
 ### Parameters
 
-[in] *pt*
+[in] *pt*<br/>
 
 ### Remarks
 

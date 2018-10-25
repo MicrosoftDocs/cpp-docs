@@ -1,4 +1,4 @@
---- 
+---
 layout: HubPage
 ms.topic: conceptual
 title: Visual C++ Documentation | Microsoft Docs
@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
                         <div class="cardPadding">
                             <div class="card">
                                 <div class="cardImageOuter">
-                                    <div class="cardImage"> 
+                                    <div class="cardImage">
                                         <img data-hoverimage="/media/hubs/cpp/cpp_setup-installation.svg" src="/media/hubs/cpp/cpp_setup-installation.png" alt="" />
                                     </div>
                                 </div>
@@ -34,7 +34,7 @@ ms.workload: ["cplusplus"]
                         <div class="cardPadding">
                             <div class="card">
                                 <div class="cardImageOuter">
-                                    <div class="cardImage"> 
+                                    <div class="cardImage">
                                         <img data-hoverimage="/media/hubs/cpp/cpp_get-started.svg" src="/media/hubs/cpp/cpp_get-started.png" alt="" />
                                     </div>
                                 </div>
@@ -52,7 +52,7 @@ ms.workload: ["cplusplus"]
                         <div class="cardPadding">
                             <div class="card">
                                 <div class="cardImageOuter">
-                                    <div class="cardImage"> 
+                                    <div class="cardImage">
                                         <img data-hoverimage="/media/hubs/cpp/cpp_whats-new.svg" src="/media/hubs/cpp/cpp_whats-new.png" alt="" />
                                     </div>
                                 </div>
@@ -81,7 +81,7 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_workloads-1.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -100,7 +100,7 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_workloads-2.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -120,7 +120,7 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_workloads-3.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -139,7 +139,7 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_workloads-4.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -158,7 +158,7 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_workloads-5.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -177,7 +177,7 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_workloads-6.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -207,12 +207,12 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_features-1.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Develop</h3>
+                                                    <h3>Write code</h3>
                                                     <p>Write, refactor, explore and understand your code using the code editor.</p>
                                                 </div>
                                             </div>
@@ -226,7 +226,7 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_features-2.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -245,7 +245,7 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_features-3.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -264,7 +264,7 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_features-4.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -283,7 +283,7 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_features-5.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -302,7 +302,7 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_features-6.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -322,7 +322,7 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_features-7.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -351,7 +351,7 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_language-library-1.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -370,7 +370,7 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_language-library-2.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -389,7 +389,7 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_language-library-3.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -408,7 +408,7 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_language-library-4.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -427,7 +427,7 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_language-library-5.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -446,7 +446,7 @@ ms.workload: ["cplusplus"]
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="/media/hubs/cpp/cpp_language-library-6.svg" alt="" />
                                                     </div>
                                                 </div>

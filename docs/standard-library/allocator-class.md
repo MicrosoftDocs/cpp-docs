@@ -840,6 +840,7 @@ A structure that enables an allocator for objects of one type to allocate storag
 ```cpp
 struct rebind {    typedef allocator<_Other> other ;    };
 ```
+
 ### Parameters
 
 *other*<br/>

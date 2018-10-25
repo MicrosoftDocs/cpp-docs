@@ -17,27 +17,27 @@ A "floating-point constant" is a decimal number that represents a signed real nu
 
 ## Syntax
 
-*floating-point-constant*:
-&nbsp;&nbsp; *fractional-constant exponent-part*<sub>opt</sub> *floating-suffix*<sub>opt</sub>
-&nbsp;&nbsp; *digit-sequence exponent-part floating-suffix*<sub>opt</sub>
+*floating-point-constant*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*fractional-constant* *exponent-part*<sub>opt</sub> *floating-suffix*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*digit-sequence* *exponent-part* *floating-suffix*<sub>opt</sub>
 
-*fractional-constant*:
-&nbsp;&nbsp; *digit-sequence*<sub>opt</sub> **.** *digit-sequence*
-&nbsp;&nbsp; *digit-sequence*  **.**
+*fractional-constant*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*digit-sequence*<sub>opt</sub> **.** *digit-sequence*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*digit-sequence*  **.**
 
-*exponent-part*:
-&nbsp;&nbsp; **e**  *sign*<sub>opt</sub> *digit-sequence*
-&nbsp;&nbsp; **E**  *sign*<sub>opt</sub> *digit-sequence*
+*exponent-part*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**e** *sign*<sub>opt</sub> *digit-sequence*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**E** *sign*<sub>opt</sub> *digit-sequence*
 
-*sign* : one of
-&nbsp;&nbsp; **+ -**
+*sign*: one of<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**+ -**
 
-*digit-sequence*:
-&nbsp;&nbsp; *digit*
-&nbsp;&nbsp; *digit-sequence digit*
+*digit-sequence*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*digit*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*digit-sequence* *digit*
 
-*floating-suffix* : one of
-&nbsp;&nbsp; **f l F L**
+*floating-suffix*: one of<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**f l F L**
 
 You can omit either the digits before the decimal point (the integer portion of the value) or the digits after the decimal point (the fractional portion), but not both. You can leave out the decimal point only if you include an exponent. No white-space characters can separate the digits or characters of the constant.
 

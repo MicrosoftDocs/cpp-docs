@@ -78,5 +78,5 @@ Forward window messages.
 [Functions](../../atl/reference/atl-functions.md)<br/>
 [Global Variables](../../atl/reference/atl-global-variables.md)<br/>
 [Classes and structs](../../atl/reference/atl-classes.md)<br/>
-[Typedefs](../../atl/reference/atl-typedefs.md)   
+[Typedefs](../../atl/reference/atl-typedefs.md)
 

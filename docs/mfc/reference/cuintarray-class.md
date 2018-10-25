@@ -92,5 +92,3 @@ For more information on using `CUIntArray`, see the article [Collections](../../
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

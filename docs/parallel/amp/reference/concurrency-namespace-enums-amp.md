@@ -23,6 +23,7 @@ Enumeration type used to denote the various types of access to data.
 ```
 enum access_type;
 ```
+
 ### Values
 
 |Name|Description|
@@ -40,6 +41,7 @@ Specifies the queuing modes that are supported on the accelerator.
 ```
 enum queuing_mode;
 ```
+
 ### Values
 
 |Name|Description|

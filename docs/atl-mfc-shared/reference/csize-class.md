@@ -1,7 +1,7 @@
 ---
 title: "CSize Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CSize", "ATLTYPES/ATL::CSize", "ATLTYPES/ATL::CSize::CSize"]
@@ -19,7 +19,7 @@ Similar to the Windows [SIZE](https://msdn.microsoft.com/library/windows/desktop
 ## Syntax
 
 ```
-class CSize : public tagSIZE 
+class CSize : public tagSIZE
 ```
 
 ## Members
@@ -48,7 +48,7 @@ This class is derived from the `SIZE` structure. This means you can pass a `CSiz
 The `cx` and `cy` members of `SIZE` (and `CSize`) are public. In addition, `CSize` implements member functions to manipulate the `SIZE` structure.
 
 > [!NOTE]
->  For more information on shared utility classes (like `CSize`), see [Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md).
+> For more information on shared utility classes (like `CSize`), see [Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md).
 
 ## Inheritance Hierarchy
 
@@ -69,24 +69,24 @@ CSize() throw();
 CSize( int initCX, int initCY) throw();
 CSize( SIZE initSize) throw();
 CSize( POINT initPt) throw();
-CSize( DWORD dwSize) throw(); 
+CSize( DWORD dwSize) throw();
 ```
 
 ### Parameters
 
-*initCX*  
+*initCX*<br/>
 Sets the `cx` member for the `CSize`.
 
-*initCY*  
+*initCY*<br/>
 Sets the `cy` member for the `CSize`.
 
-*initSize*  
+*initSize*<br/>
 [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure or `CSize` object used to initialize `CSize`.
 
-*initPt*  
+*initPt*<br/>
 [POINT](../../mfc/reference/point-structure.md) structure or `CPoint` object used to initialize `CSize`.
 
-*dwSize*  
+*dwSize*<br/>
 DWORD used to initialize `CSize`. The low-order word is the `cx` member and the high-order word is the `cy` member.
 
 ### Remarks
@@ -101,8 +101,8 @@ If no arguments are given, `cx` and `cy` are initialized to zero.
 
 Checks for equality between two sizes.
 
-``` 
-BOOL operator==(SIZE size) const throw(); 
+```
+BOOL operator==(SIZE size) const throw();
 ```
 
 ### Remarks
@@ -117,8 +117,8 @@ Returns nonzero if the sizes are equal, otherwize 0.
 
 Checks for inequality between two sizes.
 
-``` 
-BOOL operator!=(SIZE size) const throw(); 
+```
+BOOL operator!=(SIZE size) const throw();
 ```
 
 ### Remarks
@@ -133,8 +133,8 @@ Returns nonzero if the sizes are not equal, otherwise 0.
 
 Adds a size to this `CSize`.
 
-``` 
-void operator+=(SIZE size) throw(); 
+```
+void operator+=(SIZE size) throw();
 ```
 
 ### Example
@@ -145,8 +145,8 @@ void operator+=(SIZE size) throw();
 
 Subtracts a size from this `CSize`.
 
-``` 
-void operator-=(SIZE size) throw(); 
+```
+void operator-=(SIZE size) throw();
 ```
 
 ### Example
@@ -157,10 +157,10 @@ void operator-=(SIZE size) throw();
 
 These operators add this `CSize` value to the value of parameter.
 
-``` 
+```
 CSize operator+(SIZE size) const throw();
 CPoint operator+(POINT point) const throw();
-CRect operator+(const RECT* lpRect) const throw(); 
+CRect operator+(const RECT* lpRect) const throw();
 ```
 
 ### Remarks
@@ -181,11 +181,11 @@ See the following descriptions of the individual operators:
 
 The first three of these operators subtract this `CSize` value to the value of parameter.
 
-``` 
+```
 CSize operator-(SIZE size) const throw();
 CPoint operator-(POINT point) const throw();
 CRect operator-(const RECT* lpRect) const throw();
-CSize operator-() const throw(); 
+CSize operator-() const throw();
 ```
 
 ### Remarks

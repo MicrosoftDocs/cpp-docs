@@ -79,7 +79,7 @@ MFC projects use the preprocessor symbol \_UNICODE to indicate UTF-16 wide-chara
 
 Static libraries for MFC use the following naming conventions. The library names have the form
 
-> *u*AFX*c**d*.LIB
+> <em>u</em>AFX<em>cd</em>.LIB
 
 where the letters shown in italic lowercase are placeholders for specifiers whose meanings are shown in the following table:
 

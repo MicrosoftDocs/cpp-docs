@@ -103,7 +103,7 @@ using namespace System;
 #pragma unmanaged
 // native function that initializes an array
 void native_function(int* p) {
-   for(int i = 0 ; i < 10 ; i++)  
+   for(int i = 0 ; i < 10 ; i++)
     p[i] = i;
 }
 #pragma managed
@@ -125,7 +125,7 @@ public:
 
    int sum() {
       int total = 0;
-      for (int i = 0 ; i < SIZE ; i++)  
+      for (int i = 0 ; i < SIZE ; i++)
          total += arr[i];
       return total;
    }

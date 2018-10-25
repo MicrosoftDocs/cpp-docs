@@ -38,8 +38,6 @@ This topic lists the standard dialog data validation (DDV) routines used for com
 |[DDV_MinMaxUnsigned](#ddv_minmaxuint)|Verifies a given control value falls between two specified values.|
 |[DDV_MinMaxULongLong](#ddv_minmaxulonglong)|Verifies a given control value does not exceed a given **ULONGLONG** range.|
 
-
-
 ##  <a name="ddv_maxchars"></a>  DDV_MaxChars
 
 Call `DDV_MaxChars` to verify that the amount of characters in the control associated with *value* does not exceed *nChars*.
@@ -542,6 +540,7 @@ Call `DDV_MinMaxUnsigned` to verify that the value in the control associated wit
        unsigned minVal,
        unsigned maxVal );
 ```
+
 ### Parameters
 
 *pDX*<br/>
@@ -569,6 +568,4 @@ For more information about DDV, see [Dialog Data Exchange and Validation](../dia
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
 [DDX_Slider](#ddx_slider)<br/>
 [DDX_FieldSlider](#ddx_fieldslider)
-
-
 

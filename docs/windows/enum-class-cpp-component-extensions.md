@@ -165,7 +165,7 @@ void f(int32);
 However, in current versions of the compiler, the standard enum is emitted as a managed enum with a [NativeEnumAttribute] and the following in MSIL for the function signature:
 
 ```cpp
-void f(E)  
+void f(E)
 ```
 
 For more information about native enums, see [C++ Enumeration Declarations](../cpp/enumerations-cpp.md).
@@ -192,7 +192,7 @@ public enum n { c, d };
 // unnamed, standard enum
 public enum { e, f } o;
 
-int main()  
+int main()
 {
    // consume managed enum
    m mym = m::b;

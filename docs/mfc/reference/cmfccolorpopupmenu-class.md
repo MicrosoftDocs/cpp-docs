@@ -94,7 +94,6 @@ CMFCColorPopupMenu(
     UINT uiCommandID,
     BOOL bStdColorDlg = FALSE);
 
-
 CMFCColorPopupMenu(
     CMFCColorButton* pParentBtn,
     const CArray<COLORREF, COLORREF>& colors,
@@ -104,7 +103,6 @@ CMFCColorPopupMenu(
     LPCTSTR lpszDocColors, CList<COLORREF, COLORREF>& lstDocColors,
     int nColumns,
     COLORREF colorAutomatic);
-
 
 CMFCColorPopupMenu(
     CMFCRibbonColorButton* pParentBtn,

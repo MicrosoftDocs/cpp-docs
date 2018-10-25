@@ -110,4 +110,4 @@ Note that [idl_quote](idl-quote.md) lets you use MIDL constructs that are not su
 
 ## See Also
 
-[Attributes by Group](attributes-by-group.md)  
+[Attributes by Group](attributes-by-group.md)

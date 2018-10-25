@@ -76,4 +76,4 @@ For more information, see [Attribute Contexts](cpp-attributes-com-net.md#context
 [__event](../../cpp/event.md)<br/>
 [__hook](../../cpp/hook.md)<br/>
 [__unhook](../../cpp/unhook.md)<br/>
-[Class Attributes](class-attributes.md)  
+[Class Attributes](class-attributes.md)

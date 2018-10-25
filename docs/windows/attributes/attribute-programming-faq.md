@@ -105,7 +105,7 @@ The following is allowed:
 The following is disallowed:
 
 ```cpp
-[ coclass, progid("MyClass.CMyClass.1" /* Multiple-line comment */ ), threading("both" // Single-line comment)  
+[ coclass, progid("MyClass.CMyClass.1" /* Multiple-line comment */ ), threading("both" // Single-line comment)
 ]
 ```
 
@@ -138,7 +138,7 @@ The following sample is the result of copying injected code into a source code f
 
 // ITestTest
 [
-   object, uuid("DADECE00-0FD2-46F1-BFD3-6A0579CA1BC4"), dual, helpstring("ITestTest Interface"), pointer_default(unique)  
+   object, uuid("DADECE00-0FD2-46F1-BFD3-6A0579CA1BC4"), dual, helpstring("ITestTest Interface"), pointer_default(unique)
 ]
 
 __interface ITestTest : IDispatch {
@@ -148,7 +148,7 @@ __interface ITestTest : IDispatch {
 
 // _ITestTestEvents
 [
-   uuid("12753B9F-DEF4-49b0-9D52-A79C371F2909"), dispinterface, helpstring("_ITestTestEvents Interface")  
+   uuid("12753B9F-DEF4-49b0-9D52-A79C371F2909"), dispinterface, helpstring("_ITestTestEvents Interface")
 ]
 
 __interface _ITestTestEvents {
@@ -159,7 +159,7 @@ __interface _ITestTestEvents {
 [
    coclass, threading(apartment), vi_progid("TestATL1.TestTest"), progid("TestATL1.TestTest.1"), version(1.0), uuid("D9632007-14FA-4679-9E1C-28C9A949E784"), // this line would be commented out from original file
    // event_source("com"), // this line would be added to support injected code
-   source(_ITestTestEvents), helpstring("TestTest Class")  
+   source(_ITestTestEvents), helpstring("TestTest Class")
 ]
 
 class ATL_NO_VTABLE CTestTest : public ITestTest,
@@ -172,7 +172,7 @@ public:
    }
    // this line would be commented out from original file
    // __event __interface _ITestTestEvents;
-   DECLARE_PROTECT_FINAL_CONSTRUCT()  
+   DECLARE_PROTECT_FINAL_CONSTRUCT()
    HRESULT FinalConstruct() {
       return S_OK;
    }
@@ -211,7 +211,7 @@ HRESULT BeforeChange(::BSTR i1,::VARIANT_BOOL* i2) {
          DISPPARAMS disp = { rgvars, NULL, 2, 0 };
          VARIANT ret_val;
          hr = __ComInvokeEventHandler(pDispatch, 1, 1, &disp, &ret_val);
-         if (FAILED(hr))  
+         if (FAILED(hr))
             break;
       }
       pp++;
@@ -219,9 +219,9 @@ HRESULT BeforeChange(::BSTR i1,::VARIANT_BOOL* i2) {
    return hr;
 }
 
-BEGIN_CONNECTION_POINT_MAP(CTestTest)  
-CONNECTION_POINT_ENTRY(__uuidof(::_ITestTestEvents))  
-END_CONNECTION_POINT_MAP()  
+BEGIN_CONNECTION_POINT_MAP(CTestTest)
+CONNECTION_POINT_ENTRY(__uuidof(::_ITestTestEvents))
+END_CONNECTION_POINT_MAP()
 // end added code section
 
 // _ITestCtrlEvents Methods

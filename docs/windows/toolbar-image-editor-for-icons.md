@@ -19,7 +19,7 @@ The **Image Editor** toolbar contains tools for drawing, painting, entering text
 > [!NOTE]
 > All tools available on the **Image Editor** toolbar are also available from the **Image** menu (under the **Tools** command).
 
-![Image Editor toolbar](../mfc/media/vcimageeditortoolbar.gif "vcImageEditorToolbar")  
+![Image Editor toolbar](../mfc/media/vcimageeditortoolbar.gif "vcImageEditorToolbar")
 Image Editor Toolbar
 
 To use the **Image Editor** toolbar and **Option** selector, click the tool or option that you want.
@@ -29,7 +29,7 @@ To use the **Image Editor** toolbar and **Option** selector, click the tool or o
 
 With the **Option** selector you can specify the width of a line, brush stroke, etc. The icon on the **Option** selector button changes depending on which tool you have selected.
 
-![Drawing&#45;shape selector on the Image Editor toolbar](../mfc/media/vcimageeditortoolbaroptionselector.gif "vcImageEditorToolbarOptionSelector")  
+![Drawing&#45;shape selector on the Image Editor toolbar](../mfc/media/vcimageeditortoolbaroptionselector.gif "vcImageEditorToolbarOptionSelector")
 Option Selector on the Image Editor Toolbar
 
 For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).

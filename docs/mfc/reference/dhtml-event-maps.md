@@ -128,7 +128,6 @@ Place the BEGIN_DHTML_EVENT_MAP macro in the class's definition (.h) file follow
 
   **Header** afxdhtml.h
 
-
 ##  <a name="declare_dhtml_event_map"></a>  DECLARE_DHTML_EVENT_MAP
 
 Declares a DHTML event map in a class definition.
@@ -1145,7 +1144,6 @@ The page identifier, *mapName*, is an arbitrary symbol used to link embedded DHT
 ### Example
 
 See the example in [BEGIN_DHTML_URL_EVENT_MAP](#begin_dhtml_url_event_map).
-
 
 ### Requirements
 

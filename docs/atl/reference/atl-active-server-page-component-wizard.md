@@ -35,27 +35,27 @@ If you change the **Coclass** name in the COM section, the change is reflected i
 
 Provides information for the C++ class created for the object.
 
-- **Short name**  
+- **Short name**
 
    Sets the root name for the object. The name that you provide determines the `Class` and **Coclass** names, the **.cpp file** and **.h file** names, the **Interface** name, the **Type** names, and the **ProgID**, unless you change those fields individually.
 
-- **.h file**  
+- **.h file**
 
    Sets the name of the header file for the new object's class. By default, this name is based on the name that you provide in **Short name**. Click the ellipsis button to save the file name to the location of your choice, or to append the class declaration to an existing file. If you select an existing file, the wizard will not save it to the selected location until you click **Finish** in the wizard.
 
    The wizard does not overwrite a file. If you select the name of an existing file, when you click **Finish**, the wizard prompts you to indicate whether the class declaration should be appended to the contents of the file. Click **Yes** to append the file; click **No** to return to the wizard and specify another file name.
 
-- **Class**  
+- **Class**
 
    Sets the name of the class to be created. This name is based on the name that you provide in **Short name**, preceded by 'C', the typical prefix for a class name.
 
-- **.cpp file**  
+- **.cpp file**
 
    Sets the name of the implementation file for the new object's class. By default, this name is based on the name that you provide in **Short name**. Click the ellipsis button to save the file name to the location of your choice. The file is not saved to the selected location until you click **Finish** in the wizard.
 
    The wizard does not overwrite a file. If you select the name of an existing file, when you click **Finish**, the wizard prompts you to indicate whether the class implementation should be appended to the contents of the file. Click **Yes** to append the file; click **No** to return to the wizard and specify another file name.
 
-- **Attributed**  
+- **Attributed**
 
    Indicates whether the object uses attributes. If you are adding an object to an attributed ATL project, this option is selected and not available to change. That is, you can add only attributed objects to a project created with attribute support.
 
@@ -69,19 +69,19 @@ Provides information for the C++ class created for the object.
 
 Provides information about the COM functionality for the object.
 
-- **Coclass**  
+- **Coclass**
 
    Sets the name of the component class that contains a list of interfaces supported by the object. If your project or this object uses attributes, you cannot change this option because ATL does not include the **coclass** attribute.
 
-- **Type**  
+- **Type**
 
    Sets the object description that will appear in the registry for the coclass.
 
-- **Interface**  
+- **Interface**
 
    Sets the interface you create for your object. This interface contains your custom methods.
 
-- **ProgID**  
+- **ProgID**
 
    Sets the name that containers can use instead of the CLSID of the object.
 

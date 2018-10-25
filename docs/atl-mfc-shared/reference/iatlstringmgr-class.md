@@ -1,7 +1,7 @@
 ---
 title: "IAtlStringMgr Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["IAtlStringMgr", "ATLSIMPSTR/ATL::IAtlStringMgr", "ATLSIMPSTR/ATL::Allocate", "ATLSIMPSTR/ATL::Clone", "ATLSIMPSTR/ATL::Free", "ATLSIMPSTR/ATL::GetNilString", "ATLSIMPSTR/ATL::Reallocate"]
@@ -54,10 +54,10 @@ CStringData* Allocate(int nAllocLength,int nCharSize) throw();
 
 ### Parameters
 
-*nAllocLength*  
+*nAllocLength*<br/>
 The number of characters in the new memory block.
 
-*nCharSize*  
+*nCharSize*<br/>
 The size (in bytes) of the character type used by the string manager.
 
 ### Return Value
@@ -105,7 +105,7 @@ void Free(CStringData* pData) throw();
 
 ### Parameters
 
-*pData*  
+*pData*<br/>
 A pointer to the memory block to be freed.
 
 ### Remarks
@@ -132,31 +132,31 @@ A pointer to the `CStringData` object used to represent an empty string.
 Call this function to return a representation of an empty string.
 
 > [!NOTE]
->  When implementing a custom string manager, this function must never fail. You can ensure this by embedding an instance of `CNilStringData` in the string manager class, and return a pointer to that instance.
+> When implementing a custom string manager, this function must never fail. You can ensure this by embedding an instance of `CNilStringData` in the string manager class, and return a pointer to that instance.
 
 > [!NOTE]
->  For usage examples, see [Memory Management and CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
+> For usage examples, see [Memory Management and CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
-##  <a name="reallocate"></a>  IAtlStringMgr::Reallocate
+## <a name="reallocate"></a>  IAtlStringMgr::Reallocate
 
 Reallocates a string data structure.
 
 ```
-CStringData* Reallocate(  
-CStringData* pData,
-int nAllocLength,
-int nCharSize) throw();
+CStringData* Reallocate(
+    CStringData* pData,
+    int nAllocLength,
+    int nCharSize) throw();
 ```
 
 ### Parameters
 
-*pData*  
+*pData*<br/>
 Pointer to the memory previously allocated by this memory manager.
 
-*nAllocLength*  
+*nAllocLength*<br/>
 The number of characters in the new memory block.
 
-*nCharSize*  
+*nCharSize*<br/>
 The size (in bytes) of the character type used by the string manager.
 
 ### Return Value
@@ -170,10 +170,9 @@ Call this function to resize the existing memory block specified by *pData*.
 Call [IAtlStringMgr::Free](#free) to free the memory allocated by this method.
 
 > [!NOTE]
->  For usage examples, see [Memory Management and CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
+> For usage examples, see [Memory Management and CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
 ## See Also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-

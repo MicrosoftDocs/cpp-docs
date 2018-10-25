@@ -1212,7 +1212,6 @@ BOOL CreateControl(
     BOOL bStorage = FALSE,
     BSTR bstrLicKey = NULL);
 
-
 BOOL CreateControl(
     REFCLSID clsid,
     LPCTSTR pszWindowName,
@@ -1223,7 +1222,6 @@ BOOL CreateControl(
     CFile* pPersist = NULL,
     BOOL bStorage = FALSE,
     BSTR bstrLicKey = NULL);
-
 
 BOOL CreateControl(
     REFCLSID clsid,
@@ -1317,7 +1315,6 @@ virtual BOOL CreateEx(
     HWND hWndParent,
     HMENU nIDorHMenu,
     LPVOID lpParam = NULL);
-
 
 virtual BOOL CreateEx(
     DWORD dwExStyle,
@@ -4993,7 +4990,6 @@ void MoveWindow(
     int nWidth,
     int nHeight,
     BOOL bRepaint = TRUE);
-
 
 void MoveWindow(
     LPCRECT lpRect,

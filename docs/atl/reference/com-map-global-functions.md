@@ -19,11 +19,11 @@ These functions provide support for COM Map `IUnknown` implementations.
 |||
 |-|-|
 |[AtlInternalQueryInterface](#atlinternalqueryinterface)|Delegates to the `IUnknown` of a nonaggregated object.|
-|[InlineIsEqualIUnknown](#inlineisequaliunknown)|Generates efficient code for comparing interfaces against `IUnknown`.|  
+|[InlineIsEqualIUnknown](#inlineisequaliunknown)|Generates efficient code for comparing interfaces against `IUnknown`.|
 
 ## Requirements
 
-**Header:** atlbase.h  
+**Header:** atlbase.h
 
 ##  <a name="atlinternalqueryinterface"></a>  AtlInternalQueryInterface
 

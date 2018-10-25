@@ -1,7 +1,7 @@
 ---
 title: "Module Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/17/2018"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module", "module/Microsoft::WRL::Module::Create", "module/Microsoft::WRL::Module::DecrementObjectCount", "module/Microsoft::WRL::Module::GetActivationFactory", "module/Microsoft::WRL::Module::GetClassObject", "module/Microsoft::WRL::Module::GetModule", "module/Microsoft::WRL::Module::GetObjectCount", "module/Microsoft::WRL::Module::IncrementObjectCount", "module/Microsoft::WRL::Module::Module", "module/Microsoft::WRL::Module::objectCount_Data", "module/Microsoft::WRL::Module::RegisterCOMObject", "module/Microsoft::WRL::Module::RegisterObjects", "module/Microsoft::WRL::Module::RegisterWinRTObject", "module/Microsoft::WRL::Module::releaseNotifier_", "module/Microsoft::WRL::Module::Terminate", "module/Microsoft::WRL::Module::~Module", "module/Microsoft::WRL::Module::UnregisterCOMObject", "module/Microsoft::WRL::Module::UnregisterObjects", "module/Microsoft::WRL::Module::UnregisterWinRTObject"]
@@ -131,22 +131,22 @@ WRL_NOTHROW static Module& Create(
 template<typename T>
 WRL_NOTHROW static Module& Create(
    _In_ T* object,
-   _In_ void (T::* method)()  
+   _In_ void (T::* method)()
 );
 ```
 
 ### Parameters
 
-*T*  
+*T*<br/>
 Module type.
 
-*callback*  
+*callback*<br/>
 Called when the last instance object of the module is released.
 
-*object*  
+*object*<br/>
 The *object* and *method* parameters are used in combination. Points to the last instance object when the last instance object in the module is released.
 
-*method*  
+*method*<br/>
 The *object* and *method* parameters are used in combination. Points to the method of the last instance object when the last instance object in the module is released.
 
 ### Return Value
@@ -179,13 +179,13 @@ WRL_NOTHROW HRESULT GetActivationFactory(
 
 ### Parameters
 
-*pActivatibleClassId*  
+*pActivatibleClassId*<br/>
 IID of a runtime class.
 
-*ppIFactory*  
+*ppIFactory*<br/>
 The IActivationFactory for the specified runtime class.
 
-*serverName*  
+*serverName*<br/>
 The name of a subset of class factories in the current module. Specify the server name used in the [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) macro, or specify `nullptr` to get the default server name.
 
 ### Return Value
@@ -197,7 +197,7 @@ S_OK if successful; otherwise, the HRESULT returned by GetActivationFactory.
 Retreives a cache of class factories.
 
 ```cpp
- HRESULT GetClassObject(
+HRESULT GetClassObject(
    REFCLSID clsid,
    REFIID riid,
    _Deref_out_ void **ppv,
@@ -207,16 +207,16 @@ Retreives a cache of class factories.
 
 ### Parameters
 
-*clsid*  
+*clsid*<br/>
 Class ID.
 
-*riid*  
+*riid*<br/>
 Interface ID that you request.
 
-*ppv*  
+*ppv*<br/>
 Pointer to returned object.
 
-*serverName*  
+*serverName*<br/>
 The server name that is specified in either the `ActivatableClassWithFactory`, `ActivatableClassWithFactoryEx`, or `ActivatableClass` macro; or `nullptr` to get the default server name.
 
 ### Return Value
@@ -298,19 +298,19 @@ WRL_NOTHROW virtual HRESULT RegisterCOMObject(
 
 ### Parameters
 
-*serverName*  
+*serverName*<br/>
 Fully-qualified name of a server.
 
-*clsids*  
+*clsids*<br/>
 An array of CLSIDs to register.
 
-*factories*  
+*factories*<br/>
 An array of IUnknown interfaces of the class objects whose availability is being published.
 
-*cookies*  
+*cookies*<br/>
 When the operation completes, an array of pointers to values that identify the class objects that were registered. These values are later used revoke the registration.
 
-*count*  
+*count*<br/>
 The number of CLSIDs to register.
 
 ### Return Value
@@ -335,10 +335,10 @@ HRESULT RegisterObjects(
 
 ### Parameters
 
-*module*  
+*module*<br/>
 An array of COM or Windows Runtime objects.
 
-*serverName*  
+*serverName*<br/>
 Name of the server that created the objects.
 
 ### Return Value
@@ -353,21 +353,21 @@ Registers one or more Windows Runtime objects so other applications can connect 
 HRESULT RegisterWinRTObject(const wchar_t* serverName,
    wchar_t** activatableClassIds,
    WINRT_REGISTRATION_COOKIE* cookie,
-   unsigned int count)  
+   unsigned int count)
 ```
 
 ### Parameters
 
-*serverName*  
+*serverName*<br/>
 A name that specifies a subset of objects affected by this operation.
 
-*activatableClassIds*  
+*activatableClassIds*<br/>
 An array of activatable CLSIDs to register.
 
-*cookie*  
+*cookie*<br/>
 A value that identifies the class objects that were registered. This value is used later to revoke the registration.
 
-*count*  
+*count*<br/>
 The number of objects to register.
 
 ### Return Value
@@ -407,13 +407,13 @@ virtual HRESULT UnregisterCOMObject(
 
 ### Parameters
 
-*serverName*  
+*serverName*<br/>
 (Unused)
 
-*cookies*  
+*cookies*<br/>
 An array of pointers to values that identify the class objects to be unregistered. The array was created by the [RegisterCOMObject](#registercomobject) method.
 
-*count*  
+*count*<br/>
 The number of classes to unregister.
 
 ### Return Value
@@ -432,10 +432,10 @@ HRESULT UnregisterObjects(
 
 ### Parameters
 
-*module*  
+*module*<br/>
 Pointer to a module.
 
-*serverName*  
+*serverName*<br/>
 A qualifying name that specifies a subset of objects affected by this operation.
 
 ### Return Value
@@ -455,5 +455,5 @@ virtual HRESULT UnregisterWinRTObject(
 
 ### Parameters
 
-*cookie*  
+*cookie*<br/>
 A pointer to a value that identifies the class object whose registration is to be revoked.

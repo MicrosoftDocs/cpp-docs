@@ -26,7 +26,6 @@
 ### [Property Page XML Files](property-page-xml-files.md)
 ### [.vcxproj and .props file structure](vcxproj-file-structure.md)
 ## [Creating Desktop Projects By Using Application Wizards](creating-desktop-projects-by-using-application-wizards.md)
-### [Wizard Support for Other Languages](wizard-support-for-other-languages.md)
 ### [Creating a Makefile Project](creating-a-makefile-project.md)
 #### [Makefile Project Wizard](makefile-project-wizard.md)
 ##### [Application Settings, Makefile Project Wizard](application-settings-makefile-project-wizard.md)

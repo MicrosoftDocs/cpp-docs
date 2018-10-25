@@ -71,20 +71,20 @@ When a function is called, the following tasks are performed:
     Func( 7 );          // Execute function call
     ```
 
-     The conceptual initializations prior to the call are:
+   The conceptual initializations prior to the call are:
 
     ```cpp
     int Temp_i = 7;
     Func( Temp_i );
     ```
 
-     Note that the initialization is performed as if using the equal-sign syntax instead of the parentheses syntax. A copy of `i` is made prior to passing the value to the function. (For more information, see [Initializers](../cpp/initializers.md) and [Conversions](../cpp/user-defined-type-conversions-cpp.md)).
+   Note that the initialization is performed as if using the equal-sign syntax instead of the parentheses syntax. A copy of `i` is made prior to passing the value to the function. (For more information, see [Initializers](../cpp/initializers.md) and [Conversions](../cpp/user-defined-type-conversions-cpp.md)).
 
-     Therefore, if the function prototype (declaration) calls for an argument of type **long**, and if the calling program supplies an actual argument of type **int**, the actual argument is promoted using a standard type conversion to type **long** (see [Standard Conversions](../cpp/standard-conversions.md)).
+   Therefore, if the function prototype (declaration) calls for an argument of type **long**, and if the calling program supplies an actual argument of type **int**, the actual argument is promoted using a standard type conversion to type **long** (see [Standard Conversions](../cpp/standard-conversions.md)).
 
-     It is an error to supply an actual argument for which there is no standard or user-defined conversion to the type of the formal argument.
+   It is an error to supply an actual argument for which there is no standard or user-defined conversion to the type of the formal argument.
 
-     For actual arguments of class type, the formal argument is initialized by calling the class's constructor. (See [Constructors](../cpp/constructors-cpp.md) for more about these special class member functions.)
+   For actual arguments of class type, the formal argument is initialized by calling the class's constructor. (See [Constructors](../cpp/constructors-cpp.md) for more about these special class member functions.)
 
 - The function call is executed.
 
