@@ -1,7 +1,7 @@
 ---
 title: "SafeInt Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/27/2018"
+ms.date: "10/22/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["SafeInt", "SafeInt::SafeInt", "SafeInt.SafeInt"]
@@ -15,6 +15,9 @@ ms.workload: ["cplusplus", "uwp"]
 # SafeInt Class
 
 Extends the integer primitives to help prevent integer overflow and lets you compare different types of integers.
+
+> [!NOTE] 
+> The latest version of this library is located at [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt).
 
 ## Syntax
 
