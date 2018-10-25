@@ -31,10 +31,10 @@ To complete this walkthrough, you must understand the fundamentals of the C++ la
 
 1. Create a project by pointing to **New** on the **File** menu, and then clicking **Project**.
 
-1. In the **Visual C++** project types pane, click **Windows Desktop**, and then click **Windows Console Application**. 
+1. In the **Visual C++** project types pane, click **Windows Desktop**, and then click **Windows Console Application**.
 
    > [!NOTE]
-   > For versions of Visual Studio older than 2017, in the **New Project** dialog box, expand **Installed** > **Templates** > **Visual C++**, and then select **Win32**. In the center pane, select **Win32 Console Application**. 
+   > For versions of Visual Studio older than 2017, in the **New Project** dialog box, expand **Installed** > **Templates** > **Visual C++**, and then select **Win32**. In the center pane, select **Win32 Console Application**.
 
    Type a name for the project.
 

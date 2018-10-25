@@ -50,4 +50,4 @@ Leads you through the creation of a control and demonstrates some ATL fundamenta
 Sample code that shows how to use ATL to write COM objects.
 
 [OLE DB Templates](../data/oledb/ole-db-templates.md)<br/>
-Provides reference material for the OLE DB consumer and provider templates, a set of template classes that implement many commonly used OLE DB interfaces.  
+Provides reference material for the OLE DB consumer and provider templates, a set of template classes that implement many commonly used OLE DB interfaces.

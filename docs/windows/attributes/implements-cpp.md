@@ -64,21 +64,21 @@ library odod
    importlib("olepro32.dll");
 
    [
-      object,    uuid(1AECC9BB-2104-3723-98B8-7CC54722C7DD)  
+      object,    uuid(1AECC9BB-2104-3723-98B8-7CC54722C7DD)
    ]
    interface IBar1 {
       [id(1)] HRESULT bar1();
    };
 
    [
-      dual,    uuid(1AECCABB-2104-3723-98B8-7CC54722C7DD)  
+      dual,    uuid(1AECCABB-2104-3723-98B8-7CC54722C7DD)
    ]
    interface IBar2 {
       [id(1)] HRESULT bar2();
    };
 
    [
-      uuid(1AECC9CC-2104-3723-98B8-7CC54722C7DD)  
+      uuid(1AECC9CC-2104-3723-98B8-7CC54722C7DD)
    ]
    dispinterface ISna {
    properties:
@@ -88,7 +88,7 @@ library odod
    };
 
    [
-      uuid(159A9BBB-E5F1-33F6-BEF5-6CFAD7A5933F),    version(1.0)  
+      uuid(159A9BBB-E5F1-33F6-BEF5-6CFAD7A5933F),    version(1.0)
    ]
    coclass CBar {
       interface IBar1;
@@ -109,12 +109,12 @@ And the following .h file, which also needs to be available to the compiler.
 /* File created by MIDL compiler version 6.00.0361 */
 /* at Mon Feb 28 16:30:53 2005 */
 /* Compiler settings for attr_implements.idl:
-    Oicf, W1, Zp8, env=Win32 (32b run)  
+    Oicf, W1, Zp8, env=Win32 (32b run)
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data
     VC __declspec() decoration level:
-         __declspec(uuid()), __declspec(selectany), __declspec(novtable)  
-         DECLSPEC_UUID(), MIDL_INTERFACE()  
+         __declspec(uuid()), __declspec(selectany), __declspec(novtable)
+         DECLSPEC_UUID(), MIDL_INTERFACE()
 */
 //@@MIDL_FILE_HEADING(  )
 
@@ -135,7 +135,7 @@ And the following .h file, which also needs to be available to the compiler.
 #ifndef __attr_implements_h__
 #define __attr_implements_h__
 
-#if defined(_MSC_VER) && (_MSC_VER >= 1020)  
+#if defined(_MSC_VER) && (_MSC_VER >= 1020)
 #pragma once
 #endif
 
@@ -195,7 +195,7 @@ EXTERN_C const IID IID_IBar1;
 
 #if defined(__cplusplus) && !defined(CINTERFACE)
 
-    MIDL_INTERFACE("1AECC9BB-2104-3723-98B8-7CC54722C7DD")  
+    MIDL_INTERFACE("1AECC9BB-2104-3723-98B8-7CC54722C7DD")
     IBar1
     {
     public:
@@ -246,7 +246,7 @@ EXTERN_C const IID IID_IBar2;
 
 #if defined(__cplusplus) && !defined(CINTERFACE)
 
-    MIDL_INTERFACE("1AECCABB-2104-3723-98B8-7CC54722C7DD")  
+    MIDL_INTERFACE("1AECCABB-2104-3723-98B8-7CC54722C7DD")
     IBar2
     {
     public:
@@ -297,7 +297,7 @@ EXTERN_C const IID DIID_ISna;
 
 #if defined(__cplusplus) && !defined(CINTERFACE)
 
-    MIDL_INTERFACE("1AECC9CC-2104-3723-98B8-7CC54722C7DD")  
+    MIDL_INTERFACE("1AECC9CC-2104-3723-98B8-7CC54722C7DD")
     ISna : public IDispatch
     {
     };
@@ -363,7 +363,7 @@ EXTERN_C const CLSID CLSID_CBar;
 
 #ifdef __cplusplus
 
-class DECLSPEC_UUID("159A9BBB-E5F1-33F6-BEF5-6CFAD7A5933F")  
+class DECLSPEC_UUID("159A9BBB-E5F1-33F6-BEF5-6CFAD7A5933F")
 CBar;
 #endif
 #endif /* __odod_LIBRARY_DEFINED__ */
@@ -400,7 +400,7 @@ __interface IMyInterface
 };
 
 [
-   coclass, uuid("00000000-0000-0000-0000-000000000002"), implements(interfaces={IBar1,IBar2}, dispinterfaces=ISna)  
+   coclass, uuid("00000000-0000-0000-0000-000000000002"), implements(interfaces={IBar1,IBar2}, dispinterfaces=ISna)
 ]
 class CMyClass : public IMyInterface, public IBar1,    public IDispatchImpl<IBar2, &__uuidof(IBar2)>, public ISna
 {
@@ -413,7 +413,7 @@ public:
    HRESULT __stdcall bar2() { return S_OK; }
    HRESULT __stdcall sna() { return S_OK; }
 
-   virtual HRESULT STDMETHODCALLTYPE ISna::Invoke(         /* [in] */ DISPID dispIdMember,          /* [in] */ REFIID riid,          /* [in] */ LCID lcid,          /* [in] */ WORD wFlags,          /* [out][in] */ DISPPARAMS *pDispParams,          /* [out] */ VARIANT *pVarResult,          /* [out] */ EXCEPINFO *pExcepInfo,          /* [out] */ UINT *puArgErr)  
+   virtual HRESULT STDMETHODCALLTYPE ISna::Invoke(         /* [in] */ DISPID dispIdMember,          /* [in] */ REFIID riid,          /* [in] */ LCID lcid,          /* [in] */ WORD wFlags,          /* [out][in] */ DISPPARAMS *pDispParams,          /* [out] */ VARIANT *pVarResult,          /* [out] */ EXCEPINFO *pExcepInfo,          /* [out] */ UINT *puArgErr)
    {
       HRESULT hr = S_OK;
       if (pDispParams == 0) {
@@ -439,7 +439,7 @@ public:
       }
       return hr;
    }
-   virtual HRESULT STDMETHODCALLTYPE ISna::GetIDsOfNames(         /* [in] */ REFIID riid,          /* [size_is][in] */ LPOLESTR *rgszNames,          /* [in] */ UINT cNames,          /* [in] */ LCID lcid,          /* [size_is][out] */ DISPID *rgDispId)  
+   virtual HRESULT STDMETHODCALLTYPE ISna::GetIDsOfNames(         /* [in] */ REFIID riid,          /* [size_is][in] */ LPOLESTR *rgszNames,          /* [in] */ UINT cNames,          /* [in] */ LCID lcid,          /* [size_is][out] */ DISPID *rgDispId)
    {
       static LPOLESTR names[] = { L"sna" };
       static DISPID dids[] = { 1 };
@@ -458,7 +458,7 @@ public:
       }
       return S_OK;
    }
-   virtual HRESULT STDMETHODCALLTYPE ISna::GetTypeInfoCount(unsigned int*  pctinfo)  
+   virtual HRESULT STDMETHODCALLTYPE ISna::GetTypeInfoCount(unsigned int*  pctinfo)
    {
       if (pctinfo == NULL) {
          return E_POINTER;
@@ -468,22 +468,22 @@ public:
                   (SUCCEEDED(TypeInfoHelper(__uuidof(ISna), 0, &spTypeInfo))) ? 1 : 0;
       return S_OK;
    }
-   virtual HRESULT STDMETHODCALLTYPE ISna::GetTypeInfo(unsigned int iTInfo, LCID lcid, ITypeInfo** ppTInfo)  
+   virtual HRESULT STDMETHODCALLTYPE ISna::GetTypeInfo(unsigned int iTInfo, LCID lcid, ITypeInfo** ppTInfo)
    {
       if (iTInfo != 0) {
          return DISP_E_BADINDEX;
       }
       return TypeInfoHelper(__uuidof(ISna), lcid, ppTInfo);
    }
-   BEGIN_COM_MAP(CMyClass)  
-      COM_INTERFACE_ENTRY(IBar1)  
-      COM_INTERFACE_ENTRY(IBar2)  
-      COM_INTERFACE_ENTRY(ISna)  
-   END_COM_MAP()  
+   BEGIN_COM_MAP(CMyClass)
+      COM_INTERFACE_ENTRY(IBar1)
+      COM_INTERFACE_ENTRY(IBar2)
+      COM_INTERFACE_ENTRY(ISna)
+   END_COM_MAP()
 };
 ```
 
 ## See Also
 
 [Compiler Attributes](compiler-attributes.md)<br/>
-[Class Attributes](class-attributes.md)  
+[Class Attributes](class-attributes.md)

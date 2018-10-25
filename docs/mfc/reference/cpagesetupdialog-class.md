@@ -384,5 +384,3 @@ Override this function to customize the drawing of the image. If you override th
 [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

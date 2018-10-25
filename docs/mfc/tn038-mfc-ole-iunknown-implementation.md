@@ -376,7 +376,6 @@ class CAggrExample : public CCmdTarget
 public:
     CAggrExample();
 
-
 protected:
     LPUNKNOWN m_lpAggrInner;
     virtual BOOL OnCreateAggregates();

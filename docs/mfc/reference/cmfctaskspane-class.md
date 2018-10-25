@@ -197,7 +197,6 @@ int AddGroup(
     BOOL bSpecial = FALSE,
     HICON hIcon = NULL);
 
-
 int AddGroup(
     LPCTSTR lpszGroupName,
     BOOL bBottomLocation = FALSE,
@@ -307,7 +306,6 @@ The zero-based index of the new page.
 
 ##  <a name="addseparator"></a>  CMFCTasksPane::AddSeparator
 
-
 ```
 int AddSeparator(int nGroup);
 ```
@@ -402,10 +400,8 @@ CMFCTasksPane();
 
 ##  <a name="collapseallgroups"></a>  CMFCTasksPane::CollapseAllGroups
 
-
 ```
 void CollapseAllGroups(BOOL bCollapse = TRUE);
-
 
 void CollapseAllGroups(
     int nPageIdx,
@@ -427,7 +423,6 @@ Collapses or expands a group.
 BOOL CollapseGroup(
     CMFCTasksPaneTaskGroup* pGroup,
     BOOL bCollapse = TRUE);
-
 
 BOOL CollapseGroup(
     int nGroup,
@@ -454,7 +449,6 @@ TRUE if the group collapses or expands successfully; otherwise, FALSE.
 A collapsed group shows only the group caption; the list of tasks is hidden.
 
 ##  <a name="createdefaultminiframe"></a>  CMFCTasksPane::CreateDefaultMiniframe
-
 
 ```
 virtual CPaneFrameWnd* CreateDefaultMiniframe(CRect rectInitial);
@@ -574,7 +568,6 @@ The navigation toolbar is a toolbar that the framework displays at the top of th
 By default, the framework does not display the navigation toolbar. If the navigation toolbar is not displayed, the navigation buttons are located on the caption of the docking bar.
 
 ##  <a name="enableoffsetcustomcontrols"></a>  CMFCTasksPane::EnableOffsetCustomControls
-
 
 ```
 void EnableOffsetCustomControls(BOOL bEnable);
@@ -753,7 +746,6 @@ The default spacing between a task pane and the edge of the client area is 12 pi
 
 ##  <a name="getnextpages"></a>  CMFCTasksPane::GetNextPages
 
-
 ```
 void GetNextPages(CStringList& lstNextPages) const;
 ```
@@ -800,7 +792,6 @@ The number of pages in the task pane.
 
 ##  <a name="getpreviouspages"></a>  CMFCTasksPane::GetPreviousPages
 
-
 ```
 void GetPreviousPages(CStringList& lstPrevPages) const;
 ```
@@ -812,7 +803,6 @@ void GetPreviousPages(CStringList& lstPrevPages) const;
 ### Remarks
 
 ##  <a name="getscrollbarctrl"></a>  CMFCTasksPane::GetScrollBarCtrl
-
 
 ```
 virtual CScrollBar* GetScrollBarCtrl(int nBar) const;
@@ -946,7 +936,6 @@ The default horizontal offset of tasks is 12 pixels.
 
 ##  <a name="gettasksiconhorzoffset"></a>  CMFCTasksPane::GetTasksIconHorzOffset
 
-
 ```
 int GetTasksIconHorzOffset() const;
 ```
@@ -956,7 +945,6 @@ int GetTasksIconHorzOffset() const;
 ### Remarks
 
 ##  <a name="gettasksiconvertoffset"></a>  CMFCTasksPane::GetTasksIconVertOffset
-
 
 ```
 int GetTasksIconVertOffset() const;
@@ -983,7 +971,6 @@ The vertical margin between a task pane and the edges of the client area.
 The vertical margin is the space between a task pane and the edges of the client area. The default value of the vertical margin is 12 pixels.
 
 ##  <a name="isaccessibilitycompatible"></a>  CMFCTasksPane::IsAccessibilityCompatible
-
 
 ```
 virtual BOOL IsAccessibilityCompatible();
@@ -1043,7 +1030,6 @@ The forward button enables forward navigation in the history of task pages.
 
 ##  <a name="isgroupcollapseenabled"></a>  CMFCTasksPane::IsGroupCollapseEnabled
 
-
 ```
 BOOL IsGroupCollapseEnabled() const;
 ```
@@ -1077,7 +1063,6 @@ BOOL IsNavigationToolbarEnabled() const;
 TRUE if the navigation toolbar is enabled; otherwise, FALSE.
 
 ##  <a name="istoolbox"></a>  CMFCTasksPane::IsToolBox
-
 
 ```
 virtual BOOL IsToolBox() const;
@@ -1113,7 +1098,6 @@ TRUE if the task string is wrapped; otherwise, FALSE.
 
 ##  <a name="loadstate"></a>  CMFCTasksPane::LoadState
 
-
 ```
 virtual BOOL LoadState(
     LPCTSTR lpszProfileName = NULL,
@@ -1144,7 +1128,6 @@ virtual void OnActivateTasksPanePage();
 Override this method in a derived class to customize the appearance of the task pane page.
 
 ##  <a name="oncancel"></a>  CMFCTasksPane::OnCancel
-
 
 ```
 virtual void OnCancel();
@@ -1185,7 +1168,6 @@ The framework calls this method when a user clicks a task. By default, the frame
 Override this method in a derived class to execute custom code when a task is clicked.
 
 ##  <a name="onok"></a>  CMFCTasksPane::OnOK
-
 
 ```
 virtual void OnOK();
@@ -1237,7 +1219,6 @@ Override this method in a derived class to execute custom code when the user cli
 
 ##  <a name="onpressotherbutton"></a>  CMFCTasksPane::OnPressOtherButton
 
-
 ```
 virtual void OnPressOtherButton(
     CMFCCaptionMenuButton* pbtn,
@@ -1253,7 +1234,6 @@ virtual void OnPressOtherButton(
 
 ##  <a name="onsetaccdata"></a>  CMFCTasksPane::OnSetAccData
 
-
 ```
 virtual BOOL OnSetAccData(long lVal);
 ```
@@ -1267,7 +1247,6 @@ virtual BOOL OnSetAccData(long lVal);
 ### Remarks
 
 ##  <a name="onupdatecmdui"></a>  CMFCTasksPane::OnUpdateCmdUI
-
 
 ```
 virtual void OnUpdateCmdUI(
@@ -1284,7 +1263,6 @@ virtual void OnUpdateCmdUI(
 
 ##  <a name="pretranslatemessage"></a>  CMFCTasksPane::PreTranslateMessage
 
-
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```
@@ -1298,7 +1276,6 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Remarks
 
 ##  <a name="recalclayout"></a>  CMFCTasksPane::RecalcLayout
-
 
 ```
 void RecalcLayout(BOOL bRedraw = TRUE);
@@ -1408,7 +1385,6 @@ TRUE if the function succeeds; FALSE if *nGroup* or *nTask* is invalid.
 
 ##  <a name="savestate"></a>  CMFCTasksPane::SaveState
 
-
 ```
 virtual BOOL SaveState(
     LPCTSTR lpszProfileName = NULL,
@@ -1427,7 +1403,6 @@ virtual BOOL SaveState(
 ### Remarks
 
 ##  <a name="serialize"></a>  CMFCTasksPane::Serialize
-
 
 ```
 virtual void Serialize(CArchive& ar);
@@ -1708,7 +1683,6 @@ The default horizontal offset is 12 pixels.
 
 ##  <a name="settasksiconhorzoffset"></a>  CMFCTasksPane::SetTasksIconHorzOffset
 
-
 ```
 void SetTasksIconHorzOffset(int n = -1);
 ```
@@ -1720,7 +1694,6 @@ void SetTasksIconHorzOffset(int n = -1);
 ### Remarks
 
 ##  <a name="settasksiconvertoffset"></a>  CMFCTasksPane::SetTasksIconVertOffset
-
 
 ```
 void SetTasksIconVertOffset(int n = -1);
@@ -1791,7 +1764,6 @@ BOOL SetWindowHeight(
     HWND hwndTask,
     int nWndHeight);
 
-
 BOOL SetWindowHeight(
     HWND hwndTask,
     int nWndHeight);
@@ -1817,7 +1789,6 @@ TRUE if the height of the window control was successfully set; FALSE if *nGroup*
 Call [CMFCTasksPane::AddWindow](#addwindow) to add tasks with window controls.
 
 ##  <a name="showcommandmessagestring"></a>  CMFCTasksPane::ShowCommandMessageString
-
 
 ```
 virtual void ShowCommandMessageString(UINT uiCmdId);

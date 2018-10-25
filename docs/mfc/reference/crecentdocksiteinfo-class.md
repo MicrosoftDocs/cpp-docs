@@ -66,7 +66,6 @@ A `CRecentDockSiteInfo` object is created every time that a pane is created. Eac
 
 ##  <a name="cleanup"></a>  CRecentDockSiteInfo::CleanUp
 
-
 ```
 void CleanUp();
 ```
@@ -74,7 +73,6 @@ void CleanUp();
 ### Remarks
 
 ##  <a name="crecentdocksiteinfo"></a>  CRecentDockSiteInfo::CRecentDockSiteInfo
-
 
 ```
 CRecentDockSiteInfo(CPane* pBar);
@@ -88,7 +86,6 @@ CRecentDockSiteInfo(CPane* pBar);
 
 ##  <a name="getrecentdefaultpanedivider"></a>  CRecentDockSiteInfo::GetRecentDefaultPaneDivider
 
-
 ```
 CPaneDivider* GetRecentDefaultPaneDivider();
 ```
@@ -98,7 +95,6 @@ CPaneDivider* GetRecentDefaultPaneDivider();
 ### Remarks
 
 ##  <a name="getrecentdockedpercent"></a>  CRecentDockSiteInfo::GetRecentDockedPercent
-
 
 ```
 int GetRecentDockedPercent(BOOL bForSlider);
@@ -114,7 +110,6 @@ int GetRecentDockedPercent(BOOL bForSlider);
 
 ##  <a name="getrecentdockedrect"></a>  CRecentDockSiteInfo::GetRecentDockedRect
 
-
 ```
 CRect& GetRecentDockedRect(BOOL bForSlider);
 ```
@@ -128,7 +123,6 @@ CRect& GetRecentDockedRect(BOOL bForSlider);
 ### Remarks
 
 ##  <a name="getrecentlistofpanes"></a>  CRecentDockSiteInfo::GetRecentListOfPanes
-
 
 ```
 CList<HWND, HWND>& GetRecentListOfPanes(BOOL bForSlider);
@@ -144,7 +138,6 @@ CList<HWND, HWND>& GetRecentListOfPanes(BOOL bForSlider);
 
 ##  <a name="getrecentpanecontainer"></a>  CRecentDockSiteInfo::GetRecentPaneContainer
 
-
 ```
 CPaneContainer* GetRecentPaneContainer(BOOL bForSlider);
 ```
@@ -158,7 +151,6 @@ CPaneContainer* GetRecentPaneContainer(BOOL bForSlider);
 ### Remarks
 
 ##  <a name="getrecenttabcontainer"></a>  CRecentDockSiteInfo::GetRecentTabContainer
-
 
 ```
 CPaneContainer* GetRecentTabContainer(BOOL bForSlider);
@@ -174,7 +166,6 @@ CPaneContainer* GetRecentTabContainer(BOOL bForSlider);
 
 ##  <a name="init"></a>  CRecentDockSiteInfo::Init
 
-
 ```
 void Init();
 ```
@@ -182,7 +173,6 @@ void Init();
 ### Remarks
 
 ##  <a name="isrecentleftpane"></a>  CRecentDockSiteInfo::IsRecentLeftPane
-
 
 ```
 BOOL IsRecentLeftPane(BOOL bForSlider);
@@ -198,7 +188,6 @@ BOOL IsRecentLeftPane(BOOL bForSlider);
 
 ##  <a name="operator_eq"></a>  CRecentDockSiteInfo::operator =
 
-
 ```
 CRecentDockSiteInfo& operator=(CRecentDockSiteInfo& src);
 ```
@@ -212,7 +201,6 @@ CRecentDockSiteInfo& operator=(CRecentDockSiteInfo& src);
 ### Remarks
 
 ##  <a name="savelistofrecentpanes"></a>  CRecentDockSiteInfo::SaveListOfRecentPanes
-
 
 ```
 void SaveListOfRecentPanes(CList<HWND,
@@ -230,7 +218,6 @@ void SaveListOfRecentPanes(CList<HWND,
 
 ##  <a name="setinfo"></a>  CRecentDockSiteInfo::SetInfo
 
-
 ```
 virtual void SetInfo(
     BOOL bForSlider,
@@ -245,7 +232,6 @@ virtual void SetInfo(
 ### Remarks
 
 ##  <a name="storedockinfo"></a>  CRecentDockSiteInfo::StoreDockInfo
-
 
 ```
 virtual void StoreDockInfo(

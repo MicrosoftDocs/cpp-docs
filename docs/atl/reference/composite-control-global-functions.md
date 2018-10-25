@@ -33,11 +33,11 @@ These functions provide support for creating dialog boxes, and for creating, hos
 |[AtlSetChildSite](#atlsetchildsite)|Initializes the `IUnknown` of the child site.|
 |[AtlAxWinInit](#atlaxwininit)|Initializes the hosting code for AxWin objects.|
 |[AtlAxWinTerm](#atlaxwinterm)|Uninitializes the hosting code for AxWin objects.|
-|[AtlGetObjectSourceInterface](#atlgetobjectsourceinterface)|Returns information about the default source interface of an object.|  
+|[AtlGetObjectSourceInterface](#atlgetobjectsourceinterface)|Returns information about the default source interface of an object.|
 
 ## Requirements
 
-**Header:** atlhost.h  
+**Header:** atlhost.h
 
 ##  <a name="atlaxdialogbox"></a>  AtlAxDialogBox
 
@@ -78,7 +78,7 @@ One of the standard HRESULT values.
 To use `AtlAxDialogBox` with a dialog template that contains an ActiveX control, specify a valid CLSID, APPID or URL string as the *text* field of the **CONTROL** section of the dialog resource, along with "AtlAxWin80" as the *class name* field under the same section. The following demonstrates what a valid **CONTROL** section might look like:
 
 ```
-CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,  
+CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,
     "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100
 ```
 
@@ -238,7 +238,7 @@ To create a licensed ActiveX control, see [AtlAxCreateControlLicEx](#atlaxcreate
 
 ##  <a name="atlaxcreatecontrollic"></a>  AtlAxCreateControlLic
 
-Creates a licensed ActiveX control, initializes it, and hosts it in the specified window.  
+Creates a licensed ActiveX control, initializes it, and hosts it in the specified window.
 
 ```
 ATLAPI AtlAxCreateControlLic(
@@ -461,7 +461,7 @@ Nonzero if the initialization of the control hosting code was successful; otherw
 
 ### Remarks
 
-This function must be called before using the ATL control hosting API. Following a call to this function, the **"AtlAxWin"** window class can be used in calls to [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) or [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa), as described in the Windows SDK.  
+This function must be called before using the ATL control hosting API. Following a call to this function, the **"AtlAxWin"** window class can be used in calls to [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) or [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa), as described in the Windows SDK.
 
 ##  <a name="atlaxwinterm"></a>  AtlAxWinTerm
 

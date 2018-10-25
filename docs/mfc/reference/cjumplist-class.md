@@ -85,11 +85,9 @@ BOOL AddDestination(
     LPCTSTR lpcszCategoryName,
     LPCTSTR strDestinationPath);
 
-
 BOOL AddDestination(
     LPCTSTR strCategoryName,
     IShellItem* pShellItem);
-
 
 BOOL AddDestination(
     LPCTSTR strCategoryName,

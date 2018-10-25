@@ -90,7 +90,6 @@ The following example demonstrates how to use the `Create` method in the `CMFCDr
 
 ##  <a name="allowshowonpanemenu"></a>  CMFCDropDownToolBar::AllowShowOnPaneMenu
 
-
 ```
 virtual BOOL AllowShowOnPaneMenu() const;
 ```
@@ -145,7 +144,6 @@ Call the `LoadBitmapEx` method to load additional images after you create the to
 
 ##  <a name="loadtoolbar"></a>  CMFCDropDownToolBar::LoadToolBar
 
-
 ```
 virtual BOOL LoadToolBar(
     UINT uiResID,
@@ -179,7 +177,6 @@ virtual BOOL LoadToolBar(
 
 ##  <a name="onlbuttonup"></a>  CMFCDropDownToolBar::OnLButtonUp
 
-
 ```
 afx_msg void OnLButtonUp(
     UINT nFlags,
@@ -195,7 +192,6 @@ afx_msg void OnLButtonUp(
 ### Remarks
 
 ##  <a name="onmousemove"></a>  CMFCDropDownToolBar::OnMouseMove
-
 
 ```
 afx_msg void OnMouseMove(
@@ -213,7 +209,6 @@ afx_msg void OnMouseMove(
 
 ##  <a name="onsendcommand"></a>  CMFCDropDownToolBar::OnSendCommand
 
-
 ```
 virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 ```
@@ -227,7 +222,6 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 ### Remarks
 
 ##  <a name="onupdatecmdui"></a>  CMFCDropDownToolBar::OnUpdateCmdUI
-
 
 ```
 virtual void OnUpdateCmdUI(
@@ -252,6 +246,4 @@ virtual void OnUpdateCmdUI(
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
 [CMFCDropDownToolbarButton Class](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md)<br/>
 [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-
-
 

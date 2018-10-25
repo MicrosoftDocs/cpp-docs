@@ -21,17 +21,17 @@ To determine which synchronization class you should use, ask the following serie
 
 1. Does the application have to wait for something to happen before it can access the resource (for example, data must be received from a communications port before it can be written to a file)?
 
-     If yes, use `CEvent`.
+   If yes, use `CEvent`.
 
 2. Can more than one thread within the same application access this resource at one time (for example, your application allows up to five windows with views on the same document)?
 
-     If yes, use `CSemaphore`.
+   If yes, use `CSemaphore`.
 
 3. Can more than one application use this resource (for example, the resource is in a DLL)?
 
-     If yes, use `CMutex`.
+   If yes, use `CMutex`.
 
-     If no, use `CCriticalSection`.
+   If no, use `CCriticalSection`.
 
 `CSyncObject` is never used directly. It is the base class for the other four synchronization classes.
 

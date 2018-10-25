@@ -39,7 +39,7 @@ This topic assumes you have previously completed [How to: Create the User Contro
     partial class UserControl1
     ```
 
-     to this:
+   to this:
 
     ```
     partial class UserControl1 : System.Windows.Forms.UserControl, ICommandTarget
@@ -72,19 +72,19 @@ This topic assumes you have previously completed [How to: Create the User Contro
 
 1. Add a menu option that will invoke `singleMenuHandler`.
 
-     Go to **Resource View** (Ctrl+Shift+E), expand the **Menu** folder, and then double-click **IDR_MFC02TYPE**. This displays the menu editor.
+   Go to **Resource View** (Ctrl+Shift+E), expand the **Menu** folder, and then double-click **IDR_MFC02TYPE**. This displays the menu editor.
 
-     Add a menu option at the bottom of the **View** menu. Notice the ID of the menu option in the **Properties** window. Save the file.
+   Add a menu option at the bottom of the **View** menu. Notice the ID of the menu option in the **Properties** window. Save the file.
 
-     In **Solution Explorer**, open the Resource.h file, copy the ID value for the menu option you just added, and paste that value as the first parameter to the `m_CmdSrc.AddCommandHandler` call in the C# project's `Initialize` method (replacing `32771` if necessary).
+   In **Solution Explorer**, open the Resource.h file, copy the ID value for the menu option you just added, and paste that value as the first parameter to the `m_CmdSrc.AddCommandHandler` call in the C# project's `Initialize` method (replacing `32771` if necessary).
 
 9. Build and run the project.
 
-     On the **Build** menu, click **Build Solution**.
+   On the **Build** menu, click **Build Solution**.
 
-     On the **Debug** menu, click **Start without debugging**.
+   On the **Debug** menu, click **Start without debugging**.
 
-     Select the menu option you added. Notice that the method in the .dll is called.
+   Select the menu option you added. Notice that the method in the .dll is called.
 
 ## See Also
 

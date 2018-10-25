@@ -59,7 +59,7 @@ The benefit of this class is that it provides a convenient way to change the sta
 
 ##  <a name="execute"></a>  CNonStatelessWorker::Execute
 
-Implementation of [WorkerArchetype::Execute](worker-archetype.md#execute).  
+Implementation of [WorkerArchetype::Execute](worker-archetype.md#execute).
 
 ```
 void Execute(
@@ -70,7 +70,7 @@ void Execute(
 
 ### Remarks
 
-This method creates an instance of the *Worker* class on the stack and calls [Initialize](worker-archetype.md#initialize) on that object. If the initialization is successful, this method also calls [Execute](worker-archetype.md#execute) and [Terminate](worker-archetype.md#terminate) on the same object.  
+This method creates an instance of the *Worker* class on the stack and calls [Initialize](worker-archetype.md#initialize) on that object. If the initialization is successful, this method also calls [Execute](worker-archetype.md#execute) and [Terminate](worker-archetype.md#terminate) on the same object.
 
 ##  <a name="initialize"></a>  CNonStatelessWorker::Initialize
 

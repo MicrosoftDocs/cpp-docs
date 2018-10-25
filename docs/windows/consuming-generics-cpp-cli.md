@@ -60,9 +60,9 @@ public class CircularList<ItemType> {
          first =
          last.next = first.next;
       }
-      for ( ; iter != last ; iter = iter.next )  
+      for ( ; iter != last ; iter = iter.next )
          if (iter.next.m_item.Equals( item )) {
-              if (iter.next == last)  
+              if (iter.next == last)
                   last = iter;
               iter.next = iter.next.next;
               return;
@@ -99,7 +99,7 @@ int main() {
    CircularList<int>^ circ1 = gcnew CircularList<int>();
    CircularList<MgdClass^>^ circ2 = gcnew CircularList<MgdClass^>();
 
-   for (int i = 0 ; i < 100 ; i += 10)  
+   for (int i = 0 ; i < 100 ; i += 10)
       circ1->Add(i);
    circ1->Remove(50);
    circ1->PrintAll();

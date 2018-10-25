@@ -54,7 +54,7 @@ This list describes how to use **const** and `volatile`.
 
 - The compiler assumes that, at any point in the program, a `volatile` variable can be accessed by an unknown process that uses or modifies its value. Therefore, regardless of the optimizations specified on the command line, the code for each assignment to or reference of a `volatile` variable must be generated even if it appears to have no effect.
 
-     If `volatile` is used alone, `int` is assumed. The `volatile` type specifier can be used to provide reliable access to special memory locations. Use `volatile` with data objects that may be accessed or altered by signal handlers, by concurrently executing programs, or by special hardware such as memory-mapped I/O control registers. You can declare a variable as `volatile` for its lifetime, or you can cast a single reference to be `volatile`.
+   If `volatile` is used alone, `int` is assumed. The `volatile` type specifier can be used to provide reliable access to special memory locations. Use `volatile` with data objects that may be accessed or altered by signal handlers, by concurrently executing programs, or by special hardware such as memory-mapped I/O control registers. You can declare a variable as `volatile` for its lifetime, or you can cast a single reference to be `volatile`.
 
 - An item can be both **const** and `volatile`, in which case the item could not be legitimately modified by its own program, but could be modified by some asynchronous process.
 

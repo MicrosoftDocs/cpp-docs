@@ -13,10 +13,10 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Schema Rowsets
 
-Schema (or metadata) is any information about a database's structure or organization, such as information on the provider, rowset, table, columns, or other information aside from the actual database content. OLE DB allows you to obtain such information without opening the rowset by using schema rowsets.  
-  
-For information about how to use schema rowsets, see [Obtaining Metadata with Schema Rowsets](../../data/oledb/obtaining-metadata-with-schema-rowsets.md).  
-  
-## See Also  
+Schema (or metadata) is any information about a database's structure or organization, such as information on the provider, rowset, table, columns, or other information aside from the actual database content. OLE DB allows you to obtain such information without opening the rowset by using schema rowsets.
+
+For information about how to use schema rowsets, see [Obtaining Metadata with Schema Rowsets](../../data/oledb/obtaining-metadata-with-schema-rowsets.md).
+
+## See Also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)

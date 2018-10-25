@@ -67,7 +67,6 @@ The following example demonstrates how to construct and initialize a `CMenuTearO
 
 ##  <a name="build"></a>  CMenuTearOffManager::Build
 
-
 ```
 void Build(
     UINT uiTearOffBarID,
@@ -95,7 +94,6 @@ CMenuTearOffManager();
 In most cases, you should not create a `CMenuTearOffManager` manually. The framework of your application creates the `CMenuTearOffManager` object when you call [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus).
 
 ##  <a name="getregpath"></a>  CMenuTearOffManager::GetRegPath
-
 
 ```
 LPCTSTR GetRegPath() const;
@@ -137,7 +135,6 @@ The range of menu IDs from *uiTearOffMenuFirst* to *uiTearOffMenuLast* must be a
 
 ##  <a name="isdynamicid"></a>  CMenuTearOffManager::IsDynamicID
 
-
 ```
 BOOL IsDynamicID(UINT uiID) const;
 ```
@@ -151,7 +148,6 @@ BOOL IsDynamicID(UINT uiID) const;
 ### Remarks
 
 ##  <a name="parse"></a>  CMenuTearOffManager::Parse
-
 
 ```
 UINT Parse(CString& str);
@@ -167,7 +163,6 @@ UINT Parse(CString& str);
 
 ##  <a name="reset"></a>  CMenuTearOffManager::Reset
 
-
 ```
 void Reset(HMENU hmenu);
 ```
@@ -179,7 +174,6 @@ void Reset(HMENU hmenu);
 ### Remarks
 
 ##  <a name="setinuse"></a>  CMenuTearOffManager::SetInUse
-
 
 ```
 void SetInUse(
@@ -196,7 +190,6 @@ void SetInUse(
 ### Remarks
 
 ##  <a name="setuptearoffmenus"></a>  CMenuTearOffManager::SetupTearOffMenus
-
 
 ```
 void SetupTearOffMenus(HMENU hMenu);

@@ -43,7 +43,7 @@ Returns the handle to a device context for the device specified in the `DVTARGET
 
 If the structure is NULL and *hdc* is NULL, creates a device context for the default display device.
 
-If *hdc* is not NULL and *ptd* is NULL, the function returns the existing *hdc*.  
+If *hdc* is not NULL and *ptd* is NULL, the function returns the existing *hdc*.
 
 ## Requirements
 

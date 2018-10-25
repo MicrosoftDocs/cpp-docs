@@ -116,7 +116,6 @@ The following example demonstrates how to construct an instance of the `CPaneCon
 
 ##  <a name="addpane"></a>  CPaneContainer::AddPane
 
-
 ```
 CDockablePane* AddPane(CDockablePane* pBar);
 ```
@@ -131,7 +130,6 @@ CDockablePane* AddPane(CDockablePane* pBar);
 
 ##  <a name="addref"></a>  CPaneContainer::AddRef
 
-
 ```
 void AddRef();
 ```
@@ -139,7 +137,6 @@ void AddRef();
 ### Remarks
 
 ##  <a name="addsubpanecontainer"></a>  CPaneContainer::AddSubPaneContainer
-
 
 ```
 BOOL AddSubPaneContainer(
@@ -157,7 +154,6 @@ BOOL AddSubPaneContainer(
 ### Remarks
 
 ##  <a name="calcavailablepanespace"></a>  CPaneContainer::CalcAvailablePaneSpace
-
 
 ```
 virtual int CalcAvailablePaneSpace(
@@ -180,7 +176,6 @@ virtual int CalcAvailablePaneSpace(
 
 ##  <a name="calcavailablespace"></a>  CPaneContainer::CalcAvailableSpace
 
-
 ```
 virtual CSize CalcAvailableSpace(
     CSize sizeStretch,
@@ -198,7 +193,6 @@ virtual CSize CalcAvailableSpace(
 
 ##  <a name="calculaterecentsize"></a>  CPaneContainer::CalculateRecentSize
 
-
 ```
 void CalculateRecentSize();
 ```
@@ -207,7 +201,6 @@ void CalculateRecentSize();
 
 ##  <a name="checkpanedividervisibility"></a>  CPaneContainer::CheckPaneDividerVisibility
 
-
 ```
 void CheckPaneDividerVisibility();
 ```
@@ -215,7 +208,6 @@ void CheckPaneDividerVisibility();
 ### Remarks
 
 ##  <a name="copy"></a>  CPaneContainer::Copy
-
 
 ```
 virtual CPaneContainer* Copy(CPaneContainer* pParentContainer);
@@ -230,7 +222,6 @@ virtual CPaneContainer* Copy(CPaneContainer* pParentContainer);
 ### Remarks
 
 ##  <a name="cpanecontainer"></a>  CPaneContainer::CPaneContainer
-
 
 ```
 CPaneContainer(
@@ -251,7 +242,6 @@ CPaneContainer(
 
 ##  <a name="deletepane"></a>  CPaneContainer::DeletePane
 
-
 ```
 virtual void DeletePane(
     CDockablePane* pBar,
@@ -266,7 +256,6 @@ virtual void DeletePane(
 ### Remarks
 
 ##  <a name="findsubpanecontainer"></a>  CPaneContainer::FindSubPaneContainer
-
 
 ```
 CPaneContainer* FindSubPaneContainer(
@@ -285,7 +274,6 @@ CPaneContainer* FindSubPaneContainer(
 
 ##  <a name="findtabbedpane"></a>  CPaneContainer::FindTabbedPane
 
-
 ```
 CDockablePane* FindTabbedPane(UINT nID);
 ```
@@ -299,7 +287,6 @@ CDockablePane* FindTabbedPane(UINT nID);
 ### Remarks
 
 ##  <a name="getassociatedsiblingpaneids"></a>  CPaneContainer::GetAssociatedSiblingPaneIDs
-
 
 ```
 CList<UINT, UINT>* GetAssociatedSiblingPaneIDs(CDockablePane* pBar);
@@ -315,7 +302,6 @@ CList<UINT, UINT>* GetAssociatedSiblingPaneIDs(CDockablePane* pBar);
 
 ##  <a name="getleftpane"></a>  CPaneContainer::GetLeftPane
 
-
 ```
 const CDockablePane* GetLeftPane() const;
 ```
@@ -326,7 +312,6 @@ const CDockablePane* GetLeftPane() const;
 
 ##  <a name="getleftpanecontainer"></a>  CPaneContainer::GetLeftPaneContainer
 
-
 ```
 const CPaneContainer* GetLeftPaneContainer() const;
 ```
@@ -336,7 +321,6 @@ const CPaneContainer* GetLeftPaneContainer() const;
 ### Remarks
 
 ##  <a name="getminsize"></a>  CPaneContainer::GetMinSize
-
 
 ```
 virtual void GetMinSize(CSize& size) const;
@@ -350,7 +334,6 @@ virtual void GetMinSize(CSize& size) const;
 
 ##  <a name="getminsizeleft"></a>  CPaneContainer::GetMinSizeLeft
 
-
 ```
 virtual void GetMinSizeLeft(CSize& size) const;
 ```
@@ -362,7 +345,6 @@ virtual void GetMinSizeLeft(CSize& size) const;
 ### Remarks
 
 ##  <a name="getminsizeright"></a>  CPaneContainer::GetMinSizeRight
-
 
 ```
 virtual void GetMinSizeRight(CSize& size) const;
@@ -376,7 +358,6 @@ virtual void GetMinSizeRight(CSize& size) const;
 
 ##  <a name="getnodecount"></a>  CPaneContainer::GetNodeCount
 
-
 ```
 int GetNodeCount() const;
 ```
@@ -386,7 +367,6 @@ int GetNodeCount() const;
 ### Remarks
 
 ##  <a name="getpanedivider"></a>  CPaneContainer::GetPaneDivider
-
 
 ```
 const CPaneDivider* GetPaneDivider() const;
@@ -398,7 +378,6 @@ const CPaneDivider* GetPaneDivider() const;
 
 ##  <a name="getparentpanecontainer"></a>  CPaneContainer::GetParentPaneContainer
 
-
 ```
 CPaneContainer* GetParentPaneContainer() const;
 ```
@@ -408,7 +387,6 @@ CPaneContainer* GetParentPaneContainer() const;
 ### Remarks
 
 ##  <a name="getrecentpanedividerrect"></a>  CPaneContainer::GetRecentPaneDividerRect
-
 
 ```
 CRect GetRecentPaneDividerRect() const;
@@ -420,7 +398,6 @@ CRect GetRecentPaneDividerRect() const;
 
 ##  <a name="getrecentpanedividerstyle"></a>  CPaneContainer::GetRecentPaneDividerStyle
 
-
 ```
 DWORD GetRecentPaneDividerStyle() const;
 ```
@@ -430,7 +407,6 @@ DWORD GetRecentPaneDividerStyle() const;
 ### Remarks
 
 ##  <a name="getrecentpercent"></a>  CPaneContainer::GetRecentPercent
-
 
 ```
 int GetRecentPercent();
@@ -442,7 +418,6 @@ int GetRecentPercent();
 
 ##  <a name="getrefcount"></a>  CPaneContainer::GetRefCount
 
-
 ```
 LONG GetRefCount();
 ```
@@ -452,7 +427,6 @@ LONG GetRefCount();
 ### Remarks
 
 ##  <a name="getresizestep"></a>  CPaneContainer::GetResizeStep
-
 
 ```
 virtual int GetResizeStep() const;
@@ -464,7 +438,6 @@ virtual int GetResizeStep() const;
 
 ##  <a name="getrightpane"></a>  CPaneContainer::GetRightPane
 
-
 ```
 const CDockablePane* GetRightPane() const;
 ```
@@ -474,7 +447,6 @@ const CDockablePane* GetRightPane() const;
 ### Remarks
 
 ##  <a name="getrightpanecontainer"></a>  CPaneContainer::GetRightPaneContainer
-
 
 ```
 const CPaneContainer* GetRightPaneContainer() const;
@@ -486,7 +458,6 @@ const CPaneContainer* GetRightPaneContainer() const;
 
 ##  <a name="gettotalreferencecount"></a>  CPaneContainer::GetTotalReferenceCount
 
-
 ```
 int GetTotalReferenceCount() const;
 ```
@@ -496,7 +467,6 @@ int GetTotalReferenceCount() const;
 ### Remarks
 
 ##  <a name="getwindowrect"></a>  CPaneContainer::GetWindowRect
-
 
 ```
 virtual void GetWindowRect(
@@ -513,7 +483,6 @@ virtual void GetWindowRect(
 
 ##  <a name="isdisposed"></a>  CPaneContainer::IsDisposed
 
-
 ```
 BOOL IsDisposed() const;
 ```
@@ -524,7 +493,6 @@ BOOL IsDisposed() const;
 
 ##  <a name="isempty"></a>  CPaneContainer::IsEmpty
 
-
 ```
 BOOL IsEmpty() const;
 ```
@@ -534,7 +502,6 @@ BOOL IsEmpty() const;
 ### Remarks
 
 ##  <a name="isleftpane"></a>  CPaneContainer::IsLeftPane
-
 
 ```
 BOOL IsLeftPane(CDockablePane* pBar) const;
@@ -550,7 +517,6 @@ BOOL IsLeftPane(CDockablePane* pBar) const;
 
 ##  <a name="isleftpanecontainer"></a>  CPaneContainer::IsLeftPaneContainer
 
-
 ```
 BOOL IsLeftPaneContainer() const;
 ```
@@ -560,7 +526,6 @@ BOOL IsLeftPaneContainer() const;
 ### Remarks
 
 ##  <a name="isleftpartempty"></a>  CPaneContainer::IsLeftPartEmpty
-
 
 ```
 BOOL IsLeftPartEmpty(BOOL bCheckVisibility = FALSE) const;
@@ -576,7 +541,6 @@ BOOL IsLeftPartEmpty(BOOL bCheckVisibility = FALSE) const;
 
 ##  <a name="isrightpartempty"></a>  CPaneContainer::IsRightPartEmpty
 
-
 ```
 BOOL IsRightPartEmpty(BOOL bCheckVisibility = FALSE) const;
 ```
@@ -591,7 +555,6 @@ BOOL IsRightPartEmpty(BOOL bCheckVisibility = FALSE) const;
 
 ##  <a name="isvisible"></a>  CPaneContainer::IsVisible
 
-
 ```
 BOOL IsVisible() const;
 ```
@@ -601,7 +564,6 @@ BOOL IsVisible() const;
 ### Remarks
 
 ##  <a name="move"></a>  CPaneContainer::Move
-
 
 ```
 virtual void Move(CPoint ptNewLeftTop);
@@ -614,7 +576,6 @@ virtual void Move(CPoint ptNewLeftTop);
 ### Remarks
 
 ##  <a name="ondeletehidepane"></a>  CPaneContainer::OnDeleteHidePane
-
 
 ```
 void OnDeleteHidePane(
@@ -630,7 +591,6 @@ void OnDeleteHidePane(
 ### Remarks
 
 ##  <a name="onmoveinternalpanedivider"></a>  CPaneContainer::OnMoveInternalPaneDivider
-
 
 ```
 virtual int OnMoveInternalPaneDivider(
@@ -649,7 +609,6 @@ virtual int OnMoveInternalPaneDivider(
 
 ##  <a name="onshowpane"></a>  CPaneContainer::OnShowPane
 
-
 ```
 virtual void OnShowPane(
     CDockablePane* pBar,
@@ -665,7 +624,6 @@ virtual void OnShowPane(
 
 ##  <a name="release"></a>  CPaneContainer::Release
 
-
 ```
 DWORD Release();
 ```
@@ -676,7 +634,6 @@ DWORD Release();
 
 ##  <a name="releaseemptypanecontainer"></a>  CPaneContainer::ReleaseEmptyPaneContainer
 
-
 ```
 void ReleaseEmptyPaneContainer();
 ```
@@ -685,7 +642,6 @@ void ReleaseEmptyPaneContainer();
 
 ##  <a name="removenonvalidpanes"></a>  CPaneContainer::RemoveNonValidPanes
 
-
 ```
 void RemoveNonValidPanes();
 ```
@@ -693,7 +649,6 @@ void RemoveNonValidPanes();
 ### Remarks
 
 ##  <a name="removepane"></a>  CPaneContainer::RemovePane
-
 
 ```
 virtual void RemovePane(CDockablePane* pBar);
@@ -706,7 +661,6 @@ virtual void RemovePane(CDockablePane* pBar);
 ### Remarks
 
 ##  <a name="resize"></a>  CPaneContainer::Resize
-
 
 ```
 virtual void Resize(
@@ -724,7 +678,6 @@ virtual void Resize(
 ### Remarks
 
 ##  <a name="resizepane"></a>  CPaneContainer::ResizePane
-
 
 ```
 virtual void ResizePane(
@@ -749,7 +702,6 @@ virtual void ResizePane(
 
 ##  <a name="resizepartofpanecontainer"></a>  CPaneContainer::ResizePartOfPaneContainer
 
-
 ```
 virtual void ResizePartOfPaneContainer(
     int nOffset,
@@ -767,7 +719,6 @@ virtual void ResizePartOfPaneContainer(
 
 ##  <a name="serialize"></a>  CPaneContainer::Serialize
 
-
 ```
 void Serialize(CArchive& ar);
 ```
@@ -779,7 +730,6 @@ void Serialize(CArchive& ar);
 ### Remarks
 
 ##  <a name="setpane"></a>  CPaneContainer::SetPane
-
 
 ```
 void SetPane(
@@ -796,7 +746,6 @@ void SetPane(
 
 ##  <a name="setpanecontainer"></a>  CPaneContainer::SetPaneContainer
 
-
 ```
 void SetPaneContainer(
     CPaneContainer* pContainer,
@@ -812,7 +761,6 @@ void SetPaneContainer(
 
 ##  <a name="setpanedivider"></a>  CPaneContainer::SetPaneDivider
 
-
 ```
 void SetPaneDivider(CPaneDivider* pSlider);
 ```
@@ -824,7 +772,6 @@ void SetPaneDivider(CPaneDivider* pSlider);
 ### Remarks
 
 ##  <a name="setparentpanecontainer"></a>  CPaneContainer::SetParentPaneContainer
-
 
 ```
 void SetParentPaneContainer(CPaneContainer* p);
@@ -838,7 +785,6 @@ void SetParentPaneContainer(CPaneContainer* p);
 
 ##  <a name="setrecentpercent"></a>  CPaneContainer::SetRecentPercent
 
-
 ```
 void SetRecentPercent(int nRecentPercent);
 ```
@@ -850,7 +796,6 @@ void SetRecentPercent(int nRecentPercent);
 ### Remarks
 
 ##  <a name="setupbyid"></a>  CPaneContainer::SetUpByID
-
 
 ```
 BOOL SetUpByID(
@@ -869,7 +814,6 @@ BOOL SetUpByID(
 
 ##  <a name="storerecentdocksiteinfo"></a>  CPaneContainer::StoreRecentDockSiteInfo
 
-
 ```
 virtual void StoreRecentDockSiteInfo(CDockablePane* pBar);
 ```
@@ -881,7 +825,6 @@ virtual void StoreRecentDockSiteInfo(CDockablePane* pBar);
 ### Remarks
 
 ##  <a name="stretchpanecontainer"></a>  CPaneContainer::StretchPaneContainer
-
 
 ```
 virtual int StretchPaneContainer(

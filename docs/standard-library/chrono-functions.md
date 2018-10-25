@@ -12,7 +12,6 @@ ms.assetid: d6800e15-77a1-4df3-900e-d8b2fee190c7
 |-|-|-|
 |[duration_cast](#duration_cast)|[time_point_cast](#time_point_cast)|
 
-
 ## <a name="duration_cast"></a>  duration_cast
 
 Casts a `duration` object to a specified type.

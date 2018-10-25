@@ -207,5 +207,3 @@ The filename for the enhanced metafile should use the .EMF extension.
 [CDC Class](../../mfc/reference/cdc-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

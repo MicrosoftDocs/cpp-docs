@@ -19,4 +19,4 @@ ms.workload: ["cplusplus", "uwp"]
 
 ## See Also
 
-[Attributes Alphabetical Reference](attributes-alphabetical-reference.md)  
+[Attributes Alphabetical Reference](attributes-alphabetical-reference.md)

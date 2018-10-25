@@ -68,4 +68,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 ## See Also
 
 [COM Attributes](com-attributes.md)<br/>
-[implements_category](implements-category.md)  
+[implements_category](implements-category.md)

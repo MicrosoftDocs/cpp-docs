@@ -231,5 +231,3 @@ For more information, see [IStorage::OpenStream](/windows/desktop/api/objidl/nf-
 [CFile Class](../../mfc/reference/cfile-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

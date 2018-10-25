@@ -25,15 +25,15 @@ This article explains what you must do to implement in-place frame windows in yo
 
 1. Declare a `COleResizeBar` member in the frame-window class. This is needed if you want to support in-place resizing in server applications.
 
-     Declare an `OnCreate` message handler (using the **Properties** window), and call `Create` for your `COleResizeBar` member, if you've defined it.
+   Declare an `OnCreate` message handler (using the **Properties** window), and call `Create` for your `COleResizeBar` member, if you've defined it.
 
 1. If you have a toolbar, declare a `CToolBar` member in the frame-window class.
 
-     Override the `OnCreateControlBars` member function to create a toolbar when the server is active in place. For example:
+   Override the `OnCreateControlBars` member function to create a toolbar when the server is active in place. For example:
 
-     [!code-cpp[NVC_MFCOleServer#1](../mfc/codesnippet/cpp/servers-implementing-in-place-frame-windows_1.cpp)]
+   [!code-cpp[NVC_MFCOleServer#1](../mfc/codesnippet/cpp/servers-implementing-in-place-frame-windows_1.cpp)]
 
-     See the discussion of this code following step 5.
+   See the discussion of this code following step 5.
 
 1. Include the header file for this in-place frame-window class in your main .cpp file.
 

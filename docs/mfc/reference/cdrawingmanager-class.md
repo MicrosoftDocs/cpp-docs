@@ -640,7 +640,6 @@ static double __stdcall HuetoRGB(
     double m2,
     double h);
 
-
 static BYTE __stdcall HueToRGB(
     float rm1,
     float rm2,

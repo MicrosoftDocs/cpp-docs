@@ -269,7 +269,6 @@ The standard verb index is of the form `OLEIVERB_`, followed by an action. OLEIV
 
 See [ON_OLEVERB](#on_oleverb) for a description of the function prototype to be used as the *memberFxn* parameter.
 
-
 ### Requirements
 
 **Header** afxole.h

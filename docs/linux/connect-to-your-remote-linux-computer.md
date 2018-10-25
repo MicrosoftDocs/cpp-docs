@@ -21,7 +21,7 @@ When building a C++ Linux project in Visual Studio, Linux code is copied to your
    ![Connection Manager](media/settings_connectionmanager.png)
 
    In either scenario, the **Connect to Remote System** window will be displayed.
-   
+
    ![Connect to Remote System](media/connect.png)
 
 1. Enter the following information:

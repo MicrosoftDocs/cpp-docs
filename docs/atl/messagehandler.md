@@ -20,9 +20,9 @@ ms.workload: ["cplusplus"]
 
 ```
 LRESULT MessageHandler(
-    UINT uMsg,  
-    WPARAM wParam,  
-    LPARAM lParam,  
+    UINT uMsg,
+    WPARAM wParam,
+    LPARAM lParam,
     BOOL& bHandled);
 ```
 

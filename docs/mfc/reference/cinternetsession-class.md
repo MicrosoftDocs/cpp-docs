@@ -209,7 +209,6 @@ static BOOL GetCookie(
     LPTSTR pstrCookieData,
     DWORD dwBufLen);
 
-
 static BOOL GetCookie(
     LPCTSTR pstrUrl,
     LPCTSTR pstrCookieName,
@@ -564,7 +563,6 @@ BOOL SetOption(
     LPVOID lpBuffer,
     DWORD dwBufferLength,
     DWORD dwFlags = 0);
-
 
 BOOL SetOption(
     DWORD dwOption,

@@ -113,7 +113,6 @@ explicit CDialog(
     LPCTSTR lpszTemplateName,
     CWnd* pParentWnd = NULL);
 
-
 explicit CDialog(
     UINT nIDTemplate,
     CWnd* pParentWnd = NULL);
@@ -150,7 +149,6 @@ Call `Create` to create a modeless dialog box using a dialog-box template from a
 virtual BOOL Create(
     LPCTSTR lpszTemplateName,
     CWnd* pParentWnd = NULL);
-
 
 virtual BOOL Create(
     UINT nIDTemplate,
@@ -199,7 +197,6 @@ virtual BOOL CreateIndirect(
     LPCDLGTEMPLATE lpDialogTemplate,
     CWnd* pParentWnd = NULL,
     void* lpDialogInit = NULL);
-
 
 virtual BOOL CreateIndirect(
     HGLOBAL hDialogTemplate,
@@ -332,7 +329,6 @@ BOOL InitModalIndirect(
     LPCDLGTEMPLATE lpDialogTemplate,
     CWnd* pParentWnd = NULL,
     void* lpDialogInit = NULL);
-
 
     BOOL InitModalIndirect(
     HGLOBAL hDialogTemplate,

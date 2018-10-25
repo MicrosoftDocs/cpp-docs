@@ -247,7 +247,6 @@ BOOL Bind(
     UINT nSocketPort,
     LPCTSTR lpszSocketAddress = NULL);
 
-
 BOOL Bind (
     const SOCKADDR* lpSockAddr,
     int nSockAddrLen);
@@ -327,7 +326,6 @@ Call this member function to establish a connection to an unconnected stream or 
 BOOL Connect(
     LPCTSTR lpszHostAddress,
     UINT nHostPort);
-
 
 BOOL Connect(
     const SOCKADDR* lpSockAddr,
@@ -526,7 +524,6 @@ BOOL GetPeerName(
     CString& rPeerAddress,
     UINT& rPeerPort);
 
-
 BOOL GetPeerName(
     SOCKADDR* lpSockAddr,
     int* lpSockAddrLen);
@@ -612,7 +609,6 @@ Call this member function to get the local name for a socket.
 BOOL GetSockName(
     CString& rSocketAddress,
     UINT& rSocketPort);
-
 
 BOOL GetSockName(
     SOCKADDR* lpSockAddr,
@@ -1158,7 +1154,6 @@ int ReceiveFrom(
     UINT& rSocketPort,
     int nFlags = 0);
 
-
 int ReceiveFrom(
     void* lpBuf,
     int nBufLen,
@@ -1401,7 +1396,6 @@ int SendTo(
     UINT nHostPort,
     LPCTSTR lpszHostAddress = NULL,
     int nFlags = 0);
-
 
 int SendTo(
     const void* lpBuf,

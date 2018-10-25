@@ -483,19 +483,16 @@ void MovePane(
     BOOL bSwapControlBars,
     HDWP& hdwp);
 
-
 void MovePane(
     CPane* pControlBar,
     CRect rectTarget,
     HDWP& hdwp);
-
 
 void MovePane(
     CPane* pControlBar,
     int nOffset,
     bool bForward,
     HDWP& hdwp);
-
 
 void MovePane(
     CPane* pControlBar,

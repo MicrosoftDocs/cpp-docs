@@ -23,9 +23,9 @@ Because the standard list collection has both a head and a tail, it is easy to c
 
 1. Derive a new list class from one of the existing MFC list classes and add more member functions to support the functionality of stack operations.
 
-     The following example shows how to add member functions to push elements on to the stack, peek at the top element of the stack, and pop the top element from the stack:
+   The following example shows how to add member functions to push elements on to the stack, peek at the top element of the stack, and pop the top element from the stack:
 
-     [!code-cpp[NVC_MFCCollections#20](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_1.h)]
+   [!code-cpp[NVC_MFCCollections#20](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_1.h)]
 
 Note that this approach exposes the underlying `CObList` class. The user can call any `CObList` member function, whether it makes sense for a stack or not.
 
@@ -37,9 +37,9 @@ Because the standard list collection has both a head and a tail, it is also easy
 
 1. Derive a new list class from one of the predefined list classes provided with the Microsoft Foundation Class Library and add more member functions to support the semantics of queue operations.
 
-     The following example shows how you can append member functions to add an element to the end of the queue and get the element from the front of the queue.
+   The following example shows how you can append member functions to add an element to the end of the queue and get the element from the front of the queue.
 
-     [!code-cpp[NVC_MFCCollections#21](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_2.h)]
+   [!code-cpp[NVC_MFCCollections#21](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_2.h)]
 
 ## See Also
 

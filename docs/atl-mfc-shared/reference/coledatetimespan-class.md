@@ -126,7 +126,7 @@ COleDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 *dblSpanSrc*<br/>
 The number of days to be copied into the new `COleDateTimeSpan` object.
 
-*lDays*, *nHours*, *nMins*, *nSecs*  
+*lDays*, *nHours*, *nMins*, *nSecs*<br/>
 Indicate the day and time values to be copied into the new `COleDateTimeSpan` object.
 
 ### Remarks
@@ -186,10 +186,10 @@ Call these functions to create a formatted representation of the time-span value
 
 A brief description of the forms for this function follows:
 
-**Format(** *pFormat* **)**  
+**Format(** *pFormat* **)**<br/>
 This form formats the value using the format string that contains special formatting codes that are preceded by a percent sign (%), as in `printf`. The formatting string is passed as a parameter to the function.
 
-**Format(** *nID* **)**  
+**Format(** *nID* **)**<br/>
 This form formats the value using the format string that contains special formatting codes that are preceded by a percent sign (%), as in `printf`. The formatting string is a resource. The ID of this string resource is passed as the parameter.
 
 ### Example
@@ -357,11 +357,11 @@ The status of this `COleDateTimeSpan` value.
 The return value is defined by the `DateTimeSpanStatus` enumerated type, which is defined within the `COleDateTimeSpan` class.
 
 ```
-enum DateTimeSpanStatus{  
-   valid = 0,  
-   invalid = 1,  
-   null = 2,  
-};  
+enum DateTimeSpanStatus{
+   valid = 0,
+   invalid = 1,
+   null = 2,
+};
 ```
 
 For a brief description of these status values, see the following list:
@@ -554,11 +554,11 @@ DateTimeSpanStatus m_status;
 ### Remarks
 
 ```
-enum DateTimeSpanStatus{  
-   valid = 0,  
-   invalid = 1,  
-   null = 2,  
-   };  
+enum DateTimeSpanStatus{
+   valid = 0,
+   invalid = 1,
+   null = 2,
+   };
 ```
 
 For a brief description of these status values, see the following list:
@@ -663,7 +663,7 @@ void SetDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 
 ### Parameters
 
-*lDays*, *nHours*, *nMins*, *nSecs*  
+*lDays*, *nHours*, *nMins*, *nSecs*<br/>
 Indicate the date-span and time-span values to be copied into this `COleDateTimeSpan` object.
 
 ### Remarks
@@ -708,11 +708,11 @@ The new status value for this `COleDateTimeSpan` object.
 The *Status* parameter value is defined by the `DateTimeSpanStatus` enumerated type, which is defined within the `COleDateTimeSpan` class.
 
 ```
-enum DateTimeSpanStatus{  
-   valid = 0,  
-   invalid = 1,  
-   null = 2,  
-   };  
+enum DateTimeSpanStatus{
+   valid = 0,
+   invalid = 1,
+   null = 2,
+   };
 ```
 
 For a brief description of these status values, see the following list:

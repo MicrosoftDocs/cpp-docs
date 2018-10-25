@@ -312,7 +312,6 @@ Returns a random-access iterator to the first element in the vector.
 ```cpp
 const_iterator begin() const;
 
-
 iterator begin();
 ```
 
@@ -697,7 +696,6 @@ Returns a pointer to the first element in the vector.
 
 ```cpp
 const_pointer data() const;
-
 
 pointer data();
 ```
@@ -1463,7 +1461,6 @@ Adds an element to the end of the vector.
 
 ```cpp
 void push_back(const T& Val);
-
 
 void push_back(T&& Val);
 ```

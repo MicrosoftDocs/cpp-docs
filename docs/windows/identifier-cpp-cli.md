@@ -21,7 +21,7 @@ Enables the use of C++ keywords as identifiers.
 ### Syntax
 
 ```cpp
-__identifier(C++_keyword)  
+__identifier(C++_keyword)
 ```
 
 ### Remarks

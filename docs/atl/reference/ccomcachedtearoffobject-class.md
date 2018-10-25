@@ -179,7 +179,7 @@ A standard HRESULT value.
 
 ### Remarks
 
-If the requested interface is `IUnknown`, returns a pointer to the `CComCachedTearOffObject`'s own `IUnknown` and increments the reference count. Otherwise, queries for the interface on your tear-off class using the [InternalQueryInterface](ccomobjectrootex-class.md#internalqueryinterface) method inherited from `CComObjectRootEx`.  
+If the requested interface is `IUnknown`, returns a pointer to the `CComCachedTearOffObject`'s own `IUnknown` and increments the reference count. Otherwise, queries for the interface on your tear-off class using the [InternalQueryInterface](ccomobjectrootex-class.md#internalqueryinterface) method inherited from `CComObjectRootEx`.
 
 ##  <a name="release"></a>  CComCachedTearOffObject::Release
 

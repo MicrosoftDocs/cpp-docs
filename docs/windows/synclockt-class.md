@@ -124,7 +124,7 @@ SyncLockT(
 );
 
 explicit SyncLockT(
-   typename SyncTraits::Type sync = SyncTraits::GetInvalidValue()  
+   typename SyncTraits::Type sync = SyncTraits::GetInvalidValue()
 );
 ```
 

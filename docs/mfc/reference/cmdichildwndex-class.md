@@ -18,7 +18,6 @@ The `CMDIChildWndEx` class provides the functionality of a Windows multiple docu
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
-
 ## Syntax
 
 ```
@@ -167,7 +166,6 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 
 ##  <a name="canshowonmditabs"></a>  CMDIChildWndEx::CanShowOnMDITabs
 
-
 ```
 virtual BOOL CanShowOnMDITabs();
 ```
@@ -294,7 +292,6 @@ Call this method to enable docking alignment to the main frame. You can pass a c
 
 ##  <a name="getdockingmanager"></a>  CMDIChildWndEx::GetDockingManager
 
-
 ```
 CDockingManager* GetDockingManager();
 ```
@@ -385,7 +382,6 @@ CBasePane* GetPane(UINT nID);
 A pointer to the pane if found, otherwise NULL.
 
 ##  <a name="getrelatedtabgroup"></a>  CMDIChildWndEx::GetRelatedTabGroup
-
 
 ```
 CMFCTabCtrl* GetRelatedTabGroup();
@@ -653,7 +649,6 @@ void RemovePaneFromDockManager(
 
 ##  <a name="setrelatedtabgroup"></a>  CMDIChildWndEx::SetRelatedTabGroup
 
-
 ```
 void SetRelatedTabGroup(CMFCTabCtrl* p);
 ```
@@ -665,7 +660,6 @@ void SetRelatedTabGroup(CMFCTabCtrl* p);
 ### Remarks
 
 ##  <a name="showpane"></a>  CMDIChildWndEx::ShowPane
-
 
 ```
 void ShowPane(

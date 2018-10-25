@@ -34,11 +34,11 @@ The compound statement after the `__try` clause is the guarded section. The comp
 
 1. If an exception occurs during execution of the guarded section or in any routine the guarded section calls, the `__except` expression is evaluated and the value returned determines how the exception is handled. There are three values:
 
-     `EXCEPTION_CONTINUE_SEARCH` Exception is not recognized. Continue to search up the stack for a handler, first for containing **try-except** statements, then for handlers with the next highest precedence.
+   `EXCEPTION_CONTINUE_SEARCH` Exception is not recognized. Continue to search up the stack for a handler, first for containing **try-except** statements, then for handlers with the next highest precedence.
 
-     `EXCEPTION_CONTINUE_EXECUTION` Exception is recognized but dismissed. Continue execution at the point where the exception occurred.
+   `EXCEPTION_CONTINUE_EXECUTION` Exception is recognized but dismissed. Continue execution at the point where the exception occurred.
 
-     `EXCEPTION_EXECUTE_HANDLER` Exception is recognized. Transfer control to the exception handler by executing the `__except` compound statement, then continue execution at the point the exception occurred.
+   `EXCEPTION_EXECUTE_HANDLER` Exception is recognized. Transfer control to the exception handler by executing the `__except` compound statement, then continue execution at the point the exception occurred.
 
 Because the `__except` expression is evaluated as a C expression, it is limited to a single value, the conditional-expression operator, or the comma operator. If more extensive processing is required, the expression can call a routine that returns one of the three values listed above.
 

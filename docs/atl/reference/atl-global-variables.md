@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 
 ## _pAtlModule
 
-A global variable storing a pointer to the current module.  
+A global variable storing a pointer to the current module.
 
 ```cpp
 __declspec(selectany) CAtlModule * _pAtlModule

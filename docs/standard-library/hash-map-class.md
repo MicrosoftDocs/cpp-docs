@@ -185,7 +185,6 @@ A reference to the data value of the element found.
 
 If the argument key value is not found, then the function throws an object of class [out_of_range Class](../standard-library/out-of-range-class.md).
 
-
 ### Example
 
 ```cpp

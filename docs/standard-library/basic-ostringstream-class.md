@@ -122,7 +122,6 @@ Sets or gets the text in a string buffer without changing the write position.
 ```cpp
 basic_string<Elem, Tr, Alloc> str() const;
 
-
 void str(
     const basic_string<Elem, Tr, Alloc>& _Newstr);
 ```

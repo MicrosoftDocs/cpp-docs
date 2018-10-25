@@ -256,7 +256,6 @@ virtual void ParseParam(
     BOOL bFlag,
     BOOL bLast);
 
-
 virtual void ParseParam(
     const TCHAR* pszParam,
     BOOL bFlag,

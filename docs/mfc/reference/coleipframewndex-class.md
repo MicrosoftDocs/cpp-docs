@@ -105,7 +105,6 @@ The following example demonstrates how to subclass an instance of the `COleIPFra
 
 ##  <a name="adddocksite"></a>  COleIPFrameWndEx::AddDockSite
 
-
 ```
 void AddDockSite();
 ```
@@ -113,7 +112,6 @@ void AddDockSite();
 ### Remarks
 
 ##  <a name="addpane"></a>  COleIPFrameWndEx::AddPane
-
 
 ```
 BOOL AddPane(
@@ -132,7 +130,6 @@ BOOL AddPane(
 
 ##  <a name="adjustdockinglayout"></a>  COleIPFrameWndEx::AdjustDockingLayout
 
-
 ```
 virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 ```
@@ -144,7 +141,6 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 ### Remarks
 
 ##  <a name="dockpane"></a>  COleIPFrameWndEx::DockPane
-
 
 ```
 void DockPane(
@@ -189,7 +185,6 @@ Call this method to dock several pane objects in a predefined order. This method
 
 ##  <a name="enableautohidepanes"></a>  COleIPFrameWndEx::EnableAutoHidePanes
 
-
 ```
 BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 ```
@@ -204,7 +199,6 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 
 ##  <a name="enabledocking"></a>  COleIPFrameWndEx::EnableDocking
 
-
 ```
 BOOL EnableDocking(DWORD dwDockStyle);
 ```
@@ -218,7 +212,6 @@ BOOL EnableDocking(DWORD dwDockStyle);
 ### Remarks
 
 ##  <a name="enablepanemenu"></a>  COleIPFrameWndEx::EnablePaneMenu
-
 
 ```
 void EnablePaneMenu(
@@ -259,7 +252,6 @@ Use this method to obtain a pointer to the [CMFCPopupMenu Class](../../mfc/refer
 
 ##  <a name="getcontainerframewindow"></a>  COleIPFrameWndEx::GetContainerFrameWindow
 
-
 ```
 COleCntrFrameWndEx* GetContainerFrameWindow();
 ```
@@ -286,7 +278,6 @@ Call this function to retrieve the resource ID that was specified when the frame
 
 ##  <a name="getdockframe"></a>  COleIPFrameWndEx::GetDockFrame
 
-
 ```
 CFrameWnd* GetDockFrame();
 ```
@@ -297,7 +288,6 @@ CFrameWnd* GetDockFrame();
 
 ##  <a name="getdockingmanager"></a>  COleIPFrameWndEx::GetDockingManager
 
-
 ```
 CDockingManager* GetDockingManager();
 ```
@@ -307,7 +297,6 @@ CDockingManager* GetDockingManager();
 ### Remarks
 
 ##  <a name="getmainframe"></a>  COleIPFrameWndEx::GetMainFrame
-
 
 ```
 CFrameWnd* GetMainFrame();
@@ -334,7 +323,6 @@ A pointer to the menu bar object.
 Use this function to retrieve a pointer to the menu bar object that belongs to the `COleIPFrameWndEx` object.
 
 ##  <a name="getpane"></a>  COleIPFrameWndEx::GetPane
-
 
 ```
 CBasePane* GetPane(UINT nID);
@@ -418,7 +406,6 @@ Use this function to initialize a range of control IDs for assignment to toolbar
 
 ##  <a name="insertpane"></a>  COleIPFrameWndEx::InsertPane
 
-
 ```
 BOOL InsertPane(
     CBasePane* pControlBar,
@@ -454,7 +441,6 @@ Call this method to determine whether the frame window maintains a non- NULL poi
 
 ##  <a name="ispointneardocksite"></a>  COleIPFrameWndEx::IsPointNearDockSite
 
-
 ```
 BOOL IsPointNearDockSite(
     CPoint point,
@@ -473,7 +459,6 @@ BOOL IsPointNearDockSite(
 ### Remarks
 
 ##  <a name="loadframe"></a>  COleIPFrameWndEx::LoadFrame
-
 
 ```
 virtual BOOL LoadFrame(
@@ -496,7 +481,6 @@ virtual BOOL LoadFrame(
 
 ##  <a name="onclosedockingpane"></a>  COleIPFrameWndEx::OnCloseDockingPane
 
-
 ```
 virtual BOOL OnCloseDockingPane(CDockablePane*);
 ```
@@ -510,7 +494,6 @@ virtual BOOL OnCloseDockingPane(CDockablePane*);
 ### Remarks
 
 ##  <a name="oncloseminiframe"></a>  COleIPFrameWndEx::OnCloseMiniFrame
-
 
 ```
 virtual BOOL OnCloseMiniFrame(CPaneFrameWnd*);
@@ -542,7 +525,6 @@ virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
 Override this method to receive notifications from `CMFCPopupMenu` objects when they process WM_DESTROY messages.
 
 ##  <a name="oncmdmsg"></a>  COleIPFrameWndEx::OnCmdMsg
-
 
 ```
 virtual BOOL OnCmdMsg(
@@ -647,7 +629,6 @@ Override this method to provide ToolTip information about a specific menu item.
 
 ##  <a name="onmoveminiframe"></a>  COleIPFrameWndEx::OnMoveMiniFrame
 
-
 ```
 virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 ```
@@ -661,7 +642,6 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 ### Remarks
 
 ##  <a name="onsetpreviewmode"></a>  COleIPFrameWndEx::OnSetPreviewMode
-
 
 ```
 virtual void OnSetPreviewMode(
@@ -677,7 +657,6 @@ virtual void OnSetPreviewMode(
 ### Remarks
 
 ##  <a name="onshowcustomizepane"></a>  COleIPFrameWndEx::OnShowCustomizePane
-
 
 ```
 virtual BOOL OnShowCustomizePane(
@@ -695,7 +674,6 @@ virtual BOOL OnShowCustomizePane(
 ### Remarks
 
 ##  <a name="onshowpanes"></a>  COleIPFrameWndEx::OnShowPanes
-
 
 ```
 virtual BOOL OnShowPanes(BOOL bShow);
@@ -758,7 +736,6 @@ Override this function if you want to customize the setup of the tear-off bar.
 
 ##  <a name="panefrompoint"></a>  COleIPFrameWndEx::PaneFromPoint
 
-
 ```
 CBasePane* PaneFromPoint(
     CPoint point,
@@ -787,7 +764,6 @@ CBasePane* PaneFromPoint(
 
 ##  <a name="pretranslatemessage"></a>  COleIPFrameWndEx::PreTranslateMessage
 
-
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```
@@ -802,7 +778,6 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ##  <a name="recalclayout"></a>  COleIPFrameWndEx::RecalcLayout
 
-
 ```
 virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```
@@ -814,7 +789,6 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ### Remarks
 
 ##  <a name="removepanefromdockmanager"></a>  COleIPFrameWndEx::RemovePaneFromDockManager
-
 
 ```
 void RemovePaneFromDockManager(
@@ -877,7 +851,6 @@ void SetupToolbarMenu(
 ### Remarks
 
 ##  <a name="showpane"></a>  COleIPFrameWndEx::ShowPane
-
 
 ```
 void ShowPane(

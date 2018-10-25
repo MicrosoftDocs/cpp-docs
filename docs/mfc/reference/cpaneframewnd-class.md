@@ -175,7 +175,6 @@ virtual void AdjustLayout();
 
 ##  <a name="adjustpaneframes"></a>  CPaneFrameWnd::AdjustPaneFrames
 
-
 ```
 virtual void AdjustPaneFrames();
 ```
@@ -263,7 +262,6 @@ virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;
 Nonzero if the mini-frame can be docked to *pDockingBar*; otherwise 0.
 
 ##  <a name="checkgrippervisibility"></a>  CPaneFrameWnd::CheckGripperVisibility
-
 
 ```
 virtual void CheckGripperVisibility();
@@ -474,7 +472,6 @@ This method is called by the framework when it displays the caption text.
 
 ##  <a name="getdockingmanager"></a>  CPaneFrameWnd::GetDockingManager
 
-
 ```
 CDockingManager* GetDockingManager() const;
 ```
@@ -515,7 +512,6 @@ The first pane in the mini-frame window, or NULL if the mini-frame window contai
 
 ##  <a name="gethotpoint"></a>  CPaneFrameWnd::GetHotPoint
 
-
 ```
 CPoint GetHotPoint() const;
 ```
@@ -554,7 +550,6 @@ The number of panes in the mini-frame window. This value can be zero.
 
 ##  <a name="getparent"></a>  CPaneFrameWnd::GetParent
 
-
 ```
 CWnd* GetParent();
 ```
@@ -565,7 +560,6 @@ CWnd* GetParent();
 
 ##  <a name="getpinstate"></a>  CPaneFrameWnd::GetPinState
 
-
 ```
 BOOL GetPinState() const;
 ```
@@ -575,7 +569,6 @@ BOOL GetPinState() const;
 ### Remarks
 
 ##  <a name="getrecentfloatingrect"></a>  CPaneFrameWnd::GetRecentFloatingRect
-
 
 ```
 CRect GetRecentFloatingRect() const;
@@ -637,7 +630,6 @@ One of the following values:
 
 ##  <a name="iscaptured"></a>  CPaneFrameWnd::IsCaptured
 
-
 ```
 BOOL IsCaptured() const;
 ```
@@ -647,7 +639,6 @@ BOOL IsCaptured() const;
 ### Remarks
 
 ##  <a name="isdelayshow"></a>  CPaneFrameWnd::IsDelayShow
-
 
 ```
 BOOL IsDelayShow() const;
@@ -858,7 +849,6 @@ Called by the framework when a pane in the mini-frame window is shown or hidden.
 
 ##  <a name="pin"></a>  CPaneFrameWnd::Pin
 
-
 ```
 void Pin(BOOL bPin = TRUE);
 ```
@@ -1008,7 +998,6 @@ virtual void SetCaptionButtons(DWORD dwButtons);
 
 ##  <a name="setdelayshow"></a>  CPaneFrameWnd::SetDelayShow
 
-
 ```
 void SetDelayShow(BOOL bDelayShow);
 ```
@@ -1020,7 +1009,6 @@ void SetDelayShow(BOOL bDelayShow);
 ### Remarks
 
 ##  <a name="setdockingmanager"></a>  CPaneFrameWnd::SetDockingManager
-
 
 ```
 void SetDockingManager(CDockingManager* pManager);
@@ -1059,7 +1047,6 @@ virtual void SetDockState(CDockingManager* pDockManager);
 [in] A pointer to a docking manager.
 
 ##  <a name="sethotpoint"></a>  CPaneFrameWnd::SetHotPoint
-
 
 ```
 void SetHotPoint(CPoint& ptNew);
@@ -1134,7 +1121,6 @@ TRUE if the method was successful; otherwise, FALSE.
 
 ##  <a name="storerecentdocksiteinfo"></a>  CPaneFrameWnd::StoreRecentDockSiteInfo
 
-
 ```
 virtual void StoreRecentDockSiteInfo(CPane* pBar);
 ```
@@ -1146,7 +1132,6 @@ virtual void StoreRecentDockSiteInfo(CPane* pBar);
 ### Remarks
 
 ##  <a name="storerecenttabrelatedinfo"></a>  CPaneFrameWnd::StoreRecentTabRelatedInfo
-
 
 ```
 virtual void StoreRecentTabRelatedInfo(

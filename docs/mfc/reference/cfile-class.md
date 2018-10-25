@@ -128,11 +128,9 @@ CFile();
 CFile(CAtlTransactionManager* pTM);
 CFile(HANDLE hFile);
 
-
 CFile(
 LPCTSTR lpszFileName,
 UINT nOpenFlags);
-
 
 CFile(
 LPCTSTR lpszFileName,
@@ -511,7 +509,6 @@ virtual BOOL Open(
     LPCTSTR lpszFileName,
     UINT nOpenFlags,
     CFileException* pError = NULL);
-
 
 virtual BOOL Open(
     LPCTSTR lpszFileName,

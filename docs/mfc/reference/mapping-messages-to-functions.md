@@ -30,7 +30,7 @@ When you use Class View to create a new class derived from one of the framework 
     > [!NOTE]
     >  The **Messages** button is available when you select either the class name in Class View or when you click within the source window.
 
-     If your project has a handler for a message, then the name of the handler appears in the right column next to the message.
+   If your project has a handler for a message, then the name of the handler appears in the right column next to the message.
 
 1. If the message has no handler, then click the cell in the right column in the Properties window to display the suggested name of the handler as \<add>*HandlerName*. (For example, the WM_TIMER message handler suggests \<add>`OnTimer`).
 

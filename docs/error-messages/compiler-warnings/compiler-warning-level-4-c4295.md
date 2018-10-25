@@ -26,7 +26,6 @@ The following sample generates C4295. To fix this issue, you could declare the a
 // C4295.c
 // compile with: /W4
 
-
 int main() {
    char a[3] = "abc";           // C4295
    char b[3] = {'d', 'e', 'f'}; // No warning

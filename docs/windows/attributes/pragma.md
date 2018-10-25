@@ -64,4 +64,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Stand-Alone Attributes](stand-alone-attributes.md)<br/>
-[pack](../../preprocessor/pack.md)  
+[pack](../../preprocessor/pack.md)

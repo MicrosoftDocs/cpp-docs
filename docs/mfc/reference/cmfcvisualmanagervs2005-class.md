@@ -77,7 +77,6 @@ The following example demonstrates how to use the visual manager VS 2005. This c
 
 ##  <a name="getdockingtabsborderssize"></a>  CMFCVisualManagerVS2005::GetDockingTabsBordersSize
 
-
 ```
 virtual int GetDockingTabsBordersSize();
 ```
@@ -88,7 +87,6 @@ virtual int GetDockingTabsBordersSize();
 
 ##  <a name="getmditabsborderssize"></a>  CMFCVisualManagerVS2005::GetMDITabsBordersSize
 
-
 ```
 virtual int GetMDITabsBordersSize();
 ```
@@ -98,7 +96,6 @@ virtual int GetMDITabsBordersSize();
 ### Remarks
 
 ##  <a name="getpropertygridgroupcolor"></a>  CMFCVisualManagerVS2005::GetPropertyGridGroupColor
-
 
 ```
 virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
@@ -113,7 +110,6 @@ virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
 ### Remarks
 
 ##  <a name="gettabframecolors"></a>  CMFCVisualManagerVS2005::GetTabFrameColors
-
 
 ```
 virtual void GetTabFrameColors(
@@ -144,7 +140,6 @@ virtual void GetTabFrameColors(
 
 ##  <a name="hasoverlappedautohidebuttons"></a>  CMFCVisualManagerVS2005::HasOverlappedAutoHideButtons
 
-
 ```
 virtual BOOL HasOverlappedAutoHideButtons() const;
 ```
@@ -154,7 +149,6 @@ virtual BOOL HasOverlappedAutoHideButtons() const;
 ### Remarks
 
 ##  <a name="ondrawautohidebuttonborder"></a>  CMFCVisualManagerVS2005::OnDrawAutoHideButtonBorder
-
 
 ```
 virtual void OnDrawAutoHideButtonBorder(
@@ -174,7 +168,6 @@ virtual void OnDrawAutoHideButtonBorder(
 ### Remarks
 
 ##  <a name="ondrawcaptionbutton"></a>  CMFCVisualManagerVS2005::OnDrawCaptionButton
-
 
 ```
 virtual void OnDrawCaptionButton(
@@ -201,7 +194,6 @@ virtual void OnDrawCaptionButton(
 
 ##  <a name="ondrawpanecaption"></a>  CMFCVisualManagerVS2005::OnDrawPaneCaption
 
-
 ```
 virtual COLORREF OnDrawPaneCaption(
     CDC* pDC,
@@ -225,7 +217,6 @@ virtual COLORREF OnDrawPaneCaption(
 
 ##  <a name="ondrawseparator"></a>  CMFCVisualManagerVS2005::OnDrawSeparator
 
-
 ```
 virtual void OnDrawSeparator(
     CDC* pDC,
@@ -244,7 +235,6 @@ virtual void OnDrawSeparator(
 ### Remarks
 
 ##  <a name="ondrawtab"></a>  CMFCVisualManagerVS2005::OnDrawTab
-
 
 ```
 virtual void OnDrawTab(
@@ -267,7 +257,6 @@ virtual void OnDrawTab(
 
 ##  <a name="ondrawtoolboxframe"></a>  CMFCVisualManagerVS2005::OnDrawToolBoxFrame
 
-
 ```
 virtual void OnDrawToolBoxFrame(
     CDC* pDC,
@@ -282,7 +271,6 @@ virtual void OnDrawToolBoxFrame(
 ### Remarks
 
 ##  <a name="onerasetabsarea"></a>  CMFCVisualManagerVS2005::OnEraseTabsArea
-
 
 ```
 virtual void OnEraseTabsArea(
@@ -301,7 +289,6 @@ virtual void OnEraseTabsArea(
 
 ##  <a name="onfillautohidebuttonbackground"></a>  CMFCVisualManagerVS2005::OnFillAutoHideButtonBackground
 
-
 ```
 virtual void OnFillAutoHideButtonBackground(
     CDC* pDC,
@@ -318,7 +305,6 @@ virtual void OnFillAutoHideButtonBackground(
 ### Remarks
 
 ##  <a name="onfillhighlightedarea"></a>  CMFCVisualManagerVS2005::OnFillHighlightedArea
-
 
 ```
 virtual void OnFillHighlightedArea(
@@ -338,7 +324,6 @@ virtual void OnFillHighlightedArea(
 ### Remarks
 
 ##  <a name="onfillminiframecaption"></a>  CMFCVisualManagerVS2005::OnFillMiniFrameCaption
-
 
 ```
 virtual COLORREF OnFillMiniFrameCaption(
@@ -360,7 +345,6 @@ virtual COLORREF OnFillMiniFrameCaption(
 ### Remarks
 
 ##  <a name="onupdatesystemcolors"></a>  CMFCVisualManagerVS2005::OnUpdateSystemColors
-
 
 ```
 virtual void OnUpdateSystemColors();

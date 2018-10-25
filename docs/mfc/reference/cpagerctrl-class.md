@@ -575,5 +575,3 @@ This method sends the [PGM_SETPOS](/windows/desktop/Controls/pgm-setpos) message
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Pager Controls](/windows/desktop/Controls/pager-controls)
 
-
-

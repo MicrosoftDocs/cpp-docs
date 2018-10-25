@@ -141,14 +141,14 @@ The following procedures describe how to write a move constructor and a move ass
 
 1. In the conditional statement, free any resources (such as memory) from the object that is being assigned to.
 
-     The following example frees the `_data` member from the object that is being assigned to:
+   The following example frees the `_data` member from the object that is being assigned to:
 
     ```cpp
     // Free the existing resource.
     delete[] _data;
     ```
 
-     Follow steps 2 and 3 in the first procedure to transfer the data members from the source object to the object that is being constructed:
+   Follow steps 2 and 3 in the first procedure to transfer the data members from the source object to the object that is being constructed:
 
     ```cpp
     // Copy the data pointer and its length from the

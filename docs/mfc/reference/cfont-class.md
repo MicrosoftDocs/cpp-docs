@@ -348,5 +348,3 @@ For more information about using graphic objects, see [Graphic Objects](/windows
 [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

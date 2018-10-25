@@ -13,18 +13,18 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using Multiple Result Sets from One Stored Procedure
 
-Most stored procedures return multiple result sets. Such a stored procedure usually includes one or more select statements. The consumer needs to consider this inclusion to handle all the result sets.  
-  
-## To handle multiple result sets  
-  
-1. Create a `CCommand` class with `CMultipleResults` as a template argument and with the accessor of your choice, usually a dynamic or manual accessor. If you use another type of accessor, you might not be able to determine the output columns for each rowset.  
-  
-1. Execute the stored procedure as usual and bind the columns (see [How Do I Fetch Data?](../../data/oledb/fetching-data.md)).  
-  
-1. Use the data.  
-  
-1. Call `GetNextResult` on the `CCommand` class. If another result rowset is available, `GetNextResult` returns S_OK and you should rebind your columns if you are using a manual accessor. If `GetNextResult` returns an error, there are no further result sets available.  
-  
-## See Also  
+Most stored procedures return multiple result sets. Such a stored procedure usually includes one or more select statements. The consumer needs to consider this inclusion to handle all the result sets.
+
+## To handle multiple result sets
+
+1. Create a `CCommand` class with `CMultipleResults` as a template argument and with the accessor of your choice, usually a dynamic or manual accessor. If you use another type of accessor, you might not be able to determine the output columns for each rowset.
+
+1. Execute the stored procedure as usual and bind the columns (see [How Do I Fetch Data?](../../data/oledb/fetching-data.md)).
+
+1. Use the data.
+
+1. Call `GetNextResult` on the `CCommand` class. If another result rowset is available, `GetNextResult` returns S_OK and you should rebind your columns if you are using a manual accessor. If `GetNextResult` returns an error, there are no further result sets available.
+
+## See Also
 
 [Using Stored Procedures](../../data/oledb/using-stored-procedures.md)

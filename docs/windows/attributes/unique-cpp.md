@@ -47,4 +47,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
-[Parameter Attributes](parameter-attributes.md)  
+[Parameter Attributes](parameter-attributes.md)

@@ -19,11 +19,11 @@ MFC predefines two categories of template-based collections:
 
 - [Simple array, list, and map classes](#_core_using_simple_array.2c_.list.2c_.and_map_templates)
 
-     `CArray`, `CList`, `CMap`
+   `CArray`, `CList`, `CMap`
 
 - [Arrays, lists, and maps of typed pointers](#_core_using_typed.2d.pointer_collection_templates)
 
-     `CTypedPtrArray`, `CTypedPtrList`, `CTypedPtrMap`
+   `CTypedPtrArray`, `CTypedPtrList`, `CTypedPtrMap`
 
 The simple collection classes are all derived from class `CObject`, so they inherit the serialization, dynamic creation, and other properties of `CObject`. The typed pointer collection classes require you to specify the class you derive from — which must be one of the nontemplate pointer collections predefined by MFC, such as `CPtrList` or `CPtrArray`. Your new collection class inherits from the specified base class, and the new class's member functions use encapsulated calls to the base class members to enforce type safety.
 

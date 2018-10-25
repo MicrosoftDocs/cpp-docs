@@ -161,4 +161,4 @@ For an example demonstrating how to use this class to execute a SQL Server store
 [CDynamicAccessor Class](../../data/oledb/cdynamicaccessor-class.md)<br/>
 [CDynamicStringAccessor Class](../../data/oledb/cdynamicstringaccessor-class.md)<br/>
 [CDynamicParameterAccessor Class](../../data/oledb/cdynamicparameteraccessor-class.md)<br/>
-[DynamicConsumer Sample](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/DynamicConsumer)  
+[DynamicConsumer Sample](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/DynamicConsumer)

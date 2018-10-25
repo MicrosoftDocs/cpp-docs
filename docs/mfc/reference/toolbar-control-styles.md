@@ -58,4 +58,3 @@ The visual manager determines the appearance of buttons in each state. See [Visu
 [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md)<br/>
 [Visualization Manager](../../mfc/visualization-manager.md)
 
-

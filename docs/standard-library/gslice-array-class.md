@@ -25,39 +25,27 @@ public:
     typedef Type value_type;
     void operator=(const valarray<Type>& x) const;
 
-
     void operator=(const Type& x) const;
-
 
     void operator*=(const valarray<Type>& x) const;
 
-
     void operator/=(const valarray<Type>& x) const;
-
 
     void operator%=(const valarray<Type>& x) const;
 
-
     void operator+=(const valarray<Type>& x) const;
-
 
     void operator-=(const valarray<Type>& x) const;
 
-
     void operator^=(const valarray<Type>& x) const;
-
 
     void operator&=(const valarray<Type>& x) const;
 
-
     void operator|=(const valarray<Type>& x) const;
-
 
     void operator<<=(const valarray<Type>& x) const;
 
-
     void operator>>=(const valarray<Type>& x) const;
-
 
 // The rest is private or implementation defined
 }

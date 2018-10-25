@@ -56,4 +56,4 @@ See [first_is](first-is.md) for an example of how to specify a section of an arr
 [first_is](first-is.md)<br/>
 [last_is](last-is.md)<br/>
 [length_is](length-is.md)<br/>
-[size_is](size-is.md)  
+[size_is](size-is.md)

@@ -143,7 +143,6 @@ Returns TRUE if the user can choose to show text labels under images.
 
 ##  <a name="allowshowonpanemenu"></a>  CMFCMenuBar::AllowShowOnPaneMenu
 
-
 ```
 virtual BOOL AllowShowOnPaneMenu() const;
 ```
@@ -153,7 +152,6 @@ virtual BOOL AllowShowOnPaneMenu() const;
 ### Remarks
 
 ##  <a name="calcfixedlayout"></a>  CMFCMenuBar::CalcFixedLayout
-
 
 ```
 virtual CSize CalcFixedLayout(
@@ -173,7 +171,6 @@ virtual CSize CalcFixedLayout(
 
 ##  <a name="calclayout"></a>  CMFCMenuBar::CalcLayout
 
-
 ```
 virtual CSize CalcLayout(
     DWORD dwMode,
@@ -192,7 +189,6 @@ virtual CSize CalcLayout(
 
 ##  <a name="calcmaxbuttonheight"></a>  CMFCMenuBar::CalcMaxButtonHeight
 
-
 ```
 virtual int CalcMaxButtonHeight();
 ```
@@ -203,7 +199,6 @@ virtual int CalcMaxButtonHeight();
 
 ##  <a name="canbeclosed"></a>  CMFCMenuBar::CanBeClosed
 
-
 ```
 virtual BOOL CanBeClosed() const;
 ```
@@ -213,7 +208,6 @@ virtual BOOL CanBeClosed() const;
 ### Remarks
 
 ##  <a name="canberestored"></a>  CMFCMenuBar::CanBeRestored
-
 
 ```
 virtual BOOL CanBeRestored() const;
@@ -378,7 +372,6 @@ The algorithm that this method uses is complex and may decrease the performance 
 
 ##  <a name="getavailableexpandsize"></a>  CMFCMenuBar::GetAvailableExpandSize
 
-
 ```
 virtual int GetAvailableExpandSize() const;
 ```
@@ -388,7 +381,6 @@ virtual int GetAvailableExpandSize() const;
 ### Remarks
 
 ##  <a name="getcolumnwidth"></a>  CMFCMenuBar::GetColumnWidth
-
 
 ```
 virtual int GetColumnWidth() const;
@@ -432,7 +424,6 @@ The framework loads the default menu for the `CMFCMenuBar` object from the resou
 
 ##  <a name="getfloatpopupdirection"></a>  CMFCMenuBar::GetFloatPopupDirection
 
-
 ```
 int GetFloatPopupDirection(CMFCToolBarMenuButton* pButton);
 ```
@@ -446,7 +437,6 @@ int GetFloatPopupDirection(CMFCToolBarMenuButton* pButton);
 ### Remarks
 
 ##  <a name="getforcedownarrows"></a>  CMFCMenuBar::GetForceDownArrows
-
 
 ```
 BOOL GetForceDownArrows();
@@ -520,7 +510,6 @@ A pointer to the `CMFCToolBarButton` object that matches the index specified by 
 
 ##  <a name="getrowheight"></a>  CMFCMenuBar::GetRowHeight
 
-
 ```
 virtual int GetRowHeight() const;
 ```
@@ -530,7 +519,6 @@ virtual int GetRowHeight() const;
 ### Remarks
 
 ##  <a name="getsystembutton"></a>  CMFCMenuBar::GetSystemButton
-
 
 ```
 CMFCToolBarMenuButtonsButton* GetSystemButton(
@@ -550,7 +538,6 @@ CMFCToolBarMenuButtonsButton* GetSystemButton(
 
 ##  <a name="getsystembuttonscount"></a>  CMFCMenuBar::GetSystemButtonsCount
 
-
 ```
 int GetSystemButtonsCount() const;
 ```
@@ -560,7 +547,6 @@ int GetSystemButtonsCount() const;
 ### Remarks
 
 ##  <a name="getsystemmenu"></a>  CMFCMenuBar::GetSystemMenu
-
 
 ```
 CMFCToolBarSystemMenuButton* GetSystemMenu() const;
@@ -588,7 +574,6 @@ static void HighlightDisabledItems(BOOL bHighlight = TRUE);
 By default, the framework does not highlight unavailable menu items when the user positions the mouse pointer over them.
 
 ##  <a name="isbuttonextrasizeavailable"></a>  CMFCMenuBar::IsButtonExtraSizeAvailable
-
 
 ```
 virtual BOOL IsButtonExtraSizeAvailable() const;
@@ -720,7 +705,6 @@ In most cases your application does not call `LoadState`. The framework calls th
 
 ##  <a name="onchangehot"></a>  CMFCMenuBar::OnChangeHot
 
-
 ```
 virtual void OnChangeHot(int iHot);
 ```
@@ -749,7 +733,6 @@ virtual void OnDefaultMenuLoaded(HMENU hMenu);
 The default implementation of this function does nothing. Override this function to execute custom code after the framework loads a menu resource from the resource file.
 
 ##  <a name="onsendcommand"></a>  CMFCMenuBar::OnSendCommand
-
 
 ```
 virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
@@ -786,7 +769,6 @@ The default implementation for this method changes the text of the button to the
 
 ##  <a name="ontoolhittest"></a>  CMFCMenuBar::OnToolHitTest
 
-
 ```
 virtual INT_PTR OnToolHitTest(
     CPoint point,
@@ -804,7 +786,6 @@ virtual INT_PTR OnToolHitTest(
 ### Remarks
 
 ##  <a name="pretranslatemessage"></a>  CMFCMenuBar::PreTranslateMessage
-
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -888,7 +869,6 @@ The [CMFCMenuBar::RestoreOriginalstate](#restoreoriginalstate) method restores t
 Use the [CMFCMenuBar::GetDefaultMenuResId](#getdefaultmenuresid) method to retrieve the default menu without restoring it.
 
 ##  <a name="setforcedownarrows"></a>  CMFCMenuBar::SetForceDownArrows
-
 
 ```
 void SetForceDownArrows(BOOL bValue);

@@ -62,4 +62,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 [Interface Attributes](interface-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
-[uuid](/windows/desktop/Midl/uuid)  
+[uuid](/windows/desktop/Midl/uuid)

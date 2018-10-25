@@ -86,14 +86,12 @@ rs.Update();
 // Get the employee's data so that it can be displayed
 emp.MoveNext();
 
-
 // If user wants to see employee's photograph,
 // fetch it
 COleVariant varPhoto;
 if (bSeePicture)
     emp.GetFieldValue(_T("photo"),
     varPhoto);
-
 
 // Display the data
 PopUpEmployeeData(emp.m_strFirstName,

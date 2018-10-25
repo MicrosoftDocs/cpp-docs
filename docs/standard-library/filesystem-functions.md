@@ -32,7 +32,6 @@ These free functions in the [\<filesystem>](../standard-library/filesystem.md) h
 |[status_known](#status_known)|[swap](#swap)|[symlink_status](#symlink_status)|
 |[system_complete](#system_complete)|[temp_directory_path](#temp_directory_path)|[u8path](#u8path)|
 
-
 ## <a name="absolute"></a> absolute
 
 ```cpp

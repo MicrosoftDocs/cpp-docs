@@ -40,7 +40,6 @@ interface class IView
 
 For more information on using Windows Forms, see [Using a Windows Form User Control in MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
-
 ## Requirements
 
 Header: afxwinforms.h (defined in assembly atlmfc\lib\mfcmifc80.dll)
@@ -51,6 +50,7 @@ Called by MFC when a view is activated or deactivated.
 ```
 void OnActivateView(bool activate);
 ```
+
 ## Parameters
 
 *activate*<br/>
@@ -69,6 +69,7 @@ Called by MFC after the view's document has been modified.
 ```
 void OnUpdate();
 ```
+
 ## Remarks
 
 This function allows the view to update its display to reflect modifications.

@@ -92,4 +92,4 @@ For more information, see [Attribute Contexts](cpp-attributes-com-net.md#context
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Stand-Alone Attributes](stand-alone-attributes.md)<br/>
-[entry](entry.md)  
+[entry](entry.md)

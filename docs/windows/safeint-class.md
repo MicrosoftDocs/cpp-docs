@@ -244,7 +244,7 @@ SafeInt (
 I template <typename U>
 SafeInt (
    const U& i
-)  
+)
 ```
 
 ### Parameters

@@ -56,7 +56,7 @@ Name                                       | Description
 Retrieves the HRESULT value produced by the last `RoInitializeWrapper` constructor.
 
 ```cpp
-operator HRESULT()  
+operator HRESULT()
 ```
 
 ## <a name="roinitializewrapper"></a>RoInitializeWrapper::RoInitializeWrapper
@@ -64,7 +64,7 @@ operator HRESULT()
 Initializes a new instance of the `RoInitializeWrapper` class.
 
 ```cpp
-RoInitializeWrapper(   RO_INIT_TYPE flags)  
+RoInitializeWrapper(RO_INIT_TYPE flags)
 ```
 
 ### Parameters
@@ -81,7 +81,7 @@ The `RoInitializeWrapper` class invokes `Windows::Foundation::Initialize(flags)`
 Uninitializes the Windows Runtime.
 
 ```cpp
-~RoInitializeWrapper()  
+~RoInitializeWrapper()
 ```
 
 ### Remarks

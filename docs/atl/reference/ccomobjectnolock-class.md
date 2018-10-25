@@ -96,7 +96,7 @@ The destructor.
 
 ### Remarks
 
-Frees all allocated resources and calls [FinalRelease](ccomobjectrootex-class.md#finalrelease).  
+Frees all allocated resources and calls [FinalRelease](ccomobjectrootex-class.md#finalrelease).
 
 ##  <a name="queryinterface"></a>  CComObjectNoLock::QueryInterface
 

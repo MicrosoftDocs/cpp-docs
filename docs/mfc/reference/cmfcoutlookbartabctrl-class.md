@@ -273,7 +273,6 @@ The border size, in pixels.
 
 ##  <a name="getvisiblepagebuttons"></a>  CMFCOutlookBarTabCtrl::GetVisiblePageButtons
 
-
 ```
 int GetVisiblePageButtons() const;
 ```
@@ -455,7 +454,6 @@ Use this function to attach an image list whose images will be displayed on tool
 This method should not be called if not in Microsoft Office 2003 mode. For more information, see [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md).
 
 ##  <a name="setvisiblepagebuttons"></a>  CMFCOutlookBarTabCtrl::SetVisiblePageButtons
-
 
 ```
 void SetVisiblePageButtons(int nVisiblePageButtons);

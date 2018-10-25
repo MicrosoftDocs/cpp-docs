@@ -73,4 +73,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 
 [COM Attributes](com-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>
-[rdx](rdx.md)  
+[rdx](rdx.md)

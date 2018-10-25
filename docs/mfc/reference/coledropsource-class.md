@@ -159,5 +159,3 @@ Because this function is called frequently, it should be optimized as much as po
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

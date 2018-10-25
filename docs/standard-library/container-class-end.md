@@ -24,7 +24,6 @@ Returns an iterator that points just beyond the end of the sequence.
 
     const_iterator end() const;
 
-
 iterator end();
 ```
 

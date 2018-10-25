@@ -114,13 +114,11 @@ BOOL AddButton(
     UINT iIdCommand,
     int iInsertAt=-1);
 
-
 BOOL AddButton(
     UINT uiImage,
     UINT uiLabel,
     UINT iIdCommand,
     int iInsertAt=-1);
-
 
 BOOL AddButton(
     LPCTSTR szBmpFileName,
@@ -128,13 +126,11 @@ BOOL AddButton(
     UINT iIdCommand,
     int iInsertAt=-1);
 
-
 BOOL AddButton(
     HBITMAP hBmp,
     LPCTSTR lpszLabel,
     UINT iIdCommand,
     int iInsertAt=-1);
-
 
 BOOL AddButton(
     HICON hIcon,

@@ -83,12 +83,10 @@ inline BOOL CreateManagedControl(
     CWnd* pParentWnd,
     int nID);
 
-
 inline BOOL CreateManagedControl(
     DWORD dwStyle,
     int nPlaceHolderID,
     CWnd* pParentWnd);
-
 
 inline BOOL CreateManagedControl(
     typename TManagedControl^ pControl,

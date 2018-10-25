@@ -14,63 +14,63 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBCreateCommandImpl Class
 
-Provides an implementation of the [IDBCreateCommand](/previous-versions/windows/desktop/ms711625) interface.  
-  
+Provides an implementation of the [IDBCreateCommand](/previous-versions/windows/desktop/ms711625) interface.
+
 ## Syntax
 
 ```cpp
-template <class T, class CommandClass >  
-class ATL_NO_VTABLE IDBCreateCommandImpl   
-   : public IDBCreateCommand  
-```  
-  
-### Parameters  
+template <class T, class CommandClass >
+class ATL_NO_VTABLE IDBCreateCommandImpl
+   : public IDBCreateCommand
+```
+
+### Parameters
 
 *T*<br/>
-The session object derived from `IDBCreateCommandImpl`.  
-  
+The session object derived from `IDBCreateCommandImpl`.
+
 *CommandClass*<br/>
-Your command class.  
+Your command class.
 
-## Requirements  
+## Requirements
 
-**Header:** atldb.h  
-  
-## Members  
-  
-### Interface Methods  
-  
-|||  
-|-|-|  
-|[CreateCommand](#createcommand)|Creates a new command.|  
-  
-## Remarks  
+**Header:** atldb.h
 
-An optional interface on the session object to obtain a new command.  
+## Members
+
+### Interface Methods
+
+|||
+|-|-|
+|[CreateCommand](#createcommand)|Creates a new command.|
+
+## Remarks
+
+An optional interface on the session object to obtain a new command.
 
 ## <a name="createcommand"></a> IDBCreateCommandImpl::CreateCommand
 
-Creates a new command and returns the requested interface.  
-  
-### Syntax  
-  
-```cpp
-STDMETHOD(CreateCommand)(IUnknown * pUnkOuter,   
-   REFIID riid,   
-   IUnknown ** ppvCommand);  
-```  
-  
-#### Parameters  
+Creates a new command and returns the requested interface.
 
-See [IDBCreateCommand::CreateCommand](/previous-versions/windows/desktop/ms709772) in the *OLE DB Programmer's Reference*.  
-  
-Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IDBCreateCommand::CreateCommand`:  
-  
-|OLE DB Template parameters|*OLE DB Programmer's Reference* parameters|  
-|--------------------------------|------------------------------------------------|  
-|*ppvCommand*|*ppCommand*|  
-  
-## See Also  
+### Syntax
+
+```cpp
+STDMETHOD(CreateCommand)(IUnknown * pUnkOuter, 
+   REFIID riid, 
+   IUnknown ** ppvCommand);
+```
+
+#### Parameters
+
+See [IDBCreateCommand::CreateCommand](/previous-versions/windows/desktop/ms709772) in the *OLE DB Programmer's Reference*.
+
+Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IDBCreateCommand::CreateCommand`:
+
+|OLE DB Template parameters|*OLE DB Programmer's Reference* parameters|
+|--------------------------------|------------------------------------------------|
+|*ppvCommand*|*ppCommand*|
+
+## See Also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

@@ -110,7 +110,7 @@ The previous procedure is useful for specifying dynamic layout properties for a 
     dynamicLayout->LoadResource("IDD_DIALOG1");
     ```
 
-     The named resource must reference a dialog that contains layout information in the form of an **AFX_DIALOG_LAYOUT** entry in the resource file, as in the following example:
+   The named resource must reference a dialog that contains layout information in the form of an **AFX_DIALOG_LAYOUT** entry in the resource file, as in the following example:
 
     ```RC
     /////////////////////////////////////////////////////////////////////////////

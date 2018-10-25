@@ -28,7 +28,6 @@ We further recommend that you never write code that depends on a particular layo
 
 Additionally, ongoing improvements to compiler conformance can sometimes change how the compiler understands your existing source code. When this happens, you might encounter new or different errors during your build, or even behavioral differences in code that previously built and seemed to run correctly. Although these are not breaking changes like the ones discussed in this document, source code changes might be needed to resolve these issues:
 
-
 - [C Runtime (CRT) Library Breaking Changes](#BK_CRT)
 
 - [Standard C++ and C++ Standard Library Breaking Changes](#BK_STL)

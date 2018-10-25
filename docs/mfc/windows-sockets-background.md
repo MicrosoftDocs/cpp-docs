@@ -45,11 +45,11 @@ Two socket types are available:
 
 - Stream sockets
 
-     Stream sockets provide for a data flow without record boundaries: a stream of bytes. Streams are guaranteed to be delivered and to be correctly sequenced and unduplicated.
+   Stream sockets provide for a data flow without record boundaries: a stream of bytes. Streams are guaranteed to be delivered and to be correctly sequenced and unduplicated.
 
 - Datagram sockets
 
-     Datagram sockets support a record-oriented data flow that is not guaranteed to be delivered and may not be sequenced as sent or unduplicated.
+   Datagram sockets support a record-oriented data flow that is not guaranteed to be delivered and may not be sequenced as sent or unduplicated.
 
 "Sequenced" means that packets are delivered in the order sent. "Unduplicated" means that you get a particular packet only once.
 

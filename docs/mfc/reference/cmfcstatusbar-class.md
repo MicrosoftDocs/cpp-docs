@@ -119,7 +119,6 @@ The following example demonstrates how to call various methods in the `CMFCStatu
 
 ##  <a name="calcfixedlayout"></a>  CMFCStatusBar::CalcFixedLayout
 
-
 ```
 virtual CSize CalcFixedLayout(
     BOOL bStretch,
@@ -137,7 +136,6 @@ virtual CSize CalcFixedLayout(
 
 ##  <a name="commandtoindex"></a>  CMFCStatusBar::CommandToIndex
 
-
 ```
 int CommandToIndex(UINT nIDFind) const;
 ```
@@ -151,7 +149,6 @@ int CommandToIndex(UINT nIDFind) const;
 ### Remarks
 
 ##  <a name="create"></a>  CMFCStatusBar::Create
-
 
 ```
 BOOL Create(
@@ -171,7 +168,6 @@ BOOL Create(
 ### Remarks
 
 ##  <a name="createex"></a>  CMFCStatusBar::CreateEx
-
 
 ```
 BOOL CreateEx(
@@ -193,7 +189,6 @@ BOOL CreateEx(
 ### Remarks
 
 ##  <a name="doesallowdyninsertbefore"></a>  CMFCStatusBar::DoesAllowDynInsertBefore
-
 
 ```
 virtual BOOL DoesAllowDynInsertBefore() const;
@@ -276,7 +271,6 @@ The number of panes in the status bar.
 
 ##  <a name="getdrawextendedarea"></a>  CMFCStatusBar::GetDrawExtendedArea
 
-
 ```
 BOOL GetDrawExtendedArea() const;
 ```
@@ -286,7 +280,6 @@ BOOL GetDrawExtendedArea() const;
 ### Remarks
 
 ##  <a name="getextendedarea"></a>  CMFCStatusBar::GetExtendedArea
-
 
 ```
 virtual BOOL GetExtendedArea(CRect& rect) const;
@@ -302,7 +295,6 @@ virtual BOOL GetExtendedArea(CRect& rect) const;
 
 ##  <a name="getitemid"></a>  CMFCStatusBar::GetItemID
 
-
 ```
 UINT GetItemID(int nIndex) const;
 ```
@@ -316,7 +308,6 @@ UINT GetItemID(int nIndex) const;
 ### Remarks
 
 ##  <a name="getitemrect"></a>  CMFCStatusBar::GetItemRect
-
 
 ```
 void GetItemRect(
@@ -332,7 +323,6 @@ void GetItemRect(
 ### Remarks
 
 ##  <a name="getpaneinfo"></a>  CMFCStatusBar::GetPaneInfo
-
 
 ```
 void GetPaneInfo(
@@ -353,7 +343,6 @@ void GetPaneInfo(
 
 ##  <a name="getpaneprogress"></a>  CMFCStatusBar::GetPaneProgress
 
-
 ```
 long GetPaneProgress(int nIndex) const;
 ```
@@ -368,7 +357,6 @@ long GetPaneProgress(int nIndex) const;
 
 ##  <a name="getpanestyle"></a>  CMFCStatusBar::GetPaneStyle
 
-
 ```
 UINT GetPaneStyle(int nIndex) const;
 ```
@@ -382,7 +370,6 @@ UINT GetPaneStyle(int nIndex) const;
 ### Remarks
 
 ##  <a name="getpanetext"></a>  CMFCStatusBar::GetPaneText
-
 
 ```
 void GetPaneText(
@@ -478,7 +465,6 @@ Override this method in a `CMFCStatusBar`-derived class to customize the appeara
 
 ##  <a name="precreatewindow"></a>  CMFCStatusBar::PreCreateWindow
 
-
 ```
 virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 ```
@@ -493,7 +479,6 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 
 ##  <a name="setdrawextendedarea"></a>  CMFCStatusBar::SetDrawExtendedArea
 
-
 ```
 void SetDrawExtendedArea(BOOL bSet = TRUE);
 ```
@@ -505,7 +490,6 @@ void SetDrawExtendedArea(BOOL bSet = TRUE);
 ### Remarks
 
 ##  <a name="setindicators"></a>  CMFCStatusBar::SetIndicators
-
 
 ```
 BOOL SetIndicators(
@@ -584,7 +568,6 @@ void SetPaneIcon(
     HICON hIcon,
     BOOL bUpdate=TRUE);
 
-
 void SetPaneIcon(
     int nIndex,
     HBITMAP hBmp,
@@ -616,7 +599,6 @@ You can pass either HICON or HBITMAP together with the transparent color to set 
 If there is any running animation that [CMFCStatusBar::SetPaneAnimation](#setpaneanimation) has set, the animation will be stopped.
 
 ##  <a name="setpaneinfo"></a>  CMFCStatusBar::SetPaneInfo
-
 
 ```
 void SetPaneInfo(
@@ -665,7 +647,6 @@ To use this function for the given pane, you must call [CMFCStatusBar::EnablePan
 
 ##  <a name="setpanestyle"></a>  CMFCStatusBar::SetPaneStyle
 
-
 ```
 void SetPaneStyle(
     int nIndex,
@@ -680,7 +661,6 @@ void SetPaneStyle(
 ### Remarks
 
 ##  <a name="setpanetext"></a>  CMFCStatusBar::SetPaneText
-
 
 ```
 virtual BOOL SetPaneText(

@@ -108,7 +108,6 @@ Constructs a `CUserToolsManager`. Each application must have at most one user to
 ```
 CUserToolsManager();
 
-
 CUserToolsManager(
     const UINT uiCmdToolsDummy,
     const UINT uiCmdFirst,

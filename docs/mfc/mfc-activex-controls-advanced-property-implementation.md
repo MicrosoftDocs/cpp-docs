@@ -36,7 +36,7 @@ The Add Property Wizard provides a quick and easy method to implement read-only 
 
 1. From the shortcut menu, click **Add** and then click **Add Property**.
 
-     This opens the [Add Property Wizard](../ide/names-add-property-wizard.md).
+   This opens the [Add Property Wizard](../ide/names-add-property-wizard.md).
 
 1. In the **Property Name** box, type the name of your property.
 

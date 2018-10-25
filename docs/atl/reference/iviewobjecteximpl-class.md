@@ -23,7 +23,7 @@ This class implements `IUnknown` and provides default implementations of the [IV
 
 ```
 template<class T>
-class ATL_NO_VTABLE IViewObjectExImpl 
+class ATL_NO_VTABLE IViewObjectExImpl
    : public IViewObjectEx
 ```
 
@@ -256,7 +256,7 @@ STDMETHOD(SetAdvise)(
 
 ### Remarks
 
-The pointer to the [IAdviseSink](/windows/desktop/api/objidl/nn-objidl-iadvisesink) interface on the advise sink is stored in the control class data member [CComControlBase::m_spAdviseSink](ccomcontrolbase-class.md#m_spadvisesink).  
+The pointer to the [IAdviseSink](/windows/desktop/api/objidl/nn-objidl-iadvisesink) interface on the advise sink is stored in the control class data member [CComControlBase::m_spAdviseSink](ccomcontrolbase-class.md#m_spadvisesink).
 
 See [IViewObject::SetAdvise](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-setadvise) in the Windows SDK.
 

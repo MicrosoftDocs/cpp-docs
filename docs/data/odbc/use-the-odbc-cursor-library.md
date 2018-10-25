@@ -13,12 +13,12 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Use the ODBC Cursor Library
 
-ODBC manages scrolling through recordsets through the Cursor Library. These topics explain how to work with the Cursor Library.  
-  
-## In This Section  
-  
-- [Use the ODBC Cursor Library](../../data/odbc/odbc-the-odbc-cursor-library.md)  
-  
-## See Also  
+ODBC manages scrolling through recordsets through the Cursor Library. These topics explain how to work with the Cursor Library.
+
+## In This Section
+
+- [Use the ODBC Cursor Library](../../data/odbc/odbc-the-odbc-cursor-library.md)
+
+## See Also
 
 [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

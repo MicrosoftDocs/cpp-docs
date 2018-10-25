@@ -22,7 +22,7 @@ These functions provide support for marshaling and converting marshaling data in
 |-|-|
 |[AtlFreeMarshalStream](#atlfreemarshalstream)|Releases the marshal data and the `IStream` pointer.|
 |[AtlMarshalPtrInProc](#atlmarshalptrinproc)|Creates a new stream object and marshals the specified interface pointer.|
-|[AtlUnmarshalPtr](#atlunmarshalptr)|Converts a stream's marshaling data into an interface pointer.|  
+|[AtlUnmarshalPtr](#atlunmarshalptr)|Converts a stream's marshaling data into an interface pointer.|
 
 ## Requirements:
 
@@ -30,7 +30,7 @@ These functions provide support for marshaling and converting marshaling data in
 
 ##  <a name="atlfreemarshalstream"></a>  AtlFreeMarshalStream
 
-Releases the marshal data in the stream, then releases the stream pointer.  
+Releases the marshal data in the stream, then releases the stream pointer.
 
 ```
 HRESULT AtlFreeMarshalStream(IStream* pStream);

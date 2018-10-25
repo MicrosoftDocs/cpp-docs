@@ -99,7 +99,6 @@ struct TracerData
 
 BOOL PromptTraceFlags(TracerData FAR* lpData);
 
-
 #ifdef __cplusplus
 }
 #endif

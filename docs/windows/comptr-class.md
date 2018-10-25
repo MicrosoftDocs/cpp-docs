@@ -209,7 +209,7 @@ Intializes a new instance of the `ComPtr` class. Overloads provide default, copy
 ```cpp
 WRL_NOTHROW ComPtr();
 WRL_NOTHROW ComPtr(
-   decltype(__nullptr)  
+   decltype(__nullptr)
 );
 template<class U>
 WRL_NOTHROW ComPtr(
@@ -399,7 +399,7 @@ Assigns a value to the current `ComPtr`.
 
 ```cpp
 WRL_NOTHROW ComPtr& operator=(
-   decltype(__nullptr)  
+   decltype(__nullptr)
 );
 WRL_NOTHROW ComPtr& operator=(
    _In_opt_ T *other
@@ -464,7 +464,7 @@ bool operator==(
 
 bool operator==(
    const ComPtr<T>& a,
-   decltype(__nullptr)  
+   decltype(__nullptr)
 );
 
 bool operator==(
@@ -499,7 +499,7 @@ bool operator!=(
 
 bool operator!=(
    const ComPtr<T>& a,
-   decltype(__nullptr)  
+   decltype(__nullptr)
 );
 
 bool operator!=(

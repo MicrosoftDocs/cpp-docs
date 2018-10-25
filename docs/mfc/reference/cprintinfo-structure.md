@@ -83,7 +83,6 @@ Call this function to retrieve the number of the first page to be printed.
 ```
 UINT GetFromPage() const;
 
-
 ```
 
 ### Return Value
@@ -100,7 +99,6 @@ Call this function to retrieve the number of the last page of the document.
 
 ```
 UINT GetMaxPage() const;
-
 
 ```
 
@@ -119,7 +117,6 @@ Call this function to retrieve the number of the first page of the document.
 ```
 UINT GetMinPage() const;
 
-
 ```
 
 ### Return Value
@@ -137,7 +134,6 @@ Call this function to retrieve the offset when printing multiple DocObject items
 ```
 UINT GetOffsetPage() const;
 
-
 ```
 
 ### Return Value
@@ -154,7 +150,6 @@ Call this function to retrieve the number of the last page to be printed.
 
 ```
 UINT GetToPage() const;
-
 
 ```
 
@@ -334,6 +329,4 @@ Page numbers normally start at 1. This value is stored in the `CPrintDialog` obj
 [CView::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc)<br/>
 [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting)<br/>
 [CView::OnPrint](../../mfc/reference/cview-class.md#onprint)
-
-
 

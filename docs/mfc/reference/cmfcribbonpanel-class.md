@@ -18,7 +18,6 @@ Implements a panel that contains a set of ribbon elements. When the panel is dra
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
-
 ## Syntax
 
 ```
@@ -421,7 +420,6 @@ The name of the ribbon panel.
 
 ##  <a name="getparentbutton"></a>  CMFCRibbonPanel::GetParentButton
 
-
 ```
 CMFCRibbonBaseElement* GetParentButton() const;
 ```
@@ -443,7 +441,6 @@ CMFCRibbonCategory* GetParentCategory() const;
 A pointer to the ribbon category that contains this ribbon panel.
 
 ##  <a name="getparentmenubar"></a>  CMFCRibbonPanel::GetParentMenuBar
-
 
 ```
 CMFCRibbonPanelMenuBar* GetParentMenuBar() const;
@@ -711,7 +708,6 @@ The main ribbon panel is displayed when the user selects the application button.
 
 ##  <a name="ismenumode"></a>  CMFCRibbonPanel::IsMenuMode
 
-
 ```
 BOOL IsMenuMode() const;
 ```
@@ -721,7 +717,6 @@ BOOL IsMenuMode() const;
 ### Remarks
 
 ##  <a name="onkey"></a>  CMFCRibbonPanel::OnKey
-
 
 ```
 virtual BOOL OnKey(UINT nChar);
@@ -890,7 +885,6 @@ HMENU hMenu,
 BOOL bIsDefautCommand = FALSE,
 BOOL bRightAlign = FALSE);
 
-
 BOOL SetElementMenu(
 UINT uiCmdID,
 UINT uiMenuResID,
@@ -991,7 +985,6 @@ CMFCRibbonColorButton* pColorButton =
 (CMFCRibbonColorButton*)pPanel->SetElementRTCByID(
 ID_CHAR_COLOR,
     RUNTIME_CLASS (CMFCRibbonColorButton));
-
 
 // SetElementRTCByID sets runtime class and returns a pointer
 // to the newly created custom button,

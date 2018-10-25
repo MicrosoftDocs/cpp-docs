@@ -65,7 +65,6 @@ CGopherFile(
     CGopherLocator& refLocator,
     CGopherConnection* pConnection);
 
-
 CGopherFile(
     HINTERNET hFile,
     HINTERNET hSession,

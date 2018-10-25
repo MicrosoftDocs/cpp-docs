@@ -57,10 +57,10 @@ Next, use the **ATL OLE DB Consumer Wizard** to add an OLE DB consumer object.
 
        > [!NOTE]
        > There is a security issue with the **Allow saving password** feature of the **Data Link Properties** dialog box. In **Enter information to log on to the server**, there are two radio buttons: **Use Windows NT integrated security** and **Use a specific user name and password**.
-    
+
        > [!NOTE]
        > If you select **Use a specific user name and password**, you have the option of saving the password (using the **Allow saving password** check box); however, this option is not secure. It is recommended that you select **Use Windows NT integrated security**; this option uses Windows NT to verify your identity.
-    
+
        > [!NOTE]
        > If you cannot use Windows NT integrated security, you should use a middle-tier application to prompt the user for the password or to store the password in a location with security mechanisms to help protect it (instead of in source code).
 

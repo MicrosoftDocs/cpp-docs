@@ -142,7 +142,6 @@ virtual void DoPaint(
 *pDC*<br/>
 A pointer to a device context for painting.
 
-
 ## <a name="focus"></a> CMFCPreviewCtrlImpl::Focus
 
 Sets input focus to this control.
@@ -152,6 +151,7 @@ Sets input focus to this control.
 ```
 virtual void Focus();
 ```
+
 ## <a name="getdocument"></a> CMFCPreviewCtrlImpl::GetDocument
 
 Returns a document connected to this preview control.
@@ -185,6 +185,7 @@ Text color of the preview window.
 ```
 COLORREF m_clrTextColor;
 ```
+
 ## <a name="m_font"></a> CMFCPreviewCtrlImpl::m_font  Font used to display text in the preview window.
 
 ### Syntax
@@ -192,6 +193,7 @@ COLORREF m_clrTextColor;
 ```
 CFont m_font;
 ```
+
 ## <a name="m_pdocument"></a> CMFCPreviewCtrlImpl::m_pDocument
 
 A pointer to a document whose content is previewed in the control.
@@ -211,6 +213,7 @@ Tells this control to redraw.
 ```
 virtual void Redraw();
 ```
+
 ## <a name="setdocument"></a> CMFCPreviewCtrlImpl::SetDocument
 
 Called by the preview handler to create a relationship between the document implementation and the preview control.

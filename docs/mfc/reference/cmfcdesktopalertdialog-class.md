@@ -67,7 +67,6 @@ Perform the following steps to display a custom dialog in a popup window:
 
 ##  <a name="createfromparams"></a>  CMFCDesktopAlertDialog::CreateFromParams
 
-
 ```
 BOOL CreateFromParams(
     CMFCDesktopAlertWndInfo& params,
@@ -86,7 +85,6 @@ BOOL CreateFromParams(
 
 ##  <a name="getdlgsize"></a>  CMFCDesktopAlertDialog::GetDlgSize
 
-
 ```
 CSize GetDlgSize();
 ```
@@ -97,7 +95,6 @@ CSize GetDlgSize();
 
 ##  <a name="hasfocus"></a>  CMFCDesktopAlertDialog::HasFocus
 
-
 ```
 BOOL HasFocus() const;
 ```
@@ -107,7 +104,6 @@ BOOL HasFocus() const;
 ### Remarks
 
 ##  <a name="pretranslatemessage"></a>  CMFCDesktopAlertDialog::PreTranslateMessage
-
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);

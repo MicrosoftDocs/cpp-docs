@@ -22,16 +22,16 @@ The tool could not read or write to `location` in a memory-mapped file.
 
 1. Disk full.
 
-     Free up some space and link again.
+   Free up some space and link again.
 
 1. Trying to link over a network.
 
-     Some networks do not fully support the memory-mapped files used by the linker. Try linking on your local disk.
+   Some networks do not fully support the memory-mapped files used by the linker. Try linking on your local disk.
 
 1. Bad block on your disk.
 
-     Although the operating system and disk hardware should have detected such an error, you may want to run a disk-checking program.
+   Although the operating system and disk hardware should have detected such an error, you may want to run a disk-checking program.
 
 1. Out of heap space.
 
-     See [C1060](../../error-messages/compiler-errors-1/fatal-error-c1060.md) for more information.
+   See [C1060](../../error-messages/compiler-errors-1/fatal-error-c1060.md) for more information.

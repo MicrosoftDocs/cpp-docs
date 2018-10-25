@@ -113,7 +113,7 @@ Increments the strong reference count of the current `WeakReference` object.
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
 ```cpp
-STDMETHOD(Resolve)  
+STDMETHOD(Resolve)
    (REFIID riid,
    _Deref_out_opt_ IInspectable **ppvObject
 );

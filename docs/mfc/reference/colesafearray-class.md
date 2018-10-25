@@ -175,11 +175,9 @@ Constructs a `COleSafeArray` object.
 ```
 COleSafeArray();
 
-
 COleSafeArray(
     const SAFEARRAY& saSrc,
     VARTYPE vtSrc);
-
 
 COleSafeArray(
     LPCSAFEARRAY pSrc,
@@ -240,7 +238,6 @@ void Create(
     VARTYPE vtSrc,
     DWORD dwDims,
     DWORD* rgElements);
-
 
 void Create(
     VARTYPE vtSrc,

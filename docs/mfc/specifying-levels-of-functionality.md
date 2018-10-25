@@ -30,11 +30,11 @@ For a general description of `CObject` functionality, see the article [Deriving 
 
 1. Use the DECLARE_DYNAMIC macro in your class declaration, as shown here:
 
-     [!code-cpp[NVC_MFCCObjectSample#2](../mfc/codesnippet/cpp/specifying-levels-of-functionality_1.h)]
+   [!code-cpp[NVC_MFCCObjectSample#2](../mfc/codesnippet/cpp/specifying-levels-of-functionality_1.h)]
 
 1. Use the IMPLEMENT_DYNAMIC macro in the implementation file (.CPP) of your class. This macro takes as arguments the name of the class and its base class, as follows:
 
-     [!code-cpp[NVC_MFCCObjectSample#3](../mfc/codesnippet/cpp/specifying-levels-of-functionality_2.cpp)]
+   [!code-cpp[NVC_MFCCObjectSample#3](../mfc/codesnippet/cpp/specifying-levels-of-functionality_2.cpp)]
 
 > [!NOTE]
 >  Always put IMPLEMENT_DYNAMIC in the implementation file (.CPP) for your class. The IMPLEMENT_DYNAMIC macro should be evaluated only once during a compilation and therefore should not be used in an interface file (.H) that could potentially be included in more than one file.

@@ -20,9 +20,9 @@ ms.workload: ["cplusplus"]
 
 ```cpp
 LRESULT CommandHandler(
-    WORD wNotifyCode,  
-    WORD wID,  
-    HWND hWndCtl,  
+    WORD wNotifyCode,
+    WORD wID,
+    HWND hWndCtl,
     BOOL& bHandled);
 ```
 

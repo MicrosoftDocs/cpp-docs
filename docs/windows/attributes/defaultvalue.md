@@ -74,4 +74,4 @@ For more information, see [Attribute Contexts](cpp-attributes-com-net.md#context
 [retval](retval.md)<br/>
 [in](in-cpp.md)<br/>
 [pointer_default](pointer-default.md)<br/>
-[unique](unique-cpp.md)  
+[unique](unique-cpp.md)

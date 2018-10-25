@@ -81,7 +81,6 @@ BOOL AddItem(
     HWND hwnd,
     MoveSettings moveSettings SizeSettings sizeSettings);
 
-
 BOOL AddItem(
     int nID,
     MoveSettings moveSettings SizeSettings sizeSettings);
@@ -317,7 +316,6 @@ This is a nested class inside `CMFCDynamicLayout`.
 ## CMFCDynamicLayout::MoveSettings::IsHorizontal
 
 Check if the move data specifies a nonzero horizontal move.
-
 
 ```
 BOOL IsHorizontal() const

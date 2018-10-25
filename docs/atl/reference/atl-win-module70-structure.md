@@ -20,7 +20,7 @@ Used by windowing code in ATL.
 
 ```
 struct _ATL_WIN_MODULE70 {
-    UNIT cbSize; 
+    UNIT cbSize;
     CRITICAL_SECTION m_csWindowCreate;
     _AtlCreateWndData* m_pCreateWndList;
     CSimpleArray<ATOM> m_rgWindowClassAtoms;

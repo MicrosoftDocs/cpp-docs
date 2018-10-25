@@ -77,7 +77,6 @@ The following example demonstrates how to construct a `CMFCAutoHideButton` objec
 
 ##  <a name="bringtotop"></a>  CMFCAutoHideButton::BringToTop
 
-
 ```
 void BringToTop();
 ```
@@ -166,7 +165,6 @@ To associate an auto-hide button with a `CDockablePane`, pass the `CDockablePane
 
 ##  <a name="getparenttoolbar"></a>  CMFCAutoHideButton::GetParentToolBar
 
-
 ```
 CMFCAutoHideBar* GetParentToolBar();
 ```
@@ -176,7 +174,6 @@ CMFCAutoHideBar* GetParentToolBar();
 ### Remarks
 
 ##  <a name="getrect"></a>  CMFCAutoHideButton::GetRect
-
 
 ```
 CRect GetRect() const;
@@ -247,7 +244,6 @@ Nonzero if the button is horizontal; 0 otherwise.
 The framework sets the orientation of a [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) object when you create it.  You can control the orientation by using the *dwAlignment* parameter in the [CMFCAutoHideButton::Create](#create) method.
 
 ##  <a name="istop"></a>  CMFCAutoHideButton::IsTop
-
 
 ```
 BOOL IsTop() const;
@@ -362,7 +358,6 @@ virtual void ShowButton(BOOL bShow);
 
 ##  <a name="move"></a>  CMFCAutoHideButton::Move
 
-
 ```
 void Move(int nOffset);
 ```
@@ -374,7 +369,6 @@ void Move(int nOffset);
 ### Remarks
 
 ##  <a name="replacepane"></a>  CMFCAutoHideButton::ReplacePane
-
 
 ```
 void ReplacePane(CDockablePane* pNewBar);

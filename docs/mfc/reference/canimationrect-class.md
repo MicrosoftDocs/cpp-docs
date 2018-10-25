@@ -125,13 +125,11 @@ Constructs a CAnimationRect object.
 ```
 CAnimationRect();
 
-
 CAnimationRect(
     const CRect& rect,
     UINT32 nGroupID,
     UINT32 nObjectID = (UINT32)-1,
     DWORD dwUserData = 0);
-
 
 CAnimationRect(
     const CPoint& pt,
@@ -139,7 +137,6 @@ CAnimationRect(
     UINT32 nGroupID,
     UINT32 nObjectID = (UINT32)-1,
     DWORD dwUserData = 0);
-
 
 CAnimationRect(
     int nLeft,

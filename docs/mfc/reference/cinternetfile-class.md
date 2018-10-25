@@ -105,7 +105,6 @@ CInternetFile(
     CInternetConnection* pConnection,
     BOOL bReadMode);
 
-
 CInternetFile(
     HINTERNET hFile,
     HINTERNET hSession,
@@ -224,7 +223,6 @@ Call this member function to read a stream of characters until it finds a newlin
 
 ```
 virtual BOOL ReadString(CString& rString);
-
 
 virtual LPTSTR ReadString(
     LPTSTR pstr,

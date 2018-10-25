@@ -236,6 +236,7 @@ You can create any number of configurations in CppProperties.json. Each will app
   ]
 }
 ```
+
 ### Define tasks with tasks.vs.json
 
 You can automate build scripts or any other external operations on the files you have in your current workspace by running them as tasks directly in the IDE. You can configure a new task by right-clicking on a file or folder and selecting **Configure Tasks**.
