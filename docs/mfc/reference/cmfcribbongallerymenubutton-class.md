@@ -91,7 +91,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 
 ### Parameters
 
-[in] *src*
+[in] *src*<br/>
 
 ### Remarks
 

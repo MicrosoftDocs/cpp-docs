@@ -1,7 +1,7 @@
 ---
 title: "CMFCDesktopAlertWndInfo Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCDesktopAlertWndInfo", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_hIcon", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_nURLCmdID", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_strText", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_strURL"]
@@ -81,7 +81,7 @@ CMFCDesktopAlertWndInfo& operator=(CMFCDesktopAlertWndInfo& src);
 
 ### Parameters
 
-[in] *src*
+[in] *src*<br/>
 
 ### Return Value
 

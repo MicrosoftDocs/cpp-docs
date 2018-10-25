@@ -240,8 +240,8 @@ CSize DrawBottomText(
 
 ### Parameters
 
-*pDC*<br/>
-[in] [in] *bCalcOnly*
+[in] *pDC*<br/>
+[in] *bCalcOnly*<br/>
 
 ### Return Value
 
@@ -259,9 +259,9 @@ virtual void DrawImage(
 
 ### Parameters
 
-*pDC*<br/>
-[in] [in] *type*
-[in] *rectImage*
+[in] *pDC*<br/>
+[in] *type*<br/>
+[in] *rectImage*<br/>
 
 ### Remarks
 
@@ -279,11 +279,11 @@ virtual int DrawRibbonText(
 
 ### Parameters
 
-*pDC*<br/>
-[in] [in] *strText*
-*rectText*<br/>
-[in] [in] *uiDTFlags*
-[in] *clrText*
+[in] *pDC*<br/>
+[in] *strText*<br/>
+[in] *rectText*<br/>
+[in] *uiDTFlags*<br/>
+[in] *clrText*<br/>
 
 ### Return Value
 
@@ -326,7 +326,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Return Value
 
@@ -341,7 +341,7 @@ HICON GetIcon(BOOL bLargeIcon = TRUE) const;
 
 ### Parameters
 
-[in] *bLargeIcon*
+[in] *bLargeIcon*<br/>
 
 ### Return Value
 
@@ -373,7 +373,7 @@ virtual CSize GetImageSize(RibbonImageType type) const;
 
 ### Parameters
 
-[in] *type*
+[in] *type*<br/>
 
 ### Return Value
 
@@ -388,7 +388,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Return Value
 
@@ -426,7 +426,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Return Value
 
@@ -663,7 +663,7 @@ virtual void OnCalcTextSize(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Remarks
 
@@ -693,7 +693,7 @@ virtual void OnDraw(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Remarks
 
@@ -706,7 +706,7 @@ virtual void OnDrawBorder(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Remarks
 
@@ -719,7 +719,7 @@ virtual COLORREF OnFillBackground(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Return Value
 
@@ -813,7 +813,7 @@ virtual void SetDescription(LPCTSTR lpszText);
 
 ### Parameters
 
-[in] *lpszText*
+[in] *lpszText*<br/>
 
 ### Remarks
 
@@ -878,7 +878,7 @@ virtual void SetParentCategory(CMFCRibbonCategory* pParent);
 
 ### Parameters
 
-[in] *pParent*
+[in] *pParent*<br/>
 
 ### Remarks
 
@@ -904,7 +904,7 @@ virtual void SetText(LPCTSTR lpszText);
 
 ### Parameters
 
-[in] *lpszText*
+[in] *lpszText*<br/>
 
 ### Remarks
 

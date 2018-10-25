@@ -295,7 +295,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Return Value
 
@@ -417,7 +417,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Return Value
 
@@ -507,7 +507,7 @@ virtual void OnAfterChangeRect(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Remarks
 
@@ -520,7 +520,7 @@ virtual void OnDraw(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Remarks
 
@@ -567,7 +567,7 @@ virtual void OnEnable(BOOL bEnable);
 
 ### Parameters
 
-[in] *bEnable*
+[in] *bEnable*<br/>
 
 ### Remarks
 
@@ -580,7 +580,7 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 
 ### Parameters
 
-[in] *bIsRTL*
+[in] *bIsRTL*<br/>
 
 ### Remarks
 
@@ -615,7 +615,7 @@ void SelectItem(int nItemIndex);
 
 ### Parameters
 
-[in] *nItemIndex*
+[in] *nItemIndex*<br/>
 
 ### Remarks
 

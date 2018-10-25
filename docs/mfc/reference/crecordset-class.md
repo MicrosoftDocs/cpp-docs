@@ -1479,7 +1479,7 @@ When you call `Open`, a query, usually a SQL **SELECT** statement, selects recor
 
 The usual procedure is to pass NULL to `Open`; in this case, `Open` calls [GetDefaultSQL](#getdefaultsql). If you are using a derived `CRecordset` class, `GetDefaultSQL` gives the table name(s) you specified in ClassWizard. You can instead specify other information in the `lpszSQL` parameter.
 
-Whatever you pass, `Open` constructs a final SQL string for the query (the string may have SQL **WHERE** and **ORDER BY** clauses appended to the `lpszSQL` string you passed) and then executes the query. You can examine the constructed string by calling [GetSQL](#getsql) after calling *`Open`. For additional details about how the recordset constructs a SQL statement and selects records, see the article [Recordset: How Recordsets Select Records (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md).
+Whatever you pass, `Open` constructs a final SQL string for the query (the string may have SQL **WHERE** and **ORDER BY** clauses appended to the `lpszSQL` string you passed) and then executes the query. You can examine the constructed string by calling [GetSQL](#getsql) after calling `Open`. For additional details about how the recordset constructs a SQL statement and selects records, see the article [Recordset: How Recordsets Select Records (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md).
 
 The field data members of your recordset class are bound to the columns of the data selected. If any records are returned, the first record becomes the current record.
 

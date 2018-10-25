@@ -303,11 +303,11 @@ virtual BOOL Create(
 *rect*<br/>
 [in] Specifies the initial size and position of the miniframe window.
 
-[in] [out] *pParentWnd*
-Specifies the parent frame of the miniframe window. This value must not be NULL.
+*pParentWnd*<br/>
+[in, out] Specifies the parent frame of the miniframe window. This value must not be NULL.
 
-[in] [out] *pContext*
-Specifies user-defined context.
+*pContext*<br/>
+[in, out] Specifies user-defined context.
 
 ### Return Value
 
@@ -345,11 +345,11 @@ virtual BOOL CreateEx(
 *rect*<br/>
 [in] Specifies the initial size and position of the miniframe window.
 
-[in] [out] *pParentWnd*
-Specifies the parent frame of the miniframe window. This value must not be NULL.
+*pParentWnd*<br/>
+[in, out] Specifies the parent frame of the miniframe window. This value must not be NULL.
 
-[in] [out] *pContext*
-Specifies user-defined context.
+*pContext*<br/>
+[in, out] Specifies user-defined context.
 
 ### Return Value
 
@@ -865,7 +865,7 @@ void Pin(BOOL bPin = TRUE);
 
 ### Parameters
 
-[in] *bPin*
+[in] *bPin*<br/>
 
 ### Remarks
 
@@ -1015,7 +1015,7 @@ void SetDelayShow(BOOL bDelayShow);
 
 ### Parameters
 
-[in] *bDelayShow*
+[in] *bDelayShow*<br/>
 
 ### Remarks
 
@@ -1028,7 +1028,7 @@ void SetDockingManager(CDockingManager* pManager);
 
 ### Parameters
 
-[in] *pManager*
+[in] *pManager*<br/>
 
 ### Remarks
 
@@ -1067,7 +1067,7 @@ void SetHotPoint(CPoint& ptNew);
 
 ### Parameters
 
-[in] *ptNew*
+[in] *ptNew*<br/>
 
 ### Remarks
 
@@ -1141,7 +1141,7 @@ virtual void StoreRecentDockSiteInfo(CPane* pBar);
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Remarks
 
@@ -1156,8 +1156,8 @@ virtual void StoreRecentTabRelatedInfo(
 
 ### Parameters
 
-*pDockingBar*<br/>
-[in] [in] *pTabbedBar*
+[in] *pDockingBar*<br/>
+[in] *pTabbedBar*<br/>
 
 ### Remarks
 

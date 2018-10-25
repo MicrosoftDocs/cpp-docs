@@ -167,7 +167,7 @@ virtual BOOL CompareWith(const CMFCToolBarButton& other) const;
 
 ### Parameters
 
-[in] *other*
+[in] *other*<br/>
 
 ### Return Value
 
@@ -182,7 +182,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 
 ### Parameters
 
-[in] *src*
+[in] *src*<br/>
 
 ### Remarks
 
@@ -514,9 +514,9 @@ virtual SIZE OnCalculateSize(
 
 ### Parameters
 
-*pDC*<br/>
-[in] [in] *sizeDefault*
-[in] *bHorz*
+[in] *pDC*<br/>
+[in] *sizeDefault*<br/>
+[in] *bHorz*<br/>
 
 ### Return Value
 
@@ -540,7 +540,7 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 
 ### Parameters
 
-[in] *pWndParent*
+[in] *pWndParent*<br/>
 
 ### Remarks
 
@@ -555,8 +555,8 @@ virtual BOOL OnClick(
 
 ### Parameters
 
-*pWnd*<br/>
-[in] [in] *bDelay*
+[in] *pWnd*<br/>
+[in] *bDelay*<br/>
 
 ### Return Value
 
@@ -589,7 +589,7 @@ virtual BOOL OnContextHelp(CWnd* pWnd);
 
 ### Parameters
 
-[in] *pWnd*
+[in] *pWnd*<br/>
 
 ### Return Value
 
@@ -612,14 +612,14 @@ virtual void OnDraw(
 
 ### Parameters
 
-*pDC*<br/>
-[in] [in] *rect*
-*pImages*<br/>
-[in] [in] *bHorz*
-*bCustomizeMode*<br/>
-[in] [in] *bHighlight*
-*bDrawBorder*<br/>
-[in] [in] *bGrayDisabledButtons*
+[in] *pDC*<br/>
+[in] *rect*<br/>
+[in] *pImages*<br/>
+[in] *bHorz*<br/>
+[in] *bCustomizeMode*<br/>
+[in] *bHighlight*<br/>
+[in] *bDrawBorder*<br/>
+[in] *bGrayDisabledButtons*<br/>
 
 ### Remarks
 
@@ -635,9 +635,9 @@ virtual int OnDrawOnCustomizeList(
 
 ### Parameters
 
-*pDC*<br/>
-[in] [in] *rect*
-[in] *bSelected*
+[in] *pDC*<br/>
+[in] *rect*<br/>
+[in] *bSelected*<br/>
 
 ### Return Value
 
@@ -693,7 +693,7 @@ virtual void Serialize(CArchive& ar);
 
 ### Parameters
 
-[in] *ar*
+[in] *ar*<br/>
 
 ### Remarks
 
@@ -771,7 +771,7 @@ void SetMessageWnd(CWnd* pWndMessage);
 
 ### Parameters
 
-[in] *pWndMessage*
+[in] *pWndMessage*<br/>
 
 ### Remarks
 

@@ -13,9 +13,9 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating a Consumer Without Using a Wizard
 
-The following example assumes that you are adding OLE DB consumer support to an existing ATL project. If you want to add OLE DB consumer support to an MFC application, you should run the MFC Application Wizard, which creates all the support necessary and invokes MFC routines necessary to execute the application.  
+The following example assumes that you're adding OLE DB consumer support to an existing ATL project. If you want to add OLE DB consumer support to an MFC application, you should run the **MFC Application Wizard**, which creates all the support necessary and invokes MFC routines necessary to execute the application.  
   
-To add OLE DB consumer support without using the ATL OLE DB Consumer Wizard:  
+To add OLE DB consumer support without using the **ATL OLE DB Consumer Wizard**:  
   
 - In your pch.h file, append the following `#include` statements:  
   
@@ -40,7 +40,7 @@ Programmatically, a consumer typically performs the following sequence of operat
     class CMyTableName : public CCommand<CAccessor<CMyTableNameAccessor>>  
     ```  
   
-- Call `CoInitialize` to initialize COM. This is usually called in the main code. For example:  
+- Call `CoInitialize` to initialize COM. This is called in the main code. For example:  
   
     ```cpp  
     HRESULT hr = CoInitialize(NULL);  
@@ -70,7 +70,7 @@ Programmatically, a consumer typically performs the following sequence of operat
   
      If you are using a command, you might want to call `ReleaseCommand` after `Close`. The code example in [CCommand::Close](../../data/oledb/ccommand-close.md) shows how to call `Close` and `ReleaseCommand`.  
   
-- Call `CoUnInitialize` to uninitialize COM. This is usually called in the main code.  
+- Call `CoUnInitialize` to uninitialize COM. This is called in the main code.  
   
     ```cpp  
     CoUninitialize();  

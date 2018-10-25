@@ -128,8 +128,8 @@ virtual CSize CalcFixedLayout(
 
 ### Parameters
 
-*bStretch*<br/>
-[in] [in] *bHorz*
+[in] *bStretch*<br/>
+[in] *bHorz*<br/>
 
 ### Return Value
 
@@ -144,7 +144,7 @@ int CommandToIndex(UINT nIDFind) const;
 
 ### Parameters
 
-[in] *nIDFind*
+[in] *nIDFind*<br/>
 
 ### Return Value
 
@@ -162,9 +162,9 @@ BOOL Create(
 
 ### Parameters
 
-*pParentWnd*<br/>
-[in] [in] *dwStyle*
-[in] *nID*
+[in] *pParentWnd*<br/>
+[in] *dwStyle*<br/>
+[in] *nID*<br/>
 
 ### Return Value
 
@@ -183,10 +183,10 @@ BOOL CreateEx(
 
 ### Parameters
 
-*pParentWnd*<br/>
-[in] [in] *dwCtrlStyle*
-*dwStyle*<br/>
-[in] [in] *nID*
+[in] *pParentWnd*<br/>
+[in] *dwCtrlStyle*<br/>
+[in] *dwStyle*<br/>
+[in] *nID*<br/>
 
 ### Return Value
 
@@ -294,7 +294,7 @@ virtual BOOL GetExtendedArea(CRect& rect) const;
 
 ### Parameters
 
-[in] *rect*
+[in] *rect*<br/>
 
 ### Return Value
 
@@ -309,7 +309,7 @@ UINT GetItemID(int nIndex) const;
 
 ### Parameters
 
-[in] *nIndex*
+[in] *nIndex*<br/>
 
 ### Return Value
 
@@ -326,8 +326,8 @@ void GetItemRect(
 
 ### Parameters
 
-*nIndex*<br/>
-[in] [in] *lpRect*
+[in] *nIndex*<br/>
+[in] *lpRect*<br/>
 
 ### Remarks
 
@@ -344,10 +344,10 @@ void GetPaneInfo(
 
 ### Parameters
 
-*nIndex*<br/>
-[in] [in] *nID*
-*nStyle*<br/>
-[in] [in] *cxWidth*
+[in] *nIndex*<br/>
+[in] *nID*<br/>
+[in] *nStyle*<br/>
+[in] *cxWidth*<br/>
 
 ### Remarks
 
@@ -360,7 +360,7 @@ long GetPaneProgress(int nIndex) const;
 
 ### Parameters
 
-[in] *nIndex*
+[in] *nIndex*<br/>
 
 ### Return Value
 
@@ -375,7 +375,7 @@ UINT GetPaneStyle(int nIndex) const;
 
 ### Parameters
 
-[in] *nIndex*
+[in] *nIndex*<br/>
 
 ### Return Value
 
@@ -394,8 +394,8 @@ CString GetPaneText(int nIndex) const;
 
 ### Parameters
 
-*nIndex*<br/>
-[in] [in] *s*
+[in] *nIndex*<br/>
+[in] *s*<br/>
 
 ### Return Value
 
@@ -485,7 +485,7 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 
 ### Parameters
 
-[in] *cs*
+[in] *cs*<br/>
 
 ### Return Value
 
@@ -500,7 +500,7 @@ void SetDrawExtendedArea(BOOL bSet = TRUE);
 
 ### Parameters
 
-[in] *bSet*
+[in] *bSet*<br/>
 
 ### Remarks
 
@@ -515,8 +515,8 @@ BOOL SetIndicators(
 
 ### Parameters
 
-*lpIDArray*<br/>
-[in] [in] *nIDCount*
+[in] *lpIDArray*<br/>
+[in] *nIDCount*<br/>
 
 ### Return Value
 
@@ -628,10 +628,10 @@ void SetPaneInfo(
 
 ### Parameters
 
-*nIndex*<br/>
-[in] [in] *nID*
-*nStyle*<br/>
-[in] [in] *cxWidth*
+[in] *nIndex*<br/>
+[in] *nID*<br/>
+[in] *nStyle*<br/>
+[in] *cxWidth*<br/>
 
 ### Remarks
 
@@ -674,8 +674,8 @@ void SetPaneStyle(
 
 ### Parameters
 
-*nIndex*<br/>
-[in] [in] *nStyle*
+[in] *nIndex*<br/>
+[in] *nStyle*<br/>
 
 ### Remarks
 
@@ -691,9 +691,9 @@ virtual BOOL SetPaneText(
 
 ### Parameters
 
-*nIndex*<br/>
-[in] [in] *lpszNewText*
-[in] *bUpdate*
+[in] *nIndex*<br/>
+[in] *lpszNewText*<br/>
+[in] *bUpdate*<br/>
 
 ### Return Value
 

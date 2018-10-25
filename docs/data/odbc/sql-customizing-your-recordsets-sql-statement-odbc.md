@@ -50,7 +50,7 @@ To override the default **SELECT** statement, pass a string containing a complet
 > [!NOTE]
 >  If you use literal strings in your filters (or other parts of the SQL statement), you might have to "quote" (enclose in specified delimiters) such strings with a DBMS-specific literal prefix and literal suffix character (or characters).  
   
-You might also encounter special syntactic requirements for operations such as outer joins, depending on your DBMS. Use ODBC functions to obtain this information from your driver for the DBMS. For example, call `::SQLGetTypeInfo` for a particular data type, such as `SQL_VARCHAR`, to request the LITERAL_PREFIX and LITERAL_SUFFIX characters. If you are writing database-independent code, see Appendix C in the *ODBC SDK**Programmer's Reference* on the MSDN Library CD for detailed syntax information.  
+You might also encounter special syntactic requirements for operations such as outer joins, depending on your DBMS. Use ODBC functions to obtain this information from your driver for the DBMS. For example, call `::SQLGetTypeInfo` for a particular data type, such as `SQL_VARCHAR`, to request the LITERAL_PREFIX and LITERAL_SUFFIX characters. If you are writing database-independent code, see [Appendix C: SQL Grammar](/sql/odbc/reference/appendixes/appendix-c-sql-grammar) in the [ODBC Programmer's Reference](/sql/odbc/reference/odbc-programmer-s-reference) for detailed syntax information.  
   
 A recordset object constructs the SQL statement that it uses to select records unless you pass a custom SQL statement. How this is done depends mainly on the value you pass in the *lpszSQL* parameter of the `Open` member function.  
   

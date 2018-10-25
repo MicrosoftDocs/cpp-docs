@@ -1,7 +1,7 @@
 ---
 title: "Using Stored Procedures | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/24/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -22,14 +22,14 @@ A stored procedure can have any number of (including zero) input or output param
   
 The OLE DB provider for SQL Server (SQLOLEDB) supports the following mechanisms that stored procedures use to return data:  
   
-- Every SELECT statement in the procedure generates a result set.  
+- Every **SELECT** statement in the procedure generates a result set.  
   
 - The procedure can return data through output parameters.  
   
 - The procedure can have an integer return code.  
   
 > [!NOTE]
->  You cannot use stored procedures with the OLE DB provider for Jet because that provider does not support stored procedures; only constants are allowed in query strings.  
+> You cannot use stored procedures with the OLE DB provider for Jet because that provider does not support stored procedures; only constants are allowed in query strings.  
   
 ## See Also  
 

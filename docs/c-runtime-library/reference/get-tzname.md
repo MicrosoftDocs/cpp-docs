@@ -1,7 +1,7 @@
 ---
 title: "_get_tzname | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/22/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 apiname: ["_get_tzname"]
@@ -44,6 +44,14 @@ The size of the *timeZoneName* character string in bytes.
 *index*<br/>
 The index of one of the two time zone names to retrieve.
 
+|*index*|Contents of *timeZoneName*|*timeZoneName* default value|
+|-|-|-|
+|0|Time zone name|"PST"|
+|1|Daylight standard time zone name|"PDT"|
+|> 1 or < 0|**errno** set to **EINVAL**|not modified|
+
+Unless the values are explicitly changed during run time, the default values are "PST" and "PDT" respectively.
+
 ## Return Value
 
 Zero if successful, otherwise an **errno** type value.
@@ -62,17 +70,51 @@ If either *timeZoneName* is **NULL**, or *sizeInBytes* is zero or less than zero
 
 ## Remarks
 
-The **_get_tzname** function retrieves the character string representation of the time zone name or the daylight standard time zone name (DST) into the address of *timeZoneName* depending on the index value, along with the size of the string in *pReturnValue*. If *timeZoneName* is **NULL** and *sizeInBytes* is zero, just the size of the string of either time zone in bytes is returned in *pReturnValue*. The index values must be either 0 for standard time zone or 1 for daylight standard time zone; any other values of index have undetermined results.
+The **_get_tzname** function retrieves the character string representation of the current time zone name or the daylight standard time zone name (DST) into the address of *timeZoneName* depending on the index value, along with the size of the string in *pReturnValue*. If *timeZoneName* is **NULL** and *sizeInBytes* is zero, the size of the string required to hold the specified time zone and a terminating null in bytes is returned in *pReturnValue*. The index values must be either 0 for standard time zone or 1 for daylight standard time zone; any other values of *index* have undetermined results.
 
-### Index values
+## Example
 
-|*index*|Contents of *timeZoneName*|*timeZoneName* default value|
-|-------------|--------------------------------|----------------------------------|
-|0|Time zone name|"PST"|
-|1|Daylight standard time zone name|"PDT"|
-|> 1 or < 0|**errno** set to **EINVAL**|not modified|
+This sample calls **_get_tzname** to get the required buffer size to display the current Daylight standard time zone name, allocates a buffer of that size, calls **_get_tzname** again to load the name in the buffer, and prints it to the console.
 
-Unless the values are explicitly changed during run time, the default values are "PST" and "PDT" respectively.  The sizes of these character arrays are governed by **TZNAME_MAX** value.
+```C
+// crt_get_tzname.c
+// Compile by using: cl /W4 crt_get_tzname.c
+#include <stdio.h>
+#include <time.h>
+#include <malloc.h>
+
+enum TZINDEX {
+    STD,
+    DST
+};
+
+int main()
+{
+    size_t tznameSize = 0;
+    char * tznameBuffer = NULL;
+
+    // Get the size of buffer required to hold DST time zone name
+    if (_get_tzname(&tznameSize, NULL, 0, DST))
+        return 1;    // Return an error value if it failed
+
+    // Allocate a buffer for the name
+    if (NULL == (tznameBuffer = (char *)(malloc(tznameSize))))
+        return 2;    // Return an error value if it failed
+
+    // Load the name in the buffer
+    if (_get_tzname(&tznameSize, tznameBuffer, tznameSize, DST))
+        return 3;    // Return an error value if it failed
+
+    printf_s("The current Daylight standard time zone name is %s.\n", tznameBuffer);
+    return 0;
+}
+```
+
+### Output
+
+```Output
+The current Daylight standard time zone name is PDT.
+```
 
 ## Requirements
 
@@ -89,4 +131,3 @@ For more information, see [Compatibility](../../c-runtime-library/compatibility.
 [_get_daylight](get-daylight.md)<br/>
 [_get_dstbias](get-dstbias.md)<br/>
 [_get_timezone](get-timezone.md)<br/>
-[TZNAME_MAX](../../c-runtime-library/tzname-max.md)<br/>

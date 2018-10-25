@@ -496,11 +496,11 @@ Although these differences can affect your source code or other build artifacts,
     type_traits(1110): error C2139: 'D': an undefined class is not allowed as an argument to compiler intrinsic type trait '__is_base_of'
     ..\t331.cpp(14): note: see declaration of 'D'
     ..\t331.cpp(10): note: see reference to class template instantiation 'std::is_base_of<T,U>' being compiled
-            with
-            [
-                T=D,
-                U=D
-            ]
+            with
+            [
+                T=D,
+                U=D
+            ]
    ```
 
    This is because at the point of the first invocation of the is_base_of the class 'D' has not yet been defined.
@@ -515,7 +515,7 @@ Although these differences can affect your source code or other build artifacts,
 
 - **Private virtual base classes and indirect inheritance**
 
-   Previous versions of the compiler allowed a derived class to call member functions of its *indirectly-derived*`private virtual` base classes. This old behavior was incorrect and does not conform to the C++ standard. The compiler no longer accepts code written in this way and issues compiler error C2280 as a result.
+   Previous versions of the compiler allowed a derived class to call member functions of its *indirectly-derived* `private virtual` base classes. This old behavior was incorrect and does not conform to the C++ standard. The compiler no longer accepts code written in this way and issues compiler error C2280 as a result.
 
    ```Output
     error C2280: 'void *S3::__delDtor(unsigned int)': attempting to reference a deleted function
@@ -1764,7 +1764,7 @@ Use the new C++ unit test framework in Visual Studio to write C++ unit tests. Ad
 
 #### Architecture Dependency Graphs
 
-To understand your code better, you can now generate dependency graphs for the binary, class, namespace, and include files in a solution. On the menu bar, choose **Architecture** > **Generate Dependency Graph**, and then **For Solution** or **For Include File** to generate a dependency graph. When the graph generation is complete, you can explore it by expanding each node, learn dependency relationships by moving between nodes, and browse source code by choosing **View Content** on the shortcut menu for a node. To generate a dependency graph for include files, on the shortcut menu for a *.cpp source code file or *.h header file, choose **Generate Graph of Include Files**.
+To understand your code better, you can now generate dependency graphs for the binary, class, namespace, and include files in a solution. On the menu bar, choose **Architecture** > **Generate Dependency Graph**, and then **For Solution** or **For Include File** to generate a dependency graph. When the graph generation is complete, you can explore it by expanding each node, learn dependency relationships by moving between nodes, and browse source code by choosing **View Content** on the shortcut menu for a node. To generate a dependency graph for include files, on the shortcut menu for a \*.cpp source code file or \*.h header file, choose **Generate Graph of Include Files**.
 
 #### Architecture Explorer
 

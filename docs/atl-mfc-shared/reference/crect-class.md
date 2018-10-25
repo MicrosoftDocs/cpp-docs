@@ -89,8 +89,7 @@ A `CRect` contains member variables that define the top-left and bottom-right po
 
 When specifying a `CRect`, you must be careful to construct it so that it is normalized — in other words, such that the value of the left coordinate is less than the right and the top is less than the bottom. For example, a top left of (10,10) and bottom right of (20,20) defines a normalized rectangle but a top left of (20,20) and bottom right of (10,10) defines a non-normalized rectangle. If the rectangle is not normalized, many `CRect` member functions may return incorrect results. (See [CRect::NormalizeRect](#normalizerect) for a list of these functions.) Before you call a function that requires normalized rectangles, you can normalize non-normalized rectangles by calling the `NormalizeRect` function.
 
-Use caution when manipulating a `CRect` with the [CDC::DPtoLP](../../mfc/reference/cdc-class.md#dptolp) and [CDC::LPtoDP](../../mfc/reference/cdc-class.md#lptodp) member functions. If the mapping mode of a display context is such that the y-extent is negative, as in `MM_LOENGLISH`, then `CDC::DPtoLP` will transform the `CRect` so that its top is greater than the bottom. Functions such as `Height` and `Size` will then return negative values for the height of the transformed `CRect`, and the rectangle will be non-normalized.  
-
+Use caution when manipulating a `CRect` with the [CDC::DPtoLP](../../mfc/reference/cdc-class.md#dptolp) and [CDC::LPtoDP](../../mfc/reference/cdc-class.md#lptodp) member functions. If the mapping mode of a display context is such that the y-extent is negative, as in `MM_LOENGLISH`, then `CDC::DPtoLP` will transform the `CRect` so that its top is greater than the bottom. Functions such as `Height` and `Size` will then return negative values for the height of the transformed `CRect`, and the rectangle will be non-normalized.
 
 When using overloaded `CRect` operators, the first operand must be a `CRect`; the second can be either a [RECT](../../mfc/reference/rect-structure.md) structure or a `CRect` object.
 
@@ -244,7 +243,6 @@ rectDest.CopyRect(&rectSource2);
 // works against RECT structures, too!
 // rectDest is now set to (0, 0, 640, 480)   
 ```
-
 
 ##  <a name="crect"></a>  CRect::CRect
 
@@ -465,7 +463,6 @@ int nHt = rect.Height();
    ASSERT(nHt == 40);   
 ```
 
-
 ##  <a name="inflaterect"></a>  CRect::InflateRect
 
 `InflateRect` inflates `CRect` by moving its sides away from its center.
@@ -601,7 +598,6 @@ CRect rectEmpty(35, 35, 35, 35);
    ASSERT(rectEmpty.IsRectEmpty());   
 ```
 
-
 ##  <a name="isrectnull"></a>  CRect::IsRectNull
 
 Determines whether the top, left, bottom, and right values of `CRect` are all equal to 0.
@@ -695,7 +691,6 @@ rect.MoveToXY(10, 10);
    ASSERT(rect == CRect(10, 10, 110, 110));   
 ```
 
-
 ##  <a name="movetoy"></a>  CRect::MoveToY
 
 Call this function to move the rectangle to the absolute y-coordinate specified by *y*.
@@ -721,7 +716,6 @@ rect.MoveToY(10);
 // rect is now (0, 10, 100, 110);
    ASSERT(rect == CRect(0, 10, 100, 110));   
 ```
-
 
 ##  <a name="normalizerect"></a>  CRect::NormalizeRect
 
@@ -794,9 +788,7 @@ rect.OffsetRect(230, 230);
    ASSERT(rect == CRect(230, 230, 265, 265));   
 ```
 
-
-##  <a name="operator_lpcrect"></a>  CRect::operator LPCRECT Converts a `CRect` to an [LPCRECT](../../mfc/reference/data-types-mfc.md).  
-
+##  <a name="operator_lpcrect"></a>  CRect::operator LPCRECT Converts a `CRect` to an [LPCRECT](../../mfc/reference/data-types-mfc.md).
 
 ```
 operator LPCRECT() const throw();
@@ -808,8 +800,7 @@ When you use this function, you don't need the address-of (**&**) operator. This
 
 ##  <a name="operator_lprect"></a>  CRect::operator LPRECT
 
-Converts a `CRect` to an [LPRECT](../../mfc/reference/data-types-mfc.md).  
-
+Converts a `CRect` to an [LPRECT](../../mfc/reference/data-types-mfc.md).
 
 ```
 operator LPRECT() throw();
@@ -849,7 +840,6 @@ CRect rect2;
    rect2 = rect;
    ASSERT(rect2 == CRect(0, 0, 127, 168));   
 ```
-
 
 ##  <a name="operator_eq_eq"></a>  CRect::operator ==
 
@@ -895,7 +885,6 @@ test.bottom = 25;
 
 ASSERT(rect1 == test);  
 ```
-
 
 ##  <a name="operator_neq"></a>  CRect::operator !=
 
@@ -1088,7 +1077,6 @@ rect1 |= rect2;
    ASSERT(rectResult == rect1);   
 ```
 
-
 ##  <a name="operator_add"></a>  CRect::operator +
 
 The first two overloads return a `CRect` object that is equal to `CRect` displaced by the specified offsets.
@@ -1131,7 +1119,6 @@ The third overload returns a new `CRect` that is equal to `CRect` inflated by th
    CRect   rectResult(135, 300, 235, 400);
    ASSERT(rectResult == rect2);   
 ```
-
 
 ##  <a name="operator_-"></a>  CRect::operator -
 
@@ -1176,7 +1163,6 @@ The third overload returns a new `CRect` that is equal to `CRect` deflated by th
    ASSERT(rect2 == rectResult);   
 ```
 
-
 ##  <a name="operator_amp"></a>  CRect::operator &amp;
 
 Returns a `CRect` that is the intersection of `CRect` and *rect2*.
@@ -1212,7 +1198,6 @@ The intersection is the largest rectangle that is contained in both rectangles.
    CRect   rectResult(100, 100, 200, 200);
    ASSERT(rectResult == rect3);   
 ```
-
 
 ##  <a name="operator_or"></a>  CRect::operator &#124;
 
@@ -1255,7 +1240,6 @@ CRect rect3;
    CRect   rectResult(0, 0, 300, 300);
    ASSERT(rectResult == rect3);   
 ```
-
 
 ##  <a name="ptinrect"></a>  CRect::PtInRect
 
@@ -1342,7 +1326,6 @@ rect.SetRect(256, 256, 512, 512);
    rect.SetRect(256, 256, 512, 512);
    ASSERT(rect == CRect(256, 256, 512, 512));   
 ```
-
 
 ##  <a name="setrectempty"></a>  CRect::SetRectEmpty
 

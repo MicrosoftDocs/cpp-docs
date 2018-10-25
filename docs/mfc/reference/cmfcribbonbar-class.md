@@ -1311,8 +1311,8 @@ virtual void OnEditContextMenu(
 
 ### Parameters
 
-*pEdit*<br/>
-[in] [in] *point*
+[in] *pEdit*<br/>
+[in] *point*<br/>
 
 ### Remarks
 
@@ -1365,10 +1365,10 @@ virtual BOOL OnShowRibbonContextMenu(
 
 ### Parameters
 
-*pWnd*<br/>
-[in] [in] *x*
-*y*<br/>
-[in] [in] *pHit*
+[in] *pWnd*<br/>
+[in] *x*<br/>
+[in] *y*<br/>
+[in] *pHit*<br/>
 
 ### Return Value
 
@@ -1387,10 +1387,10 @@ virtual BOOL OnShowRibbonQATMenu(
 
 ### Parameters
 
-*pWnd*<br/>
-[in] [in] *x*
-*y*<br/>
-[in] [in] *pHit*
+[in] *pWnd*<br/>
+[in] *x*<br/>
+[in] *y*<br/>
+[in] *pHit*<br/>
 
 ### Return Value
 

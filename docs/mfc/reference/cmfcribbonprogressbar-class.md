@@ -143,7 +143,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Return Value
 
@@ -175,7 +175,7 @@ virtual void OnDraw(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Remarks
 

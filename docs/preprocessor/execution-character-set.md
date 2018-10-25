@@ -39,6 +39,6 @@ By default, Visual Studio uses the current code page as the source character set
 
 ## See Also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
+[Pragma Directives and the \_\_Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 [/execution-charset (Set Execution Character Set)](../build/reference/execution-charset-set-execution-character-set.md)<br/>
 [/utf-8 (Set Source and Executable character sets to UTF-8)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)

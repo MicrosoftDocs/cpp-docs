@@ -1,7 +1,7 @@
 ---
 title: "CMFCDragFrameImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCDragFrameImpl"]
@@ -46,7 +46,7 @@ void EndDrawDragFrame(BOOL bClearInternalRects = TRUE);
 
 ### Parameters
 
-[in] *bClearInternalRects*
+[in] *bClearInternalRects*<br/>
 
 ### Remarks
 
@@ -59,7 +59,7 @@ void Init(CWnd* pDraggedWnd);
 
 ### Parameters
 
-[in] *pDraggedWnd*
+[in] *pDraggedWnd*<br/>
 
 ### Remarks
 
@@ -72,7 +72,7 @@ void MoveDragFrame(BOOL bForceMove = FALSE);
 
 ### Parameters
 
-[in] *bForceMove*
+[in] *bForceMove*<br/>
 
 ### Remarks
 
@@ -89,9 +89,11 @@ void PlaceTabPreDocking(CWnd* pCBarToPlaceOn);
 
 ### Parameters
 
-*pTabbedBar*<br/>
-[in] [in] *bFirstTime*
-[in] *pCBarToPlaceOn*
+[in] *pTabbedBar*<br/>
+
+[in] *bFirstTime*<br/>
+
+[in] *pCBarToPlaceOn*<br/>
 
 ### Remarks
 
@@ -104,7 +106,7 @@ void RemoveTabPreDocking(CDockablePane* pOldTargetBar = NULL);
 
 ### Parameters
 
-[in] *pOldTargetBar*
+[in] *pOldTargetBar*<br/>
 
 ### Remarks
 

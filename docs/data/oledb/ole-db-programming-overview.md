@@ -1,7 +1,7 @@
 ---
 title: "OLE DB Programming Overview | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/22/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -13,9 +13,9 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Programming Overview
 
-OLE DB is a high-performance, COM-based database technology. It provides a common way to access data regardless of the form in which it is stored. In a typical business situation, a vast amount of information is stored outside of corporate databases. This information is found in file systems (such as FAT or NTFS), indexed-sequential files, personal databases (such as Access), spreadsheets (such as Excel), project planning applications (such as Project), and e-mail (such as Outlook). OLE DB enables you to access any kind of data store in the same manner, as long as the data store has an OLE DB provider.
+OLE DB is a high-performance, COM-based database technology. It provides a common way to access data independent of the form in which it's stored. In a typical business situation, a vast amount of information is not stored in corporate databases. This information is found in file systems (such as FAT or NTFS), indexed-sequential files, personal databases (such as Access), spreadsheets (such as Excel), project planning applications (such as Project), and e-mail (such as Outlook). OLE DB enables you to access any kind of data store in the same manner, as long as the data store has an OLE DB provider.
   
-OLE DB allows you to develop applications that access diverse data sources, whether they are DBMS or not. OLE DB makes universal access possible by using COM interfaces that support the appropriate DBMS functionality for a given data source. COM reduces unnecessary duplication of services and maximized interoperability not only among data sources but also among other applications.  
+OLE DB allows you to develop applications that access diverse data sources, whether they're DBMS or not. OLE DB makes universal access possible by using COM interfaces that support the appropriate DBMS functionality for a given data source. COM reduces unnecessary duplication of services and maximized interoperability not only among data sources but also among other applications.  
   
 ## Benefits of COM  
 

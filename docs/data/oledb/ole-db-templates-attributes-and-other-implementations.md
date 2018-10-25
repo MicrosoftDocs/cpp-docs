@@ -1,7 +1,7 @@
 ---
 title: "OLE DB Templates, Attributes, and Other Implementations | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/22/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -23,7 +23,7 @@ This template library contains two parts:
   
 - **OLE DB Provider Templates** Used to implement an OLE DB server (provider) application.  
   
-To use the OLE DB Templates, you should be familiar with C++ templates, COM, and the OLE DB interfaces. If you are not familiar with OLE DB, see [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643).  
+To use the OLE DB Templates, you should be familiar with C++ templates, COM, and the OLE DB interfaces. If you aren't familiar with OLE DB, see [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643).  
   
 For more information, you can:  
   
@@ -47,7 +47,7 @@ The MFC library has one class, [COleDBRecordView](../../mfc/reference/coledbreco
   
 ## OLE DB SDK Interfaces  
 
-In the cases where the OLE DB Templates do not support OLE DB functionality, you need to use the OLE DB interfaces themselves. For more information, see [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643) in the Windows SDK.  
+In the cases where the OLE DB Templates don't support OLE DB functionality, you need to use the OLE DB interfaces themselves. For more information, see [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643) in the Windows SDK.  
   
 ## See Also  
 

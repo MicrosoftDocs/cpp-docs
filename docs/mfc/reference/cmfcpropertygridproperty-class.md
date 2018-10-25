@@ -1258,7 +1258,7 @@ virtual void OnKillSelection(CMFCPropertyGridProperty*);
 
 ### Parameters
 
-[in] *CMFCPropertyGridProperty**
+[in] *CMFCPropertyGridProperty&#42;*<br/>
 
 ### Remarks
 
@@ -1273,7 +1273,7 @@ virtual void OnPosSizeChanged(CRect);
 
 ### Parameters
 
-[in] *CRect*
+[in] *CRect*<br/>
 
 ### Remarks
 
@@ -1350,12 +1350,12 @@ This method supports the following variant types: VT_INT, VT_I2, VT_I4, VT_UINT,
 
 
 ```
-virtual void OnSetSelection(CMFCPropertyGridProperty*);
+virtual void OnSetSelection CMFCPropertyGridProperty*);
 ```
 
 ### Parameters
 
-[in] *CMFCPropertyGridProperty**
+[in] *CMFCPropertyGridProperty&#42;*<br/>
 
 ### Remarks
 

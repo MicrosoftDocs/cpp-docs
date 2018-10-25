@@ -198,7 +198,7 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
 
 ### Parameters
 
-[in] *CDC**
+[in] *CDC&#42;*<br/>
 Pointer to the CDC associated with the check box.
 
 *CRect*<br/>

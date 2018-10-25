@@ -109,7 +109,7 @@ virtual void AddPane(CBasePane* pWnd);
 
 ### Parameters
 
-[in] *pWnd*
+[in] *pWnd*<br/>
 
 ### Remarks
 
@@ -122,7 +122,7 @@ virtual BOOL AddRecentPane(CDockablePane* pBar);
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Return Value
 
@@ -160,11 +160,11 @@ virtual void CalcExpectedDockedRect(
 
 ### Parameters
 
-*pWndToDock*<br/>
-[in] [in] *ptMouse*
-*rectResult*<br/>
-[in] [in] *bDrawTab*
-[in] *ppTargetBar*
+[in] *pWndToDock*<br/>
+[in] *ptMouse*<br/>
+[in] *rectResult*<br/>
+[in] *bDrawTab*<br/>
+[in] *ppTargetBar*<br/>
 
 ### Remarks
 
@@ -188,7 +188,7 @@ virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;
 
 ### Parameters
 
-[in] *pDockingBar*
+[in] *pDockingBar*<br/>
 
 ### Return Value
 
@@ -232,8 +232,8 @@ virtual BOOL DockFrame(
 
 ### Parameters
 
-*pDockedFrame*<br/>
-[in] [in] *dockMethod*
+[in] *pDockedFrame*<br/>
+[in] *dockMethod*<br/>
 
 ### Return Value
 
@@ -248,7 +248,7 @@ virtual BOOL DockPane(CDockablePane* pDockedBar);
 
 ### Parameters
 
-[in] *pDockedBar*
+[in] *pDockedBar*<br/>
 
 ### Return Value
 
@@ -263,7 +263,7 @@ virtual void DockRecentPaneToMainFrame(CDockablePane* pBar);
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Remarks
 
@@ -350,9 +350,9 @@ virtual BOOL InsertPane(
 
 ### Parameters
 
-*pControlBar*<br/>
-[in] [in] *pTarget*
-[in] *bAfter*
+[in] *pControlBar*<br/>
+[in] *pTarget*<br/>
+[in] *bAfter*<br/>
 
 ### Return Value
 
@@ -369,8 +369,8 @@ virtual BOOL LoadState(
 
 ### Parameters
 
-*lpszProfileName*<br/>
-[in] [in] *uiID*
+[in] *lpszProfileName*<br/>
+[in] *uiID*<br/>
 
 ### Return Value
 
@@ -423,8 +423,8 @@ virtual void OnShowPane(
 
 ### Parameters
 
-*pBar*<br/>
-[in] [in] *bShow*
+[in] *pBar*<br/>
+[in] *bShow*<br/>
 
 ### Remarks
 
@@ -440,9 +440,9 @@ virtual CBasePane* PaneFromPoint(
 
 ### Parameters
 
-*point*<br/>
-[in] [in] *nSensitivity*
-[in] *bCheckVisibility*
+[in] *point*<br/>
+[in] *nSensitivity*<br/>
+[in] *bCheckVisibility*<br/>
 
 ### Return Value
 
@@ -469,9 +469,9 @@ virtual void RemovePane(
 
 ### Parameters
 
-*pBar*<br/>
-[in] [in] *bDestroy*
-[in] *bNoDelayedDestroy*
+[in] *pBar*<br/>
+[in] *bDestroy*<br/>
+[in] *bNoDelayedDestroy*<br/>
 
 ### Remarks
 
@@ -486,8 +486,8 @@ virtual void ReplacePane(
 
 ### Parameters
 
-*pBarOrg*<br/>
-[in] [in] *pBarReplaceWith*
+[in] *pBarOrg*<br/>
+[in] *pBarReplaceWith*<br/>
 
 ### Remarks
 
@@ -502,8 +502,8 @@ virtual BOOL SaveState(
 
 ### Parameters
 
-*lpszProfileName*<br/>
-[in] [in] *uiID*
+[in] *lpszProfileName*<br/>
+[in] *uiID*<br/>
 
 ### Return Value
 
@@ -518,7 +518,7 @@ virtual void Serialize(CArchive& ar);
 
 ### Parameters
 
-[in] *ar*
+[in] *ar*<br/>
 
 ### Remarks
 
@@ -531,7 +531,7 @@ virtual void SetDockState(CDockingManager* pDockManager);
 
 ### Parameters
 
-[in] *pDockManager*
+[in] *pDockManager*<br/>
 
 ### Remarks
 
@@ -544,7 +544,7 @@ void SetLastFocusedPane(HWND hwnd);
 
 ### Parameters
 
-[in] *hwnd*
+[in] *hwnd*<br/>
 
 ### Remarks
 
@@ -560,9 +560,9 @@ virtual BOOL SetPreDockState(
 
 ### Parameters
 
-*preDockState*<br/>
-[in] [in] *pBarToDock*
-[in] *dockMethod*
+[in] *preDockState*<br/>
+[in] *pBarToDock*<br/>
+[in] *dockMethod*<br/>
 
 ### Return Value
 
@@ -577,7 +577,7 @@ virtual void StoreRecentDockSiteInfo(CPane* pBar);
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Remarks
 
@@ -592,8 +592,8 @@ virtual void StoreRecentTabRelatedInfo(
 
 ### Parameters
 
-*pDockingBar*<br/>
-[in] [in] *pTabbedBar*
+[in] *pDockingBar*<br/>
+[in] *pTabbedBar*<br/>
 
 ### Remarks
 

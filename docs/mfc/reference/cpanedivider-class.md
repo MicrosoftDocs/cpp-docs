@@ -120,7 +120,7 @@ void SetAutoHideMode(BOOL bMode);
 
 ### Parameters
 
-[in] *bMode*
+[in] *bMode*<br/>
 
 ### Remarks
 
@@ -133,7 +133,7 @@ void SetPaneContainerManager(CPaneContainerManager* p);
 
 ### Parameters
 
-[in] *p*
+[in] *p*<br/>
 
 ### Remarks
 
@@ -146,7 +146,7 @@ virtual void AddPane(CDockablePane* pBar);
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Remarks
 
@@ -167,10 +167,10 @@ virtual BOOL AddPaneContainer(
 
 ### Parameters
 
-*barContainerManager*<br/>
-[in] [in] *bOuterEdge*
-*pTargetBar*<br/>
-[in] [in] *dwAlignment*
+[in] *barContainerManager*<br/>
+[in] *bOuterEdge*<br/>
+[in] *pTargetBar*<br/>
+[in] *dwAlignment*<br/>
 
 ### Return Value
 
@@ -185,7 +185,7 @@ virtual CDockablePane* AddRecentPane(CDockablePane* pBar);
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Return Value
 
@@ -205,11 +205,11 @@ virtual void CalcExpectedDockedRect(
 
 ### Parameters
 
-*pWndToDock*<br/>
-[in] [in] *ptMouse*
-*rectResult*<br/>
-[in] [in] *bDrawTab*
-[in] *ppTargetBar*
+[in] *pWndToDock*<br/>
+[in] *ptMouse*<br/>
+[in] *rectResult*<br/>
+[in] *bDrawTab*<br/>
+[in] *ppTargetBar*<br/>
 
 ### Remarks
 
@@ -224,8 +224,8 @@ virtual CSize CalcFixedLayout(
 
 ### Parameters
 
-*bStretch*<br/>
-[in] [in] *bHorz*
+[in] *bStretch*<br/>
+[in] *bHorz*<br/>
 
 ### Return Value
 
@@ -256,8 +256,8 @@ CPaneDivider(
 
 ### Parameters
 
-*bDefaultSlider*<br/>
-[in] [in] *pParent*
+[in] *bDefaultSlider*<br/>
+[in] *pParent*<br/>
 
 ### Return Value
 
@@ -278,12 +278,12 @@ virtual BOOL CreateEx(
 
 ### Parameters
 
-*dwStyleEx*<br/>
-[in] [in] *dwStyle*
-*rect*<br/>
-[in] [in] *pParentWnd*
-*nID*<br/>
-[in] [in] *pContext*
+[in] *dwStyleEx*<br/>
+[in] *dwStyle*<br/>
+[in] *rect*<br/>
+[in] *pParentWnd*<br/>
+[in] *nID*<br/>
+[in] *pContext*<br/>
 
 ### Return Value
 
@@ -322,8 +322,8 @@ CPaneContainer* FindPaneContainer(
 
 ### Parameters
 
-*pBar*<br/>
-[in] [in] *bLeftBar*
+[in] *pBar*<br/>
+[in] *bLeftBar*<br/>
 
 ### Return Value
 
@@ -338,7 +338,7 @@ CDockablePane* FindTabbedPane(UINT nID);
 
 ### Parameters
 
-[in] *nID*
+[in] *nID*<br/>
 
 ### Return Value
 
@@ -444,8 +444,8 @@ void Init(
 
 ### Parameters
 
-*bDefaultSlider*<br/>
-[in] [in] *pParent*
+[in] *bDefaultSlider*<br/>
+[in] *pParent*<br/>
 
 ### Remarks
 
@@ -462,10 +462,10 @@ virtual BOOL InsertPane(
 
 ### Parameters
 
-*pBarToInsert*<br/>
-[in] [in] *pTargetBar*
-*dwAlignment*<br/>
-[in] [in] *lpRect*
+[in] *pBarToInsert*<br/>
+[in] *pTargetBar*<br/>
+[in] *dwAlignment*<br/>
+[in] *lpRect*<br/>
 
 ### Return Value
 
@@ -523,8 +523,8 @@ virtual void Move(
 
 ### Parameters
 
-*ptOffset*<br/>
-[in] [in] *bAdjustLayout*
+[in] *ptOffset*<br/>
+[in] *bAdjustLayout*<br/>
 
 ### Remarks
 
@@ -573,8 +573,8 @@ virtual void OnShowPane(
 
 ### Parameters
 
-*pBar*<br/>
-[in] [in] *bShow*
+[in] *pBar*<br/>
+[in] *bShow*<br/>
 
 ### Remarks
 
@@ -596,7 +596,7 @@ virtual void RemovePane(CDockablePane* pBar);
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Remarks
 
@@ -611,8 +611,8 @@ virtual BOOL ReplacePane(
 
 ### Parameters
 
-*pBarToReplace*<br/>
-[in] [in] *pBarToReplaceWith*
+[in] *pBarToReplace*<br/>
+[in] *pBarToReplaceWith*<br/>
 
 ### Return Value
 
@@ -629,8 +629,8 @@ virtual void RepositionPanes(
 
 ### Parameters
 
-*rectNew*<br/>
-[in] [in] *hdwp*
+[in] *rectNew*<br/>
+[in] *hdwp*<br/>
 
 ### Remarks
 
@@ -643,7 +643,7 @@ void Serialize(CArchive& ar);
 
 ### Parameters
 
-[in] *ar*
+[in] *ar*<br/>
 
 ### Remarks
 
@@ -656,7 +656,7 @@ void ShowWindow(int nCmdShow);
 
 ### Parameters
 
-[in] *nCmdShow*
+[in] *nCmdShow*<br/>
 
 ### Remarks
 
@@ -669,7 +669,7 @@ void StoreRecentDockSiteInfo(CDockablePane* pBar);
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Remarks
 
@@ -684,8 +684,8 @@ void StoreRecentTabRelatedInfo(
 
 ### Parameters
 
-*pDockingBar*<br/>
-[in] [in] *pTabbedBar*
+[in] *pDockingBar*<br/>
+[in] *pTabbedBar*<br/>
 
 ### Remarks
 

@@ -168,7 +168,7 @@ int main()
 
 The type of **this** in a member function is described by the following syntax, where *cv-qualifier-list* is determined from the member functions declarator and can be **const** or **volatile** (or both), and *class-type* is the name of the class:
 
-*[cv-qualifier-list] class-type*  **\* const this**
+*[cv-qualifier-list] class-type*  **&#42; const this**
 
 In other words, **this** is always a const pointer; it cannot be reassigned.  The **const** or **volatile** qualifiers used in the member function declaration apply to the class instance pointed to by **this** in the scope of that function.
 

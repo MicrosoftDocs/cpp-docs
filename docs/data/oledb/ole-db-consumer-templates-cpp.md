@@ -1,7 +1,7 @@
 ---
 title: "OLE DB Consumer Templates (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/22/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Consumer Templates (C++)
 
-The OLE DB Consumer Templates support the OLE DB version 2.6 specification. (The OLE DB Consumer Templates are tested against OLE DB 2.6 but do not support every interface in the specification.) The Consumer Templates minimize the amount of code you must write to implement an OLE DB consumer. The templates provide:  
+The OLE DB Consumer Templates support the OLE DB version 2.6 specification. (The OLE DB Consumer Templates are tested against OLE DB 2.6 but don't support every interface in the specification.) The Consumer Templates minimize the amount of code you must write to implement an OLE DB consumer. The templates provide:  
   
 - Easy access to OLE DB features and easy integration with ATL and MFC.  
   
@@ -21,7 +21,7 @@ The OLE DB Consumer Templates support the OLE DB version 2.6 specification. (The
   
 - Native C/C++ data types for OLE DB programming.  
   
-To use the OLE DB Templates, you should be familiar with C++ templates, COM, and the OLE DB interfaces. If you are not familiar with OLE DB, see [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms718124).  
+To use the OLE DB Templates, you should be familiar with C++ templates, COM, and the OLE DB interfaces. If you aren't familiar with OLE DB, see [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms718124).  
   
 The OLE DB Templates support the existing OLE DB object model rather than adding a new object model. The top-layer classes in the OLE DB Consumer Templates parallel the components defined in the OLE DB specification. The design of the OLE DB Consumer Templates includes advanced features such as multiple accessors on a rowset. The use of templates and multiple inheritance makes the library small and flexible.  
   
@@ -57,5 +57,5 @@ For more information, see the following topics:
 
 [OLE DB Programming](../../data/oledb/ole-db-programming.md)<br/>
 [Data Access](../data-access-in-cpp.md)<br/>
-[OLE DB SDK Documentation](/previous-versions/windows/desktop/ms722784)   
+[OLE DB SDK Documentation](/previous-versions/windows/desktop/ms722784)<br/>
 [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643)

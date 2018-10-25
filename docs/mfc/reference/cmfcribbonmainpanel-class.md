@@ -75,8 +75,8 @@ virtual void Add(CMFCRibbonBaseElement* pElem);
 
 ### Parameters
 
-[in] [out] *pElem*
-A pointer to the ribbon element to add to the main panel.
+*pElem*<br/>
+[in, out] A pointer to the ribbon element to add to the main panel.
 
 ### Remarks
 
@@ -112,8 +112,8 @@ void AddToBottom(CMFCRibbonMainPanelButton* pElem);
 
 ### Parameters
 
-[in] [out] *pElem*
-A pointer to the ribbon element to add to the bottom of the main panel.
+*pElem*<br/>
+[in, out] A pointer to the ribbon element to add to the bottom of the main panel.
 
 ### Remarks
 

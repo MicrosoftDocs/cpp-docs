@@ -1,7 +1,7 @@
 ---
 title: "TZNAME_MAX | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/22/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "conceptual"
 f1_keywords: ["TZNAME_MAX"]
@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # TZNAME_MAX
 
-The maximum permissible string length for a time zone name variable.
+**Obsolete**. The maximum permissible string length for a time zone name variable. This macro was defined in \<limits.h> in Visual Studio 2012 and earlier versions. It is not defined in Visual Studio 2013 and later versions. To get the length required to hold the current time zone name, use [_get_tzname](../c-runtime-library/reference/get-tzname.md).
 
 ## Syntax
 
