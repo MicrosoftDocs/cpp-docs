@@ -15,7 +15,7 @@ ms.workload: ["cplusplus", "linux"]
 
 First, make sure you have the **Linux Development Workload** for Visual Studio installed. For more information, see [Download, install, and setup the Linux workload](download-install-and-setup-the-linux-development-workload.md).
 
-When coding C++ in Visual Studio for Linux, you have the choice of creating a Visual Studio project, or a CMake project. This topic describes how to create a Visual Studio project. For information about CMake Projects, see [Configure a Linux CMake Project ](cmake-linux-project.md).
+When creating a new C++ project in Visual Studio for Linux, you have the choice of creating a Visual Studio project, or a CMake project. This topic describes how to create a Visual Studio project. For information about creating and working with existing CMake Projects, see [Configure a Linux CMake Project ](cmake-linux-project.md).
 
 To create a new Linux project in Visual Studio, do the following:
 
