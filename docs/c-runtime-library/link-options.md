@@ -22,7 +22,7 @@ CLR pure mode versions of these objects are deprecated in Visual Studio 2015 and
 |binmode.obj|pbinmode.obj|Sets the default file-translation mode to binary. See [_fmode](../c-runtime-library/fmode.md).|
 |chkstk.obj|n/a|Provides stack-checking and alloca support when not using the CRT.|
 |commode.obj|pcommode.obj|Sets the global commit flag to "commit". See [fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md) and [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md).|
-|exe_initialize_mta.lib|n/a|Initializes MTA apartment during EXE startup. Allows use of COM objects in global smart pointers. Note that this option will leak an MTA apartment reference during shutdown - do not use for DLLs. Linking to this is equivalent to including combase.h and defining _EXE_INITIALIZE_MTA. |
+|exe_initialize_mta.lib|n/a|Initializes the MTA apartment during EXE startup, which allows the use of COM objects in global smart pointers. Because this option leaks an MTA apartment reference during shutdown, do not use it for DLLs. Linking to this is equivalent to including combase.h and defining _EXE_INITIALIZE_MTA. |
 |fp10.obj|n/a|Changes the default precision control to 64 bits. See [Floating-Point Support](../c-runtime-library/floating-point-support.md).|
 |invalidcontinue.obj|pinvalidcontinue.obj|Sets a default invalid parameter handler that does nothing, meaning that invalid parameters passed to CRT functions will just set errno and return an error result.|
 |loosefpmath.obj|n/a|Ensures that floating point code tolerates denormal values.|
