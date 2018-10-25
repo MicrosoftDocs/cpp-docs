@@ -69,7 +69,7 @@ value class Boxed {
     public:
         int i;
 };
-int main()  
+int main()
 {
     Boxed^ y = gcnew Boxed;
     y->i = 32;

@@ -242,7 +242,6 @@ static void PASCAL CompactDatabase(
     LPCTSTR lpszLocale = dbLangGeneral,
     int nOptions = 0);
 
-
 static void PASCAL CompactDatabase(
     LPCTSTR lpszSrcName,
     LPCTSTR lpszDestName,
@@ -386,7 +385,6 @@ void GetDatabaseInfo(
     int nIndex,
     CDaoDatabaseInfo& dbinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
-
 
 void GetDatabaseInfo(
     LPCTSTR lpszName,
@@ -557,7 +555,6 @@ void GetWorkspaceInfo(
     int nIndex,
     CDaoWorkspaceInfo& wkspcinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
-
 
 void GetWorkspaceInfo(
     LPCTSTR lpszName,

@@ -159,5 +159,3 @@ If you move past the last record in the recordset, the record view continues to 
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

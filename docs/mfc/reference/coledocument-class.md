@@ -502,5 +502,3 @@ This allows the framework to prompt the user to save the document before closing
 [CDocument Class](../../mfc/reference/cdocument-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

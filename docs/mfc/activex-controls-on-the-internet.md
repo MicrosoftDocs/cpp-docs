@@ -186,8 +186,6 @@ If you are adding asynchronous property support to an existing control, you will
 
 You will update the ready state as your code is downloaded by calling [COleControl::InternalSetReadyState](../mfc/reference/colecontrol-class.md#internalsetreadystate). One place you could call `InternalSetReadyState` is from the `OnProgress` override of `CDataPathProperty`-derived class.
 
-
-
 ## See Also
 
 [MFC Internet Programming Tasks](../mfc/mfc-internet-programming-tasks.md)<br/>

@@ -102,7 +102,6 @@ The following example demonstrates how to retrieve a pointer to a `CMultiPaneFra
 
 ##  <a name="addpane"></a>  CMultiPaneFrameWnd::AddPane
 
-
 ```
 virtual void AddPane(CBasePane* pWnd);
 ```
@@ -114,7 +113,6 @@ virtual void AddPane(CBasePane* pWnd);
 ### Remarks
 
 ##  <a name="addrecentpane"></a>  CMultiPaneFrameWnd::AddRecentPane
-
 
 ```
 virtual BOOL AddRecentPane(CDockablePane* pBar);
@@ -130,7 +128,6 @@ virtual BOOL AddRecentPane(CDockablePane* pBar);
 
 ##  <a name="adjustlayout"></a>  CMultiPaneFrameWnd::AdjustLayout
 
-
 ```
 virtual void AdjustLayout();
 ```
@@ -139,7 +136,6 @@ virtual void AdjustLayout();
 
 ##  <a name="adjustpaneframes"></a>  CMultiPaneFrameWnd::AdjustPaneFrames
 
-
 ```
 virtual void AdjustPaneFrames();
 ```
@@ -147,7 +143,6 @@ virtual void AdjustPaneFrames();
 ### Remarks
 
 ##  <a name="calcexpecteddockedrect"></a>  CMultiPaneFrameWnd::CalcExpectedDockedRect
-
 
 ```
 virtual void CalcExpectedDockedRect(
@@ -170,7 +165,6 @@ virtual void CalcExpectedDockedRect(
 
 ##  <a name="canbeattached"></a>  CMultiPaneFrameWnd::CanBeAttached
 
-
 ```
 virtual BOOL CanBeAttached() const;
 ```
@@ -180,7 +174,6 @@ virtual BOOL CanBeAttached() const;
 ### Remarks
 
 ##  <a name="canbedockedtopane"></a>  CMultiPaneFrameWnd::CanBeDockedToPane
-
 
 ```
 virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;
@@ -196,7 +189,6 @@ virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;
 
 ##  <a name="checkgrippervisibility"></a>  CMultiPaneFrameWnd::CheckGripperVisibility
 
-
 ```
 virtual void CheckGripperVisibility();
 ```
@@ -204,7 +196,6 @@ virtual void CheckGripperVisibility();
 ### Remarks
 
 ##  <a name="closeminiframe"></a>  CMultiPaneFrameWnd::CloseMiniFrame
-
 
 ```
 virtual void CloseMiniFrame();
@@ -214,7 +205,6 @@ virtual void CloseMiniFrame();
 
 ##  <a name="converttotabbeddocument"></a>  CMultiPaneFrameWnd::ConvertToTabbedDocument
 
-
 ```
 virtual void ConvertToTabbedDocument();
 ```
@@ -222,7 +212,6 @@ virtual void ConvertToTabbedDocument();
 ### Remarks
 
 ##  <a name="dockframe"></a>  CMultiPaneFrameWnd::DockFrame
-
 
 ```
 virtual BOOL DockFrame(
@@ -241,7 +230,6 @@ virtual BOOL DockFrame(
 
 ##  <a name="dockpane"></a>  CMultiPaneFrameWnd::DockPane
 
-
 ```
 virtual BOOL DockPane(CDockablePane* pDockedBar);
 ```
@@ -256,7 +244,6 @@ virtual BOOL DockPane(CDockablePane* pDockedBar);
 
 ##  <a name="dockrecentpanetomainframe"></a>  CMultiPaneFrameWnd::DockRecentPaneToMainFrame
 
-
 ```
 virtual void DockRecentPaneToMainFrame(CDockablePane* pBar);
 ```
@@ -269,7 +256,6 @@ virtual void DockRecentPaneToMainFrame(CDockablePane* pBar);
 
 ##  <a name="getcaptiontext"></a>  CMultiPaneFrameWnd::GetCaptionText
 
-
 ```
 virtual CString GetCaptionText();
 ```
@@ -280,7 +266,6 @@ virtual CString GetCaptionText();
 
 ##  <a name="getfirstvisiblepane"></a>  CMultiPaneFrameWnd::GetFirstVisiblePane
 
-
 ```
 virtual CWnd* GetFirstVisiblePane() const;
 ```
@@ -290,7 +275,6 @@ virtual CWnd* GetFirstVisiblePane() const;
 ### Remarks
 
 ##  <a name="getpane"></a>  CMultiPaneFrameWnd::GetPane
-
 
 ```
 virtual CWnd* GetPane() const;
@@ -318,7 +302,6 @@ This method can be used to access the internal [CPaneContainerManager Class](../
 
 ##  <a name="getpanecount"></a>  CMultiPaneFrameWnd::GetPaneCount
 
-
 ```
 virtual int GetPaneCount() const;
 ```
@@ -329,7 +312,6 @@ virtual int GetPaneCount() const;
 
 ##  <a name="getvisiblepanecount"></a>  CMultiPaneFrameWnd::GetVisiblePaneCount
 
-
 ```
 virtual int GetVisiblePaneCount() const;
 ```
@@ -339,7 +321,6 @@ virtual int GetVisiblePaneCount() const;
 ### Remarks
 
 ##  <a name="insertpane"></a>  CMultiPaneFrameWnd::InsertPane
-
 
 ```
 virtual BOOL InsertPane(
@@ -360,7 +341,6 @@ virtual BOOL InsertPane(
 
 ##  <a name="loadstate"></a>  CMultiPaneFrameWnd::LoadState
 
-
 ```
 virtual BOOL LoadState(
     LPCTSTR lpszProfileName = NULL,
@@ -378,7 +358,6 @@ virtual BOOL LoadState(
 
 ##  <a name="ondocktorecentpos"></a>  CMultiPaneFrameWnd::OnDockToRecentPos
 
-
 ```
 virtual void OnDockToRecentPos();
 ```
@@ -386,7 +365,6 @@ virtual void OnDockToRecentPos();
 ### Remarks
 
 ##  <a name="onkillrolluptimer"></a>  CMultiPaneFrameWnd::OnKillRollUpTimer
-
 
 ```
 virtual void OnKillRollUpTimer();
@@ -396,7 +374,6 @@ virtual void OnKillRollUpTimer();
 
 ##  <a name="onpanerecalclayout"></a>  CMultiPaneFrameWnd::OnPaneRecalcLayout
 
-
 ```
 virtual void OnPaneRecalcLayout();
 ```
@@ -405,7 +382,6 @@ virtual void OnPaneRecalcLayout();
 
 ##  <a name="onsetrolluptimer"></a>  CMultiPaneFrameWnd::OnSetRollUpTimer
 
-
 ```
 virtual void OnSetRollUpTimer();
 ```
@@ -413,7 +389,6 @@ virtual void OnSetRollUpTimer();
 ### Remarks
 
 ##  <a name="onshowpane"></a>  CMultiPaneFrameWnd::OnShowPane
-
 
 ```
 virtual void OnShowPane(
@@ -429,7 +404,6 @@ virtual void OnShowPane(
 ### Remarks
 
 ##  <a name="panefrompoint"></a>  CMultiPaneFrameWnd::PaneFromPoint
-
 
 ```
 virtual CBasePane* PaneFromPoint(
@@ -450,7 +424,6 @@ virtual CBasePane* PaneFromPoint(
 
 ##  <a name="removenonvalidpanes"></a>  CMultiPaneFrameWnd::RemoveNonValidPanes
 
-
 ```
 virtual void RemoveNonValidPanes();
 ```
@@ -458,7 +431,6 @@ virtual void RemoveNonValidPanes();
 ### Remarks
 
 ##  <a name="removepane"></a>  CMultiPaneFrameWnd::RemovePane
-
 
 ```
 virtual void RemovePane(
@@ -477,7 +449,6 @@ virtual void RemovePane(
 
 ##  <a name="replacepane"></a>  CMultiPaneFrameWnd::ReplacePane
 
-
 ```
 virtual void ReplacePane(
     CBasePane* pBarOrg,
@@ -492,7 +463,6 @@ virtual void ReplacePane(
 ### Remarks
 
 ##  <a name="savestate"></a>  CMultiPaneFrameWnd::SaveState
-
 
 ```
 virtual BOOL SaveState(
@@ -511,7 +481,6 @@ virtual BOOL SaveState(
 
 ##  <a name="serialize"></a>  CMultiPaneFrameWnd::Serialize
 
-
 ```
 virtual void Serialize(CArchive& ar);
 ```
@@ -523,7 +492,6 @@ virtual void Serialize(CArchive& ar);
 ### Remarks
 
 ##  <a name="setdockstate"></a>  CMultiPaneFrameWnd::SetDockState
-
 
 ```
 virtual void SetDockState(CDockingManager* pDockManager);
@@ -537,7 +505,6 @@ virtual void SetDockState(CDockingManager* pDockManager);
 
 ##  <a name="setlastfocusedpane"></a>  CMultiPaneFrameWnd::SetLastFocusedPane
 
-
 ```
 void SetLastFocusedPane(HWND hwnd);
 ```
@@ -549,7 +516,6 @@ void SetLastFocusedPane(HWND hwnd);
 ### Remarks
 
 ##  <a name="setpredockstate"></a>  CMultiPaneFrameWnd::SetPreDockState
-
 
 ```
 virtual BOOL SetPreDockState(
@@ -570,7 +536,6 @@ virtual BOOL SetPreDockState(
 
 ##  <a name="storerecentdocksiteinfo"></a>  CMultiPaneFrameWnd::StoreRecentDockSiteInfo
 
-
 ```
 virtual void StoreRecentDockSiteInfo(CPane* pBar);
 ```
@@ -582,7 +547,6 @@ virtual void StoreRecentDockSiteInfo(CPane* pBar);
 ### Remarks
 
 ##  <a name="storerecenttabrelatedinfo"></a>  CMultiPaneFrameWnd::StoreRecentTabRelatedInfo
-
 
 ```
 virtual void StoreRecentTabRelatedInfo(

@@ -18,7 +18,7 @@ Specifies that *short_filename* is to be used as an alias for *long_filename*.
 
 ## Syntax
 
-> #pragma include_alias("*long_filename*", "*short_filename*")  
+> #pragma include_alias("*long_filename*", "*short_filename*")
 > #pragma include_alias(*long_filename*, *short_filename*)
 
 ## Remarks
@@ -46,7 +46,7 @@ The alias being searched for must match the specification exactly, in case as we
 ```
 
 no aliasing (substitution) is performed, since the header file strings do not match exactly. Also, header filenames used as arguments to the `/Yu` and `/Yc` compiler options, or the `hdrstop` pragma, are not substituted. For example, if your source file contains the following directive,
-  
+
 ```cpp
 #include <AppleSystemHeaderStop.h>
 ```

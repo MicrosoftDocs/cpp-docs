@@ -125,12 +125,10 @@ virtual BOOL Open(
     COleControl* pControl,
     CFileException* pError = NULL);
 
-
 virtual BOOL Open(
     LPCTSTR lpszPath,
     COleControl* pControl,
     CFileException* pError = NULL);
-
 
 virtual BOOL Open(
     LPCTSTR lpszPath,

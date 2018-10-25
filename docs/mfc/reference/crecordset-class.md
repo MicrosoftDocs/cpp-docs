@@ -592,17 +592,14 @@ void GetFieldValue(
     CDBVariant& varValue,
     short nFieldType = DEFAULT_FIELD_TYPE);
 
-
 void GetFieldValue(
     short nIndex,
     CDBVariant& varValue,
     short nFieldType = DEFAULT_FIELD_TYPE);
 
-
 void GetFieldValue(
     short nIndex,
     CStringA& strValue);
-
 
 void GetFieldValue(
     short nIndex,
@@ -688,7 +685,6 @@ Obtains information about the fields in the recordset.
 void GetODBCFieldInfo(
     LPCTSTR lpszName,
     CODBCFieldInfo& fieldinfo);
-
 
 void GetODBCFieldInfo(
     short nIndex,

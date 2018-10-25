@@ -15,10 +15,10 @@ ms.workload: ["cplusplus", "data-storage"]
 # CCustomSource (CustomDS.h)
 
 The provider classes use multiple inheritance. The following code shows the inheritance chain for the data source object:  
-  
+
 ```cpp
-/////////////////////////////////////////////////////////////////////////  
-// CCustomSource  
+/////////////////////////////////////////////////////////////////////////
+// CCustomSource
 class ATL_NO_VTABLE CCustomSource :   
    public CComObjectRootEx<CComSingleThreadModel>,  
    public CComCoClass<CCustomSource, &CLSID_Custom>,  
@@ -26,34 +26,34 @@ class ATL_NO_VTABLE CCustomSource :
    public IDBInitializeImpl<CCustomSource>,  
    public IDBPropertiesImpl<CCustomSource>,  
    public IPersistImpl<CCustomSource>,  
-   public IInternalConnectionImpl<CCustomSource>  
+   public IInternalConnectionImpl<CCustomSource>
 ```  
-  
+
 All the COM components derive from `CComObjectRootEx` and `CComCoClass`. `CComObjectRootEx` provides all the implementation for the `IUnknown` interface. It can handle any threading model. `CComCoClass` handles any error support required. If you want to send richer error information to the client, you can use some of the error APIs in `CComCoClass`.  
-  
+
 The data source object also inherits from several 'Impl' classes. Each class provides the implementation for an interface. The data source object implements the `IPersist`, `IDBProperties`, `IDBInitialize`, and `IDBCreateSession` interfaces. Each interface is required by OLE DB to implement the data source object. You can choose to support or not support particular functionality by inheriting or not inheriting from one of these 'Impl' classes. If you want to support the `IDBDataSourceAdmin` interface, you inherit from the `IDBDataSourceAdminImpl` class to get the functionality required.  
-  
+
 ## COM Map  
 
 Whenever the client calls `QueryInterface` for an interface on the data source, it goes through the following COM map:  
-  
-```cpp  
+
+```cpp
 BEGIN_COM_MAP(CCustomSource)  
    COM_INTERFACE_ENTRY(IDBCreateSession)  
    COM_INTERFACE_ENTRY(IDBInitialize)  
    COM_INTERFACE_ENTRY(IDBProperties)  
    COM_INTERFACE_ENTRY(IPersist)  
-   COM_INTERFACE_ENTRY(IInternalConnection)  
-END_COM_MAP()  
+   COM_INTERFACE_ENTRY(IInternalConnection)
+END_COM_MAP()
 ```  
-  
+
 The COM_INTERFACE_ENTRY macros are from ATL and tell the implementation of `QueryInterface` in `CComObjectRootEx` to return the appropriate interfaces.  
-  
+
 ## Property Map  
 
 The property map specifies all the properties designated by the provider:  
-  
-```cpp  
+
+```cpp
 BEGIN_PROPSET_MAP(CCustomSource)  
    BEGIN_PROPERTY_SET(DBPROPSET_DATASOURCEINFO)  
       PROPERTY_INFO_ENTRY(ACTIVESESSIONS)  
@@ -117,16 +117,16 @@ BEGIN_PROPSET_MAP(CCustomSource)
    BEGIN_PROPERTY_SET(DBPROPSET_DATASOURCE)  
       PROPERTY_INFO_ENTRY(CURRENTCATALOG)  
    END_PROPERTY_SET(DBPROPSET_DATASOURCE)  
-   CHAIN_PROPERTY_SET(CCustomSession)  
-END_PROPSET_MAP()  
+   CHAIN_PROPERTY_SET(CCustomSession)
+END_PROPSET_MAP()
 ```  
-  
+
 Properties in OLE DB are grouped. The data source object has two groups of properties: one for the DBPROPSET_DATASOURCEINFO set and one for the DBPROPSET_DBINIT set. The DBPROPSET_DATASOURCEINFO set corresponds to properties about the provider and its data source. The DBPROPSET_DBINIT set corresponds to properties used at initialization. The OLE DB Provider Templates handle these sets with the PROPERTY_SET macros. The macros create a block that contains an array of properties. Whenever the client calls the `IDBProperties` interface, the provider uses the property map.  
-  
+
 You do not need to implement every property in the specification. However, you must support the required properties; see the level 0 conformance specification for more information. If you do not want to support a property, you can remove it from the map. If you want to support a property, add it into the map by using a PROPERTY_INFO_ENTRY macro. The macro corresponds to the `UPROPINFO` structure as shown in the following code:  
-  
-```cpp  
-struct UPROPINFO  
+
+```cpp
+struct UPROPINFO
 {  
    DBPROPID    dwPropId;  
    ULONG       ulIDS;  
@@ -137,28 +137,28 @@ struct UPROPINFO
       DWORD dwVal;  
       LPOLESTR szVal;  
    };  
-   DBPROPOPTIONS dwOption;  
-};  
+   DBPROPOPTIONS dwOption;
+};
 ```  
-  
+
 Each element in the structure represents information to handle the property. It contains a `DBPROPID` to determine the GUID and ID for the property. It also contains entries to determine the type and value of the property.  
-  
+
 If you want to change the default value of a property (note that a consumer can change the value of a writable property at any time), you can use either the PROPERTY_INFO_ENTRY_VALUE or PROPERTY_INFO_ENTRY_EX macro. These macros allow you to specify a value for a corresponding property. The PROPERTY_INFO_ENTRY_VALUE macro is a shorthand notation that allows you to change the value. The PROPERTY_INFO_ENTRY_VALUE macro calls the PROPERTY_INFO_ENTRY_EX macro. This macro allows you to add or change all of the attributes in the `UPROPINFO` structure.  
-  
+
 If you want to define your own property set, you can add one by making an additional BEGIN_PROPSET_MAP/END_PROPSET_MAP combination. You need to define a GUID for the property set and then define your own properties. If you have provider-specific properties, add them to a new property set instead of using an existing one. This avoids problems in later versions of OLE DB.  
-  
+
 ## User-Defined Property Sets  
 
 Visual C++ supports user-defined property sets. You do not have to override `GetProperties` or `GetPropertyInfo`. Instead, the templates detect any user-defined property set and add it to the appropriate object.  
-  
+
 If you have a user-defined property set that needs to be available at initialization time (that is, before the consumer calls `IDBInitialize::Initialize`), you can specify this by using the UPROPSET_USERINIT flag in conjunction with the BEGIN_PROPERTY_SET_EX macro. The property set must be in the data source object for this to work (as the OLE DB specification requires). For example:  
-  
-```cpp  
+
+```cpp
 BEGIN_PROPERTY_SET_EX(DBPROPSET_MYPROPSET, UPROPSET_USERINIT)  
-   PROPERTY_INFO_ENTRY(DBPROP_MYPROP)  
-END_PROPERTY_SET_EX(DBPROPSET_MYPROPSET)  
+   PROPERTY_INFO_ENTRY(DBPROP_MYPROP)
+END_PROPERTY_SET_EX(DBPROPSET_MYPROPSET)
 ```  
-  
+
 ## See Also  
 
 [Provider Wizard-Generated Files](../../data/oledb/provider-wizard-generated-files.md)

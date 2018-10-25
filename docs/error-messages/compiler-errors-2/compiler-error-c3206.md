@@ -83,7 +83,6 @@ int main() {
 }
 ```
 
-
 A class template is not allowed as a template type argument. The following sample raises C3206:
 
 ```

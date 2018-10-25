@@ -24,7 +24,6 @@ The member function returns a reverse iterator that points at the first element 
 
     const_reverse_iterator rend() const;
 
-
 reverse_iterator rend();
 ```
 

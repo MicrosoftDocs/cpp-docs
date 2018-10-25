@@ -24,6 +24,7 @@ struct identity {
    Type operator()(const Type& left) const;
    };
 ```
+
 ### Parameters
 
 |Parameter|Description|

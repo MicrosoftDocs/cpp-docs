@@ -72,7 +72,6 @@ To fix this issue, we usually recommend you change your code to use the suggeste
 
 To turn off deprecation warnings for these functions, define the preprocessor macro **\_CRT\_NONSTDC\_NO\_WARNINGS**. You can define this macro at the command line by including the option `/D_CRT_NONSTDC_NO_WARNINGS`.
 
-
 ### Unsafe CRT Library functions
 
 **This function or variable may be unsafe. Consider using** *safe_version* **instead. To disable deprecation, use \_CRT\_SECURE\_NO\_WARNINGS.  See online help for details.**

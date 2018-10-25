@@ -18,7 +18,6 @@ This article discusses using the Properties window to install event handlers for
 >[!IMPORTANT]
 > ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
 
-
 > [!NOTE]
 >  This article uses a dialog-based ActiveX control container project named Container and an embedded control named Circ as examples in the procedures and code.
 

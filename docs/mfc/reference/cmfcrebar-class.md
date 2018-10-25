@@ -156,7 +156,6 @@ Call this method to take advantage of the Windows rebar common control functiona
 
 ##  <a name="calcfixedlayout"></a>  CMFCReBar::CalcFixedLayout
 
-
 ```
 virtual CSize CalcFixedLayout(
     BOOL bStretch,
@@ -174,7 +173,6 @@ virtual CSize CalcFixedLayout(
 
 ##  <a name="canfloat"></a>  CMFCReBar::CanFloat
 
-
 ```
 virtual BOOL CanFloat() const;
 ```
@@ -184,7 +182,6 @@ virtual BOOL CanFloat() const;
 ### Remarks
 
 ##  <a name="enabledocking"></a>  CMFCReBar::EnableDocking
-
 
 ```
 void EnableDocking(DWORD dwDockStyle);
@@ -198,7 +195,6 @@ void EnableDocking(DWORD dwDockStyle);
 
 ##  <a name="getrebarbandinfosize"></a>  CMFCReBar::GetReBarBandInfoSize
 
-
 ```
 UINT GetReBarBandInfoSize() const;
 ```
@@ -208,7 +204,6 @@ UINT GetReBarBandInfoSize() const;
 ### Remarks
 
 ##  <a name="onshowcontrolbarmenu"></a>  CMFCReBar::OnShowControlBarMenu
-
 
 ```
 virtual BOOL OnShowControlBarMenu(CPoint);
@@ -223,7 +218,6 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 ### Remarks
 
 ##  <a name="ontoolhittest"></a>  CMFCReBar::OnToolHitTest
-
 
 ```
 virtual INT_PTR OnToolHitTest(
@@ -242,7 +236,6 @@ virtual INT_PTR OnToolHitTest(
 
 ##  <a name="onupdatecmdui"></a>  CMFCReBar::OnUpdateCmdUI
 
-
 ```
 virtual void OnUpdateCmdUI(
     CFrameWnd* pTarget,
@@ -257,7 +250,6 @@ virtual void OnUpdateCmdUI(
 ### Remarks
 
 ##  <a name="setpanealignment"></a>  CMFCReBar::SetPaneAlignment
-
 
 ```
 virtual void SetPaneAlignment(DWORD dwAlignment);

@@ -131,7 +131,6 @@ The following example demonstrates how to construct a `CMFCToolTipCtrl` object, 
 
 ##  <a name="cmfctooltipctrl"></a>  CMFCToolTipCtrl::CMFCToolTipCtrl
 
-
 ```
 CMFCToolTipCtrl(CMFCToolTipInfo* pParams = NULL);
 ```
@@ -193,7 +192,6 @@ virtual void OnDrawBorder(
 Override this method in a derived class to customize the appearance of the tooltip border.
 
 ##  <a name="ondrawdescription"></a>  CMFCToolTipCtrl::OnDrawDescription
-
 
 ```
 virtual CSize OnDrawDescription(
@@ -351,7 +349,6 @@ The description text is displayed on the tooltip under the separator.
 
 ##  <a name="setfixedwidth"></a>  CMFCToolTipCtrl::SetFixedWidth
 
-
 ```
 void SetFixedWidth(
     int nWidthRegular,
@@ -367,7 +364,6 @@ void SetFixedWidth(
 
 ##  <a name="sethotribbonbutton"></a>  CMFCToolTipCtrl::SetHotRibbonButton
 
-
 ```
 void SetHotRibbonButton(CMFCRibbonButton* pRibbonButton);
 ```
@@ -379,7 +375,6 @@ void SetHotRibbonButton(CMFCRibbonButton* pRibbonButton);
 ### Remarks
 
 ##  <a name="setlocation"></a>  CMFCToolTipCtrl::SetLocation
-
 
 ```
 void SetLocation(CPoint pt);

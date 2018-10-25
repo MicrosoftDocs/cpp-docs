@@ -103,7 +103,6 @@ Constructs a `CSplitButton` object. The constructor's parameters specify a subme
 ```
 CSplitButton();
 
-
 CSplitButton(
     UINT nMenuId,
     UINT nSubMenuId)

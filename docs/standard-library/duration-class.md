@@ -97,7 +97,6 @@ constexpr duration() = default;
 template <class Rep2>
 constexpr explicit duration(const Rep2& R);
 
-
 template <class Rep2, class Period2>
 constexpr duration(const duration<Rep2, Period2>& Dur);
 ```

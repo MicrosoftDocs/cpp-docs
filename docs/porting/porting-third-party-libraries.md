@@ -24,7 +24,7 @@ In the past, finding and upgrading 3rd party libraries was sometimes a non-trivi
 If your library is not present in **vcpkg** catalog, you can open an issue on the [GitHub repo](https://github.com/Microsoft/vcpkg/issues) where the community and the Visual C++ team can see it and potentially create the port file for this library.
 
 For proprietary 3rd party libraries (non-open source) we recommend that you contact the library provider. However, we are interested to know of any proprietary libs you are using and block you, let us know which one you depend on (you can contact us at vcupgrade@microsoft.com).
-  
+
 ## See Also  
 
 [Visual C++ Porting and Upgrading Guide](visual-cpp-porting-and-upgrading-guide.md)

@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "data-storage"]
 # OLE DB Architectural Design Issues
 
 Consider the following issues before starting your OLE DB application:  
-  
+
 ## What programming implementation will you use to write your OLE DB application?
 
 Microsoft offers several libraries to accomplish this task: an OLE DB Template library, OLE DB attributes, and the raw OLE DB interfaces in the OLE DB SDK. Also, there are wizards that help you write your program. These implementations are described in [OLE DB Templates, Attributes, and Other Implementations](../../data/oledb/ole-db-templates-attributes-and-other-implementations.md).

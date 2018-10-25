@@ -94,12 +94,10 @@ Uses a bitmap to initialize the picture object in a `CPictureHolder`.
 BOOL CreateFromBitmap(
     UINT idResource);
 
-
 BOOL CreateFromBitmap(
     CBitmap* pBitmap,
     CPalette* pPal = NULL,
     BOOL bTransferOwnership = TRUE);
-
 
 BOOL CreateFromBitmap(
     HBITMAP hbm,
@@ -142,7 +140,6 @@ Uses an icon to initialize the picture object in a `CPictureHolder`.
 ```
 BOOL CreateFromIcon(
     UINT idResource);
-
 
 BOOL CreateFromIcon(
     HICON hIcon,

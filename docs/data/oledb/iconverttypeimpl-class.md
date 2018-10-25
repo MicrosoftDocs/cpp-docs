@@ -15,15 +15,15 @@ ms.workload: ["cplusplus", "data-storage"]
 # IConvertTypeImpl Class
 
 Provides an implementation of the [IConvertType](/previous-versions/windows/desktop/ms715926) interface.  
-  
+
 ## Syntax
 
 ```cpp
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE IConvertTypeImpl   
-   : public IConvertType, public CConvertHelper  
+   : public IConvertType, public CConvertHelper
 ```  
-  
+
 ### Parameters  
 
 *T*<br/>
@@ -32,15 +32,15 @@ Your class, derived from `IConvertTypeImpl`.
 ## Requirements  
 
 **Header:** atldb.h  
-  
+
 ## Members  
-  
+
 ### Interface Methods  
-  
-|||  
-|-|-|  
+
+|||
+|-|-|
 |[CanConvert](#canconvert)|Gives information on the availability of type conversions on a command or on a rowset.|  
-  
+
 ## Remarks  
 
 This interface is mandatory on commands, rowsets, and index rowsets. `IConvertTypeImpl` implements the interface by delegating to the conversion object supplied by OLE DB.  
@@ -48,23 +48,23 @@ This interface is mandatory on commands, rowsets, and index rowsets. `IConvertTy
 ## <a name="canconvert"></a> IConvertTypeImpl::CanConvert
 
 Gives information on the availability of type conversions on a command or on a rowset.  
-  
+
 ### Syntax  
-  
+
 ```cpp
 STDMETHOD(CanConvert)(DBTYPE wFromType,   
    DBTYPE wToType,   
-   DBCONVERTFLAGS dwConvertFlags);  
+   DBCONVERTFLAGS dwConvertFlags);
 ```  
-  
+
 #### Parameters  
 
 See [IConvertType::CanConvert](/previous-versions/windows/desktop/ms711224) in the *OLE DB Programmer's Reference*.  
-  
+
 ### Remarks  
 
 Uses OLE DB data conversion in `MSADC.DLL`.  
-  
+
 ## See Also  
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>

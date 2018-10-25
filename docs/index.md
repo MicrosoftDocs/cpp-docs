@@ -1,4 +1,4 @@
---- 
+---
 layout: HubPage
 ms.topic: conceptual
 title: Visual C++ Documentation | Microsoft Docs

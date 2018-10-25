@@ -50,4 +50,3 @@ The total width of a character is the summation of the A, B, and C spaces. Eithe
 [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CDC::GetCharABCWidths](../../mfc/reference/cdc-class.md#getcharabcwidths)
 
-

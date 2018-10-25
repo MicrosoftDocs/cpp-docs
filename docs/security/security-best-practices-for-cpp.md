@@ -83,7 +83,6 @@ You can use the AppVerifier to:
 
 - Identify potential security issues in an application.
 
-
 ## Windows User Accounts
 
 Using Windows user accounts that belong to the Administrators group exposes developers and--by extension--customers to security risks. For more information, see [Running as a Member of the Users Group](running-as-a-member-of-the-users-group.md) and [How User Account Control (UAC) Affects Your Application](how-user-account-control-uac-affects-your-application.md).

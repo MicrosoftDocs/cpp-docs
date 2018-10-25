@@ -14,23 +14,23 @@ ms.workload: ["cplusplus", "data-storage"]
 # Debugging Your Provider
 
 There are two ways to debug your provider:  
-  
+
 - Because providers are created in process, you can create some consumer code using the OLE DB consumer templates and step into the provider normally.  
-  
+
 - You can use the ITEST utility that comes with Visual C++.  
-  
+
 ## To use the ITEST utility  
-  
+
 1. Open the provider project.  
-  
+
 1. On the **Projects** menu, click **Settings**.  
-  
+
 1. In the **Property Pages** dialog box, click the **Debug** tab.  
-  
+
 1. In the **Executable for Debug Session** box, select the ITEST application.  
-  
+
 1. Set breakpoints, and then debug as usual.  
-  
+
 ## See Also  
 
 [Working with OLE DB Provider Templates](../../data/oledb/working-with-ole-db-provider-templates.md)

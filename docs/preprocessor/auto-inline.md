@@ -14,17 +14,17 @@ ms.workload: ["cplusplus"]
 ---
 # auto_inline
 Excludes any functions defined within the range where **off** is specified from being considered as candidates for automatic inline expansion.  
-  
+
 ## Syntax  
-  
+
+```
+#pragma auto_inline( [{on | off}] )
 ```  
-#pragma auto_inline( [{on | off}] )  
-```  
-  
+
 ## Remarks  
 
 To use the **auto_inline** pragma, place it before and immediately after (not in) a function definition. The pragma takes effect at the first function definition after the pragma is seen.  
-  
+
 ## See Also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

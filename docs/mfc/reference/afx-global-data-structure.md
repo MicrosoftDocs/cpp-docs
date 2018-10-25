@@ -109,11 +109,9 @@ Most of the data in the `AFX_GLOBAL_DATA` structure is initialized when your app
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
 
-
 ## <a name="bisosalphablendingsupport"></a> AFX_GLOBAL_DATA::bIsOSAlphaBlendingSupport
 
 Indicates whether the operating system supports alpha blending.
-
 
 ```
 BOOL  bIsOSAlphaBlendingSupport;
@@ -123,19 +121,17 @@ BOOL  bIsOSAlphaBlendingSupport;
 
 TRUE indicates alpha blending is supported; otherwise, FALSE.
 
-
 ## <a name="cleanup"></a> AFX_GLOBAL_DATA::CleanUp
 
 Releases resources that are allocated by the framework, such as brushes, fonts, and DLLs.
 
-
 ```
 void CleanUp();
 ```
+
 ## <a name="d2d1makerotatematrix"></a> AFX_GLOBAL_DATA::D2D1MakeRotateMatrix
 
 Creates a rotation transformation that rotates by a specified angle around a specified point.
-
 
 ```
 HRESULT D2D1MakeRotateMatrix(
@@ -163,7 +159,6 @@ Returns S_OK if successful, or an error value otherwise.
 
 Draws the background of a control's parent in the specified area.
 
-
 ```
 BOOL DrawParentBackground(
     CWnd* pWnd,
@@ -189,7 +184,6 @@ TRUE if this method is successful; otherwise, FALSE.
 ## <a name="drawtextonglass"></a> AFX_GLOBAL_DATA::DrawTextOnGlass
 
 Draws the specified text in the visual style of the specified theme.
-
 
 ```
 BOOL DrawTextOnGlass(
@@ -259,7 +253,6 @@ A theme defines the visual style of an application. A theme is not used to draw 
 
 Enables or disables Microsoft Active Accessibility support.
 
-
 ```
 void EnableAccessibilitySupport(BOOL bEnable=TRUE);
 ```
@@ -275,7 +268,6 @@ Active Accessibility is a COM-based technology that improves the way programs an
 
 Use the [AFX_GLOBAL_DATA::IsAccessibilitySupport](#isaccessibilitysupport) method to determine whether Microsoft Active Accessibility support is enabled.
 
-
 ### See Also
 
 [UI Automation and Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility)<br/>
@@ -284,7 +276,6 @@ Use the [AFX_GLOBAL_DATA::IsAccessibilitySupport](#isaccessibilitysupport) metho
 ## <a name="excludetag"></a> AFX_GLOBAL_DATA::ExcludeTag
 
 Removes the specified XML tag pair from a specified buffer.
-
 
 ```
 BOOL ExcludeTag(
@@ -332,7 +323,6 @@ Use the symbols in the following table to encode a set of escape characters in t
 
 Retrieves the current color of the specified user interface element.
 
-
 ```
 COLORREF GetColor(int nColor);
 ```
@@ -360,7 +350,6 @@ If the *nColor* parameter is out of range, the return value is zero. Because zer
 
 Returns a pointer to the ID2D1Factory interface that is stored in the global data. If the interface is not initialized, it is created and has the default parameters.
 
-
 ```
 ID2D1Factory* GetDirect2dFactory();
 ```
@@ -373,7 +362,6 @@ A pointer to ID2D1Factory interface if creation of a factory succeeds, or NULL i
 
 Retrieves the predefined cursor that resembles a hand and whose identifier is IDC_HAND.
 
-
 ```
 HCURSOR GetHandCursor();
 ```
@@ -385,7 +373,6 @@ The handle of the hand cursor.
 ## <a name="getnonclientmetrics"></a> AFX_GLOBAL_DATA::GetNonClientMetrics
 
 Retrieves the metrics associated with the nonclient area of nonminimized windows.
-
 
 ```
 BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
@@ -400,7 +387,6 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
 
 TRUE if this method succeeds; otherwise, FALSE.
 
-
 ### See Also
 
 [NONCLIENTMETRICS Structure](https://msdn.microsoft.com/library/windows/desktop/ff729175)
@@ -408,7 +394,6 @@ TRUE if this method succeeds; otherwise, FALSE.
 ## <a name="gettextheight"></a> AFX_GLOBAL_DATA::GetTextHeight
 
 Retrieves the height of text characters in the current font.
-
 
 ```
 int GetTextHeight(BOOL bHorz = TRUE);
@@ -427,7 +412,6 @@ The height of the current font, which is measured from its ascender to its desce
 
 Returns a pointer to the IWICImagingFactory interface that is stored in the global data. If the interface is not initialized, it is created and has the default parameters.
 
-
 ```
 IWICImagingFactory* GetWICFactory();
 ```
@@ -440,7 +424,6 @@ A pointer to IWICImagingFactory interface if creation of a factory succeeds, or 
 
 Returns a pointer to the IDWriteFactory interface that is stored in the global data. If the interface is not initialized, it is created and has the default parameters.
 
-
 ```
 IDWriteFactory* GetWriteFactory();
 ```
@@ -452,7 +435,6 @@ A pointer to IDWriteFactory interface if creation of a factory succeeds, or NULL
 ## <a name="initd2d"></a> AFX_GLOBAL_DATA::InitD2D
 
 Initializes D2D, DirectWrite, and WIC factories. Call this method before the main window is initialized.
-
 
 ```
 BOOL InitD2D(
@@ -476,10 +458,8 @@ Returns TRUE if the factories were intilalizrd, FALSE - otherwise
 
 Indicates whether predefined 32-bit icons are supported.
 
-
 ```
 BOOL Is32BitIcons() const;
-
 
 ```
 
@@ -495,7 +475,6 @@ This method returns TRUE if the framework supports 32-bit built-in icons, and if
 
 Indicates whether Microsoft Active Accessibility support is enabled.
 
-
 ```
 BOOL IsAccessibilitySupport() const;
 ```
@@ -510,7 +489,6 @@ Microsoft Active Accessibility was the earlier solution for making applications 
 
 Use the [AFX_GLOBAL_DATA::EnableAccessibilitySupport](#enableaccessibilitysupport) method to enable or disable Active Accessibility support.
 
-
 ### See Also
 
 [UI Automation and Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility)
@@ -518,7 +496,6 @@ Use the [AFX_GLOBAL_DATA::EnableAccessibilitySupport](#enableaccessibilitysuppor
 ## <a name="isd2dinitialized"></a> AFX_GLOBAL_DATA::IsD2DInitialized
 
 Determines whether the D2D was initialized
-
 
 ```
 BOOL IsD2DInitialized() const;
@@ -531,7 +508,6 @@ TRUE if D2D was initialized; otherwise FALSE.
 ## <a name="isdwmcompositionenabled"></a> AFX_GLOBAL_DATA::IsDwmCompositionEnabled
 
 Provides a simple way to call the Windows [DwmIsCompositionEnabled](/windows/desktop/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) method.
-
 
 ```
 BOOL IsDwmCompositionEnabled();
@@ -565,7 +541,6 @@ In black high contrast mode, edges facing the light are white and the background
 
 Indicates whether the operating system supports layered windows.
 
-
 ```
 BOOL IsWindowsLayerSupportAvailable() const;
 ```
@@ -582,7 +557,6 @@ If layered windows are supported, *smart docking* markers use layered windows.
 
 Indicates whether the framework uses predefined 32-bit color icons or icons of a lower resolution.
 
-
 ```
 BOOL  m_bUseBuiltIn32BitIcons;
 ```
@@ -596,7 +570,6 @@ This member must be set at application startup.
 ## <a name="m_busesystemfont"></a> AFX_GLOBAL_DATA::m_bUseSystemFont
 
 Indicates whether a system font is used for menus, toolbars, and ribbons.
-
 
 ```
 BOOL m_bUseSystemFont;
@@ -612,7 +585,6 @@ Testing this member is not the only way for the framework to determine the font 
 
 Stores the handle for the hand cursor.
 
-
 ```
 HCURSOR m_hcurHand;
 ```
@@ -620,7 +592,6 @@ HCURSOR m_hcurHand;
 ## <a name="m_hcurstretch"></a> AFX_GLOBAL_DATA::m_hcurStretch
 
 Stores the handle for the horizontal stretch cursor.
-
 
 ```
 HCURSOR m_hcurStretch;
@@ -630,7 +601,6 @@ HCURSOR m_hcurStretch;
 
 Stores the handle for the vertical stretch cursor.
 
-
 ```
 HCURSOR m_hcurStretchVert;
 ```
@@ -639,14 +609,13 @@ HCURSOR m_hcurStretchVert;
 
 Stores the handle for the tool icon.
 
-
 ```
 HICON m_hiconTool;
 ```
+
 ## <a name="m_nautohidetoolbarmargin"></a> AFX_GLOBAL_DATA::m_nAutoHideToolBarMargin
 
 Specifies the offset from the leftmost autohide toolbar to the left side of the dock bar.
-
 
 ```
 int  m_nAutoHideToolBarMargin;
@@ -660,7 +629,6 @@ The `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` constructor initializes this member to 4 
 
 Specifies the gap between autohide toolbars.
 
-
 ```
 int   m_nAutoHideToolBarSpacing;
 ```
@@ -672,7 +640,6 @@ The `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` constructor initializes this member to 14
 ## <a name="m_ndragframethicknessdock"></a> AFX_GLOBAL_DATA::m_nDragFrameThicknessDock
 
 Specifies the thickness of the drag frame that is used to indicate the docked state.
-
 
 ```
 int  m_nDragFrameThicknessDock;
@@ -686,7 +653,6 @@ The `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` constructor initializes this member to 3 
 
 Specifies the thickness of the drag frame that is used to indicate the floating state.
 
-
 ```
 int  m_nDragFrameThicknessFloat;
 ```
@@ -699,7 +665,6 @@ The `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` constructor initializes this member to 4 
 
 Detects the current state of the desktop's menu animation and taskbar autohide features.
 
-
 ```
 void OnSettingChange();
 ```
@@ -711,7 +676,6 @@ This method sets framework variables to the state of certain attributes of the u
 ## <a name="registerwindowclass"></a> AFX_GLOBAL_DATA::RegisterWindowClass
 
 Registers the specified MFC window class.
-
 
 ```
 CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
@@ -739,7 +703,6 @@ The return value is a colon-delimited list of the *lpszClassNamePrefix* paramete
 
 Reinitializes internal function pointers that access methods that support Windows themes and visual styles.
 
-
 ```
 BOOL Resume();
 ```
@@ -755,7 +718,6 @@ This method is called when the framework receives the [WM_POWERBROADCAST](/windo
 ## <a name="setlayeredattrib"></a> AFX_GLOBAL_DATA::SetLayeredAttrib
 
 Provides a simple way to call the Windows [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes) method.
-
 
 ```
 BOOL SetLayeredAttrib(
@@ -792,7 +754,6 @@ TRUE if this method succeeds; otherwise, FALSE.
 
 Creates the specified logical font.
 
-
 ```
 BOOL SetMenuFont(
     LPLOGFONT lpLogFont,
@@ -819,7 +780,6 @@ This method creates a horizontal regular font, an underlined font, and a bold fo
 
 Reintializes the logical fonts that are used by the framework.
 
-
 ```
 void UpdateFonts();
 ```
@@ -832,7 +792,6 @@ For more information about logical fonts, see `CFont::CreateFontIndirect`.
 
 Initializes the colors, color depth, brushes, pens, and images that are used by the framework.
 
-
 ```
 void UpdateSysColors();
 ```
@@ -840,7 +799,6 @@ void UpdateSysColors();
 ## <a name="biswindows7"></a> AFX_GLOBAL_DATA::bIsWindows7
 
 Indicates whether the application is being executed under Windows 7 or higher.
-
 
 ```
 BOOL bIsWindows7;
@@ -850,7 +808,6 @@ BOOL bIsWindows7;
 
 Specifies the gradient color of the active caption. Generally used for docking panes.
 
-
 ```
 COLORREF clrActiveCaptionGradient;
 ```
@@ -859,7 +816,6 @@ COLORREF clrActiveCaptionGradient;
 
 Specifies the gradient color of the inactive caption. Generally used for docking panes.
 
-
 ```
 COLORREF clrInactiveCaptionGradient;
 ```
@@ -867,7 +823,6 @@ COLORREF clrInactiveCaptionGradient;
 ## <a name="getitaskbarlist"></a> AFX_GLOBAL_DATA::GetITaskbarList
 
 Creates and stores in the global data a pointer to the `ITaskBarList` interface.
-
 
 ```
 ITaskbarList *GetITaskbarList();
@@ -881,7 +836,6 @@ A pointer to the `ITaskbarList` interface if creation of a task bar list object 
 
 Creates and stores in the global data a pointer to the `ITaskBarList3` interface.
 
-
 ```
 ITaskbarList3 *GetITaskbarList3();
 ```
@@ -893,7 +847,6 @@ A pointer to the `ITaskbarList3` interface if creation of a task bar list object
 ## <a name="getshellautohidebars"></a> AFX_GLOBAL_DATA::GetShellAutohideBars
 
 Determines positions of Shell auto hide bars.
-
 
 ```
 int GetShellAutohideBars();
@@ -907,7 +860,6 @@ An integer value with encoded flags that specify positions of auto hide bars. It
 
 Releases interfaces obtained through the `GetITaskbarList` and `GetITaskbarList3` methods.
 
-
 ```
 void ReleaseTaskBarRefs();
 ```
@@ -915,7 +867,6 @@ void ReleaseTaskBarRefs();
 ## <a name="shellcreateitemfromparsingname"></a> AFX_GLOBAL_DATA::ShellCreateItemFromParsingName
 
 Creates and initializes a Shell item object from a parsing name.
-
 
 ```
 HRESULT ShellCreateItemFromParsingName(

@@ -72,7 +72,6 @@ void AdjustRectToworkArea(
 
 ##  <a name="calcexpecteddockedrect"></a>  CGlobalUtils::CalcExpectedDockedRect
 
-
 ```
 void CalcExpectedDockedRect(
     CPaneContainerManager& barContainerManager,
@@ -101,7 +100,6 @@ void CalcExpectedDockedRect(
 
 ##  <a name="canbeattached"></a>  CGlobalUtils::CanBeAttached
 
-
 ```
 BOOL CanBeAttached(CWnd* pWnd) const;
 ```
@@ -116,7 +114,6 @@ BOOL CanBeAttached(CWnd* pWnd) const;
 
 ##  <a name="canpanebeinfloatingmultipaneframewnd"></a>  CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd
 
-
 ```
 BOOL CanPaneBeInFloatingMultiPaneFrameWnd(CWnd* pWnd) const;
 ```
@@ -130,7 +127,6 @@ BOOL CanPaneBeInFloatingMultiPaneFrameWnd(CWnd* pWnd) const;
 ### Remarks
 
 ##  <a name="checkalignment"></a>  CGlobalUtils::CheckAlignment
-
 
 ```
 BOOL CheckAlignment(
@@ -168,7 +164,6 @@ BOOL CheckAlignment(
 
 ##  <a name="cyfromstring"></a>  CGlobalUtils::CyFromString
 
-
 ```
 BOOL CyFromString(
     CY& cy,
@@ -186,7 +181,6 @@ BOOL CyFromString(
 ### Remarks
 
 ##  <a name="decimalfromstring"></a>  CGlobalUtils::DecimalFromString
-
 
 ```
 BOOL DecimalFromString(
@@ -206,7 +200,6 @@ BOOL DecimalFromString(
 
 ##  <a name="fliprect"></a>  CGlobalUtils::FlipRect
 
-
 ```
 void FlipRect(
     CRect& rect,
@@ -221,7 +214,6 @@ void FlipRect(
 ### Remarks
 
 ##  <a name="forceadjustlayout"></a>  CGlobalUtils::ForceAdjustLayout
-
 
 ```
 void ForceAdjustLayout(
@@ -242,7 +234,6 @@ void ForceAdjustLayout(
 
 ##  <a name="getdockingmanager"></a>  CGlobalUtils::GetDockingManager
 
-
 ```
 CDockingManager* GetDockingManager(CWnd* pWnd);
 ```
@@ -257,7 +248,6 @@ CDockingManager* GetDockingManager(CWnd* pWnd);
 
 ##  <a name="getoppositealignment"></a>  CGlobalUtils::GetOppositeAlignment
 
-
 ```
 DWORD GetOppositeAlignment(DWORD dwAlign);
 ```
@@ -271,7 +261,6 @@ DWORD GetOppositeAlignment(DWORD dwAlign);
 ### Remarks
 
 ##  <a name="getpaneandalignfrompoint"></a>  CGlobalUtils::GetPaneAndAlignFromPoint
-
 
 ```
 BOOL GetPaneAndAlignFromPoint(
@@ -303,7 +292,6 @@ BOOL GetPaneAndAlignFromPoint(
 
 ##  <a name="getwndicon"></a>  CGlobalUtils::GetWndIcon
 
-
 ```
 HICON GetWndIcon(CWnd* pWnd);
 ```
@@ -317,7 +305,6 @@ HICON GetWndIcon(CWnd* pWnd);
 ### Remarks
 
 ##  <a name="setnewparent"></a>  CGlobalUtils::SetNewParent
-
 
 ```
 void SetNewParent(
@@ -338,7 +325,6 @@ void SetNewParent(
 
 ##  <a name="stringfromcy"></a>  CGlobalUtils::StringFromCy
 
-
 ```
 BOOL StringFromCy(
     CString& str,
@@ -356,7 +342,6 @@ BOOL StringFromCy(
 ### Remarks
 
 ##  <a name="stringfromdecimal"></a>  CGlobalUtils::StringFromDecimal
-
 
 ```
 BOOL StringFromDecimal(

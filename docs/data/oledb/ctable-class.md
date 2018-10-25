@@ -15,36 +15,36 @@ ms.workload: ["cplusplus", "data-storage"]
 # CTable Class
 
 Provides a means to directly access a simple rowset (one with no parameters).  
-  
+
 ## Syntax
 
 ```cpp
 template <class TAccessor = CNoAccessor, 
-            template <typename T> class TRowset = CRowset>  
+            template <typename T> class TRowset = CRowset>
 class CTable :  
-   public CAccessorRowset <TAccessor, TRowset>  
+   public CAccessorRowset <TAccessor, TRowset>
 ```  
-  
+
 ### Parameters  
 
 *TAccessor*<br/>
 An accessor class.  
-  
+
 *TRowset*<br/>
 A rowset class.  
 
 ## Requirements  
 
 **Header:** atldbcli.h  
-  
+
 ## Members  
-  
+
 ### Methods  
-  
-|||  
-|-|-|  
+
+|||
+|-|-|
 |[Open](#open)|Opens the table.|  
-  
+
 ## Remarks  
 
 See [CCommand](../../data/oledb/ccommand-class.md) for information on how to execute a command to access a rowset.  
@@ -52,9 +52,9 @@ See [CCommand](../../data/oledb/ccommand-class.md) for information on how to exe
 ## <a name="open"></a> CTable::Open
 
 Opens the table.  
-  
+
 ### Syntax  
-  
+
 ```cpp
 HRESULT Open(const CSession& session,  
    LPCWSTR wszTableName,  
@@ -69,37 +69,37 @@ HRESULT Open(const CSession& session,
 HRESULT Open(const CSession& session,  
    DBID& dbid,  
    DBPROPSET* pPropSet = NULL,  
-   ULONG ulPropSets = 0) throw ();  
+   ULONG ulPropSets = 0) throw ();
 ```  
-  
+
 #### Parameters  
 
 *session*<br/>
 [in] The session for which the table is opened.  
-  
+
 *wszTableName*<br/>
 [in] The name of the table to open, passed as a Unicode string.  
-  
+
 *szTableName*<br/>
 [in] The name of the table to open, passed as an ANSI string.  
-  
+
 *dbid*<br/>
 [in] The `DBID` of the table to open.  
-  
+
 *pPropSet*<br/>
 [in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696) in the *OLE DB Programmer's Reference* in the Windows SDK. The default value of NULL specifies no properties.  
-  
+
 *ulPropSets*<br/>
 [in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367) structures passed in the *pPropSet* argument.  
-  
+
 ### Return Value  
 
 A standard HRESULT.  
-  
+
 ### Remarks  
 
 For more details, see [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724) in the *OLE DB Programmer's Reference*.  
-  
+
 ## See Also  
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>

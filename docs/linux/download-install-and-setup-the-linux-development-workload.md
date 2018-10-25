@@ -26,7 +26,6 @@ You can use the Visual Studio IDE in Windows to create, edit and debug C++ proje
 
 1. Click **Modify** to continue with the installation.
 
-
 ## Options for creating a Linux environment
 
 If you don't already have a Linux machine, you can create a Linux Virtual Machine on Azure. For more information, see [Quickstart: Create a Linux virtual machine in the Azure portal](/azure/virtual-machines/linux/quick-create-portal).

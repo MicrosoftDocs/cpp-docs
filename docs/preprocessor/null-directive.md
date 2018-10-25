@@ -13,13 +13,13 @@ ms.workload: ["cplusplus"]
 ---
 # Null Directive
 The null preprocessor directive is a single number sign (**#**) alone on a line. It has no effect.  
-  
+
 ## Syntax  
-  
+
+```
+#
 ```  
-#  
-```  
-  
+
 ## See Also  
- 
+
 [Preprocessor Directives](../preprocessor/preprocessor-directives.md)

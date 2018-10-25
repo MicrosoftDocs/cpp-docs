@@ -27,6 +27,7 @@ The valid states for an `agent`.
 ```
 enum agent_status;
 ```
+
 ### Values
 
 |Name|Description|
@@ -77,6 +78,7 @@ The types of events that can be traced using the tracing functionality offered b
 ```
 enum ConcRT_EventType;
 ```
+
 ### Values
 
 |Name|Description|
@@ -103,6 +105,7 @@ Trace flags for the event types
 ```
 enum Concrt_TraceFlags;
 ```
+
 ### Values
 
 |Name|Description|
@@ -126,6 +129,7 @@ The type of critical region a context is inside.
 ```
 enum CriticalRegionType;
 ```
+
 ### Values
 
 |Name|Description|
@@ -145,6 +149,7 @@ Used by the `DynamicProgressFeedback` policy to describe whether resources for t
 ```
 enum DynamicProgressFeedbackType;
 ```
+
 ### Values
 
 |Name|Description|
@@ -158,6 +163,7 @@ The type of a `join` messaging block.
 ```
 enum join_type;
 ```
+
 ### Values
 
 |Name|Description|
@@ -176,6 +182,7 @@ The valid responses for an offer of a `message` object to a block.
 ```
 enum message_status;
 ```
+
 ### Values
 
 |Name|Description|
@@ -196,6 +203,7 @@ Policy keys describing aspects of scheduler behavior. Each policy element is des
 ```
 enum PolicyElementKey;
 ```
+
 ### Values
 
 |Name|Description|
@@ -242,6 +250,7 @@ Used by the `SchedulingProtocol` policy to describe which scheduling algorithm w
 ```
 enum SchedulingProtocolType;
 ```
+
 ### Values
 
 |Name|Description|
@@ -260,6 +269,7 @@ Used to denote the state a thread proxy is in, when it is executing a cooperativ
 ```
 enum SwitchingProxyState;
 ```
+
 ### Values
 
 |Name|Description|
@@ -281,6 +291,7 @@ Describes the execution status of a `task_group` or `structured_task_group` obje
 ```
 enum task_group_status;
 ```
+
 ### Values
 
 |Name|Description|
@@ -300,6 +311,7 @@ Used by the `WinRTInitialization` policy to describe whether and how the Windows
 ```
 enum WinRTInitializationType;
 ```
+
 ### Values
 
 |Name|Description|

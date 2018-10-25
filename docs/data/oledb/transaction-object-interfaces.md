@@ -14,15 +14,15 @@ ms.workload: ["cplusplus", "data-storage"]
 # Transaction Object Interfaces
 
 The transaction object defines an atomic unit of work on a data source and determines how those units of work relate to each other. This object is not directly supported by the OLE DB provider templates (that is, you must create your own object).  
-  
+
 The following table shows the mandatory and optional interfaces defined by OLE DB for a transaction object.  
-  
-|Interface|Required?|Implemented by OLE DB templates?|  
-|---------------|---------------|--------------------------------------|  
-|[IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)|Mandatory|No|  
-|[ITransaction](/previous-versions/windows/desktop/ms723053)|Mandatory|No|  
+
+|Interface|Required?|Implemented by OLE DB templates?|
+|---------------|---------------|--------------------------------------|
+|[IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)|Mandatory|No|
+|[ITransaction](/previous-versions/windows/desktop/ms723053)|Mandatory|No|
 |[ISupportErrorInfo](/previous-versions/windows/desktop/ms715816)|Optional|No|  
-  
+
 ## See Also  
 
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

@@ -137,7 +137,6 @@ Calls the `Dump` function for all objects of a type derived from class `CObject`
 ```
 void DumpAllObjectsSince() const;
 
-
 ```
 
 ### Remarks
@@ -154,7 +153,6 @@ Prints a concise memory statistics report from a `CMemoryState` object that is f
 
 ```
 void DumpStatistics() const;
-
 
 ```
 
@@ -199,6 +197,4 @@ You can now run the program in Debug mode to see the output of the `DumpStatisti
 ## See Also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
-
 

@@ -39,7 +39,7 @@ Connect to Azure SQL Database from C or C++ applications.
 
 [ODBC Driver 13.1 for SQL Server - Windows Released](https://blogs.msdn.microsoft.com/sqlnativeclient/2016/08/01/announcing-the-odbc-driver-13-1-for-sql-server)<br/>
 The latest ODBC driver provides robust data access to Microsoft SQL Server 2016 Microsoft Azure SQL Database for C/C++ based applications. Provides support for features including always encrypted, Azure Active Directory, and AlwaysOn Availability Groups. Also available for MacOS and Linux.     
- 
+
 [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client-programming)<br/>
 SQL Server Native Client is a stand-alone data access application programming interface (API), used for both OLE DB and ODBC, that supports SQL Server 2005 through SQL Server 2014. New applications should use the ODBC Driver 13.1 for SQL Server.
 

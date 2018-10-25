@@ -932,7 +932,6 @@ Sets the text that is displayed as the text cue, or tip, in an edit control when
 ```
 BOOL SetCueBanner(LPCWSTR lpszText);
 
-
 BOOL SetCueBanner(
     LPCWSTR lpszText,
     BOOL fDrawWhenFocused = FALSE);
@@ -1223,7 +1222,6 @@ void SetSel(
     DWORD dwSelection,
     BOOL bNoScroll = FALSE);
 
-
 void SetSel(
     int nStartChar,
     int nEndChar,
@@ -1259,7 +1257,6 @@ Call this function to set the tab stops in a multiple-line edit control.
 ```
 void SetTabStops();
 BOOL SetTabStops(const int& cxEachStop);
-
 
 BOOL SetTabStops(
     int nTabStops,
@@ -1303,7 +1300,6 @@ Displays a balloon tip that is associated with the current edit control.
 
 ```
 BOOL ShowBalloonTip(PEDITBALLOONTIP pEditBalloonTip);
-
 
 BOOL ShowBalloonTip(
     LPCWSTR lpszTitle,

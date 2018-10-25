@@ -15,36 +15,36 @@ ms.workload: ["cplusplus", "data-storage"]
 # ICommandPropertiesImpl Class
 
 Provides an implementation of the [ICommandProperties](/previous-versions/windows/desktop/ms723044) interface.  
-  
+
 ## Syntax
 
 ```cpp
-template <class T, class PropClass = T>  
+template <class T, class PropClass = T>
 class ATL_NO_VTABLE ICommandPropertiesImpl   
-   : public ICommandProperties, public CUtlProps<PropClass>  
+   : public ICommandProperties, public CUtlProps<PropClass>
 ```  
-  
+
 ### Parameters  
 
 *T*<br/>
 Your class, derived from  
-  
+
 *PropClass*<br/>
 Your properties class.  
 
 ## Requirements  
 
 **Header:** atldb.h  
-  
+
 ## Members  
-  
+
 ### Interface Methods  
-  
-|||  
-|-|-|  
-|[GetProperties](#getproperties)|Returns the list of properties in the Rowset property group that are currently requested for the rowset.|  
+
+|||
+|-|-|
+|[GetProperties](#getproperties)|Returns the list of properties in the Rowset property group that are currently requested for the rowset.|
 |[SetProperties](#setproperties)|Sets properties in the Rowset property group.|  
-  
+
 ## Remarks  
 
 This is mandatory on commands. The implementation is provided by a static function defined by the [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) macro.  
@@ -52,39 +52,39 @@ This is mandatory on commands. The implementation is provided by a static functi
 ## <a name="getproperties"></a> ICommandPropertiesImpl::GetProperties
 
 Returns all the requested property sets using the command's property map.  
-  
+
 ### Syntax  
-  
+
 ```cpp
 STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,   
    const DBPROPIDSET rgPropertyIDSets[],   
    ULONG * pcPropertySets,   
-   DBPROPSET ** prgPropertySets);  
+   DBPROPSET ** prgPropertySets);
 ```  
-  
+
 #### Parameters  
 
 See [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723119) in the *OLE DB Programmer's Reference*.  
-  
+
 ### Remarks  
 
 See [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).  
-  
+
 ## <a name="setproperties"></a> ICommandPropertiesImpl::SetProperties
 
 Sets properties for the command object.  
-  
+
 ### Syntax  
-  
+
 ```cpp
 STDMETHOD(SetProperties)(ULONG cPropertySets,   
-   DBPROPSET rgPropertySets[]);  
+   DBPROPSET rgPropertySets[]);
 ```  
-  
+
 #### Parameters  
 
 See [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497) in the *OLE DB Programmer's Reference*.  
-  
+
 ## See Also  
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>

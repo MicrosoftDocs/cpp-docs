@@ -22,7 +22,6 @@ Declares a structure type having the specified *field-declarations*. Each field 
 > *field-declarations*<br/>
 > *name* ENDS
 
-
 ## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

@@ -120,7 +120,6 @@ Call this function to get a handle to a Windows font.
 ```
 HFONT GetFontHandle();
 
-
 HFONT GetFontHandle(
     long cyLogical,
     long cyHimetric);

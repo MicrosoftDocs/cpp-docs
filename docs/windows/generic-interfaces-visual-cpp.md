@@ -267,7 +267,7 @@ public:
 
    virtual void Display() {
       Console::WriteLine("The integer field contains: {0}", myField);
-   } 
+   }
 };
 
 public ref struct MyStringClass: IMySpecializedString { 

@@ -14,13 +14,13 @@ ms.workload: ["cplusplus", "data-storage"]
 # Work with ODBC Database Connections
 
 The following topics explain how to connect to ODBC data sources.  
-  
+
 ## In This Section  
-  
+
 - [Manage ODBC database connections](../../data/odbc/data-source-managing-connections-odbc.md)  
-  
+
 - [Programmatically configure an ODBC data source](../../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md)  
-  
+
 ## See Also  
 
 [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

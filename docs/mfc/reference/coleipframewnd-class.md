@@ -80,7 +80,6 @@ virtual BOOL OnCreateControlBars(
     CWnd* pWndFrame,
     CWnd* pWndDoc);
 
-
 virtual BOOL OnCreateControlBars(
     CFrameWnd* pWndFrame,
     CFrameWnd* pWndDoc);

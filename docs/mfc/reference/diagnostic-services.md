@@ -78,7 +78,6 @@ In addition, the C run-time library also supports a set of diagnostic functions 
 |-|-|
 |[_AFX_SECURE_NO_WARNINGS](#afx_secure_no_warnings)|Suppresses compiler warnings for the use of deprecated MFC functions.|
 
-
 ## <a name="afx_secure_no_warnings"></a> _AFX_SECURE_NO_WARNINGS
 
 Suppresses compiler warnings for the use of deprecated MFC functions.
@@ -88,6 +87,7 @@ Suppresses compiler warnings for the use of deprecated MFC functions.
 ```
 _AFX_SECURE_NO_WARNINGS
 ```
+
 ### Example
 
 This code sample would cause a compiler warning if _AFX_SECURE_NO_WARNINGS were not defined.
@@ -284,6 +284,7 @@ Use to validate data correctness.
 ENSURE(  booleanExpression )
 ENSURE_VALID( booleanExpression  )
 ```
+
 ### Parameters
 
 *booleanExpression*<br/>
@@ -345,7 +346,6 @@ static char THIS_FILE[] = __FILE__;
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
 [ASSERT](#assert)<br/>
 [VERIFY](#verify)
-
 
 ##  <a name="trace"></a>  TRACE
 
@@ -425,7 +425,6 @@ This variable is defined only in the Debug version of MFC. For more information 
 
 **Header:** afx.h
 
-
 ## <a name="afxdump"></a> AfxDump (Internal)
 
 Internal function that MFC uses to dump the state of an object while debugging.
@@ -435,6 +434,7 @@ Internal function that MFC uses to dump the state of an object while debugging.
 ```
 void AfxDump(const CObject* pOb);
 ```
+
 ### Parameters
 
 *pOb*<br/>
@@ -453,8 +453,6 @@ Your program code should not call `AfxDump`, but should instead call the `Dump` 
 ### See Also
 
 [CObject::Dump](cobject-class.md#dump)
-
-
 
 ##  <a name="afxmemdf"></a>  afxMemDF
 
@@ -572,8 +570,6 @@ Your program code should not call `AfxDump`, but should instead call the `Dump` 
 ### See Also
 
 [CObject::Dump](cobject-class.md#dump)
-
-
 
 ##  <a name="afxdumpstack"></a>  AfxDumpStack
 

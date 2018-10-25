@@ -369,5 +369,3 @@ After constructing a `CFontDialog` object, you can use `m_cf` to modify various 
 [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

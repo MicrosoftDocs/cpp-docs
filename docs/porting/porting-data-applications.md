@@ -22,13 +22,13 @@ If your legacy application uses OLE DB or the higher-level ADO interface to conn
 The SQL Native Client component (SNAC), which packages OLE DB and ODBC drivers in a single DLL, is deprecated for ODBC applications. The SQL Server 2012 version of SNAC (SQLNCLI11.DLL) ships with SQL Server 2016 because other SQL Server components depend on it. However, new C++ applications that connect to SQL Server or Azure SQL Database via ODBC should use [the most recent ODBC driver](/sql/connect/odbc/download-odbc-driver-for-sql-server). For more information, see [SQL Server Native Client Programming](/sql/relational-databases/native-client/sql-server-native-client-programming)
 
 If you use C++/CLI, you can continue to use ADO.NET as always. For more information, see [Data Access Using ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md), and [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio).  
-  
+
 - In addition to the ODBC wrapper classes, MFC also provides Data Acess Objects (DAO) wrapper classes for connecting to Access databases.  However, DAO is obsolete. Any code based on `CDaoDatabase` or `CDaoRecordset` should be upgraded. 
 
 For more information about the history of data access technologies on Microsoft Windows, see [Microsoft Data Access Components (Wikipedia)](https://en.wikipedia.org/wiki/Microsoft_Data_Access_Components).  
 
 ## See Also  
- 
+
 [Data Access in Visual C++](../data/data-access-in-cpp.md)<br/>
 [Microsoft Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc)<br/>
 [Data Access Technologies Road Map](https://msdn.microsoft.com/library/ms810810.aspx)  

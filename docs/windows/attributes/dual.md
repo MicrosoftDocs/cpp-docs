@@ -46,7 +46,7 @@ __interface IStatic : IDispatch
    HRESULT P1([out, retval] long *nSize);
    [   propput,    id(1),    bindable,    displaybind,    defaultbind,    requestedit
    ]
-   HRESULT P1([in] long nSize); 
+   HRESULT P1([in] long nSize);
 };
 
 [cpp_quote("#include file.h")];

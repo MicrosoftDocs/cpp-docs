@@ -75,7 +75,7 @@ The following example associates the `nOutput` variable with an output parameter
 #include <atldbcli.h>
 
 [ db_source(L"my_connection_string"),
-  db_command(L"{ ? = CALL dbo.\"Sales by Year\"(?,?) }")  
+  db_command(L"{ ? = CALL dbo.\"Sales by Year\"(?,?) }")
 ]
 struct CSalesbyYear {
    DBSTATUS m_dwShippedDateStatus;

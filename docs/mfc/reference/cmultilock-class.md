@@ -156,7 +156,6 @@ Releases the synchronization object owned by `CMultiLock`.
 ```
 BOOL Unlock();
 
-
 BOOL Unlock(
     LONG lCount,
     LPLONG lPrevCount = NULL);
@@ -183,6 +182,4 @@ The first form of `Unlock` tries to unlock the synchronization object managed by
 ## See Also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
-
 

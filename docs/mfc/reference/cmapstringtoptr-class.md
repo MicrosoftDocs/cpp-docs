@@ -85,5 +85,3 @@ When a `CMapStringToPtr` object is deleted, or when its elements are removed, th
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

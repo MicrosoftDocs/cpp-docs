@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # OLE DB Consumer Attributes
 The OLE DB consumer attributes inject code, based on the [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-reference.md), to create a working OLE DB consumer that performs tasks such as opening tables, executing commands, and accessing data.
-  
+
 |Attribute|Description|
 |---------------|-----------------|
 |[db_accessor](db-accessor.md)|Binds columns in a rowset and binds them to the corresponding accessor maps.|
@@ -22,7 +22,7 @@ The OLE DB consumer attributes inject code, based on the [OLE DB Consumer Templa
 |[db_param](db-param.md)|Associates the specified member variable with an input or output parameter.|
 |[db_source](db-source.md)|Creates and encapsulates a connection, through a provider, to a data source.|
 |[db_table](db-table.md)|Opens an OLE DB table.|
-  
+
 ## See Also
 
 [Attributes by Group](attributes-by-group.md)

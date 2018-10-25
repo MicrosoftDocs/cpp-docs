@@ -73,7 +73,6 @@ Constructs and initializes a [CMFCRibbonProgressBar](../../mfc/reference/cmfcrib
 ```
 CMFCRibbonProgressBar();
 
-
 CMFCRibbonProgressBar(
     UINT nID,
     int nWidth = 90,

@@ -160,7 +160,6 @@ The following example demonstrates how to construct an object of the `CMFCToolBa
 
 ##  <a name="comparewith"></a>  CMFCToolBarMenuButton::CompareWith
 
-
 ```
 virtual BOOL CompareWith(const CMFCToolBarButton& other) const;
 ```
@@ -174,7 +173,6 @@ virtual BOOL CompareWith(const CMFCToolBarButton& other) const;
 ### Remarks
 
 ##  <a name="copyfrom"></a>  CMFCToolBarMenuButton::CopyFrom
-
 
 ```
 virtual void CopyFrom(const CMFCToolBarButton& src);
@@ -267,7 +265,6 @@ This method takes a document icon and draws it on the menu button, centered in t
 
 ##  <a name="enablequickcustomize"></a>  CMFCToolBarMenuButton::EnableQuickCustomize
 
-
 ```
 void EnableQuickCustomize();
 ```
@@ -275,7 +272,6 @@ void EnableQuickCustomize();
 ### Remarks
 
 ##  <a name="hasbutton"></a>  CMFCToolBarMenuButton::HasButton
-
 
 ```
 virtual BOOL HasButton() const;
@@ -287,7 +283,6 @@ virtual BOOL HasButton() const;
 
 ##  <a name="havehotborder"></a>  CMFCToolBarMenuButton::HaveHotBorder
 
-
 ```
 virtual BOOL HaveHotBorder() const;
 ```
@@ -297,7 +292,6 @@ virtual BOOL HaveHotBorder() const;
 ### Remarks
 
 ##  <a name="isborder"></a>  CMFCToolBarMenuButton::IsBorder
-
 
 ```
 virtual BOOL IsBorder() const;
@@ -309,7 +303,6 @@ virtual BOOL IsBorder() const;
 
 ##  <a name="isclickedonmenu"></a>  CMFCToolBarMenuButton::IsClickedOnMenu
 
-
 ```
 BOOL IsClickedOnMenu() const;
 ```
@@ -319,7 +312,6 @@ BOOL IsClickedOnMenu() const;
 ### Remarks
 
 ##  <a name="isquickmode"></a>  CMFCToolBarMenuButton::IsQuickMode
-
 
 ```
 BOOL IsQuickMode();
@@ -484,7 +476,6 @@ When this member variable is set to TRUE, the button always calls [CFrameWndEx::
 
 ##  <a name="onaftercreatepopupmenu"></a>  CMFCToolBarMenuButton::OnAfterCreatePopupMenu
 
-
 ```
 virtual void OnAfterCreatePopupMenu();
 ```
@@ -492,7 +483,6 @@ virtual void OnAfterCreatePopupMenu();
 ### Remarks
 
 ##  <a name="onbeforedrag"></a>  CMFCToolBarMenuButton::OnBeforeDrag
-
 
 ```
 virtual BOOL OnBeforeDrag() const;
@@ -503,7 +493,6 @@ virtual BOOL OnBeforeDrag() const;
 ### Remarks
 
 ##  <a name="oncalculatesize"></a>  CMFCToolBarMenuButton::OnCalculateSize
-
 
 ```
 virtual SIZE OnCalculateSize(
@@ -524,7 +513,6 @@ virtual SIZE OnCalculateSize(
 
 ##  <a name="oncancelmode"></a>  CMFCToolBarMenuButton::OnCancelMode
 
-
 ```
 virtual void OnCancelMode();
 ```
@@ -532,7 +520,6 @@ virtual void OnCancelMode();
 ### Remarks
 
 ##  <a name="onchangeparentwnd"></a>  CMFCToolBarMenuButton::OnChangeParentWnd
-
 
 ```
 virtual void OnChangeParentWnd(CWnd* pWndParent);
@@ -545,7 +532,6 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ### Remarks
 
 ##  <a name="onclick"></a>  CMFCToolBarMenuButton::OnClick
-
 
 ```
 virtual BOOL OnClick(
@@ -582,7 +568,6 @@ To customize the menu item processing, override `OnClickMenuItem` in a class der
 
 ##  <a name="oncontexthelp"></a>  CMFCToolBarMenuButton::OnContextHelp
 
-
 ```
 virtual BOOL OnContextHelp(CWnd* pWnd);
 ```
@@ -596,7 +581,6 @@ virtual BOOL OnContextHelp(CWnd* pWnd);
 ### Remarks
 
 ##  <a name="ondraw"></a>  CMFCToolBarMenuButton::OnDraw
-
 
 ```
 virtual void OnDraw(
@@ -624,7 +608,6 @@ virtual void OnDraw(
 ### Remarks
 
 ##  <a name="ondrawoncustomizelist"></a>  CMFCToolBarMenuButton::OnDrawOnCustomizeList
-
 
 ```
 virtual int OnDrawOnCustomizeList(
@@ -666,7 +649,6 @@ This function is called by the framework when the user opens a drop-down menu fr
 
 ##  <a name="resetimagetodefault"></a>  CMFCToolBarMenuButton::ResetImageToDefault
 
-
 ```
 virtual void ResetImageToDefault();
 ```
@@ -674,7 +656,6 @@ virtual void ResetImageToDefault();
 ### Remarks
 
 ##  <a name="savebarstate"></a>  CMFCToolBarMenuButton::SaveBarState
-
 
 ```
 virtual void SaveBarState();
@@ -685,7 +666,6 @@ virtual void SaveBarState();
 The framework calls this method when it creates a toolbar button as the result of a drag-and-drop operation. This method calls the [CMFCPopupMenu::SaveState](../../mfc/reference/cmfcpopupmenu-class.md#savestate) method of the top-level pop-up menu, which causes the parent button of the pop-up menu to recreate its menu.
 
 ##  <a name="serialize"></a>  CMFCToolBarMenuButton::Serialize
-
 
 ```
 virtual void Serialize(CArchive& ar);
@@ -763,7 +743,6 @@ void SetMenuPaletteMode(
 In the palette mode, all menu items are displayed as a multicolumn palette. You specify the number of rows by using *nPaletteRows*.
 
 ##  <a name="setmessagewnd"></a>  CMFCToolBarMenuButton::SetMessageWnd
-
 
 ```
 void SetMessageWnd(CWnd* pWndMessage);

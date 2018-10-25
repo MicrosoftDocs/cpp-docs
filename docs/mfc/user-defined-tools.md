@@ -59,6 +59,3 @@ If you want to predefine some tools on the application startup, you must overrid
 [CUserToolsManager Class](../mfc/reference/cusertoolsmanager-class.md)<br/>
 [CWinAppEx Class](../mfc/reference/cwinappex-class.md)
 
-
-
-

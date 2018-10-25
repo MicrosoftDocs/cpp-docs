@@ -47,7 +47,7 @@ The following code provides synchronization for the `UpdateBalance` method of th
 threading(both),
 vi_progid("MyProject.MyClass"),
 progid("MyProject.MyClass.1"),
-uuid("7a7baa0d-59b8-4576-b754-79d07e1d1cc3")  
+uuid("7a7baa0d-59b8-4576-b754-79d07e1d1cc3")
 ]
 class CMyClass {
    float m_nBalance;
@@ -74,4 +74,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 
 ## See Also
 
-[COM Attributes](com-attributes.md)  
+[COM Attributes](com-attributes.md)

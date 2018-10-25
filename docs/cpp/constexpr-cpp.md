@@ -86,7 +86,6 @@ The following rules apply to **constexpr** functions in Visual Studio 2017 and l
 
 - A constexpr non-static member function is not required to be implicitly const.
 
-
 ```cpp
 constexpr float exp(float x, int n)
 {

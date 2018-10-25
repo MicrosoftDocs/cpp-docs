@@ -74,7 +74,7 @@ int main() {
    if (pV1 == nullptr) {}
    if (pV2 == nullptr) {}
 // nullptr can be used as a function argument.
-   f(nullptr);   // calls f(System::Object ^)  
+   f(nullptr);   // calls f(System::Object ^)
 }
 ```
 
@@ -152,7 +152,7 @@ int main() {
    // Delete the following line to resolve.
    f(nullptr);
 
-   f(0);   // T = int, call f(int)  
+   f(0);   // T = int, call f(int)
 }
 ```
 

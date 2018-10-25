@@ -14,17 +14,17 @@ ms.workload: ["cplusplus"]
 ---
 # omp
 Takes one or more OpenMP directives, along with any optional directive clauses.  
-  
+
 ## Syntax  
-  
+
+```
+#pragma omp directive
 ```  
-#pragma omp directive  
-```  
-  
+
 ## Remarks  
- 
+
 See [OpenMP Directives](../parallel/openmp/reference/openmp-directives.md) for more information.  
-  
+
 ## See Also  
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

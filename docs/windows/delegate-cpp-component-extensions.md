@@ -39,7 +39,7 @@ return-type
 delegate-type-identifier
 (
 [ parameters ]
-)  
+)
 ```
 
 ### Parameters

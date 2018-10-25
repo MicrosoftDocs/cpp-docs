@@ -58,4 +58,3 @@ When an item is removed from the list box or combo box or when the list box or c
 [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CWnd::OnDeleteItem](../../mfc/reference/cwnd-class.md#ondeleteitem)
 
-

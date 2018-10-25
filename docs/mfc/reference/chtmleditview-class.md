@@ -138,4 +138,3 @@ virtual LPCTSTR GetStartDocument();
 [HTMLEdit Sample](../../visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-

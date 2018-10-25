@@ -73,7 +73,7 @@ Name                                         | Description
 Destroys the current instance of the `HString` class.
 
 ```cpp
-~HString() throw()  
+~HString() throw()
 ```
 
 ## <a name="attach"></a>HString::Attach
@@ -83,7 +83,7 @@ Associates the specified `HString` object with the current `HString` object.
 ```cpp
 void Attach(
        HSTRING hstr
-       ) throw()  
+       ) throw()
 ```
 
 ### Parameters
@@ -115,7 +115,7 @@ This method calls the [WindowsDuplicateString](https://msdn.microsoft.com/librar
 Disassociates the specified `HString` object from its underlying value.
 
 ```cpp
-HSTRING Detach() throw()  
+HSTRING Detach() throw()
 ```
 
 ### Return Value
@@ -127,7 +127,7 @@ The underlying `HString` value before the detach operation started.
 Retrieves the value of the underlying HSTRING handle.
 
 ```cpp
-HSTRING Get() const throw()  
+HSTRING Get() const throw()
 ```
 
 ### Return Value
@@ -139,7 +139,7 @@ The value of the underlying HSTRING handle
 Retrieves a pointer to the underlying HSTRING handle.
 
 ```cpp
-HSTRING* GetAddressOf() throw()  
+HSTRING* GetAddressOf() throw()
 ```
 
 ### Return Value
@@ -178,7 +178,7 @@ The second constructor initializes a new `HString` object to the value of the ex
 Indicates whether the current `HString` object is empty or not.
 
 ```cpp
-bool IsValid() const throw()  
+bool IsValid() const throw()
 ```
 
 ### Parameters
@@ -220,7 +220,7 @@ An `HStringReference` object whose value is the same as the specified *str* para
 Moves the value of another `HString` object to the current `HString` object.
 
 ```cpp
-HString& operator=(HString&& other) throw()  
+HString& operator=(HString&& other) throw()
 ```
 
 ### Parameters
@@ -255,7 +255,7 @@ inline bool operator==(
 
 inline bool operator==(
                  const HString& lhs,
-                 const HSTRING& rhs) throw()  
+                 const HSTRING& rhs) throw()
 ```
 
 ### Parameters
@@ -288,7 +288,7 @@ inline bool operator!=( const HSTRING& lhs,
                         const HString& rhs) throw()
 
 inline bool operator!=( const HString& lhs,
-                        const HSTRING& rhs) throw()  
+                        const HSTRING& rhs) throw()
 ```
 
 ### Parameters
@@ -310,7 +310,7 @@ Indicates whether the first parameter is less than the second parameter.
 ```cpp
 inline bool operator<(
     const HString& lhs,
-    const HString& rhs) throw()  
+    const HString& rhs) throw()
 ```
 
 ### Parameters
@@ -330,7 +330,7 @@ The second parameter to compare. *rhs* can be a reference to an `HString`.
 Deletes the underlying string value and intializes the current `HString` object to an empty value.
 
 ```cpp
-void Release() throw()  
+void Release() throw()
 ```
 
 ## <a name="set"></a>HString::Set

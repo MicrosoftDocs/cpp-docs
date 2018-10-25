@@ -455,7 +455,6 @@ void SetBitmap(
     BOOL bStretch=FALSE,
     BarElementAlignment bmpAlignment=ALIGN_RIGHT);
 
-
 void SetBitmap(
     UINT uiBmpResID,
     COLORREF clrTransparent,

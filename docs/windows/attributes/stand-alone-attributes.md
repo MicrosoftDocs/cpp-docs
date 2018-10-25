@@ -12,8 +12,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Stand-Alone Attributes
+
 A stand-alone attribute does not operate on a C++ keyword but is more like a line of code. Stand-alone attribute statements require a semicolon at the end of the line.
-  
+
+## Stand-alone attribute list
+
 |Attribute|Description|
 |---------------|-----------------|
 |[cpp_quote](cpp-quote.md)|Emits the specified string, without the quote characters, into the generated header file.|
@@ -31,7 +34,7 @@ A stand-alone attribute does not operate on a C++ keyword but is more like a lin
 |[module](module-cpp.md)|Defines the library block in the .idl file.|
 |[no_injected_text](no-injected-text.md)|Prevents the compiler from injecting code as a result of attribute use.|
 |[pragma](pragma.md)|Emits the specified string, without the quote characters, into the generated .idl file.|
-  
+
 ## See Also
 
 [Attributes by Usage](attributes-by-usage.md)

@@ -25,7 +25,7 @@ Explains how to export your own string class from a DLL using the CStringT<> tem
 
 ## Reference
 
-[CStringT Class](../atl-mfc-shared/reference/cstringt-class.md).  
+[CStringT Class](../atl-mfc-shared/reference/cstringt-class.md).<br/>
 Provides reference information about the shared `CStringT` class.
 
 ## See Also

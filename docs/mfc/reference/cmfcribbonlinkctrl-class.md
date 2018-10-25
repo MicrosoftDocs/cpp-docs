@@ -92,7 +92,6 @@ The following example demonstrates how to use the constructor of the `CMFCRibbon
 
 ##  <a name="copyfrom"></a>  CMFCRibbonLinkCtrl::CopyFrom
 
-
 ```
 virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```
@@ -104,7 +103,6 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ### Remarks
 
 ##  <a name="getcompactsize"></a>  CMFCRibbonLinkCtrl::GetCompactSize
-
 
 ```
 virtual CSize GetCompactSize(CDC* pDC);
@@ -134,7 +132,6 @@ The current value of the hyperlink.
 
 ##  <a name="getregularsize"></a>  CMFCRibbonLinkCtrl::GetRegularSize
 
-
 ```
 virtual CSize GetRegularSize(CDC* pDC);
 ```
@@ -149,7 +146,6 @@ virtual CSize GetRegularSize(CDC* pDC);
 
 ##  <a name="gettooltiptext"></a>  CMFCRibbonLinkCtrl::GetToolTipText
 
-
 ```
 virtual CString GetToolTipText() const;
 ```
@@ -159,7 +155,6 @@ virtual CString GetToolTipText() const;
 ### Remarks
 
 ##  <a name="ondrawmenuimage"></a>  CMFCRibbonLinkCtrl::OnDrawMenuImage
-
 
 ```
 virtual BOOL OnDrawMenuImage(CDC*, CRect);
@@ -176,7 +171,6 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
 
 ##  <a name="isdrawtooltipimage"></a>  CMFCRibbonLinkCtrl::IsDrawTooltipImage
 
-
 ```
 virtual BOOL IsDrawTooltipImage() const;
 ```
@@ -186,7 +180,6 @@ virtual BOOL IsDrawTooltipImage() const;
 ### Remarks
 
 ##  <a name="ondraw"></a>  CMFCRibbonLinkCtrl::OnDraw
-
 
 ```
 virtual void OnDraw(CDC* pDC);
@@ -200,7 +193,6 @@ virtual void OnDraw(CDC* pDC);
 
 ##  <a name="onmousemove"></a>  CMFCRibbonLinkCtrl::OnMouseMove
 
-
 ```
 virtual void OnMouseMove(CPoint point);
 ```
@@ -212,7 +204,6 @@ virtual void OnMouseMove(CPoint point);
 ### Remarks
 
 ##  <a name="onseticon"></a>  CMFCRibbonLinkCtrl::OnSetIcon
-
 
 ```
 virtual void OnSetIcon();

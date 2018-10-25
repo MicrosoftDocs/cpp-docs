@@ -14,28 +14,28 @@ ms.workload: ["cplusplus"]
 ---
 # pop_macro
 Sets the value of the *macro_name* macro to the value on the top of the stack for this macro.  
-  
+
 ## Syntax  
-  
+
+```
+#pragma pop_macro("
+macro_name
+")
 ```  
-#pragma pop_macro("  
-macro_name  
-")  
-```  
-  
+
 ## Remarks  
- 
+
 You must first issue a [push_macro](../preprocessor/push-macro.md) for *macro_name* before you can do a **pop_macro**.  
-  
+
 ## Example  
-  
-```cpp  
-// pragma_directives_pop_macro.cpp  
-// compile with: /W1  
-#include <stdio.h>  
-#define X 1  
+
+```cpp
+// pragma_directives_pop_macro.cpp
+// compile with: /W1
+#include <stdio.h>
+#define X 1
 #define Y 2  
-  
+
 int main() {  
    printf("%d",X);  
    printf("\n%d",Y);  
@@ -48,19 +48,19 @@ int main() {
    #pragma pop_macro("X")  
    printf("\n%d",X);  
    #pragma pop_macro("Y")  
-   printf("\n%d",Y);  
-}  
+   printf("\n%d",Y);
+}
 ```  
-  
-```Output  
-1  
-2  
-1  
-2  
-1  
-3  
+
+```Output
+1
+2
+1
+2
+1
+3
 ```  
-  
+
 ## See Also  
- 
+
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

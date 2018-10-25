@@ -204,7 +204,6 @@ void InsertAt(
     TYPE newElement,
     INT_PTR nCount = 1);
 
-
 void InsertAt(
     INT_PTR nStartIndex,
     CTypedPtrArray<BASE_CLASS, TYPE>* pNewArray);

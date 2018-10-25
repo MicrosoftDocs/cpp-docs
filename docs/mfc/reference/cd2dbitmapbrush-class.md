@@ -115,7 +115,6 @@ CD2DBitmapBrush(
     CD2DBrushProperties* pBrushProperties = NULL,
     BOOL bAutoDestroy = TRUE);
 
-
 CD2DBitmapBrush(
     CRenderTarget* pParentTarget,
     UINT uiResID,
@@ -124,7 +123,6 @@ CD2DBitmapBrush(
     D2D1_BITMAP_BRUSH_PROPERTIES* pBitmapBrushProperties = NULL,
     CD2DBrushProperties* pBrushProperties = NULL,
     BOOL bAutoDestroy = TRUE);
-
 
 CD2DBitmapBrush(
     CRenderTarget* pParentTarget,

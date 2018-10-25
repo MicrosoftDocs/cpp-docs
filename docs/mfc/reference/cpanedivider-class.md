@@ -113,7 +113,6 @@ The following example demonstrates how to get a `CPaneDivider` object from a `CW
 
 ##  <a name="setautohidemode"></a>  CPaneDivider::SetAutoHideMode
 
-
 ```
 void SetAutoHideMode(BOOL bMode);
 ```
@@ -125,7 +124,6 @@ void SetAutoHideMode(BOOL bMode);
 ### Remarks
 
 ##  <a name="setpanecontainermanager"></a>  CPaneDivider::SetPaneContainerManager
-
 
 ```
 void SetPaneContainerManager(CPaneContainerManager* p);
@@ -139,7 +137,6 @@ void SetPaneContainerManager(CPaneContainerManager* p);
 
 ##  <a name="addpane"></a>  CPaneDivider::AddPane
 
-
 ```
 virtual void AddPane(CDockablePane* pBar);
 ```
@@ -152,12 +149,10 @@ virtual void AddPane(CDockablePane* pBar);
 
 ##  <a name="addpanecontainer"></a>  CPaneDivider::AddPaneContainer
 
-
 ```
 virtual BOOL AddPaneContainer(
     CPaneContainerManager& barContainerManager,
     BOOL bOuterEdge);
-
 
 virtual BOOL AddPaneContainer(
     CDockablePane* pTargetBar,
@@ -178,7 +173,6 @@ virtual BOOL AddPaneContainer(
 
 ##  <a name="addrecentpane"></a>  CPaneDivider::AddRecentPane
 
-
 ```
 virtual CDockablePane* AddRecentPane(CDockablePane* pBar);
 ```
@@ -192,7 +186,6 @@ virtual CDockablePane* AddRecentPane(CDockablePane* pBar);
 ### Remarks
 
 ##  <a name="calcexpecteddockedrect"></a>  CPaneDivider::CalcExpectedDockedRect
-
 
 ```
 virtual void CalcExpectedDockedRect(
@@ -215,7 +208,6 @@ virtual void CalcExpectedDockedRect(
 
 ##  <a name="calcfixedlayout"></a>  CPaneDivider::CalcFixedLayout
 
-
 ```
 virtual CSize CalcFixedLayout(
     BOOL bStretch,
@@ -233,7 +225,6 @@ virtual CSize CalcFixedLayout(
 
 ##  <a name="checkvisibility"></a>  CPaneDivider::CheckVisibility
 
-
 ```
 virtual BOOL CheckVisibility();
 ```
@@ -244,10 +235,8 @@ virtual BOOL CheckVisibility();
 
 ##  <a name="cpanedivider"></a>  CPaneDivider::CPaneDivider
 
-
 ```
 CPaneDivider();
-
 
 CPaneDivider(
     BOOL bDefaultSlider,
@@ -264,7 +253,6 @@ CPaneDivider(
 ### Remarks
 
 ##  <a name="createex"></a>  CPaneDivider::CreateEx
-
 
 ```
 virtual BOOL CreateEx(
@@ -291,7 +279,6 @@ virtual BOOL CreateEx(
 
 ##  <a name="doesallowdyninsertbefore"></a>  CPaneDivider::DoesAllowDynInsertBefore
 
-
 ```
 virtual BOOL DoesAllowDynInsertBefore() const;
 ```
@@ -302,7 +289,6 @@ virtual BOOL DoesAllowDynInsertBefore() const;
 
 ##  <a name="doescontainfloatingpane"></a>  CPaneDivider::DoesContainFloatingPane
 
-
 ```
 virtual BOOL DoesContainFloatingPane();
 ```
@@ -312,7 +298,6 @@ virtual BOOL DoesContainFloatingPane();
 ### Remarks
 
 ##  <a name="findpanecontainer"></a>  CPaneDivider::FindPaneContainer
-
 
 ```
 CPaneContainer* FindPaneContainer(
@@ -331,7 +316,6 @@ CPaneContainer* FindPaneContainer(
 
 ##  <a name="findtabbedpane"></a>  CPaneDivider::FindTabbedPane
 
-
 ```
 CDockablePane* FindTabbedPane(UINT nID);
 ```
@@ -346,7 +330,6 @@ CDockablePane* FindTabbedPane(UINT nID);
 
 ##  <a name="getdefaultwidth"></a>  CPaneDivider::GetDefaultWidth
 
-
 ```
 static int __stdcall GetDefaultWidth();
 ```
@@ -356,7 +339,6 @@ static int __stdcall GetDefaultWidth();
 ### Remarks
 
 ##  <a name="getfirstpane"></a>  CPaneDivider::GetFirstPane
-
 
 ```
 const CBasePane* GetFirstPane() const;
@@ -385,7 +367,6 @@ This method should be called for default pane dividers only. A default pane divi
 
 ##  <a name="getpanedividerstyle"></a>  CPaneDivider::GetPaneDividerStyle
 
-
 ```
 DWORD GetPaneDividerStyle() const;
 ```
@@ -413,7 +394,6 @@ This method should be called for default pane dividers only. A default pane divi
 
 ##  <a name="getrootcontainerrect"></a>  CPaneDivider::GetRootContainerRect
 
-
 ```
 CRect GetRootContainerRect();
 ```
@@ -424,7 +404,6 @@ CRect GetRootContainerRect();
 
 ##  <a name="getwidth"></a>  CPaneDivider::GetWidth
 
-
 ```
 int GetWidth() const;
 ```
@@ -434,7 +413,6 @@ int GetWidth() const;
 ### Remarks
 
 ##  <a name="init"></a>  CPaneDivider::Init
-
 
 ```
 void Init(
@@ -450,7 +428,6 @@ void Init(
 ### Remarks
 
 ##  <a name="insertpane"></a>  CPaneDivider::InsertPane
-
 
 ```
 virtual BOOL InsertPane(
@@ -473,7 +450,6 @@ virtual BOOL InsertPane(
 
 ##  <a name="isautohidemode"></a>  CPaneDivider::IsAutoHideMode
 
-
 ```
 BOOL IsAutoHideMode() const;
 ```
@@ -484,7 +460,6 @@ BOOL IsAutoHideMode() const;
 
 ##  <a name="isdefault"></a>  CPaneDivider::IsDefault
 
-
 ```
 BOOL IsDefault() const;
 ```
@@ -494,7 +469,6 @@ BOOL IsDefault() const;
 ### Remarks
 
 ##  <a name="ishorizontal"></a>  CPaneDivider::IsHorizontal
-
 
 ```
 BOOL IsHorizontal() const;
@@ -513,7 +487,6 @@ AFX_IMPORT_DATA static int m_nDefaultWidth;
 ```
 
 ##  <a name="move"></a>  CPaneDivider::Move
-
 
 ```
 virtual void Move(
@@ -555,7 +528,6 @@ CPaneDivider::m_pSliderRTC = RUNTIME_CLASS(CMySpliter);
 
 ##  <a name="notifyaboutrelease"></a>  CPaneDivider::NotifyAboutRelease
 
-
 ```
 virtual void NotifyAboutRelease();
 ```
@@ -563,7 +535,6 @@ virtual void NotifyAboutRelease();
 ### Remarks
 
 ##  <a name="onshowpane"></a>  CPaneDivider::OnShowPane
-
 
 ```
 virtual void OnShowPane(
@@ -580,7 +551,6 @@ virtual void OnShowPane(
 
 ##  <a name="releaseemptypanecontainers"></a>  CPaneDivider::ReleaseEmptyPaneContainers
 
-
 ```
 void ReleaseEmptyPaneContainers();
 ```
@@ -588,7 +558,6 @@ void ReleaseEmptyPaneContainers();
 ### Remarks
 
 ##  <a name="removepane"></a>  CPaneDivider::RemovePane
-
 
 ```
 virtual void RemovePane(CDockablePane* pBar);
@@ -601,7 +570,6 @@ virtual void RemovePane(CDockablePane* pBar);
 ### Remarks
 
 ##  <a name="replacepane"></a>  CPaneDivider::ReplacePane
-
 
 ```
 virtual BOOL ReplacePane(
@@ -620,7 +588,6 @@ virtual BOOL ReplacePane(
 
 ##  <a name="repositionpanes"></a>  CPaneDivider::RepositionPanes
 
-
 ```
 virtual void RepositionPanes(
     CRect& rectNew,
@@ -636,7 +603,6 @@ virtual void RepositionPanes(
 
 ##  <a name="serialize"></a>  CPaneDivider::Serialize
 
-
 ```
 void Serialize(CArchive& ar);
 ```
@@ -648,7 +614,6 @@ void Serialize(CArchive& ar);
 ### Remarks
 
 ##  <a name="showwindow"></a>  CPaneDivider::ShowWindow
-
 
 ```
 void ShowWindow(int nCmdShow);
@@ -662,7 +627,6 @@ void ShowWindow(int nCmdShow);
 
 ##  <a name="storerecentdocksiteinfo"></a>  CPaneDivider::StoreRecentDockSiteInfo
 
-
 ```
 void StoreRecentDockSiteInfo(CDockablePane* pBar);
 ```
@@ -674,7 +638,6 @@ void StoreRecentDockSiteInfo(CDockablePane* pBar);
 ### Remarks
 
 ##  <a name="storerecenttabrelatedinfo"></a>  CPaneDivider::StoreRecentTabRelatedInfo
-
 
 ```
 void StoreRecentTabRelatedInfo(

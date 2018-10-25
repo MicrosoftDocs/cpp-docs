@@ -139,7 +139,6 @@ The first overload opens an empty memory file.
 ```
 CMemFile(UINT nGrowBytes = 1024);
 
-
 CMemFile(
     BYTE* lpBuffer,
     UINT nBufferSize,
@@ -277,6 +276,4 @@ Override this function to implement custom memory reallocation. If you override 
 
 [CFile Class](../../mfc/reference/cfile-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
-
 

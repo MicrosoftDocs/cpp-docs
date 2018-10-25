@@ -16,11 +16,11 @@ ms.workload: ["cplusplus", "data-storage"]
 # CDBPropSet Class
 
 Inherits from the `DBPROPSET` structure and adds a constructor that initializes key fields as well as the `AddProperty` access method.  
-  
+
 ## Syntax
 
 ```cpp
-class CDBPropSet : public tagDBPROPSET  
+class CDBPropSet : public tagDBPROPSET
 ```  
 
 ## Requirements  
@@ -28,21 +28,21 @@ class CDBPropSet : public tagDBPROPSET
 **Header:** atldbcli.h  
 
 ## Members  
-  
+
 ### Methods  
-  
-|||  
-|-|-|  
-|[AddProperty](#addproperty)|Adds a property to the property set.|  
-|[CDBPropSet](#cdbpropset)|Constructor.|  
+
+|||
+|-|-|
+|[AddProperty](#addproperty)|Adds a property to the property set.|
+|[CDBPropSet](#cdbpropset)|Constructor.|
 |[SetGUID](#setguid)|Sets the `guidPropertySet` field of the `DBPROPSET` structure.|  
-  
+
 ### Operators  
-  
-|||  
-|-|-|  
+
+|||
+|-|-|
 |[operator =](#op_equal)|Assigns the contents of one property set to another.|  
-  
+
 ## Remarks  
 
 OLE DB providers and consumers use `DBPROPSET` structures to pass arrays of `DBPROP` structures. Each `DBPROP` structure represents a single property that can be set.  
@@ -50,9 +50,9 @@ OLE DB providers and consumers use `DBPROPSET` structures to pass arrays of `DBP
 ## <a name="addproperty"></a> CDBPropSet::AddProperty
 
 Adds a property to the property set.  
-  
+
 ### Syntax  
-  
+
 ```cpp
 bool AddProperty(DWORD dwPropertyID,   
    constVARIANT& var,   
@@ -65,35 +65,35 @@ bool AddProperty(DWORD dwPropertyID, 
    long nValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED);bool AddProperty(DWORD dwPropertyID,  
    float fltValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED);bool AddProperty(DWORD dwPropertyID,  
    double dblValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,  
-   CY cyValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();  
+   CY cyValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();
 ```  
-  
+
 #### Parameters  
 
 *dwPropertyID*<br/>
 [in] The ID of the property to be added. Used to initialize the `dwPropertyID` of the `DBPROP` structure added to the property set.  
-  
+
 *var*<br/>
 [in] A variant used to initialize the property value for the `DBPROP` structure added to the property set.  
-  
+
 *szValue*<br/>
 [in] A string used to initialize the property value for the `DBPROP` structure added to the property set.  
-  
+
 *bValue*<br/>
 [in] A `BYTE` or boolean value used to initialize the property value for the `DBPROP` structure added to the property set.  
-  
+
 *nValue*<br/>
 [in] An integer value used to initialize the property value for the `DBPROP` structure added to the property set.  
-  
+
 *fltValue*<br/>
 [in] A floating-point value used to initialize the property value for the `DBPROP` structure added to the property set.  
-  
+
 *dblValue*<br/>
 [in] A double-precision floating-point value used to initialize the property value for the `DBPROP` structure added to the property set.  
-  
+
 *cyValue*<br/>
 [in] A CY currency value used to initialize the property value for the `DBPROP` structure added to the property set.  
-  
+
 ### Return Value  
 
 **true** if the property was successfully added. Otherwise, **false**. 
@@ -101,40 +101,40 @@ bool AddProperty(DWORD dwPropertyID, 
 ## <a name="cdbpropset"></a> CDBPropSet::CDBPropSet
 
 The constructor. Initializes the `rgProperties`, `cProperties`, and `guidPropertySet` fields of the [DBPROPSET](/previous-versions/windows/desktop/ms714367) structure.  
-  
+
 ### Syntax  
-  
+
 ```cpp
 CDBPropSet(const GUID& guid);  
 
 CDBPropSet(const CDBPropSet& propset);  
 
-CDBPropSet();  
+CDBPropSet();
 ```  
-  
+
 #### Parameters  
 
 *guid*<br/>
 [in] A GUID used to initialize the `guidPropertySet` field.  
-  
+
 *propset*<br/>
 [in] Another `CDBPropSet` object for copy construction.  
 
 ## <a name="setguid"></a> CDBPropSet::SetGUID
 
 Sets the `guidPropertySet` field in the `DBPROPSET` structure.  
-  
+
 ### Syntax  
-  
+
 ```cpp
-void SetGUID(const GUID& guid) throw();  
+void SetGUID(const GUID& guid) throw();
 ```  
-  
+
 #### Parameters  
 
 *guid*<br/>
 [in] A GUID used to set the `guidPropertySet` field of the [DBPROPSET](/previous-versions/windows/desktop/ms714367) structure.  
-  
+
 ### Remarks  
 
 This field can be set by the [constructor](../../data/oledb/cdbpropset-cdbpropset.md) as well.  
@@ -142,17 +142,17 @@ This field can be set by the [constructor](../../data/oledb/cdbpropset-cdbpropse
 ## <a name="op_equal"></a> CDBPropSet::operator =
 
 Assigns the contents of one property set to another property set.  
-  
+
 ### Syntax  
-  
+
 ```cpp
-CDBPropSet& operator =(CDBPropSet& propset) throw();  
+CDBPropSet& operator =(CDBPropSet& propset) throw();
 ```  
-  
+
 ## See Also  
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [CDBPropIDSet Class](../../data/oledb/cdbpropidset-class.md)<br/>
-[DBPROPSET Structure](/previous-versions/windows/desktop/ms714367)   
+[DBPROPSET Structure](/previous-versions/windows/desktop/ms714367)
 [DBPROP Structure](/previous-versions/windows/desktop/ms717970)

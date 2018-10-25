@@ -34,7 +34,7 @@ The following code example shows the two main drawbacks of the .NET Framework co
 using namespace System;
 using namespace System::Collections;
 
-int main()  
+int main()
 {
     // This Stack can contain any type.
     Stack ^s = gcnew Stack();
@@ -89,7 +89,7 @@ Compare the example written above with this example that uses a generic <xref:Sy
 using namespace System;
 using namespace System::Collections::Generic;
 
-int main()  
+int main()
 {
     // This Stack can only contain integers.
     Stack<int> ^s = gcnew Stack<int>();

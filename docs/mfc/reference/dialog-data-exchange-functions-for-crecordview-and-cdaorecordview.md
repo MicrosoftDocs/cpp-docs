@@ -479,6 +479,7 @@ void AFXAPI DDX_FieldSlider(
      int& value,
      CDaoRecordset* pRecordset );
 ```
+
 ### Parameters
 
 *pDX*<br/>
@@ -656,7 +657,6 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 The following `DoDataExchange` function for a [CRecordView](../../mfc/reference/crecordview-class.md) contains `DDX_FieldText` function calls for three data types: `IDC_COURSELIST` is a combo box; the other two controls are edit boxes. For DAO programming, the *m_pSet* parameter is a pointer to a [CRecordset](../../mfc/reference/crecordset-class.md) or [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md).
 
 [!code-cpp[NVC_MFCDatabase#43](../../mfc/codesnippet/cpp/dialog-data-exchange-functions-for-crecordview-and-cdaorecordview_1.cpp)]
-
 
 ### Requirements
 

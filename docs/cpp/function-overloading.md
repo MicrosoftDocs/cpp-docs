@@ -115,7 +115,6 @@ The default argument is not considered part of the function type. Therefore, it 
 
 Default arguments cannot be supplied for overloaded operators.
 
-
 ## Argument Matching
 
 Overloaded functions are selected for the best match of function declarations in the current scope to the arguments supplied in the function call. If a suitable function is found, that function is called. "Suitable" in this context means one of the following:

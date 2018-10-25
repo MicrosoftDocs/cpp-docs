@@ -67,21 +67,17 @@ Adds a file to the most recently used (MRU) file list.
 ```
 virtual void Add(LPCTSTR lpszPathName);
 
-
 virtual void Add(
     LPCTSTR lpszPathName,
     LPCTSTR lpszAppID);
-
 
 void Add(
     IShellItem* pItem,
     LPCTSTR lpszAppID);
 
-
 void Add(
     IShellLink* pLink,
     LPCTSTR lpszAppID);
-
 
 void Add(
     PIDLIST_ABSOLUTE pidl,
@@ -251,6 +247,4 @@ virtual void WriteList();
 ## See Also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
-
 

@@ -114,7 +114,7 @@ And the following .h file, which also needs to be available to the compiler.
     error checks: allocation ref bounds_check enum stub_data
     VC __declspec() decoration level:
          __declspec(uuid()), __declspec(selectany), __declspec(novtable)  
-         DECLSPEC_UUID(), MIDL_INTERFACE()  
+         DECLSPEC_UUID(), MIDL_INTERFACE()
 */
 //@@MIDL_FILE_HEADING(  )
 
@@ -135,7 +135,7 @@ And the following .h file, which also needs to be available to the compiler.
 #ifndef __attr_implements_h__
 #define __attr_implements_h__
 
-#if defined(_MSC_VER) && (_MSC_VER >= 1020)  
+#if defined(_MSC_VER) && (_MSC_VER >= 1020)
 #pragma once
 #endif
 
@@ -363,7 +363,7 @@ EXTERN_C const CLSID CLSID_CBar;
 
 #ifdef __cplusplus
 
-class DECLSPEC_UUID("159A9BBB-E5F1-33F6-BEF5-6CFAD7A5933F")  
+class DECLSPEC_UUID("159A9BBB-E5F1-33F6-BEF5-6CFAD7A5933F")
 CBar;
 #endif
 #endif /* __odod_LIBRARY_DEFINED__ */
@@ -400,7 +400,7 @@ __interface IMyInterface
 };
 
 [
-   coclass, uuid("00000000-0000-0000-0000-000000000002"), implements(interfaces={IBar1,IBar2}, dispinterfaces=ISna)  
+   coclass, uuid("00000000-0000-0000-0000-000000000002"), implements(interfaces={IBar1,IBar2}, dispinterfaces=ISna)
 ]
 class CMyClass : public IMyInterface, public IBar1,    public IDispatchImpl<IBar2, &__uuidof(IBar2)>, public ISna
 {
@@ -479,7 +479,7 @@ public:
       COM_INTERFACE_ENTRY(IBar1)  
       COM_INTERFACE_ENTRY(IBar2)  
       COM_INTERFACE_ENTRY(ISna)  
-   END_COM_MAP()  
+   END_COM_MAP()
 };
 ```
 

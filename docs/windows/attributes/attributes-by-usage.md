@@ -32,7 +32,7 @@ If an attribute precedes an element that is not in the attribute's scope, the at
 
 ## Module Attributes
 The following attribute can only be applied to the [module](module-cpp.md) attribute.
-  
+
 |Attribute|Description|
 |---------------|-----------------|
 |[helpstringdll](helpstringdll.md)|Specifies the name of the DLL to use to perform document string lookup (localization).|
@@ -74,7 +74,6 @@ You must observe these rules for defining an interface:
 - No overloaded methods are allowed.
 
 When not specifying the [uuid](uuid-cpp-attributes.md) attribute and using the same interface name in different attribute projects, the same GUID is generated.
-
 
 ## See Also
 

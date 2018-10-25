@@ -14,9 +14,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # Issuing a Parameterized Query
 
 The following example issues a simple parameterized query that retrieves records with an age field (that is greater than 30) from a table in a Microsoft Access database. To support the parameter, the user record must have an additional map. The following code, in an ATL project, uses the `CCommand` class instead of the `CTable` class used in the previous example, [Traversing a Simple Rowset](../../data/oledb/traversing-a-simple-rowset.md).  
-  
-```cpp  
-#include <atldbcli.h>  
+
+```cpp
+#include <atldbcli.h>
 #include <iostream>
 
 using namespace std;
@@ -48,35 +48,35 @@ int main()
     }
 
     return 0;
-}  
+}
 ```  
-  
+
 The user record, `CArtists`, looks like this example:  
-  
-```cpp  
-class CArtists  
-{  
-public:  
+
+```cpp
+class CArtists
+{
+public:
 // Data Elements  
    CHAR m_szFirstName[20];  
    CHAR m_szLastName[30];  
    short m_nAge;  
-  
-// Column binding map  
+
+// Column binding map
 BEGIN_COLUMN_MAP(CArtists)  
    COLUMN_ENTRY(1, m_szFirstName)  
    COLUMN_ENTRY(2, m_szLastName)  
-   COLUMN_ENTRY(3, m_nAge)  
+   COLUMN_ENTRY(3, m_nAge)
 END_COLUMN_MAP()  
-  
-// Parameter binding map  
+
+// Parameter binding map
 BEGIN_PARAM_MAP(CArtists)  
    SET_PARAM_TYPE(DBPARAMIO_INPUT)  
-   COLUMN_ENTRY(1, m_nAge)  
-END_PARAM_MAP()  
-};  
+   COLUMN_ENTRY(1, m_nAge)
+END_PARAM_MAP()
+};
 ```  
-  
+
 ## See Also  
 
 [Working with OLE DB Consumer Templates](../../data/oledb/working-with-ole-db-consumer-templates.md)

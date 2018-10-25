@@ -307,6 +307,7 @@ This function is an overloaded wrapper for [PathIsDirectory](/windows/desktop/ap
 inline BOOL IsDirectory(const char* pszPath);
 inline BOOL IsDirectory(const wchar_t* pszPath);
 ```
+
 ### Remarks
 
 See PathIsDirectory for details.

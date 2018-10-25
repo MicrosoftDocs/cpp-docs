@@ -15,16 +15,16 @@ ms.workload: ["cplusplus", "data-storage"]
 # IColumnsInfoImpl Class
 
 Provides an implementation of the [IColumnsInfo](/previous-versions/windows/desktop/ms724541) interface.  
-  
+
 ## Syntax
 
 ```cpp
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE IColumnsInfoImpl :   
    public IColumnsInfo,    
-   public CDBIDOps  
+   public CDBIDOps
 ```  
-  
+
 ### Parameters  
 
 *T*<br/>
@@ -33,16 +33,16 @@ Your class, derived from `IColumnsInfoImpl`.
 ## Requirements  
 
 **Header:** atldb.h  
-  
+
 ## Members  
-  
+
 ### Methods  
-  
-|||  
-|-|-|  
-|[GetColumnInfo](#getcolumninfo)|Returns the column metadata needed by most consumers.|  
+
+|||
+|-|-|
+|[GetColumnInfo](#getcolumninfo)|Returns the column metadata needed by most consumers.|
 |[MapColumnIDs](#mapcolumnids)|Returns an array of ordinals of the columns in a rowset that are identified by the specified column IDs.|  
-  
+
 ## Remarks  
 
 A mandatory interface on rowsets and commands. To modify the behavior of your provider's `IColumnsInfo` implementation, you need to modify the provider column map.  
@@ -50,15 +50,15 @@ A mandatory interface on rowsets and commands. To modify the behavior of your pr
 ## <a name="getcolumninfo"></a> IColumnsInfoImpl::GetColumnInfo
 
 Returns the column metadata needed by most consumers.  
-  
+
 ### Syntax  
-  
+
 ```cpp
 STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,  
    DBCOLUMNINFO** prgInfo,  
-   OLECHAR** ppStringsBuffer);  
+   OLECHAR** ppStringsBuffer);
 ```  
-  
+
 #### Parameters  
 
 See [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704) in the *OLE DB Programmer's Reference*.  
@@ -66,19 +66,19 @@ See [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704) i
 ## <a name="mapcolumnids"></a> IColumnsInfoImpl::MapColumnIDs
 
 Returns an array of ordinals of the columns in a rowset that are identified by the specified column IDs.  
-  
+
 ### Syntax  
-  
+
 ```cpp
 STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,  
    const DBID rgColumnIDs[],  
-   DBORDINAL rgColumns[]);  
+   DBORDINAL rgColumns[]);
 ```  
-  
+
 #### Parameters  
 
 See [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200) in the *OLE DB Programmer's Reference*.  
-  
+
 ## See Also  
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>

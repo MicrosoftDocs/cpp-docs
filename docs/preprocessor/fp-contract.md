@@ -35,7 +35,7 @@ Other floating-point pragmas include:
 ## Example
 
 The code generated from this sample does not use a fused-multiply-add instruction even when it is available on the target processor. If you comment out `#pragma fp_contract (off)`, the generated code may use a fused-multiply-add instruction if it is available.  
-  
+
 ```cpp
 // pragma_directive_fp_contract.cpp
 // on x86 and x64 compile with: /O2 /fp:fast /arch:AVX2

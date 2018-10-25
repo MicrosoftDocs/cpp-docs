@@ -43,7 +43,7 @@ The following code shows how you can use **bindable** on a property:
 // compile with: /LD
 #include <windows.h>
 [
-   uuid("479B29E3-9A2C-11D0-B696-00A0C903487A"), dispinterface, helpstring("property demo Interface")  
+   uuid("479B29E3-9A2C-11D0-B696-00A0C903487A"), dispinterface, helpstring("property demo Interface")
 ]
 __interface IPropDemo : IDispatch {
 

@@ -13,23 +13,24 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # section
-Creates a section in an .obj file.  
-  
-## Syntax  
-  
-```  
-#pragma section( "section-name" [, attributes] )  
-```  
-  
-## Remarks  
- 
-The meaning of the terms *segment* and *section* are interchangeable in this topic.  
-  
-Once a section is defined, it remains valid for the remainder of the compilation. However, you must use [__declspec(allocate)](../cpp/allocate.md) or nothing will be placed in the section.  
-  
-*section-name* is a required parameter that will be the name of the section. The name must not conflict with any standard section names. See [/SECTION](../build/reference/section-specify-section-attributes.md) for a list of names you should not use when creating a section.  
-  
-*attributes* is an optional parameter consisting of one or more comma-separated attributes that you want to assign to the section. Possible *attributes* are:  
+
+Creates a section in an .obj file.
+
+## Syntax
+
+```
+#pragma section( "section-name" [, attributes] )
+```
+
+## Remarks
+
+The meaning of the terms *segment* and *section* are interchangeable in this topic.
+
+Once a section is defined, it remains valid for the remainder of the compilation. However, you must use [__declspec(allocate)](../cpp/allocate.md) or nothing will be placed in the section.
+
+*section-name* is a required parameter that will be the name of the section. The name must not conflict with any standard section names. See [/SECTION](../build/reference/section-specify-section-attributes.md) for a list of names you should not use when creating a section.
+
+*attributes* is an optional parameter consisting of one or more comma-separated attributes that you want to assign to the section. Possible *attributes* are:
 
 |Attribute|Description|
 |-|-|
@@ -41,24 +42,24 @@ Once a section is defined, it remains valid for the remainder of the compilation
 |**nocache**|Marks the section as not cacheable; useful for Win32 device drivers.|
 |**discard**|Marks the section as discardable; useful for Win32 device drivers.|
 |**remove**|Marks the section as not memory-resident; virtual device drivers (V*x*D) only.|
-  
-If you do not specify attributes, the section will have read and write attributes.  
-  
-## Example  
- 
-In the following example, the first instruction identifies the section and its attributes. The integer `j` is not put into `mysec` because it was not declared with `__declspec(allocate)`; `j` goes into the data section. The integer `i` does go into `mysec` as a result of its `__declspec(allocate)` storage-class attribute.  
-  
-```cpp  
-// pragma_section.cpp  
-#pragma section("mysec",read,write)  
-int j = 0;  
-  
-__declspec(allocate("mysec"))  
-int i = 0;  
-  
-int main(){}  
-```  
-  
-## See Also  
- 
+
+If you do not specify attributes, the section will have read and write attributes.
+
+## Example
+
+In the following example, the first instruction identifies the section and its attributes. The integer `j` is not put into `mysec` because it was not declared with `__declspec(allocate)`; `j` goes into the data section. The integer `i` does go into `mysec` as a result of its `__declspec(allocate)` storage-class attribute.
+
+```cpp
+// pragma_section.cpp
+#pragma section("mysec",read,write)
+int j = 0;
+
+__declspec(allocate("mysec"))
+int i = 0;
+
+int main(){}
+```
+
+## See Also
+
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

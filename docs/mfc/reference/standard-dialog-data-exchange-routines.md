@@ -262,6 +262,7 @@ void DDX_ManagedControl(
      int nIDC,
      CWinFormsControl<T>& control );
 ```
+
 ### Parameters
 
 *pDX*<br/>
@@ -287,8 +288,6 @@ For more information, see [How to: Do DDX/DDV Data Binding with Windows Forms](.
 
 [CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol)<br/>
 [CDialog::OnInitDialog](cdialog-class.md#oninitdialog)
-
-
 
 ##  <a name="ddx_ipaddress"></a>  DDX_IPAddress
 

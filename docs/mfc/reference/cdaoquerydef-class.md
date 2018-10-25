@@ -355,7 +355,6 @@ void GetFieldInfo(
     CDaoFieldInfo& fieldinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
 
-
 void GetFieldInfo(
     LPCTSTR lpszName,
     CDaoFieldInfo& fieldinfo,
@@ -448,7 +447,6 @@ void GetParameterInfo(
     int nIndex,
     CDaoParameterInfo& paraminfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
-
 
 void GetParameterInfo(
     LPCTSTR lpszName,
@@ -719,7 +717,6 @@ Call this member function to set the value of a parameter in the querydef at run
 virtual void SetParamValue(
     LPCTSTR lpszName,
     const COleVariant& varValue);
-
 
 virtual void SetParamValue(
     int nIndex,

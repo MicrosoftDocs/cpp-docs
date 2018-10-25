@@ -78,5 +78,4 @@ sqlcmd -S MyServer -E -i myScript.sql -o myResult.txt
 
 ## See Also
 
-
 [Classes and Structs](../cpp/classes-and-structs-cpp.md)

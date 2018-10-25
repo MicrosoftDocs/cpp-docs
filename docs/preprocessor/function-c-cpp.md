@@ -14,33 +14,33 @@ ms.workload: ["cplusplus"]
 ---
 # function (C/C++)
 Specifies that calls to functions specified in the pragma's argument list be generated.  
-  
+
 ## Syntax  
-  
+
+```
+#pragma function( function1 [, function2, ...] )
 ```  
-#pragma function( function1 [, function2, ...] )  
-```  
-  
+
 ## Remarks  
 
 If you use the `intrinsic` pragma (or /Oi) to tell the compiler to generate intrinsic functions (intrinsic functions are generated as inline code, not as function calls), you can use the **function** pragma to explicitly force a function call. Once a function pragma is seen, it takes effect at the first function definition containing a specified intrinsic function. The effect continues to the end of the source file or to the appearance of an `intrinsic` pragma specifying the same intrinsic function. The **function** pragma can be used only outside of a function — at the global level.  
-  
+
 For lists of the functions that have intrinsic forms, see [#pragma intrinsic](../preprocessor/intrinsic.md).  
-  
+
 ## Example  
-  
-```cpp  
-// pragma_directive_function.cpp  
-#include <ctype.h>  
-#include <stdio.h>  
-#include <stdlib.h>  
+
+```cpp
+// pragma_directive_function.cpp
+#include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>  
-  
-// use intrinsic forms of memset and strlen  
+
+// use intrinsic forms of memset and strlen
 #pragma intrinsic(memset, strlen)  
-  
-// Find first word break in string, and set remaining  
-// chars in string to specified char value.  
+
+// Find first word break in string, and set remaining
+// chars in string to specified char value.
 char *set_str_after_word(char *string, char ch) {  
    int i;  
    int len = strlen(string);  /* NOTE: uses intrinsic for strlen */  
@@ -53,32 +53,32 @@ char *set_str_after_word(char *string, char ch) {
    for(; i < len; i++)   
       *(string + i) = ch;  
   
-   return string;  
+   return string;
 }  
-  
-// do not use strlen intrinsic  
+
+// do not use strlen intrinsic
 #pragma function(strlen)  
-  
-// Set all chars in string to specified char value.  
+
+// Set all chars in string to specified char value.
 char *set_str(char *string, char ch) {  
    // Uses intrinsic for memset, but calls strlen library function  
-   return (char *) memset(string, ch, strlen(string));  
+   return (char *) memset(string, ch, strlen(string));
 }  
-  
+
 int main() {  
    char *str = (char *) malloc(20 * sizeof(char));  
   
    strcpy_s(str, sizeof("Now is the time"), "Now is the time");  
    printf("str is '%s'\n", set_str_after_word(str, '*'));  
-   printf("str is '%s'\n", set_str(str, '!'));  
-}  
+   printf("str is '%s'\n", set_str(str, '!'));
+}
 ```  
-  
-```Output  
-str is 'Now************'  
-str is '!!!!!!!!!!!!!!!'  
+
+```Output
+str is 'Now************'
+str is '!!!!!!!!!!!!!!!'
 ```  
-  
+
 ## See Also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -108,5 +108,3 @@ For more information on SCODE, see [Structure of COM Error Codes](/windows/deskt
 [CException Class](../../mfc/reference/cexception-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

@@ -575,5 +575,3 @@ Looks for a toolbar button with the specified command ID and sets the time in a 
 [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md)<br/>
 [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
 
-
-

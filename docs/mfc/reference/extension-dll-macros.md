@@ -211,6 +211,7 @@ Call this function in an MFC extension DLL's `DllMain` to initialize the DLL.
 ```
 BOOL AFXAPI AfxInitExtensionModule( AFX_EXTENSION_MODULE& state,  HMODULE hModule );
 ```
+
 ### Parameters
 
 *state*<br/>
@@ -272,6 +273,7 @@ Use this function to set the per-module state flag, which affects the WinSxS beh
 ```
 void AFXAPI AfxSetAmbientActCtx(BOOL bSet);
 ```
+
 ### Parameters
 
 *bSet*<br/>

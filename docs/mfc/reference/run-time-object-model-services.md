@@ -28,8 +28,6 @@ For more information on these run-time object services and serialization, see th
 
 ### Run-Time Object Model Services Macros
 
-
-
 |||
 |-|-|
 |[DECLARE_DYNAMIC](#declare_dynamic)|Enables access to run-time class information (must be used in the class declaration).|
@@ -40,19 +38,11 @@ For more information on these run-time object services and serialization, see th
 |[IMPLEMENT_SERIAL](#implement_serial)|Permits serialization and access to run-time class information (must be used in the class implementation).|
 |[RUNTIME_CLASS](#runtime_class)|Returns the `CRuntimeClass` structure that corresponds to the named class.|
 
-
 OLE frequently requires the dynamic creation of objects at run time. For example, an OLE server application must be able to create OLE items dynamically in response to a request from a client. Similarly, an automation server must be able to create items in response to requests from automation clients.
 
 The Microsoft Foundation Class Library provides two macros specific to OLE.
 
 ### Dynamic Creation of OLE Objects
-
-
-
-
-
-
-
 
 |||
 |-|-|
@@ -74,6 +64,7 @@ Determines whether the Common Controls library implements the specified API.
   ```
 AFX_COMCTL32_IF_EXISTS(  proc );
 ```
+
 ### Parameters
 
 *proc*<br/>
@@ -101,6 +92,7 @@ Determines whether the Common Controls library implements the specified API (thi
 ```
 AFX_COMCTL32_IF_EXISTS2( proc );
 ```
+
 ### Parameters
 
 *proc*<br/>
@@ -118,8 +110,6 @@ afxcomctl32.h, afxcomctl32.inl
 
 [Isolation of the MFC Common Controls Library](../isolation-of-the-mfc-common-controls-library.md)<br/>
 [AFX_COMCTL32_IF_EXISTS](#afx_comctl32_if_exists)
-
-
 
 ##  <a name="declare_dynamic"></a>  DECLARE_DYNAMIC
 
@@ -186,7 +176,6 @@ See the example for [IMPLEMENT_DYNCREATE](#implement_dyncreate).
 
 **Header:** afx.h
 
-
 ## DECLARE_OLECTLTYPE
 
 Declares the `GetUserTypeNameID` and `GetMiscStatus` member functions of your control class.
@@ -196,6 +185,7 @@ Declares the `GetUserTypeNameID` and `GetMiscStatus` member functions of your co
 ```
 DECLARE_OLECTLTYPE( class_name )
 ```
+
 ### Parameters
 
 *class_name*<br/>
@@ -213,7 +203,6 @@ The name of the control class.
 
 [IMPLEMENT_OLECTLTYPE](#implement_olectltype)
 
-
 ## DECLARE_PROPPAGEIDS
 
 Declares that the OLE control provides a list of property pages to display its properties.
@@ -223,6 +212,7 @@ Declares that the OLE control provides a list of property pages to display its p
 ```
 DECLARE_PROPPAGEIDS( class_name )
 ```
+
 ### Parameters
 
 *class_name*<br/>
@@ -359,6 +349,7 @@ IMPLEMENT_OLECREATE_FLAGS( class_name, external_name, nFlags,
     l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8)
 
 ```
+
 ### Parameters
 
 *class_name*<br/>
@@ -398,7 +389,6 @@ The OLE class ID is a unique 128-bit identifier for the object. It consists of o
 [DECLARE_OLECREATE](#declare_olecreate)<br/>
 [CLSID Key](/windows/desktop/com/clsid-key-hklm)
 
-
 ## <a name="implement_olecreate"></a> IMPLEMENT_OLECTLTYPE
 
 Implements the `GetUserTypeNameID` and `GetMiscStatus` member functions of your control class.
@@ -408,6 +398,7 @@ Implements the `GetUserTypeNameID` and `GetMiscStatus` member functions of your 
 ```
 DECLARE_OLECTLTYPE( class_name, idsUserTypeName, dwOleMisc )
 ```
+
 ### Parameters
 
 *class_name*<br/>

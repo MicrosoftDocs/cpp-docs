@@ -42,7 +42,7 @@ You must remove this property when you want to upgrade your projects.
 If you choose not to upgrade, Visual Studio makes no changes to your solution or project files. When you build the project, the generated binaries are fully compatible with the ones you built with the older version of Visual Studio. This is because Visual Studio uses the same C++ compiler and links the same libraries that your older IDE shipped with. That is also why the upgrade dialog warns you to keep the older Visual Studio version installed if you choose **Cancel**.
 
 ## Instructions for Visual Studio 2008  
-  
+
 Visual Studio 2008 had its own dedicated build system for C++ called **VCBuild**. Starting in Visual Studio 2010, Visual C++ projects were changed to use **MSBuild**. This means that you must go through an update step to build your Visual Studio 2008 projects in the latest version of Visual Studio. Your updated project still generates binaries that are fully compatible with binaries created using the Visual Studio 2008 IDE.
 
 First, in addition to the current version of Visual Studio, you must install Visual Studio 2010 on the same computer as Visual Studio 2008. Only Visual Studio 2010 installs the **MSBuild** scripts that are required to target Visual Studio 2008 projects. 

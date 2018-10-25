@@ -266,7 +266,6 @@ The following example demonstrates how to retrieve the default values of a `CMFC
 
 ##  <a name="adjustframes"></a>  CMFCVisualManager::AdjustFrames
 
-
 ```
 static void __stdcall AdjustFrames();
 ```
@@ -274,7 +273,6 @@ static void __stdcall AdjustFrames();
 ### Remarks
 
 ##  <a name="adjusttoolbars"></a>  CMFCVisualManager::AdjustToolbars
-
 
 ```
 static void __stdcall AdjustToolbars();
@@ -300,7 +298,6 @@ Override this function in a derived visual manager and return TRUE if 3D tabs sh
 
 ##  <a name="cmfcvisualmanager"></a>  CMFCVisualManager::CMFCVisualManager
 
-
 ```
 CMFCVisualManager(BOOL bTemporary = FALSE);
 ```
@@ -313,7 +310,6 @@ CMFCVisualManager(BOOL bTemporary = FALSE);
 
 ##  <a name="destroyinstance"></a>  CMFCVisualManager::DestroyInstance
 
-
 ```
 static void __stdcall DestroyInstance(BOOL bAutoDestroyOnly = FALSE);
 ```
@@ -325,7 +321,6 @@ static void __stdcall DestroyInstance(BOOL bAutoDestroyOnly = FALSE);
 ### Remarks
 
 ##  <a name="dodrawheadersortarrow"></a>  CMFCVisualManager::DoDrawHeaderSortArrow
-
 
 ```
 void DoDrawHeaderSortArrow(
@@ -345,7 +340,6 @@ void DoDrawHeaderSortArrow(
 ### Remarks
 
 ##  <a name="drawcomboborderwinxp"></a>  CMFCVisualManager::DrawComboBorderWinXP
-
 
 ```
 virtual BOOL DrawComboBorderWinXP(CDC*,
@@ -367,7 +361,6 @@ virtual BOOL DrawComboBorderWinXP(CDC*,
 
 ##  <a name="drawcombodropbuttonwinxp"></a>  CMFCVisualManager::DrawComboDropButtonWinXP
 
-
 ```
 virtual BOOL DrawComboDropButtonWinXP(CDC*,
     CRect,
@@ -388,7 +381,6 @@ virtual BOOL DrawComboDropButtonWinXP(CDC*,
 
 ##  <a name="drawpushbuttonwinxp"></a>  CMFCVisualManager::DrawPushButtonWinXP
 
-
 ```
 virtual BOOL DrawPushButtonWinXP(CDC*,
     CRect,
@@ -408,7 +400,6 @@ virtual BOOL DrawPushButtonWinXP(CDC*,
 ### Remarks
 
 ##  <a name="drawtextonglass"></a>  CMFCVisualManager::DrawTextOnGlass
-
 
 ```
 virtual BOOL DrawTextOnGlass(
@@ -434,7 +425,6 @@ virtual BOOL DrawTextOnGlass(
 ### Remarks
 
 ##  <a name="enabletoolbarbuttonfill"></a>  CMFCVisualManager::EnableToolbarButtonFill
-
 
 ```
 void EnableToolbarButtonFill(BOOL bEnable = TRUE);
@@ -506,7 +496,6 @@ Override this method in your derived class to customize the text color for a cap
 
 ##  <a name="getcaptionbuttonextraborder"></a>  CMFCVisualManager::GetCaptionButtonExtraBorder
 
-
 ```
 virtual CSize GetCaptionButtonExtraBorder() const;
 ```
@@ -516,7 +505,6 @@ virtual CSize GetCaptionButtonExtraBorder() const;
 ### Remarks
 
 ##  <a name="getdockingpanecaptionextraheight"></a>  CMFCVisualManager::GetDockingPaneCaptionExtraHeight
-
 
 ```
 virtual int GetDockingPaneCaptionExtraHeight() const;
@@ -545,7 +533,6 @@ A docked pane becomes tabbed when the user docks multiple panes to the same loca
 Override this method in a custom visual manager to change the border size of docked tabbed control bars. The default implementation returns -1.
 
 ##  <a name="gethighlightedmenuitemtextcolor"></a>  CMFCVisualManager::GetHighlightedMenuItemTextColor
-
 
 ```
 virtual COLORREF GetHighlightedMenuItemTextColor(CMFCToolBarMenuButton* pButton);
@@ -593,7 +580,6 @@ Override this function in a derived class to customize the border size of the MD
 
 ##  <a name="getmenuimagemargin"></a>  CMFCVisualManager::GetMenuImageMargin
 
-
 ```
 virtual int GetMenuImageMargin() const;
 ```
@@ -603,7 +589,6 @@ virtual int GetMenuImageMargin() const;
 ### Remarks
 
 ##  <a name="getmenuitemtextcolor"></a>  CMFCVisualManager::GetMenuItemTextColor
-
 
 ```
 virtual COLORREF GetMenuItemTextColor(
@@ -677,7 +662,6 @@ Override this method to customize the border size of pop-up menus in your applic
 
 ##  <a name="getpopupmenugap"></a>  CMFCVisualManager::GetPopupMenuGap
 
-
 ```
 virtual int GetPopupMenuGap() const;
 ```
@@ -730,7 +714,6 @@ Override this function to customize the text color of a property list in your ap
 
 ##  <a name="getribbonhyperlinktextcolor"></a>  CMFCVisualManager::GetRibbonHyperlinkTextColor
 
-
 ```
 virtual COLORREF GetRibbonHyperlinkTextColor(CMFCRibbonLinkCtrl* pHyperLink);
 ```
@@ -744,7 +727,6 @@ virtual COLORREF GetRibbonHyperlinkTextColor(CMFCRibbonLinkCtrl* pHyperLink);
 ### Remarks
 
 ##  <a name="getribbonpopupbordersize"></a>  CMFCVisualManager::GetRibbonPopupBorderSize
-
 
 ```
 virtual int GetRibbonPopupBorderSize(const CMFCRibbonPanelMenu*) const;
@@ -760,7 +742,6 @@ virtual int GetRibbonPopupBorderSize(const CMFCRibbonPanelMenu*) const;
 
 ##  <a name="getribbonquickaccesstoolbarchevronoffset"></a>  CMFCVisualManager::GetRibbonQuickAccessToolBarChevronOffset
 
-
 ```
 virtual int GetRibbonQuickAccessToolBarChevronOffset();
 ```
@@ -771,7 +752,6 @@ virtual int GetRibbonQuickAccessToolBarChevronOffset();
 
 ##  <a name="getribbonquickaccesstoolbarrightmargin"></a>  CMFCVisualManager::GetRibbonQuickAccessToolBarRightMargin
 
-
 ```
 virtual int GetRibbonQuickAccessToolBarRightMargin();
 ```
@@ -781,7 +761,6 @@ virtual int GetRibbonQuickAccessToolBarRightMargin();
 ### Remarks
 
 ##  <a name="getribbonquickaccesstoolbartextcolor"></a>  CMFCVisualManager::GetRibbonQuickAccessToolBarTextColor
-
 
 ```
 virtual COLORREF GetRibbonQuickAccessToolBarTextColor(BOOL bDisabled = FALSE);
@@ -796,7 +775,6 @@ virtual COLORREF GetRibbonQuickAccessToolBarTextColor(BOOL bDisabled = FALSE);
 ### Remarks
 
 ##  <a name="getribbonslidercolors"></a>  CMFCVisualManager::GetRibbonSliderColors
-
 
 ```
 virtual void GetRibbonSliderColors(
@@ -821,7 +799,6 @@ virtual void GetRibbonSliderColors(
 
 ##  <a name="getribbonstatusbartextcolor"></a>  CMFCVisualManager::GetRibbonStatusBarTextColor
 
-
 ```
 virtual COLORREF GetRibbonStatusBarTextColor(CMFCRibbonStatusBar* pStatusBar);
 ```
@@ -835,7 +812,6 @@ virtual COLORREF GetRibbonStatusBarTextColor(CMFCRibbonStatusBar* pStatusBar);
 ### Remarks
 
 ##  <a name="getshowallmenuitemsheight"></a>  CMFCVisualManager::GetShowAllMenuItemsHeight
-
 
 ```
 virtual int GetShowAllMenuItemsHeight(
@@ -854,7 +830,6 @@ virtual int GetShowAllMenuItemsHeight(
 
 ##  <a name="getsmartdockingbaseguidecolors"></a>  CMFCVisualManager::GetSmartDockingBaseGuideColors
 
-
 ```
 virtual void GetSmartDockingBaseGuideColors(
     COLORREF& clrBaseGroupBackground,
@@ -869,7 +844,6 @@ virtual void GetSmartDockingBaseGuideColors(
 ### Remarks
 
 ##  <a name="getsmartdockinghighlighttonecolor"></a>  CMFCVisualManager::GetSmartDockingHighlightToneColor
-
 
 ```
 virtual COLORREF GetSmartDockingHighlightToneColor();
@@ -894,7 +868,6 @@ Returns one of the following enumerated values: AFX_SDT_DEFAULT, AFX_SDT_VS2005,
 ### Remarks
 
 ##  <a name="getstatusbarpanetextcolor"></a>  CMFCVisualManager::GetStatusBarPaneTextColor
-
 
 ```
 virtual COLORREF GetStatusBarPaneTextColor(
@@ -963,7 +936,6 @@ Override this function in a derived class if you want to customize the set of co
 
 ##  <a name="gettabhorzmargin"></a>  CMFCVisualManager::GetTabHorzMargin
 
-
 ```
 virtual int GetTabHorzMargin(const CMFCBaseTabCtrl*);
 ```
@@ -977,7 +949,6 @@ virtual int GetTabHorzMargin(const CMFCBaseTabCtrl*);
 ### Remarks
 
 ##  <a name="gettabtextcolor"></a>  CMFCVisualManager::GetTabTextColor
-
 
 ```
 virtual COLORREF GetTabTextColor(
@@ -998,7 +969,6 @@ virtual COLORREF GetTabTextColor(
 
 ##  <a name="gettaskspanegroupcaptionheight"></a>  CMFCVisualManager::GetTasksPaneGroupCaptionHeight
 
-
 ```
 int GetTasksPaneGroupCaptionHeight() const;
 ```
@@ -1008,7 +978,6 @@ int GetTasksPaneGroupCaptionHeight() const;
 ### Remarks
 
 ##  <a name="gettaskspanegroupcaptionhorzoffset"></a>  CMFCVisualManager::GetTasksPaneGroupCaptionHorzOffset
-
 
 ```
 int GetTasksPaneGroupCaptionHorzOffset() const;
@@ -1020,7 +989,6 @@ int GetTasksPaneGroupCaptionHorzOffset() const;
 
 ##  <a name="gettaskspanegroupcaptionvertoffset"></a>  CMFCVisualManager::GetTasksPaneGroupCaptionVertOffset
 
-
 ```
 int GetTasksPaneGroupCaptionVertOffset() const;
 ```
@@ -1030,7 +998,6 @@ int GetTasksPaneGroupCaptionVertOffset() const;
 ### Remarks
 
 ##  <a name="gettaskspanegroupvertoffset"></a>  CMFCVisualManager::GetTasksPaneGroupVertOffset
-
 
 ```
 int GetTasksPaneGroupVertOffset() const;
@@ -1042,7 +1009,6 @@ int GetTasksPaneGroupVertOffset() const;
 
 ##  <a name="gettaskspanehorzmargin"></a>  CMFCVisualManager::GetTasksPaneHorzMargin
 
-
 ```
 int GetTasksPaneHorzMargin() const;
 ```
@@ -1052,7 +1018,6 @@ int GetTasksPaneHorzMargin() const;
 ### Remarks
 
 ##  <a name="gettaskspaneiconhorzoffset"></a>  CMFCVisualManager::GetTasksPaneIconHorzOffset
-
 
 ```
 int GetTasksPaneIconHorzOffset() const;
@@ -1064,7 +1029,6 @@ int GetTasksPaneIconHorzOffset() const;
 
 ##  <a name="gettaskspaneiconvertoffset"></a>  CMFCVisualManager::GetTasksPaneIconVertOffset
 
-
 ```
 int GetTasksPaneIconVertOffset() const;
 ```
@@ -1075,7 +1039,6 @@ int GetTasksPaneIconVertOffset() const;
 
 ##  <a name="gettaskspanetaskhorzoffset"></a>  CMFCVisualManager::GetTasksPaneTaskHorzOffset
 
-
 ```
 int GetTasksPaneTaskHorzOffset() const;
 ```
@@ -1085,7 +1048,6 @@ int GetTasksPaneTaskHorzOffset() const;
 ### Remarks
 
 ##  <a name="gettaskspanevertmargin"></a>  CMFCVisualManager::GetTasksPaneVertMargin
-
 
 ```
 int GetTasksPaneVertMargin() const;
@@ -1125,7 +1087,6 @@ Override this function to customize the text color of a toolbar button in your a
 
 ##  <a name="gettoolbarcustomizebuttonmargin"></a>  CMFCVisualManager::GetToolBarCustomizeButtonMargin
 
-
 ```
 virtual int GetToolBarCustomizeButtonMargin() const;
 ```
@@ -1135,7 +1096,6 @@ virtual int GetToolBarCustomizeButtonMargin() const;
 ### Remarks
 
 ##  <a name="gettoolbardisabledcolor"></a>  CMFCVisualManager::GetToolbarDisabledColor
-
 
 ```
 virtual COLORREF GetToolbarDisabledColor() const;
@@ -1163,7 +1123,6 @@ Override this method in a custom visual manager to set the text color of toolbar
 
 ##  <a name="gettoolbarhighlightcolor"></a>  CMFCVisualManager::GetToolbarHighlightColor
 
-
 ```
 virtual COLORREF GetToolbarHighlightColor();
 ```
@@ -1173,7 +1132,6 @@ virtual COLORREF GetToolbarHighlightColor();
 ### Remarks
 
 ##  <a name="gettooltipinfo"></a>  CMFCVisualManager::GetToolTipInfo
-
 
 ```
 virtual BOOL GetToolTipInfo(
@@ -1204,7 +1162,6 @@ TRUE if auto-hide buttons overlap; FALSE if they do not.
 
 ##  <a name="isautodestroy"></a>  CMFCVisualManager::IsAutoDestroy
 
-
 ```
 BOOL IsAutoDestroy() const;
 ```
@@ -1214,7 +1171,6 @@ BOOL IsAutoDestroy() const;
 ### Remarks
 
 ##  <a name="isdefaultwinxppopupbutton"></a>  CMFCVisualManager::IsDefaultWinXPPopupButton
-
 
 ```
 virtual BOOL IsDefaultWinXPPopupButton(CMFCDesktopAlertWndButton*) const;
@@ -1278,7 +1234,6 @@ You can activate or deactivate the lighting effect by calling [CMFCVisualManager
 
 ##  <a name="isframemenucheckeditems"></a>  CMFCVisualManager::IsFrameMenuCheckedItems
 
-
 ```
 BOOL IsFrameMenuCheckedItems() const;
 ```
@@ -1288,7 +1243,6 @@ BOOL IsFrameMenuCheckedItems() const;
 ### Remarks
 
 ##  <a name="ishighlightonenotetabs"></a>  CMFCVisualManager::IsHighlightOneNoteTabs
-
 
 ```
 virtual BOOL IsHighlightOneNoteTabs() const;
@@ -1300,7 +1254,6 @@ virtual BOOL IsHighlightOneNoteTabs() const;
 
 ##  <a name="ishighlightwholemenuitem"></a>  CMFCVisualManager::IsHighlightWholeMenuItem
 
-
 ```
 virtual BOOL IsHighlightWholeMenuItem();
 ```
@@ -1310,7 +1263,6 @@ virtual BOOL IsHighlightWholeMenuItem();
 ### Remarks
 
 ##  <a name="islayeredribbonkeytip"></a>  CMFCVisualManager::IsLayeredRibbonKeyTip
-
 
 ```
 virtual BOOL IsLayeredRibbonKeyTip() const;
@@ -1354,7 +1306,6 @@ The [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) calls this
 
 ##  <a name="isoffsetpressedbutton"></a>  CMFCVisualManager::IsOffsetPressedButton
 
-
 ```
 virtual BOOL IsOffsetPressedButton() const;
 ```
@@ -1376,7 +1327,6 @@ virtual BOOL IsOwnerDrawCaption();
 TRUE if all the frame windows in the application have owner-draw captions; FALSE otherwise.
 
 ##  <a name="isownerdrawmenucheck"></a>  CMFCVisualManager::IsOwnerDrawMenuCheck
-
 
 ```
 virtual BOOL IsOwnerDrawMenuCheck();
@@ -1400,7 +1350,6 @@ Nonzero when the visual manager displays shadows under highlighted images; 0 oth
 
 ##  <a name="istoolbarbuttonfillenabled"></a>  CMFCVisualManager::IsToolbarButtonFillEnabled
 
-
 ```
 BOOL IsToolbarButtonFillEnabled() const;
 ```
@@ -1410,7 +1359,6 @@ BOOL IsToolbarButtonFillEnabled() const;
 ### Remarks
 
 ##  <a name="istoolbarroundshape"></a>  CMFCVisualManager::IsToolbarRoundShape
-
 
 ```
 virtual BOOL IsToolbarRoundShape(CMFCToolBar*);
@@ -1426,7 +1374,6 @@ virtual BOOL IsToolbarRoundShape(CMFCToolBar*);
 
 ##  <a name="iswindowsthemingsupported"></a>  CMFCVisualManager::IsWindowsThemingSupported
 
-
 ```
 virtual BOOL IsWindowsThemingSupported() const;
 ```
@@ -1436,7 +1383,6 @@ virtual BOOL IsWindowsThemingSupported() const;
 ### Remarks
 
 ##  <a name="onactivateapp"></a>  CMFCVisualManager::OnActivateApp
-
 
 ```
 virtual void OnActivateApp(
@@ -1585,7 +1531,6 @@ The possible states of a toolbar button are `ButtonsIsRegular`, `ButtonsIsPresse
 
 ##  <a name="ondrawbuttonseparator"></a>  CMFCVisualManager::OnDrawButtonSeparator
 
-
 ```
 virtual void OnDrawButtonSeparator(
     CDC* pDC,
@@ -1641,7 +1586,6 @@ Override this method in a derived class to customize the appearance of the borde
 
 ##  <a name="ondrawcaptionbarbuttonborder"></a>  CMFCVisualManager::OnDrawCaptionBarButtonBorder
 
-
 ```
 virtual void OnDrawCaptionBarButtonBorder(
     CDC* pDC,
@@ -1668,7 +1612,6 @@ virtual void OnDrawCaptionBarButtonBorder(
 ### Remarks
 
 ##  <a name="ondrawcaptionbarinfoarea"></a>  CMFCVisualManager::OnDrawCaptionBarInfoArea
-
 
 ```
 virtual void OnDrawCaptionBarInfoArea(
@@ -1731,7 +1674,6 @@ Override this method in a derived class to customize the appearance of caption b
 
 ##  <a name="ondrawcheckbox"></a>  CMFCVisualManager::OnDrawCheckBox
 
-
 ```
 virtual void OnDrawCheckBox(
     CDC* pDC,
@@ -1752,7 +1694,6 @@ virtual void OnDrawCheckBox(
 ### Remarks
 
 ##  <a name="ondrawcheckboxex"></a>  CMFCVisualManager::OnDrawCheckBoxEx
-
 
 ```
 virtual void OnDrawCheckBoxEx(
@@ -1853,7 +1794,6 @@ Override this method in your derived visual manager to customize the appearance 
 
 ##  <a name="ondrawcontrolborder"></a>  CMFCVisualManager::OnDrawControlBorder
 
-
 ```
 virtual void OnDrawControlBorder(CWnd* pWndCtrl);
 ```
@@ -1933,7 +1873,6 @@ virtual void OnDrawEditBorder(
 Override this method in a derived visual manager to customize the border of a `CMFCToolBarEditBoxButton` object.
 
 ##  <a name="ondrawexpandingbox"></a>  CMFCVisualManager::OnDrawExpandingBox
-
 
 ```
 virtual void OnDrawExpandingBox(
@@ -2052,7 +1991,6 @@ If *bIsUp* is TRUE, the visual manager draws an up sort arrow. If it is FALSE, t
 
 ##  <a name="ondrawmenuarrowoncustomizelist"></a>  CMFCVisualManager::OnDrawMenuArrowOnCustomizeList
 
-
 ```
 virtual void OnDrawMenuArrowOnCustomizeList(
     CDC* pDC,
@@ -2096,7 +2034,6 @@ The default implementation of this method displays the standard menu border. Ove
 
 ##  <a name="ondrawmenucheck"></a>  CMFCVisualManager::OnDrawMenuCheck
 
-
 ```
 virtual void OnDrawMenuCheck(
     CDC* pDC,
@@ -2117,7 +2054,6 @@ virtual void OnDrawMenuCheck(
 ### Remarks
 
 ##  <a name="ondrawmenuitembutton"></a>  CMFCVisualManager::OnDrawMenuItemButton
-
 
 ```
 virtual void OnDrawMenuItemButton(
@@ -2140,7 +2076,6 @@ virtual void OnDrawMenuItemButton(
 
 ##  <a name="ondrawmenulabel"></a>  CMFCVisualManager::OnDrawMenuLabel
 
-
 ```
 virtual COLORREF OnDrawMenuLabel(
     CDC* pDC,
@@ -2157,7 +2092,6 @@ virtual COLORREF OnDrawMenuLabel(
 ### Remarks
 
 ##  <a name="ondrawmenuresizebar"></a>  CMFCVisualManager::OnDrawMenuResizeBar
-
 
 ```
 virtual void OnDrawMenuResizeBar(
@@ -2213,7 +2147,6 @@ virtual void OnDrawMenuScrollButton(
 Override this method in a derived visual manager to customize the appearance of menu scroll buttons. Menu scroll buttons appear on the edge of pop-up menus when the total height of the menu items exceeds the height of the pop-up menu.
 
 ##  <a name="ondrawmenushadow"></a>  CMFCVisualManager::OnDrawMenuShadow
-
 
 ```
 virtual void OnDrawMenuShadow(
@@ -2279,7 +2212,6 @@ The menu system buttons are the **Close**, **Minimize**, **Maximize**, and **Res
 The default implementation for this method calls [CDC::DrawFrameControl](../../mfc/reference/cdc-class.md#drawframecontrol) with the DFC_CAPTION type. Override this method in your derived visual manager class to customize the appearance of system buttons.
 
 ##  <a name="ondrawminiframeborder"></a>  CMFCVisualManager::OnDrawMiniFrameBorder
-
 
 ```
 virtual void OnDrawMiniFrameBorder(
@@ -2416,7 +2348,6 @@ Override this method in a derived visual manager to customize the appearance of 
 
 ##  <a name="ondrawpanedivider"></a>  CMFCVisualManager::OnDrawPaneDivider
 
-
 ```
 virtual void OnDrawPaneDivider(
     CDC* pDC,
@@ -2436,7 +2367,6 @@ virtual void OnDrawPaneDivider(
 
 ##  <a name="ondrawpopupwindowborder"></a>  CMFCVisualManager::OnDrawPopupWindowBorder
 
-
 ```
 virtual void OnDrawPopupWindowBorder(
     CDC* pDC,
@@ -2451,7 +2381,6 @@ virtual void OnDrawPopupWindowBorder(
 ### Remarks
 
 ##  <a name="ondrawpopupwindowbuttonborder"></a>  CMFCVisualManager::OnDrawPopupWindowButtonBorder
-
 
 ```
 virtual void OnDrawPopupWindowButtonBorder(
@@ -2469,7 +2398,6 @@ virtual void OnDrawPopupWindowButtonBorder(
 ### Remarks
 
 ##  <a name="ondrawpopupwindowcaption"></a>  CMFCVisualManager::OnDrawPopupWindowCaption
-
 
 ```
 virtual COLORREF OnDrawPopupWindowCaption(
@@ -2670,7 +2598,6 @@ Override this method in a derived class to customize the appearance of the capti
 
 ##  <a name="ondrawribboncategoryscroll"></a>  CMFCVisualManager::OnDrawRibbonCategoryScroll
 
-
 ```
 virtual void OnDrawRibbonCategoryScroll(
     CDC* pDC,
@@ -2716,7 +2643,6 @@ Override this method in a derived visual manager to customize the appearance of 
 
 ##  <a name="ondrawribboncheckboxonlist"></a>  CMFCVisualManager::OnDrawRibbonCheckBoxOnList
 
-
 ```
 virtual void OnDrawRibbonCheckBoxOnList(
     CDC* pDC,
@@ -2737,7 +2663,6 @@ virtual void OnDrawRibbonCheckBoxOnList(
 ### Remarks
 
 ##  <a name="ondrawribboncolorpalettebox"></a>  CMFCVisualManager::OnDrawRibbonColorPaletteBox
-
 
 ```
 virtual void OnDrawRibbonColorPaletteBox(
@@ -2794,7 +2719,6 @@ Override this method in a derived visual manager to customize the appearance of 
 
 ##  <a name="ondrawribbondefaultpanebuttoncontext"></a>  CMFCVisualManager::OnDrawRibbonDefaultPaneButtonContext
 
-
 ```
 virtual void OnDrawRibbonDefaultPaneButtonContext(
     CDC* pDC,
@@ -2809,7 +2733,6 @@ virtual void OnDrawRibbonDefaultPaneButtonContext(
 ### Remarks
 
 ##  <a name="ondrawribbondefaultpanebuttonindicator"></a>  CMFCVisualManager::OnDrawRibbonDefaultPaneButtonIndicator
-
 
 ```
 virtual void OnDrawRibbonDefaultPaneButtonIndicator(
@@ -2832,7 +2755,6 @@ virtual void OnDrawRibbonDefaultPaneButtonIndicator(
 
 ##  <a name="ondrawribbongalleryborder"></a>  CMFCVisualManager::OnDrawRibbonGalleryBorder
 
-
 ```
 virtual void OnDrawRibbonGalleryBorder(
     CDC* pDC,
@@ -2850,7 +2772,6 @@ virtual void OnDrawRibbonGalleryBorder(
 
 ##  <a name="ondrawribbongallerybutton"></a>  CMFCVisualManager::OnDrawRibbonGalleryButton
 
-
 ```
 virtual void OnDrawRibbonGalleryButton(
     CDC* pDC,
@@ -2865,7 +2786,6 @@ virtual void OnDrawRibbonGalleryButton(
 ### Remarks
 
 ##  <a name="ondrawribbonkeytip"></a>  CMFCVisualManager::OnDrawRibbonKeyTip
-
 
 ```
 virtual void OnDrawRibbonKeyTip(
@@ -2959,7 +2879,6 @@ virtual void OnDrawRibbonMainPanelFrame(
 Override this method in a derived visual manager to customize the appearance of the frame for the `CMFCRibbonMainPanel`.
 
 ##  <a name="ondrawribbonmenucheckframe"></a>  CMFCVisualManager::OnDrawRibbonMenuCheckFrame
-
 
 ```
 virtual void OnDrawRibbonMenuCheckFrame(
@@ -3290,7 +3209,6 @@ Override this method in a derived visual manager to customize the frame around a
 
 ##  <a name="ondrawscrollbuttons"></a>  CMFCVisualManager::OnDrawScrollButtons
 
-
 ```
 virtual void OnDrawScrollButtons(
     CDC* pDC,
@@ -3341,7 +3259,6 @@ virtual void OnDrawSeparator(
 Separators are used on control bars to separate groups of related icons. The default implementation for this method displays the standard separator. Override this method in a derived visual manager to customize the appearance of the separator.
 
 ##  <a name="ondrawshowallmenuitems"></a>  CMFCVisualManager::OnDrawShowAllMenuItems
-
 
 ```
 virtual void OnDrawShowAllMenuItems(
@@ -3816,7 +3733,6 @@ Override this method in a derived class to customize the caption for a `CMFCTask
 
 ##  <a name="ondrawtasksgroupicon"></a>  CMFCVisualManager::OnDrawTasksGroupIcon
 
-
 ```
 virtual void OnDrawTasksGroupIcon(
     CDC* pDC,
@@ -3868,7 +3784,6 @@ Override this method in a derived class to customize the look of captions for te
 
 ##  <a name="ondrawtoolboxframe"></a>  CMFCVisualManager::OnDrawToolBoxFrame
 
-
 ```
 virtual void OnDrawToolBoxFrame(
     CDC* pDC,
@@ -3909,7 +3824,6 @@ A reserved value. The default implementation returns FALSE.
 Override this method to execute custom code when the visual manager erases the MDI client area.
 
 ##  <a name="onerasepopupwindowbutton"></a>  CMFCVisualManager::OnErasePopupWindowButton
-
 
 ```
 virtual void OnErasePopupWindowButton(
@@ -4115,7 +4029,6 @@ The default implementation of this method uses the default color to fill the bac
 The possible states of a toolbar button are `ButtonsIsRegular`, `ButtonsIsPressed`, or `ButtonsIsHighlighted`.
 
 ##  <a name="onfillcaptionbarbutton"></a>  CMFCVisualManager::OnFillCaptionBarButton
-
 
 ```
 virtual COLORREF OnFillCaptionBarButton(
@@ -4448,7 +4361,6 @@ Override this method in a derived visual manager to customize the appearance of 
 
 ##  <a name="onfillribbonquickaccesstoolbarpopup"></a>  CMFCVisualManager::OnFillRibbonQuickAccessToolBarPopup
 
-
 ```
 virtual void OnFillRibbonQuickAccessToolBarPopup(
     CDC* pDC,
@@ -4632,7 +4544,6 @@ Override this method in a derived visual manager to customize the appearance of 
 
 ##  <a name="onncactivate"></a>  CMFCVisualManager::OnNcActivate
 
-
 ```
 virtual BOOL OnNcActivate(
     CWnd* pWnd,
@@ -4725,7 +4636,6 @@ static void RedrawAll();
 ```
 
 ##  <a name="ribboncategorycolortorgb"></a>  CMFCVisualManager::RibbonCategoryColorToRGB
-
 
 ```
 virtual COLORREF RibbonCategoryColorToRGB(AFX_RibbonCategoryColor color);
@@ -4849,5 +4759,4 @@ By default, this feature is disabled.
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
 [CMFCVisualManager::GetInstance](#getinstance)<br/>
 [Visualization Manager](../../mfc/visualization-manager.md)
-
 

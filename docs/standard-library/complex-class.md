@@ -169,7 +169,6 @@ Extracts the imaginary component of a complex number.
 ```cpp
 T imag() const;
 
-
 T imag(const T& right);
 ```
 
@@ -700,7 +699,6 @@ Gets or sets the real component of a complex number.
 
 ```cpp
 constexpr T real() const;
-
 
 T real(const T& right);
 ```

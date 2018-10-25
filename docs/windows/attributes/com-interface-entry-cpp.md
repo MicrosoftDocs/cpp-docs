@@ -81,7 +81,7 @@ __interface IMyClass{};
 [ coclass,
   com_interface_entry ("COM_INTERFACE_ENTRY (IMyClass)"),
   com_interface_entry ("COM_INTERFACE_ENTRY_NOINTERFACE(IDebugTest)"),
-  uuid("b85f8626-e76e-4775-b6a0-4826a9e94af2")  
+  uuid("b85f8626-e76e-4775-b6a0-4826a9e94af2")
 ]
 
 class CMyClass: public IMyClass, public IDebugTest
@@ -98,8 +98,8 @@ BEGIN_COM_MAP(CMyClass)
     COM_INTERFACE_ENTRY(IMyClass)  
     COM_INTERFACE_ENTRY2(IDispatch, IMyClass)  
     COM_INTERFACE_ENTRY(IDebugTest)  
-    COM_INTERFACE_ENTRY(IProvideClassInfo)  
-END_COM_MAP()  
+    COM_INTERFACE_ENTRY(IProvideClassInfo)
+END_COM_MAP()
 ```
 
 ## Requirements

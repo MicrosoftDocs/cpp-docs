@@ -24,7 +24,6 @@ struct hash<thread::id> :
 {
     size_t operator()(thread::id Val) const;
 
-
 };
 ```
 

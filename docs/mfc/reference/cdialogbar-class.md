@@ -82,7 +82,6 @@ virtual BOOL Create(
     UINT nStyle,
     UINT nID);
 
-
 virtual BOOL Create(
     CWnd* pParentWnd,
     UINT nIDTemplate,

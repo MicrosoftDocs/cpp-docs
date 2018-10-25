@@ -189,10 +189,10 @@ A `SYSTEMTIME` structure to be converted to a date/time value and copied into th
 *filetimeSrc*<br/>
 A `FILETIME` structure to be converted to a date/time value and copied into the new `COleDateTime` object. Note that `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. See [File Times](/windows/desktop/SysInfo/file-times) in the Windows SDK for more information.
 
-*nYear*, *nMonth*, *nDay*, *nHour*, *nMin*, *nSec*  
+*nYear*, *nMonth*, *nDay*, *nHour*, *nMin*, *nSec*<br/>
 Indicate the date and time values to be copied into the new `COleDateTime` object.
 
-*wDosDate*, *wDosTime*  
+*wDosDate*, *wDosTime*<br/>
 MS-DOS date and time values to be converted to a date/time value and copied into the new `COleDateTime` object.
 
 *dbts*<br/>
@@ -294,13 +294,13 @@ If the status of this `COleDateTime` object is null, the return value is an empt
 
 A brief description of the three forms for this function follows:
 
-`Format`( *dwFlags*, *lcid*)  
+`Format`( *dwFlags*, *lcid*)<br/>
 This form formats the value by using the language specifications (locale IDs) for date and time. Using the default parameters, this form will print the date and the time, unless the time portion is 0 (midnight), in which case it will print just the date, or the date portion is 0 (30 December 1899), in which case it will print just the time. If the date/time value is 0 (30 December 1899, midnight), this form with the default parameters will print midnight.
 
-`Format`( *lpszFormat*)  
+`Format`( *lpszFormat*)<br/>
 This form formats the value by using the format string which contains special formatting codes that are preceded by a percent sign (%), as in `printf`. The formatting string is passed as a parameter to the function. For more information about the formatting codes, see [strftime, wcsftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) in the Run-Time Library Reference.
 
-`Format`( *nFormatID*)  
+`Format`( *nFormatID*)<br/>
 This form formats the value by using the format string which contains special formatting codes that are preceded by a percent sign (%), as in `printf`. The formatting string is a resource. The ID of this string resource is passed as the parameter. For more information about the formatting codes, see [strftime, wcsftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) in the *Run-Time Library Reference*.
 
 ### Example
@@ -662,13 +662,13 @@ Returns the status of this `COleDateTime` value. If you call `GetStatus` on a `C
 The return value is defined by the `DateTimeStatus` enumerated type, which is defined within the `COleDateTime` class.
 
 ```
-enum DateTimeStatus  
-{  
-   error = -1,  
-   valid = 0,  
-   invalid = 1,    // Invalid date (out of range, etc.)  
-   null = 2,       // Literally has no value  
-};  
+enum DateTimeStatus
+{
+   error = -1,
+   valid = 0,
+   invalid = 1,    // Invalid date (out of range, etc.)
+   null = 2,       // Literally has no value
+};
 ```
 
 For a brief description of these status values, see the following list:
@@ -891,10 +891,10 @@ The `DATE` operator will assert if the `COleDateTime` object is set to null. See
 Parses a string to read a date/time value.
 
 ```
-bool ParseDateTime(  
-LPCTSTR lpszDate,
-DWORD dwFlags = 0,
-LCID lcid = LANG_USER_DEFAULT) throw();
+bool ParseDateTime(
+    LPCTSTR lpszDate,
+    DWORD dwFlags = 0,
+    LCID lcid = LANG_USER_DEFAULT) throw();
 ```
 
 ### Parameters
@@ -952,15 +952,15 @@ For more information about the bounds and implementation for `COleDateTime` valu
 Sets the date of this `COleDateTime` object.
 
 ```
-int SetDate(  
-int nYear,
-int nMonth,
-int nDay) throw();
+int SetDate(
+    int nYear,
+    int nMonth,
+    int nDay) throw();
 ```
 
 ### Parameters
 
-*nYear*, *nMonth*, *nDay*  
+*nYear*, *nMonth*, *nDay*<br/>
 Indicate the date components to be copied into this `COleDateTime` object.
 
 ### Return Value
@@ -1023,18 +1023,18 @@ For more information about the bounds for `COleDateTime` values, see the article
 Sets the date and time of this `COleDateTime` object.
 
 ```
-int SetDateTime(  
-int nYear,
-int nMonth,
-int nDay,
-int nHour,
-int nMin,
-int nSec) throw();
+int SetDateTime(
+    int nYear,
+    int nMonth,
+    int nDay,
+    int nHour,
+    int nMin,
+    int nSec) throw();
 ```
 
 ### Parameters
 
-*nYear*, *nMonth*, *nDay*, *nHour*, *nMin*, *nSec*  
+*nYear*, *nMonth*, *nDay*, *nHour*, *nMin*, *nSec*<br/>
 Indicate the date and time components to be copied into this `COleDateTime` object.
 
 ### Return Value
@@ -1131,15 +1131,15 @@ See the example for [GetStatus](#getstatus).
 Sets the time of this `COleDateTime` object.
 
 ```
-int SetTime(  
-int nHour,
-int nMin,
-int nSec) throw();
+int SetTime(
+    int nHour,
+    int nMin,
+    int nSec) throw();
 ```
 
 ### Parameters
 
-*nHour*, *nMin*, *nSec*  
+*nHour*, *nMin*, *nSec*<br/>
 Indicate the time components to be copied into this `COleDateTime` object.
 
 ### Return Value

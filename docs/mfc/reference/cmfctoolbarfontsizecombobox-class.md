@@ -131,5 +131,3 @@ You can retrieve the previous valid font size later by calling the [CMFCToolBarF
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
 [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
 
-
-

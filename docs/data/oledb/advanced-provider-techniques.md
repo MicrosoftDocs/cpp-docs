@@ -14,17 +14,17 @@ ms.workload: ["cplusplus", "data-storage"]
 # Advanced Provider Techniques
 
 For more information about advanced provider techniques, see the following topics:  
-  
+
 - [Supporting Notifications](../../data/oledb/supporting-notifications.md)  
-  
+
 - [Supporting Schema Rowsets](../../data/oledb/supporting-schema-rowsets.md)  
-  
+
 - [Provider Support for Bookmarks](../../data/oledb/provider-support-for-bookmarks.md)  
-  
+
 - [Passing OLE DB Conformance Tests](../../data/oledb/passing-ole-db-conformance-tests.md)  
-  
+
 - [OLE DB Resource Pooling and Services](../../data/oledb/ole-db-resource-pooling-and-services.md)  
-  
+
 ## See Also  
 
 [OLE DB Provider Templates Reference](../../data/oledb/ole-db-provider-templates-reference.md)<br/>

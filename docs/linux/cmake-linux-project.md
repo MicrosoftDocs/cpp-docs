@@ -21,7 +21,7 @@ When you install the Linux C++ workload for Visual Studio, CMake support for Lin
 
 This topic assumes you have basic familiarity with CMake support in Visual Studio. For more information, see [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md). For more information about CMake itself, see [Build, Test and Package Your Software With CMake](https://cmake.org/).
 
-> [!NOTE]  
+> [!NOTE]
 > The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant download the latest prebuilt binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases). 
 
 ## Open a folder
@@ -113,7 +113,6 @@ These options allow you to run commands on the remote box before and after build
 ## Download prebuilt CMake binaries
 
 Your Linux distro may have an older version of CMake. The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant download the latest prebuilt binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases). 
-
 
 ## See Also
 

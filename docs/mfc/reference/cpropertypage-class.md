@@ -107,18 +107,15 @@ void Construct(
     UINT nIDTemplate,
     UINT nIDCaption = 0);
 
-
 void Construct(
     LPCTSTR lpszTemplateName,
     UINT nIDCaption = 0);
-
 
 void Construct(
     UINT nIDTemplate,
     UINT nIDCaption,
     UINT nIDHeaderTitle,
     UINT nIDHeaderSubTitle = 0);
-
 
 void Construct(
     LPCTSTR lpszTemplateName,
@@ -169,18 +166,15 @@ Constructs a `CPropertyPage` object.
 ```
 CPropertyPage();
 
-
 explicit CPropertyPage(
     UINT nIDTemplate,
     UINT nIDCaption = 0,
     DWORD dwSize = sizeof(PROPSHEETPAGE));
 
-
 explicit CPropertyPage(
     LPCTSTR lpszTemplateName,
     UINT nIDCaption = 0,
     DWORD dwSize = sizeof(PROPSHEETPAGE));
-
 
 CPropertyPage(
     UINT nIDTemplate,
@@ -188,7 +182,6 @@ CPropertyPage(
     UINT nIDHeaderTitle,
     UINT nIDHeaderSubTitle = 0,
     DWORD dwSize = sizeof(PROPSHEETPAGE));
-
 
 CPropertyPage(
     LPCTSTR lpszTemplateName,

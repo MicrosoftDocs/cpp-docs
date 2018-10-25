@@ -63,7 +63,7 @@ __interface ICustomDispatch : public IDispatch {
    HRESULT Dispatch([in] long l, [out, retval] long *pLong);
 };
 
-[   coclass, default(ICustomDispatch), source(IDual), uuid("9E66A294-4365-11D2-A997-00C04FA37DDB")  
+[   coclass, default(ICustomDispatch), source(IDual), uuid("9E66A294-4365-11D2-A997-00C04FA37DDB")
 ]
 class CClass : public ICustom, public IDual, public ICustomDispatch {
    HRESULT Custom(long l, long *pLong) { return(S_OK); }

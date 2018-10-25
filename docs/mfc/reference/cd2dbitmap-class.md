@@ -124,20 +124,17 @@ CD2DBitmap(
     CD2DSizeU sizeDest = CD2DSizeU(0, 0),
     BOOL bAutoDestroy = TRUE);
 
-
 CD2DBitmap(
     CRenderTarget* pParentTarget,
     LPCTSTR lpszPath,
     CD2DSizeU sizeDest = CD2DSizeU(0, 0),
     BOOL bAutoDestroy = TRUE);
 
-
 CD2DBitmap(
     CRenderTarget* pParentTarget,
     HBITMAP hbmpSrc,
     CD2DSizeU sizeDest = CD2DSizeU(0, 0),
     BOOL bAutoDestroy = TRUE);
-
 
 CD2DBitmap(
     CRenderTarget* pParentTarget,

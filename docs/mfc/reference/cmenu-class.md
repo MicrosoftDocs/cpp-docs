@@ -114,7 +114,6 @@ BOOL AppendMenu(
     UINT_PTR nIDNewItem = 0,
     LPCTSTR lpszNewItem = NULL);
 
-
 BOOL AppendMenu(
     UINT nFlags,
     UINT_PTR nIDNewItem,
@@ -842,7 +841,6 @@ BOOL InsertMenu(
     UINT_PTR nIDNewItem = 0,
     LPCTSTR lpszNewItem = NULL);
 
-
 BOOL InsertMenu(
     UINT nPosition,
     UINT nFlags,
@@ -1031,7 +1029,6 @@ BOOL ModifyMenu(
     UINT nFlags,
     UINT_PTR nIDNewItem = 0,
     LPCTSTR lpszNewItem = NULL);
-
 
 BOOL ModifyMenu(
     UINT nPosition,

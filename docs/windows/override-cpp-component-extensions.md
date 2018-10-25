@@ -43,7 +43,7 @@ struct X : public I1 {
 
 The following code example shows that **override** can be used in Windows Runtime compilations.
 
-```cpp 
+```cpp
 // override_keyword_2.cpp
 // compile with: /ZW /c
 ref struct I1 {

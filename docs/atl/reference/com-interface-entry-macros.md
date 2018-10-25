@@ -48,6 +48,7 @@ Enters interfaces into the COM interface map.
 ```
 COM_INTERFACE_ENTRY( x )
 ```
+
 ### Parameters
 
 *x*<br/>
@@ -66,6 +67,7 @@ BEGIN_COM_MAP(CThisExample)
    COM_INTERFACE_ENTRY(ISupportErrorInfo)
 END_COM_MAP()
 ```
+
 ### Requirements
 
 **Header:** atlcom.h

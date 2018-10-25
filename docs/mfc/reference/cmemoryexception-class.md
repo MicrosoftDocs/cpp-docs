@@ -67,5 +67,3 @@ Do not use this constructor directly, but rather call the global function [AfxTh
 [CException Class](cexception-class.md)<br/>
 [Hierarchy Chart](../hierarchy-chart.md)
 
-
-

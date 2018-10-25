@@ -14,9 +14,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # Use ODBC to Work with Other Users
 
 Use ODBC in environments where multiple users are working with the same ODBC database.  
-  
+
 ## In This Section  
-  
+
 ## See Also  
 
 [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

@@ -85,7 +85,6 @@ BOOL Create(
     DWORD dwTabbedStyle= AFX_CBRS_REGULAR_TABS,
     DWORD dwControlBarStyle=AFX_DEFAULT_DOCKING_PANE_STYLE);
 
-
 BOOL Create(
     LPCTSTR lpszWindowName,
     CWnd* pParentWnd,
@@ -94,13 +93,11 @@ BOOL Create(
     UINT nStyle,
     UINT nID);
 
-
 BOOL Create(
     CWnd* pParentWnd,
     LPCTSTR lpszTemplateName,
     UINT nStyle,
     UINT nID);
-
 
 BOOL Create(
     CWnd* pParentWnd,
@@ -204,6 +201,4 @@ This method supports the [COccManager](../../mfc/reference/coccmanager-class.md)
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
 [CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
 [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles)
-
-
 

@@ -219,7 +219,6 @@ virtual void AddTab(
     UINT uiImageId = (UINT)-1,,
     BOOL bDetachable = TRUE);
 
-
 virtual void AddTab(
     CWnd* pTabWnd,
     UINT uiResTabLabel,
@@ -250,7 +249,6 @@ If *pTabWnd* points to an object that is not derived from the [CDockablePane Cla
 
 ##  <a name="applyrestoredtabinfo"></a>  CMFCBaseTabCtrl::ApplyRestoredTabInfo
 
-
 ```
 virtual void ApplyRestoredTabInfo(BOOL bUseTabIndexes = FALSE);
 ```
@@ -262,7 +260,6 @@ virtual void ApplyRestoredTabInfo(BOOL bUseTabIndexes = FALSE);
 ### Remarks
 
 ##  <a name="autodestroywindow"></a>  CMFCBaseTabCtrl::AutoDestroyWindow
-
 
 ```
 void AutoDestroyWindow(BOOL bAutoDestroy = TRUE);
@@ -276,7 +273,6 @@ void AutoDestroyWindow(BOOL bAutoDestroy = TRUE);
 
 ##  <a name="calcrectedit"></a>  CMFCBaseTabCtrl::CalcRectEdit
 
-
 ```
 virtual void CalcRectEdit(CRect& rectEdit);
 ```
@@ -289,7 +285,6 @@ virtual void CalcRectEdit(CRect& rectEdit);
 
 ##  <a name="cleanup"></a>  CMFCBaseTabCtrl::CleanUp
 
-
 ```
 virtual void CleanUp();
 ```
@@ -297,7 +292,6 @@ virtual void CleanUp();
 ### Remarks
 
 ##  <a name="clearimagelist"></a>  CMFCBaseTabCtrl::ClearImageList
-
 
 ```
 virtual void ClearImageList();
@@ -370,7 +364,6 @@ Nonzero if successful; otherwise 0.
 If the tab specified by *nTabNum* is non-detachable, this function fails and returns FALSE.
 
 ##  <a name="enableactivatelastactive"></a>  CMFCBaseTabCtrl::EnableActivateLastActive
-
 
 ```
 void EnableActivateLastActive(BOOL bLastActive = TRUE);
@@ -507,7 +500,6 @@ By default, this method is not supported by the `CMFCBaseTabCtrl Class`. You sho
 
 ##  <a name="enterdragmode"></a>  CMFCBaseTabCtrl::EnterDragMode
 
-
 ```
 void EnterDragMode();
 ```
@@ -537,7 +529,6 @@ In the `CMFCBaseTabCtrl` class, this method is a pure virtual function: you must
 
 ##  <a name="firechangeactivetab"></a>  CMFCBaseTabCtrl::FireChangeActiveTab
 
-
 ```
 virtual void FireChangeActiveTab(int nNewTab);
 ```
@@ -549,7 +540,6 @@ virtual void FireChangeActiveTab(int nNewTab);
 ### Remarks
 
 ##  <a name="firechangingactivetab"></a>  CMFCBaseTabCtrl::FireChangingActiveTab
-
 
 ```
 virtual BOOL FireChangingActiveTab(int nNewTab);
@@ -642,7 +632,6 @@ Retrieves a pointer to the first visible tab.
 ```
 virtual CWnd* GetFirstVisibleTab(int& iTabNum);
 
-
 virtual CWnd* GetFirstVisibleTab(
     int iStartFrom,
     int& iTabNum);
@@ -668,7 +657,6 @@ If *iStartFrom* is larger than or equal to the number of tabs in the tab control
 
 ##  <a name="getfirstvisibletabnum"></a>  CMFCBaseTabCtrl::GetFirstVisibleTabNum
 
-
 ```
 virtual int GetFirstVisibleTabNum() const;
 ```
@@ -691,7 +679,6 @@ The zero-based index of the highlighted tab.
 
 ##  <a name="getimagelist"></a>  CMFCBaseTabCtrl::GetImageList
 
-
 ```
 virtual const CImageList* GetImageList() const;
 ```
@@ -702,7 +689,6 @@ virtual const CImageList* GetImageList() const;
 
 ##  <a name="getimagesize"></a>  CMFCBaseTabCtrl::GetImageSize
 
-
 ```
 virtual CSize GetImageSize() const;
 ```
@@ -712,7 +698,6 @@ virtual CSize GetImageSize() const;
 ### Remarks
 
 ##  <a name="getlastvisibletab"></a>  CMFCBaseTabCtrl::GetLastVisibleTab
-
 
 ```
 virtual CWnd* GetLastVisibleTab(int& iTabNum);
@@ -743,7 +728,6 @@ The location of the tab area.
 Possible tab area location values are LOCATION_BOTTOM and LOCATION_TOP.
 
 ##  <a name="getmaxwindowsize"></a>  CMFCBaseTabCtrl::GetMaxWindowSize
-
 
 ```
 virtual CSize GetMaxWindowSize() const;
@@ -833,7 +817,6 @@ The tab IDs are assigned automatically when tabs are added to a tab control.
 
 ##  <a name="gettabclosebutton"></a>  CMFCBaseTabCtrl::GetTabCloseButton
 
-
 ```
 CRect GetTabCloseButton() const;
 ```
@@ -877,7 +860,6 @@ virtual int GetTabFromPoint(CPoint& pt) const;
 The index of the tab that contains *pt*; -1 if no tab contains *pt*.
 
 ##  <a name="gettabfullwidth"></a>  CMFCBaseTabCtrl::GetTabFullWidth
-
 
 ```
 virtual int GetTabFullWidth(int iTab) const;
@@ -998,7 +980,6 @@ TRUE if successful; FALSE if the tab index is invalid.
 
 ##  <a name="gettabsheight"></a>  CMFCBaseTabCtrl::GetTabsHeight
 
-
 ```
 virtual int GetTabsHeight() const;
 ```
@@ -1020,7 +1001,6 @@ virtual int GetTabsNum() const;
 The number of tabs in the tab control.
 
 ##  <a name="gettabsrect"></a>  CMFCBaseTabCtrl::GetTabsRect
-
 
 ```
 virtual void GetTabsRect(CRect& rect) const;
@@ -1121,7 +1101,6 @@ The number of visible tabs.
 
 ##  <a name="hasimage"></a>  CMFCBaseTabCtrl::HasImage
 
-
 ```
 virtual BOOL HasImage(int iTab) const;
 ```
@@ -1163,7 +1142,6 @@ Virtual void InsertTab(
     UINT uiImageId = (UINT)-1,
     BOOL bDetachable = TRUE);
 
-
 virtual void InsertTab(
     CWnd* pNewWnd,
     UINT uiResTabLabel,
@@ -1198,7 +1176,6 @@ If the object indicated by *pNewWnd* is not derived from the [CDockablePane Clas
 
 ##  <a name="invalidatetab"></a>  CMFCBaseTabCtrl::InvalidateTab
 
-
 ```
 void InvalidateTab(int iTab);
 ```
@@ -1210,7 +1187,6 @@ void InvalidateTab(int iTab);
 ### Remarks
 
 ##  <a name="isactivetabclosebutton"></a>  CMFCBaseTabCtrl::IsActiveTabCloseButton
-
 
 ```
 virtual BOOL IsActiveTabCloseButton() const;
@@ -1238,7 +1214,6 @@ You can enable or disable the autocolor mode by using the [CMFCBaseTabCtrl::Enab
 
 ##  <a name="isautodestroywindow"></a>  CMFCBaseTabCtrl::IsAutoDestroyWindow
 
-
 ```
 BOOL IsAutoDestroyWindow() const;
 ```
@@ -1248,7 +1223,6 @@ BOOL IsAutoDestroyWindow() const;
 ### Remarks
 
 ##  <a name="iscolored"></a>  CMFCBaseTabCtrl::IsColored
-
 
 ```
 virtual BOOL IsColored() const;
@@ -1260,7 +1234,6 @@ virtual BOOL IsColored() const;
 
 ##  <a name="isdialogcontrol"></a>  CMFCBaseTabCtrl::IsDialogControl
 
-
 ```
 BOOL IsDialogControl() const;
 ```
@@ -1270,7 +1243,6 @@ BOOL IsDialogControl() const;
 ### Remarks
 
 ##  <a name="isdrawnoprefix"></a>  CMFCBaseTabCtrl::IsDrawNoPrefix
-
 
 ```
 BOOL IsDrawNoPrefix() const;
@@ -1300,7 +1272,6 @@ Tab controls that use the Outlook style cannot be rendered with flat frames. Thi
 
 ##  <a name="isflattab"></a>  CMFCBaseTabCtrl::IsFlatTab
 
-
 ```
 virtual BOOL IsFlatTab() const;
 ```
@@ -1326,7 +1297,6 @@ TRUE if the tab control hides the tab label when it has one tab; otherwise FALSE
 Use the method [CMFCBaseTabCtrl::HideSingleTab](#hidesingletab) to enable hiding the tab label when there is only one tab.
 
 ##  <a name="isiconadded"></a>  CMFCBaseTabCtrl::IsIconAdded
-
 
 ```
 BOOL IsIconAdded(
@@ -1362,7 +1332,6 @@ You can enable or disable in-place editing by calling the method [CMFCBaseTabCtr
 
 ##  <a name="isleftrightrounded"></a>  CMFCBaseTabCtrl::IsLeftRightRounded
 
-
 ```
 virtual BOOL IsLeftRightRounded() const;
 ```
@@ -1372,7 +1341,6 @@ virtual BOOL IsLeftRightRounded() const;
 ### Remarks
 
 ##  <a name="ismditab"></a>  CMFCBaseTabCtrl::IsMDITab
-
 
 ```
 BOOL IsMDITab() const;
@@ -1423,7 +1391,6 @@ In the `CMFCBaseTabCtrl Class`, this method is a pure virtual function and has n
 
 ##  <a name="istabclosebuttonhighlighted"></a>  CMFCBaseTabCtrl::IsTabCloseButtonHighlighted
 
-
 ```
 BOOL IsTabCloseButtonHighlighted() const;
 ```
@@ -1433,7 +1400,6 @@ BOOL IsTabCloseButtonHighlighted() const;
 ### Remarks
 
 ##  <a name="istabclosebuttonpressed"></a>  CMFCBaseTabCtrl::IsTabCloseButtonPressed
-
 
 ```
 BOOL IsTabCloseButtonPressed() const;
@@ -1520,7 +1486,6 @@ Nonzero if the specified tab is visible; otherwise 0.
 
 ##  <a name="isvs2005style"></a>  CMFCBaseTabCtrl::IsVS2005Style
 
-
 ```
 virtual BOOL IsVS2005Style() const;
 ```
@@ -1555,7 +1520,6 @@ By default, this member is FALSE.
 
 ##  <a name="movetab"></a>  CMFCBaseTabCtrl::MoveTab
 
-
 ```
 virtual void MoveTab(
     int nSource,
@@ -1584,7 +1548,6 @@ By default, this method does nothing. Override this method to execute custom cod
 
 ##  <a name="ondrop"></a>  CMFCBaseTabCtrl::OnDrop
 
-
 ```
 virtual BOOL OnDrop(
     COleDataObject*,
@@ -1605,7 +1568,6 @@ virtual BOOL OnDrop(
 ### Remarks
 
 ##  <a name="ondragover"></a>  CMFCBaseTabCtrl::OnDragOver
-
 
 ```
 virtual DROPEFFECT OnDragOver(
@@ -1628,7 +1590,6 @@ virtual DROPEFFECT OnDragOver(
 
 ##  <a name="ondragleave"></a>  CMFCBaseTabCtrl::OnDragLeave
 
-
 ```
 virtual void OnDragLeave();
 ```
@@ -1636,7 +1597,6 @@ virtual void OnDragLeave();
 ### Remarks
 
 ##  <a name="ondragenter"></a>  CMFCBaseTabCtrl::OnDragEnter
-
 
 ```
 virtual DROPEFFECT OnDragEnter(
@@ -1659,7 +1619,6 @@ virtual DROPEFFECT OnDragEnter(
 
 ##  <a name="onrenametab"></a>  CMFCBaseTabCtrl::OnRenameTab
 
-
 ```
 virtual BOOL OnRenameTab(int, CString&);
 ```
@@ -1675,7 +1634,6 @@ virtual BOOL OnRenameTab(int, CString&);
 ### Remarks
 
 ##  <a name="pretranslatemessage"></a>  CMFCBaseTabCtrl::PreTranslateMessage
-
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -1741,7 +1699,6 @@ If [CMFCBaseTabCtrl::m_bAutoDestroyWindow](#m_bautodestroywindow) is TRUE, `Remo
 
 ##  <a name="renametab"></a>  CMFCBaseTabCtrl::RenameTab
 
-
 ```
 virtual BOOL RenameTab();
 ```
@@ -1759,7 +1716,6 @@ void ResetImageList();
 ```
 
 ##  <a name="serialize"></a>  CMFCBaseTabCtrl::Serialize
-
 
 ```
 virtual void Serialize(CArchive& ar);
@@ -1925,7 +1881,6 @@ This method recalculates the height of the tab according to the image and text s
 
 ##  <a name="setlocation"></a>  CMFCBaseTabCtrl::SetLocation
 
-
 ```
 virtual void SetLocation(Location location);
 ```
@@ -2074,7 +2029,6 @@ Nonzero if successful; 0 otherwise.
 
 ##  <a name="settabsheight"></a>  CMFCBaseTabCtrl::SetTabsHeight
 
-
 ```
 virtual void SetTabsHeight();
 ```
@@ -2160,7 +2114,6 @@ The parameter *bActivate* only applies if *bShow* is TRUE. If *bActivate* is TRU
 
 ##  <a name="startrenametab"></a>  CMFCBaseTabCtrl::StartRenameTab
 
-
 ```
 virtual BOOL StartRenameTab(int iTab);
 ```
@@ -2174,7 +2127,6 @@ virtual BOOL StartRenameTab(int iTab);
 ### Remarks
 
 ##  <a name="swaptabs"></a>  CMFCBaseTabCtrl::SwapTabs
-
 
 ```
 virtual void SwapTabs(

@@ -106,7 +106,6 @@ int Add(
     CBitmap* pbmImage,
     CBitmap* pbmMask);
 
-
 int Add(
     CBitmap* pbmImage,
     COLORREF crMask);
@@ -209,7 +208,6 @@ BOOL Copy(
     int iSrc,
     UINT uFlags = ILCF_MOVE);
 
-
 BOOL Copy(
     int iDst,
     CImageList* pSrc,
@@ -256,20 +254,17 @@ BOOL Create(
     int nInitial,
     int nGrow);
 
-
 BOOL Create(
     UINT nBitmapID,
     int cx,
     int nGrow,
     COLORREF crMask);
 
-
 BOOL Create(
     LPCTSTR lpszBitmapID,
     int cx,
     int nGrow,
     COLORREF crMask);
-
 
 BOOL Create(
     CImageList& imagelist1,
@@ -599,7 +594,6 @@ Call this member function to draw an image from an image list.
 
 ```
 BOOL DrawIndirect(IMAGELISTDRAWPARAMS* pimldp);
-
 
 BOOL DrawIndirect(
     CDC* pDC,
@@ -967,7 +961,6 @@ BOOL Replace(
     int nImage,
     CBitmap* pbmImage,
     CBitmap* pbmMask);
-
 
 int Replace(
     int nImage,

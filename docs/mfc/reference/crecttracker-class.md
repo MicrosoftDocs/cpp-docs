@@ -108,7 +108,6 @@ Creates and initializes a `CRectTracker` object.
 ```
 CRectTracker();
 
-
 CRectTracker(
     LPCRECT lpSrcRect,
     UINT nStyle);

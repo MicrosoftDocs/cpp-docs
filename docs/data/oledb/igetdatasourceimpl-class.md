@@ -15,14 +15,14 @@ ms.workload: ["cplusplus", "data-storage"]
 # IGetDataSourceImpl Class
 
 Provides an implementation of the [IGetDataSource](/previous-versions/windows/desktop/ms709721) object.  
-  
+
 ## Syntax
 
 ```cpp
-template <class T>  
-class ATL_NO_VTABLE IGetDataSourceImpl : public IGetDataSource  
+template <class T>
+class ATL_NO_VTABLE IGetDataSourceImpl : public IGetDataSource
 ```  
-  
+
 ### Parameters  
 
 *T*<br/>
@@ -31,15 +31,15 @@ Your class, derived from `IGetDataSourceImpl`.
 ## Requirements  
 
 **Header:** atldb.h  
-  
+
 ## Members  
-  
+
 ### Interface Methods  
-  
-|||  
-|-|-|  
+
+|||
+|-|-|
 |[GetDataSource](#getdatasource)|Returns an interface pointer on the data source object that created the session.|  
-  
+
 ## Remarks  
 
 This is a mandatory interface on the session for obtaining an interface pointer to the data source object.  
@@ -47,22 +47,22 @@ This is a mandatory interface on the session for obtaining an interface pointer 
 ## <a name="getdatasource"></a> IGetDataSourceImpl::GetDataSource
 
 Returns an interface pointer on the data source object that created the session.  
-  
+
 ### Syntax  
-  
+
 ```cpp
 STDMETHOD(GetDataSource)(REFIID riid,   
-   IUnknown ** ppDataSource);  
+   IUnknown ** ppDataSource);
 ```  
-  
+
 #### Parameters  
 
 See [IGetDataSource::GetDataSource](/previous-versions/windows/desktop/ms725443) in the *OLE DB Programmer's Reference*.  
-  
+
 ### Remarks  
 
 Useful if you need to access properties in the data source object.  
-  
+
 ## See Also  
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
