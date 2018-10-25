@@ -22,7 +22,7 @@ You can use the Visual Studio IDE in Windows to create, edit and debug C++ proje
 
    ![Visual C++ for Linux Development workload](media/linuxworkload.png)
 
-1. If you use CMake or you are targeting IoT or embedded platforms, go to the **Installation details** pane on the right, under **Linux development with C++**, expand **Optional Components** and choose the components you need. 
+1. If you use CMake or you are targeting IoT or embedded platforms, go to the **Installation details** pane on the right, under **Linux development with C++**, expand **Optional Components** and choose the components you need.
 
 1. Click **Modify** to continue with the installation.
 

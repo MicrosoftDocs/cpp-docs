@@ -84,9 +84,9 @@ If you add a new record, the recordset operates as an edit buffer to build up th
 
 1. `AddNew` or `Edit` prepares the fields in the edit buffer so RFX can detect changed field data members.
 
-     Because a new record has no previous values to compare new ones with, `AddNew` sets the value of each field data member to a PSEUDO_NULL value. Later, when you call `Update`, RFX compares each data member's value with the PSEUDO_NULL value. If there is a difference, the data member has been set. (PSEUDO_NULL is not the same as a record column with a true Null value nor is either of these the same as C++ NULL.)
+   Because a new record has no previous values to compare new ones with, `AddNew` sets the value of each field data member to a PSEUDO_NULL value. Later, when you call `Update`, RFX compares each data member's value with the PSEUDO_NULL value. If there is a difference, the data member has been set. (PSEUDO_NULL is not the same as a record column with a true Null value nor is either of these the same as C++ NULL.)
 
-     Unlike the `Update` call for `AddNew`, the `Update` call for `Edit` compares updated values with previously stored values rather than using PSEUDO_NULL. The difference is that `AddNew` has no previously stored values for comparison.
+   Unlike the `Update` call for `AddNew`, the `Update` call for `Edit` compares updated values with previously stored values rather than using PSEUDO_NULL. The difference is that `AddNew` has no previously stored values for comparison.
 
 1. You directly set the values of field data members whose values you want to edit or that you want filled for a new record. This can include calling `SetFieldNull`.
 

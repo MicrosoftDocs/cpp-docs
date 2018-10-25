@@ -87,7 +87,7 @@ TRUE if the object is a snap-in extension; otherwise FALSE.
 This method implements the Win32 function [IExtendContextMenu::AddMenuItems](https://msdn.microsoft.com/library/aa814841).
 
 ```
-AddMenuItems(  
+AddMenuItems(
     LPCONTEXTMENUCALLBACK piCallback,
     long* pInsertionAllowed,
     DATA_OBJECT_TYPES type);
@@ -149,7 +149,7 @@ Command(long lCommandID, DATA_OBJECT_TYPES type);
 This method implements the Win32 function [IExtendPropertySheet::CreatePropertyPages](https://msdn.microsoft.com/library/aa814846).
 
 ```
-CreatePropertyPages(  
+CreatePropertyPages(
     LPPROPERTYSHEETCALLBACK lpProvider,
     long handle,
     IUnknown* pUnk,
@@ -361,7 +361,7 @@ QueryPagesFor(DATA_OBJECT_TYPES type);
 Call this function to modify the menu insertion flags, specified by *pInsertionAllowed*, for the snap-in object.
 
 ```
-void SetMenuInsertionFlags(  
+void SetMenuInsertionFlags(
     bool bBeforeInsertion,
     long* pInsertionAllowed);
 ```
@@ -393,7 +393,7 @@ You should not attempt to set bits in *pInsertionAllowed* that were originally c
 Call this function to modify any toolbar button styles, of the snap-in object, before the toolbar is created.
 
 ```
-void SetToolbarButtonInfo(  
+void SetToolbarButtonInfo(
     UINT id,
     BYTE* fsState,
     BYTE* fsType);
@@ -437,7 +437,7 @@ void SetToolbarButtonInfo(
 Call this function to modify a menu item before it is inserted into the context menu of the snap-in object.
 
 ```
-void UpdateMenuState(  
+void UpdateMenuState(
     UINT id,
     LPTSTR pBuf,
     UINT* flags);

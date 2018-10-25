@@ -50,14 +50,14 @@ int main()
     // Pop the items off the Stack.
     // The item is returned as an Object, so a cast is
     // necessary to convert it to its proper type.
-    while (s->Count> 0)  
+    while (s->Count> 0)
     {
         Object ^o = s->Pop();
-        if (o->GetType() == Type::GetType("System.String"))  
+        if (o->GetType() == Type::GetType("System.String"))
         {
             Console::WriteLine("Popped a String: {0}", (String ^)o);
         }
-        else if (o->GetType() == Type::GetType("System.Int32"))  
+        else if (o->GetType() == Type::GetType("System.Int32"))
         {
             Console::WriteLine("Popped an int: {0}", (int)o);
         }

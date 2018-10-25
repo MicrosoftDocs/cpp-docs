@@ -111,13 +111,13 @@ Rebuild the control. Make sure the PolyCtl.htm file is closed if it is still ope
     > For errors involving `ATL::CW2AEX`, in Script.Cpp, replace line `TRACE( "XActiveScriptSite::GetItemInfo( %s )\n", pszNameT );` with `TRACE( "XActiveScriptSite::GetItemInfo( %s )\n", pszNameT.m_psz );`, and line `TRACE( "Source Text: %s\n", COLE2CT( bstrSourceLineText ) );` with `TRACE( "Source Text: %s\n", bstrSourceLineText );`.<br/>
     > For errors involving `HMONITOR`, open StdAfx.h in the `TCProps` project and replace:
     > ```
-    > #ifndef WINVER  
-    > #define WINVER 0x0400   
+    > #ifndef WINVER
+    > #define WINVER 0x0400
     > #endif
     > ```
     > with
     > ```
-    > #ifndef WINVER  
+    > #ifndef WINVER
     > #define WINVER 0x0500
     > #define _WIN32_WINNT 0x0500
     > #endif

@@ -172,7 +172,7 @@ public:
    }
    // this line would be commented out from original file
    // __event __interface _ITestTestEvents;
-   DECLARE_PROTECT_FINAL_CONSTRUCT()  
+   DECLARE_PROTECT_FINAL_CONSTRUCT()
    HRESULT FinalConstruct() {
       return S_OK;
    }
@@ -211,7 +211,7 @@ HRESULT BeforeChange(::BSTR i1,::VARIANT_BOOL* i2) {
          DISPPARAMS disp = { rgvars, NULL, 2, 0 };
          VARIANT ret_val;
          hr = __ComInvokeEventHandler(pDispatch, 1, 1, &disp, &ret_val);
-         if (FAILED(hr))  
+         if (FAILED(hr))
             break;
       }
       pp++;

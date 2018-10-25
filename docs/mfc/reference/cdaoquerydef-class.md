@@ -164,7 +164,7 @@ You can modify the querydef if:
 
 - You have update permissions for the database.
 
-     This depends on whether you have implemented security features. MFC does not provide support for security; you must implement it yourself by calling DAO directly or by using Microsoft Access. See the topic "Permissions Property" in DAO Help.
+   This depends on whether you have implemented security features. MFC does not provide support for security; you must implement it yourself by calling DAO directly or by using Microsoft Access. See the topic "Permissions Property" in DAO Help.
 
 ##  <a name="cdaoquerydef"></a>  CDaoQueryDef::CDaoQueryDef
 

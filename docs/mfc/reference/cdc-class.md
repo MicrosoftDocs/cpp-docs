@@ -3129,7 +3129,7 @@ Points to an array of bytes where the vertex types are placed. Values are one of
 
 PT_BEZIERTO types always occur in sets of three. The point in the path immediately preceding them defines the starting point for the Bzier curve. The first two PT_BEZIERTO points are the control points, and the third PT_BEZIERTO point is the end point (if hard-coded).
 
-     A PT_LINETO or PT_BEZIERTO type may be combined with the following flag (by using the bitwise operator **OR**) to indicate that the corresponding point is the last point in a figure and that the figure should be closed:
+   A PT_LINETO or PT_BEZIERTO type may be combined with the following flag (by using the bitwise operator **OR**) to indicate that the corresponding point is the last point in a figure and that the figure should be closed:
 
 - PT_CLOSEFIGURE Specifies that the figure is automatically closed after the corresponding line or curve is drawn. The figure is closed by drawing a line from the line or curve endpoint to the point corresponding to the last PT_MOVETO.
 
@@ -4525,11 +4525,11 @@ Points to an array that specifies how each point in the *lpPoints* array is used
 
 PT_BEZIERTO types always occur in sets of three. The current position defines the starting point for the Bzier spline. The first two PT_BEZIERTO points are the control points, and the third PT_BEZIERTO point is the ending point. The ending point becomes the new current position. If there are not three consecutive PT_BEZIERTO points, an error results.
 
-     A PT_LINETO or PT_BEZIERTO type can be combined with the following constant by using the bitwise operator OR to indicate that the corresponding point is the last point in a figure and the figure is closed:
+   A PT_LINETO or PT_BEZIERTO type can be combined with the following constant by using the bitwise operator OR to indicate that the corresponding point is the last point in a figure and the figure is closed:
 
 - PT_CLOSEFIGURE Specifies that the figure is automatically closed after the PT_LINETO or PT_BEZIERTO type for this point is done. A line is drawn from this point to the most recent PT_MOVETO or `MoveTo` point.
 
-     This flag is combined with the PT_LINETO type for a line, or with the PT_BEZIERTO type of ending point for a Bzier spline, by using the bitwise **OR** operator. The current position is set to the ending point of the closing line.
+   This flag is combined with the PT_LINETO type for a line, or with the PT_BEZIERTO type of ending point for a Bzier spline, by using the bitwise **OR** operator. The current position is set to the ending point of the closing line.
 
 *nCount*<br/>
 Specifies the total number of points in the *lpPoints* array, the same as the number of bytes in the *lpTypes* array.

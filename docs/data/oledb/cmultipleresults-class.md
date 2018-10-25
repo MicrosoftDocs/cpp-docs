@@ -14,23 +14,23 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # CMultipleResults Class
 
-If you want a command to handle multiple result sets, use `CMultipleResults` for the `CCommand` template argument *TMultiple*.  
+If you want a command to handle multiple result sets, use `CMultipleResults` for the `CCommand` template argument *TMultiple*.
 
 ## Syntax
 
 ```cpp
 class CMultipleResults
-```  
+```
 
-## Remarks  
+## Remarks
 
-To handle multiple result sets, [CCommand](../../data/oledb/ccommand-class.md) must inherit from this class.  
+To handle multiple result sets, [CCommand](../../data/oledb/ccommand-class.md) must inherit from this class.
 
-## Requirements  
+## Requirements
 
-**Header:** atldbcli  
+**Header:** atldbcli
 
-## See Also  
+## See Also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

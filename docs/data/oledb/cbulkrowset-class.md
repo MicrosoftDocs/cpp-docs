@@ -14,27 +14,27 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # CBulkRowset Class
 
-Fetches and manipulates rows to work on data in bulk by retrieving multiple row handles with a single call.  
+Fetches and manipulates rows to work on data in bulk by retrieving multiple row handles with a single call.
 
 ## Syntax
 
 ```cpp
 template <class TAccessor>
 class CBulkRowset : public CRowset<TAccessor>
-```  
+```
 
-### Parameters  
+### Parameters
 
 *TAccessor*<br/>
-An accessor class.  
+An accessor class.
 
-## Requirements  
+## Requirements
 
-**Header:** atldbcli.h  
+**Header:** atldbcli.h
 
-## Members  
+## Members
 
-### Methods  
+### Methods
 
 |||
 |-|-|
@@ -47,182 +47,182 @@ An accessor class.
 |[MoveToBookmark](#movetobookmark)|Fetches the row marked by a bookmark or the row at a specified offset from that bookmark.|
 |[MoveToRatio](#movetoratio)|Fetches rows starting from a fractional position in the rowset.|
 |[ReleaseRows](#releaserows)|Sets the current row (`m_nCurrentRow`) to zero and releases all rows.|
-|[SetRows](#setrows)|Sets the number of row handles to be retrieved by one call.|  
+|[SetRows](#setrows)|Sets the number of row handles to be retrieved by one call.|
 
-## Example  
+## Example
 
-The following example demonstrates use of the `CBulkRowset` class.  
+The following example demonstrates use of the `CBulkRowset` class.
 
-[!code-cpp[NVC_OLEDB_Consumer#1](../../data/oledb/codesnippet/cpp/cbulkrowset-class_1.cpp)]  
+[!code-cpp[NVC_OLEDB_Consumer#1](../../data/oledb/codesnippet/cpp/cbulkrowset-class_1.cpp)]
 
 ## <a name="addrefrows"></a> CBulkRowset::AddRefRows
 
-Calls [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619) to increment the reference count for all rows currently retrieved from the bulk rowset.  
+Calls [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619) to increment the reference count for all rows currently retrieved from the bulk rowset.
 
-### Syntax  
+### Syntax
 
 ```cpp
 HRESULT AddRefRows() throw();
-```  
+```
 
-### Return Value  
+### Return Value
 
-A standard HRESULT. 
+A standard HRESULT.
 
 ## <a name="cbulkrowset"></a> CBulkRowset::CBulkRowset
 
-Creates a new `CBulkRowset` object and sets the default row count to 10.  
+Creates a new `CBulkRowset` object and sets the default row count to 10.
 
-### Syntax  
+### Syntax
 
 ```cpp
 CBulkRowset();
-```  
+```
 
 ## <a name="movefirst"></a> CBulkRowset::MoveFirst
 
-Retrieves the first row of data.  
+Retrieves the first row of data.
 
-### Syntax  
+### Syntax
 
 ```cpp
 HRESULT MoveFirst() throw();
-```  
+```
 
-### Return Value  
+### Return Value
 
 A standard HRESULT.
 
 ## <a name="movelast"></a> CBulkRowset::MoveLast
 
-Moves to the last row.  
+Moves to the last row.
 
-### Syntax  
+### Syntax
 
 ```cpp
 HRESULT MoveLast() throw();
-```  
+```
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
 ## <a name="movenext"></a> CBulkRowset::MoveNext
 
-Retrieves the next row of data.  
+Retrieves the next row of data.
 
-### Syntax  
+### Syntax
 
 ```cpp
 HRESULT MoveNext() throw();
-```  
+```
 
-### Return Value  
+### Return Value
 
-A standard HRESULT. When the end of the rowset has been reached, returns DB_S_ENDOFROWSET. 
+A standard HRESULT. When the end of the rowset has been reached, returns DB_S_ENDOFROWSET.
 
 ## <a name="moveprev"></a> CBulkRowset::MovePrev
 
-Moves to the previous row.  
+Moves to the previous row.
 
-### Syntax  
+### Syntax
 
 ```cpp
 HRESULT MovePrev() throw();
-```  
+```
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
 ## <a name="movetobookmark"></a> CBulkRowset::MoveToBookmark
 
-Fetches the row marked by a bookmark or the row at a specified offset (*lSkip*) from that bookmark.  
+Fetches the row marked by a bookmark or the row at a specified offset (*lSkip*) from that bookmark.
 
-### Syntax  
+### Syntax
 
 ```cpp
-HRESULT MoveToBookmark(const CBookmarkBase& bookmark, 
+HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
    DBCOUNTITEM lSkip = 0) throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *bookmark*<br/>
-[in] A bookmark marking the location from which you want to fetch data.  
+[in] A bookmark marking the location from which you want to fetch data.
 
 *lSkip*<br/>
-[in] The number count of rows from the bookmark to the target row. If *lSkip* is zero, the first row fetched is the bookmarked row. If *lSkip* is 1, the first row fetched is the row after the bookmarked row. If *lSkip* is -1, the first row fetched is the row before the bookmarked row.  
+[in] The number count of rows from the bookmark to the target row. If *lSkip* is zero, the first row fetched is the bookmarked row. If *lSkip* is 1, the first row fetched is the row after the bookmarked row. If *lSkip* is -1, the first row fetched is the row before the bookmarked row.
 
-### Return Value  
+### Return Value
 
-See [IRowset::GetData](/previous-versions/windows/desktop/ms716988) in the *OLE DB Programmer's Reference*. 
+See [IRowset::GetData](/previous-versions/windows/desktop/ms716988) in the *OLE DB Programmer's Reference*.
 
 ## <a name="movetoratio"></a> CBulkRowset::MoveToRatio
 
-Fetches rows starting from a fractional position in the rowset.  
+Fetches rows starting from a fractional position in the rowset.
 
-### Syntax  
+### Syntax
 
 ```cpp
-HRESULT MoveToRatio(DBCOUNTITEM nNumerator, 
+HRESULT MoveToRatio(DBCOUNTITEM nNumerator,
    DBCOUNTITEM nDenominator)throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *nNumerator*<br/>
-[in] The numerator used to determine the fractional position from which to fetch data.  
+[in] The numerator used to determine the fractional position from which to fetch data.
 
 *nDenominator*<br/>
-[in] The denominator used to determine the fractional position from which to fetch data.  
+[in] The denominator used to determine the fractional position from which to fetch data.
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-`MoveToRatio` fetches the rows roughly according to the following formula:  
+`MoveToRatio` fetches the rows roughly according to the following formula:
 
-`(nNumerator *  RowsetSize ) / nDenominator`  
+`(nNumerator *  RowsetSize ) / nDenominator`
 
-Where `RowsetSize` is the size of the rowset, measured in rows. The accuracy of this formula depends on the specific provider. For details, see [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602) in the *OLE DB Programmer's Reference*.   
+Where `RowsetSize` is the size of the rowset, measured in rows. The accuracy of this formula depends on the specific provider. For details, see [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602) in the *OLE DB Programmer's Reference*.
 
 ## <a name="releaserows"></a> CBulkRowset::ReleaseRows
 
-Calls [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771) to decrement the reference count for all rows currently retrieved from the bulk rowset.  
+Calls [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771) to decrement the reference count for all rows currently retrieved from the bulk rowset.
 
-### Syntax  
+### Syntax
 
 ```cpp
 HRESULT ReleaseRows() throw();
-```  
+```
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
 ## <a name="setrows"></a> CBulkRowset::SetRows
 
-Sets the number of row handles retrieved by each call.  
+Sets the number of row handles retrieved by each call.
 
-### Syntax  
+### Syntax
 
 ```cpp
 void SetRows(DBROWCOUNT nRows) throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *nRows*<br/>
-[in] The new size of the rowset (number of rows).  
+[in] The new size of the rowset (number of rows).
 
-### Remarks  
+### Remarks
 
 If you call this function, it must be before the rowset is opened.
 
-## See Also  
+## See Also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

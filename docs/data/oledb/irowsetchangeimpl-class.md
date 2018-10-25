@@ -14,148 +14,148 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetChangeImpl Class
 
-The OLE DB Templates implementation of the [IRowsetChange](/previous-versions/windows/desktop/ms715790) interface in the OLE DB specification.  
+The OLE DB Templates implementation of the [IRowsetChange](/previous-versions/windows/desktop/ms715790) interface in the OLE DB specification.
 
 ## Syntax
 
 ```cpp
-template <  
-   class T,   
-   class Storage,   
-   class BaseInterface = IRowsetChange,   
-   class RowClass = CSimpleRow,   
+template <
+   class T,
+   class Storage,
+   class BaseInterface = IRowsetChange,
+   class RowClass = CSimpleRow,
    class MapClass = CAtlMap <RowClass::KeyType, RowClass*>>
 class ATL_NO_VTABLE IRowsetChangeImpl : public BaseInterface
-```  
+```
 
-### Parameters  
+### Parameters
 
 *T*<br/>
-A class derived from `IRowsetChangeImpl`.  
+A class derived from `IRowsetChangeImpl`.
 
 *Storage*<br/>
-The user record.  
+The user record.
 
 *BaseInterface*<br/>
-The base class for the interface, such as `IRowsetChange`.  
+The base class for the interface, such as `IRowsetChange`.
 
 *RowClass*<br/>
-The storage unit for the row handle.  
+The storage unit for the row handle.
 
 *MapClass*<br/>
-The storage unit for all row handles held by the provider.  
+The storage unit for all row handles held by the provider.
 
-## Requirements  
+## Requirements
 
-**Header:** atldb.h  
+**Header:** atldb.h
 
-## Members  
+## Members
 
-### Interface Methods (Used with IRowsetChange)  
+### Interface Methods (Used with IRowsetChange)
 
 |||
 |-|-|
 |[DeleteRows](#deleterows)|Deletes rows from the rowset.|
 |[InsertRow](#insertrow)|Inserts a row into the rowset.|
-|[SetData](#setdata)|Sets data values in one or more columns.|  
+|[SetData](#setdata)|Sets data values in one or more columns.|
 
-### Implementation Method (Callback)  
+### Implementation Method (Callback)
 
 |||
 |-|-|
-|[FlushData](#flushdata)|Overidden by provider to commit data to its store.|  
+|[FlushData](#flushdata)|Overidden by provider to commit data to its store.|
 
-## Remarks  
+## Remarks
 
-This interface is responsible for immediate write operations to a data store. "Immediate" means that when the end user (the person using the consumer) makes any changes, those changes are immediately transmitted to the data store (and cannot be undone).  
+This interface is responsible for immediate write operations to a data store. "Immediate" means that when the end user (the person using the consumer) makes any changes, those changes are immediately transmitted to the data store (and cannot be undone).
 
-`IRowsetChangeImpl` implements the OLE DB `IRowsetChange` interface, which enables updating of values of columns in existing rows, deleting rows, and inserting new rows.  
+`IRowsetChangeImpl` implements the OLE DB `IRowsetChange` interface, which enables updating of values of columns in existing rows, deleting rows, and inserting new rows.
 
-The OLE DB Templates implementation supports all the base methods (`SetData`, `InsertRow`, and `DeleteRows`).  
+The OLE DB Templates implementation supports all the base methods (`SetData`, `InsertRow`, and `DeleteRows`).
 
 > [!IMPORTANT]
->  It is strongly recommended that you read the following documentation BEFORE attempting to implement your provider:  
+>  It is strongly recommended that you read the following documentation BEFORE attempting to implement your provider:
 
-- [Creating an Updatable Provider](../../data/oledb/creating-an-updatable-provider.md)  
+- [Creating an Updatable Provider](../../data/oledb/creating-an-updatable-provider.md)
 
-- Chapter 6 of the *OLE DB Programmer's Reference*  
+- Chapter 6 of the *OLE DB Programmer's Reference*
 
-- Also see how the `RUpdateRowset` class is used in the [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) sample.  
+- Also see how the `RUpdateRowset` class is used in the [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) sample.
 
 ## <a name="deleterows"></a> IRowsetChangeImpl::DeleteRows
 
-Deletes rows from the rowset.  
+Deletes rows from the rowset.
 
-### Syntax  
+### Syntax
 
 ```cpp
-STDMETHOD (DeleteRows )(HCHAPTER /* hReserved */,  
-   DBCOUNTITEM cRows,  
-   const HROW rghRows[],  
+STDMETHOD (DeleteRows )(HCHAPTER /* hReserved */,
+   DBCOUNTITEM cRows,
+   const HROW rghRows[],
    DBROWSTATUS rgRowStatus[]);
-```  
+```
 
-#### Parameters  
+#### Parameters
 
-See [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v%3dvs.85)) in the *OLE DB Programmer's Reference*. 
+See [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v%3dvs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="insertrow"></a> IRowsetChangeImpl::InsertRow
 
-Creates and initializes a new row in the rowset.  
+Creates and initializes a new row in the rowset.
 
-### Syntax  
+### Syntax
 
 ```cpp
-STDMETHOD (InsertRow )(HCHAPTER /* hReserved */,  
-   HACCESSOR hAccessor,  
-   void* pData,  
+STDMETHOD (InsertRow )(HCHAPTER /* hReserved */,
+   HACCESSOR hAccessor,
+   void* pData,
    HROW* phRow);
-```  
+```
 
-#### Parameters  
+#### Parameters
 
-See [IRowsetChange::InsertRow](/previous-versions/windows/desktop/ms716921) in the *OLE DB Programmer's Reference*. 
+See [IRowsetChange::InsertRow](/previous-versions/windows/desktop/ms716921) in the *OLE DB Programmer's Reference*.
 
 ## <a name="setdata"></a> IRowsetChangeImpl::SetData
 
-Sets data values in one or more columns.  
+Sets data values in one or more columns.
 
-### Syntax  
+### Syntax
 
 ```cpp
-STDMETHOD (SetData )(HROW hRow,  
-   HACCESSOR hAccessor,  
+STDMETHOD (SetData )(HROW hRow,
+   HACCESSOR hAccessor,
    void* pSrcData);
-```  
+```
 
-#### Parameters  
+#### Parameters
 
-See [IRowsetChange::SetData](/previous-versions/windows/desktop/ms721232) in the *OLE DB Programmer's Reference*. 
+See [IRowsetChange::SetData](/previous-versions/windows/desktop/ms721232) in the *OLE DB Programmer's Reference*.
 
 ## <a name="flushdata"></a> IRowsetChangeImpl::FlushData
 
-Overidden by provider to commit data to its store.  
+Overidden by provider to commit data to its store.
 
-### Syntax  
+### Syntax
 
 ```cpp
-HRESULT FlushData(HROW hRowToFlush,  
+HRESULT FlushData(HROW hRowToFlush,
    HACCESSOR hAccessorToFlush);
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *hRowToFlush*<br/>
-[in] Handle to the rows for the data. The type of this row is determined from the *RowClass* template argument of the `IRowsetImpl` class (`CSimpleRow` by default).  
+[in] Handle to the rows for the data. The type of this row is determined from the *RowClass* template argument of the `IRowsetImpl` class (`CSimpleRow` by default).
 
 *hAccessorToFlush*<br/>
-[in] Handle to the accessor, which contains binding information and type information in its `PROVIDER_MAP` (see [IAccessorImpl](../../data/oledb/iaccessorimpl-class.md)).  
+[in] Handle to the accessor, which contains binding information and type information in its `PROVIDER_MAP` (see [IAccessorImpl](../../data/oledb/iaccessorimpl-class.md)).
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-## See Also  
+## See Also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

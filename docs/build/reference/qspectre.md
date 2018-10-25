@@ -25,7 +25,7 @@ The **/Qspectre** option is available in Visual Studio 2017 version 15.5.5 and l
 
 The **/Qspectre** option is off by default.
 
-In its initial release, the **/Qspectre** option only worked on optimized code. In Visual Studio 2017 version 15.7 and later, the **/Qspectre** option is supported at all optimization levels. 
+In its initial release, the **/Qspectre** option only worked on optimized code. In Visual Studio 2017 version 15.7 and later, the **/Qspectre** option is supported at all optimization levels.
 
 Microsoft Visual C++ libraries are also available in versions with Spectre mitigation. The Spectre-mitigated libraries for Visual Studio 2017 can be downloaded in the Visual Studio Installer. They are found in the **Individual Components** tab under **Compilers, build tools, and runtimes**, and have "Libs for Spectre" in the name. Both DLL and static runtime libraries with mitigation enabled are available for a subset of the Visual C++ runtimes: VC++ start-up code, vcruntime140, msvcp140, concrt140, and vcamp140. The DLLs are supported for application-local deployment only; the contents of the Visual C++ 2017 Runtime Libraries Redistributable have not been modified. You can also install Spectre-mitigated libraries for MFC and ATL, found in the **Individual Components** tab under **SDKs, libraries, and frameworks**.
 

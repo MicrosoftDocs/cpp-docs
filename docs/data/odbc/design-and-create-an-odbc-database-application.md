@@ -13,17 +13,17 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Design and Create an ODBC Database Application
 
-These topics help you design and set up your ODBC database application.  
+These topics help you design and set up your ODBC database application.
 
-## In This Section  
+## In This Section
 
-- [ODBC and MFC](../../data/odbc/odbc-and-mfc.md)  
+- [ODBC and MFC](../../data/odbc/odbc-and-mfc.md)
 
-- [Use MFC ODBC Recordsets](../../data/odbc/use-mfc-odbc-recordsets.md)  
+- [Use MFC ODBC Recordsets](../../data/odbc/use-mfc-odbc-recordsets.md)
 
-- [ODBC Basics](../../data/odbc/odbc-basics.md)  
-  
+- [ODBC Basics](../../data/odbc/odbc-basics.md)
 
-## See Also  
+
+## See Also
 
 [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

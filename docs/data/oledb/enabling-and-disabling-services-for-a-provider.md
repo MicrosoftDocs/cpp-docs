@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Enabling and Disabling Services for a Provider
 
-Individual OLE DB services can be enabled or disabled by default for all applications that access a single provider. This is done by adding an OLEDB_SERVICES registry entry under the provider's CLSID, with a `DWORD` value specifying the services to enable or disable, as shown in the following table.  
+Individual OLE DB services can be enabled or disabled by default for all applications that access a single provider. This is done by adding an OLEDB_SERVICES registry entry under the provider's CLSID, with a `DWORD` value specifying the services to enable or disable, as shown in the following table.
 
 |Default services enabled|Keyword value|
 |------------------------------|-------------------|
@@ -22,8 +22,8 @@ Individual OLE DB services can be enabled or disabled by default for all applica
 |All except Client Cursor|0xfffffffb|
 |All except Pooling, AutoEnlistment, and Client Cursor|0xfffffff0|
 |No services|0x00000000|
-|No aggregation, all services disabled|\<missing key>|  
+|No aggregation, all services disabled|\<missing key>|
 
-## See Also  
+## See Also
 
 [Enabling and Disabling OLE DB Services](../../data/oledb/enabling-and-disabling-ole-db-services.md)

@@ -13,13 +13,13 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Supporting Navigation in a Record View  (MFC Data Access)
 
-This topic explains how to support movement from record to record in your [CRecordView](../mfc/reference/crecordview-class.md) class, including information about:  
+This topic explains how to support movement from record to record in your [CRecordView](../mfc/reference/crecordview-class.md) class, including information about:
 
-- [Command handling](../data/command-handlers-for-record-scrolling-mfc-data-access.md) for record scrolling commands.  
+- [Command handling](../data/command-handlers-for-record-scrolling-mfc-data-access.md) for record scrolling commands.
 
-- [User-interface update handlers for scrolling](../data/user-interface-updating-for-record-views-mfc-data-access.md) commands.  
+- [User-interface update handlers for scrolling](../data/user-interface-updating-for-record-views-mfc-data-access.md) commands.
 
-## See Also  
+## See Also
 
 [Record Views  (MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
 [ODBC Driver List](../data/odbc/odbc-driver-list.md)

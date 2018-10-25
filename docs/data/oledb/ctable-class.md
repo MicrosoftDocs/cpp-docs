@@ -14,93 +14,93 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # CTable Class
 
-Provides a means to directly access a simple rowset (one with no parameters).  
+Provides a means to directly access a simple rowset (one with no parameters).
 
 ## Syntax
 
 ```cpp
-template <class TAccessor = CNoAccessor, 
+template <class TAccessor = CNoAccessor,
             template <typename T> class TRowset = CRowset>
-class CTable :  
+class CTable :
    public CAccessorRowset <TAccessor, TRowset>
-```  
+```
 
-### Parameters  
+### Parameters
 
 *TAccessor*<br/>
-An accessor class.  
+An accessor class.
 
 *TRowset*<br/>
-A rowset class.  
+A rowset class.
 
-## Requirements  
+## Requirements
 
-**Header:** atldbcli.h  
+**Header:** atldbcli.h
 
-## Members  
+## Members
 
-### Methods  
+### Methods
 
 |||
 |-|-|
-|[Open](#open)|Opens the table.|  
+|[Open](#open)|Opens the table.|
 
-## Remarks  
+## Remarks
 
-See [CCommand](../../data/oledb/ccommand-class.md) for information on how to execute a command to access a rowset.  
+See [CCommand](../../data/oledb/ccommand-class.md) for information on how to execute a command to access a rowset.
 
 ## <a name="open"></a> CTable::Open
 
-Opens the table.  
+Opens the table.
 
-### Syntax  
+### Syntax
 
 ```cpp
-HRESULT Open(const CSession& session,  
-   LPCWSTR wszTableName,  
-   DBPROPSET* pPropSet = NULL,  
-   ULONG ulPropSets = 0) throw ();  
-
-HRESULT Open(const CSession& session,  
-   LPCSTR szTableName,  
-   DBPROPSET* pPropSet = NULL,  
-   ULONG ulPropSets = 0) throw ();  
-
-HRESULT Open(const CSession& session,  
-   DBID& dbid,  
-   DBPROPSET* pPropSet = NULL,  
+HRESULT Open(const CSession& session,
+   LPCWSTR wszTableName,
+   DBPROPSET* pPropSet = NULL,
    ULONG ulPropSets = 0) throw ();
-```  
 
-#### Parameters  
+HRESULT Open(const CSession& session,
+   LPCSTR szTableName,
+   DBPROPSET* pPropSet = NULL,
+   ULONG ulPropSets = 0) throw ();
+
+HRESULT Open(const CSession& session,
+   DBID& dbid,
+   DBPROPSET* pPropSet = NULL,
+   ULONG ulPropSets = 0) throw ();
+```
+
+#### Parameters
 
 *session*<br/>
-[in] The session for which the table is opened.  
+[in] The session for which the table is opened.
 
 *wszTableName*<br/>
-[in] The name of the table to open, passed as a Unicode string.  
+[in] The name of the table to open, passed as a Unicode string.
 
 *szTableName*<br/>
-[in] The name of the table to open, passed as an ANSI string.  
+[in] The name of the table to open, passed as an ANSI string.
 
 *dbid*<br/>
-[in] The `DBID` of the table to open.  
+[in] The `DBID` of the table to open.
 
 *pPropSet*<br/>
-[in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696) in the *OLE DB Programmer's Reference* in the Windows SDK. The default value of NULL specifies no properties.  
+[in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696) in the *OLE DB Programmer's Reference* in the Windows SDK. The default value of NULL specifies no properties.
 
 *ulPropSets*<br/>
-[in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367) structures passed in the *pPropSet* argument.  
+[in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367) structures passed in the *pPropSet* argument.
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-For more details, see [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724) in the *OLE DB Programmer's Reference*.  
+For more details, see [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724) in the *OLE DB Programmer's Reference*.
 
-## See Also  
+## See Also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)   
+[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

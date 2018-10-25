@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Dialog Editor States (Guides and Grids) (C++) 
+# Dialog Editor States (Guides and Grids) (C++)
 
 You can arrange controls on dialog boxes with the **Dialog** editor in one of three different states:
 

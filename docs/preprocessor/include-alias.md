@@ -98,7 +98,7 @@ Also note that transitivity is not supported. Given the following directives,
 #include "one.h"
 ```
 
-the compiler searches for the file TWO.H rather than THREE.H.  
+the compiler searches for the file TWO.H rather than THREE.H.
 
 ## See Also
 

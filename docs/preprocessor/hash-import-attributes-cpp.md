@@ -12,11 +12,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # #import Attributes (C++)
-Provides links to attributes used with the `#import` directive.  
+Provides links to attributes used with the `#import` directive.
 
-**Microsoft Specific**  
+**Microsoft Specific**
 
-The following attributes are available to the `#import` directive.  
+The following attributes are available to the `#import` directive.
 
 |Attribute|Description|
 |---------------|-----------------|
@@ -45,10 +45,10 @@ The following attributes are available to the `#import` directive.
 |[rename](../preprocessor/rename-hash-import.md)|Works around name collision problems.|
 |[rename_namespace](../preprocessor/rename-namespace.md)|Renames the namespace that contains the contents of the type library.|
 |[rename_search_namespace](../preprocessor/rename-search-namespace.md)|Has the same functionality as the [rename_namespace](../preprocessor/rename-namespace.md) attribute but is used on type libraries that you use the #import directive with the [auto_search](../preprocessor/auto-search.md) attribute.|
-|[tlbid](../preprocessor/tlbid.md)|Allows for loading libraries other than the primary type library.|  
+|[tlbid](../preprocessor/tlbid.md)|Allows for loading libraries other than the primary type library.|
 
-**END Microsoft Specific**  
+**END Microsoft Specific**
 
-## See Also  
+## See Also
 
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

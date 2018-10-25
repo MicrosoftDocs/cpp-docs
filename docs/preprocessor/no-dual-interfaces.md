@@ -13,23 +13,23 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # no_dual_interfaces
-**C++ Specific**  
+**C++ Specific**
 
-Changes the way the compiler generates wrapper functions for dual interface methods.  
+Changes the way the compiler generates wrapper functions for dual interface methods.
 
-## Syntax  
+## Syntax
 
 ```
 no_dual_interfaces
-```  
+```
 
-## Remarks  
+## Remarks
 
-Normally, the wrapper will call the method through the virtual function table for the interface. With **no_dual_interfaces**, the wrapper instead calls `IDispatch::Invoke` to invoke the method.  
+Normally, the wrapper will call the method through the virtual function table for the interface. With **no_dual_interfaces**, the wrapper instead calls `IDispatch::Invoke` to invoke the method.
 
-**END C++ Specific**  
+**END C++ Specific**
 
-## See Also  
+## See Also
 
 [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

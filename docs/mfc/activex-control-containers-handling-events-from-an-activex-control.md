@@ -52,7 +52,7 @@ For more information on event sink macros, see [Event Sink Maps](../mfc/referenc
 
 1. In the Properties window, select the control ID of the embedded ActiveX control. For this example, use `IDC_CIRCCTRL1`.
 
-     The Properties window displays a list of events that can be fired by the embedded ActiveX control. Any member function shown in bold already has handler functions assigned to it.
+   The Properties window displays a list of events that can be fired by the embedded ActiveX control. Any member function shown in bold already has handler functions assigned to it.
 
 1. Select the event you want the dialog class to handle. For this example, select **Click**.
 

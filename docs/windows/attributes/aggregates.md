@@ -93,4 +93,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
 [Aggregation](/windows/desktop/com/aggregation)<br/>
 [Aggregatable](/windows/desktop/Midl/aggregatable)<br/>
-[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../../atl/reference/com-interface-entry-macros.md#com_interface_entry_autoaggregate_blind)  
+[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../../atl/reference/com-interface-entry-macros.md#com_interface_entry_autoaggregate_blind)

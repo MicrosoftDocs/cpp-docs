@@ -107,4 +107,4 @@ For more information, see [Attribute Contexts](cpp-attributes-com-net.md#context
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>
-[coclass](coclass.md)  
+[coclass](coclass.md)

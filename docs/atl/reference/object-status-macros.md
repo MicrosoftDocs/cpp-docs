@@ -17,11 +17,11 @@ This macro sets flags belonging to ActiveX controls.
 
 |||
 |-|-|
-|[DECLARE_OLEMISC_STATUS](#declare_olemisc_status)|Used in ATL ActiveX controls to set the OLEMISC flags.|  
+|[DECLARE_OLEMISC_STATUS](#declare_olemisc_status)|Used in ATL ActiveX controls to set the OLEMISC flags.|
 
 ## Requirements
 
-**Header:** atlcom.h  
+**Header:** atlcom.h
 
 ##  <a name="declare_olemisc_status"></a>  DECLARE_OLEMISC_STATUS
 

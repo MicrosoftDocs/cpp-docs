@@ -169,4 +169,4 @@ For more information, see [Attribute Contexts](cpp-attributes-com-net.md#context
 [helpcontext](helpcontext.md)<br/>
 [helpstring](helpstring.md)<br/>
 [helpfile](helpfile.md)<br/>
-[version](version-cpp.md)  
+[version](version-cpp.md)

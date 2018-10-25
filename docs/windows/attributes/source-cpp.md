@@ -85,4 +85,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 [IDL Attributes](idl-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>
 [Method Attributes](method-attributes.md)<br/>
-[coclass](coclass.md)  
+[coclass](coclass.md)

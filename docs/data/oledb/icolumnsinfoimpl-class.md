@@ -14,72 +14,72 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # IColumnsInfoImpl Class
 
-Provides an implementation of the [IColumnsInfo](/previous-versions/windows/desktop/ms724541) interface.  
+Provides an implementation of the [IColumnsInfo](/previous-versions/windows/desktop/ms724541) interface.
 
 ## Syntax
 
 ```cpp
 template <class T>
-class ATL_NO_VTABLE IColumnsInfoImpl :   
-   public IColumnsInfo,    
+class ATL_NO_VTABLE IColumnsInfoImpl :
+   public IColumnsInfo,  
    public CDBIDOps
-```  
+```
 
-### Parameters  
+### Parameters
 
 *T*<br/>
-Your class, derived from `IColumnsInfoImpl`.  
+Your class, derived from `IColumnsInfoImpl`.
 
-## Requirements  
+## Requirements
 
-**Header:** atldb.h  
+**Header:** atldb.h
 
-## Members  
+## Members
 
-### Methods  
+### Methods
 
 |||
 |-|-|
 |[GetColumnInfo](#getcolumninfo)|Returns the column metadata needed by most consumers.|
-|[MapColumnIDs](#mapcolumnids)|Returns an array of ordinals of the columns in a rowset that are identified by the specified column IDs.|  
+|[MapColumnIDs](#mapcolumnids)|Returns an array of ordinals of the columns in a rowset that are identified by the specified column IDs.|
 
-## Remarks  
+## Remarks
 
-A mandatory interface on rowsets and commands. To modify the behavior of your provider's `IColumnsInfo` implementation, you need to modify the provider column map.  
+A mandatory interface on rowsets and commands. To modify the behavior of your provider's `IColumnsInfo` implementation, you need to modify the provider column map.
 
 ## <a name="getcolumninfo"></a> IColumnsInfoImpl::GetColumnInfo
 
-Returns the column metadata needed by most consumers.  
+Returns the column metadata needed by most consumers.
 
-### Syntax  
+### Syntax
 
 ```cpp
-STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,  
-   DBCOLUMNINFO** prgInfo,  
+STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,
+   DBCOLUMNINFO** prgInfo,
    OLECHAR** ppStringsBuffer);
-```  
+```
 
-#### Parameters  
+#### Parameters
 
-See [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704) in the *OLE DB Programmer's Reference*.  
+See [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704) in the *OLE DB Programmer's Reference*.
 
 ## <a name="mapcolumnids"></a> IColumnsInfoImpl::MapColumnIDs
 
-Returns an array of ordinals of the columns in a rowset that are identified by the specified column IDs.  
+Returns an array of ordinals of the columns in a rowset that are identified by the specified column IDs.
 
-### Syntax  
+### Syntax
 
 ```cpp
-STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,  
-   const DBID rgColumnIDs[],  
+STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,
+   const DBID rgColumnIDs[],
    DBORDINAL rgColumns[]);
-```  
+```
 
-#### Parameters  
+#### Parameters
 
-See [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200) in the *OLE DB Programmer's Reference*.  
+See [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200) in the *OLE DB Programmer's Reference*.
 
-## See Also  
+## See Also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

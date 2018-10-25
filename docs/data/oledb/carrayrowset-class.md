@@ -14,109 +14,109 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # CArrayRowset Class
 
-Accesses elements of a rowset using array syntax.  
+Accesses elements of a rowset using array syntax.
 
 ## Syntax
 
 ```cpp
 template < class TAccessor >
-class CArrayRowset : 
+class CArrayRowset :
    public CVirtualBuffer <TAccessor>, 
    protected CBulkRowset <TAccessor>
-```  
+```
 
-### Parameters  
+### Parameters
 
 *TAccessor*<br/>
-The type of accessor class that you want the rowset to use.  
+The type of accessor class that you want the rowset to use.
 
-## Requirements  
+## Requirements
 
-**Header:** atldbcli.h  
+**Header:** atldbcli.h
 
-## Members  
+## Members
 
-### Methods  
+### Methods
 
 |||
 |-|-|
 |[CArrayRowset](#carrayrowset)|Constructor.|
-|[Snapshot](#snapshot)|Reads the entire rowset into memory.|  
+|[Snapshot](#snapshot)|Reads the entire rowset into memory.|
 
-### Operators  
-
-|||
-|-|-|
-|[Operator&#91;&#93;](#operator)|Accesses an element of the rowset.|  
-
-### Data Members  
+### Operators
 
 |||
 |-|-|
-|[CArrayRowset::m_nRowsRead](#nrowsread)|The number of rows already read.|  
+|[Operator&#91;&#93;](#operator)|Accesses an element of the rowset.|
+
+### Data Members
+
+|||
+|-|-|
+|[CArrayRowset::m_nRowsRead](#nrowsread)|The number of rows already read.|
 
 ## <a name="carrayrowset"></a> CArrayRowset::CArrayRowset
 
-Creates a new `CArrayRowset` object.  
+Creates a new `CArrayRowset` object.
 
-### Syntax  
+### Syntax
 
 ```cpp
 CArrayRowset(int nMax = 100000);
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *nMax*<br/>
-[in] Maximum number of rows in the rowset. 
+[in] Maximum number of rows in the rowset.
 
 ## <a name="snapshot"></a> CArrayRowset::Snapshot
 
-Reads the entire rowset into memory, creating an image or snapshot of it.  
+Reads the entire rowset into memory, creating an image or snapshot of it.
 
-### Syntax  
+### Syntax
 
 ```cpp
 HRESULT Snapshot() throw();
-```  
+```
 
 ## <a name="operator"></a> CArrayRowset::operator
 
-Provides array-like syntax for accessing a row in the rowset.  
+Provides array-like syntax for accessing a row in the rowset.
 
-### Syntax  
+### Syntax
 
 ```cpp
 TAccessor & operator[](int nrow);
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *TAccessor*<br/>
-A templated parameter that specifies the type of accessor stored in the rowset.  
+A templated parameter that specifies the type of accessor stored in the rowset.
 
 *nRow*<br/>
-[in] Number of the row (array element) you want to access.  
+[in] Number of the row (array element) you want to access.
 
-### Return Value  
+### Return Value
 
-The contents of the requested row.  
+The contents of the requested row.
 
-### Remarks  
+### Remarks
 
-If *nRow* exceeds the number of rows in the rowset, an exception is thrown.  
+If *nRow* exceeds the number of rows in the rowset, an exception is thrown.
 
 ## <a name="nrowsread"></a> CArrayRowset::m_nRowsRead
 
-Contains the number of rows in the rowset that have already been read.  
+Contains the number of rows in the rowset that have already been read.
 
-### Syntax  
+### Syntax
 
 ```cpp
 ULONG m_nRowsRead;
-```  
+```
 
-## See Also  
+## See Also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

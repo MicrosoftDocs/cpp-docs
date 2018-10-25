@@ -14,85 +14,85 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandTextImpl Class
 
-Provides an implementation for the [ICommandText](/previous-versions/windows/desktop/ms714914) interface.  
+Provides an implementation for the [ICommandText](/previous-versions/windows/desktop/ms714914) interface.
 
 ## Syntax
 
 ```cpp
 template <class T >
-class ATL_NO_VTABLE ICommandTextImpl   
+class ATL_NO_VTABLE ICommandTextImpl
    : public ICommandImpl<T, ICommandText>
-```  
+```
 
-### Parameters  
+### Parameters
 
 *T*<br/>
-The command class derived from `ICommandTextImpl`. 
+The command class derived from `ICommandTextImpl`.
 
-## Requirements  
+## Requirements
 
-**Header:** altdb.h  
+**Header:** altdb.h
 
-## Members  
+## Members
 
-### Interface Methods  
+### Interface Methods
 
 |||
 |-|-|
 |[GetCommandText](#getcommandtext)|Returns the text command set by the last call to [SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md).|
-|[SetCommandText](#setcommandtext)|Sets the command text, replacing the existing command text.|  
+|[SetCommandText](#setcommandtext)|Sets the command text, replacing the existing command text.|
 
-### Data Members  
+### Data Members
 
 |||
 |-|-|
-|[m_strCommandText](#strcommandtext)|Stores the command text.|  
+|[m_strCommandText](#strcommandtext)|Stores the command text.|
 
-## Remarks  
+## Remarks
 
-A mandatory interface on commands.  
+A mandatory interface on commands.
 
 ## <a name="getcommandtext"></a> ICommandTextImpl::GetCommandText
 
-Returns the text command set by the last call to [SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md).  
+Returns the text command set by the last call to [SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md).
 
-### Syntax  
+### Syntax
 
 ```cpp
-STDMETHOD(GetCommandText)(GUID * pguidDialect,   
+STDMETHOD(GetCommandText)(GUID * pguidDialect, 
    LPOLESTR * ppwszCommand);
-```  
+```
 
-#### Parameters  
+#### Parameters
 
-See [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825) in the *OLE DB Programmer's Reference*. The *pguidDialect* parameter is ignored by default.  
+See [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825) in the *OLE DB Programmer's Reference*. The *pguidDialect* parameter is ignored by default.
 
 ## <a name="setcommandtext"></a> ICommandTextImpl::SetCommandText
 
-Sets the command text, replacing the existing command text.  
+Sets the command text, replacing the existing command text.
 
-### Syntax  
+### Syntax
 
 ```cpp
-STDMETHOD(SetCommandText)(REFGUID rguidDialect,   
+STDMETHOD(SetCommandText)(REFGUID rguidDialect, 
    LPCOLESTR pwszCommand);
-```  
+```
 
-#### Parameters  
+#### Parameters
 
-See [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757) in the *OLE DB Programmer's Reference*. 
+See [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757) in the *OLE DB Programmer's Reference*.
 
 ## <a name="strcommandtext"></a> ICommandTextImpl::m_strCommandText
 
-Stores the command text string.  
+Stores the command text string.
 
-### Syntax  
+### Syntax
 
 ```cpp
 CComBSTR m_strCommandText;
-```  
+```
 
-## See Also  
+## See Also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

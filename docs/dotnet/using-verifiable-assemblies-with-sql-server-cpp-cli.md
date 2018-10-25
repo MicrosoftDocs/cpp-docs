@@ -21,7 +21,7 @@ SQL Server provides extensions to Transact-SQL (T-SQL) to allow you to install v
 
 - Unrestricted mode: Run code at your own risk; code does not have to be verifiably type-safe.
 
-- Safe mode: Run verifiably typesafe code; compiled with /clr:safe. 
+- Safe mode: Run verifiably typesafe code; compiled with /clr:safe.
 
 > [!IMPORTANT]
 > Visual Studio 2015 deprecated and Visual Studio 2017 does not support the **/clr:pure** and **/clr:safe** creation of verifiable projects. If you require verifiable code, we recommend you translate your code to C#.

@@ -26,7 +26,7 @@ template <UINT nID, class T,
     const IID* pdiid = &IID_NULL,
     const GUID* plibid = &GUID_NULL,
     WORD wMajor = 0,
-    WORD wMinor = 0, 
+    WORD wMinor = 0,
     class tihclass = CcomTypeInfoHolder>
 class ATL_NO_VTABLE IDispEventImpl : public IDispEventSimpleImpl<nID, T, pdiid>
 ```
@@ -84,7 +84,7 @@ The class used to manage the type information for *T*. The default value is a cl
 
 `IDispEventImpl` works in conjunction with the event sink map in your class to route events to the appropriate handler function. To use this class:
 
-Add a [SINK_ENTRY](composite-control-macros.md#sink_entry) or [SINK_ENTRY_EX](composite-control-macros.md#sink_entry_ex) macro to the event sink map for each event on each object that you want to handle. When using `IDispEventImpl` as a base class of a composite control, you can call [AtlAdviseSinkMap](connection-point-global-functions.md#atladvisesinkmap) to establish and break the connection with the event sources for all entries in the event sink map. In other cases, or for greater control, call [DispEventAdvise](idispeventsimpleimpl-class.md#dispeventadvise) to establish the connection between the source object and the base class. Call [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise) to break the connection.  
+Add a [SINK_ENTRY](composite-control-macros.md#sink_entry) or [SINK_ENTRY_EX](composite-control-macros.md#sink_entry_ex) macro to the event sink map for each event on each object that you want to handle. When using `IDispEventImpl` as a base class of a composite control, you can call [AtlAdviseSinkMap](connection-point-global-functions.md#atladvisesinkmap) to establish and break the connection with the event sources for all entries in the event sink map. In other cases, or for greater control, call [DispEventAdvise](idispeventsimpleimpl-class.md#dispeventadvise) to establish the connection between the source object and the base class. Call [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise) to break the connection.
 
 You must derive from `IDispEventImpl` (using a unique value for *nID*) for each object for which you need to handle events. You can reuse the base class by unadvising against one source object then advising against a different source object, but the maximum number of source objects that can be handled by a single object at one time is limited by the number of `IDispEventImpl` base classes.
 

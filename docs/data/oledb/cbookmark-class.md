@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # CBookmark Class
 
-Holds a bookmark value in its buffer.  
+Holds a bookmark value in its buffer.
 
 ## Syntax
 
@@ -24,131 +24,131 @@ class CBookmark : public CBookmarkBase
 
 template <>
 class CBookmark< 0 > : public CBookmarkBase
-```  
+```
 
-### Parameters  
+### Parameters
 
 *nSize*<br/>
-The size of the bookmark buffer in bytes. When *nSize* is zero, the bookmark buffer will be dynamically created at run time.  
+The size of the bookmark buffer in bytes. When *nSize* is zero, the bookmark buffer will be dynamically created at run time.
 
-## Requirements  
+## Requirements
 
-**Header:** atldbcli.h  
+**Header:** atldbcli.h
 
-## Members  
+## Members
 
-### Methods  
+### Methods
 
 |||
 |-|-|
 |[CBookmark](#cbookmark)|The constructor|
 |[GetBuffer](#getbuffer)|Retrieves the pointer to the buffer.|
 |[GetSize](#getsize)|Retrieves the size of the buffer in bytes.|
-|[SetBookmark](#setbookmark)|Sets the bookmark value.|  
+|[SetBookmark](#setbookmark)|Sets the bookmark value.|
 
-### Operators  
+### Operators
 
 |||
 |-|-|
-|[operator =](#operator)|Assigns one `CBookmark` class to another.|  
+|[operator =](#operator)|Assigns one `CBookmark` class to another.|
 
-## Remarks  
+## Remarks
 
-`CBookmark<0>` is a template specialization of `CBookmark`; its buffer is dynamically created at run time.  
+`CBookmark<0>` is a template specialization of `CBookmark`; its buffer is dynamically created at run time.
 
 ## <a name="cbookmark"></a> CBookmark::CBookmark
 
-The constructor.  
+The constructor.
 
-### Syntax  
+### Syntax
 
 ```cpp
 CBookmark();
  
 CBookmark(DBLENGTH nSize);
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *nSize*<br/>
-[in] Size of the bookmark buffer in bytes.  
+[in] Size of the bookmark buffer in bytes.
 
-### Remarks  
+### Remarks
 
-The first function sets the buffer to NULL and the buffer size to 0. The second function sets the buffer size to *nSize*, and the buffer to a byte array of *nSize* bytes.  
+The first function sets the buffer to NULL and the buffer size to 0. The second function sets the buffer size to *nSize*, and the buffer to a byte array of *nSize* bytes.
 
 > [!NOTE]
->  This function is only available in `CBookmark<0>`. 
+>  This function is only available in `CBookmark<0>`.
 
 ## <a name="getbuffer"></a> CBookmark::GetBuffer
 
-Retrieves the pointer to the bookmark buffer.  
+Retrieves the pointer to the bookmark buffer.
 
-### Syntax  
+### Syntax
 
 ```cpp
 virtual BYTE* GetBuffer() const throw();
-```  
+```
 
-### Return Value  
+### Return Value
 
-A pointer to the bookmark buffer. 
+A pointer to the bookmark buffer.
 
 ## <a name="getsize"></a> CBookmark::GetSize
 
-Retrieves the size of the bookmark buffer.  
+Retrieves the size of the bookmark buffer.
 
-### Syntax  
+### Syntax
 
 ```cpp
 virtual DBLENGTH GetSize() const throw();
-```  
+```
 
-### Return Value  
+### Return Value
 
-The size of the buffer in bytes.  
+The size of the buffer in bytes.
 
 ## <a name="setbookmark"></a> CBookmark::SetBookmark
 
-Copies the bookmark value referenced by *pBuffer* to the `CBookmark` buffer and sets the buffer size to *nSize*.  
+Copies the bookmark value referenced by *pBuffer* to the `CBookmark` buffer and sets the buffer size to *nSize*.
 
-### Syntax  
+### Syntax
 
 ```cpp
 HRESULT SetBookmark(DBLENGTH nSize, BYTE* pBuffer) throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *nSize*<br/>
-[in] The size of the bookmark buffer.  
+[in] The size of the bookmark buffer.
 
 *pBuffer*<br/>
-[in] A pointer to the byte array containing the bookmark value.  
+[in] A pointer to the byte array containing the bookmark value.
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-This function is only available in `CBookmark<0>`. 
+This function is only available in `CBookmark<0>`.
 
 ## <a name="operator"></a> CBookmark::operator =
 
-Assigns a `CBookmark` object to another.  
+Assigns a `CBookmark` object to another.
 
-### Syntax  
+### Syntax
 
 ```cpp
 CBookmark& operator =(const CBookmark& bookmark) throw();
-```  
+```
 
-### Remarks  
+### Remarks
 
-This operator is needed only in `CBookmark<0>`.   
+This operator is needed only in `CBookmark<0>`.
 
-## See Also  
+## See Also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

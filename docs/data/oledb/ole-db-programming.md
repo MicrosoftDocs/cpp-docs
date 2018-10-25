@@ -15,11 +15,11 @@ ms.workload: ["cplusplus", "data-storage"]
 
 Microsoft OLE DB is a legacy technology; for new applications it's the required data access API for linked SQL Servers. All other new applications should use ODBC. The current OLE DB provider for SQL Server is SQLNCLI11.DLL. The provider is still shipping in SQL Server 2016. This documentation is intended for developers who are maintaining existing applications that already use OLE DB.
 
-The OLE DB templates are C++ templates that make the high-performance OLE DB database technology easier to use by providing classes that implement many commonly used OLE DB interfaces. This template library is divided into consumer templates and provider templates.  
+The OLE DB templates are C++ templates that make the high-performance OLE DB database technology easier to use by providing classes that implement many commonly used OLE DB interfaces. This template library is divided into consumer templates and provider templates.
 
-Visual C++ also has wizard support for creating OLE DB starter applications.  
+Visual C++ also has wizard support for creating OLE DB starter applications.
 
-Also, you can use attributes to implement the OLE DB consumer templates.  
+Also, you can use attributes to implement the OLE DB consumer templates.
 
 |To learn more about|See|
 |-------------------------|---------|
@@ -30,8 +30,8 @@ Also, you can use attributes to implement the OLE DB consumer templates.
 |OLE DB interfaces|[OLE DB programmer's reference](/previous-versions/windows/desktop/ms713643(v%3dvs.85)) (in the Windows SDK)|
 |OLE DB templates samples|[OLE DB Templates Samples](https://github.com/Microsoft/VCSamples)|
 |Data access programming overview (Visual C++)|[Data Access Programming](../../data/data-access-programming-mfc-atl.md)|
-|ODBC conceptual topics|[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)|  
+|ODBC conceptual topics|[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)|
 
-## See Also  
+## See Also
 
 [Data Access](../data-access-in-cpp.md)

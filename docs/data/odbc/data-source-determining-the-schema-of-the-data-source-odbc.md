@@ -13,11 +13,11 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Source: Determining the Schema of the Data Source (ODBC)
 
-This topic applies to the MFC ODBC classes.  
+This topic applies to the MFC ODBC classes.
 
-To set up data members in your `CRecordset` objects, you need to know the schema of the data source to which you are connecting. Determining the schema of a data source involves obtaining a list of the tables in the data source, a list of the columns in each table, the data type of each column, and the existence of any indexes.  
+To set up data members in your `CRecordset` objects, you need to know the schema of the data source to which you are connecting. Determining the schema of a data source involves obtaining a list of the tables in the data source, a list of the columns in each table, the data type of each column, and the existence of any indexes.
 
-## See Also  
+## See Also
 
 [Data Source (ODBC)](../../data/odbc/data-source-odbc.md)<br/>
 [Data Source: Managing Connections (ODBC)](../../data/odbc/data-source-managing-connections-odbc.md)

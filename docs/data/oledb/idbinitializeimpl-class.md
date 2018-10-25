@@ -14,131 +14,131 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBInitializeImpl Class
 
-Provides an implementation for the [IDBInitialize](/previous-versions/windows/desktop/ms713706) interface.  
+Provides an implementation for the [IDBInitialize](/previous-versions/windows/desktop/ms713706) interface.
 
 ## Syntax
 
 ```cpp
 template <class T>
 class ATL_NO_VTABLE IDBInitializeImpl : public IDBInitialize
-```  
+```
 
-### Parameters  
+### Parameters
 
 *T*<br/>
-Your class, derived from `IDBInitializeImpl`.  
+Your class, derived from `IDBInitializeImpl`.
 
-## Requirements  
+## Requirements
 
-**Header:** atldb.h  
+**Header:** atldb.h
 
-## Members  
+## Members
 
-### Methods  
+### Methods
 
 |||
 |-|-|
-|[IDBInitializeImpl](#idbinitializeimpl)|The constructor.|  
+|[IDBInitializeImpl](#idbinitializeimpl)|The constructor.|
 
-### Interface Methods  
+### Interface Methods
 
 |||
 |-|-|
 |[Initialize](#initialize)|Starts the provider.|
-|[Uninitialize](#uninitialize)|Stops the provider.|  
+|[Uninitialize](#uninitialize)|Stops the provider.|
 
-### Data Members  
+### Data Members
 
 |||
 |-|-|
 |[m_dwStatus](#dwstatus)|Data source flags.|
-|[m_pCUtlPropInfo](#pcutlpropinfo)|A pointer to implementation of DB Properties information.|  
+|[m_pCUtlPropInfo](#pcutlpropinfo)|A pointer to implementation of DB Properties information.|
 
-## Remarks  
+## Remarks
 
-A mandatory interface on data source objects and optional interface on enumerators.  
+A mandatory interface on data source objects and optional interface on enumerators.
 
 ## <a name="idbinitializeimpl"></a> IDBInitializeImpl::IDBInitializeImpl
 
-The constructor.  
+The constructor.
 
-### Syntax  
+### Syntax
 
 ```cpp
 IDBInitializeImpl();
-```  
+```
 
-### Remarks  
+### Remarks
 
-Initializes all data members. 
+Initializes all data members.
 
 ## <a name="initialize"></a> IDBInitializeImpl::Initialize
 
-Initializes the data source object by preparing its property support.  
+Initializes the data source object by preparing its property support.
 
-### Syntax  
+### Syntax
 
 ```cpp
 STDMETHOD(Initialize)(void);
-```  
+```
 
-### Remarks  
+### Remarks
 
-See [IDBInitialize::Initialize](/previous-versions/windows/desktop/ms718026) in the *OLE DB Programmer's Reference*. 
+See [IDBInitialize::Initialize](/previous-versions/windows/desktop/ms718026) in the *OLE DB Programmer's Reference*.
 
 ## <a name="uninitialize"></a> IDBInitializeImpl::Uninitialize
 
-Places the data source object in an uninitialized state by freeing internal resources such as the property support.  
+Places the data source object in an uninitialized state by freeing internal resources such as the property support.
 
-### Syntax  
+### Syntax
 
 ```cpp
 STDMETHOD(Uninitialize)(void);
-```  
+```
 
-### Remarks  
+### Remarks
 
 See [IDBInitialize::Uninitialize](/previous-versions/windows/desktop/ms719648) in the *OLE DB Programmer's Reference*.
 
 ## <a name="dwstatus"></a> IDBInitializeImpl::m_dwStatus
 
-Data source flags.  
+Data source flags.
 
-### Syntax  
+### Syntax
 
 ```cpp
 DWORD m_dwStatus;
-```  
+```
 
-### Remarks  
+### Remarks
 
-These flags specify or indicate the status of various attributes for the data source object. Contains one or more of the following **enum** values:  
+These flags specify or indicate the status of various attributes for the data source object. Contains one or more of the following **enum** values:
 
 ```cpp
-enum DATASOURCE_FLAGS {  
-    DSF_MASK_INIT     = 0xFFFFF00F,  
-    DSF_PERSIST_DIRTY = 0x00000001,  
+enum DATASOURCE_FLAGS {
+    DSF_MASK_INIT     = 0xFFFFF00F,
+    DSF_PERSIST_DIRTY = 0x00000001,
     DSF_INITIALIZED   = 0x00000010,
 };
-```  
+```
 
 |||
 |-|-|
 |`DSF_MASK_INIT`|A mask to enable restoration of the uninitialized state.|
 |`DSF_PERSIST_DIRTY`|Set if data source object requires persistence (that is, if there have been changes).|
-|`DSF_INITIALIZED`|Set if data source has been initialized.|  
+|`DSF_INITIALIZED`|Set if data source has been initialized.|
 
 ## <a name="pcutlpropinfo"></a> IDBInitializeImpl::m_pCUtlPropInfo
 
-A pointer to implementation object for DB Properties information.  
+A pointer to implementation object for DB Properties information.
 
-### Syntax  
+### Syntax
 
 ```cpp
 CUtlPropInfo< T >* m_pCUtlPropInfo;
-```  
+```
 
-## See Also  
+## See Also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

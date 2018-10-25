@@ -13,20 +13,20 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating an OLE DB Consumer Using a Wizard
 
-This procedure demonstrates how you can use the **ATL Project Wizard** and **ATL OLE DB Consumer Wizard* to generate an OLE DB Templates consumer and then modify the main code of the console application to retrieve and display data from a database table.  
+This procedure demonstrates how you can use the **ATL Project Wizard** and **ATL OLE DB Consumer Wizard* to generate an OLE DB Templates consumer and then modify the main code of the console application to retrieve and display data from a database table.
 
-The last two sections explain the wizard-generated OLE DB consumer code.  
+The last two sections explain the wizard-generated OLE DB consumer code.
 
-This section covers the following topics:  
+This section covers the following topics:
 
-- [Creating a Simple Consumer](../../data/oledb/creating-a-simple-consumer.md)  
+- [Creating a Simple Consumer](../../data/oledb/creating-a-simple-consumer.md)
 
-- [Implementing a Simple Consumer](../../data/oledb/implementing-a-simple-consumer.md)  
+- [Implementing a Simple Consumer](../../data/oledb/implementing-a-simple-consumer.md)
 
-- [Consumer Wizard-Generated Classes](../../data/oledb/consumer-wizard-generated-classes.md)  
+- [Consumer Wizard-Generated Classes](../../data/oledb/consumer-wizard-generated-classes.md)
 
-- [Consumer Wizard-Generated Methods](../../data/oledb/consumer-wizard-generated-methods.md)  
+- [Consumer Wizard-Generated Methods](../../data/oledb/consumer-wizard-generated-methods.md)
 
-## See Also  
+## See Also
 
 [Creating an OLE DB Consumer](../../data/oledb/creating-an-ole-db-consumer.md)

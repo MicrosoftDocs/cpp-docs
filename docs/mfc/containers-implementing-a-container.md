@@ -51,15 +51,15 @@ You may also want to support some of the following features in your container ap
 
 - In-place activation when editing an embedded item.
 
-     For more information, see [Activation](../mfc/activation-cpp.md).
+   For more information, see [Activation](../mfc/activation-cpp.md).
 
 - Creation of OLE items by dragging and dropping a selection from a server application.
 
-     For more information, see [Drag and Drop (OLE)](../mfc/drag-and-drop-ole.md).
+   For more information, see [Drag and Drop (OLE)](../mfc/drag-and-drop-ole.md).
 
 - Links to embedded objects or combination container/server applications.
 
-     For more information, see [Containers: Advanced Features](../mfc/containers-advanced-features.md).
+   For more information, see [Containers: Advanced Features](../mfc/containers-advanced-features.md).
 
 ## See Also
 

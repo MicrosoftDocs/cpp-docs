@@ -13,41 +13,41 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # runtime_checks
-Disables or restores the [/RTC](../build/reference/rtc-run-time-error-checks.md) settings.  
+Disables or restores the [/RTC](../build/reference/rtc-run-time-error-checks.md) settings.
 
-## Syntax  
+## Syntax
 
 ```
 #pragma runtime_checks( "[runtime_checks]", {restore | off} )
-```  
+```
 
-## Remarks  
+## Remarks
 
-You cannot enable a run-time check that was not enabled with a compiler option. For example, if you do not specify `/RTCs`, specifying `#pragma runtime_checks( "s", restore)` will not enable stack frame verification.  
+You cannot enable a run-time check that was not enabled with a compiler option. For example, if you do not specify `/RTCs`, specifying `#pragma runtime_checks( "s", restore)` will not enable stack frame verification.
 
-The **runtime_checks** pragma must appear outside a function and takes effect at the first function defined after the pragma is seen. The *restore* and *off* arguments turn options specified in the **runtime_checks** on or off.  
+The **runtime_checks** pragma must appear outside a function and takes effect at the first function defined after the pragma is seen. The *restore* and *off* arguments turn options specified in the **runtime_checks** on or off.
 
-The **runtime_checks** can be zero or more of the parameters shown in the following table.  
+The **runtime_checks** can be zero or more of the parameters shown in the following table.
 
-### Parameters of the runtime_checks Pragma  
+### Parameters of the runtime_checks Pragma
 
 |Parameter(s)|Type of run-time check|
 |--------------------|-----------------------------|
 |*s*|Enables stack (frame) verification.|
 |*c*|Reports when a value is assigned to a smaller data type that results in a data loss.|
-|*u*|Reports when a variable is used before it is defined.|  
+|*u*|Reports when a variable is used before it is defined.|
 
-These are the same letters used with the `/RTC` compiler option. For example:  
+These are the same letters used with the `/RTC` compiler option. For example:
 
 ```
 #pragma runtime_checks( "sc", restore )
-```  
+```
 
-Using the **runtime_checks** pragma with the empty string (**""**) is a special form of the directive:  
+Using the **runtime_checks** pragma with the empty string (**""**) is a special form of the directive:
 
-- When you use the *off* parameter, it turns the run-time error checks, listed in the table above, off.  
+- When you use the *off* parameter, it turns the run-time error checks, listed in the table above, off.
 
-- When you use the *restore* parameter, it resets the run-time error checks to those that you specified with the `/RTC` compiler option.  
+- When you use the *restore* parameter, it resets the run-time error checks to those that you specified with the `/RTC` compiler option.
 
 ```
 #pragma runtime_checks( "", off )
@@ -55,8 +55,8 @@ Using the **runtime_checks** pragma with the empty string (**""**) is a special 
 .
 .
 #pragma runtime_checks( "", restore )
-```  
+```
 
-## See Also  
+## See Also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)   
+[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

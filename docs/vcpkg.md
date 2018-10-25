@@ -28,11 +28,11 @@ If you create a vcpkg clone with private libraries in the ports collection, you 
 
 [1] *Note: for some proprietary libraries, sources are not available. Vcpkg will download compatible prebuilt binaries in these cases.*
 
-## Installation 
+## Installation
 
 Clone the vcpkg repo from GitHub: https://github.com/Microsoft/vcpkg. You can download to any folder location you prefer.
 
-Run the bootstrapper in the root folder: 
+Run the bootstrapper in the root folder:
 
 - **bootstrap-vcpkg.bat** (Windows)
 - **./bootstrap-vcpkg.sh** (Linux, MacOS)
@@ -67,7 +67,7 @@ taglib      1.11.1-2   TagLib Audio Meta-Data Library
 
 After you get the name of a library by using **vcpkg search**, you use **vcpkg install** to download the library and compile it. vcpkg uses the library's portfile in the ports directory. If no triplet is specified, vcpkg will install and compile for the default triplet for the target platform: x86-windows, x64-linux.cmake, or x64-osx.cmake.
 
-For Linux libraries, vcpkg depends on gcc being installed on the local machine. On MacOS, vcpkg uses Clang. 
+For Linux libraries, vcpkg depends on gcc being installed on the local machine. On MacOS, vcpkg uses Clang.
 
 If the portfile specifies dependencies, vcpkg downloads and installs those also. After downloading, vcpkg builds the library by using whatever build system the library uses. CMake and (on Windows) MSBuild projects are preferred, but MAKE is supported along with any other build system. If vcpkg cannot find the specified build system on the local machine, it downloads and installs it.
 
@@ -82,7 +82,7 @@ Additional packages (*) will be installed to complete this operation.
 
 ```
 
-For CMAKE projects, use CMAKE_TOOLCHAIN_FILE to make libraries available with `find_package()`. For example:  
+For CMAKE projects, use CMAKE_TOOLCHAIN_FILE to make libraries available with `find_package()`. For example:
 
 ```cmd
 cmake .. -DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake (Linux/MacOS)
@@ -123,7 +123,7 @@ If you need to use a specific version of a library that is different from the ve
 1. Run **vcpkg install \<library>**.
 1. Use **vcpkg integrate project** to create a NuGet package that references that library on a per-project basis.
 
-## Integrate with Visual Studio Code (Linux/MacOS) 
+## Integrate with Visual Studio Code (Linux/MacOS)
 
 Run **vcpkg integrate install** to configure Visual Studio Code on Linux/MacOS with the location of the vcpkg enlistement and enable IntelliSense on source files.
 

@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Architectural Design Issues
 
-Consider the following issues before starting your OLE DB application:  
+Consider the following issues before starting your OLE DB application:
 
 ## What programming implementation will you use to write your OLE DB application?
 

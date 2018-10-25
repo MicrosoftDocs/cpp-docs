@@ -13,9 +13,9 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Your Role in Working with a Record View  (MFC Data Access)
 
-The following table shows what you typically must do to work with a record view and what the framework does for you.  
+The following table shows what you typically must do to work with a record view and what the framework does for you.
 
-### Working with a Record View: You and the Framework  
+### Working with a Record View: You and the Framework
 
 |You|The framework|
 |---------|-------------------|
@@ -26,11 +26,11 @@ The following table shows what you typically must do to work with a record view 
 ||Updates changes to the data source.|
 |[Optional] Write code to fill list boxes or combo boxes or other controls with data from a second recordset.||
 |[Optional] Write code for any special validations.||
-|[Optional] Write code to add or delete records.||  
+|[Optional] Write code to add or delete records.||
 
-Form-based programming is only one approach to working with a database. For information about applications using some other user interface, or no user interface, see [MFC: Using Database Classes with Documents and Views](../data/mfc-using-database-classes-with-documents-and-views.md) and [MFC: Using Database Classes Without Documents and Views](../data/mfc-using-database-classes-without-documents-and-views.md). For alternative approaches to displaying database records, see classes [CListView](../mfc/reference/clistview-class.md) and [CTreeView](../mfc/reference/ctreeview-class.md).  
+Form-based programming is only one approach to working with a database. For information about applications using some other user interface, or no user interface, see [MFC: Using Database Classes with Documents and Views](../data/mfc-using-database-classes-with-documents-and-views.md) and [MFC: Using Database Classes Without Documents and Views](../data/mfc-using-database-classes-without-documents-and-views.md). For alternative approaches to displaying database records, see classes [CListView](../mfc/reference/clistview-class.md) and [CTreeView](../mfc/reference/ctreeview-class.md).
 
-## See Also  
+## See Also
 
 [Record Views  (MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
 [ODBC Driver List](../data/odbc/odbc-driver-list.md)

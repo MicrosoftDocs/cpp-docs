@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # Porting third-party libraries
 
-When you upgrade a project to the current version of Visual C++, you also have to upgrade any libraries that the project uses, so that the library and your project are built with the same version and flavor of the compiler. (For more information, see [Overview of potential upgrade issues](overview-of-potential-upgrade-issues-visual-cpp.md)). 
+When you upgrade a project to the current version of Visual C++, you also have to upgrade any libraries that the project uses, so that the library and your project are built with the same version and flavor of the compiler. (For more information, see [Overview of potential upgrade issues](overview-of-potential-upgrade-issues-visual-cpp.md)).
 
 ## Introducing vcpkg
 
@@ -25,6 +25,6 @@ If your library is not present in **vcpkg** catalog, you can open an issue on th
 
 For proprietary 3rd party libraries (non-open source) we recommend that you contact the library provider. However, we are interested to know of any proprietary libs you are using and block you, let us know which one you depend on (you can contact us at vcupgrade@microsoft.com).
 
-## See Also  
+## See Also
 
 [Visual C++ Porting and Upgrading Guide](visual-cpp-porting-and-upgrading-guide.md)

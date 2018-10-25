@@ -41,7 +41,7 @@ To create an [ActiveX control](../../mfc/activex-controls-on-the-internet.md) wi
 
 1. Click the suggested name to accept. The handler is added to your project.
 
-     Message handler names that you have added appear in the right column of the reflected messages window.
+   Message handler names that you have added appear in the right column of the reflected messages window.
 
 9. To edit or delete a message handler, repeat steps 4 through 7. Click the cell containing the handler name to edit or delete and click the appropriate task.
 

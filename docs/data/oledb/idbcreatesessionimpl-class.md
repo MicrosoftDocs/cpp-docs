@@ -14,57 +14,57 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBCreateSessionImpl Class
 
-Provides an implementation for the [IDBCreateSession](/previous-versions/windows/desktop/ms724076) interface.  
+Provides an implementation for the [IDBCreateSession](/previous-versions/windows/desktop/ms724076) interface.
 
 ## Syntax
 
 ```cpp
 template <class T, class SessionClass>
-class ATL_NO_VTABLE IDBCreateSessionImpl   
+class ATL_NO_VTABLE IDBCreateSessionImpl
    : public IDBCreateSession
-```  
+```
 
-### Parameters  
+### Parameters
 
 *T*<br/>
-YOUR CLASS, DERIVED FROM  
+YOUR CLASS, DERIVED FROM
 
 *SessionClass*<br/>
-The session object.  
+The session object.
 
-## Requirements  
+## Requirements
 
-**Header:** atldb.h 
+**Header:** atldb.h
 
-## Members  
+## Members
 
-### Interface Methods  
+### Interface Methods
 
 |||
 |-|-|
-|[CreateSession](#createsession)|Creates a new session from the data source object and returns the requested interface on the newly created session.|  
+|[CreateSession](#createsession)|Creates a new session from the data source object and returns the requested interface on the newly created session.|
 
-## Remarks  
+## Remarks
 
-A mandatory interface on data source objects.  
+A mandatory interface on data source objects.
 
 ## <a name="createsession"></a> IDBCreateSessionImpl::CreateSession
 
-Creates a new session from the data source object and returns the requested interface on the newly created session.  
+Creates a new session from the data source object and returns the requested interface on the newly created session.
 
-### Syntax  
+### Syntax
 
 ```cpp
-STDMETHOD(CreateSession)(IUnknown * pUnkOuter,   
-   REFIID riid,   
+STDMETHOD(CreateSession)(IUnknown * pUnkOuter, 
+   REFIID riid, 
    IUnknown ** ppDBSession);
-```  
+```
 
-#### Parameters  
+#### Parameters
 
-See [IDBCreateSession::CreateSession](/previous-versions/windows/desktop/ms714942) in the *OLE DB Programmer's Reference*.   
+See [IDBCreateSession::CreateSession](/previous-versions/windows/desktop/ms714942) in the *OLE DB Programmer's Reference*.
 
-## See Also  
+## See Also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

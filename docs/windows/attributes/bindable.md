@@ -77,4 +77,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 [defaultbind](defaultbind.md)<br/>
 [displaybind](displaybind.md)<br/>
 [immediatebind](immediatebind.md)<br/>
-[requestedit](requestedit.md)  
+[requestedit](requestedit.md)

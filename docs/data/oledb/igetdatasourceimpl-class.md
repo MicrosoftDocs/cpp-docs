@@ -14,56 +14,56 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # IGetDataSourceImpl Class
 
-Provides an implementation of the [IGetDataSource](/previous-versions/windows/desktop/ms709721) object.  
+Provides an implementation of the [IGetDataSource](/previous-versions/windows/desktop/ms709721) object.
 
 ## Syntax
 
 ```cpp
 template <class T>
 class ATL_NO_VTABLE IGetDataSourceImpl : public IGetDataSource
-```  
+```
 
-### Parameters  
+### Parameters
 
 *T*<br/>
-Your class, derived from `IGetDataSourceImpl`.  
+Your class, derived from `IGetDataSourceImpl`.
 
-## Requirements  
+## Requirements
 
-**Header:** atldb.h  
+**Header:** atldb.h
 
-## Members  
+## Members
 
-### Interface Methods  
+### Interface Methods
 
 |||
 |-|-|
-|[GetDataSource](#getdatasource)|Returns an interface pointer on the data source object that created the session.|  
+|[GetDataSource](#getdatasource)|Returns an interface pointer on the data source object that created the session.|
 
-## Remarks  
+## Remarks
 
-This is a mandatory interface on the session for obtaining an interface pointer to the data source object.  
+This is a mandatory interface on the session for obtaining an interface pointer to the data source object.
 
 ## <a name="getdatasource"></a> IGetDataSourceImpl::GetDataSource
 
-Returns an interface pointer on the data source object that created the session.  
+Returns an interface pointer on the data source object that created the session.
 
-### Syntax  
+### Syntax
 
 ```cpp
-STDMETHOD(GetDataSource)(REFIID riid,   
+STDMETHOD(GetDataSource)(REFIID riid, 
    IUnknown ** ppDataSource);
-```  
+```
 
-#### Parameters  
+#### Parameters
 
-See [IGetDataSource::GetDataSource](/previous-versions/windows/desktop/ms725443) in the *OLE DB Programmer's Reference*.  
+See [IGetDataSource::GetDataSource](/previous-versions/windows/desktop/ms725443) in the *OLE DB Programmer's Reference*.
 
-### Remarks  
+### Remarks
 
-Useful if you need to access properties in the data source object.  
+Useful if you need to access properties in the data source object.
 
-## See Also  
+## See Also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

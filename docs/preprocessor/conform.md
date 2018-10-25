@@ -13,7 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # conform
-**C++ Specific**  
+**C++ Specific**
 
 Specifies the run-time behavior of the [/Zc:forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) compiler option.
 
@@ -54,7 +54,7 @@ Specifies the name of the compiler option to be modified. The only valid *name* 
 #pragma conform(forScope, push, x3, off)
 #pragma conform(forScope, show)
 #pragma conform(forScope, pop, x1)
-#pragma conform(forScope, show)  
+#pragma conform(forScope, show)
 
 int main() {}
 ```

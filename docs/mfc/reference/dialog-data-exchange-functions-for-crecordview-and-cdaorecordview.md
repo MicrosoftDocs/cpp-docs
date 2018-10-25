@@ -474,10 +474,10 @@ The `DDX_FieldSlider` function synchronizes the thumb position of a slider contr
        CRecordset* pRecordset );
 
 void AFXAPI DDX_FieldSlider(
-     CDataExchange* pDX,
-     int nIDC,
-     int& value,
-     CDaoRecordset* pRecordset );
+   CDataExchange* pDX,
+   int nIDC,
+   int& value,
+   CDaoRecordset* pRecordset );
 ```
 
 ### Parameters

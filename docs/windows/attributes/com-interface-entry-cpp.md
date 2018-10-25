@@ -92,12 +92,12 @@ class CMyClass: public IMyClass, public IDebugTest
 The resulting COM object map for `CMyBaseClass` is as follows:
 
 ```cpp
-BEGIN_COM_MAP(CMyClass)  
-    COM_INTERFACE_ENTRY (IMyClass)  
-    COM_INTERFACE_ENTRY_NOINTERFACE(IDebugTest)  
-    COM_INTERFACE_ENTRY(IMyClass)  
-    COM_INTERFACE_ENTRY2(IDispatch, IMyClass)  
-    COM_INTERFACE_ENTRY(IDebugTest)  
+BEGIN_COM_MAP(CMyClass)
+    COM_INTERFACE_ENTRY (IMyClass)
+    COM_INTERFACE_ENTRY_NOINTERFACE(IDebugTest)
+    COM_INTERFACE_ENTRY(IMyClass)
+    COM_INTERFACE_ENTRY2(IDispatch, IMyClass)
+    COM_INTERFACE_ENTRY(IDebugTest)
     COM_INTERFACE_ENTRY(IProvideClassInfo)
 END_COM_MAP()
 ```
@@ -119,4 +119,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 
 [COM Attributes](com-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>
-[Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)  
+[Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)

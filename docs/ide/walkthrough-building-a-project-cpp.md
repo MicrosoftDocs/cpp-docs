@@ -37,7 +37,7 @@ In this walkthrough, you deliberately introduce a Visual C++ syntax error in you
 
 1. Add the semicolon back to the end of the line that has the syntax error:
 
-     `return 0;`
+   `return 0;`
 
 1. On the menu bar, choose **Build** > **Build Solution**.
 

@@ -56,4 +56,4 @@ For more information, see [Attribute Contexts](cpp-attributes-com-net.md#context
 [Method Attributes](method-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
 [helpcontext](helpcontext.md)<br/>
-[helpstring](helpstring.md)  
+[helpstring](helpstring.md)

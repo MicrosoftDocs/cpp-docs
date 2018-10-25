@@ -14,27 +14,27 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset Class
 
-Encapsulates an OLE DB rowset object and several related interfaces and provides manipulation methods for rowset data.  
+Encapsulates an OLE DB rowset object and several related interfaces and provides manipulation methods for rowset data.
 
 ## Syntax
 
 ```cpp
 template <class TAccessor = CAccessorBase>
 class CRowset
-```  
+```
 
-### Parameters  
+### Parameters
 
 *TAccessor*<br/>
-An accessor class. The default is `CAccessorBase`.  
+An accessor class. The default is `CAccessorBase`.
 
-## Requirements  
+## Requirements
 
-**Header:** atldbcli.h  
+**Header:** atldbcli.h
 
-## Members  
+## Members
 
-### Methods  
+### Methods
 
 |||
 |-|-|
@@ -61,648 +61,648 @@ An accessor class. The default is `CAccessorBase`.
 |[SetData](#setdata)|Sets data values in one or more columns of a row using [IRowsetChange:SetData](/previous-versions/windows/desktop/ms721232).|
 |[Undo](#undo)|Undoes any changes made to a row since the last fetch or [Update](../../data/oledb/crowset-update.md).|
 |[Update](#update)|Transmits any pending changes made to the current row since the last fetch or update.|
-|[UpdateAll](#updateall)|Transmits any pending changes made to all rows since the last fetch or update.|  
+|[UpdateAll](#updateall)|Transmits any pending changes made to all rows since the last fetch or update.|
 
-## Remarks  
+## Remarks
 
-In OLE DB, a rowset is the object through which a program sets and retrieves data.  
+In OLE DB, a rowset is the object through which a program sets and retrieves data.
 
-This class is not meant to be instantiated but rather passed as a template parameter to `CTable` or `CCommand` (`CRowset` is the default).  
+This class is not meant to be instantiated but rather passed as a template parameter to `CTable` or `CCommand` (`CRowset` is the default).
 
 ## <a name="addrefrows"></a> CRowset::AddRefRows
 
-Calls [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619) to increment (by one) the reference count associated with the current row handle.  
+Calls [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619) to increment (by one) the reference count associated with the current row handle.
 
-### Syntax  
+### Syntax
 
 ```cpp
 HRESULT AddRefRows() throw();
-```  
+```
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-This method increments the reference count for the current row handle. Call [ReleaseRows](../../data/oledb/crowset-releaserows.md) to decrement the count. Rows returned by the move methods have a reference count of one.  
+This method increments the reference count for the current row handle. Call [ReleaseRows](../../data/oledb/crowset-releaserows.md) to decrement the count. Rows returned by the move methods have a reference count of one.
 
 ## <a name="close"></a> CRowset::Close
 
-Releases rows and the current [IRowset](/previous-versions/windows/desktop/ms720986) interface.  
+Releases rows and the current [IRowset](/previous-versions/windows/desktop/ms720986) interface.
 
-### Syntax  
+### Syntax
 
 ```cpp
 void Close() throw();
-```  
+```
 
-### Remarks  
+### Remarks
 
-This method releases all rows currently in the rowset.  
+This method releases all rows currently in the rowset.
 
 ## <a name="compare"></a> CRowset::Compare
 
-Compares two bookmarks using [IRowsetLocate::Compare](/previous-versions/windows/desktop/ms709539).  
+Compares two bookmarks using [IRowsetLocate::Compare](/previous-versions/windows/desktop/ms709539).
 
-### Syntax  
+### Syntax
 
 ```cpp
-HRESULT Compare(const CBookmarkBase& bookmark1,   
-   const CBookmarkBase& bookmark2,   
+HRESULT Compare(const CBookmarkBase& bookmark1, 
+   const CBookmarkBase& bookmark2, 
    DBCOMPARE* pComparison) const throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *Bookmark1*<br/>
-[in] The first bookmark to compare.  
+[in] The first bookmark to compare.
 
 *Bookmark2*<br/>
-[in] The second bookmark to compare.  
+[in] The second bookmark to compare.
 
 *pComparison*<br/>
-[out] A pointer to the result of the comparison.  
+[out] A pointer to the result of the comparison.
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-This method requires the optional interface `IRowsetLocate`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetLocate` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.  
+This method requires the optional interface `IRowsetLocate`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetLocate` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.
 
-For information about using bookmarks in consumers, see [Using Bookmarks](../../data/oledb/using-bookmarks.md).  
+For information about using bookmarks in consumers, see [Using Bookmarks](../../data/oledb/using-bookmarks.md).
 
 ## <a name="crowset"></a> CRowset::CRowset
 
-Creates a new `CRowset` object and (optionally) associates it with an [IRowset](/previous-versions/windows/desktop/ms720986) interface supplied as a parameter.  
+Creates a new `CRowset` object and (optionally) associates it with an [IRowset](/previous-versions/windows/desktop/ms720986) interface supplied as a parameter.
 
-### Syntax  
+### Syntax
 
 ```cpp
-CRowset();   
+CRowset(); 
 
 CRowset(IRowset* pRowset);
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *pRowset*<br/>
-[in] A pointer to an `IRowset` interface to be associated with this class.  
+[in] A pointer to an `IRowset` interface to be associated with this class.
 
 ## <a name="delete"></a> CRowset::Delete
 
-Calls [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v%3dvs.85)) to delete the current row from the rowset.  
+Calls [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v%3dvs.85)) to delete the current row from the rowset.
 
-### Syntax  
+### Syntax
 
 ```cpp
 HRESULT Delete() const throw();
-```  
+```
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
 ## <a name="findnextrow"></a> CRowset::FindNextRow
 
-Finds the next matching row after the specified bookmark.  
+Finds the next matching row after the specified bookmark.
 
-### Syntax  
+### Syntax
 
 ```cpp
-HRESULT FindNextRow(DBCOMPAREOP op,   
-   BYTE* pData,   
-   DBTYPE wType,   
-   DBLENGTH nLength,   
-   BYTE bPrecision,   
-   BYTE bScale,   
-   BOOL bSkipCurrent = TRUE,   
+HRESULT FindNextRow(DBCOMPAREOP op, 
+   BYTE* pData, 
+   DBTYPE wType, 
+   DBLENGTH nLength, 
+   BYTE bPrecision, 
+   BYTE bScale, 
+   BOOL bSkipCurrent = TRUE, 
    CBookmarkBase* pBookmark = NULL) throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *op*<br/>
-[in] The operation to use in comparing row values. For values, see [IRowsetFind::FindNextRow](/previous-versions/windows/desktop/ms723091).  
+[in] The operation to use in comparing row values. For values, see [IRowsetFind::FindNextRow](/previous-versions/windows/desktop/ms723091).
 
 *pData*<br/>
-[in] A pointer to the value to be matched.  
+[in] A pointer to the value to be matched.
 
 *wType*<br/>
-[in] Indicates the data type of the value part of the buffer. For information about type indicators, see [Data Types](/previous-versions/windows/desktop/ms723969) in the *OLE DB Programmer's Reference* in the Windows SDK.  
+[in] Indicates the data type of the value part of the buffer. For information about type indicators, see [Data Types](/previous-versions/windows/desktop/ms723969) in the *OLE DB Programmer's Reference* in the Windows SDK.
 
 *nLength*<br/>
-[in] The length, in bytes, of the consumer data structure allocated for the data value. For details, see the description of `cbMaxLen` in [DBBINDING Structures](/previous-versions/windows/desktop/ms716845) in the *OLE DB Programmer's Reference.*  
+[in] The length, in bytes, of the consumer data structure allocated for the data value. For details, see the description of `cbMaxLen` in [DBBINDING Structures](/previous-versions/windows/desktop/ms716845) in the *OLE DB Programmer's Reference.*
 
 *bPrecision*<br/>
-[in] The maximum precision used when getting data. Used only if *wType* is DBTYPE_NUMERIC. For more information, see [Conversions involving DBTYPE_NUMERIC or DBTYPE_DECIMAL](/previous-versions/windows/desktop/ms719714) in the *OLE DB Programmer's Reference*.  
+[in] The maximum precision used when getting data. Used only if *wType* is DBTYPE_NUMERIC. For more information, see [Conversions involving DBTYPE_NUMERIC or DBTYPE_DECIMAL](/previous-versions/windows/desktop/ms719714) in the *OLE DB Programmer's Reference*.
 
 *bScale*<br/>
-[in] The scale used when getting data. Used only if *wType* is DBTYPE_NUMERIC or DBTYPE_DECIMAL. For more information, see [Conversions involving DBTYPE_NUMERIC or DBTYPE_DECIMAL](/previous-versions/windows/desktop/ms719714) in the *OLE DB Programmer's Reference*.  
+[in] The scale used when getting data. Used only if *wType* is DBTYPE_NUMERIC or DBTYPE_DECIMAL. For more information, see [Conversions involving DBTYPE_NUMERIC or DBTYPE_DECIMAL](/previous-versions/windows/desktop/ms719714) in the *OLE DB Programmer's Reference*.
 
 *bSkipCurrent*<br/>
-[in] The number of rows from the bookmark at which to start a search.  
+[in] The number of rows from the bookmark at which to start a search.
 
 *pBookmark*<br/>
-[in] The bookmark for position at which to start a search.  
+[in] The bookmark for position at which to start a search.
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-This method requires the optional interface `IRowsetFind`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetFind` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.  
+This method requires the optional interface `IRowsetFind`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetFind` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.
 
-For information about using bookmarks in consumers, see [Using Bookmarks](../../data/oledb/using-bookmarks.md).  
+For information about using bookmarks in consumers, see [Using Bookmarks](../../data/oledb/using-bookmarks.md).
 
 ## <a name="getapproximateposition"></a> CRowset::GetApproximatePosition
 
-Returns the approximate position of a row corresponding to a bookmark.  
+Returns the approximate position of a row corresponding to a bookmark.
 
-### Syntax  
+### Syntax
 
 ```cpp
-HRESULT GetApproximatePosition(const CBookmarkBase* pBookmark,   
-   DBCOUNTITEM* pPosition,   
+HRESULT GetApproximatePosition(const CBookmarkBase* pBookmark, 
+   DBCOUNTITEM* pPosition, 
    DBCOUNTITEM* pcRows) throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *pBookmark*<br/>
-[in] A pointer to a bookmark that identifies the row whose position is to be found. NULL if only the row count is required.  
+[in] A pointer to a bookmark that identifies the row whose position is to be found. NULL if only the row count is required.
 
 *pPosition*<br/>
-[out] A pointer to the location where `GetApproximatePosition` returns the position of the row. NULL if the position is not required.  
+[out] A pointer to the location where `GetApproximatePosition` returns the position of the row. NULL if the position is not required.
 
 *pcRows*<br/>
-[out] A pointer to the location where `GetApproximatePosition` returns the total number of rows. NULL if the row count is not required.  
+[out] A pointer to the location where `GetApproximatePosition` returns the total number of rows. NULL if the row count is not required.
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-This method requires the optional interface `IRowsetScroll`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetScroll` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.  
+This method requires the optional interface `IRowsetScroll`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetScroll` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.
 
-For information about using bookmarks in consumers, see [Using Bookmarks](../../data/oledb/using-bookmarks.md).  
+For information about using bookmarks in consumers, see [Using Bookmarks](../../data/oledb/using-bookmarks.md).
 
 ## <a name="getdata"></a> CRowset::GetData
 
-Retrieves data from the rowset's copy of the row.  
+Retrieves data from the rowset's copy of the row.
 
-### Syntax  
+### Syntax
 
 ```cpp
-HRESULT GetData() throw();   
+HRESULT GetData() throw(); 
 
 HRESULT GetData(int nAccessor) throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *nAccessor*<br/>
-[in] The (zero-offset) index number of the accessor to use for accessing the data.  
+[in] The (zero-offset) index number of the accessor to use for accessing the data.
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-If you specify an accessor that is not an autoaccessor in [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md), use this method to explicitly get the data by passing the accessor number.  
+If you specify an accessor that is not an autoaccessor in [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md), use this method to explicitly get the data by passing the accessor number.
 
 ## <a name="getdatahere"></a> CRowset::GetDataHere
 
-Retrieves data from the current row and places it into the specified buffer.  
+Retrieves data from the current row and places it into the specified buffer.
 
-### Syntax  
+### Syntax
 
 ```cpp
-HRESULT GetDataHere(int nAccessor,   
+HRESULT GetDataHere(int nAccessor, 
    void* pBuffer) throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *nAccessor*<br/>
-[in] The index number of the accessor to use for accessing the data.  
+[in] The index number of the accessor to use for accessing the data.
 
 *pBuffer*<br/>
-[out] A buffer into which to place the data for the current record.  
+[out] A buffer into which to place the data for the current record.
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
 For an example of how to use this function, see the [MultiRead sample](../../visual-cpp-samples.md).
 
 ## <a name="getoriginaldata"></a> CRowset::GetOriginalData
 
-Calls `IRowsetUpdate::GetOriginalData` to retrieve the data most recently fetched from or transmitted to the data source.  
+Calls `IRowsetUpdate::GetOriginalData` to retrieve the data most recently fetched from or transmitted to the data source.
 
-### Syntax  
+### Syntax
 
 ```cpp
 HRESULT GetOriginalData() throw();
-```  
+```
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-This method retrieves the data most recently fetched from or transmitted to the data source; it does not retrieve values based on pending changes.  
+This method retrieves the data most recently fetched from or transmitted to the data source; it does not retrieve values based on pending changes.
 
-This method requires the optional interface `IRowsetUpdate`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetUpdate` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset. 
+This method requires the optional interface `IRowsetUpdate`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetUpdate` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.
 
 ## <a name="getrowstatus"></a> CRowset::GetRowStatus
 
-Returns the status of all rows.  
+Returns the status of all rows.
 
-### Syntax  
+### Syntax
 
 ```cpp
 HRESULT GetRowStatus(DBPENDINGSTATUS* pStatus) const throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *pStatus*<br/>
-[out] A pointer to a location where `GetRowStatus` returns the status value. See DBPENDINGSTATUS in the OLE DB Programmer's Reference.  
+[out] A pointer to a location where `GetRowStatus` returns the status value. See DBPENDINGSTATUS in the OLE DB Programmer's Reference.
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-This method requires the optional interface `IRowsetUpdate`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetUpdate` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.   
+This method requires the optional interface `IRowsetUpdate`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetUpdate` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.
 
 ## <a name="insert"></a> CRowset::Insert
 
-Creates and initializes a new row using data from the accessor.  
+Creates and initializes a new row using data from the accessor.
 
-### Syntax  
+### Syntax
 
 ```cpp
-HRESULT Insert(int nAccessor = 0,   
+HRESULT Insert(int nAccessor = 0, 
    bool bGetHRow = false) throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *nAccessor*<br/>
-[in] The number of the accessor to use for inserting the data.  
+[in] The number of the accessor to use for inserting the data.
 
 *bGetHRow*<br/>
-[in] Indicates whether the handle for the inserted row is retrieved.  
+[in] Indicates whether the handle for the inserted row is retrieved.
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-This method requires the optional interface `IRowsetChange`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetChange` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.  
+This method requires the optional interface `IRowsetChange`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetChange` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.
 
-Insert might fail if one or more columns is not writable. Modify your cursor map to correct this.  
+Insert might fail if one or more columns is not writable. Modify your cursor map to correct this.
 
-### Example  
+### Example
 
-The following example shows how to access a data source through a rowset and then insert a string using a table in that rowset.  
+The following example shows how to access a data source through a rowset and then insert a string using a table in that rowset.
 
-First, create a table class by inserting a New ATL Object into your project. For example, right-click the project in the Workspace pane and select **New ATL Object**. From the **Data Access** category, select **Consumer**. Create a consumer object of type **Table**. (Selecting **Table** creates a rowset directly from the table; selecting **Command** creates a rowset through a SQL command.) Select a data source, specifying a table through which to access that data source. If you call your consumer object **CCustomerTable**, you would then implement your insertion code as follows:  
+First, create a table class by inserting a New ATL Object into your project. For example, right-click the project in the Workspace pane and select **New ATL Object**. From the **Data Access** category, select **Consumer**. Create a consumer object of type **Table**. (Selecting **Table** creates a rowset directly from the table; selecting **Command** creates a rowset through a SQL command.) Select a data source, specifying a table through which to access that data source. If you call your consumer object **CCustomerTable**, you would then implement your insertion code as follows:
 
-[!code-cpp[NVC_OLEDB_Consumer#10](../../data/oledb/codesnippet/cpp/crowset-insert_1.cpp)]  
+[!code-cpp[NVC_OLEDB_Consumer#10](../../data/oledb/codesnippet/cpp/crowset-insert_1.cpp)]
 
 ## <a name="issamerow"></a> CRowset::IsSameRow
 
-Compares the specified row with the current row.  
+Compares the specified row with the current row.
 
-### Syntax  
+### Syntax
 
 ```cpp
 HRESULT IsSameRow(HROW hRow) const throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *hRow*<br/>
-[in] A handle to the row to compare to the current row.  
+[in] A handle to the row to compare to the current row.
 
-### Return Value  
+### Return Value
 
-A standard HRESULT. S_OK indicates the rows are the same. For other values, see [IRowsetIndentity::IsSameRow](/previous-versions/windows/desktop/ms719629) in the *OLE DB Programmer's Reference* in the Windows SDK.  
+A standard HRESULT. S_OK indicates the rows are the same. For other values, see [IRowsetIndentity::IsSameRow](/previous-versions/windows/desktop/ms719629) in the *OLE DB Programmer's Reference* in the Windows SDK.
 
 ## <a name="movefirst"></a> CRowset::MoveFirst
 
-Moves the cursor to the initial position and retrieves the initial row.  
+Moves the cursor to the initial position and retrieves the initial row.
 
-### Syntax  
+### Syntax
 
 ```cpp
 HRESULT MoveFirst() throw();
-```  
+```
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-Calls [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877) to reposition the next-fetch location to the initial position (the position that was the next-fetch location when the rowset was created) and retrieves the initial row.  
+Calls [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877) to reposition the next-fetch location to the initial position (the position that was the next-fetch location when the rowset was created) and retrieves the initial row.
 
 ## <a name="movelast"></a> CRowset::MoveLast
 
-Moves the cursor to the last row.  
+Moves the cursor to the last row.
 
-### Syntax  
+### Syntax
 
 ```cpp
 HRESULT MoveLast() throw();
-```  
+```
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-Calls [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877) to reposition the next-fetch location to the last position and retrieves the last row.  
+Calls [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877) to reposition the next-fetch location to the last position and retrieves the last row.
 
-This method requires that you set `DBPROP_CANSCROLLBACKWARDS` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset. (For better performance, you might also set `DBPROP_QUICKRESTART` to VARIANT_TRUE.)  
+This method requires that you set `DBPROP_CANSCROLLBACKWARDS` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset. (For better performance, you might also set `DBPROP_QUICKRESTART` to VARIANT_TRUE.)
 
 ## <a name="movenext"></a> CRowset::MoveNext
 
-Moves the cursor to the next record.  
+Moves the cursor to the next record.
 
-### Syntax  
+### Syntax
 
 ```cpp
 HRESULT MoveNext() throw();
 
-HRESULT MoveNext(LONG lSkip,   
+HRESULT MoveNext(LONG lSkip, 
    bool bForward= true) throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *lSkip*<br/>
-[in] The number of rows to skip before fetching.  
+[in] The number of rows to skip before fetching.
 
 *bForward*<br/>
-[in] Pass **true** to move forward to the next record, **false** to move backward.  
+[in] Pass **true** to move forward to the next record, **false** to move backward.
 
-### Return Value  
+### Return Value
 
-A standard HRESULT. When the end of the rowset has been reached, returns DB_S_ENDOFROWSET.  
+A standard HRESULT. When the end of the rowset has been reached, returns DB_S_ENDOFROWSET.
 
-### Remarks  
+### Remarks
 
-Fetches the next sequential row from the `CRowset` object, remembering the previous position. Optionally, you can choose to skip ahead *lSkip* rows or move backward.  
+Fetches the next sequential row from the `CRowset` object, remembering the previous position. Optionally, you can choose to skip ahead *lSkip* rows or move backward.
 
-This method requires that you set the following properties before calling `Open` on the table or command containing the rowset:  
+This method requires that you set the following properties before calling `Open` on the table or command containing the rowset:
 
-- `DBPROP_CANSCROLLBACKWARDS` must be VARIANT_TRUE if *lSkip* < 0  
+- `DBPROP_CANSCROLLBACKWARDS` must be VARIANT_TRUE if *lSkip* < 0
 
-- `DBPROP_CANFETCHBACKWARDS` must be VARIANT_TRUE if *bForward* = false  
+- `DBPROP_CANFETCHBACKWARDS` must be VARIANT_TRUE if *bForward* = false
 
-Otherwise (if *lSkip* >= 0 and *bForward* = true), you do not need to set any additional properties.  
+Otherwise (if *lSkip* >= 0 and *bForward* = true), you do not need to set any additional properties.
 
 ## <a name="moveprev"></a> CRowset::MovePrev
 
-Moves the cursor to the previous record.  
+Moves the cursor to the previous record.
 
-### Syntax  
+### Syntax
 
 ```cpp
 HRESULT MovePrev() throw();
-```  
+```
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-This method requires that you set either `DBPROP_CANFETCHBACKWARDS` or `DBPROP_CANSCROLLBACKWARDS` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset. 
+This method requires that you set either `DBPROP_CANFETCHBACKWARDS` or `DBPROP_CANSCROLLBACKWARDS` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.
 
 ## <a name="movetobookmark"></a> CRowset::MoveToBookmark
 
-Fetches the row marked by a bookmark or the row at a specified offset (*lSkip*) from that bookmark.  
+Fetches the row marked by a bookmark or the row at a specified offset (*lSkip*) from that bookmark.
 
-### Syntax  
+### Syntax
 
 ```cpp
-HRESULT MoveToBookmark(const CBookmarkBase& bookmark,   
+HRESULT MoveToBookmark(const CBookmarkBase& bookmark, 
    LONG lSkip = 0) throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *bookmark*<br/>
-[in] A bookmark marking the location from which you want to fetch data.  
+[in] A bookmark marking the location from which you want to fetch data.
 
 *lSkip*<br/>
-[in] The number count of rows from the bookmark to the target row. If *lSkip* is zero, the first row fetched is the bookmarked row. If *lSkip* is 1, the first row fetched is the row after the bookmarked row. If *lSkip* is -1, the first row fetched is the row before the bookmarked row.  
+[in] The number count of rows from the bookmark to the target row. If *lSkip* is zero, the first row fetched is the bookmarked row. If *lSkip* is 1, the first row fetched is the row after the bookmarked row. If *lSkip* is -1, the first row fetched is the row before the bookmarked row.
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-This method requires the optional interface `IRowsetLocate`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetLocate` to VARIANT_TRUE and set `DBPROP_CANFETCHBACKWARDS` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.  
+This method requires the optional interface `IRowsetLocate`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetLocate` to VARIANT_TRUE and set `DBPROP_CANFETCHBACKWARDS` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.
 
-For information about using bookmarks in consumers, see [Using Bookmarks](../../data/oledb/using-bookmarks.md).  
+For information about using bookmarks in consumers, see [Using Bookmarks](../../data/oledb/using-bookmarks.md).
 
 ## <a name="movetoratio"></a> CRowset::MoveToRatio
 
-Fetches rows starting from a fractional position in the rowset.  
+Fetches rows starting from a fractional position in the rowset.
 
-### Syntax  
+### Syntax
 
 ```cpp
-HRESULT MoveToRatio(DBCOUNTITEM nNumerator,   
+HRESULT MoveToRatio(DBCOUNTITEM nNumerator, 
    DBCOUNTITEM nDenominator,bool bForward = true) throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *nNumerator*<br/>
-[in] The numerator used to determine the fractional positional from which to fetch data.  
+[in] The numerator used to determine the fractional positional from which to fetch data.
 
 *nDenominator*<br/>
-[in] The denominator used to determine the fractional positional from which to fetch data.  
+[in] The denominator used to determine the fractional positional from which to fetch data.
 
 *bForward*<br/>
-[in] Indicates whether to move forward or backward. The default is forward.  
+[in] Indicates whether to move forward or backward. The default is forward.
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-`MoveToRatio` fetches rows according roughly to the following formula:  
+`MoveToRatio` fetches rows according roughly to the following formula:
 
-`(nNumerator *  RowsetSize ) / nDenominator`  
+`(nNumerator *  RowsetSize ) / nDenominator`
 
-where `RowsetSize` is the size of the rowset, measured in rows. The accuracy of this formula depends on the specific provider. For details, see [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602).  
+where `RowsetSize` is the size of the rowset, measured in rows. The accuracy of this formula depends on the specific provider. For details, see [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602).
 
-This method requires the optional interface `IRowsetScroll`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetScroll` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.  
+This method requires the optional interface `IRowsetScroll`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetScroll` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.
 
 ## <a name="releaserows"></a> CRowset::ReleaseRows
 
-Calls [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771) to release the current row handle.  
+Calls [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771) to release the current row handle.
 
-### Syntax  
+### Syntax
 
 ```cpp
 HRESULT ReleaseRows() throw();
-```  
+```
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
 ## <a name="setdata"></a> CRowset::SetData
 
-Sets data values in one or more columns of a row.  
+Sets data values in one or more columns of a row.
 
-### Syntax  
+### Syntax
 
 ```cpp
-HRESULT SetData() const throw();   
+HRESULT SetData() const throw(); 
 
 HRESULT SetData(int nAccessor) const throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *nAccessor*<br/>
-[in] The number of the accessor to use for accessing the data.  
+[in] The number of the accessor to use for accessing the data.
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-For the `SetData` form that accepts no arguments, all accessors are used for updating. You typically call `SetData` to set data values in columns in a row, then call [Update](../../data/oledb/crowset-update.md) to transmit those changes.  
+For the `SetData` form that accepts no arguments, all accessors are used for updating. You typically call `SetData` to set data values in columns in a row, then call [Update](../../data/oledb/crowset-update.md) to transmit those changes.
 
-This method requires the optional interface `IRowsetChange`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetChange` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.  
+This method requires the optional interface `IRowsetChange`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetChange` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.
 
-The setting operation might fail if one or more columns is not writable. Modify your cursor map to correct this. 
+The setting operation might fail if one or more columns is not writable. Modify your cursor map to correct this.
 
 ## <a name="undo"></a> CRowset::Undo
 
-Undoes any changes made to a row since the last fetch or [Update](../../data/oledb/crowset-update.md).  
+Undoes any changes made to a row since the last fetch or [Update](../../data/oledb/crowset-update.md).
 
-### Syntax  
+### Syntax
 
 ```cpp
-HRESULT Undo(DBCOUNTITEM* pcRows = NULL,   
-   HROW* phRow = NULL,   
+HRESULT Undo(DBCOUNTITEM* pcRows = NULL, 
+   HROW* phRow = NULL, 
    DBROWSTATUS* pStatus = NULL) throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *pcRows*<br/>
-[out] A pointer to the location where `Undo` returns the number of rows it attempted to undo if required.  
+[out] A pointer to the location where `Undo` returns the number of rows it attempted to undo if required.
 
 *phRow*<br/>
-[out] A pointer to the location where `Undo` returns an array of handles to all rows it attempted to undo if required.  
+[out] A pointer to the location where `Undo` returns an array of handles to all rows it attempted to undo if required.
 
 *pStatus*<br/>
-[out] A pointer to the location where `Undo` returns the row status value. No status is returned if *pStatus* is null.  
+[out] A pointer to the location where `Undo` returns the row status value. No status is returned if *pStatus* is null.
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-This method requires the optional interface `IRowsetUpdate`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetUpdate` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.  
+This method requires the optional interface `IRowsetUpdate`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetUpdate` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.
 
 ## <a name="update"></a> CRowset::Update
 
-Transmits any pending changes made to the current row since the last fetch or `Update` call on it.  
+Transmits any pending changes made to the current row since the last fetch or `Update` call on it.
 
-### Syntax  
+### Syntax
 
 ```cpp
-HRESULT Update(DBCOUNTITEM* pcRows = NULL,   
-   HROW* phRow = NULL,   
+HRESULT Update(DBCOUNTITEM* pcRows = NULL, 
+   HROW* phRow = NULL, 
    DBROWSTATUS* pStatus = NULL) throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *pcRows*<br/>
-[out] A pointer to the location where `Update` returns the number of rows it attempted to update, if required.  
+[out] A pointer to the location where `Update` returns the number of rows it attempted to update, if required.
 
 *phRow*<br/>
-[out] A pointer to the location where `Update` returns the handle of the row it attempted to update. No handle is returned if *phRow* is null.  
+[out] A pointer to the location where `Update` returns the handle of the row it attempted to update. No handle is returned if *phRow* is null.
 
 *pStatus*<br/>
-[out] A pointer to the location where `Update` returns the row status value. No status is returned if *pStatus* is null.  
+[out] A pointer to the location where `Update` returns the row status value. No status is returned if *pStatus* is null.
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-### Remarks  
+### Remarks
 
-Transmits any pending changes made to the current row since that row was last fetched or updated (using `Update` or [UpdateAll](../../data/oledb/crowset-updateall.md)). You typically call [SetData](../../data/oledb/crowset-setdata.md) to set data values in columns in a row, and then call `Update` to transmit those changes.  
+Transmits any pending changes made to the current row since that row was last fetched or updated (using `Update` or [UpdateAll](../../data/oledb/crowset-updateall.md)). You typically call [SetData](../../data/oledb/crowset-setdata.md) to set data values in columns in a row, and then call `Update` to transmit those changes.
 
-This method requires the optional interface `IRowsetUpdate`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetUpdate` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.  
+This method requires the optional interface `IRowsetUpdate`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetUpdate` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.
 
 ## <a name="updateall"></a> CRowset::UpdateAll
 
-Transmits any pending changes made to all rows since the last fetch or `Update` call on it.  
+Transmits any pending changes made to all rows since the last fetch or `Update` call on it.
 
-### Syntax  
+### Syntax
 
 ```cpp
-HRESULT UpdateAll(DBCOUNTITEM* pcRows = NULL,   
-   HROW** pphRow = NULL,   
+HRESULT UpdateAll(DBCOUNTITEM* pcRows = NULL, 
+   HROW** pphRow = NULL, 
    DBROWSTATUS** ppStatus = NULL) throw();
-```  
+```
 
-#### Parameters  
+#### Parameters
 
 *pcRows*<br/>
-[out] A pointer to the location where `UpdateAll` returns the number of rows it attempted to update, if required.  
+[out] A pointer to the location where `UpdateAll` returns the number of rows it attempted to update, if required.
 
 *pphRow*<br/>
-[out] A pointer to memory in which `UpdateAll` returns the handle of the row it attempted to update. No handle is returned if *pphRow* is null.  
+[out] A pointer to memory in which `UpdateAll` returns the handle of the row it attempted to update. No handle is returned if *pphRow* is null.
 
 *ppStatus*<br/>
-[out] A pointer to the location where `Update` returns the row status value. No status is returned if *ppStatus* is null.  
+[out] A pointer to the location where `Update` returns the row status value. No status is returned if *ppStatus* is null.
 
-### Remarks  
+### Remarks
 
-Transmits any pending changes made to all rows since those rows were last fetched or updated using [Update](../../data/oledb/crowset-update.md) or `UpdateAll`. `UpdateAll` will update every row that has been modified, regardless of whether you still have the handle for them (see *pphRow*) or not.  
+Transmits any pending changes made to all rows since those rows were last fetched or updated using [Update](../../data/oledb/crowset-update.md) or `UpdateAll`. `UpdateAll` will update every row that has been modified, regardless of whether you still have the handle for them (see *pphRow*) or not.
 
-For example, if you used `Insert` to insert five rows in a rowset, you could either call `Update` five times or call `UpdateAll` once to update them all.  
+For example, if you used `Insert` to insert five rows in a rowset, you could either call `Update` five times or call `UpdateAll` once to update them all.
 
-This method requires the optional interface `IRowsetUpdate`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetUpdate` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.  
+This method requires the optional interface `IRowsetUpdate`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetUpdate` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.
 
-### Return Value  
+### Return Value
 
-A standard HRESULT.  
+A standard HRESULT.
 
-## See Also  
+## See Also
 
 [DBViewer Sample](../../visual-cpp-samples.md)<br/>
 [MultiRead Sample](../../visual-cpp-samples.md)<br/>

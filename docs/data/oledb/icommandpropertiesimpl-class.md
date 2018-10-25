@@ -14,78 +14,78 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandPropertiesImpl Class
 
-Provides an implementation of the [ICommandProperties](/previous-versions/windows/desktop/ms723044) interface.  
+Provides an implementation of the [ICommandProperties](/previous-versions/windows/desktop/ms723044) interface.
 
 ## Syntax
 
 ```cpp
 template <class T, class PropClass = T>
-class ATL_NO_VTABLE ICommandPropertiesImpl   
+class ATL_NO_VTABLE ICommandPropertiesImpl
    : public ICommandProperties, public CUtlProps<PropClass>
-```  
+```
 
-### Parameters  
+### Parameters
 
 *T*<br/>
-Your class, derived from  
+Your class, derived from
 
 *PropClass*<br/>
-Your properties class.  
+Your properties class.
 
-## Requirements  
+## Requirements
 
-**Header:** atldb.h  
+**Header:** atldb.h
 
-## Members  
+## Members
 
-### Interface Methods  
+### Interface Methods
 
 |||
 |-|-|
 |[GetProperties](#getproperties)|Returns the list of properties in the Rowset property group that are currently requested for the rowset.|
-|[SetProperties](#setproperties)|Sets properties in the Rowset property group.|  
+|[SetProperties](#setproperties)|Sets properties in the Rowset property group.|
 
-## Remarks  
+## Remarks
 
-This is mandatory on commands. The implementation is provided by a static function defined by the [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) macro.  
+This is mandatory on commands. The implementation is provided by a static function defined by the [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) macro.
 
 ## <a name="getproperties"></a> ICommandPropertiesImpl::GetProperties
 
-Returns all the requested property sets using the command's property map.  
+Returns all the requested property sets using the command's property map.
 
-### Syntax  
+### Syntax
 
 ```cpp
-STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,   
-   const DBPROPIDSET rgPropertyIDSets[],   
-   ULONG * pcPropertySets,   
+STDMETHOD(GetProperties)(const ULONG cPropertyIDSets, 
+   const DBPROPIDSET rgPropertyIDSets[], 
+   ULONG * pcPropertySets, 
    DBPROPSET ** prgPropertySets);
-```  
+```
 
-#### Parameters  
+#### Parameters
 
-See [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723119) in the *OLE DB Programmer's Reference*.  
+See [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723119) in the *OLE DB Programmer's Reference*.
 
-### Remarks  
+### Remarks
 
-See [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).  
+See [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
 
 ## <a name="setproperties"></a> ICommandPropertiesImpl::SetProperties
 
-Sets properties for the command object.  
+Sets properties for the command object.
 
-### Syntax  
+### Syntax
 
 ```cpp
-STDMETHOD(SetProperties)(ULONG cPropertySets,   
+STDMETHOD(SetProperties)(ULONG cPropertySets, 
    DBPROPSET rgPropertySets[]);
-```  
+```
 
-#### Parameters  
+#### Parameters
 
-See [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497) in the *OLE DB Programmer's Reference*.  
+See [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497) in the *OLE DB Programmer's Reference*.
 
-## See Also  
+## See Also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

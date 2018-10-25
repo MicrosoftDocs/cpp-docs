@@ -18,9 +18,9 @@ Determines whether floating-point contraction takes place. A floating-point cont
 
 ## Syntax
 
-> **#pragma fp_contract (** { **on** | **off** } **)**  
+> **#pragma fp_contract (** { **on** | **off** } **)**
 
-## Remarks  
+## Remarks
 
 By default, **fp_contract** is **on**. This tells the compiler to use floating-point contraction instructions where possible. Set **fp_contract** to **off** to preserve individual floating-point instructions.
 
@@ -34,7 +34,7 @@ Other floating-point pragmas include:
 
 ## Example
 
-The code generated from this sample does not use a fused-multiply-add instruction even when it is available on the target processor. If you comment out `#pragma fp_contract (off)`, the generated code may use a fused-multiply-add instruction if it is available.  
+The code generated from this sample does not use a fused-multiply-add instruction even when it is available on the target processor. If you comment out `#pragma fp_contract (off)`, the generated code may use a fused-multiply-add instruction if it is available.
 
 ```cpp
 // pragma_directive_fp_contract.cpp

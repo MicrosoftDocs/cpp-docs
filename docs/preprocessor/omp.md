@@ -13,18 +13,18 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # omp
-Takes one or more OpenMP directives, along with any optional directive clauses.  
+Takes one or more OpenMP directives, along with any optional directive clauses.
 
-## Syntax  
+## Syntax
 
 ```
 #pragma omp directive
-```  
+```
 
-## Remarks  
+## Remarks
 
-See [OpenMP Directives](../parallel/openmp/reference/openmp-directives.md) for more information.  
+See [OpenMP Directives](../parallel/openmp/reference/openmp-directives.md) for more information.
 
-## See Also  
+## See Also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -92,17 +92,17 @@ public:
 
 int main() {
    MyClass * pMyClass = nullptr;
-   if ( pMyClass == nullptr)  
+   if ( pMyClass == nullptr)
       System::Console::WriteLine("pMyClass == nullptr");
 
-   if ( pMyClass == 0)  
+   if ( pMyClass == 0)
       System::Console::WriteLine("pMyClass == 0");
 
    pMyClass = 0;
-   if ( pMyClass == nullptr)  
+   if ( pMyClass == nullptr)
       System::Console::WriteLine("pMyClass == nullptr");
 
-   if ( pMyClass == 0)  
+   if ( pMyClass == 0)
       System::Console::WriteLine("pMyClass == 0");
 }
 ```
@@ -189,7 +189,7 @@ ref class MyClass {
 public:
    void Test() {
       MyClass ^pMyClass;   // gc type
-      if (pMyClass == nullptr)  
+      if (pMyClass == nullptr)
          Console::WriteLine("NULL");
    }
 };

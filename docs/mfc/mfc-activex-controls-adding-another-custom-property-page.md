@@ -52,7 +52,7 @@ For more information on using property pages in an ActiveX control, see the foll
 
 1. From the shortcut menu, click **Add** and then click **Add Class**.
 
-     This opens the [Add Class](../ide/add-class-dialog-box.md) dialog box.
+   This opens the [Add Class](../ide/add-class-dialog-box.md) dialog box.
 
 1. Double-click the **MFC Class** template.
 
@@ -82,25 +82,25 @@ The next step involves creating two new string resources that will provide a typ
 
 1. Double-click the **String Table** folder and then double-click the existing string table resource to which you want to add a string.
 
-     This opens the string table in a window.
+   This opens the string table in a window.
 
 1. Select the blank line at the end of the string table and type the text, or caption, of the string: for example, "Additional Property Page."
 
-     This opens a **String Properties** page showing **Caption** and **ID** boxes. The **Caption** box contains the string you typed.
+   This opens a **String Properties** page showing **Caption** and **ID** boxes. The **Caption** box contains the string you typed.
 
 1. In the **ID** box, select or type an ID for the string. Press Enter when you finish.
 
-     This example uses **IDS_SAMPLE_ADDPAGE** for the type name of the new property page.
+   This example uses **IDS_SAMPLE_ADDPAGE** for the type name of the new property page.
 
 1. Repeat steps 3 and 4 using **IDS_SAMPLE_ADDPPG_CAPTION** for the ID and "Additional Property Page" for the caption.
 
 1. In the .CPP file of your new property page class (in this example, `CAddtlPropPage`) modify the `CAddtlPropPage::CAddtlPropPageFactory::UpdateRegistry` so that IDS_SAMPLE_ADDPAGE is passed by [AfxOleRegisterPropertyPageClass](../mfc/reference/registering-ole-controls.md#afxoleregisterpropertypageclass), as in the following example:
 
-     [!code-cpp[NVC_MFC_AxUI#33](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_2.cpp)]
+   [!code-cpp[NVC_MFC_AxUI#33](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_2.cpp)]
 
 1. Modify the constructor of `CAddtlPropPage` so that IDS_SAMPLE_ADDPPG_CAPTION is passed to the `COlePropertyPage` constructor, as follows:
 
-     [!code-cpp[NVC_MFC_AxUI#34](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_3.cpp)]
+   [!code-cpp[NVC_MFC_AxUI#34](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_3.cpp)]
 
 After you have made the necessary modifications rebuild your project and use Test Container to test the new property page. See [Testing Properties and Events with Test Container](../mfc/testing-properties-and-events-with-test-container.md) for information on how to access the test container.
 

@@ -154,7 +154,7 @@ For more information about the current API set and the minimum supported operati
 
 ### Windows version
 
-When upgrading a program that uses the Windows API either directly or indirectly, you will need to decide the minimum Windows version to support. In most cases Windows 7 is a good choice. For more information see [Header file problems](porting-guide-spy-increment.md#header_file_problems). The `WINVER` macro defines the oldest version of Windows that your program is designed to run on. If your MFC program sets WINVER to 0x0501 (Windows XP) you will get a warning because MFC no longer supports XP, even though the compiler itself has an XP mode.  
+When upgrading a program that uses the Windows API either directly or indirectly, you will need to decide the minimum Windows version to support. In most cases Windows 7 is a good choice. For more information see [Header file problems](porting-guide-spy-increment.md#header_file_problems). The `WINVER` macro defines the oldest version of Windows that your program is designed to run on. If your MFC program sets WINVER to 0x0501 (Windows XP) you will get a warning because MFC no longer supports XP, even though the compiler itself has an XP mode.
 
 For more information, see [Updating the Target Windows Version](porting-guide-spy-increment.md#updating_winver) and [More outdated header files](porting-guide-spy-increment.md#outdated_header_files).
 
@@ -181,4 +181,4 @@ For more information, see [Porting from MBCS to Unicode](porting-guide-spy-incre
 ## See also
 
 [Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
-[C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md)  
+[C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md)

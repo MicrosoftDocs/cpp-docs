@@ -44,7 +44,7 @@ It is strongly recommended that you use the MFC Application Wizard to create app
 
 - Treat the document as an unused appendage and implement your data management code in the view class, as suggested above. Overhead for the document is relatively low. A single [CDocument](../mfc/reference/cdocument-class.md) object incurs a small amount of overhead by itself, plus the small overhead of `CDocument`'s base classes, [CCmdTarget](../mfc/reference/ccmdtarget-class.md) and [CObject](../mfc/reference/cobject-class.md). Both of the latter classes are small.
 
-     Declared in `CDocument`:
+   Declared in `CDocument`:
 
    - Two `CString` objects.
 
@@ -54,7 +54,7 @@ It is strongly recommended that you use the MFC Application Wizard to create app
 
    - One `CPtrList` object, which contains a list of the document's views.
 
-     Additionally, the document requires the amount of time to create the document object, its view objects, a frame window, and a document template object.
+   Additionally, the document requires the amount of time to create the document object, its view objects, a frame window, and a document template object.
 
 - Treat both the document and view as unused appendages. Put your data management and drawing code in the frame window rather than the view. This approach is closer to the C-language programming model.
 

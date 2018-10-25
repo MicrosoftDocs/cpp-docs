@@ -15,65 +15,65 @@ ms.workload: ["cplusplus", "data-storage"]
 
 The Microsoft Foundation Classes (MFC) library supplies classes for programming with Open Database Connectivity (ODBC). As of Visual Studio 2015 and SQL Server 2012 ODBC is the preferred way to connect to SQL data sources.
 
-For more information about using the ODBC API without MFC, see the [Open Database Connectivity (ODBC)](/previous-versions/windows/desktop/ms710252) SDK in MSDN.  
-  
+For more information about using the ODBC API without MFC, see the [Open Database Connectivity (ODBC)](/previous-versions/windows/desktop/ms710252) SDK in MSDN.
 
-## In This Section  
 
-- [ODBC](odbc-basics.md)—the Open Database Connectivity standard and API  
+## In This Section
 
-- [What MFC Support Is Supplied](odbc-and-mfc.md) for ODBC programming  
+- [ODBC](odbc-basics.md)—the Open Database Connectivity standard and API
 
-- [What ODBC Drivers Are Available](odbc-driver-list.md)  
+- [What MFC Support Is Supplied](odbc-and-mfc.md) for ODBC programming
 
-- [Connecting to ODBC Data Sources](data-source-managing-connections-odbc.md)  
+- [What ODBC Drivers Are Available](odbc-driver-list.md)
 
-- [Record Field Exchange (RFX)](record-field-exchange-rfx.md) between a database and a recordset object  
+- [Connecting to ODBC Data Sources](data-source-managing-connections-odbc.md)
 
-- [ODBC Recordsets](recordset-odbc.md)  
+- [Record Field Exchange (RFX)](record-field-exchange-rfx.md) between a database and a recordset object
 
-- [SQL](sql.md) for ODBC  
+- [ODBC Recordsets](recordset-odbc.md)
 
-- [Database Transactions](transaction-odbc.md)  
+- [SQL](sql.md) for ODBC
 
-- [Determining the Schema of an ODBC Data Source](data-source-determining-the-schema-of-the-data-source-odbc.md) at run time  
+- [Database Transactions](transaction-odbc.md)
 
-- [Programmatically Configuring an ODBC Data Source](data-source-programmatically-configuring-an-odbc-data-source.md)  
+- [Determining the Schema of an ODBC Data Source](data-source-determining-the-schema-of-the-data-source-odbc.md) at run time
 
-- [Programmatically Creating a Table in an ODBC Data Source](data-source-programmatically-creating-a-table-in-an-odbc-data-source.md)  
+- [Programmatically Configuring an ODBC Data Source](data-source-programmatically-configuring-an-odbc-data-source.md)
 
-- [Fetching Records in Bulk](recordset-fetching-records-in-bulk-odbc.md)  
+- [Programmatically Creating a Table in an ODBC Data Source](data-source-programmatically-creating-a-table-in-an-odbc-data-source.md)
 
-- [Customizing my Recordset's SQL Statement](sql-customizing-your-recordsets-sql-statement-odbc.md)  
+- [Fetching Records in Bulk](recordset-fetching-records-in-bulk-odbc.md)
 
-- [Making Direct SQL Calls](sql-making-direct-sql-calls-odbc.md)  
+- [Customizing my Recordset's SQL Statement](sql-customizing-your-recordsets-sql-statement-odbc.md)
 
-- [Making Direct Calls to the ODBC API](odbc-calling-odbc-api-functions-directly.md)  
+- [Making Direct SQL Calls](sql-making-direct-sql-calls-odbc.md)
 
-- [How do the database classes work with MFC's document/view architecture?](working-with-documents-and-views.md)  
+- [Making Direct Calls to the ODBC API](odbc-calling-odbc-api-functions-directly.md)
 
-- [ODBC Driver List](odbc-driver-list.md)  
+- [How do the database classes work with MFC's document/view architecture?](working-with-documents-and-views.md)
 
-## ODBC Database Tasks  
+- [ODBC Driver List](odbc-driver-list.md)
 
-These tasks are based on the MFC [ODBC](odbc-basics.md) classes. For more information about using the ODBC API without MFC, see the [Open Database Connectivity (ODBC)](/previous-versions/windows/desktop/ms710252) SDK.  
+## ODBC Database Tasks
 
-- [Install and Get Started with ODBC](installing-and-getting-started-with-odbc.md)  
+These tasks are based on the MFC [ODBC](odbc-basics.md) classes. For more information about using the ODBC API without MFC, see the [Open Database Connectivity (ODBC)](/previous-versions/windows/desktop/ms710252) SDK.
 
-- [Design and Create an ODBC Database Application](design-and-create-an-odbc-database-application.md)  
+- [Install and Get Started with ODBC](installing-and-getting-started-with-odbc.md)
 
-- [Use Database Forms (Record Views) with ODBC](use-database-forms-record-views-with-odbc.md)  
+- [Design and Create an ODBC Database Application](design-and-create-an-odbc-database-application.md)
 
-- [Use ODBC to Work with Other Users](use-odbc-to-work-with-other-users.md)  
+- [Use Database Forms (Record Views) with ODBC](use-database-forms-record-views-with-odbc.md)
 
-- [Work with ODBC Database Connections](work-with-odbc-database-connections.md)  
+- [Use ODBC to Work with Other Users](use-odbc-to-work-with-other-users.md)
 
-- [Work with ODBC and Drivers](work-with-odbc-and-drivers.md)  
+- [Work with ODBC Database Connections](work-with-odbc-database-connections.md)
 
-- [Use the ODBC Cursor Library](use-the-odbc-cursor-library.md)  
+- [Work with ODBC and Drivers](work-with-odbc-and-drivers.md)
 
-- [Use MFC ODBC Recordsets](use-mfc-odbc-recordsets.md)  
+- [Use the ODBC Cursor Library](use-the-odbc-cursor-library.md)
 
-## See Also  
+- [Use MFC ODBC Recordsets](use-mfc-odbc-recordsets.md)
+
+## See Also
 
 [Data Access Programming (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)

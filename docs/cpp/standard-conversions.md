@@ -69,11 +69,11 @@ Value-preserving promotions and promotions that preserve signedness normally pro
 
 - An operand of **/**, `%`, `/=`, `%=`, **<**, **\<=**, **>**, or **>=**
 
-     These operators rely on sign for determining the result. Therefore, value-preserving and sign-preserving promotions produce different results when applied to these operands.
+   These operators rely on sign for determining the result. Therefore, value-preserving and sign-preserving promotions produce different results when applied to these operands.
 
 - The left operand of **>>** or **>>=**
 
-     These operators treat signed and unsigned quantities differently when performing a shift operation. For signed quantities, shifting a quantity right causes the sign bit to be propagated into the vacated bit positions. For unsigned quantities, the vacated bit positions are zero-filled.
+   These operators treat signed and unsigned quantities differently when performing a shift operation. For signed quantities, shifting a quantity right causes the sign bit to be propagated into the vacated bit positions. For unsigned quantities, the vacated bit positions are zero-filled.
 
 - An argument to an overloaded function or operand of an overloaded operator that depends on the signedness of the type of that operand for argument matching. (See [Overloaded Operators](../cpp/operator-overloading.md) for more about defining overloaded operators.)
 

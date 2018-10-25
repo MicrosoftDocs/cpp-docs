@@ -72,4 +72,4 @@ For more information, see [Attribute Contexts](cpp-attributes-com-net.md#context
 [custom](custom-cpp.md)<br/>
 [dispinterface](dispinterface.md)<br/>
 [object](object-cpp.md)<br/>
-[__interface](../../cpp/interface.md)  
+[__interface](../../cpp/interface.md)

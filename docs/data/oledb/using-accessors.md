@@ -13,18 +13,18 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using Accessors
 
-The following topics explain how to determine which type of accessor is best for your data application and then how to use the different types of accessors available:  
+The following topics explain how to determine which type of accessor is best for your data application and then how to use the different types of accessors available:
 
-- [Determining Which Accessor to Use](../../data/oledb/determining-which-type-of-accessor-to-use.md)  
+- [Determining Which Accessor to Use](../../data/oledb/determining-which-type-of-accessor-to-use.md)
 
-- [Using Multiple Accessors on a Rowset](../../data/oledb/using-multiple-accessors-on-a-rowset.md)  
+- [Using Multiple Accessors on a Rowset](../../data/oledb/using-multiple-accessors-on-a-rowset.md)
 
-- [Using Dynamic Accessors](../../data/oledb/using-dynamic-accessors.md)  
+- [Using Dynamic Accessors](../../data/oledb/using-dynamic-accessors.md)
 
-- [Using Manual Accessors](../../data/oledb/using-manual-accessors.md)  
+- [Using Manual Accessors](../../data/oledb/using-manual-accessors.md)
 
-- [Accessing XML Data](../../data/oledb/accessing-xml-data.md)  
+- [Accessing XML Data](../../data/oledb/accessing-xml-data.md)
 
-## See Also  
+## See Also
 
 [Working with OLE DB Consumer Templates](../../data/oledb/working-with-ole-db-consumer-templates.md)

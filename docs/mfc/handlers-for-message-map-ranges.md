@@ -53,7 +53,7 @@ The message-map entry consists of the following items:
 
 - Parameters to the macro:
 
-     The first two macros take three parameters:
+   The first two macros take three parameters:
 
    - The command ID that starts the range
 
@@ -61,9 +61,9 @@ The message-map entry consists of the following items:
 
    - The name of the message handler function
 
-     The range of command IDs must be contiguous.
+   The range of command IDs must be contiguous.
 
-     The third macro, `ON_CONTROL_RANGE`, takes an additional first parameter: a control-notification message, such as **EN_CHANGE**.
+   The third macro, `ON_CONTROL_RANGE`, takes an additional first parameter: a control-notification message, such as **EN_CHANGE**.
 
 ##  <a name="_core_declaring_the_handler_function"></a> Declaring the Handler Function
 
@@ -85,11 +85,11 @@ When you write the message-map entry, you specify:
 
 - Two command IDs, beginning and ending a contiguous range.
 
-     Here they are **ID_VIEW_ZOOM25** and **ID_VIEW_ZOOM300**.
+   Here they are **ID_VIEW_ZOOM25** and **ID_VIEW_ZOOM300**.
 
 - The name of the handler function for the commands.
 
-     Here it's `OnZoom`.
+   Here it's `OnZoom`.
 
 The function declaration would resemble this:
 
@@ -109,15 +109,15 @@ When you write the `ON_CONTROL_RANGE` macro in your message map, you specify:
 
 - A particular control-notification message.
 
-     Here it's **BN_CLICKED**.
+   Here it's **BN_CLICKED**.
 
 - The control ID values associated with the contiguous range of controls.
 
-     Here these are **IDC_BUTTON1** and **IDC_BUTTON10**.
+   Here these are **IDC_BUTTON1** and **IDC_BUTTON10**.
 
 - The name of the message handler function.
 
-     Here it's `OnButtonClicked`.
+   Here it's `OnButtonClicked`.
 
 When you write the handler function, specify the extra **UINT** parameter, as shown in the following:
 

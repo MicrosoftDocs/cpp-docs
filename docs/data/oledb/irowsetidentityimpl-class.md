@@ -14,56 +14,56 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetIdentityImpl Class
 
-Implements the OLE DB [IRowsetIdentity](/previous-versions/windows/desktop/ms715913) interface, which enables testing for row identity.  
+Implements the OLE DB [IRowsetIdentity](/previous-versions/windows/desktop/ms715913) interface, which enables testing for row identity.
 
 ## Syntax
 
 ```cpp
 template <class T, class RowClass = CSimpleRow>
-class ATL_NO_VTABLE IRowsetIdentityImpl   
+class ATL_NO_VTABLE IRowsetIdentityImpl
    : public IRowsetIdentity
-```  
+```
 
-### Parameters  
+### Parameters
 
 *T*<br/>
-A class derived from `IRowsetIdentityImpl`.  
+A class derived from `IRowsetIdentityImpl`.
 
 *RowClass*<br/>
-The storage unit for the `HROW`.  
+The storage unit for the `HROW`.
 
-## Requirements  
+## Requirements
 
-**Header:** atldb.h  
+**Header:** atldb.h
 
-## Members  
+## Members
 
-### Methods  
+### Methods
 
 |||
 |-|-|
-|[IsSameRow](#issamerow)|Compares two row handles to see if they refer to the same row.|  
+|[IsSameRow](#issamerow)|Compares two row handles to see if they refer to the same row.|
 
 ## <a name="issamerow"></a> IRowsetIdentityImpl::IsSameRow
 
-Compares two row handles to see if they refer to the same row.  
+Compares two row handles to see if they refer to the same row.
 
-### Syntax  
+### Syntax
 
 ```cpp
-STDMETHOD(IsSameRow )(HROW hThisRow,  
+STDMETHOD(IsSameRow )(HROW hThisRow,
    HROW hThatRow);
-```  
+```
 
-#### Parameters  
+#### Parameters
 
-See [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629) in the *OLE DB Programmer's Reference*.  
+See [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629) in the *OLE DB Programmer's Reference*.
 
-### Remarks  
+### Remarks
 
-To compare row handles, this method casts the `HROW` handles to `RowClass` members and calls `memcmp` on the pointers.  
+To compare row handles, this method casts the `HROW` handles to `RowClass` members and calls `memcmp` on the pointers.
 
-## See Also  
+## See Also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

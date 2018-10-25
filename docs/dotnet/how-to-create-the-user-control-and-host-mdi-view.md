@@ -26,23 +26,23 @@ This procedure assumes that you created a Windows Forms Controls Library project
 
 1. Create an MFC Application project.
 
-     On the **File** menu, select **New**, and then click **Project**. In the **Visual C++** folder, select **MFC Application**.
+   On the **File** menu, select **New**, and then click **Project**. In the **Visual C++** folder, select **MFC Application**.
 
-     In the **Name** box, enter `MFC02` and change the **Solution** setting to **Add to Solution**. Click **OK**.
+   In the **Name** box, enter `MFC02` and change the **Solution** setting to **Add to Solution**. Click **OK**.
 
-     In the **MFC Application Wizard**, accept all the defaults, and then click **Finish**. This creates an MFC application with a Multiple Document Interface.
+   In the **MFC Application Wizard**, accept all the defaults, and then click **Finish**. This creates an MFC application with a Multiple Document Interface.
 
 1. Configure the project for Common Language Runtime (CLR) support.
 
-     In **Solution Explorer**, right-click the `MFC01` project node, and select **Properties** from the context menu. The **Property Pages** dialog box appears.
+   In **Solution Explorer**, right-click the `MFC01` project node, and select **Properties** from the context menu. The **Property Pages** dialog box appears.
 
-     Under **Configuration Properties**, select **General**. Under the **Project Defaults** section, set **Common Language Runtime support** to **Common Language Runtime Support (/clr)**.
+   Under **Configuration Properties**, select **General**. Under the **Project Defaults** section, set **Common Language Runtime support** to **Common Language Runtime Support (/clr)**.
 
-     Under **Configuration Properties**, expand **C/C++** and click the **General** node. Set **Debug Information Format** to **Program Database (/Zi)**.
+   Under **Configuration Properties**, expand **C/C++** and click the **General** node. Set **Debug Information Format** to **Program Database (/Zi)**.
 
-     Click the **Code Generation** node. Set **Enable Minimal Rebuild** to **No (/Gm-)**. Also set **Basic Runtime Checks** to **Default**.
+   Click the **Code Generation** node. Set **Enable Minimal Rebuild** to **No (/Gm-)**. Also set **Basic Runtime Checks** to **Default**.
 
-     Click **OK** to apply your changes.
+   Click **OK** to apply your changes.
 
 1. In stdafx.h, add the following line:
 
@@ -52,7 +52,7 @@ This procedure assumes that you created a Windows Forms Controls Library project
 
 1. Add a reference to the .NET control.
 
-     In **Solution Explorer**, right-click the `MFC02` project node and select **Add**, **References**. In the **Property Page**, click **Add New Reference**, select WindowsFormsControlLibrary1 (under the **Projects** tab), and click **OK**. This adds a reference in the form of a [/FU](../build/reference/fu-name-forced-hash-using-file.md) compiler option so that the program will compile; it also copies WindowsFormsControlLibrary1.dll into the `MFC02` project directory so that the program will run.
+   In **Solution Explorer**, right-click the `MFC02` project node and select **Add**, **References**. In the **Property Page**, click **Add New Reference**, select WindowsFormsControlLibrary1 (under the **Projects** tab), and click **OK**. This adds a reference in the form of a [/FU](../build/reference/fu-name-forced-hash-using-file.md) compiler option so that the program will compile; it also copies WindowsFormsControlLibrary1.dll into the `MFC02` project directory so that the program will run.
 
 1. In stdafx.h, find this line:
 
@@ -60,7 +60,7 @@ This procedure assumes that you created a Windows Forms Controls Library project
     #endif // _AFX_NO_AFXCMN_SUPPORT
     ```
 
-     Add these lines above it:
+   Add these lines above it:
 
     ```
     #include <afxwinforms.h>   // MFC Windows Forms support
@@ -68,7 +68,7 @@ This procedure assumes that you created a Windows Forms Controls Library project
 
 1. Modify the view class so that it inherits from [CWinFormsView](../mfc/reference/cwinformsview-class.md).
 
-     In MFC02View.h, replace [CView](../mfc/reference/cview-class.md) with [CWinFormsView](../mfc/reference/cwinformsview-class.md) so that the code appears as follows:
+   In MFC02View.h, replace [CView](../mfc/reference/cview-class.md) with [CWinFormsView](../mfc/reference/cwinformsview-class.md) so that the code appears as follows:
 
     ```
     class CMFC02View : public CWinFormsView
@@ -76,7 +76,7 @@ This procedure assumes that you created a Windows Forms Controls Library project
     };
     ```
 
-     If you want add additional views to your MDI application, you will need to call [CWinApp::AddDocTemplate](../mfc/reference/cwinapp-class.md#adddoctemplate) for each view you create.
+   If you want add additional views to your MDI application, you will need to call [CWinApp::AddDocTemplate](../mfc/reference/cwinapp-class.md#adddoctemplate) for each view you create.
 
 1. Modify the MFC02View.cpp file to change CView to CWinFormsView in the IMPLEMENT_DYNCREATE macro and message map and replace the existing empty constructor with the constructor shown below:
 
@@ -93,11 +93,11 @@ This procedure assumes that you created a Windows Forms Controls Library project
 
 1. Build and run the project.
 
-     In **Solution Explorer**, right-click MFC02 and select **Set as StartUp Project**.
+   In **Solution Explorer**, right-click MFC02 and select **Set as StartUp Project**.
 
-     On the **Build** menu, click **Build Solution**.
+   On the **Build** menu, click **Build Solution**.
 
-     On the **Debug** menu, click **Start without debugging**.
+   On the **Debug** menu, click **Start without debugging**.
 
 ## See Also
 

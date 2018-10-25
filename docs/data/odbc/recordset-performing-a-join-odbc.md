@@ -13,23 +13,23 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Performing a Join (ODBC)
 
-This topic applies to the MFC ODBC classes.  
+This topic applies to the MFC ODBC classes.
 
-## What a Join Is  
+## What a Join Is
 
-The join operation, a common data-access task, lets you work with data from more than one table using a single recordset object. Joining two or more tables yields a recordset that can contain columns from each table, but appears as a single table to your application. Sometimes the join uses all columns from all tables, but sometimes the SQL **SELECT** clause in a join uses only some of the columns from each table. The database classes support read-only joins but not updateable joins.  
+The join operation, a common data-access task, lets you work with data from more than one table using a single recordset object. Joining two or more tables yields a recordset that can contain columns from each table, but appears as a single table to your application. Sometimes the join uses all columns from all tables, but sometimes the SQL **SELECT** clause in a join uses only some of the columns from each table. The database classes support read-only joins but not updateable joins.
 
-To select records containing columns from joined tables, you need the following items:  
+To select records containing columns from joined tables, you need the following items:
 
-- A table list containing the names of all tables being joined.  
+- A table list containing the names of all tables being joined.
 
-- A column list containing the names of all participating columns. Columns with the same name but from different tables are qualified by the table name.  
+- A column list containing the names of all participating columns. Columns with the same name but from different tables are qualified by the table name.
 
-- A filter (SQL **WHERE** clause) that specifies the columns on which the tables are joined. This filter takes the form "Table1.KeyCol = Table2.KeyCol" and actually accomplishes the join.  
+- A filter (SQL **WHERE** clause) that specifies the columns on which the tables are joined. This filter takes the form "Table1.KeyCol = Table2.KeyCol" and actually accomplishes the join.
 
-You can join more than two tables in the same way by equating multiple pairs of columns, each pair joined by the SQL keyword **AND**.  
+You can join more than two tables in the same way by equating multiple pairs of columns, each pair joined by the SQL keyword **AND**.
 
-## See Also  
+## See Also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Declaring a Class for a Predefined Query (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
