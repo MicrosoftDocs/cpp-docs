@@ -37,7 +37,8 @@ One of these possible values: `true`, `false`, `forced`, `restricted`, `push`, o
 
 - `push` lets you save the current **emitidl** settings to an internal **emitidl** stack, and `pop` lets you set **emitidl** to whatever value is at the top of the internal **emitidl** stack.
 
-`defaultimports=`*boolean* \(optional)  
+`defaultimports=`*boolean* \(optional)
+
 - If *boolean* is **true**, docobj.idl is imported into the generated .idl file. Also, if an .idl file with the same name as an .h file that you `#include` into your source code is found in the same directory as the .h file, then the generated .idl file contains an import statement for that .idl file.
 
 - If *boolean* is **false**, docobj.idl is not imported into the generated .idl file. You must explicitly import .idl files with [import](import.md).
@@ -66,4 +67,4 @@ For more information, see [Attribute Contexts](cpp-attributes-com-net.md#context
 ## See Also
 
 [Compiler Attributes](compiler-attributes.md)<br/>
-[Stand-Alone Attributes](stand-alone-attributes.md)  
+[Stand-Alone Attributes](stand-alone-attributes.md)

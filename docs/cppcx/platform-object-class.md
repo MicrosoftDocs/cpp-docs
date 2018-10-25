@@ -181,6 +181,7 @@ public:
     };
 };
 ```
+
 ## See Also
 
 [Platform Namespace](platform-namespace-c-cx.md)

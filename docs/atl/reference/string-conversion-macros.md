@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # String Conversion Macros
 
-These macros provide string conversion features.  
+These macros provide string conversion features.
 
 ##  <a name="atl_and_mfc_string_conversion_macros"></a>  ATL and MFC String Conversion Macros
 
@@ -61,7 +61,7 @@ The following table lists the `DEVMODE` and `TEXTMETRIC` string conversion macro
 |DEVMODEA2W|TEXTMETRICA2W|
 |DEVMODEOLE2T|TEXTMETRICOLE2T|
 |DEVMODET2OLE|TEXTMETRICT2OLE|
-|DEVMODEW2A|TEXTMETRICW2A|  
+|DEVMODEW2A|TEXTMETRICW2A|
 
 ## See Also
 

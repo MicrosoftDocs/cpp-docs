@@ -11,10 +11,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Key WRL APIs by Category
+
 The following tables list primary Windows Runtime C++ Template Library classes, structs, functions, and macros. Constructs in helper namespaces and classes are omitted. These lists augment the API documentation, which is arranged by namespace.
-  
-### Classes
-  
+
+## Classes
+
 |Title|Description|
 |-----------|-----------------|
 |[ActivationFactory Class](../windows/activationfactory-class.md)|Enables one or more classes to be activated by the Windows Runtime.|
@@ -36,18 +37,18 @@ The following tables list primary Windows Runtime C++ Template Library classes, 
 |[SimpleActivationFactory Class](../windows/simpleactivationfactory-class.md)|Provides a fundamental mechanism to create a Windows Runtime or classic COM base class.|
 |[SimpleClassFactory Class](../windows/simpleclassfactory-class.md)|Provides a fundamental mechanism to create a base class.|
 |[WeakRef Class](../windows/weakref-class.md)|Represents a *weak reference* that can be used by only the Windows Runtime, not classic COM. A weak reference represents an object that might or might not be accessible.|
-  
-### Structures
-  
+
+## Structures
+
 |Title|Description|
 |-----------|-----------------|
 |[ChainInterfaces Structure](../windows/chaininterfaces-structure.md)|Specifies verification and initialization functions that can be applied to a set of interface IDs.|
 |[CloakedIid Structure](../windows/cloakediid-structure.md)|Indicates to the `RuntimeClass`, `Implements` and `ChainInterfaces` templates that the specified interface is not accessible in the IID list.|
 |[Implements Structure](../windows/implements-structure.md)|Implements `QueryInterface` and `GetIid` for the specified interfaces.|
 |[MixIn Structure](../windows/mixin-structure.md)|Ensures that a runtime class derives from Windows Runtime interfaces, if any, and then classic COM interfaces.|
-  
-### Functions
-  
+
+## Functions
+
 |Title|Description|
 |-----------|-----------------|
 |[ActivateInstance Function](../windows/activateinstance-function.md)|Registers and retrieves an instance of a specified type defined in a specified class ID.|
@@ -57,14 +58,14 @@ The following tables list primary Windows Runtime C++ Template Library classes, 
 |[CreateClassFactory Function](../windows/createclassfactory-function.md)|Creates a factory that produces instances of the specified class.|
 |[GetActivationFactory Function](../windows/getactivationfactory-function.md)|Retrieves an activation factory for the type specified by the template parameter.|
 |[Make Function](../windows/make-function.md)|Initializes the specified Windows Runtime class.|
-  
-### Macros
-  
+
+## Macros
+
 |Title|Description|
 |-----------|-----------------|
 |[ActivatableClass Macros](../windows/activatableclass-macros.md)|Populates an internal cache that contains a factory that can create an instance of the specified class.|
 |[InspectableClass Macro](../windows/inspectableclass-macro.md)|Sets the runtime class name and trust level.|
-  
+
 ## See Also
 
 [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)

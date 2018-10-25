@@ -28,13 +28,13 @@ The following procedure details the steps necessary to achieve transparency with
 
 1. In the new handler, modify the existing code to match the following example:
 
-     [!code-cpp[NVC_MFCControlLadenDialog#29](../mfc/codesnippet/cpp/using-a-dialog-bar-with-a-rebar-control_1.cpp)]
+   [!code-cpp[NVC_MFCControlLadenDialog#29](../mfc/codesnippet/cpp/using-a-dialog-bar-with-a-rebar-control_1.cpp)]
 
 1. Add a handler for the WM_MOVE message.
 
 1. In the new handler, modify the existing code to match the following example:
 
-     [!code-cpp[NVC_MFCControlLadenDialog#30](../mfc/codesnippet/cpp/using-a-dialog-bar-with-a-rebar-control_2.cpp)]
+   [!code-cpp[NVC_MFCControlLadenDialog#30](../mfc/codesnippet/cpp/using-a-dialog-bar-with-a-rebar-control_2.cpp)]
 
 The new handlers simulate the transparency of the dialog bar by forwarding the WM_ERASEBKGND message to the parent window and forcing a repaint every time the dialog bar object is moved.
 

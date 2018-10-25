@@ -368,7 +368,7 @@ void copy(
 template <typename OutputIterator, typename value_type, int _Rank>
 void copy(
     const array<value_type, _Rank>& _Src,
-     OutputIterator _DestIter);
+   OutputIterator _DestIter);
 
 template <typename value_type, int _Rank>
 void copy(
@@ -588,7 +588,7 @@ void parallel_for_each(
 template <int _Dim0, int _Dim1, int _Dim2, typename _Kernel_type>
 void parallel_for_each(
     const tiled_extent<_Dim0, _Dim1, _Dim2>& _Compute_domain,
-     const _Kernel_type& _Kernel);
+   const _Kernel_type& _Kernel);
 
 template <int _Dim0, int _Dim1, typename _Kernel_type>
 void parallel_for_each(

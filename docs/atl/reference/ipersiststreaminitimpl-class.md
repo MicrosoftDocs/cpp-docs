@@ -23,7 +23,7 @@ This class implements `IUnknown` and provides a default implementation of the [I
 
 ```
 template<class T>
-class ATL_NO_VTABLE IPersistStreamInitImpl 
+class ATL_NO_VTABLE IPersistStreamInitImpl
    : public IPersistStreamInit
 ```
 

@@ -14,120 +14,120 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # CAccessorBase Class
 
-All accessors in the OLE DB Templates derive from this class. `CAccessorBase` allows one rowset to manage multiple accessors. It also provides binding for both parameters and output columns.  
-  
+All accessors in the OLE DB Templates derive from this class. `CAccessorBase` allows one rowset to manage multiple accessors. It also provides binding for both parameters and output columns.
+
 ## Syntax
 
 ```cpp
-// Replace with syntax  
-```  
-  
-## Members  
-  
-### Methods  
-  
-|||  
-|-|-|  
-|[Close](#close)|Closes the accessors.|  
-|[GetHAccessor](#geth)|Retrieves the accessor handle.|  
-|[GetNumAccessors](#getnum)|Retrieves the number of accessors created by the class.|  
-|[IsAutoAccessor](#isauto)|Tests whether the specified accessor is an autoaccessor.|  
-|[ReleaseAccessors](#release)|Releases the accessors.|  
+// Replace with syntax
+```
 
-## Requirements  
+## Members
 
-**Header:** atldbcli.h  
+### Methods
+
+|||
+|-|-|
+|[Close](#close)|Closes the accessors.|
+|[GetHAccessor](#geth)|Retrieves the accessor handle.|
+|[GetNumAccessors](#getnum)|Retrieves the number of accessors created by the class.|
+|[IsAutoAccessor](#isauto)|Tests whether the specified accessor is an autoaccessor.|
+|[ReleaseAccessors](#release)|Releases the accessors.|
+
+## Requirements
+
+**Header:** atldbcli.h
 
 ## <a name="close"></a> CAccessorBase::Close
 
-Closes the accessors.  
-  
-### Syntax  
-  
-```cpp
-void Close();  
-```  
-  
-### Remarks  
+Closes the accessors.
 
-You must call [ReleaseAccessors](../../data/oledb/caccessorbase-releaseaccessors.md) first.  
+### Syntax
+
+```cpp
+void Close();
+```
+
+### Remarks
+
+You must call [ReleaseAccessors](../../data/oledb/caccessorbase-releaseaccessors.md) first.
 
 ## <a name="geth"></a> CAccessorBase::GetHAccessor
 
-Retrieves the accessor handle of a specified accessor.  
-  
-### Syntax  
-  
+Retrieves the accessor handle of a specified accessor.
+
+### Syntax
+
 ```cpp
-HACCESSOR GetHAccessor(ULONG nAccessor) const;  
-```  
-  
-#### Parameters  
+HACCESSOR GetHAccessor(ULONG nAccessor) const;
+```
+
+#### Parameters
 
 *nAccessor*<br/>
-[in] The zero-offset number for the accessor.  
-  
-### Return Value  
+[in] The zero-offset number for the accessor.
 
-The accessor handle.  
+### Return Value
+
+The accessor handle.
 
 ## <a name="getnum"></a> CAccessorBase::GetNumAccessors
 
-Retrieves the number of accessors created by the class.  
-  
-### Syntax  
-  
-```cpp
-ULONG GetNumAccessors() const;  
-```  
-  
-### Return Value  
+Retrieves the number of accessors created by the class.
 
-The number of accessors created by the class.  
+### Syntax
+
+```cpp
+ULONG GetNumAccessors() const;
+```
+
+### Return Value
+
+The number of accessors created by the class.
 
 ## <a name="isauto"></a> CAccessorBase::IsAutoAccessor
 
-Returns true if data is automatically retrieved for the accessor during a Move operation.  
-  
-### Syntax  
-  
+Returns true if data is automatically retrieved for the accessor during a Move operation.
+
+### Syntax
+
 ```cpp
-bool IsAutoAccessor(ULONG nAccessor) const;  
-```  
-  
-#### Parameters  
+bool IsAutoAccessor(ULONG nAccessor) const;
+```
+
+#### Parameters
 
 *nAccessor*<br/>
-[in] The zero-offset number for the accessor.  
-  
-### Return Value  
+[in] The zero-offset number for the accessor.
 
-Returns **true** if the accessor is an autoaccessor. Otherwise, it returns **false**.  
+### Return Value
+
+Returns **true** if the accessor is an autoaccessor. Otherwise, it returns **false**.
 
 ## <a name="release"></a> CAccessorBase::ReleaseAccessors
 
-Releases the accessors created by the class.  
-  
-### Syntax  
-  
+Releases the accessors created by the class.
+
+### Syntax
+
 ```cpp
-HRESULT ReleaseAccessors(IUnknown* pUnk);  
-```  
-  
-#### Parameters  
+HRESULT ReleaseAccessors(IUnknown* pUnk);
+```
+
+#### Parameters
 
 *pUnk*<br/>
-[in] A pointer to an `IUnknown` interface for the COM object for which the accessors have been created.  
-  
-### Return Value  
+[in] A pointer to an `IUnknown` interface for the COM object for which the accessors have been created.
 
-A standard HRESULT.  
-  
-### Remarks  
+### Return Value
 
-Called from [CAccessorRowset::Close](../../data/oledb/caccessorrowset-close.md). 
-  
-## See Also  
+A standard HRESULT.
+
+### Remarks
+
+Called from [CAccessorRowset::Close](../../data/oledb/caccessorrowset-close.md).
+
+## See Also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

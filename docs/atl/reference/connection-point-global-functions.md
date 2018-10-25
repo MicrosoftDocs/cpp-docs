@@ -23,7 +23,7 @@ These functions provide support for connection points and sink maps.
 |-|-|
 |[AtlAdvise](#atladvise)|Creates a connection between an object's connection point and a client's sink.|
 |[AtlUnadvise](#atlunadvise)|Terminates the connection established through `AtlAdvise`.|
-|[AtlAdviseSinkMap](#atladvisesinkmap)|Advises or unadvises entries in an event sink map.|  
+|[AtlAdviseSinkMap](#atladvisesinkmap)|Advises or unadvises entries in an event sink map.|
 
 ## Requirements
 

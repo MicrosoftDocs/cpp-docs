@@ -64,7 +64,7 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
 |Name|Description|
 |----------|-----------------|
 |[CAtlPreviewCtrlImpl::m_clrBack](#m_clrback)|Background color of the preview window.|
-|[CAtlPreviewCtrlImpl::m_clrText](#m_clrtext)|Text color of preview window.|  
+|[CAtlPreviewCtrlImpl::m_clrText](#m_clrtext)|Text color of preview window.|
 
 ## Remarks
 
@@ -201,7 +201,7 @@ const LOGFONTW* m_plf;
 Handles the WM_PAINT message.
 
 ```
-LRESULT OnPaint(  
+LRESULT OnPaint(
     UINT nMsg,
     WPARAM wParam,
     LPARAM lParam,

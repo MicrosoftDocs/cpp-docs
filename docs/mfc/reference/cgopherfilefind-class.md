@@ -114,7 +114,6 @@ virtual BOOL FindFile(
     LPCTSTR pstrString,
     DWORD dwFlags = INTERNET_FLAG_RELOAD);
 
-
 virtual BOOL FindFile(
     LPCTSTR pstrString,
     DWORD dwFlags = INTERNET_FLAG_RELOAD);

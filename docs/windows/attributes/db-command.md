@@ -19,7 +19,7 @@ Creates an OLE DB command.
 ## Syntax
 
 ```cpp
-[ db_command(command, name, source_name, hresult, bindings, bulk_fetch)  
+[ db_command(command, name, source_name, hresult, bindings, bulk_fetch)
 ]
 ```
 
@@ -81,7 +81,7 @@ TCHAR m_state[3] = 'CA';
 
 [db_command (command = "SELECT au_fname([bindto]m_au_fname), au_lname([bindto]m_au_lname) " \
    "FROM dbo.authors " \
-   "WHERE state = ?([in]m_state)")  
+   "WHERE state = ?([in]m_state)")
 ]
 ```
 
@@ -251,4 +251,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 ## See also
 
 [OLE DB Consumer Attributes](ole-db-consumer-attributes.md)<br/>
-[Stand-Alone Attributes](stand-alone-attributes.md)  
+[Stand-Alone Attributes](stand-alone-attributes.md)

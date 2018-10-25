@@ -86,7 +86,7 @@ Expression (including pointers) that evaluates to nonzero or 0.
 
 ### Remarks
 
-In debug builds, ATLASSERT evaluates *booleanExpression* and generates a debug report when the result is false.  
+In debug builds, ATLASSERT evaluates *booleanExpression* and generates a debug report when the result is false.
 
 ## Requirements
 
@@ -123,11 +123,11 @@ The difference between ATLENSURE and ATLASSERT is that ATLENSURE throws an excep
 
 ### Example
 
-[!code-cpp[NVC_ATL_Utilities#108](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_1.cpp)]  
+[!code-cpp[NVC_ATL_Utilities#108](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_1.cpp)]
 
 ## Requirements
 
-**Header:** afx.h  
+**Header:** afx.h
 
 ##  <a name="atltracenotimpl"></a>  ATLTRACENOTIMPL
 
@@ -152,7 +152,7 @@ In release builds, simply returns E_NOTIMPL.
 
 ## Requirements
 
-**Header:** atltrace.h 
+**Header:** atltrace.h
 
 ##  <a name="atltrace"></a>  ATLTRACE
 
@@ -161,7 +161,7 @@ Reports warnings to an output device, such as the debugger window, according to 
 ```
 ATLTRACE(exp);
 
-ATLTRACE(  
+ATLTRACE(
     DWORD category,
     UINT  level,
     LPCSTR lpszFormat, ...);

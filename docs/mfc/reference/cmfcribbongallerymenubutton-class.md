@@ -84,14 +84,13 @@ InitBulletPalette (&paletteBullet.GetPalette ());
 
 ##  <a name="copyfrom"></a>  CMFCRibbonGalleryMenuButton::CopyFrom
 
-
 ```
 virtual void CopyFrom(const CMFCToolBarButton& src);
 ```
 
 ### Parameters
 
-[in] *src*
+[in] *src*<br/>
 
 ### Remarks
 
@@ -105,7 +104,6 @@ CMFCRibbonGalleryMenuButton(
     int iImage,
     LPCTSTR lpszText,
     CMFCToolBarImages& imagesPalette);
-
 
 CMFCRibbonGalleryMenuButton(
     UINT uiID,
@@ -147,7 +145,6 @@ The following example demonstrates how to use the constructor of the `CMFCRibbon
 
 ##  <a name="createpopupmenu"></a>  CMFCRibbonGalleryMenuButton::CreatePopupMenu
 
-
 ```
 virtual CMFCPopupMenu* CreatePopupMenu();
 ```
@@ -157,7 +154,6 @@ virtual CMFCPopupMenu* CreatePopupMenu();
 ### Remarks
 
 ##  <a name="getpalette"></a>  CMFCRibbonGalleryMenuButton::GetPalette
-
 
 ```
 CMFCRibbonGallery& GetPalette();
@@ -169,7 +165,6 @@ CMFCRibbonGallery& GetPalette();
 
 ##  <a name="hasbutton"></a>  CMFCRibbonGalleryMenuButton::HasButton
 
-
 ```
 virtual BOOL HasButton() const;
 ```
@@ -179,7 +174,6 @@ virtual BOOL HasButton() const;
 ### Remarks
 
 ##  <a name="isemptymenuallowed"></a>  CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed
-
 
 ```
 virtual BOOL IsEmptyMenuAllowed() const;

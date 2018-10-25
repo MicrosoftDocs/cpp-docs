@@ -164,7 +164,6 @@ The source bitmap is drawn on the destination DC with a two-color (*cr1* and *cr
 
 **Header:** afxwin.h
 
-
 ##  <a name="afxgetditheredbitmap"></a>  AfxGetDitheredBitmap
 
 Copies a bitmap, replacing its background with a dithered (checker) pattern.

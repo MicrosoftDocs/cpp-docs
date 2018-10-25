@@ -265,7 +265,6 @@ HRESULT SetBoolValue(
     DWORD cwcStartSource = 0,
     CHUNK_BREAKTYPE chunkBreakType = CHUNK_NO_BREAK);
 
-
 HRESULT SetBoolValue(
     REFPROPERTYKEY pkey,
     VARIANT_BOOL bVal,

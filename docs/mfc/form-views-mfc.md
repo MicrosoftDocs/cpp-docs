@@ -26,7 +26,7 @@ When you insert a new form into your application, Visual C++ does the following:
 
 - Creates a dialog resource with appropriate styles (or you can use an existing dialog resource that has not yet been associated with a class).
 
-     If you choose an existing dialog resource, you may need to set these styles by using the Properties page for the dialog box. Styles for a dialog box must include:
+   If you choose an existing dialog resource, you may need to set these styles by using the Properties page for the dialog box. Styles for a dialog box must include:
 
      **WS_CHILD**=On
 
@@ -40,17 +40,17 @@ For applications based on the document/view architecture, the **New Form** comma
 
 - Creates a `CDocument`-based class
 
-     Instead of having a new class created, you can use any existing `CDocument`-based class in your project.
+   Instead of having a new class created, you can use any existing `CDocument`-based class in your project.
 
 - Generates a document template (derived from `CDocument`) with string, menu, and icon resources.
 
-     You can also create a new class on which to base the template.
+   You can also create a new class on which to base the template.
 
 - Adds a call to `AddDocumentTemplate` in your application's `InitInstance` code.
 
-     Visual C++ adds this code for each new form you create, which adds the form to the list of available forms when the user chooses the **New** command. This code includes the form's associated resource ID and the names of the associated document, view, and frame classes that together make up the new form object.
+   Visual C++ adds this code for each new form you create, which adds the form to the list of available forms when the user chooses the **New** command. This code includes the form's associated resource ID and the names of the associated document, view, and frame classes that together make up the new form object.
 
-     Document templates serve as the connection between documents, frame windows, and views. For a single document, you can create many templates.
+   Document templates serve as the connection between documents, frame windows, and views. For a single document, you can create many templates.
 
 For more information, see:
 

@@ -69,7 +69,6 @@ CHttpConnection(
     LPCTSTR pstrServer,
     DWORD_PTR dwContext);
 
-
 CHttpConnection(
     CInternetSession* pSession,
     LPCTSTR pstrServer,
@@ -77,7 +76,6 @@ CHttpConnection(
     LPCTSTR pstrUserName = NULL,
     LPCTSTR pstrPassword = NULL,
     DWORD_PTR dwContext = 1);
-
 
 CHttpConnection(
     CInternetSession* pSession,
@@ -139,7 +137,6 @@ CHttpFile* OpenRequest(
     LPCTSTR* ppstrAcceptTypes = NULL,
     LPCTSTR pstrVersion = NULL,
     DWORD dwFlags = INTERNET_FLAG_EXISTING_CONNECT);
-
 
 CHttpFile* OpenRequest(
     int nVerb,

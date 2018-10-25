@@ -517,7 +517,7 @@ Sets the control bits of a security descriptor.
 
 ```
 bool SetControl(
-    SECURITY_DESCRIPTOR_CONTROL ControlBitsOfInterest, 
+    SECURITY_DESCRIPTOR_CONTROL ControlBitsOfInterest,
     SECURITY_DESCRIPTOR_CONTROL ControlBitsToSet) throw();
 ```
 
@@ -542,11 +542,11 @@ This method calls [SetSecurityDescriptorControl](https://msdn.microsoft.com/libr
 Sets information in a discretionary access-control list (DACL). If a DACL is already present in the security descriptor, it is replaced.
 
 ```
-inline void SetDacl(  
+inline void SetDacl(
     bool bPresent = true,
     bool bDefaulted = false) throw(...);
 
-inline void SetDacl(  
+inline void SetDacl(
     const CDacl& Dacl,
     bool bDefaulted = false) throw(...);
 ```

@@ -82,4 +82,3 @@ Specifies the [extended style](../../mfc/reference/styles-used-by-mfc.md#extende
 [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CWnd::OnCreate](../../mfc/reference/cwnd-class.md#oncreate)
 
-

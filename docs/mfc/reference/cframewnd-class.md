@@ -1102,7 +1102,6 @@ BOOL SetTaskbarOverlayIcon(
     UINT nIDResource,
     LPCTSTR lpcszDescr);
 
-
 BOOL SetTaskbarOverlayIcon(
     HICON hIcon,
     LPCTSTR lpcszDescr);

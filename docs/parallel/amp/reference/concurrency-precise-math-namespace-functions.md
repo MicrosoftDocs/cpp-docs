@@ -889,6 +889,7 @@ inline double fdim(
    double _Y
 ) restrict(amp);
 ```
+
 ### Parameters
 
 *_X*<br/>
@@ -909,6 +910,7 @@ inline float fdimf(
    float _Y
 ) restrict(amp);
 ```
+
 ### Parameters
 
 *_X*<br/>
@@ -972,6 +974,7 @@ inline double fma(
    double _Z
 ) restrict(amp);
 ```
+
 ### Parameters
 
 *_X*<br/>
@@ -995,6 +998,7 @@ inline float fmaf(
    float _Z
 ) restrict(amp);
 ```
+
 ### Parameters
 
 *_X*<br/>

@@ -119,7 +119,7 @@ int main() {
 }
 ```
 
-```Output 
+```Output
 22
 23
 hello

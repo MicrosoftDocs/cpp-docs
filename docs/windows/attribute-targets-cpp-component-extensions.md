@@ -219,8 +219,8 @@ Attribute usage specifiers are required in the following situations:
 - To specify that an attribute applies to a property's accessor, not the property:
 
     ```cpp
-    [method:MyAttr(123)] property int Property()  
-    [property:MyAttr(123)] property int Property()  
+    [method:MyAttr(123)] property int Property()
+    [property:MyAttr(123)] property int Property()
     [MyAttr(123)] property int get_MyPropy() // default: property
     ```
 

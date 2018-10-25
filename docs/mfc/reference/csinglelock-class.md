@@ -129,7 +129,6 @@ Releases the synchronization object owned by `CSingleLock`.
 ```
 BOOL Unlock();
 
-
 BOOL Unlock(
     LONG lCount,
     LPLONG lPrevCount = NULL);

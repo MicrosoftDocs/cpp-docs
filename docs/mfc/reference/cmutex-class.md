@@ -88,5 +88,3 @@ To access or release a `CMutex` object, create a [CMultiLock](../../mfc/referenc
 [CSyncObject Class](../../mfc/reference/csyncobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

@@ -20,7 +20,7 @@ In addition to shared tools in the Visual Studio IDE, MSVC has several tools spe
 
 ## Create projects
 
-A *project* is basically a set of source code files and resources such as images or data files that are built into an executable file. 
+A *project* is basically a set of source code files and resources such as images or data files that are built into an executable file.
 
 Visual Studio 2015 provides support for MSBuild projects. You can download Visual Studio extensions for other build systems such as Qt or CMake.
 
@@ -55,7 +55,7 @@ For more information about creating a user interface for an MFC application, see
 
 ## Write code
 
-After you create a project, all the project files are displayed in the **Solution Explorer** window. (A *solution* is a logical container for one or more related projects.) When you click on a .h or .cpp file in **Solution Explorer**, the file opens up in the code editor. 
+After you create a project, all the project files are displayed in the **Solution Explorer** window. (A *solution* is a logical container for one or more related projects.) When you click on a .h or .cpp file in **Solution Explorer**, the file opens up in the code editor.
 
 ![Solution Explorer and code editor](media/vs2017-solution-explorer-code-editor.png "Visual Studio 2017 Solution Explorer and code editor")
 

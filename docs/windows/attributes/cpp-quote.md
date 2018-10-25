@@ -55,4 +55,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 ## See Also
 
 [IDL Attributes](idl-attributes.md)<br/>
-[Stand-Alone Attributes](stand-alone-attributes.md)  
+[Stand-Alone Attributes](stand-alone-attributes.md)

@@ -29,11 +29,11 @@ MAPI needs to read the file to send the attachment. If the application keeps its
 
 1. Use the Visual C++ menu editor to add a menu item whose command ID is ID_FILE_SEND_MAIL.
 
-     This command ID is provided by the framework in AFXRES.H. The command can be added to any menu, but it is usually added to the **File** menu.
+   This command ID is provided by the framework in AFXRES.H. The command can be added to any menu, but it is usually added to the **File** menu.
 
 1. Manually add the following to your document's message map:
 
-     [!code-cpp[NVC_MFCDocView#9](../mfc/codesnippet/cpp/mapi-support-in-mfc_1.cpp)]
+   [!code-cpp[NVC_MFCDocView#9](../mfc/codesnippet/cpp/mapi-support-in-mfc_1.cpp)]
 
     > [!NOTE]
     >  This message map works for a document derived from either `CDocument` or `COleDocument` — it picks up the correct base class in either case, even though the message map is in your derived document class.

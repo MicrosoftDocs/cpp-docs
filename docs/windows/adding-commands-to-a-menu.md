@@ -49,4 +49,4 @@ Win32
 
 ## See Also
 
-[Menu Editor](../windows/menu-editor.md)  
+[Menu Editor](../windows/menu-editor.md)

@@ -101,7 +101,7 @@ Returns the result of [CComCriticalSection::Init](../../atl/reference/ccomcritic
 
 ##  <a name="lock"></a>  CComSafeDeleteCriticalSection::Lock
 
-Calls the base class implementation of [Lock](ccomcriticalsection-class.md#lock).  
+Calls the base class implementation of [Lock](ccomcriticalsection-class.md#lock).
 
 ```
 HRESULT Lock();

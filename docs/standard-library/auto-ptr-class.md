@@ -44,6 +44,7 @@ public:
     void reset(Type* ptr = 0);
 };
 ```
+
 ### Parameters
 
 *right*<br/>

@@ -20,7 +20,7 @@ This class implements a connection point container to manage a collection of [IC
 
 ```
 template<class T>
-class ATL_NO_VTABLE IConnectionPointContainerImpl 
+class ATL_NO_VTABLE IConnectionPointContainerImpl
    : public IConnectionPointContainer
 ```
 

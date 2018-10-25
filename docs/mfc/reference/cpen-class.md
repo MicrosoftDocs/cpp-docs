@@ -69,12 +69,10 @@ Constructs a `CPen` object.
 ```
 CPen();
 
-
 CPen(
     int nPenStyle,
     int nWidth,
     COLORREF crColor);
-
 
 CPen(
     int nPenStyle,
@@ -109,13 +107,13 @@ The second version of the `CPen` constructor specifies a combination of type, st
 
 - PS_COSMETIC Creates a cosmetic pen.
 
-     The second version of the `CPen` constructor adds the following pen styles for *nPenStyle*:
+   The second version of the `CPen` constructor adds the following pen styles for *nPenStyle*:
 
 - PS_ALTERNATE Creates a pen that sets every other pixel. (This style is applicable only for cosmetic pens.)
 
 - PS_USERSTYLE Creates a pen that uses a styling array supplied by the user.
 
-     The end cap can be one of the following values:
+   The end cap can be one of the following values:
 
 - PS_ENDCAP_ROUND End caps are round.
 
@@ -123,7 +121,7 @@ The second version of the `CPen` constructor specifies a combination of type, st
 
 - PS_ENDCAP_FLAT End caps are flat.
 
-     The join can be one of the following values:
+   The join can be one of the following values:
 
 - PS_JOIN_BEVEL Joins are beveled.
 
@@ -169,7 +167,6 @@ BOOL CreatePen(
     int nPenStyle,
     int nWidth,
     COLORREF crColor);
-
 
 BOOL CreatePen(
     int nPenStyle,

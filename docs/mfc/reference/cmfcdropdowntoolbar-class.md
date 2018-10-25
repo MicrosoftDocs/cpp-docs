@@ -1,7 +1,7 @@
 ---
 title: "CMFCDropDownToolBar Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/188/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCDropDownToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::AllowShowOnPaneMenu", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::LoadBitmap", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::LoadToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnLButtonUp", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnMouseMove", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnSendCommand", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnUpdateCmdUI"]
@@ -90,7 +90,6 @@ The following example demonstrates how to use the `Create` method in the `CMFCDr
 
 ##  <a name="allowshowonpanemenu"></a>  CMFCDropDownToolBar::AllowShowOnPaneMenu
 
-
 ```
 virtual BOOL AllowShowOnPaneMenu() const;
 ```
@@ -145,7 +144,6 @@ Call the `LoadBitmapEx` method to load additional images after you create the to
 
 ##  <a name="loadtoolbar"></a>  CMFCDropDownToolBar::LoadToolBar
 
-
 ```
 virtual BOOL LoadToolBar(
     UINT uiResID,
@@ -159,20 +157,25 @@ virtual BOOL LoadToolBar(
 
 ### Parameters
 
-*uiResID*<br/>
-[in] [in] *uiColdResID*
-*uiMenuResID*<br/>
-[in] [in] *BOOL*
-*uiDisabledResID*<br/>
-[in] [in] *uiMenuDisabledResID*
-[in] *uiHotResID*
+[in] *uiResID*<br/>
+
+[in] *uiColdResID*<br/>
+
+[in] *uiMenuResID*<br/>
+
+[in] *BOOL*<br/>
+
+[in] *uiDisabledResID*<br/>
+
+[in] *uiMenuDisabledResID*<br/>
+
+[in] *uiHotResID*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="onlbuttonup"></a>  CMFCDropDownToolBar::OnLButtonUp
-
 
 ```
 afx_msg void OnLButtonUp(
@@ -182,13 +185,13 @@ afx_msg void OnLButtonUp(
 
 ### Parameters
 
-*nFlags*<br/>
-[in] [in] *point*
+[in] *nFlags*<br/>
+
+[in] *point*<br/>
 
 ### Remarks
 
 ##  <a name="onmousemove"></a>  CMFCDropDownToolBar::OnMouseMove
-
 
 ```
 afx_msg void OnMouseMove(
@@ -198,13 +201,13 @@ afx_msg void OnMouseMove(
 
 ### Parameters
 
-*nFlags*<br/>
-[in] [in] *point*
+[in] *nFlags*<br/>
+
+[in] *point*<br/>
 
 ### Remarks
 
 ##  <a name="onsendcommand"></a>  CMFCDropDownToolBar::OnSendCommand
-
 
 ```
 virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
@@ -212,14 +215,13 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 
 ### Parameters
 
-[in] *pButton*
+[in] *pButton*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="onupdatecmdui"></a>  CMFCDropDownToolBar::OnUpdateCmdUI
-
 
 ```
 virtual void OnUpdateCmdUI(
@@ -229,8 +231,9 @@ virtual void OnUpdateCmdUI(
 
 ### Parameters
 
-*pTarget*<br/>
-[in] [in] *bDisableIfNoHndler*
+[in] *pTarget*<br/>
+
+[in] *bDisableIfNoHndler*<br/>
 
 ### Remarks
 
@@ -243,6 +246,4 @@ virtual void OnUpdateCmdUI(
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
 [CMFCDropDownToolbarButton Class](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md)<br/>
 [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-
-
 

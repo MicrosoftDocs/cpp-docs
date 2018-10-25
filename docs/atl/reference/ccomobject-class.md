@@ -103,7 +103,7 @@ CComObject();
 
 ### Remarks
 
-Frees all allocated resources, calls [FinalRelease](ccomobjectrootex-class.md#finalrelease), and decrements the module lock count.  
+Frees all allocated resources, calls [FinalRelease](ccomobjectrootex-class.md#finalrelease), and decrements the module lock count.
 
 ##  <a name="createinstance"></a>  CComObject::CreateInstance
 

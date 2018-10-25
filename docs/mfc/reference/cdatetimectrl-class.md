@@ -507,7 +507,6 @@ BOOL SetRange(
     const COleDateTime* pMinRange,
     const COleDateTime* pMaxRange);
 
-
 BOOL SetRange(
     const CTime* pMinRange,
     const CTime* pMaxRange);

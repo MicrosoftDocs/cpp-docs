@@ -802,5 +802,3 @@ Use this function instead of the `CreateRectRgn` member function to avoid calls 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

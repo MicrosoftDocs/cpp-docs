@@ -252,6 +252,7 @@ A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CString
 ```
 typedef ATL::CPathT<CStringW> CPathW;
 ```
+
 ## Requirements
 
 **Header:** atlpath.h

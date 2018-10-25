@@ -26,10 +26,10 @@ void __vmx_vmptrst( 
 );
 ```
 
-#### Parameters
+### Parameters
 
-[in] *`VmcsPhysicalAddress`
-The address where the current VMCS pointer is stored.
+*VmcsPhysicalAddress*<br/>
+[in] The address where the current VMCS pointer is stored.
 
 ## Remarks
 

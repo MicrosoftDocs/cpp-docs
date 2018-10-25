@@ -61,7 +61,6 @@ CD2DSizeU(const CSize& size);
 CD2DSizeU(const D2D1_SIZE_U& size);
   CD2DSizeU(const D2D1_SIZE_U* size);
 
-
 CD2DSizeU(
     UINT32 cx = 0,
     UINT32 cy = 0);

@@ -21,7 +21,7 @@ ms.workload: ["cplusplus", "data-storage"]
 
 1. In the **Add Class** dialog box, under **Installed** > **Visual C++** > **ATL**, select the **ATL OLEDB Provider** icon, and then click **Open**.
 
-1. In the **ATL OLE DB Provider Wizard**, enter a short name for your provider in the **Short Name** box. The following topics use the short name "MyProvider", but you can use another name. The other name boxes populate according to the name you enter.
+1. In the **ATL OLE DB Provider Wizard**, enter a short name for your provider in the **Short Name** box. The following topics use the short name *Custom*, but you can use another name. The other name boxes populate according to the name you enter.
 
 1. Edit the other name boxes, if needed. In addition to the object and file names, you can edit the following:
 

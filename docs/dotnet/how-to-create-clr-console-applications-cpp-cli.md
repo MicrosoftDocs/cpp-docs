@@ -55,7 +55,7 @@ When you use the Console Application template to create a project, it automatica
 
 1. In the **Name** box, enter a unique name for your application.
 
-     You can specify other project and solution settings, but they are not required.
+   You can specify other project and solution settings, but they are not required.
 
 1. Choose the **OK** button.
 

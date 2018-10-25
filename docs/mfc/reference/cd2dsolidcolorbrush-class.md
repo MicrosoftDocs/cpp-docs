@@ -102,7 +102,6 @@ CD2DSolidColorBrush(
     CD2DBrushProperties* pBrushProperties = NULL,
     BOOL bAutoDestroy = TRUE);
 
-
 CD2DSolidColorBrush(
     CRenderTarget* pParentTarget,
     COLORREF color,

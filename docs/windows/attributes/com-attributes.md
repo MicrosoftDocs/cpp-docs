@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "uwp"]
 # COM Attributes
 
 The COM attributes inject code to support numerous areas of COM development and .NET Framework common language runtime development. These areas range from custom interface implementation and support of existing interfaces to supporting stock properties, methods, and events. In addition, support can be found for composite and ActiveX control implementation.
-  
+
 |Attribute|Description|
 |---------------|-----------------|
 |[aggregatable](aggregatable.md)|Indicates that a control can be aggregated by another control.|
@@ -30,7 +30,7 @@ The COM attributes inject code to support numerous areas of COM development and 
 |[synchronize](synchronize.md)|Synchronizes access to a method.|
 |[threading](threading-cpp.md)|Specifies the threading model for a COM object.|
 |[vi_progid](vi-progid.md)|Defines a version-independent ProgID for a control.|
-  
+
 ## See Also
 
 [Attributes by Group](attributes-by-group.md)

@@ -106,7 +106,6 @@ Constructs an animation size object.
 ```
 CAnimationSize();
 
-
 CAnimationSize(
     const CSize& szDefault,
     UINT32 nGroupID,

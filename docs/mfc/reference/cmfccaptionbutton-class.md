@@ -76,7 +76,6 @@ Constructs a `CMFCCaptionButton` object.
 ```
 CMFCCaptionButton();
 
-
 CMFCCaptionButton(
     UINT nHit,
     BOOL bLeftAlign = FALSE);

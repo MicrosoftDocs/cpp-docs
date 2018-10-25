@@ -185,7 +185,6 @@ int AddBitmap(
     int nNumButtons,
     UINT nBitmapID);
 
-
 int AddBitmap(
     int nNumButtons,
     CBitmap* pBitmap);

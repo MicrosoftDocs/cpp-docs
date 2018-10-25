@@ -129,7 +129,6 @@ virtual BOOL Create(
     CWnd* pParentWnd,
     UINT nID);
 
-
 virtual BOOL Create(
     DWORD dwStyle,
     const POINT& pt,
@@ -1068,11 +1067,9 @@ BOOL SetRange(
     const COleDateTime* pMinRange,
     const COleDateTime* pMaxRange);
 
-
 BOOL SetRange(
     const CTime* pMinRange,
     const CTime* pMaxRange);
-
 
 BOOL SetRange(
     const LPSYSTEMTIME pMinRange,
@@ -1108,11 +1105,9 @@ BOOL SetSelRange(
     const COleDateTime& pMinRange,
     const COleDateTime& pMaxRange);
 
-
 BOOL SetSelRange(
     const CTime& pMinRange,
     const CTime& pMaxRange);
-
 
 BOOL SetSelRange(
     const LPSYSTEMTIME pMinRange,

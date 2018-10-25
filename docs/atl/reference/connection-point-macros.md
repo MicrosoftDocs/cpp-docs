@@ -21,7 +21,7 @@ These macros define connection point maps and entries.
 |[BEGIN_CONNECTION_POINT_MAP](#begin_connection_point_map)|Marks the beginning of the connection point map entries.|
 |[CONNECTION_POINT_ENTRY](#connection_point_entry)|Enters connection points into the map.|
 |[CONNECTION_POINT_ENTRY_P](#connection_point_entry)| (Visual Studio 2017) Similar to CONNECTION_POINT_ENTRY but takes a pointer to iid.|
-|[END_CONNECTION_POINT_MAP](#end_connection_point_map)|Marks the end of the connection point map entries.|  
+|[END_CONNECTION_POINT_MAP](#end_connection_point_map)|Marks the end of the connection point map entries.|
 
 ## Requirements
 
@@ -62,7 +62,7 @@ CONNECTION_POINT_ENTRY_P(piid) // (Visual Studio 2017)
 ### Parameters
 
 *iid*<br/>
-[in] The GUID of the interface being added to the connection point map. 
+[in] The GUID of the interface being added to the connection point map.
 
 *piid*<br/>
 [in] Pointer to the GUID of the interface being adde.

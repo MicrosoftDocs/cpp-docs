@@ -40,7 +40,7 @@ The following code example boxes and unboxes a `DateTime` value. First, the exam
 To test the example, create a `BlankApplication` project, replace the `BlankPage::OnNavigatedTo()` method, and then specify breakpoints at the closing bracket and the assignment to variable `str1`. When the example reaches the closing bracket, examine `str1`.
 
 ```cpp
-void BlankPage::OnNavigatedTo(NavigationEventArgs^ e)  
+void BlankPage::OnNavigatedTo(NavigationEventArgs^ e)
 {
     using namespace Windows::Globalization::DateTimeFormatting;
 
@@ -163,7 +163,7 @@ int main() {
                 // Will call void func1(System::Object^);
 
    func2(v2);   // OK: Calls "static V2::operator System::Object^(V2 v2)"
-   func2((V2^)v2);   // Using explicit boxing: calls func2(System::ValueType^)  
+   func2((V2^)v2);   // Using explicit boxing: calls func2(System::ValueType^)
 }
 ```
 
@@ -184,7 +184,7 @@ in func1(V2^)
 
 in func2(System::ValueType^)
 
-in func2(System::ValueType^)  
+in func2(System::ValueType^)
 ```
 
 ## See Also

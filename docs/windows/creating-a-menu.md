@@ -23,8 +23,8 @@ ms.workload: ["cplusplus", "uwp"]
 
 2. Select the **New Item** box (the rectangle that contains "Type Here") on the menu bar.
 
-   ![New Item box in the menu editor](../windows/media/vcmenueditornewitembox.gif "vcMenuEditorNewItemBox")  
-New Item Box
+   ![New Item box in the menu editor](../windows/media/vcmenueditornewitembox.gif "vcMenuEditorNewItemBox")<br/>
+   New Item Box
 
 3. Type a name for your new menu, for example, "File".
 
@@ -32,8 +32,8 @@ New Item Box
 
    Once you have given your new menu a name on the menu bar, the new-item box shifts to the right (to allow you to add another menu), and another new-item box opens below your first menu so you can add menu commands to it.
 
-   ![Expanded New Item box](../windows/media/vcmenueditornewitemboxexpanded.gif "vcMenuEditorNewItemBoxExpanded")  
-New Item Box with Focus Shifted After You Type Menu Name
+   ![Expanded New Item box](../windows/media/vcmenueditornewitemboxexpanded.gif "vcMenuEditorNewItemBoxExpanded")<br/>
+   New Item Box with Focus Shifted After You Type Menu Name
 
    > [!NOTE]
    > To create a single-item menu on the menu bar, set the **Popup** property to **False**.

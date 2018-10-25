@@ -83,7 +83,6 @@ CMultiPageDHtmlDialog(
     LPCTSTR szHtmlResID = NULL,
     CWnd* pParentWnd = NULL);
 
-
 CMultiPageDHtmlDialog(
     UINT nIDTemplate,
     UINT nHtmlResID = 0,

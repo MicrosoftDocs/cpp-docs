@@ -32,15 +32,15 @@ The ActiveX control classes provide several components you can use to implement 
 
 - The [CPictureHolder](../mfc/reference/cpictureholder-class.md) class.
 
-     This class provides easy access to the picture object and functionality for the item displayed by the custom Picture property.
+   This class provides easy access to the picture object and functionality for the item displayed by the custom Picture property.
 
 - Support for properties of type **LPPICTUREDISP**, implemented with Get/Set functions.
 
-     Using Class View you can quickly add a custom property, or properties, that supports the Picture type. For more information on adding ActiveX control properties with Class View, see the article [MFC ActiveX Controls: Properties](../mfc/mfc-activex-controls-properties.md).
+   Using Class View you can quickly add a custom property, or properties, that supports the Picture type. For more information on adding ActiveX control properties with Class View, see the article [MFC ActiveX Controls: Properties](../mfc/mfc-activex-controls-properties.md).
 
 - A property page that manipulates a control's Picture property or properties.
 
-     This property page is part of a group of stock property pages available to ActiveX controls. For more information on ActiveX control property pages, see the article [MFC ActiveX Controls: Using Stock Property Pages](../mfc/mfc-activex-controls-using-stock-property-pages.md)
+   This property page is part of a group of stock property pages available to ActiveX controls. For more information on ActiveX control property pages, see the article [MFC ActiveX Controls: Using Stock Property Pages](../mfc/mfc-activex-controls-using-stock-property-pages.md)
 
 ##  <a name="_core_implementing_a_custom_picture_property_in_your_activex_control"></a> Implementing a Custom Picture Property in Your ActiveX Control
 
@@ -52,11 +52,11 @@ To implement a custom Picture property, you must do the following:
 
 - [Add code to your control project](#_core_additions_to_your_control_project).
 
-     A standard Picture property page ID, a data member of type `CPictureHolder`, and a custom property of type **LPPICTUREDISP** with a Get/Set implementation must be added.
+   A standard Picture property page ID, a data member of type `CPictureHolder`, and a custom property of type **LPPICTUREDISP** with a Get/Set implementation must be added.
 
 - [Modify several functions in your control class](#_core_modifications_to_your_control_project).
 
-     These modifications will be made to several functions that are responsible for the drawing of your ActiveX control.
+   These modifications will be made to several functions that are responsible for the drawing of your ActiveX control.
 
 ##  <a name="_core_additions_to_your_control_project"></a> Additions to Your Control Project
 

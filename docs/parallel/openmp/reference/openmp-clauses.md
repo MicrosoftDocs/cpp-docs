@@ -1,5 +1,5 @@
 ---
-title: "OpenMP Clauses | Microsoft Docs"
+title: "OpenMP clauses | Microsoft Docs"
 ms.custom: ""
 ms.date: "10/22/2018"
 ms.technology: ["cpp-parallel"]
@@ -18,21 +18,21 @@ Provides links to clauses used in the OpenMP API.
 
 Visual C++ supports the following OpenMP clauses:
 
-Clause                             | Description
----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-[copyin](#copyin)                  | Allows threads to access the master thread's value, for a [threadprivate](openmp-directives.md#threadprivate) variable.
-[copyprivate](#copyprivate)        | Specifies that one or more variables should be shared among all threads.
-[default](#default-openmp)         | Specifies the behavior of unscoped variables in a parallel region.
-[firstprivate](#firstprivate)      | Specifies that each thread should have its own instance of a variable, and that the variable should be initialized with the value of the variable, because it exists before the parallel construct.
-[if](#if-openmp)                   | Specifies whether a loop should be executed in parallel or in serial.
-[lastprivate](#lastprivate)        | Specifies that the enclosing context's version of the variable is set equal to the private version of whichever thread executes the final iteration (for-loop construct) or last section (#pragma sections).
-[nowait](#nowait)                  | Overrides the barrier implicit in a directive.
-[num_threads](#num-threads)        | Sets the number of threads in a thread team.
-[ordered](#ordered-openmp-clauses) | Required on a parallel [for](openmp-directives.md#for-openmp) statement if an [ordered](openmp-directives.md#ordered-openmp-directives) directive is to be used in the loop.
-[private](#private-openmp)         | Specifies that each thread should have its own instance of a variable.
-[reduction](#reduction)            | Specifies that one or more variables that are private to each thread are the subject of a reduction operation at the end of the parallel region.
-[schedule](#schedule)              | Applies to the [for](openmp-directives.md#for-openmp) directive.
-[shared](#shared-openmp)           | Specifies that one or more variables should be shared among all threads.
+|Clause|Description|
+|------|-----------|
+|[copyin](#copyin)|Allows threads to access the master thread's value, for a [threadprivate](openmp-directives.md#threadprivate) variable.|
+|[copyprivate](#copyprivate)|Specifies that one or more variables should be shared among all threads.|
+|[default](#default-openmp)|Specifies the behavior of unscoped variables in a parallel region.|
+|[firstprivate](#firstprivate)|Specifies that each thread should have its own instance of a variable, and that the variable should be initialized with the value of the variable, because it exists before the parallel construct.|
+|[if](#if-openmp)|Specifies whether a loop should be executed in parallel or in serial.|
+|[lastprivate](#lastprivate)|Specifies that the enclosing context's version of the variable is set equal to the private version of whichever thread executes the final iteration (for-loop construct) or last section (#pragma sections).|
+|[nowait](#nowait)|Overrides the barrier implicit in a directive.|
+|[num_threads](#num-threads)|Sets the number of threads in a thread team.|
+|[ordered](#ordered-openmp-clauses)|Required on a parallel [for](openmp-directives.md#for-openmp) statement if an [ordered](openmp-directives.md#ordered-openmp-directives) directive is to be used in the loop.|
+|[private](#private-openmp)|Specifies that each thread should have its own instance of a variable.|
+|[reduction](#reduction)|Specifies that one or more variables that are private to each thread are the subject of a reduction operation at the end of the parallel region.|
+|[schedule](#schedule)|Applies to the [for](openmp-directives.md#for-openmp) directive.|
+|[shared](#shared-openmp)|Specifies that one or more variables should be shared among all threads.|
 
 ## <a name="copyin"></a>copyin
 
@@ -219,7 +219,7 @@ An integral expression that, if it evaluates to true (nonzero), causes the code 
 - [for](openmp-directives.md#for-openmp)
 - [sections](openmp-directives.md#sections-openmp)
 
-For more information, see [2.3 parallel Construct](../../../parallel/openmp/2-3-parallel-construct.md).
+For more information, see [2.3 parallel construct](../../../parallel/openmp/2-3-parallel-construct.md).
 
 ### Example
 
@@ -299,7 +299,7 @@ nowait
 - [sections](openmp-directives.md#sections-openmp)
 - [single](openmp-directives.md#single)
 
-For more information, see [2.4.1 for Construct](../../../parallel/openmp/2-4-1-for-construct.md), [2.4.2 sections Construct](../../../parallel/openmp/2-4-2-sections-construct.md), and [2.4.3 single Construct](../../../parallel/openmp/2-4-3-single-construct.md).
+For more information, see [2.4.1 for construct](../../../parallel/openmp/2-4-1-for-construct.md), [2.4.2 sections construct](../../../parallel/openmp/2-4-2-sections-construct.md), and [2.4.3 single construct](../../../parallel/openmp/2-4-3-single-construct.md).
 
 ### Example
 
@@ -363,7 +363,7 @@ The number of threads
 
 ### Remarks
 
-The `num_threads` clause has the same functionality as the [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) function.
+The `num_threads` clause has the same functionality as the [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) function.
 
 `num_threads` applies to the following directives:
 
@@ -371,7 +371,7 @@ The `num_threads` clause has the same functionality as the [omp_set_num_threads]
 - [for](openmp-directives.md#for-openmp)
 - [sections](openmp-directives.md#sections-openmp)
 
-For more information, see [2.3 parallel Construct](../../../parallel/openmp/2-3-parallel-construct.md).
+For more information, see [2.3 parallel construct](../../../parallel/openmp/2-3-parallel-construct.md).
 
 ### Example
 
@@ -389,7 +389,7 @@ ordered
 
 `ordered` applies to the [for](openmp-directives.md#for-openmp) directive.
 
-For more information, see [2.4.1 for Construct](../../../parallel/openmp/2-4-1-for-construct.md).
+For more information, see [2.4.1 for construct](../../../parallel/openmp/2-4-1-for-construct.md).
 
 ### Example
 
@@ -759,7 +759,7 @@ The kind of scheduling:
 
 ### Remarks
 
-For more information, see [2.4.1 for Construct](../../../parallel/openmp/2-4-1-for-construct.md).
+For more information, see [2.4.1 for construct](../../../parallel/openmp/2-4-1-for-construct.md).
 
 ### Example
 

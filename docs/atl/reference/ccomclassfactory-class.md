@@ -19,9 +19,9 @@ This class implements the [IClassFactory](/windows/desktop/api/unknwnbase/nn-unk
 ## Syntax
 
 ```
-class CComClassFactory 
-   : public IClassFactory,  
-     public CComObjectRootEx<CComGlobalsThreadModel>
+class CComClassFactory
+    : public IClassFactory,
+      public CComObjectRootEx<CComGlobalsThreadModel>
 ```
 
 ## Members

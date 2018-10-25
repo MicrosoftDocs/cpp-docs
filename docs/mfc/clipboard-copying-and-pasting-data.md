@@ -45,7 +45,7 @@ Pasting data is more complicated than copying it because you need to choose the 
 
 1. Call `COleDataObject::IsDataAvailable` to check whether a particular format is available.
 
-     Alternately, you can use `COleDataObject::BeginEnumFormats` to look for other formats until you find one most suited to your application.
+   Alternately, you can use `COleDataObject::BeginEnumFormats` to look for other formats until you find one most suited to your application.
 
 1. Perform the paste of the format.
 

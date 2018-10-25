@@ -19,7 +19,7 @@ ms.workload: ["cplusplus", "uwp"]
 
 2. In the **Property Pages** dialog box, click the **Resources** node in the left pane, then specify the additional include directories in the **Additional include directories** property.
 
-For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the .NET Framework Developer's Guide. 
+For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the .NET Framework Developer's Guide.
 
 ## Requirements
 

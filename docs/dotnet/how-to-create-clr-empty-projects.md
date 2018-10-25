@@ -22,7 +22,7 @@ To create a CLR empty project, use the **CLR Empty Project** template, which is 
 
 1. On the **File** menu, click **New**, and then click **Project**.
 
-     The **New Project** dialog box appears.
+   The **New Project** dialog box appears.
 
 1. Under **Installed Templates**, click the **Visual C++** node; then click the **CLR** node. Choose the **CLR Empty Project** icon.
 

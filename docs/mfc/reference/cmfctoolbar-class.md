@@ -840,7 +840,6 @@ void EnableCustomizeButton(
     const CString& strCustomizeText,
     BOOL bQuickCustomize=TRUE);
 
-
 void EnableCustomizeButton(
     BOOL bEnable,
     int iCustomizeCmd,
@@ -1857,7 +1856,6 @@ virtual int InsertButton(
     const CMFCToolBarButton& button,
     INT_PTR iInsertAt=-1);
 
-
 virtual int InsertButton(
     CMFCToolBarButton* pButton,
     int iInsertAt=-1);
@@ -2227,7 +2225,6 @@ You typically do not have to use this method. To enable the **Show Buttons on On
 
 ##  <a name="isresourcechanged"></a>  CMFCToolBar::IsResourceChanged
 
-
 ```
 virtual BOOL IsResourceChanged() const;
 ```
@@ -2237,7 +2234,6 @@ virtual BOOL IsResourceChanged() const;
 ### Remarks
 
 ##  <a name="issibling"></a>  CMFCToolBar::IsSibling
-
 
 ```
 BOOL IsSibling();
@@ -2305,7 +2301,6 @@ Call the `LoadBitmapEx` method to load additional images after you create the to
 
 ##  <a name="loadbitmapex"></a>  CMFCToolBar::LoadBitmapEx
 
-
 ```
 virtual BOOL LoadBitmapEx(
     CMFCToolBarInfo& params,
@@ -2314,8 +2309,8 @@ virtual BOOL LoadBitmapEx(
 
 ### Parameters
 
-*params*<br/>
-[in] [in] *bLocked*
+[in] *params*<br/>
+[in] *bLocked*<br/>
 
 ### Return Value
 
@@ -2323,14 +2318,13 @@ virtual BOOL LoadBitmapEx(
 
 ##  <a name="loadlargeiconsstate"></a>  CMFCToolBar::LoadLargeIconsState
 
-
 ```
 static BOOL __stdcall LoadLargeIconsState(LPCTSTR lpszProfileName = NULL);
 ```
 
 ### Parameters
 
-[in] *lpszProfileName*
+[in] *lpszProfileName*<br/>
 
 ### Return Value
 
@@ -2488,7 +2482,6 @@ The framework uses this data member when you do not specify a set of large image
 
 ##  <a name="nextmenu"></a>  CMFCToolBar::NextMenu
 
-
 ```
 virtual BOOL NextMenu();
 ```
@@ -2498,7 +2491,6 @@ virtual BOOL NextMenu();
 ### Remarks
 
 ##  <a name="onbeforeremovebutton"></a>  CMFCToolBar::OnBeforeRemoveButton
-
 
 ```
 virtual BOOL OnBeforeRemoveButton(
@@ -2537,7 +2529,6 @@ Override this method to process notifications that the user selected a button on
 
 ##  <a name="onchangevisualmanager"></a>  CMFCToolBar::OnChangeVisualManager
 
-
 ```
 virtual void OnChangeVisualManager();
 ```
@@ -2565,7 +2556,6 @@ Override this method to draw custom background in derived classes.
 
 ##  <a name="onglobalfontschanged"></a>  CMFCToolBar::OnGlobalFontsChanged
 
-
 ```
 virtual void OnGlobalFontsChanged();
 ```
@@ -2588,14 +2578,13 @@ The default implementation does nothing. Override `OnReset` in a class derived f
 
 ##  <a name="onsetaccdata"></a>  CMFCToolBar::OnSetAccData
 
-
 ```
 virtual BOOL OnSetAccData(long lVal);
 ```
 
 ### Parameters
 
-[in] *lVal*
+[in] *lVal*<br/>
 
 ### Return Value
 
@@ -2653,7 +2642,6 @@ The framework calls this method when the tooltip for a toolbar button is about t
 Override `OnUserToolTip` to customize tool tips of toolbar buttons. The default implementation calls [CMFCToolBar::OnUserToolTip](#onusertooltip) to obtain the tooltip text.
 
 ##  <a name="prevmenu"></a>  CMFCToolBar::PrevMenu
-
 
 ```
 virtual BOOL PrevMenu();
@@ -2816,7 +2804,6 @@ This method clears the image collections that are initialized by the [CMFCToolBa
 
 ##  <a name="resetimages"></a>  CMFCToolBar::ResetImages
 
-
 ```
 virtual void ResetImages();
 ```
@@ -2824,7 +2811,6 @@ virtual void ResetImages();
 ### Remarks
 
 ##  <a name="restorefocus"></a>  CMFCToolBar::RestoreFocus
-
 
 ```
 virtual void RestoreFocus();
@@ -2852,14 +2838,13 @@ The framework calls this method when the user chooses the **Reset All** button o
 
 ##  <a name="saveparameters"></a>  CMFCToolBar::SaveParameters
 
-
 ```
 static BOOL __stdcall SaveParameters(LPCTSTR lpszProfileName = NULL);
 ```
 
 ### Parameters
 
-[in] *lpszProfileName*
+[in] *lpszProfileName*<br/>
 
 ### Return Value
 
@@ -3115,19 +3100,17 @@ This method redraws the toolbar after it sets the height.
 
 ##  <a name="sethelpmode"></a>  CMFCToolBar::SetHelpMode
 
-
 ```
 static void __stdcall SetHelpMode(BOOL bOn = TRUE);
 ```
 
 ### Parameters
 
-[in] *bOn*
+[in] *bOn*<br/>
 
 ### Remarks
 
 ##  <a name="sethot"></a>  CMFCToolBar::SetHot
-
 
 ```
 BOOL SetHot(CMFCToolBarButton* pMenuButton);
@@ -3135,7 +3118,7 @@ BOOL SetHot(CMFCToolBarButton* pMenuButton);
 
 ### Parameters
 
-[in] *pMenuButton*
+[in] *pMenuButton*<br/>
 
 ### Return Value
 
@@ -3179,14 +3162,13 @@ For more information about hot-tracked toolbar buttons, see [CMFCToolBar::GetHot
 
 ##  <a name="setignoresettext"></a>  CMFCToolBar::SetIgnoreSetText
 
-
 ```
 void SetIgnoreSetText(BOOL bValue);
 ```
 
 ### Parameters
 
-[in] *bValue*
+[in] *bValue*<br/>
 
 ### Remarks
 
@@ -3241,14 +3223,13 @@ Call the [CMFCToolBar::GetLockedImageSize](#getlockedimagesize) method to retrie
 
 ##  <a name="setmaskmode"></a>  CMFCToolBar::SetMaskMode
 
-
 ```
 void SetMaskMode(BOOL bMasked);
 ```
 
 ### Parameters
 
-[in] *bMasked*
+[in] *bMasked*<br/>
 
 ### Remarks
 
@@ -3315,14 +3296,13 @@ The framework calls the [CMFCToolBar::SetTwoRowsWithSibling](#settworowswithsibl
 
 ##  <a name="setorigbuttons"></a>  CMFCToolBar::SetOrigButtons
 
-
 ```
 void SetOrigButtons(const CObList& lstOrigButtons);
 ```
 
 ### Parameters
 
-[in] *lstOrigButtons*
+[in] *lstOrigButtons*<br/>
 
 ### Remarks
 
@@ -3621,6 +3601,4 @@ AFX_IMPORT_DATA static BOOL m_bDontScaleImages;
 [CMFCPopupMenuBar Class](../../mfc/reference/cmfcpopupmenubar-class.md)<br/>
 [CMFCDropDownToolBar Class](../../mfc/reference/cmfcdropdowntoolbar-class.md)<br/>
 [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-
-
 

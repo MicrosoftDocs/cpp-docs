@@ -31,20 +31,17 @@ basic_istream<CharType, Traits>& getline(
     basic_string<CharType, Traits, Allocator>& str,
     CharType delim);
 
-
 template <class CharType, class Traits, class Allocator>
 basic_istream<CharType, Traits>& getline(
     basic_istream<CharType, Traits>&& is,
     basic_string<CharType, Traits, Allocator>& str,
     const CharType delim);
 
-
 // (2) default delimiter used
 template <class CharType, class Traits, class Allocator>
 basic_istream<CharType, Traits>& getline(
     basic_istream<CharType, Traits>& is,
     basic_string<CharType, Traits, Allocator>& str);
-
 
 template <class Allocator, class Traits, class Allocator>
 basic_istream<Allocator, Traits>& getline(

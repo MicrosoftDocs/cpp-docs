@@ -140,12 +140,12 @@ Releases the interface pointed to by `CComPtrBase`.
 Call this method to create an object of the class associated with a specified Class ID or Program ID.
 
 ```
-HRESULT CoCreateInstance(  
+HRESULT CoCreateInstance(
     LPCOLESTR szProgID,
     LPUNKNOWN pUnkOuter = NULL,
     DWORD dwClsContext = CLSCTX_ALL) throw();
 
-HRESULT CoCreateInstance(  
+HRESULT CoCreateInstance(
     REFCLSID rclsid,
     LPUNKNOWN pUnkOuter = NULL,
     DWORD dwClsContext = CLSCTX_ALL) throw();

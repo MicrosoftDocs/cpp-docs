@@ -49,7 +49,7 @@ Control reaches a **__try** statement by simple sequential execution (fall throu
 
 1. When the termination handler completes, execution continues after the **__finally** statement. Regardless of how the guarded section ends (for example, via a **goto** out of the guarded body or a **return** statement), the termination handler is executed *before* the flow of control moves out of the guarded section.
 
-     A **__finally** statement does not block searching for an appropriate exception handler.
+   A **__finally** statement does not block searching for an appropriate exception handler.
 
 If an exception occurs in the **__try** block, the operating system must find a handler for the exception or the program will fail. If a handler is found, any and all **__finally** blocks are executed and execution resumes in the handler.
 

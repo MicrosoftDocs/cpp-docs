@@ -112,4 +112,3 @@ Specifies the amount of red or green tint adjustment to be applied to the source
 [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CDC::GetColorAdjustment](../../mfc/reference/cdc-class.md#getcoloradjustment)
 
-

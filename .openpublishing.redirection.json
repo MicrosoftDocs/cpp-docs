@@ -6501,6 +6501,116 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/parallel/openmp/reference/omp-destroy-lock.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-destroy-lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-destroy-nest-lock.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-destroy-nest-lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-get-dynamic.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-get-dynamic",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-get-max-threads.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-get-max-threads",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-get-nested.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-get-nested",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-get-num-procs.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-get-num-procs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-get-num-threads.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-get-num-threads",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-get-thread-num.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-get-thread-num",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-get-wtick.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-get-wtick",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-get-wtime.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-get-wtime",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-init-lock.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-init-lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-init-nest-lock.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-init-nest-lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-in-parallel.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-in-parallel",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-set-dynamic.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-set-dynamic",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-set-lock.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-set-lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-set-nest-lock.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-set-nest-lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-set-nested.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-set-nested",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-set-num-threads.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-set-num-threads",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-test-lock.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-test-lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-test-nest-lock.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-test-nest-lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-unset-lock.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-unset-lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/omp-unset-nest-lock.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions#omp-unset-nest-lock",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/porting/index.md",
             "redirect_url": "/cpp/porting/visual-cpp-porting-and-upgrading-guide",
             "redirect_document_id": false

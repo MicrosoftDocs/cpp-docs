@@ -59,4 +59,4 @@ For more information, see [Attribute Contexts](cpp-attributes-com-net.md#context
 ## See Also
 
 [IDL Attributes](idl-attributes.md)<br/>
-[Method Attributes](method-attributes.md)  
+[Method Attributes](method-attributes.md)

@@ -242,7 +242,6 @@ CMFCColorBar(
     UINT nCommandID,
     CMFCColorButton* pParentBtn);
 
-
 CMFCColorBar(
     const CArray<COLORREF,COLORREF>& colors,
     COLORREF color,
@@ -254,7 +253,6 @@ CMFCColorBar(
     COLORREF colorAutomatic,
     UINT nCommandID,
     CMFCRibbonColorButton* pParentRibbonBtn);
-
 
 CMFCColorBar(
     CMFCColorBar& src,

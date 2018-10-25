@@ -1800,7 +1800,6 @@ BOOL SetTargetDevice(
     HDC hDC,
     long lLineWidth);
 
-
 BOOL SetTargetDevice(
     CDC& dc,
     long lLineWidth);

@@ -89,7 +89,6 @@ void AddFormat(
     LPTSTR lpszResult,
     DWORD flags);
 
-
 void AddFormat(
     UINT cf,
     DWORD tymed,

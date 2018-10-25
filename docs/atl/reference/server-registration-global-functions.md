@@ -24,7 +24,7 @@ These functions provide support for registering and unregistering server objects
 |[AtlComModuleUnregisterServer](#atlcommoduleunregisterserver)|This function is called to unregister every object in the object map.|
 |[AtlComModuleRegisterClassObjects](#atlcommoduleregisterclassobjects)|This function is called to register class objects.|
 |[AtlComModuleRevokeClassObjects](#atlcommodulerevokeclassobjects)|This function is called to revoke class objects from a COM module.|
-|[AtlComModuleGetClassObject](#atlcommodulegetclassobject)|This function is called to get the class object.|  
+|[AtlComModuleGetClassObject](#atlcommodulegetclassobject)|This function is called to get the class object.|
 
 ## Requirements
 

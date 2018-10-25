@@ -43,9 +43,9 @@ The simplest and most recommended way to create an active document container app
 
          [!code-cpp[NVC_MFCDocView#56](../mfc/codesnippet/cpp/creating-an-active-document-container-application_1.cpp)]
 
-     `OnPreparePrinting` provides printing support. This code replaces `DoPreparePrinting`, which is the default print preparation.
+   `OnPreparePrinting` provides printing support. This code replaces `DoPreparePrinting`, which is the default print preparation.
 
-     Active document containment provides an improved printing scheme:
+   Active document containment provides an improved printing scheme:
 
    - You can first call the active document through its `IPrint` interface and tell it to print itself. This is different from previous OLE containment, in which the container had to render an image of the contained item onto the printer `CDC` object.
 
@@ -53,7 +53,7 @@ The simplest and most recommended way to create an active document container app
 
    - If that fails, make your own rendering of the item.
 
-     The static member functions `COleDocObjectItem::OnPrint` and `COleDocObjectItem::OnPreparePrinting`, as implemented in the previous code, handle this improved printing scheme.
+   The static member functions `COleDocObjectItem::OnPrint` and `COleDocObjectItem::OnPreparePrinting`, as implemented in the previous code, handle this improved printing scheme.
 
 11. Add any implementation of your own and build the application.
 

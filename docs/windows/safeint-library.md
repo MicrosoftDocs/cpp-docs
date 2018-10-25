@@ -1,7 +1,7 @@
 ---
 title: "SafeInt Library | Microsoft Docs"
 ms.custom: "index-page"
-ms.date: "11/04/2016"
+ms.date: "10/22/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["SafeInt"]
@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeInt Library
 
-The **SafeInt** library helps prevent integer overflows that might result when the application performs mathematical operations.
+The **SafeInt** library helps prevent integer overflows that might result when the application performs mathematical operations. The latest version of this library is located at [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt).
 
 ## In This Section
 

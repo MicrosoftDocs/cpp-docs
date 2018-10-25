@@ -485,7 +485,6 @@ void InsertAt(
     CObject* newElement,
     INT_PTR nCount = 1);
 
-
 void InsertAt(
     INT_PTR nStartIndex,
     CObArray* pNewArray);

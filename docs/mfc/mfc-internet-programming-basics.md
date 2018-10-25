@@ -70,5 +70,3 @@ The OLE section of the Windows SDK contains additional information about OLE pro
 
 ## See Also
 
-
-

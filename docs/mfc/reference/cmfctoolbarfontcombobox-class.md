@@ -87,7 +87,6 @@ CMFCToolBarFontComboBox(
     int iWidth = 0,
     BYTE nPitchAndFamily = DEFAULT_PITCH);
 
-
 protected:
 CMFCToolBarFontComboBox(
     CObList* pLstFontsExternal,
@@ -209,6 +208,4 @@ If *bExact* is TRUE, this method selects a font that exactly matches the name th
 [CMFCFontInfo Class](../../mfc/reference/cmfcfontinfo-class.md)<br/>
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
 [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-
-
 

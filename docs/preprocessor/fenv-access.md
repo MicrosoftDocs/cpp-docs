@@ -17,11 +17,11 @@ Disables (**on**) or enables (**off**) optimizations that could change floating-
 
 ## Syntax
 
-> **#pragma fenv_access (** { **on** | **off** } **)**  
+> **#pragma fenv_access (** { **on** | **off** } **)**
 
 ## Remarks
 
-By default, **fenv_access** is **off**. If the compiler can assume that your code does not access or manipulate the floating-point environment, then it can perform many floating-point code optimizations. Set **fenv_access**  to **on** to inform the compiler that your code accesses the floating-point environment to test status flags, exceptions, or to set control mode flags. The compiler disables these optimizations so that your code can access the floating-point environment consistently. 
+By default, **fenv_access** is **off**. If the compiler can assume that your code does not access or manipulate the floating-point environment, then it can perform many floating-point code optimizations. Set **fenv_access**  to **on** to inform the compiler that your code accesses the floating-point environment to test status flags, exceptions, or to set control mode flags. The compiler disables these optimizations so that your code can access the floating-point environment consistently.
 
 For more information on floating-point behavior, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md).
 

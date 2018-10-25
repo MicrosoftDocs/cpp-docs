@@ -1107,11 +1107,9 @@ static BOOL SelectItemAll(
     UINT uiCmd,
     int iIndex);
 
-
 static BOOL SelectItemAll(
     UINT uiCmd,
     DWORD_PTR dwData);
-
 
 static BOOL SelectItemAll(
     UINT uiCmd,
@@ -1279,6 +1277,4 @@ void SetText(LPCTSTR lpszText);
 [CComboBox Class](../../mfc/reference/ccombobox-class.md)<br/>
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
 [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-
-
 

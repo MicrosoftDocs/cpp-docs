@@ -85,7 +85,7 @@ The following guidelines must be observed when declaring statically bound thread
     int *p = &tls_i;       //This will generate an error in C.
     ```
 
-     This restriction does not apply in C++. Because C++ allows for dynamic initialization of all objects, you can initialize an object by using an expression that uses the address of a thread local variable. This is accomplished just like the construction of thread local objects. For example, the code shown earlier does not generate an error when it is compiled as a C++ source file. Note that the address of a thread local variable is valid only as long as the thread in which the address was taken still exists.
+   This restriction does not apply in C++. Because C++ allows for dynamic initialization of all objects, you can initialize an object by using an expression that uses the address of a thread local variable. This is accomplished just like the construction of thread local objects. For example, the code shown earlier does not generate an error when it is compiled as a C++ source file. Note that the address of a thread local variable is valid only as long as the thread in which the address was taken still exists.
 
 - Standard C allows for the initialization of an object or variable with an expression involving a reference to itself, but only for objects of nonstatic extent. Although C++ generally allows for such dynamic initialization of objects with an expression involving a reference to itself, this kind of initialization is not permitted with thread local objects. For example:
 
@@ -95,9 +95,9 @@ The following guidelines must be observed when declaring statically bound thread
     __declspec( thread )int tls_i = sizeof( tls_i )       // Legal in C and C++
     ```
 
-     Note that a `sizeof` expression that includes the object being initialized does not represent a reference to itself and is enabled in both C and C++.
+   Note that a `sizeof` expression that includes the object being initialized does not represent a reference to itself and is enabled in both C and C++.
 
-     C++ does not allow such dynamic initialization of thread data because of possible future enhancements to the thread local storage facility.
+   C++ does not allow such dynamic initialization of thread data because of possible future enhancements to the thread local storage facility.
 
 - On Windows operating systems before Windows Vista, `__declspec`( thread ) has some limitations. If a DLL declares any data or object as `__declspec`( thread ), it can cause a protection fault if dynamically loaded. After the DLL is loaded with [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya), it causes system failure whenever the code references the `__declspec`( thread ) data. Because the global variable space for a thread is allocated at run time, the size of this space is based on a calculation of the requirements of the application plus the requirements of all the DLLs that are statically linked. When you use `LoadLibrary`, you cannot extend this space to allow for the thread local variables declared with `__declspec`( thread ). Use the TLS APIs, such as [TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc), in your DLL to allocate TLS if the DLL might be loaded with `LoadLibrary`.
 

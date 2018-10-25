@@ -21,15 +21,15 @@ There are three main C++ language elements to run-time type information:
 
 - The [dynamic_cast](../cpp/dynamic-cast-operator.md) operator.
 
-     Used for conversion of polymorphic types.
+   Used for conversion of polymorphic types.
 
 - The [typeid](../cpp/typeid-operator.md) operator.
 
-     Used for identifying the exact type of an object.
+   Used for identifying the exact type of an object.
 
 - The [type_info](../cpp/type-info-class.md) class.
 
-     Used to hold the type information returned by the **typeid** operator.
+   Used to hold the type information returned by the **typeid** operator.
 
 ## See also
 

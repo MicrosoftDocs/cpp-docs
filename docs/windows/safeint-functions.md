@@ -1,7 +1,7 @@
 ---
 title: "SafeInt Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/28/2018"
+ms.date: "10/22/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["SafeInt functions", "SafeAdd", "SafeCast", "SafeDivide", "SafeEquals", "SafeGreaterThan", "SafeGreaterThanEquals", "SafeLessThan", "SafeLessThanEquals", "SafeModulus", "SafeMultiply", "SafeNotEquals", "SafeSubtract"]
@@ -19,6 +19,9 @@ The SafeInt library provides several functions that you can use without creating
 These functions enable you to compare or perform mathematical operations on two different types of parameters without having to convert them to the same type first.
 
 Each of these functions has two template types: `T` and `U`. Each of these types can be a Boolean, character, or integral type. Integral types can be signed or unsigned and any size from 8 bits to 64 bits.
+
+> [!NOTE]
+> The latest version of this library is located at [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt).
 
 ## In This Section
 

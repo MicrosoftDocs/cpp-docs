@@ -513,5 +513,3 @@ This function allows the view to update its display to reflect modifications.
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

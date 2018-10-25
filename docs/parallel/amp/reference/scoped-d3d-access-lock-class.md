@@ -91,6 +91,7 @@ Releases the D3D access lock on the associated `accelerator_view` object.
 ```
 ~scoped_d3d_access_lock();
 ```
+
 ## <a name="operator_eq"></a> operator=
 
 Takes ownership of a D3D access lock from another `scoped_d3d_access_lock` object, releasing the previous lock.

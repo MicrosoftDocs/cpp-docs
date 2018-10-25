@@ -26,20 +26,20 @@ int __vmx_vmptrld( 
 );
 ```
 
-#### Parameters
+### Parameters
 
-[in] *`VmcsPhysicalAddress`
-The address where the VMCS pointer is stored.
+*VmcsPhysicalAddress*<br/>
+[in] The address where the VMCS pointer is stored.
 
 ## Return Value
 
-0
+0<br/>
 The operation succeeded.
 
-1
+1<br/>
 The operation failed with extended status available in the `VM-instruction error field` of the current VMCS.
 
-2
+2<br/>
 The operation failed without status available.
 
 ## Remarks

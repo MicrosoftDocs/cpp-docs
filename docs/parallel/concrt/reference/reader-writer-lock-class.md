@@ -121,6 +121,7 @@ An exception safe RAII wrapper that can be used to acquire `reader_writer_lock` 
 ```
 class scoped_lock;
 ```
+
 ## <a name="scoped_lock_ctor"></a> scoped_lock::scoped_lock
 
 Constructs a `scoped_lock` object and acquires the `reader_writer_lock` object passed in the `_Reader_writer_lock` parameter as a writer. If the lock is held by another thread, this call will block.

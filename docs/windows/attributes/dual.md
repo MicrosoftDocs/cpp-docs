@@ -46,7 +46,7 @@ __interface IStatic : IDispatch
    HRESULT P1([out, retval] long *nSize);
    [   propput,    id(1),    bindable,    displaybind,    defaultbind,    requestedit
    ]
-   HRESULT P1([in] long nSize); 
+   HRESULT P1([in] long nSize);
 };
 
 [cpp_quote("#include file.h")];
@@ -72,4 +72,4 @@ For more information, see [Attribute Contexts](cpp-attributes-com-net.md#context
 [custom](custom-cpp.md)<br/>
 [dispinterface](dispinterface.md)<br/>
 [object](object-cpp.md)<br/>
-[__interface](../../cpp/interface.md)  
+[__interface](../../cpp/interface.md)

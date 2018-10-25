@@ -80,7 +80,7 @@ These guidelines must be observed when you are declaring statically bound thread
     Thread int tls_i = sizeof( tls_i )    /* Okay  */
     ```
 
-     Note that a sizeof expression that includes the variable being initialized does not constitute a reference to itself and is allowed.
+   Note that a sizeof expression that includes the variable being initialized does not constitute a reference to itself and is allowed.
 
 - The use of **__declspec(thread)** may interfere with [delay loading](../build/reference/linker-support-for-delay-loaded-dlls.md) of DLL imports**.**
 

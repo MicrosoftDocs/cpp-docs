@@ -92,7 +92,6 @@ Constructs a `CMFCColorMenuButton` object.
 ```
 CMFCColorMenuButton();
 
-
 CMFCColorMenuButton(
     UINT uiCmdID,
     LPCTSTR lpszText,

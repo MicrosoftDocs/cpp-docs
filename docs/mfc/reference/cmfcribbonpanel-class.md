@@ -18,7 +18,6 @@ Implements a panel that contains a set of ribbon elements. When the panel is dra
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
-
 ## Syntax
 
 ```
@@ -421,7 +420,6 @@ The name of the ribbon panel.
 
 ##  <a name="getparentbutton"></a>  CMFCRibbonPanel::GetParentButton
 
-
 ```
 CMFCRibbonBaseElement* GetParentButton() const;
 ```
@@ -443,7 +441,6 @@ CMFCRibbonCategory* GetParentCategory() const;
 A pointer to the ribbon category that contains this ribbon panel.
 
 ##  <a name="getparentmenubar"></a>  CMFCRibbonPanel::GetParentMenuBar
-
 
 ```
 CMFCRibbonPanelMenuBar* GetParentMenuBar() const;
@@ -711,7 +708,6 @@ The main ribbon panel is displayed when the user selects the application button.
 
 ##  <a name="ismenumode"></a>  CMFCRibbonPanel::IsMenuMode
 
-
 ```
 BOOL IsMenuMode() const;
 ```
@@ -722,14 +718,13 @@ BOOL IsMenuMode() const;
 
 ##  <a name="onkey"></a>  CMFCRibbonPanel::OnKey
 
-
 ```
 virtual BOOL OnKey(UINT nChar);
 ```
 
 ### Parameters
 
-[in] *nChar*
+[in] *nChar*<br/>
 
 ### Return Value
 
@@ -810,8 +805,8 @@ CMFCRibbonBaseElement* pElem);
 *nIndex*<br/>
 [in] Specifies the zero-based index of the element to replace.
 
-[in] [out] *pElem*
-A valid pointer to the element that replaces the original element.
+*pElem*<br/>
+[in, out] A valid pointer to the element that replaces the original element.
 
 ### Return Value
 
@@ -836,8 +831,8 @@ CMFCRibbonBaseElement* pElem);
 *uiCmdID*<br/>
 [in] Specifies the command ID of the element to replace.
 
-[in] [out] *pElem*
-A valid pointer to the element that will replace the original element.
+*pElem*<br/>
+[in, out] A valid pointer to the element that will replace the original element.
 
 ### Return Value
 
@@ -890,7 +885,6 @@ HMENU hMenu,
 BOOL bIsDefautCommand = FALSE,
 BOOL bRightAlign = FALSE);
 
-
 BOOL SetElementMenu(
 UINT uiCmdID,
 UINT uiMenuResID,
@@ -938,8 +932,8 @@ CRuntimeClass* pRTC);
 *nIndex*<br/>
 [in] Specifies the zero-based index of the ribbon element to add.
 
-[in] [out] *pRTC*
-A pointer to the runtime class information for the ribbon element that is added to the ribbon panel.
+*pRTC*<br/>
+[in, out] A pointer to the runtime class information for the ribbon element that is added to the ribbon panel.
 
 ### Return Value
 
@@ -964,8 +958,8 @@ CRuntimeClass* pRTC);
 *uiCmdID*<br/>
 [in] Specifies the command ID of the ribbon element to add.
 
-[in] [out] *pRTC*
-A pointer to the runtime class information associated with the ribbon element that is added to the ribbon panel.
+*pRTC*<br/>
+[in, out] A pointer to the runtime class information associated with the ribbon element that is added to the ribbon panel.
 
 ### Return Value
 
@@ -991,7 +985,6 @@ CMFCRibbonColorButton* pColorButton =
 (CMFCRibbonColorButton*)pPanel->SetElementRTCByID(
 ID_CHAR_COLOR,
     RUNTIME_CLASS (CMFCRibbonColorButton));
-
 
 // SetElementRTCByID sets runtime class and returns a pointer
 // to the newly created custom button,

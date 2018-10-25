@@ -71,7 +71,7 @@ For example purposes, the following procedures use a simple control (named "Samp
 
 1. Open the IDD_PROPPAGE_SAMPLE dialog box.
 
-     The ActiveX Control Wizard appends the name of the project to the end of the dialog ID, in this case, Sample.
+   The ActiveX Control Wizard appends the name of the project to the end of the dialog ID, in this case, Sample.
 
 1. Drag and drop the selected control from the Toolbox onto the dialog box area.
 

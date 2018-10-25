@@ -52,9 +52,9 @@ Notice the difference between deleting an element's object and removing the elem
 
 1. Call the `RemoveAll` function to remove all elements from the array after they have been deleted.
 
-     The code for deleting all elements of an array is as follows:
+   The code for deleting all elements of an array is as follows:
 
-     [!code-cpp[NVC_MFCCollections#18](../mfc/codesnippet/cpp/deleting-all-objects-in-a-cobject-collection_2.cpp)]
+   [!code-cpp[NVC_MFCCollections#18](../mfc/codesnippet/cpp/deleting-all-objects-in-a-cobject-collection_2.cpp)]
 
 As with the list example above, you can call `RemoveAll` to remove all elements in an array or `RemoveAt` to remove an individual element.
 
@@ -66,9 +66,9 @@ As with the list example above, you can call `RemoveAll` to remove all elements 
 
 1. Call the `RemoveAll` function to remove all elements from the map after they have been deleted.
 
-     The code for deleting all elements of a `CMap` collection is as follows. Each element in the map has a string as the key and a `CPerson` object (derived from `CObject`) as the value.
+   The code for deleting all elements of a `CMap` collection is as follows. Each element in the map has a string as the key and a `CPerson` object (derived from `CObject`) as the value.
 
-     [!code-cpp[NVC_MFCCollections#19](../mfc/codesnippet/cpp/deleting-all-objects-in-a-cobject-collection_3.cpp)]
+   [!code-cpp[NVC_MFCCollections#19](../mfc/codesnippet/cpp/deleting-all-objects-in-a-cobject-collection_3.cpp)]
 
 You can call `RemoveAll` to remove all elements in a map or `RemoveKey` to remove an individual element with the specified key.
 

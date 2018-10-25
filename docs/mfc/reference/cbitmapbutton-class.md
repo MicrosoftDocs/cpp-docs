@@ -160,7 +160,6 @@ BOOL LoadBitmaps(
     LPCTSTR lpszBitmapResourceFocus = NULL,
     LPCTSTR lpszBitmapResourceDisabled = NULL);
 
-
 BOOL LoadBitmaps(
     UINT nIDBitmapResource,
     UINT nIDBitmapResourceSel = 0,

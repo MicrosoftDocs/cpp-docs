@@ -51,8 +51,6 @@ The Microsoft Foundation Class Library provides the following global functions t
 |[AfxUserToolsManager](#afxusertoolsmanager)|Pointer to the global [user tools manager](cusertoolsmanager-class.md).|
 |[AfxWinInit](#afxwininit)|Called by the MFC-supplied `WinMain` function, as part of the [CWinApp](../../mfc/reference/cwinapp-class.md) initialization of a GUI-based application, to initialize MFC. Must be called directly for console applications that use MFC.|
 
-
-
 ##  <a name="afxbeginthread"></a>  AfxBeginThread
 
 Call this function to create a new thread.
@@ -134,6 +132,7 @@ Pointer to the global [context menu manager](ccontextmenumanager-class.md).
 ```
 CContextMenuManager* afxContextMenuManager;
 ```
+
 ### Requirements
 
 **Header:** afxcontextmenumanager.h
@@ -141,7 +140,6 @@ CContextMenuManager* afxContextMenuManager;
 ### See Also
 
 [CContextMenuManager Class](ccontextmenumanager-class.md)
-
 
 ##  <a name="afxendthread"></a>  AfxEndThread
 
@@ -179,6 +177,7 @@ Use `AfxFindResourceHandle` to walk the resource chain and locate a specific res
 ```
 HINSTANCE AFXAPI AfxFindResourceHandle( LPCTSTR lpszName,  LPCTSTR lpszType );
 ```
+
 ### Parameters
 
 *lpszName*<br/>
@@ -460,6 +459,7 @@ Determines whether the given window is an extended frame object.
 ```
 BOOL AFXAPI AfxIsExtendedFrameClass( CWnd* pWnd );
 ```
+
 ### Parameters
 
 *pWnd*<br/>
@@ -503,6 +503,7 @@ Determines whether the given window is a toolbar object.
 ```
 BOOL AFXAPI AfxIsMFCToolBar(CWnd* pWnd);
 ```
+
 ### Parameters
 
 *pWnd*<br/>
@@ -525,7 +526,6 @@ This method returns `TRUE` if *pWnd* derives from `CMFCToolBar`. This method is 
 [CWnd Class](cwnd-class.md)<br/>
 [CMFCToolBar Class](cmfctoolbar-class.md)
 
-
 ## <a name="afxkeyboardmanager"></a> AfxKeyboardManager
 
 Pointer to the global [keyboard manager](ckeyboardmanager-class.md).
@@ -535,6 +535,7 @@ Pointer to the global [keyboard manager](ckeyboardmanager-class.md).
 ```
 CKeyboardManager* afxKeyboardManager;
 ```
+
 ### Requirements
 
 **Header:** afxkeyboardmanager.h
@@ -543,7 +544,6 @@ CKeyboardManager* afxKeyboardManager;
 
 [Macros, Global Functions, and Global Variables](mfc-macros-and-globals.md)<br/>
 [CKeyboardManager Class](ckeyboardmanager-class.md)
-
 
 ##  <a name="afxloadlibrary"></a>  AfxLoadLibrary
 
@@ -607,6 +607,7 @@ Pointer to the global [tearoff menu manager](cmenutearoffmanager-class.md).
 ```
 CMenuTearOffManager* g_pTearOffMenuManager;
 ```
+
 ### Requirements
 
 **Header:** afxmenutearoffmanager.h
@@ -624,6 +625,7 @@ Pointer to the global [mouse manager](cmousemanager-class.md).
 ```
 CMouseManager* afxMouseManager;
 ```
+
 ### Requirements
 
 **Header:** afxmousemanager.h
@@ -631,8 +633,6 @@ CMouseManager* afxMouseManager;
 ### See Also
 
 [CMouseManager Class](cmousemanager-class.md)
-
-
 
 ##  <a name="afxregisterclass"></a>  AfxRegisterClass
 
@@ -832,7 +832,6 @@ CUserToolsManager* afxUserToolsManager;
 ### See Also
 
 [CUserToolsManager Class](cusertoolsmanager-class.md)
-
 
 ##  <a name="afxwininit"></a>  AfxWinInit
 

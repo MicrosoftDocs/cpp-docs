@@ -334,8 +334,6 @@ static BOOL IsWindowsThemingEnabled();
 
 TRUE if the style of the button border corresponds to the current Windows theme; otherwise, FALSE.
 
-
-
 ## <a name="m_bDontUseWinXPTheme"/> CMFCButton::m_bDontUseWinXPTheme
 
 Specifies whether to use Windows XP themes when drawing the button.
@@ -361,7 +359,6 @@ The `CMFCButton` constructor initializes this member to TRUE.
 ##  <a name="m_bGrayDisabled"></a>  CMFCButton::m_bGrayDisabled
 
 When TRUE, enables a disabled button to be drawn as grayed-out.
-
 
 ```
 BOOL m_bGrayDisabled;
@@ -394,7 +391,6 @@ Indicates whether to display an image on the right side of the button.
 ```
 BOOL m_bRightImage;
 ```
-
 
 ##  <a name="m_bTopImage"></a>  CMFCButton::m_bTopImage](#m_bTopImage)
 
@@ -654,14 +650,12 @@ void SetCheckedImage(
     HICON hIconDisabled=NULL,
     BOOL bAlphaBlend=FALSE);
 
-
 void SetCheckedImage(
     HBITMAP hBitmap,
     BOOL bAutoDestroy=TRUE,
     HBITMAP hBitmapHot=NULL,
     BOOL bMap3dColors=TRUE,
     HBITMAP hBitmapDisabled=NULL);
-
 
 void SetCheckedImage(
     UINT uiBmpResId,
@@ -743,14 +737,12 @@ void SetImage(
     HICON hIconDisabled=NULL,
     BOOL bAlphaBlend=FALSE);
 
-
 void SetImage(
     HBITMAP hBitmap,
     BOOL bAutoDestroy=TRUE,
     HBITMAP hBitmapHot=NULL,
     BOOL bMap3dColors=TRUE,
     HBITMAP hBitmapDisabled=NULL);
-
 
 void SetImage(
     UINT uiBmpResId,
