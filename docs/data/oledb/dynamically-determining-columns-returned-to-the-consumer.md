@@ -1,7 +1,7 @@
 ---
 title: "Dynamically Determining Columns Returned to the Consumer | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/26/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -34,15 +34,14 @@ public:
    {  
       return (lstrcmpi(szCommand, am.szCommand) == 0);  
    }  
-  
 };  
 ```  
   
-Next, implement the `GetColumnInfo` function in MyProviderRS.cpp, as shown in the following code.  
+Next, implement the `GetColumnInfo` function in *Custom*RS.cpp, as shown in the following code.  
   
 `GetColumnInfo` checks first to see if the OLE DB property `DBPROP_BOOKMARKS` is set. To get the property, `GetColumnInfo` uses a pointer (`pRowset`) to the rowset object. The `pThis` pointer represents the class that created the rowset, which is the class where the property map is stored. `GetColumnInfo` typecasts the `pThis` pointer to an `RCustomRowset` pointer.  
   
-To check for the `DBPROP_BOOKMARKS` property, `GetColumnInfo` uses the `IRowsetInfo` interface, which you can obtain by calling `QueryInterface` on the `pRowset` interface. As an alternative, you can use an ATL [CComQIPtr](../../atl/reference/ccomqiptr-class.md) method instead.  
+To check for the `DBPROP_BOOKMARKS` property, `GetColumnInfo` uses the `IRowsetInfo` interface, which you can get by calling `QueryInterface` on the `pRowset` interface. As an alternative, you can use an ATL [CComQIPtr](../../atl/reference/ccomqiptr-class.md) method instead.  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////  
@@ -103,7 +102,7 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(void* pThis, ULONG* pcCols)
 }  
 ```  
   
-This example uses a static array to contain the column information. If the consumer does not want the bookmark column, one entry in the array is unused. To handle the information, you create two array macros: ADD_COLUMN_ENTRY and ADD_COLUMN_ENTRY_EX. ADD_COLUMN_ENTRY_EX takes an extra parameter, `flags`, that is needed if you designate a bookmark column.  
+This example uses a static array to hold the column information. If the consumer doesn't want the bookmark column, one entry in the array is unused. To handle the information, you create two array macros: ADD_COLUMN_ENTRY and ADD_COLUMN_ENTRY_EX. ADD_COLUMN_ENTRY_EX takes an extra parameter, *flags*, that is needed if you designate a bookmark column.  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////////  

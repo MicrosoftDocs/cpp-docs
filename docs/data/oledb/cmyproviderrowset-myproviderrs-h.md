@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # CCustomRowset (CustomRS.H)
 
-The wizard generates an entry for the rowset object. In this case, it is called `CCustomRowset`. The `CCustomRowset` class inherits from an OLE DB provider class called `CRowsetImpl`, which implements all the necessary interfaces for the rowset object. The following code shows the inheritance chain for `CRowsetImpl`:  
+The wizard generates an entry for the rowset object. In this case, it's called `CCustomRowset`. The `CCustomRowset` class inherits from an OLE DB provider class called `CRowsetImpl`, which implements all the necessary interfaces for the rowset object. The following code shows the inheritance chain for `CRowsetImpl`:  
   
 ```cpp  
 template <class T, class Storage, class CreatorClass,   
@@ -24,7 +24,7 @@ class CMyRowsetImpl:
       CSimpleRow, IRowsetLocateImpl< T >>  
 ```  
   
-`CRowsetImpl` also uses the `IAccessor` and `IColumnsInfo` interfaces. It uses these interfaces for output fields in tables. The class also provides an implementation for `IRowsetIdentity`, which allows the consumer to determine if two rows are identical. The `IRowsetInfo` interface implements properties for the rowset object. The `IConvertType` interface allows the provider to resolve differences between data types requested by the consumer and those used by the provider.  
+`CRowsetImpl` also uses the `IAccessor` and `IColumnsInfo` interfaces. It uses these interfaces for output fields in tables. The class also provides an implementation for `IRowsetIdentity`, which allows the consumer to determine if two rows are the same. The `IRowsetInfo` interface implements properties for the rowset object. The `IConvertType` interface allows the provider to resolve differences between data types requested by the consumer and those used by the provider.  
   
 The `IRowset` interface actually handles data retrieval. The consumer first calls a method called `GetNextRows` to return a handle to a row, known as an `HROW`. The consumer then calls `IRowset::GetData` with that `HROW` to retrieve the requested data.  
   

@@ -1,7 +1,7 @@
 ---
 title: "Storing Strings in the OLE DB Provider | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/26/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Storing Strings in the OLE DB Provider
 
-In MyProviderRS.h, the ATL OLE DB Provider Wizard creates a default user record called `CWindowsFile`. To handle the two strings, either modify `CWindowsFile` or add your own user record as shown in the following code:  
+In MyProviderRS.h, the **ATL OLE DB Provider Wizard** creates a default user record called `CWindowsFile`. To handle the two strings, either modify `CWindowsFile` or add your own user record as shown in the following code:  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
@@ -40,11 +40,11 @@ END_PROVIDER_COLUMN_MAP()
 };  
 ```  
   
-The data members `szCommand` and `szText` represent the two strings, with `szCommand2` and `szText2` providing additional columns if needed. The data member `dwBookmark` is not needed for this simple read-only provider but is used later to add an `IRowsetLocate` interface; see [Enhancing the Simple Read Only Provider](../../data/oledb/enhancing-the-simple-read-only-provider.md). The `==` operator compares instances (implementing this operator is optional).  
+The data members `szCommand` and `szText` represent the two strings, with `szCommand2` and `szText2` with additional columns if needed. The data member `dwBookmark` isn't needed for this simple read-only provider but is used later to add an `IRowsetLocate` interface; see [Enhancing the Simple Read Only Provider](../../data/oledb/enhancing-the-simple-read-only-provider.md). The `==` operator compares instances (implementing this operator is optional).  
   
 When this is done, your provider should be ready to compile and run. To test the provider, you need a consumer with matching functionality. [Implementing a Simple Consumer](../../data/oledb/implementing-a-simple-consumer.md) shows how to create such a test consumer. Run the test consumer with the provider. Verify that the test consumer retrieves the proper strings from the provider when you click the **Run** button in the **Test Consumer** dialog box.  
   
-When you have successfully tested your provider, you might want to enhance its functionality by implementing additional interfaces. An example is shown in [Enhancing the Simple Read-Only Provider](../../data/oledb/enhancing-the-simple-read-only-provider.md).  
+When you've successfully tested your provider, you might want to enhance its functionality by implementing additional interfaces. An example is shown in [Enhancing the Simple Read-Only Provider](../../data/oledb/enhancing-the-simple-read-only-provider.md).  
   
 ## See Also  
 
