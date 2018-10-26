@@ -27,7 +27,7 @@ Controls the threshold for stack probes.
 
 ## Remarks
 
-A *stack probe* is a sequence of code that the compiler inserts into every function call. When initiated, a stack probe reaches benignly into memory by the amount of space that is required to store the function's local variables. This causes the operating system to page in additional stack memory if required.
+A *stack probe* is a sequence of code that the compiler inserts at the beginning of a function call. When *initiated*, a stack probe reaches benignly into memory by the amount of space that is required to store the function's local variables. This causes the operating system to transparently page in additional stack memory if required, before the rest of the function runs.
 
 By default, the compiler generates code that initiates a stack probe when a function requires more than one page of stack space. This is equivalent to a compiler option of **/Gs4096** for x86, x64, ARM, and ARM64 platforms. This value allows an application and the Windows memory manager to increase the amount of memory committed to the program stack dynamically at run time.
 
@@ -36,9 +36,9 @@ By default, the compiler generates code that initiates a stack probe when a func
 
 Some programs—for example, virtual device drivers—do not require this default stack-growth mechanism. In such cases, the stack probes are not necessary and you can stop the compiler from generating them by setting *size* to a value that is larger than any function will require for local variable storage.
 
-**/Gs0** activates stack probes for every function call that requires storage for local variables. This can have a negative impact on performance.
+**/Gs0** initiates stack probes for every function call that requires storage for local variables. This can have a negative impact on performance.
 
-For x64 targets, if the **/Gs** option is specified without a *size* argument, it is the same as specifying **/Gs0**. If the *size* argument is 1 through 9, warning D9014 is emitted, and the effect is the same as specifying **/Gs0**.
+For x64 targets, if the **/Gs** option is specified without a *size* argument, it is the same as **/Gs0**. If the *size* argument is 1 through 9, warning D9014 is emitted, and the effect is the same as specifying **/Gs0**.
 
 For x86, ARM, and ARM64 targets, the **/Gs** option without a *size* argument is the same as **/Gs4096**. If the *size* argument is 1 through 9, warning D9014 is emitted, and the effect is the same as specifying **/Gs4096**.
 
