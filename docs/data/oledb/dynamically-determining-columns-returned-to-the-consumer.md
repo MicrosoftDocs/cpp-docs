@@ -18,92 +18,92 @@ The PROVIDER_COLUMN_ENTRY macros normally handle the `IColumnsInfo::GetColumnsIn
 To handle the `IColumnsInfo::GetColumnsInfo` call, delete the PROVIDER_COLUMN_MAP, which defines a function `GetColumnInfo`, from the `CAgentMan` user record in CustomRS.h and replace it with the definition for your own `GetColumnInfo` function:
 
 ```cpp
-////////////////////////////////////////////////////////////////////////  
-// CustomRS.H  
-class CAgentMan  
-{  
-public:  
-   DWORD dwBookmark;  
-   TCHAR szCommand[256];  
-   TCHAR szText[256];  
-   TCHAR szCommand2[256];  
-   TCHAR szText2[256];  
+////////////////////////////////////////////////////////////////////////
+// CustomRS.H
+class CAgentMan
+{
+public:
+   DWORD dwBookmark;
+   TCHAR szCommand[256];
+   TCHAR szText[256];
+   TCHAR szCommand2[256];
+   TCHAR szText2[256];
   
-   static ATLCOLUMNINFO* GetColumnInfo(void* pThis, ULONG* pcCols);  
-   bool operator==(const CAgentMan& am)  
-   {  
-      return (lstrcmpi(szCommand, am.szCommand) == 0);  
-   }  
-};  
-```  
-  
-Next, implement the `GetColumnInfo` function in *Custom*RS.cpp, as shown in the following code.  
-  
-`GetColumnInfo` checks first to see if the OLE DB property `DBPROP_BOOKMARKS` is set. To get the property, `GetColumnInfo` uses a pointer (`pRowset`) to the rowset object. The `pThis` pointer represents the class that created the rowset, which is the class where the property map is stored. `GetColumnInfo` typecasts the `pThis` pointer to an `RCustomRowset` pointer.  
-  
-To check for the `DBPROP_BOOKMARKS` property, `GetColumnInfo` uses the `IRowsetInfo` interface, which you can get by calling `QueryInterface` on the `pRowset` interface. As an alternative, you can use an ATL [CComQIPtr](../../atl/reference/ccomqiptr-class.md) method instead.  
-  
+   static ATLCOLUMNINFO* GetColumnInfo(void* pThis, ULONG* pcCols);
+   bool operator==(const CAgentMan& am)
+   {
+      return (lstrcmpi(szCommand, am.szCommand) == 0);
+   }
+};
+```
+
+Next, implement the `GetColumnInfo` function in *Custom*RS.cpp, as shown in the following code.
+
+`GetColumnInfo` checks first to see if the OLE DB property `DBPROP_BOOKMARKS` is set. To get the property, `GetColumnInfo` uses a pointer (`pRowset`) to the rowset object. The `pThis` pointer represents the class that created the rowset, which is the class where the property map is stored. `GetColumnInfo` typecasts the `pThis` pointer to an `RCustomRowset` pointer.
+
+To check for the `DBPROP_BOOKMARKS` property, `GetColumnInfo` uses the `IRowsetInfo` interface, which you can get by calling `QueryInterface` on the `pRowset` interface. As an alternative, you can use an ATL [CComQIPtr](../../atl/reference/ccomqiptr-class.md) method instead.
+
 ```cpp
-////////////////////////////////////////////////////////////////////  
-// CustomRS.cpp  
-ATLCOLUMNINFO* CAgentMan::GetColumnInfo(void* pThis, ULONG* pcCols)  
-{  
-   static ATLCOLUMNINFO _rgColumns[5];  
-   ULONG ulCols = 0;  
+////////////////////////////////////////////////////////////////////
+// CustomRS.cpp
+ATLCOLUMNINFO* CAgentMan::GetColumnInfo(void* pThis, ULONG* pcCols)
+{
+   static ATLCOLUMNINFO _rgColumns[5];
+   ULONG ulCols = 0;
   
-   // Check the property flag for bookmarks; if it is set, set the zero   
-   // ordinal entry in the column map with the bookmark information.  
-   CAgentRowset* pRowset = (CAgentRowset*) pThis;  
-   CComQIPtr<IRowsetInfo, &IID_IRowsetInfo> spRowsetProps = pRowset;  
+   // Check the property flag for bookmarks; if it is set, set the zero 
+   // ordinal entry in the column map with the bookmark information.
+   CAgentRowset* pRowset = (CAgentRowset*) pThis;
+   CComQIPtr<IRowsetInfo, &IID_IRowsetInfo> spRowsetProps = pRowset;
   
-   CDBPropIDSet set(DBPROPSET_ROWSET);  
-   set.AddPropertyID(DBPROP_BOOKMARKS);  
-   DBPROPSET* pPropSet = NULL;  
-   ULONG ulPropSet = 0;  
-   HRESULT hr;  
+   CDBPropIDSet set(DBPROPSET_ROWSET);
+   set.AddPropertyID(DBPROP_BOOKMARKS);
+   DBPROPSET* pPropSet = NULL;
+   ULONG ulPropSet = 0;
+   HRESULT hr;
   
-   if (spRowsetProps)  
-      hr = spRowsetProps->GetProperties(1, &set, &ulPropSet, &pPropSet);  
+   if (spRowsetProps)
+      hr = spRowsetProps->GetProperties(1, &set, &ulPropSet, &pPropSet);
   
-   if (pPropSet)  
-   {  
-      CComVariant var = pPropSet->rgProperties[0].vValue;  
-      CoTaskMemFree(pPropSet->rgProperties);  
-      CoTaskMemFree(pPropSet);  
+   if (pPropSet)
+   {
+      CComVariant var = pPropSet->rgProperties[0].vValue;
+      CoTaskMemFree(pPropSet->rgProperties);
+      CoTaskMemFree(pPropSet);
   
-      if (SUCCEEDED(hr) && (var.boolVal == VARIANT_TRUE))  
-      {  
-         ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Bookmark"), 0, sizeof(DWORD),   
-         DBTYPE_BYTES, 0, 0, GUID_NULL, CAgentMan, dwBookmark,   
-         DBCOLUMNFLAGS_ISBOOKMARK)  
-         ulCols++;  
-      }  
-   }  
+      if (SUCCEEDED(hr) && (var.boolVal == VARIANT_TRUE))
+      {
+         ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Bookmark"), 0, sizeof(DWORD), 
+         DBTYPE_BYTES, 0, 0, GUID_NULL, CAgentMan, dwBookmark, 
+         DBCOLUMNFLAGS_ISBOOKMARK)
+         ulCols++;
+      }
+   }
   
-   // Next, set the other columns up.  
-   ADD_COLUMN_ENTRY(ulCols, OLESTR("Command"), 1, 256, DBTYPE_STR, 0xFF, 0xFF,   
-      GUID_NULL, CAgentMan, szCommand)  
-   ulCols++;  
-   ADD_COLUMN_ENTRY(ulCols, OLESTR("Text"), 2, 256, DBTYPE_STR, 0xFF, 0xFF,   
-      GUID_NULL, CAgentMan, szText)  
-   ulCols++;  
+   // Next, set the other columns up.
+   ADD_COLUMN_ENTRY(ulCols, OLESTR("Command"), 1, 256, DBTYPE_STR, 0xFF, 0xFF, 
+      GUID_NULL, CAgentMan, szCommand)
+   ulCols++;
+   ADD_COLUMN_ENTRY(ulCols, OLESTR("Text"), 2, 256, DBTYPE_STR, 0xFF, 0xFF, 
+      GUID_NULL, CAgentMan, szText)
+   ulCols++;
   
-   ADD_COLUMN_ENTRY(ulCols, OLESTR("Command2"), 3, 256, DBTYPE_STR, 0xFF, 0xFF,   
-      GUID_NULL, CAgentMan, szCommand2)  
-   ulCols++;  
-   ADD_COLUMN_ENTRY(ulCols, OLESTR("Text2"), 4, 256, DBTYPE_STR, 0xFF, 0xFF,   
-      GUID_NULL, CAgentMan, szText2)  
-   ulCols++;  
+   ADD_COLUMN_ENTRY(ulCols, OLESTR("Command2"), 3, 256, DBTYPE_STR, 0xFF, 0xFF, 
+      GUID_NULL, CAgentMan, szCommand2)
+   ulCols++;
+   ADD_COLUMN_ENTRY(ulCols, OLESTR("Text2"), 4, 256, DBTYPE_STR, 0xFF, 0xFF, 
+      GUID_NULL, CAgentMan, szText2)
+   ulCols++;
   
-   if (pcCols != NULL)  
-      *pcCols = ulCols;  
+   if (pcCols != NULL)
+      *pcCols = ulCols;
   
-   return _rgColumns;  
-}  
-```  
-  
-This example uses a static array to hold the column information. If the consumer doesn't want the bookmark column, one entry in the array is unused. To handle the information, you create two array macros: ADD_COLUMN_ENTRY and ADD_COLUMN_ENTRY_EX. ADD_COLUMN_ENTRY_EX takes an extra parameter, *flags*, that is needed if you designate a bookmark column.  
-  
+   return _rgColumns;
+}
+```
+
+This example uses a static array to hold the column information. If the consumer doesn't want the bookmark column, one entry in the array is unused. To handle the information, you create two array macros: ADD_COLUMN_ENTRY and ADD_COLUMN_ENTRY_EX. ADD_COLUMN_ENTRY_EX takes an extra parameter, *flags*, that is needed if you designate a bookmark column.
+
 ```cpp
 ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Bookmark"), 0, sizeof(DWORD),
    DBTYPE_BYTES, 0, 0, GUID_NULL, CAgentMan, dwBookmark,
