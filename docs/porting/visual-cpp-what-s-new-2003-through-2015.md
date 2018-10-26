@@ -2090,7 +2090,7 @@ The compiler has breaking changes in this release.
 - `/CLRIMAGETYPE` (Specify Type of CLR Image) linker option has been added.
 - `/CLRSUPPORTLASTERROR` (Preserve Last Error Code for PInvoke Calls) linker option has been added.
 - `/CLRTHREADATTRIBUTE` (Set CLR Thread Attribute) linker option has been added.
-- `/CLRUNMANAGEDCODECHECK` (Add SupressUnmanagedCodeSecurityAttribute) linker option has been added.
+- `/CLRUNMANAGEDCODECHECK` (Add SuppressUnmanagedCodeSecurityAttribute) linker option has been added.
 - `/ERRORREPORT` (Report Internal Linker Errors) linker option has been added.
 - `/EXETYPE` linker option has been removed. The linker no longer supports creating Windows 95 and Windows 98 device drivers. Use an appropriate DDK to create these device drivers. The EXETYPE keyword is no longer valid for module definition files.
 - `/FUNCTIONPADMIN` (Create Hotpatchable Image) linker option has been added.
