@@ -17,4 +17,4 @@ With the session, rowset, and optional command object, each provider supports on
   
 ## See Also  
 
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

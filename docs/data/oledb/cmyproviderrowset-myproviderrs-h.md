@@ -34,4 +34,4 @@ The *RowsetInterface* parameter allows you to also use the `IRowsetLocate` or `I
   
 ## See Also  
 
-[Provider Wizard-Generated Files](../../data/oledb/provider-wizard-generated-files.md)
+[Provider Wizard-Generated Files](../../data/oledb/provider-wizard-generated-files.md)<br/>

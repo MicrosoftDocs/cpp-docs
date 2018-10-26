@@ -25,4 +25,4 @@ The following table shows the mandatory and optional interfaces defined by OLE D
   
 ## See Also  
 
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

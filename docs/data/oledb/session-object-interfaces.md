@@ -42,4 +42,4 @@ The session object creates a rowset object. If the provider supports commands, t
   
 ## See Also  
 
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

@@ -31,4 +31,4 @@ The data source object implements the `IDBProperties`, `IDBInitialize`, and `IDB
   
 ## See Also  
 
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

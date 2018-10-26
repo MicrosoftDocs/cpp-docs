@@ -37,4 +37,4 @@ The OLE DB specification requires that providers implementing the `IDBSchemaRows
   
 ## See Also  
 
-[Provider Wizard-Generated Files](../../data/oledb/provider-wizard-generated-files.md)
+[Provider Wizard-Generated Files](../../data/oledb/provider-wizard-generated-files.md)<br/>

@@ -19,4 +19,4 @@ The `ICommandText` interface provides a way to specify a text command. The `ICom
   
 ## See Also  
 
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

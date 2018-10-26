@@ -75,4 +75,4 @@ The method creates one entry for each file (corresponding to a row) and places i
   
 ## See Also  
 
-[Provider Wizard-Generated Files](../../data/oledb/provider-wizard-generated-files.md)
+[Provider Wizard-Generated Files](../../data/oledb/provider-wizard-generated-files.md)<br/>

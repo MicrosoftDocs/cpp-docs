@@ -46,4 +46,4 @@ The wizard-generated rowset object implements `IAccessor`, `IRowset`, and `IRows
   
 ## See Also  
 
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

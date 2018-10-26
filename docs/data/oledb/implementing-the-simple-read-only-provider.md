@@ -21,4 +21,4 @@ The extended example in this topic shows how to edit the wizard-created files to
   
 ## See Also  
 
-[Creating a Simple Read-Only Provider](../../data/oledb/creating-a-simple-read-only-provider.md)
+[Creating a Simple Read-Only Provider](../../data/oledb/creating-a-simple-read-only-provider.md)<br/>

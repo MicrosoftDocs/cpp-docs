@@ -25,4 +25,4 @@ The example in the following topics enhances the row-fetching mechanism by addin
   
 ## See Also  
 
-[Creating a Simple Read-Only Provider](../../data/oledb/creating-a-simple-read-only-provider.md)
+[Creating a Simple Read-Only Provider](../../data/oledb/creating-a-simple-read-only-provider.md)<br/>
