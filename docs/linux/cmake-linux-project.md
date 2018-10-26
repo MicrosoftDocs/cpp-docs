@@ -5,12 +5,9 @@ ms.custom: ""
 ms.date: "07/20/2018"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-linux"]
 ms.tgt_pltfrm: "Linux"
 ms.topic: "conceptual"
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
-author: "mikeblome"
-ms.author: "mblome"
 ms.workload: ["cplusplus", "linux"]
 ---
 
