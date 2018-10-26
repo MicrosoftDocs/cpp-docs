@@ -60,7 +60,7 @@ The code used to copy or move elements.
 
 |||
 |-|-|
-|[operator &#91;&#93;](#operator_at)|Call this operator to return a reference to an element in the array.|  
+|[operator &#91;&#93;](#operator_at)|Call this operator to return a reference to an element in the array.|
 
 ### Typedefs
 

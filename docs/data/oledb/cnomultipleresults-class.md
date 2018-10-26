@@ -14,23 +14,23 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # CNoMultipleResults Class
 
-Used as a template argument (*TMultiple*) to [CCommand](../../data/oledb/ccommand-class.md) to create an optimized command that handles a single result set.  
-  
+Used as a template argument (*TMultiple*) to [CCommand](../../data/oledb/ccommand-class.md) to create an optimized command that handles a single result set.
+
 ## Syntax
 
 ```cpp
-class CNoMultipleResults  
-```  
-  
-## Remarks  
+class CNoMultipleResults
+```
 
-If you want a command to handle multiple result sets, use [CMultipleResults](../../data/oledb/cmultipleresults-class.md) instead.  
-  
-## Requirements  
+## Remarks
 
-**Header:** atldbcli.h  
-  
-## See Also  
+If you want a command to handle multiple result sets, use [CMultipleResults](../../data/oledb/cmultipleresults-class.md) instead.
+
+## Requirements
+
+**Header:** atldbcli.h
+
+## See Also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

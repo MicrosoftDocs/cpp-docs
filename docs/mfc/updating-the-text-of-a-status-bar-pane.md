@@ -23,17 +23,17 @@ For example, suppose one pane has `ID_INDICATOR_PAGE` as its command identifier 
 
 1. Define the pane's command ID.
 
-     On the **View** menu, click **Resource View**. Right-click the project resource and click **Resource Symbols**. In the Resource Symbols dialog box, click `New`. Type a command ID name: for example, `ID_INDICATOR_PAGE`. Specify a value for the ID, or accept the value suggested by the Resource Symbols dialog box. For example, for `ID_INDICATOR_PAGE`, accept the default value. Close the Resource Symbols dialog box.
+   On the **View** menu, click **Resource View**. Right-click the project resource and click **Resource Symbols**. In the Resource Symbols dialog box, click `New`. Type a command ID name: for example, `ID_INDICATOR_PAGE`. Specify a value for the ID, or accept the value suggested by the Resource Symbols dialog box. For example, for `ID_INDICATOR_PAGE`, accept the default value. Close the Resource Symbols dialog box.
 
 1. Define a default string to display in the pane.
 
-     With Resource View open, double-click **String Table** in the window that lists resource types for your application. With the **String Table** editor open, choose **New String** from the **Insert** menu. In the String Properties window, select your pane's command ID (for example, `ID_INDICATOR_PAGE`) and type a default string value, such as "Page   ". Close the string editor. (You need a default string to avoid a compiler error.)
+   With Resource View open, double-click **String Table** in the window that lists resource types for your application. With the **String Table** editor open, choose **New String** from the **Insert** menu. In the String Properties window, select your pane's command ID (for example, `ID_INDICATOR_PAGE`) and type a default string value, such as "Page   ". Close the string editor. (You need a default string to avoid a compiler error.)
 
 1. Add the pane to the *indicators* array.
 
-     In file MAINFRM.CPP, locate the *indicators* array. This array lists command IDs for all of the status bar's indicators, in order from left to right. At the appropriate point in the array, enter your pane's command ID, as shown here for `ID_INDICATOR_PAGE`:
+   In file MAINFRM.CPP, locate the *indicators* array. This array lists command IDs for all of the status bar's indicators, in order from left to right. At the appropriate point in the array, enter your pane's command ID, as shown here for `ID_INDICATOR_PAGE`:
 
-     [!code-cpp[NVC_MFCDocView#10](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_1.cpp)]
+   [!code-cpp[NVC_MFCDocView#10](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_1.cpp)]
 
 The recommended way to display text in a pane is to call the `SetText` member function of class `CCmdUI` in an update handler function for the pane. For example, you might want to set up an integer variable *m_nPage* that contains the current page number and use `SetText` to set the pane's text to a string version of that number.
 
@@ -46,19 +46,19 @@ The following procedure shows how to use an update handler function to display t
 
 1. Add a command update handler for the command.
 
-     Manually add a prototype for the handler, as shown here for `ID_INDICATOR_PAGE` (in MAINFRM.H):
+   Manually add a prototype for the handler, as shown here for `ID_INDICATOR_PAGE` (in MAINFRM.H):
 
-     [!code-cpp[NVC_MFCDocView#11](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_2.h)]
+   [!code-cpp[NVC_MFCDocView#11](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_2.h)]
 
 1. In the appropriate .CPP file, add the handler's definition, as shown here for `ID_INDICATOR_PAGE` (in MAINFRM.CPP):
 
-     [!code-cpp[NVC_MFCDocView#12](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_3.cpp)]
+   [!code-cpp[NVC_MFCDocView#12](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_3.cpp)]
 
-     The last three lines of this handler are the code that displays your text.
+   The last three lines of this handler are the code that displays your text.
 
 1. In the appropriate message map, add the ON_UPDATE_COMMAND_UI macro, as shown here for `ID_INDICATOR_PAGE` (in MAINFRM.CPP):
 
-     [!code-cpp[NVC_MFCDocView#13](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_4.cpp)]
+   [!code-cpp[NVC_MFCDocView#13](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_4.cpp)]
 
 Once you define the value of the *m_nPage* member variable (of class `CMainFrame`), this technique causes the page number to appear in the pane during idle processing in the same manner that the application updates other indicators. If *m_nPage* changes, the display changes during the next idle loop.
 

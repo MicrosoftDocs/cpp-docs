@@ -13,23 +13,23 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Overriding Provider Service Defaults
 
-The provider's registry value for OLEDB_SERVICES is returned as the default value for the [DBPROP_INIT_OLEDBSERVICES](/previous-versions/windows/desktop/ms716898) initialization property on the data source object.  
-  
-As long as the registry entry exists, the provider's objects is aggregated and the user can override the provider's default setting for enabled services by setting the `DBPROP_INIT_OLEDBSERVICES` property before initialization. To enable or disable a particular service, the user generally gets the current value of the `DBPROP_INIT_OLEDBSERVICES` property, sets or clears the bit for the particular property to be enabled or disabled, and resets the property. `DBPROP_INIT_OLEDBSERVICES` can be set directly in OLE DB or in the connection string passed to ADO or `IDataInitialize::GetDatasource`. The corresponding values to enable/disable individual services are listed in the following table.  
-  
-|Default services enabled|DBPROP_INIT_OLEDBSERVICES property value|Value in connection string|  
-|------------------------------|------------------------------------------------|--------------------------------|  
-|All services (default)|`DBPROPVAL_OS_ENABLEALL`|"OLE DB Services = -1;"|  
-|All except Pooling and AutoEnlistment|`DBPROPVAL_OS_ENABLEALL &`<br /><br /> `~DBPROPVAL_OS_RESOURCEPOOLING &`<br /><br /> `~DBPROPVAL_OS_TXNENLISTMENT`|"OLE DB Services = -4;"|  
-|All except Client Cursor|`DBPROPVAL_OS_ENABLEALL &`<br /><br /> `~DBPROPVAL_OS_CLIENTCURSOR`|"OLE DB Services = -5;"|  
-|All except Pooling, AutoEnlistment, and Client Cursor|`DBPROPVAL_OS_ENABLEALL &`<br /><br /> `~DBPROPVAL_OS_TXNENLISTMENT &`<br /><br /> `~DBPROPVAL_OS_CLIENTCURSOR`|"OLE DB Services = -7;"|  
-|No services|`~DBPROPVAL_OS_ENABLEALL`|"OLE DB Services = 0;"|  
-  
-If the registry entry does not exist for the provider, the Component Managers will not aggregate the provider's objects, and no services will be invoked, even if explicitly requested by the user.  
-  
-## See Also  
+The provider's registry value for OLEDB_SERVICES is returned as the default value for the [DBPROP_INIT_OLEDBSERVICES](/previous-versions/windows/desktop/ms716898) initialization property on the data source object.
 
-[Resource Pooling](/previous-versions/windows/desktop/ms713655)   
-[How Consumers Use Resource Pooling](/previous-versions/windows/desktop/ms715907)   
-[How Providers Work Effectively with Resource Pooling](/previous-versions/windows/desktop/ms714906)   
-[Enabling and Disabling OLE DB Services](../../data/oledb/enabling-and-disabling-ole-db-services.md)
+As long as the registry entry exists, the provider's objects is aggregated and the user can override the provider's default setting for enabled services by setting the `DBPROP_INIT_OLEDBSERVICES` property before initialization. To enable or disable a particular service, the user generally gets the current value of the `DBPROP_INIT_OLEDBSERVICES` property, sets or clears the bit for the particular property to be enabled or disabled, and resets the property. `DBPROP_INIT_OLEDBSERVICES` can be set directly in OLE DB or in the connection string passed to ADO or `IDataInitialize::GetDatasource`. The corresponding values to enable/disable individual services are listed in the following table.
+
+|Default services enabled|DBPROP_INIT_OLEDBSERVICES property value|Value in connection string|
+|------------------------------|------------------------------------------------|--------------------------------|
+|All services (default)|`DBPROPVAL_OS_ENABLEALL`|"OLE DB Services = -1;"|
+|All except Pooling and AutoEnlistment|`DBPROPVAL_OS_ENABLEALL &`<br /><br /> `~DBPROPVAL_OS_RESOURCEPOOLING &`<br /><br /> `~DBPROPVAL_OS_TXNENLISTMENT`|"OLE DB Services = -4;"|
+|All except Client Cursor|`DBPROPVAL_OS_ENABLEALL &`<br /><br /> `~DBPROPVAL_OS_CLIENTCURSOR`|"OLE DB Services = -5;"|
+|All except Pooling, AutoEnlistment, and Client Cursor|`DBPROPVAL_OS_ENABLEALL &`<br /><br /> `~DBPROPVAL_OS_TXNENLISTMENT &`<br /><br /> `~DBPROPVAL_OS_CLIENTCURSOR`|"OLE DB Services = -7;"|
+|No services|`~DBPROPVAL_OS_ENABLEALL`|"OLE DB Services = 0;"|
+
+If the registry entry does not exist for the provider, the Component Managers will not aggregate the provider's objects, and no services will be invoked, even if explicitly requested by the user.
+
+## See Also
+
+[Resource Pooling](/previous-versions/windows/desktop/ms713655)<br/>
+[How Consumers Use Resource Pooling](/previous-versions/windows/desktop/ms715907)<br/>
+[How Providers Work Effectively with Resource Pooling](/previous-versions/windows/desktop/ms714906)<br/>
+[Enabling and Disabling OLE DB Services](../../data/oledb/enabling-and-disabling-ole-db-services.md)<br/>

@@ -17,7 +17,7 @@ This walkthrough demonstrates how to modify an existing MFC application to use t
 
 This walkthrough modifies the classic Scribble 1.0 MFC sample that lets you use the mouse to create line drawings. This part of the walkthrough shows how to modify the Scribble sample so that it displays a ribbon bar. [Part 2](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md) adds more buttons to the ribbon bar.
 
-## Prerequisites 
+## Prerequisites
 
 The [Scribble 1.0 MFC sample](http://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe). For help on converting to Visual Studio 2017, see [Porting Guide: MFC Scribble](../porting/porting-guide-mfc-scribble.md).
 
@@ -131,7 +131,7 @@ This walkthrough copies resource files from the example created in [Walkthrough:
    1. Import the filesmall.bmp file, which contains eleven 16x16 (16x176) images. Change the ID of the bitmap to `IDB_RIBBON_FILESMALL`.
 
    > [!NOTE]
-   > Because we need only the first eight 16x16 images (16x128), you may optionally crop the right-side width of this bitmap from 176 to 128. 
+   > Because we need only the first eight 16x16 images (16x128), you may optionally crop the right-side width of this bitmap from 176 to 128.
 
    1. Import the filelarge.bmp, which contains nine 32x32 (32x288) images. Change the ID of the bitmap to `IDB_RIBBON_FILELARGE`.
 
@@ -146,7 +146,7 @@ This walkthrough copies resource files from the example created in [Walkthrough:
    1. Import the panelicons.bmp bitmap, which contains eight 16x16 images. In the **Properties** window of the **Bitmap Editor**, adjust the width of the bitmap to 64 (16x64). Change the ID of the bitmap to `IDB_PANEL_ICONS`.
 
    > [!NOTE]
-   > Because we need only the first four 16x16 images (16x64), you may optionally crop the right-side width of this bitmap from 128 to 64. 
+   > Because we need only the first four 16x16 images (16x64), you may optionally crop the right-side width of this bitmap from 128 to 64.
 
 ##  <a name="addribbon"></a> Adding a Ribbon Resource to the Project
 

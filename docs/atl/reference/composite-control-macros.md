@@ -28,7 +28,7 @@ These macros define event sink maps and entries.
 
 ## Requirements
 
-**Header:** atlcom.h  
+**Header:** atlcom.h
 
 ##  <a name="begin_sink_map"></a>  BEGIN_SINK_MAP
 
@@ -109,7 +109,7 @@ SINK_ENTRY_EX_P( id, piid, dispid, fn ) // (Visual Studio 2017)
 [in] Identifies the control.
 
 *iid*<br/>
-[in] Identifies the dispatch interface.  
+[in] Identifies the dispatch interface.
 
 *piid*<br/>
 [in] Pointer to the dispatch interface.
@@ -143,7 +143,7 @@ SINK_ENTRY_INFO_P( id, piid, dispid, fn, info ) // (Visual Studio 2017)
 [in] Unsigned integer identifying the event source. This value must match the *nID* template parameter used in the related [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) base class.
 
 *iid*<br/>
-[in] IID that identifies the dispatch interface.  
+[in] IID that identifies the dispatch interface.
 
 *piid*<br/>
 [in] Pointer to IID that identifies the dispatch interface.

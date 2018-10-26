@@ -73,12 +73,12 @@ To add a message handler for a reflected window message manually do the followin
 
 - In the control class .H file, declare a handler function. The function should have a return type of **LRESULT** and two parameters, with types **WPARAM** and **LPARAM**, respectively. For example:
 
-     [!code-cpp[NVC_MFC_AxSub#5](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_5.h)]
+   [!code-cpp[NVC_MFC_AxSub#5](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_5.h)]
     [!code-cpp[NVC_MFC_AxSub#6](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_6.h)]
 
 - In the control class .CPP file, add an ON_MESSAGE entry to the message map. The parameters of this entry should be the message identifier and the name of the handler function. For example:
 
-     [!code-cpp[NVC_MFC_AxSub#7](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_7.cpp)]
+   [!code-cpp[NVC_MFC_AxSub#7](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_7.cpp)]
 
 - Also in the .CPP file, implement the `OnOcmCommand` member function to process the reflected message. The *wParam* and *lParam* parameters are the same as those of the original window message.
 

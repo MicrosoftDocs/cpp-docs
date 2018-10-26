@@ -40,4 +40,3 @@ int main()
 
 [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)
 
-

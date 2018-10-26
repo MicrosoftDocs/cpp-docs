@@ -372,7 +372,7 @@ For issues with the C++ compiler, linker, and other tools and libraries, use the
 
 By default, **all information in reports and any comments and replies are publicly visible**. Normally, this is a benefit, because it allows the entire community to see the issues, solutions, and workarounds other users have found. However, if you're concerned about making your data or identity public, for privacy or intellectual property reasons, you have options.
 
-If you are concerned about revealing your identity, [create a new Microsoft account](https://signup.live.com/) that does not disclose any details about you. Use this account to create your report. 
+If you are concerned about revealing your identity, [create a new Microsoft account](https://signup.live.com/) that does not disclose any details about you. Use this account to create your report.
 
 **Don't put anything you want to keep private in the title or content of the initial report, which is public.** Instead, note that you will send details privately in a separate comment. To make sure that your report is directed to the right people, include **cppcompiler** in the topic list of your problem report. Once the problem report is created, it's now possible to specify who can see your replies and attachments.
 

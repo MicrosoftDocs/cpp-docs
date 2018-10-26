@@ -1,5 +1,5 @@
 ---
-title: "CMyProviderSource (MyProviderDS.H) | Microsoft Docs"
+title: "CCustomSource (CustomDS.H) | Microsoft Docs"
 ms.custom: ""
 ms.date: "10/22/2018"
 ms.technology: ["cpp-data"]
@@ -12,10 +12,31 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
-# CCustomClassSource (CustomClassDS.h)
+# CCustomSource (CustomDS.h)
 
-The provider classes use multiple inheritance. The following code shows the inheritance chain for the data source object:  
-  
+The provider classes use multiple inheritance. The following code shows the inheritance chain for the data source object:
+
+```cpp
+/////////////////////////////////////////////////////////////////////////
+// CCustomSource
+class ATL_NO_VTABLE CCustomSource :
+   public CComObjectRootEx<CComSingleThreadModel>,
+   public CComCoClass<CCustomSource, &CLSID_Custom>,
+   public IDBCreateSessionImpl<CCustomSource, CCustomSession>,
+   public IDBInitializeImpl<CCustomSource>,
+   public IDBPropertiesImpl<CCustomSource>,
+   public IPersistImpl<CCustomSource>,
+   public IInternalConnectionImpl<CCustomSource>
+```
+
+All the COM components derive from `CComObjectRootEx` and `CComCoClass`. `CComObjectRootEx` provides all the implementation for the `IUnknown` interface. It can handle any threading model. `CComCoClass` handles any error support required. If you want to send richer error information to the client, you can use some of the error APIs in `CComCoClass`.
+
+The data source object also inherits from several 'Impl' classes. Each class provides the implementation for an interface. The data source object implements the `IPersist`, `IDBProperties`, `IDBInitialize`, and `IDBCreateSession` interfaces. Each interface is required by OLE DB to implement the data source object. You can choose to support or not support particular functionality by inheriting or not inheriting from one of these 'Impl' classes. If you want to support the `IDBDataSourceAdmin` interface, you inherit from the `IDBDataSourceAdminImpl` class to get the functionality required.
+
+## COM Map
+
+Whenever the client calls `QueryInterface` for an interface on the data source, it goes through the following COM map:
+
 ```cpp
 /////////////////////////////////////////////////////////////////////////  
 // CCustomSource  

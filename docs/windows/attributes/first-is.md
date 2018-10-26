@@ -76,4 +76,4 @@ For more information, see [Attribute Contexts](cpp-attributes-com-net.md#context
 [last_is](last-is.md)<br/>
 [max_is](max-is.md)<br/>
 [length_is](length-is.md)<br/>
-[size_is](size-is.md)  
+[size_is](size-is.md)

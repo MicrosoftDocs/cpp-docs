@@ -20,11 +20,11 @@ These macros define category maps.
 |[BEGIN_CATEGORY_MAP](#begin_category_map)|Marks the beginning of the category map.|
 |[END_CATEGORY_MAP](#end_category_map)|Marks the end of the category map.|
 |[IMPLEMENTED_CATEGORY](#implemented_category)|Indicates categories that are implemented by the COM object.|
-|[REQUIRED_CATEGORY](#required_category)|Indicates categories that are required of the container by the COM object.|  
+|[REQUIRED_CATEGORY](#required_category)|Indicates categories that are required of the container by the COM object.|
 
 ## Requirements
 
-**Header:** atlcom.h  
+**Header:** atlcom.h
 
 ##  <a name="begin_category_map"></a>  BEGIN_CATEGORY_MAP
 

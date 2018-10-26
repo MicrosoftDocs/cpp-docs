@@ -64,7 +64,7 @@ HRESULT hr = wr.As(&strongRef);
 
 // This check won't work with the Windows 10 SDK version of the library.
 // Check the input pointer instead.
-if(wr == nullptr)  
+if(wr == nullptr)
 {
     wprintf(L"Couldn’t get strong ref!");
 }
@@ -73,7 +73,7 @@ if(wr == nullptr)
 The above code does not work when using the Windows 10 SDK (or later). Instead, check the pointer that was passed in for `nullptr`.
 
 ```cpp
-if (strongRef == nullptr)  
+if (strongRef == nullptr)
 {
     wprintf(L"Couldn't get strong ref!");
 }
@@ -220,7 +220,7 @@ Starting in the Windows 10 SDK, this method does not set the `WeakRef` instance 
 Returns a `ComPtrRef` object that represents the current `WeakRef` object.
 
 ```cpp
-Details::ComPtrRef<WeakRef> operator&() throw()  
+Details::ComPtrRef<WeakRef> operator&() throw()
 ```
 
 ### Return Value
@@ -238,7 +238,7 @@ Initializes a new instance of the `WeakRef` class.
 ```cpp
 WeakRef();
 WeakRef(
-   decltype(__nullptr)  
+   decltype(__nullptr)
 );
 
 WeakRef(

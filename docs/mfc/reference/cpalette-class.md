@@ -311,5 +311,3 @@ For more information on the Windows structure `PALETTEENTRY`, see [PALETTEENTRY]
 [CPalette::GetPaletteEntries](#getpaletteentries)<br/>
 [CPalette::SetPaletteEntries](#setpaletteentries)
 
-
-

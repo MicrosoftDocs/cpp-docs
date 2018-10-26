@@ -1,7 +1,7 @@
 ---
 title: "CMFCDragFrameImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCDragFrameImpl"]
@@ -39,19 +39,17 @@ You can control the thickness of the drag rectangle by using [AFX_GLOBAL_DATA::m
 
 ##  <a name="enddrawdragframe"></a>  CMFCDragFrameImpl::EndDrawDragFrame
 
-
 ```
 void EndDrawDragFrame(BOOL bClearInternalRects = TRUE);
 ```
 
 ### Parameters
 
-[in] *bClearInternalRects*
+[in] *bClearInternalRects*<br/>
 
 ### Remarks
 
 ##  <a name="init"></a>  CMFCDragFrameImpl::Init
-
 
 ```
 void Init(CWnd* pDraggedWnd);
@@ -59,12 +57,11 @@ void Init(CWnd* pDraggedWnd);
 
 ### Parameters
 
-[in] *pDraggedWnd*
+[in] *pDraggedWnd*<br/>
 
 ### Remarks
 
 ##  <a name="movedragframe"></a>  CMFCDragFrameImpl::MoveDragFrame
-
 
 ```
 void MoveDragFrame(BOOL bForceMove = FALSE);
@@ -72,12 +69,11 @@ void MoveDragFrame(BOOL bForceMove = FALSE);
 
 ### Parameters
 
-[in] *bForceMove*
+[in] *bForceMove*<br/>
 
 ### Remarks
 
 ##  <a name="placetabpredocking"></a>  CMFCDragFrameImpl::PlaceTabPreDocking
-
 
 ```
 void PlaceTabPreDocking(
@@ -89,14 +85,15 @@ void PlaceTabPreDocking(CWnd* pCBarToPlaceOn);
 
 ### Parameters
 
-*pTabbedBar*<br/>
-[in] [in] *bFirstTime*
-[in] *pCBarToPlaceOn*
+[in] *pTabbedBar*<br/>
+
+[in] *bFirstTime*<br/>
+
+[in] *pCBarToPlaceOn*<br/>
 
 ### Remarks
 
 ##  <a name="removetabpredocking"></a>  CMFCDragFrameImpl::RemoveTabPreDocking
-
 
 ```
 void RemoveTabPreDocking(CDockablePane* pOldTargetBar = NULL);
@@ -104,12 +101,11 @@ void RemoveTabPreDocking(CDockablePane* pOldTargetBar = NULL);
 
 ### Parameters
 
-[in] *pOldTargetBar*
+[in] *pOldTargetBar*<br/>
 
 ### Remarks
 
 ##  <a name="resetstate"></a>  CMFCDragFrameImpl::ResetState
-
 
 ```
 void ResetState();

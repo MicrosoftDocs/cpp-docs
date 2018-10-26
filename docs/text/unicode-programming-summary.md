@@ -76,7 +76,7 @@ To take advantage of the MFC and C run-time support for Unicode, you need to:
     pDC->TextOut( str, str.GetLength( ) );
     ```
 
-     `CDC::TextOut` takes a number of characters, not a number of bytes.
+   `CDC::TextOut` takes a number of characters, not a number of bytes.
 
 - Use [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md) to open Unicode files.
 

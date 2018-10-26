@@ -131,7 +131,7 @@ CTime(const DBTIMESTAMP& dbts, int nDST = -1) throw();
 Indicates a `CTime` object that already exists.
 
 *time*<br/>
-A **__time64_t** time value, which is the number of seconds after January 1, 1970 UTC. Note that this will be adjusted to your local time. For example, if you are in New York and create a `CTime` object by passing a parameter of 0, [CTime::GetMonth](#getmonth) will return 12.
+A `__time64_t` time value, which is the number of seconds after January 1, 1970 UTC. Note that this will be adjusted to your local time. For example, if you are in New York and create a `CTime` object by passing a parameter of 0, [CTime::GetMonth](#getmonth) will return 12.
 
 *nYear*, *nMonth*, *nDay*, *nHour*, *nMin*, *nSec*<br/>
 Indicates the date and time values to be copied into the new `CTime` object.

@@ -131,7 +131,7 @@ The following tips apply to `CDockingManager` objects:
 
     - `AFX_DOCK_TYPE::DT_SMART`
 
-     These docking modes are defined by [CDockingManager::m_dockModeGlobal](#m_dockmodeglobal) and are set by calling [CDockingManager::SetDockingMode](#setdockingmode).
+   These docking modes are defined by [CDockingManager::m_dockModeGlobal](#m_dockmodeglobal) and are set by calling [CDockingManager::SetDockingMode](#setdockingmode).
 
 - If you want to create a non-floating, non-resizable pane, call the [CDockingManager::AddPane](#addpane) method. This method registers the pane with the docking manager, which is responsible for the layout of the pane.
 

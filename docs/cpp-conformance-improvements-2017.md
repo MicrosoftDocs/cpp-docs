@@ -1580,7 +1580,7 @@ To fix the error, change the B() expression to B\<T>().
 
 ### constexpr aggregate initialization
 
-Previous versions of the C++ compiler incorrectly handled constexpr aggregate initialization; it accepted invalid code in which the aggregate-init-list had too many elements, and produced bad codegen for it. The following code is an example of such code: 
+Previous versions of the C++ compiler incorrectly handled constexpr aggregate initialization; it accepted invalid code in which the aggregate-init-list had too many elements, and produced bad codegen for it. The following code is an example of such code:
 
 ```cpp
 #include <array>
@@ -1682,15 +1682,14 @@ To fix the error, change the `return` statement to `return this->base_value;`.
 
 The C++ standard doesn't allow a user to add forward declarations or definitions into namespace `std`. Adding declarations or definitions to namespace `std` or to a namespace within namespace std now results in undefined behavior.
 
-At some time in the future, Microsoft will move the location where some STL types are defined. When this happens, it will break existing code that adds forward declarations to namespace `std`. A new warning, C4643, helps identify such source issues. The warning is enabled in **/default** mode and is off by default. It will impact programs that are compiled with **/Wall** or **/WX**. 
+At some time in the future, Microsoft will move the location where some STL types are defined. When this happens, it will break existing code that adds forward declarations to namespace `std`. A new warning, C4643, helps identify such source issues. The warning is enabled in **/default** mode and is off by default. It will impact programs that are compiled with **/Wall** or **/WX**.
 
-The following code now raises C4643: *Forward declaring 'vector' in namespace std is not permitted by the C++ Standard*. 
-
+The following code now raises C4643: *Forward declaring 'vector' in namespace std is not permitted by the C++ Standard*.
 
 ```cpp
-namespace std { 
-    template<typename T> class vector; 
-} 
+namespace std {
+    template<typename T> class vector;
+}
 ```
 
 To fix the error, use an **include** directive rather than a forward declaration:
@@ -1706,106 +1705,106 @@ The C++ Standard suggests that a compiler should emit a diagnostic when a delega
 Without this error, the following program will compile but will generate an infinite loop:
 
 ```cpp
-class X { 
-public: 
-    X(int, int); 
+class X {
+public:
+    X(int, int);
     X(int v) : X(v){}
-}; 
+};
 ```
 
 To avoid the infinite loop, delegate to a different constructor:
 
 ```cpp
-class X { 
-public: 
+class X {
+public:
 
-    X(int, int); 
-    X(int v) : X(v, 0) {} 
-}; 
+    X(int, int);
+    X(int v) : X(v, 0) {}
+};
 ```
 
 ### offsetof with constant expressions
 
-[offsetof](c-runtime-library/reference/offsetof-macro.md) has traditionally been implemented using a macro that requires a [reinterpret_cast](cpp/reinterpret-cast-operator.md). This is illegal in contexts that require a constant expression, but the Microsoft C++ compiler has traditionally allowed it. The offsetof macro that is shipped as part of the STL correctly uses a compiler intrinsic (**__builtin_offsetof**), but many people have used the macro trick to define their own **offsetof**.  
+[offsetof](c-runtime-library/reference/offsetof-macro.md) has traditionally been implemented using a macro that requires a [reinterpret_cast](cpp/reinterpret-cast-operator.md). This is illegal in contexts that require a constant expression, but the Microsoft C++ compiler has traditionally allowed it. The offsetof macro that is shipped as part of the STL correctly uses a compiler intrinsic (**__builtin_offsetof**), but many people have used the macro trick to define their own **offsetof**.
 
 In Visual Studio 2017 version 15.8, the compiler constrains the areas that these reinterpret_casts can appear in the default mode in order to help code conform to standard C++ behavior. Under [/permissive-](build/reference/permissive-standards-conformance.md), the constraints are even stricter. Using the result of an offsetof in places that require constant expressions may result in code that issues warning C4644 *usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead* or C2975 *invalid template argument, expected compile-time constant expression*.
 
-The following code raises C4644 in **/default** and **/std:c++17** modes, and C2975 in **/permissive-** mode: 
+The following code raises C4644 in **/default** and **/std:c++17** modes, and C2975 in **/permissive-** mode:
 
 ```cpp
-struct Data { 
-    int x; 
-}; 
+struct Data {
+    int x;
+};
 
-// Common pattern of user-defined offsetof 
-#define MY_OFFSET(T, m) (unsigned long long)(&(((T*)nullptr)->m)) 
+// Common pattern of user-defined offsetof
+#define MY_OFFSET(T, m) (unsigned long long)(&(((T*)nullptr)->m))
 
-int main() 
+int main()
 
-{ 
-    switch (0) { 
-    case MY_OFFSET(Data, x): return 0; 
-    default: return 1; 
-    } 
-} 
+{
+    switch (0) {
+    case MY_OFFSET(Data, x): return 0;
+    default: return 1;
+    }
+}
 ```
 
 To fix the error, use **offsetof** as defined via \<cstddef>:
 
 ```cpp
-#include <cstddef>  
+#include <cstddef>
 
-struct Data { 
-    int x; 
-};  
+struct Data {
+    int x;
+};
 
-int main() 
-{ 
-    switch (0) { 
-    case offsetof(Data, x): return 0; 
-    default: return 1; 
-    } 
-} 
+int main()
+{
+    switch (0) {
+    case offsetof(Data, x): return 0;
+    default: return 1;
+    }
+}
 ```
-
 
 ### cv-qualifiers on base classes subject to pack expansion
 
-Previous versions of the Microsoft C++ compiler did not detect that a base-class had cv-qualifiers if it was also subject to pack expansion. 
+Previous versions of the Microsoft C++ compiler did not detect that a base-class had cv-qualifiers if it was also subject to pack expansion.
 
-In Visual Studio 2017 version 15.8, in **/permissive-** mode the following code raises C3770 *'const S': is not a valid base class*: 
+In Visual Studio 2017 version 15.8, in **/permissive-** mode the following code raises C3770 *'const S': is not a valid base class*:
 
 ```cpp
-template<typename... T> 
-class X : public T... { };  
+template<typename... T>
+class X : public T... { };
 
-class S { };  
+class S { };
 
-int main() 
-{ 
-    X<const S> x; 
-} 
+int main()
+{
+    X<const S> x;
+}
 ```
+
 ### template keyword and nested-name-specifiers
 
-In **/permissive-** mode, the compiler now requires the `template` keyword to precede a template-name when it comes after a nested-name-specifier which is dependent. 
+In **/permissive-** mode, the compiler now requires the `template` keyword to precede a template-name when it comes after a nested-name-specifier which is dependent.
 
 The following code in **/permissive-** mode now raises C7510: *'foo': use of dependent template name must be prefixed with 'template'. note: see reference to class template instantiation 'X<T>' being compiled*:
 
 ```cpp
 template<typename T> struct Base
 {
-    template<class U> void foo() {} 
-}; 
+    template<class U> void foo() {}
+};
 
-template<typename T> 
-struct X : Base<T> 
-{ 
-    void foo() 
-    { 
-        Base<T>::foo<int>(); 
-    } 
-}; 
+template<typename T>
+struct X : Base<T>
+{
+    void foo()
+    {
+        Base<T>::foo<int>();
+    }
+};
 ```
 
 To fix the error, add the `template` keyword to the `Base<T>::foo<int>();` statement, as shown in the following example:
@@ -1815,16 +1814,16 @@ template<typename T> struct Base
 {
     template<class U> void foo() {}
 };
- 
-template<typename T> 
-struct X : Base<T> 
-{ 
-    void foo() 
-    { 
+
+template<typename T>
+struct X : Base<T>
+{
+    void foo()
+    {
         // Add template keyword here:
-        Base<T>::template foo<int>(); 
-    } 
-}; 
+        Base<T>::template foo<int>();
+    }
+};
 ```
 
 ## See also

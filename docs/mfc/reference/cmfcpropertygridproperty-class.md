@@ -260,7 +260,6 @@ CMFCPropertyGridProperty(
     DWORD_PTR dwData=0,
     BOOL bIsValueList=FALSE);
 
-
 CMFCPropertyGridProperty(
     const CString& strName,
     const _variant_t& varValue,
@@ -711,7 +710,6 @@ Points to the property object that corresponds to the property list item that co
 CMFCPropertyGridProperty* HitTest(
     CPoint point,
     CMFCPropertyGridProperty::ClickArea* pnArea=NULL);
-
 
 CMFCPropertyGridProperty* HitTest(
     CPoint pt,
@@ -1251,14 +1249,13 @@ By default, this method does nothing and then returns TRUE. If you override this
 
 ##  <a name="onkillselection"></a>  CMFCPropertyGridProperty::OnKillSelection
 
-
 ```
 virtual void OnKillSelection(CMFCPropertyGridProperty*);
 ```
 
 ### Parameters
 
-[in] *CMFCPropertyGridProperty**
+[in] *CMFCPropertyGridProperty&#42;*<br/>
 
 ### Remarks
 
@@ -1266,14 +1263,13 @@ By default, this method does nothing.
 
 ##  <a name="onpossizechanged"></a>  CMFCPropertyGridProperty::OnPosSizeChanged
 
-
 ```
 virtual void OnPosSizeChanged(CRect);
 ```
 
 ### Parameters
 
-[in] *CRect*
+[in] *CRect*<br/>
 
 ### Remarks
 
@@ -1348,14 +1344,13 @@ This method supports the following variant types: VT_INT, VT_I2, VT_I4, VT_UINT,
 
 ##  <a name="onsetselection"></a>  CMFCPropertyGridProperty::OnSetSelection
 
-
 ```
-virtual void OnSetSelection(CMFCPropertyGridProperty*);
+virtual void OnSetSelection CMFCPropertyGridProperty*);
 ```
 
 ### Parameters
 
-[in] *CMFCPropertyGridProperty**
+[in] *CMFCPropertyGridProperty&#42;*<br/>
 
 ### Remarks
 

@@ -135,7 +135,6 @@ virtual bool do_is(
     mask maskVal,
     CharType ch) const;
 
-
 virtual const CharType *do_is(
     const CharType* first,
     const CharType* last,
@@ -181,7 +180,6 @@ A virtual function called to convert a character of type `CharType` used by a lo
 virtual char do_narrow(
     CharType ch,
     char default = '\0') const;
-
 
 virtual const CharType* do_narrow(
     const CharType* first,
@@ -296,7 +294,6 @@ A virtual function called to convert a character or a range of characters to low
 ```cpp
 virtual CharType do_tolower(CharType ch) const;
 
-
 virtual const CharType *do_tolower(
     CharType* first,
     const CharType* last) const;
@@ -332,7 +329,6 @@ A virtual function called to convert a character or a range of characters to upp
 ```cpp
 virtual CharType do_toupper(CharType ch) const;
 
-
 virtual const CharType *do_toupper(
     CharType* first,
     const CharType* last) const;
@@ -367,7 +363,6 @@ A virtual function called to converts a character of type **char** in the native
 
 ```cpp
 virtual CharType do_widen(char byte) const;
-
 
 virtual const char *do_widen(
     const char* first,
@@ -409,7 +404,6 @@ Tests whether a single character has a particular attribute or classifies the at
 
 ```cpp
 bool is(mask maskVal, CharType ch) const;
-
 
 const CharType *is(
     const CharType* first,
@@ -489,7 +483,6 @@ Converts characters of type `CharType` used by a locale to the corresponding cha
 
 ```cpp
 char narrow(CharType ch, char default = '\0') const;
-
 
 const CharType* narrow(
     const CharType* first,
@@ -669,7 +662,6 @@ Converts a character or a range of characters to lower case.
 
 ```cpp
 CharType tolower(CharType ch) const;
-
 
 const CharType *tolower(CharType* first, const CharType* last) const;
 ```

@@ -17,7 +17,7 @@ This macro forwards window messages.
 
 |||
 |-|-|
-|[WM_FORWARDMSG](#wm_forwardmsg)|Use to forward a message received by a window to another window for processing.|  
+|[WM_FORWARDMSG](#wm_forwardmsg)|Use to forward a message received by a window to another window for processing.|
 
 ## Requirements
 

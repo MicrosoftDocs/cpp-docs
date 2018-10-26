@@ -155,7 +155,6 @@ BOOL CreateDIBPatternBrush(
     HGLOBAL hPackedDIB,
     UINT nUsage);
 
-
 BOOL CreateDIBPatternBrush(
     const void* lpPackedDIB,
     UINT nUsage);

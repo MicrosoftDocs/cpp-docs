@@ -23,7 +23,7 @@ This class provides a method for standardizing the styles used when creating a w
 
 ```
 template <DWORD t_dwStyle = 0,
-          DWORD t_dwExStyle = 0, 
+          DWORD t_dwExStyle = 0,
           class TWinTraits = CControlWinTraits>
 class CWinTraitsOR
 ```

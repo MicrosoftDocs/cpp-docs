@@ -33,7 +33,7 @@ There are several ways to interact with and debug your Linux project.
 
     - In **gdb** mode, the Visual Studio debugger drives GDB on the remote system, which is more compatible if the local version of GDB is not compatible with the version installed on the target computer. |
 
-    > [!NOTE] 
+    > [!NOTE]
     > If you are unable to hit breakpoints in gdbserver debugging mode, try gdb mode. gdb must first be [installed](../linux/download-install-and-setup-the-linux-development-workload.md) on the remote target.
 
 2. Select the remote target using the standard **Debug** toolbar in Visual Studio.
@@ -56,7 +56,7 @@ There are several ways to interact with and debug your Linux project.
 
     If there are no errors, the app will start and the debugger will pause at the breakpoint.
 
-    ![Hit a breakpoint](media/hit_breakpoint.png)  
+    ![Hit a breakpoint](media/hit_breakpoint.png)
 
     Now, you can interact with the application in it's current state, view variables, and step through code by pressing command keys such as **F10** or **F11**.
 
@@ -71,7 +71,7 @@ There are several ways to interact with and debug your Linux project.
 ## Configure other debugging options
 
 * Command line arguments can be passed to the executable using the **Program Arguments** item in the project's **Debugging** property page.
-  
+
   ![Program Arguments](media/settings_programarguments.png)
 
 * Specific debugger options can be passed to GDB using the **Additional Debugger Commands** entry.  For example, you might want to ignore SIGILL (illegal instruction) signals.  You could use the **handle** command to achieve this.  by adding the following to the **Additional Debugger Commands** entry as shown above:

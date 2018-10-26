@@ -35,9 +35,9 @@ Visual C++ automatically maintains this type-library file for you if you chose t
     > [!NOTE]
     >  You can select interfaces from more than one type library.
 
-     To select interfaces, double-click them or click the **Add** button. When you do so, names for the dispatch classes will appear in the **Generated classes** box. You can edit the class names in the `Class` box.
+   To select interfaces, double-click them or click the **Add** button. When you do so, names for the dispatch classes will appear in the **Generated classes** box. You can edit the class names in the `Class` box.
 
-     The **File** box displays the file in which the class will be declared. (you can edit this file name as well). You can also use the browse button to select other files, if you prefer to have the header and implementation information written in existing files or in a directory other than the project directory.
+   The **File** box displays the file in which the class will be declared. (you can edit this file name as well). You can also use the browse button to select other files, if you prefer to have the header and implementation information written in existing files or in a directory other than the project directory.
 
     > [!NOTE]
     >  All the dispatch classes for the selected interfaces will be put into the file specified here. If you want the interfaces to be declared in separate headers, you must run this wizard for each header file you want to create.
@@ -47,7 +47,7 @@ Visual C++ automatically maintains this type-library file for you if you chose t
 
 1. Click **Finish**.
 
-     The wizard will then write the code for your dispatch classes using the specified class and file names.
+   The wizard will then write the code for your dispatch classes using the specified class and file names.
 
 ## See Also
 

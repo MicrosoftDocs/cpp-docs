@@ -20,8 +20,8 @@ The **Colors** window has two parts:
 
 2. The **Color Indicator**, which shows the foreground and background colors and selectors for screen and inverse color.
 
-   ![Colors window](../windows/media/vccolorswindow.gif "vcColorsWindow")  
-Colors Window
+   ![Colors window](../windows/media/vccolorswindow.gif "vcColorsWindow")<br/>
+   Colors Window
 
 > [!NOTE]
 > The **Screen color** and **Inverse color** tools are only available for icons and cursors.

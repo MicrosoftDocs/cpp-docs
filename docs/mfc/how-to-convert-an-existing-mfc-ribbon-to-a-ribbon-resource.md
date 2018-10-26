@@ -26,13 +26,13 @@ You must have an existing MFC project that has code that uses the MFC ribbon cla
 
 ```
 
-     Save and close the file.
+   Save and close the file.
 
 1. Build and run the MFC application, and then in Notepad, open RibbonOutput.txt and copy its contents.
 
 1. In Visual Studio, on the **Project** menu, click **Add Resource**. In the **Add Resource** dialog box, select **Ribbon** and then click **New**.
 
-     Visual Studio creates a ribbon resource and opens it in design view. The ribbon resource ID is IDR_RIBBON1, which is displayed in **Resource View**. The ribbon is defined in the ribbon1.mfcribbon-ms XML file.
+   Visual Studio creates a ribbon resource and opens it in design view. The ribbon resource ID is IDR_RIBBON1, which is displayed in **Resource View**. The ribbon is defined in the ribbon1.mfcribbon-ms XML file.
 
 1. In Visual Studio, open ribbon1.mfcribbon-ms, delete its contents, and then paste the contents of RibbonOutput.txt, which you copied earlier. Save and close ribbon1.mfcribbon-ms.
 

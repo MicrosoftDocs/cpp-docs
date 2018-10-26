@@ -37,8 +37,6 @@ The DDX_DHtml helper macros allow easy access to the commonly used properties of
 
 Sets or retrieves the destination URL or anchor point.
 
-
-
 ```
 DDX_DHtml_Anchor_Href(
     CDataExchange* dx,
@@ -91,8 +89,6 @@ This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/c
 
 Sets or retrieves the HTML between the start and end tags of the current element.
 
-
-
 ```
 DDX_DHtml_ElementInnerHtml(
     CDataExchange* dx,
@@ -115,12 +111,9 @@ The value being exchanged.
 
 This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLELEMENT_INNERHTML dispatch ID.
 
-
 ## <a name="ddx_dhtml_elementinnertext"></a>  DDX_DHtml_ElementInnerText
 
 Sets or retrieves the text between the start and end tags of the current element.
-
-
 
 ```
 DDX_DHtml_ElementInnerText(
@@ -202,8 +195,6 @@ This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/c
 
 Sets or retrieves the URL of the associated frame.
 
-
-
 ```
 DDX_DHtml_IFrame_Src(
     CDataExchange* dx,
@@ -253,7 +244,6 @@ The value being exchanged.
 When using the DDX_DHtml_Img_Src macro to retrieve the src property for an IMAGE element, the Internet Explorer image object will return the fully escaped URL for the image source. For example, if you use the DDX_DHtml_Img_Src macro to set the src property of an IMAGE element to the string "some interesting picture," when you retrieve that property, Internet Explorer will return the string "res://d:\myapplication\myapp.exe/some%20interesting%20picture."
 
 This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLIMGELEMENT_SRC dispatch ID.
-
 
 ## See Also
 

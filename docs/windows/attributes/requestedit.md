@@ -50,4 +50,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 [Data Member Attributes](data-member-attributes.md)<br/>
 [defaultbind](defaultbind.md)<br/>
 [displaybind](displaybind.md)<br/>
-[immediatebind](immediatebind.md)  
+[immediatebind](immediatebind.md)

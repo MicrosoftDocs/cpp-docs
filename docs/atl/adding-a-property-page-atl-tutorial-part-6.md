@@ -36,7 +36,7 @@ To add a property page to your control, use the ATL Property Page template.
 
 1. Click **Strings** to open the **Strings** page and enter **&Polygon** as the **Title**.
 
-     The **Title** of the property page is the string that appears in the tab for that page. The **Doc string** is a description that a property frame uses to put in a status line or tool tip. Note that the standard property frame currently does not use this string, so you can leave it with the default contents. You will not generate a **Help file** at the moment, so delete the entry in that text box.
+   The **Title** of the property page is the string that appears in the tab for that page. The **Doc string** is a description that a property frame uses to put in a status line or tool tip. Note that the standard property frame currently does not use this string, so you can leave it with the default contents. You will not generate a **Help file** at the moment, so delete the entry in that text box.
 
 1. Click **Finish**, and the property page object will be created.
 

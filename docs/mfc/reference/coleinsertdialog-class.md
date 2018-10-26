@@ -144,7 +144,6 @@ Call this function to display the OLE Insert Object dialog box.
 virtual INT_PTR
     DoModal();
 
-
 INT_PTR
     DoModal(DWORD  dwFlags);
 ```

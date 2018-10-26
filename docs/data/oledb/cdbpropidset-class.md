@@ -14,105 +14,105 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBPropIDSet Class
 
-Inherits from the `DBPROPIDSET` structure and adds a constructor that initializes key fields as well as the [AddPropertyID](../../data/oledb/cdbpropidset-addpropertyid.md) access method.  
-  
+Inherits from the `DBPROPIDSET` structure and adds a constructor that initializes key fields as well as the [AddPropertyID](../../data/oledb/cdbpropidset-addpropertyid.md) access method.
+
 ## Syntax
 
 ```cpp
-class CDBPropIDSet : public tagDBPROPIDSET  
-```  
+class CDBPropIDSet : public tagDBPROPIDSET
+```
 
-## Requirements  
+## Requirements
 
 **Header:** atldbcli.h
-  
-## Members  
-  
-### Methods  
-  
-|||  
-|-|-|  
-|[AddPropertyID](#addpropertyid)|Adds a property to the property ID set.|  
-|[CDBPropIDSet](#cdbpropidset)|Constructor.|  
-|[SetGUID](#setguid)|Sets the GUID of the property ID set.|  
-  
-### Operators  
-  
-|||  
-|-|-|  
-|[operator =](#op_equal)|Assigns the contents of one property ID set to another.|  
-  
-## Remarks  
 
-OLE DB consumers use `DBPROPIDSET` structures to pass an array of property IDs for which the consumer wants to get property information. The properties identified in a single [DBPROPIDSET](/previous-versions/windows/desktop/ms717981) structure belong to one property set.  
+## Members
+
+### Methods
+
+|||
+|-|-|
+|[AddPropertyID](#addpropertyid)|Adds a property to the property ID set.|
+|[CDBPropIDSet](#cdbpropidset)|Constructor.|
+|[SetGUID](#setguid)|Sets the GUID of the property ID set.|
+
+### Operators
+
+|||
+|-|-|
+|[operator =](#op_equal)|Assigns the contents of one property ID set to another.|
+
+## Remarks
+
+OLE DB consumers use `DBPROPIDSET` structures to pass an array of property IDs for which the consumer wants to get property information. The properties identified in a single [DBPROPIDSET](/previous-versions/windows/desktop/ms717981) structure belong to one property set.
 
 ## <a name="addpropertyid"></a> CDBPropIDSet::AddPropertyID
 
-Adds a property ID to the property ID set.  
-  
-### Syntax  
-  
+Adds a property ID to the property ID set.
+
+### Syntax
+
 ```cpp
-bool AddPropertyID(DBPROPID propid) throw();  
-```  
-  
-#### Parameters  
+bool AddPropertyID(DBPROPID propid) throw();
+```
+
+#### Parameters
 
 *propid*<br/>
-[in] The property ID to be added to the property ID set.  
+[in] The property ID to be added to the property ID set.
 
 ## <a name="cdbpropidset"></a> CDBPropIDSet::CDBPropIDSet
 
-The constructor. Initializes the `rgProperties`, `cProperties`, and (optionally) `guidPropertySet` fields of the [DBPROPIDSET](/previous-versions/windows/desktop/ms717981) structure.  
-  
-### Syntax  
-  
+The constructor. Initializes the `rgProperties`, `cProperties`, and (optionally) `guidPropertySet` fields of the [DBPROPIDSET](/previous-versions/windows/desktop/ms717981) structure.
+
+### Syntax
+
 ```cpp
-CDBPropIDSet(const GUID& guid);  
+CDBPropIDSet(const GUID& guid);
 
-CDBPropIDSet(const CDBPropIDSet& propidset);  
+CDBPropIDSet(const CDBPropIDSet& propidset);
 
-CDBPropIDSet();  
-```  
-  
-#### Parameters  
+CDBPropIDSet();
+```
+
+#### Parameters
 
 *guid*<br/>
-[in] A GUID used to initialize the `guidPropertySet` field.  
-  
+[in] A GUID used to initialize the `guidPropertySet` field.
+
 *propidset*<br/>
-[in] Another `CDBPropIDSet` object for copy construction.  
+[in] Another `CDBPropIDSet` object for copy construction.
 
 ## <a name="setguid"></a> CDBPropIDSet::SetGUID
 
-Sets the GUID field in the `DBPROPIDSET` structure.  
-  
-### Syntax  
-  
+Sets the GUID field in the `DBPROPIDSET` structure.
+
+### Syntax
+
 ```cpp
-void SetGUID(const GUID& guid) throw();  
-```  
-  
-#### Parameters  
+void SetGUID(const GUID& guid) throw();
+```
+
+#### Parameters
 
 *guid*<br/>
-[in] A GUID used to set the `guidPropertySet` field of the [DBPROPIDSET](/previous-versions/windows/desktop/ms717981) structure.  
-  
-### Remarks  
+[in] A GUID used to set the `guidPropertySet` field of the [DBPROPIDSET](/previous-versions/windows/desktop/ms717981) structure.
 
-This field can be set by the [constructor](../../data/oledb/cdbpropidset-cdbpropidset.md) as well. Call this function if you use the default constructor for this class.  
+### Remarks
+
+This field can be set by the [constructor](../../data/oledb/cdbpropidset-cdbpropidset.md) as well. Call this function if you use the default constructor for this class.
 
 ## <a name="op_equal"></a> CDBPropIDSet::operator =
 
-Assigns the contents of one property ID set to another ID property set.  
-  
-### Syntax  
-  
+Assigns the contents of one property ID set to another ID property set.
+
+### Syntax
+
 ```cpp
-CDBPropIDSet& operator =(CDBPropIDSet& propset) throw();  
-```  
-  
-## See Also  
+CDBPropIDSet& operator =(CDBPropIDSet& propset) throw();
+```
+
+## See Also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

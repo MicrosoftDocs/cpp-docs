@@ -496,7 +496,6 @@ void GetFieldInfo(
     CDaoFieldInfo& fieldinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
 
-
 void GetFieldInfo(
     LPCTSTR lpszName,
     CDaoFieldInfo& fieldinfo,
@@ -558,7 +557,6 @@ void GetIndexInfo(
     int nIndex,
     CDaoIndexInfo& indexinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
-
 
 void GetIndexInfo(
     LPCTSTR lpszName,

@@ -175,19 +175,19 @@ List view controls can display their contents in four different ways, called "vi
 
 - Icon view
 
-     Each item appears as a full-sized icon (32 x 32 pixels) with a label below it. The user can drag the items to any location in the list view window.
+   Each item appears as a full-sized icon (32 x 32 pixels) with a label below it. The user can drag the items to any location in the list view window.
 
 - Small icon view
 
-     Each item appears as a small icon (16 x 16 pixels) with the label to the right of it. The user can drag the items to any location in the list view window.
+   Each item appears as a small icon (16 x 16 pixels) with the label to the right of it. The user can drag the items to any location in the list view window.
 
 - List view
 
-     Each item appears as a small icon with a label to the right of it. Items are arranged in columns and cannot be dragged to any location in the list view window.
+   Each item appears as a small icon with a label to the right of it. Items are arranged in columns and cannot be dragged to any location in the list view window.
 
 - Report view
 
-     Each item appears on its own line, with additional information arranged in columns to the right. The leftmost column contains the small icon and label, and subsequent columns contain subitems as specified by the application. An embedded header control (class [CHeaderCtrl](../../mfc/reference/cheaderctrl-class.md)) implements these columns. For more information on the header control and columns in a report view, see [Using CListCtrl: Adding Columns to the Control (Report View)](../../mfc/adding-columns-to-the-control-report-view.md).
+   Each item appears on its own line, with additional information arranged in columns to the right. The leftmost column contains the small icon and label, and subsequent columns contain subitems as specified by the application. An embedded header control (class [CHeaderCtrl](../../mfc/reference/cheaderctrl-class.md)) implements these columns. For more information on the header control and columns in a report view, see [Using CListCtrl: Adding Columns to the Control (Report View)](../../mfc/adding-columns-to-the-control-report-view.md).
 
 The style of the control's current list view determines the current view. For more information on these styles and their usage, see [Using CListCtrl: Changing List Control Styles](../../mfc/changing-list-control-styles.md).
 
@@ -197,19 +197,19 @@ In addition to the standard list styles, class `CListCtrl` supports a large set 
 
 - Hover selection
 
-     When enabled, allows automatic selection of an item when the cursor remains over the item for a certain period of time.
+   When enabled, allows automatic selection of an item when the cursor remains over the item for a certain period of time.
 
 - Virtual list views
 
-     When enabled, allows the control to support up to DWORD items. This is possible by placing the overhead of managing item data on the application. Except for the item selection and focus information, all item information must be managed by the application. For more information, see [Using CListCtrl: Virtual List Controls](../../mfc/virtual-list-controls.md).
+   When enabled, allows the control to support up to DWORD items. This is possible by placing the overhead of managing item data on the application. Except for the item selection and focus information, all item information must be managed by the application. For more information, see [Using CListCtrl: Virtual List Controls](../../mfc/virtual-list-controls.md).
 
 - One- and two- click activation
 
-     When enabled, allows hot tracking (automatic highlighting of the item text) and one- or two- click activation of the highlighted item.
+   When enabled, allows hot tracking (automatic highlighting of the item text) and one- or two- click activation of the highlighted item.
 
 - Drag and drop column ordering
 
-     When enabled, allows drag-and-drop reordering of columns in a list view control. Only available in report view.
+   When enabled, allows drag-and-drop reordering of columns in a list view control. Only available in report view.
 
 For information on using these new extended styles, see [Using CListCtrl: Changing List Control Styles](../../mfc/changing-list-control-styles.md).
 
@@ -227,19 +227,19 @@ The icons, header item images, and application- defined states for list view ite
 
 - Large icon
 
-     Used in the icon view for full-sized icons.
+   Used in the icon view for full-sized icons.
 
 - Small icon
 
-     Used in the small icon, list, and report views for smaller versions of the icons used in the icon view.
+   Used in the small icon, list, and report views for smaller versions of the icons used in the icon view.
 
 - Application-defined state
 
-     Contains state images, which are displayed next to an item's icon to indicate an application-defined state.
+   Contains state images, which are displayed next to an item's icon to indicate an application-defined state.
 
 - Header item
 
-     Used in the report view for small images that appear in each header control item.
+   Used in the report view for small images that appear in each header control item.
 
 By default, a list view control destroys the image lists assigned to it when it is destroyed; however, the developer can customize this behavior by destroying each image list when it is no longer used, as determined by the application. For more information, see [Using CListCtrl: List Items and Image Lists](../list-items-and-image-lists.md).
 

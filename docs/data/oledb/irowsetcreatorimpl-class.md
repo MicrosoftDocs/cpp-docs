@@ -14,61 +14,61 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetCreatorImpl Class
 
-Performs the same functions as `IObjectWithSite` but also enables the OLE DB properties `DBPROPCANSCROLLBACKWARDS DBPROPCANFETCHBACKWARDS`.  
-  
+Performs the same functions as `IObjectWithSite` but also enables the OLE DB properties `DBPROPCANSCROLLBACKWARDS DBPROPCANFETCHBACKWARDS`.
+
 ## Syntax
 
 ```cpp
-template < class T >  
-class ATL_NO_VTABLE IRowsetCreatorImpl   
-   : public IObjectWithSiteImpl< T >  
-```  
-  
-### Parameters  
+template < class T >
+class ATL_NO_VTABLE IRowsetCreatorImpl
+   : public IObjectWithSiteImpl< T >
+```
+
+### Parameters
 
 *T*<br/>
-A class derived from `IRowsetCreator`.  
+A class derived from `IRowsetCreator`.
 
-## Requirements  
+## Requirements
 
-**Header:** atldb.h  
-  
-## Members  
-  
-### Methods  
-  
-|||  
-|-|-|  
-|[SetSite](#setsite)|Sets the site that contains the rowset object.|  
-  
-## Remarks  
+**Header:** atldb.h
 
-This class inherits from [IObjectWithSite](/windows/desktop/api/ocidl/nn-ocidl-iobjectwithsite) and overrides [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite). When a provider command or session object creates a rowset, it calls `QueryInterface` on the rowset object looking for `IObjectWithSite` and calls `SetSite` passing the rowset object's `IUnkown` interface as the site interface.  
+## Members
+
+### Methods
+
+|||
+|-|-|
+|[SetSite](#setsite)|Sets the site that contains the rowset object.|
+
+## Remarks
+
+This class inherits from [IObjectWithSite](/windows/desktop/api/ocidl/nn-ocidl-iobjectwithsite) and overrides [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite). When a provider command or session object creates a rowset, it calls `QueryInterface` on the rowset object looking for `IObjectWithSite` and calls `SetSite` passing the rowset object's `IUnkown` interface as the site interface.
 
 ## <a name="setsite"></a> IRowsetCreatorImpl::SetSite
 
-Sets the site that contains the rowset object. For more information, see [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite).  
-  
-### Syntax  
-  
+Sets the site that contains the rowset object. For more information, see [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite).
+
+### Syntax
+
 ```cpp
-STDMETHOD(SetSite )(IUnknown* pCreator);  
-```  
-  
-#### Parameters  
+STDMETHOD(SetSite )(IUnknown* pCreator);
+```
+
+#### Parameters
 
 *pCreator*<br/>
-[in] Pointer to the `IUnknown` interface pointer of the site managing the rowset object.  
-  
-### Return Value  
+[in] Pointer to the `IUnknown` interface pointer of the site managing the rowset object.
 
-A standard HRESULT.  
-  
-### Remarks  
+### Return Value
 
-In addition, `IRowsetCreatorImpl::SetSite` enables the OLE DB `DBPROPCANSCROLLBACKWARDS DBPROPCANFETCHBACKWARDS` properties. 
+A standard HRESULT.
 
-## See Also  
+### Remarks
+
+In addition, `IRowsetCreatorImpl::SetSite` enables the OLE DB `DBPROPCANSCROLLBACKWARDS DBPROPCANFETCHBACKWARDS` properties.
+
+## See Also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

@@ -19,15 +19,15 @@ In MFC, the most common way to open a file is a two-stage process.
 
 1. Create the file object without specifying a path or permission flags.
 
-     You usually create a file object by declaring a [CFile](../mfc/reference/cfile-class.md) variable on the stack frame.
+   You usually create a file object by declaring a [CFile](../mfc/reference/cfile-class.md) variable on the stack frame.
 
 1. Call the [Open](../mfc/reference/cfile-class.md#open) member function for the file object, supplying a path and permission flags.
 
-     The return value for `Open` will be nonzero if the file was opened successfully or 0 if the specified file could not be opened. The `Open` member function is prototyped as follows:
+   The return value for `Open` will be nonzero if the file was opened successfully or 0 if the specified file could not be opened. The `Open` member function is prototyped as follows:
 
-     `virtual BOOL Open( LPCTSTR lpszFileName, UINT nOpenFlags, CFileException* pError = NULL );`
+   `virtual BOOL Open( LPCTSTR lpszFileName, UINT nOpenFlags, CFileException* pError = NULL );`
 
-     The open flags specify which permissions, such as read-only, you want for the file. The possible flag values are defined as enumerated constants within the `CFile` class, so they are qualified with "`CFile::`" as in `CFile::modeRead`. Use the `CFile::modeCreate` flag if you want to create the file.
+   The open flags specify which permissions, such as read-only, you want for the file. The possible flag values are defined as enumerated constants within the `CFile` class, so they are qualified with "`CFile::`" as in `CFile::modeRead`. Use the `CFile::modeCreate` flag if you want to create the file.
 
 The following example shows how to create a new file with read/write permission (replacing any previous file with the same path):
 

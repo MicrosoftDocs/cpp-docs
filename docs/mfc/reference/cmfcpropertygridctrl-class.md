@@ -176,7 +176,6 @@ The following example demonstrates how to configure a property grid control obje
 
 ##  <a name="accselect"></a>  CMFCPropertyGridCtrl::accSelect
 
-
 ```
 virtual HRESULT accSelect(
     long flagsSelect,
@@ -185,8 +184,8 @@ virtual HRESULT accSelect(
 
 ### Parameters
 
-*flagsSelect*<br/>
-[in] [in] *varChild*
+[in] *flagsSelect*<br/>
+[in] *varChild*<br/>
 
 ### Return Value
 
@@ -236,14 +235,13 @@ This method recalculates how to draw the entire property grid control and its pr
 
 ##  <a name="alwaysshowusertooltip"></a>  CMFCPropertyGridCtrl::AlwaysShowUserToolTip
 
-
 ```
 void AlwaysShowUserToolTip(BOOL bShow = TRUE);
 ```
 
 ### Parameters
 
-[in] *bShow*
+[in] *bShow*<br/>
 
 ### Remarks
 
@@ -372,7 +370,6 @@ TRUE if this method is successful; otherwise, FALSE.
 Use this method to delete a property, and any sub-items, from the property grid control.
 
 ##  <a name="drawcontrolbarcolors"></a>  CMFCPropertyGridCtrl::DrawControlBarColors
-
 
 ```
 BOOL DrawControlBarColors() const;
@@ -527,14 +524,13 @@ Use the [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridctrl) cons
 
 ##  <a name="get_accchildcount"></a>  CMFCPropertyGridCtrl::get_accChildCount
 
-
 ```
 virtual HRESULT get_accChildCount(long* pcountChildren);
 ```
 
 ### Parameters
 
-[in] *pcountChildren*
+[in] *pcountChildren*<br/>
 
 ### Return Value
 
@@ -542,21 +538,19 @@ virtual HRESULT get_accChildCount(long* pcountChildren);
 
 ##  <a name="get_accfocus"></a>  CMFCPropertyGridCtrl::get_accFocus
 
-
 ```
 virtual HRESULT get_accFocus(VARIANT* pvarChild);
 ```
 
 ### Parameters
 
-[in] *pvarChild*
+[in] *pvarChild*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="get_acchelp"></a>  CMFCPropertyGridCtrl::get_accHelp
-
 
 ```
 virtual HRESULT get_accHelp(
@@ -566,15 +560,14 @@ virtual HRESULT get_accHelp(
 
 ### Parameters
 
-*varChild*<br/>
-[in] [in] *pszHelp*
+[in] *varChild*<br/>
+[in] *pszHelp*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="get_acchelptopic"></a>  CMFCPropertyGridCtrl::get_accHelpTopic
-
 
 ```
 virtual HRESULT get_accHelpTopic(
@@ -585,16 +578,15 @@ virtual HRESULT get_accHelpTopic(
 
 ### Parameters
 
-*pszHelpFile*<br/>
-[in] [in] *varChild*
-[in] *pidTopic*
+[in] *pszHelpFile*<br/>
+[in] *varChild*<br/>
+[in] *pidTopic*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="get_acckeyboardshortcut"></a>  CMFCPropertyGridCtrl::get_accKeyboardShortcut
-
 
 ```
 virtual HRESULT get_accKeyboardShortcut(
@@ -604,8 +596,8 @@ virtual HRESULT get_accKeyboardShortcut(
 
 ### Parameters
 
-*varChild*<br/>
-[in] [in] *pszKeyboardShortcut*
+[in] *varChild*<br/>
+[in] *pszKeyboardShortcut*<br/>
 
 ### Return Value
 
@@ -613,14 +605,13 @@ virtual HRESULT get_accKeyboardShortcut(
 
 ##  <a name="get_accselection"></a>  CMFCPropertyGridCtrl::get_accSelection
 
-
 ```
 virtual HRESULT get_accSelection(VARIANT* pvarChildren);
 ```
 
 ### Parameters
 
-[in] *pvarChildren*
+[in] *pvarChildren*<br/>
 
 ### Return Value
 
@@ -982,7 +973,6 @@ When the property grid control is in alphabetic mode, all properties are sorted 
 Use the [CMFCPropertyGridCtrl::SetAlphabeticMode](#setalphabeticmode) method to enable or disable alphabetic mode.
 
 ##  <a name="isalwaysshowusertooltip"></a>  CMFCPropertyGridCtrl::IsAlwaysShowUserToolTip
-
 
 ```
 BOOL IsAlwaysShowUserToolTip() const;

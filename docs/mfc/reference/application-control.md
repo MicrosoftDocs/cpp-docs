@@ -31,7 +31,6 @@ OLE requires substantial control over applications and their objects. The OLE sy
 |[AfxOleRegisterServerClass](#afxoleregisterserverclass)|Registers a server in the OLE system registry.|
 |[AfxOleSetEditMenu](#afxoleseteditmenu)|Implements the user interface for the *typename* Object command.|
 
-
 ##  <a name="afxolecanexitapp"></a>  AfxOleCanExitApp
 
 Indicates whether the application can terminate.
@@ -181,6 +180,7 @@ Locks the class factory of the specified control so that dynamically created dat
 BOOL AFXAPI AfxOleLockControl(  REFCLSID clsid  );
 BOOL AFXAPI AfxOleLockControl( LPCTSTR lpszProgID );
 ```
+
 ### Parameters
 
 *clsid*<br/>
@@ -346,6 +346,7 @@ Unlocks the class factory of the specified control.
 BOOL AFXAPI AfxOleUnlockControl( REFCLSID clsid );
 BOOL AFXAPI AfxOleUnlockControl( LPCTSTR lpszProgID );
 ```
+
 ### Parameters
 
 *clsid*<br/>

@@ -161,12 +161,10 @@ Constructs a resource-based dynamic HTML dialog box.
 ```
 CDHtmlDialog();
 
-
 CDHtmlDialog(
     LPCTSTR lpszTemplateName,
     LPCTSTR szHtmlResID,
     CWnd *pParentWnd = NULL);
-
 
 CDHtmlDialog(
     UINT nIDTemplate,
@@ -246,7 +244,6 @@ void DDX_DHtml_AxControl(
     DISPID dispid,
     VARIANT& var);
 
-
 void DDX_DHtml_AxControl(
     CDataExchange* pDX,
     LPCTSTR szId,
@@ -312,13 +309,11 @@ void DDX_DHtml_ElementText(
     DISPID dispid,
     CString& value);
 
-
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
     DISPID dispid,
     short& value);
-
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
@@ -326,13 +321,11 @@ void DDX_DHtml_ElementText(
     DISPID dispid,
     int& value);
 
-
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
     DISPID dispid,
     long& value);
-
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
@@ -340,13 +333,11 @@ void DDX_DHtml_ElementText(
     DISPID dispid,
     DWORD& value);
 
-
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
     DISPID dispid,
     float& value);
-
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
@@ -547,11 +538,9 @@ VARIANT GetControlProperty(
     LPCTSTR szId,
     LPCTSTR szPropName);
 
-
 VARIANT GetControlProperty(
     LPCTSTR szId,
     DISPID dispid);
-
 
 VARIANT GetControlProperty(
     IDispatch* pdispControl,
@@ -646,7 +635,6 @@ HRESULT GetElement(
     IDispatch** ppdisp,
     BOOL* pbCollection = NULL);
 
-
 HRESULT GetElement(
     LPCTSTR szElementId,
     IHTMLElement** pphtmlElement);
@@ -701,7 +689,6 @@ Retrieves the requested interface pointer from the HTML element identified by *s
 template <class Q> HRESULT GetElementInterface(
     LPCTSTR szElementId,
     Q** ppvObj);
-
 
 HRESULT GetElementInterface(
     LPCTSTR szElementId,
@@ -1151,12 +1138,10 @@ void SetControlProperty(
     DISPID dispid,
     VARIANT* pVar);
 
-
 void SetControlProperty(
     IDispatch* pdispControl,
     DISPID dispid,
     VARIANT* pVar);
-
 
 void SetControlProperty(
     LPCTSTR szElementId,
@@ -1189,7 +1174,6 @@ Sets the `innerHTML` property of an HTML element.
 void SetElementHtml(
     LPCTSTR szElementId,
     BSTR bstrText);
-
 
 void SetElementHtml(
     IUnknown* punkElem,
@@ -1237,7 +1221,6 @@ Sets the `innerText` property of an HTML element.
 void SetElementText(
     LPCTSTR szElementId,
     BSTR bstrText);
-
 
 void SetElementText(
     IUnknown* punkElem,
@@ -1434,5 +1417,4 @@ This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::Upd
 [MFC Sample DHtmlExplore](../../visual-cpp-samples.md)<br/>
 [DDX_DHtml Helper Macros](#ddx_dhtml_helper_macros)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
 

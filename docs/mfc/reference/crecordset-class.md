@@ -592,17 +592,14 @@ void GetFieldValue(
     CDBVariant& varValue,
     short nFieldType = DEFAULT_FIELD_TYPE);
 
-
 void GetFieldValue(
     short nIndex,
     CDBVariant& varValue,
     short nFieldType = DEFAULT_FIELD_TYPE);
 
-
 void GetFieldValue(
     short nIndex,
     CStringA& strValue);
-
 
 void GetFieldValue(
     short nIndex,
@@ -688,7 +685,6 @@ Obtains information about the fields in the recordset.
 void GetODBCFieldInfo(
     LPCTSTR lpszName,
     CODBCFieldInfo& fieldinfo);
-
 
 void GetODBCFieldInfo(
     short nIndex,
@@ -1404,7 +1400,7 @@ Accept the default value, AFX_DB_USE_DEFAULT_TYPE, or use one of the following v
 
 - `CRecordset::forwardOnly` A read-only recordset with only forward scrolling.
 
-     For `CRecordset`, the default value is `CRecordset::snapshot`. The default-value mechanism allows the Visual C++ wizards to interact with both ODBC `CRecordset` and DAO `CDaoRecordset`, which have different defaults.
+   For `CRecordset`, the default value is `CRecordset::snapshot`. The default-value mechanism allows the Visual C++ wizards to interact with both ODBC `CRecordset` and DAO `CDaoRecordset`, which have different defaults.
 
 For more information about these recordset types, see the article [Recordset (ODBC)](../../data/odbc/recordset-odbc.md). For related information, see the article "Using Block and Scrollable Cursors" in the Windows SDK.
 
@@ -1479,7 +1475,7 @@ When you call `Open`, a query, usually a SQL **SELECT** statement, selects recor
 
 The usual procedure is to pass NULL to `Open`; in this case, `Open` calls [GetDefaultSQL](#getdefaultsql). If you are using a derived `CRecordset` class, `GetDefaultSQL` gives the table name(s) you specified in ClassWizard. You can instead specify other information in the `lpszSQL` parameter.
 
-Whatever you pass, `Open` constructs a final SQL string for the query (the string may have SQL **WHERE** and **ORDER BY** clauses appended to the `lpszSQL` string you passed) and then executes the query. You can examine the constructed string by calling [GetSQL](#getsql) after calling *`Open`. For additional details about how the recordset constructs a SQL statement and selects records, see the article [Recordset: How Recordsets Select Records (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md).
+Whatever you pass, `Open` constructs a final SQL string for the query (the string may have SQL **WHERE** and **ORDER BY** clauses appended to the `lpszSQL` string you passed) and then executes the query. You can examine the constructed string by calling [GetSQL](#getsql) after calling `Open`. For additional details about how the recordset constructs a SQL statement and selects records, see the article [Recordset: How Recordsets Select Records (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md).
 
 The field data members of your recordset class are bound to the columns of the data selected. If any records are returned, the first record becomes the current record.
 

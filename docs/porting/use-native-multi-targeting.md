@@ -41,11 +41,11 @@ You must remove this property when you want to upgrade your projects.
 
 If you choose not to upgrade, Visual Studio makes no changes to your solution or project files. When you build the project, the generated binaries are fully compatible with the ones you built with the older version of Visual Studio. This is because Visual Studio uses the same C++ compiler and links the same libraries that your older IDE shipped with. That is also why the upgrade dialog warns you to keep the older Visual Studio version installed if you choose **Cancel**.
 
-## Instructions for Visual Studio 2008  
-  
+## Instructions for Visual Studio 2008
+
 Visual Studio 2008 had its own dedicated build system for C++ called **VCBuild**. Starting in Visual Studio 2010, Visual C++ projects were changed to use **MSBuild**. This means that you must go through an update step to build your Visual Studio 2008 projects in the latest version of Visual Studio. Your updated project still generates binaries that are fully compatible with binaries created using the Visual Studio 2008 IDE.
 
-First, in addition to the current version of Visual Studio, you must install Visual Studio 2010 on the same computer as Visual Studio 2008. Only Visual Studio 2010 installs the **MSBuild** scripts that are required to target Visual Studio 2008 projects. 
+First, in addition to the current version of Visual Studio, you must install Visual Studio 2010 on the same computer as Visual Studio 2008. Only Visual Studio 2010 installs the **MSBuild** scripts that are required to target Visual Studio 2008 projects.
 
 Next, you must update your Visual Studio 2008 solution and projects to the current version of Visual Studio. We recommend you create a backup of your projects and solution files before the upgrade. To start the upgrade process, open the solution in the current version of Visual Studio. When you get the upgrade prompt, review the information presented, and then choose **OK** to start the upgrade. If you have more than one project in the solution, you must update The wizard creates new .vcxproj project files side-by-side with the existing .vcproj files. As long as you also have a copy of the original .sln file, the upgrade has no other impact on your existing Visual Studio 2008 projects.
 
@@ -66,4 +66,4 @@ When these products are installed, the **Platform Toolset** property drop-down i
 ## See Also
 
 [Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
-[C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md)  
+[C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md)

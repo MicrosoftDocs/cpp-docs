@@ -106,7 +106,6 @@ Constructs CAnimationPoint object.
 ```
 CAnimationPoint();
 
-
 CAnimationPoint(
     const CPoint& ptDefault,
     UINT32 nGroupID,

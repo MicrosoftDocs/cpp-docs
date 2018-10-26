@@ -129,7 +129,7 @@ public:
    bool isSenior(ItemType item) {
       // Because of the constraint,
       // the Age method can be called on ItemType.
-      if (item->Age() >= 65)  
+      if (item->Age() >= 65)
          return true;
       else
          return false;
@@ -155,12 +155,12 @@ int main() {
    Adult^ parent = gcnew Adult();
    Senior^ grandfather = gcnew Senior();
 
-   if (ageGuess->isSenior<Adult^>(parent))  
+   if (ageGuess->isSenior<Adult^>(parent))
       Console::WriteLine("\"parent\" is a senior");
    else
       Console::WriteLine("\"parent\" is not a senior");
 
-   if (ageGuess->isSenior<Senior^>(grandfather))  
+   if (ageGuess->isSenior<Senior^>(grandfather))
       Console::WriteLine("\"grandfather\" is a senior");
    else
       Console::WriteLine("\"grandfather\" is not a senior");

@@ -84,7 +84,7 @@ This method calls the [WindowsDuplicateString](https://msdn.microsoft.com/librar
 Retrieves the value of the underlying HSTRING handle.
 
 ```cpp
-HSTRING Get() const throw()  
+HSTRING Get() const throw()
 ```
 
 ### Return Value
@@ -133,7 +133,7 @@ The third constructor initializes a new `HStringReference` object to the value o
 Moves the value of another `HStringReference` object to the current `HStringReference` object.
 
 ```cpp
-HStringReference& operator=(HStringReference&& other) throw()  
+HStringReference& operator=(HStringReference&& other) throw()
 ```
 
 ### Parameters
@@ -160,7 +160,7 @@ inline bool operator==(
 
 inline bool operator==(
                const HStringReference& lhs,
-               const HSTRING& rhs) throw()  
+               const HSTRING& rhs) throw()
 ```
 
 ### Parameters
@@ -190,7 +190,7 @@ inline bool operator!=(
 
 inline bool operator!=(
                const HStringReference& lhs,
-               const HSTRING& rhs) throw()  
+               const HSTRING& rhs) throw()
 ```
 
 ### Parameters
@@ -212,7 +212,7 @@ Indicates whether the first parameter is less than the second parameter.
 ```cpp
 inline bool operator<(
     const HStringReference& lhs,
-    const HStringReference& rhs) throw()  
+    const HStringReference& rhs) throw()
 ```
 
 ### Parameters

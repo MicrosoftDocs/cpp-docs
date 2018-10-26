@@ -161,7 +161,7 @@ The following customization tips pertain to the `CBasePane Class` and any classe
 
     - AFX_CBRS_CLOSE enables the pane to be closed (hidden).
 
-     These are flags that you can combine with a bitwise-OR operation.
+   These are flags that you can combine with a bitwise-OR operation.
 
 `CBasePane` implements the following virtual Boolean methods to reflect these flags: [CBasePane::CanBeClosed](#canbeclosed), [CBasePane::CanAutoHide](#canautohide), [CBasePane::CanFloat](#canfloat). You can override them in derived classes to customize their behavior.
 
@@ -1472,8 +1472,8 @@ virtual void OnMovePaneDivider(CPaneDivider*);
 
 ### Parameters
 
-[in] *CPaneDivider\**
-Not used.
+*CPaneDivider\**<br/>
+[in] Not used.
 
 ##  <a name="onpanecontextmenu"></a>  CBasePane::OnPaneContextMenu
 

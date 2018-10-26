@@ -14,45 +14,45 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # CNoRowset Class
 
-Can be used as a template argument (`TRowset`) for [CCommand](../../data/oledb/ccommand-class.md) or [CTable](../../data/oledb/ctable-class.md).  
-  
+Can be used as a template argument (`TRowset`) for [CCommand](../../data/oledb/ccommand-class.md) or [CTable](../../data/oledb/ctable-class.md).
+
 ## Syntax
 
 ```cpp
-template <class TAccessor = CAccessorBase>  
-class CNoRowset  
-```  
-  
-### Parameters  
+template <class TAccessor = CAccessorBase>
+class CNoRowset
+```
+
+### Parameters
 
 *TAccessor*<br/>
-An accessor class. The default is `CAccessorBase`.  
-  
-## Remarks  
+An accessor class. The default is `CAccessorBase`.
 
-Use `CNoRowset` as a template argument if the command does not return a rowset.  
-  
-`CNoRowset` implements the following stub methods, each of which correspond to other accessor class methods:  
-  
-- `BindFinished` - Indicates when binding is complete (returns `S_OK`).  
-  
-- `Close` - Releases rows and the current IRowset interface.  
-  
-- `GetIID` - Retrieves the interface ID of a connection point.  
-  
-- `GetInterface` - Retrieves an interface.  
-  
-- `GetInterfacePtr` - Retrieves an encapsulated interface pointer.  
-  
-- `SetAccessor` - Sets a pointer to the accessor.  
-  
-- `SetupOptionalRowsetInterfaces` - Sets up optional interfaces for the rowset.  
-  
-## Requirements  
+## Remarks
 
-**Header:** atldbcli.h  
-  
-## See Also  
+Use `CNoRowset` as a template argument if the command does not return a rowset.
+
+`CNoRowset` implements the following stub methods, each of which correspond to other accessor class methods:
+
+- `BindFinished` - Indicates when binding is complete (returns `S_OK`).
+
+- `Close` - Releases rows and the current IRowset interface.
+
+- `GetIID` - Retrieves the interface ID of a connection point.
+
+- `GetInterface` - Retrieves an interface.
+
+- `GetInterfacePtr` - Retrieves an encapsulated interface pointer.
+
+- `SetAccessor` - Sets a pointer to the accessor.
+
+- `SetupOptionalRowsetInterfaces` - Sets up optional interfaces for the rowset.
+
+## Requirements
+
+**Header:** atldbcli.h
+
+## See Also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

@@ -31,13 +31,13 @@ To add more capabilities than `CString`, `CStringA`, or `CStringW` currently off
 
 The following code shows how to create a `CString` and print it to standard output:
 
-```cpp  
+```cpp
 #include <atlstr.h>
 
-int main() {  
-    CString aCString = CString(_T("A string"));  
-    _tprintf(_T("%s"), (LPCTSTR) aCString);  
-}  
+int main() {
+    CString aCString = CString(_T("A string"));
+    _tprintf(_T("%s"), (LPCTSTR) aCString);
+}
 ```
 
 ## In This Section

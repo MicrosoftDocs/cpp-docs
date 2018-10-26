@@ -19,7 +19,7 @@ Similar to the Windows `POINT` structure.
 ## Syntax
 
 ```
-class CPoint : public tagPOINT 
+class CPoint : public tagPOINT
 ```
 
 ## Members
@@ -104,25 +104,25 @@ If no arguments are given, `x` and `y` members are set to 0.
 
 ### Example
 
-```cpp   
-CPoint   ptTopLeft(0, 0); 
+```cpp
+CPoint   ptTopLeft(0, 0);
 // works from a POINT, too
 
-POINT   ptHere;  
-ptHere.x = 35;  
+POINT   ptHere;
+ptHere.x = 35;
 ptHere.y = 95;
 
 CPoint   ptMFCHere(ptHere);
 
-// works from a SIZE 
-SIZE   sHowBig;  
-sHowBig.cx = 300;  
+// works from a SIZE
+SIZE   sHowBig;
+sHowBig.cx = 300;
 sHowBig.cy = 10;
 
-CPoint ptMFCBig(sHowBig); 
+CPoint ptMFCBig(sHowBig);
 // or from a DWORD
 
-DWORD   dwSize;  
+DWORD   dwSize;
 dwSize = MAKELONG(35, 95);
 
 CPoint ptFromDouble(dwSize);
@@ -204,7 +204,7 @@ Nonzero if the points are not equal; otherwise 0.
 The first overload adds a size to the `CPoint`.
 
 ```
-void operator+=(SIZE size) throw(); 
+void operator+=(SIZE size) throw();
 void operator+=(POINT point) throw();
 ```
 
@@ -233,7 +233,7 @@ For example, adding `CPoint(5, -7)` to a variable which contains `CPoint(30, 40)
 The first overload subtracts a size from the `CPoint`.
 
 ```
-void operator-=(SIZE size) throw(); 
+void operator-=(SIZE size) throw();
 void operator-=(POINT point) throw();
 ```
 

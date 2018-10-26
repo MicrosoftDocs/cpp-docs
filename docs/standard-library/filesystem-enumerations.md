@@ -57,7 +57,6 @@ enum class copy_options {
 |`create_symlinks`|Make symbolic links instead of copying files. An absolute path must be used as the source path unless the destination is the current directory.|
 |`create_hard_links`|Make hard links instead of copying files.|
 
-
 ## <a name="directory_options"></a> directory_options
 
 Specifies whether to follow symbolic links to directories or to ignore them.

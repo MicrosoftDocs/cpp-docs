@@ -22,7 +22,7 @@ You can also use included symbol files when you have existing resources with sym
 
 ```cpp
 #define   IDC_CONTROL1 2100
-#define   IDC_CONTROL2 (IDC_CONTROL1+1)  
+#define   IDC_CONTROL2 (IDC_CONTROL1+1)
 ```
 
 The environment will correctly interpret these calculated symbols as long as:

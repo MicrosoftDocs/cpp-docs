@@ -40,7 +40,7 @@ At this point you can test your control's properties or events.
 
 1. Click **Invoke** to apply the new value to the object.
 
-     The property now contains the new value.
+   The property now contains the new value.
 
 #### To test events and specify the destination of event information.
 

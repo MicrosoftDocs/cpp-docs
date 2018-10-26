@@ -315,5 +315,3 @@ This member function implements the behavior of the Win32 message [IPM_SETRANGE]
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

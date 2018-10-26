@@ -143,7 +143,6 @@ By using a `CMFCShellListCtrl` object together with a `CMFCShellTreeCtrl` object
 
 ##  <a name="onchildnotify"></a>  CMFCShellTreeCtrl::OnChildNotify
 
-
 ```
 virtual BOOL OnChildNotify(
     UINT message,
@@ -154,17 +153,16 @@ virtual BOOL OnChildNotify(
 
 ### Parameters
 
-*message*<br/>
-[in] [in] *wParam*
-*lParam*<br/>
-[in] [in] *pLResult*
+[in] *message*<br/>
+[in] *wParam*<br/>
+[in] *lParam*<br/>
+[in] *pLResult*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="ongetitemicon"></a>  CMFCShellTreeCtrl::OnGetItemIcon
-
 
 ```
 virtual int OnGetItemIcon(
@@ -174,8 +172,8 @@ virtual int OnGetItemIcon(
 
 ### Parameters
 
-*pItem*<br/>
-[in] [in] *bSelected*
+[in] *pItem*<br/>
+[in] *bSelected*<br/>
 
 ### Return Value
 
@@ -183,14 +181,13 @@ virtual int OnGetItemIcon(
 
 ##  <a name="ongetitemtext"></a>  CMFCShellTreeCtrl::OnGetItemText
 
-
 ```
 virtual CString OnGetItemText(LPAFX_SHELLITEMINFO pItem);
 ```
 
 ### Parameters
 
-[in] *pItem*
+[in] *pItem*<br/>
 
 ### Return Value
 

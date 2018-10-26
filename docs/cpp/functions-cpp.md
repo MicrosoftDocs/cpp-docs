@@ -87,7 +87,7 @@ Optional parts of a function declaration are:
 
     ```
 
-     For more information, see [Program and Linkage](../cpp/program-and-linkage-cpp.md).
+   For more information, see [Program and Linkage](../cpp/program-and-linkage-cpp.md).
 
 1. **inline**, which instructs the compiler to replace every call to the function with the function code itself. inlining can help performance in scenarios where a function executes quickly and is invoked repeatedly in a performance-critical section of code.
 
@@ -98,7 +98,7 @@ Optional parts of a function declaration are:
     }
     ```
 
-     For more information, see [Inline Functions](../cpp/inline-functions-cpp.md).
+   For more information, see [Inline Functions](../cpp/inline-functions-cpp.md).
 
 1. A `noexcept` expression, which specifies whether or not the function can throw an exception. In the following example, the function does not throw an exception if the `is_pod` expression evaluates to **true**.
 
@@ -109,7 +109,7 @@ Optional parts of a function declaration are:
     T copy_object(T& obj) noexcept(std::is_pod<T>) {...}
     ```
 
-     For more information, see [noexcept](../cpp/noexcept-cpp.md).
+   For more information, see [noexcept](../cpp/noexcept-cpp.md).
 
 1. (Member functions only) The cv-qualifiers, which specify whether the function is **const** or **volatile**.
 
@@ -250,7 +250,6 @@ auto Add(const Lhs& lhs, const Rhs& rhs) -> decltype(lhs + rhs)
 ```
 
 When **auto** is used in conjunction with a trailing return type, it just serves as a placeholder for whatever the decltype expression produces, and does not itself perform type deduction.
-
 
 ## Function local variables
 

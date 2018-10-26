@@ -50,11 +50,11 @@ These macros define message maps and entries.
 |[REFLECTED_NOTIFY_HANDLER](#reflected_notify_handler)|Maps a reflected WM_NOTIFY message to a handler function, based on the notification code and the control identifier.|
 |[REFLECTED_NOTIFY_ID_HANDLER](#reflected_notify_id_handler)|Maps a reflected WM_NOTIFY message to a handler function, based on the control identifier.|
 |[REFLECTED_NOTIFY_RANGE_CODE_HANDLER](#reflected_notify_range_code_handler)|Maps a reflected WM_NOTIFY message to a handler function, based on the notification code and a contiguous range of control identifiers.|
-|[REFLECTED_NOTIFY_RANGE_HANDLER](#reflected_notify_range_handler)|Maps a reflected WM_NOTIFY message to a handler function, based on a contiguous range of control identifiers.|  
+|[REFLECTED_NOTIFY_RANGE_HANDLER](#reflected_notify_range_handler)|Maps a reflected WM_NOTIFY message to a handler function, based on a contiguous range of control identifiers.|
 
 ## Requirements
 
-**Header:** atlwin.h  
+**Header:** atlwin.h
 
 ##  <a name="alt_msg_map"></a>  ALT_MSG_MAP
 
@@ -93,7 +93,7 @@ The next example shows two alternate message maps. The default message map is em
 
 ### Requirements
 
-**Header:** atlwin.h   
+**Header:** atlwin.h
 
 ##  <a name="begin_msg_map"></a>  BEGIN_MSG_MAP
 
@@ -110,7 +110,7 @@ BEGIN_MSG_MAP(theClass)
 
 ### Remarks
 
-[CWindowImpl::WindowProc](cwindowimpl-class.md#windowproc) uses the default message map to process messages sent to the window. The message map directs messages either to the appropriate handler function or to another message map.  
+[CWindowImpl::WindowProc](cwindowimpl-class.md#windowproc) uses the default message map to process messages sent to the window. The message map directs messages either to the appropriate handler function or to another message map.
 
 The following macros map a message to a handler function. This function must be defined in *theClass*.
 
@@ -285,7 +285,7 @@ CHAIN_MSG_MAP_DYNAMIC(dynaChainID)
 
 ### Remarks
 
-CHAIN_MSG_MAP_DYNAMIC directs messages, at run time, to the default message map in another object. The object and its message map are associated with *dynaChainID*, which you define through [CDynamicChain::SetChainEntry](cdynamicchain-class.md#setchainentry). You must derive your class from `CDynamicChain` in order to use CHAIN_MSG_MAP_DYNAMIC. For an example, see the [CDynamicChain](../../atl/reference/cdynamicchain-class.md) overview.  
+CHAIN_MSG_MAP_DYNAMIC directs messages, at run time, to the default message map in another object. The object and its message map are associated with *dynaChainID*, which you define through [CDynamicChain::SetChainEntry](cdynamicchain-class.md#setchainentry). You must derive your class from `CDynamicChain` in order to use CHAIN_MSG_MAP_DYNAMIC. For an example, see the [CDynamicChain](../../atl/reference/cdynamicchain-class.md) overview.
 
 > [!NOTE]
 >  Always begin a message map with [BEGIN_MSG_MAP](#begin_msg_map). You can then declare subsequent alternate message maps with ALT_MSG_MAP. The [END_MSG_MAP](#end_msg_map) macro marks the end of the message map. Every message map must have exactly one instance of BEGIN_MSG_MAP and END_MSG_MAP.
@@ -780,7 +780,7 @@ REFLECTED_COMMAND_CODE_HANDLER( code, func )
 [in] The notification code.
 
 *func*<br/>
-[in] The name of the message-handler function.  
+[in] The name of the message-handler function.
 
 ### Requirements
 
@@ -803,11 +803,11 @@ REFLECTED_COMMAND_HANDLER( id, code, func )
 [in] The notification code.
 
 *func*<br/>
-[in] The name of the message-handler function.  
+[in] The name of the message-handler function.
 
 ### Requirements
 
-**Header:** atlwin.h  
+**Header:** atlwin.h
 
 ##  <a name="reflected_command_id_handler"></a>  REFLECTED_COMMAND_ID_HANDLER
 
@@ -823,11 +823,11 @@ REFLECTED_COMMAND_ID_HANDLER( id, func )
 [in] The identifier of the menu item, control, or accelerator.
 
 *func*<br/>
-[in] The name of the message-handler function.  
+[in] The name of the message-handler function.
 
 ### Requirements
 
-**Header:** atlwin.h  
+**Header:** atlwin.h
 
 ##  <a name="reflected_command_range_code_handler"></a>  REFLECTED_COMMAND_RANGE_CODE_HANDLER
 
@@ -849,11 +849,11 @@ REFLECTED_COMMAND_RANGE_CODE_HANDLER( idFirst, idLast, code, func )
 [in] The notification code.
 
 *func*<br/>
-[in] The name of the message-handler function.  
+[in] The name of the message-handler function.
 
 ### Requirements
 
-**Header:** atlwin.h  
+**Header:** atlwin.h
 
 ##  <a name="reflected_command_range_handler"></a>  REFLECTED_COMMAND_RANGE_HANDLER
 
@@ -872,11 +872,11 @@ REFLECTED_COMMAND_RANGE_HANDLER( idFirst, idLast, func )
 [in] Marks the end of a contiguous range of control identifiers.
 
 *func*<br/>
-[in] The name of the message-handler function.  
+[in] The name of the message-handler function.
 
 ### Requirements
 
-**Header:** atlwin.h  
+**Header:** atlwin.h
 
 ##  <a name="reflected_notify_code_handler"></a>  REFLECTED_NOTIFY_CODE_HANDLER
 
@@ -892,11 +892,11 @@ REFLECTED_NOTIFY_CODE_HANDLER_EX( cd, func )
 [in] The notification code.
 
 *func*<br/>
-[in] The name of the message-handler function.  
+[in] The name of the message-handler function.
 
 ### Requirements
 
-**Header:** atlwin.h  
+**Header:** atlwin.h
 
 ##  <a name="reflected_notify_handler"></a>  REFLECTED_NOTIFY_HANDLER
 
@@ -915,11 +915,11 @@ REFLECTED_NOTIFY_HANDLER( id, cd, func )
 [in] The notification code.
 
 *func*<br/>
-[in] The name of the message-handler function.  
+[in] The name of the message-handler function.
 
 ### Requirements
 
-**Header:** atlwin.h  
+**Header:** atlwin.h
 
 ##  <a name="reflected_notify_id_handler"></a>  REFLECTED_NOTIFY_ID_HANDLER
 
@@ -935,11 +935,11 @@ REFLECTED_NOTIFY_ID_HANDLER( id, func )
 [in] The identifier of the menu item, control, or accelerator.
 
 *func*<br/>
-[in] The name of the message-handler function.  
+[in] The name of the message-handler function.
 
 ### Requirements
 
-**Header:** atlwin.h  
+**Header:** atlwin.h
 
 ##  <a name="reflected_notify_range_code_handler"></a>  REFLECTED_NOTIFY_RANGE_CODE_HANDLER
 

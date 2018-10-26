@@ -26,7 +26,7 @@ A declaration introduces one or more names into a program. Declarations can occu
 
 1. Is of a static data member inside a class declaration.
 
-     Because static class data members are discrete variables shared by all objects of the class, they must be defined and initialized outside the class declaration. (For more information about classes and class members, see [Classes](../cpp/classes-and-structs-cpp.md).)
+   Because static class data members are discrete variables shared by all objects of the class, they must be defined and initialized outside the class declaration. (For more information about classes and class members, see [Classes](../cpp/classes-and-structs-cpp.md).)
 
 1. Is a class name declaration with no following definition, such as `class T;`.
 

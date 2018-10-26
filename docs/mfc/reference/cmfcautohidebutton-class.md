@@ -1,7 +1,7 @@
 ---
 title: "CMFCAutoHideButton Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCAutoHideButton", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::BringToTop", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::Create", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetAlignment", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetAutoHideWindow", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetParentToolBar", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetRect", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetSize", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetTextSize", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::HighlightButton", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsActive", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsHighlighted", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsHorizontal", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsTop", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsVisible", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::Move", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::OnDraw", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::OnDrawBorder", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::OnFillBackground", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::ReplacePane", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::ShowAttachedWindow", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::ShowButton", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::UnSetAutoHideMode"]
@@ -17,6 +17,7 @@ ms.workload: ["cplusplus"]
 A button that displays or hides a [CDockablePane Class](../../mfc/reference/cdockablepane-class.md) that is configured to hide.
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
+
 ## Syntax
 
 ```
@@ -75,7 +76,6 @@ The following example demonstrates how to construct a `CMFCAutoHideButton` objec
 **Header:** afxautohidebutton.h
 
 ##  <a name="bringtotop"></a>  CMFCAutoHideButton::BringToTop
-
 
 ```
 void BringToTop();
@@ -165,7 +165,6 @@ To associate an auto-hide button with a `CDockablePane`, pass the `CDockablePane
 
 ##  <a name="getparenttoolbar"></a>  CMFCAutoHideButton::GetParentToolBar
 
-
 ```
 CMFCAutoHideBar* GetParentToolBar();
 ```
@@ -175,7 +174,6 @@ CMFCAutoHideBar* GetParentToolBar();
 ### Remarks
 
 ##  <a name="getrect"></a>  CMFCAutoHideButton::GetRect
-
 
 ```
 CRect GetRect() const;
@@ -246,7 +244,6 @@ Nonzero if the button is horizontal; 0 otherwise.
 The framework sets the orientation of a [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) object when you create it.  You can control the orientation by using the *dwAlignment* parameter in the [CMFCAutoHideButton::Create](#create) method.
 
 ##  <a name="istop"></a>  CMFCAutoHideButton::IsTop
-
 
 ```
 BOOL IsTop() const;
@@ -361,19 +358,17 @@ virtual void ShowButton(BOOL bShow);
 
 ##  <a name="move"></a>  CMFCAutoHideButton::Move
 
-
 ```
 void Move(int nOffset);
 ```
 
 ### Parameters
 
-[in] *nOffset*
+[in] *nOffset*<br/>
 
 ### Remarks
 
 ##  <a name="replacepane"></a>  CMFCAutoHideButton::ReplacePane
-
 
 ```
 void ReplacePane(CDockablePane* pNewBar);
@@ -381,7 +376,7 @@ void ReplacePane(CDockablePane* pNewBar);
 
 ### Parameters
 
-[in] *pNewBar*
+[in] *pNewBar*<br/>
 
 ### Remarks
 

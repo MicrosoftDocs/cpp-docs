@@ -21,27 +21,27 @@ This option is available for nonattributed ATL DLL projects only.
 ```
 class CProjNameApp : public CWinApp
 {
-public:  
+public:
 
-// Overrides  
+// Overrides
     virtual BOOL InitInstance();
 virtual int ExitInstance();
 DECLARE_MESSAGE_MAP()
-};  
+};
 
 BEGIN_MESSAGE_MAP(CProjNameApp, CWinApp)
-END_MESSAGE_MAP()  
+END_MESSAGE_MAP()
 
-CProjNameApp theApp;  
+CProjNameApp theApp;
 
 BOOL CProjNameApp::InitInstance()
-{  
+{
     return CWinApp::InitInstance();
 
-}  
+}
 
 int CProjNameApp::ExitInstance()
-{  
+{
     return CWinApp::ExitInstance();
 
 }

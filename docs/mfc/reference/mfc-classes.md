@@ -1306,5 +1306,3 @@ Supports arrays of 16-bit words.
 [MFC Desktop Applications](../../mfc/mfc-desktop-applications.md)<br/>
 Contains links to topics about the classes, global functions, global variables, and macros that make up the MFC Library.
 
-
-

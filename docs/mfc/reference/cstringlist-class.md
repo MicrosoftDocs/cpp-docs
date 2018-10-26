@@ -98,5 +98,3 @@ For more information on using `CStringList`, see the article [Collections](../..
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

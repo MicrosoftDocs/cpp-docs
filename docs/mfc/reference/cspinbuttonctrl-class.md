@@ -353,7 +353,6 @@ void SetRange(
     short nLower,
     short nUpper);
 
-
 void SetRange32(
     int nLower,
     int nUpper);

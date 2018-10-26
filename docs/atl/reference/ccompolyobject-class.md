@@ -131,8 +131,8 @@ Frees all allocated resources, calls [FinalRelease](#finalrelease), and decremen
 Allows you to create a new **CComPolyObject<**`contained` **>** object without the overhead of [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).
 
 ```
-static HRESULT WINAPI CreateInstance(  
-    LPUNKNOWN pUnkOuter, 
+static HRESULT WINAPI CreateInstance(
+    LPUNKNOWN pUnkOuter,
     CComPolyObject<contained>** pp);
 ```
 

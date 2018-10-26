@@ -114,7 +114,6 @@ Selects the font that matches the specified criteria from the font combo box.
 ```
 BOOL SelectFont(CMFCFontInfo* pDesc);
 
-
 BOOL SelectFont(
     LPCTSTR lpszName,
     BYTE nCharSet=DEFAULT_CHARSET);

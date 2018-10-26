@@ -74,7 +74,7 @@ Contains one or more of the following flags:
 
 - `afxRegFreeThreading` Sets the threading model in the registry to ThreadingModel=Free.
 
-     You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](/windows/desktop/com/inprocserver32) in the Windows SDK for more information on threading model registration.
+   You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](/windows/desktop/com/inprocserver32) in the Windows SDK for more information on threading model registration.
 
 > [!NOTE]
 >  In MFC versions before MFC 4.2, the **int** *nRegFlags* parameter was a BOOL parameter, *bInsertable*, that allowed or disallowed the control to be inserted from the Insert Object dialog box.

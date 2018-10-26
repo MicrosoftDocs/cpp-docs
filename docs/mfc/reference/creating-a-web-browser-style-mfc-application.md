@@ -71,4 +71,3 @@ void CWebView::OnInitialUpdate()
 [Property Pages](../../ide/property-pages-visual-cpp.md)<br/>
 [Working with Project Properties](../../ide/working-with-project-properties.md)
 
-

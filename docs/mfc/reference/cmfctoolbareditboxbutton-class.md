@@ -647,5 +647,3 @@ This method sets [CMFCToolBarButton::m_nStyle](../../mfc/reference/cmfctoolbarbu
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
 [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
 
-
-

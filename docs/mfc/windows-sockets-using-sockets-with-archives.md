@@ -36,7 +36,7 @@ Using a `CSocket` object involves creating and associating together several MFC 
 
 1. Use the object to create the underlying **SOCKET** handle.
 
-     For a `CSocket` client object, you should normally use the default parameters to [Create](../mfc/reference/casyncsocket-class.md#create), unless you need a datagram socket. For a `CSocket` server object, you must specify a port in the `Create` call.
+   For a `CSocket` client object, you should normally use the default parameters to [Create](../mfc/reference/casyncsocket-class.md#create), unless you need a datagram socket. For a `CSocket` server object, you must specify a port in the `Create` call.
 
     > [!NOTE]
     >  `CArchive` does not work with datagram sockets. If you want to use `CSocket` for a datagram socket, you must use the class as you would use `CAsyncSocket`, that is, without an archive. Because datagrams are unreliable (not guaranteed to arrive and may be repeated or out of sequence), they are not compatible with serialization through an archive. You expect a serialization operation to complete reliably and in sequence. If you try to use `CSocket` with a `CArchive` object for a datagram, an MFC assertion fails.
@@ -45,7 +45,7 @@ Using a `CSocket` object involves creating and associating together several MFC 
 
      -or-
 
-     If the socket is a server, call [CAsyncSocket::Listen](../mfc/reference/casyncsocket-class.md#listen) to begin listening for connect attempts from a client. Upon receiving a connection request, accept it by calling [CAsyncSocket::Accept](../mfc/reference/casyncsocket-class.md#accept).
+   If the socket is a server, call [CAsyncSocket::Listen](../mfc/reference/casyncsocket-class.md#listen) to begin listening for connect attempts from a client. Upon receiving a connection request, accept it by calling [CAsyncSocket::Accept](../mfc/reference/casyncsocket-class.md#accept).
 
     > [!NOTE]
     >  The `Accept` member function takes a reference to a new, empty `CSocket` object as its parameter. You must construct this object before you call `Accept`. If this socket object goes out of scope, the connection closes. Do not call `Create` for this new socket object.
@@ -54,13 +54,13 @@ Using a `CSocket` object involves creating and associating together several MFC 
 
 1. Create a [CArchive](../mfc/reference/carchive-class.md) object for either loading (receiving) or storing (sending) data. The archive is associated with the `CSocketFile` object.
 
-     Keep in mind that `CArchive` does not work with datagram sockets.
+   Keep in mind that `CArchive` does not work with datagram sockets.
 
 1. Use the `CArchive` object to pass data between the client and server sockets.
 
-     Keep in mind that a given `CArchive` object moves data in one direction only: either for loading (receiving) or storing (sending). In some cases, you will use two `CArchive` objects: one for sending data, the other for receiving acknowledgments.
+   Keep in mind that a given `CArchive` object moves data in one direction only: either for loading (receiving) or storing (sending). In some cases, you will use two `CArchive` objects: one for sending data, the other for receiving acknowledgments.
 
-     After accepting a connection and setting up the archive, you can perform such tasks as validating passwords.
+   After accepting a connection and setting up the archive, you can perform such tasks as validating passwords.
 
 1. Destroy the archive, socket file, and socket objects.
 

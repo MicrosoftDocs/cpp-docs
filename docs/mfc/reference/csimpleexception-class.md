@@ -118,5 +118,3 @@ For more information, see [CException::GetErrorMessage](../../mfc/reference/cfil
 [CException Class](../../mfc/reference/cexception-class.md)<br/>
 [Exception Handling](../../mfc/exception-handling-in-mfc.md)
 
-
-

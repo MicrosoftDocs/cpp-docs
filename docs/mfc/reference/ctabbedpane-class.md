@@ -150,9 +150,9 @@ virtual BOOL DetachPane(
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
-[in] *bHide*
+[in] *bHide*<br/>
 
 ### Return Value
 
@@ -191,10 +191,10 @@ virtual BOOL FloatTab(
 
 ### Parameters
 
-*pBar*<br/>
-[in] [in] *nTabID*
-*dockMethod*<br/>
-[in] [in] *bHide*
+[in] *pBar*<br/>
+[in] *nTabID*<br/>
+[in] *dockMethod*<br/>
+[in] *bHide*<br/>
 
 ### Return Value
 

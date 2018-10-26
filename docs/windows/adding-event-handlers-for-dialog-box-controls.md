@@ -69,4 +69,4 @@ Win32
 [Adding a Member Function](../ide/adding-a-member-function-visual-cpp.md)<br/>
 [Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)<br/>
 [Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
-[MFC Message Handler](../mfc/reference/adding-an-mfc-message-handler.md)  
+[MFC Message Handler](../mfc/reference/adding-an-mfc-message-handler.md)

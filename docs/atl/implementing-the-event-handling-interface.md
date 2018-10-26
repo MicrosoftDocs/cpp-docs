@@ -25,7 +25,7 @@ The most common ways of implementing an interface using ATL are:
 
 - Deriving from [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) for dispinterfaces not described in a type library or when you want to improve efficiency by not loading the type information at run time.
 
-If you are implementing a custom or dual interface, you should advise the event source by calling [AtlAdvise](reference/connection-point-global-functions.md#atladvise) or [CComPtrBase::Advise](../atl/reference/ccomptrbase-class.md#advise). You will need to keep track of the cookie returned by the call yourself. Call [AtlUnadvise](reference/connection-point-global-functions.md#atlunadvise) to break the connection.  
+If you are implementing a custom or dual interface, you should advise the event source by calling [AtlAdvise](reference/connection-point-global-functions.md#atladvise) or [CComPtrBase::Advise](../atl/reference/ccomptrbase-class.md#advise). You will need to keep track of the cookie returned by the call yourself. Call [AtlUnadvise](reference/connection-point-global-functions.md#atlunadvise) to break the connection.
 
 If you are implementing a dispinterface using `IDispEventImpl` or `IDispEventSimpleImpl`, you should advise the event source by calling [IDispEventSimpleImpl::DispEventAdvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventadvise). Call [IDispEventSimpleImpl::DispEventUnadvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventunadvise) to break the connection.
 
@@ -36,4 +36,3 @@ The `IDispEventImpl` and `IDispEventSimpleImpl` classes manage the cookie for yo
 ## See Also
 
 [Event Handling](../atl/event-handling-and-atl.md)
-

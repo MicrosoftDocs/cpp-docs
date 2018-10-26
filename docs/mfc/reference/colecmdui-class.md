@@ -132,5 +132,3 @@ A pointer to the text to be used with the command.
 [CCmdUI Class](../../mfc/reference/ccmdui-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

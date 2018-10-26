@@ -155,5 +155,3 @@ operator HINTERNET() const;
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

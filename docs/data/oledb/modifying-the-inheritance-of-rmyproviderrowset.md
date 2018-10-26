@@ -13,10 +13,10 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Modifying the Inheritance of RCustomRowset
 
-To add the `IRowsetLocate` interface to the simple read-only provider example, modify the inheritance of `RCustomRowset`. Initially, `RCustomRowset` inherits from `CRowsetImpl`. You need to modify it to inherit from `CRowsetBaseImpl`.  
-  
-To do this, create a new class, `CMyRowsetImpl`, in *Custom*RS.h:  
-  
+To add the `IRowsetLocate` interface to the simple read-only provider example, modify the inheritance of `RCustomRowset`. Initially, `RCustomRowset` inherits from `CRowsetImpl`. You need to modify it to inherit from `CRowsetBaseImpl`.
+
+To do this, create a new class, `CCustomRowsetImpl`, in CustomRS.h:
+
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
 // CustomRS.h  

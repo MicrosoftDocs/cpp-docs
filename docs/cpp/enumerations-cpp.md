@@ -141,7 +141,6 @@ Notice that the line `hand = account_num;` still causes the error that occurs wi
 
 **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): By defining an enum (regular or scoped) with an explicit underlying type and no enumerators, you can in effect introduce a new integral type that has no implicit conversion to any other type. By using this type instead of its built-in underlying type, you can eliminate the potential for subtle errors caused by inadvertent implicit conversions.
 
-
 ```cpp
 enum class byte : unsigned char { };
 ```

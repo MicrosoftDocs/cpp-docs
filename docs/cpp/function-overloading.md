@@ -115,7 +115,6 @@ The default argument is not considered part of the function type. Therefore, it 
 
 Default arguments cannot be supplied for overloaded operators.
 
-
 ## Argument Matching
 
 Overloaded functions are selected for the best match of function declarations in the current scope to the arguments supplied in the function call. If a suitable function is found, that function is called. "Suitable" in this context means one of the following:
@@ -461,7 +460,7 @@ You can overload **operator new** solely on the basis of return type — specifi
     void Print( PSTR szToPrint );
     ```
 
-     The preceding two functions have identical argument lists. `PSTR` is a synonym for type `char *`. In member scope, this code generates an error.
+   The preceding two functions have identical argument lists. `PSTR` is a synonym for type `char *`. In member scope, this code generates an error.
 
 - Enumerated types are distinct types and can be used to distinguish between overloaded functions.
 
@@ -472,7 +471,7 @@ You can overload **operator new** solely on the basis of return type — specifi
     void Print( char szToPrint[] );
     ```
 
-     For multiply dimensioned arrays, the second and all succeeding dimensions are considered part of the type. Therefore, they are used in distinguishing between overloaded functions:
+   For multiply dimensioned arrays, the second and all succeeding dimensions are considered part of the type. Therefore, they are used in distinguishing between overloaded functions:
 
     ```cpp
     void Print( char szToPrint[] );

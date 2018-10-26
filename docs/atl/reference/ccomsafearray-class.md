@@ -67,7 +67,7 @@ The type of data to be stored in the array.
 |----------|-----------------|
 |[CComSafeArray::operator LPSAFEARRAY](#operator_lpsafearray)|Casts a value to a `SAFEARRAY` pointer.|
 |[CComSafeArray::operator\[\]](ccomsafearray-class.md#operator_at)|Retrieves an element from the array.|
-|[CComSafeArray::operator =](#operator_eq)|Assignment operator.|  
+|[CComSafeArray::operator =](#operator_eq)|Assignment operator.|
 
 ### Public Data Members
 

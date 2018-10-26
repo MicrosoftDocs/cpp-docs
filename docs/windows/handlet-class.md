@@ -161,7 +161,7 @@ Initializes a new instance of the `HandleT` class.
 ```cpp
 explicit HandleT(
    typename HandleTraits::Type h =
-      HandleTraits::GetInvalidValue()  
+      HandleTraits::GetInvalidValue()
 );
 
 HandleT(

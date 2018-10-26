@@ -24,7 +24,7 @@ These macros define useful type library and registry facilities.
 |[DECLARE_REGISTRY](#declare_registry)|Enters or removes the main object's entry in the system registry.|
 |[DECLARE_REGISTRY_APPID_RESOURCEID](#declare_registry_appid_resourceid)|Specifies the information required to automatically register the *appid*.|
 |[DECLARE_REGISTRY_RESOURCE](#declare_registry_resource)|Finds the named resource and runs the registry script within it.|
-|[DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid)|Finds the resource identified by an ID number and runs the registry script within it.|  
+|[DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid)|Finds the resource identified by an ID number and runs the registry script within it.|
 
 ## Requirements
 
@@ -79,10 +79,10 @@ Enters the standard class registration into the system registry or removes it fr
 
 ```
 DECLARE_REGISTRY(
-    class, 
-    pid, 
-    vpid, 
-    nid, 
+    class,
+    pid,
+    vpid,
+    nid,
     flags )
 ```
 
@@ -115,7 +115,7 @@ Specifies the information required to automatically register the *appid*.
 
 ```
 DECLARE_REGISTRY_APPID_RESOURCEID(
-    resid, 
+    resid,
     appid )
 ```
 
@@ -156,7 +156,7 @@ You can statically link with the ATL Registry Component (Registrar) for optimize
 
 [!code-cpp[NVC_ATL_COM#56](../../atl/codesnippet/cpp/registry-macros_2.h)]
 
-If you want ATL to substitute replacement values at run time, do not specify the DECLARE_REGISTRY_RESOURCE or DECLARE_REGISTRY_RESOURCEID macro. Instead, create an array of `_ATL_REGMAP_ENTRIES` structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) or [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), passing the array. This adds all of the replacement values in the `_ATL_REGMAP_ENTRIES` structures to the Registrar's replacement map.  
+If you want ATL to substitute replacement values at run time, do not specify the DECLARE_REGISTRY_RESOURCE or DECLARE_REGISTRY_RESOURCEID macro. Instead, create an array of `_ATL_REGMAP_ENTRIES` structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) or [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), passing the array. This adds all of the replacement values in the `_ATL_REGMAP_ENTRIES` structures to the Registrar's replacement map.
 
 For more information about replaceable parameters and scripting, see the article [The ATL Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md).
 
@@ -181,7 +181,7 @@ You can statically link with the ATL Registry Component (Registrar) for optimize
 
 [!code-cpp[NVC_ATL_COM#56](../../atl/codesnippet/cpp/registry-macros_2.h)]
 
-If you want ATL to substitute replacement values at run time, do not specify the DECLARE_REGISTRY_RESOURCE or DECLARE_REGISTRY_RESOURCEID macro. Instead, create an array of `_ATL_REGMAP_ENTRIES` structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) or [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), passing the array. This adds all of the replacement values in the `_ATL_REGMAP_ENTRIES` structures to the Registrar's replacement map.  
+If you want ATL to substitute replacement values at run time, do not specify the DECLARE_REGISTRY_RESOURCE or DECLARE_REGISTRY_RESOURCEID macro. Instead, create an array of `_ATL_REGMAP_ENTRIES` structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) or [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), passing the array. This adds all of the replacement values in the `_ATL_REGMAP_ENTRIES` structures to the Registrar's replacement map.
 
 For more information about replaceable parameters and scripting, see the article [The ATL Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md).
 

@@ -75,7 +75,7 @@ For more information about message map chaining, see [Message Maps](../../atl/me
 Directs the Windows message to another object's message map.
 
 ```
-BOOL CallChain(  
+BOOL CallChain(
     DWORD dwChainID,
     HWND hWnd,
     UINT uMsg,
@@ -156,7 +156,7 @@ TRUE if the message map is successfully removed from the collection. Otherwise, 
 Adds the specified message map to the collection.
 
 ```
-BOOL SetChainEntry(  
+BOOL SetChainEntry(
     DWORD dwChainID,
     CMessageMap* pObject,
     DWORD dwMsgMapID = 0);

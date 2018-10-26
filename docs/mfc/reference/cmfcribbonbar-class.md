@@ -1302,7 +1302,6 @@ virtual void OnClickButton(
 
 ##  <a name="oneditcontextmenu"></a>  CMFCRibbonBar::OnEditContextMenu
 
-
 ```
 virtual void OnEditContextMenu(
     CMFCRibbonRichEditCtrl* pEdit,
@@ -1311,8 +1310,8 @@ virtual void OnEditContextMenu(
 
 ### Parameters
 
-*pEdit*<br/>
-[in] [in] *point*
+[in] *pEdit*<br/>
+[in] *point*<br/>
 
 ### Remarks
 
@@ -1354,7 +1353,6 @@ S_OK if successful; otherwise FALSE or S_FALSE.
 
 ##  <a name="onshowribboncontextmenu"></a>  CMFCRibbonBar::OnShowRibbonContextMenu
 
-
 ```
 virtual BOOL OnShowRibbonContextMenu(
     CWnd* pWnd,
@@ -1365,17 +1363,16 @@ virtual BOOL OnShowRibbonContextMenu(
 
 ### Parameters
 
-*pWnd*<br/>
-[in] [in] *x*
-*y*<br/>
-[in] [in] *pHit*
+[in] *pWnd*<br/>
+[in] *x*<br/>
+[in] *y*<br/>
+[in] *pHit*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="onshowribbonqatmenu"></a>  CMFCRibbonBar::OnShowRibbonQATMenu
-
 
 ```
 virtual BOOL OnShowRibbonQATMenu(
@@ -1387,10 +1384,10 @@ virtual BOOL OnShowRibbonQATMenu(
 
 ### Parameters
 
-*pWnd*<br/>
-[in] [in] *x*
-*y*<br/>
-[in] [in] *pHit*
+[in] *pWnd*<br/>
+[in] *x*<br/>
+[in] *y*<br/>
+[in] *pHit*<br/>
 
 ### Return Value
 
@@ -1884,7 +1881,6 @@ virtual BOOL LoadFromResource(
     LPCTSTR lpszResType = RT_RIBBON,
     HINSTANCE hInstance = NULL);
 
-
 virtual BOOL LoadFromResource(
     LPCTSTR lpszXMLResID,
     LPCTSTR lpszResType = RT_RIBBON,
@@ -1978,6 +1974,4 @@ TRUE recalculates the ribbon layout; FALSE otherwise.
 [CMFCRibbonPanel Class](../../mfc/reference/cmfcribbonpanel-class.md)<br/>
 [CMFCRibbonBaseElement Class](../../mfc/reference/cmfcribbonbaseelement-class.md)<br/>
 [Walkthrough: Updating the MFC Scribble Application](../../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)
-
-
 

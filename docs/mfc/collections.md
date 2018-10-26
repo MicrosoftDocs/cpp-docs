@@ -30,15 +30,15 @@ Each of the three provided collection shapes is described briefly later in this 
 
 - List
 
-     The list class provides an ordered, nonindexed list of elements, implemented as a doubly linked list. A list has a "head" and a "tail," and adding or removing elements from the head or tail, or inserting or deleting elements in the middle, is very fast.
+   The list class provides an ordered, nonindexed list of elements, implemented as a doubly linked list. A list has a "head" and a "tail," and adding or removing elements from the head or tail, or inserting or deleting elements in the middle, is very fast.
 
 - Array
 
-     The array class provides a dynamically sized, ordered, and integer-indexed array of objects.
+   The array class provides a dynamically sized, ordered, and integer-indexed array of objects.
 
 - Map (also known as a dictionary)
 
-     A map is a collection that associates a key object with a value object.
+   A map is a collection that associates a key object with a value object.
 
 ##  <a name="_core_the_template_based_collection_classes"></a> The Template-Based Collection Classes
 

@@ -197,6 +197,7 @@ Stores the length of the next-to-most significant dimension.
 ```
 static const int tile_dim1 = _Dim1;
 ```
+
 ## <a name="tile_dim2"> </a>  tile_dim2
 
 Stores the length of the least significant dimension.
@@ -206,6 +207,7 @@ Stores the length of the least significant dimension.
 ```
 static const int tile_dim2 = _Dim2;
 ```
+
 ## <a name="tile_extent"> </a>  tile_extent
   Gets an `extent` object that captures the values of the `tiled_extent` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.
 

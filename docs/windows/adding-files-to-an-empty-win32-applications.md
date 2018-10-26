@@ -30,4 +30,4 @@ To add files that are neither source, header, or resource files to your project,
 
 ## See Also
 
-[Creating an Empty Windows Desktop Application](../windows/creating-an-empty-windows-desktop-application.md)  
+[Creating an Empty Windows Desktop Application](../windows/creating-an-empty-windows-desktop-application.md)

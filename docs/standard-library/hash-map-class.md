@@ -185,7 +185,6 @@ A reference to the data value of the element found.
 
 If the argument key value is not found, then the function throws an object of class [out_of_range Class](../standard-library/out-of-range-class.md).
 
-
 ### Example
 
 ```cpp
@@ -2595,9 +2594,9 @@ Returns the comparison function object that a hash_map uses to order its element
 
 ### Remarks
 
-For a hash_map *m*, if two elements *e*1 *(k*1 *, d*1 *)* and *e*2 *(k*2 *, d*2 *)* are objects of type [value_type](#value_type), where *k*1 and *k*2 are their keys of type [key_type](#key_type) and `d`1 and `d`2 are their data of type [mapped_type](#mapped_type), then *m.*`value_comp`*( )(e*1 *, e*2 *)* is equivalent to *m.*`key_comp`*( ) (k*1 *, k*2 *)*. A stored object defines the member function
+For a hash_map *m*, if two elements *e1* (*k1*, *d1*) and *e2* (*k2*, *d2*) are objects of type [value_type](#value_type), where *k1* and *k2* are their keys of type [key_type](#key_type) and *d1* and *d2* are their data of type [mapped_type](#mapped_type), then `m.value_comp()(e1, e2)` is equivalent to `m.key_comp()(k1, k2)`. A stored object defines the member function
 
-**bool operator**( **value_type&** `left`, **value_type&** `right`) **;**
+`bool operator(value_type& left, value_type& right);`
 
 which returns **true** if the key value of `left` precedes and is not equal to the key value of `right` in the sort order.
 

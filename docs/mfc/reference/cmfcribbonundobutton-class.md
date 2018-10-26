@@ -97,7 +97,6 @@ CMFCRibbonUndoButton(
     int nSmallImageIndex=-1,
     int nLargeImageIndex=-1);
 
-
 CMFCRibbonUndoButton(
     UINT nID,
     LPCTSTR lpszText,

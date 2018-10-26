@@ -1045,4 +1045,3 @@ Note that this member function uses a `CRect` object as a parameter, rather than
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-

@@ -343,7 +343,7 @@ Returns TRUE if the key was found, and the value was successfully changed, FALSE
 Sets the key and value at a specified index.
 
 ```
-BOOL SetAtIndex(  
+BOOL SetAtIndex(
     int nIndex,
     const TKey& key,
     const TVal& val);

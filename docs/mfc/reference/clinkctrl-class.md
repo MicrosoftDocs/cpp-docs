@@ -90,7 +90,6 @@ virtual BOOL Create(
     CWnd* pParentWnd,
     UINT nID);
 
-
 virtual BOOL Create(DWORD dwStyle,
     const RECT& rect,
     CWnd* pParentWnd,
@@ -148,7 +147,6 @@ virtual BOOL CreateEx(
     const RECT& rect,
     CWnd* pParentWnd,
     UINT nID);
-
 
 virtual BOOL CreateEx(DWORD  dwExStyle,
     DWORD  dwStyle,

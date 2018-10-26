@@ -21,7 +21,7 @@ Forms provide a convenient container for controls. You can easily insert an MFC-
 
 1. From the shortcut menu, click **Add** and then click **Add Class**.
 
-     If the **New Form** command is not available, your project may be based on the Active Template Library (ATL). To add a form to an ATL project, you must [specify certain settings](../atl/reference/application-settings-atl-project-wizard.md) when first creating the project.
+   If the **New Form** command is not available, your project may be based on the Active Template Library (ATL). To add a form to an ATL project, you must [specify certain settings](../atl/reference/application-settings-atl-project-wizard.md) when first creating the project.
 
 1. From the **MFC** folder, click **MFC Class**.
 

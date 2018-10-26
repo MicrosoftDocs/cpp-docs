@@ -27,7 +27,7 @@ We recommend any of these three ways to close the vulnerabilities in the registr
 
 - Store the data in a secure file instead of in the registry.
 
-     To accomplish either of these first two ways, derive a class from [CSettingsStore Class](../mfc/reference/csettingsstore-class.md) and override its methods to implement encryption or storage outside the registry.
+   To accomplish either of these first two ways, derive a class from [CSettingsStore Class](../mfc/reference/csettingsstore-class.md) and override its methods to implement encryption or storage outside the registry.
 
 - You can also disable customizations in your application.
 

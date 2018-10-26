@@ -23,7 +23,7 @@ This class provides a default implementation of the [ISupportErrorInfo Interface
 
 ```
 template<const IID* piid>
-class ATL_NO_VTABLE ISupportErrorInfoImpl 
+class ATL_NO_VTABLE ISupportErrorInfoImpl
    : public ISupportErrorInfo
 ```
 

@@ -45,9 +45,9 @@ Specifies the pen type. This member can be one of the following values:
 
 - PS_INSIDEFRAME Creates a pen that draws a line inside the frame of closed shapes produced by GDI output functions that specify a bounding rectangle (for example, the `Ellipse`, `Rectangle`, `RoundRect`, `Pie`, and `Chord` member functions). When this style is used with GDI output functions that do not specify a bounding rectangle (for example, the `LineTo` member function), the drawing area of the pen is not limited by a frame.
 
-     If a pen has the PS_INSIDEFRAME style and a color that does not match a color in the logical color table, the pen is drawn with a dithered color. The PS_SOLID pen style cannot be used to create a pen with a dithered color. The PS_INSIDEFRAME style is identical to PS_SOLID if the pen width is less than or equal to 1.
+   If a pen has the PS_INSIDEFRAME style and a color that does not match a color in the logical color table, the pen is drawn with a dithered color. The PS_SOLID pen style cannot be used to create a pen with a dithered color. The PS_INSIDEFRAME style is identical to PS_SOLID if the pen width is less than or equal to 1.
 
-     When the PS_INSIDEFRAME style is used with GDI objects produced by functions other than `Ellipse`, `Rectangle`, and `RoundRect`, the line may not be completely inside the specified frame.
+   When the PS_INSIDEFRAME style is used with GDI objects produced by functions other than `Ellipse`, `Rectangle`, and `RoundRect`, the line may not be completely inside the specified frame.
 
 *lopnWidth*<br/>
 Specifies the pen width, in logical units. If the `lopnWidth` member is 0, the pen is 1 pixel wide on raster devices regardless of the current mapping mode.

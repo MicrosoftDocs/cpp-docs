@@ -128,7 +128,7 @@ Call this method to determine if a specified SID is enabled in the `CAccessToken
 
 ```
 bool CheckTokenMembership(
-    const CSid& rSid, 
+    const CSid& rSid,
     bool* pbIsMember) const throw(...);
 ```
 
@@ -159,7 +159,7 @@ Call this method to create an impersonation access token.
 
 ```
 bool CreateImpersonationToken(
-    CAccessToken* pImp, 
+    CAccessToken* pImp,
     SECURITY_IMPERSONATION_LEVEL sil = SecurityImpersonation) const throw(...);
 ```
 
@@ -1029,7 +1029,7 @@ Call this method to determine whether a specified set of privileges are enabled 
 ```
 bool PrivilegeCheck(
     PPRIVILEGE_SET RequiredPrivileges,
-     bool* pbResult) const throw();
+    bool* pbResult) const throw();
 ```
 
 ### Parameters

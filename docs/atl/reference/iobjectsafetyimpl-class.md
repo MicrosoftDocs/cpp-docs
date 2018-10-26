@@ -76,7 +76,7 @@ Note that using the [IMPLEMENTED_CATEGORY](category-macros.md#implemented_catego
 Retrieves the safety options supported by the object, as well as the safety options currently set for the object.
 
 ```
-HRESULT GetInterfaceSafetyOptions(  
+HRESULT GetInterfaceSafetyOptions(
     REFIID riid,
     DWORD* pdwSupportedOptions,
     DWORD* pdwEnabledOptions);
@@ -104,7 +104,7 @@ DWORD m_dwCurrentSafety;
 Makes the object safe for initialization or scripting by setting the [m_dwCurrentSafety](#m_dwcurrentsafety) member to the appropriate value.
 
 ```
-HRESULT SetInterfaceSafetyOptions(  
+HRESULT SetInterfaceSafetyOptions(
     REFIID riid,
     DWORD dwOptionsSetMask,
     DWORD dwEnabledOptions);

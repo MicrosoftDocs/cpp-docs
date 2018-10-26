@@ -96,7 +96,7 @@ public:
    }
    ULONG InternalRelease()
    {
-      return _ThreadModel::Decrement(&m_dwRef);   
+      return _ThreadModel::Decrement(&m_dwRef);
    }
    void Lock() { m_critsec.Lock( ); }
    void Unlock() { m_critsec.Unlock(); }

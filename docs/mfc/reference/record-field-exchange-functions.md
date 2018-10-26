@@ -390,7 +390,6 @@ See [RFX_Text](#rfx_text).
 
 **Header:** afxdb.h
 
-
 ## <a name="rfx_text"></a>  RFX_Text
 
 Transfers `CString` data between the field data members of a `CRecordset` object and columns of a record on the data source of ODBC type SQL_LONGVARCHAR, SQL_CHAR, SQL_VARCHAR, SQL_DECIMAL, or SQL_NUMERIC.
@@ -456,7 +455,6 @@ void CCustomer::DoFieldExchange(CFieldExchange* pFX)
 ### Requirements
 
 **Header:** afxdb.h
-
 
 ## <a name="rfx_binary_bulk"></a>  RFX_Binary_Bulk
 
@@ -823,7 +821,6 @@ See [RFX_Text_Bulk](#rfx_text_bulk).
 
 **Header:** afxdb.h
 
-
 ## <a name="rfx_text_bulk"></a>  RFX_Text_Bulk
 
 Transfers multiple rows of character data from a column of an ODBC data source to a corresponding array in a `CRecordset`-derived object.
@@ -936,7 +933,6 @@ See [DFX_Text](#dfx_text).
 ### Requirements
 
 **Header:** afxdao.h
-
 
 ## <a name="dfx_bool"></a>  DFX_Bool
 
@@ -1199,7 +1195,6 @@ See [DFX_Text](#dfx_text).
 
 **Header:** afxdao.h
 
-
 ## <a name="dfx_longbinary"></a>  DFX_LongBinary
 
 **Important** It is recommended that you use [DFX_Binary](#dfx_binary) instead of this function.
@@ -1292,7 +1287,6 @@ See [DFX_Text](#dfx_text).
 ### Requirements
 
 **Header:** afxdao.h
-
 
 ## <a name="dfx_single"></a>  DFX_Single
 

@@ -28,11 +28,11 @@ For sending, the example function loops for a specified number of times, each ti
 
 - A "header" that specifies the nature of the data (in this case, the value of the *bValue* variable and how many copies will be sent).
 
-     Both items are generated randomly for this example.
+   Both items are generated randomly for this example.
 
 - The specified number of copies of the data.
 
-     The inner **for** loop sends *bValue* the specified number of times.
+   The inner **for** loop sends *bValue* the specified number of times.
 
 - A string called *strText* that the receiver displays to its user.
 

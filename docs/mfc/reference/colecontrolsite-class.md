@@ -197,7 +197,6 @@ virtual HRESULT CreateControl(
     BOOL bStorage = FALSE,
     BSTR bstrLicKey = NULL);
 
-
 virtual HRESULT CreateControl(
     CWnd* pWndCtrl,
     REFCLSID clsid,

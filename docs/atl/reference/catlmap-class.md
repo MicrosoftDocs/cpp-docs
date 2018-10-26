@@ -20,8 +20,8 @@ This class provides methods for creating and managing a map object.
 
 ```
 template <typename K,
-          typename V, 
-          class KTraits = CElementTraits<K>, 
+          typename V,
+          class KTraits = CElementTraits<K>,
           class VTraits = CElementTraits<V>>
 class CAtlMap
 ```
@@ -55,7 +55,7 @@ The code used to copy or move value elements.
 
 |Name|Description|
 |----------|-----------------|
-|[CAtlMap::CPair Class](#cpair_class)|A class containing the key and value elements.|  
+|[CAtlMap::CPair Class](#cpair_class)|A class containing the key and value elements.|
 
 ### CPair Data Members
 
@@ -103,7 +103,7 @@ The code used to copy or move value elements.
 
 |Name|Description|
 |----------|-----------------|
-|[CAtlMap::operator\[\]](catlmap-class.md#operator_at)|Replaces or adds a new element to the `CAtlMap`.|  
+|[CAtlMap::operator\[\]](catlmap-class.md#operator_at)|Replaces or adds a new element to the `CAtlMap`.|
 
 ## Remarks
 

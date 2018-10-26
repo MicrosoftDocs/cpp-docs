@@ -73,7 +73,6 @@ CMFCPropertyPage(
     UINT nIDTemplate,
     UINT nIDCaption=0);
 
-
 CMFCPropertyPage(
     LPCTSTR lpszTemplateName,
     UINT nIDCaption=0);

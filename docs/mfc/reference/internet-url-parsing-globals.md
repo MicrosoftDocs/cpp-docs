@@ -225,6 +225,7 @@ Use this global function to determine the type of an Internet handle.
   ```
 DWORD AFXAPI AfxGetInternetHandleType(  HINTERNET hQuery );
 ```
+
 ### Parameters
 
 *hQuery*<br/>
@@ -285,6 +286,7 @@ Throws an Internet exception.
 ```
    void AFXAPI AfxThrowInternetException(  DWORD dwContext,  DWORD dwError = 0 );
 ```
+
 ### Parameters
 
 *dwContext*<br/>
@@ -309,5 +311,4 @@ You are responsible for determining the cause based on the operating-system erro
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
 [CInternetException Class](cinternetexception-class.md)<br/>
 [THROW](#throw)
-
 

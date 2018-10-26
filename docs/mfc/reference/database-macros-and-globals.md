@@ -33,7 +33,6 @@ Before MFC 4.2, the macros `AFX_SQL_ASYNC` and `AFX_SQL_SYNC` gave asynchronous 
 |[AfxDbInitModule](#afxdbinitmodule)|Adds database support for a regular MFC DLL that is dynamically linked to MFC.|
 |[AfxGetHENV](#afxgethenv)|Retrieves a handle to the ODBC environment currently in use by MFC. You can use this handle in direct ODBC calls.|
 
-
 ## <a name="afxdbinitmodule"></a> AfxDbInitModule
 
 For MFC database (or DAO) support from a regular MFC DLL that is dynamically linked to MFC, add a call to this function in your regular MFC DLL's `CWinApp::InitInstance` function to initialize the MFC database DLL.
@@ -56,8 +55,6 @@ Make sure this call occurs before any base-class call or any added code which ac
 
 [Macros and Globals](mfc-macros-and-globals.md)
 
-
-
 ##  <a name="afx_odbc_call"></a>  AFX_ODBC_CALL
 
 Use this macro to call any ODBC API function that may return `SQL_STILL_EXECUTING`.
@@ -78,7 +75,6 @@ An ODBC API function. For more information about ODBC API functions, see the Win
 Before invoking `AFX_ODBC_CALL`, you must declare a variable, `nRetCode`, of type RETCODE.
 
 Note that the MFC ODBC classes now use only synchronous processing. In order to perform an asynchronous operation, you must call the ODBC API function `SQLSetConnectOption`. For more information, see the topic "Executing Functions Asynchronously" in the Windows SDK.
-
 
 ### Example
 

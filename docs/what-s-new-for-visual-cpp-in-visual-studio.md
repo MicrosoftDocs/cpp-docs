@@ -34,11 +34,11 @@ In this release, we've updated the C++ compiler and standard library with enhanc
 
 - Visual Studio 2017 allows using [/sdl](build/reference/sdl-enable-additional-security-checks.md) with [/await](build/reference/await-enable-coroutine-support.md). We removed the [/RTC](build/reference/rtc-run-time-error-checks.md) limitation with Coroutines.
 
-   **Visual Studio 2017 version 15.3**:  
+   **Visual Studio 2017 version 15.3**:
+
 - [/std:c++14 and /std:c++latest](build/reference/std-specify-language-standard-version.md): These compiler options enable you to opt-in to specific versions of the ISO C++ programming language in a project. Most of the new draft standard features are guarded by the **/std:c++latest** option.
 
 - [/std:c++17](build/reference/std-specify-language-standard-version.md) enables the set of C++17 features implemented by the compiler. This option disables compiler and standard library support for features that are changed or new in versions of the Working Draft and defect updates of the C++ Standard after C++17. To enable those features, use **/std:c++latest**.
-
 
 ### Codegen, security, diagnostics and versioning
 
@@ -334,9 +334,9 @@ Visual Studio 2017 introduces support for using CMake projects without convertin
 
   ![Cmake Open Folder](media/cmake_cpp.png "CMake Open Folder")
 
-**Visual Studio 2017 version 15.3**: Support added for the CMake Ninja generator. 
+**Visual Studio 2017 version 15.3**: Support added for the CMake Ninja generator.
 
-**Visual Studio 2017 version 15.5**: Support added for importing existing CMake caches. 
+**Visual Studio 2017 version 15.5**: Support added for importing existing CMake caches.
 
 **Visual Studio 2017 version 15.7**: Support added for CMake 3.11, code analysis in CMake projects, Targets view in Solution Explorer, options for cache generation, and single file compilation. For more information, see [CMake Support in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) and [CMake projects in Visual C++](ide/cmake-tools-for-visual-cpp.md).
 
@@ -411,10 +411,11 @@ New C++ Core Guidelines checks cover smart pointer correctness, correct use of g
 
 Some warning numbers you may find in 15.3 are no longer available in 15.5. These warnings were replaced with more specific checks.
 
-**Visual Studio 2017 version 15.6**:  
-Support added for single-file analysis, and improvements in analysis run-time performance. For more information, see [C++ Static Analysis Improvements for Visual Studio 2017 15.6 Preview 2](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/c-static-analysis-improvements-for-visual-studio-2017-15-6-preview-2/)
+**Visual Studio 2017 version 15.6**:
 
-**Visual Studio 2017 version 15.7**:  
+- Support added for single-file analysis, and improvements in analysis run-time performance. For more information, see [C++ Static Analysis Improvements for Visual Studio 2017 15.6 Preview 2](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/c-static-analysis-improvements-for-visual-studio-2017-15-6-preview-2/)
+
+**Visual Studio 2017 version 15.7**:
 
 - Support added for [/analyze:ruleset](build/reference/analyze-code-analysis.md) which enables you to specify which code analysis rules to run.
 - Support added for additional C++ Core Guidelines rules.  For more information, see [Using the C++ Core Guidelines checkers](/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers).
@@ -430,7 +431,7 @@ Google Test Adapter and Boost.Test Adapter are now available as components of th
 - Support added for Boost.Test dynamic library support.
 - A Boost.Test item template is now available in the IDE.
 
-For more information, see [Boost.Test Unit Testing: Dynamic Library support and New Item Template](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/boost-test-unit-testing-dynamic-library-support-and-new-item-template/). 
+For more information, see [Boost.Test Unit Testing: Dynamic Library support and New Item Template](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/boost-test-unit-testing-dynamic-library-support-and-new-item-template/).
 
 **Visual Studio 2017 version 15.7**:
 

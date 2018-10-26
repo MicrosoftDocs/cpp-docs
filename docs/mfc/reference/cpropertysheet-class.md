@@ -153,12 +153,10 @@ void Construct(
     CWnd* pParentWnd = NULL,
     UINT iSelectPage = 0);
 
-
 void Construct(
     LPCTSTR pszCaption,
     CWnd* pParentWnd = NULL,
     UINT iSelectPage = 0);
-
 
 void Construct(
     UINT nIDCaption,
@@ -167,7 +165,6 @@ void Construct(
     HBITMAP hbmWatermark,
     HPALETTE hpalWatermark = NULL,
     HBITMAP hbmHeader = NULL);
-
 
 void Construct(
     LPCTSTR pszCaption,
@@ -222,18 +219,15 @@ Constructs a `CPropertySheet` object.
 ```
 CPropertySheet();
 
-
 explicit CPropertySheet(
     UINT nIDCaption,
     CWnd* pParentWnd = NULL,
     UINT iSelectPage = 0);
 
-
 explicit CPropertySheet(
     LPCTSTR pszCaption,
     CWnd* pParentWnd = NULL,
     UINT iSelectPage = 0);
-
 
 CPropertySheet(
     UINT nIDCaption,
@@ -242,7 +236,6 @@ CPropertySheet(
     HBITMAP hbmWatermark,
     HPALETTE hpalWatermark = NULL,
     HBITMAP hbmHeader = NULL);
-
 
 CPropertySheet(
     LPCTSTR pszCaption,

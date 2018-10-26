@@ -78,4 +78,4 @@ public:
 ## See Also
 
 [COM Attributes](com-attributes.md)<br/>
-[registration_script](registration-script.md)  
+[registration_script](registration-script.md)

@@ -47,9 +47,9 @@ The following table shows the relationship among the macros used to support seri
 
 1. Use the normal C++ syntax to derive your class from `CObject` (or from a class derived from `CObject`).
 
-     The following example shows the simplest case, the derivation of a class from `CObject`:
+   The following example shows the simplest case, the derivation of a class from `CObject`:
 
-     [!code-cpp[NVC_MFCCObjectSample#1](../mfc/codesnippet/cpp/deriving-a-class-from-cobject_1.h)]
+   [!code-cpp[NVC_MFCCObjectSample#1](../mfc/codesnippet/cpp/deriving-a-class-from-cobject_1.h)]
 
 Normally, however, you may want to override some of `CObject`'s member functions to handle the specifics of your new class. For example, you may usually want to override the `Dump` function of `CObject` to provide debugging output for the contents of your class. For details on how to override `Dump`, see the article [Diagnostics: Dumping Object Contents](/previous-versions/visualstudio/visual-studio-2010/sc15kz85). You may also want to override the `AssertValid` function of `CObject` to provide customized testing to validate the consistency of the data members of class objects. For a description of how to override `AssertValid`, see [MFC ASSERT_VALID and CObject::AssertValid](/previous-versions/visualstudio/visual-studio-2010/38z04tfa).
 

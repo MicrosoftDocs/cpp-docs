@@ -3748,7 +3748,6 @@ void ThrowError(
     UINT nDescriptionID,
     UINT nHelpID = -1);
 
-
 void ThrowError(
     SCODE sc,
     LPCTSTR pszDescription = NULL,

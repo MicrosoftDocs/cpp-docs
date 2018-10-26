@@ -91,7 +91,7 @@ The [IPropertyPage](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage) interface
 Creates the dialog box window for the property page.
 
 ```
-HRESULT Activate(  
+HRESULT Activate(
     HWND hWndParent,
     LPCRECT pRect,
     BOOL bModal);

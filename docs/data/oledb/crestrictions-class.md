@@ -14,79 +14,79 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRestrictions Class
 
-A generic class that allows you to specify restrictions for schema rowsets.  
-  
+A generic class that allows you to specify restrictions for schema rowsets.
+
 ## Syntax
 
 ```cpp
-template <class T, short nRestrictions, const GUID* pguid>  
-class CRestrictions : 
-   public CSchemaRowset <T, nRestrictions>  
-```  
-  
-### Parameters  
+template <class T, short nRestrictions, const GUID* pguid>
+class CRestrictions :
+   public CSchemaRowset <T, nRestrictions>
+```
+
+### Parameters
 
 *T*<br/>
-The class used for the accessor.  
-  
+The class used for the accessor.
+
 *nRestrictions*<br/>
-The number of restriction columns for the schema rowset.  
-  
+The number of restriction columns for the schema rowset.
+
 *pguid*<br/>
-A pointer to the GUID for the schema.  
+A pointer to the GUID for the schema.
 
-## Requirements  
+## Requirements
 
-**Header:** atldbsch.h 
-  
-## Members  
-  
-### Methods  
-  
-|||  
-|-|-|  
-|[Open](#open)|Returns a result set according to the user-supplied restrictions.|   
+**Header:** atldbsch.h
+
+## Members
+
+### Methods
+
+|||
+|-|-|
+|[Open](#open)|Returns a result set according to the user-supplied restrictions.|
 
 ## <a name="open"></a> CRestrictions::Open
 
-Returns a result set according to the user-supplied restrictions.  
-  
-### Syntax  
-  
+Returns a result set according to the user-supplied restrictions.
+
+### Syntax
+
 ```cpp
-HRESULT Open(const CSession& session,  
-   LPCTSTR lpszParam 1 = NULL,  
-   LPCTSTR lpszParam 2 = NULL,  
-   LPCTSTR lpszParam 3 = NULL,  
-   LPCTSTR lpszParam 4 = NULL,  
-   LPCTSTR lpszParam 5 = NULL,  
-   LPCTSTR lpszParam 6 = NULL,  
-   LPCTSTR lpszParam 7 = NULL,  
-   bool bBind = true);  
-```  
-  
-#### Parameters  
+HRESULT Open(const CSession& session,
+   LPCTSTR lpszParam 1 = NULL,
+   LPCTSTR lpszParam 2 = NULL,
+   LPCTSTR lpszParam 3 = NULL,
+   LPCTSTR lpszParam 4 = NULL,
+   LPCTSTR lpszParam 5 = NULL,
+   LPCTSTR lpszParam 6 = NULL,
+   LPCTSTR lpszParam 7 = NULL,
+   bool bBind = true);
+```
+
+#### Parameters
 
 *session*<br/>
-[in] Specifies an existing session object used to connect to the data source.  
-  
+[in] Specifies an existing session object used to connect to the data source.
+
 *lpszParam*<br/>
-[in] Specifies the restrictions on the schema rowset.  
-  
+[in] Specifies the restrictions on the schema rowset.
+
 *bBind*<br/>
-[in] Specifies whether to bind the column map automatically. The default is **true**, which causes the column map to be bound automatically. Setting *bBind* to **false** prevents the automatic binding of the column map so that you can bind manually. (Manual binding is of particular interest to OLAP users.)  
-  
-### Return Value  
+[in] Specifies whether to bind the column map automatically. The default is **true**, which causes the column map to be bound automatically. Setting *bBind* to **false** prevents the automatic binding of the column map so that you can bind manually. (Manual binding is of particular interest to OLAP users.)
 
-One of the standard HRESULT values.  
-  
-### Remarks  
+### Return Value
 
-You can specify a maximum of seven restrictions on a schema rowset.  
-  
-See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686) for information about the defined restrictions on each schema rowset.  
-  
-## See Also  
+One of the standard HRESULT values.
+
+### Remarks
+
+You can specify a maximum of seven restrictions on a schema rowset.
+
+See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686) for information about the defined restrictions on each schema rowset.
+
+## See Also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

@@ -40,7 +40,7 @@ As discussed in [MFC ActiveX Controls: Properties](../mfc/mfc-activex-controls-p
 
 1. From the shortcut menu, click **Add** and then click **Add Property**.
 
-     This opens the Add Property Wizard.
+   This opens the Add Property Wizard.
 
 1. In the **Property Name** box, click **Font**.
 
@@ -66,7 +66,7 @@ The stock Caption property is an example of a text property that can be drawn us
 
 1. From the shortcut menu, click **Add** and then click **Add Property**.
 
-     This opens the Add Property Wizard.
+   This opens the Add Property Wizard.
 
 1. In the **Property Name** box, click **Caption**.
 
@@ -108,7 +108,7 @@ To implement a custom Font property, you use the Add Property Wizard to add the 
 
 1. From the shortcut menu, click **Add** and then click **Add Property**.
 
-     This opens the Add Property Wizard.
+   This opens the Add Property Wizard.
 
 1. In the **Property Name** box, type a name for the property. For this example, use **HeadingFont**.
 
@@ -144,35 +144,35 @@ In the control implementation file (.CPP), do the following:
 
 - Initialize *m_fontHeading* in the control constructor.
 
-     [!code-cpp[NVC_MFC_AxFont#9](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_9.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#9](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_9.cpp)]
 
 - Declare a static FONTDESC structure containing default attributes of the font.
 
-     [!code-cpp[NVC_MFC_AxFont#10](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_10.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#10](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_10.cpp)]
 
 - In the control `DoPropExchange` member function, add a call to the `PX_Font` function. This provides initialization and persistence for your custom Font property.
 
-     [!code-cpp[NVC_MFC_AxFont#11](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_11.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#11](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_11.cpp)]
 
 - Finish implementing the control `GetHeadingFont` member function.
 
-     [!code-cpp[NVC_MFC_AxFont#12](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_12.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#12](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_12.cpp)]
 
 - Finish implementing the control `SetHeadingFont` member function.
 
-     [!code-cpp[NVC_MFC_AxFont#13](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_13.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#13](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_13.cpp)]
 
 - Modify the control `OnDraw` member function to define a variable to hold the previously selected font.
 
-     [!code-cpp[NVC_MFC_AxFont#14](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_14.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#14](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_14.cpp)]
 
 - Modify the control `OnDraw` member function to select the custom font into the device context by adding the following line wherever the font is to be used.
 
-     [!code-cpp[NVC_MFC_AxFont#15](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_15.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#15](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_15.cpp)]
 
 - Modify the control `OnDraw` member function to select the previous font back into the device context by adding the following line after the font has been used.
 
-     [!code-cpp[NVC_MFC_AxFont#16](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_16.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#16](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_16.cpp)]
 
 After the custom Font property has been implemented, the standard Font property page should be implemented, allowing control users to change the control's current font. To add the property page ID for the standard Font property page, insert the following line after the BEGIN_PROPPAGEIDS macro:
 

@@ -26,7 +26,7 @@ class CComObjectRootEx : public CComObjectRootBase
 #### Parameters
 
 *ThreadModel*<br/>
-The class whose methods implement the desired threading model. You can explicitly choose the threading model by setting *ThreadModel* to [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md), [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md), or [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md). You can accept the server's default thread model by setting *ThreadModel* to [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) or [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel).  
+The class whose methods implement the desired threading model. You can explicitly choose the threading model by setting *ThreadModel* to [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md), [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md), or [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md). You can accept the server's default thread model by setting *ThreadModel* to [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) or [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel).
 
 ## Members
 
@@ -114,9 +114,9 @@ There are advantages to performing initialization in `FinalConstruct` rather tha
 
 - You cannot call virtual functions through the virtual function mechanism from the constructor of a class. Calling a virtual function from the constructor of a class results in a statically resolved call to the function as it is defined at that point in the inheritance hierarchy. Calls to pure virtual functions result in linker errors.
 
-     Your class is not the most derived class in the inheritance hierarchy — it relies on a derived class supplied by ATL to provide some of its functionality. There is a good chance that your initialization will need to use the features provided by that class (this is certainly true when objects of your class need to aggregate other objects), but the constructor in your class has no way to access those features. The construction code for your class is executed before the most derived class is fully constructed.
+   Your class is not the most derived class in the inheritance hierarchy — it relies on a derived class supplied by ATL to provide some of its functionality. There is a good chance that your initialization will need to use the features provided by that class (this is certainly true when objects of your class need to aggregate other objects), but the constructor in your class has no way to access those features. The construction code for your class is executed before the most derived class is fully constructed.
 
-     However, `FinalConstruct` is called immediately after the most derived class is fully constructed allowing you to call virtual functions and use the reference-counting implementation provided by ATL.
+   However, `FinalConstruct` is called immediately after the most derived class is fully constructed allowing you to call virtual functions and use the reference-counting implementation provided by ATL.
 
 ### Example
 
@@ -240,7 +240,7 @@ long m_dwRef;
 
 ### Remarks
 
-With `m_pOuterUnknown`, part of a union:  
+With `m_pOuterUnknown`, part of a union:
 
 ```
 union {

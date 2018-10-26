@@ -38,7 +38,6 @@ The `type` character is the only required format field; it appears after any opt
 |`s`|String, up to first white-space character (space, tab or newline). To read strings not delimited by space characters, use set of square brackets (`[ ]`), as discussed in [scanf Width Specification](../c-runtime-library/scanf-width-specification.md).|When used with `scanf` functions, signifies single-byte character array; when used with `wscanf` functions, signifies wide-character array. In either case, character array must be large enough for input field plus terminating null character, which is automatically appended.|Required. Size includes space for a null terminator.|
 |`S`|Opposite-size character string, up to first white-space character (space, tab or newline). To read strings not delimited by space characters, use set of square brackets (`[ ]`), as discussed in [scanf Width Specification](../c-runtime-library/scanf-width-specification.md).|When used with `scanf` functions, signifies wide-character array; when used with `wscanf` functions, signifies single-byte-character array. In either case, character array must be large enough for input field plus terminating null character, which is automatically appended.|Required. Size includes space for a null terminator.|
 
-
 The size arguments, if required, should be passed in the parameter list immediately following the argument they apply to. For example, the following code:
 
 ```

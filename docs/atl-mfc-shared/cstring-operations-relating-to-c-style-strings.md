@@ -33,9 +33,9 @@ A [CString](../atl-mfc-shared/using-cstring.md) object contains character string
 
 To use a `CString` object as a C-style string, cast the object to LPCTSTR. In the following example, the `CString` returns a pointer to a read-only C-style null-terminated string. The `strcpy` function puts a copy of the C-style string in the variable `myString`.
 
-```
-CString aCString = "A string";  
-char myString[256];  
+```cpp
+CString aCString = "A string";
+char myString[256];
 strcpy(myString, (LPCTSTR)aCString);
 ```
 

@@ -515,7 +515,6 @@ void GetQueryDefInfo(
     CDaoQueryDefInfo& querydefinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
 
-
 void GetQueryDefInfo(
     LPCTSTR lpszName,
     CDaoQueryDefInfo& querydefinfo,
@@ -614,7 +613,6 @@ void GetRelationInfo(
     CDaoRelationInfo& relinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
 
-
 void GetRelationInfo(
     LPCTSTR lpszName,
     CDaoRelationInfo& relinfo,
@@ -673,7 +671,6 @@ void GetTableDefInfo(
     int nIndex,
     CDaoTableDefInfo& tabledefinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
-
 
 void GetTableDefInfo(
     LPCTSTR lpszName,
