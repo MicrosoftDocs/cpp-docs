@@ -1,7 +1,7 @@
 ---
 title: "Command Object Interfaces | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/24/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -19,4 +19,4 @@ The `ICommandText` interface provides a way to specify a text command. The `ICom
 
 ## See Also
 
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
