@@ -8824,6 +8824,11 @@
             "source_path": "docs/windows/windows-desktop-applications-cpp.md",
             "redirect_url": "/cpp/windows/desktop-applications-visual-cpp",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute.md",
+            "redirect_url": "/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute",
+            "redirect_document_id": true
         }
     ]
 }
