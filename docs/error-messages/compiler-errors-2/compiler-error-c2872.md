@@ -20,7 +20,7 @@ The compiler cannot determine which symbol you are referring to. More than one s
 
 C2872 can occur if a header file includes a [using directive](../../cpp/namespaces-cpp.md#using_directives), and a subsequent header file is included that contains a type that is also in the namespace specified in the `using` directive. Specify a `using` directive only after all your header files are specified with `#include`.
 
-C2872 can occur in Visual Studio 2013 due to a conflict between the the `Windows::Foundation::Metadata::Platform` enum type and the C++/CX-defined `Platform` namespace. To work around this problem, follow these steps:
+C2872 can occur in Visual Studio 2013 due to a conflict between the `Windows::Foundation::Metadata::Platform` enum type and the C++/CX-defined `Platform` namespace. To work around this problem, follow these steps:
 
 - Remove the "using namespace Windows::Foundation::Metadata" clause from the project files.
 
