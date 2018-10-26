@@ -29,7 +29,7 @@ If you use the application wizard to produce "starter" code for your application
 
 1. In your derived class, override the `OnDraw` member function.
 
-     The framework calls `OnDraw` to render the OLE item into a metafile. The container application uses this metafile to render the item. Your application's view class also has an `OnDraw` member function, which is used to render the item when the server application is active.
+   The framework calls `OnDraw` to render the OLE item into a metafile. The container application uses this metafile to render the item. Your application's view class also has an `OnDraw` member function, which is used to render the item when the server application is active.
 
 1. Implement an override of `OnGetEmbeddedItem` for your server-document class. For further information, see the article [Servers: Implementing Server Documents](../mfc/servers-implementing-server-documents.md) and the MFC OLE sample [HIERSVR](../visual-cpp-samples.md).
 

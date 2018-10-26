@@ -101,11 +101,11 @@ After you have implemented metafile rendering for the control, use Test Containe
 
 1. In the **Insert New Control** box, select the control and click **OK**.
 
-     The control will appear in Test container.
+   The control will appear in Test container.
 
 1. On the **Control** menu, click **Draw Metafile**.
 
-     A separate window appears in which the metafile is displayed. You can change the size of this window to see how scaling affects the control's metafile. You can close this window at any time.
+   A separate window appears in which the metafile is displayed. You can change the size of this window to see how scaling affects the control's metafile. You can close this window at any time.
 
 ## See Also
 

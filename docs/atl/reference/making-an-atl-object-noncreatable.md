@@ -22,14 +22,14 @@ You can change the attributes of an ATL-based COM object so that a client cannot
 
 1. Add the [noncreatable](../../windows/noncreatable.md) attribute to the coclass in the .idl file. For example:
 
-    ```  
-    [uuid(A1992E3D-3CF0-11D0-826F-00A0C90F2851), 
-    helpstring("MyObject"), 
-    noncreatable]  
-    coclass MyObject  
-    {  
-        [default] interface IMyInterface;  
-    }  
+    ```
+    [uuid(A1992E3D-3CF0-11D0-826F-00A0C90F2851),
+    helpstring("MyObject"),
+    noncreatable]
+    coclass MyObject
+    {
+        [default] interface IMyInterface;
+    }
     ```
 
 ## See Also

@@ -210,21 +210,21 @@ Each field is delimited by a ';' character. The fields and their purpose are des
 
    - *promptN*
 
-     String to place above the edit item (with & for accelerator).
+      String to place above the edit item (with & for accelerator).
 
    - *fmtN*
 
-     Format character for the arg type, one of:
+      Format character for the arg type, one of:
 
-     |Character|Type|
-     |-|-|
-     d | int
-     u | unsigned int
-     D | long int (that is, long)
-     U | long unsigned (that is, DWORD)
-     f | float
-     F | double
-     s | string
+      |Character|Type|
+      |-|-|
+      |d | int|
+      |u | unsigned int|
+      |D | long int (that is, long)|
+      |U | long unsigned (that is, DWORD)|
+      |f | float|
+      |F | double|
+      |s | string|
 
 ## See also
 

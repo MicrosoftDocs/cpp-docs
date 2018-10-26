@@ -132,7 +132,7 @@ Call this method to unregister each object in the object map.
 
 ```
 HRESULT UnregisterServer(
-    BOOL bRegTypeLib = FALSE,  
+    BOOL bRegTypeLib = FALSE,
     const CLSID* pCLSID = NULL);
 ```
 

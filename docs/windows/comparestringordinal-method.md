@@ -20,7 +20,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ```cpp
 inline INT32 CompareStringOrdinal(
    HSTRING lhs,
-   HSTRING rhs)  
+   HSTRING rhs)
 ```
 
 ### Parameters

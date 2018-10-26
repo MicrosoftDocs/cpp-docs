@@ -102,7 +102,6 @@ It's also possible to avoid some of these issues if all of the images in your pr
 
 Some care is needed if your program passes certain CRT resources (such as file handles, locales and environment variables) across DLL boundaries, even when using the same version of the CRT. For more information on the issues involved and how to resolve them, see [Potential Errors Passing CRT Objects Across DLL Boundaries](../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md).
 
-
 ## See also
 
 - [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)

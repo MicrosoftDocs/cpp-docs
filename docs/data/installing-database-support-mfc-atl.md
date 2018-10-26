@@ -13,9 +13,9 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Installing Database Support (MFC/ATL)
 
-Visual C++ does not include any database products. To  
-  
- 
-## See Also  
+Visual C++ does not include any database products. To
+
+
+## See Also
 
 [Data Access](data-access-in-cpp.md)

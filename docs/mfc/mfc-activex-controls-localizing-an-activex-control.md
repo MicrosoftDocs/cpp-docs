@@ -53,7 +53,7 @@ To create multiple localized type libraries you can add any localized .IDL files
 
 1. With your control project open, on the **Project** menu, click **Add Existing Item**.
 
-     The **Add Existing Item** dialog box appears.
+   The **Add Existing Item** dialog box appears.
 
 1. If necessary, select the drive and directory to view.
 

@@ -63,4 +63,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 [IDL Attributes](idl-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
-[ProgID Key](/windows/desktop/com/-progid--key)  
+[ProgID Key](/windows/desktop/com/-progid--key)

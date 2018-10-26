@@ -193,5 +193,3 @@ Call this method to search for a map element with a key that exactly matches the
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

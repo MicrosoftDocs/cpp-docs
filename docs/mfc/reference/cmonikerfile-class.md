@@ -152,7 +152,6 @@ virtual BOOL Open(
     LPCTSTR lpszURL,
     CFileException* pError = NULL);
 
-
 virtual BOOL Open(
     IMoniker* pMoniker,
     CFileException* pError = NULL);

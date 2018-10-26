@@ -56,4 +56,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 [first_is](first-is.md)<br/>
 [last_is](last-is.md)<br/>
 [max_is](max-is.md)<br/>
-[length_is](length-is.md)  
+[length_is](length-is.md)

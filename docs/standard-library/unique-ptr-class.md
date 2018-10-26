@@ -60,7 +60,6 @@ public:
     unique_ptr& operator=(nullptr_t) noexcept;
     T& operator[](size_t i) const;
 
-
     pointer get() const noexcept;
     deleter_type& get_deleter() noexcept;
     const deleter_type& get_deleter() const noexcept;

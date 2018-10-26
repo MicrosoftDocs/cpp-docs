@@ -287,7 +287,6 @@ void AddPlace(
     LPCWSTR lpszFolder,
     FDAP fdap = FDAP_TOP) throw();
 
-
 void AddPlace(
     IShellItem* psi,
     FDAP fdap = FDAP_TOP) throw();
@@ -1344,7 +1343,6 @@ void SetControlText(
     int nID,
     LPCSTR lpsz);
 
-
 void SetControlText(
     int nID,
     const wchar_t *lpsz);
@@ -1444,7 +1442,6 @@ Sets the dialog box template for the [CFileDialog](../../mfc/reference/cfiledial
 void SetTemplate(
     UINT nWin3ID,
     UINT nWin4ID);
-
 
 void SetTemplate(
     LPCTSTR lpWin3ID,

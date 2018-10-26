@@ -65,7 +65,7 @@ If you have a Windows 8.1 Store App, you can use this procedure to get it workin
     #if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)
     ```
 
-     These statements respectively apply to UWP apps, Windows Phone Store apps, both, or neither (classic Win32 desktop only). These macros are only available in Windows SDK 8.1 and later, so if your code needs to compile with earlier versions of the Windows SDK or for other platforms besides Windows, then you should also consider the case that none of them are defined.
+   These statements respectively apply to UWP apps, Windows Phone Store apps, both, or neither (classic Win32 desktop only). These macros are only available in Windows SDK 8.1 and later, so if your code needs to compile with earlier versions of the Windows SDK or for other platforms besides Windows, then you should also consider the case that none of them are defined.
 
 11. Run and debug the app on an emulator or physical device, for each type of device that your app supports. To run an emulator, you need to run Visual Studio on a physical computer, not a virtual machine.
 
@@ -110,4 +110,4 @@ If you created a new UWP project using Visual Studio, you should not see this er
 ## See also
 
 [Visual C++ Porting Guide](../porting/porting-to-the-universal-windows-platform-cpp.md)<br/>
-[Develop apps for the Universal Windows Platform (UWP)](/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp)  
+[Develop apps for the Universal Windows Platform (UWP)](/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp)

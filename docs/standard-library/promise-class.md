@@ -1,7 +1,7 @@
 ---
 title: "promise Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 f1_keywords: ["future/std::promise", "future/std::promise::promise", "future/std::promise::get_future", "future/std::promise::set_exception", "future/std::promise::set_exception_at_thread_exit", "future/std::promise::set_value", "future/std::promise::set_value_at_thread_exit", "future/std::promise::swap"]
@@ -114,7 +114,7 @@ A `promise` object.
 
 ### Remarks
 
-The first constructor constructs an *empty*`promise` object.
+The first constructor constructs an *empty* `promise` object.
 
 The second constructor constructs an empty `promise` object and uses *Al* for memory allocation.
 

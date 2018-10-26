@@ -23,7 +23,6 @@ Before an application can use OLE system services, it must initialize the OLE sy
 |[AfxOleInit](#afxoleinit)|Initializes the OLE libraries.|
 |[AfxEnableControlContainer](#afxenablecontrolcontainer)|Call this function in your application object's `InitInstance` function to enable support for containment of OLE controls.|
 
-
 ## <a name="afxenablecontrolcontainer"></a> AfxEnableControlContainer
 
 Call this function in your application object's `InitInstance` function to enable support for containment of OLE controls.
@@ -41,7 +40,6 @@ For more information about OLE controls (now called ActiveX controls), see [Acti
 ### Requirements
 
 **Header:** afxdisp.h
-
 
 ##  <a name="afxoleinit"></a>  AfxOleInit
 

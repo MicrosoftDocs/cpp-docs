@@ -263,11 +263,9 @@ For the Release version of the library, operator **delete** frees the memory all
 ```
 void PASCAL operator delete(void* p);
 
-
 void PASCAL operator delete(
     void* p,
     void* pPlace);
-
 
 void PASCAL operator delete(
     void* p,
@@ -302,7 +300,6 @@ For the Release version of the library, operator **new** performs an optimal mem
 ```
 void* PASCAL operator new(size_t nSize);
 void* PASCAL operator new(size_t, void* p);
-
 
 void* PASCAL operator new(
     size_t nSize,
@@ -365,6 +362,4 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 ## See Also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
-
 

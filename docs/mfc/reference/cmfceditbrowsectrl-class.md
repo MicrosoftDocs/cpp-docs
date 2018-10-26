@@ -272,7 +272,6 @@ void SetBrowseButtonImage(
     HICON hIcon,
     BOOL bAutoDestroy= TRUE);
 
-
 void SetBrowseButtonImage(
     HBITMAP hBitmap,
     BOOL bAutoDestroy= TRUE);

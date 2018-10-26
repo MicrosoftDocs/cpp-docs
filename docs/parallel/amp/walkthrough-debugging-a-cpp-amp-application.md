@@ -236,28 +236,28 @@ GPU breakpoint
 
 1. To open the **GPU Threads** window, on the menu bar, choose **Debug** > **Windows** > **GPU Threads**.
 
-     You can inspect the state the GPU threads in the **GPU Threads** window that appears.
+   You can inspect the state the GPU threads in the **GPU Threads** window that appears.
 
 2. Dock the **GPU Threads** window at the bottom of Visual Studio. Choose the **Expand Thread Switch** button to display the tile and thread text boxes. The **GPU Threads** window shows the total number of active and blocked GPU threads, as shown in the following illustration.
 
      ![GPU Threads window with 4 active threads](../../parallel/amp/media/campc.png "campc")
 GPU Threads window
 
-     There are 313 tiles allocated for this computation. Each tile contains 32 threads. Because local GPU debugging occurs on a software emulator, there are four active GPU threads. The four threads execute the instructions simultaneously and then move on together to the next instruction.
+   There are 313 tiles allocated for this computation. Each tile contains 32 threads. Because local GPU debugging occurs on a software emulator, there are four active GPU threads. The four threads execute the instructions simultaneously and then move on together to the next instruction.
 
-     In the **GPU Threads** window, there are four GPU threads active and 28 GPU threads blocked at the [tile_barrier::wait](reference/tile-barrier-class.md#wait) statement defined at about line 21 (`t_idx.barrier.wait();`). All 32 GPU threads belong to the first tile, `tile[0]`. An arrow points to the row that includes the current thread. To switch to a different thread, use one of the following methods:
+   In the **GPU Threads** window, there are four GPU threads active and 28 GPU threads blocked at the [tile_barrier::wait](reference/tile-barrier-class.md#wait) statement defined at about line 21 (`t_idx.barrier.wait();`). All 32 GPU threads belong to the first tile, `tile[0]`. An arrow points to the row that includes the current thread. To switch to a different thread, use one of the following methods:
 
     - In the row for the thread to switch to in the **GPU Threads** window, open the shortcut menu and choose **Switch To Thread**. If the row represents more than one thread, you will switch to the first thread according to the thread coordinates.
 
     - Enter the tile and thread values of the thread in the corresponding text boxes and then choose the **Switch Thread** button.
 
-     The **Call Stack** window displays the call stack of the current GPU thread.
+   The **Call Stack** window displays the call stack of the current GPU thread.
 
 ### To use the Parallel Stacks window
 
 1. To open the **Parallel Stacks** window, on the menu bar, choose **Debug** > **Windows** > **Parallel Stacks**.
 
-     You can use the **Parallel Stacks** window to simultaneously inspect the stack frames of multiple GPU threads.
+   You can use the **Parallel Stacks** window to simultaneously inspect the stack frames of multiple GPU threads.
 
 2. Dock the **Parallel Stacks** window at the bottom of Visual Studio.
 
@@ -266,20 +266,20 @@ GPU Threads window
      ![Parallel Stacks window with 4 active threads](../../parallel/amp/media/campd.png "campd")
 Parallel Stacks window
 
-     32 threads went from `_kernel_stub` to the lambda statement in the `parallel_for_each` function call and then to the `sum_kernel_tiled` function, where the parallel reduction occurs. 28 out of the 32 threads have progressed to the [tile_barrier::wait](reference/tile-barrier-class.md#wait) statement and remain blocked at line 22, whereas the other 4 threads remain active in the `sum_kernel_tiled` function at line 30.
+   32 threads went from `_kernel_stub` to the lambda statement in the `parallel_for_each` function call and then to the `sum_kernel_tiled` function, where the parallel reduction occurs. 28 out of the 32 threads have progressed to the [tile_barrier::wait](reference/tile-barrier-class.md#wait) statement and remain blocked at line 22, whereas the other 4 threads remain active in the `sum_kernel_tiled` function at line 30.
 
-     You can inspect the properties of a GPU thread that are available in the **GPU Threads** window in the rich DataTip of the **Parallel Stacks** window. To do this, rest the mouse pointer on the stack frame of **sum_kernel_tiled**. The following illustration shows the DataTip.
+   You can inspect the properties of a GPU thread that are available in the **GPU Threads** window in the rich DataTip of the **Parallel Stacks** window. To do this, rest the mouse pointer on the stack frame of **sum_kernel_tiled**. The following illustration shows the DataTip.
 
      ![DataTip for Parallel Stacks window](../../parallel/amp/media/campe.png "campe")
 GPU thread DataTip
 
-     For more information about the **Parallel Stacks** window, see [Using the Parallel Stacks Window](/visualstudio/debugger/using-the-parallel-stacks-window).
+   For more information about the **Parallel Stacks** window, see [Using the Parallel Stacks Window](/visualstudio/debugger/using-the-parallel-stacks-window).
 
 ### To use the Parallel Watch window
 
 1. To open the **Parallel Watch** window, on the menu bar, choose **Debug** > **Windows** > **Parallel Watch** > **Parallel Watch 1**.
 
-     You can use the **Parallel Watch** window to inspect the values of an expression across multiple threads.
+   You can use the **Parallel Watch** window to inspect the values of an expression across multiple threads.
 
 2. Dock the **Parallel Watch 1** window to the bottom of Visual Studio. There are 32 rows in the table of the **Parallel Watch** window. Each corresponds to a GPU thread that appeared in both the GPU Threads window and the **Parallel Stacks** window. Now, you can enter expressions whose values you want to inspect across all 32 GPU threads.
 
@@ -289,18 +289,18 @@ GPU thread DataTip
 
 5. Select the **Add Watch** column header again, type `localA[localIdx[0]]`, and then choose the **Enter** key.
 
-     You can sort by a specified expression by selecting its corresponding column header.
+   You can sort by a specified expression by selecting its corresponding column header.
 
-     Select the **localA[localIdx[0]]** column header to sort the column. The following illustration shows the results of sorting by **localA[localIdx[0]]**.
+   Select the **localA[localIdx[0]]** column header to sort the column. The following illustration shows the results of sorting by **localA[localIdx[0]]**.
 
      ![Parallel Watch window with sorted results](../../parallel/amp/media/campf.png "campf")
 Results of sort
 
-     You can export the content in the **Parallel Watch** window to Excel by choosing the **Excel** button and then choosing **Open in Excel**. If you have Excel installed on your development computer, this opens an Excel worksheet that contains the content.
+   You can export the content in the **Parallel Watch** window to Excel by choosing the **Excel** button and then choosing **Open in Excel**. If you have Excel installed on your development computer, this opens an Excel worksheet that contains the content.
 
 6. In the upper-right corner of the **Parallel Watch** window, there's a filter control that you can use to filter the content by using Boolean expressions. Enter `localA[localIdx[0]] > 20000` in the filter control text box and then choose the **Enter** key.
 
-     The window now contains only threads on which the `localA[localIdx[0]]` value is greater than 20000. The content is still sorted by the `localA[localIdx[0]]` column, which is the sorting action you performed earlier.
+   The window now contains only threads on which the `localA[localIdx[0]]` value is greater than 20000. The content is still sorted by the `localA[localIdx[0]]` column, which is the sorting action you performed earlier.
 
 ## Flagging GPU Threads
 
@@ -314,21 +314,21 @@ You can mark specific GPU threads by flagging them in the **GPU Threads** window
 
 3. Choose the flag symbol on the left side of the row that contains the four threads that are now active.
 
-     The following illustration shows the four active flagged threads in the **GPU Threads** window.
+   The following illustration shows the four active flagged threads in the **GPU Threads** window.
 
      ![GPU Threads window with flagged threads](../../parallel/amp/media/campg.png "campg")
 Active threads in the GPU Threads window
 
-     The **Parallel Watch** window and the DataTip of the **Parallel Stacks** window both indicate the flagged threads.
+   The **Parallel Watch** window and the DataTip of the **Parallel Stacks** window both indicate the flagged threads.
 
 4. If you want to focus on the four threads that you flagged, you can choose to show, in the **GPU Threads**, **Parallel Watch**, and **Parallel Stacks** windows, only the flagged threads.
 
-     Choose the **Show Flagged Only** button on any of the windows or on the **Debug Location** toolbar. The following illustration shows the **Show Flagged Only** button on the **Debug Location** toolbar.
+   Choose the **Show Flagged Only** button on any of the windows or on the **Debug Location** toolbar. The following illustration shows the **Show Flagged Only** button on the **Debug Location** toolbar.
 
      ![Debug Location toolbar with Show Only Flagged icon](../../parallel/amp/media/camph.png "camph")
 **Show Flagged Only** button
 
-     Now the **GPU Threads**, **Parallel Watch**, and **Parallel Stacks** windows display only the flagged threads.
+   Now the **GPU Threads**, **Parallel Watch**, and **Parallel Stacks** windows display only the flagged threads.
 
 ## Freezing and Thawing GPU Threads
 
@@ -342,12 +342,12 @@ You can freeze (suspend) and thaw (resume) GPU threads from either the **GPU Thr
 
 3. Open the shortcut menu for the active row and then choose **Freeze**.
 
-     The following illustration of the **GPU Threads** window shows that all four threads are frozen.
+   The following illustration of the **GPU Threads** window shows that all four threads are frozen.
 
      ![GPU Threads windows showing frozen threads](../../parallel/amp/media/campk.png "campk")
 Frozen threads in the **GPU Threads** window
 
-     Similarly, the **Parallel Watch** window shows that all four threads are frozen.
+   Similarly, the **Parallel Watch** window shows that all four threads are frozen.
 
 4. On the menu bar, choose **Debug** > **Continue** to allow the next four GPU threads to progress past the barrier at line 22 and to reach the breakpoint at line 30. The **GPU Threads** window shows that the four previously frozen threads remain frozen and in the active state.
 
@@ -359,7 +359,7 @@ Frozen threads in the **GPU Threads** window
 
 1. On the shortcut menu for one of the threads in the **GPU Threads** window, choose **Group By**, **Address**.
 
-     The threads in the **GPU Threads** window are grouped by address. The address corresponds to the instruction in disassembly where each group of threads is located. 24 threads are at line 22 where the [tile_barrier::wait Method](reference/tile-barrier-class.md#wait) is executed. 12 threads are at the instruction for the barrier at line 32. Four of these threads are flagged. Eight threads are at the breakpoint at line 30. Four of these threads are frozen. The following illustration shows the grouped threads in the **GPU Threads** window.
+   The threads in the **GPU Threads** window are grouped by address. The address corresponds to the instruction in disassembly where each group of threads is located. 24 threads are at line 22 where the [tile_barrier::wait Method](reference/tile-barrier-class.md#wait) is executed. 12 threads are at the instruction for the barrier at line 32. Four of these threads are flagged. Eight threads are at the breakpoint at line 30. Four of these threads are frozen. The following illustration shows the grouped threads in the **GPU Threads** window.
 
      ![GPU Threads window with threads grouped by Address](../../parallel/amp/media/campl.png "campl")
 Grouped threads in the **GPU Threads** window
@@ -378,7 +378,7 @@ You run all the threads in a given tile to the line that contains the cursor by 
 
 3. On the shortcut menu for the **Code Editor**, choose **Run Current Tile To Cursor**.
 
-     The 24 threads that were previously blocked at the barrier at line 21 have progressed to line 32. This is shown in the **GPU Threads** window.
+   The 24 threads that were previously blocked at the barrier at line 21 have progressed to line 32. This is shown in the **GPU Threads** window.
 
 ## See Also
 

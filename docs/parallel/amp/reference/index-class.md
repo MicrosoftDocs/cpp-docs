@@ -131,6 +131,7 @@ index operator--(
    int
 ) restrict(amp,cpu);
 ```
+
 ### Return values
 
 For the prefix operator, the index object (*this). For the suffix operator, a new index object.
@@ -144,6 +145,7 @@ index<_Rank>& operator%=(
    int _Rhs
 ) restrict(cpu, amp);
 ```
+
 ### Parameters
 
 *_Rhs*<br/>
@@ -175,6 +177,7 @@ index<_Rank>& operator/=(
    int _Rhs
 ) restrict(amp,cpu);
 ```
+
 ### Parameters
 
 *_Rhs*<br/>
@@ -224,6 +227,7 @@ index<_Rank> operator++(
    int
 ) restrict(amp,cpu);
 ```
+
 ### Return Value
 
 For the prefix operator, the index object (*this). For the suffix operator, a new index object.
@@ -240,6 +244,7 @@ index<_Rank>& operator+=(
    int _Rhs
 ) restrict(amp,cpu);
 ```
+
 ### Parameters
 
 *_Rhs*<br/>
@@ -257,6 +262,7 @@ index<_Rank>& operator=(
    const index<_Rank>& _Other
 ) restrict(amp,cpu);
 ```
+
 ### Parameters
 
 *_Other*<br/>
@@ -278,6 +284,7 @@ index<_Rank>& operator-=(
    int _Rhs
 ) restrict(amp,cpu);
 ```
+
 ### Parameters
 
 *_Rhs*<br/>
@@ -292,6 +299,7 @@ The index object.
 ```
 static const int rank = _Rank;
 ```
+
 ## See Also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

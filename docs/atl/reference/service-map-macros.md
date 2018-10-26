@@ -20,7 +20,7 @@ These macros define service maps and entries.
 |[BEGIN_SERVICE_MAP](#begin_service_map)|Marks the beginning of an ATL service map.|
 |[END_SERVICE_MAP](#end_service_map)|Marks the end of an ATL service map.|
 |[SERVICE_ENTRY](#service_entry)|Indicates that the object supports a specific service ID.|
-|[SERVICE_ENTRY_CHAIN](#service_entry_chain)|Instructs [IServiceProviderImpl::QueryService](#queryservice) to chain to the specified object.|  
+|[SERVICE_ENTRY_CHAIN](#service_entry_chain)|Instructs [IServiceProviderImpl::QueryService](#queryservice) to chain to the specified object.|
 
 ## Requirements
 
@@ -102,7 +102,7 @@ See the example for [BEGIN_SERVICE_MAP](#begin_service_map).
 Creates or accesses the specified service and returns an interface pointer to the specified interface for the service.
 
 ```
-STDMETHOD(QueryService)( 
+STDMETHOD(QueryService)(
     REFGUID guidService,
     REFIID riid,
     void** ppvObject);

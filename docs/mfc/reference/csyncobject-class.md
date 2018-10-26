@@ -155,5 +155,3 @@ The default implementation of the declaration with two parameters always returns
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

@@ -38,7 +38,6 @@ In addition, this support presents the following limitations:
 
 - Only the CRT DLL model is supported for code compiled with **/clr**. There are no static CRT libraries that support **/clr** builds.
 
-
 ## See also
 
 - [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md)

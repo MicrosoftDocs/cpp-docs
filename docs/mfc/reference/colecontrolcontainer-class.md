@@ -99,7 +99,6 @@ virtual void AttachControlSite(
     CWnd* pWnd,
     UINT nIDC = 0);
 
-
 void AttachControlSite(
     CWnd* pWnd,
     UINT nIDC = 0);
@@ -216,7 +215,6 @@ BOOL CreateControl(
     BOOL bStorage =FALSE,
     BSTR bstrLicKey =NULL,
     COleControlSite** ppNewSite =NULL);
-
 
 BOOL CreateControl(
     CWnd* pWndCtrl,

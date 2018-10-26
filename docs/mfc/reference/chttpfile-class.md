@@ -76,7 +76,6 @@ BOOL AddRequestHeaders(
     DWORD dwFlags = HTTP_ADDREQ_FLAG_ADD_IF_NEW,
     int dwHeadersLen = -1);
 
-
 BOOL AddRequestHeaders(
     CString& str,
     DWORD dwFlags = HTTP_ADDREQ_FLAG_ADD_IF_NEW);
@@ -127,7 +126,6 @@ CHttpFile(
     LPCTSTR pstrServer,
     LPCTSTR pstrVerb,
     DWORD_PTR dwContext);
-
 
 CHttpFile(
     HINTERNET hFile,
@@ -416,7 +414,6 @@ BOOL SendRequest(
     LPVOID lpOptional = NULL,
     DWORD dwOptionalLen = 0);
 
-
 BOOL SendRequest(
     CString& strHeaders,
     LPVOID lpOptional = NULL,
@@ -453,7 +450,6 @@ BOOL SendRequestEx(
     DWORD dwTotalLen,
     DWORD dwFlags = HSR_INITIATE,
     DWORD_PTR dwContext = 1);
-
 
 BOOL SendRequestEx(
     LPINTERNET_BUFFERS lpBuffIn,

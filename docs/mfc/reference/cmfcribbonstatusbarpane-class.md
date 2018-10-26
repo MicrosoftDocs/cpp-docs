@@ -196,7 +196,7 @@ virtual void OnDrawBorder(CDC*);
 
 ### Parameters
 
-[in] *CDC**
+[in] *CDC&#42;*<br/>
 
 ### Remarks
 
@@ -210,7 +210,7 @@ virtual COLORREF OnFillBackground(CDC* pDC);
 
 ### Parameters
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### Return Value
 

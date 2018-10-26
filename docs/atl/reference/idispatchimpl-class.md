@@ -26,7 +26,7 @@ template<class T,
         const IID* piid= &__uuidof(T),
         const GUID* plibid = &CAtlModule::m_libid,
         WORD wMajor = 1,
-        WORD wMinor = 0, 
+        WORD wMinor = 0,
         class tihclass = CComTypeInfoHolder>
 class ATL_NO_VTABLE IDispatchImpl : public T
 ```

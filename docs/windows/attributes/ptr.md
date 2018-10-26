@@ -48,4 +48,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 [IDL Attributes](idl-attributes.md)<br/>
 [Interface Attributes](interface-attributes.md)<br/>
 [Method Attributes](method-attributes.md)<br/>
-[Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)  
+[Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)

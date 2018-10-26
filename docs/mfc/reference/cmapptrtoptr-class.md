@@ -87,5 +87,3 @@ For more information on `CMapPtrToPtr`, see the article [Collections](../../mfc/
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

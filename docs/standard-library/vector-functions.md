@@ -9,7 +9,6 @@ helpviewer_keywords: ["std::swap [vector]"]
 ---
 # &lt;vector&gt; functions
 
-
 ## <a name="swap"></a>  swap
 
 Exchanges the elements of two vectors.

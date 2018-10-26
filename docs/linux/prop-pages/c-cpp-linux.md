@@ -77,4 +77,4 @@ Property | Description | Choices
 Compile As | Select compile language option for .c and .cpp files.  'Default' will detect based on .c or .cpp extention. (-x c, -x c++) | **Default** - Default.<br/>**Compile as C Code** - Compile as C Code.<br/>**Compile as C++ Code** - Compile as C++ Code.<br/>
 Forced Include Files | One or more forced include files (-include [name])
 
-## Additional Options 
+## Additional Options

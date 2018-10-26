@@ -23,11 +23,11 @@ This topic assumes you have previously completed [How to: Create the User Contro
 
 1. Add the following line to the public overrides section of the `CMFC02View` class declaration in MFC02View.h.
 
-     `gcroot<WindowsFormsControlLibrary1::UserControl1 ^> m_ViewControl;`
+   `gcroot<WindowsFormsControlLibrary1::UserControl1 ^> m_ViewControl;`
 
 1. Add an override for OnInitialupdate.
 
-     Display the **Properties** window (F4). In **Class View** (CTRL+SHIFT+C), select CMFC02View class. In the **Properties** window, select the icon for Overrides. Scoll down the list to OnInitialUpdate. Click on the drop down list and select \<Add>. In MFC02View.cpp. make sure the body of the OnInitialUpdate function is as follows:
+   Display the **Properties** window (F4). In **Class View** (CTRL+SHIFT+C), select CMFC02View class. In the **Properties** window, select the icon for Overrides. Scoll down the list to OnInitialUpdate. Click on the drop down list and select \<Add>. In MFC02View.cpp. make sure the body of the OnInitialUpdate function is as follows:
 
     ```
     CWinFormsView::OnInitialUpdate();
@@ -37,11 +37,11 @@ This topic assumes you have previously completed [How to: Create the User Contro
 
 1. Build and run the project.
 
-     On the **Build** menu, click **Build Solution**.
+   On the **Build** menu, click **Build Solution**.
 
-     On the **Debug** menu, click **Start without debugging**.
+   On the **Debug** menu, click **Start without debugging**.
 
-     Notice that the text box is now initialized.
+   Notice that the text box is now initialized.
 
 ## See Also
 

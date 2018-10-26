@@ -1,7 +1,7 @@
 ---
 title: "hash_multimap Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 f1_keywords: ["hash_map/stdext::hash_multimap", "hash_map/stdext::hash_multimap::allocator_type", "hash_map/stdext::hash_multimap::const_iterator", "hash_map/stdext::hash_multimap::const_pointer", "hash_map/stdext::hash_multimap::const_reference", "hash_map/stdext::hash_multimap::const_reverse_iterator", "hash_map/stdext::hash_multimap::difference_type", "hash_map/stdext::hash_multimap::iterator", "hash_map/stdext::hash_multimap::key_compare", "hash_map/stdext::hash_multimap::key_type", "hash_map/stdext::hash_multimap::mapped_type", "hash_map/stdext::hash_multimap::pointer", "hash_map/stdext::hash_multimap::reference", "hash_map/stdext::hash_multimap::reverse_iterator", "hash_map/stdext::hash_multimap::size_type", "hash_map/stdext::hash_multimap::value_type", "hash_map/stdext::hash_multimap::begin", "hash_map/stdext::hash_multimap::cbegin", "hash_map/stdext::hash_multimap::cend", "hash_map/stdext::hash_multimap::clear", "hash_map/stdext::hash_multimap::count", "hash_map/stdext::hash_multimap::crbegin", "hash_map/stdext::hash_multimap::crend", "hash_map/stdext::hash_multimap::emplace", "hash_map/stdext::hash_multimap::emplace_hint", "hash_map/stdext::hash_multimap::empty", "hash_map/stdext::hash_multimap::end", "hash_map/stdext::hash_multimap::equal_range", "hash_map/stdext::hash_multimap::erase", "hash_map/stdext::hash_multimap::find", "hash_map/stdext::hash_multimap::get_allocator", "hash_map/stdext::hash_multimap::insert", "hash_map/stdext::hash_multimap::key_comp", "hash_map/stdext::hash_multimap::lower_bound", "hash_map/stdext::hash_multimap::max_size", "hash_map/stdext::hash_multimap::rbegin", "hash_map/stdext::hash_multimap::rend", "hash_map/stdext::hash_multimap::size", "hash_map/stdext::hash_multimap::swap", "hash_map/stdext::hash_multimap::upper_bound", "hash_map/stdext::hash_multimap::value_comp"]
@@ -1406,7 +1406,6 @@ hash_multimap(
     initializer_list<Type> IList,
     const Compare& Comp);
 
-
 hash_multimap(
     initializer_list<Type> IList,
     const Compare& Comp,
@@ -2386,9 +2385,9 @@ Returns the comparison function object that a hash_multimap uses to order its el
 
 ### Remarks
 
-For a hash_multimap *m*, if two elements *e*1( *k*1 *, d*1) and *e*2( *k*2 *, d*2) are objects of type [value_type](#value_type), where *k*1 and *k*2 are their keys of type [key_type](#key_type) and `d`1 and `d`2 are their data of type [mapped_type](#mapped_type), then *m.*`value_comp`( )( *e*1 *, e*2) is equivalent to *m.*`key_comp`( ) ( *k*1 *, k*2). A stored object defines the member function
+For a hash_multimap *m*, if two elements *e1* (*k1*, *d1*) and *e2*(*k2*, *d2*) are objects of type [value_type](#value_type), where *k1* and *k2* are their keys of type [key_type](#key_type) and *d1* and *d2* are their data of type [mapped_type](#mapped_type), then `m.value_comp()(e1, e2)` is equivalent to `m.key_comp()(k1, k2)`. A stored object defines the member function
 
-**bool operator**( **value_type&**`left`, **value_type&** `right`);
+`bool operator( value_type& left, value_type& right);`
 
 which returns **true** if the key value of `left` precedes and is not equal to the key value of `right` in the sort order.
 

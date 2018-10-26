@@ -51,4 +51,4 @@ None
 
 ## See Also
 
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)  
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)

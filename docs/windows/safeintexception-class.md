@@ -1,7 +1,7 @@
 ---
 title: "SafeIntException Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/27/2018"
+ms.date: "10/22/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["SafeIntException Class", "SafeIntException", "SafeIntException.SafeIntException", "SafeIntException::SafeIntException"]
@@ -15,6 +15,9 @@ ms.workload: ["cplusplus", "uwp"]
 # SafeIntException Class
 
 The `SafeInt` class uses `SafeIntException` to identify why a mathematical operation cannot be completed.
+
+> [!NOTE]
+> The latest version of this library is located at [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt).
 
 ## Syntax
 

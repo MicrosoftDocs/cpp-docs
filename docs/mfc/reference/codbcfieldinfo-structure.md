@@ -60,4 +60,3 @@ To retrieve this information, call [CRecordset::GetODBCFieldInfo](../../mfc/refe
 [CRecordset::GetODBCFieldInfo](../../mfc/reference/crecordset-class.md#getodbcfieldinfo)<br/>
 [CRecordset::GetFieldValue](../../mfc/reference/crecordset-class.md#getfieldvalue)
 
-

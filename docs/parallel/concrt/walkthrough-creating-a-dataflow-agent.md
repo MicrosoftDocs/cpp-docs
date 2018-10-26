@@ -67,7 +67,7 @@ The dataflow agent works by creating a network of message buffers, each of which
 
 [!code-cpp[concrt-dataflow-agent#6](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_3.cpp)]
 
-     The `countdown_event` class is shown later in this topic.
+   The `countdown_event` class is shown later in this topic.
 
 1. Create the message buffer objects that will participate in the dataflow network.
 

@@ -119,6 +119,7 @@ WeakReference(const WeakReference& otherArg);
 WeakReference(WeakReference&& otherArg);
 explicit WeakReference(const volatile ::Platform::Object^ const otherArg);
 ```
+
 ### Example
 
 ```cpp

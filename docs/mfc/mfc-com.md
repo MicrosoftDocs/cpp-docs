@@ -36,7 +36,7 @@ Active technologies include both client and server technologies, including the f
 
 - [Automation](../mfc/automation.md) (formerly known as OLE Automation) makes it possible for one application to manipulate objects implemented in another application, or to "expose" objects so they can be manipulated.
 
-     The automated object might be local or remote (on another machine accessible across a network). Automation is available for both OLE and COM objects.
+   The automated object might be local or remote (on another machine accessible across a network). Automation is available for both OLE and COM objects.
 
 - This section also provides information on how to write COM components using MFC, for example, in [Connection Points](../mfc/connection-points.md).
 

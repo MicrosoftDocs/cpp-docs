@@ -25,6 +25,7 @@ struct unary_function
    typedef Result result_type;
 };
 ```
+
 ## Remarks
 
 The template struct serves as a base for classes that define a member function of the form **result_type**`operator()`( **constargument_type&**) **const**.

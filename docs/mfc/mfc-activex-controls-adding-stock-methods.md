@@ -39,7 +39,7 @@ Adding a stock method is simple using the [Add Method Wizard](../ide/add-method-
 
 1. From the shortcut menu, click **Add** and then click **Add Method**.
 
-     This opens the Add Method Wizard.
+   This opens the Add Method Wizard.
 
 1. In the **Method Name** box, click **Refresh**.
 

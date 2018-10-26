@@ -81,6 +81,7 @@ void AddCommandRangeHandler(
     unsigned int cmdIDMax,
     CommandHandler^ cmdHandler);
 ```
+
 ### Parameters
 
 *cmdIDMin*<br/>
@@ -102,6 +103,7 @@ void AddCommandRangeUIHandler(
     unsigned int cmdIDMax,
     CommandUIHandler^ cmdUIHandler);
 ```
+
 ### Parameters
 
 *cmdIDMin*<br/>
@@ -123,6 +125,7 @@ void AddCommandUIHandler(
     unsigned int cmdID,
     CommandUIHandler^ cmdUIHandler);
 ```
+
 ### Parameters
 
 *cmdID*<br/>
@@ -140,6 +143,7 @@ Posts a message without waiting for it to be processed.
 ```
 void PostCommand(unsigned int command);
 ```
+
 ### Parameters
 
 *command*<br/>
@@ -148,13 +152,13 @@ The command ID of the message to be posted.
 
 This method asynchronously posts the message mapped to the ID specified by command. It calls CWnd::PostMessage to place the message in the window's message queue and then returns without waiting for the corresponding window to process the message.
 
-
 ## <a name="removecommandhandler"></a> ICommandSource::RemoveCommandHandler
 
 Removes a command handler from a command source object.
 ```
 void RemoveCommandHandler(unsigned int cmdID);
 ```
+
 ### Parameters
 
 *cmdID*<br/>
@@ -162,7 +166,6 @@ The command ID.
 ### Remarks
 
 This method removes the command handler mapped to cmdID from the command source object.
-
 
 ## <a name="removecommandrangecommandhandler"></a> ICommandSource::RemoveCommandRangeHandler
 
@@ -172,6 +175,7 @@ void RemoveCommandRangeUIHandler(
     unsigned int cmdIDMin,
     unsigned int cmdIDMax);
 ```
+
 ### Parameters
 
 *cmdIDMin*<br/>
@@ -190,6 +194,7 @@ void RemoveCommandRangeUIHandler(
     unsigned int cmdIDMin,
     unsigned int cmdIDMax);
 ```
+
 ### Parameters
 
 *cmdIDMin*<br/>
@@ -206,6 +211,7 @@ Removes a user interface command message handler from a command source object.
 ```
 void RemoveCommandUIHandler(unsigned int cmdID);
 ```
+
 ### Parameters
 
 *cmdID*<br/>
@@ -220,6 +226,7 @@ Sends a message and waits for it to be processed before returning.
 ```
 void SendCommand(unsigned int command);
 ```
+
 ### Parameters
 
 *command*<br/>

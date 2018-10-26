@@ -32,7 +32,6 @@ If the request is for zero bytes of storage, **operator new** returns a pointer 
 
 You can write a routine that attempts to free memory and retry the allocation; see [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) for more information. For more details on the recovery scheme, see the Handling insufficient memory section of this topic.
 
-
 The two scopes for **operator new** functions are described in the following table.
 
 ### Scope for operator new Functions

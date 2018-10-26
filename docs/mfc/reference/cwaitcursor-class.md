@@ -118,5 +118,3 @@ If you need to restore the wait cursor while in a function other than the one in
 [CWinApp::DoWaitCursor](../../mfc/reference/cwinapp-class.md#dowaitcursor)<br/>
 [How Do I: Change the Mouse Cursor in an Microsoft Foundation Class Application](http://go.microsoft.com/fwlink/p/?linkid=128044)
 
-
-

@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
-f1_keywords: ["VC.Project.VCXMLDataGeneratorTool.GeneratedProxyLanguage", "VC.Project.VCXMLDataGeneratorTool.Output", "VC.Project.VCXMLDataGeneratorTool.SupressStartupBanner"]
+f1_keywords: ["VC.Project.VCXMLDataGeneratorTool.GeneratedProxyLanguage", "VC.Project.VCXMLDataGeneratorTool.Output", "VC.Project.VCXMLDataGeneratorTool.SuppressStartupBanner"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["XML Data Generator Tool property page"]
 ms.assetid: b2ef1c12-3419-429d-bb9d-bd7d9ffe1ffb

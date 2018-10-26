@@ -23,7 +23,6 @@ Returns a reverse iterator that points just beyond the end of the controlled seq
 ```cpp
 const_reverse_iterator rbegin() const;
 
-
 reverse_iterator rbegin();
 ```
 

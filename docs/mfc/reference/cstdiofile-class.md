@@ -78,11 +78,9 @@ CStdioFile();
 CStdioFile(CAtlTransactionManager* pTM);
   CStdioFile(FILE* pOpenStream);
 
-
 CStdioFile(
     LPCTSTR lpszFileName,
     UINT nOpenFlags);
-
 
 CStdioFile(
     LPCTSTR lpszFileName,
@@ -143,7 +141,6 @@ virtual BOOL Open(
     LPCTSTR lpszFileName,
     UINT nOpenFlags,
     CFileException* pError = NULL);
-
 
 virtual BOOL Open(
     LPCTSTR lpszFileName,

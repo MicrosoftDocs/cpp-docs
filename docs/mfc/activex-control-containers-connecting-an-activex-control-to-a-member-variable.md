@@ -30,7 +30,7 @@ The easiest way to access an ActiveX control from within its control container a
 
 1. In the **Variable Name** box, enter a name.
 
-     For example, *m_circctl*.
+   For example, *m_circctl*.
 
 1. Click **Finish** to accept your choices and exit the Add Member Variable Wizard.
 

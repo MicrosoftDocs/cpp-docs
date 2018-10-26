@@ -13,10 +13,10 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Dynamically Determining Columns Returned to the Consumer
 
-The PROVIDER_COLUMN_ENTRY macros normally handle the `IColumnsInfo::GetColumnsInfo` call. However, because a consumer might choose to use bookmarks, the provider must be able to change the columns returned depending on whether the consumer asks for a bookmark.  
-  
-To handle the `IColumnsInfo::GetColumnsInfo` call, delete the PROVIDER_COLUMN_MAP, which defines a function `GetColumnInfo`, from the `CAgentMan` user record in *Custom*RS.h and replace it with the definition for your own `GetColumnInfo` function:  
-  
+The PROVIDER_COLUMN_ENTRY macros normally handle the `IColumnsInfo::GetColumnsInfo` call. However, because a consumer might choose to use bookmarks, the provider must be able to change the columns returned depending on whether the consumer asks for a bookmark.
+
+To handle the `IColumnsInfo::GetColumnsInfo` call, delete the PROVIDER_COLUMN_MAP, which defines a function `GetColumnInfo`, from the `CAgentMan` user record in CustomRS.h and replace it with the definition for your own `GetColumnInfo` function:
+
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
 // CustomRS.H  
@@ -105,44 +105,13 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(void* pThis, ULONG* pcCols)
 This example uses a static array to hold the column information. If the consumer doesn't want the bookmark column, one entry in the array is unused. To handle the information, you create two array macros: ADD_COLUMN_ENTRY and ADD_COLUMN_ENTRY_EX. ADD_COLUMN_ENTRY_EX takes an extra parameter, *flags*, that is needed if you designate a bookmark column.  
   
 ```cpp
-////////////////////////////////////////////////////////////////////////  
-// CustomRS.h  
-  
-#define ADD_COLUMN_ENTRY(ulCols, name, ordinal, colSize, type, precision, scale, guid, dataClass, member) \  
-   _rgColumns[ulCols].pwszName = (LPOLESTR)name; \  
-   _rgColumns[ulCols].pTypeInfo = (ITypeInfo*)NULL; \  
-   _rgColumns[ulCols].iOrdinal = (ULONG)ordinal; \  
-   _rgColumns[ulCols].dwFlags = 0; \  
-   _rgColumns[ulCols].ulColumnSize = (ULONG)colSize; \  
-   _rgColumns[ulCols].wType = (DBTYPE)type; \  
-   _rgColumns[ulCols].bPrecision = (BYTE)precision; \  
-   _rgColumns[ulCols].bScale = (BYTE)scale; \  
-   _rgColumns[ulCols].cbOffset = offsetof(dataClass, member);  
-  
-#define ADD_COLUMN_ENTRY_EX(ulCols, name, ordinal, colSize, type, precision, scale, guid, dataClass, member, flags) \  
-   _rgColumns[ulCols].pwszName = (LPOLESTR)name; \  
-   _rgColumns[ulCols].pTypeInfo = (ITypeInfo*)NULL; \  
-   _rgColumns[ulCols].iOrdinal = (ULONG)ordinal; \  
-   _rgColumns[ulCols].dwFlags = flags; \  
-   _rgColumns[ulCols].ulColumnSize = (ULONG)colSize; \  
-   _rgColumns[ulCols].wType = (DBTYPE)type; \  
-   _rgColumns[ulCols].bPrecision = (BYTE)precision; \  
-   _rgColumns[ulCols].bScale = (BYTE)scale; \  
-   _rgColumns[ulCols].cbOffset = offsetof(dataClass, member); \  
-   memset(&(_rgColumns[ulCols].columnid), 0, sizeof(DBID)); \  
-   _rgColumns[ulCols].columnid.uName.pwszName = (LPOLESTR)name;  
-```  
-  
-In the `GetColumnInfo` function, the bookmark macro is used like this:  
-  
-```cpp  
-ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Bookmark"), 0, sizeof(DWORD),  
-   DBTYPE_BYTES, 0, 0, GUID_NULL, CAgentMan, dwBookmark,   
-   DBCOLUMNFLAGS_ISBOOKMARK)  
-```  
-  
-You can now compile and run the enhanced provider. To test the provider, modify the test consumer as described in [Implementing a Simple Consumer](../../data/oledb/implementing-a-simple-consumer.md). Run the test consumer with the provider. Verify that the test consumer retrieves the proper strings from the provider when you click the **Run** button in the **Test Consumer** dialog box.  
-  
-## See Also  
+ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Bookmark"), 0, sizeof(DWORD),
+   DBTYPE_BYTES, 0, 0, GUID_NULL, CAgentMan, dwBookmark,
+   DBCOLUMNFLAGS_ISBOOKMARK)
+```
+
+You can now compile and run the enhanced provider. To test the provider, modify the test consumer as described in [Implementing a Simple Consumer](../../data/oledb/implementing-a-simple-consumer.md). Run the test consumer with the provider. Verify that the test consumer retrieves the proper strings from the provider when you click the **Run** button in the **Test Consumer** dialog box.
+
+## See Also
 
 [Enhancing the Simple Read-Only Provider](../../data/oledb/enhancing-the-simple-read-only-provider.md)<br/>

@@ -77,4 +77,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Interface Attributes](interface-attributes.md)<br/>
-[Method Attributes](method-attributes.md)  
+[Method Attributes](method-attributes.md)

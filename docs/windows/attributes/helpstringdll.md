@@ -64,4 +64,4 @@ For more information, see [Attribute Contexts](cpp-attributes-com-net.md#context
 [IDL Attributes](idl-attributes.md)<br/>
 [Interface Attributes](interface-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>
-[Method Attributes](method-attributes.md)  
+[Method Attributes](method-attributes.md)

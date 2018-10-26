@@ -138,7 +138,6 @@ The `CArray::Dump`, `CList::Dump`, and `CMap::Dump` functions call this if the d
 
 The default implementation does nothing. If the elements of your collection are derived from `CObject`, your override will typically iterate through the collection's elements, calling `Dump` for each element in turn.
 
-
 ### Requirements
 
   **Header** afxtempl.h

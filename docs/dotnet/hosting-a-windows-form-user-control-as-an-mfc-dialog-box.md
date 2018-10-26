@@ -23,35 +23,35 @@ For a sample application that shows Windows Forms used with MFC, see [MFC and Wi
 
 1. Create an MFC Application project.
 
-     On the **File** menu, select **New**, and then click **Project**. In the **Visual C++** folder, select **MFC Application**.
+   On the **File** menu, select **New**, and then click **Project**. In the **Visual C++** folder, select **MFC Application**.
 
-     In the **Name** box, enter `MFC03` and change the Solution setting to **Add to Solution**.Click **OK**.
+   In the **Name** box, enter `MFC03` and change the Solution setting to **Add to Solution**.Click **OK**.
 
-     In the **MFC Application Wizard**, accept all the defaults, and then click **Finish**. This creates an MFC application with a Multiple Document Interface.
+   In the **MFC Application Wizard**, accept all the defaults, and then click **Finish**. This creates an MFC application with a Multiple Document Interface.
 
 1. Configure the project.
 
-     In **Solution Explorer**, right-click the **MFC03** project node, and choose **Properties**. The **Property Pages** dialog box appears.
+   In **Solution Explorer**, right-click the **MFC03** project node, and choose **Properties**. The **Property Pages** dialog box appears.
 
-     In the **Property Pages** dialog box, in the **Configuration Properties** tree control, select **General**, then in the **Project Defaults** section, set **Common Language Runtime support** to **Common Language Runtime Support (/clr)**. Click **OK**.
+   In the **Property Pages** dialog box, in the **Configuration Properties** tree control, select **General**, then in the **Project Defaults** section, set **Common Language Runtime support** to **Common Language Runtime Support (/clr)**. Click **OK**.
 
 1. Add a reference to the .NET control.
 
-     In **Solution Explorer**, right-click the **MFC03** project node and choose **Add**, **References**. In the **Property Page**, click **Add New Reference**, select WindowsControlLibrary1 (under the **Projects** tab), and click **OK**. This adds a reference in the form of a [/FU](../build/reference/fu-name-forced-hash-using-file.md) compiler option so that the program will compile; it also copies WindowsControlLibrary1.dll into the `MFC03` project directory so that the program will run.
+   In **Solution Explorer**, right-click the **MFC03** project node and choose **Add**, **References**. In the **Property Page**, click **Add New Reference**, select WindowsControlLibrary1 (under the **Projects** tab), and click **OK**. This adds a reference in the form of a [/FU](../build/reference/fu-name-forced-hash-using-file.md) compiler option so that the program will compile; it also copies WindowsControlLibrary1.dll into the `MFC03` project directory so that the program will run.
 
 1. Add `#include <afxwinforms.h>` to stdafx.h, at the end of the existing `#include` statements.
 
 1. Add a new class that subclasses `CDialog`.
 
-     Right click on project name and add an MFC class (called CHostForWinForm) that subclasses `CDialog`. Since you do not need the dialog box resource, you can delete the resource ID (select **Resource View**, expand the **Dialog** folder and delete `IDD_HOSTFORWINFORM` resource.  Then, remove any references to the ID in code.).
+   Right click on project name and add an MFC class (called CHostForWinForm) that subclasses `CDialog`. Since you do not need the dialog box resource, you can delete the resource ID (select **Resource View**, expand the **Dialog** folder and delete `IDD_HOSTFORWINFORM` resource.  Then, remove any references to the ID in code.).
 
 1. Replace `CDialog` in CHostForWinForm.h and CHostForWinForm.cpp files with `CWinFormsDialog<WindowsControlLibrary1::UserControl1>`.
 
 1. Call DoModal on the CHostForWinForm class.
 
-     In MFC03.cpp, add `#include "HostForWinForm.h"`.
+   In MFC03.cpp, add `#include "HostForWinForm.h"`.
 
-     Before the return statement in the definition of CMFC03App::InitInstance, add:
+   Before the return statement in the definition of CMFC03App::InitInstance, add:
 
     ```cpp
     CHostForWinForm m_HostForWinForm;
@@ -60,15 +60,15 @@ For a sample application that shows Windows Forms used with MFC, see [MFC and Wi
 
 1. Build and run the project.
 
-     On the **Build** menu, click **Build Solution**.
+   On the **Build** menu, click **Build Solution**.
 
-     On the **Debug** menu, click **Start without debugging**.
+   On the **Debug** menu, click **Start without debugging**.
 
-     Next you will add code to monitor the state of a control on the Windows Forms from the MFC application.
+   Next you will add code to monitor the state of a control on the Windows Forms from the MFC application.
 
 9. Add a handler for OnInitDialog.
 
-     Display the **Properties** window (F4). In **Class View**, select CHostForWinForm. In the **Properties** window, select overrides and in the row for OnInitDialog, click in the left hand column and select \< Add >. This adds the following line to CHostForWinForm.h:
+   Display the **Properties** window (F4). In **Class View**, select CHostForWinForm. In the **Properties** window, select overrides and in the row for OnInitDialog, click in the left hand column and select \< Add >. This adds the following line to CHostForWinForm.h:
 
     ```cpp
     virtual BOOL OnInitDialog();
@@ -94,7 +94,7 @@ For a sample application that shows Windows Forms used with MFC, see [MFC and Wi
     END_DELEGATE_MAP()
     ```
 
-     In CHostForWinForm.cpp, add this definition:
+   In CHostForWinForm.cpp, add this definition:
 
     ```
     void CHostForWinForm::OnButton1( System::Object^ sender, System::EventArgs^ e )
@@ -105,7 +105,7 @@ For a sample application that shows Windows Forms used with MFC, see [MFC and Wi
 
 12. Build and run the project. When you click the button, which is on the Windows Form, code in the MFC application will run.
 
-     Next you will add code to display from the MFC code the value in the text box on the Windows Form.
+   Next you will add code to display from the MFC code the value in the text box on the Windows Form.
 
 13. In the public section of the CHostForWinForm class in CHostForWinForm.h, add the following declaration:
 

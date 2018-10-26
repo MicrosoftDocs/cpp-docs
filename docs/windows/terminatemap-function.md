@@ -22,7 +22,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 inline bool TerminateMap(
    _In_ ModuleBase *module,
    _In_opt_z_ const wchar_t *serverName,
-    bool forceTerminate) throw()  
+    bool forceTerminate) throw()
 ```
 
 ### Parameters

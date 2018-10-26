@@ -156,7 +156,6 @@ iterator begin();
 
 const_iterator begin() const;
 
-
 local_iterator begin(size_type nbucket);
 
 const_local_iterator begin(size_type nbucket) const;
@@ -982,7 +981,6 @@ iterator end();
 
 const_iterator end() const;
 
-
 local_iterator end(size_type nbucket);
 
 const_local_iterator end(size_type nbucket) const;
@@ -1344,19 +1342,16 @@ Inserts an element or a range of elements into an unordered_multimap.
 pair<iterator, bool> insert(
     const value_type& Val);
 
-
 // (2) single element, perfect forwarded
 template <class ValTy>
 pair<iterator, bool>
 insert(
     ValTy&& Val);
 
-
 // (3) single element with hint
 iterator insert(
     const_iterator Where,
     const value_type& Val);
-
 
 // (4) single element, perfect forwarded, with hint
 template <class ValTy>
@@ -1364,13 +1359,11 @@ iterator insert(
     const_iterator Where,
     ValTy&& Val);
 
-
 // (5) range
 template <class InputIterator>
 void insert(
     InputIterator First,
     InputIterator Last);
-
 
 // (6) initializer list
 void insert(
@@ -1862,7 +1855,6 @@ Gets or sets the maximum elements per bucket.
 
 ```cpp
 float max_load_factor() const;
-
 
 void max_load_factor(float factor);
 ```

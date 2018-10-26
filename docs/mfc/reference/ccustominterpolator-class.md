@@ -73,7 +73,6 @@ Constructs a custom interpolator object and sets all values to default 0.
 ```
 CCustomInterpolator();
 
-
 CCustomInterpolator(
     UI_ANIMATION_SECONDS duration,
     DOUBLE finalValue);

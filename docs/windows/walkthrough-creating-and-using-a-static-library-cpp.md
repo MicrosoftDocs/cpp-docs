@@ -85,7 +85,7 @@ An understanding of the fundamentals of the C++ language.
 
 1. On the menu bar, choose **File** > **New** > **Project**.
 
-1. In the left pane of the **New Project** dialog box, expand **Installed** > **Visual C++**, and then select **Windows Desktop**. In the center pane, select **Windows Desktop Wizard**. 
+1. In the left pane of the **New Project** dialog box, expand **Installed** > **Visual C++**, and then select **Windows Desktop**. In the center pane, select **Windows Desktop Wizard**.
 
    > [!NOTE]
    > For versions of Visual Studio older than 2017, in the **New Project** dialog box, expand **Installed** > **Templates** > **Visual C++**, and then select **Win32**. In the center pane, select **Win32 Console Application**.

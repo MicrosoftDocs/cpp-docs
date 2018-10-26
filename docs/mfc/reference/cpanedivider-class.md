@@ -113,19 +113,17 @@ The following example demonstrates how to get a `CPaneDivider` object from a `CW
 
 ##  <a name="setautohidemode"></a>  CPaneDivider::SetAutoHideMode
 
-
 ```
 void SetAutoHideMode(BOOL bMode);
 ```
 
 ### Parameters
 
-[in] *bMode*
+[in] *bMode*<br/>
 
 ### Remarks
 
 ##  <a name="setpanecontainermanager"></a>  CPaneDivider::SetPaneContainerManager
-
 
 ```
 void SetPaneContainerManager(CPaneContainerManager* p);
@@ -133,12 +131,11 @@ void SetPaneContainerManager(CPaneContainerManager* p);
 
 ### Parameters
 
-[in] *p*
+[in] *p*<br/>
 
 ### Remarks
 
 ##  <a name="addpane"></a>  CPaneDivider::AddPane
-
 
 ```
 virtual void AddPane(CDockablePane* pBar);
@@ -146,18 +143,16 @@ virtual void AddPane(CDockablePane* pBar);
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Remarks
 
 ##  <a name="addpanecontainer"></a>  CPaneDivider::AddPaneContainer
 
-
 ```
 virtual BOOL AddPaneContainer(
     CPaneContainerManager& barContainerManager,
     BOOL bOuterEdge);
-
 
 virtual BOOL AddPaneContainer(
     CDockablePane* pTargetBar,
@@ -167,10 +162,10 @@ virtual BOOL AddPaneContainer(
 
 ### Parameters
 
-*barContainerManager*<br/>
-[in] [in] *bOuterEdge*
-*pTargetBar*<br/>
-[in] [in] *dwAlignment*
+[in] *barContainerManager*<br/>
+[in] *bOuterEdge*<br/>
+[in] *pTargetBar*<br/>
+[in] *dwAlignment*<br/>
 
 ### Return Value
 
@@ -178,21 +173,19 @@ virtual BOOL AddPaneContainer(
 
 ##  <a name="addrecentpane"></a>  CPaneDivider::AddRecentPane
 
-
 ```
 virtual CDockablePane* AddRecentPane(CDockablePane* pBar);
 ```
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="calcexpecteddockedrect"></a>  CPaneDivider::CalcExpectedDockedRect
-
 
 ```
 virtual void CalcExpectedDockedRect(
@@ -205,16 +198,15 @@ virtual void CalcExpectedDockedRect(
 
 ### Parameters
 
-*pWndToDock*<br/>
-[in] [in] *ptMouse*
-*rectResult*<br/>
-[in] [in] *bDrawTab*
-[in] *ppTargetBar*
+[in] *pWndToDock*<br/>
+[in] *ptMouse*<br/>
+[in] *rectResult*<br/>
+[in] *bDrawTab*<br/>
+[in] *ppTargetBar*<br/>
 
 ### Remarks
 
 ##  <a name="calcfixedlayout"></a>  CPaneDivider::CalcFixedLayout
-
 
 ```
 virtual CSize CalcFixedLayout(
@@ -224,15 +216,14 @@ virtual CSize CalcFixedLayout(
 
 ### Parameters
 
-*bStretch*<br/>
-[in] [in] *bHorz*
+[in] *bStretch*<br/>
+[in] *bHorz*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="checkvisibility"></a>  CPaneDivider::CheckVisibility
-
 
 ```
 virtual BOOL CheckVisibility();
@@ -244,10 +235,8 @@ virtual BOOL CheckVisibility();
 
 ##  <a name="cpanedivider"></a>  CPaneDivider::CPaneDivider
 
-
 ```
 CPaneDivider();
-
 
 CPaneDivider(
     BOOL bDefaultSlider,
@@ -256,15 +245,14 @@ CPaneDivider(
 
 ### Parameters
 
-*bDefaultSlider*<br/>
-[in] [in] *pParent*
+[in] *bDefaultSlider*<br/>
+[in] *pParent*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="createex"></a>  CPaneDivider::CreateEx
-
 
 ```
 virtual BOOL CreateEx(
@@ -278,19 +266,18 @@ virtual BOOL CreateEx(
 
 ### Parameters
 
-*dwStyleEx*<br/>
-[in] [in] *dwStyle*
-*rect*<br/>
-[in] [in] *pParentWnd*
-*nID*<br/>
-[in] [in] *pContext*
+[in] *dwStyleEx*<br/>
+[in] *dwStyle*<br/>
+[in] *rect*<br/>
+[in] *pParentWnd*<br/>
+[in] *nID*<br/>
+[in] *pContext*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="doesallowdyninsertbefore"></a>  CPaneDivider::DoesAllowDynInsertBefore
-
 
 ```
 virtual BOOL DoesAllowDynInsertBefore() const;
@@ -302,7 +289,6 @@ virtual BOOL DoesAllowDynInsertBefore() const;
 
 ##  <a name="doescontainfloatingpane"></a>  CPaneDivider::DoesContainFloatingPane
 
-
 ```
 virtual BOOL DoesContainFloatingPane();
 ```
@@ -313,7 +299,6 @@ virtual BOOL DoesContainFloatingPane();
 
 ##  <a name="findpanecontainer"></a>  CPaneDivider::FindPaneContainer
 
-
 ```
 CPaneContainer* FindPaneContainer(
     CDockablePane* pBar,
@@ -322,8 +307,8 @@ CPaneContainer* FindPaneContainer(
 
 ### Parameters
 
-*pBar*<br/>
-[in] [in] *bLeftBar*
+[in] *pBar*<br/>
+[in] *bLeftBar*<br/>
 
 ### Return Value
 
@@ -331,21 +316,19 @@ CPaneContainer* FindPaneContainer(
 
 ##  <a name="findtabbedpane"></a>  CPaneDivider::FindTabbedPane
 
-
 ```
 CDockablePane* FindTabbedPane(UINT nID);
 ```
 
 ### Parameters
 
-[in] *nID*
+[in] *nID*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="getdefaultwidth"></a>  CPaneDivider::GetDefaultWidth
-
 
 ```
 static int __stdcall GetDefaultWidth();
@@ -356,7 +339,6 @@ static int __stdcall GetDefaultWidth();
 ### Remarks
 
 ##  <a name="getfirstpane"></a>  CPaneDivider::GetFirstPane
-
 
 ```
 const CBasePane* GetFirstPane() const;
@@ -385,7 +367,6 @@ This method should be called for default pane dividers only. A default pane divi
 
 ##  <a name="getpanedividerstyle"></a>  CPaneDivider::GetPaneDividerStyle
 
-
 ```
 DWORD GetPaneDividerStyle() const;
 ```
@@ -413,7 +394,6 @@ This method should be called for default pane dividers only. A default pane divi
 
 ##  <a name="getrootcontainerrect"></a>  CPaneDivider::GetRootContainerRect
 
-
 ```
 CRect GetRootContainerRect();
 ```
@@ -423,7 +403,6 @@ CRect GetRootContainerRect();
 ### Remarks
 
 ##  <a name="getwidth"></a>  CPaneDivider::GetWidth
-
 
 ```
 int GetWidth() const;
@@ -435,7 +414,6 @@ int GetWidth() const;
 
 ##  <a name="init"></a>  CPaneDivider::Init
 
-
 ```
 void Init(
     BOOL bDefaultSlider = FALSE,
@@ -444,13 +422,12 @@ void Init(
 
 ### Parameters
 
-*bDefaultSlider*<br/>
-[in] [in] *pParent*
+[in] *bDefaultSlider*<br/>
+[in] *pParent*<br/>
 
 ### Remarks
 
 ##  <a name="insertpane"></a>  CPaneDivider::InsertPane
-
 
 ```
 virtual BOOL InsertPane(
@@ -462,17 +439,16 @@ virtual BOOL InsertPane(
 
 ### Parameters
 
-*pBarToInsert*<br/>
-[in] [in] *pTargetBar*
-*dwAlignment*<br/>
-[in] [in] *lpRect*
+[in] *pBarToInsert*<br/>
+[in] *pTargetBar*<br/>
+[in] *dwAlignment*<br/>
+[in] *lpRect*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="isautohidemode"></a>  CPaneDivider::IsAutoHideMode
-
 
 ```
 BOOL IsAutoHideMode() const;
@@ -484,7 +460,6 @@ BOOL IsAutoHideMode() const;
 
 ##  <a name="isdefault"></a>  CPaneDivider::IsDefault
 
-
 ```
 BOOL IsDefault() const;
 ```
@@ -494,7 +469,6 @@ BOOL IsDefault() const;
 ### Remarks
 
 ##  <a name="ishorizontal"></a>  CPaneDivider::IsHorizontal
-
 
 ```
 BOOL IsHorizontal() const;
@@ -514,7 +488,6 @@ AFX_IMPORT_DATA static int m_nDefaultWidth;
 
 ##  <a name="move"></a>  CPaneDivider::Move
 
-
 ```
 virtual void Move(
     CPoint& ptOffset,
@@ -523,8 +496,8 @@ virtual void Move(
 
 ### Parameters
 
-*ptOffset*<br/>
-[in] [in] *bAdjustLayout*
+[in] *ptOffset*<br/>
+[in] *bAdjustLayout*<br/>
 
 ### Remarks
 
@@ -555,7 +528,6 @@ CPaneDivider::m_pSliderRTC = RUNTIME_CLASS(CMySpliter);
 
 ##  <a name="notifyaboutrelease"></a>  CPaneDivider::NotifyAboutRelease
 
-
 ```
 virtual void NotifyAboutRelease();
 ```
@@ -563,7 +535,6 @@ virtual void NotifyAboutRelease();
 ### Remarks
 
 ##  <a name="onshowpane"></a>  CPaneDivider::OnShowPane
-
 
 ```
 virtual void OnShowPane(
@@ -573,13 +544,12 @@ virtual void OnShowPane(
 
 ### Parameters
 
-*pBar*<br/>
-[in] [in] *bShow*
+[in] *pBar*<br/>
+[in] *bShow*<br/>
 
 ### Remarks
 
 ##  <a name="releaseemptypanecontainers"></a>  CPaneDivider::ReleaseEmptyPaneContainers
-
 
 ```
 void ReleaseEmptyPaneContainers();
@@ -589,19 +559,17 @@ void ReleaseEmptyPaneContainers();
 
 ##  <a name="removepane"></a>  CPaneDivider::RemovePane
 
-
 ```
 virtual void RemovePane(CDockablePane* pBar);
 ```
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Remarks
 
 ##  <a name="replacepane"></a>  CPaneDivider::ReplacePane
-
 
 ```
 virtual BOOL ReplacePane(
@@ -611,15 +579,14 @@ virtual BOOL ReplacePane(
 
 ### Parameters
 
-*pBarToReplace*<br/>
-[in] [in] *pBarToReplaceWith*
+[in] *pBarToReplace*<br/>
+[in] *pBarToReplaceWith*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="repositionpanes"></a>  CPaneDivider::RepositionPanes
-
 
 ```
 virtual void RepositionPanes(
@@ -629,13 +596,12 @@ virtual void RepositionPanes(
 
 ### Parameters
 
-*rectNew*<br/>
-[in] [in] *hdwp*
+[in] *rectNew*<br/>
+[in] *hdwp*<br/>
 
 ### Remarks
 
 ##  <a name="serialize"></a>  CPaneDivider::Serialize
-
 
 ```
 void Serialize(CArchive& ar);
@@ -643,12 +609,11 @@ void Serialize(CArchive& ar);
 
 ### Parameters
 
-[in] *ar*
+[in] *ar*<br/>
 
 ### Remarks
 
 ##  <a name="showwindow"></a>  CPaneDivider::ShowWindow
-
 
 ```
 void ShowWindow(int nCmdShow);
@@ -656,12 +621,11 @@ void ShowWindow(int nCmdShow);
 
 ### Parameters
 
-[in] *nCmdShow*
+[in] *nCmdShow*<br/>
 
 ### Remarks
 
 ##  <a name="storerecentdocksiteinfo"></a>  CPaneDivider::StoreRecentDockSiteInfo
-
 
 ```
 void StoreRecentDockSiteInfo(CDockablePane* pBar);
@@ -669,12 +633,11 @@ void StoreRecentDockSiteInfo(CDockablePane* pBar);
 
 ### Parameters
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### Remarks
 
 ##  <a name="storerecenttabrelatedinfo"></a>  CPaneDivider::StoreRecentTabRelatedInfo
-
 
 ```
 void StoreRecentTabRelatedInfo(
@@ -684,8 +647,8 @@ void StoreRecentTabRelatedInfo(
 
 ### Parameters
 
-*pDockingBar*<br/>
-[in] [in] *pTabbedBar*
+[in] *pDockingBar*<br/>
+[in] *pTabbedBar*<br/>
 
 ### Remarks
 

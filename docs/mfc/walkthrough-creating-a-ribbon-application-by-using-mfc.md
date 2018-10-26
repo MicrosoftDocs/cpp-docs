@@ -27,7 +27,7 @@ This walkthrough assumes that you have set Visual Studio to use **General Develo
 
 1. Set the following options in the **MFC Application Wizard**:
 
-    1. In the **Application Type** section, under **Visual style and colors**, select **Office 2007 (Blue theme)**. 
+    1. In the **Application Type** section, under **Visual style and colors**, select **Office 2007 (Blue theme)**.
 
     1. In the **Compound Document Support** section, make sure that **None** is selected.
 
@@ -35,7 +35,7 @@ This walkthrough assumes that you have set Visual Studio to use **General Develo
 
     1. In the **Database Support** section, make sure that **None** is selected.
 
-    1. In the **User Interface Features** section, make sure that **Use a ribbon** is selected. 
+    1. In the **User Interface Features** section, make sure that **Use a ribbon** is selected.
 
     1. By default, the **MFC Application Wizard** adds support for several docking panes. Because this walkthrough just teaches about the ribbon, you can remove these options from the application. In the **Advanced Features** section, clear all options.
 

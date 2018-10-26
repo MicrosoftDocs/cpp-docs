@@ -21,15 +21,15 @@ Visual C++ provides two ways for you to use WinInet. You can call the Win32 Inte
 
 - Download HTML pages.
 
-     HTTP is a protocol used to transfer HTML pages from a server to a client browser.
+   HTTP is a protocol used to transfer HTML pages from a server to a client browser.
 
 - Send FTP requests to upload or download files or get directory listings.
 
-     A typical request is an anonymous logon to download a file.
+   A typical request is an anonymous logon to download a file.
 
 - Use gopher's menu system for accessing resources on the Internet.
 
-     Menu items can be several types, including other menus, an indexed database you can search, a newsgroup, or a file.
+   Menu items can be several types, including other menus, an indexed database you can search, a newsgroup, or a file.
 
 For all three protocols, you establish a connection, make requests to the server, and close the connection.
 
@@ -39,7 +39,7 @@ For all three protocols, you establish a connection, make requests to the server
 
 - Use HTTP, FTP, and gopher protocols without programming directly to WinSock or TCP/IP.
 
-     Developers who use the Win32 Internet functions do not need to be familiar with TCP/IP or Windows Sockets. You can still program at the socket level, using WinSock and TCP/IP protocols directly, but it's even easier to use the MFC WinInet classes to access HTTP, FTP, and gopher protocols across the Internet. For many common operations, developers do not need to know the details of the particular protocol they are using.
+   Developers who use the Win32 Internet functions do not need to be familiar with TCP/IP or Windows Sockets. You can still program at the socket level, using WinSock and TCP/IP protocols directly, but it's even easier to use the MFC WinInet classes to access HTTP, FTP, and gopher protocols across the Internet. For many common operations, developers do not need to know the details of the particular protocol they are using.
 
 Many operations that can be performed by your computer as a client to other computers on the Internet can take a long time. The speed of these operations is usually limited by the speed of your network connection, but they can also be affected by other network traffic and the complexity of the operation. Connecting to a remote FTP server, for example, requires that your computer first look up the name of that server to find its address. Your application will then attempt to connect to the server at that address. Once the connection is opened, your computer and the remote server will initiate a conversation with the file transfer protocol before you can actually use the connection to retrieve files.
 

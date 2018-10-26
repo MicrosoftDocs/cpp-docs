@@ -351,26 +351,21 @@ friend CArchive& operator<<(
     CArchive& ar,
     const CObject* pOb);
 
-
 throw(
     CArchiveException*,
     CFileException*);
-
 
 CArchive& AFXAPI operator<<(
     CArchive& ar,
     const RECT& rect);
 
-
 CArchive& AFXAPI operator<<(
     CArchive& ar,
     POINT point);
 
-
 CArchive& AFXAPI operator<<(
     CArchive& ar,
     SIZE size);
-
 
 template<typename BaseType,
     class StringTraits> CArchive& operator<<(
@@ -426,38 +421,31 @@ friend CArchive& operator>>(
     CArchive& ar,
     CObject *& pOb);
 
-
 throw(
     CArchiveException*,
     CFileException*,
     CMemoryException*);
-
 
 friend CArchive& operator>>(
     CArchive& ar,
     const CObject *& pOb);
 
-
 throw(
     CArchiveException*,
     CFileException*,
     CMemoryException*);
 
-
 CArchive& AFXAPI operator>>(
     CArchive& ar,
     const RECT& rect);
-
 
 CArchive& AFXAPI operator>>(
     CArchive& ar,
     POINT point);
 
-
 CArchive& AFXAPI operator>>(
     CArchive& ar,
     SIZE size);
-
 
 template<typename BaseType,
     class StringTraits> CArchive& operator>>(

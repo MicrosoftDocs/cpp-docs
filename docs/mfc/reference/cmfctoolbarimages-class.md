@@ -134,7 +134,6 @@ The following example demonstrates how to configure a `CMFCToolBarImages` object
 
 ##  <a name="adaptcolors"></a>  CMFCToolBarImages::AdaptColors
 
-
 ```
 void AdaptColors(
     COLORREF clrBase,
@@ -143,8 +142,8 @@ void AdaptColors(
 
 ### Parameters
 
-*clrBase*<br/>
-[in] [in] *clrTone*
+[in] *clrBase*<br/>
+[in] *clrTone*<br/>
 
 ### Remarks
 
@@ -204,7 +203,6 @@ The number of toolbar images that the `CMFCToolBarImages`  object maintains afte
 
 ##  <a name="cleanup"></a>  CMFCToolBarImages::CleanUp
 
-
 ```
 static void __stdcall CleanUp();
 ```
@@ -233,14 +231,13 @@ Constructs a `CMFCToolBarImages` object, initializes its rendering engine and se
 
 ##  <a name="copyimagetoclipboard"></a>  CMFCToolBarImages::CopyImageToClipboard
 
-
 ```
 BOOL CopyImageToClipboard(int iImage);
 ```
 
 ### Parameters
 
-[in] *iImage*
+[in] *iImage*<br/>
 
 ### Return Value
 
@@ -248,14 +245,13 @@ BOOL CopyImageToClipboard(int iImage);
 
 ##  <a name="copyto"></a>  CMFCToolBarImages::CopyTo
 
-
 ```
 BOOL CopyTo(CMFCToolBarImages& imageList);
 ```
 
 ### Parameters
 
-[in] *imageList*
+[in] *imageList*<br/>
 
 ### Return Value
 
@@ -284,7 +280,6 @@ Use this function to quickly initialize the toolbar images list from an external
 
 ##  <a name="createregionfromimage"></a>  CMFCToolBarImages::CreateRegionFromImage
 
-
 ```
 static HRGN __stdcall CreateRegionFromImage(
     HBITMAP bmp,
@@ -293,8 +288,8 @@ static HRGN __stdcall CreateRegionFromImage(
 
 ### Parameters
 
-*bmp*<br/>
-[in] [in] *clrTransparent*
+[in] *bmp*<br/>
+[in] *clrTransparent*<br/>
 
 ### Return Value
 
@@ -373,7 +368,6 @@ TRUE if the specified image was displayed successfully; FALSE if the image index
 
 ##  <a name="drawex"></a>  CMFCToolBarImages::DrawEx
 
-
 ```
 BOOL DrawEx(
     CDC* pDC,
@@ -381,24 +375,19 @@ BOOL DrawEx(
     int iImageIndex,
     ImageAlignHorz horzAlign = ImageAlignHorzLeft,
     ImageAlignVert vertAlign = ImageAlignVertTop,
-    CRect rectSrc = CRect(0,
-    0,
-    0,
-    0),
+    CRect rectSrc = CRect(0, 0, 0, 0),
     BYTE alphaSrc = 255);
 ```
 
 ### Parameters
 
-*pDC*<br/>
-[in] [in] *rect*
-*iImageIndex*<br/>
-[in] [in] *horzAlign*
-*vertAlign*<br/>
-[in] [in] *rectSrc*
-*0*<br/>
-[in] [in] *0)*
-[in] *alphaSrc*
+[in] *pDC*<br/>
+[in] *rect*<br/>
+[in] *iImageIndex*<br/>
+[in] *horzAlign*<br/>
+[in] *vertAlign*<br/>
+[in] *rectSrc*<br/>
+[in] *alphaSrc*<br/>
 
 ### Return Value
 
@@ -406,14 +395,13 @@ BOOL DrawEx(
 
 ##  <a name="enablertl"></a>  CMFCToolBarImages::EnableRTL
 
-
 ```
 static void __stdcall EnableRTL(BOOL bIsRTL = TRUE);
 ```
 
 ### Parameters
 
-[in] *bIsRTL*
+[in] *bIsRTL*<br/>
 
 ### Remarks
 
@@ -471,7 +459,6 @@ Use this method to fill a rectangle with a color that is the average of the syst
 
 ##  <a name="getalwayslight"></a>  CMFCToolBarImages::GetAlwaysLight
 
-
 ```
 BOOL GetAlwaysLight() const;
 ```
@@ -509,7 +496,6 @@ The current alpha channel value.
 You can call [CMFCToolBarImages::SetDisabledImageAlpha](#setdisabledimagealpha) to change the alpha channel value.
 
 ##  <a name="getfadedimagealpha"></a>  CMFCToolBarImages::GetFadedImageAlpha
-
 
 ```
 static BYTE __stdcall GetFadedImageAlpha();
@@ -560,7 +546,6 @@ The toolbar images are stored in a row in a single bitmap that is known as an *i
 
 ##  <a name="getimagewelllight"></a>  CMFCToolBarImages::GetImageWellLight
 
-
 ```
 HBITMAP GetImageWellLight() const;
 ```
@@ -570,7 +555,6 @@ HBITMAP GetImageWellLight() const;
 ### Remarks
 
 ##  <a name="getlastimagerect"></a>  CMFCToolBarImages::GetLastImageRect
-
 
 ```
 CRect GetLastImageRect() const;
@@ -582,7 +566,6 @@ CRect GetLastImageRect() const;
 
 ##  <a name="getlightpercentage"></a>  CMFCToolBarImages::GetLightPercentage
 
-
 ```
 int GetLightPercentage() const;
 ```
@@ -592,7 +575,6 @@ int GetLightPercentage() const;
 ### Remarks
 
 ##  <a name="getmapto3dcolors"></a>  CMFCToolBarImages::GetMapTo3DColors
-
 
 ```
 BOOL GetMapTo3DColors() const;
@@ -604,14 +586,13 @@ BOOL GetMapTo3DColors() const;
 
 ##  <a name="getmask"></a>  CMFCToolBarImages::GetMask
 
-
 ```
 HBITMAP GetMask(int iImage);
 ```
 
 ### Parameters
 
-[in] *iImage*
+[in] *iImage*<br/>
 
 ### Return Value
 
@@ -635,7 +616,6 @@ int GetResourceOffset(UINT uiResId) const;
 An image index if the method was successful; -1 if the image with the specified resource ID does not exist.
 
 ##  <a name="gettransparentcolor"></a>  CMFCToolBarImages::GetTransparentColor
-
 
 ```
 COLORREF GetTransparentColor() const;
@@ -686,7 +666,6 @@ TRUE if 32-bit alpha blending is supported; otherwise FALSE.
 Use this static method to determine at runtime whether the operating system supports 32-bit alpha blending. This feature is supported on Windows 2000 and later versions.
 
 ##  <a name="ispremultiplyautocheck"></a>  CMFCToolBarImages::IsPreMultiplyAutoCheck
-
 
 ```
 BOOL IsPreMultiplyAutoCheck() const;
@@ -798,7 +777,6 @@ If the file has the read-only attribute, the image list is marked as read-only.
 
 ##  <a name="loadstr"></a>  CMFCToolBarImages::LoadStr
 
-
 ```
 BOOL LoadStr(
     LPCTSTR lpszResourceName,
@@ -808,16 +786,15 @@ BOOL LoadStr(
 
 ### Parameters
 
-*lpszResourceName*<br/>
-[in] [in] *hinstRes*
-[in] *bAdd*
+[in] *lpszResourceName*<br/>
+[in] *hinstRes*<br/>
+[in] *bAdd*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="mapfromsyscolor"></a>  CMFCToolBarImages::MapFromSysColor
-
 
 ```
 static COLORREF __stdcall MapFromSysColor(
@@ -827,15 +804,14 @@ static COLORREF __stdcall MapFromSysColor(
 
 ### Parameters
 
-*color*<br/>
-[in] [in] *bUseRGBQUAD*
+[in] *color*<br/>
+[in] *bUseRGBQUAD*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="mapto3dcolors"></a>  CMFCToolBarImages::MapTo3dColors
-
 
 ```
 BOOL MapTo3dColors(
@@ -846,16 +822,15 @@ BOOL MapTo3dColors(
 
 ### Parameters
 
-*bUseRGBQUAD*<br/>
-[in] [in] *clrSrc*
-[in] *clrDest*
+[in] *bUseRGBQUAD*<br/>
+[in] *clrSrc*<br/>
+[in] *clrDest*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="maptosyscolor"></a>  CMFCToolBarImages::MapToSysColor
-
 
 ```
 static COLORREF __stdcall MapToSysColor(
@@ -865,8 +840,8 @@ static COLORREF __stdcall MapToSysColor(
 
 ### Parameters
 
-*color*<br/>
-[in] [in] *bUseRGBQUAD*
+[in] *color*<br/>
+[in] *bUseRGBQUAD*<br/>
 
 ### Return Value
 
@@ -874,14 +849,13 @@ static COLORREF __stdcall MapToSysColor(
 
 ##  <a name="maptosyscoloralpha"></a>  CMFCToolBarImages::MapToSysColorAlpha
 
-
 ```
 static COLORREF __stdcall MapToSysColorAlpha(COLORREF color);
 ```
 
 ### Parameters
 
-[in] *color*
+[in] *color*<br/>
 
 ### Return Value
 
@@ -931,7 +905,6 @@ This function is used to support right-to-left writing systems.
 
 ##  <a name="mirrorbitmapvert"></a>  CMFCToolBarImages::MirrorBitmapVert
 
-
 ```
 static BOOL __stdcall MirrorBitmapVert(
     HBITMAP& hbmp,
@@ -940,15 +913,14 @@ static BOOL __stdcall MirrorBitmapVert(
 
 ### Parameters
 
-*hbmp*<br/>
-[in] [in] *cyImage*
+[in] *hbmp*<br/>
+[in] *cyImage*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="mirrorvert"></a>  CMFCToolBarImages::MirrorVert
-
 
 ```
 BOOL MirrorVert();
@@ -960,7 +932,6 @@ BOOL MirrorVert();
 
 ##  <a name="onsyscolorchange"></a>  CMFCToolBarImages::OnSysColorChange
 
-
 ```
 void OnSysColorChange();
 ```
@@ -968,7 +939,6 @@ void OnSysColorChange();
 ### Remarks
 
 ##  <a name="premultiplyalpha"></a>  CMFCToolBarImages::PreMultiplyAlpha
-
 
 ```
 static BOOL __stdcall PreMultiplyAlpha(
@@ -980,8 +950,8 @@ BOOL PreMultiplyAlpha(HBITMAP hbmp);
 
 ### Parameters
 
-*hbmp*<br/>
-[in] [in] *bAutoCheckPremlt*
+[in] *hbmp*<br/>
+[in] *bAutoCheckPremlt*<br/>
 
 ### Return Value
 
@@ -1055,14 +1025,13 @@ Call this method to store the user-defined images into a disk file. If *lpszBmpF
 
 ##  <a name="setalwayslight"></a>  CMFCToolBarImages::SetAlwaysLight
 
-
 ```
 void SetAlwaysLight(BOOL bAlwaysLight = TRUE);
 ```
 
 ### Parameters
 
-[in] *bAlwaysLight*
+[in] *bAlwaysLight*<br/>
 
 ### Remarks
 
@@ -1085,14 +1054,13 @@ Use this method to set a custom alpha value for disabled images. The default val
 
 ##  <a name="setfadedimagealpha"></a>  CMFCToolBarImages::SetFadedImageAlpha
 
-
 ```
 static void __stdcall SetFadedImageAlpha(BYTE nValue);
 ```
 
 ### Parameters
 
-[in] *nValue*
+[in] *nValue*<br/>
 
 ### Remarks
 
@@ -1117,19 +1085,17 @@ By default the size of the toolbar image is 16x15 pixels. Call this method if yo
 
 ##  <a name="setlightpercentage"></a>  CMFCToolBarImages::SetLightPercentage
 
-
 ```
 void SetLightPercentage(int nValue);
 ```
 
 ### Parameters
 
-[in] *nValue*
+[in] *nValue*<br/>
 
 ### Remarks
 
 ##  <a name="setmapto3dcolors"></a>  CMFCToolBarImages::SetMapTo3DColors
-
 
 ```
 void SetMapTo3DColors(BOOL bMapTo3DColors);
@@ -1137,12 +1103,11 @@ void SetMapTo3DColors(BOOL bMapTo3DColors);
 
 ### Parameters
 
-[in] *bMapTo3DColors*
+[in] *bMapTo3DColors*<br/>
 
 ### Remarks
 
 ##  <a name="setpremultiplyautocheck"></a>  CMFCToolBarImages::SetPreMultiplyAutoCheck
-
 
 ```
 void SetPreMultiplyAutoCheck(BOOL bAuto = TRUE);
@@ -1150,12 +1115,11 @@ void SetPreMultiplyAutoCheck(BOOL bAuto = TRUE);
 
 ### Parameters
 
-[in] *bAuto*
+[in] *bAuto*<br/>
 
 ### Remarks
 
 ##  <a name="setsingleimage"></a>  CMFCToolBarImages::SetSingleImage
-
 
 ```
 void SetSingleImage();

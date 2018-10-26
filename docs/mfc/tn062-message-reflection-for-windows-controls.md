@@ -94,7 +94,7 @@ This simple example creates a reusable control called `CYellowEdit`. The control
 
 1. Create a new dialog box in an existing application. For more information, see the [dialog editor](../windows/dialog-editor.md) topic.
 
-     You must have an application in which to develop the reusable control. If you don't have an existing application to use, create a dialog-based application using AppWizard.
+   You must have an application in which to develop the reusable control. If you don't have an existing application to use, create a dialog-based application using AppWizard.
 
 2. With your project loaded into Visual C++, use ClassWizard to create a new class called `CYellowEdit` based on `CEdit`.
 
@@ -113,7 +113,7 @@ This simple example creates a reusable control called `CYellowEdit`. The control
 
 5. Using ClassWizard, add a handler for the reflected WM_CTLCOLOR message to your `CYellowEdit` class. Note that the equal sign in front of the message name in the list of messages you can handle indicates that the message is reflected. This is described in [Defining a Message Handler for a Reflected Message](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md).
 
-     ClassWizard adds the following message-map macro and skeleton function for you:
+   ClassWizard adds the following message-map macro and skeleton function for you:
 
     ```cpp
     ON_WM_CTLCOLOR_REFLECT()

@@ -110,13 +110,11 @@ Constructs a `CMFCRibbonColorButton` object.
 ```
 CMFCRibbonColorButton();
 
-
 CMFCRibbonColorButton(
     UINT nID,
     LPCTSTR lpszText,
     int nSmallImageIndex,
     COLORREF color = RGB(0, 0, 0));
-
 
 CMFCRibbonColorButton(
     UINT nID,

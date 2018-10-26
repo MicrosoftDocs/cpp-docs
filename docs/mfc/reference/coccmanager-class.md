@@ -86,7 +86,6 @@ virtual BOOL CreateDlgControls(
     LPCTSTR lpszResourceName,
     _AFX_OCC_DIALOG_INFO* pOccDialogInfo);
 
-
 virtual BOOL CreateDlgControls(
     CWnd* pWndParent,
     void* lpResource,
@@ -215,7 +214,6 @@ Call this function to determine if the current mnemonic matches that represented
 static BOOL AFX_CDECL IsMatchingMnemonic(
     CWnd* pWnd,
     LPMSG lpMsg);
-
 
 static BOOL AFX_CDECL IsMatchingMnemonic(
     COleControlSiteOrWnd* pWnd,

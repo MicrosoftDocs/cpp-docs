@@ -10,7 +10,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "linux"]
 ---
-# Build Event Properties (Linux C++) 
+# Build Event Properties (Linux C++)
 
 ## Pre-Build Event
 

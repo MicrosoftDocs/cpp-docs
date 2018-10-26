@@ -105,7 +105,6 @@ Constructs a `CMFCDropDownToolbarButton` object.
 ```
 CMFCDropDownToolbarButton();
 
-
 CMFCDropDownToolbarButton(
     LPCTSTR lpszName,
     CMFCDropDownToolBar* pToolBar);
@@ -510,6 +509,4 @@ Call this method to specify a default command that the framework executes when t
 [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md)<br/>
 [CMFCToolBarMenuButton Class](../../mfc/reference/cmfctoolbarmenubutton-class.md)<br/>
 [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-
-
 

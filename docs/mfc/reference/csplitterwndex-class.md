@@ -14,8 +14,6 @@ ms.workload: ["cplusplus"]
 ---
 # CSplitterWndEx Class
 
-
-
 Represents a customized splitter window.
 
 ## Syntax

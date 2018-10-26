@@ -23,7 +23,7 @@ This class exposes [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipr
 
 ```
 template<class T, class CDV = CComDynamicUnkArray>
-class IPropertyNotifySinkCP 
+class IPropertyNotifySinkCP
    : public IConnectionPointImpl<T, &IID_IPropertyNotifySink, CDV>
 ```
 

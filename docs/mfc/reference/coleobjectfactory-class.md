@@ -91,7 +91,6 @@ COleObjectFactory(
     BOOL bMultiInstance,
     LPCTSTR lpszProgID);
 
-
 COleObjectFactory(
     REFCLSID clsid,
     CRuntimeClass* pRuntimeClass,
@@ -122,7 +121,7 @@ Contains one or more of the following flags:
 
 - `afxRegFreeThreading` Sets the threading model in the registry to ThreadingModel=Free.
 
-     You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](/windows/desktop/com/inprocserver32) in the Windows SDK for more information on threading model registration.
+   You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](/windows/desktop/com/inprocserver32) in the Windows SDK for more information on threading model registration.
 
 *lpszProgID*<br/>
 Pointer to a string containing a verbal program identifier, such as "Microsoft Excel."
@@ -308,7 +307,7 @@ Brief discussions of the two forms for this function follow:
 
 - **UpdateRegistry(** `bRegister` **)** This form of the function is overridable. If *bRegister* is TRUE, this function registers the control class with the system registry. Otherwise, it unregisters the class.
 
-     If you use MFC ActiveX ControlWizard to create your project, ControlWizard supplies an override to this pure virtual function.
+   If you use MFC ActiveX ControlWizard to create your project, ControlWizard supplies an override to this pure virtual function.
 
 ##  <a name="updateregistryall"></a>  COleObjectFactory::UpdateRegistryAll
 

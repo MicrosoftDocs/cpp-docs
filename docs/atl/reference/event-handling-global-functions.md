@@ -21,11 +21,11 @@ This function provides an event handler.
 
 |||
 |-|-|
-|[AtlWaitWithMessageLoop](#atlwaitwithmessageloop)|Waits for an object to be signaled, meanwhile dispatching window messages as needed.|  
+|[AtlWaitWithMessageLoop](#atlwaitwithmessageloop)|Waits for an object to be signaled, meanwhile dispatching window messages as needed.|
 
 ## Requirements
 
-**Header:** atlbase.h  
+**Header:** atlbase.h
 
 ##  <a name="atlwaitwithmessageloop"></a>  AtlWaitWithMessageLoop
 

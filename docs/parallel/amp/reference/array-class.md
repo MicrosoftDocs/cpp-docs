@@ -644,6 +644,7 @@ Stores the rank of the `array`.
 ```
 static const int rank = _Rank;
 ```
+
 ## <a name="reinterpret_as"></a> reinterpret_as
 
 Reinterprets the array through a one-dimensional array_view, which optionally may have a different value type than the source array.

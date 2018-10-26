@@ -58,7 +58,7 @@ A trait object, defining the equality test for elements of type *T*.
 |Name|Description|
 |----------|-----------------|
 |[CSimpleArray::operator\[\]](#operator_at)|Retrieves an element from the array.|
-|[CSimpleArray::operator =](#operator_eq)|Assignment operator.|  
+|[CSimpleArray::operator =](#operator_eq)|Assignment operator.|
 
 ## Remarks
 

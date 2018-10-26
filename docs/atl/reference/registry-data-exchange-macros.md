@@ -23,7 +23,7 @@ These macros perform Registry Data Exchange operations.
 |[RDX_BINARY](#rdx_binary)|Associates the specified registry entry with a specified member variable of type BYTE.|
 |[RDX_CSTRING_TEXT](#rdx_cstring_text)|Associates the specified registry entry with a specified member variable of type CString.|
 |[RDX_DWORD](#rdx_dword)|Associates the specified registry entry with a specified member variable of type DWORD.|
-|[RDX_TEXT](#rdx_text)|Associates the specified registry entry with a specified member variable of type TCHAR.|  
+|[RDX_TEXT](#rdx_text)|Associates the specified registry entry with a specified member variable of type TCHAR.|
 
 ## Requirements
 
@@ -64,10 +64,10 @@ Associates the specified registry entry with a specified member variable of type
 
 ```
 RDX_BINARY(
-    rootkey, 
-    subkey, 
-    valuename, 
-    member, 
+    rootkey,
+    subkey,
+    valuename,
+    member,
     member_size )
 ```
 
@@ -98,10 +98,10 @@ Associates the specified registry entry with a specified member variable of type
 
 ```
 RDX_CSTRING_TEXT(
-    rootkey, 
-    subkey, 
-    valuename, 
-    member, 
+    rootkey,
+    subkey,
+    valuename,
+    member,
     member_size )
 ```
 
@@ -132,10 +132,10 @@ Associates the specified registry entry with a specified member variable of type
 
 ```
 RDX_DWORD(
-    rootkey, 
-    subkey, 
-    valuename, 
-    member, 
+    rootkey,
+    subkey,
+    valuename,
+    member,
     member_size )
 ```
 
@@ -166,10 +166,10 @@ Associates the specified registry entry with a specified member variable of type
 
 ```
 RDX_TEXT(
-    rootkey, 
-    subkey, 
-    valuename, 
-    member, 
+    rootkey,
+    subkey,
+    valuename,
+    member,
     member_size )
 ```
 

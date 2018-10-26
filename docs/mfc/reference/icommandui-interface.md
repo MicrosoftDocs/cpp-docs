@@ -54,6 +54,7 @@ Sets the user interface item for this command to the appropriate check state.
 ```
 property UICheckState Check;
 ```
+
 ## Remarks
 
 This property sets the user interface item for this command to the appropriate check state. Set Check to the following values:
@@ -67,6 +68,7 @@ Tells the command routing mechanism to continue routing the current message down
 ```
 void ContinueRouting();
 ```
+
 ## Remarks
 
 This is an advanced member function that should be used in conjunction with an ON_COMMAND_EX handler that returns FALSE. For more information, see Technical Note TN006: Message Maps.
@@ -77,6 +79,7 @@ Enables or disables the user interface item for this command.
 ```
 property bool Enabled;
 ```
+
 ## Remarks
 
 This property enables or disables the user interface item for this command. Set Enabled to TRUE to enable the item, FALSE to disable it.
@@ -87,6 +90,7 @@ Gets the ID of the user interface object represented by the ICommandUI object.
 ```
 property unsigned int ID;
 ```
+
 ## Remarks
 
 This property gets the ID (a handle) of the menu item, toolbar button, or other user interface object represented by the ICommandUI object.
@@ -97,6 +101,7 @@ Gets the index of the user interface object represented by the ICommandUI object
 ```
 property unsigned int Index;
 ```
+
 ## Remarks
 
 This property gets the index (a handle) of the menu item, toolbar button, or other user interface object represented by the ICommandUI object.
@@ -107,6 +112,7 @@ Sets the user interface item for this command to the appropriate check state.
 ```
 property bool Radio;
 ```
+
 ## Remarks
 
 This property sets the user interface item for this command to the appropriate check state. Set Radio to TRUE to enable the item; otherwise FALSE.
@@ -117,6 +123,7 @@ Sets the text of the user interface item for this command.
 ```
 property String^ Text;
 ```
+
 ## Remarks
 
 This property sets the text of the user interface item for this command. Set Text to a text string handle.

@@ -29,7 +29,6 @@ class initializer_list
 |---------------|-----------------|
 |*Type*|The element data type to be stored in the `initializer_list`.|
 
-
 ## Remarks
 
 An `initializer_list` can be constructed using a braced initializer list:

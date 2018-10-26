@@ -113,4 +113,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 ## See Also
 
 [OLE DB Consumer Attributes](ole-db-consumer-attributes.md)<br/>
-[Class Attributes](class-attributes.md)  
+[Class Attributes](class-attributes.md)

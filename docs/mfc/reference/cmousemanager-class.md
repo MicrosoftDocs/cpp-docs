@@ -63,7 +63,6 @@ BOOL AddView(
     UINT uiViewNameResId,
     UINT uiIconId = 0);
 
-
 BOOL AddView(
     int iId,
     LPCTSTR lpszViewName,
@@ -257,6 +256,4 @@ If *uiCmd* is set to 0, the specified view is no longer associated with a comman
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
 [CWinAppEx Class](../../mfc/reference/cwinappex-class.md)<br/>
 [Keyboard and Mouse Customization](../../mfc/keyboard-and-mouse-customization.md)
-
-
 

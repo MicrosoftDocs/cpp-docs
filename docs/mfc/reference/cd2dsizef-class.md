@@ -61,7 +61,6 @@ CD2DSizeF(const CSize& size);
 CD2DSizeF(const D2D1_SIZE_F& size);
   CD2DSizeF(const D2D1_SIZE_F* size);
 
-
 CD2DSizeF(
     FLOAT cx = 0.,
     FLOAT cy = 0.);

@@ -262,9 +262,9 @@ virtual int OnCompareItems(
 
 ### Parameters
 
-*lParam1*<br/>
-[in] [in] *lParam2*
-[in] *iColumn*
+[in] *lParam1*<br/>
+[in] *lParam2*<br/>
+[in] *iColumn*<br/>
 
 ### Return Value
 

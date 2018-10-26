@@ -32,7 +32,7 @@ double average( ... array<Int32>^ arr ) {
    int i = arr->GetLength(0);
    double answer = 0.0;
 
-   for (int j = 0 ; j < i ; j++)  
+   for (int j = 0 ; j < i ; j++)
       answer += arr[j];
 
    return answer / i;

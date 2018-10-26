@@ -96,7 +96,7 @@ Note these points when using default arguments:
     }
     ```
 
-     The problem with this code is that the function declaration in the definition redefines the default argument for `prec`.
+   The problem with this code is that the function declaration in the definition redefines the default argument for `prec`.
 
 - Additional default arguments can be added by later declarations.
 

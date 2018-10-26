@@ -260,7 +260,6 @@ For more information about user tools and how to incorporate them into your appl
 
 ##  <a name="exitinstance"></a>  CWinAppEx::ExitInstance
 
-
 ```
 virtual int ExitInstance();
 ```
@@ -318,7 +317,6 @@ A pointer to the global `CContextMenuManager` object.
 If the CContextMenuManager object is not initialized, this function calls [CWinAppEx::InitContextMenuManager](#initcontextmenumanager) before it returns a pointer.
 
 ##  <a name="getdataversion"></a>  CWinAppEx::GetDataVersion
-
 
 ```
 int GetDataVersion() const;
@@ -777,7 +775,6 @@ If your application already has a tooltip manager and you call `InitTooltipManag
 
 ##  <a name="isresourcesmartupdate"></a>  CWinAppEx::IsResourceSmartUpdate
 
-
 ```
 BOOL IsResourceSmartUpdate() const;
 ```
@@ -826,16 +823,13 @@ BOOL LoadState(
     CMDIFrameWndEx* pFrame,
     LPCTSTR lpszSectionName = NULL);
 
-
 BOOL LoadState(
     CFrameWndEx* pFrame,
     LPCTSTR lpszSectionName = NULL);
 
-
 BOOL LoadState(
     COleIPFrameWndEx* pFrame,
     LPCTSTR lpszSectionName = NULL);
-
 
 virtual BOOL LoadState(
     LPCTSTR lpszSectionName = NULL,
@@ -976,14 +970,13 @@ In order to support custom mouse behavior, you must call this function when you 
 
 ##  <a name="onworkspaceidle"></a>  CWinAppEx::OnWorkspaceIdle
 
-
 ```
 virtual BOOL OnWorkspaceIdle(CWnd*);
 ```
 
 ### Parameters
 
-[in] *CWnd&#38;*
+[in] *CWnd&#38;*<br/>
 
 ### Return Value
 
@@ -1055,16 +1048,13 @@ virtual BOOL SaveState(
     LPCTSTR lpszSectionName = NULL,
     CFrameImpl* pFrameImpl = NULL);
 
-
 BOOL SaveState(
     CMDIFrameWndEx* pFrame,
     LPCTSTR lpszSectionName = NULL);
 
-
 BOOL SaveState(
     CFrameWndEx* pFrame,
     LPCTSTR lpszSectionName = NULL);
-
 
 BOOL SaveState(
     COleIPFrameWndEx* pFrame,

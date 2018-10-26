@@ -209,7 +209,7 @@ This method will enumerate all of the `CSid` objects contained in the `CTokenGro
 Retrieves the attributes associated with a `CSid` object.
 
 ```
-bool LookupSid(  
+bool LookupSid(
     const CSid& rSid,
     DWORD* pdwAttributes = NULL) const throw();
 ```

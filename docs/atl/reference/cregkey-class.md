@@ -130,7 +130,7 @@ If successful, returns ERROR_SUCCESS; otherwise returns an error value.
 Call this method to create the specified key, if it does not exist as a subkey of *hKeyParent*.
 
 ```
-LONG Create(  
+LONG Create(
     HKEY hKeyParent,
     LPCTSTR lpszKeyName,
     LPTSTR lpszClass = REG_NONE,
@@ -264,7 +264,7 @@ The HKEY associated with the `CRegKey` object.
 Call this method to enumerate the subkeys of the open registry key.
 
 ```
-LONG EnumKey(  
+LONG EnumKey(
     DWORD iIndex,
     LPTSTR pszName,
     LPDWORD pnNameLength,
@@ -314,7 +314,7 @@ For more information, see [RegEnumFlush](/windows/desktop/api/winreg/nf-winreg-r
 Call this method to retrieve a copy of the security descriptor protecting the open registry key.
 
 ```
-LONG GetKeySecurity(  
+LONG GetKeySecurity(
     SECURITY_INFORMATION si,
     PSECURITY_DESCRIPTOR psd,
     LPDWORD pnBytes) throw();
@@ -362,7 +362,7 @@ CAtlTransactionManager* m_pTM;
 This method notifies the caller about changes to the attributes or contents of the open registry key.
 
 ```
-LONG NotifyChangeKeyValue(  
+LONG NotifyChangeKeyValue(
     BOOL bWatchSubtree,
     DWORD dwNotifyFilter,
     HANDLE hEvent,
@@ -406,7 +406,7 @@ For more details and a sample program, see [RegNotifyChangeKeyValue](/windows/de
 Call this method to open the specified key and set [m_hKey](#m_hkey) to the handle of this key.
 
 ```
-LONG Open(  
+LONG Open(
     HKEY hKeyParent,
     LPCTSTR lpszKeyName,
     REGSAM samDesired = KEY_READ | KEY_WRITE) throw();
@@ -467,7 +467,7 @@ This operator detaches *key* from its current object and assigns it to the `CReg
 Call this method to retrieve the binary data for a specified value name.
 
 ```
-LONG QueryBinaryValue(  
+LONG QueryBinaryValue(
     LPCTSTR pszValueName,
     void* pValue,
     ULONG* pnBytes) throw();
@@ -500,7 +500,7 @@ This method makes use of `RegQueryValueEx` and confirms that the correct type of
 Call this method to retrieve the DWORD data for a specified value name.
 
 ```
-LONG QueryDWORDValue(  
+LONG QueryDWORDValue(
     LPCTSTR pszValueName,
     DWORD& dwValue) throw();
 ```
@@ -529,7 +529,7 @@ This method makes use of `RegQueryValueEx` and confirms that the correct type of
 Call this method to retrieve the GUID data for a specified value name.
 
 ```
-LONG QueryGUIDValue(  
+LONG QueryGUIDValue(
     LPCTSTR pszValueName,
     GUID& guidValue) throw();
 ```
@@ -558,7 +558,7 @@ This method makes use of `CRegKey::QueryStringValue` and converts the string int
 Call this method to retrieve the multistring data for a specified value name.
 
 ```
-LONG QueryMultiStringValue(  
+LONG QueryMultiStringValue(
     LPCTSTR pszValueName,
     LPTSTR pszValue,
     ULONG* pnChars) throw();
@@ -591,7 +591,7 @@ This method makes use of `RegQueryValueEx` and confirms that the correct type of
 Call this method to retrieve the QWORD data for a specified value name.
 
 ```
-LONG QueryQWORDValue(  
+LONG QueryQWORDValue(
     LPCTSTR pszValueName,
     ULONGLONG& qwValue) throw();
 ```
@@ -620,7 +620,7 @@ This method makes use of `RegQueryValueEx` and confirms that the correct type of
 Call this method to retrieve the string data for a specified value name.
 
 ```
-LONG QueryStringValue(  
+LONG QueryStringValue(
     LPCTSTR pszValueName,
     LPTSTR pszValue,
     ULONG* pnChars) throw();
@@ -653,7 +653,7 @@ This method makes use of `RegQueryValueEx` and confirms that the correct type of
 Call this method to retrieve the data for the specified value field of [m_hKey](#m_hkey). Earlier versions of this method are no longer supported and are marked as ATL_DEPRECATED.
 
 ```
-LONG QueryValue(  
+LONG QueryValue(
     LPCTSTR pszValueName,
     DWORD* pdwType,
     void* pData,
@@ -734,7 +734,7 @@ If the key has subkeys, you must call this method to delete the key.
 Call this method to set the binary value of the registry key.
 
 ```
-LONG SetBinaryValue(  
+LONG SetBinaryValue(
     LPCTSTR pszValueName,
     const void* pValue,
     ULONG nBytes) throw();
@@ -812,7 +812,7 @@ This method makes use of `CRegKey::SetStringValue` and converts the GUID into a 
 Call this method to store data in a specified value field of a specified key.
 
 ```
-LONG SetKeyValue(  
+LONG SetKeyValue(
     LPCTSTR lpszKeyName,
     LPCTSTR lpszValue,
     LPCTSTR lpszValueName = NULL) throw();
@@ -921,7 +921,7 @@ This method uses [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetval
 Call this method to set the string value of the registry key.
 
 ```
-LONG SetStringValue(  
+LONG SetStringValue(
     LPCTSTR pszValueName,
     LPCTSTR pszValue,
     DWORD dwType = REG_SZ) throw();
@@ -951,23 +951,23 @@ This method uses [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetval
 Call this method to store data in the specified value field of [m_hKey](#m_hkey). Earlier versions of this method are no longer supported and are marked as ATL_DEPRECATED.
 
 ```
-LONG SetValue(  
+LONG SetValue(
     LPCTSTR pszValueName,
     DWORD dwType,
     const void* pValue,
     ULONG nBytes) throw();
 
-static LONG WINAPI SetValue(  
+static LONG WINAPI SetValue(
     HKEY hKeyParent,
     LPCTSTR lpszKeyName,
     LPCTSTR lpszValue,
     LPCTSTR lpszValueName = NULL);
 
-ATL_DEPRECATED LONG SetValue(  
+ATL_DEPRECATED LONG SetValue(
     DWORD dwValue,
     LPCTSTR lpszValueName);
 
-ATL_DEPRECATED LONG SetValue(  
+ATL_DEPRECATED LONG SetValue(
     LPCTSTR lpszValue,
     LPCTSTR lpszValueName = NULL,
     bool bMulti = false,

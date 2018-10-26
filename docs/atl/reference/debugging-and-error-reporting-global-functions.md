@@ -34,11 +34,11 @@ HRESULT AtlHresultFromLastError();
 
 ### Remarks
 
-`AtlHresultFromLastError` calls `GetLastError` to obtain the last error and returns the error after converting it to an HRESULT using the HRESULT_FROM_WIN32 macro.  
+`AtlHresultFromLastError` calls `GetLastError` to obtain the last error and returns the error after converting it to an HRESULT using the HRESULT_FROM_WIN32 macro.
 
 ### Requirements
 
-**Header:** atlcomcli.h  
+**Header:** atlcomcli.h
 
 ##  <a name="atlhresultfromwin32"></a>  AtlHresultFromWin32
 
@@ -58,11 +58,11 @@ The error value to convert.
 Converts a Win32 error code into an HRESULT, using the macro HRESULT_FROM_WIN32.
 
 > [!NOTE]
->  Instead of using `HRESULT_FROM_WIN32(GetLastError())`, use the function [AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror).  
+>  Instead of using `HRESULT_FROM_WIN32(GetLastError())`, use the function [AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror).
 
 ### Requirements
 
-**Header:** atlcomcli.h  
+**Header:** atlcomcli.h
 
 ##  <a name="atlreporterror"></a>  AtlReportError
 
@@ -153,7 +153,7 @@ The string *lpszDesc* is used as the text description of the error. When the cli
 [!code-cpp[NVC_ATL_COM#52](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_1.cpp)]
 
 > [!CAUTION]
->  Do not use `AtlReportError` in C++ catch handlers. Some overrides of these functions use the ATL string conversion macros internally, which in turn use the `_alloca` function internally. Using `AtlReportError` in a C++ catch handler can cause exceptions in C++ catch handlers.  
+>  Do not use `AtlReportError` in C++ catch handlers. Some overrides of these functions use the ATL string conversion macros internally, which in turn use the `_alloca` function internally. Using `AtlReportError` in a C++ catch handler can cause exceptions in C++ catch handlers.
 
 ### Requirements
 
@@ -190,11 +190,11 @@ For ATL projects, it is possible to provide your own implementation of this func
 
 ### Example
 
-[!code-cpp[NVC_ATL_Windowing#95](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_2.h)]  
+[!code-cpp[NVC_ATL_Windowing#95](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_2.h)]
 
 ## Requirements
 
-**Header:** atldef.h  
+**Header:** atldef.h
 
 ##  <a name="atlthrowlastwin32"></a>  AtlThrowLastWin32
 
@@ -212,7 +212,7 @@ If _ATL_NO_EXCEPTIONS is not defined in an MFC project, this function throws a [
 
 If _ATL_NO_EXCEPTIONS is not defined in an ATL project, the function throws a [CAtlException](../../atl/reference/catlexception-class.md).
 
-If _ATL_NO_EXCEPTIONS is defined, the function causes an assertion failure instead of throwing an exception.  
+If _ATL_NO_EXCEPTIONS is defined, the function causes an assertion failure instead of throwing an exception.
 
 ## Requirements
 

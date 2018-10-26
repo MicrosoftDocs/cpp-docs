@@ -49,7 +49,6 @@ CD2DEllipse(const CD2DRectF& rect);
 CD2DEllipse(const D2D1_ELLIPSE& ellipse);
   CD2DEllipse(const D2D1_ELLIPSE* ellipse);
 
-
 CD2DEllipse(
     const CD2DPointF& ptCenter,
     const CD2DSizeF& sizeRadius);

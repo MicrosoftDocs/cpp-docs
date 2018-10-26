@@ -149,7 +149,7 @@ If you subclass an existing window through [SubclassWindow](#subclasswindow), th
 Calls [RegisterWndSuperclass](#registerwndsuperclass) to register a window class that is based on an existing class but uses [CContainedWindowT::WindowProc](#windowproc).
 
 ```
-HWND Create(  
+HWND Create(
     HWND hWndParent,
     _U_RECT rect,
     LPCTSTR szWindowName = NULL,
@@ -414,7 +414,7 @@ Use this method only if you want to restore the original window procedure before
 This static method implements the window procedure.
 
 ```
-static LRESULT CALLBACK WindowProc(  
+static LRESULT CALLBACK WindowProc(
     HWND hWnd,
     UINT uMsg,
     WPARAM wParam,

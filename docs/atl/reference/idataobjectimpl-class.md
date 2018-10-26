@@ -121,7 +121,7 @@ See [IDataObject::EnumDAdvise](/windows/desktop/api/objidl/nf-objidl-idataobject
 Creates an enumerator to iterate through the `FORMATETC` structures supported by the data object.
 
 ```
-HRESULT EnumFormatEtc(  
+HRESULT EnumFormatEtc(
     DWORD dwDirection,
     IEnumFORMATETC** ppenumFormatEtc);
 ```

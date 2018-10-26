@@ -81,7 +81,6 @@ CFtpConnection(
     LPCTSTR pstrServer,
     DWORD_PTR dwContext);
 
-
 CFtpConnection(
     CInternetSession* pSession,
     LPCTSTR pstrServer,

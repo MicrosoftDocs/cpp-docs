@@ -94,5 +94,3 @@ To access or release a `CSemaphore` object, create a [CMultiLock](../../mfc/refe
 [CSyncObject Class](../../mfc/reference/csyncobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
-
-

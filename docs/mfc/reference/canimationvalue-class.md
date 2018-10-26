@@ -99,7 +99,6 @@ Constructs a CAnimationValue object.
 ```
 CAnimationValue();
 
-
 CAnimationValue(
     DOUBLE dblDefaultValue,
     UINT32 nGroupID,

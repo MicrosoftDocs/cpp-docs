@@ -74,7 +74,6 @@ CGopherConnection(
     LPCTSTR pstrServer,
     DWORD_PTR dwContext);
 
-
 CGopherConnection(
     CInternetSession* pSession,
     LPCTSTR pstrServer,
@@ -129,7 +128,6 @@ CGopherLocator CreateLocator(
     DWORD dwGopherType);
 
 static CGopherLocator CreateLocator(LPCTSTR pstrLocator);
-
 
 static CGopherLocator CreateLocator(
     LPCTSTR pstrServerName,

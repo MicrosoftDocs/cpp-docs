@@ -24,7 +24,7 @@ WRL_NOTHROW bool operator!=(
 );
 WRL_NOTHROW bool operator!=(
    const ComPtr<T>& a,
-   decltype(__nullptr)  
+   decltype(__nullptr)
 );
 WRL_NOTHROW bool operator!=(
    decltype(__nullptr),
@@ -36,7 +36,7 @@ WRL_NOTHROW bool operator!=(
 );
 WRL_NOTHROW bool operator!=(
    const Details::ComPtrRef<ComPtr<T>>& a,
-   decltype(__nullptr)  
+   decltype(__nullptr)
 );
 WRL_NOTHROW bool operator!=(
    decltype(__nullptr),

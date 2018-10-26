@@ -23,7 +23,7 @@ ATL's control-hosting code doesn't require you to use any ATL classes; you can s
 |[CAxWindow2T](../atl/reference/caxwindow2t-class.md)|Wraps an **"AtlAxWinLic80"** window, providing methods for creating the window, creating a control and/or attaching a licensed control to the window, and retrieving interface pointers on the host object.|
 |[CComCompositeControl](../atl/reference/ccomcompositecontrol-class.md)|Acts as a base class for ActiveX control classes based on a dialog resource. Such controls can contain other ActiveX controls.|
 |[CAxDialogImpl](../atl/reference/caxdialogimpl-class.md)|Acts as a base class for dialog classes based on a dialog resource. Such dialogs can contain ActiveX controls.|
-|[CWindow](../atl/reference/cwindow-class.md)|Provides a method, [GetDlgControl](../atl/reference/cwindow-class.md#getdlgcontrol), that will return an interface pointer on a control, given the ID of its host window. In addition, the Windows API wrappers exposed by `CWindow` generally make window management easier.|  
+|[CWindow](../atl/reference/cwindow-class.md)|Provides a method, [GetDlgControl](../atl/reference/cwindow-class.md#getdlgcontrol), that will return an interface pointer on a control, given the ID of its host window. In addition, the Windows API wrappers exposed by `CWindow` generally make window management easier.|
 
 ## What Is the ATL Control-Hosting API?
 
@@ -48,11 +48,11 @@ The `HWND` parameters in the first three functions must be an existing window of
 The first seven functions call [AtlAxWinInit](reference/composite-control-global-functions.md#atlaxwininit) implicitly.
 
 > [!NOTE]
->  The control-hosting API forms the foundation of ATL's support for ActiveX control containment. However, there is usually little need to call these functions directly if you take advantage of or make full use of ATL's wrapper classes. For more information, see [Which ATL Classes Facilitate ActiveX Control Containment](which-atl-classes-facilitate-activex-control-containment-q.md).  
+>  The control-hosting API forms the foundation of ATL's support for ActiveX control containment. However, there is usually little need to call these functions directly if you take advantage of or make full use of ATL's wrapper classes. For more information, see [Which ATL Classes Facilitate ActiveX Control Containment](which-atl-classes-facilitate-activex-control-containment-q.md).
 
 ## What Is AtlAxWin100?
 
-`AtlAxWin100` is the name of a window class that helps provide ATL's control-hosting functionality. When you create an instance of this class, the window procedure will automatically use the control-hosting API to create a host object associated with the window and load it with the control that you specify as the title of the window. 
+`AtlAxWin100` is the name of a window class that helps provide ATL's control-hosting functionality. When you create an instance of this class, the window procedure will automatically use the control-hosting API to create a host object associated with the window and load it with the control that you specify as the title of the window.
 
 ## When Do I Need to Call AtlAxWinInit?
 

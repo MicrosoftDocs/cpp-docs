@@ -29,7 +29,7 @@ These macros provide ways of controlling aggregation and of declaring class fact
 |[DECLARE_ONLY_AGGREGATABLE](#declare_only_aggregatable)|Declares that your object must be aggregated.|
 |[DECLARE_POLY_AGGREGATABLE](#declare_poly_aggregatable)|Checks the value of the outer unknown and declares your object aggregatable or not aggregatable, as appropriate.|
 |[DECLARE_PROTECT_FINAL_CONSTRUCT](#declare_protect_final_construct)|Protects the outer object from deletion during construction of an inner object.|
-|[DECLARE_VIEW_STATUS](#declare_view_status)|Specifies the VIEWSTATUS flags to the container.|  
+|[DECLARE_VIEW_STATUS](#declare_view_status)|Specifies the VIEWSTATUS flags to the container.|
 
 ## Requirements
 

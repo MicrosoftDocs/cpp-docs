@@ -47,7 +47,7 @@ Adding stock events requires less work than adding custom events because the fir
 
 1. From the shortcut menu, click **Add** and then click **Add Event**.
 
-     This opens the Add Event Wizard.
+   This opens the Add Event Wizard.
 
 1. In the **Event Name** drop-down list, select `KeyPress`.
 

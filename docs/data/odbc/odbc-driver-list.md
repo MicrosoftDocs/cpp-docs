@@ -13,24 +13,24 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC Driver List
 
-Visual C++ provides ODBC drivers for the following databases:  
-  
-- SQL Server  
-  
-- Microsoft Access  
-  
-- Microsoft Excel  
-  
-- dBASE  
-  
-- Paradox  
-  
-- Microsoft Oracle ODBC  
-  
-- Text files  
-  
-For information about ODBC drivers available from Microsoft and other companies, including the ODBC Driver Pack, contact Microsoft Product Support Services.  
-  
-## See Also  
+Visual C++ provides ODBC drivers for the following databases:
+
+- SQL Server
+
+- Microsoft Access
+
+- Microsoft Excel
+
+- dBASE
+
+- Paradox
+
+- Microsoft Oracle ODBC
+
+- Text files
+
+For information about ODBC drivers available from Microsoft and other companies, including the ODBC Driver Pack, contact Microsoft Product Support Services.
+
+## See Also
 
 [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

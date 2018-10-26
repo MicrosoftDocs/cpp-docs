@@ -112,8 +112,8 @@ virtual BOOL AddTab(
 
 ### Parameters
 
-[in] [out] *pNewBar*
-A pointer to the pane to add. This pointer may become invalid after you call this method. For more information, see the Remarks section.
+*pNewBar*<br/>
+[in, out] A pointer to the pane to add. This pointer may become invalid after you call this method. For more information, see the Remarks section.
 
 *bVisible*<br/>
 [in] TRUE to make the tab visible; otherwise, FALSE.
@@ -318,8 +318,8 @@ virtual BOOL FloatTab(
 
 ### Parameters
 
-[in] [out] *pBar*
-A pointer to the pane to float.
+*pBar*<br/>
+[in, out] A pointer to the pane to float.
 
 *nTabID*<br/>
 [in] Specifies the zero-based index of the tab to float.
@@ -529,8 +529,8 @@ virtual BOOL RemovePane(CWnd* pBar);
 
 ### Parameters
 
-[in] [out] *pBar*
-A pointer to the pane to remove from the tabbed pane.
+*pBar*<br/>
+[in, out] A pointer to the pane to remove from the tabbed pane.
 
 ### Return Value
 
@@ -625,8 +625,8 @@ virtual CMFCAutoHideToolBar* SetAutoHideMode(
 *dwAlignment*<br/>
 [in] Specifies the alignment of the auto-hide pane that is to be created. For a list of possible values, see [CPane::MoveByAlignment](../../mfc/reference/cpane-class.md#movebyalignment).
 
-[in] [out] *pCurrAutoHideBar*
-A pointer to the current auto-hide toolbar. Can be NULL.
+*pCurrAutoHideBar*<br/>
+[in, out] A pointer to the current auto-hide toolbar. Can be NULL.
 
 *bUseTimer*<br/>
 [in] Specifies whether to use the auto-hide effect when the user switches the pane to auto-hide mode, or to hide the pane immediately.

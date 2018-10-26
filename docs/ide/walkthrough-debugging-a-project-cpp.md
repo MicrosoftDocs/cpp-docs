@@ -33,11 +33,11 @@ In this walkthrough, you modify the program to fix the problem that you found wh
 
 1. To decrease the `totalParticipants` when a Cardgame ends, add the following code between the opening and closing braces of the `Cardgame::~Cardgame` destructor.
 
-     [!code-cpp[NVC_Walkthrough_Debugging_A_Project#110](../ide/codesnippet/CPP/walkthrough-debugging-a-project-cpp_1.cpp)]
+   [!code-cpp[NVC_Walkthrough_Debugging_A_Project#110](../ide/codesnippet/CPP/walkthrough-debugging-a-project-cpp_1.cpp)]
 
 1. The Cardgame.cpp file should resemble the code below after you change it:
 
-     [!code-cpp[NVC_Walkthrough_Debugging_A_Project#111](../ide/codesnippet/CPP/walkthrough-debugging-a-project-cpp_2.cpp)]
+   [!code-cpp[NVC_Walkthrough_Debugging_A_Project#111](../ide/codesnippet/CPP/walkthrough-debugging-a-project-cpp_2.cpp)]
 
 1. On the menu bar, choose **Build** > **Build Solution**.
 

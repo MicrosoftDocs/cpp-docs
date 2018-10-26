@@ -30,7 +30,7 @@ The Windows common controls can be used in [dialog boxes](../mfc/dialog-boxes.md
 
 1. In [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) for your dialog class, set the initial conditions for the common control. Using the member variable created in the previous step, use the member functions to set initial value and other settings. See the following descriptions of the controls for details on settings.
 
-     You can also use [dialog data exchange](../mfc/dialog-data-exchange-and-validation.md) (DDX) to initialize controls in a dialog box.
+   You can also use [dialog data exchange](../mfc/dialog-data-exchange-and-validation.md) (DDX) to initialize controls in a dialog box.
 
 1. In handlers for controls on the dialog box, use the member variable to manipulate the control. See the following descriptions of the controls for details on methods.
 

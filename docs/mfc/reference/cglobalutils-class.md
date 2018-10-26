@@ -1,7 +1,7 @@
 ---
 title: "CGlobalUtils Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CGlobalUtils", "AFXGLOBALUTILS/CGlobalUtils", "AFXGLOBALUTILS/CGlobalUtils::AdjustRectToWorkArea", "AFXGLOBALUTILS/CGlobalUtils::CalcExpectedDockedRect", "AFXGLOBALUTILS/CGlobalUtils::CanBeAttached", "AFXGLOBALUTILS/CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd", "AFXGLOBALUTILS/CGlobalUtils::CheckAlignment", "AFXGLOBALUTILS/CGlobalUtils::CyFromString", "AFXGLOBALUTILS/CGlobalUtils::DecimalFromString", "AFXGLOBALUTILS/CGlobalUtils::FlipRect", "AFXGLOBALUTILS/CGlobalUtils::ForceAdjustLayout", "AFXGLOBALUTILS/CGlobalUtils::GetDockingManager", "AFXGLOBALUTILS/CGlobalUtils::GetOppositeAlignment", "AFXGLOBALUTILS/CGlobalUtils::GetPaneAndAlignFromPoint", "AFXGLOBALUTILS/CGlobalUtils::GetWndIcon", "AFXGLOBALUTILS/CGlobalUtils::SetNewParent", "AFXGLOBALUTILS/CGlobalUtils::StringFromCy", "AFXGLOBALUTILS/CGlobalUtils::StringFromDecimal"]
@@ -65,13 +65,12 @@ void AdjustRectToworkArea(
 
 ### Parameters
 
-*rect*<br/>
-[in, out] [in] *pRectDelta*
+[in, out] *rect*<br/>
+[in] *pRectDelta*<br/>
 
 ### Remarks
 
 ##  <a name="calcexpecteddockedrect"></a>  CGlobalUtils::CalcExpectedDockedRect
-
 
 ```
 void CalcExpectedDockedRect(
@@ -85,17 +84,21 @@ void CalcExpectedDockedRect(
 
 ### Parameters
 
-*barContainerManager*<br/>
-[in] [in] *pWndTodock*
-*ptMouse*<br/>
-[in] [out] *rectResult*
-*bDrawTab*<br/>
-[out] [out] *ppTargetBar*
+[in] *barContainerManager*<br/>
+
+[in] *pWndTodock*<br/>
+
+[in] *ptMouse*<br/>
+
+[out] *rectResult*<br/>
+
+[out] *bDrawTab*<br/>
+
+[out] *ppTargetBar*<br/>
 
 ### Remarks
 
 ##  <a name="canbeattached"></a>  CGlobalUtils::CanBeAttached
-
 
 ```
 BOOL CanBeAttached(CWnd* pWnd) const;
@@ -103,7 +106,7 @@ BOOL CanBeAttached(CWnd* pWnd) const;
 
 ### Parameters
 
-[in] *pWnd*
+[in] *pWnd*<br/>
 
 ### Return Value
 
@@ -111,21 +114,19 @@ BOOL CanBeAttached(CWnd* pWnd) const;
 
 ##  <a name="canpanebeinfloatingmultipaneframewnd"></a>  CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd
 
-
 ```
 BOOL CanPaneBeInFloatingMultiPaneFrameWnd(CWnd* pWnd) const;
 ```
 
 ### Parameters
 
-[in] *pWnd*
+[in] *pWnd*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="checkalignment"></a>  CGlobalUtils::CheckAlignment
-
 
 ```
 BOOL CheckAlignment(
@@ -141,21 +142,27 @@ BOOL CheckAlignment(
 
 ### Parameters
 
-*point*<br/>
-[in] [in] *pBar*
-*nSensitivity*<br/>
-[in] [in] *pDockManager*
-*bOuterEdge*<br/>
-[in] [out] *dwAlignment*
-*dwEnabledDockBars*<br/>
-[in] [in] *lpRectBounds*
+[in] *point*<br/>
+
+[in] *pBar*<br/>
+
+[in] *nSensitivity*<br/>
+
+[in] *pDockManager*<br/>
+
+[in] *bOuterEdge*<br/>
+
+[out] *dwAlignment*<br/>
+
+[in] *dwEnabledDockBars*<br/>
+
+[in] *lpRectBounds*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="cyfromstring"></a>  CGlobalUtils::CyFromString
-
 
 ```
 BOOL CyFromString(
@@ -165,15 +172,15 @@ BOOL CyFromString(
 
 ### Parameters
 
-*cy*<br/>
-[out] [in] *psz*
+[out] *cy*<br/>
+
+[in] *psz*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="decimalfromstring"></a>  CGlobalUtils::DecimalFromString
-
 
 ```
 BOOL DecimalFromString(
@@ -183,15 +190,15 @@ BOOL DecimalFromString(
 
 ### Parameters
 
-*decimal*<br/>
-[out] [in] *psz*
+[out] *decimal*<br/>
+
+[in] *psz*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="fliprect"></a>  CGlobalUtils::FlipRect
-
 
 ```
 void FlipRect(
@@ -201,13 +208,12 @@ void FlipRect(
 
 ### Parameters
 
-*rect*<br/>
-[in, out] [in] *nDegrees*
+[in, out] *rect*<br/>
+[in] *nDegrees*<br/>
 
 ### Remarks
 
 ##  <a name="forceadjustlayout"></a>  CGlobalUtils::ForceAdjustLayout
-
 
 ```
 void ForceAdjustLayout(
@@ -218,14 +224,15 @@ void ForceAdjustLayout(
 
 ### Parameters
 
-*pDockManager*<br/>
-[in, out] [in] *bForce*
-[in] *bForceInvisible*
+[in, out] *pDockManager*<br/>
+
+[in] *bForce*<br/>
+
+[in] *bForceInvisible*<br/>
 
 ### Remarks
 
 ##  <a name="getdockingmanager"></a>  CGlobalUtils::GetDockingManager
-
 
 ```
 CDockingManager* GetDockingManager(CWnd* pWnd);
@@ -233,7 +240,7 @@ CDockingManager* GetDockingManager(CWnd* pWnd);
 
 ### Parameters
 
-[in] *pWnd*
+[in] *pWnd*<br/>
 
 ### Return Value
 
@@ -241,21 +248,19 @@ CDockingManager* GetDockingManager(CWnd* pWnd);
 
 ##  <a name="getoppositealignment"></a>  CGlobalUtils::GetOppositeAlignment
 
-
 ```
 DWORD GetOppositeAlignment(DWORD dwAlign);
 ```
 
 ### Parameters
 
-[in] *dwAlign*
+[in] *dwAlign*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="getpaneandalignfrompoint"></a>  CGlobalUtils::GetPaneAndAlignFromPoint
-
 
 ```
 BOOL GetPaneAndAlignFromPoint(
@@ -269,12 +274,17 @@ BOOL GetPaneAndAlignFromPoint(
 
 ### Parameters
 
-*barContainerManager*<br/>
-[in] [in] *pt*
-*ppTargetControlBar*<br/>
-[out] [out] *dwAlignment*
-*bTabArea*<br/>
-[out] [out] *bCaption*
+[in] *barContainerManager*<br/>
+
+[in] *pt*<br/>
+
+[out] *ppTargetControlBar*<br/>
+
+[out] *dwAlignment*<br/>
+
+[out] *bTabArea*<br/>
+
+[out] *bCaption*<br/>
 
 ### Return Value
 
@@ -282,21 +292,19 @@ BOOL GetPaneAndAlignFromPoint(
 
 ##  <a name="getwndicon"></a>  CGlobalUtils::GetWndIcon
 
-
 ```
 HICON GetWndIcon(CWnd* pWnd);
 ```
 
 ### Parameters
 
-[in] *pWnd*
+[in] *pWnd*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="setnewparent"></a>  CGlobalUtils::SetNewParent
-
 
 ```
 void SetNewParent(
@@ -307,14 +315,15 @@ void SetNewParent(
 
 ### Parameters
 
-*lstControlBars*<br/>
-[in] [in] *pNewParent*
-[in] *bCheckVisibility*
+[in] *lstControlBars*<br/>
+
+[in] *pNewParent*<br/>
+
+[in] *bCheckVisibility*<br/>
 
 ### Remarks
 
 ##  <a name="stringfromcy"></a>  CGlobalUtils::StringFromCy
-
 
 ```
 BOOL StringFromCy(
@@ -324,15 +333,15 @@ BOOL StringFromCy(
 
 ### Parameters
 
-*str*<br/>
-[out] [in] *cy*
+[out] *str*<br/>
+
+[in] *cy*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="stringfromdecimal"></a>  CGlobalUtils::StringFromDecimal
-
 
 ```
 BOOL StringFromDecimal(
@@ -342,8 +351,9 @@ BOOL StringFromDecimal(
 
 ### Parameters
 
-*str*<br/>
-[out] [in] *decimal*
+[out] *str*<br/>
+
+[in] *decimal*<br/>
 
 ### Return Value
 

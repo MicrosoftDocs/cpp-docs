@@ -23,7 +23,7 @@ This class provides methods, static functions, and typedefs useful when creating
 
 ```
 template<typename T, class Allocator = ATL::CCRTAllocator>
-class CHeapPtrElementTraits : 
+class CHeapPtrElementTraits :
    public CDefaultElementTraits<ATL::CHeapPtr<T, Allocator>>
 ```
 

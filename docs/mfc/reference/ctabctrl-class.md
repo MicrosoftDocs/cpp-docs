@@ -542,17 +542,14 @@ LONG InsertItem(
     int nItem,
     TCITEM* pTabCtrlItem);
 
-
 LONG InsertItem(
     int nItem,
     LPCTSTR lpszItem);
-
 
 LONG InsertItem(
     int nItem,
     LPCTSTR lpszItem,
     int nImage);
-
 
 LONG InsertItem(
     UINT nMask,
@@ -560,7 +557,6 @@ LONG InsertItem(
     LPCTSTR lpszItem,
     int nImage,
     LPARAM lParam);
-
 
 LONG InsertItem(
     UINT nMask,

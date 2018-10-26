@@ -42,7 +42,7 @@ A generic function is a function that is declared with type parameters. When cal
 return-type identifier<type-parameter identifier(s)>
 [type-parameter-constraints clauses]
 
-([formal-parameters])  
+([formal-parameters])
 {function-body}
 ```
 

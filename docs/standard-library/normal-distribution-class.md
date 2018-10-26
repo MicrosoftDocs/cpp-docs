@@ -210,6 +210,7 @@ struct param_type {
    bool operator!=(const param_type& right) const;
    };
 ```
+
 ### Parameters
 
 *mean*<br/>

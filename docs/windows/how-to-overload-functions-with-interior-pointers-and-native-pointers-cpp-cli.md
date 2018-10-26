@@ -57,9 +57,9 @@ int main() {
 };
 ```
 
-```Output 
-in f( int* pi )  
-in f( interior_ptr<int> pi )  
+```Output
+in f( int* pi )
+in f( interior_ptr<int> pi )
 ```
 
 ## See Also

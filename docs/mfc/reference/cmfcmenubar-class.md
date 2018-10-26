@@ -1,7 +1,7 @@
 ---
 title: "CMFCMenuBar Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCMenuBar", "AFXMENUBAR/CMFCMenuBar", "AFXMENUBAR/CMFCMenuBar::AdjustLocations", "AFXMENUBAR/CMFCMenuBar::AllowChangeTextLabels", "AFXMENUBAR/CMFCMenuBar::AllowShowOnPaneMenu", "AFXMENUBAR/CMFCMenuBar::CalcFixedLayout", "AFXMENUBAR/CMFCMenuBar::CalcLayout", "AFXMENUBAR/CMFCMenuBar::CalcMaxButtonHeight", "AFXMENUBAR/CMFCMenuBar::CanBeClosed", "AFXMENUBAR/CMFCMenuBar::CanBeRestored", "AFXMENUBAR/CMFCMenuBar::Create", "AFXMENUBAR/CMFCMenuBar::CreateEx", "AFXMENUBAR/CMFCMenuBar::CreateFromMenu", "AFXMENUBAR/CMFCMenuBar::EnableHelpCombobox", "AFXMENUBAR/CMFCMenuBar::EnableMenuShadows", "AFXMENUBAR/CMFCMenuBar::GetAvailableExpandSize", "AFXMENUBAR/CMFCMenuBar::GetColumnWidth", "AFXMENUBAR/CMFCMenuBar::GetDefaultMenu", "AFXMENUBAR/CMFCMenuBar::GetDefaultMenuResId", "AFXMENUBAR/CMFCMenuBar::GetFloatPopupDirection", "AFXMENUBAR/CMFCMenuBar::GetForceDownArrows", "AFXMENUBAR/CMFCMenuBar::GetHelpCombobox", "AFXMENUBAR/CMFCMenuBar::GetHMenu", "AFXMENUBAR/CMFCMenuBar::GetMenuFont", "AFXMENUBAR/CMFCMenuBar::GetMenuItem", "AFXMENUBAR/CMFCMenuBar::GetRowHeight", "AFXMENUBAR/CMFCMenuBar::GetSystemButton", "AFXMENUBAR/CMFCMenuBar::GetSystemButtonsCount", "AFXMENUBAR/CMFCMenuBar::GetSystemMenu", "AFXMENUBAR/CMFCMenuBar::HighlightDisabledItems", "AFXMENUBAR/CMFCMenuBar::IsButtonExtraSizeAvailable", "AFXMENUBAR/CMFCMenuBar::IsHighlightDisabledItems", "AFXMENUBAR/CMFCMenuBar::IsMenuShadows", "AFXMENUBAR/CMFCMenuBar::IsRecentlyUsedMenus", "AFXMENUBAR/CMFCMenuBar::IsShowAllCommands", "AFXMENUBAR/CMFCMenuBar::IsShowAllCommandsDelay", "AFXMENUBAR/CMFCMenuBar::LoadState", "AFXMENUBAR/CMFCMenuBar::OnChangeHot", "AFXMENUBAR/CMFCMenuBar::OnDefaultMenuLoaded", "AFXMENUBAR/CMFCMenuBar::OnSendCommand", "AFXMENUBAR/CMFCMenuBar::OnSetDefaultButtonText", "AFXMENUBAR/CMFCMenuBar::OnToolHitTest", "AFXMENUBAR/CMFCMenuBar::PreTranslateMessage", "AFXMENUBAR/CMFCMenuBar::RestoreOriginalstate", "AFXMENUBAR/CMFCMenuBar::SaveState", "AFXMENUBAR/CMFCMenuBar::SetDefaultMenuResId", "AFXMENUBAR/CMFCMenuBar::SetForceDownArrows", "AFXMENUBAR/CMFCMenuBar::SetMaximizeMode", "AFXMENUBAR/CMFCMenuBar::SetMenuButtonRTC", "AFXMENUBAR/CMFCMenuBar::SetMenuFont", "AFXMENUBAR/CMFCMenuBar::SetRecentlyUsedMenus", "AFXMENUBAR/CMFCMenuBar::SetShowAllCommands"]
@@ -143,7 +143,6 @@ Returns TRUE if the user can choose to show text labels under images.
 
 ##  <a name="allowshowonpanemenu"></a>  CMFCMenuBar::AllowShowOnPaneMenu
 
-
 ```
 virtual BOOL AllowShowOnPaneMenu() const;
 ```
@@ -154,7 +153,6 @@ virtual BOOL AllowShowOnPaneMenu() const;
 
 ##  <a name="calcfixedlayout"></a>  CMFCMenuBar::CalcFixedLayout
 
-
 ```
 virtual CSize CalcFixedLayout(
     BOOL bStretch,
@@ -163,15 +161,15 @@ virtual CSize CalcFixedLayout(
 
 ### Parameters
 
-*bStretch*<br/>
-[in] [in] *bHorz*
+[in] *bStretch*<br/>
+
+[in] *bHorz*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="calclayout"></a>  CMFCMenuBar::CalcLayout
-
 
 ```
 virtual CSize CalcLayout(
@@ -181,15 +179,15 @@ virtual CSize CalcLayout(
 
 ### Parameters
 
-*dwMode*<br/>
-[in] [in] *nLength*
+[in] *dwMode*<br/>
+
+[in] *nLength*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="calcmaxbuttonheight"></a>  CMFCMenuBar::CalcMaxButtonHeight
-
 
 ```
 virtual int CalcMaxButtonHeight();
@@ -201,7 +199,6 @@ virtual int CalcMaxButtonHeight();
 
 ##  <a name="canbeclosed"></a>  CMFCMenuBar::CanBeClosed
 
-
 ```
 virtual BOOL CanBeClosed() const;
 ```
@@ -211,7 +208,6 @@ virtual BOOL CanBeClosed() const;
 ### Remarks
 
 ##  <a name="canberestored"></a>  CMFCMenuBar::CanBeRestored
-
 
 ```
 virtual BOOL CanBeRestored() const;
@@ -376,7 +372,6 @@ The algorithm that this method uses is complex and may decrease the performance 
 
 ##  <a name="getavailableexpandsize"></a>  CMFCMenuBar::GetAvailableExpandSize
 
-
 ```
 virtual int GetAvailableExpandSize() const;
 ```
@@ -386,7 +381,6 @@ virtual int GetAvailableExpandSize() const;
 ### Remarks
 
 ##  <a name="getcolumnwidth"></a>  CMFCMenuBar::GetColumnWidth
-
 
 ```
 virtual int GetColumnWidth() const;
@@ -430,21 +424,19 @@ The framework loads the default menu for the `CMFCMenuBar` object from the resou
 
 ##  <a name="getfloatpopupdirection"></a>  CMFCMenuBar::GetFloatPopupDirection
 
-
 ```
 int GetFloatPopupDirection(CMFCToolBarMenuButton* pButton);
 ```
 
 ### Parameters
 
-[in] *pButton*
+[in] *pButton*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="getforcedownarrows"></a>  CMFCMenuBar::GetForceDownArrows
-
 
 ```
 BOOL GetForceDownArrows();
@@ -518,7 +510,6 @@ A pointer to the `CMFCToolBarButton` object that matches the index specified by 
 
 ##  <a name="getrowheight"></a>  CMFCMenuBar::GetRowHeight
 
-
 ```
 virtual int GetRowHeight() const;
 ```
@@ -529,7 +520,6 @@ virtual int GetRowHeight() const;
 
 ##  <a name="getsystembutton"></a>  CMFCMenuBar::GetSystemButton
 
-
 ```
 CMFCToolBarMenuButtonsButton* GetSystemButton(
     UINT uiBtn,
@@ -538,15 +528,15 @@ CMFCToolBarMenuButtonsButton* GetSystemButton(
 
 ### Parameters
 
-*uiBtn*<br/>
-[in] [in] *bByCommand*
+[in] *uiBtn*<br/>
+
+[in] *bByCommand*<br/>
 
 ### Return Value
 
 ### Remarks
 
 ##  <a name="getsystembuttonscount"></a>  CMFCMenuBar::GetSystemButtonsCount
-
 
 ```
 int GetSystemButtonsCount() const;
@@ -557,7 +547,6 @@ int GetSystemButtonsCount() const;
 ### Remarks
 
 ##  <a name="getsystemmenu"></a>  CMFCMenuBar::GetSystemMenu
-
 
 ```
 CMFCToolBarSystemMenuButton* GetSystemMenu() const;
@@ -585,7 +574,6 @@ static void HighlightDisabledItems(BOOL bHighlight = TRUE);
 By default, the framework does not highlight unavailable menu items when the user positions the mouse pointer over them.
 
 ##  <a name="isbuttonextrasizeavailable"></a>  CMFCMenuBar::IsButtonExtraSizeAvailable
-
 
 ```
 virtual BOOL IsButtonExtraSizeAvailable() const;
@@ -717,14 +705,13 @@ In most cases your application does not call `LoadState`. The framework calls th
 
 ##  <a name="onchangehot"></a>  CMFCMenuBar::OnChangeHot
 
-
 ```
 virtual void OnChangeHot(int iHot);
 ```
 
 ### Parameters
 
-[in] *iHot*
+[in] *iHot*<br/>
 
 ### Remarks
 
@@ -747,14 +734,13 @@ The default implementation of this function does nothing. Override this function
 
 ##  <a name="onsendcommand"></a>  CMFCMenuBar::OnSendCommand
 
-
 ```
 virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 ```
 
 ### Parameters
 
-[in] *pButton*
+[in] *pButton*<br/>
 
 ### Return Value
 
@@ -783,7 +769,6 @@ The default implementation for this method changes the text of the button to the
 
 ##  <a name="ontoolhittest"></a>  CMFCMenuBar::OnToolHitTest
 
-
 ```
 virtual INT_PTR OnToolHitTest(
     CPoint point,
@@ -792,8 +777,9 @@ virtual INT_PTR OnToolHitTest(
 
 ### Parameters
 
-*point*<br/>
-[in] [in] *pTI*
+[in] *point*<br/>
+
+[in] *pTI*<br/>
 
 ### Return Value
 
@@ -801,14 +787,13 @@ virtual INT_PTR OnToolHitTest(
 
 ##  <a name="pretranslatemessage"></a>  CMFCMenuBar::PreTranslateMessage
 
-
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```
 
 ### Parameters
 
-[in] *pMsg*
+[in] *pMsg*<br/>
 
 ### Return Value
 
@@ -885,14 +870,13 @@ Use the [CMFCMenuBar::GetDefaultMenuResId](#getdefaultmenuresid) method to retri
 
 ##  <a name="setforcedownarrows"></a>  CMFCMenuBar::SetForceDownArrows
 
-
 ```
 void SetForceDownArrows(BOOL bValue);
 ```
 
 ### Parameters
 
-[in] *bValue*
+[in] *bValue*<br/>
 
 ### Remarks
 

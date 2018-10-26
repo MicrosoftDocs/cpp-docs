@@ -23,7 +23,6 @@ ms.workload: ["cplusplus"]
 |[INTERFACE_PART](#interface_part)|Used between the BEGIN_INTERFACE_MAP macro and the END_INTERFACE_MAP macro for each interface your object will support.|
 |[MAKE_DELEGATE](#make_delegate)|Attaches an event handler to a managed control.|
 
-
 ## <a name="begin_delegate_map"></a> BEGIN_DELEGATE_MAP
 
 Begins a delegate map.
@@ -33,6 +32,7 @@ Begins a delegate map.
 ```
 BEGIN_DELEGATE_MAP(  CLASS );
 ```
+
 ### Parameters
 
 *CLASS*<br/>
@@ -59,6 +59,7 @@ Begins the definition of the interfaced map when used in the implementation file
 ```
 BEGIN_INTERFACE_MAP( theClass, baseClass )
 ```
+
 ### Parameters
 
 *theClass*<br/>
@@ -86,6 +87,7 @@ Registers callback methods with a command source.
 ```
 delegate void CommandHandler(  UINT^ cmdID  );
 ```
+
 ### Parameters
 
 *cmdID*<br/>
@@ -116,6 +118,7 @@ Registers callback methods with a user interface update command message.
 ```
 delegate void CommandUIHandler(  unsigned int cmdID, ICommandUI^ cmdUI);
 ```
+
 ### Parameters
 
 *cmdID*<br/>
@@ -161,7 +164,6 @@ This macro marks the end of a list of delegate entries, which compose a delegate
 
 [How to: Sink Windows Forms Events from Native C++ Classes](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
 
-
 ##  <a name="end_interface_map"></a>END_INTERFACE_MAP
 
 Ends the interface map in the implementation file.
@@ -185,7 +187,6 @@ For more information about interface maps, see [Technical Note 38](../tn038-mfc-
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
 [BEGIN_INTERFACE_MAP](#begin_interface_map)
 
-
 ##  <a name="event_delegate_entry"></a>EVENT_DELEGATE_ENTRY
 
 Creates an entry in the delegate map.
@@ -195,6 +196,7 @@ Creates an entry in the delegate map.
 ```
 EVENT_DELEGATE_ENTRY(MEMBER, ARG0, ARG1);
 ```
+
 ### Parameters
 
 *MEMBER*<br/>
@@ -231,7 +233,6 @@ END_DELEGATE_MAP()
 [BEGIN_DELEGATE_MAP](#begin_delegate_map)<br/>
 [END_DELEGATE_MAP](#end_delegate_map)
 
-
 ##  <a name="interface_part"></a>INTERFACE_PART
 
 Used between the BEGIN_INTERFACE_MAP macro and the END_INTERFACE_MAP macro for each interface your object will support.
@@ -241,6 +242,7 @@ Used between the BEGIN_INTERFACE_MAP macro and the END_INTERFACE_MAP macro for e
 ```
 INTERFACE_PART( theClass, iid, localClass)
 ```
+
 ### Parameters
 
 *theClass*<br/>
@@ -260,7 +262,6 @@ For more information on interface maps, see [Technical Note 38](../tn038-mfc-ole
 
 **Header:** afxwin.h
 
-
 ##  <a name="make_delegate"></a>MAKE_DELEGATE
 
 Attaches an event handler to a managed control.
@@ -270,6 +271,7 @@ Attaches an event handler to a managed control.
 ```
 MAKE_DELEGATE( DELEGATE,  MEMBER) ;
 ```
+
 ### Parameters
 
 *DELEGATE*<br/>
@@ -305,7 +307,4 @@ void CMyView::OnInitialUpdate()
 [BEGIN_DELEGATE_MAP](#begin_delegate_map)<br/>
 [END_DELEGATE_MAP](#end_delegate_map)<br/>
 [EVENT_DELEGATE_ENTRY](#event_delegate_entry)
-
-
-
 

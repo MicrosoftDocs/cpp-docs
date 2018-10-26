@@ -225,6 +225,7 @@ Stores the length of the next-to-most significant dimension.
 ```
 static const int tile_dim1 = _Dim1;
 ```
+
 ## <a name="tiled_index__tile_dim2"></a>  tile_dim2
 
 Stores the length of the least significant dimension.
@@ -234,6 +235,7 @@ Stores the length of the least significant dimension.
 ```
 static const int tile_dim2 = _Dim2;
 ```
+
 ## <a name="tiled_index__tile_origin"></a>  tile_origin
 
 Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the global coordinates of the origin of the current tile within a [tiled_extent](tiled-extent-class.md) object.
@@ -243,6 +245,7 @@ Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the 
 ```
 const index<rank> tile_origin
 ```
+
 ## <a name="tile_extent"></a>  tile_extent
   Gets an [extent](extent-class.md) object that has the values of the `tiled_index` template arguments `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.
 
