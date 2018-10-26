@@ -36,7 +36,7 @@ Upon building a newly converted project, one of the first things you'll often fi
 
 One of the files that couldn't be found in Spy++ was verstamp.h. From an Internet search, we determined that this came from a DAO SDK, an obsolete data technology. We wanted to find out what symbols were being used from that header file, to see if that file was really needed or if those symbols were defined elsewhere, so we commented out the header file declaration and recompiled. It turns out there is just one symbol that is needed, VER_FILEFLAGSMASK.
 
-```
+```Output
 1>C:\Program Files (x86)\Windows Kits\8.1\Include\shared\common.ver(212): error RC2104: undefined keyword or key name: VER_FILEFLAGSMASK
 ```
 
@@ -64,7 +64,7 @@ The next error indicates that WINVER version is no longer supported in MFC. WINV
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxv_w32.h(40): fatal error C1189: #error:  MFC does not support WINVER less than 0x0501.  Please change the definition of WINVER in your project properties or precompiled header.
 ```
 
-Windows XP is no longer supported by Microsoft, so even though targeting it is allowed in Visual Studio 2015, you should be phasing out support for it in your applications, and encouraging your users to adopt new versions of Windows.
+Windows XP is no longer supported by Microsoft, so even though targeting it is allowed in Visual Studio, you should be phasing out support for it in your applications, and encouraging your users to adopt new versions of Windows.
 
 To get rid of the error, define WINVER by updating the **Project Properties** setting to the lowest version of Windows you currently want to target. Find a table of values for various Windows releases [here](/windows/desktop/WinProg/using-the-windows-headers).
 
@@ -86,7 +86,7 @@ WINVER we will set to Windows 7. It’s easier to read the code later if you use
 
 With these changes, the SpyHk (DLL) project builds but produces a linker error.
 
-```
+```Output
 LINK : warning LNK4216: Exported entry point _DLLEntryPoint@12
 ```
 
@@ -111,7 +111,9 @@ Given a project with many compilation errors that you are gradually eliminating,
 
 The next error is common with old C++ code that uses iostreams.
 
+```Output
 mstream.h(40): fatal error C1083: Cannot open include file: 'iostream.h': No such file or directory
+```
 
 The issue is that the old iostreams library has been removed and replaced. We have to replace the old iostreams with the newer standards.
 
@@ -186,7 +188,7 @@ MOUT << _T(" chUser:'") << chUser
 << _T("' (") << (INT)(UCHAR)chUser << _T(')');
 ```
 
-The macro MOUT resolves to \*g_pmout which is an object of type `mstream`. The `mstream` class is derived from the standard output string class, `std::basic_ostream<TCHAR>.` However with \_T around the string literal, which we put in preparation for converting to Unicode, the overload resolution for **operator <<** fails with the following error message:
+The macro MOUT resolves to `*g_pmout` which is an object of type `mstream`. The `mstream` class is derived from the standard output string class, `std::basic_ostream<TCHAR>`. However with \_T around the string literal, which we put in preparation for converting to Unicode, the overload resolution for **operator <<** fails with the following error message:
 
 ```Output
 1>winmsgs.cpp(4612): error C2666: 'mstream::operator <<': 2 overloads have similar conversions
@@ -257,7 +259,7 @@ This type of conversion was allowed under the older, less strict compiler, but m
 
 We also get many errors like the following:
 
-```
+```Output
 error C2440: 'static_cast': cannot convert from 'UINT (__thiscall CHotLinkCtrl::* )(CPoint)' to 'LRESULT (__thiscall CWnd::* )(CPoint)'
 ```
 
@@ -635,7 +637,7 @@ With these techniques, it took about half a day to convert the code to use the s
 
 ##  <a name="deprecated_forscope"></a> Step 13. /Zc:forScope- is deprecated
 
-Since Visual C++ 6.0, the compiler conforms to the current standard, which limits the scope of variables declared in a  loop to the scope of the loop. The compiler option [/Zc:forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) (**Force Conformance for Loop Scope** in the project properties) controls whether or not this is reported as an error. We should update our code to be conformant, and add declarations just outside the loop. To avoid making the code changes, you can change that setting in the **Language** section of the C++ project properties to `No (/Zc:forScope-)`. However, keep in mind that `/Zc:forScope-` might be removed in a future release of Visual C++, so eventually your code will need to change to conform to the standard.
+Since Visual C++ 6.0, the compiler conforms to the current standard, which limits the scope of variables declared in a loop to the scope of the loop. The compiler option [/Zc:forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) (**Force Conformance for Loop Scope** in the project properties) controls whether or not this is reported as an error. We should update our code to be conformant, and add declarations just outside the loop. To avoid making the code changes, you can change that setting in the **Language** section of the C++ project properties to `No (/Zc:forScope-)`. However, keep in mind that `/Zc:forScope-` might be removed in a future release of Visual C++, so eventually your code will need to change to conform to the standard.
 
 These issues are relatively easy to fix, but depending on your code, it might affect a lot of code. Here's a typical issue.
 
