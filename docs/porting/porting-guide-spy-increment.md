@@ -186,7 +186,7 @@ MOUT << _T(" chUser:'") << chUser
 << _T("' (") << (INT)(UCHAR)chUser << _T(')');
 ```
 
-The macro MOUT resolves to \*g_pmout which is an object of type `mstream`. The `mstream` class is derived from the standard output string class, `std::basic_ostream<TCHAR>.` However with _T around the string literal, which we put in in preparation for converting to Unicode, the overload resolution for **operator <<** fails with the following error message:
+The macro MOUT resolves to \*g_pmout which is an object of type `mstream`. The `mstream` class is derived from the standard output string class, `std::basic_ostream<TCHAR>.` However with \_T around the string literal, which we put in preparation for converting to Unicode, the overload resolution for **operator <<** fails with the following error message:
 
 ```Output
 1>winmsgs.cpp(4612): error C2666: 'mstream::operator <<': 2 overloads have similar conversions
@@ -517,7 +517,7 @@ msvcrtd.lib;msvcirtd.lib;kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;Debug\Sp
 
 Now let us actually update the old Multi-byte Character Set (MBCS) code to Unicode. Since this is a Windows application, intimately tied to the Windows desktop platform, we will port it to UTF-16 Unicode that Windows uses. If you are writing cross-platform code or porting a Windows application to another platform, you might want to consider porting to UTF-8, which is widely used on other operating systems.
 
-Porting to UTF-16 Unicode, we must decide whether we still want the option to compile to MBCS or not.  If we want to have the option to support MBCS, we should use the TCHAR macro as the character type, which resolves to either **char** or **wchar_t**, depending on whether _MBCS or _UNICODE is defined during compilation. Switching to TCHAR and the TCHAR versions of various APIs instead of **wchar_t** and its associated APIs means that you can get back to an MBCS version of your code simply by defining _MBCS macro instead of _UNICODE. In addition to TCHAR, a variety of TCHAR versions of such as widely used typedefs, macros, and functions exists. For example, LPCTSTR instead of LPCSTR, and so on. In the project properties dialog, under **Configuration Properties**, in the **General** section, change the **Character Set** property from **Use MBCS Character Set** to **Use Unicode Character Set**. This setting affects which macro is predefined during compilation. There is both a UNICODE macro and a _UNICODE macro. The project property affects both consistently. Windows headers use UNICODE where Visual C++ headers such as MFC use _UNICODE, but when one is defined, the other is always defined.
+Porting to UTF-16 Unicode, we must decide whether we still want the option to compile to MBCS or not.  If we want to have the option to support MBCS, we should use the TCHAR macro as the character type, which resolves to either **char** or **wchar_t**, depending on whether \_MBCS or \_UNICODE is defined during compilation. Switching to TCHAR and the TCHAR versions of various APIs instead of **wchar_t** and its associated APIs means that you can get back to an MBCS version of your code simply by defining \_MBCS macro instead of \_UNICODE. In addition to TCHAR, a variety of TCHAR versions of such as widely used typedefs, macros, and functions exists. For example, LPCTSTR instead of LPCSTR, and so on. In the project properties dialog, under **Configuration Properties**, in the **General** section, change the **Character Set** property from **Use MBCS Character Set** to **Use Unicode Character Set**. This setting affects which macro is predefined during compilation. There is both a UNICODE macro and a \_UNICODE macro. The project property affects both consistently. Windows headers use UNICODE where Visual C++ headers such as MFC use \_UNICODE, but when one is defined, the other is always defined.
 
 A good [guide](https://msdn.microsoft.com/library/cc194801.aspx) to porting from MBCS to UTF-16 Unicode using TCHAR exists. We choose this route. First, we change the **Character Set** property to **Use Unicode Character Set** and rebuild the project.
 
@@ -535,13 +535,13 @@ Here’s an example of code that produces this:
 wsprintf(szTmp, "%d.%2.2d.%4.4d", rmj, rmm, rup);
 ```
 
-We put _T around the string literal to remove the error.
+We put \_T around the string literal to remove the error.
 
 ```cpp
 wsprintf(szTmp, _T("%d.%2.2d.%4.4d"), rmj, rmm, rup);
 ```
 
-The _T macro has the effect of making a string literal compile as a **char** string or a **wchar_t** string, depending on the setting of MBCS or UNICODE. To replace all strings with _T in Visual Studio, first open the **Quick Replace** (Keyboard: **Ctrl**+**F**) box or the **Replace In Files** (Keyboard: **Ctrl**+**Shift**+**H**), then choose the **Use Regular Expressions** checkbox. Enter `((\".*?\")|('.+?'))` as the search text and `_T($1)` as the replacement text. If you already have the _T macro around some strings, this procedure will add it again, and it might also find cases where you don't want _T, such as when you use `#include`, so it's best to use **Replace Next** rather than **Replace All**.
+The \_T macro has the effect of making a string literal compile as a **char** string or a **wchar_t** string, depending on the setting of MBCS or UNICODE. To replace all strings with \_T in Visual Studio, first open the **Quick Replace** (Keyboard: **Ctrl**+**F**) box or the **Replace In Files** (Keyboard: **Ctrl**+**Shift**+**H**), then choose the **Use Regular Expressions** checkbox. Enter `((\".*?\")|('.+?'))` as the search text and `_T($1)` as the replacement text. If you already have the \_T macro around some strings, this procedure will add it again, and it might also find cases where you don't want \_T, such as when you use `#include`, so it's best to use **Replace Next** rather than **Replace All**.
 
 This particular function, [wsprintf](/windows/desktop/api/winuser/nf-winuser-wsprintfa), is actually defined in the Windows headers, and the documentation for it recommends that it not be used, due to possible buffer overrun. No size is given for the `szTmp` buffer, so there is no way for the function to check that the buffer can hold all the data to be written to it. See the next section about porting to the Secure CRT, in which we fix other similar problems. We ended up replacing it with [_stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md).
 
@@ -569,7 +569,7 @@ Similarly, we changed LPSTR (Long Pointer to STRing) and LPCSTR (Long Pointer to
 
 In some cases we had to replace a type to use a version that resolves correctly (WNDCLASS instead of WNDCLASSA for example).
 
-In many cases we had to use the generic version (macro) of a Win32 API like `GetClassName` (instead of `GetClassNameA`). In message handler switch statement, some messages are MBCS or Unicode specific, in those cases, we had to change the code to explicitly call the MBCS version, because we replaced the generically named functions with **A** and **W** specific functions, and added a macro for the generic name that resolves to the correct **A** or **W** name based on whether UNICODE is defined.  In many parts of the code, when we switched to define _UNICODE, the W version is now chosen even when the **A** version is what's wanted.
+In many cases we had to use the generic version (macro) of a Win32 API like `GetClassName` (instead of `GetClassNameA`). In message handler switch statement, some messages are MBCS or Unicode specific, in those cases, we had to change the code to explicitly call the MBCS version, because we replaced the generically named functions with **A** and **W** specific functions, and added a macro for the generic name that resolves to the correct **A** or **W** name based on whether UNICODE is defined.  In many parts of the code, when we switched to define \_UNICODE, the W version is now chosen even when the **A** version is what's wanted.
 
 There are a few places where special actions had to be taken. Any use of `WideCharToMultiByte` or `MultiByteToWideChar` might require a closer look. Here's one example where `WideCharToMultiByte` was being used.
 
