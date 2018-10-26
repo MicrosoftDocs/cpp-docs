@@ -18,7 +18,9 @@ You can use the Visual Studio IDE in Windows to create, edit and debug C++ proje
 
 ## Visual Studio setup
 
-1. Type "Visual Studio Installer" in the Windows search menu; look for it under the **Apps** results and double-click it. When the installer opens, choose **Modify**, and then click on the **Workloads** tab. Scroll down to **Other toolsets** and select the **Linux development with C++** workload.
+1. Type "Visual Studio Installer" in the Windows search box:
+   ![Windows search box](media/visual-studio-installer-search.png)
+2. Look for the installer under the **Apps** results and double-click it. When the installer opens, choose **Modify**, and then click on the **Workloads** tab. Scroll down to **Other toolsets** and select the **Linux development with C++** workload.
 
    ![Visual C++ for Linux Development workload](media/linuxworkload.png)
 
