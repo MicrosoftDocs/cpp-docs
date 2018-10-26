@@ -23,11 +23,11 @@ Controls the threshold for stack probes.
 ## Arguments
 
 *size*<br/>
-(Optional) The number of bytes that local variables can occupy before the compiler adds code to initiate a stack probe. No space is allowed between **/Gs** and *size*.
+(Optional) The number of bytes that local variables can occupy before a stack probe is initiated. No space is allowed between **/Gs** and *size*.
 
 ## Remarks
 
-A *stack probe* is a sequence of code that the compiler inserts at the beginning of a function call. When *initiated*, a stack probe reaches benignly into memory by the amount of space that is required to store the function's local variables. This causes the operating system to transparently page in additional stack memory if required, before the rest of the function runs.
+A *stack probe* is a sequence of code that the compiler inserts at the beginning of a function call. When initiated, a stack probe reaches benignly into memory by the amount of space that is required to store the function's local variables. This causes the operating system to transparently page in additional stack memory if required, before the rest of the function runs.
 
 By default, the compiler generates code that initiates a stack probe when a function requires more than one page of stack space. This is equivalent to a compiler option of **/Gs4096** for x86, x64, ARM, and ARM64 platforms. This value allows an application and the Windows memory manager to increase the amount of memory committed to the program stack dynamically at run time.
 
