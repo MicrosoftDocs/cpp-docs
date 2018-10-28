@@ -26,7 +26,7 @@ This article covers advanced topics related to developing ActiveX controls. Thes
 - [Accessing Dialog Controls That Are Invisible at Run Time](#_core_accessing_dialog_controls_that_are_invisible_at_run_time)
 
 >[!IMPORTANT]
-> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 ##  <a name="_core_using_database_classes_in_activex_controls"></a> Using Database Classes in ActiveX Controls
 

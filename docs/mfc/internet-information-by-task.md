@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 The tasks listed in this topic are sorted based on the task you want to accomplish.
 
 >[!IMPORTANT]
-> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 The following categories of tasks are listed in this topic:
 

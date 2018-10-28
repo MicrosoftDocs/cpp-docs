@@ -113,7 +113,7 @@ In earlier versions of Visual Studio, the compiler always gave a `constexpr` var
 
 ### Deprecating Vestigial Library Parts
 
-[P0174R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0174r2.html) Several features of the C++ Standard library have been superceded by newer features over the years, or else have been found to be not very useful or to be problematic. These features are officially deprecated in C++17.
+[P0174R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0174r2.html) Several features of the C++ Standard library have been superseded by newer features over the years, or else have been found to be not very useful or to be problematic. These features are officially deprecated in C++17.
 
 ### Removing Allocator Support In std::function
 
