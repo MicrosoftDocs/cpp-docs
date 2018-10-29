@@ -29,13 +29,13 @@ By default in [Windows 8.1, winmdidl.exe and midlrt.exe are located in  C:\Progr
 ## Winmdidl command-line arguments
 
 ```
-Winmdidl.exe [/nologo] [/supressversioncheck] [/time] [/outdir:dir] [/banner:file] [/utf8] Winmdfile
+Winmdidl.exe [/nologo] [/suppressversioncheck] [/time] [/outdir:dir] [/banner:file] [/utf8] Winmdfile
 ```
 
 **/nologo**<br/>
 Prevents console display of the winmdidl copyright message and version number.
 
-**/supressversioncheck**<br/>
+**/suppressversioncheck**<br/>
 Not used.
 
 **/time**<br/>

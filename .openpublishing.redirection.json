@@ -171,6 +171,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute.md",
+            "redirect_url": "/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/build/reference/consistency-rules-for-per-file-use-of-precompiled-headers.md",
             "redirect_url": "/cpp/build/reference/creating-precompiled-header-files#consistency-rules-for-per-file-use-of-precompiled-headers",
             "redirect_document_id": false

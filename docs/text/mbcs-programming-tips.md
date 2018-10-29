@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # MBCS Programming Tips
 
-In new development, you should use Unicode character encoding for all strings that end users might possibly see. MBCS is a legacy technology that has been superceded by Unicode. This section supplies tips for developers who must maintain existing programs that use MBCS and where it is not practical to convert to Unicode. The advice applies to MFC applications and applications written without MFC. Topics include:
+In new development, you should use Unicode character encoding for all strings that end users might possibly see. MBCS is a legacy technology that has been superseded by Unicode. This section supplies tips for developers who must maintain existing programs that use MBCS and where it is not practical to convert to Unicode. The advice applies to MFC applications and applications written without MFC. Topics include:
 
 - [General MBCS Programming Advice](../text/general-mbcs-programming-advice.md)
 

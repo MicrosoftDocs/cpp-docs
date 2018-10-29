@@ -41,7 +41,7 @@ Source control enables you to coordinate work among multiple developers, isolate
 
 ![Team Explorer](media/vs2017-team-explorer.png "Visual Studio 2017 Team Explorer")
 
-For more information about Git integration with repos in Azure, see [Share your code with Visual Studio 2017 and Azure Repos Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017). For information about about Git integration with GitHub, see [GitHub Extension for Visual Studio](https://visualstudio.github.com/).
+For more information about Git integration with repos in Azure, see [Share your code with Visual Studio 2017 and Azure Repos Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017). For information about Git integration with GitHub, see [GitHub Extension for Visual Studio](https://visualstudio.github.com/).
 
 ## Create user interfaces with designers
 

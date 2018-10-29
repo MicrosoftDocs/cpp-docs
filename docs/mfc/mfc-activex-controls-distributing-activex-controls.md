@@ -23,7 +23,7 @@ This article discusses several issues related to redistributing ActiveX controls
 - [Registering Controls](#_core_registering_controls)
 
 >[!IMPORTANT]
-> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 ##  <a name="_core_ansi_or_unicode_control_versions"></a> ANSI or Unicode Control Versions
 
