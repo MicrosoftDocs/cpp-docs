@@ -1,16 +1,9 @@
 ---
-title: "Add Class Dialog Box | Microsoft Docs"
-ms.custom: ""
+title: "Add Class Dialog Box"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.addclass"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Add Class dialog box"]
 ms.assetid: 916259b8-8e5f-4267-bd10-313483beba67
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Add Class Dialog Box
 

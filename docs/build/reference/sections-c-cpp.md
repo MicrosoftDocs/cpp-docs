@@ -1,16 +1,9 @@
 ---
-title: "SECTIONS (C/C++) | Microsoft Docs"
-ms.custom: ""
+title: "SECTIONS (C/C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["SECTIONS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SECTIONS .def file statement"]
 ms.assetid: 7b974366-9ef5-4e57-bbcc-73a1df6f8857
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # SECTIONS (C/C++)
 

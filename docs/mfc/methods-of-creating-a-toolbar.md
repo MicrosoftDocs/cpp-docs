@@ -1,15 +1,8 @@
 ---
-title: "Methods of Creating a Toolbar | Microsoft Docs"
-ms.custom: ""
+title: "Methods of Creating a Toolbar"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CToolBarCtrl class [MFC], and CToolBar class [MFC]", "CToolBar class [MFC], creating toolbars", "MFC toolbars", "toolbar controls [MFC]", "toolbar controls [MFC], creating", "CToolBarCtrl class [MFC], creating toolbars"]
 ms.assetid: f19d8d65-d49f-445c-abe8-d47d3e4101c8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Methods of Creating a Toolbar
 

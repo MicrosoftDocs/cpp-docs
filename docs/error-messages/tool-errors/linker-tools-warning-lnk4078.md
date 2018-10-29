@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Warning LNK4078 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Warning LNK4078"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK4078"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4078"]
 ms.assetid: 5a16796d-6caf-42d9-8f65-b042843eafb8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4078
 

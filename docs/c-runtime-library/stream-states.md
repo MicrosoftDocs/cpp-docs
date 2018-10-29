@@ -1,15 +1,8 @@
 ---
-title: "Stream States | Microsoft Docs"
-ms.custom: ""
+title: "Stream States"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["streams, states"]
 ms.assetid: 5f28c968-f132-403f-968c-8417ff315e52
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Stream States
 

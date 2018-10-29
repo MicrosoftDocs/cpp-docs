@@ -1,15 +1,8 @@
 ---
-title: "Container Class::iterator | Microsoft Docs"
-ms.custom: ""
+title: "Container Class::iterator"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["iterator method"]
 ms.assetid: f9c49d1c-17cb-4b17-8e54-09e3ea41ca26
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Container Class::iterator
 

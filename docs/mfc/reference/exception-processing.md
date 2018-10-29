@@ -1,16 +1,9 @@
 ---
-title: "Exception Processing | Microsoft Docs"
-ms.custom: ""
+title: "Exception Processing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros.exceptions"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["macros [MFC], exception handling", "DAO (Data Access Objects), exceptions [MFC]", "OLE exceptions [MFC], MFC functions", "exceptions [MFC], processing", "exception macros [MFC]", "termination functions, MFC", "MFC, exceptions", "exceptions [MFC], MFC throwing functions"]
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exception Processing
 

@@ -1,16 +1,9 @@
 ---
-title: "result_of Class | Microsoft Docs"
-ms.custom: ""
+title: "result_of Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::result_of", "type_traits/std::result_of_t", "type_traits/std::result_of::type"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::result_of", "std::result_of_t", "std::result_of::type"]
 ms.assetid: 5374a096-4b4a-4712-aa97-6852c5cdd6be
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # result_of Class
 

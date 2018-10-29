@@ -1,16 +1,9 @@
 ---
-title: "INCLUDELIB (MASM) | Microsoft Docs"
-ms.custom: ""
+title: "INCLUDELIB (MASM)"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["INCLUDELIB"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["INCLUDELIB directive"]
 ms.assetid: 5455d004-8202-4b57-93f3-9aa66f133a2d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # INCLUDELIB (MASM)
 

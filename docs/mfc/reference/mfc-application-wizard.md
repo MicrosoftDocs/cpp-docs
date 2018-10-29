@@ -1,16 +1,9 @@
 ---
-title: "MFC Application Wizard | Microsoft Docs"
-ms.custom: ""
+title: "MFC Application Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.exe.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC Application Wizard", "executable files, creating"]
 ms.assetid: 227ac090-921d-4b2f-be0a-66a5f4cab0d4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Application Wizard
 

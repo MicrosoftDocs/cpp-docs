@@ -1,16 +1,9 @@
 ---
-title: "BITMAPINFO Structure | Microsoft Docs"
-ms.custom: ""
+title: "BITMAPINFO Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["BITMAPINFO"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["BITMAPINFO structure [MFC]"]
 ms.assetid: a00caa49-e4df-419f-89a7-ab03c13a1b5b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # BITMAPINFO Structure
 

@@ -1,15 +1,8 @@
 ---
-title: "Implementing a Simple Consumer | Microsoft Docs"
-ms.custom: ""
+title: "Implementing a Simple Consumer"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["clients, creating", "OLE DB consumers, implementing"]
 ms.assetid: 13828167-23a4-4e94-8b6c-878262fda464
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Implementing a Simple Consumer
 

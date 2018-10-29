@@ -1,16 +1,9 @@
 ---
-title: "CMFCPropertyPage Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCPropertyPage Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCPropertyPage", "AFXPROPERTYPAGE/CMFCPropertyPage", "AFXPROPERTYPAGE/CMFCPropertyPage::CMFCPropertyPage"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCPropertyPage [MFC], CMFCPropertyPage"]
 ms.assetid: d279d7f2-2d81-418d-9f23-6147d6e8df09
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCPropertyPage Class
 

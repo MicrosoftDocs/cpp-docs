@@ -1,15 +1,8 @@
 ---
-title: "How to: Use gcnew to Create Value Types and Use Implicit Boxing | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use gcnew to Create Value Types and Use Implicit Boxing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["gcnew keyword [C++], creating value types", "boxing, implicit", "value types, creating"]
 ms.assetid: ceb48841-d6bd-47be-a167-57f44c961603
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Use gcnew to Create Value Types and Use Implicit Boxing
 

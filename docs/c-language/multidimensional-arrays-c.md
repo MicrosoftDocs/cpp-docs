@@ -1,15 +1,8 @@
 ---
-title: "Multidimensional Arrays (C) | Microsoft Docs"
-ms.custom: ""
+title: "Multidimensional Arrays (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["arrays [C], multidimensional", "multidimensional arrays", "subscript expressions"]
 ms.assetid: 4ba5c360-1f17-4575-b370-45f62e1f2bc2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Multidimensional Arrays (C)
 

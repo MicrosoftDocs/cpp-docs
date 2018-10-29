@@ -1,15 +1,8 @@
 ---
-title: "texture_view Class | Microsoft Docs"
-ms.custom: ""
+title: "texture_view Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["texture_view", "AMP_GRAPHICS/texture_view", "AMP_GRAPHICS/Concurrency::graphics::texture_view::texture_view", "AMP_GRAPHICS/Concurrency::graphics::texture_view::gather_alpha", "AMP_GRAPHICS/Concurrency::graphics::texture_view::gather_blue", "AMP_GRAPHICS/Concurrency::graphics::texture_view::gather_green", "AMP_GRAPHICS/Concurrency::graphics::texture_view::gather_red", "AMP_GRAPHICS/Concurrency::graphics::texture_view::get", "AMP_GRAPHICS/Concurrency::graphics::texture_view::sample", "AMP_GRAPHICS/Concurrency::graphics::texture_view::set", "AMP_GRAPHICS/Concurrency::graphics::texture_view::value_type"]
-dev_langs: ["C++"]
 ms.assetid: 6ec2e289-1626-4727-9592-07981cf1d27d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # texture_view Class
 

@@ -1,16 +1,9 @@
 ---
-title: "file_status Class | Microsoft Docs"
-ms.custom: ""
+title: "file_status Class"
 ms.date: "09/10/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["filesystem/std::experimental::filesystem::file_status", "filesystem/std::experimental::filesystem::file_status::operator=", "filesystem/std::experimental::filesystem::file_status::type", "filesystem/std::experimental::filesystem::file_status::permissions"]
-dev_langs: ["C++"]
 ms.assetid: 9781840e-ad22-44dd-ad79-0fabaa94bac4
-author: "corob-msft"
-ms.author: "corob"
 helpviewer_keywords: ["std::experimental::filesystem::file_status", "std::experimental::filesystem::file_status::operator=", "std::experimental::filesystem::file_status::type", "std::experimental::filesystem::file_status::permissions"]
-ms.workload: ["cplusplus"]
 ---
 # file_status Class
 

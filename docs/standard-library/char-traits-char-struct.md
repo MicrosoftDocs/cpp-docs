@@ -1,16 +1,9 @@
 ---
-title: "char_traits&lt;char&gt; Struct | Microsoft Docs"
-ms.custom: ""
+title: "char_traits&lt;char&gt; Struct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["iosfwd/std::char_traits<char>", "char_traits<char >"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["char_traits<char> class"]
 ms.assetid: abd9373a-77db-4031-bf4b-f8ac15087581
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # char_traits&lt;char&gt; Struct
 

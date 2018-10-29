@@ -1,16 +1,10 @@
 ---
-title: "auto_gcroot::reset | Microsoft Docs"
-ms.custom: ""
+title: "auto_gcroot::reset"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["msclr::auto_gcroot::reset", "auto_gcroot::reset", "msclr.auto_gcroot.reset", "auto_gcroot.reset"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["reset method"]
 ms.assetid: dd58467f-3885-4a15-99fb-ed6dd5d19622
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot::reset
 

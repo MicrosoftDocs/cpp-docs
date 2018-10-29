@@ -1,16 +1,9 @@
 ---
-title: "Extension DLLs | Microsoft Docs"
-ms.custom: ""
+title: "Extension DLLs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
 f1_keywords: ["afxdll"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["memory [C++], DLLs", "MFC extension DLLs [C++]", "AFXDLL library", "shared resources [C++]", "MFC DLLs [C++], MFC extension DLLs", "DLLs [C++], extension", "shared DLL versions [C++]", "resource sharing [C++]", "extension DLLs [C++]", "extension DLLs [C++], about MFC extension DLLs"]
 ms.assetid: f69ac3d4-e474-4b1c-87a1-6738843a135c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # MFC extension DLLs
 

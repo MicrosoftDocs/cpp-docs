@@ -1,16 +1,9 @@
 ---
-title: "Order of CL Options | Microsoft Docs"
-ms.custom: ""
+title: "Order of CL Options"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["cl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cl.exe compiler, setting options"]
 ms.assetid: 300908ce-ae00-4b45-964b-e4e69ff6777b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Order of CL Options
 

@@ -1,16 +1,9 @@
 ---
-title: "MSBuild (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "MSBuild (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
 f1_keywords: ["MSBuild"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MSBuild"]
 ms.assetid: 7a1be7ff-0312-4669-adf2-5f5bf507d560
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # MSBuild (Visual C++)
 

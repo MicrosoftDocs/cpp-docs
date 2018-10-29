@@ -1,16 +1,9 @@
 ---
-title: "Using Callback Fields in a Date and Time Picker Control | Microsoft Docs"
-ms.custom: ""
+title: "Using Callback Fields in a Date and Time Picker Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["DTN_FORMATQUERY", "DTN_FORMAT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DateTimePicker control [MFC], callback fields", "callback fields in CDateTimeCtrl class [MFC]", "CDateTimeCtrl class [MFC], callback fields", "CDateTimeCtrl class [MFC], handling DTN_FORMAT and DTN_FORMATQ", "DTN_FORMATQUERY notification [MFC]", "DTN_FORMAT notification [MFC]", "DateTimePicker control [MFC]"]
 ms.assetid: 404f4ba9-cba7-4718-9faa-bc6b274a723f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Callback Fields in a Date and Time Picker Control
 

@@ -1,16 +1,9 @@
 ---
-title: "__unaligned | Microsoft Docs"
-ms.custom: ""
+title: "__unaligned"
 ms.date: "10/10/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__unaligned_cpp", "__unaligned", "_unaligned"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__unaligned keyword [C++]"]
 ms.assetid: 0cd83aad-1840-47e3-ad33-59bfcbe6375b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __unaligned
 

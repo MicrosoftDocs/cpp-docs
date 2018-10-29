@@ -1,16 +1,9 @@
 ---
-title: "CFormView Class | Microsoft Docs"
-ms.custom: ""
+title: "CFormView Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CFormView", "AFXEXT/CFormView", "AFXEXT/CFormView::CFormView", "AFXEXT/CFormView::IsInitDlgCompleted"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CFormView [MFC], CFormView", "CFormView [MFC], IsInitDlgCompleted"]
 ms.assetid: a99ec313-36f0-4f28-9d2b-de11de14ac19
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CFormView Class
 

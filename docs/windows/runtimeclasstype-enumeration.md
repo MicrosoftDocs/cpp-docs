@@ -1,16 +1,10 @@
 ---
-title: "RuntimeClassType Enumeration | Microsoft Docs"
-ms.custom: ""
+title: "RuntimeClassType Enumeration"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::RuntimeClassType"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RuntimeClassType enumeration"]
 ms.assetid: d380712d-672e-4ea9-b7c5-cf9fa7dbb770
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClassType Enumeration
 

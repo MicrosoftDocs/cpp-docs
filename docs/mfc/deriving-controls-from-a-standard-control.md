@@ -1,15 +1,8 @@
 ---
-title: "Deriving Controls from a Standard Control | Microsoft Docs"
-ms.custom: ""
+title: "Deriving Controls from a Standard Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["standard controls [MFC], deriving controls from", "common controls [MFC], deriving from", "derived controls", "controls [MFC], derived", "Windows common controls [MFC], deriving from", "standard controls"]
 ms.assetid: a6f84315-7007-4e0e-8576-78be81254802
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Deriving Controls from a Standard Control
 

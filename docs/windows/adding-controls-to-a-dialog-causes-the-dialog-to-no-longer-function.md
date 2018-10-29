@@ -1,15 +1,8 @@
 ---
-title: "Adding Controls to a Dialog Causes the Dialog to No Longer Function (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Adding Controls to a Dialog Causes the Dialog to No Longer Function (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["controls [C++], troubleshooting", "dialog boxes [C++], troubleshooting", "InitCommonControls"]
 ms.assetid: b2dd4574-ea59-4343-8d65-b387cead5da6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Adding Controls to a Dialog Causes the Dialog to No Longer Function (C++)
 

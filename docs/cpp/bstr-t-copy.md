@@ -1,16 +1,9 @@
 ---
-title: "_bstr_t::copy | Microsoft Docs"
-ms.custom: ""
+title: "_bstr_t::copy"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_bstr_t::copy"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Copy method [C++]", "BSTR object [C++], copy"]
 ms.assetid: 00ba7311-e82e-4a79-8106-5329fa2f869a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _bstr_t::copy
 

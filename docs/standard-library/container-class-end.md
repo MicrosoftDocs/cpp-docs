@@ -1,15 +1,8 @@
 ---
-title: "Container Class::end | Microsoft Docs"
-ms.custom: ""
+title: "Container Class::end"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["end method"]
 ms.assetid: 6fa38a20-3798-4387-9c6e-20fc3e90d813
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Container Class::end
 

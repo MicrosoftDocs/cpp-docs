@@ -1,15 +1,8 @@
 ---
-title: "Algorithms | Microsoft Docs"
-ms.custom: ""
+title: "Algorithms"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["libraries [C++], C++ algorithm conventions", "algorithms [C++], C++", "C++ Standard Library, algorithms", "algorithm template function C++ library conventions", "conventions [C++], C++ algorithm"]
 ms.assetid: dec9b373-7d5c-46cc-b7d2-21a938ecd0a6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Algorithms
 

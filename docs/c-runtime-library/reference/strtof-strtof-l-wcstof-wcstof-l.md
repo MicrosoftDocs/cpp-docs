@@ -1,19 +1,12 @@
 ---
-title: "strtof, _strtof_l, wcstof, _wcstof_l | Microsoft Docs"
-ms.custom: ""
+title: "strtof, _strtof_l, wcstof, _wcstof_l"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_strtof_l", "wcstof", "strtof", "_wcstof_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_tcstof", "_tcstof_l", "stdlib/strtof", "strtof", "stdlib/_strtof_l", "_strtof_l", "corecrt_wstdlib/wcstof", "wcstof", "corecrt_wstdlib/_wcstof_l", "_wcstof_l"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_strtof_l function", "_tcstof function", "_wcstof_l function", "wcstof function", "_tcstof_l function", "strtof function"]
 ms.assetid: 52221b46-876d-4fcc-afb1-97512c17a43b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # strtof, _strtof_l, wcstof, _wcstof_l
 

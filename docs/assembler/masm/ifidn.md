@@ -1,16 +1,9 @@
 ---
-title: "IFIDN] | Microsoft Docs"
-ms.custom: ""
+title: "IFIDN]"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["IFIDN[[I]]"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IFIDN[[I]] directive"]
 ms.assetid: 957893b1-1a30-4ffd-96f2-6663604a5058
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # IFIDN]
 

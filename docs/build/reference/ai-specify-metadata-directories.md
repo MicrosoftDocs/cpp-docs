@@ -1,16 +1,9 @@
 ---
-title: "-AI (Specify Metadata Directories) | Microsoft Docs"
-ms.custom: ""
+title: "/AI (Specify Metadata Directories)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.AdditionalUsingDirectories", "VC.Project.VCNMakeTool.AssemblySearchPath", "/AI", "VC.Project.VCCLWCECompilerTool.AdditionalUsingDirectories"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/AI compiler option [C++]", "AI compiler option [C++]", "-AI compiler option [C++]"]
 ms.assetid: fb9c1846-504c-4a3b-bb39-c8696de32f6f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /AI (Specify Metadata Directories)
 

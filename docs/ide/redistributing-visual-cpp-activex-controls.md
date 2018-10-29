@@ -1,15 +1,8 @@
 ---
-title: "Redistributing Visual C++ ActiveX Controls | Microsoft Docs"
-ms.custom: ""
+title: "Redistributing Visual C++ ActiveX Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["controls [C++], redistributing", "controls [C++], distributing"]
 ms.assetid: eefbb7e4-d28c-4c35-98bf-d9540cfaae83
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Redistributing Visual C++ ActiveX Controls
 

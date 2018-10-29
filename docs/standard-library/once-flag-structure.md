@@ -1,15 +1,8 @@
 ---
-title: "once_flag Structure | Microsoft Docs"
-ms.custom: ""
+title: "once_flag Structure"
 ms.date: "09/17/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["mutex/std::once_flag"]
-dev_langs: ["C++"]
 ms.assetid: 71bfb88d-ca8c-4082-a6e1-ff52151e8629
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # once_flag Structure
 

@@ -1,16 +1,9 @@
 ---
-title: "const_mem_fun_t Class | Microsoft Docs"
-ms.custom: ""
+title: "const_mem_fun_t Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xfunctional/std::const_mem_fun_t"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["const_mem_fun_t class"]
 ms.assetid: f169d381-019b-4a0e-a9a3-54da6d948270
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # const_mem_fun_t Class
 

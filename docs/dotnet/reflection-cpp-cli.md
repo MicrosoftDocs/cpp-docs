@@ -1,17 +1,8 @@
 ---
-title: "Reflection (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "Reflection (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["typeid keyword [C++]", "reflection [C++}, about reflection", "metadata, reflection", "GetType method", ".NET Framework [C++], reflection", "data types [C++], reflection", "reflection [C++}",
-    "plug-ins [C++]", "reflection [C++}, plug-ins",
-    "assemblies [C++], enumerating data types in", "public types [C++]", "reflection [C++], external assemblies", "assemblies [C++]", "data types [C++], enumerating", "public members [C++]"]
 ms.assetid: 46b6ff4a-e441-4022-8892-78e69422f230
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Reflection (C++/CLI)
 

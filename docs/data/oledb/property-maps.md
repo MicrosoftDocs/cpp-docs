@@ -1,15 +1,8 @@
 ---
-title: "Property Maps | Microsoft Docs"
-ms.custom: ""
+title: "Property Maps"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, properties", "maps, property", "property maps"]
 ms.assetid: 44abde56-90ad-4612-854e-d2fa5426fa80
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Property Maps
 

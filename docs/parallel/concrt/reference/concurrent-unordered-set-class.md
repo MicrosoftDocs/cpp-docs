@@ -1,16 +1,9 @@
 ---
-title: "concurrent_unordered_set Class | Microsoft Docs"
-ms.custom: ""
+title: "concurrent_unordered_set Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["concurrent_unordered_set", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::concurrent_unordered_set", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::hash_function", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::insert", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::key_eq", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::swap", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::unsafe_erase"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["concurrent_unordered_set class"]
 ms.assetid: c61f9a9a-4fd9-491a-9251-e300737ecf4b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # concurrent_unordered_set Class
 

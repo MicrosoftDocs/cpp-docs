@@ -1,15 +1,8 @@
 ---
-title: "Dialog-Box Components in the Framework | Microsoft Docs"
-ms.custom: ""
+title: "Dialog-Box Components in the Framework"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC dialog boxes [MFC], creating", "dialog classes [MFC], dialog box components", "MFC dialog boxes [MFC], about MFC dialog boxes", "dialog templates [MFC], MFC framework", "MFC dialog boxes [MFC], dialog resource"]
 ms.assetid: 592db160-0a8a-49be-ac72-ead278aca53f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dialog-Box Components in the Framework
 

@@ -1,16 +1,9 @@
 ---
-title: "NMAKE Fatal Error U1078 | Microsoft Docs"
-ms.custom: ""
+title: "NMAKE Fatal Error U1078"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["U1078"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["U1078"]
 ms.assetid: 24087955-9362-4ddf-9966-e0de43ea4647
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # NMAKE Fatal Error U1078
 

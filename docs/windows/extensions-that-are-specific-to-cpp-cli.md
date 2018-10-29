@@ -1,14 +1,8 @@
 ---
-title: "Extensions That Are Specific to C++/CLI | Microsoft Docs"
-ms.custom: ""
+title: "Extensions That Are Specific to C++/CLI"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 81e3fd32-6c8f-490b-9190-a6dc291545c8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Extensions That Are Specific to C++/CLI
 

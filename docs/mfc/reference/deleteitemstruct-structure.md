@@ -1,16 +1,9 @@
 ---
-title: "DELETEITEMSTRUCT Structure | Microsoft Docs"
-ms.custom: ""
+title: "DELETEITEMSTRUCT Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["DELETEITEMSTRUCT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DELETEITEMSTRUCT structure [MFC]"]
 ms.assetid: 48d3998c-f4a8-402a-bf90-df3770a78685
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # DELETEITEMSTRUCT Structure
 

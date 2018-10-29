@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4953 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4953"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4953"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4953"]
 ms.assetid: 3c4f6ac6-3976-41ab-8a27-3c41d7472ea7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4953
 

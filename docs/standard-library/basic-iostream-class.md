@@ -1,16 +1,9 @@
 ---
-title: "basic_iostream Class | Microsoft Docs"
-ms.custom: ""
+title: "basic_iostream Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["istream/std::basic_iostream", "istream/std::basic_iostream::swap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["basic_iostream class"]
 ms.assetid: 294b680b-eb49-4066-8db2-6d52dac9d6e3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # basic_iostream Class
 

@@ -1,16 +1,9 @@
 ---
-title: "CRTThreadTraits Class | Microsoft Docs"
-ms.custom: ""
+title: "CRTThreadTraits Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CRTThreadTraits", "ATLBASE/ATL::CRTThreadTraits", "ATLBASE/ATL::CRTThreadTraits::CreateThread"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRTThreadTraits class", "threading [ATL], creation functions", "threading [ATL], CRT threads"]
 ms.assetid: eb6e20b0-c2aa-4170-8e34-aaeeacc86343
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CRTThreadTraits Class
 

@@ -1,15 +1,9 @@
 ---
-title: "Memory Management Classes (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Memory Management Classes (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["memory, managing"]
 ms.assetid: be564a5e-577e-40a7-bfe3-25ad21e57270
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Memory Management Classes
 

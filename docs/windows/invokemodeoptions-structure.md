@@ -1,15 +1,9 @@
 ---
-title: "InvokeModeOptions Structure | Microsoft Docs"
-ms.custom: ""
+title: "InvokeModeOptions Structure"
 ms.date: "03/22/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::InvokeModeOptions"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["InvokeModeOptions structure", "InvokeMode enum"]
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # InvokeModeOptions Structure
 

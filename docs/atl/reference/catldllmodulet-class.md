@@ -1,16 +1,9 @@
 ---
-title: "CAtlDllModuleT Class | Microsoft Docs"
-ms.custom: ""
+title: "CAtlDllModuleT Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAtlDllModuleT", "ATLBASE/ATL::CAtlDllModuleT", "ATLBASE/ATL::CAtlDllModuleT::CAtlDllModuleT", "ATLBASE/ATL::CAtlDllModuleT::DllCanUnloadNow", "ATLBASE/ATL::CAtlDllModuleT::DllGetClassObject", "ATLBASE/ATL::CAtlDllModuleT::DllMain", "ATLBASE/ATL::CAtlDllModuleT::DllRegisterServer", "ATLBASE/ATL::CAtlDllModuleT::DllUnregisterServer", "ATLBASE/ATL::CAtlDllModuleT::GetClassObject"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlDllModuleT class"]
 ms.assetid: 351d5767-8257-4878-94be-45a85e31a72d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlDllModuleT Class
 

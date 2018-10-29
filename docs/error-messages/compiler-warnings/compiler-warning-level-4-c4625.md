@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4625 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4625"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4625"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4625"]
 ms.assetid: 4cc99e50-846c-4784-97da-48b977067851
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4625
 

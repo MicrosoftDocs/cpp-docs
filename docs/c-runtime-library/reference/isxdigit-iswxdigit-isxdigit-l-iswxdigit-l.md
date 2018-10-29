@@ -1,19 +1,12 @@
 ---
-title: "isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l | Microsoft Docs"
-ms.custom: ""
+title: "isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_iswxdigit_l", "iswxdigit", "isxdigit", "_isxdigit_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["iswxdigit", "isxdigit", "_istxdigit"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["isxdigit function", "istxdigit function", "_iswxdigit_l function", "_istxdigit function", "_isxdigit_l function", "iswxdigit_l function", "isxdigit_l function", "hexadecimal characters", "iswxdigit function"]
 ms.assetid: c8bc5146-0b58-4e3f-bee3-f2318dd0f829
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4127 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4127"
 ms.date: "09/13/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4127"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4127"]
 ms.assetid: f59ded9e-5227-45bd-ac43-2aa861581363
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4127
 

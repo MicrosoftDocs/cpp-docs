@@ -1,15 +1,8 @@
 ---
-title: "Multiple Document Types, Views, and Frame Windows | Microsoft Docs"
-ms.custom: ""
+title: "Multiple Document Types, Views, and Frame Windows"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["static splitter windows [MFC]", "multiple views [MFC]", "multiple document types [MFC]", "multiple views [MFC], frame windows", "document classes [MFC], multiple", "documents [MFC], multiple types of", "splitter windows [MFC], dynamic", "dynamic splitter windows [MFC]", "windows [MFC], dynamic splitter", "windows [MFC], static splitter", "multiple frame windows [MFC]", "splitter windows [MFC], static"]
 ms.assetid: c6b9e4e0-7c9c-45f1-a804-aeac39c9a128
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Multiple Document Types, Views, and Frame Windows
 

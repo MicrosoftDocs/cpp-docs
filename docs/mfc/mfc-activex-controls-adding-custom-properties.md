@@ -1,15 +1,8 @@
 ---
-title: "MFC ActiveX Controls: Adding Custom Properties | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Adding Custom Properties"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], properties", "properties [MFC], custom"]
 ms.assetid: 85af5167-74c7-427b-b8f3-e0d7b73942e5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Adding Custom Properties
 

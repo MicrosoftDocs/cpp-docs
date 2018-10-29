@@ -1,15 +1,8 @@
 ---
-title: "Connect to your remote Linux computer  in Visual Studio | Microsoft Docs"
+title: "Connect to your remote Linux computer  in Visual Studio"
 description: "How to connect to a remote Linux machine from inside a Visual Studio C++ project."
-ms.custom: ""
 ms.date: "07/20/2018"
-ms.technology: ["cpp-linux"]
-ms.tgt_pltfrm: "Linux"
-ms.topic: "conceptual"
 ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "linux"]
 ---
 
 # Connect to Your remote Linux computer

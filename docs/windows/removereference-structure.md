@@ -1,16 +1,10 @@
 ---
-title: "RemoveReference Structure | Microsoft Docs"
-ms.custom: ""
+title: "RemoveReference Structure"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal/Microsoft::WRL::Details::RemoveReference"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RemoveReference structure"]
 ms.assetid: 43ff91bb-815a-440e-b9fb-7dcbb7c863af
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # RemoveReference Structure
 

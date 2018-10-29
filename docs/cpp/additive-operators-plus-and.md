@@ -1,16 +1,9 @@
 ---
-title: "Additive Operators: + and - | Microsoft Docs"
-ms.custom: ""
+title: "Additive Operators: + and -"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["+", "-"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C++], addition", "subtraction operator [C++], additive operators", "+ operator [C++], additive operators", "additive operators [C++]", "arithmetic operators [C++], additive operators", "- operator [C++], additive operators in C++"]
 ms.assetid: d4afafe7-e201-4c69-a649-37f17756e784
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Additive Operators: + and -
 

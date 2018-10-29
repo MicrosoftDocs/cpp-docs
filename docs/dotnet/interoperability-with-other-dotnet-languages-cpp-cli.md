@@ -1,17 +1,8 @@
 ---
-title: "Interoperability with Other .NET Languages (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "Interoperability with Other .NET Languages (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["C++, indexers", "indexers, consuming C#",
-    "as C# keyword [C++]", "is C# keyword [C++]",
-    "lock statement", "lock C# keyword [C++]"]
 ms.assetid: a5902cf8-a14d-4559-aefb-c178615d45bb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Interoperability with Other .NET Languages (C++/CLI)
 

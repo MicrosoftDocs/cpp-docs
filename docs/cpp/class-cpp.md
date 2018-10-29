@@ -1,16 +1,9 @@
 ---
-title: "class (C++) | Microsoft Docs"
-ms.custom: ""
+title: "class (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["class_cpp"]
-dev_langs: ["CPP"]
 helpviewer_keywords: ["class types [C++], class statements", "class keyword [C++]"]
 ms.assetid: dd23c09f-6598-4069-8bff-69c7f2518b9f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # class (C++)
 

@@ -1,15 +1,8 @@
 ---
-title: "Dialog Sample List | Microsoft Docs"
-ms.custom: ""
+title: "Dialog Sample List"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["sample applications [MFC], dialog boxes"]
 ms.assetid: 3fc7dd7c-d758-4c43-96bb-0ea638ca1ad7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dialog Sample List
 

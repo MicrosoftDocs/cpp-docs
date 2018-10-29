@@ -1,16 +1,9 @@
 ---
-title: "Building C/C++ Programs | Microsoft Docs"
-ms.custom: ""
+title: "Building C/C++ Programs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
 f1_keywords: ["vcbuilding", "buildingaprogramVC"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["builds [C++]", "Visual C++ projects, building", "projects [C++], building", "builds [C++], options", "Visual C++, build options"]
 ms.assetid: fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Building C/C++ Programs
 

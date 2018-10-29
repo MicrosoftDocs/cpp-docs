@@ -1,16 +1,9 @@
 ---
-title: "bss_seg | Microsoft Docs"
-ms.custom: ""
+title: "bss_seg"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["vc-pragma.bss_seg", "bss_seg_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, bss_seg", "bss_seg pragma"]
 ms.assetid: 755f0154-de51-4778-97d3-c9b24e445079
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # bss_seg
 

@@ -1,15 +1,8 @@
 ---
-title: "Worker Archetype | Microsoft Docs"
-ms.custom: ""
+title: "Worker Archetype"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Worker archetype"]
 ms.assetid: 834145cd-09d3-4149-bc99-620e1871cbfb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Worker Archetype
 

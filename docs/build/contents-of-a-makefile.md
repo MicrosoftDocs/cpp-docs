@@ -1,15 +1,8 @@
 ---
-title: "Contents of a Makefile | Microsoft Docs"
-ms.custom: ""
+title: "Contents of a Makefile"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["makefiles", "makefiles, contents"]
 ms.assetid: 29362adb-d963-4c00-84a6-b38c2ffe6a36
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Contents of a Makefile
 

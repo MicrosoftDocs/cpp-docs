@@ -1,15 +1,8 @@
 ---
-title: "Sequence of Operations for Building MFC Applications | Microsoft Docs"
-ms.custom: ""
+title: "Sequence of Operations for Building MFC Applications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["applications [MFC], developing"]
 ms.assetid: 6973c714-fe20-48c6-926b-de88356b3a3d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Sequence of Operations for Building MFC Applications
 

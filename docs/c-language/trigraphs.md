@@ -1,15 +1,8 @@
 ---
-title: "Trigraphs | Microsoft Docs"
-ms.custom: ""
+title: "Trigraphs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["??) trigraph", "??- trigraph", "question mark, in trigraphs", "??= trigraph", "?? trigraph", "??< trigraph", "??/ trigraph", "trigraphs", "? symbol, trigraph", "??> trigraph", "??! trigraph", "??' trigraph"]
 ms.assetid: 617f76ec-b8e8-4cfe-916c-4bc32cbd9aeb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Trigraphs
 

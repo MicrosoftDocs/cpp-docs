@@ -1,16 +1,9 @@
 ---
-title: "-FR, -Fr (Create .Sbr File) | Microsoft Docs"
-ms.custom: ""
+title: "/FR, /Fr (Create .Sbr File)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.BrowseInformation", "VC.Project.VCCLCompilerTool.BrowseInformation", "/fr", "VC.Project.VCCLCompilerTool.BrowseInformationFile", "VC.Project.VCCLWCECompilerTool.BrowseInformationFile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/FR compiler option [C++]", "-FR compiler option [C++]", "FR compiler option [C++]", "symbolic browser information"]
 ms.assetid: 3fd8f88b-3924-4feb-9393-287036a28896
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /FR, /Fr (Create .Sbr File)
 

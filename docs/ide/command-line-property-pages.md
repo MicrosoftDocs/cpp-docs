@@ -1,16 +1,9 @@
 ---
-title: "Command Line Property Pages | Microsoft Docs"
-ms.custom: ""
+title: "Command Line Property Pages"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.project.AdditionalOptionsPage"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Command Line property pages"]
 ms.assetid: e1721b6c-8b39-4b44-a41e-69b5bb470cc9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Command Line Property Pages
 

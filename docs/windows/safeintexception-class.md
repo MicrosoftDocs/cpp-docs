@@ -1,16 +1,10 @@
 ---
-title: "SafeIntException Class | Microsoft Docs"
-ms.custom: ""
+title: "SafeIntException Class"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["SafeIntException Class", "SafeIntException", "SafeIntException.SafeIntException", "SafeIntException::SafeIntException"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SafeIntException class", "SafeIntException, constructor"]
 ms.assetid: 88bef958-1f48-4d55-ad4f-d1f9581a293a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeIntException Class
 

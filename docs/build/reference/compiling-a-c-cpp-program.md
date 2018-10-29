@@ -1,15 +1,8 @@
 ---
-title: "Compiling a C/C++ Program | Microsoft Docs"
-ms.custom: ""
+title: "Compiling a C/C++ Program"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["cl.exe compiler", "cl.exe compiler, setting options"]
 ms.assetid: f3eef5ab-d0be-4fb2-90f9-927e6ed58736
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiling a C/C++ Program
 

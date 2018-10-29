@@ -1,15 +1,8 @@
 ---
-title: "Friend Assemblies (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Friend Assemblies (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["friend assemblies, Visual C++"]
 ms.assetid: 8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Friend Assemblies (C++)
 

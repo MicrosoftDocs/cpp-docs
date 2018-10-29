@@ -1,14 +1,7 @@
 ---
-title: "General Rules and Limitations | Microsoft Docs"
-ms.custom: ""
+title: "General Rules and Limitations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 6c48902d-4259-4761-95d4-e421d69aa050
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # General Rules and Limitations
 

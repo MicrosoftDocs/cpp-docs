@@ -1,15 +1,8 @@
 ---
-title: "Output Streams | Microsoft Docs"
-ms.custom: ""
+title: "Output Streams"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["output streams"]
 ms.assetid: b49410e3-5caa-4153-9d0d-c4266408dc83
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Output Streams
 

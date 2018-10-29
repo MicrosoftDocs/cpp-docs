@@ -1,16 +1,9 @@
 ---
-title: "POINT Structure | Microsoft Docs"
-ms.custom: ""
+title: "POINT Structure"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["POINT", "LPPOINT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LPPOINT structure [MFC]", "POINT structure [MFC]"]
 ms.assetid: 965736d8-4e53-41b6-9b8b-6961992dd21f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # POINT Structure
 

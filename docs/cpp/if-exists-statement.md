@@ -1,16 +1,9 @@
 ---
-title: "__if_exists Statement | Microsoft Docs"
-ms.custom: ""
+title: "__if_exists Statement"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__if_exists_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["identifiers, testing for existence", "symbols, testing for existence", "__if_exists keyword [C++]"]
 ms.assetid: d3eb34b6-f3a9-4063-a286-b62a28c0c7fa
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __if_exists Statement
 

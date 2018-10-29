@@ -1,16 +1,9 @@
 ---
-title: "CComEnumOnSTL Class | Microsoft Docs"
-ms.custom: ""
+title: "CComEnumOnSTL Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComEnumOnSTL", "atlcom/ATL::CComEnumOnSTL"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComEnumOnSTL class"]
 ms.assetid: befe1a44-7a00-4f28-9a2e-cc0fa526643c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComEnumOnSTL Class
 

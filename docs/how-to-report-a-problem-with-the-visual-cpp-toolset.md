@@ -1,12 +1,9 @@
 ---
-title: "How to report a problem with the Visual C++ toolset | Microsoft Docs"
+title: "How to report a problem with the Visual C++ toolset"
 ms.date: "06/21/2018"
 ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 author: "corob-msft"
 ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # How to report a problem with the Visual C++ toolset or documentation
 

@@ -1,16 +1,9 @@
 ---
-title: "Win32 Internet Classes | Microsoft Docs"
-ms.custom: ""
+title: "Win32 Internet Classes"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.win32"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Internet classes [MFC]", "WinInet classes [MFC], classes", "Win32 [MFC], Internet classes", "Windows API [MFC], Internet classes"]
 ms.assetid: b49601d5-3025-4068-9408-316b54ee4375
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Win32 Internet Classes
 

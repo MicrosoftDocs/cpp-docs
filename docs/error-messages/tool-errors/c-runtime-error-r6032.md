@@ -1,16 +1,9 @@
 ---
-title: "C Runtime Error R6032 | Microsoft Docs"
-ms.custom: ""
+title: "C Runtime Error R6032"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["R6032"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["R6032"]
 ms.assetid: 52092a63-cc51-444a-bfc3-fad965a3558e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6032
 

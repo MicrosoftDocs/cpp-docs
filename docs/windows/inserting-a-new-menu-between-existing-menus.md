@@ -1,15 +1,8 @@
 ---
-title: "Inserting a New Menu Between Existing Menus (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Inserting a New Menu Between Existing Menus (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["menus [C++], adding items", "commands [C++], adding to menus"]
 ms.assetid: 7a6c807f-3839-40dc-97c9-dedb0e33dcde
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Inserting a New Menu Between Existing Menus (C++)
 

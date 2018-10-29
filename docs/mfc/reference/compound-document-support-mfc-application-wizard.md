@@ -1,15 +1,8 @@
 ---
-title: "Compound Document Support, MFC Application Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Compound Document Support, MFC Application Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.exe.compdoc"]
-dev_langs: ["C++"]
 ms.assetid: 42e1af83-12c4-438d-92eb-13835afdb148
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Compound Document Support, MFC Application Wizard
 

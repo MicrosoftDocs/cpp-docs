@@ -1,16 +1,9 @@
 ---
-title: "Command-Line Warning D9040 | Microsoft Docs"
-ms.custom: ""
+title: "Command-Line Warning D9040"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["D9040"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["D9040"]
 ms.assetid: 415e7f04-c1bd-4ac1-924a-03efa4645140
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Command-Line Warning D9040
 

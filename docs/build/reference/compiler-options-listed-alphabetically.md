@@ -1,14 +1,7 @@
 ---
-title: "Compiler Options Listed Alphabetically | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Options Listed Alphabetically"
 ms.date: "08/20/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["compiler options, C++"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Options Listed Alphabetically
 

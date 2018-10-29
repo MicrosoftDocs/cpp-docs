@@ -1,16 +1,10 @@
 ---
-title: "queue (STL/CLR) | Microsoft Docs"
-ms.custom: ""
+title: "queue (STL/CLR)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::queue", "cliext::operator!=", "cliext::operator<", "cliext::operator<=", "cliext::operator==", "cliext::operator>", "cliext::operator>=", "cliext::queue::assign", "cliext::queue::back", "cliext::queue::back_item", "cliext::queue::const_reference", "cliext::queue::container_type", "cliext::queue::difference_type", "cliext::queue::empty", "cliext::queue::front", "cliext::queue::front_item", "cliext::queue::generic_container", "cliext::queue::generic_value", "cliext::queue::get_container", "cliext::queue::operator=", "cliext::queue::pop", "cliext::queue::push", "cliext::queue::queue", "cliext::queue::reference", "cliext::queue::size", "cliext::queue::size_type", "cliext::queue::to_array", "cliext::queue::value_type"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<queue> header [STL/CLR]", "queue class [STL/CLR]", "<cliext/queue> header [STL/CLR]", "operator!= member [STL/CLR]", "operator< member [STL/CLR]", "operator<= member [STL/CLR]", "operator== member [STL/CLR]", "operator> member [STL/CLR]", "operator>= member [STL/CLR]", "assign member [STL/CLR]", "back member [STL/CLR]", "back_item member [STL/CLR]", "const_reference member [STL/CLR]", "container_type member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "front member [STL/CLR]", "front_item member [STL/CLR]", "generic_container member [STL/CLR]", "generic_value member [STL/CLR]", "get_container member [STL/CLR]", "operator= member [STL/CLR]", "pop member [STL/CLR]", "push member [STL/CLR]", "queue member [STL/CLR]", "reference member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "to_array member [STL/CLR]", "value_type member [STL/CLR]"]
 ms.assetid: 9ea7dec3-ea98-48ff-87d0-a5afc924aaf2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # queue (STL/CLR)
 

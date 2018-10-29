@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2299 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2299"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2299"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2299"]
 ms.assetid: d001c2bc-f6fd-47aa-8e42-0eb824d6441d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2299
 

@@ -1,14 +1,7 @@
 ---
-title: "3.3.2 omp_get_wtick Function | Microsoft Docs"
-ms.custom: ""
+title: "3.3.2 omp_get_wtick Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 1ad08500-bcb0-40d9-a81f-f131819006c9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 3.3.2 omp_get_wtick Function
 

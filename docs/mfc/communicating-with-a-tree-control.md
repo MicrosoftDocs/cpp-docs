@@ -1,15 +1,8 @@
 ---
-title: "Communicating with a Tree Control | Microsoft Docs"
-ms.custom: ""
+title: "Communicating with a Tree Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["tree controls [MFC], communicating with", "CTreeCtrl class [MFC], calling member functions", "communications, tree controls", "tree controls"]
 ms.assetid: 680ad9ee-b11f-452d-93fa-501ca7d7e069
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Communicating with a Tree Control
 

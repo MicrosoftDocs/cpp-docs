@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3815 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3815"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3815"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3815"]
 ms.assetid: c5a3b404-6341-4fd3-92af-152b404c4dde
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3815
 

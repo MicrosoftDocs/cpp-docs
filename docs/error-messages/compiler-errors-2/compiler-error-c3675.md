@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3675 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3675"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3675"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3675"]
 ms.assetid: 87461613-6633-430b-b95d-c7cb1bb63776
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3675
 

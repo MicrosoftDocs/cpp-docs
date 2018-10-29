@@ -1,15 +1,8 @@
 ---
-title: "Wildcards and NMAKE | Microsoft Docs"
-ms.custom: ""
+title: "Wildcards and NMAKE"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["NMAKE program, wildcards", "wildcards, expanding"]
 ms.assetid: 8f5d4b2a-8fa7-46a9-92ac-c8185c99239b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Wildcards and NMAKE
 

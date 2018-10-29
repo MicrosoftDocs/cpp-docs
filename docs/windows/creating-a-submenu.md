@@ -1,15 +1,8 @@
 ---
-title: "Creating a Submenu (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Creating a Submenu (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["submenus", "submenus [C++], creating", "menus [C++], creating"]
 ms.assetid: fb95fdfd-0a80-459d-8c5c-a4e8bac9f56a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating a Submenu (C++)
 

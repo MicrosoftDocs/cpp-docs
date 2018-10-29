@@ -1,15 +1,9 @@
 ---
-title: "Handle to Object Operator (^)  (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Handle to Object Operator (^)  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["^ handle to object [C++]"]
 ms.assetid: 70c411e6-be57-4468-a944-6ea7be89f392
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Handle to Object Operator (^)  (C++/CLI and C++/CX)
 

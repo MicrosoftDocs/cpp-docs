@@ -1,15 +1,8 @@
 ---
-title: "How to: Convert an OpenMP Loop that Uses Exception Handling to Use the Concurrency Runtime | Microsoft Docs"
-ms.custom: ""
+title: "How to: Convert an OpenMP Loop that Uses Exception Handling to Use the Concurrency Runtime"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["exception handling, converting from OpenMP to the Concurrency Runtime", "converting from OpenMP to the Concurrency Runtime, exception handling"]
 ms.assetid: 03c28196-21ba-439e-8641-afab1c283e1a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Convert an OpenMP Loop that Uses Exception Handling to Use the Concurrency Runtime
 

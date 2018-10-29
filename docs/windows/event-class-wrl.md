@@ -1,16 +1,10 @@
 ---
-title: "Event Class (WRL) | Microsoft Docs"
-ms.custom: ""
+title: "Event Class (WRL)"
 ms.date: "09/24/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Event", "corewrappers/Microsoft::WRL::Wrappers::Event::Event", "corewrappers/Microsoft::WRL::Wrappers::Event::operator="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Wrappers::Event class", "Microsoft::WRL::Wrappers::Event::Event, constructor", "Microsoft::WRL::Wrappers::Event::operator= operator"]
 ms.assetid: 55dfc9fc-62d4-4bb2-9d85-5b6dd88569e8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Event Class (WRL)
 

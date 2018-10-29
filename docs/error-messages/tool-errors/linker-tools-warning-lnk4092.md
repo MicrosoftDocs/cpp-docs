@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Warning LNK4092 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Warning LNK4092"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK4092"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4092"]
 ms.assetid: d569ec47-a338-40e1-940b-8a8061459acb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4092
 

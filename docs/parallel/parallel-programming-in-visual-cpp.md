@@ -1,14 +1,7 @@
 ---
-title: "Parallel Programming in Visual C++ | Microsoft Docs"
-ms.custom: ""
+title: "Parallel Programming in Visual C++"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: f5c28ab6-a1d9-492f-b207-05e8aee73e96
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Parallel Programming in Visual C++
 

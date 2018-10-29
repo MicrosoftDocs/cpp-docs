@@ -1,16 +1,9 @@
 ---
-title: "raw_method_prefix | Microsoft Docs"
-ms.custom: ""
+title: "raw_method_prefix"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["raw_method_prefix"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["raw_method_prefix attribute"]
 ms.assetid: 71490313-af78-4bb2-b28a-eee67950d30b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # raw_method_prefix
 

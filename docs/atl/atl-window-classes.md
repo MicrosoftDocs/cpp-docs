@@ -1,15 +1,8 @@
 ---
-title: "ATL Window Classes | Microsoft Docs"
-ms.custom: ""
+title: "ATL Window Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, windows", "windows [C++], subclassing", "windows [C++], superclassing", "windows [C++], ATL", "subclassing ATL window classes", "superclassing", "superclassing, ATL"]
 ms.assetid: 1d12b708-de3e-49d5-9e41-42fe4769fa62
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Window Classes
 

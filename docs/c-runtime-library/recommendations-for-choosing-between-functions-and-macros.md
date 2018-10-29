@@ -1,16 +1,9 @@
 ---
-title: "Recommendations for Choosing Between Functions and Macros | Microsoft Docs"
-ms.custom: ""
+title: "Recommendations for Choosing Between Functions and Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.functions"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["functions [CRT], vs. macros", "macros, vs. functions"]
 ms.assetid: 18a633d6-cf1c-470c-a649-fa7677473e2b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Recommendations for Choosing Between Functions and Macros
 

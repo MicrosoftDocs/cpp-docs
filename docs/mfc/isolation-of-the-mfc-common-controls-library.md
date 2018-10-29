@@ -1,15 +1,8 @@
 ---
-title: "Isolation of the MFC Common Controls Library | Microsoft Docs"
-ms.custom: ""
+title: "Isolation of the MFC Common Controls Library"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, Common Controls library"]
 ms.assetid: 7471e6f0-49b0-47f7-86e7-8d6bc3541694
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Isolation of the MFC Common Controls Library
 

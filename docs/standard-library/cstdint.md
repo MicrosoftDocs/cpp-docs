@@ -1,15 +1,8 @@
 ---
-title: "&lt;cstdint&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;cstdint&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<cstdint>"]
-dev_langs: ["C++"]
 ms.assetid: 87afafb2-c630-4383-a2fc-a6b47c639e21
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;cstdint&gt;
 

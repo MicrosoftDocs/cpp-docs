@@ -1,15 +1,8 @@
 ---
-title: "Using Dynamic Accessors | Microsoft Docs"
-ms.custom: ""
+title: "Using Dynamic Accessors"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["accessors [C++], dynamic", "dynamic accessors"]
 ms.assetid: e5d5bfa6-2b1d-49d0-8ced-914666422431
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using Dynamic Accessors
 

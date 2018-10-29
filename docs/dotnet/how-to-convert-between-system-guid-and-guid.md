@@ -1,15 +1,9 @@
 ---
-title: "How to: Convert Between System::Guid and _GUID | Microsoft Docs"
+title: "How to: Convert Between System::Guid and _GUID"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["System::GUID", "GUID, converting to System::GUID", "System::GUID, converting to GUID"]
 ms.assetid: 022c934c-3395-4f04-b498-85ad9bf8c646
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Convert Between System::Guid and _GUID
 

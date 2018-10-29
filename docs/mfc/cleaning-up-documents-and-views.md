@@ -1,15 +1,8 @@
 ---
-title: "Cleaning Up Documents and Views | Microsoft Docs"
-ms.custom: ""
+title: "Cleaning Up Documents and Views"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["views [MFC], cleaning up", "documents [MFC], cleaning up", "documents [MFC], closing"]
 ms.assetid: 0c454db2-3644-434d-9e53-8108a7aedfe1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Cleaning Up Documents and Views
 

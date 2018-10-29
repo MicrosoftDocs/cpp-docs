@@ -1,19 +1,12 @@
 ---
-title: "__max | Microsoft Docs"
-ms.custom: ""
+title: "__max"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["__max"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["max", "__max"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["max macro", "maximum macro", "__max macro"]
 ms.assetid: 05c936f6-0e22-45d6-a58d-4bc102e9dae2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __max
 

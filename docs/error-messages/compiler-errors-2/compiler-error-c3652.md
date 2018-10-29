@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3652 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3652"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3652"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3652"]
 ms.assetid: 15d68737-177e-41f1-80e0-7c3e2afdf0fc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3652
 

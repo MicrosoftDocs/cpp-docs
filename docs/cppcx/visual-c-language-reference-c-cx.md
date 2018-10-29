@@ -1,13 +1,7 @@
 ---
-title: "Visual C++ Language Reference (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Visual C++ Language Reference (C++/CX)"
 ms.date: "09/15/2017"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: 3f6abf92-4e5e-4ed8-8e11-f9252380d30a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Visual C++ Language Reference (C++/CX)
 

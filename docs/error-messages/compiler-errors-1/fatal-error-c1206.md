@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1206 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1206"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1206"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1206"]
 ms.assetid: 2211428f-ad86-4f7b-82eb-f1ba89b0510e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1206
 

@@ -1,15 +1,8 @@
 ---
-title: "Record Field Exchange: Using RFX | Microsoft Docs"
-ms.custom: ""
+title: "Record Field Exchange: Using RFX"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["RFX (ODBC), implementing"]
 ms.assetid: ada8f043-37e6-4d41-9db3-92c997a61957
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Field Exchange: Using RFX
 

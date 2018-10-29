@@ -1,14 +1,7 @@
 ---
-title: "Resource Compiler Errors RC1000 through RC4413 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Errors RC1000 through RC4413"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
-dev_langs: ["C++"]
 ms.assetid: 0819f955-0561-491d-af3d-2453f4e2d035
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Errors RC1000 through RC4413
 

@@ -1,15 +1,8 @@
 ---
-title: "Cumulative Dependencies | Microsoft Docs"
-ms.custom: ""
+title: "Cumulative Dependencies"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["dependencies, cumulative", "cumulative dependencies in NMAKE", "dependencies"]
 ms.assetid: fa6dd777-80b8-437d-87a7-aec0ed818a49
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Cumulative Dependencies
 

@@ -1,16 +1,9 @@
 ---
-title: "_mm_extract_si64, _mm_extracti_si64 | Microsoft Docs"
-ms.custom: ""
+title: "_mm_extract_si64, _mm_extracti_si64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_mm_extracti_si64", "_mm_extract_si64"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["extrq instruction", "_mm_extracti_si64 intrinsic", "_mm_extract_si64 intrinsic"]
 ms.assetid: 459fdd72-cc54-4ee5-bbd5-d2c6067a88e7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _mm_extract_si64, _mm_extracti_si64
 

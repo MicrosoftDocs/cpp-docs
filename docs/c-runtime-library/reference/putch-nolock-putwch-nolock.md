@@ -1,19 +1,12 @@
 ---
-title: "_putch_nolock, _putwch_nolock | Microsoft Docs"
-ms.custom: ""
+title: "_putch_nolock, _putwch_nolock"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_putwch_nolock", "_putch_nolock"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_putch_nolock", "_puttch_nolock", "putch_nolock", "putwch_nolock", "_putwch_nolock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["putwch_nolock function", "puttch_nolock function", "characters, writing", "putch_nolock function", "_putch_nolock function", "_puttch_nolock function", "console, writing characters to", "_putwch_nolock function"]
 ms.assetid: edbc811d-bac6-47fa-a872-fe4f3a1590b0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _putch_nolock, _putwch_nolock
 

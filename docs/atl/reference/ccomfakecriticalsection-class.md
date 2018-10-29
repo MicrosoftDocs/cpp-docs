@@ -1,16 +1,9 @@
 ---
-title: "CComFakeCriticalSection Class | Microsoft Docs"
-ms.custom: ""
+title: "CComFakeCriticalSection Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComFakeCriticalSection", "ATLCORE/ATL::CComFakeCriticalSection", "ATLCORE/ATL::CComFakeCriticalSection::Init", "ATLCORE/ATL::CComFakeCriticalSection::Lock", "ATLCORE/ATL::CComFakeCriticalSection::Term", "ATLCORE/ATL::CComFakeCriticalSection::Unlock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComFakeCriticalSection class"]
 ms.assetid: a4811b97-96bb-493b-ab9f-62822aeddb10
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComFakeCriticalSection Class
 

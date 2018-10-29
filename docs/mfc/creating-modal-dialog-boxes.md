@@ -1,15 +1,8 @@
 ---
-title: "Creating Modal Dialog Boxes | Microsoft Docs"
-ms.custom: ""
+title: "Creating Modal Dialog Boxes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["modal dialog boxes [MFC], creating", "MFC dialog boxes [MFC], creating", "MFC dialog boxes [MFC], modal"]
 ms.assetid: 26c7a68c-79f6-4862-a5a8-6024984644d2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating Modal Dialog Boxes
 

@@ -1,16 +1,9 @@
 ---
-title: "_com_ptr_t::CreateInstance | Microsoft Docs"
-ms.custom: ""
+title: "_com_ptr_t::CreateInstance"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_ptr_t::CreateInstance"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CreateInstance method [C++]"]
 ms.assetid: ab89b0e1-9da3-4784-a079-58b17340f111
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_ptr_t::CreateInstance
 

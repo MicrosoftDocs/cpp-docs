@@ -1,15 +1,8 @@
 ---
-title: "How to: Implement Tracking in Your Code | Microsoft Docs"
-ms.custom: ""
+title: "How to: Implement Tracking in Your Code"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRectTracker class [MFC], implementing trackers"]
 ms.assetid: baaeca2c-5114-485f-bf58-8807db1bc973
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Implement Tracking in Your Code
 

@@ -1,15 +1,8 @@
 ---
-title: "Help Menu Merging | Microsoft Docs"
-ms.custom: ""
+title: "Help Menu Merging"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["menus [MFC], merging", "merging Help menus [MFC]", "Help [MFC], for active document containers"]
 ms.assetid: 9d615999-79ba-471a-9288-718f0c903d49
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Help Menu Merging
 

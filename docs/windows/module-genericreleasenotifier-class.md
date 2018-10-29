@@ -1,16 +1,10 @@
 ---
-title: "Module::GenericReleaseNotifier Class | Microsoft Docs"
-ms.custom: ""
+title: "Module::GenericReleaseNotifier Class"
 ms.date: "09/17/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::GenericReleaseNotifier", "module/Microsoft::WRL::Module::GenericReleaseNotifier::callback_", "module/Microsoft::WRL::Module::GenericReleaseNotifier::GenericReleaseNotifier", "module/Microsoft::WRL::Module::GenericReleaseNotifier::Invoke"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Module::GenericReleaseNotifier class", "Microsoft::WRL::Module::GenericReleaseNotifier::callback_ data member", "Microsoft::WRL::Module::GenericReleaseNotifier::GenericReleaseNotifier, constructor", "Microsoft::WRL::Module::GenericReleaseNotifier::Invoke method"]
 ms.assetid: 244a8fbe-f89b-409b-aa65-db3e37f9b125
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::GenericReleaseNotifier Class
 

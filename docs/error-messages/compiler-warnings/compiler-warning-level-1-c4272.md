@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4272 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4272"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4272"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4272"]
 ms.assetid: 0d6c1de4-2eef-42c4-b861-c221f8b495ef
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4272
 

@@ -1,15 +1,8 @@
 ---
-title: "Linker Tools Error LNK2038 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK2038"
 ms.date: "12/15/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK2038"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK2038"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK2038
 

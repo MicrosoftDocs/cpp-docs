@@ -1,14 +1,7 @@
 ---
-title: "F. New Features and Clarifications in Version 2.0 | Microsoft Docs"
-ms.custom: ""
+title: "F. New Features and Clarifications in Version 2.0"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 0d4beb66-f2d5-468c-8cd3-4b00dcbab061
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # F. New Features and Clarifications in Version 2.0
 

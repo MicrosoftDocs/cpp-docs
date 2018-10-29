@@ -1,16 +1,9 @@
 ---
-title: "CMouseManager Class | Microsoft Docs"
-ms.custom: ""
+title: "CMouseManager Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMouseManager", "AFXMOUSEMANAGER/CMouseManager", "AFXMOUSEMANAGER/CMouseManager::AddView", "AFXMOUSEMANAGER/CMouseManager::GetViewDblClickCommand", "AFXMOUSEMANAGER/CMouseManager::GetViewIconId", "AFXMOUSEMANAGER/CMouseManager::GetViewIdByName", "AFXMOUSEMANAGER/CMouseManager::GetViewNames", "AFXMOUSEMANAGER/CMouseManager::LoadState", "AFXMOUSEMANAGER/CMouseManager::SaveState", "AFXMOUSEMANAGER/CMouseManager::SetCommandForDblClk"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMouseManager [MFC], AddView", "CMouseManager [MFC], GetViewDblClickCommand", "CMouseManager [MFC], GetViewIconId", "CMouseManager [MFC], GetViewIdByName", "CMouseManager [MFC], GetViewNames", "CMouseManager [MFC], LoadState", "CMouseManager [MFC], SaveState", "CMouseManager [MFC], SetCommandForDblClk"]
 ms.assetid: a4d05017-4e44-4a40-8b57-4ece0de20481
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMouseManager Class
 

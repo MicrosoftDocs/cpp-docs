@@ -1,16 +1,9 @@
 ---
-title: "XFORM Structure | Microsoft Docs"
-ms.custom: ""
+title: "XFORM Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["XFORM"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["XFORM structure [MFC]"]
 ms.assetid: 4fb4ef5b-05d2-4884-82d1-1cb8f7be6302
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # XFORM Structure
 

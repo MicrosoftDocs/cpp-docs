@@ -1,16 +1,9 @@
 ---
-title: "CElementTraitsBase Class | Microsoft Docs"
-ms.custom: ""
+title: "CElementTraitsBase Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CElementTraitsBase", "ATLCOLL/ATL::CElementTraitsBase", "ATLCOLL/ATL::CElementTraitsBase::INARGTYPE", "ATLCOLL/ATL::CElementTraitsBase::OUTARGTYPE", "ATLCOLL/ATL::CElementTraitsBase::CopyElements", "ATLCOLL/ATL::CElementTraitsBase::RelocateElements"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CElementTraitsBase class"]
 ms.assetid: 75284caf-347e-4355-a7d8-efc708dd514a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CElementTraitsBase Class
 

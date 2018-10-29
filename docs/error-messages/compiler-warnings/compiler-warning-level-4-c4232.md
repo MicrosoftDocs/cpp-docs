@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4232 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4232"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4232"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4232"]
 ms.assetid: f92028a5-4ddd-43c1-97f5-4f724e5e14af
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4232
 

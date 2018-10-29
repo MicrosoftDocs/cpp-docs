@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3813 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3813"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3813"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3813"]
 ms.assetid: ffdbc489-71bf-4cd6-988c-f824c9ab3ceb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3813
 

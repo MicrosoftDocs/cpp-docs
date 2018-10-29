@@ -1,15 +1,8 @@
 ---
-title: "Redistributing Web Client Applications | Microsoft Docs"
-ms.custom: ""
+title: "Redistributing Web Client Applications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Web applications [C++], redistributing", "deploying applications [C++], Web applications", "Internet applications [C++], redistributing", "application deployment [C++], Web applications"]
 ms.assetid: fe05988b-dee8-4a46-b381-016b5103a6bf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Redistributing Web Client Applications
 

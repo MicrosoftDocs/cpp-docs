@@ -1,16 +1,9 @@
 ---
-title: "-validate-charset (Validate for compatible characters) | Microsoft Docs"
-ms.custom: ""
+title: "/validate-charset (Validate for compatible characters)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/validate-charset", "validate-charset"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/validate-charset compiler option"]
 ms.assetid: 50360fd0-4d32-4a4f-95d0-53d38c12ad4c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /validate-charset (Validate for compatible characters)
 

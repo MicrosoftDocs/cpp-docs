@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3309 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3309"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3309"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3309"]
 ms.assetid: 75ee16e3-7d4e-4c41-b3cb-64e9849c3aab
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3309
 

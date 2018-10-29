@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Creating a Dataflow Agent | Microsoft Docs"
-ms.custom: ""
+title: "Walkthrough: Creating a Dataflow Agent"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["creating dataflow agents [Concurrency Runtime]", "dataflow agents, creating [Concurrency Runtime]"]
 ms.assetid: 9db5ce3f-c51b-4de1-b79b-9ac2a0cbd130
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Creating a Dataflow Agent
 

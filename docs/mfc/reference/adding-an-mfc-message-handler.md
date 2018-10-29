@@ -1,16 +1,9 @@
 ---
-title: "Adding an MFC Message Handler | Microsoft Docs"
-ms.custom: ""
+title: "Adding an MFC Message Handler"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.adding.mfc.msghandler"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["message handling [MFC], adding handlers"]
 ms.assetid: 4251cfce-76ca-443d-bd2f-6303afa6d942
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding an MFC Message Handler
 

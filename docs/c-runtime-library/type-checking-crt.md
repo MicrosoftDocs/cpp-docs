@@ -1,16 +1,9 @@
 ---
-title: "Type Checking (CRT) | Microsoft Docs"
-ms.custom: ""
+title: "Type Checking (CRT)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.types"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["checking type", "variable argument functions", "type checking"]
 ms.assetid: 1ba7590b-d1c0-4636-b6a0-e231395abdad
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Type Checking (CRT)
 

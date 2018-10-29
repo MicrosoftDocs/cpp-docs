@@ -1,16 +1,9 @@
 ---
-title: "CDialogEx Class | Microsoft Docs"
-ms.custom: ""
+title: "CDialogEx Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDialogEx", "AFXDIALOGEX/CDialogEx", "AFXDIALOGEX/CDialogEx::CDialogEx", "AFXDIALOGEX/CDialogEx::SetBackgroundColor", "AFXDIALOGEX/CDialogEx::SetBackgroundImage"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDialogEx [MFC], CDialogEx", "CDialogEx [MFC], SetBackgroundColor", "CDialogEx [MFC], SetBackgroundImage"]
 ms.assetid: a6ed3b1f-aef8-4b66-ac78-2160faf63c13
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDialogEx Class
 

@@ -1,16 +1,9 @@
 ---
-title: "-TLBOUT (Name .TLB File) | Microsoft Docs"
-ms.custom: ""
+title: "/TLBOUT (Name .TLB File)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.TypeLibraryFile", "/tlbout"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["tlb files, renaming", "TLBOUT linker option", "/TLBOUT linker option", ".tlb files, renaming", "-TLBOUT linker option"]
 ms.assetid: 0df6d078-2e48-46c9-a1a5-02674d85dce8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /TLBOUT (Name .TLB File)
 

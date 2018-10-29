@@ -1,15 +1,8 @@
 ---
-title: "Failure Hooks | Microsoft Docs"
-ms.custom: ""
+title: "Failure Hooks"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["delayed loading of DLLs, failure hooks"]
 ms.assetid: 12bb303b-ffe6-4471-bffe-9ef4f8bb2d30
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Failure Hooks
 

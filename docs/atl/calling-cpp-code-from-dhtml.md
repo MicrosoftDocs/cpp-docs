@@ -1,15 +1,8 @@
 ---
-title: "Calling C++ Code from DHTML | Microsoft Docs"
-ms.custom: ""
+title: "Calling C++ Code from DHTML"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["DHTML, calling C++ code from"]
 ms.assetid: 37329acd-4c22-40ca-a85a-b7480748f75f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Calling C++ Code from DHTML
 

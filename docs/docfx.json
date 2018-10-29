@@ -43,12 +43,23 @@
             "audience": "developer",
             "ms.prod": "visual-cpp",
             "ms.tgt_pltfrm": "",
+            "ms.workload": ["cplusplus"],
+            "dev_langs": ["C++"],
             "searchScope": ["C++"],
             "feedback_system": "GitHub",
             "feedback_github_repo": "MicrosoftDocs/cpp-docs",
             "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/62/index.html"
     },
     "fileMetadata": {
+      "ms.tgt_pltfrm": {
+        "linux/**.md": "Linux"
+      },
+      "ms.workload": {
+        "data/**.md": ["cplusplus", "data-storage"],
+        "dotnet/**.md": ["cplusplus", "dotnet"],
+        "linux/**.md": ["cplusplus", "linux"],
+        "windows/**.md": ["cplusplus", "uwp"]
+      },
       "ms.topic": {
         "assembler/arm/**.md": "reference",
         "assembler/inline/**.md": "conceptual",
@@ -85,7 +96,6 @@
         "windows/**.md": "conceptual",
         "windows/attributes/**.md": "reference"
       },
-
       "ms.technology": {
         "assembler/**.md": "cpp-masm",
         "atl/**.md": "cpp-atl",

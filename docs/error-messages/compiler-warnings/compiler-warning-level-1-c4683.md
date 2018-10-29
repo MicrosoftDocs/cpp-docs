@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4683 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4683"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4683"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4683"]
 ms.assetid: e6e77364-dba1-46dd-ae1d-03da23070bce
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4683
 

@@ -1,15 +1,8 @@
 ---
-title: "ANSI Conformance | Microsoft Docs"
-ms.custom: ""
+title: "ANSI Conformance"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ANSI [C++]", "ANSI [C++], C standard"]
 ms.assetid: c3a188c8-42bc-41fb-a78d-637f3175ade0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ANSI Conformance
 

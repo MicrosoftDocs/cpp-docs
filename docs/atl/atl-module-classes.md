@@ -1,15 +1,8 @@
 ---
-title: "ATL Module Classes | Microsoft Docs"
-ms.custom: ""
+title: "ATL Module Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComModule class, what's changed", "ATL, module classes", "module classes"]
 ms.assetid: fd75382d-c955-46ba-a38e-37728b7fa00f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Module Classes
 

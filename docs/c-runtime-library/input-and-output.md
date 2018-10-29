@@ -1,16 +1,9 @@
 ---
-title: "Input and Output | Microsoft Docs"
-ms.custom: ""
+title: "Input and Output"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.io"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["input routines", "I/O [CRT]", "I/O routines", "I/O [CRT], routines", "output routines"]
 ms.assetid: 1c177301-e341-4ca0-aedc-0a87fe1c75ae
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Input and Output
 

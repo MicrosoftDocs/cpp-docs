@@ -1,16 +1,9 @@
 ---
-title: "MFC ActiveX Control Wizard | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Control Wizard"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.ctl.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX controls [MFC], MFC", "MFC ActiveX controls [MFC], wizards", "OLE controls [MFC], creating", "MFC ActiveX Control Wizard", "OLE controls [MFC]"]
 ms.assetid: f19d698c-bdc3-4c74-af97-3d6ccb441b75
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Control Wizard
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2738 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2738"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2738"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2738"]
 ms.assetid: 896b4640-1ee0-4cd8-9910-de3efa30006a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2738
 

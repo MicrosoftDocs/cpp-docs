@@ -1,16 +1,9 @@
 ---
-title: "CAtlFileMappingBase Class | Microsoft Docs"
-ms.custom: ""
+title: "CAtlFileMappingBase Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAtlFileMappingBase", "ATLFILE/ATL::CAtlFileMappingBase", "ATLFILE/ATL::CAtlFileMappingBase::CAtlFileMappingBase", "ATLFILE/ATL::CAtlFileMappingBase::CopyFrom", "ATLFILE/ATL::CAtlFileMappingBase::GetData", "ATLFILE/ATL::CAtlFileMappingBase::GetHandle", "ATLFILE/ATL::CAtlFileMappingBase::GetMappingSize", "ATLFILE/ATL::CAtlFileMappingBase::MapFile", "ATLFILE/ATL::CAtlFileMappingBase::MapSharedMem", "ATLFILE/ATL::CAtlFileMappingBase::OpenMapping", "ATLFILE/ATL::CAtlFileMappingBase::Unmap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlFileMappingBase class"]
 ms.assetid: be555723-2790-4f57-a8fb-be4d68460775
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlFileMappingBase Class
 

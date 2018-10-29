@@ -1,15 +1,8 @@
 ---
-title: "Drawing Images from an Image List | Microsoft Docs"
-ms.custom: ""
+title: "Drawing Images from an Image List"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CImageList class [MFC], drawing images from", "drawing [MFC], images from image lists", "image lists [MFC], drawing images from", "images [MFC], drawing"]
 ms.assetid: 2f6063fb-1c28-45f8-a333-008c064db11c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Drawing Images from an Image List
 

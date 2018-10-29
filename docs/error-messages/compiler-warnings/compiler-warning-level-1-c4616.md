@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4616 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4616"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4616"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4616"]
 ms.assetid: 71e15265-c5bc-42ce-a6a9-4879892472b1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4616
 

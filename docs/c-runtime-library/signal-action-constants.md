@@ -1,16 +1,9 @@
 ---
-title: "signal Action Constants | Microsoft Docs"
-ms.custom: ""
+title: "signal Action Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["SIG_IGN", "SIG_DFL"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["signal action constants", "SIG_IGN constant", "SIG_DFL constant"]
 ms.assetid: c3cb4f15-d39e-4d9d-84f9-0d33e3eb5993
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # signal Action Constants
 

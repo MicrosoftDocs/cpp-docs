@@ -1,14 +1,7 @@
 ---
-title: "Command-Line Errors D8000 Through D9999 | Microsoft Docs"
-ms.custom: ""
+title: "Command-Line Errors D8000 Through D9999"
 ms.date: "11/17/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
-dev_langs: ["C++"]
 ms.assetid: d02ec7df-26a5-4198-ac92-87b29ec9d5c8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Command-Line Errors D8000 Through D9999
 

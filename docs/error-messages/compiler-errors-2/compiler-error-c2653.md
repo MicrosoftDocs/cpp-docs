@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2653 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2653"
 ms.date: "11/30/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2653"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2653"]
 ms.assetid: 3f49e731-affd-43a0-a8d0-181db7650bc3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2653
 

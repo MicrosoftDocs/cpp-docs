@@ -1,15 +1,8 @@
 ---
-title: "Win32 Predefined Symbols | Microsoft Docs"
-ms.custom: ""
+title: "Win32 Predefined Symbols"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Win32 [C++], predefined symbols", "symbols [C++], Win32 predefined", "Windows API [C++], predefined symbols"]
 ms.assetid: 45c8e193-ee2a-4024-bfc2-34d1ec9c9239
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Win32 Predefined Symbols
 

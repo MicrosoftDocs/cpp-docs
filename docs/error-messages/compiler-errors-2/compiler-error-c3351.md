@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3351 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3351"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3351"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3351"]
 ms.assetid: c021bbbe-1067-4f51-af4f-940d2b792eb5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3351
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3035 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3035"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3035"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3035"]
 ms.assetid: af34fad2-2b45-42d0-a9ff-04eab3e91c37
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3035
 

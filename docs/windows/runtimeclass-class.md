@@ -1,16 +1,10 @@
 ---
-title: "RuntimeClass Class | Microsoft Docs"
-ms.custom: ""
+title: "RuntimeClass Class"
 ms.date: "09/11/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::RuntimeClass", "implements/Microsoft::WRL::RuntimeClass::AddRef", "implements/Microsoft::WRL::RuntimeClass::DecrementReference", "implements/Microsoft::WRL::RuntimeClass::GetIids", "implements/Microsoft::WRL::RuntimeClass::GetRuntimeClassName", "implements/Microsoft::WRL::RuntimeClass::GetTrustLevel", "implements/Microsoft::WRL::RuntimeClass::GetWeakReference", "implements/Microsoft::WRL::RuntimeClass::InternalAddRef", "implements/Microsoft::WRL::RuntimeClass::QueryInterface", "implements/Microsoft::WRL::RuntimeClass::Release", "implements/Microsoft::WRL::RuntimeClass::RuntimeClass", "implements/Microsoft::WRL::RuntimeClass::~RuntimeClass"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::RuntimeClass class", "Microsoft::WRL::RuntimeClass::AddRef method", "Microsoft::WRL::RuntimeClass::DecrementReference method", "Microsoft::WRL::RuntimeClass::GetIids method", "Microsoft::WRL::RuntimeClass::GetRuntimeClassName method", "Microsoft::WRL::RuntimeClass::GetTrustLevel method", "Microsoft::WRL::RuntimeClass::GetWeakReference method", "Microsoft::WRL::RuntimeClass::InternalAddRef method", "Microsoft::WRL::RuntimeClass::QueryInterface method", "Microsoft::WRL::RuntimeClass::Release method", "Microsoft::WRL::RuntimeClass::RuntimeClass, constructor", "Microsoft::WRL::RuntimeClass::~RuntimeClass, destructor"]
 ms.assetid: d52f9d1a-98e5-41f2-a143-8fb629dd0727
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass Class
 

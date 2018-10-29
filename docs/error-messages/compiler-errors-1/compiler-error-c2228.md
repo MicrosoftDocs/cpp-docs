@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2228 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2228"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2228"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2228"]
 ms.assetid: 901cadb1-ce90-4ae0-a360-547a9ba2ca18
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2228
 

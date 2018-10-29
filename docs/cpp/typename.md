@@ -1,16 +1,9 @@
 ---
-title: "typename | Microsoft Docs"
-ms.custom: ""
+title: "typename"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["typename_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["typename template specifier"]
 ms.assetid: 52e1d901-220d-4f0d-ab43-dae7e05fb491
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # typename
 

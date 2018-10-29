@@ -1,15 +1,8 @@
 ---
-title: "Unicode Programming Summary | Microsoft Docs"
-ms.custom: ""
+title: "Unicode Programming Summary"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Unicode [C++], programming with", "Unicode [C++], MFC and C run-time functions"]
 ms.assetid: a4c9770f-6c9c-447c-996b-980920288bed
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Unicode Programming Summary
 

@@ -1,16 +1,9 @@
 ---
-title: "_variant_t::Detach | Microsoft Docs"
-ms.custom: ""
+title: "_variant_t::Detach"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_variant_t::Detach", "_variant_t.Detach"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["VARIANT object [C++], detatch", "Detach method [C++]", "VARIANT object"]
 ms.assetid: c348ac08-62cf-4657-a16f-974a79c12158
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _variant_t::Detach
 

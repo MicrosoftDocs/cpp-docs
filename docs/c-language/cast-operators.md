@@ -1,15 +1,8 @@
 ---
-title: "Cast Operators | Microsoft Docs"
-ms.custom: ""
+title: "Cast Operators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["cast operators", "type casts, operators", "operators [C++], cast", "type conversion, cast operators"]
 ms.assetid: 43b90bbd-39ef-43e6-ae5d-e8a67a01de40
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Cast Operators
 

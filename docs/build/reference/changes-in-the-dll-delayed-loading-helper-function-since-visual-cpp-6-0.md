@@ -1,15 +1,8 @@
 ---
-title: "Changes in the DLL Delayed Loading Helper Function Since Visual C++ 6.0 | Microsoft Docs"
-ms.custom: ""
+title: "Changes in the DLL Delayed Loading Helper Function Since Visual C++ 6.0"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["delayed loading of DLLs, what's changed", "PFromRva method", "__delayLoadHelper2 function", "helper functions, what's changed"]
 ms.assetid: 99f0be69-105d-49ba-8dd5-3be7939c0c72
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Changes in the DLL Delayed Loading Helper Function Since Visual C++ 6.0
 

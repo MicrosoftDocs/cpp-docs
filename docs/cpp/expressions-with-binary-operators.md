@@ -1,15 +1,8 @@
 ---
-title: "Expressions with Binary Operators | Microsoft Docs"
-ms.custom: ""
+title: "Expressions with Binary Operators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C++], binary", "binary operators [C++]", "expressions [C++], binary operators"]
 ms.assetid: 6dea3df4-a4bd-42c3-9807-4a27c120ac9a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Expressions with Binary Operators
 

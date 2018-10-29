@@ -1,14 +1,7 @@
 ---
-title: "Overview of ARM ABI Conventions | Microsoft Docs"
-ms.custom: ""
+title: "Overview of ARM ABI Conventions"
 ms.date: "07/11/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 23f4ae8c-3148-4657-8c47-e933a9f387de
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Overview of ARM32 ABI Conventions
 

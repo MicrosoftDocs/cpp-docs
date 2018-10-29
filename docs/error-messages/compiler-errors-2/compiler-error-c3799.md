@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3799 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3799"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3799"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3799"]
 ms.assetid: 336a2811-9370-4e6e-b03b-325bda470805
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3799
 

@@ -1,16 +1,9 @@
 ---
-title: "Specifying Compiler Optimization for an ATL Project | Microsoft Docs"
-ms.custom: ""
+title: "Specifying Compiler Optimization for an ATL Project"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.ATL.optimization", "vc.appwiz.ATL.vtable"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL_DISABLE_NO_VTABLE macro", "ATL projects, compiler optimization", "ATL_NO_VTABLE macro"]
 ms.assetid: 7f379318-66d5-43dd-a53d-530758d3a228
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Specifying Compiler Optimization for an ATL Project
 

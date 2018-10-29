@@ -1,16 +1,9 @@
 ---
-title: "LOGPEN Structure | Microsoft Docs"
-ms.custom: ""
+title: "LOGPEN Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["LOGPEN"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LOGPEN structure [MFC]"]
 ms.assetid: a89e8690-6b61-4af5-990c-7c82da24f3b0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # LOGPEN Structure
 

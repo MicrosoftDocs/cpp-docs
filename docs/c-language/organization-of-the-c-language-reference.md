@@ -1,14 +1,7 @@
 ---
-title: "Organization of the C Language Reference | Microsoft Docs"
-ms.custom: ""
+title: "Organization of the C Language Reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 7e42daa4-9c9e-4c2d-bbc4-e45405803c20
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Organization of the C Language Reference
 

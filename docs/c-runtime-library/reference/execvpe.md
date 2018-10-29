@@ -1,19 +1,12 @@
 ---
-title: "execvpe | Microsoft Docs"
-ms.custom: ""
+title: "execvpe"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["execvpe"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["execvpe"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["execvpe function"]
 ms.assetid: ee657071-c459-4bb6-82a2-8925c888f624
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # execvpe
 

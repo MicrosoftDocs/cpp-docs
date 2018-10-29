@@ -1,14 +1,7 @@
 ---
-title: "Auto-Parallelization and Auto-Vectorization | Microsoft Docs"
-ms.custom: ""
+title: "Auto-Parallelization and Auto-Vectorization"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: ec71583a-287b-4599-8767-1d255e080fe3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Auto-Parallelization and Auto-Vectorization
 

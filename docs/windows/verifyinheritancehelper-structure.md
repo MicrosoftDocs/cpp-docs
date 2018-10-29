@@ -1,16 +1,10 @@
 ---
-title: "VerifyInheritanceHelper Structure | Microsoft Docs"
-ms.custom: ""
+title: "VerifyInheritanceHelper Structure"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::VerifyInheritanceHelper", "implements/Microsoft::WRL::Details::VerifyInheritanceHelper::Verify"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Details::VerifyInheritanceHelper structure", "Microsoft::WRL::Details::VerifyInheritanceHelper::Verify method"]
 ms.assetid: 8a48a702-0f71-4807-935b-8311f0a7a8b6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # VerifyInheritanceHelper Structure
 

@@ -1,16 +1,9 @@
 ---
-title: "_bittestandreset, _bittestandreset64 | Microsoft Docs"
-ms.custom: ""
+title: "_bittestandreset, _bittestandreset64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_bittestandreset64_cpp", "_bittestandreset", "_bittestandreset_cpp", "_bittestandreset64"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["btr instruction", "_bittestandreset intrinsic", "_bittestandreset64 intrinsic"]
 ms.assetid: 8dad63bb-a051-4cd7-a793-3357537dfeaf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _bittestandreset, _bittestandreset64
 

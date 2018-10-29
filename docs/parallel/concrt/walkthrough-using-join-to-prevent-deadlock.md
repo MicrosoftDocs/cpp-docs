@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Using join to Prevent Deadlock | Microsoft Docs"
-ms.custom: ""
+title: "Walkthrough: Using join to Prevent Deadlock"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["preventing deadlock with joins [Concurrency Runtime]", "deadlock, preventing [Concurrency Runtime]", "non-greedy joins, example", "join class, example"]
 ms.assetid: d791f697-bb93-463e-84bd-5df1651b7446
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Using join to Prevent Deadlock
 

@@ -1,16 +1,9 @@
 ---
-title: "is_bind_expression Class | Microsoft Docs"
-ms.custom: ""
+title: "is_bind_expression Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["functional/std::is_bind_expression"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_bind_expression class"]
 ms.assetid: 0715f9e9-2239-4778-a1cf-2c21f49dfd47
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_bind_expression Class
 

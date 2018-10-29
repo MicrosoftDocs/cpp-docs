@@ -1,15 +1,8 @@
 ---
-title: "Message Handlers | Microsoft Docs"
-ms.custom: ""
+title: "Message Handlers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["message handlers [MFC]", "command handling [MFC], message handlers", "handlers [MFC]", "message handling [MFC], message handler functions", "handlers [MFC], command", "handlers [MFC], message"]
 ms.assetid: 51bc4e76-dbe3-4cc2-b026-3199d56b2fa9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Message Handlers
 

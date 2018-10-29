@@ -1,16 +1,10 @@
 ---
-title: "ML Nonfatal Error A2008 | Microsoft Docs"
-ms.custom: ""
+title: "ML Nonfatal Error A2008"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2008"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["A2008"]
 ms.assetid: ca24157f-c88a-4678-ae06-3bc3cd956001
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2008
 

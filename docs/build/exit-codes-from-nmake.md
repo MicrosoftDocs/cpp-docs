@@ -1,15 +1,8 @@
 ---
-title: "Exit Codes from NMAKE | Microsoft Docs"
-ms.custom: ""
+title: "Exit Codes from NMAKE"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["NMAKE program, exit codes", "exit codes"]
 ms.assetid: 75f6913c-1da5-4572-a2d3-8a4e058bed15
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Exit Codes from NMAKE
 

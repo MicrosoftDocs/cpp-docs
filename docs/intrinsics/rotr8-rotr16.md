@@ -1,16 +1,9 @@
 ---
-title: "_rotr8, _rotr16 | Microsoft Docs"
-ms.custom: ""
+title: "_rotr8, _rotr16"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_rotr16", "_rotr8"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_rotr8 intrinsic", "_rotr16 intrinsic"]
 ms.assetid: dfbd2c82-82b4-427a-ad52-51609027ebff
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _rotr8, _rotr16
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2654 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2654"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2654"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2654"]
 ms.assetid: ca7de1bd-576b-40bf-96fc-a91984827d20
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2654
 

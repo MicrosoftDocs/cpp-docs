@@ -1,16 +1,9 @@
 ---
-title: "Obsolete Functions | Microsoft Docs"
-ms.custom: ""
+title: "Obsolete Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "conceptual"
 f1_keywords: ["is_wctype", "_loaddll", "_unloaddll", "_getdllprocaddr", "_seterrormode", "_beep", "_sleep", "_getsystime", "corecrt_wctype/is_wctype", "process/_loaddll", "process/_unloaddll", "process/_getdllprocaddr", "stdlib/_seterrormode", "stdlib/_beep", "stdlib/_sleep", "time/_getsystime", "time/_setsystime"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["obsolete functions", "_beep function", "_sleep function", "_seterrormode function"]
 ms.assetid: 8e14c2d4-1481-4240-8586-47eb43db02b0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Obsolete Functions
 

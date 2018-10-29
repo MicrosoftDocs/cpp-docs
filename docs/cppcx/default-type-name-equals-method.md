@@ -1,15 +1,8 @@
 ---
-title: "default::(type_name)::Equals Method | Microsoft Docs"
-ms.custom: ""
+title: "default::(type_name)::Equals Method"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 f1_keywords: ["VCCORLIB/Platform::Object::Equals"]
-dev_langs: ["C++"]
 ms.assetid: 4450f835-06fc-4758-8d0a-72cf00007873
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # default::(type_name)::Equals Method
 

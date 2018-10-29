@@ -1,16 +1,9 @@
 ---
-title: "CDockState Class | Microsoft Docs"
-ms.custom: ""
+title: "CDockState Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDockState", "AFXADV/CDockState", "AFXADV/CDockState::Clear", "AFXADV/CDockState::GetVersion", "AFXADV/CDockState::LoadState", "AFXADV/CDockState::SaveState", "AFXADV/CDockState::m_arrBarInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDockState [MFC], Clear", "CDockState [MFC], GetVersion", "CDockState [MFC], LoadState", "CDockState [MFC], SaveState", "CDockState [MFC], m_arrBarInfo"]
 ms.assetid: 09e7c10b-3abd-4cb2-ad36-42420fe6bc36
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDockState Class
 

@@ -1,16 +1,10 @@
 ---
-title: "RoInitializeWrapper Class | Microsoft Docs"
-ms.custom: ""
+title: "RoInitializeWrapper Class"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::RoInitializeWrapper", "corewrappers/Microsoft::WRL::Wrappers::RoInitializeWrapper::HRESULT", "corewrappers/Microsoft::WRL::Wrappers::RoInitializeWrapper::RoInitializeWrapper", "corewrappers/Microsoft::WRL::Wrappers::RoInitializeWrapper::~RoInitializeWrapper"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Wrappers::RoInitializeWrapper class", "Microsoft::WRL::Wrappers::RoInitializeWrapper::operator HRESULT operator", "Microsoft::WRL::Wrappers::RoInitializeWrapper::RoInitializeWrapper, constructor", "Microsoft::WRL::Wrappers::RoInitializeWrapper::~RoInitializeWrapper, destructor"]
 ms.assetid: 4055fbe0-63a7-4c06-b5a0-414fda5640e5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # RoInitializeWrapper Class
 

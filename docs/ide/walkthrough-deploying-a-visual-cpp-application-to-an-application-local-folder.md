@@ -1,15 +1,8 @@
 ---
-title: "Deploy a Visual C++ Application to an App-local Folder | Microsoft Docs"
-ms.custom: ""
+title: "Deploy a Visual C++ Application to an App-local Folder"
 ms.date: "09/17/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["deploying Visual C++ applications"]
 ms.assetid: 47a81c47-9dbe-47c6-96cc-fbb2fda5e6ad
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Deploying a Visual C++ Application to an Application-local Folder
 

@@ -1,14 +1,7 @@
 ---
-title: "PgoAutoSweep | Microsoft Docs"
-ms.custom: ""
+title: "PgoAutoSweep"
 ms.date: "03/14/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 f1_keywords: ["PgoAutoSweep", "PogoAutoSweepA", "PogoAutoSweepW"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # PgoAutoSweep
 

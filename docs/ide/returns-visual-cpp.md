@@ -1,16 +1,9 @@
 ---
-title: "&lt;returns&gt; (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "&lt;returns&gt; (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["returns", "<returns>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["returns C++ XML tag", "<returns> C++ XML tag"]
 ms.assetid: 5e3b0ed9-838d-4953-a93e-76d2d0a19fb9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # &lt;returns&gt; (Visual C++)
 

@@ -1,14 +1,7 @@
 ---
-title: "A.11   Specifying a Fixed Number of Threads | Microsoft Docs"
-ms.custom: ""
+title: "A.11   Specifying a Fixed Number of Threads"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 1d06b142-4c35-44b8-994b-20f2aed5462b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # A.11   Specifying a Fixed Number of Threads
 

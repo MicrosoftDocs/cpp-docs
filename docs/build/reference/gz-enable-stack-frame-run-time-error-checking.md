@@ -1,16 +1,9 @@
 ---
-title: "-GZ (Enable Stack Frame Run-Time Error Checking) | Microsoft Docs"
-ms.custom: ""
+title: "/GZ (Enable Stack Frame Run-Time Error Checking)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/gz"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-GZ compiler option [C++]", "release-build errors", "/GZ compiler option [C++]", "GZ compiler option [C++]", "debug builds, catch release-build errors"]
 ms.assetid: b3efeeff-d5e3-4057-91c9-f6fc73d0270c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /GZ (Enable Stack Frame Run-Time Error Checking)
 

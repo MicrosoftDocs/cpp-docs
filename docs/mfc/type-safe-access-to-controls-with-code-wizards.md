@@ -1,15 +1,8 @@
 ---
-title: "Type-Safe Access to Controls With Code Wizards | Microsoft Docs"
-ms.custom: ""
+title: "Type-Safe Access to Controls With Code Wizards"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["DDX (dialog data exchange), access to controls", "code wizards", "dialog boxes [MFC], access to controls", "dialog box controls [MFC], accessing"]
 ms.assetid: b8874393-ee48-4124-8d78-e3648a7e29b9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Type-Safe Access to Controls With Code Wizards
 

@@ -1,15 +1,8 @@
 ---
-title: "How to: Use Oversubscription to Offset Latency | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use Oversubscription to Offset Latency"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["oversubscription, using [Concurrency Runtime]", "using oversubscription [Concurrency Runtime]"]
 ms.assetid: a1011329-2f0a-4afb-b599-dd4043009a10
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Use Oversubscription to Offset Latency
 

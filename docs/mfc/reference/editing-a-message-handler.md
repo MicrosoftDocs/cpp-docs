@@ -1,16 +1,9 @@
 ---
-title: "Editing a Message Handler | Microsoft Docs"
-ms.custom: ""
+title: "Editing a Message Handler"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.editing.msghandler"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["message handlers [MFC]", "message handling [MFC], editing handlers"]
 ms.assetid: 7babb496-1f14-43b1-a14d-2e54402a92e2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Editing a Message Handler
 

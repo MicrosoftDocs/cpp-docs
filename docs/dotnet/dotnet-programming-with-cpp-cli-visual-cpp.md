@@ -1,15 +1,8 @@
 ---
-title: ".NET Programming with C++/CLI (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: ".NET Programming with C++/CLI (Visual C++)"
 ms.date: "09/18/2018"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["programming [C++], .NET programming", ".NET Framework [C++]", ".NET applications [C++]", "Visual C++, .NET programming"]
 ms.assetid: 2c7f3b0f-a266-4f0e-b318-d6f1371e04a9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # .NET Programming with C++/CLI (Visual C++)
 

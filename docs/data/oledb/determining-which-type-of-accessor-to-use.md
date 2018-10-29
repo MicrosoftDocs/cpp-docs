@@ -1,15 +1,8 @@
 ---
-title: "Determining Which Type of Accessor to Use | Microsoft Docs"
-ms.custom: ""
+title: "Determining Which Type of Accessor to Use"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["rowsets [C++], data types", "accessors [C++], types"]
 ms.assetid: 22483dd2-f4e0-4dcb-8e4d-cd43a9c1a3db
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Determining Which Type of Accessor to Use
 

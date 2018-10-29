@@ -1,15 +1,8 @@
 ---
-title: "Dialog Boxes in OLE | Microsoft Docs"
-ms.custom: ""
+title: "Dialog Boxes in OLE"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC dialog boxes [MFC], OLE dialog boxes", "OLE dialog boxes", "dialog boxes", "OLE dialog boxes [MFC], about OLE dialog boxes", "dialog boxes [MFC], about dialog boxes", "dialog boxes [MFC], OLE", "Insert object"]
 ms.assetid: 73c41eb8-738a-4d02-9212-d3395bb09a3a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dialog Boxes in OLE
 

@@ -1,16 +1,9 @@
 ---
-title: "Type Casting of MFC Class Objects | Microsoft Docs"
-ms.custom: ""
+title: "Type Casting of MFC Class Objects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros.classes"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["macros [MFC], type casting", "pointers [MFC], type casting", "type casts [MFC]", "casting types [MFC]", "macros [MFC], casting pointers"]
 ms.assetid: e138465e-c35f-4e84-b788-bd200ccf2f0e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Type Casting of MFC Class Objects
 

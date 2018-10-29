@@ -1,16 +1,9 @@
 ---
-title: "-Y (Precompiled Headers) | Microsoft Docs"
-ms.custom: ""
+title: "/Y (Precompiled Headers)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Y"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/Y compiler options [C++]"]
 ms.assetid: 1df5726a-8ebe-42c3-b618-d2f5e1ce8673
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Y (Precompiled Headers)
 

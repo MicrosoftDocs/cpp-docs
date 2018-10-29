@@ -1,16 +1,9 @@
 ---
-title: "Implementing CComObjectRootEx | Microsoft Docs"
-ms.custom: ""
+title: "Implementing CComObjectRootEx"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
 f1_keywords: ["CComObjectRootEx"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComObjectRoot class, implementing", "CComObjectRootEx class"]
 ms.assetid: 79630c44-f2df-4e9e-b730-400a0ebfbd2b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Implementing CComObjectRootEx
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3381 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3381"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3381"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3381"]
 ms.assetid: d276c89f-8377-4cb6-a8d4-7770885f06c4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3381
 

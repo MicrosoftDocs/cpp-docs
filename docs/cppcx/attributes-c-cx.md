@@ -1,13 +1,7 @@
 ---
-title: "Attributes (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Attributes (C++/CX)"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: 4438e03c-4de3-433d-abcc-31aa863bc0e0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Attributes (C++/CX)
 

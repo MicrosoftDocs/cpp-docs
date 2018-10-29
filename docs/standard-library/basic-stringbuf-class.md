@@ -1,16 +1,9 @@
 ---
-title: "basic_stringbuf Class | Microsoft Docs"
-ms.custom: ""
+title: "basic_stringbuf Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["sstream/std::basic_stringbuf", "sstream/std::basic_stringbuf::allocator_type", "sstream/std::basic_stringbuf::char_type", "sstream/std::basic_stringbuf::int_type", "sstream/std::basic_stringbuf::off_type", "sstream/std::basic_stringbuf::pos_type", "sstream/std::basic_stringbuf::traits_type", "sstream/std::basic_stringbuf::overflow", "sstream/std::basic_stringbuf::pbackfail", "sstream/std::basic_stringbuf::seekoff", "sstream/std::basic_stringbuf::seekpos", "sstream/std::basic_stringbuf::str", "sstream/std::basic_stringbuf::underflow"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::basic_stringbuf [C++]", "std::basic_stringbuf [C++], allocator_type", "std::basic_stringbuf [C++], char_type", "std::basic_stringbuf [C++], int_type", "std::basic_stringbuf [C++], off_type", "std::basic_stringbuf [C++], pos_type", "std::basic_stringbuf [C++], traits_type", "std::basic_stringbuf [C++], overflow", "std::basic_stringbuf [C++], pbackfail", "std::basic_stringbuf [C++], seekoff", "std::basic_stringbuf [C++], seekpos", "std::basic_stringbuf [C++], str", "std::basic_stringbuf [C++], underflow"]
 ms.assetid: 40c85f9e-42a5-4a65-af5c-23c8e3bf8113
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # basic_stringbuf Class
 

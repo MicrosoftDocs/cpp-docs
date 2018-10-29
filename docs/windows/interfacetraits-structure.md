@@ -1,16 +1,10 @@
 ---
-title: "InterfaceTraits Structure | Microsoft Docs"
-ms.custom: ""
+title: "InterfaceTraits Structure"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::InterfaceTraits", "implements/Microsoft::WRL::Details::InterfaceTraits::CanCastTo", "implements/Microsoft::WRL::Details::InterfaceTraits::CastToBase", "implements/Microsoft::WRL::Details::InterfaceTraits::CastToUnknown", "implements/Microsoft::WRL::Details::InterfaceTraits::FillArrayWithIid", "implements/Microsoft::WRL::Details::InterfaceTraits::IidCount", "implements/Microsoft::WRL::Details::InterfaceTraits::Verify"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Details::InterfaceTraits structure", "Microsoft::WRL::Details::InterfaceTraits::CanCastTo method", "Microsoft::WRL::Details::InterfaceTraits::CastToBase method", "Microsoft::WRL::Details::InterfaceTraits::CastToUnknown method", "Microsoft::WRL::Details::InterfaceTraits::FillArrayWithIid method", "Microsoft::WRL::Details::InterfaceTraits::IidCount constant", "Microsoft::WRL::Details::InterfaceTraits::Verify method"]
 ms.assetid: ede0c284-19a7-4892-9738-ff3da4923d0a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # InterfaceTraits Structure
 

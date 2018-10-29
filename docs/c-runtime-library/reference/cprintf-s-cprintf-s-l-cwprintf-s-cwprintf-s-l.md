@@ -1,19 +1,12 @@
 ---
-title: "_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l | Microsoft Docs"
-ms.custom: ""
+title: "_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_cwprintf_s_l", "_cprintf_s_l", "_cprintf_s", "_cwprintf_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_cwprintf_s_l", "_cprintf_s", "cwprintf_s", "_cprintf_s_l", "cwprintf_s_l", "cprintf_s_l", "_tcprintf_s", "cprintf_s", "_cwprintf_s", "tcprintf_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["tcprintf_s_l function", "_cprintf_s_l function", "_cwprintf_s_l function", "tcprintf_s function", "_tcprintf_s_l function", "_cwprintf_s function", "cwprintf_s function", "_cprintf_s function", "cprintf_s function", "_tcprintf_s function", "cprintf_s_l function", "cwprintf_s_l function"]
 ms.assetid: c28504fe-0d20-4f06-8f97-ee33225922ad
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l
 

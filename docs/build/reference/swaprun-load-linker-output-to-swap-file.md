@@ -1,16 +1,9 @@
 ---
-title: "-SWAPRUN (Load Linker Output to Swap File) | Microsoft Docs"
-ms.custom: ""
+title: "/SWAPRUN (Load Linker Output to Swap File)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.SwapRunFromNet", "/swaprun", "VC.Project.VCLinkerTool.SwapRunFromCD"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-SWAPRUN linker option", "files [C++], LINK", "LINK tool [C++], output", "linker [C++], copying output to swap file", "swap file for linker output", "output files, linker", "/SWAPRUN linker option", "SWAPRUN linker option"]
 ms.assetid: 4a1e7f46-4399-4161-8dfc-d6a71beaf683
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /SWAPRUN (Load Linker Output to Swap File)
 

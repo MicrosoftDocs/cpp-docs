@@ -1,15 +1,8 @@
 ---
-title: "Clipboard | Microsoft Docs"
-ms.custom: ""
+title: "Clipboard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["cutting and copying data", "copying data", "Clipboard", "Clipboard, programming", "transferring data"]
 ms.assetid: a71b2824-1f14-4914-8816-54578d73ad4e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Clipboard
 

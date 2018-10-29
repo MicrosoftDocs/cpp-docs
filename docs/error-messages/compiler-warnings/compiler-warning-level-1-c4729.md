@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (Level 1) C4729 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (Level 1) C4729"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4729"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4729"]
 ms.assetid: 36a0151f-f258-48d9-9444-ae6d41ff70a4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (Level 1) C4729
 

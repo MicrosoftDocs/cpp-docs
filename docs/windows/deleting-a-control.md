@@ -1,15 +1,8 @@
 ---
-title: "Deleting a Control | Microsoft Docs"
-ms.custom: ""
+title: "Deleting a Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["dialog box controls [C++], deleting", "controls [C++], deleting"]
 ms.assetid: 95237fac-938e-41b2-b9ae-25f03aa949cb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Deleting a Control
 

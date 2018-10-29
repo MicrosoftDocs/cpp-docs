@@ -1,13 +1,7 @@
 ---
-title: "Deprecating types and members (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Deprecating types and members (C++/CX)"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: b20b01c1-a439-4ff0-8cf3-d7280c492813
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Deprecating types and members (C++/CX)
 

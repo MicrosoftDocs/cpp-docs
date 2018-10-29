@@ -1,19 +1,12 @@
 ---
-title: "_aligned_offset_recalloc_dbg | Microsoft Docs"
-ms.custom: ""
+title: "_aligned_offset_recalloc_dbg"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_aligned_offset_recalloc_dbg"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["aligned_offset_recalloc_dbg", "_aligned_offset_recalloc_dbg"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["aligned_offset_recalloc_dbg function", "_aligned_offset_recalloc_dbg function"]
 ms.assetid: 7ab719c3-77e0-4d2e-934f-01529d062fbf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _aligned_offset_recalloc_dbg
 

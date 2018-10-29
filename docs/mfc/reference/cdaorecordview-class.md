@@ -1,16 +1,9 @@
 ---
-title: "CDaoRecordView Class | Microsoft Docs"
-ms.custom: ""
+title: "CDaoRecordView Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDaoRecordView", "AFXDAO/CDaoRecordView", "AFXDAO/CDaoRecordView::CDaoRecordView", "AFXDAO/CDaoRecordView::IsOnFirstRecord", "AFXDAO/CDaoRecordView::IsOnLastRecord", "AFXDAO/CDaoRecordView::OnGetRecordset", "AFXDAO/CDaoRecordView::OnMove"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoRecordView [MFC], CDaoRecordView", "CDaoRecordView [MFC], IsOnFirstRecord", "CDaoRecordView [MFC], IsOnLastRecord", "CDaoRecordView [MFC], OnGetRecordset", "CDaoRecordView [MFC], OnMove"]
 ms.assetid: 5aa7d0e2-bd05-413e-b216-80c404ce18ac
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDaoRecordView Class
 

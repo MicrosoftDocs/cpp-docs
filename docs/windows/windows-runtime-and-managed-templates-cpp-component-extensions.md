@@ -1,15 +1,9 @@
 ---
-title: "Windows Runtime and Managed Templates (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Windows Runtime and Managed Templates (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["templates, with CLR types"]
 ms.assetid: cf59d16b-5514-448b-9a95-e0b4fcb616a6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Windows Runtime and Managed Templates (C++/CLI and C++/CX)
 

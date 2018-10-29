@@ -1,15 +1,8 @@
 ---
-title: "Developing Your Own Helper Function | Microsoft Docs"
-ms.custom: ""
+title: "Developing Your Own Helper Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["helper functions"]
 ms.assetid: a845429d-68b1-4e14-aa88-f3f5343bd490
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Developing Your Own Helper Function
 

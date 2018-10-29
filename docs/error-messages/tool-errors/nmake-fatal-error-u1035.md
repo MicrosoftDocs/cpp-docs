@@ -1,16 +1,9 @@
 ---
-title: "NMAKE Fatal Error U1035 | Microsoft Docs"
-ms.custom: ""
+title: "NMAKE Fatal Error U1035"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["U1035"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["U1035"]
 ms.assetid: 68f0cc59-007e-4109-ac30-7ac4ac447e6d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # NMAKE Fatal Error U1035
 

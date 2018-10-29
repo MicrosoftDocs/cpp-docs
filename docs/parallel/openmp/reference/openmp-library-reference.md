@@ -1,14 +1,7 @@
 ---
-title: "OpenMP library reference | Microsoft Docs"
-ms.custom: ""
+title: "OpenMP library reference"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-parallel"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: a25188c6-edde-43d0-84b5-780e797b08fc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OpenMP library reference
 

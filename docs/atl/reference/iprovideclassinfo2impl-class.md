@@ -1,16 +1,9 @@
 ---
-title: "IProvideClassInfo2Impl Class | Microsoft Docs"
-ms.custom: ""
+title: "IProvideClassInfo2Impl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IProvideClassInfo2Impl", "ATLCOM/ATL::IProvideClassInfo2Impl", "ATLCOM/ATL::IProvideClassInfo2Impl::IProvideClassInfo2Impl", "ATLCOM/ATL::IProvideClassInfo2Impl::GetClassInfo", "ATLCOM/ATL::IProvideClassInfo2Impl::GetGUID", "ATLCOM/ATL::IProvideClassInfo2Impl::_tih"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IProvideClassInfo2Impl class", "IProvideClassInfo2 ATL implementation", "class information, ATL"]
 ms.assetid: d74956e8-9c69-4cba-b99d-ca1ac031bb9d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IProvideClassInfo2Impl Class
 

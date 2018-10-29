@@ -1,15 +1,8 @@
 ---
-title: "C Primary Expressions | Microsoft Docs"
-ms.custom: ""
+title: "C Primary Expressions"
 ms.date: "10/21/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["primary expressions"]
 ms.assetid: 49ac134f-0f8a-44f7-800e-86f31f2bd51c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Primary Expressions
 

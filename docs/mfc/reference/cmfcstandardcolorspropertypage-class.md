@@ -1,15 +1,8 @@
 ---
-title: "CMFCStandardColorsPropertyPage Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCStandardColorsPropertyPage Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCStandardColorsPropertyPage class [MFC]"]
 ms.assetid: b84b7cfb-bb24-4c65-804a-5b642cb64400
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCStandardColorsPropertyPage Class
 

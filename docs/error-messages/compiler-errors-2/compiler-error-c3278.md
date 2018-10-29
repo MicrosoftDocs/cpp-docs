@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3278 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3278"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3278"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3278"]
 ms.assetid: 56f818f5-85a6-4792-843b-54fe16327658
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3278
 

@@ -1,16 +1,9 @@
 ---
-title: "bad_alloc Class | Microsoft Docs"
-ms.custom: ""
+title: "bad_alloc Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["new/std::bad_alloc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["bad_alloc class"]
 ms.assetid: 6429a8e6-5a49-4907-8d56-f4a4ec8131d0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # bad_alloc Class
 

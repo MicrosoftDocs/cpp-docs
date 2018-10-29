@@ -1,14 +1,8 @@
 ---
-title: "Type Conversions and Type Safety (Modern C++) | Microsoft Docs"
-ms.custom: ""
+title: "Type Conversions and Type Safety (Modern C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Type Conversions and Type Safety (Modern C++)
 

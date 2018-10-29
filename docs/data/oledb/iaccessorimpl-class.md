@@ -1,16 +1,9 @@
 ---
-title: "IAccessorImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IAccessorImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["IAccessorImpl", "ATL.IAccessorImpl.IAccessorImpl", "ATL::IAccessorImpl::IAccessorImpl", "IAccessorImpl::IAccessorImpl", "IAccessorImpl.IAccessorImpl", "IAccessorImpl", "ATL::IAccessorImpl::AddRefAccessor", "AddRefAccessor", "IAccessorImpl::AddRefAccessor", "IAccessorImpl.AddRefAccessor", "ATL.IAccessorImpl.AddRefAccessor", "IAccessorImpl::CreateAccessor", "CreateAccessor", "ATL::IAccessorImpl::CreateAccessor", "IAccessorImpl.CreateAccessor", "ATL.IAccessorImpl.CreateAccessor", "IAccessorImpl.GetBindings", "ATL::IAccessorImpl::GetBindings", "IAccessorImpl::GetBindings", "GetBindings", "ATL.IAccessorImpl.GetBindings", "ReleaseAccessor", "IAccessorImpl::ReleaseAccessor", "ATL.IAccessorImpl.ReleaseAccessor", "ATL::IAccessorImpl::ReleaseAccessor", "IAccessorImpl.ReleaseAccessor"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IAccessorImpl class", "IAccessorImpl class, constructor", "IAccessorImpl constructor", "AddRefAccessor method", "CreateAccessor method", "GetBindings method", "ReleaseAccessor method"]
 ms.assetid: 768606da-8b71-417c-a62c-88069ce7730d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IAccessorImpl Class
 

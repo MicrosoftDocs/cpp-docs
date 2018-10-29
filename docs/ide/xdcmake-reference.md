@@ -1,16 +1,9 @@
 ---
-title: "XDCMake Reference | Microsoft Docs"
-ms.custom: ""
+title: "XDCMake Reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["xdcmake"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["xdcmake program"]
 ms.assetid: 14e65747-d000-4343-854b-8393bf01cbac
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # XDCMake Reference
 

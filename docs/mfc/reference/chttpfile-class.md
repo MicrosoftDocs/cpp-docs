@@ -1,16 +1,9 @@
 ---
-title: "CHttpFile Class | Microsoft Docs"
-ms.custom: ""
+title: "CHttpFile Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CHttpFile", "AFXINET/CHttpFile", "AFXINET/CHttpFile::CHttpFile", "AFXINET/CHttpFile::AddRequestHeaders", "AFXINET/CHttpFile::EndRequest", "AFXINET/CHttpFile::GetFileURL", "AFXINET/CHttpFile::GetObject", "AFXINET/CHttpFile::GetVerb", "AFXINET/CHttpFile::QueryInfo", "AFXINET/CHttpFile::QueryInfoStatusCode", "AFXINET/CHttpFile::SendRequest", "AFXINET/CHttpFile::SendRequestEx"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CHttpFile [MFC], CHttpFile", "CHttpFile [MFC], AddRequestHeaders", "CHttpFile [MFC], EndRequest", "CHttpFile [MFC], GetFileURL", "CHttpFile [MFC], GetObject", "CHttpFile [MFC], GetVerb", "CHttpFile [MFC], QueryInfo", "CHttpFile [MFC], QueryInfoStatusCode", "CHttpFile [MFC], SendRequest", "CHttpFile [MFC], SendRequestEx"]
 ms.assetid: 399e7c68-bbce-4374-8c55-206e9c7baac6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CHttpFile Class
 

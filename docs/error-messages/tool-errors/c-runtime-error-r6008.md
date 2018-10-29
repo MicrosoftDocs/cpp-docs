@@ -1,16 +1,9 @@
 ---
-title: "C Runtime Error R6008 | Microsoft Docs"
-ms.custom: ""
+title: "C Runtime Error R6008"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["R6008"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["R6008"]
 ms.assetid: f0f304fc-709a-4843-bc7e-bad1ae0d1649
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6008
 

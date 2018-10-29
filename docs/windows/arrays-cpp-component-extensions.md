@@ -1,16 +1,10 @@
 ---
-title: "Arrays (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Arrays (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["cli::array", "details::array", "lang::array"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["array keyword [C++]", "arrays [C++], multidimensional", "multidimensional arrays", "arrays [C++]"]
 ms.assetid: 49445812-d775-4db1-a231-869598dbb955
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Arrays (C++/CLI and C++/CX)
 

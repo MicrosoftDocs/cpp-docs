@@ -1,15 +1,8 @@
 ---
-title: "Slider Control Styles | Microsoft Docs"
-ms.custom: ""
+title: "Slider Control Styles"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["slider controls [MFC], styles", "CSliderCtrl class [MFC], styles", "styles [MFC], CSliderCtrl", "styles [MFC], slider controls"]
 ms.assetid: 64c491fc-5af1-4f97-ae30-854071b3dc02
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Slider Control Styles
 

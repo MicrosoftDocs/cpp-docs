@@ -1,16 +1,9 @@
 ---
-title: "How to: Copy Resources (C++) | Microsoft Docs"
-ms.custom: ""
+title: "How to: Copy Resources (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.resvw.resource.copying", "vs.resvw.resource.copying"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["resources [C++], moving between files", "resources [C++], copying", "resource files [C++], copying or moving resources between", "resource files [C++], tiling", ".rc files [C++], copying resources between", "rc files [C++], copying resources between"]
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Copy Resources (C++)
 

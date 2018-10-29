@@ -1,15 +1,8 @@
 ---
-title: "Visual C++ Project Types | Microsoft Docs"
-ms.custom: ""
+title: "Visual C++ Project Types"
 ms.date: "10/30/2017"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["programs [C++], projects", "project templates [Visual Studio], C++", "TODO comments [C++]", "projects [C++], types", "templates [C++], projects", "applications [C++], projects", "Visual C++ projects, types"]
 ms.assetid: 7337987e-1e7b-4120-9a4b-94f0401f15e7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Visual C++ Project Types
 

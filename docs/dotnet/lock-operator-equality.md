@@ -1,16 +1,10 @@
 ---
-title: "lock::operator== | Microsoft Docs"
-ms.custom: ""
+title: "lock::operator=="
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["lock::operator==", "msclr.lock.operator==", "msclr::lock::operator==", "lock.operator=="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["lock::operator=="]
 ms.assetid: 3dcf1e5a-53fc-495d-9df5-d7849a41c36c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # lock::operator==
 

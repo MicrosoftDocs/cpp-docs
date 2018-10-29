@@ -1,16 +1,9 @@
 ---
-title: "_com_ptr_t Relational Operators | Microsoft Docs"
-ms.custom: ""
+title: "_com_ptr_t Relational Operators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_ptr_t::operator>", "_com_ptr_t::operator>=", "_com_ptr_t::operator<=", "_com_ptr_t::operator==", "_com_ptr_t::operator!=", "_com_ptr_t::operator<"]
-dev_langs: ["C++"]
 helpviewer_keywords: [">= operator [C++], comparing specific objects", "!= operator", "operator > [C++], pointers", "operator>= [C++], pointers", "operator < [C++], pointers", "operator!= [C++], relational operators", "< operator [C++], comparing specific objects", "operator== [C++], pointers", "operator == [C++], pointers", "<= operator [C++], with specific objects", "relational operators [C++], _com_ptr_t class", "operator >= [C++], pointers", "operator != [C++], relational operators", "operator <= [C++], pointers", "> operator [C++], comparing specific objects", "operator<= [C++], pointers", "operator< [C++], pointers", "== operator [C++], with specific Visual C++ objects"]
 ms.assetid: 5ae4028c-33ee-485d-bbda-88d2604d6d4b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_ptr_t Relational Operators
 

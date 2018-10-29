@@ -1,14 +1,7 @@
 ---
-title: "Storage of Bit Fields | Microsoft Docs"
-ms.custom: ""
+title: "Storage of Bit Fields"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 4816a241-1580-4d1c-82ed-13d359733959
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Storage of Bit Fields
 

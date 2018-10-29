@@ -1,15 +1,8 @@
 ---
-title: "Naked (C) | Microsoft Docs"
-ms.custom: ""
+title: "Naked (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["naked keyword [C], storage-class attribute", "naked keyword [C]", "prolog code", "epilog code"]
 ms.assetid: 23b1209b-93ba-46ad-a60f-2327c1933eaf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Naked (C)
 

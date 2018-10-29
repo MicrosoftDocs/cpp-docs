@@ -1,15 +1,8 @@
 ---
-title: "MFC ActiveX Controls: Accessing Ambient Properties | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Accessing Ambient Properties"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], accessing ambient properties", "properties [MFC], accessing ambient"]
 ms.assetid: fdc9db29-e6b0-45d2-a879-8bd60e2058a7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Accessing Ambient Properties
 

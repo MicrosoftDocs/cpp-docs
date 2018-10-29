@@ -1,16 +1,9 @@
 ---
-title: ".ERRE | Microsoft Docs"
-ms.custom: ""
+title: ".ERRE"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".ERRE"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".ERRE directive"]
 ms.assetid: cfb5a4bb-4488-4101-bd06-63ba43b1473e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .ERRE
 

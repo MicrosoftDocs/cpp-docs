@@ -1,16 +1,9 @@
 ---
-title: "NMAKE Fatal Error U1095 | Microsoft Docs"
-ms.custom: ""
+title: "NMAKE Fatal Error U1095"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["U1095"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["U1095"]
 ms.assetid: a392582b-06db-4568-9c13-450293a4fbda
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # NMAKE Fatal Error U1095
 

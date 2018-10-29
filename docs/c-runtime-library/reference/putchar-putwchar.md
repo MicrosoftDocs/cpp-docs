@@ -1,19 +1,12 @@
 ---
-title: "putchar, putwchar | Microsoft Docs"
-ms.custom: ""
+title: "putchar, putwchar"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["putchar", "putwchar"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["putchar", "putwchar", "_puttchar"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["putchar function", "_puttchar function", "characters, writing", "standard output, writing to", "putwchar function"]
 ms.assetid: 93657c7f-cca1-4032-8e3a-cd6ab6193748
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # putchar, putwchar
 

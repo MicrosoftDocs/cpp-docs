@@ -1,16 +1,9 @@
 ---
-title: "ATL Property Page Wizard | Microsoft Docs"
-ms.custom: ""
+title: "ATL Property Page Wizard"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.ppg.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, adding property pages", "ATL Property Page Wizard"]
 ms.assetid: 6113e325-facd-4f68-b491-144d75209922
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Property Page Wizard
 

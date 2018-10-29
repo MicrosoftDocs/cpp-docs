@@ -1,16 +1,9 @@
 ---
-title: "OpenMP environment variables | Microsoft Docs"
-ms.custom: ""
+title: "OpenMP environment variables"
 ms.date: "10/23/2018"
-ms.technology: ["cpp-parallel"]
-ms.topic: "reference"
 f1_keywords: ["OpenMP environment variables", "OMP_DYNAMIC", "OMP_NESTED", "OMP_NUM_THREADS", "OMP_SCHEDULE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OpenMP environment variables", "OMP_DYNAMIC OpenMP environment variable", "OMP_NESTED OpenMP environment variable", "OMP_NUM_THREADS OpenMP environment variable", "OMP_SCHEDULE OpenMP environment variable"]
 ms.assetid: 2178ce2b-ffa1-45ec-a455-64437711d15d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OpenMP environment variables
 

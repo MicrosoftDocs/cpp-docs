@@ -1,15 +1,8 @@
 ---
-title: "Function Body | Microsoft Docs"
-ms.custom: ""
+title: "Function Body"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["functions [C], syntax", "variables, function syntax", "function definitions, function body", "function body"]
 ms.assetid: f7e74822-fac8-4dc8-8f3a-2b1611da4640
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Function Body
 

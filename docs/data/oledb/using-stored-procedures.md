@@ -1,15 +1,8 @@
 ---
-title: "Using Stored Procedures | Microsoft Docs"
-ms.custom: ""
+title: "Using Stored Procedures"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB, stored procedures", "stored procedures, Visual C++", "stored procedures, about stored procedures", "OLE DB provider templates, stored procedures", "stored procedures, OLE DB"]
 ms.assetid: 90507e4c-eca2-46c9-ad8c-07e10dc1d41b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using Stored Procedures
 

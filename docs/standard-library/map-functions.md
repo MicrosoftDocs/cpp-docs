@@ -1,8 +1,6 @@
 ---
-title: "&lt;map&gt; functions | Microsoft Docs"
-ms.custom: ""
+title: "&lt;map&gt; functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["map/std::swap (map)", "map/std::swap (multimap)"]
 ms.assetid: 7cb3d1a5-7add-4726-a73f-61927eafd466
 ---

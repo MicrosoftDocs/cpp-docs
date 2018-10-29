@@ -1,16 +1,10 @@
 ---
-title: "auto_gcroot::operator= | Microsoft Docs"
-ms.custom: ""
+title: "auto_gcroot::operator="
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["auto_gcroot.operator=", "msclr::auto_gcroot::operator=", "msclr.auto_gcroot.operator=", "auto_gcroot::operator="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["operator="]
 ms.assetid: 99eba5eb-5a2c-4edf-b3d5-c903f818233d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot::operator=
 

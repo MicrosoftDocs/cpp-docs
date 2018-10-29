@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2034 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2034"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2034"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2034"]
 ms.assetid: 953d70fa-bde9-4ce6-a55d-741e7bc63ff4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2034
 

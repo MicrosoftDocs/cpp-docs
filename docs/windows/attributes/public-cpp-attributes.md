@@ -1,16 +1,9 @@
 ---
-title: "public (C++ Attributes) (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "public (C++ Attributes) (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.public"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["public attribute"]
 ms.assetid: c42e1fd5-6cb1-48fe-8a03-95f2a2e0137c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # public (C++ Attributes)
 

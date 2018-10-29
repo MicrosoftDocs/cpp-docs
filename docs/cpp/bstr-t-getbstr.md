@@ -1,16 +1,9 @@
 ---
-title: "_bstr_t::GetBSTR | Microsoft Docs"
-ms.custom: ""
+title: "_bstr_t::GetBSTR"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_bstr_t::GetBSTR"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["GetBSTR method [C++]"]
 ms.assetid: 0c62ff16-4433-4183-a03c-d5a0a9b731ef
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _bstr_t::GetBSTR
 

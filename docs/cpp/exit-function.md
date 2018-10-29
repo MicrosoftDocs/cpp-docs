@@ -1,16 +1,9 @@
 ---
-title: "exit Function | Microsoft Docs"
-ms.custom: ""
+title: "exit Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["Exit"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["exit function"]
 ms.assetid: 26ce439f-81e2-431c-9ff8-a09a96f32127
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # exit Function
 

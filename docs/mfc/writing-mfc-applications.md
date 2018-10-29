@@ -1,15 +1,8 @@
 ---
-title: "Writing MFC Applications | Microsoft Docs"
-ms.custom: ""
+title: "Writing MFC Applications"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Internet applications [MFC], MFC", "MFC, Internet applications", "application wizards [MFC], Internet applications", "MFC, application development"]
 ms.assetid: 6a8d8a03-abfa-4976-86c2-c5773a4b7179
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Writing MFC Applications
 

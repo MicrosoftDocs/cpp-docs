@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2529 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2529"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2529"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2529"]
 ms.assetid: 73a99e55-b91e-488d-9b72-cc80faaeb436
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2529
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4401 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4401"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4401"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4401"]
 ms.assetid: 2e7ca136-f144-4b40-b847-82976e8643fc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4401
 

@@ -1,15 +1,8 @@
 ---
-title: "&lt;sample container&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;sample container&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["headers, C++ sample container", "sample container", "container headers"]
 ms.assetid: 4ab3dcf9-49c3-4e49-b5d6-1ec573e2aee4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;sample container&gt;
 

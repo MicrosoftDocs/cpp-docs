@@ -1,16 +1,9 @@
 ---
-title: "TN021: Command and Message Routing | Microsoft Docs"
-ms.custom: ""
+title: "TN021: Command and Message Routing"
 ms.date: "06/28/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.routing"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TN021", "command routing [MFC], technical note TN021", "Windows messages [MFC], routing"]
 ms.assetid: b5952c8b-123e-406c-a36d-a6ac7c6df307
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN021: Command and Message Routing
 

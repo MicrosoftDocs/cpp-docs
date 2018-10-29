@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2326 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2326"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2326"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2326"]
 ms.assetid: 01a5ea40-de83-4e6f-a4e8-469f441258e0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2326
 

@@ -1,16 +1,9 @@
 ---
-title: "CDialogImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "CDialogImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CDialogImpl", "ATLWIN/ATL::CDialogImpl", "ATLWIN/ATL::Create", "ATLWIN/ATL::DestroyWindow", "ATLWIN/ATL::DoModal", "ATLWIN/ATL::EndDialog", "ATLWIN/ATL::GetDialogProc", "ATLWIN/ATL::MapDialogRect", "ATLWIN/ATL::OnFinalMessage", "ATLWIN/ATL::DialogProc", "ATLWIN/ATL::StartDialogProc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["dialog boxes, ATL", "CDialogImpl class"]
 ms.assetid: d430bc7b-8a28-4ad3-9507-277bdd2c2c2e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDialogImpl Class
 

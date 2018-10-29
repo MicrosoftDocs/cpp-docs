@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3672 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3672"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3672"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3672"]
 ms.assetid: da971041-1766-467a-aecf-1d8655c6cb7a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3672
 

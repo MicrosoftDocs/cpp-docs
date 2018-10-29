@@ -1,19 +1,12 @@
 ---
-title: "_tell, _telli64 | Microsoft Docs"
-ms.custom: ""
+title: "_tell, _telli64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_telli64", "_tell"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["tell", "telli64", "_telli64", "_tell"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["tell function", "file pointers [C++], getting", "_tell function", "file pointers [C++]", "telli64 function", "_telli64 function"]
 ms.assetid: 1500e8f9-8fec-4253-9eec-ec66125dfc9b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _tell, _telli64
 

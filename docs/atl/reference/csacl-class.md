@@ -1,16 +1,9 @@
 ---
-title: "CSacl Class | Microsoft Docs"
-ms.custom: ""
+title: "CSacl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CSacl", "ATLSECURITY/ATL::CSacl", "ATLSECURITY/ATL::CSacl::CSacl", "ATLSECURITY/ATL::CSacl::AddAuditAce", "ATLSECURITY/ATL::CSacl::GetAceCount", "ATLSECURITY/ATL::CSacl::RemoveAce", "ATLSECURITY/ATL::CSacl::RemoveAllAces"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSacl class"]
 ms.assetid: 8624889b-aebc-4183-9d29-a20f07837f05
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSacl Class
 

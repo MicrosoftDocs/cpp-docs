@@ -1,15 +1,8 @@
 ---
-title: "Command Routing | Microsoft Docs"
-ms.custom: ""
+title: "Command Routing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, command routing", "command handling [MFC], routing commands", "handlers [MFC]", "handlers, command [MFC]", "command routing"]
 ms.assetid: 9393a956-bdd4-47c5-9013-dbd680433f93
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Command Routing
 

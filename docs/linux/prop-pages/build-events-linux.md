@@ -1,14 +1,7 @@
 ---
-title: "Remote Build Events (Linux C++) | Microsoft Docs"
-ms.custom: ""
+title: "Remote Build Events (Linux C++)"
 ms.date: "9/26/2017"
-ms.technology: ["vs-ide-general"]
-ms.tgt_pltfrm: "Linux"
-ms.topic: "conceptual"
 ms.assetid: 165d3690-5bd8-4b0b-bc66-8b699d85a61b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "linux"]
 ---
 # Build Event Properties (Linux C++)
 

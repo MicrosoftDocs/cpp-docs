@@ -1,16 +1,9 @@
 ---
-title: "IDBCreateCommandImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IDBCreateCommandImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL::IDBCreateCommandImpl", "IDBCreateCommandImpl", "ATL.IDBCreateCommandImpl", "IDBCreateCommandImpl.CreateCommand", "CreateCommand", "IDBCreateCommandImpl::CreateCommand"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IDBCreateCommandImpl class", "CreateCommand method"]
 ms.assetid: eac4755e-1668-42e1-958e-a35620c385ae
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBCreateCommandImpl Class
 

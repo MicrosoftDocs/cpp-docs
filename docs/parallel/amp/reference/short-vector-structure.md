@@ -1,15 +1,8 @@
 ---
-title: "short_vector Structure | Microsoft Docs"
-ms.custom: ""
+title: "short_vector Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["short_vector", "AMP_SHORT_VECTORS/short_vector", "AMP_SHORT_VECTORS/Concurrency::graphics::short_vector::short_vector Constructor"]
-dev_langs: ["C++"]
 ms.assetid: e4f50b8f-1150-437d-b58c-79c5fb883708
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # short_vector Structure
 

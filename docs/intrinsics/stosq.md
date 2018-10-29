@@ -1,16 +1,9 @@
 ---
-title: "__stosq | Microsoft Docs"
-ms.custom: ""
+title: "__stosq"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__stosq"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["rep stosq instruction", "stosq instruction", "__stosq intrinsic"]
 ms.assetid: 3ea28297-4369-4c2d-bf0c-91fa539ce209
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __stosq
 

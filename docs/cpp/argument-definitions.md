@@ -1,15 +1,8 @@
 ---
-title: "Argument Definitions | Microsoft Docs"
-ms.custom: ""
+title: "Argument Definitions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["envp argument", "main function, arguments", "arguments [C++], for main function", "argv argument", "argc argument"]
 ms.assetid: 6148cbf3-ebe8-44f2-b277-de4b723991c7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Argument Definitions
 

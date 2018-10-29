@@ -1,16 +1,9 @@
 ---
-title: "Using a Dialog Bar with a Rebar Control | Microsoft Docs"
-ms.custom: ""
+title: "Using a Dialog Bar with a Rebar Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["WM_EX_TRANSPARENT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["WS_EX_TRANSPARENT style", "rebar controls [MFC], dialog bars", "dialog bars [MFC], using with rebar bands"]
 ms.assetid: e528cea0-6b81-4bdf-9643-7c03b6176590
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using a Dialog Bar with a Rebar Control
 

@@ -1,16 +1,9 @@
 ---
-title: "DispatchState Structure | Microsoft Docs"
-ms.custom: ""
+title: "DispatchState Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["DispatchState", "CONCRTRM/concurrency::DispatchState", "CONCRTRM/concurrency::DispatchState::DispatchState::DispatchState", "CONCRTRM/concurrency::DispatchState::DispatchState::m_dispatchStateSize", "CONCRTRM/concurrency::DispatchState::DispatchState::m_fIsPreviousContextAsynchronouslyBlocked", "CONCRTRM/concurrency::DispatchState::DispatchState::m_reserved"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DispatchState structure"]
 ms.assetid: 8c52546e-1650-48a0-985f-7e4a0fc26a90
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # DispatchState Structure
 

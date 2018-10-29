@@ -1,16 +1,9 @@
 ---
-title: "CMultipleResults Class | Microsoft Docs"
-ms.custom: ""
+title: "CMultipleResults Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL.CMultipleResults", "ATL::CMultipleResults", "CMultipleResults"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMultipleResults class"]
 ms.assetid: 6ce5bbb9-b551-483c-988a-e6aee9135a19
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CMultipleResults Class
 

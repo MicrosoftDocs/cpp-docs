@@ -1,16 +1,9 @@
 ---
-title: "Registry Macros | Microsoft Docs"
-ms.custom: ""
+title: "Registry Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlcom/ATL::_ATL_STATIC_REGISTRY", "atlcom/ATL::DECLARE_LIBID", "atlcom/ATL::DECLARE_NO_REGISTRY", "atlcom/ATL::DECLARE_REGISTRY", "atlcom/ATL::DECLARE_REGISTRY_APPID_RESOURCEID", "atlcom/ATL::DECLARE_REGISTRY_RESOURCE", "atlcom/ATL::DECLARE_REGISTRY_RESOURCEID"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["registry, ATL macros"]
 ms.assetid: 3ee041da-c63b-42a4-89cf-2a4b2a6f81ae
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Registry Macros
 

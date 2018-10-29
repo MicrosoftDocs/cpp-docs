@@ -1,16 +1,9 @@
 ---
-title: "index Class | Microsoft Docs"
-ms.custom: ""
+title: "index Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["AMP/index", "AMP/Concurrency::index::index", "AMP/Concurrency::index::rank"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["index structure"]
 ms.assetid: cbe79b08-0ba7-474c-9828-f1a71da39eb3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # index Class
 

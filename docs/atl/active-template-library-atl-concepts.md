@@ -1,15 +1,8 @@
 ---
-title: "Active Template Library (ATL) Concepts | Microsoft Docs"
-ms.custom: ""
+title: "Active Template Library (ATL) Concepts"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, about ATL"]
 ms.assetid: a3960991-4d76-4da5-9568-3fa7fde53ff4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Active Template Library (ATL) Concepts
 

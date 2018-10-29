@@ -1,16 +1,9 @@
 ---
-title: "ELSEIF (MASM) | Microsoft Docs"
-ms.custom: ""
+title: "ELSEIF (MASM)"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["ElseIf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ELSEIF directive"]
 ms.assetid: 20a685d6-836e-4e64-902e-4f3daf2e51c2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ELSEIF (MASM)
 

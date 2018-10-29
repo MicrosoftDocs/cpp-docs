@@ -1,13 +1,7 @@
 ---
-title: "operator Type^ | Microsoft Docs"
-ms.custom: ""
+title: "operator Type^"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: b24ffc83-0780-4f9a-8ee0-f5725db339d1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # operator Type^
 

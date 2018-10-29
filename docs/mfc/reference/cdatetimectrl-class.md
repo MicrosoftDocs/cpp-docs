@@ -1,16 +1,9 @@
 ---
-title: "CDateTimeCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CDateTimeCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDateTimeCtrl", "AFXDTCTL/CDateTimeCtrl", "AFXDTCTL/CDateTimeCtrl::CDateTimeCtrl", "AFXDTCTL/CDateTimeCtrl::CloseMonthCal", "AFXDTCTL/CDateTimeCtrl::Create", "AFXDTCTL/CDateTimeCtrl::GetDateTimePickerInfo", "AFXDTCTL/CDateTimeCtrl::GetIdealSize", "AFXDTCTL/CDateTimeCtrl::GetMonthCalColor", "AFXDTCTL/CDateTimeCtrl::GetMonthCalCtrl", "AFXDTCTL/CDateTimeCtrl::GetMonthCalFont", "AFXDTCTL/CDateTimeCtrl::GetMonthCalStyle", "AFXDTCTL/CDateTimeCtrl::GetRange", "AFXDTCTL/CDateTimeCtrl::GetTime", "AFXDTCTL/CDateTimeCtrl::SetFormat", "AFXDTCTL/CDateTimeCtrl::SetMonthCalColor", "AFXDTCTL/CDateTimeCtrl::SetMonthCalFont", "AFXDTCTL/CDateTimeCtrl::SetMonthCalStyle", "AFXDTCTL/CDateTimeCtrl::SetRange", "AFXDTCTL/CDateTimeCtrl::SetTime"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDateTimeCtrl [MFC], CDateTimeCtrl", "CDateTimeCtrl [MFC], CloseMonthCal", "CDateTimeCtrl [MFC], Create", "CDateTimeCtrl [MFC], GetDateTimePickerInfo", "CDateTimeCtrl [MFC], GetIdealSize", "CDateTimeCtrl [MFC], GetMonthCalColor", "CDateTimeCtrl [MFC], GetMonthCalCtrl", "CDateTimeCtrl [MFC], GetMonthCalFont", "CDateTimeCtrl [MFC], GetMonthCalStyle", "CDateTimeCtrl [MFC], GetRange", "CDateTimeCtrl [MFC], GetTime", "CDateTimeCtrl [MFC], SetFormat", "CDateTimeCtrl [MFC], SetMonthCalColor", "CDateTimeCtrl [MFC], SetMonthCalFont", "CDateTimeCtrl [MFC], SetMonthCalStyle", "CDateTimeCtrl [MFC], SetRange", "CDateTimeCtrl [MFC], SetTime"]
 ms.assetid: 7113993b-5d37-4148-939f-500a190c5bdc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDateTimeCtrl Class
 

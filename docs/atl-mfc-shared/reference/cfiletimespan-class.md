@@ -1,16 +1,9 @@
 ---
-title: "CFileTimeSpan Class | Microsoft Docs"
-ms.custom: ""
+title: "CFileTimeSpan Class"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CFileTimeSpan", "ATLTIME/ATL::CFileTimeSpan", "ATLTIME/ATL::CFileTimeSpan::CFileTimeSpan", "ATLTIME/ATL::CFileTimeSpan::GetTimeSpan", "ATLTIME/ATL::CFileTimeSpan::SetTimeSpan"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["shared classes, CFileTimeSpan", "CFileTimeSpan class"]
 ms.assetid: 5856fb39-9c82-4027-8ccf-8760890491ec
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CFileTimeSpan Class
 

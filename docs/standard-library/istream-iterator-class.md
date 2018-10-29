@@ -1,16 +1,9 @@
 ---
-title: "istream_iterator Class | Microsoft Docs"
-ms.custom: ""
+title: "istream_iterator Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["iterator/std::istream_iterator", "iterator/std::istream_iterator::char_type", "iterator/std::istream_iterator::istream_type", "iterator/std::istream_iterator::traits_type"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::istream_iterator [C++]", "std::istream_iterator [C++], char_type", "std::istream_iterator [C++], istream_type", "std::istream_iterator [C++], traits_type"]
 ms.assetid: fb52a8cd-7f71-48d1-b73e-4b064e2a8d16
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # istream_iterator Class
 

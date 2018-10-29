@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4445 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4445"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4445"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4445"]
 ms.assetid: 535e92a0-ba08-4dfc-89b2-af2dcdd7caeb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4445
 

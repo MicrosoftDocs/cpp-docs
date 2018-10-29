@@ -1,16 +1,9 @@
 ---
-title: "Using CObject | Microsoft Docs"
-ms.custom: ""
+title: "Using CObject"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CObject"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["examples [MFC], CObject", "root base class for MFC", "derived classes [MFC], from CObject", "MFC, base class", "CObject class [MFC]"]
 ms.assetid: d0cd19bb-2856-4b41-abbc-620fd64cb223
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using CObject
 

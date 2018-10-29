@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1107 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1107"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1107"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1107"]
 ms.assetid: 541a4d9f-10bc-4dd8-b68e-15e548f3dc0a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1107
 

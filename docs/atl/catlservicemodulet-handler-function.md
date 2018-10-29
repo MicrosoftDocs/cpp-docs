@@ -1,16 +1,9 @@
 ---
-title: "CAtlServiceModuleT::Handler Function | Microsoft Docs"
-ms.custom: ""
+title: "CAtlServiceModuleT::Handler Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
 f1_keywords: ["CServiceModule::Handler", "CServiceModule.Handler", "Handler"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Handler method"]
 ms.assetid: 14db5f2a-be87-4774-a296-445cb6fc7b2e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlServiceModuleT::Handler Function
 

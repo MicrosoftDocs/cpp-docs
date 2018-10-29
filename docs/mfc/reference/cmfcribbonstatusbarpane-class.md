@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonStatusBarPane Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonStatusBarPane Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonStatusBarPane", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::CMFCRibbonStatusBarPane", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::GetAlmostLargeText", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::GetTextAlign", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::IsAnimation", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::IsExtended", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::OnDrawBorder", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::OnFillBackground", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::SetAlmostLargeText", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::SetAnimationList", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::SetTextAlign", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::StartAnimation", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::StopAnimation", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::OnFinishAnimation"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonStatusBarPane [MFC], CMFCRibbonStatusBarPane", "CMFCRibbonStatusBarPane [MFC], GetAlmostLargeText", "CMFCRibbonStatusBarPane [MFC], GetTextAlign", "CMFCRibbonStatusBarPane [MFC], IsAnimation", "CMFCRibbonStatusBarPane [MFC], IsExtended", "CMFCRibbonStatusBarPane [MFC], OnDrawBorder", "CMFCRibbonStatusBarPane [MFC], OnFillBackground", "CMFCRibbonStatusBarPane [MFC], SetAlmostLargeText", "CMFCRibbonStatusBarPane [MFC], SetAnimationList", "CMFCRibbonStatusBarPane [MFC], SetTextAlign", "CMFCRibbonStatusBarPane [MFC], StartAnimation", "CMFCRibbonStatusBarPane [MFC], StopAnimation", "CMFCRibbonStatusBarPane [MFC], OnFinishAnimation"]
 ms.assetid: 5d034c3c-ecca-4267-b88c-0f55a2884dd0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonStatusBarPane Class
 

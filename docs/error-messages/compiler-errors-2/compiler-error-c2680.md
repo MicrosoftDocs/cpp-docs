@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2680 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2680"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2680"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2680"]
 ms.assetid: d6f7129e-dd17-4661-b680-18d6b925b1cc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2680
 

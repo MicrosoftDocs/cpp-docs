@@ -1,19 +1,12 @@
 ---
-title: "_open, _wopen | Microsoft Docs"
-ms.custom: ""
+title: "_open, _wopen"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_open", "_wopen"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_wopen", "_topen", "_open"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["opening files, for file I/O", "topen function", "_open function", "_topen function", "_wopen function", "files [C++], opening", "wopen function", "open function"]
 ms.assetid: 13f6a0c3-d1aa-450d-a7aa-74abc91b163e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _open, _wopen
 

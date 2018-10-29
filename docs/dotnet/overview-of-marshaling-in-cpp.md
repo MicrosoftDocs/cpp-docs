@@ -1,16 +1,10 @@
 ---
-title: "Overview of Marshaling in C++ | Microsoft Docs"
-ms.custom: ""
+title: "Overview of Marshaling in C++"
 ms.date: "06/28/2018"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["marshaling", "marshalling"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, marshaling", "C++ Support Library, marshaling", "marshaling, about marshaling"]
 ms.assetid: 997dd4bc-5f98-408f-b890-f35de9ce3bb8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Overview of Marshaling in C++
 

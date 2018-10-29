@@ -1,15 +1,8 @@
 ---
-title: "space_info Structure | Microsoft Docs"
-ms.custom: ""
+title: "space_info Structure"
 ms.date: "09/10/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["filesystem/std::tr2::sys::space_info"]
-dev_langs: ["C++"]
 ms.assetid: f2b35b42-06ff-45bd-8617-39a0f5358a54
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # space_info Structure
 

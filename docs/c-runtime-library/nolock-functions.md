@@ -1,15 +1,8 @@
 ---
-title: "_nolock Functions | Microsoft Docs"
-ms.custom: ""
+title: "_nolock Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["_nolock functions", "nolock functions"]
 ms.assetid: 7d651d87-38d2-4303-9897-fdb5f7a3e899
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _nolock Functions
 

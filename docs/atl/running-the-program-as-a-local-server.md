@@ -1,15 +1,8 @@
 ---
-title: "Running the Program as a Local Server | Microsoft Docs"
-ms.custom: ""
+title: "Running the Program as a Local Server"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["debugging [ATL], running services as local server", "ATL services, running as local servers"]
 ms.assetid: eb9701e6-e2a8-4666-897f-0c893aec8ac7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Running the Program as a Local Server
 

@@ -1,15 +1,8 @@
 ---
-title: "Overview of the Concurrency Runtime | Microsoft Docs"
-ms.custom: ""
+title: "Overview of the Concurrency Runtime"
 ms.date: "07/20/2018"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Concurrency Runtime, requirements", "Concurrency Runtime, architecture", "Concurrency Runtime, overview", "Concurrency Runtime, lambda expressions"]
 ms.assetid: 56237d96-10b0-494a-9cb4-f5c5090436c5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 
 # Overview of the Concurrency Runtime

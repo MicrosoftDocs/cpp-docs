@@ -1,14 +1,7 @@
 ---
-title: "Linker Properties (Linux C++) | Microsoft Docs"
-ms.custom: ""
+title: "Linker Properties (Linux C++)"
 ms.date: "9/26/2017"
-ms.technology: ["vs-ide-general"]
-ms.tgt_pltfrm: "Linux"
-ms.topic: "conceptual"
 ms.assetid: a0243a94-8164-425b-b2fe-b84ff363d546
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "linux"]
 ---
 # Linker Properties (Linux C++)
 

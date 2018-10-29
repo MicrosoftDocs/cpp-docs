@@ -1,15 +1,9 @@
 ---
-title: "/FILEALIGN (Align sections in files) | Microsoft Docs"
+title: "/FILEALIGN (Align sections in files)"
 ms.date: "10/23/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/filealign"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["linker align sections", "/FILEALIGN linker option", "-FILEALIGN linker option", "FILEALIGN linker option"]
 ms.assetid: c1017a35-8d71-4ad9-934b-a3e3ea037fa0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /FILEALIGN (Align sections in files)
 

@@ -1,16 +1,9 @@
 ---
-title: "CGopherLocator Class | Microsoft Docs"
-ms.custom: ""
+title: "CGopherLocator Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CGopherLocator", "AFXINET/CGopherLocator", "AFXINET/CGopherLocator::CGopherLocator", "AFXINET/CGopherLocator::GetLocatorType"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CGopherLocator [MFC], CGopherLocator", "CGopherLocator [MFC], GetLocatorType"]
 ms.assetid: 6fcc015f-5ae6-4959-b936-858634c71019
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CGopherLocator Class
 

@@ -1,16 +1,9 @@
 ---
-title: "_InterlockedCompareExchange128 | Microsoft Docs"
-ms.custom: ""
+title: "_InterlockedCompareExchange128"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_InterlockedCompareExchange128_cpp", "_InterlockedCompareExchange128"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cmpxchg16b instruction", "_InterlockedCompareExchange128 intrinsic"]
 ms.assetid: f05918fc-716a-4f6d-b746-1456d6b96c56
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _InterlockedCompareExchange128
 

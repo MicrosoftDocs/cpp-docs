@@ -1,15 +1,8 @@
 ---
-title: "Predefined Rules | Microsoft Docs"
-ms.custom: ""
+title: "Predefined Rules"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["rules, predefined", "NMAKE program, predefined rules", "predefined rules in NMAKE"]
 ms.assetid: 638cdc3f-4aba-4b4f-96e3-ad65b0364f12
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Predefined Rules
 

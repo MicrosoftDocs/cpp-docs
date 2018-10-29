@@ -1,16 +1,9 @@
 ---
-title: "C Run-Time Library Reference | Microsoft Docs"
-ms.custom: ""
+title: "C Run-Time Library Reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.runtime"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRT", "run-time libraries", "CRT, reference"]
 ms.assetid: a503e11c-8dca-4846-84fb-025a826c32b8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C Run-Time Library Reference
 

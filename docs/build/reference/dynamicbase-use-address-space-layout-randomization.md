@@ -1,16 +1,9 @@
 ---
-title: "-DYNAMICBASE (Use address space layout randomization) | Microsoft Docs"
-ms.custom: ""
+title: "/DYNAMICBASE (Use address space layout randomization)"
 ms.date: "06/12/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.RandomizedBaseAddress"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-DYNAMICBASE linker option", "/DYNAMICBASE linker option", "DYNAMICBASE linker option"]
 ms.assetid: 6c0ced8e-fe9c-4b63-b956-eb8a55fbceb2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /DYNAMICBASE (Use address space layout randomization)
 

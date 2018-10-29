@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4656 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4656"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4656"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4656"]
 ms.assetid: b5aaef74-2320-4345-a6ae-b813881a491c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4656
 

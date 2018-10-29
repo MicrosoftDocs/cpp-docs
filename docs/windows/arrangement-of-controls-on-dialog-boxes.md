@@ -1,15 +1,8 @@
 ---
 title: "Arrangement of Controls on Dialog Boxes (C++)| Microsoft Docs"
-ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["controls [C++], positioning", "dialog box controls [C++], placement", "Dialog Editor [C++], arranging controls"]
 ms.assetid: 832491cf-98af-42e5-a854-2cb135fd45c6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Arrangement of Controls on Dialog Box (C++)es
 

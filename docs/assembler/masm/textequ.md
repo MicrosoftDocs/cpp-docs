@@ -1,16 +1,9 @@
 ---
-title: "TEXTEQU | Microsoft Docs"
-ms.custom: ""
+title: "TEXTEQU"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["TEXTEQU"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TEXTEQU directive"]
 ms.assetid: 7c01df77-10d6-4555-8fe0-c5f7762df86d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # TEXTEQU
 

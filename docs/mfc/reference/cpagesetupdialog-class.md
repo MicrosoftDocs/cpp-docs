@@ -1,16 +1,9 @@
 ---
-title: "CPageSetupDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "CPageSetupDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CPageSetupDialog", "AFXDLGS/CPageSetupDialog", "AFXDLGS/CPageSetupDialog::CPageSetupDialog", "AFXDLGS/CPageSetupDialog::CreatePrinterDC", "AFXDLGS/CPageSetupDialog::DoModal", "AFXDLGS/CPageSetupDialog::GetDeviceName", "AFXDLGS/CPageSetupDialog::GetDevMode", "AFXDLGS/CPageSetupDialog::GetDriverName", "AFXDLGS/CPageSetupDialog::GetMargins", "AFXDLGS/CPageSetupDialog::GetPaperSize", "AFXDLGS/CPageSetupDialog::GetPortName", "AFXDLGS/CPageSetupDialog::OnDrawPage", "AFXDLGS/CPageSetupDialog::PreDrawPage", "AFXDLGS/CPageSetupDialog::m_psd"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CPageSetupDialog [MFC], CPageSetupDialog", "CPageSetupDialog [MFC], CreatePrinterDC", "CPageSetupDialog [MFC], DoModal", "CPageSetupDialog [MFC], GetDeviceName", "CPageSetupDialog [MFC], GetDevMode", "CPageSetupDialog [MFC], GetDriverName", "CPageSetupDialog [MFC], GetMargins", "CPageSetupDialog [MFC], GetPaperSize", "CPageSetupDialog [MFC], GetPortName", "CPageSetupDialog [MFC], OnDrawPage", "CPageSetupDialog [MFC], PreDrawPage", "CPageSetupDialog [MFC], m_psd"]
 ms.assetid: 049c0ac8-f254-4854-9414-7a8271d1447a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPageSetupDialog Class
 

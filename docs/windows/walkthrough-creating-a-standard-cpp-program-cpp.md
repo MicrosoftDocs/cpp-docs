@@ -1,16 +1,10 @@
 ---
-title: "Walkthrough: Creating a Standard C++ Program (C++) | Microsoft Docs"
+title: "Walkthrough: Creating a Standard C++ Program (C++)"
 ms.custom: "get-started-article"
 ms.date: "09/18/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vcfirstapp", "vccreatefirst"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["command-line applications [C++], standard", "standard applications [C++]"]
 ms.assetid: 48217e35-d892-46b7-93e3-f6f0b7e2da35
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Walkthrough: Creating a Standard C++ Program (C++)
 

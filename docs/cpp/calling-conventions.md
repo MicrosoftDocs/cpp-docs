@@ -1,15 +1,8 @@
 ---
-title: "Calling Conventions | Microsoft Docs"
-ms.custom: ""
+title: "Calling Conventions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["calling conventions"]
 ms.assetid: 11b1e45c-8fd1-420b-bca0-a19e294c1d85
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Calling Conventions
 

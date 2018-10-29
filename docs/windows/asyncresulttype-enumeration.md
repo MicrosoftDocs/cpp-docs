@@ -1,16 +1,10 @@
 ---
-title: "AsyncResultType Enumeration | Microsoft Docs"
-ms.custom: ""
+title: "AsyncResultType Enumeration"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncResultType"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["AsyncResultType enumeration"]
 ms.assetid: 4195d234-3f3f-4363-9118-6ad2a7551cf2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncResultType Enumeration
 

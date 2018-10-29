@@ -1,15 +1,9 @@
 ---
-title: "operator!= Operator (Microsoft::WRL) | Microsoft Docs"
-ms.custom: ""
+title: "operator!= Operator (Microsoft::WRL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::operator!="]
-dev_langs: ["C++"]
 ms.assetid: 785435da-87a6-4454-9bce-9d288a96dc26
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # operator!= Operator (Microsoft::WRL)
 

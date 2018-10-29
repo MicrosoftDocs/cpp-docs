@@ -1,15 +1,8 @@
 ---
-title: "_com_error Operators | Microsoft Docs"
-ms.custom: ""
+title: "_com_error Operators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["_com_error class [C++], operators"]
 ms.assetid: 0c4a1532-59b7-41ea-8aeb-1c486898db4d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_error Operators
 

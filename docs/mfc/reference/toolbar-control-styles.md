@@ -1,15 +1,8 @@
 ---
-title: "ToolBar Control Styles | Microsoft Docs"
-ms.custom: ""
+title: "ToolBar Control Styles"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ToolBar control styles [MFC]"]
 ms.assetid: 0f717eb9-fa32-4263-b852-809238863feb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ToolBar Control Styles
 

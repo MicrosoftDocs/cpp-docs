@@ -1,16 +1,9 @@
 ---
-title: "operator HIGH | Microsoft Docs"
-ms.custom: ""
+title: "operator HIGH"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["HIGH", "operator HIGH"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["operator HIGH", "HIGH operator"]
 ms.assetid: 1deea1af-5cba-4477-aab9-21891250cdfc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator HIGH
 

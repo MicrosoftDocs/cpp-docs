@@ -1,15 +1,8 @@
 ---
-title: "Effects of Buffering | Microsoft Docs"
-ms.custom: ""
+title: "Effects of Buffering"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["buffers, effects of buffering", "buffering, effects of"]
 ms.assetid: 5d544812-e95e-4f28-b15a-edef3f3414fd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Effects of Buffering
 

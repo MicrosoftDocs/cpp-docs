@@ -1,14 +1,7 @@
 ---
-title: "Visual C++ What&#39;s New 2003 through 2015 | Microsoft Docs"
-ms.custom: ""
+title: "Visual C++ What&#39;s New 2003 through 2015"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Visual C++ What&#39;s New 2003 through 2015
 

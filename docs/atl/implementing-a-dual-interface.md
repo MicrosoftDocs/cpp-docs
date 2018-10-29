@@ -1,15 +1,8 @@
 ---
-title: "Implementing a Dual Interface (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Implementing a Dual Interface (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["IDispatchImpl class, implementing dual interfaces", "dual interfaces, implementing"]
 ms.assetid: d1da3633-b445-4dcd-8a0a-3efdafada3ea
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Implementing a Dual Interface
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3202 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3202"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3202"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3202"]
 ms.assetid: 23528a0c-5493-4804-9789-cd3c38e49fb9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3202
 

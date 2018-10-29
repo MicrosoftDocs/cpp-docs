@@ -1,15 +1,8 @@
 ---
-title: "Special NMAKE Macros | Microsoft Docs"
-ms.custom: ""
+title: "Special NMAKE Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["special NMAKE macros", "macros, NMAKE", "NMAKE macros, special"]
 ms.assetid: d772e8ea-1e9f-4ad8-beec-663af76f2dd9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Special NMAKE Macros
 

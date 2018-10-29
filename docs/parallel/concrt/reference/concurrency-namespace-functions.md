@@ -1,14 +1,8 @@
 ---
-title: "concurrency namespace functions | Microsoft Docs"
-ms.custom: ""
+title: "concurrency namespace functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["concrt/concurrency::Alloc", "concrt/concurrency::DisableTracing", "concrt/concurrency::EnableTracing", "concrtrm/concurrency::GetExecutionContextId", "concrtrm/concurrency::GetOSVersion", "concrtrm/concurrency::GetProcessorNodeCount", "concrtrm/concurrency::GetSchedulerId", "agents/concurrency::asend", "ppltasks/concurrency::cancel_current_task", "ppltasks/concurrency::create_async", "ppltasks/concurrency::create_task", "concurrent_vector/concurrency::internal_assign_iterators", "ppl/concurrency::interruption_point", "agents/concurrency::make_choice", "agents/concurrency::make_greedy_join", "ppl/concurrency::make_task", "ppl/concurrency::parallel_buffered_sort", "ppl/concurrency::parallel_for_each", "ppl/concurrency::parallel_invoke", "ppl/concurrency::parallel_reduce", "ppl/concurrency::parallel_sort", "agents/concurrency::receive", "ppl/concurrency::run_with_cancellation_token", "pplconcrt/concurrency::set_ambient_scheduler", "concrt/concurrency::set_task_execution_resources", "ppltasks/concurrency::task_from_exception", "ppltasks/concurrency::task_from_result", "concrt/concurrency::wait", "ppltasks/concurrency::when_all", "ppltasks/concurrency::when_any"]
-dev_langs: ["C++"]
 ms.assetid: 520a6dff-9324-4df2-990d-302e3050af6a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # concurrency namespace functions
 

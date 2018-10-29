@@ -1,15 +1,8 @@
 ---
-title: "How to: Create a Message Map for a Template Class | Microsoft Docs"
-ms.custom: ""
+title: "How to: Create a Message Map for a Template Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["template classes [MFC], creating message maps", "message maps [MFC], template classes"]
 ms.assetid: 4e7e24f8-06df-4b46-82aa-7435c8650de3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Create a Message Map for a Template Class
 

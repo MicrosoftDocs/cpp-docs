@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK2028 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK2028"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK2028"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK2028"]
 ms.assetid: e2b03293-6066-464d-a050-ce747bcf7f0e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK2028
 

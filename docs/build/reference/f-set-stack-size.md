@@ -1,16 +1,9 @@
 ---
-title: "-F (Set Stack Size) | Microsoft Docs"
-ms.custom: ""
+title: "/F (Set Stack Size)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/f"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["set stack size compiler option", "F compiler option [C++]", "-F compiler option [C++]", "/F compiler option [C++]", "stack, setting size"]
 ms.assetid: 17320b6f-8305-445b-9ec2-75833f4b29e0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /F (Set Stack Size)
 

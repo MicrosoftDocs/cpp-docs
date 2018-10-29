@@ -1,16 +1,9 @@
 ---
-title: "sizeof Operator | Microsoft Docs"
-ms.custom: ""
+title: "sizeof Operator"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["sizeof_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["sizeof operator"]
 ms.assetid: 8bc3b6fb-54a1-4eb7-ada0-05f8c5efc532
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # sizeof Operator
 

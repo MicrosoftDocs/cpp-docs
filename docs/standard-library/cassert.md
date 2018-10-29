@@ -1,16 +1,9 @@
 ---
-title: "&lt;cassert&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;cassert&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<cassert>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cassert header"]
 ms.assetid: 6ead15a3-ac45-4075-be8e-350bca995c26
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;cassert&gt;
 

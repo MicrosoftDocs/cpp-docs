@@ -1,16 +1,9 @@
 ---
-title: "CElementTraits Class | Microsoft Docs"
-ms.custom: ""
+title: "CElementTraits Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CElementTraits", "atlcoll/ATL::CElementTraits"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CElementTraits class"]
 ms.assetid: 496528e5-7f80-4b45-be0c-6f646feb43c5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CElementTraits Class
 

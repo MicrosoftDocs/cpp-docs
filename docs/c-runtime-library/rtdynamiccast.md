@@ -1,19 +1,12 @@
 ---
-title: "__RTDynamicCast | Microsoft Docs"
-ms.custom: ""
+title: "__RTDynamicCast"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apiname: ["__RTDynamicCast"]
 apilocation: ["msvcr90.dll", "msvcr110.dll", "msvcr120.dll", "msvcrt.dll", "msvcr100.dll", "msvcr80.dll", "msvcr110_clr0400.dll"]
 apitype: "DLLExport"
 f1_keywords: ["__RTDynamicCast"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__RTDynamicCast"]
 ms.assetid: 56aa2d7a-aa47-46ef-830d-e37175611239
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __RTDynamicCast
 

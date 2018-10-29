@@ -1,14 +1,7 @@
 ---
-title: "3.2.2 omp_destroy_lock and omp_destroy_nest_lock Functions | Microsoft Docs"
-ms.custom: ""
+title: "3.2.2 omp_destroy_lock and omp_destroy_nest_lock Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: d334907d-94f7-4bbf-b20e-41d53484cbff
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 3.2.2 omp_destroy_lock and omp_destroy_nest_lock Functions
 

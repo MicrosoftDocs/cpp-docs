@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4130 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4130"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4130"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4130"]
 ms.assetid: 45e4c7b2-6b51-41c7-ba5e-941aa5c7d3dc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4130
 

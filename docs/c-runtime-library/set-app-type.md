@@ -1,17 +1,11 @@
 ---
-title: "_set_app_type | Microsoft Docs"
-ms.custom: ""
+title: "_set_app_type"
 ms.date: "11/04/2016"
-ms.topic: "conceptual"
 apiname: ["_set_app_type"]
 apilocation: ["api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_set_app_type", "corecrt_startup/_set_app_type"]
-dev_langs: ["C++"]
 ms.assetid: 1e7fe786-b587-4116-8c05-f7d762350100
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _set_app_type
 

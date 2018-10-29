@@ -1,15 +1,8 @@
 ---
-title: "Rules and Limitations for Using Naked Functions | Microsoft Docs"
-ms.custom: ""
+title: "Rules and Limitations for Using Naked Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["naked functions"]
 ms.assetid: fdcb82b9-8ae1-489c-a248-1b477220df0a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Rules and Limitations for Using Naked Functions
 

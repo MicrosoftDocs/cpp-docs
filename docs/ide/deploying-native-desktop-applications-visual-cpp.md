@@ -1,15 +1,8 @@
 ---
-title: "Deploying Native Desktop Applications (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "Deploying Native Desktop Applications (Visual C++)"
 ms.date: "05/11/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["deploying applications [C++]", "application deployment [C++]", "Visual C++, application deployment", "application deployment [C++], about application deployment", "deploying applications [C++], about deploying applications", "distributing applications [C++]"]
 ms.assetid: 37f1691e-d67c-41e4-926e-528a237a9bac
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Deploying Native Desktop Applications (Visual C++)
 

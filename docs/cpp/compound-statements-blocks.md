@@ -1,16 +1,9 @@
 ---
-title: "Compound Statements (Blocks) | Microsoft Docs"
-ms.custom: ""
+title: "Compound Statements (Blocks)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["}", "{"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["blocks, about blocks", "compound statements"]
 ms.assetid: 23855939-7430-498e-8936-0c70055ea701
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Compound Statements (Blocks)
 

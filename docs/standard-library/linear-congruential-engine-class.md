@@ -1,16 +1,9 @@
 ---
-title: "linear_congruential_engine Class | Microsoft Docs"
-ms.custom: ""
+title: "linear_congruential_engine Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["random/std::linear_congruential_engine"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["linear_congruential_engine class"]
 ms.assetid: 30e00ca6-1933-4701-9561-54f3e810a5a1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # linear_congruential_engine Class
 

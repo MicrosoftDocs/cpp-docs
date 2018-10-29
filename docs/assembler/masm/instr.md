@@ -1,16 +1,9 @@
 ---
-title: "INSTR | Microsoft Docs"
-ms.custom: ""
+title: "INSTR"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["InStr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["INSTR directive"]
 ms.assetid: fc37f6a2-3c95-47b2-b6bb-1066edd25994
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # INSTR
 

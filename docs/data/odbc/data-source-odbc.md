@@ -1,15 +1,8 @@
 ---
-title: "Data Source (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Data Source (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC data sources, configuring", "CDatabase class, data source connections", "ODBC data sources", "configuring ODBC data sources", "ODBC data sources, represented by CDatabase"]
 ms.assetid: b246721f-b9e1-49bd-a6c7-f348b8c3d537
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Source (ODBC)
 

@@ -1,16 +1,9 @@
 ---
-title: "region, endregion | Microsoft Docs"
-ms.custom: ""
+title: "region, endregion"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["vc-pragma.endregion", "endregion_CPP", "region_CPP", "vc-pragma.region"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, region", "pragmas, endregion", "endregion pragma", "region pragma"]
 ms.assetid: c697f807-622f-4796-851b-68a42bbecd84
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # region, endregion
 

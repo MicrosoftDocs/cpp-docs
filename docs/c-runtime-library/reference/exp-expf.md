@@ -1,19 +1,12 @@
 ---
-title: "exp, expf, expl | Microsoft Docs"
-ms.custom: ""
+title: "exp, expf, expl"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["expf", "expl", "exp"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_expl", "expf", "expl", "exp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["exponential calculations", "expf function", "expl function", "calculating exponentials", "exp function"]
 ms.assetid: 7070016d-1143-407e-9e9a-6b059bb88867
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # exp, expf, expl
 

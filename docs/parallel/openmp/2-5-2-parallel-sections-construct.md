@@ -1,14 +1,7 @@
 ---
-title: "2.5.2 parallel sections Construct | Microsoft Docs"
-ms.custom: ""
+title: "2.5.2 parallel sections Construct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 94220e27-14f8-465c-bd8d-eb960b4b5dee
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.5.2 parallel sections Construct
 

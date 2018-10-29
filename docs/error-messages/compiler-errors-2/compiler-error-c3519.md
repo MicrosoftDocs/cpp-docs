@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3519 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3519"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3519"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3519"]
 ms.assetid: ca24b2bc-7e90-4448-ae84-3fedddf9bca7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3519
 

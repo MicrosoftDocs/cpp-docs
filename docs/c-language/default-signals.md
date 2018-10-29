@@ -1,15 +1,8 @@
 ---
-title: "Default Signals | Microsoft Docs"
-ms.custom: ""
+title: "Default Signals"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["default signals", "defaults, signals"]
 ms.assetid: db9fc17b-75c0-4d33-86be-c536584bbede
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Default Signals
 

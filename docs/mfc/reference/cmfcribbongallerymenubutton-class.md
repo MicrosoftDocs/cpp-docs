@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonGalleryMenuButton Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonGalleryMenuButton Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonGalleryMenuButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CopyFrom", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CreatePopupMenu", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::GetPalette", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::HasButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonGalleryMenuButton [MFC], CMFCRibbonGalleryMenuButton", "CMFCRibbonGalleryMenuButton [MFC], CopyFrom", "CMFCRibbonGalleryMenuButton [MFC], CreatePopupMenu", "CMFCRibbonGalleryMenuButton [MFC], GetPalette", "CMFCRibbonGalleryMenuButton [MFC], HasButton", "CMFCRibbonGalleryMenuButton [MFC], IsEmptyMenuAllowed"]
 ms.assetid: 4d459d9b-8b1a-4371-92f6-dc4ce6cc42c8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonGalleryMenuButton Class
 

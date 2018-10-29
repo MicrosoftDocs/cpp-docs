@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2885 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2885"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2885"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2885"]
 ms.assetid: 7743e5f3-a034-44b4-9ee8-5a6254c27f8c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2885
 

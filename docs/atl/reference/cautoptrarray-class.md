@@ -1,16 +1,9 @@
 ---
-title: "CAutoPtrArray Class | Microsoft Docs"
-ms.custom: ""
+title: "CAutoPtrArray Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAutoPtrArray", "ATLCOLL/ATL::CAutoPtrArray", "ATLCOLL/ATL::CAutoPtrArray::CAutoPtrArray"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAutoPtrArray class"]
 ms.assetid: 880a70da-8c81-4427-8ac6-49aa8d424244
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAutoPtrArray Class
 

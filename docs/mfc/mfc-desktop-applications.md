@@ -1,16 +1,9 @@
 ---
-title: "MFC Desktop Applications | Microsoft Docs"
-ms.custom: ""
+title: "MFC Desktop Applications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["MFC", "mfc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["libraries, MFC", "class libraries, MFC", "MFC, about MFC"]
 ms.assetid: 7101cb18-a681-495c-8f2b-069ad20c72f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Desktop Applications
 

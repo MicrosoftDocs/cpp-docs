@@ -1,15 +1,8 @@
 ---
-title: "Implementing a C++ Standard Library-Based Collection | Microsoft Docs"
-ms.custom: ""
+title: "Implementing a C++ Standard Library-Based Collection"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ICollectionOnSTLImpl interface"]
 ms.assetid: 6d49f819-1957-4813-b074-3f12c494d8ca
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Implementing a C++ Standard Library-Based Collection
 

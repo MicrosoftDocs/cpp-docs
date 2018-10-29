@@ -1,15 +1,8 @@
 ---
-title: "Steps in a Typical HTTP Client Application | Microsoft Docs"
-ms.custom: ""
+title: "Steps in a Typical HTTP Client Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["HTTP client applications [MFC]", "client applications [MFC], HTTP", "Internet applications [MFC], HTTP client applications", "applications [MFC], HTTP client", "Internet client applications [MFC], HTTP table", "WinInet classes [MFC], HTTP"]
 ms.assetid: f86552e8-8acd-4b23-bdc5-0c3a247ebd74
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Steps in a Typical HTTP Client Application
 

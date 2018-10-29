@@ -1,15 +1,8 @@
 ---
-title: "#import Attributes (C++) | Microsoft Docs"
-ms.custom: ""
+title: "#import Attributes (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["#import directive, attributes"]
 ms.assetid: 2a5085e3-82ee-4f83-892b-0aa6cc13863b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # #import Attributes (C++)
 Provides links to attributes used with the `#import` directive.

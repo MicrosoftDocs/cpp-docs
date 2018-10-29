@@ -1,15 +1,8 @@
 ---
-title: "Deleting Unassigned Symbols | Microsoft Docs"
-ms.custom: ""
+title: "Deleting Unassigned Symbols"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["symbols [C++], deleting", "symbols [C++], unassigned", "unassigned symbols"]
 ms.assetid: 47641c46-1bad-44fb-8f85-79ae36919f13
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Deleting Unassigned Symbols
 

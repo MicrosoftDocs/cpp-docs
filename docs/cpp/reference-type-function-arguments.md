@@ -1,15 +1,8 @@
 ---
-title: "Reference-Type Function Arguments | Microsoft Docs"
-ms.custom: ""
+title: "Reference-Type Function Arguments"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["arguments [C++], function", "functions [C++], paramters", "function parameters [C++], reference-type", "function arguments [C++], reference-type", "passing parameters [C++], reference-type arguments"]
 ms.assetid: 0a70e831-9e76-46c0-821d-aeba13d73cc0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Reference-Type Function Arguments
 

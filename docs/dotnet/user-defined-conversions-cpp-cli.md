@@ -1,15 +1,8 @@
 ---
-title: "User-Defined Conversions (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "User-Defined Conversions (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["user-defined conversions [C++]"]
 ms.assetid: 8010fd59-2775-4e9a-a6ed-58055032d66f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # User-Defined Conversions (C++/CLI)
 

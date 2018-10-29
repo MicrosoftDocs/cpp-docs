@@ -1,15 +1,8 @@
 ---
-title: "CMFCDynamicLayout Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCDynamicLayout Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCDynamicLayout", "AFXLAYOUT/CMFCDynamicLayout", "AFXLAYOUT/CMFCDynamicLayout::AddItem", "AFXLAYOUT/CMFCDynamicLayout::Adjust", "AFXLAYOUT/CMFCDynamicLayout::Create", "AFXLAYOUT/CMFCDynamicLayout::GetHostWnd", "AFXLAYOUT/CMFCDynamicLayout::GetMinSize", "AFXLAYOUT/CMFCDynamicLayout::GetWindowRect", "AFXLAYOUT/CMFCDynamicLayout::HasItem", "AFXLAYOUT/CMFCDynamicLayout::IsEmpty", "AFXLAYOUT/CMFCDynamicLayout::LoadResource", "AFXLAYOUT/CMFCDynamicLayout::SetMinSize"]
-dev_langs: ["C++"]
 ms.assetid: c2df2976-f049-47fc-9cf0-abe3e01948bc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCDynamicLayout Class
 

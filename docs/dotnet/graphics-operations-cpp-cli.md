@@ -1,19 +1,8 @@
 ---
-title: "Graphics Operations (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "Graphics Operations (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["GDI+ [C++]", ".NET Framework [C++], graphics", "images [C++], .NET Framework and", "GDI+ [C++], about graphics operations", "graphics [C++], .NET Framework and",
-    "GDI+ [C++], displaying images", "graphics [C++], displaying images",
-    "GDI+, drawing shapes", "drawing, shapes", "shapes", "shapes, drawing",
-    "GDI+ [C++], rotating images", "graphics [C++], rotating images",
-    "GDI+ [C++], converting image file formats", "graphics [C++], converting image file formats"]
 ms.assetid: bba27228-b9b3-4c9c-b31c-a04b76702a95
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Graphics Operations (C++/CLI)
 

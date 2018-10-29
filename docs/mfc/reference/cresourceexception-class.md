@@ -1,16 +1,9 @@
 ---
-title: "CResourceException Class | Microsoft Docs"
-ms.custom: ""
+title: "CResourceException Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CResourceException", "AFXWIN/CResourceException", "AFXWIN/CResourceException::CResourceException"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CResourceException [MFC], CResourceException"]
 ms.assetid: af6ae043-d124-4bfd-b35e-7bb0db67d289
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CResourceException Class
 

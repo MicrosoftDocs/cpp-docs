@@ -1,13 +1,7 @@
 ---
-title: "Events (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Events (C++/CX)"
 ms.date: "01/22/2017"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: 31c8e08a-00ad-40f9-8f7e-124864aaad58
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Events (C++/CX)
 

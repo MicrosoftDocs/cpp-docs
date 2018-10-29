@@ -1,15 +1,8 @@
 ---
-title: "Fundamentals of ATL COM Objects | Microsoft Docs"
-ms.custom: ""
+title: "Fundamentals of ATL COM Objects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["COM, and ATL", "ATL, COM", "ATL COM objects", "COM objects, ATL"]
 ms.assetid: 0f9c9d98-cc28-45da-89ac-dc94cee422fe
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Fundamentals of ATL COM Objects
 

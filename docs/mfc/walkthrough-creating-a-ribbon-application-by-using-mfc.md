@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Creating a Ribbon Application By Using MFC | Microsoft Docs"
-ms.custom: ""
+title: "Walkthrough: Creating a Ribbon Application By Using MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ribbon application, creating (MFC)", "creating a ribbon aplication (MFC)"]
 ms.assetid: e61393e2-1d6b-4594-a7ce-157d3d1b0d9f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Creating a Ribbon Application By Using MFC
 

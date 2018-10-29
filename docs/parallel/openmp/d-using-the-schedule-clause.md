@@ -1,14 +1,7 @@
 ---
-title: "D. Using the schedule Clause | Microsoft Docs"
-ms.custom: ""
+title: "D. Using the schedule Clause"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: bf3d8f51-ea05-4803-bf55-657c12e91efe
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # D. Using the schedule Clause
 

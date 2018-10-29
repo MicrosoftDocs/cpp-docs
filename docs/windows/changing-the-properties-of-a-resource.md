@@ -1,15 +1,8 @@
 ---
-title: "Changing the Properties of a Resource (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Changing the Properties of a Resource (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["properties [C++], resources", "resources [C++], properties"]
 ms.assetid: c4373b36-2651-4954-afa6-3f66300673d4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Changing the Properties of a Resource (C++)
 

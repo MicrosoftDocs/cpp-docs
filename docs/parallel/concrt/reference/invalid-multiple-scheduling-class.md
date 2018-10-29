@@ -1,16 +1,9 @@
 ---
-title: "invalid_multiple_scheduling Class | Microsoft Docs"
-ms.custom: ""
+title: "invalid_multiple_scheduling Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["invalid_multiple_scheduling", "CONCRT/concurrency::invalid_multiple_scheduling", "CONCRT/concurrency::invalid_multiple_scheduling::invalid_multiple_scheduling"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["invalid_multiple_scheduling class"]
 ms.assetid: e9a47cb7-a778-4df7-92b0-3752119fd4c7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # invalid_multiple_scheduling Class
 

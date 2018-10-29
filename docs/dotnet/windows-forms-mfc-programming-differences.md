@@ -1,15 +1,8 @@
 ---
-title: "Windows Forms-MFC Programming Differences | Microsoft Docs"
-ms.custom: ""
+title: "Windows Forms-MFC Programming Differences"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC [C++], Windows Forms support", "Windows Forms [C++], compared to MFC"]
 ms.assetid: f3bfcf45-cfd4-45a4-8cde-5f4dbb18ee51
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Windows Forms/MFC Programming Differences
 

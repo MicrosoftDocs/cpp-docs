@@ -1,16 +1,9 @@
 ---
-title: "CAutoRevertImpersonation Class | Microsoft Docs"
-ms.custom: ""
+title: "CAutoRevertImpersonation Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAutoRevertImpersonation", "ATLSECURITY/ATL::CAutoRevertImpersonation", "ATLSECURITY/ATL::CAutoRevertImpersonation::CAutoRevertImpersonation", "ATLSECURITY/ATL::CAutoRevertImpersonation::Attach", "ATLSECURITY/ATL::CAutoRevertImpersonation::Detach", "ATLSECURITY/ATL::CAutoRevertImpersonation::GetAccessToken"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAutoRevertImpersonation class"]
 ms.assetid: 43732849-1940-4bd4-9d52-7a5698bb8838
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAutoRevertImpersonation Class
 

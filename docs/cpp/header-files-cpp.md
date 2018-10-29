@@ -1,17 +1,7 @@
 ---
-title: "Header files (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Header files (C++)"
 ms.date: "04/20/2018"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["header files [C++]"]
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Header files (C++)
 

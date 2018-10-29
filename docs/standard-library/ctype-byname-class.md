@@ -1,16 +1,9 @@
 ---
-title: "ctype_byname Class | Microsoft Docs"
-ms.custom: ""
+title: "ctype_byname Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xlocale/std::ctype_byname"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ctype_byname class"]
 ms.assetid: a5cec021-a1f8-425f-8757-08e6f064b604
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ctype_byname Class
 

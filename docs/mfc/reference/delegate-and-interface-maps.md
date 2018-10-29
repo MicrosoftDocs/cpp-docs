@@ -1,15 +1,8 @@
 ---
-title: "Delegate and Interface Map Macros (MFC) | Microsoft Docs"
-ms.custom: ""
+title: "Delegate and Interface Map Macros (MFC)"
 ms.date: "03/30/2017"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["delegate map macros [MFC]", "event map macros [MFC]", "interface map macros [MFC]"]
 ms.assetid: 3840e642-ff7d-4bdc-998b-c7d8fc50890e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 
 |||

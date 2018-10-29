@@ -1,13 +1,7 @@
 ---
-title: "Obtaining pointers to data buffers (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Obtaining pointers to data buffers (C++/CX)"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: db4f9370-dd95-4896-b5b8-4b202284f579
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Obtaining pointers to data buffers (C++/CX)
 

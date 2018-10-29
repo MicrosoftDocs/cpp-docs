@@ -1,16 +1,9 @@
 ---
-title: "-O Options (Optimize Code) | Microsoft Docs"
-ms.custom: ""
+title: "/O Options (Optimize Code)"
 ms.date: "09/25/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.Optimization", "/o", "VC.Project.VCCLWCECompilerTool.Optimization"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["performance, cle.exe compiler", "cl.exe compiler, performance"]
 ms.assetid: 77997af9-5555-4b3d-aa57-6615b27d4d5d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /O Options (Optimize Code)
 

@@ -1,15 +1,8 @@
 ---
-title: "tiled_extent Class | Microsoft Docs"
-ms.custom: ""
+title: "tiled_extent Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["tiled_extent", "AMP/tiled_extent", "AMP/Concurrency::tiled_extent::tiled_extent", "AMP/Concurrency::tiled_extent::get_tile_extent", "AMP/Concurrency::tiled_extent::pad", "AMP/Concurrency::tiled_extent::truncate", "AMP/Concurrency::tiled_extent::tile_dim0", "AMP/Concurrency::tiled_extent::tile_dim1", "AMP/Concurrency::tiled_extent::tile_dim2", "AMP/Concurrency::tiled_extent::tile_extent"]
-dev_langs: ["C++"]
 ms.assetid: 671ecaf8-c7b0-4ac8-bbdc-e30bd92da7c0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # tiled_extent Class
 

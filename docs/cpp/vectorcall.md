@@ -1,16 +1,9 @@
 ---
-title: "__vectorcall | Microsoft Docs"
-ms.custom: ""
+title: "__vectorcall"
 ms.date: "10/10/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__vectorcall_cpp", "__vectorcall", "_vectorcall"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__vectorcall keyword", "__vectorcall"]
 ms.assetid: 1c95ed59-86c6-4857-b4ed-10519193f851
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __vectorcall
 

@@ -1,15 +1,8 @@
 ---
-title: "Aligning Groups of Controls | Microsoft Docs"
-ms.custom: ""
+title: "Aligning Groups of Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["controls [C++], aligning"]
 ms.assetid: a4f49a73-4a17-44b3-8568-aa35f646b5cf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Aligning Groups of Controls
 

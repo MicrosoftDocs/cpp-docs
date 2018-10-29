@@ -1,15 +1,8 @@
 ---
-title: "Subtraction (-) | Microsoft Docs"
-ms.custom: ""
+title: "Subtraction (-)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C], subtraction", "subtraction operator, syntax"]
 ms.assetid: 9cacba7d-20b3-4372-8a63-ba5d8ee64177
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Subtraction (-)
 

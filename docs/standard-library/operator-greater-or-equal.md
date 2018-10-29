@@ -1,16 +1,9 @@
 ---
-title: "operator&gt;= | Microsoft Docs"
-ms.custom: ""
+title: "operator&gt;="
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["operator>=", "std::>=", "std.operator>=", ">=", "std.>=", "std::operator>="]
-dev_langs: ["C++"]
 helpviewer_keywords: [">= operator, comparing specific objects", "operator >=", "operator>="]
 ms.assetid: 14fbebf5-8b75-4afa-a51b-3112d31c07cf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator&gt;=
 

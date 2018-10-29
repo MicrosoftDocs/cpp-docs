@@ -1,14 +1,7 @@
 ---
-title: "-GUARD (Enable Guard Checks) | Microsoft Docs"
-ms.custom: ""
+title: "/GUARD (Enable Guard Checks)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 72758e23-70ac-4616-94d7-d767477406d1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /GUARD (Enable Guard Checks)
 

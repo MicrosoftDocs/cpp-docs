@@ -1,16 +1,9 @@
 ---
-title: "Project Build Error PRJ0027 | Microsoft Docs"
-ms.custom: ""
+title: "Project Build Error PRJ0027"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["PRJ0027"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PRJ0027"]
 ms.assetid: 85d73a78-4b9e-4553-9f5d-2d76c48a790a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Project Build Error PRJ0027
 

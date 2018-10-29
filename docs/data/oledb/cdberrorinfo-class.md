@@ -1,16 +1,9 @@
 ---
-title: "CDBErrorInfo Class | Microsoft Docs"
-ms.custom: ""
+title: "CDBErrorInfo Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["CDBErrorInfo", "ATL::CDBErrorInfo", "ATL.CDBErrorInfo", "ATL.CDBErrorInfo.GetAllErrorInfo", "CDBErrorInfo::GetAllErrorInfo", "ATL::CDBErrorInfo::GetAllErrorInfo", "GetAllErrorInfo", "CDBErrorInfo.GetAllErrorInfo", "CDBErrorInfo::GetBasicErrorInfo", "ATL.CDBErrorInfo.GetBasicErrorInfo", "CDBErrorInfo.GetBasicErrorInfo", "ATL::CDBErrorInfo::GetBasicErrorInfo", "GetBasicErrorInfo", "CDBErrorInfo::GetCustomErrorObject", "ATL.CDBErrorInfo.GetCustomErrorObject", "CDBErrorInfo.GetCustomErrorObject", "ATL::CDBErrorInfo::GetCustomErrorObject", "GetCustomErrorObject", "GetErrorInfo", "ATL.CDBErrorInfo.GetErrorInfo", "CDBErrorInfo.GetErrorInfo", "ATL::CDBErrorInfo::GetErrorInfo", "CDBErrorInfo::GetErrorInfo", "ATL.CDBErrorInfo.GetErrorParameters", "CDBErrorInfo::GetErrorParameters", "ATL::CDBErrorInfo::GetErrorParameters", "CDBErrorInfo.GetErrorParameters", "GetErrorParameters", "CDBErrorInfo.GetErrorRecords", "ATL.CDBErrorInfo.GetErrorRecords", "ATL::CDBErrorInfo::GetErrorRecords", "GetErrorRecords", "CDBErrorInfo::GetErrorRecords"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDBErrorInfo class", "GetAllErrorInfo method", "GetBasicErrorInfo method", "GetCustomErrorObject method", "GetErrorInfo method", "GetErrorParameters method", "GetErrorRecords method"]
 ms.assetid: 9a5c18a2-ee3e-40f5-ab4c-581288d7f737
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBErrorInfo Class
 

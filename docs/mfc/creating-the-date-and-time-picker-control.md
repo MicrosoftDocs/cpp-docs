@@ -1,15 +1,8 @@
 ---
-title: "Creating the Date and Time Picker Control | Microsoft Docs"
-ms.custom: ""
+title: "Creating the Date and Time Picker Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["DateTimePicker control [MFC], creating", "CDateTimeCtrl class [MFC], creating"]
 ms.assetid: 764ec2fb-98cd-478b-a5f2-d63f0bb12279
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating the Date and Time Picker Control
 

@@ -1,15 +1,8 @@
 ---
-title: "Automation Servers | Microsoft Docs"
-ms.custom: ""
+title: "Automation Servers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Automation servers", "COM components, Automation servers", "dispatch maps [MFC], Automation servers", "servers, Automation"]
 ms.assetid: 523fd155-51ce-4f91-b986-b74bdbdd7d92
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Automation Servers
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4944 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4944"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4944"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4944"]
 ms.assetid: e2905eb1-2e3b-4fab-a48b-c0cae0fd997f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4944
 

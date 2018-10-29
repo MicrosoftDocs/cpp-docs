@@ -1,15 +1,8 @@
 ---
-title: "Building C++ Projects in Visual Studio | Microsoft Docs"
-ms.custom: ""
+title: "Building C++ Projects in Visual Studio"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++ projects, building", "projects [C++], building", "builds [C++], about building in Visual Studio"]
 ms.assetid: 9e8bc1a2-bb17-4951-937a-c757ed88d2d1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Building C++ Projects in Visual Studio
 

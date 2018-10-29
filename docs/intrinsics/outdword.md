@@ -1,16 +1,9 @@
 ---
-title: "__outdword | Microsoft Docs"
-ms.custom: ""
+title: "__outdword"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__outdword"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["out instruction", "outdword instruction", "__outdword intrinsic"]
 ms.assetid: ed1e4994-a84b-4759-8bf9-cd48fb073f4d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __outdword
 

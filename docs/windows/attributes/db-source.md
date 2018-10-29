@@ -1,16 +1,9 @@
 ---
-title: "db_source (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "db_source (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.db_source"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["db_source attribute"]
 ms.assetid: 0ec8bbf7-ade2-4899-bf4c-8608b92779bc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # db_source
 

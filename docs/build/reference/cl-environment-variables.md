@@ -1,16 +1,9 @@
 ---
-title: "CL Environment Variables | Microsoft Docs"
-ms.custom: ""
+title: "CL Environment Variables"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["cl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["INCLUDE environment variable", "cl.exe compiler, environment variables", "LIBPATH environment variable", "environment variables, CL compiler"]
 ms.assetid: 2606585b-a681-42ee-986e-1c9a2da32108
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # CL Environment Variables
 

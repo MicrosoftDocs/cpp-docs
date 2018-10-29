@@ -1,14 +1,7 @@
 ---
-title: "Universal CRT deployment | Microsoft Docs"
-ms.custom: ""
+title: "Universal CRT deployment"
 ms.date: "05/11/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["deploying the CRT [C++]", "application CRT deployment [C++]"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Universal CRT deployment
 

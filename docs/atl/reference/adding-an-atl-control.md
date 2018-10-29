@@ -1,15 +1,8 @@
 ---
-title: "Adding an ATL Control | Microsoft Docs"
-ms.custom: ""
+title: "Adding an ATL Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, adding controls", "controls [ATL], adding to projects"]
 ms.assetid: 10223e7e-fdb7-4163-80c6-44aeafa8e6ce
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding an ATL Control
 

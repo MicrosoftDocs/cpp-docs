@@ -1,16 +1,9 @@
 ---
-title: "MFC Application Architecture Classes | Microsoft Docs"
-ms.custom: ""
+title: "MFC Application Architecture Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.mfc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, classes", "MFC, application development", "classes [MFC], MFC", "application architecture classes [MFC]"]
 ms.assetid: 71b2de54-b44d-407e-9c71-9baf954e18d9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Application Architecture Classes
 

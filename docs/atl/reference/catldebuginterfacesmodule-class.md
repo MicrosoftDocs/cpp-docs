@@ -1,16 +1,9 @@
 ---
-title: "CAtlDebugInterfacesModule Class | Microsoft Docs"
-ms.custom: ""
+title: "CAtlDebugInterfacesModule Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAtlDebugInterfacesModule", "atlbase/ATL::CAtlDebugInterfacesModule"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_ATL_DEBUG_QI macro", "CAtlDebugInterfacesModule class"]
 ms.assetid: a193b567-8191-4115-a963-a10805972bac
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlDebugInterfacesModule Class
 

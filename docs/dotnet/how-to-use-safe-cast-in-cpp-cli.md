@@ -1,15 +1,8 @@
 ---
-title: "How to: Use safe_cast in C++/CLI | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use safe_cast in C++/CLI"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["safe_cast keyword [C++], upcasting"]
 ms.assetid: 0fbc87d8-ecdf-4cd5-81f4-0d8cc18e2aff
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Use safe_cast in C++/CLI
 

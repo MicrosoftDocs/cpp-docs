@@ -1,16 +1,9 @@
 ---
-title: "priority_queue Class | Microsoft Docs"
-ms.custom: ""
+title: "priority_queue Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["queue/std::priority_queue::container_type", "queue/std::priority_queue::size_type", "queue/std::priority_queue::value_type", "queue/std::priority_queue::empty", "queue/std::priority_queue::pop", "queue/std::priority_queue::push", "queue/std::priority_queue::size", "queue/std::priority_queue::top"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::priority_queue [C++], container_type", "std::priority_queue [C++], size_type", "std::priority_queue [C++], value_type", "std::priority_queue [C++], empty", "std::priority_queue [C++], pop", "std::priority_queue [C++], push", "std::priority_queue [C++], size", "std::priority_queue [C++], top"]
 ms.assetid: 69fca9cc-a449-4be4-97b7-02ca5db9cbb2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # priority_queue Class
 

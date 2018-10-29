@@ -1,16 +1,9 @@
 ---
-title: "COleDataObject Class | Microsoft Docs"
-ms.custom: ""
+title: "COleDataObject Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleDataObject", "AFXOLE/COleDataObject", "AFXOLE/COleDataObject::COleDataObject", "AFXOLE/COleDataObject::Attach", "AFXOLE/COleDataObject::AttachClipboard", "AFXOLE/COleDataObject::BeginEnumFormats", "AFXOLE/COleDataObject::Detach", "AFXOLE/COleDataObject::GetData", "AFXOLE/COleDataObject::GetFileData", "AFXOLE/COleDataObject::GetGlobalData", "AFXOLE/COleDataObject::GetNextFormat", "AFXOLE/COleDataObject::IsDataAvailable", "AFXOLE/COleDataObject::Release"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleDataObject [MFC], COleDataObject", "COleDataObject [MFC], Attach", "COleDataObject [MFC], AttachClipboard", "COleDataObject [MFC], BeginEnumFormats", "COleDataObject [MFC], Detach", "COleDataObject [MFC], GetData", "COleDataObject [MFC], GetFileData", "COleDataObject [MFC], GetGlobalData", "COleDataObject [MFC], GetNextFormat", "COleDataObject [MFC], IsDataAvailable", "COleDataObject [MFC], Release"]
 ms.assetid: d1cc84be-2e1c-4bb3-a8a0-565eb08aaa34
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleDataObject Class
 

@@ -1,15 +1,8 @@
 ---
-title: "Using Manual Accessors | Microsoft Docs"
-ms.custom: ""
+title: "Using Manual Accessors"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["command handling, OLE DB Templates", "manual accessors", "accessors [C++], manual"]
 ms.assetid: 29f00a89-0240-482b-8413-4120b9644672
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using Manual Accessors
 

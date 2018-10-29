@@ -1,16 +1,9 @@
 ---
-title: "COleCmdUI Class | Microsoft Docs"
-ms.custom: ""
+title: "COleCmdUI Class"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleCmdUI", "AFXDOCOBJ/COleCmdUI", "AFXDOCOBJ/COleCmdUI::COleCmdUI", "AFXDOCOBJ/COleCmdUI::Enable", "AFXDOCOBJ/COleCmdUI::SetCheck", "AFXDOCOBJ/COleCmdUI::SetText"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleCmdUI [MFC], COleCmdUI", "COleCmdUI [MFC], Enable", "COleCmdUI [MFC], SetCheck", "COleCmdUI [MFC], SetText"]
 ms.assetid: a2d5ce08-6657-45d3-8673-2a9f32d50eec
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleCmdUI Class
 

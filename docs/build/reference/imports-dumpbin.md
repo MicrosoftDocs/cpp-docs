@@ -1,16 +1,9 @@
 ---
-title: "-IMPORTS (DUMPBIN) | Microsoft Docs"
-ms.custom: ""
+title: "/IMPORTS (DUMPBIN)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/imports"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IMPORTS dumpbin option", "/IMPORTS dumpbin option", "-IMPORTS dumpbin option"]
 ms.assetid: 6a296216-2b1b-40f8-8736-cd4553a22456
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /IMPORTS (DUMPBIN)
 

@@ -1,16 +1,9 @@
 ---
-title: "IOpenRowsetImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IOpenRowsetImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["IOpenRowsetImpl", "IOpenRowsetImpl.CreateRowset", "IOpenRowsetImpl::CreateRowset", "CreateRowset", "OpenRowset", "IOpenRowsetImpl::OpenRowset", "IOpenRowsetImpl.OpenRowset"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IOpenRowsetImpl class", "CreateRowset method", "OpenRowset method"]
 ms.assetid: d259cedc-1db4-41cf-bc9f-5030907ab486
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IOpenRowsetImpl Class
 

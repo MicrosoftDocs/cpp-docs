@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3394 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3394"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3394"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3394"]
 ms.assetid: 4e025d79-27ba-43c8-b0d9-839ecef98126
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3394
 

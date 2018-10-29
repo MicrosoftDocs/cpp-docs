@@ -1,15 +1,8 @@
 ---
-title: "Scheduler Policies | Microsoft Docs"
-ms.custom: ""
+title: "Scheduler Policies"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["scheduler policies"]
 ms.assetid: 58fb68bd-4a57-40a8-807b-6edb6f083cd9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Scheduler Policies
 

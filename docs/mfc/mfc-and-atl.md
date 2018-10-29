@@ -1,14 +1,7 @@
 ---
-title: "MFC and ATL | Microsoft Docs"
-ms.custom: ""
+title: "MFC and ATL"
 ms.date: "01/24/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 31b1a3a8-4154-4c4a-af10-fafc23ecdc5c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC and ATL
 

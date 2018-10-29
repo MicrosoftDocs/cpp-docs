@@ -1,19 +1,12 @@
 ---
-title: "_spawnlp, _wspawnlp | Microsoft Docs"
-ms.custom: ""
+title: "_spawnlp, _wspawnlp"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wspawnlp", "_spawnlp"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_wspawnlp", "wspawnlp", "_spawnlp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wspawnlp function", "_spawnlp function", "processes, creating", "processes, executing new", "_wspawnlp function", "process creation", "spawnlp function"]
 ms.assetid: 74fc6e7a-4f24-4103-9387-7177875875e6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _spawnlp, _wspawnlp
 

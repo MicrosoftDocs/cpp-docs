@@ -1,15 +1,8 @@
 ---
-title: "Derived Window Classes | Microsoft Docs"
-ms.custom: ""
+title: "Derived Window Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["window class hierarchy", "hierarchies, window classes", "classes [MFC], derived", "CWnd class [MFC], classes derived from", "derived classes [MFC], window classes", "window classes [MFC], derived"]
 ms.assetid: 6f7e437e-fbde-4a06-bfab-72d9dbf05292
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Derived Window Classes
 

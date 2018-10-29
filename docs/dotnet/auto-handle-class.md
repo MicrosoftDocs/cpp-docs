@@ -1,16 +1,10 @@
 ---
-title: "auto_handle Class | Microsoft Docs"
-ms.custom: ""
+title: "auto_handle Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["auto_handle, msclr::auto_handle", "msclr.auto_handle"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["auto_handle class"]
 ms.assetid: a65604d1-ecbb-44fd-ae2f-696ddeeed9d6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_handle Class
 

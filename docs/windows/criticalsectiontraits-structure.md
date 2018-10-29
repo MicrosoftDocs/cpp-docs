@@ -1,16 +1,10 @@
 ---
-title: "CriticalSectionTraits Structure | Microsoft Docs"
-ms.custom: ""
+title: "CriticalSectionTraits Structure"
 ms.date: "09/26/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits", "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits::GetInvalidValue", "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits::Unlock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits structure", "Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits::GetInvalidValue method", "Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits::Unlock method"]
 ms.assetid: c515a1b5-4eb0-40bc-9035-c4d9352c9de7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # CriticalSectionTraits Structure
 

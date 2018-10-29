@@ -1,16 +1,9 @@
 ---
-title: "is_floating_point Class | Microsoft Docs"
-ms.custom: ""
+title: "is_floating_point Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_floating_point"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_floating_point class", "is_floating_point"]
 ms.assetid: 070679c1-115b-4ee4-8ab7-f52e5d9e157f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_floating_point Class
 

@@ -1,16 +1,9 @@
 ---
-title: "Precompiled Header Files | Microsoft Docs"
-ms.custom: ""
+title: "Precompiled Header Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["stdafx.h"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["stdafx.h", "PCH files, file descriptions", ".pch files, file descriptions", "precompiled header files, file descriptions", "stdafx.cpp"]
 ms.assetid: 8228d87a-5609-41f3-9697-b16094c000e5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Precompiled Header Files
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4820 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4820"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4820"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4820"]
 ms.assetid: 17aa29f4-c287-49b8-bc43-8ed82ffed5ea
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4820
 

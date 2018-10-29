@@ -1,15 +1,8 @@
 ---
-title: "Non-MFC DLLs: Overview | Microsoft Docs"
-ms.custom: ""
+title: "Non-MFC DLLs: Overview"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["non-MFC DLLs [C++]", "DLLs [C++], non-MFC"]
 ms.assetid: 1ed5d1ee-e20c-47d7-801d-87ea26a73842
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Non-MFC DLLs: Overview
 

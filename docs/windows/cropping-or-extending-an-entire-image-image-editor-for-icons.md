@@ -1,15 +1,8 @@
 ---
-title: "Cropping or Extending an Entire Image (Image Editor for Icons) | Microsoft Docs"
-ms.custom: ""
+title: "Cropping or Extending an Entire Image (Image Editor for Icons)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["images [C++], cropping", "images [C++], extending", "Image editor [C++], cropping or extending images"]
 ms.assetid: 21cdaff5-6636-4ad9-a2f0-ca2228321927
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Cropping or Extending an Entire Image (Image Editor for Icons)
 

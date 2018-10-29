@@ -1,12 +1,10 @@
 ---
-title: "What's New for Visual C++ in Visual Studio | Microsoft Docs"
+title: "What's New for Visual C++ in Visual Studio"
 ms.date: "11/15/2017"
 ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: "mikeblome"
 ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # What's New for Visual C++ in Visual Studio 2017
 

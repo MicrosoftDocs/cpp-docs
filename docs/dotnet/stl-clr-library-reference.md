@@ -1,15 +1,9 @@
 ---
-title: "STL/CLR Library Reference | Microsoft Docs"
-ms.custom: ""
+title: "STL/CLR Library Reference"
 ms.date: 09/18/2018"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["STL/CLR Library", "STL/CLR, redistribution", "cliext directory"]
 ms.assetid: a9d9ca00-7bf2-48c1-b205-3ae6f8c25f82
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # STL/CLR Library Reference
 

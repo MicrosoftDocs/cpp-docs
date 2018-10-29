@@ -1,15 +1,8 @@
 ---
-title: "Headers and Footers | Microsoft Docs"
-ms.custom: ""
+title: "Headers and Footers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["printing [MFC], multipage documents", "page headers [MFC], printing", "headers [MFC], printing", "footers [MFC], printing", "page footers [MFC], printing", "page headers [MFC]", "printing [MFC], headers and footers", "page footers [MFC]"]
 ms.assetid: b0be9c53-5773-4955-a777-3c15da745128
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Headers and Footers
 

@@ -1,15 +1,8 @@
 ---
-title: "-WINMD (Generate Windows Metadata) | Microsoft Docs"
-ms.custom: ""
+title: "/WINMD (Generate Windows Metadata)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateWindowsMetadata"]
-dev_langs: ["C++"]
 ms.assetid: bcfb4901-411e-4c9e-9f78-23028b6e5fcc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /WINMD (Generate Windows Metadata)
 

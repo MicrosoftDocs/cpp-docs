@@ -1,16 +1,9 @@
 ---
-title: "/Zc:sizedDealloc (Enable Global Sized Deallocation Functions) | Microsoft Docs"
-ms.custom: ""
+title: "/Zc:sizedDealloc (Enable Global Sized Deallocation Functions)"
 ms.date: "03/06/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["sizedDealloc", "/Zc:sizedDealloc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "sizedDealloc", "Enable Global Sized Deallocation Functions", "/Zc compiler options (C++)", "Zc compiler options (C++)"]
 ms.assetid: 3a73ace0-4d36-420a-b699-0ca6fc0dd134
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:sizedDealloc (Enable Global Sized Deallocation Functions)
 

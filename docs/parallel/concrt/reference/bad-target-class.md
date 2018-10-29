@@ -1,16 +1,9 @@
 ---
-title: "bad_target Class | Microsoft Docs"
-ms.custom: ""
+title: "bad_target Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["bad_target", "CONCRT/concurrency::bad_target", "CONCRT/concurrency::bad_target::bad_target"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["bad_target class"]
 ms.assetid: e6dcddbf-9217-4fac-ac7f-7b8b4781d2f5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # bad_target Class
 

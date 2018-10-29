@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3812 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3812"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3812"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3812"]
 ms.assetid: 326ac706-9a5f-4851-b9d2-b90c64c75532
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3812
 

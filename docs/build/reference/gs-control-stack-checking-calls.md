@@ -1,16 +1,9 @@
 ---
-title: "-Gs (Control Stack Checking Calls) | Microsoft Docs"
-ms.custom: ""
+title: "/Gs (Control Stack Checking Calls)"
 ms.date: "10/25/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/GS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["disabling stack probes", "GS compiler option [C++]", "/GS compiler option [C++]", "stack, stack probes", "stack probes", "-GS compiler option [C++]", "stack checking calls"]
 ms.assetid: 40daed7c-f942-4085-b872-01e12b37729e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Gs (Control Stack Checking Calls)
 

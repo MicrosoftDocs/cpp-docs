@@ -1,16 +1,9 @@
 ---
-title: "COleDocObjectItem Class | Microsoft Docs"
-ms.custom: ""
+title: "COleDocObjectItem Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleDocObjectItem", "AFXOLE/COleDocObjectItem", "AFXOLE/COleDocObjectItem::COleDocObjectItem", "AFXOLE/COleDocObjectItem::DoDefaultPrinting", "AFXOLE/COleDocObjectItem::ExecCommand", "AFXOLE/COleDocObjectItem::GetActiveView", "AFXOLE/COleDocObjectItem::GetPageCount", "AFXOLE/COleDocObjectItem::OnPreparePrinting", "AFXOLE/COleDocObjectItem::OnPrint", "AFXOLE/COleDocObjectItem::QueryCommand", "AFXOLE/COleDocObjectItem::Release"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleDocObjectItem [MFC], COleDocObjectItem", "COleDocObjectItem [MFC], DoDefaultPrinting", "COleDocObjectItem [MFC], ExecCommand", "COleDocObjectItem [MFC], GetActiveView", "COleDocObjectItem [MFC], GetPageCount", "COleDocObjectItem [MFC], OnPreparePrinting", "COleDocObjectItem [MFC], OnPrint", "COleDocObjectItem [MFC], QueryCommand", "COleDocObjectItem [MFC], Release"]
 ms.assetid: d150d306-8fd3-4831-b06d-afbe71d8fc9b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleDocObjectItem Class
 

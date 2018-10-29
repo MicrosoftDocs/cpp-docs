@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4651 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4651"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4651"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4651"]
 ms.assetid: f1ea82aa-4dc1-4972-b55a-57fdb962f0dd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4651
 

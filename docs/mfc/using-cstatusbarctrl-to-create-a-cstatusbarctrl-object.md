@@ -1,16 +1,9 @@
 ---
-title: "Using CStatusBarCtrl to Create a CStatusBarCtrl Object | Microsoft Docs"
-ms.custom: ""
+title: "Using CStatusBarCtrl to Create a CStatusBarCtrl Object"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CStatusBarCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["status bar controls [MFC], creating", "CStatusBarCtrl class [MFC], creating"]
 ms.assetid: 365c2b65-12de-49e6-9a2e-416c6ee10d60
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using CStatusBarCtrl to Create a CStatusBarCtrl Object
 

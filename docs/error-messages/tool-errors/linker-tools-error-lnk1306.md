@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1306 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1306"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1306"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1306"]
 ms.assetid: fad1df6a-0bd9-412f-b0d1-7c9bc749c584
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1306
 

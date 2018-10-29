@@ -1,14 +1,7 @@
 ---
-title: "ATL Utilities Reference | Microsoft Docs"
-ms.custom: ""
+title: "ATL Utilities Reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: dd8a2888-34f4-461e-9bf4-834218f9b95b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Utilities Reference
 

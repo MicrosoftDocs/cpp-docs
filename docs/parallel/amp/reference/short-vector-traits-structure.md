@@ -1,15 +1,8 @@
 ---
-title: "short_vector_traits Structure | Microsoft Docs"
-ms.custom: ""
+title: "short_vector_traits Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["short_vector_traits", "AMP_SHORT_VECTORS/short_vector_traits", "AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::short_vector_traits", "AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::size Constant"]
-dev_langs: ["C++"]
 ms.assetid: cd9492da-9e02-4a6e-9d50-b61252cdb460
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # short_vector_traits Structure
 

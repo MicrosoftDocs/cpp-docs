@@ -1,16 +1,9 @@
 ---
-title: "ISupportErrorInfoImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "ISupportErrorInfoImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["ISupportErrorInfoImpl", "ATLCOM/ATL::ISupportErrorInfoImpl", "ATLCOM/ATL::ISupportErrorInfoImpl::InterfaceSupportsErrorInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ISupportErrorInfo ATL implementation", "ISupportErrorInfoImpl class", "error information, ATL"]
 ms.assetid: e33a4b11-a123-41cf-bcea-7b19743902af
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ISupportErrorInfoImpl Class
 

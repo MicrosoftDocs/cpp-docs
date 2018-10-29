@@ -1,16 +1,9 @@
 ---
-title: "add_lvalue_reference Class | Microsoft Docs"
-ms.custom: ""
+title: "add_lvalue_reference Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::add_lvalue_reference"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["add_lvalue_reference"]
 ms.assetid: 9933afc2-ad0d-465d-98fe-7d547fa3efe2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # add_lvalue_reference Class
 

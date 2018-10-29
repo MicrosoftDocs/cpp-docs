@@ -1,15 +1,8 @@
 ---
-title: "Recordset: Creating and Closing Recordsets (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: Creating and Closing Recordsets (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC recordsets, creating", "recordsets, creating", "recordsets, opening", "recordsets, closing", "ODBC recordsets, closing", "ODBC recordsets, opening"]
 ms.assetid: 8d2aac23-4396-4ce2-8c60-5ecf1b360d3d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Creating and Closing Recordsets (ODBC)
 

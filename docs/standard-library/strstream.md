@@ -1,16 +1,9 @@
 ---
-title: "&lt;strstream&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;strstream&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<strstream>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["strstream header"]
 ms.assetid: eaa9d0d4-d217-4f28-8a68-9b9ad7b1c0f5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;strstream&gt;
 

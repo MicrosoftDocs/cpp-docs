@@ -1,16 +1,9 @@
 ---
-title: "DLLs and Visual C++ run-time library behavior | Microsoft Docs"
-ms.custom: ""
+title: "DLLs and Visual C++ run-time library behavior"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
 f1_keywords: ["_DllMainCRTStartup", "CRT_INIT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DLLs [C++], entry point function", "process detach [C++]", "process attach [C++]", "DLLs [C++], run-time library behavior", "DllMain function", "_CRT_INIT macro", "_DllMainCRTStartup method", "run-time [C++], DLL startup sequence", "DLLs [C++], startup sequence"]
 ms.assetid: e06f24ab-6ca5-44ef-9857-aed0c6f049f2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # DLLs and Visual C++ run-time library behavior
 

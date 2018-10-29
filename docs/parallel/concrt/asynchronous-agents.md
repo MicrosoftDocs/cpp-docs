@@ -1,15 +1,8 @@
 ---
-title: "Asynchronous Agents | Microsoft Docs"
-ms.custom: ""
+title: "Asynchronous Agents"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["asynchronous agents", "agents [Concurrency Runtime]"]
 ms.assetid: 6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Asynchronous Agents
 

@@ -1,16 +1,10 @@
 ---
-title: "Platform::Delegate Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Delegate Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Delegate"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Delegate Class"]
 ms.assetid: 82b21271-768f-4193-9ca2-be68ddfd546e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Delegate Class
 

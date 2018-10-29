@@ -1,16 +1,9 @@
 ---
-title: "Resource Editors (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Resource Editors (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vs.editors.resource", "vc.resvw.resource.editors", "vs.resvw.resource.editors"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["editors [C++], resource", "editors [C++]", "resource editors", "Windows [C++], application resource editing"]
 ms.assetid: e20a29ec-d6fb-4ead-98f3-431a0e23aaaf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Resource Editors
 

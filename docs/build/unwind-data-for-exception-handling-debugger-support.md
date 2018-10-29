@@ -1,14 +1,7 @@
 ---
-title: "Unwind Data for Exception Handling, Debugger Support | Microsoft Docs"
-ms.custom: ""
+title: "Unwind Data for Exception Handling, Debugger Support"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 68f1e30d-9038-41af-a48f-02129bfe8928
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Unwind Data for Exception Handling, Debugger Support
 

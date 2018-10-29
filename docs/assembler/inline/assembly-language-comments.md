@@ -1,15 +1,8 @@
 ---
-title: "Assembly-Language Comments | Microsoft Docs"
-ms.custom: ""
+title: "Assembly-Language Comments"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["assembly language [C++], comments", "comments [C++], assembly language", "macros [C++], assembly language", "__asm keyword [C++], instructions"]
 ms.assetid: 0dc10850-77f5-426e-9dab-185ea28e06e4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Assembly-Language Comments
 

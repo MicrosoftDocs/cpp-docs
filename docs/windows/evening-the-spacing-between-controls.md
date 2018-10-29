@@ -1,15 +1,8 @@
 ---
-title: "Evening the Spacing Between Controls | Microsoft Docs"
-ms.custom: ""
+title: "Evening the Spacing Between Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["controls [C++], positioning", "controls [C++], aligning", "Space Evenly command"]
 ms.assetid: 97e80fb8-1db5-4e88-8ada-63540b5f2dab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Evening the Spacing Between Controls
 

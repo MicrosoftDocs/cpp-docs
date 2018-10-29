@@ -1,15 +1,8 @@
 ---
-title: "Identifiers (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Identifiers (C++)"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["decorated names", "decorated names, about decorated names", "identifiers, C++", "white space, in C++ identifiers", "identifiers [C++]"]
 ms.assetid: 03a0dfb1-4530-4cdf-8295-5ea4dca4c1b8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Identifiers (C++)
 

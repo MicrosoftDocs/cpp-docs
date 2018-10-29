@@ -1,14 +1,7 @@
 ---
-title: "3.1.2 omp_get_num_threads Function | Microsoft Docs"
-ms.custom: ""
+title: "3.1.2 omp_get_num_threads Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: bcdd76e2-d96b-4884-ac8f-e55fc0c42801
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 3.1.2 omp_get_num_threads Function
 

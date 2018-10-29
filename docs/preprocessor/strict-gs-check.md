@@ -1,16 +1,9 @@
 ---
-title: "strict_gs_check | Microsoft Docs"
-ms.custom: ""
+title: "strict_gs_check"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["strict_gs_check", "strict_gs_check_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["strict_gs_check pragma"]
 ms.assetid: decfec81-c916-42e0-a07f-8cc26df6a7ce
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # strict_gs_check
 

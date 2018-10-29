@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2531 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2531"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2531"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2531"]
 ms.assetid: c49afe15-55f8-4dc8-ac01-bf653622a7db
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2531
 

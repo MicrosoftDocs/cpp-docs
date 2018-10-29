@@ -1,16 +1,9 @@
 ---
-title: "random_device Class | Microsoft Docs"
-ms.custom: ""
+title: "random_device Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["random/std::random_device", "random/std::random_device::min", "random/std::random_device::max", "random/std::random_device::entropy", "random/std::random_device::operator()"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::random_device [C++]", "std::random_device [C++], min", "std::random_device [C++], max", "std::random_device [C++], entropy", "std::random_device [C++], entropy"]
 ms.assetid: 4393d515-0cb6-4e0d-a2ba-c780f05dc1bf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # random_device Class
 

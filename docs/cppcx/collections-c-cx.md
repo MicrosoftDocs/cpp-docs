@@ -1,13 +1,7 @@
 ---
-title: "Collections (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Collections (C++/CX)"
 ms.date: "01/22/2017"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: 914da30b-aac5-4cd7-9da3-a5ac08cdd72c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Collections (C++/CX)
 

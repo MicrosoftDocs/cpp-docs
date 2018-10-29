@@ -1,16 +1,9 @@
 ---
-title: "COleVariant Class | Microsoft Docs"
-ms.custom: ""
+title: "COleVariant Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleVariant", "AFXDISP/COleVariant", "AFXDISP/COleVariant::COleVariant", "AFXDISP/COleVariant::Attach", "AFXDISP/COleVariant::ChangeType", "AFXDISP/COleVariant::Clear", "AFXDISP/COleVariant::Detach", "AFXDISP/COleVariant::GetByteArrayFromVariantArray", "AFXDISP/COleVariant::SetString"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleVariant [MFC], COleVariant", "COleVariant [MFC], Attach", "COleVariant [MFC], ChangeType", "COleVariant [MFC], Clear", "COleVariant [MFC], Detach", "COleVariant [MFC], GetByteArrayFromVariantArray", "COleVariant [MFC], SetString"]
 ms.assetid: e1b5cd4a-b066-4b9b-b48b-6215ed52d998
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleVariant Class
 

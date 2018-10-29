@@ -1,16 +1,9 @@
 ---
-title: "Using IDispEventSimpleImpl (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Using IDispEventSimpleImpl (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
 f1_keywords: ["IDispEventSimpleImpl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IDispEventSimpleImpl class, using"]
 ms.assetid: 8640ad1a-4bd0-40a5-b5e4-7322685d7aab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using IDispEventSimpleImpl
 

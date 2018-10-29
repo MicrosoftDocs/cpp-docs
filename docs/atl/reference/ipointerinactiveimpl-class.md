@@ -1,16 +1,9 @@
 ---
-title: "IPointerInactiveImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IPointerInactiveImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IPointerInactiveImpl", "ATLCTL/ATL::IPointerInactiveImpl", "ATLCTL/ATL::IPointerInactiveImpl::GetActivationPolicy", "ATLCTL/ATL::IPointerInactiveImpl::OnInactiveMouseMove", "ATLCTL/ATL::IPointerInactiveImpl::OnInactiveSetCursor"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IPointerInactive ATL implementation", "inactive objects", "IPointerInactiveImpl class"]
 ms.assetid: e1fe9ea6-d38a-4527-9112-eb344771e0b7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IPointerInactiveImpl Class
 

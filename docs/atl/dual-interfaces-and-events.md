@@ -1,15 +1,8 @@
 ---
-title: "Dual Interfaces and Events | Microsoft Docs"
-ms.custom: ""
+title: "Dual Interfaces and Events"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["events [C++], dual interfaces", "dual interfaces, events"]
 ms.assetid: bb382f7c-e885-4274-bf07-83f3602615d2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dual Interfaces and Events
 

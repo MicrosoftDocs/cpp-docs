@@ -1,16 +1,9 @@
 ---
-title: "CMetaFileDC Class | Microsoft Docs"
-ms.custom: ""
+title: "CMetaFileDC Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMetaFileDC", "AFXEXT/CMetaFileDC", "AFXEXT/CMetaFileDC::CMetaFileDC", "AFXEXT/CMetaFileDC::Close", "AFXEXT/CMetaFileDC::CloseEnhanced", "AFXEXT/CMetaFileDC::Create", "AFXEXT/CMetaFileDC::CreateEnhanced"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMetaFileDC [MFC], CMetaFileDC", "CMetaFileDC [MFC], Close", "CMetaFileDC [MFC], CloseEnhanced", "CMetaFileDC [MFC], Create", "CMetaFileDC [MFC], CreateEnhanced"]
 ms.assetid: ffce60fa-4181-4d46-9832-25e46fad4db4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMetaFileDC Class
 

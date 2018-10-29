@@ -1,16 +1,9 @@
 ---
-title: "CDaoIndexInfo Structure | Microsoft Docs"
-ms.custom: ""
+title: "CDaoIndexInfo Structure"
 ms.date: "06/25/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDaoIndexInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DAO (Data Access Objects), Indexes collection", "CDaoIndexInfo structure [MFC]"]
 ms.assetid: 251d8285-78ce-4716-a0b3-ccc3395fc437
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDaoIndexInfo Structure
 

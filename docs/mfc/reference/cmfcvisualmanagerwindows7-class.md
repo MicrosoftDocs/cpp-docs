@@ -1,16 +1,9 @@
 ---
-title: "CMFCVisualManagerWindows7 Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCVisualManagerWindows7 Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCVisualManagerWindows7", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::CMFCVisualManagerWindows7", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::GetRibbonEditBackgroundColor", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::OnFillMenuImageRect"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCVisualManagerWindows7 Class [MFC]"]
 ms.assetid: e8d87df1-0c09-4b58-8ade-4e911f796e42
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCVisualManagerWindows7 Class
 

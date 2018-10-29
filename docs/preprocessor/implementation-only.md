@@ -1,16 +1,9 @@
 ---
-title: "implementation_only | Microsoft Docs"
-ms.custom: ""
+title: "implementation_only"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["implementation_only"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["implementation_only attribute"]
 ms.assetid: d8cabc86-4425-45a0-9587-d57536980088
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # implementation_only
 **C++ Specific**

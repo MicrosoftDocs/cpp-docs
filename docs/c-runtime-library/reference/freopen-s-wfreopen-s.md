@@ -1,19 +1,12 @@
 ---
-title: "freopen_s, _wfreopen_s | Microsoft Docs"
-ms.custom: ""
+title: "freopen_s, _wfreopen_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wfreopen_s", "freopen_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["freopen_s", "_tfreopen_s", "_wfreopen_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_tfreopen_s function", "_wfreopen_s function", "file pointers [C++], reassigning", "tfreopen_s function", "wfreopen_s function", "freopen_s function"]
 ms.assetid: ad25a4da-6ad4-476b-a86d-660b221ca84d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # freopen_s, _wfreopen_s
 

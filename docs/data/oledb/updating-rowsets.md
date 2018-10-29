@@ -1,15 +1,8 @@
 ---
-title: "Updating Rowsets | Microsoft Docs"
-ms.custom: ""
+title: "Updating Rowsets"
 ms.date: "10/19/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["rowsets, updating data", "updating data, rowsets", "updating rowsets", "rowsets"]
 ms.assetid: 39588758-5c72-4254-a10d-cc2b1f473357
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Updating Rowsets
 

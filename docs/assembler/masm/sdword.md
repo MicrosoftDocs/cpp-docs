@@ -1,16 +1,9 @@
 ---
-title: "SDWORD | Microsoft Docs"
-ms.custom: ""
+title: "SDWORD"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["SDWORD"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SDWORD directive"]
 ms.assetid: 12663144-2426-4b4e-aabd-dbe0b04321d0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # SDWORD
 

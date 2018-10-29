@@ -1,16 +1,9 @@
 ---
-title: "CMemoryState Structure | Microsoft Docs"
-ms.custom: ""
+title: "CMemoryState Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMemoryState"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMemoryState structure [MFC]", "memory leaks [MFC], detecting", "detecting memory leaks [MFC]"]
 ms.assetid: 229d9de7-a6f3-4cc6-805b-5a9d9b1bfe1d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMemoryState Structure
 

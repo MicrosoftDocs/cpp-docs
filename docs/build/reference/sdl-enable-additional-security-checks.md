@@ -1,15 +1,8 @@
 ---
-title: "-sdl (Enable Additional Security Checks) | Microsoft Docs"
-ms.custom: ""
+title: "/sdl (Enable Additional Security Checks)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.SDLCheck"]
-dev_langs: ["C++"]
 ms.assetid: 3dcf86a0-3169-4240-9f29-e04a9f535826
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /sdl (Enable Additional Security Checks)
 

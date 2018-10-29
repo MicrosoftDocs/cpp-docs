@@ -1,16 +1,9 @@
 ---
-title: "Active Document Classes | Microsoft Docs"
-ms.custom: ""
+title: "Active Document Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.document"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Active document classes [MFC]"]
 ms.assetid: cc20af37-b658-406d-8148-7670737f4c03
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Active Document Classes
 

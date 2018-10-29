@@ -1,16 +1,9 @@
 ---
-title: "-HIGHENTROPYVA | Microsoft Docs"
-ms.custom: ""
+title: "/HIGHENTROPYVA"
 ms.date: "06/12/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/HIGHENTROPYVA"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["HIGHENTROPYVA editbin option", "-HIGHENTROPYVA editbin option", "/HIGHENTROPYVA editbin option"]
 ms.assetid: ef4b7c63-440d-40ca-b39d-edefb3217505
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /HIGHENTROPYVA
 

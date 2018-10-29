@@ -1,16 +1,9 @@
 ---
-title: "CComSafeDeleteCriticalSection Class | Microsoft Docs"
-ms.custom: ""
+title: "CComSafeDeleteCriticalSection Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComSafeDeleteCriticalSection", "ATLCORE/ATL::CComSafeDeleteCriticalSection", "ATLCORE/ATL::CComSafeDeleteCriticalSection::CComSafeDeleteCriticalSection", "ATLCORE/ATL::CComSafeDeleteCriticalSection::Init", "ATLCORE/ATL::CComSafeDeleteCriticalSection::Lock", "ATLCORE/ATL::CComSafeDeleteCriticalSection::Term", "ATLCORE/ATL::m_bInitialized"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComSafeDeleteCriticalSection class"]
 ms.assetid: 4d2932c4-ba8f-48ec-8664-1db8bed01314
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComSafeDeleteCriticalSection Class
 

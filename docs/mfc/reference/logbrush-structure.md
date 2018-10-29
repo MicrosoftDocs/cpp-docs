@@ -1,16 +1,9 @@
 ---
-title: "LOGBRUSH Structure | Microsoft Docs"
-ms.custom: ""
+title: "LOGBRUSH Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["LOGBRUSH"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LOGBRUSH structure [MFC]"]
 ms.assetid: 1bf96768-52c5-4444-9bb8-d41ba2e27e68
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # LOGBRUSH Structure
 

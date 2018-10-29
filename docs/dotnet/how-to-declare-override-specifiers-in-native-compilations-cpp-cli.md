@@ -1,15 +1,8 @@
 ---
-title: "How to: Declare Override Specifiers (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "How to: Declare Override Specifiers (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["override specifiers in native compilation, overriding"]
 ms.assetid: d0551836-9ac7-41eb-a6e9-a4b3ef60767d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Declare Override Specifiers in Native Compilations (C++/CLI)
 

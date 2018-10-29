@@ -1,14 +1,7 @@
 ---
-title: "Profile-Guided Optimization Errors and Warnings | Microsoft Docs"
-ms.custom: ""
+title: "Profile-Guided Optimization Errors and Warnings"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
-dev_langs: ["C++"]
 ms.assetid: f67b1011-fb64-4df3-9356-d52c9423ff3f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Profile-Guided Optimization Errors and Warnings
 

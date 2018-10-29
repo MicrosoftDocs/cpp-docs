@@ -1,15 +1,8 @@
 ---
-title: "ODBC Basics | Microsoft Docs"
-ms.custom: ""
+title: "ODBC Basics"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC cursor library [ODBC], ODBC components", "ODBC components", "ODBC components, required components", "ODBC, about ODBC", "ODBC, components"]
 ms.assetid: ec529702-0fb2-4754-b8de-d1efa8eca18f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC Basics
 

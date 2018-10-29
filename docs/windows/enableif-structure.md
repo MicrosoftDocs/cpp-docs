@@ -1,16 +1,10 @@
 ---
-title: "EnableIf Structure | Microsoft Docs"
-ms.custom: ""
+title: "EnableIf Structure"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal/Microsoft::WRL::Details::EnableIf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["EnableIf structure"]
 ms.assetid: 7825b283-e6b2-4f39-a4b9-c03bcd431b8e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # EnableIf Structure
 

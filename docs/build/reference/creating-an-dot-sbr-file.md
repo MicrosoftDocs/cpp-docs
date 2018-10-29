@@ -1,15 +1,8 @@
 ---
-title: "Creating an .Sbr File | Microsoft Docs"
-ms.custom: ""
+title: "Creating an .Sbr File"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["SBR files", "BSCMAKE, input files", ".sbr files", "source browser files", "local symbols in browse information", "symbols"]
 ms.assetid: bdb4b93c-a88a-441a-84fd-01087d03be25
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Creating an .Sbr File
 

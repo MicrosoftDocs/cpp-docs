@@ -1,14 +1,7 @@
 ---
-title: "Configure Visual C++ for ARM processors | Microsoft Docs"
-ms.custom: ""
+title: "Configure Visual C++ for ARM processors"
 ms.date: "07/11/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 3d95f221-656a-480d-9651-9ad263895747
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Configure Visual C++ for ARM processors
 

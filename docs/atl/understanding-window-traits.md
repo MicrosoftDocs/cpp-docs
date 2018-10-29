@@ -1,15 +1,8 @@
 ---
-title: "ATL Window Traits | Microsoft Docs"
-ms.custom: ""
+title: "ATL Window Traits"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["window traits"]
 ms.assetid: c90cf850-9e91-49da-9cf3-ad4efb30347d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Understanding Window Traits
 

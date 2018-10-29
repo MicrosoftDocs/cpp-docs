@@ -1,14 +1,7 @@
 ---
-title: "Definitions and Declarations (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Definitions and Declarations (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 56b809c0-e602-4f18-9ca5-cd7a8fbaaf30
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Definitions and Declarations (C++)
 

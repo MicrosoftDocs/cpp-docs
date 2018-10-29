@@ -1,14 +1,7 @@
 ---
-title: "Document-View Sample List | Microsoft Docs"
-ms.custom: ""
+title: "Document-View Sample List"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 6f087ce8-2f46-433c-b674-4c110743b289
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Document/View Sample List
 

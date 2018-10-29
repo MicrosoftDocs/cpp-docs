@@ -1,19 +1,12 @@
 ---
-title: "_strdate_s, _wstrdate_s | Microsoft Docs"
-ms.custom: ""
+title: "_strdate_s, _wstrdate_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_strdate_s", "_wstrdate_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_strdate_s", "wstrdate_s", "_wstrdate_s", "strdate_s", "_tstrdate_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["dates, copying", "tstrdate_s function", "wstrdate_s function", "_tstrdate_s function", "strdate_s function", "copying dates", "_strdate_s function", "_wstrdate_s function"]
 ms.assetid: d41d8ea9-e5ce-40d4-864e-1ac29b455991
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _strdate_s, _wstrdate_s
 

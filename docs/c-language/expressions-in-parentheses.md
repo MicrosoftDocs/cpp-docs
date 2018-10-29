@@ -1,15 +1,8 @@
 ---
-title: "Expressions in Parentheses | Microsoft Docs"
-ms.custom: ""
+title: "Expressions in Parentheses"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["parentheses", "expression evaluation, evaluation order", "expressions [C++], evaluating", "parentheses, expressions"]
 ms.assetid: b8636147-6982-408c-9e64-29e40678ee43
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Expressions in Parentheses
 

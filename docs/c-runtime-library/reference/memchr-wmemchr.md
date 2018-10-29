@@ -1,19 +1,12 @@
 ---
-title: "memchr, wmemchr | Microsoft Docs"
-ms.custom: ""
+title: "memchr, wmemchr"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["wmemchr", "memchr"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["memchr", "wmemchr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["memchr function", "wmemchr function"]
 ms.assetid: 5a348581-28f1-4256-8434-687245f7fc9f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # memchr, wmemchr
 

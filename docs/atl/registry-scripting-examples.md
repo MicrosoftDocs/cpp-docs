@@ -1,15 +1,8 @@
 ---
-title: "Registry Scripting Examples | Microsoft Docs"
-ms.custom: ""
+title: "Registry Scripting Examples"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["scripting, examples", "registrar scripts [ATL]", "scripts, Registrar scripts", "registry, Registrar"]
 ms.assetid: b6df80e1-e08b-40ee-9243-9b381b172460
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Registry Scripting Examples
 

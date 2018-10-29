@@ -1,16 +1,9 @@
 ---
-title: "operator != (MASM) | Microsoft Docs"
-ms.custom: ""
+title: "operator != (MASM)"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["operator !="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["!= operator", "operator !="]
 ms.assetid: 8d48f40b-28d4-4996-ae1a-576478fd9c32
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator != (MASM)
 

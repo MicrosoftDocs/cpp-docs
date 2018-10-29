@@ -1,15 +1,8 @@
 ---
-title: "ATL Encoding Reference | Microsoft Docs"
-ms.custom: ""
+title: "ATL Encoding Reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["encoding", "encoding, functions"]
 ms.assetid: 82d4fdf3-3c4a-4fe2-b297-8ffb4714406f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Encoding Reference
 

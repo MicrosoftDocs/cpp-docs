@@ -1,16 +1,9 @@
 ---
-title: "-Fd (Program Database File Name) | Microsoft Docs"
-ms.custom: ""
+title: "/Fd (Program Database File Name)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/FD", "VC.Project.VCCLWCECompilerTool.ProgramDataBaseFileName", "VC.Project.VCCLCompilerTool.ProgramDataBaseFileName"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/FD compiler option [C++]", "program database file name [C++]", "-FD compiler option [C++]", "PDB files, creating", "program database compiler option [C++]", ".pdb files, creating", "FD compiler option [C++]"]
 ms.assetid: 3977a9ed-f0ac-45df-bf06-01cedd2ba85a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Fd (Program Database File Name)
 

@@ -1,14 +1,7 @@
 ---
-title: "ARM Assembler Command-Line Reference | Microsoft Docs"
-ms.custom: ""
+title: "ARM Assembler Command-Line Reference"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: f7b89478-1ab5-4995-8cde-a805f0462c45
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ARM Assembler Command-Line Reference
 

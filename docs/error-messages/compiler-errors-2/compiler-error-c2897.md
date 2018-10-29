@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2897 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2897"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2897"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2897"]
 ms.assetid: a88349e2-823f-42a0-8660-0653b677afa4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2897
 

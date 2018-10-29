@@ -1,15 +1,8 @@
 ---
-title: "Specifying an Inline File | Microsoft Docs"
-ms.custom: ""
+title: "Specifying an Inline File"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["NMAKE program, inline files", "inline files [C++], specifying NMAKE", "files [C++], inline"]
 ms.assetid: 393eccfb-3fc9-4bac-a30c-8ac8d221cca3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Specifying an Inline File
 

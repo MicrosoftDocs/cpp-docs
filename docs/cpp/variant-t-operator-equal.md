@@ -1,16 +1,9 @@
 ---
-title: "_variant_t::operator = | Microsoft Docs"
-ms.custom: ""
+title: "_variant_t::operator ="
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_variant_t::operator="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["operator= [C++], variant", "operator = [C++], variant", "= operator [C++], with specific Visual C++ objects"]
 ms.assetid: 77622723-6e49-4dec-9e0f-fa74028f1a3c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _variant_t::operator =
 

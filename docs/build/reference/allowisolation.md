@@ -1,16 +1,9 @@
 ---
-title: "-ALLOWISOLATION | Microsoft Docs"
-ms.custom: ""
+title: "/ALLOWISOLATION"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/ALLOWISOLATION"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-ALLOWISOLATION editbin option", "/ALLOWISOLATION editbin option", "ALLOWISOLATION editbin option"]
 ms.assetid: 91430344-f64f-491a-a5a5-7ea3b21cbe68
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /ALLOWISOLATION
 

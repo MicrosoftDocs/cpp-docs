@@ -1,16 +1,9 @@
 ---
-title: "Registry Data Exchange Macros | Microsoft Docs"
-ms.custom: ""
+title: "Registry Data Exchange Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlplus/ATL::BEGIN_RDX_MAP", "atlplus/ATL::END_RDX_MAP", "atlplus/ATL::RDX_BINARY", "atlplus/ATL::RDX_CSTRING_TEXT", "atlplus/ATL::RDX_DWORD", "atlplus/ATL::RDX_TEXT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RegistryDataExchange function, macros"]
 ms.assetid: c1bc5e79-2307-43d2-9d10-3a62ffadf473
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Registry Data Exchange Macros
 

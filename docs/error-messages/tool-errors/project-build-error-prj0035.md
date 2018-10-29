@@ -1,16 +1,9 @@
 ---
-title: "Project Build Error PRJ0035 | Microsoft Docs"
-ms.custom: ""
+title: "Project Build Error PRJ0035"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["PRJ0035"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PRJ0035"]
 ms.assetid: 0667116d-338c-40a4-972c-da875f778cb5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Project Build Error PRJ0035
 

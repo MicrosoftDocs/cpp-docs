@@ -1,16 +1,9 @@
 ---
-title: "Grouping Radio Buttons on a Dialog Box (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Grouping Radio Buttons on a Dialog Box (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.dialog.grouping"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["member variables, adding to radio button groups", "variables, dialog box control member variables", "dialog box controls [C++], grouping radio buttons", "grouping controls", "radio buttons [C++], grouping on dialog boxes"]
 ms.assetid: 3cc43f9e-56c8-4faa-9930-ce81733c69de
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Grouping Radio Buttons on a Dialog Box (C++)
 

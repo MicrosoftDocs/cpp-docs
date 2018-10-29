@@ -1,16 +1,9 @@
 ---
-title: "#include Directive (C/C++) | Microsoft Docs"
-ms.custom: ""
+title: "#include Directive (C/C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["#include"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor, directives", "#include directive", "include directive (#include)"]
 ms.assetid: 17067dc0-8db1-4f2d-b43e-ec12ecf83238
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # #include Directive (C/C++)
 Tells the preprocessor to treat the contents of a specified file as if they appear in the source program at the point where the directive appears.

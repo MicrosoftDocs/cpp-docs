@@ -1,19 +1,12 @@
 ---
-title: "setbuf | Microsoft Docs"
-ms.custom: ""
+title: "setbuf"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["setbuf"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["setbuf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["setbuf function", "stream buffering"]
 ms.assetid: 13beda22-7b56-455d-8a6c-f2eb636885b9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # setbuf
 

@@ -1,16 +1,9 @@
 ---
-title: "Routine Mappings | Microsoft Docs"
-ms.custom: ""
+title: "Routine Mappings"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.mappings"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_tWinMain", "TCHAR.H data types, list of routine mappings", "generic-text mappings"]
 ms.assetid: 38f33d3b-0f7b-430d-8a4f-75e27c6f1c42
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Routine Mappings
 

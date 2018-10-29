@@ -1,15 +1,8 @@
 ---
-title: "&lt;thread&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;thread&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<thread>"]
-dev_langs: ["C++"]
 ms.assetid: 0c858405-4efb-449d-bf76-70d3693c9234
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;thread&gt;
 

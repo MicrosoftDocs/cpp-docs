@@ -1,15 +1,8 @@
 ---
-title: "String Data Management | Microsoft Docs"
-ms.custom: ""
+title: "String Data Management"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Unicode, string objects"]
 ms.assetid: 0b53a542-eeb1-4108-9ada-6700645b6f8f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # String Data Management
 

@@ -1,16 +1,9 @@
 ---
-title: "NMAKE Fatal Error U1033 | Microsoft Docs"
-ms.custom: ""
+title: "NMAKE Fatal Error U1033"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["U1033"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["U1033"]
 ms.assetid: c146f7b5-7d5c-4329-a522-28a648546016
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # NMAKE Fatal Error U1033
 

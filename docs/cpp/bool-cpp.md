@@ -1,16 +1,9 @@
 ---
-title: "bool (C++) | Microsoft Docs"
-ms.custom: ""
+title: "bool (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["bool_cpp", "__BOOL_DEFINED"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["bool keyword [C++]", "__BOOL_DEFINED macro"]
 ms.assetid: 9abed3f2-d21c-4eb4-97c5-716342e613d8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # bool (C++)
 

@@ -1,15 +1,8 @@
 ---
-title: "Specifiers | Microsoft Docs"
-ms.custom: ""
+title: "Specifiers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["declaration specifiers", "declarations, specifiers", "specifiers, in declarations"]
 ms.assetid: 8b14e844-9880-4571-8779-28c8efe44633
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Specifiers
 

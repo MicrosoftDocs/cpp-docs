@@ -1,16 +1,9 @@
 ---
-title: "attribute (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "attribute (C++ COM Attribute)"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.attribute"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__typeof keyword", "custom attributes, creating", "attribute attribute", "attributes [C++/CLI], custom"]
 ms.assetid: 8cb3489f-65c4-44ea-b0aa-3c3c6b15741d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # attribute
 

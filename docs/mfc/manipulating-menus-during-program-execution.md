@@ -1,15 +1,8 @@
 ---
-title: "Manipulating Menus During Program Execution | Microsoft Docs"
-ms.custom: ""
+title: "Manipulating Menus During Program Execution"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["menus [MFC], editing during execution", "menus during execution [MFC], deleting", "CMenu class [MFC], manipulating menus during execution", "menus [MFC], manipulating during execution", "menus during execution"]
 ms.assetid: 722c7c00-4be2-4967-877d-f96aaa604396
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Manipulating Menus During Program Execution
 

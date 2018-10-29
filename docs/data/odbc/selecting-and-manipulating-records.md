@@ -1,15 +1,8 @@
 ---
-title: "Selecting and Manipulating Records | Microsoft Docs"
-ms.custom: ""
+title: "Selecting and Manipulating Records"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["records, selecting", "record selection, MFC ODBC classes", "ODBC recordsets, selecting records"]
 ms.assetid: 7f0b3a4a-9941-4475-a612-9ec8d15b7691
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Selecting and Manipulating Records
 

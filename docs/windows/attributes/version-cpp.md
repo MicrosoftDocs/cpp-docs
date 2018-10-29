@@ -1,16 +1,9 @@
 ---
-title: "version  (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "version  (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.version"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["version attribute", "version information, version attribute"]
 ms.assetid: db6ce5d8-82c2-4329-b1a8-8ca2f67342cb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # version (C++)
 

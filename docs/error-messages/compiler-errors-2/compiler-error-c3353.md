@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3353 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3353"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3353"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3353"]
 ms.assetid: 5699c04b-d504-46ce-bf71-c200318fed71
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3353
 

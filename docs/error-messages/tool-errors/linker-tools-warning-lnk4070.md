@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Warning LNK4070 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Warning LNK4070"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK4070"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4070"]
 ms.assetid: f95f179a-fff9-427e-bd51-466b3934517f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4070
 

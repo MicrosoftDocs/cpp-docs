@@ -1,15 +1,8 @@
 ---
-title: "SDI and MDI | Microsoft Docs"
-ms.custom: ""
+title: "SDI and MDI"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["frame windows [MFC], SDI applications", "frame windows [MFC], MDI applications", "MFC, windows", "single document interface (SDI) [MFC], applications", "MDI [MFC], vs. SDI"]
 ms.assetid: bb7239d9-4759-4f63-bfff-44a04b48c067
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # SDI and MDI
 

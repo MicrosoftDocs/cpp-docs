@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4100 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4100"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4100"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4100"]
 ms.assetid: 478ed97d-e502-49e4-9afb-ac2a6c61194b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4100
 

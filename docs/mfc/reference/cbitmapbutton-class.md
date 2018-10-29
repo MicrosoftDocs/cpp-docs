@@ -1,16 +1,9 @@
 ---
-title: "CBitmapButton Class | Microsoft Docs"
-ms.custom: ""
+title: "CBitmapButton Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CBitmapButton", "AFXEXT/CBitmapButton", "AFXEXT/CBitmapButton::CBitmapButton", "AFXEXT/CBitmapButton::AutoLoad", "AFXEXT/CBitmapButton::LoadBitmaps", "AFXEXT/CBitmapButton::SizeToContent"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CBitmapButton [MFC], CBitmapButton", "CBitmapButton [MFC], AutoLoad", "CBitmapButton [MFC], LoadBitmaps", "CBitmapButton [MFC], SizeToContent"]
 ms.assetid: 9ad6cb45-c3c4-4fb1-96d3-1fe3df7bbcfc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CBitmapButton Class
 

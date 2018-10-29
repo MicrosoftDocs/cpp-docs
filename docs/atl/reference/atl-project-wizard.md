@@ -1,16 +1,9 @@
 ---
-title: "ATL Project Wizard | Microsoft Docs"
-ms.custom: ""
+title: "ATL Project Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.atl.com.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, creating", "ATL Project Wizard"]
 ms.assetid: 564d2aaf-5b8e-4c2a-a925-ca40a283ea34
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Project Wizard
 

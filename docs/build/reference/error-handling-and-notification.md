@@ -1,15 +1,8 @@
 ---
-title: "Error Handling and Notification | Microsoft Docs"
-ms.custom: ""
+title: "Error Handling and Notification"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["error handling, and notification"]
 ms.assetid: b621cf60-d869-451a-b05e-dc86d78addaa
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Error Handling and Notification
 

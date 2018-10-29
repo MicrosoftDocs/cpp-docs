@@ -1,16 +1,9 @@
 ---
-title: "IDBCreateSessionImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IDBCreateSessionImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["IDBCreateSessionImpl", "ATL.IDBCreateSessionImpl", "ATL::IDBCreateSessionImpl", "IDBCreateSessionImpl::CreateSession", "IDBCreateSessionImpl.CreateSession", "CreateSession"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IDBCreateSessionImpl class", "CreateSession method"]
 ms.assetid: 48c02c5c-8362-45ac-af8e-bb119cf8c5c7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBCreateSessionImpl Class
 

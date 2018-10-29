@@ -1,14 +1,8 @@
 ---
-title: "Adding a Control (ATL Tutorial, Part 2) | Microsoft Docs"
+title: "Adding a Control (ATL Tutorial, Part 2)"
 ms.custom: "get-started-article"
 ms.date: "09/26/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: c9575a75-1064-41f1-9697-7aada560c669
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding a Control (ATL Tutorial, Part 2)
 

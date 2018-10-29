@@ -1,16 +1,9 @@
 ---
-title: "Options, ATL Control Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Options, ATL Control Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.control.options"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL Control Wizard, options"]
 ms.assetid: 4607c51a-992d-433e-9281-919c6f519a3d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Options, ATL Control Wizard
 

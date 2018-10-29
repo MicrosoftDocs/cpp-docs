@@ -1,16 +1,10 @@
 ---
-title: "ML Nonfatal Error A2107 | Microsoft Docs"
-ms.custom: ""
+title: "ML Nonfatal Error A2107"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2107"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["A2107"]
 ms.assetid: 0385b9f2-36df-4e30-a905-ab49bdc504d1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2107
 

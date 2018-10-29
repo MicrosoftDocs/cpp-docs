@@ -1,16 +1,9 @@
 ---
-title: "IRowsetNotifyCP Class | Microsoft Docs"
-ms.custom: ""
+title: "IRowsetNotifyCP Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-f1_keywords: ["IRowsetNotifyCP", "Fire_OnFieldChange", "ATL::IRowsetNotifyCP::Fire_OnFieldChange", "ATL.IRowsetNotifyCP.Fire_OnFieldChange", "IRowsetNotifyCP.Fire_OnFieldChange",  "IRowsetNotifyCP::Fire_OnFieldChange", "IRowsetNotifyCP.Fire_OnRowChange", "ATL.IRowsetNotifyCP.Fire_OnRowChange", "Fire_OnRowChange", "ATL::IRowsetNotifyCP::Fire_OnRowChange",    "IRowsetNotifyCP::Fire_OnRowChange", "Fire_OnRowsetChange", "IRowsetNotifyCP::Fire_OnRowsetChange", "IRowsetNotifyCP.Fire_OnRowsetChange", "ATL::IRowsetNotifyCP::Fire_OnRowsetChange", "ATL.IRowsetNotifyCP.Fire_OnRowsetChange"]
-dev_langs: ["C++"]
+f1_keywords: ["IRowsetNotifyCP", "Fire_OnFieldChange", "ATL::IRowsetNotifyCP::Fire_OnFieldChange", "ATL.IRowsetNotifyCP.Fire_OnFieldChange", "IRowsetNotifyCP.Fire_OnFieldChange", "IRowsetNotifyCP::Fire_OnFieldChange", "IRowsetNotifyCP.Fire_OnRowChange", "ATL.IRowsetNotifyCP.Fire_OnRowChange", "Fire_OnRowChange", "ATL::IRowsetNotifyCP::Fire_OnRowChange", "IRowsetNotifyCP::Fire_OnRowChange", "Fire_OnRowsetChange", "IRowsetNotifyCP::Fire_OnRowsetChange", "IRowsetNotifyCP.Fire_OnRowsetChange", "ATL::IRowsetNotifyCP::Fire_OnRowsetChange", "ATL.IRowsetNotifyCP.Fire_OnRowsetChange"]
 helpviewer_keywords: ["IRowsetNotifyCP class", "Fire_OnFieldChange method", "Fire_OnRowChange method", "Fire_OnRowsetChange method"]
 ms.assetid: ccef402b-94a0-4c2e-9a13-7e854ef82390
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetNotifyCP Class
 

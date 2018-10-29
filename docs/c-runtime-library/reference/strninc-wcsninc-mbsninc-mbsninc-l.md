@@ -1,19 +1,12 @@
 ---
-title: "_strninc, _wcsninc, _mbsninc, _mbsninc_l | Microsoft Docs"
-ms.custom: ""
+title: "_strninc, _wcsninc, _mbsninc, _mbsninc_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_mbsninc", "_mbsninc_l", "_wcsninc", "_strninc"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["strninc", "wcsninc", "mbsninc_l", "_strninc", "_tcsninc", "mbsninc", "_mbsninc_l", "_ftcsninc", "_wcsninc", "_mbsninc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_mbsninc_l function", "mbsninc function", "_strninc function", "tcsninc function", "wcsninc function", "_mbsninc function", "strninc function", "_wcsninc function", "mbsninc_l function", "_tcsninc function"]
 ms.assetid: 6caace64-f9e4-48c0-afa8-ea51824ad723
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _strninc, _wcsninc, _mbsninc, _mbsninc_l
 

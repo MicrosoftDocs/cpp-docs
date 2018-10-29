@@ -1,16 +1,10 @@
 ---
-title: "RuntimeClassFlags Structure | Microsoft Docs"
-ms.custom: ""
+title: "RuntimeClassFlags Structure"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::RuntimeClassFlags", "implements/Microsoft::WRL::RuntimeClassFlags::value"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::RuntimeClassFlags structure", "Microsoft::WRL::RuntimeClassFlags::value constant"]
 ms.assetid: 7098d605-bd14-4d51-82f4-3def8296a938
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClassFlags Structure
 

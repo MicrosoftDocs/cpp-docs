@@ -1,15 +1,8 @@
 ---
-title: "ActiveX Control Containers: Using Controls in a Non-Dialog Container | Microsoft Docs"
-ms.custom: ""
+title: "ActiveX Control Containers: Using Controls in a Non-Dialog Container"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Create method [MFC], ActiveX controls", "CreateControl method [MFC]", "ActiveX controls [MFC], creating", "ActiveX control containers [MFC], non-dialog containers", "ActiveX control containers [MFC], inserting controls"]
 ms.assetid: 46f195b0-b8ca-4409-8cca-fbfaf2c9ab9f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ActiveX Control Containers: Using Controls in a Non-Dialog Container
 

@@ -1,14 +1,7 @@
 ---
-title: "Using Tiles | Microsoft Docs"
-ms.custom: ""
+title: "Using Tiles"
 ms.date: "06/28/2018"
-ms.technology: ["cpp-amp"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: acb86a86-2b7f-43f1-8fcf-bcc79b21d9a8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Tiles
 

@@ -1,18 +1,11 @@
 ---
-title: "vprintf Functions | Microsoft Docs"
-ms.custom: ""
+title: "vprintf Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apilocation: ["msvcr110.dll", "msvcr120.dll", "msvcr90.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr80.dll"]
 apitype: "DLLExport"
 f1_keywords: ["vprintf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["vprintf function", "formatted text [C++]"]
 ms.assetid: 02ac7c51-eab1-4bf0-bf4c-77065e3fa744
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # vprintf Functions
 

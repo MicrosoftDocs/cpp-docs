@@ -1,15 +1,8 @@
 ---
-title: "Image Information in Image Lists | Microsoft Docs"
-ms.custom: ""
+title: "Image Information in Image Lists"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CImageList class [MFC], image information in", "image lists [MFC], image information in"]
 ms.assetid: 73c41543-fa91-405d-b15b-0feffa6a72c1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Image Information in Image Lists
 

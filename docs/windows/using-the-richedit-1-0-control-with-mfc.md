@@ -1,15 +1,8 @@
 ---
-title: "Using the RichEdit 1.0 Control with MFC | Microsoft Docs"
-ms.custom: ""
+title: "Using the RichEdit 1.0 Control with MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["RichEdit 1.0 control", "rich edit controls [C++], RichEdit 1.0"]
 ms.assetid: 5a9060dd-44d8-4ef3-956e-16152f7e23d2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Using the RichEdit 1.0 Control with MFC
 

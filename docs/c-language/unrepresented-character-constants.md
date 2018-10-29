@@ -1,14 +1,7 @@
 ---
-title: "Unrepresented Character Constants | Microsoft Docs"
-ms.custom: ""
+title: "Unrepresented Character Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 5a710a1c-dba1-49b4-a183-ed94a00a5358
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Unrepresented Character Constants
 

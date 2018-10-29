@@ -1,16 +1,9 @@
 ---
-title: "CD2DBrushProperties Class | Microsoft Docs"
-ms.custom: ""
+title: "CD2DBrushProperties Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CD2DBrushProperties", "AFXRENDERTARGET/CD2DBrushProperties", "AFXRENDERTARGET/CD2DBrushProperties::CD2DBrushProperties", "AFXRENDERTARGET/CD2DBrushProperties::CommonInit"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DBrushProperties [MFC], CD2DBrushProperties", "CD2DBrushProperties [MFC], CommonInit"]
 ms.assetid: c77d717f-0a16-4d74-b2ce-0ae1766ed6f9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CD2DBrushProperties Class
 

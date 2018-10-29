@@ -1,16 +1,9 @@
 ---
-title: "import (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "import (C++ COM Attribute)"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.import"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["import attribute"]
 ms.assetid: ebf07cae-39fb-4047-8b57-54af0a9a83de
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # import
 

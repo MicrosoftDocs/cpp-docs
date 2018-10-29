@@ -1,16 +1,9 @@
 ---
-title: "CPen Class | Microsoft Docs"
-ms.custom: ""
+title: "CPen Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CPen", "AFXWIN/CPen", "AFXWIN/CPen::CPen", "AFXWIN/CPen::CreatePen", "AFXWIN/CPen::CreatePenIndirect", "AFXWIN/CPen::FromHandle", "AFXWIN/CPen::GetExtLogPen", "AFXWIN/CPen::GetLogPen"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CPen [MFC], CPen", "CPen [MFC], CreatePen", "CPen [MFC], CreatePenIndirect", "CPen [MFC], FromHandle", "CPen [MFC], GetExtLogPen", "CPen [MFC], GetLogPen"]
 ms.assetid: 93175a3a-d46c-4768-be8d-863254f97a5f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPen Class
 

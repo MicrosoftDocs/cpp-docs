@@ -1,16 +1,9 @@
 ---
-title: "-PDBPATH | Microsoft Docs"
-ms.custom: ""
+title: "/PDBPATH"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/pdbpath"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".pdb files, path", "-PDBPATH dumpbin option", "/PDBPATH dumpbin option", "PDBPATH dumpbin option", "PDB files, path"]
 ms.assetid: ccf67dcd-0b23-4250-ad47-06c48acbe82b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /PDBPATH
 

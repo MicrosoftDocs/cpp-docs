@@ -1,15 +1,8 @@
 ---
-title: "-guard (Enable Control Flow Guard) | Microsoft Docs"
-ms.custom: ""
+title: "/guard (Enable Control Flow Guard)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/guard", "VC.Project.VCCLCompilerTool.ControlFlowGuard"]
-dev_langs: ["C++"]
 ms.assetid: be495323-f59f-4cf3-a6b6-8ee69e6a19dd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /guard (Enable Control Flow Guard)
 

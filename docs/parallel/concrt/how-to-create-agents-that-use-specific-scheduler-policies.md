@@ -1,15 +1,8 @@
 ---
-title: "How to: Create Agents that Use Specific Scheduler Policies | Microsoft Docs"
-ms.custom: ""
+title: "How to: Create Agents that Use Specific Scheduler Policies"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["scheduler policies, agents [Concurrency Runtime]", "creating agents that use specific policies [Concurrency Runtime]"]
 ms.assetid: 46a3e265-0777-4ec3-a142-967bafc49d67
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Create Agents that Use Specific Scheduler Policies
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2247 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2247"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2247"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2247"]
 ms.assetid: 72efa03e-615e-4ef9-aede-0a98654b20fd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2247
 

@@ -1,15 +1,8 @@
 ---
-title: "ODBC and MFC | Microsoft Docs"
-ms.custom: ""
+title: "ODBC and MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC [C++], MFC", "connections [C++], databases", "connections [C++], data source", "databases [C++], connecting to", "data sources [C++], connecting to", "MFC [C++], ODBC and", "database connections [C++], MFC ODBC classes"]
 ms.assetid: 98f02fd7-1235-437b-89a9-edfd0fc797f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC and MFC
 

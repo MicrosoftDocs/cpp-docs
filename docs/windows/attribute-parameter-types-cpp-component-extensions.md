@@ -1,15 +1,9 @@
 ---
-title: "Attribute Parameter Types  (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Attribute Parameter Types  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["custom attributes, parameter types"]
 ms.assetid: d9f127a3-7f08-456f-acc6-256805632712
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Attribute Parameter Types  (C++/CLI and C++/CX)
 

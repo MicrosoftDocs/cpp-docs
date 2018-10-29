@@ -1,16 +1,9 @@
 ---
-title: "Using CImageList | Microsoft Docs"
-ms.custom: ""
+title: "Using CImageList"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CImageList"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["image list control", "CImageList class [MFC], using"]
 ms.assetid: 3d2a909e-d641-46b7-aada-81cab1a29b41
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using CImageList
 

@@ -1,16 +1,9 @@
 ---
-title: "CWinTraitsOR Class | Microsoft Docs"
-ms.custom: ""
+title: "CWinTraitsOR Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CWinTraitsOR", "ATLWIN/ATL::CWinTraitsOR", "ATLWIN/ATL::CWinTraitsOR::GetWndExStyle", "ATLWIN/ATL::CWinTraitsOR::GetWndStyle"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CWinTraitsOR class", "window styles, default values for ATL"]
 ms.assetid: 1eb7b1e8-a9bd-411b-a30a-35a8a10af989
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CWinTraitsOR Class
 

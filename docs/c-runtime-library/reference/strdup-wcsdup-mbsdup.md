@@ -1,19 +1,12 @@
 ---
-title: "_strdup, _wcsdup, _mbsdup | Microsoft Docs"
-ms.custom: ""
+title: "_strdup, _wcsdup, _mbsdup"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_strdup", "_mbsdup", "_wcsdup"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_tcsdup", "mbsdup", "_mbsdup", "_strdup", "_ftcsdup", "_wcsdup"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wcsdup function", "ftcsdup function", "_ftcsdup function", "mbsdup function", "strdup function", "_strdup function", "_wcsdup function", "copying strings", "duplicating strings", "strings [C++], copying", "_mbsdup function", "strings [C++], duplicating", "tcsdup function", "_tcsdup function"]
 ms.assetid: 8604f8bb-95e9-45d3-93ef-20397ebf247a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _strdup, _wcsdup, _mbsdup
 

@@ -1,16 +1,9 @@
 ---
-title: "Language Strings | Microsoft Docs"
-ms.custom: ""
+title: "Language Strings"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.strings"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["language strings"]
 ms.assetid: bbee63b1-af0b-4e44-9eaf-dd3e265c05fd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Language Strings
 

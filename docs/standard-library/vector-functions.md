@@ -1,8 +1,6 @@
 ---
-title: "&lt;vector&gt; functions | Microsoft Docs"
-ms.custom: ""
+title: "&lt;vector&gt; functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["vector/std::swap"]
 ms.assetid: 6cdcf043-eef6-4330-83f0-4596fb9f968a
 helpviewer_keywords: ["std::swap [vector]"]

@@ -1,14 +1,7 @@
 ---
-title: "1.3 Execution Model | Microsoft Docs"
-ms.custom: ""
+title: "1.3 Execution Model"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 85ae8bc4-5bf0-45e0-a45f-02de9adaf716
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 1.3 Execution Model
 

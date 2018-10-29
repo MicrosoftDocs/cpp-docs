@@ -1,16 +1,9 @@
 ---
-title: "_HAS_ITERATOR_DEBUGGING | Microsoft Docs"
-ms.custom: ""
+title: "_HAS_ITERATOR_DEBUGGING"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["_HAS_ITERATOR_DEBUGGING"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_HAS_ITERATOR_DEBUGGING"]
 ms.assetid: 90077dbb-8a76-4963-83a6-29f4854007a8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _HAS_ITERATOR_DEBUGGING
 

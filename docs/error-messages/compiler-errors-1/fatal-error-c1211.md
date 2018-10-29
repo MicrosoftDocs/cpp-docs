@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1211 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1211"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1211"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1211"]
 ms.assetid: df0ca70d-ec6e-4400-926a-b877e2599978
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1211
 

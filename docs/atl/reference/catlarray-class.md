@@ -1,16 +1,9 @@
 ---
-title: "CAtlArray Class | Microsoft Docs"
-ms.custom: ""
+title: "CAtlArray Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAtlArray", "ATLCOLL/ATL::CAtlArray", "ATLCOLL/ATL::Add", "ATLCOLL/ATL::Append", "ATLCOLL/ATL::AssertValid", "ATLCOLL/ATL::Copy", "ATLCOLL/ATL::FreeExtra", "ATLCOLL/ATL::GetAt", "ATLCOLL/ATL::GetCount", "ATLCOLL/ATL::GetData", "ATLCOLL/ATL::InsertArrayAt", "ATLCOLL/ATL::InsertAt", "ATLCOLL/ATL::IsEmpty", "ATLCOLL/ATL::RemoveAll", "ATLCOLL/ATL::RemoveAt", "ATLCOLL/ATL::SetAt", "ATLCOLL/ATL::SetAtGrow", "ATLCOLL/ATL::SetCount", "ATLCOLL/ATL::INARGTYPE", "ATLCOLL/ATL::OUTARGTYPE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlArray class"]
 ms.assetid: 0b503aa8-2357-40af-a326-6654bf1da098
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlArray Class
 

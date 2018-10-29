@@ -1,15 +1,8 @@
 ---
-title: "main Function and Program Execution | Microsoft Docs"
-ms.custom: ""
+title: "main Function and Program Execution"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["program startup [C++]", "entry points, program", "main function, program execution", "startup code, main function", "main function", "programs [C++], terminating"]
 ms.assetid: 5984f1bd-072d-4e06-8640-122fb1454401
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # main Function and Program Execution
 

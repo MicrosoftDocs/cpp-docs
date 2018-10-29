@@ -1,16 +1,9 @@
 ---
-title: "CTreeCtrl vs. CTreeView | Microsoft Docs"
-ms.custom: ""
+title: "CTreeCtrl vs. CTreeView"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CTreeCtrl", "CTreeView"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["tree view controls", "CTreeCtrl class [MFC], vs. CTreeView class [MFC]", "CTreeView class [MFC], vs. CTreeCtrl class [MFC]", "tree controls [MFC], and tree view"]
 ms.assetid: bba5af25-103f-4b53-84d3-071bc9bd6494
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CTreeCtrl vs. CTreeView
 

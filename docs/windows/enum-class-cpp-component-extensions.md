@@ -1,14 +1,8 @@
 ---
-title: "enum class  (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "enum class  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 8010fa8c-bad6-45b4-8214-b4db64d7ffe1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # enum class  (C++/CLI and C++/CX)
 

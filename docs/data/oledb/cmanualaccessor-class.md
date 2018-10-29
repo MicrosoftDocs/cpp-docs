@@ -1,16 +1,9 @@
 ---
-title: "CManualAccessor Class | Microsoft Docs"
-ms.custom: ""
+title: "CManualAccessor Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL::CManualAccessor", "ATL.CManualAccessor", "CManualAccessor", "ATL::CManualAccessor::AddBindEntry", "ATL.CManualAccessor.AddBindEntry", "CManualAccessor::AddBindEntry", "AddBindEntry", "CManualAccessor.AddBindEntry", "CManualAccessor::AddParameterEntry", "ATL.CManualAccessor.AddParameterEntry", "CManualAccessor.AddParameterEntry", "AddParameterEntry", "ATL::CManualAccessor::AddParameterEntry", "ATL::CManualAccessor::CreateAccessor", "CreateAccessor", "ATL.CManualAccessor.CreateAccessor", "CManualAccessor.CreateAccessor", "CManualAccessor::CreateAccessor", "ATL::CManualAccessor::CreateParameterAccessor", "ATL.CManualAccessor.CreateParameterAccessor", "CManualAccessor.CreateParameterAccessor", "CreateParameterAccessor", "CManualAccessor::CreateParameterAccessor"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CManualAccessor class", "AddBindEntry method", "AddParameterEntry method", "CreateAccessor method", "CreateParameterAccessor method"]
 ms.assetid: a0088074-7135-465c-b228-69097a50b8cc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CManualAccessor Class
 

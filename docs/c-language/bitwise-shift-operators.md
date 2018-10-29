@@ -1,15 +1,8 @@
 ---
-title: "Bitwise Shift Operators | Microsoft Docs"
-ms.custom: ""
+title: "Bitwise Shift Operators"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C++], bitwise", "shift operators, bitwise", "bitwise-shift operators", "operators [C++], shift"]
 ms.assetid: d0485785-5c72-47e1-a7c0-0adde03ade23
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Bitwise Shift Operators
 

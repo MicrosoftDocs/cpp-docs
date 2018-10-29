@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2450 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2450"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2450"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2450"]
 ms.assetid: 929f1c06-8774-468b-be2a-f428757875a2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2450
 

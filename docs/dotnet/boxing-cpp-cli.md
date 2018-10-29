@@ -1,14 +1,7 @@
 ---
-title: "Boxing (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "Boxing (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: f4ee27a8-6a34-432d-b9ec-39285d513b23
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Boxing (C++/CLI)
 

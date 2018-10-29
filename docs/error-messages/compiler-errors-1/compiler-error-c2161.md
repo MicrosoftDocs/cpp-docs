@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2161 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2161"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2161"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2161"]
 ms.assetid: d6798821-13bb-4e60-924f-85f7bf955387
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2161
 

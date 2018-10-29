@@ -1,15 +1,8 @@
 ---
-title: "Expression Statement (C) | Microsoft Docs"
-ms.custom: ""
+title: "Expression Statement (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["statements, expression", "expression statements"]
 ms.assetid: 1085982b-dc16-4c1e-9ddd-0cd85c8fe2e3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Expression Statement (C)
 

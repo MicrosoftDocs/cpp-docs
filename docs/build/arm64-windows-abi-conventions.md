@@ -1,13 +1,6 @@
 ---
-title: "Overview of ARM64 ABI conventions | Microsoft Docs"
-ms.custom: ""
+title: "Overview of ARM64 ABI conventions"
 ms.date: "07/11/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Overview of ARM64 ABI conventions
 

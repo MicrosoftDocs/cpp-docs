@@ -1,15 +1,9 @@
 ---
-title: "Variable Argument Lists (...) (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "Variable Argument Lists (...) (C++/CLI)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["variable argument lists", "parameter arrays"]
 ms.assetid: db1a27f4-02a8-4318-8690-1f2893f52b38
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Variable Argument Lists (...) (C++/CLI)
 

@@ -1,16 +1,9 @@
 ---
-title: "MFC ActiveX Controls: Subclassing a Windows Control | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Subclassing a Windows Control"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["precreatewindow", "IsSubclassed"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OnDraw method, MFC ActiveX controls", "subclassing", "DoSuperclassPaint method [MFC]", "subclassing Windows controls", "subclassing, Windows controls", "reflected messages, in ActiveX controls", "PreCreateWindow method, overriding", "MFC ActiveX controls [MFC], subclassed controls", "MFC ActiveX controls [MFC], creating", "IsSubclassed method [MFC]"]
 ms.assetid: 3236d4de-401f-49b7-918d-c84559ecc426
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Subclassing a Windows Control
 

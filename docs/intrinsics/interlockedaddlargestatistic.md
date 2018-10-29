@@ -1,16 +1,9 @@
 ---
-title: "_InterlockedAddLargeStatistic | Microsoft Docs"
-ms.custom: ""
+title: "_InterlockedAddLargeStatistic"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_InterlockedAddLargeStatistic", "_InterlockedAddLargeStatistic_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_InterlockedAddLargeStatistic intrinsic", "InterlockedAddLargeStatistic intrinsic"]
 ms.assetid: 2802e74b-bcee-46e4-b562-894908d44409
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _InterlockedAddLargeStatistic
 

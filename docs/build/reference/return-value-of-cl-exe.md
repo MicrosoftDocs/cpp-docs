@@ -1,15 +1,8 @@
 ---
-title: "Return Value of cl.exe | Microsoft Docs"
-ms.custom: ""
+title: "Return Value of cl.exe"
 ms.date: "09/05/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["cl.exe compiler, return value"]
 ms.assetid: 7c2d7f33-ee0d-4199-8ef4-75fe2b007670
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Return Value of cl.exe
 

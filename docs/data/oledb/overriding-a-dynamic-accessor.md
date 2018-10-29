@@ -1,15 +1,8 @@
 ---
-title: "Overriding a Dynamic Accessor | Microsoft Docs"
-ms.custom: ""
+title: "Overriding a Dynamic Accessor"
 ms.date: "10/19/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["accessors [C++], dynamic", "dynamic accessors", "overriding, dynamic accessors"]
 ms.assetid: cbefd156-6da5-490d-b795-c2d7d874f7ce
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Overriding a Dynamic Accessor
 

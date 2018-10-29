@@ -1,15 +1,8 @@
 ---
-title: "Filename-Parts Syntax | Microsoft Docs"
-ms.custom: ""
+title: "Filename-Parts Syntax"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["syntax, filename-parts", "filename-parts syntax in NMAKE", "NMAKE program, syntax"]
 ms.assetid: 48fe38e0-3f3b-40e6-894c-330ee775a656
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Filename-Parts Syntax
 

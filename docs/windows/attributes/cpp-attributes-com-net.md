@@ -1,15 +1,10 @@
 ---
-title: "C++ Attributes for COM and .NET | Microsoft Docs"
+title: "C++ Attributes for COM and .NET"
 ms.custom: "index-page"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["attributes [C++/CLI], reference topics"]
 ms.assetid: 613a3611-b3eb-4347-aa38-99b654600e1c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # C++ Attributes for COM and .NET
 

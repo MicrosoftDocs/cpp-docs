@@ -1,16 +1,10 @@
 ---
-title: "ref new, gcnew  (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "ref new, gcnew  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["gcnew", "ref new", "gcnew_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ref new keyword (C++)", "gcnew keyword [C++]"]
 ms.assetid: 388a62da-c2df-4a94-a9a2-205b53e577da
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # ref new, gcnew  (C++/CLI and C++/CX)
 

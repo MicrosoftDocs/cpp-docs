@@ -1,15 +1,8 @@
 ---
-title: "OLE DB Provider Template Architecture | Microsoft Docs"
-ms.custom: ""
+title: "OLE DB Provider Template Architecture"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB [C++], object model", "architecture [C++], OLE DB Provider", "OLE DB provider templates, object model"]
 ms.assetid: 639304a3-f9e0-44dc-8d0c-0ebd2455b363
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Provider Template Architecture
 

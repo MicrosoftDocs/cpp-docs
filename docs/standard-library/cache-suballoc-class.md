@@ -1,16 +1,9 @@
 ---
-title: "cache_suballoc Class | Microsoft Docs"
-ms.custom: ""
+title: "cache_suballoc Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["allocators/stdext::cache_suballoc", "allocators/stdext::cache_suballoc::allocate", "allocators/stdext::cache_suballoc::deallocate"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::cache_suballoc", "stdext::cache_suballoc [C++], allocate", "stdext::cache_suballoc [C++], deallocate"]
 ms.assetid: 9ea9c5e9-1dcc-45d0-b3a7-a56a93d88898
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # cache_suballoc Class
 

@@ -1,16 +1,9 @@
 ---
-title: "Support for Multibyte Character Sets (MBCSs) | Microsoft Docs"
-ms.custom: ""
+title: "Support for Multibyte Character Sets (MBCSs)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["_mbcs"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MBCS [C++], about MBCS", "character sets [C++], multibyte", "multibyte characters [C++]", "MBCS [C++]"]
 ms.assetid: b498733c-a1e1-45e3-8f26-d6da3cb5f2dd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Support for Multibyte Character Sets (MBCSs)
 

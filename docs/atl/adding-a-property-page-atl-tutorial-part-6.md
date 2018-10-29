@@ -1,14 +1,8 @@
 ---
-title: "Adding a Property Page (ATL Tutorial, Part 6) | Microsoft Docs"
+title: "Adding a Property Page (ATL Tutorial, Part 6)"
 ms.custom: "get-started-article"
 ms.date: "09/27/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: df80d255-e7ea-49d9-b940-3f012e90cf9b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding a Property Page (ATL Tutorial, Part 6)
 

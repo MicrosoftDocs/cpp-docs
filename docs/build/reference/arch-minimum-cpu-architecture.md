@@ -1,16 +1,9 @@
 ---
-title: "-arch (Minimum CPU Architecture) | Microsoft Docs"
-ms.custom: ""
+title: "/arch (Minimum CPU Architecture)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnableEnhancedInstructionSet", "/arch"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-arch compiler option [C++]", "/arch compiler option [C++]", "arch compiler option [C++]"]
 ms.assetid: cc17da15-47bd-4e74-b905-4e73c3bdb8a0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /arch (Minimum CPU Architecture)
 

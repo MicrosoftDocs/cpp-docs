@@ -1,16 +1,9 @@
 ---
-title: "align (C++) | Microsoft Docs"
-ms.custom: ""
+title: "align (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["align_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["align __declspec keyword", "__declspec keyword [C++], align"]
 ms.assetid: 9cb63f58-658b-4425-ac47-af8eabfc5878
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # align (C++)
 

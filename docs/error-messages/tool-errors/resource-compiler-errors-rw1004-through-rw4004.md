@@ -1,14 +1,7 @@
 ---
-title: "Resource Compiler Errors RW1004 through RW4004 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Errors RW1004 through RW4004"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
-dev_langs: ["C++"]
 ms.assetid: 56204484-3616-491e-8428-38f4930b85c5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Errors RW1004 through RW4004
 

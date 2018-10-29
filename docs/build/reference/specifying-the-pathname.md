@@ -1,15 +1,8 @@
 ---
-title: "Specifying the Pathname | Microsoft Docs"
-ms.custom: ""
+title: "Specifying the Pathname"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["names [C++], compiler output files", "cl.exe compiler, output files", "output files, specifying pathnames"]
 ms.assetid: 7a6595ce-3383-44ae-957a-466bfa29c343
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Specifying the Pathname
 

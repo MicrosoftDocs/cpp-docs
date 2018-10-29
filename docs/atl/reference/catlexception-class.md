@@ -1,16 +1,9 @@
 ---
-title: "CAtlException Class | Microsoft Docs"
-ms.custom: ""
+title: "CAtlException Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAtlException", "ATLEXCEPT/ATL::CAtlException", "ATLEXCEPT/ATL::CAtlException::CAtlException", "ATLEXCEPT/ATL::CAtlException::m_hr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlException class"]
 ms.assetid: 3fd7b041-f70d-4292-b947-0d70781d95a8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlException Class
 

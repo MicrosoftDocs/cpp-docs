@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3850 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3850"
 ms.date: "09/05/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3850"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3850"]
 ms.assetid: 028f3a37-f3ad-4ebc-9168-3cdea47524d4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3850
 

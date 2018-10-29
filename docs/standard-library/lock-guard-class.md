@@ -1,15 +1,8 @@
 ---
-title: "lock_guard Class | Microsoft Docs"
-ms.custom: ""
+title: "lock_guard Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["mutex/std::lock_guard", "mutex/std::lock_guard::lock_guard"]
-dev_langs: ["C++"]
 ms.assetid: 57121f0d-9c50-481c-b971-54e64df864e0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # lock_guard Class
 
