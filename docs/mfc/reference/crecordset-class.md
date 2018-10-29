@@ -1192,7 +1192,7 @@ The following table lists the possible values for *wFetchType*, the rowset that 
 |SQL_FETCH_BOOKMARK|The rowset starting at the row whose bookmark value corresponds to *nRows*.|[SetBookmark](#setbookmark)|
 
 > [!NOTE]
->  For foward-only recordsets, `Move` is only valid with a value of SQL_FETCH_NEXT for *wFetchType*.
+>  For forward-only recordsets, `Move` is only valid with a value of SQL_FETCH_NEXT for *wFetchType*.
 
 > [!CAUTION]
 >  Calling `Move` throws an exception if the recordset has no records. To determine whether the recordset has any records, call [IsBOF](#isbof) and [IsEOF](#iseof).
