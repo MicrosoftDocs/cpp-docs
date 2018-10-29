@@ -15,9 +15,9 @@ ms.workload: ["cplusplus", "data-storage"]
 
 Make sure you really need dynamic column binding. You might need it because:
 
-- Your rowset columns are not defined at compile time.
+- Your rowset columns aren't defined at compile time.
 
-- You support an element such as bookmarks that adds columns.
+- You support an element such as bookmark that adds columns.
 
 ## To implement dynamic column binding
 

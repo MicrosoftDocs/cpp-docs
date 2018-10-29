@@ -13,9 +13,9 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Referencing a Property in Your Provider
 
-Find the property group and property ID for the property you want. For more information, see [OLE DB Properties](/previous-versions/windows/desktop/ms722734) in the *OLE DB Programmer's Reference*.
+Find the property group and property ID for the property you want. For more information, see [OLE DB Properties](/previous-versions/windows/desktop/ms722734) in the **OLE DB Programmer's Reference**.
 
-The following example assumes that you are trying to get a property from the rowset. The code for using the session or command is similar, but uses a different interface.
+The following example assumes that you're trying to get a property from the rowset. The code for using the session or command is similar, but uses a different interface.
 
 Create a [CDBPropSet](../../data/oledb/cdbpropset-class.md) object using the property group as the parameter to the constructor. For example:
 
@@ -23,7 +23,7 @@ Create a [CDBPropSet](../../data/oledb/cdbpropset-class.md) object using the pro
 CDBPropSet propset(DBPROPSET_ROWSET);
 ```
 
-Call [AddProperty](../../data/oledb/cdbpropset-addproperty.md), passing it the property ID and a value to be assigned to the property. The type of the value depends on the property you are using.
+Call [AddProperty](../../data/oledb/cdbpropset-addproperty.md), passing it the property ID and a value to be assigned to the property. The type of the value depends on the property you're using.
 
 ```cpp
 CDBPropSet propset(DBPROPSET_ROWSET);

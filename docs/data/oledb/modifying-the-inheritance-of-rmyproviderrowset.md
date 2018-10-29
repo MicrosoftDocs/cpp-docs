@@ -13,9 +13,9 @@ ms.workload: ["cplusplus", "data-storage"]
 ---
 # Modifying the Inheritance of RCustomRowset
 
-To add the `IRowsetLocate` interface to the simple read-only provider example, modify the inheritance of `RCustomRowset`. Initially, `RCustomRowset` inherits from `CRowsetImpl`. You need to modify it to inherit from `CRowsetBaseImpl`.
+To add the `IRowsetLocate` interface to the simple read-only provider example, modify the inheritance of `CCustomRowset`. Initially, `CCustomRowset` inherits from `CRowsetImpl`. You need to modify it to inherit from `CRowsetBaseImpl`.
 
-To do this, create a new class, `CCustomRowsetImpl`, in CustomRS.h:
+To do this, create a new class, `CCustomRowsetImpl`, in *Custom*RS.h:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
@@ -40,13 +40,13 @@ END_COM_MAP()
 
 This code creates a COM interface map that tells `CMyRowsetImpl` to call `QueryInterface` for both the `IRowset` and `IRowsetLocate` interfaces. To get all of the implementation for the other rowset classes, the map links the `CMyRowsetImpl` class back to the `CRowsetBaseImpl` class defined by the OLE DB Templates; the map uses the COM_INTERFACE_ENTRY_CHAIN macro, which tells OLE DB templates to scan the COM map in `CRowsetBaseImpl` in response to a `QueryInterface` call.
 
-Finally, link `RAgentRowset` to `CMyRowsetBaseImpl` by modifying `RAgentRowset` to inherit from `CMyRowsetImpl`, as follows:
+Finally, link `CCustomRowset` to `CMyRowsetBaseImpl` by modifying `CCustomRowset` to inherit from `CMyRowsetImpl`, as follows:
 
 ```cpp
-class RAgentRowset : public CMyRowsetImpl<RAgentRowset, CAgentMan, CCustomCommand>
+class CCustomRowset : public CMyRowsetImpl<CCustomRowset, CCustomWindowsFile, CCustomCommand>
 ```
 
-`RAgentRowset` can now use the `IRowsetLocate` interface while taking advantage of the rest of the implementation for the rowset class.
+`CCustomRowset` can now use the `IRowsetLocate` interface while taking advantage of the rest of the implementation for the rowset class.
 
 When this is done, you can [dynamically determine columns returned to the consumer](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md).
 
