@@ -17,7 +17,7 @@ ms.workload: ["cplusplus"]
 MFC wraps the Win32 Internet (WinInet) and ActiveX technology to make Internet programming easier.
 
 >[!IMPORTANT]
-> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 [CInternetSession](../mfc/reference/cinternetsession-class.md)<br/>
 Creates and initializes one Internet session or several simultaneous Internet sessions and, if necessary, describes the connection to a proxy server.

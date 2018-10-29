@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 Custom methods differ from stock methods in that they are not already implemented by `COleControl`. You must supply the implementation for each custom method you add to your control.
 
 >[!IMPORTANT]
-> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 An ActiveX control user can call a custom method at any time to perform control-specific actions. The dispatch map entry for custom methods is of the form DISP_FUNCTION.
 
