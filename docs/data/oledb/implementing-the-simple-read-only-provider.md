@@ -1,7 +1,7 @@
 ---
 title: "Implementing the Simple Read-Only Provider | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/26/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -21,4 +21,4 @@ The extended example in this topic shows how to edit the wizard-created files to
 
 ## See Also
 
-[Creating a Simple Read-Only Provider](../../data/oledb/creating-a-simple-read-only-provider.md)
+[Creating a Simple Read-Only Provider](../../data/oledb/creating-a-simple-read-only-provider.md)<br/>
