@@ -1850,31 +1850,27 @@ A<>::from_template_t<A<int>> a;
 
 ```
 
-In Visual Studio 2017 version 15.9, in /permissive- mode, the compiler raises C3861: *'from_template': identifier not found*. To remove the error, declare from_template
+In Visual Studio 2017 version 15.9, in **/permissive-** mode, the compiler raises C3861: *'from_template': identifier not found*.
 
 ### Modules changes
 
-The following changes pertain to the cl.exe command line:
+In Visual Studio 2017, version 15.9, the compiler raises C5050 whenever the command line options for modules are not consistent between the module creation and module consumption sides. In the following example, there are two issues:
 
-- The compiler raises C5050 whenever the command line options are not consistent between the module creation and module consumption, as shown in this example:
+- on the consumption side (main.cpp) the option **/EHsc** is not specified.
+- the C++ version is **/std:c++17** on the creation side and **/std:c++14** on the consumption side. 
 
 ```cmd
 cl /EHsc /std:c++17 m.ixx /experimental:module
 cl /experimental:module /module:reference m.ifc main.cpp /std:c++14
 ```
 
-In the previous example, there are two issues:
-
-1. the consumption side (main.cpp) the option **/EHsc** is not specified
-2. the C++ versions do not match. 
-
 The compiler raises C5050 for both of these cases: *warning C5050: Possible incompatible environment while importing module 'm': mismatched C++ versions.  Current "201402" module version "201703"*.
 
-The compiler raises C7536 whenever the .ifc file has been tampered with. The  header of the file contains an SHA2 hash of the contents below it. On import, the .ifc file is hashed in the same way and then checked against the hash provided in the header; if these do not match error C7536 is raised: *error C7536: ifc failed integrity checks.  Expected SHA2: '66d5c8154df0c71d4cab7665bab4a125c7ce5cb9a401a4d8b461b706ddd771c6'*.
+In addition, the compiler raises C7536 whenever the .ifc file has been tampered with. The  header of the file contains an SHA2 hash of the contents below it. On import, the .ifc file is hashed in the same way and then checked against the hash provided in the header; if these do not match error C7536 is raised: *ifc failed integrity checks.  Expected SHA2: '66d5c8154df0c71d4cab7665bab4a125c7ce5cb9a401a4d8b461b706ddd771c6'*.
 
 ### Partial ordering involving aliases and non-deduced contexts
 
-There is implementation divergence in the partial ordering rules here. In the following example, GCC gives the same ambiguous error as the Microsoft C++ compiler in **/permissive-** mode, while Clang accepts this code. 
+There is implementation divergence in the partial ordering rules involving aliases in non-deduced contexts. In the following example, GCC and the Microsoft C++ compiler (in **/permissive-** mode) raise an error, while Clang accepts the code. 
 
 ```cpp
 
@@ -1921,7 +1917,7 @@ int main()
 
 The previous example raises C2668:
 
-```cmd
+```output
 
 partial_alias.cpp(32): error C2668: 'f': ambiguous call to overloaded function
 partial_alias.cpp(18): note: could be 'int f<Alloc,void>(A<void> &,const AlignedBuffer<10,4> &)'
@@ -1935,7 +1931,7 @@ partial_alias.cpp(32): note: while trying to match the argument list '(A<void>, 
 
 The implementation divergence is due to a regression in the Standard wording where the resolution to core issue 2235 removed some text that would allow these overloads to be ordered. The current C++ standard does not provide a mechanism to partially order these functions, so they are considered ambiguous.
 
-As a workaround for the language, it is recommended to not rely on partial ordering to resolve this problem, and instead use SFINAE to remove particular overloads. In the provided example we use a helper class IsA to remove the first overload when "Alloc" is a specialization of A:
+As a workaround, we recommended that you not rely on partial ordering to resolve this problem, and instead use SFINAE to remove particular overloads. In the following example, we use a helper class `IsA` to remove the first overload when `Alloc` is a specialization of A:
 
 ```cpp
 #include <utility>
