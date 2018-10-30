@@ -1,15 +1,9 @@
 ---
-title: "Overview of Generics in C++/CLI | Microsoft Docs"
-ms.custom: ""
+title: "Overview of Generics in C++/CLI"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["generics [C++], about generics", "default initializers [C++]", "type parameters [C++]", "constructed types", "type arguments [C++]", "constructed types, open [C++]", "open constructed types [C++]", "constructed types, closed [C++]"]
 ms.assetid: 21f10637-0fce-4916-b925-6c86a126d3aa
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Overview of Generics in C++/CLI
 

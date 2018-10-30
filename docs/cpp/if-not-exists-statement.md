@@ -1,16 +1,9 @@
 ---
-title: "__if_not_exists Statement | Microsoft Docs"
-ms.custom: ""
+title: "__if_not_exists Statement"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__if_not_exists_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__if_not_exists keyword [C++]"]
 ms.assetid: a2f322d4-e96f-4a32-954e-4323d20c6e32
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __if_not_exists Statement
 

@@ -1,16 +1,10 @@
 ---
-title: "DontUseNewUseMake Class | Microsoft Docs"
-ms.custom: ""
+title: "DontUseNewUseMake Class"
 ms.date: "09/21/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::DontUseNewUseMake", "implements/Microsoft::WRL::Details::DontUseNewUseMake::operator new"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Details::DontUseNewUseMake class", "Microsoft::WRL::Details::DontUseNewUseMake::operator new operator"]
 ms.assetid: 8b38d07b-fc14-4cea-afb9-4c1a7dde0093
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # DontUseNewUseMake Class
 

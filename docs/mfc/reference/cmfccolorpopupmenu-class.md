@@ -1,16 +1,9 @@
 ---
-title: "CMFCColorPopupMenu Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCColorPopupMenu Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCColorPopupMenu", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu::CMFCColorPopupMenu", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu::CreateTearOffBar", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu::GetMenuBar", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu::SetPropList"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCColorPopupMenu [MFC], CMFCColorPopupMenu", "CMFCColorPopupMenu [MFC], CreateTearOffBar", "CMFCColorPopupMenu [MFC], GetMenuBar", "CMFCColorPopupMenu [MFC], SetPropList"]
 ms.assetid: 0bf9efe8-aed5-4ab7-b23b-eb284b4668be
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCColorPopupMenu Class
 

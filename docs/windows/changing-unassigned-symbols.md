@@ -1,16 +1,9 @@
 ---
-title: "Changing Unassigned Symbols | Microsoft Docs"
-ms.custom: ""
+title: "Changing Unassigned Symbols"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.symbol.changing.unassigned"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["symbols [C++], unassigned", "Change Symbol dialog box [C++]", "unassigned symbols"]
 ms.assetid: b6abee4a-3c24-4697-a166-fe6a86cad35f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Changing Unassigned Symbols
 

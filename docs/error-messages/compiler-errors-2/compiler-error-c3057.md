@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3057 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3057"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3057"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3057"]
 ms.assetid: b0b2ba88-9c74-4bec-bf60-8fc72eade34c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3057
 

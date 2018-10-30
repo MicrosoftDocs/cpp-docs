@@ -1,15 +1,8 @@
 ---
-title: Porting Data Applications | Microsoft Docs
-ms.custom: ""
+title: Porting Data Applications
 ms.date: "05/12/2017"
-ms.technology: ["devlang-cpp"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC [C++], data access applications", "databases [C++], MFC", "OLE DB [C++], data access technologies", "data [C++], data access technologies", "data access [C++], class libraries for databases"]
 ms.assetid: 8d10c285-c13f-4e6e-a09e-5ee0f2666b44
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 
 # Porting Data Applications

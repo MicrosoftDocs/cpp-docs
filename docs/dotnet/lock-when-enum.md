@@ -1,16 +1,10 @@
 ---
-title: "lock_when Enum | Microsoft Docs"
-ms.custom: ""
+title: "lock_when Enum"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["msclr::lock_when", "msclr.lock_when", "lock_when"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["lock_when enum"]
 ms.assetid: 6b87bbe9-63cd-450d-a02e-bb91ffd0dcea
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # lock_when Enum
 

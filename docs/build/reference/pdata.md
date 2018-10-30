@@ -1,16 +1,9 @@
 ---
-title: "-PDATA | Microsoft Docs"
-ms.custom: ""
+title: "/PDATA"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/pdata"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PDATA dumpbin option", "/PDATA dumpbin option", "-PDATA dumpbin option"]
 ms.assetid: 5d41d629-6576-4733-b103-0d61e6b77b50
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /PDATA
 

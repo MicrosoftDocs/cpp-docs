@@ -1,14 +1,7 @@
 ---
-title: "Unwind Data Definitions in C | Microsoft Docs"
-ms.custom: ""
+title: "Unwind Data Definitions in C"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 93cb6430-e4cf-43f5-ab60-3b57d1273b2c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Unwind Data Definitions in C
 

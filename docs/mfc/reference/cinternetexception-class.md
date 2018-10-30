@@ -1,16 +1,9 @@
 ---
-title: "CInternetException Class | Microsoft Docs"
-ms.custom: ""
+title: "CInternetException Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CInternetException", "AFXINET/CInternetException", "AFXINET/CInternetException::CInternetException", "AFXINET/CInternetException::m_dwContext", "AFXINET/CInternetException::m_dwError"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CInternetException [MFC], CInternetException", "CInternetException [MFC], m_dwContext", "CInternetException [MFC], m_dwError"]
 ms.assetid: 44fb3cbe-523e-4754-8843-a77909990b14
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CInternetException Class
 

@@ -1,16 +1,10 @@
 ---
-title: "hash_set (STL/CLR) | Microsoft Docs"
-ms.custom: ""
+title: "hash_set (STL/CLR)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::hash_set", "cliext::hash_set::begin", "cliext::hash_set::bucket_count", "cliext::hash_set::clear", "cliext::hash_set::const_iterator", "cliext::hash_set::const_reference", "cliext::hash_set::const_reverse_iterator", "cliext::hash_set::count", "cliext::hash_set::difference_type", "cliext::hash_set::empty", "cliext::hash_set::end", "cliext::hash_set::equal_range", "cliext::hash_set::erase", "cliext::hash_set::find", "cliext::hash_set::generic_container", "cliext::hash_set::generic_iterator", "cliext::hash_set::generic_reverse_iterator", "cliext::hash_set::generic_value", "cliext::hash_set::hash_delegate", "cliext::hash_set::hash_set", "cliext::hash_set::hasher", "cliext::hash_set::insert", "cliext::hash_set::iterator", "cliext::hash_set::key_comp", "cliext::hash_set::key_compare", "cliext::hash_set::key_type", "cliext::hash_set::load_factor", "cliext::hash_set::lower_bound", "cliext::hash_set::make_value", "cliext::hash_set::max_load_factor", "cliext::hash_set::operator=", "cliext::hash_set::rbegin", "cliext::hash_set::reference", "cliext::hash_set::rehash", "cliext::hash_set::rend", "cliext::hash_set::reverse_iterator", "cliext::hash_set::size", "cliext::hash_set::size_type", "cliext::hash_set::swap", "cliext::hash_set::to_array", "cliext::hash_set::upper_bound", "cliext::hash_set::value_comp", "cliext::hash_set::value_compare", "cliext::hash_set::value_type"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<cliext/hash_set> header [STL/CLR]", "hash_set class [STL/CLR]", "<hash_set> header [STL/CLR]", "begin member [STL/CLR]", "bucket_count member [STL/CLR]", "clear member [STL/CLR]", "const_iterator member [STL/CLR]", "const_reference member [STL/CLR]", "const_reverse_iterator member [STL/CLR]", "count member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "end member [STL/CLR]", "equal_range member [STL/CLR]", "erase member [STL/CLR]", "find member [STL/CLR]", "generic_container member [STL/CLR]", "generic_iterator member [STL/CLR]", "generic_reverse_iterator member [STL/CLR]", "generic_value member [STL/CLR]", "hash_delegate member [STL/CLR]", "hash_set member [STL/CLR]", "hasher member [STL/CLR]", "insert member [STL/CLR]", "iterator member [STL/CLR]", "key_comp member [STL/CLR]", "key_compare member [STL/CLR]", "key_type member [STL/CLR]", "load_factor member [STL/CLR]", "lower_bound member [STL/CLR]", "make_value member [STL/CLR]", "max_load_factor member [STL/CLR]", "operator= member [STL/CLR]", "rbegin member [STL/CLR]", "reference member [STL/CLR]", "rehash member [STL/CLR]", "rend member [STL/CLR]", "reverse_iterator member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "swap member [STL/CLR]", "to_array member [STL/CLR]", "upper_bound member [STL/CLR]", "value_comp member [STL/CLR]", "value_compare member [STL/CLR]", "value_type member [STL/CLR]"]
 ms.assetid: d110e356-ba3e-4e52-9e2d-d997bf975c96
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_set (STL/CLR)
 

@@ -1,16 +1,9 @@
 ---
-title: "no_smart_pointers | Microsoft Docs"
-ms.custom: ""
+title: "no_smart_pointers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["no_search_pointers"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["no_smart_pointers attribute"]
 ms.assetid: d69dd71e-08a8-4446-a3d0-a062dc29cb17
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # no_smart_pointers
 **C++ Specific**

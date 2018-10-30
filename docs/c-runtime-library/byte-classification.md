@@ -1,16 +1,9 @@
 ---
-title: "Byte classification | Microsoft Docs"
-ms.custom: ""
+title: "Byte classification"
 ms.date: "04/04/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.types.bytes"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["code page 932", "byte classification routines", "bytes, testing"]
 ms.assetid: 1cb52d71-fb0c-46ca-aad7-6472c1103370
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Byte classification
 

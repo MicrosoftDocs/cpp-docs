@@ -1,15 +1,8 @@
 ---
-title: "Tree Control Item Selection | Microsoft Docs"
-ms.custom: ""
+title: "Tree Control Item Selection"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["tree controls [MFC], item selection", "controls [MFC], selecting items in", "CTreeCtrl class [MFC], item selection", "item selection in tree controls"]
 ms.assetid: 7bcb3b16-b9c8-4c06-9350-7bc3c1c5009b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Tree Control Item Selection
 

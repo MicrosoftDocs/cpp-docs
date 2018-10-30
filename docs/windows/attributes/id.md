@@ -1,16 +1,9 @@
 ---
-title: "id (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "id (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.id"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["id attribute"]
 ms.assetid: a48d2c99-c5d2-4f46-bf96-5ac88dcb5d0c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # id
 

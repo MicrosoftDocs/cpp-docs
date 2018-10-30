@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4668 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4668"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4668"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4668"]
 ms.assetid: c6585460-bc4a-4a15-9242-4cbfce53c961
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4668
 

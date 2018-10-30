@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 3) C4359 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 3) C4359"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4359"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4359"]
 ms.assetid: d8fe993c-ef82-45a0-a43d-c29f9d1bacdb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4359
 

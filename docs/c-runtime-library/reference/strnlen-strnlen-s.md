@@ -1,19 +1,12 @@
 ---
-title: "strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l | Microsoft Docs"
-ms.custom: ""
+title: "strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["wcsnlen", "strnlen_s", "_mbstrnlen", "_mbsnlen_l", "_mbstrnlen_l", "strnlen", "wcsnlen_s", "_mbsnlen"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["wcsnlen", "strnlen_s", "_mbsnlen", "_mbsnlen_l", "_tcsnlen", "_tcscnlen", "_mbstrnlen_l", "wcsnlen_s", "_mbstrnlen", "strnlen", "_tcscnlen_l"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_tcscnlen function", "_mbstrnlen function", "_mbsnlen_l function", "lengths, strings", "mbstrnlen function", "mbsnlen_l function", "_mbstrnlen_l function", "_tcscnlen_l function", "wcsnlen_l function", "_tcsnlen function", "_mbsnlen function", "strnlen function", "mbsnlen function", "wcsnlen_s function", "strnlen_s function", "mbstrnlen_l function", "wcsnlen function", "string length", "strnlen_l function"]
 ms.assetid: cc05ce1c-72ea-4ae4-a7e7-4464e56e5f80
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l
 

@@ -1,16 +1,9 @@
 ---
-title: "&lt;functional&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;functional&gt; operators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["functional/std::operator!=", "functional/std::operator=="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["functional operators"]
 ms.assetid: d4b3c760-f3e2-4b65-bdaa-d42e8dd6f5e1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;functional&gt; operators
 

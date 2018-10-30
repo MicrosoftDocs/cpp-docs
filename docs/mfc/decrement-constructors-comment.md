@@ -1,15 +1,8 @@
 ---
-title: "-- Constructors Comment | Microsoft Docs"
-ms.custom: ""
+title: "-- Constructors Comment"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["constructors comment", "declarations, constructors", "MFC source files, Constructors comment", "declaring constructors, code comments", "comments, MFC", "comments, constructors comment", "constructors [MFC], declaring", "instance constructors, code comments"]
 ms.assetid: f400774e-ba85-49ed-85b7-70ef2f7dcb2b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # // Constructors Comment
 

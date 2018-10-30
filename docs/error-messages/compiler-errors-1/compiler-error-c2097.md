@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2097 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2097"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2097"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2097"]
 ms.assetid: 7e5b2fd4-f61c-4b8a-b265-93e987a04bd3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2097
 

@@ -1,16 +1,9 @@
 ---
-title: "Using CTabCtrl | Microsoft Docs"
-ms.custom: ""
+title: "Using CTabCtrl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CTabCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTabCtrl class [MFC], using", "tab controls [MFC], using"]
 ms.assetid: 6bda6798-0085-4c09-a5ea-fe0e97af5c95
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using CTabCtrl
 

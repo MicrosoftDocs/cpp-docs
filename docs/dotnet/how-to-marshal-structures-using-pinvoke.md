@@ -1,15 +1,9 @@
 ---
-title: "How to: Marshal Structures Using PInvoke | Microsoft Docs"
+title: "How to: Marshal Structures Using PInvoke"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["data marshaling [C++], structures", "platform invoke [C++], structures", "interop [C++], structures", "marshaling [C++], structures"]
 ms.assetid: 35997e6f-9251-4af3-8c6e-0712d64d6a5d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Structures Using PInvoke
 

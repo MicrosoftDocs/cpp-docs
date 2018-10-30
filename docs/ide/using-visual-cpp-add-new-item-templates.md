@@ -1,15 +1,8 @@
 ---
-title: "Using Visual C++ Add New Item Templates | Microsoft Docs"
-ms.custom: ""
+title: "Using Visual C++ Add New Item Templates"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Add New Item", "Add New Item templates", "Add New Item command", "templates, Add New Item"]
 ms.assetid: 286d1be6-0473-407f-9a51-437dff1bfab7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Visual C++ Add New Item Templates
 

@@ -1,15 +1,8 @@
 ---
-title: "Container Class::value_type | Microsoft Docs"
-ms.custom: ""
+title: "Container Class::value_type"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["value_type typedef"]
 ms.assetid: e89d5a71-b48c-47fa-aa78-682243e6e97f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Container Class::value_type
 

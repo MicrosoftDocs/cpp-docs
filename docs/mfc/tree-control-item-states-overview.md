@@ -1,15 +1,8 @@
 ---
-title: "Tree Control Item States Overview | Microsoft Docs"
-ms.custom: ""
+title: "Tree Control Item States Overview"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["states, CTreeCtrl items", "tree controls [MFC], item states overview", "CTreeCtrl class [MFC], item states"]
 ms.assetid: 2db11ae0-0d87-499d-8c1f-5e0dbe9e94c8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Tree Control Item States Overview
 

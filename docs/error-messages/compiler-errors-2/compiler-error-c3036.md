@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3036 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3036"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3036"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3036"]
 ms.assetid: 10c6993e-bc42-4a07-85c7-cdc34ac30906
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3036
 

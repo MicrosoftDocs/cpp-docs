@@ -1,15 +1,8 @@
 ---
-title: "Overload Resolution of Function Template Calls | Microsoft Docs"
-ms.custom: ""
+title: "Overload Resolution of Function Template Calls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["function templates overload resolution"]
 ms.assetid: a2918748-2cbb-4fc6-a176-e256f120bee4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Overload Resolution of Function Template Calls
 

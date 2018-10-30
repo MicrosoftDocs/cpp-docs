@@ -1,16 +1,9 @@
 ---
-title: "Using CSliderCtrl | Microsoft Docs"
-ms.custom: ""
+title: "Using CSliderCtrl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CSliderCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSliderCtrl class [MFC], using", "slider controls [MFC], using"]
 ms.assetid: 242c7bcd-126e-4b9b-8f76-8082ad06fe73
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using CSliderCtrl
 

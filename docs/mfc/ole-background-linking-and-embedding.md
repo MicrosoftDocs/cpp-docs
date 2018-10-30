@@ -1,15 +1,8 @@
 ---
-title: "OLE Background: Linking and Embedding | Microsoft Docs"
-ms.custom: ""
+title: "OLE Background: Linking and Embedding"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE embedded items [MFC]", "item types [MFC], defined", "item types [MFC]", "OLE [MFC], linked items", "linked items (OLE) [MFC]", "embedded objects [MFC]", "OLE items [MFC], types"]
 ms.assetid: 11107711-eb96-4099-8f5c-7910bb3ecb75
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OLE Background: Linking and Embedding
 

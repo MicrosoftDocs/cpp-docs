@@ -1,15 +1,8 @@
 ---
-title: "Working with Import Libraries and Export Files | Microsoft Docs"
-ms.custom: ""
+title: "Working with Import Libraries and Export Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["LIB [C++], /DEF option", "import libraries", "LIB [C++], import libraries and export files", "export files", "import libraries, creating"]
 ms.assetid: d8175596-9773-4c2f-959d-b05b065a5161
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Working with Import Libraries and Export Files
 

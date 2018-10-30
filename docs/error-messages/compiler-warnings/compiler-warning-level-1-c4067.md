@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4067 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4067"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4067"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4067"]
 ms.assetid: 1d10353e-8cd5-4b01-9184-a06189b965a4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4067
 

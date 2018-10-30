@@ -1,15 +1,8 @@
 ---
-title: "ActiveX Control Containers: Manually Enabling ActiveX Control Containment | Microsoft Docs"
-ms.custom: ""
+title: "ActiveX Control Containers: Manually Enabling ActiveX Control Containment"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["AfxEnableControlContainer method [MFC]", "ActiveX control containers [MFC], enabling", "ActiveX controls [MFC], enabling containers"]
 ms.assetid: 833bcde9-c9ad-4709-ad12-2fc2150fb6a5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ActiveX Control Containers: Manually Enabling ActiveX Control Containment
 

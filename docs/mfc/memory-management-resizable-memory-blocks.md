@@ -1,15 +1,8 @@
 ---
-title: "Memory Management: Resizable Memory Blocks | Microsoft Docs"
-ms.custom: ""
+title: "Memory Management: Resizable Memory Blocks"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["memory blocks [MFC], resizable", "memory [MFC], corruption", "memory allocation [MFC], memory block size", "memory blocks [MFC], allocating", "blocks [MFC], memory allocation", "resizable memory blocks [MFC]"]
 ms.assetid: f0efe6f4-a3ed-4541-9195-51ec1291967a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Memory Management: Resizable Memory Blocks
 

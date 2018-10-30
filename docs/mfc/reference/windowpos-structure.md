@@ -1,16 +1,9 @@
 ---
-title: "WINDOWPOS Structure | Microsoft Docs"
-ms.custom: ""
+title: "WINDOWPOS Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["WINDOWPOS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["WINDOWPOS structure [MFC]"]
 ms.assetid: a4ea7cd9-c4c2-4480-9c55-cbbff72195e1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # WINDOWPOS Structure
 

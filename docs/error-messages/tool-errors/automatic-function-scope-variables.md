@@ -1,15 +1,8 @@
 ---
-title: "Automatic (Function Scope) Variables | Microsoft Docs"
-ms.custom: ""
+title: "Automatic (Function Scope) Variables"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["automatic variables", "variables, automatic", "functions [C++], scope", "scope, declared within functions"]
 ms.assetid: 6e1a14c2-1fb0-4937-8628-8d963cc35ed4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Automatic (Function Scope) Variables
 

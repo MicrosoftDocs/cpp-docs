@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2394 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2394"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2394"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2394"]
 ms.assetid: 653fa9a0-29b3-48aa-bc01-82f98f717a2b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2394
 

@@ -1,15 +1,9 @@
 ---
-title: "Expressions (C++) | Microsoft Docs"
+title: "Expressions (C++)"
 ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["expressions [C++]"]
 ms.assetid: aaa1f250-7185-4113-b682-3f5e995943d1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Expressions (C++)
 

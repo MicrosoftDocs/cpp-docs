@@ -1,16 +1,9 @@
 ---
-title: "Add Class From ActiveX Control Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Add Class From ActiveX Control Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.class.axcontrol"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX Control Wizard", "Add Class from ActiveX Control Wizard [C++]"]
 ms.assetid: 668d801c-5fb6-4176-9191-5c38995a4713
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Add Class From ActiveX Control Wizard
 

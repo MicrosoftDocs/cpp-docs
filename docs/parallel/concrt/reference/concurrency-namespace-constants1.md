@@ -1,14 +1,8 @@
 ---
-title: "concurrency namespace constants | Microsoft Docs"
-ms.custom: ""
+title: "concurrency namespace constants"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["concrt/concurrency::AgentEventGuid", "concrt/concurrency::COOPERATIVE_TIMEOUT_INFINITE", "concrt/concurrency::COOPERATIVE_WAIT_TIMEOUT", "concrt/concurrency::ConcRTEventGuid", "concrt/concurrency::ConcRT_ProviderGuid", "concrt/concurrency::INHERIT_THREAD_PRIORITY", "concrt/concurrency::LockEventGuid", "concrt/concurrency::PPLParallelForEventGuid", "concrt/concurrency::PPLParallelForeachEventGuid", "concrt/concurrency::ResourceManagerEventGuid", "concrt/concurrency::ScheduleGroupEventGuid", "concrt/concurrency::VirtualProcessorEventGuid"]
-dev_langs: ["C++"]
 ms.assetid: 6f81fc4c-b10c-479e-8717-9c292360d5a0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # concurrency namespace constants
 

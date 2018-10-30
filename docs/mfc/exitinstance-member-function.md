@@ -1,16 +1,9 @@
 ---
-title: "ExitInstance Member Function | Microsoft Docs"
-ms.custom: ""
+title: "ExitInstance Member Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: []
-dev_langs: ["C++"]
 helpviewer_keywords: ["programs [MFC], terminating", "CWinApp class [MFC], ExitInstance", "ExitInstance method [MFC]"]
 ms.assetid: 5bb597bd-8dab-4d49-8bcf-9c45aa8be4a2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ExitInstance Member Function
 

@@ -1,16 +1,9 @@
 ---
-title: "struct (C++) | Microsoft Docs"
-ms.custom: ""
+title: "struct (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["struct_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["struct constructors"]
 ms.assetid: 3c6ba273-e248-4ff1-8c69-d2abcf1263c6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # struct (C++)
 

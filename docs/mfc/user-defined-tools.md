@@ -1,15 +1,8 @@
 ---
-title: "User-defined Tools | Microsoft Docs"
-ms.custom: ""
+title: "User-defined Tools"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["user-defined tools (MFC Extensions)"]
 ms.assetid: cb887421-78ce-4652-bc67-96a53984ccaa
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # User-defined Tools
 

@@ -1,16 +1,9 @@
 ---
-title: "Robustness | Microsoft Docs"
-ms.custom: ""
+title: "Robustness"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.runtime"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["robustness [CRT]"]
 ms.assetid: 7f1a87f8-eff9-4b76-ae9b-d133d3de6adf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Robustness
 

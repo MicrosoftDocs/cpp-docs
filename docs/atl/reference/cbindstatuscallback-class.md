@@ -1,16 +1,9 @@
 ---
-title: "CBindStatusCallback Class | Microsoft Docs"
-ms.custom: ""
+title: "CBindStatusCallback Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CBindStatusCallback", "ATLCTL/ATL::CBindStatusCallback", "ATLCTL/ATL::CBindStatusCallback::CBindStatusCallback", "ATLCTL/ATL::CBindStatusCallback::Download", "ATLCTL/ATL::CBindStatusCallback::GetBindInfo", "ATLCTL/ATL::CBindStatusCallback::GetPriority", "ATLCTL/ATL::CBindStatusCallback::OnDataAvailable", "ATLCTL/ATL::CBindStatusCallback::OnLowResource", "ATLCTL/ATL::CBindStatusCallback::OnObjectAvailable", "ATLCTL/ATL::CBindStatusCallback::OnProgress", "ATLCTL/ATL::CBindStatusCallback::OnStartBinding", "ATLCTL/ATL::CBindStatusCallback::OnStopBinding", "ATLCTL/ATL::CBindStatusCallback::StartAsyncDownload", "ATLCTL/ATL::CBindStatusCallback::m_dwAvailableToRead", "ATLCTL/ATL::CBindStatusCallback::m_dwTotalRead", "ATLCTL/ATL::CBindStatusCallback::m_pFunc", "ATLCTL/ATL::CBindStatusCallback::m_pT", "ATLCTL/ATL::CBindStatusCallback::m_spBindCtx", "ATLCTL/ATL::CBindStatusCallback::m_spBinding", "ATLCTL/ATL::CBindStatusCallback::m_spMoniker", "ATLCTL/ATL::CBindStatusCallback::m_spStream"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["asynchronous data transfer [C++]", "data transfer [C++]", "data transfer [C++], asynchronous", "CBindStatusCallback class"]
 ms.assetid: 0f5da276-6031-4418-b2a9-a4750ef29e77
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CBindStatusCallback Class
 

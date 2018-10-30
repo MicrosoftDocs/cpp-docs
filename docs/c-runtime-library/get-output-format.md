@@ -1,19 +1,12 @@
 ---
-title: "_get_output_format | Microsoft Docs"
-ms.custom: ""
+title: "_get_output_format"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apiname: ["_get_output_format"]
 apilocation: ["msvcr110_clr0400.dll", "msvcr100.dll", "msvcr80.dll", "msvcrt.dll", "msvcr90.dll", "msvcr120.dll", "msvcr110.dll"]
 apitype: "DLLExport"
 f1_keywords: ["get_output_format", "_get_output_format"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["output formatting", "get_output_format function", "_get_output_format function"]
 ms.assetid: 0ce42f3b-3479-41c4-bcbf-1d21f7ee37e7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _get_output_format
 

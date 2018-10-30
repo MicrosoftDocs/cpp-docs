@@ -1,16 +1,9 @@
 ---
-title: "remove_cv Class | Microsoft Docs"
-ms.custom: ""
+title: "remove_cv Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::remove_cv"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["remove_cv class", "remove_cv"]
 ms.assetid: 8502602a-1c80-479c-84e0-33bd1d6496d6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # remove_cv Class
 

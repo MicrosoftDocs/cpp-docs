@@ -1,15 +1,8 @@
 ---
-title: "Byte Indices | Microsoft Docs"
-ms.custom: ""
+title: "Byte Indices"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MBCS [C++], byte indices", "byte indices [C++]"]
 ms.assetid: f6e7774a-86c6-41c2-89e3-74fd46432e47
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Byte Indices
 

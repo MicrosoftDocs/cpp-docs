@@ -1,14 +1,8 @@
 ---
-title: "Compiler Warnings That Are Off by Default | Microsoft Docs"
+title: "Compiler Warnings That Are Off by Default"
 ms.date: "05/30/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["warnings, compiler", "cl.exe compiler, setting options"]
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler warnings that are off by default
 The compiler includes warnings that are turned off by default, because most developers don't want to see them. In some cases, they represent a stylistic choice, or are common idioms in older code, or take advantage of a Microsoft extension to the language. In other cases, they indicate an area where programmers often make incorrect assumptions, which may lead to unexpected or undefined behavior. Some of these warnings may be very noisy in library headers. The C runtime libraries and the C++ standard libraries are intended to emit no warnings only at warning level [/W4](../build/reference/compiler-option-warning-level.md).

@@ -1,15 +1,9 @@
 ---
-title: "nullptr  (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "nullptr  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["__nullptr keyword (C++)", "nullptr keyword [C++]"]
 ms.assetid: 594cfbf7-06cb-4366-9ede-c0b703e1d095
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # nullptr  (C++/CLI and C++/CX)
 

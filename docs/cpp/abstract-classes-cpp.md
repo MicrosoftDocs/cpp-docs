@@ -1,15 +1,8 @@
 ---
-title: "Abstract Classes (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Abstract Classes (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["classes [C++], abstract", "base classes [C++], abstract classes [C++]", "abstract classes [C++]", "derived classes [C++], abstract classes [C++]"]
 ms.assetid: f0c5975b-39de-4d68-9640-6ce57f4632e6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Abstract Classes (C++)
 

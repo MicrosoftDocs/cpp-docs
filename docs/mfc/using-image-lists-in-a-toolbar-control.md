@@ -1,15 +1,8 @@
 ---
-title: "Using Image Lists in a Toolbar Control | Microsoft Docs"
-ms.custom: ""
+title: "Using Image Lists in a Toolbar Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["toolbar controls [MFC], image", "image lists [MFC], toolbar controls", "CToolBarCtrl class [MFC], image lists"]
 ms.assetid: ccbe8df4-4ed9-4b54-bb93-9a1dcb3b97eb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Image Lists in a Toolbar Control
 

@@ -1,15 +1,8 @@
 ---
-title: "NMAKE Reference | Microsoft Docs"
-ms.custom: ""
+title: "NMAKE Reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft program maintenance utility", "preprocessing NMAKE", "program execution [C++]", "NMAKE program"]
 ms.assetid: 24fab6e3-7e43-4da4-957a-88afbbcf8661
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # NMAKE Reference
 

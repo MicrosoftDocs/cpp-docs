@@ -1,15 +1,8 @@
 ---
-title: "String Literal Concatenation | Microsoft Docs"
-ms.custom: ""
+title: "String Literal Concatenation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["concatenating strings", "strings [C++], concatenating"]
 ms.assetid: 51486b1f-4b1e-4061-9add-1aa38c6cdb3c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # String Literal Concatenation
 

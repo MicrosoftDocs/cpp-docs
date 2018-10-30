@@ -1,14 +1,7 @@
 ---
-title: "C.2 Rules | Microsoft Docs"
-ms.custom: ""
+title: "C.2 Rules"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 4d52fef7-3eb7-4480-a335-8ed48681092b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C.2 Rules
 

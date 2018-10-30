@@ -1,15 +1,8 @@
 ---
-title: "HLSL Property Pages: Advanced | Microsoft Docs"
-ms.custom: ""
+title: "HLSL Property Pages: Advanced"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["VC.Project.FXCompilerTool.SuppressStartupBanner", "VC.Project.FXCompilerTool.TreatWarningAsError"]
-dev_langs: ["C++"]
 ms.assetid: a4f05aed-2c0e-4e7d-b7a4-bc2f228112c5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # HLSL Property Pages: Advanced
 

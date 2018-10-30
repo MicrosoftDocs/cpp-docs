@@ -1,15 +1,8 @@
 ---
-title: "Cancellation in the PPL | Microsoft Docs"
-ms.custom: ""
+title: "Cancellation in the PPL"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["parallel algorithms, canceling [Concurrency Runtime]", "canceling parallel algorithms [Concurrency Runtime]", "parallel tasks, canceling [Concurrency Runtime]", "cancellation in the PPL", "parallel work trees [Concurrency Runtime]", "canceling parallel tasks [Concurrency Runtime]"]
 ms.assetid: baaef417-b2f9-470e-b8bd-9ed890725b35
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Cancellation in the PPL
 

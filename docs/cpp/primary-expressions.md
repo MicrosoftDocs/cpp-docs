@@ -1,15 +1,8 @@
 ---
-title: "Primary Expressions | Microsoft Docs"
-ms.custom: ""
+title: "Primary Expressions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["primary expressions", "expressions [C++], name", "expressions [C++], literal", "expressions [C++], primary", "expressions [C++], qualified names"]
 ms.assetid: 8ef9a814-6058-4b93-9b6e-e8eb8350b1ca
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Primary Expressions
 

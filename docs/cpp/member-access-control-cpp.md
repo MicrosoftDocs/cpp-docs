@@ -1,15 +1,8 @@
 ---
-title: "Member Access Control (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Member Access Control (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["access control [C++]", "member access [C++]", "member-access control [C++]"]
 ms.assetid: 2d596bca-56ad-4277-94e1-ce3db45fa14a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Member Access Control (C++)
 

@@ -1,16 +1,9 @@
 ---
-title: "MB_CUR_MAX | Microsoft Docs"
-ms.custom: ""
+title: "MB_CUR_MAX"
 ms.date: "10/18/2017"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["MB_CUR_MAX"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MB_CUR_MAX constant"]
 ms.assetid: fab22609-c14d-4c19-991c-bd09ff30e604
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # MB_CUR_MAX
 

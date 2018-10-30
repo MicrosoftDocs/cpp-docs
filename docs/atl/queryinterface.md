@@ -1,16 +1,10 @@
 ---
-title: "QueryInterface | Microsoft Docs"
-ms.custom: ""
+title: "QueryInterface"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["QueryInterface"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["interfaces, pointers", "interfaces, availability", "QueryInterface method"]
 ms.assetid: 62fce95e-aafa-4187-b50b-e6611b74c3b3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # QueryInterface
 

@@ -1,19 +1,12 @@
 ---
-title: "_expand | Microsoft Docs"
-ms.custom: ""
+title: "_expand"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_expand"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_bexpand", "fexpand", "expand", "nexpand", "_fexpand", "_nexpand", "bexpand", "_expand"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["memory blocks, changing size", "_expand function", "expand function"]
 ms.assetid: 4ac55410-39c8-45c7-bccd-3f1042ae2ed3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _expand
 

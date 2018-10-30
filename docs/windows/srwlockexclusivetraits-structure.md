@@ -1,16 +1,10 @@
 ---
-title: "SRWLockExclusiveTraits Structure | Microsoft Docs"
-ms.custom: ""
+title: "SRWLockExclusiveTraits Structure"
 ms.date: "09/27/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits", "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits::GetInvalidValue", "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits::Unlock"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits structure","Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits::GetInvalidValue method", "Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits::Unlock method"]
+helpviewer_keywords: ["Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits structure", "Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits::GetInvalidValue method", "Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits::Unlock method"]
 ms.assetid: 38a996ef-c2d7-4886-b413-a426ecee8f05
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLockExclusiveTraits Structure
 

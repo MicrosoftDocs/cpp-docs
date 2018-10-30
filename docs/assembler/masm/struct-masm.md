@@ -1,16 +1,9 @@
 ---
-title: "STRUCT (MASM) | Microsoft Docs"
-ms.custom: ""
+title: "STRUCT (MASM)"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["struct"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["STRUCT directive"]
 ms.assetid: 70c3ba6b-00db-461e-8dd9-eafd3ae5b3c8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # STRUCT (MASM)
 

@@ -1,16 +1,9 @@
 ---
-title: "New Toolbar Resource Dialog Box (C++) | Microsoft Docs"
-ms.custom: ""
+title: "New Toolbar Resource Dialog Box (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.newtoolbarresource"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["New Toolbar Resource dialog box [C++]"]
 ms.assetid: 52dd01ad-e748-4ab2-b3eb-59f5df990ca6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # New Toolbar Resource Dialog Box (C++)
 

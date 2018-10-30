@@ -1,14 +1,7 @@
 ---
-title: "E. Implementation-Defined Behaviors in OpenMP C/C++ | Microsoft Docs"
-ms.custom: ""
+title: "E. Implementation-Defined Behaviors in OpenMP C/C++"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: b8d660ca-9bb3-4b6b-87af-45c67d43a731
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # E. Implementation-Defined Behaviors in OpenMP C/C++
 

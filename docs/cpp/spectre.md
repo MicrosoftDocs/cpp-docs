@@ -1,15 +1,8 @@
 ---
-title: "spectre | Microsoft Docs"
-ms.custom: ""
+title: "spectre"
 ms.date: "1/23/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["spectre_cpp", "spectre", "nomitigation"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec keyword (C++), spectre", "spectre __declspec keyword"]
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # spectre
 

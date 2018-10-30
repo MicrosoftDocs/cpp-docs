@@ -1,15 +1,9 @@
 ---
-title: "How to: Determine if an Image is Native or CLR | Microsoft Docs"
+title: "How to: Determine if an Image is Native or CLR"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["common language runtime, image testing", "images [C++], CLR verification", "/clr compiler option [C++], detecting use in compilation", "common language runtime, /clr compiler option"]
 ms.assetid: 5a854822-6172-4b22-b236-320165412568
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Determine if an Image is Native or CLR
 

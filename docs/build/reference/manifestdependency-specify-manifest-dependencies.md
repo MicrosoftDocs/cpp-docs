@@ -1,16 +1,9 @@
 ---
-title: "-MANIFESTDEPENDENCY (Specify Manifest Dependencies) | Microsoft Docs"
-ms.custom: ""
+title: "/MANIFESTDEPENDENCY (Specify Manifest Dependencies)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.AdditionalManifestDependencies"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MANIFESTDEPENDENCY linker option", "/MANIFESTDEPENDENCY linker option", "-MANIFESTDEPENDENCY linker option"]
 ms.assetid: e4b68313-33a2-4c3e-908e-ac2b9f7d6a73
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /MANIFESTDEPENDENCY (Specify Manifest Dependencies)
 

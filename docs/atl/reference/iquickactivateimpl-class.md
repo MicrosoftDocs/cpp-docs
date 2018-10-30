@@ -1,16 +1,9 @@
 ---
-title: "IQuickActivateImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IQuickActivateImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IQuickActivateImpl", "ATLCTL/ATL::IQuickActivateImpl", "ATLCTL/ATL::IQuickActivateImpl::GetContentExtent", "ATLCTL/ATL::IQuickActivateImpl::QuickActivate", "ATLCTL/ATL::IQuickActivateImpl::SetContentExtent"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["activating ATL controls", "controls [ATL], activating", "IQuickActivateImpl class", "IQuickActivate ATL implementation"]
 ms.assetid: aa80c056-1041-494e-b21d-2acca7dc27ea
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IQuickActivateImpl Class
 

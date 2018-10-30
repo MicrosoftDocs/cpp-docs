@@ -1,15 +1,8 @@
 ---
-title: "Message Handling and Mapping | Microsoft Docs"
-ms.custom: ""
+title: "Message Handling and Mapping"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, messages", "message handling [MFC]", "message maps [MFC]"]
 ms.assetid: 62fe2a1b-944c-449d-a0f0-63c11ee0a3cb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Message Handling and Mapping
 

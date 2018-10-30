@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4947 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4947"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4947"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4947"]
 ms.assetid: 5a1d484e-b4c7-4de2-a145-d8dcfc2fc1d2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4947
 

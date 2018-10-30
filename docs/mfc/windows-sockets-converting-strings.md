@@ -1,15 +1,8 @@
 ---
-title: "Windows Sockets: Converting Strings | Microsoft Docs"
-ms.custom: ""
+title: "Windows Sockets: Converting Strings"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Windows Sockets [MFC], multibyte character string conversion", "sockets [MFC], multibyte character string conversion issues", "string conversion, multibyte character strings"]
 ms.assetid: 9df522b5-6b23-41e0-bb96-e4e623baf141
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: Converting Strings
 

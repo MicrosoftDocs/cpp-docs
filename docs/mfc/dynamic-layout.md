@@ -1,14 +1,7 @@
 ---
-title: "Dynamic Layout | Microsoft Docs"
-ms.custom: ""
+title: "Dynamic Layout"
 ms.date: "06/25/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 8598cfb2-c8d4-4f5a-bf2b-59dc4653e042
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dynamic Layout
 

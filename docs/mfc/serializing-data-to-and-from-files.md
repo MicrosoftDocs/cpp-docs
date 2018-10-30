@@ -1,15 +1,8 @@
 ---
-title: "Serializing Data to and from Files | Microsoft Docs"
-ms.custom: ""
+title: "Serializing Data to and from Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["documents [MFC], serialization", "documents [MFC], saving", "saving documents", "deserialization [MFC]", "serialization [MFC], role of document", "serialization [MFC], role of data", "data [MFC]", "data [MFC], serializing", "document data [MFC]"]
 ms.assetid: b42a0c68-4bc4-4012-9938-5433a26d2c24
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Serializing Data to and from Files
 

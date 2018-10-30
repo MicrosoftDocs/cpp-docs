@@ -1,15 +1,8 @@
 ---
-title: "Casting Integers to Floating-Point Values | Microsoft Docs"
-ms.custom: ""
+title: "Casting Integers to Floating-Point Values"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["integers, casting to floating-point values"]
 ms.assetid: 81fd5b7d-15eb-4c11-a8c8-e1621ff54fd3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Casting Integers to Floating-Point Values
 

@@ -1,16 +1,9 @@
 ---
-title: "add_const Class | Microsoft Docs"
-ms.custom: ""
+title: "add_const Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::add_const"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["add_const class", "add_const"]
 ms.assetid: 1262a1eb-8c9c-4dd6-9f43-88ba280182f1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # add_const Class
 

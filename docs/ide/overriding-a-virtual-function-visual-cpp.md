@@ -1,16 +1,9 @@
 ---
-title: "Overriding a Virtual Function (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "Overriding a Virtual Function (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.virtualfunc.override"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["virtual functions, overriding", "base classes, overriding virtual functions defined in", "Properties window, overriding virtual functions in"]
 ms.assetid: 2d8c76f2-7a6b-4c9c-8de5-4282ce7755b6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Overriding a Virtual Function (Visual C++)
 

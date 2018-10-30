@@ -1,15 +1,8 @@
 ---
-title: "Help Files (WinHelp) | Microsoft Docs"
-ms.custom: ""
+title: "Help Files (WinHelp)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["file types [C++], WinHelp files"]
 ms.assetid: 4fdcbd66-66b0-4866-894a-fd7b4c2557e4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Help Files (WinHelp)
 

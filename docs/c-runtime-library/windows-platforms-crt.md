@@ -1,16 +1,9 @@
 ---
-title: "Windows Platforms (CRT) | Microsoft Docs"
-ms.custom: ""
+title: "Windows Platforms (CRT)"
 ms.date: "02/02/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.programs"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRT, compatibility", "backward compatibility [C++], C run-time libraries", "compatibility [C++], C run-time libraries", "MBCS [C++], Win32 platforms", "operating systems [C++]", "Unicode [C++], Win32 platforms"]
 ms.assetid: 0aacaf45-6dc4-4908-bd52-57abac7b39f6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Windows Platforms (CRT)
 

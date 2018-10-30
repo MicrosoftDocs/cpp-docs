@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1205 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1205"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1205"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1205"]
 ms.assetid: f855c145-8cf7-4dd1-bb19-257ee38b8382
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1205
 

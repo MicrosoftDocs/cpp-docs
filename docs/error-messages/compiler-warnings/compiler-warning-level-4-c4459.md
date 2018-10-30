@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4459 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4459"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4459"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4459"]
 ms.assetid: ee9f6287-9c70-4b10-82a0-add82a13997f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4459
 

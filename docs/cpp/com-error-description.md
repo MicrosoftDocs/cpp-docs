@@ -1,16 +1,9 @@
 ---
-title: "_com_error::Description | Microsoft Docs"
-ms.custom: ""
+title: "_com_error::Description"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_error::Description"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Description method [C++]"]
 ms.assetid: 88191e24-4ee8-44a6-8c4c-3758e22e0548
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_error::Description
 

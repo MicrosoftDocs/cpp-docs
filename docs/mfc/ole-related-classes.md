@@ -1,16 +1,9 @@
 ---
-title: "OLE-Related Classes | Microsoft Docs"
-ms.custom: ""
+title: "OLE-Related Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.ole"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX classes [MFC]", "OLE classes [MFC]", "OLE [MFC], classes"]
 ms.assetid: 2135cf54-1d9d-4e0e-91b4-943b3440effa
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OLE-Related Classes
 

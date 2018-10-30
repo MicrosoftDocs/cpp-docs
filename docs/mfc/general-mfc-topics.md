@@ -1,15 +1,8 @@
 ---
-title: "General MFC Topics | Microsoft Docs"
-ms.custom: ""
+title: "General MFC Topics"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC", "class libraries [MFC], MFC", "MFC, application development"]
 ms.assetid: 617e9945-9bb3-471d-a3ba-e235fcfb55d1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # General MFC Topics
 

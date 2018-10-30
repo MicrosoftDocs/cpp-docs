@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3913 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3913"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3913"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3913"]
 ms.assetid: a678bfce-9524-470d-9f23-7d08ecb972c8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3913
 

@@ -1,15 +1,8 @@
 ---
-title: "ODBC Administrator | Microsoft Docs"
-ms.custom: ""
+title: "ODBC Administrator"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["installing ODBC", "ODBC data sources [C++], ODBC Administrator", "ODBC drivers [C++], installing", "ODBC [C++], ODBC Administrator", "Administrator in ODBC", "administration ODBC Administrator", "ODBC Administrator [C++]", "drivers [C++], ODBC"]
 ms.assetid: b8652790-3437-4e7d-bc83-6ea6981f008b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC Administrator
 

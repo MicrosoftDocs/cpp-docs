@@ -1,15 +1,8 @@
 ---
-title: "Update a column when another table contains a reference to the row | Microsoft Docs"
-ms.custom: ""
+title: "Update a column when another table contains a reference to the row"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["rowsets, column updates"]
 ms.assetid: abb5db69-055d-431f-b12d-ad2940a661ba
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Updating a Column When Another Table Contains a Reference to the Row
 

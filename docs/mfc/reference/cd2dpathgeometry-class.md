@@ -1,16 +1,9 @@
 ---
-title: "CD2DPathGeometry Class | Microsoft Docs"
-ms.custom: ""
+title: "CD2DPathGeometry Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CD2DPathGeometry", "AFXRENDERTARGET/CD2DPathGeometry", "AFXRENDERTARGET/CD2DPathGeometry::CD2DPathGeometry", "AFXRENDERTARGET/CD2DPathGeometry::Attach", "AFXRENDERTARGET/CD2DPathGeometry::Create", "AFXRENDERTARGET/CD2DPathGeometry::Destroy", "AFXRENDERTARGET/CD2DPathGeometry::Detach", "AFXRENDERTARGET/CD2DPathGeometry::GetFigureCount", "AFXRENDERTARGET/CD2DPathGeometry::GetSegmentCount", "AFXRENDERTARGET/CD2DPathGeometry::Open", "AFXRENDERTARGET/CD2DPathGeometry::Stream", "AFXRENDERTARGET/CD2DPathGeometry::m_pPathGeometry"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DPathGeometry [MFC], CD2DPathGeometry", "CD2DPathGeometry [MFC], Attach", "CD2DPathGeometry [MFC], Create", "CD2DPathGeometry [MFC], Destroy", "CD2DPathGeometry [MFC], Detach", "CD2DPathGeometry [MFC], GetFigureCount", "CD2DPathGeometry [MFC], GetSegmentCount", "CD2DPathGeometry [MFC], Open", "CD2DPathGeometry [MFC], Stream", "CD2DPathGeometry [MFC], m_pPathGeometry"]
 ms.assetid: 686216eb-5080-4242-ace5-8fa1ce96307c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CD2DPathGeometry Class
 

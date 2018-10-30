@@ -1,16 +1,9 @@
 ---
-title: "-ASSEMBLYLINKRESOURCE (Link to .NET Framework Resource) | Microsoft Docs"
-ms.custom: ""
+title: "/ASSEMBLYLINKRESOURCE (Link to .NET Framework Resource)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/ASSEMBLYLINKRESOURCE", "VC.Project.VCLinkerTool.AssemblyLinkResource"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-ASSEMBLYLINKRESOURCE linker option", "ASSEMBLYLINKRESOURCE linker option", "/ASSEMBLYLINKRESOURCE linker option"]
 ms.assetid: 8b6ad184-1b33-47a4-8513-4803cf915b64
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /ASSEMBLYLINKRESOURCE (Link to .NET Framework Resource)
 

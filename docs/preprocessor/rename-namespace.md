@@ -1,16 +1,9 @@
 ---
-title: "rename_namespace | Microsoft Docs"
-ms.custom: ""
+title: "rename_namespace"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["rename_namespace"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["rename_namespace attribute"]
 ms.assetid: 45006d2b-36cd-4bec-98b9-3b8ec45299e3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # rename_namespace
 

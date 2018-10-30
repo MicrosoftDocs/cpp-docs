@@ -1,14 +1,7 @@
 ---
-title: "Processor Manufacturer Programming Manuals | Microsoft Docs"
-ms.custom: ""
+title: "Processor Manufacturer Programming Manuals"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 61844163-de2f-419a-808e-04de39dfdddf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Processor Manufacturer Programming Manuals
 

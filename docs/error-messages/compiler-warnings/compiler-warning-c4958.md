@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning C4958 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning C4958"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4958"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4958"]
 ms.assetid: e79b9e9c-d572-4a3a-a3b6-60962b70864a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4958
 

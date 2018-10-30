@@ -1,15 +1,8 @@
 ---
-title: "Container Class::rend | Microsoft Docs"
-ms.custom: ""
+title: "Container Class::rend"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["rend method"]
 ms.assetid: 80f3dd04-dd2c-4b52-b0ed-d567ec5d186c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Container Class::rend
 

@@ -1,16 +1,9 @@
 ---
-title: "_com_error::WCodeToHRESULT | Microsoft Docs"
-ms.custom: ""
+title: "_com_error::WCodeToHRESULT"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_error::WCodeToHRESULT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["WCodeToHRESULT method [C++]"]
 ms.assetid: 0ec43a4b-ca91-42d5-b270-3fde9c8412ea
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_error::WCodeToHRESULT
 

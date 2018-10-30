@@ -1,16 +1,9 @@
 ---
-title: "money_put Class | Microsoft Docs"
-ms.custom: ""
+title: "money_put Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xlocmon/std::money_put", "xlocmon/std::money_put::char_type", "xlocmon/std::money_put::iter_type", "xlocmon/std::money_put::string_type", "xlocmon/std::money_put::do_put", "xlocmon/std::money_put::put"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::money_put [C++]", "std::money_put [C++], char_type", "std::money_put [C++], iter_type", "std::money_put [C++], string_type", "std::money_put [C++], do_put", "std::money_put [C++], put"]
 ms.assetid: f439fd56-c9b1-414c-95e1-66c918c6eee6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # money_put Class
 

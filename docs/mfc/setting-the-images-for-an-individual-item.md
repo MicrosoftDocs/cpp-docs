@@ -1,15 +1,8 @@
 ---
-title: "Setting the Images for an Individual Item | Microsoft Docs"
-ms.custom: ""
+title: "Setting the Images for an Individual Item"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["extended combo boxes [MFC], images", "images [MFC], combo box items"]
 ms.assetid: bde83db8-23a7-4e35-837a-c86447d2c0af
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Setting the Images for an Individual Item
 

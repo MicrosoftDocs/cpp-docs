@@ -1,16 +1,10 @@
 ---
-title: "lock::try_acquire | Microsoft Docs"
-ms.custom: ""
+title: "lock::try_acquire"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["try_acquire", "lock.try_acquire", "msclr.lock.try_acquire", "lock::try_acquire", "msclr::lock::try_acquire"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["lock::try_acquire"]
 ms.assetid: ef0649a9-e611-4495-84bd-2784533221d9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # lock::try_acquire
 

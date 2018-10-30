@@ -1,16 +1,9 @@
 ---
-title: "Run-Time Error Checking | Microsoft Docs"
-ms.custom: ""
+title: "Run-Time Error Checking"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.runtime"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["run-time error checking", "run-time errors, checking"]
 ms.assetid: c965dd01-57ad-4a3c-b1d6-5aa04f920501
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Run-Time Error Checking
 

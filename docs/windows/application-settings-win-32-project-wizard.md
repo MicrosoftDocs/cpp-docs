@@ -1,16 +1,9 @@
 ---
-title: "Application Settings, Win 32 Project Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Application Settings, Win 32 Project Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.appwiz.win32.appset"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["application settings [C++]", "Win32 Project Wizard, application settings"]
 ms.assetid: d6b818f0-9b23-4793-a6c5-df1c8c594bad
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Application Settings, Win 32 Project Wizard
 

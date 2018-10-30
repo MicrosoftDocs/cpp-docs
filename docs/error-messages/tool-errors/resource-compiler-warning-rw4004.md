@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Warning RW4004 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Warning RW4004"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RW4004"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RW4004"]
 ms.assetid: 596b6a89-9ce7-4ba7-bdcb-e8054c7efafa
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Warning RW4004
 

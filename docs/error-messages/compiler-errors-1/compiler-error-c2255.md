@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2255 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2255"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2255"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2255"]
 ms.assetid: 67dc4cb0-de6b-4405-bd64-d47736367a93
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2255
 

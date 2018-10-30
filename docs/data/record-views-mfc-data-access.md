@@ -1,15 +1,8 @@
 ---
-title: "Record Views  (MFC Data Access) | Microsoft Docs"
-ms.custom: ""
+title: "Record Views  (MFC Data Access)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC [C++], record views", "ODBC recordsets [C++], record views", "databases [C++], record views", "record views [C++]", "forms [C++], data access tasks"]
 ms.assetid: 562122d9-01d8-4284-acf6-ea109ab0408d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Views  (MFC Data Access)
 

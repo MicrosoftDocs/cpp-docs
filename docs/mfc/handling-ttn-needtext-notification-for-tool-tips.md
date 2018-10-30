@@ -1,16 +1,9 @@
 ---
-title: "Handling TTN_NEEDTEXT Notification for Tool Tips | Microsoft Docs"
-ms.custom: ""
+title: "Handling TTN_NEEDTEXT Notification for Tool Tips"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["TTN_NEEDTEXT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TTN_NEEDTEXT message [MFC]", "notifications [MFC], tool tips", "tool tips [MFC], notifications"]
 ms.assetid: d0370a65-21ba-4676-bcc5-8cf851bbb15c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Handling TTN_NEEDTEXT Notification for Tool Tips
 

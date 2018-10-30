@@ -1,14 +1,7 @@
 ---
-title: "MFC Wizards and Dialog Boxes | Microsoft Docs"
-ms.custom: ""
+title: "MFC Wizards and Dialog Boxes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 2fae0a2c-d147-4468-a547-f7b85df767a1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Wizards and Dialog Boxes
 

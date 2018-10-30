@@ -1,16 +1,9 @@
 ---
-title: "-P (Preprocess to a File) | Microsoft Docs"
-ms.custom: ""
+title: "/P (Preprocess to a File)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.GeneratePreprocessedFile", "/p", "VC.Project.VCCLWCECompilerTool.GeneratePreprocessedFile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/P compiler option [C++]", "-P compiler option [C++]", "P compiler option [C++]", "output files, preprocessor", "preprocessing output files"]
 ms.assetid: 123ee54f-8219-4a6f-9876-4227023d83fc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /P (Preprocess to a File)
 

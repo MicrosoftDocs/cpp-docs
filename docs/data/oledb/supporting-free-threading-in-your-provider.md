@@ -1,15 +1,8 @@
 ---
-title: "Supporting Free Threading in Your Provider | Microsoft Docs"
-ms.custom: ""
+title: "Supporting Free Threading in Your Provider"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, multithreaded", "threading [C++], providers"]
 ms.assetid: a91270dc-cdf9-4855-88e7-88a54be7cbe8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Supporting Free Threading in Your Provider
 

@@ -1,16 +1,9 @@
 ---
-title: "progress_reporter Class | Microsoft Docs"
-ms.custom: ""
+title: "progress_reporter Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["progress_reporter", "PPLTASKS/concurrency::progress_reporter", "PPLTASKS/concurrency::progress_reporter::progress_reporter", "PPLTASKS/concurrency::progress_reporter::report"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["progress_reporter class"]
 ms.assetid: b836efab-2d05-4649-b6fa-d15236f1f813
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # progress_reporter Class
 

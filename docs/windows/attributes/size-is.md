@@ -1,16 +1,9 @@
 ---
-title: "size_is (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "size_is (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.size_is"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["size_is attribute"]
 ms.assetid: 70192d09-f6c5-4d52-b3fe-303f8cb10aa5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # size_is
 

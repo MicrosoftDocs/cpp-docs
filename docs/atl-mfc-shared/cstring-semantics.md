@@ -1,15 +1,8 @@
 ---
-title: "CString Semantics | Microsoft Docs"
-ms.custom: ""
+title: "CString Semantics"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["semantics in Cstring", "CString objects, assignment semantics", "assignment statements, assigning CString objects"]
 ms.assetid: d4023480-526f-499a-85f6-324b4de5b85f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CString Semantics
 

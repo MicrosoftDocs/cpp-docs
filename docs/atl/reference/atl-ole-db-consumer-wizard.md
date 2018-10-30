@@ -1,16 +1,9 @@
 ---
-title: "ATL OLE DB Consumer Wizard | Microsoft Docs"
-ms.custom: ""
+title: "ATL OLE DB Consumer Wizard"
 ms.date: "08/31/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.consumer.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, adding ATL OLE DB consumers", "connection strings [C++], OLE DB consumers", "ATL OLE DB Consumer Wizard"]
 ms.assetid: dcb68ed1-2224-422f-9f7b-108a74864204
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL OLE DB Consumer Wizard
 

@@ -1,15 +1,8 @@
 ---
-title: "Using OLE DB Record Views | Microsoft Docs"
-ms.custom: ""
+title: "Using OLE DB Record Views"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB record views", "COleDBRecordView class, overview", "rowsets, record views", "record views, record view objects", "OLE DB, record views", "MFC, record views"]
 ms.assetid: 1cd3e595-ce08-43d8-a0a9-d03b5d3e24ce
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using OLE DB Record Views
 

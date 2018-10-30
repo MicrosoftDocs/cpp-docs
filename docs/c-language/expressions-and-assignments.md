@@ -1,15 +1,8 @@
 ---
-title: "Expressions and Assignments | Microsoft Docs"
-ms.custom: ""
+title: "Expressions and Assignments"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["assignment statements, values in expressions", "expressions [C]", "expressions [C], assigning values", "Visual C, expressions", "assignment operators, assigning values in expressions", "operators [C], assigning values", "assigning values in C", "Visual C, assignments"]
 ms.assetid: 9c72919f-0768-4b47-85ca-afdfec6847f4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Expressions and Assignments
 

@@ -1,15 +1,8 @@
 ---
-title: "MFC ActiveX Controls: Optimization | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Optimization"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], windowless", "flicker-free ActiveX controls", "MFC ActiveX controls [MFC], mouse interaction", "device contexts, unclipped for MFC ActiveX controls", "MFC ActiveX controls [MFC], optimizing", "performance, ActiveX controls", "optimization, ActiveX controls", "MFC ActiveX controls [MFC], flicker-free", "windowless MFC ActiveX controls", "MFC ActiveX controls [MFC], active/inactive state", "optimizing performance, ActiveX controls"]
 ms.assetid: 8b11f26a-190d-469b-b594-5336094a0109
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Optimization
 

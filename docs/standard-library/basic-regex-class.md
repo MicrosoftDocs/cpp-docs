@@ -1,16 +1,9 @@
 ---
-title: "basic_regex Class | Microsoft Docs"
-ms.custom: ""
+title: "basic_regex Class"
 ms.date: "09/10/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["regex/std::basic_regex"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["basic_regex class"]
 ms.assetid: 8a18c6b4-f22a-4cfd-bc16-b4267867ebc3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # basic_regex Class
 

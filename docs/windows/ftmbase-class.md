@@ -1,16 +1,10 @@
 ---
-title: "FtmBase Class | Microsoft Docs"
-ms.custom: ""
+title: "FtmBase Class"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["ftm/Microsoft::WRL::FtmBase", "ftm/Microsoft::WRL::FtmBaseCreateGlobalInterfaceTable", "ftm/Microsoft::WRL::FtmBase::DisconnectObject", "ftm/Microsoft::WRL::FtmBase::FtmBase", "ftm/Microsoft::WRL::FtmBase::GetMarshalSizeMax", "ftm/Microsoft::WRL::FtmBase::GetUnmarshalClass", "ftm/Microsoft::WRL::FtmBase::MarshalInterface", "ftm/Microsoft::WRL::FtmBase::marshaller_", "ftm/Microsoft::WRL::FtmBase::ReleaseMarshalData", "ftm/Microsoft::WRL::FtmBase::UnmarshalInterface"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::FtmBase class", "Microsoft::WRL::FtmBase::CreateGlobalInterfaceTable method", "Microsoft::WRL::FtmBase::DisconnectObject method", "Microsoft::WRL::FtmBase::FtmBase, constructor", "Microsoft::WRL::FtmBase::GetMarshalSizeMax method", "Microsoft::WRL::FtmBase::GetUnmarshalClass method", "Microsoft::WRL::FtmBase::MarshalInterface method", "Microsoft::WRL::FtmBase::marshaller_ data member", "Microsoft::WRL::FtmBase::ReleaseMarshalData method", "Microsoft::WRL::FtmBase::UnmarshalInterface method"]
 ms.assetid: 275f3b71-2975-4f92-89e7-d351e96496df
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # FtmBase Class
 

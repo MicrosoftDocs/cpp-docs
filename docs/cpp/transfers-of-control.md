@@ -1,15 +1,8 @@
 ---
-title: "Transfers of Control | Microsoft Docs"
-ms.custom: ""
+title: "Transfers of Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["control flow, branching", "control flow, transferring control"]
 ms.assetid: aa51e7f2-060f-4106-b0fe-331f04357423
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Transfers of Control
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2486 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2486"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2486"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2486"]
 ms.assetid: 436da349-6461-4e32-bfca-4f3e620108e2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2486
 

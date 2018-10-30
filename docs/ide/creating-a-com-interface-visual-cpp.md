@@ -1,16 +1,9 @@
 ---
-title: "Creating a COM Interface (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "Creating a COM Interface (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.com.creating.interfaces"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COM interfaces, creating"]
 ms.assetid: 1be84d3c-6886-4d1e-8493-56c4d38a96d4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating a COM Interface (Visual C++)
 

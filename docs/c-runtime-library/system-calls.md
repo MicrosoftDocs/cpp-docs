@@ -1,16 +1,9 @@
 ---
-title: "System Calls | Microsoft Docs"
-ms.custom: ""
+title: "System Calls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.system"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Windows [C++], system calls", "system calls"]
 ms.assetid: 0255f2ec-a5a0-487e-8b09-9dad001d81ed
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # System Calls
 

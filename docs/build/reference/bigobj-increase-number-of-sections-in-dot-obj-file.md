@@ -1,16 +1,9 @@
 ---
-title: "-bigobj (Increase Number of Sections in .Obj file) | Microsoft Docs"
-ms.custom: ""
+title: "/bigobj (Increase Number of Sections in .Obj file)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/bigobj"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-bigobj compiler option [C++]", "/bigobj compiler option [C++]", "bigobj compiler option [C++]"]
 ms.assetid: ba94d602-4015-4a8d-86ec-49241ab74c12
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /bigobj (Increase Number of Sections in .Obj file)
 

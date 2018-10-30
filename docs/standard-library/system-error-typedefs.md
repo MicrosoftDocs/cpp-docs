@@ -1,8 +1,6 @@
 ---
-title: "&lt;system_error&gt; typedefs | Microsoft Docs"
-ms.custom: ""
+title: "&lt;system_error&gt; typedefs"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["system_error/std::generic_errno"]
 ms.assetid: 28cf9f7d-9c28-4baa-a297-67c8260b07fb
 ---

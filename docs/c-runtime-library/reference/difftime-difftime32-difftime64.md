@@ -1,19 +1,12 @@
 ---
-title: "difftime, _difftime32, _difftime64 | Microsoft Docs"
-ms.custom: ""
+title: "difftime, _difftime32, _difftime64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_difftime32", "difftime", "_difftime64"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_difftime64", "difftime", "difftime64", "_difftime32", "difftime32"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_difftime32 function", "difftime function", "time, finding the difference", "difftime64 function", "_difftime64 function", "difftime32 function"]
 ms.assetid: 4cc0ac2b-fc7b-42c0-8283-8c9d10c566d0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # difftime, _difftime32, _difftime64
 

@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Fatal Error RC1009 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Fatal Error RC1009"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC1009"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC1009"]
 ms.assetid: c377a068-bcc3-4ec4-b725-eb6927e10128
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Fatal Error RC1009
 

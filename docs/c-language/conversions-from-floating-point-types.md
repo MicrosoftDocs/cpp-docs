@@ -1,15 +1,8 @@
 ---
-title: "Conversions from Floating-Point Types | Microsoft Docs"
-ms.custom: ""
+title: "Conversions from Floating-Point Types"
 ms.date: "01/29/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["converting floating point", "floating-point conversion"]
 ms.assetid: 96804c8e-fa3b-4742-9006-0082ed9e57f2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Conversions from floating-point types
 

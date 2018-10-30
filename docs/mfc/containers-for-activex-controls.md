@@ -1,15 +1,8 @@
 ---
-title: "Containers for ActiveX Controls | Microsoft Docs"
-ms.custom: ""
+title: "Containers for ActiveX Controls"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX control containers [MFC], application support"]
 ms.assetid: 5ff0bf37-07f4-49aa-ad9c-c63d3756243a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Containers for ActiveX Controls
 

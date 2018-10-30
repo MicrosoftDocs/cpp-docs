@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2371 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2371"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2371"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2371"]
 ms.assetid: d383993d-05ef-4e35-8129-3b58a6f7b7b7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2371
 

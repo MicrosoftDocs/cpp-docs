@@ -1,16 +1,9 @@
 ---
-title: "Commit-To-Disk Constants | Microsoft Docs"
-ms.custom: ""
+title: "Commit-To-Disk Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.constants"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["commit-to-disk constants"]
 ms.assetid: 0b903b23-b4fa-431e-a937-51d95f695ecf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Commit-To-Disk Constants
 

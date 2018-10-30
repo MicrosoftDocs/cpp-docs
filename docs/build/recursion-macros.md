@@ -1,15 +1,8 @@
 ---
-title: "Recursion Macros | Microsoft Docs"
-ms.custom: ""
+title: "Recursion Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["NMAKE program, recursion macros", "recursion macros", "macros, recursion"]
 ms.assetid: c53e5ae7-619e-46b1-bdc2-86d8c7798b1d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Recursion Macros
 

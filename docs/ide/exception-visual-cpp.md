@@ -1,16 +1,9 @@
 ---
-title: "&lt;exception&gt; (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "&lt;exception&gt; (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["exception", "<exception>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<exception> C++ XML tag", "exception C++ XML tag"]
 ms.assetid: 24451e79-9b89-4b77-98fb-702c6516b818
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # &lt;exception&gt; (Visual C++)
 

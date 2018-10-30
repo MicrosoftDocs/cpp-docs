@@ -1,14 +1,7 @@
 ---
-title: "3.1.1 omp_set_num_threads Function | Microsoft Docs"
-ms.custom: ""
+title: "3.1.1 omp_set_num_threads Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: b94cf2b5-8011-4a3b-ba56-676982642857
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 3.1.1 omp_set_num_threads Function
 

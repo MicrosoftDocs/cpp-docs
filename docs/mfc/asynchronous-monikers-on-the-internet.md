@@ -1,15 +1,8 @@
 ---
-title: "Asynchronous Monikers on the Internet | Microsoft Docs"
-ms.custom: ""
+title: "Asynchronous Monikers on the Internet"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX controls [MFC], asynchronous", "MFC, asynchronous monikers", "asynchronous monikers [MFC]", "Web applications [MFC], asynchronous", "downloading Internet resources and asynchronous monikers", "optimization [MFC], asynchronous downloading across Internet", "Internet [MFC], asynchronous downloading"]
 ms.assetid: 418b0c64-0046-4dae-8118-c9c762b5822e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Asynchronous Monikers on the Internet
 

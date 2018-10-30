@@ -1,19 +1,12 @@
 ---
-title: "strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l | Microsoft Docs"
-ms.custom: ""
+title: "strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["strncpy", "_strncpy_l", "_mbsncpy", "wcsncpy", "_mbsncpy_l", "_wcsncpy_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_fstrncpy", "strncpy", "_ftcsncpy", "_tcsnccpy_l", "_tcsnccpy", "_mbsncpy", "wcsncpy", "_tcsncpy", "_strncpy_l", "_mbsncpy_l", "_wcsncpy_l"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wcsncpy_l function", "characters [C++], copying", "mbsncpy_l function", "strncpy_l function", "wcsncpy function", "tcsnccpy function", "ftcsncpy function", "copying characters of strings", "_wcsncpy_l function", "_tcsnccpy function", "_tcsnccpy_l function", "strncpy function", "_tcsncpy function", "mbsncpy function", "_fstrncpy function", "_mbsncpy_l function", "tcsncpy_l function", "tcsnccpy_l function", "fstrncpy function", "strings [C++], copying", "_ftcsncpy function", "_tcsncpy_l function", "_mbsncpy function", "tcsncpy function", "_strncpy_l function"]
 ms.assetid: ac4345a1-a129-4f2f-bb8a-373ec58ab8b0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l
 

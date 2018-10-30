@@ -1,16 +1,9 @@
 ---
-title: "/Zc:trigraphs (Trigraphs Substitution) | Microsoft Docs"
-ms.custom: ""
+title: "/Zc:trigraphs (Trigraphs Substitution)"
 ms.date: "03/06/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Zc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "/Zc compiler options (C++)", "Conformance compiler options", "Zc compiler options (C++)"]
 ms.assetid: e3d6058f-400d-4966-a3aa-800cfdf69cbf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:trigraphs (Trigraphs Substitution)
 

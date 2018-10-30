@@ -1,16 +1,9 @@
 ---
-title: "GetProcAddress | Microsoft Docs"
-ms.custom: ""
+title: "GetProcAddress"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
 f1_keywords: ["GetProcAddress"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DLLs [C++], GetProcAddress", "ordinal exports [C++]", "GetProcAddress method"]
 ms.assetid: 48d14ae0-47ea-4c5d-96b1-2c158f1a26af
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # GetProcAddress
 

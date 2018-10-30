@@ -1,15 +1,8 @@
 ---
-title: "Optimizing Persistence and Initialization | Microsoft Docs"
-ms.custom: ""
+title: "Optimizing Persistence and Initialization"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], optimizing", "performance, ActiveX controls", "optimization, ActiveX controls", "optimizing performance, ActiveX controls"]
 ms.assetid: e821e19e-b9eb-49ab-b719-0743420ba80b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Optimizing Persistence and Initialization
 

@@ -1,15 +1,8 @@
 ---
-title: "Recordset: Dynamically Binding Data Columns (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: Dynamically Binding Data Columns (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC recordsets [C++], binding columns dynamically", "data binding [C++], recordset columns", "recordsets [C++], binding data", "data binding [C++], columns in recordsets", "columns [C++], binding to recordsets"]
 ms.assetid: bff67254-d953-4ae4-9716-91c348cb840b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Dynamically Binding Data Columns (ODBC)
 

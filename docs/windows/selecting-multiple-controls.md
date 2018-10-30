@@ -1,15 +1,8 @@
 ---
-title: "Selecting Multiple Controls | Microsoft Docs"
-ms.custom: ""
+title: "Selecting Multiple Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Dialog Editor [C++], selecting controls", "dialog box controls [C++], selecting in editor", "controls [C++], selecting", "controls [C++], removing from groups"]
 ms.assetid: efbdbade-0a3a-4328-b36e-a6376c06e8de
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Selecting Multiple Controls
 

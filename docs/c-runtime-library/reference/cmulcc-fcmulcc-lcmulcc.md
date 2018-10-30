@@ -1,18 +1,11 @@
 ---
-title: "_Cmulcc, _FCmulcc, _LCmulcc | Microsoft Docs"
-ms.custom: ""
+title: "_Cmulcc, _FCmulcc, _LCmulcc"
 ms.date: "03/30/2018"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["_Cmulcc", "_FCmulcc", "_LCmulcc"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_Cmulcc", "_FCmulcc", "_LCmulcc", "complex/_Cmulcc", "complex/_FCmulcc", "complex/_LCmulcc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_Cmulcc function", "_FCmulcc function", "_LCmulcc function"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _Cmulcc, _FCmulcc, _LCmulcc
 

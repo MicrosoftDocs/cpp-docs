@@ -1,15 +1,8 @@
 ---
-title: "HLSL Property Pages: Output Files | Microsoft Docs"
-ms.custom: ""
+title: "HLSL Property Pages: Output Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["VC.Project.FXCompilerTool.AssemblerOutput", "VC.Project.FXCompilerTool.ObjectFileOutput", "VC.Project.FXCompilerTool.HeaderFileOutput", "VC.Project.FXCompilerTool.VariableName", "VC.Project.FXCompilerTool.AssemblerOutputFile"]
-dev_langs: ["C++"]
 ms.assetid: c5ba1e72-30de-43eb-a15a-5b0ae58e55c2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # HLSL Property Pages: Output Files
 

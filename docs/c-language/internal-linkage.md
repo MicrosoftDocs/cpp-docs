@@ -1,15 +1,8 @@
 ---
-title: "Internal Linkage | Microsoft Docs"
-ms.custom: ""
+title: "Internal Linkage"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["internal linkage", "linkage [C++], internal"]
 ms.assetid: 80be7b51-c930-43db-94d6-4f09a64077bf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Internal Linkage
 

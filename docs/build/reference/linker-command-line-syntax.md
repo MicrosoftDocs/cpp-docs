@@ -1,15 +1,8 @@
 ---
-title: "Linker Command-Line Syntax | Microsoft Docs"
-ms.custom: ""
+title: "Linker Command-Line Syntax"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["linker [C++], syntax", "linker command line [C++]", "LINK tool [C++], command-line syntax"]
 ms.assetid: e2a31e17-77bd-4e74-9305-75b105b26539
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Command-Line Syntax
 

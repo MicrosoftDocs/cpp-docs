@@ -1,15 +1,8 @@
 ---
-title: "Iteration Statements (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Iteration Statements (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["iteration statements", "loop structures, iteration statements"]
 ms.assetid: bf6d75f7-ead2-426a-9c47-33847f59b8c7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Iteration Statements (C++)
 

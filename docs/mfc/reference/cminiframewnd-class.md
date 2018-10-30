@@ -1,16 +1,9 @@
 ---
-title: "CMiniFrameWnd Class | Microsoft Docs"
-ms.custom: ""
+title: "CMiniFrameWnd Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMiniFrameWnd", "AFXWIN/CMiniFrameWnd", "AFXWIN/CMiniFrameWnd::CMiniFrameWnd", "AFXWIN/CMiniFrameWnd::Create", "AFXWIN/CMiniFrameWnd::CreateEx"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMiniFrameWnd [MFC], CMiniFrameWnd", "CMiniFrameWnd [MFC], Create", "CMiniFrameWnd [MFC], CreateEx"]
 ms.assetid: b8f534ed-0532-4d8e-9657-5595cf677749
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMiniFrameWnd Class
 

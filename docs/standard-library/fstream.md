@@ -1,16 +1,9 @@
 ---
-title: "&lt;fstream&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;fstream&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<fstream>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["fstream header"]
 ms.assetid: 660de351-0489-41df-b239-40e0cdcab46b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;fstream&gt;
 

@@ -1,16 +1,9 @@
 ---
-title: "binary_negate Class | Microsoft Docs"
-ms.custom: ""
+title: "binary_negate Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xfunctional/std::binary_negate"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["binary_negate class"]
 ms.assetid: 7b86f02c-af7e-4c7f-9df1-08addae4dd65
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # binary_negate Class
 

@@ -1,15 +1,8 @@
 ---
-title: "Destroying the List Control | Microsoft Docs"
-ms.custom: ""
+title: "Destroying the List Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["list controls [MFC], destroying", "CListCtrl class [MFC], destroying controls"]
 ms.assetid: 513ec820-3a02-49d2-b073-a6a7a3fc91b3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Destroying the List Control
 

@@ -1,14 +1,7 @@
 ---
-title: "2.4.1 for Construct | Microsoft Docs"
-ms.custom: ""
+title: "2.4.1 for Construct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 27d2cbce-786b-4819-91d3-d55b2cc57a5e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.4.1 for Construct
 

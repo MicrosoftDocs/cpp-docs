@@ -1,10 +1,7 @@
 ---
-title: "&lt;unordered_map&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;unordered_map&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["unordered_map/std::operator!=", "unordered_map/std::operator=="]
-dev_langs: ["C++"]
 ms.assetid: 9d5add0b-84bd-4a79-bd82-3f58b55145ed
 ---
 # &lt;unordered_map&gt; operators

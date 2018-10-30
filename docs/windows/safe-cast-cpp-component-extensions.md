@@ -1,16 +1,10 @@
 ---
-title: "safe_cast (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "safe_cast (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["safe_cast", "safe_cast_cpp", "stdcli::language::safe_cast"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["safe_cast keyword [C++]"]
 ms.assetid: 4fa688bf-a8ec-49bc-a4c5-f48134efa4f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # safe_cast (C++/CLI and C++/CX)
 

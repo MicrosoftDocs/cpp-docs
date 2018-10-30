@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3142 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3142"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3142"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3142"]
 ms.assetid: 795137ad-d00a-4a9c-9665-0cd8bfb5da8b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3142
 

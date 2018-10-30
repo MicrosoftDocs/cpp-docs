@@ -1,15 +1,8 @@
 ---
-title: "C Keywords | Microsoft Docs"
-ms.custom: ""
+title: "C Keywords"
 ms.date: "10/09/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["keywords [C]", "redefining keywords", "Microsoft-specific keywords"]
 ms.assetid: 2d932335-97bf-45cd-b367-4ae00db0ff42
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Keywords
 

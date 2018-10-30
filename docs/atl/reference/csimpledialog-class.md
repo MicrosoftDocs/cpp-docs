@@ -1,16 +1,9 @@
 ---
-title: "CSimpleDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "CSimpleDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CSimpleDialog", "ATLWIN/ATL::CSimpleDialog", "ATLWIN/ATL::CSimpleDialog::DoModal"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSimpleDialog class", "CSimpleDialog class, modal dialog boxes in ATL", "dialog boxes, modal", "modal dialog boxes, ATL"]
 ms.assetid: 2ae65cc9-4f32-4168-aecd-200b4a480fdf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSimpleDialog Class
 

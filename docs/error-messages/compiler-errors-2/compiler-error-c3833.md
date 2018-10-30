@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3833 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3833"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3833"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3833"]
 ms.assetid: 8152be53-e01e-48cd-9eef-9de38723664c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3833
 

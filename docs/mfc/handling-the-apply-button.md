@@ -1,15 +1,8 @@
 ---
-title: "Handling the Apply Button | Microsoft Docs"
-ms.custom: ""
+title: "Handling the Apply Button"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Apply button in property sheet", "property sheets, Apply button"]
 ms.assetid: 7e977015-59b8-406f-b545-aad0bfd8d55b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Handling the Apply Button
 

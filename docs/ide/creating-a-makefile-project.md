@@ -1,16 +1,9 @@
 ---
-title: "Creating a C++ Makefile Project | Microsoft Docs"
-ms.custom: ""
+title: "Creating a C++ Makefile Project"
 ms.date: "10/19/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.appwiz.makefile.project"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Makefile projects, creating", "project files [C++], Makefile projects"]
 ms.assetid: dd077af3-97a8-48fb-baaa-cf7e07ddef61
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating a C++ Makefile Project
 

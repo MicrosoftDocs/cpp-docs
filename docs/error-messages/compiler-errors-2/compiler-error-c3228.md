@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3228 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3228"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3228"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3228"]
 ms.assetid: 9015adf9-17b0-4312-b4a7-c1f33e4126f4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3228
 

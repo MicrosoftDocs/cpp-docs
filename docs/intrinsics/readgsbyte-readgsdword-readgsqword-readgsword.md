@@ -1,16 +1,9 @@
 ---
-title: "__readgsbyte, __readgsdword, __readgsqword, __readgsword | Microsoft Docs"
-ms.custom: ""
+title: "__readgsbyte, __readgsdword, __readgsqword, __readgsword"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__readgsbyte", "__readgsdword", "__readgsqword", "__readgsword"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__readgsword intrinsic", "__readgsdword intrinsic", "__readgsqword intrinsic", "__readgsbyte intrinsic"]
 ms.assetid: f822632d-854c-4558-a71b-cdfc3eea2236
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __readgsbyte, __readgsdword, __readgsqword, __readgsword
 

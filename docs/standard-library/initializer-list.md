@@ -1,14 +1,7 @@
 ---
-title: "&lt;initializer_list&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;initializer_list&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 820b6448-fb01-49a4-aeaa-546ad7576ea4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;initializer_list&gt;
 

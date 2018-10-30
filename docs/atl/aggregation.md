@@ -1,15 +1,8 @@
 ---
-title: "Aggregation | Microsoft Docs"
-ms.custom: ""
+title: "Aggregation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["aggregation [C++]", "aggregate objects [C++]"]
 ms.assetid: 7125bb8e-b269-4b50-9bba-295b467a54cc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Aggregation
 

@@ -1,16 +1,9 @@
 ---
-title: "CDaoTableDefInfo Structure | Microsoft Docs"
-ms.custom: ""
+title: "CDaoTableDefInfo Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDaoTableDefInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoTableDefInfo structure [MFC]", "DAO (Data Access Objects), TableDefs collection"]
 ms.assetid: c01ccebb-5615-434e-883c-4f60eac943dd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDaoTableDefInfo Structure
 

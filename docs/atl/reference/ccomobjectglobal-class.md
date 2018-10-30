@@ -1,16 +1,9 @@
 ---
-title: "CComObjectGlobal Class | Microsoft Docs"
-ms.custom: ""
+title: "CComObjectGlobal Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComObjectGlobal", "ATLCOM/ATL::CComObjectGlobal", "ATLCOM/ATL::CComObjectGlobal::CComObjectGlobal", "ATLCOM/ATL::CComObjectGlobal::AddRef", "ATLCOM/ATL::CComObjectGlobal::QueryInterface", "ATLCOM/ATL::CComObjectGlobal::Release", "ATLCOM/ATL::CComObjectGlobal::m_hResFinalConstruct"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComObjectGlobal class"]
 ms.assetid: 79bdee55-66e4-4536-b5b3-bdf09f78b9a6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComObjectGlobal Class
 

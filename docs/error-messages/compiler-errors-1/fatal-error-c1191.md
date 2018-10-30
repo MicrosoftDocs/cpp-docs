@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1191 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1191"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1191"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1191"]
 ms.assetid: 2888c6c4-b4e6-449e-8ee0-7917f31086df
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1191
 

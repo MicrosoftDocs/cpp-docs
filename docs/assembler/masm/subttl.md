@@ -1,16 +1,9 @@
 ---
-title: "SUBTTL | Microsoft Docs"
-ms.custom: ""
+title: "SUBTTL"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["SUBTTL"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SUBTTL directive"]
 ms.assetid: 927efadd-ec99-4de9-b64d-229bb2df3bf4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # SUBTTL
 

@@ -1,15 +1,8 @@
 ---
-title: "Concurrency Runtime | Microsoft Docs"
-ms.custom: ""
+title: "Concurrency Runtime"
 ms.date: "07/20/2018"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Concurrency Runtime, getting started", "ConcRT (see Concurrency Runtime)", "Concurrency Runtime"]
 ms.assetid: 874bc58f-8dce-483e-a3a1-4dcc9e52ed2c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Concurrency Runtime
 

@@ -1,14 +1,7 @@
 ---
-title: "Including Bracketed Filenames | Microsoft Docs"
-ms.custom: ""
+title: "Including Bracketed Filenames"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 6a4e5411-c35e-48b8-90ef-b37ac324ed94
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Including Bracketed Filenames
 

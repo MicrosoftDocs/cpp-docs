@@ -1,16 +1,9 @@
 ---
-title: "Creating a Device Image (Image Editor for Icons) | Microsoft Docs"
-ms.custom: ""
+title: "Creating a Device Image (Image Editor for Icons)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.icon"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cursors [C++], creating", "icons [C++], creating", "display devices [C++], creating image", "images [C++], creating for display devices", "icons [C++], inserting"]
 ms.assetid: 5a536928-32df-4ace-beb1-1521ce3b871f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating a Device Image (Image Editor for Icons)
 

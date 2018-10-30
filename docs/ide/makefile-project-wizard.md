@@ -1,16 +1,9 @@
 ---
-title: "Makefile Project Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Makefile Project Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.appwiz.makefile.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Makefile projects, Makefile Project Wizard", "MakeFile Project Wizard [Visual Studio]"]
 ms.assetid: 38219802-320d-4c48-a118-4792de8f3b2d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Makefile Project Wizard
 

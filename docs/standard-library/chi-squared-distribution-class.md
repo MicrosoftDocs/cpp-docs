@@ -1,16 +1,9 @@
 ---
-title: "chi_squared_distribution Class | Microsoft Docs"
-ms.custom: ""
+title: "chi_squared_distribution Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["random/std::chi_squared_distribution", "random/std::chi_squared_distribution::reset", "random/std::chi_squared_distribution::n", "random/std::chi_squared_distribution::param", "random/std::chi_squared_distribution::min", "random/std::chi_squared_distribution::max", "random/std::chi_squared_distribution::operator()", "random/std::chi_squared_distribution::param_type", "random/std::chi_squared_distribution::param_type::n", "random/std::chi_squared_distribution::param_type::operator==", "random/std::chi_squared_distribution::param_type::operator!="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::chi_squared_distribution [C++]", "std::chi_squared_distribution [C++], reset", "std::chi_squared_distribution [C++], n", "std::chi_squared_distribution [C++], param", "std::chi_squared_distribution [C++], min", "std::chi_squared_distribution [C++], max", "std::chi_squared_distribution [C++], param_type", "std::chi_squared_distribution [C++], param_type"]
 ms.assetid: 9b603fbe-cafd-4a92-b8c5-a434d60b8122
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # chi_squared_distribution Class
 

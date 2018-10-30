@@ -1,14 +1,7 @@
 ---
-title: "2.4.3 single Construct | Microsoft Docs"
-ms.custom: ""
+title: "2.4.3 single Construct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 15c180cd-e462-4b41-bf8c-cb8b1afb1a9b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.4.3 single Construct
 

@@ -1,14 +1,7 @@
 ---
-title: "Optimizing Your Code | Microsoft Docs"
-ms.custom: ""
+title: "Optimizing Your Code"
 ms.date: "12/28/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["performance, optimizing code", "optimization", "cl.exe compiler, performance", "optimization, C++ code", "code, optimizing", "performance, compiler"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Optimizing your code
 

@@ -1,16 +1,10 @@
 ---
-title: "IsBaseOfStrict Structure | Microsoft Docs"
-ms.custom: ""
+title: "IsBaseOfStrict Structure"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal/Microsoft::WRL::Details::IsBaseOfStrict", "internal/Microsoft::WRL::Details::IsBaseOfStrict::value"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Details::IsBaseOfStrict structure", "Microsoft::WRL::Details::IsBaseOfStrict::value constant"]
 ms.assetid: 6fed7366-c8d4-4991-b4fb-43ed93f8e1bf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # IsBaseOfStrict Structure
 

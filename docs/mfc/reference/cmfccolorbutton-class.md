@@ -1,16 +1,9 @@
 ---
-title: "CMFCColorButton Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCColorButton Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCColorButton", "AFXCOLORBUTTON/CMFCColorButton", "AFXCOLORBUTTON/CMFCColorButton::CMFCColorButton", "AFXCOLORBUTTON/CMFCColorButton::EnableAutomaticButton", "AFXCOLORBUTTON/CMFCColorButton::EnableOtherButton", "AFXCOLORBUTTON/CMFCColorButton::GetAutomaticColor", "AFXCOLORBUTTON/CMFCColorButton::GetColor", "AFXCOLORBUTTON/CMFCColorButton::SetColor", "AFXCOLORBUTTON/CMFCColorButton::SetColorName", "AFXCOLORBUTTON/CMFCColorButton::SetColumnsNumber", "AFXCOLORBUTTON/CMFCColorButton::SetDocumentColors", "AFXCOLORBUTTON/CMFCColorButton::SetPalette", "AFXCOLORBUTTON/CMFCColorButton::SizeToContent", "AFXCOLORBUTTON/CMFCColorButton::IsDrawXPTheme", "AFXCOLORBUTTON/CMFCColorButton::OnDraw", "AFXCOLORBUTTON/CMFCColorButton::OnDrawBorder", "AFXCOLORBUTTON/CMFCColorButton::OnDrawFocusRect", "AFXCOLORBUTTON/CMFCColorButton::OnShowColorPopup", "AFXCOLORBUTTON/CMFCColorButton::RebuildPalette", "AFXCOLORBUTTON/CMFCColorButton::UpdateColor", "AFXCOLORBUTTON/CMFCColorButton::m_bEnabledInCustomizeMode"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCColorButton [MFC], CMFCColorButton", "CMFCColorButton [MFC], EnableAutomaticButton", "CMFCColorButton [MFC], EnableOtherButton", "CMFCColorButton [MFC], GetAutomaticColor", "CMFCColorButton [MFC], GetColor", "CMFCColorButton [MFC], SetColor", "CMFCColorButton [MFC], SetColorName", "CMFCColorButton [MFC], SetColumnsNumber", "CMFCColorButton [MFC], SetDocumentColors", "CMFCColorButton [MFC], SetPalette", "CMFCColorButton [MFC], SizeToContent", "CMFCColorButton [MFC], IsDrawXPTheme", "CMFCColorButton [MFC], OnDraw", "CMFCColorButton [MFC], OnDrawBorder", "CMFCColorButton [MFC], OnDrawFocusRect", "CMFCColorButton [MFC], OnShowColorPopup", "CMFCColorButton [MFC], RebuildPalette", "CMFCColorButton [MFC], UpdateColor", "CMFCColorButton [MFC], m_bEnabledInCustomizeMode"]
 ms.assetid: 9fdf34ae-4cc5-4c5e-9d89-1c50e8a73699
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCColorButton Class
 

@@ -1,15 +1,8 @@
 ---
-title: "Exception Specifications (throw, noexcept) (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Exception Specifications (throw, noexcept) (C++)"
 ms.date: "01/18/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["exceptions [C++], exception specifications", "throwing exceptions [C++], throw keyword", "C++ exception handling [C++], throwing exceptions", "throw keyword [C++]", "noexcept keyword [C++]"]
 ms.assetid: 4d3276df-6f31-4c7f-8cab-b9d2d003a629
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exception Specifications (throw, noexcept) (C++)
 

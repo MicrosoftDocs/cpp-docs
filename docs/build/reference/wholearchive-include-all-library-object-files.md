@@ -1,13 +1,7 @@
 ---
-title: "-WHOLEARCHIVE (Include All Library Object Files) | Microsoft Docs"
-ms.custom: ""
+title: "/WHOLEARCHIVE (Include All Library Object Files)"
 ms.date: "11/04/2016"
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: ee92d12f-18af-4602-9683-d6223be62ac9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /WHOLEARCHIVE (Include All Library Object Files)
 

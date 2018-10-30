@@ -1,14 +1,7 @@
 ---
-title: "2.3 parallel Construct | Microsoft Docs"
-ms.custom: ""
+title: "2.3 parallel Construct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 190eacdf-2c16-4c06-8cb7-ac60eb211425
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.3 parallel Construct
 

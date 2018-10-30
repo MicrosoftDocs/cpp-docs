@@ -1,16 +1,9 @@
 ---
-title: ".CODE | Microsoft Docs"
-ms.custom: ""
+title: ".CODE"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".CODE"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".CODE directive"]
 ms.assetid: 2b8c882c-c0d2-4fa3-8335-e6b12717a4f4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .CODE
 

@@ -1,15 +1,8 @@
 ---
-title: "Null Statement (C) | Microsoft Docs"
-ms.custom: ""
+title: "Null Statement (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["semicolon, C null statement", "expressions [C++], null", "null statement", "null values, expressions"]
 ms.assetid: 72576ce6-26d0-4379-be65-fee522088790
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Null Statement (C)
 

@@ -1,19 +1,12 @@
 ---
-title: "_gcvt | Microsoft Docs"
-ms.custom: ""
+title: "_gcvt"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_gcvt"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_gcvt"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_gcvt function", "_CVTBUFSIZE", "gcvt function", "floating-point functions, converting number to string", "numbers, converting to strings", "conversions, floating point to strings", "strings [C++], converting from floating point", "CVTBUFSIZE"]
 ms.assetid: 5761411e-c06b-409a-912f-810fe7f4bcb5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _gcvt
 

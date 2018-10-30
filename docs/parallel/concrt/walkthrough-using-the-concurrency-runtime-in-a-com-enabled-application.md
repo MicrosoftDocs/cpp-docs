@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Using the Concurrency Runtime in a COM-Enabled Application | Microsoft Docs"
-ms.custom: ""
+title: "Walkthrough: Using the Concurrency Runtime in a COM-Enabled Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Concurrency Runtime, use with COM", "COM, use with the Concurrency Runtime"]
 ms.assetid: a7c798b8-0fc8-4bee-972f-22ef158f7f48
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Using the Concurrency Runtime in a COM-Enabled Application
 

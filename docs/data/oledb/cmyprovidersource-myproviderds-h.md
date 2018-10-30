@@ -1,16 +1,9 @@
 ---
-title: "CCustomSource (CustomDS.H) | Microsoft Docs"
-ms.custom: ""
+title: "CCustomSource (CustomDS.H)"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["myproviderds.h", "cmyprovidersource", "customds.h", "ccustomsource"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, wizard-generated files", "CMyProviderSource class in MyProviderDS.H", "CCustomSource class in CustomDS.H"]
 ms.assetid: c143d48e-59c8-4f67-9141-3aab51859b92
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CCustomSource (CustomDS.h)
 

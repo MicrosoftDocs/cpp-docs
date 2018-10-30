@@ -1,15 +1,8 @@
 ---
-title: "-- Operations Comment | Microsoft Docs"
-ms.custom: ""
+title: "-- Operations Comment"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Operations comment in MFC source files", "comments, MFC", "MFC source files, Operations comments"]
 ms.assetid: f3bff48d-26be-4db6-8435-9e4d079838c9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # // Operations Comment
 

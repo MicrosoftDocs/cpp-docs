@@ -1,15 +1,8 @@
 ---
-title: "&lt;chrono&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;chrono&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["chrono/std::chrono::nanoseconds", "chrono/std::chrono::minutes", "chrono/std::chrono::seconds", "<chrono>", "chrono/std::chrono::hours", "chrono/std::chrono::milliseconds", "chrono/std::chrono::microseconds"]
-dev_langs: ["C++"]
 ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;chrono&gt;
 

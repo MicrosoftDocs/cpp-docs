@@ -1,14 +1,7 @@
 ---
-title: "3.2.1 omp_init_lock and omp_init_nest_lock Functions | Microsoft Docs"
-ms.custom: ""
+title: "3.2.1 omp_init_lock and omp_init_nest_lock Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 098a2721-b16a-484f-bc83-4b8e281e382c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 3.2.1 omp_init_lock and omp_init_nest_lock Functions
 

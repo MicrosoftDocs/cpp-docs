@@ -1,19 +1,12 @@
 ---
-title: "_CrtMemDifference | Microsoft Docs"
-ms.custom: ""
+title: "_CrtMemDifference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_CrtMemDifference"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_CrtMemDifference", "CrtMemDifference"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CrtMemDifference function", "_CrtMemDifference function"]
 ms.assetid: 0f327278-b551-482f-958b-76941f796ba4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _CrtMemDifference
 

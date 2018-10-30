@@ -1,16 +1,9 @@
 ---
-title: "wbuffer_convert Class | Microsoft Docs"
-ms.custom: ""
+title: "wbuffer_convert Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xlocmon/stdext::cvt::wbuffer_convert"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wbuffer_convert class"]
 ms.assetid: 4a56f9bf-4138-4612-b516-525fea401358
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # wbuffer_convert Class
 

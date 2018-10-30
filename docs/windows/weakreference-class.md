@@ -1,16 +1,10 @@
 ---
-title: "WeakReference Class | Microsoft Docs"
-ms.custom: ""
+title: "WeakReference Class"
 ms.date: "09/24/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::WeakReference", "implements/Microsoft::WRL::Details::WeakReference::DecrementStrongReference", "implements/Microsoft::WRL::Details::WeakReference::IncrementStrongReference", "implements/Microsoft::WRL::Details::WeakReference::Resolve", "implements/Microsoft::WRL::Details::WeakReference::SetUnknown", "implements/Microsoft::WRL::Details::WeakReference::~WeakReference", "implements/Microsoft::WRL::Details::WeakReference::WeakReference"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Details::WeakReference class", "Microsoft::WRL::Details::WeakReference::DecrementStrongReference method", "Microsoft::WRL::Details::WeakReference::IncrementStrongReference method", "Microsoft::WRL::Details::WeakReference::Resolve method", "Microsoft::WRL::Details::WeakReference::SetUnknown method", "Microsoft::WRL::Details::WeakReference::~WeakReference, destructor", "Microsoft::WRL::Details::WeakReference::WeakReference, constructor"]
 ms.assetid: 3f4c956b-dbbd-49b1-8cfa-9509a9956c97
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # WeakReference Class
 

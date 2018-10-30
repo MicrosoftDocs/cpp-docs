@@ -1,15 +1,8 @@
 ---
-title: "C++ Standard Library Reference | Microsoft Docs"
-ms.custom: ""
+title: "C++ Standard Library Reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["C++ Standard Library, reference", "C++ Standard Library", "template libraries", "libraries, Standard C++"]
 ms.assetid: a37d3ba3-58af-47c7-9ee2-441ccd7b77ee
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C++ Standard Library Reference
 

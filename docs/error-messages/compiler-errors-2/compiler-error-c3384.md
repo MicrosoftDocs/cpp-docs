@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3384 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3384"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3384"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3384"]
 ms.assetid: c9f92c6a-62a9-4333-b2b1-bc55c7f288b6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3384
 

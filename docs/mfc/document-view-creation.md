@@ -1,15 +1,8 @@
 ---
-title: "Document-View Creation | Microsoft Docs"
-ms.custom: ""
+title: "Document-View Creation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["documents [MFC], creating", "views [MFC], and frame windows", "views [MFC], creating", "tables [MFC]", "MFC, views", "document/view architecture [MFC], creating document/view", "object creators", "MFC, documents", "tables [MFC], objects each MFC object creates"]
 ms.assetid: bda14f41-ed50-439d-af9e-591174e7dd64
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Document/View Creation
 

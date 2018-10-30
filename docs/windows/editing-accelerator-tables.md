@@ -1,16 +1,9 @@
 ---
-title: "Editing Accelerator Tables (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Editing Accelerator Tables (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.accelerator"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["accelerator tables [C++], editing", "keyboard shortcuts [C++], editing in an accelerator table"]
 ms.assetid: 56e24efb-d06b-4ed9-8915-1f99f725e247
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Editing Accelerator Tables (C++)
 

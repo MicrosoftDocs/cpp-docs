@@ -1,16 +1,10 @@
 ---
-title: "CriticalSection Class | Microsoft Docs"
-ms.custom: ""
+title: "CriticalSection Class"
 ms.date: "09/24/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::CriticalSection", "corewrappers/Microsoft::WRL::Wrappers::CriticalSection::cs_", "corewrappers/Microsoft::WRL::Wrappers::CriticalSection::IsValid", "corewrappers/Microsoft::WRL::Wrappers::CriticalSection::Lock", "corewrappers/Microsoft::WRL::Wrappers::CriticalSection::~CriticalSection", "corewrappers/Microsoft::WRL::Wrappers::CriticalSection::CriticalSection", "corewrappers/Microsoft::WRL::Wrappers::CriticalSection::TryLock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Wrappers::CriticalSection class", "Microsoft::WRL::Wrappers::CriticalSection::cs_ data member", "Microsoft::WRL::Wrappers::CriticalSection::IsValid method", "Microsoft::WRL::Wrappers::CriticalSection::Lock method", "Microsoft::WRL::Wrappers::CriticalSection::~CriticalSection, destructor", "Microsoft::WRL::Wrappers::CriticalSection::CriticalSection, constructor", "Microsoft::WRL::Wrappers::CriticalSection::TryLock method"]
 ms.assetid: f2e0a024-71a3-4f6b-99ea-d93a4a608ac4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # CriticalSection Class
 

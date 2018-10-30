@@ -1,16 +1,9 @@
 ---
-title: "_ATL_BASE_MODULE70 Structure | Microsoft Docs"
-ms.custom: ""
+title: "_ATL_BASE_MODULE70 Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["ATL::_ATL_BASE_MODULE70", "ATL._ATL_BASE_MODULE70", "_ATL_BASE_MODULE70"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL_BASE_MODULE70 structure", "_ATL_BASE_MODULE70 structure"]
 ms.assetid: 4539282f-15b8-4d7c-aafa-a85dc56f4980
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _ATL_BASE_MODULE70 Structure
 

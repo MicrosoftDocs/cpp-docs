@@ -1,16 +1,9 @@
 ---
-title: "&lt;set&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;set&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<set>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["set header"]
 ms.assetid: 43cb1ab2-6383-48cf-8bdc-2b96d7203596
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;set&gt;
 

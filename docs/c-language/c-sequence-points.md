@@ -1,15 +1,8 @@
 ---
-title: "C Sequence Points | Microsoft Docs"
-ms.custom: ""
+title: "C Sequence Points"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["sequence points"]
 ms.assetid: c84885a5-4336-4eba-a643-058df4249903
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Sequence Points
 

@@ -1,15 +1,8 @@
 ---
-title: "How to: Make a Type-Safe Collection | Microsoft Docs"
-ms.custom: ""
+title: "How to: Make a Type-Safe Collection"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["type-safe collections [MFC]", "serializing collection-class elements [MFC]", "collection classes [MFC], type safety", "SerializeElements function [MFC]", "collection classes [MFC], template-based", "serialization [MFC], collection classes", "collection classes [MFC], deriving from nontemplate"]
 ms.assetid: 7230b2db-4283-4083-b098-eb231bf5b89e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Make a Type-Safe Collection
 

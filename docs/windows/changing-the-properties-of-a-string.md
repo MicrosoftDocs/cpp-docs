@@ -1,15 +1,8 @@
 ---
-title: "Changing the Properties of a String Resource (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Changing the Properties of a String Resource (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["resource identifiers, string properties", "string tables [C++], changing strings", "strings [C++], properties"]
 ms.assetid: 0a220434-f444-4405-9a64-d28d6b965687
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Changing the Properties of a String Resource (C++)
 

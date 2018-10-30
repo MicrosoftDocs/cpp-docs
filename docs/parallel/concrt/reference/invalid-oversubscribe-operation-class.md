@@ -1,16 +1,9 @@
 ---
-title: "invalid_oversubscribe_operation Class | Microsoft Docs"
-ms.custom: ""
+title: "invalid_oversubscribe_operation Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["invalid_oversubscribe_operation", "CONCRT/concurrency::invalid_oversubscribe_operation", "CONCRT/concurrency::invalid_oversubscribe_operation::invalid_oversubscribe_operation"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["invalid_oversubscribe_operation class"]
 ms.assetid: 0a9c5f08-d5e6-4ad0-90a9-517472b3ac28
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # invalid_oversubscribe_operation Class
 

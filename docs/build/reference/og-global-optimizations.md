@@ -1,16 +1,9 @@
 ---
-title: "-Og (Global Optimizations) | Microsoft Docs"
-ms.custom: ""
+title: "/Og (Global Optimizations)"
 ms.date: "09/22/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.GlobalOptimizations", "/og"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Og compiler option [C++]", "global optimizations compiler option [C++]", "automatic register allocation", "/Og compiler option [C++]", "loop structures, optimizing", "common subexpression elimination", "Og compiler option [C++]"]
 ms.assetid: d10630cc-b9cf-4e97-bde3-8d7ee79e9435
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Og (Global Optimizations)
 

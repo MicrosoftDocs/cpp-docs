@@ -1,15 +1,8 @@
 ---
-title: "Using the Debug Build to Check for Memory Overwrite | Microsoft Docs"
-ms.custom: ""
+title: "Using the Debug Build to Check for Memory Overwrite"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["memory, overwrites"]
 ms.assetid: 1345eb4d-24ba-4595-b1cc-2da66986311e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Using the Debug Build to Check for Memory Overwrite
 

@@ -1,16 +1,9 @@
 ---
-title: "CAnimationStoryboardEventHandler Class | Microsoft Docs"
-ms.custom: ""
+title: "CAnimationStoryboardEventHandler Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CAnimationStoryboardEventHandler", "AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler", "AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::CAnimationStoryboardEventHandler", "AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::CreateInstance", "AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::OnStoryboardStatusChanged", "AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::OnStoryboardUpdated", "AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::SetAnimationController"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationStoryboardEventHandler [MFC], CAnimationStoryboardEventHandler", "CAnimationStoryboardEventHandler [MFC], CreateInstance", "CAnimationStoryboardEventHandler [MFC], OnStoryboardStatusChanged", "CAnimationStoryboardEventHandler [MFC], OnStoryboardUpdated", "CAnimationStoryboardEventHandler [MFC], SetAnimationController"]
 ms.assetid: 10a7e86b-c02d-4124-9a2e-61ecf8ac62fc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAnimationStoryboardEventHandler Class
 

@@ -1,15 +1,8 @@
 ---
-title: "NMAKE Options | Microsoft Docs"
-ms.custom: ""
+title: "NMAKE Options"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["NMAKE program, options"]
 ms.assetid: 00ba1aec-ef27-44cf-8d82-c5c095e45bae
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # NMAKE Options
 

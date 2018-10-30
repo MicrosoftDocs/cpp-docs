@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4488 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4488"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4488"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4488"]
 ms.assetid: 55625e46-ddb5-4c7c-99c7-cd4aa9f879bd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4488
 

@@ -1,15 +1,8 @@
 ---
-title: "ATL Program or Control Source and Header Files | Microsoft Docs"
-ms.custom: ""
+title: "ATL Program or Control Source and Header Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["file types [C++], ATL source and headers"]
 ms.assetid: cb65372f-4880-4007-b582-a52eaa568fd1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Program or Control Source and Header Files
 

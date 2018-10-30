@@ -1,16 +1,9 @@
 ---
-title: "rts_alloc Class | Microsoft Docs"
-ms.custom: ""
+title: "rts_alloc Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["allocators/stdext::rts_alloc", "allocators/stdext::rts_alloc::allocate", "allocators/stdext::rts_alloc::deallocate", "allocators/stdext::rts_alloc::equals"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::rts_alloc", "stdext::rts_alloc [C++], allocate", "stdext::rts_alloc [C++], deallocate", "stdext::rts_alloc [C++], equals"]
 ms.assetid: ab41bffa-83d1-4a1c-87b9-5707d516931f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # rts_alloc Class
 

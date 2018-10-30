@@ -1,14 +1,7 @@
 ---
-title: "Calling Convention | Microsoft Docs"
-ms.custom: ""
+title: "Calling Convention"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 41ca3554-b2e3-4868-9a84-f1b46e6e21d9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Calling Convention
 

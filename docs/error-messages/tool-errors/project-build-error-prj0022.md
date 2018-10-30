@@ -1,16 +1,9 @@
 ---
-title: "Project Build Error PRJ0022 | Microsoft Docs"
-ms.custom: ""
+title: "Project Build Error PRJ0022"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["PRJ0022"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PRJ0022"]
 ms.assetid: 691344a8-fc70-4aeb-9372-dde72f4588a4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Project Build Error PRJ0022
 

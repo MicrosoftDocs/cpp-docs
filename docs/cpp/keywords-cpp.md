@@ -1,15 +1,9 @@
 ---
-title: "Keywords (C++) | Microsoft Docs"
+title: "Keywords (C++)"
 ms.custom: "index-page"
 ms.date: "10/10/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, keywords", "keywords [C++]", "__identifer keyword [C++], naming", "Microsoft-specific keywords", "__identifer keyword [C++]"]
 ms.assetid: d7ca94a8-f785-41ce-9f73-d3c4fd508489
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Keywords (C++)
 

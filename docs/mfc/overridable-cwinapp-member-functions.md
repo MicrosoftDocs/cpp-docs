@@ -1,16 +1,9 @@
 ---
-title: "Overridable CWinApp Member Functions | Microsoft Docs"
-ms.custom: ""
+title: "Overridable CWinApp Member Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CWinApp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["overriding [MFC], overridable functions in CWinApp", "application class [MFC]", "CWinApp class [MFC], overridables"]
 ms.assetid: 07183d5e-734b-45d9-a8b6-9dde4adac0b4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Overridable CWinApp Member Functions
 

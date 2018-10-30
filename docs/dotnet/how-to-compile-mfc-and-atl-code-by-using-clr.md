@@ -1,15 +1,9 @@
 ---
-title: "How to: Compile MFC and ATL Code By Using -clr | Microsoft Docs"
+title: "How to: Compile MFC and ATL Code By Using -clr"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC [C++], interoperability", "ATL [C++], interoperability", "mixed assemblies [C++], MFC code", "mixed assemblies [C++], ATL code", "/clr compiler option [C++], compiling ATL and MFC code", "interoperability [C++], /clr compiler option", "regular MFC DLLs [C++], /clr compiler option", "interop [C++], /clr compiler option", "extension DLLs [C++], /clr compiler option"]
 ms.assetid: 12464bec-33a4-482c-880a-c078de7f6ea5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Compile MFC and ATL Code By Using /clr
 

@@ -1,16 +1,9 @@
 ---
-title: "shuffle_order_engine Class | Microsoft Docs"
-ms.custom: ""
+title: "shuffle_order_engine Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["random/std::shuffle_order_engine", "random/std::shuffle_order_engine::base", "random/std::shuffle_order_engine::discard", "random/std::shuffle_order_engine::operator()", "random/std::shuffle_order_engine::base_type", "random/std::shuffle_order_engine::seed"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::shuffle_order_engine [C++]", "std::shuffle_order_engine [C++], base", "std::shuffle_order_engine [C++], discard", "std::shuffle_order_engine [C++], base_type", "std::shuffle_order_engine [C++], seed"]
 ms.assetid: 0bcd1fb0-44d7-4e59-bb1b-4a9b673a960d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # shuffle_order_engine Class
 

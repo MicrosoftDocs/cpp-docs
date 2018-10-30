@@ -1,15 +1,8 @@
 ---
-title: "Moving a Toolbar Button (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Moving a Toolbar Button (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["toolbar buttons [C++], moving", "Toolbar editor [C++], moving buttons"]
 ms.assetid: 7625f2ce-8ac4-4428-a3f8-a95bfdf6f95f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Moving a Toolbar Button
 

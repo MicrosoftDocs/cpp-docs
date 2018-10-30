@@ -1,16 +1,9 @@
 ---
-title: "__thiscall | Microsoft Docs"
-ms.custom: ""
+title: "__thiscall"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__thiscall", "__thiscall_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__thiscall keyword [C++]"]
 ms.assetid: a6a22dd2-0101-4885-b33b-22f6057965df
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __thiscall
 

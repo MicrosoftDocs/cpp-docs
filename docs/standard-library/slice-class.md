@@ -1,16 +1,9 @@
 ---
-title: "slice Class | Microsoft Docs"
-ms.custom: ""
+title: "slice Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["valarray/std::slice", "valarray/std::slice::size", "valarray/std::slice::start", "valarray/std::slice::stride"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::slice [C++]", "std::slice [C++], size", "std::slice [C++], start", "std::slice [C++], stride"]
 ms.assetid: 00f0b03d-d657-4b81-ba53-5a9034bb2bf2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # slice Class
 

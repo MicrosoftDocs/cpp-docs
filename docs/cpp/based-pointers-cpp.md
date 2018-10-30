@@ -1,16 +1,9 @@
 ---
-title: "Based Pointers (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Based Pointers (C++)"
 ms.date: "10/09/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__based", "_based", "__based_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__based keyword [C++]", "based pointers", "pointers, based"]
 ms.assetid: 1e5f2e96-c52e-4738-8e14-87278681205e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Based Pointers (C++)
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4263 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4263"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4263"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4263"]
 ms.assetid: daabb05d-ab56-460f-ab6c-c74d222ef649
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4263
 

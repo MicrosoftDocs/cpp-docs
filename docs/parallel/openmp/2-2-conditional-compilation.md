@@ -1,14 +1,7 @@
 ---
-title: "2.2 Conditional Compilation | Microsoft Docs"
-ms.custom: ""
+title: "2.2 Conditional Compilation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 8f9c914d-736c-48cf-899d-c8029dbe1e32
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.2 Conditional Compilation
 

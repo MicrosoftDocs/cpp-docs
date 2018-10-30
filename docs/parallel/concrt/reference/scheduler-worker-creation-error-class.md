@@ -1,16 +1,9 @@
 ---
-title: "scheduler_worker_creation_error Class | Microsoft Docs"
-ms.custom: ""
+title: "scheduler_worker_creation_error Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["scheduler_worker_creation_error", "CONCRT/concurrency::scheduler_worker_creation_error", "CONCRT/concurrency::scheduler_worker_creation_error::scheduler_worker_creation_error"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["scheduler_worker_creation_error class"]
 ms.assetid: 4aec1c3e-c32a-41b2-899d-2d898f23b3c7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # scheduler_worker_creation_error Class
 

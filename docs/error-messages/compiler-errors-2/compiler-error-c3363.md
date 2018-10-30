@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3363 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3363"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3363"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3363"]
 ms.assetid: 41aa922f-608e-4f7a-ba66-451fc1161935
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3363
 

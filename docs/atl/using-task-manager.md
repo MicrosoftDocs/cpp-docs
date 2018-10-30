@@ -1,15 +1,8 @@
 ---
-title: "Using Task Manager | Microsoft Docs"
-ms.custom: ""
+title: "Using Task Manager"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Task Manager", "breakpoints, Task Manager", "debugging [ATL], using Task Manager"]
 ms.assetid: 773fccd5-308d-42c2-a17f-60ae94989062
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Task Manager
 

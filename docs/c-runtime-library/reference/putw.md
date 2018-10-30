@@ -1,19 +1,12 @@
 ---
-title: "_putw | Microsoft Docs"
-ms.custom: ""
+title: "_putw"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_putw"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_putw", "putw"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["integers, writing to streams", "putw function", "streams, writing integers to", "_putw function"]
 ms.assetid: 83d63644-249d-4a39-87e5-3b7aa313968d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _putw
 

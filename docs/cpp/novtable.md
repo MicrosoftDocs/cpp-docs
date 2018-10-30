@@ -1,16 +1,9 @@
 ---
-title: "novtable | Microsoft Docs"
-ms.custom: ""
+title: "novtable"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["novtable_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["novtable __declspec keyword", "__declspec keyword [C++], novtable"]
 ms.assetid: cfef09c5-8c1e-4b14-8a72-7d726ded4484
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # novtable
 

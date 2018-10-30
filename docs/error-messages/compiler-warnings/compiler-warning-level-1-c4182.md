@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4182 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4182"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4182"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4182"]
 ms.assetid: 8970f3c6-e2dd-407e-b2ec-964360eb8b43
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4182
 

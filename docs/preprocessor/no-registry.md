@@ -1,16 +1,9 @@
 ---
-title: "no_registry | Microsoft Docs"
-ms.custom: ""
+title: "no_registry"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["no_registry"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["no_registry attribute"]
 ms.assetid: d30de4e2-551c-428c-98fd-951330d578d3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # no_registry
 

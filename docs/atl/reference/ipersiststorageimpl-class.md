@@ -1,16 +1,9 @@
 ---
-title: "IPersistStorageImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IPersistStorageImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IPersistStorageImpl", "ATLCOM/ATL::IPersistStorageImpl", "ATLCOM/ATL::IPersistStorageImpl::GetClassID", "ATLCOM/ATL::IPersistStorageImpl::HandsOffStorage", "ATLCOM/ATL::IPersistStorageImpl::InitNew", "ATLCOM/ATL::IPersistStorageImpl::IsDirty", "ATLCOM/ATL::IPersistStorageImpl::Load", "ATLCOM/ATL::IPersistStorageImpl::Save", "ATLCOM/ATL::IPersistStorageImpl::SaveCompleted"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["storage, ATL", "IPersistStorageImpl class"]
 ms.assetid: d652f02c-239c-47c7-9a50-3e9fc3014fff
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IPersistStorageImpl Class
 

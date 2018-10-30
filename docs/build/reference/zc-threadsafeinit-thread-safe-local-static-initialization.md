@@ -1,16 +1,9 @@
 ---
-title: "/Zc:threadSafeInit (Thread-safe Local Static Initialization) | Microsoft Docs"
-ms.custom: ""
+title: "/Zc:threadSafeInit (Thread-safe Local Static Initialization)"
 ms.date: "03/14/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["threadSafeInit", "/Zc:threadSafeInit"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "threadSafeInit", "Thread-safe Local Static Initialization", "/Zc compiler options (C++)", "Zc compiler options (C++)"]
 ms.assetid: a0fc4b34-2cf0-45a7-a642-b8afc4ca19f2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:threadSafeInit (Thread-safe Local Static Initialization)
 

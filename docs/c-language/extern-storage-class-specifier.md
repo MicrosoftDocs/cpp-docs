@@ -1,15 +1,8 @@
 ---
-title: "extern Storage-Class Specifier | Microsoft Docs"
-ms.custom: ""
+title: "extern Storage-Class Specifier"
 ms.date: "07/10/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["extern keyword [C]", "storage class specifiers, extern", "extern keyword [C], storage class specifier", "external linkage, storage-class specifiers", "external linkage, extern modifier"]
 ms.assetid: 6e16d927-291f-49e4-986c-9d91a482a441
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # extern Storage-Class Specifier
 

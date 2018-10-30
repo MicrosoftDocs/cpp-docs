@@ -1,19 +1,12 @@
 ---
-title: "_CrtSetReportMode | Microsoft Docs"
-ms.custom: ""
+title: "_CrtSetReportMode"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_CrtSetReportMode"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_CrtSetReportMode", "CrtSetReportMode"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_CrtSetReportMode function", "CrtSetReportMode function"]
 ms.assetid: 3ecc6a12-afdd-4242-b046-8187ff6d4b36
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _CrtSetReportMode
 

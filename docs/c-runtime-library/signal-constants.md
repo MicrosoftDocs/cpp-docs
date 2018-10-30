@@ -1,16 +1,9 @@
 ---
-title: "signal Constants | Microsoft Docs"
-ms.custom: ""
+title: "signal Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["SIGTERM", "SIGFPE", "SIGABRT", "SIGILL", "SIGINT", "SIGSEGV"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SIGTERM constant", "SIGABRT constant", "SIGSEGV constant", "SIGFPE constant", "SIGINT constant", "signal constants", "SIGILL constant"]
 ms.assetid: a3b39281-dae7-4e44-8d68-e6a610c669dd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # signal Constants
 

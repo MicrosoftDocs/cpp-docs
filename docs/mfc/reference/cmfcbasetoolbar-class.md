@@ -1,16 +1,9 @@
 ---
-title: "CMFCBaseToolBar Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCBaseToolBar Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCBaseToolBar", "AFXBASETOOLBAR/CMFCBaseToolBar", "AFXBASETOOLBAR/CMFCBaseToolBar::GetDockingMode", "AFXBASETOOLBAR/CMFCBaseToolBar::GetMinSize", "AFXBASETOOLBAR/CMFCBaseToolBar::OnAfterChangeParent"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCBaseToolBar [MFC], GetDockingMode", "CMFCBaseToolBar [MFC], GetMinSize", "CMFCBaseToolBar [MFC], OnAfterChangeParent"]
 ms.assetid: 5d79206d-55e4-46f8-b1b8-042e34d7f9da
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCBaseToolBar Class
 

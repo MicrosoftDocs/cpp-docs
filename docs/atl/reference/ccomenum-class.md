@@ -1,16 +1,9 @@
 ---
-title: "CComEnum Class | Microsoft Docs"
-ms.custom: ""
+title: "CComEnum Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComEnum", "atlcom/ATL::CComEnum"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComEnum class"]
 ms.assetid: bff7dd7b-eb6e-4d6e-96ed-2706e66c8b3b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComEnum Class
 

@@ -1,15 +1,8 @@
 ---
-title: "Inserting a Space Between Buttons on a Toolbar (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Inserting a Space Between Buttons on a Toolbar (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Toolbar editor [C++], spacing toolbar buttons", "toolbar buttons [C++], space between buttons"]
 ms.assetid: 4925ea6b-5d3a-4949-a920-bf371a37e529
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Inserting a Space Between Buttons on a Toolbar (C++)
 

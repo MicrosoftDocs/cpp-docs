@@ -1,15 +1,8 @@
 ---
-title: "Stock Properties, ATL Control Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Stock Properties, ATL Control Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.control.stockprops"]
-dev_langs: ["C++"]
 ms.assetid: b27b0e60-08a6-43f4-ba6e-0a4e45147693
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Stock Properties, ATL Control Wizard
 

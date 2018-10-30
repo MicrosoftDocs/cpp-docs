@@ -1,16 +1,9 @@
 ---
-title: "task_canceled Class | Microsoft Docs"
-ms.custom: ""
+title: "task_canceled Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["task_canceled", "CONCRT/concurrency::task_canceled", "CONCRT/concurrency::task_canceled::task_canceled"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["task_canceled class"]
 ms.assetid: c3f0b234-2cc1-435f-a48e-995f45b190be
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # task_canceled Class
 

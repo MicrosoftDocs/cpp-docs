@@ -1,16 +1,10 @@
 ---
-title: "ActivateInstance Function | Microsoft Docs"
-ms.custom: ""
+title: "ActivateInstance Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Windows::Foundation::ActivateInstance", "client/ABI::Windows::Foundation::ActivateInstance"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActivateInstance function"]
 ms.assetid: 8cfd1dd9-5fda-4cc2-acf8-d40e783b3875
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # ActivateInstance Function
 

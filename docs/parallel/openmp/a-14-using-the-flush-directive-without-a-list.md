@@ -1,14 +1,7 @@
 ---
-title: "A.14   Using the flush Directive without a List | Microsoft Docs"
-ms.custom: ""
+title: "A.14   Using the flush Directive without a List"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 9e63141a-d0c6-43a5-ac16-b0bd7c89b871
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # A.14   Using the flush Directive without a List
 

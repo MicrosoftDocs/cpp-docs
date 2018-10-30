@@ -1,16 +1,9 @@
 ---
-title: "is_const Class | Microsoft Docs"
-ms.custom: ""
+title: "is_const Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_const"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_const class", "is_const"]
 ms.assetid: 55b8e887-9c3f-4a1d-823a-4a257337b205
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_const Class
 

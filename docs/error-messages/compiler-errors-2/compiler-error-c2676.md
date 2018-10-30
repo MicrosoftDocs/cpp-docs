@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2676 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2676"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2676"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2676"]
 ms.assetid: 838a5e34-c92f-4f65-a597-e150bf8cf737
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2676
 

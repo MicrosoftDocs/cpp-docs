@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3714 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3714"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3714"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3714"]
 ms.assetid: 17718f75-5a37-4e42-912b-487e91008a95
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3714
 

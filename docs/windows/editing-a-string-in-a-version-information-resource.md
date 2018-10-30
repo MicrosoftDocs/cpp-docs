@@ -1,16 +1,9 @@
 ---
-title: "Editing a String in a Version Information Resource (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Editing a String in a Version Information Resource (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.version"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["version information resources [C++]", "resources [C++], editing version information"]
 ms.assetid: d3a7d4e4-7d31-47c2-902c-f50b8404ba4f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Editing a String in a Version Information Resource (C++)
 

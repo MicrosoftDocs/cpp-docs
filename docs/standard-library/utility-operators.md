@@ -1,10 +1,7 @@
 ---
-title: "&lt;utility&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;utility&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["utility/std::operator!=", "utility/std::operator&gt;", "utility/std::operator&gt;=", "utility/std::operator&lt;", "utility/std::operator&lt;=", "utility/std::operator=="]
-dev_langs: ["C++"]
 ms.assetid: a6617109-2cec-4a69-948f-6c87116eda5f
 helpviewer_keywords: ["std::operator!= (utility)", "std::operator&gt; (utility)", "std::operator&gt;= (utility)", "std::operator&lt; (utility)", "std::operator&lt;= (utility)", "std::operator== (utility)"]
 ---

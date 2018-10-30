@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Fatal Error RC1121 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Fatal Error RC1121"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC1121"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC1121"]
 ms.assetid: 19ed8c71-d63a-4ff4-8652-a3ef52318a55
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Fatal Error RC1121
 

@@ -1,15 +1,8 @@
 ---
-title: "Clipboard: Adding Other Formats | Microsoft Docs"
-ms.custom: ""
+title: "Clipboard: Adding Other Formats"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["formats [MFC], Clipboard", "Clipboard, formats", "custom formats, placing on Clipboard", "custom formats", "registering custom Clipboard data formats", "custom Clipboard data formats"]
 ms.assetid: aea58159-65ed-4385-aeaa-3d9d5281903b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Clipboard: Adding Other Formats
 

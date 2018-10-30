@@ -1,16 +1,9 @@
 ---
-title: ".SETFRAME | Microsoft Docs"
-ms.custom: ""
+title: ".SETFRAME"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".SETFRAME"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".SETFRAME directive"]
 ms.assetid: eaa9b5ed-4daa-4f1e-bdb6-100758007ab3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .SETFRAME
 

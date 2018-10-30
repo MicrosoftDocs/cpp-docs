@@ -1,15 +1,8 @@
 ---
-title: "__declspec | Microsoft Docs"
-ms.custom: ""
+title: "__declspec"
 ms.date: "10/09/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__declspec_cpp", "__declspec", "_declspec"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec keyword [C++]"]
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __declspec
 

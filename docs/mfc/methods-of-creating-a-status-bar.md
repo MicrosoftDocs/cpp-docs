@@ -1,15 +1,8 @@
 ---
-title: "Methods of Creating a Status Bar | Microsoft Docs"
-ms.custom: ""
+title: "Methods of Creating a Status Bar"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CStatusBar class [MFC], vs. CStatusBarCtrl", "methods [MFC], creating status bars", "CStatusBarCtrl class [MFC], vs. CStatusBar", "CStatusBarCtrl class [MFC], creating", "methods [MFC]", "status bars [MFC], creating"]
 ms.assetid: 9aeaf290-7099-4762-a5ba-9c26705333c9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Methods of Creating a Status Bar
 

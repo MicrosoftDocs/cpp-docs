@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3056 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3056"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3056"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3056"]
 ms.assetid: 9500173d-870b-49b3-8e88-0ee93586d19a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3056
 

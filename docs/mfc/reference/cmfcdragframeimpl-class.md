@@ -1,16 +1,9 @@
 ---
-title: "CMFCDragFrameImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCDragFrameImpl Class"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCDragFrameImpl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCDragFrameImpl class [MFC]"]
 ms.assetid: 500cd824-8188-43c2-8754-b7bb46b5648a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCDragFrameImpl Class
 

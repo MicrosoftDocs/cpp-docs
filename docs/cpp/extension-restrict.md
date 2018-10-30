@@ -1,16 +1,9 @@
 ---
-title: "__restrict | Microsoft Docs"
-ms.custom: ""
+title: "__restrict"
 ms.date: "10/10/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__restrict_cpp", "__restrict", "_restrict"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__restrict keyword [C++]"]
 ms.assetid: 2d151b4d-f930-49df-bd16-d8757ec7fa83
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __restrict
 

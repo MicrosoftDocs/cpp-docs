@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2178 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2178"
 ms.date: "05/08/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2178"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2178"]
 ms.assetid: 79a14158-17f3-4221-bd06-9d675c49cef4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2178
 

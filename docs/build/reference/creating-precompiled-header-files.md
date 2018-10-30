@@ -1,16 +1,9 @@
 ---
-title: "Creating Precompiled Header Files | Microsoft Docs"
-ms.custom: ""
+title: "Creating Precompiled Header Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["pch"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["precompiled header files, creating", "PCH files, creating", "cl.exe compiler, precompiling code", ".pch files, creating"]
 ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Creating Precompiled Header Files
 

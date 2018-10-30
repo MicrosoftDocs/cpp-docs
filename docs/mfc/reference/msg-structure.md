@@ -1,16 +1,9 @@
 ---
-title: "MSG Structure | Microsoft Docs"
-ms.custom: ""
+title: "MSG Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["MSG"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MSG structure [MFC]"]
 ms.assetid: dc166d27-9423-41f1-9599-5ba76d2f0138
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MSG Structure
 

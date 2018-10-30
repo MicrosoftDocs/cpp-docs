@@ -1,15 +1,8 @@
 ---
-title: "Specifying Levels of Functionality | Microsoft Docs"
-ms.custom: ""
+title: "Specifying Levels of Functionality"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CObject class [MFC], adding functionality to derived classes", "runtime [MFC], class information", "serialization [MFC], Cobject", "dynamic creation support", "levels [MFC], functionality in CObject", "run-time class [MFC], information support", "levels [MFC]"]
 ms.assetid: 562669ba-c858-4f66-b5f1-b3beeea4f486
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Specifying Levels of Functionality
 

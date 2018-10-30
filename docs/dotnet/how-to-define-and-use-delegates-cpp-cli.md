@@ -1,15 +1,8 @@
 ---
-title: "How to: Define and Use Delegates (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "How to: Define and Use Delegates (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["delegates"]
 ms.assetid: 1cdf3420-89c1-47c0-b796-aa984020e0f8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Define and Use Delegates (C++/CLI)
 

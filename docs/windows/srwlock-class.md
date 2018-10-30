@@ -1,16 +1,10 @@
 ---
-title: "SRWLock Class | Microsoft Docs"
-ms.custom: ""
+title: "SRWLock Class"
 ms.date: "09/25/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::SRWLock", "corewrappers/Microsoft::WRL::Wrappers::SRWLock::LockExclusive", "corewrappers/Microsoft::WRL::Wrappers::SRWLock::LockShared", "corewrappers/Microsoft::WRL::Wrappers::SRWLock::SRWLock", "corewrappers/Microsoft::WRL::Wrappers::SRWLock::SRWLock_", "corewrappers/Microsoft::WRL::Wrappers::SRWLock::~SRWLock", "corewrappers/Microsoft::WRL::Wrappers::SRWLock::TryLockExclusive", "corewrappers/Microsoft::WRL::Wrappers::SRWLock::TryLockShared"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Wrappers::SRWLock class", "Microsoft::WRL::Wrappers::SRWLock::LockExclusive method", "Microsoft::WRL::Wrappers::SRWLock::LockShared method", "Microsoft::WRL::Wrappers::SRWLock::SRWLock, constructor", "Microsoft::WRL::Wrappers::SRWLock::SRWLock_ data member", "Microsoft::WRL::Wrappers::SRWLock::~SRWLock, destructor", "Microsoft::WRL::Wrappers::SRWLock::TryLockExclusive method", "Microsoft::WRL::Wrappers::SRWLock::TryLockShared method"]
 ms.assetid: 4fa250e3-5f29-4b06-ac24-61b6c04ade93
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLock Class
 

@@ -1,15 +1,8 @@
 ---
-title: "Data Objects and Data Sources: Creation and Destruction | Microsoft Docs"
-ms.custom: ""
+title: "Data Objects and Data Sources: Creation and Destruction"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["destroying data objects [MFC]", "object creation [MFC], data source objects", "data sources [MFC], and data objects", "data source objects [MFC], creating", "destruction [MFC], data sources", "data source objects [MFC], destroying", "data objects [MFC], creating", "data objects [MFC], destroying", "data sources [MFC], role", "data sources [MFC], destroying", "destruction [MFC], data objects", "data sources [MFC], creating"]
 ms.assetid: ac216d54-3ca5-4ce7-850d-cd1f6a90d4f1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Data Objects and Data Sources: Creation and Destruction
 

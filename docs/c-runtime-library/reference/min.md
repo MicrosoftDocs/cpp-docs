@@ -1,19 +1,12 @@
 ---
-title: "__min | Microsoft Docs"
-ms.custom: ""
+title: "__min"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["__min"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["__min", "min", "_min"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__min macro", "min macro", "minimum macro", "_min macro"]
 ms.assetid: 2037f26c-b48a-4a69-8870-22519f052a3c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __min
 

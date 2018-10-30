@@ -1,15 +1,8 @@
 ---
-title: "Drawing Lines or Closed Figures (Image Editor for Icons) | Microsoft Docs"
-ms.custom: ""
+title: "Drawing Lines or Closed Figures (Image Editor for Icons)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Image editor [C++], drawing lines", "shapes, drawing"]
 ms.assetid: 7edd86db-77b1-451f-8001-bbfed9c6304f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Drawing Lines or Closed Figures (Image Editor for Icons)
 

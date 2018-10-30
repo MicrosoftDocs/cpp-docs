@@ -1,16 +1,9 @@
 ---
-title: "CPrintInfo Structure | Microsoft Docs"
-ms.custom: ""
+title: "CPrintInfo Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CPrintInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CPrintInfo structure [MFC]"]
 ms.assetid: 0b3de849-d050-4386-9a14-f4c1a25684f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPrintInfo Structure
 

@@ -1,15 +1,8 @@
 ---
-title: "Standard Dialog Data Exchange Routines | Microsoft Docs"
-ms.custom: ""
+title: "Standard Dialog Data Exchange Routines"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["standard dialog, data exchange routines"]
 ms.assetid: c6adb7f3-f9af-4cc5-a9ea-315c5b60ad1a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Standard Dialog Data Exchange Routines
 

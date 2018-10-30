@@ -1,15 +1,8 @@
 ---
-title: "How to: Use Exception Handling to Break from a Parallel Loop | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use Exception Handling to Break from a Parallel Loop"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["search algorithm, writing [Concurrency Runtime]", "writing a search algorithm [Concurrency Runtime]"]
 ms.assetid: 16d7278c-2d10-4014-9f58-f1899e719ff9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Use Exception Handling to Break from a Parallel Loop
 

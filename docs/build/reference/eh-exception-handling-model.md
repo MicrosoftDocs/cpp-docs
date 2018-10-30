@@ -1,16 +1,9 @@
 ---
-title: "-EH (Exception Handling Model) | Microsoft Docs"
-ms.custom: ""
+title: "/EH (Exception Handling Model)"
 ms.date: "08/14/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.ExceptionHandling", "/eh", "VC.Project.VCCLCompilerTool.ExceptionHandling"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["exception handling, compiler model", "cl.exe compiler, exception handling", "EH compiler option [C++]", "-EH compiler option [C++]", "/EH compiler option [C++]"]
 ms.assetid: 754b916f-d206-4472-b55a-b6f1b0f2cb4d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /EH (Exception Handling Model)
 

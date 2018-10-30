@@ -1,14 +1,7 @@
 ---
-title: "ASCII Character Set | Microsoft Docs"
-ms.custom: ""
+title: "ASCII Character Set"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 2390fd40-5fe2-4410-a06c-ccc0fea2709b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ASCII Character Set
 

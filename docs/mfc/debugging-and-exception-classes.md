@@ -1,16 +1,9 @@
 ---
-title: "Debugging and Exception Classes | Microsoft Docs"
-ms.custom: ""
+title: "Debugging and Exception Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.debug"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["debugging [MFC], exception classes", "debugging [MFC], classes for debugging"]
 ms.assetid: 0d158efd-2e62-452e-9d2a-d3c30dfee7f9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Debugging and Exception Classes
 

@@ -1,15 +1,8 @@
 ---
-title: "Further Reading About the MFC ODBC Classes | Microsoft Docs"
-ms.custom: ""
+title: "Further Reading About the MFC ODBC Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ODBC classes"]
 ms.assetid: 155c092b-3577-4cb8-b00e-f1adf4cb2adc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Further Reading About the MFC ODBC Classes
 

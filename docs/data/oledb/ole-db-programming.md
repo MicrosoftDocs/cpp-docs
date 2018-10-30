@@ -1,15 +1,8 @@
 ---
-title: "OLE DB Programming | Microsoft Docs"
-ms.custom: ""
+title: "OLE DB Programming"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB [C++]", "data access [C++], OLE DB programming", "OLE DB [C++], about OLE DB"]
 ms.assetid: 52a80d66-17a9-43a1-9b90-392ae43cea2b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Programming
 

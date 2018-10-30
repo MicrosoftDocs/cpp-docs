@@ -1,16 +1,9 @@
 ---
-title: "C Runtime Error R6024 | Microsoft Docs"
-ms.custom: ""
+title: "C Runtime Error R6024"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["R6024"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["R6024"]
 ms.assetid: 0fb11c0f-9b81-4cab-81bd-4785742946a5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6024
 

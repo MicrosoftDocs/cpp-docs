@@ -1,16 +1,9 @@
 ---
-title: "Pointer-to-Member Operators: .* and -&gt;* | Microsoft Docs"
-ms.custom: ""
+title: "Pointer-to-Member Operators: .* and -&gt;*"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: [".*", "->*"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["expressions [C++], pointer", "pointer-to-member operators [C++]", ".* operator", "expressions [C++], operators", "->* operator"]
 ms.assetid: 2632be3f-1c81-4523-b56c-982a92a68688
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Pointer-to-Member Operators: .* and -&gt;*
 

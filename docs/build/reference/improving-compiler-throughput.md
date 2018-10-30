@@ -1,15 +1,8 @@
 ---
-title: "Improving Compiler Throughput | Microsoft Docs"
-ms.custom: ""
+title: "Improving Compiler Throughput"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["throughput, C++ compiler", "cl.exe compiler, performance", "performance, compiler", "cl.exe compiler, throughput"]
 ms.assetid: ba5f884e-9037-4a92-b10e-fc2a3836c5bf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Improving Compiler Throughput
 

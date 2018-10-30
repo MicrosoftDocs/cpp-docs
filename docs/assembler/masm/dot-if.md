@@ -1,16 +1,9 @@
 ---
-title: ".IF | Microsoft Docs"
-ms.custom: ""
+title: ".IF"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".IF"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".IF directive"]
 ms.assetid: dccc7615-8fc7-4829-9f39-0ee405f6c1e3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .IF
 

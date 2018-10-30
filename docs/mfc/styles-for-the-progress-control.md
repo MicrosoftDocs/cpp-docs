@@ -1,15 +1,8 @@
 ---
-title: "Styles for the Progress Control | Microsoft Docs"
-ms.custom: ""
+title: "Styles for the Progress Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["PBS_SMOOTH style", "progress controls [MFC], styles", "PBS_VERTICAL style", "CProgressCtrl class [MFC], styles"]
 ms.assetid: 39eb8081-bc20-4552-91b9-e7cdd1b7d8ae
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Styles for the Progress Control
 

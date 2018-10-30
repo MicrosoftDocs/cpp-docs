@@ -1,15 +1,8 @@
 ---
-title: "Integer Types | Microsoft Docs"
-ms.custom: ""
+title: "Integer Types"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["integer data type, integer types in C++", "integer constants", "integer types", "integers, types"]
 ms.assetid: c8926a5e-0e98-4e37-9b05-ce97961379bd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Integer Types
 

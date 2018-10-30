@@ -1,18 +1,11 @@
 ---
-title: "to Functions | Microsoft Docs"
-ms.custom: ""
+title: "to Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apilocation: ["msvcr120.dll", "msvcr90.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr80.dll", "msvcr100.dll"]
 apitype: "DLLExport"
 f1_keywords: ["To"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["to functions", "string conversion, to different characters", "string conversion, case", "lowercase, converting strings", "uppercase, converting strings", "case, converting", "characters, converting"]
 ms.assetid: f636a4c6-8c9f-4be2-baac-064f9dbae300
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # to Functions
 

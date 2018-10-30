@@ -1,16 +1,9 @@
 ---
-title: "TN016: Using C++ Multiple Inheritance with MFC | Microsoft Docs"
-ms.custom: ""
+title: "TN016: Using C++ Multiple Inheritance with MFC"
 ms.date: "06/28/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.inheritance"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TN016", "MI (Multiple Inheritance)", "multiple inheritance, MFC support for"]
 ms.assetid: 4ee27ae1-1410-43a5-b111-b6af9b84535d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN016: Using C++ Multiple Inheritance with MFC
 

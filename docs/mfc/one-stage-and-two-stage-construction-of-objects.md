@@ -1,15 +1,8 @@
 ---
-title: "One-Stage and Two-Stage Construction of Objects | Microsoft Docs"
-ms.custom: ""
+title: "One-Stage and Two-Stage Construction of Objects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["objects [MFC], creating graphic objects", "object creation [MFC], graphic objects", "objects [MFC], graphic objects", "one-stage and two-stage construction of objects [MFC]"]
 ms.assetid: 5a1c410c-4a4b-4dd9-a2ec-ced831aa7f21
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # One-Stage and Two-Stage Construction of Objects
 

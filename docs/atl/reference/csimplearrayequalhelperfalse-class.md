@@ -1,16 +1,9 @@
 ---
-title: "CSimpleArrayEqualHelperFalse Class | Microsoft Docs"
-ms.custom: ""
+title: "CSimpleArrayEqualHelperFalse Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CSimpleArrayEqualHelperFalse", "ATLSIMPCOLL/ATL::CSimpleArrayEqualHelperFalse", "ATLSIMPCOLL/ATL::CSimpleArrayEqualHelperFalse::IsEqual"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSimpleArrayEqualHelperFalse class"]
 ms.assetid: 6918af6f-d23d-49eb-8482-c44272f5ffeb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSimpleArrayEqualHelperFalse Class
 

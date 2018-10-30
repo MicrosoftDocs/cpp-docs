@@ -1,16 +1,9 @@
 ---
-title: "__unhook | Microsoft Docs"
-ms.custom: ""
+title: "__unhook"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__unhook", "__unhook_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["event handlers [C++], dissociating events", "__unhook keyword [C++]"]
 ms.assetid: 953a14f3-5199-459d-81e5-fcf015a19878
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __unhook
 

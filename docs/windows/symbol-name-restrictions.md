@@ -1,16 +1,9 @@
 ---
-title: "Symbol Name Restrictions | Microsoft Docs"
-ms.custom: ""
+title: "Symbol Name Restrictions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.symbol.restrictions.name"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["symbol names", "symbols [C++], names", "restrictions, symbol names"]
 ms.assetid: 4ae7f695-ca86-4f4b-989a-fe6f89650ff7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Symbol Name Restrictions
 

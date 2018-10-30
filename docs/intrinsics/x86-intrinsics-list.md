@@ -1,14 +1,7 @@
 ---
-title: "x86 Intrinsics List | Microsoft Docs"
-ms.custom: ""
+title: "x86 Intrinsics List"
 ms.date: "06/01/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["cl.exe compiler, intrinsics", "intrinsics, x86"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # x86 Intrinsics List
 

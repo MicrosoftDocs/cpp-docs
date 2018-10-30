@@ -1,16 +1,9 @@
 ---
-title: "-showIncludes (List Include Files) | Microsoft Docs"
-ms.custom: ""
+title: "/showIncludes (List Include Files)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.ShowIncludes", "VC.Project.VCCLCompilerTool.ShowIncludes", "/showincludes"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["include files", "/showIncludes compiler option [C++]", "include files, displaying in compilation", "-showIncludes compiler option [C++]", "showIncludes compiler option [C++]"]
 ms.assetid: 0b74b052-f594-45a6-a7c7-09e1a319547d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /showIncludes (List Include Files)
 

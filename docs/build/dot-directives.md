@@ -1,15 +1,8 @@
 ---
-title: "Dot Directives | Microsoft Docs"
-ms.custom: ""
+title: "Dot Directives"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["NMAKE program, dot directives", "dot directives in NMAKE"]
 ms.assetid: ab35da65-30b6-48b7-87d6-61503d7faf9f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Dot Directives
 

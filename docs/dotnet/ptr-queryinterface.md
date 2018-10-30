@@ -1,16 +1,10 @@
 ---
-title: "ptr::QueryInterface | Microsoft Docs"
-ms.custom: ""
+title: "ptr::QueryInterface"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["ptr.QueryInterface", "ptr::QueryInterface", "msclr::com::ptr::QueryInterface", "msclr.com.ptr.QueryInterface"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["QueryInterface method"]
 ms.assetid: c2619517-3fde-493b-b12d-da8f62d5d803
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # ptr::QueryInterface
 

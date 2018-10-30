@@ -1,16 +1,9 @@
 ---
-title: "CAtlBaseModule Class | Microsoft Docs"
-ms.custom: ""
+title: "CAtlBaseModule Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAtlBaseModule", "ATLCORE/ATL::CAtlBaseModule", "ATLCORE/ATL::CAtlBaseModule::CAtlBaseModule", "ATLCORE/ATL::CAtlBaseModule::AddResourceInstance", "ATLCORE/ATL::CAtlBaseModule::GetHInstanceAt", "ATLCORE/ATL::CAtlBaseModule::GetModuleInstance", "ATLCORE/ATL::CAtlBaseModule::GetResourceInstance", "ATLCORE/ATL::CAtlBaseModule::RemoveResourceInstance", "ATLCORE/ATL::CAtlBaseModule::SetResourceInstance", "ATLCORE/ATL::CAtlBaseModule::m_bInitFailed"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlBaseModule class"]
 ms.assetid: 55ade80c-9b0c-4c51-933e-2158436c1096
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlBaseModule Class
 

@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1181 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1181"
 ms.date: "08/22/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1181"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1181"]
 ms.assetid: 984b0db6-e331-4284-b2a7-a212fe96c486
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1181
 

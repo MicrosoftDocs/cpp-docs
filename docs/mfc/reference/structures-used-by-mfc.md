@@ -1,16 +1,9 @@
 ---
-title: "Structures Used by MFC | Microsoft Docs"
-ms.custom: ""
+title: "Structures Used by MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.structures"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["structures", "structures, MFC"]
 ms.assetid: 2168fcc6-e800-4814-aabf-0bca86ff790d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Structures Used by MFC
 

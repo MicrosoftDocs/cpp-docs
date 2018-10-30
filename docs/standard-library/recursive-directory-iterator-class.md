@@ -1,15 +1,8 @@
 ---
-title: "recursive_directory_iterator Class | Microsoft Docs"
-ms.custom: ""
+title: "recursive_directory_iterator Class"
 ms.date: "09/10/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["filesystem/std::tr2::sys::recursive_directory_iterator"]
-dev_langs: ["C++"]
 ms.assetid: 79a061bd-5b64-404c-97e8-749c888c2ced
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # recursive_directory_iterator Class
 

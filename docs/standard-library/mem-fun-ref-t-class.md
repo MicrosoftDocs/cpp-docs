@@ -1,16 +1,9 @@
 ---
-title: "mem_fun_ref_t Class | Microsoft Docs"
-ms.custom: ""
+title: "mem_fun_ref_t Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xfunctional/std::mem_fun_ref_t"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["mem_fun_ref_t class"]
 ms.assetid: 7dadcac3-8d33-4e4b-a792-81bd53d3df39
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # mem_fun_ref_t Class
 

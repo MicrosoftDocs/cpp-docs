@@ -1,19 +1,12 @@
 ---
-title: "fesetexceptflag | Microsoft Docs"
-ms.custom: ""
+title: "fesetexceptflag"
 ms.date: "04/05/2018"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["fesetexceptflag"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["fesetexceptflag", "fenv/fesetexceptflag"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["fesetexceptflag function"]
 ms.assetid: 2f7dad77-9e54-4097-a3e3-35176ace4de5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fesetexceptflag
 

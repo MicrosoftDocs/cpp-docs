@@ -1,15 +1,8 @@
 ---
-title: "Changing the Caption Property of Multiple String Resources (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Changing the Caption Property of Multiple String Resources (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["String editor [C++], changing properties of multiple strings", "string tables [C++], changing caption of multiple strings"]
 ms.assetid: 82ac4389-fd9c-4794-a18f-c6bf5b253bd7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Changing the Caption Property of Multiple String Resources (C++)
 

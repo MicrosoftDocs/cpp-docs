@@ -1,15 +1,8 @@
 ---
-title: "Schedule Groups | Microsoft Docs"
-ms.custom: ""
+title: "Schedule Groups"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["schedule groups"]
 ms.assetid: 03523572-5891-4d17-89ce-fa795605f28b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Schedule Groups
 

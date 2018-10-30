@@ -1,16 +1,9 @@
 ---
-title: "rank Class | Microsoft Docs"
-ms.custom: ""
+title: "rank Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::rank"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["rank class", "rank"]
 ms.assetid: bc9f1b8f-800f-46ca-b6f4-d8579ed5406a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # rank Class
 

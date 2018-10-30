@@ -1,15 +1,8 @@
 ---
-title: "Property Page XML rule files | Microsoft Docs"
-ms.custom: ""
+title: "Property Page XML rule files"
 ms.date: "04/27/2017"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["property page XML files"]
 ms.assetid: dd9d9734-4387-4098-8ba6-85b93507731d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Property Page XML rule files
 

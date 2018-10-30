@@ -1,15 +1,8 @@
 ---
-title: "MFC Classes | Microsoft Docs"
-ms.custom: ""
+title: "MFC Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, classes", "classes [MFC], MFC"]
 ms.assetid: 7b6db805-a572-43fd-9046-0fa6e3663e63
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Classes
 

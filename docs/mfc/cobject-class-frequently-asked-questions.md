@@ -1,16 +1,9 @@
 ---
-title: "CObject Class: Frequently Asked Questions | Microsoft Docs"
-ms.custom: ""
+title: "CObject Class: Frequently Asked Questions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CObject"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CObject class [MFC], FAQ"]
 ms.assetid: 809a8b99-a2f8-4e16-8b4b-023c94f4125c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CObject Class: Frequently Asked Questions
 

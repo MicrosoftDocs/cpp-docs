@@ -1,15 +1,8 @@
 ---
-title: "Checking for Memory Overwrites | Microsoft Docs"
-ms.custom: ""
+title: "Checking for Memory Overwrites"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["memory, overwrites"]
 ms.assetid: da7c5d77-a267-415f-a8ab-ee5ce5bfc286
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Checking for Memory Overwrites
 

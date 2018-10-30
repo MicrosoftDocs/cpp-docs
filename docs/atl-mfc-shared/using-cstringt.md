@@ -1,15 +1,8 @@
 ---
-title: "Using CStringT | Microsoft Docs"
-ms.custom: ""
+title: "Using CStringT"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CStringT class, using"]
 ms.assetid: 3a9fffb1-6f90-482a-ab69-4003e6084cb5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using CStringT
 

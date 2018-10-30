@@ -1,16 +1,10 @@
 ---
-title: "How to: Modify the Target Framework and Platform Toolset | Microsoft Docs"
+title: "How to: Modify the Target Framework and Platform Toolset"
 ms.custom: "conceptual"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
 f1_keywords: ["msbuild.cpp.howto.modifytargetframeworkandplatformtoolset"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["msbuild (c++), howto: modify target framework and platform toolset"]
 ms.assetid: 031b1d54-e6e1-4da7-9868-3e75a87d9ffe
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # How to: Modify the Target Framework and Platform Toolset
 

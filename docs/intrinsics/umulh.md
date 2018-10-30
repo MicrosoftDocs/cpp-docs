@@ -1,16 +1,9 @@
 ---
-title: "__umulh | Microsoft Docs"
-ms.custom: ""
+title: "__umulh"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__umulh"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__umulh intrinsic"]
 ms.assetid: d241b53a-e6f7-4af1-9f6e-84e149158f03
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __umulh
 

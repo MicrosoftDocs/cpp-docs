@@ -1,15 +1,8 @@
 ---
-title: "Structured Exception Handling (C/C++) | Microsoft Docs"
-ms.custom: ""
+title: "Structured Exception Handling (C/C++)"
 ms.date: "08/14/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["termination handlers [C++], handling exceptions in C++", "structured exception handling [C++]", "try-catch keyword [C++], exception handlers", "C++ exception handling, termination handlers", "try-catch keyword [C++], termination handlers", "C++ exception handling, exception handlers"]
 ms.assetid: dd3b647d-c269-43a8-aab9-ad1458712976
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Structured Exception Handling (C/C++)
 

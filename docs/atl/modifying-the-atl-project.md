@@ -1,15 +1,8 @@
 ---
-title: "Modifying the ATL Project | Microsoft Docs"
-ms.custom: ""
+title: "Modifying the ATL Project"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["controls [ATL], adding to composite controls", "Dialog editor, working with composite controls", "composite controls, adding controls"]
 ms.assetid: 59984518-748f-4b8b-875f-3e97d22d0b0f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Modifying the ATL Project
 

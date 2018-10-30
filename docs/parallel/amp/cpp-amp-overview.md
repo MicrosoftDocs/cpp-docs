@@ -1,15 +1,8 @@
 ---
-title: "C++ AMP Overview | Microsoft Docs"
-ms.custom: ""
+title: "C++ AMP Overview"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["C++ Accelerated Massive Parallelism, requirements", "C++ Accelerated Massive Parallelism, architecture", "C++ AMP", "C++ Accelerated Massive Parallelism, overview", "C++ Accelerated Massive Parallelism"]
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C++ AMP Overview
 

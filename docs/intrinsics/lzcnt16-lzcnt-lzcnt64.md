@@ -1,16 +1,9 @@
 ---
-title: "__lzcnt16, __lzcnt, __lzcnt64 | Microsoft Docs"
-ms.custom: ""
+title: "__lzcnt16, __lzcnt, __lzcnt64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__lzcnt64", "__lzcnt16", "__lzcnt"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__lzcnt intrinsic", "lzcnt instruction", "lzcnt16 intrinsic", "lzcnt intrinsic", "__lzcnt16 intrinsic", "lzcnt64 intrinsic", "__lzcnt64 intrinsic"]
 ms.assetid: 412113e7-052e-46e5-8bfa-d5ad72abc10e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __lzcnt16, __lzcnt, __lzcnt64
 

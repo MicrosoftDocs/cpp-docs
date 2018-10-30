@@ -1,14 +1,7 @@
 ---
-title: "2.7.2.8 copyprivate | Microsoft Docs"
-ms.custom: ""
+title: "2.7.2.8 copyprivate"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: c382348c-c785-45b2-8ee6-a66b76b97f3e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.7.2.8 copyprivate
 

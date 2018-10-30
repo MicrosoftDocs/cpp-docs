@@ -1,15 +1,8 @@
 ---
-title: "Technical Notes by Category | Microsoft Docs"
-ms.custom: ""
+title: "Technical Notes by Category"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.tables.mfc.technotes"]
-dev_langs: ["C++"]
 ms.assetid: b9f1c953-233d-4d64-9e8e-ca69b79460b8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Technical Notes by Category
 

@@ -1,15 +1,8 @@
 ---
-title: "Status Bars | Microsoft Docs"
-ms.custom: ""
+title: "Status Bars"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["status bars", "control bars [MFC], status bar"]
 ms.assetid: fcbc5029-1aab-4e14-adf7-419038a4935e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Status Bars
 

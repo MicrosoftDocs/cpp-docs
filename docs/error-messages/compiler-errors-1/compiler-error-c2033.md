@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2033 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2033"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2033"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2033"]
 ms.assetid: fd5a1637-9db2-4c98-a7cc-b63b39737cd9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2033
 

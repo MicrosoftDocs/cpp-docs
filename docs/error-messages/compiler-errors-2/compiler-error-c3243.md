@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3243 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3243"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3243"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3243"]
 ms.assetid: 35d8ad1a-377d-47df-be9d-c55eea23340f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3243
 

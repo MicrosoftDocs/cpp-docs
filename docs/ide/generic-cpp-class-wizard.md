@@ -1,16 +1,9 @@
 ---
-title: "Generic C++ Class Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Generic C++ Class Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.class.generic"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Generic C++ Class Wizard [C++]"]
 ms.assetid: aa95be9e-fc1b-45db-a11d-0d32c4929077
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Generic C++ Class Wizard
 

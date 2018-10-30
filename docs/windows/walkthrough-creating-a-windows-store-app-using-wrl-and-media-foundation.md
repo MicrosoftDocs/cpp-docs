@@ -1,14 +1,8 @@
 ---
-title: "Walkthrough: Creating a UWP app using WRL and Media Foundation | Microsoft Docs"
-ms.custom: ""
+title: "Walkthrough: Creating a UWP app using WRL and Media Foundation"
 ms.date: "09/17/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 0336c550-fbeb-4dc4-aa9b-660f9fc45382
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Walkthrough: Creating a UWP app using WRL and Media Foundation
 

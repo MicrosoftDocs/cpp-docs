@@ -1,15 +1,8 @@
 ---
-title: "Tree Control Item Information | Microsoft Docs"
-ms.custom: ""
+title: "Tree Control Item Information"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["tree controls [MFC], item information", "CTreeCtrl class [MFC], item information"]
 ms.assetid: 8dcab855-27de-49e9-95d8-f78ba963ea71
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Tree Control Item Information
 

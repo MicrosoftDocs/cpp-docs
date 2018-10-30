@@ -1,15 +1,8 @@
 ---
-title: "OLE DB Consumer Templates (C++) | Microsoft Docs"
-ms.custom: ""
+title: "OLE DB Consumer Templates (C++)"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["databases [C++], OLE DB templates", "OLE DB consumers [C++], data access", "OLE DB consumer templates [C++]", "databases [C++], consumers"]
 ms.assetid: d3e42612-0bc0-4d65-9c32-0e8a7b219e82
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Consumer Templates (C++)
 

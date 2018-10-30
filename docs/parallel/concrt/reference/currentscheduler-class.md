@@ -1,16 +1,9 @@
 ---
-title: "CurrentScheduler Class | Microsoft Docs"
-ms.custom: ""
+title: "CurrentScheduler Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["CurrentScheduler", "CONCRT/concurrency::CurrentScheduler", "CONCRT/concurrency::CurrentScheduler::Create", "CONCRT/concurrency::CurrentScheduler::CreateScheduleGroup", "CONCRT/concurrency::CurrentScheduler::Detach", "CONCRT/concurrency::CurrentScheduler::Get", "CONCRT/concurrency::CurrentScheduler::GetNumberOfVirtualProcessors", "CONCRT/concurrency::CurrentScheduler::GetPolicy", "CONCRT/concurrency::CurrentScheduler::Id", "CONCRT/concurrency::CurrentScheduler::IsAvailableLocation", "CONCRT/concurrency::CurrentScheduler::RegisterShutdownEvent", "CONCRT/concurrency::CurrentScheduler::ScheduleTask"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CurrentScheduler class"]
 ms.assetid: 31c20e0e-4cdf-49b4-8220-d726130aad2b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CurrentScheduler Class
 

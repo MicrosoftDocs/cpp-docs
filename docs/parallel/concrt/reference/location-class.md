@@ -1,16 +1,9 @@
 ---
-title: "location Class | Microsoft Docs"
-ms.custom: ""
+title: "location Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["location", "CONCRT/concurrency::location", "CONCRT/concurrency::location::location", "CONCRT/concurrency::location::current", "CONCRT/concurrency::location::from_numa_node"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["location class"]
 ms.assetid: c3289f51-5bf1-4dff-a18d-d0dab8e5d9c7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # location Class
 

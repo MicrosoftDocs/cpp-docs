@@ -1,15 +1,8 @@
 ---
-title: "Macros and Functions for Managing DLLs | Microsoft Docs"
-ms.custom: ""
+title: "Macros and Functions for Managing DLLs"
 ms.date: "04/03/2017"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["module macros in MFC"]
 ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Macros and Functions for Managing DLLs
 

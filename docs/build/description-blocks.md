@@ -1,15 +1,8 @@
 ---
-title: "Description Blocks | Microsoft Docs"
-ms.custom: ""
+title: "Description Blocks"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["description blocks", "NMAKE program, description blocks", "blocks, description"]
 ms.assetid: 1321f228-d389-40ac-b0cd-4f6e9293602b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Description Blocks
 

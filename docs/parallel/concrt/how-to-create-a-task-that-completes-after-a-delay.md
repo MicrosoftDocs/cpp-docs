@@ -1,15 +1,8 @@
 ---
-title: "How to: Create a Task that Completes After a Delay | Microsoft Docs"
-ms.custom: ""
+title: "How to: Create a Task that Completes After a Delay"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["task_completion_event class, example", "create a task that completes after a delay, example [C++]"]
 ms.assetid: 3fc0a194-3fdb-4eba-8b8a-b890981a985d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Create a Task that Completes After a Delay
 

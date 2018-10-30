@@ -1,16 +1,9 @@
 ---
-title: "CNoWorkerThread Class | Microsoft Docs"
-ms.custom: ""
+title: "CNoWorkerThread Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CNoWorkerThread", "ATLUTIL/ATL::CNoWorkerThread", "ATLUTIL/ATL::CNoWorkerThread::AddHandle", "ATLUTIL/ATL::CNoWorkerThread::AddTimer", "ATLUTIL/ATL::CNoWorkerThread::GetThreadHandle", "ATLUTIL/ATL::CNoWorkerThread::GetThreadId", "ATLUTIL/ATL::CNoWorkerThread::Initialize", "ATLUTIL/ATL::CNoWorkerThread::RemoveHandle", "ATLUTIL/ATL::CNoWorkerThread::Shutdown"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CNoWorkerThread class"]
 ms.assetid: 29f06bae-b658-4aac-9c14-331e996d25d1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CNoWorkerThread Class
 

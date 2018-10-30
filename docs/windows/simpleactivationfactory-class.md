@@ -1,16 +1,10 @@
 ---
-title: "SimpleActivationFactory Class | Microsoft Docs"
-ms.custom: ""
+title: "SimpleActivationFactory Class"
 ms.date: "09/07/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::SimpleActivationFactory", "module/Microsoft::WRL::SimpleActivationFactory::ActivateInstance", "module/Microsoft::WRL::SimpleActivationFactory::GetRuntimeClassName", "module/Microsoft::WRL::SimpleActivationFactory::GetTrustLevel"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::SimpleActivationFactory class", "Microsoft::WRL::SimpleActivationFactory::ActivateInstance method", "Microsoft::WRL::SimpleActivationFactory::GetRuntimeClassName method", "Microsoft::WRL::SimpleActivationFactory::GetTrustLevel method"]
 ms.assetid: aff768e0-0038-4fd7-95d2-ad7d308da41c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # SimpleActivationFactory Class
 

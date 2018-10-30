@@ -1,16 +1,9 @@
 ---
-title: "@@: | Microsoft Docs"
-ms.custom: ""
+title: "@@:"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["@@:"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["@@: symbol"]
 ms.assetid: 4c0aa730-d534-4efd-9608-54d683d78654
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # @@:
 

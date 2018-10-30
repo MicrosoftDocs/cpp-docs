@@ -1,16 +1,9 @@
 ---
-title: "DCOMCNFG | Microsoft Docs"
-ms.custom: ""
+title: "DCOMCNFG"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
 f1_keywords: ["DCOMCNFG"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DCOMCNFG utility", "DCOM, configuring in ATL"]
 ms.assetid: 5a8126e9-ef27-40fb-a66e-9dce8d1a7e80
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # DCOMCNFG
 

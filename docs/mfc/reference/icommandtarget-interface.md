@@ -1,16 +1,9 @@
 ---
-title: "ICommandTarget Interface | Microsoft Docs"
-ms.custom: ""
+title: "ICommandTarget Interface"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["ICommandTarget", "AFXWINFORMS/ICommandTarget", "AFXWINFORMS/ICommandTarget::Initialize"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ICommandTarget interface [MFC]"]
 ms.assetid: dd9927f6-3479-4e7c-8ef9-13206cf901f3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ICommandTarget Interface
 

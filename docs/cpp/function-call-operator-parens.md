@@ -1,15 +1,8 @@
 ---
-title: "Function Call Operator: () | Microsoft Docs"
-ms.custom: ""
+title: "Function Call Operator: ()"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["( ) function call operator", "function calls, C++ functions", "() function call operator", "postfix operators [C++]", "function calls, operator", "functions [C++], function-call operator", "function call operator ()"]
 ms.assetid: 50c92e59-a4bf-415a-a6ab-d66c679ee80a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Function Call Operator: ()
 

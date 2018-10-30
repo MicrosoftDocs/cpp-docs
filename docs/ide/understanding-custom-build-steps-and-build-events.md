@@ -1,15 +1,8 @@
 ---
-title: "Understanding Custom Build Steps and Build Events | Microsoft Docs"
-ms.custom: ""
+title: "Understanding Custom Build Steps and Build Events"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["builds [C++], events", "custom build steps [C++], customizing builds", "events [C++], build", "custom build steps [C++]", "build steps [C++]", "build events [C++], order of events and build steps", "build steps [C++], build events", "builds [C++], custom build steps"]
 ms.assetid: beb2f017-3e9f-4b2c-9b57-2572fd2628e4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Understanding Custom Build Steps and Build Events
 

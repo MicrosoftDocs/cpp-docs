@@ -1,16 +1,9 @@
 ---
-title: "-vd (Disable Construction Displacements) | Microsoft Docs"
-ms.custom: ""
+title: "/vd (Disable Construction Displacements)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/vd"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-vd0 compiler option [C++]", "vd1 compiler option [C++]", "/vdn (Disable Construction Displacement) compiler option", "constructor displacements", "vtordisp fields", "/vd0 compiler option [C++]", "-vd1 compiler option [C++]", "/vd1 compiler option [C++]", "displacements compiler option", "vd0 compiler option [C++]", "Disable Construction Displacements compiler option"]
 ms.assetid: 93258964-14d7-4b1c-9cbc-d6f4d74eab69
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /vd (Disable Construction Displacements)
 

@@ -1,16 +1,9 @@
 ---
-title: "__outbytestring | Microsoft Docs"
-ms.custom: ""
+title: "__outbytestring"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__outbytestring"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["rep outsb instruction", "__outbytestring intrinsic", "outsb instruction"]
 ms.assetid: c9150661-9c18-427f-bae8-710bba6ed78c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __outbytestring
 

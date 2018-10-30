@@ -1,16 +1,10 @@
 ---
-title: "Platform::Collections::Map Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Collections::Map Class"
 ms.date: "01/18/2018"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::Map::Map", "COLLECTION/Platform::Collections::Map::Clear", "COLLECTION/Platform::Collections::Map::First", "COLLECTION/Platform::Collections::Map::GetView", "COLLECTION/Platform::Collections::Map::HasKey", "COLLECTION/Platform::Collections::Map::Insert", "COLLECTION/Platform::Collections::Map::Lookup", "COLLECTION/Platform::Collections::Map::Remove", "COLLECTION/Platform::Collections::Map::Size"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Map Class (C++/Cx)"]
 ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::Map Class
 

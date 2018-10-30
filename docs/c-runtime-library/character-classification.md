@@ -1,16 +1,9 @@
 ---
-title: "Character Classification | Microsoft Docs"
-ms.custom: ""
+title: "Character Classification"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.types.character"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["character classification routines", "characters, testing"]
 ms.assetid: 3b6c8f0b-9701-407a-b384-9086698773f5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Character Classification
 

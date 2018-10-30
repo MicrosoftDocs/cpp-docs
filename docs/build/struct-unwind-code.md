@@ -1,14 +1,7 @@
 ---
-title: "struct UNWIND_CODE | Microsoft Docs"
-ms.custom: ""
+title: "struct UNWIND_CODE"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 104955d8-7e33-4c5a-b0c6-3254648f0af3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # struct UNWIND_CODE
 

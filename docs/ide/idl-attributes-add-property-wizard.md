@@ -1,15 +1,8 @@
 ---
-title: "IDL Attributes, Add Property Wizard | Microsoft Docs"
-ms.custom: ""
+title: "IDL Attributes, Add Property Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.prop.idlattributes"]
-dev_langs: ["C++"]
 ms.assetid: 356ed666-79d0-4bd9-a5e7-cda679cbadbd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IDL Attributes, Add Property Wizard
 

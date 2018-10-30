@@ -1,16 +1,9 @@
 ---
-title: "&lt;system_error&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;system_error&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<system_error>", "system_error"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["system_error header"]
 ms.assetid: 5e046c6e-48d9-4740-8c8a-05f3727c1215
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;system_error&gt;
 

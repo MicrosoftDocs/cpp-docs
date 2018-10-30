@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (Level 1) C4788 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (Level 1) C4788"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4788"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4788"]
 ms.assetid: 47d75bda-f833-4bdd-93a0-a134df0cd303
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (Level 1) C4788
 

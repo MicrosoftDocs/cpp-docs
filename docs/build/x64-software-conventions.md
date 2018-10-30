@@ -1,15 +1,8 @@
 ---
-title: "x64 Software Conventions | Microsoft Docs"
-ms.custom: ""
+title: "x64 Software Conventions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["x64 coding conventions", "Visual C++, x64 calling conventions"]
 ms.assetid: 750f3d97-1706-4840-b2fc-41a007329a08
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # x64 Software Conventions
 

@@ -1,15 +1,8 @@
 ---
-title: "ATL and the Free Threaded Marshaler | Microsoft Docs"
-ms.custom: ""
+title: "ATL and the Free Threaded Marshaler"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, free threaded marshaler", "free threaded marshaler", "threading [C++], marshaler in ATL", "threading [ATL], free threaded marshaler", "FTM in ATL"]
 ms.assetid: 2db88a13-2217-4ebc-aa7e-432d5da902eb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL and the Free Threaded Marshaler
 

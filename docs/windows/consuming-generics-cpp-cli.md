@@ -1,15 +1,9 @@
 ---
-title: "Consuming Generics (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "Consuming Generics (C++/CLI)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["generics [C++], consuming from .NET languages"]
 ms.assetid: e6330ef5-e907-432e-b527-7a22f5899639
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Consuming Generics (C++/CLI)
 

@@ -1,16 +1,9 @@
 ---
-title: "importlib (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "importlib (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.importlib"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["importlib attribute"]
 ms.assetid: f129e459-b8d3-4aca-a0bc-ee53e18b62ed
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # importlib
 

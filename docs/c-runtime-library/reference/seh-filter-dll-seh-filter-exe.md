@@ -1,19 +1,12 @@
 ---
-title: "_seh_filter_dll, _seh_filter_exe | Microsoft Docs"
-ms.custom: ""
+title: "_seh_filter_dll, _seh_filter_exe"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_XcptFilter", "_seh_filter_dll", "_seh_filter_exe"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["XcptFilter", "_XcptFilter", "_seh_filter_dll", "_seh_filter_exe", "corecrt_startup/_seh_filter_exe", "corecrt_startup/_seh_filter_dll"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["XcptFilter function", "_XcptFilter function", "_seh_filter_dll function", "_seh_filter_exe function"]
 ms.assetid: 747e5963-3a12-4bf5-b5c4-d4c1b6068e15
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _seh_filter_dll, _seh_filter_exe
 

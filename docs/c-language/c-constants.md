@@ -1,15 +1,8 @@
 ---
-title: "C Constants | Microsoft Docs"
-ms.custom: ""
+title: "C Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["constants, C", "constants"]
 ms.assetid: f5bd7213-97ab-4cad-b913-1fc91a486935
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Constants
 

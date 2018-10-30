@@ -1,15 +1,8 @@
 ---
-title: "Reference Counting (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Reference Counting (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["AddRef method [C++], reference counting", "reference counting", "AddRef method [C++]", "reference counts", "references, counting"]
 ms.assetid: b1fd4514-6de6-429f-9e60-2777c0d07a3d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Reference Counting
 

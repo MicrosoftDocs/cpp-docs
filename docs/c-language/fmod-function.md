@@ -1,15 +1,8 @@
 ---
-title: "fmod Function | Microsoft Docs"
-ms.custom: ""
+title: "fmod Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["fmod function"]
 ms.assetid: ffb3d9b9-b6e4-45e2-aadb-af60c3ff54f6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # fmod Function
 

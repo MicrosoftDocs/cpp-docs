@@ -1,15 +1,9 @@
 ---
-title: "How to: Add Command Routing to the Windows Forms Control | Microsoft Docs"
+title: "How to: Add Command Routing to the Windows Forms Control"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["command routing [C++], adding to Windows Forms controls", "Windows Forms controls [C++], command routing"]
 ms.assetid: bf138ece-b463-442a-b0a0-de7063a760c0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Add Command Routing to the Windows Forms Control
 

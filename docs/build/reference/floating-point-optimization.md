@@ -1,13 +1,7 @@
 ---
-title: "Microsoft Visual C++ floating point optimization | Microsoft Docs"
-ms.custom: ""
+title: "Microsoft Visual C++ floating point optimization"
 ms.date: "03/09/2018"
-ms.technology: ["cpp-tools"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Microsoft Visual C++ floating-point optimization
 

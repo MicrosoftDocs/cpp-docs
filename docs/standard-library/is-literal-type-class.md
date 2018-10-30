@@ -1,16 +1,9 @@
 ---
-title: "is_literal_type Class | Microsoft Docs"
-ms.custom: ""
+title: "is_literal_type Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_literal_type"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_literal_type"]
 ms.assetid: a03a4ebb-ee66-48d6-91bb-41cf72b2401f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_literal_type Class
 

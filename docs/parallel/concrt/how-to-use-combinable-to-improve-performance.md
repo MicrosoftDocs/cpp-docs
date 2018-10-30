@@ -1,15 +1,8 @@
 ---
-title: "How to: Use combinable to Improve Performance | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use combinable to Improve Performance"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["combinable class, example", "improving parallel performance with combinable [Concurrency Runtime]"]
 ms.assetid: fa730580-1c94-4b2d-8aec-57c91dc0497e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Use combinable to Improve Performance
 

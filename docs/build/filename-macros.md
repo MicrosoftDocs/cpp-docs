@@ -1,15 +1,8 @@
 ---
-title: "Filename Macros | Microsoft Docs"
-ms.custom: ""
+title: "Filename Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["macros, NMAKE", "filename macros in NMAKE", "NMAKE program, filename macros"]
 ms.assetid: 20afd6b3-5b6c-4e33-9d01-309ce98ef9db
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Filename Macros
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3050 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3050"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3050"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3050"]
 ms.assetid: ee090a0b-29cc-4215-a2f9-d82af79b8e82
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3050
 

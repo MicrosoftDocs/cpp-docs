@@ -1,15 +1,8 @@
 ---
-title: "Function Overloading | Microsoft Docs"
-ms.custom: ""
+title: "Function Overloading"
 ms.date: "1/25/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["function overloading [C++], about function overloading", "function overloading", "declaring functions [C++], overloading"]
 ms.assetid: 3c9884cb-1d5e-42e8-9a49-6f46141f929e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Function Overloading
 

@@ -1,16 +1,9 @@
 ---
-title: "IDBInitializeImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IDBInitializeImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-f1_keywords: ["ATL.IDBInitializeImpl<T>", "ATL::IDBInitializeImpl<T>", "IDBInitializeImpl", "ATL::IDBInitializeImpl", "ATL.IDBInitializeImpl", "IDBInitializeImpl.IDBInitializeImpl", "IDBInitializeImpl", "IDBInitializeImpl::IDBInitializeImpl", "Initialize", "IDBInitializeImpl::Initialize", "IDBInitializeImpl.Initialize", "IDBInitializeImpl.Uninitialize", "Uninitialize", "IDBInitializeImpl::Uninitialize", "ATL::IDBInitializeImpl::m_dwStatus", "IDBInitializeImpl.m_dwStatus", "ATL.IDBInitializeImpl.m_dwStatus", "IDBInitializeImpl::m_dwStatus", "IDBInitializeImpl<T>::m_dwStatus", "ATL.IDBInitializeImpl<T>.m_dwStatus", "ATL::IDBInitializeImpl<T>::m_dwStatus", "m_dwStatus", "ATL::IDBInitializeImpl<T>::m_pCUtlPropInfo", "m_pCUtlPropInfo", "IDBInitializeImpl::m_pCUtlPropInfo",                    "ATL.IDBInitializeImpl.m_pCUtlPropInfo", "IDBInitializeImpl<T>::m_pCUtlPropInfo", "IDBInitializeImpl.m_pCUtlPropInfo", "ATL::IDBInitializeImpl::m_pCUtlPropInfo"]
-dev_langs: ["C++"]
+f1_keywords: ["ATL.IDBInitializeImpl<T>", "ATL::IDBInitializeImpl<T>", "IDBInitializeImpl", "ATL::IDBInitializeImpl", "ATL.IDBInitializeImpl", "IDBInitializeImpl.IDBInitializeImpl", "IDBInitializeImpl", "IDBInitializeImpl::IDBInitializeImpl", "Initialize", "IDBInitializeImpl::Initialize", "IDBInitializeImpl.Initialize", "IDBInitializeImpl.Uninitialize", "Uninitialize", "IDBInitializeImpl::Uninitialize", "ATL::IDBInitializeImpl::m_dwStatus", "IDBInitializeImpl.m_dwStatus", "ATL.IDBInitializeImpl.m_dwStatus", "IDBInitializeImpl::m_dwStatus", "IDBInitializeImpl<T>::m_dwStatus", "ATL.IDBInitializeImpl<T>.m_dwStatus", "ATL::IDBInitializeImpl<T>::m_dwStatus", "m_dwStatus", "ATL::IDBInitializeImpl<T>::m_pCUtlPropInfo", "m_pCUtlPropInfo", "IDBInitializeImpl::m_pCUtlPropInfo", "ATL.IDBInitializeImpl.m_pCUtlPropInfo", "IDBInitializeImpl<T>::m_pCUtlPropInfo", "IDBInitializeImpl.m_pCUtlPropInfo", "ATL::IDBInitializeImpl::m_pCUtlPropInfo"]
 helpviewer_keywords: ["IDBInitializeImpl class", "IDBInitializeImpl constructor", "Initialize method", "Uninitialize method", "m_dwStatus", "m_pCUtlPropInfo"]
 ms.assetid: e4182f81-0443-44f5-a0d3-e7e075d6f883
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBInitializeImpl Class
 

@@ -1,16 +1,9 @@
 ---
-title: "noalias | Microsoft Docs"
-ms.custom: ""
+title: "noalias"
 ms.date: "02/09/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["noalias_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["noalias __declspec keyword", "__declspec keyword [C++], noalias"]
 ms.assetid: efafa8b0-7f39-4edc-a81e-d287ae882c9b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # noalias
 

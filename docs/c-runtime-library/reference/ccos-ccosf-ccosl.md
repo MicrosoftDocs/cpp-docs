@@ -1,19 +1,12 @@
 ---
-title: "ccos, ccosf, ccosl | Microsoft Docs"
-ms.custom: ""
+title: "ccos, ccosf, ccosl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["ccos", "ccosf", "ccosl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["ccos", "ccosf", "ccosl", "complex/ccos", "complex/ccosf", "complex/ccosl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ccos function", "ccosf function", "ccosl function"]
 ms.assetid: 4ab936ac-ff85-49ac-9418-2b69cf5d4696
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ccos, ccosf, ccosl
 

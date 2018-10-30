@@ -1,16 +1,9 @@
 ---
-title: "&lt;cwctype&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;cwctype&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<cwctype>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cwctype header"]
 ms.assetid: 46476f95-b8c3-4ab2-a172-9a1be91124b7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;cwctype&gt;
 

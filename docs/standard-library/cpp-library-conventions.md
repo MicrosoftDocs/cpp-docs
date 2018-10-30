@@ -1,15 +1,8 @@
 ---
-title: "C++ Library Conventions | Microsoft Docs"
-ms.custom: ""
+title: "C++ Library Conventions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["C++ Standard Library, conventions", "classes [C++]", "functions [C++], library naming conventions", "naming conventions [C++], C++ Standard Library", "conventions [C++], C++ Standard Library", "function names [C++]", "coding conventions, C++ Standard Library", "naming conventions [C++], C++ library"]
 ms.assetid: bf41b79a-2d53-4f46-8d05-779358335146
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C++ Library Conventions
 

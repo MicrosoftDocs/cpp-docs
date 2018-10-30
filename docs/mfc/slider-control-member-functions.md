@@ -1,15 +1,8 @@
 ---
-title: "Slider Control Member Functions | Microsoft Docs"
-ms.custom: ""
+title: "Slider Control Member Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSliderCtrl class [MFC], methods", "slider controls [MFC], member functions"]
 ms.assetid: dbde49ee-7306-4d14-a6ce-d09aa198178f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Slider Control Member Functions
 

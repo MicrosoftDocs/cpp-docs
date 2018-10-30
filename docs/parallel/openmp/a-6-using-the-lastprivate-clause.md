@@ -1,14 +1,7 @@
 ---
-title: "A.6   Using the lastprivate Clause | Microsoft Docs"
-ms.custom: ""
+title: "A.6   Using the lastprivate Clause"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: cf3bf0cc-aa46-4e44-9433-e2969e3be2c1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # A.6   Using the lastprivate Clause
 

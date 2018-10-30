@@ -1,14 +1,7 @@
 ---
-title: "C Declarations and Definitions | Microsoft Docs"
-ms.custom: ""
+title: "C Declarations and Definitions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 575f0c9b-5554-4346-be64-b2129ca9227f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Declarations and Definitions
 

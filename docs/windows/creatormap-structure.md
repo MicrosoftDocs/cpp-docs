@@ -1,16 +1,10 @@
 ---
-title: "CreatorMap Structure | Microsoft Docs"
-ms.custom: ""
+title: "CreatorMap Structure"
 ms.date: "09/21/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Details::CreatorMap", "implements/Microsoft::WRL::Details::CreatorMap", "module/Microsoft::WRL::Details::CreatorMap::activationId", "module/Microsoft::WRL::Details::CreatorMap::factoryCache", "module/Microsoft::WRL::Details::CreatorMap::factoryCreator", "module/Microsoft::WRL::Details::CreatorMap::serverName"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Details::CreatorMap structure", "Microsoft::WRL::Details::CreatorMap::activationId data member", "Microsoft::WRL::Details::CreatorMap::factoryCache data member", "Microsoft::WRL::Details::CreatorMap::factoryCreator data member", "Microsoft::WRL::Details::CreatorMap::serverName data member"]
 ms.assetid: 94e40927-90c3-4107-bca3-3ad2dc4beda9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # CreatorMap Structure
 

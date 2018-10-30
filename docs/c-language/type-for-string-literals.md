@@ -1,15 +1,8 @@
 ---
-title: "Type for String Literals | Microsoft Docs"
-ms.custom: ""
+title: "Type for String Literals"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["string literals, type", "types [C], string literals"]
 ms.assetid: f50a28af-20c1-4440-bdc6-564c86a309c8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Type for String Literals
 

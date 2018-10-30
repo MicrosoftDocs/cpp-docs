@@ -1,15 +1,8 @@
 ---
-title: "Delimiters for Visual C++ Documentation Tags | Microsoft Docs"
-ms.custom: ""
+title: "Delimiters for Visual C++ Documentation Tags"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["XML documentation, delimiters"]
 ms.assetid: debfbdd9-63fa-4c58-a18e-a4d203d241d7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Delimiters for Visual C++ Documentation Tags
 

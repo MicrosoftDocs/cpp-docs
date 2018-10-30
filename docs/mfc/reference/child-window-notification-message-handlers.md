@@ -1,16 +1,9 @@
 ---
-title: "Child Window Notification Message Handlers | Microsoft Docs"
-ms.custom: ""
+title: "Child Window Notification Message Handlers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["ChildWindow"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["message handlers [MFC]", "message handling [MFC], child window message handlers", "notifications [MFC], child window messages", "windows [MFC], message handlers", "child windows [MFC], messages"]
 ms.assetid: fddfdd08-8ecf-4f84-8b45-5a84616aaa8d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Child Window Notification Message Handlers
 

@@ -1,15 +1,8 @@
 ---
-title: "ODBC Driver Requirements for Dynasets | Microsoft Docs"
-ms.custom: ""
+title: "ODBC Driver Requirements for Dynasets"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC recordsets, dynasets", "drivers, for dynasets", "drivers, ODBC", "recordsets, dynasets", "dynasets", "ODBC drivers, dynasets"]
 ms.assetid: 585cc67b-4d92-404b-9903-d769cd17badc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC Driver Requirements for Dynasets
 

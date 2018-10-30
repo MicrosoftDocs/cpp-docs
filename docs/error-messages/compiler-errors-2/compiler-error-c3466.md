@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3466 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3466"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3466"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3466"]
 ms.assetid: 69a877d9-a749-474b-bfc3-8d3fd53ba8fd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3466
 

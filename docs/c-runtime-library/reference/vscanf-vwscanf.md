@@ -1,18 +1,11 @@
 ---
-title: "vscanf, vwscanf | Microsoft Docs"
-ms.custom: ""
+title: "vscanf, vwscanf"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["vscanf", "vwscanf"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["vscanf", "vwscanf", "_vtscanf"]
-dev_langs: ["C++"]
 ms.assetid: d1df595b-11bc-4682-9441-a92616301e3b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # vscanf, vwscanf
 

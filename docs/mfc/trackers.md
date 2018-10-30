@@ -1,15 +1,8 @@
 ---
-title: "Trackers | Microsoft Docs"
-ms.custom: ""
+title: "Trackers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["trackers [MFC]", "OLE applications [MFC], trackers", "applications [OLE], trackers", "tracking OLE items [MFC]", "OLE containers [MFC], trackers", "CDC class [MFC], trackers", "CRectTracker class [MFC], implementing trackers", "OLE server applications [MFC], trackers"]
 ms.assetid: dcd09399-6637-4621-80e5-d12670429787
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Trackers
 

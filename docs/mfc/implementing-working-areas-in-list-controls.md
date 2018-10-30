@@ -1,15 +1,8 @@
 ---
-title: "Implementing Working Areas in List Controls | Microsoft Docs"
-ms.custom: ""
+title: "Implementing Working Areas in List Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["list controls [MFC], working areas", "working areas in list control [MFC]"]
 ms.assetid: fbbb356b-3359-4348-8603-f1cb114cadde
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Implementing Working Areas in List Controls
 

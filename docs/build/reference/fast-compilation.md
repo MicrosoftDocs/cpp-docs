@@ -1,15 +1,8 @@
 ---
-title: "Fast Compilation | Microsoft Docs"
-ms.custom: ""
+title: "Fast Compilation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["performance, cle.exe compiler", "compilation, performance", "cl.exe compiler, performance", "fast compiling"]
 ms.assetid: 5fead136-ba69-40c8-8e25-236f89d5990a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fast Compilation
 

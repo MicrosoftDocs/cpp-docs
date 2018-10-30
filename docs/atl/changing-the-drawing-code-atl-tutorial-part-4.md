@@ -1,15 +1,9 @@
 ---
-title: "Changing the Drawing Code (ATL Tutorial, Part 4) | Microsoft Docs"
+title: "Changing the Drawing Code (ATL Tutorial, Part 4)"
 ms.custom: "get-started-article"
 ms.date: "09/26/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["_ATL_MIN_CRT macro"]
 ms.assetid: 08ff14e8-aa49-4139-a110-5d071939cf1e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Changing the Drawing Code (ATL Tutorial, Part 4)
 

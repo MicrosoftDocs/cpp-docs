@@ -1,16 +1,9 @@
 ---
-title: "-DLL (Build a DLL) | Microsoft Docs"
-ms.custom: ""
+title: "/DLL (Build a DLL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/dll"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-DLL linker option", "/DLL linker option [C++]", "exporting DLLs [C++], specifying exports", "DLLs [C++], building", "DLL linker option [C++]"]
 ms.assetid: c7685aec-31d0-490f-9503-fb5171a23609
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /DLL (Build a DLL)
 

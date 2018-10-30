@@ -1,16 +1,9 @@
 ---
-title: "NMAKE Fatal Error U1073 | Microsoft Docs"
-ms.custom: ""
+title: "NMAKE Fatal Error U1073"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["U1073"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["U1073"]
 ms.assetid: d46bf2dd-400a-4802-9db2-f832e1c97f02
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # NMAKE Fatal Error U1073
 

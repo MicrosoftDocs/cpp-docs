@@ -1,19 +1,12 @@
 ---
-title: "fma, fmaf, fmal | Microsoft Docs"
-ms.custom: ""
+title: "fma, fmaf, fmal"
 ms.date: "04/05/2018"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["fma", "fmaf", "fmal"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["fma", "fmaf", "fmal", "math/fma", "math/fmaf", "math/fmal"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["fma function", "fmaf function", "fmal function"]
 ms.assetid: 584a6037-da1e-4e86-9f0c-97aae86de0c0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fma, fmaf, fmal
 

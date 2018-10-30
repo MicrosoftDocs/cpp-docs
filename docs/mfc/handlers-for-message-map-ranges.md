@@ -1,15 +1,8 @@
 ---
-title: "Handlers for Message-Map Ranges | Microsoft Docs"
-ms.custom: ""
+title: "Handlers for Message-Map Ranges"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["message handlers [MFC]", "handlers [MFC], message-map ranges", "message maps [MFC], message handler functions", "message maps [MFC], ranges", "control-notification messages [MFC]", "command IDs [MFC], message mapping", "message-map ranges [MFC]", "handlers [MFC]", "message handling [MFC], message handler functions", "mappings [MFC], message ranges", "command handling [MFC], command update handlers", "controls [MFC], notifications", "handler functions [MFC], message-map ranges", "handler functions [MFC]", "command update handlers [MFC]", "command routing [MFC], command update handlers", "message ranges [MFC]", "handler functions [MFC], declaring", "message ranges [MFC], mapping"]
 ms.assetid: a271478b-5e1c-46f5-9f29-e5be44b27d08
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Handlers for Message-Map Ranges
 

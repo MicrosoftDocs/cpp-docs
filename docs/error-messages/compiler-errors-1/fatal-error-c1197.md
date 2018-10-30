@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1197 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1197"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1197"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1197"]
 ms.assetid: 22b801b7-e792-41f6-a461-973c03c69f25
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1197
 

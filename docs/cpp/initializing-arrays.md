@@ -1,15 +1,8 @@
 ---
-title: "Initializing Arrays | Microsoft Docs"
-ms.custom: ""
+title: "Initializing Arrays"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["initializing arrays [C++]", "arrays [C++], initializing"]
 ms.assetid: 41efe5f0-15b5-4f49-9196-c4902f8fc705
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Initializing Arrays
 

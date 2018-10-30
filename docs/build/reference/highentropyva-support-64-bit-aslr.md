@@ -1,14 +1,7 @@
 ---
-title: "/HIGHENTROPYVA (Support 64-Bit ASLR) | Microsoft Docs"
-ms.custom: ""
+title: "/HIGHENTROPYVA (Support 64-Bit ASLR)"
 ms.date: "06/12/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: fe35f9f7-d28e-4694-9aeb-a79db06168e0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /HIGHENTROPYVA (Support 64-Bit ASLR)
 

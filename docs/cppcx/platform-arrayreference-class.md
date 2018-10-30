@@ -1,16 +1,10 @@
 ---
-title: "Platform::ArrayReference Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::ArrayReference Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::ArrayReference::ArrayReference"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::ArrayReference Class"]
 ms.assetid: 9ab3b15e-8a60-4600-8fcb-7d6c86284f4b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::ArrayReference Class
 

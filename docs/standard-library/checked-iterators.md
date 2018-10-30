@@ -1,16 +1,9 @@
 ---
-title: "Checked Iterators | Microsoft Docs"
-ms.custom: ""
+title: "Checked Iterators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["_SECURE_SCL_THROWS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Safe Libraries", "Safe Libraries, C++ Standard Library", "Safe C++ Standard Library", "iterators, checked", "checked iterators"]
 ms.assetid: cfc87df8-e3d9-403b-ab78-e9483247d940
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Checked Iterators
 

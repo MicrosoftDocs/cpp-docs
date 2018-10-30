@@ -1,14 +1,8 @@
 ---
-title: "Creating the Project (ATL Tutorial, Part 1) | Microsoft Docs"
+title: "Creating the Project (ATL Tutorial, Part 1)"
 ms.custom: "get-started-article"
 ms.date: "09/26/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: f6b727d1-390a-4b27-b82f-daadcd9fc059
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating the Project (ATL Tutorial, Part 1)
 

@@ -1,15 +1,8 @@
 ---
-title: "MFC ActiveX Controls: Property Pages | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Property Pages"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["DDP_ functions [MFC]", "MFC ActiveX controls [MFC], properties", "property pages [MFC], MFC ActiveX controls", "DoDataExchange method [MFC]", "OLEIVERB_PROPERTIES", "CPropertyPageDialog class [MFC]", "MFC ActiveX controls [MFC], property pages"]
 ms.assetid: 1506f87a-9fd6-4505-8380-0dbc9636230e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Property Pages
 

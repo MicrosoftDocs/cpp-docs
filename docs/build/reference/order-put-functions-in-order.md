@@ -1,16 +1,9 @@
 ---
-title: "-ORDER (Put Functions in Order) | Microsoft Docs"
-ms.custom: ""
+title: "/ORDER (Put Functions in Order)"
 ms.date: "09/05/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.FunctionOrder", "/order"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ORDER linker option", "-ORDER linker option", "LINK tool [C++], program optimizing", "/ORDER linker option", "LINK tool [C++], swap tuning", "paging, optimizing"]
 ms.assetid: ecf5eb3e-e404-4e86-9a91-4e5ec157261a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /ORDER (Put Functions in Order)
 

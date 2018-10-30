@@ -1,16 +1,9 @@
 ---
-title: "affinity_partitioner Class | Microsoft Docs"
-ms.custom: ""
+title: "affinity_partitioner Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["affinity_partitioner", "PPL/concurrency::affinity_partitioner", "PPL/concurrency::affinity_partitioner::affinity_partitioner"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["affinity_partitioner class"]
 ms.assetid: 31bf7bb1-bd01-491c-9760-d9d60edfccad
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # affinity_partitioner Class
 

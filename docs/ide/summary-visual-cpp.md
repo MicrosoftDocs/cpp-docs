@@ -1,16 +1,9 @@
 ---
-title: "&lt;summary&gt; (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "&lt;summary&gt; (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["<summary>", "summary"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<summary> C++ XML tag", "summary C++ XML tag"]
 ms.assetid: cdeeefbb-1339-45d6-9002-10042a9a2726
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # &lt;summary&gt; (Visual C++)
 

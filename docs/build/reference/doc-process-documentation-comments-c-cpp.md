@@ -1,16 +1,9 @@
 ---
-title: "-doc (Process Documentation Comments) (C/C++) | Microsoft Docs"
-ms.custom: ""
+title: "/doc (Process Documentation Comments) (C/C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.GenerateXMLDocumentationFiles", "/doc", "VC.Project.VCCLCompilerTool.XMLDocumentationFileName"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/doc compiler option [C++]", "comments, C++ code", "XML documentation, comments in source files", "-doc compiler option [C++]"]
 ms.assetid: b54f7e2c-f28f-4f46-9ed6-0db09be2cc63
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /doc (Process Documentation Comments) (C/C++)
 

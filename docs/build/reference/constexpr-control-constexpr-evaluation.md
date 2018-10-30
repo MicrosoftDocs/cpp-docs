@@ -1,16 +1,9 @@
 ---
-title: "-constexpr (Control constexpr evaluation) | Microsoft Docs"
-ms.custom: ""
+title: "/constexpr (Control constexpr evaluation)"
 ms.date: "08/15/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/constexpr", "-constexpr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/constexpr control constexpr evaluation [C++]", "-constexpr control constexpr evaluation [C++]", "constexpr control constexpr evaluation [C++]"]
 ms.assetid: 76d56784-f5ad-401d-841d-09d1059e8b8c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /constexpr (Control constexpr evaluation)
 

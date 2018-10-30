@@ -1,16 +1,9 @@
 ---
-title: "gamma_distribution Class | Microsoft Docs"
-ms.custom: ""
+title: "gamma_distribution Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["random/std::gamma_distribution", "random/std::gamma_distribution::reset", "random/std::gamma_distribution::alpha", "random/std::gamma_distribution::beta", "random/std::gamma_distribution::param", "random/std::gamma_distribution::min", "random/std::gamma_distribution::max", "random/std::gamma_distribution::operator()", "random/std::gamma_distribution::param_type", "random/std::gamma_distribution::param_type::alpha", "random/std::gamma_distribution::param_type::beta", "random/std::gamma_distribution::param_type::operator==", "random/std::gamma_distribution::param_type::operator!="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::gamma_distribution [C++]", "std::gamma_distribution [C++], reset", "std::gamma_distribution [C++], alpha", "std::gamma_distribution [C++], beta", "std::gamma_distribution [C++], param", "std::gamma_distribution [C++], min", "std::gamma_distribution [C++], max", "std::gamma_distribution [C++], param_type", "std::gamma_distribution [C++], param_type"]
 ms.assetid: 2a6798ac-6152-41d7-8ef6-d684d92f1572
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # gamma_distribution Class
 

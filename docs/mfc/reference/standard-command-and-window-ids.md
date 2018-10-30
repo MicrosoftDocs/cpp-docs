@@ -1,16 +1,9 @@
 ---
-title: "Standard Command and Window IDs | Microsoft Docs"
-ms.custom: ""
+title: "Standard Command and Window IDs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["standard command and Window IDs"]
 ms.assetid: 0424805c-fff8-4531-8f0c-15cfb13aa612
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Standard Command and Window IDs
 

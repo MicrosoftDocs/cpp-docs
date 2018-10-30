@@ -1,16 +1,9 @@
 ---
-title: "MFC COM | Microsoft Docs"
-ms.custom: ""
+title: "MFC COM"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["MFC COM (MFC)"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, COM support", "MFC ActiveX controls [MFC], COM support in MFC", "MFC COM [MFC]", "ActiveX controls [MFC], COM object model", "Active technology [MFC]", "COM [MFC], MFC support"]
 ms.assetid: 7646bdcb-3a06-4ed5-9386-9b00f3979dcb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC COM
 

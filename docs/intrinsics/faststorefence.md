@@ -1,16 +1,9 @@
 ---
-title: "__faststorefence | Microsoft Docs"
-ms.custom: ""
+title: "__faststorefence"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__faststorefence_cpp", "__faststorefence"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__faststorefence intrinsic", "sfence instruction"]
 ms.assetid: 6c6eb973-3cf0-4306-b3af-cfde9b0210a5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __faststorefence
 

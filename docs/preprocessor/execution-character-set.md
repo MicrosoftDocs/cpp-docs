@@ -1,16 +1,9 @@
 ---
-title: "execution_character_set | Microsoft Docs"
-ms.custom: ""
+title: "execution_character_set"
 ms.date: "10/18/2018"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 f1_keywords: ["execution_character_set", "vc-pragma.execution_character_set"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragma execution_character_set"]
 ms.assetid: 32248cbc-7c92-4dca-8442-230c052b53ad
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # execution_character_set
 

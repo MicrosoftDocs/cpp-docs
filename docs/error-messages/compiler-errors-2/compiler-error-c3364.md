@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3364 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3364"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3364"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3364"]
 ms.assetid: 98654741-60fe-4472-a6af-e580f8c0a6e1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3364
 

@@ -1,15 +1,9 @@
 ---
-title: "Synchronization (lock Class) | Microsoft Docs"
-ms.custom: ""
+title: "Synchronization (lock Class)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["lock class"]
 ms.assetid: 5d468122-875d-4e81-b5ba-c9486a873335
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Synchronization (lock Class)
 

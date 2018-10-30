@@ -1,16 +1,9 @@
 ---
-title: "Event Handling Global Functions | Microsoft Docs"
-ms.custom: ""
+title: "Event Handling Global Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlbase/ATL::AtlWaitWithMessageLoop"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["event handling, global functions", "global functions, event handling"]
 ms.assetid: fd674470-3def-47c3-be1c-894fa85f13e8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Event Handling Global Functions
 

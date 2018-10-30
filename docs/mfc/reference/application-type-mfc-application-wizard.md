@@ -1,16 +1,9 @@
 ---
-title: "Application Type, MFC Application Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Application Type, MFC Application Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.exe.apptype"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["static libraries, MFC"]
 ms.assetid: c3f62b0e-3f13-42c5-9859-d3890d0c3e1d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Application Type, MFC Application Wizard
 

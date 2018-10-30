@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3653 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3653"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3653"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3653"]
 ms.assetid: 316549d7-f7ef-4578-a2ba-57adc8aac527
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3653
 

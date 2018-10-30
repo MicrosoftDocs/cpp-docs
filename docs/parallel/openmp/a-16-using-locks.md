@@ -1,14 +1,7 @@
 ---
-title: "A.16   Using Locks | Microsoft Docs"
-ms.custom: ""
+title: "A.16   Using Locks"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 873bf32b-6cfe-4ce1-b994-bef80b50f399
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # A.16   Using Locks
 

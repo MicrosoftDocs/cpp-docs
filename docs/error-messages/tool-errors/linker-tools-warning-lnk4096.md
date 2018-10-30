@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Warning LNK4096 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Warning LNK4096"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK4096"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4096"]
 ms.assetid: ef6fba38-59a1-4d86-bcac-cadf44d87a36
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4096
 

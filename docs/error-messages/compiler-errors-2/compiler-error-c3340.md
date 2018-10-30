@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3340 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3340"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3340"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3340"]
 ms.assetid: 23b12298-b92a-4717-8380-f165c998cb8a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3340
 

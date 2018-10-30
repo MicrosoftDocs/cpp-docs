@@ -1,16 +1,9 @@
 ---
-title: "Using CListCtrl | Microsoft Docs"
-ms.custom: ""
+title: "Using CListCtrl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CListCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CListCtrl class [MFC], using"]
 ms.assetid: 20d6a5d6-8f07-4ddf-975f-ea2dfebcc835
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using CListCtrl
 

@@ -1,16 +1,9 @@
 ---
-title: "Generated Classes, MFC Application Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Generated Classes, MFC Application Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.exe.classes"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC Application Wizard, generated classes"]
 ms.assetid: 5f33209c-7f01-4f72-8c1c-6f02f507ba9f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Generated Classes, MFC Application Wizard
 

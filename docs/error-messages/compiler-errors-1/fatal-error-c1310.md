@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1310 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1310"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1310"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1310"]
 ms.assetid: ac48aa51-8023-42fe-b844-3f8bf228fbef
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1310
 

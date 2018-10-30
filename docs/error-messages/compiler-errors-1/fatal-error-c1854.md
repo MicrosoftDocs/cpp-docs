@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1854 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1854"
 ms.date: "11/04/2016"
-ms.technology: ["devlang-cpp"]
-ms.topic: "error-reference"
 f1_keywords: ["C1854"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1854"]
 ms.assetid: 8c21a9cc-1737-475c-9e57-8725cd8937c1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1854
 

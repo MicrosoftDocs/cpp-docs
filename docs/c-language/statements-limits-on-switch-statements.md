@@ -1,14 +1,7 @@
 ---
-title: "Statements: Limits on Switch Statements | Microsoft Docs"
-ms.custom: ""
+title: "Statements: Limits on Switch Statements"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: d327ef3f-2b11-4bd6-abfe-539697fd21a7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Statements: Limits on Switch Statements
 

@@ -1,16 +1,9 @@
 ---
-title: "Security Best Practices for C++ | Microsoft Docs"
-ms.custom: ""
+title: "Security Best Practices for C++"
 ms.date: "05/08/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["securitybestpracticesVC"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, security", "security [C++]", "security [C++], best practices"]
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Security Best Practices for C++
 

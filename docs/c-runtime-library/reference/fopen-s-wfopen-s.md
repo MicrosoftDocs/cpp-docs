@@ -1,19 +1,12 @@
 ---
-title: "fopen_s, _wfopen_s | Microsoft Docs"
-ms.custom: ""
+title: "fopen_s, _wfopen_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wfopen_s", "fopen_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["fopen_s", "_tfopen_s", "_wfopen_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_wfopen_s function", "opening files, for file I/O", "_tfopen_s function", "tfopen_s function", "wfopen_s function", "fopen_s function", "Unicode [C++], creating files", "Unicode [C++], writing files", "files [C++], opening", "Unicode [C++], files"]
 ms.assetid: c534857e-39ee-4a3f-bd26-dfe551ac96c3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fopen_s, _wfopen_s
 

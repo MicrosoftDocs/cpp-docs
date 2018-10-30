@@ -1,16 +1,9 @@
 ---
-title: "HSE_VERSION_INFO Structure | Microsoft Docs"
-ms.custom: ""
+title: "HSE_VERSION_INFO Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["HSE_VERSION_INFO"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["HSE_VERSION_INFO structure [MFC]"]
 ms.assetid: 4837312d-68c8-4d05-9afa-1934d7d49b20
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # HSE_VERSION_INFO Structure
 

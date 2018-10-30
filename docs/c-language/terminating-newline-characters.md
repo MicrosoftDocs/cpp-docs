@@ -1,14 +1,7 @@
 ---
-title: "Terminating Newline Characters | Microsoft Docs"
-ms.custom: ""
+title: "Terminating Newline Characters"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: ab145180-a098-41b5-8db0-2520272964ba
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Terminating Newline Characters
 

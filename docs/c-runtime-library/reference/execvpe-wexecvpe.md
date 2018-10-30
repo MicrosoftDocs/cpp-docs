@@ -1,19 +1,12 @@
 ---
-title: "_execvpe, _wexecvpe | Microsoft Docs"
-ms.custom: ""
+title: "_execvpe, _wexecvpe"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_execvpe", "_wexecvpe"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["wexecvpe", "execvpe", "_wexecvpe", "_execvpe"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wexecvpe function", "execvpe function", "_wexecvpe function", "_execvpe function"]
 ms.assetid: c0c3c986-d9c0-4814-a96c-10f0b3092766
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _execvpe, _wexecvpe
 

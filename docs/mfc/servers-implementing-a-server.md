@@ -1,15 +1,8 @@
 ---
-title: "Servers: Implementing a Server | Microsoft Docs"
-ms.custom: ""
+title: "Servers: Implementing a Server"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["servers, implementing", "OLE server applications [MFC], implementing OLE servers"]
 ms.assetid: 5bd57e8e-3b23-4f23-9597-496fac2d24b5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Servers: Implementing a Server
 

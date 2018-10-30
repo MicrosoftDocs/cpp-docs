@@ -1,16 +1,9 @@
 ---
-title: "File Handling | Microsoft Docs"
-ms.custom: ""
+title: "File Handling"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.files"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["files [C++], handling", "files [C++], opening", "files [C++], manipulating"]
 ms.assetid: 48119e2e-e94f-4602-b08b-b72440f731d8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # File Handling
 

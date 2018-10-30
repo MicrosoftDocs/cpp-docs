@@ -1,16 +1,9 @@
 ---
-title: "ABCFLOAT Structure | Microsoft Docs"
-ms.custom: ""
+title: "ABCFLOAT Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["ABCFLOAT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ABCFLOAT structure [MFC]"]
 ms.assetid: 338e7e15-9d2c-42d0-aa80-273acfde5cc5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ABCFLOAT Structure
 

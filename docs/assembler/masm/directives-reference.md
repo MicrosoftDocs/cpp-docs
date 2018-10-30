@@ -1,16 +1,9 @@
 ---
-title: "Directives Reference | Microsoft Docs"
-ms.custom: ""
+title: "Directives Reference"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["Directives Reference"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), directives reference"]
 ms.assetid: da6efcd1-18f7-41de-81cd-a002a02f9a22
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Directives Reference
 

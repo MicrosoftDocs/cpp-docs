@@ -1,16 +1,10 @@
 ---
-title: "pin_ptr (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "pin_ptr (C++/CLI)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["pin_ptr_cpp", "stdcli::language::pin_ptr", "pin_ptr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pinning pointers", "pin_ptr keyword [C++]"]
 ms.assetid: 6c2e6c73-4ec2-4dce-8e1f-ccf3a9f9d0aa
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # pin_ptr (C++/CLI)
 

@@ -1,15 +1,8 @@
 ---
-title: "Cleaning up Resources | Microsoft Docs"
-ms.custom: ""
+title: "Cleaning up Resources"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["termination handlers [C++], cleaning up resources", "exception handling [C++], cleaning up resources", "C++ exception handling, termination handlers", "resources [C++], cleaning up", "exception handling [C++], cleanup code", "try-catch keyword [C++], termination handlers"]
 ms.assetid: 65753efe-6a27-4750-b90c-50635775c1b6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Cleaning up Resources
 

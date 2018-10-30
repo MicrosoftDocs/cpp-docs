@@ -1,15 +1,8 @@
 ---
-title: "Default Control Events | Microsoft Docs"
-ms.custom: ""
+title: "Default Control Events"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Dialog Editor [C++], default control events", "controls [C++], default control events", "events [C++], controls", "dialog box controls [C++], events"]
 ms.assetid: 75556b23-18f5-4390-97a4-2ecad3309741
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Default Control Events
 

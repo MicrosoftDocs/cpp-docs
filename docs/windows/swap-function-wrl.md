@@ -1,15 +1,9 @@
 ---
-title: "Swap Function (WRL) | Microsoft Docs"
-ms.custom: ""
+title: "Swap Function (WRL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal/Microsoft::WRL::Details::Swap"]
-dev_langs: ["C++"]
 ms.assetid: ed134a08-ceb7-4279-aa02-a183c3a426ea
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Swap Function (WRL)
 

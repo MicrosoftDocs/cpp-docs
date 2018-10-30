@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4297 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4297"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4297"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4297"]
 ms.assetid: ba92fcdc-9f70-4f60-abe6-281f9582ca59
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4297
 

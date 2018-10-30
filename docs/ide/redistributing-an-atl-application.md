@@ -1,15 +1,8 @@
 ---
-title: "Redistributing an ATL application | Microsoft Docs"
-ms.custom: ""
+title: "Redistributing an ATL application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, redistributing", "redistributing ATL", "redistributing OLE DB templates", "OLE DB templates, redistributing"]
 ms.assetid: 9a696b22-2345-43ec-826b-be7cb8cfd676
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Redistributing an ATL application
 

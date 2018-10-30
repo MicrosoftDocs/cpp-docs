@@ -1,15 +1,8 @@
 ---
-title: "How to: Catch Exceptions in Native Code Thrown from MSIL | Microsoft Docs"
-ms.custom: ""
+title: "How to: Catch Exceptions in Native Code Thrown from MSIL"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["exceptions, catching", "catching exceptions, thrown from MSIL", "MSIL, catching exceptions in native code"]
 ms.assetid: c15afd2b-8505-43bf-8a4a-f1d41532a124
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Catch Exceptions in Native Code Thrown from MSIL
 

@@ -1,15 +1,8 @@
 ---
-title: "Fetching Data | Microsoft Docs"
-ms.custom: ""
+title: "Fetching Data"
 ms.date: "10/19/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["data [C++], fetching", "rowsets [C++], fetching", "fetching", "OLE DB consumer templates [C++], fetching data"]
 ms.assetid: b07f747f-9855-4f27-a03d-b1d5b10fa284
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Fetching Data
 

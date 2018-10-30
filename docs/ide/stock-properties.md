@@ -1,15 +1,8 @@
 ---
-title: "Stock Properties | Microsoft Docs"
-ms.custom: ""
+title: "Stock Properties"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["stock properties, about stock properties", "stock properties"]
 ms.assetid: a89fc454-0b8e-447a-9033-4c8af46a24d9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Stock Properties
 

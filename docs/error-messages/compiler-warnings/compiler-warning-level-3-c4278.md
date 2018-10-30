@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 3) C4278 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 3) C4278"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4278"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4278"]
 ms.assetid: 4b6053fb-df62-4c04-b6c8-c011759557b8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4278
 

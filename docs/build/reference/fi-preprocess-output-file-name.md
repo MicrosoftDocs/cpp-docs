@@ -1,16 +1,9 @@
 ---
-title: "-Fi (Preprocess Output File Name) | Microsoft Docs"
-ms.custom: ""
+title: "/Fi (Preprocess Output File Name)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Fi"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Fi compiler option (C++)", "-Fi compiler option (C++)", "/Fi compiler option (C++)", "preprocessing output files, file name"]
 ms.assetid: 6d0ba983-a8b7-41ec-84f5-b4688ef8efee
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Fi (Preprocess Output File Name)
 

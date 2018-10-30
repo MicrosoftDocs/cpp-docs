@@ -1,14 +1,7 @@
 ---
-title: "__fastfail | Microsoft Docs"
-ms.custom: ""
+title: "__fastfail"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 9cd32639-e395-4c75-9f3a-ac3ba7f49921
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __fastfail
 

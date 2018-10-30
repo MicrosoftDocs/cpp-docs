@@ -1,16 +1,9 @@
 ---
-title: "MEASUREITEMSTRUCT Structure | Microsoft Docs"
-ms.custom: ""
+title: "MEASUREITEMSTRUCT Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["MEASUREITEMSTRUCT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MEASUREITEMSTRUCT structure [MFC]"]
 ms.assetid: d141ace4-47cb-46b5-a81c-ad2c5e5a8501
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MEASUREITEMSTRUCT Structure
 

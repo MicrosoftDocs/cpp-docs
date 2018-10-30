@@ -1,15 +1,9 @@
 ---
-title: "typeid  (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "typeid  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["typeid keyword [C++]"]
 ms.assetid: e9706cae-e7c4-4d6d-b474-646d73df3e70
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # typeid  (C++/CLI and C++/CX)
 

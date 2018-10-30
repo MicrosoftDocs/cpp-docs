@@ -1,14 +1,7 @@
 ---
-title: "A.13   Using the flush Directive with a List | Microsoft Docs"
-ms.custom: ""
+title: "A.13   Using the flush Directive with a List"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 6c9d0736-07c2-47b1-a216-5293f03b6397
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # A.13   Using the flush Directive with a List
 

@@ -1,16 +1,9 @@
 ---
-title: "CIPAddressCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CIPAddressCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CIPAddressCtrl", "AFXCMN/CIPAddressCtrl", "AFXCMN/CIPAddressCtrl::CIPAddressCtrl", "AFXCMN/CIPAddressCtrl::ClearAddress", "AFXCMN/CIPAddressCtrl::Create", "AFXCMN/CIPAddressCtrl::CreateEx", "AFXCMN/CIPAddressCtrl::GetAddress", "AFXCMN/CIPAddressCtrl::IsBlank", "AFXCMN/CIPAddressCtrl::SetAddress", "AFXCMN/CIPAddressCtrl::SetFieldFocus", "AFXCMN/CIPAddressCtrl::SetFieldRange"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CIPAddressCtrl [MFC], CIPAddressCtrl", "CIPAddressCtrl [MFC], ClearAddress", "CIPAddressCtrl [MFC], Create", "CIPAddressCtrl [MFC], CreateEx", "CIPAddressCtrl [MFC], GetAddress", "CIPAddressCtrl [MFC], IsBlank", "CIPAddressCtrl [MFC], SetAddress", "CIPAddressCtrl [MFC], SetFieldFocus", "CIPAddressCtrl [MFC], SetFieldRange"]
 ms.assetid: 9764d2f4-cb14-4ba8-b799-7f57a55a47c6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CIPAddressCtrl Class
 

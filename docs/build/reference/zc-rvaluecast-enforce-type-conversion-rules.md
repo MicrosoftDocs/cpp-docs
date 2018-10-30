@@ -1,16 +1,9 @@
 ---
-title: "/Zc:rvalueCast (Enforce type conversion rules) | Microsoft Docs"
-ms.custom: ""
+title: "/Zc:rvalueCast (Enforce type conversion rules)"
 ms.date: "03/06/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["rvaluecast", "/Zc:rvalueCast", "VC.Project.VCCLCompilerTool.EnforceTypeConversionRules"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "rvaluecast", "Enforce type conversion rules", "/Zc compiler options (C++)", "Zc compiler options (C++)"]
 ms.assetid: 7825277d-e565-4c48-b0fb-76ac0b0c6e38
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:rvalueCast (Enforce type conversion rules)
 

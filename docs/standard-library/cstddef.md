@@ -1,16 +1,9 @@
 ---
-title: "&lt;cstddef&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;cstddef&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<cstddef>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cstddef header"]
 ms.assetid: be8d1e39-5974-41ee-b41d-eafa6c82ffce
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;cstddef&gt;
 

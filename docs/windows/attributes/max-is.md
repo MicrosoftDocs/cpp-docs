@@ -1,16 +1,9 @@
 ---
-title: "max_is (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "max_is (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.max_is"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["max_is attribute"]
 ms.assetid: 7c851f5c-6649-4d77-a792-247c37d8f560
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # max_is
 

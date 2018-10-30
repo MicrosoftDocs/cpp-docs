@@ -1,14 +1,7 @@
 ---
-title: "ARM Exception Handling | Microsoft Docs"
-ms.custom: ""
+title: "ARM Exception Handling"
 ms.date: "07/11/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: fe0e615f-c033-4ad5-97f4-ff96af45b201
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ARM Exception Handling
 

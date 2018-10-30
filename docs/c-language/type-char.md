@@ -1,15 +1,8 @@
 ---
-title: "Type char | Microsoft Docs"
-ms.custom: ""
+title: "Type char"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["type char", "unsigned char keyword [C]", "char keyword [C]"]
 ms.assetid: a5da0866-e780-4793-be87-15a8426e7ea0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Type char
 

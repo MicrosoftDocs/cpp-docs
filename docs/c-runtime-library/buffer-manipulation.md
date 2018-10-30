@@ -1,16 +1,9 @@
 ---
-title: "Buffer manipulation | Microsoft Docs"
-ms.custom: ""
+title: "Buffer manipulation"
 ms.date: "04/04/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.memory"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["buffers, manipulation routines", "buffers"]
 ms.assetid: 164f4860-ce66-412c-8291-396fbd70f03e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Buffer manipulation
 

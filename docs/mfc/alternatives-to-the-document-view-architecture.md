@@ -1,15 +1,8 @@
 ---
-title: "Alternatives to the Document-View Architecture | Microsoft Docs"
-ms.custom: ""
+title: "Alternatives to the Document-View Architecture"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["documents [MFC], applications without", "CDocument class [MFC], space requirements", "views [MFC], applications without"]
 ms.assetid: 2c22f352-a137-45ce-9971-c142173496fb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Alternatives to the Document/View Architecture
 

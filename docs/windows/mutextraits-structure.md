@@ -1,16 +1,10 @@
 ---
-title: "MutexTraits Structure | Microsoft Docs"
-ms.custom: ""
+title: "MutexTraits Structure"
 ms.date: "09/27/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::MutexTraits", "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::MutexTraits::Unlock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Wrappers::HandleTraits::MutexTraits structure", "Microsoft::WRL::Wrappers::HandleTraits::MutexTraits::Unlock method"]
 ms.assetid: 6582df80-b9ba-4892-948f-d572a3b23d54
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # MutexTraits Structure
 

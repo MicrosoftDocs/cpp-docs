@@ -1,15 +1,8 @@
 ---
-title: "CRT Initialization | Microsoft Docs"
-ms.custom: ""
+title: "CRT Initialization"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRT initialization [C++]"]
 ms.assetid: e7979813-1856-4848-9639-f29c86b74ad7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # CRT Initialization
 

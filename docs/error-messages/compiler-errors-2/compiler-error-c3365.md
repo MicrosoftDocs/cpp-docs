@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3365 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3365"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3365"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3365"]
 ms.assetid: 875ec3a4-522c-4e3d-9b67-48808b857f6d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3365
 

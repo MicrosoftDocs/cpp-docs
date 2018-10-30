@@ -1,14 +1,7 @@
 ---
-title: "Significant Characters Without External Linkage | Microsoft Docs"
-ms.custom: ""
+title: "Significant Characters Without External Linkage"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 396cfb36-391a-4aa9-885d-20198d4dc2ec
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Significant Characters Without External Linkage
 

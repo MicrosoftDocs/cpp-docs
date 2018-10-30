@@ -1,15 +1,8 @@
 ---
-title: "Class Templates | Microsoft Docs"
-ms.custom: ""
+title: "Class Templates"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["classes [C++], operating on type", "class templates", "templates, class templates"]
 ms.assetid: 633a53c8-24ee-4c23-8c88-e7c3cb0b7ac3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Class Templates
 

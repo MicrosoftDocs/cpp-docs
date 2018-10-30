@@ -1,16 +1,9 @@
 ---
-title: "-APPCONTAINER | Microsoft Docs"
-ms.custom: ""
+title: "/APPCONTAINER"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/APPCONTAINER"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["APPCONTAINER editbin option", "-APPCONTAINER editbin option", "/APPCONTAINER editbin option"]
 ms.assetid: 0ca4f1ec-c8de-4a37-b3e2-deda7af0bb88
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /APPCONTAINER
 

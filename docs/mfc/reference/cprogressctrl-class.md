@@ -1,16 +1,9 @@
 ---
-title: "CProgressCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CProgressCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CProgressCtrl", "AFXCMN/CProgressCtrl", "AFXCMN/CProgressCtrl::CProgressCtrl", "AFXCMN/CProgressCtrl::Create", "AFXCMN/CProgressCtrl::CreateEx", "AFXCMN/CProgressCtrl::GetBarColor", "AFXCMN/CProgressCtrl::GetBkColor", "AFXCMN/CProgressCtrl::GetPos", "AFXCMN/CProgressCtrl::GetRange", "AFXCMN/CProgressCtrl::GetState", "AFXCMN/CProgressCtrl::GetStep", "AFXCMN/CProgressCtrl::OffsetPos", "AFXCMN/CProgressCtrl::SetBarColor", "AFXCMN/CProgressCtrl::SetBkColor", "AFXCMN/CProgressCtrl::SetMarquee", "AFXCMN/CProgressCtrl::SetPos", "AFXCMN/CProgressCtrl::SetRange", "AFXCMN/CProgressCtrl::SetState", "AFXCMN/CProgressCtrl::SetStep", "AFXCMN/CProgressCtrl::StepIt"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CProgressCtrl [MFC], CProgressCtrl", "CProgressCtrl [MFC], Create", "CProgressCtrl [MFC], CreateEx", "CProgressCtrl [MFC], GetBarColor", "CProgressCtrl [MFC], GetBkColor", "CProgressCtrl [MFC], GetPos", "CProgressCtrl [MFC], GetRange", "CProgressCtrl [MFC], GetState", "CProgressCtrl [MFC], GetStep", "CProgressCtrl [MFC], OffsetPos", "CProgressCtrl [MFC], SetBarColor", "CProgressCtrl [MFC], SetBkColor", "CProgressCtrl [MFC], SetMarquee", "CProgressCtrl [MFC], SetPos", "CProgressCtrl [MFC], SetRange", "CProgressCtrl [MFC], SetState", "CProgressCtrl [MFC], SetStep", "CProgressCtrl [MFC], StepIt"]
 ms.assetid: 222630f4-1598-4026-8198-51649b1192ab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CProgressCtrl Class
 

@@ -1,16 +1,9 @@
 ---
-title: "CAtlAutoThreadModuleT Class | Microsoft Docs"
-ms.custom: ""
+title: "CAtlAutoThreadModuleT Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAtlAutoThreadModuleT", "ATLBASE/ATL::CAtlAutoThreadModuleT", "ATLBASE/ATL::CAtlAutoThreadModuleT::GetDefaultThreads"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlAutoThreadModuleT class"]
 ms.assetid: ae1667c6-3fb8-47bc-b35d-9ea5e9896d7f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlAutoThreadModuleT Class
 

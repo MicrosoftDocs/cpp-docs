@@ -1,19 +1,12 @@
 ---
-title: "_makepath, _wmakepath | Microsoft Docs"
-ms.custom: ""
+title: "_makepath, _wmakepath"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_makepath", "_wmakepath"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_wmakepath", "_tmakepath", "makepath", "tmakepath", "wmakepath", "_makepath"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_makepath function", "wmakepath function", "makepath function", "_tmakepath function", "paths", "_wmakepath function", "tmakepath function"]
 ms.assetid: 5930b197-a7b8-46eb-8519-2841a58cd026
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _makepath, _wmakepath
 

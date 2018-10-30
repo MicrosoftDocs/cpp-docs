@@ -1,15 +1,8 @@
 ---
-title: "Compiling a C++ Program that Targets the CLR | Microsoft Docs"
-ms.custom: ""
+title: "Compiling a C++ Program that Targets the CLR"
 ms.date: "09/17/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["command-line applications [C++], managed code", "compiling programs [C++]", "Visual C++, managed code", "managed code [C++]"]
 ms.assetid: 339f89df-a5d2-4040-831a-ddbe25b5dce4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Compiling a C++ Program that Targets the CLR in Visual Studio
 

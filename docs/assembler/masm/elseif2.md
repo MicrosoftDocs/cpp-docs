@@ -1,16 +1,9 @@
 ---
-title: "ELSEIF2 | Microsoft Docs"
-ms.custom: ""
+title: "ELSEIF2"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["ELSEIF2"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ELSEIF2 directive"]
 ms.assetid: 6e6a1020-1dc2-45a9-a42c-e08442fb4071
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ELSEIF2
 

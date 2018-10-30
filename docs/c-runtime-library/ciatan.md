@@ -1,19 +1,12 @@
 ---
-title: "_CIatan | Microsoft Docs"
-ms.custom: ""
+title: "_CIatan"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apiname: ["_CIatan"]
 apilocation: ["msvcr120.dll", "msvcr110.dll", "msvcrt.dll", "msvcr80.dll", "msvcr100.dll", "msvcr90.dll", "msvcr110_clr0400.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_CIatan", "CIatan"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CIatan intrinsic", "_CIatan intrinsic"]
 ms.assetid: 3baa0429-fe46-4bab-8b00-868e2186dc8c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _CIatan
 

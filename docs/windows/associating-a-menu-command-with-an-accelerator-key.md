@@ -1,15 +1,8 @@
 ---
-title: "Associating a Menu Command with an Accelerator Key (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Associating a Menu Command with an Accelerator Key (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["keyboard shortcuts [C++], menu association", "commands [C++], associating menu commands with accelerator keys", "menu commands [C++], associating with keyboard shortcuts"]
 ms.assetid: ad2de43f-b20a-4c9f-bda8-0420179da48c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Associating a Menu Command with an Accelerator Key (C++)
 

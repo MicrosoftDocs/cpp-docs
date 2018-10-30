@@ -1,16 +1,9 @@
 ---
-title: "CMFCVisualManagerOfficeXP Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCVisualManagerOfficeXP Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCVisualManagerOfficeXP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCVisualManagerOfficeXP class [MFC]"]
 ms.assetid: 46b6f854-37c2-4836-8f56-5cb6ff63c9af
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCVisualManagerOfficeXP Class
 

@@ -1,15 +1,8 @@
 ---
-title: "Task Scheduler (Concurrency Runtime) | Microsoft Docs"
-ms.custom: ""
+title: "Task Scheduler (Concurrency Runtime)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["oversubscription [Concurrency Runtime]", "task scheduler [Concurrency Runtime], oversubscription", "schedule groups [Concurrency Runtime]", "task scheduler [Concurrency Runtime], lightweight tasks", "task scheduler [Concurrency Runtime]", "lightweight tasks [Concurrency Runtime]", "task scheduler [Concurrency Runtime], scheduler policies", "task scheduler [Concurrency Runtime], schedule groups", "wait function [Concurrency Runtime]", "task scheduler [Concurrency Runtime], scheduler instances", "scheduler instances [Concurrency Runtime]", "scheduler policies [Concurrency Runtime]", "task scheduler [Concurrency Runtime], wait function"]
 ms.assetid: 9aba278c-e0c9-4ede-b7c6-fedf7a365d90
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Task Scheduler (Concurrency Runtime)
 

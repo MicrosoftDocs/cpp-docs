@@ -1,16 +1,9 @@
 ---
-title: "Command-Line Error D8036 | Microsoft Docs"
-ms.custom: ""
+title: "Command-Line Error D8036"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["D8036"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["D8036"]
 ms.assetid: 420a8daf-1873-49cd-95ea-a603d77b9410
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Command-Line Error D8036
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3510 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3510"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3510"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3510"]
 ms.assetid: c48387bc-0300-4a4d-97f7-3fb90f82a451
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3510
 

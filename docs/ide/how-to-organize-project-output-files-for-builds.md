@@ -1,15 +1,8 @@
 ---
-title: "How to: Organize Project Output Files for Builds | Microsoft Docs"
-ms.custom: ""
+title: "How to: Organize Project Output Files for Builds"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, output files", "output files, organizing"]
 ms.assetid: 521d95ea-2dcc-4da0-b5eb-ac3e57941446
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Organize Project Output Files for Builds
 

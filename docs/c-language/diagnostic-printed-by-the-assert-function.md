@@ -1,14 +1,7 @@
 ---
-title: "Diagnostic Printed by the assert Function | Microsoft Docs"
-ms.custom: ""
+title: "Diagnostic Printed by the assert Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 78b64200-520d-40da-9a61-71553f411d4f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Diagnostic Printed by the assert Function
 

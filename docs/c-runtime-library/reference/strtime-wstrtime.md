@@ -1,19 +1,12 @@
 ---
-title: "_strtime, _wstrtime | Microsoft Docs"
-ms.custom: ""
+title: "_strtime, _wstrtime"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wstrtime", "_strtime"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_wstrtime", "_strtime", "wstrtime", "strtime", "_tstrtime"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["strtime function", "_strtime function", "_wstrtime function", "copying time to buffers", "wstrtime function", "tstrtime function", "_tstrtime function", "time, copying"]
 ms.assetid: 9e538161-cf49-44ec-bca5-c0ab0b9e4ca3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _strtime, _wstrtime
 

@@ -1,16 +1,10 @@
 ---
-title: "HStringReference Class | Microsoft Docs"
-ms.custom: ""
+title: "HStringReference Class"
 ms.date: "09/25/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HStringReference", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::CopyTo", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::Get", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::HStringReference", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator=", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator==", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator!=", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator<"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Wrappers::HStringReference class", "Microsoft::WRL::Wrappers::HStringReference::CopyTo method", "Microsoft::WRL::Wrappers::HStringReference::Get method", "Microsoft::WRL::Wrappers::HStringReference::HStringReference, constructor", "Microsoft::WRL::Wrappers::HStringReference::operator= operator", "Microsoft::WRL::Wrappers::HStringReference::operator== operator", "Microsoft::WRL::Wrappers::HStringReference::operator!= operator", "Microsoft::WRL::Wrappers::HStringReference::operator< operator"]
 ms.assetid: 9bf823b1-17eb-4ac4-8c5d-27d27c7a4150
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # HStringReference Class
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4389 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4389"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["c4389"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4389"]
 ms.assetid: fc0e3a8e-f766-437c-b7f1-e61abb2a8765
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4389
 

@@ -1,15 +1,8 @@
 ---
-title: "Command IDs | Microsoft Docs"
-ms.custom: ""
+title: "Command IDs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["command IDs, MFC", "command IDs"]
 ms.assetid: e0171a2b-45b9-41fa-945d-ec2f7602ded0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Command IDs
 

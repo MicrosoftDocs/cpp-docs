@@ -1,15 +1,8 @@
 ---
-title: "Active Technology and DLLs | Microsoft Docs"
-ms.custom: ""
+title: "Active Technology and DLLs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["in-process server DLLs", "Automation [C++], DLLs", "DLLs [C++], Active Technology", "Active technology [C++]", "MFC DLLs [C++], Active Technology"]
 ms.assetid: 3ed27f8d-164a-4562-ad61-9f2333404cc7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Active Technology and DLLs
 

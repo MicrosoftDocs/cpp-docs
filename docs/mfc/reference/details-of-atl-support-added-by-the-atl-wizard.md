@@ -1,16 +1,9 @@
 ---
-title: "Details of ATL Support Added by the ATL Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Details of ATL Support Added by the ATL Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.atl.support"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, ATL support", "ATL, MFC projects"]
 ms.assetid: aa66bad0-008f-4886-94c1-2a0a0d04bce4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Details of ATL Support Added by the ATL Wizard
 

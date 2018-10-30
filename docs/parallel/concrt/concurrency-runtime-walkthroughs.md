@@ -1,15 +1,8 @@
 ---
-title: "Concurrency Runtime Walkthroughs | Microsoft Docs"
-ms.custom: ""
+title: "Concurrency Runtime Walkthroughs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["walkthroughs [Concurrency Runtime]", "Concurrency Runtime, walkthroughs"]
 ms.assetid: 7374c5e9-54eb-44bf-9ed9-5e190cfd290b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Concurrency Runtime Walkthroughs
 

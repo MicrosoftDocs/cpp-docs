@@ -1,16 +1,9 @@
 ---
-title: "TN040: MFC-OLE In-Place Resizing and Zooming | Microsoft Docs"
-ms.custom: ""
+title: "TN040: MFC-OLE In-Place Resizing and Zooming"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.ole"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["resizing in-place", "TN040", "zooming and in-place activation", "in-place activation, zooming and resizing"]
 ms.assetid: 4d7859bd-0b2e-4254-be62-2735cecf02c6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN040: MFC/OLE In-Place Resizing and Zooming
 

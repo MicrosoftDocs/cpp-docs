@@ -1,16 +1,9 @@
 ---
-title: "_mm_insert_si64, _mm_inserti_si64 | Microsoft Docs"
-ms.custom: ""
+title: "_mm_insert_si64, _mm_inserti_si64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_mm_inserti_si64", "_mm_insert_si64"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["insertq instruction", "_mm_insert_si64 intrinsic", "_mm_inserti_si64 intrinsic"]
 ms.assetid: 897a4b36-8b08-4b00-a18f-7850f5732d7d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _mm_insert_si64, _mm_inserti_si64
 

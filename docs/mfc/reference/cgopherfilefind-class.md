@@ -1,16 +1,9 @@
 ---
-title: "CGopherFileFind Class | Microsoft Docs"
-ms.custom: ""
+title: "CGopherFileFind Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CGopherFileFind", "AFXINET/CGopherFileFind", "AFXINET/CGopherFileFind::CGopherFileFind", "AFXINET/CGopherFileFind::FindFile", "AFXINET/CGopherFileFind::FindNextFile", "AFXINET/CGopherFileFind::GetCreationTime", "AFXINET/CGopherFileFind::GetLastAccessTime", "AFXINET/CGopherFileFind::GetLastWriteTime", "AFXINET/CGopherFileFind::GetLength", "AFXINET/CGopherFileFind::GetLocator", "AFXINET/CGopherFileFind::GetScreenName", "AFXINET/CGopherFileFind::IsDots"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CGopherFileFind [MFC], CGopherFileFind", "CGopherFileFind [MFC], FindFile", "CGopherFileFind [MFC], FindNextFile", "CGopherFileFind [MFC], GetCreationTime", "CGopherFileFind [MFC], GetLastAccessTime", "CGopherFileFind [MFC], GetLastWriteTime", "CGopherFileFind [MFC], GetLength", "CGopherFileFind [MFC], GetLocator", "CGopherFileFind [MFC], GetScreenName", "CGopherFileFind [MFC], IsDots"]
 ms.assetid: 8465a979-6323-496d-ab4b-e81383fb999d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CGopherFileFind Class
 

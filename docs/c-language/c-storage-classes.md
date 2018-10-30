@@ -1,15 +1,8 @@
 ---
-title: "C Storage Classes | Microsoft Docs"
-ms.custom: ""
+title: "C Storage Classes"
 ms.date: "08/31/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["static variables, lifetime", "storage classes", "lifetime, variables", "specifiers, storage class", "storage class specifiers, C storage classes", "storage duration"]
 ms.assetid: 893fb929-f7a9-43dc-a0b3-29cb1ef845c1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Storage Classes
 

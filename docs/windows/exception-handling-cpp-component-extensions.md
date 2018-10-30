@@ -1,15 +1,9 @@
 ---
-title: "Exception Handling  (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Exception Handling  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["structured exception handling [C++], managed exceptions", "Exception class, managed applications", "exception handling", "C++ exception handling", "exception handling, types of", "System::Exception class in managed applications"]
 ms.assetid: ccb11fe8-6938-41ac-b477-a183e85865b9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Exception Handling  (C++/CLI and C++/CX)
 

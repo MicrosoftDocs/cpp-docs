@@ -1,15 +1,8 @@
 ---
-title: "Assignment | Microsoft Docs"
-ms.custom: ""
+title: "Assignment"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C++], assignment", "assignment operators [C++], overloaded"]
 ms.assetid: d87e4f89-f8f5-42c1-9d3c-184bca9d0e15
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Assignment
 

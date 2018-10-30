@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4364 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4364"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4364"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4364"]
 ms.assetid: 1477634c-d60f-4570-ad16-1aaeae24ac7f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4364
 

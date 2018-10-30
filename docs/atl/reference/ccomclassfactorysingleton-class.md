@@ -1,15 +1,9 @@
 ---
-title: "CComClassFactorySingleton Class | Microsoft Docs"
-ms.custom: ""
+title: "CComClassFactorySingleton Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComClassFactorySingleton", "ATLCOM/ATL::CComClassFactorySingleton", "ATLCOM/ATL::CComClassFactorySingleton::CreateInstance", "ATLCOM/ATL::CComClassFactorySingleton::m_spObj"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComClassFactorySingleton class"]
 ms.assetid: debb983c-382b-487b-8d42-7ea26dc158b8
-author: "mikeblome"
-ms.author: "mblome"
 ---
 # CComClassFactorySingleton Class
 

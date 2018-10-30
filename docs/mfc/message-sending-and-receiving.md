@@ -1,15 +1,8 @@
 ---
-title: "Message Sending and Receiving | Microsoft Docs"
-ms.custom: ""
+title: "Message Sending and Receiving"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Windows messages [MFC], handling in MFC", "control-notification messages [MFC]", "messages [MFC], receiving", "messages [MFC], MFC", "MFC, messages", "messages [MFC], sending"]
 ms.assetid: 9ce189cb-b259-4c3b-b6f2-9cfbed18b98b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Message Sending and Receiving
 

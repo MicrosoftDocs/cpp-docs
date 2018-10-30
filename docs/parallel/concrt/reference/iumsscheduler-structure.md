@@ -1,16 +1,9 @@
 ---
-title: "IUMSScheduler Structure | Microsoft Docs"
-ms.custom: ""
+title: "IUMSScheduler Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["IUMSScheduler", "CONCRTRM/concurrency::IUMSScheduler", "CONCRTRM/concurrency::IUMSScheduler::IUMSScheduler::SetCompletionList"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IUMSScheduler structure"]
 ms.assetid: 3a500225-4e02-4849-bb56-d744865f5870
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IUMSScheduler Structure
 

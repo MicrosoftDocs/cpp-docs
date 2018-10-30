@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2898 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2898"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2898"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2898"]
 ms.assetid: 68466e11-2541-4f6b-b772-13a642f30dfb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2898
 

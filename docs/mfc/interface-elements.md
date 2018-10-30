@@ -1,15 +1,8 @@
 ---
-title: "Interface Elements | Microsoft Docs"
-ms.custom: ""
+title: "Interface Elements"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["architecture [MFC], MFC Feature Pack", "MFC Feature Pack, architecture"]
 ms.assetid: eead6827-9602-40a3-8038-8986e8207385
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Interface Elements
 

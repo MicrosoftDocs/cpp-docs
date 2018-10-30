@@ -1,15 +1,9 @@
 ---
-title: "Nil Structure | Microsoft Docs"
-ms.custom: ""
+title: "Nil Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::Nil"]
-dev_langs: ["C++"]
 ms.assetid: ea6dddc1-2bd0-44eb-804e-477572215712
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Nil Structure
 

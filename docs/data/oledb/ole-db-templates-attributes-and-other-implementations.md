@@ -1,15 +1,8 @@
 ---
-title: "OLE DB Templates, Attributes, and Other Implementations | Microsoft Docs"
-ms.custom: ""
+title: "OLE DB Templates, Attributes, and Other Implementations"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB, implementations", "OLE DB templates, about OLE DB templates", "OLE DB templates"]
 ms.assetid: 0c780c1b-9bba-4788-8c33-8552d9f120ac
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Templates, Attributes, and Other Implementations
 

@@ -1,15 +1,8 @@
 ---
-title: "Clipboard: When to Use Each Clipboard Mechanism | Microsoft Docs"
-ms.custom: ""
+title: "Clipboard: When to Use Each Clipboard Mechanism"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["applications [OLE], Clipboard", "OLE Clipboard, guidelines", "Clipboard [MFC], mechanisms", "OLE Clipboard, formats", "formats [MFC], Clipboard for OLE", "Clipboard [MFC], formats"]
 ms.assetid: fd071996-ef8c-488b-81bd-89057095a201
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Clipboard: When to Use Each Clipboard Mechanism
 

@@ -1,16 +1,9 @@
 ---
-title: "-VERSION | Microsoft Docs"
-ms.custom: ""
+title: "/VERSION"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/version"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/VERSION editbin option", "-VERSION editbin option", "VERSION editbin option"]
 ms.assetid: 1fa08266-3088-4261-8d84-d4408e1cef46
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /VERSION
 

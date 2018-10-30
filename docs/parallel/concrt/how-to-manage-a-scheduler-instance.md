@@ -1,15 +1,8 @@
 ---
-title: "How to: Manage a Scheduler Instance | Microsoft Docs"
-ms.custom: ""
+title: "How to: Manage a Scheduler Instance"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["managing a scheduler instance [Concurrency Runtime]", "scheduler instances, managing [Concurrency Runtime]"]
 ms.assetid: 2cc804f0-5ff3-498b-97f1-a9f67a005448
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Manage a Scheduler Instance
 

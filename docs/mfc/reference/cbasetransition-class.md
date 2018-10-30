@@ -1,16 +1,9 @@
 ---
-title: "CBaseTransition Class | Microsoft Docs"
-ms.custom: ""
+title: "CBaseTransition Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CBaseTransition", "AFXANIMATIONCONTROLLER/CBaseTransition", "AFXANIMATIONCONTROLLER/CBaseTransition::CBaseTransition", "AFXANIMATIONCONTROLLER/CBaseTransition::AddToStoryboard", "AFXANIMATIONCONTROLLER/CBaseTransition::AddToStoryboardAtKeyframes", "AFXANIMATIONCONTROLLER/CBaseTransition::Clear", "AFXANIMATIONCONTROLLER/CBaseTransition::Create", "AFXANIMATIONCONTROLLER/CBaseTransition::GetEndKeyframe", "AFXANIMATIONCONTROLLER/CBaseTransition::GetRelatedVariable", "AFXANIMATIONCONTROLLER/CBaseTransition::GetStartKeyframe", "AFXANIMATIONCONTROLLER/CBaseTransition::GetTransition", "AFXANIMATIONCONTROLLER/CBaseTransition::GetType", "AFXANIMATIONCONTROLLER/CBaseTransition::IsAdded", "AFXANIMATIONCONTROLLER/CBaseTransition::SetKeyframes", "AFXANIMATIONCONTROLLER/CBaseTransition::SetRelatedVariable", "AFXANIMATIONCONTROLLER/CBaseTransition::m_bAdded", "AFXANIMATIONCONTROLLER/CBaseTransition::m_pEndKeyframe", "AFXANIMATIONCONTROLLER/CBaseTransition::m_pRelatedVariable", "AFXANIMATIONCONTROLLER/CBaseTransition::m_pStartKeyframe", "AFXANIMATIONCONTROLLER/CBaseTransition::m_transition", "AFXANIMATIONCONTROLLER/CBaseTransition::m_type"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CBaseTransition [MFC], CBaseTransition", "CBaseTransition [MFC], AddToStoryboard", "CBaseTransition [MFC], AddToStoryboardAtKeyframes", "CBaseTransition [MFC], Clear", "CBaseTransition [MFC], Create", "CBaseTransition [MFC], GetEndKeyframe", "CBaseTransition [MFC], GetRelatedVariable", "CBaseTransition [MFC], GetStartKeyframe", "CBaseTransition [MFC], GetTransition", "CBaseTransition [MFC], GetType", "CBaseTransition [MFC], IsAdded", "CBaseTransition [MFC], SetKeyframes", "CBaseTransition [MFC], SetRelatedVariable", "CBaseTransition [MFC], m_bAdded", "CBaseTransition [MFC], m_pEndKeyframe", "CBaseTransition [MFC], m_pRelatedVariable", "CBaseTransition [MFC], m_pStartKeyframe", "CBaseTransition [MFC], m_transition", "CBaseTransition [MFC], m_type"]
 ms.assetid: dfe84007-bbc5-43b7-b5b8-fae9145573bf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CBaseTransition Class
 

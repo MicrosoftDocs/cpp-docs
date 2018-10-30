@@ -1,16 +1,9 @@
 ---
-title: "__writedr | Microsoft Docs"
-ms.custom: ""
+title: "__writedr"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__writedr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__writedr intrinsic"]
 ms.assetid: ac55c1ee-df2f-41d4-a429-6f369d2a934d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __writedr
 

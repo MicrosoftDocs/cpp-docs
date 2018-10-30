@@ -1,15 +1,8 @@
 ---
-title: "Symbols Reference | Microsoft Docs"
-ms.custom: ""
+title: "Symbols Reference"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), symbols reference"]
 ms.assetid: 96ed59cc-dafa-4299-bb2e-9c7c3f496491
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Symbols Reference
 

@@ -1,15 +1,8 @@
 ---
-title: "Settings for the Toolbar Control | Microsoft Docs"
-ms.custom: ""
+title: "Settings for the Toolbar Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["toolbar controls [MFC], about toolbar controls", "CToolBarCtrl class [MFC], settings"]
 ms.assetid: 025ba920-b3ee-4d82-9367-e652cd7875b9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Settings for the Toolbar Control
 

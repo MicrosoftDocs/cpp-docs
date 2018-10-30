@@ -1,15 +1,8 @@
 ---
-title: "Container Class::const_iterator | Microsoft Docs"
-ms.custom: ""
+title: "Container Class::const_iterator"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["const_iterator method"]
 ms.assetid: e68c9e30-fc4c-4c2e-8724-06d1fe8b8ccb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Container Class::const_iterator
 

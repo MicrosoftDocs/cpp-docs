@@ -1,15 +1,8 @@
 ---
-title: "How to: Load a Ribbon Resource from an MFC Application | Microsoft Docs"
-ms.custom: ""
+title: "How to: Load a Ribbon Resource from an MFC Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ribbon resource [MFC], loading"]
 ms.assetid: 1c76bb8f-6345-414a-9f3f-128815ceadc5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Load a Ribbon Resource from an MFC Application
 

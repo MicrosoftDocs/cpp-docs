@@ -1,15 +1,8 @@
 ---
-title: "CString Exception Cleanup | Microsoft Docs"
-ms.custom: ""
+title: "CString Exception Cleanup"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CString objects, exceptions", "exception handling, cleanup code"]
 ms.assetid: 28b9ce70-be63-4a0d-92a8-44bbfbc95e83
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CString Exception Cleanup
 

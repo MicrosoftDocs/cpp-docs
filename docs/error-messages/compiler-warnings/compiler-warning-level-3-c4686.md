@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 3) C4686 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 3) C4686"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4686"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4686"]
 ms.assetid: 767c83c2-9e4b-4f9e-88c8-02128ba563f4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4686
 

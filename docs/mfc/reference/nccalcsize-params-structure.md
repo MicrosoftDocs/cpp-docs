@@ -1,16 +1,9 @@
 ---
-title: "NCCALCSIZE_PARAMS Structure | Microsoft Docs"
-ms.custom: ""
+title: "NCCALCSIZE_PARAMS Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["NCCALCSIZE_PARAMS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["NCCALCSIZE_PARAMS structure [MFC]"]
 ms.assetid: 3424cd9f-806a-4089-82fb-414187589edf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # NCCALCSIZE_PARAMS Structure
 

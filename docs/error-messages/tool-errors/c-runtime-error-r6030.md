@@ -1,16 +1,9 @@
 ---
-title: "C Runtime Error R6030 | Microsoft Docs"
-ms.custom: ""
+title: "C Runtime Error R6030"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["R6030"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["R6030"]
 ms.assetid: 0238a6c3-a033-4046-8adc-f8f99d961153
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6030
 

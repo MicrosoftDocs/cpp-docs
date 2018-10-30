@@ -1,16 +1,9 @@
 ---
-title: "&lt;value&gt; (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "&lt;value&gt; (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["value", "<value>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["value C++ XML tag", "<value> C++ XML tag"]
 ms.assetid: 0ba0a0d5-bcd7-4862-a169-83f2721ad80e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # &lt;value&gt; (Visual C++)
 

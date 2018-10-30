@@ -1,16 +1,9 @@
 ---
-title: "BSCMAKE Warning BK4502 | Microsoft Docs"
-ms.custom: ""
+title: "BSCMAKE Warning BK4502"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["BK4502", "BK1513"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["BK1513", "BK4502"]
 ms.assetid: ee412ec8-df03-4cdb-91ee-5d609ded8691
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # BSCMAKE Warning BK4502
 

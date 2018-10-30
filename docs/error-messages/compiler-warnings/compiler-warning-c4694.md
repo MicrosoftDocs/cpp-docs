@@ -1,15 +1,9 @@
 ---
-title: "Compiler Warning C4694 | Microsoft Docs"
+title: "Compiler Warning C4694"
 ms.date: "10/25/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4694"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4694"]
 ms.assetid: 5ca122bb-34f3-43ee-a21f-95802cd515f7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4694
 

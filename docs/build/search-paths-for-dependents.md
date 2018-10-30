@@ -1,15 +1,8 @@
 ---
-title: "Search Paths for Dependents | Microsoft Docs"
-ms.custom: ""
+title: "Search Paths for Dependents"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["NMAKE program, dependents", "dependents, NMAKE"]
 ms.assetid: bf998e47-da74-48b5-891d-d3d8ce57264b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Search Paths for Dependents
 

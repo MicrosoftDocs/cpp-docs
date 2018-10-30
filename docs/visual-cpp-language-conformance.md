@@ -1,13 +1,10 @@
 ---
-title: "Visual C++ Language Conformance | Microsoft Docs"
+title: "Visual C++ Language Conformance"
 ms.date: "11/15/2017"
 ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: "corob-msft"
 ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Visual C++ Language Conformance
 

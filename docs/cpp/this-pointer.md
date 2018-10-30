@@ -1,16 +1,9 @@
 ---
-title: "this Pointer | Microsoft Docs"
-ms.custom: ""
+title: "this Pointer"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["this_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["nonstatic member functions [C++]", "pointers, to class instance", "this pointer"]
 ms.assetid: 92e3256a-4ad9-4d46-8be1-d77fad90791f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # this Pointer
 

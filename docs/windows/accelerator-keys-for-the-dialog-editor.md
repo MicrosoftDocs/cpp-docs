@@ -1,16 +1,9 @@
 ---
-title: "Accelerator Keys for the Dialog Editor (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Accelerator Keys for the Dialog Editor (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.dialog"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Dialog Editor [C++], shortcut keys"]
 ms.assetid: 940270e9-a974-425b-a681-dfeaba0adf66
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Accelerator Keys for the Dialog Editor (C++)
 

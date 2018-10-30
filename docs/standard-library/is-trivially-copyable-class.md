@@ -1,16 +1,9 @@
 ---
-title: "is_trivially_copyable Class | Microsoft Docs"
-ms.custom: ""
+title: "is_trivially_copyable Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_trivially_copyable"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_trivially_copyable"]
 ms.assetid: 89a53bf8-036c-4108-91e1-fe34adbde8b3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_trivially_copyable Class
 

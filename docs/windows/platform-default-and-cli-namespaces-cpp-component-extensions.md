@@ -1,16 +1,10 @@
 ---
-title: "Platform, default, and cli Namespaces  (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Platform, default, and cli Namespaces  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["lang", "cli"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["lang namespace", "cli namespace"]
 ms.assetid: 9d38bd1e-dc78-47d1-a84b-9b4683e52c9c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Platform, default, and cli Namespaces  (C++/CLI and C++/CX)
 

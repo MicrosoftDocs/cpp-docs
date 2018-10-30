@@ -1,15 +1,8 @@
 ---
-title: "_bstr_t Operators | Microsoft Docs"
-ms.custom: ""
+title: "_bstr_t Operators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["_bstr_t class [C++], operators"]
 ms.assetid: 9f76364c-a552-418f-b71b-468f015c5ac9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _bstr_t Operators
 

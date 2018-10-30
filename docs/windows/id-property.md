@@ -1,15 +1,8 @@
 ---
-title: "ID Property | Microsoft Docs"
-ms.custom: ""
+title: "ID Property"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ID property"]
 ms.assetid: 756ea7ad-d39b-490d-a2ba-163c434577f0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # ID Property
 

@@ -1,15 +1,8 @@
 ---
-title: "Performance Considerations for Interop (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Performance Considerations for Interop (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["/clr compiler option [C++], interop performance considerations", "platform invoke [C++], interoperability", "interop [C++], performance consideraitons", "mixed assemblies [C++], performance considerations", "interoperability [C++], performance considerations"]
 ms.assetid: bb9a282e-c3f8-40eb-a2fa-45d80d578932
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Performance Considerations for Interop (C++)
 

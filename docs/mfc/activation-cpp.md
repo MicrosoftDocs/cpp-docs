@@ -1,15 +1,8 @@
 ---
-title: "Activation (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Activation (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE server applications [MFC], activation", "OLE items [MFC], visual editing", "activation [MFC]", "OLE [MFC], in-place activation", "OLE [MFC], activation", "in-place activation, embedded and linked items", "activating objects", "visual editing, activation", "visual editing", "documents [MFC], OLE", "embedded objects [MFC]", "OLE [MFC], editing", "in-place activation", "activation [MFC], embedded OLE items", "OLE activation [MFC]"]
 ms.assetid: ed8357d9-e487-4aaa-aa6b-2edc4de25dfa
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Activation (C++)
 

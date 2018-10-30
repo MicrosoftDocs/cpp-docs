@@ -1,16 +1,9 @@
 ---
-title: "Compatibility | Microsoft Docs"
-ms.custom: ""
+title: "Compatibility"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.programs"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRT, compatibility", "compatibility, C run-time libraries", "compatibility"]
 ms.assetid: 346709cb-edda-4909-9a19-3d253eddb6b7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compatibility
 

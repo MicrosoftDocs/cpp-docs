@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 3) C4608 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 3) C4608"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4608"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4608"]
 ms.assetid: 8b8f5f28-8ce9-457e-9d3d-a8c0efce9b6a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4608
 

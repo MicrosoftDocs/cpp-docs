@@ -1,16 +1,9 @@
 ---
-title: "CCtrlView Class | Microsoft Docs"
-ms.custom: ""
+title: "CCtrlView Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CCtrlView", "AFXWIN/CCtrlView", "AFXWIN/CCtrlView::CCtrlView", "AFXWIN/CCtrlView::OnDraw", "AFXWIN/CCtrlView::PreCreateWindow", "AFXWIN/CCtrlView::m_dwDefaultStyle", "AFXWIN/CCtrlView::m_strClass"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CCtrlView [MFC], CCtrlView", "CCtrlView [MFC], OnDraw", "CCtrlView [MFC], PreCreateWindow", "CCtrlView [MFC], m_dwDefaultStyle", "CCtrlView [MFC], m_strClass"]
 ms.assetid: ff488596-1e71-451f-8fec-b0831a7b44e0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CCtrlView Class
 

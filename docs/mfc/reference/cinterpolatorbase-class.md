@@ -1,16 +1,9 @@
 ---
-title: "CInterpolatorBase Class | Microsoft Docs"
-ms.custom: ""
+title: "CInterpolatorBase Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CInterpolatorBase", "AFXANIMATIONCONTROLLER/CInterpolatorBase", "AFXANIMATIONCONTROLLER/CInterpolatorBase::CInterpolatorBase", "AFXANIMATIONCONTROLLER/CInterpolatorBase::CreateInstance", "AFXANIMATIONCONTROLLER/CInterpolatorBase::GetDependencies", "AFXANIMATIONCONTROLLER/CInterpolatorBase::GetDuration", "AFXANIMATIONCONTROLLER/CInterpolatorBase::GetFinalValue", "AFXANIMATIONCONTROLLER/CInterpolatorBase::InterpolateValue", "AFXANIMATIONCONTROLLER/CInterpolatorBase::InterpolateVelocity", "AFXANIMATIONCONTROLLER/CInterpolatorBase::SetCustomInterpolator", "AFXANIMATIONCONTROLLER/CInterpolatorBase::SetDuration", "AFXANIMATIONCONTROLLER/CInterpolatorBase::SetInitialValueAndVelocity"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CInterpolatorBase [MFC], CInterpolatorBase", "CInterpolatorBase [MFC], CreateInstance", "CInterpolatorBase [MFC], GetDependencies", "CInterpolatorBase [MFC], GetDuration", "CInterpolatorBase [MFC], GetFinalValue", "CInterpolatorBase [MFC], InterpolateValue", "CInterpolatorBase [MFC], InterpolateVelocity", "CInterpolatorBase [MFC], SetCustomInterpolator", "CInterpolatorBase [MFC], SetDuration", "CInterpolatorBase [MFC], SetInitialValueAndVelocity"]
 ms.assetid: bbc3dce7-8398-47f9-b97e-e4fd2d737232
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CInterpolatorBase Class
 

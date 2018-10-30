@@ -1,16 +1,9 @@
 ---
-title: "__noop | Microsoft Docs"
-ms.custom: ""
+title: "__noop"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__noop_cpp", "__noop"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__noop keyword [C++]"]
 ms.assetid: 81ac6e97-7bf8-496b-b3c4-fd02837573e5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __noop
 

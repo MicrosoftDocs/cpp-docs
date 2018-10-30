@@ -1,13 +1,7 @@
 ---
-title: "Type System (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Type System (C++/CX)"
 ms.date: "02/03/2017"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: b67bee8a-b526-4872-969e-ef22724e88fe
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Type System (C++/CX)
 

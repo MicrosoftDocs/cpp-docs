@@ -1,16 +1,9 @@
 ---
-title: "WORD | Microsoft Docs"
-ms.custom: ""
+title: "WORD"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["WORD"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["WORD directive"]
 ms.assetid: 36f7ac49-480d-4d67-8967-3a62acb8f4df
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # WORD
 

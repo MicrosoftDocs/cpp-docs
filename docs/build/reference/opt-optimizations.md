@@ -1,16 +1,9 @@
 ---
-title: "/OPT (Optimizations) | Microsoft Docs"
-ms.custom: ""
+title: "/OPT (Optimizations)"
 ms.date: "05/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.OptimizeReferences", "/opt", "VC.Project.VCLinkerTool.OptimizeForWindows98", "VC.Project.VCLinkerTool.EnableCOMDATFolding", "VC.Project.VCLinkerTool.OptimizeFolding", "VC.Project.VCLinkerTool.FoldingIterations", "VC.Project.VCLinkerTool.OptimizeFoldingIterations"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LINK tool [C++], controlling optimizations", "-OPT linker option", "linker [C++], optimizations", "OPT linker option", "optimization, linker", "/OPT linker option"]
 ms.assetid: 8f229863-5f53-48a8-9478-243a647093ac
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /OPT (Optimizations)
 

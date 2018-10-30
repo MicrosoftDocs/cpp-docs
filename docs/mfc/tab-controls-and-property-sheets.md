@@ -1,15 +1,8 @@
 ---
-title: "Tab Controls and Property Sheets | Microsoft Docs"
-ms.custom: ""
+title: "Tab Controls and Property Sheets"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["property sheets, tab controls", "tab controls [MFC], and property sheets", "CTabCtrl class [MFC], and property sheets"]
 ms.assetid: f3b87bea-9ad9-41e6-a7ff-a9285308267e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Tab Controls and Property Sheets
 

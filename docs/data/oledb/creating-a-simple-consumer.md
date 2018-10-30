@@ -1,15 +1,8 @@
 ---
-title: "Creating a Simple Consumer | Microsoft Docs"
-ms.custom: ""
+title: "Creating a Simple Consumer"
 ms.date: "10/09/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB consumers, creating"]
 ms.assetid: ae32d657-72ea-4db8-9839-75cb5cff68ae
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating a Simple Consumer
 

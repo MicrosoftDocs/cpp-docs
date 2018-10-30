@@ -1,15 +1,8 @@
 ---
-title: "An Example of the Comments | Microsoft Docs"
-ms.custom: ""
+title: "An Example of the Comments"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC source files, comment example", "code comments, MFC", "comments, MFC", "examples [MFC], code comments"]
 ms.assetid: eb8ddea2-74de-4d5c-93d6-596f7c5e58a7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # An Example of the Comments
 

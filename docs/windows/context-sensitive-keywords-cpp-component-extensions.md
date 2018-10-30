@@ -1,16 +1,10 @@
 ---
-title: "Context-Sensitive Keywords  (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Context-Sensitive Keywords  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["context-sensitive keywords"]
 ms.assetid: e33da089-f434-44e9-8cce-4668d05a8939
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Context-Sensitive Keywords  (C++/CLI and C++/CX)
 

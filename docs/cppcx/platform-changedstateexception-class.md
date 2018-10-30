@@ -1,16 +1,10 @@
 ---
-title: "Platform::ChangedStateException Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::ChangedStateException Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::ChangedStateException", "VCCORLIB/Platform::ChangedStateException::ChangedStateException"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::ChangedStateException"]
 ms.assetid: f894beac-9e80-4fac-ac25-89f1dbc0a6a4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::ChangedStateException Class
 

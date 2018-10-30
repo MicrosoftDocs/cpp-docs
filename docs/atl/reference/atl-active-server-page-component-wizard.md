@@ -1,16 +1,9 @@
 ---
-title: "ATL Active Server Page Component Wizard | Microsoft Docs"
-ms.custom: ""
+title: "ATL Active Server Page Component Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.asp.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ASP components, creating in ATL", "ATL Active Server Page Component Wizard"]
 ms.assetid: 5a5cb904-dbbf-44ea-ad3d-2ddd14c1d3c5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Active Server Page Component Wizard
 

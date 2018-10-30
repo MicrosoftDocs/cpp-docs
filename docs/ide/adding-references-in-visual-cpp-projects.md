@@ -1,16 +1,9 @@
 ---
-title: "Adding references in Visual C++ projects | Microsoft Docs"
-ms.custom: ""
+title: "Adding references in Visual C++ projects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["VC.Project.References"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Add References Dialog Box (C++)", ".NET Framework (C++), Add References Dialog Box"]
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding references in Visual C++ projects
 

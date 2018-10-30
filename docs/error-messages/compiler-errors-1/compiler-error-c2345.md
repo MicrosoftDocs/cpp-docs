@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2345 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2345"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2345"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2345"]
 ms.assetid: e1cc88b0-0223-4d07-975b-fa99956a82bd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2345
 

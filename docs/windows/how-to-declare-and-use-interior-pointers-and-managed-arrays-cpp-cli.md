@@ -1,15 +1,9 @@
 ---
-title: "How to: Declare and Use Interior Pointers and Managed Arrays (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "How to: Declare and Use Interior Pointers and Managed Arrays (C++/CLI)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["pointers, interior", "arrays [C++], managed"]
 ms.assetid: e61a2c09-a7d0-4867-91ea-6b8788a01079
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Declare and Use Interior Pointers and Managed Arrays (C++/CLI)
 

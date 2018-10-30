@@ -1,16 +1,9 @@
 ---
-title: "Creating a New Custom or Data Resource (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Creating a New Custom or Data Resource (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.binary"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["custom resources [C++]", "data resources [C++]", "resources [C++], creating"]
 ms.assetid: 9918bf96-38fa-43a1-a384-572f95d84950
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating a New Custom or Data Resource (C++)
 

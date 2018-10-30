@@ -1,16 +1,9 @@
 ---
-title: "-Yl (Inject PCH Reference for Debug Library) | Microsoft Docs"
-ms.custom: ""
+title: "/Yl (Inject PCH Reference for Debug Library)"
 ms.date: "01/29/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/yl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Yl compiler option [C++]", "Yl compiler option [C++]", "/Yl compiler option [C++]"]
 ms.assetid: 8e4a396a-6790-4a9f-8387-df015a3220e7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Yl (Inject PCH Reference for Debug Library)
 

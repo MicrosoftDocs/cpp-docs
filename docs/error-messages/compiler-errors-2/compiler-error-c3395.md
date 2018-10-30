@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3395 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3395"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3395"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3395"]
 ms.assetid: 26a9ebc9-ed97-47ce-b436-19aa2bcf6e50
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3395
 

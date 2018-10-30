@@ -1,15 +1,8 @@
 ---
-title: "Servers: Server Items | Microsoft Docs"
-ms.custom: ""
+title: "Servers: Server Items"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["server items, implementing", "servers [MFC], server items", "architecture [MFC], server-item", "server items", "OLE server applications [MFC], server items"]
 ms.assetid: 28ba81a1-726a-4728-a52d-68bc7efd5a3c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Servers: Server Items
 

@@ -1,14 +1,7 @@
 ---
-title: "Porting Guide: Spy++ | Microsoft Docs"
-ms.custom: ""
+title: "Porting Guide: Spy++"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Porting Guide: Spy++
 

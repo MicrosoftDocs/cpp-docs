@@ -1,19 +1,12 @@
 ---
-title: "_aligned_offset_realloc_dbg | Microsoft Docs"
-ms.custom: ""
+title: "_aligned_offset_realloc_dbg"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_aligned_offset_realloc_dbg"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["aligned_offset_realloc_dbg", "_aligned_offset_realloc_dbg"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["aligned_offset_realloc_dbg function", "_aligned_offset_realloc_dbg function"]
 ms.assetid: 64e30a12-887e-453b-aea8-aed793fca9d8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _aligned_offset_realloc_dbg
 

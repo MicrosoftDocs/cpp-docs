@@ -1,15 +1,8 @@
 ---
-title: "Using Function Name Without () Produces No Code | Microsoft Docs"
-ms.custom: ""
+title: "Using Function Name Without () Produces No Code"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["functions [C++], without parentheses"]
 ms.assetid: edf4a177-a160-44aa-8436-e077b5b27809
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Using Function Name Without () Produces No Code
 

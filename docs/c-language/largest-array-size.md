@@ -1,14 +1,7 @@
 ---
-title: "Largest Array Size | Microsoft Docs"
-ms.custom: ""
+title: "Largest Array Size"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 4c782cf6-73f3-40b0-b306-229d22da4ee1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Largest Array Size
 

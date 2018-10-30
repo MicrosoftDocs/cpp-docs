@@ -1,16 +1,9 @@
 ---
-title: "TN043: RFX Routines | Microsoft Docs"
-ms.custom: ""
+title: "TN043: RFX Routines"
 ms.date: "06/28/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["RFX"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RFX (record field exchange), architecture", "TN043", "RFX (record field exchange)"]
 ms.assetid: f552d0c1-2c83-4389-b472-42c9940aa713
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN043: RFX Routines
 

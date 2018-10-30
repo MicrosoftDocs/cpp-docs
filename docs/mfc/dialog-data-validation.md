@@ -1,15 +1,8 @@
 ---
-title: "Dialog Data Validation | Microsoft Docs"
-ms.custom: ""
+title: "Dialog Data Validation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["validating data [MFC], message boxes", "data validation [MFC], dialog boxes", "dialog boxes [MFC], validating data", "validating data [MFC], dialog box data entry", "DDV (dialog data validation) [MFC]", "data validation [MFC], message boxes"]
 ms.assetid: f070c309-2044-4ff2-8c92-1ec1ea84af58
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dialog Data Validation
 

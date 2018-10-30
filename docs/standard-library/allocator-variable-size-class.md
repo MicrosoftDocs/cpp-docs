@@ -1,16 +1,9 @@
 ---
-title: "allocator_variable_size Class | Microsoft Docs"
-ms.custom: ""
+title: "allocator_variable_size Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["allocators/stdext::allocator_variable_size", "allocators/stdext::allocators::allocator_variable_size", "stdext::allocators::allocator_variable_size"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::allocator_variable_size", "stdext::allocators [C++], allocator_variable_size"]
 ms.assetid: c3aa4105-ae45-4385-bbbe-9f23060478cb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # allocator_variable_size Class
 

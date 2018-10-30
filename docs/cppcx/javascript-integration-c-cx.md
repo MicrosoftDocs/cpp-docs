@@ -1,13 +1,7 @@
 ---
-title: "JavaScript integration (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "JavaScript integration (C++/CX)"
 ms.date: "01/18/2018"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: 5b3b4406-e20e-4c40-9d1d-5dcd860beeac
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # JavaScript integration (C++/CX)
 

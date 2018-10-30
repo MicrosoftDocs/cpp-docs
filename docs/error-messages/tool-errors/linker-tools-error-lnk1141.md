@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1141 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1141"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1141"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1141"]
 ms.assetid: 83b78606-6dd3-43a7-88e2-152f5359cbd8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1141
 

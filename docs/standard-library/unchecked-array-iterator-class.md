@@ -1,15 +1,8 @@
 ---
-title: "unchecked_array_iterator Class | Microsoft Docs"
-ms.custom: ""
+title: "unchecked_array_iterator Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["stdext::unchecked_array_iterator"]
-dev_langs: ["C++"]
 ms.assetid: 693b3b30-4e3a-465b-be06-409700bc50b1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # unchecked_array_iterator Class
 

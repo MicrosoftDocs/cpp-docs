@@ -1,15 +1,8 @@
 ---
-title: "Synchronization Data Structures | Microsoft Docs"
-ms.custom: ""
+title: "Synchronization Data Structures"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["synchronization data structures"]
 ms.assetid: d612757d-e4b7-4019-a627-f853af085b8b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Synchronization Data Structures
 

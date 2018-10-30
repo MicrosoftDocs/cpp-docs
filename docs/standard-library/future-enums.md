@@ -1,8 +1,6 @@
 ---
-title: "&lt;future&gt; enums | Microsoft Docs"
-ms.custom: ""
+title: "&lt;future&gt; enums"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["future/std::future_errc", "future/std::future_status", "future/std::launch"]
 ms.assetid: 8c675645-db47-4cab-bc0e-7b87f8a302df
 ---

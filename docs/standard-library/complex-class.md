@@ -1,16 +1,9 @@
 ---
-title: "complex Class | Microsoft Docs"
-ms.custom: ""
+title: "complex Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["complex/std::complex::value_type", "complex/std::complex::imag", "complex/std::complex::real"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::complex [C++], value_type", "std::complex [C++], imag", "std::complex [C++], real"]
 ms.assetid: d6492e1c-5eba-4bc5-835b-2a88001a5868
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # complex Class
 

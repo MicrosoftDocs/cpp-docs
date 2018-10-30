@@ -1,16 +1,9 @@
 ---
-title: "-U, -u (Undefine Symbols) | Microsoft Docs"
-ms.custom: ""
+title: "/U, /u (Undefine Symbols)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.UndefinePreprocessorDefinitions", "VC.Project.VCCLWCECompilerTool.UndefinePreprocessorDefinitions", "VC.Project.VCCLCompilerTool.UndefineAllPreprocessorDefinitions", "/u", "VC.Project.VCCLWCECompilerTool.UndefineAllPreprocessorDefinitions"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-U compiler option [C++]", "Undefine Symbols compiler option", "/U compiler option [C++]", "U compiler option [C++]"]
 ms.assetid: 7bc0474f-6d1f-419b-807d-0d8816763b2a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /U, /u (Undefine Symbols)
 

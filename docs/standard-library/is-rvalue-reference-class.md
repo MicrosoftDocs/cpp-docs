@@ -1,16 +1,9 @@
 ---
-title: "is_rvalue_reference Class | Microsoft Docs"
-ms.custom: ""
+title: "is_rvalue_reference Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_rvalue_reference"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_rvalue_reference class", "is_rvalue_reference"]
 ms.assetid: 40a97072-7b5c-4274-9154-298d3dcf064a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_rvalue_reference Class
 

@@ -1,15 +1,8 @@
 ---
-title: "C/C++ Building Reference | Microsoft Docs"
-ms.custom: ""
+title: "C/C++ Building Reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["compiling source code [C++], additional information", "cl.exe compiler [C++], building programs", "linker [C++], building reference", "builds [C++], additional information"]
 ms.assetid: 100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C/C++ Building Reference
 

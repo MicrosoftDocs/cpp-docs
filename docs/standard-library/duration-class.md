@@ -1,16 +1,9 @@
 ---
-title: "duration Class | Microsoft Docs"
-ms.custom: ""
+title: "duration Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["chrono/std::chrono::duration", "chrono/std::chrono::duration::duration", "chrono/std::chrono::duration::count", "chrono/std::chrono::duration::max", "chrono/std::chrono::duration::min", "chrono/std::chrono::duration::zero"]
-dev_langs: ["C++"]
 ms.assetid: 06b863b3-65be-4ded-a72e-6e1eb1531077
-author: "corob-msft"
-ms.author: "corob"
 helpviewer_keywords: ["std::chrono [C++], duration"]
-ms.workload: ["cplusplus"]
 ---
 # duration Class
 

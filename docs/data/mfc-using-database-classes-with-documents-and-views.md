@@ -1,15 +1,8 @@
 ---
-title: "MFC: Using Database Classes with Documents and Views | Microsoft Docs"
-ms.custom: ""
+title: "MFC: Using Database Classes with Documents and Views"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["documents [C++], database applications", "recordsets [C++], documents and views", "CRecordView class, using in database forms", "views [C++], database applications", "forms [C++], database applications", "record views [C++], form-based applications", "document/view architecture [C++], in databases", "database applications [C++], forms", "database classes [C++], MFC", "ODBC recordsets [C++], documents and views", "ODBC [C++], forms"]
 ms.assetid: 83979974-fc63-46ac-b162-e8403a572e2c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # MFC: Using Database Classes with Documents and Views
 

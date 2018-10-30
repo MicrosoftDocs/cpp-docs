@@ -1,16 +1,9 @@
 ---
-title: "private (C++) | Microsoft Docs"
-ms.custom: ""
+title: "private (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["private_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["private keyword [C++]"]
 ms.assetid: 94e99983-46a5-4e21-800c-28f8a7c6a8ff
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # private (C++)
 

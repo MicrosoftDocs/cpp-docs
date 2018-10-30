@@ -1,15 +1,8 @@
 ---
-title: "Summary of Scope Rules | Microsoft Docs"
-ms.custom: ""
+title: "Summary of Scope Rules"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["class scope [C++], rules", "classes [C++], scope", "class names [C++], scope rules", "names [C++], class", "scope [C++], class names"]
 ms.assetid: 47e26482-0111-466f-b857-598c15d05105
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Summary of Scope Rules
 

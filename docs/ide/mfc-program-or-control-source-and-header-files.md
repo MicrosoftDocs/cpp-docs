@@ -1,15 +1,8 @@
 ---
-title: "MFC Program or Control Source and Header Files | Microsoft Docs"
-ms.custom: ""
+title: "MFC Program or Control Source and Header Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["file types [C++], MFC source and header"]
 ms.assetid: f61419a8-bf69-4bbb-8f7c-1734be5e6db6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Program or Control Source and Header Files
 

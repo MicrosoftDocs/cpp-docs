@@ -1,16 +1,9 @@
 ---
-title: "CDBPropIDSet Class | Microsoft Docs"
-ms.custom: ""
+title: "CDBPropIDSet Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["CDBPropIDSet", "ATL.CDBPropIDSet", "ATL::CDBPropIDSet", "CDBPropIDSet.AddPropertyID", "CDBPropIDSet::AddPropertyID", "AddPropertyID", "ATL.CDBPropIDSet.AddPropertyID", "ATL::CDBPropIDSet::AddPropertyID", "ATL::CDBPropIDSet::CDBPropIDSet", "CDBPropIDSet", "CDBPropIDSet.CDBPropIDSet", "CDBPropIDSet::CDBPropIDSet", "ATL.CDBPropIDSet.CDBPropIDSet", "CDBPropIDSet.operator=", "ATL.CDBPropIDSet.operator=", "ATL::CDBPropIDSet::operator=", "CDBPropIDSet::operator=", "CDBPropIDSet.SetGUID", "ATL::CDBPropIDSet::SetGUID", "SetGUID", "ATL.CDBPropIDSet.SetGUID", "CDBPropIDSet::SetGUID"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDBPropIDSet class", "AddPropertyID method", "CDBPropIDSet class, constructor", "operator =, property sets", "= operator, with OLE DB templates", "operator=, property sets", "SetGUID method"]
 ms.assetid: 52bb806c-9581-494d-9af7-50d8a4834805
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBPropIDSet Class
 

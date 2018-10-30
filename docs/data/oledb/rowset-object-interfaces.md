@@ -1,15 +1,8 @@
 ---
-title: "Rowset Object Interfaces | Microsoft Docs"
-ms.custom: ""
+title: "Rowset Object Interfaces"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["interfaces, OLE DB", "OLE DB, interfaces", "rowset objects [OLE DB]", "OLE DB provider templates, object interfaces", "interfaces, list of"]
 ms.assetid: 0d7a5d48-2fe4-434f-a84b-157c1fdc3494
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Rowset Object Interfaces
 

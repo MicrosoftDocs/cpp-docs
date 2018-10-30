@@ -1,14 +1,8 @@
 ---
-title: "Character Sets | Microsoft Docs"
-ms.custom: ""
+title: "Character Sets"
 ms.date: "04/12/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 helpviewer_keywords: ["Character sets", "basic source character set (C++)", "universal character names", "basic execution character set (C++)"]
 ms.assetid: 379a2af6-6422-425f-8352-ef0bca6c0d74
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Character Sets
 

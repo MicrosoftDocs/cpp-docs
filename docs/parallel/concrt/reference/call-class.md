@@ -1,16 +1,9 @@
 ---
-title: "call Class | Microsoft Docs"
-ms.custom: ""
+title: "call Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["call", "AGENTS/concurrency::call", "AGENTS/concurrency::call::call", "AGENTS/concurrency::call::process_input_messages", "AGENTS/concurrency::call::process_message", "AGENTS/concurrency::call::propagate_message", "AGENTS/concurrency::call::send_message", "AGENTS/concurrency::call::supports_anonymous_source"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["call class"]
 ms.assetid: 1521970a-1e9c-4b0c-a681-d18e40976f49
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # call Class
 

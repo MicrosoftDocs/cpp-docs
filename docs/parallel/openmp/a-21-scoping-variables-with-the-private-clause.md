@@ -1,14 +1,7 @@
 ---
-title: "A.21   Scoping Variables with the private Clause | Microsoft Docs"
-ms.custom: ""
+title: "A.21   Scoping Variables with the private Clause"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 7cdb4a7f-af24-44ac-9d33-e43840bc8f3d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # A.21   Scoping Variables with the private Clause
 

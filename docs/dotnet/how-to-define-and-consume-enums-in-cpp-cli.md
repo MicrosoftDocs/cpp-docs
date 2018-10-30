@@ -1,15 +1,8 @@
 ---
-title: "How to: Define and consume enums in C++/CLI | Microsoft Docs"
-ms.custom: ""
+title: "How to: Define and consume enums in C++/CLI"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["enum class, specifying underlying types"]
 ms.assetid: df8f2b91-b9d2-4fab-9be4-b1d58b8bc570
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Define and consume enums in C++/CLI
 

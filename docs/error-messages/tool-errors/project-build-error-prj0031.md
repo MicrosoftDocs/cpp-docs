@@ -1,16 +1,9 @@
 ---
-title: "Project Build Error PRJ0031 | Microsoft Docs"
-ms.custom: ""
+title: "Project Build Error PRJ0031"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["PRJ0031"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PRJ0031"]
 ms.assetid: b42435c6-e570-4f8e-9ad5-12a7ea69ccb2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Project Build Error PRJ0031
 

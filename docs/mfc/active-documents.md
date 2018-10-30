@@ -1,15 +1,8 @@
 ---
-title: "Active Documents | Microsoft Docs"
-ms.custom: ""
+title: "Active Documents"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["active documents [MFC]", "active documents [MFC], requirements", "view objects [MFC], requirements", "OLE [MFC], active documents", "views [MFC], active documents", "active documents [MFC], views"]
 ms.assetid: 1378f18e-aaa6-420b-8501-4b974905baa0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Active Documents
 

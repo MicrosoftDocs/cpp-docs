@@ -1,14 +1,7 @@
 ---
-title: "Compiler Intrinsics and Assembly Language | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Intrinsics and Assembly Language"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: ddd51620-d01b-44cf-853b-e11420d13137
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Intrinsics and Assembly Language
 

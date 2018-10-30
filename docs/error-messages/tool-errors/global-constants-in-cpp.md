@@ -1,15 +1,8 @@
 ---
-title: "Global Constants in C++ | Microsoft Docs"
-ms.custom: ""
+title: "Global Constants in C++"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["global constants", "constants, global"]
 ms.assetid: df5a9bd4-d0a8-4c1c-956e-b481d0bded7d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Global Constants in C++
 
