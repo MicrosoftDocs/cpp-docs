@@ -175,6 +175,41 @@ int main()
 }
 ```
 
+## Tips
+
+Enumerations are useful for handling different logic cases inside of switch statements, since C++ does not recognize strings as valid switch conditions. Example:
+
+```cpp
+namespace ConditionalEnums
+{
+    enum class Suit { Diamonds, Hearts, Clubs, Spades };
+
+    void handleSuit(Suit suit)
+    {
+        switch(suit) {
+            case Suit::Diamonds: ... // Handle each case with unique logic
+            case Suit::Hearts: ...
+            case Suit::Clubs: ...
+            case Suit::Spades: ...
+        }
+        ...
+    {
+}
+```
+
+To get data coarsed into the correct enum, a simple conversion function can be used to return a certain enum based on certain strings!
+
+```cpp
+namespace ConditionalEnums
+{
+    Suit getSuit(string suit)
+    {
+        if (suit == "Hearts") return Suit::Hearts;
+        ...
+    {
+}
+```
+
 ## See also
 
 [C Enumeration Declarations](../c-language/c-enumeration-declarations.md)<br/>
