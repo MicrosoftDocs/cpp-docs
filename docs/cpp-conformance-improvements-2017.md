@@ -1850,7 +1850,9 @@ A<>::from_template_t<A<int>> a;
 
 ```
 
-In Visual Studio 2017 version 15.9, in **/permissive-** mode, the compiler raises C3861: *'from_template': identifier not found*.
+In Visual Studio 2017 version 15.9, in **/permissive-** mode, the compiler raises C3861: *'from_template': identifier not found*.d
+
+To fix the error, declare `a` before `A`.
 
 ### Modules changes
 
@@ -1873,7 +1875,6 @@ In addition, the compiler raises C7536 whenever the .ifc file has been tampered 
 There is implementation divergence in the partial ordering rules involving aliases in non-deduced contexts. In the following example, GCC and the Microsoft C++ compiler (in **/permissive-** mode) raise an error, while Clang accepts the code. 
 
 ```cpp
-
 #include <utility>
 using size_t = std::size_t;
 
@@ -1918,7 +1919,6 @@ int main()
 The previous example raises C2668:
 
 ```output
-
 partial_alias.cpp(32): error C2668: 'f': ambiguous call to overloaded function
 partial_alias.cpp(18): note: could be 'int f<Alloc,void>(A<void> &,const AlignedBuffer<10,4> &)'
 partial_alias.cpp(12): note: or       'int f<Alloc,A<void>>(Alloc &,const AlignedBuffer<10,4> &)'
