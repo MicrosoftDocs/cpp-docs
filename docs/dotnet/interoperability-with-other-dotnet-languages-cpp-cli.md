@@ -1,7 +1,7 @@
 ---
 title: "Interoperability with Other .NET Languages (C++/CLI)"
 ms.date: "11/04/2016"
-helpviewer_keywords: ["C++, indexers", "indexers, consuming C#",
+helpviewer_keywords: ["C++, indexers", "indexers, consuming C#", "as C# keyword [C++]", "is C# keyword [C++]", "lock statement", "lock C# keyword [C++]"]
 ms.assetid: a5902cf8-a14d-4559-aefb-c178615d45bb
 ---
 # Interoperability with Other .NET Languages (C++/CLI)

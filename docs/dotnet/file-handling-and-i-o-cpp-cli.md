@@ -1,7 +1,7 @@
 ---
 title: "File Handling and I-O (C++/CLI)"
 ms.date: "11/04/2016"
-helpviewer_keywords: [".NET Framework [C++], file handling", "files [C++], .NET Framework and", "I/O [C++], .NET Framework applications", ".NET Framework [C++], I/O",
+helpviewer_keywords: [".NET Framework [C++], file handling", "files [C++], .NET Framework and", "I/O [C++], .NET Framework applications", ".NET Framework [C++], I/O", "files [C++], listing files", "directories [C++], listing files", "monitoring file system events", "FileSystemWatcher class, examples", "examples [C++], monitoring file system changes", "events [C++], monitoring", "file system events [C++]", "files [C++], binary", "binary files, reading in C++", "reading text files", "text files, reading", "files [C++], retrieving information about", "FileInfo class", "binary files, writing in C++", "files [C++], binary", "files [C++], text", "text files, writing in C++"]
 ms.assetid: 3296fd59-a83a-40d4-bd4a-6096cc13101b
 ---
 
