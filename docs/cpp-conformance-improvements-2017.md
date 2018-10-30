@@ -1918,7 +1918,7 @@ int main()
 
 The previous example raises C2668:
 
-```output
+```Output
 partial_alias.cpp(32): error C2668: 'f': ambiguous call to overloaded function
 partial_alias.cpp(18): note: could be 'int f<Alloc,void>(A<void> &,const AlignedBuffer<10,4> &)'
 partial_alias.cpp(12): note: or       'int f<Alloc,A<void>>(Alloc &,const AlignedBuffer<10,4> &)'
@@ -1931,7 +1931,7 @@ partial_alias.cpp(32): note: while trying to match the argument list '(A<void>, 
 
 The implementation divergence is due to a regression in the Standard wording where the resolution to core issue 2235 removed some text that would allow these overloads to be ordered. The current C++ standard does not provide a mechanism to partially order these functions, so they are considered ambiguous.
 
-As a workaround, we recommended that you not rely on partial ordering to resolve this problem, and instead use SFINAE to remove particular overloads. In the following example, we use a helper class `IsA` to remove the first overload when `Alloc` is a specialization of A:
+As a workaround, we recommended that you not rely on partial ordering to resolve this problem, and instead use SFINAE to remove particular overloads. In the following example, we use a helper class `IsA` to remove the first overload when `Alloc` is a specialization of `A`:
 
 ```cpp
 #include <utility>
