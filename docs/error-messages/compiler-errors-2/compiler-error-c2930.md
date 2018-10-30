@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2930 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2930"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2930"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2930"]
 ms.assetid: f07eecd1-e5d1-4518-bd89-b1fd2a003a17
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2930
 

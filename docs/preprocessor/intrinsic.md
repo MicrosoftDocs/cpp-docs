@@ -1,16 +1,9 @@
 ---
-title: "intrinsic | Microsoft Docs"
-ms.custom: ""
+title: "intrinsic"
 ms.date: "04/11/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["intrinsic_CPP", "vc-pragma.intrinsic"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["intrinsic pragma", "pragmas, intrinsic"]
 ms.assetid: 25c86ac7-ef40-47b7-a2c0-fada9c5dc3c5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # intrinsic
 

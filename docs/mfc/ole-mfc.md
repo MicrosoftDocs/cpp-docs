@@ -1,15 +1,8 @@
 ---
-title: "OLE (MFC) | Microsoft Docs"
-ms.custom: ""
+title: "OLE (MFC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE [MFC], user-interface topics", "OLE applications [MFC], user interface", "user interfaces, OLE", "applications [OLE], user interface"]
 ms.assetid: 61cb5d3e-1108-4e9b-b301-a8d8fcc586cb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OLE (MFC)
 

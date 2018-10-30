@@ -1,15 +1,8 @@
 ---
-title: "Document Template Creation | Microsoft Docs"
-ms.custom: ""
+title: "Document Template Creation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["document templates [MFC]", "constructors [MFC], document template", "document templates [MFC], creating", "MFC, document templates", "templates [MFC], document templates"]
 ms.assetid: c87f1821-7cbf-442e-9690-f126ae7fb783
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Document Template Creation
 

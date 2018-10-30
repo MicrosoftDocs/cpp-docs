@@ -1,16 +1,9 @@
 ---
-title: "safebuffers | Microsoft Docs"
-ms.custom: ""
+title: "safebuffers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["safebuffers_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec keyword (C++), safebuffers", "safebuffers __declspec keyword"]
 ms.assetid: 0b0dce14-4523-44d2-8070-5dd0fdabc618
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # safebuffers
 

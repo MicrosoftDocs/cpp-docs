@@ -1,16 +1,9 @@
 ---
-title: "Adding Objects and Controls to an ATL Project | Microsoft Docs"
-ms.custom: ""
+title: "Adding Objects and Controls to an ATL Project"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.ATL.controls"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, adding objects", "wizards [C++], ATL projects", "ATL projects, adding controls", "controls [ATL], adding to projects", "objects [C++], adding to ATL projects", "ATL Control Wizard"]
 ms.assetid: c0adcbd0-07fe-4c55-a8fd-8c2c65ecdaad
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding Objects and Controls to an ATL Project
 

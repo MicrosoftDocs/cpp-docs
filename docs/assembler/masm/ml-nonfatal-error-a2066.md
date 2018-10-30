@@ -1,16 +1,10 @@
 ---
-title: "ML Nonfatal Error A2066 | Microsoft Docs"
-ms.custom: ""
+title: "ML Nonfatal Error A2066"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2066"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["A2066"]
 ms.assetid: 58220fdf-fb8f-47fc-a36d-737867361185
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2066
 

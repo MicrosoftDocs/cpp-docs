@@ -1,15 +1,8 @@
 ---
-title: "Sequence of Operations for Creating OLE Applications | Microsoft Docs"
-ms.custom: ""
+title: "Sequence of Operations for Creating OLE Applications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE applications [MFC], creating", "OLE applications [MFC]", "applications [OLE], creating", "applications [OLE]"]
 ms.assetid: 84b0f606-36c1-4253-9cea-44427f0074b9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Sequence of Operations for Creating OLE Applications
 

@@ -1,16 +1,9 @@
 ---
-title: ".XMM | Microsoft Docs"
-ms.custom: ""
+title: ".XMM"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".XMM"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".XMM directive"]
 ms.assetid: db3062b6-8b2f-469b-aa02-df6571eab3ba
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .XMM
 

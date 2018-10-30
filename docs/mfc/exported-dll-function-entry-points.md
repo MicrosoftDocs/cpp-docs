@@ -1,15 +1,8 @@
 ---
-title: "Exported DLL Function Entry Points | Microsoft Docs"
-ms.custom: ""
+title: "Exported DLL Function Entry Points"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["exporting DLLs [MFC], functions", "MFC, managing state data", "state management [MFC], exported DLLs"]
 ms.assetid: 3268666e-d24b-44f2-80e8-7c80f73b93ca
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exported DLL Function Entry Points
 

@@ -1,16 +1,10 @@
 ---
-title: "DerefHelper Structure | Microsoft Docs"
-ms.custom: ""
+title: "DerefHelper Structure"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::Details::DerefHelper"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DerefHelper structure"]
 ms.assetid: 86ded58b-c3ee-4a4f-bb86-4f67b895d427
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # DerefHelper Structure
 

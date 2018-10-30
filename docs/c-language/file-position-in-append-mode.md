@@ -1,15 +1,8 @@
 ---
-title: "File Position in Append Mode | Microsoft Docs"
-ms.custom: ""
+title: "File Position in Append Mode"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["file pointers [C++], append mode"]
 ms.assetid: fca94e95-907c-4703-ad7d-2fcac1592168
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # File Position in Append Mode
 

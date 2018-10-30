@@ -1,16 +1,9 @@
 ---
-title: "_variant_t Class | Microsoft Docs"
-ms.custom: ""
+title: "_variant_t Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_variant_t"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_variant_t class [C++], operators", "_variant_t class", "_variant_t class [C++], member functions", "VARIANT object", "VARIANT object [C++], COM encapsulation"]
 ms.assetid: 6a3cbd4e-0ae8-425e-b4cf-ca0df894c93f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _variant_t Class
 

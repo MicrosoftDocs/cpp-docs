@@ -1,16 +1,9 @@
 ---
-title: "CMultiPageDHtmlDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "CMultiPageDHtmlDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMultiPageDHtmlDialog", "AFXDHTML/CMultiPageDHtmlDialog", "AFXDHTML/CMultiPageDHtmlDialog::CMultiPageDHtmlDialog"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMultiPageDHtmlDialog [MFC], CMultiPageDHtmlDialog"]
 ms.assetid: 971accc1-824d-4df4-b4c1-b1a20e0f7e4f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMultiPageDHtmlDialog Class
 

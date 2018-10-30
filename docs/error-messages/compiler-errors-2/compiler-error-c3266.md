@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3266 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3266"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3266"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3266"]
 ms.assetid: 7375c099-acb7-42f6-898d-57cfefa010b8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3266
 

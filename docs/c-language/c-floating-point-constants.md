@@ -1,15 +1,8 @@
 ---
-title: "C Floating-Point Constants | Microsoft Docs"
-ms.custom: ""
+title: "C Floating-Point Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["types [C], constants", "floating-point numbers, floating-point constants", "constants, floating-point", "floating-point constants", "floating-point constants, about floating-point constants", "double data type, floating-point constants"]
 ms.assetid: e1bd9b44-d6ab-470c-93e5-07142c7a2062
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Floating-Point Constants
 

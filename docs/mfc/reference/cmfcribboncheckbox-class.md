@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonCheckBox Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonCheckBox Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonCheckBox", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::CMFCRibbonCheckBox", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::GetCompactSize", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::GetIntermediateSize", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::GetRegularSize", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::IsDrawTooltipImage", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDraw", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDrawMenuImage", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDrawOnList", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::SetACCData"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonCheckBox [MFC], CMFCRibbonCheckBox", "CMFCRibbonCheckBox [MFC], GetCompactSize", "CMFCRibbonCheckBox [MFC], GetIntermediateSize", "CMFCRibbonCheckBox [MFC], GetRegularSize", "CMFCRibbonCheckBox [MFC], IsDrawTooltipImage", "CMFCRibbonCheckBox [MFC], OnDraw", "CMFCRibbonCheckBox [MFC], OnDrawMenuImage", "CMFCRibbonCheckBox [MFC], OnDrawOnList", "CMFCRibbonCheckBox [MFC], SetACCData"]
 ms.assetid: 3a6c3891-c8d1-4af0-b954-7b9ab048782a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonCheckBox Class
 

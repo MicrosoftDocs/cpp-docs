@@ -1,15 +1,8 @@
 ---
-title: "atomic Structure | Microsoft Docs"
-ms.custom: ""
+title: "atomic Structure"
 ms.date: "04/20/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["atomic/std::atomic"]
-dev_langs: ["C++"]
 ms.assetid: 261628ed-7049-41ac-99b9-cfe49f696b44
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # atomic Structure
 

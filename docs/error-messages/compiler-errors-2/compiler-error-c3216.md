@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3216 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3216"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3216"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3216"]
 ms.assetid: bbab1efe-8779-4489-8bb0-b11e45f5cbe5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3216
 

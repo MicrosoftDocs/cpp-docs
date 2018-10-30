@@ -1,15 +1,8 @@
 ---
-title: "Makefile Preprocessing | Microsoft Docs"
-ms.custom: ""
+title: "Makefile Preprocessing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessing makefiles", "makefiles, preprocessing"]
 ms.assetid: a9185139-97c9-4adb-b4a9-1ec395cce9f8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Makefile Preprocessing
 

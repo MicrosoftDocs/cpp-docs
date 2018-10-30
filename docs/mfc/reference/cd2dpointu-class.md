@@ -1,16 +1,9 @@
 ---
-title: "CD2DPointU Class | Microsoft Docs"
-ms.custom: ""
+title: "CD2DPointU Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CD2DPointU", "AFXRENDERTARGET/CD2DPointU", "AFXRENDERTARGET/CD2DPointU::CD2DPointU"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DPointU [MFC], CD2DPointU"]
 ms.assetid: 04733f96-b6de-4a89-82e3-caad1e8087a9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CD2DPointU Class
 

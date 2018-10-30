@@ -1,15 +1,8 @@
 ---
-title: "Tree Control Parent and Child Items | Microsoft Docs"
-ms.custom: ""
+title: "Tree Control Parent and Child Items"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["parent items in CTreeCtrl [MFC]", "child items in tree control [MFC]", "CTreeCtrl class [MFC], parent and child items", "tree controls [MFC], parent and child items"]
 ms.assetid: abcea1e4-fe9b-40d9-86dc-1db235f8f103
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Tree Control Parent and Child Items
 

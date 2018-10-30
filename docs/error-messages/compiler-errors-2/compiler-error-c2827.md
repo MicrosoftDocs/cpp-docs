@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2827 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2827"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2827"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2827"]
 ms.assetid: cb3e5814-0c92-40e4-b620-98578ae3003a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2827
 

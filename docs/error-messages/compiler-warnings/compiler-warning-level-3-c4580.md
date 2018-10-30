@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 3) C4580 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 3) C4580"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4580"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4580"]
 ms.assetid: fef6e8e0-0d6a-44fa-b22a-2fe7ba2ef379
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4580
 

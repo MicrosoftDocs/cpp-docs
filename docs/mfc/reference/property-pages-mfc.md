@@ -1,16 +1,9 @@
 ---
-title: "Property Pages (MFC) | Microsoft Docs"
-ms.custom: ""
+title: "Property Pages (MFC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["property page data transfer functions in MFC", "property pages [MFC], global MFC functions"]
 ms.assetid: 734f88bc-c776-4136-9b0e-f45c761a45c1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Property Pages (MFC)
 

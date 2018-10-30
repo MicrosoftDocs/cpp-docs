@@ -1,15 +1,8 @@
 ---
-title: "Binary Output Files | Microsoft Docs"
-ms.custom: ""
+title: "Binary Output Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["I/O [C++], binary output files", "files [C++], binary output files", "binary data, binary output files"]
 ms.assetid: 180954af-8cd6-444b-9a76-2f630a3389d8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Binary Output Files
 

@@ -1,16 +1,9 @@
 ---
-title: "codecvt_utf8 | Microsoft Docs"
-ms.custom: ""
+title: "codecvt_utf8"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["codecvt/std::codecvt_utf8"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["codecvt_utf8 class"]
 ms.assetid: 2a87478f-e2d4-4b8d-ad9c-00add01d1bb0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # codecvt_utf8
 

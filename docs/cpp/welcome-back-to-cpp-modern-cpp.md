@@ -1,14 +1,8 @@
 ---
-title: "Welcome Back to C++ (Modern C++) | Microsoft Docs"
-ms.custom: ""
+title: "Welcome Back to C++ (Modern C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Welcome Back to C++ (Modern C++)
 

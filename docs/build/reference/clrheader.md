@@ -1,16 +1,9 @@
 ---
-title: "-CLRHEADER | Microsoft Docs"
-ms.custom: ""
+title: "/CLRHEADER"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/CLRHEADER"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-CLRHEADER dumpbin option", "/CLRHEADER dumpbin option", "CLRHEADER dumpbin option"]
 ms.assetid: cf73424f-4541-47e2-b94e-69b95266ef2a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /CLRHEADER
 

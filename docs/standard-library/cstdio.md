@@ -1,16 +1,9 @@
 ---
-title: "&lt;cstdio&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;cstdio&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<cstdio>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cstdio header"]
 ms.assetid: 838ca50b-dea5-4ee3-a39c-e7c23a6ee016
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;cstdio&gt;
 

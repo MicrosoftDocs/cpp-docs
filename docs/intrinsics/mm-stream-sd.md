@@ -1,16 +1,9 @@
 ---
-title: "_mm_stream_sd | Microsoft Docs"
-ms.custom: ""
+title: "_mm_stream_sd"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_mm_stream_sd"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_mm_stream_sd intrinsic", "movntsd instruction"]
 ms.assetid: 2b4bea5e-e64e-45fa-9afc-88a2e4b82cfc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _mm_stream_sd
 

@@ -1,19 +1,12 @@
 ---
-title: "strupr, wcsupr | Microsoft Docs"
-ms.custom: ""
+title: "strupr, wcsupr"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["strupr", "wcsupr"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["strupr", "wcsupr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["strupr function", "wcsupr function"]
 ms.assetid: 17dfe1cd-3b09-4702-9f89-2207f44953e6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # strupr, wcsupr
 

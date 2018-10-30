@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4245 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4245"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4245"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4245"]
 ms.assetid: 85083d53-9cc2-4d12-b58c-6dad28f15cbe
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4245
 

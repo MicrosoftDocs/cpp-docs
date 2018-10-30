@@ -1,15 +1,8 @@
 ---
-title: "Writing an Exception Handler | Microsoft Docs"
-ms.custom: ""
+title: "Writing an Exception Handler"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["structured exception handling [C++], exception handlers", "exception handling [C++], exception handlers"]
 ms.assetid: 71473fee-f773-4a34-bf12-82a3af79579c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Writing an Exception Handler
 

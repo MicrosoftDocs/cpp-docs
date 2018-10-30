@@ -1,15 +1,8 @@
 ---
-title: "User Record | Microsoft Docs"
-ms.custom: ""
+title: "User Record"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["records, user", "OLE DB providers, user record", "user records", "user records, described", "rowsets, user record"]
 ms.assetid: 9c0d2864-2738-4f62-a750-1016d9c3523f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # User Record
 

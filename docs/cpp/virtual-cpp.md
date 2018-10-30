@@ -1,16 +1,9 @@
 ---
-title: "virtual (C++) | Microsoft Docs"
-ms.custom: ""
+title: "virtual (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["virtual_cpp", "virtual"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["virtual base classes [C++], declaring", "base classes [C++], virtual", "virtual functions [C++], declaring", "virtual keyword [C++]"]
 ms.assetid: c2eb987d-6cf3-43b6-aa0c-29a6f561b1ae
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # virtual (C++)
 

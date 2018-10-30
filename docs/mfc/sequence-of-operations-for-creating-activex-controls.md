@@ -1,15 +1,8 @@
 ---
-title: "Sequence of Operations for Creating ActiveX Controls | Microsoft Docs"
-ms.custom: ""
+title: "Sequence of Operations for Creating ActiveX Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], creating", "ActiveX controls [MFC], creating", "sequence [MFC], for creating ActiveX controls", "OLE controls [MFC], MFC", "sequence [MFC]"]
 ms.assetid: 7d868c53-a0af-4ef6-a89c-e1c03c583a53
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Sequence of Operations for Creating ActiveX Controls
 

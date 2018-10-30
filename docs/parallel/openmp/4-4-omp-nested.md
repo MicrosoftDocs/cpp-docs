@@ -1,14 +1,7 @@
 ---
-title: "4.4 OMP_NESTED | Microsoft Docs"
-ms.custom: ""
+title: "4.4 OMP_NESTED"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: fd17b6f4-84e8-44c0-a96a-3a9e5ba33688
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 4.4 OMP_NESTED
 

@@ -1,16 +1,9 @@
 ---
-title: "_DEBUG | Microsoft Docs"
-ms.custom: ""
+title: "_DEBUG"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["_DEBUG", "DEBUG"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DEBUG macro", "_DEBUG macro"]
 ms.assetid: a9901568-4846-4731-a404-399d947e2e7a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _DEBUG
 

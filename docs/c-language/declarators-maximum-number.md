@@ -1,15 +1,8 @@
 ---
-title: "Declarators: Maximum number | Microsoft Docs"
-ms.custom: ""
+title: "Declarators: Maximum number"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["declarators, maximum number of"]
 ms.assetid: f8410673-e11a-4830-89a3-3ffb7bb6562d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Declarators: Maximum number
 

@@ -1,16 +1,9 @@
 ---
-title: "data_seg | Microsoft Docs"
-ms.custom: ""
+title: "data_seg"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["data_seg_CPP", "vc-pragma.data_seg"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["data_seg pragma", "pragmas, data_seg"]
 ms.assetid: 65c66466-4c98-494f-93af-106beb4caf78
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # data_seg
 

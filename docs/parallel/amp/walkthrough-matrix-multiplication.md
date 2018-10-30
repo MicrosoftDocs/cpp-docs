@@ -1,14 +1,7 @@
 ---
-title: "Walkthrough: Matrix Multiplication | Microsoft Docs"
-ms.custom: ""
+title: "Walkthrough: Matrix Multiplication"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Matrix Multiplication
 

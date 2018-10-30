@@ -1,14 +1,7 @@
 ---
-title: "Unicode and Multibyte Character Set (MBCS) Support | Microsoft Docs"
-ms.custom: ""
+title: "Unicode and Multibyte Character Set (MBCS) Support"
 ms.date: "1/09/2017"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC [C++], character set support", "MBCS [C++], strings and MFC support", "strings [C++], MBCS support in MFC", "character sets [C++], multibyte", "Unicode [C++], MFC strings", "Unicode [C++], string objects", "strings [C++], Unicode", "strings [C++], character set support"]
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Unicode and Multibyte Character Set (MBCS) Support
 

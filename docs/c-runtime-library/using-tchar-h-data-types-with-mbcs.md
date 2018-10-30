@@ -1,16 +1,9 @@
 ---
-title: "Using TCHAR.H Data Types with _MBCS | Microsoft Docs"
-ms.custom: ""
+title: "Using TCHAR.H Data Types with _MBCS"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["_mbcs"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TCHAR.H data types", "MBCS data type", "_MBCS data type"]
 ms.assetid: 48f471e7-9d2b-4a39-b841-16a0e15c0a18
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Using TCHAR.H Data Types with _MBCS
 

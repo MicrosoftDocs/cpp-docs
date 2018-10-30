@@ -1,15 +1,8 @@
 ---
-title: "Container Class::size | Microsoft Docs"
-ms.custom: ""
+title: "Container Class::size"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["size method"]
 ms.assetid: 67073661-2699-4534-ad3b-31a906658dc5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Container Class::size
 

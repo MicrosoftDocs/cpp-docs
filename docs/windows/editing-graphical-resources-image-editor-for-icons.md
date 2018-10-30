@@ -1,16 +1,9 @@
 ---
-title: "Editing Graphical Resources (C++ Image Editor for Icons) | Microsoft Docs"
-ms.custom: ""
+title: "Editing Graphical Resources (C++ Image Editor for Icons)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.bitmap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["images [C++], editing", "graphics [C++]", "images [C++]", "Image editor [C++], about Image editor", "graphics [C++], Image editor", "graphics [C++], editing"]
 ms.assetid: 09e422c5-f712-4378-b973-c7a3bbc92b9c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Editing Graphical Resources (C++ Image Editor for Icons)
 

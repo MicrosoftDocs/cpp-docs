@@ -1,16 +1,9 @@
 ---
-title: "Debugging Support Classes | Microsoft Docs"
-ms.custom: ""
+title: "Debugging Support Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.debug"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["debugging memory leaks, MFC", "memory allocation, debugging dynamic", "debugging [MFC], classes for debugging", "memory allocation, debugging dynamic allocation", "dynamic memory allocation", "debugging [MFC], memory leaks", "memory leaks, MFC debug classes"]
 ms.assetid: d79e084a-8326-4251-8700-4efac07c511e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Debugging Support Classes
 

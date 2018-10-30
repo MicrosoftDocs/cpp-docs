@@ -1,16 +1,9 @@
 ---
-title: "future Class | Microsoft Docs"
-ms.custom: ""
+title: "future Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["future/std::future", "future/std::future::future", "future/std::future::get", "future/std::future::share", "future/std::future::valid", "future/std::future::wait", "future/std::future::wait_for", "future/std::future::wait_until"]
-dev_langs: ["C++"]
 ms.assetid: 495e82c3-5341-4e37-87dd-b40107fbdfb6
-author: "corob-msft"
-ms.author: "corob"
 helpviewer_keywords: ["std::future [C++]", "std::future [C++], future", "std::future [C++], get", "std::future [C++], share", "std::future [C++], valid", "std::future [C++], wait", "std::future [C++], wait_for", "std::future [C++], wait_until"]
-ms.workload: ["cplusplus"]
 ---
 # future Class
 

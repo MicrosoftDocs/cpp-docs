@@ -1,16 +1,9 @@
 ---
-title: ".MODEL | Microsoft Docs"
-ms.custom: ""
+title: ".MODEL"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".MODEL"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".MODEL directive"]
 ms.assetid: 057f00df-1515-4c55-852a-d936c8a34b53
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .MODEL
 

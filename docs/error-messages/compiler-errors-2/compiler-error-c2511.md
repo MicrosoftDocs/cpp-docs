@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2511 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2511"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2511"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2511"]
 ms.assetid: df999efe-fe2b-418b-bb55-4af6a0592631
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2511
 

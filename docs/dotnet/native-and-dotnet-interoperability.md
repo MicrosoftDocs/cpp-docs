@@ -1,15 +1,8 @@
 ---
-title: "Native and .NET Interoperability | Microsoft Docs"
-ms.custom: ""
+title: "Native and .NET Interoperability"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["interop [C++]", ".NET Framework [C++], interoperability with Visual C++", "interoperability [C++], about .NET interoperability", "interop [C++], about .NET interoperability", "managed code [C++], interoperability", "native code [C++]", "interoperability [C++]", "MFC [C++], .NET integration", "unmanaged code interoperability [C++]", "Visual C++, interoperability", "native code [C++], .NET interoperatibility"]
 ms.assetid: f3ec6c99-c745-4256-b95b-f1d12ba17a5a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Native and .NET Interoperability
 

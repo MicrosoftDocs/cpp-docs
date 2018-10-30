@@ -1,16 +1,9 @@
 ---
-title: "Event Maps | Microsoft Docs"
-ms.custom: ""
+title: "Event Maps"
 ms.date: "06/20/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros.maps"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["event maps [MFC]"]
 ms.assetid: 1ed53aee-bc53-43cd-834a-6fb935c0d29b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Event Maps
 

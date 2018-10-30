@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3101 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3101"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3101"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3101"]
 ms.assetid: 4f673766-d4f7-4632-94a5-d36a83f7f4b5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3101
 

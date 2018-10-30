@@ -1,15 +1,8 @@
 ---
-title: "Overview of Declarators | Microsoft Docs"
-ms.custom: ""
+title: "Overview of Declarators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["declarators, about declarators"]
 ms.assetid: 0f2e2312-80bd-4154-8345-718bd9ed2173
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Overview of Declarators
 

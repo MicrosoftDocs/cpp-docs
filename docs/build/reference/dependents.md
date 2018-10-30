@@ -1,16 +1,9 @@
 ---
-title: "-DEPENDENTS | Microsoft Docs"
-ms.custom: ""
+title: "/DEPENDENTS"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/dependents"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-DEPENDENTS dumpbin option", "/DEPENDENTS dumpbin option", "DEPENDENTS dumpbin option"]
 ms.assetid: 9b31da2a-75ac-4bbf-a3f1-adf8b0ecbbb4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /DEPENDENTS
 

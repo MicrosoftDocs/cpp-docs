@@ -1,15 +1,8 @@
 ---
-title: "Recordset: Scrolling (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: Scrolling (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["recordsets [C++], end of", "recordsets [C++], beginning of", "navigation [C++], recordsets", "recordsets [C++], moving to records", "ODBC recordsets, scrolling", "recordsets [C++], navigating", "scrolling [C++], recordsets", "Move method (recordsets)"]
 ms.assetid: f38d2dcb-1e88-4e41-af25-98b00c276be4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Scrolling (ODBC)
 

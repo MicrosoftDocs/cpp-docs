@@ -1,15 +1,8 @@
 ---
-title: "COM Attributes | Microsoft Docs"
-ms.custom: ""
+title: "COM Attributes"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["attributes [C++/CLI], reference topics", "attributes [COM]", "COM, attributes"]
 ms.assetid: 52a5dd70-e8be-4bba-afd6-daf90fe689a0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # COM Attributes
 

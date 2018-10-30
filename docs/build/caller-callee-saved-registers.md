@@ -1,14 +1,7 @@
 ---
-title: "Caller-Callee Saved Registers | Microsoft Docs"
-ms.custom: ""
+title: "Caller-Callee Saved Registers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 0533bd4b-d6bb-4ce1-8201-495e16870cbb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Caller/Callee Saved Registers
 

@@ -1,16 +1,9 @@
 ---
-title: "NMAKE Warning U4011 | Microsoft Docs"
-ms.custom: ""
+title: "NMAKE Warning U4011"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["U4011"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["U4011"]
 ms.assetid: e8244514-eba6-4285-8853-7baeefdcd8a4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # NMAKE Warning U4011
 

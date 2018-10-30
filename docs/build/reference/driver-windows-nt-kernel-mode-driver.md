@@ -1,16 +1,9 @@
 ---
-title: "-DRIVER (Windows NT Kernel Mode Driver) | Microsoft Docs"
-ms.custom: ""
+title: "/DRIVER (Windows NT Kernel Mode Driver)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.driver", "/driver"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["kernel mode driver", "-DRIVER linker option", "DRIVER linker option", "/DRIVER linker option"]
 ms.assetid: aeee8e28-5d97-40f5-ba16-9f370fe8a1b8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /DRIVER (Windows NT Kernel Mode Driver)
 

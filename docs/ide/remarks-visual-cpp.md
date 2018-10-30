@@ -1,16 +1,9 @@
 ---
-title: "&lt;remarks&gt; (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "&lt;remarks&gt; (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["remarks", "<remarks>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<remarks> C++ XML tag", "remarks C++ XML tag"]
 ms.assetid: c820083b-3192-40ab-9ec8-1472c55b4247
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # &lt;remarks&gt; (Visual C++)
 

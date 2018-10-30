@@ -1,16 +1,9 @@
 ---
-title: "CFixedStringT Class | Microsoft Docs"
-ms.custom: ""
+title: "CFixedStringT Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CFixedStringT", "CSTRINGT/ATL::CFixedStringT", "CSTRINGT/ATL::CFixedStringT::CFixedStringT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CFixedStringT class", "shared classes, CFixedStringT"]
 ms.assetid: 6d4171ba-3104-493a-a6cc-d515f4ba9a4b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CFixedStringT Class
 

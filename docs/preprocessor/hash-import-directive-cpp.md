@@ -1,16 +1,9 @@
 ---
-title: "#import Directive (C++) | Microsoft Docs"
-ms.custom: ""
+title: "#import Directive (C++)"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["#import"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".tlh files", "#import directive", "import directive (#import)", "tlh files", "tlbid switch", "preprocessor, directives", "COM, type library header file"]
 ms.assetid: 787d1112-e543-40d7-ab15-a63d43f4030a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # #import Directive (C++)
 

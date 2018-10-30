@@ -1,19 +1,12 @@
 ---
-title: "fseek, _fseeki64 | Microsoft Docs"
-ms.custom: ""
+title: "fseek, _fseeki64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_fseeki64", "fseek"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["fseek", "_fseeki64"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_fseeki64 function", "fseeki64 function", "fseek function", "file pointers [C++], moving", "file pointers [C++]", "seek file pointers"]
 ms.assetid: f6bb1f8b-891c-426e-9e14-0e7e5c62df70
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fseek, _fseeki64
 

@@ -1,16 +1,9 @@
 ---
-title: "is_signed Class | Microsoft Docs"
-ms.custom: ""
+title: "is_signed Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_signed"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_signed class", "is_signed"]
 ms.assetid: 20ae44d9-22ad-4fbd-b26a-f18c62689451
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_signed Class
 

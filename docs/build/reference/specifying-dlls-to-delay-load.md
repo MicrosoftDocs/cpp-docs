@@ -1,15 +1,8 @@
 ---
-title: "Specifying DLLs to Delay Load | Microsoft Docs"
-ms.custom: ""
+title: "Specifying DLLs to Delay Load"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["DELAYLOAD linker option", "delayed loading of DLLs", "delayed loading of DLLs, specifying", "/DELAYLOAD linker option"]
 ms.assetid: 94cbecfe-7a42-40d1-a618-9f2786bac0d8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Specifying DLLs to Delay Load
 

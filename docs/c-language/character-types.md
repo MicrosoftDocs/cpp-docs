@@ -1,15 +1,8 @@
 ---
-title: "Character Types | Microsoft Docs"
-ms.custom: ""
+title: "Character Types"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["character data types [C]", "types [C], character"]
 ms.assetid: d3ca8cda-c0d7-43af-9472-697e8ef015ce
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Character Types
 

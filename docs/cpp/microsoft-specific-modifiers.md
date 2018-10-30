@@ -1,14 +1,7 @@
 ---
-title: "Microsoft-Specific Modifiers | Microsoft Docs"
-ms.custom: ""
+title: "Microsoft-Specific Modifiers"
 ms.date: "08/16/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 22c7178c-f854-47fa-9de6-07d23fda58e1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Microsoft-Specific Modifiers
 

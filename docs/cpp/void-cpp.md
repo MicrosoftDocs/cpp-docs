@@ -1,16 +1,9 @@
 ---
-title: "void (C++) | Microsoft Docs"
-ms.custom: ""
+title: "void (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["void_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["void keyword [C++]", "functions [C++], void", "pointers, void"]
 ms.assetid: d203edba-38e6-4056-8b89-011437351057
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # void (C++)
 

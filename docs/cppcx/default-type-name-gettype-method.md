@@ -1,15 +1,8 @@
 ---
-title: "default::(type_name)::GetType Method | Microsoft Docs"
-ms.custom: ""
+title: "default::(type_name)::GetType Method"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 f1_keywords: ["VCCORLIB/Platform::Object::GetType"]
-dev_langs: ["C++"]
 ms.assetid: 21d0bf92-fac4-48cd-9108-c6f57ba1196a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # default::(type_name)::GetType Method
 

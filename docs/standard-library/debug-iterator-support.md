@@ -1,15 +1,8 @@
 ---
-title: "Debug Iterator Support | Microsoft Docs"
-ms.custom: ""
+title: "Debug Iterator Support"
 ms.date: "09/13/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Safe Libraries", "Safe Libraries, C++ Standard Library", "Safe C++ Standard Library", "C++ Standard Library, debug iterator support", "iterators, debug iterator support", "iterators, incompatible", "incompatible iterators", "debug iterator support"]
 ms.assetid: f3f5bd15-4be8-4d64-a4d0-8bc0761c68b6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Debug Iterator Support
 

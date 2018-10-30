@@ -1,15 +1,9 @@
 ---
-title: "CompareStringOrdinal Method | Microsoft Docs"
-ms.custom: ""
+title: "CompareStringOrdinal Method"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Details::CompareStringOrdinal"]
-dev_langs: ["C++"]
 ms.assetid: ffa997fd-8cd7-40a5-b9e7-f55d40b072f4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # CompareStringOrdinal Method
 

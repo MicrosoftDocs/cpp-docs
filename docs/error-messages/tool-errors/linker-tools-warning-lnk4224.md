@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Warning LNK4224 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Warning LNK4224"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK4224"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4224"]
 ms.assetid: 8624b70e-0b93-43cf-b457-834d38632d0b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4224
 

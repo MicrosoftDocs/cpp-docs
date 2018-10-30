@@ -1,16 +1,9 @@
 ---
-title: "__nop | Microsoft Docs"
-ms.custom: ""
+title: "__nop"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__nop"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["nop instruction", "__nop intrinsic"]
 ms.assetid: 7a2a938b-87e0-476d-a348-03ea7635b6b9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __nop
 

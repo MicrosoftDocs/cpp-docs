@@ -1,14 +1,7 @@
 ---
-title: "MxCsr | Microsoft Docs"
-ms.custom: ""
+title: "MxCsr"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 4f3c229d-0862-4733-acc7-9ed7a0b870ce
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # MxCsr
 

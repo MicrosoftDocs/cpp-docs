@@ -1,14 +1,8 @@
 ---
-title: "auto_gcroot Members | Microsoft Docs"
-ms.custom: ""
+title: "auto_gcroot Members"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: fb51ff14-a497-4f7a-8d7e-c3cfcaf9f8df
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot Members
 

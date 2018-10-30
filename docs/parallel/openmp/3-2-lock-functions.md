@@ -1,14 +1,7 @@
 ---
-title: "3.2 Lock Functions | Microsoft Docs"
-ms.custom: ""
+title: "3.2 Lock Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 0ec855c6-55a9-49d7-bee4-5edae6e86a1b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 3.2 Lock Functions
 

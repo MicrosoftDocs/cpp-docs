@@ -1,16 +1,9 @@
 ---
-title: "__svm_invlpga | Microsoft Docs"
-ms.custom: ""
+title: "__svm_invlpga"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__svm_invlpga"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__svm_invlpga intrinsic", "INVLPGA instruction"]
 ms.assetid: aa6578ce-8278-464b-8815-a0fc45330915
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __svm_invlpga
 

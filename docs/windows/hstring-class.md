@@ -1,16 +1,10 @@
 ---
-title: "HString Class | Microsoft Docs"
-ms.custom: ""
+title: "HString Class"
 ms.date: "09/24/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HString", "corewrappers/Microsoft::WRL::Wrappers::HString::Attach", "corewrappers/Microsoft::WRL::Wrappers::HString::CopyTo", "corewrappers/Microsoft::WRL::Wrappers::HString::Detach", "corewrappers/Microsoft::WRL::Wrappers::HString::Get", "corewrappers/Microsoft::WRL::Wrappers::HString::GetAddressOf", "corewrappers/Microsoft::WRL::Wrappers::HString::HString", "corewrappers/Microsoft::WRL::Wrappers::HString::IsValid", "corewrappers/Microsoft::WRL::Wrappers::HString::MakeReference", "corewrappers/Microsoft::WRL::Wrappers::HString::operator=", "corewrappers/Microsoft::WRL::Wrappers::HString::operator==", "corewrappers/Microsoft::WRL::Wrappers::HString::operator!=", "corewrappers/Microsoft::WRL::Wrappers::HString::operator<", "corewrappers/Microsoft::WRL::Wrappers::HString::Release", "corewrappers/Microsoft::WRL::Wrappers::HString::Set", "corewrappers/Microsoft::WRL::Wrappers::HString::~HString"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Wrappers::HString class", "Microsoft::WRL::Wrappers::HString::Attach method", "Microsoft::WRL::Wrappers::HString::CopyTo method", "Microsoft::WRL::Wrappers::HString::Detach method", "Microsoft::WRL::Wrappers::HString::Get method", "Microsoft::WRL::Wrappers::HString::GetAddressOf method", "Microsoft::WRL::Wrappers::HString::HString, constructor", "Microsoft::WRL::Wrappers::HString::IsValid method", "Microsoft::WRL::Wrappers::HString::MakeReference method", "Microsoft::WRL::Wrappers::HString::operator= operator", "Microsoft::WRL::Wrappers::HString::operator== operator", "Microsoft::WRL::Wrappers::HString::operator!= operator", "Microsoft::WRL::Wrappers::HString::operator< operator", "Microsoft::WRL::Wrappers::HString::Release method", "Microsoft::WRL::Wrappers::HString::Set method", "Microsoft::WRL::Wrappers::HString::~HString, destructor"]
 ms.assetid: 6709dd2e-8d72-4675-8ec7-1baa7d71854d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # HString Class
 

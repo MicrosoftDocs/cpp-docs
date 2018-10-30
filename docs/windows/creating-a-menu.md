@@ -1,16 +1,9 @@
 ---
-title: "Creating a Menu (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Creating a Menu (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.menu"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["mnemonics [C++], associating menu items", "menus [C++], associating commands with mnemonic keys", "menus [C++], creating"]
 ms.assetid: 66f94448-9b97-4b73-bf97-10d4bf87cc65
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating a Menu (C++)
 

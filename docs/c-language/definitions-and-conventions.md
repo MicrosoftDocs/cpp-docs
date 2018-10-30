@@ -1,15 +1,8 @@
 ---
-title: "Definitions and Conventions | Microsoft Docs"
-ms.custom: ""
+title: "Definitions and Conventions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["nonterminals definition"]
 ms.assetid: f9b3cf5f-6a7c-4a10-9b18-9d4a43efdaeb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Definitions and Conventions
 

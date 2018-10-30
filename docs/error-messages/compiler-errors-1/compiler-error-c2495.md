@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2495 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2495"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2495"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2495"]
 ms.assetid: bb7066fe-3549-4901-97e4-157f3c04dd57
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2495
 

@@ -1,15 +1,8 @@
 ---
-title: "Sample Container Members | Microsoft Docs"
-ms.custom: ""
+title: "Sample Container Members"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["container classes"]
 ms.assetid: dc5a1998-a31b-4adf-b888-8abe5b87a4e0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Sample Container Members
 

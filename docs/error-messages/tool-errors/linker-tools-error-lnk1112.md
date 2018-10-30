@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1112 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1112"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1112"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1112"]
 ms.assetid: 425793d8-37e6-4072-9b6e-c3d4e9c12562
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1112
 

@@ -1,16 +1,9 @@
 ---
-title: "basic_istream Class | Microsoft Docs"
-ms.custom: ""
+title: "basic_istream Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["istream/std::basic_istream", "istream/std::basic_istream::gcount", "istream/std::basic_istream::get", "istream/std::basic_istream::getline", "istream/std::basic_istream::", "istream/std::basic_istream::peek", "istream/std::basic_istream::putback", "istream/std::basic_istream::read", "istream/std::basic_istream::readsome", "istream/std::basic_istream::seekg", "istream/std::basic_istream::sentry", "istream/std::basic_istream::swap", "istream/std::basic_istream::sync", "istream/std::basic_istream::tellg", "istream/std::basic_istream::unget"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::basic_istream [C++]", "std::basic_istream [C++], gcount", "std::basic_istream [C++], get", "std::basic_istream [C++], getline", "std::basic_istream [C++], OVERWRITE", "std::basic_istream [C++], peek", "std::basic_istream [C++], putback", "std::basic_istream [C++], read", "std::basic_istream [C++], readsome", "std::basic_istream [C++], seekg", "std::basic_istream [C++], sentry", "std::basic_istream [C++], swap", "std::basic_istream [C++], sync", "std::basic_istream [C++], tellg", "std::basic_istream [C++], unget"]
 ms.assetid: c7c27111-de6d-42b4-95a3-a7e65259bf17
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # basic_istream Class
 

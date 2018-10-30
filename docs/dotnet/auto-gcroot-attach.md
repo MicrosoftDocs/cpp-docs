@@ -1,16 +1,10 @@
 ---
-title: "auto_gcroot::attach | Microsoft Docs"
-ms.custom: ""
+title: "auto_gcroot::attach"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["auto_gcroot.attach", "auto_gcroot::attach", "msclr::auto_gcroot::attach", "msclr.auto_gcroot.attach"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["auto_gcroot::attach"]
 ms.assetid: 996ede65-bcb5-41f2-bfbf-507f8a578241
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot::attach
 

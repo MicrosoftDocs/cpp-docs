@@ -1,14 +1,7 @@
 ---
-title: "Porting to the Universal Windows Platform (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Porting to the Universal Windows Platform (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: f662d2e4-8940-418d-8109-cb76cb8f8569
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Porting to the Universal Windows Platform (C++)
 

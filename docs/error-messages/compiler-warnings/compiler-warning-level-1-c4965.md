@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4965 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4965"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4965"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4965"]
 ms.assetid: 47f3f6dc-459b-4a25-9947-f394c8966cb5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4965
 

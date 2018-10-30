@@ -1,16 +1,10 @@
 ---
-title: "SyncLockWithStatusT Class | Microsoft Docs"
-ms.custom: ""
+title: "SyncLockWithStatusT Class"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT", "corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::GetStatus", "corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::IsLocked", "corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::status_", "corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::SyncLockWithStatusT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT class", "Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::GetStatus method", "Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::IsLocked method", "Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::status_ data member", "Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::SyncLockWithStatusT, constructor"]
 ms.assetid: 4832fd93-0ac8-4168-9404-b43fefea7476
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # SyncLockWithStatusT Class
 

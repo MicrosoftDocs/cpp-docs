@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3496 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3496"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3496"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3496"]
 ms.assetid: e19885f2-677f-4c1e-bc69-e35852262dc3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3496
 

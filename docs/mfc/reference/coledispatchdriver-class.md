@@ -1,16 +1,9 @@
 ---
-title: "COleDispatchDriver Class | Microsoft Docs"
-ms.custom: ""
+title: "COleDispatchDriver Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleDispatchDriver", "AFXDISP/COleDispatchDriver", "AFXDISP/COleDispatchDriver::COleDispatchDriver", "AFXDISP/COleDispatchDriver::AttachDispatch", "AFXDISP/COleDispatchDriver::CreateDispatch", "AFXDISP/COleDispatchDriver::DetachDispatch", "AFXDISP/COleDispatchDriver::GetProperty", "AFXDISP/COleDispatchDriver::InvokeHelper", "AFXDISP/COleDispatchDriver::ReleaseDispatch", "AFXDISP/COleDispatchDriver::SetProperty", "AFXDISP/COleDispatchDriver::m_bAutoRelease", "AFXDISP/COleDispatchDriver::m_lpDispatch"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleDispatchDriver [MFC], COleDispatchDriver", "COleDispatchDriver [MFC], AttachDispatch", "COleDispatchDriver [MFC], CreateDispatch", "COleDispatchDriver [MFC], DetachDispatch", "COleDispatchDriver [MFC], GetProperty", "COleDispatchDriver [MFC], InvokeHelper", "COleDispatchDriver [MFC], ReleaseDispatch", "COleDispatchDriver [MFC], SetProperty", "COleDispatchDriver [MFC], m_bAutoRelease", "COleDispatchDriver [MFC], m_lpDispatch"]
 ms.assetid: 3ed98daf-cdc7-4374-8a0c-cf695a8d3657
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleDispatchDriver Class
 

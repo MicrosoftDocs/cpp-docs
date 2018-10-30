@@ -1,16 +1,10 @@
 ---
-title: "InvokeHelper Structure | Microsoft Docs"
-ms.custom: ""
+title: "InvokeHelper Structure"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::Details::InvokeHelper", "event/Microsoft::WRL::Details::InvokeHelper::callback_", "event/Microsoft::WRL::Details::InvokeHelper::Invoke", "event/Microsoft::WRL::Details::InvokeHelper::InvokeHelper"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Details::InvokeHelper structure", "Microsoft::WRL::Details::callback_ data member", "Microsoft::WRL::Details::Invoke method", "Microsoft::WRL::Details::InvokeHelper, constructor"]
 ms.assetid: 555ad2bc-4dd6-4e65-a2e2-1242c395f0e5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # InvokeHelper Structure
 

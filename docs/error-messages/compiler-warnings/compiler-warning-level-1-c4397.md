@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4397 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4397"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4397"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4397"]
 ms.assetid: 6346fdc2-dbbf-4fba-803a-32b0d0a707be
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4397
 

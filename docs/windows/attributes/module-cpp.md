@@ -1,16 +1,9 @@
 ---
-title: "module  (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "module  (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.module"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["module attributes"]
 ms.assetid: 02223b2a-62b5-4262-832f-564b1e11e58e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # module (C++)
 

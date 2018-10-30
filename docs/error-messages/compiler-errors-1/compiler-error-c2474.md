@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2474 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2474"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2474"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2474"]
 ms.assetid: 64e6c61e-6e77-480e-bcf0-b30a2fc482ac
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2474
 

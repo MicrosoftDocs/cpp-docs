@@ -1,16 +1,9 @@
 ---
-title: "COleIPFrameWnd Class | Microsoft Docs"
-ms.custom: ""
+title: "COleIPFrameWnd Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleIPFrameWnd", "AFXOLE/COleIPFrameWnd", "AFXOLE/COleIPFrameWnd::COleIPFrameWnd", "AFXOLE/COleIPFrameWnd::OnCreateControlBars", "AFXOLE/COleIPFrameWnd::RepositionFrame"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleIPFrameWnd [MFC], COleIPFrameWnd", "COleIPFrameWnd [MFC], OnCreateControlBars", "COleIPFrameWnd [MFC], RepositionFrame"]
 ms.assetid: 24abb2cb-826c-4dda-a287-d8a8900a5763
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleIPFrameWnd Class
 

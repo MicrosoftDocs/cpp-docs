@@ -1,16 +1,9 @@
 ---
-title: "&lt;cvt-wbuffer&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;cvt-wbuffer&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["stdext.cvt.<cvt/wbuffer>", "stdext::cvt::<cvt/wbuffer>", "<cvt/wbuffer>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cvt/wbuffer header"]
 ms.assetid: 6e6eb44c-1bc4-4d8c-a4bd-b39c753ce725
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;cvt/wbuffer&gt;
 

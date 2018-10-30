@@ -1,16 +1,9 @@
 ---
-title: "-HEAP | Microsoft Docs"
-ms.custom: ""
+title: "/HEAP"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/heap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["heap allocation, setting heap size", "HEAP editbin option", "-HEAP editbin option", "/HEAP editbin option"]
 ms.assetid: 6ce759b5-75b7-44ff-a5fd-3a83a0ba9a48
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /HEAP
 

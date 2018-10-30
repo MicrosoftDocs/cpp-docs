@@ -1,16 +1,10 @@
 ---
-title: "ML Nonfatal Error A2096 | Microsoft Docs"
-ms.custom: ""
+title: "ML Nonfatal Error A2096"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2096"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["A2096"]
 ms.assetid: bab0b5ee-b39f-4e44-a41a-3f949fab4297
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2096
 

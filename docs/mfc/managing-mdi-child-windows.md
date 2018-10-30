@@ -1,16 +1,9 @@
 ---
-title: "Managing MDI Child Windows | Microsoft Docs"
-ms.custom: ""
+title: "Managing MDI Child Windows"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["MDICLIENT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MDI [MFC], child windows", "child windows [MFC], and MDICLIENT window", "MDICLIENT window [MFC]", "windows [MFC], MDI", "frame windows [MFC], MDI child windows", "child windows [MFC]", "MDI [MFC], frame windows"]
 ms.assetid: 1828d96e-a561-48ae-a661-ba9701de6bee
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Managing MDI Child Windows
 

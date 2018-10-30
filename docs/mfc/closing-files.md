@@ -1,15 +1,8 @@
 ---
-title: "Closing Files | Microsoft Docs"
-ms.custom: ""
+title: "Closing Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, file operations", "files [MFC], closing"]
 ms.assetid: 8415a3a8-3c75-45b0-ac2a-d5385f49bdb3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Closing Files
 

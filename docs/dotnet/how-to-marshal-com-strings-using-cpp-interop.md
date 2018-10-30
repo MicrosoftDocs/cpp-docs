@@ -1,15 +1,9 @@
 ---
-title: "How to: Marshal COM Strings Using C++ Interop | Microsoft Docs"
+title: "How to: Marshal COM Strings Using C++ Interop"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["interop [C++], strings", "marshaling [C++], strings", "C++ Interop, strings", "data marshaling [C++], strings", "COM [C++], marshaling strings"]
 ms.assetid: 06590759-bf99-4e34-a3a9-4527ea592cc2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal COM Strings Using C++ Interop
 

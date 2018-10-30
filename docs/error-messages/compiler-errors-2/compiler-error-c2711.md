@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2711 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2711"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2711"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2711"]
 ms.assetid: 9df9f808-7419-4e63-abdd-e6538ff0871f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2711
 

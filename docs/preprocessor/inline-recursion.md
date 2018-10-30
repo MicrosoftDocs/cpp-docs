@@ -1,16 +1,9 @@
 ---
-title: "inline_recursion | Microsoft Docs"
-ms.custom: ""
+title: "inline_recursion"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["inline_recursion_CPP", "vc-pragma.inline_recursion"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, inline_recursion", "inline_recursion pragma"]
 ms.assetid: cfef5791-63b7-45ac-9574-623747b9b9c9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # inline_recursion
 Controls the inline expansion of direct or mutually recursive function calls.

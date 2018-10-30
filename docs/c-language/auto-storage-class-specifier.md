@@ -1,14 +1,7 @@
 ---
-title: "auto Storage-Class Specifier | Microsoft Docs"
-ms.custom: ""
+title: "auto Storage-Class Specifier"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 8e73f57e-aa92-4e41-91ea-5c8ad2a2b332
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # auto Storage-Class Specifier
 

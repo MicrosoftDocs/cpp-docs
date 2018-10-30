@@ -1,14 +1,7 @@
 ---
-title: "3.2.3 omp_set_lock and omp_set_nest_lock Functions | Microsoft Docs"
-ms.custom: ""
+title: "3.2.3 omp_set_lock and omp_set_nest_lock Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: b5323879-f72e-418e-953f-3979fdda17a2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 3.2.3 omp_set_lock and omp_set_nest_lock Functions
 

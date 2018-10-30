@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3918 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3918"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3918"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3918"]
 ms.assetid: a8b3a90a-3fe1-4244-a5ff-a31cdae97d98
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3918
 

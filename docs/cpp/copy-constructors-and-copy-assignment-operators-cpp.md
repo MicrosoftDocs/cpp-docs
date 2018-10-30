@@ -1,15 +1,8 @@
 ---
-title: "Copy Constructors and Copy Assignment Operators (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Copy Constructors and Copy Assignment Operators (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["= operator [C++], copying objects", "assignment statements [C++], copying objects", "assignment operators [C++], for copying objects", "objects [C++], copying", "initializing objects, by copying objects", "copying objects", "assigning values to copy objects"]
 ms.assetid: a94fe1f9-0289-4fb9-8633-77c654002c0d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Copy Constructors and Copy Assignment Operators (C++)
 

@@ -1,14 +1,7 @@
 ---
-title: "2.1 Directive Format | Microsoft Docs"
-ms.custom: ""
+title: "2.1 Directive Format"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 918b6445-d35e-4176-9565-b045be941b4d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.1 Directive Format
 

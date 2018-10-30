@@ -1,16 +1,9 @@
 ---
-title: "-SUBSYSTEM | Microsoft Docs"
-ms.custom: ""
+title: "/SUBSYSTEM"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/subsystem"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/SUBSYSTEM editbin option", "-SUBSYSTEM editbin option", "SUBSYSTEM editbin option"]
 ms.assetid: 515e4cdf-3cc4-4659-8764-1f2757b49215
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /SUBSYSTEM
 

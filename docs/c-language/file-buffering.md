@@ -1,15 +1,8 @@
 ---
-title: "File Buffering | Microsoft Docs"
-ms.custom: ""
+title: "File Buffering"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["buffering", "buffers [C++], file buffering", "files [C++], buffering"]
 ms.assetid: 6bca67d1-a98f-43ac-9c6e-6c0504357aba
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # File Buffering
 

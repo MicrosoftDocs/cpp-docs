@@ -1,19 +1,12 @@
 ---
-title: "casin, casinf, casinl | Microsoft Docs"
-ms.custom: ""
+title: "casin, casinf, casinl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["casin", "casinf", "casinl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["casin", "casinf", "casinl", "complex/casin", "complex/casinf", "complex/casinl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["casin function", "casinf function", "casinl function"]
 ms.assetid: b75d1455-7b1e-43b0-bd46-c530be190be9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # casin, casinf, casinl
 

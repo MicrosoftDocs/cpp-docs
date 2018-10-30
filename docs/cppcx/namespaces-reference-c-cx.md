@@ -1,15 +1,8 @@
 ---
-title: "Namespaces Reference (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Namespaces Reference (C++/CX)"
 ms.date: "01/22/2017"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["C++/CX namespaces"]
 ms.assetid: 5ebc0b49-1f22-48a7-90c4-a310bab9aba6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Namespaces Reference (C++/CX)
 

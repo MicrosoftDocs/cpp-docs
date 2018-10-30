@@ -1,14 +1,7 @@
 ---
-title: "Porting Guide: MFC Scribble | Microsoft Docs"
-ms.custom: ""
+title: "Porting Guide: MFC Scribble"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 8ddb517d-89ba-41a1-ab0d-4d2c6d9047e8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Porting Guide: MFC Scribble
 

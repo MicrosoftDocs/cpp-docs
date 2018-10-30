@@ -1,16 +1,9 @@
 ---
-title: "CMFCImageEditorPaletteBar Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCImageEditorPaletteBar Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCImageEditorPaletteBar", "AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar", "AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar::GetRowHeight", "AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCImageEditorPaletteBar [MFC], GetRowHeight", "CMFCImageEditorPaletteBar [MFC], IsButtonExtraSizeAvailable"]
 ms.assetid: 3fb7ba8e-f254-4d56-b913-9941b4ed8138
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCImageEditorPaletteBar Class
 

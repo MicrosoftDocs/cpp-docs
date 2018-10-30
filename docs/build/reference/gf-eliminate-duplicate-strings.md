@@ -1,16 +1,9 @@
 ---
-title: "-GF (Eliminate Duplicate Strings) | Microsoft Docs"
-ms.custom: ""
+title: "/GF (Eliminate Duplicate Strings)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.StringPooling", "VC.Project.VCCLWCECompilerTool.StringPooling", "/gf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["duplicate strings", "Eliminate Duplicate Strings compiler option [C++]", "pooling strings compiler option [C++]", "-GF compiler option [C++]", "/GF compiler option [C++]", "GF compiler option [C++]", "strings [C++], pooling"]
 ms.assetid: bb7b5d1c-8e1f-453b-9298-8fcebf37d16c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /GF (Eliminate Duplicate Strings)
 

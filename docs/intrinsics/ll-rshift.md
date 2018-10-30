@@ -1,16 +1,9 @@
 ---
-title: "__ll_rshift | Microsoft Docs"
-ms.custom: ""
+title: "__ll_rshift"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__ll_rshift_cpp", "__ll_rshift"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__ll_rshift intrinsic", "ll_rshift intrinsic"]
 ms.assetid: ef13b732-d122-44a0-add9-f5544a2c4ab2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __ll_rshift
 

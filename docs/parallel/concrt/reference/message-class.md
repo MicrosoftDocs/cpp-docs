@@ -1,16 +1,9 @@
 ---
-title: "message Class | Microsoft Docs"
-ms.custom: ""
+title: "message Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["message", "AGENTS/concurrency::message", "AGENTS/concurrency::message::message", "AGENTS/concurrency::message::add_ref", "AGENTS/concurrency::message::msg_id", "AGENTS/concurrency::message::remove_ref", "AGENTS/concurrency::message::payload"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["message class"]
 ms.assetid: 3e1f3505-6c0c-486c-8191-666d0880ec62
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # message Class
 

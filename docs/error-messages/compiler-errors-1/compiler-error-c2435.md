@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2435 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2435"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2435"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2435"]
 ms.assetid: be6aa8f8-579b-42ea-bdd8-2d01393646ad
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2435
 

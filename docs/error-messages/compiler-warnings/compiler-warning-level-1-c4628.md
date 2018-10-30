@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4628 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4628"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4628"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4628"]
 ms.assetid: 20fdc6f8-5f6a-40cc-aff8-c7ccf3d8ec26
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4628
 

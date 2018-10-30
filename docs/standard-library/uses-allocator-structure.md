@@ -1,15 +1,8 @@
 ---
-title: "uses_allocator Structure | Microsoft Docs"
-ms.custom: ""
+title: "uses_allocator Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["future/std::uses_allocator"]
-dev_langs: ["C++"]
 ms.assetid: c418f002-62e9-4806-b70c-41c663cae583
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # uses_allocator Structure
 

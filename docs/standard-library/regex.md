@@ -1,16 +1,9 @@
 ---
-title: "&lt;regex&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;regex&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<regex>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["regex header"]
 ms.assetid: 5dd4ef74-6063-4dbc-b692-1960bb736f0b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;regex&gt;
 

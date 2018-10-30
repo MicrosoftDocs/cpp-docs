@@ -1,15 +1,8 @@
 ---
-title: "Overview of C++ Statements | Microsoft Docs"
-ms.custom: ""
+title: "Overview of C++ Statements"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["statements [C++]"]
 ms.assetid: e56996b2-b846-4b99-ac94-ac72fffc5ec7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Overview of C++ Statements
 

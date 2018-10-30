@@ -1,14 +1,7 @@
 ---
-title: "4.1 OMP_SCHEDULE | Microsoft Docs"
-ms.custom: ""
+title: "4.1 OMP_SCHEDULE"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: d0dce411-2351-4ee9-a1cc-c0322a58b65c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 4.1 OMP_SCHEDULE
 

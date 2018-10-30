@@ -1,16 +1,10 @@
 ---
-title: "ML Nonfatal Error A2137 | Microsoft Docs"
-ms.custom: ""
+title: "ML Nonfatal Error A2137"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2137"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["A2137"]
 ms.assetid: 913172e3-866e-49c3-9502-e49d1f0df4b0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2137
 

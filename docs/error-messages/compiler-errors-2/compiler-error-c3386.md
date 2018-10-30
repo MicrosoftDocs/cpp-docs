@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3386 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3386"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3386"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3386"]
 ms.assetid: 93fa8c33-0f10-402b-8eec-b0a217a1f8dc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3386
 

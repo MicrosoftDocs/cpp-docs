@@ -1,16 +1,9 @@
 ---
-title: "SEGMENT | Microsoft Docs"
-ms.custom: ""
+title: "SEGMENT"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["SEGMENT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SEGMENT directive"]
 ms.assetid: e6f68367-6714-4f06-a79c-edfa88014430
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # SEGMENT
 

@@ -1,16 +1,9 @@
 ---
-title: "Dialog Editor (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Dialog Editor (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.dialog.dialog", "vc.editors.dialog.F1"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["resource editors [C++], Dialog editor", "editors, dialog boxes", "Dialog editor", "dialog boxes [C++], editing"]
 ms.assetid: d94884ef-2cca-49d8-9b58-775f34848134
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Dialog Editor (C++)
 

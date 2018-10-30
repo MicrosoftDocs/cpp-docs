@@ -1,16 +1,9 @@
 ---
-title: "IDataObjectImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IDataObjectImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IDataObjectImpl", "ATLCTL/ATL::IDataObjectImpl", "ATLCTL/ATL::IDataObjectImpl::DAdvise", "ATLCTL/ATL::IDataObjectImpl::DUnadvise", "ATLCTL/ATL::IDataObjectImpl::EnumDAdvise", "ATLCTL/ATL::IDataObjectImpl::EnumFormatEtc", "ATLCTL/ATL::IDataObjectImpl::FireDataChange", "ATLCTL/ATL::IDataObjectImpl::GetCanonicalFormatEtc", "ATLCTL/ATL::IDataObjectImpl::GetData", "ATLCTL/ATL::IDataObjectImpl::GetDataHere", "ATLCTL/ATL::IDataObjectImpl::QueryGetData", "ATLCTL/ATL::IDataObjectImpl::SetData"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["data transfer [C++]", "data transfer [C++], Uniform Data Transfer", "IDataObjectImpl class", "IDataObject, ATL implementation"]
 ms.assetid: b680f0f7-7795-40a1-a0f6-f48768201c89
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IDataObjectImpl Class
 

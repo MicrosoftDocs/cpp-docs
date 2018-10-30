@@ -1,15 +1,9 @@
 ---
-title: "Intel&#39;s MMX Instruction Set | Microsoft Docs"
-ms.custom: ""
+title: "Intel&#39;s MMX Instruction Set"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MMX instruction set"]
 ms.assetid: 705deb2d-c3fd-4696-9e22-8bcf25866daf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Intel&#39;s MMX Instruction Set
 

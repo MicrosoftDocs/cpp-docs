@@ -1,15 +1,8 @@
 ---
-title: "Supporting Notifications | Microsoft Docs"
-ms.custom: ""
+title: "Supporting Notifications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["notifications [C++], OLE DB consumers", "events [C++], notifications in OLE DB", "OLE DB consumers, notifications", "rowsets, event notifications", "OLE DB provider templates, notifications", "OLE DB providers, notifications"]
 ms.assetid: 76e875fd-2bfd-4e4e-9f43-dbe5a3fa7382
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Supporting Notifications
 

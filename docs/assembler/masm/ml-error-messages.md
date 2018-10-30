@@ -1,16 +1,10 @@
 ---
-title: "ML Error Messages | Microsoft Docs"
-ms.custom: ""
+title: "ML Error Messages"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["vc.errors.ml"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), ML error messages"]
 ms.assetid: e7e164b3-6d65-4b5b-8925-bfbebc043523
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Error Messages
 

@@ -1,16 +1,9 @@
 ---
-title: "CHtmlEditCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CHtmlEditCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CHtmlEditCtrl", "AFXHTML/CHtmlEditCtrl", "AFXHTML/CHtmlEditCtrl::CHtmlEditCtrl", "AFXHTML/CHtmlEditCtrl::Create", "AFXHTML/CHtmlEditCtrl::GetDHtmlDocument", "AFXHTML/CHtmlEditCtrl::GetStartDocument"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CHtmlEditCtrl [MFC], CHtmlEditCtrl", "CHtmlEditCtrl [MFC], Create", "CHtmlEditCtrl [MFC], GetDHtmlDocument", "CHtmlEditCtrl [MFC], GetStartDocument"]
 ms.assetid: 0fc4a238-b05f-4874-9edc-6a6701f064d9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CHtmlEditCtrl Class
 

@@ -1,16 +1,9 @@
 ---
-title: "Support for Using wmain | Microsoft Docs"
-ms.custom: ""
+title: "Support for Using wmain"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["wWinMain"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wide characters [C++], wmain function", "wWinMain function", "wmain function"]
 ms.assetid: 41213c41-668c-40a4-8a1e-77d9eded720d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Support for Using wmain
 

@@ -1,16 +1,9 @@
 ---
-title: "PUSHCONTEXT | Microsoft Docs"
-ms.custom: ""
+title: "PUSHCONTEXT"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["PUSHCONTEXT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PUSHCONTEXT directive"]
 ms.assetid: 18e528ee-df6c-4ce6-8823-b35b40f757fd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # PUSHCONTEXT
 

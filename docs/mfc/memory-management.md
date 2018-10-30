@@ -1,15 +1,8 @@
 ---
-title: "Memory Management | Microsoft Docs"
-ms.custom: ""
+title: "Memory Management"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["memory [MFC]", "MFC, memory management", "memory allocation [MFC]", "memory [MFC], managing", "memory allocation [MFC], MFC"]
 ms.assetid: 934ac81b-d630-4232-88e5-ea74f7187987
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Memory Management
 

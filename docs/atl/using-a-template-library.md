@@ -1,15 +1,8 @@
 ---
-title: "Using a Template Library (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Using a Template Library (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["template libraries"]
 ms.assetid: 5e80ec6e-a61c-41ce-b34b-9a6252c46265
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using a Template Library
 

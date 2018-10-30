@@ -1,16 +1,9 @@
 ---
-title: "-MACHINE (Specify Target Platform) | Microsoft Docs"
-ms.custom: ""
+title: "/MACHINE (Specify Target Platform)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.TargetMachine", "/machine"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["mapfiles, creating linker", "target platform", "-MACHINE linker option", "/MACHINE linker option", "MACHINE linker option"]
 ms.assetid: 8d41bf4b-7e53-4ab9-9085-d852b08d31c2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /MACHINE (Specify Target Platform)
 

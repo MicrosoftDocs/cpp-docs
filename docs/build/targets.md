@@ -1,15 +1,8 @@
 ---
-title: "Targets | Microsoft Docs"
-ms.custom: ""
+title: "Targets"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["targets, specifying in NMAKE"]
 ms.assetid: 826ee849-4278-4c6e-97c3-79a2b5fe6463
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Targets
 

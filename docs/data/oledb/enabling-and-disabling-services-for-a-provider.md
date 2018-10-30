@@ -1,15 +1,8 @@
 ---
-title: "Enabling and Disabling Services for a Provider | Microsoft Docs"
-ms.custom: ""
+title: "Enabling and Disabling Services for a Provider"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB services [OLE DB], enabling and disabling", "service providers [OLE DB]"]
 ms.assetid: 3deac1bb-f660-407a-92ef-95e139e280c0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Enabling and Disabling Services for a Provider
 

@@ -1,16 +1,9 @@
 ---
-title: "CAnimationRect Class | Microsoft Docs"
-ms.custom: ""
+title: "CAnimationRect Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CAnimationRect", "AFXANIMATIONCONTROLLER/CAnimationRect", "AFXANIMATIONCONTROLLER/CAnimationRect::CAnimationRect", "AFXANIMATIONCONTROLLER/CAnimationRect::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationRect::GetBottom", "AFXANIMATIONCONTROLLER/CAnimationRect::GetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationRect::GetLeft", "AFXANIMATIONCONTROLLER/CAnimationRect::GetRight", "AFXANIMATIONCONTROLLER/CAnimationRect::GetTop", "AFXANIMATIONCONTROLLER/CAnimationRect::GetValue", "AFXANIMATIONCONTROLLER/CAnimationRect::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationRect::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationRect::m_bFixedSize", "AFXANIMATIONCONTROLLER/CAnimationRect::m_bottomValue", "AFXANIMATIONCONTROLLER/CAnimationRect::m_leftValue", "AFXANIMATIONCONTROLLER/CAnimationRect::m_rightValue", "AFXANIMATIONCONTROLLER/CAnimationRect::m_szInitial", "AFXANIMATIONCONTROLLER/CAnimationRect::m_topValue"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationRect [MFC], CAnimationRect", "CAnimationRect [MFC], AddTransition", "CAnimationRect [MFC], GetBottom", "CAnimationRect [MFC], GetDefaultValue", "CAnimationRect [MFC], GetLeft", "CAnimationRect [MFC], GetRight", "CAnimationRect [MFC], GetTop", "CAnimationRect [MFC], GetValue", "CAnimationRect [MFC], SetDefaultValue", "CAnimationRect [MFC], GetAnimationVariableList", "CAnimationRect [MFC], m_bFixedSize", "CAnimationRect [MFC], m_bottomValue", "CAnimationRect [MFC], m_leftValue", "CAnimationRect [MFC], m_rightValue", "CAnimationRect [MFC], m_szInitial", "CAnimationRect [MFC], m_topValue"]
 ms.assetid: 0294156d-241e-4a57-92b2-31234fe557d6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAnimationRect Class
 

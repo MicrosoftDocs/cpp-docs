@@ -1,15 +1,8 @@
 ---
-title: "Preprocessor Operators | Microsoft Docs"
-ms.custom: ""
+title: "Preprocessor Operators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor operators", "operators [C++], preprocessor"]
 ms.assetid: 884126d1-0ce2-48b6-9e06-8a2d7c4a9656
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Preprocessor Operators
 Four preprocessor-specific operators are used in the context of the `#define` directive (see the following list for a summary of each). The stringizing, charizing, and token-pasting operators are discussed in the next three sections. For information on the `defined` operator, see [The #if, #elif, #else, and #endif Directives](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md).

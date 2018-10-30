@@ -1,16 +1,9 @@
 ---
-title: "FILETIME Structure | Microsoft Docs"
-ms.custom: ""
+title: "FILETIME Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["FILETIME"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["FILETIME structure [MFC]"]
 ms.assetid: e09557e2-b6d7-4dd5-a5b9-6328bca88595
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # FILETIME Structure
 

@@ -1,16 +1,9 @@
 ---
-title: "ISessionPropertiesImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "ISessionPropertiesImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ISessionPropertiesImpl", "ISessionPropertiesImpl::GetProperties", "ISessionPropertiesImpl.GetProperties", "GetProperties", "ISessionPropertiesImpl.SetProperties", "SetProperties", "ISessionPropertiesImpl::SetProperties"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ISessionPropertiesImpl class", "GetProperties method", "SetProperties method"]
 ms.assetid: ca0ba254-c7dc-4c52-abec-cf895a0c6a63
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # ISessionPropertiesImpl Class
 

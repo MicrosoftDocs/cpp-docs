@@ -1,16 +1,9 @@
 ---
-title: "Security Global Functions | Microsoft Docs"
-ms.custom: ""
+title: "Security Global Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlsecurity/ATL::AtlGetDacl", "atlsecurity/ATL::AtlSetDacl", "atlsecurity/ATL::AtlGetGroupSid", "atlsecurity/ATL::AtlSetGroupSid", "atlsecurity/ATL::AtlGetOwnerSid", "atlsecurity/ATL::AtlSetOwnerSid", "atlsecurity/ATL::AtlGetSacl", "atlsecurity/ATL::AtlSetSacl", "atlsecurity/ATL::AtlGetSecurityDescriptor"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SIDs [C++], modifying SID objects", "ACL object global functions", "security IDs [C++]"]
 ms.assetid: 6a584bfe-16b7-47f4-8439-9c789c41567a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Security Global Functions
 

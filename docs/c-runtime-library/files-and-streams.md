@@ -1,15 +1,8 @@
 ---
-title: "Files and Streams | Microsoft Docs"
-ms.custom: ""
+title: "Files and Streams"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["files [C++]", "streams"]
 ms.assetid: f61e712b-eac9-4c28-bb18-97c3786ef387
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Files and Streams
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2360 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2360"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2360"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2360"]
 ms.assetid: 51bfd2ee-8108-4777-aa93-148b9cebfa83
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2360
 

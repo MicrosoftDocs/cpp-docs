@@ -1,16 +1,9 @@
 ---
-title: "operator NE | Microsoft Docs"
-ms.custom: ""
+title: "operator NE"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["NE", "operator NE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["NE operator", "operator NE"]
 ms.assetid: 0364a3aa-e2f1-499d-8cc7-1fbec318715c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator NE
 

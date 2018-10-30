@@ -1,15 +1,8 @@
 ---
-title: "Declarators and Variable Declarations | Microsoft Docs"
-ms.custom: ""
+title: "Declarators and Variable Declarations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["declaring variables, declarators", "declarators, definition", "declaring variables, declaration statements"]
 ms.assetid: 5fd67a6a-3a6a-4ec9-b257-3f7390a48d40
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Declarators and Variable Declarations
 

@@ -1,15 +1,8 @@
 ---
-title: "Introduction to ATL Window Classes | Microsoft Docs"
-ms.custom: ""
+title: "Introduction to ATL Window Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["window classes"]
 ms.assetid: 503efc2c-a269-495d-97cf-3fb300d52f3d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Introduction to ATL Window Classes
 

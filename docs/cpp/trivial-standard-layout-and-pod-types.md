@@ -1,12 +1,7 @@
 ---
-title: "Trivial, standard-layout, POD, and literal types | Microsoft Docs"
-ms.custom: ""
+title: "Trivial, standard-layout, POD, and literal types"
 ms.date: "04/05/2018"
-ms.topic: "language-reference"
 ms.assetid: 2b23a7be-9bad-49fc-8298-31a9a7c556b0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Trivial, standard-layout, POD, and literal types
 

@@ -1,19 +1,12 @@
 ---
-title: "_spawnv, _wspawnv | Microsoft Docs"
-ms.custom: ""
+title: "_spawnv, _wspawnv"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wspawnv", "_spawnv"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["wspawnv", "_spawnv", "_wspawnv"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wspawnv function", "processes, creating", "_spawnv function", "processes, executing new", "process creation", "_wspawnv function", "spawnv function"]
 ms.assetid: 72360ef4-dfa9-44c1-88c1-b3ecb660aa7d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _spawnv, _wspawnv
 

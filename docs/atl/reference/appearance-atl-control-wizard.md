@@ -1,16 +1,9 @@
 ---
-title: "Appearance, ATL Control Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Appearance, ATL Control Wizard"
 ms.date: "08/31/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.control.misc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL Control Wizard, appearance"]
 ms.assetid: cc16d7ff-74d7-4c15-9ebd-4b19201ff457
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Appearance, ATL Control Wizard
 

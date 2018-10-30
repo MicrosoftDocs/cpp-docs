@@ -1,14 +1,8 @@
 ---
-title: "How to: Instantiate WRL Components Directly | Microsoft Docs"
-ms.custom: ""
+title: "How to: Instantiate WRL Components Directly"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 1a9fa011-0cee-4abf-bf83-49adf53ff906
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Instantiate WRL Components Directly
 

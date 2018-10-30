@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3075 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3075"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3075"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3075"]
 ms.assetid: f431daa9-e0fa-48f0-a5c3-f99be96b55e3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3075
 

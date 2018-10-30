@@ -1,16 +1,9 @@
 ---
-title: "CAsyncMonikerFile Class | Microsoft Docs"
-ms.custom: ""
+title: "CAsyncMonikerFile Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CAsyncMonikerFile", "AFXOLE/CAsyncMonikerFile", "AFXOLE/CAsyncMonikerFile::CAsyncMonikerFile", "AFXOLE/CAsyncMonikerFile::Close", "AFXOLE/CAsyncMonikerFile::GetBinding", "AFXOLE/CAsyncMonikerFile::GetFormatEtc", "AFXOLE/CAsyncMonikerFile::Open", "AFXOLE/CAsyncMonikerFile::CreateBindStatusCallback", "AFXOLE/CAsyncMonikerFile::GetBindInfo", "AFXOLE/CAsyncMonikerFile::GetPriority", "AFXOLE/CAsyncMonikerFile::OnDataAvailable", "AFXOLE/CAsyncMonikerFile::OnLowResource", "AFXOLE/CAsyncMonikerFile::OnProgress", "AFXOLE/CAsyncMonikerFile::OnStartBinding", "AFXOLE/CAsyncMonikerFile::OnStopBinding"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAsyncMonikerFile [MFC], CAsyncMonikerFile", "CAsyncMonikerFile [MFC], Close", "CAsyncMonikerFile [MFC], GetBinding", "CAsyncMonikerFile [MFC], GetFormatEtc", "CAsyncMonikerFile [MFC], Open", "CAsyncMonikerFile [MFC], CreateBindStatusCallback", "CAsyncMonikerFile [MFC], GetBindInfo", "CAsyncMonikerFile [MFC], GetPriority", "CAsyncMonikerFile [MFC], OnDataAvailable", "CAsyncMonikerFile [MFC], OnLowResource", "CAsyncMonikerFile [MFC], OnProgress", "CAsyncMonikerFile [MFC], OnStartBinding", "CAsyncMonikerFile [MFC], OnStopBinding"]
 ms.assetid: 17378b66-a49a-4b67-88e3-7756ad26a2fc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAsyncMonikerFile Class
 

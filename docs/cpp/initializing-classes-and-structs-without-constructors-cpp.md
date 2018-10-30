@@ -1,14 +1,7 @@
 ---
-title: "Initializing classes and structs without constructors (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Initializing classes and structs without constructors (C++)"
 ms.date: "10/17/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 3e55c3d6-1c6b-4084-b9e5-221b151402f4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Initializing classes and structs without constructors (C++)
 

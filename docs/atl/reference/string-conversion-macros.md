@@ -1,15 +1,8 @@
 ---
-title: "String Conversion Macros | Microsoft Docs"
-ms.custom: ""
+title: "String Conversion Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlconv/ATL::DEVMODEA2W", "atlconv/ATL::TEXTMETRICA2W", "atlconv/ATL::DEVMODEOLE2T", "atlconv/ATL::TEXTMETRICOLE2T", "atlconv/ATL::DEVMODET2OLE", "atlconv/ATL::TEXTMETRICT2OLE", "atlconv/ATL::DEVMODEW2A", "atlconv/ATL::TEXTMETRICW2A"]
-dev_langs: ["C++"]
 ms.assetid: 2ff7c0b6-2bde-45fe-897f-6128e18e0c27
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # String Conversion Macros
 

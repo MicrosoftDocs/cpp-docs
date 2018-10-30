@@ -1,16 +1,9 @@
 ---
-title: "CDataConnection Class | Microsoft Docs"
-ms.custom: ""
+title: "CDataConnection Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-f1_keywords: ["ATL::CDataConnection", "ATL.CDataConnection", "CDataConnection", "CDataConnection.CDataConnection", "ATL.CDataConnection.CDataConnection", "CDataConnection::CDataConnection", "ATL::CDataConnection::CDataConnection", "CDataConnection.Copy", "ATL.CDataConnection.Copy", "ATL::CDataConnection::Copy", "CDataConnection::Copy", "CDataConnection.Open", "ATL.CDataConnection.Open", "CDataConnection::Open", "ATL::CDataConnection::Open", "CDataConnection.OpenNewSession", "ATL.CDataConnection.OpenNewSession", "ATL::CDataConnection::OpenNewSession", "OpenNewSession", "CDataConnection::OpenNewSession", "CDataConnection::operatorBOOL", "ATL::CDataConnection::operatorBOOL", "CDataConnection.operatorBOOL", "ATL.CDataConnection.operatorBOOL", "CDataConnection::operatorBOOL", "ATL::CDataConnection::operatorBOOL","CDataConnection.operatorBOOL", "ATL.CDataConnection.operatorBOOL", "CDataSource&", "CDataConnection.operatorCDataSource&", "operatorCDataSource&", "CDataConnection::operatorCDataSource&", "CDataSource*", "CDataConnection::operatorCDataSource*", "CDataConnection.operatorCDataSource*", "operatorCDataSource*", "CSession&", "CDataConnection::operatorCSession&", "CDataConnection.operatorCSession&", "operatorCSession&", "CDataConnection.operatorCSession*", "CDataConnection::operatorCSession*", "operatorCSession*", "CSession*"]
-dev_langs: ["C++"]
+f1_keywords: ["ATL::CDataConnection", "ATL.CDataConnection", "CDataConnection", "CDataConnection.CDataConnection", "ATL.CDataConnection.CDataConnection", "CDataConnection::CDataConnection", "ATL::CDataConnection::CDataConnection", "CDataConnection.Copy", "ATL.CDataConnection.Copy", "ATL::CDataConnection::Copy", "CDataConnection::Copy", "CDataConnection.Open", "ATL.CDataConnection.Open", "CDataConnection::Open", "ATL::CDataConnection::Open", "CDataConnection.OpenNewSession", "ATL.CDataConnection.OpenNewSession", "ATL::CDataConnection::OpenNewSession", "OpenNewSession", "CDataConnection::OpenNewSession", "CDataConnection::operatorBOOL", "ATL::CDataConnection::operatorBOOL", "CDataConnection.operatorBOOL", "ATL.CDataConnection.operatorBOOL", "CDataConnection::operatorBOOL", "ATL::CDataConnection::operatorBOOL", "CDataConnection.operatorBOOL", "ATL.CDataConnection.operatorBOOL", "CDataSource&", "CDataConnection.operatorCDataSource&", "operatorCDataSource&", "CDataConnection::operatorCDataSource&", "CDataSource*", "CDataConnection::operatorCDataSource*", "CDataConnection.operatorCDataSource*", "operatorCDataSource*", "CSession&", "CDataConnection::operatorCSession&", "CDataConnection.operatorCSession&", "operatorCSession&", "CDataConnection.operatorCSession*", "CDataConnection::operatorCSession*", "operatorCSession*", "CSession*"]
 helpviewer_keywords: ["CDataConnection class", "CDataConnection class, constructor", "Copy method", "Open method", "OpenNewSession method", "BOOL operator", "operator bool", "BOOL operator", "operator bool", "CDataSource& operator", "operator & (CDataSource)", "CDataSource* operator", "operator * (CDataSource)", "operator CSession&", "CSession& operator", "operator CSession*", "CSession* operator"]
 ms.assetid: 77432d85-4e20-49ec-a0b0-142137828471
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataConnection Class
 

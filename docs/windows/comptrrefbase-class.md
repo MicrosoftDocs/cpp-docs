@@ -1,16 +1,10 @@
 ---
-title: "ComPtrRefBase Class | Microsoft Docs"
-ms.custom: ""
+title: "ComPtrRefBase Class"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::Details::ComPtrRefBase", "client/Microsoft::WRL::Details::ComPtrRefBase::operator IInspectable**", "client/Microsoft::WRL::Details::ComPtrRefBase::operator IUnknown**", "client/Microsoft::WRL::Details::ComPtrRefBase::ptr_"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Details::ComPtrRefBase class", "Microsoft::WRL::Details::ComPtrRefBase::operator IInspectable** operator", "Microsoft::WRL::Details::ComPtrRefBase::operator IUnknown** operator", "Microsoft::WRL::Details::ComPtrRefBase::ptr_ data member"]
 ms.assetid: 6d344c1a-cc13-4a3f-8a0d-f167ccb9348f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtrRefBase Class
 

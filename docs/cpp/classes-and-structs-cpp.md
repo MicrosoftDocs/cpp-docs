@@ -1,15 +1,8 @@
 ---
-title: "Classes and Structs (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Classes and Structs (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, classes", "structures, C++ classes", "user-defined types", "classes [C++]", "user-defined types, C++ classes"]
 ms.assetid: 516dd496-13fb-4f17-845a-e9ca45437873
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Classes and Structs (C++)
 

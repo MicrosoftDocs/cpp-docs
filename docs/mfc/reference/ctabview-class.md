@@ -1,16 +1,9 @@
 ---
-title: "CTabView Class | Microsoft Docs"
-ms.custom: ""
+title: "CTabView Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CTabView", "AFXTABVIEW/CTabView", "AFXTABVIEW/CTabView::AddView", "AFXTABVIEW/CTabView::FindTab", "AFXTABVIEW/CTabView::GetActiveView", "AFXTABVIEW/CTabView::GetTabControl", "AFXTABVIEW/CTabView::RemoveView", "AFXTABVIEW/CTabView::SetActiveView", "AFXTABVIEW/CTabView::IsScrollBar", "AFXTABVIEW/CTabView::OnActivateView"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTabView [MFC], AddView", "CTabView [MFC], FindTab", "CTabView [MFC], GetActiveView", "CTabView [MFC], GetTabControl", "CTabView [MFC], RemoveView", "CTabView [MFC], SetActiveView", "CTabView [MFC], IsScrollBar", "CTabView [MFC], OnActivateView"]
 ms.assetid: 8e6ecd9d-d28d-432b-8ec8-0446f0204d52
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CTabView Class
 

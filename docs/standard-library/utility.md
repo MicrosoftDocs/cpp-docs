@@ -1,16 +1,9 @@
 ---
-title: "&lt;utility&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;utility&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<utility>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["utility header"]
 ms.assetid: c4491103-5da9-47a1-9c2b-ed8bc64b0599
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;utility&gt;
 

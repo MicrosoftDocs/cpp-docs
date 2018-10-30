@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2917 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2917"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2917"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2917"]
 ms.assetid: ec9da9ee-0f37-47b3-87dd-19ef5a14dc4c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2917
 

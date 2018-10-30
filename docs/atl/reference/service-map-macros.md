@@ -1,15 +1,8 @@
 ---
-title: "Service Map Macros | Microsoft Docs"
-ms.custom: ""
+title: "Service Map Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlcom/ATL::BEGIN_SERVICE_MAP", "atlcom/ATL::END_SERVICE_MAP", "atlcom/ATL::SERVICE_ENTRY", "atlcom/ATL::SERVICE_ENTRY_CHAIN"]
-dev_langs: ["C++"]
 ms.assetid: ca02a125-454a-4cf6-aac2-1c5585025ed4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Service Map Macros
 

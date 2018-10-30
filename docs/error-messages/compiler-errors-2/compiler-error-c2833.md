@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2833 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2833"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2833"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2833"]
 ms.assetid: b9418ce1-e2ee-4599-8959-6fde89c27569
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2833
 

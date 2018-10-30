@@ -1,16 +1,9 @@
 ---
-title: "_InterlockedOr Intrinsic Functions | Microsoft Docs"
-ms.custom: ""
+title: "_InterlockedOr Intrinsic Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_InterlockedOr8_nf", "_InterlockedOr_HLEAcquire", "_InterlockedOr16_nf", "_InterlockedOr64", "_InterlockedOr8_np", "_InterlockedOr64_cpp", "_InterlockedOr8_acq", "_InterlockedOr_nf", "_InterlockedOr64_acq", "_InterlockedOr_np", "_InterlockedOr8", "_InterlockedOr", "_InterlockedOr64_np", "_InterlockedOr_acq", "_InterlockedOr64_HLERelease", "_InterlockedOr16_np", "_InterlockedOr_cpp", "_InterlockedOr8_rel", "_InterlockedOr64_rel", "_InterlockedOr16_acq", "_InterlockedOr_rel", "_InterlockedOr16_rel", "_InterlockedOr_HLERelease", "_InterlockedOr64_HLEAcquire", "_InterlockedOr16", "_InterlockedOr64_nf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_InterlockedOr_acq intrinsic", "InterlockedOr64 intrinsic", "_InterlockedOr_nf intrinsic", "_InterlockedOr intrinsic", "_InterlockedOr64_HLERelease intrinsic", "_InterlockedOr8_rel intrinsic", "_InterlockedOr8_np intrinsic", "_InterlockedOr64_nf intrinsic", "_InterlockedOr_HLERelease intrinsic", "_InterlockedOr16_np intrinsic", "InterlockedOr intrinsic", "_InterlockedOr8_nf intrinsic", "_InterlockedOr16_nf intrinsic", "_InterlockedOr8_acq intrinsic", "_InterlockedOr64 intrinsic", "_InterlockedOr16 intrinsic", "_InterlockedOr64_acq intrinsic", "_InterlockedOr64_HLEAcquire intrinsic", "_InterlockedOr_np intrinsic", "_InterlockedOr64_rel intrinsic", "_InterlockedOr64_np intrinsic", "_InterlockedOr_rel intrinsic", "_InterlockedOr8 intrinsic", "_InterlockedOr16_acq intrinsic", "_InterlockedOr16_rel intrinsic", "_InterlockedOr_HLEAcquire intrinsic"]
 ms.assetid: 5f265240-7af8-44b7-b952-19f3a9c56186
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _InterlockedOr Intrinsic Functions
 

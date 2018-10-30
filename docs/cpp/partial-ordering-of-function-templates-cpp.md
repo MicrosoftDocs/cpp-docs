@@ -1,15 +1,8 @@
 ---
-title: "Partial Ordering of Function Templates (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Partial Ordering of Function Templates (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["partial ordering of function templates"]
 ms.assetid: 0c17347d-0e80-47ad-b5ac-046462d9dc73
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 
 # Partial Ordering of Function Templates (C++)

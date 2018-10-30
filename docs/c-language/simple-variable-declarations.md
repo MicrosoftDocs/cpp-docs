@@ -1,15 +1,8 @@
 ---
-title: "Simple Variable Declarations | Microsoft Docs"
-ms.custom: ""
+title: "Simple Variable Declarations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["untyped variables", "declaring variables, simple"]
 ms.assetid: b07adf9d-9e79-4b64-8a34-e6fe1c7eccec
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Simple Variable Declarations
 

@@ -1,16 +1,9 @@
 ---
-title: "CPoint Class | Microsoft Docs"
-ms.custom: ""
+title: "CPoint Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CPoint", "ATLTYPES/ATL::CPoint", "ATLTYPES/ATL::CPoint::CPoint", "ATLTYPES/ATL::CPoint::Offset"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LPPOINT structure", "POINT structure", "CPoint class"]
 ms.assetid: a6d4db93-35cc-444d-9221-c3e160f6edaa
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPoint Class
 

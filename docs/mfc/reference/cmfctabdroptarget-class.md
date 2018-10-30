@@ -1,16 +1,9 @@
 ---
-title: "CMFCTabDropTarget Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCTabDropTarget Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCTabDropTarget", "AFXBASETABCTRL/CMFCTabDropTarget", "AFXBASETABCTRL/CMFCTabDropTarget::OnDragEnter", "AFXBASETABCTRL/CMFCTabDropTarget::OnDragLeave", "AFXBASETABCTRL/CMFCTabDropTarget::OnDragOver", "AFXBASETABCTRL/CMFCTabDropTarget::OnDropEx", "AFXBASETABCTRL/CMFCTabDropTarget::Register"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCTabDropTarget [MFC], OnDragEnter", "CMFCTabDropTarget [MFC], OnDragLeave", "CMFCTabDropTarget [MFC], OnDragOver", "CMFCTabDropTarget [MFC], OnDropEx", "CMFCTabDropTarget [MFC], Register"]
 ms.assetid: 9777b7b6-10da-4c4b-b1d1-7ea795b0f1cb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCTabDropTarget Class
 

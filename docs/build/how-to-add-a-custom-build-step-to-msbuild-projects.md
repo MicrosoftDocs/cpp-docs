@@ -1,16 +1,9 @@
 ---
-title: "How to: Add a Custom Build Step to MSBuild Projects | Microsoft Docs"
-ms.custom: ""
+title: "How to: Add a Custom Build Step to MSBuild Projects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
 f1_keywords: ["msbuild.cpp.howto.addcustombuildstep"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["msbuild (c++), howto: add a custom build step"]
 ms.assetid: a20a0c47-4df4-4754-a1f0-a94a99958916
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # How to: Add a Custom Build Step to MSBuild Projects
 

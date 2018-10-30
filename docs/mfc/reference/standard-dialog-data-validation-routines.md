@@ -1,15 +1,8 @@
 ---
-title: "Standard Dialog Data Validation Routines | Microsoft Docs"
-ms.custom: ""
+title: "Standard Dialog Data Validation Routines"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["standard dialog, data validation routines"]
 ms.assetid: 44dbc222-a897-4949-925e-7660e8964ccd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Standard Dialog Data Validation Routines
 

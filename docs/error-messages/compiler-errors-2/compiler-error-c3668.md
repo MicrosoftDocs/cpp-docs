@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3668 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3668"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3668"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3668"]
 ms.assetid: 53a96698-bde4-4447-95b5-b5108291f60c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3668
 

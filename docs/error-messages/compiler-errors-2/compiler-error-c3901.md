@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3901 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3901"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3901"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3901"]
 ms.assetid: 19af4141-39ad-4c16-a68f-3ae76f648186
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3901
 

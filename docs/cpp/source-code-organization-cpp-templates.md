@@ -1,15 +1,7 @@
 ---
-title: "Source code organization (C++ Templates) | Microsoft Docs"
-ms.custom: ""
+title: "Source code organization (C++ Templates)"
 ms.date: "11/04/2016"
-ms.technology:
-  - "cpp-language"
-ms.topic: "language-reference"
-dev_langs:
-  - "C++"
 ms.assetid: 50569c5d-0219-4966-9bcf-a8689074ad1d
-author: "mikeblome"
-ms.author: "mblome"
 ---
 # Source code organization (C++ Templates)
 

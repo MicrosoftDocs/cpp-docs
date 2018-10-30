@@ -1,15 +1,8 @@
 ---
-title: "Null Statement | Microsoft Docs"
-ms.custom: ""
+title: "Null Statement"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["expressions [C++], null", "null statement", "null values, expressions"]
 ms.assetid: 606f5953-55f0-40c8-ae03-3ee3a819b851
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Null Statement
 

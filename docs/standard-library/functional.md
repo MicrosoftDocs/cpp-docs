@@ -1,16 +1,9 @@
 ---
-title: "&lt;functional&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;functional&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<functional>", "functional/std::<functional>", "std::<functional>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["functors", "functional header"]
 ms.assetid: 7dd463e8-a29f-49bc-aedd-8fa53b54bfbc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;functional&gt;
 

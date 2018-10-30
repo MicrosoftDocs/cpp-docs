@@ -1,14 +1,9 @@
 ---
-title: "How to: Create and Use unique_ptr Instances | Microsoft Docs"
+title: "How to: Create and Use unique_ptr Instances"
 ms.custom: "how-to"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 9a373030-e587-452f-b9a5-c5f9d58b7673
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Create and Use unique_ptr Instances
 

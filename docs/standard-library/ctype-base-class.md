@@ -1,16 +1,9 @@
 ---
-title: "ctype_base Class | Microsoft Docs"
-ms.custom: ""
+title: "ctype_base Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["locale/std::ctype_base"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ctype_base class"]
 ms.assetid: ccffe891-d7ab-4d22-baf8-8eb6d438a96d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ctype_base Class
 

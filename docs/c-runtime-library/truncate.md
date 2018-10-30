@@ -1,16 +1,9 @@
 ---
-title: "_TRUNCATE | Microsoft Docs"
-ms.custom: ""
+title: "_TRUNCATE"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["_TRUNCATE", "TRUNCATE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TRUNCATE constant", "_TRUNCATE constant"]
 ms.assetid: ad093dbf-1aa5-4bd2-9268-efc68afd8434
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _TRUNCATE
 

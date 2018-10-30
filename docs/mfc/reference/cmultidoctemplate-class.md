@@ -1,16 +1,9 @@
 ---
-title: "CMultiDocTemplate Class | Microsoft Docs"
-ms.custom: ""
+title: "CMultiDocTemplate Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMultiDocTemplate", "AFXWIN/CMultiDocTemplate", "AFXWIN/CMultiDocTemplate::CMultiDocTemplate"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMultiDocTemplate [MFC], CMultiDocTemplate"]
 ms.assetid: 5b8aa328-e461-41d0-b388-00594535e119
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMultiDocTemplate Class
 

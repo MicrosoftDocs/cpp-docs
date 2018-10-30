@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2600 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2600"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2600"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2600"]
 ms.assetid: cce11943-ea01-4bee-a7b0-b67d24ec6493
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2600
 

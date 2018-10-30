@@ -1,16 +1,9 @@
 ---
-title: "uninitialized_object Class | Microsoft Docs"
-ms.custom: ""
+title: "uninitialized_object Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["uninitialized_object", "AMPRT/uninitialized_object", "AMPRT/Concurrency::uninitialized_object"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["uninitialized_object class"]
 ms.assetid: 6ae3c4e8-64a6-4511-a158-03be197b63af
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # uninitialized_object Class
 

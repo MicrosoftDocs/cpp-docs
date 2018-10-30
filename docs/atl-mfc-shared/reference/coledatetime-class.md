@@ -1,16 +1,9 @@
 ---
-title: "COleDateTime Class | Microsoft Docs"
-ms.custom: ""
+title: "COleDateTime Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleDateTime", "ATLCOMTIME/ATL::COleDateTime", "ATLCOMTIME/ATL::COleDateTime::COleDateTime", "ATLCOMTIME/ATL::COleDateTime::Format", "ATLCOMTIME/ATL::COleDateTime::GetAsDBTIMESTAMP", "ATLCOMTIME/ATL::COleDateTime::GetAsSystemTime", "ATLCOMTIME/ATL::COleDateTime::GetAsUDATE", "ATLCOMTIME/ATL::COleDateTime::GetCurrentTime", "ATLCOMTIME/ATL::COleDateTime::GetDay", "ATLCOMTIME/ATL::COleDateTime::GetDayOfWeek", "ATLCOMTIME/ATL::COleDateTime::GetDayOfYear", "ATLCOMTIME/ATL::COleDateTime::GetHour", "ATLCOMTIME/ATL::COleDateTime::GetMinute", "ATLCOMTIME/ATL::COleDateTime::GetMonth", "ATLCOMTIME/ATL::COleDateTime::GetSecond", "ATLCOMTIME/ATL::COleDateTime::GetStatus", "ATLCOMTIME/ATL::COleDateTime::GetYear", "ATLCOMTIME/ATL::COleDateTime::ParseDateTime", "ATLCOMTIME/ATL::COleDateTime::SetDate", "ATLCOMTIME/ATL::COleDateTime::SetDateTime", "ATLCOMTIME/ATL::COleDateTime::SetStatus", "ATLCOMTIME/ATL::COleDateTime::SetTime", "ATLCOMTIME/ATL::COleDateTime::m_dt", "ATLCOMTIME/ATL::COleDateTime::m_status"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["shared classes, COleDateTime", "time-only values", "Date data type, MFC encapsulation of", "COleDateTime class", "dates, handling in MFC", "time, handling in MFC"]
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleDateTime Class
 

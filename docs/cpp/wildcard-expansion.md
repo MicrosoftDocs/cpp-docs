@@ -1,16 +1,9 @@
 ---
-title: "Wildcard Expansion | Microsoft Docs"
-ms.custom: ""
+title: "Wildcard Expansion"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_setargv"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["asterisk wildcard", "_setargv function", "command line [C++], processing arguments", "command line [C++], wildcards", "command-line wildcards", "question mark, wildcard"]
 ms.assetid: 1a543398-607b-4404-93d1-45d290bde638
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Wildcard Expansion
 

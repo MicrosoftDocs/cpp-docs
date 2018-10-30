@@ -1,15 +1,8 @@
 ---
-title: "How to: Embed a Manifest Inside a C/C++ Application | Microsoft Docs"
-ms.custom: ""
+title: "How to: Embed a Manifest Inside a C/C++ Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["manifests [C++]", "embedding manifests", "makefiles, updating to embed manifest"]
 ms.assetid: ec0bac69-2fdc-466c-ab0d-710a22974e5d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # How to: Embed a Manifest Inside a C/C++ Application
 

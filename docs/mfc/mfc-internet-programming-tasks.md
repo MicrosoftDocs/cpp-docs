@@ -1,15 +1,8 @@
 ---
-title: "MFC Internet Programming Tasks | Microsoft Docs"
-ms.custom: ""
+title: "MFC Internet Programming Tasks"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Internet applications [MFC], getting started", "Internet applications [MFC], first steps"]
 ms.assetid: 6377e9b8-07c4-4380-b63b-05f5a9061313
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Internet Programming Tasks
 

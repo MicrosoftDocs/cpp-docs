@@ -1,15 +1,8 @@
 ---
-title: "override Specifier | Microsoft Docs"
-ms.custom: ""
+title: "override Specifier"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["override Identifier"]
 ms.assetid: b286fb46-9374-4ad8-b2e7-4607119b6133
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # override Specifier
 

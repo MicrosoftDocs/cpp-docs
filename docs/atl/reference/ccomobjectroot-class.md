@@ -1,16 +1,9 @@
 ---
-title: "CComObjectRoot Class | Microsoft Docs"
-ms.custom: ""
+title: "CComObjectRoot Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComObjectRoot", "atlcom/ATL::CComObjectRoot"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComObjectRoot class"]
 ms.assetid: f8797c38-6e73-4f67-85c2-71654cffa8eb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComObjectRoot Class
 

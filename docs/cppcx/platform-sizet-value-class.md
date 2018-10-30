@@ -1,16 +1,10 @@
 ---
-title: "Platform::SizeT value class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::SizeT value class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/PlatformSizeT::SizeT constructor"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::SizeT Struct"]
 ms.assetid: 0803612c-8ba1-430c-9b7b-1bebae88608d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::SizeT value class
 

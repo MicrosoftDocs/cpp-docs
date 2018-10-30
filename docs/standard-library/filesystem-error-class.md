@@ -1,15 +1,8 @@
 ---
-title: "filesystem_error Class | Microsoft Docs"
-ms.custom: ""
+title: "filesystem_error Class"
 ms.date: "09/10/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["filesystem/std::experimental::filesystem::filesystem_error"]
-dev_langs: ["C++"]
 ms.assetid: c53aac27-c1fa-43e4-8967-48ea8ba1f172
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # filesystem_error Class
 

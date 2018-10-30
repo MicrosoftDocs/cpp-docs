@@ -1,16 +1,9 @@
 ---
-title: "ptr (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "ptr (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.ptr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ptr attribute"]
 ms.assetid: 95eaea57-a5be-45f6-a612-ba2c9bc4645a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # ptr
 

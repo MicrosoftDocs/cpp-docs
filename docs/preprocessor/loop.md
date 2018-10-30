@@ -1,15 +1,8 @@
 ---
-title: "loop | Microsoft Docs"
-ms.custom: ""
+title: "loop"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["loop_CPP", "vc-pragma.loop"]
-dev_langs: ["C++"]
 ms.assetid: 6d5bb428-cead-47e7-941d-7513bbb162c7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # loop
 

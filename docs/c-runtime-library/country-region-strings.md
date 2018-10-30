@@ -1,16 +1,9 @@
 ---
-title: "Country-Region Strings | Microsoft Docs"
-ms.custom: ""
+title: "Country-Region Strings"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.strings"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["country/region strings"]
 ms.assetid: 5baf0ccf-0d9b-40dc-83bd-323705287930
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Country/Region Strings
 

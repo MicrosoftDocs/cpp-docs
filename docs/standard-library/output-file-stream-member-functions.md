@@ -1,15 +1,8 @@
 ---
-title: "Output File Stream Member Functions | Microsoft Docs"
-ms.custom: ""
+title: "Output File Stream Member Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["output streams [C++], member functions"]
 ms.assetid: 38aaf710-8035-4a34-a0c4-123a5327f28a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Output File Stream Member Functions
 

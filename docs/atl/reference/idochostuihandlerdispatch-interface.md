@@ -1,16 +1,9 @@
 ---
-title: "IDocHostUIHandlerDispatch Interface | Microsoft Docs"
-ms.custom: ""
+title: "IDocHostUIHandlerDispatch Interface"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IDocHostUIHandlerDispatch", "atlbase/ATL::IDocHostUIHandlerDispatch"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IDocHostUIHandlerDispatch interface"]
 ms.assetid: 6963a301-601a-4ac3-8bef-f7b252ea2fc6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IDocHostUIHandlerDispatch Interface
 

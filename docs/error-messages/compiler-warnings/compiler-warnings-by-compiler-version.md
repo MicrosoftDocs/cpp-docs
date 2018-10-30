@@ -1,14 +1,7 @@
 ---
-title: "Compiler Warnings by compiler version | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warnings by compiler version"
 ms.date: "10/24/2018"
-ms.technology: ["devlang-cpp"]
-ms.topic: "error-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["warnings, by compiler version", "cl.exe compiler, setting warning options"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warnings by compiler version
 

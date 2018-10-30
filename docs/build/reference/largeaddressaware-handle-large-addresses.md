@@ -1,16 +1,9 @@
 ---
-title: "-LARGEADDRESSAWARE (Handle Large Addresses) | Microsoft Docs"
-ms.custom: ""
+title: "/LARGEADDRESSAWARE (Handle Large Addresses)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.LargeAddressAware", "/largeaddressaware"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LARGEADDRESSAWARE linker option", "-LARGEADDRESSAWARE linker option", "/LARGEADDRESSAWARE linker option"]
 ms.assetid: a29756c8-e893-47a9-9750-1f0d25359385
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /LARGEADDRESSAWARE (Handle Large Addresses)
 

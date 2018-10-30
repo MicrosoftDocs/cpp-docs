@@ -1,15 +1,8 @@
 ---
-title: "Handlers for Commands and Control Notifications | Microsoft Docs"
-ms.custom: ""
+title: "Handlers for Commands and Control Notifications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["commands [MFC], handlers for", "functions [MFC], handler", "handlers [MFC]", "controls [MFC], notifications", "handlers [MFC], control notification [MFC]", "notifications [MFC], handlers for control", "handlers [MFC], command"]
 ms.assetid: 20f57f4a-f577-4c09-80a2-43faf32a1c2e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Handlers for Commands and Control Notifications
 

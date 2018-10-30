@@ -1,15 +1,8 @@
 ---
-title: "Record Field Exchange: How RFX Works | Microsoft Docs"
-ms.custom: ""
+title: "Record Field Exchange: How RFX Works"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["record editing [C++], using RFX", "RFX (ODBC) [C++], updating data in recordsets", "scrolling [C++]", "ODBC [C++], RFX", "data binding [C++], DFX", "scrolling [C++], RFX", "RFX (ODBC) [C++], binding fields and parameters"]
 ms.assetid: e647cacd-62b0-4b80-9e20-b392deca5a88
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Field Exchange: How RFX Works
 

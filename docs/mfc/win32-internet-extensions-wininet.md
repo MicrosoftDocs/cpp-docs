@@ -1,15 +1,8 @@
 ---
-title: "Win32 Internet Extensions (WinInet) | Microsoft Docs"
-ms.custom: ""
+title: "Win32 Internet Extensions (WinInet)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Internet applications [MFC], Win32 Internet Extensions", "Internet client applications [MFC], about Internet client applications", "client applications [MFC], Win32 Internet", "WinInet classes [MFC], about WinInet classes"]
 ms.assetid: f8c80f0b-ce14-4f0d-a3cf-4f7d8c5cca59
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Win32 Internet Extensions (WinInet)
 

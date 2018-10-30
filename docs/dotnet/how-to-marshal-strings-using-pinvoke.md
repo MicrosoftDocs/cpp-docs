@@ -1,15 +1,9 @@
 ---
-title: "How to: Marshal Strings Using PInvoke | Microsoft Docs"
+title: "How to: Marshal Strings Using PInvoke"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["interop [C++], strings", "marshaling [C++], strings", "data marshaling [C++], strings", "platform invoke [C++], strings"]
 ms.assetid: bcc75733-7337-4d9b-b1e9-b95a98256088
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Strings Using PInvoke
 

@@ -1,16 +1,9 @@
 ---
-title: "-MAPINFO (Include Information in Mapfile) | Microsoft Docs"
-ms.custom: ""
+title: "/MAPINFO (Include Information in Mapfile)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.MapLines", "VC.Project.VCLinkerTool.MapInfoFixups", "VC.Project.VCLinkerTool.MapExports", "/mapinfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/MAPINFO linker option", "MAPINFO linker option", "-MAPINFO linker option"]
 ms.assetid: 533d2bce-f9b7-4fea-ae1c-0b4864c9d10b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /MAPINFO (Include Information in Mapfile)
 

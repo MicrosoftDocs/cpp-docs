@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1 and level 4) C4949 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1 and level 4) C4949"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4949"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4949"]
 ms.assetid: 34f45a05-c115-49cb-9f67-0bd4f0735d9b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1 and level 4) C4949
 

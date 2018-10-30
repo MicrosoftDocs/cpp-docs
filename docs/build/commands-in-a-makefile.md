@@ -1,15 +1,8 @@
 ---
-title: "Commands in a Makefile | Microsoft Docs"
-ms.custom: ""
+title: "Commands in a Makefile"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["commands, makefiles"]
 ms.assetid: 8085517e-42f4-493b-b8f8-44311fc08c64
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Commands in a Makefile
 

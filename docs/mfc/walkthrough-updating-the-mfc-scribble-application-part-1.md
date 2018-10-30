@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Updating the MFC Scribble Application (Part 1) | Microsoft Docs"
-ms.custom: ""
+title: "Walkthrough: Updating the MFC Scribble Application (Part 1)"
 ms.date: "09/20/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["examples [MFC], update existing application", "ribbon UI, porting to", "Office Fluent UI, porting to", "samples [MFC], update existing application", "MFC Feature Pack, update existing application", "walkthroughs [MFC], update existing application"]
 ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Updating the MFC Scribble Application (Part 1)
 

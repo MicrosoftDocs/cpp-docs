@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3207 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3207"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3207"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3207"]
 ms.assetid: 4a28b976-142a-4cff-aa2f-480b892c50ca
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3207
 

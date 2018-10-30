@@ -1,15 +1,8 @@
 ---
-title: "Thread Local Storage (TLS) | Microsoft Docs"
-ms.custom: ""
+title: "Thread Local Storage (TLS)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["multithreading [C++], Thread Local Storage", "TLS [C++]", "threading [C++], Thread Local Storage", "storing thread-specific data", "thread attribute", "Thread Local Storage [C++]"]
 ms.assetid: 80801907-d792-45ca-b776-df0cf2e9f197
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Thread Local Storage (TLS)
 

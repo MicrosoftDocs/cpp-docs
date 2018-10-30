@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Error RC2111 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Error RC2111"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC2111"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC2111"]
 ms.assetid: 118cba57-82a4-4199-acf4-9d9561946218
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2111
 

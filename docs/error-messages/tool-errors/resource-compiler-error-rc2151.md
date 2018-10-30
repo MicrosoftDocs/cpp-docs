@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Error RC2151 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Error RC2151"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC2151"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC2151"]
 ms.assetid: 3c47e535-c78d-4338-aab9-9b47e2c34728
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2151
 

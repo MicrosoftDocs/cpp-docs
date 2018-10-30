@@ -1,15 +1,9 @@
 ---
-title: "How to: Migrate to -clr | Microsoft Docs"
+title: "How to: Migrate to -clr"
 ms.custom: "get-started-article"
 ms.date: "09/18/2018"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["upgrading Visual C++ applications, /clr compiler option", "compiling native code [C++]", "interoperability [C++], /clr compiler option", "interop [C++], /clr compiler option", "migration [C++], /clr compiler option", "/clr compiler option [C++], porting to"]
 ms.assetid: c9290b8b-436a-4510-8b56-eae51f4a9afc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Migrate to /clr
 

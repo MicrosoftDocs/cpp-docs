@@ -1,16 +1,9 @@
 ---
-title: "multitype_join Class | Microsoft Docs"
-ms.custom: ""
+title: "multitype_join Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["multitype_join", "AGENTS/concurrency::multitype_join", "AGENTS/concurrency::multitype_join::multitype_join", "AGENTS/concurrency::multitype_join::accept", "AGENTS/concurrency::multitype_join::acquire_ref", "AGENTS/concurrency::multitype_join::consume", "AGENTS/concurrency::multitype_join::link_target", "AGENTS/concurrency::multitype_join::release", "AGENTS/concurrency::multitype_join::release_ref", "AGENTS/concurrency::multitype_join::reserve", "AGENTS/concurrency::multitype_join::unlink_target", "AGENTS/concurrency::multitype_join::unlink_targets"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["multitype_join class"]
 ms.assetid: 236e87a0-4867-49fd-869a-bef4010e49a7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # multitype_join Class
 

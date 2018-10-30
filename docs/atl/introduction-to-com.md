@@ -1,15 +1,9 @@
 ---
-title: "Introduction to COM | Microsoft Docs"
+title: "Introduction to COM"
 ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["COM"]
 ms.assetid: 120735d9-db71-4ad3-a730-ce576ea2354e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Introduction to COM
 

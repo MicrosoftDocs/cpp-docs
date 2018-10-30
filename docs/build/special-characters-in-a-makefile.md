@@ -1,15 +1,8 @@
 ---
-title: "Special Characters in a Makefile | Microsoft Docs"
-ms.custom: ""
+title: "Special Characters in a Makefile"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["NMAKE program, special characters", "makefiles, special characters", "special characters, in NMAKE macros", "macros, special characters"]
 ms.assetid: 92c34ab5-ca6b-4fc0-bcf4-3172eaeda9f0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Special Characters in a Makefile
 

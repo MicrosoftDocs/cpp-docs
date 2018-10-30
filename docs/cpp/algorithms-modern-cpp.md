@@ -1,14 +1,8 @@
 ---
-title: "Algorithms (Modern C++) | Microsoft Docs"
-ms.custom: ""
+title: "Algorithms (Modern C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 6f758d3c-a7c7-4a50-92bb-97b2f6d4ab27
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Algorithms (Modern C++)
 

@@ -1,19 +1,12 @@
 ---
-title: "logb, logbf, logbl, _logb, _logbf | Microsoft Docs"
-ms.custom: ""
+title: "logb, logbf, logbl, _logb, _logbf"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["logb", "_logb", "_logbl", "logbf", "logbl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["logb", "logbl", "_logb", "_logbf", "logbf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_logbf function", "mantissas, floating-point variables", "logbf function", "_logb function", "exponent, floating-point numbers", "logbl function", "logb function", "floating-point functions", "floating-point functions, mantissa and exponent", "exponents and mantissas"]
 ms.assetid: 780c4daa-6fe6-4fbc-9412-4c1ba1a1766f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # logb, logbf, logbl, _logb, _logbf
 

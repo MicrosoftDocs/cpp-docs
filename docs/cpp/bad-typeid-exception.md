@@ -1,16 +1,9 @@
 ---
-title: "bad_typeid Exception | Microsoft Docs"
-ms.custom: ""
+title: "bad_typeid Exception"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["bad_typeid", "bad_typeid_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["bad_typeid exception", "exceptions [C++], bad_typeid"]
 ms.assetid: 5963ed58-4ede-4597-957d-f7bbd06299c2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # bad_typeid Exception
 

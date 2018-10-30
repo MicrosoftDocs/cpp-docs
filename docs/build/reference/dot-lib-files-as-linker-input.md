@@ -1,16 +1,9 @@
 ---
-title: ".Lib Files as Linker Input | Microsoft Docs"
-ms.custom: ""
+title: ".Lib Files as Linker Input"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.AdditionalDependencies"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OMF libraries", "linking [C++], OMF libraries", "import libraries, linker files", "libraries [C++], .lib files as linker input", "COFF files, import libraries", "default libraries [C++], linker output", "default libraries [C++]", "defaults [C++], libraries", ".lib files"]
 ms.assetid: dc5d2b1c-2487-41fa-aa71-ad1e0647958b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .Lib Files as Linker Input
 

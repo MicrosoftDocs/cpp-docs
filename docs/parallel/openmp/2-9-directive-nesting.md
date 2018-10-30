@@ -1,14 +1,7 @@
 ---
-title: "2.9 Directive Nesting | Microsoft Docs"
-ms.custom: ""
+title: "2.9 Directive Nesting"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 6565a43c-fd2d-4366-8322-8d75e1b06600
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.9 Directive Nesting
 

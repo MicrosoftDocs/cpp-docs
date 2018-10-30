@@ -1,16 +1,9 @@
 ---
-title: "CAccelerateDecelerateTransition Class | Microsoft Docs"
-ms.custom: ""
+title: "CAccelerateDecelerateTransition Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CAccelerateDecelerateTransition", "afxanimationcontroller/CAccelerateDecelerateTransition"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAccelerateDecelerateTransition class [MFC]"]
 ms.assetid: b1f31ee8-bb11-4ccc-b124-365fb02b025c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAccelerateDecelerateTransition Class
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2725 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2725"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2725"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2725"]
 ms.assetid: 13cd5b1b-e906-4cd8-9b2b-510d587c665a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2725
 

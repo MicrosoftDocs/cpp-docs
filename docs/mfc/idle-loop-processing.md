@@ -1,15 +1,8 @@
 ---
-title: "Idle Loop Processing | Microsoft Docs"
-ms.custom: ""
+title: "Idle Loop Processing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, background processing", "PeekMessage method [MFC], elsewhere than message loop", "PeekMessage method [MFC]", "MFC, messages", "messages [MFC], loops", "OnIdle method [MFC]", "processing [MFC], background", "idle loop processing [MFC]", "idle processing [MFC]", "threading [MFC], alternatives to multithreading", "processing, during idle loop", "processing [MFC]", "background processing [MFC]"]
 ms.assetid: 5c7c46c1-6107-4304-895f-480983bb1e44
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Idle Loop Processing
 

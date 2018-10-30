@@ -1,16 +1,10 @@
 ---
-title: "ChainInterfaces Structure | Microsoft Docs"
-ms.custom: ""
+title: "ChainInterfaces Structure"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::ChainInterfaces", "implements/Microsoft::WRL::ChainInterfaces::CanCastTo", "implements/Microsoft::WRL::ChainInterfaces::CastToUnknown", "implements/Microsoft::WRL::ChainInterfaces::FillArrayWithIid", "implements/Microsoft::WRL::ChainInterfaces::IidCount", "implements/Microsoft::WRL::ChainInterfaces::Verify"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::ChainInterfaces structure", "Microsoft::WRL::ChainInterfaces::CanCastTo method", "Microsoft::WRL::ChainInterfaces::CastToUnknown method", "Microsoft::WRL::ChainInterfaces::FillArrayWithIid method", "Microsoft::WRL::ChainInterfaces::IidCount constant", "Microsoft::WRL::ChainInterfaces::Verify method"]
 ms.assetid: d7415b59-5468-4bef-a3fd-8d82b12f0e9c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # ChainInterfaces Structure
 

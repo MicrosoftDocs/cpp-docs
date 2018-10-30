@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3485 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3485"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3485"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3485"]
 ms.assetid: d67536f9-67a1-4ad9-9a94-d8bbbca3d0dc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3485
 

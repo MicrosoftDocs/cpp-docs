@@ -1,15 +1,8 @@
 ---
-title: "Copying Buttons from a Toolbar (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Copying Buttons from a Toolbar (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Toolbar editor [C++], copying buttons", "toolbars [C++], copying buttons", "toolbar buttons [C++], copying"]
 ms.assetid: 3a31e428-f125-44c6-8966-a8a3fac5b117
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Copying Buttons from a Toolbar (C++)
 

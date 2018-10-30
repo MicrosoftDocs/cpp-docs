@@ -1,16 +1,9 @@
 ---
-title: "Ribbon Designer (MFC) | Microsoft Docs"
-ms.custom: ""
+title: "Ribbon Designer (MFC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.ribbon.F1"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Ribbon Designer (MFC)", "MFC Ribbon Designer"]
 ms.assetid: 0806dfd6-7d11-471a-99e1-4072852231f9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Ribbon Designer (MFC)
 

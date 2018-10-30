@@ -1,15 +1,8 @@
 ---
-title: "abort Function | Microsoft Docs"
-ms.custom: ""
+title: "abort Function"
 ms.date: "12/01/2017"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["abort function"]
 ms.assetid: 3352bcc4-1a8a-4e1f-8dcc-fe30f6b50f2d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # abort Function
 

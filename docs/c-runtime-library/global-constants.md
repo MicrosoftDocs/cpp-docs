@@ -1,16 +1,9 @@
 ---
-title: "Global Constants | Microsoft Docs"
-ms.custom: ""
+title: "Global Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.constants"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["global constants"]
 ms.assetid: 778d86fd-3ca6-4d2b-b4c5-aee6dc1efe6b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Global Constants
 

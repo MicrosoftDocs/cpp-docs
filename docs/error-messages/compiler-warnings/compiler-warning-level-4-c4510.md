@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4510 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4510"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4510"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4510"]
 ms.assetid: fd28d1d4-ad27-4dad-94c0-9dba46c93180
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4510
 

@@ -1,15 +1,8 @@
 ---
-title: "Double Thunking (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Double Thunking (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["double thunks", "interop [C++], double thunking", "mixed assemblies [C++], double thunking", "/clr compiler option [C++], double thunking", "interoperability [C++], double thunking"]
 ms.assetid: a85090b2-dc3c-498a-b40c-340db229dd6f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Double Thunking (C++)
 

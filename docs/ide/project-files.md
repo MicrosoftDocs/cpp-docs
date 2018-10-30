@@ -1,15 +1,8 @@
 ---
-title: "Example Project File | Microsoft Docs"
-ms.custom: ""
+title: "Example Project File"
 ms.date: "10/09/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: [".vcxproj files", "C++ projects, project file format"]
 ms.assetid: 5261cf45-3136-40a6-899e-dc1339551401
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Project Files
 

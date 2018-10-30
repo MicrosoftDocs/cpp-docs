@@ -1,19 +1,12 @@
 ---
-title: "fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l | Microsoft Docs"
-ms.custom: ""
+title: "fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_fprintf_s_l", "fwprintf_s", "fprintf_s", "_fwprintf_s_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_ftprintf_s", "fprintf_s", "fwprintf_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ftprintf_s_l function", "ftprintf_s function", "_fprintf_s_l function", "_ftprintf_s function", "_ftprintf_s_l function", "fwprintf_s_l function", "fwprintf_s function", "fprintf_s_l function", "fprintf_s function", "_fwprintf_s_l function", "print formatted data to streams"]
 ms.assetid: 16067c3c-69ce-472a-8272-9aadf1f5beed
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l
 

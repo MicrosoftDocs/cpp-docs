@@ -1,15 +1,8 @@
 ---
-title: "Lifetime | Microsoft Docs"
-ms.custom: ""
+title: "Lifetime"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["local variables, lifetime", "variables, automatic", "storage classes, lifetime", "variables, lifetime", "automatic storage class", "automatic storage class, duration", "storage class specifiers, storage duration", "memory allocation, dynamic allocation", "functions [C++], lifetime", "storage duration", "dynamic memory allocation", "memory allocation, dynamic", "lifetime", "global variables, lifetime"]
 ms.assetid: ff0b42cb-3f0f-49a3-a94f-d1d825d8ddfe
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Lifetime
 

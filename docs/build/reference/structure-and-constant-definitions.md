@@ -1,14 +1,7 @@
 ---
-title: "Structure and Constant Definitions | Microsoft Docs"
-ms.custom: ""
+title: "Structure and Constant Definitions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 1df7cf46-b853-4788-a257-100d5c37997f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Structure and Constant Definitions
 

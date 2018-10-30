@@ -1,16 +1,9 @@
 ---
-title: "back_insert_iterator Class | Microsoft Docs"
-ms.custom: ""
+title: "back_insert_iterator Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["iterator/std::back_insert_iterator", "iterator/std::back_insert_iterator::container_type", "iterator/std::back_insert_iterator::reference"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::back_insert_iterator [C++]", "std::back_insert_iterator [C++], container_type", "std::back_insert_iterator [C++], reference"]
 ms.assetid: a1ee07f2-cf9f-46a1-8608-cfaf207f9713
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # back_insert_iterator Class
 

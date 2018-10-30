@@ -1,16 +1,9 @@
 ---
-title: "messages_byname Class | Microsoft Docs"
-ms.custom: ""
+title: "messages_byname Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xlocmes/std::messages_byname"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["messages_byname class"]
 ms.assetid: c6c64841-3e80-43c8-b54c-fed41833ad6b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # messages_byname Class
 

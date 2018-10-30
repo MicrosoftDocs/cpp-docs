@@ -1,16 +1,9 @@
 ---
-title: "tile_barrier Class | Microsoft Docs"
-ms.custom: ""
+title: "tile_barrier Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["tile_barrier", "AMP/tile_barrier", "AMP/Concurrency::tile_barrier::tile_barrier::tile_barrier", "AMP/Concurrency::tile_barrier::tile_barrier::wait", "AMP/Concurrency::tile_barrier::tile_barrier::wait_with_all_memory_fence", "AMP/Concurrency::tile_barrier::tile_barrier::wait_with_global_memory_fence", "AMP/Concurrency::tile_barrier::tile_barrier::wait_with_tile_static_memory_fence"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["tile_barrier class"]
 ms.assetid: b4ccdccb-0032-4e11-b7bd-dc9d43445dee
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # tile_barrier Class
 

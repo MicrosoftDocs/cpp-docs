@@ -1,13 +1,7 @@
 ---
-title: "Convert to Raw String Literal | Microsoft Docs"
-ms.custom: ""
+title: "Convert to Raw String Literal"
 ms.date: "11/16/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 ms.assetid: fffbfee4-66ee-42ba-aeb9-df07fb702c51
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 
 # Convert to Raw String Literal

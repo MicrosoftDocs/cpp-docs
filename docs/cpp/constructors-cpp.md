@@ -1,15 +1,8 @@
 ---
-title: "Constructors (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Constructors (C++)"
 ms.date: "04/06/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["constructors [C++]", "objects [C++], creating", "instance constructors"]
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Constructors (C++)
 

@@ -1,16 +1,9 @@
 ---
-title: "C Runtime Error R6028 | Microsoft Docs"
-ms.custom: ""
+title: "C Runtime Error R6028"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["R6028"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["R6028"]
 ms.assetid: 81e99079-4388-4244-a4f7-4641c508871c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6028
 

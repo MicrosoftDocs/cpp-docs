@@ -1,15 +1,8 @@
 ---
-title: "Lambda Expressions in C++ | Microsoft Docs"
-ms.custom: ""
+title: "Lambda Expressions in C++"
 ms.date: "07/19/2017"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["lambda expressions [C++]", "lambda expressions [C++], overview", "lambda expressions [C++], vs. function objects"]
 ms.assetid: 713c7638-92be-4ade-ab22-fa33417073bf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Lambda Expressions in C++
 

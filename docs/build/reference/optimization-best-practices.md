@@ -1,15 +1,8 @@
 ---
-title: "Optimization best practices | Microsoft Docs"
-ms.custom: ""
+title: "Optimization best practices"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, optimization", "optimization, best practices"]
 ms.assetid: f3433148-7255-4ca6-8a4f-7c31aac88508
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Optimization best practices
 

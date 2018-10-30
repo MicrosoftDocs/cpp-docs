@@ -1,15 +1,9 @@
 ---
-title: "C++ Language Reference | Microsoft Docs"
+title: "C++ Language Reference"
 ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["language reference", "C++, language reference", "language reference, Visual C++", "Visual C++, language reference"]
 ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C++ Language Reference
 

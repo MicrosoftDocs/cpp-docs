@@ -1,15 +1,8 @@
 ---
-title: "Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies | Microsoft Docs"
-ms.custom: ""
+title: "Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["troubleshooting side-by-side assemblies", "troubleshooting isolated applications", "troubleshooting Visual C++"]
 ms.assetid: 3257257a-1f0b-4ede-8564-9277a7113a35
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies
 

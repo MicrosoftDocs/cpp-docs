@@ -1,15 +1,8 @@
 ---
-title: "C Integer Constants | Microsoft Docs"
-ms.custom: ""
+title: "C Integer Constants"
 ms.date: "02/27/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["integer constants"]
 ms.assetid: fcf6b83c-2038-49ec-91ca-3d5ca1f83037
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Integer Constants
 

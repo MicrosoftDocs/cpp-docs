@@ -1,15 +1,8 @@
 ---
-title: "ClickOnce Deployment for Visual C++ Applications | Microsoft Docs"
-ms.custom: ""
+title: "ClickOnce Deployment for Visual C++ Applications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["deploying applications [C++], ClickOnce", "application deployment [C++], ClickOnce", "ClickOnce deployment [C++], C++ applications"]
 ms.assetid: 9988c546-0936-452c-932f-9c76daa42157
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ClickOnce Deployment for Visual C++ Applications
 

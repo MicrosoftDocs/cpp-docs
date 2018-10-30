@@ -1,15 +1,8 @@
 ---
-title: "Messages | Microsoft Docs"
-ms.custom: ""
+title: "Messages"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["messages, MFC", "messages [MFC]"]
 ms.assetid: b1476310-a135-42ca-817c-444fb3675491
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Messages
 

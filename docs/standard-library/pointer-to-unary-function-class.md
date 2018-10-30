@@ -1,16 +1,9 @@
 ---
-title: "pointer_to_unary_function Class | Microsoft Docs"
-ms.custom: ""
+title: "pointer_to_unary_function Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xfunctional/std::pointer_to_unary"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pointer_to_unary_function function", "pointer_to_unary_function class"]
 ms.assetid: 05600207-b916-4759-beca-6b6facd2d6f6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # pointer_to_unary_function Class
 

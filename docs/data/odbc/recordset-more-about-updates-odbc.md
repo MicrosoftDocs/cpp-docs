@@ -1,15 +1,8 @@
 ---
-title: "Recordset: More About Updates (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: More About Updates (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["records, updating", "transactions, updating recordsets", "ODBC recordsets, updating", "multiuser environments, updates to recordsets", "scrolling, updates to recordsets", "updating recordsets", "recordsets, updating"]
 ms.assetid: 0353a742-d226-4fe2-8881-a7daeffe86cd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: More About Updates (ODBC)
 

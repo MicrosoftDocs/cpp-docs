@@ -1,15 +1,8 @@
 ---
-title: "Adding Controls to a Property Sheet | Microsoft Docs"
-ms.custom: ""
+title: "Adding Controls to a Property Sheet"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["controls [MFC], adding to property sheets", "property sheets, adding controls"]
 ms.assetid: 24ad4c0b-c1db-4850-b9f0-34aae8d74571
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding Controls to a Property Sheet
 

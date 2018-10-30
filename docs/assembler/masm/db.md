@@ -1,16 +1,9 @@
 ---
-title: "DB | Microsoft Docs"
-ms.custom: ""
+title: "DB"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["DB"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DB directive"]
 ms.assetid: 0c69ccaa-043f-46e1-9f95-dc76d9bc87c8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # DB
 

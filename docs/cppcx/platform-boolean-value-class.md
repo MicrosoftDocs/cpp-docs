@@ -1,16 +1,10 @@
 ---
-title: "Platform::Boolean value class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Boolean value class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Boolean"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Boolean Struct"]
 ms.assetid: 8518a1db-7139-4187-9c7a-1ae3943373f2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Boolean value class
 

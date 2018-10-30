@@ -1,15 +1,8 @@
 ---
-title: "Calculating Necessary Values | Microsoft Docs"
-ms.custom: ""
+title: "Calculating Necessary Values"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["helper functions, calculating necessary values"]
 ms.assetid: 4f037d0f-881a-4a48-a9d2-9f8872dfccb7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Calculating Necessary Values
 

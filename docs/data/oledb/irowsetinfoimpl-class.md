@@ -1,16 +1,9 @@
 ---
-title: "IRowsetInfoImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IRowsetInfoImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL.IRowsetInfoImpl", "IRowsetInfoImpl", "ATL::IRowsetInfoImpl", "ATL.IRowsetInfoImpl.GetProperties", "IRowsetInfoImpl.GetProperties", "ATL::IRowsetInfoImpl::GetProperties", "IRowsetInfoImpl::GetProperties", "GetProperties", "ATL::IRowsetInfoImpl::GetReferencedRowset", "GetReferencedRowset", "ATL.IRowsetInfoImpl.GetReferencedRowset", "IRowsetInfoImpl.GetReferencedRowset", "IRowsetInfoImpl::GetReferencedRowset", "IRowsetInfoImpl::GetSpecification", "ATL.IRowsetInfoImpl.GetSpecification", "IRowsetInfoImpl.GetSpecification", "GetSpecification", "ATL::IRowsetInfoImpl::GetSpecification"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IRowsetInfoImpl class", "GetProperties method", "GetReferencedRowset method", "GetSpecification method"]
 ms.assetid: 9c654155-7727-464e-bd31-143e68391a47
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetInfoImpl Class
 

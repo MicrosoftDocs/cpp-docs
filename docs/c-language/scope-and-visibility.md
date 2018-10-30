@@ -1,15 +1,8 @@
 ---
-title: "Scope and Visibility | Microsoft Docs"
-ms.custom: ""
+title: "Scope and Visibility"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["scope, levels", "visibility", "file scope [C++]"]
 ms.assetid: a019eb7c-66ed-46a7-bc9f-89a963930a56
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Scope and Visibility
 

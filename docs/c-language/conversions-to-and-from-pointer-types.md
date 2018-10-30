@@ -1,15 +1,8 @@
 ---
-title: "Conversions to and from Pointer Types | Microsoft Docs"
-ms.custom: ""
+title: "Conversions to and from Pointer Types"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["pointers, converting", "conversions, pointer", "type casts, involving pointers", "void pointers"]
 ms.assetid: 3facc56f-06d3-4570-b1a2-7d4927b83086
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Conversions to and from Pointer Types
 

@@ -1,16 +1,9 @@
 ---
-title: "CComMultiThreadModel Class | Microsoft Docs"
-ms.custom: ""
+title: "CComMultiThreadModel Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComMultiThreadModel", "ATLBASE/ATL::CComMultiThreadModel", "ATLBASE/ATL::CComMultiThreadModel::AutoCriticalSection", "ATLBASE/ATL::CComMultiThreadModel::CriticalSection", "ATLBASE/ATL::CComMultiThreadModel::ThreadModelNoCS", "ATLBASE/ATL::CComMultiThreadModel::Decrement", "ATLBASE/ATL::CComMultiThreadModel::Increment"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, multithreading", "CComMultiThreadModel class", "threading [ATL]"]
 ms.assetid: db8f1662-2f7a-44b3-b341-ffbfb6e422a3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComMultiThreadModel Class
 

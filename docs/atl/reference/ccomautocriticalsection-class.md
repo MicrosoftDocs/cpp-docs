@@ -1,16 +1,9 @@
 ---
-title: "CComAutoCriticalSection Class | Microsoft Docs"
-ms.custom: ""
+title: "CComAutoCriticalSection Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComAutoCriticalSection", "ATLCORE/ATL::CComAutoCriticalSection", "ATLCORE/ATL::CComAutoCriticalSection::CComAutoCriticalSection"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComAutoCriticalSection class"]
 ms.assetid: 491a9d90-3398-4f90-88f5-fd2172a46b30
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComAutoCriticalSection Class
 

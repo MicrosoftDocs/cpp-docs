@@ -1,16 +1,9 @@
 ---
-title: "Project Build Error PRJ0024 | Microsoft Docs"
-ms.custom: ""
+title: "Project Build Error PRJ0024"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["PRJ0024"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PRJ0024"]
 ms.assetid: 8bde6368-6c1b-4e04-bc5e-3c6d0b8fa1d7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Project Build Error PRJ0024
 

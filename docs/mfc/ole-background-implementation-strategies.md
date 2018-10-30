@@ -1,15 +1,8 @@
 ---
-title: "OLE Background: Implementation Strategies | Microsoft Docs"
-ms.custom: ""
+title: "OLE Background: Implementation Strategies"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE [MFC], development strategy", "OLE applications [MFC], implementing OLE", "applications [OLE], implementing OLE"]
 ms.assetid: 0875ddae-99df-488c-82c6-164074a81058
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OLE Background: Implementation Strategies
 

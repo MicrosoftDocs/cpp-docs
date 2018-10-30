@@ -1,15 +1,8 @@
 ---
-title: "Loading All Imports for a Delay-Loaded DLL | Microsoft Docs"
-ms.custom: ""
+title: "Loading All Imports for a Delay-Loaded DLL"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["__HrLoadAllImportsForDll linker option"]
 ms.assetid: 975fcd97-1a56-4a16-9698-e1a249d2d592
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Loading All Imports for a Delay-Loaded DLL
 

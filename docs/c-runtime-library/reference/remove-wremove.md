@@ -1,19 +1,12 @@
 ---
-title: "remove, _wremove | Microsoft Docs"
-ms.custom: ""
+title: "remove, _wremove"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wremove", "remove"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["remove", "_wremove", "_tremove"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["tremove function", "_wremove function", "files [C++], deleting", "_tremove function", "files [C++], removing", "wremove function", "remove function"]
 ms.assetid: b6345ec3-3289-4645-93a4-28b9e478cc19
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # remove, _wremove
 

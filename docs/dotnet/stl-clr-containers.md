@@ -1,15 +1,9 @@
 ---
-title: "STL/CLR Containers | Microsoft Docs"
-ms.custom: ""
+title: "STL/CLR Containers"
 ms.date: "09/18/2018"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["STL/CLR, containers", "containers, STL/CLR"]
 ms.assetid: 34ca8031-2041-46b9-aed9-29082d1972ea
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # STL/CLR Containers
 

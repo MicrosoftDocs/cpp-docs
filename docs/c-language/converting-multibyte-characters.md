@@ -1,15 +1,8 @@
 ---
-title: "Converting Multibyte Characters | Microsoft Docs"
-ms.custom: ""
+title: "Converting Multibyte Characters"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["multibyte characters, converting"]
 ms.assetid: bbee7586-6a60-4168-bb98-0d1c8aa823a1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Converting Multibyte Characters
 

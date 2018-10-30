@@ -1,16 +1,9 @@
 ---
-title: "CDaoDatabaseInfo Structure | Microsoft Docs"
-ms.custom: ""
+title: "CDaoDatabaseInfo Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDaoDatabaseInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoDatabaseInfo structure [MFC]", "DAO (Data Access Objects), Databases collection"]
 ms.assetid: 68e9e0da-8382-4fc6-8115-1b1519392ddb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDaoDatabaseInfo Structure
 

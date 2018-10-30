@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4816 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4816"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4816"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4816"]
 ms.assetid: 60f730ae-d942-4db9-ab97-41d4a874d8da
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4816
 

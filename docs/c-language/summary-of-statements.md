@@ -1,14 +1,7 @@
 ---
-title: "Summary of Statements | Microsoft Docs"
-ms.custom: ""
+title: "Summary of Statements"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: ce45d2fe-ec0e-459f-afb1-80ab6a7f0239
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Summary of Statements
 

@@ -1,15 +1,8 @@
 ---
-title: "C Type Specifiers | Microsoft Docs"
-ms.custom: ""
+title: "C Type Specifiers"
 ms.date: "01/29/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["type specifiers, C", "specifiers, type"]
 ms.assetid: fbe13441-04c3-4829-b047-06d374adc2b6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Type Specifiers
 

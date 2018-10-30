@@ -1,15 +1,8 @@
 ---
-title: "Adding an ATL Property Page | Microsoft Docs"
-ms.custom: ""
+title: "Adding an ATL Property Page"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["property pages, adding", "ATL projects, adding property pages", "controls [ATL], property pages"]
 ms.assetid: ddf92b49-42a2-46d2-b6b8-d37baedebeca
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding an ATL Property Page
 

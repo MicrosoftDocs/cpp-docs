@@ -1,15 +1,8 @@
 ---
-title: "Optimizing Inline Assembly | Microsoft Docs"
-ms.custom: ""
+title: "Optimizing Inline Assembly"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["storage, optimizing in inline assembly", "optimization, inline assembly", "inline assembly, optimizing", "optimizing performance, inline assembly", "__asm keyword [C++], optimizing"]
 ms.assetid: 52a7ec83-9782-4d96-94c1-53bb2ac9e8c8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Optimizing Inline Assembly
 

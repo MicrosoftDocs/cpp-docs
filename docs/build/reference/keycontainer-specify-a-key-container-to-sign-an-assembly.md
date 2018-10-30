@@ -1,16 +1,9 @@
 ---
-title: "-KEYCONTAINER (Specify a Key Container to Sign an Assembly) | Microsoft Docs"
-ms.custom: ""
+title: "/KEYCONTAINER (Specify a Key Container to Sign an Assembly)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.KeyContainer", "/keycontainer"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["KEYCONTAINER linker option", "/KEYCONTAINER linker option", "-KEYCONTAINER linker option"]
 ms.assetid: 94882d12-b77a-49c7-96d0-18a31aee001e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /KEYCONTAINER (Specify a Key Container to Sign an Assembly)
 

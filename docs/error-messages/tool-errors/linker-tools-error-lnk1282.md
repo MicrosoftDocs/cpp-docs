@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1282 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1282"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1282"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1282"]
 ms.assetid: 99c13f52-eb80-46ce-a5b9-4537583e32a9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1282
 

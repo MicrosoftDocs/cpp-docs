@@ -1,16 +1,10 @@
 ---
-title: "InterfaceListHelper Structure | Microsoft Docs"
-ms.custom: ""
+title: "InterfaceListHelper Structure"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::InterfaceListHelper"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["InterfaceListHelper structure"]
 ms.assetid: 4297e419-c96b-45df-8a00-7568062125ba
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # InterfaceListHelper Structure
 

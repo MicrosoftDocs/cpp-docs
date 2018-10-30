@@ -1,15 +1,8 @@
 ---
-title: "Explicit Specialization of Function Templates | Microsoft Docs"
-ms.custom: ""
+title: "Explicit Specialization of Function Templates"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["overriding, functions", "function templates, specialization", "explicit specialization of function templates", "declaring functions [C++], specialization of function template", "specialization of function templates"]
 ms.assetid: eb0fcb73-eaed-42a1-9b83-14b055a34bf8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Explicit Specialization of Function Templates
 

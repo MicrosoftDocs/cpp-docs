@@ -1,15 +1,8 @@
 ---
-title: "Vectorizer and Parallelizer Messages | Microsoft Docs"
-ms.custom: ""
+title: "Vectorizer and Parallelizer Messages"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C5011", "C5002", "C5021", "C5001", "C5012"]
-dev_langs: ["C++"]
 ms.assetid: d8f4844a-f414-42ab-b9a5-925a5da9d365
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Vectorizer and Parallelizer Messages
 

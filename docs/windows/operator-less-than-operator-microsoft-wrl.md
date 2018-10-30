@@ -1,15 +1,9 @@
 ---
-title: "operator&lt; Operator (Microsoft::WRL) | Microsoft Docs"
-ms.custom: ""
+title: "operator&lt; Operator (Microsoft::WRL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::operator<"]
-dev_langs: ["C++"]
 ms.assetid: bfae0e1c-1648-482b-99c2-3217d62aba46
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # operator&lt; Operator (Microsoft::WRL)
 

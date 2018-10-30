@@ -1,15 +1,8 @@
 ---
-title: "How to: Create CLR Console Applications (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "How to: Create CLR Console Applications (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["console applications, templates", "CLR console applications, project template"]
 ms.assetid: e89bce3c-706f-4ae0-8a90-cb1a0f674e70
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Create CLR Console Applications (C++/CLI)
 

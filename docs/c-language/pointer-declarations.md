@@ -1,15 +1,8 @@
 ---
-title: "Pointer Declarations | Microsoft Docs"
-ms.custom: ""
+title: "Pointer Declarations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["pointer declarations", "declarations, pointers", "const keyword [C]", "pointers, declarations"]
 ms.assetid: 8b3b7fc7-f44d-480d-b6f9-cebe4e5462a6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Pointer Declarations
 

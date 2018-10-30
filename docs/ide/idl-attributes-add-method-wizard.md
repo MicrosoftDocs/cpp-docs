@@ -1,16 +1,9 @@
 ---
-title: "IDL Attributes, Add Method Wizard | Microsoft Docs"
-ms.custom: ""
+title: "IDL Attributes, Add Method Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.method.idlattrib"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Add Method Wizard [C++]", "IDL attributes, Add Method Wizard"]
 ms.assetid: f80c3bc1-b515-4d6c-83ee-98c2c21ba902
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IDL Attributes, Add Method Wizard
 

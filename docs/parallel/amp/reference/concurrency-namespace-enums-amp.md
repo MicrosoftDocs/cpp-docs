@@ -1,14 +1,8 @@
 ---
-title: "Concurrency namespace enums (AMP) | Microsoft Docs"
-ms.custom: ""
+title: "Concurrency namespace enums (AMP)"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["amp/Concurrency::access_type", "amp/Concurrency::queuing_mode"]
-dev_langs: ["C++"]
 ms.assetid: 4c87457e-184f-4992-81ab-ca75e7d524ab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Concurrency namespace enums (AMP)
 

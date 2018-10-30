@@ -1,15 +1,8 @@
 ---
-title: "Recordset: Fetching Records in Bulk (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: Fetching Records in Bulk (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["bulk row fetching, implementing", "ODBC recordsets, bulk row fetching", "bulk record field exchange", "bulk row fetching", "bulk RFX functions", "recordsets, bulk row fetching", "DoBulkFieldExchange method", "fetching ODBC records in bulk", "RFX (ODBC), bulk", "rowsets, bulk row fetching", "RFX (ODBC), bulk row fetching"]
 ms.assetid: 20d10fe9-c58a-414a-b675-cdf9aa283e4f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Fetching Records in Bulk (ODBC)
 

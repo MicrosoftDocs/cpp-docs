@@ -1,15 +1,8 @@
 ---
-title: "Running a C++ -clr Application on a Previous Runtime Version | Microsoft Docs"
-ms.custom: ""
+title: "Running a C++ -clr Application on a Previous Runtime Version"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["applications [C++], runtime version specified", "versions [C++]", "app.config files, runtime version specified", "compatibility [C++], runtime version specified", "backward compatibility [C++], runtime version specified", "application deployment [C++], runtime version specified", "common language runtime [C++], version specified", "deploying applications [C++], runtime version specified"]
 ms.assetid: 940171b7-6937-4b14-8e87-c199e23f4f2e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Running a C++ /clr Application on a Previous Runtime Version
 

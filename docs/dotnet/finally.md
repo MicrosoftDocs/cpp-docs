@@ -1,15 +1,8 @@
 ---
-title: "finally | Microsoft Docs"
-ms.custom: ""
+title: "finally"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["finally keyword [C++]"]
 ms.assetid: b55f3c8e-1af0-43e8-bcfb-99c3685d2578
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # finally
 

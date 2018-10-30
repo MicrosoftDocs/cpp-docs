@@ -1,14 +1,7 @@
 ---
-title: "UWP Apps, the Windows Runtime, and the C Run-Time | Microsoft Docs"
-ms.custom: ""
+title: "UWP Apps, the Windows Runtime, and the C Run-Time"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 356d6d8d-76ee-4181-9ad0-6f24b2fede38
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # UWP Apps, the Windows Runtime, and the C Run-Time
 

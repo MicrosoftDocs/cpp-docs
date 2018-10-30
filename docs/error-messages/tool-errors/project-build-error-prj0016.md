@@ -1,16 +1,9 @@
 ---
-title: "Project Build Error PRJ0016 | Microsoft Docs"
-ms.custom: ""
+title: "Project Build Error PRJ0016"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["PRJ0016"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PRJ0016"]
 ms.assetid: e9745336-883a-4c70-9c40-7753e02f0325
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Project Build Error PRJ0016
 

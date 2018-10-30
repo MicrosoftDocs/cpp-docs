@@ -1,16 +1,9 @@
 ---
-title: "helpstringdll (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "helpstringdll (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.helpstringdll"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["helpstringdll attribute [C++]"]
 ms.assetid: 121271fa-f061-492b-b87f-bbfcf4b02e7b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # helpstringdll
 

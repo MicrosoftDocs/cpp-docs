@@ -1,16 +1,9 @@
 ---
-title: "Command-Line Error D8016 | Microsoft Docs"
-ms.custom: ""
+title: "Command-Line Error D8016"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["D8016"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["D8016"]
 ms.assetid: eec51312-7471-4f92-94b2-d517cafc8ef5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Command-Line Error D8016
 

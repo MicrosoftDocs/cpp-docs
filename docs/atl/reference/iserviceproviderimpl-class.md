@@ -1,16 +1,9 @@
 ---
-title: "IServiceProviderImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IServiceProviderImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IServiceProviderImpl", "ATLCOM/ATL::IServiceProviderImpl", "ATLCOM/ATL::IServiceProviderImpl::QueryService"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IServiceProviderImpl class", "IServiceProvider interface, ATL implementation"]
 ms.assetid: 251254d3-c4ce-40d7-aee0-3d676d1d72f2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IServiceProviderImpl Class
 

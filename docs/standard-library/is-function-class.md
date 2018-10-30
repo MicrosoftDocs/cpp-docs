@@ -1,16 +1,9 @@
 ---
-title: "is_function Class | Microsoft Docs"
-ms.custom: ""
+title: "is_function Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_function class", "is"]
 ms.assetid: e5c0dbcd-829b-415f-853f-8c5be47c5040
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_function Class
 

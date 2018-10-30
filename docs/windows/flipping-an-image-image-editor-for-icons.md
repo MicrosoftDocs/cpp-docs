@@ -1,15 +1,8 @@
 ---
-title: "Flipping an Image (Image Editor for Icons) | Microsoft Docs"
-ms.custom: ""
+title: "Flipping an Image (Image Editor for Icons)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Image editor [C++], flipping and rotating images", "images [C++], flipping", "images [C++], rotating"]
 ms.assetid: a63d251c-7343-4ad6-9442-1faa04a9a2a1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Flipping an Image (Image Editor for Icons)
 

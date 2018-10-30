@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4239 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4239"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4239"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4239"]
 ms.assetid: a23dc16a-649e-4870-9a24-275de1584fcd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4239
 

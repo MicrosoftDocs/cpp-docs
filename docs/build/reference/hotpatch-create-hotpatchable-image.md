@@ -1,16 +1,9 @@
 ---
-title: "-hotpatch (Create Hotpatchable Image) | Microsoft Docs"
-ms.custom: ""
+title: "/hotpatch (Create Hotpatchable Image)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/hotpatch", "VC.Project.VCCLCompilerTool.CreateHotpatchableImage"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["hot patching", "-hotpatch compiler option [C++]", "/hotpatch compiler option [C++]", "hotpatching"]
 ms.assetid: aad539b6-c053-4c78-8682-853d98327798
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /hotpatch (Create Hotpatchable Image)
 

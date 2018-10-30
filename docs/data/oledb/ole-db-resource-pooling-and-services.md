@@ -1,15 +1,8 @@
 ---
-title: "OLE DB Resource Pooling and Services | Microsoft Docs"
-ms.custom: ""
+title: "OLE DB Resource Pooling and Services"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["resource pooling [OLE DB], provider requirements", "OLE DB, resource pooling", "service providers [OLE DB]", "OLE DB services [OLE DB], provider requirements", "OLE DB services [OLE DB]", "OLE DB providers, resource pooling"]
 ms.assetid: 360c36e2-25ae-4caf-8ee7-d4a6b6898f68
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Resource Pooling and Services
 

@@ -1,15 +1,8 @@
 ---
-title: "How Noncommand Messages Reach Their Handlers | Microsoft Docs"
-ms.custom: ""
+title: "How Noncommand Messages Reach Their Handlers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["messages [MFC], routing", "noncommand messages", "Windows messages [MFC], routing", "message handling [MFC], noncommand messages"]
 ms.assetid: e7df8aef-9fae-41f4-9c11-881d8465f602
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How Noncommand Messages Reach Their Handlers
 

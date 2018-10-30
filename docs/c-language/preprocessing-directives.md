@@ -1,15 +1,8 @@
 ---
-title: "Preprocessing Directives | Microsoft Docs"
-ms.custom: ""
+title: "Preprocessing Directives"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessing directives, C", "preprocessing directives"]
 ms.assetid: b27d7444-8f84-4c31-b2fa-03335412d5e6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Preprocessing Directives
 

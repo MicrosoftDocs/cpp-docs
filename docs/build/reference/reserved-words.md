@@ -1,16 +1,9 @@
 ---
-title: "Reserved words | Microsoft Docs"
-ms.custom: ""
+title: "Reserved words"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["code", "CONFORMING", "DISCARDABLE", "Description", "base", "APPLOADER", "Data", "DYNAMIC", "DEV386"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".def files [C++], reserved words", "def files [C++], reserved words", "linker [C++], reserved words", "reserved words [C++]"]
 ms.assetid: 9b9f49e5-0739-45ab-a37e-81e3915ceb25
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Reserved words
 

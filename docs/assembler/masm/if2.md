@@ -1,16 +1,9 @@
 ---
-title: "IF2 | Microsoft Docs"
-ms.custom: ""
+title: "IF2"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["IF2"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IF2 directive"]
 ms.assetid: a0f75564-b51b-4e39-ad3b-f7421e7ecad6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # IF2
 

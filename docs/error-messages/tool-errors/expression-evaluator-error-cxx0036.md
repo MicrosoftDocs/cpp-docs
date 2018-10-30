@@ -1,16 +1,9 @@
 ---
-title: "Expression Evaluator Error CXX0036 | Microsoft Docs"
-ms.custom: ""
+title: "Expression Evaluator Error CXX0036"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["CXX0036"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CXX0036", "CAN0036"]
 ms.assetid: 383404be-df5b-4eec-b113-df21bb5d269d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0036
 

@@ -1,19 +1,12 @@
 ---
-title: "_RTC_SetErrorFuncW | Microsoft Docs"
-ms.custom: ""
+title: "_RTC_SetErrorFuncW"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_RTC_SetErrorFuncW"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_RTC_SetErrorFuncW", "RTC_SetErrorFuncW"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["run-time errors", "RTC_SetErrorFuncW function", "_RTC_error_fnW typedef", "_RTC_SetErrorFuncW function", "RTC_error_fnW typedef"]
 ms.assetid: b3e0d71f-1bd3-4c37-9ede-2f638eb3c81a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _RTC_SetErrorFuncW
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3919 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3919"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3919"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3919"]
 ms.assetid: 5f8eddda-d751-478b-930d-e18f7191ddfb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3919
 

@@ -1,16 +1,9 @@
 ---
-title: "EQU | Microsoft Docs"
-ms.custom: ""
+title: "EQU"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["EQU"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["EQU directive"]
 ms.assetid: 96db466a-1eab-45bd-a3c2-5a59bd754eab
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # EQU
 

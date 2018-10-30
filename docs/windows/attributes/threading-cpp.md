@@ -1,16 +1,9 @@
 ---
-title: "threading  (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "threading  (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.threading"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["threading attribute"]
 ms.assetid: 9b558cd6-fbf0-4602-aed5-31c068550ce3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # threading (C++)
 

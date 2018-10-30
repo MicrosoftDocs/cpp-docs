@@ -1,16 +1,10 @@
 ---
-title: "ArgTraits Structure | Microsoft Docs"
-ms.custom: ""
+title: "ArgTraits Structure"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::Details::ArgTraits", "event/Microsoft::WRL::Details::ArgTraits::args"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Details::ArgTraits structure", "Microsoft::WRL::Details::ArgTraits::args constant"]
 ms.assetid: 58ae4115-c1bc-48c8-b01b-e60554841c30
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # ArgTraits Structure
 

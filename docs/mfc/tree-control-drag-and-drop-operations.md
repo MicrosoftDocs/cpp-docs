@@ -1,15 +1,8 @@
 ---
-title: "Tree Control Drag-and-Drop Operations | Microsoft Docs"
-ms.custom: ""
+title: "Tree Control Drag-and-Drop Operations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTreeCtrl class [MFC], drag and drop operations", "drag and drop [MFC], CTreeCtrl", "tree controls [MFC], drag and drop operations"]
 ms.assetid: 3cf78b4c-4579-4fe1-9bc9-c5ab876e4af1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Tree Control Drag-and-Drop Operations
 

@@ -1,16 +1,9 @@
 ---
-title: "&lt;sstream&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;sstream&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<sstream>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["sstream header"]
 ms.assetid: 56f55bc5-549d-4e7f-aaad-99e0ffa49c9e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;sstream&gt;
 

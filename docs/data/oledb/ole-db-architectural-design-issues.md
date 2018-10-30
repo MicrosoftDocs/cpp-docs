@@ -1,15 +1,8 @@
 ---
-title: "OLE DB Architectural Design Issues | Microsoft Docs"
-ms.custom: ""
+title: "OLE DB Architectural Design Issues"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB, application design considerations"]
 ms.assetid: 8caa7d99-d2bb-42c9-8884-74f228bb6ecc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Architectural Design Issues
 

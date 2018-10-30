@@ -1,15 +1,8 @@
 ---
-title: "Current Time: Automation Classes | Microsoft Docs"
-ms.custom: ""
+title: "Current Time: Automation Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["time, setting current", "current time, COleDateTime object", "procedures, getting current time", "Automation classes, current time", "time, getting current"]
 ms.assetid: cc967f17-1189-4cf3-85f9-1969462d5f72
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Current Time: Automation Classes
 

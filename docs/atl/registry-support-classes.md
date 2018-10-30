@@ -1,16 +1,10 @@
 ---
-title: "Registry Support Classes (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Registry Support Classes (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.atl.registry"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["registry support classes, ATL", "ATL, registry", "registry support classes"]
 ms.assetid: 4203c346-77a9-42bf-8683-a3c3351cc490
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Registry Support Classes
 

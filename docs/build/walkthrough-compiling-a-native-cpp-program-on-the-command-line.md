@@ -1,15 +1,9 @@
 ---
-title: "Walkthrough: Compiling a Native C++ Program on the Command Line | Microsoft Docs"
+title: "Walkthrough: Compiling a Native C++ Program on the Command Line"
 ms.custom: "conceptual"
 ms.date: "09/24/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["native code [C++]", "Visual C++, native code", "compiling programs [C++]", "command-line applications [C++], native"]
 ms.assetid: b200cfd1-0440-498f-90ee-7ecf92492dc0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Compiling a Native C++ Program on the Command Line
 

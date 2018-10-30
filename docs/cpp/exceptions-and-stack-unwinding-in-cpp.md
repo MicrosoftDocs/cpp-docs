@@ -1,14 +1,7 @@
 ---
-title: "Exceptions and Stack Unwinding in C++ | Microsoft Docs"
-ms.custom: ""
+title: "Exceptions and Stack Unwinding in C++"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: a1a57eae-5fc5-4c49-824f-3ce2eb8129ed
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exceptions and Stack Unwinding in C++
 

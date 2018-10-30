@@ -1,15 +1,8 @@
 ---
-title: "Registration | Microsoft Docs"
-ms.custom: ""
+title: "Registration"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["servers [MFC], initializing", "initializing servers [MFC]", "OLE, registration", "installing servers [MFC]", "registry [MFC], OLE item database", "registration databases [MFC]", "servers [MFC], installing", "OLE server applications [MFC], registering servers"]
 ms.assetid: 991d5684-72c1-4f9e-a09a-9184ed12bbb9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Registration
 

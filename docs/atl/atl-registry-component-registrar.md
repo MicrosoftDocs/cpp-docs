@@ -1,15 +1,8 @@
 ---
-title: "ATL Registry Component (Registrar) | Microsoft Docs"
-ms.custom: ""
+title: "ATL Registry Component (Registrar)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["scripting, registry scripting", "ATL, registry", "registrar scripts [ATL]", "registry, accessing", "ATL Registrar", "scripts, Registrar scripts", "registry, Registrar"]
 ms.assetid: 106752ae-4cfc-4030-8cb2-d36a1d635a2e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Registry Component (Registrar)
 

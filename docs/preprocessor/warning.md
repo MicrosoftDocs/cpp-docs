@@ -1,16 +1,9 @@
 ---
-title: "warning | Microsoft Docs"
-ms.custom: ""
+title: "warning"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["warning_CPP", "vc-pragma.warning"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, warning", "push pragma warning", "pop warning pragma", "warning pragma"]
 ms.assetid: 8e9a0dec-e223-4657-b21d-5417ebe29cc8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # warning Pragma
 Enables selective modification of the behavior of compiler warning messages.

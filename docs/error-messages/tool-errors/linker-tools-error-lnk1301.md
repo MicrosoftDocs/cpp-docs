@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1301 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1301"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1301"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1301"]
 ms.assetid: 760da428-7182-4b25-b20a-de90d4b9a9cd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1301
 

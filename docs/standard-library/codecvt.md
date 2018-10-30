@@ -1,16 +1,9 @@
 ---
-title: "&lt;codecvt&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;codecvt&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["codecvt", "<codecvt>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["codecvt header"]
 ms.assetid: d44ee229-00d5-4761-9b48-0c702122789d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;codecvt&gt;
 

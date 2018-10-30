@@ -1,16 +1,10 @@
 ---
-title: "MakeAllocator Class | Microsoft Docs"
-ms.custom: ""
+title: "MakeAllocator Class"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::MakeAllocator", "implements/Microsoft::WRL::Details::MakeAllocator::Allocate", "implements/Microsoft::WRL::Details::MakeAllocator::Detach", "implements/Microsoft::WRL::Details::MakeAllocator::MakeAllocator", "implements/Microsoft::WRL::Details::MakeAllocator::~MakeAllocator"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Details::MakeAllocator class", "Microsoft::WRL::Details::MakeAllocator::Allocate method", "Microsoft::WRL::Details::MakeAllocator::Detach method", "Microsoft::WRL::Details::MakeAllocator::MakeAllocator, constructor", "Microsoft::WRL::Details::MakeAllocator::~MakeAllocator, destructor"]
 ms.assetid: a1114615-abd7-4a56-9bc3-750c118f0fa1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # MakeAllocator Class
 

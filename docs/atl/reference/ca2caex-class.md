@@ -1,16 +1,9 @@
 ---
-title: "CA2CAEX Class | Microsoft Docs"
-ms.custom: ""
+title: "CA2CAEX Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CA2CAEX", "ATLCONV/ATL::CA2CAEX", "ATLCONV/ATL::CA2CAEX::CA2CAEX", "ATLCONV/ATL::CA2CAEX::m_psz"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CA2CAEX class"]
 ms.assetid: 388e7c1d-a144-474c-a182-b15f69a74bd8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CA2CAEX Class
 

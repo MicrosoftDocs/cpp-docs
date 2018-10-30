@@ -1,15 +1,8 @@
 ---
-title: "MFC ActiveX Controls: Adding Custom Methods | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Adding Custom Methods"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], methods", "PtInCircle custom method [MFC]"]
 ms.assetid: 8f8dc344-44a0-4021-8db5-4cdd3d700e18
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Adding Custom Methods
 

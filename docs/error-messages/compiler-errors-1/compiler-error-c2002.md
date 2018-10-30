@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2002 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2002"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2002"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2002"]
 ms.assetid: 91982314-203a-4de1-b884-94e39a623f61
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2002
 

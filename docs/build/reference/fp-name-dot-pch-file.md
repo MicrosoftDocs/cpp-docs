@@ -1,16 +1,9 @@
 ---
-title: "-Fp (Name .Pch File) | Microsoft Docs"
-ms.custom: ""
+title: "/Fp (Name .Pch File)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.PrecompiledHeaderFile", "/fp", "VC.Project.VCCLWCECompilerTool.PrecompiledHeaderFile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Fp compiler option [C++]", "-Fp compiler option [C++]", "naming precompiler header files", "PCH files, naming", "names [C++], PCH", ".pch files, naming", "precompiled header files, naming", "/Fp compiler option [C++]"]
 ms.assetid: 0fcd9cbd-e09f-44d3-9715-b41efb5d0be2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Fp (Name .Pch File)
 

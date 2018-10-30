@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Debugging a C++ AMP Application | Microsoft Docs"
-ms.custom: ""
+title: "Walkthrough: Debugging a C++ AMP Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["debugging, C++ Accelerated Massive Parallelism", "C++ AMP, debugging", "C++ Accelerated Massive Parallelism, debugging", "debugging, C++ AMP"]
 ms.assetid: 40e92ecc-f6ba-411c-960c-b3047b854fb5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Debugging a C++ AMP Application
 

@@ -1,15 +1,8 @@
 ---
-title: "Overview of Declarations | Microsoft Docs"
-ms.custom: ""
+title: "Overview of Declarations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["declarations, about declarations", "type qualifiers"]
 ms.assetid: fcd2364c-c2a5-4fbf-9027-19dac4144cb5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Overview of Declarations
 

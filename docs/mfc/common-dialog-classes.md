@@ -1,15 +1,8 @@
 ---
-title: "Common Dialog Classes | Microsoft Docs"
-ms.custom: ""
+title: "Common Dialog Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["dialog classes [MFC]", "dialog boxes [MFC], Windows common dialogs", "common dialog boxes [MFC], common dialog classes", "common dialog classes [MFC]", "MFC dialog boxes [MFC], Windows common dialogs", "Windows common dialogs [MFC]", "dialog classes [MFC], common", "common dialog boxes [MFC]"]
 ms.assetid: 5c4f6443-896c-4b05-a7df-8169fdadc71d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Common Dialog Classes
 

@@ -1,15 +1,9 @@
 ---
-title: "How to: Detect -clr Compilation | Microsoft Docs"
+title: "How to: Detect -clr Compilation"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["compilation, detecting /clr", "/clr compiler option [C++], detecting use of"]
 ms.assetid: a9310045-4810-4637-a64a-0b31a08791c1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Detect /clr Compilation
 

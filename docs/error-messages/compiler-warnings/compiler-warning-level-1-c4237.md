@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4237 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4237"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4237"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4237"]
 ms.assetid: f2e86c4b-80d8-460e-9429-83c5f3f5d7ca
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4237
 

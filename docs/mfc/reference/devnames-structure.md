@@ -1,16 +1,9 @@
 ---
-title: "DEVNAMES Structure | Microsoft Docs"
-ms.custom: ""
+title: "DEVNAMES Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["DEVNAMES"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DEVNAMES [MFC]"]
 ms.assetid: aac97f60-2169-471a-ba5d-c0baed9eed9a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # DEVNAMES Structure
 

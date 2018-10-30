@@ -1,15 +1,8 @@
 ---
-title: "Your Role in Working with a Record View  (MFC Data Access) | Microsoft Docs"
-ms.custom: ""
+title: "Your Role in Working with a Record View  (MFC Data Access)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["record views, customizing default code", "MFC, record views"]
 ms.assetid: 691e89a5-ff21-4ca3-9278-69d4678288bb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Your Role in Working with a Record View  (MFC Data Access)
 

@@ -1,16 +1,9 @@
 ---
-title: "sync_per_container Class | Microsoft Docs"
-ms.custom: ""
+title: "sync_per_container Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["allocators/stdext::sync_per_container", "allocators/stdext::sync_per_container::equals"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["sync_per_container class"]
 ms.assetid: 0b4b2904-b668-4d94-a422-d4f919cbffab
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # sync_per_container Class
 

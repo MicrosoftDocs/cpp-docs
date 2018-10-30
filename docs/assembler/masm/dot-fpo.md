@@ -1,16 +1,9 @@
 ---
-title: ".FPO | Microsoft Docs"
-ms.custom: ""
+title: ".FPO"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".FPO"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".FPO directive"]
 ms.assetid: 35f4cd61-32f9-4262-b657-73f04f775d09
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .FPO
 

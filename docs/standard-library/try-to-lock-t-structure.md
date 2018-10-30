@@ -1,15 +1,8 @@
 ---
-title: "try_to_lock_t Structure | Microsoft Docs"
-ms.custom: ""
+title: "try_to_lock_t Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["mutex/std::try_to_lock_t"]
-dev_langs: ["C++"]
 ms.assetid: 3e48d632-0387-4871-8257-34efef5d6b83
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # try_to_lock_t Structure
 

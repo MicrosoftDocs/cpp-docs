@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3807 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3807"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3807"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3807"]
 ms.assetid: 7e2b0aab-8c61-4e71-b9c1-fcaeb6a1b5ea
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3807
 

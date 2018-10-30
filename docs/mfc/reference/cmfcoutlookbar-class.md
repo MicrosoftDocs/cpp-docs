@@ -1,16 +1,9 @@
 ---
-title: "CMFCOutlookBar Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCOutlookBar Class"
 ms.date: "06/25/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCOutlookBar", "AFXOUTLOOKBAR/CMFCOutlookBar", "AFXOUTLOOKBAR/CMFCOutlookBar::AllowDestroyEmptyTabbedPane", "AFXOUTLOOKBAR/CMFCOutlookBar::CanAcceptPane", "AFXOUTLOOKBAR/CMFCOutlookBar::CanSetCaptionTextToTabName", "AFXOUTLOOKBAR/CMFCOutlookBar::Create", "AFXOUTLOOKBAR/CMFCOutlookBar::CreateCustomPage", "AFXOUTLOOKBAR/CMFCOutlookBar::DoesAllowDynInsertBefore", "AFXOUTLOOKBAR/CMFCOutlookBar::FloatTab", "AFXOUTLOOKBAR/CMFCOutlookBar::GetButtonsFont", "AFXOUTLOOKBAR/CMFCOutlookBar::GetTabArea", "AFXOUTLOOKBAR/CMFCOutlookBar::IsMode2003", "AFXOUTLOOKBAR/CMFCOutlookBar::OnAfterAnimation", "AFXOUTLOOKBAR/CMFCOutlookBar::OnBeforeAnimation", "AFXOUTLOOKBAR/CMFCOutlookBar::OnScroll", "AFXOUTLOOKBAR/CMFCOutlookBar::RemoveCustomPage", "AFXOUTLOOKBAR/CMFCOutlookBar::SetButtonsFont", "AFXOUTLOOKBAR/CMFCOutlookBar::SetMode2003"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCOutlookBar [MFC], AllowDestroyEmptyTabbedPane", "CMFCOutlookBar [MFC], CanAcceptPane", "CMFCOutlookBar [MFC], CanSetCaptionTextToTabName", "CMFCOutlookBar [MFC], Create", "CMFCOutlookBar [MFC], CreateCustomPage", "CMFCOutlookBar [MFC], DoesAllowDynInsertBefore", "CMFCOutlookBar [MFC], FloatTab", "CMFCOutlookBar [MFC], GetButtonsFont", "CMFCOutlookBar [MFC], GetTabArea", "CMFCOutlookBar [MFC], IsMode2003", "CMFCOutlookBar [MFC], OnAfterAnimation", "CMFCOutlookBar [MFC], OnBeforeAnimation", "CMFCOutlookBar [MFC], OnScroll", "CMFCOutlookBar [MFC], RemoveCustomPage", "CMFCOutlookBar [MFC], SetButtonsFont", "CMFCOutlookBar [MFC], SetMode2003"]
 ms.assetid: 2b335f71-ce99-4efd-b103-e65ba43ffc36
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCOutlookBar Class
 

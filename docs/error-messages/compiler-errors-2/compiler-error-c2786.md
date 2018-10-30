@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2786 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2786"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2786"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2786"]
 ms.assetid: 6676d8c0-86dd-4a39-bdda-b75a35f4d137
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2786
 

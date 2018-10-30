@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonUndoButton Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonUndoButton Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonUndoButton", "AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton", "AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::CMFCRibbonUndoButton", "AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::AddUndoAction", "AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::CleanUpUndoList", "AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::GetActionNumber", "AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::HasMenu"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonUndoButton [MFC], CMFCRibbonUndoButton", "CMFCRibbonUndoButton [MFC], AddUndoAction", "CMFCRibbonUndoButton [MFC], CleanUpUndoList", "CMFCRibbonUndoButton [MFC], GetActionNumber", "CMFCRibbonUndoButton [MFC], HasMenu"]
 ms.assetid: 5c42adf7-871d-4239-901e-47ae7fb816fc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonUndoButton Class
 

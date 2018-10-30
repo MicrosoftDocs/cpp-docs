@@ -1,16 +1,9 @@
 ---
-title: "Unions | Microsoft Docs"
-ms.custom: ""
+title: "Unions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["union_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["class types [C++], unions as", "union keyword [C++]"]
 ms.assetid: 25c4e219-fcbb-4b7b-9b64-83f3252a92ca
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Unions
 

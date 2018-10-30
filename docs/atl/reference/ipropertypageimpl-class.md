@@ -1,16 +1,9 @@
 ---
-title: "IPropertyPageImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IPropertyPageImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IPropertyPageImpl", "ATLCTL/ATL::IPropertyPageImpl", "ATLCTL/ATL::IPropertyPageImpl::IPropertyPageImpl", "ATLCTL/ATL::IPropertyPageImpl::Activate", "ATLCTL/ATL::IPropertyPageImpl::Apply", "ATLCTL/ATL::IPropertyPageImpl::Deactivate", "ATLCTL/ATL::IPropertyPageImpl::GetPageInfo", "ATLCTL/ATL::IPropertyPageImpl::Help", "ATLCTL/ATL::IPropertyPageImpl::IsPageDirty", "ATLCTL/ATL::IPropertyPageImpl::Move", "ATLCTL/ATL::IPropertyPageImpl::SetDirty", "ATLCTL/ATL::IPropertyPageImpl::SetObjects", "ATLCTL/ATL::IPropertyPageImpl::SetPageSite", "ATLCTL/ATL::IPropertyPageImpl::Show", "ATLCTL/ATL::IPropertyPageImpl::TranslateAccelerator", "ATLCTL/ATL::IPropertyPageImpl::m_bDirty", "ATLCTL/ATL::IPropertyPageImpl::m_dwDocString", "ATLCTL/ATL::IPropertyPageImpl::m_dwHelpContext", "ATLCTL/ATL::IPropertyPageImpl::m_dwHelpFile", "ATLCTL/ATL::IPropertyPageImpl::m_dwTitle", "ATLCTL/ATL::IPropertyPageImpl::m_nObjects", "ATLCTL/ATL::IPropertyPageImpl::m_pPageSite", "ATLCTL/ATL::IPropertyPageImpl::m_ppUnk", "ATLCTL/ATL::IPropertyPageImpl::m_size"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["property pages", "IPropertyPage ATL implementation", "IPropertyPageImpl class"]
 ms.assetid: f9b7c8b1-7a04-4eab-aa63-63efddb740fa
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IPropertyPageImpl Class
 

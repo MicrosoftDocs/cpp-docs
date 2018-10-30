@@ -1,15 +1,8 @@
 ---
-title: "Editing Control Properties | Microsoft Docs"
-ms.custom: ""
+title: "Editing Control Properties"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["controls [C++], undoing changes", "controls [C++], editing properties", "dialog box controls [C++], editing properties"]
 ms.assetid: 9bdae21d-6dec-4344-a197-2ca4fc46d040
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Editing Control Properties
 

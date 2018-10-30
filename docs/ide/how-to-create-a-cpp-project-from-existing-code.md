@@ -1,15 +1,8 @@
 ---
-title: "How to: Create a C++ Project from Existing Code | Microsoft Docs"
-ms.custom: ""
+title: "How to: Create a C++ Project from Existing Code"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["C++, creating projects from existing code"]
 ms.assetid: e328a938-395c-48ea-9e35-dd433de12b31
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Create a C++ Project from Existing Code
 

@@ -1,14 +1,7 @@
 ---
-title: "A.9   Using single Directives | Microsoft Docs"
-ms.custom: ""
+title: "A.9   Using single Directives"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 0c0f9495-5794-4db9-883b-a12e3a9f1328
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # A.9   Using single Directives
 

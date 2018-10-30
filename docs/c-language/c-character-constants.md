@@ -1,15 +1,8 @@
 ---
-title: "C Character Constants | Microsoft Docs"
-ms.custom: ""
+title: "C Character Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["characters, constants", "(') single quotation mark", "constants, character", "single quotation mark"]
 ms.assetid: 388ae7d7-2c3a-44d6-a507-63f541ecd2da
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Character Constants
 

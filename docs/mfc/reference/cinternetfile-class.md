@@ -1,16 +1,9 @@
 ---
-title: "CInternetFile Class | Microsoft Docs"
-ms.custom: ""
+title: "CInternetFile Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CInternetFile", "AFXINET/CInternetFile", "AFXINET/CInternetFile::CInternetFile", "AFXINET/CInternetFile::Abort", "AFXINET/CInternetFile::Close", "AFXINET/CInternetFile::Flush", "AFXINET/CInternetFile::GetLength", "AFXINET/CInternetFile::Read", "AFXINET/CInternetFile::ReadString", "AFXINET/CInternetFile::Seek", "AFXINET/CInternetFile::SetReadBufferSize", "AFXINET/CInternetFile::SetWriteBufferSize", "AFXINET/CInternetFile::Write", "AFXINET/CInternetFile::WriteString", "AFXINET/CInternetFile::m_hFile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CInternetFile [MFC], CInternetFile", "CInternetFile [MFC], Abort", "CInternetFile [MFC], Close", "CInternetFile [MFC], Flush", "CInternetFile [MFC], GetLength", "CInternetFile [MFC], Read", "CInternetFile [MFC], ReadString", "CInternetFile [MFC], Seek", "CInternetFile [MFC], SetReadBufferSize", "CInternetFile [MFC], SetWriteBufferSize", "CInternetFile [MFC], Write", "CInternetFile [MFC], WriteString", "CInternetFile [MFC], m_hFile"]
 ms.assetid: 96935681-ee71-4a8d-9783-5abc7b3e6f10
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CInternetFile Class
 

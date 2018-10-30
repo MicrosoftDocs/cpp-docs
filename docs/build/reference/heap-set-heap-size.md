@@ -1,16 +1,9 @@
 ---
-title: "-HEAP (Set Heap Size) | Microsoft Docs"
-ms.custom: ""
+title: "/HEAP (Set Heap Size)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.HeapCommitSize", "/heap", "VC.Project.VCLinkerTool.HeapReserveSize"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-HEAP linker option", "heap allocation, setting heap size", "/HEAP linker option", "HEAP linker option"]
 ms.assetid: a3f71927-7f1d-492c-9fdb-dfccb1a043da
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /HEAP (Set Heap Size)
 

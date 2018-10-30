@@ -1,16 +1,9 @@
 ---
-title: "CAtlFile Class | Microsoft Docs"
-ms.custom: ""
+title: "CAtlFile Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAtlFile", "ATLFILE/ATL::CAtlFile", "ATLFILE/ATL::CAtlFile::CAtlFile", "ATLFILE/ATL::CAtlFile::Create", "ATLFILE/ATL::CAtlFile::Flush", "ATLFILE/ATL::CAtlFile::GetOverlappedResult", "ATLFILE/ATL::CAtlFile::GetPosition", "ATLFILE/ATL::CAtlFile::GetSize", "ATLFILE/ATL::CAtlFile::LockRange", "ATLFILE/ATL::CAtlFile::Read", "ATLFILE/ATL::CAtlFile::Seek", "ATLFILE/ATL::CAtlFile::SetSize", "ATLFILE/ATL::CAtlFile::UnlockRange", "ATLFILE/ATL::CAtlFile::Write", "ATLFILE/ATL::CAtlFile::m_pTM"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlFile class"]
 ms.assetid: 93ed160b-af2a-448c-9cbe-e5fa46c199bb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlFile Class
 

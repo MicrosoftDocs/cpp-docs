@@ -1,16 +1,9 @@
 ---
-title: "ostrstream Class | Microsoft Docs"
-ms.custom: ""
+title: "ostrstream Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["strstream/std::ostrstream::freeze", "strstream/std::ostrstream::pcount", "strstream/std::ostrstream::rdbuf", "strstream/std::ostrstream::str"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::ostrstream [C++], freeze", "std::ostrstream [C++], pcount", "std::ostrstream [C++], rdbuf", "std::ostrstream [C++], str"]
 ms.assetid: e2e34679-b266-4728-a8e1-8eda5d400e46
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ostrstream Class
 

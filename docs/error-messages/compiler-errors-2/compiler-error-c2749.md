@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2749 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2749"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2749"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2749"]
 ms.assetid: a81aef36-cdca-4d78-89d5-b72eff2500b2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2749
 

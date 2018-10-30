@@ -1,14 +1,7 @@
 ---
 title: "Visual C++ features deprecated in Visual Studio 2019 preview"
-ms.custom: ""
 ms.date: "10/10/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Features deprecated in Visual Studio 2019"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Visual C++ features deprecated in Visual Studio 2019 preview
 

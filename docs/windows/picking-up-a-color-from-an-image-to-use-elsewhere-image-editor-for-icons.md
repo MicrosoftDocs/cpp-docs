@@ -1,16 +1,9 @@
 ---
-title: "Picking up a Color from an Image to Use Elsewhere (Image Editor for Icons) | Microsoft Docs"
-ms.custom: ""
+title: "Picking up a Color from an Image to Use Elsewhere (Image Editor for Icons)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.image.color"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["colors [C++], image", "images [C++], colors", "colors [C++], selection tools", "Image editor [C++], colors", "Select Color tool"]
 ms.assetid: b2753617-bde6-4e18-a441-20b9fa6d3cb1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Picking up a Color from an Image to Use Elsewhere (Image Editor for Icons)
 

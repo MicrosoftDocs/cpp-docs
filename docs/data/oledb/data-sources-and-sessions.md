@@ -1,15 +1,8 @@
 ---
-title: "Data Sources and Sessions | Microsoft Docs"
-ms.custom: ""
+title: "Data Sources and Sessions"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["data sources [C++], OLE DB", "connections [C++], data source", "OLE DB consumer templates [C++], data sources"]
 ms.assetid: 6ee52216-e082-4869-a1d6-ce561cfb76e5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Sources and Sessions
 

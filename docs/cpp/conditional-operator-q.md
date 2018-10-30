@@ -1,16 +1,9 @@
 ---
-title: "Conditional Operator: ? : | Microsoft Docs"
-ms.custom: ""
+title: "Conditional Operator: ? :"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["?:", "?"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["conditional operators [C++]", "? : operator"]
 ms.assetid: 88643ee8-7100-4f86-880a-705ec22b6271
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Conditional Operator: ? :
 

@@ -1,16 +1,9 @@
 ---
-title: "__int2c | Microsoft Docs"
-ms.custom: ""
+title: "__int2c"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__int2c", "__int2c_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["int2c intrinsic", "int 2c instruction", "__int2c intrinsic"]
 ms.assetid: aa20ff30-adef-42bb-8577-8010f3122f8e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __int2c
 

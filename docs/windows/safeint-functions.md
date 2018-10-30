@@ -1,16 +1,10 @@
 ---
-title: "SafeInt Functions | Microsoft Docs"
-ms.custom: ""
+title: "SafeInt Functions"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["SafeInt functions", "SafeAdd", "SafeCast", "SafeDivide", "SafeEquals", "SafeGreaterThan", "SafeGreaterThanEquals", "SafeLessThan", "SafeLessThanEquals", "SafeModulus", "SafeMultiply", "SafeNotEquals", "SafeSubtract"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["functions, SafeInt", "SafeAdd function", "SafeCast function", "SafeDivide function", "SafeEquals function", "SafeGreaterThan function", "SafeGreaterThanEquals function", "SafeLessThan function", "SafeLessThanEquals function", "SafeModulus function", "SafeMultiply function", "SafeNotEquals function", "SafeSubtract function"]
 ms.assetid: fdc208e5-5d8a-41a9-8271-567fd438958d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeInt Functions
 

@@ -1,16 +1,9 @@
 ---
-title: "-FC (Full Path of Source Code File in Diagnostics) | Microsoft Docs"
-ms.custom: ""
+title: "/FC (Full Path of Source Code File in Diagnostics)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.UseFullPaths", "/FC"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/FC compiler option [C++]", "-FC compiler option [C++]"]
 ms.assetid: 1f11414e-cb42-421b-be68-9d369aab036b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /FC (Full Path of Source Code File in Diagnostics)
 

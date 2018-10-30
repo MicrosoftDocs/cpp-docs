@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3469 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3469"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3469"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3469"]
 ms.assetid: e23b0e5c-c704-4e67-a868-bf02c2055d85
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3469
 

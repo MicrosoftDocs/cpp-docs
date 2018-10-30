@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3380 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3380"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3380"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3380"]
 ms.assetid: 86f1f4ec-4ad8-4a1a-9b6c-2d9b6129df6b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3380
 

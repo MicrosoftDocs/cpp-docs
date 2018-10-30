@@ -1,15 +1,8 @@
 ---
-title: "Bitwise Exclusive OR Operator: ^ | Microsoft Docs"
-ms.custom: ""
+title: "Bitwise Exclusive OR Operator: ^"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C++], bitwise", "exclusive OR operator", "XOR operator", "bitwise operators [C++], OR operator", "^ operator", "OR operator [C++], bitwise exclusive", "operators [C++], logical"]
 ms.assetid: f9185d85-65d5-4f64-a6d6-679758d52217
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Bitwise Exclusive OR Operator: ^
 

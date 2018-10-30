@@ -1,15 +1,8 @@
 ---
-title: "ODBC Driver List | Microsoft Docs"
-ms.custom: ""
+title: "ODBC Driver List"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC drivers", "ODBC drivers, list of", "drivers, ODBC"]
 ms.assetid: 4e12c832-39fe-44f7-9230-5c8d37203f11
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC Driver List
 

@@ -1,15 +1,8 @@
 ---
-title: "Implementation of a Custom String Manager (Basic Method) | Microsoft Docs"
-ms.custom: ""
+title: "Implementation of a Custom String Manager (Basic Method)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["IAtlStringMgr class, using"]
 ms.assetid: eac5d13e-cbb4-4e82-b01e-f5f2dbcb962a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Implementation of a Custom String Manager (Basic Method)
 

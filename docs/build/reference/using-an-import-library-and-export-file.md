@@ -1,15 +1,8 @@
 ---
-title: "Using an Import Library and Export File | Microsoft Docs"
-ms.custom: ""
+title: "Using an Import Library and Export File"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["circular exports", "import libraries, using", "export files"]
 ms.assetid: 2634256a-8aa5-4495-8c9e-6cde10e4ed76
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Using an Import Library and Export File
 

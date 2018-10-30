@@ -1,16 +1,9 @@
 ---
-title: "CEnumerator Class | Microsoft Docs"
-ms.custom: ""
+title: "CEnumerator Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["CEnumerator", "CEnumerator::Find", "ATL::CEnumerator::Find", "ATL.CEnumerator.Find", "CEnumerator.Find", "GetMoniker", "CEnumerator.GetMoniker", "CEnumerator::GetMoniker", "ATL.CEnumerator.GetMoniker", "ATL::CEnumerator::GetMoniker", "ATL.CEnumerator.Open", "CEnumerator::Open", "ATL::CEnumerator::Open", "CEnumerator.Open"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CEnumerator class", "Find method", "GetMoniker method", "Open method"]
 ms.assetid: 25805f1b-26e3-402f-af83-1b5fe5ddebf7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CEnumerator Class
 

@@ -1,14 +1,7 @@
 ---
-title: "Raw Pseudo Operations | Microsoft Docs"
-ms.custom: ""
+title: "Raw Pseudo Operations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 4def1a0e-ec28-4736-91fb-fac95fba1f36
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Raw Pseudo Operations
 

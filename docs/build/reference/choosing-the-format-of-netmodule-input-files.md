@@ -1,14 +1,7 @@
 ---
-title: "Choosing the Format of .netmodule Input Files | Microsoft Docs"
-ms.custom: ""
+title: "Choosing the Format of .netmodule Input Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 4653d1bd-300f-4083-86f5-d1a06f44e61c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Choosing the Format of .netmodule Input Files
 

@@ -1,19 +1,12 @@
 ---
-title: "strspn, wcsspn, _mbsspn, _mbsspn_l | Microsoft Docs"
-ms.custom: ""
+title: "strspn, wcsspn, _mbsspn, _mbsspn_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_mbsspn_l", "wcsspn", "strspn", "_mbsspn"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_ftcsspn", "wcsspn", "_mbsspn", "_tcsspn", "strspn"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wcsspn function", "strings [C++], searching", "mbsspn function", "tcsspn function", "strspn function", "substrings, finding", "_mbsspn_l function", "ftcsspn function", "_mbsspn function", "_ftcsspn function", "mbsspn_l function", "_tcsspn function"]
 ms.assetid: d077284a-809f-4068-959e-c6d6262677eb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # strspn, wcsspn, _mbsspn, _mbsspn_l
 

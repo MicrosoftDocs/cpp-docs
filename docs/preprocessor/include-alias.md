@@ -1,16 +1,9 @@
 ---
-title: "include_alias | Microsoft Docs"
-ms.custom: ""
+title: "include_alias"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["vc-pragma.include_alias", "include_alias_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, include_alias", "include_alias pragma"]
 ms.assetid: 3256d589-12b3-4af0-a586-199e96eabacc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # include_alias
 

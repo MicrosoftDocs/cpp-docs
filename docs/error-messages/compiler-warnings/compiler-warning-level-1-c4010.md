@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4010 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4010"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4010"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4010"]
 ms.assetid: d607a9ff-8f8f-45c0-b07b-3b2f439e5485
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4010
 

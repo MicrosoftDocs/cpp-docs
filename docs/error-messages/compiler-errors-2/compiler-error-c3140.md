@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3140 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3140"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3140"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3140"]
 ms.assetid: 122f8943-fac3-4db8-a3a8-2c5d19233de6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3140
 

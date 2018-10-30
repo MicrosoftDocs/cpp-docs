@@ -1,16 +1,9 @@
 ---
-title: "TN035: Using Multiple Resource Files and Header Files with Visual C++ | Microsoft Docs"
-ms.custom: ""
+title: "TN035: Using Multiple Resource Files and Header Files with Visual C++"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.resources"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["resource files, multiple", "TN035"]
 ms.assetid: 1f08ce5e-a912-44cc-ac56-7dd93ad73fb6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN035: Using Multiple Resource Files and Header Files with Visual C++
 

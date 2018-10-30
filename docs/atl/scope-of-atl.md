@@ -1,15 +1,8 @@
 ---
-title: "Scope of ATL | Microsoft Docs"
-ms.custom: ""
+title: "Scope of ATL"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, scope"]
 ms.assetid: 381adf50-3cb0-4d0f-a79a-07da093bc280
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Scope of ATL
 

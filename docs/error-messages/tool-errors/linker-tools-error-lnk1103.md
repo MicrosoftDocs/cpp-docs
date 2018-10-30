@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1103 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1103"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1103"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1103"]
 ms.assetid: c8e9bc54-6a71-471c-899e-6f98122ee3c4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1103
 

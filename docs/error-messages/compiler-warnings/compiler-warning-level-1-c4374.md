@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4374 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4374"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4374"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4374"]
 ms.assetid: 4ac9aaec-d815-4b6e-825f-fa872092dd3b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4374
 

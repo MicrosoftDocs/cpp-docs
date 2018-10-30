@@ -1,16 +1,9 @@
 ---
-title: "__lidt | Microsoft Docs"
-ms.custom: ""
+title: "__lidt"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__lidt", "__lidt_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LIDT instruction", "__lidt intrinsic"]
 ms.assetid: 8298d25d-a19e-4900-828d-6b3b09841882
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __lidt
 

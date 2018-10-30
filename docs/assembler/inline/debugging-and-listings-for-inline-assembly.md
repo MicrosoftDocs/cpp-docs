@@ -1,15 +1,8 @@
 ---
-title: "Debugging and Listings for Inline Assembly | Microsoft Docs"
-ms.custom: ""
+title: "Debugging and Listings for Inline Assembly"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["source level debugger", "__asm keyword [C++], debugging", "inline assembly, listings", "bugs, __asm blocks", "debugging [C++], inline assembly code", "inline assembly, debugging"]
 ms.assetid: 69266930-6f9a-433d-b704-f4f44e7b2583
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Debugging and Listings for Inline Assembly
 

@@ -1,13 +1,6 @@
 ---
-title: "/Qsafe_fp_loads | Microsoft Docs"
-ms.custom: ""
+title: "/Qsafe_fp_loads"
 ms.date: "01/24/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Qsafe_fp_loads
 

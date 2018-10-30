@@ -1,16 +1,10 @@
 ---
-title: "ML Warning A4012 | Microsoft Docs"
-ms.custom: ""
+title: "ML Warning A4012"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A4012"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["A4012"]
 ms.assetid: 842b1259-9679-4eeb-a02d-672a583a94e5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Warning A4012
 

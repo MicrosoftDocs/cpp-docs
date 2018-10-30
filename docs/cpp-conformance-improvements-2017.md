@@ -1,13 +1,10 @@
 ---
-title: "C++ conformance improvements | Microsoft Docs"
-ms.custom: ""
+title: "C++ conformance improvements"
 ms.date: "10/31/2018"
 ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: "mikeblome"
 ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C++ conformance improvements in Visual Studio 2017 versions 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158), [15.9](#update_159)
 

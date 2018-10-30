@@ -1,14 +1,7 @@
 ---
-title: "Ellipses and Variadic Templates | Microsoft Docs"
-ms.custom: ""
+title: "Ellipses and Variadic Templates"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: f20967d9-c967-4fd2-b902-2bb1d5ed87e3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Ellipses and Variadic Templates
 

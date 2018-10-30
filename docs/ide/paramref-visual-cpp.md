@@ -1,16 +1,9 @@
 ---
-title: "&lt;paramref&gt; (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "&lt;paramref&gt; (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["paramref", "<paramref>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["paramref C++ XML tag", "<paramref> C++ XML tag"]
 ms.assetid: c5730dc2-7159-421f-b2d5-bb971e307122
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # &lt;paramref&gt; (Visual C++)
 

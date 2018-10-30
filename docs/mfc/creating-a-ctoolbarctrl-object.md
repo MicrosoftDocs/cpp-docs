@@ -1,16 +1,9 @@
 ---
-title: "Creating a CToolBarCtrl Object | Microsoft Docs"
-ms.custom: ""
+title: "Creating a CToolBarCtrl Object"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CToolBarCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["toolbar controls [MFC], creating", "CToolBarCtrl class [MFC], creating toolbars"]
 ms.assetid: a4f6bf0c-0195-4dbf-a09e-aee503e19dc3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating a CToolBarCtrl Object
 

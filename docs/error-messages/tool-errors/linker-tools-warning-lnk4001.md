@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Warning LNK4001 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Warning LNK4001"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK4001"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4001"]
 ms.assetid: 0a8b1c3a-64ce-4311-b7c0-065995059246
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4001
 

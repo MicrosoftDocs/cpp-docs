@@ -1,16 +1,10 @@
 ---
-title: "Platform::NullReferenceException Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::NullReferenceException Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::NullReferenceException", "VCCORLIB/Platform::NullReferenceException::NullReferenceException"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::NullReferenceException"]
 ms.assetid: be202577-d898-4716-83cd-e3556fe8a241
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::NullReferenceException Class
 

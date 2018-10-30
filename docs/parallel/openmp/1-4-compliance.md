@@ -1,14 +1,7 @@
 ---
-title: "1.4 Compliance | Microsoft Docs"
-ms.custom: ""
+title: "1.4 Compliance"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 662ad260-b9a1-43b7-b269-ef6ff0714e05
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 1.4 Compliance
 

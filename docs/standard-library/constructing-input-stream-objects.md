@@ -1,15 +1,8 @@
 ---
-title: "Constructing Input Stream Objects | Microsoft Docs"
-ms.custom: ""
+title: "Constructing Input Stream Objects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["input stream objects"]
 ms.assetid: ab94866e-6ffe-4f15-b4db-0bd23e636075
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Constructing Input Stream Objects
 

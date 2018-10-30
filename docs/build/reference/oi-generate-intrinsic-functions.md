@@ -1,16 +1,9 @@
 ---
-title: "-Oi (Generate Intrinsic Functions) | Microsoft Docs"
-ms.custom: ""
+title: "/Oi (Generate Intrinsic Functions)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnableIntrinsicFunctions", "/oi", "VC.Project.VCCLWCECompilerTool.EnableIntrinsicFunctions"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Oi compiler option [C++]", "intrinsic functions, generate", "/Oi compiler option [C++]", "-Oi compiler option [C++]", "generate intrinsic functions compiler option [C++]"]
 ms.assetid: fa4a3bf6-0ed8-481b-91c0-add7636132b4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Oi (Generate Intrinsic Functions)
 

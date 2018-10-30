@@ -1,16 +1,9 @@
 ---
-title: "Comma Operator: , | Microsoft Docs"
-ms.custom: ""
+title: "Comma Operator: ,"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["%2C"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["comma operator"]
 ms.assetid: 38e0238e-19da-42ba-ae62-277bfdab6090
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Comma Operator: ,
 

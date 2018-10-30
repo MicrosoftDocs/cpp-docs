@@ -1,19 +1,12 @@
 ---
-title: "_query_new_handler | Microsoft Docs"
-ms.custom: ""
+title: "_query_new_handler"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_query_new_handler"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_query_new_handler", "query_new_handler"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["query_new_handler function", "handler routines", "error handling", "_query_new_handler function"]
 ms.assetid: 9a84b5c3-fe33-4c01-83a0-be87dc3ec518
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _query_new_handler
 

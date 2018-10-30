@@ -1,14 +1,7 @@
 ---
-title: "Multibyte Characters | Microsoft Docs"
-ms.custom: ""
+title: "Multibyte Characters"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 09fe1431-1006-41f9-bf47-ca82724c23ae
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Multibyte Characters
 

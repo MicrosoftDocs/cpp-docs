@@ -1,15 +1,8 @@
 ---
-title: "How to: Update User-Interface Objects | Microsoft Docs"
-ms.custom: ""
+title: "How to: Update User-Interface Objects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["menus [MFC], updating as context changes", "user interface objects [MFC], updating", "user interface objects [MFC]", "update handlers [MFC]", "enabling UI elements [MFC]", "disabling menus [MFC]", "updating user-interface objects [MFC]", "disabling UI elements [MFC]", "commands [MFC], updating UI", "enabling menus [MFC]"]
 ms.assetid: 82f09773-c978-427b-b321-05a6143b7369
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Update User-Interface Objects
 

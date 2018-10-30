@@ -1,15 +1,8 @@
 ---
-title: "Optimizing Control Drawing | Microsoft Docs"
-ms.custom: ""
+title: "Optimizing Control Drawing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], optimizing"]
 ms.assetid: 29ff985d-9bf5-4678-b62d-aad12def75fb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Optimizing Control Drawing
 

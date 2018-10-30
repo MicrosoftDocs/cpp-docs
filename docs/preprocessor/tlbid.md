@@ -1,16 +1,9 @@
 ---
-title: "tlbid | Microsoft Docs"
-ms.custom: ""
+title: "tlbid"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["tlbid"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["tlbid attribute"]
 ms.assetid: 54b06785-191b-4e77-a9a5-485f2b4acb09
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # tlbid
 

@@ -1,16 +1,9 @@
 ---
-title: "length_is (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "length_is (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.length_is"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["length_is attribute"]
 ms.assetid: 1d99b883-84bb-4b1e-b098-eb780fc94f40
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # length_is
 

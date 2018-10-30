@@ -1,15 +1,8 @@
 ---
-title: "OLE DB Object Model | Microsoft Docs"
-ms.custom: ""
+title: "OLE DB Object Model"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["rowsets, OLE DB object model", "OLE DB, object model"]
 ms.assetid: 1a274a25-c310-4430-a1ec-bd2bd8120eff
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Object Model
 

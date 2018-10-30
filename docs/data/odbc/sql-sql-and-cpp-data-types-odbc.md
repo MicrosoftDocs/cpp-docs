@@ -1,15 +1,8 @@
 ---
-title: "SQL: SQL and C++ Data Types (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "SQL: SQL and C++ Data Types (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["data types [C++], SQL vs. C++", "SQL data types [C++]", "SQL [C++], vs. C++ data types"]
 ms.assetid: 066e0070-d4da-435c-9c4b-f7cab3352c86
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # SQL: SQL and C++ Data Types (ODBC)
 

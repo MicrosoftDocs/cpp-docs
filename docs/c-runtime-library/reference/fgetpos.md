@@ -1,19 +1,12 @@
 ---
-title: "fgetpos | Microsoft Docs"
-ms.custom: ""
+title: "fgetpos"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["fgetpos"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["fgetpos"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["fgetpos function", "streams, file position indicator"]
 ms.assetid: bfa05c38-1135-418c-bda1-d41be51acb62
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fgetpos
 

@@ -1,16 +1,9 @@
 ---
-title: "idl_quote (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "idl_quote (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.idl_quote"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["idl_quote attribute"]
 ms.assetid: a370e1b7-948b-4e67-9a25-58facf24e4c9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # idl_quote
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4210 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4210"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4210"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4210"]
 ms.assetid: f8600adf-dfe2-4022-a37a-3d4997641dfd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4210
 

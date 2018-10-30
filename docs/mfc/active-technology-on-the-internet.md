@@ -1,15 +1,8 @@
 ---
-title: "Active Technology on the Internet | Microsoft Docs"
-ms.custom: ""
+title: "Active Technology on the Internet"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Internet applications [MFC], Active technology"]
 ms.assetid: 6f782aa1-5c2f-47a2-9e63-ddd0829d5a08
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Active Technology on the Internet
 

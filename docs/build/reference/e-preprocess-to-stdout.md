@@ -1,16 +1,9 @@
 ---
-title: "-E (Preprocess to stdout) | Microsoft Docs"
-ms.custom: ""
+title: "/E (Preprocess to stdout)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/e"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-E compiler option [C++]", "/E compiler option [C++]", "preprocessor output, copy to stdout", "preprocessor output"]
 ms.assetid: ddbb1725-d950-4978-ab2f-30a5cd7b778c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /E (Preprocess to stdout)
 

@@ -1,15 +1,8 @@
 ---
-title: "How to: Select Among Completed Tasks | Microsoft Docs"
-ms.custom: ""
+title: "How to: Select Among Completed Tasks"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["selecting among completed tasks [Concurrency Runtime]", "completed tasks, selecting among [Concurrency Runtime]"]
 ms.assetid: c8ccc160-043f-4599-847b-32ed270bb257
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Select Among Completed Tasks
 

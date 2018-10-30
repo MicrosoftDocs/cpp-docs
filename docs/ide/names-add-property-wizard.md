@@ -1,15 +1,8 @@
 ---
-title: "Names, Add Property Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Names, Add Property Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.prop.overview"]
-dev_langs: ["C++"]
 ms.assetid: 0453b7ea-89cb-41a1-80a2-d45f61589c0a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Names, Add Property Wizard
 

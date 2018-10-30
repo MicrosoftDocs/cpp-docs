@@ -1,19 +1,12 @@
 ---
-title: "_getw | Microsoft Docs"
-ms.custom: ""
+title: "_getw"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_getw"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_getw"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_getw function", "integers, getting from streams", "getw function"]
 ms.assetid: ef75facc-b84e-470f-9f5f-8746c90822a0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _getw
 

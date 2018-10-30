@@ -1,16 +1,9 @@
 ---
-title: "logical_or Struct | Microsoft Docs"
-ms.custom: ""
+title: "logical_or Struct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xfunctional/std::logical_or"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["logical_or class", "logical_or struct"]
 ms.assetid: ec8143f8-5755-4e7b-8025-507fb6bf6911
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # logical_or Struct
 

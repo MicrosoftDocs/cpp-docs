@@ -1,16 +1,9 @@
 ---
-title: "CBaseKeyFrame Class | Microsoft Docs"
-ms.custom: ""
+title: "CBaseKeyFrame Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CBaseKeyFrame", "AFXANIMATIONCONTROLLER/CBaseKeyFrame", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::CBaseKeyFrame", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::AddToStoryboard", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::GetAnimationKeyframe", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::IsAdded", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::IsKeyframeAtOffset", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_bAdded", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_bIsKeyframeAtOffset", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_keyframe"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CBaseKeyFrame [MFC], CBaseKeyFrame", "CBaseKeyFrame [MFC], AddToStoryboard", "CBaseKeyFrame [MFC], GetAnimationKeyframe", "CBaseKeyFrame [MFC], IsAdded", "CBaseKeyFrame [MFC], IsKeyframeAtOffset", "CBaseKeyFrame [MFC], m_bAdded", "CBaseKeyFrame [MFC], m_bIsKeyframeAtOffset", "CBaseKeyFrame [MFC], m_keyframe"]
 ms.assetid: 285a2eff-e7c4-43be-b5aa-737727e6866d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CBaseKeyFrame Class
 

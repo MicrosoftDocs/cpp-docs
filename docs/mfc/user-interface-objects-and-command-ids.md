@@ -1,15 +1,8 @@
 ---
-title: "User-Interface Objects and Command IDs | Microsoft Docs"
-ms.custom: ""
+title: "User-Interface Objects and Command IDs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["keyboard shortcuts, associating with IDs", "MFC, command routing", "toolbar controls [MFC], command ID", "menu items, associating with IDs", "user interface objects [MFC], associating with IDs", "command IDs, user interface objects", "command routing [MFC], MFC", "command handling [MFC], user-interface objects"]
 ms.assetid: 4ea19e9b-ed1e-452e-bd33-7f509107a45b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # User-Interface Objects and Command IDs
 

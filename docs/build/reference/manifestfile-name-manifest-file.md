@@ -1,16 +1,9 @@
 ---
-title: "-MANIFESTFILE (Name Manifest File) | Microsoft Docs"
-ms.custom: ""
+title: "/MANIFESTFILE (Name Manifest File)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.ManifestFile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MANIFESTFILE linker option", "-MANIFESTFILE linker option", "/MANIFESTFILE linker option"]
 ms.assetid: befa5ab2-a9cf-4c9b-969a-e7b4a930f08d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /MANIFESTFILE (Name Manifest File)
 

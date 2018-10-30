@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3904 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3904"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3904"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3904"]
 ms.assetid: 08297605-e4f2-4c6c-b637-011f1fd40631
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3904
 

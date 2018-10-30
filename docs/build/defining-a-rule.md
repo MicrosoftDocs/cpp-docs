@@ -1,15 +1,8 @@
 ---
-title: "Defining a Rule | Microsoft Docs"
-ms.custom: ""
+title: "Defining a Rule"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["NMAKE program, inference rules", "defining inference rules"]
 ms.assetid: 071cd092-3f2e-4065-b0fb-36a9d393cfa8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Defining a Rule
 

@@ -1,16 +1,9 @@
 ---
-title: "Time Management | Microsoft Docs"
-ms.custom: ""
+title: "Time Management"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.memory"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["dates, run-time library members", "time, time management", "date functions", "time functions"]
 ms.assetid: 93599220-c011-45d5-978f-12182abfdd2f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Time Management
 

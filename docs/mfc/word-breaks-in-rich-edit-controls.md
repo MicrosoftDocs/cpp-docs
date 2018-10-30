@@ -1,15 +1,8 @@
 ---
-title: "Word Breaks in Rich Edit Controls | Microsoft Docs"
-ms.custom: ""
+title: "Word Breaks in Rich Edit Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRichEditCtrl class [MFC], word breaks in", "word breaks", "breaking words in CRichEditCtrl", "rich edit controls [MFC], word breaks in"]
 ms.assetid: 641dcf9e-7b40-4dc0-85f7-575a8c142f73
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Word Breaks in Rich Edit Controls
 

@@ -1,15 +1,8 @@
 ---
-title: "How to: Customize the Quick Access Toolbar | Microsoft Docs"
-ms.custom: ""
+title: "How to: Customize the Quick Access Toolbar"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["quick access toolbar [MFC], customization"]
 ms.assetid: 2554099b-0c89-4605-9249-31bf9cbcefe0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Customize the Quick Access Toolbar
 

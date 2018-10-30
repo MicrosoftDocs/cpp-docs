@@ -1,15 +1,8 @@
 ---
-title: "How Default Printing Is Done | Microsoft Docs"
-ms.custom: ""
+title: "How Default Printing Is Done"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["default printing", "printing [MFC], default", "defaults, printing"]
 ms.assetid: 0f698459-0fc9-4d43-97da-29cf0f65daa2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How Default Printing Is Done
 

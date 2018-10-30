@@ -1,15 +1,8 @@
 ---
-title: "Summary of Constants | Microsoft Docs"
-ms.custom: ""
+title: "Summary of Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["constants, C"]
 ms.assetid: 4158234c-e189-4e25-970f-52a04bc6380a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Summary of Constants
 

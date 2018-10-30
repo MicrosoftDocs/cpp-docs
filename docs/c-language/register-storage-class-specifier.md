@@ -1,15 +1,8 @@
 ---
-title: "register Storage-Class Specifier | Microsoft Docs"
-ms.custom: ""
+title: "register Storage-Class Specifier"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["register variables", "register storage class"]
 ms.assetid: 7577bf48-88ec-4191-873c-ef4217a4034e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # register Storage-Class Specifier
 

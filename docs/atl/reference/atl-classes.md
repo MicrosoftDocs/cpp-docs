@@ -1,15 +1,8 @@
 ---
 title: "ATL classes and structs| Microsoft Docs"
-ms.custom: ""
 ms.date: "05/03/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["classes [C++], ATL", "ATL, classes"]
 ms.assetid: 7da42e2d-ac84-4506-92bd-502a86d68bdc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL classes and structs
 

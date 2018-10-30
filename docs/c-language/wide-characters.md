@@ -1,15 +1,8 @@
 ---
-title: "Wide Characters | Microsoft Docs"
-ms.custom: ""
+title: "Wide Characters"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["wide characters"]
 ms.assetid: 165c4a12-8ab9-45fb-9964-c55e9956194c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Wide Characters
 

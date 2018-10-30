@@ -1,16 +1,9 @@
 ---
-title: "Predefined Accelerator Keys (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Predefined Accelerator Keys (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.accelerator"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["accelerator keys", "keyboard shortcuts", "keyboard shortcuts [C++], predefined"]
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Predefined Accelerator Keys (C++)
 

@@ -1,14 +1,7 @@
 ---
-title: "4.3 OMP_DYNAMIC | Microsoft Docs"
-ms.custom: ""
+title: "4.3 OMP_DYNAMIC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: a15edefb-1f85-4f06-a427-beb3cfc4434f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 4.3 OMP_DYNAMIC
 

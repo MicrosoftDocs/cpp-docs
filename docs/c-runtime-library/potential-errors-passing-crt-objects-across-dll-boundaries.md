@@ -1,15 +1,8 @@
 ---
-title: "Potential Errors Passing CRT Objects Across DLL Boundaries | Microsoft Docs"
-ms.custom: ""
+title: "Potential Errors Passing CRT Objects Across DLL Boundaries"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["DLL conflicts [C++]"]
 ms.assetid: c217ffd2-5d9a-4678-a1df-62a637a96460
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Potential Errors Passing CRT Objects Across DLL Boundaries
 

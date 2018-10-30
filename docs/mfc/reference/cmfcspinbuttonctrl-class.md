@@ -1,16 +1,9 @@
 ---
-title: "CMFCSpinButtonCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCSpinButtonCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCSpinButtonCtrl", "AFXSPINBUTTONCTRL/CMFCSpinButtonCtrl", "AFXSPINBUTTONCTRL/CMFCSpinButtonCtrl::OnDraw"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCSpinButtonCtrl [MFC], OnDraw"]
 ms.assetid: 8773f259-4d3f-4bca-a71c-09e0c71bc843
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCSpinButtonCtrl Class
 

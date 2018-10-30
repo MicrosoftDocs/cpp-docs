@@ -1,15 +1,8 @@
 ---
-title: "Inferred Dependents | Microsoft Docs"
-ms.custom: ""
+title: "Inferred Dependents"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["inferred dependents in NMAKE", "dependents, inferred"]
 ms.assetid: 9303045c-69b3-4f35-bffc-19d5cd6ea3c3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Inferred Dependents
 

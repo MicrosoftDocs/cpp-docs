@@ -1,15 +1,8 @@
 ---
-title: "Creating a Resource-Only DLL | Microsoft Docs"
-ms.custom: ""
+title: "Creating a Resource-Only DLL"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["resource-only DLLs [C++], creating", "DLLs [C++], creating"]
 ms.assetid: e6b1d4da-7275-467f-a58c-a0a8a5835199
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Creating a Resource-Only DLL
 

@@ -1,16 +1,9 @@
 ---
-title: "message_not_found Class | Microsoft Docs"
-ms.custom: ""
+title: "message_not_found Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["message_not_found", "CONCRT/concurrency::message_not_found", "CONCRT/concurrency::message_not_found::message_not_found"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["message_not_found class"]
 ms.assetid: a96b9995-5ad7-4600-83c8-c15e329ff10e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # message_not_found Class
 

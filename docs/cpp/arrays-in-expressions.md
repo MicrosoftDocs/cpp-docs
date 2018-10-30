@@ -1,15 +1,8 @@
 ---
-title: "Arrays in Expressions | Microsoft Docs"
-ms.custom: ""
+title: "Arrays in Expressions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["expressions [C++], arrays in", "arrays [C++], in expressions"]
 ms.assetid: 6e5a795b-d6bd-4e39-b313-6a20d47c4d4b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Arrays in Expressions
 

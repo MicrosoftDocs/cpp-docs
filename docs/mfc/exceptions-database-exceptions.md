@@ -1,15 +1,8 @@
 ---
-title: "Exceptions: Database Exceptions | Microsoft Docs"
-ms.custom: ""
+title: "Exceptions: Database Exceptions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["DAO [MFC], exceptions", "exceptions [MFC], database", "exception handling [MFC], databases", "ODBC exceptions [MFC]", "ODBC [MFC], exceptions", "database exceptions [MFC]", "databases [MFC], exception handling", "error codes [MFC], database exception handling"]
 ms.assetid: 28daf260-f824-4be6-aecc-1f859e6dec26
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exceptions: Database Exceptions
 

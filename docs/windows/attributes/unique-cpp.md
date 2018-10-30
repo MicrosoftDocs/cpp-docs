@@ -1,16 +1,9 @@
 ---
-title: "unique  (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "unique  (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.unique"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["unique attribute"]
 ms.assetid: abd7ed14-5ae7-44a8-8333-0058e9c92b2f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # unique (C++)
 

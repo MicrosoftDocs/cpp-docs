@@ -1,16 +1,9 @@
 ---
-title: "PUBLIC (MASM) | Microsoft Docs"
-ms.custom: ""
+title: "PUBLIC (MASM)"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["public"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PUBLIC directive"]
 ms.assetid: 56e15a68-8a35-4bdd-b1ec-a38cbbf1c582
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # PUBLIC (MASM)
 

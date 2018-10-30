@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3262 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3262"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3262"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3262"]
 ms.assetid: 3e74b9aa-de3c-4492-9331-ee73012b958b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3262
 

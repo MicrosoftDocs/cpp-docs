@@ -1,16 +1,9 @@
 ---
-title: "thread | Microsoft Docs"
-ms.custom: ""
+title: "thread"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["thread_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["thread local storage (TLS)", "thread __declspec keyword", "TLS (thread local storage), compiler implementation", "__declspec keyword [C++], thread"]
 ms.assetid: 667f2a77-6d1f-4b41-bee8-05e67324fab8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # thread
 

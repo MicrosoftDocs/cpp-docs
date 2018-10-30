@@ -1,16 +1,9 @@
 ---
-title: "OLE DB Provider Templates Reference | Microsoft Docs"
-ms.custom: ""
+title: "OLE DB Provider Templates Reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["vc.templates.ole"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB provider templates"]
 ms.assetid: 518358f0-bab1-4de9-bce9-4062cc87c11f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Provider Templates Reference
 

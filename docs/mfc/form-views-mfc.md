@@ -1,15 +1,8 @@
 ---
-title: "Form Views (MFC) | Microsoft Docs"
-ms.custom: ""
+title: "Form Views (MFC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["user interfaces [MFC], forms", "forms [MFC]", "applications [MFC], forms-based", "forms-based applications [MFC]", "forms [MFC], adding to applications"]
 ms.assetid: efbe73c1-4ca4-4613-aac2-30d916e92c0e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Form Views (MFC)
 

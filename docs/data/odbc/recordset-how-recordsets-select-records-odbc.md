@@ -1,15 +1,8 @@
 ---
-title: "Recordset: How Recordsets Select Records (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: How Recordsets Select Records (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["recordsets, selecting records", "record selection, ODBC recordsets", "SQL statements, recordset", "records, selecting", "recordsets, constructing SQL statements", "ODBC recordsets, selecting records"]
 ms.assetid: 343a6a91-aa4c-4ef7-b21f-2f2bfd0d3787
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: How Recordsets Select Records (ODBC)
 

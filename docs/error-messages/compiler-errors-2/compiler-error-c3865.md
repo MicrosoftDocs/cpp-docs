@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3865 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3865"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3865"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3865"]
 ms.assetid: 9bc62bb0-4fb8-4856-a5cf-c7cb4029a596
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3865
 

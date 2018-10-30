@@ -1,16 +1,9 @@
 ---
-title: "regex_traits&lt;wchar_t&gt; Class | Microsoft Docs"
-ms.custom: ""
+title: "regex_traits&lt;wchar_t&gt; Class"
 ms.date: "09/10/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["regex/std::regex_traits<wchar_t>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["regex_traits<wchar_t> class"]
 ms.assetid: 288d6fdb-fb8e-4a4d-904a-53916be7f95b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # regex_traits&lt;wchar_t&gt; Class
 

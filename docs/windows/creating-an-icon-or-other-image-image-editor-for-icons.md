@@ -1,16 +1,9 @@
 ---
-title: "Creating an Icon or Other Image (Image Editor for Icons) | Microsoft Docs"
-ms.custom: ""
+title: "Creating an Icon or Other Image (Image Editor for Icons)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.bitmap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["bitmaps [C++]", "images [C++], creating", "resources [C++], creating images", "bitmaps [C++], creating", "graphics [C++], creating", "Image editor [C++], creating images"]
 ms.assetid: 66db3fb2-cfc1-48a2-9bdd-53f61eb7ee30
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating an Icon or Other Image (Image Editor for Icons)
 

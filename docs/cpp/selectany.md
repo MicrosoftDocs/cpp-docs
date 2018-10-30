@@ -1,16 +1,9 @@
 ---
-title: "selectany | Microsoft Docs"
-ms.custom: ""
+title: "selectany"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["selectany_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec keyword [C++], selectany", "selectany __declspec keyword"]
 ms.assetid: 9c353017-5a42-4f50-b741-bd13da1ce84d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # selectany
 

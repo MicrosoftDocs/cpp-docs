@@ -1,15 +1,8 @@
 ---
-title: "Run Member Function | Microsoft Docs"
-ms.custom: ""
+title: "Run Member Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["WinMain method [MFC]"]
 ms.assetid: 24ab7597-2354-495b-9a20-2c8ccc7385b3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Run Member Function
 

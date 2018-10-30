@@ -1,15 +1,8 @@
 ---
-title: "Microsoft Macro Assembler Reference | Microsoft Docs"
-ms.custom: ""
+title: "Microsoft Macro Assembler Reference"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), reference", "MASM (Microsoft Macro Assembler), overview", "MASM (Microsoft Macro Assembler)", "MASM (Microsoft Macro Assembler), documentation overview"]
 ms.assetid: 1446d55f-e2e7-4fd1-a9b8-b15cf7d4e47c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Microsoft Macro Assembler Reference
 

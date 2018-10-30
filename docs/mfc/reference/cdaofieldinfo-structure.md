@@ -1,16 +1,9 @@
 ---
-title: "CDaoFieldInfo Structure | Microsoft Docs"
-ms.custom: ""
+title: "CDaoFieldInfo Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDaoFieldInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DAO (Data Access Objects), Fields collection", "CDaoFieldInfo structure [MFC]"]
 ms.assetid: 91b13e3f-bdb8-440c-86fc-ba4181ea0182
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDaoFieldInfo Structure
 

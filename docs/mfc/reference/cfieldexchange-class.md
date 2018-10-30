@@ -1,16 +1,9 @@
 ---
-title: "CFieldExchange Class | Microsoft Docs"
-ms.custom: ""
+title: "CFieldExchange Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CFieldExchange", "AFXDB/CFieldExchange", "AFXDB/CFieldExchange::IsFieldType", "AFXDB/CFieldExchange::SetFieldType"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CFieldExchange [MFC], IsFieldType", "CFieldExchange [MFC], SetFieldType"]
 ms.assetid: 24c5c0b3-06a6-430e-9b6f-005a2c65e29f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CFieldExchange Class
 

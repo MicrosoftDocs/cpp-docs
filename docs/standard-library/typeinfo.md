@@ -1,16 +1,9 @@
 ---
-title: "&lt;typeinfo&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;typeinfo&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["typeinfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["typeinfo header"]
 ms.assetid: 97ebc4d0-0e0e-41c3-9787-fdef2e38e56f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;typeinfo&gt;
 

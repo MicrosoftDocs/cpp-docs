@@ -1,19 +1,12 @@
 ---
-title: "sin, sinf, sinl | Microsoft Docs"
-ms.custom: ""
+title: "sin, sinf, sinl"
 ms.date: "04/10/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["sinl", "sinf", "sin"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_sinl", "sinf", "sinl", "sin"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_sinl function", "sinl function", "calculating sines", "sin function", "trigonometric functions", "sinf function"]
 ms.assetid: 737de73e-3590-45f9-8257-dc1c0c489dfc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # sin, sinf, sinl
 

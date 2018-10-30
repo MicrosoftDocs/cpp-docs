@@ -1,16 +1,9 @@
 ---
-title: "Compiler COM Support Classes | Microsoft Docs"
-ms.custom: ""
+title: "Compiler COM Support Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_raise_error"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cl.exe compiler, COM support", "COM, compiler support"]
 ms.assetid: 6d800d9b-b902-4033-9639-740a30b06f88
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Compiler COM Support Classes
 

@@ -1,15 +1,9 @@
 ---
-title: "Override Specifiers  (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Override Specifiers  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["override specifiers, C++", "override specifiers"]
 ms.assetid: 155bbf6f-4722-4654-afb1-9cb52af799fb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Override Specifiers  (C++/CLI and C++/CX)
 

@@ -1,15 +1,9 @@
 ---
-title: "Run-Time Type Information | Microsoft Docs"
+title: "Run-Time Type Information"
 ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["RTTI compiler option", "run-time type information", "run time, type checking", "type information, run-time type checking", "run-time checks, type checking"]
 ms.assetid: becbd0e5-0439-4c61-854f-8a74f7160c54
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Run-Time Type Information
 

@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Warning LNK4205 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Warning LNK4205"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK4205"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4205"]
 ms.assetid: d63b9d18-ef3c-4081-9d8d-93077dad13c2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4205
 

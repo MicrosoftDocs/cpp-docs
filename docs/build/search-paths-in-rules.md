@@ -1,15 +1,8 @@
 ---
-title: "Search Paths in Rules | Microsoft Docs"
-ms.custom: ""
+title: "Search Paths in Rules"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["search paths in NMAKE inference rules", "inference rules in NMAKE", "rules, inference"]
 ms.assetid: 38feded6-536d-425d-bf40-fff3173a5506
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Search Paths in Rules
 

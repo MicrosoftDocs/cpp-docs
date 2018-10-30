@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Fatal Error RC1015 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Fatal Error RC1015"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC1015"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC1015"]
 ms.assetid: 23f187e1-5538-40b5-9042-edd2888f55c2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Fatal Error RC1015
 

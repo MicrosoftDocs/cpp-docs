@@ -1,15 +1,8 @@
 ---
-title: "How MFC Makes It Easier to Create Internet Client Applications | Microsoft Docs"
-ms.custom: ""
+title: "How MFC Makes It Easier to Create Internet Client Applications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Internet client applications [MFC], MFC", "Internet applications [MFC], MFC", "MFC, Internet applications"]
 ms.assetid: 94437b3f-f15c-437d-b5fd-264a2efec9ab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How MFC Makes It Easier to Create Internet Client Applications
 

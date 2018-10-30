@@ -1,15 +1,8 @@
 ---
-title: "Manifest Generation in Visual Studio | Microsoft Docs"
-ms.custom: ""
+title: "Manifest Generation in Visual Studio"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["manifests [C++]"]
 ms.assetid: 0af60aa9-d223-42cd-8426-b3fc543a2a81
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Manifest Generation in Visual Studio
 

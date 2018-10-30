@@ -1,15 +1,8 @@
 ---
-title: "How to: Build Isolated Applications to Consume COM Components | Microsoft Docs"
-ms.custom: ""
+title: "How to: Build Isolated Applications to Consume COM Components"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["isolated applications [C++]"]
 ms.assetid: 04587547-1174-44ab-bd99-1292358fba20
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # How to: Build Isolated Applications to Consume COM Components
 

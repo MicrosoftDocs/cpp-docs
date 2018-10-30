@@ -1,16 +1,9 @@
 ---
-title: "TN024: MFC-Defined Messages and Resources | Microsoft Docs"
-ms.custom: ""
+title: "TN024: MFC-Defined Messages and Resources"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.messages"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["resources [MFC]", "Windows messages [MFC], MFC-defined", "messages [MFC], MFC", "TN024"]
 ms.assetid: c65353ce-8096-454b-ad22-1a7a1dd9a788
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN024: MFC-Defined Messages and Resources
 

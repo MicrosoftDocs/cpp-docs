@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3764 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3764"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3764"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3764"]
 ms.assetid: af5d254c-8d4a-4dda-aad9-3c5c1257c868
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3764
 

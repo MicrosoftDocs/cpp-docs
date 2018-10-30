@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 3) C4996 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 3) C4996"
 ms.date: "11/17/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4996"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4996"]
 ms.assetid: 926c7cc2-921d-43ed-ae75-634f560dd317
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4996
 

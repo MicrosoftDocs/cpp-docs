@@ -1,15 +1,8 @@
 ---
-title: "References to Pointers | Microsoft Docs"
-ms.custom: ""
+title: "References to Pointers"
 ms.date: "08/20/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["references, to pointers"]
 ms.assetid: 4ce48b08-1511-4d2f-a31f-95f99eac0c70
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # References to Pointers
 

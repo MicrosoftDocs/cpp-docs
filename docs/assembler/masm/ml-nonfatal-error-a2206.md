@@ -1,16 +1,10 @@
 ---
-title: "ML Nonfatal Error A2206 | Microsoft Docs"
-ms.custom: ""
+title: "ML Nonfatal Error A2206"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2206"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["A2206"]
 ms.assetid: 711846d0-5a09-4353-8857-60588c25526a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2206
 

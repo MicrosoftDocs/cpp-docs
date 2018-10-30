@@ -1,15 +1,9 @@
 ---
-title: "How to: Improve Performance with Generics (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "How to: Improve Performance with Generics (C++/CLI)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["performance, C++", "C++, performance", "C++, generics", "generics [C++], performance"]
 ms.assetid: f14a175b-301f-46cc-86e4-c82d35f9aa3e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Improve Performance with Generics (C++/CLI)
 

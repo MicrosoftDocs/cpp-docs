@@ -1,16 +1,9 @@
 ---
-title: "Relationship Between a C++ Window Object and an HWND | Microsoft Docs"
-ms.custom: ""
+title: "Relationship Between a C++ Window Object and an HWND"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["HWND"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Windows window [MFC]", "window objects [MFC], HWND and", "HWND [MFC]", "CWnd class [MFC], HWND", "HWND, window objects [MFC]"]
 ms.assetid: f2e76340-6691-4ee6-9424-0345634a9469
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Relationship Between a C++ Window Object and an HWND
 

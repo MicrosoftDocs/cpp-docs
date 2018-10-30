@@ -1,16 +1,9 @@
 ---
-title: "-SECTION (EDITBIN) | Microsoft Docs"
-ms.custom: ""
+title: "/SECTION (EDITBIN)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/section"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-SECTION editbin option", "SECTION editbin option", "alignment characters in sections", "/SECTION editbin option"]
 ms.assetid: 4680ab4e-c984-4251-8241-93440cad7615
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /SECTION (EDITBIN)
 

@@ -1,16 +1,9 @@
 ---
-title: "max_fixed_size Class | Microsoft Docs"
-ms.custom: ""
+title: "max_fixed_size Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["allocators/stdext::max_fixed_size", "allocators/stdext::max_fixed_size::allocated", "allocators/stdext::max_fixed_size::deallocated", "allocators/stdext::max_fixed_size::full", "allocators/stdext::max_fixed_size::released", "allocators/stdext::max_fixed_size::saved"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::max_fixed_size", "stdext::max_fixed_size [C++], allocated", "stdext::max_fixed_size [C++], deallocated", "stdext::max_fixed_size [C++], full", "stdext::max_fixed_size [C++], released", "stdext::max_fixed_size [C++], saved"]
 ms.assetid: 8c8f4588-37e9-4579-8168-ba3553800914
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # max_fixed_size Class
 

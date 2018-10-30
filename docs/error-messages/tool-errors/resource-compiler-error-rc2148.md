@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Error RC2148 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Error RC2148"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC2148"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC2148"]
 ms.assetid: 0290065c-35d3-4815-80c5-40bf7132ae1d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2148
 

@@ -1,16 +1,9 @@
 ---
-title: "CMonikerFile Class | Microsoft Docs"
-ms.custom: ""
+title: "CMonikerFile Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMonikerFile", "AFXOLE/CMonikerFile", "AFXOLE/CMonikerFile::CMonikerFile", "AFXOLE/CMonikerFile::Close", "AFXOLE/CMonikerFile::Detach", "AFXOLE/CMonikerFile::GetMoniker", "AFXOLE/CMonikerFile::Open", "AFXOLE/CMonikerFile::CreateBindContext"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMonikerFile [MFC], CMonikerFile", "CMonikerFile [MFC], Close", "CMonikerFile [MFC], Detach", "CMonikerFile [MFC], GetMoniker", "CMonikerFile [MFC], Open", "CMonikerFile [MFC], CreateBindContext"]
 ms.assetid: 87be5966-f4f7-4235-bce2-1fa39e9417de
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMonikerFile Class
 

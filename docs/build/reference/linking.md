@@ -1,14 +1,7 @@
 ---
-title: "Linking | Microsoft Docs"
-ms.custom: ""
+title: "Linking"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: bb736587-d13b-4f3c-8982-3cc2c015c59c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linking
 

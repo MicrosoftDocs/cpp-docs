@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4049 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4049"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4049"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4049"]
 ms.assetid: d11c1870-bcfc-4d71-8945-b87ec6ec3514
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4049
 

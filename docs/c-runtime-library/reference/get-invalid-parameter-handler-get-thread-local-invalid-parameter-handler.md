@@ -1,19 +1,12 @@
 ---
-title: "_get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler | Microsoft Docs"
-ms.custom: ""
+title: "_get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_get_invalid_parameter_handler", "_get_thread_local_invalid_parameter_handler"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_get_invalid_parameter_handler", "stdlib/_get_invalid_parameter_handler", "_get_thread_local_invalid_parameter_handler", "stdlib/_get_thread_local_invalid_parameter_handler"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_get_thread_local_invalid_parameter_handler function", "_get_invalid_parameter_handler function"]
 ms.assetid: a176da0e-38ca-4d99-92bb-b0e2b8072f53
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler
 

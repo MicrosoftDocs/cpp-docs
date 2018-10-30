@@ -1,15 +1,8 @@
 ---
-title: "Creating an Active Document Container Application | Microsoft Docs"
-ms.custom: ""
+title: "Creating an Active Document Container Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["active documents [MFC], containers", "containers [MFC], active document", "active document containers [MFC], creating", "MFC COM, active document containment", "applications [MFC], active document container"]
 ms.assetid: 14e2d022-a6c5-4249-8712-706b0f4433f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating an Active Document Container Application
 

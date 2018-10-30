@@ -1,16 +1,10 @@
 ---
-title: "Implements Structure | Microsoft Docs"
-ms.custom: ""
+title: "Implements Structure"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Implements", "implements/Microsoft::WRL::Implements::CanCastTo", "implements/Microsoft::WRL::Implements::CastToUnknown", "implements/Microsoft::WRL::Implements::FillArrayWithIid", "implements/Microsoft::WRL::Implements::IidCount"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Implements structure", "Microsoft::WRL::Implements::CanCastTo method", "Microsoft::WRL::Implements::CastToUnknown method", "Microsoft::WRL::Implements::FillArrayWithIid method", "Microsoft::WRL::Implements::IidCount method"]
 ms.assetid: 29b13e90-34d4-4a0b-babd-5187c9eb0c36
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Implements Structure
 

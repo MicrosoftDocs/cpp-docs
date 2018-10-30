@@ -1,16 +1,9 @@
 ---
-title: "MINMAXINFO Structure | Microsoft Docs"
-ms.custom: ""
+title: "MINMAXINFO Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["MINMAXINFO"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MINMAXINFO structure [MFC]"]
 ms.assetid: be6fb578-f98a-4581-9ada-be9df308ed2f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MINMAXINFO Structure
 

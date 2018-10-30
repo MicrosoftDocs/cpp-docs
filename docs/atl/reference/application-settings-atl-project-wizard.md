@@ -1,16 +1,9 @@
 ---
-title: "Application Settings, ATL Project Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Application Settings, ATL Project Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.atl.com.appset"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL Project Wizard, application settings"]
 ms.assetid: d48c9fc5-f439-49fd-884c-8bcfa7d52991
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Application Settings, ATL Project Wizard
 

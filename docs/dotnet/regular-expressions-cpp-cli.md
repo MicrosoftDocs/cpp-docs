@@ -1,21 +1,8 @@
 ---
-title: "Regular Expressions (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "Regular Expressions (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
-helpviewer_keywords: ["regular expressions [C++]", ".NET Framework [C++], regular expressions", "regular expressions [C++], about regular expressions",
-    "parsing strings [C++]", "examples [C++], strings", "regular expressions [C++], parsing strings", "Split method, parsing strings", "strings [C++], parsing",
-    "substrings, simple matches", "searching, exact substring matches", "strings [C++], exact substring matching", "regular expressions [C++], simple matching", "IsMatch method",
-    "strings [C++], extracting data from", "formatted strings [C++]", "regular expressions [C++], extracting data fields", "data [C++], extracting from strings",
-    "regular expressions [C++], rearranging data", "data [C++], rearranging",
-    "search and replace", "Replace method", "regular expressions [C++], search and replace",
-    "strings [C++], formatting", "data [C++], formatting", "regular expressions [C++], validating data formatting"]
+helpviewer_keywords: ["regular expressions [C++]", ".NET Framework [C++], regular expressions", "regular expressions [C++], about regular expressions", "parsing strings [C++]", "examples [C++], strings", "regular expressions [C++], parsing strings", "Split method, parsing strings", "strings [C++], parsing", "substrings, simple matches", "searching, exact substring matches", "strings [C++], exact substring matching", "regular expressions [C++], simple matching", "IsMatch method", "strings [C++], extracting data from", "formatted strings [C++]", "regular expressions [C++], extracting data fields", "data [C++], extracting from strings", "regular expressions [C++], rearranging data", "data [C++], rearranging", "search and replace", "Replace method", "regular expressions [C++], search and replace", "strings [C++], formatting", "data [C++], formatting", "regular expressions [C++], validating data formatting"]
 ms.assetid: 838bab49-0dbc-4089-a604-ef146269ef5a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Regular Expressions (C++/CLI)
 

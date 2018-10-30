@@ -1,14 +1,8 @@
 ---
-title: "alloca | Microsoft Docs"
-ms.custom: ""
+title: "alloca"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 2b209335-e3a0-4934-93f0-3b5925d22918
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # alloca
 

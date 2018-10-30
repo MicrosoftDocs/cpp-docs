@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2859 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2859"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2859"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2859"]
 ms.assetid: fcfbc58d-08f6-4752-9688-8aaac517e684
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2859
 

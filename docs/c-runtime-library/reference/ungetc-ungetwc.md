@@ -1,19 +1,12 @@
 ---
-title: "ungetc, ungetwc | Microsoft Docs"
-ms.custom: ""
+title: "ungetc, ungetwc"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["ungetwc", "ungetc"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_ungettc", "ungetwc", "ungetc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ungetwc function", "ungettc function", "characters, pushing back onto stream", "_ungettc function", "ungetc function"]
 ms.assetid: e0754f3a-b4c6-408f-90c7-e6387b830d84
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ungetc, ungetwc
 

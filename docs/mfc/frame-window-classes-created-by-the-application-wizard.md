@@ -1,16 +1,9 @@
 ---
-title: "Frame-Window Classes Created by the Application Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Frame-Window Classes Created by the Application Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CMainFrame"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["application wizards [MFC], frame window classes created by", "window classes [MFC]", "classes [MFC], frame-window", "CMDIFrameWnd class [MFC], frame windows", "window classes [MFC], frame", "CFrameWnd class [MFC], frame windows", "CMDIChildWnd class [MFC], frame windows", "frame window classes [MFC], created by application wizards", "CMainFrame class [MFC]"]
 ms.assetid: 9947df73-4470-49a0-ac61-7b6ee401a74e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Frame-Window Classes Created by the Application Wizard
 

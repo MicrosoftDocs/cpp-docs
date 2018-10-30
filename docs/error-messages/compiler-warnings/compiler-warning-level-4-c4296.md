@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4296 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4296"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4296"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4296"]
 ms.assetid: 9d99aafe-f6bd-4ee0-b8d0-98ce5712274d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4296
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3732 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3732"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3732"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3732"]
 ms.assetid: 2d55a7e1-9c39-4379-a093-2f7beb27e2ca
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3732
 

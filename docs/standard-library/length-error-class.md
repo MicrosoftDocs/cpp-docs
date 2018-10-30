@@ -1,16 +1,9 @@
 ---
-title: "length_error Class | Microsoft Docs"
-ms.custom: ""
+title: "length_error Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["stdexcept/std::length_error"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["length_error class"]
 ms.assetid: d53c46c5-4626-400d-bd76-bf3e1e0f64ae
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # length_error Class
 

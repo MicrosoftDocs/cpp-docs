@@ -1,14 +1,7 @@
 ---
-title: "Recommended Tags for Documentation Comments (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "Recommended Tags for Documentation Comments (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 6548e798-5235-4a38-9482-bdc7b88f40a9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Recommended Tags for Documentation Comments (Visual C++)
 

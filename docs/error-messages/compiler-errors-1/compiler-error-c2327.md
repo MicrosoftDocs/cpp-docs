@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2327 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2327"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2327"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2327"]
 ms.assetid: 95278c95-d1f9-4487-ad27-53311f5e8112
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2327
 

@@ -1,16 +1,9 @@
 ---
-title: "lcid (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "lcid (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.lcid"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LCID attribute"]
 ms.assetid: 7f248c69-ee1c-42c3-9411-39cf27c9f43d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # lcid
 

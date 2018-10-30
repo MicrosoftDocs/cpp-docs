@@ -1,16 +1,9 @@
 ---
-title: "Dialog Data Exchange Functions for OLE Controls | Microsoft Docs"
-ms.custom: ""
+title: "Dialog Data Exchange Functions for OLE Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["AFXDISP/DDX_OCBool", "AFXDISP/DDX_OCBoolRO", "AFXDISP/DDX_OCColor", "AFXDISP/DDX_OCColorRO", "AFXDISP/DDX_OCFloat", "AFXDISP/DDX_OCFloatRO", "AFXDISP/DDX_OCInt", "AFXDISP/DDX_OCIntRO", "AFXDISP/DDX_OCShort", "AFXDISP/DDX_OCShortRO", "AFXDISP/DDX_OCText", "AFXDISP/DDX_OCTextRO"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE controls [MFC], DDX functions", "DDX (dialog data exchange), OLE support"]
 ms.assetid: 7ef1f288-ff65-40d4-aad2-5497bc00bb27
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dialog Data Exchange Functions for OLE Controls
 

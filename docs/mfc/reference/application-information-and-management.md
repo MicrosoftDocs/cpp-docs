@@ -1,16 +1,9 @@
 ---
-title: "Application Information and Management | Microsoft Docs"
-ms.custom: ""
+title: "Application Information and Management"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["applications [MFC], managing"]
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Application Information and Management
 

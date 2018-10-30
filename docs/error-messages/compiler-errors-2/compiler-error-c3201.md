@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3201 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3201"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3201"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3201"]
 ms.assetid: ec19cd64-1789-40a3-b2db-dff2852b9d98
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3201
 

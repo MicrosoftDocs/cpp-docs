@@ -1,15 +1,8 @@
 ---
-title: "Command Object Interfaces | Microsoft Docs"
-ms.custom: ""
+title: "Command Object Interfaces"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["command object interfaces [C++]", "command objects [OLE DB]", "OLE DB [C++], command object interfaces"]
 ms.assetid: dacff5ae-252c-4f20-9ad7-4e602cc48536
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Command Object Interfaces
 

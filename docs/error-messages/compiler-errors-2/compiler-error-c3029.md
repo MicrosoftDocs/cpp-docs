@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3029 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3029"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3029"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3029"]
 ms.assetid: 655eb04d-504a-468d-8c0c-bda1e5f297b7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3029
 

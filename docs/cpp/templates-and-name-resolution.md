@@ -1,14 +1,7 @@
 ---
-title: "Templates and Name Resolution | Microsoft Docs"
-ms.custom: ""
+title: "Templates and Name Resolution"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 519ba7b5-cd25-4549-865a-9a7b9dffdc28
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Templates and Name Resolution
 

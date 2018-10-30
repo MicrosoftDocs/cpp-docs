@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2059 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2059"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2059"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2059"]
 ms.assetid: 2be4eb39-3f37-4b32-8e8d-75835e07c78a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2059
 

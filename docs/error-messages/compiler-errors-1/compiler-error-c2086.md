@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2086 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2086"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2086"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2086"]
 ms.assetid: 4329bf72-90c8-444c-8524-4ef75e6b2139
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2086
 

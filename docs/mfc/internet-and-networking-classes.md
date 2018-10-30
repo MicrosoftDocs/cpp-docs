@@ -1,16 +1,9 @@
 ---
-title: "Internet and Networking Classes | Microsoft Docs"
-ms.custom: ""
+title: "Internet and Networking Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.net"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Internet classes [MFC]", "networking classes [MFC]"]
 ms.assetid: 1acf793d-ebf2-4fac-97be-703d62e3897e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Internet and Networking Classes
 

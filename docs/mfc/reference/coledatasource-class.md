@@ -1,16 +1,9 @@
 ---
-title: "COleDataSource Class | Microsoft Docs"
-ms.custom: ""
+title: "COleDataSource Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleDataSource", "AFXOLE/COleDataSource", "AFXOLE/COleDataSource::COleDataSource", "AFXOLE/COleDataSource::CacheData", "AFXOLE/COleDataSource::CacheGlobalData", "AFXOLE/COleDataSource::DelayRenderData", "AFXOLE/COleDataSource::DelayRenderFileData", "AFXOLE/COleDataSource::DelaySetData", "AFXOLE/COleDataSource::DoDragDrop", "AFXOLE/COleDataSource::Empty", "AFXOLE/COleDataSource::FlushClipboard", "AFXOLE/COleDataSource::GetClipboardOwner", "AFXOLE/COleDataSource::OnRenderData", "AFXOLE/COleDataSource::OnRenderFileData", "AFXOLE/COleDataSource::OnRenderGlobalData", "AFXOLE/COleDataSource::OnSetData", "AFXOLE/COleDataSource::SetClipboard"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleDataSource [MFC], COleDataSource", "COleDataSource [MFC], CacheData", "COleDataSource [MFC], CacheGlobalData", "COleDataSource [MFC], DelayRenderData", "COleDataSource [MFC], DelayRenderFileData", "COleDataSource [MFC], DelaySetData", "COleDataSource [MFC], DoDragDrop", "COleDataSource [MFC], Empty", "COleDataSource [MFC], FlushClipboard", "COleDataSource [MFC], GetClipboardOwner", "COleDataSource [MFC], OnRenderData", "COleDataSource [MFC], OnRenderFileData", "COleDataSource [MFC], OnRenderGlobalData", "COleDataSource [MFC], OnSetData", "COleDataSource [MFC], SetClipboard"]
 ms.assetid: 02c8ee7d-8e10-4463-8613-bb2a0305ca69
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleDataSource Class
 

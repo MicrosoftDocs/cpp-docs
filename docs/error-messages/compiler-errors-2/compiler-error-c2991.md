@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2991 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2991"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2991"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2991"]
 ms.assetid: a87e4404-26e8-4927-b3ee-5d02b3b8bee1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2991
 

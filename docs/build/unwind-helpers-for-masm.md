@@ -1,14 +1,7 @@
 ---
-title: "Unwind Helpers for MASM | Microsoft Docs"
-ms.custom: ""
+title: "Unwind Helpers for MASM"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 36591f9d-43d5-47b1-ae09-e45cf127204c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Unwind Helpers for MASM
 

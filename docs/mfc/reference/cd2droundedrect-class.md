@@ -1,16 +1,9 @@
 ---
-title: "CD2DRoundedRect Class | Microsoft Docs"
-ms.custom: ""
+title: "CD2DRoundedRect Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CD2DRoundedRect", "AFXRENDERTARGET/CD2DRoundedRect", "AFXRENDERTARGET/CD2DRoundedRect::CD2DRoundedRect"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DRoundedRect [MFC], CD2DRoundedRect"]
 ms.assetid: 06207fb5-e92b-41c0-bceb-b45d8f466531
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CD2DRoundedRect Class
 

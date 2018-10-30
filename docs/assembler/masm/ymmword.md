@@ -1,16 +1,9 @@
 ---
-title: "YMMWORD | Microsoft Docs"
-ms.custom: ""
+title: "YMMWORD"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["YMMWORD"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["YMMWORD directive"]
 ms.assetid: 955a7d23-6150-4056-befc-7f72e8258ecb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # YMMWORD
 

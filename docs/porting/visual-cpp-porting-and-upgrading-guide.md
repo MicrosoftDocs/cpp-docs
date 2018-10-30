@@ -1,14 +1,7 @@
 ---
-title: "Visual C++ Porting and Upgrading Guide | Microsoft Docs"
-ms.custom: ""
+title: "Visual C++ Porting and Upgrading Guide"
 ms.date: "09/18/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Visual C++ Porting and Upgrading Guide
 

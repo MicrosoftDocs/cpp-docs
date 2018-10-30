@@ -1,10 +1,7 @@
 ---
-title: "&lt;thread&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;thread&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["thread/std::operator!=", "thread/std::operator&gt;", "thread/std::operator&gt;=", "thread/std::operator&lt;", "thread/std::operator&lt;&lt;", "thread/std::operator&lt;=", "thread/std::operator=="]
-dev_langs: ["C++"]
 ms.assetid: e6bb6c0f-64f9-4cb2-9ff2-05b88a6ba7ac
 helpviewer_keywords: ["std::operator!= (thread)", "std::operator&gt; (thread)", "std::operator&gt;= (thread)", "std::operator&lt; (thread)", "std::operator&lt;&lt; (thread)", "std::operator&lt;= (thread)", "std::operator== (thread)"]
 ---

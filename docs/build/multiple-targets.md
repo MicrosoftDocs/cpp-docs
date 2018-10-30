@@ -1,15 +1,8 @@
 ---
-title: "Multiple Targets | Microsoft Docs"
-ms.custom: ""
+title: "Multiple Targets"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["makefiles, targets", "multiple targets in NMAKE", "targets, multiple in NMAKE", "NMAKE program, targets"]
 ms.assetid: b609a179-0b9f-4b08-9930-998047588ae0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Multiple Targets
 

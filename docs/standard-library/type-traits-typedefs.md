@@ -1,10 +1,7 @@
 ---
-title: "&lt;type_traits&gt; typedefs | Microsoft Docs"
-ms.custom: ""
+title: "&lt;type_traits&gt; typedefs"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::false_type", "xtr1common/std::false_type", "type_traits/std::true_type", "xtr1common/std::true_type"]
-dev_langs: ["C++"]
 ms.assetid: 8ac040ca-ed2d-4570-adc9-cb5626530053
 ---
 # &lt;type_traits&gt; typedefs

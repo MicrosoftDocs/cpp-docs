@@ -1,16 +1,9 @@
 ---
-title: "Options, ATL Simple Object Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Options, ATL Simple Object Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.simple.options"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL Simple Object Wizard, options"]
 ms.assetid: 125fe179-942d-4181-8b82-33e92e1fd779
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Options, ATL Simple Object Wizard
 

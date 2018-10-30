@@ -1,14 +1,7 @@
 ---
-title: "Chained Unwind Info Structures | Microsoft Docs"
-ms.custom: ""
+title: "Chained Unwind Info Structures"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 176835bf-f118-45d9-9128-9db4b7571864
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Chained Unwind Info Structures
 

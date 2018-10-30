@@ -1,16 +1,9 @@
 ---
-title: "try-finally Statement | Microsoft Docs"
-ms.custom: ""
+title: "try-finally Statement"
 ms.date: "10/09/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__try", "_try", "__leave_cpp", "__leave", "__finally_cpp", "__try_cpp", "__finally", "_finally"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__try keyword [C++]", "__finally keyword [C++]", "__leave keyword [C++]", "try-catch keyword [C++], try-finally keyword", "try-finally keyword [C++]", "__finally keyword [C++], try-finally statement syntax", "__leave keyword [C++], try-finally statement", "structured exception handling [C++], try-finally"]
 ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # try-finally Statement
 

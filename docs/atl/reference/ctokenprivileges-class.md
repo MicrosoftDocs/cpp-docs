@@ -1,16 +1,9 @@
 ---
-title: "CTokenPrivileges Class | Microsoft Docs"
-ms.custom: ""
+title: "CTokenPrivileges Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CTokenPrivileges", "ATLSECURITY/ATL::CTokenPrivileges", "ATLSECURITY/ATL::CTokenPrivileges::CTokenPrivileges", "ATLSECURITY/ATL::CTokenPrivileges::Add", "ATLSECURITY/ATL::CTokenPrivileges::Delete", "ATLSECURITY/ATL::CTokenPrivileges::DeleteAll", "ATLSECURITY/ATL::CTokenPrivileges::GetCount", "ATLSECURITY/ATL::CTokenPrivileges::GetDisplayNames", "ATLSECURITY/ATL::CTokenPrivileges::GetLength", "ATLSECURITY/ATL::CTokenPrivileges::GetLuidsAndAttributes", "ATLSECURITY/ATL::CTokenPrivileges::GetNamesAndAttributes", "ATLSECURITY/ATL::CTokenPrivileges::GetPTOKEN_PRIVILEGES", "ATLSECURITY/ATL::CTokenPrivileges::LookupPrivilege"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTokenPrivileges class"]
 ms.assetid: 89590105-f001-4014-870d-142926091231
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CTokenPrivileges Class
 

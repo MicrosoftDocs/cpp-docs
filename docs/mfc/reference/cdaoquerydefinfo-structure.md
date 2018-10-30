@@ -1,16 +1,9 @@
 ---
-title: "CDaoQueryDefInfo Structure | Microsoft Docs"
-ms.custom: ""
+title: "CDaoQueryDefInfo Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDaoQueryDefInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DAO (Data Access Objects), QueryDefs collection", "CDaoQueryDefInfo structure [MFC]"]
 ms.assetid: e20837dc-e78d-4171-a195-1b4075fb5d2a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDaoQueryDefInfo Structure
 

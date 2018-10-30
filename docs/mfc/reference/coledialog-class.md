@@ -1,16 +1,9 @@
 ---
-title: "COleDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "COleDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleDialog", "AFXODLGS/COleDialog", "AFXODLGS/COleDialog::GetLastError"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleDialog [MFC], GetLastError"]
 ms.assetid: b1ed0aca-3914-4b00-af34-4a4fb491aec7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleDialog Class
 

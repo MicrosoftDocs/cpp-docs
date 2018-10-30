@@ -1,16 +1,9 @@
 ---
-title: "-Gm (Enable Minimal Rebuild) | Microsoft Docs"
-ms.custom: ""
+title: "/Gm (Enable Minimal Rebuild)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.MinimalRebuild", "/Gm", "/FD", "VC.Project.VCCLWCECompilerTool.MinimalRebuild"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/Gm compiler option [C++]", "minimal rebuild", "enable minimal rebuild compiler option [C++]", "Gm compiler option [C++]", "-Gm compiler option [C++]"]
 ms.assetid: d8869ce0-d2ea-40eb-8dae-6d2cdb61dd59
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Gm (Enable Minimal Rebuild)
 

@@ -1,16 +1,9 @@
 ---
-title: "IPerPropertyBrowsingImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IPerPropertyBrowsingImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IPerPropertyBrowsingImpl", "ATLCTL/ATL::IPerPropertyBrowsingImpl", "ATLCTL/ATL::IPerPropertyBrowsingImpl::GetDisplayString", "ATLCTL/ATL::IPerPropertyBrowsingImpl::GetPredefinedStrings", "ATLCTL/ATL::IPerPropertyBrowsingImpl::GetPredefinedValue", "ATLCTL/ATL::IPerPropertyBrowsingImpl::MapPropertyToPage"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IPerPropertyBrowsingImpl class", "property pages, accessing information", "IPerPropertyBrowsing, ATL implementation"]
 ms.assetid: 0b1a9be3-d242-4767-be69-663a21e4b728
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IPerPropertyBrowsingImpl Class
 

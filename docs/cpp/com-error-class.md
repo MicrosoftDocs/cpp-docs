@@ -1,16 +1,9 @@
 ---
-title: "_com_error Class | Microsoft Docs"
-ms.custom: ""
+title: "_com_error Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_error"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_com_error class"]
 ms.assetid: 70dafa69-b1fb-4a5c-9249-e857e0793d42
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_error Class
 

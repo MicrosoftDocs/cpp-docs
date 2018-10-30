@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4548 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4548"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4548"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4548"]
 ms.assetid: 2cee817e-e463-4d90-bbd2-de120d48c101
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4548
 

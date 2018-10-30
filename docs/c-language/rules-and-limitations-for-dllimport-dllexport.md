@@ -1,15 +1,8 @@
 ---
-title: "Rules and Limitations for dllimport-dllexport | Microsoft Docs"
-ms.custom: ""
+title: "Rules and Limitations for dllimport-dllexport"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["dllexport attribute [C++], limitations and rules", "dllimport attribute [C++], limitations and rules", "dllexport attribute [C++]"]
 ms.assetid: 274b735f-ab9c-4b07-8d0e-fdb65d664634
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Rules and Limitations for dllimport/dllexport
 

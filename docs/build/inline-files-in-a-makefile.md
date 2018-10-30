@@ -1,15 +1,8 @@
 ---
-title: "Inline Files in a Makefile | Microsoft Docs"
-ms.custom: ""
+title: "Inline Files in a Makefile"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["inline files [C++], in makefiles", "inline files [C++]", "NMAKE program, inline files", "makefiles, inline files", "files [C++], inline"]
 ms.assetid: ff48a64f-773d-410c-9726-f867ad4c8030
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Inline Files in a Makefile
 

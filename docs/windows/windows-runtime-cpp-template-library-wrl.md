@@ -1,14 +1,8 @@
 ---
-title: "Windows Runtime C++ Template Library (WRL) | Microsoft Docs"
-ms.custom: ""
+title: "Windows Runtime C++ Template Library (WRL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Windows Runtime C++ Template Library (WRL)
 

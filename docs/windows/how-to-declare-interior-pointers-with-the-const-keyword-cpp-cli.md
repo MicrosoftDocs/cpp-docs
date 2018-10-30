@@ -1,15 +1,9 @@
 ---
-title: "How to: Declare Interior Pointers with the const Keyword (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "How to: Declare Interior Pointers with the const Keyword (C++/CLI)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["pointers, interior"]
 ms.assetid: 64e08b0e-9396-4046-ab51-8f6588f32330
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Declare Interior Pointers with the const Keyword (C++/CLI)
 

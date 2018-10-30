@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3418 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3418"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3418"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3418"]
 ms.assetid: 54042c04-3c45-41c1-bad7-90f9ee05a21b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3418
 

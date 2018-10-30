@@ -1,15 +1,8 @@
 ---
-title: "Menu Sample List | Microsoft Docs"
-ms.custom: ""
+title: "Menu Sample List"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["sample applications [MFC], menus"]
 ms.assetid: 6d89c723-03d6-474e-8ca5-e98f93bd41cc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Menu Sample List
 

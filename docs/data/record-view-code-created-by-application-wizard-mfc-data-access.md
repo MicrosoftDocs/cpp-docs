@@ -1,15 +1,8 @@
 ---
-title: "Record View Code Created by Application Wizard  (MFC Data Access) | Microsoft Docs"
-ms.custom: ""
+title: "Record View Code Created by Application Wizard  (MFC Data Access)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["application wizards [C++], record view code", "record views, refreshing controls", "record views, application wizard code"]
 ms.assetid: 18fd4703-5939-491d-b759-985f767b951f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record View Code Created by Application Wizard  (MFC Data Access)
 

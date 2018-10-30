@@ -1,16 +1,9 @@
 ---
-title: "LINK Command Files | Microsoft Docs"
-ms.custom: ""
+title: "LINK Command Files"
 ms.date: "09/05/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["link"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["syntax, LINK command files", "command files [C++]", "LINK tool [C++]", "text files, passing arguments to LINK", "LINK tool [C++], command-line syntax", "command files [C++], LINK"]
 ms.assetid: 7154511c-32b9-4e5b-a515-3922fa9de48e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # LINK Command Files
 

@@ -1,16 +1,9 @@
 ---
-title: "COleDropSource Class | Microsoft Docs"
-ms.custom: ""
+title: "COleDropSource Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleDropSource", "AFXOLE/COleDropSource", "AFXOLE/COleDropSource::COleDropSource", "AFXOLE/COleDropSource::GiveFeedback", "AFXOLE/COleDropSource::OnBeginDrag", "AFXOLE/COleDropSource::QueryContinueDrag"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleDropSource [MFC], COleDropSource", "COleDropSource [MFC], GiveFeedback", "COleDropSource [MFC], OnBeginDrag", "COleDropSource [MFC], QueryContinueDrag"]
 ms.assetid: d3eecc5f-a70b-4a01-b705-7d2c098ebe17
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleDropSource Class
 

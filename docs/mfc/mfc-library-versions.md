@@ -1,14 +1,7 @@
 ---
-title: "MFC Library Versions | Microsoft Docs"
-ms.custom: ""
+title: "MFC Library Versions"
 ms.date: "1/09/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["class libraries [MFC], building versions", "version information [MFC], MFC library", "MFC class library", "MFC class library, building", "MFC libraries", "MFC, library versions", "libraries [MFC], versions"]
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Library Versions
 

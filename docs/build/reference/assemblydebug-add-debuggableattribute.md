@@ -1,16 +1,9 @@
 ---
-title: "-ASSEMBLYDEBUG (Add DebuggableAttribute) | Microsoft Docs"
-ms.custom: ""
+title: "/ASSEMBLYDEBUG (Add DebuggableAttribute)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.AssemblyDebug", "/ASSEMBLYDEBUG"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/ASSEMBLYDEBUG linker option", "-ASSEMBLYDEBUG linker option", "ASSEMBLYDEBUG linker option"]
 ms.assetid: 94443af3-470c-41d7-83a0-7434563d7982
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /ASSEMBLYDEBUG (Add DebuggableAttribute)
 

@@ -1,15 +1,8 @@
 ---
-title: "Recordset: Parameterizing a Recordset (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: Parameterizing a Recordset (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["parameterizing recordsets", "ODBC recordsets, parameterizing", "recordsets, parameterizing", "passing parameters, to queries at runtime"]
 ms.assetid: 7d1dfeb6-5ee0-45e2-aacc-63bc52a465cd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Parameterizing a Recordset (ODBC)
 

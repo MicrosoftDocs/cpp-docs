@@ -1,16 +1,9 @@
 ---
-title: "EXPORTS | Microsoft Docs"
-ms.custom: ""
+title: "EXPORTS"
 ms.date: "09/07/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["EXPORTS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["EXPORTS .def file statement"]
 ms.assetid: dbcd7579-b855-44c4-bd27-931e157657f7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # EXPORTS
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4571 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4571"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4571"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4571"]
 ms.assetid: 07aa17bd-b15c-4266-824c-57cc445e8edd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4571
 

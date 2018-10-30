@@ -1,15 +1,9 @@
 ---
-title: "Requirements for STL/CLR Container Elements | Microsoft Docs"
-ms.custom: ""
+title: "Requirements for STL/CLR Container Elements"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["C++ Standard Library, template class containers", "STL/CLR, containers", "containers, STL/CLR", "containers, C++ Standard Library"]
 ms.assetid: 59ab240c-15bf-4701-a9f9-e7c56e5ab53f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Requirements for STL/CLR Container Elements
 

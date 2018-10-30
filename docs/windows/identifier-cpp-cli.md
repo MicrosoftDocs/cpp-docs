@@ -1,16 +1,10 @@
 ---
-title: "__identifier (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "__identifier (C++/CLI)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["__identifier", "__identifier_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__identifier keyword [C++]"]
 ms.assetid: 348428af-afa7-4ff3-b571-acf874301cf2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # __identifier (C++/CLI)
 

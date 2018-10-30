@@ -1,15 +1,8 @@
 ---
-title: "Octal and Hexadecimal Character Specifications | Microsoft Docs"
-ms.custom: ""
+title: "Octal and Hexadecimal Character Specifications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["octal characters", "hexadecimal characters"]
 ms.assetid: 9264f3ec-46b8-41a5-b21a-8f7ed0a11871
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Octal and Hexadecimal Character Specifications
 

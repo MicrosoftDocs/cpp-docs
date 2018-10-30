@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2884 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2884"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2884"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2884"]
 ms.assetid: 8b4d43e3-3fb5-4360-86c8-de59d8736d4f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2884
 

@@ -1,15 +1,8 @@
 ---
-title: "Transporting exceptions between threads | Microsoft Docs"
-ms.custom: ""
+title: "Transporting exceptions between threads"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::current_exception", "transporting exceptions between threads", "std::copy_exception", "exception_ptr", "std::exception_ptr", "std::rethrow_exception", "current_exception", "transport exceptions between threads", "copy_exception", "rethrow_exception", "move exceptions between threads"]
 ms.assetid: 5c95d57b-acf5-491f-8122-57c5df0edd98
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Transporting exceptions between threads
 

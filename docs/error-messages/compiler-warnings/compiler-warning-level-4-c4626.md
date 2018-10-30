@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4626 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4626"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4626"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4626"]
 ms.assetid: 7f822ff4-a4a3-4f17-b45b-e8b7b4659a14
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4626
 

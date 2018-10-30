@@ -1,16 +1,9 @@
 ---
-title: "IConvertTypeImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IConvertTypeImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL.IConvertTypeImpl<T>", "IConvertTypeImpl", "ATL.IConvertTypeImpl", "ATL::IConvertTypeImpl", "ATL::IConvertTypeImpl<T>", "IConvertTypeImpl.CanConvert", "CanConvert", "IConvertTypeImpl::CanConvert"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IConvertTypeImpl class", "CanConvert method"]
 ms.assetid: 7f81e79e-7d3f-4cbe-b93c-d632a94b15f6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IConvertTypeImpl Class
 

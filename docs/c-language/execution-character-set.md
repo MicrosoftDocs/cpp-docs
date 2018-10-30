@@ -1,15 +1,8 @@
 ---
-title: "Execution Character Set | Microsoft Docs"
-ms.custom: ""
+title: "Execution Character Set"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["execution character set [C++]", "character sets [C++], execution and source", "source character set [C++]"]
 ms.assetid: 39ffbb55-11c1-4b6d-a105-327c0fceb449
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Execution Character Set
 

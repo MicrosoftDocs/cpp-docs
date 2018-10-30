@@ -1,15 +1,8 @@
 ---
-title: "Look Up Button | Microsoft Docs"
-ms.custom: ""
+title: "Look Up Button"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Look Up button"]
 ms.assetid: 61da61ec-5bb5-462a-85ef-501df5e93551
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Look Up Button
 

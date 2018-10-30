@@ -1,15 +1,9 @@
 ---
-title: "MakeAndInitialize Function | Microsoft Docs"
-ms.custom: ""
+title: "MakeAndInitialize Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::MakeAndInitialize"]
-dev_langs: ["C++"]
 ms.assetid: 71ceeb12-d2a2-4317-b010-3dcde1b39467
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # MakeAndInitialize Function
 

@@ -1,16 +1,10 @@
 ---
-title: "ML Nonfatal Error A2085 | Microsoft Docs"
-ms.custom: ""
+title: "ML Nonfatal Error A2085"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2085"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["A2085"]
 ms.assetid: c2fef415-a32b-4249-896c-6d981fc6e327
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2085
 

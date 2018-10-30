@@ -1,16 +1,9 @@
 ---
-title: "Command-Line Error D8037 | Microsoft Docs"
-ms.custom: ""
+title: "Command-Line Error D8037"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["D8037"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["D8037"]
 ms.assetid: acddaaa0-bd84-426f-a37b-8f680b379c9d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Command-Line Error D8037
 

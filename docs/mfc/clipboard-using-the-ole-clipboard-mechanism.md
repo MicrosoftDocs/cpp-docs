@@ -1,15 +1,8 @@
 ---
-title: "Clipboard: Using the OLE Clipboard Mechanism | Microsoft Docs"
-ms.custom: ""
+title: "Clipboard: Using the OLE Clipboard Mechanism"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["applications [OLE], Clipboard", "OLE Clipboard", "Clipboard [MFC], OLE formats", "OLE Clipboard, formats", "formats [MFC], Clipboard for OLE"]
 ms.assetid: 229cc610-5bb1-435e-bd20-2c8b9964d1af
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Clipboard: Using the OLE Clipboard Mechanism
 

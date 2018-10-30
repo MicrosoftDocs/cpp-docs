@@ -1,19 +1,12 @@
 ---
-title: "_set_printf_count_output | Microsoft Docs"
-ms.custom: ""
+title: "_set_printf_count_output"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_set_printf_count_output"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["set_printf_count_output", "_set_printf_count_output"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["%n format", "set_printf_count_output function", "_set_printf_count_output function"]
 ms.assetid: d8259ec5-764e-42d0-9169-72172e95163b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _set_printf_count_output
 

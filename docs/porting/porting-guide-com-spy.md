@@ -1,14 +1,7 @@
 ---
-title: "Porting Guide: COM Spy | Microsoft Docs"
-ms.custom: ""
+title: "Porting Guide: COM Spy"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 24aa0d52-4014-4acb-8052-f4e2e4bbc3bb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Porting Guide: COM Spy
 

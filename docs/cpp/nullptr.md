@@ -1,16 +1,9 @@
 ---
-title: "nullptr | Microsoft Docs"
-ms.custom: ""
+title: "nullptr"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["nullptr_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["nullptr keyword [C++]"]
 ms.assetid: e9d80ea6-2506-4eb5-b47b-2349df085832
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # nullptr
 

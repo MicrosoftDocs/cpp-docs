@@ -1,16 +1,9 @@
 ---
-title: ".NOLISTMACRO | Microsoft Docs"
-ms.custom: ""
+title: ".NOLISTMACRO"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".NOLISTMACRO"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".NOLISTMACRO directive"]
 ms.assetid: 52ea451a-fe18-4b90-b662-91e177011c2e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .NOLISTMACRO
 

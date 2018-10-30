@@ -1,16 +1,9 @@
 ---
-title: "ATL COM+ 1.0 Component Wizard | Microsoft Docs"
-ms.custom: ""
+title: "ATL COM+ 1.0 Component Wizard"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.mts.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, adding components", "ATL COM+ 1.0 Component Wizard"]
 ms.assetid: 11670681-8671-4122-96a4-2e52f8dadce0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL COM+ 1.0 Component Wizard
 

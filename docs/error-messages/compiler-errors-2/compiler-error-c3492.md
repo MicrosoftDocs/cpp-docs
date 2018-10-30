@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3492 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3492"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3492"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3492"]
 ms.assetid: b1dc6342-9133-4b1f-a9c3-e8c65d20d121
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3492
 

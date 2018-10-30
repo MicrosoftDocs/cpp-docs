@@ -1,15 +1,8 @@
 ---
-title: "Using Slider Controls | Microsoft Docs"
-ms.custom: ""
+title: "Using Slider Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSliderCtrl class [MFC], using", "slider controls", "slider controls [MFC], using"]
 ms.assetid: 2b1a8ac8-2b17-41e1-aa24-83c1fd737049
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Slider Controls
 

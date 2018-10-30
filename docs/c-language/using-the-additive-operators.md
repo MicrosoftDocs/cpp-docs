@@ -1,15 +1,8 @@
 ---
-title: "Using the Additive Operators | Microsoft Docs"
-ms.custom: ""
+title: "Using the Additive Operators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C++], addition", "additive operators"]
 ms.assetid: 7d54841e-436d-4ae8-9865-1ac1829e6f22
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using the Additive Operators
 

@@ -1,15 +1,8 @@
 ---
-title: "Working with Project Properties | Microsoft Docs"
-ms.custom: ""
+title: "Working with Project Properties"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["project properties [C++], modifying", "properties [C++]", "Visual C++ projects, properties", "projects [C++], properties"]
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Working with Project Properties
 

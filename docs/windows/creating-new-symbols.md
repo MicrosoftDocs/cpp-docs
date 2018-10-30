@@ -1,16 +1,9 @@
 ---
-title: "Creating New Symbols | Microsoft Docs"
-ms.custom: ""
+title: "Creating New Symbols"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.symbol.creating"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["New Symbol dialog box [C++]", "symbols [C++], creating"]
 ms.assetid: 35168d31-3af6-4ecd-9362-3707d47b53f3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating New Symbols
 

@@ -1,15 +1,8 @@
 ---
-title: "Running NMAKE | Microsoft Docs"
-ms.custom: ""
+title: "Running NMAKE"
 ms.date: "09/05/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["targets, building", "response files, NMAKE", "targets", "command files", "NMAKE program, targets", "NMAKE program, running", "command files, NMAKE"]
 ms.assetid: 0421104d-8b7b-4bf3-86c1-928d9b7c1a8c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Running NMAKE
 

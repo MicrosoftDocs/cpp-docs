@@ -1,16 +1,9 @@
 ---
-title: "invalid_link_target Class | Microsoft Docs"
-ms.custom: ""
+title: "invalid_link_target Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["invalid_link_target", "CONCRT/concurrency::invalid_link_target", "CONCRT/concurrency::invalid_link_target::invalid_link_target"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["invalid_link_target class"]
 ms.assetid: 33b64885-34d8-4d4e-a893-02e9f19c958e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # invalid_link_target Class
 

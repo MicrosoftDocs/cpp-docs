@@ -1,20 +1,8 @@
 ---
-title: "Data Access Using ADO.NET (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "Data Access Using ADO.NET (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
-helpviewer_keywords: ["ADO.NET [C++]", ".NET Framework [C++], data access", "databases [C++], accessing in C++", "data access [C++], ADO.NET", "data [C++], ADO.NET",
-    "native strings [C++]", "ADO.NET [C++], marshaling ANSI strings", "strings [C++], ADO.NET",
-    "BSTRs, strings", "ADO.NET [C++], marshaling BSTR strings", "strings [C++], marshaling BSTR strings",
-    "ADO.NET [C++], marshaling Unicode strings", "Unicode [C++], strings", "strings [C++], Unicode",
-    "VARIANT, marshaling", "ADO.NET [C++], marshaling VARIANT types", "VARIANT",
-    "SAFEARRAY, marshaling", "ADO.NET [C++], marshaling SAFEARRAY types"]
+helpviewer_keywords: ["ADO.NET [C++]", ".NET Framework [C++], data access", "databases [C++], accessing in C++", "data access [C++], ADO.NET", "data [C++], ADO.NET", "native strings [C++]", "ADO.NET [C++], marshaling ANSI strings", "strings [C++], ADO.NET", "BSTRs, strings", "ADO.NET [C++], marshaling BSTR strings", "strings [C++], marshaling BSTR strings", "ADO.NET [C++], marshaling Unicode strings", "Unicode [C++], strings", "strings [C++], Unicode", "VARIANT, marshaling", "ADO.NET [C++], marshaling VARIANT types", "VARIANT", "SAFEARRAY, marshaling", "ADO.NET [C++], marshaling SAFEARRAY types"]
 ms.assetid: b0cd987d-1ea7-4f76-ba01-cbd52503d06d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Data Access Using ADO.NET (C++/CLI)
 

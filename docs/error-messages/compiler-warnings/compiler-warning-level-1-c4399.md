@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4399 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4399"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4399"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4399"]
 ms.assetid: f58d9ba7-71a0-4c3b-b26f-f946dda8af30
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4399
 

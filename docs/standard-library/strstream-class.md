@@ -1,16 +1,9 @@
 ---
-title: "strstream Class | Microsoft Docs"
-ms.custom: ""
+title: "strstream Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["strstream/std::strstream::freeze", "strstream/std::strstream::pcount", "strstream/std::strstream::rdbuf", "strstream/std::strstream::str"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::strstream [C++], freeze", "std::strstream [C++], pcount", "std::strstream [C++], rdbuf", "std::strstream [C++], str"]
 ms.assetid: 63f3be31-9e36-42b1-9715-a474a5997e2a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # strstream Class
 

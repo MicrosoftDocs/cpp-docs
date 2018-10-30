@@ -1,15 +1,8 @@
 ---
-title: "Window Objects | Microsoft Docs"
-ms.custom: ""
+title: "Window Objects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["objects [MFC], window", "Windows window [MFC]", "MFC, windows", "frame windows [MFC], C++ window objects", "window objects [MFC]", "windows [MFC], C++ window objects", "window messages [MFC]", "HWND", "messages [MFC], Windows", "Visual C++, window objects [MFC]", "HWND, window objects [MFC]"]
 ms.assetid: 28b33ce2-af05-4617-9d03-1cb9a02be687
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Window Objects
 

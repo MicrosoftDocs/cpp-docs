@@ -1,16 +1,9 @@
 ---
-title: "Ordering Items in the Header Control | Microsoft Docs"
-ms.custom: ""
+title: "Ordering Items in the Header Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["DS_DRAGDROP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["sequence [MFC]", "sequence [MFC], header control items", "OrderToIndex method [MFC]", "DS_DRAGDROP notification [MFC]", "GetOrderArray method [MFC]", "SetOrderArray method [MFC]", "header controls [MFC], ordering items"]
 ms.assetid: 5aaef872-75b5-49c5-8fed-6f9a81fca812
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Ordering Items in the Header Control
 

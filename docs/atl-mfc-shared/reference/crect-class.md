@@ -1,16 +1,9 @@
 ---
-title: "CRect Class | Microsoft Docs"
-ms.custom: ""
+title: "CRect Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CRect", "ATLTYPES/ATL::CRect", "ATLTYPES/ATL::CRect::CRect", "ATLTYPES/ATL::CRect::BottomRight", "ATLTYPES/ATL::CRect::CenterPoint", "ATLTYPES/ATL::CRect::CopyRect", "ATLTYPES/ATL::CRect::DeflateRect", "ATLTYPES/ATL::CRect::EqualRect", "ATLTYPES/ATL::CRect::Height", "ATLTYPES/ATL::CRect::InflateRect", "ATLTYPES/ATL::CRect::IntersectRect", "ATLTYPES/ATL::CRect::IsRectEmpty", "ATLTYPES/ATL::CRect::IsRectNull", "ATLTYPES/ATL::CRect::MoveToX", "ATLTYPES/ATL::CRect::MoveToXY", "ATLTYPES/ATL::CRect::MoveToY", "ATLTYPES/ATL::CRect::NormalizeRect", "ATLTYPES/ATL::CRect::OffsetRect", "ATLTYPES/ATL::CRect::PtInRect", "ATLTYPES/ATL::CRect::SetRect", "ATLTYPES/ATL::CRect::SetRectEmpty", "ATLTYPES/ATL::CRect::Size", "ATLTYPES/ATL::CRect::SubtractRect", "ATLTYPES/ATL::CRect::TopLeft", "ATLTYPES/ATL::CRect::UnionRect", "ATLTYPES/ATL::CRect::Width"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LPCRECT data type", "CRect class", "LPRECT operator", "RECT structure"]
 ms.assetid: dee4e752-15d6-4db4-b68f-1ad65b2ed6ca
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CRect Class
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1 and 3) C4793 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1 and 3) C4793"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4793"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C6634", "C6635", "C6640", "C6630", "C6639", "C6636", "C6638", "C6631", "C6637", "C4793"]
 ms.assetid: 819ada53-1d9c-49b8-a629-baf8c12314e6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1 and 3) C4793
 

@@ -1,16 +1,10 @@
 ---
-title: "ImplementsHelper Structure | Microsoft Docs"
-ms.custom: ""
+title: "ImplementsHelper Structure"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::ImplementsHelper", "implements/Microsoft::WRL::Details::ImplementsHelper::CanCastTo", "implements/Microsoft::WRL::Details::ImplementsHelper::CastToUnknown", "implements/Microsoft::WRL::Details::ImplementsHelper::FillArrayWithIid", "implements/Microsoft::WRL::Details::ImplementsHelper::IidCount"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Details::ImplementsHelper structure", "Microsoft::WRL::Details::ImplementsHelper::CanCastTo method", "Microsoft::WRL::Details::ImplementsHelper::CastToUnknown method", "Microsoft::WRL::Details::ImplementsHelper::FillArrayWithIid method", "Microsoft::WRL::Details::ImplementsHelper::IidCount constant"]
 ms.assetid: b857ba80-81bd-4e53-92b6-210991954243
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # ImplementsHelper Structure
 

@@ -1,15 +1,8 @@
 ---
-title: "Jump Statements (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Jump Statements (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["jump statements"]
 ms.assetid: 7d8ff59c-b1bd-4164-85e9-f508851ed62c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Jump Statements (C++)
 

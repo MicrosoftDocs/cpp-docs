@@ -1,15 +1,8 @@
 ---
-title: "Identifiers in Primary Expressions | Microsoft Docs"
-ms.custom: ""
+title: "Identifiers in Primary Expressions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["identifiers, designating objects"]
 ms.assetid: d4602fe6-e7e6-40cc-9823-3b1ebf5d3d38
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Identifiers in Primary Expressions
 
