@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements | Microsoft Docs"
 ms.custom: ""
-ms.date: "08/15/2018"
+ms.date: "10/31/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
@@ -9,7 +9,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# C++ conformance improvements in Visual Studio 2017 versions 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158)
+# C++ conformance improvements in Visual Studio 2017 versions 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158), [15.9](#update_159)
 
 With support for generalized constexpr and NSDMI for aggregates, the Microsoft Visual C++ compiler is now complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards. See [Visual C++ Language Conformance](visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
 
@@ -333,7 +333,7 @@ void bar(A<0> *p)
 
 [P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) Changes to `std::traits_type` member functions `length`, `compare`, and `find` in order to make `std::string_view` usable in constant expressions. (In Visual Studio 2017 version 15.6, supported for Clang/LLVM only. In version 15.7 Preview 2, support is nearly complete for ClXX as well.)
 
-## Bug fixes in Visual Studio versions 15.0, [15.3](#update_153), [15.5](#update_155), [15.7](#update_157), and [15.8](#update_158)
+## Bug fixes in Visual Studio versions 15.0, [15.3](#update_153), [15.5](#update_155), [15.7](#update_157), [15.8](#update_158), and [15.9](#update_159)
 
 ### Copy-list-initialization
 
@@ -1824,6 +1824,162 @@ struct X : Base<T>
         Base<T>::template foo<int>();
     }
 };
+```
+## <a name="update_159"></a> Bug fixes and behavior changes in Visual Studio 2017 version 15.9
+
+### Identifiers in member alias templates
+An identifier used in a member alias template definition must be declared before use. 
+
+In previous versions of the compiler, the following code was allowed:
+
+```cpp
+template <typename... Ts>
+struct A
+{
+  public:
+    template <typename U>
+    using from_template_t = decltype(from_template(A<U>{}));
+
+  private:
+    template <template <typename...> typename Type, typename... Args>
+    static constexpr A<Args...> from_template(A<Type<Args...>>);
+
+};
+
+A<>::from_template_t<A<int>> a;
+
+```
+
+In Visual Studio 2017 version 15.9, in /permissive- mode, the compiler raises C3861: *'from_template': identifier not found*. To remove the error, declare from_template
+
+### Modules changes
+
+The following changes pertain to the cl.exe command line:
+
+- The compiler raises C5050 whenever the command line options are not consistent between the module creation and module consumption, as shown in this example:
+
+```cmd
+cl /EHsc /std:c++17 m.ixx /experimental:module
+cl /experimental:module /module:reference m.ifc main.cpp /std:c++14
+```
+
+In the previous example, there are two issues:
+
+1. the consumption side (main.cpp) the option **/EHsc** is not specified
+2. the C++ versions do not match. 
+
+The compiler raises C5050 for both of these cases: *warning C5050: Possible incompatible environment while importing module 'm': mismatched C++ versions.  Current "201402" module version "201703"*.
+
+The compiler raises C7536 whenever the .ifc file has been tampered with. The  header of the file contains an SHA2 hash of the contents below it. On import, the .ifc file is hashed in the same way and then checked against the hash provided in the header; if these do not match error C7536 is raised: *error C7536: ifc failed integrity checks.  Expected SHA2: '66d5c8154df0c71d4cab7665bab4a125c7ce5cb9a401a4d8b461b706ddd771c6'*.
+
+### Partial ordering involving aliases and non-deduced contexts
+
+There is implementation divergence in the partial ordering rules here. In the following example, GCC gives the same ambiguous error as the Microsoft C++ compiler in **/permissive-** mode, while Clang accepts this code. 
+
+```cpp
+
+#include <utility>
+using size_t = std::size_t;
+
+template <typename T>
+struct A {};
+template <size_t, size_t>
+struct AlignedBuffer {};
+template <size_t len>
+using AlignedStorage = AlignedBuffer<len, 4>;
+
+template <class T, class Alloc>
+int f(Alloc &alloc, const AlignedStorage<T::size> &buffer)
+{
+    return 1;
+}
+
+template <class T, class Alloc>
+int f(A<Alloc> &alloc, const AlignedStorage<T::size> &buffer)
+{
+    return 2;
+}
+
+struct Alloc
+{
+    static constexpr size_t size = 10;
+};
+
+int main()
+{
+    A<void> a;
+    AlignedStorage<Alloc::size> buf;
+    if (f<Alloc>(a, buf) != 2)
+    {
+        return 1;
+    }
+
+    return 0;
+}
+
+```
+
+The previous example raises C2668:
+
+```cmd
+
+partial_alias.cpp(32): error C2668: 'f': ambiguous call to overloaded function
+partial_alias.cpp(18): note: could be 'int f<Alloc,void>(A<void> &,const AlignedBuffer<10,4> &)'
+partial_alias.cpp(12): note: or       'int f<Alloc,A<void>>(Alloc &,const AlignedBuffer<10,4> &)'
+        with
+        [
+            Alloc=A<void>
+        ]
+partial_alias.cpp(32): note: while trying to match the argument list '(A<void>, AlignedBuffer<10,4>)'
+```
+
+The implementation divergence is due to a regression in the Standard wording where the resolution to core issue 2235 removed some text that would allow these overloads to be ordered. The current C++ standard does not provide a mechanism to partially order these functions, so they are considered ambiguous.
+
+As a workaround for the language, it is recommended to not rely on partial ordering to resolve this problem, and instead use SFINAE to remove particular overloads. In the provided example we use a helper class IsA to remove the first overload when "Alloc" is a specialization of A:
+
+```cpp
+#include <utility>
+using size_t = std::size_t;
+
+template <typename T>
+struct A {};
+template <size_t, size_t>
+struct AlignedBuffer {};
+template <size_t len>
+using AlignedStorage = AlignedBuffer<len, 4>;
+
+template <typename T> struct IsA : std::false_type {};
+template <typename T> struct IsA<A<T>> : std::true_type {};
+
+template <class T, class Alloc, typename = std::enable_if_t<!IsA<Alloc>::value>>
+int f(Alloc &alloc, const AlignedStorage<T::size> &buffer)
+{
+    return 1;
+}
+
+template <class T, class Alloc>
+int f(A<Alloc> &alloc, const AlignedStorage<T::size> &buffer)
+{
+    return 2;
+}
+
+struct Alloc
+{
+    static constexpr size_t size = 10;
+};
+
+int main()
+{
+    A<void> a;
+    AlignedStorage<Alloc::size> buf;
+    if (f<Alloc>(a, buf) != 2)
+    {
+        return 1;
+    }
+
+    return 0;
+}
+
 ```
 
 ## See also
