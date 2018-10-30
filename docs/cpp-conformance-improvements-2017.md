@@ -1868,7 +1868,7 @@ cl /experimental:module /module:reference m.ifc main.cpp /std:c++14
 
 The compiler raises C5050 for both of these cases: *warning C5050: Possible incompatible environment while importing module 'm': mismatched C++ versions.  Current "201402" module version "201703"*.
 
-In addition, the compiler raises C7536 whenever the .ifc file has been tampered with. The  header of the file contains an SHA2 hash of the contents below it. On import, the .ifc file is hashed in the same way and then checked against the hash provided in the header; if these do not match error C7536 is raised: *ifc failed integrity checks.  Expected SHA2: '66d5c8154df0c71d4cab7665bab4a125c7ce5cb9a401a4d8b461b706ddd771c6'*.
+In addition, the compiler raises C7536 whenever the .ifc file has been tampered with. The header of the module interface contains an SHA2 hash of the contents below it. On import, the .ifc file is hashed in the same way and then checked against the hash provided in the header; if these do not match error C7536 is raised: *ifc failed integrity checks.  Expected SHA2: '66d5c8154df0c71d4cab7665bab4a125c7ce5cb9a401a4d8b461b706ddd771c6'*.
 
 ### Partial ordering involving aliases and non-deduced contexts
 
