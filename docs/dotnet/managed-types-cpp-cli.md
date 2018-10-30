@@ -1,7 +1,7 @@
 ---
 title: "Managed Types (C++/CLI)"
 ms.date: "11/04/2016"
-helpviewer_keywords: ["data types [C++], managed", "managed data types [C++]", ".NET Framework [C++], managed types", "data types [C++], .NET feature access",
+helpviewer_keywords: ["data types [C++], managed", "managed data types [C++]", ".NET Framework [C++], managed types", "data types [C++], .NET feature access", "main function, in managed applications", "managed code, main() function", ".NET Framework [C++], C++ equivalents", "__nogc type declarations", "__value keyword, issues when nesting", "equality, testing for", "versioning, diagnosing conflicts", "versioning", "exceptions, diagnosing odd behavior", "compatibility, between assemblies"]
 ms.assetid: 679b8ed3-d966-4a0c-b627-2a3f3ec96b74
 ---
 # Managed Types (C++/CLI)
