@@ -1,15 +1,8 @@
 ---
-title: "How to: Create Verifiable C++ Projects (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "How to: Create Verifiable C++ Projects (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["verifiable assemblies [C++], creating", "conversions, C++ projects", "Visual C++ projects"]
 ms.assetid: 4ef2cc1a-e3e5-4d67-8d8d-9c614f8ec5d3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: create verifiable C++ projects (C++/CLI)
 

@@ -1,15 +1,8 @@
 ---
-title: "Linkage | Microsoft Docs"
-ms.custom: ""
+title: "Linkage"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["linkage [C++]", "linkage [C++], identifier names and scope"]
 ms.assetid: 986ee549-2d6c-487a-9e3b-a1f643bc5bdc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Linkage
 

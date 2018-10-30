@@ -1,15 +1,8 @@
 ---
-title: "Testing Your Provider | Microsoft Docs"
-ms.custom: ""
+title: "Testing Your Provider"
 ms.date: "10/29/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["testing, OLE DB providers", "testing providers", "OLE DB providers, testing"]
 ms.assetid: bf824fe4-81af-4ffb-beb3-4fa2928dc450
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Testing Your Provider
 

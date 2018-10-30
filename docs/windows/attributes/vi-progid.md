@@ -1,16 +1,9 @@
 ---
-title: "vi_progid (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "vi_progid (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.vi_progid"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["vi_progid attribute"]
 ms.assetid: a52449be-b93e-4111-b883-44bb8da53261
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # vi_progid
 

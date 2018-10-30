@@ -1,16 +1,9 @@
 ---
-title: "MFC ActiveX Controls: Localizing an ActiveX Control | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Localizing an ActiveX Control"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["LocaleID", "AfxOleRegisterTypeLib"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["localization, ActiveX controls", "MFC ActiveX controls [MFC], localizing", "LocaleID ambient property [MFC]", "LOCALIZE sample [MFC]"]
 ms.assetid: a44b839a-c652-4ec5-b824-04392708a5f9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Localizing an ActiveX Control
 

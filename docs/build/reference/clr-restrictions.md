@@ -1,15 +1,8 @@
 ---
-title: "/clr Restrictions | Microsoft Docs"
-ms.custom: ""
+title: "/clr Restrictions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["/clr compiler option [C++], restrictions"]
 ms.assetid: 385f6462-2c68-46d6-810e-469553ead447
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /clr Restrictions
 

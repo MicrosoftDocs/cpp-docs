@@ -1,15 +1,8 @@
 ---
-title: "Dumping Delay-Loaded Imports | Microsoft Docs"
-ms.custom: ""
+title: "Dumping Delay-Loaded Imports"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["delay-loaded imports, dumping", "imports (delay-loaded)", "delay-loaded imports"]
 ms.assetid: f766acf4-9df8-4b85-8cf6-0be3ffc4c124
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Dumping Delay-Loaded Imports
 

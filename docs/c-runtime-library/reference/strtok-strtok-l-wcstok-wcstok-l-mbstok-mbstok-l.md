@@ -1,19 +1,12 @@
 ---
-title: "strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l | Microsoft Docs"
-ms.custom: ""
+title: "strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_mbstok_l", "_mbstok", "wcstok", "_mbstok", "strtok", "_wcstok_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_mbstok", "strtok", "_tcstok", "wcstok"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["mbstok_l function", "strings [C++], searching", "tcstok function", "_tcstok function", "_strtok_l function", "strtok function", "mbstok function", "wcstok_l function", "_mbstok function", "tcstok_l function", "tokens, finding in strings", "_mbstok_l function", "wcstok function", "_wcstok_l function", "_tcstok_l function", "strtok_l function"]
 ms.assetid: 904cb734-f0d7-4d77-ba81-4791ddf461ae
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
 

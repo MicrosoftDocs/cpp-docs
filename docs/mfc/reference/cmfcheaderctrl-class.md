@@ -1,16 +1,9 @@
 ---
-title: "CMFCHeaderCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCHeaderCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCHeaderCtrl", "AFXHEADERCTRL/CMFCHeaderCtrl", "AFXHEADERCTRL/CMFCHeaderCtrl::CMFCHeaderCtrl", "AFXHEADERCTRL/CMFCHeaderCtrl::EnableMultipleSort", "AFXHEADERCTRL/CMFCHeaderCtrl::GetColumnState", "AFXHEADERCTRL/CMFCHeaderCtrl::GetSortColumn", "AFXHEADERCTRL/CMFCHeaderCtrl::IsAscending", "AFXHEADERCTRL/CMFCHeaderCtrl::IsDialogControl", "AFXHEADERCTRL/CMFCHeaderCtrl::IsMultipleSort", "AFXHEADERCTRL/CMFCHeaderCtrl::RemoveSortColumn", "AFXHEADERCTRL/CMFCHeaderCtrl::SetSortColumn", "AFXHEADERCTRL/CMFCHeaderCtrl::OnDrawItem", "AFXHEADERCTRL/CMFCHeaderCtrl::OnDrawSortArrow", "AFXHEADERCTRL/CMFCHeaderCtrl::OnFillBackground"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCHeaderCtrl [MFC], CMFCHeaderCtrl", "CMFCHeaderCtrl [MFC], EnableMultipleSort", "CMFCHeaderCtrl [MFC], GetColumnState", "CMFCHeaderCtrl [MFC], GetSortColumn", "CMFCHeaderCtrl [MFC], IsAscending", "CMFCHeaderCtrl [MFC], IsDialogControl", "CMFCHeaderCtrl [MFC], IsMultipleSort", "CMFCHeaderCtrl [MFC], RemoveSortColumn", "CMFCHeaderCtrl [MFC], SetSortColumn", "CMFCHeaderCtrl [MFC], OnDrawItem", "CMFCHeaderCtrl [MFC], OnDrawSortArrow", "CMFCHeaderCtrl [MFC], OnFillBackground"]
 ms.assetid: 2f5fbf7b-5c75-42db-9216-640b1628f777
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCHeaderCtrl Class
 

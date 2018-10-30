@@ -1,16 +1,9 @@
 ---
-title: "ASSUME | Microsoft Docs"
-ms.custom: ""
+title: "ASSUME"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["ASSUME"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ASSUME directive"]
 ms.assetid: cd162070-aee9-4c65-babc-005c6cc73d7c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ASSUME
 

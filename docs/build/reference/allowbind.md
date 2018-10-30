@@ -1,16 +1,9 @@
 ---
-title: "-ALLOWBIND | Microsoft Docs"
-ms.custom: ""
+title: "/ALLOWBIND"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/allowbind"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ALLOWBIND editbin option", "/ALLOWBIND editbin option", "-ALLOWBIND editbin option"]
 ms.assetid: eaadbb8c-4339-4281-9a75-3a1ce2352ff8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /ALLOWBIND
 

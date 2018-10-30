@@ -1,15 +1,8 @@
 ---
-title: "sampler Class | Microsoft Docs"
-ms.custom: ""
+title: "sampler Class"
 ms.date: "06/28/2018"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["sampler", "AMP_GRAPHICS/sampler", "AMP_GRAPHICS/concurrency::sampler::graphics::sampler", "AMP_GRAPHICS/concurrency::sampler::graphics::get_address_mode", "AMP_GRAPHICS/concurrency::sampler::graphics::get_border_color", "AMP_GRAPHICS/concurrency::sampler::graphics::get_filter_mode", "AMP_GRAPHICS/concurrency::sampler::graphics::address_mode", "AMP_GRAPHICS/concurrency::sampler::graphics::border_color", "AMP_GRAPHICS/concurrency::sampler::graphics::filter_mode"]
-dev_langs: ["C++"]
 ms.assetid: 9a6a9807-497d-402d-b092-8c4d86275b80
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # sampler Class
 

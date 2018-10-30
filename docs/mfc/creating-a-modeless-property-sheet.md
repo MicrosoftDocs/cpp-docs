@@ -1,15 +1,8 @@
 ---
-title: "Creating a Modeless Property Sheet | Microsoft Docs"
-ms.custom: ""
+title: "Creating a Modeless Property Sheet"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["modeless property sheets", "property sheets, modeless", "Create method [MFC], property sheets"]
 ms.assetid: eafd8a92-cc67-4a69-a5fb-742c920d1ae8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating a Modeless Property Sheet
 

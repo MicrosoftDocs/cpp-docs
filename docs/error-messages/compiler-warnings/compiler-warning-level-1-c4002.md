@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4002 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4002"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4002"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4002"]
 ms.assetid: 6bda1dfe-e2e4-4771-9794-5a404c466dd5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4002
 

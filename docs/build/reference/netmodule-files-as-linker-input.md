@@ -1,15 +1,8 @@
 ---
-title: ".netmodule Files as Linker Input | Microsoft Docs"
-ms.custom: ""
+title: ".netmodule Files as Linker Input"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MSIL linking", "linking [C++], modules", ".netmodules", "modules, Visual C++"]
 ms.assetid: a4bcbe8a-4255-451d-853b-f88cfd82f4e1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .netmodule Files as Linker Input
 

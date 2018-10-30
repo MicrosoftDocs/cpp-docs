@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1104 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1104"
 ms.date: "05/17/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1104"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1104"]
 ms.assetid: 9ca6f929-0efc-4055-8354-3cf5b4e636dc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1104
 

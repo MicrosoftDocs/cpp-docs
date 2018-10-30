@@ -1,16 +1,9 @@
 ---
-title: "stdin, stdout, stderr | Microsoft Docs"
-ms.custom: ""
+title: "stdin, stdout, stderr"
 ms.date: "10/23/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["stdin", "stderr", "stdout"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["stdout function", "standard output stream", "standard error stream", "stdin function", "standard input stream", "stderr function"]
 ms.assetid: badd4735-596d-4498-857c-ec8b7e670e4c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # stdin, stdout, stderr
 

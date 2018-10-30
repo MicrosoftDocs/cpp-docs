@@ -1,16 +1,9 @@
 ---
-title: "CMFCBaseVisualManager Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCBaseVisualManager Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCBaseVisualManager", "AFXVISUALMANAGER/CMFCBaseVisualManager", "AFXVISUALMANAGER/CMFCBaseVisualManager::CMFCBaseVisualManager", "AFXVISUALMANAGER/CMFCBaseVisualManager::DrawCheckBox", "AFXVISUALMANAGER/CMFCBaseVisualManager::DrawComboBorder", "AFXVISUALMANAGER/CMFCBaseVisualManager::DrawComboDropButton", "AFXVISUALMANAGER/CMFCBaseVisualManager::DrawPushButton", "AFXVISUALMANAGER/CMFCBaseVisualManager::DrawRadioButton", "AFXVISUALMANAGER/CMFCBaseVisualManager::DrawStatusBarProgress", "AFXVISUALMANAGER/CMFCBaseVisualManager::FillReBarPane", "AFXVISUALMANAGER/CMFCBaseVisualManager::GetStandardWindowsTheme", "AFXVISUALMANAGER/CMFCBaseVisualManager::CleanUpThemes", "AFXVISUALMANAGER/CMFCBaseVisualManager::UpdateSystemColors"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCBaseVisualManager [MFC], CMFCBaseVisualManager", "CMFCBaseVisualManager [MFC], DrawCheckBox", "CMFCBaseVisualManager [MFC], DrawComboBorder", "CMFCBaseVisualManager [MFC], DrawComboDropButton", "CMFCBaseVisualManager [MFC], DrawPushButton", "CMFCBaseVisualManager [MFC], DrawRadioButton", "CMFCBaseVisualManager [MFC], DrawStatusBarProgress", "CMFCBaseVisualManager [MFC], FillReBarPane", "CMFCBaseVisualManager [MFC], GetStandardWindowsTheme", "CMFCBaseVisualManager [MFC], CleanUpThemes", "CMFCBaseVisualManager [MFC], UpdateSystemColors"]
 ms.assetid: d56f3afc-cdea-4de1-825a-a08999c571e0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCBaseVisualManager Class
 

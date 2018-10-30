@@ -1,15 +1,9 @@
 ---
-title: "How to: Declare Value Types with the interior_ptr Keyword (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "How to: Declare Value Types with the interior_ptr Keyword (C++/CLI)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["_ptr keyword", "value types, declaring"]
 ms.assetid: 49eea66e-eeba-49bd-95b0-ba297be436e3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Declare Value Types with the interior_ptr Keyword (C++/CLI)
 

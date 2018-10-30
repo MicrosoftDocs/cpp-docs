@@ -1,19 +1,12 @@
 ---
-title: "_strrev, _wcsrev, _mbsrev, _mbsrev_l | Microsoft Docs"
-ms.custom: ""
+title: "_strrev, _wcsrev, _mbsrev, _mbsrev_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wcsrev", "_mbsrev", "_strrev", "_mbsrev_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_strrev", "_ftcsrev", "_tcsrev", "mbsrev", "mbsrev_l", "_wcsrev_fstrrev", "_mbsrev"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_mbsrev_l function", "characters [C++], switching", "_mbsrev function", "strrev function", "_ftcsrev function", "strings [C++], reversing", "wcsrev function", "_strrev function", "mbsrev_l function", "reversing characters in strings", "ftcsrev function", "characters [C++], reversing order", "_wcsrev function", "mbsrev function", "tcsrev function", "_tcsrev function"]
 ms.assetid: 87863e89-4fa0-421c-af48-25d8516fe72f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _strrev, _wcsrev, _mbsrev, _mbsrev_l
 

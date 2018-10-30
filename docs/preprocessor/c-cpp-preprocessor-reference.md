@@ -1,15 +1,8 @@
 ---
-title: "C/C++ Preprocessor Reference | Microsoft Docs"
-ms.custom: ""
+title: "C/C++ Preprocessor Reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor", "preprocessor, reference overview"]
 ms.assetid: e4a52843-7016-4f6d-8b40-cb1ace18f805
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C/C++ Preprocessor Reference
 The *C/C++ Preprocessor Reference* explains the preprocessor as it is implemented in Microsoft C/C++. The preprocessor performs preliminary operations on C and C++ files before they are passed to the compiler. You can use the preprocessor to conditionally compile code, insert files, specify compile-time error messages, and apply machine-specific rules to sections of code.

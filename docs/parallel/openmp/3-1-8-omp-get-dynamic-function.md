@@ -1,14 +1,7 @@
 ---
-title: "3.1.8 omp_get_dynamic Function | Microsoft Docs"
-ms.custom: ""
+title: "3.1.8 omp_get_dynamic Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: c03e2daf-29c9-49e3-9b67-b980ad1ab195
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 3.1.8 omp_get_dynamic Function
 

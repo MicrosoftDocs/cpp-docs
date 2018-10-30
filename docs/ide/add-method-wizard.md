@@ -1,16 +1,9 @@
 ---
-title: "Add Method Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Add Method Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.method.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Add Method Wizard [C++]", "methods [C++], adding using wizards"]
 ms.assetid: b9a71b0e-9ecf-40fa-9f86-4200cb23d671
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Add Method Wizard
 

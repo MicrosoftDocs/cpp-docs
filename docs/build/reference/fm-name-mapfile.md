@@ -1,16 +1,9 @@
 ---
-title: "-Fm (Name Mapfile) | Microsoft Docs"
-ms.custom: ""
+title: "/Fm (Name Mapfile)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/fm"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Fm compiler option [C++]", "mapfiles [C++], creating linker", "files [C++], creating map", "Fm compiler option [C++]", "/Fm compiler option [C++]"]
 ms.assetid: 8154448a-93a7-4546-8e4c-5c44d0aff45d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Fm (Name Mapfile)
 

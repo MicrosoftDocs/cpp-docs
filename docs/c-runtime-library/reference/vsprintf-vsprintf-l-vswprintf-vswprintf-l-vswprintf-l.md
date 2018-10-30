@@ -1,19 +1,12 @@
 ---
-title: "vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l | Microsoft Docs"
-ms.custom: ""
+title: "vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_vswprintf_l", "_vsprintf_l", "vsprintf", "vswprintf", "__vswprintf_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["vstprintf", "vswprintf", "_vstprintf", "vsprintf", "__vswprintf_l", "_vsprintf_l", "_vswprintf_l", "vswprintf_l"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__vswprintf_l function", "_vstprintf_l function", "formatted text", "vstprintf_l function", "_vswprintf_l function", "vsprintf_l function", "buffers, avoiding overruns", "buffer overruns", "vswprintf_l function", "buffers, buffer overruns", "vstprintf function", "_vsprintf_l function", "vswprintf function", "vsprintf function", "_vstprintf function"]
 ms.assetid: b8ef1c0d-58f9-4a18-841a-f1a989e1c29b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l
 

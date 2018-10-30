@@ -1,15 +1,8 @@
 ---
-title: "Value Edit Control | Microsoft Docs"
-ms.custom: ""
+title: "Value Edit Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Value edit control"]
 ms.assetid: 129d8f74-2629-4a29-981f-ddb3c1e174cd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Value Edit Control
 

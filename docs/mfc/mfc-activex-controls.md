@@ -1,16 +1,9 @@
 ---
-title: "MFC ActiveX Controls | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["MFC ActiveX Controls (MFC)"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleControl class [MFC], MFC ActiveX controls", "ActiveX controls [MFC], MFC", "containers [MFC], MFC ActiveX controls", "MFC ActiveX controls [MFC], serializing", "MFC ActiveX controls [MFC], containers", "serialization [MFC], MFC ActiveX controls", "dispatch maps [MFC], for MFC ActiveX controls", "MFC ActiveX controls [MFC], active/inactive state", "events [MFC], ActiveX controls", "MFC ActiveX controls [MFC]"]
 ms.assetid: c911fb74-3afc-4bf3-a0f5-7922b14d9a1b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls
 

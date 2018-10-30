@@ -1,16 +1,9 @@
 ---
-title: "identity Structure | Microsoft Docs"
-ms.custom: ""
+title: "identity Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["utility/std::identity"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["identity class", "identity structure"]
 ms.assetid: 990756fd-7969-4b39-ad7e-0878e8dac8fd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # identity Structure
 

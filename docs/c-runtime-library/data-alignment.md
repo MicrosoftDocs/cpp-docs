@@ -1,16 +1,9 @@
 ---
-title: "Data Alignment | Microsoft Docs"
-ms.custom: ""
+title: "Data Alignment"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["data.alignment"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["data alignment [C++]"]
 ms.assetid: 35ac3d2d-a4b3-421b-954f-b7372b1f18e1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Data Alignment
 

@@ -1,16 +1,9 @@
 ---
-title: "Operator Overloading | Microsoft Docs"
-ms.custom: ""
+title: "Operator Overloading"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["operator_cpp", "operator"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["redefinable operators [C++]", "non-redefinable operators [C++]", "operator keyword [C++]", "operators [C++], overloading", "operator overloading"]
 ms.assetid: 56ad4c4f-dd0c-45e0-adaa-08fe98cb1f8e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Operator overloading
 

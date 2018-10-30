@@ -1,14 +1,8 @@
 ---
-title: "/DISASM | Microsoft Docs"
+title: "/DISASM"
 ms.date: "1/17/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/disasm"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-DISASM dumpbin option", "DISASM dumpbin option", "/DISASM dumpbin option"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /DISASM
 

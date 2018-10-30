@@ -1,16 +1,9 @@
 ---
-title: "nested_scheduler_missing_detach Class | Microsoft Docs"
-ms.custom: ""
+title: "nested_scheduler_missing_detach Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["nested_scheduler_missing_detach", "CONCRT/concurrency::nested_scheduler_missing_detach", "CONCRT/concurrency::nested_scheduler_missing_detach::nested_scheduler_missing_detach"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["nested_scheduler_missing_detach class"]
 ms.assetid: 65d3f277-6d43-4160-97ef-caf8b26c1641
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # nested_scheduler_missing_detach Class
 

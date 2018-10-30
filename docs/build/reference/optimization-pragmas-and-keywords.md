@@ -1,15 +1,8 @@
 ---
-title: "Optimization Pragmas and Keywords | Microsoft Docs"
-ms.custom: ""
+title: "Optimization Pragmas and Keywords"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["keywords [C++], for optimization", "pragmas, for optimization", "optimization, keywords and pragmas"]
 ms.assetid: 66a94842-ef10-490a-88b3-51d1a568ead5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Optimization Pragmas and Keywords
 

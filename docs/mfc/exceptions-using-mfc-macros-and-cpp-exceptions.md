@@ -1,15 +1,8 @@
 ---
-title: "Exceptions: Using MFC Macros and C++ Exceptions | Microsoft Docs"
-ms.custom: ""
+title: "Exceptions: Using MFC Macros and C++ Exceptions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["exception objects [MFC]", "memory leaks [MFC], exception object not deleted", "exception handling [MFC], MFC", "try-catch exception handling [MFC], mixing MFC macros and C++ keywords", "exception objects [MFC], deleting", "exceptions [MFC], MFC macros vs. C++ keywords", "catch blocks [MFC], mixed", "exception handling [MFC], mixed-language", "nested try blocks [MFC]", "catch blocks [MFC], explicitly deleting code in", "try-catch exception handling [MFC], nested try blocks", "heap corruption [MFC]", "nested catch blocks [MFC]"]
 ms.assetid: d664a83d-879b-44d4-bdf0-029f0aca69e9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exceptions: Using MFC Macros and C++ Exceptions
 

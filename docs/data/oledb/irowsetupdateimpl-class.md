@@ -1,16 +1,9 @@
 ---
-title: "IRowsetUpdateImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IRowsetUpdateImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["IRowsetUpdateImpl", "ATL.IRowsetUpdateImpl", "ATL::IRowsetUpdateImpl", "SetData", "IRowsetUpdateImpl::SetData", "IRowsetUpdateImpl.SetData", "ATL::IRowsetUpdateImpl::SetData", "ATL.IRowsetUpdateImpl.SetData", "ATL.IRowsetUpdateImpl.GetOriginalData", "IRowsetUpdateImpl.GetOriginalData", "GetOriginalData", "ATL::IRowsetUpdateImpl::GetOriginalData", "IRowsetUpdateImpl::GetOriginalData", "IRowsetUpdateImpl::GetPendingRows", "GetPendingRows", "IRowsetUpdateImpl.GetPendingRows", "ATL::IRowsetUpdateImpl::GetPendingRows", "ATL.IRowsetUpdateImpl.GetPendingRows", "ATL.IRowsetUpdateImpl.GetRowStatus", "IRowsetUpdateImpl::GetRowStatus", "IRowsetUpdateImpl.GetRowStatus", "ATL::IRowsetUpdateImpl::GetRowStatus", "GetRowStatus", "ATL.IRowsetUpdateImpl.Undo", "ATL::IRowsetUpdateImpl::Undo", "IRowsetUpdateImpl::Undo", "IRowsetUpdateImpl.Undo", "ATL::IRowsetUpdateImpl::Update", "IRowsetUpdateImpl::Update", "IRowsetUpdateImpl.Update", "ATL.IRowsetUpdateImpl.Update", "IRowsetUpdateImpl::IsUpdateAllowed", "IRowsetUpdateImpl.IsUpdateAllowed", "IsUpdateAllowed", "IRowsetUpdateImpl.m_mapCachedData", "IRowsetUpdateImpl::m_mapCachedData", "m_mapCachedData"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["providers, updatable", "IRowsetUpdateImpl class", "updatable providers, deferred update", "SetData method", "GetOriginalData method", "GetPendingRows method", "GetRowStatus method", "Undo method", "Update method", "IsUpdateAllowed method", "m_mapCachedData"]
 ms.assetid: f85af76b-ab6f-4f8b-8f4a-337c9679d68f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetUpdateImpl Class
 

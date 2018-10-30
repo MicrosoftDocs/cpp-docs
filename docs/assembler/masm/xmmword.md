@@ -1,16 +1,9 @@
 ---
-title: "XMMWORD | Microsoft Docs"
-ms.custom: ""
+title: "XMMWORD"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["XMMWORD"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["XMMWORD directive"]
 ms.assetid: 18026d32-5cab-403e-ad7e-382fb41aa9b8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # XMMWORD
 

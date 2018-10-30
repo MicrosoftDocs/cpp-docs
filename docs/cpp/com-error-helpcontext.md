@@ -1,16 +1,9 @@
 ---
-title: "_com_error::HelpContext | Microsoft Docs"
-ms.custom: ""
+title: "_com_error::HelpContext"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_error::HelpContext"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["HelpContext method [C++]"]
 ms.assetid: 160d6443-9b68-4cf5-a540-50da951a5b2b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_error::HelpContext
 

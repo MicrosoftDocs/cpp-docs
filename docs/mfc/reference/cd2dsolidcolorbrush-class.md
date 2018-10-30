@@ -1,16 +1,9 @@
 ---
-title: "CD2DSolidColorBrush Class | Microsoft Docs"
-ms.custom: ""
+title: "CD2DSolidColorBrush Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CD2DSolidColorBrush", "AFXRENDERTARGET/CD2DSolidColorBrush", "AFXRENDERTARGET/CD2DSolidColorBrush::CD2DSolidColorBrush", "AFXRENDERTARGET/CD2DSolidColorBrush::Attach", "AFXRENDERTARGET/CD2DSolidColorBrush::Create", "AFXRENDERTARGET/CD2DSolidColorBrush::Destroy", "AFXRENDERTARGET/CD2DSolidColorBrush::Detach", "AFXRENDERTARGET/CD2DSolidColorBrush::Get", "AFXRENDERTARGET/CD2DSolidColorBrush::GetColor", "AFXRENDERTARGET/CD2DSolidColorBrush::SetColor", "AFXRENDERTARGET/CD2DSolidColorBrush::m_colorSolid", "AFXRENDERTARGET/CD2DSolidColorBrush::m_pSolidColorBrush"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DSolidColorBrush [MFC], CD2DSolidColorBrush", "CD2DSolidColorBrush [MFC], Attach", "CD2DSolidColorBrush [MFC], Create", "CD2DSolidColorBrush [MFC], Destroy", "CD2DSolidColorBrush [MFC], Detach", "CD2DSolidColorBrush [MFC], Get", "CD2DSolidColorBrush [MFC], GetColor", "CD2DSolidColorBrush [MFC], SetColor", "CD2DSolidColorBrush [MFC], m_colorSolid", "CD2DSolidColorBrush [MFC], m_pSolidColorBrush"]
 ms.assetid: d4506637-acce-4f74-8a9b-f0a45571a735
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CD2DSolidColorBrush Class
 

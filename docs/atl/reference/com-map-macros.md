@@ -1,16 +1,9 @@
 ---
-title: "COM Map Macros | Microsoft Docs"
-ms.custom: ""
+title: "COM Map Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlcom/ATL::BEGIN_COM_MAP", "atlcom/ATL::END_COM_MAP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COM interfaces, COM map macros"]
 ms.assetid: 0f33656d-321f-4996-90cc-9a7f21ab73c3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COM Map Macros
 

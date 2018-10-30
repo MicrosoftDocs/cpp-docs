@@ -1,16 +1,9 @@
 ---
-title: "CDataSource Class | Microsoft Docs"
-ms.custom: ""
+title: "CDataSource Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL.CDataSource", "ATL::CDataSource", "CDataSource", "ATL::CDataSource::Close", "ATL.CDataSource.Close", "CDataSource::Close", "CDataSource.Close", "ATL::CDataSource::GetInitializationString", "CDataSource.GetInitializationString", "GetInitializationString", "CDataSource::GetInitializationString", "ATL.CDataSource.GetInitializationString", "CDataSource::GetProperties", "ATL.CDataSource.GetProperties", "CDataSource.GetProperties", "ATL::CDataSource::GetProperties", "GetProperties", "ATL::CDataSource::GetProperty", "ATL.CDataSource.GetProperty", "CDataSource.GetProperty", "CDataSource::GetProperty", "ATL::CDataSource::Open", "ATL.CDataSource.Open", "CDataSource::Open", "CDataSource.Open", "CDataSource::OpenFromFileName", "ATL::CDataSource::OpenFromFileName", "OpenFromFileName", "CDataSource.OpenFromFileName", "ATL.CDataSource.OpenFromFileName", "CDataSource.OpenFromInitializationString", "OpenFromInitializationString", "CDataSource::OpenFromInitializationString", "ATL::CDataSource::OpenFromInitializationString", "ATL.CDataSource.OpenFromInitializationString", "CDataSource.OpenWithPromptFileName", "OpenWithPromptFileName", "ATL::CDataSource::OpenWithPromptFileName", "ATL.CDataSource.OpenWithPromptFileName", "CDataSource::OpenWithPromptFileName", "CDataSource::OpenWithServiceComponents", "OpenWithServiceComponents", "CDataSource.OpenWithServiceComponents"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDataSource class", "Close method", "GetInitializationString method", "GetProperties method", "GetProperty method", "Open method", "OpenFromFileName method", "OpenFromInitializationString method", "OpenWithPromptFileName method", "OpenWithServiceComponents method"]
 ms.assetid: 99bf862c-9d5c-4117-9501-aa0e2672085c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataSource Class
 

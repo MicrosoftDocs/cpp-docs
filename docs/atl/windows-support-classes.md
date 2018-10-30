@@ -1,16 +1,10 @@
 ---
-title: "Windows Support Classes (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Windows Support Classes (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.atl.windows"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, windows", "windows [C++], ATL"]
 ms.assetid: 750b14d5-d787-4d2b-9728-ac199ccad489
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Windows Support Classes
 

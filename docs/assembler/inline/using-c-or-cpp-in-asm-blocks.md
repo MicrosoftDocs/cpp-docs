@@ -1,15 +1,8 @@
 ---
-title: "Using C or C++ in __asm Blocks | Microsoft Docs"
-ms.custom: ""
+title: "Using C or C++ in __asm Blocks"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["inline assembly, mixing instructions with C/C++ statements", "symbols, in __asm blocks", "macros, __asm blocks", "preprocessor directives, used in __asm blocks", "type names, used in __asm blocks", "preprocessor directives", "preprocessor, directives", "constants, in __asm blocks", "comments, in __asm blocks", "typedef names, used in __asm blocks", "__asm keyword [C++], C/C++ elements in"]
 ms.assetid: ae8b2b52-6b75-42e3-ac0c-ad02d922ed97
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Using C or C++ in __asm Blocks
 

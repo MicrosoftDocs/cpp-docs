@@ -1,19 +1,12 @@
 ---
-title: "_strtoi64, _wcstoi64, _strtoi64_l, _wcstoi64_l | Microsoft Docs"
-ms.custom: ""
+title: "_strtoi64, _wcstoi64, _strtoi64_l, _wcstoi64_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_strtoi64", "_strtoi64_l", "_wcstoi64_l", "_wcstoi64"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_strtoi64", "strtoi64", "_stroi64_l", "_wcstoi64_l", "wcstoi64_l", "_wcstoi64", "wcstoi64", "strtoi64_l"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_strtoi64 function", "_wcstoi64 function", "_strtoi64_l function", "string conversion, to integers", "_wcstoi64_l function", "strtoi64_l function", "wcstoi64 function", "strtoi64 function", "wcstoi64_l function"]
 ms.assetid: ea2abc50-7bfe-420e-a46b-703c3153593a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _strtoi64, _wcstoi64, _strtoi64_l, _wcstoi64_l
 

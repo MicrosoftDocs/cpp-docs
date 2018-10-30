@@ -1,15 +1,8 @@
 ---
-title: "Mixing C (Structured) and C++ exceptions | Microsoft Docs"
-ms.custom: ""
+title: "Mixing C (Structured) and C++ exceptions"
 ms.date: "08/14/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["exceptions [C++], mixed C and C++", "C++ exception handling, mixed-language", "structured exception handling [C++], mixed C and C++", "catch keyword [C++], mixed", "try-catch keyword [C++], mixed-language"]
 ms.assetid: a149154e-36dd-4d1a-980b-efde2a563a56
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Mixing C (Structured) and C++ exceptions
 

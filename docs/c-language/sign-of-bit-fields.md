@@ -1,14 +1,7 @@
 ---
-title: "Sign of Bit Fields | Microsoft Docs"
-ms.custom: ""
+title: "Sign of Bit Fields"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: a8895b95-5504-4e30-9ad2-2498bd5c23ed
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Sign of Bit Fields
 

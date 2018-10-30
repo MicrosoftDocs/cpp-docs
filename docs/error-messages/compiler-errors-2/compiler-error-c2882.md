@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2882 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2882"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2882"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2882"]
 ms.assetid: 617018ee-5a0d-4b8d-9612-77e8ae52679b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2882
 

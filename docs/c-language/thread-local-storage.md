@@ -1,15 +1,8 @@
 ---
-title: "Thread Local Storage | Microsoft Docs"
-ms.custom: ""
+title: "Thread Local Storage"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["thread-local variables", "TLS (thread local storage)", "thread storage-class attribute", "thread-local storage", "storage, thread local storage"]
 ms.assetid: a0f1b109-c953-4079-aa10-e47f5483173d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Thread Local Storage
 

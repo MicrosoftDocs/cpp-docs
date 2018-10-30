@@ -1,19 +1,12 @@
 ---
-title: "bsearch_s | Microsoft Docs"
-ms.custom: ""
+title: "bsearch_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["bsearch_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["bsearch_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["arrays [CRT], binary search", "bsearch_s function"]
 ms.assetid: d5690d5e-6be3-4f1d-aa0b-5ca6dbded276
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # bsearch_s
 

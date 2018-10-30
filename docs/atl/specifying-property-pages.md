@@ -1,16 +1,9 @@
 ---
-title: "Specifying Property Pages (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Specifying Property Pages (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
 f1_keywords: ["ISpecifyPropertyPages"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ISpecifyPropertyPages method", "property pages, specifying"]
 ms.assetid: ee8678cf-c708-49ab-b0ad-fc2db31f1ac3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Specifying Property Pages
 

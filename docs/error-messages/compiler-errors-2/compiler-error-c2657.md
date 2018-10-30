@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2657 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2657"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2657"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2657"]
 ms.assetid: f7cf29a9-684a-4605-9469-ecfee9ba4b03
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2657
 

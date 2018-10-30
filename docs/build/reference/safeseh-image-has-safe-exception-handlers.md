@@ -1,16 +1,9 @@
 ---
-title: "-SAFESEH (Image has Safe Exception Handlers) | Microsoft Docs"
-ms.custom: ""
+title: "/SAFESEH (Image has Safe Exception Handlers)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/SAFESEH"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/SAFESEH linker option", "-SAFESEH linker option", "SAFESEH linker option"]
 ms.assetid: 7722ff99-b833-4c65-a855-aaca902ffcb7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /SAFESEH (Image has Safe Exception Handlers)
 

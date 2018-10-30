@@ -1,19 +1,12 @@
 ---
-title: "system, _wsystem | Microsoft Docs"
-ms.custom: ""
+title: "system, _wsystem"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["system", "_wsystem"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_tsystem", "_wsystem"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_wsystem function", "wsystem function", "tsystem function", "_tsystem function", "system function", "commands, executing", "command interpreter"]
 ms.assetid: 7d3df2b6-f742-49ce-bf52-012b0aee3df5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # system, _wsystem
 

@@ -1,15 +1,8 @@
 ---
-title: "Unloading a Delay-Loaded DLL | Microsoft Docs"
-ms.custom: ""
+title: "Unloading a Delay-Loaded DLL"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["__FUnloadDelayLoadedDLL2", "delayed loading of DLLs, unloading"]
 ms.assetid: 6463bc71-020e-4aff-a4ca-90360411c54e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Unloading a Delay-Loaded DLL
 

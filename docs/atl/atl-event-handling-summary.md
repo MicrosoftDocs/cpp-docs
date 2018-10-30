@@ -1,15 +1,8 @@
 ---
-title: "ATL Event Handling Summary | Microsoft Docs"
-ms.custom: ""
+title: "ATL Event Handling Summary"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["event handling, implementing"]
 ms.assetid: e8b47ef0-0bdc-47ff-9dd6-34df11dde9a2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Event Handling Summary
 

@@ -1,15 +1,8 @@
 ---
-title: "Support for ANSI | Microsoft Docs"
-ms.custom: ""
+title: "Support for ANSI"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["character sets [C++], ANSI", "ANSI [MFC]", "MFC [C++], ANSI support"]
 ms.assetid: f98440ad-90fc-42f5-bf74-975cd793c49c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Support for ANSI
 

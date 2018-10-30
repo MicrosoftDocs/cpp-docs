@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning C4936 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning C4936"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4936"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4936"]
 ms.assetid: 6676de35-bf1b-4d0b-a70f-b5734130336c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4936
 

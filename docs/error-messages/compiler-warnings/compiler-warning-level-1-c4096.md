@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4096 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4096"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4096"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4096"]
 ms.assetid: abf3cca2-2f21-45d8-b025-6b513b00681e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4096
 

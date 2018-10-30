@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Adding a D2D Object to an MFC Project | Microsoft Docs"
-ms.custom: ""
+title: "Walkthrough: Adding a D2D Object to an MFC Project"
 ms.date: "09/20/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, D2D", "D2D [MFC]"]
 ms.assetid: dda36c33-c231-4da6-a62f-72d69a12b6dd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Adding a D2D Object to an MFC Project
 

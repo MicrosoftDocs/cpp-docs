@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 3) C4290 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 3) C4290"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4290"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4290"]
 ms.assetid: d1c6d85b-28e0-4a1f-9d48-23593337a6fb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4290
 

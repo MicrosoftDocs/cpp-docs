@@ -1,16 +1,9 @@
 ---
-title: "__raise | Microsoft Docs"
-ms.custom: ""
+title: "__raise"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__raise", "__raise_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__raise keyword [C++]"]
 ms.assetid: 6f1ae418-5f0f-48b6-9f6e-8ea7e66b239a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __raise
 

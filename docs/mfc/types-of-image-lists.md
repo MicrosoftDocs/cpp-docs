@@ -1,15 +1,8 @@
 ---
-title: "Types of Image Lists | Microsoft Docs"
-ms.custom: ""
+title: "Types of Image Lists"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["lists [MFC], image", "image lists [MFC], types of", "CImageList class [MFC], types"]
 ms.assetid: bee5e7c3-78f5-4037-a136-9c50d67cdee5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Types of Image Lists
 

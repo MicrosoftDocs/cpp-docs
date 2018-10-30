@@ -1,15 +1,8 @@
 ---
-title: "Exceptions: Exceptions in Constructors | Microsoft Docs"
-ms.custom: ""
+title: "Exceptions: Exceptions in Constructors"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["constructors [MFC], exceptions", "throwing exceptions [MFC], in constructors", "exceptions [MFC], in constructors"]
 ms.assetid: a78eae5a-5821-4b27-9478-1436320ed1e1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exceptions: Exceptions in Constructors
 

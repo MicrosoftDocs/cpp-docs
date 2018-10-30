@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3117 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3117"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3117"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3117"]
 ms.assetid: dceee392-d4c7-4599-b75e-7aaac7c36fdd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3117
 

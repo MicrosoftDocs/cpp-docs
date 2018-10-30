@@ -1,16 +1,9 @@
 ---
-title: "Required and Optional Header Files | Microsoft Docs"
-ms.custom: ""
+title: "Required and Optional Header Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.headers"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["include files, required in run time", "header files, required in run time"]
 ms.assetid: f64d0bf5-e2c3-4b42-97d0-443b3d901d9f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Required and Optional Header Files
 

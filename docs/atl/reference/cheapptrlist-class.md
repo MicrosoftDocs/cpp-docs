@@ -1,16 +1,9 @@
 ---
-title: "CHeapPtrList Class | Microsoft Docs"
-ms.custom: ""
+title: "CHeapPtrList Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CHeapPtrList", "ATLCOLL/ATL::CHeapPtrList", "ATLCOLL/ATL::CHeapPtrList::CHeapPtrList"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CHeapPtrList class"]
 ms.assetid: cc70e585-362a-4007-81db-c705eb181226
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CHeapPtrList Class
 

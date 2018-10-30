@@ -1,16 +1,9 @@
 ---
-title: "&lt;type_traits&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;type_traits&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<type_traits>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["typetrait header", "type_traits"]
 ms.assetid: 2260b51f-8160-4c66-a82f-00b534cb60d4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;type_traits&gt;
 

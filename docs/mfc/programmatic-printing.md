@@ -1,15 +1,8 @@
 ---
-title: "Programmatic Printing | Microsoft Docs"
-ms.custom: ""
+title: "Programmatic Printing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["printing [MFC], active documents", "active documents [MFC], printing", "printing [MFC], programmatic", "IPrint interface", "printing [MFC]"]
 ms.assetid: 3db0945b-5e13-4be4-86a0-6aecdae565bd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Programmatic Printing
 

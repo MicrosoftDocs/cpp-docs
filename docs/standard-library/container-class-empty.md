@@ -1,15 +1,8 @@
 ---
-title: "Container Class::empty | Microsoft Docs"
-ms.custom: ""
+title: "Container Class::empty"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["empty method"]
 ms.assetid: 2055418d-3c42-4d28-a7db-111586119ed9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Container Class::empty
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4324 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4324"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4324"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4324"]
 ms.assetid: 420fa929-d9c0-40b4-8808-2d8ad3ca8090
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4324
 

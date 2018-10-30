@@ -1,15 +1,9 @@
 ---
-title: "Basic Concepts  (C++) | Microsoft Docs"
+title: "Basic Concepts  (C++)"
 ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["C++, basic language concepts"]
 ms.assetid: 961801e6-2ffd-4bf1-bb71-7f55e48d9c79
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Basic Concepts  (C++)
 

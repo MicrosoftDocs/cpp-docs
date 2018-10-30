@@ -1,16 +1,9 @@
 ---
-title: "CMemoryException Class | Microsoft Docs"
-ms.custom: ""
+title: "CMemoryException Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMemoryException", "AFX/CMemoryException", "AFX/CMemoryException::CMemoryException"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMemoryException [MFC], CMemoryException"]
 ms.assetid: 9af0ed57-d12a-45ca-82b5-c910a60f7edf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMemoryException Class
 

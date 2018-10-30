@@ -1,15 +1,8 @@
 ---
-title: ".Def Files as Linker Input | Microsoft Docs"
-ms.custom: ""
+title: ".Def Files as Linker Input"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: [".def files, as linker input", "def files, as linker input"]
 ms.assetid: ecb32d7c-e3be-4782-85a1-1c77d30f6e59
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .Def Files as Linker Input
 

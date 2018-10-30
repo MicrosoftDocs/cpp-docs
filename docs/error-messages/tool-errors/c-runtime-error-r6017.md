@@ -1,16 +1,9 @@
 ---
-title: "C Runtime Error R6017 | Microsoft Docs"
-ms.custom: ""
+title: "C Runtime Error R6017"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["R6017"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["R6017"]
 ms.assetid: df3ec5f5-6771-4648-ba06-0e26c6a1cc6a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6017
 

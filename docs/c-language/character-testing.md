@@ -1,14 +1,7 @@
 ---
-title: "Character Testing | Microsoft Docs"
-ms.custom: ""
+title: "Character Testing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 376ba061-bae3-427e-9569-33fa5949a199
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Character Testing
 

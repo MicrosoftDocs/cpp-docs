@@ -1,16 +1,9 @@
 ---
-title: ".SAVEREG | Microsoft Docs"
-ms.custom: ""
+title: ".SAVEREG"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".SAVEREG"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".SAVEREG directive"]
 ms.assetid: 1dbc2ef6-a197-40e7-9e55-fddcae8cef29
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .SAVEREG
 

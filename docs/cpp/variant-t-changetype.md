@@ -1,16 +1,9 @@
 ---
-title: "_variant_t::ChangeType | Microsoft Docs"
-ms.custom: ""
+title: "_variant_t::ChangeType"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_variant_t::ChangeType", "_variant_t.ChangeType"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ChangeType method [C++]", "VARIANT object [C++], ChangeType", "VARIANT object"]
 ms.assetid: 829d2eeb-3338-4a88-9dce-0ca145f47aac
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _variant_t::ChangeType
 

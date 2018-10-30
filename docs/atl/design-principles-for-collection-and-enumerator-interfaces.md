@@ -1,15 +1,8 @@
 ---
-title: "Designing Collection and Enumerator Interfaces (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Designing Collection and Enumerator Interfaces (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["enumerator interfaces", "collection interfaces"]
 ms.assetid: ea19a39e-6333-41a1-be62-5435c236640e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Design Principles for Collection and Enumerator Interfaces
 

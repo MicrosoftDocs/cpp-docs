@@ -1,15 +1,8 @@
 ---
-title: "Server Registration Global Functions | Microsoft Docs"
-ms.custom: ""
+title: "Server Registration Global Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlbase/ATL::AtlComModuleRegisterServer", "atlbase/ATL::AtlComModuleUnregisterServer", "atlbase/ATL::AtlComModuleRegisterClassObjects", "atlbase/ATL::AtlComModuleRevokeClassObjects", "atlbase/ATL::AtlComModuleGetClassObject"]
-dev_langs: ["C++"]
 ms.assetid: c2f0a35d-857c-4538-a44d-c4ea0db63b06
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Server Registration Global Functions
 

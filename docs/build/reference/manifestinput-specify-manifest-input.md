@@ -1,14 +1,7 @@
 ---
-title: "-MANIFESTINPUT (Specify Manifest Input) | Microsoft Docs"
-ms.custom: ""
+title: "/MANIFESTINPUT (Specify Manifest Input)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: a0b0c21e-1f9b-4d8c-bb3f-178f57fa7f1b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /MANIFESTINPUT (Specify Manifest Input)
 

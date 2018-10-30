@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2244 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2244"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2244"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2244"]
 ms.assetid: d9911c12-ceb5-4f93-ac47-b44a485215c2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2244
 

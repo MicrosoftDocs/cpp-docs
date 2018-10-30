@@ -1,15 +1,8 @@
 ---
-title: "How to: Create CLR Empty Projects | Microsoft Docs"
-ms.custom: ""
+title: "How to: Create CLR Empty Projects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CLR empty projects", "CLR empty projects, creating"]
 ms.assetid: edb4574f-fea7-426d-9b5c-fa4ecad2befb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Create CLR Empty Projects
 

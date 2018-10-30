@@ -1,15 +1,8 @@
 ---
-title: "Overloading the &lt;&lt; Operator for Your Own Classes | Microsoft Docs"
-ms.custom: ""
+title: "Overloading the &lt;&lt; Operator for Your Own Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["operator<<, overloading for your own classes", "operator <<, overloading for your own classes"]
 ms.assetid: ad1d2c49-d84e-48a8-9c09-121f28b10bf0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Overloading the &lt;&lt; Operator for Your Own Classes
 

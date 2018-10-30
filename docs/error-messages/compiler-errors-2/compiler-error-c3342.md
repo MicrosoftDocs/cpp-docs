@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3342 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3342"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3342"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3342"]
 ms.assetid: 5c6d784f-bebe-4f7e-8615-44ca6f78bfba
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3342
 

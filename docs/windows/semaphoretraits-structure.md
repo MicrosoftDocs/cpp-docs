@@ -1,16 +1,10 @@
 ---
-title: "SemaphoreTraits Structure | Microsoft Docs"
-ms.custom: ""
+title: "SemaphoreTraits Structure"
 ms.date: "09/27/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SemaphoreTraits", "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SemaphoreTraits::Unlock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Wrappers::HandleTraits::SemaphoreTraits structure", "Microsoft::WRL::Wrappers::HandleTraits::SemaphoreTraits::Unlock method"]
 ms.assetid: eddb8576-d063-409b-9201-cc87ca5d111e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # SemaphoreTraits Structure
 

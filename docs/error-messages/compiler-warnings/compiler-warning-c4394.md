@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning C4394 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning C4394"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4394"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4394"]
 ms.assetid: 5de94de0-17e3-4e7c-92f4-5c3c1b825120
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4394
 

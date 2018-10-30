@@ -1,16 +1,9 @@
 ---
-title: "Importing Function Calls Using __declspec(dllimport) | Microsoft Docs"
-ms.custom: ""
+title: "Importing Function Calls Using __declspec(dllimport)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
 f1_keywords: ["__declspec", "dllimport"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["importing function calls [C++]", "dllimport attribute [C++], function call imports", "__declspec(dllimport) keyword [C++]", "function calls [C++], importing"]
 ms.assetid: 6b53c616-0c6d-419a-8e2a-d2fff20510b3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Importing Function Calls Using __declspec(dllimport)
 

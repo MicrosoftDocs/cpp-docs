@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4167 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4167"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4167"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4167"]
 ms.assetid: 74a420bd-9371-4167-b1ee-74dd8680f97b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4167
 

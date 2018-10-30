@@ -1,15 +1,8 @@
 ---
-title: "Multithreaded Libraries Performance | Microsoft Docs"
-ms.custom: ""
+title: "Multithreaded Libraries Performance"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["threading [C++], performance", "libraries, multithreaded", "performance, multithreading", "multithreaded libraries"]
 ms.assetid: faa5d808-087c-463d-8f0d-8c478d137296
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Multithreaded Libraries Performance
 

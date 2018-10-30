@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4138 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4138"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4138"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4138"]
 ms.assetid: 65ebf929-bba0-4237-923b-c1b66adfe17d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4138
 

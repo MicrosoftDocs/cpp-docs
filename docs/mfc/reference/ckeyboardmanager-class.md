@@ -1,16 +1,9 @@
 ---
-title: "CKeyboardManager Class | Microsoft Docs"
-ms.custom: ""
+title: "CKeyboardManager Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CKeyboardManager", "AFXKEYBOARDMANAGER/CKeyboardManager", "AFXKEYBOARDMANAGER/CKeyboardManager::CKeyboardManager", "AFXKEYBOARDMANAGER/CKeyboardManager::CleanUp", "AFXKEYBOARDMANAGER/CKeyboardManager::FindDefaultAccelerator", "AFXKEYBOARDMANAGER/CKeyboardManager::IsKeyHandled", "AFXKEYBOARDMANAGER/CKeyboardManager::IsKeyPrintable", "AFXKEYBOARDMANAGER/CKeyboardManager::IsShowAllAccelerators", "AFXKEYBOARDMANAGER/CKeyboardManager::LoadState", "AFXKEYBOARDMANAGER/CKeyboardManager::ResetAll", "AFXKEYBOARDMANAGER/CKeyboardManager::SaveState", "AFXKEYBOARDMANAGER/CKeyboardManager::ShowAllAccelerators", "AFXKEYBOARDMANAGER/CKeyboardManager::TranslateCharToUpper", "AFXKEYBOARDMANAGER/CKeyboardManager::UpdateAccelTable"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CKeyboardManager [MFC], CKeyboardManager", "CKeyboardManager [MFC], CleanUp", "CKeyboardManager [MFC], FindDefaultAccelerator", "CKeyboardManager [MFC], IsKeyHandled", "CKeyboardManager [MFC], IsKeyPrintable", "CKeyboardManager [MFC], IsShowAllAccelerators", "CKeyboardManager [MFC], LoadState", "CKeyboardManager [MFC], ResetAll", "CKeyboardManager [MFC], SaveState", "CKeyboardManager [MFC], ShowAllAccelerators", "CKeyboardManager [MFC], TranslateCharToUpper", "CKeyboardManager [MFC], UpdateAccelTable"]
 ms.assetid: 4809ece6-89df-4479-8b53-9bf476ee107b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CKeyboardManager Class
 

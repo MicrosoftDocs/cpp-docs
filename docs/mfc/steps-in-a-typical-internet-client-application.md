@@ -1,15 +1,8 @@
 ---
-title: "Steps in a Typical Internet Client Application | Microsoft Docs"
-ms.custom: ""
+title: "Steps in a Typical Internet Client Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Internet client applications [MFC], general table", "WinInet classes [MFC], programming", "Internet applications [MFC], client applications"]
 ms.assetid: 7aba135c-7c15-4e2f-8c34-bbaf792c89a6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Steps in a Typical Internet Client Application
 

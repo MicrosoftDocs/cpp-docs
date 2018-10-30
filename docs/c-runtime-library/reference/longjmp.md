@@ -1,19 +1,12 @@
 ---
-title: "longjmp | Microsoft Docs"
-ms.custom: ""
+title: "longjmp"
 ms.date: "08/14/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["longjmp"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["longjmp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["restoring stack environment and execution locale", "longjmp function"]
 ms.assetid: 0e13670a-5130-45c1-ad69-6862505b7a2f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # longjmp
 

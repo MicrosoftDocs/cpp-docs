@@ -1,16 +1,9 @@
 ---
-title: "__readcr3 | Microsoft Docs"
-ms.custom: ""
+title: "__readcr3"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__readcr3"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__readcr3 intrinsic"]
 ms.assetid: e24392c3-cad7-4788-8f31-94bf2e9e0053
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __readcr3
 

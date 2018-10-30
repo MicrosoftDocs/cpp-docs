@@ -1,14 +1,7 @@
 ---
-title: "Parameter Passing | Microsoft Docs"
-ms.custom: ""
+title: "Parameter Passing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: e838ee5f-c2fe-40b0-9a23-8023c949c820
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Parameter Passing
 

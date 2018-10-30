@@ -1,16 +1,9 @@
 ---
-title: "DUMPBIN Command Line | Microsoft Docs"
-ms.custom: ""
+title: "DUMPBIN Command Line"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["dumpbin"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DUMPBIN program, command line"]
 ms.assetid: e6ad17d3-965d-41aa-9dfd-75bb073718d4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # DUMPBIN Command Line
 

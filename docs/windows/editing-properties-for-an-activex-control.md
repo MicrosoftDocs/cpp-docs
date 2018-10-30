@@ -1,15 +1,8 @@
 ---
-title: "Editing Properties for an ActiveX Control | Microsoft Docs"
-ms.custom: ""
+title: "Editing Properties for an ActiveX Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["controls [C++], editing properties", "ActiveX controls [C++], properties"]
 ms.assetid: e5880c62-36c7-4701-bc99-97a82974c22a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Editing Properties for an ActiveX Control
 

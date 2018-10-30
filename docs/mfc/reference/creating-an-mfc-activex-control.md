@@ -1,16 +1,9 @@
 ---
-title: "Creating an MFC ActiveX Control | Microsoft Docs"
-ms.custom: ""
+title: "Creating an MFC ActiveX Control"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.activex.project"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], creating", "ActiveX controls [MFC], creating"]
 ms.assetid: 8bd5a93c-d04d-414e-bb28-163fdc1c0dd5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating an MFC ActiveX Control
 

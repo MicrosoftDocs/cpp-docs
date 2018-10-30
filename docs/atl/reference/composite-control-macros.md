@@ -1,16 +1,9 @@
 ---
-title: "Composite Control Macros | Microsoft Docs"
-ms.custom: ""
+title: "Composite Control Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlcom/ATL::BEGIN_SINK_MAP", "atlcom/ATL::END_SINK_MAP", "atlcom/ATL::SINK_ENTRY"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["composite controls, macros"]
 ms.assetid: 17f2dd5e-07e6-4aa6-b965-7a361c78c45e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Composite Control Macros
 

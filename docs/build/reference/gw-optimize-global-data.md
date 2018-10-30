@@ -1,16 +1,9 @@
 ---
-title: "-Gw (Optimize Global Data) | Microsoft Docs"
-ms.custom: ""
+title: "/Gw (Optimize Global Data)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Gw"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/Gw compiler option [C++]", "-Gw compiler option [C++]"]
 ms.assetid: 6f90f4e9-5eb8-4c47-886e-631278a5a4a9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Gw (Optimize Global Data)
 

@@ -1,16 +1,9 @@
 ---
-title: "auto (C++) | Microsoft Docs"
-ms.custom: ""
+title: "auto (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 f1_keywords: ["auto_CPP", "auto"]
 helpviewer_keywords: ["auto keyword [C++]"]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # auto (C++)
 

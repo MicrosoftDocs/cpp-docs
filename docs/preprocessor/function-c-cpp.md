@@ -1,16 +1,9 @@
 ---
-title: "function (C/C++) | Microsoft Docs"
-ms.custom: ""
+title: "function (C/C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["function_CPP", "vc-pragma.function"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["function pragma", "pragmas, function"]
 ms.assetid: cbd1bd60-fabf-4b5a-9c3d-2d9f4b871365
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # function (C/C++)
 Specifies that calls to functions specified in the pragma's argument list be generated.

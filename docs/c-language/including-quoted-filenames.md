@@ -1,14 +1,7 @@
 ---
-title: "Including Quoted Filenames | Microsoft Docs"
-ms.custom: ""
+title: "Including Quoted Filenames"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 789a047e-ea38-4c99-b71d-a2ad9c81daee
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Including Quoted Filenames
 

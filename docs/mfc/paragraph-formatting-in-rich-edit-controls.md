@@ -1,15 +1,8 @@
 ---
-title: "Paragraph Formatting in Rich Edit Controls | Microsoft Docs"
-ms.custom: ""
+title: "Paragraph Formatting in Rich Edit Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["rich edit controls [MFC], paragraph formatting in", "paragraph formatting in CRichEditCtrl [MFC]", "CRichEditCtrl class [MFC], paragraph formatting in", "formatting [MFC], paragraphs"]
 ms.assetid: 0df2e4c9-2074-4e41-b913-87cb8c1b4d43
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Paragraph Formatting in Rich Edit Controls
 

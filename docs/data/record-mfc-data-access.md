@@ -1,15 +1,8 @@
 ---
-title: "Record (MFC Data Access) | Microsoft Docs"
-ms.custom: ""
+title: "Record (MFC Data Access)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["databases [C++], records", "records [C++]", "records [C++], database"]
 ms.assetid: d9888635-8121-452c-8cb9-a1c5bf268010
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record (MFC Data Access)
 

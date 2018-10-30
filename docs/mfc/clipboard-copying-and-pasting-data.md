@@ -1,15 +1,8 @@
 ---
-title: "Clipboard: Copying and Pasting Data | Microsoft Docs"
-ms.custom: ""
+title: "Clipboard: Copying and Pasting Data"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Clipboard, copying data to", "Clipboard, pasting"]
 ms.assetid: 580e10be-241f-4f9f-94cf-8302edc5beef
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Clipboard: Copying and Pasting Data
 

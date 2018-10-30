@@ -1,14 +1,7 @@
 ---
-title: "2.8 Directive Binding | Microsoft Docs"
-ms.custom: ""
+title: "2.8 Directive Binding"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 7bdac45e-ab55-42f0-bd47-a2e3d5bbab3e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.8 Directive Binding
 

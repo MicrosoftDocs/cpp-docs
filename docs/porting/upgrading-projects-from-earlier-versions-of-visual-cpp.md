@@ -1,15 +1,8 @@
 ---
-title: "Upgrading Projects from Earlier Versions of Visual C++ | Microsoft Docs"
-ms.custom: ""
+title: "Upgrading Projects from Earlier Versions of Visual C++"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["32-bit code porting", "upgrading Visual C++ applications, 32-bit code"]
 ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Upgrading Projects from Earlier Versions of Visual C++
 

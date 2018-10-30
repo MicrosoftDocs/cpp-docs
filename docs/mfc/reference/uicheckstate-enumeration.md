@@ -1,16 +1,9 @@
 ---
-title: "UICheckState Enumeration | Microsoft Docs"
-ms.custom: ""
+title: "UICheckState Enumeration"
 ms.date: "04/03/2017"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["afxwinforms/uicheckstate"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["uicheckstate enumeration [MFC]"]
 ms.assetid: 2ac0098c-20e7-410c-9685-5ead5cb02b63
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 
 # UICheckState Enumeration

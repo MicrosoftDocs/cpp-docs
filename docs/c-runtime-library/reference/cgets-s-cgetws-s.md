@@ -1,19 +1,12 @@
 ---
-title: "_cgets_s, _cgetws_s | Microsoft Docs"
-ms.custom: ""
+title: "_cgets_s, _cgetws_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_cgetws_s", "_cgets_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_cgets_s", "cgets_s", "cgetws_s", "_cgetws_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["strings [C++], getting from console", "console, getting strings from", "_cgets_s function", "cget_s function", "_cgetws_s function", "cgetws_s function"]
 ms.assetid: 38b74897-afe6-4dd9-a43f-36a3c0d72c5c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _cgets_s, _cgetws_s
 

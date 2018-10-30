@@ -1,16 +1,9 @@
 ---
-title: "_SECURE_SCL | Microsoft Docs"
-ms.custom: ""
+title: "_SECURE_SCL"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["_SECURE_SCL"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_SECURE_SCL"]
 ms.assetid: 4ffbc788-cc12-4c6a-8cd7-490081675086
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _SECURE_SCL
 

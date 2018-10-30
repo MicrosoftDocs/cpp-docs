@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1038 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1038"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1038"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1038"]
 ms.assetid: 560dccb8-5b45-46f0-9412-caa4a6172aef
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1038
 

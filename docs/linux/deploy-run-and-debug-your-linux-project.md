@@ -1,15 +1,8 @@
 ---
-title: "Deploy, run, and debug your C++ Linux project in Visual Studio | Microsoft Docs"
+title: "Deploy, run, and debug your C++ Linux project in Visual Studio"
 description: "Describes how to compile, execute, and debug code on the remote target from inside a Linux C++ project in Visual Studio."
-ms.custom: ""
 ms.date: "09/12/2018"
-ms.technology: ["cpp-linux"]
-ms.tgt_pltfrm: "Linux"
-ms.topic: "conceptual"
 ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "linux"]
 ---
 
 # Deploy, run, and debug your Linux project

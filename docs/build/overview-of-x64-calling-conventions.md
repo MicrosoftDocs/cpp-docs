@@ -1,14 +1,7 @@
 ---
-title: "Overview of x64 Calling Conventions | Microsoft Docs"
-ms.custom: ""
+title: "Overview of x64 Calling Conventions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: a05db5eb-0844-4d9d-8b92-b1b2434be0ea
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Overview of x64 Calling Conventions
 

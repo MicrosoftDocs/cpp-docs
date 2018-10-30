@@ -1,19 +1,12 @@
 ---
-title: "_chmod, _wchmod | Microsoft Docs"
-ms.custom: ""
+title: "_chmod, _wchmod"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_chmod", "_wchmod"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_chmod", "_wchmod", "wchmod"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_chmod function", "wchmod function", "file permissions [C++]", "chmod function", "files [C++], changing permissions", "_wchmod function"]
 ms.assetid: 92f7cb86-b3b0-4232-a599-b8c04a2f2c19
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _chmod, _wchmod
 

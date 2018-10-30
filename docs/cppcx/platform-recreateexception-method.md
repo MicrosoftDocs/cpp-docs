@@ -1,16 +1,10 @@
 ---
-title: "Platform::RecreateException Method | Microsoft Docs"
-ms.custom: ""
+title: "Platform::RecreateException Method"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Exception"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Exception Class"]
 ms.assetid: fa73d1ab-86e4-4d26-a7d9-81938c1c7e77
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 
 # Platform::ReCreateException Method

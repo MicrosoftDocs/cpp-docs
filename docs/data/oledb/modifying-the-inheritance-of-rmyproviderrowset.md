@@ -1,15 +1,8 @@
 ---
-title: "Modifying the Inheritance of RCustomRowset | Microsoft Docs"
-ms.custom: ""
+title: "Modifying the Inheritance of RCustomRowset"
 ms.date: "10/26/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["RMyProviderRowset", "inheritance [C++]", "RCustomRowset"]
 ms.assetid: 33089c90-98a4-43e7-8e67-d4bb137e267e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Modifying the Inheritance of RCustomRowset
 

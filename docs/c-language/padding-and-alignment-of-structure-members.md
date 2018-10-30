@@ -1,15 +1,8 @@
 ---
-title: "Padding and Alignment of Structure Members | Microsoft Docs"
-ms.custom: ""
+title: "Padding and Alignment of Structure Members"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["structure members, padding and alignment"]
 ms.assetid: c999820b-dd47-41fc-b923-e4c7ebbcd30f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Padding and Alignment of Structure Members
 

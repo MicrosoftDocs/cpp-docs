@@ -1,14 +1,7 @@
 ---
-title: "alignof and alignas (C++) | Microsoft Docs"
-ms.custom: ""
+title: "alignof and alignas (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 1d18aa8a-9621-4fb5-86e5-4cc86d5187f4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # alignof and alignas (C++)
 

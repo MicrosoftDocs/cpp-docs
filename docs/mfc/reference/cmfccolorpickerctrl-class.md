@@ -1,16 +1,9 @@
 ---
-title: "CMFCColorPickerCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCColorPickerCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCColorPickerCtrl", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::CMFCColorPickerCtrl", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetColor", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetHLS", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetHue", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetLuminance", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetSaturation", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SelectCellHexagon", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetColor", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetHLS", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetHue", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetLuminance", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetLuminanceBarWidth", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetOriginalColor", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetPalette", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetSaturation", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetType", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::DrawCursor"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCColorPickerCtrl [MFC], CMFCColorPickerCtrl", "CMFCColorPickerCtrl [MFC], GetColor", "CMFCColorPickerCtrl [MFC], GetHLS", "CMFCColorPickerCtrl [MFC], GetHue", "CMFCColorPickerCtrl [MFC], GetLuminance", "CMFCColorPickerCtrl [MFC], GetSaturation", "CMFCColorPickerCtrl [MFC], SelectCellHexagon", "CMFCColorPickerCtrl [MFC], SetColor", "CMFCColorPickerCtrl [MFC], SetHLS", "CMFCColorPickerCtrl [MFC], SetHue", "CMFCColorPickerCtrl [MFC], SetLuminance", "CMFCColorPickerCtrl [MFC], SetLuminanceBarWidth", "CMFCColorPickerCtrl [MFC], SetOriginalColor", "CMFCColorPickerCtrl [MFC], SetPalette", "CMFCColorPickerCtrl [MFC], SetSaturation", "CMFCColorPickerCtrl [MFC], SetType", "CMFCColorPickerCtrl [MFC], DrawCursor"]
 ms.assetid: b9bbd03c-beb0-4b55-9765-9985fd05e5dc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCColorPickerCtrl Class
 

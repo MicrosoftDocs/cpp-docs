@@ -1,16 +1,9 @@
 ---
-title: "-C (Preserve Comments During Preprocessing) | Microsoft Docs"
-ms.custom: ""
+title: "/C (Preserve Comments During Preprocessing)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.KeepComments", "/c", "VC.Project.VCCLWCECompilerTool.KeepComments"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["comments, not stripping during preprocessing", "preserve comments during preprocessing", "-c compiler option [C++]", "c compiler option [C++]", "/c compiler option [C++]"]
 ms.assetid: 944567ca-16bc-4728-befe-d414a7787f26
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /C (Preserve Comments During Preprocessing)
 

@@ -1,16 +1,9 @@
 ---
-title: "Creating a New Toolbar Button (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Creating a New Toolbar Button (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.toolbar"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Toolbar editor [C++], creating buttons", "toolbar buttons [C++], button image", "toolbar buttons [C++], creating", "toolbar buttons (in Toolbar editor)"]
 ms.assetid: 46c120fe-4f2a-4887-a08f-bd1fea04b3f4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating a New Toolbar Button (C++)
 

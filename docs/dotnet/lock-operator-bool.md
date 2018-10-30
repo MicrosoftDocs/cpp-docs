@@ -1,16 +1,10 @@
 ---
-title: "lock::operator bool | Microsoft Docs"
-ms.custom: ""
+title: "lock::operator bool"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["operator bool", "msclr.lock.operator bool", "lock.operator bool", "msclr::lock::operator bool", "lock::operator bool"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["lock::operator bool"]
 ms.assetid: 007f0372-f812-4f1e-ba43-2584bd96eb11
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # lock::operator bool
 

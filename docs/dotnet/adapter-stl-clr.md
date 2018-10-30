@@ -1,16 +1,10 @@
 ---
-title: "adapter (STL/CLR) | Microsoft Docs"
-ms.custom: ""
+title: "adapter (STL/CLR)"
 ms.date: "06/15/2018"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["<cliext/adapter>", "cliext::collection_adapter", "cliext::collection_adapter::base", "cliext::collection_adapter::begin", "cliext::collection_adapter", "cliext::collection_adapter::collection_adapter", "cliext::collection_adapter::difference_type", "cliext::collection_adapter::end", "cliext::collection_adapter::iterator", "cliext::collection_adapter::key_type", "cliext::collection_adapter::mapped_type", "cliext::collection_adapter::operator=", "cliext::collection_adapter::reference", "cliext::collection_adapter::size", "cliext::collection_adapter::size_type", "cliext::collection_adapter::swap", "cliext::collection_adapter::value_type", "cliext::make_collection", "cliext::range_adapter", "cliext::operator=", "cliext::range_adapter::operator=", "cliext::range_adapter::range_adapter"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<adapter> header [STL/CLR]", "adapter [STL/CLR]", "<cliext/adapter> header [STL/CLR]", "collection_adapter class [STL/CLR]", "base member [STL/CLR]", "begin member [STL/CLR]", "collection_adapter member [STL/CLR]", "difference_type member [STL/CLR]", "end member [STL/CLR]", "iterator member [STL/CLR]", "key_type member [STL/CLR]", "mapped_type member [STL/CLR]", "operator= member [STL/CLR]", "reference member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "swap member [STL/CLR]", "value_type member [STL/CLR]", "make_collection function [STL/CLR]", "range_adapter class [STL/CLR]", "operator= member [STL/CLR]", "range_adapter member [STL/CLR]"]
 ms.assetid: 71ce7e51-42b6-4f70-9595-303791a97677
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # adapter (STL/CLR)
 

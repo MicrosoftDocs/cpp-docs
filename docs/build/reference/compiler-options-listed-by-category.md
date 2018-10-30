@@ -1,15 +1,8 @@
 ---
-title: "Compiler Options Listed by Category | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Options Listed by Category"
 ms.date: "08/20/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["compiler options, C++"]
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler options listed by category
 

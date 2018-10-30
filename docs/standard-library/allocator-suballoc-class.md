@@ -1,16 +1,9 @@
 ---
-title: "allocator_suballoc Class | Microsoft Docs"
-ms.custom: ""
+title: "allocator_suballoc Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["allocators/stdext::allocators::allocator_suballoc", "allocators/stdext::allocator_suballoc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["allocator_suballoc class"]
 ms.assetid: 50c6a5c0-d00d-4276-9285-d908fd4f6483
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # allocator_suballoc Class
 

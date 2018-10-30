@@ -1,16 +1,9 @@
 ---
-title: "MFC Add Class Wizard | Microsoft Docs"
-ms.custom: ""
+title: "MFC Add Class Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.mfc.simple.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC Add Class Wizard", "wizards [MFC]"]
 ms.assetid: ad3b0989-d307-43b2-9417-3f9a78889024
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Add Class Wizard
 

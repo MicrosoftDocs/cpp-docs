@@ -1,13 +1,7 @@
 ---
-title: "Exceptions (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Exceptions (C++/CX)"
 ms.date: "01/18/2018"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: 6cbdc1f1-e4d7-4707-a670-86365146432f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exceptions (C++/CX)
 

@@ -1,8 +1,6 @@
 ---
-title: "&lt;atomic&gt; enums | Microsoft Docs"
-ms.custom: ""
+title: "&lt;atomic&gt; enums"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["atomic/std::memory_order"]
 ms.assetid: cd3a81c5-a19e-448f-952a-c34c717f21a9
 helpviewer_keywords: ["std::memory_order"]

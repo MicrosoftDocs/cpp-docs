@@ -1,15 +1,8 @@
 ---
-title: "Parallel Patterns Library (PPL) | Microsoft Docs"
-ms.custom: ""
+title: "Parallel Patterns Library (PPL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Parallel Patterns Library (PPL)"]
 ms.assetid: 40fd86b2-69fa-45e5-93d8-98a75636c242
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Parallel Patterns Library (PPL)
 

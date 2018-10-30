@@ -1,16 +1,9 @@
 ---
-title: "#ifdef and #ifndef Directives (C/C++) | Microsoft Docs"
-ms.custom: ""
+title: "#ifdef and #ifndef Directives (C/C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["#ifndef", "#ifdef"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["#ifdef directive", "preprocessor, directives", "ifdef directive (#ifdef)", "ifndef directive (#ifndef)", "#ifndef directive"]
 ms.assetid: 2b0be69d-9e72-45d8-8e24-e4130fb2455b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # #ifdef and #ifndef Directives (C/C++)
 The **#ifdef** and **#ifndef** directives perform the same task as the `#if` directive when it is used with **defined**( *identifier* ).

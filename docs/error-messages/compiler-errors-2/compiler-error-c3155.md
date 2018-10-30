@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3155 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3155"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3155"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3155"]
 ms.assetid: b04a42e1-64e7-40f8-81fe-c7945348b2cf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3155
 

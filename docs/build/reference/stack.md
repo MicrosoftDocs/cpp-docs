@@ -1,16 +1,9 @@
 ---
-title: "-STACK | Microsoft Docs"
-ms.custom: ""
+title: "/STACK"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/stack"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-STACK editbin option", "STACK editbin option", "stack, setting size", "/STACK editbin option"]
 ms.assetid: a39bcff0-c945-4355-80cc-8e4f24a5f142
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /STACK
 

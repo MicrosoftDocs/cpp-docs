@@ -1,14 +1,7 @@
 ---
-title: "2.4 Work-sharing Constructs | Microsoft Docs"
-ms.custom: ""
+title: "2.4 Work-sharing Constructs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 25bb4ded-8466-4daa-a863-766b5a99b995
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.4 Work-sharing Constructs
 

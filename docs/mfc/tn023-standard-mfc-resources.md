@@ -1,16 +1,9 @@
 ---
-title: "TN023: Standard MFC Resources | Microsoft Docs"
-ms.custom: ""
+title: "TN023: Standard MFC Resources"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.resources"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["resources [MFC]", "TN023", "standard resources"]
 ms.assetid: 60af8415-c576-4c2f-a711-ca5da0b9a1f2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN023: Standard MFC Resources
 

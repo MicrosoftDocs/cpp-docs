@@ -1,15 +1,8 @@
 ---
-title: "Adding Connection Points to an Object | Microsoft Docs"
-ms.custom: ""
+title: "Adding Connection Points to an Object"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["connection points [C++], adding to ATL objects", "Implement Connection Point ATL wizard"]
 ms.assetid: 843531be-4a36-4db0-9d54-e029b1a72a8b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding Connection Points to an Object
 

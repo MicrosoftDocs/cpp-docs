@@ -1,15 +1,8 @@
 ---
-title: "-WINMDDELAYSIGN (Partially Sign a winmd) | Microsoft Docs"
-ms.custom: ""
+title: "/WINMDDELAYSIGN (Partially Sign a winmd)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.WINMDDelaySign"]
-dev_langs: ["C++"]
 ms.assetid: 445cd602-62cb-400a-8e3a-4beb6572724d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /WINMDDELAYSIGN (Partially Sign a winmd)
 

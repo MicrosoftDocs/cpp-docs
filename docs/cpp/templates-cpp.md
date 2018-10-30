@@ -1,16 +1,9 @@
 ---
-title: "Templates (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Templates (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["template_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["templates, C++", "templates [C++]"]
 ms.assetid: 90fcc14a-2092-47af-9d2e-dba26d25b872
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Templates (C++)
 

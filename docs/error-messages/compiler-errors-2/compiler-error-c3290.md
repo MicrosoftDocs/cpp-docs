@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3290 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3290"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3290"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3290"]
 ms.assetid: 0baf684b-1143-4953-ac99-a2fa267d8017
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3290
 

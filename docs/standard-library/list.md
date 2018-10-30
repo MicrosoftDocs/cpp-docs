@@ -1,16 +1,9 @@
 ---
-title: "&lt;list&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;list&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<list>", "std::<list>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["list header"]
 ms.assetid: 2345823b-5612-44d8-95d3-aa96ed076d17
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;list&gt;
 

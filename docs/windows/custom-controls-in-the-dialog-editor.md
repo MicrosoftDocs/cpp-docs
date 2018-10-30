@@ -1,16 +1,9 @@
 ---
-title: "Custom Controls in the Dialog Editor (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Custom Controls in the Dialog Editor (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["Custom Control"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["controls [C++], templates", "custom controls [C++], dialog boxes", "custom controls [C++]", "dialog box controls [C++], custom (user) controls", "Dialog Editor [C++], custom controls"]
 ms.assetid: f494b314-4000-4bbe-bbd0-4b18fb71ede1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Custom Controls in the Dialog Editor (C++)
 

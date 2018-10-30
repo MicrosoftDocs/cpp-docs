@@ -1,16 +1,9 @@
 ---
-title: "time_put_byname Class | Microsoft Docs"
-ms.custom: ""
+title: "time_put_byname Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xloctime/std::time_put_byname"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["time_put_byname class"]
 ms.assetid: e08c2348-64d2-4ace-98b1-1496e14c7b1a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # time_put_byname Class
 

@@ -1,14 +1,7 @@
 ---
-title: "MFC Concepts | Microsoft Docs"
-ms.custom: ""
+title: "MFC Concepts"
 ms.date: "1/09/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["Concepts"]
-dev_langs: ["C++"]
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Concepts
 

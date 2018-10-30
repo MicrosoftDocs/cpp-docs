@@ -1,16 +1,9 @@
 ---
-title: "_environ, _wenviron | Microsoft Docs"
-ms.custom: ""
+title: "_environ, _wenviron"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["environ", "wenviron", "_wenviron", "_environ"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["environ function", "_environ function", "_wenviron function", "process environment", "wenviron function"]
 ms.assetid: 7e639962-6536-47cd-8095-0cbe44a56e03
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _environ, _wenviron
 

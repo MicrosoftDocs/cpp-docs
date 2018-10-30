@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3626 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3626"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3626"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3626"]
 ms.assetid: 43926e2b-1ba9-4a43-9343-c58449cbb336
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3626
 

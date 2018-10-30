@@ -1,16 +1,9 @@
 ---
-title: "requestedit (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "requestedit (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.requestedit"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["requestedit attribute"]
 ms.assetid: b3c24790-3c4a-4646-8722-03d7b51172ee
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # requestedit
 

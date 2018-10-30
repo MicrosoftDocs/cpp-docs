@@ -1,15 +1,8 @@
 ---
-title: "MFC ActiveX Controls: Events | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Events"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], events", "notifications [MFC], notifying containers of events", "custom events [MFC], adding to ActiveX controls", "events [MFC], mapping", "COleControl class [MFC], handling of events", "mappings [MFC], events", "stock events [MFC]", "container events [MFC]", "events [MFC], ActiveX controls", "OLE events [MFC]"]
 ms.assetid: e1e57e0c-206b-4923-a0b5-682c26564f74
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Events
 

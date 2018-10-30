@@ -1,15 +1,8 @@
 ---
-title: "Recordset: Sorting Records (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: Sorting Records (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["sorting data, recordset data", "ODBC recordsets, sorting", "recordsets, sorting"]
 ms.assetid: b40b152e-0a91-452e-be7b-e5bc27f744c7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Sorting Records (ODBC)
 

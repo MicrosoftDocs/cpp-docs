@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Warning LNK4253 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Warning LNK4253"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK4253"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4253"]
 ms.assetid: ec7433a9-aa9c-495a-a9f2-075e7bc3e7bc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4253
 

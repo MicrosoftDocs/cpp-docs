@@ -1,16 +1,10 @@
 ---
-title: "SafeInt Library | Microsoft Docs"
+title: "SafeInt Library"
 ms.custom: "index-page"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["SafeInt"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["libraries, SafeInt", "SafeInt library"]
 ms.assetid: 5321e875-67c5-49d7-9650-85a876552d14
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeInt Library
 

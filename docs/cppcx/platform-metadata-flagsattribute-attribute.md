@@ -1,16 +1,10 @@
 ---
-title: "Platform::Metadata::FlagsAttribute Attribute | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Metadata::FlagsAttribute Attribute"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Metadata::FlagsAttribute"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Metadata::FlagsAttribute Attribute"]
 ms.assetid: 56f4a191-cc81-4742-aff8-bd2219c0735c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Metadata::FlagsAttribute Attribute
 

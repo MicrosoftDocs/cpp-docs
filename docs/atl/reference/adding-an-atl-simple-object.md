@@ -1,16 +1,9 @@
 ---
-title: "Adding an ATL Simple Object | Microsoft Docs"
-ms.custom: ""
+title: "Adding an ATL Simple Object"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.classes.adding.atl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, adding objects", "objects [ATL]", "ATL, simple objects"]
 ms.assetid: 9c57d2ef-0447-4c84-8982-3304b8e49847
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding an ATL Simple Object
 

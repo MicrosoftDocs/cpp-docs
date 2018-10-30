@@ -1,15 +1,8 @@
 ---
-title: "Rubber-Banding and Trackers | Microsoft Docs"
-ms.custom: ""
+title: "Rubber-Banding and Trackers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["trackers [MFC]", "CRectTracker class [MFC], implementing trackers", "OLE objects [MFC], selecting", "rubber banding [MFC]", "WM_LBUTTONDOWN [MFC]"]
 ms.assetid: 0d0fa64c-6418-4baf-ab7f-2d16ca039230
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Rubber-Banding and Trackers
 

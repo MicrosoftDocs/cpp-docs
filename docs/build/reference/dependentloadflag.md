@@ -1,16 +1,9 @@
 ---
 title: "/DEPENDENTLOADFLAG (Set default dependent load flags)"
 description: "The /DEPENDENTLOADFLAG option sets default flags for DLLs loaded using LoadLibrary"
-ms.custom: ""
 ms.date: "05/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["dependentloadflag"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LINK tool [C++], dependent load flags", "-DEPENDENTLOADFLAG linker option", "linker [C++], DEPENDENTLOADFLAG", "DEPENDENTLOADFLAG linker option", "/DEPENDENTLOADFLAG linker option"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /DEPENDENTLOADFLAG (Set default dependent load flags)
 

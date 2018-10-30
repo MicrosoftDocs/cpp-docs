@@ -1,16 +1,9 @@
 ---
-title: "CStatusBar Class | Microsoft Docs"
-ms.custom: ""
+title: "CStatusBar Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CStatusBar", "AFXEXT/CStatusBar", "AFXEXT/CStatusBar::CStatusBar", "AFXEXT/CStatusBar::CommandToIndex", "AFXEXT/CStatusBar::Create", "AFXEXT/CStatusBar::CreateEx", "AFXEXT/CStatusBar::DrawItem", "AFXEXT/CStatusBar::GetItemID", "AFXEXT/CStatusBar::GetItemRect", "AFXEXT/CStatusBar::GetPaneInfo", "AFXEXT/CStatusBar::GetPaneStyle", "AFXEXT/CStatusBar::GetPaneText", "AFXEXT/CStatusBar::GetStatusBarCtrl", "AFXEXT/CStatusBar::SetIndicators", "AFXEXT/CStatusBar::SetPaneInfo", "AFXEXT/CStatusBar::SetPaneStyle", "AFXEXT/CStatusBar::SetPaneText"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CStatusBar [MFC], CStatusBar", "CStatusBar [MFC], CommandToIndex", "CStatusBar [MFC], Create", "CStatusBar [MFC], CreateEx", "CStatusBar [MFC], DrawItem", "CStatusBar [MFC], GetItemID", "CStatusBar [MFC], GetItemRect", "CStatusBar [MFC], GetPaneInfo", "CStatusBar [MFC], GetPaneStyle", "CStatusBar [MFC], GetPaneText", "CStatusBar [MFC], GetStatusBarCtrl", "CStatusBar [MFC], SetIndicators", "CStatusBar [MFC], SetPaneInfo", "CStatusBar [MFC], SetPaneStyle", "CStatusBar [MFC], SetPaneText"]
 ms.assetid: a3bde3db-e71c-4881-a3ca-1d5481c345ba
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CStatusBar Class
 

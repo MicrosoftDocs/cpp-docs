@@ -1,16 +1,9 @@
 ---
-title: "_bittestandset, _bittestandset64 | Microsoft Docs"
-ms.custom: ""
+title: "_bittestandset, _bittestandset64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_bittestandset_cpp", "_bittestandset64_cpp", "_bittestandset64", "_bittestandset"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["bts instruction", "_bittestandset intrinsic", "_bittestandset64 intrinsic"]
 ms.assetid: 6d6c8670-fea0-4c1c-9aad-2bb842715203
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _bittestandset, _bittestandset64
 

@@ -1,16 +1,10 @@
 ---
-title: "Platform::Collections::VectorView Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Collections::VectorView Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::VectorView::VectorView", "COLLECTION/Platform::Collections::VectorView::First", "COLLECTION/Platform::Collections::VectorView::GetAt", "COLLECTION/Platform::Collections::VectorView::GetMany", "COLLECTION/Platform::Collections::VectorView::IndexOf", "COLLECTION/Platform::Collections::VectorView::Size"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["VectorView Class"]
 ms.assetid: 05cd461d-dce7-49d3-b0e7-2e5c78ed8192
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::VectorView Class
 

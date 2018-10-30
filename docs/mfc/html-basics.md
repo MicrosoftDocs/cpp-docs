@@ -1,15 +1,8 @@
 ---
-title: "HTML Basics | Microsoft Docs"
-ms.custom: ""
+title: "HTML Basics"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["HTML [MFC], about HTML"]
 ms.assetid: aab8ea9f-12d4-4bdd-a585-ac3124081a2a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # HTML Basics
 

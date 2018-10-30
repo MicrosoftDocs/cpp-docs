@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2844 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2844"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2844"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2844"]
 ms.assetid: dcaf4cd2-21b0-4280-ae42-0a706c524d83
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2844
 

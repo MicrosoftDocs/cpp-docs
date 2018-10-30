@@ -1,16 +1,9 @@
 ---
-title: "IRowsetNotifyImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IRowsetNotifyImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL.IRowsetNotifyImpl", "ATL::IRowsetNotifyImpl", "IRowsetNotifyImpl", "IRowsetNotifyImpl.OnFieldChange", "IRowsetNotifyImpl::OnFieldChange", "OnFieldChange", "IRowsetNotifyImpl::OnRowChange", "IRowsetNotifyImpl.OnRowChange", "OnRowChange", "OnRowsetChange", "IRowsetNotifyImpl::OnRowsetChange", "IRowsetNotifyImpl.OnRowsetChange"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IRowsetNotifyImpl class", "OnFieldChange method", "OnRowChange method", "OnRowsetChange method"]
 ms.assetid: fbfd0cb2-38ff-4b42-899a-8de902f834b8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetNotifyImpl Class
 

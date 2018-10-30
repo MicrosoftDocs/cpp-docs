@@ -1,14 +1,7 @@
 ---
-title: "Reading Ranges | Microsoft Docs"
-ms.custom: ""
+title: "Reading Ranges"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 99de29ce-ab14-46f4-97e1-2081fd996b53
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Reading Ranges
 

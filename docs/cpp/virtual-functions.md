@@ -1,15 +1,8 @@
 ---
-title: "Virtual Functions | Microsoft Docs"
-ms.custom: ""
+title: "Virtual Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["functions [C++], virtual functions", "derived classes [C++], virtual functions", "virtual functions"]
 ms.assetid: b3e1ed88-2a90-4af8-960a-16f47deb3452
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Virtual Functions
 

@@ -1,15 +1,8 @@
 ---
-title: "Setting Linker Options | Microsoft Docs"
-ms.custom: ""
+title: "Setting Linker Options"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["files [C++], LINK", "input files [C++], linker", "linker [C++], ways to set options", "linker [C++], switches", "input files [C++]", "object/library modules"]
 ms.assetid: e08fb487-0f2e-4f24-87db-232dbc8bd2e2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Setting Linker Options
 

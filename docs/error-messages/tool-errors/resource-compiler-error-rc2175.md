@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Error RC2175 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Error RC2175"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC2175"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC2175"]
 ms.assetid: 3864a371-dba8-41a7-962c-e792709774f1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2175
 

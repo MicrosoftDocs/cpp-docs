@@ -1,15 +1,8 @@
 ---
-title: "Integer Limits | Microsoft Docs"
-ms.custom: ""
+title: "Integer Limits"
 ms.date: "01/29/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["integral limits", "limits, integer", "limits.h header file", "integer limits"]
 ms.assetid: 6922bdbf-0f49-443b-bc03-ee182e4cbd57
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Integer Limits
 

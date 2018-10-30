@@ -1,16 +1,9 @@
 ---
-title: "ISource Class | Microsoft Docs"
-ms.custom: ""
+title: "ISource Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["ISource", "AGENTS/concurrency::ISource", "AGENTS/concurrency::ISource::accept", "AGENTS/concurrency::ISource::acquire_ref", "AGENTS/concurrency::ISource::consume", "AGENTS/concurrency::ISource::link_target", "AGENTS/concurrency::ISource::release", "AGENTS/concurrency::ISource::release_ref", "AGENTS/concurrency::ISource::reserve", "AGENTS/concurrency::ISource::unlink_target", "AGENTS/concurrency::ISource::unlink_targets"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ISource class"]
 ms.assetid: c7b73463-42f6-4dcc-801a-81379b12d35a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ISource Class
 

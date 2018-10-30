@@ -1,15 +1,8 @@
 ---
-title: "Derived View Classes Available in MFC | Microsoft Docs"
-ms.custom: ""
+title: "Derived View Classes Available in MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CView class [MFC], classes derived from", "classes [MFC], derived", "derived classes [MFC], view classes", "view classes [MFC], derived"]
 ms.assetid: dba42178-7459-4ccc-b025-f3d9b8a4b737
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Derived View Classes Available in MFC
 

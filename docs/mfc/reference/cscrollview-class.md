@@ -1,16 +1,9 @@
 ---
-title: "CScrollView Class | Microsoft Docs"
-ms.custom: ""
+title: "CScrollView Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CScrollView", "AFXWIN/CScrollView", "AFXWIN/CScrollView::CScrollView", "AFXWIN/CScrollView::CheckScrollBars", "AFXWIN/CScrollView::FillOutsideRect", "AFXWIN/CScrollView::GetDeviceScrollPosition", "AFXWIN/CScrollView::GetDeviceScrollSizes", "AFXWIN/CScrollView::GetScrollPosition", "AFXWIN/CScrollView::GetTotalSize", "AFXWIN/CScrollView::ResizeParentToFit", "AFXWIN/CScrollView::ScrollToPosition", "AFXWIN/CScrollView::SetScaleToFitSize", "AFXWIN/CScrollView::SetScrollSizes"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CScrollView [MFC], CScrollView", "CScrollView [MFC], CheckScrollBars", "CScrollView [MFC], FillOutsideRect", "CScrollView [MFC], GetDeviceScrollPosition", "CScrollView [MFC], GetDeviceScrollSizes", "CScrollView [MFC], GetScrollPosition", "CScrollView [MFC], GetTotalSize", "CScrollView [MFC], ResizeParentToFit", "CScrollView [MFC], ScrollToPosition", "CScrollView [MFC], SetScaleToFitSize", "CScrollView [MFC], SetScrollSizes"]
 ms.assetid: 4ba16dac-1acb-4be0-bb55-5fb695b6948d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CScrollView Class
 

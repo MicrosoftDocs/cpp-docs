@@ -1,16 +1,9 @@
 ---
-title: "-SYMBOLS | Microsoft Docs"
-ms.custom: ""
+title: "/SYMBOLS"
 ms.date: "09/05/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/symbols"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["symbols, dumping", "public symbols", "symbols, displaying COFF symbol table", "symbol tables", "SYMBOLS dumpbin option", "/SYMBOLS dumpbin option", "-SYMBOLS dumpbin option"]
 ms.assetid: 34bcae90-4561-4c77-a80c-065508dec39a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /SYMBOLS
 

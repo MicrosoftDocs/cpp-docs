@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Error RC2164 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Error RC2164"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC2164"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC2164"]
 ms.assetid: 23d7691d-80f3-4979-a519-378e5498d2d1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2164
 

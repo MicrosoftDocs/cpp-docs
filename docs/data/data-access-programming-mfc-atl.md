@@ -1,15 +1,8 @@
 ---
-title: "Data Access Programming (MFC-ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Data Access Programming (MFC-ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC [C++], data access applications", "databases [C++], MFC", "OLE DB [C++], data access technologies", "data [C++], data access technologies", "data access [C++], class libraries for databases"]
 ms.assetid: def97b2c-b5a6-445f-afeb-308050fd4852
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Access Programming (MFC/ATL)
 

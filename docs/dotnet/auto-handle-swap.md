@@ -1,16 +1,10 @@
 ---
-title: "auto_handle::swap | Microsoft Docs"
-ms.custom: ""
+title: "auto_handle::swap"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["msclr::auto_handle::swap", "auto_handle.swap", "auto_handle::swap", "msclr..auto_handle.swap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["auto_handle::swap"]
 ms.assetid: 3ebf82d7-9b69-4a72-a22d-69b4f640f9b0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_handle::swap
 

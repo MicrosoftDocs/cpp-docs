@@ -1,15 +1,8 @@
 ---
-title: "system Function | Microsoft Docs"
-ms.custom: ""
+title: "system Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["system function"]
 ms.assetid: 0786ccdc-20cd-4d96-b3d8-3230507c3066
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # system Function
 

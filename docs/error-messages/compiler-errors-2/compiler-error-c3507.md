@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3507 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3507"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3507"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3507"]
 ms.assetid: 75f89767-f6f9-40f6-9820-81a49e09abdf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3507
 

@@ -1,15 +1,8 @@
 ---
-title: "Inheritance  (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Inheritance  (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["derived classes [C++]", "derived classes [C++], about derived classes", "classes [C++], derived"]
 ms.assetid: 3534ca19-d9ed-4a40-be1b-b921ad0e6956
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Inheritance  (C++)
 

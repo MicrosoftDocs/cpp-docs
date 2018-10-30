@@ -1,16 +1,10 @@
 ---
-title: "Platform::Guid value class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Guid value class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Guid"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Guid Struct"]
 ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Guid value class
 

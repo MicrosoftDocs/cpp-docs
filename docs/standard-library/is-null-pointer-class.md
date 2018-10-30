@@ -1,16 +1,9 @@
 ---
-title: "is_null_pointer Class | Microsoft Docs"
-ms.custom: ""
+title: "is_null_pointer Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_null_pointer"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_null_pointer"]
 ms.assetid: f3b3601b-f162-4803-a6e9-dabf5c3876cc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_null_pointer Class
 

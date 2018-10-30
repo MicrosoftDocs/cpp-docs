@@ -1,19 +1,12 @@
 ---
-title: "nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl | Microsoft Docs"
-ms.custom: ""
+title: "nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["nextafterf", "_nextafterf", "nextafter", "nextafterl", "_nextafter", "nexttoward", "nexttowardf", "nexttowardl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["nextafter", "_nextafter", "nextafterf", "nextafterl", "_nextafterf", "math/nextafter", "math/nextafterf", "math/nextafterl", "nexttoward", "nexttowardf", "nexttowardl", "math/nexttoward", "math/nexttowardf", "math/nexttowardl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_nextafter function", "nextafter function", "_nextafterf function", "nextafterf function", "nextafterl function", "nexttoward function", "nexttowardf function", "nexttowardl function"]
 ms.assetid: 9785bfb9-de53-4bd0-9637-f05fa0c1f6ab
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl
 

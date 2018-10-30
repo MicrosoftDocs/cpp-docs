@@ -1,16 +1,9 @@
 ---
-title: "Importing into an Application Using __declspec(dllimport) | Microsoft Docs"
-ms.custom: ""
+title: "Importing into an Application Using __declspec(dllimport)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
 f1_keywords: ["__declspec", "dllimport"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec(dllimport) keyword [C++]", "importing DLLs [C++], __declspec(dllimport)"]
 ms.assetid: edb4da4e-f83a-44cf-a668-9239d49dbe42
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Importing into an Application Using __declspec(dllimport)
 

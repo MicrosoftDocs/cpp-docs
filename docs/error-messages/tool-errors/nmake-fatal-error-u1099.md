@@ -1,16 +1,9 @@
 ---
-title: "NMAKE Fatal Error U1099 | Microsoft Docs"
-ms.custom: ""
+title: "NMAKE Fatal Error U1099"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["U1099"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["U1099"]
 ms.assetid: 6688a805-43e6-4247-a2d0-14be082f0b13
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # NMAKE Fatal Error U1099
 

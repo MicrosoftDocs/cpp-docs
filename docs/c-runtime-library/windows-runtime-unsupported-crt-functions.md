@@ -1,15 +1,8 @@
 ---
-title: "Windows Runtime Unsupported CRT Functions | Microsoft Docs"
-ms.custom: ""
+title: "Windows Runtime Unsupported CRT Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["unsupported CRT functions, Windows Runtime", "Windows Runtime, unsupported CRT functions"]
 ms.assetid: bb8386d6-0ef8-460c-88d8-addff009b6f1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Windows Runtime Unsupported CRT Functions
 

@@ -1,16 +1,9 @@
 ---
-title: "__writecr8 | Microsoft Docs"
-ms.custom: ""
+title: "__writecr8"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_writecr8"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_writecr8 intrinsic"]
 ms.assetid: 6f8bd632-dddb-4335-971e-1acee24aa2b9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __writecr8
 

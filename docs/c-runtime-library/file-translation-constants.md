@@ -1,16 +1,9 @@
 ---
-title: "File Translation Constants | Microsoft Docs"
-ms.custom: ""
+title: "File Translation Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.constants.file"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["translation constants", "file translation [C++], constants", "translation, file translation constants", "translation, constants", "constants [C++], file translation mode", "file translation [C++]"]
 ms.assetid: 49b13bf3-442e-4d19-878b-bd1029fa666a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # File Translation Constants
 

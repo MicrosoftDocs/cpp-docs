@@ -1,16 +1,9 @@
 ---
-title: "inline_depth | Microsoft Docs"
-ms.custom: ""
+title: "inline_depth"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["inline_depth_CPP", "vc-pragma.inline_depth"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, inline_depth", "inline_depth pragma"]
 ms.assetid: 2bba60fe-43ea-4d09-90f7-aafaba3bad07
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # inline_depth
 Specifies the inline heuristic search depth, such that, no function will be inlined if it is at a depth (in the call graph) greater than *n*.

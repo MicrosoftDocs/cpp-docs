@@ -1,16 +1,9 @@
 ---
-title: "COleUpdateDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "COleUpdateDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleUpdateDialog", "AFXODLGS/COleUpdateDialog", "AFXODLGS/COleUpdateDialog::COleUpdateDialog", "AFXODLGS/COleUpdateDialog::DoModal"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleUpdateDialog [MFC], COleUpdateDialog", "COleUpdateDialog [MFC], DoModal"]
 ms.assetid: 699ca980-52b1-4cf8-9ab1-ac6767ad5b0e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleUpdateDialog Class
 

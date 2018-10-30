@@ -1,16 +1,10 @@
 ---
-title: "VerifyInterfaceHelper Structure | Microsoft Docs"
-ms.custom: ""
+title: "VerifyInterfaceHelper Structure"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::VerifyInterfaceHelper", "implements/Microsoft::WRL::Details::VerifyInterfaceHelper::Verify"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Details::VerifyInterfaceHelper structure", "Microsoft::WRL::Details::VerifyInterfaceHelper::Verify method"]
 ms.assetid: ea95b641-199a-4fdf-964b-186b40cb3ba7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # VerifyInterfaceHelper Structure
 

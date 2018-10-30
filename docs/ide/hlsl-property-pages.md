@@ -1,15 +1,8 @@
 ---
-title: "HLSL Property Pages | Microsoft Docs"
-ms.custom: ""
+title: "HLSL Property Pages"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["VC.Project.FXCompilerTool.AdditionalOptionsPage"]
-dev_langs: ["C++"]
 ms.assetid: 0c65f5ec-a2a5-4f5b-8d4c-fa57113a5a1d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # HLSL Property Pages
 

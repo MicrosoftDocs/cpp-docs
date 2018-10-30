@@ -1,15 +1,8 @@
 ---
-title: "Settings for the Progress Control | Microsoft Docs"
-ms.custom: ""
+title: "Settings for the Progress Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CProgressCtrl class [MFC], settings", "progress controls [MFC], settings"]
 ms.assetid: f4616e91-74fa-4000-ba0d-d3ddc0ee075b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Settings for the Progress Control
 

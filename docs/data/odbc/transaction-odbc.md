@@ -1,15 +1,8 @@
 ---
-title: "Transaction (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Transaction (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC recordsets [C++], updating", "transactions [C++], MFC ODBC classes", "ODBC [C++], transactions", "recordsets [C++], updating", "databases [C++], transactions", "recordsets [C++], transactions", "ODBC recordsets [C++], transactions"]
 ms.assetid: a2ec0995-2029-45f2-8092-6efd6f2a77f4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Transaction (ODBC)
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2070 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2070"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2070"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2070"]
 ms.assetid: 4c8dea63-1227-4aba-be26-2462537f86fb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2070
 

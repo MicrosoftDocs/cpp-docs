@@ -1,16 +1,9 @@
 ---
-title: "TN001: Window Class Registration | Microsoft Docs"
-ms.custom: ""
+title: "TN001: Window Class Registration"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.registration"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TN001", "WNDCLASS [MFC]", "AfxRegisterClass function"]
 ms.assetid: 1abf678e-f220-4606-85e0-03df32f64c54
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN001: Window Class Registration
 

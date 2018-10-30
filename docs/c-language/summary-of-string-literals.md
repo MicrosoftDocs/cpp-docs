@@ -1,14 +1,7 @@
 ---
-title: "Summary of String Literals | Microsoft Docs"
-ms.custom: ""
+title: "Summary of String Literals"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: d2693900-f4e2-4820-b7de-085d51827aee
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Summary of String Literals
 

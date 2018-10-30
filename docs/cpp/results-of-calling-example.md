@@ -1,15 +1,8 @@
 ---
-title: "Results of Calling Example | Microsoft Docs"
-ms.custom: ""
+title: "Results of Calling Example"
 ms.date: "09/05/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["examples [C++], results of calling", "results, thiscall call", "results, __fastcall keyword call", "results, __cdecl call", "results, __stdcall call"]
 ms.assetid: aa70a7cb-ba1d-4aa6-bd0a-ba783da2e642
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Results of Calling Example
 

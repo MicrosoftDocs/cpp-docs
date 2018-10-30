@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3046 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3046"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3046"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3046"]
 ms.assetid: 2e53d835-faa1-4ec0-9807-41f3dc552635
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3046
 

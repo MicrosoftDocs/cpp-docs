@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3240 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3240"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3240"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3240"]
 ms.assetid: 1a8dc213-b80c-47ae-ada0-e9554b635d1e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3240
 

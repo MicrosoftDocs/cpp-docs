@@ -1,15 +1,8 @@
 ---
-title: "Reference-Type Function Returns | Microsoft Docs"
-ms.custom: ""
+title: "Reference-Type Function Returns"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["function return types [C++], reference type", "data types [C++], function return types", "functions [C++], return types"]
 ms.assetid: 5b73be1d-2dc7-41df-ab0a-adcba36f2ad1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Reference-Type Function Returns
 

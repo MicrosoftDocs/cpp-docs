@@ -1,16 +1,9 @@
 ---
-title: "View Classes (Architecture) | Microsoft Docs"
-ms.custom: ""
+title: "View Classes (Architecture)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.view"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["form and record views [MFC]", "view classes [MFC]", "control views [MFC]", "view classes [MFC], architecture"]
 ms.assetid: 8894579a-1436-441e-b985-83711061e495
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # View Classes (Architecture)
 

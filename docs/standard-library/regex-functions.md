@@ -1,10 +1,7 @@
 ---
-title: "&lt;regex&gt; functions | Microsoft Docs"
-ms.custom: ""
+title: "&lt;regex&gt; functions"
 ms.date: "09/10/2018"
-ms.topic: "reference"
 f1_keywords: ["regex/std::regex_match", "regex/std::regex_replace", "regex/std::regex_search", "regex/std::swap"]
-dev_langs: ["C++"]
 ms.assetid: 91a8314b-6f7c-4e33-b7d6-d8583dd75585
 helpviewer_keywords: ["std::regex_match [C++]", "std::regex_replace [C++]", "std::regex_search [C++]", "std::swap [C++]", "std::swap [C++]"]
 ---

@@ -1,14 +1,7 @@
 ---
-title: "Language Specific Handler | Microsoft Docs"
-ms.custom: ""
+title: "Language Specific Handler"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 6503e0cd-2d3a-4330-a925-8bed8c27c2be
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Language Specific Handler
 

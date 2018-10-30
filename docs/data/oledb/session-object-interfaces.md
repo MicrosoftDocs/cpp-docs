@@ -1,15 +1,8 @@
 ---
-title: "Session Object Interfaces | Microsoft Docs"
-ms.custom: ""
+title: "Session Object Interfaces"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["session objects [OLE DB]", "session objects [OLE DB], interfaces", "OLE DB provider templates, object interfaces", "interfaces, session object", "interfaces, list of"]
 ms.assetid: ac01a958-6dde-4bd7-8b63-94459e488335
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Session Object Interfaces
 

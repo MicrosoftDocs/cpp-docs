@@ -1,16 +1,9 @@
 ---
-title: "Data Source: Programmatically Configuring an ODBC Data Source | Microsoft Docs"
-ms.custom: ""
+title: "Data Source: Programmatically Configuring an ODBC Data Source"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
 f1_keywords: ["SQLConfigDataSource"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC data sources, configuring", "SQLConfigDataSource method example", "ODBC connections, configuring", "configuring ODBC data sources"]
 ms.assetid: b8cabe9b-9e12-4d73-ae36-7cb12dee3213
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Source: Programmatically Configuring an ODBC Data Source
 

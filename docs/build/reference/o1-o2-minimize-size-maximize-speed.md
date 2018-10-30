@@ -1,16 +1,9 @@
 ---
-title: "-O1, -O2 (Minimize Size, Maximize Speed) | Microsoft Docs"
-ms.custom: ""
+title: "/O1, /O2 (Minimize Size, Maximize Speed)"
 ms.date: "09/25/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/o2", "/o1"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["maximize speed compiler option [C++]", "minimize size compiler option [C++]", "-O2 compiler option [C++]", "fast code", "small code", "O2 compiler option [C++]", "/O2 compiler option [C++]", "-O1 compiler option [C++]", "O1 compiler option [C++]", "/O1 compiler option [C++]"]
 ms.assetid: 2d1423f5-53d9-44da-8908-b33a351656c2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /O1, /O2 (Minimize Size, Maximize Speed)
 

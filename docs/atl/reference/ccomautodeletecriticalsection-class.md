@@ -1,16 +1,9 @@
 ---
-title: "CComAutoDeleteCriticalSection Class | Microsoft Docs"
-ms.custom: ""
+title: "CComAutoDeleteCriticalSection Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComAutoDeleteCriticalSection", "atlcore/ATL::CComAutoDeleteCriticalSection"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComAutoDeleteCriticalSection class"]
 ms.assetid: 2396dbea-1c60-4841-b50e-c4e18af311a3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComAutoDeleteCriticalSection Class
 

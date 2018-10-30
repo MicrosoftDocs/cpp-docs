@@ -1,16 +1,9 @@
 ---
-title: "CAutoHideDockSite Class | Microsoft Docs"
-ms.custom: ""
+title: "CAutoHideDockSite Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CAutoHideDockSite", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::CanAcceptPane", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::DockPane", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::GetAlignRect", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::RepositionPanes", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::SetOffsetLeft", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::SetOffsetRight", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::UnSetAutoHideMode", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::m_nExtraSpace"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAutoHideDockSite [MFC], CanAcceptPane", "CAutoHideDockSite [MFC], DockPane", "CAutoHideDockSite [MFC], GetAlignRect", "CAutoHideDockSite [MFC], RepositionPanes", "CAutoHideDockSite [MFC], SetOffsetLeft", "CAutoHideDockSite [MFC], SetOffsetRight", "CAutoHideDockSite [MFC], UnSetAutoHideMode", "CAutoHideDockSite [MFC], m_nExtraSpace"]
 ms.assetid: 2a0f6bec-c369-4ab7-977d-564e7946ebad
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAutoHideDockSite Class
 

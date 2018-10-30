@@ -1,15 +1,8 @@
 ---
-title: "NMAKE Errors U1000 through U4011 | Microsoft Docs"
-ms.custom: ""
+title: "NMAKE Errors U1000 through U4011"
 ms.date: "11/17/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["nmake"]
-dev_langs: ["C++"]
 ms.assetid: 9dbe2e12-88ca-4df4-b935-17756112bb79
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # NMAKE Errors U1000 through U4011
 

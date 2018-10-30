@@ -1,15 +1,8 @@
 ---
-title: "Exceptions: Changes to Exception Macros in Version 3.0 | Microsoft Docs"
-ms.custom: ""
+title: "Exceptions: Changes to Exception Macros in Version 3.0"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["C++ exception handling [MFC], upgrade considerations", "CATCH macro [MFC]", "exceptions [MFC], what's changed", "THROW_LAST macro [MFC]"]
 ms.assetid: 3aa20d8c-229e-449c-995c-ab879eac84bc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exceptions: Changes to Exception Macros in Version 3.0
 

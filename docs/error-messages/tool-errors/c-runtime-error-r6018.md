@@ -1,16 +1,9 @@
 ---
-title: "C Runtime Error R6018 | Microsoft Docs"
-ms.custom: ""
+title: "C Runtime Error R6018"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["R6018"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["R6018"]
 ms.assetid: f6dd40d1-a119-4d8b-b39e-97350ea23349
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6018
 

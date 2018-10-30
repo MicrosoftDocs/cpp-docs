@@ -1,15 +1,8 @@
 ---
-title: "Advanced Provider Techniques | Microsoft Docs"
-ms.custom: ""
+title: "Advanced Provider Techniques"
 ms.date: "10/29/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, using"]
 ms.assetid: 002a9731-7e06-49ac-be50-3cc26aa43759
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Advanced Provider Techniques
 

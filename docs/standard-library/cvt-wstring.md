@@ -1,16 +1,9 @@
 ---
-title: "&lt;cvt-wstring&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;cvt-wstring&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["stdext.cvt.<cvt/wstring>", "<cvt/wstring>", "stdext::cvt::<cvt/wstring>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cvt/wstring header"]
 ms.assetid: d78b04bb-9ac0-4adb-8ffe-3aefb9b14c2d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;cvt/wstring&gt;
 

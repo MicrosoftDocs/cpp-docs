@@ -1,16 +1,9 @@
 ---
-title: "__fastcall | Microsoft Docs"
-ms.custom: ""
+title: "__fastcall"
 ms.date: "10/09/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__fastcall_cpp", "__fastcall", "_fastcall"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__fastcall keyword [C++]"]
 ms.assetid: bb5b9c8a-dfad-450c-9119-0ac2bc59544f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __fastcall
 

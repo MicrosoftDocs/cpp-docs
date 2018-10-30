@@ -1,14 +1,7 @@
 ---
-title: "A.25   Examples of the copyprivate Data Attribute Clause | Microsoft Docs"
-ms.custom: ""
+title: "A.25   Examples of the copyprivate Data Attribute Clause"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 7b1cb6a5-5691-4b95-b3ac-d7543ede6405
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # A.25   Examples of the copyprivate Data Attribute Clause
 

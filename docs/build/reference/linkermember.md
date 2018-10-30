@@ -1,16 +1,9 @@
 ---
-title: "-LINKERMEMBER | Microsoft Docs"
-ms.custom: ""
+title: "/LINKERMEMBER"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/linkermember"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/LINKERMEMBER dumpbin option", "LINKERMEMBER dumpbin option", "-LINKERMEMBER dumpbin option"]
 ms.assetid: c96868c1-d70e-4651-ae36-c55b58b16406
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /LINKERMEMBER
 

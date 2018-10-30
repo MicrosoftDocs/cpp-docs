@@ -1,19 +1,12 @@
 ---
-title: "strcat_s, wcscat_s, _mbscat_s | Microsoft Docs"
-ms.custom: ""
+title: "strcat_s, wcscat_s, _mbscat_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["strcat_s", "_mbscat_s", "wcscat_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["strcat_s", "wcscat_s", "_mbscat_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wcscat_s function", "strcat_s function", "mbscat_s function", "strings [C++], appending", "_mbscat_s function", "appending strings"]
 ms.assetid: 0f2f9901-c5c5-480b-98bc-f8f690792fc0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # strcat_s, wcscat_s, _mbscat_s
 

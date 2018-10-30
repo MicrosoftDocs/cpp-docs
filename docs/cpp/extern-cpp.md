@@ -1,20 +1,9 @@
 ---
-title: "extern (C++) | Microsoft Docs"
-ms.custom: ""
+title: "extern (C++)"
 ms.date: "04/12/2018"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
 f1_keywords: ["extern", "extern_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["extern keyword [C++], linkage to non-C++ functions", "declarations, external", "external linkage, extern modifier"]
 ms.assetid: 1e2f0ae3-ae98-4410-85b5-222d6abc865a
-caps.latest.revision: 11
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # extern (C++)
 

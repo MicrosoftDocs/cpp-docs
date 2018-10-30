@@ -1,15 +1,9 @@
 ---
-title: "&lt;array&gt; functions | Microsoft Docs"
-ms.custom: ""
+title: "&lt;array&gt; functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["array/std::array::get", "array/std::get", "array/std::swap"]
-dev_langs: ["C++"]
 ms.assetid: e0700a33-a833-4655-8735-16e71175efc8
-author: "corob-msft"
-ms.author: "corob"
 helpviewer_keywords: ["std::array [C++], get", "std::get [C++]", "std::swap [C++]"]
-ms.workload: ["cplusplus"]
 ---
 # &lt;array&gt; functions
 

@@ -1,15 +1,8 @@
 ---
-title: "Connecting a Pop-up Menu to Your C++ Application | Microsoft Docs"
-ms.custom: ""
+title: "Connecting a Pop-up Menu to Your C++ Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["pop-up menus [C++], connecting to applications", "context menus [C++], connecting to applications", "menus [C++], pop-up", "shortcut menus [C++], connecting to applications"]
 ms.assetid: 295cbf0e-6416-478e-bc3d-472fb98e0e52
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Connecting a Pop-up Menu to Your C++ Application
 

@@ -1,16 +1,9 @@
 ---
-title: "common_type Class | Microsoft Docs"
-ms.custom: ""
+title: "common_type Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::common_type"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["common_type class", "common_type"]
 ms.assetid: 02bc4e7b-c63d-49de-9f8a-511d3a5c1e7f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # common_type Class
 

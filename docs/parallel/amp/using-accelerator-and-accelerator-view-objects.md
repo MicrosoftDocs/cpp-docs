@@ -1,14 +1,7 @@
 ---
-title: "Using accelerator and accelerator_view Objects | Microsoft Docs"
-ms.custom: ""
+title: "Using accelerator and accelerator_view Objects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 18f0dc66-8236-4420-9f46-1a14f2c3fba1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using accelerator and accelerator_view Objects
 

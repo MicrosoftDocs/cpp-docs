@@ -1,16 +1,9 @@
 ---
-title: "CW2AEX Class | Microsoft Docs"
-ms.custom: ""
+title: "CW2AEX Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CW2AEX", "ATLCONV/ATL::CW2AEX", "ATLCONV/ATL::CW2AEX::CW2AEX", "ATLCONV/ATL::CW2AEX::m_psz", "ATLCONV/ATL::CW2AEX::m_szBuffer"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CW2AEX class"]
 ms.assetid: 44dc2cf5-dd30-440b-a9b9-b21b43f49843
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CW2AEX Class
 

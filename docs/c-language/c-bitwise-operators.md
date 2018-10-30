@@ -1,15 +1,8 @@
 ---
-title: "C Bitwise Operators | Microsoft Docs"
-ms.custom: ""
+title: "C Bitwise Operators"
 ms.date: "01/29/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["| operator, bitwise operators", "bitwise operators, Visual C", "bitwise operators", "operators [C], bitwise", "^ operator, bitwise operators", "AND operator", "ampersand operator (&)", "^ operator", "& operator, bitwise operators"]
 ms.assetid: e22127b1-9a2d-4876-b01d-c8f72cec3317
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Bitwise Operators
 

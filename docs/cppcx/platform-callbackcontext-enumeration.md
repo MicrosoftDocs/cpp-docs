@@ -1,16 +1,10 @@
 ---
-title: "Platform::CallbackContext Enumeration | Microsoft Docs"
-ms.custom: ""
+title: "Platform::CallbackContext Enumeration"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::CallbackContext"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::CallbackContext Enumeration"]
 ms.assetid: 60e0c7cb-5d8f-482a-bdca-ca9335ae4899
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::CallbackContext Enumeration
 

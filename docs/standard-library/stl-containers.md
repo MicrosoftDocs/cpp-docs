@@ -1,15 +1,8 @@
 ---
-title: "C++ Standard Library Containers | Microsoft Docs"
-ms.custom: ""
+title: "C++ Standard Library Containers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["C++ Standard Library, template class containers", "containers, C++ Standard Library"]
 ms.assetid: 8e915ca1-19ba-4f0d-93c8-e2c3bfd638eb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C++ Standard Library Containers
 

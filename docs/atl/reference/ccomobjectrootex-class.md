@@ -1,16 +1,9 @@
 ---
-title: "CComObjectRootEx Class | Microsoft Docs"
-ms.custom: ""
+title: "CComObjectRootEx Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComObjectRootEx", "ATLCOM/ATL::CComObjectRootEx", "ATLCOM/ATL::InternalAddRef", "ATLCOM/ATL::InternalRelease", "ATLCOM/ATL::Lock", "ATLCOM/ATL::Unlock", "ATLCOM/ATL::FinalConstruct", "ATLCOM/ATL::FinalRelease", "ATLCOM/ATL::OuterAddRef", "ATLCOM/ATL::OuterQueryInterface", "ATLCOM/ATL::OuterRelease", "ATLCOM/ATL::InternalQueryInterface", "ATLCOM/ATL::ObjectMain", "ATLCOM/ATL::m_dwRef", "ATLCOM/ATL::m_pOuterUnknown"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["reference counting"]
 ms.assetid: 894a3d7c-2daf-4fd0-8fa4-e6a05bcfb631
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComObjectRootEx Class
 

@@ -1,15 +1,8 @@
 ---
-title: "Notification Hooks | Microsoft Docs"
-ms.custom: ""
+title: "Notification Hooks"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["delayed loading of DLLs, notification hooks"]
 ms.assetid: e9c291ed-2f2d-4319-a171-09800625256f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Notification Hooks
 

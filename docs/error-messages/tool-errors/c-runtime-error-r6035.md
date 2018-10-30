@@ -1,16 +1,9 @@
 ---
-title: "C Runtime Error R6035 | Microsoft Docs"
-ms.custom: ""
+title: "C Runtime Error R6035"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["R6035"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["R6035"]
 ms.assetid: f8fb50b8-18bf-4258-b96a-b0a9de468d16
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6035
 

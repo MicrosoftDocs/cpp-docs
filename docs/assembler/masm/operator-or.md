@@ -1,16 +1,9 @@
 ---
-title: "operator OR | Microsoft Docs"
-ms.custom: ""
+title: "operator OR"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["operator OR", "Or"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["operator OR", "OR operator, bitwise"]
 ms.assetid: fab36ba6-8ee0-4778-beb9-21dce6d99db7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator OR
 

@@ -1,16 +1,9 @@
 ---
-title: "unary_negate Class | Microsoft Docs"
-ms.custom: ""
+title: "unary_negate Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xfunctional/std::unary_negate"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["unary_negate class"]
 ms.assetid: e3b86eec-3205-49b9-ab83-f55225af4e0c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # unary_negate Class
 

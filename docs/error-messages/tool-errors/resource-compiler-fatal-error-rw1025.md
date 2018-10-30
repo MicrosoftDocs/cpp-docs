@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Fatal Error RW1025 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Fatal Error RW1025"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RW1025"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RW1025"]
 ms.assetid: 561a02af-e7e0-442a-8ad3-a00b2ca1b62e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Fatal Error RW1025
 

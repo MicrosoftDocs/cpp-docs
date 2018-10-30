@@ -1,15 +1,8 @@
 ---
-title: "Nonstandard Behavior | Microsoft Docs"
-ms.custom: ""
+title: "Nonstandard Behavior"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["compatibility and compliance, nonstandard behavior", "Microsoft-specific, compiler behavior", "nonstandard behavior, compliance and compatibility"]
 ms.assetid: a57dea27-dc79-4f64-8a83-017e84841773
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Nonstandard Behavior
 

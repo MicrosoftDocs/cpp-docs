@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 2) C4308 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 2) C4308"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4308"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4308"]
 ms.assetid: d4e5c53c-71b2-4bbc-8a7c-3a2a3180d9d9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 2) C4308
 

@@ -1,10 +1,7 @@
 ---
-title: "&lt;complex&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;complex&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["xcomplex/std::operator!=", "xcomplex/std::operator&gt;&gt;", "xcomplex/std::operator&lt;&lt;", "xcomplex/std::operator*", "xcomplex/std::operator+", "xcomplex/std::operator-", "xcomplex/std::operator/", "xcomplex/std::operator=="]
-dev_langs: ["C++"]
 ms.assetid: aa282604-dcb9-46a2-bf1d-34c50aa6c4ba
 helpviewer_keywords: ["std::operator!= (complex)", "std::operator&gt;&gt; (complex)", "std::operator&lt;&lt; (complex), std::operator== (complex)"]
 ---

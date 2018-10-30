@@ -1,15 +1,11 @@
 ---
-title: "Supported Platforms (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "Supported Platforms (Visual C++)"
 ms.date: "11/04/2016"
 ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, platforms supported", "platforms [C++]"]
 ms.assetid: 0d893056-4008-411a-b3d1-5f57fd7da95c
 author: "mikeblome"
 ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Supported Platforms (Visual C++)
 

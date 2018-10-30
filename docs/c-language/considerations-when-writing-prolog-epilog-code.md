@@ -1,15 +1,8 @@
 ---
-title: "Considerations When Writing Prolog-Epilog Code | Microsoft Docs"
-ms.custom: ""
+title: "Considerations When Writing Prolog-Epilog Code"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["layouts, stack frame", "stack frame layout", "__LOCAL_SIZE constant", "stack, stack frame layout"]
 ms.assetid: 3b8addec-e809-48e4-b1d0-5bad133bd4b8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Considerations When Writing Prolog/Epilog Code
 

@@ -1,19 +1,12 @@
 ---
-title: "catan, catanf, catanl | Microsoft Docs"
-ms.custom: ""
+title: "catan, catanf, catanl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["catan", "catanf", "catanl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["catan", "catanf", "catanl", "complex/catan", "complex/catanf", "complex/catanl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["catan function", "catanf function", "catanl function"]
 ms.assetid: 8415ed9c-7909-4d08-b532-4630bafdc7e8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # catan, catanf, catanl
 

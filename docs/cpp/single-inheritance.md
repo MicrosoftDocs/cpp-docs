@@ -1,15 +1,8 @@
 ---
-title: "Single Inheritance | Microsoft Docs"
-ms.custom: ""
+title: "Single Inheritance"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["single inheritance", "base classes [C++], indirect", "scope, scope resolution operator", "operators [C++], scope resolution", "scope resolution operator", "derived classes [C++], single base class", "inheritance, single"]
 ms.assetid: 1cb946ed-8b1b-4cf1-bde0-d9cecbfdc622
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Single Inheritance
 

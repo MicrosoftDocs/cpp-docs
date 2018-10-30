@@ -1,15 +1,8 @@
 ---
-title: "Container Class::begin | Microsoft Docs"
-ms.custom: ""
+title: "Container Class::begin"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["begin method"]
 ms.assetid: 633708cb-17fe-488b-9fb1-1b5f2da0f46c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Container Class::begin
 

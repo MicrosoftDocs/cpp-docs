@@ -1,15 +1,8 @@
 ---
-title: "-CGTHREADS (Compiler Threads) | Microsoft Docs"
-ms.custom: ""
+title: "/CGTHREADS (Compiler Threads)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["/CGTHREADS linker option", "-CGTHREADS linker option", "CGTHREADS linker option"]
 ms.assetid: 4b52cfdb-3702-470b-9580-fabeb1417488
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /CGTHREADS (Compiler Threads)
 

@@ -1,16 +1,9 @@
 ---
-title: "CComHeap Class | Microsoft Docs"
-ms.custom: ""
+title: "CComHeap Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComHeap", "ATLCOMMEM/ATL::CComHeap", "ATLCOMMEM/ATL::CComHeap::Allocate", "ATLCOMMEM/ATL::CComHeap::Free", "ATLCOMMEM/ATL::CComHeap::GetSize", "ATLCOMMEM/ATL::CComHeap::Reallocate"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComHeap class"]
 ms.assetid: c74183ce-98ae-46fb-b186-93ea4cf0222b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComHeap Class
 

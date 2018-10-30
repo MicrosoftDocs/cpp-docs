@@ -1,19 +1,12 @@
 ---
-title: "expm1, expm1f, expm1l | Microsoft Docs"
-ms.custom: ""
+title: "expm1, expm1f, expm1l"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["expm1l", "expm1", "expm1f"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["expm1l", "expm1", "expm1f"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["expm1f function", "expm1l function", "expm1 function"]
 ms.assetid: 2a4dd2d9-370c-42b0-9067-0625efa272e0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # expm1, expm1f, expm1l
 

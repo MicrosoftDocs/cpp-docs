@@ -1,15 +1,8 @@
 ---
-title: "Avoidance of Heap Contention | Microsoft Docs"
-ms.custom: ""
+title: "Avoidance of Heap Contention"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["heap contention"]
 ms.assetid: 797129d7-5f8c-4b0e-8974-bb93217e9ab5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Avoidance of Heap Contention
 

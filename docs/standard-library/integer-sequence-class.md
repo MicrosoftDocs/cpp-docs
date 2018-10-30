@@ -1,16 +1,9 @@
 ---
-title: "integer_sequence Class | Microsoft Docs"
-ms.custom: ""
+title: "integer_sequence Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::index_sequence", "type_traits/std::make_index_sequence", "type_traits/std::integer_sequence", "type_traits/std::make_integer_sequence", "type_traits/std::index_sequence_for"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::index_sequence", "std::make_index_sequence", "std::integer_sequence", "std::make_integer_sequence", "std::index_sequence_for"]
 ms.assetid: 2cfdddee-819d-478e-bb78-c8a9c2696803
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # integer_sequence Class
 

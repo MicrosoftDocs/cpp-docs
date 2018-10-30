@@ -1,16 +1,9 @@
 ---
-title: "CSplitterWndEx Class | Microsoft Docs"
-ms.custom: ""
+title: "CSplitterWndEx Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CSplitterWndEx", "AFXSPLITTERWNDEX/CSplitterWndEx", "AFXSPLITTERWNDEX/CSplitterWndEx::OnDrawSplitter"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSplitterWndEx [MFC], OnDrawSplitter"]
 ms.assetid: 33e5eef3-05e1-4a07-a968-bf9207ce8598
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSplitterWndEx Class
 

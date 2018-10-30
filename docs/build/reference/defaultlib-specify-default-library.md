@@ -1,16 +1,9 @@
 ---
-title: "/DEFAULTLIB (Specify Default Library) | Microsoft Docs"
-ms.custom: ""
+title: "/DEFAULTLIB (Specify Default Library)"
 ms.date: "05/29/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.DefaultLibraries", "/defaultlib"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-DEFAULTLIB linker option", "DEFAULTLIB linker option", "/DEFAULTLIB linker option", "libraries, adding to list of"]
 ms.assetid: 6af7ff49-c170-4a13-97e2-2b9ae2de20c9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /DEFAULTLIB (Specify Default Library)
 

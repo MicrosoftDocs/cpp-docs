@@ -1,15 +1,8 @@
 ---
-title: "How to: Specify Specific Scheduler Policies | Microsoft Docs"
-ms.custom: ""
+title: "How to: Specify Specific Scheduler Policies"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["specifying scheduler policies [Concurrency Runtime]", "scheduler policies, specifying [Concurrency Runtime]"]
 ms.assetid: 9c5149f9-ac34-4ff3-9e79-0bad103e4e6b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Specify Specific Scheduler Policies
 

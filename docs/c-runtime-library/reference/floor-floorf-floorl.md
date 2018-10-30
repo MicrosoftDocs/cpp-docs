@@ -1,19 +1,12 @@
 ---
-title: "floor, floorf, floorl | Microsoft Docs"
-ms.custom: ""
+title: "floor, floorf, floorl"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["floorf", "floorl", "floor"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["floor", "floorl", "_floorl", "floorf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["floor function", "floorf function", "calculating floors of values", "floorl function"]
 ms.assetid: e9955f70-d659-414f-8050-132e13c8ff36
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # floor, floorf, floorl
 

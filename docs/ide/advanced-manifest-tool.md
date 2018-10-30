@@ -1,15 +1,8 @@
 ---
-title: "Advanced, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box | Microsoft Docs"
-ms.custom: ""
+title: "Advanced, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCManifestTool.KeyFile", "VC.Project.VCManifestTool.UpdateFileHashes", "VC.Project.VCManifestTool.UpdateFileHashesSearchPath", "VC.Project.VCManifestTool.ValidateSignature", "VC.Project.VCManifestTool.KeyContainer"]
-dev_langs: ["C++"]
 ms.assetid: 3d587366-05ea-4956-a978-313069660735
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Advanced, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box
 

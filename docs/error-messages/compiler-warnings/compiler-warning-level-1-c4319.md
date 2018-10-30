@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4319 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4319"
 ms.date: "1/18/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4319"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4319"]
 ms.assetid: 1fac8048-9bd6-4552-a21c-192c67772bb9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4319
 

@@ -1,19 +1,12 @@
 ---
-title: "_fflush_nolock | Microsoft Docs"
-ms.custom: ""
+title: "_fflush_nolock"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_fflush_nolock"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["fflush_nolock", "_fflush_nolock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["fflush_nolock function", "_fflush_nolock function", "streams, flushing", "flushing"]
 ms.assetid: 5e33c4a1-b10c-4001-ad01-210757919291
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _fflush_nolock
 

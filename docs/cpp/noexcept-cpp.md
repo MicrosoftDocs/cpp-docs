@@ -1,15 +1,8 @@
 ---
-title: "noexcept (C++) | Microsoft Docs"
-ms.custom: ""
+title: "noexcept (C++)"
 ms.date: "01/12/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["noexcept_cpp"]
-dev_langs: ["C++"]
 ms.assetid: df24edb9-c6a6-4e37-9914-fd5c0c3716a8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # noexcept (C++)
 

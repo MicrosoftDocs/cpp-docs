@@ -1,15 +1,9 @@
 ---
-title: "Walkthrough: Create and use your own Dynamic Link Library (C++) | Microsoft Docs"
+title: "Walkthrough: Create and use your own Dynamic Link Library (C++)"
 ms.custom: "conceptual"
 ms.date: "09/24/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["libraries [C++], DLLs", "DLLs [C++], walkthroughs"]
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Create and use your own Dynamic Link Library (C++)
 

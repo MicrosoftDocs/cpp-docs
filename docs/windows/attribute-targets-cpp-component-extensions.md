@@ -1,15 +1,9 @@
 ---
-title: "Attribute Targets (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Attribute Targets (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["custom attributes, targets"]
 ms.assetid: b4e6e224-da77-4520-b6e6-b96846e0ebc1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Attribute Targets (C++/CLI and C++/CX)
 

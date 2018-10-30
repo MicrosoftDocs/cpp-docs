@@ -1,16 +1,9 @@
 ---
-title: "IThreadProxy Structure | Microsoft Docs"
-ms.custom: ""
+title: "IThreadProxy Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["IThreadProxy", "CONCRTRM/concurrency::IThreadProxy", "CONCRTRM/concurrency::IThreadProxy::IThreadProxy::GetId", "CONCRTRM/concurrency::IThreadProxy::IThreadProxy::SwitchOut", "CONCRTRM/concurrency::IThreadProxy::IThreadProxy::SwitchTo", "CONCRTRM/concurrency::IThreadProxy::IThreadProxy::YieldToSystem"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IThreadProxy structure"]
 ms.assetid: feb89241-a555-4e61-ad48-40add54daeca
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IThreadProxy Structure
 

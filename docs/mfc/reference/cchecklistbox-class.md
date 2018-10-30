@@ -1,16 +1,9 @@
 ---
-title: "CCheckListBox Class | Microsoft Docs"
-ms.custom: ""
+title: "CCheckListBox Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CCheckListBox", "AFXWIN/CCheckListBox", "AFXWIN/CCheckListBox::CCheckListBox", "AFXWIN/CCheckListBox::Create", "AFXWIN/CCheckListBox::DrawItem", "AFXWIN/CCheckListBox::Enable", "AFXWIN/CCheckListBox::GetCheck", "AFXWIN/CCheckListBox::GetCheckStyle", "AFXWIN/CCheckListBox::IsEnabled", "AFXWIN/CCheckListBox::MeasureItem", "AFXWIN/CCheckListBox::OnGetCheckPosition", "AFXWIN/CCheckListBox::SetCheck", "AFXWIN/CCheckListBox::SetCheckStyle"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CCheckListBox [MFC], CCheckListBox", "CCheckListBox [MFC], Create", "CCheckListBox [MFC], DrawItem", "CCheckListBox [MFC], Enable", "CCheckListBox [MFC], GetCheck", "CCheckListBox [MFC], GetCheckStyle", "CCheckListBox [MFC], IsEnabled", "CCheckListBox [MFC], MeasureItem", "CCheckListBox [MFC], OnGetCheckPosition", "CCheckListBox [MFC], SetCheck", "CCheckListBox [MFC], SetCheckStyle"]
 ms.assetid: 1dd78438-00e8-441c-b36f-9c4f9ac0d019
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CCheckListBox Class
 

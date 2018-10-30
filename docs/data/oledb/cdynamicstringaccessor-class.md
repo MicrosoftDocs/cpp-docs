@@ -1,16 +1,9 @@
 ---
-title: "CDynamicStringAccessor Class | Microsoft Docs"
-ms.custom: ""
+title: "CDynamicStringAccessor Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["CDynamicStringAccessor", "CDynamicStringAccessor.GetString", "CDynamicStringAccessor::GetString", "CDynamicStringAccessor::SetString", "CDynamicStringAccessor.SetString"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDynamicStringAccessor class", "GetString method", "SetString method"]
 ms.assetid: 138dc4de-c7c3-478c-863e-431e48249027
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicStringAccessor Class
 

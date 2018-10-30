@@ -1,16 +1,9 @@
 ---
-title: "-STACK (Stack Allocations) | Microsoft Docs"
-ms.custom: ""
+title: "/STACK (Stack Allocations)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.StackReserveSize", "VC.Project.VCLinkerTool.StackCommitSize", "/stack"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["STACK linker option", "-STACK linker option", "memory allocation, stack", "/STACK linker option", "stack, setting size"]
 ms.assetid: 73283660-e4bd-47cc-b5ca-04c5d739034c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /STACK (Stack Allocations)
 

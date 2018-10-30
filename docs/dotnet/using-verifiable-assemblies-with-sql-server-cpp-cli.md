@@ -1,15 +1,8 @@
 ---
-title: "Using Verifiable Assemblies with SQL Server (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "Using Verifiable Assemblies with SQL Server (C++/CLI)"
 ms.date: "10/17/2019"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["verifiable assemblies [C++], with SQL Server"]
 ms.assetid: 5248a60d-aa88-4ff3-b30a-b791c3ea2de9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Using Verifiable Assemblies with SQL Server (C++/CLI)
 

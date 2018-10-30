@@ -1,16 +1,10 @@
 ---
-title: "sealed  (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "sealed  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["sealed_cpp", "sealed"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["sealed keyword [C++]"]
 ms.assetid: 3d0d688a-41aa-45f5-a25a-65c44206521e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # sealed  (C++/CLI and C++/CX)
 

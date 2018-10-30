@@ -1,15 +1,8 @@
 ---
-title: "Using Multiple Accessors on a Rowset | Microsoft Docs"
-ms.custom: ""
+title: "Using Multiple Accessors on a Rowset"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["BEGIN_ACCESSOR macro", "BEGIN_ACCESSOR macro, multiple accessors", "rowsets [C++], multiple accessors", "accessors [C++], rowsets"]
 ms.assetid: 80d4dc5d-4940-4a28-a4ee-d8602f71d2a6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using Multiple Accessors on a Rowset
 

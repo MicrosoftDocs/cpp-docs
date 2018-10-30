@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2379 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2379"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2379"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2379"]
 ms.assetid: 37dc3015-a4af-4341-bbf3-da6150df7e51
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2379
 

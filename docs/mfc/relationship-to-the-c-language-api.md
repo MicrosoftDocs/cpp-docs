@@ -1,16 +1,9 @@
 ---
-title: "Relationship to the C-Language API | Microsoft Docs"
-ms.custom: ""
+title: "Relationship to the C-Language API"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.mfc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["books [MFC], about MFC and Windows SDK", "books [MFC]", "MFC, Windows API", "Visual C, Windows API calls", "Windows API [MFC], and MFC"]
 ms.assetid: 334e8efc-f3cc-4018-bc2e-02908b2a39fe
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Relationship to the C-Language API
 

@@ -1,16 +1,9 @@
 ---
-title: "CTabCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CTabCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CTabCtrl", "AFXCMN/CTabCtrl", "AFXCMN/CTabCtrl::CTabCtrl", "AFXCMN/CTabCtrl::AdjustRect", "AFXCMN/CTabCtrl::Create", "AFXCMN/CTabCtrl::CreateEx", "AFXCMN/CTabCtrl::DeleteAllItems", "AFXCMN/CTabCtrl::DeleteItem", "AFXCMN/CTabCtrl::DeselectAll", "AFXCMN/CTabCtrl::DrawItem", "AFXCMN/CTabCtrl::GetCurFocus", "AFXCMN/CTabCtrl::GetCurSel", "AFXCMN/CTabCtrl::GetExtendedStyle", "AFXCMN/CTabCtrl::GetImageList", "AFXCMN/CTabCtrl::GetItem", "AFXCMN/CTabCtrl::GetItemCount", "AFXCMN/CTabCtrl::GetItemRect", "AFXCMN/CTabCtrl::GetItemState", "AFXCMN/CTabCtrl::GetRowCount", "AFXCMN/CTabCtrl::GetToolTips", "AFXCMN/CTabCtrl::HighlightItem", "AFXCMN/CTabCtrl::HitTest", "AFXCMN/CTabCtrl::InsertItem", "AFXCMN/CTabCtrl::RemoveImage", "AFXCMN/CTabCtrl::SetCurFocus", "AFXCMN/CTabCtrl::SetCurSel", "AFXCMN/CTabCtrl::SetExtendedStyle", "AFXCMN/CTabCtrl::SetImageList", "AFXCMN/CTabCtrl::SetItem", "AFXCMN/CTabCtrl::SetItemExtra", "AFXCMN/CTabCtrl::SetItemSize", "AFXCMN/CTabCtrl::SetItemState", "AFXCMN/CTabCtrl::SetMinTabWidth", "AFXCMN/CTabCtrl::SetPadding", "AFXCMN/CTabCtrl::SetToolTips"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTabCtrl [MFC], CTabCtrl", "CTabCtrl [MFC], AdjustRect", "CTabCtrl [MFC], Create", "CTabCtrl [MFC], CreateEx", "CTabCtrl [MFC], DeleteAllItems", "CTabCtrl [MFC], DeleteItem", "CTabCtrl [MFC], DeselectAll", "CTabCtrl [MFC], DrawItem", "CTabCtrl [MFC], GetCurFocus", "CTabCtrl [MFC], GetCurSel", "CTabCtrl [MFC], GetExtendedStyle", "CTabCtrl [MFC], GetImageList", "CTabCtrl [MFC], GetItem", "CTabCtrl [MFC], GetItemCount", "CTabCtrl [MFC], GetItemRect", "CTabCtrl [MFC], GetItemState", "CTabCtrl [MFC], GetRowCount", "CTabCtrl [MFC], GetToolTips", "CTabCtrl [MFC], HighlightItem", "CTabCtrl [MFC], HitTest", "CTabCtrl [MFC], InsertItem", "CTabCtrl [MFC], RemoveImage", "CTabCtrl [MFC], SetCurFocus", "CTabCtrl [MFC], SetCurSel", "CTabCtrl [MFC], SetExtendedStyle", "CTabCtrl [MFC], SetImageList", "CTabCtrl [MFC], SetItem", "CTabCtrl [MFC], SetItemExtra", "CTabCtrl [MFC], SetItemSize", "CTabCtrl [MFC], SetItemState", "CTabCtrl [MFC], SetMinTabWidth", "CTabCtrl [MFC], SetPadding", "CTabCtrl [MFC], SetToolTips"]
 ms.assetid: 42e4aff6-46ae-4b2c-beaa-d1dce8d82138
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CTabCtrl Class
 

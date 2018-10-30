@@ -1,15 +1,8 @@
 ---
-title: "Custom Manipulators with Arguments | Microsoft Docs"
-ms.custom: ""
+title: "Custom Manipulators with Arguments"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["custom stream manipulators", "streams, custom stream manipulators", "output streams, custom stream manipulators"]
 ms.assetid: fa4655a7-d68f-4fea-a26e-73c3ad5c90a5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Custom Manipulators with Arguments
 

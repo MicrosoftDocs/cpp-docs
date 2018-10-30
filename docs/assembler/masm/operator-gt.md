@@ -1,16 +1,9 @@
 ---
-title: "operator GT | Microsoft Docs"
-ms.custom: ""
+title: "operator GT"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["operator GT", "GT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["operator GT", "GT operator"]
 ms.assetid: 48194297-7bf9-42f9-957a-e1a5b6d7be7c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator GT
 

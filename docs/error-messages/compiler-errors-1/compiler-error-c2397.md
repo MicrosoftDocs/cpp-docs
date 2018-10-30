@@ -1,14 +1,8 @@
 ---
-title: "Compiler Error C2397 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2397"
 ms.date: "11/04/2016"
-ms.topic: "error-reference"
 f1_keywords: ["C2397"]
-dev_langs: ["C++"]
 ms.assetid: b418cf5a-d50d-4a6c-98a7-994ae35046d1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2397
 

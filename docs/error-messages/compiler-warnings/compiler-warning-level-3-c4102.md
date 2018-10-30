@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 3) C4102 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 3) C4102"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4102"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4102"]
 ms.assetid: 349f308a-daf3-48c6-bd53-6c38b73f8880
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4102
 

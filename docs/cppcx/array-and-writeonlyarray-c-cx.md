@@ -1,13 +1,7 @@
 ---
-title: "Array and WriteOnlyArray (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Array and WriteOnlyArray (C++/CX)"
 ms.date: "01/22/2017"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: ef7cc5f9-cae6-4636-8220-f789e5b6aea4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Array and WriteOnlyArray (C++/CX)
 

@@ -1,16 +1,9 @@
 ---
-title: "&lt;cerrno&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;cerrno&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<cerrno>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cerrno header"]
 ms.assetid: c618f95c-ad4b-4a6f-825b-8727322ec77a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;cerrno&gt;
 

@@ -1,14 +1,7 @@
 ---
-title: "Contents | Microsoft Docs"
-ms.custom: ""
+title: "Contents"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: b7858099-7d7f-4cd9-9fa0-fba4832f2dd2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Contents
 

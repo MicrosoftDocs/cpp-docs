@@ -1,15 +1,8 @@
 ---
-title: "General Property Page (File) | Microsoft Docs"
-ms.custom: ""
+title: "General Property Page (File)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCFileConfiguration.ExcludedFromBuild", "VC.Project.VCFileConfiguration.Tool"]
-dev_langs: ["C++"]
 ms.assetid: 26e3711e-9e7d-4e8d-bc4c-2474538efdad
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # General Property Page (File)
 

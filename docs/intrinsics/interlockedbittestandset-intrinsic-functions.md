@@ -1,16 +1,9 @@
 ---
-title: "_interlockedbittestandset Intrinsic Functions | Microsoft Docs"
-ms.custom: ""
+title: "_interlockedbittestandset Intrinsic Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_interlockedbittestandset_cpp", "_interlockedbittestandset_HLEAcquire", "_interlockedbittestandset64", "_interlockedbittestandset", "_interlockedbittestandset_rel", "_interlockedbittestandset64_HLEAcquire", "_interlockedbittestandset_HLERelease", "_interlockedbittestandset_acq", "_interlockedbittestandset_nf", "_interlockedbittestandset64_cpp", "_interlockedbittestandset64_HLERelease"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_interlockedbittestandset intrinsic", "_interlockedbittestandset64 intrinsic", "lock_bts instruction"]
 ms.assetid: b1b7e334-53ea-48cf-ba60-5fa3ef51a1fc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _interlockedbittestandset Intrinsic Functions
 

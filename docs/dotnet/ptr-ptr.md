@@ -1,16 +1,10 @@
 ---
-title: "ptr::ptr | Microsoft Docs"
-ms.custom: ""
+title: "ptr::ptr"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["ptr::ptr", "ptr.ptr", "msclr.com.ptr.ptr", "msclr::com::ptr::ptr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ptr::ptr"]
 ms.assetid: 4f5883b4-7c0a-46c6-aa9f-4e49eed463eb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # ptr::ptr
 

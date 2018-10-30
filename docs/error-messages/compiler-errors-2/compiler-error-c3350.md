@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3350 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3350"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3350"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3350"]
 ms.assetid: cfbbc338-92b5-4f34-999e-aa2d2376bc70
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3350
 

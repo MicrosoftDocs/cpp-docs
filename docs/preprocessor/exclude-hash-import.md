@@ -1,16 +1,9 @@
 ---
-title: "exclude (#import) | Microsoft Docs"
-ms.custom: ""
+title: "exclude (#import)"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["exclude"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["exclude attribute"]
 ms.assetid: 0883248a-d4bf-420e-9848-807b28fa976e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # exclude (\#import)
 

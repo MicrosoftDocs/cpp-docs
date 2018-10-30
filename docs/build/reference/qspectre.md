@@ -1,15 +1,8 @@
 ---
-title: "/Qspectre | Microsoft Docs"
-ms.custom: ""
+title: "/Qspectre"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 f1_keywords: ["/Qspectre"]
 helpviewer_keywords: ["/Qspectre"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Qspectre
 

@@ -1,15 +1,8 @@
 ---
-title: "Dynamically Determining Columns Returned to the Consumer | Microsoft Docs"
-ms.custom: ""
+title: "Dynamically Determining Columns Returned to the Consumer"
 ms.date: "10/26/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["bookmarks [C++], dynamically determining columns", "dynamically determining columns [C++]"]
 ms.assetid: 58522b7a-894e-4b7d-a605-f80e900a7f5f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Dynamically Determining Columns Returned to the Consumer
 

@@ -1,16 +1,12 @@
 ---
-title: "/CLRUNMANAGEDCODECHECK (Remove SuppressUnmanagedCodeSecurityAttribute) | Microsoft Docs"
-ms.custom: ""
+title: "/CLRUNMANAGEDCODECHECK (Remove SuppressUnmanagedCodeSecurityAttribute)"
 ms.date: "09/27/2018"
-ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 f1_keywords: ["/CLRUNMANAGEDCODECHECK"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-CLRUNMANAGEDCODECHECK linker option", "/CLRUNMANAGEDCODECHECK linker option"]
 ms.assetid: 73abc426-dab0-45e2-be85-0f9a14206cc2
 author: "corob-msft"
 ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /CLRUNMANAGEDCODECHECK (Remove SuppressUnmanagedCodeSecurityAttribute)
 

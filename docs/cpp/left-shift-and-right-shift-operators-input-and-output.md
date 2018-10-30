@@ -1,16 +1,9 @@
 ---
-title: "Left Shift and Right Shift Operators (&gt;&gt; and &lt;&lt;) | Microsoft Docs"
-ms.custom: ""
+title: "Left Shift and Right Shift Operators (&gt;&gt; and &lt;&lt;)"
 ms.date: "08/13/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["<<", ">>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<< operator [C++], with specific objects", "left shift operators [C++]", "right shift operators [C++]", "bitwise-shift operators [C++]", ">> operator", "shift operators [C++]", "operators [C++], shift"]
 ms.assetid: 25fa0cbb-5fdd-4657-8745-b35f7d8f1606
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Left Shift and Right Shift Operators (&gt;&gt; and &lt;&lt;)
 

@@ -1,15 +1,8 @@
 ---
-title: "Using CString | Microsoft Docs"
-ms.custom: ""
+title: "Using CString"
 ms.date: "06/18/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CString objects, C++ string manipulation", "CString objects, reference counting", "CString class (Visual C++)"]
 ms.assetid: ed018aaf-8b10-46f9-828c-f9c092dc7609
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using CString
 

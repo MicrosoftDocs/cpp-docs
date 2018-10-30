@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4061 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4061"
 ms.date: "11/30/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4061"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4061"]
 ms.assetid: a99cf88e-7941-4519-8b1b-f6889d914b2f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4061
 

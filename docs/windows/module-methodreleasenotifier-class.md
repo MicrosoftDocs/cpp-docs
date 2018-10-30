@@ -1,16 +1,10 @@
 ---
-title: "Module::MethodReleaseNotifier Class | Microsoft Docs"
-ms.custom: ""
+title: "Module::MethodReleaseNotifier Class"
 ms.date: "09/17/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::MethodReleaseNotifier", "module/Microsoft::WRL::Module::MethodReleaseNotifier::Invoke", "module/Microsoft::WRL::Module::MethodReleaseNotifier::method_", "module/Microsoft::WRL::Module::MethodReleaseNotifier::MethodReleaseNotifier", "module/Microsoft::WRL::Module::MethodReleaseNotifier::object_"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Module::MethodReleaseNotifier class", "Microsoft::WRL::Module::MethodReleaseNotifier::Invoke method", "Microsoft::WRL::Module::MethodReleaseNotifier::method_ data member", "Microsoft::WRL::Module::MethodReleaseNotifier::MethodReleaseNotifier, constructor", "Microsoft::WRL::Module::MethodReleaseNotifier::object_ data member"]
 ms.assetid: 5c2902be-964b-488f-9f1c-adf504995cbc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::MethodReleaseNotifier Class
 

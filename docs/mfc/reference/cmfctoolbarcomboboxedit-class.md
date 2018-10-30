@@ -1,16 +1,9 @@
 ---
-title: "CMFCToolBarComboBoxEdit Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCToolBarComboBoxEdit Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCToolBarComboBoxEdit", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxEdit", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxEdit::CMFCToolBarComboBoxEdit"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCToolBarComboBoxEdit [MFC], CMFCToolBarComboBoxEdit"]
 ms.assetid: 4789c34a-ce58-48ba-a26f-38748b601352
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCToolBarComboBoxEdit Class
 

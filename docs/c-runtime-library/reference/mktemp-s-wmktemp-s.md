@@ -1,19 +1,12 @@
 ---
-title: "_mktemp_s, _wmktemp_s | Microsoft Docs"
-ms.custom: ""
+title: "_mktemp_s, _wmktemp_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_mktemp_s", "_wmktemp_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["wmktemp_s", "mktemp_s", "_mktemp_s", "_wmktemp_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_tmktemp_s function", "mktemp_s function", "_wmktemp_s function", "_mktemp_s function", "files [C++], temporary", "tmktemp_s function", "wmktemp_s function", "temporary files [C++]"]
 ms.assetid: 92a7e269-7f3d-4c71-bad6-14bc827a451d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _mktemp_s, _wmktemp_s
 

@@ -1,16 +1,10 @@
 ---
-title: "Platform::Details::Heap Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Details::Heap Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Details::Heap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Details::Heap Class"]
 ms.assetid: d6dcf9c0-8036-433f-9eb8-c53ec49b0993
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Details::Heap Class
 

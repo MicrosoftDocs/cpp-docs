@@ -1,16 +1,10 @@
 ---
-title: "auto_handle::reset | Microsoft Docs"
-ms.custom: ""
+title: "auto_handle::reset"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["auto_handle.reset", "msclr::auto_handle::reset", "auto_handle::reset", "msclr.auto_handle.reset"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["auto_handle::reset"]
 ms.assetid: 32dc3a83-80fd-45c9-8f79-8c4096c30f57
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_handle::reset
 

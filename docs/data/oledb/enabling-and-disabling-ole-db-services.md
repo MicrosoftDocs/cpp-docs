@@ -1,15 +1,8 @@
 ---
-title: "Enabling and Disabling OLE DB Services | Microsoft Docs"
-ms.custom: ""
+title: "Enabling and Disabling OLE DB Services"
 ms.date: "10/29/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB services [OLE DB], enabling and disabling", "service providers [OLE DB]"]
 ms.assetid: 445f97eb-32a8-41c2-ad26-1169f78a074f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Enabling and Disabling OLE DB Services
 

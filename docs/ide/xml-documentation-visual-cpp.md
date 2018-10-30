@@ -1,15 +1,8 @@
 ---
-title: "XML Documentation (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "XML Documentation (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["XML documentation", "XML, documentation comments in source code", "comments, C++ source code files", "/// delimiter for C++ documentation"]
 ms.assetid: a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # XML Documentation (Visual C++)
 

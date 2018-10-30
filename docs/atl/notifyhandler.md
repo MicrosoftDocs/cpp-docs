@@ -1,16 +1,10 @@
 ---
-title: "NotifyHandler | Microsoft Docs"
-ms.custom: ""
+title: "NotifyHandler"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["NotifyHandler"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["NotifyHandler function"]
 ms.assetid: 5ff953ec-de35-42bc-8b3c-d384d636c139
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # NotifyHandler
 

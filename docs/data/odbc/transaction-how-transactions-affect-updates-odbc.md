@@ -1,15 +1,8 @@
 ---
-title: "Transaction: How Transactions Affect Updates (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Transaction: How Transactions Affect Updates (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["transactions, updating recordsets", "ODBC recordsets, transactions", "transactions, rolling back", "CommitTrans method", "Rollback method, ODBC transactions"]
 ms.assetid: 9e00bbf4-e9fb-4332-87fc-ec8ac61b3f68
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Transaction: How Transactions Affect Updates (ODBC)
 

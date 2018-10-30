@@ -1,16 +1,10 @@
 ---
-title: "multimap (STL/CLR) | Microsoft Docs"
-ms.custom: ""
+title: "multimap (STL/CLR)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::multimap", "cliext::multimap::begin", "cliext::multimap::clear", "cliext::multimap::const_iterator", "cliext::multimap::const_reference", "cliext::multimap::const_reverse_iterator", "cliext::multimap::count", "cliext::multimap::difference_type", "cliext::multimap::empty", "cliext::multimap::end", "cliext::multimap::equal_range", "cliext::multimap::erase", "cliext::multimap::find", "cliext::multimap::generic_container", "cliext::multimap::generic_iterator", "cliext::multimap::generic_reverse_iterator", "cliext::multimap::generic_value", "cliext::multimap::insert", "cliext::multimap::iterator", "cliext::multimap::key_comp", "cliext::multimap::key_compare", "cliext::multimap::key_type", "cliext::multimap::lower_bound", "cliext::multimap::make_value", "cliext::multimap::mapped_type", "cliext::multimap::multimap", "cliext::multimap::operator=", "cliext::multimap::rbegin", "cliext::multimap::reference", "cliext::multimap::rend", "cliext::multimap::reverse_iterator", "cliext::multimap::size", "cliext::multimap::size_type", "cliext::multimap::swap", "cliext::multimap::to_array", "cliext::multimap::upper_bound", "cliext::multimap::value_comp", "cliext::multimap::value_compare", "cliext::multimap::value_type", "cliext::mutlimap::operator!=", "cliext::mutlimap::operator<", "cliext::mutlimap::operator<=", "cliext::mutlimap::operator==", "cliext::mutlimap::operator>", "cliext::mutlimap::operator>="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<map> header [STL/CLR]", "<cliext/map> header [STL/CLR]", "multimap class [STL/CLR]", "begin member [STL/CLR]", "clear member [STL/CLR]", "const_iterator member [STL/CLR]", "const_reference member [STL/CLR]", "const_reverse_iterator member [STL/CLR]", "count member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "end member [STL/CLR]", "equal_range member [STL/CLR]", "erase member [STL/CLR]", "find member [STL/CLR]", "generic_container member [STL/CLR]", "generic_iterator member [STL/CLR]", "generic_reverse_iterator member [STL/CLR]", "generic_value member [STL/CLR]", "insert member [STL/CLR]", "iterator member [STL/CLR]", "key_comp member [STL/CLR]", "key_compare member [STL/CLR]", "key_type member [STL/CLR]", "lower_bound member [STL/CLR]", "make_value member [STL/CLR]", "mapped_type member [STL/CLR]", "multimap member [STL/CLR]", "operator= member [STL/CLR]", "rbegin member [STL/CLR]", "reference member [STL/CLR]", "rend member [STL/CLR]", "reverse_iterator member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "swap member [STL/CLR]", "to_array member [STL/CLR]", "upper_bound member [STL/CLR]", "value_comp member [STL/CLR]", "value_compare member [STL/CLR]", "value_type member [STL/CLR]", "operator!= member [STL/CLR]", "operator< member [STL/CLR]", "operator<= member [STL/CLR]", "operator== member [STL/CLR]", "operator> member [STL/CLR]", "operator>= member [STL/CLR]"]
 ms.assetid: 3dfe329d-a078-462a-b050-7999ce6110ad
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # multimap (STL/CLR)
 

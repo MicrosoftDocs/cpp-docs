@@ -1,16 +1,9 @@
 ---
-title: "Property Pages (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "Property Pages (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["VC.Project.NotAProp.Edit"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["project-file macro", "project properties [C++], default values", "user-defined values", "project properties [C++], setting", "macros, project-file", "property pages, project settings", "Visual C++ projects, properties", "build macro", "user-defined macros"]
 ms.assetid: 13ffe3ea-1bc3-4bee-be5e-053a8a99cce4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Property Pages (Visual C++)
 

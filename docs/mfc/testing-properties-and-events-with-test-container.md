@@ -1,15 +1,8 @@
 ---
-title: "Testing Properties and Events with Test Container | Microsoft Docs"
-ms.custom: ""
+title: "Testing Properties and Events with Test Container"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["testing, test containers", "tstcon32.exe", "debugging ActiveX controls", "test container", "ActiveX Control Test Container", "ActiveX controls [MFC], testing", "properties [MFC], testing"]
 ms.assetid: 626867cf-fe53-4c30-8973-55bb93ef3917
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Testing Properties and Events with Test Container
 

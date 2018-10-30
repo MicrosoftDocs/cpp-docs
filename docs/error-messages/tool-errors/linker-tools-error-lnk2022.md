@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK2022 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK2022"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK2022"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK2022"]
 ms.assetid: d2128c73-dde3-4b8e-a9b2-0a153acefb3b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK2022
 

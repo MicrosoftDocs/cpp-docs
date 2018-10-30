@@ -1,16 +1,9 @@
 ---
-title: "Creating an MFC DLL Project | Microsoft Docs"
-ms.custom: ""
+title: "Creating an MFC DLL Project"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfcdll.project"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC DLLs [MFC], creating projects", "DLLs [MFC], MFC", "projects [MFC], creating", "DLLs [MFC], creating"]
 ms.assetid: 05540b93-4781-4a90-aadf-55158313f5b2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating an MFC DLL Project
 

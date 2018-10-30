@@ -1,16 +1,9 @@
 ---
-title: "Navigating the Class Structure (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "Navigating the Class Structure (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.classes.structure"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["classes [C++], structure", "Object Browser, navigating"]
 ms.assetid: 3bd9427d-c920-41fd-b27c-3063dd924e0c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Navigating the Class Structure (Visual C++)
 

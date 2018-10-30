@@ -1,15 +1,8 @@
 ---
-title: "Adding an MFC ODBC Consumer | Microsoft Docs"
-ms.custom: ""
+title: "Adding an MFC ODBC Consumer"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ODBC consumers"]
 ms.assetid: 2dc97909-1f7e-43ee-9d47-99e612727058
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding an MFC ODBC Consumer
 

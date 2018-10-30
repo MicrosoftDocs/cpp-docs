@@ -1,16 +1,9 @@
 ---
-title: "How to: Use the Message-Map Cross-Reference | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use the Message-Map Cross-Reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.messages"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["windows [MFC], message maps"]
 ms.assetid: 2e863d23-9e58-45ba-b5e4-a8ceefccd0c8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Use the Message-Map Cross-Reference
 

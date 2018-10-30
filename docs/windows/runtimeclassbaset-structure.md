@@ -1,16 +1,10 @@
 ---
-title: "RuntimeClassBaseT Structure | Microsoft Docs"
-ms.custom: ""
+title: "RuntimeClassBaseT Structure"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::RuntimeClassBaseT", "implements/Microsoft::WRL::Details::RuntimeClassBaseT::AsIID", "implements/Microsoft::WRL::Details::RuntimeClassBaseT::GetImplementedIIDS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Details::RuntimeClassBaseT structure", "Microsoft::WRL::Details::RuntimeClassBaseT::AsIID method", "Microsoft::WRL::Details::RuntimeClassBaseT::GetImplementedIIDS method"]
 ms.assetid: a62775fb-3359-4f45-9ff1-c07fa8da464b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClassBaseT Structure
 

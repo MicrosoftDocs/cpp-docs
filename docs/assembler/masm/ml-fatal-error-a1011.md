@@ -1,16 +1,10 @@
 ---
-title: "ML Fatal Error A1011 | Microsoft Docs"
-ms.custom: ""
+title: "ML Fatal Error A1011"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A1011"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["A1011"]
 ms.assetid: 7fbf092d-4189-4330-a884-dfa2268fc3dd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Fatal Error A1011
 

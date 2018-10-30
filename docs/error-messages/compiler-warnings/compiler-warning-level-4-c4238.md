@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4238 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4238"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4238"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4238"]
 ms.assetid: 5d4051d3-7b0f-43ea-8c8d-d194bfdceb71
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4238
 

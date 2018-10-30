@@ -1,15 +1,8 @@
 ---
-title: "Command Routing Illustration | Microsoft Docs"
-ms.custom: ""
+title: "Command Routing Illustration"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, command routing", "command handling [MFC], routing commands", "command routing [MFC], OnCmdMsg handler"]
 ms.assetid: 4b7b4741-565f-4878-b076-fd85c670f87f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Command Routing Illustration
 

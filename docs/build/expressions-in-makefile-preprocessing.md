@@ -1,15 +1,8 @@
 ---
-title: "Expressions in Makefile Preprocessing | Microsoft Docs"
-ms.custom: ""
+title: "Expressions in Makefile Preprocessing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessing makefiles", "expressions [C++], makefile preprocessing", "makefiles, preprocessing"]
 ms.assetid: 37f0f413-97e0-452c-a83f-3c9002c44c92
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Expressions in Makefile Preprocessing
 

@@ -1,19 +1,12 @@
 ---
-title: "gets, _getws | Microsoft Docs"
-ms.custom: ""
+title: "gets, _getws"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apiname: ["_getws", "gets"]
 apilocation: ["msvcr80.dll", "msvcr90.dll", "msvcr120.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr100.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_getts", "gets", "_getws"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["getws function", "getts function", "_getws function", "lines, getting", "streams, getting lines", "_getts function", "gets function", "standard input, reading from"]
 ms.assetid: 1ec2dd4b-f801-48ea-97c2-892590f16024
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # gets, _getws
 

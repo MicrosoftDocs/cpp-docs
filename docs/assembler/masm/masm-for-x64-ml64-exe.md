@@ -1,15 +1,8 @@
 ---
-title: "MASM for x64 (ml64.exe) | Microsoft Docs"
-ms.custom: ""
+title: "MASM for x64 (ml64.exe)"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ml64", "ml64.exe", "masm for x64"]
 ms.assetid: 89059103-f372-4968-80ea-0c7f90bb9c91
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # MASM for x64 (ml64.exe)
 

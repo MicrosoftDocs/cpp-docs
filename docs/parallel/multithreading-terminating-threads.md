@@ -1,16 +1,9 @@
 ---
-title: "Multithreading: Terminating Threads in MFC | Microsoft Docs"
-ms.custom: ""
+title: "Multithreading: Terminating Threads in MFC"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
 f1_keywords: ["CREATE_SUSPENDED"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["premature thread termination", "starting threads", "threading [MFC], terminating threads", "multithreading [C++], terminating threads", "threading [C++], stopping threads", "terminating threads", "stopping threads", "AfxEndThread method"]
 ms.assetid: 4c0a8c6d-c02f-456d-bd02-0a8c8d006ecb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Multithreading: Terminating Threads in MFC
 

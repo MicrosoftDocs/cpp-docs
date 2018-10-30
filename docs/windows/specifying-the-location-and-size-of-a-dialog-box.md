@@ -1,15 +1,8 @@
 ---
-title: "Specifying the Location and Size of a Dialog Box (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Specifying the Location and Size of a Dialog Box (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["dialog boxes [C++], size", "dialog boxes [C++], positioning"]
 ms.assetid: 2b7c495e-6595-4cfb-9664-80b2826d0851
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Specifying the Location and Size of a Dialog Box (C++)
 

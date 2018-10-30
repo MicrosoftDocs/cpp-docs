@@ -1,16 +1,10 @@
 ---
-title: "marshal_context::marshal_as | Microsoft Docs"
-ms.custom: ""
+title: "marshal_context::marshal_as"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["marshal_context::marshal_as", "marshal_context.marshal_as", "msclr.interop.marshal_context.marshal_as", "msclr::interop::marshal_context::marshal_as"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["marshal_context class [C++], operations"]
 ms.assetid: 24a1afee-51c0-497c-948c-f77fe43635c8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # marshal_context::marshal_as
 

@@ -1,14 +1,7 @@
 ---
-title: "2.7 Data Environment | Microsoft Docs"
-ms.custom: ""
+title: "2.7 Data Environment"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 74e44b3c-e18c-4773-8e78-cd6c4413ae57
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.7 Data Environment
 

@@ -1,15 +1,8 @@
 ---
-title: "Recordset (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["recordsets, snapshots", "recordsets, creating", "dynamic recordsets", "forward-only recordsets", "recordsets, dynasets", "ODBC recordsets, CRecordset objects", "ODBC recordsets", "recordsets, about recordsets", "snapshots, ODBC recordsets", "dynasets"]
 ms.assetid: 333337c5-575e-4d26-b5f6-47166ad7874d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset (ODBC)
 

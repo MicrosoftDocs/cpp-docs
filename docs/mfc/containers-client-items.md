@@ -1,15 +1,8 @@
 ---
-title: "Containers: Client Items | Microsoft Docs"
-ms.custom: ""
+title: "Containers: Client Items"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE containers [MFC], client items", "client items and OLE containers"]
 ms.assetid: 231528b5-0744-4f83-8897-083bf55ed087
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Containers: Client Items
 

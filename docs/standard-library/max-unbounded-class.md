@@ -1,16 +1,9 @@
 ---
-title: "max_unbounded Class | Microsoft Docs"
-ms.custom: ""
+title: "max_unbounded Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["allocators/stdext::max_unbounded", "allocators/stdext::max_unbounded::allocated", "allocators/stdext::max_unbounded::deallocated", "allocators/stdext::max_unbounded::full", "allocators/stdext::max_unbounded::released", "allocators/stdext::max_unbounded::saved"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::max_unbounded", "stdext::max_unbounded [C++], allocated", "stdext::max_unbounded [C++], deallocated", "stdext::max_unbounded [C++], full", "stdext::max_unbounded [C++], released", "stdext::max_unbounded [C++], saved"]
 ms.assetid: e34627a9-c231-4031-a483-cbb0514fff46
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # max_unbounded Class
 

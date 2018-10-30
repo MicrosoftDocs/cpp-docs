@@ -1,14 +1,7 @@
 ---
-title: "&lt;ctgmath&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;ctgmath&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: ff521893-f445-4dc8-a2f6-699185bb7024
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;ctgmath&gt;
 

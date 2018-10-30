@@ -1,15 +1,8 @@
 ---
-title: "clock Function (C) | Microsoft Docs"
-ms.custom: ""
+title: "clock Function (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["clock function"]
 ms.assetid: 4e66b721-850e-4e62-906a-72e42060c93d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # clock Function (C)
 

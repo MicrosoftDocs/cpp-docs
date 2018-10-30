@@ -1,15 +1,8 @@
 ---
-title: "Naked Function Calls | Microsoft Docs"
-ms.custom: ""
+title: "Naked Function Calls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["virtual device drivers", "VXD virtual device drivers", "virtual device drivers, naked function calls", "naked functions", "prolog code", "epilog code", "naked keyword [C++]", "naked keyword [C++], storage-class attribute"]
 ms.assetid: 2a66847a-a43f-4541-a7be-c9f5f29b5fdb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Naked Function Calls
 

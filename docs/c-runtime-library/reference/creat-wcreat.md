@@ -1,19 +1,12 @@
 ---
-title: "_creat, _wcreat | Microsoft Docs"
-ms.custom: ""
+title: "_creat, _wcreat"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_creat", "_wcreat"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["wcreat", "_wcreat", "_creat", "tcreat", "_tcreat"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wcreat function", "_wcreat function", "files [C++], creating", "_creat function", "tcreat function", "creat function", "_tcreat function"]
 ms.assetid: 3b3b795d-1620-40ec-bd2b-a4bbb0d20fe5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _creat, _wcreat
 

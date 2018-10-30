@@ -1,16 +1,10 @@
 ---
-title: "CreateClassFactory Function | Microsoft Docs"
-ms.custom: ""
+title: "CreateClassFactory Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Details::CreateClassFactory"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CreateClassFactory function"]
 ms.assetid: 772d5d1b-8872-4745-81ca-521a39564713
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # CreateClassFactory Function
 

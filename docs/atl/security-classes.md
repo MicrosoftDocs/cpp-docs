@@ -1,15 +1,9 @@
 ---
-title: "Security Classes (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Security Classes (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["security classes [C++]"]
 ms.assetid: 0477f1a4-c1af-4c4f-bbca-08f7b844e028
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Security Classes
 

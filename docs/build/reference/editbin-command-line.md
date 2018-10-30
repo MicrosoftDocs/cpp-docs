@@ -1,16 +1,9 @@
 ---
-title: "EDITBIN Command Line | Microsoft Docs"
-ms.custom: ""
+title: "EDITBIN Command Line"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["editbin"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["EDITBIN program, command line"]
 ms.assetid: 28ff7f92-6c4e-4e7f-86d8-80d5b2f91662
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # EDITBIN Command Line
 

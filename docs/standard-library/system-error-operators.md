@@ -1,10 +1,7 @@
 ---
-title: "&lt;system_error&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;system_error&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["system_error/std::operator!=", "system_error/std::operator=="]
-dev_langs: ["C++"]
 ms.assetid: c14edefb-bd8a-4e90-88d3-c59c98e6f73c
 ---
 # &lt;system_error&gt; operators

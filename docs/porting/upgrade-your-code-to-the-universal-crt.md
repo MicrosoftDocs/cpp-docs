@@ -1,12 +1,7 @@
 ---
-title: "Upgrade your code to the Universal CRT | Microsoft Docs"
-ms.custom: ""
+title: "Upgrade your code to the Universal CRT"
 ms.date: "03/31/2017"
-ms.topic: "conceptual"
 ms.assetid: eaf34c1b-da98-4058-a059-a10db693a5ce
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Upgrade your code to the Universal CRT
 

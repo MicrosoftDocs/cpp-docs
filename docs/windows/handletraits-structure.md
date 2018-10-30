@@ -1,16 +1,10 @@
 ---
-title: "HANDLETraits Structure | Microsoft Docs"
-ms.custom: ""
+title: "HANDLETraits Structure"
 ms.date: "09/27/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits", "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits::Close", "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits::GetInvalidValue"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits structure", "Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits::Close method", "Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits::GetInvalidValue method"]
 ms.assetid: 22963e88-d857-4624-9182-7c986daff722
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # HANDLETraits Structure
 

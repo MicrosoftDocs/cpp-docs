@@ -1,15 +1,8 @@
 ---
-title: "Transaction: Performing a Transaction in a Recordset (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Transaction: Performing a Transaction in a Recordset (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["transactions, updating recordsets"]
 ms.assetid: cf1d6b48-7fb8-4903-84f7-a1822054534d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Transaction: Performing a Transaction in a Recordset (ODBC)
 

@@ -1,14 +1,7 @@
 ---
-title: "1. Introduction | Microsoft Docs"
-ms.custom: ""
+title: "1. Introduction"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: c42e72bc-0e31-4b1c-b670-cd82673c0c5a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 1. Introduction
 

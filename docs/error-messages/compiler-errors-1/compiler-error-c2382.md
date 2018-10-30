@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2382 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2382"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2382"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2382"]
 ms.assetid: 4d4436f9-d0d6-4bd0-b8ec-767b89adfb2f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2382
 

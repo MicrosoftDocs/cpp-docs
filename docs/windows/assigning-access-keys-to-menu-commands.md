@@ -1,15 +1,8 @@
 ---
-title: "Assigning Access Keys to Menu Commands (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Assigning Access Keys to Menu Commands (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["access keys [C++], checking", "menus [C++], shortcut keys", "keyboard shortcuts [C++], command assignments", "access keys [C++], assigning", "mnemonics [C++], adding to menus", "keyboard shortcuts [C++], uniqueness checking", "mnemonics [C++], uniqueness checking", "Check Mnemonics command"]
 ms.assetid: fbcf1a00-af6a-4171-805a-0ac01d4e8b0d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Assigning Access Keys to Menu Commands (C++)
 

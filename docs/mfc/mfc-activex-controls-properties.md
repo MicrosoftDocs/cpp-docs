@@ -1,15 +1,8 @@
 ---
-title: "MFC ActiveX Controls: Properties | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Properties"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["properties [MFC], ActiveX controls", "MFC ActiveX controls [MFC], properties", "properties [MFC]"]
 ms.assetid: b678a53c-0d9e-476f-8aa0-23b80baaba46
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Properties
 

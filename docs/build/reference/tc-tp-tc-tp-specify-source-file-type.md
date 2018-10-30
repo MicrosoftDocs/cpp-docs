@@ -1,14 +1,8 @@
 ---
-title: "/Tc, /Tp, /TC, /TP (Specify Source File Type) | Microsoft Docs"
+title: "/Tc, /Tp, /TC, /TP (Specify Source File Type)"
 ms.date: "1/11/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.CompileAs", "VC.Project.VCCLCompilerTool.CompileAs", "/Tp", "/tc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Tp compiler option [C++]", "/Tc compiler option [C++]", "-Tc compiler option [C++]", "source files, specifying to compiler", "Tc compiler option [C++]", "/Tp compiler option [C++]", "-Tp compiler option [C++]"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Tc, /Tp, /TC, /TP (Specify Source File Type)
 

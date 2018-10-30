@@ -1,16 +1,10 @@
 ---
-title: "for each, in | Microsoft Docs"
-ms.custom: ""
+title: "for each, in"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::foreach", "for", "each", "in"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["for each keyword [C++]"]
 ms.assetid: 0c3a364b-2747-43f3-bb8d-b7d3b7023f79
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # for each, in
 

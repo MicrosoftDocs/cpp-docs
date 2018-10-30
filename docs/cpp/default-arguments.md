@@ -1,15 +1,8 @@
 ---
-title: "Default Arguments | Microsoft Docs"
-ms.custom: ""
+title: "Default Arguments"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["arguments [C++], function", "function declarators", "functions [C++], default arguments", "declaring functions [C++], declarators", "default arguments", "arguments [C++], default", "defaults [C++], arguments"]
 ms.assetid: d32cf516-05cb-4d4d-b169-92f5649fdfa2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Default Arguments
 

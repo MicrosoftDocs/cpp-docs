@@ -1,16 +1,9 @@
 ---
-title: "SOCKADDR Structure | Microsoft Docs"
-ms.custom: ""
+title: "SOCKADDR Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["SOCKADDR"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SOCKADDR structure [MFC]"]
 ms.assetid: df1ed66a-f4b8-43f8-8db8-8c2533d25f68
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # SOCKADDR Structure
 

@@ -1,15 +1,8 @@
 ---
-title: "Point of declaration in C++ | Microsoft Docs"
-ms.custom: ""
+title: "Point of declaration in C++"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["point of declaration"]
 ms.assetid: 92ea8707-80cb-497c-b479-f907b8401859
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Point of declaration in C++
 

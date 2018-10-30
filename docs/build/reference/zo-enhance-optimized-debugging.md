@@ -1,16 +1,9 @@
 ---
-title: "-Zo (Enhance Optimized Debugging) | Microsoft Docs"
-ms.custom: ""
+title: "/Zo (Enhance Optimized Debugging)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["-Zo", "/Zo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Zo compiler option [C++]", "/Zo compiler option [C++]", "-Zo compiler option [C++]"]
 ms.assetid: eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zo (Enhance Optimized Debugging)
 

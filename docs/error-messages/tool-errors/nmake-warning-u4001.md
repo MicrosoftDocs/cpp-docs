@@ -1,16 +1,9 @@
 ---
-title: "NMAKE Warning U4001 | Microsoft Docs"
-ms.custom: ""
+title: "NMAKE Warning U4001"
 ms.date: "09/05/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["U4001"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["U4001"]
 ms.assetid: ed3b4068-2ad8-4ffc-b7c7-33897d2a55d7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # NMAKE Warning U4001
 

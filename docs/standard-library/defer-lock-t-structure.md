@@ -1,15 +1,8 @@
 ---
-title: "defer_lock_t Structure | Microsoft Docs"
-ms.custom: ""
+title: "defer_lock_t Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["mutex/std::defer_lock_t"]
-dev_langs: ["C++"]
 ms.assetid: 4c4588eb-ca51-4949-b5d1-8539cc4577ad
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # defer_lock_t Structure
 

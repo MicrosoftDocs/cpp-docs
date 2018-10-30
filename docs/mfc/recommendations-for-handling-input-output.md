@@ -1,15 +1,8 @@
 ---
-title: "Recommendations for Handling Input-Output | Microsoft Docs"
-ms.custom: ""
+title: "Recommendations for Handling Input-Output"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["I/O [MFC], about I/O", "file-based I/O options", "I/O [MFC]", "I/O [MFC], options", "I/O [MFC], file-based options"]
 ms.assetid: d664b175-3b4a-40c3-b14b-39de6b12e419
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Recommendations for Handling Input/Output
 

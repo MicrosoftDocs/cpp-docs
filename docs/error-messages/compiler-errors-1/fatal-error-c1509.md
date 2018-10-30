@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1509 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1509"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1509"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1509"]
 ms.assetid: 40dd100d-c6ba-451c-bd26-2c99ec1c36d6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1509
 

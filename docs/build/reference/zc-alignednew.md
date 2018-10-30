@@ -1,13 +1,8 @@
 ---
-title: "/Zc:alignedNew (C++17 over-aligned allocation) | Microsoft Docs"
+title: "/Zc:alignedNew (C++17 over-aligned allocation)"
 ms.date: "02/28/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Zc:alignedNew"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/Zc:alignedNew", "Zc:alignedNew", "-Zc:alignedNew"]
-author: "corob-msft"
-ms.author: "corob"
 ---
 # /Zc:alignedNew (C++17 over-aligned allocation)
 

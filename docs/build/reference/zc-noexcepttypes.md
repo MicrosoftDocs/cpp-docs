@@ -1,15 +1,9 @@
 ---
-title: "-Zc:noexceptTypes (C++17 noexcept rules) | Microsoft Docs"
+title: "/Zc:noexceptTypes (C++17 noexcept rules)"
 ms.date: "11/14/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Zc:noexceptTypes"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/Zc:noexceptTypes", "Zc:noexceptTypes", "-Zc:noexceptTypes"]
 ms.assetid: 1cbf7e3c-0f82-4f91-84dd-612bcf26d2c6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:noexceptTypes (C++17 noexcept rules)
 

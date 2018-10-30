@@ -1,15 +1,8 @@
 ---
-title: "Security Implications of Customization | Microsoft Docs"
-ms.custom: ""
+title: "Security Implications of Customization"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["security, MFC Feature Pack", "MFC Feature Pack, security"]
 ms.assetid: 9be96b12-be38-43bd-a133-5d671265f7a1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Security Implications of Customization
 

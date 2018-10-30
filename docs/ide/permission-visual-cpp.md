@@ -1,16 +1,9 @@
 ---
-title: "&lt;permission&gt; (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "&lt;permission&gt; (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["permission", "<permission>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<permission> C++ XML tag", "permission C++ XML tag"]
 ms.assetid: 537ee2bc-95bd-48e4-9ce6-3420c3da87f4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # &lt;permission&gt; (Visual C++)
 

@@ -1,16 +1,9 @@
 ---
-title: "detect_mismatch | Microsoft Docs"
-ms.custom: ""
+title: "detect_mismatch"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["vc-pragma.detect_mismatch", "detect_mismatch_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, detect_mismatch", "detect_mismatch pragma"]
 ms.assetid: ddb13ac9-0e2f-40ce-be69-7e44c04f5a12
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # detect_mismatch
 Places a record in an object. The linker checks these records for potential mismatches.

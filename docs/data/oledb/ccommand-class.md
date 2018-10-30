@@ -1,16 +1,9 @@
 ---
-title: "CCommand Class | Microsoft Docs"
-ms.custom: ""
+title: "CCommand Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL::CCommand", "CCommand", "ATL.CCommand", "CCommand.Close", "CCommand::Close", "CCommand.Create", "CCommand::Create", "CCommand.CreateCommand", "CreateCommand", "CCommand::CreateCommand", "ATL::CCommand::GetNextResult", "CCommand::GetNextResult", "GetNextResult", "CCommand.GetNextResult", "ATL.CCommand.GetNextResult", "GetParameterInfo", "CCommand.GetParameterInfo", "CCommand::GetParameterInfo", "ATL.CCommand.Open", "ATL::CCommand::Open", "CCommand.Open", "CCommand::Open", "CCommand.Prepare", "CCommand::Prepare", "Prepare", "CCommand.ReleaseCommand", "ReleaseCommand", "CCommand::ReleaseCommand", "SetParameterInfo", "CCommand.SetParameterInfo", "CCommand::SetParameterInfo", "Unprepare", "CCommand.Unprepare", "CCommand::Unprepare"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CCommand class", "Close method", "Create method [C++]", "CreateCommand method", "GetNextResult method", "GetParameterInfo method", "Open method", "Prepare method", "ReleaseCommand method", "SetParameterInfo method", "Unprepare method"]
 ms.assetid: 0760bfc5-b9ee-4aee-8e54-31bd78714d3a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CCommand Class
 

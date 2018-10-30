@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3272 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3272"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3272"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3272"]
 ms.assetid: 7cdf254d-f207-4116-a1bf-7386f3b82a6f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3272
 

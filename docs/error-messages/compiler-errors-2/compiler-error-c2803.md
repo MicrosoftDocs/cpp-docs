@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2803 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2803"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2803"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2803"]
 ms.assetid: 2cdbe374-8cc4-4c4e-ba15-062a7479e937
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2803
 

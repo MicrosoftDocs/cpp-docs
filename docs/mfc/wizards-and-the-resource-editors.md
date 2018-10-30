@@ -1,15 +1,8 @@
 ---
-title: "Wizards and the Resource Editors | Microsoft Docs"
-ms.custom: ""
+title: "Wizards and the Resource Editors"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["application wizards [MFC], and MFC", "MFC, resource editors", "resource editors, MFC", "MFC Application Wizard", "editors [MFC], resource", "wizards [MFC]", "wizards [MFC], MFC programming", "MFC, wizards", "Class View tool, managing Windows messages"]
 ms.assetid: f5dd4d13-9dc1-4a49-b6bf-5b3cb45fa8ba
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Wizards and the Resource Editors
 

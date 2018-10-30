@@ -1,16 +1,9 @@
 ---
-title: "-WL (Enable One-Line Diagnostics) | Microsoft Docs"
-ms.custom: ""
+title: "/WL (Enable One-Line Diagnostics)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/wl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-WL compiler option [C++]", "/WL compiler option [C++]", "WL compiler option [C++]"]
 ms.assetid: 332cadb4-8ea6-45fe-b67d-33ddec1f2c2e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /WL (Enable One-Line Diagnostics)
 

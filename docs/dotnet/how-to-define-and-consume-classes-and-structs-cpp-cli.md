@@ -1,15 +1,8 @@
 ---
-title: "How to: Define and Consume Classes and Structs (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "How to: Define and Consume Classes and Structs (C++/CLI)"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["structs [C++]", "classes [C++], instantiating"]
 ms.assetid: 1c03cb0d-1459-4b5e-af65-97d6b3094fd7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Define and Consume Classes and Structs (C++/CLI)
 

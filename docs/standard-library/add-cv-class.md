@@ -1,16 +1,9 @@
 ---
-title: "add_cv Class | Microsoft Docs"
-ms.custom: ""
+title: "add_cv Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::add_cv"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["add_cv class", "add_cv"]
 ms.assetid: a5572c78-a097-45d7-b476-ed4876889dea
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # add_cv Class
 

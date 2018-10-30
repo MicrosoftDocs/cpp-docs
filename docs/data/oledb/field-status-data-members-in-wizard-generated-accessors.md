@@ -1,15 +1,8 @@
 ---
-title: "Field Status Data Members in Wizard-Generated Accessors | Microsoft Docs"
-ms.custom: ""
+title: "Field Status Data Members in Wizard-Generated Accessors"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB consumer templates, field status", "field status in OLE DB templates"]
 ms.assetid: 66e4e223-c60c-471e-860d-d23abcdfe371
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Field Status Data Members in Wizard-Generated Accessors
 

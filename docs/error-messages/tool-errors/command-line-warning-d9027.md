@@ -1,16 +1,9 @@
 ---
-title: "Command-Line Warning D9027 | Microsoft Docs"
-ms.custom: ""
+title: "Command-Line Warning D9027"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["D9027"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["D9027"]
 ms.assetid: 2a29edc5-5649-48f2-9058-2057c747284c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Command-Line Warning D9027
 

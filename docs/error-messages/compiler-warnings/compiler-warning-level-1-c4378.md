@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4378 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4378"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4378"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4378"]
 ms.assetid: d08e11ef-891a-4752-9a5e-360e7394acf7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4378
 

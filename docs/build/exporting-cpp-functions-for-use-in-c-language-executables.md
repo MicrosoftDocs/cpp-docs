@@ -1,15 +1,8 @@
 ---
-title: "Exporting C++ Functions for Use in C-Language Executables | Microsoft Docs"
-ms.custom: ""
+title: "Exporting C++ Functions for Use in C-Language Executables"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["functions [C++], C++ functions in C executables", "exporting DLLs [C++], C++ functions in C executables", "exporting functions [C++], C++ functions in C executables", "functions [C++], exporting"]
 ms.assetid: 80b9e982-f52d-4312-a891-f73cc69f3c2b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Exporting C++ Functions for Use in C-Language Executables
 

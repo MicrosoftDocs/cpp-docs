@@ -1,16 +1,9 @@
 ---
-title: "Add Event Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Add Event Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.event.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Add Event Wizard [C++]"]
 ms.assetid: bdd2a7bb-13d5-44d7-abc9-e785ba4e05ce
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Add Event Wizard
 

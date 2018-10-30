@@ -1,16 +1,9 @@
 ---
-title: "CHtmlEditDoc Class | Microsoft Docs"
-ms.custom: ""
+title: "CHtmlEditDoc Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CHtmlEditDoc", "AFXHTML/CHtmlEditDoc", "AFXHTML/CHtmlEditDoc::CHtmlEditDoc", "AFXHTML/CHtmlEditDoc::GetView", "AFXHTML/CHtmlEditDoc::IsModified", "AFXHTML/CHtmlEditDoc::OpenURL"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CHtmlEditDoc [MFC], CHtmlEditDoc", "CHtmlEditDoc [MFC], GetView", "CHtmlEditDoc [MFC], IsModified", "CHtmlEditDoc [MFC], OpenURL"]
 ms.assetid: b2cca61f-e5d6-4099-b0d1-46bf85f0bd64
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CHtmlEditDoc Class
 

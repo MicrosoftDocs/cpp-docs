@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2332 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2332"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2332"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2332"]
 ms.assetid: fb05cd68-e271-4bea-9fb7-ef4edb0a26ac
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2332
 

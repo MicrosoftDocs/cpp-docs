@@ -1,16 +1,9 @@
 ---
-title: "__writegsbyte, __writegsdword, __writegsqword, __writegsword | Microsoft Docs"
-ms.custom: ""
+title: "__writegsbyte, __writegsdword, __writegsqword, __writegsword"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__writegsbyte", "__writegsqword", "__writegsdword", "__writegsword"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__writegsqword intrinsic", "__writegsbyte intrinsic", "__writegsword intrinsic", "__writegsdword intrinsic"]
 ms.assetid: 7746cf6d-2259-4139-9aab-c07dd75c8037
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __writegsbyte, __writegsdword, __writegsqword, __writegsword
 

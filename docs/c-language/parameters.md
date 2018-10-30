@@ -1,15 +1,8 @@
 ---
-title: "Parameters | Microsoft Docs"
-ms.custom: ""
+title: "Parameters"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["arguments [C++], function", "function parameters", "parameters [C++]", "function arguments, vs. parameters", "parameters [C++], function", "functions [C], parameters", "function parameters, syntax", "ellipses (...), parameters", "... ellipsis"]
 ms.assetid: 8f2b8026-78b5-4e21-86a3-bf0f91f05689
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Parameters
 

@@ -1,14 +1,7 @@
 ---
-title: "2.7.1 threadprivate Directive | Microsoft Docs"
-ms.custom: ""
+title: "2.7.1 threadprivate Directive"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 08e0b70f-5359-4607-b0ca-38c2d570d7b3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.7.1 threadprivate Directive
 

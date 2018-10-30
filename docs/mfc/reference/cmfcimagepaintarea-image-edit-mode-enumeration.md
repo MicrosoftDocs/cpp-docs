@@ -1,16 +1,9 @@
 ---
-title: "CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration | Microsoft Docs"
-ms.custom: ""
+title: "CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["IMAGE_EDIT_MODE Enumeration"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IMAGE_EDIT_MODE Enumeration method [MFC]"]
 ms.assetid: e51db66a-fa1c-4766-9dac-a25b595f871a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration
 

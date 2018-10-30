@@ -1,19 +1,12 @@
 ---
-title: "fputc, fputwc | Microsoft Docs"
-ms.custom: ""
+title: "fputc, fputwc"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["fputc", "fputwc"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["fputc", "fputwc", "_fputtc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["streams, writing characters to", "fputtc function", "_fputtc function", "fputwc function", "fputc function"]
 ms.assetid: 5a0a593d-43f4-4fa2-a401-ec4e23de4d2f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fputc, fputwc
 

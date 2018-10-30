@@ -1,16 +1,9 @@
 ---
-title: "BYTE (MASM) | Microsoft Docs"
-ms.custom: ""
+title: "BYTE (MASM)"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["byte"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["BYTE directive"]
 ms.assetid: 8dd94476-c069-4585-a478-3cb2e8e6ae54
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # BYTE (MASM)
 

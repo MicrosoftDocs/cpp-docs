@@ -1,16 +1,9 @@
 ---
-title: "Changing a Symbol&#39;s Numeric Value | Microsoft Docs"
-ms.custom: ""
+title: "Changing a Symbol&#39;s Numeric Value"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.symbol.changing.value"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["numeric values", "symbols [C++], numeric values", "numeric values, changing symbols"]
 ms.assetid: 468e903b-9c07-4251-ae09-3b6cb754cc2b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Changing a Symbol&#39;s Numeric Value
 

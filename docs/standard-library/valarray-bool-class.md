@@ -1,16 +1,9 @@
 ---
-title: "valarray&lt;bool&gt; Class | Microsoft Docs"
-ms.custom: ""
+title: "valarray&lt;bool&gt; Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["valarray<bool>", "valarray/std::valarray<bool>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["valarray<bool> class"]
 ms.assetid: fc0e7121-4758-4ea5-86c3-f04448f04acf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # valarray&lt;bool&gt; Class
 

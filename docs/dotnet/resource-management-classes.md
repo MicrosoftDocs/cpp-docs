@@ -1,15 +1,9 @@
 ---
-title: "Resource Management Classes | Microsoft Docs"
-ms.custom: ""
+title: "Resource Management Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["resource management", "managed classes, resource management", "classes [C++], resource management", "resource management, C++ classes", "resources [C++], management"]
 ms.assetid: 1040e813-f1cd-4b13-83b6-d329f8e75d2e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Resource Management Classes
 

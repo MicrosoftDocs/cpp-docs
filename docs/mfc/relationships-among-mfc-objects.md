@@ -1,15 +1,8 @@
 ---
-title: "Relationships Among MFC Objects | Microsoft Docs"
-ms.custom: ""
+title: "Relationships Among MFC Objects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, relationships between key objects", "objects [MFC], relationships", "relationships, MFC objects", "MFC object relationships"]
 ms.assetid: 6e8f3b51-e80f-4d88-94c8-4c1e4ee163ad
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Relationships Among MFC Objects
 

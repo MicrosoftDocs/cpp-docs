@@ -1,16 +1,9 @@
 ---
-title: "-NOENTRY (No Entry Point) | Microsoft Docs"
-ms.custom: ""
+title: "/NOENTRY (No Entry Point)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.ResourceOnlyDLL", "/noentry"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["entry points [C++], linker specifying", "-NOENTRY linker option", "resource-only DLLs [C++], creating", "NOENTRY linker option", "/NOENTRY linker option [C++]", "DLLs [C++], creating"]
 ms.assetid: 0214dd41-35ad-43ab-b892-e636e038621a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /NOENTRY (No Entry Point)
 

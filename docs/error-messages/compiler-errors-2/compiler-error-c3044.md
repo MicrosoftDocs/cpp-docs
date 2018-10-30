@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3044 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3044"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3044"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3044"]
 ms.assetid: 9f3e25b2-4676-49ab-97bf-6c88cd0fa377
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3044
 

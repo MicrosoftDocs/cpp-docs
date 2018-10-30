@@ -1,15 +1,8 @@
 ---
-title: "-- Attributes Comment | Microsoft Docs"
-ms.custom: ""
+title: "-- Attributes Comment"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["comments, Attributes", "Attributes comment in MFC source files", "MFC source files, Attributes comment", "public attributes comment"]
 ms.assetid: 96388e11-42df-4994-aedf-decd152961a7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # // Attributes Comment
 

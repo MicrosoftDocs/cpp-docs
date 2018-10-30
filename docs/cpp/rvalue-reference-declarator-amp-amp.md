@@ -1,16 +1,9 @@
 ---
-title: "Rvalue Reference Declarator: &amp;&amp; | Microsoft Docs"
-ms.custom: ""
+title: "Rvalue Reference Declarator: &amp;&amp;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["&&"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["&& rvalue reference declarator"]
 ms.assetid: eab0ce3a-c5a3-4992-aa70-6a8ab1f7491d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Rvalue Reference Declarator: &amp;&amp;
 

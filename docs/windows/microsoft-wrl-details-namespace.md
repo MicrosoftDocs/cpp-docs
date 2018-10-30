@@ -1,14 +1,8 @@
 ---
-title: "Microsoft::WRL::Details Namespace | Microsoft Docs"
-ms.custom: ""
+title: "Microsoft::WRL::Details Namespace"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: d71fe149-d804-4c6f-961d-43fe21ef8630
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Microsoft::WRL::Details Namespace
 

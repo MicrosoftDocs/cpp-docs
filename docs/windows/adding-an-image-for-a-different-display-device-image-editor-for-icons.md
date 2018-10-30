@@ -1,15 +1,8 @@
 ---
-title: "Adding an Image for a Different Display Device (Image Editor for Icons) | Microsoft Docs"
-ms.custom: ""
+title: "Adding an Image for a Different Display Device (Image Editor for Icons)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["New Device Image command", "display devices [C++], adding images", "cursors [C++], adding", "icons, adding"]
 ms.assetid: 394f87dd-ea19-49d8-bb9e-139cd28b69c2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Adding an Image for a Different Display Device (Image Editor for Icons)
 

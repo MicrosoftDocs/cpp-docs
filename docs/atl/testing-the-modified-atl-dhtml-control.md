@@ -1,15 +1,8 @@
 ---
-title: "Testing the Modified ATL DHTML Control | Microsoft Docs"
-ms.custom: ""
+title: "Testing the Modified ATL DHTML Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["HTML controls, testing", "testing controls", "DHTML controls, testing"]
 ms.assetid: 42316118-9433-410f-9d8a-0efcc1eff824
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Testing the Modified ATL DHTML Control
 

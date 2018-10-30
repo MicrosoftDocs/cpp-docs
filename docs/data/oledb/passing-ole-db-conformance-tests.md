@@ -1,15 +1,8 @@
 ---
-title: "Passing OLE DB Conformance Tests | Microsoft Docs"
-ms.custom: ""
+title: "Passing OLE DB Conformance Tests"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["testing, OLE DB providers", "testing providers", "conformance testing", "conformance testing [OLE DB]", "OLE DB providers, testing"]
 ms.assetid: d1a4f147-2edd-476c-b452-0e6a0ac09891
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Passing OLE DB Conformance Tests
 

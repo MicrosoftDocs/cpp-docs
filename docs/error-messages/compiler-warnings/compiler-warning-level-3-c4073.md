@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 3) C4073 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 3) C4073"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4073"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4073"]
 ms.assetid: 50081a6e-6acd-45ff-8484-9b1ea926cc5c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4073
 

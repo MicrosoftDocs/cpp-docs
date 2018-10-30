@@ -1,15 +1,8 @@
 ---
-title: "External Linkage | Microsoft Docs"
-ms.custom: ""
+title: "External Linkage"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["linkage [C++], external", "external linkage, about external linkage", "external linkage"]
 ms.assetid: a6f8ea69-b405-4cdd-bf12-ad5462b73183
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # External Linkage
 

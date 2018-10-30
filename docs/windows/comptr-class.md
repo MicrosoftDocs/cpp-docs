@@ -1,16 +1,10 @@
 ---
-title: "ComPtr Class | Microsoft Docs"
-ms.custom: ""
+title: "ComPtr Class"
 ms.date: "10/01/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::ComPtr", "client/Microsoft::WRL::ComPtr::As", "client/Microsoft::WRL::ComPtr::AsIID", "client/Microsoft::WRL::ComPtr::AsWeak", "client/Microsoft::WRL::ComPtr::Attach", "client/Microsoft::WRL::ComPtr::ComPtr", "client/Microsoft::WRL::ComPtr::CopyTo", "client/Microsoft::WRL::ComPtr::Detach", "client/Microsoft::WRL::ComPtr::Get", "client/Microsoft::WRL::ComPtr::GetAddressOf", "client/Microsoft::WRL::ComPtr::InternalAddRef", "client/Microsoft::WRL::ComPtr::InternalRelease", "client/Microsoft::WRL::ComPtr::operator&", "client/Microsoft::WRL::ComPtr::operator->", "client/Microsoft::WRL::ComPtr::operator=", "client/Microsoft::WRL::ComPtr::operator==", "client/Microsoft::WRL::ComPtr::operator!=", "client/Microsoft::WRL::ComPtr::operator Microsoft::WRL::Details::BoolType", "client/Microsoft::WRL::ComPtr::ptr_", "client/Microsoft::WRL::ComPtr::ReleaseAndGetAddressOf", "client/Microsoft::WRL::ComPtr::Reset", "client/Microsoft::WRL::ComPtr::Swap", "client/Microsoft::WRL::ComPtr::~ComPtr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::ComPtr class", "Microsoft::WRL::ComPtr::As method", "Microsoft::WRL::ComPtr::AsIID method", "Microsoft::WRL::ComPtr::AsWeak method", "Microsoft::WRL::ComPtr::Attach method", "Microsoft::WRL::ComPtr::ComPtr, constructor", "Microsoft::WRL::ComPtr::CopyTo method", "Microsoft::WRL::ComPtr::Detach method", "Microsoft::WRL::ComPtr::Get method", "Microsoft::WRL::ComPtr::GetAddressOf method", "Microsoft::WRL::ComPtr::InternalAddRef method", "Microsoft::WRL::ComPtr::InternalRelease method", "Microsoft::WRL::ComPtr::operator& operator", "Microsoft::WRL::ComPtr::operator-> operator", "Microsoft::WRL::ComPtr::operator= operator", "Microsoft::WRL::ComPtr::operator== operator", "Microsoft::WRL::ComPtr::operator!= operator", "Microsoft::WRL::ComPtr::operator Microsoft::WRL::Details::BoolType operator", "Microsoft::WRL::ComPtr::ptr_ data member", "Microsoft::WRL::ComPtr::ReleaseAndGetAddressOf method", "Microsoft::WRL::ComPtr::Reset method", "Microsoft::WRL::ComPtr::Swap method", "Microsoft::WRL::ComPtr::~ComPtr, destructor"]
 ms.assetid: a6551902-6819-478a-8df7-b6f312ab1fb0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr Class
 

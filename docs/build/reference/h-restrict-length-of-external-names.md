@@ -1,16 +1,9 @@
 ---
-title: "-H (Restrict Length of External Names) | Microsoft Docs"
-ms.custom: ""
+title: "/H (Restrict Length of External Names)"
 ms.date: "09/05/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/h"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["public name length", "/H compiler option [C++]", "H compiler option [C++]", "external names", "-H compiler option [C++]"]
 ms.assetid: de701dd3-ed04-4c88-8195-960d2520ec2e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /H (Restrict Length of External Names)
 

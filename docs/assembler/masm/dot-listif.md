@@ -1,16 +1,9 @@
 ---
-title: ".LISTIF | Microsoft Docs"
-ms.custom: ""
+title: ".LISTIF"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".LISTIF"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".LISTIF directive"]
 ms.assetid: 1189ff45-1fa1-4035-a74f-70c2c62b06fd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .LISTIF
 

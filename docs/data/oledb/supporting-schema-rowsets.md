@@ -1,15 +1,8 @@
 ---
-title: "Supporting Schema Rowsets | Microsoft Docs"
-ms.custom: ""
+title: "Supporting Schema Rowsets"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["schema rowsets", "OLE DB consumer templates, schema rowsets", "OLE DB providers, schema rowsets", "OLE DB, schema rowsets"]
 ms.assetid: 71c5e14b-6e33-4502-a2d9-a1dc6d6e9ba0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Supporting Schema Rowsets
 

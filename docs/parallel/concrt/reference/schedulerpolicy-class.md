@@ -1,16 +1,9 @@
 ---
-title: "SchedulerPolicy Class | Microsoft Docs"
-ms.custom: ""
+title: "SchedulerPolicy Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["SchedulerPolicy", "concrt/concurrency::SchedulerPolicy", "concrt/concurrency::SchedulerPolicy::SchedulerPolicy", "concrt/concurrency::SchedulerPolicy::GetPolicyValue", "concrt/concurrency::SchedulerPolicy::SetConcurrencyLimits", "concrt/concurrency::SchedulerPolicy::SetPolicyValue"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SchedulerPolicy class"]
 ms.assetid: bcebf51a-65f8-45a3-809b-d1ff93527dc4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # SchedulerPolicy Class
 

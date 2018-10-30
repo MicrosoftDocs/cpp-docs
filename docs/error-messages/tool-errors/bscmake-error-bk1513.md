@@ -1,16 +1,9 @@
 ---
-title: "BSCMAKE Error BK1513 | Microsoft Docs"
-ms.custom: ""
+title: "BSCMAKE Error BK1513"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["BK1513"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["BK1513"]
 ms.assetid: 9ba87c09-8d82-4c80-b0cf-a8de63dcf9da
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # BSCMAKE Error BK1513
 

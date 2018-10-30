@@ -1,15 +1,8 @@
 ---
-title: "CFixedStringT: Example of a Custom String Manager | Microsoft Docs"
-ms.custom: ""
+title: "CFixedStringT: Example of a Custom String Manager"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CFixedStringT class, using a custom string manager"]
 ms.assetid: 1cf11fd7-51b8-4b94-87af-02bc25f47dd6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CFixedStringT: Example of a Custom String Manager
 

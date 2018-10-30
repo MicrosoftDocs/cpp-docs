@@ -1,15 +1,8 @@
 ---
-title: "Linker Tools Error LNK1248 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1248"
 ms.date: "12/28/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1248"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1248"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1248
 

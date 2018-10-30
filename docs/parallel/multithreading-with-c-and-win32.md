@@ -1,15 +1,8 @@
 ---
-title: "Multithreading with C and Win32 | Microsoft Docs"
-ms.custom: ""
+title: "Multithreading with C and Win32"
 ms.date: "02/02/2018"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Windows API [C++], multithreading", "multithreading [C++], C and Win32", "Visual C, multithreading", "Win32 applications [C++], multithreading", "threading [C++], C and Win32", "Win32 [C++], multithreading", "threading [C]"]
 ms.assetid: 67cdc99e-1ad9-452b-a042-ed246b70040e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Multithreading with C and Win32
 

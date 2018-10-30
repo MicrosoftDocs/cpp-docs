@@ -1,15 +1,9 @@
 ---
-title: "Boxing  (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Boxing  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["boxing, C++"]
 ms.assetid: b5fd2c98-c578-4f83-8257-6dd663478665
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Boxing  (C++/CLI and C++/CX)
 

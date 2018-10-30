@@ -1,15 +1,8 @@
 ---
-title: "Adding Event Handlers for Dialog Box Controls (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Adding Event Handlers for Dialog Box Controls (C++)"
 ms.date: "06/28/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Dialog Editor [C++], adding event handlers to controls", "controls [C++], event handlers", "dialog box controls [C++], events", "event handlers, for dialog box controls"]
 ms.assetid: f9c70f24-ea6f-44df-82eb-78a2deaee769
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Adding Event Handlers for Dialog Box Controls (C++)
 

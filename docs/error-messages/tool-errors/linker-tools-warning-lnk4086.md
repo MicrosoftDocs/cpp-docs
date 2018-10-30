@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Warning LNK4086 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Warning LNK4086"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK4086"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4086"]
 ms.assetid: ea1eecbb-ba2c-41bb-9a4f-fa0808a4b92d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4086
 

@@ -1,14 +1,7 @@
 ---
-title: "Explicitly Defaulted and Deleted Functions | Microsoft Docs"
-ms.custom: ""
+title: "Explicitly Defaulted and Deleted Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 5a588478-fda2-4b3f-a279-db3967f5e07e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Explicitly Defaulted and Deleted Functions
 

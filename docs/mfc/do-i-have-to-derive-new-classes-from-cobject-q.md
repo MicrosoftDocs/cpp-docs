@@ -1,16 +1,9 @@
 ---
-title: "Do I Have to Derive New Classes from CObject? | Microsoft Docs"
-ms.custom: ""
+title: "Do I Have to Derive New Classes from CObject?"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CObject"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["derived classes [MFC], from CObject", "CObject class [MFC], when to use"]
 ms.assetid: 26021031-feaf-424c-80d1-9547c4409d6a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Do I Have to Derive New Classes from CObject?
 

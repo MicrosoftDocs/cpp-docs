@@ -1,16 +1,9 @@
 ---
-title: "CWinApp and the MFC Application Wizard | Microsoft Docs"
-ms.custom: ""
+title: "CWinApp and the MFC Application Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CWinApp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["application wizards [MFC], and CWinApp", "CWinApp class [MFC], and MFC Application Wizard", "MFC, wizards"]
 ms.assetid: f8ac0491-3302-4e46-981d-0790624eb8a2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CWinApp and the MFC Application Wizard
 

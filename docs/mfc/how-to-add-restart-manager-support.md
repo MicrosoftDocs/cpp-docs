@@ -1,15 +1,8 @@
 ---
-title: "How to: Add Restart Manager Support | Microsoft Docs"
-ms.custom: ""
+title: "How to: Add Restart Manager Support"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Restart manager [MFC]", "C++, application crash support"]
 ms.assetid: 7f3f5867-d4bc-4ba8-b3c9-dc1e7be93642
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Add Restart Manager Support
 

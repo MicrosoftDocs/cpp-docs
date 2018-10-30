@@ -1,15 +1,8 @@
 ---
-title: "Stream Operations in Rich Edit Controls | Microsoft Docs"
-ms.custom: ""
+title: "Stream Operations in Rich Edit Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRichEditCtrl class [MFC], stream operations", "CRichEditCtrl class [MFC], stream storage", "rich edit controls [MFC], stream operations", "storage, stream in CRichEditCtrl", "stream operations in CRichEditCtrl", "stream storage and CRichEditCtrl"]
 ms.assetid: 110b4684-1e76-4ca6-9ef0-5bc8b2d93c78
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Stream Operations in Rich Edit Controls
 

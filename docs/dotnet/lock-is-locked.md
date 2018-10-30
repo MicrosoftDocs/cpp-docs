@@ -1,16 +1,10 @@
 ---
-title: "lock::is_locked | Microsoft Docs"
-ms.custom: ""
+title: "lock::is_locked"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["is_locked", "msclr::lock::is_locked", "lock::is_locked", "msclr::lock.is_locked", "lock.is_locked"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["lock::is_locked"]
 ms.assetid: d888827c-8052-47c6-87a2-8c42f60a688d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # lock::is_locked
 

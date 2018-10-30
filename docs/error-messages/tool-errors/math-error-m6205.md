@@ -1,16 +1,9 @@
 ---
-title: "Math Error M6205 | Microsoft Docs"
-ms.custom: ""
+title: "Math Error M6205"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["M6205"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["M6205"]
 ms.assetid: fd28e7c9-a463-4a9c-a863-cc9e75315550
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Math Error M6205
 

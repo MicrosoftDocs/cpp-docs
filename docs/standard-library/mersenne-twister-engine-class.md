@@ -1,16 +1,9 @@
 ---
-title: "mersenne_twister_engine Class | Microsoft Docs"
-ms.custom: ""
+title: "mersenne_twister_engine Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["random/std::mersenne_twister_engine"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["mersenne_twister_engine class"]
 ms.assetid: 7ee968fa-a1cc-450f-890f-7305de062685
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # mersenne_twister_engine Class
 

@@ -1,15 +1,8 @@
 ---
-title: "Windows Sockets: Socket Notifications | Microsoft Docs"
-ms.custom: ""
+title: "Windows Sockets: Socket Notifications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Windows Sockets [MFC], notifications", "notifications [MFC], socket", "sockets [MFC], notifications"]
 ms.assetid: 87d5bf70-6e77-49a9-9a64-aaadee2ad018
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: Socket Notifications
 

@@ -1,16 +1,9 @@
 ---
-title: "Bitwise inclusive OR operator: | | Microsoft Docs"
-ms.custom: ""
+title: "Bitwise inclusive OR operator: |"
 ms.date: "06/14/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["bitor", "|"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OR operator [C++], bitwise inclusive", "bitwise operators [C++], OR operator", "inclusive OR operator", "| operator"]
 ms.assetid: 4c8a6a68-d828-447d-875a-aedb4ce3aa9a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Bitwise inclusive OR operator: |
 

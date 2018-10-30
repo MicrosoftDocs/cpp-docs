@@ -1,16 +1,9 @@
 ---
-title: "CCustomRowset (CustomRS.H) | Microsoft Docs"
-ms.custom: ""
+title: "CCustomRowset (CustomRS.H)"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["cmyproviderrowset", "myproviderrs.h", "ccustomrowset", "customrs.h"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, wizard-generated files", "CMyProviderRowset class in MyProviderRS.H", "CCustomRowset class in CustomRS.H"]
 ms.assetid: 7ba1a124-3842-40eb-a36b-302190a1af3a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CCustomRowset (CustomRS.H)
 

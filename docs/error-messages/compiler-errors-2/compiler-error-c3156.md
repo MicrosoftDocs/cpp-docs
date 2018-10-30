@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3156 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3156"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3156"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3156"]
 ms.assetid: 1876da78-b94e-4af7-9795-28f72b209b3e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3156
 

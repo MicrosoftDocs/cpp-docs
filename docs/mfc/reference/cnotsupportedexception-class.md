@@ -1,16 +1,9 @@
 ---
-title: "CNotSupportedException Class | Microsoft Docs"
-ms.custom: ""
+title: "CNotSupportedException Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CNotSupportedException", "AFX/CNotSupportedException", "AFX/CNotSupportedException::CNotSupportedException"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CNotSupportedException [MFC], CNotSupportedException"]
 ms.assetid: e517391b-eb94-4c39-ae32-87b45bf7d624
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CNotSupportedException Class
 

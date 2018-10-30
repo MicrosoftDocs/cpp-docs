@@ -1,15 +1,8 @@
 ---
-title: "New Project From Existing Code Debug Setting (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "New Project From Existing Code Debug Setting (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.appwiz.importwiz.debugsettings"]
-dev_langs: ["C++"]
 ms.assetid: 607339a8-9d33-458b-8095-dc73f374e29d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Specify Debug Configuration Settings, Create New Project From Existing Code Files Wizard
 

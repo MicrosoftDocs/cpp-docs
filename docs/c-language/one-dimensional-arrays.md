@@ -1,15 +1,8 @@
 ---
-title: "One-Dimensional Arrays | Microsoft Docs"
-ms.custom: ""
+title: "One-Dimensional Arrays"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["brackets [ ]", "brackets [ ], arrays", "one-dimensional arrays", "arrays [C++], one-dimensional", "square brackets [ ]", "square brackets [ ], arrays", "subscript expressions"]
 ms.assetid: e28536e5-3b77-46b5-97fd-9b938c771816
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # One-Dimensional Arrays
 

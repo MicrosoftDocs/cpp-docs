@@ -1,16 +1,9 @@
 ---
-title: "TN059: Using MFC MBCS-Unicode Conversion Macros | Microsoft Docs"
-ms.custom: ""
+title: "TN059: Using MFC MBCS-Unicode Conversion Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.mbcs"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFCANS32.DLL", "Unicode [MFC], conversion macros", "Unicode [MFC], OLE interfaces", "conversion macros [MFC]", "converting Unicode", "MBCS [MFC], conversion macros", "macros [MFC], MBCS conversion macros", "TN059"]
 ms.assetid: a2aab748-94d0-4e2f-8447-3bd07112a705
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN059: Using MFC MBCS/Unicode Conversion Macros
 

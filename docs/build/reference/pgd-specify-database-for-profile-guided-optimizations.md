@@ -1,16 +1,9 @@
 ---
-title: "/PGD (Specify Database for Profile-Guided Optimizations) | Microsoft Docs"
-ms.custom: ""
+title: "/PGD (Specify Database for Profile-Guided Optimizations)"
 ms.date: "03/14/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.ProfileGuidedDatabase"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-PGD linker option", "/PGD linker option"]
 ms.assetid: 9f312498-493b-461f-886f-92652257e443
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /PGD (Specify Database for Profile-Guided Optimizations)
 

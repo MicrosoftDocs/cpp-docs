@@ -1,14 +1,7 @@
 ---
-title: "Summary of Expressions | Microsoft Docs"
-ms.custom: ""
+title: "Summary of Expressions"
 ms.date: "06/14/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: ed448953-687a-4b57-a1cb-12967bd770ea
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Summary of Expressions
 

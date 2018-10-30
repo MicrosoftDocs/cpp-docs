@@ -1,10 +1,7 @@
 ---
-title: "&lt;tuple&gt; functions | Microsoft Docs"
-ms.custom: ""
+title: "&lt;tuple&gt; functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["tuple/std::get", "tuple/std::make_tuple", "tuple/std::tie"]
-dev_langs: ["C++"]
 ms.assetid: bc6be38f-5258-4c14-b81b-63caa335fd44
 helpviewer_keywords: ["std::get [C++]", "std::make_tuple [C++]", "std::tie [C++]", "std::get [C++]", "std::make_tuple [C++]", "std::tie [C++]"]
 ---

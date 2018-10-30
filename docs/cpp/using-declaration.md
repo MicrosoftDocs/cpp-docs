@@ -1,15 +1,8 @@
 ---
-title: "using Declaration | Microsoft Docs"
-ms.custom: ""
+title: "using Declaration"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["using declaration", "declaring namespaces, unqualified names in namespaces", "declarations [C++], using-declaration", "namespaces [C++], unqualified names in", "using keyword [C++]", "declarations [C++], namespaces"]
 ms.assetid: 4184e2b1-3adc-408e-b5f3-0b3f8b554723
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # using Declaration
 

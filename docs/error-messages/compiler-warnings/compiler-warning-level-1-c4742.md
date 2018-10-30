@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (Level 1) C4742 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (Level 1) C4742"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4742"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4742"]
 ms.assetid: e520881d-1eeb-48b1-9df0-8017ee8ba076
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (Level 1) C4742
 

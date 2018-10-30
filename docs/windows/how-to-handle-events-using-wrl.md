@@ -1,14 +1,8 @@
 ---
-title: "How to: Handle Events Using WRL | Microsoft Docs"
-ms.custom: ""
+title: "How to: Handle Events Using WRL"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 1c77543f-7b0c-4a94-93bf-e3225885ed76
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Handle Events Using WRL
 

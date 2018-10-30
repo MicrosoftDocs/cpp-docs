@@ -1,16 +1,9 @@
 ---
-title: "CDatabase Class | Microsoft Docs"
-ms.custom: ""
+title: "CDatabase Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDatabase", "AFXDB/CDatabase", "AFXDB/CDatabase::CDatabase", "AFXDB/CDatabase::BeginTrans", "AFXDB/CDatabase::BindParameters", "AFXDB/CDatabase::Cancel", "AFXDB/CDatabase::CanTransact", "AFXDB/CDatabase::CanUpdate", "AFXDB/CDatabase::Close", "AFXDB/CDatabase::CommitTrans", "AFXDB/CDatabase::ExecuteSQL", "AFXDB/CDatabase::GetBookmarkPersistence", "AFXDB/CDatabase::GetConnect", "AFXDB/CDatabase::GetCursorCommitBehavior", "AFXDB/CDatabase::GetCursorRollbackBehavior", "AFXDB/CDatabase::GetDatabaseName", "AFXDB/CDatabase::IsOpen", "AFXDB/CDatabase::OnSetOptions", "AFXDB/CDatabase::Open", "AFXDB/CDatabase::OpenEx", "AFXDB/CDatabase::Rollback", "AFXDB/CDatabase::SetLoginTimeout", "AFXDB/CDatabase::SetQueryTimeout", "AFXDB/CDatabase::m_hdbc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDatabase [MFC], CDatabase", "CDatabase [MFC], BeginTrans", "CDatabase [MFC], BindParameters", "CDatabase [MFC], Cancel", "CDatabase [MFC], CanTransact", "CDatabase [MFC], CanUpdate", "CDatabase [MFC], Close", "CDatabase [MFC], CommitTrans", "CDatabase [MFC], ExecuteSQL", "CDatabase [MFC], GetBookmarkPersistence", "CDatabase [MFC], GetConnect", "CDatabase [MFC], GetCursorCommitBehavior", "CDatabase [MFC], GetCursorRollbackBehavior", "CDatabase [MFC], GetDatabaseName", "CDatabase [MFC], IsOpen", "CDatabase [MFC], OnSetOptions", "CDatabase [MFC], Open", "CDatabase [MFC], OpenEx", "CDatabase [MFC], Rollback", "CDatabase [MFC], SetLoginTimeout", "CDatabase [MFC], SetQueryTimeout", "CDatabase [MFC], m_hdbc"]
 ms.assetid: bd0de70a-e3c3-4441-bcaa-bbf434426ca8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDatabase Class
 

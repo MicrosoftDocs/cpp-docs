@@ -1,15 +1,8 @@
 ---
-title: "Argument-Dependent Name (Koenig) Lookup on Functions | Microsoft Docs"
-ms.custom: ""
+title: "Argument-Dependent Name (Koenig) Lookup on Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Koenig lookup", "argument-dependent lookup [C++]"]
 ms.assetid: c0928401-da2c-4658-942d-9ba4df149c35
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Argument-Dependent Name (Koenig) Lookup on Functions
 

@@ -1,19 +1,12 @@
 ---
-title: "_chdir, _wchdir | Microsoft Docs"
-ms.custom: ""
+title: "_chdir, _wchdir"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wchdir", "_chdir"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["tchdir", "_chdir", "_wchdir", "_tchdir", "wchdir"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_tchdir function", "_chdir function", "_wchdir function", "tchdir function", "wchdir function", "chdir function", "directories [C++], changing"]
 ms.assetid: 85e9393b-62ac-45d5-ab2a-fa2217f6152e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _chdir, _wchdir
 

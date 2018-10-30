@@ -1,14 +1,7 @@
 ---
-title: "A.1   Executing a Simple Loop in Parallel | Microsoft Docs"
-ms.custom: ""
+title: "A.1   Executing a Simple Loop in Parallel"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: b8aaacae-b20d-4b16-a540-54ccbf09582b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # A.1   Executing a Simple Loop in Parallel
 

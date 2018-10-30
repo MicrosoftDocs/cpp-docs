@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2503 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2503"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2503"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2503"]
 ms.assetid: da86cc89-fd04-400b-aa8d-a5ffaf7e3918
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2503
 

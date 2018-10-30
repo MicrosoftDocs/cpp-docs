@@ -1,16 +1,9 @@
 ---
-title: "__indword | Microsoft Docs"
-ms.custom: ""
+title: "__indword"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__indword_cpp", "__indword"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["in instruction", "__indword intrinsic"]
 ms.assetid: 1068d686-586e-4e36-b962-d1d7c3315260
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __indword
 

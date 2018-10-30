@@ -1,16 +1,10 @@
 ---
-title: "ML Nonfatal Error A2189 | Microsoft Docs"
-ms.custom: ""
+title: "ML Nonfatal Error A2189"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2189"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["A2189"]
 ms.assetid: 39649f39-57bc-4ceb-ab16-53f9b2a8d2d5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2189
 

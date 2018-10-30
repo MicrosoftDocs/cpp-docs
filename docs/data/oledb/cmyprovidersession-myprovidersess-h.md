@@ -1,16 +1,9 @@
 ---
-title: "CCustomSession (CustomSess.H) | Microsoft Docs"
-ms.custom: ""
+title: "CCustomSession (CustomSess.H)"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["cmyprovidersession", "myprovidersess.h", "ccustomsession", "customsess.h"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMyProviderSession class in MyProviderSess.H", "OLE DB providers, wizard-generated files", "CCustomSession class in CustomSess.H"]
 ms.assetid: d37ad471-cf05-49c5-aa47-cd10824d777f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CCustomSession (CustomSess.H)
 

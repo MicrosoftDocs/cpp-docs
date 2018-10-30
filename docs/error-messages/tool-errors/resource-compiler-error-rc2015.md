@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Error RC2015 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Error RC2015"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC2015"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC2015"]
 ms.assetid: 99691683-fb9e-4e61-beb1-12e484858570
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2015
 

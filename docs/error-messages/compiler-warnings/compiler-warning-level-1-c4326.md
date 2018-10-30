@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4326 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4326"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4326"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4326"]
 ms.assetid: d44d2c4e-9456-42d3-b35b-4ba4b2d42ec7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4326
 

@@ -1,16 +1,9 @@
 ---
-title: "Data Type Mappings | Microsoft Docs"
-ms.custom: ""
+title: "Data Type Mappings"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["_TXCHAR", "_TUCHAR", "_TINT", "_TSCHAR", "_TCHAR", "TCHAR::H", "TCHAR", "_T", "_TEXT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_TXCHAR type", "TINT type", "_TCHAR type", "TSCHAR type", "TEXT type", "TCHAR type", "TCHAR.H data types, mappings defined in", "generic-text data types", "_TINT type", "TUCHAR type", "TXCHAR type", "_TSCHAR type", "T type", "_TUCHAR type", "_TEXT type", "_T type"]
 ms.assetid: 4e573c05-8800-468b-ae5f-76ff7409835e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Data Type Mappings
 

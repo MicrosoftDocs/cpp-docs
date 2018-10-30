@@ -1,14 +1,7 @@
 ---
-title: "Desktop Applications (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "Desktop Applications (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: a020b534-293c-44e2-aa48-516c43ddeb8f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Desktop Applications (Visual C++)
 

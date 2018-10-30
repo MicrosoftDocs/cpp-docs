@@ -1,15 +1,8 @@
 ---
-title: "Troubleshooting Build Customizations | Microsoft Docs"
-ms.custom: ""
+title: "Troubleshooting Build Customizations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["build events [C++], troubleshooting", "builds [C++], build events", "troubleshooting [C++], builds", "build steps [C++], troubleshooting", "events [C++], build", "builds [C++], troubleshooting", "custom build steps [C++], troubleshooting"]
 ms.assetid: e4ceb177-fbee-4ed3-a7d7-80f0d78c1d07
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Troubleshooting Build Customizations
 

@@ -1,15 +1,8 @@
 ---
-title: "Creating Inline File Text | Microsoft Docs"
-ms.custom: ""
+title: "Creating Inline File Text"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["inline files, creating text", "NMAKE program, inline files", "text, inline file"]
 ms.assetid: b8a332ed-8244-4ff8-89e6-029d7f659725
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Creating Inline File Text
 

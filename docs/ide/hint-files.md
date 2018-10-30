@@ -1,16 +1,9 @@
 ---
-title: "Hint Files | Microsoft Docs"
-ms.custom: ""
+title: "Hint Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["cpp.hint", "vc.hint.file"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["stop file", "cpp.hint", "hint file", "cpp.stop", "Class View, hint file"]
 ms.assetid: 17194f66-cf62-4523-abec-77db0675ab65
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Hint Files
 

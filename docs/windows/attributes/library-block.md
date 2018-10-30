@@ -1,16 +1,9 @@
 ---
-title: "library_block (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "library_block (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.library_block"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["library_block attribute"]
 ms.assetid: ae7a7ebe-5e1a-4eda-a058-11bbd058ece8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # library_block
 

@@ -1,16 +1,9 @@
 ---
-title: "Add Resource Dialog Box (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Add Resource Dialog Box (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.insertresource"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["resources [C++], adding", "Add Resource dialog box [C++]"]
 ms.assetid: e9fb6967-738f-47e8-ab58-728cf35b3af0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Add Resource Dialog Box
 

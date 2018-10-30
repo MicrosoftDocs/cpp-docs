@@ -1,16 +1,10 @@
 ---
-title: "auto_handle::get | Microsoft Docs"
-ms.custom: ""
+title: "auto_handle::get"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["auto_handle::get", "msclr::auto_handle::get", "auto_handle.get", "msclr.auto_handle.get"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["auto_handle::get"]
 ms.assetid: 8c75727b-8f21-44b3-be3e-7eb8858da4f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_handle::get
 

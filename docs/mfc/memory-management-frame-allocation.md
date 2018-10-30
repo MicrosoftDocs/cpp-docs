@@ -1,15 +1,8 @@
 ---
-title: "Memory Management: Frame Allocation | Microsoft Docs"
-ms.custom: ""
+title: "Memory Management: Frame Allocation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["memory leaks [MFC], frame allocation", "memory [MFC], detecting leaks", "memory [MFC], reclaiming", "memory allocation [MFC], frames", "frame variables [MFC], automatic deletion of", "scope [MFC], frame variables", "heap allocation [MFC], vs. frame allocation", "variables [MFC], frame variables", "memory leaks [MFC], detecting", "memory, releasing [MFC]", "stack frames [MFC]", "memory leaks [MFC], allocating objects on the frame", "detecting memory leaks [MFC]", "frame allocation [MFC]", "frame variables [MFC]"]
 ms.assetid: 945a211a-6f4f-4679-bb6a-b0f2a0d4a6c1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Memory Management: Frame Allocation
 

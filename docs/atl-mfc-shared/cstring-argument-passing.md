@@ -1,15 +1,8 @@
 ---
-title: "CString Argument Passing | Microsoft Docs"
-ms.custom: ""
+title: "CString Argument Passing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["strings [C++], as function input/output", "argument passing [C++]", "arguments [C++], passing", "functions [C++], strings as input/output", "argument passing [C++], C strings", "passing arguments, C strings", "CString objects, passing arguments", "string arguments"]
 ms.assetid: a67bebff-edf1-4cf4-bbff-d1cc6a901099
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CString Argument Passing
 

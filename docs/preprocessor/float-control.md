@@ -1,16 +1,9 @@
 ---
-title: "float_control | Microsoft Docs"
-ms.custom: ""
+title: "float_control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["vc-pragma.float_control", "float_control_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["float_control pragma", "pragmas, float_control"]
 ms.assetid: 4f4ba5cf-3707-413e-927d-5ecdbc0a9a43
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # float_control
 

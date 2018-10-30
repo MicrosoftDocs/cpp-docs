@@ -1,19 +1,12 @@
 ---
-title: "_commit | Microsoft Docs"
-ms.custom: ""
+title: "_commit"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_commit"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_commit", "commit"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["files [C++], flushing", "flushing files to disk", "commit function", "_commit function", "committing files to disk"]
 ms.assetid: d0c74d3a-4f2d-4fb0-b140-2d687db3d233
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _commit
 

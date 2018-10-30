@@ -1,16 +1,9 @@
 ---
-title: "IDBPropertiesImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IDBPropertiesImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["IDBPropertiesImpl", "ATL.IDBPropertiesImpl", "ATL.IDBPropertiesImpl<T>", "ATL::IDBPropertiesImpl<T>", "ATL::IDBPropertiesImpl", "IDBPropertiesImpl::GetProperties", "IDBPropertiesImpl.GetProperties", "GetProperties", "IDBPropertiesImpl::GetPropertyInfo", "IDBPropertiesImpl.GetPropertyInfo", "GetPropertyInfo", "IDBPropertiesImpl.SetProperties", "SetProperties", "IDBPropertiesImpl::SetProperties"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IDBPropertiesImpl class", "GetProperties method", "GetPropertyInfo method", "SetProperties method"]
 ms.assetid: a7f15a8b-95b2-4316-b944-d5d03f8d74ab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBPropertiesImpl Class
 

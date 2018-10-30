@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3197 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3197"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3197"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3197"]
 ms.assetid: 4e385c3b-222e-425c-9612-46e83ed41650
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3197
 

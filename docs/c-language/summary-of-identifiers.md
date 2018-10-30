@@ -1,14 +1,7 @@
 ---
-title: "Summary of Identifiers | Microsoft Docs"
-ms.custom: ""
+title: "Summary of Identifiers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 2fe74b88-79e4-4e09-9d87-c258905ec31a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Summary of Identifiers
 

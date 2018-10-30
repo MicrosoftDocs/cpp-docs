@@ -1,15 +1,8 @@
 ---
-title: "Targets in Multiple Description Blocks | Microsoft Docs"
-ms.custom: ""
+title: "Targets in Multiple Description Blocks"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["description blocks", "blocks, multiple description", "multiple description blocks"]
 ms.assetid: 8618dcd9-c11d-4562-91a7-0c904ed438a8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Targets in Multiple Description Blocks
 

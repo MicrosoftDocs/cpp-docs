@@ -1,16 +1,9 @@
 ---
-title: "CSocket Class | Microsoft Docs"
-ms.custom: ""
+title: "CSocket Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CSocket", "AFXSOCK/CSocket", "AFXSOCK/CSocket::CSocket", "AFXSOCK/CSocket::Attach", "AFXSOCK/CSocket::CancelBlockingCall", "AFXSOCK/CSocket::Create", "AFXSOCK/CSocket::FromHandle", "AFXSOCK/CSocket::IsBlocking", "AFXSOCK/CSocket::OnMessagePending"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSocket [MFC], CSocket", "CSocket [MFC], Attach", "CSocket [MFC], CancelBlockingCall", "CSocket [MFC], Create", "CSocket [MFC], FromHandle", "CSocket [MFC], IsBlocking", "CSocket [MFC], OnMessagePending"]
 ms.assetid: 7f23c081-d24d-42e3-b511-8053ca53d729
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSocket Class
 

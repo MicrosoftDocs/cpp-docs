@@ -1,15 +1,8 @@
 ---
-title: "ATL Connection Point Example | Microsoft Docs"
-ms.custom: ""
+title: "ATL Connection Point Example"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["connection points [C++], examples", "examples [ATL]"]
 ms.assetid: a49721b7-f308-43de-8868-f662a94bc81a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Connection Point Example
 

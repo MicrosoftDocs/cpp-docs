@@ -1,16 +1,9 @@
 ---
-title: "OpenMP functions | Microsoft Docs"
-ms.custom: ""
+title: "OpenMP functions"
 ms.date: "10/23/2018"
-ms.technology: ["cpp-parallel"]
-ms.topic: "reference"
 f1_keywords: ["OpenMP functions", "omp_destroy_lock", "omp_destroy_nest_lock", "omp_get_dynamic", "omp_get_max_threads", "omp_get_nested", "omp_get_num_procs", "omp_get_num_threads", "omp_get_thread_num", "omp_get_wtick", "omp_get_wtime", "omp_in_parallel", "omp_init_lock", "omp_init_nest_lock", "omp_set_dynamic", "omp_set_lock", "omp_set_nest_lock", "omp_set_nested", "omp_set_num_threads", "omp_test_lock", "omp_test_nest_lock", "omp_unset_lock", "omp_unset_nest_lock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OpenMP functions", "omp_destroy_lock OpenMP function", "omp_destroy_nest_lock OpenMP function", "omp_get_dynamic OpenMP function", "omp_get_max_threads OpenMP function", "omp_get_nested OpenMP function", "omp_get_num_procs OpenMP function", "omp_get_num_threads OpenMP function", "omp_get_thread_num OpenMP function", "omp_get_wtick OpenMP function", "omp_get_wtime OpenMP function", "omp_in_parallel OpenMP function", "omp_init_lock OpenMP function", "omp_init_nest_lock OpenMP function", "omp_set_dynamic OpenMP function", "omp_set_lock OpenMP function", "omp_set_nest_lock OpenMP function", "omp_set_nested OpenMP function", "omp_set_num_threads OpenMP function", "omp_test_lock OpenMP function", "omp_test_nest_lock OpenMP function", "omp_unset_lock OpenMP function", "omp_unset_nest_lock OpenMP function"]
 ms.assetid: a55a2e5c-a260-44ee-bbd6-de7e2351b384
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OpenMP functions
 

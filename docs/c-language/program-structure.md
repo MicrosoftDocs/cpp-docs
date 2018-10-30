@@ -1,15 +1,8 @@
 ---
-title: "Program Structure | Microsoft Docs"
-ms.custom: ""
+title: "Program Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["program structure [C++], C", "programs [C++], structure", "C, program structure"]
 ms.assetid: b713b5a1-21a2-4e6f-9481-5f8594f1859e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Program Structure
 

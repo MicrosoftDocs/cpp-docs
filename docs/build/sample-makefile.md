@@ -1,14 +1,7 @@
 ---
-title: "Sample Makefile | Microsoft Docs"
-ms.custom: ""
+title: "Sample Makefile"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 8343ce71-5556-4ae0-8d1e-7efd82673070
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Sample Makefile
 

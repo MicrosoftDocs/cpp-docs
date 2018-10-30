@@ -1,16 +1,10 @@
 ---
-title: "EventTargetArray Class | Microsoft Docs"
-ms.custom: ""
+title: "EventTargetArray Class"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::Details::EventTargetArray", "event/Microsoft::WRL::Details::EventTargetArray::AddTail", "event/Microsoft::WRL::Details::EventTargetArray::Begin", "event/Microsoft::WRL::Details::EventTargetArray::End", "event/Microsoft::WRL::Details::EventTargetArray::EventTargetArray", "event/Microsoft::WRL::Details::EventTargetArray::Length", "event/Microsoft::WRL::Details::EventTargetArray::~EventTargetArray"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Details::EventTargetArray class", "Microsoft::WRL::Details::EventTargetArray::AddTail method", "Microsoft::WRL::Details::EventTargetArray::Begin method", "Microsoft::WRL::Details::EventTargetArray::End method", "Microsoft::WRL::Details::EventTargetArray::EventTargetArray, constructor", "Microsoft::WRL::Details::EventTargetArray::Length method", "Microsoft::WRL::Details::EventTargetArray::~EventTargetArray, destructor"]
 ms.assetid: e3cadb7c-2160-4cbb-a2f8-c28733d1e96d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # EventTargetArray Class
 

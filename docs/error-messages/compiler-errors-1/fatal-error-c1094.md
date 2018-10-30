@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1094 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1094"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1094"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1094"]
 ms.assetid: 9e1193b2-cb95-44f9-bf6f-019e0d41dd97
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1094
 

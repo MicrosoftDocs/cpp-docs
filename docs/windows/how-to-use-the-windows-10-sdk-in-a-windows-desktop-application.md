@@ -1,14 +1,8 @@
 ---
-title: "How to: Use the Windows 10 SDK in a Windows Desktop Application | Microsoft Docs"
+title: "How to: Use the Windows 10 SDK in a Windows Desktop Application"
 ms.custom: "get-started-article"
 ms.date: "07/12/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: eed6421e-9355-44a6-9582-3f1d453a6d44
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Use the Windows 10 SDK in a Windows Desktop Application
 

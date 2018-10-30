@@ -1,16 +1,9 @@
 ---
-title: "CAtlPreviewCtrlImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "CAtlPreviewCtrlImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAtlPreviewCtrlImpl", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::CAtlPreviewCtrlImpl", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::Create", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::Destroy", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::Focus", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::OnPaint", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::Redraw", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::SetHost", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::SetPreviewVisuals", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::SetRect", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::DoPaint", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::m_plf", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::m_clrBack", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::m_clrText"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlPreviewCtrlImpl class"]
 ms.assetid: 39b3299e-07e4-4abc-9b6e-b54bfa3b0802
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlPreviewCtrlImpl Class
 

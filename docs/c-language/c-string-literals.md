@@ -1,15 +1,8 @@
 ---
-title: "C String Literals | Microsoft Docs"
-ms.custom: ""
+title: "C String Literals"
 ms.date: "08/31/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["string literals, syntax", "strings [C++], string literals", "literal strings, C"]
 ms.assetid: 4b05523e-49a2-4900-b21a-754350af3328
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C String Literals
 

@@ -1,16 +1,9 @@
 ---
-title: "__clrcall | Microsoft Docs"
-ms.custom: ""
+title: "__clrcall"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__clrcall_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__clrcall keyword [C++]"]
 ms.assetid: 92096695-683a-40ed-bf65-0c8443572152
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __clrcall
 

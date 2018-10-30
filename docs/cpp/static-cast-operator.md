@@ -1,16 +1,9 @@
 ---
-title: "static_cast Operator | Microsoft Docs"
-ms.custom: ""
+title: "static_cast Operator"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["static_cast_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["static_cast keyword [C++]"]
 ms.assetid: 1f7c0c1c-b288-476c-89d6-0e2ceda5c293
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # static_cast Operator
 

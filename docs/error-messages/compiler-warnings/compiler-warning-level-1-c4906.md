@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4906 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4906"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4906"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4906"]
 ms.assetid: 05318e74-799b-412a-9dce-f02b8161d762
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4906
 

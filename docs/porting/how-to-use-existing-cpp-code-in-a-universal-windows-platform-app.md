@@ -1,14 +1,7 @@
 ---
-title: "How to: Use Existing C++ Code in a Universal Windows Platform App | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use Existing C++ Code in a Universal Windows Platform App"
 ms.date: "08/21/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 87e5818c-3081-42f3-a30d-3dca2cf0645c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Use Existing C++ Code in a Universal Windows Platform App
 

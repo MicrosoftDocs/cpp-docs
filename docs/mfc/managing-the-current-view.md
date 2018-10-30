@@ -1,15 +1,8 @@
 ---
-title: "Managing the Current View | Microsoft Docs"
-ms.custom: ""
+title: "Managing the Current View"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["views [MFC], and OnActivateView method [MFC]", "views [MFC], deactivating", "views [MFC], activating", "frame windows [MFC], current view", "OnActivateView method [MFC]", "views [MFC], current", "deactivating views [MFC]", "current view in frame window [MFC]"]
 ms.assetid: 0a1cc22d-d646-4536-9ad2-3cb6d7092e4a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Managing the Current View
 

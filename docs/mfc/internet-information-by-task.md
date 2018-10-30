@@ -1,15 +1,8 @@
 ---
-title: "Internet Information by Task | Microsoft Docs"
-ms.custom: ""
+title: "Internet Information by Task"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, Internet applications"]
 ms.assetid: da078bf5-53c3-4167-b1ef-509b5a544ad9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Internet Information by Task
 

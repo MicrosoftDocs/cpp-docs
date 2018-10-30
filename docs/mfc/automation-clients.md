@@ -1,15 +1,8 @@
 ---
-title: "Automation Clients | Microsoft Docs"
-ms.custom: ""
+title: "Automation Clients"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["clients, Automation", "Automation clients", "type libraries, Automation clients", "clients"]
 ms.assetid: 84e34a79-06f6-4752-a33b-ae0ede1d8ecf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Automation Clients
 

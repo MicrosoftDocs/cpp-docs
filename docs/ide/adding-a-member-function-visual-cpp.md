@@ -1,16 +1,9 @@
 ---
-title: "Adding a Member Function (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "Adding a Member Function (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.classes.member.function"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["member functions, adding to classes", "classes [C++], adding members"]
 ms.assetid: 55b25ddb-541d-44ed-957c-974ef91cfc85
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding a Member Function (Visual C++)
 

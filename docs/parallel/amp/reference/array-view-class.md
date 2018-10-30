@@ -1,16 +1,9 @@
 ---
-title: "array_view Class | Microsoft Docs"
-ms.custom: ""
+title: "array_view Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["array_view", "AMP/array_view", "AMP/Concurrency::array_view::array_view", "AMP/Concurrency::array_view::copy_to", "AMP/Concurrency::array_view::data", "AMP/Concurrency::array_view::discard_data", "AMP/Concurrency::array_view::get_extent", "AMP/Concurrency::array_view::get_ref", "AMP/Concurrency::array_view::get_source_accelerator_view", "AMP/Concurrency::array_view::refresh", "AMP/Concurrency::array_view::reinterpret_as", "AMP/Concurrency::array_view::section", "AMP/Concurrency::array_view::synchronize", "AMP/Concurrency::array_view::synchronize_async", "AMP/Concurrency::array_view::synchronize_to", "AMP/Concurrency::array_view::synchronize_to_async", "AMP/Concurrency::array_view::view_as", "AMP/Concurrency::array_view::rank", "AMP/Concurrency::array_view::extent", "AMP/Concurrency::array_view::source_accelerator_view", "AMP/Concurrency::array_view::value_type"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["array_view class"]
 ms.assetid: 7e7ec9bc-05a2-4372-b05d-752b50006c5a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # array_view Class
 

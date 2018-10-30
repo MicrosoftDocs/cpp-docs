@@ -1,16 +1,9 @@
 ---
-title: "bidirectional_iterator_tag Struct | Microsoft Docs"
-ms.custom: ""
+title: "bidirectional_iterator_tag Struct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xutility/std::bidirectional_iterator_tag"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["bidirectional_iterator_tag class", "bidirectional_iterator_tag struct"]
 ms.assetid: 9ac06066-b8ae-44b6-bee4-b05855f6a31a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # bidirectional_iterator_tag Struct
 

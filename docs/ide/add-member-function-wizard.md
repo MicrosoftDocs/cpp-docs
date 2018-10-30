@@ -1,16 +1,9 @@
 ---
-title: "Add Member Function Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Add Member Function Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.function.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Add Member Function Wizard [C++]"]
 ms.assetid: 13b6defc-faa6-4d57-83db-9dd854cbea3d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Add Member Function Wizard
 

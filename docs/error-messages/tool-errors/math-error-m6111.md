@@ -1,16 +1,9 @@
 ---
-title: "Math Error M6111 | Microsoft Docs"
-ms.custom: ""
+title: "Math Error M6111"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["M6111"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["M6111"]
 ms.assetid: c0fc13f8-33c8-4e3f-a440-126cc623441b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Math Error M6111
 

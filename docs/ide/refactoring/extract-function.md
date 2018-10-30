@@ -1,13 +1,7 @@
 ---
-title: "Extract Function | Microsoft Docs"
-ms.custom: ""
+title: "Extract Function"
 ms.date: "11/16/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 ms.assetid: e31d1249-9705-4511-acbd-9f6fe73bdf2d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 
 # Extract Function

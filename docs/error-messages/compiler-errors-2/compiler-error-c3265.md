@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3265 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3265"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3265"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3265"]
 ms.assetid: 10ab3e17-4a9f-4120-bab5-21473869b70f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3265
 

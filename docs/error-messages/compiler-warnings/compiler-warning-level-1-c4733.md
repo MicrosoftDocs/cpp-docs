@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (Level 1) C4733 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (Level 1) C4733"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4733"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4733"]
 ms.assetid: 7ef4f577-772d-4b66-a7bf-8958a6b250bc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (Level 1) C4733
 

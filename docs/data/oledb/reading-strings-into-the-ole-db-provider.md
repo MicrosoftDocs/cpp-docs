@@ -1,15 +1,8 @@
 ---
-title: "Reading Strings into the OLE DB Provider | Microsoft Docs"
-ms.custom: ""
+title: "Reading Strings into the OLE DB Provider"
 ms.date: "10/13/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, reading strings into"]
 ms.assetid: 517f322c-f37e-4eed-bf5e-dd9a412c2f98
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Reading Strings into the OLE DB Provider
 

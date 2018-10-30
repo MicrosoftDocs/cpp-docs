@@ -1,16 +1,10 @@
 ---
-title: "Platform::Collections::VectorIterator Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Collections::VectorIterator Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::VectorIterator::VectorIterator"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["VectorIterator Class"]
 ms.assetid: d531cb42-27e0-48a6-bf5e-c265891a18ff
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::VectorIterator Class
 

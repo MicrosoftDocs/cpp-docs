@@ -1,14 +1,7 @@
 ---
-title: "3.1 Execution Environment Functions | Microsoft Docs"
-ms.custom: ""
+title: "3.1 Execution Environment Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 7d3e6f47-ce01-4dab-946b-bccc220e2ddd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 3.1 Execution Environment Functions
 

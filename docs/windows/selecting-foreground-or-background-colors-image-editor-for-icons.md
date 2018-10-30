@@ -1,16 +1,9 @@
 ---
-title: "Selecting Foreground or Background Colors (Image Editor for Icons) | Microsoft Docs"
-ms.custom: ""
+title: "Selecting Foreground or Background Colors (Image Editor for Icons)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.image.color"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Image editor [C++], colors", "colors [C++], Image editor"]
 ms.assetid: 95b3673e-1f1f-40fe-9afd-da914a6d005f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Selecting Foreground or Background Colors (Image Editor for Icons)
 

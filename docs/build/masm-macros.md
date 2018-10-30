@@ -1,14 +1,7 @@
 ---
-title: "MASM Macros | Microsoft Docs"
-ms.custom: ""
+title: "MASM Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 21410432-72fc-4795-bc93-e78123f9f14f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # MASM Macros
 

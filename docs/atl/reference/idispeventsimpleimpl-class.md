@@ -1,16 +1,9 @@
 ---
-title: "IDispEventSimpleImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IDispEventSimpleImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IDispEventSimpleImpl", "ATLCOM/ATL::IDispEventSimpleImpl", "ATLCOM/ATL::IDispEventSimpleImpl::Advise", "ATLCOM/ATL::IDispEventSimpleImpl::DispEventAdvise", "ATLCOM/ATL::IDispEventSimpleImpl::DispEventUnadvise", "ATLCOM/ATL::IDispEventSimpleImpl::GetIDsOfNames", "ATLCOM/ATL::IDispEventSimpleImpl::GetTypeInfo", "ATLCOM/ATL::IDispEventSimpleImpl::GetTypeInfoCount", "ATLCOM/ATL::IDispEventSimpleImpl::Invoke", "ATLCOM/ATL::IDispEventSimpleImpl::Unadvise"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IDispEventSimpleImpl class"]
 ms.assetid: 971d82b7-a921-47fa-a4d8-909bed377ab0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IDispEventSimpleImpl Class
 

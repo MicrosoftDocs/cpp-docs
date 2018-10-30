@@ -1,15 +1,8 @@
 ---
-title: "C Abstract Declarators | Microsoft Docs"
-ms.custom: ""
+title: "C Abstract Declarators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["declarators, abstract", "abstract declarations"]
 ms.assetid: 6a556ad7-0555-421a-aa02-294d77cda8b5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Abstract Declarators
 

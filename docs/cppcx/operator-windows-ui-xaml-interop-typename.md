@@ -1,13 +1,7 @@
 ---
-title: "operator Windows::UI::Xaml::Interop::TypeName | Microsoft Docs"
-ms.custom: ""
+title: "operator Windows::UI::Xaml::Interop::TypeName"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: a65a105e-7e3a-452f-932f-2cdaf00fbba5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # operator Windows::UI::Xaml::Interop::TypeName
 

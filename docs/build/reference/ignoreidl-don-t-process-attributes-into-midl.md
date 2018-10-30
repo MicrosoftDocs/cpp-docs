@@ -1,16 +1,9 @@
 ---
-title: "-IGNOREIDL (Don&#39;t Process Attributes into MIDL) | Microsoft Docs"
-ms.custom: ""
+title: "/IGNOREIDL (Don&#39;t Process Attributes into MIDL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.IgnoreEmbeddedIDL", "/ignoreidl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IGNOREIDL linker option", "-IGNOREIDL linker option", "/IGNOREIDL linker option"]
 ms.assetid: 29514098-6a1c-4317-af2f-1dc268972780
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /IGNOREIDL (Don&#39;t Process Attributes into MIDL)
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3100 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3100"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3100"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3100"]
 ms.assetid: 7a9c9eaf-08ef-442d-94a0-e457beee8549
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3100
 

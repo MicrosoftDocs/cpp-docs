@@ -1,16 +1,9 @@
 ---
-title: "-DEBUG (Generate Debug Info) | Microsoft Docs"
-ms.custom: ""
+title: "/DEBUG (Generate Debug Info)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateDebugInformation", "/debug"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DEBUG linker option", "/DEBUG linker option", "-DEBUG linker option", "PDB files", "debugging [C++], debug information files", "generate debug info linker option", "pdb files, generating debug info", ".pdb files, generating debug info", "debugging [C++], linker option", "program databases [C++]"]
 ms.assetid: 1af389ae-3f8b-4d76-a087-1cdf861e9103
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /DEBUG (Generate Debug Info)
 

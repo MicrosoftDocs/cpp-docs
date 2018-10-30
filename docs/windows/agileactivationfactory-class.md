@@ -1,15 +1,9 @@
 ---
-title: "AgileActivationFactory Class | Microsoft Docs"
-ms.custom: ""
+title: "AgileActivationFactory Class"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::AgileActivationFactory"]
-dev_langs: ["C++"]
 ms.assetid: fab98f32-bb93-4c0f-badb-49fbddb194b0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # AgileActivationFactory Class
 

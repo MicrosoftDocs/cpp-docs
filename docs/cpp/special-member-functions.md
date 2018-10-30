@@ -1,15 +1,8 @@
 ---
-title: "Special member functions | Microsoft Docs"
-ms.custom: ""
+title: "Special member functions"
 ms.date: "12/06/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["special member functions [C++]", "constructors [C++]", "destructors [C++]", "copy operators [C++]", "move operators [C++]", "assignment operators [C++]"]
 ms.assetid: 017d6817-b012-44f0-b153-f3076c251ea7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Special member functions
 

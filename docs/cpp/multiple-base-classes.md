@@ -1,15 +1,8 @@
 ---
-title: "Multiple Base Classes | Microsoft Docs"
-ms.custom: ""
+title: "Multiple Base Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["base classes [C++], multiple", "derived classes [C++], multiple bases", "multiple inheritance, class declaration", "multiple base classes [C++]"]
 ms.assetid: a30c69fe-401c-4a87-96a0-e0da70c7c740
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Multiple Base Classes
 

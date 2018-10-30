@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4931 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4931"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4931"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4931"]
 ms.assetid: cfbf08c7-94e4-4a91-a691-479d1dbe527a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4931
 

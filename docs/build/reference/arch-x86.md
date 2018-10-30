@@ -1,14 +1,7 @@
 ---
-title: "-arch (x86) | Microsoft Docs"
-ms.custom: ""
+title: "/arch (x86)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 9dd5a75d-06e4-4674-aade-33228486078d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /arch (x86)
 

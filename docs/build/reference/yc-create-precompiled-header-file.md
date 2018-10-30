@@ -1,16 +1,9 @@
 ---
-title: "-Yc (Create Precompiled Header File) | Microsoft Docs"
-ms.custom: ""
+title: "/Yc (Create Precompiled Header File)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.UsePrecompiledHeader", "/yc", "VC.Project.VCCLWCECompilerTool.PrecompiledHeaderThrough", "VC.Project.VCCLWCECompilerTool.UsePrecompiledHeader", "VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["precompiled header files, creating", "PCH files, creating", ".pch files, creating", "-Yc compiler option [C++]", "/Yc compiler option [C++]", "Yc compiler option [C++]"]
 ms.assetid: 47c2e555-b4f5-46e6-906e-ab5cf21f0678
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Yc (Create Precompiled Header File)
 

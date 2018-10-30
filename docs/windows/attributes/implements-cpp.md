@@ -1,16 +1,9 @@
 ---
-title: "implements  (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "implements  (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.implements"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["implements attribute"]
 ms.assetid: 9cf0858b-cb7d-4d3c-81a6-97d87ed00d25
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # implements (C++)
 

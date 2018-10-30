@@ -1,14 +1,7 @@
 ---
-title: "Floating-point migration issues | Microsoft Docs"
-ms.custom: ""
+title: "Floating-point migration issues"
 ms.date: "05/17/2017"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 36a1b552-2f2b-4919-bc9d-c17f42434954
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Floating-point migration issues
 

@@ -1,14 +1,8 @@
 ---
-title: "concurrency namespace Operators | Microsoft Docs"
-ms.custom: ""
+title: "concurrency namespace Operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["concrt/concurrency::operator!=", "concrt/concurrency:[operator&amp;&amp"]
-dev_langs: ["C++"]
 ms.assetid: 8e373f23-fc8e-49f7-82e6-ba0c57b822f8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # concurrency namespace Operators
 

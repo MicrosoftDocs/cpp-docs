@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3077 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3077"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3077"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3077"]
 ms.assetid: d9f3c619-d1e2-4656-81a5-a35a9586a7d4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3077
 

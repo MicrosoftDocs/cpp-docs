@@ -1,15 +1,8 @@
 ---
-title: "How to: Send a Message at a Regular Interval | Microsoft Docs"
-ms.custom: ""
+title: "How to: Send a Message at a Regular Interval"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["timer class, example", "sending messages at regular intervals [Concurrency Runtime]"]
 ms.assetid: 4b60ea6c-97c8-4d69-9f7b-ad79f3548026
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Send a Message at a Regular Interval
 

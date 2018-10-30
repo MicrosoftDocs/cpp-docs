@@ -1,15 +1,8 @@
 ---
-title: "C++ Bit Fields | Microsoft Docs"
-ms.custom: ""
+title: "C++ Bit Fields"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["bitfields [C++]", "fields [C++], bit", "bit fields"]
 ms.assetid: 6f4b62e3-cc1d-4e5d-bf34-05904104f71a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C++ Bit Fields
 

@@ -1,16 +1,9 @@
 ---
-title: "idl_module (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "idl_module (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.idl_module"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["idl_module attribute"]
 ms.assetid: 3578b337-e38a-4334-b747-15404c02dbc0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # idl_module
 

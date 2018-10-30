@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2857 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2857"
 ms.date: "09/13/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2857"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2857"]
 ms.assetid: b57302bd-58ec-45ae-992a-1e282d5eeccc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2857
 

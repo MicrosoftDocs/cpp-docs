@@ -1,16 +1,9 @@
 ---
-title: "break Statement (C++) | Microsoft Docs"
-ms.custom: ""
+title: "break Statement (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["break_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["break keyword [C++]"]
 ms.assetid: 63739928-8985-4b05-93ce-016322e6da3d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # break Statement (C++)
 

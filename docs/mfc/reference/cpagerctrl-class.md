@@ -1,16 +1,9 @@
 ---
-title: "CPagerCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CPagerCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CPagerCtrl", "AFXCMN/CPagerCtrl", "AFXCMN/CPagerCtrl::CPagerCtrl", "AFXCMN/CPagerCtrl::Create", "AFXCMN/CPagerCtrl::CreateEx", "AFXCMN/CPagerCtrl::ForwardMouse", "AFXCMN/CPagerCtrl::GetBkColor", "AFXCMN/CPagerCtrl::GetBorder", "AFXCMN/CPagerCtrl::GetButtonSize", "AFXCMN/CPagerCtrl::GetButtonState", "AFXCMN/CPagerCtrl::GetDropTarget", "AFXCMN/CPagerCtrl::GetScrollPos", "AFXCMN/CPagerCtrl::IsButtonDepressed", "AFXCMN/CPagerCtrl::IsButtonGrayed", "AFXCMN/CPagerCtrl::IsButtonHot", "AFXCMN/CPagerCtrl::IsButtonInvisible", "AFXCMN/CPagerCtrl::IsButtonNormal", "AFXCMN/CPagerCtrl::RecalcSize", "AFXCMN/CPagerCtrl::SetBkColor", "AFXCMN/CPagerCtrl::SetBorder", "AFXCMN/CPagerCtrl::SetButtonSize", "AFXCMN/CPagerCtrl::SetChild", "AFXCMN/CPagerCtrl::SetScrollPos"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CPagerCtrl [MFC], CPagerCtrl", "CPagerCtrl [MFC], Create", "CPagerCtrl [MFC], CreateEx", "CPagerCtrl [MFC], ForwardMouse", "CPagerCtrl [MFC], GetBkColor", "CPagerCtrl [MFC], GetBorder", "CPagerCtrl [MFC], GetButtonSize", "CPagerCtrl [MFC], GetButtonState", "CPagerCtrl [MFC], GetDropTarget", "CPagerCtrl [MFC], GetScrollPos", "CPagerCtrl [MFC], IsButtonDepressed", "CPagerCtrl [MFC], IsButtonGrayed", "CPagerCtrl [MFC], IsButtonHot", "CPagerCtrl [MFC], IsButtonInvisible", "CPagerCtrl [MFC], IsButtonNormal", "CPagerCtrl [MFC], RecalcSize", "CPagerCtrl [MFC], SetBkColor", "CPagerCtrl [MFC], SetBorder", "CPagerCtrl [MFC], SetButtonSize", "CPagerCtrl [MFC], SetChild", "CPagerCtrl [MFC], SetScrollPos"]
 ms.assetid: 65ac58dd-4f5e-4b7e-b15c-e0d435a7e884
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPagerCtrl Class
 

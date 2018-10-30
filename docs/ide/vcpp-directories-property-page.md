@@ -1,16 +1,9 @@
 ---
-title: "VC++ Directories Property Page | Microsoft Docs"
-ms.custom: ""
+title: "VC++ Directories Property Page"
 ms.date: "10/09/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCDirectories.IncludePath", "VC.Project.VCDirectories.ReferencePath", "VC.Project.VCDirectories.SourcePath", "VC.Project.VCDirectories.LibraryWPath", "VC.Project.VCDirectories.ExecutablePath", "VC.Project.VCDirectories.LibraryPath", "VS.ToolsOptionsPages.Projects.VCDirectories", "VC.Project.VCDirectories.ExcludePath"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["VC++ Directories Property Page"]
 ms.assetid: 428eeef6-f127-4271-b3ea-0ae6f2c3d624
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # VC++ Directories Property Page (Windows)
 

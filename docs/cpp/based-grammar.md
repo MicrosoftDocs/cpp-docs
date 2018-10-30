@@ -1,15 +1,8 @@
 ---
-title: "__based Grammar | Microsoft Docs"
-ms.custom: ""
+title: "__based Grammar"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["based addressing"]
 ms.assetid: a68ff750-c7fa-4c0c-8d5f-2df76e4686c5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __based Grammar
 

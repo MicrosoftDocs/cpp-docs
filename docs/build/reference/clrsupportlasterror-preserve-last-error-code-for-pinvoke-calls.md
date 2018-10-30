@@ -1,16 +1,9 @@
 ---
-title: "-CLRSUPPORTLASTERROR (Preserve Last Error Code for PInvoke Calls) | Microsoft Docs"
-ms.custom: ""
+title: "/CLRSUPPORTLASTERROR (Preserve Last Error Code for PInvoke Calls)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/CLRSUPPORTLASTERROR"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/CLRSUPPORTLASTERROR linker option", "-CLRSUPPORTLASTERROR linker option"]
 ms.assetid: b7057990-4154-4b1d-9fc9-6236f7be7575
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /CLRSUPPORTLASTERROR (Preserve Last Error Code for PInvoke Calls)
 

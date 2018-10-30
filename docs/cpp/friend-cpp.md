@@ -1,16 +1,9 @@
 ---
-title: "friend (C++) | Microsoft Docs"
-ms.custom: ""
+title: "friend (C++)"
 ms.date: "07/02/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["friend_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["member access, from friend functions", "friend classes [C++]", "friend keyword [C++]"]
 ms.assetid: 8fe9ee55-d56f-40cd-9075-d9fb1375aff4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # friend (C++)
 

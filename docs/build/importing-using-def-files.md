@@ -1,15 +1,8 @@
 ---
-title: "Importing Using DEF Files | Microsoft Docs"
-ms.custom: ""
+title: "Importing Using DEF Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["importing DLLs [C++], DEF files", "def files [C++], importing with", ".def files [C++], importing with", "dllimport attribute [C++], DEF files", "DLLs [C++], DEF files"]
 ms.assetid: aefdbf50-f603-488a-b0d7-ed737bae311d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Importing Using DEF Files
 

@@ -1,16 +1,10 @@
 ---
-title: "ML Nonfatal Error A2063 | Microsoft Docs"
-ms.custom: ""
+title: "ML Nonfatal Error A2063"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2063"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["A2063"]
 ms.assetid: 12976b25-2159-4e0c-9df3-dcfac61091ee
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2063
 

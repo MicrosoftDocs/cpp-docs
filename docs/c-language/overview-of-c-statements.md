@@ -1,15 +1,8 @@
 ---
-title: "Overview of C Statements | Microsoft Docs"
-ms.custom: ""
+title: "Overview of C Statements"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["semicolon, in C statements", "statements, C", "semicolon", "statements, about statements", "Visual C, statements"]
 ms.assetid: 0d49837a-5399-4881-b60c-af5f4e9720de
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Overview of C Statements
 

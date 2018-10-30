@@ -1,15 +1,8 @@
 ---
-title: "Building C/C++ Isolated Applications and Side-by-side Assemblies | Microsoft Docs"
-ms.custom: ""
+title: "Building C/C++ Isolated Applications and Side-by-side Assemblies"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["isolated applications [C++]", "WinSxS [C++]", "native assembly cache [C++]", "builds [C++], isolated applications", "side-by-side applications [C++]", "builds [C++], side-by-side assemblies"]
 ms.assetid: 9465904e-76f7-48bd-bb3f-c55d8f1699b6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Building C/C++ Isolated Applications and Side-by-side Assemblies
 

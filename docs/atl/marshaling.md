@@ -1,15 +1,8 @@
 ---
-title: "Marshaling | Microsoft Docs"
-ms.custom: ""
+title: "Marshaling"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["marshaling, COM interop", "marshaling", "COM interfaces, marshaling"]
 ms.assetid: 40644b0a-1106-4fc8-9dfb-9bee9915d825
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Marshaling
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2011 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2011"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2011"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2011"]
 ms.assetid: 992c9d51-e850-4d53-b86b-02e73b38249c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2011
 

@@ -1,15 +1,8 @@
 ---
-title: "Changing List Control Styles | Microsoft Docs"
-ms.custom: ""
+title: "Changing List Control Styles"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["styles [MFC], CListCtrl", "CListCtrl class [MFC], styles", "CListCtrl class [MFC], changing styles"]
 ms.assetid: be74a005-0795-417c-9056-f6342aa74b26
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Changing List Control Styles
 

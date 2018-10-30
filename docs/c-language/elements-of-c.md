@@ -1,15 +1,8 @@
 ---
-title: "Elements of C | Microsoft Docs"
-ms.custom: ""
+title: "Elements of C"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["lexical conventions", "conventions, lexical"]
 ms.assetid: 20668a49-cab7-4153-a6d9-7439aac3ff3b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Elements of C
 

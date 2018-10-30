@@ -1,13 +1,7 @@
 ---
-title: "Static libraries (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Static libraries (C++/CX)"
 ms.date: "02/03/2017"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: 7faf53c8-fa21-42cc-8246-d32533ef9dfa
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Static libraries (C++/CX)
 

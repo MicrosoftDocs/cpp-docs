@@ -1,16 +1,10 @@
 ---
-title: "ptr::Attach | Microsoft Docs"
-ms.custom: ""
+title: "ptr::Attach"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["msclr::com::ptr::Attach", "ptr::Attach", "ptr.Attach", "msclr.com.ptr.Attach"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Attach method"]
 ms.assetid: 81d930de-cb2a-4c30-9bd6-94d65942c47a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # ptr::Attach
 

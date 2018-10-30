@@ -1,15 +1,8 @@
 ---
-title: "Turning off the Activate When Visible Option | Microsoft Docs"
-ms.custom: ""
+title: "Turning off the Activate When Visible Option"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], activate options", "Activate When Visible option [MFC]"]
 ms.assetid: 8f7ddc5a-a7a6-4da8-bcb9-1b569f0ecb48
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Turning off the Activate When Visible Option
 

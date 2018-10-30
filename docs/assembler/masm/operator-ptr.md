@@ -1,16 +1,9 @@
 ---
-title: "operator PTR | Microsoft Docs"
-ms.custom: ""
+title: "operator PTR"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["PTR", "operator PTR"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PTR operator", "operator PTR"]
 ms.assetid: df280f36-ca06-4578-b99d-0aa139b2b969
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator PTR
 

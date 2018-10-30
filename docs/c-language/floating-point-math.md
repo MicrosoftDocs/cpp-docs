@@ -1,14 +1,7 @@
 ---
-title: "Floating-Point Math | Microsoft Docs"
-ms.custom: ""
+title: "Floating-Point Math"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 1ff2f7e9-f29a-4822-9b05-4b4267e80ba3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Floating-Point Math
 

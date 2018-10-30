@@ -1,19 +1,12 @@
 ---
-title: "_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler | Microsoft Docs"
-ms.custom: ""
+title: "_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_set_invalid_parameter_handler", "_set_thread_local_invalid_parameter_handler"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["set_invalid_parameter_handler", "_set_invalid_parameter_handler", "_set_thread_local_invalid_parameter_handler"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["invalid parameter handler", "set_invalid_parameter_handler function", "_set_invalid_parameter_handler function", "_set_thread_local_invalid_parameter_handler function"]
 ms.assetid: c0e67934-1a41-4016-ad8e-972828f3ac11
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler
 

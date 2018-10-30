@@ -1,16 +1,9 @@
 ---
-title: "CWin32Heap Class | Microsoft Docs"
-ms.custom: ""
+title: "CWin32Heap Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CWin32Heap", "ATLMEM/ATL::CWin32Heap", "ATLMEM/ATL::CWin32Heap::CWin32Heap", "ATLMEM/ATL::CWin32Heap::Allocate", "ATLMEM/ATL::CWin32Heap::Attach", "ATLMEM/ATL::CWin32Heap::Detach", "ATLMEM/ATL::CWin32Heap::Free", "ATLMEM/ATL::CWin32Heap::GetSize", "ATLMEM/ATL::CWin32Heap::Reallocate", "ATLMEM/ATL::CWin32Heap::m_bOwnHeap", "ATLMEM/ATL::CWin32Heap::m_hHeap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CWin32Heap class"]
 ms.assetid: 69176022-ed98-4e3b-96d8-116b0c58ac95
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CWin32Heap Class
 

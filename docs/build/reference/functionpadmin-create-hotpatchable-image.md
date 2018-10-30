@@ -1,16 +1,9 @@
 ---
-title: "/FUNCTIONPADMIN (Create Hotpatchable Image) | Microsoft Docs"
-ms.custom: ""
+title: "/FUNCTIONPADMIN (Create Hotpatchable Image)"
 ms.date: "03/09/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/functionpadmin"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-FUNCTIONPADMIN linker option", "/FUNCTIONPADMIN linker option"]
 ms.assetid: 25b02c13-1add-4fbd-add9-fcb30eb2cae7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /FUNCTIONPADMIN (Create Hotpatchable Image)
 

@@ -1,15 +1,8 @@
 ---
-title: "Storing Strings in the OLE DB Provider | Microsoft Docs"
-ms.custom: ""
+title: "Storing Strings in the OLE DB Provider"
 ms.date: "10/26/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["user records, editing"]
 ms.assetid: 36cb9635-067c-4cad-8f85-962f28026f6a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Storing Strings in the OLE DB Provider
 

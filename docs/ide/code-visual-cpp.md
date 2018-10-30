@@ -1,16 +1,9 @@
 ---
-title: "&lt;code&gt; (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "&lt;code&gt; (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["code", "<code>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<code> C++ XML tag", "code C++ XML tag"]
 ms.assetid: 687db3f8-d435-4a90-b781-8da503fa39bc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # &lt;code&gt; (Visual C++)
 

@@ -1,15 +1,8 @@
 ---
-title: "Formatting Time Values: General-Purpose Classes | Microsoft Docs"
-ms.custom: ""
+title: "Formatting Time Values: General-Purpose Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["dates, calculating intervals", "elapsed time, string representation", "time [C++], formatting", "formatting [C++], time"]
 ms.assetid: 7fcfee24-f874-4a4d-95b3-adc19a0f2df0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Formatting Time Values: General-Purpose Classes
 

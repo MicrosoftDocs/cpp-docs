@@ -1,16 +1,9 @@
 ---
-title: "Using Replaceable Parameters (ATL Registrar) | Microsoft Docs"
-ms.custom: ""
+title: "Using Replaceable Parameters (ATL Registrar)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
 f1_keywords: ["AddReplacement", "ClearReplacements"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["%MODULE%"]
 ms.assetid: 0b376994-84a6-4967-8d97-8c01dfc94efe
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Replaceable Parameters (The Registrar&#39;s Preprocessor)
 

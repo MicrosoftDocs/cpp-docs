@@ -1,15 +1,8 @@
 ---
-title: "Binding Imports | Microsoft Docs"
-ms.custom: ""
+title: "Binding Imports"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["/DELAY:NOBIND linker option", "DELAY:NOBIND linker option"]
 ms.assetid: bb766038-deb1-41b1-bcbc-29a30e8c1e2a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Binding Imports
 

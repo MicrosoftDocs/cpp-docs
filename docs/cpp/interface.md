@@ -1,16 +1,9 @@
 ---
-title: "__interface | Microsoft Docs"
-ms.custom: ""
+title: "__interface"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__interface_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__interface keyword [C++]"]
 ms.assetid: ca5d400b-d6d8-4ba2-89af-73f67e5ec056
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __interface
 

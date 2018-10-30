@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1179 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1179"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1179"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1179"]
 ms.assetid: 4b1536d7-0d3d-4f29-a9c1-6fa5cf6cb665
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1179
 

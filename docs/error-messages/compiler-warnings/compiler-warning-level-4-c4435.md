@@ -1,14 +1,7 @@
 ---
-title: "Compiler Warning (level 4) C4435 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4435"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
-dev_langs: ["C++"]
 ms.assetid: a04524af-2b71-4ff9-9729-d9d1d1904ed7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4435
 

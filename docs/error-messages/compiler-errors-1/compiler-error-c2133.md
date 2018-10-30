@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2133 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2133"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2133"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2133"]
 ms.assetid: 8942f9e8-9818-468f-97db-09dbd124fcae
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2133
 

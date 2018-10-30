@@ -1,15 +1,8 @@
 ---
-title: "Tree Control Item Labels | Microsoft Docs"
-ms.custom: ""
+title: "Tree Control Item Labels"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["tree controls [MFC], item labels", "labels, CTreeCtrl items", "CTreeCtrl class [MFC], item labels", "item labels, tree controls", "item labels"]
 ms.assetid: fe834107-1a25-4280-aced-774c11565805
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Tree Control Item Labels
 

@@ -1,15 +1,8 @@
 ---
-title: "Default ATL Project Configurations | Microsoft Docs"
-ms.custom: ""
+title: "Default ATL Project Configurations"
 ms.date: "10/20/2017"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, default configurations"]
 ms.assetid: 7e272722-41af-4330-b965-a6d74ec16880
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Default ATL Project Configurations
 

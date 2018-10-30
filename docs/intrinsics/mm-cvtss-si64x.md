@@ -1,16 +1,9 @@
 ---
-title: "_mm_cvtss_si64x | Microsoft Docs"
-ms.custom: ""
+title: "_mm_cvtss_si64x"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_mm_cvtss_si64x"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cvtss2si intrinsic", "_mm_cvtss_si64x intrinsic"]
 ms.assetid: c279aff2-ee29-4271-8829-3ec691bf7718
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _mm_cvtss_si64x
 

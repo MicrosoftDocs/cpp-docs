@@ -1,19 +1,12 @@
 ---
-title: "_purecall | Microsoft Docs"
-ms.custom: ""
+title: "_purecall"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_purecall"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntoskrnl.exe", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["purecall", "_purecall"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_purecall function", "purecall function"]
 ms.assetid: 56135d9b-3403-4e22-822d-e714523801cc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _purecall
 

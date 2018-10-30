@@ -1,14 +1,7 @@
 ---
-title: "Prolog and Epilog | Microsoft Docs"
-ms.custom: ""
+title: "Prolog and Epilog"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 0453ed1a-3ff1-4bee-9cc2-d6d3d6384984
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Prolog and Epilog
 

@@ -1,15 +1,8 @@
 ---
-title: "Reusing Inline Files | Microsoft Docs"
-ms.custom: ""
+title: "Reusing Inline Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["inline files, reusing NMAKE", "revising inline files", "NMAKE program, inline files"]
 ms.assetid: d42dbffb-2cef-4ccb-9a1f-20b8ef81481c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Reusing Inline Files
 

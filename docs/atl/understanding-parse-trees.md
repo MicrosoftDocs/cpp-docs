@@ -1,15 +1,8 @@
 ---
-title: "ATL Registrar and Parse Trees | Microsoft Docs"
-ms.custom: ""
+title: "ATL Registrar and Parse Trees"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["parse trees"]
 ms.assetid: 668ce2dd-a1c3-4ca0-8135-b25267cb6a85
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Understanding Parse Trees
 

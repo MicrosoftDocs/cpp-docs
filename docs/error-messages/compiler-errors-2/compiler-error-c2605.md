@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2605 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2605"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2605"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2605"]
 ms.assetid: a0e6f132-5acf-4e19-b277-ddf196d182bf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2605
 

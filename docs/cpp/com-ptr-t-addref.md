@@ -1,16 +1,9 @@
 ---
-title: "_com_ptr_t::AddRef | Microsoft Docs"
-ms.custom: ""
+title: "_com_ptr_t::AddRef"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_ptr_t::AddRef"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["AddRef method [C++], interface pointers"]
 ms.assetid: c104dac3-aad3-40bb-a298-75c6cd0e63a2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_ptr_t::AddRef
 

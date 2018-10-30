@@ -1,14 +1,7 @@
 ---
-title: "2.7.2.1 private | Microsoft Docs"
-ms.custom: ""
+title: "2.7.2.1 private"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 079b4b84-f2b3-4050-a0ac-289493c36b3d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.7.2.1 private
 

@@ -1,16 +1,9 @@
 ---
-title: "-source-charset (Set Source Character Set) | Microsoft Docs"
-ms.custom: ""
+title: "/source-charset (Set Source Character Set)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["source-charset", "/source-charset"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/execution-charset compiler option"]
 ms.assetid: d3c5bf7f-526d-4ee4-acc5-c1a02a4fc481
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /source-charset (Set Source Character Set)
 

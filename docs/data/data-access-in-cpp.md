@@ -1,15 +1,8 @@
 ---
-title: "Data Access in Visual C++ | Microsoft Docs"
-ms.custom: ""
+title: "Data Access in Visual C++"
 ms.date: "03/28/2017"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, data access applications", "databases [C++]", "OLE DB [C++], data access technologies", "data [C++], data access technologies", "data access [C++], class libraries for databases"]
 ms.assetid: 95da6237-bbe2-480a-ae50-3a520051ceff
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 
 # Data Access in Visual C++

@@ -1,13 +1,8 @@
 ---
-title: "/Zf (Faster PDB generation) | Microsoft Docs"
+title: "/Zf (Faster PDB generation)"
 ms.date: "03/29/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Zf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/Zf", "-Zf"]
-author: "corob-msft"
-ms.author: "corob"
 ---
 # /Zf (Faster PDB generation)
 

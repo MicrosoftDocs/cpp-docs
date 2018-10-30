@@ -1,19 +1,12 @@
 ---
-title: "exp2, exp2f, exp2l | Microsoft Docs"
-ms.custom: ""
+title: "exp2, exp2f, exp2l"
 ms.date: "04/05/2018"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["exp2", "exp2f", "exp2l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["exp2", "math/exp2", "exp2f", "math/exp2f", "exp2l", "math/exp2l"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["exp2 function", "exp2f function", "exp2l function"]
 ms.assetid: 526e3e10-201a-4610-a886-533f44ece344
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # exp2, exp2f, exp2l
 

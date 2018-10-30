@@ -1,14 +1,7 @@
 ---
-title: "A.31   Thread-Safe Lock Functions | Microsoft Docs"
-ms.custom: ""
+title: "A.31   Thread-Safe Lock Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 3ad89eb8-076c-405a-be5e-88d3d707a832
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # A.31   Thread-Safe Lock Functions
 

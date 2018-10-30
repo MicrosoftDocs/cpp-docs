@@ -1,15 +1,8 @@
 ---
-title: "Building C/C++ Isolated Applications | Microsoft Docs"
-ms.custom: ""
+title: "Building C/C++ Isolated Applications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["isolated applications [C++]"]
 ms.assetid: 8a2fe4fa-0489-433e-bfc6-495844d8d73a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Building C/C++ Isolated Applications
 

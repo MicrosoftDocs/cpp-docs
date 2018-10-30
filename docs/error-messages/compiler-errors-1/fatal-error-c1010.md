@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1010 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1010"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1010"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1010"]
 ms.assetid: dfd035f1-a7a2-40bc-bc92-dc4d7f456767
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1010
 

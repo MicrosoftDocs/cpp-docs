@@ -1,16 +1,9 @@
 ---
-title: "CComboBoxEx Class | Microsoft Docs"
-ms.custom: ""
+title: "CComboBoxEx Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CComboBoxEx", "AFXCMN/CComboBoxEx", "AFXCMN/CComboBoxEx::CComboBoxEx", "AFXCMN/CComboBoxEx::Create", "AFXCMN/CComboBoxEx::CreateEx", "AFXCMN/CComboBoxEx::DeleteItem", "AFXCMN/CComboBoxEx::GetComboBoxCtrl", "AFXCMN/CComboBoxEx::GetEditCtrl", "AFXCMN/CComboBoxEx::GetExtendedStyle", "AFXCMN/CComboBoxEx::GetImageList", "AFXCMN/CComboBoxEx::GetItem", "AFXCMN/CComboBoxEx::HasEditChanged", "AFXCMN/CComboBoxEx::InsertItem", "AFXCMN/CComboBoxEx::SetExtendedStyle", "AFXCMN/CComboBoxEx::SetImageList", "AFXCMN/CComboBoxEx::SetItem", "AFXCMN/CComboBoxEx::SetWindowTheme"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComboBoxEx [MFC], CComboBoxEx", "CComboBoxEx [MFC], Create", "CComboBoxEx [MFC], CreateEx", "CComboBoxEx [MFC], DeleteItem", "CComboBoxEx [MFC], GetComboBoxCtrl", "CComboBoxEx [MFC], GetEditCtrl", "CComboBoxEx [MFC], GetExtendedStyle", "CComboBoxEx [MFC], GetImageList", "CComboBoxEx [MFC], GetItem", "CComboBoxEx [MFC], HasEditChanged", "CComboBoxEx [MFC], InsertItem", "CComboBoxEx [MFC], SetExtendedStyle", "CComboBoxEx [MFC], SetImageList", "CComboBoxEx [MFC], SetItem", "CComboBoxEx [MFC], SetWindowTheme"]
 ms.assetid: 33ca960a-2409-478c-84a4-a2ee8ecfe8f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComboBoxEx Class
 

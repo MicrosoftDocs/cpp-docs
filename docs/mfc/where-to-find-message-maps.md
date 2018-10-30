@@ -1,15 +1,8 @@
 ---
-title: "Where to Find Message Maps | Microsoft Docs"
-ms.custom: ""
+title: "Where to Find Message Maps"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["macros, message map", "locating message maps", "message classes [MFC], finding", "message-map macros"]
 ms.assetid: bf59fbc8-b222-42d3-b5d3-0a79aa3cb923
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Where to Find Message Maps
 

@@ -1,16 +1,9 @@
 ---
-title: "CComCritSecLock Class | Microsoft Docs"
-ms.custom: ""
+title: "CComCritSecLock Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComCritSecLock", "ATLBASE/ATL::CComCritSecLock", "ATLBASE/ATL::CComCritSecLock::CComCritSecLock", "ATLBASE/ATL::CComCritSecLock::Lock", "ATLBASE/ATL::CComCritSecLock::Unlock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComCritSecLock class"]
 ms.assetid: 223152a1-86c3-4ef9-89a7-f455fe791b0e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComCritSecLock Class
 

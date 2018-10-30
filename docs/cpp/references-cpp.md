@@ -1,15 +1,8 @@
 ---
-title: "References (C++) | Microsoft Docs"
-ms.custom: ""
+title: "References (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["objects [C++], referencing", "references [C++]", "references, to pointers", "declarations, references", "references, declaring", "referencing objects, declarator syntax"]
 ms.assetid: 68156f7f-97a0-4b66-b26d-b25ade5e3bd8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # References (C++)
 

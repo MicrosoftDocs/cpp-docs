@@ -1,16 +1,9 @@
 ---
-title: "ICommandImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "ICommandImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-f1_keywords: ["ICommandImpl", "ICommandImpl::Cancel", "Cancel", "ICommandImpl.Cancel", "ICommandImpl::CancelExecution", "ATL::ICommandImpl::CancelExecution", "ATL.ICommandImpl.CancelExecution", "CancelExecution", "ICommandImpl.CancelExecution", "ICommandImpl::CreateRowset", "ICommandImpl.CreateRowset", "CreateRowset", "ICommandImpl::Execute", "ICommandImpl.Execute", "ICommandImpl::GetDBSession", "GetDBSession", "ICommandImpl.GetDBSession", "ATL.ICommandImpl.ICommandImpl", "ATL::ICommandImpl::ICommandImpl", "ICommandImpl", "ICommandImpl::ICommandImpl", "ICommandImpl.ICommandImpl", "ICommandImpl::m_bCancel", "ICommandImpl.m_bCancel", "m_bCancel", "ATL::ICommandImpl::m_bCancel", "ATL.ICommandImpl.m_bCancel", "ICommandImpl::m_bCancelWhenExecuting", "ICommandImpl.m_bCancelWhenExecuting",                                     "ATL::ICommandImpl::m_bCancelWhenExecuting", "m_bCancelWhenExecuting", "ATL.ICommandImpl.m_bCancelWhenExecuting", "ICommandImpl.m_bIsExecuting", "ATL::ICommandImpl::m_bIsExecuting", "m_bIsExecuting", "ATL.ICommandImpl.m_bIsExecuting", "ICommandImpl::m_bIsExecuting"]
-dev_langs: ["C++"]
+f1_keywords: ["ICommandImpl", "ICommandImpl::Cancel", "Cancel", "ICommandImpl.Cancel", "ICommandImpl::CancelExecution", "ATL::ICommandImpl::CancelExecution", "ATL.ICommandImpl.CancelExecution", "CancelExecution", "ICommandImpl.CancelExecution", "ICommandImpl::CreateRowset", "ICommandImpl.CreateRowset", "CreateRowset", "ICommandImpl::Execute", "ICommandImpl.Execute", "ICommandImpl::GetDBSession", "GetDBSession", "ICommandImpl.GetDBSession", "ATL.ICommandImpl.ICommandImpl", "ATL::ICommandImpl::ICommandImpl", "ICommandImpl", "ICommandImpl::ICommandImpl", "ICommandImpl.ICommandImpl", "ICommandImpl::m_bCancel", "ICommandImpl.m_bCancel", "m_bCancel", "ATL::ICommandImpl::m_bCancel", "ATL.ICommandImpl.m_bCancel", "ICommandImpl::m_bCancelWhenExecuting", "ICommandImpl.m_bCancelWhenExecuting", "ATL::ICommandImpl::m_bCancelWhenExecuting", "m_bCancelWhenExecuting", "ATL.ICommandImpl.m_bCancelWhenExecuting", "ICommandImpl.m_bIsExecuting", "ATL::ICommandImpl::m_bIsExecuting", "m_bIsExecuting", "ATL.ICommandImpl.m_bIsExecuting", "ICommandImpl::m_bIsExecuting"]
 helpviewer_keywords: ["ICommandImpl class", "Cancel method", "CancelExecution method", "CreateRowset method", "Execute method", "GetDBSession method", "ICommandImpl constructor", "ICommandImpl class, constructor", "m_bCancel", "m_bCancelWhenExecuting", "m_bIsExecuting"]
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandImpl Class
 

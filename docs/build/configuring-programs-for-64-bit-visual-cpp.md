@@ -1,15 +1,8 @@
 ---
-title: "Configure Visual C++ for 64-bit, x64 targets | Microsoft Docs"
-ms.custom: ""
+title: "Configure Visual C++ for 64-bit, x64 targets"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["64-bit compiler [C++], options", "64-bit compiler [C++]", "64-bit programming [C++], about 64-bit programming", "programming [C++], 64-bit", "Visual C++, 64-bit hardware"]
 ms.assetid: cb99f72b-8c74-48f4-846a-8921b37b97e9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Configure Visual C++ for 64-bit, x64 targets
 

@@ -1,15 +1,8 @@
 ---
-title: "Last Character in a String | Microsoft Docs"
-ms.custom: ""
+title: "Last Character in a String"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["last character in string", "MBCS [C++], last character in string"]
 ms.assetid: 0a180376-4e55-41e8-9c64-539c7b6d8047
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Last Character in a String
 

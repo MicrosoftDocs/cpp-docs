@@ -1,19 +1,12 @@
 ---
-title: "localtime_s, _localtime32_s, _localtime64_s | Microsoft Docs"
-ms.custom: ""
+title: "localtime_s, _localtime32_s, _localtime64_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_localtime64_s", "_localtime32_s", "localtime_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_localtime32_s", "localtime32_s", "localtime_s", "localtime64_s", "_localtime64_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_localtime64_s function", "localtime32_s function", "_localtime32_s function", "localtime64_s function", "time, converting values", "localtime_s function"]
 ms.assetid: 842d1dc7-d6f8-41d3-b340-108d4b90df54
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # localtime_s, _localtime32_s, _localtime64_s
 

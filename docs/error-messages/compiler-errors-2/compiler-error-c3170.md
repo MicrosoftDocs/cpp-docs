@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3170 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3170"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3170"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3170"]
 ms.assetid: ca9a59d6-7df3-42f0-b028-c09d0af3ac2a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3170
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3206 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3206"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3206"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3206"]
 ms.assetid: d62995b5-e349-4418-bbe8-8a5e776ca7b0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3206
 

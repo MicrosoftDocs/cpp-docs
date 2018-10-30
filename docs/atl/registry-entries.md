@@ -1,15 +1,8 @@
 ---
-title: "Registry Entries (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Registry Entries (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["registry, ATL services entries", "registry, application IDs"]
 ms.assetid: 881989b7-61bb-459a-a13e-3bfcb33e184e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Registry Entries
 

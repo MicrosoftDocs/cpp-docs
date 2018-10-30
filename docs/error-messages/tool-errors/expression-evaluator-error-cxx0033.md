@@ -1,16 +1,9 @@
 ---
-title: "Expression Evaluator Error CXX0033 | Microsoft Docs"
-ms.custom: ""
+title: "Expression Evaluator Error CXX0033"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["CXX0033"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAN0033", "CXX0033"]
 ms.assetid: 0bd62c5b-de89-481f-9b12-88fe84805afe
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0033
 

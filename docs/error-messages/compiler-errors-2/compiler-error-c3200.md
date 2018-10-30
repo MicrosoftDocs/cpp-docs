@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3200 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3200"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3200"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3200"]
 ms.assetid: 44bb5e77-f0ec-421c-a732-b9ee7c0a3529
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3200
 

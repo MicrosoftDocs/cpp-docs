@@ -1,15 +1,8 @@
 ---
-title: "C Additive Operators | Microsoft Docs"
-ms.custom: ""
+title: "C Additive Operators"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["usual arithmetic conversions", "operators [C], addition", "+ operator, additive operators", "additive operators", "arithmetic operators [C++], additive operators"]
 ms.assetid: bb8ac205-b061-41fc-8dd4-dab87c8b900c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Additive Operators
 

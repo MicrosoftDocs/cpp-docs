@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3825 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3825"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3825"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3825"]
 ms.assetid: 18e204a1-f26e-42c6-8d74-2b49cc95f940
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3825
 

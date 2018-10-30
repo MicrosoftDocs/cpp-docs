@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1302 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1302"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1302"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1302"]
 ms.assetid: aea3c753-c2c4-4249-bbc3-f2d4f0164b5e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1302
 

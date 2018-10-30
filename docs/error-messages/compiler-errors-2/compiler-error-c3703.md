@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3703 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3703"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3703"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3703"]
 ms.assetid: 7e3677d9-f2be-4c26-998f-423564e9023c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3703
 

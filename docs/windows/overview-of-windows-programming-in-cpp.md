@@ -1,14 +1,7 @@
 ---
-title: "Overview of Windows Programming in C++ | Microsoft Docs"
-ms.custom: ""
+title: "Overview of Windows Programming in C++"
 ms.date: "04/06/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Overview of Windows Programming in C++
 

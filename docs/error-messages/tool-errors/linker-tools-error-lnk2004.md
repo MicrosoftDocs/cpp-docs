@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK2004 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK2004"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK2004"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK2004"]
 ms.assetid: 07645371-e67b-4a2c-b0e0-dde24c94ef7e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK2004
 

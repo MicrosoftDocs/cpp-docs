@@ -1,15 +1,8 @@
 ---
-title: "Redistributing the MFC Library | Microsoft Docs"
-ms.custom: ""
+title: "Redistributing the MFC Library"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, redistributing", "redistributing MFC library"]
 ms.assetid: 72714ce1-385e-4c1c-afa5-96b03e873866
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Redistributing the MFC Library
 

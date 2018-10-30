@@ -1,16 +1,9 @@
 ---
-title: "operator ZERO? | Microsoft Docs"
-ms.custom: ""
+title: "operator ZERO?"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["operator ZERO?", "ZERO?"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ZERO? operator", "operator ZERO?"]
 ms.assetid: c7629c0b-3254-4f50-9bd6-31be762eb03b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator ZERO?
 

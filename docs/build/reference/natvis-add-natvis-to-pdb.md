@@ -1,15 +1,9 @@
 ---
-title: "-NATVIS (Add Natvis to PDB) | Microsoft Docs"
+title: "/NATVIS (Add Natvis to PDB)"
 ms.date: "08/10/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/natvis", "VC.Project.VCLinkerTool.ImportLIbrary"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["NATVIS linker option", "/NATVIS linker option", "-NATVIS linker option", "Add Natvis file to PDB"]
 ms.assetid: 8747fc0c-701a-4796-bb4d-818ab4465cca
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /NATVIS (Add Natvis to PDB)
 

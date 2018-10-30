@@ -1,16 +1,9 @@
 ---
-title: "OPTION (MASM) | Microsoft Docs"
-ms.custom: ""
+title: "OPTION (MASM)"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["option"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OPTION directive"]
 ms.assetid: 8e10dabd-e36f-4586-ab01-ada96736b0bd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # OPTION (MASM)
 

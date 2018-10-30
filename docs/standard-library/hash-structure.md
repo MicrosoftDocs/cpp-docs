@@ -1,15 +1,8 @@
 ---
-title: "hash Structure | Microsoft Docs"
-ms.custom: ""
+title: "hash Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["typeindex/std::hash"]
-dev_langs: ["C++"]
 ms.assetid: e5a41202-ef3b-45d0-b3a7-4c2dbdc0487a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # hash Structure
 

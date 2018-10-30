@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2488 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2488"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2488"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2488"]
 ms.assetid: cd435909-43e4-43c6-a57c-5d02468ef75f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2488
 

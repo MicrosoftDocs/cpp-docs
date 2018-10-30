@@ -1,15 +1,8 @@
 ---
-title: "Referencing a Property in Your Provider | Microsoft Docs"
-ms.custom: ""
+title: "Referencing a Property in Your Provider"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, properties", "references, to properties in providers", "referencing properties in providers"]
 ms.assetid: bfbb3851-5eed-467a-a179-4a97a9515525
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Referencing a Property in Your Provider
 

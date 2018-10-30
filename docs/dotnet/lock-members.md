@@ -1,14 +1,8 @@
 ---
-title: "lock Members | Microsoft Docs"
-ms.custom: ""
+title: "lock Members"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 33413b81-3ae8-4544-99c8-27a7364e7e05
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # lock Members
 

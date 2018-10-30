@@ -1,15 +1,8 @@
 ---
-title: "Active Document Servers | Microsoft Docs"
-ms.custom: ""
+title: "Active Document Servers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["active documents [MFC], servers", "servers [MFC], active document", "active document servers [MFC]"]
 ms.assetid: 131fec1e-02a0-4305-a7ab-903b911232a7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Active Document Servers
 

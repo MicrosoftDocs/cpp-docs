@@ -1,15 +1,8 @@
 ---
-title: "Macro Substitution | Microsoft Docs"
-ms.custom: ""
+title: "Macro Substitution"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["NMAKE program, macro substitution", "macros, NMAKE", "substitution macros in NMAKE"]
 ms.assetid: 47465cfe-fd92-49db-aebe-7c2d7ecceb73
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Macro Substitution
 

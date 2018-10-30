@@ -1,15 +1,8 @@
 ---
-title: "Processing Header-Control Notifications | Microsoft Docs"
-ms.custom: ""
+title: "Processing Header-Control Notifications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CHeaderCtrl class [MFC], processing notifications", "controls [MFC], header", "notifications [MFC], processing for CHeaderCtrl", "header controls [MFC], processing notifications", "header control notifications"]
 ms.assetid: e6c6af7c-d458-4d33-85aa-48014ccde5f6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Processing Header-Control Notifications
 

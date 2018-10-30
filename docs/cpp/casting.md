@@ -1,15 +1,8 @@
 ---
-title: "Casting | Microsoft Docs"
-ms.custom: ""
+title: "Casting"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["casting [C++]", "coercion [C++]", "virtual functions [C++], in derived classes [C++]", "static cast operator", "dynamic cast operator", "polymorphic classes [C++]", "classes [C++], polymorphism"]
 ms.assetid: 3dbeb06e-2f4b-4693-832d-624bc8ec95de
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Casting
 

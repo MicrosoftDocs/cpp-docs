@@ -1,15 +1,8 @@
 ---
-title: "Servers: Implementing In-Place Frame Windows | Microsoft Docs"
-ms.custom: ""
+title: "Servers: Implementing In-Place Frame Windows"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["frame windows [MFC], implementing", "OLE server applications [MFC], frame windows", "servers, in-place frame windows", "frame windows [MFC], in-place", "in-place frame windows"]
 ms.assetid: 09bde4d8-15e2-4fba-8d14-9b954d926b92
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Servers: Implementing In-Place Frame Windows
 

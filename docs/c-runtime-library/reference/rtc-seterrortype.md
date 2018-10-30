@@ -1,19 +1,12 @@
 ---
-title: "_RTC_SetErrorType | Microsoft Docs"
-ms.custom: ""
+title: "_RTC_SetErrorType"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_RTC_SetErrorType"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["RTC_SetErrorType", "_RTC_SetErrorType"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["run-time errors", "RTC_SetErrorType function", "_RTC_SetErrorType function"]
 ms.assetid: f5f99be7-d357-4b11-b8f5-ddd3428f2b06
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _RTC_SetErrorType
 

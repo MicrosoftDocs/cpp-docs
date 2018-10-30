@@ -1,15 +1,8 @@
 ---
-title: "Recommendations for Choosing a Collection Class | Microsoft Docs"
-ms.custom: ""
+title: "Recommendations for Choosing a Collection Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["type safety of collection classes [MFC]", "collection classes [MFC], serialization", "collection classes [MFC], speed", "collection classes [MFC], type safety", "collection classes [MFC], choosing", "collection classes [MFC], functionality", "shapes, collection", "collection classes [MFC], template-based", "MFC collection classes [MFC], characteristics", "collection classes [MFC], about collection classes [MFC]", "serialization [MFC], collection classes", "collection classes [MFC], duplicates allowed", "collection classes [MFC], shapes"]
 ms.assetid: a82188cd-443f-40d8-a244-edf292a53db4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Recommendations for Choosing a Collection Class
 

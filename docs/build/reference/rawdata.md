@@ -1,16 +1,9 @@
 ---
-title: "-RAWDATA | Microsoft Docs"
-ms.custom: ""
+title: "/RAWDATA"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/rawdata"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RAWDATA dumpbin option", "raw data", "-RAWDATA dumpbin option", "/RAWDATA dumpbin option"]
 ms.assetid: 41cba845-5e1f-415e-9fe4-604a52235983
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /RAWDATA
 

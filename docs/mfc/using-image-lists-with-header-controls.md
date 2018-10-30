@@ -1,15 +1,8 @@
 ---
-title: "Using Image Lists with Header Controls | Microsoft Docs"
-ms.custom: ""
+title: "Using Image Lists with Header Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["header controls [MFC], image lists", "CHeaderCtrl class [MFC], image lists", "image lists [MFC], header controls"]
 ms.assetid: d5e9b310-6278-406c-909c-eefa09549a47
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Image Lists with Header Controls
 

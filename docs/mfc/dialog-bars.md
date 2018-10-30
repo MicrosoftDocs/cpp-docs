@@ -1,15 +1,8 @@
 ---
-title: "Dialog Bars | Microsoft Docs"
-ms.custom: ""
+title: "Dialog Bars"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, control bars", "CDialogBar class [MFC], dialog bars", "control bars [MFC], dialog bars", "dialog bars", "dialog bars [MFC], about dialog bars"]
 ms.assetid: 485c8055-6bb0-4051-8417-dd2971499321
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dialog Bars
 

@@ -1,16 +1,9 @@
 ---
-title: "CAtlModuleT Class | Microsoft Docs"
-ms.custom: ""
+title: "CAtlModuleT Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAtlModuleT", "ATLBASE/ATL::CAtlModuleT", "ATLBASE/ATL::CAtlModuleT::CAtlModuleT", "ATLBASE/ATL::CAtlModuleT::InitLibId", "ATLBASE/ATL::CAtlModuleT::RegisterAppId", "ATLBASE/ATL::CAtlModuleT::RegisterServer", "ATLBASE/ATL::CAtlModuleT::UnregisterAppId", "ATLBASE/ATL::CAtlModuleT::UnregisterServer", "ATLBASE/ATL::CAtlModuleT::UpdateRegistryAppId"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlModuleT class"]
 ms.assetid: 9b74d02f-9117-47b1-a05e-c5945f83dd2b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlModuleT Class
 

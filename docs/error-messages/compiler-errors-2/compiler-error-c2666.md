@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2666 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2666"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2666"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2666"]
 ms.assetid: 78364d15-c6eb-439a-9088-e04a0176692b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2666
 

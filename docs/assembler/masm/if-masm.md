@@ -1,16 +1,9 @@
 ---
-title: "IF (MASM) | Microsoft Docs"
-ms.custom: ""
+title: "IF (MASM)"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["if"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IF directive"]
 ms.assetid: 82e43712-4f0c-4bf6-90ce-0663e81af707
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # IF (MASM)
 

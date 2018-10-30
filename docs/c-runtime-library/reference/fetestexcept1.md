@@ -1,19 +1,12 @@
 ---
-title: "fetestexcept | Microsoft Docs"
-ms.custom: ""
+title: "fetestexcept"
 ms.date: "04/05/2018"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["fetestexcept"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["fetestexcept", "fenv/fetestexcept"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["fetestexept function"]
 ms.assetid: ca4dc43f-5573-440d-bc19-ead7571b13dc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fetestexcept
 

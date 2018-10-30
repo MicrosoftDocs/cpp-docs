@@ -1,14 +1,7 @@
 ---
-title: "2.6.6 ordered Construct | Microsoft Docs"
-ms.custom: ""
+title: "2.6.6 ordered Construct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 5b3c1ba5-cfb8-4b05-865b-f446ae1c9f7c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.6.6 ordered Construct
 

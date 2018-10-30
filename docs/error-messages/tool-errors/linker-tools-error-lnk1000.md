@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1000 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1000"
 ms.date: "06/18/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1000"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1000"]
 ms.assetid: 86421b9a-460a-4285-8dce-9b8257d78122
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1000
 

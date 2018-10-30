@@ -1,15 +1,8 @@
 ---
-title: "MASM Expressions in Inline Assembly | Microsoft Docs"
-ms.custom: ""
+title: "MASM Expressions in Inline Assembly"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["expressions [C++], MASM", "expressions [C++], inline assembly", "inline assembly, MASM expressions", "MASM (Microsoft Macro Assembler), expressions"]
 ms.assetid: c80e89e6-1084-4654-bb14-68c5f6ef2840
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # MASM Expressions in Inline Assembly
 

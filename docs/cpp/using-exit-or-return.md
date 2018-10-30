@@ -1,16 +1,9 @@
 ---
-title: "Using exit or return | Microsoft Docs"
-ms.custom: ""
+title: "Using exit or return"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["Exit"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["exit function", "return keyword [C++], using for program termination"]
 ms.assetid: b5136c5c-2505-4229-8691-2a1d6a98760b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using exit or return
 

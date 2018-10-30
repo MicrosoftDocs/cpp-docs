@@ -1,15 +1,8 @@
 ---
-title: "ODBC Classes and Threads | Microsoft Docs"
-ms.custom: ""
+title: "ODBC Classes and Threads"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC classes, and threads", "ODBC, multithreaded applications", "threading [MFC], ODBC support"]
 ms.assetid: 16543926-7331-41a6-ba50-72288f2a61b7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC Classes and Threads
 
